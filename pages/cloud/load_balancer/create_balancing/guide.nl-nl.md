@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Load balancing methode
-slug: lb-balancing
 excerpt: Ontdek de verschillende methoden voor load balancing die worden gebruikt door de OVH Load Balancer
-section: Configuratie
 updated: 2018-01-17
 ---
 
@@ -27,7 +25,7 @@ De nieuwe OVH Load Balancer biedt verschillende load balancing methodes voor uw 
 
 Load balancing wordt gebruikt in serverfarms. Deze instelling definieert de manier waarop verzoeken worden verdeeld tussen de servers in de farm.
 
-Om de basisprincipes van de OVH Load Balancer te begrijpen, raadpleegt u de [Introductie tot de Load Balancer](https://docs.ovh.com/fr/load-balancer/iplb-presentation/){.external}.
+Om de basisprincipes van de OVH Load Balancer te begrijpen, raadpleegt u de [Introductie tot de Load Balancer](/pages/cloud/load_balancer/use_presentation){.external}.
 
 |Algoritme|Functies|
 |---|---|

@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Migratie van uw website en e-mails naar OVH
-slug: migreer-website-naar-ovh
 excerpt: Ontdek hoe u uw website en e-mails naar OVH kunt migreren zonder dienstonderbrekingen
-section: Eerste stappen
 updated: 2022-11-24
 ---
 
@@ -70,7 +68,7 @@ De configuratie van uw domeinnaam blijft ongewijzigd en uw website zal nog steed
 
 #### Stap 3: Maak uw e-mailadressen opnieuw aan bij OVH
 
-Nadat u uw website hebt overgedragen, [moet u dezelfde adressen, die u gebruikt bij uw huidige serviceprovider, instellen, maar dan bij OVH](https://docs.ovh.com/nl/emails/webhosting_e-mail_handleiding_het_aanmaken_van_een_e-mailadres/){.external}. Ze moeten op dezelfde manier worden geschreven. In uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, in de dienstenbalk aan de linkerkant, gaat u naar het onderdeel `E-mails`{.action}, en klikt u vervolgens op het webhostingplan dat u zojuist hebt besteld (met dezelfde heading als uw domeinnaam). Volg de stappen voor het aanmaken van e-mailadressen door op `Creëer een e-mailadres`{.action} te klikken.
+Nadat u uw website hebt overgedragen, [moet u dezelfde adressen, die u gebruikt bij uw huidige serviceprovider, instellen, maar dan bij OVH](/pages/web/emails/email_creation){.external}. Ze moeten op dezelfde manier worden geschreven. In uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, in de dienstenbalk aan de linkerkant, gaat u naar het onderdeel `E-mails`{.action}, en klikt u vervolgens op het webhostingplan dat u zojuist hebt besteld (met dezelfde heading als uw domeinnaam). Volg de stappen voor het aanmaken van e-mailadressen door op `Creëer een e-mailadres`{.action} te klikken.
 
 De configuratie van uw domeinnaam blijft ongewijzigd en u ontvangt nog steeds nieuwe e-mails via het e-mailadres dat u bij uw huidige serviceprovider hebt aangemaakt. U moet nog steeds het e-mailadres gebruiken dat is gemaakt met uw huidige serviceprovider voor het verzenden van e-mails.
 
@@ -93,7 +91,7 @@ U moet hiervoor verschillende tussenstappen uitvoeren.
 |Tussenstappen|Omschrijving|Details|
 |---|---|---|
 |1|Migreer de inhoud van de adressen naar OVH|Met behulp van de OVH Mail Migrator (OMM)[, kunt u de inhoud van uw e-mailadressen die bij uw oude serviceprovider zijn geregistreerd, kopiëren naar de e-mailadressen die bij OVH zijn aangemaakt.|
-|2|Maak gebruik van uw e-mailadressen|U heeft via een online applicatie ([Webmail](https://mail.ovh.net/){.external}) toegang tot uw OVH-e-mailadressen. Als u een van uw e-mailadressen hebt geconfigureerd op een e-mailclient (bijvoorbeeld Outlook), dan moet u dit opnieuw configureren en de servergegevens van uw oude serviceprovider vervangen door die van de [OVH-servers](https://docs.ovh.com/nl/emails/webhosting_algemene_informatie_over_ovhs_gedeelde_e-mail/).|
+|2|Maak gebruik van uw e-mailadressen|U heeft via een online applicatie ([Webmail](https://mail.ovh.net/){.external}) toegang tot uw OVH-e-mailadressen. Als u een van uw e-mailadressen hebt geconfigureerd op een e-mailclient (bijvoorbeeld Outlook), dan moet u dit opnieuw configureren en de servergegevens van uw oude serviceprovider vervangen door die van de [OVH-servers](/pages/web/emails/email_generalities).|
 
 #### Stap 6: Draag uw domeinnaam over naar OVH
 
@@ -147,7 +145,7 @@ De configuratie van uw domeinnaam blijft ongewijzigd en u ontvangt nog steeds ni
 
 Nu u uw website en domeinnaam hebt overgedragen en uw e-mailadressen opnieuw hebt aangemaakt bij OVH, moet u vervolgens de configuratie van uw domeinnaam wijzigen. Hiervoor vervangt u de DNS-servers van uw domeinnaam met die van OVH. 
 
-U kunt deze wijzigen vanaf uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.  U kunt hierbij de documentatie *[Algemene informatie over DNS-servers](https://docs.ovh.com/nl/domains/gedeelde_hosting_algemene_informatie_over_dns_servers/){.external}* raadplegen. 
+U kunt deze wijzigen vanaf uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.  U kunt hierbij de documentatie *[Algemene informatie over DNS-servers](/pages/web/domains/dns_server_general_information){.external}* raadplegen. 
 
 Deze wijziging heeft meerdere gevolgen: 
 
@@ -166,16 +164,16 @@ U moet hiervoor verschillende tussenstappen uitvoeren.
 |Tussenstappen|Omschrijving|Details|
 |---|---|---|
 |1|Migreer de inhoud van de adressen naar OVH|Gebruik de [OVH Mail Migrator](https://omm.ovh.net/){.external} (OMM) om de inhoud van uw geregistreerde e-mailadressen van uw oude serviceprovider te kopiëren naar de door OVH aangemaakte e-mailadressen.|
-|2|Maak gebruik van uw e-mailadressen|U heeft via een online applicatie ([Webmail](https://mail.ovh.net/){.external}) toegang tot uw OVH-e-mailadressen. Als u een van uw e-mailadressen hebt geconfigureerd op een e-mailclient (bijvoorbeeld Outlook), dan moet u dit opnieuw configureren en de servergegevens van uw oude serviceprovider vervangen door die van de [OVH-servers](https://docs.ovh.com/nl/emails/webhosting_algemene_informatie_over_ovhs_gedeelde_e-mail/).|
+|2|Maak gebruik van uw e-mailadressen|U heeft via een online applicatie ([Webmail](https://mail.ovh.net/){.external}) toegang tot uw OVH-e-mailadressen. Als u een van uw e-mailadressen hebt geconfigureerd op een e-mailclient (bijvoorbeeld Outlook), dan moet u dit opnieuw configureren en de servergegevens van uw oude serviceprovider vervangen door die van de [OVH-servers](/pages/web/emails/email_generalities).|
 
 Uw website, uw e-mailadressen en uw domeinnaam zijn nu verplaatst naar OVH!
 
 ## Verder
 
-[Algemene informatie over gedeelde e-mails](https://docs.ovh.com/nl/emails/webhosting_algemene_informatie_over_ovhs_gedeelde_e-mail/){.external}.
+[Algemene informatie over gedeelde e-mails](/pages/web/emails/email_generalities){.external}.
 
-[Algemene informatie over DNS-servers](https://docs.ovh.com/nl/domains/gedeelde_hosting_algemene_informatie_over_dns_servers/){.external}.
+[Algemene informatie over DNS-servers](/pages/web/domains/dns_server_general_information){.external}.
 
-[Creatie van een gedeeld e-mailadres](https://docs.ovh.com/nl/emails/webhosting_e-mail_handleiding_het_aanmaken_van_een_e-mailadres/){.external}.
+[Creatie van een gedeeld e-mailadres](/pages/web/emails/email_creation){.external}.
 
 Ga in gesprek met andere communityleden op [https://community.ovh.com](https://community.ovh.com).

@@ -1,9 +1,6 @@
 ---
 title: 'E-Mail Alias und Weiterleitung verwenden'
 excerpt: 'Erfahren Sie hier, wie Sie E-Mail Aliase und Weiterleitungen verwalten'
-slug: webhosting_e-mail_anleitung_zum_einrichten_einer_mail-weiterleitung
-section: 'E-Mail Account Funktionen'
-order: 01
 updated: 2020-05-20
 ---
 

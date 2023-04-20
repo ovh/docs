@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Installatie van een site met 1-klik modules
-slug: 1-klik-modules
 excerpt: Ontdek hoe u uw site kunt installeren met onze 1-klik modules
-section: CMS
 updated: 2023-01-31
 ---
 
@@ -52,7 +50,7 @@ Kies in het venster dat verschijnt het gewenste CMS en dan het domein waarop u u
 
 Als u niet het gewenste domein in de lijst vindt, ga dan naar de tab `Multisite`{.action} om hem toe te voegen, en probeer opnieuw om een module toe te voegen.
 
-Voor hulp kunt u ook de handleiding raadplegen [Webhosting delen tussen verschillende sites](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/){.external}.
+Voor hulp kunt u ook de handleiding raadplegen [Webhosting delen tussen verschillende sites](/pages/web/hosting/multisites_configure_multisite){.external}.
 
 Wanneer u het domein hebt geselecteerd, moet u kiezen tussen een eenvoudige of een geavanceerde installatie:
 
@@ -103,7 +101,7 @@ U moet nu voor de configuratie de volgende informatie invullen:
 - *naam of e-mail van de beheerder: *dit is de gebruikersnaam die u gebruikt om in te loggen met het beheer van uw CMS; 
 - *wachtwoord: *dit is het wachtwoord dat u gebruikt om in te loggen op de beheerinterface van uw CMS;
 - *domein: *dit is het domein waarop u uw site wilt installeren;
-Voor hulp kunt u ook de handleiding raadplegen [Mijn webhosting verdelen over verschillende sites](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/).
+Voor hulp kunt u ook de handleiding raadplegen [Mijn webhosting verdelen over verschillende sites](/pages/web/hosting/multisites_configure_multisite).
 - *taal: *dit is de taal waarin het CMS wordt geïnstalleerd;
 - *installatieroute: *deze laatste wordt automatisch ingevuld bij de selectie van het domein. U heeft de mogelijkheid om hem aan te vullen door er subdirectories in te vullen. 
 
@@ -139,7 +137,7 @@ Wanneer u hulp bij de functies van uw site wilt, kunt u naar de site-editor van 
 
 [Een CMS kiezen om een website te maken](https://www.ovhcloud.com/nl/web-hosting/uc-cms-comparison/){.external}
 
-[Webhosting delen tussen verschillende sites](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/){.external}.
+[Webhosting delen tussen verschillende sites](/pages/web/hosting/multisites_configure_multisite){.external}.
 
 Ontdek ons [Private SQL product](https://www.ovhcloud.com/nl/web-hosting/options/start-sql/){.external}
 

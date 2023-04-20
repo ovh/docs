@@ -1,9 +1,6 @@
 ---
 title: 'Activer l’hébergement gratuit Start 10M'
-slug: activer-start10m
 excerpt: 'Découvrez comment activer votre hébergement Start 10M '
-section: 'Premiers pas'
-order: 01
 updated: 2022-09-15
 ---
 
@@ -25,7 +22,7 @@ Ce guide vous présente comment activer cette offre sur votre [nom de domaine](h
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external} dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, détaché de tout hébergement Web et sans aucun [MX Plan](https://docs.ovh.com/fr/emails/generalites-sur-les-emails-mutualises/) associé.
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external} dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, détaché de tout hébergement Web et sans aucun [MX Plan](/pages/web/emails/email_generalities) associé.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
@@ -46,7 +43,7 @@ La fenêtre d'activation s'affiche. **L'étape 1** vous rappelle l'offre et son 
 >
 > Si votre zone DNS n'est pas gérée dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, vous devrez effectuer les modifications manuellement dans votre zone DNS externe.
 >
-> Pour plus de détails, consultez notre guide sur [l'édition d'une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/).
+> Pour plus de détails, consultez notre guide sur [l'édition d'une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit).
 >
 
 | Choix                                       	| Description                                                                                                               								|
@@ -69,15 +66,15 @@ La fenêtre d'activation s'affiche. **L'étape 1** vous rappelle l'offre et son 
 
 Lors de **l'étape 4**, vous devez prendre connaissance des contrats et valider votre commande.
 
-Une fois votre commande validée, un e-mail vous sera transmis avec les informations de [connexion FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/){.external} à votre hébergement Start 10M.
+Une fois votre commande validée, un e-mail vous sera transmis avec les informations de [connexion FTP](/pages/web/hosting/ftp_connection){.external} à votre hébergement Start 10M.
 
-Consultez le guide de [création d'un compte E-mail MX Plan](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/){.external} pour profiter de l'adresse e-mail incluse avec votre hébergement Start 10M.
+Consultez le guide de [création d'un compte E-mail MX Plan](/pages/web/emails/email_creation){.external} pour profiter de l'adresse e-mail incluse avec votre hébergement Start 10M.
 
 ## Aller plus loin
 
-[Se connecter à l’espace de stockage de son hébergement Web](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/){.external}
+[Se connecter à l’espace de stockage de son hébergement Web](/pages/web/hosting/ftp_connection){.external}
 
-[Créer une adresse e-mail avec son offre MX Plan](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/){.external}
+[Créer une adresse e-mail avec son offre MX Plan](/pages/web/emails/email_creation){.external}
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 

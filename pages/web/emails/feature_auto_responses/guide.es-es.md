@@ -1,10 +1,7 @@
 ---
 title: Crear un contestador para su dirección de correo
 excerpt: Cómo configurar un contestador de correo
-slug: guia_de_creacion_de_un_contestador
 legacy_guide_number: g2052
-section: Gestión de la cuenta de correo
-order: 02
 updated: 2021-04-20
 ---
 
@@ -29,7 +26,7 @@ En caso de ausencia en su despacho, puede poner en marcha un contestador email q
 
 > [!primary]
 >
-> Si su dirección de correo electrónico está en un servicio [**Exchange**](https://www.ovhcloud.com/es-es/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/es-es/emails/email-pro/) o no hay una sección de `Gestión de contestadores`{.action} en su MXplan, deberá crear el contestador desde su webmail utilizando la guía ["Implementar un contestador automático desde la interfaz OWA"](../../microsoft-collaborative-solutions/exchange_2016_crear_un_contestador_con_el_webmail_owa/).
+> Si su dirección de correo electrónico está en un servicio [**Exchange**](https://www.ovhcloud.com/es-es/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/es-es/emails/email-pro/) o no hay una sección de `Gestión de contestadores`{.action} en su MXplan, deberá crear el contestador desde su webmail utilizando la guía ["Implementar un contestador automático desde la interfaz OWA"](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies).
 
 ### Creación del contestador
 

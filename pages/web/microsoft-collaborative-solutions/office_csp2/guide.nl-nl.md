@@ -1,10 +1,7 @@
 ---
 deprecated: true
 title: Beheer een Office 365 Reseller (CSP) programma OVHcloud
-slug: ovhbestel-en-beheer-een-office-365-reseller-licentie-group-csp2
 excerpt: Ontdek hoe u een Office 365 Reseller (CSP) programma kunt beheren met de OVHcloud
-section: Office
-order: 03
 updated: 2023-01-17
 ---
 

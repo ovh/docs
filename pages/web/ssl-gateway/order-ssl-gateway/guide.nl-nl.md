@@ -1,7 +1,6 @@
 ---
 deprecated: true
 title: Bestel een SSL Gateway
-slug: order-ssl-gateway
 links: 
    - docs/web/ssl-gateway/use_ssl_gateway/
 excerpt: Beveilig verbindingen met uw website

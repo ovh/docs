@@ -1,11 +1,8 @@
 ---
 title: Gestione di alert ed eventi (EN)
-slug: alerts-events
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/nutanix/alerts-events/'
+    canonical: '/pages/cloud/nutanix/07-alert-management'
 excerpt: 'Analysing and modifying alerts and events in a Nutanix cluster'
-section: Per iniziare
-order: 10
 updated: 2022-03-17
 ---
 

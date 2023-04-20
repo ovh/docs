@@ -1,8 +1,6 @@
 ---
 title: 'Optimising the sending of emails'
-slug: optimise-email-sending
 excerpt: 'Find out how to send emails and limit the risk of them being marked as spam'
-section: Advanced
 updated: 2022-12-20
 ---
 
@@ -47,7 +45,7 @@ If you are using a dedicated infrastructure (e.g. a dedicated server, VPS, Publi
 
 For further information on the SPF record, refer to the following page: <http://www.open-spf.org/>.
 
-You can go even further by configuring the SPF record of a specific domain, or by specifying an IPv6 address. You can find out how to do this in our guide to [adding an SPF record](../../domains/web_hosting_the_spf_record/).
+You can go even further by configuring the SPF record of a specific domain, or by specifying an IPv6 address. You can find out how to do this in our guide to [adding an SPF record](/pages/web/domains/dns_zone_spf).
 
 ### Configure the DKIM record
 
@@ -61,7 +59,7 @@ To further optimise email sending and lower the risk of your emails being blocke
 
 To begin, you first have to create an A record in the DNS Zone of your domain with the IP address of your server as a target.
 
-If your DNS Servers are managed by OVHcloud, please consult this [guide](https://docs.ovh.com/ca/en/domains/web_hosting_how_to_edit_my_dns_zone/#instructions).
+If your DNS Servers are managed by OVHcloud, please consult this [guide](/pages/web/domains/dns_zone_edit#instructions).
 
 Once you have modified your domain name’s DNS zone, you will need to allow a maximum of 24 hours for the changes to propagate fully, and be effective.
 

@@ -1,11 +1,8 @@
 ---
 title: How to use the Bring Your Own IP feature (EN)
-slug: bring-your-own-ip
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/network-ip/bring-your-own-ip/'
+    canonical: '/pages/cloud/network-ip/bring-your-own-IP'
 excerpt: Find out how to easily import your own IP as Additional IP to your OVHcloud account
-section: Bring Your Own IP
-order: 1
 updated: 2022-11-23
 ---
 

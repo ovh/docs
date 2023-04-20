@@ -1,9 +1,6 @@
 ---
 title: Importing ISO images
-slug: image-import
 excerpt: Managing ISO images from Prism Central
-section: Getting started
-order: 07
 updated: 2022-03-10
 ---
 
@@ -74,7 +71,7 @@ The imported image appears in the images dashboard in Prism Central.
 
 ## Go further <a name="gofurther"></a>
 
-[Presentation of a Nutanix cluster](https://docs.ovh.com/gb/en/nutanix/nutanix-hci/)
+[Presentation of a Nutanix cluster](/pages/cloud/nutanix/03-nutanix-hci)
 
 [Nutanix documentation for importing images from Prism Central](https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-Prism-v5_20:mul-image-import-pc-t.html)
 

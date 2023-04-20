@@ -1,12 +1,9 @@
 ---
 title: Resize your cluster storage
-slug: resize-cluster-storage
 excerpt:
-section: General guides
-order: 110
 updated: 2023-02-15
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/resize-cluster-storage/'
+    canonical: '/pages/platform/databases/databases_11_resize_your_cluster_storage'
 ---
 
 **Last updated 15th February 2023**

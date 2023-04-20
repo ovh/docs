@@ -1,8 +1,5 @@
 ---
 title: Quick start
-slug: quick-start
-order: 1
-section: Get Started
 updated: 2023-03-30
 ---
 
@@ -27,7 +24,7 @@ Your Logs Data Platform username is located on the bottom left of the page, in t
 
 1. Identify your assigned access point for this account and your LDP username.
 2. Reset your password of your LDP account.
-3. Edit your LDP access tokens (more on this functionality [here](../tokens-logs-data-platform){.ref}).
+3. Edit your LDP access tokens (more on this functionality [here](/pages/platform/logs-data-platform/tokens_logs_data_platform){.ref}).
 
 
 The main page allows you also to consult the SSL certificates used on your access point in the **SSL Configuration panel**. This panel lets you also review the available ports and formats supported.
@@ -64,9 +61,9 @@ The menu **"..."** at the right gives you several features:
 - **Edit** allows you to edit the name and the description of your Stream.
 - **Graylog access** gives you a direct access to your stream and its logs.
 - **Copy the write token** allows you to retrieve your token and to use it in your different logs collector.
-- **Monitor in real-time** allows you to see the logs incoming into your stream in real-time. Note that Graylog also provides this functionality. On this page you can also **Test** different log formats from your computer to your stream. [More about](../ldp-tail){.ref}
-- **Manage alerts** allows you to define your alert conditions on the logs routed to the stream. [More about](../alerting){.ref}
-- **Archives** allows you to download the cold stored archives. [More about](../cold-storage){.ref}
+- **Monitor in real-time** allows you to see the logs incoming into your stream in real-time. Note that Graylog also provides this functionality. On this page you can also **Test** different log formats from your computer to your stream. [More about](/pages/platform/logs-data-platform/ldp_tail){.ref}
+- **Manage alerts** allows you to define your alert conditions on the logs routed to the stream. [More about](/pages/platform/logs-data-platform/alerting){.ref}
+- **Archives** allows you to download the cold stored archives. [More about](/pages/platform/logs-data-platform/cold_storage){.ref}
 - **Delete** Deletes your stream from the system and all related content.
 
 Logs Data Platform supports several logs formats, each one of them has its own advantages and disadvantages. Here are the different formats available
@@ -194,11 +191,11 @@ Note that dashboards are interactive and you can use the top search bar and the 
 ## Going further
 We have only scratched the surface of what Logs Data Platform can do for you. you will find soon enough how to:
 
-- [Send correctly formatted logs](../field-naming-conventions){.ref} to use custom types as number, boolean and other stuffs
-- [Configure your syslog-ng](../how-to-log-your-linux){.ref} to send your Linux logs to Logs Data Platform.
-- [Using roles](../roles){.ref} to allow other users of the platform to let them see yours beautiful Dashboards or let them dig in your Streams instead of doing it for them.
-- [Using OpenSearch Dashboards and aliases to unleash the power of OpenSearch](../opensearch-dashboards){.ref}
+- [Send correctly formatted logs](/pages/platform/logs-data-platform/field_naming_conventions){.ref} to use custom types as number, boolean and other stuffs
+- [Configure your syslog-ng](/pages/platform/logs-data-platform/how_to_log_your_linux){.ref} to send your Linux logs to Logs Data Platform.
+- [Using roles](/pages/platform/logs-data-platform/roles){.ref} to allow other users of the platform to let them see yours beautiful Dashboards or let them dig in your Streams instead of doing it for them.
+- [Using OpenSearch Dashboards and aliases to unleash the power of OpenSearch](/pages/platform/logs-data-platform/opensearch_dashboards){.ref}
 - If you want to master Graylog, this is the place to go: [Graylog documentation](https://docs.graylog.org/docs/queries){.external}
-- Documentation: [Guides](../){.ref}
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform){.ref}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
 - Join our community of users on [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}

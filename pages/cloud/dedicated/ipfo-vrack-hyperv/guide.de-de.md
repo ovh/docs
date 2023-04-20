@@ -1,8 +1,6 @@
 ---
 title: "Hyper-V mit Additional IPs in einem vRack verwenden"
 excerpt: "Erfahren Sie hier, wie Sie Hyper-V mit Additional IPs in einem vRack konfigurieren"
-slug: ipfo-vrack-hyperv
-section: vRack 
 updated: 2021-02-25
 ---
 
@@ -31,7 +29,7 @@ updated: 2021-02-25
 
 ## In der praktischen Anwendung
 
-In dieser Anleitung wird davon ausgegangen, dass Sie bereits Windows Server installiert haben, über den Remotedesktop eingeloggt sind und Ihren Dedicated Server und Ihren IP-Block bereits einem vRack zugewiesen haben. Weitere Informationen zu diesen Schritten finden Sie in den Schritten 1 bis 4 unserer Anleitung zum [Konfigurieren von Dedicated Servern in einem vRack](../mehrere-dedizierte-server-im-vrack-konfigurieren/).
+In dieser Anleitung wird davon ausgegangen, dass Sie bereits Windows Server installiert haben, über den Remotedesktop eingeloggt sind und Ihren Dedicated Server und Ihren IP-Block bereits einem vRack zugewiesen haben. Weitere Informationen zu diesen Schritten finden Sie in den Schritten 1 bis 4 unserer Anleitung zum [Konfigurieren von Dedicated Servern in einem vRack](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server).
 
 ### Hyper-V Installation
 

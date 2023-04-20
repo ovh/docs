@@ -1,10 +1,7 @@
 ---
 title: 'Aumentar las cuotas de Public Cloud'
 excerpt: 'Cómo aumentar el límite en Public Cloud'
-slug: increase-public-cloud-quota
 legacy_guide_number: g1904
-section: 'Gestión del proyecto'
-order: 04
 updated: 2023-01-27
 ---
 
@@ -25,7 +22,7 @@ Si desea crear más, es necesario aumentar el límite.
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- [Disponer de una forma de pago válida](../../billing/gestionar-formas-de-pago/) en el área de cliente de OVHcloud.
+- [Disponer de una forma de pago válida](/pages/account/billing/manage-payment-methods) en el área de cliente de OVHcloud.
 
 
 ## Procedimiento

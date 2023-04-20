@@ -1,9 +1,6 @@
 ---
 title: 'Configuring an additional disk'
 excerpt: 'Find out how to add and configure additional storage space on a VPS'
-slug: config-additional-disk-vps
-section: 'Backup options'
-order: 3
 updated: 2023-02-15
 ---
 

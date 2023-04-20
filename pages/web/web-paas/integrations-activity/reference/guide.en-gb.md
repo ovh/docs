@@ -1,7 +1,5 @@
 ---
 title: Activity reference
-slug: reference
-section: Activity
 updated: 2021-06-02
 ---
 
@@ -111,7 +109,7 @@ The Web PaaS user that triggered the activity.
 
 ### `deployment`
 
-This large block details all information about all services in the environment.  That includes the resulting configuration objects derived from [`routes.yaml`](../../configuration-routes), [`services.yaml`](../../configuration-services), and [`.platform.app.yaml`](../../configuration-app).
+This large block details all information about all services in the environment.  That includes the resulting configuration objects derived from [`routes.yaml`](../../configuration-routes), [`services.yaml`](../../configuration-services), and [`.platform.app.yaml`](/pages/web/web-paas/configuration-app).
 
 Most notably, the `deployment.routes` object's keys are all of the URLs made available by the environment.  Note that some will be redirects.  To find those that are live URLs filter to those objects whose `type` property is `upstream`.
 

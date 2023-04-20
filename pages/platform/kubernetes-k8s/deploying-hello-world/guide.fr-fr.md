@@ -1,11 +1,8 @@
 ---
 title: Deploying a Hello World application with the OVHcloud Control Panel
-slug: deploying-hello-world
 excerpt: 'Find out how to deploy a Hello World application with the OVHcloud Control Panel'
-section: Tutorials
-order: 0
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/deploying-hello-world/'
+    canonical: '/pages/platform/kubernetes-k8s/deploying-hello-world'
 updated: 2022-02-21
 ---
 
@@ -15,7 +12,7 @@ Follow this quickstart guide to deploy a containerised *Hello World* application
 
 In this guide, we are assuming that you're using the [OVHcloud Cloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) to manage your Kubernetes cluster. If you are using a different method, like the [OVHcloud API](https://api.ovh.com/), please refer to the appropriate documentation:
 
-- [Deploying a Hello World with the OVHcloud API](../deploying-hello-world-ovh-api/)
+- [Deploying a Hello World with the OVHcloud API](/pages/platform/kubernetes-k8s/deploying-hello-world-ovh-api)
 
 ## Before you begin
 
@@ -46,7 +43,7 @@ In this administration UI, you have several tabs included:
 
 ## Configuring the default settings for kubectl
 
-Please refer to the [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](../configuring-kubectl/) documentation for this part of the process.
+Please refer to the [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](/pages/platform/kubernetes-k8s/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster) documentation for this part of the process.
 
 ## Add a node pool
 
@@ -86,4 +83,4 @@ After its creation, click on the node pool in order to list its nodes details.
 
 You're now ready to deploy your first application.
 
-For more details about this process, you can refer to our [deploying an application](../deploying-an-application/) documentation.
+For more details about this process, you can refer to our [deploying an application](/pages/platform/kubernetes-k8s/deploying-an-application) documentation.

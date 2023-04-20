@@ -1,10 +1,7 @@
 ---
 title: Object Storage Swift - "Débuter avec l’API Swift"
 excerpt: "Découvrez comment utiliser l'API Swift"
-slug: pcs/getting-started-with-the-swift-api
 legacy_guide_number: 1916
-section: Spécificités de la classe de stockage OpenStack Swift
-order: 010
 updated: 2021-05-25
 ---
 
@@ -20,8 +17,8 @@ Le *swiftclient* OpenStack vous permet d'interagir avec vos conteneurs et objets
 
 ## Prérequis
 
-- [Préparer l'environnement pour utiliser l'API OpenStack](https://docs.ovh.com/ca/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/) en installant python-swiftclient
-- [Charger les variables d'environnement OpenStack](https://docs.ovh.com/ca/fr/public-cloud/set-openstack-environment-variables/)
+- [Préparer l'environnement pour utiliser l'API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) en installant python-swiftclient
+- [Charger les variables d'environnement OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## En pratique
 
@@ -144,7 +141,7 @@ Si le conteneur est configuré comme public, vous pouvez accéder au fichier à 
 https://storage.gra1.cloud.ovh.net/v1/AUTH_b3e26xxxxxxxxxxxxxxxxxxxb0ba29/container1/images/OVHlogo.png
 ```
 
-Cette URL est composée d'un point de terminaison, disponible à partir de l'[interface Horizon](https://docs.ovh.com/ca/fr/public-cloud/access_and_security_in_horizon/), du nom de votre conteneur et du nom de votre objet (y compris le préfixe).
+Cette URL est composée d'un point de terminaison, disponible à partir de l'[interface Horizon](/pages/platform/public-cloud/access_and_security_in_horizon), du nom de votre conteneur et du nom de votre objet (y compris le préfixe).
 
 ### Téléchargement de fichiers
 

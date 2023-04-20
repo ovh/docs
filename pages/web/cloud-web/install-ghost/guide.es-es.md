@@ -1,9 +1,6 @@
 ---
 title: 'Instalar Ghost en un hosting Cloud Web'
-slug: instalar-ghost-cloud-web
 excerpt: 'Cómo instalar un blog basado en la plataforma Ghost en un hosting Cloud Web'
-section: Tutoriales
-order: 01
 updated: 2022-05-04
 ---
 
@@ -57,7 +54,7 @@ En la nueva ventana, cumplimente los campos con los valores que indicamos a cont
 |Entorno de la aplicación|production|
 |Script de ejecución de la aplicación|server.js|
 
-Una vez que haya introducido toda la información, haga clic en `Aceptar`{.action}. Para más información sobre los motores de ejecución, consulte nuestra guía [Gestionar los motores de ejecución en un hosting Cloud Web](../gestionar-motores-ejecucion-hosting-cloud-web/){.external}.
+Una vez que haya introducido toda la información, haga clic en `Aceptar`{.action}. Para más información sobre los motores de ejecución, consulte nuestra guía [Gestionar los motores de ejecución en un hosting Cloud Web](/pages/web/cloud-web/manage-runtime){.external}.
 
 ![ghostcloudweb](images/ghost-cloud-web-step2.png){.thumbnail}
 
@@ -87,7 +84,7 @@ En la nueva ventana, cumplimente los campos según su caso particular. La siguie
 |Carpeta raíz|ghost|
 |Motor de ejecución|NodeJS 8|
 
-Active las opciones que desee. Una vez que haya introducido toda la información, haga clic en `Siguiente`{.action} y acepte. El dominio puede tardar un máximo de una hora en añadirse. Sin embargo, la modificación de la configuración DNS puede tardar hasta 24 horas en ser efectiva. Para más información sobre la gestión de multisitios, consulte nuestra guía [Alojar varios sitios web en un mismo hosting](../../hosting/configurar-un-multisitio-en-un-alojamiento-web/){.external}.
+Active las opciones que desee. Una vez que haya introducido toda la información, haga clic en `Siguiente`{.action} y acepte. El dominio puede tardar un máximo de una hora en añadirse. Sin embargo, la modificación de la configuración DNS puede tardar hasta 24 horas en ser efectiva. Para más información sobre la gestión de multisitios, consulte nuestra guía [Alojar varios sitios web en un mismo hosting](/pages/web/hosting/multisites_configure_multisite){.external}.
 
 ![ghostcloudweb](images/ghost-cloud-web-step4.png){.thumbnail}
 
@@ -270,13 +267,13 @@ En este tutorial hemos explicado cómo instalar una aplicación Node.js en un ho
 
 ## Más información
 
-[Migrar un sitio web y el correo a OVHcloud](https://docs.ovh.com/es/domains/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external}
+[Migrar un sitio web y el correo a OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-[Publicar un sitio web en internet](https://docs.ovh.com/es/hosting/web_hosting_publicar_un_sitio_web_en_internet/){.external}
+[Publicar un sitio web en internet](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
-[Instalar un sitio web con un módulo en un clic](https://docs.ovh.com/es/hosting/modulos-en-un-clic/){.external}
+[Instalar un sitio web con un módulo en un clic](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Alojar varios sitios web en un mismo hosting](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/){.external}
+[Alojar varios sitios web en un mismo hosting](/pages/web/hosting/multisites_configure_multisite){.external}
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
 

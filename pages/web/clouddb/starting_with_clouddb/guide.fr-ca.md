@@ -1,9 +1,6 @@
 ---
 title: 'Premiers pas avec le service Web Cloud Databases'
-slug: debuter-avec-clouddb
 excerpt: 'Découvrez comment bien débuter avec la solution Web Cloud Databases'
-section: 'Premiers pas'
-order: 01
 updated: 2023-02-15
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Mise en service de OVHcloud Connect Direct depuis l’espace client OVHcloud
 excerpt: Découvrez comment mettre en service votre offre OVHcloud Connect Direct depuis votre espace client OVHcloud
-slug: occ-direct-manager-setup
-section: Premiers pas
-order: 2
 updated: 2020-09-28
 ---
 
@@ -18,7 +15,7 @@ OVHcloud Connect permet d’étendre votre réseau d’entreprise avec votre ré
 ## Prérequis
 
 > [!warning]
-> Pour assurer un fonctionnement correct de ce service, vous devez prendre connaissance des [capacités et limites techniques de l'offre OVHcloud Connect](../occ-limits/) et configurer vos équipements réseau en accord avec celles-ci.
+> Pour assurer un fonctionnement correct de ce service, vous devez prendre connaissance des [capacités et limites techniques de l'offre OVHcloud Connect](/pages/cloud/ovhcloud-connect/occ-limits) et configurer vos équipements réseau en accord avec celles-ci.
 >
 
 - Posséder une [offre OVHcloud Connect Direct](https://www.ovhcloud.com/fr/network-security/ovhcloud-connect/)
@@ -48,7 +45,7 @@ Un message vous confirmera l'association du vRack.
 >
 
 > [!primary]
-> Pour plus de détails sur les différences entre les niveaux L2 et L3, consultez notre [FAQ](../occdedicated-faq/#3-comment-choisir-entre-une-interconnexion-de-niveau-2-ou-de-niveau-3-du-modele-osi).
+> Pour plus de détails sur les différences entre les niveaux L2 et L3, consultez notre [FAQ](/pages/cloud/ovhcloud-connect/occdedicated-faq#3-comment-choisir-entre-une-interconnexion-de-niveau-2-ou-de-niveau-3-du-modele-osi).
 >
 
 #### Configuration L2 

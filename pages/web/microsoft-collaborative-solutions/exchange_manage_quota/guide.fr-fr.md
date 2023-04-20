@@ -1,11 +1,8 @@
 ---
 title: "Gérer l'espace de stockage d'un compte e-mail"
-slug: manage-email-quota
 excerpt: "Découvrez comment gérer et optimiser l'espace de stockage d'une adresse e-mail "
-section: 'Diagnostic'
-order: 02
 routes:
-  canonical: "https://docs.ovh.com/fr/emails/manage-email-quota/"
+  canonical: "/products/email-manage-email-quota"
 updated: 2022-11-17
 ---
 
@@ -28,8 +25,8 @@ Chaque compte e-mail OVHcloud dispose d'un espace de stockage dédié. Bien gér
 > **Cas particuliers**
 >
 > - Concernant l’hébergement gratuit Start 10M : il est impératif de l’activer au préalable afin de pouvoir créer une adresse e-mail. Vous pouvez effectuer cette opération depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), en vous positionnant sur le nom de domaine concerné.
-> - Dans le cadre d'un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/), il est nécessaire d'activer votre offre MX Plan incluse avant de poursuivre la lecture de cette documentation. Pour cela, consultez notre guide « [Activer les adresses e-mail incluses dans votre hébergement web](https://docs.ovh.com/fr/hosting/activer-email-hebergement-web/) ».
+> - Dans le cadre d'un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/), il est nécessaire d'activer votre offre MX Plan incluse avant de poursuivre la lecture de cette documentation. Pour cela, consultez notre guide « [Activer les adresses e-mail incluses dans votre hébergement web](/pages/web/hosting/activate-email-hosting) ».
 
 ## En pratique <a name="instructions"></a>
 
-Suivez notre guide [Gérer l'espace de stockage d'un compte e-mail](https://docs.ovh.com/fr/emails/manage-email-quota/) dans la rubrique « E-mails mutualisés - MX Plan ».
+Suivez notre guide [Gérer l'espace de stockage d'un compte e-mail](/products/email-manage-email-quota) dans la rubrique « E-mails mutualisés - MX Plan ».

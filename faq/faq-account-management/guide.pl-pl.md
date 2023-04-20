@@ -32,7 +32,7 @@ Po zalogowaniu do swojej strefy klienta, identyfikator znajdziesz w prawym górn
 ### Co zrobić, jeśli nie mogę zalogować się do mojego konta klienta?
 
 Może się zdarzyć z różnych powodów, takich jak zapomnienie hasła, utrata dostępu do konta e-mail lub do telefonu komórkowego służącego do identyfikacji za pomocą SMS, że użytkownik nie jest w stanie zalogować się do Panelu klienta.
-W takiej sytuacji zachęcamy do zapoznania się z poniższą [dokumentacją](https://docs.ovh.com/pl/customer/logowanie-panelu-klienta-ovhcloud/#login-failure), z której dowiesz się, jak rozwiązać ten problem.
+W takiej sytuacji zachęcamy do zapoznania się z poniższą [dokumentacją](/pages/account/customer/ovhcloud-account-login#login-failure), z której dowiesz się, jak rozwiązać ten problem.
 
 ### Jak zmienić dane osobowe?
 
@@ -81,7 +81,7 @@ Jeśli chcesz odzyskać domenę, której jesteś właścicielem zarejestrowanym 
 
 #### Wskazówki i porady
 
-Pełna instrukcja zarządzania kontaktami dostępna jest tutaj: [docs.ovh.com/pl/customer/zarzadzanie_kontaktami/#dostep-do-zarzadzania-kontaktami](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/#dostep-do-zarzadzania-kontaktami)
+Pełna instrukcja zarządzania kontaktami dostępna jest tutaj: [/pages/account/customer/managing_contacts#dostep-do-zarzadzania-kontaktami](/pages/account/customer/managing_contacts#dostep-do-zarzadzania-kontaktami)
 
 ### W jaki sposób skonfigurować lub zmienić kontakt księgowy?
 
@@ -89,7 +89,7 @@ Zaloguj się do Panelu klienta za pomocą identyfikatora i hasła dostępu. Nast
 
 #### Wskazówki i porady
 
-Aby dowiedzieć się więcej o zarządzaniu kontaktami, zapoznaj się z treścią przewodnika: [Zarządzanie kontaktami i usługami](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/).
+Aby dowiedzieć się więcej o zarządzaniu kontaktami, zapoznaj się z treścią przewodnika: [Zarządzanie kontaktami i usługami](/pages/account/customer/managing_contacts).
 
 ### Jak mogę zabezpieczyć moje konto?
 
@@ -115,7 +115,7 @@ Ponadto, aby aktywować 2FA, dostępnych jest kilka rozwiązań umożliwiającyc
 - Z aplikacji mobilnej kompatybilnej z systemami Android, iPhone i Windows mobile
 - Korzystając z klucza bezpieczeństwa zgodnego z U2F
 
-[Więcej informacji](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/)
+[Więcej informacji](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
 ### Jak dezaktywować uwierzytelnianie dwuetapowe/2FA w OVHcloud?
 
@@ -137,7 +137,7 @@ Chcąc uniknąć podobnych sytuacji w przyszłości, zabezpiecz swoje konto z po
 
 ### Otrzymałem e-mail, który wygląda na phishing i kradzież tożsamości OVHcloud. Jak zgłosić tę wiadomość do weryfikacji?
 
-Wyjaśnienie, jak rozpoznać i zgłosić atak phising przeprowadzony przy użyciu wiadomości e-mail lub SMS, znajdziesz w [przewodniku](https://docs.ovh.com/pl/customer/oszustwa-phishing/.)
+Wyjaśnienie, jak rozpoznać i zgłosić atak phising przeprowadzony przy użyciu wiadomości e-mail lub SMS, znajdziesz w [przewodniku](/pages/account/customer/phishing_care.)
 
 ### W jaki sposób zgłosić nadużycie lub treści niezgodne z prawem wykryte na usługach hostowanych przez OVHcloud?
 
@@ -157,12 +157,12 @@ Poprosimy Cię o przeanalizowanie działań uznanych jako nadużycie oraz podję
 
 Aby upewnić się, czy osoby trzecie nie przejęły kontroli nad Twoimi usługami (np. w wyniku włamania), zalecamy, abyś sprawdził, czy Twoje usługi są odpowiednio zabezpieczone:
 
-- [Zabezpieczenie konta OVHcloud i zarządzanie danymi osobowymi](https://docs.ovh.com/pl/customer/identyfikator_klienta/)
-- [Zmiana hasła do konta](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/)
-- [Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/)
-- [Jak zabezpieczyć stronę WWW?](https://docs.ovh.com/pl/hosting/secure-website/)
-- [Zabezpieczenie serwera VPS](https://docs.ovh.com/pl/vps/porady-zabezpieczenie-vps/)
-- [Zabezpieczenie serwera dedykowanego](https://docs.ovh.com/pl/dedicated/porady-zabezpieczanie-serwera-dedykowanego/)
+- [Zabezpieczenie konta OVHcloud i zarządzanie danymi osobowymi](/pages/account/customer/all_about_username)
+- [Zmiana hasła do konta](/pages/account/customer/manage-ovh-password)
+- [Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](/pages/account/customer/secure-ovhcloud-account-with-2fa)
+- [Jak zabezpieczyć stronę WWW?](/pages/web/hosting/secure_your_website)
+- [Zabezpieczenie serwera VPS](/pages/cloud/vps/secure_your_vps)
+- [Zabezpieczenie serwera dedykowanego](/pages/cloud/dedicated/securing-a-dedicated-server)
 
 ### W jaki sposób mogę uniknąć zawieszenia usługi w przypadku wykrycia nadużycia na jednej z moich usług OVHcloud?
 

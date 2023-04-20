@@ -1,9 +1,6 @@
 ---
 title: 'Getting started with a Cloud Web hosting plan'
-slug: getting-started-with-cloud-web
 excerpt: 'Find out how to get started with a Cloud Web hosting plan'
-section: 'Getting started'
-order: 01
 updated: 2022-05-04
 ---
 
@@ -108,7 +105,7 @@ We strongly advise taking special care when you enter the following information:
 > If you have added a domain name that is considered to be external, you will need to add a TXT record called **ovhcontrol** to its DNS configuration. This way, OVHcloud can ensure that the domain addition is approved. If you do not do this, your domain addition will be cancelled. Adding this TXT record is therefore an essential step. 
 >
 
-Repeat this step if you would like to add several domain names to your Cloud Web hosting plan. For more information on adding a domain name as a multisite, please read the following guide: [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external}.
+Repeat this step if you would like to add several domain names to your Cloud Web hosting plan. For more information on adding a domain name as a multisite, please read the following guide: [Hosting multiple websites on your Web Hosting plan](/pages/web/hosting/multisites_configure_multisite){.external}.
 
 ![cloudweb](images/cloud-web-first-steps-step3.png){.thumbnail}
 
@@ -122,7 +119,7 @@ By using our 1-click modules, you will get a ready-to-use website template that 
 
 If your choice of method involves using our 1-click modules, stay on the section for the [Cloud Web](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/) hosting plan concerned, click on the  `1-click modules`{.action} tab, then click `Add a module`{.action}. You can then choose whether to install it in ‘basic’ mode (non-customisable), or ‘advanced’ mode (customisable).
 
-If you need more information on OVHcloud 1-click modules, please read our guide: [Setting up your website with 1-click modules](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules/){.external}.
+If you need more information on OVHcloud 1-click modules, please read our guide: [Setting up your website with 1-click modules](/pages/web/hosting/cms_install_1_click_modules){.external}.
 
 > [!primary]
 >
@@ -137,13 +134,13 @@ Whether you are building a website from scratch or migrating an existing website
 
 If you have chosen to set up your website manually, you must have all of the website or application files that you would like to set up on your hosting plan. If you have created any databases on your Cloud Web hosting plan, you will also need to have their details and credentials to hand. If you are migrating a website, please ensure that you create a backup copy of all your website files.
 
-There is no clear-cut, single approach to take since every project is different, but our guides to [Publishing a website on your Web Hosting space](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external} and [Migrating your website and emails to OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external} should be able to help you establish how to proceed.
+There is no clear-cut, single approach to take since every project is different, but our guides to [Publishing a website on your Web Hosting space](/pages/web/hosting/hosting_how_to_get_my_website_online){.external} and [Migrating your website and emails to OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external} should be able to help you establish how to proceed.
 
 ### Step 6: Modify your domain name’s configuration.
 
 At this stage, your project must be set up on your OVHcloud Cloud Web hosting plan, and if applicable, your email addresses must be created. If your email addresses do not work, it may be because your domain name is not correctly configured. If this is the case, or you are unsure about where the error is, we would recommend following this step.
 
-However, please note that if you are in the process of migrating your services to OVHcloud, the changes associated with the DNS may result in your services becoming unavailable if they are not completed at the right time. As described in our guide to [Migrating your website and emails to OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}, please note that you must edit your domain’s DNS servers as a final part of the process.
+However, please note that if you are in the process of migrating your services to OVHcloud, the changes associated with the DNS may result in your services becoming unavailable if they are not completed at the right time. As described in our guide to [Migrating your website and emails to OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}, please note that you must edit your domain’s DNS servers as a final part of the process.
 
 #### 1. Familiarise yourself with OVHcloud DNS records. 
 
@@ -169,7 +166,7 @@ Please read the instructions below to see where you should make the changes:
 
 |DNS configuration used|Where to make the changes|
 |---|---|
-|OVHcloud|In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, go to the `Domains`{.action} section for the domain name concerned. Then in the DNS zone tab, check and edit the information as required. If you need any further assistance, you can read our guide to [Editing an OVHcloud DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.|
+|OVHcloud|In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, go to the `Domains`{.action} section for the domain name concerned. Then in the DNS zone tab, check and edit the information as required. If you need any further assistance, you can read our guide to [Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit){.external}.|
 |Other|From the interface given by the service provider managing your domain name’s DNS configuration. Please contact your service provider if you encounter any difficulties making these changes.|
 
 Once you have modified your domain name’s DNS configuration, you will need to allow a maximum of 24 hours for the changes to fully propagate and take effect. If you have added several domain names to your Cloud Web hosting plan as a multisite, you will need to make these two changes for each individual domain name. 
@@ -188,13 +185,13 @@ If you would like to configure your email address on an email client or device (
 
 ## Go further
 
-[Migrating your website and emails to OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}
+[Migrating your website and emails to OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-[Publishing a website on your Web Hosting space](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external}
+[Publishing a website on your Web Hosting space](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
-[Setting up your website with 1-click modules](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules/){.external}
+[Setting up your website with 1-click modules](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external}
+[Hosting multiple websites on your Web Hosting plan](/pages/web/hosting/multisites_configure_multisite){.external}
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
 

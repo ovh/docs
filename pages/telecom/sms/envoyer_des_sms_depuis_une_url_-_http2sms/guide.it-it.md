@@ -1,8 +1,6 @@
 ---
 title: Inviare SMS da un URL - http2sms
-slug: inviare_sms_da_un_url_http2sms
 excerpt: Scopri come inviare SMS da un indirizzo http
-section: Inviare SMS
 updated: 2020-05-20
 ---
 
@@ -15,7 +13,7 @@ Per inviare SMS esistono metodi diversi. Tra questi, vi è l’utilizzo dello st
 **Come inviare SMS mediante lo strumento Wget.**
 
 ## Prerequisiti
-- Creare un utente SMS attraverso lo Spazio Cliente OVHcloud o direttamente attraverso le API. A questo proposito, è possibile consultare la guida che segue: [Tutte le informazioni sugli utenti SMS](../tutto_sugli_utenti_sms/)
+- Creare un utente SMS attraverso lo Spazio Cliente OVHcloud o direttamente attraverso le API. A questo proposito, è possibile consultare la guida che segue: [Tutte le informazioni sugli utenti SMS](/pages/telecom/sms/tout_savoir_sur_les_utilisateurs_sms)
 - Disporre di un account SMS OVHcloud con saldo SMS
 
 ## Procedura

@@ -1,8 +1,6 @@
 ---
 title: OVHcloud Network Plugin verwenden
-slug: ovhcloud-network-plugin
 excerpt: So verwenden Sie das OVHcloud Network Plugin für Ihre Private Cloud
-section: OVHcloud Funktionen
 updated: 2020-07-01
 ---
 

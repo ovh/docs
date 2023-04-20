@@ -1,10 +1,7 @@
 ---
 title: 'Setting OpenStack environment variables'
-slug: set-openstack-environment-variables
 excerpt: 'Find out how to set your environment variables to use the OpenStack API'
 legacy_guide_number: 1852
-section: OpenStack
-order: 2
 updated: 2021-08-18
 ---
 
@@ -17,8 +14,8 @@ By setting OpenStack environment variables on your desktop, you can use the Open
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-- An [OpenStack user account](../creation-and-deletion-of-openstack-user/)
-- OpenStack [installed on your system](../prepare_the_environment_for_using_the_openstack_api/)
+- An [OpenStack user account](/pages/platform/public-cloud/create_and_delete_a_user)
+- OpenStack [installed on your system](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
 
 ## Instructions
 
@@ -46,7 +43,7 @@ admin@vpsxxxxxx:~$ source openrc.sh
 Please enter your OpenStack Password:
 ```
 
-As outlined in [this guide](../creation-and-deletion-of-openstack-user/), the password is only visible once — when it is created.
+As outlined in [this guide](/pages/platform/public-cloud/create_and_delete_a_user), the password is only visible once — when it is created.
 
 If you forget your password, you will need to reset it.
 

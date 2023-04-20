@@ -1,9 +1,6 @@
 ---
 title: "Mi sitio es lento. ¿Qué hacer?" 
 excerpt: "Identifique el origen de la lentitud de su sitio web y descubra cómo solucionar esta situación"
-slug: slow-website-fix
-section: Diagnóstico
-order: 09
 updated: 2022-11-17
 ---
 
@@ -127,7 +124,7 @@ Pruebe su sitio web desde otro dispositivo/ordenador y luego desde otro punto de
 
 #### 1.3 - Pruebe el alojamiento con un archivo independiente de su sitio web
 
-Ponga en la raíz de su sitio web en el[espacio de almacenamiento FTP de su alojamiento compartido](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) un archivo al que denominará "phpinfo.php".
+Ponga en la raíz de su sitio web en el[espacio de almacenamiento FTP de su alojamiento compartido](/pages/web/hosting/ftp_connection) un archivo al que denominará "phpinfo.php".
 
 Introduzca el siguiente código en el archivo:
 
@@ -157,9 +154,9 @@ phpinfo();
 
 #### 1.4 - Pruebe la conectividad de su base de datos:
 
-Conéctese a su base de datos siguiendo **el etapa 3** de nuestra guía sobre la [creación de una base de datos compartida](https://docs.ovh.com/es/hosting/crear-base-de-datos/).
+Conéctese a su base de datos siguiendo **el etapa 3** de nuestra guía sobre la [creación de una base de datos compartida](/pages/web/hosting/sql_create_database).
 
-Si utiliza una base de datos en una solución **Web Cloud Databases**, consulte nuestra guía sobre [la conexión a la base de datos de una solución Web Cloud Databases](https://docs.ovh.com/es/clouddb/coneccion-base-de-datos-servidor-bdd/).
+Si utiliza una base de datos en una solución **Web Cloud Databases**, consulte nuestra guía sobre [la conexión a la base de datos de una solución Web Cloud Databases](/pages/web/clouddb/connecting-to-database-on-database-server).
 
 Si la conexión se ha realizado correctamente, acceda a la siguiente interfaz:
 
@@ -167,7 +164,7 @@ Si la conexión se ha realizado correctamente, acceda a la siguiente interfaz:
 
 > [!warning]
 >
-> Si se produce un error, consulte nuestra documentación sobre los [errores comunes encontrados con una base de datos](https://docs.ovh.com/es/hosting/error-requentes-base-de-datos/). A continuación, utilice la guía para corregir su situación e intente volver a conectarse a la base de datos.
+> Si se produce un error, consulte nuestra documentación sobre los [errores comunes encontrados con una base de datos](/pages/web/hosting/diagnosis_database_errors). A continuación, utilice la guía para corregir su situación e intente volver a conectarse a la base de datos.
 >
 
 #### 1.5 - Interpretación de los diagnósticos efectuados
@@ -203,11 +200,11 @@ A continuación se indican las acciones que debe realizar para identificar las f
 
 #### 2.1 - Compruebe la configuración de su alojamiento web
 
-Compruebe el motor PHP, la versión PHP y el entorno de ejecución utilizados en su alojamiento web, con ayuda de nuestra guía sobre la [configuración de su alojamiento web](https://docs.ovh.com/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento/).
+Compruebe el motor PHP, la versión PHP y el entorno de ejecución utilizados en su alojamiento web, con ayuda de nuestra guía sobre la [configuración de su alojamiento web](/pages/web/hosting/ovhconfig_modify_system_runtime).
 
 Si utiliza en su alojamiento web una versión de PHP obsoleta, el motor "**PHP CGI**" y/o el entorno "**legacy**" y **si su sitio web es compatible**, privilegie el uso del motor "**PHP**" (PHP FPM), el entorno "**stable**" o "**stable64**". con la versión más reciente posible de PHP.
 
-Para comparar las versiones de PHP disponibles en función del entorno de ejecución utilizado, consulte **el etapa 2** de la guía sobre la [configuración de la versión PHP en su alojamiento](https://docs.ovh.com/es/hosting/cambiar-version-php-en-alojamiento-web/).
+Para comparar las versiones de PHP disponibles en función del entorno de ejecución utilizado, consulte **el etapa 2** de la guía sobre la [configuración de la versión PHP en su alojamiento](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014).
 
 Utilizar una versión de PHP reciente, el entorno de ejecución "**stable**" o "**stable64**" con el motor "**PHP**" (PHP FPM) hace su sitio mucho más fluido y rápido. A título informativo, el motor "**PHP**" (PHP-FPM) puede ser hasta 50 veces más potente que el motor "**PHP CGI**" para llevar a cabo sus tareas.
 
@@ -217,7 +214,7 @@ Las conexiones salientes son muy exigentes en términos de recursos. Cuando esta
 
 Esto se traduce en ralentizaciones e incluso en los códigos "504 gateway timeout".
 
-Para analizar las conexiones salientes del alojamiento, consulte los logs **OUT** del mismo. Si necesita ayuda, consulte nuestra guía sobre [la consulta de los logs de su alojamiento](https://docs.ovh.com/es/hosting/web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/).
+Para analizar las conexiones salientes del alojamiento, consulte los logs **OUT** del mismo. Si necesita ayuda, consulte nuestra guía sobre [la consulta de los logs de su alojamiento](/pages/web/hosting/logs_and_statistics).
 
 Si encuentra que hay muchas conexiones salientes en su alojamiento, compare sus logs **OUT** con sus logs **WEB** utilizando la marca de tiempo de los mismos. para identificar el script o scripts responsables de esta situación.
 
@@ -225,7 +222,7 @@ Si utiliza un Content Management System (CMS) como WordPress, Joomla, PrestaShop
 
 #### 2.3 - Analice el flujo de peticiones HTTP realizadas a su alojamiento web:
 
-Para ello, consulte los logs **WEB** de su alojamiento web con nuestra guía sobre [cómo consultar los logs de su alojamiento](https://docs.ovh.com/es/hosting/web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/).
+Para ello, consulte los logs **WEB** de su alojamiento web con nuestra guía sobre [cómo consultar los logs de su alojamiento](/pages/web/hosting/logs_and_statistics).
 
 Las peticiones más exigentes en términos de recursos son las de tipo HTTP **POST** y, seguidamente, las de tipo **PUT**. Estas últimas realizan, respectivamente, modificaciones e inserciones.
 
@@ -253,7 +250,7 @@ Para reducir el flujo de peticiones a cada una de las cargas de sus páginas, ta
 
 > [!primary]
 >
-> OVHcloud ofrece varios [productos CDN](https://www.ovhcloud.com/es-es/web-hosting/options/). Si desea utilizar o activar una para su alojamiento web, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y consulte nuestra guía sobre el uso de la CDN de OVHcloud](https://docs.ovh.com/es/hosting/guia_de_uso_del_acelerador_geocache_en_un_alojamiento_web/).
+> OVHcloud ofrece varios [productos CDN](https://www.ovhcloud.com/es-es/web-hosting/options/). Si desea utilizar o activar una para su alojamiento web, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y consulte nuestra guía sobre el uso de la CDN de OVHcloud](/pages/web/hosting/cdn_how_to_use_cdn).
 >
 
 #### 2.4 - Optimice su base de datos
@@ -286,7 +283,7 @@ Redimensione todas sus imágenes para reducir al mínimo el consumo de recursos.
 
 #### 2.6 - Optimice el resto de su sitio web
 
-Consulte nuestra guía sobre la [optimización del rendimiento de su sitio web](https://docs.ovh.com/es/hosting/web_hosting_guia_de_optimizacion_del_rendimiento_de_un_sitio_web/).
+Consulte nuestra guía sobre la [optimización del rendimiento de su sitio web](/pages/web/hosting/optimise_your_website_performance).
 
 Puede encontrar pistas de optimización para su sitio web analizándolo en [gtmetrix.com](https://gtmetrix.com){.external} (este sitio no está afiliado a OVHcloud).
 

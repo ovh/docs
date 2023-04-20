@@ -1,9 +1,6 @@
 ---
 title: Projekte delegieren
-slug: seine-Projekte-delegieren
 excerpt: Erfahren Sie hier, wie Sie Zugriffsrechte auf ein Public Cloud Projekt anderen Kunden-Accounts übertragen
-section: 'Projektverwaltung'
-order: 7
 updated: 2022-04-04
 ---
 
@@ -34,7 +31,7 @@ Auf dieser Seite können Sie die zu Ihrem Projekt gehörenden Kontakte einsehen.
 
 ![public-cloud-delegate-projects](images/delegatingproject01.png){.thumbnail}
 
-Sie können die `Ändern`{.action} Buttons verwenden, um die aktuellen Kontakte zu ändern. Folgen Sie den Anweisungen in unserer Anleitung "[Kontakte eines Projekts ändern](../die_kontakte_eines_projekts_andern/)", um den Prozess abzuschließen.
+Sie können die `Ändern`{.action} Buttons verwenden, um die aktuellen Kontakte zu ändern. Folgen Sie den Anweisungen in unserer Anleitung "[Kontakte eines Projekts ändern](/pages/platform/public-cloud/change_project_contacts)", um den Prozess abzuschließen.
 
 ### Kontakte und Rechte hinzufügen
 
@@ -57,10 +54,10 @@ Um einen Zugang zu widerrufen, klicken Sie auf den Button `...`{.action} und wä
 
 ## Weiterführende Informationen
 
-[Erste Schritte mit einer Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/)
+[Erste Schritte mit einer Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Informationen zu den Abrechnungsoptionen der Public Cloud](https://docs.ovh.com/de/public-cloud/informationen-zu-cloud-abrechnungsoptionen/)
+[Informationen zu den Abrechnungsoptionen der Public Cloud](/pages/platform/public-cloud/analyze_billing)
 
-[Zugriffs- und Sicherheitseinstellungen in Horizon](https://docs.ovh.com/de/public-cloud/access_and_security_in_horizon/)
+[Zugriffs- und Sicherheitseinstellungen in Horizon](/pages/platform/public-cloud/access_and_security_in_horizon)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

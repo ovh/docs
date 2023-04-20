@@ -1,9 +1,6 @@
 ---
 title: "Configuration d'un plan de reprise d'activité avec Metro"
-slug: metro-availability
 excerpt: "Mise en oeuvre de Metro pour un plan de reprise d'activité"
-section: "Plan de Reprise d'Activité"
-order: 06
 updated: 2022-11-15
 ---
 
@@ -103,8 +100,8 @@ Les informations de configuration des clusters utilisées par notre guide sont l
 
 En plus de ce guide, vous pouvez vous aider de ces documentations :
 
-- [hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/) ;
-- [outils avancés](https://docs.ovh.com/fr/nutanix/advanced-tools/).
+- [hyperconvergence Nutanix](/pages/cloud/nutanix/03-nutanix-hci) ;
+- [outils avancés](/pages/cloud/nutanix/09-advanced-tools).
 
 <a name="configuration"></a>
 
@@ -116,7 +113,7 @@ En plus de ce guide, vous pouvez vous aider de ces documentations :
 
 La première étape est de réaliser l'interconnexion des trois clusters sur le même vRack OVHcloud. 
 
-Aidez-vous de ce guide pour interconnecter vos clusters : [Interconnexion de clusters au travers du vRack](https://docs.ovh.com/fr/nutanix/nutanix-vrack-interconnection/). Pour connecter les trois clusters, utilisez les instructions fournies sur le guide dans ce sens :
+Aidez-vous de ce guide pour interconnecter vos clusters : [Interconnexion de clusters au travers du vRack](/pages/cloud/nutanix/45-vrack-interconnection). Pour connecter les trois clusters, utilisez les instructions fournies sur le guide dans ce sens :
 
 - Les clusters de Roubaix dans le vRack dédié à Gravelines.
 - Les clusters de Erith dans le vRack dédié à Gravelines.
@@ -599,7 +596,7 @@ Nous allons donc créer 3 sous-réseaux supplémentaires sur les clusters de Gra
 - **testinfra** sur le VLAN 101.
 - **production** sur le VLAN 102.
 
-Aidez-vous de ce guide pour créer des VLAN sur vos clusters Nutanix : [isoler les machines de gestion de la production](https://docs.ovh.com/fr/nutanix/nutanix-isolate-management-machines/).
+Aidez-vous de ce guide pour créer des VLAN sur vos clusters Nutanix : [isoler les machines de gestion de la production](/pages/cloud/nutanix/27-isolate-management-vm).
 
 Dans le tableau de bord `Subnets` de Prism Central, vous verrez six nouveaux sous-réseaux.
 
@@ -1081,13 +1078,13 @@ La liste des événements survenus apparaît, cliquez sur `Close`{.action} pour 
 
 ## Aller plus loin
 
-[Interconnexion de clusters au travers du vRack](https://docs.ovh.com/fr/nutanix/nutanix-vrack-interconnection/)
+[Interconnexion de clusters au travers du vRack](/pages/cloud/nutanix/45-vrack-interconnection)
 
-[Plan de reprise d'activité sous Nutanix](https://docs.ovh.com/fr/nutanix/disaster-recovery-plan-overview/)
+[Plan de reprise d'activité sous Nutanix](/pages/cloud/nutanix/43-disaster-recovery-plan-overview)
 
-[Réplication asynchrone ou NearSync au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
+[Réplication asynchrone ou NearSync au travers de Prism Element](/pages/cloud/nutanix/46-prism-element-replication)
 
-[Réplication avancée avec Leap](https://docs.ovh.com/fr/nutanix/leap-replication/)
+[Réplication avancée avec Leap](/pages/cloud/nutanix/47-nutanix-leap)
 
 [Présentation des vRack](https://www.ovh.com/fr/solutions/vrack/)
 

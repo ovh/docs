@@ -1,9 +1,6 @@
 ---
 title: "Meine Website lädt zu langsam. Was soll ich tun?" 
 excerpt: "Ermitteln Sie den Ursprung der Ladezeiten Ihrer Website und erfahren Sie, wie Sie diese Situation verbessern"
-slug: slow-website-fix
-section: Diagnose
-order: 09
 updated: 2022-11-17
 ---
 
@@ -127,7 +124,7 @@ Testen Sie Ihre Website mit einem anderen Gerät/Computer und anschließend übe
 
 #### 1.3 - Testen Sie das Hosting mit einer von Ihrer Webseite unabhängigen Datei
 
-Legen Sie im Wurzelverzeichnis Ihrer Website auf dem [FTP-Speicherplatz Ihres Webhostings](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) eine Datei mit dem Namen **phpinfo.php** an.
+Legen Sie im Wurzelverzeichnis Ihrer Website auf dem [FTP-Speicherplatz Ihres Webhostings](/pages/web/hosting/ftp_connection) eine Datei mit dem Namen **phpinfo.php** an.
 
 Geben Sie folgenden Code in diese Datei ein:
 
@@ -157,9 +154,9 @@ phpinfo();
 
 #### 1.4 - Testen Sie die Konnektivität Ihrer Datenbank
 
-Loggen Sie sich in Ihrer Datenbank ein, indem Sie **Schritt 3** unserer [Anleitung zu Webhosting-Datenbanken](https://docs.ovh.com/de/hosting/datenbank-erstellen/) befolgen.
+Loggen Sie sich in Ihrer Datenbank ein, indem Sie **Schritt 3** unserer [Anleitung zu Webhosting-Datenbanken](/pages/web/hosting/sql_create_database) befolgen.
 
-Wenn Sie eine Datenbank mit **Web Cloud Databases** nutzen, lesen Sie unsere Anleitung zur [Datenbankverbindung mit Web Cloud Databases](https://docs.ovh.com/de/clouddb/datenbank-verbindung-auf-bdd/).
+Wenn Sie eine Datenbank mit **Web Cloud Databases** nutzen, lesen Sie unsere Anleitung zur [Datenbankverbindung mit Web Cloud Databases](/pages/web/clouddb/connecting-to-database-on-database-server).
 
 Wenn die Verbindung erfolgreich war, gelangen Sie auf folgendes Interface:
 
@@ -167,7 +164,7 @@ Wenn die Verbindung erfolgreich war, gelangen Sie auf folgendes Interface:
 
 > [!warning]
 >
-> Falls Sie einen Fehler feststellen, lesen Sie unsere [Anleitung zur Behebung von Datenbankfehlern](https://docs.ovh.com/de/hosting/datenbanken-fehler-beheben/). Loggen Sie sich nach der Fehlerbehebung erneut ein.
+> Falls Sie einen Fehler feststellen, lesen Sie unsere [Anleitung zur Behebung von Datenbankfehlern](/pages/web/hosting/diagnosis_database_errors). Loggen Sie sich nach der Fehlerbehebung erneut ein.
 >
 
 #### 1.5 - Auswertung der durchgeführten Diagnosen
@@ -203,11 +200,11 @@ Im Folgenden finden Sie die notwendigen Aktionen, um die Quelle(n) der Langsamke
 
 #### 2.1 - Überprüfen Sie die Konfiguration Ihres Webhostings
 
-Überprüfen Sie die auf Ihrem Webhosting verwendete PHP-Engine, PHP-Version und Ausführungsumgebung. Lesen Sie hierzu unsere Anleitung zur [Konfiguration Ihres Webhostings](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/).
+Überprüfen Sie die auf Ihrem Webhosting verwendete PHP-Engine, PHP-Version und Ausführungsumgebung. Lesen Sie hierzu unsere Anleitung zur [Konfiguration Ihres Webhostings](/pages/web/hosting/ovhconfig_modify_system_runtime).
 
 Wenn Sie auf Ihrem Webhosting eine überholte PHP-Version einsetzen, sowie die Engine **PHP CGI** und/oder die Umgebung **legacy** und **wenn Ihre Website kompatibel ist**, verwenden Sie die Engine **PHP** (PHP FPM) mit **stable64** und die aktuellste PHP-Version.
 
-Um die verfügbaren PHP-Versionen je nach Ausführungsumgebung zu vergleichen, lesen Sie **Schritt 2** der Anleitung zur [Konfiguration der PHP-Version auf Ihrem Hosting](https://docs.ovh.com/de/hosting/konfiguration_von_php_fur_ein_ovh_webhosting_2014/).
+Um die verfügbaren PHP-Versionen je nach Ausführungsumgebung zu vergleichen, lesen Sie **Schritt 2** der Anleitung zur [Konfiguration der PHP-Version auf Ihrem Hosting](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014).
 
 Die Verwendung einer aktuellen PHP-Version, die Ausführungsumgebung **stable** oder **stable64** mit der Engine **PHP** (PHP FPM) macht Ihre Website deutlich flüssiger und schneller. Zur Information: Die Engine **PHP** (PHP FPM) kann bis zu 50 Mal leistungsfähiger bei Auführungen sein als die Engine **PHP CGI**.
 
@@ -217,7 +214,7 @@ Ausgehende Verbindungen sind sehr ressourcenintensiv. Wenn diese Verbindungen si
 
 Dies führt zu Verlangsamungen oder sogar zu **504 Gateway Timeout** Codes.
 
-Um die ausgehenden Verbindungen Ihres Hostings zu analysieren, analysieren Sie dessen Logs vom Typ **OUT**. Weitere Informationen finden Sie in unserer Dokumentation zur [Verwendung von Hosting-Logs](https://docs.ovh.com/de/hosting/webhosting_die_statistiken_und_logs_meiner_website_einsehen/).
+Um die ausgehenden Verbindungen Ihres Hostings zu analysieren, analysieren Sie dessen Logs vom Typ **OUT**. Weitere Informationen finden Sie in unserer Dokumentation zur [Verwendung von Hosting-Logs](/pages/web/hosting/logs_and_statistics).
 
 Wenn Sie feststellen, dass viele ausgehende Verbindungen auf Ihrem Hosting vorhanden sind, vergleichen Sie in den Logs **OUT** mit **WEB** anhand des Zeitstempels dieser Logs. So können Sie Skripte identifizieren, die für diese Situation verantwortlich sind.
 
@@ -225,7 +222,7 @@ Wenn Sie ein Content Management System (CMS) wie WordPress, Joomla!, PrestaShop 
 
 #### 2.3 - Analysieren Sie die eingehenden HTTP Anfragen Ihres Webhostings
 
-Lesen Sie hierzu die Logs vom Typ **WEB** Ihres Webhostings unter Verwendung unserer Anleitung: [Die Logs Ihres Webhostings einsehen](https://docs.ovh.com/de/hosting/webhosting_die_statistiken_und_logs_meiner_website_einsehen/).
+Lesen Sie hierzu die Logs vom Typ **WEB** Ihres Webhostings unter Verwendung unserer Anleitung: [Die Logs Ihres Webhostings einsehen](/pages/web/hosting/logs_and_statistics).
 
 Die ressourcenintensivsten Anfragen sind HTTP-Anfragen vom Typ **POST**, gefolgt von **PUT**. Diese führen jeweils Änderungen und Einfügungen durch.
 
@@ -253,7 +250,7 @@ Um das Aufkommen an Abfragen für jeden Seitenaufbau zu reduzieren, können Sie 
 
 > [!primary]
 >
-> OVHcloud bietet mehrere [CDN-Optionen](https://www.ovhcloud.com/de/web-hosting/options/) an. Wenn Sie CDN für Ihr Webhosting aktivieren möchten, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und folgen Sie unserer Anleitung zur [Verwendung des OVHcloud CDN](https://docs.ovh.com/de/hosting/verwendung_des_geocache_boosters_auf_einem_webhosting/).
+> OVHcloud bietet mehrere [CDN-Optionen](https://www.ovhcloud.com/de/web-hosting/options/) an. Wenn Sie CDN für Ihr Webhosting aktivieren möchten, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und folgen Sie unserer Anleitung zur [Verwendung des OVHcloud CDN](/pages/web/hosting/cdn_how_to_use_cdn).
 >
 
 #### 2.4 - Optimieren Sie Ihre Datenbank
@@ -286,7 +283,7 @@ Passen Sie alle Ihre Bilddateien an, um den Ressourcenverbrauch möglichst gerin
 
 #### 2.6 - Optimieren Sie den Rest Ihrer Webseite
 
-Lesen Sie auch unsere Anleitung zur [Optimierung der Performance Ihrer Website](https://docs.ovh.com/de/hosting/webhosting_optimierung_der_performance_ihrer_webseite/).
+Lesen Sie auch unsere Anleitung zur [Optimierung der Performance Ihrer Website](/pages/web/hosting/optimise_your_website_performance).
 
 Sie können weitere Optimierungsmöglichkeiten für Ihre Website finden, indem Sie diese auf [gtmetrix.com](https://gtmetrix.com){.external} analysieren lassen. (Dieses externe Tool hat keine geschäftliche Verbindung zu OVHcloud).
 

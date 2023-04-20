@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Come bloccare l'accesso al mio sito per alcuni indirizzi IP tramite un file .htaccess?"
-slug: htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website
 excerpt: "Scopri le azioni possibili tramite un file .htaccess per bloccare l'accesso al tuo sito ad alcuni indirizzi IP"
-section: Scrittura e autenticazione
-order: 01
 updated: 2022-09-12
 ---
 
@@ -20,7 +17,7 @@ Questa guida ti mostra come proteggere l'accesso ai tuoi siti dalla rete esterna
 
 Per effettuare questa operazione, utilizza un file ".htaccess", un file di testo specifico individuato dal server web (Apache), che permette di definire regole speciali su una directory e su tutte le sue sottocartelle.
 
-Puoi creare diversi file ".htaccess" in [lo spazio FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) del tuo hosting ma **un solo** per directory o sottodirectory per evitare conflitti tra diversi file ".htaccess".
+Puoi creare diversi file ".htaccess" in [lo spazio FTP](/pages/web/hosting/ftp_connection) del tuo hosting ma **un solo** per directory o sottodirectory per evitare conflitti tra diversi file ".htaccess".
 
 **Questa guida ti mostra come bloccare l'accesso al tuo sito per alcuni indirizzi IP tramite un file.htaccess.**
 
@@ -43,14 +40,14 @@ Puoi creare diversi file ".htaccess" in [lo spazio FTP](https://docs.ovh.com/it/
 >
 > I parametri definiti da un file ".htaccess" si applicano alla directory in cui è installato e a tutte le sue sottodirectory.
 >
-> Per modificare (o creare) queste directory, accedi allo spazio FTP del tuo hosting. Se necessario, consulta la guida [Accedi al tuo spazio di storage](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/).
+> Per modificare (o creare) queste directory, accedi allo spazio FTP del tuo hosting. Se necessario, consulta la guida [Accedi al tuo spazio di storage](/pages/web/hosting/ftp_connection).
 >
 
 ### Bloccare un IP, una gamma di IP, un dominio o tutti gli IP di un Paese 
 
 Sono disponibili diverse regole per bloccare gli accessi al tuo hosting tramite ".htaccess".<br>
 Presta particolare attenzione alla sintassi e alle impostazioni bloccate per non ritrovarsi bloccati durante la consultazione dei tuoi siti e/o script ospitati.<br>
-In caso di errore, accedi allo [spazio FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) dell'hosting per correggere la situazione. 
+In caso di errore, accedi allo [spazio FTP](/pages/web/hosting/ftp_connection) dell'hosting per correggere la situazione. 
 
 > [!primary]
 >
@@ -370,8 +367,8 @@ Per autorizzare tutti gli IP di un paese ad accedere al tuo servizio, inserisci 
 
 Indipendentemente dalla sicurezza sull'accesso generale all'hosting, il file ".htaccess" permette di effettuare altre azioni. Di seguito trovi tre altri tutorial su questo argomento:
 
-- [Proteggere l'interfaccia di gestione del tuo sito tramite il ".htaccess"](https://docs.ovh.com/it/hosting/condividi-htaccess-come-proteggere-laccesso-a-una-cartella-tramite-autenticazione/).
-- [Effettuare altre operazioni con il file ".htaccess"](https://docs.ovh.com/it/hosting/hosting_condiviso_altre_operazioni_possibili_con_il_file_htaccess/).
+- [Proteggere l'interfaccia di gestione del tuo sito tramite il ".htaccess"](/pages/web/hosting/htaccess_protect_directory_by_password).
+- [Effettuare altre operazioni con il file ".htaccess"](/pages/web/hosting/htaccess_what_else_can_you_do).
 
 ## Per saperne di più <a name="go-further"></a>
 

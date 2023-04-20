@@ -1,9 +1,6 @@
 ---
 title: 'In das OVHcloud Kundencenter einloggen'
-slug: sich-mit-ovhcloud-kundencenter-verbinden
 excerpt: 'Erfahren Sie hier, wie Sie sich mit Ihrem OVHcloud Kunden-Account verbinden'
-section: 'Erste Schritte'
-order: 2
 updated: 2021-07-01
 ---
 
@@ -21,8 +18,8 @@ Die Verwaltung Ihrer Dienste erfolgt hauptsächlich über das OVHcloud Kundencen
 
 ## Voraussetzungen
 
-- Sie haben [Ihren OVHcloud Account erstellt](https://docs.ovh.com/de/customer/ovhcloud-account-erstellen)
-- Sie haben die [Best Practices zur Sicherung Ihres OVHcloud Accounts](https://docs.ovh.com/de/customer/alles_uber_ihre_ovh_kundenkennung/) zur Kenntnis genommen
+- Sie haben [Ihren OVHcloud Account erstellt](/pages/account/customer/ovhcloud-account-creation)
+- Sie haben die [Best Practices zur Sicherung Ihres OVHcloud Accounts](/pages/account/customer/all_about_username) zur Kenntnis genommen
 
 ## In der praktischen Anwendung
 
@@ -32,7 +29,7 @@ Gehen Sie auf die [Login-Seite von OVHcloud](https://www.ovh.com/auth/?action=go
 
 ![Kundenkennung](images/log-in.png){.thumbnail}
 
-Wenn Sie die [Zwei-Faktor-Authentifizierung](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/) aktiviert haben, bestätigen Sie den Login mit der gewählten Methode (SMS, Mobile App, U2F-Schlüssel).
+Wenn Sie die [Zwei-Faktor-Authentifizierung](/pages/account/customer/secure-ovhcloud-account-with-2fa) aktiviert haben, bestätigen Sie den Login mit der gewählten Methode (SMS, Mobile App, U2F-Schlüssel).
 
 ### Was, wenn ich mich nicht einloggen kann? <a name="login-failure"></a>
 
@@ -63,7 +60,7 @@ Sobald Sie eingeloggt sind, können Sie Ihre Kundenkennung in Ihrem Kundencenter
 
 ### Ich habe mein Passwort verloren
 
-Wenn Sie das Passwort nicht zur Hand haben, folgen Sie der [Anleitung zur Passwortänderung](https://docs.ovh.com/de/customer/Passwort-verwalten/#wenn-sie-ihr-aktuelles-passwort-nicht-kennen).
+Wenn Sie das Passwort nicht zur Hand haben, folgen Sie der [Anleitung zur Passwortänderung](/pages/account/customer/manage-ovh-password#wenn-sie-ihr-aktuelles-passwort-nicht-kennen).
 
 ### Ich habe mein Passwort verloren und meine Haupt-E-Mail-Adresse ist nicht mehr gültig
 
@@ -73,7 +70,7 @@ In diesem Fall kann das Passwort nicht über die Loginseite zurückgesetzt werde
 
 Kontaktieren Sie den OVHcloud Support unter +49 681 906730, um diese Backup-Adresse als Haupt-E-Mail-Adresse einzurichten.
 
-Nachdem diese Umstellung erfolgt ist, [richten Sie **erneut** eine Backup-Adresse](https://docs.ovh.com/de/customer/alles_uber_ihre_ovh_kundenkennung/#backup-email) ein.
+Nachdem diese Umstellung erfolgt ist, [richten Sie **erneut** eine Backup-Adresse](/pages/account/customer/all_about_username#backup-email) ein.
 
 #### Wenn Sie keine sekundäre E-Mail-Adresse hinterlegt haben oder diese ebenfalls ungültig ist
 
@@ -89,7 +86,7 @@ Dieser Vorgang kann mehrere Tage in Anspruch nehmen, wobei manuelle und automati
 
 In diesem Fall können Sie die Notfall-Codes der Zwei-Faktor-Authentifizierung verwenden, die Authentifizierungsanwendung auf einem anderen Gerät oder die Zwei-Faktor-Authentifizierung deaktivieren.
 
-Die entsprechenden Schritte finden Sie in unserer Anleitung "[Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/#was-soll-ich-tun-wenn-eines-meiner-peripheriegerate-verloren-geht-oder-nicht-mehr-funktioniert)".
+Die entsprechenden Schritte finden Sie in unserer Anleitung "[Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](/pages/account/customer/secure-ovhcloud-account-with-2fa#was-soll-ich-tun-wenn-eines-meiner-peripheriegerate-verloren-geht-oder-nicht-mehr-funktioniert)".
 
 ### Ich habe die Zwei-Faktor-Authentifizierung für meinen Account nicht aktiviert, aber trotzdem werde ich um einen Code gebeten
 
@@ -105,12 +102,12 @@ Wenn Sie die E-Mail mit dem Code nicht erhalten haben, überprüfen Sie bitte de
 
 ## Weiterführende Informationen
 
-[OVHcloud Kunden-Account erstellen](https://docs.ovh.com/de/customer/ovhcloud-account-erstellen)
+[OVHcloud Kunden-Account erstellen](/pages/account/customer/ovhcloud-account-creation)
 
-[OVHcloud Kunden-Account absichern und persönliche Informationen verwalten](https://docs.ovh.com/de/customer/alles_uber_ihre_ovh_kundenkennung/)
+[OVHcloud Kunden-Account absichern und persönliche Informationen verwalten](/pages/account/customer/all_about_username)
 
-[Das Passwort Ihres Kunden-Accounts anlegen und verwalten](https://docs.ovh.com/de/customer/Passwort-verwalten/)
+[Das Passwort Ihres Kunden-Accounts anlegen und verwalten](/pages/account/customer/manage-ovh-password)
 
-[Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/)
+[Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

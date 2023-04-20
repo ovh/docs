@@ -1,9 +1,6 @@
 ---
 title: 'Aceder ao espaço de armazenamento do alojamento web'
-slug: aceder-espaco-de-armazenamento-ftp-alojamento-web
 excerpt: 'Saiba como aceder ao espaço de armazenamento do seu alojamento web da OVHcloud'
-section: FTP e SSH
-order: 02
 updated: 2022-10-21
 ---
 
@@ -56,7 +53,7 @@ Graças a estas informações, terá a possibilidade de encontrar os elementos n
 - **Servidor SSH**: Trata-se do endereço do servidor que permite aceder ao seu espaço de armazenamento utilizando um terminal através do protocolo SSH.
 - **Login principal**: Trata-se do identificador (S)FTP principal criado no seu alojamento. Pode consultar todos os utilizadores (S)FTP do seu alojamento na coluna "Login" da tabela.
 
-Se não souber qual é a palavra-passe de um utilizador FTP ou SSH, pode, em função do seu alojamento, utilizar o ícone em forma de lápis ou o ícone `...`{.action} e selecionar a opção `Alterar palavra-passe`{.action}. Se precisar de ajuda no processo, consulte o nosso manual "[Alterar a palavra-passe de um utilizador FTP](../alterar-palavra-passe-utilizador-ftp/)".
+Se não souber qual é a palavra-passe de um utilizador FTP ou SSH, pode, em função do seu alojamento, utilizar o ícone em forma de lápis ou o ícone `...`{.action} e selecionar a opção `Alterar palavra-passe`{.action}. Se precisar de ajuda no processo, consulte o nosso manual "[Alterar a palavra-passe de um utilizador FTP](/pages/web/hosting/ftp_change_password)".
 
 ![ftpconnect](images/connect-ftp-step2.png){.thumbnail}
 
@@ -118,14 +115,14 @@ Se se ligar através de uma linha de comandos, deverá: substituir os elementos 
 ssh sshlogin@sshserver -p connectionport
 ```
 
-Se as informações estiverem corretas, poderá então interagir com o seu espaço de armazenamento. Para obter mais informações, consulte o nosso manual “[O SSH nos alojamentos partilhados](../partilhado_o_ssh_nos_alojamentos_partilhados/)”.
+Se as informações estiverem corretas, poderá então interagir com o seu espaço de armazenamento. Para obter mais informações, consulte o nosso manual “[O SSH nos alojamentos partilhados](/pages/web/hosting/ssh_on_webhosting)”.
 
 ![ftpconnect](images/connect-ftp-step5.png){.thumbnail}
 
 ## Quer saber mais?
 
-[Alterar a palavra-passe de um utilizador FTP](https://docs.ovh.com/pt/hosting/alterar-palavra-passe-utilizador-ftp/){.external}
+[Alterar a palavra-passe de um utilizador FTP](/pages/web/hosting/ftp_change_password){.external}
 
-[O SSH nos alojamentos partilhados](https://docs.ovh.com/pt/hosting/partilhado_o_ssh_nos_alojamentos_partilhados/){.external}
+[O SSH nos alojamentos partilhados](/pages/web/hosting/ssh_on_webhosting){.external}
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>

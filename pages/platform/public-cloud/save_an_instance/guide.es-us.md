@@ -1,9 +1,6 @@
 ---
 title: 'Guardar una instancia'
-slug: guardar_copia_de_seguridad_de_una_instancia
 excerpt: 'Cómo realizar el backup de una instancia de Public Cloud desde el área de cliente de OVHcloud'
-section: 'Gestión de las instancias desde el área de cliente'
-order: 01
 updated: 2023-01-04
 ---
 
@@ -91,10 +88,10 @@ Las copias de seguridad de sus instancias se gestionan en la sección `Instance 
 
 ![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
 
-Esta guía explica cómo utilizar las copias de seguridad para clonar o restaurar instancias en [esta guía](https://docs.ovh.com/us/es/public-cloud/crear_o_restaurar_un_servidor_virtual_a_partir_de_un_snapshot/).
+Esta guía explica cómo utilizar las copias de seguridad para clonar o restaurar instancias en [esta guía](/pages/platform/public-cloud/create_restore_a_virtual_server_with_a_backup).
 
 ## Más información
 
-[Crear o restaurar un servidor virtual a partir de un snapshot](https://docs.ovh.com/us/es/public-cloud/crear_o_restaurar_un_servidor_virtual_a_partir_de_un_snapshot/)
+[Crear o restaurar un servidor virtual a partir de un snapshot](/pages/platform/public-cloud/create_restore_a_virtual_server_with_a_backup)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

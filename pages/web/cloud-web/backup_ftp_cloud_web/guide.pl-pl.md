@@ -1,8 +1,5 @@
 ---
 title: "Tworzenie i pobieranie kopii zapasowej przestrzeni FTP na hostingu Cloud Web"
-slug: backup_ftp_cloud_web
-section: Kopie zapasowe (backup)
-order: 01
 updated: 2022-09-13
 ---
 
@@ -23,7 +20,7 @@ Twój hosting Cloud Web dysponuje przestrzenią dyskową, na której możesz hos
 > 
 > Kopie zapasowe proponowane przez OVHcloud dla hostingu Cloud Web są niezamówione. Są one dostępne do uzupełnienia Twoich własnych środków tworzenia kopii zapasowych w sytuacjach nadzwyczajnych. Zalecamy zatem regularne wykonywanie Twoich własnych kopii zapasowych, aby zapobiec ewentualnej utracie danych.
 > 
-> Wykonując kopię zapasową bezpieczeństwa Twojej strony WWW i korzystając z bazy danych, wykonaj również jej kopię zapasową. Aby [pobrać kopię zapasową bazy danych](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/), zapoznaj się z naszym przewodnikiem.
+> Wykonując kopię zapasową bezpieczeństwa Twojej strony WWW i korzystając z bazy danych, wykonaj również jej kopię zapasową. Aby [pobrać kopię zapasową bazy danych](/pages/web/hosting/sql_database_export), zapoznaj się z naszym przewodnikiem.
 > 
 
 **Dowiedz się, jak pobrać i przywrócić kopię zapasową FTP Twojego hostingu Cloud Web.**
@@ -86,7 +83,7 @@ Pobrany plik jest w formacie *.tar.gz*.
 
 ### Przywróć kopię zapasową
 
-Po pobraniu plików możesz [połączyć się z przestrzenią FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) przy użyciu programu FTP, takiego jak [Filezilla](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/), a następnie wymienić wybrane pliki na pobrane pliki.
+Po pobraniu plików możesz [połączyć się z przestrzenią FTP](/pages/web/hosting/ftp_connection) przy użyciu programu FTP, takiego jak [Filezilla](/pages/web/hosting/ftp_filezilla_user_guide), a następnie wymienić wybrane pliki na pobrane pliki.
 
 > [!primary]
 >
@@ -95,9 +92,9 @@ Po pobraniu plików możesz [połączyć się z przestrzenią FTP](https://docs.
 
 ## Sprawdź również 
 
-[Logowanie do przestrzeni dyskowej hostingu WWW](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/){.external}
+[Logowanie do przestrzeni dyskowej hostingu WWW](/pages/web/hosting/ftp_connection){.external}
 
-[Logowanie za pomocą programu Filezilla](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/)
+[Logowanie za pomocą programu Filezilla](/pages/web/hosting/ftp_filezilla_user_guide)
 
 Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 

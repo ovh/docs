@@ -1,8 +1,6 @@
 ---
 title: OVHcloud Rechnungen verwalten
-slug: ovh-rechnungen-verwalten
 excerpt: Erfahren Sie hier, wie Sie Ihre Rechnungen und deren Bezahlung verwalten
-section: Abrechnung
 updated: 2022-05-12
 ---
 
@@ -27,7 +25,7 @@ OVHcloud stellt Ihnen einen Bereich zur Verfügung, über den Sie Ihre Rechnunge
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) als [Rechnungskontakt](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/) Ihres Dienstes.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) als [Rechnungskontakt](/pages/account/customer/managing_contacts) Ihres Dienstes.
 
 ## In der praktischen Anwendung
 
@@ -117,13 +115,13 @@ Um Ihre ausstehenden Rechnungen zu begleichen, klicken Sie einfach auf das Menü
 
 ![Bezahlung ausstehender Beträge](images/pay_debt.png){.thumbnail}
 
-Es wird dann ein [Bestellschein](https://docs.ovh.com/de/billing/bestellungen-verwalten-ovh/#der-bestellschein) entsprechend der Rechnungsbeträge erstellt. Nach Bezahlung ist Ihr Konto ausgeglichen.
+Es wird dann ein [Bestellschein](/pages/account/billing/managing_ovh_orders#der-bestellschein) entsprechend der Rechnungsbeträge erstellt. Nach Bezahlung ist Ihr Konto ausgeglichen.
 
 #### Die Stornierung einer Rechnung beantragen
 
 > [!primary]
 >
-> Um die Kündigung Ihrer Dienstleistung zu beantragen, folgen Sie den Anweisungen in [dieser Anleitung](https://docs.ovh.com/de/billing/how-to-cancel-your-services/).
+> Um die Kündigung Ihrer Dienstleistung zu beantragen, folgen Sie den Anweisungen in [dieser Anleitung](/pages/account/billing/how_to_cancel_services).
 >
 
 Wenn Sie eine Rechnung erhalten haben, die Sie nicht für rechtmäßig halten, und Sie eine Erstattung beantragen oder Ihre Rechnung geltend machen möchten, klicken Sie oben rechts auf Ihrem Bildschirm auf Ihren Namen und dann auf `Ein Ticket erstellen`{.action}.
@@ -143,8 +141,8 @@ In diesem Bereich können Sie Ihre Zahlungsbelege auch im *.csv* Format exportie
 
 ## Weiterführende Informationen
 
-[Verlängerung Ihrer OVHcloud Dienste verwalten](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/)
+[Verlängerung Ihrer OVHcloud Dienste verwalten](/pages/account/billing/how_to_use_automatic_renewal)
 
-[Zahlungsarten verwalten](https://docs.ovh.com/de/billing/zahlungsarten-verwalten/)
+[Zahlungsarten verwalten](/pages/account/billing/manage-payment-methods)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

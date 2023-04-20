@@ -1,11 +1,8 @@
 ---
 title: Disattivare una soluzione Managed Bare Metal
-slug: disattivare-una-soluzione-managed-bare-metal
 routes:
-    canonical: 'https://docs.ovh.com/it/private-cloud/disattivare-una-soluzione-private-cloud/'
+    canonical: '/pages/cloud/private-cloud/comment_resilier_le_private_cloud'
 excerpt: Come richiedere l’eliminazione di un’infrastruttura Managed Bare Metal
-section: Funzionalità OVHcloud
-order: 09
 updated: 2020-11-18
 ---
 

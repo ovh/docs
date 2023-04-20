@@ -1,10 +1,7 @@
 ---
 title: 'Créer des filtres pour vos adresses e-mail'
-slug: mail-mutualise-guide-configuration-des-filtres-e-mail-sur-lespace-client
 legacy_guide_number: 1973
 excerpt: 'Découvrez comment créer et configurer un filtre sur votre adresse e-mail'
-section: 'Fonctionnalités des adresses e-mail'
-order: 04
 updated: 2021-09-27
 ---
 

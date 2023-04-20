@@ -1,8 +1,6 @@
 ---
 title: Ma première campagne SMS
 excerpt: Découvrez comment effectuer une première campagne d’envoi de SMS
-slug: ma_premiere_campagne_sms
-section: Premiers pas
 updated: 2022-08-05
 ---
 
@@ -38,7 +36,7 @@ Pour ajouter une liste de contacts, cliquez sur l'onglet `Contacts`{.action} pui
 
 ![firstsms](images/firstsms03.png){.thumbnail}
 
-Le guide suivant vous permettra de comprendre comment [créer une liste de destinataires SMS](../liste_de_destinataire_sms/).
+Le guide suivant vous permettra de comprendre comment [créer une liste de destinataires SMS](/pages/telecom/sms/liste_de_destinataire_sms).
 
 #### Ajout d'un carnet d'adresses
 
@@ -48,7 +46,7 @@ Pour ajouter un carnet d'adresses, cliquez sur l'onglet `Contacts`{.action} puis
 
 ![firstsms](images/firstsms04.png){.thumbnail}
 
-Consultez le guide [Gérer mes carnets d'adresses SMS](../gerer_mes_carnets_dadresses_sms/) afin d'en savoir plus.
+Consultez le guide [Gérer mes carnets d'adresses SMS](/pages/telecom/sms/gerer_mes_carnets_dadresses_sms) afin d'en savoir plus.
 
 ### Étape 2 : créer un expéditeur
 
@@ -56,7 +54,7 @@ Par défaut, l'envoi de vos SMS depuis un compte OVHcloud en France se fait depu
 
 ![firstsms](images/firstsms05.png){.thumbnail}
 
-À cet effet, vous pouvez consulter [la section dédiée au choix de votre expéditeur SMS au sein du guide "Envoyer des sms depuis mon espace client".](../envoyer_des_sms_depuis_mon_espace_client/#etape-3-choisir-votre-expediteur-sms)
+À cet effet, vous pouvez consulter [la section dédiée au choix de votre expéditeur SMS au sein du guide "Envoyer des sms depuis mon espace client".](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#etape-3-choisir-votre-expediteur-sms)
 
 ### Étape 3 : l'envoi d'une campagne SMS
 
@@ -64,7 +62,7 @@ L'onglet `Message et campagne`{.action} vous permettra d'accéder aux options d'
 
 ![firstsms](images/firstsms02.png){.thumbnail}
 
-Pour envoyer un SMS unitaire depuis votre espace client, vous pouvez consulter [le guide dédié à cette méthode](../envoyer_des_sms_depuis_mon_espace_client/).
+Pour envoyer un SMS unitaire depuis votre espace client, vous pouvez consulter [le guide dédié à cette méthode](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client).
 
 Pour envoyer une campagne SMS, cliquez sur `Gestion des campagnes`{.action} puis sur `Créer une campagne`{.action}.
 
@@ -80,13 +78,13 @@ Composez alors votre message et choisissez entre un envoi immédiat ou planifié
 
 ![firstsms](images/firstsms08.png){.thumbnail}
 
-Pour plus d'informations sur la taille des SMS à caractère commercial ainsi que sur le format des messages, consultez notre guide dédié à [l'envoi de messages depuis l'espace client OVHcloud](../envoyer_des_sms_depuis_mon_espace_client/#taille-des-sms-a-caractere-commercial) .
+Pour plus d'informations sur la taille des SMS à caractère commercial ainsi que sur le format des messages, consultez notre guide dédié à [l'envoi de messages depuis l'espace client OVHcloud](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#taille-des-sms-a-caractere-commercial) .
 
 Il ne vous reste plus qu'à cliquer sur le bouton `Envoi`{.action} pour que votre campagne soit envoyée ou planifiée.
 
 ## Aller plus loin
 
-Consultez [notre guide dédié à la gestion de l'historique des SMS](../gerer-l-historique-des-sms/).
+Consultez [notre guide dédié à la gestion de l'historique des SMS](/pages/telecom/sms/gerer_l_historique_des_sms).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
 

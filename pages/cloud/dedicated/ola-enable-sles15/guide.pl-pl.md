@@ -1,9 +1,6 @@
 ---
 title: "Jak skonfigurować identyfikator klienta do celów agregacji linków OVHcloud w SLES 15"
-slug: ola-sles15
 excerpt: 'Włącz Link Aggregation na serwerze SLES 15'
-section: 'Poziom zaawansowany'
-order: 4
 updated: 2023-03-07
 ---
 
@@ -21,7 +18,7 @@ Technologia OVHcloud Link Aggregation (OLA) została zaprojektowana przez nasze 
 
 ## Wymagania początkowe
 
-- [Skonfigurowanie identyfikatora klienta dla funkcji OVHcloud Link Aggregation w Panelu klienta](https://docs.ovh.com/pl/dedicated/ola-manager/)
+- [Skonfigurowanie identyfikatora klienta dla funkcji OVHcloud Link Aggregation w Panelu klienta](/pages/cloud/dedicated/ola-enable-manager)
 - Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
@@ -139,12 +136,12 @@ Możesz również sprawdzić parametry używane w interfejsie ifcfg-bond0 za pom
 
 ## Sprawdź również
 
-[Konfiguracja agregacji linków OLA w Panelu klienta](https://docs.ovh.com/pl/dedicated/ola-manager/).
+[Konfiguracja agregacji linków OLA w Panelu klienta](/pages/cloud/dedicated/ola-enable-manager).
 
-[Jak skonfigurować identyfikator klienta do agregacji linków OVHcloud z systemem Debian 9](https://docs.ovh.com/pl/dedicated/ola-debian9/).
+[Jak skonfigurować identyfikator klienta do agregacji linków OVHcloud z systemem Debian 9](/pages/cloud/dedicated/ola-enable-debian9).
 
-[Jak skonfigurować identyfikator klienta do agregacji linków OVHcloud z systemem CentOS 7](https://docs.ovh.com/pl/dedicated/ola-centos7/).
+[Jak skonfigurować identyfikator klienta do agregacji linków OVHcloud z systemem CentOS 7](/pages/cloud/dedicated/ola-enable-centos7).
 
-[Jak skonfigurować identyfikator klienta do agregacji linków OVHcloud w systemie Windows Server 2019](https://docs.ovh.com/pl/dedicated/ola-w2k19/).
+[Jak skonfigurować identyfikator klienta do agregacji linków OVHcloud w systemie Windows Server 2019](/pages/cloud/dedicated/ola-enable-w2k19).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: Migracja danych z jednego serwera NAS-HA do innego przez NFS
-slug: nas/migration
 excerpt: Dowiedz się, jak migrować dane z jednego NAS-HA do innego za pomocą zasobu NFS.
-section: NAS-HA
-order: 05
 updated: 2021-02-09
 ---
 
@@ -23,7 +20,7 @@ Aby wykonać transfer danych, musisz:
 
 - NAS-HA OVHcloud
 - Dystrybucja kompatybilna z NFS
-- Uruchomienie usługi NAS-HA przed jej rozpoczęciem zgodnie z instrukcją [montowania usługi NAS-HA przy użyciu protokołu NFS](https://docs.ovh.com/pl/storage/file-storage/nas/nfs/){.external}.
+- Uruchomienie usługi NAS-HA przed jej rozpoczęciem zgodnie z instrukcją [montowania usługi NAS-HA przy użyciu protokołu NFS](/pages/cloud/storage/file_storage/nas_nfs){.external}.
 
 ## W praktyce
 

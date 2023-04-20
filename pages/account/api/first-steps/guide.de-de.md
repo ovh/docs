@@ -1,9 +1,6 @@
 ---
 title: Erste Schritte mit der OVHcloud API
-slug: first-steps-with-ovh-api
 excerpt: Erfahren Sie hier, wie Sie die OVHcloud API verwenden
-section: 'Erste Schritte'
-order: 01
 updated: 2022-05-30
 ---
 
@@ -49,7 +46,7 @@ Um die API für Ihre Dienste zu verwenden, loggen Sie sich mit Ihren OVHcloud Zu
 
 > [!primary]
 >
-> Wenn Ihr OVHcloud Account durch [Zwei-Faktor-Authentifizierung](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/) geschützt ist, müssen Sie auch den per SMS, OTP-Anwendung oder U2F-Schlüssel generierten Code eingeben.
+> Wenn Ihr OVHcloud Account durch [Zwei-Faktor-Authentifizierung](/pages/account/customer/secure-ovhcloud-account-with-2fa) geschützt ist, müssen Sie auch den per SMS, OTP-Anwendung oder U2F-Schlüssel generierten Code eingeben.
 >
 
 #### Die mit API verfügbaren Dienste analysieren
@@ -167,7 +164,7 @@ MtSwSrPpNjqfVSmJhLbPyr2i45lSwPU1
 
 In diesem Fall ist der Schlüssel vom Typ **CK** an Ihren Account gebunden.
 
-Der **CK**-Token kann für die Übertragung von Rechten verwendet werden. Weitere Informationen finden Sie in dieser Anleitung: [How to manage a customer’s account via OVHcloud API](https://docs.ovh.com/gb/en/api/api-rights-delegation/) (EN).
+Der **CK**-Token kann für die Übertragung von Rechten verwendet werden. Weitere Informationen finden Sie in dieser Anleitung: [How to manage a customer’s account via OVHcloud API](/pages/account/api/api_right_delegation) (EN).
 
 #### Erste Verwendung der API
 
@@ -207,8 +204,8 @@ print("Welcome", client.get('/me')['firstname'])
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Domainnamen über die API verwalten](https://docs.ovh.com/gb/en/api/ovh-api-domains/) (EN)
+[Domainnamen über die API verwalten](/pages/account/api/domains) (EN)
 
-[OVHcloud Kunden-Account über die API verwalten](https://docs.ovh.com/gb/en/api/api-rights-delegation/) (EN)
+[OVHcloud Kunden-Account über die API verwalten](/pages/account/api/api_right_delegation) (EN)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

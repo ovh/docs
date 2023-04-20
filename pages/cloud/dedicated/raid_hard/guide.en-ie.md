@@ -1,8 +1,6 @@
 ---
 title: 'Managing Hardware RAID'
-slug: raid-hard
 excerpt: 'This guide will show you how to verify the state of your RAID and the health of your hard drives'
-section: 'RAID and disks'
 updated: 2019-05-10
 ---
 
@@ -390,5 +388,5 @@ RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
 
 ## Go further
 
-[Configuring software RAID](https://docs.ovh.com/ie/en/dedicated/raid-soft/){.external}
+[Configuring software RAID](/pages/cloud/dedicated/raid_soft){.external}
 Join our community of users on <https://community.ovh.com/en/>.

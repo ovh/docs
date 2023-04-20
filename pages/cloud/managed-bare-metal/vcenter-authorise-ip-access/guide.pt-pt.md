@@ -1,9 +1,7 @@
 ---
 title: Autorizar IP a ligar-se ao vCenter
-slug: autorizar-ip-a-ligar-se-ao-vcenter
 routes:
-    canonical: 'https://docs.ovh.com/pt/private-cloud/autorizar-ip-a-ligar-se-ao-vcenter/'
-section: Funcionalidades da OVHcloud
+    canonical: '/pages/cloud/private-cloud/autoriser_des_ip_a_se_connecter_au_vcenter'
 updated: 2020-11-18
 ---
 
@@ -22,7 +20,7 @@ updated: 2020-11-18
 
 ## Instruções
 
-Quando [a política de acesso ao vCenter é limitada](../alterar-a-politica-de-acesso-ao-vcenter/), é necessário adicionar os IP que serão autorizados a ligar-se ao serviço.
+Quando [a política de acesso ao vCenter é limitada](/pages/cloud/managed-bare-metal/vcenter-modify-access-policy), é necessário adicionar os IP que serão autorizados a ligar-se ao serviço.
 
 A operação pode ser realizada a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external-link}. Na secção `Bare Metal Cloud`, clique na opção `Managed Bare Metal`. Selecione a infraestrutura e aceda ao separador `Segurança` e clique em `Adicionar um novo intervalo de endereços IP`{.action}.
 

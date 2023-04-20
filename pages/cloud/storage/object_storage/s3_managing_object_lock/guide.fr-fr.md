@@ -1,9 +1,6 @@
 ---
 title: "Object Storage - Gestion de l'immuabilité des objets avec Object Lock (WORM)"
-slug: s3/managing-object-lock
 excerpt:
-section: Tutoriels
-order: 110
 updated: 2022-06-02
 ---
 
@@ -73,7 +70,7 @@ Consultez notre guide « [Débuter avec S3 Object Storage](https://docs.ovh.com/
 | `s3:PutBucketObjectLockConfiguration` | Permet à l'utilisateur de placer une configuration de rétention sur un bucket spécifique |
 | `s3:BypassGovernanceRetention` | Permet à l'utilisateur de contourner le mode *Governance*. |
 
-*Lisez ce [guide](https://docs.ovh.com/fr/storage/s3/gestion-des-identites-et-des-acces/) pour en savoir plus sur la gestion des identités et des accès.*
+*Lisez ce [guide](/pages/cloud/storage/object_storage/s3_identity_and_access_management) pour en savoir plus sur la gestion des identités et des accès.*
 
 ### Configuration d'Object Lock
 

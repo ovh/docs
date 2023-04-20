@@ -1,8 +1,6 @@
 ---
 title: 'IP-Adresse als Alias konfigurieren'
-slug: ip-aliasing-vps
 excerpt: 'Erfahren Sie hier, wie Sie Additional IPs in Ihre VPS-Konfiguration einbinden'
-section: 'Netzwerk und IP'
 updated: 2022-10-06
 ---
 
@@ -292,7 +290,7 @@ Geben Sie Ihre Additional IP in der Form `xxx.xxx.xxx.xxx/32` in das Feld "IP ad
 
 ### Diagnose
 
-Starten Sie zunächst Ihren Server über die Kommandozeile oder dessen Benutzeroberfläche neu. Wenn Sie dann immer noch keine Verbindung zwischen dem öffentlichen Netzwerk und Ihrer Alias-Adresse herstellen können und ein Netzwerkproblem vermuten, ist es notwendig, den Server im [Rescue-Modus neu zu starten](../rescue/). Anschließend können Sie die Additional IP direkt auf dem Server konfigurieren.
+Starten Sie zunächst Ihren Server über die Kommandozeile oder dessen Benutzeroberfläche neu. Wenn Sie dann immer noch keine Verbindung zwischen dem öffentlichen Netzwerk und Ihrer Alias-Adresse herstellen können und ein Netzwerkproblem vermuten, ist es notwendig, den Server im [Rescue-Modus neu zu starten](/pages/cloud/vps/rescue). Anschließend können Sie die Additional IP direkt auf dem Server konfigurieren.
 
 Wenn Sie über SSH mit Ihrem Server verbunden sind, geben Sie folgenden Befehl ein:
 
@@ -304,6 +302,6 @@ Um die Verbindung zu testen senden Sie einfach von außerhalb einen Ping an Ihre
 
 ## Weiterführende Informationen
 
-[VPS Rescue-Modus aktivieren](../rescue/)
+[VPS Rescue-Modus aktivieren](/pages/cloud/vps/rescue)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>

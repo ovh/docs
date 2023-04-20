@@ -1,9 +1,6 @@
 ---
 title: "Come configurare il NIC handle per aggregare i link OVHcloud in SLES 15"
-slug: ola-sles15
 excerpt: Attiva OVHcloud Link Aggregation sul tuo server SLES 15
-section: Utilizzo avanzato
-order: 4
 updated: 2023-03-07
 ---
 
@@ -21,7 +18,7 @@ La tecnologia OVHcloud Link Aggregation (OLA) è sviluppata dai nostri team per 
 
 ## Prerequisiti
 
-- [Aver configurato il NIC handle per la funzionalità OVHcloud Link Aggregation dallo Spazio Cliente OVHcloud](https://docs.ovh.com/it/dedicated/ola-manager/)
+- [Aver configurato il NIC handle per la funzionalità OVHcloud Link Aggregation dallo Spazio Cliente OVHcloud](/pages/cloud/dedicated/ola-enable-manager)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
@@ -139,12 +136,12 @@ Per verificare le impostazioni utilizzate dall'interfaccia ifcfg-bond0, utilizza
 
 ## Per saperne di più
 
-[Configurare l'aggregazione dei link OLA nel tuo Spazio Cliente](https://docs.ovh.com/it/dedicated/ola-manager/).
+[Configurare l'aggregazione dei link OLA nel tuo Spazio Cliente](/pages/cloud/dedicated/ola-enable-manager).
 
-[Come configurare il NIC handle per aggregare i link OVHcloud su Debian 9](https://docs.ovh.com/it/dedicated/ola-debian9/).
+[Come configurare il NIC handle per aggregare i link OVHcloud su Debian 9](/pages/cloud/dedicated/ola-enable-debian9).
 
-[Come configurare il NIC handle per l'aggregazione di link OVHcloud con CentOS 7](https://docs.ovh.com/it/dedicated/ola-centos7/).
+[Come configurare il NIC handle per l'aggregazione di link OVHcloud con CentOS 7](/pages/cloud/dedicated/ola-enable-centos7).
 
-[Come configurare il tuo NIC handle per aggregare i link OVHcloud con Windows Server 2019](https://docs.ovh.com/it/dedicated/ola-w2k19/).
+[Come configurare il tuo NIC handle per aggregare i link OVHcloud con Windows Server 2019](/pages/cloud/dedicated/ola-enable-w2k19).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

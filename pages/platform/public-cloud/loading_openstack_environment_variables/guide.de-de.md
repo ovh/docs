@@ -1,9 +1,7 @@
 ---
 title: 'OpenStack Umgebungsvariablen einrichten'
 excerpt: 'Erfahren Sie hier, wie Sie Ihre Umgebungsvariablen f체r die Nutzung der OpenStack API einrichten'
-slug: set-openstack-environment-variables
 legacy_guide_number: 1852
-section: 'OpenStack'
 updated: 2021-08-18
 ---
 
@@ -16,8 +14,8 @@ Das Konfigurieren der OpenStack Umgebungsvariablen auf Ihrem lokalen Ger채t erm�
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben einen [OpenStack User erstellt](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/).
-- OpenStack ist bereits [auf Ihrem System installiert](https://docs.ovh.com/de/public-cloud/prepare_the_environment_for_using_the_openstack_api/).
+- Sie haben einen [OpenStack User erstellt](/pages/platform/public-cloud/create_and_delete_a_user).
+- OpenStack ist bereits [auf Ihrem System installiert](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api).
 
 ## In der praktischen Anwendung
 
@@ -45,7 +43,7 @@ admin@vpsxxxxxx:~$ source openrc.sh
 Please enter your OpenStack Password:
 ```
 
-Wie in [dieser Anleitung](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/) erkl채rt, ist das Passwort ist nur eimalig w채hrend der Erstellung sichtbar.
+Wie in [dieser Anleitung](/pages/platform/public-cloud/create_and_delete_a_user) erkl채rt, ist das Passwort ist nur eimalig w채hrend der Erstellung sichtbar.
 
 Wenn Sie das Passwort nicht zur Verf체gung haben, muss es neu erstellt werden.
 

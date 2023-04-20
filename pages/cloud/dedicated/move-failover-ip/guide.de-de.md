@@ -1,9 +1,6 @@
 ---
 title: Eine Additional IP umziehen
 excerpt: Erfahren Sie hier, wie Sie eine Additional IP über Ihr Kundencenter oder die OVHcloud API umziehen
-slug: ip-fo-move
-section: Netzwerk & IP
-order: 7
 updated: 2022-12-20
 ---
 
@@ -45,7 +42,7 @@ Mit dieser Technologie können Sie IP-Adressen von einem Dienst zum anderen in w
 
 > [!warning]
 > Wenn die Additional IP oder eine der IP-Adressen des Blocks eine virtuelle MAC-Adresse hat, muss der Zielserver die vMAC-Funktionalität unterstützen.
-> Weitere Informationen finden Sie in [dieser Anleitung](https://docs.ovh.com/de/dedicated/network-support-virtual-mac/).
+> Weitere Informationen finden Sie in [dieser Anleitung](/pages/cloud/dedicated/network_support_virtual_mac).
 >
 > Andernfalls müssen die vMACs vor dem Transfer von den Additional IPs entfernt werden.
 

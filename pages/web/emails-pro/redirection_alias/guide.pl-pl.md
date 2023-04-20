@@ -1,11 +1,8 @@
 ---
 title: 'Korzystanie z aliasów i przekierowań e-mail'
 excerpt: 'Dowiedz się, jak zarządzać aliasami i przekierowaniami e-mail'
-slug: email-redirection-guide
-section: 'Funkcjonalności kont e-mail'
-order: 01
 routes:
-  canonical: "https://docs.ovh.com/pl/emails/hosting_www_przekierowania_e-mail/"
+  canonical: "/pages/web/emails/feature_redirections"
 updated: 2020-05-20
 ---
 
@@ -62,4 +59,4 @@ Na przykład adres e-mail to **john.smith@mydomain.ovh** oraz alias **informatio
 
 ## W praktyce
 
-Postępuj zgodnie z naszym przewodnikiem [Korzystanie z aliasów i przekierowań e-mail](https://docs.ovh.com/pl/emails/hosting_www_przekierowania_e-mail/) w sekcji "Konta e-mail na hostingu - MX Plan".
+Postępuj zgodnie z naszym przewodnikiem [Korzystanie z aliasów i przekierowań e-mail](/pages/web/emails/feature_redirections) w sekcji "Konta e-mail na hostingu - MX Plan".

@@ -1,11 +1,8 @@
 ---
 title: Configuring multi-attach persistent volumes with OVHcloud NAS-HA
-slug: configuring-multi-attach-persistent-volumes-with-ovhcloud-nas-ha
 excerpt: 'Find out how to configure a multi-attach persistent volume using OVHcloud NAS-HA'
-section: Storage
-order: 4
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/configuring-multi-attach-persistent-volumes-with-ovhcloud-nas-ha/'
+    canonical: '/pages/platform/kubernetes-k8s/configuring-multi-attach-persistent-volumes-with-ovh-nas-ha'
 updated: 2021-07-20
 ---
 
@@ -21,8 +18,7 @@ updated: 2021-07-20
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -39,11 +35,11 @@ OVHcloud Managed Kubernetes natively integrates Block Storage as persistent volu
 
 ## Requirements
 
-This tutorial assumes that you already have a working [OVHcloud Managed Kubernetes](https://www.ovhcloud.com/es/public-cloud/kubernetes/) cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial assumes that you already have a working [OVHcloud Managed Kubernetes](https://www.ovhcloud.com/es/public-cloud/kubernetes/) cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-hello-world) documentation.
 
 It also assumes you have an OVHcloud NAS-HA already available. If you don't, you can [order one in the OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/#/configuration/nas).
 
-You also need to have [Helm](https://docs.helm.sh/) installed on your workstation, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/) installed on your workstation, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/platform/kubernetes-k8s/installing-helm) tutorial.
 
 ## Instructions
 
@@ -235,6 +231,6 @@ Congratulations, you have successfully set up a multi-attach persistent volume w
 
 ## Go further
 
-To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes doc site](../).
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes doc site](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
 
 Join our [community of users](https://community.ovh.com/en/).

@@ -1,9 +1,6 @@
 ---
 title: Iniziare a utilizzare un server dedicato
-slug: iniziare-a-utilizzare-server-dedicato
 excerpt: Come eseguire le prime operazioni sul tuo nuovo server dedicato
-section: 'Per iniziare'
-order: 1
 updated: 2023-03-28
 ---
 
@@ -29,7 +26,7 @@ Un server dedicato è una macchina fisica localizzata in uno dei nostri datacent
 
 > [!primary]
 >
-> Se il tuo server appartiene alla linea di prodotti **Eco**, consulta [questa guida](../getting-started-dedicated-server-eco/).
+> Se il tuo server appartiene alla linea di prodotti **Eco**, consulta [questa guida](/pages/cloud/dedicated/getting-started-with-dedicated-server-eco).
 
 ## Procedura
 
@@ -45,7 +42,7 @@ Nella nuova finestra, seleziona una delle opzioni di installazione:
 
 - `Installare a partire da un template OVHcloud`{.action}: puoi selezionare il sistema operativo e personalizzare la configurazione del tuo server.
 - `Installare uno dei tuoi template`{.action}: per applicare un template personalizzato, è necessario aver registrato almeno una configurazione di server. Per effettuare questa operazione, seleziona l'opzione "Salva questa installazione" nella fase 4 del processo di installazione.
-- `Installare a partire da un'immagine personalizzata`{.action}: questa opzione ti permette di installare un'immagine esterna sul server. Per maggiori informazioni, consulta la [guida sulla funzionalità Bring Your Own Image](../bringyourownimage/).
+- `Installare a partire da un'immagine personalizzata`{.action}: questa opzione ti permette di installare un'immagine esterna sul server. Per maggiori informazioni, consulta la [guida sulla funzionalità Bring Your Own Image](/pages/cloud/dedicated/bring-your-own-image).
 
 > [!primary]
 >
@@ -90,7 +87,7 @@ Nella nuova finestra inserisci un ID (nome a tua scelta) e la chiave stessa (tip
 
 ![Personalizza la configurazione della partizione](images/SSH_12.png){.thumbnail}
 
-Per maggiori informazioni sulla generazione di chiavi SSH, consulta la nostra [guida](../creare-chiave-ssh-dedicata/).
+Per maggiori informazioni sulla generazione di chiavi SSH, consulta la nostra [guida](/pages/cloud/dedicated/creating-ssh-keys-dedicated).
 
 > [!warning]
 >OVHcloud fornisce i servizi di cui sei responsabile per la configurazione e la gestione. Sei quindi responsabile del loro corretto funzionamento.
@@ -118,13 +115,13 @@ sh ssh root@IPv4_del_tuo_server
 ssh root@nome_di_riferimento_del_tuo_server
 ```
 
-Per saperne di più su SSH, consulta la nostra guida [Introduzione a SSH](../introduzione-ssh/).
+Per saperne di più su SSH, consulta la nostra guida [Introduzione a SSH](/pages/cloud/dedicated/ssh_introduction).
 
 #### Windows
 
 Una volta completata l'installazione, riceverai un'email con la password per l'accesso amministratore (root). Utilizza queste credenziali per connetterti al server via RDP (**R**emote **D**esktop **P**rotocol). Una volta connesso, Windows ti guiderà durante l'installazione iniziale.
 
-Consulta anche la nostra guida [Configurare una nuova installazione di Windows Server](https://docs.ovh.com/it/dedicated/windows-first-config/).
+Consulta anche la nostra guida [Configurare una nuova installazione di Windows Server](/pages/cloud/dedicated/windows_first_config).
 
 ### Riavvio del tuo server dedicato <a name="reboot"></a>
 
@@ -140,9 +137,9 @@ ma è possibile effettuare un reboot "hard" in qualsiasi momento dal tuo [Spazio
 
 ### Protezione del tuo server dedicato
 
-Come spiegato nella parte iniziale di questa guida, in quanto amministratore del tuo server dedicato In quanto tale, sei responsabile dei tuoi dati e della loro sicurezza. Per maggiori informazioni sulla sicurezza del tuo server, consulta la guida Mettere in sicurezza [un server dedicato](https://docs.ovh.com/it/dedicated/mettere-in-sicurezza-un-server-dedicato/).
+Come spiegato nella parte iniziale di questa guida, in quanto amministratore del tuo server dedicato In quanto tale, sei responsabile dei tuoi dati e della loro sicurezza. Per maggiori informazioni sulla sicurezza del tuo server, consulta la guida Mettere in sicurezza [un server dedicato](/pages/cloud/dedicated/securing-a-dedicated-server).
 
-Se utilizzi un server Windows, consulta [questa guida](https://docs.ovh.com/it/dedicated/firewall-windows/).
+Se utilizzi un server Windows, consulta [questa guida](/pages/cloud/dedicated/activate-port-firewall-soft-win).
 
 ### Monitoraggio OVHcloud <a name="monitoring-server"></a>
 
@@ -158,7 +155,7 @@ Clicca sul pulsante `Configura`{.action}. Nella nuova finestra, hai tre opzioni 
 
 ![Monitoring](images/monitoring-your-server2.png){.thumbnail}
 
-Per maggiori informazioni sul monitoraggio, consulta [questa guida](https://docs.ovh.com/it/dedicated/monitoring-ip-ovh/).
+Per maggiori informazioni sul monitoraggio, consulta [questa guida](/pages/cloud/dedicated/network_ip_monitoring).
 
 ### Configurazione rete
 
@@ -168,40 +165,40 @@ La modalità bridge è l'azione intrapresa dall'apparecchiatura di rete per crea
 
 È la configurazione più utilizzata nell’ambito della virtualizzazione, in quanto permette a ogni macchina virtuale di disporre del proprio indirizzo IP pubblico.
 
-Per maggiori informazioni sulla modalità bridge, consulta la nostra guida: [Modalità Bridge IP](../network-bridging/).
+Per maggiori informazioni sulla modalità bridge, consulta la nostra guida: [Modalità Bridge IP](/pages/cloud/dedicated/network_bridging).
 
 #### Alias IP
 
 L’alias IP è un tipo di configurazione che permette di associare più indirizzi IP a un’interfaccia di rete.   In questo modo il tuo server è in grado di stabilire più connessioni a una rete, ognuna con un obiettivo diverso.
 
-Per maggiori informazioni sulla configurazione dell'alias IP, consulta la guida [Configurare un indirizzo IP con l'alias](../network-ipaliasing).
+Per maggiori informazioni sulla configurazione dell'alias IP, consulta la guida [Configurare un indirizzo IP con l'alias](/pages/cloud/dedicated/network_ipaliasing).
 
 #### Configurazione IPv6
 
-Tutti i server dedicati OVHcloud vengono consegnati con un blocco /64 IPv6. Per utilizzare gli indirizzi di questo blocco, è necessario apportare modifiche alla configurazione di rete. Consulta la nostra guida [Configurazione IPv6](../network-ipv6/).
+Tutti i server dedicati OVHcloud vengono consegnati con un blocco /64 IPv6. Per utilizzare gli indirizzi di questo blocco, è necessario apportare modifiche alla configurazione di rete. Consulta la nostra guida [Configurazione IPv6](/pages/cloud/dedicated/network_ipv6).
 
 ### Modalità Rescue
 
 Per risolvere qualsiasi problema, riavvia il server in modalità Rescue dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). È importante identificare i problemi del server in questa modalità, per escludere i problemi legati al software prima di contattare il nostro team di supporto.
 
-Consulta la guida Attiva [e utilizza la modalità Rescue](../rescue_mode).
+Consulta la guida Attiva [e utilizza la modalità Rescue](/pages/cloud/dedicated/rescue_mode).
 
 ### Accesso con l'IPMI
 
 OVHcloud implementa tutti i server dedicati con una console IPMI (Intelligent Platform Management Interface) che si esegue nel browser o da un'applet Java e ti permette di connetterti direttamente al tuo server anche se non dispone di connessione di rete. che è uno strumento utile per risolvere i problemi che hanno potuto mettere il tuo server online.
 
-Per maggiori informazioni, consulta la guida Utilizzare [l'IPMI sui server dedicati](../utilizzo-ipmi-server-dedicati/).
+Per maggiori informazioni, consulta la guida Utilizzare [l'IPMI sui server dedicati](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers).
 
 ### Backup Storage
 
 I server dedicati OVHcloud includono uno spazio di storage con controllo degli accessi e vengono forniti come opzione gratuita. È preferibile utilizzarlo come opzione di backup supplementare se il server stesso dovesse subire una perdita di dati.
 
-Per attivare e utilizzare l'opzione Backup Storage, consulta [questa guida](../servizio-backup-storage/).
+Per attivare e utilizzare l'opzione Backup Storage, consulta [questa guida](/pages/cloud/dedicated/services_backup_storage).
 
 ## Per saperne di più
 
-[Mettere in sicurezza un server dedicato](../mettere-in-sicurezza-un-server-dedicato/)
+[Mettere in sicurezza un server dedicato](/pages/cloud/dedicated/securing-a-dedicated-server)
 
-[Attivare e utilizzare la modalità rescue](../rescue_mode/)
+[Attivare e utilizzare la modalità rescue](/pages/cloud/dedicated/rescue_mode)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

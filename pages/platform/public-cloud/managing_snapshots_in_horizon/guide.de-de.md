@@ -1,8 +1,6 @@
 ---
 title: Verwaltung von Snapshots einer Instanz in Horizon
 excerpt: Verwaltung von Snapshots einer Instanz in Horizon
-slug: verwaltung_der_speicherauszuge_snapshots_einer_instanz_in_horizon
-section: 'Horizon'
 legacy_guide_number: g1770
 updated: 2022-01-31
 ---
@@ -22,8 +20,8 @@ Während des Betriebs können Sie jederzeit eine Sicherung Ihrer Daten, der Konf
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf das [Horizon Interface](https://docs.ovh.com/de/public-cloud/horizon/).
+- Sie haben eine [Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps#schritt-3-instanz-erstellen) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf das [Horizon Interface](/pages/platform/public-cloud/introducing_horizon).
 
 ## In der praktischen Anwendung
 

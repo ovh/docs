@@ -1,8 +1,6 @@
 ---
 title: 'Reset hasła Windows'
-slug: zresetuj-haso-windows
 excerpt: Przewodnik dotyczący resetowania hasła w systemie Windows
-section: Diagnostyka i tryb Rescue
 updated: 2020-11-25
 ---
 
@@ -18,7 +16,7 @@ Możliwe, że musisz zresetować hasło na serwerze VPS z systemem Windows. Nini
 
 ## Wymagania początkowe
 
-- VPS musi być w trybie Rescue (aby uzyskać więcej informacji, sprawdź [Aktywacja trybu Rescue na serwerze VPS](../rescue)).
+- VPS musi być w trybie Rescue (aby uzyskać więcej informacji, sprawdź [Aktywacja trybu Rescue na serwerze VPS](/pages/cloud/vps/rescue)).
 
 ## W praktyce
 
@@ -46,7 +44,7 @@ chntpw -u Administrator SAM
 
 Kliknij `Jedno`{.action} i `Wejście`{.action}, aby usunąć hasło. Naciśnij `q`{.action}, aby opuścić wiersz poleceń zmiany hasła. Następnie naciśnij `y`{.action}, aby zapisać zmiany.
 
-Możesz teraz wyjąć serwer VPS z trybu Rescue. (więcej informacji znajdziesz w przewodniku [Aktywacja trybu Rescue na serwerze VPS](../rescue))
+Możesz teraz wyjąć serwer VPS z trybu Rescue. (więcej informacji znajdziesz w przewodniku [Aktywacja trybu Rescue na serwerze VPS](/pages/cloud/vps/rescue))
 
 Przy kolejnym logowaniu nie będziesz musiał wpisywać hasła do sesji, której hasło zostało zmienione.
 

@@ -1,9 +1,6 @@
 ---
 title: Cambiar la contraseña de un usuario FTP
-slug: cambiar-contrasena-usuario-ftp
 excerpt: Cómo cambiar la contraseña de un usuario FTP en un alojamiento de OVHcloud
-section: FTP y SSH
-order: 03
 updated: 2022-08-18
 ---
 
@@ -16,7 +13,7 @@ updated: 2022-08-18
 ## Objetivo
 
 Los planes de hosting de OVHcloud permiten acceder a un espacio de almacenamiento de archivos en la nube que puede utilizarse a través del protocolo **FTP**.<br>Es posible acceder a este espacio a través de un usuario FTP y la contraseña asociada.
-<br>Este acceso le permitirá [publicar su sitio web](https://docs.ovh.com/es/hosting/web_hosting_publicar_un_sitio_web_en_internet/#23-cargar-los-archivos-en-el-espacio-de-almacenamiento).
+<br>Este acceso le permitirá [publicar su sitio web](/pages/web/hosting/hosting_how_to_get_my_website_online#23-cargar-los-archivos-en-el-espacio-de-almacenamiento).
 
 **Esta guía explica cómo cambiar la contraseña de un usuario FTP en un alojamiento de OVHcloud.**
 
@@ -44,7 +41,7 @@ Se mostrará una tabla con los usuarios FTP creados en su alojamiento. Estos usu
 
 > [!primary]
 >
-> Para más información sobre las buenas prácticas de gestión de contraseñas, consulte esta [guía](https://docs.ovh.com/es/customer/gestionar-su-contrasena/).
+> Para más información sobre las buenas prácticas de gestión de contraseñas, consulte esta [guía](/pages/account/customer/manage-ovh-password).
 >
 
 Según el plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/), la modificación de la contraseña del usuario FTP a través de la pestaña `FTP-SSH`{.action} se realizará por dos caminos diferentes:
@@ -78,18 +75,18 @@ Existen diversas formas de conectar los archivos al espacio de alojamiento:
 >
 > El explorador FTP no está disponible para el hosting Cloud Web. Será necesario utilizar uno de los dos métodos siguientes.
 
-- **Programa FTP**: Si lo desea, deberá instalar en su ordenador un programa compatible con el protocolo FTP (por ejemplo, [FileZilla](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/)).
+- **Programa FTP**: Si lo desea, deberá instalar en su ordenador un programa compatible con el protocolo FTP (por ejemplo, [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide)).
 
-- **Acceso SSH** (solo en los planes Profesional y Performance): consulte la guía "[Utilizar SSH en un web hosting](https://docs.ovh.com/es/hosting/web_hosting_ssh_en_alojamiento_compartido/)" para utilizar este protocolo de conexión.
+- **Acceso SSH** (solo en los planes Profesional y Performance): consulte la guía "[Utilizar SSH en un web hosting](/pages/web/hosting/ssh_on_webhosting)" para utilizar este protocolo de conexión.
 
 > [!primary]
 >
-> Para más información, consulte la guía "[Conectarse al espacio de almacenamiento de un alojamiento web](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/)".
+> Para más información, consulte la guía "[Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web/hosting/ftp_connection)".
 >
 
 ## Más información <a name="gofurther"></a>
 
-[Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contrasena/)
+[Establecer y gestionar la contraseña de su cuenta](/pages/account/customer/manage-ovh-password)
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, consulte nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 

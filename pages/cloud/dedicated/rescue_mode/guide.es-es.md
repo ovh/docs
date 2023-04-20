@@ -1,8 +1,6 @@
 ---
 title: 'Activar y utilizar el modo de rescate'
-slug: modo_de_rescate
 excerpt: 'Cómo activar y utilizar el modo de rescate en un servidor dedicado'
-section: 'Diagnóstico y modo de rescate'
 updated: 2023-02-07
 ---
 
@@ -38,7 +36,7 @@ Si todavía no dispone de backups recientes, la copia de seguridad de sus datos 
 ## Procedimiento
 
 > [!warning]
-> Tenga en cuenta que, si ha establecido una llave SSH por defecto en su espacio para los productos dedicados, no recibirá una contraseña root al reiniciar un servidor en modo de rescate. En este caso, primero debe desactivar la llave SSH por defecto antes de reiniciar el servidor en modo de rescate. Para ello, consulte esta [sección](../crear-claves-ssh-dedicadas/#disablesshkey) de la guía correspondiente.
+> Tenga en cuenta que, si ha establecido una llave SSH por defecto en su espacio para los productos dedicados, no recibirá una contraseña root al reiniciar un servidor en modo de rescate. En este caso, primero debe desactivar la llave SSH por defecto antes de reiniciar el servidor en modo de rescate. Para ello, consulte esta [sección](/pages/cloud/dedicated/creating-ssh-keys-dedicated#disablesshkey) de la guía correspondiente.
 >
 
 Solo es posible activar el modo de rescate desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección `Bare Metal Cloud`{.action}. En la columna izquierda, haga clic en `Servidores dedicados`{.action} y seleccione el servidor.
@@ -213,6 +211,6 @@ Las siguientes herramientas ya están instaladas en este modo:
 
 ## Más información
 
-[Cambiar la contraseña de administrador en un servidor dedicado Windows](../cambiar-contrasena-administrador-en-servidor-windows/)
+[Cambiar la contraseña de administrador en un servidor dedicado Windows](/pages/cloud/dedicated/changing-admin-password-on-windows)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

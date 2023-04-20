@@ -1,9 +1,6 @@
 ---
 title: Einführung in das OVHcloud Hosted Private Cloud Kundencenter 
-slug: manager-ovh-private-cloud
 excerpt: Entdecken Sie alle Funktionen Ihres Hosted Private Cloud Kundencenters
-section: Erste Schritte
-order: 1
 updated: 2021-12-15
 ---
 
@@ -64,7 +61,7 @@ Darüber hinaus wird hier auch das nächste Verlängerungsdatum Ihres Hosted Pri
 
 ![Optionen](images/controlpanel4.png){.thumbnail}
 
-Weitere Informationen zur Kündigung eines Hosted Private Cloud Dienstes finden Sie in unserer Anleitung [Hosted Private Cloud kündigen](../eine-private-cloud-kuendigen/).
+Weitere Informationen zur Kündigung eines Hosted Private Cloud Dienstes finden Sie in unserer Anleitung [Hosted Private Cloud kündigen](/pages/cloud/private-cloud/comment_resilier_le_private_cloud).
 
 #### Datacenter
 
@@ -166,7 +163,7 @@ Sie können die Elemente im oberen Teil sowie in der Tabelle mit den Buttons rec
 
 Es ist eine zweite Tabelle für die Option *VM Encryption* verfügbar.
 
-Weitere Informationen zu dieser Option finden Sie in [dieser Anleitung](../vm-encrypt/).
+Weitere Informationen zu dieser Option finden Sie in [dieser Anleitung](/pages/cloud/private-cloud/vm_encrypt).
 
 #### Operationen
 
@@ -250,7 +247,7 @@ Im Backup-Tab können Sie die `Veeam Backup`-Lösung aktivieren.
 
 ![Backup](images/controlpanel14.png){.thumbnail}
 
-Weitere Informationen zu dieser Option finden Sie in [dieser Anleitung](https://docs.ovh.com/gb/en/private-cloud/veeam-backup-as-a-service/) (Englisch).
+Weitere Informationen zu dieser Option finden Sie in [dieser Anleitung](/pages/cloud/private-cloud/veeam_backup_as_a_service) (Englisch).
 
 
 ## Weiterführende Informationen

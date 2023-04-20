@@ -1,9 +1,6 @@
 ---
 title: "Zamów projekt Public Cloud za pośrednictwem API OVHcloud"
 excerpt: "Dowiedz się, jak zamówić projekt Public Cloud przy użyciu API OVHcloud"
-slug: zamów-projekt-public-cloud-api
-section: Pierwsze kroki
-order: 9
 updated: 2020-12-09
 ---
 
@@ -22,8 +19,8 @@ Utworzenie projektu jest pierwszym etapem wdrażania [instancji Public Cloud](ht
 ## Wymagania początkowe
 
 - Posiadanie ważnych identyfikatorów OVHcloud
-- Posiadanie ważnego [sposobu płatności](https://docs.ovh.com/pl/billing/zarzadzanie-sposobami-platnosci/) zarejestrowanego na Twoim koncie OVHcloud
-- Poznaj [działanie APIv6 OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/).
+- Posiadanie ważnego [sposobu płatności](/pages/account/billing/manage-payment-methods) zarejestrowanego na Twoim koncie OVHcloud
+- Poznaj [działanie APIv6 OVHcloud](/pages/account/api/first-steps).
 
 ## W praktyce
 

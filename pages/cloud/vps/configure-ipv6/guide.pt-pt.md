@@ -1,9 +1,6 @@
 ---
 title: 'Configurar o IPv6 num VPS'
-slug: configurar-ipv6
 excerpt: 'Saiba como configurar o IPv6 num VPS da OVHcloud'
-section: 'Rede e IP'
-order: 1
 updated: 2022-12-01
 ---
 
@@ -85,7 +82,7 @@ Depois de obter os endereços, consulte o passo 2 "[Aplicar a configuração IPv
 
 ### Etapa 2: aplicar a configuração IPv6 <a name="applyipv6"></a>
 
-Depois de obter as informações necessárias para a configuração IPv6, aceda ao seu VPS através de SSH. Caso seja necessário, consulte o nosso manual “[Introdução ao SSH](../../dedicated/ssh-introducao/){.external}” para obter mais informações.
+Depois de obter as informações necessárias para a configuração IPv6, aceda ao seu VPS através de SSH. Caso seja necessário, consulte o nosso manual “[Introdução ao SSH](/pages/cloud/dedicated/ssh_introduction){.external}” para obter mais informações.
 
 Existem vários métodos para aplicar a configuração IPv6. Escolha a que pretende utilizar consoante a sua situação e as suas necessidades.
 

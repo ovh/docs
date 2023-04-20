@@ -1,11 +1,8 @@
 ---
 title: Backing up and restoring your Persistent Volume with Volume Snapshots on OVHcloud Managed Kubernetes
 excerpt: Find out how to back up and restore your Persistent Volume with Volume Snapshots on OVHcloud Managed Kubernetes
-slug: backup-restore-pv-volume-snapshot
-section: 'Backup and Restore'
-order: 03
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/backup-restore-pv-volume-snapshot/'
+    canonical: '/pages/platform/kubernetes-k8s/backup-restore-pv-volume-snapshot'
 updated: 2023-01-11
 ---
 
@@ -21,8 +18,7 @@ updated: 2023-01-11
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -41,9 +37,9 @@ They provide the ability to create a “snapshot” of a persistent volume. A sn
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/platform/kubernetes-k8s/deploying-hello-world).
 
-The tutorial also supposes that you're familiar with [Kubernetes Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/). You also need to know how PVs are handled on the OVHcloud Managed Kubernetes service. Please refer to the [Persistent Volumes on OVHcloud Managed Kubernetes](https://docs.ovh.com/us/es/kubernetes/ovh-kubernetes-persistent-volumes/) guide.
+The tutorial also supposes that you're familiar with [Kubernetes Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/). You also need to know how PVs are handled on the OVHcloud Managed Kubernetes service. Please refer to the [Persistent Volumes on OVHcloud Managed Kubernetes](/pages/platform/kubernetes-k8s/persistent-volumes-on-ovh-managed-kubernetes) guide.
 
 ## Instructions
 

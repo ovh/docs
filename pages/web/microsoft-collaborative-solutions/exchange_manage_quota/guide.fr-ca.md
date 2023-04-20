@@ -1,11 +1,8 @@
 ---
 title: "Gérer l'espace de stockage d'un compte e-mail"
-slug: manage-email-quota
 excerpt: "Découvrez comment gérer et optimiser l'espace de stockage d'une adresse e-mail "
-section: 'Diagnostic'
-order: 02
 routes:
-  canonical: "https://docs.ovh.com/fr/emails/manage-email-quota/"
+  canonical: "/products/email-manage-email-quota"
 updated: 2022-11-17
 ---
 
@@ -26,4 +23,4 @@ Chaque compte e-mail OVHcloud dispose d'un espace de stockage dédié. Bien gér
 
 ## En pratique <a name="instructions"></a>
 
-Suivez notre guide [Gérer l'espace de stockage d'un compte e-mail](https://docs.ovh.com/ca/fr/emails/manage-email-quota/) dans la rubrique « E-mails mutualisés - MX Plan ».
+Suivez notre guide [Gérer l'espace de stockage d'un compte e-mail](/products/email-manage-email-quota) dans la rubrique « E-mails mutualisés - MX Plan ».

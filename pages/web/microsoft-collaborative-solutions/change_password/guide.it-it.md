@@ -1,11 +1,8 @@
 ---
 title: 'Modifica la password di un indirizzo email'
-slug: changing-email-address-password
 excerpt: 'Come modificare la password di un indirizzo email OVHcloud'
-section: 'Iniziare a utilizzare Exchange'
-order: 03
 routes:
-    canonical: 'https://docs.ovh.com/it/emails/modificare-password-account-email-mxplan/'
+    canonical: '/pages/web/emails/email_change_password'
 updated: 2023-01-03
 ---
 
@@ -29,11 +26,11 @@ Gli account email del servizio OVHcloud sono accessibili tramite la password ass
 >
 > Quando modifichi la password del tuo indirizzo email, sarà necessario apportare la stessa modifica su tutti i dispositivi su cui è stato configurato l'indirizzo email. Consulta le nostre guide di configurazione per il tuo client di posta dalla homepage del tuo servizio di posta:
 >
-> - [MXplan](https://docs.ovh.com/it/emails/)
-> - [Email Pro](https://docs.ovh.com/it/emails-pro/)
-> - [Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/)
+> - [MXplan](/products/web-cloud-email-collaborative-solutions-mx-plan)
+> - [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro)
+> - [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 >
 
 ## Procedura
 
-Seguite la nostra guida [Modifica la password di un indirizzo email](https://docs.ovh.com/it/emails/modificare-password-account-email-mxplan/) nella sezione "Hosted email - MX Plan".
+Seguite la nostra guida [Modifica la password di un indirizzo email](/pages/web/emails/email_change_password) nella sezione "Hosted email - MX Plan".

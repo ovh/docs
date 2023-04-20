@@ -1,9 +1,6 @@
 ---
 title: Nutanix Hyperconvergence
-slug: nutanix-hci
 excerpt: Presentation of the Nutanix hyperconvergence solution
-section: Getting started
-order: 04
 updated: 2022-02-22
 ---
 

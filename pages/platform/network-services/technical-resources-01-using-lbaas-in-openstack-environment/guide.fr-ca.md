@@ -1,9 +1,6 @@
 ---
 title: "Déployer un Load Balancer Octavia"
-slug: octavia-lbaas-in-openstack-env-deep-dive
 excerpt: Découvrez comment configurer Octavia LBaaS pour Public Cloud
-section: Ressources techniques
-order: 01
 updated: 2022-11-02
 ---
 
@@ -19,7 +16,7 @@ Vous trouverez ici les configurations d'un Load Balancer:
 ## Prérequis
 
 - Avoir un [projet Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud
-- Avoir un [réseau privé](https://docs.ovh.com/ca/fr/public-cloud/public-cloud-vrack/) configuré dans votre projet
+- Avoir un [réseau privé](/pages/platform/network-services/getting-started-07-creating-vrack) configuré dans votre projet
 - Avoir le client [OpenStack Octavia](https://docs.openstack.org/python-octaviaclient/latest/install/index.html) installé
 
 ## En pratique
@@ -226,7 +223,7 @@ Vous pouvez exposer deux types de ressources :
 
 Actuellement, les Floating IPs ne supportent pas les IPv6.
 
-Vous pouvez en savoir plus sur notre page [Concepts](https://docs.ovh.com/ca/fr/publiccloud/network-services/additional-ip-vs-floating-ip/).
+Vous pouvez en savoir plus sur notre page [Concepts](/pages/platform/network-services/concepts-02-additional-ip-vs-floating-ip).
 
 **1. Créez le routeur**
 
@@ -304,7 +301,7 @@ La passerelle publique est définie par un routeur L3 attaché à un réseau pri
 
 ## Aller plus loin
 
-[Premiers pas avec le service Load Balancer pour Public Cloud](https://docs.ovh.com/ca/fr/publiccloud/network-services/getting-started-with-load-balancer-public-cloud/)
+[Premiers pas avec le service Load Balancer pour Public Cloud](/pages/platform/network-services/getting-started-01-create-lb-service)
 
 [Documentation officielle d'OpenStack Octavia](https://docs.openstack.org/octavia/latest/).
 

@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Introductie tot het OVH Private Cloud Control Panel
-slug: beheer-ovh-private-cloud
 excerpt: Ontdek de mogelijkheden van uw Private Cloud Control Panel
-section: Aan de slag
 updated: 2021-12-15
 ---
 

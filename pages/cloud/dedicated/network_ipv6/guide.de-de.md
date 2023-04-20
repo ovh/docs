@@ -1,8 +1,6 @@
 ---
 title: 'IPv6 auf einem Dedicated Server konfigurieren'
-slug: netzwerk-ipv6
 excerpt: 'Erfahren Sie hier, wie Sie IPv6-Adressen auf unserer Infrastruktur konfigurieren'
-section: 'Netzwerk & IP'
 updated: 2022-08-26
 ---
 
@@ -28,7 +26,7 @@ Internet Protocol Version 6 (IPv6) ist die neueste Version des Internet Protocol
 
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
 - Sie haben Ihre IPv6-Informationen bereit (Präfix, Gateway etc.)
-- Sie verfügen über Grundkenntnisse im Umgang mit [SSH](../ssh-einfuehrung/) und in der Netzwerkverwaltung.
+- Sie verfügen über Grundkenntnisse im Umgang mit [SSH](/pages/cloud/dedicated/ssh_introduction) und in der Netzwerkverwaltung.
 
 > [!warning]
 > Beachten Sie, dass die Server der Reihe Kimsufi mit einem einzigen IPv6 Block (/128) bereitgestellt werden. IPv6 bei der Installation des Betriebssystems automatisch eingerichtet.
@@ -51,7 +49,7 @@ Wenn Sie mehrere IPv6-Adressen auf Ihrem Server konfigurieren möchten (oder wen
 > - Der IPv6-Bereich des Servers ist `2607:5300:60:62ac::/64` oder `2607:5300:60:62ac:0000:0000:0000:0000/64`. Das IPv6_GATEWAY ist daher `2607:5300:60:62FF:FF:FF:FF:FF`.
 > - Der IPv6-Bereich des Servers ist `2001:41D0:1:46e::/64` oder `2001:41D0:0001:046e:0000:0000:0000:0000/64`. Das IPv6_GATEWAY ist daher `2001:41D0:1:4FF:FF:FF:FF:FF`.
 >
-> Der sichere Weg um die Netzwerkinformationen für Ihren Server abzurufen ist die [Verwendung der OVHcloud API](https://docs.ovh.com/de/api/first-steps-with-ovh-api/). Führen Sie den folgenden API-Aufruf unter Angabe des internen Servernamens (Beispiel: `ns3956771.ip-169-254-10.eu`) aus:
+> Der sichere Weg um die Netzwerkinformationen für Ihren Server abzurufen ist die [Verwendung der OVHcloud API](/pages/account/api/first-steps). Führen Sie den folgenden API-Aufruf unter Angabe des internen Servernamens (Beispiel: `ns3956771.ip-169-254-10.eu`) aus:
 >
 
 
@@ -80,7 +78,7 @@ Wenn Sie mehrere IPv6-Adressen auf Ihrem Server konfigurieren möchten (oder wen
 
 #### Schritt 1: SSH für die Verbindung mit Ihrem Server verwenden
 
-Weitere Informationen finden Sie in [dieser Anleitung](../erste-schritte-dedicated-server/#auf-dem-server-einloggen).
+Weitere Informationen finden Sie in [dieser Anleitung](/pages/cloud/dedicated/getting-started-with-dedicated-server#auf-dem-server-einloggen).
 
 #### Schritt 2: Netzwerkkonfigurationsdatei Ihres Servers öffnen
 
@@ -125,7 +123,7 @@ ping6 -c 4 2001:4860:4860::8888
 ```
 
 
-Wenn Sie diese IPv6-Adresse nicht anpingen können, überprüfen Sie Ihre Konfiguration und versuchen Sie es erneut. Stellen Sie außerdem sicher, dass die Maschine, von der aus Sie die Konnektivität testen, mit IPv6 verbunden ist. Sollte es immer noch nicht funktionieren, testen Sie Ihre Konfiguration im [Rescue-Modus](../ovh-rescue/).
+Wenn Sie diese IPv6-Adresse nicht anpingen können, überprüfen Sie Ihre Konfiguration und versuchen Sie es erneut. Stellen Sie außerdem sicher, dass die Maschine, von der aus Sie die Konnektivität testen, mit IPv6 verbunden ist. Sollte es immer noch nicht funktionieren, testen Sie Ihre Konfiguration im [Rescue-Modus](/pages/cloud/dedicated/rescue_mode).
 
 ### Fedora 26 und höhere Versionen
 
@@ -136,7 +134,7 @@ Wenn Sie diese IPv6-Adresse nicht anpingen können, überprüfen Sie Ihre Konfig
 
 #### Schritt 1: SSH für die Verbindung mit Ihrem Server verwenden
 
-Weitere Informationen finden Sie in [dieser Anleitung](../erste-schritte-dedicated-server/#auf-dem-server-einloggen).
+Weitere Informationen finden Sie in [dieser Anleitung](/pages/cloud/dedicated/getting-started-with-dedicated-server#auf-dem-server-einloggen).
 
 
 #### Schritt 2: Netzwerkkonfigurationsdatei Ihres Servers öffnen
@@ -180,13 +178,13 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-Wenn Sie diese IPv6-Adresse nicht anpingen können, überprüfen Sie Ihre Konfiguration und versuchen Sie es erneut. Stellen Sie außerdem sicher, dass die Maschine, von der aus Sie die Konnektivität testen, mit IPv6 verbunden ist. Sollte es immer noch nicht funktionieren, testen Sie Ihre Konfiguration im [Rescue-Modus](../ovh-rescue/).
+Wenn Sie diese IPv6-Adresse nicht anpingen können, überprüfen Sie Ihre Konfiguration und versuchen Sie es erneut. Stellen Sie außerdem sicher, dass die Maschine, von der aus Sie die Konnektivität testen, mit IPv6 verbunden ist. Sollte es immer noch nicht funktionieren, testen Sie Ihre Konfiguration im [Rescue-Modus](/pages/cloud/dedicated/rescue_mode).
 
 ### FreeBSD
 
 #### Schritt 1: SSH für die Verbindung mit Ihrem Server verwenden
 
-Weitere Informationen finden Sie in [dieser Anleitung](../erste-schritte-dedicated-server/#auf-dem-server-einloggen).
+Weitere Informationen finden Sie in [dieser Anleitung](/pages/cloud/dedicated/getting-started-with-dedicated-server#auf-dem-server-einloggen).
 
 
 #### Schritt 2: Netzwerkkonfigurationsdatei Ihres Servers öffnen
@@ -227,13 +225,13 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-Wenn Sie diese IPv6-Adresse nicht anpingen können, überprüfen Sie Ihre Konfiguration und versuchen Sie es erneut. Stellen Sie außerdem sicher, dass das Gerät, von dem aus Sie die Konnektivität testen, mit IPv6 verbunden ist. Sollte es immer noch nicht funktionieren, testen Sie Ihre Konfiguration im [Rescue-Modus](../ovh-rescue/).
+Wenn Sie diese IPv6-Adresse nicht anpingen können, überprüfen Sie Ihre Konfiguration und versuchen Sie es erneut. Stellen Sie außerdem sicher, dass das Gerät, von dem aus Sie die Konnektivität testen, mit IPv6 verbunden ist. Sollte es immer noch nicht funktionieren, testen Sie Ihre Konfiguration im [Rescue-Modus](/pages/cloud/dedicated/rescue_mode).
 
 ### Ubuntu 18.04 und 20.04
 
 #### Schritt 1: SSH für die Verbindung mit Ihrem Server verwenden
 
-Weitere Informationen finden Sie in [dieser Anleitung](../erste-schritte-dedicated-server/#auf-dem-server-einloggen).
+Weitere Informationen finden Sie in [dieser Anleitung](/pages/cloud/dedicated/getting-started-with-dedicated-server#auf-dem-server-einloggen).
 
 #### Schritt 2: Netzwerkkonfigurationsdatei Ihres Servers öffnen
 
@@ -325,7 +323,7 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 
 #### Schritt 1: RDP für die Verbindung mit Ihrem Server verwenden
 
-Weitere Informationen finden Sie in [dieser Anleitung](../erste-schritte-dedicated-server/#auf-dem-server-einloggen).
+Weitere Informationen finden Sie in [dieser Anleitung](/pages/cloud/dedicated/getting-started-with-dedicated-server#auf-dem-server-einloggen).
 
 
 #### Schritt 2: Netzwerkkonfiguration Ihres Servers öffnen

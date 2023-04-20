@@ -1,9 +1,6 @@
 ---
 title: "Monitoring and managing automated emails in your web hosting plan"
-slug: web_hosting_monitoring_automatic_emails
 excerpt: "Find out how to monitor and manage automated emails sent from your OVHcloud web hosting plan"
-section: Troubleshooting
-order: 10
 updated: 2022-10-12
 ---
 
@@ -17,7 +14,7 @@ Automated emails are messages sent via scripts, commonly done with PHP's "mail()
 >
 > This guide mainly applies to emails sent from scripts located on your [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/) using the PHP "mail()" function.
 >
-> If you would like to manage the email accounts included in your MX Plan service or in your [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/){.external} , please refer to our [MX Plan documentation](https://docs.ovh.com/asia/en/emails/).
+> If you would like to manage the email accounts included in your MX Plan service or in your [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/){.external} , please refer to our [MX Plan documentation](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -148,7 +145,7 @@ In this case, a purge is required to delete the SPAM that is waiting to be sent.
 
 To correct this, you must do at least the following:
 
-- Analyse [your hosting logs](https://docs.ovh.com/asia/en/hosting/shared_view_my_websites_logs_and_statistics/) to identify security vulnerabilities and infected files.
+- Analyse [your hosting logs](/pages/web/hosting/logs_and_statistics) to identify security vulnerabilities and infected files.
 - Delete or correct the malicious file(s)/module(s).
 - For CMSs (WordPress, Joomla!, PrestaShop, Drupal, etc.), update the CMS, plugin(s) and associated theme.
 - Secure your contact forms with a Captcha.
@@ -218,11 +215,11 @@ $mail->Password = "YourEmailPassword";
 
 ## Go further <a name="go-further"></a>  
 
-[View your hosting logs](https://docs.ovh.com/asia/en/hosting/shared_view_my_websites_logs_and_statistics/)
+[View your hosting logs](/pages/web/hosting/logs_and_statistics)
 
-[Fix the 403 Forbidden page on your website](https://docs.ovh.com/asia/en/hosting/diagnostic-403-forbidden/)
+[Fix the 403 Forbidden page on your website](/pages/web/hosting/diagnostic_403_forbidden)
 
-[Restore your web hosting plan’s FTP storage space](https://docs.ovh.com/gb/en/hosting/restoring-ftp-filezilla-control-panel/)
+[Restore your web hosting plan’s FTP storage space](/pages/web/hosting/ftp_save_and_backup)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/).
 

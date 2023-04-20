@@ -1,9 +1,6 @@
 ---
 title: Cloud Archive Swift - Zarzadzaj swoimi archiwami za pomoca interfejsu Swift (Cyberduck)
-slug: pca/cyberduck
 excerpt: Przewodnik ten pokazuje, jak zarzadzac usuga Public Cloud Archive.
-section: OpenStack Swift Archive Storage Class Specifics
-order: 080
 updated: 2021-06-18
 ---
 
@@ -33,10 +30,10 @@ W Internecie można odnaleźć inne interfejsy. Konfiguracja jest podobna do tej
 ## Wymagania początkowe
 
 - Pobierz i zainstaluj [Cyberduck](https://cyberduck.io/).
-- Posiadanie identyfikatorów użytkowników (*OS_USERNAME*) i projektów (*OS_PROJECT_NAME* lub *OS_ANT_NAME*), które można uzyskać, pobierając plik "OpenRC" z menu [Users and Roles](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/#etap-1-zgromadzenie-zmiennych) w Twoim [Panelu klienta Public Cloud OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Posiadanie identyfikatorów użytkowników (*OS_USERNAME*) i projektów (*OS_PROJECT_NAME* lub *OS_ANT_NAME*), które można uzyskać, pobierając plik "OpenRC" z menu [Users and Roles](/pages/platform/public-cloud/loading_openstack_environment_variables#etap-1-zgromadzenie-zmiennych) w Twoim [Panelu klienta Public Cloud OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 - Posiadanie hasła użytkownika OpenStack
 
-Jeśli nie znasz hasła użytkownika OpenStack, możesz je zmienić zgodnie z [tym przewodnikiem](https://docs.ovh.com/pl/public-cloud/zmiana-hasla-horizon/).
+Jeśli nie znasz hasła użytkownika OpenStack, możesz je zmienić zgodnie z [tym przewodnikiem](/pages/platform/public-cloud/change_openstack_user_password_in_horizon).
 
 ## W praktyce
 
@@ -71,6 +68,6 @@ Kliknij `Połącz`{.action}. Po zalogowaniu będziesz miał dostęp do drzewa sw
 
 [Dokumentacja Cyberduck](https://trac.cyberduck.io/wiki/help/en){.external}
 
-[Pierwsze kroki z API Swift](https://docs.ovh.com/pl/public-cloud/pierwsze_kroki_z_api_swift/)
+[Pierwsze kroki z API Swift](/pages/cloud/storage/object_storage/pcs_getting_started_with_the_swift_api)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

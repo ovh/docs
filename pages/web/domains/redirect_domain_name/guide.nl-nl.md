@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Omleiding van een door OVH beheerde domeinnaam
-slug: omleiding-domeinnaam
 excerpt: Lees meer over de verschillende omleidingstypen en hoe u er een kunt maken voor een door OVH beheerde domeinnaam
-section: Algemeen
 updated: 2022-10-06
 ---
 
@@ -59,7 +57,7 @@ Leid een domeinnaam om naar een andere domeinnaam. Deze oplossing is ideaal als 
 - **omleiden naar een OVH-server of elders**
 
 Wijzig de DNS-configuratie van een domeinnaam en voer een ander doel in (A-record, AAAA-record of CNAME-record). Deze oplossing is ideaal als uw website niet langer wordt gehost door dezelfde hostingprovider, terwijl de domeinnaam is geregistreerd bij dezelfde registrar.
-U kunt dit ook doen als uw domeinnaam de OVH-configuratie gebruikt, door deze binnen het Control Panel aan te passen (zie [Hoe wijzig ik mijn DNS-zone?](https://docs.ovh.com/nl/domains/hosting_hoe_wijzig_ik_mijn_dns_zone/){.external})
+U kunt dit ook doen als uw domeinnaam de OVH-configuratie gebruikt, door deze binnen het Control Panel aan te passen (zie [Hoe wijzig ik mijn DNS-zone?](/pages/web/domains/dns_zone_edit){.external})
 
 Vanaf hier zal deze handleiding zich alleen richten op omleidingen **naar een URL**. Neem voor de andere optie contact op met uw serviceprovider om na te gaan welke DNS-records u moet wijzigen om uw domein om te leiden.
 
@@ -165,6 +163,6 @@ Redirect temp / http://autre_site_web.tld/site/
 
 ## Verder
 
-[Hoe wijzig ik mijn DNS-zone?](https://docs.ovh.com/nl/domains/hosting_hoe_wijzig_ik_mijn_dns_zone/){.external}
+[Hoe wijzig ik mijn DNS-zone?](/pages/web/domains/dns_zone_edit){.external}
 
 Ga in gesprek met andere communitygebruikers op [https://community.ovh.com](https://community.ovh.com){.external}.

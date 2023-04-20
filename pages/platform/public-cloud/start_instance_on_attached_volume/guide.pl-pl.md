@@ -1,10 +1,8 @@
 ---
 title: Uruchomienie instancji na przypisanym woluminie
 excerpt: Uruchomienie instancji na przypisanym woluminie
-slug: uruchomienie_instancji_na_przypisanym_woluminie
 routes:
-    canonical: 'https://docs.ovh.com/ca/en/public-cloud/start-instance-on-a-volume/'
-section: Zarządzanie w OpenStack CLI
+    canonical: '/pages/platform/public-cloud/start_instance_on_attached_volume'
 updated: 2021-11-01
 ---
 
@@ -31,7 +29,7 @@ It is also possible to deploy an operating system to and from a volume. The clou
 ## Requirements
 
 - A volume with an installed image
-- [Setting OpenStack environment variables](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/){.external}
+- [Setting OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables){.external}
 
 ### Configuring the volume
 

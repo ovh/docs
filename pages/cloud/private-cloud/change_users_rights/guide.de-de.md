@@ -1,8 +1,6 @@
 ---
 title: Die Rechte eines Nutzers ändern
 excerpt: Erfahren Sie hier, wie Sie Nutzerberechtigungen für vSphere verwalten
-slug: die-rechte-eines-nutzers-aendern
-section: OVHcloud Funktionen
 updated: 2020-06-29
 ---
 

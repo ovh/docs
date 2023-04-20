@@ -1,9 +1,6 @@
 ---
 title: 'Migrar una cuenta de Gmail a una cuenta de correo electrónico de OVHcloud a través de OVH Mail Migrator'
-slug: migracion-de-gmail-mediante-ovh-mail-migrator
 excerpt: 'Cómo migrar sus cuentas de Gmail a OVHcloud con nuestra herramienta OVH Mail Migrator'
-section: Migración de una cuenta
-order: 04
 updated: 2020-03-09
 ---
 
@@ -79,7 +76,7 @@ Aparece la ventana de seguimiento de la migración (véase a continuación). Pue
 
 ![omm](images/OMM-gmail-step01-05.png){.thumbnail}
 
-En tal caso, acceda a la bandeja de entrada de su cuenta de Gmail y revise si ha recibido un correo electrónico con el asunto **«Alerta de seguridad importante sobre tu cuenta de Google vinculada»**. Se trata de una medida de seguridad instrumentada por Gmail. Para solucionar esta situación, consulte la guía [Cómo autorizar las conexiones poco seguras de Gmail](https://docs.ovh.com/es/microsoft-collaborative-solutions/migracion-de-gmail-mediante-ovh-mail-migrator/seguridad_gmail){.external}.
+En tal caso, acceda a la bandeja de entrada de su cuenta de Gmail y revise si ha recibido un correo electrónico con el asunto **«Alerta de seguridad importante sobre tu cuenta de Google vinculada»**. Se trata de una medida de seguridad instrumentada por Gmail. Para solucionar esta situación, consulte la guía [Cómo autorizar las conexiones poco seguras de Gmail](/pages/web/microsoft-collaborative-solutions/migrate_gmail_to_ovhcloud_by_omm/security_gmail){.external}.
 
 Una vez **autorizadas las «Conexiones poco seguras»** en Gmail, puede reanudar la migración.
 
@@ -167,7 +164,7 @@ Aparece la ventana de seguimiento de la migración, la que puede dejar abierta p
 
 ## Más información
 
-[Cómo autorizar las conexiones poco seguras en Gmail](https://docs.ovh.com/es/microsoft-collaborative-solutions/migracion-de-gmail-mediante-ovh-mail-migrator/seguridad_gmail){.external}.
+[Cómo autorizar las conexiones poco seguras en Gmail](/pages/web/microsoft-collaborative-solutions/migrate_gmail_to_ovhcloud_by_omm/security_gmail){.external}.
 
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en](https://community.ovh.com/en/){.external}.
 

@@ -1,8 +1,6 @@
 ---
 title: 'Enabling two-factor authentication by security key'
-slug: enable-two-factor-authentication-via-security-key
 excerpt: 'Find out how to secure your OVHcloud customer account by enabling two-factor authentication via U2F security key'
-section: Security
 hidden: true
 updated: 2022-07-08
 ---
@@ -17,7 +15,7 @@ Two-factor authentication via Universal Second Factor (U2F) is one of the method
 
 ## Requirements
 
-- knowledge of the [two-factor authentication methods offered by OVHcloud](https://docs.ovh.com/ca/en/customer/secure-account-with-2FA/)
+- knowledge of the [two-factor authentication methods offered by OVHcloud](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
 - a U2F security key
 - a USB port on your computer

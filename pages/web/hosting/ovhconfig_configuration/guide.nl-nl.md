@@ -1,10 +1,7 @@
 ---
 deprecated: true
 title: 'Configuratie van het .ovhconfig-bestand op uw webhosting '
-slug: ovhconfig-bestand-bewerken
 excerpt: 'Ontdek hoe u het .ovhconfig-bestand kunt bewerken'
-section: 'Configuratie van het webhostingplan'
-order: 03
 updated: 2019-01-03
 ---
 
@@ -37,9 +34,9 @@ Als u het .ovhconfig-bestand handmatig wilt wijzigen, volgt u de stappen die hie
 
 #### Stap 1: Log in op uw opslagruimte.
 
-Zorg ervoor dat u een admin-FTP-gebruikersnaam, -wachtwoord en FTP-serveradres bij de hand hebt. Log vervolgens met behulp van deze informatie in op uw opslagruimte. Als u hier hulp bij nodig hebt, kunt u de handleiding [Inloggen op uw opslagruimte](https://docs.ovh.com/nl/hosting/mijn-website-online-zetten/#stap-2-zet-uw-websitebestanden-online-in-uw-opslagruimte){.external} raadplegen.
+Zorg ervoor dat u een admin-FTP-gebruikersnaam, -wachtwoord en FTP-serveradres bij de hand hebt. Log vervolgens met behulp van deze informatie in op uw opslagruimte. Als u hier hulp bij nodig hebt, kunt u de handleiding [Inloggen op uw opslagruimte](/pages/web/hosting/hosting_how_to_get_my_website_online#stap-2-zet-uw-websitebestanden-online-in-uw-opslagruimte){.external} raadplegen.
 
-**Als u de bovenstaande informatie niet hebt**, logt u zich in op het [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en klikt u op `Webhosting`{.action} in de dienstenbalk aan de linkerkant. Selecteer de naam van het betreffende hostingplan en klik op het tabblad `FTP - SSH`{.action}. Daar vindt u de informatie die u nodig hebt om in te loggen. Als u niet langer in het bezit bent van het wachtwoord, raadpleegt u de instructies in onze handleiding [Wijziging van het wachtwoord van een FTP-gebruiker](https://docs.ovh.com/nl/hosting/wijzigen-wachtwoord-ftp-gebruiker/){.external}.
+**Als u de bovenstaande informatie niet hebt**, logt u zich in op het [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en klikt u op `Webhosting`{.action} in de dienstenbalk aan de linkerkant. Selecteer de naam van het betreffende hostingplan en klik op het tabblad `FTP - SSH`{.action}. Daar vindt u de informatie die u nodig hebt om in te loggen. Als u niet langer in het bezit bent van het wachtwoord, raadpleegt u de instructies in onze handleiding [Wijziging van het wachtwoord van een FTP-gebruiker](/pages/web/hosting/ftp_change_password){.external}.
 
 ![ovhconfig](images/ovhconfig-step1.png){.thumbnail}
 
@@ -150,7 +147,7 @@ Nadat het .ovhconfig-bestand is gewijzigd, hoeft u het alleen nog maar te downlo
 
 Als u uw webhosting voor meerdere websites gebruikt, heeft u waarschijnlijk Multisites geconfigureerd. Onder bepaalde omstandigheden kan het nodig zijn om een andere versie van PHP te gebruiken voor elk van de gehoste sites.
 
-Hiertoe maakt u een .ovhconfig-bestand voor een of meer MultiSite-opties die de geselecteerde PHP-versie bevatten. Raadpleeg de stappen in het gedeelte [Het .ovhconfig-bestand bewerken](https://docs.ovh.com/nl/hosting/ovhconfig-bestand-bewerken/#bewerking-van-het-ovhconfig-bestand){.external} in deze handleiding als u hier hulp bij nodig hebt. Zorg er bij het downloaden en importeren van het .ovhconfig-bestand naar uw opslagruimte voor dat het zich in de Multisite-hoofdmap bevindt. U kunt deze hoofdmap vinden in uw Control Panel op het tabblad Multisite van de betreffende webhosting.
+Hiertoe maakt u een .ovhconfig-bestand voor een of meer MultiSite-opties die de geselecteerde PHP-versie bevatten. Raadpleeg de stappen in het gedeelte [Het .ovhconfig-bestand bewerken](/pages/web/hosting/ovhconfig_configuration#bewerking-van-het-ovhconfig-bestand){.external} in deze handleiding als u hier hulp bij nodig hebt. Zorg er bij het downloaden en importeren van het .ovhconfig-bestand naar uw opslagruimte voor dat het zich in de Multisite-hoofdmap bevindt. U kunt deze hoofdmap vinden in uw Control Panel op het tabblad Multisite van de betreffende webhosting.
 
 > [!warning]
 >

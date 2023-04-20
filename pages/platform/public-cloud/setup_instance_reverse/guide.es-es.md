@@ -1,9 +1,6 @@
 ---
 title: "Configurar el registro DNS inverso de una instancia de Public Cloud"
 excerpt: Cómo activar la resolución inversa DNS
-slug: configurar-el-inverso-dns-de-una-instancia
-section: "Gestión de las instancias desde el área de cliente"
-order: 07
 updated: 2021-11-12
 ---
 
@@ -45,11 +42,11 @@ También puede editar el registro inverso directamente a través del icono de la
 
 > [!primary]
 >
-Si la modificación no funciona como se esperaba, compruebe que el registro `A` esté bien configurado en la zona DNS del dominio. Atención: La modificación de la [zona DNS](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/) puede tardar hasta 24 horas si solo ha cambiado recientemente el registro `A`.
+Si la modificación no funciona como se esperaba, compruebe que el registro `A` esté bien configurado en la zona DNS del dominio. Atención: La modificación de la [zona DNS](/pages/web/domains/dns_zone_edit) puede tardar hasta 24 horas si solo ha cambiado recientemente el registro `A`.
 >
 
 ## Más información <a name="gofurther"></a>
 
-[Crear una primera instancia de Public Cloud y conectarse a ella](https://docs.ovh.com/es/public-cloud/public-cloud-primeros-pasos/)
+[Crear una primera instancia de Public Cloud y conectarse a ella](/pages/platform/public-cloud/public-cloud-first-steps)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

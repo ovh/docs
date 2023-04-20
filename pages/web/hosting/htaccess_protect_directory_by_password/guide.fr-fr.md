@@ -1,9 +1,6 @@
 ---
 title: "Protéger l'interface d'administration de votre site par un fichier .htaccess"
-slug: mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification
 excerpt: "Retrouvez ici comment protéger l'accès à l'administration de votre site avec un fichier .htaccess"
-section: Réécriture et authentification
-order: 02
 updated: 2021-09-20
 ---
 
@@ -26,7 +23,7 @@ Il peut parfois être nécessaire de protéger l'accès à une partie de votre s
 
 - Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Être en possession des identifiants permettant de se connecter à [l'espace de stockage de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/).
+- Être en possession des identifiants permettant de se connecter à [l'espace de stockage de votre hébergement](/pages/web/hosting/ftp_connection).
 
 ## En pratique
 
@@ -39,7 +36,7 @@ Il peut parfois être nécessaire de protéger l'accès à une partie de votre s
 
 ### Etape 1 : créer l'arborescence
 
-Connectez-vous à [l'espace de stockage](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement. Ouvrez le [« dossier racine »](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud) de votre site.<br>
+Connectez-vous à [l'espace de stockage](../connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement. Ouvrez le [« dossier racine »](/pages/web/hosting/multisites_configure_multisite#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud) de votre site.<br>
 Créez un fichier « crypter.php ».
 
 ![root_folder](images/root_folder.png){.thumbnail}
@@ -68,7 +65,7 @@ echo nl2br("$string_1 \n $string_2 \n $string_3");
  ?>
 ```
 
-Si vous disposez d'un hébergement [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), connectez-vous ensuite en [SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/) à votre hébergement. Exécutez la commande suivante :
+Si vous disposez d'un hébergement [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), connectez-vous ensuite en [SSH](/pages/web/hosting/ssh_on_webhosting) à votre hébergement. Exécutez la commande suivante :
 
 ```bash
 php crypt.php
@@ -116,9 +113,9 @@ Require valid-user
 
 > [!warning]
 >
-> Dans cet exemple, il faut remplacer « votre_login_ftp » par votre [identifiant FTP](../connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter). Dans la rubrique `Hébergements`{.action}, vous le trouverez dans l'onglet `FTP-SSH`{.action} de l'hébergement concerné.
+> Dans cet exemple, il faut remplacer « votre_login_ftp » par votre [identifiant FTP](/pages/web/hosting/ftp_connection#etape-1-recuperer-les-informations-necessaires-pour-se-connecter). Dans la rubrique `Hébergements`{.action}, vous le trouverez dans l'onglet `FTP-SSH`{.action} de l'hébergement concerné.
 >
-> Remplacez si besoin dans l'exemple ci-dessous « dossier_racine » par le nom du [dossier contenant les fichiers de votre site](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud).
+> Remplacez si besoin dans l'exemple ci-dessous « dossier_racine » par le nom du [dossier contenant les fichiers de votre site](/pages/web/hosting/multisites_configure_multisite#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud).
 >
 
 #### Bloquer l'accès à un ou plusieurs fichiers
@@ -145,7 +142,7 @@ Require valid-user
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
-[Tout sur le fichier .htaccess](../mutualise-tout-sur-le-fichier-htaccess/)
+[Tout sur le fichier .htaccess](/fr/hosting/mutualise-tout-sur-le-fichier-htaccess/)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 

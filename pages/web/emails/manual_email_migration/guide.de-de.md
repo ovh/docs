@@ -1,9 +1,6 @@
 ---
 title: Ihre E-Mail-Adresse manuell migrieren
-slug: email-adressen-manuell-migrieren
 excerpt: Erfahren Sie hier, wie Sie Ihre E-Mail-Adresse manuell auf eine andere E-Mail-Adresse migrieren.
-section: Migration
-order: 01
 updated: 2021-01-05
 ---
 
@@ -34,7 +31,7 @@ Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister]
 ## In der praktischen Anwendung
 
 > [!primary]
-> Überprüfen Sie zunächst, ob die automatische Migration mit unserem [OVH Mail Migrator](https://omm.ovh.net/){.external} möglich ist. Lesen Sie hierzu die Anleitung [E-Mail-Accounts über den OVH Mail Migrator migrieren](../../microsoft-collaborative-solutions/exchange_migration_von_e-mail-accounts_-_ovh_mail_migrator/).
+> Überprüfen Sie zunächst, ob die automatische Migration mit unserem [OVH Mail Migrator](https://omm.ovh.net/){.external} möglich ist. Lesen Sie hierzu die Anleitung [E-Mail-Accounts über den OVH Mail Migrator migrieren](/pages/web/microsoft-collaborative-solutions/migration_omm).
 
 In dieser Anleitung haben wir die Operationen mit den 3 meistverwendeten E-Mail-Programmen **Outlook**, **Mail** auf Mac OS und **Thunderbird** durchgeführt.
 
@@ -238,6 +235,6 @@ In Ihrem Posteingang und in der linken Spalte finden Sie die Ordner und E-Mails 
 
 ## Weiterführende Informationen
 
-[E-Mail-Accounts mit dem OVH Mail Migrator migrieren](../../microsoft-collaborative-solutions/exchange_migration_von_e-mail-accounts_-_ovh_mail_migrator/){.external}
+[E-Mail-Accounts mit dem OVH Mail Migrator migrieren](/pages/web/microsoft-collaborative-solutions/migration_omm){.external}
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -1,8 +1,6 @@
 ---
 title: 'Activer la double authentification par SMS'
-slug: activer-la-double-authentification-par-sms
 excerpt: 'Découvrez comment sécuriser votre espace client OVHcloud en activant la double authentification par SMS'
-section: Sécurité
 hidden: true
 updated: 2020-04-15
 ---
@@ -17,7 +15,7 @@ La double authentification par SMS est l'une des méthodes proposées par OVHclo
 
 ## Prérequis
 
-- Prendre connaissance des [différentes méthodes de double authentification proposées par OVHcloud](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/).
+- Prendre connaissance des [différentes méthodes de double authentification proposées par OVHcloud](/pages/account/customer/secure-ovhcloud-account-with-2fa).
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 - Disposer de votre téléphone mobile pour la réception du SMS.
 
@@ -80,8 +78,8 @@ Tous les choix que vous avez activés apparaîtront alors.
 
 ## Aller plus loin
 
-[Sécuriser son compte OVHcloud avec la double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/)
+[Sécuriser son compte OVHcloud avec la double authentification](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
-[Désactiver la double authentification sur son compte OVHcloud](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/#desactivation)
+[Désactiver la double authentification sur son compte OVHcloud](/pages/account/customer/secure-ovhcloud-account-with-2fa#desactivation)
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).

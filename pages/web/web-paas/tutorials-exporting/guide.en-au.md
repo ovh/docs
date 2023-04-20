@@ -1,8 +1,5 @@
 ---
 title: Exporting data
-slug: tutorials-exporting
-section: Tutorials
-order: 9
 updated: 2021-05-11
 ---
 
@@ -65,7 +62,7 @@ See the [`rsync` documentation](https://download.samba.org/pub/rsync/rsync.html)
 
 The mechanism for downloading from each service (such as your database) varies.  For services designed to hold non-persistent information (such as Redis or Solr) it's generally not necessary to download data as it can be rebuilt from the primary data store.
 
-To download data from persistent services ([MySQL](../configuration-services/mysql), [PostgreSQL](../configuration-services/postgresql),   or [InfluxDB](../configuration-services/influxdb)), see each service's page for instructions.
+To download data from persistent services ([MySQL](../configuration-services/mysql), [PostgreSQL](../configuration-services/postgresql),   or [InfluxDB](/pages/web/web-paas/configuration-services/influxdb)), see each service's page for instructions.
 
 ## Get the environment variables
 

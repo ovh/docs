@@ -1,9 +1,6 @@
 ---
 title: 'Prise en main du logiciel POPC'
-slug: popc-utilisation
 excerpt: "Découvrez l'interface et les fonctionnalités basiques du logiciel POPC"
-section: POPC
-order: 2
 updated: 2021-06-25
 ---
 
@@ -24,7 +21,7 @@ Il se présente sous la forme d'une application, installée sur votre PC sous Wi
 
 ## Prérequis
 
-- [Avoir installé le logiciel POPC](../popc-installation) sur votre PC sous Windows.
+- [Avoir installé le logiciel POPC](/pages/telecom/voip/popc-installation) sur votre PC sous Windows.
 
 ## En pratique
 
@@ -92,7 +89,7 @@ Pour mettre deux correspondants en relation, plusieurs méthodes sont possibles 
 Pour accéder à la messagerie de votre ligne OVHcloud, deux méthodes sont possibles :
 
 - composez et appelez le `123`;
-- cliquez sur le bouton `Messagerie` dans la barre inférieure du logiciel. Cette méthode ne fonctionne que si vous avez correctement renseigné le numéro `123` dans les paramètres du logiciel (plus d'informations sur [ce guide](../popc-installation/#configuration-dans-le-logiciel)).
+- cliquez sur le bouton `Messagerie` dans la barre inférieure du logiciel. Cette méthode ne fonctionne que si vous avez correctement renseigné le numéro `123` dans les paramètres du logiciel (plus d'informations sur [ce guide](/pages/telecom/voip/popc-installation#configuration-dans-le-logiciel)).
 
 ![messagerie](images/06-messagerie.png){.thumbnail}
 
@@ -145,7 +142,7 @@ Vous pouvez voir en temps réel, dans votre annuaire **local**, si des postes su
 Vous pouvez aussi intercepter un appel à destination d'une ligne supervisée, par exemple si l'un(e) de vos collègues est absent(e) et que son téléphone sonne.
 
 > [!warning]
-> Pour que la supervision soit fonctionnelle, la ligne supervisée et votre compte SIP doivent se trouver dans le même groupe de facturation OVHcloud. Retrouvez plus d'informations dans notre guide pour [gérer vos groupes de téléphonie](../gestion-des-groupes-de-telephonie/#regrouper-lignes).
+> Pour que la supervision soit fonctionnelle, la ligne supervisée et votre compte SIP doivent se trouver dans le même groupe de facturation OVHcloud. Retrouvez plus d'informations dans notre guide pour [gérer vos groupes de téléphonie](/pages/telecom/voip/regrouper_services_telephonie#regrouper-lignes).
 >
 
 Pour activer la supervision, faites un clic droit sur une ligne à superviser, cliquez sur `Contact`{.action} puis `Présence`{.action} et enfin sur `Activer`{.action}.
@@ -166,7 +163,7 @@ Vous pouvez intercepter un appel en vous rendant dans l'annuaire **local**. Fait
 
 De nombreux paramètres peuvent être modifiés. Si vous rencontrez des difficultés à utiliser le logiciel suite à une personnalisation des paramètres, nous vous conseillons de réinitialiser ces derniers en cliquant sur le bouton `Réinitialiser`{.action} situé en bas à droite du volet `Paramètres`.
 
-Vous pourrez alors rétablir les paramètres nécessaires à la configuration de votre ligne SIP OVHcloud en vous aidant de notre guide pour [installer le logiciel POPC](../popc-installation/#configuration-dans-le-logiciel).
+Vous pourrez alors rétablir les paramètres nécessaires à la configuration de votre ligne SIP OVHcloud en vous aidant de notre guide pour [installer le logiciel POPC](/pages/telecom/voip/popc-installation#configuration-dans-le-logiciel).
 
 ### Optimisation des codecs
 

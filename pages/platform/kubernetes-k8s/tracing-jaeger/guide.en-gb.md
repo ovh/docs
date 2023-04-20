@@ -1,9 +1,6 @@
 ---
 title: Distributed tracing with Jaeger on an OVHcloud Managed Kubernetes Service
-slug: tracing-jaeger
 excerpt: 'Find out how to set up distributed tracing on OVHcloud Managed Kubernetes Service with Jaeger.'
-section: Monitoring & Observability
-order: 01
 updated: 2022-03-22
 ---
 
@@ -63,9 +60,9 @@ You can use the *Reset cluster* function in the Public Cloud section of the [OVH
 
 ## Requirements
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/platform/kubernetes-k8s/deploying-hello-world).
 
-You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/platform/kubernetes-k8s/installing-helm) tutorial.
 
 ## Instructions
 

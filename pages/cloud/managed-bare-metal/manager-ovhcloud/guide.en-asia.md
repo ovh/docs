@@ -1,11 +1,8 @@
 ---
 title: Introduction to the Managed Bare Metal Control Panel
-slug: control-panel-ovhcloud
 routes:
-    canonical: 'https://docs.ovh.com/asia/en/private-cloud/control-panel-ovh-private-cloud/'
+    canonical: '/pages/cloud/private-cloud/manager_ovh_private_cloud'
 excerpt: Find out how to use the OVHcloud Managed Bare Metal Control Panel
-section: Getting started
-order: 1
 updated: 2020-11-18
 ---
 
@@ -152,7 +149,7 @@ You can configure security settings with the buttons on the right:
 
 The second table at the bottom of the page concerns the management of Virtual Machine Encryption Key Management Servers.
 
-You can find more details about this option in [this guide](../vm-encrypt/).
+You can find more details about this option in [this guide](/pages/cloud/managed-bare-metal/vm_encrypt).
 
 ### Operations tab
 
@@ -231,7 +228,7 @@ From this tab, you can order a Veeam Backup solution.
 
 ![Backup](images/controlpanel14-e.png){.thumbnail}
 
-You can find more details about this option in [this guide](../veeam-backup-as-a-service/).
+You can find more details about this option in [this guide](/pages/cloud/managed-bare-metal/veeam_backup_as_a_service).
 
 
 ## Go further

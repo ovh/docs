@@ -1,9 +1,6 @@
 ---
 title: "Augmenter la taille d’un disque supplémentaire"
 excerpt: "Découvrez comment augmenter la taille d'un volume supplémentaire et agrandir sa partition principale"
-slug: augmenter-la-taille-dun-disque-supplementaire
-section: 'Stockage'
-order: 6
 updated: 2022-03-29
 ---
 
@@ -18,13 +15,13 @@ Si vous avez atteint la capacité maximale de votre disque supplémentaire, vous
 ## Prérequis
 
 - Une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre projet Public Cloud.
-- Un [disque supplémentaire](../creer-et-configurer-un-disque-supplementaire-sur-une-instance/) créé dans votre projet.
+- Un [disque supplémentaire](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance) créé dans votre projet.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=fr).
 - Avoir un accès administratif (root) à votre instance via SSH (Linux) ou RDP (Windows).
 
 ## En pratique
 
-Les étapes suivantes supposent que vous avez déjà configuré un disque supplémentaire selon les intrusctions de [notre guide](../creer-et-configurer-un-disque-supplementaire-sur-une-instance/).
+Les étapes suivantes supposent que vous avez déjà configuré un disque supplémentaire selon les intrusctions de [notre guide](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance).
 
 ### Modifier la taille du disque
 
@@ -166,6 +163,6 @@ Le volume redimensionné inclut désormais l'espace disque supplémentaire.
 
 ## Aller plus loin
 
-[Créer et configurer un disque additionnel sur une instance](../creer-et-configurer-un-disque-supplementaire-sur-une-instance/)
+[Créer et configurer un disque additionnel sur une instance](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

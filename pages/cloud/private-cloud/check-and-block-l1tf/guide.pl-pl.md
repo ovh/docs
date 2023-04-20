@@ -1,8 +1,6 @@
 ---
 title: 'Weryfikacja i blokowanie podatności L1TF'
-slug: weryfikacja-blokowanie-podatnosci-l1tf
 excerpt: 'Dowiedz się, jak zablokować lukę L1TF'
-section: Bezpieczeństwo
 updated: 2019-02-26
 ---
 
@@ -58,7 +56,7 @@ Procedura dzieli się na trzy różne fazy.
 
 ### Etap 1: aktualizacja
 
-Aktualizacja vCenter jest wykonywana przez OVHcloud, jednak łatkę hostów ESXi instaluje samodzielnie użytkownik. Jest ona dostępna [w menedżerze aktualizacji](https://docs.ovh.com/pl/private-cloud/korzystanie_z_vmware_update_manager/){.external-link}.
+Aktualizacja vCenter jest wykonywana przez OVHcloud, jednak łatkę hostów ESXi instaluje samodzielnie użytkownik. Jest ona dostępna [w menedżerze aktualizacji](/pages/cloud/private-cloud/vmware_update_manager){.external-link}.
 
 Listę łatek dla hostów ESXi znajdziesz w [tym dokumencie](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
 

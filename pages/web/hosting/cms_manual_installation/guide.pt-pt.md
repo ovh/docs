@@ -1,9 +1,6 @@
 ---
 title: 'Partilhado: Instalar manualmente o meu CMS'
 excerpt: 'Instalar de forma manual o meu CMS'
-slug: partilhado_instalar_manualmente_o_meu_cms
-section: CMS
-order: 03
 updated: 2020-02-04
 ---
 
@@ -34,7 +31,7 @@ Os nossos serviços de Alojamento Web são compatíveis com alguns dos mais popu
 >
 >Poderá instalar automaticamente cada um destes CMS com apenas alguns cliques a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para isso, leia o seguinte guia:
 >
->[Configurar o seu website com módulos 1 clique](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/)
+>[Configurar o seu website com módulos 1 clique](/pages/web/hosting/cms_install_1_click_modules)
 >
 
 
@@ -52,7 +49,7 @@ A equipa de assistência da OVHcloud não está autorizada a responder a questõ
 Para isso, poderá consultar os fóruns dedicados ao [WordPress](https://wordpress.org/support/).
 
 
-- Guia de instalação do WordPress: [CMS, como instalar manualmente o WordPress](../cms_como_instalar_manualmente_wordpress/)
+- Guia de instalação do WordPress: [CMS, como instalar manualmente o WordPress](/pages/web/hosting/cms_manual_installation_wordpress)
 
 
 
@@ -72,7 +69,7 @@ A equipa de assistência da OVHcloud não está autorizada a responder a questõ
 
 Para isso, poderá consultar os fóruns dedicados ao [Joomla!.](http://forum.joomla.org/) 
 
-- Guia de instalação do Joomla!: [CMS, como instalar manualmente o Joomla!](../cms_instalar_manualmente_o_joomla/)
+- Guia de instalação do Joomla!: [CMS, como instalar manualmente o Joomla!](/pages/web/hosting/cms_manual_installation_joomla)
 
 
 
@@ -97,7 +94,7 @@ Para isso, poderá consultar o fórum dedicado ao
 [PrestaShop](https://www.prestashop.com/forums/).
 
 
-- Guia de instalação do PrestaShop: [CMS, como instalar manualmente o PrestaShop](../cms_como_instalar_manualmente_prestashop/)
+- Guia de instalação do PrestaShop: [CMS, como instalar manualmente o PrestaShop](/pages/web/hosting/cms_manual_installation_prestashop)
 
 
 
@@ -116,7 +113,7 @@ A equipa de assistência da OVHcloud não está autorizada a responder a questõ
 Para isso, poderá consultar os fóruns dedicados ao [Drupal](https://www.drupal.org).
 
 
--  Guia de instalação do Drupal: [CMS, como instalar manualmente o Drupal](../cms_instalar_manualmente_drupal/)
+-  Guia de instalação do Drupal: [CMS, como instalar manualmente o Drupal](/pages/web/hosting/cms_manual_installation_drupal)
 
 
 
@@ -127,11 +124,11 @@ Para isso, poderá consultar os fóruns dedicados ao [Drupal](https://www.drupal
 
 ## Vá mais longe
 
-[Como migrar um site e e-mails para a OVHcloud](../migrar-site-para-ovh/){.external}
+[Como migrar um site e e-mails para a OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-[Publicar um site num alojamento web](../partilhado_colocar_o_meu_website_online/){.external}
+[Publicar um site num alojamento web](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
-[Partilhar o alojamento entre vários sites](../multisites-configurar-um-multisite-no-meu-alojamento-web/){.external}
+[Partilhar o alojamento entre vários sites](/pages/web/hosting/multisites_configure_multisite){.external}
 
 Consulte ainda as nossas [Soluções de alojamento de websites](https://www.ovhcloud.com/pt/web-hosting//){.external}
 

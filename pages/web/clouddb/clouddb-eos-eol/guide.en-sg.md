@@ -1,7 +1,5 @@
 ---
 title: 'Web Cloud Databases EOS and EOL announcements'
-slug: clouddb-eos-eol
-section: 'Technical resources'
 updated: 2023-04-03
 ---
 
@@ -9,7 +7,7 @@ updated: 2023-04-03
 
 ## Objective
 
-The products covered by those End Of Sale (EOS) and End Of Life (EOL) announcements are the Web Cloud Databases public services, dedicated DBMS instances reachable on the public network. See also the [OVHcloud Managed databases EOL policy](../eol-policy/guide.en-gb.md) for more information.
+The products covered by those End Of Sale (EOS) and End Of Life (EOL) announcements are the Web Cloud Databases public services, dedicated DBMS instances reachable on the public network. See also the [OVHcloud Managed databases EOL policy](/sg/en/clouddb/eol-policy/guide.en-gb.md) for more information.
 
 |Version|EOL announcement|End-of-Sale|End-of-Support|
 |---|---|---|---|

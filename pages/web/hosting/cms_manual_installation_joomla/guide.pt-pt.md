@@ -1,9 +1,6 @@
 ---
 title: 'CMS, instalar manualmente o Joomla'
 excerpt: Como instalar manualmente o Joomla?
-slug: cms_instalar_manualmente_o_joomla
-section: CMS
-order: 05
 updated: 2022-12-01
 ---
 
@@ -244,7 +241,7 @@ Trata-se de um erro relativo à versão de PHP do seu servidor.
 
 A causa é simples: a última versão de PHP não foi ativada.
 
-Tem à sua disposição um guia para o ajudar a alterar a versão de PHP em uso no seu alojamento:[aqui]({legacy}1207)
+Tem à sua disposição um guia para o ajudar a alterar a versão de PHP em uso no seu alojamento:[aqui](/pages/web/hosting/cms_manual_installation_joomla%7Blegacy%7D1207)
 
 ![joomla](images/3156.png){.thumbnail}
 
@@ -255,9 +252,9 @@ Magic Quotes deve estar como Off e, como tal, definido como 0 no seu ficheiro de
 
 Nas novas ofertas 2014, se PHP-FPM está ativado, a variável Magic Quote está desativada de forma padrão. Para as antigas ofcertas partilhada é necessário desativar esta variável no ficheiro .htaccess.
 
-Um guia está disponível para o ajudar na modificação da variável PHP na oferta de alojamento partilhado 2014:[Modificar a versão PHP do alojamento]({legacy}1207)
+Um guia está disponível para o ajudar na modificação da variável PHP na oferta de alojamento partilhado 2014:[Modificar a versão PHP do alojamento](/pages/web/hosting/cms_manual_installation_joomla%7Blegacy%7D1207)
 
-Um guia está disponível para o ajudar na modificação da variável PHP nas antigas ofertas:[Modificação da variável PHP nas antigas ofertas OVHcloud]({legacy}1175)
+Um guia está disponível para o ajudar na modificação da variável PHP nas antigas ofertas:[Modificação da variável PHP nas antigas ofertas OVHcloud](/pages/web/hosting/cms_manual_installation_joomla%7Blegacy%7D1175)
 
 ![joomla](images/3157.png){.thumbnail}
 

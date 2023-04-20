@@ -1,10 +1,7 @@
 ---
 title: "Zwiększ rozmiar dodatkowego dysku"
 excerpt: "Dowiedz się, jak zwiększyć rozmiar dodatkowego wolumenu i powiększyć jego partycję główną"
-slug: vps-increase-size-additional-disk
-section: "Opcje kopii zapasowych"
 updated: 2023-03-14
-order: 4
 ---
 
 > [!primary]
@@ -22,13 +19,13 @@ Jeśli osiągnąłeś maksymalną pojemność dodatkowego dysku, możesz zwięks
 ## Wymagania początkowe
 
 - Jeden [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud.
-- Dodatkowy [dysk](https://docs.ovh.com/pl/vps/config-additional-disk-vps/) skonfigurowany na serwerze VPS.
+- Dodatkowy [dysk](/pages/cloud/vps/config_additional_disk) skonfigurowany na serwerze VPS.
 - Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 - Dostęp do serwera VPS przez SSH lub RDP.
 
 ## W praktyce
 
-Poniższe etapy zakładają, że skonfigurowałeś dodatkowy dysk zgodnie z instrukcjami zawartymi w [tym przewodniku](https://docs.ovh.com/pl/vps/config-additional-disk-vps/).
+Poniższe etapy zakładają, że skonfigurowałeś dodatkowy dysk zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/cloud/vps/config_additional_disk).
 
 ### Zmień rozmiar dysku <a name="extend"></a>
 

@@ -1,8 +1,6 @@
 ---
 title: 'Introduction au SSH'
-slug: ssh-introduction
 excerpt: "Découvrez comment utiliser les connexions SSH pour accéder à votre serveur"
-section: 'Premiers pas'
 updated: 2022-06-08
 ---
 
@@ -35,7 +33,7 @@ Le protocole de communication SSH (Secure Shell) est l'outil principal pour éta
 
 Plusieurs méthodes existent pour authentifier une connexion à un périphérique distant via SSH.<br>
 Les instructions suivantes concernent la méthode d'authentification via un nom d'utilisateur et un mot de passe.<br>
-Vous pouvez également configurer des clés SSH pour activer les connexions sécurisées sans mot de passe. Retrouvez plus de détails dans notre [guide des clés SSH](https://docs.ovh.com/ca/fr/dedicated/creer-cle-ssh-serveur-dediees/).
+Vous pouvez également configurer des clés SSH pour activer les connexions sécurisées sans mot de passe. Retrouvez plus de détails dans notre [guide des clés SSH](/pages/cloud/dedicated/creating-ssh-keys-dedicated).
 
 Les identifiants de connexion (identifiant et mot de passe) vous sont envoyés par e-mail après une installation ou une réinstallation de serveur effectuée depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).<br>
 Le nom d'utilisateur correspond au système d'exploitation, par exemple `ubuntu` ou `debian`.<br>
@@ -43,9 +41,9 @@ Pour vous connecter, vous devez également spécifier l'adresse IPv4 ou le nom d
 
 N’oubliez pas de consulter également nos guides « Premiers pas » :
 
-- Pour un [serveur dédié](https://docs.ovh.com/ca/fr/dedicated/premiers-pas-serveur-dedie/)
-- Pour un [serveur dédié de la gamme de produits **Eco**](https://docs.ovh.com/ca/fr/dedicated/getting-started-dedicated-server-eco/)
-- Pour un [VPS](https://docs.ovh.com/ca/fr/vps/debuter-avec-vps/)
+- Pour un [serveur dédié](/pages/cloud/dedicated/getting-started-with-dedicated-server)
+- Pour un [serveur dédié de la gamme de produits **Eco**](/pages/cloud/dedicated/getting-started-with-dedicated-server-eco)
+- Pour un [VPS](/pages/cloud/vps/starting_with_a_vps)
 
 ### Connexion depuis une distribution GNU/Linux ou macOS
 
@@ -167,10 +165,10 @@ Veuillez consulter la FAQ officielle et la documentation de PuTTY pour plus d'in
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Création de clés SSH](https://docs.ovh.com/ca/fr/dedicated/creer-cle-ssh-serveur-dediees/)
+[Création de clés SSH](/pages/cloud/dedicated/creating-ssh-keys-dedicated)
 
-[Mode rescue serveur dédié](https://docs.ovh.com/ca/fr/dedicated/ovh-rescue/)
+[Mode rescue serveur dédié](/pages/cloud/dedicated/rescue_mode)
 
-[VPS mode rescue](https://docs.ovh.com/ca/fr/vps/mode-rescue-vps/)
+[VPS mode rescue](/pages/cloud/vps/rescue)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

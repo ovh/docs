@@ -1,9 +1,6 @@
 ---
 title: 'Accessing a website’s logs and statistics on a Web Hosting'
 excerpt: Find out how to review statistics and logs of your websites
-slug: shared_view_my_websites_logs_and_statistics
-section: Optimise your website
-order: 04
 updated: 2021-01-05
 ---
 
@@ -42,7 +39,7 @@ Click the `Create a new user`{.action} button in the `User Administration` secti
 
 > [!warning] 
 >
-> If you have enabled separate logs on a [multisite entry](../multisites-configuring-multiple-websites/#step-2-add-a-domain-or-subdomain), users created here cannot access statistics for that multisite entry.
+> If you have enabled separate logs on a [multisite entry](/pages/web/hosting/multisites_configure_multisite#step-2-add-a-domain-or-subdomain), users created here cannot access statistics for that multisite entry.
 >
 
 ### Visit statistics
@@ -77,7 +74,7 @@ Different types of logs are available:
 - **cgi**: These logs collect the various calls to the cgi.bin scripts that were made.
 - **out**: These are the external calls of your hosting.
 - **ssh**: These logs indicate the different connections made with the SSH protocol.
-- **cron**: The results of executing your [scheduled tasks](../hosting_automated_taskscron) are logged here.
+- **cron**: The results of executing your [scheduled tasks](/pages/web/hosting/cron_tasks) are logged here.
 
 ### Hosting activity
 

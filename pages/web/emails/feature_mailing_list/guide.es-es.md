@@ -1,9 +1,6 @@
 ---
 title: 'Gestionar y utilizar las listas de difusión'
-slug: guia_de_utilizacion_de_listas_de_difusion
 excerpt: 'Cómo utilizar las listas de difusión'
-section: 'Gestión de la cuenta de correo'
-order: 03
 updated: 2020-03-19
 ---
 

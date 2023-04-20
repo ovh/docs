@@ -1,9 +1,6 @@
 ---
 title: Accedi allo Spazio Cliente OVHcloud
-slug: accedere-spazio-cliente-ovhcloud
 excerpt: Come autenticarsi al tuo account OVHcloud
-section: 'Per iniziare'
-order: 2
 updated: 2021-07-01
 ---
 
@@ -21,8 +18,8 @@ Per gestire i tuoi servizi accedi allo Spazio Cliente OVHcloud,
 
 ## Prerequisiti
 
-- Aver creato [il tuo account OVHcloud](https://docs.ovh.com/it/customer/creare-account-ovhcloud/)
-- Aver consultato le [best practice di protezione del tuo account OVHcloud](https://docs.ovh.com/it/customer/tutto_sullidentificativo_cliente_ovh/)
+- Aver creato [il tuo account OVHcloud](/pages/account/customer/ovhcloud-account-creation)
+- Aver consultato le [best practice di protezione del tuo account OVHcloud](/pages/account/customer/all_about_username)
 
 ## Procedura
 
@@ -32,7 +29,7 @@ Accedi alla [pagina di autenticazione OVHcloud](https://www.ovh.com/auth/?action
 
 ![identificativo cliente](images/log-in.png){.thumbnail}
 
-Se hai attivato la [doppia autenticazione](https://docs.ovh.com/it/customer/proteggi_il_tuo_account_con_2FA/), inserisci il codice unico di connessione generato dalla tua periferica (telefono, tablet o chiave U2F).
+Se hai attivato la [doppia autenticazione](/pages/account/customer/secure-ovhcloud-account-with-2fa), inserisci il codice unico di connessione generato dalla tua periferica (telefono, tablet o chiave U2F).
 
 ### Cosa fare se non riesco a connettermi? <a name="login-failure"></a>
 
@@ -63,7 +60,7 @@ Una volta effettuato l'accesso, accedi allo Spazio Cliente e clicca sul tuo nome
 
 ### Ho perso la password
 
-Se hai dimenticato o perso la password, [questa guida ti spiega la procedura da seguire per modificarla](https://docs.ovh.com/it/customer/gestire-la-password/#se-non-ricordi-piu-la-password).
+Se hai dimenticato o perso la password, [questa guida ti spiega la procedura da seguire per modificarla](/pages/account/customer/manage-ovh-password#se-non-ricordi-piu-la-password).
 
 ### Ho perso la password e il mio indirizzo email principale non è più valido
 
@@ -73,7 +70,7 @@ In questo caso, la procedura di reimpostazione della password non può essere ef
 
 Contatta il supporto OVHcloud al +39 02 5560 0423 per fare in modo che questo indirizzo di recupero diventi l'indirizzo email principale.
 
-Una volta completata l'operazione, è fondamentale [inserire un **nuovo** indirizzo email di recupero](https://docs.ovh.com/it/customer/tutto_sullidentificativo_cliente_ovh/#backup-email) nel tuo account.
+Una volta completata l'operazione, è fondamentale [inserire un **nuovo** indirizzo email di recupero](/pages/account/customer/all_about_username#backup-email) nel tuo account.
 
 #### Se non hai inserito un indirizzo email di recupero o se questo non è valido
 
@@ -87,7 +84,7 @@ Segui questa [procedura](https://www.ovh.it/cgi-bin/it/procedure/procedureChange
 
 In questo caso, puoi utilizzare i codici di sicurezza della doppia autenticazione, utilizzare un'altra periferica o disattivare la doppia autenticazione.
 
-Consulta la nostra guida [Proteggere un account OVHcloud con la doppia autenticazione](https://docs.ovh.com/it/customer/proteggi_il_tuo_account_con_2FA/#che-fare-se-uno-dei-miei-dispositivi-e-stato-smarrito-o-ha-smesso-di-funzionare).
+Consulta la nostra guida [Proteggere un account OVHcloud con la doppia autenticazione](/pages/account/customer/secure-ovhcloud-account-with-2fa#che-fare-se-uno-dei-miei-dispositivi-e-stato-smarrito-o-ha-smesso-di-funzionare).
 
 ### Non ho attivato l'autenticazione a due fattori sul mio account, ma mi è stato chiesto comunque un codice
 
@@ -103,12 +100,12 @@ Se non trovi il codice, controlla la cartella "spam"/posta indesiderata del tuo 
 
 ## Per saperne di più
 
-[Crea il tuo account OVHcloud](https://docs.ovh.com/it/customer/creare-account-ovhcloud/)
+[Crea il tuo account OVHcloud](/pages/account/customer/ovhcloud-account-creation)
 
-[Rendere sicuro il tuo account OVHcloud e gestire le tue informazioni personali](https://docs.ovh.com/it/customer/tutto_sullidentificativo_cliente_ovh/)
+[Rendere sicuro il tuo account OVHcloud e gestire le tue informazioni personali](/pages/account/customer/all_about_username)
 
-[Modifica la password del tuo account](https://docs.ovh.com/it/customer/gestire-la-password/)
+[Modifica la password del tuo account](/pages/account/customer/manage-ovh-password)
 
-[Rendere sicuro il tuo account OVHcloud con la doppia autenticazione](https://docs.ovh.com/it/customer/proteggi_il_tuo_account_con_2FA/)
+[Rendere sicuro il tuo account OVHcloud con la doppia autenticazione](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

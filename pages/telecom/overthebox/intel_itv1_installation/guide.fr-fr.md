@@ -1,8 +1,6 @@
 ---
 title: 'Installation OverTheBox Intel ou IT v1'
-slug: intel-itv1-installation
 excerpt: "Découvrez comment installer et configurer votre équipement OverTheBox Intel ou IT v1 afin de profiter de votre offre OverTheBox"
-section: "OverTheBox Intel et IT v1"
 updated: 2021-04-14
 ---
 
@@ -11,7 +9,7 @@ updated: 2021-04-14
 > [!warning]
 >
 > Ce guide est déprécié et concerne la configuration d'équipements OverTheBox qui ne sont plus disponibles à la vente.
-> Veuillez vous reporter au guide suivant pour les offres OverTheBox actuelles : [Installation OverTheBox Plus ou IT v2](../plus-itv2-installation)
+> Veuillez vous reporter au guide suivant pour les offres OverTheBox actuelles : [Installation OverTheBox Plus ou IT v2](/pages/telecom/overthebox/plus_itv2_installation)
 >
 
 ## Objectif
@@ -21,7 +19,7 @@ Découvrez comment installer et configurer votre équipement OverTheBox Intel ou
 ## Prérequis
 
 - Au moins un modem ayant accès à Internet sur lequel vous devez être en capacité de modifier la configuration réseau (IP et DHCP). **Exemple** : Box fournie par un fournisseur d'accès Internet comme OVHcloud ou un opérateur national.
-- Une **OverTheBox** fournie par OVHcloud ou une installation depuis le projet Open Source ([installer l'image overthebox sur votre materiel](../installer-limage-overthebox-sur-votre-materiel/))
+- Une **OverTheBox** fournie par OVHcloud ou une installation depuis le projet Open Source ([installer l'image overthebox sur votre materiel](/pages/telecom/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel))
 
 > [!alert]
 >
@@ -62,7 +60,7 @@ Dans le cas d'une OverTheBox IT v1 :
 
 Il n'est donc pas possible de le cumuler avec un autre modem en 192.168.**1**.0/24
 
-Dans ce cas, vous devez modifier l'adresse IP de l'un des deux modems, ce guide détaille la procédure à suivre en fonction de votre fournisseur d'accès : [Désactiver le serveur DHCP de votre modem](../intel-itv1-desactiver-dhcp-modem/)
+Dans ce cas, vous devez modifier l'adresse IP de l'un des deux modems, ce guide détaille la procédure à suivre en fonction de votre fournisseur d'accès : [Désactiver le serveur DHCP de votre modem](/pages/telecom/overthebox/intel_itv1_desactiver_dhcp_modem)
 
 Les modems et l'**OverTheBox** ne doivent toujours pas être reliés entre eux.
 
@@ -162,7 +160,7 @@ Votre **OverTheBox** est maintenant prête à la configuration :
 > [!primary]
 >
 > Comment désactiver le serveur DHCP des principaux modems grand public ?
-> Voir le guide [Désactiver le serveur DHCP de votre modem](../intel-itv1-desactiver-dhcp-modem)
+> Voir le guide [Désactiver le serveur DHCP de votre modem](/pages/telecom/overthebox/intel_itv1_desactiver_dhcp_modem)
 >
 
 - Revenez ensuite sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external} et cliquez sur **recheck**.
@@ -212,7 +210,7 @@ Avant de brancher le modem supplémentaire, vérifiez que ce dernier possède **
 
 Il n'est donc pas possible de le cumuler avec un autre modem en 192.168.**1**.0/24
 
-Dans ce cas, vous devez modifier l'adresse IP de l'un des deux modems, ce guide détaille la procédure à suivre en fonction de votre fournisseur d'accès : [Désactiver le serveur DHCP de votre modem](../intel-itv1-desactiver-dhcp-modem/)
+Dans ce cas, vous devez modifier l'adresse IP de l'un des deux modems, ce guide détaille la procédure à suivre en fonction de votre fournisseur d'accès : [Désactiver le serveur DHCP de votre modem](/pages/telecom/overthebox/intel_itv1_desactiver_dhcp_modem)
 
 - Branchez votre deuxième modem **sur le modem principal** (comme sur l'image ci-dessous avec le câble vert).
 
@@ -233,7 +231,7 @@ Votre **OverTheBox** va détecter le deuxième modem :
 > [!primary]
 >
 > Comment désactiver le serveur DHCP des principaux modems grand public ?
-> Voir le guide [Désactiver le serveur DHCP de votre modem](../intel-itv1-desactiver-dhcp-modem)
+> Voir le guide [Désactiver le serveur DHCP de votre modem](/pages/telecom/overthebox/intel_itv1_desactiver_dhcp_modem)
 >
 
 - Revenez ensuite sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external} et cliquez sur **recheck**.
@@ -255,7 +253,7 @@ La configuration est terminée. Votre  **OverTheBox**  utilise à présent les 2
 
 ### Ajouter un décodeur TV
 
-Si vous devez utiliser la télévision via l'un des modems pris en charge par **OverTheBox**, veuillez suivre la procédure décrite sur le guide suivant : [Intégration d'un Décodeur TV](../intel-itv1-integration-decodeur-tv/){.external}.
+Si vous devez utiliser la télévision via l'un des modems pris en charge par **OverTheBox**, veuillez suivre la procédure décrite sur le guide suivant : [Intégration d'un Décodeur TV](/pages/telecom/overthebox/intel_itv1_integration_decodeur_tv){.external}.
 
 ### Brancher l'OverTheBox sur un switch
 

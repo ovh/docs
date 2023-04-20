@@ -1,8 +1,5 @@
 ---
 title: Variables
-slug: development-variables
-section: Development
-order: 5
 updated: 2022-01-13
 ---
 
@@ -30,7 +27,7 @@ If variables have the same names at different levels, the [variables are given p
 
 ### Use application-provided variables
 
-Set variables [in code](../configuration-app/variables) using the `.platform.app.yaml` file.
+Set variables [in code](/pages/web/web-paas/configuration-app/variables) using the `.platform.app.yaml` file.
 These values are the same across all environments and present in the Git repository,
 which makes them a poor fit for API keys and other such secrets.
 
@@ -41,7 +38,7 @@ Application variables are available at both build time and runtime.
 
 ### Create project variables
 
-Add secrets for all environments in project variables using [the management console](../administration-web/configure-project#variables) or the CLI.
+Add secrets for all environments in project variables using [the management console](/pages/web/web-paas/administration-web/configure-project#variables) or the CLI.
 
 For example, to create the project variable `foo` with the value `bar`, run:
 
@@ -78,7 +75,7 @@ Note that any changes to project variables require you to deploy your environmen
 
 ### Create environment variables
 
-Set variables for specific environments using [the management console](../administration-web/configure-environment#variables) or the CLI.
+Set variables for specific environments using [the management console](/pages/web/web-paas/administration-web/configure-environment#variables) or the CLI.
 
 For example, to create the environment variable `foo` with the value `bar` on the current environment, run:
 
@@ -156,7 +153,7 @@ and whether they're available during builds and at runtime.
 | PLATFORM_ENVIRONMENT      | No    | Yes     | The name of the Web PaaS environment. |
 | PLATFORM_ENVIRONMENT_TYPE | No    | Yes     | The type of the Web PaaS environment (development, staging or production). |
 | PLATFORM_SMTP_HOST        | No    | Yes     | The SMTP host to send email messages through. Is empty when mail is disabled for the current environment. |
-| PLATFORM_RELATIONSHIPS    | No    | Yes     | A base64-encoded JSON object of relationships. The keys are the relationship name and the values are arrays of relationship endpoint definitions. The exact format is defined for each [service](../configuration-services). |
+| PLATFORM_RELATIONSHIPS    | No    | Yes     | A base64-encoded JSON object of relationships. The keys are the relationship name and the values are arrays of relationship endpoint definitions. The exact format is defined for each [service](/pages/web/web-paas/configuration-services). |
 | PLATFORM_ROUTES           | No    | Yes     | A base64-encoded JSON object that describes the routes for the environment. It maps the content of the `.platform/routes.yaml` file. |
 
 
@@ -197,11 +194,11 @@ Some attributes that are **not** available in `PLATFORM_APPLICATION` during buil
 The above attributes aren't visible during build
 because they aren't included as a part of the configuration component of the build slug.
 So modifying any of these values in `.platform.app.yaml` doesn't trigger an app rebuild, only a redeploy.
-For more information, read more about [how builds work](../bestpractices-environment-build#how-build-works).
+For more information, read more about [how builds work](/pages/web/web-paas/bestpractices-environment-build#how-build-works).
 
 ## Accessing variables
 
-You can get a list of all variables defined on a given environment using either [the management console](../administration-web/configure-environment#variables) or the CLI:
+You can get a list of all variables defined on a given environment using either [the management console](/pages/web/web-paas/administration-web/configure-environment#variables) or the CLI:
 
 ```bash
 $ webpaas var
@@ -334,7 +331,7 @@ To access environment variables in your app, check the documentation page for yo
 ### Accessing complex values
 
 Variable values can have nested structures. 
-The following example shows nested structures introduced in an [app configuration](../configuration-app/variables):
+The following example shows nested structures introduced in an [app configuration](/pages/web/web-paas/configuration-app/variables):
 
 ```yaml
 variables:
@@ -542,7 +539,7 @@ display_errors = On
 
 This feature is primarily useful to override debug configuration on development environments, such as enabling errors or configuring the XDebug extension. 
 
-To apply a setting to all environments or to vary them between different PHP containers in the same project, specify the variables in the `.platform.app.yaml` file for your application. See the [PHP configuration page](../languages-php/ini) for more information.
+To apply a setting to all environments or to vary them between different PHP containers in the same project, specify the variables in the `.platform.app.yaml` file for your application. See the [PHP configuration page](/pages/web/web-paas/languages-php/ini) for more information.
 
 ### Framework-specific variables
 

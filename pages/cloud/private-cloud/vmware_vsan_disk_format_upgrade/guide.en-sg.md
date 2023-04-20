@@ -1,8 +1,6 @@
 ---
 title: "Updating the vSAN disk format"
-slug: vsan-disk-format-upgrade
 excerpt: "Find out how to update the format of a vSAN disk"
-section: VMware vSphere features
 updated: 2023-01-19
 ---
 
@@ -18,11 +16,11 @@ vSAN disks are regularly upgraded with new versions. You need to update the vSAN
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-sg/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg))
-- A deployed [vSan cluster](https://docs.ovh.com/sg/en/private-cloud/vmware-vsan/)
+- A deployed [vSan cluster](/pages/cloud/private-cloud/vmware_vsan)
 
 ## Instructions
 
-Log in to your vSphere interface using [this guide](https://docs.ovh.com/sg/en/private-cloud/login-vsphere-interface/).
+Log in to your vSphere interface using [this guide](/pages/cloud/private-cloud/vsphere_interface_connexion).
 
 In the vSphere interface, click on your `Cluster`{.action} to the left, go to the `Configure`{.action} tab, choose `Services`{.action} in the **vSAN** section and click `PRE-CHECK UPGRADE`{.action}.
 

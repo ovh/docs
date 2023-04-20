@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: 'Hardware diagnostics'
-slug: hardware-diagnostics
 excerpt: 'Ontdek hoe u hardwarestoringen op uw server kunt diagnosticeren'
-section: Veiligheid
 updated: 2022-12-15
 ---
 
@@ -20,14 +18,14 @@ Deze handleiding legt uit hoe hardwarestoringen kunnen worden gedetecteerd op uw
 ## Vereisten
 
 * U moet beschikken over een [dedicated server](https://www.ovh.nl/dedicated_servers/){.external}.
-* U moet de server opnieuw hebben gestart in de [reddingsmodus](https://docs.ovh.com/nl/dedicated/ovh-rescue/){.external}.
+* U moet de server opnieuw hebben gestart in de [reddingsmodus](/pages/cloud/dedicated/rescue_mode){.external}.
 
 
 ## Instructie
 
 ### Gebruik de webinterface.
 
-Nadat uw server opnieuw is opgestart in de [reddingsmodus](https://docs.ovh.com/nl/dedicated/ovh-rescue/), ontvangt u een e-mail met toegangsinformatie voor uw dienst. Het bericht bevat ook een link naar de reddingsmodus voor de netwerkinterface. Het ziet er meestal zo uit: *https://server_IP:444*.
+Nadat uw server opnieuw is opgestart in de [reddingsmodus](/pages/cloud/dedicated/rescue_mode), ontvangt u een e-mail met toegangsinformatie voor uw dienst. Het bericht bevat ook een link naar de reddingsmodus voor de netwerkinterface. Het ziet er meestal zo uit: *https://server_IP:444*.
 
 Nadat u op de koppeling hebt geklikt, wordt u doorgestuurd naar de webinterface, zoals hieronder wordt weergegeven.
 

@@ -1,8 +1,6 @@
 ---
 title: Sending SMS messages via a URL - http2sms
-slug: send_sms_messages_via_url_-_http2sms
 excerpt: Find out how to send SMS messages via a HTTP address
-section: Sending SMS messages
 updated: 2020-05-20
 ---
 
@@ -15,7 +13,7 @@ There are different methods for sending SMS messages. One of them involves using
 **Find out how to send SMS messages with the Wget tool.**
 
 ## Requirements
-- An SMS user created via the OVHcloud Control Panel, or directly via the APIs. To do this, please refer to the following guide: [Everything you need to know about SMS users](../everything_you_need_to_know_about_sms_users/)
+- An SMS user created via the OVHcloud Control Panel, or directly via the APIs. To do this, please refer to the following guide: [Everything you need to know about SMS users](/pages/telecom/sms/tout_savoir_sur_les_utilisateurs_sms)
 - An OVHcloud SMS account with SMS credits.
 
 
@@ -123,7 +121,7 @@ When a failure occurs, the cause is included:
 - If sending failed:
 
 ```xml
-<?xml version="1.0" encoding="UTF-8" ?><response><status>201</status><message>Missing message. For more information: https://docs.ovh.com/gb/en/sms/send_sms_messages_via_url_-_http2sms</message></response>
+<?xml version="1.0" encoding="UTF-8" ?><response><status>201</status><message>Missing message. For more information: /pages/telecom/sms/envoyer_des_sms_depuis_une_url_-_http2sms</message></response>
 ```
 
 
@@ -138,7 +136,7 @@ When a failure occurs, the cause is included:
 - If sending failed:
 
 ```json
-{"status":201,"message":"Missing message. For more information: https://docs.ovh.com/gb/en/sms/send_sms_messages_via_url_-_http2sms"}
+{"status":201,"message":"Missing message. For more information: /pages/telecom/sms/envoyer_des_sms_depuis_une_url_-_http2sms"}
 ```
 
 
@@ -171,7 +169,7 @@ OK<br>
 <title>HTTP2SMS</title>
 </HEAD>
 <BODY>
-KO<br>Missing message. For more information: https://docs.ovh.com/gb/en/sms/send_sms_messages_via_url_-_http2sms<br>
+KO<br>Missing message. For more information: /pages/telecom/sms/envoyer_des_sms_depuis_une_url_-_http2sms<br>
 </BODY>
 </HTML>
 ```
@@ -190,7 +188,7 @@ OK
 
 ```
 KB
-Missing message. For more information: https://docs.ovh.com/gb/en/sms/send_sms_messages_via_url_-_http2sms
+Missing message. For more information: /pages/telecom/sms/envoyer_des_sms_depuis_une_url_-_http2sms
 ```
 
 ## Appendix

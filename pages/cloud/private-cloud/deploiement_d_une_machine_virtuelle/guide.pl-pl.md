@@ -1,9 +1,6 @@
 ---
 title: Wdrożenie maszyny wirtualnej
-slug: wdrozenie-maszyny-wirtualnej
 excerpt: Odkryj, jak wdrożyć maszynę wirtualną z poziomu interfejsu vSphere
-section: Zarządzanie wirtualnymi maszynami
-order: 0
 updated: 2020-06-29
 ---
 
@@ -18,7 +15,7 @@ Z poziomu interfejsu vSphere możesz wdrażać maszyny wirtualne na wiele różn
 ## Wymagania początkowe
 
 - Posiadanie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}
-- Dostęp do [interfejsu vSphere](../polaczenie-interfejs-vsphere/)
+- Dostęp do [interfejsu vSphere](/pages/cloud/private-cloud/vsphere_interface_connexion)
 
 ## W praktyce
 
@@ -32,8 +29,8 @@ Kliknij prawym przyciskiem myszy wybrany klaster, a następnie wybierz opcję `N
 
 Podczas tworzenia maszyny wirtualnej masz wiele możliwości:
 
-- Utworzenie maszyny wirtualnej z pliku ISO obecnego w centrum danych. Plik ten należy zaimportować zgodnie z [przewodnikiem łączenia się przez SFTP](../polaczenie_przez_sftp/)
-- Możesz także wdrożyć maszynę wirtualną na podstawie posiadanego szablonu lub też za pomocą [szablonu OVH](../instalacja-z-szablonow-ovh/)
+- Utworzenie maszyny wirtualnej z pliku ISO obecnego w centrum danych. Plik ten należy zaimportować zgodnie z [przewodnikiem łączenia się przez SFTP](/pages/cloud/private-cloud/sftp_connexion)
+- Możesz także wdrożyć maszynę wirtualną na podstawie posiadanego szablonu lub też za pomocą [szablonu OVH](/pages/cloud/private-cloud/ovf_template)
 - Inną opcją jest sklonowanie już istniejącej maszyny wirtualnej (uważając jednak na ryzyko konfliktu adresów IP).
 - Możesz sklonować maszynę wirtualną jako szablon, by móc szybciej wdrażać maszyny wirtualne w przyszłości.
 - Istnieje też możliwość sklonowania szablonu jako innego szablonu, by np. dysponować szablonem w różnych centrach danych i nie odczuwać spadku wydajności podczas masowego wdrażania.

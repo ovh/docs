@@ -1,9 +1,6 @@
 ---
 title: 'Configurar una cuenta de correo electrónico en iPhone o iPad'
 excerpt: 'Cómo configurar una cuenta de correo electrónico en un iPhone o iPad'
-slug: correo_guia_de_configuracion_en_iphone_ios_91
-section: Configuración en el smartphone
-order: 01
 updated: 2022-07-20
 ---
 
@@ -29,7 +26,7 @@ Es posible configurar sus cuentas de correo electrónico en el cliente de correo
 ## Requisitos
 
 - Disponer de una cuenta de correo electrónico incluida en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}).
-- Estar actualizado en los [pagos](https://docs.ovh.com/us/es/billing/gestionar-facturas-ovh/#pay-bills) y [renovaciones](https://docs.ovh.com/us/es/billing/renovacion-automatica-ovh/#renewal-management) de los servicios asociados (dominio y alojamiento web).
+- Estar actualizado en los [pagos](/pages/account/billing/invoice_management#pay-bills) y [renovaciones](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
 - Tener la aplicación Mail instalada en su dispositivo iOS.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 
@@ -79,13 +76,13 @@ OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de
 
 > [!primary]
 >
-> Si necesita ayuda para recibir o enviar mensajes de correo, consulte nuestras [FAQ en los servicios de correo de OVHcloud](https://docs.ovh.com/us/es/emails/correo-electronico-faq/).
+> Si necesita ayuda para recibir o enviar mensajes de correo, consulte nuestras [FAQ en los servicios de correo de OVHcloud](/pages/web/emails/faq-emails).
 >
 
 ## Más información
 
-[Configurar una cuenta Exchange en iPhone o iPad](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-ios-iphone-ipad/){.external}
+[Configurar una cuenta Exchange en iPhone o iPad](/pages/web/microsoft-collaborative-solutions/how_to_configure_ios){.external}
 
-[FAQ e-mails](https://docs.ovh.com/us/es/emails/correo-electronico-faq/)
+[FAQ e-mails](/pages/web/emails/faq-emails)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

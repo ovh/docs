@@ -1,9 +1,7 @@
 ---
 title: 'Zmiana właściciela domeny'
 excerpt: 'W tym przewodniku znajdziesz różne informacje na temat zmiany właściciela domeny.'
-slug: zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz
 legacy_guide_number: g1350
-section: 'Zmiana właściciela'
 updated: 2021-03-04
 ---
 
@@ -15,12 +13,12 @@ updated: 2021-03-04
 
 ## Wprowadzenie
 
-Oprócz [zarządzania kontaktami](../../customer/zarzadzanie_kontaktami/), zarejestrowanie domeny wymaga podania informacji dotyczących jej właściciela. Właściciel **domeny** w tym kontekście dotyczy osoby lub firmy posiadającej prawa do tej domeny. **Zmiana właściciela** odnosi się do przeniesienia praw własności z jednej osoby lub firmy na inną, informacje **właściciela** mają moc prawną. Na przykład proces ten jest obowiązkowy, jeśli firma zmienia nazwę.
+Oprócz [zarządzania kontaktami](/pages/account/customer/managing_contacts), zarejestrowanie domeny wymaga podania informacji dotyczących jej właściciela. Właściciel **domeny** w tym kontekście dotyczy osoby lub firmy posiadającej prawa do tej domeny. **Zmiana właściciela** odnosi się do przeniesienia praw własności z jednej osoby lub firmy na inną, informacje **właściciela** mają moc prawną. Na przykład proces ten jest obowiązkowy, jeśli firma zmienia nazwę.
 
 > [!primary]
 >Operacja ta nie przenosi Twojej domeny na inne konto klienta OVHcloud.
 >
->W tym celu należy [zmienić kontakty](../../customer/zarzadzanie_kontaktami/) domeny.
+>W tym celu należy [zmienić kontakty](/pages/account/customer/managing_contacts) domeny.
 
 **Dowiedz się, jak zmienić właściciela domeny**
 
@@ -28,7 +26,7 @@ Oprócz [zarządzania kontaktami](../../customer/zarzadzanie_kontaktami/), zarej
 
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - Posiadanie domeny zarejestrowanej w OVHcloud.
-- Posiadanie statusu [kontaktu administracyjnego](../../customer/zarzadzanie_kontaktami/) danej domeny.
+- Posiadanie statusu [kontaktu administracyjnego](/pages/account/customer/managing_contacts) danej domeny.
 - Zgoda aktualnego właściciela domeny na zmianę właściciela.
 
 ## W praktyce
@@ -86,7 +84,7 @@ Jeśli adres e-mail nie został zmieniony w związku ze zmianą właściciela, r
 
 > [!warning]
 >
-> Jeśli właściciel domeny został zmieniony, domena nie będzie mogła zostać [przeniesiona do innego operatora](../transfer_wychodzacy_domeny_globalnej_lub_geograficznej/) przez 60 dni.
+> Jeśli właściciel domeny został zmieniony, domena nie będzie mogła zostać [przeniesiona do innego operatora](/pages/web/domains/transfer_outgoing_domain) przez 60 dni.
 
 ### Aktualizacja danych właściciela <a name="updateownerinformation"></a>
 
@@ -100,6 +98,6 @@ W przypadku tej operacji nie musisz potwierdzać modyfikacji za pomocą e-maila.
 
 ## Sprawdź również
 
-[Zarządzanie kontaktami swoich usług](../../customer/zarzadzanie_kontaktami/)
+[Zarządzanie kontaktami swoich usług](/pages/account/customer/managing_contacts)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

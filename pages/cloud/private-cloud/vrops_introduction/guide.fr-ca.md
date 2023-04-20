@@ -1,9 +1,6 @@
 ---
 title: Introduction à vRealize Operations - vROPS
-slug: vrops-introduction
 excerpt: Connectez-vous à vROPS et monitorez votre infrastructure
-section: vRops
-order: 01
 updated: 2022-02-23
 ---
 

@@ -1,10 +1,7 @@
 ---
 deprecated: true
 title: Configuratie van E-mail Pro in macOS Mail
-slug: configureer-email-pro-macos-mail
 excerpt: Ontdek hoe u uw E-mail Pro-account kunt configureren in Mail van macOS El Capitan, Sierra en High Sierra
-section: Configuratie van een e-mailclient
-order: 4
 updated: 2022-06-13
 ---
 
@@ -86,8 +83,8 @@ OVH biedt een webapplicatie met [teamwerk-functies](https://www.ovh.com/nl/email
 
 ## Verder
 
-[Configureer het e-mailadres dat is opgenomen in MX Plan of in een webhostingsplan in macOS Mail](https://docs.ovh.com/nl/emails/configuratie-mail-macos/){.external}.
+[Configureer het e-mailadres dat is opgenomen in MX Plan of in een webhostingsplan in macOS Mail](/pages/web/emails/how_to_configure_mail_macos){.external}.
 
-[Configuratie van Exchange in macOS Mail](https://docs.ovh.com/nl/microsoft-collaborative-solutions/exchange-configuratie-mail-mac/){.external}.
+[Configuratie van Exchange in macOS Mail](/pages/web/microsoft-collaborative-solutions/how_to_configure_mail_macos){.external}.
 
 Ga in gesprek met andere communityleden op [https://community.ovh.com](https://community.ovh.com){.external}.

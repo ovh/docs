@@ -1,8 +1,5 @@
 ---
 title: Object Storage - Choisir une classe de stockage adaptée à vos besoins
-slug: s3/choosing-the-right-storage-class-for-your-needs
-section: Informations générales
-order: 005
 updated: 2022-09-27
 ---
 

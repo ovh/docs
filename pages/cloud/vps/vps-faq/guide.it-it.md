@@ -1,8 +1,5 @@
 ---
 title: FAQ VPS OVHcloud
-slug: vps-faq
-section: 'Per iniziare'
-order: 2
 updated: 2022-05-05
 ---
 
@@ -69,7 +66,7 @@ Per usufruire di risorse garantite anche senza conoscenze specifiche nell'ammini
 La connessione al tuo VPS dovrà avvenire in SSH grazie all'indirizzo IP, nome utente e password forniti via email al ricevimento dell'ordine.
 Da una postazione Windows ti consigliamo di connetterti con il software Putty. La connessione potrà essere effettuata direttamente sul terminale da una postazione Linux.
 
-Per maggiori informazioni, consulta la guida Iniziare [a utilizzare un VPS](../iniziare-a-utilizzare-vps/).
+Per maggiori informazioni, consulta la guida Iniziare [a utilizzare un VPS](/pages/cloud/vps/starting_with_a_vps).
 
 ### È possibile ospitare più siti Internet su un VPS?
 
@@ -83,7 +80,7 @@ scegliendo tra le opzioni di backup manuale (Snapshot) o automatico.
 ### Come proteggere un VPS?
 
 Il VPS è fornito di default come "nudo", senza alcuna configurazione di sicurezza. E' la prima cosa che devi fare al ricevimento
-Per effettuare questa operazione, consulta la guida ["Mettere in sicurezza un VPS"](../consigli-sicurezza-vps/).
+Per effettuare questa operazione, consulta la guida ["Mettere in sicurezza un VPS"](/pages/cloud/vps/secure_your_vps).
 
 ### Qual è la banda passante assegnata al tuo VPS? È garantita?
 

@@ -1,8 +1,5 @@
 ---
 title: FAQ OVHcloud E-Mails
-slug: e-mails-faq
-section: 'Erste Schritte'
-order: 07
 updated: 2020-05-05
 ---
 
@@ -22,16 +19,16 @@ Erhalten Sie nach dem Versand einer E-Mail auf Ihrem E-Mail-Account eine Fehlerm
 Darüber hinaus können Sie überprüfen, ob Ihre Domain die E-Mails an den richtigen Ort liefert. Begeben Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, wählen Sie die DNS-Zone Ihrer Domain aus und sehen Sie sich die eingerichteten MX-Einträge an. Diese Einträge müssen in der Form „mx**X**.mail.ovh.net.“ eingegeben sein (ersetzen Sie **X** mit jeweils den Ziffern zwischen 0 und 3).
 Wenn die MX-Einträge abweichen, verwenden Sie möglicherweise ein E-Mail-Angebot eines anderen Anbieters.
 
-**Tipps und Tricks**: Wenn Sie sich nicht in Ihrem Webmail einloggen können, ist Ihr Passwort möglicherweise fehlerhaft. Überprüfen Sie Ihr Passwort, ändern Sie es bei Bedarf über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und versuchen Sie erneut, sich einzuloggen. Weitere Informationen zur Passwortänderungen finden Sie in [unserer Dokumentation](../passwort-e-mail-adresse-aendern/).
+**Tipps und Tricks**: Wenn Sie sich nicht in Ihrem Webmail einloggen können, ist Ihr Passwort möglicherweise fehlerhaft. Überprüfen Sie Ihr Passwort, ändern Sie es bei Bedarf über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und versuchen Sie erneut, sich einzuloggen. Weitere Informationen zur Passwortänderungen finden Sie in [unserer Dokumentation](/pages/web/emails/email_change_password).
 
 ### Wie kann ich meine E-Mail-Adresse einrichten und mit dem Webmail verwenden? 
 
 Sie können Ihre E-Mail-Adresse auf einem E-Mail-Client wie Outlook, Thunderbird, Mac Mail etc. einrichten.
-Hierzu stellen wir Ihnen Anleitungen zur Einrichtung Ihrer E-Mail-Adresse zur Verfügung. Diese finden Sie [hier](../).
+Hierzu stellen wir Ihnen Anleitungen zur Einrichtung Ihrer E-Mail-Adresse zur Verfügung. Diese finden Sie [hier](/products/web-cloud-email-collaborative-solutions-mx-plan).
 
 Dank [Webmail](https://www.ovh.com/de/mail/){.external} können Sie jederzeit und von jedem beliebigen Gerät aus auf Ihren E-Mail-Dienst zugreifen. Nachdem Sie Ihren E-Mail-Account erstellt haben, können Sie sich hier einloggen, um auf diesen zuzugreifen.
 
-**Tipps und Tricks**: Wenn Sie Ihren E-Mail-Account auf einem E-Mail-Client einrichten, empfehlen wir Ihnen, hierzu das IMAP-Protokoll zu verwenden. So werden die E-Mails weiterhin auf dem Server gespeichert und Sie können sie von überall aus über das [Webmail](https://www.ovh.com/de/mail/){.external} einsehen. Weitere Informationen hierzu finden Sie in [unserer Dokumentation](../allgemeines-zu-shared-e-mails/).
+**Tipps und Tricks**: Wenn Sie Ihren E-Mail-Account auf einem E-Mail-Client einrichten, empfehlen wir Ihnen, hierzu das IMAP-Protokoll zu verwenden. So werden die E-Mails weiterhin auf dem Server gespeichert und Sie können sie von überall aus über das [Webmail](https://www.ovh.com/de/mail/){.external} einsehen. Weitere Informationen hierzu finden Sie in [unserer Dokumentation](/pages/web/emails/email_generalities).
 
 ### Wie kann ich meine E-Mail-Dienste verwalten? 
 
@@ -49,7 +46,7 @@ Bitte beachten Sie, dass eine OVHcloud Kundenkennung für beide Varianten benöt
 Um den Empfang von Spam-Mails einzuschränken, können Sie Eingangsregeln für Ihre E-Mails einrichten (bei MX Plan als „Filter“ bezeichnet). Ihr Ziel ist es, E-Mails bei Empfang in den Spam-Ordner zu verschieben oder direkt zu löschen.
 Loggen Sie sich hierzu in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, gehen Sie in den Bereich `E-Mail` und wählen Sie die betreffende Domain aus. Gehen Sie anschließend in den Tab `E-Mail`{.action}, dann in die Spalte `Filter`{.action} und klicken Sie auf den Aktionsbutton.
 
-Wird in Ihrem Kundencenter keine `Filter`{.action}-Spalte angezeigt, müssen zunächst im [Webmail](https://www.ovh.com/de/mail/){.external} über die Verwaltungsregeln des Posteingangs Filter erstellt werden. Lesen Sie die folgende Anleitung für mehr Informationen: [Posteingangsregeln in OWA erstellen](../../microsoft-collaborative-solutions/posteingangsregeln-in-owa-erstellen/#beispiel-2-unerwunschte-e-mails-spam-filtern).
+Wird in Ihrem Kundencenter keine `Filter`{.action}-Spalte angezeigt, müssen zunächst im [Webmail](https://www.ovh.com/de/mail/){.external} über die Verwaltungsregeln des Posteingangs Filter erstellt werden. Lesen Sie die folgende Anleitung für mehr Informationen: [Posteingangsregeln in OWA erstellen](/pages/web/microsoft-collaborative-solutions/creating-inbox-rules-in-owa#beispiel-2-unerwunschte-e-mails-spam-filtern).
 
 **Tipps und Tricks**: Wenn Sie einen Filter für den Empfang von Spam-Mails festlegen, kann es vorkommen, das erwünschte E-Mails als Spam eingeordnet werden. Man spricht hierbei von falsch positiven Ergebnissen. Ist das bei Ihnen der Fall, können Sie über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eine Support-Anfrage erstellen, um uns darüber zu informieren. So können wir die notwendigen Schritte durchführen, damit die erwünschten E-Mails nicht länger als Spam eingeordnet werden.
 

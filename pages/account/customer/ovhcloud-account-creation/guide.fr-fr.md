@@ -1,9 +1,6 @@
 ---
 title: 'Créer un compte OVHcloud'
-slug: creer-compte-ovhcloud
 excerpt: 'Découvrez comment créer votre compte OVHcloud'
-Section: 'Premiers pas'
-order: 1
 updated: 2021-07-01
 ---
 
@@ -32,7 +29,7 @@ Pour créer un compte OVHcloud, il suffit de vous rendre sur [cette page](https:
 |---|---|
 |Prénom - Nom|Renseignez **impérativement** ici un prénom et un nom usuels.|
 |Adresse e-mail|Renseignez une adresse e-mail **valide et à laquelle vous avez actuellement accès**.<br><br>Évitez d'utiliser une adresse e-mail liée à un nom de domaine que vous gérez depuis votre espace client. En cas de coupure sur ce domaine, vous ne recevriez plus nos notifications.|
-|Mot de passe|Votre mot de passe doit être unique (créé et utilisé uniquement pour votre compte OVHcloud) et suffisamment complexe.<br><br>Consultez les conseils de [notre guide sur la gestion du mot de passe](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#en-pratique) pour créer un mot de passe efficace.|
+|Mot de passe|Votre mot de passe doit être unique (créé et utilisé uniquement pour votre compte OVHcloud) et suffisamment complexe.<br><br>Consultez les conseils de [notre guide sur la gestion du mot de passe](/pages/account/customer/manage-ovh-password#en-pratique) pour créer un mot de passe efficace.|
 
 Une fois ce premier formulaire complété, un code à usage unique vous sera envoyé à l'adresse e-mail que vous avez renseignée. Ce code permettra de valider votre adresse e-mail. Renseignez-le dans les cases prévues à cet effet.
 
@@ -75,14 +72,14 @@ Votre identifiant client est affiché en haut à droite sous votre nom et votre 
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Maintenant que votre compte OVHcloud est créé, nous vous recommandons de suivre nos [recommandations sur la sécurité de votre compte et la gestion de vos données personnelles](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/).
+Maintenant que votre compte OVHcloud est créé, nous vous recommandons de suivre nos [recommandations sur la sécurité de votre compte et la gestion de vos données personnelles](/pages/account/customer/all_about_username).
 
 Consultez aussi nos guides pour :
 
-[Se connecter à l'espace client OVHcloud](https://docs.ovh.com/fr/customer/se-connecter-espace-client-ovhcloud)
+[Se connecter à l'espace client OVHcloud](/pages/account/customer/ovhcloud-account-login)
 
-[Modifier le mot de passe de votre compte OVHcloud](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/)
+[Modifier le mot de passe de votre compte OVHcloud](/pages/account/customer/manage-ovh-password)
 
-[Sécuriser votre compte OVHcloud avec la double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/)
+[Sécuriser votre compte OVHcloud avec la double authentification](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

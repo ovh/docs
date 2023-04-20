@@ -1,9 +1,6 @@
 ---
 title: "Tutoriel - Ajouter du contenu dynamique dans une page web statique générée avec Cecil"
-slug: static-site-generator-cecil-use-api
 excerpt: "Découvrez comment ajouter un appel vers une API externe depuis votre page page web statique"
-section: 'Tutoriels'
-order: 031
 updated: 2023-01-16
 ---
 
@@ -26,7 +23,7 @@ Ce tutoriel vous décrit comment utiliser le générateur de site [Cecil](https:
 
 - Disposer d'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) incluant un accès SSH. Cet accès permet d'installer, en ligne de commande, une ou plusieurs solutions alternatives à celles proposées par défaut dans nos offres d'hébergement web.
 - Être familiarisé à la saisie en ligne de commande.
-- Avoir installé et configuré l'application **Cecil** sur votre hébergement (reportez-vous à notre tutoriel sur [l'installation et la configuration de Cecil](https://docs.ovh.com/fr/hosting/install-configure-cecil/)).
+- Avoir installé et configuré l'application **Cecil** sur votre hébergement (reportez-vous à notre tutoriel sur [l'installation et la configuration de Cecil](/pages/web/hosting/static_website_installation_cecil)).
 
 ## En pratique
 
@@ -42,7 +39,7 @@ Les étapes sont les suivantes&nbsp;:
 
 ### Créer une nouvelle page
 
-Préparez votre environnement en vous connectant en SSH sur votre hébergement web et reportez-vous au tutoriel « [Installer et configurer Cecil](https://docs.ovh.com/fr/hosting/install-configure-cecil/) » pour installer votre application **Cecil** dans un répertoire dédié.
+Préparez votre environnement en vous connectant en SSH sur votre hébergement web et reportez-vous au tutoriel « [Installer et configurer Cecil](/pages/web/hosting/static_website_installation_cecil) » pour installer votre application **Cecil** dans un répertoire dédié.
 
 Créez un répertoire et placez-vous dedans&nbsp;:
 

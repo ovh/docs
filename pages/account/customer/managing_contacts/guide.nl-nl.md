@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Contactbeheer voor uw diensten
-slug: beheer-contacten
 excerpt: Ontdek hoe u contacten voor uw OVH-diensten kunt beheren
-section: Aan de slag
 updated: 2021-12-13
 ---
 

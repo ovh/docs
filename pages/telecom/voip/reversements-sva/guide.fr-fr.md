@@ -1,9 +1,6 @@
 ---
 title: "Gérer les reversements ou les coûts de vos numéros spéciaux"
-slug: reversements-couts-sva
 excerpt: "Découvrez comment gérer les reversements et les coûts de vos numéros spéciaux SVA depuis l'espace client OVHcloud"
-section: Administratif
-order: 05
 updated: 2022-02-21
 ---
 
@@ -25,7 +22,7 @@ L'espace client OVHcloud vous permet de consulter et modifier votre palier tarif
 ## En pratique
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et assurez-vous de vous situer dans la partie « Télécom ». Cliquez sur `Téléphonie`{.action}, puis sélectionnez votre groupe de téléphonie.<br>
-Pour plus d'informations sur les groupes de téléphonie, consultez notre guide « [Gérer vos groupes de téléphonie](https://docs.ovh.com/fr/voip/gestion-des-groupes-de-telephonie/)».
+Pour plus d'informations sur les groupes de téléphonie, consultez notre guide « [Gérer vos groupes de téléphonie](/pages/telecom/voip/regrouper_services_telephonie)».
 
 ### Consulter et/ou modifier le palier tarifaire de votre numéro spécial
 

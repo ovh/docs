@@ -1,10 +1,6 @@
 ---
 title: 'Configuring an Email Pro address on Thunderbird for macOS'
-slug: configure-emailpro-for-thunderbird-mac
-
 excerpt: 'Find out how to configure your Email Pro address in Thunderbird for macOS'
-section: 'Email client configuration'
-order: 6
 updated: 2021-08-26
 ---
 
@@ -63,11 +59,11 @@ For **POP** configuration, the values are:
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.co.uk/mail/>. You can log in using your email credentials. If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](../../microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/).
+OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.co.uk/mail/>. You can log in using your email credentials. If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](/pages/web/microsoft-collaborative-solutions/owa_user_guide).
 
 ### Retrieving a backup of your email address
 
-If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the “**Exporting**” part of the “**Thunderbird**” section in our guide on [Manually migrating an email address](https://docs.ovh.com/gb/en/emails/migrate-email-addresses-manually/#exporting_1).
+If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the “**Exporting**” part of the “**Thunderbird**” section in our guide on [Manually migrating an email address](/pages/web/emails/manual_email_migration#exporting_1).
 
 ### Modifying existing settings
 

@@ -1,8 +1,6 @@
 ---
 title: Hot Swap - Raid Hard
-slug: hotswap-raid-hard
 excerpt: Here are the main steps to follow to allow the replacement of a hot swap on a Raid Hardware server.
-section: RAID and disks
 updated: 2022-11-16
 ---
 

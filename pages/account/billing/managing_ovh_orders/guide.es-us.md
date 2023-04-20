@@ -1,8 +1,6 @@
 ---
 title: Gestionar los pedidos en OVHcloud
-slug: gestionar-los-pedidos-en-ovh
 excerpt: Cómo gestionar los pedidos en OVHcloud
-section: Pedidos, facturas y servicios
 updated: 2022-05-06
 ---
 
@@ -40,7 +38,7 @@ La orden de pedido se genera al realizar el pedido. En él se enumeran los produ
 |---|---|
 |1|Número, fecha de creación y fecha de expiración de la orden de pedido. Si ha expirado, deberá volver a realizar el pedido.|
 |2|Sus datos de facturación. Es necesario identificarse para mostrar y abonar la orden de pedido.|
-|3|Formas de pago registradas en su cuenta de cliente. Para más información, consulte la guía [Gestionar mis formas de pago](https://docs.ovh.com/us/es/billing/gestionar-formas-de-pago/).|
+|3|Formas de pago registradas en su cuenta de cliente. Para más información, consulte la guía [Gestionar mis formas de pago](/pages/account/billing/manage-payment-methods).|
 |4|Formas de pago disponibles. Solo se mostrarán las formas de pago autorizadas en el país de origen de la cuenta o las asociadas al tipo de cuenta registrada.|
 
 En cualquier momento puede consultar la orden de pedido desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), tal y como se explica a continuación.

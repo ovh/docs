@@ -1,9 +1,6 @@
 ---
 title: CMS - ręczna instalacja modułu Joomla
 excerpt: Jak ręcznie zainstalować moduł Joomla?
-slug: cms_-_reczna_instalacja_modulu_joomla
-section: CMS
-order: 05
 updated: 2022-12-01
 ---
 
@@ -235,7 +232,7 @@ Chodzi o błąd dotyczący wersji PHP serwera.
 
 Przyczyna jest prosta: najnowsza wersja PHP nie została włączona.
 
-Udostępniamy przewodnik na temat zmiany wersji PHP na hostingu www:[Zmiana wersji PHP na hostingu]({legacy}1207)
+Udostępniamy przewodnik na temat zmiany wersji PHP na hostingu www:[Zmiana wersji PHP na hostingu](/pages/web/hosting/cms_manual_installation_joomla%7Blegacy%7D1207)
 
 ![joomla](images/3156.png){.thumbnail}
 
@@ -247,7 +244,7 @@ Zmienna Magic Quotes musi być ustawiona na Off i na 0 w Twoim pliku konfiguracy
 W nowej ofercie 2014, jeśli PHP-FPM jest włączone, zmienna Magic Quotes jest domyślnie wyłączona. W starszych ofertach hostingu www, możesz wyłączyć tę zmienną w pliku .htaccess.
 
 Udostępniamy przewodnik dotyczący zmiany zmiennych PHP na hostingu www 2014:
-[Zmiana wersji PHP na hostingu www]({legacy}1207)
+[Zmiana wersji PHP na hostingu www](/pages/web/hosting/cms_manual_installation_joomla%7Blegacy%7D1207)
 
 Udostępniamy również przewodnik dotyczący zmiany zmiennych PHP na starszym hostingu www:[Zmiana zmiennych PHP na starych hostingach OVHcloud](http://pomoc.ovh.pl/KonfiguracjaPhp)
 

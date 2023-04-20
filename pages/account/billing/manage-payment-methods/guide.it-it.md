@@ -1,8 +1,6 @@
 ---
 title: Gestire i metodi di pagamento
-slug: manage-payment-methods
 excerpt: Come gestire i tuoi metodi di pagamento nello Spazio Cliente OVHcloud
-section: Fatturazione
 updated: 2023-03-28
 ---
 
@@ -104,7 +102,7 @@ Se non vuoi più utilizzare uno dei tuoi metodi di pagamento, puoi eliminarlo cl
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
-Per eliminare tutti i metodi di pagamento, tutti i servizi devono essere in [rinnovo manuale](https://docs.ovh.com/it/billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/#il-rinnovo-manuale).
+Per eliminare tutti i metodi di pagamento, tutti i servizi devono essere in [rinnovo manuale](/pages/account/billing/how_to_use_automatic_renewal#il-rinnovo-manuale).
 
 #### Eliminare un metodo di pagamento tramite le API OVHcloud
 
@@ -126,7 +124,7 @@ Elimina il metodo di pagamento utilizzando l'ID precedentemente ottenuto:
 
 > [!primary]
 >
-> Per maggiori informazioni, consulta la guida [Iniziare a utilizzare le API OVHcloud](https://docs.ovh.com/it/api/first-steps-with-ovh-api/).
+> Per maggiori informazioni, consulta la guida [Iniziare a utilizzare le API OVHcloud](/pages/account/api/first-steps).
 >
 > In caso di difficoltà nell'identificazione dei metodi di pagamento tramite le API OVHcloud, utilizza la funzione `Modifica la descrizione`{.action} (pulsante `...`{.action} a destra dello schermo) nella sezione [Modalità di pagamento](#payment_methods) dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 >
@@ -137,7 +135,7 @@ Elimina il metodo di pagamento utilizzando l'ID precedentemente ottenuto:
 
 Il *conto prepagato* è presente nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) al momento della creazione. che permette di accreditare in anticipo il tuo account cliente e utilizzare questi fondi per il pagamento degli ordini e delle fatture di rinnovo.
 
-Ricaricando regolarmente il tuo account, assicurati che il [rinnovo automatico](https://docs.ovh.com/it/billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/#il-rinnovo-automatico) dei tuoi servizi non venga mai interrotto per mancato pagamento.
+Ricaricando regolarmente il tuo account, assicurati che il [rinnovo automatico](/pages/account/billing/how_to_use_automatic_renewal#il-rinnovo-automatico) dei tuoi servizi non venga mai interrotto per mancato pagamento.
 
 Per effettuare questa operazione, accedi alla sezione `Modalità di pagamento` dello Spazio Cliente:
 

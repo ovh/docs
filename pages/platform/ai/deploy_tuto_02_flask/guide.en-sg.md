@@ -1,9 +1,6 @@
 ---
 title: AI Deploy - Tutorial - Deploy a simple app with Flask
-slug: deploy/tuto-build-use-flask-image
 excerpt: How to build and use a custom Docker image containing a Flask application
-section: AI Deploy - Tutorials
-order: 02
 updated: 2023-04-04
 ---
 
@@ -24,7 +21,7 @@ The purpose of this tutorial is to show you how to build and use a custom Docker
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg);
 - An **AI Deploy project** created inside a [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account;
-- A [user for AI Deploy](https://docs.ovh.com/sg/en/publiccloud/ai/users/);
+- A [user for AI Deploy](/pages/platform/ai/gi_01_manage_users);
 - [Docker](https://www.docker.com/get-started) installed on your local computer;
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/).
 
@@ -150,7 +147,7 @@ Once started, your application should be available on `http://localhost:5000 `.
 
 > [!warning]
 >
-> The shared registry of AI Deploy should only be used for testing purposes. Please consider attaching your own docker registry. More information about this can be found [here](https://docs.ovh.com/sg/en/publiccloud/ai/training/add-private-registry/).
+> The shared registry of AI Deploy should only be used for testing purposes. Please consider attaching your own docker registry. More information about this can be found [here](/pages/platform/ai/training_guide_05_howto_add_registry).
 >
 
 Find the address of your shared registry by launching this command:
@@ -195,8 +192,8 @@ Once the app is running you can access your Flask application directly from the 
 
 ## Go further
 
-- To go further with **Flask**, imagine creating an app to deploy an Object Detection model. Refer to this [tutorial](https://docs.ovh.com/sg/en/publiccloud/ai/deploy/web-service-yolov5/).
-- **Flask** allows you to do sentiment classification on texts using Hugging Face models. [Here it is](https://docs.ovh.com/sg/en/publiccloud/ai/deploy/tuto-flask-hugging-face-sentiment-analysis/).
+- To go further with **Flask**, imagine creating an app to deploy an Object Detection model. Refer to this [tutorial](/pages/platform/ai/deploy_tuto_04_flask_yolov5).
+- **Flask** allows you to do sentiment classification on texts using Hugging Face models. [Here it is](/pages/platform/ai/deploy_tuto_06_flask_hugging_face).
 
 ## Feedback
 

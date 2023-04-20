@@ -1,9 +1,6 @@
 ---
 title: "Konfiguracja rewersu DNS instancji Public Cloud"
 excerpt: Dowiedz się, jak wdrożyć rewers DNS
-slug: konfiguracja_rewersu_dns_instancji
-section: Zarządzanie w Panelu klienta OVH
-order: 7
 updated: 2021-11-12
 ---
 
@@ -45,11 +42,11 @@ Rewers możesz również edytować bezpośrednio na ikonie kolumny **Reverse** t
 
 > [!primary]
 >
-Jeśli modyfikacja nie działa zgodnie z oczekiwaniami, sprawdź, czy pole `A` jest poprawnie skonfigurowane w strefie DNS Twojej domeny. Uwaga, modyfikacja [strefy DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/) może trwać do 24 godzin, jeśli ostatnio zmieniłeś pole `A`.
+Jeśli modyfikacja nie działa zgodnie z oczekiwaniami, sprawdź, czy pole `A` jest poprawnie skonfigurowane w strefie DNS Twojej domeny. Uwaga, modyfikacja [strefy DNS](/pages/web/domains/dns_zone_edit) może trwać do 24 godzin, jeśli ostatnio zmieniłeś pole `A`.
 >
 
 ## Sprawdź również <a name="gofurther"></a>
 
-[Utwórz pierwszą instancję Public Cloud i połącz się z nią](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/)
+[Utwórz pierwszą instancję Public Cloud i połącz się z nią](/pages/platform/public-cloud/public-cloud-first-steps)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

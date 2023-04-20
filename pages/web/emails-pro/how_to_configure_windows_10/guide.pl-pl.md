@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguracja konta E-mail Pro w aplikacji Poczta na urządzeniu z systemem Windows 10'
-slug: konfiguracja-poczta-windows-10
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w aplikacji Poczta na urządzeniu z systemem Windows 10'
-section: 'Konfiguracja programu pocztowego'
-order: 7
 updated: 2020-03-18
 ---
 
@@ -90,8 +87,8 @@ OVHcloud oferuje również aplikację internetową [funkcje do pracy zespołowej
 
 ## Sprawdź również
 
-[Konfiguracja konta e-mail, zawartego w usłudze MX Plan lub usłudze hostingu, w aplikacji Courrier na urządzeniu z systemem Windows 10](https://docs.ovh.com/pl/emails/konfiguracja-poczta-windows-10/){.external}
+[Konfiguracja konta e-mail, zawartego w usłudze MX Plan lub usłudze hostingu, w aplikacji Courrier na urządzeniu z systemem Windows 10](/pages/web/emails/how_to_configure_windows_10){.external}
 
-[Konfiguracja konta Exchange w aplikacji Poczta na urządzeniu z systemem Windows 10](https://docs.ovh.com/pl/microsoft-collaborative-solutions/konfiguracja-poczta-windows-10/){.external}
+[Konfiguracja konta Exchange w aplikacji Poczta na urządzeniu z systemem Windows 10](/pages/web/microsoft-collaborative-solutions/how_to_configure_windows_10){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

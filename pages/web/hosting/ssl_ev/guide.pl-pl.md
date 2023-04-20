@@ -1,9 +1,6 @@
 ---
 title: "Użyj certyfikatu SSL EV dla swojej strony www"
-slug: ssl-ev
 excerpt: "Dowiedz się, jak zamówić i zainstalować certyfikat SSL EV na Twoim hostingu WWW OVHcloud"
-section: SSL
-order: 03
 updated: 2022-12-13
 ---
 
@@ -17,7 +14,7 @@ updated: 2022-12-13
 
 Certyfikaty Secure Socket Layer (SSL) umożliwiają szyfrowanie informacji przesyłanych na Twojej stronie WWW. Dzięki temu możesz uniknąć sytuacji, w której osoba lub złośliwy robot "odsłuchuje" zapytań wysyłanych lub wysyłanych z Twojej strony WWW.
 
-OVHcloud oferuje kilka typów certyfikatów SSL dla naszych ofert [hosting OVHcloud](https://www.ovhcloud.com/pl/web-hosting/). Są one przedstawione w naszym przewodniku "[Zarządzanie certyfikatem SSL na hostingu](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/)". Certyfikaty SSL są niezbędne dla bezpieczeństwa Twojej strony WWW.
+OVHcloud oferuje kilka typów certyfikatów SSL dla naszych ofert [hosting OVHcloud](https://www.ovhcloud.com/pl/web-hosting/). Są one przedstawione w naszym przewodniku "[Zarządzanie certyfikatem SSL na hostingu](/pages/web/hosting/ssl_on_webhosting)". Certyfikaty SSL są niezbędne dla bezpieczeństwa Twojej strony WWW.
 
 Istnieją trzy rodzaje certyfikatów SSL:
 
@@ -66,7 +63,7 @@ Aby sprawdzić, czy możesz zamówić certyfikat SSL EV, przejdź do [link](http
 
 #### 1.1 - Dla już istniejącej domeny i hostingu OVHcloud
 
-Zapoznaj się z naszym przewodnikiem dotyczącym [zarządzania certyfikatem SSL na hostingu](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/) i wybierz **Certyfikat SSL EV** po przyjeździe do tunelu zamówienia.
+Zapoznaj się z naszym przewodnikiem dotyczącym [zarządzania certyfikatem SSL na hostingu](/pages/web/hosting/ssl_on_webhosting) i wybierz **Certyfikat SSL EV** po przyjeździe do tunelu zamówienia.
 
 Wpisz poprawnie informacje wymagane przez **Sectigo**, zanim otrzymasz certyfikat SSL EV. 
 
@@ -162,7 +159,7 @@ Po dokonaniu weryfikacji przez Sectigo skontaktujemy się z Tobą przez ich usł
 
 Po przeprowadzeniu wszystkich weryfikacji przez Sectigo ich usługi generują certyfikat SSL EV i przekazują nam niezbędne informacje do zainstalowania go na Twoim hostingu.
 
-Aby w pełni korzystać z certyfikatu SSL EV, wystarczy kliknąć na [załadować stronę WWW na HTTPS](https://docs.ovh.com/pl/hosting/aktywacja-https-ssl-na-stronie-WWW/).
+Aby w pełni korzystać z certyfikatu SSL EV, wystarczy kliknąć na [załadować stronę WWW na HTTPS](/pages/web/hosting/ssl-activate-https-website).
 
 ## Sprawdź również <a name="go-further"></a>
 
@@ -170,9 +167,9 @@ Aby w pełni korzystać z certyfikatu SSL EV, wystarczy kliknąć na [załadowa�
 
 [Opis weryfikacji przeprowadzonych przez Setigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}
 
-[Zarządzanie certyfikatem SSL na hostingu](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/)
+[Zarządzanie certyfikatem SSL na hostingu](/pages/web/hosting/ssl_on_webhosting)
 
-[Przejdź na stronę przez HTTPS](https://docs.ovh.com/pl/hosting/aktywacja-https-ssl-na-stronie-WWW/)
+[Przejdź na stronę przez HTTPS](/pages/web/hosting/ssl-activate-https-website)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
 

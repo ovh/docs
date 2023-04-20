@@ -1,8 +1,5 @@
 ---
 title: Pre-Launch Checklist
-slug: domains-checklist
-section: Domains
-order: 7
 updated: 2021-05-11
 ---
 
@@ -24,7 +21,7 @@ You have a domain name registered for your site with a Registrar of your choice.
 
 ## 2. Test your site!
 
-Make sure your site is running and configured as you want it to be, on your master branch.  In particular, see the [Routes documentation](../configuration-routes). You will need your routes configured appropriately before you begin.  Make sure you have turned off [basic-authentication](../administration-web/configure-environment) if it was turned on during development.
+Make sure your site is running and configured as you want it to be, on your master branch.  In particular, see the [Routes documentation](../configuration-routes). You will need your routes configured appropriately before you begin.  Make sure you have turned off [basic-authentication](/pages/web/web-paas/administration-web/configure-environment) if it was turned on during development.
 
 If your production environment is on a Dedicated instance, ensure that the code is up to date in both your `staging` and `production` branches, as those are what will be mirrored to the Dedicated instances.  Also ensure that the data on the production instance is up to date and ready to launch.
 
@@ -55,4 +52,4 @@ Consult your CDN's documentation for how to set the CDN's upstream address.
 * Your custom TLS certificate is purchased, if you're using one?
 * Your CDN is configured to serve from Web PaaS, if you're using one?
 
-**Time to [Go Live](../domains-quick-start).**
+**Time to [Go Live](/pages/web/web-paas/domains-quick-start).**

@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguracja konta e-mail Pro na urządzeniu iPhone lub iPad'
-slug: konfiguracja-iphone
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro na urządzeniu iPhone lub iPad przy użyciu aplikacji Mail'
-section: 'Konfiguracja programu pocztowego'
-order: 3
 updated: 2021-05-21
 ---
 
@@ -77,15 +74,15 @@ OVHcloud oferuje również aplikację internetową posiadającą [funkcje do pra
 
 > [!primary]
 >
-> W przypadku problemów z odbieraniem lub wysyłką e-maili, sprawdź nasz [FAQ dotyczący usług e-mail OVHcloud](https://docs.ovh.com/pl/emails/faq-konta-email/).
+> W przypadku problemów z odbieraniem lub wysyłką e-maili, sprawdź nasz [FAQ dotyczący usług e-mail OVHcloud](/pages/web/emails/faq-emails).
 >
 
 ## Sprawdź również
 
-[Konfiguracja konta e-mail włączonego do usługi MX Plan lub do usługi hostingu na urządzeniu iPhone lub iPad](https://docs.ovh.com/pl/emails/hosting_www_konfiguracja_na_iphone_ios_91/)
+[Konfiguracja konta e-mail włączonego do usługi MX Plan lub do usługi hostingu na urządzeniu iPhone lub iPad](/pages/web/emails/how_to_configure_ios)
 
-[Konfiguracja konta Exchange na urządzeniu iPhone lub iPad](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_20132016_automatyczna_konfiguracja_z_poziomu_ios_iphone_-_ipad/)
+[Konfiguracja konta Exchange na urządzeniu iPhone lub iPad](/pages/web/microsoft-collaborative-solutions/how_to_configure_ios)
 
-[Najczęściej zadawane pytania dotyczące kont e-mail](https://docs.ovh.com/pl/emails/faq-konta-email/)
+[Najczęściej zadawane pytania dotyczące kont e-mail](/pages/web/emails/faq-emails)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

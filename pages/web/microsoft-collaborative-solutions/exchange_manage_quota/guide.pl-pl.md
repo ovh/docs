@@ -1,11 +1,8 @@
 ---
 title: "Zarządzanie przestrzenią dyskową konta e-mail"
-slug: manage-email-quota
 excerpt: "Dowiedz się, jak zarządzać przestrzenią dyskową konta e-mail i jej optymalizować"
-section: 'Diagnostyka'
-order: 02
 routes:
-  canonical: "https://docs.ovh.com/pl/emails/manage-email-quota/"
+  canonical: "/products/email-manage-email-quota"
 updated: 2022-11-17
 ---
 
@@ -32,8 +29,8 @@ Każde konto e-mail OVHcloud dysponuje dedykowaną przestrzenią dyskową. Zarz�
 > **Szczególne przypadki**
 >
 > - Jeśli chodzi o bezpłatny hosting Start 10M, konieczne jest wcześniejsze aktywowanie go przed utworzeniem konta e-mail. Operację tę możesz przeprowadzić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przechodząc do odpowiedniej domeny.
-> - Zanim przejdziesz do niniejszego przewodnika, należy aktywować Twój pakiet MX Plan zawarty w [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/). W tym celu zapoznaj się z naszym przewodnikiem "[Aktywuj konta e-mail zawarte w Twoim hostingu](https://docs.ovh.com/pl/hosting/aktywacja-kont-email-zawartych-w-hostingu/)".
+> - Zanim przejdziesz do niniejszego przewodnika, należy aktywować Twój pakiet MX Plan zawarty w [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/). W tym celu zapoznaj się z naszym przewodnikiem "[Aktywuj konta e-mail zawarte w Twoim hostingu](/pages/web/hosting/activate-email-hosting)".
 
 ## W praktyce <a name="instructions"></a>
 
-Postępuj zgodnie z naszym przewodnikiem [Zarządzanie przestrzenią dyskową konta e-mail](https://docs.ovh.com/pl/emails/manage-email-quota/) w sekcji "Konta e-mail na hostingu - MX Plan".
+Postępuj zgodnie z naszym przewodnikiem [Zarządzanie przestrzenią dyskową konta e-mail](/products/email-manage-email-quota) w sekcji "Konta e-mail na hostingu - MX Plan".

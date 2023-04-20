@@ -1,8 +1,5 @@
 ---
 title: Object Storage - Endpoints and Object Storage geoavailability
-slug: s3/location
-section: General information
-order: 025
 updated: 2023-01-26
 ---
 

@@ -1,12 +1,9 @@
 ---
 title: Adding an IP block
-slug: add-ip-block
 routes:
-    canonical: 'https://docs.ovh.com/asia/en/private-cloud/add-ip-block/'
+    canonical: '/pages/cloud/private-cloud/ajout_de_bloc_ip'
 excerpt: Find out how to order an IP block on your Managed Bare Metal
 legacy_guide_number: '7766457'
-section: OVHcloud Features
-order: 01
 updated: 2020-11-18
 ---
 
@@ -46,7 +43,7 @@ Several fields will be required to create your IP block:
 
 > [!primary]
 >
-> Please consult our guide ["Using the OVHcloud Network plugin"](../plugin-ovhcloud-network/) to find out which IP addresses are reserved in a block as well as their use.
+> Please consult our guide ["Using the OVHcloud Network plugin"](/pages/cloud/managed-bare-metal/plugin_ovh_network) to find out which IP addresses are reserved in a block as well as their use.
 >
 
 

@@ -1,9 +1,6 @@
 ---
 title: Enterprise File Storage - Zarządzanie wolumenami
-slug: netapp/volumes
 excerpt: Dowiedz się, jak tworzyć wolumeny OVHcloud Enterprise File Storage i zarządzać nimi za pomocą API OVHcloud
-section: Enterprise File Storage
-order: 040
 updated: 2021-10-27
 ---
 
@@ -155,7 +152,7 @@ Polecenie montowania będzie inne, w zależności od protokołu wybranego dla wo
 
 > [!primary]
 >
-> Instrukcje montażu NFS znajdziesz w przewodniku [Montowanie usługi NAS przy użyciu protokołu NFS](https://docs.ovh.com/pl/storage/file-storage/nas/nfs/).
+> Instrukcje montażu NFS znajdziesz w przewodniku [Montowanie usługi NAS przy użyciu protokołu NFS](/pages/cloud/storage/file_storage/nas_nfs).
 > Pamiętaj, że odzyskana ścieżka montowania zastępuje IP_NAS/NFS_PATH w tym przewodniku.
 >  
 
@@ -188,6 +185,6 @@ Zamień `serviceName` na ID usługi i `shareId` na ID wolumenu do usunięcia.
 
 ## Sprawdź również
 
-[Pierwsze kroki z API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/)
+[Pierwsze kroki z API OVHcloud](/pages/account/api/first-steps)
 
 Dołącz do społeczności naszych użytkowników na <https://community.ovh.com/en/>.

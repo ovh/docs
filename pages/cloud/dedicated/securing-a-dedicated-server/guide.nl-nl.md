@@ -1,10 +1,7 @@
 ---
 deprecated: true
 title: 'Beveiligen van een dedicated server'
-slug: beveiligen-dedicated-server
 excerpt: 'Tips over het beveiligen van uw dedicated server'
-section: 'Eerste stappen'
-order: 2
 updated: 2018-06-20
 ---
 
@@ -201,7 +198,7 @@ Het wordt aanbevolen om de regels van deze firewall te creëren en aan te passen
 
 OVH servers zijn uitgerust met Network Firewall, een speciale firewall direct bij de ingang van de infrastructuur. Dankzij de implementatie en configuratie kunnen protocollen al worden voorkomen nog voordat ze bij uw server aankomen.
 
-We hebben ook een [handleiding](https://docs.ovh.com/nl/dedicated/firewall-network//){.external} voor het configureren van de Network Firewall.
+We hebben ook een [handleiding](/pages/cloud/dedicated/firewall_network/){.external} voor het configureren van de Network Firewall.
 
 
 ### Maak een backup van uw systeem en data

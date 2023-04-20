@@ -1,8 +1,6 @@
 ---
 title: "Configuration d'un service OVHcloud Load Balancer avec le proxyProtocol"
-slug: proxyprotocol
 excerpt: Intégrez vos services TCP derrière un Load Balancer avec le proxyProtocol
-section: Configuration
 updated: 2022-03-25
 ---
 
@@ -14,7 +12,7 @@ Le service OVHcloud Load Balancer agit comme un mandataire ou « Proxy ». Comme
 
 Pour le visiteur, cela ne pose aucun souci. Il n'a pas besoin de connaître avec précision le serveur qui répond à sa requête. C'est un détail d'implémentation. En revanche, pour des raisons de statistiques et de sécurité, il est parfois indispensable que le serveur final ait connaissance de la véritable adresse du client. Or, par défaut, il ne voit que le mandataire (en l’occurrence, votre service OVHcloud Load Balancer).
 
-Si vous utilisez un frontend HTTP, nous vous recommandons le guide « [Configuration d'un service OVHcloud Load Balancer - Les en-têtes HTTP](../http-headers/) » qui décrit la manière standard d'utiliser les en-têtes HTTP pour retrouver l'adresse IP, le port ainsi que le protocole source.
+Si vous utilisez un frontend HTTP, nous vous recommandons le guide « [Configuration d'un service OVHcloud Load Balancer - Les en-têtes HTTP](/pages/cloud/load_balancer/create_headers) » qui décrit la manière standard d'utiliser les en-têtes HTTP pour retrouver l'adresse IP, le port ainsi que le protocole source.
 
 **Si vous utilisez un frontend TCP, alors ce guide vous est destiné.**
 
@@ -31,7 +29,7 @@ Vous pouvez être tenus de conserver des logs et certaines données relatives au
 
 ## Prérequis
 
-Ce guide est un guide avancé. Il fait l'hypothèse que vous vous êtes déjà familiarisé avec les fonctionnalités principales de votre service OVHcloud Load Balancer, en particulier les **frontend** et les **fermes**. Si ce n'est pas encore le cas, nous vous recommandons de consulter le guide « [Configurer un service OVHcloud Load Balancer HTTP/HTTPS](../configure-iplb/) ». Ce guide est plus particulièrement orienté sur les services TCP mais les principes généraux sont les mêmes.
+Ce guide est un guide avancé. Il fait l'hypothèse que vous vous êtes déjà familiarisé avec les fonctionnalités principales de votre service OVHcloud Load Balancer, en particulier les **frontend** et les **fermes**. Si ce n'est pas encore le cas, nous vous recommandons de consulter le guide « [Configurer un service OVHcloud Load Balancer HTTP/HTTPS](/pages/cloud/load_balancer/create_http_https) ». Ce guide est plus particulièrement orienté sur les services TCP mais les principes généraux sont les mêmes.
 
 Vous devez disposer de :
 

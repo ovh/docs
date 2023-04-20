@@ -1,9 +1,6 @@
 ---
 title: Se connecter à l’interface vSphere
-slug: connexion-interface-vsphere
 excerpt: Découvrez les différentes façons de se connecter à vSphere
-section: Premiers pas
-order: 2
 updated: 2022-06-24
 ---
 
@@ -16,7 +13,7 @@ updated: 2022-06-24
 ## Prérequis
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
-- Avoir ajouté des adresses IP dans la partie `Sécurité`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)). Pour plus d'informations, consultez notre guide « [Autoriser des IP à se connecter au vCenter](https://docs.ovh.com/fr/private-cloud/autoriser-des-ip-a-se-connecter-au-vcenter/) ».
+- Avoir ajouté des adresses IP dans la partie `Sécurité`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)). Pour plus d'informations, consultez notre guide « [Autoriser des IP à se connecter au vCenter](/pages/cloud/private-cloud/autoriser_des_ip_a_se_connecter_au_vcenter) ».
 
 ## En pratique
 

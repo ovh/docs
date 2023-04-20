@@ -1,9 +1,6 @@
 ---
 title: 'Accedere in SSH a un hosting Web'
 excerpt: 'Come utilizzare il protocollo SSH per accedere al tuo hosting Web OVHcloud'
-slug: hosting_condiviso_il_protocollo_ssh
-section: FTP e SSH
-order: 07
 updated: 2022-01-19
 ---
 
@@ -107,8 +104,8 @@ A seconda della versione di PHP che vuoi utilizzare, potrebbe essere necessario 
 
 ## Per saperne di più
 
-[Modificare la configurazione di un hosting Web](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web/)
+[Modificare la configurazione di un hosting Web](/pages/web/hosting/ovhconfig_modify_system_runtime)
 
-[Configurare il file .ovhconfig di un hosting Web](https://docs.ovh.com/it/hosting/configurare-file-ovhconfig/)
+[Configurare il file .ovhconfig di un hosting Web](/pages/web/hosting/ovhconfig_configuration)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

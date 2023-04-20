@@ -1,8 +1,6 @@
 ---
 title: 'Obtener el número de serie de un disco duro'
-slug: obtener-numero-de-serie-disco
 excerpt: 'Cómo conocer el número de serie de un disco duro para sustituirlo'
-section: 'RAID y discos'
 updated: 2018-08-21
 ---
 
@@ -24,7 +22,7 @@ Para minimizar el riesgo de error durante la sustitución de un disco duro, pedi
 
 > [!primary]
 >
-> Si se trata de un disco NVMe, será necesario poner el servidor en [modo de rescate](https://docs.ovh.com/es/dedicated/modo_de_rescate/){.external} y utilizar la herramienta **nvme-cli**, instalada por defecto.
+> Si se trata de un disco NVMe, será necesario poner el servidor en [modo de rescate](/pages/cloud/dedicated/rescue_mode){.external} y utilizar la herramienta **nvme-cli**, instalada por defecto.
 > 
 
 ### Obtener el número de serie de un disco (RAID por software)
@@ -73,7 +71,7 @@ Si el periférico (/dev/sda, /dev/sdb...) es detectado por el sistema operativo,
 
 ### Obtener el número de serie de un disco (RAID por hardware)
 
-Para más información sobre estos comandos y sobre cómo probar los discos duros, consulte nuestra guía [RAID por hardware](https://docs.ovh.com/es/dedicated/raid-hardware/){.external}.
+Para más información sobre estos comandos y sobre cómo probar los discos duros, consulte nuestra guía [RAID por hardware](/pages/cloud/dedicated/raid_hard){.external}.
 
 
 #### Controladora MegaRAID
@@ -163,7 +161,7 @@ No olvide sustituir en el comando anterior **N** por el Device Id y **sdX** por 
 
 Las tarjetas controladoras RAID LSI utilizan un módulo llamado **sg-map**, que asocia los periféricos a rutas de tipo /dev/sgX (siendo «X» el número del periférico).
 
-Para determinar qué periférico sg corresponde a cada disco duro, consulte nuestra guía [RAID por hardware](https://docs.ovh.com/es/dedicated/raid-hardware/){.external}.
+Para determinar qué periférico sg corresponde a cada disco duro, consulte nuestra guía [RAID por hardware](/pages/cloud/dedicated/raid_hard){.external}.
 
 Una vez que sepa qué periférico sg corresponde al disco duro que quiera analizar, utilice el siguiente comando:
 

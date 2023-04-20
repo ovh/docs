@@ -1,11 +1,8 @@
 ---
 title: Grafana - Tutoriel - Exposez votre Grafana dans votre réseau privé via un reverse proxy NGINX (EN)
-slug: grafana/tutorial-reverse-proxy
 excerpt: "Expose your Grafana to internet through a NGINX reverse proxy"
-section: Grafana - Tutoriels
-order: 010
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/grafana/tutorial-reverse-proxy/'
+    canonical: '/pages/platform/databases/grafana_tuto_01_reverse_proxy'
 updated: 2023-02-06
 ---
 
@@ -33,7 +30,7 @@ Schema concept :
 
 - A [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- A Grafana database running on your OVHcloud Public Cloud project. ([This guide](https://docs.ovh.com/fr/publiccloud/databases/getting-started/) can help you to create a managed Grafana. If you need more details on the private network configuration use [this guide](https://docs.ovh.com/fr/publiccloud/databases/configure-vrack/))
+- A Grafana database running on your OVHcloud Public Cloud project. ([This guide](/pages/platform/databases/databases_01_order_control_panel) can help you to create a managed Grafana. If you need more details on the private network configuration use [this guide](/pages/platform/databases/databases_08_vrack))
 
 ## Instructions
 
@@ -41,7 +38,7 @@ Schema concept :
 
 > [!primary]
 >
-> [This guide](https://docs.ovh.com/fr/publiccloud/databases/getting-started/) can help you to create a new instance in your vRack.
+> [This guide](/pages/platform/databases/databases_01_order_control_panel) can help you to create a new instance in your vRack.
 
 For this tutorial, we will use an Ubuntu 22.10 image to install NGINX.
 

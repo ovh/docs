@@ -2,9 +2,6 @@
 deprecated: true
 title: Wijziging van een OVH DNS-zone
 excerpt: Leer hoe u een OVH DNS-zone vanaf uw Control Panel kunt bewerken
-slug: hosting_hoe_wijzig_ik_mijn_dns_zone
-section: DNS en DNS-zone
-order: 03
 updated: 2022-07-07
 ---
 
@@ -42,7 +39,7 @@ Door te begrijpen wat elk van deze records doet, krijgt u een beter inzicht in d
 |MX|Het MX-record wordt gebruikt om een domeinnaam naar een e-mailserver te verwijzen. Bijvoorbeeld het IP-adres van de server waarop uw website wordt gehost. Uw serviceprovider heeft mogelijk meerdere e-mailservers. Als dit het geval is, moet u meerdere MX-records maken.|
 |SRV|Het SRV-record wordt gebruikt om informatie te definiëren over het adres van een server die een service beheert. Dit record kan bijvoorbeeld het adres van een SIP-server of het adres van een server definiëren waarmee een e-mailclient automatisch kan worden geconfigureerd met behulp van autodiscover.|
 |TXT|Het TXT-record wordt gebruikt om een gekozen waarde (in tekstformaat) toe te voegen aan de DNS-instellingen van uw domeinnaam. Dit record wordt vaak gebruikt tijdens het verificatieproces.|
-|SPF|Het SPF-veld is bedoeld om potentiële identiteitsdiefstal te voorkomen met e-mailadressen die uw domeinnaam gebruiken. Dit record geeft bijvoorbeeld aan dat alleen de e-mailserver van uw e-mailprovider moet worden geïdentificeerd als een legitieme bron voor verzending. Voor meer informatie hierover, kunt u onze handleiding over [Toevoeging van een SPF-record aan de DNS-configuratie van uw domeinnaam](https://docs.ovh.com/nl/domains/het_spf_veld/){.external} raadplegen.|
+|SPF|Het SPF-veld is bedoeld om potentiële identiteitsdiefstal te voorkomen met e-mailadressen die uw domeinnaam gebruiken. Dit record geeft bijvoorbeeld aan dat alleen de e-mailserver van uw e-mailprovider moet worden geïdentificeerd als een legitieme bron voor verzending. Voor meer informatie hierover, kunt u onze handleiding over [Toevoeging van een SPF-record aan de DNS-configuratie van uw domeinnaam](/pages/web/domains/dns_zone_spf){.external} raadplegen.|
 |CAA|Het CAA-record wordt gebruikt om certificaatautoriteiten weer te geven die bevoegd zijn om SSL-certificaten voor een domeinnaam af te geven.|
 
 ### Stap 1: Krijg toegang tot het beheer van de DNS OVH-zone van uw domein
@@ -101,9 +98,9 @@ U kunt ook de TTL van een individueel DNS-record wijzigen. U kunt dit slechts vo
 
 ## Verder
 
-[Algemene informatie over DNS-servers](https://docs.ovh.com/nl/domains/gedeelde_hosting_algemene_informatie_over_dns_servers/){.external}.
+[Algemene informatie over DNS-servers](/pages/web/domains/dns_server_general_information){.external}.
 
-[Toevoegen van een SPF-veld aan de configuratie van uw domeinnaam](https://docs.ovh.com/nl/domains/het_spf_veld/){.external}.
+[Toevoegen van een SPF-veld aan de configuratie van uw domeinnaam](/pages/web/domains/dns_zone_spf){.external}.
 
 [Bescherm uw data tegen DNS Cache Poisoning met DNSSEC](https://www.ovhcloud.com/nl/domains/dnssec/){.external}.
 

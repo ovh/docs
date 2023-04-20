@@ -1,9 +1,6 @@
 ---
 title: MongoDB - Connect with MongoDB Compass
 excerpt: Connect to your Public Cloud Databases for MongoDB using MongoDB Compass
-slug: mongodb/connect-compass
-section: MongoDB - Guides
-order: 060
 updated: 2023-03-02
 ---
 
@@ -19,14 +16,14 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
-- A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/ca/en/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your MongoDB instance](https://docs.ovh.com/ca/en/publiccloud/databases/mongodb/managing-service/) to accept incoming connections
+- A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your MongoDB instance](/pages/platform/databases/mongodb_02_manage_control_panel) to accept incoming connections
 - A MongoDB Compass stable version installed and public network connectivity (Internet). This guide was made in MongoDB Compass version 1.30.1.
 
 ## Concept
 
 A MongoDB instance can be managed through multiple ways.
-One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide: [Connect to MongoDB with CLI](https://docs.ovh.com/ca/en/publiccloud/databases/mongodb/connect-cli/) or by using programming languages, such as [PHP](https://docs.ovh.com/ca/en/publiccloud/databases/mongodb/connect-php/) or [Python](https://docs.ovh.com/ca/en/publiccloud/databases/mongodb/connect-python/).
+One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide: [Connect to MongoDB with CLI](/pages/platform/databases/mongodb_03_connect_cli) or by using programming languages, such as [PHP](/pages/platform/databases/mongodb_04_connect_php) or [Python](/pages/platform/databases/mongodb_05_connect_python).
 
 Another way is to interact directly using a management tool for MongoDB: MongoDB Compass.
 
@@ -57,9 +54,9 @@ Now you are now interact with your Public Cloud Databases for MongoDB:
 
 ## Go further
 
-[MongoDB capabilities](https://docs.ovh.com/ca/en/publiccloud/databases/mongodb/capabilities/)
+[MongoDB capabilities](/pages/platform/databases/mongodb_01_concept_capabilities)
 
-[Configuring vRack for Public Cloud](https://docs.ovh.com/ca/en/public-cloud/public-cloud-vrack/)
+[Configuring vRack for Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack)
 
 Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mongodb) to find how to connect to your database with several languages.
 

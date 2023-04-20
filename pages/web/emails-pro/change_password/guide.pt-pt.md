@@ -1,11 +1,8 @@
 ---
 title: 'Alterar a palavra-passe de um endereço de e-mail'
-slug: changing-email-address-password
 excerpt: 'Saiba como alterar a palavra-passe de um endereço de e-mail da OVHcloud'
-section: Introdução
-order: 03
 routes:
-    canonical: 'https://docs.ovh.com/pt/emails/alterar-palavra-passe-endereco-email/'
+    canonical: '/pages/web/emails/email_change_password'
 updated: 2023-01-03
 ---
 
@@ -29,11 +26,11 @@ As contas de e-mail da sua oferta OVHcloud são acessíveis graças à palavra-p
 >
 > Ao alterar a palavra-passe do seu endereço de e-mail, deverá também refletir esta alteração em todos os dispositivos onde o endereço de e-mail foi configurado. Não hesite em consultar os nossos guias de configuração para o seu software de e-mail a partir da página inicial da sua oferta de e-mail:
 >
-> - [MXplan](https://docs.ovh.com/pt/emails/)
-> - [E-mail Pro](https://docs.ovh.com/pt/emails-pro/)
-> - [Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/)
+> - [MXplan](/products/web-cloud-email-collaborative-solutions-mx-plan)
+> - [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro)
+> - [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 >
 
 ## Instruções
 
-Siga o nosso guia [Alterar a palavra-passe de um endereço de e-mail](https://docs.ovh.com/pt/emails/alterar-palavra-passe-endereco-email/) na secção "Hosted email - MX Plan".
+Siga o nosso guia [Alterar a palavra-passe de um endereço de e-mail](/pages/web/emails/email_change_password) na secção "Hosted email - MX Plan".

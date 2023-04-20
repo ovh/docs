@@ -1,8 +1,6 @@
 ---
 title: 'Beware of scams – recognising fraudulent email and phishing'
-slug: scams-fraud-phishing
 excerpt: 'How do you recognise a phishing email, and what should you do if you click on a fraudulent link?'
-section: Security
 updated: 2020-10-12
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Accedere al database del tuo database server
-slug: connessione-database-server-bdd
 excerpt: Come connettersi al database
-section: Configurazione
-order: 03
 updated: 2023-02-15
 ---
 
@@ -71,7 +68,7 @@ Se la connessione avrà successo, comparirà la pagina successiva di phpMyAdmin.
 
 > [!warning]
 >
-> Se utilizzi un'offerta "Web Cloud Databases"/"SQL Privato", non dimenticare di autorizzare il tuo IP utilizzando la guida sulla [configurazione del tuo server database](https://docs.ovh.com/it/clouddb/configurare-ottimizzare-il-tuo-database-server/).
+> Se utilizzi un'offerta "Web Cloud Databases"/"SQL Privato", non dimenticare di autorizzare il tuo IP utilizzando la guida sulla [configurazione del tuo server database](/pages/web/clouddb/configure-database-server).
 >
 
 Per connetterti al tuo database, assicurati di recuperare queste informazioni:

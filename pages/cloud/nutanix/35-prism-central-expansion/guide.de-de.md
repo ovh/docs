@@ -1,11 +1,8 @@
 ---
 title: Ersatz von Prism Central vom Small Modus im X-LARGE Modus (EN)
-slug: prism-central-expansion
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/nutanix/prism-central-expansion/'
+    canonical: '/pages/cloud/nutanix/35-prism-central-expansion'
 excerpt: 'How to replace Prism Central with three X-Large VMs' 
-section: "Fortgeschrittene Nutzung"
-order: 05
 updated: 2023-01-03
 ---
 

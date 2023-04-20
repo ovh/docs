@@ -1,9 +1,6 @@
 ---
 title: 'Root-Rechte erlangen und Passwort festlegen'
-slug: root-rechte_erlangen_und_passwort_festlegen
 excerpt: 'Erfahren Sie hier, wie Sie Root-Rechte erlangen und ein Passwort vergeben'
-section: 'Erste Schritte'
-order: 08
 updated: 2022-03-24
 ---
 
@@ -21,14 +18,14 @@ Um bestimmte Verwaltungsfunktionen auf Ihrer Instanz auszuführen (zum Beispiel 
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) erstellt.
+- Sie haben eine [Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps#schritt-3-instanz-erstellen) erstellt.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 ### Festlegen des Root-Passworts <a name="settingtherootpassword"></a>
 
-Stellen Sie zunächst eine [SSH-Verbindung](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-4-mit-ihrer-instanz-verbinden) zu Ihrer Instanz her.
+Stellen Sie zunächst eine [SSH-Verbindung](/pages/platform/public-cloud/public-cloud-first-steps#schritt-4-mit-ihrer-instanz-verbinden) zu Ihrer Instanz her.
 
 Geben Sie auf der Kommandozeile ein Passwort für den root-Benutzer ein (aus Sicherheitsgründen wird das Passwort beim Eingeben nicht angezeigt):
 

@@ -1,10 +1,7 @@
 ---
 title: Obtener la cabecera de un email
-slug: obtener-los-cabeceras-emails
 legacy_guide_number: 1365
 excerpt: Cómo recuperar una cabecera de correo electrónico en su cliente de correo
-section: Diagnóstico
-order: 03
 updated: 2021-11-19
 ---
 
@@ -93,7 +90,7 @@ Subject: Hello my friend
 Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
 </code></pre>
 
-- El campo `Received-SPF` muestra el resultado del control [SPF](https://docs.ovh.com/us/es/domains/web_hosting_el_registro_spf/) realizado sobre el dominio del remitente. El argumento `client-ip` permite, entre otras cosas, encontrar la dirección IP del servidor que ha utilizado para enviar el mensaje de correo. 
+- El campo `Received-SPF` muestra el resultado del control [SPF](/pages/web/domains/dns_zone_spf) realizado sobre el dominio del remitente. El argumento `client-ip` permite, entre otras cosas, encontrar la dirección IP del servidor que ha utilizado para enviar el mensaje de correo. 
 <pre class="console"><code>
 Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh 
 </code></pre>
@@ -179,6 +176,6 @@ Para ver la cabecera en la interfaz webmail <Outlook.com>, consulte la sección 
 
 ## Más información
 
-[FAQ E-mail](https://docs.ovh.com/us/es/emails/correo-electronico-faq/)
+[FAQ E-mail](/pages/web/emails/faq-emails)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

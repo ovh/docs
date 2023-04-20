@@ -1,8 +1,6 @@
 ---
 title: 'Plesk auf einer Instanz installieren'
-slug: plesk-auf-einer-instanz-installieren
 excerpt: 'Erfahren Sie hier, wie Sie Plesk auf Ihrer Public Cloud Instanz einrichten'
-section: 'Tutorials'
 updated: 2018-03-26
 ---
 
@@ -24,7 +22,7 @@ Plesk ist ein einfach zu verwendendes Server-Verwaltungsinterface. Sie können e
 ## Voraussetzungen
 
 - Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
-- Sie haben [administrativen Zugriff](../root-rechte_erlangen_und_passwort_festlegen/) auf Ihre Instanz über SSH.
+- Sie haben [administrativen Zugriff](/pages/platform/public-cloud/become_root_and_change_password) auf Ihre Instanz über SSH.
 
 ## In der praktischen Anwendung
 

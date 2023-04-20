@@ -1,11 +1,8 @@
 ---
 title: How to use Terraform
-slug: how-to-use-terraform
 description: Procedure of use of Terraform
 keywords: infrastructure, instance, cloud, creation
 excerpt: Step-by-step documentation on how to use Terraform configurations for your infrastructure
-section: Tutorials
-order: 02
 updated: 2022-05-27
 ---
 
@@ -47,11 +44,11 @@ As an example, this video shows how to easily scale the number of instances whil
 
 ### Requirements
 
-- [Configuring user access to Horizon](../horizon/)
-- [Preparing an environment for using the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/)
-- [Setting OpenStack environment variables](../set-openstack-environment-variables/)
-- [Your OVHcloud API identifiers and authorisation key](../../api/first-steps-with-ovh-api/)
-- [An SSH key](../public-cloud-first-steps/)
+- [Configuring user access to Horizon](/pages/platform/public-cloud/introducing_horizon)
+- [Preparing an environment for using the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Setting OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables)
+- [Your OVHcloud API identifiers and authorisation key](/pages/account/api/first-steps)
+- [An SSH key](/pages/platform/public-cloud/public-cloud-first-steps)
 - [Terraform OpenStack provider](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs){.external}
 - [The OVHcloud Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest/docs){.external}
 
@@ -129,7 +126,7 @@ $ export OVH_CONSUMER_KEY=Your_token(or_CK)
 
 The "alias" is a unique identifier for a provider. For example, if you have two OpenStack providers with different credentials, you must precise each provider in the resource.
 
-You now need to [create a new OpenStack user](https://docs.ovh.com/asia/en/public-cloud/creation-and-deletion-of-openstack-user/), then [generate the OpenRC file](https://docs.ovh.com/asia/en/public-cloud/set-openstack-environment-variables/#step-1-retrieve-the-variables) containing all of the credentials you want to export as environment variables.
+You now need to [create a new OpenStack user](/pages/platform/public-cloud/create_and_delete_a_user), then [generate the OpenRC file](/pages/platform/public-cloud/loading_openstack_environment_variables#step-1-retrieve-the-variables) containing all of the credentials you want to export as environment variables.
 
 Load this file, then enter the password for the user you created earlier:
 

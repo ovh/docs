@@ -1,11 +1,8 @@
 ---
 title: 'Połączenie za pomocą protokołu STFP'
-slug: polaczenie_przez_sftp
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/polaczenie_przez_sftp/'
+    canonical: '/pages/cloud/private-cloud/sftp_connexion'
 excerpt: Dowiedz się, jak się połączyć z Managed Bare Metal za pomocą SFTP
-section: Pierwsze kroki
-order: 3
 updated: 2020-11-18
 ---
 

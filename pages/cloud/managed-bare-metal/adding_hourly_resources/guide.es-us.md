@@ -1,10 +1,8 @@
 ---
 title: 'Añadir recursos por horas'
-slug: anadir-recursos-por-horas
 routes:
     canonical: 'https://docs.ovh.com/us/es/private-cloud/anadir-recursos-por-horas/'
 excerpt: 'Cómo añadir recursos con facturación por horas'
-section: 'Funcionalidades de OVHcloud'
 updated: 2020-12-15
 ---
 

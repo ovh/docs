@@ -1,8 +1,6 @@
 ---
 title: 'Router une Additional IP'
-slug: route-Additional IP
 excerpt: 'Router une Additional IP'
-section: Configuration
 updated: 2022-10-06
 ---
 
@@ -21,7 +19,7 @@ Pour plus d'informations sur l'Additional IP nous vous recommandons la lecture d
 
 Le service OVH Load Balancer offre quant à lui des fonctionnalités de répartition de charge sur différents protocoles : HTTP, HTTPS, TCP et UDP. Associé à une Additional IP, il devient possible de basculer votre infrastructure existante vers un Load Balancer sans perturber ou interrompre les services de vos clients. En effet il n'y aura désormais plus de changement d'adresse IP dans la mesure où vous utiliserez toujours l'Additional IP, donc pas de délai de propagation des DNS.
 
-Pour plus d'informations sur le service OVH Load Balancer, nous vous conseillons de consulter la [présentation générale](https://docs.ovh.com/ca/fr/load-balancer/iplb-presentation/){.external}.
+Pour plus d'informations sur le service OVH Load Balancer, nous vous conseillons de consulter la [présentation générale](/pages/cloud/load_balancer/use_presentation){.external}.
 
 **Ce guide vous explique comment utiliser une Additional IP avec le service OVH Load Balancer.**
 

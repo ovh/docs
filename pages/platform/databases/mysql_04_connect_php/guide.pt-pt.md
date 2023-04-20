@@ -1,11 +1,8 @@
 ---
 title: MySQL - Connect with PHP
 excerpt: Connect to your Public Cloud Databases for MySQL using the PHP programming language
-slug: mysql/connect-php
-section: MySQL - Guides
-order: 040
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mysql/connect-php/'
+    canonical: '/pages/platform/databases/mysql_04_connect_php'
 updated: 2022-03-08
 ---
 
@@ -23,14 +20,14 @@ You can find an example on the [Github examples repository](https://github.com/o
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 - A [Public Cloud project](https://www.ovhcloud.com/pt/public-cloud/) in your OVHcloud account
-- A MySQL database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/pt/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your MySQL instance](https://docs.ovh.com/pt/publiccloud/databases/mysql/configure-mysql-instance/) to accept incoming connections
+- A MySQL database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your MySQL instance](/pages/platform/databases/mysql_07_prepare_for_incoming_connections) to accept incoming connections
 - A PHP environment with a stable version and public network connectivity (Internet). *This guide was made in PHP 8.0.8*.
 
 ## Concept
 
 A MySQL instance can be managed through multiple ways.
-One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to MySQL with CLI](https://docs.ovh.com/pt/publiccloud/databases/mysql/connect-cli/).
+One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to MySQL with CLI](/pages/platform/databases/mysql_03_connect_cli).
 
 Another way is to interact directly using programming languages, such as PHP.
 PHP is used in almost 80% of the websites in the world, such as Facebook, Wikipedia or WordPress.
@@ -51,7 +48,7 @@ Please follow the official [MySQL Drivers and Plugin](https://www.php.net/manual
 
 If you can edit your PHP environment on your own, install extensions and libraries as detailed in the documentation page linked above.
 
-On the contrary, if you benefit from a managed web hosting solution, such as **OVHcloud Web Hosting offers**, you need to activate the right PHP version on your web hosting plan. You can find [a guide about modifying your PHP version for OVHcloud Web Hosting here](https://docs.ovh.com/pt/hosting/configurar_o_php_num_alojamento_web_alojamentos_2014_ovh/).
+On the contrary, if you benefit from a managed web hosting solution, such as **OVHcloud Web Hosting offers**, you need to activate the right PHP version on your web hosting plan. You can find [a guide about modifying your PHP version for OVHcloud Web Hosting here](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014).
 
 We are now ready to learn how to connect to our MySQL instance.
 

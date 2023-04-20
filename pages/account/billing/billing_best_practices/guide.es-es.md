@@ -1,9 +1,6 @@
 ---
 title: Buenas prácticas para la gestión de sus servicios y de su cuenta de OVHcloud
-slug: billing-best-practices
 excerpt: Aquí encontrará los elementos imprescindibles para la correcta gestión de sus facturas, pedidos, formas de pago y cuenta de cliente.
-section: Pedidos, facturas y servicios
-order: 02
 updated: 2022-05-02
 ---
 
@@ -30,9 +27,9 @@ Esta guía explica los requisitos necesarios para una buena gestión de su cuent
 
 #### Proteja su cuenta
 
-- [Cree una contraseña segura](https://docs.ovh.com/es/customer/gestionar-su-contrasena/#generar-una-contrasena-adecuada) para garantizar la confidencialidad de su cuenta.
+- [Cree una contraseña segura](/pages/account/customer/manage-ovh-password#generar-una-contrasena-adecuada) para garantizar la confidencialidad de su cuenta.
 
-- [Active la doble autenticación](https://docs.ovh.com/es/customer/proteger-su-cuenta-con-una-2FA/) para evitar todo acceso fraudulento al área de cliente.
+- [Active la doble autenticación](/pages/account/customer/secure-ovhcloud-account-with-2fa) para evitar todo acceso fraudulento al área de cliente.
 
 Para que las medidas de seguridad sean eficaces, asegúrese de que sus direcciones de correo electrónico (principal y de seguridad) y su número de teléfono móvil estén **actualizadas y accesibles**.
 
@@ -45,7 +42,7 @@ En la sección `Mi perfil`{.action} a la derecha de su pantalla (haga clic de nu
 
 ![myprofile](images/myprofile.png){.thumbnail}
 
-Para más información, consulte la guía [Proteger mi cuenta de OVHcloud y gestionar mis datos personales](https://docs.ovh.com/es/customer/todo-sobre-el-id-de-cliente/#editar-mis-datos-personales).
+Para más información, consulte la guía [Proteger mi cuenta de OVHcloud y gestionar mis datos personales](/pages/account/customer/all_about_username#editar-mis-datos-personales).
 
 Asegúrese de que su dirección de correo electrónico esté siempre **actualizada, segura y accesible.** Recibirá los mensajes de correo procedentes de nuestros servicios en esta dirección, incluyendo los **mensajes de restauración** en caso de perder su contraseña.
 
@@ -63,21 +60,21 @@ Haga clic en su nombre en la esquina superior derecha de su pantalla y, seguidam
 
 > [!primary]
 >
-> Para evitar interrupciones del servicio y garantizar el buen funcionamiento de la renovación automática, [guarde una forma de pago](https://docs.ovh.com/es/billing/gestionar-formas-de-pago/) en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+> Para evitar interrupciones del servicio y garantizar el buen funcionamiento de la renovación automática, [guarde una forma de pago](/pages/account/billing/manage-payment-methods) en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 >
 > Compruebe regularmente que su forma de pago es **válida**.
 >
 
 Para más información sobre la activación de la renovación automática, consulte las siguientes guías:
 
-- [Gestionar la renovación de los servicioss](https://docs.ovh.com/es/billing/renovacion-automatica-ovh/);
-- [Gestionar las formas de pago](https://docs.ovh.com/es/billing/gestionar-formas-de-pago/);
+- [Gestionar la renovación de los servicioss](/pages/account/billing/how_to_use_automatic_renewal);
+- [Gestionar las formas de pago](/pages/account/billing/manage-payment-methods);
 
 Si decide no activar la renovación automática, recibirá notificaciones por correo electrónico invitándole a realizar un **pago manual**. Le permitirá, o bien renovar su servicio con antelación, o bien abonar su factura pendiente.
 
 ### Seguimiento de sus pedidos
 
-¿Sabía que podía [seguir sus pedidos](https://docs.ovh.com/es/billing/gestionar-los-pedidos-en-ovh/) en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)?<br>
+¿Sabía que podía [seguir sus pedidos](/pages/account/billing/managing_ovh_orders) en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)?<br>
 En la pestaña `Panel de control`{.action} del menú superior de su pantalla, haga clic en `Ver mis pedidos`{.action}.
 
 ![viewmyorders](images/viewmyorders.png){.thumbnail}
@@ -94,7 +91,7 @@ Haga clic en su nombre en la esquina superior derecha de su pantalla y, seguidam
 - `Dar de baja`{.action}: en la siguiente pantalla, indique los motivos de la solicitud de baja y haga clic en `Aceptar`{.action}. La operación se eliminará **definitivamente** en la fecha de expiración del servicio.
 - `Eliminar inmediatamente`{.action}: en la siguiente pantalla, haga clic en `Aceptar`{.action}. Recibirá un mensaje de correo electrónico de confirmación. Tras la validación, su servicio se eliminará **de forma inmediata y definitiva**.
 
-Para más información sobre la baja de sus servicios, consulte la guía [Cómo dar de baja sus servicios de OVHcloud](https://docs.ovh.com/es/billing/how-to-cancel-your-services/).
+Para más información sobre la baja de sus servicios, consulte la guía [Cómo dar de baja sus servicios de OVHcloud](/pages/account/billing/how_to_cancel_services).
 
 ### Cierre de cuenta
 
@@ -103,8 +100,8 @@ A continuación, utilice [este formulario](https://www.ovh.es/proteccion-datos-p
 
 ## Más información <a name="gofurther"></a>
 
-[Protéjase contra el fraude: cómo detectar los mensajes de correo fraudulento y el phishing](https://docs.ovh.com/es/customer/proteccion-ataque-phishing/)
+[Protéjase contra el fraude: cómo detectar los mensajes de correo fraudulento y el phishing](/pages/account/customer/phishing_care)
 
-[Gestionar las facturas de OVHcloud](https://docs.ovh.com/es/billing/gestionar-facturas-ovh/)
+[Gestionar las facturas de OVHcloud](/pages/account/billing/invoice_management)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

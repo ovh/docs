@@ -1,9 +1,6 @@
 ---
 title: Trasferire un dominio verso un altro Registrar
-slug: trasferisci_in_uscita_un_dominio_generico_o_geografico
 excerpt: Come effettuare il trasferimento di un dominio OVHcloud verso un altro provider
-section: Trasferimento
-order: 04
 updated: 2023-03-10
 ---
 
@@ -25,9 +22,9 @@ Per impedire trasferimenti di domini non autorizzati, i domini sono generalmente
 >
 > Se il dominio in questione deve restare registrato in OVHcloud ma modificato nelle modalità di gestione o proprietà, il trasferimento in uscita dal dominio non è la procedura appropriata.
 >
-> Per trasferire la gestione del tuo dominio verso un altro account cliente OVHcloud, il metodo più adatto è la *modifica dei contatti*. La procedura è descritta in [guida](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/).
+> Per trasferire la gestione del tuo dominio verso un altro account cliente OVHcloud, il metodo più adatto è la *modifica dei contatti*. La procedura è descritta in [guida](/pages/account/customer/managing_contacts).
 >
-> Se è necessario modificare il **proprietario** del dominio, è necessario farlo **prima** di modificare i contatti del dominio. Segui le istruzioni descritte nella nostra guida sul [cambiamento di proprietario dei domini](https://docs.ovh.com/it/domains/cambiare_proprietario_dominio/).
+> Se è necessario modificare il **proprietario** del dominio, è necessario farlo **prima** di modificare i contatti del dominio. Segui le istruzioni descritte nella nostra guida sul [cambiamento di proprietario dei domini](/pages/web/domains/trade_domain).
 >
 
 ## Prerequisiti
@@ -39,7 +36,7 @@ Per impedire trasferimenti di domini non autorizzati, i domini sono generalmente
 
 > [!primary]
 >
-> Se sei il **proprietario** del dominio ma la sua gestione nello Spazio Cliente OVHcloud non è disponibile, tramite il tuo accesso o tramite il contatto amministrativo del dominio, consulta [questa guida](../../customer/gestisci_i_tuoi_contatti/#caso-specifico-di-un-proprietario-di-dominio) prima di continuare.
+> Se sei il **proprietario** del dominio ma la sua gestione nello Spazio Cliente OVHcloud non è disponibile, tramite il tuo accesso o tramite il contatto amministrativo del dominio, consulta [questa guida](/pages/account/customer/managing_contacts#caso-specifico-di-un-proprietario-di-dominio) prima di continuare.
 >
 
 ## Procedura
@@ -107,7 +104,7 @@ Per maggiori informazioni, contatta il tuo nuovo Registrar.
 
 ## Per saperne di più
 
-[Trasferimento di dominio.co.uk in uscita](https://docs.ovh.com/it/domains/guida_al_trasferimento_in_uscita_di_un_dominio_couk/)
+[Trasferimento di dominio.co.uk in uscita](/pages/web/domains/transfer_outgoing_couk)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 

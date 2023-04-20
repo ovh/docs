@@ -1,8 +1,6 @@
 ---
 title: Sposoby równoważenia obciążenia
-slug: balancing
 excerpt: Poznaj różne sposoby równoważenia obciążenia dostępne w usłudze Load Balancer
-section: Konfiguracja
 updated: 2018-01-17
 ---
 
@@ -27,7 +25,7 @@ Nowa usługa Load Balancer oferuje różne typy równoważenia obciążenia (loa
 
 Równoważenie obciążenia realizowane jest w farmach serwerów. Poniżej podane są parametry, które określają sposób, w jaki zapytania są rozdzielane między serwery danej farmy.
 
-Poznaj podstawowe części składowe usługi w [przewodniku prezentującym Load Balancer](https://docs.ovh.com/pl/load-balancer/lb-prezentacja/){.external}.
+Poznaj podstawowe części składowe usługi w [przewodniku prezentującym Load Balancer](/pages/cloud/load_balancer/use_presentation){.external}.
 
 |Algorytm|Funkcje|
 |---|---|

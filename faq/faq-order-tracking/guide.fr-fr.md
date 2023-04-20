@@ -33,7 +33,7 @@ Connectez-vous à votre espace client, puis une fois sur votre tableau de bord, 
 
 #### Trucs et astuces
 
-Afin de vous aider à gérer vos commandes, nous mettons à votre disposition [un guide détaillé](https://docs.ovh.com/fr/billing/gerer-ses-commandes-ovh/).
+Afin de vous aider à gérer vos commandes, nous mettons à votre disposition [un guide détaillé](/pages/account/billing/managing_ovh_orders).
 
 ### Comment modifier ma commande ?
 
@@ -46,7 +46,7 @@ Si vous avez déjà réglé votre commande, nous vous invitons à contacter [not
 ### Comment annuler ma commande ?
 
 Sans paiement de votre part, votre commande sera automatiquement annulée dans un délai de 24 heures.
-En tant que particulier, si vous avez déjà payé votre commande et que celle-ci n'est pas liée à un service personnalisé (comme un nom de domaine) ou à une licence (telle qu'Office 365 ou SharePoint), vous pouvez vous rétracter dans les 14 jours. Nous mettons à votre disposition [un guide détaillé](https://docs.ovh.com/fr/billing/gerer-ses-commandes-ovh/#appliquer-le-droit-de-retractation) sur ce sujet.
+En tant que particulier, si vous avez déjà payé votre commande et que celle-ci n'est pas liée à un service personnalisé (comme un nom de domaine) ou à une licence (telle qu'Office 365 ou SharePoint), vous pouvez vous rétracter dans les 14 jours. Nous mettons à votre disposition [un guide détaillé](/pages/account/billing/managing_ovh_orders#appliquer-le-droit-de-retractation) sur ce sujet.
 
 #### Trucs et astuces
 

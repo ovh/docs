@@ -1,9 +1,6 @@
 ---
 title: 'Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)'
-slug: korzystanie-owa
 excerpt: 'Dowiedz się, jak korzystać z konta e-mail przy użyciu Webmail OWA'
-section: 'Pierwsze kroki'
-order: 04
 updated: 2020-02-25
 ---
 
@@ -20,4 +17,4 @@ Konta e-mail zawarte w Twoim [hostingu OVHcloud](https://www.ovhcloud.com/pl/web
 Aby uzyskać dostęp do konta z dowolnego miejsca przy użyciu przeglądarki internetowej, OVHcloud dostarcza program do obsługi poczty elektronicznej o nazwie Outlook Web Application (OWA).
 <br>Nasza strona logowania do interfejsu [Webmail](https://www.ovh.pl/mail/) to unikalny punkt dostępowy do odpowiedniego interfejsu OWA dla wszystkich aktywnych kont poczty elektronicznej w usłudze MX Plan, [Email Pro](https://www.ovhcloud.com/pl/emails/email-pro/) i [Hosted Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/).
 
-Zapoznaj się [z tym przewodnikiem](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/), aby dowiedzieć się więcej o ogólnych funkcjach OWA.
+Zapoznaj się [z tym przewodnikiem](/pages/web/microsoft-collaborative-solutions/owa_user_guide), aby dowiedzieć się więcej o ogólnych funkcjach OWA.

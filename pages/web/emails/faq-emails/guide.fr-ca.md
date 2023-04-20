@@ -1,8 +1,5 @@
 ---
 title: FAQ e-mails OVHcloud
-slug: faq-emails
-section: 'Premiers pas'
-order: 07
 updated: 2020-05-05
 ---
 
@@ -27,17 +24,17 @@ Si les enregistrements MX sont différents, c'est que vous avez potentiellement 
 ### Comment configurer mon adresse e-mail et l'utiliser avec le webmail ? 
 
 Il est possible de configurer votre compte e-mail sur un logiciel de messagerie tel que Outlook, Thunderbird, Mail de Mac... 
-Pour ce faire nous vous mettons à disposition des guides afin d'effectuer la mise en place de votre adresse. Vous pouvez les retrouver sur [cette page](../).
+Pour ce faire nous vous mettons à disposition des guides afin d'effectuer la mise en place de votre adresse. Vous pouvez les retrouver sur [cette page](/products/web-cloud-email-collaborative-solutions-mx-plan).
 
 Grâce au [webmail](https://www.ovh.com/ca/fr/mail/){.external}, vous pouvez accéder à tout moment à votre messagerie, depuis n'importe quel appareil connecté. Une fois votre compte e-mail créé, connectez-vous ici pour y accéder.
 
-**Trucs et Astuces** : Si vous configurez votre compte e-mail sur un logiciel de messagerie, nous vous conseillons de le configurer avec le protocole IMAP. De cette manière, les e-mails resteront stockés sur le serveur et vous pourrez les consulter où que vous soyez depuis le [webmail](https://www.ovh.com/ca/fr/mail/){.external}. Pour cela, vous pouvez vous appuyer sur [notre documentation](../generalites-sur-les-emails-mutualises/).
+**Trucs et Astuces** : Si vous configurez votre compte e-mail sur un logiciel de messagerie, nous vous conseillons de le configurer avec le protocole IMAP. De cette manière, les e-mails resteront stockés sur le serveur et vous pourrez les consulter où que vous soyez depuis le [webmail](https://www.ovh.com/ca/fr/mail/){.external}. Pour cela, vous pouvez vous appuyer sur [notre documentation](/pages/web/emails/email_generalities).
 
 ### Comment gérer mes services e-mails ? 
 
 L'ensemble de vos adresses e-mail se gère depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Pour cela, une fois connecté, accédez au produit concerné. Vous pouvez ainsi modifier le mot de passe de vos adresses e-mail, vérifier leur taux de remplissage, créer de nouvelles adresses ou supprimer des adresses existantes.
 
-**Trucs et Astuces** : Sur les offres e-mail MX Plan, vous pouvez déléguer la gestion d'un compte e-mail à un autre compte OVHcloud tout en gardant vous même la main sur celui-ci. Pour cela, il vous suffit de configurer une délégation, depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Vous pouvez vous appuyer sur [notre documentation](../deleguer-gestion-emails-autre-identifiant/). 
+**Trucs et Astuces** : Sur les offres e-mail MX Plan, vous pouvez déléguer la gestion d'un compte e-mail à un autre compte OVHcloud tout en gardant vous même la main sur celui-ci. Pour cela, il vous suffit de configurer une délégation, depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Vous pouvez vous appuyer sur [notre documentation](/pages/web/emails/feature_delegation). 
 
 ### Comment limiter la réception de spams ? 
 

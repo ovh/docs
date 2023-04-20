@@ -1,9 +1,6 @@
 ---
 title: 'Korzystanie z dostępu do hostingu WWW przez SSH'
-slug: hosting_www_ssh_na_hostingu
 excerpt: 'Dowiedz się jak się podłączyć i korzystać z dostępu do Twojego hostingu OVHcloud przez protokół SSH'
-section: 'FTP i SSH'
-order: 07
 updated: 2022-01-19
 ---
 
@@ -106,8 +103,8 @@ W zależności od wersji PHP, której chcesz używać, środowisko uruchomieniow
 
 ## Sprawdź również
 
-[Zmiana konfiguracji hostingu](https://docs.ovh.com/pl/hosting/zmiana_srodowiska_uruchomieniowego_dla_hostingu_www/).
+[Zmiana konfiguracji hostingu](/pages/web/hosting/ovhconfig_modify_system_runtime).
 
-[Konfiguracja pliku .ovhconfig w hostingu](https://docs.ovh.com/pl/hosting/konfiguracja-pliku-ovhconfig/).
+[Konfiguracja pliku .ovhconfig w hostingu](/pages/web/hosting/ovhconfig_configuration).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

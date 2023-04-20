@@ -1,10 +1,7 @@
 ---
 title: "Die Größe einer zusätzlichen Disk erweitern"
 excerpt: "Erfahren Sie hier, wie Sie die Kapazität eines zusätzlichen Volumes vergrößern und die Hauptpartition anpassen"
-slug: vps-increase-size-additional-disk
-section: "Backup Optionen"
 updated: 2023-03-14
-order: 4
 ---
 
 > [!primary]
@@ -22,13 +19,13 @@ Wenn Sie die maximale Kapazität Ihrer zusätzlichen Disk erreicht haben, könne
 ## Voraussetzungen
 
 - Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem OVHcloud Kunden-Account.
-- Sie haben eine [zusätzliche Disk konfiguriert](https://docs.ovh.com/de/vps/config-additional-disk-vps/).
+- Sie haben eine [zusätzliche Disk konfiguriert](/pages/cloud/vps/config_additional_disk).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben administrativen Zugriff auf Ihren VPS über SSH (Linux) oder RDP (Windows).
 
 ## In der praktischen Anwendung
 
-In den folgenden Schritten wird vorausgesetzt, dass Sie bereits eine zusätzliche Disk erstellt haben, wie [in unserer Anleitung beschrieben](https://docs.ovh.com/de/vps/config-additional-disk-vps/).
+In den folgenden Schritten wird vorausgesetzt, dass Sie bereits eine zusätzliche Disk erstellt haben, wie [in unserer Anleitung beschrieben](/pages/cloud/vps/config_additional_disk).
 
 ### Größe der Disk ändern <a name="extend"></a>
 

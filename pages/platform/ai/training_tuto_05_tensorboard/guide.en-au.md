@@ -1,9 +1,6 @@
 ---
 title: AI Training - Tutorial - Use tensorboard inside a job
-slug: training/tuto-tensorboard-inside-job
 excerpt: How to use a tensorboard inside an AI Training Job
-section: AI Training - Tutorials
-order: 05
 updated: 2022-09-01
 ---
 
@@ -23,7 +20,7 @@ The tutorial presents a simple example of launching **TensorBoard** in a job.
 
 ## Requirements
 
-- a working `ovhai` CLI [how to install ovhai CLI](https://docs.ovh.com/au/en/publiccloud/ai/cli/install-client)
+- a working `ovhai` CLI [how to install ovhai CLI](/pages/platform/ai/cli_10_howto_install_cli)
 
 ## Instructions
 
@@ -31,7 +28,7 @@ The tutorial presents a simple example of launching **TensorBoard** in a job.
 
 First of all, you must have trained your model and saved your results in an object store container (exemple: `my_tf_metrics` located in Gravelines `GRA`).
 
-Alternatively, you can have a job already `RUNNING` that is plugged with that object store container and is writting metric logs inside it (exemple: `my_tf_metrics@GRA:/runs:RW:cache`). In that last case, don't forget the `cache` parameter indicating that the volume is cached and sharable among jobs. More information about volumes configuration in jobs can be found [here](https://docs.ovh.com/au/en/publiccloud/ai/cli/run-job-cli/#attaching-volumes), information about volume caching can be found [here](https://docs.ovh.com/au/en/publiccloud/ai/data/#capabilities).
+Alternatively, you can have a job already `RUNNING` that is plugged with that object store container and is writting metric logs inside it (exemple: `my_tf_metrics@GRA:/runs:RW:cache`). In that last case, don't forget the `cache` parameter indicating that the volume is cached and sharable among jobs. More information about volumes configuration in jobs can be found [here](/pages/platform/ai/cli_12_howto_run_job_cli#attaching-volumes), information about volume caching can be found [here](/pages/platform/ai/gi_02_concepts_data#capabilities).
 
 > [!primary]
 >
@@ -81,8 +78,8 @@ Once the job is running you can access your TensorBoard directly from the job's 
 
 ## Go further
 
-- Check how to run Tensorflow code with GPUs [here](https://docs.ovh.com/au/en/publiccloud/ai/training/tensorflow-gpu-examples/).
-- You can compare AI models based on resource consumption, accuracy and training time. Refer to this [tutorial](https://docs.ovh.com/au/en/publiccloud/ai/training/tuto-models-comparaison-weights-and-biases/).
+- Check how to run Tensorflow code with GPUs [here](/pages/platform/ai/training_tuto_03_tensorflow_gpu).
+- You can compare AI models based on resource consumption, accuracy and training time. Refer to this [tutorial](/pages/platform/ai/training_tuto_06_models_comparaison_weights_and_biases).
 
 ## Feedback
 

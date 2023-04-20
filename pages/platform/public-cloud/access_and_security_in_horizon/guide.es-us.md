@@ -1,10 +1,7 @@
 ---
 title: Parámetros de acceso y seguridad en Horizon
 excerpt: Cómo gestionar y proteger el acceso a sus instancias
-slug: access_and_security_in_horizon
 legacy_guide_number: g1774
-section: Gestión desde Horizon
-order: 4
 updated: 2021-05-26
 ---
 
@@ -23,7 +20,7 @@ Por ejemplo, puede configurar grupos de seguridad para filtrar las conexiones en
 
 ## Requisitos
 
-- [Conectarse a Horizon](../horizon/)
+- [Conectarse a Horizon](/pages/platform/public-cloud/introducing_horizon)
 
 ## Procedimiento
 
@@ -49,7 +46,7 @@ Esta sección permite almacenar y gestionar pares de claves SSH. Simplemente pue
 
 Si desea añadir una llave preexistente, haga clic en `Importar Public Key`{.action}. Se abrirá una ventana en la que podrá introducir una clave o seleccionar un archivo de claves.
 
-Esta sección de la interfaz contiene instrucciones básicas. Para más información sobre las llaves SSH, consulte [esta guía](../crear-llave-ssh/).
+Esta sección de la interfaz contiene instrucciones básicas. Para más información sobre las llaves SSH, consulte [esta guía](/pages/platform/public-cloud/public-cloud-first-steps#1-crear-claves-ssh/).
 
 - **Security Groups** (bajo `Project`{.action} y luego `Network`{.action})
 

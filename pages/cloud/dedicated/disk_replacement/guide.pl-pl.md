@@ -1,8 +1,6 @@
 ---
 title: 'Wymiana uszkodzonego dysku'
-slug: wymiana-dysku
 excerpt: 'Dowiedz się, jak zidentyfikować uszkodzony dysk i zlecić jego wymianę'
-section: 'RAID & dyski'
 updated: 2018-06-21
 ---
 
@@ -46,7 +44,7 @@ Natychmiast po otrzymaniu wiadomości e-mail zawierającej alert o uszkodzeniu d
 
 #### Serwer z programową macierzą RAID 
 
-Jeśli posiadasz serwer z programową macierzą RAID, zapoznaj się z przewodnikiem [“Software RAID”](https://docs.ovh.com/pl/dedicated/raid-soft/){.external}, aby odnaleźć dyski zainstalowane na Twoim serwerze.
+Jeśli posiadasz serwer z programową macierzą RAID, zapoznaj się z przewodnikiem [“Software RAID”](/pages/cloud/dedicated/raid_soft){.external}, aby odnaleźć dyski zainstalowane na Twoim serwerze.
 
 Po znalezieniu ścieżki dostępu do Twoich dysków możesz przeprowadzić test, używając komendy `smartctl` w następujący sposób:
 
@@ -90,7 +88,7 @@ W tym przypadku istotny będzie następujący wiersz:
 
 #### Serwer ze sprzętową macierzą RAID
 
-Jeśli posiadasz serwer ze sprzętową macierzą RAID, zapoznaj się z przewodnikiem [“Hardware RAID” - EN](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} i zastosuj procedurę dotyczącą Twojego typu kontrolera RAID, aby odnaleźć ścieżki dostępu do Twoich dysków.
+Jeśli posiadasz serwer ze sprzętową macierzą RAID, zapoznaj się z przewodnikiem [“Hardware RAID” - EN](/pages/cloud/dedicated/raid_hard){.external} i zastosuj procedurę dotyczącą Twojego typu kontrolera RAID, aby odnaleźć ścieżki dostępu do Twoich dysków.
 
 Po znalezieniu ścieżki dostępu do Twoich dysków możesz przeprowadzić test, używając komendy `smartctl` w następujący sposób:
 
@@ -122,7 +120,7 @@ Należy podać numer RAID (/dev/sg0 = 1er RAID, /dev/sg1 = 2e RAID, etc.)
 
 #### Serwer z dyskiem NVMe
 
-W przypadku dysku NVMe konieczne jest uruchomienie serwera w trybie [Rescue-pro](https://docs.ovh.com/pl/dedicated/ovh-rescue/). Narzędzie **nvme-cli** jest zainstalowane na serwerze domyślnie.
+W przypadku dysku NVMe konieczne jest uruchomienie serwera w trybie [Rescue-pro](/pages/cloud/dedicated/rescue_mode). Narzędzie **nvme-cli** jest zainstalowane na serwerze domyślnie.
 
 Należy wówczas wprowadzić komendę `nvme list`, aby uzyskać numery serii dysków: 
 
@@ -141,7 +139,7 @@ root@rescue:~# nvme list
 
 Aby zlecić wymianę dysku, należy utworzyć zgłoszenie (ticket) w [Panelu klienta](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external} i wysłać je do pomocy technicznej OVHcloud. Aby przyspieszyć proces, podaj informacje uzyskane w wyniku testu. Poniżej lista potrzebnych danych:
 
-- **numer serii dysku do wymiany oraz dysków, które są sprawne**. Aby dowiedzieć się, jak uzyskać numer serii dysku zapoznaj się z [tym przewodnikiem](https://docs.ovh.com/pl/dedicated/ustalenie-numeru-seryjnego-dysku/). Jeśli z jakiejś przyczyny uzyskanie numeru serii dysku do wymiany jest niemożliwe, poinformuj o tym w zgłoszeniu i podaj numery serii sprawnych dysków. 
+- **numer serii dysku do wymiany oraz dysków, które są sprawne**. Aby dowiedzieć się, jak uzyskać numer serii dysku zapoznaj się z [tym przewodnikiem](/pages/cloud/dedicated/how_to_find_hdd_serial). Jeśli z jakiejś przyczyny uzyskanie numeru serii dysku do wymiany jest niemożliwe, poinformuj o tym w zgłoszeniu i podaj numery serii sprawnych dysków. 
 
 Jak zostało zasygnalizowane wcześniej, istotne są numery wszystkich dysków. Zostaną one przekazane technikowi w centrum danych, co pozwoli mu uniknąć błędu podczas przeprowadzania operacji.
 
@@ -200,16 +198,16 @@ MegaCli -PdLocate -start -physdrv[E0:S0] -a0
 
 Jeśli posiadasz serwer ze sprzętową macierzą RAID, RAID odbuduje się samoistnie.  Uwaga: funkcja *auto-rebuild*, aktywowana domyślnie, nie może być przez Ciebie uprzednio zdezaktywowana.  Proces ponownej synchronizacji może zająć kilka minut i spowodować zmniejszenie wydajności odczytu/zapisu macierzy RAID.
 
-Jeśli posiadasz serwer z programową macierzą RAID, uruchom ręcznie ponowną synchronizację dysków. Więcej informacji na ten temat znajdziesz w dokumentacji [“Software RAID”](https://docs.ovh.com/pl/dedicated/raid-soft/){.external}.
+Jeśli posiadasz serwer z programową macierzą RAID, uruchom ręcznie ponowną synchronizację dysków. Więcej informacji na ten temat znajdziesz w dokumentacji [“Software RAID”](/pages/cloud/dedicated/raid_soft){.external}.
 
 
 ## Sprawdź również
 
-[Programowa macierz RAID](https://docs.ovh.com/pl/dedicated/raid-soft/)
+[Programowa macierz RAID](/pages/cloud/dedicated/raid_soft)
 
-[Sprzętowa macierz RAID - EN](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}
+[Sprzętowa macierz RAID - EN](/pages/cloud/dedicated/raid_hard){.external}
 
-[Trybu Rescue](https://docs.ovh.com/pl/dedicated/ovh-rescue/)
+[Trybu Rescue](/pages/cloud/dedicated/rescue_mode)
 
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

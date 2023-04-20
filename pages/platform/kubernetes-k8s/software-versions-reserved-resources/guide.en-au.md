@@ -1,8 +1,6 @@
 ---
 title: Kubernetes Plugins (CNI, CRI, CSI...) & softwares versions and reserved resources
 excerpt: ''
-slug: kubernetes-plugins-software-versions-reserved-resources
-section: Technical resources
 updated: 2023-03-24
 ---
 
@@ -21,9 +19,9 @@ Currently, we support the following Kubernetes releases:
 * `1.24`
 * `1.25`
 
-If you run a Managed Kubernetes Service using an older version we strongly encourage you to use the [version upgrade feature](../upgrading-kubernetes-version/) to receive official support for your cluster.
+If you run a Managed Kubernetes Service using an older version we strongly encourage you to use the [version upgrade feature](/pages/platform/kubernetes-k8s/upgrading-kubernetes-version) to receive official support for your cluster.
 
-You will find more details about our [End-of-Sale, End-of-Service and End-of-life-Policy in the dedicated section](../eos-eol-policies/).
+You will find more details about our [End-of-Sale, End-of-Service and End-of-life-Policy in the dedicated section](/pages/platform/kubernetes-k8s/eos-eol-policies).
 
 We will closely follow the Kubernetes releases, and new versions will be regularly available.
 

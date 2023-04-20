@@ -1,9 +1,6 @@
 ---
 title: 'SSL-Zertifikat auf einem Webhosting verwalten'
-slug: ssl-zertifikate-auf-webhostings-verwalten
 excerpt: 'Erfahren Sie hier, wie Sie ein SSL-Zertifikat auf Ihrem OVHcloud Webhosting verwalten'
-section: SSL
-order: 01
 updated: 2022-08-01
 ---
 
@@ -49,7 +46,7 @@ Es können drei Zustände entstehen:
 
 |Status|Beschreibung|
 |---|---|
-|Aktiviert|Es wurde bereits ein SSL-Zertifikat für diese Multisite aktiviert. Sollte Ihre Seite dennoch nicht via HTTPS verfügbar sein, lesen Sie unsere Anleitung "[Website mit SSL-Zertifikat auf HTTPS umstellen](../website-umstellen-https-ssl/){.external}".|
+|Aktiviert|Es wurde bereits ein SSL-Zertifikat für diese Multisite aktiviert. Sollte Ihre Seite dennoch nicht via HTTPS verfügbar sein, lesen Sie unsere Anleitung "[Website mit SSL-Zertifikat auf HTTPS umstellen](/pages/web/hosting/ssl-activate-https-website){.external}".|
 |Zu erstellen|Es wurde ein SSL-Zertifikat für diese Multisite aktiviert, es ist aber noch nicht technisch aktiv. Erneuern Sie in diesem Fall das Zertifikat, damit es auch für die neuen Multisite-Domains funktioniert.|
 |Deaktiviert|Es wurde noch kein SSL-Zertifikat für diese Multisite aktiviert. Um es zu aktivieren, folgen Sie den untenstehenden Anweisungen.|
 
@@ -81,7 +78,7 @@ Vergewissern Sie sich, dass der vorherige Schritt der [Aktivierung eines SSL-Zer
 > - Konfigurieren Sie die DNS-Zone der unter Multisites hinzugefügten Domain im Bereich `Domains`{.action}, im Tab `DNS-Zone`{.action}. Erstellen Sie einen entsprechenden `A`-Eintrag für Ihren Multisite-Eintrag oder editieren Sie ihn und geben Sie die IP-Adresse Ihres Hostings als `Ziel` ein.
 > ![managessl](images/manage-ssl-arecord02.png){.thumbnail}
 >
-> Für weitere Informationen lesen Sie unsere Anleitungen zur [Konfiguration eines Multisite-Eintrags](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/) oder [zur Konfiguration einer DNS Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/).
+> Für weitere Informationen lesen Sie unsere Anleitungen zur [Konfiguration eines Multisite-Eintrags](/pages/web/hosting/multisites_configure_multisite) oder [zur Konfiguration einer DNS Zone](/pages/web/domains/dns_zone_edit).
 
 Bei Ihrem OVHcloud Webhosting haben Sie für die Aktivierung eines [SSL-Zertifikats](https://www.ovh.de/ssl/){.external} mehrere Optionen:
 

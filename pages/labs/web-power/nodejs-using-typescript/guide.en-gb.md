@@ -1,9 +1,6 @@
 ---
 title: Using TypeScript on your POWER web hosting plan
-slug: nodejs-using-typescript
 excerpt: Find out how to use TypeScript on your POWER web hosting plan
-section: Node.js
-order: 7
 updated: 2021-02-04
 ---
 
@@ -45,7 +42,7 @@ This guide will explain how to do it.
 - A [Node.js](https://labs.ovh.com/managed-nodejs) POWER web hosting plan
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
-If you have just started to use your Web POWER web hosting plan, we suggest to have a look at our [Getting started with a POWER web hosting plan](../getting-started-with-power-web-hosting/) guide before going further.
+If you have just started to use your Web POWER web hosting plan, we suggest to have a look at our [Getting started with a POWER web hosting plan](/pages/labs/web-power/getting-started) guide before going further.
 
 ## Instructions
 

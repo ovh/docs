@@ -1,8 +1,6 @@
 ---
 title: OVHcloud Bestellungen verwalten
-slug: bestellungen-verwalten-ovh
 excerpt: Erfahren Sie hier, wie Sie Ihre Bestellungen bei OVHcloud verwalten
-section: Abrechnung
 updated: 2022-05-06
 ---
 
@@ -40,7 +38,7 @@ Der Bestellschein wird erstellt, sobald Sie Ihre Bestellung aufgeben. Darin werd
 |---|---|
 |1|Nummer, Erstellungsdatum und Ablaufdatum des Bestellscheins. Wenn er abgelaufen ist, müssen Sie erneut bestellen.|
 |2|Ihre Rechnungsdaten. Sie müssen eingeloggt sein, um Ihren Bestellschein anzuzeigen und zu bezahlen.|
-|3|In Ihrem Kundenkonto gespeicherte Zahlungsmethoden. Weitere Informationen finden Sie in der Anleitung [Meine Zahlungsarten verwalten](https://docs.ovh.com/de/billing/zahlungsarten-verwalten/).|
+|3|In Ihrem Kundenkonto gespeicherte Zahlungsmethoden. Weitere Informationen finden Sie in der Anleitung [Meine Zahlungsarten verwalten](/pages/account/billing/manage-payment-methods).|
 |4|Verfügbare Zahlungsmethoden. Ihnen werden nur die im Heimatland des Accounts autorisierten Zahlungsmethoden oder die mit der Art des registrierten Accounts verbundenen Zahlungsmethoden angeboten.|
 
 Sie können Ihren Bestellschein jederzeit wie unten erläutert in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einsehen.
@@ -99,7 +97,7 @@ Weitere Informationen zur Ausübung ihres Widerrufsrechts finden Sie in unseren 
 > Das Widerrufsrecht gilt nur für Privatpersonen und gilt nur für Neubestellungen. Sie können es also nicht in den folgenden Fällen geltend machen:
 >
 > - Verlängerungsbestellungen
-> - Ihre OVHcloud Kundenkennung ist nicht vom Typ [Privatperson](https://docs.ovh.com/de/customer/alles_uber_ihre_ovh_kundenkennung/#account-typ-andern)
+> - Ihre OVHcloud Kundenkennung ist nicht vom Typ [Privatperson](/pages/account/customer/all_about_username#account-typ-andern)
 >
 > Außerdem gilt das Widerrufsrecht nicht für unbezahlte Bestellungen, da diese automatisch annulliert werden, sobald der Bestellschein ausläuft.
 >

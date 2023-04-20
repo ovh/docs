@@ -1,11 +1,8 @@
 ---
 title: AI Training - Capabilities and Limitations
-slug: training/capabilities
 excerpt: Find out about current capabilities and limitations of AI Training
-section: AI Training - Guides
-order: 01
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/training/capabilities/'
+    canonical: '/pages/platform/ai/training_guide_01_capabilities'
 updated: 2021-04-20
 ---
 
@@ -37,7 +34,7 @@ ovhai capabilities flavor list
 ```
 
 > [!primary]
-> **Local storage** refers to a drive mounted on the node. It's limited and not the recommended way to handle data, see [OVHcloud documentation on data](https://docs.ovh.com/pl/publiccloud/ai/data)
+> **Local storage** refers to a drive mounted on the node. It's limited and not the recommended way to handle data, see [OVHcloud documentation on data](/pages/platform/ai/gi_02_concepts_data)
 
 ### Available ports to public network
 

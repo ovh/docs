@@ -1,9 +1,6 @@
 ---
 title: Configurer un enregistrement SPF sur son nom de domaine
-slug: le-champ-spf
 excerpt: Découvrez comment configurer un enregistrement SPF sur votre nom de domaine chez OVHcloud
-section: DNS et zone DNS
-order: 05
 updated: 2022-09-12
 ---
 
@@ -228,8 +225,8 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.com ~all"
 
 ## Aller plus loin
 
-[Editer une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external}.
+[Editer une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external}.
 
-[Modifier les serveurs DNS d'un nom de domaine OVHcloud](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/){.external}.
+[Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web/domains/dns_server_general_information){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.

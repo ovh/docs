@@ -1,9 +1,6 @@
 ---
 title: 'Migrare un account Gmail verso OVHcloud con OVH Mail Migrator'
-slug: migrazione-account-gmail-con-ovh-mail-migrator
 excerpt: 'Questa guida ti mostra come migrare i tuoi account Gmail verso OVHcloud grazie al nostro tool OVH Mail Migrator.'
-section: 'Migrazione account'
-order: 04
 updated: 2020-03-09
 ---
 
@@ -79,7 +76,7 @@ A questo punto, compare una finestra con lo stato di avanzamento della migrazion
 
 ![omm](images/OMM-gmail-step01-05.png){.thumbnail}
 
-In questo caso, accedi alla casella di posta in arrivo del tuo account Gmail e controlla se hai ricevuto l’email con oggetto: **“Avviso di sicurezza”** Si tratta di una misura di sicurezza adottata da Gmail. Per risolvere questa situazione, consulta la guida:  [Consentire alle applicazioni meno sicure di accedere al tuo account Gmail](../migrazione-account-gmail-con-ovh-mail-migrator/sicurezza-gmail/){.external}
+In questo caso, accedi alla casella di posta in arrivo del tuo account Gmail e controlla se hai ricevuto l’email con oggetto: **“Avviso di sicurezza”** Si tratta di una misura di sicurezza adottata da Gmail. Per risolvere questa situazione, consulta la guida:  [Consentire alle applicazioni meno sicure di accedere al tuo account Gmail](/pages/web/microsoft-collaborative-solutions/migrate_gmail_to_ovhcloud_by_omm/security_gmail){.external}
 
 Dopo aver **consentito l’accesso alle “applicazioni meno sicure”** su Gmail, puoi riavviare il processo di migrazione.
 
@@ -166,7 +163,7 @@ Compare una finestra con lo stato di avanzamento della migrazione. Puoi lasciarl
 
 ## Per saperne di più
 
-[Consentire alle applicazioni meno sicure di accedere al tuo account Gmail](../migrazione-account-gmail-con-ovh-mail-migrator/sicurezza-gmail){.external}.
+[Consentire alle applicazioni meno sicure di accedere al tuo account Gmail](/pages/web/microsoft-collaborative-solutions/migrate_gmail_to_ovhcloud_by_omm/security_gmail){.external}.
 
 Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en](https://community.ovh.com/en/){.external}
 

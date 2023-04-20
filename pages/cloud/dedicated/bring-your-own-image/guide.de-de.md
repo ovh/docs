@@ -1,8 +1,6 @@
 ---
 title: Bring Your Own Image verwenden
 excerpt: Erfahren Sie hier, wie Sie Ihre eigenen Images bereitstellen
-slug: bringyourownimage
-section: Fortgeschrittene Nutzung
 updated: 2022-11-25
 ---
 
@@ -26,7 +24,7 @@ Zusätzlich zu den unten genannten Voraussetzungen und Einschränkungen muss sic
 
 - Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) (für die Methode über das [Kundencenter](#viacontrolpanel)).
-- Sie haben die [Credentials generiert, um die API zu verwenden](https://docs.ovh.com/de/api/first-steps-with-ovh-api/) (für den Abschnitt zum [Deployment über API](#viaapi)).
+- Sie haben die [Credentials generiert, um die API zu verwenden](/pages/account/api/first-steps) (für den Abschnitt zum [Deployment über API](#viaapi)).
 - Die Image-Datei muss kleiner sein als die RAM-Größe des Servers minus 3 GB.
 
 > [!warning]
@@ -114,7 +112,7 @@ Wenn die Felder ausgefüllt sind, starten Sie die Bereitstellung, indem Sie auf 
 
 ### Deployment überprüfen
 
-Sie können die Bereitstellung Ihres Images über den unten stehenden API Aufruf oder über KVM / [IPMI](../verwendung-ipmi-dedicated-server/) verfolgen.
+Sie können die Bereitstellung Ihres Images über den unten stehenden API Aufruf oder über KVM / [IPMI](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers) verfolgen.
 
 > [!api]
 >

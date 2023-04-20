@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguracja konta e-mail w aplikacji Poczta na urządzeniu z systemem Windows 10'
-slug: konfiguracja-poczta-windows-10
 excerpt: 'Dowiedz się, jak skonfigurować Twoje konto e-mail MX Plan w aplikacji Poczta na urządzeniu z systemem Windows 10'
-section: Konfiguracja na komputerze
-order: 06
 updated: 2018-04-04
 ---
 
@@ -23,7 +20,7 @@ Konta e-mail MX Plan mogą być skonfigurowane w jednym z kompatybilnych program
 
 > [!primary]
 >
-> Czy używasz wcześniejszej wersji systemu Windows? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta e-mail w aplikacji Poczta na urządzeniu z systemem Windows 8](https://docs.ovh.com/pl/emails/konfiguracja_adresu_e-mail_w_windows_8/){.external}.
+> Czy używasz wcześniejszej wersji systemu Windows? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta e-mail w aplikacji Poczta na urządzeniu z systemem Windows 8](/pages/web/emails/how_to_configure_windows_10){.external}.
 >
 
 ## W praktyce
@@ -90,6 +87,6 @@ OVHcloud oferuje aplikację internetową umożliwiającą korzystanie z Twojego 
  
 ## Sprawdź również
 
-[Konfiguracja konta Exchange w aplikacji Poczta na urządzeniu z systemem Windows](https://docs.ovh.com/pl/microsoft-collaborative-solutions/konfiguracja-poczta-windows-10/){.external}
+[Konfiguracja konta Exchange w aplikacji Poczta na urządzeniu z systemem Windows](/pages/web/microsoft-collaborative-solutions/how_to_configure_windows_10){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: 'Todos os nossos guias Object Storage'
-slug: object-storage-redirection
 excerpt: Encontre o conjunto dos nossos guias Object Storage High Performance e Swift
-section: 'Armazenamento'
-order: 00
 updated: 2022-03-14
 ---
 
@@ -11,7 +8,7 @@ updated: 2022-03-14
 
 ## Objetivo
 
-Descubra os nossos guias Object Storage High Perf e Swift em [esta página](https://docs.ovh.com/pt/storage/).
+Descubra os nossos guias Object Storage High Perf e Swift em [esta página](/products/storage-backup).
 
 # Quer mais?
 

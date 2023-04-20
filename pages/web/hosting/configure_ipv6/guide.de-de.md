@@ -1,9 +1,6 @@
 ---
 title: "IPv6 für Ihre Website konfigurieren"
-slug: configure-ipv6-for-your-website
 excerpt: "Erfahren Sie hier, wie Sie Ihre Website über eine IPv6-Adresse verfügbar machen"
-section: "Webhosting-Konfiguration"
-order: 06
 updated: 2023-02-10
 ---
 
@@ -42,7 +39,7 @@ Unsere Webhostings sind seit 2011 mit IPv6 kompatibel, doch die Aktivierung dies
 > Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
-Wenn Ihre Website nicht bereits mit IPv6 funktioniert, können Sie die [IPv6-Adresse Ihres OVHcloud Webhostings](https://docs.ovh.com/de/hosting/verzeichnis-der-ip-adressen-web-hosting-cluster/) der aktiven DNS-Zone Ihres Domainnamens hinzufügen. Ziel ist es, dass Webbrowser eine IPv6-Adresse finden, die mit Ihrer Website über Ihren Domainnamen verknüpft ist.
+Wenn Ihre Website nicht bereits mit IPv6 funktioniert, können Sie die [IPv6-Adresse Ihres OVHcloud Webhostings](/pages/web/hosting/clusters_and_shared_hosting_IP) der aktiven DNS-Zone Ihres Domainnamens hinzufügen. Ziel ist es, dass Webbrowser eine IPv6-Adresse finden, die mit Ihrer Website über Ihren Domainnamen verknüpft ist.
 
 ### Die IPv6-Verfügbarkeit Ihrer Website überprüfen
 
@@ -65,7 +62,7 @@ Kopieren Sie im Abschnitt **IPv6** die Adresse und gehen Sie zum nächsten Schri
 > Beachten Sie, dass ein Hinzufügen, Ändern oder Löschen von DNS-Einträgen in der aktiven DNS-Zone eines Domainnamens eine Propagationszeit von **4 bis 24 Stunden** benötigt, um voll wirksam zu sein.
 >
 
-Damit ein Browser die IPv6-Adresse Ihres Domainnamens aufrufen kann, bearbeiten Sie die aktive DNS-Zone Ihres Domainnamens. Verwenden Sie bei Bedarf unsere Anleitung "[Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/#bearbeiten-der-ovhcloud-dns-zone-ihrer-domain_1)", um einen DNS-Eintrag vom Typ **AAAA** zu erstellen.
+Damit ein Browser die IPv6-Adresse Ihres Domainnamens aufrufen kann, bearbeiten Sie die aktive DNS-Zone Ihres Domainnamens. Verwenden Sie bei Bedarf unsere Anleitung "[Bearbeiten der OVHcloud DNS-Zone](/pages/web/domains/dns_zone_edit#bearbeiten-der-ovhcloud-dns-zone-ihrer-domain_1)", um einen DNS-Eintrag vom Typ **AAAA** zu erstellen.
 
 Klicken Sie im Bereich `Web Cloud`{.action} auf `Domainnamen`{.action}. Wählen Sie Ihren Domainnamen aus und gehen Sie dann auf den Tab `DNS-Zone`{.action}. Klicken Sie rechts neben der Tabelle auf den Button `Eintrag hinzufügen`{.action}. 
 
@@ -75,7 +72,7 @@ Tragen Sie die zuvor kopierte IPv6-Adresse als Typ **AAAA** ein.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-[Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/#bearbeiten-der-ovhcloud-dns-zone-ihrer-domain_1)
+[Bearbeiten der OVHcloud DNS-Zone](/pages/web/domains/dns_zone_edit#bearbeiten-der-ovhcloud-dns-zone-ihrer-domain_1)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

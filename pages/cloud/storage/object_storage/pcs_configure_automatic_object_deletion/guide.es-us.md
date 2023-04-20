@@ -1,10 +1,7 @@
 ---
 title: Object Storage Swift - Configurar la eliminación automática de objetos
 excerpt: Configurar la eliminación automática de objetos
-slug: pcs/configure-automatic-object-deletion
-section: OpenStack Swift Storage Class Specifics
 legacy_guide_number: g1950
-order: 070
 updated: 2021-10-27
 ---
 
@@ -20,8 +17,8 @@ Esta guía explica cómo eliminar los archivos de manera automática al cabo de 
 
 Para seguir todos los pasos de esta guía, es necesario:
 
-- [Preparar el entorno para utilizar la API de OpenStack](https://docs.ovh.com/us/es/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Cargar las variables de entorno de OpenStack](https://docs.ovh.com/us/es/public-cloud/set-openstack-environment-variables/)
+- [Preparar el entorno para utilizar la API de OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Cargar las variables de entorno de OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## Procedimiento
 

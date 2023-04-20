@@ -1,9 +1,6 @@
 ---
 title: "Trasferire un dominio.uk verso un altro Registrar"
-slug: guida_al_trasferimento_in_uscita_di_un_dominio_couk
 excerpt: Come effettuare il trasferimento in uscita di un dominio UK verso un altro registrar
-section: Trasferimento
-order: 05
 updated: 2022-10-19
 ---
 
@@ -15,7 +12,7 @@ updated: 2022-10-19
 
 ## Obiettivo
 
-Il processo di modifica del Registrar (*registrar*) per i domini di primo livello (*top-level domain*, o **TLD**) del prefisso nazionale **UK** (**.uk**) differisce da quello dettagliato nella nostra [guida al trasferimento delle TLD generiche](../trasferisci_in_uscita_un_dominio_generico_o_geografico/). Le istruzioni riportate qui sotto riguardano queste estensioni:
+Il processo di modifica del Registrar (*registrar*) per i domini di primo livello (*top-level domain*, o **TLD**) del prefisso nazionale **UK** (**.uk**) differisce da quello dettagliato nella nostra [guida al trasferimento delle TLD generiche](/pages/web/domains/transfer_outgoing_domain). Le istruzioni riportate qui sotto riguardano queste estensioni:
 
 - .uk
 - .co.uk
@@ -33,9 +30,9 @@ Il processo di modifica del Registrar (*registrar*) per i domini di primo livell
 >
 > Se il dominio in questione deve restare registrato in OVHcloud ma modificato nelle modalità di gestione o proprietà, il trasferimento in uscita dal dominio non è la procedura appropriata.
 >
-> Per trasferire la gestione del tuo dominio verso un altro account cliente OVHcloud, il metodo più adatto è la *modifica dei contatti*. La procedura è descritta in [guida](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/).
+> Per trasferire la gestione del tuo dominio verso un altro account cliente OVHcloud, il metodo più adatto è la *modifica dei contatti*. La procedura è descritta in [guida](/pages/account/customer/managing_contacts).
 >
-> Se è necessario modificare il **proprietario** del dominio, è necessario farlo **prima** di modificare i contatti del dominio. Segui le istruzioni descritte nella nostra guida sul [cambiamento di proprietario dei domini](https://docs.ovh.com/it/domains/cambiare_proprietario_dominio/).
+> Se è necessario modificare il **proprietario** del dominio, è necessario farlo **prima** di modificare i contatti del dominio. Segui le istruzioni descritte nella nostra guida sul [cambiamento di proprietario dei domini](/pages/web/domains/trade_domain).
 >
 
 ## Prerequisiti
@@ -47,7 +44,7 @@ Il processo di modifica del Registrar (*registrar*) per i domini di primo livell
 
 > [!primary]
 >
-> Se sei il **proprietario** del dominio ma la sua gestione nello Spazio Cliente OVHcloud non è disponibile, tramite il tuo accesso o tramite il contatto amministrativo del dominio, consulta [questa guida](../../customer/gestisci_i_tuoi_contatti/#caso-specifico-di-un-proprietario-di-dominio) prima di continuare.
+> Se sei il **proprietario** del dominio ma la sua gestione nello Spazio Cliente OVHcloud non è disponibile, tramite il tuo accesso o tramite il contatto amministrativo del dominio, consulta [questa guida](/pages/account/customer/managing_contacts#caso-specifico-di-un-proprietario-di-dominio) prima di continuare.
 >
 > Se il dominio è scaduto da **meno di 90 giorni**, può sempre essere trasferito. Per sbloccare il dominio per il trasferimento, contatta i nostri team di supporto tecnico creando una richiesta di supporto nel tuo Spazio Cliente OVHcloud.
 >
@@ -86,6 +83,6 @@ Contatta il tuo nuovo provider per maggiori informazioni e per qualsiasi domanda
 
 ## Per saperne di più
 
-[Trasferire un dominio verso un altro Registrar](../trasferisci_in_uscita_un_dominio_generico_o_geografico/)
+[Trasferire un dominio verso un altro Registrar](/pages/web/domains/transfer_outgoing_domain)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -1,11 +1,8 @@
 ---
 title: Presentación del área de cliente de Managed Bare Metal OVHcloud
-slug: manager-ovhcloud
 routes:
-    canonical: 'https://docs.ovh.com/es/private-cloud/manager-ovh-private-cloud/'
+    canonical: '/pages/cloud/private-cloud/manager_ovh_private_cloud'
 excerpt: Descubra las posibilidades que ofrece el área de cliente de Managed Bare Metal
-section: Primeros pasos
-order: 1
 updated: 2020-11-18
 ---
 
@@ -65,7 +62,7 @@ También aparece la fecha de la próxima renovación del servicio Managed Bare M
 
 ![Opciones](images/controlpanel4-e.png){.thumbnail}
 
-Si desea más información sobre la cancelación del servicio Managed Bare Metal, consulte nuestra guía [Cómo dar de baja el servicio Managed Bare Metal](../dar-de-baja-solucion-managed-bare-metal/).
+Si desea más información sobre la cancelación del servicio Managed Bare Metal, consulte nuestra guía [Cómo dar de baja el servicio Managed Bare Metal](/pages/cloud/managed-bare-metal/how-to-cancel).
 
 #### Datacenters
 
@@ -158,7 +155,7 @@ Pr ejemplo hay 50 usuarios conectados; cuando el número 51 se conecta, el prime
 
 Hay una segunda tabla disponible para la opción *VM encryption*.
 
-Podrá encontrar más información al respecto en [esta guía](../vm-encrypt/).
+Podrá encontrar más información al respecto en [esta guía](/pages/cloud/managed-bare-metal/vm_encrypt).
 
 #### Operaciones
 
@@ -239,7 +236,7 @@ La pestaña de backup permite activar la solución `Veeam backup`.
 
 ![Backup](images/controlpanel14-e.png){.thumbnail}
 
-Si desea más información sobre esta opción, puede consultar esta [guía](https://docs.ovh.com/gb/en/managed-bare-metal/veeam-backup-as-a-service/){.external}.
+Si desea más información sobre esta opción, puede consultar esta [guía](/pages/cloud/managed-bare-metal/veeam_backup_as_a_service){.external}.
 
 
 ## Más información

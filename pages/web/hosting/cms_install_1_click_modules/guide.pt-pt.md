@@ -1,9 +1,6 @@
 ---
 title: "Módulos 1 clique: como instalar um CMS para criar um site"
-slug: partilhado_guias_dos_modulos_dos_alojamentos_partilhados
 excerpt: Saiba como instalar um CMS com os módulos 1 clique da OVHcloud
-section: CMS
-order: 01
 updated: 2023-01-31
 ---
 
@@ -23,8 +20,8 @@ Os Módulos 1 clique permitem instalar um CMS, uma ferramenta para criar um site
 
 - Dispor de um serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Utilizar [uma versão de PHP compatível](https://docs.ovh.com/pt/hosting/configurar_o_php_num_alojamento_web_alojamentos_2014_ovh/) no seu alojamento web.
-- Ter [configurado corretamente o seu ficheiro .ovhconfig](https://docs.ovh.com/pt/hosting/configurar-ficheiro-ovhconfig/).
+- Utilizar [uma versão de PHP compatível](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014) no seu alojamento web.
+- Ter [configurado corretamente o seu ficheiro .ovhconfig](/pages/web/hosting/ovhconfig_configuration).
 - O diretório onde será instalado o seu módulo deve estar vazio ou atualmente inexistente.
 - Aceder à secção multisite e adicionar o domínio (ou subdomínio) que ficará associado ao seu site.
 
@@ -58,7 +55,7 @@ Irá visualizar uma janela onde poderá escolher o CMS e o domínio ao qual dese
 
 Se não encontrar o domínio desejado na lista, clique no separador `Multisite`{.action} e adicione o domínio. De seguida, tente novamente adicionar o módulo.
 
-Se tiver dúvidas, pode consultar o guia (em francês) [Como usar meu alojamento web com vários sites](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/){.external} (versão PT disponível em breve).
+Se tiver dúvidas, pode consultar o guia (em francês) [Como usar meu alojamento web com vários sites](/pages/web/hosting/multisites_configure_multisite){.external} (versão PT disponível em breve).
 
 Depois de selecionar o domínio, selecione a instalação simples ou a instalação avançada:
 
@@ -109,7 +106,7 @@ Para configurar módulo, deve fornecer várias informações.
 - **Nome ou e-mail do administrador:** corresponde ao «nome de utilizador» (username) usado para aceder à interface de gestão do CMS.
 - **Palavra-passe:** palavra-passe usada para aceder à interface de gestão do CMS.
 - **Domínio:** domínio ao qual deseja associar o seu site.
-Em caso de dúvida, consulte o guia (em francês) [Como usar o meu alojamento web com vários sites](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/) (versão PT disponível em breve).
+Em caso de dúvida, consulte o guia (em francês) [Como usar o meu alojamento web com vários sites](/pages/web/hosting/multisites_configure_multisite) (versão PT disponível em breve).
 - **Idioma:** língua de funcionamento do CMS.
 - **Caminho da instalação:** esta informação é preenchida automaticamente após a seleção do domínio. O caminho da instalação pode ser completado adicionando sub-diretórios. (sub-pastas).
 
@@ -145,15 +142,15 @@ Se precisar de ajuda para usar as funcionalidades de gestão do seu site, aceda 
 
 [Escolher um CMS para criar um *site*](https://www.ovhcloud.com/pt/web-hosting/uc-cms-comparison/){.external}.
 
-[Como usar o meu alojamento com vários sites](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/){.external} (versão PT disponível em breve).
+[Como usar o meu alojamento com vários sites](/pages/web/hosting/multisites_configure_multisite){.external} (versão PT disponível em breve).
 
-[Gestão de uma base de dados a partir de um alojamento partilhado](https://docs.ovh.com/pt/hosting/gestao-de-uma-base-de-dados-a-partir-de-um-alojamento-partilhado-ovh/){.external}
+[Gestão de uma base de dados a partir de um alojamento partilhado](/pages/web/hosting/sql_create_database){.external}
 
 Veja a nossa [oferta Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/){.external}
 
-[Gerir o CMS](https://docs.ovh.com/pt/hosting/1-click-module-management/)
+[Gerir o CMS](/pages/web/hosting/cms_manage_1_click_module)
 
-[Desinstalar o seu CMS](https://docs.ovh.com/pt/hosting/1-click-module-management/#etapa-3-eliminar-o-modulo)
+[Desinstalar o seu CMS](/pages/web/hosting/cms_manage_1_click_module#etapa-3-eliminar-o-modulo)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 

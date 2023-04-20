@@ -1,11 +1,8 @@
 ---
 title: 'E-Mail Alias und Weiterleitung verwenden'
 excerpt: 'Erfahren Sie hier, wie Sie E-Mail Aliase und Weiterleitungen verwalten'
-slug: email-redirection-guide
-section: 'Exchange Account-Funktionen'
-order: 01
 routes:
-  canonical: "https://docs.ovh.com/de/emails/webhosting_e-mail_anleitung_zum_einrichten_einer_mail-weiterleitung/"
+  canonical: "/pages/web/emails/feature_redirections"
 updated: 2020-05-20
 ---
 
@@ -56,4 +53,4 @@ Für die E-Mail-Adresse **john.smith@mydomain.ovh** besteht beispielsweise der A
 
 ## In der praktischen Anwendung
 
-Folgen Sie unserem Leitfaden [E-Mail Alias und Weiterleitung verwenden](https://docs.ovh.com/de/emails/webhosting_e-mail_anleitung_zum_einrichten_einer_mail-weiterleitung/) im Abschnitt "Hosted E-Mail - MX Plan".
+Folgen Sie unserem Leitfaden [E-Mail Alias und Weiterleitung verwenden](/pages/web/emails/feature_redirections) im Abschnitt "Hosted E-Mail - MX Plan".

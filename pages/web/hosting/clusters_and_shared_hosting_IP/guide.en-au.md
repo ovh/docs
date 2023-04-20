@@ -1,9 +1,6 @@
 ---
 title: 'IP address list for Web Hosting clusters'
-slug: list-of-ip-addresses-of-web-hosting-clusters
 excerpt: 'Find out the appropriate IP addresses to use with your OVHcloud Web Hosting plan'
-section: Web Hosting configuration
-order: 01
 updated: 2021-01-08
 ---
 
@@ -975,10 +972,10 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 
 ## Go further
 
-[Hosting multiple websites on your Web Hosting plan](../multisites-configuring-multiple-websites)
+[Hosting multiple websites on your Web Hosting plan](/pages/web/hosting/multisites_configure_multisite)
 
-[Activating HTTPS on your website with an SSL certificate](../activate-https-website-ssl)
+[Activating HTTPS on your website with an SSL certificate](/pages/web/hosting/ssl-activate-https-website)
 
-[Optimise your website’s performance](../web_hosting_optimise_your_website_performance)
+[Optimise your website’s performance](/pages/web/hosting/optimise_your_website_performance)
 
 Join our community of users on <https://community.ovh.com/en/>.

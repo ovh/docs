@@ -1,8 +1,6 @@
 ---
 title: "Utiliser Hyper-V avec des adresses Additional IP sur un vRack"
 excerpt: "Découvrez comment configurer une machine virtuelle avec des IPs Additional IP et Hyper-V sur un vRack"
-slug: ipfo-vrack-hyperv
-section: vRack 
 updated: 2021-02-25
 ---
 
@@ -29,7 +27,7 @@ Suivez le processus d'installation d'Hyper-V, l'association d'un switch virtuel 
 
 ## En pratique
 
-Ce guide suppose que vous avez déjà installé Windows Server, que vous êtes connecté via le bureau à distance et que vous avez déjà affecté votre serveur dédié et votre bloc IP à un vRack. Pour plus d'informations sur ces étapes, reportez-vous aux étapes 1 à 4 de notre guide: [Configurer plusieurs serveurs dédiés dans le vRack](../configurer-plusieurs-serveurs-dedies-dans-le-vrack).
+Ce guide suppose que vous avez déjà installé Windows Server, que vous êtes connecté via le bureau à distance et que vous avez déjà affecté votre serveur dédié et votre bloc IP à un vRack. Pour plus d'informations sur ces étapes, reportez-vous aux étapes 1 à 4 de notre guide: [Configurer plusieurs serveurs dédiés dans le vRack](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server).
 
 ### Installation d'Hyper-V
 

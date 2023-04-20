@@ -1,10 +1,7 @@
 ---
 title: "Aumenta la dimensione di un disco aggiuntivo"
 excerpt: "Scopri come aumentare la dimensione di un volume aggiuntivo e aumentare la sua partizione principale"
-slug: vps-increase-size-additional-disk
-section: "Opzioni di backup"
 updated: 2023-03-14
-order: 4
 ---
 
 > [!primary]
@@ -22,13 +19,13 @@ Se hai raggiunto la capacità massima del tuo disco aggiuntivo, puoi aggiungere 
 ## Prerequisiti
 
 - Un [VPS](https://www.ovhcloud.com/it/vps/) nel tuo account OVHcloud.
-- Un [disco aggiuntivo](https://docs.ovh.com/it/vps/config-additional-disk-vps/) configurato sul VPS.
+- Un [disco aggiuntivo](/pages/cloud/vps/config_additional_disk) configurato sul VPS.
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Avere accesso al VPS in SSH o in RDP per l'amministrazione
 
 ## Procedura
 
-Negli step successivi è necessario aver configurato un disco aggiuntivo seguendo le indicazioni di [questa guida](https://docs.ovh.com/it/vps/config-additional-disk-vps/).
+Negli step successivi è necessario aver configurato un disco aggiuntivo seguendo le indicazioni di [questa guida](/pages/cloud/vps/config_additional_disk).
 
 ### Modifica la dimensione del disco <a name="extend"></a>
 

@@ -1,9 +1,6 @@
 ---
 title: Kimsufi and So you Start customers - Get to know the OVHcloud Control Panel
 excerpt: Find out how to navigate the OVHcloud Control Panel
-slug: get-familiar-with-ovhcloud-control-panel
-section: So You Start & Kimsufi customers
-order: 1
 updated: 2023-01-05
 ---
 
@@ -54,24 +51,24 @@ Once you are in the `Dedicated Servers`{.action} menu, click on the server of yo
 **Service status**
 
 - Status: Click on the `...`{.action} next to this option to reboot or delete your server.
-- Monitoring: Click on `Configure`{.action} to change the [monitoring settings of your server](https://docs.ovh.com/sg/en/dedicated/getting-started-dedicated-server#monitoring-server).
+- Monitoring: Click on `Configure`{.action} to change the [monitoring settings of your server](/pages/cloud/dedicated/getting-started-with-dedicated-server#monitoring-server).
 
 **Network**
 
 - IPV4: Click on the `...`{.action} next to this option to manage your IP.
 - Reverse: Click on the `...`{.action} next to this section to enter/modify your reverse DNS.
 
-**Secondary DNS**: Configure your secondary DNS here. For more information, consult the following [guide](https://docs.ovh.com/sg/en/dedicated/secondary-dns/)
+**Secondary DNS**: Configure your secondary DNS here. For more information, consult the following [guide](/pages/cloud/dedicated/adding-secondary-dns-on-dedicated-server)
 
-**Backup Storage** (Only available on OVHcloud servers and So you Start servers including those in the Eco line): Order and configure your backup storage here. For more information, consult [this guide](https://docs.ovh.com/sg/en/dedicated/using-backup-storage/).
+**Backup Storage** (Only available on OVHcloud servers and So you Start servers including those in the Eco line): Order and configure your backup storage here. For more information, consult [this guide](/pages/cloud/dedicated/services_backup_storage).
 
 **Interventions**: Find here the current and past interventions made on your server.
 
-**IPMI** (Only available on OVHcloud servers and some So you Start servers including those in the Eco line): Access your server's IPMI or KVM IP here. For more information about using this tool, see [this guide](https://docs.ovh.com/sg/en/dedicated/use-ipmi-dedicated-servers/).
+**IPMI** (Only available on OVHcloud servers and some So you Start servers including those in the Eco line): Access your server's IPMI or KVM IP here. For more information about using this tool, see [this guide](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers).
 
 **Tasks**: Here you can view recent tasks performed on your server.
 
-For more information on managing your dedicated server via the OVHcloud Control Panel, please refer to [this guide](https://docs.ovh.com/sg/en/dedicated/getting-started-dedicated-server/).
+For more information on managing your dedicated server via the OVHcloud Control Panel, please refer to [this guide](/pages/cloud/dedicated/getting-started-with-dedicated-server).
 
 ### Section IP
 
@@ -93,25 +90,25 @@ In the OVHcloud Control Panel, these options are grouped into a common space. Cl
 ![billing](images/accountOVHcloud.png){.thumbnail}
 
 - **General information**: in this section, you can view your account information, your latest bill, and access different shortcuts.
-- **Security**: this section allows you to manage the security settings of your account. For more information, please consult [this guide](https://docs.ovh.com/sg/en/customer/all-about-your-username/).
+- **Security**: this section allows you to manage the security settings of your account. For more information, please consult [this guide](/pages/account/customer/all_about_username).
 - **Emails received**: in this section, you can find all of the emails which OVHcloud has sent you, apart from requests for assistance.
 - **Level of support** (only available for OVHcloud services): you can find more information on the level of support offered by OVHcloud in this section.
-- **User management**: this section allows you to manage your users. For more information, please consult [this guide](https://docs.ovh.com/sg/en/customer/managing-users/).
-- **My bills**: in this section, you can view your invoices, track payments made with your default payment method, and view your credit notes. For more information, please consult [this guide](https://docs.ovh.com/sg/en/billing/manage-ovh-bills/).
+- **User management**: this section allows you to manage your users. For more information, please consult [this guide](/pages/account/customer/ovhcloud-users-management).
+- **My bills**: in this section, you can view your invoices, track payments made with your default payment method, and view your credit notes. For more information, please consult [this guide](/pages/account/billing/invoice_management).
 - **My services**: in this section, you can view all of your services, contracts and SSH keys.
-- **Payment method**: in this section, you can access your current payment method, your prepaid account and OVHcloud vouchers. You will also find the option to add/delete a payment method. For further information on managing your payment methods, please refer to [this guide](https://docs.ovh.com/sg/en/billing/manage-payment-methods/).
-- **My orders**: view your orders from this page. More information is available in [this guide](https://docs.ovh.com/sg/en/billing/managing-ovh-orders/).
+- **Payment method**: in this section, you can access your current payment method, your prepaid account and OVHcloud vouchers. You will also find the option to add/delete a payment method. For further information on managing your payment methods, please refer to [this guide](/pages/account/billing/manage-payment-methods).
+- **My orders**: view your orders from this page. More information is available in [this guide](/pages/account/billing/managing_ovh_orders).
 - **My support requests**: in this section, you can open/view all of your support tickets.
 
 ## Go further
 
 In practice, here are some guides to help you get started:
 
-[Logging in to the OVHcloud Control Panel](https://docs.ovh.com/sg/en/customer/log-in-to-ovhcloud-control-panel/).<br>
-[Setting and managing an account password](https://docs.ovh.com/sg/en/customer/manage-password/).<br>
-[Securing my OVHcloud account and managing my personal information](https://docs.ovh.com/sg/en/customer/all-about-your-username/).<br>
-[Managing contacts for your services](https://docs.ovh.com/sg/en/customer/managing-contacts/).<br>
-[Creating SSH keys](https://docs.ovh.com/sg/en/dedicated/creating-ssh-keys-dedicated/).<br>
-[What are the IP addresses of the OVHcloud monitoring?](https://docs.ovh.com/sg/en/dedicated/monitoring-ip-ovh/).
+[Logging in to the OVHcloud Control Panel](/pages/account/customer/ovhcloud-account-login).<br>
+[Setting and managing an account password](/pages/account/customer/manage-ovh-password).<br>
+[Securing my OVHcloud account and managing my personal information](/pages/account/customer/all_about_username).<br>
+[Managing contacts for your services](/pages/account/customer/managing_contacts).<br>
+[Creating SSH keys](/pages/cloud/dedicated/creating-ssh-keys-dedicated).<br>
+[What are the IP addresses of the OVHcloud monitoring?](/pages/cloud/dedicated/network_ip_monitoring).
 
 Join our community of users on <https://community.ovh.com/en/>.

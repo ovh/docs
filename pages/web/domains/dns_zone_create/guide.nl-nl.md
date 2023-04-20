@@ -1,11 +1,8 @@
 ---
 deprecated: true
 title: 'Creatie van een OVH DNS-zone voor een domeinnaam'
-slug: creeer_een_dns_zone_voor_een_domein_dat_niet_geregistreerd_is_bij_ovh
 excerpt: 'Ontdek hoe u via uw Control Panel een OVH DNS-zone voor uw domeinnaam kunt aanmaken'
 legacy_guide_number: g2229
-section: 'DNS en DNS-zone'
-order: 02
 updated: 2018-08-06
 ---
 
@@ -60,7 +57,7 @@ Als u deze DNS-zone wilt bewerken, klikt u in uw [OVH Control Panel](https://www
 > Als u zojuist de DNS-zone hebt gemaakt, maar de domeinnaam niet wordt weergegeven onder de lijst met diensten in het gedeelte `Domeinen`{.action}, wacht dan even. Laad vervolgens de pagina opnieuw.
 >
 
-Zodra het verschijnt, brengt u de vereiste wijzigingen aan. Lees de volgende handleiding voor meer informatie over [bewerking van een DNS-zone](https://docs.ovh.com/nl/domains/hosting_hoe_wijzig_ik_mijn_dns_zone/){.external}. Nadat u de OVH DNS-zone van uw domeinnaam hebt gewijzigd, kan het van 4 tot 24 uur in beslag nemen voordat de wijzigingen volledig zijn doorgevoerd en effectief zijn.
+Zodra het verschijnt, brengt u de vereiste wijzigingen aan. Lees de volgende handleiding voor meer informatie over [bewerking van een DNS-zone](/pages/web/domains/dns_zone_edit){.external}. Nadat u de OVH DNS-zone van uw domeinnaam hebt gewijzigd, kan het van 4 tot 24 uur in beslag nemen voordat de wijzigingen volledig zijn doorgevoerd en effectief zijn.
 
 ### Stap 3: Bewerk de DNS-servers voor een OVH domeinnaam
 
@@ -72,6 +69,6 @@ Zodra u over de gegevens beschikt, kunt u de **DNS-servers van uw domeinnaam bew
 
 ## Verder
 
-[Wijziging van een OVH DNS-zone](https://docs.ovh.com/nl/domains/hosting_hoe_wijzig_ik_mijn_dns_zone/){.external}.
+[Wijziging van een OVH DNS-zone](/pages/web/domains/dns_zone_edit){.external}.
 
 Ga in gesprek met andere communityleden op <https://community.ovh.com/en/>.

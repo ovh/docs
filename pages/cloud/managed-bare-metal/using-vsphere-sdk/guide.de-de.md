@@ -1,11 +1,8 @@
 ---
 title: vSphere SDK verwenden
-slug: vsphere-sdk-verwenden
 routes:
-    canonical: 'https://docs.ovh.com/de/private-cloud/vsphere-sdk-verwenden/'
+    canonical: '/pages/cloud/private-cloud/vmware_installation_api'
 excerpt: Erfahren Sie hier, wie Sie das vSphere SDK einrichten und verwenden
-section: VMware vSphere Funktionen
-order: 10
 updated: 2020-11-18
 ---
 
@@ -25,7 +22,7 @@ Aktionen in Ihrer Infrastruktur können mithilfe des vSphere SDK automatisiert w
 
 ##### Betriebssystem
 
-Dieses Beispiel verwendet eine auf Debian 9 installierte VM, die mithilfe der [für Ihre Managed Bare Metal bereitgestellten Templates](../ovhcloud-template-deployment/) deployt wurde.
+Dieses Beispiel verwendet eine auf Debian 9 installierte VM, die mithilfe der [für Ihre Managed Bare Metal bereitgestellten Templates](/pages/cloud/managed-bare-metal/ovf_template) deployt wurde.
 
 ##### Voraussetzungen
 
@@ -143,7 +140,7 @@ vconnect()
 
 ##### Betriebssystem
 
-Wir verwenden hier eine auf Ubuntu 18.04 installierte VM, die mithilfe der [für Ihre Managed Bare Metal bereitgestellten Templates](../ovhcloud-template-deployment/) deployt wurde.
+Wir verwenden hier eine auf Ubuntu 18.04 installierte VM, die mithilfe der [für Ihre Managed Bare Metal bereitgestellten Templates](/pages/cloud/managed-bare-metal/ovf_template) deployt wurde.
 
 
 ##### Voraussetzungen

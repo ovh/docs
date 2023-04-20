@@ -1,10 +1,7 @@
 ---
 title: 'Delegating the management of your email accounts to another person'
 legacy_guide_number: 1933
-slug: delegate-managing-emails
 excerpt: 'Find out how to delegate the management of email accounts for your MX Plan solution'
-section: 'Email address features'
-order: 05
 updated: 2021-10-08
 ---
 
@@ -35,7 +32,7 @@ By creating a delegation, you can enable an email account user to manage their o
 |MX Plan legacy version|MX Plan new version|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Find the solution in the section "Plan".|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Locate the `Server model` in the section "Summary".|
-|Continue reading this guide in the `[Instructions](#oldmxplan)` section below.|Continue with our guide on [Accessing your email account with OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/#changing-the-password).|
+|Continue reading this guide in the `[Instructions](#oldmxplan)` section below.|Continue with our guide on [Accessing your email account with OWA](/pages/web/microsoft-collaborative-solutions/owa_user_guide#changing-the-password).|
 
 ## Instructions <a name="oldmxplan"></a>
 
@@ -80,6 +77,6 @@ You can add multiple OVHcloud customer accounts to manage each email address.
 
 ## Go further
 
-[Getting started with the MX Plan solution](https://docs.ovh.com/gb/en/emails/web_hosting_an_overview_of_ovh_email/)
+[Getting started with the MX Plan solution](/pages/web/emails/email_generalities)
 
 Join our community of users on <https://community.ovh.com/en/>.

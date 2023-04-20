@@ -1,8 +1,6 @@
 ---
 title: Gestire la cronologia degli SMS
-slug: gestire-la-cronologia-degli-sms
 excerpt: Come consultare la cronologia degli SMS inviati dallo Spazio Cliente OVHcloud
-section: Gestisci la tua offerta 
 updated: 2022-08-05
 ---
 
@@ -82,7 +80,7 @@ Ecco i dettagli delle informazioni contenute nella cronologia:
 |  tag |  il tag attribuito manualmente tramite API (a uno o più SMS) o automaticamente dai nostri server a ciascuno degli SMS (o a ciascuna campagna di SMS) inviati. |
 |  message |  contenuto dell'SMS |
 
-Per maggiori dettagli sui codici ptt e sui diversi ID del DRL, consulta l’ultima sezione della nostra guida [Tutto sugli utenti SMS](../tutto_sugli_utenti_sms/#step-5-specifica-un-url-di-callback).
+Per maggiori dettagli sui codici ptt e sui diversi ID del DRL, consulta l’ultima sezione della nostra guida [Tutto sugli utenti SMS](/pages/telecom/sms/tout_savoir_sur_les_utilisateurs_sms#step-5-specifica-un-url-di-callback).
  
 ## Per saperne di più
 

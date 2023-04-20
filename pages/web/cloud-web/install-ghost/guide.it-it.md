@@ -1,9 +1,6 @@
 ---
 title: 'Installare Ghost su un hosting Cloud Web'
-slug: installare-ghost-cloud-web
 excerpt: 'Come creare un blog con la piattaforma Ghost sul tuo hosting Cloud Web'
-section: Tutorial
-order: 01
 updated: 2022-05-04
 ---
 
@@ -59,7 +56,7 @@ Nella nuova finestra, completa i campi con i valori indicati nel nostro esempio 
 |Ambiente dell’applicazione|production|
 |Script di avvio dell'applicazione|server.js|
 
-Una volta inserite tutte le informazioni, clicca su `Conferma`{.action}. Per maggiori informazioni sui motori di esecuzione, consulta la nostra guida [Gestire i motori di esecuzione di un hosting Cloud Web](https://docs.ovh.com/it/cloud-web/gestire-motori-esecuzione-hosting-cloud-web/){.external}.
+Una volta inserite tutte le informazioni, clicca su `Conferma`{.action}. Per maggiori informazioni sui motori di esecuzione, consulta la nostra guida [Gestire i motori di esecuzione di un hosting Cloud Web](/pages/web/cloud-web/manage-runtime){.external}.
 
 ![ghostcloudweb](images/ghost-cloud-web-step2.png){.thumbnail}
 
@@ -89,7 +86,7 @@ Nella nuova finestra, inserisci le informazioni richieste. La tabella qui sotto 
 |Cartella di root|ghost|
 |Programma di esecuzione|NodeJS 8|
 
-Scegli quali opzioni aggiuntive attivare. Una volta completate le informazioni clicca su `Seguente`{.action} e conferma. L’operazione potrebbe richiedere fino a un’ora e la propagazione della modifica della configurazione DNS fino a 24 ore prima di diventare effettiva. Per maggiori informazioni sulla gestione dei multisiti, consulta la nostra guida [Ospitare più siti su uno stesso hosting](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/){.external}.
+Scegli quali opzioni aggiuntive attivare. Una volta completate le informazioni clicca su `Seguente`{.action} e conferma. L’operazione potrebbe richiedere fino a un’ora e la propagazione della modifica della configurazione DNS fino a 24 ore prima di diventare effettiva. Per maggiori informazioni sulla gestione dei multisiti, consulta la nostra guida [Ospitare più siti su uno stesso hosting](/pages/web/hosting/multisites_configure_multisite){.external}.
 
 ![ghostcloudweb](images/ghost-cloud-web-step4.png){.thumbnail}
 
@@ -271,13 +268,13 @@ In questo tutorial abbiamo descritto gli step necessari per l’installazione di
 
 ## Per saperne di più
 
-[Migrare un sito e un servizio di posta in OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external} (in inglese)
+[Migrare un sito e un servizio di posta in OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external} (in inglese)
 
-[Pubblicare un sito Web](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external} (in inglese)
+[Pubblicare un sito Web](/pages/web/hosting/hosting_how_to_get_my_website_online){.external} (in inglese)
 
-[Installare i moduli in 1 click OVHcloud](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/){.external}
+[Installare i moduli in 1 click OVHcloud](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Ospitare più siti su uno stesso hosting](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external} (in inglese)
+[Ospitare più siti su uno stesso hosting](/pages/web/hosting/multisites_configure_multisite){.external} (in inglese)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 

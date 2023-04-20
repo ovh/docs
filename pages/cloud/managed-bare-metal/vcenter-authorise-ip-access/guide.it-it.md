@@ -1,9 +1,7 @@
 ---
 title: Autorizzare IP ad accedere al vCenter
-slug: autorizzare-ip-ad-accedere-al-vcenter
 routes:
-    canonical: 'https://docs.ovh.com/it/private-cloud/autorizzare-ip-ad-accedere-al-vcenter/'
-section: Funzionalità OVHcloud
+    canonical: '/pages/cloud/private-cloud/autoriser_des_ip_a_se_connecter_au_vcenter'
 updated: 2020-11-18
 ---
 
@@ -22,7 +20,7 @@ Impostare restrizioni di accesso al vCenter consente di limitare la connessione 
 
 ## Procedura
 
-Se la [politica di accesso al vCenter è configurata come limitata](../modificare-la-politica-di-accesso-al-vcenter/), è necessario aggiungere gli IP che saranno autorizzati a connettersi al servizio.
+Se la [politica di accesso al vCenter è configurata come limitata](/pages/cloud/managed-bare-metal/vcenter-modify-access-policy), è necessario aggiungere gli IP che saranno autorizzati a connettersi al servizio.
 
 Questa operazione può essere effettuata dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external-link}: nella sezione `Bare Metal Cloud`, clicca su `Managed Bare Metal` nella colonna a sinistra. Seleziona l’infrastruttura, clicca sulla scheda `Sicurezza` e poi su `Aggiungi una nuova classe di indirizzi IP`{.action}.
 

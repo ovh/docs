@@ -1,11 +1,8 @@
 ---
 title: Déployer un template OVF Linux, Windows Server et Windows SQL Server
-slug: deploiement-template-ovhcloud
 routes:
-    canonical: 'https://docs.ovh.com/fr/private-cloud/deploiement-template-ovh/'
+    canonical: '/pages/cloud/private-cloud/ovf_template'
 excerpt: Découvrez comment déployer un template Linux, Windows Server ou Windows SQL Server
-section: Gestion des machines virtuelles
-order: 02
 updated: 2020-11-18
 ---
 

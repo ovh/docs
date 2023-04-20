@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: 'Vervanging van een defecte schijf'
-slug: schijf-vervanging
 excerpt: 'Ontdek hoe u een defecte schijf kunt identificeren en vervanging ervan kunt aanvragen'
-section: 'RAID & schijven'
 updated: 2018-06-21
 ---
 
@@ -47,7 +45,7 @@ Als u een e-mailwaarschuwing ontvangt of tekenen ziet dat u een defecte schijf h
 
 #### Servers die gebruikmaken van softRAID
 
-Als u een server hebt die gebruikmaakt van softRAID, raadpleeg dan de [Software RAID - EN](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external}-handleiding om de schijven te vinden die op uw server zijn geïnstalleerd.
+Als u een server hebt die gebruikmaakt van softRAID, raadpleeg dan de [Software RAID - EN](/pages/cloud/dedicated/raid_soft){.external}-handleiding om de schijven te vinden die op uw server zijn geïnstalleerd.
 
 Nadat u het toegangspad voor uw schijven hebt gevonden, kunt u ze als volgt testen met het commando `smartctl`:
 
@@ -91,7 +89,7 @@ In dit geval is de regel waar u op moet letten als volgt:
 
 #### Servers die gebruikmaken van hardRAID
 
-Als u een server hebt die hardRAID gebruikt, raadpleegt u de [Hardware RAID - EN](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}-handleiding en gebruikt u de juiste procedure voor uw RAID-controller om de toegangspaden naar uw schijven te vinden.
+Als u een server hebt die hardRAID gebruikt, raadpleegt u de [Hardware RAID - EN](/pages/cloud/dedicated/raid_hard){.external}-handleiding en gebruikt u de juiste procedure voor uw RAID-controller om de toegangspaden naar uw schijven te vinden.
 
 Nadat u het toegangspad voor uw schijven hebt gevonden, kunt u ze als volgt testen met het commando `smartctl`:
 
@@ -142,7 +140,7 @@ root@rescue:~# nvme list
 
 Om een schijfvervanging aan te vragen, hoeft u alleen maar een ticket te maken via uw [OVH Control Panel](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. U kunt het proces versnellen door de informatie te verstrekken die voor de tests is vereist. Hieronder staat een lijst met wat u moet verstrekken:
 
-- **Het serienummer van de schijf die moet worden vervangen, evenals de serienummers voor alle schijven die correct werken.** Volg [deze handleiding - EN](https://docs.ovh.com/gb/en/dedicated/find-disk-serial-number/){.external} om het serienummer van de schijf op te halen die moet worden vervangen. Als u om wat voor reden dan ook het serienummer van de schijf niet kunt achterhalen, laat het ons weten in het ticket en vermeld de serienummers van de schijven die niet hoeven te worden vervangen. 
+- **Het serienummer van de schijf die moet worden vervangen, evenals de serienummers voor alle schijven die correct werken.** Volg [deze handleiding - EN](/pages/cloud/dedicated/how_to_find_hdd_serial){.external} om het serienummer van de schijf op te halen die moet worden vervangen. Als u om wat voor reden dan ook het serienummer van de schijf niet kunt achterhalen, laat het ons weten in het ticket en vermeld de serienummers van de schijven die niet hoeven te worden vervangen. 
 
 Ter herinnering: het is belangrijk om de serienummers van alle schijven op te nemen. Ze worden naar de technicus van het datacenter gestuurd en voorkomen fouten als de vervangende handeling wordt uitgevoerd.
 
@@ -201,14 +199,14 @@ MegaCli -PdLocate -stop -physdrv[E0:S0] -a0
 
 Als u een server hebt die hardRAID gebruikt, zal de RAID zichzelf opnieuw opbouwen. Let op: *auto-rebuild* is standaard  ingeschakeld. Ga aub na of u het niet hebt uitgeschakeld. Het hersynchronisatieproces duurt enkele minuten en kan de lees- en schrijfprestaties van uw RAID tijdelijk verminderen.
 
-Als u een server hebt die gebruik maakt van softRAID, raden wij u aan om uw schijven handmatig opnieuw te synchroniseren. Hiervoor kunt u onze [softRAID - EN](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external}-handleiding raadplegen.
+Als u een server hebt die gebruik maakt van softRAID, raden wij u aan om uw schijven handmatig opnieuw te synchroniseren. Hiervoor kunt u onze [softRAID - EN](/pages/cloud/dedicated/raid_soft){.external}-handleiding raadplegen.
 
 
 ## Verder
 
-[softRAID - EN](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external}
+[softRAID - EN](/pages/cloud/dedicated/raid_soft){.external}
 
-[hardRAID - EN](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}
+[hardRAID - EN](/pages/cloud/dedicated/raid_hard){.external}
 
 [Reddingsmodus - EN](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}
 

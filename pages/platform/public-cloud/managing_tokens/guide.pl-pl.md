@@ -1,9 +1,7 @@
 ---
 title: 'Zarządzanie tokenami'
 excerpt: 'Dowiedz się, jak używać tokenów za pomocą API Keystone'
-slug: zarzadzanie_tokenami
 legacy_guide_number: g1872
-section: 'Zarządzanie w OpenStack CLI'
 updated: 2023-03-02
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: 'Definir e gerir a palavra-passe da sua conta'
-slug: gerir-a-palavra-passe
 excerpt: 'Aprenda a definir, alterar e gerir a palavra-passe da sua Área de Cliente OVHcloud'
-section: Introdução
-order: 4
 updated: 2021-07-21
 ---
 
@@ -44,7 +41,7 @@ A segurança das suas soluções depende da eficácia da palavra-passe de acesso
 
 Há vários métodos eficazes para criar palavras-passe. Recomendamos-lhe, nomeadamente, o **método das primeiras letras** e o **método fonético**.
 
-Para ficar a saber mais, consulte a secção [Quer saber mais?](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/#quer-saber-mais_2){.external} na parte de baixo deste guia.
+Para ficar a saber mais, consulte a secção [Quer saber mais?](/pages/account/customer/manage-ovh-password#quer-saber-mais_2){.external} na parte de baixo deste guia.
 
 ### Utilizar um gestor de palavras-passe
 

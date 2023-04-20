@@ -1,8 +1,6 @@
 ---
 title: 'Informacje o użytkownikach wiadomości SMS'
 excerpt: 'Poznaj funkcje umożliwiające użytkownikom API wysyłanie wiadomości SMS'
-slug: informacje-o-uzytkownikach-sms
-section: 'Zarządzanie ofertą'
 updated: 2022-08-05
 ---
 
@@ -101,7 +99,7 @@ Możesz wprowadzić do 5 różnych publicznych adresów IP dla wysyłania zapyta
 
 ![sms-users](images/smsusers06-2021.png){.thumbnail}
 
-Aby uzyskać więcej informacji na temat funkcji http2sms, przeczytaj przewodnik [Wysyłanie wiadomości SMS z adresu URL](../wysylanie-wiadomosci-sms-z-adresu-url-http2sms/).
+Aby uzyskać więcej informacji na temat funkcji http2sms, przeczytaj przewodnik [Wysyłanie wiadomości SMS z adresu URL](/pages/telecom/sms/envoyer_des_sms_depuis_une_url_-_http2sms).
 
 ### Etap 5: określanie adresu URL wywołania zwrotnego
 
@@ -126,7 +124,7 @@ Aby uzyskać opis określonego kodu ptt, możesz użyć następującego API:
 > @api {GET} /sms/ptts
 >
 
-Aby uzyskać więcej informacji na temat korzystania z API OVHcloud, zapoznaj się z naszym przewodnikiem [Pierwsze kroki z API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/).
+Aby uzyskać więcej informacji na temat korzystania z API OVHcloud, zapoznaj się z naszym przewodnikiem [Pierwsze kroki z API OVHcloud](/pages/account/api/first-steps).
 
 Poniższa tabela zawiera **niewyczerpującą** listę głównych kodów ptt.
 

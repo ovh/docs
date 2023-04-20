@@ -1,8 +1,5 @@
 ---
 title: FAQ Public Cloud OVHcloud
-slug: public-cloud-faq
-section: 'General information'
-order: 01
 updated: 2022-12-01
 ---
 
@@ -14,25 +11,25 @@ updated: 2022-12-01
 
 You can log in using an SSH key set that you need to configure when you create your Public Cloud instance.
 
-Please read our guide on [Creating and connecting to your first Public Cloud instance](https://docs.ovh.com/us/en/public-cloud/public-cloud-first-steps/).
+Please read our guide on [Creating and connecting to your first Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps).
 
 ### I lost or I want to change my SSH key, how to proceed ?
 
 If you can no longer log in after losing your private key, you will need to change your instance's public key by switching it to rescue mode.
 
-Please read our guide on [Replacing your lost SSH key pair](https://docs.ovh.com/us/en/public-cloud/replacing_your_lost_ssh_key_pair/).
+Please read our guide on [Replacing your lost SSH key pair](/pages/platform/public-cloud/replacing_lost_ssh_key).
 
 ### What are the backup options for my instance?
 
 You can create a backup of an instance at any time via the OVHcloud Control Panel. You can use a backup to restore your instance to an old configuration, or recreate it.
 
-Please read our guide on [Backing up an instance](https://docs.ovh.com/us/en/public-cloud/back-up-instance/).
+Please read our guide on [Backing up an instance](/pages/platform/public-cloud/save_an_instance).
 
 ### How do I create and manage OpenStack users?  
 
 To use the Horizon or OpenStack APIs, you will need to create an OpenStack user. You can create an unlimited number of OpenStack users.
 
-Please read our guide on [Creating and deleting an OpenStack user](https://docs.ovh.com/us/en/public-cloud/creation-and-deletion-of-openstack-user/).
+Please read our guide on [Creating and deleting an OpenStack user](/pages/platform/public-cloud/create_and_delete_a_user).
 
 ### How does Public Cloud billing work?
 
@@ -40,7 +37,7 @@ Between day 1 and 5 of each month, you will be billed for any resources used dur
 Please note that you will be billed for instances until you delete them in the OVHcloud Control Panel.
 You can track your resource usage with projections based on your usage history. You also have the option of choosing a separate billing method for each Public Cloud project within your organisation.
 
-To switch from one billing method to another, please refer to our guide on [Switching from hourly to monthly billing](https://docs.ovh.com/us/en/public-cloud/change-public-cloud-billing-rate/).
+To switch from one billing method to another, please refer to our guide on [Switching from hourly to monthly billing](/pages/platform/public-cloud/changing_hourly_monthly_billing).
 
 ### How do I add or remove instances, if my resource requirements change?
 
@@ -55,7 +52,7 @@ Yes. Cloud images provided by OVHcloud include cloud-init scripts that allow you
 
 You can create backup instances of your servers at any time, with no limitations. These backups are stored and invoiced in the same way as the images in "Private Image". With the OpenStack APIs, you can download them from the OVHcloud infrastructure, or from other projects.
 
-Please read our guide on [Backing up an instance](https://docs.ovh.com/us/en/public-cloud/back-up-instance/).
+Please read our guide on [Backing up an instance](/pages/platform/public-cloud/save_an_instance).
 
 ### Can I resize a volume dynamically, while continuing to write on the disk?
 
@@ -69,7 +66,7 @@ You can attach up to 25 additional volumes per instance.
 
 OVHcloud protects its entire infrastructure with its exclusive anti-DDoS solution. In addition, you can add the OpenStack security groups. This firewall equivalent is managed directly through the OpenStack infrastructure, above your instances.
 
-Please refer to our guide on [Configuring a security group](https://docs.ovh.com/us/en/public-cloud/configure-security-group-horizon/) .
+Please refer to our guide on [Configuring a security group](/pages/platform/public-cloud/setup_security_group) .
 
 These protections, combined with others that can be launched on your servers, will help you maximise the reliability of your solutions.
 
@@ -78,14 +75,14 @@ These protections, combined with others that can be launched on your servers, wi
 The OVHcloud Public Cloud includes a software-defined network (SDN) solution. You can use it to dynamically create private networks, then connect them to instances via the OVHcloud Control Panel or the API.
 These private networks are powered by OVHcloud's vRack technology, which is common to the company's other services, such as Private Cloud or dedicated servers. This way, you can connect all of your infrastructure elements to OVHcloud, in an isolated, secure way.
 
-Please read our guide on [Configuring vRack for Public Cloud](https://docs.ovh.com/us/en/publiccloud/network-services/public-cloud-vrack/).
+Please read our guide on [Configuring vRack for Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack).
 
 By default, the private network uses Openstack native network protections. This includes various mechanisms such as IP spoofing protection.
 On the instance side, this can result in blocking network packets depending on your usage (pfSense, router, CARP protocol...).
 
 Depending on your needs, you will need to disable the `Port Security` feature on the port or private network.
 
-Please refer to our guide on [Managing firewall rules and port security on networks using OpenStack CLI](https://docs.ovh.com/us/en/public-cloud/firewall_security_pci/).
+Please refer to our guide on [Managing firewall rules and port security on networks using OpenStack CLI](/pages/platform/public-cloud/security_group_private_network).
 
 You can also find all the details in the [OpenStack documentation](https://docs.openstack.org/developer/dragonflow/specs/mac_spoofing.html) or on [superuser.openstack.org](https://superuser.openstack.org/articles/managing-port-level-security-openstack/).
 
@@ -93,7 +90,7 @@ You can also find all the details in the [OpenStack documentation](https://docs.
 
 Public IP addresses are automatically assigned to instances, and therefore cannot be modified. To control an instance's public IP address, we recommend using an Additional IP. This way, regardless of the public address assigned to the instance automatically, you can add one or more Additional IPs to your instance.
 
-For more information, please refer to this guide: [Buying an Additional IP](https://docs.ovh.com/us/en/publiccloud/network-services/buy-additional-ip/).
+For more information, please refer to this guide: [Buying an Additional IP](/pages/platform/network-services/additional-ip-buy).
 
 ### How to check if my instance is affected by MDS bug?
 
@@ -105,7 +102,7 @@ cat /sys/devices/system/cpu/vulnerabilities/mds
 
 If the result is `Vulnerable`, dont worry, the hypervisor hosting your instance is protecting you.
 
-Anyway, if you want to mitigate this inside your instance as well, you should hard reboot your instance, either doing it from the [OVHcloud Control Panel](https://docs.ovh.com/us/en/public-cloud/get-started-with-a-public-cloud-instance/#restarting-the-instance), or with a command like this:
+Anyway, if you want to mitigate this inside your instance as well, you should hard reboot your instance, either doing it from the [OVHcloud Control Panel](/pages/platform/public-cloud/first_steps_with_public_cloud_instance#restarting-the-instance), or with a command like this:
 
 ```bash
 openstack server reboot --hard $serverID

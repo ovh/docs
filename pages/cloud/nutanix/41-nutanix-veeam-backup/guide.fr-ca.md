@@ -1,9 +1,6 @@
 ---
 title: Configurer Veeam Backup pour Nutanix
-slug: nutanix-veeam-backup
 excerpt: "Installation de la sauvegarde Veeam Backup sur un cluster Nutanix"
-section: Sauvegardes
-order: 02
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
 category_l2: Backups
@@ -29,7 +26,7 @@ Veeam Backup est un logiciel de sauvegarde disponible pour Nutanix.
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Être connecté sur le cluster via **Prism Central**. 
-- **Veeam Backup & Replication** installé sur une machine virtuelle de votre cluster Nutanix via cette procédure : [Installer Veeam Backup & Replication](https://docs.ovh.com/ca/fr/storage/veeam-backup-replication/).
+- **Veeam Backup & Replication** installé sur une machine virtuelle de votre cluster Nutanix via cette procédure : [Installer Veeam Backup & Replication](/pages/cloud/storage/backup/veeam_veeam_backup_replication).
 - Connaître l'adresse IP publique utilisée par **Veeam Backup** pour accéder à Internet.
 - Disposer de 4 Go de mémoire vive, 60 Go de stockage et 4 vCPU pour l'ajout d'une machine virtuelle supplémentaire lors de la configuration des extensions pour **Veeam Backup & Replication**.
 - Posséder un stockage distant hors du cluster, de type [Enterprise File Storage OVHcloud](https://www.ovhcloud.com/fr-ca/storage-solutions/enterprise-file-storage/).
@@ -470,6 +467,6 @@ Un aperçu de l'état de la restauration se lance, il faut patienter quelques te
 
 [Documentation VEEAM sur l'installation de VEEAM Backup pour Nutanix AHV](https://helpcenter.veeam.com/docs/van/userguide/installing.html?ver=30)
 
-[Les solutions de stockage OVHcloud](https://docs.ovh.com/ca/fr/storage/)
+[Les solutions de stockage OVHcloud](/products/storage-backup)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

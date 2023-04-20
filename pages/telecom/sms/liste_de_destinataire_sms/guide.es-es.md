@@ -1,9 +1,7 @@
 ---
 title: 'Lista de destinatarios de SMS'
-slug: lista-de-destinatarios-sms
 excerpt: 'Esta guía explica cómo crear una lista de destinatarios de SMS e importarla en el área de cliente de OVHcloud'
 legacy_guide_number: g2402
-section: 'Gestionar el servicio'
 updated: 2022-08-05
 ---
 
@@ -91,12 +89,12 @@ Asigne un nombre al archivo de destinatarios e importe el archivo local desde el
 
 ### 3. Enviar un SMS a su lista de destinatarios
 
-Una vez importada la lista, puede seguir las instrucciones de nuestra guía [Enviar SMS desde el área de cliente](https://docs.ovh.com/es/sms/enviar-sms-desde-el-area-de-cliente/) para enviar un SMS a los destinatarios de esta lista.
+Una vez importada la lista, puede seguir las instrucciones de nuestra guía [Enviar SMS desde el área de cliente](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client) para enviar un SMS a los destinatarios de esta lista.
 
 ## Más información
 
-[Enviar SMS desde el área de cliente](https://docs.ovh.com/es/sms/enviar-sms-desde-el-area-de-cliente/)
+[Enviar SMS desde el área de cliente](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client)
 
-[Agenda de contactos de SMS](https://docs.ovh.com/es/sms/agenda-de-contactos-de-sms/)
+[Agenda de contactos de SMS](/pages/telecom/sms/gerer_mes_carnets_dadresses_sms)
 
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).

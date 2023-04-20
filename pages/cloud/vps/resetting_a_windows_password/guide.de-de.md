@@ -1,8 +1,6 @@
 ---
 title: 'Windows-Passwort zurücksetzen'
-slug: reinitialisierung-windows-passwort
 excerpt: Anleitung zum Zurücksetzen eines Passworts unter Windows
-section: Diagnose & Rescue Modus
 updated: 2020-11-25
 ---
 
@@ -18,7 +16,7 @@ Möglicherweise müssen Sie das Windows-Passwort auf Ihrem VPS zurücksetzen. Di
 
 ## Voraussetzungen
 
-- Der VPS muss sich im Rescue-Modus befinden (für weitere Informationen lesen Sie die [Anleitung zum Rescue-Modus](../rescue)).
+- Der VPS muss sich im Rescue-Modus befinden (für weitere Informationen lesen Sie die [Anleitung zum Rescue-Modus](/pages/cloud/vps/rescue)).
 
 ## In der praktischen Anwendung
 
@@ -46,7 +44,7 @@ chntpw -u Administrator SAM
 
 Drücken Sie auf `1`{.action} und `Enter`{.action}, um das Passwort zu löschen. Drücken Sie `q`{.action}, um die Prozedur zur Änderung des Passworts zu verlassen. Drücken Sie anschließend auf `y`{.action}, um die Änderungen in die SAM-Datei zu schreiben.
 
-Sie können den VPS nun aus dem Rescue-Modus entfernen. (Weitere Informationen finden Sie in der Anleitung [Rescue-Modus für VPS](../rescue).)
+Sie können den VPS nun aus dem Rescue-Modus entfernen. (Weitere Informationen finden Sie in der Anleitung [Rescue-Modus für VPS](/pages/cloud/vps/rescue).)
 
 Bei Ihrer nächsten Anmeldung müssen Sie kein Passwort für die Windows-Session eingeben.
 

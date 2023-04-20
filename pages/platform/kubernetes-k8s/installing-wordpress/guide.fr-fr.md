@@ -1,11 +1,8 @@
 ---
 title: Installing WordPress on OVHcloud Managed Kubernetes
-slug: installing-wordpress
 excerpt: "Find out how to install WordPress on OVHcloud Managed Kubernetes"
-section: Tutorials
-order: 5
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-wordpress/'
+    canonical: '/pages/platform/kubernetes-k8s/installing-wordpress'
 updated: 2021-12-17
 ---
 
@@ -37,9 +34,9 @@ In this tutorial, we will guide you through the installation of [WordPress](http
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/platform/kubernetes-k8s/deploying-hello-world).
 
-You also need to have [Helm](https://docs.helm.sh/) installed on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/) installed on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/platform/kubernetes-k8s/installing-helm) tutorial.
 
 ## Pre-requisites
 
@@ -236,4 +233,4 @@ persistentvolumeclaim "data-my-first-k8s-wordpress-mariadb-0" deleted
 
 So now you have a working WordPress on your OVHcloud Managed Kubernetes cluster.
 
-Don't hesitate to go to our [Managed Kubernetes guides and tutorials](../).
+Don't hesitate to go to our [Managed Kubernetes guides and tutorials](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).

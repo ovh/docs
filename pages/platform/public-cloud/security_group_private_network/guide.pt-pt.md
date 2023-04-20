@@ -1,8 +1,6 @@
 ---
 title: Gestão das regras de firewall e port security nas redes que utilizam OpenStack CLI
-slug: firewall_security_pci
 excerpt: Descubra o funcionamento dos grupos de segurança no Public Cloud
-section: Gestão via OpenStack
 updated: 2023-03-13
 ---
 
@@ -18,8 +16,7 @@ updated: 2023-03-13
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -44,8 +41,8 @@ Uma **porta** no âmbito do [OpenStack Neutron](https://docs.openstack.org/neutr
 
 ## Requisitos
 
-- [Preparar o ambiente para utilizar a API OpenStack](https://docs.ovh.com/pt/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Carregar as variáveis de ambiente OpenStack](https://docs.ovh.com/pt/public-cloud/set-openstack-environment-variables/)
+- [Preparar o ambiente para utilizar a API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Carregar as variáveis de ambiente OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## Instruções
 

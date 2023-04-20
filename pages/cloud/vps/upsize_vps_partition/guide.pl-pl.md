@@ -1,7 +1,5 @@
 ---
 title: 'Zmiana rozmiaru partycji na serwerze VPS po zmianie oferty'
-slug: zmiana-rozmiaru-partycji-vps-upgrade
-section: 'Pierwsze kroki'
 updated: 2021-05-18
 ---
 
@@ -25,7 +23,7 @@ Podczas zmiany oferty serwera VPS może okazać się konieczna zmiana rozmiaru p
 ## Wymagania początkowe
 
 - Dostęp administratora do serwera VPS (Windows)
-- Ponowne uruchomienie serwera w [Trybie Rescue](https://docs.ovh.com/pl/vps/rescue/)(Linux)
+- Ponowne uruchomienie serwera w [Trybie Rescue](/pages/cloud/vps/rescue)(Linux)
 
 ## W praktyce
 
@@ -79,7 +77,7 @@ Pass 5: Checking group summary information
 
 Jeśli stwierdzisz błąd, podejmij działania stosownie do Twojego przypadku. Poniżej podajemy przykłady najczęściej spotykanych błędów:
 
-- `bad magic number in superblock`: nie kontynuuj. Procedura rozwiązania tego problemu została wyjaśniona w części tego przewodnika: [Jak usunąć błędy bad magic number in superblock](https://docs.ovh.com/pl/vps/zmiana-rozmiaru-partycji-vps-upgrade/#jak-naprawiac-bledy-bad-magic-number-in-superblock);
+- `bad magic number in superblock`: nie kontynuuj. Procedura rozwiązania tego problemu została wyjaśniona w części tego przewodnika: [Jak usunąć błędy bad magic number in superblock](/pages/cloud/vps/upsize_vps_partition#jak-naprawiac-bledy-bad-magic-number-in-superblock);
 
 - `/dev/vdb1 has unsupported feature(s): metadata_csum` a następnie `e2fsck: Get a newer version of e2fsck!`: aktualizuj e2fsck. Jeśli ostatnia wersja nie jest dostępna za pośrednictwem `apt` (lub innego managera pakietów), skompiluj ją ze źródeł.
 

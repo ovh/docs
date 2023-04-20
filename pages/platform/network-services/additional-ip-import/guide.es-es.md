@@ -1,9 +1,6 @@
 ---
 title: Importar una Additional IP
 excerpt: "Importar una Additional IP"
-slug: import-additional-ip
-section: Additional IP
-order: 03
 updated: 2023-01-04
 ---
 
@@ -75,7 +72,7 @@ Haga clic en `Adjuntar`{.action} para confirmar la operación. Se mostrará un m
 
 Su dirección Additional IP estará asociada a su instancia.
 
-El siguiente paso es configurar la IP en el sistema operativo. Consulte [nuestra guía sobre cómo configurar](https://docs.ovh.com/es/publiccloud/network-services/configure-additional-ip/) el alojamiento web.
+El siguiente paso es configurar la IP en el sistema operativo. Consulte [nuestra guía sobre cómo configurar](/pages/platform/network-services/getting-started-04-configure-additional-ip-to-instance) el alojamiento web.
 
 ## Más información
 

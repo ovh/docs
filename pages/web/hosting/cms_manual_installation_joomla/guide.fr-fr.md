@@ -1,9 +1,6 @@
 ---
 title: "Tutoriel - Installer manuellement Joomla!"
-slug: installer-manuellement-joomla
 excerpt: "Découvrez comment installer manuellement votre CMS Joomla!"
-section: CMS
-order: 05
 updated: 2023-03-17
 ---
 
@@ -22,9 +19,9 @@ Vous trouverez ici tous les éléments pour installer manuellement le CMS (Conte
 
 > [!success]
 >
-> Pour installer Joomla! **automatiquement** depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), consultez notre documentation sur l'[installation d'un module « en un clic »](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
+> Pour installer Joomla! **automatiquement** depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), consultez notre documentation sur l'[installation d'un module « en un clic »](/pages/web/hosting/cms_install_1_click_modules).
 >
-> Pour installer **manuellement un autre CMS** (WordPress, Drupal, PrestaShop), consultez notre documentation sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
+> Pour installer **manuellement un autre CMS** (WordPress, Drupal, PrestaShop), consultez notre documentation sur l'[installation manuelle d'un CMS](/pages/web/hosting/cms_manual_installation).
 >
 
 **Découvrez comment installer manuellement votre CMS Joomla!**
@@ -41,7 +38,7 @@ Vous trouverez ici tous les éléments pour installer manuellement le CMS (Conte
 
 Pour installer le CMS **Joomla!** sur votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), quelques préparatifs sont nécessaires.
 
-Suivez l'**ensemble des étapes** décrites dans notre tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) avant de poursuivre à l'étape 2 ci-dessous.
+Suivez l'**ensemble des étapes** décrites dans notre tutoriel sur l'[installation manuelle d'un CMS](/pages/web/hosting/cms_manual_installation) avant de poursuivre à l'étape 2 ci-dessous.
 
 ### Etape 2 - finaliser l'installation manuelle <a name="step2"></a>
 
@@ -83,7 +80,7 @@ Renseignez les informations demandées concernant la base de données :
 
 ![Joomla installation step 3](images/Joomla-install-db-connect-3.png){.thumbnail}
 
-Référez-vous aux informations indiquées dans **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour compléter les champs suivants :
+Référez-vous aux informations indiquées dans **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](/pages/web/hosting/cms_manual_installation) pour compléter les champs suivants :
 
 - *Selectionner le type de base de données* : sélectionnez le type de votre base de données parmi les types disponibles pour Joomla!. Si vous utilisez une base de données mutualisée OVHcloud, vous pouvez laisser par défaut la valeur **MySQLi**.
 
@@ -97,13 +94,13 @@ Référez-vous aux informations indiquées dans **l'étape 1.4** du tutoriel sur
 >
 
 - *Saisissez soit un nom d'utilisateur que vous avez créé, soit un nom d'utilisateur fourni par votre hébergeur* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
-Pour les bases de données créées sur un Web Cloud Databases, référez-vous aux informations indiquées dans **l'étape 1.4** du guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
+Pour les bases de données créées sur un Web Cloud Databases, référez-vous aux informations indiquées dans **l'étape 1.4** du guide sur l'[installation manuelle d'un CMS](/pages/web/hosting/cms_manual_installation).
 
 - *Saisissez soit un mot de passe que vous avez créé, soit un mot de passe fourni par votre hébergeur* : vous l'avez vous-même défini lors de la création de votre base de données. Il est également possible que vous l'ayez modifié entre temps, nous vous invitons à le vérifier.
 
 - *Entrer le nom de la base de données* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Il est identique au nom d'utilisateur de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
 
-- *Saisissez un préfixe de table ou utilisez celui qui est généré de manière aléatoire* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** du guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
+- *Saisissez un préfixe de table ou utilisez celui qui est généré de manière aléatoire* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** du guide sur l'[installation manuelle d'un CMS](/pages/web/hosting/cms_manual_installation) pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
 
 - **Chiffrement de la connexion** : laissez la valeur **Par défaut**.
 
@@ -115,7 +112,7 @@ Le message suivant apparaît :
 
 Du fait que vous utilisez une base de données présente en dehors d'un hébergement local, vous devrez supprimer le *token* généré aléatoirement lors de l'installation de votre Joomla!.
 
-Ce fichier à supprimer se trouve dans votre [espace de stockage FTP](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+Ce fichier à supprimer se trouve dans votre [espace de stockage FTP](/pages/web/hosting/ftp_connection).
 
 Une fois connecté, rendez-vous dans le dossier **installation** de votre Joomla! puis supprimez uniquement le *token* indiqué par le message d'alerte. Il est présent sous la forme d'un fichier **.txt**.
 

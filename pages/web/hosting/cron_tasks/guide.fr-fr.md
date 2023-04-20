@@ -1,9 +1,6 @@
 ---
 title: Créer des tâches automatisées (CRON) sur votre hébergement Web
-slug: mutualise-taches-automatisees-cron
 excerpt: Découvrez comment créer des tâches CRON pour automatiser vos tâches planifiées sur un hébergement web
-section: Tâches automatisées (CRON)
-order: 01
 updated: 2022-12-01
 ---
 
@@ -105,7 +102,7 @@ Veillez toujours à utiliser des chemins d'accès absolus aux fichiers de vos sc
 
 Dans [les logs]  de votre hébergement Web, accessibles depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, vous verrez la catégorie de log intitulée « CRON ».
 
-Consultez notre guide [« Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée »](../mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/#logs_1) pour plus de détails.
+Consultez notre guide [« Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée »](/pages/web/hosting/logs_and_statistics#logs_1) pour plus de détails.
 
 ##### **Exemple de logs**
 
@@ -148,9 +145,9 @@ Consultez notre guide [« Consulter les statistiques et les logs de mon site hé
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 
-[Configurer le fichier .ovhconfig de son hébergement web](../configurer-fichier-ovhconfig/)
+[Configurer le fichier .ovhconfig de son hébergement web](/pages/web/hosting/ovhconfig_configuration)
 
-[Utiliser l’accès SSH de son hébergement web](../mutualise-le-ssh-sur-les-hebergements-mutualises/)
+[Utiliser l’accès SSH de son hébergement web](/pages/web/hosting/ssh_on_webhosting)
 
-[Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](../mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/)
+[Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](/pages/web/hosting/logs_and_statistics)
 

@@ -1,8 +1,6 @@
 ---
 title: Installation von WordPress auf einer Instanz
 excerpt: Erfahren Sie hier, wie Sie eine Public Cloud Instanz für das Hosting von WordPress-Webseiten verwenden
-slug: installation_von_wordpress_auf_einer_instanz
-section: 'Tutorials'
 updated: 2021-10-15
 ---
 
@@ -27,7 +25,7 @@ Leider können wir Ihnen für administrative Aufgaben keine weitergehende techni
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account.
-- Sie haben eine [Public Cloud Instanz](../public-cloud-erste-schritte/) mit Debian oder Ubuntu erstellt.
+- Sie haben eine [Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps) mit Debian oder Ubuntu erstellt.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben administrativen Zugriff (Root) auf Ihre Instanz über SSH.
 
@@ -40,7 +38,7 @@ Leider können wir Ihnen für administrative Aufgaben keine weitergehende techni
 
 Um über einen Domainnamen auf Ihre Installation zuzugreifen, müssen Sie diesen mit Ihrer Instanz verknüpfen. Dazu müssen Sie die DNS-Zone bearbeiten, auf die Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zugreifen können, vorausgesetzt OVHcloud ist Ihr Domain-Registrar **und** der Domainname verwendet die OVHcloud DNS-Server.
 
-Weitere Informationen finden Sie in der [Anleitung zum Bearbeiten der DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/). Wenn der Domainname aktuell verwendet wird, konfigurieren Sie DNS erst nach der Installation des neuen WordPress und dem Einrichten Ihrer Website.
+Weitere Informationen finden Sie in der [Anleitung zum Bearbeiten der DNS-Zone](/pages/web/domains/dns_zone_edit). Wenn der Domainname aktuell verwendet wird, konfigurieren Sie DNS erst nach der Installation des neuen WordPress und dem Einrichten Ihrer Website.
 
 ### Schritt 1: Installation des Webservers (LAMP)
 
@@ -221,7 +219,7 @@ Der Webserver ist nun bereit für die Erstkonfiguration von WordPress.
 
 ### Schritt 5: WordPress konfigurieren
 
-Öffnen Sie einen Webbrowser und rufen Sie Ihr WordPress auf, indem Sie die IP-Adresse Ihrer Instanz eingeben (oder den zugehörigen Domainnamen, falls Sie bereits einen [mit der Instanz verknüpft haben](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/)). Wählen Sie auf der ersten Seite eine Sprache aus.
+Öffnen Sie einen Webbrowser und rufen Sie Ihr WordPress auf, indem Sie die IP-Adresse Ihrer Instanz eingeben (oder den zugehörigen Domainnamen, falls Sie bereits einen [mit der Instanz verknüpft haben](/pages/web/domains/dns_zone_edit)). Wählen Sie auf der ersten Seite eine Sprache aus.
 
 Verwenden Sie den WordPress-Konfigurationsassistenten, um den Zugriff auf Ihre Datenbank zu ermöglichen. Geben Sie dazu die Zugangsdaten ein, die Sie [zuvor konfiguriert haben](#sqlconf).
 

@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Wie kann ich den Zugang zu meiner Website für bestimmte IP-Adressen über eine .htaccess Datei sperren?"
-slug: htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website
 excerpt: "Erfahren Sie hier die Möglichkeiten, um mit .htaccess Dateien den Zugriff auf Ihre Website für bestimmte IP-Adressen zu blockieren"
-section: Weiterleitung und Authentifizierung
-order: 01
 updated: 2022-09-12
 ---
 
@@ -20,7 +17,7 @@ Dieses Tutorial hilft Ihnen dabei, den Zugang zu Ihren Webseiten von externen Ne
 
 Sie können das mithilfe einer ".htaccess" Datei erreichen. Es handelt sich dabei um eine spezielle Textdatei, die vom Webserver (Apache) gelesen wird und es ermöglicht, bestimmte Regeln für ein Verzeichnis und dessen Unterverzeichnisse festzulegen.
 
-Sie können mehrere ".htaccess" Dateien in [FTP-Bereich](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) Ihres Hostings erstellen, jedoch nur **eine einzige** pro Verzeichnis oder Unterverzeichnis, um Konflikte zwischen verschiedenen ".htaccess" Dateien zu vermeiden.
+Sie können mehrere ".htaccess" Dateien in [FTP-Bereich](/pages/web/hosting/ftp_connection) Ihres Hostings erstellen, jedoch nur **eine einzige** pro Verzeichnis oder Unterverzeichnis, um Konflikte zwischen verschiedenen ".htaccess" Dateien zu vermeiden.
 
 **Diese Anleitung erklärt, wie Sie den Zugang zu Ihrer Seite für bestimmte IP-Adressen über eine ".htaccess" Datei blockieren.**
 
@@ -42,14 +39,14 @@ Sie können mehrere ".htaccess" Dateien in [FTP-Bereich](https://docs.ovh.com/de
 >
 > Die Parameter einer ".htaccess" Datei gelten für das Verzeichnis, in dem sie sich befindet, sowie für alle Unterverzeichnisse.
 >
-> Um diese Verzeichnisse zu bearbeiten (oder zu erstellen), loggen Sie sich in den FTP-Bereich Ihres Hostings ein. Falls nötig lesen Sie die Anleitung "[Mit dem Speicherplatz eines Webhostings verbinden](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/)".
+> Um diese Verzeichnisse zu bearbeiten (oder zu erstellen), loggen Sie sich in den FTP-Bereich Ihres Hostings ein. Falls nötig lesen Sie die Anleitung "[Mit dem Speicherplatz eines Webhostings verbinden](/pages/web/hosting/ftp_connection)".
 >
 
 ### Eine IP, einen IP-Bereich, eine Domain oder alle IPs eines Landes blockieren 
 
 Es sind mehrere Regeln verfügbar, um die Zugänge zu Ihrem Hosting über die ".htaccess" zu sperren.<br>
 Achten Sie auf die Syntax und die Blockierungseinstellungen, damit Sie sich nicht selbst vom Aufruf Ihrer gehosteten Seiten und/oder Skripte aussperren.<br>
-Im Fehlerfall können Sie sich jederzeit in den [FTP-Bereich](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) Ihres Hostings einloggen, um den Fehler zu korrigieren. 
+Im Fehlerfall können Sie sich jederzeit in den [FTP-Bereich](/pages/web/hosting/ftp_connection) Ihres Hostings einloggen, um den Fehler zu korrigieren. 
 
 > [!primary]
 >
@@ -369,8 +366,8 @@ Um allen IP-Adressen eines Landes den Zugriff auf Ihren Dienst zu erlauben, trag
 
 Abgesehen von der Zugriffssicherheit auf Ihr Hosting erlaubt die ".htaccess" Datei noch weitere Aktionen. Nachfolgend finden Sie weitere OVHcloud Tutorials zum Thema:
 
-- [Den Adminbereich Ihrer Website mit einer .htaccess Datei schützen](https://docs.ovh.com/de/hosting/hosting-htaccess-authentifizierung/)
-- [Fortgeschrittene Operationen mit .htaccess Dateien](https://docs.ovh.com/de/hosting/webhosting_welche_anderen_operationen_sind_mit_htaccess-dateien_moglich/)
+- [Den Adminbereich Ihrer Website mit einer .htaccess Datei schützen](/pages/web/hosting/htaccess_protect_directory_by_password)
+- [Fortgeschrittene Operationen mit .htaccess Dateien](/pages/web/hosting/htaccess_what_else_can_you_do)
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

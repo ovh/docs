@@ -1,9 +1,6 @@
 ---
 title: 'O que fazer no caso de uma conta bloqueada por spam?'
-slug: bloqueado-por-spam
 excerpt: 'Descubra como proceder se o seu endereço tiver sido bloqueado por spam'
-section: 'Diagnóstico Exchange'
-order: 03
 updated: 2020-04-20
 ---
 

@@ -1,10 +1,7 @@
 ---
 title: 'Configurare un account MX Plan sull’applicazione Posta per Windows 10'
-slug: servizio_email_guida_alla_configurazione_dellapp_posta_di_windows_10
 excerpt: 'Scopri come configurare un account email MX Plan sull’applicazione Posta per Windows'
 legacy_guide_number: g2284
-section: Configurazione su computer
-order: 06
 updated: 2018-04-04
 ---
 
@@ -24,7 +21,7 @@ Gli indirizzi email dell’offerta MX Plan possono essere configurati su un clie
 
 > [!primary]
 >
-> Utilizzi una versione precedente di Windows? Consulta la nostra documentazione: [Configurare un account di posta elettronica nell’applicazione Posta per Windows 8](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_di_windows_8/){.external}
+> Utilizzi una versione precedente di Windows? Consulta la nostra documentazione: [Configurare un account di posta elettronica nell’applicazione Posta per Windows 8](/pages/web/emails/how_to_configure_windows_10){.external}
 >
 
 ## Procedura
@@ -91,8 +88,8 @@ OVHcloud propone un’applicazione Web per accedere al tuo account email diretta
  
 ## Per saperne di più
 
-[Configurare un account E-mail Pro nell’applicazione Posta per Windows](../../emails-pro/configurazione-posta-windows-10/)
+[Configurare un account E-mail Pro nell’applicazione Posta per Windows](/pages/web/emails-pro/how_to_configure_windows_10)
 
-[Configurare un account Exchange nell’applicazione Posta per Windows 10](../../microsoft-collaborative-solutions/configurazione-posta-windows-10/)
+[Configurare un account Exchange nell’applicazione Posta per Windows 10](/pages/web/microsoft-collaborative-solutions/how_to_configure_windows_10)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

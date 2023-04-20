@@ -1,9 +1,6 @@
 ---
 title: 'Usar Outlook Web App con una cuenta Exchange'
 excerpt: 'Aprenda a gestionar su dirección Exchange con el webmail de OWA'
-slug: exchange_2016_guia_de_uso_de_outlook_web_app
-section: 'Uso de Outlook Web Application (OWA)'
-order: 01
 updated: 2021-06-25
 ---
 
@@ -122,7 +119,7 @@ Rellene la información solicitada según la acción que quiere que lleve a cabo
 
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
-Para obtener instrucciones más detalladas sobre la creación de reglas de la bandeja de entrada, consulte nuestra guía: [Crear reglas de la bandeja de entrada en OWA](../crear-reglas-de-bandeja-de-entrada-en-owa/).
+Para obtener instrucciones más detalladas sobre la creación de reglas de la bandeja de entrada, consulte nuestra guía: [Crear reglas de la bandeja de entrada en OWA](/pages/web/microsoft-collaborative-solutions/creating-inbox-rules-in-owa).
 
 #### Bloquear un remitente
 
@@ -186,7 +183,7 @@ Rellene la información solicitada según la acción que quiere que se lleve a c
 
 ![useowa](images/owa_exchange_step21.png){.thumbnail}
 
-Para obtener instrucciones más detalladas sobre la creación de respuestas automáticas, consulte nuestra guía: [Crear respuestas automáticas en OWA](../exchange_2016_crear_un_contestador_con_el_webmail_owa/).
+Para obtener instrucciones más detalladas sobre la creación de respuestas automáticas, consulte nuestra guía: [Crear respuestas automáticas en OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies).
 
 ### Añadir una firma
 
@@ -200,7 +197,7 @@ En la barra de la izquierda de la página nueva, haga clic en `Firma de correo e
 
 Introduzca su firma electrónica en el cuadro de edición. Puede especificar si quiere incluir la firma por defecto solo en los correos nuevos o también en respuestas o correos reenviados. Una vez haya terminado, haga clic en `Guardar`{.action} para confirmar.
 
-Para obtener instrucciones sobre la creación de firmas automáticas mediante el uso de plantillas para todos los dominios, consulte nuestra guía: [Creación de firmas automáticas](../exchange_20132016_firma_automatica_disclaimer).
+Para obtener instrucciones sobre la creación de firmas automáticas mediante el uso de plantillas para todos los dominios, consulte nuestra guía: [Creación de firmas automáticas](/pages/web/microsoft-collaborative-solutions/feature_footers).
 
 ### Acceder a la sección de opciones
 
@@ -221,12 +218,12 @@ No obstante, la desactivación de estas cookies puede afectar a la estabilidad d
 
 ## Más información
 
-[Crear respuestas automáticas en OWA](../exchange_2016_crear_un_contestador_con_el_webmail_owa/)
+[Crear respuestas automáticas en OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies)
 
-[Compartir carpetas en OWA](../exchange_2016_compartir_una_carpeta_con_el_webmail_owa/)
+[Compartir carpetas en OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
-[Compartir calendarios en OWA](../exchange_2016_compartir_un_calendario_con_el_webmail_owa/)
+[Compartir calendarios en OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Crear grupos de contactos](../exchange_20132016_uso_de_los_grupos_listas_de_correo/)
+[Crear grupos de contactos](/pages/web/microsoft-collaborative-solutions/feature_groups)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

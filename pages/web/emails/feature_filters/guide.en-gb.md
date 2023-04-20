@@ -1,10 +1,7 @@
 ---
 title: 'Creating filters for your email addresses'
-slug: email-hosting-configuring-filters
 legacy_guide_number: 1973
 excerpt: 'Find out how to create and configure filter rules on your email address'
-section: 'Email address features'
-order: 04
 updated: 2021-09-27
 ---
 
@@ -35,7 +32,7 @@ For example: you can automatically delete emails tagged as spam by our spam prot
 MX Plan legacy version|MX Plan new version|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Find the solution in the section "Plan".|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Locate the `Server model` in the section "Summary".|
-|Continue reading this guide in the `[Instructions](#oldmxplan)` section below.|Continue with our guide regarding [Inbox rules in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/creating-inbox-rules-in-owa/).|
+|Continue reading this guide in the `[Instructions](#oldmxplan)` section below.|Continue with our guide regarding [Inbox rules in OWA](/pages/web/microsoft-collaborative-solutions/creating-inbox-rules-in-owa).|
 
 ## Instructions <a name="oldmxplan"></a>
 

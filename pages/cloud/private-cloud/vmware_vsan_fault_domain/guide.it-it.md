@@ -1,8 +1,6 @@
 ---
 title: Gestione dei domini di guasto vSAN
-slug: vmware-vsan-fault-domain
 excerpt: Come gestire i domini di guasto vSAN
-section: Funzionalità VMware vSphere
 updated: 2021-12-23
 ---
 
@@ -20,7 +18,7 @@ Questa guida ti mostra come funzionano e attuano i domini di guasti vSAN.
 
 - Essere contatto amministratore dell'infrastruttura [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) per ricevere le credenziali di accesso.
 - Avere un utente attivo con diritti specifici per NSX (creato nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Aver installato un [datastore vSan](https://docs.ovh.com/it/private-cloud/vmware-vsan/)
+- Aver installato un [datastore vSan](/pages/cloud/private-cloud/vmware_vsan)
 
 ## Procedura
 

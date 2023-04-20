@@ -1,9 +1,6 @@
 ---
 title: Technische Kapazitäten
-slug: technische_kapazitaten
 excerpt: 'Entdecken Sie die technischen Kapazitäten und Einschränkungen der Hosted Private Cloud Lösungen von OVHcloud'
-section: FAQ
-order: 2
 updated: 2023-03-23
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: 'Añadir crédito Cloud'
-slug: anadir_credito_cloud
 excerpt: 'Cómo añadir créditos o códigos promocionales a su proyecto de Public Cloud'
-section: 'Gestión del proyecto'
-order: 05
 updated: 2022-02-04
 ---
 
@@ -15,8 +12,8 @@ updated: 2022-02-04
 
 ## Objetivo
 
-La opción "crédito cloud" le permite asignar un importe específico a su proyecto de Public Cloud, que servirá como forma de pago por defecto para la [facturación del proyecto](../informacion-sobre-el-tipo-de-facturacion-cloud/).<br>
-Esto significa que este crédito cloud se cargará en primer lugar y que, a continuación, toda deuda se cargará a las otras formas de pago disponibles. Para más información sobre el asunto, consulte las [guías de facturación de Public Cloud](https://docs.ovh.com/us/es/billing/).
+La opción "crédito cloud" le permite asignar un importe específico a su proyecto de Public Cloud, que servirá como forma de pago por defecto para la [facturación del proyecto](/pages/platform/public-cloud/analyze_billing).<br>
+Esto significa que este crédito cloud se cargará en primer lugar y que, a continuación, toda deuda se cargará a las otras formas de pago disponibles. Para más información sobre el asunto, consulte las [guías de facturación de Public Cloud](/products/account-and-service-management-managing-billing-payments-and-services).
 
 **Esta guía explica cómo añadir crédito en su cuenta Public Cloud con un código promocional o generando una orden de pedido.**
 

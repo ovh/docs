@@ -1,9 +1,6 @@
 ---
 title: Registra le VM in un nuovo PCC
-slug: vsphere-register-vm-vmx
 excerpt: Come eseguire le prime operazioni sulla registrazione delle VM in un nuovo servizio dai datastore precedenti
-section: Funzionalità VMware vSphere
-order: 07
 updated: 2021-03-24
 ---
 
@@ -26,7 +23,7 @@ A seguito di un incidente, alcune macchine virtuali non compaiono più nel tuo i
 
 ## Procedura
 
-Nella tua [interfaccia vSphere](../connessione-interfaccia-vsphere/), posizionati nella vista `Storage`{.action}.
+Nella tua [interfaccia vSphere](/pages/cloud/private-cloud/vsphere_interface_connexion), posizionati nella vista `Storage`{.action}.
 
 ![vista archiviazione](images/register-vmx-01.png){.thumbnail}
 
@@ -44,7 +41,7 @@ Inserisci le informazioni richieste e clicca su `Finish`{.action}.
 
 Le stesse operazioni devono essere ripetute su ogni datastore e per ogni VM da ri-registrare.
 
-Verifica le impostazioni delle tue VM (nome, [portgroup](../creazione-vlan-vxlan/), ecc...) cliccando con il tasto destro su ciascuna di esse e selezionando `Edit Settings`{.action}.
+Verifica le impostazioni delle tue VM (nome, [portgroup](/pages/cloud/private-cloud/creation_vlan), ecc...) cliccando con il tasto destro su ciascuna di esse e selezionando `Edit Settings`{.action}.
 
 ![modificare i parametri](images/register-vmx-06.png){.thumbnail}
 

@@ -1,9 +1,6 @@
 ---
 title: Creare firme automatiche
 excerpt: Come aggiungere firme automatiche ai tuoi account email
-slug: exchange_2013_firma_automatica_-_disclaimer
-section: Funzionalità degli account Exchange
-order: 07
 updated: 2020-03-26
 ---
 
@@ -53,16 +50,16 @@ Prima di creare una firma per utenti, prendi in considerazione queste informazio
 ![exchangesig](images/exchange-footer-step5.png){.thumbnail}
 
 - La firma verrà aggiunta al corpo dell’email senza spazi, quindi ti consigliamo di iniziare la firma con almeno una riga vuota.
-- In OWA non è indicato se una firma è attiva in questo dominio e non è presente **nessuna sincronizzazione**. Se ciascun utente aggiunge la [propria firma](../exchange_2016_guida_allutilizzo_di_outlook_web_app/#aggiungere-una-firma), l’email includerà sia la firma individuale che la firma associata al dominio.
+- In OWA non è indicato se una firma è attiva in questo dominio e non è presente **nessuna sincronizzazione**. Se ciascun utente aggiunge la [propria firma](/pages/web/microsoft-collaborative-solutions/owa_user_guide#aggiungere-una-firma), l’email includerà sia la firma individuale che la firma associata al dominio.
 - L’editor supporta la formattazione HTML, gli hyperlinks, le immagini, ecc. Tuttavia, le firme non dovrebbero fare troppo affidamento su queste opzioni. I destinatari potrebbero utilizzare client di posta elettronica incompatibili con HTML e immagini incorporate, oppure la firma potrebbe apparire in modo diverso dal previsto. Attenzione: se un messaggio viene inviato come “Testo normale” da OWA, i tag HTML saranno completamente rimossi.
 - Il servizio non prende in considerazione le “iniziali”, pertanto aggiungere questa variabile potrebbe rivelarsi inutile.
 
 ## Per saperne di più
 
-[Guida all’utilizzo di Outlook Web App con un account Exchange](../exchange_2016_guida_allutilizzo_di_outlook_web_app)
+[Guida all’utilizzo di Outlook Web App con un account Exchange](/pages/web/microsoft-collaborative-solutions/owa_user_guide)
 
-[Delegare i diritti su un account email](../exchange_2013_assegna_i_diritti_full_access_a_un_account)
+[Delegare i diritti su un account email](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Condividi un calendario con la Webmail OWA](../exchange_2016_condividi_un_calendario_con_la_webmail_owa)
+[Condividi un calendario con la Webmail OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Partecipa alla nostra community di utenti all’indirizzo <https://community.ovh.com/en/>.

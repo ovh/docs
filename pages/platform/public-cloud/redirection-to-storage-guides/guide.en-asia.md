@@ -1,9 +1,6 @@
 ---
 title: 'All our Object Storage guides'
-slug: object-storage-redirection
 excerpt: 'Find all our High Performance and Swift Object Storage guides'
-section: 'Storage'
-order: 00
 updated: 2022-03-14
 ---
 
@@ -11,7 +8,7 @@ updated: 2022-03-14
 
 ## Objective
 
-Explore our High Performance and Swift Object Storage guides on [this page](https://docs.ovh.com/asia/en/storage/).
+Explore our High Performance and Swift Object Storage guides on [this page](/products/storage-backup).
 
 ## Go further
 

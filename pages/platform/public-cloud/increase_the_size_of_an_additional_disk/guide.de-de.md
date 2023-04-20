@@ -1,9 +1,6 @@
 ---
 title: 'Die Größe einer zusätzlichen Disk erweitern'
 excerpt: 'Erfahren Sie hier, wie Sie die Kapazität eines zusätzlichen Volumes vergrößern und die Hauptpartition anpassen'
-slug: ihre_zusatzliche_festplatte_vergroern
-section: Storage
-order: 2
 updated: 2022-03-29
 ---
 
@@ -22,13 +19,13 @@ Wenn Sie die maximale Kapazität Ihrer zusätzlichen Disk erreicht haben, könne
 ## Voraussetzungen
 
 - Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud) in Ihrem Public Cloud Projekt.
-- Sie haben eine [zusätzliche Disk](../erstellen_zustzliche_festplatte_public_cloud/) in Ihrem Projekt erstellt.
+- Sie haben eine [zusätzliche Disk](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance) in Ihrem Projekt erstellt.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben administrativen Zugriff auf Ihre Instanz über SSH (Linux) oder RDP (Windows).
 
 ## In der praktischen Anwendung
 
-In den folgenden Schritten wird vorausgesetzt, dass Sie bereits eine zusätzliche Disk erstellt haben, wie [in unserer Anleitung beschrieben](../erstellen_zustzliche_festplatte_public_cloud/).
+In den folgenden Schritten wird vorausgesetzt, dass Sie bereits eine zusätzliche Disk erstellt haben, wie [in unserer Anleitung beschrieben](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance).
 
 ### Größe der Disk ändern
 
@@ -166,6 +163,6 @@ Das skalierte Volume beinhaltet nun den zusätzlichen Speicherplatz.
 
 ## Weiterführende Informationen
 
-[Zusätzliches Volume auf einer Instanz erstellen und konfigurieren](../erstellen_zustzliche_festplatte_public_cloud/)
+[Zusätzliches Volume auf einer Instanz erstellen und konfigurieren](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

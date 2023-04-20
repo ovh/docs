@@ -1,8 +1,6 @@
 ---
 title: 'Créer un DNS secondaire sur un serveur dédié'
-slug: creer-dns-secondaire-serveur-dedie
 excerpt: 'Découvrez comment créer un DNS secondaire pour votre serveur dédié OVHcloud'
-section: 'Utilisation avancée'
 updated: 2021-01-08
 ---
 
@@ -76,6 +74,6 @@ Après avoir correctement ajouté l'enregistrement TXT à la zone DNS du domaine
 
 ## Aller plus loin
 
-[Éditer une zone DNS OVHcloud](https://docs.ovh.com/ca/fr/domains/editer-ma-zone-dns/){.external}
+[Éditer une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

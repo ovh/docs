@@ -1,9 +1,7 @@
 ---
 title: Statistiques sur la QoS des appels
 excerpt: Statistiques sur la QoS des appels
-slug: statistiques_sur_la_qos_des_appels
 legacy_guide_number: g1716
-section: API
 updated: 2018-03-26
 ---
 
@@ -13,7 +11,7 @@ updated: 2018-03-26
 ## 
 Pour connaitre les bases de notre API :
 
-[Bases de l'API](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/)
+[Bases de l'API](/pages/account/api/first-steps)
 
 
 ## 

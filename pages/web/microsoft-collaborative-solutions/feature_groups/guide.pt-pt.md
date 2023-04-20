@@ -1,9 +1,6 @@
 ---
 title: 'Utilização de grupos de difusão (mailing lists)'
 excerpt: 'Saiba como gerir grupos de difusão (mailing lists) no Exchange'
-slug: exchange_20132016_utilizacao_de_grupos_de_difusao_mailing_list
-section: 'Funcionalidades das contas Exchange'
-order: 02
 updated: 2020-02-26
 ---
 
@@ -64,7 +61,7 @@ Os grupos recém-criados ficarão operacionais dentro de poucos minutos. Pode aj
 
 ![contactgroups](images/exchange-groups-step4.png){.thumbnail}
 
-Terá igualmente acesso à opção `Gerir permissões`{.action}. Ela permite-lhe atribuir acesso tal como para uma conta Exchange. Mais informações [neste guia](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_3013_atribuir_permissoes_full_access_a_uma_conta/).
+Terá igualmente acesso à opção `Gerir permissões`{.action}. Ela permite-lhe atribuir acesso tal como para uma conta Exchange. Mais informações [neste guia](/pages/web/microsoft-collaborative-solutions/feature_delegation).
 
 ![contactgroups](images/exchange-groups-step5.png){.thumbnail}
 
@@ -83,10 +80,10 @@ Já pode testar a sua lista de difusão (mailing list) através do [webmail OVHc
 
 ## Saiba mais
 
-[Atribuir permissões a uma conta Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_3013_atribuir_permissoes_full_access_a_uma_conta/)
+[Atribuir permissões a uma conta Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Guia de utilização do Outlook Web App](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2016_guia_de_utilizacao_do_outlook_web_app/)
+[Guia de utilização do Outlook Web App](/pages/web/microsoft-collaborative-solutions/owa_user_guide)
 
-[Partilhar calendários em OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2016_partilhar_um_calendario_atraves_do_webmail_owa/)
+[Partilhar calendários em OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

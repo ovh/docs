@@ -1,9 +1,6 @@
 ---
 title: 'Aktivieren der Web Application Firewall'
 excerpt: 'Aktivieren der Web Application Firewall'
-slug: webhosting_aktivieren_der_web_application_firewall
-section: 'Webhosting-Konfiguration'
-order: 04
 updated: 2021-04-26
 ---
 

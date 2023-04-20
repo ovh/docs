@@ -1,10 +1,8 @@
 ---
 title: 'OVHcloud API & Partitioning (EN)'
-slug: api-partitioning
 excerpt: 'Find out what the OVHcloud API provides in order to customize the partitioning configuration during the server OS installation'
-section: 'RAID e discos'
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/dedicated/api-partitioning/'
+    canonical: '/pages/cloud/dedicated/partitioning_ovh'
 updated: 2023-03-10
 ---
 
@@ -18,7 +16,7 @@ updated: 2023-03-10
 > This article is intended for experimented users that have at least basic Linux knowledge, but more importantly deeper technical knowledge on storage and especially on RAID software as well as Logical volume management (LVM).
 >
 
-With [OVHcloud Dedicated Servers](https://www.ovhcloud.com/pt/bare-metal/), you can configure Partitions, [software RAID](https://docs.ovh.com/pt/dedicated/raid-soft/), LVM, ZFS, etc. during [OS installation](https://docs.ovh.com/pt/dedicated/primeiros-passos-servidor-dedicado/) from the [OVHcloud API](https://api.ovh.com/) as well as the [OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/configuration). In this article, we will focus on the [OVHcloud API](https://api.ovh.com/). This will give us more details about the engine that is running in the background in order to create the partitioning on the dedicated server from the input data passed on to the OVHcloud API.
+With [OVHcloud Dedicated Servers](https://www.ovhcloud.com/pt/bare-metal/), you can configure Partitions, [software RAID](/pages/cloud/dedicated/raid_soft), LVM, ZFS, etc. during [OS installation](/pages/cloud/dedicated/getting-started-with-dedicated-server) from the [OVHcloud API](https://api.ovh.com/) as well as the [OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/configuration). In this article, we will focus on the [OVHcloud API](https://api.ovh.com/). This will give us more details about the engine that is running in the background in order to create the partitioning on the dedicated server from the input data passed on to the OVHcloud API.
 
 Providing in-depth details about partitioning can help customers understand why:
 
@@ -48,7 +46,7 @@ When we talk about partitioning layout, we are talking about how your data will 
 - disk (physical disk, PD),
 - partition (physical partition, PP),
 - ZFS: vdev (zgroup, ZG), zpool (ZP), ZFS dataset (ZD), ZFS volume (ZV),
-- [software RAID](https://docs.ovh.com/pt/dedicated/raid-soft/) (SR),
+- [software RAID](/pages/cloud/dedicated/raid_soft) (SR),
 - LVM: physical volume (PV), volume group (VG), logical volume (LV),
 - filesystem with a mountpoint (FS)
 
@@ -161,15 +159,14 @@ A partiton layout is a list of partitions. Here is an example of a partition str
 
 > [!primary]
 >
-> order: is the partition order within the partition array
->
+> >
 
 <!-- markdownlint-disable-next-line MD028 -->
 > [!primary]
 >
 > type: is one of primary, logical, lv
 >
-> - lv: means that LVM layers will be added on top of the [software RAID](https://docs.ovh.com/pt/dedicated/raid-soft/) device (or the physical partition if RAID level is 0)
+> - lv: means that LVM layers will be added on top of the [software RAID](/pages/cloud/dedicated/raid_soft) device (or the physical partition if RAID level is 0)
 > - primary: only makes sense for MBR partition tables (a few old non-UEFI servers still don't support GPT)
 > - logical: if you don't know what to choose
 >
@@ -297,8 +294,8 @@ In order to improve customer experience, reduce [OVHcloud support](https://help.
 
 ## Go further <a name="gofurther"></a>
 
-[Configuring Software RAID](https://docs.ovh.com/pt/dedicated/raid-soft/)
+[Configuring Software RAID](/pages/cloud/dedicated/raid_soft)
 
-[Managing Hardware RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard/)
+[Managing Hardware RAID](/pages/cloud/dedicated/raid_hard)
 
 Join our community of users on <https://community.ovh.com/en/>.

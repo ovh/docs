@@ -1,11 +1,8 @@
 ---
 title: Getting started with Public Cloud Databases
 excerpt: Find out how to set up your managed database service in the OVHcloud Control Panel
-slug: getting-started
-section: General guides
-order: 010
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/getting-started/'
+    canonical: '/pages/platform/databases/databases_01_order_control_panel'
 updated: 2022-07-27
 ---
 
@@ -42,7 +39,7 @@ In this step, choose an appropriate service plan. You will be able to upgrade th
 
 ![Choose plan](images/databases_01_order_control_panel-2022072719143198.png){.thumbnail}
 
-Please visit the [capabilities page](https://docs.ovh.com/us/es/publiccloud/databases/) of your selected database type for detailed information on each plan's properties.
+Please visit the [capabilities page](/products/public-cloud-databases) of your selected database type for detailed information on each plan's properties.
 
 #### Step 3: Select a location
 
@@ -56,7 +53,7 @@ You can increase the number of nodes and choose the node model in this step. The
 
 ![Order nodes](images/databases_01_order_control_panel-2022072719164714.png){.thumbnail}
 
-Please visit the [capabilities page](https://docs.ovh.com/us/es/publiccloud/databases/) of your selected database type for detailed information on the hardware resources and other properties of the database installation.
+Please visit the [capabilities page](/products/public-cloud-databases) of your selected database type for detailed information on the hardware resources and other properties of the database installation.
 
 Take note of the pricing information.
 
@@ -86,17 +83,17 @@ If you already have a private subnet available, check the box **Private** and se
 
 You can be forwarded to create a private network or subnet by clicking on the respective links. You will have to start the database order process anew in that case.
 
-Please follow [this guide](https://docs.ovh.com/us/es/public-cloud/public-cloud-vrack/) for detailed instructions.
+Please follow [this guide](/pages/platform/network-services/getting-started-07-creating-vrack) for detailed instructions.
 
 ### Step 8: Summary and confirmation
 
-The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/).
+The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](/pages/account/api/first-steps).
 
 ![Confirm order](images/databases_01_order_control_panel-20220727192153640.png){.thumbnail}
 
 Within a few minutes your new database service will be deployed. Messages in the OVHcloud Control Panel will inform you when the database is ready to use.
 
-Continue with the *Configure your instance to accept incoming connections* guide of your selected database type available [here](https://docs.ovh.com/us/es/publiccloud/databases/) to configure your service after installation.
+Continue with the *Configure your instance to accept incoming connections* guide of your selected database type available [here](/products/public-cloud-databases) to configure your service after installation.
 
 Note that the configuration options might be different, depending on the database type. You will find example on this repository: <https://github.com/ovh/public-cloud-databases-examples>.
 

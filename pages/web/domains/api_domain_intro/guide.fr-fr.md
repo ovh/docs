@@ -1,9 +1,6 @@
 ---
 title: "Introduction"
-slug: api
 excerpt: "Présentation générale de l'API publique OVHcloud pour les noms de domaines"
-section: "API domaines"
-order: 01
 updated: 2022-05-05
 ---
 
@@ -14,13 +11,13 @@ updated: 2022-05-05
 ## Sommaire
 
 - **Introduction**
-- [Commander un nom de domaine](../api-order)
-- [Gestion des tâches](../api-tasks)
-- [Gestion des contacts d'un nom de domaine](../api-contact)
-- [Gestion des règles d'éligibilité](../api-rules)
-- [Configurer l'affichage de ses données dans le Whois](../api-whois)
-- [Configurer les DNS de son nom de domaine](../api-dns)
-- [Transférer un nom de domaine](../api-transfer)
+- [Commander un nom de domaine](/pages/web/domains/api_domain_order)
+- [Gestion des tâches](/pages/web/domains/api_domain_tasks)
+- [Gestion des contacts d'un nom de domaine](/pages/web/domains/api_domain_contacts)
+- [Gestion des règles d'éligibilité](/pages/web/domains/api_domain_rules)
+- [Configurer l'affichage de ses données dans le Whois](/pages/web/domains/api_domain_whois)
+- [Configurer les DNS de son nom de domaine](/pages/web/domains/api_domain_dns)
+- [Transférer un nom de domaine](/pages/web/domains/api_domain_transfer)
 <!-- End TOC -->
 
 ## Connexion à l'API
@@ -28,7 +25,7 @@ updated: 2022-05-05
 Avant de lire cette documentation, il est nécessaire de commencer par prendre connaissance de la documentation suivante.
 Elle décrit la mise en place de l'environnement de test et la connexion à l'API OVHcloud, et permet également de comprendre la signature des requêtes.
 
-- [Premiers pas avec les APIs OVHcloud](../../api/first-steps-with-ovh-api/)
+- [Premiers pas avec les APIs OVHcloud](/pages/account/api/first-steps)
 
 ## SDKs disponibles
 
@@ -95,4 +92,4 @@ Vous pourrez rencontrer les termes ci-dessous en parcourant cette documentation.
 - **Registrar** (ou **bureau d'enregistrement**) : revendeur de noms de domaines. Le registre passe obligatoirement par un registrar afin de vendre son nom de domaine au client final. OVHcloud est un registrar.
 - **Registrant** : propriétaire d'un nom de domaine. Il porte la responsabilité légale de l'utilisation du nom de domaine et possède tous les droits sur le nom de domaine.
 - **gTLD** (_Generic Top Level Domain_) : extension générique, utilisée internationalement, dont le fonctionnement est régi par une autorité tierce indépendante, l'[ICANN](https://www.icann.org/). Le `.com` et le `.net` sont des gTLDs.
-- **ccTLD** (_Country Code Top Level Domain_) : extension spécifique à un pays, dont le fonctionnement est régi par le pays lui-même. De ce fait, les [règles d'éligibilité](../api-rules), voire le mode de vente ou le cycle de vie des domaines, peuvent différer fortement d'une extension à l'autre. C'est le rôle du registrar d'abstraire tout cela pour le client final. Les ccTLDs sont les seules extensions constituées de 2 caractères exactement : par exemple `.fr` pour la France, `.io` pour le territoire britannique de l'Océan Indien (bien qu'il soit utilisé pour de nombreuses applications, en référence à l'acronyme I/O pour _Input/Output_).
+- **ccTLD** (_Country Code Top Level Domain_) : extension spécifique à un pays, dont le fonctionnement est régi par le pays lui-même. De ce fait, les [règles d'éligibilité](/pages/web/domains/api_domain_rules), voire le mode de vente ou le cycle de vie des domaines, peuvent différer fortement d'une extension à l'autre. C'est le rôle du registrar d'abstraire tout cela pour le client final. Les ccTLDs sont les seules extensions constituées de 2 caractères exactement : par exemple `.fr` pour la France, `.io` pour le territoire britannique de l'Océan Indien (bien qu'il soit utilisé pour de nombreuses applications, en référence à l'acronyme I/O pour _Input/Output_).

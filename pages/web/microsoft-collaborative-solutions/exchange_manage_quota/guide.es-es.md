@@ -1,11 +1,8 @@
 ---
 title: Gestionar el espacio de almacenamiento de una cuenta de correo
-slug: manage-email-quota
 excerpt: "Cómo gestionar y optimizar el espacio de almacenamiento de una dirección de correo"
-section: 'Diagnóstico'
-order: 02
 routes:
-  canonical: "https://docs.ovh.com/es/emails/manage-email-quota/"
+  canonical: "/products/email-manage-email-quota"
 updated: 2022-11-17
 ---
 
@@ -32,8 +29,8 @@ Cada cuenta de correo de OVHcloud dispone de un espacio de almacenamiento dedica
 > **Casos particulares**
 >
 > - En el caso del hosting gratuito Start 10M, es necesario activar previamente el alojamiento para poder crear una dirección de correo. Puede realizar esta operación desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), accediendo al dominio correspondiente.
-> - Si tiene un [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/), deberá activar su solución MX Plan incluida antes de continuar la lectura de esta guía. Para ello, consulte nuestra guía [Activar las direcciones de correo incluidas en su alojamiento web](https://docs.ovh.com/es/hosting/activar-correo-hosting-web/).
+> - Si tiene un [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/), deberá activar su solución MX Plan incluida antes de continuar la lectura de esta guía. Para ello, consulte nuestra guía [Activar las direcciones de correo incluidas en su alojamiento web](/pages/web/hosting/activate-email-hosting).
 
 ## Procedimiento <a name="instructions"></a>
 
-Siga nuestra guía [Gestionar el espacio de almacenamiento de una cuenta de correo](https://docs.ovh.com/es/emails/manage-email-quota/) en la sección "Correo electrónico".
+Siga nuestra guía [Gestionar el espacio de almacenamiento de una cuenta de correo](/products/email-manage-email-quota) en la sección "Correo electrónico".

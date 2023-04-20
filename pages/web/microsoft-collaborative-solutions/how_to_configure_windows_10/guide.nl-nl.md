@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Configuratie van uw Exchange-account in de Courrier-app voor Windows 10
-slug: configuratie-courrier-windows-10
 excerpt: Leer hoe u een Exchange-account kunt instellen in Courrier voor Windows 10
-section: Configuratie van Exchange
 updated: 2018-04-04
 ---
 
@@ -63,8 +61,8 @@ OVH biedt ook een web-app met [teamwerk-functies](https://www.ovh.com/nl/emails/
 
 ## Verder
 
-[Configuratie van uw e-mailadres dat is opgenomen in MX Plan of in een webhostingsplan in Courrier voor Windows 10](https://docs.ovh.com/nl/emails/configuratie-courrier-windows-10/){.external}.
+[Configuratie van uw e-mailadres dat is opgenomen in MX Plan of in een webhostingsplan in Courrier voor Windows 10](/pages/web/emails/how_to_configure_windows_10){.external}.
 
-[Configuratie van uw Email Pro-account in de Courrier-app voor Windows 10](https://docs.ovh.com/nl/emails-pro/configuratie-courrier-windows-10/){.external}
+[Configuratie van uw Email Pro-account in de Courrier-app voor Windows 10](/pages/web/emails-pro/how_to_configure_windows_10){.external}
 
 Ga in gesprek met andere communityleden op <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: 'Zusätzliche SSH-Schlüssel konfigurieren'
-slug: zusaetzliche-ssh-schluessel-konfigurieren
 excerpt: Erfahren Sie hier, wie Sie zusätzliche SSH-Schlüssel für Ihre Public Cloud Instanz konfigurieren
-section: 'Tutorials'
-order: 01
 updated: 2022-02-04
 ---
 
@@ -35,11 +32,11 @@ Wenn Sie einen SSH-Schlüssel im OVHcloud Kundencenter speichern möchten, empfe
 
 ### SSH-Schlüssel erstellen
 
-Folgen Sie zunächst unserer Anleitung zu den [ersten Schritten](../public-cloud-erste-schritte/#schritt-1-ssh-schlussel-erstellen), um einen SSH-Schlüssel zu erstellen.
+Folgen Sie zunächst unserer Anleitung zu den [ersten Schritten](/pages/platform/public-cloud/public-cloud-first-steps#schritt-1-ssh-schlussel-erstellen), um einen SSH-Schlüssel zu erstellen.
 
 ### Einen neuen Benutzer konfigurieren
 
-[Verbinden Sie sich über SSH](../public-cloud-erste-schritte/#connect-to-instance) mit Ihrer Instanz und erstellen Sie mithilfe des folgenden Befehls einen neuen Benutzer:
+[Verbinden Sie sich über SSH](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) mit Ihrer Instanz und erstellen Sie mithilfe des folgenden Befehls einen neuen Benutzer:
 
 ```bash
 ~$ sudo adduser user2
@@ -93,8 +90,8 @@ user2@server:~$
 
 ## Weiterführende Informationen
 
-[Public Cloud: Erste Schritte](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/)
+[Public Cloud: Erste Schritte](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Ersatz eines verlorenen SSH-Schlüsselpaares](https://docs.ovh.com/de/public-cloud/nderung_des_ssh_schlussels_bei_verlust/)
+[Ersatz eines verlorenen SSH-Schlüsselpaares](/pages/platform/public-cloud/replacing_lost_ssh_key)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -1,8 +1,6 @@
 ---
 title: Changer le  mot de passe root sur un VPS
-slug: root-password
 excerpt: Découvrez ici comment modifier le mot de passe root d’un VPS
-section: Diagnostic et mode Rescue
 updated: 2021-04-20
 ---
 
@@ -34,7 +32,7 @@ Il peut être nécessaire de modifier le mot de passe root sur votre système d'
 
 > [!primary]
 >
-> Pour plus d'informations sur la connexion à votre VPS, consultez notre guide [Débuter avec un VPS](../debuter-avec-vps/).
+> Pour plus d'informations sur la connexion à votre VPS, consultez notre guide [Débuter avec un VPS](/pages/cloud/vps/starting_with_a_vps).
 >
 
 Connectez-vous à votre VPS via SSH. Basculez vers l'utilisateur root, si nécessaire :
@@ -66,7 +64,7 @@ Si vous devez autoriser la connexion en tant qu'utilisateur root, suivez les ét
 
 #### Étape 1 : Redémarrez le VPS en mode rescue.
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et redémarrez le VPS en mode rescue. Si vous avez besoin d'instructions supplémentaires sur l'utilisation du mode rescue avec un VPS, consultez le [guide du mode rescue](../mode-rescue-vps/).
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et redémarrez le VPS en mode rescue. Si vous avez besoin d'instructions supplémentaires sur l'utilisation du mode rescue avec un VPS, consultez le [guide du mode rescue](/pages/cloud/vps/rescue).
 
 #### Étape 2 : Identifier le point de montage
 
@@ -158,7 +156,7 @@ Si votre VPS est de dernière génération (son nom est alors : *vps-XXXXXXX.vps
 >
 > Activer le mot de passe root est généralement considéré comme une vulnérabilité de sécurité et n'est donc pas recommandé.
 >
-> Nous vous recommandons de prendre d'abord des mesures pour sécuriser votre VPS. Vous pouvez vous reporter à notre guide sur la [sécurisation d'un VPS](../conseils-securisation-vps/).
+> Nous vous recommandons de prendre d'abord des mesures pour sécuriser votre VPS. Vous pouvez vous reporter à notre guide sur la [sécurisation d'un VPS](/pages/cloud/vps/secure_your_vps).
 >
 
 #### Étape 1 : Modifier le fichier sshd_config
@@ -195,13 +193,13 @@ Cela devrait suffire pour appliquer les modifications. Vous pouvez également re
 
 Si vous rencontrez des problèmes de démarrage après avoir modifié votre mot de passe et lancé le redémarrage :
 
-- Consultez le KVM pour savoir pourquoi le VPS ne peut pas démarrer. Consultez le [guide KVM](../utilisation-kvm-sur-vps/) pour obtenir de l'aide sur l'utilisation de cette fonctionnalité dans l'espace client OVHcloud.
+- Consultez le KVM pour savoir pourquoi le VPS ne peut pas démarrer. Consultez le [guide KVM](/pages/cloud/vps/using_kvm_for_vps) pour obtenir de l'aide sur l'utilisation de cette fonctionnalité dans l'espace client OVHcloud.
 - Si le KVM affiche le démarrage du VPS ou s'il ne parvient pas à trouver le disque, assurez-vous que le [bootlog est activé](../affichage-bootlog-dans-kvm/). Transmettez les logs pertinents à nos équipes de support en créant une demande de support dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) pour plus d'informations.
 
 ## Allez plus loin
 
-[Introduction au SSH](../../dedicated/ssh-introduction/)
+[Introduction au SSH](/pages/cloud/dedicated/ssh_introduction)
 
-[Sécuriser un VPS](../conseils-securisation-vps/)
+[Sécuriser un VPS](/pages/cloud/vps/secure_your_vps)
 
 Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -1,9 +1,6 @@
 ---
 title: Resolver los errores más frecuentes asociados a las bases de datos 
 excerpt: Diagnóstico de los errores más comunes relacionados con las bases de datos
-slug: error-requentes-base-de-datos
-section: Diagnóstico
-order: 04
 updated: 2022-12-09
 ---
 
@@ -15,7 +12,7 @@ updated: 2022-12-09
 
 ## Objetivo
 
-El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sitio web o su [área de cliente OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), así como en la interfaz [phpMyAdmin](https://docs.ovh.com/us/es/hosting/crear-base-de-datos/#acceder-a-la-interfaz-phpmyadmin).
+El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sitio web o su [área de cliente OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), así como en la interfaz [phpMyAdmin](/pages/web/hosting/sql_create_database#acceder-a-la-interfaz-phpmyadmin).
 
 **Descubra cómo solucionar los errores relacionados con las bases de datos de los alojamientos compartidos de OVHcloud.**
 
@@ -50,22 +47,22 @@ En primer lugar, compruebe en [https://web-cloud.status-ovhcloud.com/](https://w
 
 #### Comprobar las claves de conexión a su base de datos <a name="config_file"></a>
 
-Conéctese al espacio de almacenamiento de archivos de su alojamiento mediante [FTP](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) y consulte el archivo de configuración de su sitio web (por ejemplo, para un sitio web WordPress, se trata del archivo **wp-config.php** situado en el directorio que contiene su sitio web).
+Conéctese al espacio de almacenamiento de archivos de su alojamiento mediante [FTP](/pages/web/hosting/ftp_connection) y consulte el archivo de configuración de su sitio web (por ejemplo, para un sitio web WordPress, se trata del archivo **wp-config.php** situado en el directorio que contiene su sitio web).
 
 > [!warning]
 >
 > La elección y configuración del archivo que contiene la información de conexión a la base de datos es inherente al editor de contenidos (CMS) correspondiente y no a OVHcloud.
 >
-> Si necesita ayuda, le recomendamos que se ponga en contacto con el editor del [CMS](https://docs.ovh.com/us/es/hosting/modulos-en-un-clic/) utilizado para crear su sitio web o con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). No podremos asistirle en este asunto.
+> Si necesita ayuda, le recomendamos que se ponga en contacto con el editor del [CMS](/pages/web/hosting/cms_install_1_click_modules) utilizado para crear su sitio web o con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). No podremos asistirle en este asunto.
 >
 
-Compruebe la coincidencia **exacta** entre los identificadores de conexión a [PhpMyAdmin](https://docs.ovh.com/us/es/hosting/crear-base-de-datos/#acceso-a-la-interfaz-phpmyadmin) y los del fichero de configuración de su sitio web.
+Compruebe la coincidencia **exacta** entre los identificadores de conexión a [PhpMyAdmin](/pages/web/hosting/sql_create_database#acceso-a-la-interfaz-phpmyadmin) y los del fichero de configuración de su sitio web.
 
-Cambie, si es necesario, la [contraseña de su base de datos](https://docs.ovh.com/us/es/hosting/cambiar-contrasena-base-de-datos/).
+Cambie, si es necesario, la [contraseña de su base de datos](/pages/web/hosting/sql_change_password).
 
 #### Ejemplo para WordPress
 
-Si su sitio web muestra un mensaje **"Error al conectarse a la base de datos"** y no se ve afectado por un [incidente](https://web-cloud.status-ovhcloud.com/), conéctese a [FTP](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) a su alojamiento y abra el directorio que contiene su sitio web (por defecto es el directorio "www").
+Si su sitio web muestra un mensaje **"Error al conectarse a la base de datos"** y no se ve afectado por un [incidente](https://web-cloud.status-ovhcloud.com/), conéctese a [FTP](/pages/web/hosting/ftp_connection) a su alojamiento y abra el directorio que contiene su sitio web (por defecto es el directorio "www").
 
 Si se trata de un sitio web WordPress, abra el archivo **wp-config.php**.
 
@@ -86,12 +83,12 @@ En el área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&
 
 - **my_database** debe coincidir con lo que se indica en el símbolo "Nombre de la base de datos" ;
 - **my_user** debe coincidir con lo que se indica en `Nombre de usuario`;
-- **my_password** corresponde a [contraseña de la base de datos](https://docs.ovh.com/us/es/hosting/cambiar-contrasena-base-de-datos/);
+- **my_password** corresponde a [contraseña de la base de datos](/pages/web/hosting/sql_change_password);
 - **my_server.mysql.db** debe coincidir con lo que se indica en `Dirección del servidor`.
 
 > [!primary]
 >
-> Si esta operación no le permite restablecer el acceso a su sitio web, [guarde su base de datos](https://docs.ovh.com/us/es/hosting/web_hosting_exportacion_de_una_base_de_datos/) y después [restablezca-la a una fecha anterior](https://docs.ovh.com/es/hosting/restaurar-importar-base-de-datos/#1-restaurar-una-copia-de-seguridad-existente) desde su [área de cliente OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+> Si esta operación no le permite restablecer el acceso a su sitio web, [guarde su base de datos](/pages/web/hosting/sql_database_export) y después [restablezca-la a una fecha anterior](/pages/web/clouddb/restore-import-on-database-server#1-restaurar-una-copia-de-seguridad-existente) desde su [área de cliente OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 >
 > Contacte a continuación con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) si es necesario. No podremos asistirle en este asunto.
 >
@@ -125,14 +122,14 @@ Si utiliza un plan **Performance**, consulte el [método 2](#methode2).
 
 También puede migrar sus datos a una nueva base de datos:
 
-- Contrate, si es necesario, una [base de datos](https://www.ovhcloud.com/es/web-hosting/options/start-sql/) de mayor tamaño y lance su [creación](https://docs.ovh.com/us/es/hosting/crear-base-de-datos/).
-- Realice un [exportar sus datos](https://docs.ovh.com/us/es/hosting/web_hosting_exportacion_de_una_base_de_datos/) y a continuación [importar los](https://docs.ovh.com/us/es/hosting/web_hosting_importacion_de_una_base_de_datos_mysql/) en la nueva base de datos;
+- Contrate, si es necesario, una [base de datos](https://www.ovhcloud.com/es/web-hosting/options/start-sql/) de mayor tamaño y lance su [creación](/pages/web/hosting/sql_create_database).
+- Realice un [exportar sus datos](/pages/web/hosting/sql_database_export) y a continuación [importar los](/pages/web/hosting/sql_importing_mysql_database) en la nueva base de datos;
 - Integre las claves de la nueva base de datos en el [archivo de configuración](#config_file) de su sitio web.
 
 
 #### Método 3: eliminar datos innecesarios
 
-Una vez realizada la [copia de seguridad de su base de datos](https://docs.ovh.com/us/es/hosting/web_hosting_exportacion_de_una_base_de_datos/), conéctese a su interfaz [PhpMyAdmin](https://docs.ovh.com/us/es/hosting/crear-base-de-datos/#acceder-a-la-interfaz-phpmyadmin) para eliminar los datos innecesarios con los comandos Drop, Delete y Truncate.
+Una vez realizada la [copia de seguridad de su base de datos](/pages/web/hosting/sql_database_export), conéctese a su interfaz [PhpMyAdmin](/pages/web/hosting/sql_create_database#acceder-a-la-interfaz-phpmyadmin) para eliminar los datos innecesarios con los comandos Drop, Delete y Truncate.
 
 Abra la pestaña `Bases de datos`{.action} del alojamiento correspondiente e inicie el cálculo de la cuota utilizada. pulse el botón `...`{.action} correspondiente y luego `Recalcular el espacio utilizado`{.action}.
 
@@ -143,7 +140,7 @@ Abra la pestaña `Bases de datos`{.action} del alojamiento correspondiente e ini
 
 #### Método 4: optimizar la base de datos
 
-Para optimizar su base de datos, siga las instrucciones de nuestra guía "[Configurar su servidor de bases de datos](https://docs.ovh.com/us/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#gestionar-las-bases-de-datos_1)". Abra la pestaña `Bases de datos`{.action} de su alojamiento y haga clic en el botón `...`{.action} de la base de datos en cuestión.
+Para optimizar su base de datos, siga las instrucciones de nuestra guía "[Configurar su servidor de bases de datos](https://docs.ovh.com/us/pages/web/clouddb/configure-database-server#gestionar-las-bases-de-datos_1)". Abra la pestaña `Bases de datos`{.action} de su alojamiento y haga clic en el botón `...`{.action} de la base de datos en cuestión.
 
 > [!warning]
 >
@@ -162,9 +159,9 @@ Este mensaje de error significa que la base de datos que está intentando import
 
 En primer lugar, asegúrese de que la base de datos esté vacía en la pestaña `Bases de datos`{.action} del alojamiento correspondiente (haga clic en el botón `...`{.action}) correspondiente y seleccione `Recalcular el espacio utilizado`{.action}.
 
-En caso contrario, [guarde los datos presentes](https://docs.ovh.com/us/es/hosting/web_hosting_exportacion_de_una_base_de_datos/) en la base de datos y después borre la base de datos antes de reanudar la operación de importación.
+En caso contrario, [guarde los datos presentes](/pages/web/hosting/sql_database_export) en la base de datos y después borre la base de datos antes de reanudar la operación de importación.
 
-También puede marcar la casilla `Vaciar la base de datos actual`{.action} justo antes de [iniciar la importación](https://docs.ovh.com/us/es/hosting/web_hosting_importacion_de_una_base_de_datos_mysql/#importar-una-copia-de-seguridad-desde-el-area-de-cliente):
+También puede marcar la casilla `Vaciar la base de datos actual`{.action} justo antes de [iniciar la importación](/pages/web/hosting/sql_importing_mysql_database#importar-una-copia-de-seguridad-desde-el-area-de-cliente):
 
 ![database-import-empty](images/database-import-empty.png){.thumbnail}
 
@@ -198,11 +195,11 @@ USE `Database-Name`;
 > **"mysqli::real_connect(): (HY000/1045): Access denied for user"**
 >
 
-Este mensaje de error puede aparecer al conectarse a la base de datos por [phpMyAdmin](https://docs.ovh.com/us/es/hosting/crear-base-de-datos/#acceder-a-la-interfaz-phpmyadmin). Indica que los identificadores introducidos son incorrectos.
+Este mensaje de error puede aparecer al conectarse a la base de datos por [phpMyAdmin](/pages/web/hosting/sql_create_database#acceder-a-la-interfaz-phpmyadmin). Indica que los identificadores introducidos son incorrectos.
 
 ![access_denied_for_user](images/access_denied_for_user.png){.thumbnail}
 
-En ese caso, [compruebe los identificadores indicados](https://docs.ovh.com/es/hosting/coneccion-base-de-datos-servidor-bdd/#procedimiento) y cambie si es necesario la [contraseña de su base de datos](https://docs.ovh.com/us/es/hosting/cambiar-contrasena-base-de-datos/).
+En ese caso, [compruebe los identificadores indicados](/pages/web/clouddb/connecting-to-database-on-database-server#procedimiento) y cambie si es necesario la [contraseña de su base de datos](/pages/web/hosting/sql_change_password).
 
 #### "Too many connections"
 
@@ -212,9 +209,9 @@ En ese caso, [compruebe los identificadores indicados](https://docs.ovh.com/es/h
 
 El número máximo de conexiones activas para las bases de datos entregadas con los alojamientos compartidos [StartSQL](https://www.ovhcloud.com/es/web-hosting/options/start-sql/) es de **30**.
 
-Este mensaje aparece durante [conexión a phpMyAdmin](https://docs.ovh.com/us/es/hosting/crear-base-de-datos/#acceder-a-la-interfaz-phpmyadmin) cuando se supera el número máximo de conexiones.
+Este mensaje aparece durante [conexión a phpMyAdmin](/pages/web/hosting/sql_create_database#acceder-a-la-interfaz-phpmyadmin) cuando se supera el número máximo de conexiones.
 
-En ese caso, deberá [optimizar las bases de datos](https://docs.ovh.com/us/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#gestionar-las-bases-de-datos_1) para reducir el número de conexiones activas.
+En ese caso, deberá [optimizar las bases de datos](https://docs.ovh.com/us/pages/web/clouddb/configure-database-server#gestionar-las-bases-de-datos_1) para reducir el número de conexiones activas.
 
 > [!warning]
 >
@@ -227,7 +224,7 @@ En ese caso, deberá [optimizar las bases de datos](https://docs.ovh.com/us/es/h
 > **"mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known"**
 >
 
-Este mensaje de error aparece durante [conexión a phpMyAdmin](https://docs.ovh.com/us/es/hosting/coneccion-base-de-datos-servidor-bdd/#procedimiento) cuando el nombre del servidor introducido es incorrecto.
+Este mensaje de error aparece durante [conexión a phpMyAdmin](https://docs.ovh.com/us/pages/web/clouddb/connecting-to-database-on-database-server#procedimiento) cuando el nombre del servidor introducido es incorrecto.
 
 ![name_or_service_not_known](images/name_or_service_not_known.png){.thumbnail}
 

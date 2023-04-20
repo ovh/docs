@@ -1,11 +1,8 @@
 ---
 title: Evitare la modalità di sola lettura sui dischi delle VM Linux
-slug: evitare-modalita-sola-lettura-sui-dischi-vm-linux
 routes:
-    canonical: 'https://docs.ovh.com/it/private-cloud/evitare-modalita-sola-lettura-sui-dischi-vm-linux/'
+    canonical: '/pages/cloud/private-cloud/comment_eviter_le_disk_en_read_only_sous_linux'
 excerpt: Come evitare l’attivazione della modalità di sola lettura sui dischi delle VM Linux
-section: Gestione delle macchine virtuali
-order: 10
 updated: 2020-11-18
 ---
 

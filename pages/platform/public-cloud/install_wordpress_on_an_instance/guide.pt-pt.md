@@ -1,8 +1,6 @@
 ---
 title: Instalar o WordPress numa instância
 excerpt: Saiba como utilizar uma instância Public Cloud para alojar websites WordPress
-slug: instalar_o_wordpress_numa_instancia
-section: Tutoriais
 updated: 2021-10-15
 ---
 
@@ -30,7 +28,7 @@ Este tutorial fornece as etapas de base para uma instalação manual do WordPres
 ## Requisitos
 
 - Um [projeto Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud.
-- Ter uma [instância Public Cloud](../public-cloud-primeiros-passos/) com Debian ou Ubuntu instalado.
+- Ter uma [instância Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps) com Debian ou Ubuntu instalado.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - Um acesso administrador (root) à sua instância através de SSH.
 
@@ -43,7 +41,7 @@ Este tutorial fornece as etapas de base para uma instalação manual do WordPres
 
 Para aceder à sua instalação através de um nome de domínio, deve ligá-la à sua instância. Para isso, deve editar a zona DNS acessível a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), desde que a OVHcloud seja o seu agente de registo **e** que o nome de domínio utilize os servidores DNS da OVHcloud.
 
-Para mais informações, consulte o guia [Editar a sua zona DNS](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/). Se o domínio estiver a ser utilizado atualmente, só pode configurar os DNS após a instalação do novo WordPress e o arranque do seu website.
+Para mais informações, consulte o guia [Editar a sua zona DNS](/pages/web/domains/dns_zone_edit). Se o domínio estiver a ser utilizado atualmente, só pode configurar os DNS após a instalação do novo WordPress e o arranque do seu website.
 
 ### Etapa 1: instalação do servidor web (LAMP)
 
@@ -225,7 +223,7 @@ O servidor web está pronto para a configuração inicial do WordPress.
 
 ### Etapa 5: configurar WordPress
 
-Abra um navegador Web e ligue-se ao site WordPress introduzindo o endereço IP da sua instância (ou o nome de domínio se já tiver [ligado um à instância](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/)). Escolha uma língua na primeira página.
+Abra um navegador Web e ligue-se ao site WordPress introduzindo o endereço IP da sua instância (ou o nome de domínio se já tiver [ligado um à instância](/pages/web/domains/dns_zone_edit)). Escolha uma língua na primeira página.
 
 Utilize o assistente de configuração WordPress para dar acesso à sua base de dados. Insira as informações que [configurou anteriormente](#sqlconf).
 

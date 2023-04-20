@@ -1,9 +1,6 @@
 ---
 title: "Gestion de contacts d’un projet"
 excerpt: "Découvrez comment gérer les contacts d'un projet Public Cloud"
-slug: gestion-des-contacts-dun-projet-PCI
-section: 'Gestion de projets'
-order: 6
 updated: 2022-04-04
 ---
 
@@ -44,14 +41,14 @@ Dans la nouvelle fenêtre, indiquez l'identifiant client souhaité pour chaque c
 
 Après avoir cliqué sur le bouton `Valider`{.action}, les deux comptes OVHcloud concernés par le changement recevront un e-mail de confirmation. Cet e-mail contient un code (token) permettant de valider le changement de contact dans l'onglet `Mes demandes`{.action} de la section **Gestion des contacts**.
 
-Pour une explication plus détaillée de cette procédure, nous vous invitons à consulter notre guide "[Gérer les contacts de ses services](../../customer/gestion-des-contacts/)".
+Pour une explication plus détaillée de cette procédure, nous vous invitons à consulter notre guide "[Gérer les contacts de ses services](/pages/account/customer/managing_contacts)".
 
 ## Aller plus loin
 
-[Informations concernant le mode de facturation Public Cloud](../information-concernant-le-mode-de-facturation-cloud/)
+[Informations concernant le mode de facturation Public Cloud](/pages/platform/public-cloud/analyze_billing)
 
-[Gérer les contacts de ses services](../../customer/gestion-des-contacts/)
+[Gérer les contacts de ses services](/pages/account/customer/managing_contacts)
 
-[Déléguer des projets](../deleguer-ses-projets/)
+[Déléguer des projets](/pages/platform/public-cloud/delegate_projects)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

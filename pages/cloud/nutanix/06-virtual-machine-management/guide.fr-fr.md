@@ -1,9 +1,6 @@
 ---
 title: Gestion des machines virtuelles 
-slug: virtual-machine-management
 excerpt: "Découvrez la gestion des machines virtuelles dans Prism Central"
-section: Premiers pas
-order: 09
 updated: 2022-05-10
 ---
 
@@ -279,9 +276,9 @@ Le nom du nouveau nœud apparaîtra en face de **Host** si la  migration s'est b
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Présentation d'un cluster Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
+[Présentation d'un cluster Nutanix](/pages/cloud/nutanix/03-nutanix-hci)
 
-[Importation d'images dans Nutanix](https://docs.ovh.com/fr/nutanix/image-import/)
+[Importation d'images dans Nutanix](/pages/cloud/nutanix/05-image-import)
 
 [Documentation Nutanix sur AHV](https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v5_20:AHV-Admin-Guide-v5_20)
 

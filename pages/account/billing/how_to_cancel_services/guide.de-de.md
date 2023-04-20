@@ -1,9 +1,6 @@
 ---
 title: OVHcloud Dienste kündigen
 excerpt: Erfahren Sie hier, wie Sie OVHcloud Abonnements beenden
-slug: how-to-cancel-your-services
-section: Verlängerung der Dienste verwalten
-order: 03
 updated: 2022-03-22
 ---
 
@@ -46,7 +43,7 @@ Das bedeutet, dass Sie vor einer Kündigung **sicherstellen** sollten dass Folge
 >
 > Die Kündigung kann nur vorgenommen werden, wenn folgende Bedingungen erfüllt sind:
 >
-> - Sie sind der “Administrator-Kontakt“ des Dienstes (für weitere Informationen lesen Sie [diese Anleitung](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/#definition)).
+> - Sie sind der “Administrator-Kontakt“ des Dienstes (für weitere Informationen lesen Sie [diese Anleitung](/pages/account/customer/managing_contacts#definition)).
 > - Der Dienst wird nicht manuell verlängert.
 > - Der Dienst befindet sich nicht im Zustand "Geschlossen", insbesondere aufgrund Zahlungsverzugs.
 >
@@ -104,7 +101,7 @@ Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Best�
 
 #### Managed Bare Metal <a name="managedbaremetal"></a>
 
-Um Ihren [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/) Dienst zu kündigen, folgen Sie den Anweisungen in [dieser Anleitung](https://docs.ovh.com/de/managed-bare-metal/eine-managed-bare-metal-kuendigen/).
+Um Ihren [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/) Dienst zu kündigen, folgen Sie den Anweisungen in [dieser Anleitung](/pages/cloud/managed-bare-metal/how-to-cancel).
 
 #### HA-NAS Server <a name="nas"></a>
 
@@ -134,7 +131,7 @@ Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Best�
 
 #### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
 
-Um Ihre [Hosted Private Cloud Powered by VMware](https://www.ovhcloud.com/de/hosted-private-cloud/) zu kündigen, folgen Sie den Anweisungen in [dieser Anleitung](https://docs.ovh.com/de/private-cloud/eine-private-cloud-kuendigen/).
+Um Ihre [Hosted Private Cloud Powered by VMware](https://www.ovhcloud.com/de/hosted-private-cloud/) zu kündigen, folgen Sie den Anweisungen in [dieser Anleitung](/pages/cloud/private-cloud/comment_resilier_le_private_cloud).
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
@@ -150,9 +147,9 @@ Jeder Public Cloud Dienst kann gelöscht werden, indem Sie rechts neben dem betr
 
 ![public cloud instance deletion](images/pci-deletion.png){.thumbnail}
 
-Die OVHcloud Public Cloud basiert auf dem Prinzip *Pay as you go* (weitere Details finden Sie auf unserer Seite zum [Abrechnungsmodus Public Cloud](https://docs.ovh.com/de/public-cloud/informationen-zu-cloud-abrechnungsoptionen/)). Sie zahlen am Monatsende nur für die Zeit, in der die Ressourcen tatsächlich genutzt werden.
+Die OVHcloud Public Cloud basiert auf dem Prinzip *Pay as you go* (weitere Details finden Sie auf unserer Seite zum [Abrechnungsmodus Public Cloud](/pages/platform/public-cloud/analyze_billing)). Sie zahlen am Monatsende nur für die Zeit, in der die Ressourcen tatsächlich genutzt werden.
 
-Sie können Ihren [aktuellen Verbrauch](https://docs.ovh.com/de/public-cloud/informationen-zu-cloud-abrechnungsoptionen/#aktuelle-ressourcennutzung-anzeigen) auch über das OVHcloud Kundencenter einsehen und per E-Mail benachrichtigt werden, wenn die Projektion Ihres Verbrauchs einen bestimmten Grenzwert überschreitet.
+Sie können Ihren [aktuellen Verbrauch](/pages/platform/public-cloud/analyze_billing#aktuelle-ressourcennutzung-anzeigen) auch über das OVHcloud Kundencenter einsehen und per E-Mail benachrichtigt werden, wenn die Projektion Ihres Verbrauchs einen bestimmten Grenzwert überschreitet.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -201,7 +198,7 @@ Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Best�
 
 Ein MX Plan Angebot unterliegt nicht einem regelmäßigen Abonnement; es kann daher nicht gekündigt werden. Sie können Ihren Dienst aber löschen.
 
-Um Ihren [MX Plan](https://docs.ovh.com/de/emails/) Dienst zu löschen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Produkte und Dienstleistungen`{.action}.
+Um Ihren [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan) Dienst zu löschen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Produkte und Dienstleistungen`{.action}.
 
 Klicken Sie dann auf den Button `...`{.action} rechts neben der betreffenden Dienstleistung und dann auf `MX Plan sofort löschen`{.action}.
 
@@ -216,23 +213,23 @@ Sie erhalten in diesem Fall eine E-Mail mit der Vorgehensweise zur Schließung I
 
 #### E-Mail Pro <a name="emailpro"></a>
 
-Um Ihr [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/emails-pro/verwaltung-der-abrechnung-emailpro/#konten-entfernen).
+Um Ihr [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web/emails-pro/manage_billing_emailpro#konten-entfernen).
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Um Ihr [Hosted Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange-abrechnung-verwalten/#accounts-entfernen).
+Um Ihr [Hosted Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#accounts-entfernen).
 
 #### Private Exchange <a name="private"></a>
 
-Um Ihr [Private Exchange](https://www.ovhcloud.com/de/emails/private-exchange/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange-abrechnung-verwalten/#accounts-entfernen_1).
+Um Ihr [Private Exchange](https://www.ovhcloud.com/de/emails/private-exchange/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#accounts-entfernen_1).
 
 #### Office 365 CSP1 <a name="office-csp1"></a>
 
-Um Ihr [Office 365 CSP1](https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/microsoft-collaborative-solutions/bestellung_und_verwaltung_einer_office_365_lizenzgruppe_bei_ovh/#ihre-abonnements-verwalten).
+Um Ihr [Office 365 CSP1](https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web/microsoft-collaborative-solutions/office_csp1#ihre-abonnements-verwalten).
 
 #### Office 365 CSP2 <a name="office-csp2"></a>
 
-Um Ihr [Office 365 CSP2](https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/microsoft-collaborative-solutions/verwaltung_einer_office_365_reseller_lizenzgruppe_csp2/#ihre-abos-verwalten).
+Um Ihr [Office 365 CSP2](https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web/microsoft-collaborative-solutions/office_csp2#ihre-abos-verwalten).
 
 #### Sharepoint <a name="sharepoint"></a>
 
@@ -275,6 +272,6 @@ Klicken Sie dann auf `Stornierung bestätigen`{.action}.
 
 ## Weiterführende Informationen
 
-[Verlängerung Ihrer OVHcloud Dienste verwalten](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/)
+[Verlängerung Ihrer OVHcloud Dienste verwalten](/pages/account/billing/how_to_use_automatic_renewal)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

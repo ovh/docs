@@ -1,11 +1,8 @@
 ---
 title: Object Storage Swift - Curl Command Memo (EN)
-slug: pcs/curl-commands-memo
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/pcs/curl-commands-memo/'
+    canonical: '/pages/cloud/storage/object_storage/pcs_curl_commands_memo'
 excerpt: Find here the main curl commands to manage your object containers
-section: OpenStack Swift Storage Class Specifics
-order: 090
 updated: 2023-03-02
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Object Storage - Use S3 Object Storage with S3cmd
-slug: s3/s3cmd
 excerpt: Learn how to configure S3cmd to manage your buckets and objects
-section: Tutorials
-order: 130
 updated: 2022-01-03
 ---
 
@@ -28,7 +25,7 @@ S3cmd is a free command line tool and client for managing data in storage spaces
 - A user with the required access rights on the bucket
 - Your S3 credentials (access_key and secret_access_key).
 
-See our [Getting started with S3 Object Storage](https://docs.ovh.com/asia/en/storage/object-storage/s3/getting-started-with-object-storage/) guide.
+See our [Getting started with S3 Object Storage](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) guide.
 
 ## Instructions
 

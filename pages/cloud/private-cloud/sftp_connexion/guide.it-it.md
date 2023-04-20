@@ -1,9 +1,6 @@
 ---
 title: Connessione in SFTP
-slug: connessione-in-sftp
 excerpt: Come accedere al servizio Private Cloud in SFTP
-section: Per iniziare
-order: 3
 updated: 2021-12-28
 ---
 

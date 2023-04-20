@@ -2,7 +2,6 @@
 deprecated: true
 title: Het gebruik van vScope
 excerpt: ''
-slug: het_gebruik_van_vscope
 legacy_guide_number: g718
 updated: 2022-01-28
 ---

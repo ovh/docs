@@ -1,9 +1,6 @@
 ---
 title: Using Roles to share your data
-slug: roles
-order: 8
 excerpt: Manage who can have access to your data and what they can do with them.
-section: Features
 updated: 2022-07-28
 ---
 
@@ -185,7 +182,7 @@ Don't hesitate to [explore the API](https://api.ovh.com/console/#/dbaas/logs){.e
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start){.ref}
-- Documentation: [Guides](../){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/quick_start){.ref}
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

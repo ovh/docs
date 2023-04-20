@@ -1,9 +1,6 @@
 ---
 title: How to use Data Processing through the OVHcloud API
-slug: use-api
 excerpt: Find out how to run your Apache Spark jobs with the OVHcloud API
-section: How to
-order: 8
 updated: 2021-05-14
 ---
 
@@ -13,13 +10,13 @@ updated: 2021-05-14
 
 This guide helps you to use the Data Processing endpoints through the OVHcloud API in order to develop your own applications with Data Processing.
 
-To read an introduction about the Data Processing service you can visit [Data Processing Overview](../overview).
+To read an introduction about the Data Processing service you can visit [Data Processing Overview](/pages/platform/data-processing/00_CONCEPTS_Overview).
 
 ## Requirements
 
 - An OVHcloud account
-- An activated Public Cloud project in your OVHcloud account (see [How to create a project](../../public-cloud/create_a_public_cloud_project/) and [How to activate the Data Processing service](../activation){.external} for details.)
-- An OpenStack user in your Public Cloud project and access to OpenStack Horizon dashboard (see [How to create an OpenStack user and access to Horizon](../../public-cloud/horizon/) for details.)
+- An activated Public Cloud project in your OVHcloud account (see [How to create a project](../../public-cloud/create_a_public_cloud_project/) and [How to activate the Data Processing service](/pages/platform/data-processing/30_HOWTO_activate_project){.external} for details.)
+- An OpenStack user in your Public Cloud project and access to OpenStack Horizon dashboard (see [How to create an OpenStack user and access to Horizon](/pages/platform/public-cloud/introducing_horizon) for details.)
 - An application code to be run in Apache Spark environment
 
 ## Instructions
@@ -53,7 +50,7 @@ Create this file in your application's directory and fill it with your own 3 key
 
 Once you have your credentials, you will be able to query the OVHcloud API. To do so, you can choose between two options.
 
-- Using a HTTP client or the curl command line: You can find the documentation to learn how to use the OVHcloud API [here](../../api/first-steps-with-ovh-api/).
+- Using a HTTP client or the curl command line: You can find the documentation to learn how to use the OVHcloud API [here](/pages/account/api/first-steps).
 
 - Using one of the wrappers provided by OVHcloud which will handle all the authentication for you: Several wrappers (for Python, Java, C#, PHP, Go, etc.) are available on the [OVHcloud GitHub](https://github.com/ovh?q=&type=&language=&sort=){.external}. All the information needed to use them can be found in their respective README.md files.
 
@@ -99,17 +96,17 @@ You can check your project activation status by calling the `GET cloud/project/{
 
 You can also verify this in the OVHcloud Control Panel: In the `Public Cloud`{.action} section, select your project and click on `Data Processing`{.action} in the left-hand menu. If your project is activated, you should see a list (or an empty list) of jobs. The page invites you to activate your current project otherwise.
 
-To learn how and why to activate your project, you can refer to this documentation: [How to activate the Data Processing service for your cloud project](../activation).
+To learn how and why to activate your project, you can refer to this documentation: [How to activate the Data Processing service for your cloud project](/pages/platform/data-processing/30_HOWTO_activate_project).
 
 ### Step 5: Use Data Processing with your application
 
 By following the previous steps you have your credentials, your OVHcloud API access method and all the information about the request body and response for each of Data Processing endpoints.<br>Now you can begin to use the Data processing endpoints from your own application. 
 
 Bear in mind that for submitting a job, you need to have your application code stored in your Public Cloud Object Storage.<br>
-If this is your first time using Data Processing, we advise to try it out first by following [this documentation for a Java job](../submit-javascala) or [this one for Python](../submit-python).
+If this is your first time using Data Processing, we advise to try it out first by following [this documentation for a Java job](../submit-javascala) or [this one for Python](/pages/platform/data-processing/31_HOWTO_submit-python-ui).
 
 ## Go further
 
-To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at the [Data Processing documentations page](../).
+To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at the [Data Processing documentations page](/products/public-cloud-data-analytics-data-processing).
 
 You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**

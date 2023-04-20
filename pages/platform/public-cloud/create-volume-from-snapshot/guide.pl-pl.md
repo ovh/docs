@@ -1,9 +1,6 @@
 ---
 title: Tworzenie wolumenu z kopii zapasowej
-slug: create-volume-from-backup
 excerpt: Dowiedz się, jak utworzyć dodatkowe dyski na podstawie kopii zapasowej dodatkowego dysku
-section: 'Przestrzeń dyskowa'
-order: 4
 updated: 2021-04-06
 ---
 
@@ -68,7 +65,7 @@ Proces łączenia dysku z Twoją instancją rozpocznie się i może zająć kilk
 Podczas łączenia dysku unikaj przeglądania strony poza zakładką w trakcie. Może to zakłócić proces.
 >
 
-Po podłączeniu możesz przejść do kolejnych etapów [w systemie Linux](../utworzenie_i_konfiguracja_dodatkowego_dysku_dla_instancji/#w-systemie-linux) lub [Windows](../utworzenie_i_konfiguracja_dodatkowego_dysku_dla_instancji/#w-systemie-windows).
+Po podłączeniu możesz przejść do kolejnych etapów [w systemie Linux](../utworzenie_i_konfiguracja_dodatkowego_dysku_dla_instancji/#w-systemie-linux) lub [Windows](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#w-systemie-windows).
 
 ## Sprawdź również
 

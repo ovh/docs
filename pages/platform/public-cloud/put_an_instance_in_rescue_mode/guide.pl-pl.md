@@ -1,9 +1,7 @@
 ---
 title: 'Przełączenie instancji w tryb rescue'
 excerpt: 'Ten przewodnik zawiera informacje o przełączaniu instancji w tryb ratunkowy (rescue)'
-slug: przelaczenie_instancji_w_tryb_rescue
 legacy_guide_number: g2029
-section: 'Zarządzanie w Panelu klienta OVH'
 updated: 2023-01-04
 ---
 
@@ -27,7 +25,7 @@ W takiej sytuacji można ponownie skonfigurować instancję lub odzyskać dane p
 
 [!alert]
 >
-> Do tej pory tryb Rescue dla instancji Metal nie jest dostępny w panelu klienta OVHcloud. Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem dotyczącym [trybu Rescue dla instancji Metal](https://docs.ovh.com/pl/public-cloud/metal-instance-rescue-mode/).
+> Do tej pory tryb Rescue dla instancji Metal nie jest dostępny w panelu klienta OVHcloud. Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem dotyczącym [trybu Rescue dla instancji Metal](/pages/platform/public-cloud/rescue_mode_metal_instance).
 
 
 ### Aktywacja trybu ratunkowego

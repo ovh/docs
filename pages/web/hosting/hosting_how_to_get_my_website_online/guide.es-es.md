@@ -1,9 +1,6 @@
 ---
 title: 'Publicar un sitio web en internet'
-slug: web_hosting_publicar_un_sitio_web_en_internet
 excerpt: 'Cómo subir un sitio web a un alojamiento de OVHcloud para publicarlo en internet'
-section: 'Primeros pasos'
-order: 06
 updated: 2022-07-21
 ---
 
@@ -25,7 +22,7 @@ Actualmente, hay una ingente cantidad de sitios web en la red. Tanto si quiere c
 - Haber recibido el email de confirmación de la instalación de su alojamiento web.
 - Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/){.external} con el que poder acceder a su sitio web.
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Estar actualizado en los [pagos](https://docs.ovh.com/es/billing/gestionar-facturas-ovh/#pay-bills) y [renovaciones](https://docs.ovh.com/es/billing/renovacion-automatica-ovh/#renewal-management) de los servicios asociados (dominio y alojamiento web).
+- Estar actualizado en los [pagos](/pages/account/billing/invoice_management#pay-bills) y [renovaciones](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
 
 ## Procedimiento
 
@@ -39,12 +36,12 @@ Para llevar su proyecto a buen puerto, es importante tener una visión clara de 
 
 - **Crear usted mismo un sitio web**: Esta opción le permitirá crear un proyecto a medida, aunque es la más técnica y requiere conocimientos de programación.
 
-- **Migrar un sitio web ya existente a OVHcloud**: Esta opción es delicada si no desea que se interrumpa el acceso al sitio web. Si necesita ayuda para migrar su sitio web, puede consultar la guía [Migrar un sitio web y el correo a OVHcloud](https://docs.ovh.com/es/hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external}.
+- **Migrar un sitio web ya existente a OVHcloud**: Esta opción es delicada si no desea que se interrumpa el acceso al sitio web. Si necesita ayuda para migrar su sitio web, puede consultar la guía [Migrar un sitio web y el correo a OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}.
 
 
 Según el método elegido para llevar a cabo su proyecto, tendrá dos posibilidades:
 
-- **Utilizar nuestros módulos en un clic**: Para más información, consulte la guía [Instalar un sitio web con un módulo en un clic](https://docs.ovh.com/es/hosting/modulos-en-un-clic/){.external}.
+- **Utilizar nuestros módulos en un clic**: Para más información, consulte la guía [Instalar un sitio web con un módulo en un clic](/pages/web/hosting/cms_install_1_click_modules){.external}.
 
 - **No utilizar nuestros módulos en un clic**: En ese caso, deberá instalar el sitio web en su alojamiento manualmente. La información que ofrece esta guía puede serle útil. No obstante, si necesita ayuda, puede ponerse en contacto con un webmaster.
  
@@ -78,7 +75,7 @@ Habrá recibido esta información por correo electrónico tras la instalación d
 
 ![Instalación de un sitio web](images/get-website-online-step1.png){.thumbnail}
 
-Se mostrará la información relativa a su espacio de almacenamiento. Entre esa información se encuentran los datos necesarios para conectarse a este último. Para más información, consulte nuestra guía [Conectarse al espacio de almacenamiento de un alojamiento web](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/){.external}. Si no recuerda la contraseña, consulte nuestra guía [Cambiar la contraseña de un usuario FTP](https://docs.ovh.com/es/hosting/cambiar-contrasena-usuario-ftp/){.external}.
+Se mostrará la información relativa a su espacio de almacenamiento. Entre esa información se encuentran los datos necesarios para conectarse a este último. Para más información, consulte nuestra guía [Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web/hosting/ftp_connection){.external}. Si no recuerda la contraseña, consulte nuestra guía [Cambiar la contraseña de un usuario FTP](/pages/web/hosting/ftp_change_password){.external}.
 
 Una vez que disponga de todos los datos necesarios, podrá conectarse a su espacio de almacenamiento de tres formas diferentes:
 
@@ -155,12 +152,12 @@ Le recomendamos que, si necesita ayuda para publicar su sitio web, se ponga en c
 
 ## Más información
 
-[Migrar un sitio web y el correo a OVHcloud](https://docs.ovh.com/es/hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external}
+[Migrar un sitio web y el correo a OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-[Instalar un sitio web con los módulos en un clic](https://docs.ovh.com/es/hosting/modulos-en-un-clic/){.external}
+[Instalar un sitio web con los módulos en un clic](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Conectarse al espacio de almacenamiento de un alojamiento web](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/){.external}
+[Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web/hosting/ftp_connection){.external}
 
-[Cambiar la contraseña de un usuario FTP](https://docs.ovh.com/es/hosting/cambiar-contrasena-usuario-ftp/){.external}
+[Cambiar la contraseña de un usuario FTP](/pages/web/hosting/ftp_change_password){.external}
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

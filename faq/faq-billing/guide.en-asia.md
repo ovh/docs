@@ -15,7 +15,7 @@ You can view a list of contacts for your services in the `My contacts`{.action} 
 
 #### Tips and tricks
 
-For further information about contact management, please read this detailed guide: [Managing contacts for your services](https://docs.ovh.com/asia/en/customer/managing-contacts/).
+For further information about contact management, please read this detailed guide: [Managing contacts for your services](/pages/account/customer/managing_contacts).
 
 ### How do I change my billing details?
 
@@ -34,7 +34,7 @@ If you do not renew your service before this date, it will simply be suspended, 
 
 Check the status of your services, and manage their renewal in the `My services`{.action} section of the OVHcloud Control Panel.
 Log in and manually renew your services on the page < https://www.ovh.co.uk/cgi-bin/order/renew.cgi>
-For further information, please read this detailed guide: [Managing renewal for your services](https://docs.ovh.com/asia/en/billing/how-to-use-automatic-renewal-at-ovh/).
+For further information, please read this detailed guide: [Managing renewal for your services](/pages/account/billing/how_to_use_automatic_renewal).
 
 ### How do I enable automatic renewal?
 
@@ -43,7 +43,7 @@ Go to the `Products and services`{.action} section, accessible via the dashboard
 #### Tips and tricks
 
 Before you enable automatic renewal, please enter a payment method. Please be aware that if payment is not settled after 7 days, your services will be suspended as a result.
-For further information, please read this detailed guide: [Managing renewal for your services](https://docs.ovh.com/asia/en/billing/how-to-use-automatic-renewal-at-ovh/).
+For further information, please read this detailed guide: [Managing renewal for your services](/pages/account/billing/how_to_use_automatic_renewal).
 
 ### How do I disable automatic renewal?
 
@@ -54,7 +54,7 @@ To cancel a service, go to [How do I cancel a service?](#cancelservice)
 #### Tips and tricks
 
 With automatic renewal, you can ensure that you do not experience any service interruptions. You will also receive email notifications before each renewal.
-For further information, please read this detailed guide: [Managing renewal for your services](https://docs.ovh.com/asia/en/billing/how-to-use-automatic-renewal-at-ovh/).
+For further information, please read this detailed guide: [Managing renewal for your services](/pages/account/billing/how_to_use_automatic_renewal).
 
 ### How do I add a payment method?
 
@@ -99,7 +99,7 @@ Please note that solutions with automatic renewal will be renewed on the first d
 #### Tips and tricks
 
 You can modify the renewal frequency for your solutions via the `My services`{.action} section of the OVHcloud Control Panel.
-For further information, please read this detailed guide: [Managing renewal for your services](https://docs.ovh.com/asia/en/billing/how-to-use-automatic-renewal-at-ovh/).
+For further information, please read this detailed guide: [Managing renewal for your services](/pages/account/billing/how_to_use_automatic_renewal).
 
 ### Which of my payment methods will be debited?
 
@@ -128,7 +128,7 @@ If you have not set any payment methods and you have services automatically rene
 #### Tips and tricks
 
 Do you have your OVHcloud username and password to hand? You can pay your bill.
-You can also read this detailed guide: [Managing OVH bills](https://docs.ovh.com/asia/en/billing/manage-ovh-bills/).
+You can also read this detailed guide: [Managing OVH bills](/pages/account/billing/invoice_management).
 
 ### How do I check my payment status?
 
@@ -151,7 +151,7 @@ The cancellation will be effective once your service is no longer valid, or reac
 #### Tips and tricks
 
 If you have made a mistake with your order, you can exercise your right of retraction under certain conditions. For further information, please view the following question: How do I cancel my order?
-You can access comprehensive documentation on cancelling all of our products and services [here](https://docs.ovh.com/asia/en/billing/how-to-cancel-your-services/).
+You can access comprehensive documentation on cancelling all of our products and services [here](/pages/account/billing/how_to_cancel_services).
 
 ### How do I customize the reference for my product/service on my bill?
 
@@ -164,7 +164,7 @@ You will be invoiced for resources paid in advance, and additional resources use
 
 #### Tips and tricks
 
-For further information, please read this detailed guide: [Information regarding cloud billing options](https://docs.ovh.com/asia/en/public-cloud/information-on-cloud-billing-options/).
+For further information, please read this detailed guide: [Information regarding cloud billing options](/pages/platform/public-cloud/analyze_billing).
 
 ### How do I see the accounts ledger?
 

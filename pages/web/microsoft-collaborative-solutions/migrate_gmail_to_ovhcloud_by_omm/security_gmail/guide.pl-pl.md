@@ -1,6 +1,5 @@
 ---
 title: 'Jak zezwolić na mniej bezpieczne połączenia w Gmailu'
-slug: bezpieczenstwo-gmail
 hidden: true
 updated: 2022-04-06
 ---
@@ -13,7 +12,7 @@ updated: 2022-04-06
 Z tego przewodnika dowiesz się, jak aktywować opcję „Zezwalaj na mniej bezpieczne aplikacje” na Twoim koncie Gmail.
 
 > [!primary] Ta dokumentacja jest etapem związanym z przewodnikiem
-> [„Migracja konta Gmail do adresu e-mail OVHcloud przy użyciu narzędzia OVH Mail Migrator”](https://docs.ovh.com/pl/microsoft-collaborative-solutions/migracja-konta-gmail-przez-ovh-mail-migrator){.external}
+> [„Migracja konta Gmail do adresu e-mail OVHcloud przy użyciu narzędzia OVH Mail Migrator”](/pages/web/microsoft-collaborative-solutions/migrate_gmail_to_ovhcloud_by_omm){.external}
 
 ## W praktyce
 
@@ -54,4 +53,4 @@ Po potwierdzeniu pojawia się poniższy komunikat informujący, że Twój wybór
 
 ## Sprawdź również
 
-[„Migracja konta Gmail do adresu e-mail OVHcloud przy użyciu narzędzia OVH Mail Migrator”](https://docs.ovh.com/pl/microsoft-collaborative-solutions/migracja-konta-gmail-przez-ovh-mail-migrator){.external}
+[„Migracja konta Gmail do adresu e-mail OVHcloud przy użyciu narzędzia OVH Mail Migrator”](/pages/web/microsoft-collaborative-solutions/migrate_gmail_to_ovhcloud_by_omm){.external}

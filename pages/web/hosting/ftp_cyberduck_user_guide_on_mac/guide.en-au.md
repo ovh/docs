@@ -1,9 +1,6 @@
 ---
 title: 'Web Hosting: Cyberduck user guide (on Mac)'
 excerpt: Insert Here A Short Desc
-slug: web_hosting_cyberduck_user_guide_on_mac
-section: FTP and SSH
-order: 05
 updated: 2020-05-05
 ---
 
@@ -22,7 +19,7 @@ To get the application, go to the official Cyberduck website:
 
 
 ![cyberduck macOS](images/2344.png){.thumbnail}
-Cyberduck is an application for Mac users. If you have a machine that uses Windows, use [FileZilla](https://docs.ovh.com/au/en/hosting/web_hosting_filezilla_user_guide/) instead.
+Cyberduck is an application for Mac users. If you have a machine that uses Windows, use [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide) instead.
 
 
 ## Interface
@@ -68,7 +65,7 @@ Follow the below steps to connect to your FTP server:
 
 - Cyberduck will remember your password if you tick Add to Keychain. This is not obligatory, but if you do not tick this box, you will need to re-enter your password every time you connect.
 
-- If you do not know your FTP login details, see [this guide](../log-in-to-storage-ftp-web-hosting/).
+- If you do not know your FTP login details, see [this guide](/pages/web/hosting/ftp_connection).
 
 
 A message should appear notifying you that the server supports encrypted connections (SSL)
@@ -122,7 +119,7 @@ Follow the below steps to connect to your FTP server:
 
 - Cyberduck will remember your password if you tick Add to Keychain. This is not obligatory, but if you do not tick this box, you will need to re-enter your password every time you connect.
 
-- If you do not know your FTP login details, see [this guide](../log-in-to-storage-ftp-web-hosting/).
+- If you do not know your FTP login details, see [this guide](/pages/web/hosting/ftp_connection).
 
 
 When you connect to your FTP server for the first time, a System does not recognise this host notification will appear.
@@ -154,7 +151,7 @@ You will also see this message: 530 Login authentification failed. In most cases
 
 ![cyberduck macOS](images/2352.png){.thumbnail}
 
-- If you do not know your FTP login details, see [this guide](../log-in-to-storage-ftp-web-hosting/).
+- If you do not know your FTP login details, see [this guide](/pages/web/hosting/ftp_connection).
 
 
 Connection failure
@@ -172,7 +169,7 @@ This may also be caused by a firewall or local network blocking port 21 or 22, w
 
 - As a reminder, your connection to your virtual host for your website on our servers is ftp.your-domain.tld (remplace with your domain name) or ftp.clusterXXX.ovh.net (replace XXX by your cluster number).
 
-- For more information, you can see [this guide](../web_hosting_how_to_get_my_website_online/).
+- For more information, you can see [this guide](/pages/web/hosting/hosting_how_to_get_my_website_online).
 
 
 

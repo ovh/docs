@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Configuratie van uw e-mailadres op Android via de Gmail-app
-slug: configuratie-android
 excerpt: Leer hoe u een MX Plan e-mailadres kunt configureren op Android, via de Gmail-app
-section: Android
 updated: 2018-03-12
 ---
 
@@ -95,8 +93,8 @@ OVH heeft ook een web-app die u kunt gebruiken om vanuit uw browser toegang te k
 
 ## Verder
 
-[Configuratie van uw E-mail Pro-account op Android via de Gmail-app](https://docs.ovh.com/nl/emails-pro/configuratie-android/){.external}
+[Configuratie van uw E-mail Pro-account op Android via de Gmail-app](/pages/web/emails-pro/how_to_configure_android){.external}
 
-[Configuratie van uw Exchange-account op Android via de Gmail-app](https://docs.ovh.com/nl/microsoft-collaborative-solutions/configuratie-android/){.external}.
+[Configuratie van uw Exchange-account op Android via de Gmail-app](/pages/web/microsoft-collaborative-solutions/how_to_configure_android){.external}.
 
 Ga in gesprek met andere communityleden op [https://community.ovh.com](https://community.ovh.com){.external}.

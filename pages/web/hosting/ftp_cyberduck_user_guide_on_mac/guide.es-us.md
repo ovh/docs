@@ -1,9 +1,6 @@
 ---
 title: 'Web hosting: Guía de uso de Cyberduck (Mac)'
 excerpt: Esta guía explica cómo utilizar la aplicación Cyberduck.
-slug: web_hosting_guia_de_uso_de_cyberduck_mac
-section: FTP y SSH
-order: 05
 updated: 2020-05-05
 ---
 
@@ -18,7 +15,7 @@ Para descargarla, visite la web oficial de la aplicación: [cyberduck.io](https:
 
 Cyberduck es una aplicación para usuarios de Mac. Si utiliza Windows en su máquina, recomendamos usar FileZilla: 
 
-- [](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/))
+- [](/pages/web/hosting/ftp_filezilla_user_guide))
 
 
 
@@ -68,7 +65,7 @@ Para conectarse a su espacio de alojamiento por FTP, siga las indicaciones que s
 
 Si no marca la casilla «Guardar contraseña», deberá introducir la contraseña cada vez que se conecte a su espacio de alojamiento.
 
-Si no recuerda sus claves FTP, consulte esta guía para [cambiar la contraseña de un usuario FTP](../cambiar-contrasena-usuario-ftp/).
+Si no recuerda sus claves FTP, consulte esta guía para [cambiar la contraseña de un usuario FTP](/pages/web/hosting/ftp_change_password).
 Debería aparecer un mensaje informando de que el servidor admite conexiones encriptadas (SSL).
 Nuestro servidor no es compatible con FTP-SSL, por lo que debe marcar la casilla «No mostrar de nuevo» y seleccionar «Continuar».
 
@@ -109,7 +106,7 @@ Para poder conectarse a su espacio de alojamiento, siga indicaciones que se ofre
 
 Si no marca la casilla «Guardar contraseña», deberá introducir la contraseña cada vez que se conecte a su espacio de alojamiento.
 
-Si no recuerda sus claves FTP, consulte esta guía para [cambiar la contraseña de un usuario FTP](../cambiar-contrasena-usuario-ftp/).
+Si no recuerda sus claves FTP, consulte esta guía para [cambiar la contraseña de un usuario FTP](/pages/web/hosting/ftp_change_password).
 La primera vez que se conecte a su espacio de alojamiento, aparecerá un mensaje informando de que el servidor no es reconocido por el sistema.
 Marque la casilla «Siempre» y haga clic en «Permitir». De esa forma, no tendrá que volver a confirmar el servidor de conexión (OVHcloud).
 
@@ -130,7 +127,7 @@ Si ha creado un favorito, también deberá modificarlo. Para ello, selecciónelo
 
 ![hosting](images/2352.png){.thumbnail}
 
-Si no recuerda sus claves FTP, consulte esta guía para [cambiar la contraseña de un usuario FTP](../cambiar-contrasena-usuario-ftp/).
+Si no recuerda sus claves FTP, consulte esta guía para [cambiar la contraseña de un usuario FTP](/pages/web/hosting/ftp_change_password).
 Falló la conexión
 
 Este mensaje, seguido de la mención Timed out waiting for initial connect reply, suele indicar que no ha sido posible conectar con el servidor. 
@@ -148,7 +145,7 @@ También puede deberse a que un cortafuegos o red local bloquean el puerto 21 o 
 Le recordamos que el servidor de conexión a su espacio de alojamiento es ftp.su-dominio.tld (sustituyendo su-dominio.tld por su nombre de dominio y extensión) o ftp.clusterXXX.ovh.net (sustituyendo XXX por su número de cluster).
 
 
-- Si lo necesita, consulte esta guía para [cambiar la contraseña de un usuario FTP](../cambiar-contrasena-usuario-ftp/).
+- Si lo necesita, consulte esta guía para [cambiar la contraseña de un usuario FTP](/pages/web/hosting/ftp_change_password).
 
 
 

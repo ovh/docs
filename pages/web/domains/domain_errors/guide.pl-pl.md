@@ -1,8 +1,5 @@
 ---
 title: 'Usunięcie błędu dla domeny'
-slug: domena-errors
-section: Zadania bieżące
-order: 02
 updated: 2022-09-01
 ---
 
@@ -22,7 +19,7 @@ Rejestracja domeny, jej transfer, zmiana właściciela to operacje, w których m
 
 - Posiadanie jednej lub kilku domen
 - Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- Aktualizacja w [płatności](https://docs.ovh.com/pl/billing/zarzadzanie-fakturami-ovhcloud/#pay-bills) i [odnowienie](https://docs.ovh.com/pl/billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/#renewal-management) powiązanych usług (domena i hosting)
+- Aktualizacja w [płatności](/pages/account/billing/invoice_management#pay-bills) i [odnowienie](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) powiązanych usług (domena i hosting)
 ## W praktyce
 
 W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) przejdź do sekcji `Web Cloud`{.action}, a następnie nazwy `Domeny`{.action}. Kliknij `Operacje w toku`{.action} nad listą domen.
@@ -50,7 +47,7 @@ W niniejszym przewodniku przyjrzymy się operacjom **z błędem**, posługując 
 >
 > Poniższa lista przykładów nie jest wyczerpująca. Jeśli pojawi się błąd, który nie jest opisany w tym przewodniku:
 >
-> - Sprawdź, czy jesteś na bieżąco w [płatnościach](https://docs.ovh.com/pl/billing/zarzadzanie-fakturami-ovhcloud/#pay-bills) i [odnowieniach](https://docs.ovh.com/pl/billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/#renewal-management) Twoich domen.
+> - Sprawdź, czy jesteś na bieżąco w [płatnościach](/pages/account/billing/invoice_management#pay-bills) i [odnowieniach](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) Twoich domen.
 > - Sprawdź, czy możesz działać klikając przycisk `...`{.action} znajdujący się po prawej stronie wybranej operacji.
 > - Przeczytaj komunikat opisowy i sprawdź, czy pozwala on rozwiązać błąd.
 >
@@ -97,7 +94,7 @@ W poniższym przykładzie adres IP serwera DNS nie odpowiada.
 
 ![domena](images/domain-error07.png){.thumbnail}
 
-W sekcji `Domeny`{.action} wybierz odpowiednią domenę, a następnie kliknij zakładkę `Serwery DNS`{.action}. W tej zakładce [zmień serwery DNS](https://docs.ovh.com/pl/domains/hosting_www_informacje_na_temat_serwerow_dns/). 
+W sekcji `Domeny`{.action} wybierz odpowiednią domenę, a następnie kliknij zakładkę `Serwery DNS`{.action}. W tej zakładce [zmień serwery DNS](/pages/web/domains/dns_server_general_information). 
 
 #### Błąd dotyczący domeny **.ie**,.**de** lub **.it** po aktualizacji DNS
 
@@ -137,10 +134,10 @@ Jeśli zauważysz problem, który nie jest związany z konfiguracją serwerów D
 
 ## Sprawdź również
 
-[Transfer domeny do OVHcloud](https://docs.ovh.com/pl/domains/przeniesienie-domeny-globalnej/)
+[Transfer domeny do OVHcloud](/pages/web/domains/transfer_incoming_generic_domain)
 
-[Transfer domeny do innego operatora](https://docs.ovh.com/pl/domains/transfer_wychodzacy_domeny_globalnej_lub_geograficznej/)
+[Transfer domeny do innego operatora](/pages/web/domains/transfer_outgoing_domain)
 
-[Zmiana serwerów DNS domeny OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_informacje_na_temat_serwerow_dns/)
+[Zmiana serwerów DNS domeny OVHcloud](/pages/web/domains/dns_server_general_information)
  
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

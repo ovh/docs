@@ -1,9 +1,6 @@
 ---
 title: 'Using automated tasks on a Web Hosting plan'
 excerpt: 'Find out how to configure scheduled jobs on your Web Hosting'
-slug: hosting_automated_taskscron
-section: Automated tasks (CRON)
-order: 01
 updated: 2022-12-01
 ---
 
@@ -106,7 +103,7 @@ Always make sure to use absolute paths to files in your scripts. The "DIR" const
 
 In your Web Hosting's logs, accessible from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), you will see the log category labelled "cron".
 
-Please refer to [this guide](../shared_view_my_websites_logs_and_statistics/) for details.
+Please refer to [this guide](/pages/web/hosting/logs_and_statistics) for details.
 
 ##### **Example logs**
 
@@ -147,8 +144,8 @@ Please refer to [this guide](../shared_view_my_websites_logs_and_statistics/) fo
 
 ## Go further
 
-[Configuring the .ovhconfig file of your Web Hosting plan](../configuring-file-ovhconfig/)
+[Configuring the .ovhconfig file of your Web Hosting plan](/pages/web/hosting/ovhconfig_configuration)
 
-[Using SSH on a Web Hosting plan](../web_hosting_ssh_on_web_hosting_packages/)
+[Using SSH on a Web Hosting plan](/pages/web/hosting/ssh_on_webhosting)
 
 Join our community of users on <https://community.ovh.com/en/>.

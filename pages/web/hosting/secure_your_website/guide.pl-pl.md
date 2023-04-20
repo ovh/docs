@@ -1,9 +1,6 @@
 ---
 title: Jak zabezpieczyć Twoją stronę WWW?
 excerpt: Dowiedz się, jak zwiększyć bezpieczeństwo Twojej strony WWW
-slug: secure-website
-section: Optymalizacja strony WWW 
-order: 01
 updated: 2021-12-10
 ---
 
@@ -31,7 +28,7 @@ Jest on organizowany etapami w coraz większym stopniu w zakresie znaczenia i tr
 ## Wymagania początkowe
 
 - [OVHcloud Web Hosting plan](https://www.ovhcloud.com/pl/web-hosting/)
-- posiadanie [login details](../logowanie-przestrzen-dyskowa-ftp-hosting-web/#etap-1-pobranie-informacji-niezbednych-do-logowania) w celu uzyskania dostępu do przestrzeni dyskowej planu hostingu
+- posiadanie [login details](/pages/web/hosting/ftp_connection#etap-1-pobranie-informacji-niezbednych-do-logowania) w celu uzyskania dostępu do przestrzeni dyskowej planu hostingu
 - dostęp do [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - dostęp do [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
 
@@ -47,13 +44,13 @@ Sprawdź bezpieczeństwo komputera Windows, Mac lub Linux:
 
 - sprawdź aktualizacje maszyny;
 - uruchom pełen skaner swojego komputera po aktualizacji oprogramowania antywirusowego / anty-malware;
-- regularnie zmieniaj hasło administratora dla swojego stanowiska (aby uzyskać więcej informacji na temat wyboru hasła, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](../../customer/identyfikator_klienta/#utworz-silne-i-unikalne-haslo)).
+- regularnie zmieniaj hasło administratora dla swojego stanowiska (aby uzyskać więcej informacji na temat wyboru hasła, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/account/customer/all_about_username#utworz-silne-i-unikalne-haslo)).
 
 ### Etap 2: zabezpiecz swój panel klienta OVHcloud
 
-Aby zabezpieczyć Twoje konto klienta, [włącz weryfikację dwuetapową](../../customer/zabezpieczenie-konta-za-pomoca-2FA/) i postępuj zgodnie z instrukcjami zawartymi w tym przewodniku](../../customer/identyfikator_klienta/).
+Aby zabezpieczyć Twoje konto klienta, [włącz weryfikację dwuetapową](../../customer/zabezpieczenie-konta-za-pomoca-2FA/) i postępuj zgodnie z instrukcjami zawartymi w tym przewodniku](/pages/account/customer/all_about_username).
 
-Pamiętaj, aby zaktualizować [dane przypisane do Twojego konta klienta](../../customer/identyfikator_klienta/#jak-zarzadzac-danymi-osobowymi_1) i dodać do niego zapasowy **e-mail**.<br>
+Pamiętaj, aby zaktualizować [dane przypisane do Twojego konta klienta](/pages/account/customer/all_about_username#jak-zarzadzac-danymi-osobowymi_1) i dodać do niego zapasowy **e-mail**.<br>
 W przypadku utraty danych do logowania i/lub niedostępności głównego adresu e-mail przypisanego do Twojego konta klienta OVHcloud, potrzebujemy wiadomości e-mail zapasowej lub aktualnych danych osobowych, które pomogą Ci w znalezieniu dostępu do Twoich rozwiązań.
 
 ### Etap 3: wykonuj regularnie kopie zapasowe swojej strony <a name="backup"></a>
@@ -65,28 +62,28 @@ W przypadku utraty danych do logowania i/lub niedostępności głównego adresu 
 > OVHcloud regularnie wykonuje kopie zapasowe danych na swojej infrastrukturze. Błąd podczas operacji, taki jak operacja usunięcia bazy danych w trakcie tworzenia lub nieprzedłużenie jej ważności, może spowodować definitywną utratę danych.
 >
 
-Wykonaj kopię zapasową danych (plików FTP **I** bazy danych) zgodnie z instrukcjami zawartymi w tym [przewodniku](../eksportowanie-witryna-internetowa/). Importuj je na swoje stanowisko lub na zewnętrzny nośnik, serwer NAS lub klucz USB.
+Wykonaj kopię zapasową danych (plików FTP **I** bazy danych) zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/hosting/exporter-son-site-web). Importuj je na swoje stanowisko lub na zewnętrzny nośnik, serwer NAS lub klucz USB.
 
 Oprogramowanie do zarządzania witryną internetową (CMS) umożliwia również instalację wtyczek do automatycznych kopii zapasowych.<br>
 Sprawdź oficjalne fora swojego ulubionego CMS-a lub skontaktuj się z [społecznością OVHcloud](https://community.ovh.com/en/).
 
 ### Etap 4: dowiedz się, jak rozpoznawać fałszywe e-maile
 
-Wiadomości typu phishing stanowią zagrożenie dla bezpieczeństwa Twojej strony, ponieważ mogą zawierać lub powodować instalację złośliwego oprogramowania. Aby dowiedzieć się, jak je rozpoznawać i chronić, zapoznaj się z tym [przewodnikiem](../../customer/oszustwa-phishing/).
+Wiadomości typu phishing stanowią zagrożenie dla bezpieczeństwa Twojej strony, ponieważ mogą zawierać lub powodować instalację złośliwego oprogramowania. Aby dowiedzieć się, jak je rozpoznawać i chronić, zapoznaj się z tym [przewodnikiem](/pages/account/customer/phishing_care).
 
 ### Etap 5: uruchom automatyczne odnawianie
 
 W przypadku nieodnowienia Twoich usług, OVHcloud ma prawny obowiązek, w dniu wygaśnięcia Twojego abonamentu, usunięcia w całości danych związanych z Twoją usługą hostingową oraz wszystkich kopii zapasowych. Wysyłamy do naszych klientów przypomnienia o harmonogramie ich odnowienia.<br>
 E-maile ożywienia mogą pojawić się w Twojej spamie lub adres e-mail powiązany z Twoim kontem OVHcloud może być nieprawidłowy lub nie może być już dostępny.
 
-Jeśli Twoja strona WWW ma duże znaczenie dla Twojej działalności zawodowej, [włącz automatyczne odnawianie](../../billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/#uzyskiwanie-dostepu-do-konfiguracji-uslug) dla wszystkich Twoich usług OVHcloud<br>
+Jeśli Twoja strona WWW ma duże znaczenie dla Twojej działalności zawodowej, [włącz automatyczne odnawianie](/pages/account/billing/how_to_use_automatic_renewal#uzyskiwanie-dostepu-do-konfiguracji-uslug) dla wszystkich Twoich usług OVHcloud<br>
 Zalecamy również regularne sprawdzanie **ważności zarejestrowanych sposobów płatności**.
 
 ### Etap 6: sprawdź, czy Twoja strona jest aktualna
 
-Regularnie sprawdź aktualizacje Twojej strony, postępując zgodnie z instrukcjami zawartymi w tym [przewodniku](../blokada-hostingu-z-powodu-wlamania/#22-aktualizacja-strony-www).
+Regularnie sprawdź aktualizacje Twojej strony, postępując zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/hosting/diagnostic_403_forbidden#22-aktualizacja-strony-www).
 
-Pamiętaj, aby na Twoim hostingu zainstalować najnowszą wersję [języka PHP](../konfiguracja_php_na_hostingu_www_ovh_2014/).
+Pamiętaj, aby na Twoim hostingu zainstalować najnowszą wersję [języka PHP](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014).
 
 ### Etap 7: włącz https
 
@@ -109,7 +106,7 @@ Dodaj do swojej strony wtyczkę bezpieczeństwa zalecaną przez producenta CMS:
 
 Na tym etapie należy zalogować się do [przestrzeni FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web/). Wymaga to umiejętności technicznych, aby rozpoznawać ewentualne złośliwe pliki na Twoim hostingu. Jeśli masz trudności z przeprowadzeniem tej weryfikacji, skontaktuj się z naszymi [partnerami](https://partner.ovhcloud.com/pl/).
 
-W przypadku wątpliwości przejdź do weryfikacji opisanych w [etapie 1](#local) niniejszego przewodnika i [zmień hasło](../zmiana-hasla-konto-ftp/) do przestrzeni FTP.
+W przypadku wątpliwości przejdź do weryfikacji opisanych w [etapie 1](#local) niniejszego przewodnika i [zmień hasło](/pages/web/hosting/ftp_change_password) do przestrzeni FTP.
 
 ### Etap 11: przetestuj kopie zapasowe swojej strony
 

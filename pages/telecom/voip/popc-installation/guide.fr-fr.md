@@ -1,9 +1,6 @@
 ---
 title: 'Installer le logiciel POPC'
-slug: popc-installation
 excerpt: "Découvrez comment installer et configurer le logiciel POPC pour l'utiliser avec une ligne SIP OVHcloud"
-section: POPC
-order: 1
 updated: 2022-08-04
 ---
 
@@ -55,7 +52,7 @@ Vous retrouvez alors, dans le cadre « Informations SIP », votre **login** et v
 
 #### Mot de passe SIP
 
-Si vous ne connaissez pas votre **mot de passe SIP** ou que vous ne l'avez jamais modifié au profit d'un mot de passe fort, consultez notre guide pour [Modifier le mot de passe d'une ligne SIP](../modifier-mot-de-passe-ligne-sip/).
+Si vous ne connaissez pas votre **mot de passe SIP** ou que vous ne l'avez jamais modifié au profit d'un mot de passe fort, consultez notre guide pour [Modifier le mot de passe d'une ligne SIP](/pages/telecom/voip/modifier-mot-de-passe-ligne-sip).
 
 Vous pouvez utiliser un coffre-fort de mots de passe, comme [Keepass](https://keepass.info/){.external} afin de sauvegarder en toute sécurité votre mot de passe SIP.
 
@@ -179,7 +176,7 @@ Si votre configuration SIP est correcte, l'icône de statut vous indique que vot
 
 ![configuration - statut du compte](images/popc-config-07.png){.thumbnail}
 
-Une fois votre configuration terminée, vous pouvez consulter notre guide dédié à la [prise en main du logiciel POPC](../popc-utilisation).
+Une fois votre configuration terminée, vous pouvez consulter notre guide dédié à la [prise en main du logiciel POPC](/pages/telecom/voip/popc-utilisation).
 
 ## Aller plus loin
 

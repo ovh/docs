@@ -1,10 +1,7 @@
 ---
 deprecated: true
 title: Introductie tot SSH
-slug: ssh-introductie
 excerpt: Ontdek hoe u met de SSH-dienst toegang krijgt tot uw server
-section: SSH en de SSH-key
-order: 1
 updated: 2022-06-08
 ---
 

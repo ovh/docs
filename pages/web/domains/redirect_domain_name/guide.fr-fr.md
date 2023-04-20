@@ -1,9 +1,6 @@
 ---
 title: "Rediriger un nom de domaine géré par OVHcloud"
-slug: redirection-nom-de-domaine
 excerpt: "Découvrez les différents types de redirections et comment en créer une pour un nom de domaine géré par OVHcloud"
-section: "Tâches courantes"
-order: 01
 updated: 2022-10-06
 ---
 
@@ -43,7 +40,7 @@ Ces actions peuvent être réalisées de plusieurs manières :
 > Soyez vigilant quant aux manipulations que vous allez entreprendre ou contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) dans le référencement si nécessaire.
 >
 > Attention : une redirection créée depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ne permet pas de rediriger une URL en `https://` vers un autre domaine ou une autre URL. 
-> Pour créer ce type de redirection, vous devrez obligatoirement passer par [une réécriture d'URL](https://docs.ovh.com/fr/hosting/htaccess-reecriture-url-mod-rewrite/) via un fichier « .htaccess » par exemple.
+> Pour créer ce type de redirection, vous devrez obligatoirement passer par [une réécriture d'URL](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite) via un fichier « .htaccess » par exemple.
 >
 
 ### Rediriger un nom de domaine depuis l'espace client
@@ -61,7 +58,7 @@ Trois options de redirections sont disponibles depuis l'[espace client OVHcloud]
 > L'onglet `Redirection`{.action} présente une quatrième option permettant de faire pointer rapidement votre domaine vers les entrées DNS A, AAAA et CNAME.<br>
 > Du fait qu'il ne s'agit pas là à proprement parler d'une « redirection », cette option ne sera pas détaillée dans ce guide.
 >
-> Pour plus d'informations sur les entrées DNS, consultez notre documentation sur les [enregistrements DNS](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/#les-enregistrements-dns).
+> Pour plus d'informations sur les entrées DNS, consultez notre documentation sur les [enregistrements DNS](/pages/web/domains/dns_zone_edit#les-enregistrements-dns).
 >
 
 Retrouvez ci-dessous les trois types de redirections détaillés étape par étape.
@@ -386,15 +383,15 @@ Cette variable peut être utilisée lorsque vous déplacez temporairement des fi
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Bloquer l’accès à mon site pour certaines adresses IP via un fichier « .htaccess » ](https://docs.ovh.com/fr/hosting/mutualise-htaccess-comment-bloquer-certaines-ip-au-niveau-de-mon-site/).
+[Bloquer l’accès à mon site pour certaines adresses IP via un fichier « .htaccess » ](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
-[Protéger l'interface d'administration de votre site via le « .htaccess » ](https://docs.ovh.com/fr/hosting/mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification/).
+[Protéger l'interface d'administration de votre site via le « .htaccess » ](/pages/web/hosting/htaccess_protect_directory_by_password).
 
-[Réécrire vos URLs grâce au « mod_rewrite »](https://docs.ovh.com/fr/hosting/htaccess-reecriture-url-mod-rewrite/).
+[Réécrire vos URLs grâce au « mod_rewrite »](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite).
 
-[Effectuer d'autres opérations avec le fichier « .htaccess » ](https://docs.ovh.com/fr/hosting/mutualise-htaccess-les-autres-operations-realisables-avec-des-fichiers-htaccess/).
+[Effectuer d'autres opérations avec le fichier « .htaccess » ](/pages/web/hosting/htaccess_what_else_can_you_do).
 
-[Comment éditer ma zone DNS ?](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/)
+[Comment éditer ma zone DNS ?](/pages/web/domains/dns_zone_edit)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 

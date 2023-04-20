@@ -1,10 +1,8 @@
 ---
 title: 'VPN für Ihren OVHcloud Zerto DRP einrichten'
-slug: zerto-virtual-replication-customer-to-ovhcloud
 routes:
-    canonical: 'https://docs.ovh.com/de/private-cloud/zerto-virtual-replication-customer-to-ovhcloud/'
+    canonical: '/pages/cloud/private-cloud/zerto-virtual-replication-customer-to-ovhcloud'
 excerpt: 'So richten Sie einen VPN-Tunnel ein, um Ihre lokale Zerto-Plattform mit Ihrer OVHcloud Managed Bare Metal zu verbinden.'
-section: 'OVHcloud Dienste und Optionen'
 updated: 2020-11-18
 ---
 

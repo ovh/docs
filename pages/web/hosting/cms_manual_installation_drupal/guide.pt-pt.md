@@ -1,9 +1,6 @@
 ---
 title: 'CMS, instalar manualmente Drupal'
 excerpt: Como instalar manualmente Drupal?
-slug: cms_instalar_manualmente_drupal
-section: CMS
-order: 07
 updated: 2022-12-01
 ---
 
@@ -233,5 +230,5 @@ Trata-se de um erro relativo à versão de PHP do seu servidor.
 A causa é simples: a última versão de PHP não foi ativada.
 
 
-Tem à sua disposição um guia para o ajudar a alterar a versão de PHP em uso no seu alojamento:[aqui]({legacy}1207)
+Tem à sua disposição um guia para o ajudar a alterar a versão de PHP em uso no seu alojamento:[aqui](/pages/web/hosting/cms_manual_installation_drupal%7Blegacy%7D1207)
 

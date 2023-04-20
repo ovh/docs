@@ -1,8 +1,6 @@
 ---
 title: 'ProxyProtocol get Source IP'
-slug: proxyprotocol
 excerpt: 'Get real visitor IP using OVH Load Balancer with ProxyProtocol'
-section: 'Setting up'
 updated: 2018-10-12
 ---
 
@@ -13,7 +11,7 @@ In this case, we want to get sourceIP, scheme trouth OVH API LoadBalancing, with
 
 
 ## Requirements
-We assume you have already an OVH Load Balancer HTTP configured, if not follow [https://docs.ovh.com/gb/en/load-balancer/using-iplb/](https://docs.ovh.com/gb/en/load-balancer/using-iplb/)
+We assume you have already an OVH Load Balancer HTTP configured, if not follow [/pages/cloud/load_balancer/use-lb](/pages/cloud/load_balancer/use-lb)
 
 You have :
 

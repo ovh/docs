@@ -1,8 +1,6 @@
 ---
 title: Configura il tuo MegaRAID in RAID 0
-slug: using-the-maximum-amount-of-disk-space
 excerpt: "Come configurare i dischi del tuo server in RAID 0, per sfruttare il massimo dello spazio disponibile"
-section: RAID e dischi
 updated: 2022-07-08
 ---
 
@@ -121,10 +119,10 @@ MegaCli -LDInfo -Lall -a0 | grep -i size
 
 ## Per saperne di più
 
-[Sostituire a caldo un disco su un server con RAID hardware](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/)
+[Sostituire a caldo un disco su un server con RAID hardware](/pages/cloud/dedicated/hotswap_raid_hard)
 
-[Sostituire a caldo un disco su un server con RAID software](https://docs.ovh.com/it/dedicated/hotswap-raid-soft/)
+[Sostituire a caldo un disco su un server con RAID software](/pages/cloud/dedicated/hotswap_raid_soft)
 
-[Gestione del RAID hardware](https://docs.ovh.com/gb/en/dedicated/raid-hard/)
+[Gestione del RAID hardware](/pages/cloud/dedicated/raid_hard)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

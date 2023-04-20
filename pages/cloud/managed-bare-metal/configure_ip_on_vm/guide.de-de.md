@@ -1,11 +1,8 @@
 ---
 title: 'IP auf einer virtuellen Maschine konfigurieren'
-slug: ip-server-konfiguration
 routes:
-    canonical: 'https://docs.ovh.com/de/private-cloud/ip-server-konfiguration/'
+    canonical: '/pages/cloud/private-cloud/configure_ip_on_vm'
 excerpt: 'Hier erfahren Sie, wie Sie eine IP auf einer virtuellen Maschine konfigurieren'
-section: 'Verwaltung virtueller Maschinen'
-order: 5
 updated: 2020-11-18
 ---
 
@@ -99,7 +96,7 @@ DNS Server: 213.186.33.99
 
 Die Konfiguration einer privaten IP-Adresse entspricht der einer öffentlichen IP-Adresse. Verwenden Sie jedoch die für Ihr VLAN konfigurierte Netzwerkkarte.
 
-In den Adapter-Einstellungen können Sie VLAN konfigurieren (standardmäßig 10 bis 20 und mit vRack verbunden. Sie können mehr erstellen, indem Sie dieser [Anleitung](../vlan-erstellung/) folgen.)
+In den Adapter-Einstellungen können Sie VLAN konfigurieren (standardmäßig 10 bis 20 und mit vRack verbunden. Sie können mehr erstellen, indem Sie dieser [Anleitung](/pages/cloud/managed-bare-metal/vlan-creation) folgen.)
 
 In den Einstellungen Ihrer virtuellen Maschine können Sie ein VLAN auswählen:
 

@@ -1,9 +1,6 @@
 ---
 title: AI Notebooks - Manage and use data in a notebook via UI
-slug: notebooks/manage-data-ui
 excerpt: Learn how to manage and access data from your Object Storage in your Notebook
-section: AI Notebooks - Guides
-order: 03
 updated: 2022-04-13
 ---
 
@@ -11,13 +8,13 @@ updated: 2022-04-13
 
 ## Objective
 
-This guide shows how to access Object Storage data from your [**notebooks**](https://docs.ovh.com/asia/en/publiccloud/ai/notebooks/definition/) via the OVHcloud Control Panel.
+This guide shows how to access Object Storage data from your [**notebooks**](/pages/platform/ai/notebook_guide_introduction_definition) via the OVHcloud Control Panel.
 
 ## Requirements
 
 - a [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
-- a Public Cloud user with `Administrator` or `AI Training operator` role, see [here](https://docs.ovh.com/asia/en/publiccloud/ai/users/) for more information
+- a Public Cloud user with `Administrator` or `AI Training operator` role, see [here](/pages/platform/ai/gi_01_manage_users) for more information
 
 ## Upload data to your Object Storage
 
@@ -38,7 +35,7 @@ Let's assume that a file named `my-dataset.zip` exists locally on your computer 
 
 ### 1- Select your solution
 
-If you want to know more about the different storage solutions, refer to this [page](https://docs.ovh.com/asia/en/storage/).
+If you want to know more about the different storage solutions, refer to this [page](/products/storage-backup).
 
 ![image](images/ui-container-solution.png){.thumbnail}
 
@@ -100,7 +97,7 @@ To launch an AI notebook, access the **AI Notebooks** section of your Public Clo
 
 ![image](images/ui-ai-notebooks.png){.thumbnail}
 
-For the *first 4 steps* of the notebook creation, please refer to this [tutorial](https://docs.ovh.com/asia/en/publiccloud/ai/notebooks/definition/).
+For the *first 4 steps* of the notebook creation, please refer to this [tutorial](/pages/platform/ai/notebook_guide_introduction_definition).
 
 ### Choose the notebook location
 
@@ -167,7 +164,7 @@ Your notebook is now ready to be launched with your data!
 
 ![image](images/ui-notebook-attached-data.png){.thumbnail}
 
-You can read the [Getting started](https://docs.ovh.com/asia/en/publiccloud/ai/notebooks/definition/) page to know how to find this URL.
+You can read the [Getting started](/pages/platform/ai/notebook_guide_introduction_definition) page to know how to find this URL.
 
 As soon as you access your notebook, you will see your different folders containing your data.
 

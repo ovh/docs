@@ -1,9 +1,6 @@
 ---
 title: 'Kalender in OWA freigeben'
 excerpt: 'Erfahren Sie hier, wie Sie Ihre Kalender in Exchange freigeben'
-slug: exchange_2016_einen_kalender_via_owa_webmail_freigeben
-section: 'Outlook Web App (OWA)'
-order: 03
 updated: 2020-02-19
 ---
 
@@ -91,11 +88,11 @@ Durch Klicken auf einen Kalender in der Liste wird dieser hinzugefügt oder aus 
 
 ## Weiterführende Informationen
 
-[OWA mit einem Exchange Account verwenden](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2016_verwendung_der_outlook_web_app/)
+[OWA mit einem Exchange Account verwenden](/pages/web/microsoft-collaborative-solutions/owa_user_guide)
 
-[Ordner in OWA freigeben](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2016_einen_ordner_via_owa_webmail_freigeben/)
+[Ordner in OWA freigeben](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
-[Kontaktgruppen erstellen](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_verwendung_der_gruppen_mailinglisten/)
+[Kontaktgruppen erstellen](/pages/web/microsoft-collaborative-solutions/feature_groups)
 
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

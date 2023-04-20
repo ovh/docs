@@ -1,6 +1,5 @@
 ---
 title: Utilizza il servizio SSL Gateway
-slug: utilizzare-ssl-gateway
 legacy_guide_number: 2370
 excerpt: Come rendere sicure le connessioni al tuo sito Web
 updated: 2022-12-01
@@ -14,7 +13,7 @@ updated: 2022-12-01
 
 > [!primary]
 >
-> - Aver ordinato un [SSL Gateway](../order-ssl-gateway/guide.it-it.md).
+> - Aver ordinato un [SSL Gateway](/it/ssl-gateway/order-ssl-gateway/guide.it-it.md).
 > - Avere accesso allo Spazio Cliente OVHcloud Sunrise.
 >
 

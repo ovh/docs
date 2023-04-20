@@ -1,8 +1,6 @@
 ---
 title: Envoyer des SMS depuis mon espace client
-slug: envoyer_des_sms_depuis_mon_espace_client
 excerpt: Découvrez comment envoyer des SMS simplement depuis votre espace client OVHcloud
-section: Envoyer des SMS
 updated: 2022-08-05
 ---
 
@@ -40,10 +38,10 @@ Pour plus de renseignements sur la création d'un expéditeur, reportez-vous à 
 Vous pouvez également envoyer des SMS à plusieurs destinataires. Deux méthodes sont disponibles pour y parvenir :
 
 - Par le biais d'une liste de destinataires au format .csv via le bouton "Gérer les destinataires". 
-Pour plus d'informations, vous pouvez consulter notre [guide sur les listes de destinataires SMS](../liste_de_destinataire_sms/).
+Pour plus d'informations, vous pouvez consulter notre [guide sur les listes de destinataires SMS](/pages/telecom/sms/liste_de_destinataire_sms).
 
 - Par le biais d'un carnet d'adresses (3) . Celui-ci peut être créé directement via votre espace client, ou être importé via un fichier .csv ou .txt. 
-N'hésitez pas à consulter notre [guide sur les carnets d'adresses SMS](../gerer_mes_carnets_dadresses_sms/).
+N'hésitez pas à consulter notre [guide sur les carnets d'adresses SMS](/pages/telecom/sms/gerer_mes_carnets_dadresses_sms).
 
 ### Étape 2 : composer votre SMS
 

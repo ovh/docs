@@ -1,10 +1,8 @@
 ---
 title: Managed Kubernetes End-of-Sale, End-of-Service and End-of-Life policies
 excerpt: ''
-slug: eos-eol-policies
-section: Technical resources
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/eos-eol-policies/'
+    canonical: '/pages/platform/kubernetes-k8s/eos-eol-policies'
 updated: 2022-05-30
 ---
 
@@ -32,7 +30,7 @@ As a general rule, OVHcloud will keep offering minor-version upgrade to all unsu
 
 As soon as a minor version reaches End-of-Support by OVHcloud, it will simultaneously reach End-Of-Sales, meaning that OVHcloud will stop proposing the minor version upon installation or reset of a Managed Kubernetes Service.
 
-At any time, the customer can find the currently supported versions on the [dedicated page](../kubernetes-plugins-software-versions-reserved-resources/)
+At any time, the customer can find the currently supported versions on the [dedicated page](/pages/platform/kubernetes-k8s/software-versions-reserved-resources)
 
 Any change to these general rules and/or to the release cycle of the Kubernetes project would be advised to affected customers by email (if requiring action on their side) and updated to this page.
 

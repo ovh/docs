@@ -1,11 +1,8 @@
 ---
 title: Configuración de NCM Self Service (CALM) (EN)
-slug: self-service-calm
 excerpt: 'How to enable Self Service (CALM) in your Prism Central'  
-section: Uso avanzado
-order: 06
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/nutanix/self-service-calm/'
+    canonical: '/pages/cloud/nutanix/36-self-service-calm'
 updated: 2023-01-16
 ---
 

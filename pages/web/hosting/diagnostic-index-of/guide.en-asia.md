@@ -1,9 +1,6 @@
 ---
 title: Troubleshooting an "Index of" page
 excerpt: Find out how to get your website back online if it displays an "Index of" page
-slug: diagnostic-index-of
-section: Troubleshooting
-order: 07
 updated: 2022-05-10
 ---
 
@@ -32,7 +29,7 @@ If a `Multisite` configuration is not correctly set up, your website may display
 
 ### Understanding the origin of the "Index of" page
 
-Your domain name is connected via the `Multisite`{.action} section of your hosting to a directory (a `Root folder`) on your [FTP server](https://docs.ovh.com/asia/en/hosting/log-in-to-storage-ftp-web-hosting/).
+Your domain name is connected via the `Multisite`{.action} section of your hosting to a directory (a `Root folder`) on your [FTP server](/pages/web/hosting/ftp_connection).
 
 The **Index of** page indicates that the directory does not contain an **index.php** or **index.html** file. Such a file functions as the "entry point" of your website.
 
@@ -42,13 +39,13 @@ To correctly display your website, this connection must be established in the `M
 
 > [!primary]
 >
-> If you want to temporarily link your domain to a `Root folder` that does not contain an **index.php** or **index.html** file, you can prevent the list of folders from being displayed on your site by following this [guide](https://docs.ovh.com/asia/en/hosting/what_else_can_you_do_with_the_htaccess_file/#prevent-the-content-of-a-directory-from-being-listed). You can also protect access to your folders with a [password](https://docs.ovh.com/asia/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+> If you want to temporarily link your domain to a `Root folder` that does not contain an **index.php** or **index.html** file, you can prevent the list of folders from being displayed on your site by following this [guide](/pages/web/hosting/htaccess_what_else_can_you_do#prevent-the-content-of-a-directory-from-being-listed). You can also protect access to your folders with a [password](/pages/web/hosting/htaccess_protect_directory_by_password).
 >
 > We recommend contacting a [specialist provider](https://partner.ovhcloud.com/asia/directory/) if you experience any difficulties setting up this configuration. Our support teams will not be able to assist you with any changes to your website’s internal programming.
 
 ### Resolving the most common cause of an "Index of" page
 
-You have imported the files of your website **mydomain.ovh** into the `www` folder on your OVHcloud Web Hosting plan through an [FTP connection](https://docs.ovh.com/asia/en/hosting/log-in-to-storage-ftp-web-hosting/). Your domain name however is not linked to this folder in the `Root folder` column of your `Multisite` configuration.
+You have imported the files of your website **mydomain.ovh** into the `www` folder on your OVHcloud Web Hosting plan through an [FTP connection](/pages/web/hosting/ftp_connection). Your domain name however is not linked to this folder in the `Root folder` column of your `Multisite` configuration.
 
 ![index_of_multisite](images/index_of_multisite.png){.thumbnail}
 
@@ -66,7 +63,7 @@ In the window that opens:
 
 > [!primary]
 >
-> It is not mandatory to use the `www` directory as `Root folder`. You can install your website in another folder on your [FTP server](https://docs.ovh.com/asia/en/hosting/log-in-to-storage-ftp-web-hosting/).
+> It is not mandatory to use the `www` directory as `Root folder`. You can install your website in another folder on your [FTP server](/pages/web/hosting/ftp_connection).
 >
 
 In the next window, click on `Confirm`{.action}.
@@ -81,11 +78,11 @@ Finally, check that your website appears correctly. Otherwise, reboot your devic
 
 ## Go further <a name="gofurther"></a>
 
-[Resolve the most common 1-click module errors](https://docs.ovh.com/asia/en/hosting/error-frequently-1-click-modules/)
+[Resolve the most common 1-click module errors](/pages/web/hosting/diagnostic_errors_module1clic)
 
-[Resolve the "Website not installed" error](https://docs.ovh.com/asia/en/hosting/web_hosting_error_-_website_not_installed/)
+[Resolve the "Website not installed" error](/pages/web/hosting/multisites_website_not_installed)
 
-[Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/asia/en/hosting/multisites-configuring-multiple-websites/)
+[Hosting multiple websites on your Web Hosting plan](/pages/web/hosting/multisites_configure_multisite)
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
 

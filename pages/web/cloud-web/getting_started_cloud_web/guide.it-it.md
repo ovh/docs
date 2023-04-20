@@ -1,9 +1,6 @@
 ---
 title: Iniziare a utilizzare un hosting Cloud Web
-slug: primi-passi-con-un-hosting-cloud-web
 excerpt: Come eseguire le prime operazioni su un Cloud Web
-section: Per iniziare
-order: 01
 updated: 2022-05-04
 ---
 
@@ -112,7 +109,7 @@ Ti consigliamo di fare molta attenzione nell’inserire queste informazioni:
 > Se hai aggiunto un dominio esterno, è necessario configurare un record TXT denominato **ovhcontrol** sulla configurazione DNS, Questo consente a OVHcloud di assicurarsi che si tratti di un’operazione valida e pertanto, se non viene realizzata, l’aggiunta del dominio viene annullata. 
 >
 
-Ripeti questa operazione per ciascun dominio che vuoi aggiungere al tuo Cloud Web. Per ottenere maggiori informazioni sull’aggiunta di un dominio come Multisito, consulta la seguente guida (in inglese): [Ospitare più siti su uno stesso hosting](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external}.
+Ripeti questa operazione per ciascun dominio che vuoi aggiungere al tuo Cloud Web. Per ottenere maggiori informazioni sull’aggiunta di un dominio come Multisito, consulta la seguente guida (in inglese): [Ospitare più siti su uno stesso hosting](/pages/web/hosting/multisites_configure_multisite){.external}.
 
 ![cloudweb](images/cloud-web-first-steps-step3.png){.thumbnail}
 
@@ -126,7 +123,7 @@ Questa soluzione ti permette di usufruire di un CMS pronto all’uso e personali
 
 Se vuoi optare per l’utilizzo di uno dei nostri moduli, sempre dopo aver selezionato il Cloud Web dallo Spazio Cliente, seleziona la scheda `CMS in 1 click`{.action}, poi su `Aggiungi un modulo`{.action}. A questo punto puoi dare avvio a un’installazione in modalità “semplice” (non personalizzabile) o in modalità “avanzata” (possibilità di personalizzare alcuni elementi).
 
-Per maggiori informazioni sui moduli in 1 click, consulta la nostra guida: [Installare i moduli in 1 click OVHcloud](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/){.external}
+Per maggiori informazioni sui moduli in 1 click, consulta la nostra guida: [Installare i moduli in 1 click OVHcloud](/pages/web/hosting/cms_install_1_click_modules){.external}
 
 > [!primary]
 >
@@ -141,13 +138,13 @@ Che si tratti di un nuovo sito Internet o della migrazione di un sito già esist
 
 Se scegli l’installazione manuale, è necessario che tu sia in possesso di tutti i file del sito Internet o dell’applicazione che vuoi installare, così come (se richiesto per un corretto funzionamento) degli identificativi di un database precedentemente creato sul tuo Cloud Web. In caso di migrazione di un sito Internet, procurati un backup completo.
 
-Poiché i progetti possono essere diversi tra loro, non esiste un procedimento universale, ma per ulteriore assistenza sulle operazioni da svolgere puoi consultare la nostre guide (in inglese): [Pubblicare un sito Web](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external} e [Migrare un sito e un servizio di posta in OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}
+Poiché i progetti possono essere diversi tra loro, non esiste un procedimento universale, ma per ulteriore assistenza sulle operazioni da svolgere puoi consultare la nostre guide (in inglese): [Pubblicare un sito Web](/pages/web/hosting/hosting_how_to_get_my_website_online){.external} e [Migrare un sito e un servizio di posta in OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
 ### Step 6: modifica la configurazione del tuo dominio
 
 In questa fase è necessario che il tuo progetto sia installato sul Cloud Web OVHcloud e che tu abbia creato i tuoi account email. Se non dovessero ancora funzionare, potrebbe darsi che la configurazione del tuo dominio non sia corretta e, in questo caso, ti consigliamo di seguire questo step.
 
-Ti ricordiamo tuttavia che, se stai effettuando una migrazione dei tuoi servizi a OVHcloud, le operazioni legate ai DNS potrebbero causare un malfunzionamento dei tuoi servizi se non vengono effettuate nel momento giusto. In base ai diversi step descritti nella nostra guida (in inglese) [Migrare un sito e un servizio di posta in OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}, è quindi necessario verificare ed eventualmente correggerne la configurazione alla fine del processo di migrazione.
+Ti ricordiamo tuttavia che, se stai effettuando una migrazione dei tuoi servizi a OVHcloud, le operazioni legate ai DNS potrebbero causare un malfunzionamento dei tuoi servizi se non vengono effettuate nel momento giusto. In base ai diversi step descritti nella nostra guida (in inglese) [Migrare un sito e un servizio di posta in OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}, è quindi necessario verificare ed eventualmente correggerne la configurazione alla fine del processo di migrazione.
 
 #### 6.1. Conoscere i record DNS OVHcloud 
 
@@ -173,7 +170,7 @@ Segui le indicazioni sottostanti per sapere dove effettuare le operazioni:
 
 |Configurazione DNS utilizzata|Dove effettuare le operazioni?|
 |---|---|
-|OVHcloud|Nello [Spazio Clienti OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Domini`{.action} e seleziona il tuo dominio. Nella scheda `Zona DNS`{.action} è possibile verificare ed eventualmente modificare le informazioni necessarie. Per maggiore assistenza, puoi consultare la nostra guida (in inglese) [Modificare una zona DNS OVHcloud](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.|
+|OVHcloud|Nello [Spazio Clienti OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Domini`{.action} e seleziona il tuo dominio. Nella scheda `Zona DNS`{.action} è possibile verificare ed eventualmente modificare le informazioni necessarie. Per maggiore assistenza, puoi consultare la nostra guida (in inglese) [Modificare una zona DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external}.|
 |Altro|Attraverso l’interfaccia del provider che gestisce la configurazione DNS del tuo dominio. Ti suggeriamo inoltre di contattarlo se trovi difficoltà nello svolgere queste operazioni.|
 
 Una volta modificata la configurazione DNS del tuo dominio, la propagazione delle modifiche potrebbe richiedere fino a 24 ore. Se hai aggiunto più domini al tuo hosting Cloud Web come Multisito, è necessario ripetere queste due operazioni per ciascun dominio. 
@@ -188,17 +185,17 @@ Per maggiori informazioni sulle funzionalità disponibili, consulta la documenta
 
 A questo punto non ti resta che utilizzare i tuoi account di posta. OVHcloud fornisce un’applicazione online (webmail): RoundCube. Puoi accedere all’App tramite l’indirizzo <https://www.ovh.it/mail/>, inserendo le credenziali associate al tuo account email creato in OVHcloud.
 
-Per maggiori informazioni su questo servizio, consulta la nostra guida [Guida all'utilizzo di RoundCube](https://docs.ovh.com/it/emails/webmail_guida_allutilizzo_di_roundcube/){.external} Per configurare l’account email su un client di posta o un dispositivo (ad esempio, smartphone o tablet), fai riferimento alla documentazione disponibile a questa pagina: <https://docs.ovh.com/it/emails/>.
+Per maggiori informazioni su questo servizio, consulta la nostra guida [Guida all'utilizzo di RoundCube](/pages/web/emails/email_roundcube){.external} Per configurare l’account email su un client di posta o un dispositivo (ad esempio, smartphone o tablet), fai riferimento alla documentazione disponibile a questa pagina: <https://docs.ovh.com/it/emails/>.
 
 ## Per saperne di più
 
-[Migrare un sito e un servizio di posta in OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external} (in inglese)
+[Migrare un sito e un servizio di posta in OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external} (in inglese)
 
-[Pubblicare un sito Web](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external} (in inglese)
+[Pubblicare un sito Web](/pages/web/hosting/hosting_how_to_get_my_website_online){.external} (in inglese)
 
-[Installare i moduli in 1 click OVHcloud](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/){.external}
+[Installare i moduli in 1 click OVHcloud](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Ospitare più siti su uno stesso hosting](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external} (in inglese)
+[Ospitare più siti su uno stesso hosting](/pages/web/hosting/multisites_configure_multisite){.external} (in inglese)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 

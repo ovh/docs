@@ -1,9 +1,6 @@
 ---
 title: Zmiana hasła do konta FTP
-slug: zmiana-hasla-konto-ftp
 excerpt: Dowiedz się, jak zmienić hasło dla użytkownika FTP utworzonego na Twoim hostingu
-section: FTP i SSH
-order: 03
 updated: 2022-08-18
 ---
 
@@ -16,7 +13,7 @@ updated: 2022-08-18
 ## Wprowadzenie 
 
 Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej plików online, z której możesz korzystać przy użyciu protokołu **FTP**.<br>Dostęp do przestrzeni dyskowej jest możliwy przez użytkownika FTP i powiązane z nim hasło.
-<br>W ten sposób będziesz mógł umieścić [Twoją stronę WWW w Internecie](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/#3-zapisanie-plikow-na-przestrzeni-dyskowej).
+<br>W ten sposób będziesz mógł umieścić [Twoją stronę WWW w Internecie](/pages/web/hosting/hosting_how_to_get_my_website_online#3-zapisanie-plikow-na-przestrzeni-dyskowej).
 
 **Dowiedz się, jak zmienić hasło do konta FTP utworzonego na Twoim hostingu.**
 
@@ -44,7 +41,7 @@ W tabeli wyświetlają się nazwy użytkowników FTP utworzone na Twoim hostingu
 
 > [!primary]
 >
-> Aby uzyskać więcej informacji na temat dobrych praktyk w zakresie zarządzania hasłami, zapoznaj się z instrukcjami zawartymi w tym [przewodniku](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/).
+> Aby uzyskać więcej informacji na temat dobrych praktyk w zakresie zarządzania hasłami, zapoznaj się z instrukcjami zawartymi w tym [przewodniku](/pages/account/customer/manage-ovh-password).
 >
 
 W zależności od pakietu [hostingowego OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) zmiana hasła do konta FTP w zakładce `FTP-SSH`{.action} zostanie wykonana na dwie różne sposoby:
@@ -78,18 +75,18 @@ Możesz łączyć pliki z przestrzenią dyskową na kilka sposobów:
 >
 > FTP Explorer nie jest dostępny w ofercie Cloud Web. Konieczne będzie zastosowanie jednej z następujących metod.
 
-- **Program FTP**: zainstaluj na Twoim komputerze program kompatybilny z protokołem FTP (np. [FileZilla](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/));
+- **Program FTP**: zainstaluj na Twoim komputerze program kompatybilny z protokołem FTP (np. [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide));
 
-- **Dostęp SSH** (tylko w ofercie Pro i Performance): zapoznaj się z przewodnikiem "[Korzystanie z dostępu SSH do hostingu](https://docs.ovh.com/pl/hosting/hosting_www_ssh_na_hostingu/)", aby korzystać z tego protokołu.
+- **Dostęp SSH** (tylko w ofercie Pro i Performance): zapoznaj się z przewodnikiem "[Korzystanie z dostępu SSH do hostingu](/pages/web/hosting/ssh_on_webhosting)", aby korzystać z tego protokołu.
 
 > [!primary]
 >
-> Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem "[Logowanie do przestrzeni dyskowej Twojego hostingu](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/)".
+> Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem "[Logowanie do przestrzeni dyskowej Twojego hostingu](/pages/web/hosting/ftp_connection)".
 >
 
 ## Sprawdź również <a name="gofurther"></a>
 
-[Tworzenie i zarządzanie hasłem do konta](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/)
+[Tworzenie i zarządzanie hasłem do konta](/pages/account/customer/manage-ovh-password)
 
 [Krajowy system cyberbezpieczeństwa](https://www.gov.pl/web/cyfryzacja/krajowy-system-cyberbezpieczenstwa-){.external}
 

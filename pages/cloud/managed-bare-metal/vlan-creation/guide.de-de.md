@@ -1,9 +1,6 @@
 ---
 title: VLAN-Erstellung
-slug: vlan-erstellung
 excerpt: Hier erfahren Sie, wie Sie VLANs (vRack) erstellen.
-section: OVHcloud Funktionen
-order: 02
 updated: 2020-11-18
 ---
 
@@ -32,7 +29,7 @@ Ihnen stehen zwei verteilte virtuelle Switches (vDS) zur Verfügung:
 - Der erste vDS nutzt nur *port groups* zur Kommunikation ins Internet
 - Der zweite vDS verfügt über VLAN *port groups*, zur Isolierung privater Kommunikation innerhalb der Managed Bare Metal und zwischen den verschiedenen vRack kompatiblen OVHcloud Diensten (Dedicated Server, Public Cloud...)
 
-Auf diesem Switch wurden 11 VLANs als Basis erstellt (VLAN10 bis VLAN20). Indem Sie `Administrator`-Rechte für den `Zugang zum V(x)LAN` in [der Benutzerverwaltung Ihres Kundencenters einräumen](../manager-ovhcloud/#benutzer), können Sie zusätzliche VLANs erstellen.
+Auf diesem Switch wurden 11 VLANs als Basis erstellt (VLAN10 bis VLAN20). Indem Sie `Administrator`-Rechte für den `Zugang zum V(x)LAN` in [der Benutzerverwaltung Ihres Kundencenters einräumen](/pages/cloud/managed-bare-metal/manager-ovhcloud#benutzer), können Sie zusätzliche VLANs erstellen.
 
 Gehen Sie zunächst in die Netzwerkansicht. Deployen Sie den **vRack** Ordner, klicken Sie mit der rechten Maustaste auf **dVS**, die mit *-vRack* endet, und klicken Sie dann auf `New Distributed Port Group`{.action}.
 

@@ -1,9 +1,7 @@
 ---
 title: Come utilizzare l’API OpenStack
 excerpt: Come gestire le tue istanze con il client Python OpenStack
-slug: come_utilizzare_lapi_nova
 legacy_guide_number: g1935
-section: Gestione via OpenStack
 updated: 2022-10-13
 ---
 
@@ -29,8 +27,8 @@ Questa guida ti mostra come utilizzare le API OpenStack per gestire le tue istan
 
 ## Prerequisiti
 
-- [Preparare l’ambiente per utilizzare l’API OpenStack](../prepare_the_environment_for_using_the_openstack_api/)
-- [Impostare le variabili d’ambiente OpenStack](../set-openstack-environment-variables/)
+- [Preparare l’ambiente per utilizzare l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Impostare le variabili d’ambiente OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 
 ## Procedura

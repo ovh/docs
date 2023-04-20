@@ -1,13 +1,10 @@
 ---
 title: Terraform Tutorial (EN)
-slug: how-to-use-terraform
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/public-cloud/how-to-use-terraform/'
+    canonical: '/pages/platform/public-cloud/how_to_use_terraform'
 description: Procedure of use of Terraform
 keywords: infrastructure, instance, cloud, creation
 excerpt: Step-by-step documentation on how to use Terraform configurations for your infrastructure
-section: Tutorials
-order: 02
 updated: 2022-05-27
 ---
 
@@ -49,11 +46,11 @@ As an example, this video shows how to easily scale the number of instances whil
 
 ### Requirements
 
-- [Configuring user access to Horizon](https://docs.ovh.com/pl/public-cloud/horizon/)
-- [Preparing an environment for using the OpenStack API](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Setting OpenStack environment variables](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/)
-- [Your OVHcloud API identifiers and authorisation key](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/)
-- [An SSH key](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/)
+- [Configuring user access to Horizon](/pages/platform/public-cloud/introducing_horizon)
+- [Preparing an environment for using the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Setting OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables)
+- [Your OVHcloud API identifiers and authorisation key](/pages/account/api/first-steps)
+- [An SSH key](/pages/platform/public-cloud/public-cloud-first-steps)
 - [Terraform OpenStack provider](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs){.external}
 - [The OVHcloud Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest/docs){.external}
 
@@ -131,7 +128,7 @@ provider "ovh" {
 
 The "alias" is a unique identifier for a provider. For example, if you have two OpenStack providers with different credentials, you must precise each provider in the resource.
 
-You now need to [create a new OpenStack user](https://docs.ovh.com/pl/public-cloud/tworzenie-i-usuwanie-uzytkownika-openstack/), then [generate the OpenRC file](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/#etap-1-zgromadzenie-zmiennych) containing all of the credentials you want to export as environment variables.
+You now need to [create a new OpenStack user](/pages/platform/public-cloud/create_and_delete_a_user), then [generate the OpenRC file](/pages/platform/public-cloud/loading_openstack_environment_variables#etap-1-zgromadzenie-zmiennych) containing all of the credentials you want to export as environment variables.
 
 Load this file, then enter the password for the user you created earlier:
 

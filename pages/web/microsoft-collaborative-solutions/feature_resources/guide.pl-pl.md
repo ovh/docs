@@ -1,9 +1,6 @@
 ---
 title: 'Korzystanie z kont zasobów'
 excerpt: 'Przewodnik opisuje, w jaki sposób korzystać z kont zasobów.'
-slug: exchange_20132016_korzystanie_z_kont_zasobow
-section: 'Funkcje kont Exchange'
-order: 05
 updated: 2020-06-05
 ---
 
@@ -50,7 +47,7 @@ Kliknij `Dalej`{.action}, aby przejść do podsumowania, a następnie zatwierdź
 
 ### Etap 2: korzystanie z zasobów
 
-Możesz zarządzać zasobami, korzystając z tabeli w zakładce "Zasoby". Kliknij `...`{.action}, aby zmienić lub usunąć zasób. Pojawi się również opcja `Konfiguracja uprawnień`{.action}. Dzięki tej opcji będziesz mógł delegować dostęp w taki sam sposób, jak w przypadku konta Exchange. Szczegóły znajdziesz w [tym przewodniku](../exchange_2013_przyznanie_uprawnien_full_access/).
+Możesz zarządzać zasobami, korzystając z tabeli w zakładce "Zasoby". Kliknij `...`{.action}, aby zmienić lub usunąć zasób. Pojawi się również opcja `Konfiguracja uprawnień`{.action}. Dzięki tej opcji będziesz mógł delegować dostęp w taki sam sposób, jak w przypadku konta Exchange. Szczegóły znajdziesz w [tym przewodniku](/pages/web/microsoft-collaborative-solutions/feature_delegation).
 
 ![zasoby](images/exchange-resources-step3.png){.thumbnail}
 
@@ -58,7 +55,7 @@ Możesz zarządzać zasobami, korzystając z tabeli w zakładce "Zasoby". Klikni
 
 > [!primary]
 >
-Zapoznaj się również z naszym przewodnikiem dotyczącym [Współdzielenia kalendarzy w interfejsie OWA](../exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa/).
+Zapoznaj się również z naszym przewodnikiem dotyczącym [Współdzielenia kalendarzy w interfejsie OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing).
 >
 
 Zaloguj się do konta Exchange przez [webmail OVHcloud](https://www.ovh.pl/mail/). Przejdź do interfejsu "Harmonogram", klikając "przycisk aplikacji" w lewym górnym rogu, a następnie wybierając ikonę `Kalendarz`{.action}.
@@ -123,10 +120,10 @@ Po utworzeniu wydarzenia (kliknij `Wyślij`{.action} na górnym pasku menu), Exc
 
 ## Sprawdź również
 
-[Sprawdź konto Exchange w interfejsie OWA](../exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/)
+[Sprawdź konto Exchange w interfejsie OWA](/pages/web/microsoft-collaborative-solutions/owa_user_guide)
 
-[Współdzielenie kalendarza w interfejsie OWA](../exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa/)
+[Współdzielenie kalendarza w interfejsie OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Współdzielenie katalogu w interfejsie OWA](../exchange_2016_wspoldzielenie_katalogu_poprzez_webmail_owa/)
+[Współdzielenie katalogu w interfejsie OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: Ripristinare e importare un database sul tuo server di database
-slug: ripristinare-importare-database
 excerpt: Come ripristinare e importare il database
-section: Configurazione
-order: 05
 updated: 2023-02-15
 ---
 
@@ -92,7 +89,7 @@ In alcuni casi, la RAM disponibile nel tuo database potrebbe non consentire di e
 
 #### Importare il mio database MySQL o MariaDB da phpMyAdmin
 
-Per importare il tuo database direttamente da phpMyAdmin, è necessario connetterti prima a questo database. Per farlo, fare riferimento a [questa guida](https://docs.ovh.com/it/clouddb/connessione-database-server-bdd/#connettersi-a-un-database-mysql-o-mariadb).
+Per importare il tuo database direttamente da phpMyAdmin, è necessario connetterti prima a questo database. Per farlo, fare riferimento a [questa guida](/pages/web/clouddb/connecting-to-database-on-database-server#connettersi-a-un-database-mysql-o-mariadb).
 
 Una volta connesso a phpMyAdmin, seleziona il tuo database cliccando sul suo nome.
 
@@ -112,7 +109,7 @@ Lascia le opzioni predefinite e clicca su `Esegui`{.action} per avviare l'import
 
 #### Importare il tuo database MySQL o MariaDB da riga di comando
 
-Questa azione è possibile solo in [SSH](https://docs.ovh.com/it/hosting/hosting_condiviso_il_protocollo_ssh/) da un hosting condiviso OVHcloud.
+Questa azione è possibile solo in [SSH](/pages/web/hosting/ssh_on_webhosting) da un hosting condiviso OVHcloud.
 
 ```bash
 cat nom_de_base.sql | mysql —host=server —user=utente —port=port —password=password nome_database
@@ -129,7 +126,7 @@ cat nom_de_base.sql | mysql —host=server —user=utente —port=port —passwo
 
 > [!warning]
 >
-> - Per evitare che un terzo acceda al file con dati sensibili, consulta questa guida per rendere [sicuro l'accesso](https://docs.ovh.com/it/hosting/condividi-htaccess-come-proteggere-laccesso-a-una-cartella-tramite-autenticazione/)
+> - Per evitare che un terzo acceda al file con dati sensibili, consulta questa guida per rendere [sicuro l'accesso](/pages/web/hosting/htaccess_protect_directory_by_password)
 > - Questa azione è possibile solo da un hosting OVHcloud condiviso.
 >
 
@@ -139,7 +136,7 @@ In alcuni casi, la RAM disponibile sul tuo server di database non permette di re
 
 #### Importa il tuo database PostgreSQL da riga di comando
 
-Questa azione è possibile esclusivamente in [SSH](https://docs.ovh.com/it/hosting/hosting_condiviso_il_protocollo_ssh/) da un hosting condiviso OVHcloud in versione stabile o superiore.
+Questa azione è possibile esclusivamente in [SSH](/pages/web/hosting/ssh_on_webhosting) da un hosting condiviso OVHcloud in versione stabile o superiore.
 
 ```bash
 psql —host=server —port=port —user=utente —password=password nome_database < nome_database.sql
@@ -157,7 +154,7 @@ psql —host=server —port=port —user=utente —password=password nome_databa
 
 > [!warning]
 >
-> - Per evitare che un terzo acceda al file con dati sensibili, consulta questa guida per rendere [sicuro l'accesso](https://docs.ovh.com/it/hosting/condividi-htaccess-come-proteggere-laccesso-a-una-cartella-tramite-autenticazione/)
+> - Per evitare che un terzo acceda al file con dati sensibili, consulta questa guida per rendere [sicuro l'accesso](/pages/web/hosting/htaccess_protect_directory_by_password)
 > - Questa azione è possibile solo da un hosting OVHcloud condiviso.
 >
 

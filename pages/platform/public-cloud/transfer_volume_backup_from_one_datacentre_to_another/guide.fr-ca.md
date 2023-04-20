@@ -1,10 +1,7 @@
 ---
 title: 'Transférer la sauvegarde d’un volume d’un datacenter à l’autre'
-slug: transferer-la-sauvegarde-dun-volume-dun-datacentre-a-lautre
 legacy_guide_number: 1941
-section: Stockage
 excerpt: 'Apprenez à déplacer une sauvegarde de volume entre différents centres de données'
-order: 11
 updated: 2021-01-19
 ---
 
@@ -20,7 +17,7 @@ Vous pouvez avoir besoin de déplacer des volumes additionnels d'un datacenter �
 
 * Posséder une [instance Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external} dans votre compte OVHcloud.
 * Disposer d’un accès administrateur (root) à votre datacenter via SSH.
-* Lire le guide « [Préparer l’environnement pour utiliser l’API OpenStack](../prepare_the_environment_for_using_the_openstack_api/){.external} » (recommandé).
+* Lire le guide « [Préparer l’environnement pour utiliser l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api){.external} » (recommandé).
 
 > [!primary]
 >
@@ -183,6 +180,6 @@ root@serveur:~$ volume create --type classic --image aa2a39c6-433c-4e94-995a-a12
 
 ## Aller plus loin
 
-[Transférer la sauvegarde d’une instance d’un datacenter à un autre](../transferer-la-sauvegarde-dune-instance-dun-datacentre-a-lautre/){.external}.
+[Transférer la sauvegarde d’une instance d’un datacenter à un autre](/pages/platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

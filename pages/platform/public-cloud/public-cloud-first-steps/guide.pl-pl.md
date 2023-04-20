@@ -1,9 +1,6 @@
 ---
 title: 'Tworzenie pierwszej instancji Public Cloud i łączenie się z nią'
-slug: public-cloud-pierwsze-kroki
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z usługi Public Cloud po utworzeniu projektu'
-section: 'Pierwsze kroki'
-order: 1
 updated: 2023-01-26
 ---
 
@@ -142,7 +139,7 @@ Niezależnie od wybranej metody tworzenia kluczy SSH teraz można dodać klucz p
 
 > [!primary]
 >
-Zapisane klucze SSH umożliwiają szybsze tworzenie instancji. Aby zmienić pary kluczy i następnie dodać użytkowników, zapoznaj się z przewodnikiem [Konfiguracja dodatkowych kluczy SSH](https://docs.ovh.com/pl/public-cloud/konfiguracja_dodatkowych_kluczy_ssh/).
+Zapisane klucze SSH umożliwiają szybsze tworzenie instancji. Aby zmienić pary kluczy i następnie dodać użytkowników, zapoznaj się z przewodnikiem [Konfiguracja dodatkowych kluczy SSH](/pages/platform/public-cloud/configuring_additional_ssh_keys).
 >
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij pozycję `Klucze SSH`{.action} na lewym pasku nawigacyjnym w obszarze “Zarządzanie projektami”.
@@ -214,7 +211,7 @@ W zależności od planowanego wykorzystania instancji możesz wybrać **Tryb pub
 
 Tryb publiczny to klasyczny model sieci, który umożliwia przypisany publiczny port sieciowy Twoim instancjom. Każda instancja posiada publiczny adres IP i prywatny adres IP przypisany do usługi vrack.
 
-Tryb prywatny daje możliwość przypisywania instancji tylko do sieci prywatnej. Instancje w tym trybie mogą być dostępne w sieci publicznej wyłącznie za pomocą usługi Gateway lub Load Balancer z Floating IP. Więcej informacji znajdziesz w ddokumentacją dotyczącą [rozwiązań sieciowych dla Public Cloud OVHcloud](https://docs.ovh.com/pl/publiccloud/network-services/).
+Tryb prywatny daje możliwość przypisywania instancji tylko do sieci prywatnej. Instancje w tym trybie mogą być dostępne w sieci publicznej wyłącznie za pomocą usługi Gateway lub Load Balancer z Floating IP. Więcej informacji znajdziesz w ddokumentacją dotyczącą [rozwiązań sieciowych dla Public Cloud OVHcloud](/products/public-cloud-network).
 
 Po wybraniu trybu wybierz prywatną sieć, do której chcesz przypisać instancję lub kliknij `Utwórz nową prywatną sieć`{.action}, aby stworzyć nową.
 
@@ -241,12 +238,12 @@ W instancji zostaje utworzony automatycznie użytkownik z podwyższonymi uprawni
 
 > [!primary]
 >
-W przypadku problemów z połączeniem, tj. błędów dotyczących kluczy SSH, zapoznaj się z przewodnikiem [Zmiana klucza SSH w przypadku utraty](https://docs.ovh.com/pl/public-cloud/zmiana_klucza_ssh_w_przypadku_utraty/).
+W przypadku problemów z połączeniem, tj. błędów dotyczących kluczy SSH, zapoznaj się z przewodnikiem [Zmiana klucza SSH w przypadku utraty](/pages/platform/public-cloud/replacing_lost_ssh_key).
 >
 
 > [!primary]
 >
-Jeśli utworzyłeś instancję bez klucza SSH, przez API OVHcloud lub interfejs Openstack Horizon, możesz dodać klucz SSH do instancji tylko przez [tryb Rescue](https://docs.ovh.com/pl/public-cloud/przelaczenie_instancji_w_tryb_rescue/), postępując zgodnie z instrukcjami podanymi w [tej sekcji odpowiedniego przewodnika](../zmiana_klucza_ssh_w_przypadku_utraty/#w-praktyce).
+Jeśli utworzyłeś instancję bez klucza SSH, przez API OVHcloud lub interfejs Openstack Horizon, możesz dodać klucz SSH do instancji tylko przez [tryb Rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode), postępując zgodnie z instrukcjami podanymi w [tej sekcji odpowiedniego przewodnika](/pages/platform/public-cloud/replacing_lost_ssh_key#w-praktyce).
 >
 
 #### Połączenie z instancją z systemem operacyjnym Linux z systemu Linux/Mac
@@ -352,12 +349,12 @@ Jeśli pojawi się komunikat dotyczący certyfikatu, kliknij przycisk `Tak`{.act
 
 ## Sprawdź również
 
-[Tworzenie kopii zapasowej instancji](https://docs.ovh.com/pl/public-cloud/kopia_zapasowa_instancji/)
+[Tworzenie kopii zapasowej instancji](/pages/platform/public-cloud/save_an_instance)
 
-[Zwiększenie limitów Public Cloud](https://docs.ovh.com/pl/public-cloud/increase-public-cloud-quota/)
+[Zwiększenie limitów Public Cloud](/pages/platform/public-cloud/increasing_public_cloud_quota)
 
-[Zmiana typu rozliczenia z godzinowego na miesięczne](https://docs.ovh.com/pl/public-cloud/zmiana-typu-rozliczenia/)
+[Zmiana typu rozliczenia z godzinowego na miesięczne](/pages/platform/public-cloud/changing_hourly_monthly_billing)
 
-[Konfiguracja dodatkowych kluczy SSH](https://docs.ovh.com/pl/public-cloud/konfiguracja_dodatkowych_kluczy_ssh/)
+[Konfiguracja dodatkowych kluczy SSH](/pages/platform/public-cloud/configuring_additional_ssh_keys)
 
 Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.

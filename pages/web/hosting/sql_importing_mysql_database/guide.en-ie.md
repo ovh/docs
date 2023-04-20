@@ -1,9 +1,6 @@
 ---
 title: 'Importing a backup into a Web Hosting plan database'
-slug: web_hosting_guide_to_importing_a_mysql_database
 excerpt: 'Find out how to import a backup into a database on your OVHcloud Web Hosting plan'
-section: Databases
-order: 04
 updated: 2018-09-25
 ---
 
@@ -138,7 +135,7 @@ Make sure you replace the generic information given in this script (e.g. ‘serv
 
 #### Step 2: Upload the script and the backup to the storage space.
 
-Once the import script has been written, you will need to upload it, along with the backup file you want to import to the storage space of your Web Hosting plan. To do this, you will need to log in to your storage space. If you do not know how to do this, please refer to the instructions in step 2 of our guide on getting your website online, “[Log in to your storage space](https://docs.ovh.com/ie/en/hosting/web_hosting_how_to_get_my_website_online/#2-log-in-to-your-storage-space){.external}”.
+Once the import script has been written, you will need to upload it, along with the backup file you want to import to the storage space of your Web Hosting plan. To do this, you will need to log in to your storage space. If you do not know how to do this, please refer to the instructions in step 2 of our guide on getting your website online, “[Log in to your storage space](/pages/web/hosting/hosting_how_to_get_my_website_online#2-log-in-to-your-storage-space){.external}”.
 
 In order to carry out the following steps, you will need to upload the script and the backup file to the “www” folder. **We recommend taking special care when you name the import script file.** Make sure you do not overwrite an existing file with the same name in your storage space when you upload the script. If a warning message appears for this, change the name of the script you have just created, and try to upload it again.
 

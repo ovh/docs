@@ -1,9 +1,6 @@
 ---
 title: Korzystanie z SDK vSphere
-slug: korzystanie-z-sdk-vsphere
 excerpt: Dowiedz się, jak uruchomić SDK vSphere i jak z niego korzystać
-section: Funkcjonalności VMware vSphere
-order: 12
 updated: 2020-07-13
 ---
 
@@ -23,7 +20,7 @@ Działania w infrastrukturze można zautomatyzować przy użyciu SDK vSphere.
 
 ##### System operacyjny
 
-Tutaj korzystamy z maszyny wirtualnej zainstalowanej w systemie Debian 9 i wdrożonej z [szablonów udostępnionych w Twojej usłudze Private Cloud](../instalacja-z-szablonow-ovh/).
+Tutaj korzystamy z maszyny wirtualnej zainstalowanej w systemie Debian 9 i wdrożonej z [szablonów udostępnionych w Twojej usłudze Private Cloud](/pages/cloud/private-cloud/ovf_template).
 
 ##### Wymagania początkowe
 
@@ -141,7 +138,7 @@ vconnect()
 
 ##### System operacyjny
 
-Tutaj korzystamy z maszyny wirtualnej zainstalowanej w systemie Ubuntu 18.04 i wdrożonej z [szablonów udostępnionych w Twojej usłudze Private Cloud](../instalacja-z-szablonow-ovh/).
+Tutaj korzystamy z maszyny wirtualnej zainstalowanej w systemie Ubuntu 18.04 i wdrożonej z [szablonów udostępnionych w Twojej usłudze Private Cloud](/pages/cloud/private-cloud/ovf_template).
 
 
 ##### Wymagania początkowe

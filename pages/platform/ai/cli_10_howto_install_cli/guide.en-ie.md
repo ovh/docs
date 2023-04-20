@@ -1,9 +1,6 @@
 ---
 title: CLI - Installation
-slug: cli/install-client
 excerpt: Learn how to install the CLI to interact with AI Tools
-section: Command Line Interface
-order: 200
 updated: 2023-03-31
 ---
 
@@ -16,8 +13,8 @@ This guide covers the installation of the **ovhai** CLI. The CLI is the recommen
 ## Requirements
 
 -   a [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
--   **AI Training activated** for your account, see [how to submit a job Step 2](https://docs.ovh.com/ie/en/publiccloud/ai/training/submit-job)
--   a user for AI Tools, see [how to create a user](https://docs.ovh.com/ie/en/publiccloud/ai/users)
+-   **AI Training activated** for your account, see [how to submit a job Step 2](/pages/platform/ai/training_guide_02_howto_submit_job)
+-   a user for AI Tools, see [how to create a user](/pages/platform/ai/gi_01_manage_users)
 
 ## Instructions
 
@@ -93,7 +90,7 @@ Use the credentials of your **AI Training** user to log in.
 
 You can use the command `ovhai --help` to list available actions and `ovhai <action> --help` for more information about a specific action.
 
-The documentation of the CLI is available at [CLI documentation](https://docs.ovh.com/ie/en/publiccloud/ai/cli/overview-cli).
+The documentation of the CLI is available at [CLI documentation](/pages/platform/ai/cli_15_commands_reference).
 
 In addition, when performing any action in the **AI Training, AI Notebooks or AI Deploy** sections of the OVHcloud Control Panel you are provided with the equivalent command to get you started with the **ovhai CLI**.
 

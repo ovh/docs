@@ -1,9 +1,6 @@
 ---
 title: Erstellung und Löschung von OpenStack Benutzern
-slug: openstack-user-erstellen-loeschen
 excerpt: 'Erfahren Sie hier, wie Sie einen OpenStack User über Ihr OVHcloud Kundencenter erstellen und löschen'
-section: 'Projektverwaltung'
-order: 8
 updated: 2022-03-16
 ---
 
@@ -59,7 +56,7 @@ Achten Sie darauf, das Passwort, das nur zu diesem Zeitpunkt im grünen Rahmen a
 
 ![Generate](images/generatepw.png){.thumbnail}
 
-Sobald der OpenStack User erstellt ist, können Sie seine Zugangsdaten für den Login zum [Horizon Interface](https://docs.ovh.com/de/public-cloud/horizon/) verwenden, indem Sie im linken Menü auf den Eintrag `Horizon`{.action} klicken.
+Sobald der OpenStack User erstellt ist, können Sie seine Zugangsdaten für den Login zum [Horizon Interface](/pages/platform/public-cloud/introducing_horizon) verwenden, indem Sie im linken Menü auf den Eintrag `Horizon`{.action} klicken.
 
 ### Löschung eines OpenStack Benutzers
 
@@ -76,6 +73,6 @@ Klicken Sie auf `...`{.action} und wählen Sie `Löschen`{.action} aus.
 
 ## Weiterführende Informationen
 
-[Einführung in das Horizon Interface](https://docs.ovh.com/de/public-cloud/horizon/)
+[Einführung in das Horizon Interface](/pages/platform/public-cloud/introducing_horizon)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -1,7 +1,5 @@
 ---
 title: Redis (Object cache)
-slug: redis
-section: Services
 updated: 2021-06-03
 ---
 
@@ -77,7 +75,7 @@ The `disk` key is required for redis-persistent to tell Web PaaS how much disk s
 
 ## Relationship
 
-The format exposed in the ``$PLATFORM_RELATIONSHIPS`` [environment variable](../../development-variables#platformsh-provided-variables):
+The format exposed in the ``$PLATFORM_RELATIONSHIPS`` [environment variable](/pages/web/web-paas/development-variables#platformsh-provided-variables):
 
 ```json  
 {
@@ -113,7 +111,7 @@ cacheredis:
 ```  
 
 
-If you are using PHP, configure a relationship and enable the [PHP redis extension](../../languages-php/extensions) in your `.platform.app.yaml`.
+If you are using PHP, configure a relationship and enable the [PHP redis extension](/pages/web/web-paas/languages-php/extensions) in your `.platform.app.yaml`.
 
 ```yaml
 runtime:

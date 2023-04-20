@@ -1,8 +1,5 @@
 ---
 title: 'FAQ Managed Private Registry (Harbor)'
-slug: managed-private-registry-faq
-section: 'Getting started'
-order: 1
 updated: 2023-03-16
 ---
 

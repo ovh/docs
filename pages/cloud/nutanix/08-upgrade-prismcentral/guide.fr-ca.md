@@ -1,9 +1,6 @@
 ---
 title: Upgrade de votre cluster Nutanix 
-slug: nutanix-upgrade-prismcentral
 excerpt: Découvrez comment faire un upgrade de votre cluster Nutanix
-section: Upgrade
-order: 01
 updated: 2022-05-16
 ---
 
@@ -195,7 +192,7 @@ Cliquez sur `Apply N Updates`{.action}.
 
 ## Aller plus loin
 
-[Documentation OVHcloud](https://docs.ovh.com/ca/fr/nutanix/)
+[Documentation OVHcloud](/products/hosted-private-cloud-nutanix-on-ovhcloud)
 
 [Documentation officielle de Nutanix](https://www.nutanix.com/){.external}
 

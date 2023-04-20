@@ -1,9 +1,6 @@
 ---
 title: Migração dos dados de um servidor dedicado para outro
-slug: migracao-dos-dados-de-um-servidor-dedicado-para-outro
 excerpt: Saiba como migrar dados de um servidor dedicado para outro
-section: Introdução
-order: 4
 updated: 2021-09-16
 ---
 
@@ -49,8 +46,8 @@ Se for necessária uma alteração da versão do sistema operativo ou do softwar
 
 A migração dos dados implica normalmente a cópia de ficheiros de um servidor para outro. Há várias soluções para isso:
 
-- A forma mais simples é utilizar um software adequado como [SFTP](https://docs.ovh.com/pt/dedicated/carregar-e-descarregar-dados-através-de-sftp/).
-- A outra opção consiste em [sincronizar os dois servidores um com o outro](https://docs.ovh.com/pt/dedicated/copiar-dados-servidor-rsync/).
+- A forma mais simples é utilizar um software adequado como [SFTP](/pages/cloud/dedicated/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp).
+- A outra opção consiste em [sincronizar os dois servidores um com o outro](/pages/cloud/dedicated/how-to-copy-data-from-one-dedicated-server-to-another-using-rsync).
 
 ### Utilização do Backup Storage (disponível apenas na OVHcloud e So you Start)
 
@@ -65,7 +62,7 @@ Com a opção [Backup Storage](https://www.ovhcloud.com/pt/bare-metal/backup-sto
 
 Pode autorizar o acesso ao armazenamento de backup a partir do seu novo servidor. Assim, disporá de uma gateway para transferir os seus dados.
 
-Para mais informações, consulte o nosso guia sobre [utilizar o Backup Storage num servidor dedicado](https://docs.ovh.com/pt/dedicated/servicos-backup-storage/){.external}.
+Para mais informações, consulte o nosso guia sobre [utilizar o Backup Storage num servidor dedicado](/pages/cloud/dedicated/services_backup_storage){.external}.
 
 ### Migração de um Additional IP (disponível apenas na OVHcloud e So you Start)
 
@@ -81,7 +78,7 @@ Para mais informações, consulte o nosso guia sobre [utilizar o Backup Storage 
 Se a reputação dos seus endereços IP é importante, recomendamos vivamente que utilize endereços [Additional IP](https://www.ovhcloud.com/pt/bare-metal/ip/)migração, pois estes podem ser conservados se efetuar uma migração.
 
 Quando tiver estes endereços IP, basta migrá-los para o novo servidor.
-Para isso, consulte o nosso guia sobre: [Migrar um Additional IP](https://docs.ovh.com/pt/dedicated/ip-fo-move/).
+Para isso, consulte o nosso guia sobre: [Migrar um Additional IP](/pages/cloud/dedicated/move-failover-ip).
 
 > [!alert]
 >
@@ -92,7 +89,7 @@ Para isso, consulte o nosso guia sobre: [Migrar um Additional IP](https://docs.o
 
 Uma vez os dados disponíveis no novo servidor, poderá ter de alterar a sua configuração DNS, por exemplo, se o endereço IP principal tiver sido utilizado.
 
-Para mais informações queira ler a nossa documentação sobre [domínios e DNS](https://docs.ovh.com/pt/domains/).
+Para mais informações queira ler a nossa documentação sobre [domínios e DNS](/products/web-cloud-domains-domain-names).
 
 ## Saiba mais
 

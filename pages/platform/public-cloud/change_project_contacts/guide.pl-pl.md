@@ -1,9 +1,6 @@
 ---
 title: "Zmiana kontaktów projektu"
 excerpt: "Dowiedz się, jak zarządzać kontaktami projektu Public Cloud"
-slug: zmiana_kontaktow_projektu
-section: 'Zarządzanie projektami'
-order: 6
 updated: 2022-04-04
 ---
 
@@ -48,14 +45,14 @@ W nowym oknie podaj identyfikator klienta dla każdego kontaktu, który chcesz z
 
 Po kliknięciu przycisku `Zatwierdź`{.action}, oba konta OVHcloud, których dotyczy zmiana, otrzymają e-mail z potwierdzeniem. Ten e-mail zawiera kod (token) umożliwiający zatwierdzenie zmiany kontaktu w zakładce `Moje wnioski`{.action} z sekcji **Zarządzanie kontaktami**.
 
-Aby uzyskać szczegółowe informacje na temat tej procedury, zapoznaj się z naszym przewodnikiem "[Zarządzanie kontaktami swoich usług](../../customer/zarzadzanie_kontaktami/)".
+Aby uzyskać szczegółowe informacje na temat tej procedury, zapoznaj się z naszym przewodnikiem "[Zarządzanie kontaktami swoich usług](/pages/account/customer/managing_contacts)".
 
 ## Sprawdź również
 
-[Rozliczanie należności za usługę Public Cloud](../analizowanie_platnosci_i_zarzadzanie_nimi/)
+[Rozliczanie należności za usługę Public Cloud](/pages/platform/public-cloud/analyze_billing)
 
-[Zarządzanie kontaktami swoich usług](../../customer/zarzadzanie_kontaktami/)
+[Zarządzanie kontaktami swoich usług](/pages/account/customer/managing_contacts)
 
-[Delegowanie projektów](../delegowanie_projektow/)
+[Delegowanie projektów](/pages/platform/public-cloud/delegate_projects)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

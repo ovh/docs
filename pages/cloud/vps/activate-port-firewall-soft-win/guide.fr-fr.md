@@ -1,8 +1,6 @@
 ---
 title: Configurer le pare-feu sous Windows
 excerpt: Découvrez comment configurer votre pare-feu sous Windows
-slug: vps-firewall-windows
-section: Premiers pas
 updated: 2023-02-17
 ---
 

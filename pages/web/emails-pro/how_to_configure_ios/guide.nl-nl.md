@@ -1,10 +1,7 @@
 ---
 deprecated: true
 title: Configuratie van uw E-mail Pro-account op een iPhone of iPad
-slug: configuratie-iphone-mail-app
 excerpt: Leer hoe u een E-mail Pro-account kunt configureren op een iPhone of iPad, via de Mail-app
-section: Configuratie van een e-mailclient
-order: 3
 updated: 2021-05-21
 ---
 
@@ -91,8 +88,8 @@ OVH biedt een webapplicatie met [teamwerk-functies](https://www.ovh.com/nl/email
 
 ## Verder
 
-[Configuratie van het e-mailadres dat is opgenomen in MX Plan of in een webhostingsplan op een iPhone of iPad](https://docs.ovh.com/nl/emails/mail-configuratie-ios-iphone-ipad/){.external}.
+[Configuratie van het e-mailadres dat is opgenomen in MX Plan of in een webhostingsplan op een iPhone of iPad](/pages/web/emails/how_to_configure_ios){.external}.
 
-[Configuratie van uw Exchange-account op een iPhone of iPad](https://docs.ovh.com/nl/microsoft-collaborative-solutions/exchange-automatische-configuratie-ios-iphone-ipad/){.external}.
+[Configuratie van uw Exchange-account op een iPhone of iPad](/pages/web/microsoft-collaborative-solutions/how_to_configure_ios){.external}.
 
 Ga in gesprek met andere communityleden op [https://community.ovh.com](https://community.ovh.com){.external}.

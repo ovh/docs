@@ -1,9 +1,6 @@
 ---
 title: "Proteger um VPS"
-slug: como-proteger-vps
-section: "Primeiros passos"
 excerpt: "Descubra os elementos de base que lhe permitem proteger o seu VPS"
-order: 3
 updated: 2022-05-05
 ---
 
@@ -36,7 +33,7 @@ Quando encomendar o seu VPS, pode escolher uma distribuição ou um sistema oper
 >
 > Tenha em conta que se trata de um guia geral baseado num sistema operativo Ubuntu Server. Algumas encomendas precisam de ser adaptadas à distribuição que utiliza e certos truques convidam-no a utilizar ferramentas de terceiros. Consulte a documentação oficial destas aplicações caso necessite de ajuda.
 >
-> Se configurar o primeiro VPS da OVHcloud, recomendamos que consulte primeiro o nosso manual sobre [a implementação de um VPS](https://docs.ovh.com/pt/vps/instalar-gerir-vps/).
+> Se configurar o primeiro VPS da OVHcloud, recomendamos que consulte primeiro o nosso manual sobre [a implementação de um VPS](/pages/cloud/vps/starting_with_a_vps).
 >
 
 Os exemplos abaixo pressupõem que está ligado enquanto utilizador com autorizações elevadas.
@@ -101,7 +98,7 @@ ssh username@IPv4_of_your_VPS -p NewPortNumber
 
 ### Alterar a palavra-passe do utilizador root
 
-Recomenda-se vivamente que altere a palavra-passe do utilizador root para não a deixar ao valor predefinido num novo sistema. Para mais informações consulte [este guia](https://docs.ovh.com/pt/vps/root-password/).
+Recomenda-se vivamente que altere a palavra-passe do utilizador root para não a deixar ao valor predefinido num novo sistema. Para mais informações consulte [este guia](/pages/cloud/vps/root_password).
 
 ### Criar um utilizador com direitos restritos
 
@@ -163,7 +160,7 @@ As distribuições GNU/Linux comuns são fornecidas com um serviço de firewall 
 iptables -L
 ```
 
-Para mais informações sobre iptables, consulte o nosso [guia dedicado](https://docs.ovh.com/pt/vps/vps-firewall-iptables/).
+Para mais informações sobre iptables, consulte o nosso [guia dedicado](/pages/cloud/vps/firewall-Linux-iptable).
 
 Recomendamos que crie e adapte regras de firewall à sua utilização. Para mais informações sobre as várias operações, consulte a documentação oficial da distribuição utilizada.
 
@@ -243,7 +240,7 @@ Para mais informações e recomendações sobre o Fail2ban, não hesite em consu
 
 As soluções da OVHcloud incluem a possibilidade de ativar uma firewall no ponto de entrada da infraestrutura, designada Network Firewall. Uma configuração correta desta firewall permite bloquear as ligações antes mesmo que estas cheguem ao seu servidor.
 
-Consulte o guia "[Configurar a Network Firewall](https://docs.ovh.com/pt/dedicated/firewall-network/)" se desejar ativá-la.
+Consulte o guia "[Configurar a Network Firewall](/pages/cloud/dedicated/firewall_network)" se desejar ativá-la.
 
 ### Proteger o sistema e os dados
 
@@ -254,14 +251,14 @@ A segurança dos seus dados é um elemento chave. É por isso que a OVHcloud ofe
 - A opção `Snapshot` que lhe permite criar uma imagem manual.
 - A opção de `Backup automático` permite-lhe conservar os backups regulares do seu VPS (à exceção dos discos suplementares).
 
-Na [página do produto](https://www.ovhcloud.com/pt/vps/options/) e nos respetivos [guias](https://docs.ovh.com/pt/vps/), poderá encontrar todas as informações sobre as soluções de backup disponíveis para o seu serviço.
+Na [página do produto](https://www.ovhcloud.com/pt/vps/options/) e nos respetivos [guias](/products/bare-metal-cloud-virtual-private-servers), poderá encontrar todas as informações sobre as soluções de backup disponíveis para o seu serviço.
 
 ## Quer saber mais?
 
-[VPS: primeira utilização](https://docs.ovh.com/pt/vps/instalar-gerir-vps/) 
+[VPS: primeira utilização](/pages/cloud/vps/starting_with_a_vps) 
 
-[Configurar a firewall em Windows](https://docs.ovh.com/pt/vps/vps-firewall-windows/)
+[Configurar a firewall em Windows](/pages/cloud/vps/activate-port-firewall-soft-win)
 
-[Configurar a Network Firewall](https://docs.ovh.com/pt/dedicated/firewall-network/)
+[Configurar a Network Firewall](/pages/cloud/dedicated/firewall_network)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

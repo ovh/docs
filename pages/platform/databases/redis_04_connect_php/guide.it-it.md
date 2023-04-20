@@ -1,11 +1,8 @@
 ---
 title: Redis - Connect with PHP
 excerpt: Connect to your Public Cloud Databases for Redis using the PHP programming language
-slug: redis/connect-php
-section: Redis - Guides
-order: 040
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/redis/connect-php/'
+    canonical: '/pages/platform/databases/redis_04_connect_php'
 updated: 2022-03-24
 ---
 
@@ -23,14 +20,14 @@ You can find an example on the [Github examples repository](https://github.com/o
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - A [Public Cloud project](https://www.ovhcloud.com/it/public-cloud/) in your OVHcloud account
-- A Redis database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/it/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your Redis instance](https://docs.ovh.com/it/publiccloud/databases/redis/configure-redis-instance/) to accept incoming connections
+- A Redis database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your Redis instance](/pages/platform/databases/redis_08_prepare_for_incoming_connections) to accept incoming connections
 - A PHP environment with a stable version and public network connectivity (Internet). This guide was made in PHP 7.4.
 
 ## Concept
 
 A Redis instance can be managed through multiple ways.
-One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to Redis with CLI](https://docs.ovh.com/it/publiccloud/databases/redis/connect-cli).
+One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to Redis with CLI](/pages/platform/databases/redis_03_connect_cli).
 
 Another way is to interact directly using programming languages, such as PHP.
 PHP is used in almost 80% of the websites in the world, such as Facebook, Wikipedia or WordPress.
@@ -98,9 +95,9 @@ Congratulations! Everything is working properly.
 
 [Redis official tutorial : simple Twitter clone using PHP](https://redis.io/topics/twitter-clone)
 
-[Redis capabilities](https://docs.ovh.com/it/publiccloud/databases/redis/capabilities/)
+[Redis capabilities](/pages/platform/databases/redis_01_capabilities)
 
-[Configuring vRack for Public Cloud](https://docs.ovh.com/it/public-cloud/public-cloud-vrack/)
+[Configuring vRack for Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack)
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 

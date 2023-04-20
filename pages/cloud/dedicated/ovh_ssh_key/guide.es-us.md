@@ -1,8 +1,6 @@
 ---
 title: Instalar la llave SSH de OVHcloud
-slug: ovh-ssh-key
 excerpt: Cómo instalar una llave SSH de OVHcloud en un servidor para que los técnicos puedan intervenir
-section: SSH y llave SSH
 updated: 2018-02-12
 ---
 
@@ -16,7 +14,7 @@ Hay situaciones que pueden requerir la intervención de un técnico de OVHcloud 
 
 ## Requisitos
 
-- [Estar conectado por SSH](../introduccion-ssh/){.external} (acceso *root*).
+- [Estar conectado por SSH](/pages/cloud/dedicated/ssh_introduction){.external} (acceso *root*).
 
 ## Procedimiento
 
@@ -119,7 +117,7 @@ cat /root/.ssh/authorized_keys2
 
 ## Más información
 
-[Introducción al SSH](../introduccion-ssh/)
+[Introducción al SSH](/pages/cloud/dedicated/ssh_introduction)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
 

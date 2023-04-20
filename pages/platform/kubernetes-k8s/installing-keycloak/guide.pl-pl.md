@@ -1,10 +1,8 @@
 ---
 title: Installing Keycloak, an OIDC Provider, on OVHcloud Managed Kubernetes
-slug: installing-keycloak
 excerpt: Secure Your OVHcloud Managed Kubernetes Cluster with Keycloak, an OpenID Connect provider (OIDC) and RBAC.
-section: Tutorials
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-keycloak/'
+    canonical: '/pages/platform/kubernetes-k8s/installing-keycloak'
 updated: 2022-11-24
 ---
 
@@ -71,7 +69,7 @@ You can use the *Reset cluster* function in the Public Cloud section of the [OVH
 
 ## Requirements
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please consult the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please consult the [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-hello-world) documentation.
 
 This tutorial has been written to be fully compliant with the release `v1.22` of Kubernetes.  
 You may need to adapt it to be able to deploy a functional Keycloak instance in Kubernetes release prior to the `v1.22`. 
@@ -334,7 +332,7 @@ If you need to customize your `ingress-nginx` configuration, please refer to the
 > [!primary]
 >
 > Installing this `ingress-nginx` controller will order a LoadBalancer provided by OVHcloud *(this load balancer will be monthly billed)*.  
-For more information, please refer to the following documentation: [Using the OVHcloud Managed Kubernetes LoadBalancer](https://docs.ovh.com/pl/kubernetes/using-lb/)
+For more information, please refer to the following documentation: [Using the OVHcloud Managed Kubernetes LoadBalancer](/pages/platform/kubernetes-k8s/using-lb)
 
 To check if the `LoadBalancer` is up and running, execute the following CLI in a console:
 
@@ -365,7 +363,7 @@ $ echo $INGRESS_URL
 135.125.84.194
 </code></pre>
 
-If you are using the [OVHcloud Domain name product](https://www.ovhcloud.com/pl/domains/), you can follow this documentation to configure your DNS record to link it to the public IPv4 address associated to your LoadBalancer: [Editing an OVHcloud DNS zone](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/).
+If you are using the [OVHcloud Domain name product](https://www.ovhcloud.com/pl/domains/), you can follow this documentation to configure your DNS record to link it to the public IPv4 address associated to your LoadBalancer: [Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit).
 
 If you are using an external DNS provider, please configure your domain before reading the rest of this tutorial.
 
@@ -396,7 +394,7 @@ Address: 135.125.84.194
 >
 > This `PersistentVolume` will be provided through the Cinder storage class which is the default storage class used by Managed Kubernetes Service at OVHcloud *(this volume will be billed)*.  
 >
-> For more information, please refer to the following documentation: [Setting-up a Persistent Volume on OVHcloud Managed Kubernetes](https://docs.ovh.com/pl/kubernetes/setting-up-a-persistent-volume/#persistent-volumes-pv-and-persistent-volume-claims-pvc)
+> For more information, please refer to the following documentation: [Setting-up a Persistent Volume on OVHcloud Managed Kubernetes](/pages/platform/kubernetes-k8s/setting-up-a-persistent-volume#persistent-volumes-pv-and-persistent-volume-claims-pvc)
 
 ### Keycloak installation
 
@@ -641,7 +639,7 @@ The first user connection required an initial password, so let's create it:
 
 ### Configure Keycloak instance in your Kubernetes cluster as an OIDC provider
 
-Now that you have a working keycloak, your Provider URL is `https://keycloak.example.com/auth/realms/ovh-lab-k8s-oidc-authentication`, and since you created a User, you can read the [Configuring the OIDC provider on an OVHcloud Managed Kubernetes cluster](../configure-oidc-provider/) guide to configure the OIDC provider on your Kubernetes cluster via the OVHcloud Control Panel, the OVHcloud API or via Terraform. 
+Now that you have a working keycloak, your Provider URL is `https://keycloak.example.com/auth/realms/ovh-lab-k8s-oidc-authentication`, and since you created a User, you can read the [Configuring the OIDC provider on an OVHcloud Managed Kubernetes cluster](/pages/platform/kubernetes-k8s/configuring-oidc-provider-config) guide to configure the OIDC provider on your Kubernetes cluster via the OVHcloud Control Panel, the OVHcloud API or via Terraform. 
 
 Explanations:
 

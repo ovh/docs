@@ -1,11 +1,8 @@
 ---
 title: Hyperkonvergenz Nutanix (EN)
-slug: nutanix-hci
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/nutanix/nutanix-hci/'
+    canonical: '/pages/cloud/nutanix/03-nutanix-hci'
 excerpt: Presentation of the Nutanix hyperconvergence solution
-section: Erste Schritte
-order: 04
 updated: 2022-02-22
 ---
 

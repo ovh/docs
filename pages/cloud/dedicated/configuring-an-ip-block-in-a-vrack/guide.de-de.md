@@ -1,8 +1,6 @@
 ---
 title: 'IP-Block im vRack konfigurieren'
-slug: vrack-ip-block-hinzufuegen-oder-entfernen
 excerpt: 'So konfigurieren Sie einen öffentlichen IP-Adressblock im vRack'
-section: vRack
 updated: 2022-07-26
 ---
 
@@ -148,10 +146,10 @@ Starten Sie jetzt den Server neu, um die Änderungen anzuwenden.
 
 ## Weiterführende Informationen
 
-[Mehrere dedizierte Server im vRack konfigurieren](../mehrere-dedizierte-server-im-vrack-konfigurieren/){.external}
+[Mehrere dedizierte Server im vRack konfigurieren](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server){.external}
 
-[Mehrere VLANs im vRack erstellen](../vrack-vlan-erstellen){.external}
+[Mehrere VLANs im vRack erstellen](/pages/cloud/dedicated/creating-multiple-vlans-in-a-vrack){.external}
 
-[vRack zwischen Public Cloud und Dedicated Server einrichten](../vrack-zwischen-public-cloud-dedicated-server-einrichten/){.external}
+[vRack zwischen Public Cloud und Dedicated Server einrichten](/pages/cloud/dedicated/configuring-the-vrack-between-the-public-cloud-and-a-dedicated-server){.external}
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

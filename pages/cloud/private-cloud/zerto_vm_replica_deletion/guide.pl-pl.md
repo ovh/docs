@@ -1,8 +1,6 @@
 ---
 title: "Usuń kopię zapasową wirtualnej maszyny z witryny Zerto"
-slug: zerto-vm-replica-deletion
 excerpt: Dowiedz się, jak usunąć wirtualną maszynę ze strony WWW, gdy jest ona usuwana ze strony źródłowej
-section: Usługi i opcje OVHcloud
 updated: 2021-12-09
 ---
 
@@ -24,7 +22,7 @@ Ten dokument pokazuje, jak usunąć te pliki i przywrócić funkcję VPG.
 
 - Posiadanie kontaktu administracyjnego infrastruktury [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), aby otrzymywać dane do logowania.
 - Posiadanie aktywnego identyfikatora użytkownika z uprawnieniami dla Zerto (utworzonego w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl))
-- Wdrożenie [Zerto Virtual Replication](https://docs.ovh.com/pl/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/)
+- Wdrożenie [Zerto Virtual Replication](/pages/cloud/private-cloud/zerto_virtual_replication_as_a_service)
 
 ## W praktyce
 

@@ -1,9 +1,6 @@
 ---
 title: Object Storage Swift - Synchroniser des conteneurs d’objets
-slug: pcs/sync-object-containers
 legacy_guide_number: 1919
-section: Spécificités de la classe de stockage OpenStack Swift
-order: 060
 updated: 2022-11-16
 ---
 
@@ -15,8 +12,8 @@ Si vous souhaitez déplacer vos objets d'un data-centre à un autre, ou même d'
 
 ## Prérequis
 
-- [Préparer l'environnement pour utiliser l'API OpenStack](https://docs.ovh.com/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/) avec le client swift
-- [Charger les variables d'environnement OpenStack](https://docs.ovh.com/fr/public-cloud/set-openstack-environment-variables/)
+- [Préparer l'environnement pour utiliser l'API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) avec le client swift
+- [Charger les variables d'environnement OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 - 2 conteneurs d'objets dans 2 data centres différents
 
 ## En pratique

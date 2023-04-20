@@ -1,8 +1,5 @@
 ---
 title: FAQ SecNumCloud Connectivity
-slug: secnumcloud-connectivity-faq
-section: SecNumCloud Connectivity
-order: 05
 updated: 2022-10-13
 ---
 

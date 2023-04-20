@@ -1,9 +1,6 @@
 ---
 title: AI Training - Tutorial - Train your first ML model
-slug: training/tuto-train-first-ml-model
 excerpt: How to train your first machine learning model in AI Training
-section: AI Training - Tutorials
-order: 01	
 updated: 2023-01-26
 ---
 
@@ -63,7 +60,7 @@ If you do not feel comfortable with commands, this way will be more intuitive fo
 
 First, go to the [OVHcloud Public Cloud section](https://www.ovh.com/manager/#/public-cloud/).
 
-Then, select the Object Storage section (in the Storage category) and [create a new object container](https://docs.ovh.com/ie/en/storage/object-storage/pcs/create-container/) by clicking `Storage` > `Object Storage` > `Create an object container`.
+Then, select the Object Storage section (in the Storage category) and [create a new object container](/pages/cloud/storage/object_storage/pcs_create_container) by clicking `Storage` > `Object Storage` > `Create an object container`.
 
 Here you can create the object container that will store your datas. Several `types` and `regions` are available, choose the best parameters for you.
 
@@ -263,8 +260,8 @@ ovhai data download GRA fashion_MNIST_dataset model.net
 
 ## Go further
 
-- If you are interested in **deploying your model** in a Python app, discover AI Deploy by following this [tutorial](https://docs.ovh.com/ie/en/publiccloud/ai/deploy/build-use-streamlit-image/).
-- If you want learn about Docker, check out this [tutorial](https://docs.ovh.com/ie/en/publiccloud/ai/training/build-use-custom-image/).
+- If you are interested in **deploying your model** in a Python app, discover AI Deploy by following this [tutorial](/pages/platform/ai/deploy_tuto_01_streamlit).
+- If you want learn about Docker, check out this [tutorial](/pages/platform/ai/training_tuto_02_build_custom_image).
 
 ## Feedback
 

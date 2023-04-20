@@ -1,7 +1,5 @@
 ---
 title: Customize settings.php
-slug: customizing-settings-php
-section: Drupal7
 updated: 2021-05-11
 ---
 
@@ -20,4 +18,4 @@ If you wish to customize either file, we recommend instead using the example fil
 > You should never commit a `settings.local.php` file to your repository.
 > 
 
-If you need to add additional configuration that is specific to Web PaaS, such as connecting to additional services like [Redis](../redis) or [Solr](../apachesolr-module), those changes should go in the `settings.platformsh.php` file.
+If you need to add additional configuration that is specific to Web PaaS, such as connecting to additional services like [Redis](../redis) or [Solr](/pages/web/web-paas/frameworks-drupal7/apachesolr-module), those changes should go in the `settings.platformsh.php` file.

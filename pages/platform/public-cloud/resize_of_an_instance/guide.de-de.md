@@ -1,9 +1,6 @@
 ---
 title: Änderung der Größe einer Instanz mit Horizon
 excerpt: Erfahren Sie hier, wie Sie die Größe einer Instanz in Horizon ändern
-slug: nderung_der_groe_einer_instanz
-section: 'Horizon'
-order: 08
 updated: 2021-11-22
 ---
 
@@ -32,8 +29,8 @@ Durch einen Anstieg der Last oder aufgrund neuer Anforderungen kann es mit der Z
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf das [Horizon Interface](https://docs.ovh.com/de/public-cloud/horizon/).
+- Sie haben eine [Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps#schritt-3-instanz-erstellen) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf das [Horizon Interface](/pages/platform/public-cloud/introducing_horizon).
 
 ## In der praktischen Anwendung
 

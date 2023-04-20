@@ -1,8 +1,6 @@
 ---
 title: 'Utiliser le Yealink W56P'
 excerpt: 'Découvrez comment utiliser votre téléphone Yealink W56P'
-slug: utiliser-yealink-w56p
-section: 'Yealink W56P'
 hidden: true
 updated: 2018-05-25
 ---

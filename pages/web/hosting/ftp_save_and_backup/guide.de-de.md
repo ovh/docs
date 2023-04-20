@@ -1,9 +1,6 @@
 ---
 title: 'Den Speicherplatz Ihres Webhostings wiederherstellen'
-slug: webhosting-speicherplatz-wiederherstellen
 excerpt: Erfahren Sie hier, wie Sie eine Datei oder den gesamten Speicherplatz Ihres Webhostings wiederherstellen
-section: 'FTP und SSH'
-order: 06
 updated: 2023-01-12
 ---
 
@@ -21,7 +18,7 @@ updated: 2023-01-12
 > 
 > Die von OVHcloud angebotenen Backups für Shared Hosting sind nicht vertraglich festgelegt. Wir bieten Ihnen diese zusätzlich zu Ihren Dienstleistungen an, um Ihnen in Notsituationen zu helfen. Wir empfehlen Ihnen, regelmäßig Ihre eigenen Sicherheitsbackups durchzuführen, um mögliche Datenverluste zu vermeiden.
 > 
-> Wenn Sie ein Sicherheitsbackup für Ihre Website erstellen und eine Datenbank verwenden, erstellen Sie auch ein Backup Ihrer Datenbank. Lesen Sie dazu unsere Anleitung, "[Backup einer Webhosting-Datenbank exportieren](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/)".
+> Wenn Sie ein Sicherheitsbackup für Ihre Website erstellen und eine Datenbank verwenden, erstellen Sie auch ein Backup Ihrer Datenbank. Lesen Sie dazu unsere Anleitung, "[Backup einer Webhosting-Datenbank exportieren](/pages/web/hosting/sql_database_export)".
 > 
 
 **Diese Anleitung erklärt, wie Sie eine Datei oder den gesamten Speicherplatz Ihres Webhostings wiederherstellen.**
@@ -63,7 +60,7 @@ Entscheiden Sie sich für eine Wiederherstellungsmethode, die Sie verwenden möc
 >
 >![ftp quota](images/check-ftp-quota.png){.thumbnail}
 >
-> Wenn mehr als die Hälfte des gesamten FTP-Speicherplatzes Ihres Webhostings belegt ist, können Sie zum Beispiel große Dateien Ihrer Website auswählen und lokal sichern. (Sie können dazu [Filezilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/) verwenden). Löschen Sie diese anschließend aus Ihrem FTP-Speicherplatz. Dadurch verringert sich die Größe des genutzten FTP-Speicherplatzes und Sie können die Wiederherstellung über das OVHcloud-Kundencenter starten.
+> Wenn mehr als die Hälfte des gesamten FTP-Speicherplatzes Ihres Webhostings belegt ist, können Sie zum Beispiel große Dateien Ihrer Website auswählen und lokal sichern. (Sie können dazu [Filezilla](/pages/web/hosting/ftp_filezilla_user_guide) verwenden). Löschen Sie diese anschließend aus Ihrem FTP-Speicherplatz. Dadurch verringert sich die Größe des genutzten FTP-Speicherplatzes und Sie können die Wiederherstellung über das OVHcloud-Kundencenter starten.
 >
 
 Folgen Sie dieser Anleitung nun entsprechend der ausgewählten Wiederherstellungsmethode:
@@ -83,11 +80,11 @@ Folgen Sie dieser Anleitung nun entsprechend der ausgewählten Wiederherstellung
 > [!primary]
 > **Seite im Wartungsmodus**
 > 
-> Wenn Sie feststellen, dass Ihre Website in den Wartungsmodus versetzt wurde, befolgen Sie unsere Anleitung [Was tun bei dem Fehler “403 forbidden”?](https://docs.ovh.com/de/hosting/diagnose-403-forbidden/). 
+> Wenn Sie feststellen, dass Ihre Website in den Wartungsmodus versetzt wurde, befolgen Sie unsere Anleitung [Was tun bei dem Fehler “403 forbidden”?](/pages/web/hosting/diagnostic_403_forbidden). 
 > 
 > Konkret bedeutet das Folgendes:
 >
-> - Unsere Teams senden eine E-Mail über den Status an den [Administrator-Kontakt](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/#auf-die-kontaktverwaltung-zugreifen) des Webhostings. 
+> - Unsere Teams senden eine E-Mail über den Status an den [Administrator-Kontakt](/pages/account/customer/managing_contacts#auf-die-kontaktverwaltung-zugreifen) des Webhostings. 
 > - Der Status "Wartung" wird in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angezeigt. Klicken Sie im Bereich `Web Cloud`{.action} auf Ihren Dienst unter `Hosting-Pakete`{.action} und dann auf den Tab `Allgemeine Informationen`{.action}.
 > - Die gehosteten Webseiten zeigen eine "403 Forbidden"-Meldung an.
 >
@@ -132,9 +129,9 @@ Für diese Methode sind mehrere Schritte notwendig. Vergewissern Sie sich, dass 
 
 Entscheiden Sie sich zunächst, welche Software oder welches Interface Sie verwenden möchten, um auf den Backup-Speicher zuzugreifen. Wenn Sie sich bereits entschieden haben, können Sie direkt zu Schritt 2 übergehen. Andernfalls empfehlen wir Ihnen eine der folgenden drei Lösungen:
 
-- **FileZilla**: Laden Sie FileZilla zunächst über die Website des Herausgebers herunter. OVHcloud stellt Ihnen für die [Verwendung von FileZilla eine Anleitung zur Verfügung](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/). Diese Anleitung ersetzt jedoch nicht die offizielle Dokumentation des Herausgebers.
+- **FileZilla**: Laden Sie FileZilla zunächst über die Website des Herausgebers herunter. OVHcloud stellt Ihnen für die [Verwendung von FileZilla eine Anleitung zur Verfügung](/pages/web/hosting/ftp_filezilla_user_guide). Diese Anleitung ersetzt jedoch nicht die offizielle Dokumentation des Herausgebers.
 
-- **Cyberduck**: Laden Sie Cyberduck zunächst über die Website des Herausgebers herunter. OVHcloud stellt Ihnen für die [Verwendung von Cyberduck eine Anleitung zur Verfügung](https://docs.ovh.com/gb/en/hosting/web_hosting_cyberduck_user_guide_on_mac/) (Englisch). Diese Anleitung ersetzt jedoch nicht die offizielle Dokumentation des Herausgebers.
+- **Cyberduck**: Laden Sie Cyberduck zunächst über die Website des Herausgebers herunter. OVHcloud stellt Ihnen für die [Verwendung von Cyberduck eine Anleitung zur Verfügung](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac) (Englisch). Diese Anleitung ersetzt jedoch nicht die offizielle Dokumentation des Herausgebers.
 
 - **Interface des FTP-Explorers**: Zugriff auf das Interface des FTP-Explorers erhalten Sie über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie nach dem Login links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `FTP - SSH`{.action} und klicken Sie auf den Button `FTP-Explorer`{.action}.
 
@@ -146,7 +143,7 @@ Gehen Sie zum nächsten Schritt über, um mit der Wiederherstellung fortzufahren
 
 Mithilfe der ausgewählten Software bzw. über das Interface können Sie sich nun auf Ihrem Speicherplatz einloggen, um auf die gewünschten Backup-Daten zuzugreifen. Sie benötigen hierfür den FTP-Benutzernamen, das zugehörige Passwort sowie den Hostnamen Ihres FTP-Servers.
 
-Diese Login-Informationen finden Sie über den Tab `FTP - SSH`{.action} Ihres Webhostings. Wenn Sie kein FTP-Passwort besitzen, lesen Sie die Anleitung [„Passwort eines FTP-Benutzers ändern“](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern/).
+Diese Login-Informationen finden Sie über den Tab `FTP - SSH`{.action} Ihres Webhostings. Wenn Sie kein FTP-Passwort besitzen, lesen Sie die Anleitung [„Passwort eines FTP-Benutzers ändern“](/pages/web/hosting/ftp_change_password).
 
 ![FTP-Backup](images/backupftp-step4.png){.thumbnail}
 
@@ -180,11 +177,11 @@ Nach dem Login können Sie die gewünschten Dateien wiederherstellen. Gehen Sie 
 
 ## Weiterführende Informationen
 
-[Backup einer Webhosting-Datenbank exportieren](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/)
+[Backup einer Webhosting-Datenbank exportieren](/pages/web/hosting/sql_database_export)
 
-[Verwendung von FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/)
+[Verwendung von FileZilla](/pages/web/hosting/ftp_filezilla_user_guide)
 
-[Using Cyberduck (on Mac)](https://docs.ovh.com/gb/en/hosting/web_hosting_cyberduck_user_guide_on_mac/) (Englisch)
+[Using Cyberduck (on Mac)](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac) (Englisch)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

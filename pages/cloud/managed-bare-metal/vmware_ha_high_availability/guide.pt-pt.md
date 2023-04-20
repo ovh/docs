@@ -1,11 +1,8 @@
 ---
 title: VMware HA (High Availability)
-slug: vmware-ha-high-availability
 routes:
-    canonical: 'https://docs.ovh.com/pt/private-cloud/vmware-ha-high-availability/'
+    canonical: '/pages/cloud/private-cloud/vmware_ha_high_availability'
 excerpt: Gerir a política de reinício com a função HA
-section: Funcionalidades VMware vSphere
-order: 02
 updated: 2020-11-18
 ---
 
@@ -21,7 +18,7 @@ A principal função do **VMware HA** (High Availability), no caso de falha mate
 
 ## Requisitos
 
-- Estar ligado à [interface vSphere](../instalar_o_vsphere_client/).
+- Estar ligado à [interface vSphere](/pages/cloud/managed-bare-metal/vsphere-interface).
 - Ter um produto [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
 
 ## Instruções
@@ -93,7 +90,7 @@ Em caso de falha de um datastore devido a um estado APD (All Path Down), pode de
 
 ##### Monitorização das máquinas virtuais
 
-A monitorização das MV passa a estar disponível após a instalação das [VMware Tools](../instalar_o_pacote_vmware_tools/).
+A monitorização das MV passa a estar disponível após a instalação das [VMware Tools](/pages/cloud/managed-bare-metal/vmware_tools_install).
 Em caso de ausência de resposta através das **tools** (sinais de pulsação), a MV será automaticamente reiniciada. Esta funcionalidade dispõe de uma configuração avançada (intervalos de reinício, por exemplo).
 
 ![Monitorização das MV](images/HAparam5.PNG){.thumbnail}

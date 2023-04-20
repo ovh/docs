@@ -1,8 +1,6 @@
 ---
 title: Condividere file con il tool Plik
 excerpt: Come utilizzare il tool Plik per inviare file ad altre persone
-slug: plik
-section: Tool
 updated: 2022-02-14
 ---
 
@@ -20,7 +18,7 @@ Il tool online [Plik](https://plik.ovhcloud.com) permette di condividere file tr
 
 ## Prerequisiti
 
-- Disporre di un [account OVHcloud attivo](https://docs.ovh.com/it/customer/creare-account-ovhcloud/)
+- Disporre di un [account OVHcloud attivo](/pages/account/customer/ovhcloud-account-creation)
 
 ## Procedura
 
@@ -39,7 +37,7 @@ Inserisci le credenziali e clicca sul pulsante `Log in`{.action} per continuare.
 
 > [!primary]
 >
-> Se hai attivato la [doppia autenticazione](https://docs.ovh.com/it/customer/proteggi_il_tuo_account_con_2FA/) sul tuo account, inserisci il codice fornito con il metodo di autenticazione definito sul tuo account. 
+> Se hai attivato la [doppia autenticazione](/pages/account/customer/secure-ovhcloud-account-with-2fa) sul tuo account, inserisci il codice fornito con il metodo di autenticazione definito sul tuo account. 
 
 ### Trasferisci file
 

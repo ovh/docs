@@ -1,8 +1,6 @@
 ---
 title: 'Purchase Order (PO)'
-slug: purchase-order
 excerpt: Purchase Order Nummer verstehen und im Rahmen der OVHcloud Abrechnung anwenden
-section: Abrechnung
 updated: 2022-07-22
 ---
 

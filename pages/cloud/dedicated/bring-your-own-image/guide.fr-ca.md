@@ -1,8 +1,6 @@
 ---
 title: Utiliser la fonctionnalité Bring Your Own Image
 excerpt: Apprenez à déployer vos images grâce à Bring Your Own Image
-slug: bringyourownimage
-section: Utilisation avancée
 updated: 2022-11-25
 ---
 
@@ -110,7 +108,7 @@ Une fois les champs complétés, lancez le déploiement en cliquant sur `Execute
 
 ### Vérifier le déploiement
 
-Vous pouvez suivre le déploiement de votre image via l'appel API ci-dessous ou par le biais du KVM / [IPMI](../utilisation-ipmi-serveurs-dedies/).
+Vous pouvez suivre le déploiement de votre image via l'appel API ci-dessous ou par le biais du KVM / [IPMI](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers).
 
 > [!api]
 >

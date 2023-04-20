@@ -1,9 +1,6 @@
 ---
 title: CMS - ręczna instalacja modułu PrestaShop
 excerpt: Jak ręcznie zainstalować moduł PrestaShop?
-slug: cms_-_reczna_instalacja_modulu_prestashop
-section: CMS
-order: 06
 updated: 2022-12-01
 ---
 
@@ -18,10 +15,10 @@ Sprawdź, czy posiadasz identyfikator klienta (nic-handle) i hasło, aby móc si
 
 
 - Musisz posiadać dane do logowania do FTP, aby zalogować się do hostingu.
-Zapoznaj się z przewodnikiem na temat odzyskania danych do FTP:[prestashop]({legacy}1374)
+Zapoznaj się z przewodnikiem na temat odzyskania danych do FTP:[prestashop](/pages/web/hosting/cms_manual_installation_prestashop%7Blegacy%7D1374)
 
 - Musisz również posiadać dane do bazy danych SQL, dzięki którym będziesz mógł się połączyć z bazą danych.
-Zapoznaj się z przewodnikiem na temat odzyskania danych do SQL:[prestashop]({legacy}1374)
+Zapoznaj się z przewodnikiem na temat odzyskania danych do SQL:[prestashop](/pages/web/hosting/cms_manual_installation_prestashop%7Blegacy%7D1374)
 
 
 ![prestashop](images/3158.png){.thumbnail}
@@ -58,7 +55,7 @@ Katalog docelowy będzie nosił nazwę "prestashop".
 Aby umieścić pliki modułu PrestaShop na hostingu, należy najpierw zalogować się na ten hosting. 
 
 Udostępniamy przewodnik na temat połączenia FTP w ofercie hostingu www:
-[prestashop]({legacy}1374)
+[prestashop](/pages/web/hosting/cms_manual_installation_prestashop%7Blegacy%7D1374)
 
 ![prestashop](images/3161.png){.thumbnail}
 
@@ -212,7 +209,7 @@ Tak wygląda panel administracyjny sklepu PrestaShop.
 
 ## Użyteczne informacje
 Pomoc OVHcloud nie będzie w stanie zapewnić Ci wsparcia w zakresie konfiguracji sklepu PrestaShop.
-Udostępniamy przewodnik na ten temat: [prestashop]({legacy}2053).
+Udostępniamy przewodnik na ten temat: [prestashop](/pages/web/hosting/cms_manual_installation_prestashop%7Blegacy%7D2053).
 
 Zachęcamy do korzystania z forum rozwiązania PrestaShop.
 

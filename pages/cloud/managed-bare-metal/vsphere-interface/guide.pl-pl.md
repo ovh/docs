@@ -1,10 +1,8 @@
 ---
 title: Połączenie z interfejsem vSphere
-slug: polaczenie-interfejs-vsphere
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/polaczenie-interfejs-vsphere/'
+    canonical: '/pages/cloud/private-cloud/vsphere_interface_connexion'
 excerpt: Odkryj różne sposoby łączenia się z vSphere
-section: Pierwsze kroki
 updated: 2020-11-18
 ---
 

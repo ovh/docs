@@ -1,9 +1,6 @@
 ---
 title: AI Notebooks - Tutorial - Train YOLOv7 for sign language recognition
-slug: notebooks/yolov7-sign-language
 excerpt: How to train the YOLOv7 model on a custom dataset with AI Notebooks
-section: AI Notebooks - Tutorials
-order: 11
 updated: 2023-04-03
 ---
 
@@ -41,7 +38,7 @@ If you want to create it from the [OVHcloud Control Panel](https://www.ovh.com/a
 
 ![image](images/new-object-container.png){.thumbnail}
 
-If you want to run it with the CLI, just follow this [guide](https://docs.ovh.com/ie/en/publiccloud/ai/cli/access-object-storage-data). You have to choose the region, the name of your container and the path where your data is located and use the following commands.
+If you want to run it with the CLI, just follow this [guide](/pages/platform/ai/cli_17_how_to_cli_data_notebooks). You have to choose the region, the name of your container and the path where your data is located and use the following commands.
 
 > [!warning]
 >
@@ -67,9 +64,9 @@ ovhai data upload <region> asl-volov7-model
 
 ### Launch and access Jupyter notebook with Miniconda framework
 
-You need to attach a volume if your data is in your OVHcloud Object Storage and you want to use it during your experiment, or if you need to save the results of your work in the Object Storage. For more information on data, volumes and permissions, see [our guide on data](https://docs.ovh.com/ie/en/publiccloud/ai/cli/access-object-storage-data/).
+You need to attach a volume if your data is in your OVHcloud Object Storage and you want to use it during your experiment, or if you need to save the results of your work in the Object Storage. For more information on data, volumes and permissions, see [our guide on data](/pages/platform/ai/cli_17_how_to_cli_data_notebooks).
 
-If you want to launch it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), just follow this [guide](https://docs.ovh.com/ie/en/publiccloud/ai/notebooks/definition/).
+If you want to launch it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), just follow this [guide](/pages/platform/ai/notebook_guide_introduction_definition).
 
 1. `Name your notebook`
 2. `Choose Jupyterlab editor`
@@ -83,7 +80,7 @@ If you want to launch it from the [OVHcloud Control Panel](https://www.ovh.com/a
 
 Once the repository has been cloned, find the YOLOv7 notebook by following this path: `ai-training-examples` > `notebooks` > `computer-vision` > `object-detection` > `miniconda` > `yolov7` > `notebook_object_detection_yolov7.ipynb`.
 
-If you want to launch it with the CLI, choose the [volumes](https://docs.ovh.com/ie/en/publiccloud/ai/cli/access-object-storage-data/) you want to attach and the number of GPUs (`<nb-gpus>`) to use on your notebook and use the following command:
+If you want to launch it with the CLI, choose the [volumes](/pages/platform/ai/cli_17_how_to_cli_data_notebooks) you want to attach and the number of GPUs (`<nb-gpus>`) to use on your notebook and use the following command:
 
 ```bash
 ovhai notebook run miniconda jupyterlab \
@@ -108,8 +105,8 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 
 ### Go further
 
-- Do you want to observe the evolution of your metrics during the training of your model? Click [here](https://docs.ovh.com/ie/en/publiccloud/ai/notebooks/tuto-weights-and-biases/)!
-- Do you want to use your YOLOv7 model in an app? [Here it is](https://docs.ovh.com/ie/en/publiccloud/ai/deploy/tuto-streamlit-yolov7-sign-language/).
+- Do you want to observe the evolution of your metrics during the training of your model? Click [here](/pages/platform/ai/notebook_tuto_03_weight_biases)!
+- Do you want to use your YOLOv7 model in an app? [Here it is](/pages/platform/ai/deploy_tuto_13_streamlit_yolov7).
 
 ## Feedback
 

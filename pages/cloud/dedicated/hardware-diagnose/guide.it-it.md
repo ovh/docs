@@ -1,8 +1,6 @@
 ---
 title: 'Diagnosticare problemi hardware su un server dedicato'
-slug: diagnostica-problemi-hardware-server-dedicato
 excerpt: 'Scopri come utilizzare gli strumenti di diagnostica per identificare malfunzionamenti hardware sul tuo server'
-section: Diagnostica e modalità Rescue
 updated: 2022-12-15
 ---
 
@@ -21,7 +19,7 @@ Con il passare del tempo, l’usura di un server può causare malfunzionamenti d
 ## Prerequisiti
 
 - Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/)
-- Aver riavviato il server in [Rescue mode](https://docs.ovh.com/it/dedicated/rescue_mode/)
+- Aver riavviato il server in [Rescue mode](/pages/cloud/dedicated/rescue_mode)
 
 ## Procedura
 

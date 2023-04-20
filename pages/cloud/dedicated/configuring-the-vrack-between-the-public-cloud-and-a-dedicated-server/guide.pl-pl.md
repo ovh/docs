@@ -1,8 +1,6 @@
 ---
 title: 'Konfiguracja sieci vRack między Public Cloud a serwerem dedykowanym'
-slug: konfiguracja-vrack-pci-serwer-dedykowany
 excerpt: 'Dowiedz się, jak skonfigurować prywatną sieć między instancją Public Cloud a serwerem dedykowanym'
-section: vRack
 updated: 2021-10-15
 ---
 
@@ -21,7 +19,7 @@ Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwi
 
 ## Wymagania początkowe
 
-* Utworzenie [instancji Public Cloud](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/)
+* Utworzenie [instancji Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps)
 * Aktywowanie usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/)
 * Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/) kompatybilnego z usługą vRack
 * Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
@@ -36,7 +34,7 @@ Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwi
 
 ### Dodaj projekt Public Cloud do usługi vRack
 
-Po skonfigurowaniu Twojego [projektu Public Cloud](https://docs.ovh.com/pl/public-cloud/create_a_public_cloud_project/) należy dodać go do sieci vRack. Można to zrobić na dwa sposoby:
+Po skonfigurowaniu Twojego [projektu Public Cloud](/pages/platform/public-cloud/create_a_public_cloud_project) należy dodać go do sieci vRack. Można to zrobić na dwa sposoby:
 
 1. Jeżeli usługa vRack nie jest dostępna, produkt ten jest bezpłatny.
 
@@ -55,7 +53,7 @@ Na liście usług kwalifikowanych wybierz projekt, który chcesz dodać do sieci
 ![dodaj projekt do usługi vrack](images/addprojectvrack.png){.thumbnail}
 
 <ol start="2">
-  <li>poprzez <a href="https://docs.ovh.com/pl/public-cloud/public-cloud-vrack/#etap-1-aktywacja-i-zarzadzanie-usluga-vrack">utworzenie lub dodanie istniejącej usługi vRack</a> w sekcji Public Cloud.</li>
+  <li>poprzez <a href="/pages/platform/network-services/getting-started-07-creating-vrack#etap-1-aktywacja-i-zarzadzanie-usluga-vrack">utworzenie lub dodanie istniejącej usługi vRack</a> w sekcji Public Cloud.</li>
 </ol>
 
 ### Dodaj instancję do sieci vRack 
@@ -67,11 +65,11 @@ Mogą wystąpić dwie sytuacje:
 
 #### Przypadek nowej instancji
 
-Jeśli potrzebujesz pomocy, zapoznaj się z przewodnikiem [Tworzenie instancji Public Cloud](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/#krok-3-tworzenie-instancji){.external}. Podczas tworzenia instancji możesz określić prywatną sieć, w której będziesz mógł zintegrować instancję podczas etapu 4. Wybierz wówczas w rozwijanym menu utworzony uprzednio vRack.
+Jeśli potrzebujesz pomocy, zapoznaj się z przewodnikiem [Tworzenie instancji Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#krok-3-tworzenie-instancji){.external}. Podczas tworzenia instancji możesz określić prywatną sieć, w której będziesz mógł zintegrować instancję podczas etapu 4. Wybierz wówczas w rozwijanym menu utworzony uprzednio vRack.
 
 #### Przypadek już istniejącej instancji
 
-Możesz przypisać istniejącą instancję do sieci prywatnej. Aby uzyskać więcej informacji, należy zapoznać się z [tą sekcją](https://docs.ovh.com/pl/public-cloud/public-cloud-vrack/#w-przypadku-istniejacej-instancji_2) odpowiedniej instrukcji.
+Możesz przypisać istniejącą instancję do sieci prywatnej. Aby uzyskać więcej informacji, należy zapoznać się z [tą sekcją](/pages/platform/network-services/getting-started-07-creating-vrack#w-przypadku-istniejacej-instancji_2) odpowiedniej instrukcji.
 
 
 ### Utwórz VLAN ID
@@ -80,7 +78,7 @@ Aby obie usługi mogły się ze sobą komunikować, muszą być « otagowane » 
 
 #### Domyślne wykorzystanie VLAN ID
 
-Domyślnie na serwerach dedykowanych znajdujesz się w sieci VLAN id **0**. Jeśli chcesz użyć tego ID, konieczne będzie « oznakować » sieci prywatnej przypisanej do Twojej instancji za pomocą VLAN ID **0**. W tym celu przejdź przez stronę [OVHcloud APIv6 (EN)](https://docs.ovh.com/pl/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1).
+Domyślnie na serwerach dedykowanych znajdujesz się w sieci VLAN id **0**. Jeśli chcesz użyć tego ID, konieczne będzie « oznakować » sieci prywatnej przypisanej do Twojej instancji za pomocą VLAN ID **0**. W tym celu przejdź przez stronę [OVHcloud APIv6 (EN)](/pages/platform/network-services/getting-started-08-creating-vrack-with-api#step-3-creating-a-vlan-in-the-vrack_1).
 
 
 > [!primary]
@@ -104,11 +102,11 @@ W przeciwnym razie system przypisze do Twojej sieci prywatnej losowy numer ident
 > W przeciwieństwie do serwerów dedykowanych, nie ma potrzeby oznaczania sieci VLAN bezpośrednio w pliku konfiguracji sieci instancji Public Cloud, po ustawieniu identyfikatora VLAN w Panelu klienta OVHcloud.
 >
 
-Na przykład: jeśli zdefiniowałeś prywatną sieć przypisaną do Twojej instancji za pomocą VLAN 2, prywatny interfejs sieciowy Twojego serwera dedykowanego musi być « oznaczony » za pomocą VLAN 2. Więcej informacji znajdziesz w przewodniku: [Tworzenie kilku sieci VLAN w prywatnej sieci vRack](https://docs.ovh.com/pl/dedicated/tworzenie-vlan-vrack/).
+Na przykład: jeśli zdefiniowałeś prywatną sieć przypisaną do Twojej instancji za pomocą VLAN 2, prywatny interfejs sieciowy Twojego serwera dedykowanego musi być « oznaczony » za pomocą VLAN 2. Więcej informacji znajdziesz w przewodniku: [Tworzenie kilku sieci VLAN w prywatnej sieci vRack](/pages/cloud/dedicated/creating-multiple-vlans-in-a-vrack).
 
 ### Konfiguracja interfejsów sieciowych
 
-Następnie skonfiguruj interfejsy sieciowe dla nowej instancji Public Cloud i serwera dedykowanego zgodnie z tym przewodnikiem: [Konfiguracja kilku serwerów dedykowanych w sieci vRack](https://docs.ovh.com/pl/dedicated/konfiguracja-kilku-serwerow-dedykowanych-vrack/){.external}.
+Następnie skonfiguruj interfejsy sieciowe dla nowej instancji Public Cloud i serwera dedykowanego zgodnie z tym przewodnikiem: [Konfiguracja kilku serwerów dedykowanych w sieci vRack](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server){.external}.
 
 ## Sprawdź również
 

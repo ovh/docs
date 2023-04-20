@@ -1,8 +1,5 @@
 ---
 title: 'Creating automatic signatures'
-slug: email-automatic-signature-disclaimer
-section: 'Getting started'
-order: 3
 updated: 2020-03-26
 ---
 

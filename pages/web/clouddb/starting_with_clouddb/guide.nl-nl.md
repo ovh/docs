@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: 'Aan de slag met CloudDB'
-slug: aan-de-slag-met-clouddb
 excerpt: 'Ontdek hoe u een goed begin kunt maken met CloudDB'
-section: 'Aan de slag'
 updated: 2023-02-15
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: 'Exporter son site web'
-slug: exporter-son-site-web
 excerpt: 'Découvrez comment exporter votre site web OVHcloud'
-section: 'Premiers pas'
-order: 04
 updated: 2022-02-03
 ---
 
@@ -37,13 +34,13 @@ Ces éléments vous ont été communiqués dans l’e-mail vous notifiant l’in
 
 ![export-website](images/export-website-step1-1.png){.thumbnail}
 
-Les informations liées à votre espace de stockage apparaissent alors. Vous devriez pouvoir retrouver les éléments requis pour vous connecter à celui-ci. Si nécessaire, nous vous invitons à consulter notre guide : [« Se connecter à l’espace de stockage de son hébergement web »](../connexion-espace-stockage-ftp-hebergement-web/){.external}. Si vous n'êtes plus en possession du mot de passe, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](../modifier-mot-de-passe-utilisateur-ftp/){.external}.
+Les informations liées à votre espace de stockage apparaissent alors. Vous devriez pouvoir retrouver les éléments requis pour vous connecter à celui-ci. Si nécessaire, nous vous invitons à consulter notre guide : [« Se connecter à l’espace de stockage de son hébergement web »](../connexion-espace-stockage-ftp-hebergement-web/){.external}. Si vous n'êtes plus en possession du mot de passe, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](/pages/web/hosting/ftp_change_password){.external}.
 
 Une fois tous les éléments en votre possession, la récupération de vos fichiers sur l'espace de stockage peut s'effectuer de deux manières différentes :
 
-- **utiliser un logiciel compatible avec le protocole FTP ou SFTP** : vous devrez installer un logiciel compatible sur votre ordinateur, comme [ FileZilla ](../mutualise-guide-utilisation-filezilla/). Nous vous invitons à vous rapprocher de l'éditeur du logiciel installé si vous souhaitez obtenir de l'aide sur son utilisation, OVHcloud n'ayant pas créé celui-ci ;
+- **utiliser un logiciel compatible avec le protocole FTP ou SFTP** : vous devrez installer un logiciel compatible sur votre ordinateur, comme [ FileZilla ](/pages/web/hosting/ftp_filezilla_user_guide). Nous vous invitons à vous rapprocher de l'éditeur du logiciel installé si vous souhaitez obtenir de l'aide sur son utilisation, OVHcloud n'ayant pas créé celui-ci ;
 
-- **utiliser un accès SSH** : vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage. Des connaissances plus avancées ainsi qu'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} spécifique sont nécessaires pour utiliser ce type d'accès. Pour plus d'informations, vous pouvez consulter notre guide  [« Utiliser l’accès SSH de son hébergement web»](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}. 
+- **utiliser un accès SSH** : vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage. Des connaissances plus avancées ainsi qu'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} spécifique sont nécessaires pour utiliser ce type d'accès. Pour plus d'informations, vous pouvez consulter notre guide  [« Utiliser l’accès SSH de son hébergement web»](/pages/web/hosting/ssh_on_webhosting){.external}. 
 
 #### 1.2 Télécharger les fichiers depuis votre espace de stockage.
 
@@ -61,10 +58,10 @@ Pour vérifier le dossier dans lequel votre site internet est stocké, positionn
 >
 
 Pour récupérer une sauvegarde de votre base de données, consultez notre guide :
-[« Récupérer la sauvegarde de la base de données d’un hébergement web »](../exportation-bases-donnees/){.external}.
+[« Récupérer la sauvegarde de la base de données d’un hébergement web »](/pages/web/hosting/sql_database_export){.external}.
 
 Si vous utilisez une base de données **Web Cloud Databases** pour votre site Web, consultez la section dédiée à la sauvegarde sur notre guide :
-[Sauvegarder et exporter une base de données sur votre serveur de bases de données](https://docs.ovh.com/fr/hosting/sauvegarder-exporter-une-base-de-donnees/){.external}.
+[Sauvegarder et exporter une base de données sur votre serveur de bases de données](/pages/web/clouddb/save-export-on-database-server){.external}.
 
 ### Étape 3 : récupérer les logs de votre hébergement OVHcloud
 
@@ -95,16 +92,16 @@ Lorsque vous avez sélectionné le type de logs sur le mois qui vous intéresse,
 
 ## Aller plus loin
 
-[Se connecter à l’espace de stockage de son hébergement web](../connexion-espace-stockage-ftp-hebergement-web/){.external}.
+[Se connecter à l’espace de stockage de son hébergement web](/pages/web/hosting/ftp_connection){.external}.
 
-[Modifier le mot de passe d’un utilisateur FTP](../modifier-mot-de-passe-utilisateur-ftp/){.external}.
+[Modifier le mot de passe d’un utilisateur FTP](/pages/web/hosting/ftp_change_password){.external}.
 
-[Utiliser FileZilla avec votre hebergement](../mutualise-guide-utilisation-filezilla/){.external}.
+[Utiliser FileZilla avec votre hebergement](/pages/web/hosting/ftp_filezilla_user_guide){.external}.
 
-[Utiliser l’accès SSH de son hébergement web](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}. 
+[Utiliser l’accès SSH de son hébergement web](/pages/web/hosting/ssh_on_webhosting){.external}. 
 
-[Récupérer la sauvegarde de la base de données d’un hébergement web](../exportation-bases-donnees/){.external}.
+[Récupérer la sauvegarde de la base de données d’un hébergement web](/pages/web/hosting/sql_database_export){.external}.
 
-[Premiers pas avec le service Web Cloud Databases](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/){.external}.
+[Premiers pas avec le service Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

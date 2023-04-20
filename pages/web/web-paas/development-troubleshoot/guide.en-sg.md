@@ -1,8 +1,5 @@
 ---
 title: Troubleshooting
-slug: development-troubleshoot
-section: Development
-order: 5
 updated: 2021-05-11
 ---
 
@@ -67,9 +64,9 @@ is related to Web PaaS's subdomain highjacking prevention assumptions, and likel
 
 ## Error provisioning the new certificate
 
-One reason [Let's Encrypt certificates](../configuration-routes/https#lets-encrypt) may fail to provision on your environments has to do with the 64 character limit Let's Encrypt places on URLs. If the names of your branches are too long, the Web PaaS generated environment URL will go over this limit, and the certificate will be rejected.
+One reason [Let's Encrypt certificates](/pages/web/web-paas/configuration-routes/https#lets-encrypt) may fail to provision on your environments has to do with the 64 character limit Let's Encrypt places on URLs. If the names of your branches are too long, the Web PaaS generated environment URL will go over this limit, and the certificate will be rejected.
 
-See [Let's Encrypt limits and branch names](../configuration-routes/https#lets-encrypt-limits-and-branch-names) for a more detailed breakdown of this issue.  
+See [Let's Encrypt limits and branch names](/pages/web/web-paas/configuration-routes/https#lets-encrypt-limits-and-branch-names) for a more detailed breakdown of this issue.  
 
 ## Total disk usage exceeds project maximum
 
@@ -99,7 +96,7 @@ Filesystem                                                       Size  Used Avai
 /dev/mapper/platform-tmp--syd7waxqy4n5q--master--7rqtwti----app  3.9G   42M  3.8G   2% /tmp
 ```
 
-The first line shows the storage device that is shared by all of your [persistent disk mounts](../configuration-app/storage#mounts).  All defined mounts use a common storage pool.  In this example, the application container has allocated 2 GB of the total disk space. Of those 2GB, 2% (37 MB) is used by all defined mounts.
+The first line shows the storage device that is shared by all of your [persistent disk mounts](/pages/web/web-paas/configuration-app/storage#mounts).  All defined mounts use a common storage pool.  In this example, the application container has allocated 2 GB of the total disk space. Of those 2GB, 2% (37 MB) is used by all defined mounts.
 
 The second line is the operating system `temporary directory`, which is always the same size.
   While you can write to the `/tmp` directory files there are not guaranteed to persist and may be deleted on deploy.
@@ -120,8 +117,8 @@ The sum of all disk keys defined in your project's `.platform.app.yaml` and `.pl
 
   Check the following resources for more details:
 
-   - [Application's disk space](../configuration-app/storage#disk)
-   - [Services' disk space](../configuration-services#disk)
+   - [Application's disk space](/pages/web/web-paas/configuration-app/storage#disk)
+   - [Services' disk space](/pages/web/web-paas/configuration-services#disk)
 
 ## No space left on device
 
@@ -133,7 +130,7 @@ W: [Errno 28] No space left on device: ...
 
 The cause of this issue has to do with the amount of disk provided to the build container before it is deployed. Application images are restricted to 4 GB during build, no matter how much writable disk has been set aside for the deployed application.
 
-Some build tools (yarn/npm) store cache for different versions of their modules. This can cause the build cache to grow over time beyond the maximum of 4GB. Try [clearing the build cache](../development-troubleshoot#clear-the-build-cache) and redeploying. In most cases, this will resolve the issue.
+Some build tools (yarn/npm) store cache for different versions of their modules. This can cause the build cache to grow over time beyond the maximum of 4GB. Try [clearing the build cache](/pages/web/web-paas/development-troubleshoot#clear-the-build-cache) and redeploying. In most cases, this will resolve the issue.
 
 If for some reason your application requires more than 4 GB during build, you can open a support ticket to have this limit increased.  The most disk space available during build still caps off at 8 GB in these cases.
 
@@ -150,7 +147,7 @@ This means a process running in your application acquired a lock from MySQL for 
 * There are multiple places acquiring locks in different order. For example, code path 1 first locks record A and then locks record B.  Code path 2, in contrast, first locks record B and then locks record A.
 * There is a long running background process executed by your application that holds the lock until it ends.
 
-If you're using [MariaDB 10+](../configuration-services/mysql), you can use the SQL query `SHOW FULL PROCESSLIST \G` to list DB queries waiting for locks.  Find output like the following, and start debugging.
+If you're using [MariaDB 10+](/pages/web/web-paas/configuration-services/mysql), you can use the SQL query `SHOW FULL PROCESSLIST \G` to list DB queries waiting for locks.  Find output like the following, and start debugging.
 
 ```text
 < skipped >
@@ -182,7 +179,7 @@ SELECT
 
 ### Disk space issues
 
-Errors such as "PDO Exception 'MySQL server has gone away'" are usually simply the result of exhausting your existing diskspace. Be sure you have sufficient space allocated to the service in [.platform/services.yaml](../configuration-services).
+Errors such as "PDO Exception 'MySQL server has gone away'" are usually simply the result of exhausting your existing diskspace. Be sure you have sufficient space allocated to the service in [.platform/services.yaml](/pages/web/web-paas/configuration-services).
 
 The current disk usage can be checked using the CLI command `webpaas db:size`. Because of issues with the way InnoDB reports its size, this can out by up to 20%. As table space can grow rapidly, *it is usually advisable to make your database mount size twice the size reported by the `db:size` command*.
 
@@ -198,7 +195,7 @@ Alternatively, if your worker is idle for too long it can self-terminate.  Web P
 
 ### Packet size limitations
 
-Another cause of the "MySQL server has gone away" errors can be the size of the database packets. If that is the case, the logs may show warnings like  "Error while sending QUERY packet" before the error. One way to resolve the issue is to use the `max_allowed_packet` parameter described [above](../configuration-services/mysql#adjusting-mariadb-configuration).
+Another cause of the "MySQL server has gone away" errors can be the size of the database packets. If that is the case, the logs may show warnings like  "Error while sending QUERY packet" before the error. One way to resolve the issue is to use the `max_allowed_packet` parameter described [above](/pages/web/web-paas/configuration-services/mysql#adjusting-mariadb-configuration).
 
 ## ERROR: permission denied to create database
 
@@ -207,7 +204,7 @@ The database is created for you and can be found in the `path` field of the `$PL
 
 ## "Read-only file system" error
 
-Everything will be read-only, except the writable [mounts](../configuration-app/storage) you declare.  Writable mounts are there for your data: for file uploads, logs and temporary files. Not for your code.  In order to change code on Web PaaS you have to go through Git.
+Everything will be read-only, except the writable [mounts](/pages/web/web-paas/configuration-app/storage) you declare.  Writable mounts are there for your data: for file uploads, logs and temporary files. Not for your code.  In order to change code on Web PaaS you have to go through Git.
 
 This is what gives you all of the benefits of having repeatable deployments, consistent backups, traceability, and the magically fast creation of new staging/dev environments.
 
@@ -241,7 +238,7 @@ where `<project_id>` is the random-character ID of the project.  That can be fou
 
 If you see a bare "File not found" error when accessing your Drupal site with a browser, this means that you've pushed your code as a vanilla project but no *index.php* has been found.
 
-Make sure your repository contains an *index.php* file in the [web location root](../configuration-app#locations), or that your [Drush](../frameworks-drupal7/drush) make files are properly named.
+Make sure your repository contains an *index.php* file in the [web location root](../configuration-app#locations), or that your [Drush](/pages/web/web-paas/frameworks-drupal7/drush) make files are properly named.
 
 
 ## PHP-specific error messages
@@ -258,7 +255,7 @@ That indicates that the server is receiving more concurrent requests than it has
 
 Web PaaS sets the number of workers based on the available memory of your container and the estimated average memory size of each process.  There are two ways to increase the number of workers:
 
-* Adjust the [worker sizing hints](../languages-php/fpm) for your project.
+* Adjust the [worker sizing hints](/pages/web/web-paas/languages-php/fpm) for your project.
 * Upgrade your subscription on Web PaaS to get more computing resources. To do so, log into your [account](https://eu.console.webpaas.ovhcloud.com/) and edit the project.
 
 
@@ -284,7 +281,7 @@ grep $(date +%Y-%m-%dT%H --date='-1 hours') /var/log/php.access.log | sort -k 4 
 
 Otherwise, you may check if the following options are applicable:
 
-* Find the most visited pages and see if they can be cached and/or put behind a CDN.  You may refer to [how caching works](../configuration-routes/cache).
+* Find the most visited pages and see if they can be cached and/or put behind a CDN.  You may refer to [how caching works](/pages/web/web-paas/configuration-routes/cache).
 * Upgrade your subscription on Web PaaS to get more computing resources. To do so, log into your [account](https://eu.console.webpaas.ovhcloud.com/) and edit the project subscription.
 
 ### PHP process crashed
@@ -308,7 +305,7 @@ WARNING: [pool web] child 429 exited on signal 9 (SIGKILL) after 50.938617 secon
 That means the memory usage of your container exceeds the limit allowed on your plan so the kernel kills the offending process. You should try the following:
 
 * Check if the memory usage of your application is expected and try to optimize it.
-* Use [sizing hints](../languages-php/fpm) to reduce the amount of PHP workers which reduces the memory footprint.
+* Use [sizing hints](/pages/web/web-paas/languages-php/fpm) to reduce the amount of PHP workers which reduces the memory footprint.
 * Upgrade your subscription on Web PaaS to get more computing resources. To do so, log into your [account](https://eu.console.webpaas.ovhcloud.com/) and edit the project.
 
 ## Stuck build or deployment
@@ -336,9 +333,9 @@ It means the build has completed successfully and the system is trying to deploy
 
 When a _deployment_ is blocked, you should try the following:
 
-1\. Use [SSH](../development-ssh) to connect to your environment. Find any long-running cron jobs or deploy hooks on the environment by running `ps afx`. Once you have identified the long running process on the environment, kill it with `kill <PID>`. PID stands for the process id shown by `ps afx`.
+1\. Use [SSH](/pages/web/web-paas/development-ssh) to connect to your environment. Find any long-running cron jobs or deploy hooks on the environment by running `ps afx`. Once you have identified the long running process on the environment, kill it with `kill <PID>`. PID stands for the process id shown by `ps afx`.
 
-2\. If you're performing "Sync" or "Activate" on an environment and the process is stuck, use [SSH](../development-ssh) to connect to the parent environment and identify any long running cron jobs with `ps afx`. Kill the job(s) if you see any.
+2\. If you're performing "Sync" or "Activate" on an environment and the process is stuck, use [SSH](/pages/web/web-paas/development-ssh) to connect to the parent environment and identify any long running cron jobs with `ps afx`. Kill the job(s) if you see any.
 
 
 ## Slow or failing build or deployment
@@ -351,7 +348,7 @@ Here are a few tips that can help you solve the issues you are experiencing.
 
 Invisible errors during the build and deploy phase can cause increased wait times, failed builds and other problems. Investigating each log and fixing errors is essential.
 
-Related documentation: [Accessing logs](../development-logs#accessing-logs)
+Related documentation: [Accessing logs](/pages/web/web-paas/development-logs#accessing-logs)
 
 ### Build and deploy hooks
 
@@ -368,7 +365,7 @@ time $cmd # Print execution time
 strace -T $cmd # Print a system call report
 ```
 
-Related documentation: [Build and deploy hooks](../configuration-app/build#hooks)
+Related documentation: [Build and deploy hooks](/pages/web/web-paas/configuration-app/build#hooks)
 
 ### Cron jobs
 
@@ -379,6 +376,6 @@ For that reason, make sure your custom cron jobs execution times are low and tha
 **note**
 Drupal's `drush core-cron` run installed module's cron task. Those can be, for example; evicting invalid cache, updating database records, regenerating assets. Be sure to frequently benchmark the `drush core-cron` command in all your environments, as it is a common source of performance issues.
 
-Related documentation: [Cron and scheduled tasks](../configuration-app/cron#cron-jobs)
+Related documentation: [Cron and scheduled tasks](/pages/web/web-paas/configuration-app/cron#cron-jobs)
 
 

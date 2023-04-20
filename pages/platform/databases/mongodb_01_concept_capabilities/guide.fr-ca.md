@@ -1,11 +1,8 @@
 ---
 title: MongoDB - Capacités et limitations (EN)
-slug: mongodb/capabilities
 excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
-section: MongoDB - Guides
-order: 010
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/capabilities/'
+    canonical: '/pages/platform/databases/mongodb_01_concept_capabilities'
 updated: 2023-03-13
 ---
 

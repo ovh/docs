@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: 'Activering en gebruik van de reddingsmodus'
-slug: ovh-rescue
 excerpt: 'Reddingsmodus activeren en gebruiken op een dedicated server'
-section: 'Diagnose en reddingsmodus'
 updated: 2023-02-07
 ---
 

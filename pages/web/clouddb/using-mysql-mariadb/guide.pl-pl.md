@@ -1,9 +1,6 @@
 ---
 title: MySQL i MariaDB
-slug: mysql-i-mariadb
 excerpt: Korzystanie z baz danych
-section: 'Pierwsze kroki'
-order: 02
 updated: 2023-02-15
 ---
 
@@ -35,7 +32,7 @@ Silnik ten jest w 100% kompatybilny. Wszystkie bugi oraz roadmapy są w pełni d
 
 - Posiadanie [instancji Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- Przeglądanie [przewodnik dotyczący uruchomienia usługi Web Cloud Databases](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/)
+- Przeglądanie [przewodnik dotyczący uruchomienia usługi Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb)
 
 ## W praktyce
 
@@ -61,7 +58,7 @@ Aby zalogować się do bazy danych, musisz dysponować:
 
 Wszystkie te informacje są dostępne w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
-Zapoznaj się również z tym przewodnikiem: [Pierwsze kroki z usługą Cloud Databases](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/).
+Zapoznaj się również z tym przewodnikiem: [Pierwsze kroki z usługą Cloud Databases](/pages/web/clouddb/starting_with_clouddb).
 
 #### Logowanie z linii polecen
 
@@ -120,7 +117,7 @@ cat nazwa_bazy.sql | mysql --host=serwer --user=użytkownik --port=port --passwo
 
 > [!primary]
 >
-> W niektórych przypadkach pamięć RAM dostępna w Twojej instancji Web Cloud Databases może nie powodować odpowiedniego eksportu lub importu. W takim przypadku zalecamy użycie narzędzia OVHcloud w Panelu klienta. W razie potrzeby skorzystaj z dokumentacji ["Pierwsze kroki z usługą Web Cloud Databases"](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/).
+> W niektórych przypadkach pamięć RAM dostępna w Twojej instancji Web Cloud Databases może nie powodować odpowiedniego eksportu lub importu. W takim przypadku zalecamy użycie narzędzia OVHcloud w Panelu klienta. W razie potrzeby skorzystaj z dokumentacji ["Pierwsze kroki z usługą Web Cloud Databases"](/pages/web/clouddb/starting_with_clouddb).
 >
 
 ## Sprawdź również

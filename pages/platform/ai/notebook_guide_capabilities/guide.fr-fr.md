@@ -1,11 +1,8 @@
 ---
 title: AI Notebooks - Caractéristiques, capacités et limites (EN)
-slug: notebooks/capabilities
 excerpt: Découvrez les principales caractéristiques, capacités et limites des AI Notebooks
-section: AI Notebooks - Guides
-order: 04
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/capabilities/'
+    canonical: '/pages/platform/ai/notebook_guide_capabilities'
 updated: 2022-04-20
 ---
 
@@ -87,7 +84,7 @@ For your information, the current limits are:
 - GPU: 4 per notebook.
 
 > [!primary]
-> **Local storage** refers to a drive mounted on the node. It's limited and not the recommended way to handle data, see the [OVHcloud documentation on data](https://docs.ovh.com/fr/publiccloud/ai/data) for more information.
+> **Local storage** refers to a drive mounted on the node. It's limited and not the recommended way to handle data, see the [OVHcloud documentation on data](/pages/platform/ai/gi_02_concepts_data) for more information.
 >
 
 #### GPU hardware for notebooks
@@ -141,7 +138,7 @@ Limitations:
 - AI Notebooks **does not allow the use of custom Docker images**. In case you need a very specific package or framework, you can bring your custom Docker images with **OVHcloud AI Training**.
 
 AI Training allows you to benefit from the same technology and pricing, but you can create notebooks directly with your own Docker images.
-If you want to build and use a custom Docker image, you can do it with AI Training by following this [tutorial](https://docs.ovh.com/fr/publiccloud/ai/training/build-use-custom-image/).
+If you want to build and use a custom Docker image, you can do it with AI Training by following this [tutorial](/pages/platform/ai/training_tuto_02_build_custom_image).
 
 
 ### Network access

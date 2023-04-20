@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Toevoeging van een domeinnaam aan uw Exchange
-slug: toevoegen-domein-exchange
 excerpt: Ontdek hoe u een domeinnaam kunt toevoegen aan uw Exchange-dienst
-section: Configuratie van Exchange
 updated: 2022-10-07
 ---
 
@@ -90,7 +88,7 @@ Nadat het domein is toegevoegd als gekoppeld domein, controleert u of de configu
 
 - **Als u bij het toevoegen van het domein hebt gekozen voor automatische configuratie**: het kan een paar uur duren voordat het op het Control Panel verschijnt.
 
-- **Als u een niet-OVH-domeinnaam hebt ingevoerd**: klik op het rode omlijnde vak om de wijzigingen die u moet aanbrengen te bekijken. Als deze domeinnaam de OVH-configuratie (de DNS-servers) niet gebruikt, moet u de wijzigingen uitvoeren in de interface die u gebruikt om de configuratie van uw domeinnaam te beheren. Als u de CNAME-record wilt wijzigen, kunt u meer informatie vinden aan de hand van deze [documentatie](https://docs.ovh.com/nl/microsoft-collaborative-solutions/exchange-toevoegen-van-een-cname-record/){.external}.
+- **Als u een niet-OVH-domeinnaam hebt ingevoerd**: klik op het rode omlijnde vak om de wijzigingen die u moet aanbrengen te bekijken. Als deze domeinnaam de OVH-configuratie (de DNS-servers) niet gebruikt, moet u de wijzigingen uitvoeren in de interface die u gebruikt om de configuratie van uw domeinnaam te beheren. Als u de CNAME-record wilt wijzigen, kunt u meer informatie vinden aan de hand van deze [documentatie](/pages/web/microsoft-collaborative-solutions/exchange_dns_cname){.external}.
 
 > [!primary]
 >
@@ -107,12 +105,12 @@ Nu u de domeinnamen hebt toegevoegd aan uw Exchange-dienst, kunt u uw Exchange-a
 
 In the directory kunnen alle adressen die op uw Exchange-dienst zijn gemaakt, alle andere verwante adressen bekijken, inclusief adressen die verschillende domeinnamen hebben.
 
-Nadat u uw accounts hebt geconfigureerd, hoeft u ze alleen nog maar te gebruiken! Hiervoor biedt OVH de *webmail* **Outlook Web Application** (OWA), die u kunt openen via de link: [https://www.ovh.nl/mail/](https://www.ovh.nl/mail/){.external}. Als u de manier wilt optimaliseren waarop u uw Exchange-e-mailadres op een e-mailclient gebruikt, moet u ervoor zorgen dat deze compatibel is met de dienst. Als u uw e-mailadres wilt configureren in een e-mailprogramma of een apparaat (zoals een smartphone of een tablet), raadpleeg dan onze documentatie op: [https://docs.ovh.com/nl/microsoft-collaborative-solutions/](https://docs.ovh.com/nl/microsoft-collaborative-solutions/){.external}.
+Nadat u uw accounts hebt geconfigureerd, hoeft u ze alleen nog maar te gebruiken! Hiervoor biedt OVH de *webmail* **Outlook Web Application** (OWA), die u kunt openen via de link: [https://www.ovh.nl/mail/](https://www.ovh.nl/mail/){.external}. Als u de manier wilt optimaliseren waarop u uw Exchange-e-mailadres op een e-mailclient gebruikt, moet u ervoor zorgen dat deze compatibel is met de dienst. Als u uw e-mailadres wilt configureren in een e-mailprogramma of een apparaat (zoals een smartphone of een tablet), raadpleeg dan onze documentatie op: [https://docs.ovh.com/nl/microsoft-collaborative-solutions/](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}.
 
 OVH biedt Outlook-licenties in het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en Office 365-licenties op de pagina: [https://www.ovhcloud.com/nl/collaborative-tools/microsoft-365/](https://www.ovhcloud.com/nl/collaborative-tools/microsoft-365/){.external}. We raden u aan een van deze oplossingen te gebruiken als u de Outlook-e-mailclient of andere software van de Microsoft Office-suite wilt gebruiken.
 
 ## Verder
 
-[Creatie van een CNAME-record voor het toevoegen van een gekoppeld domein](https://docs.ovh.com/nl/microsoft-collaborative-solutions/exchange-toevoegen-van-een-cname-record/){.external}.
+[Creatie van een CNAME-record voor het toevoegen van een gekoppeld domein](/pages/web/microsoft-collaborative-solutions/exchange_dns_cname){.external}.
 
 Ga in gesprek met andere communitygebruikers op [https://community.ovh.com](https://community.ovh.com){.external}.

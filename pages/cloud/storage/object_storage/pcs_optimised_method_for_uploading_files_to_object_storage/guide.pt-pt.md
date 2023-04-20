@@ -1,9 +1,6 @@
 ---
 title: Object Storage Swift - Otimizar os uploads para o Object Storage
-slug: pcs/optimised-method-for-uploading-files-to-object-storage
-section: OpenStack Swift Storage Class Specifics
 legacy_guide_number: g1951
-order: 130
 updated: 2021-10-27
 ---
 
@@ -18,8 +15,8 @@ Aquando do envio de ficheiros volumosos para o Object Storage (como vídeos ou i
 
 ## Pré-requisitos
 
-- [Preparar o ambiente para utilizar a API OpenStack](https://docs.ovh.com/pt/public-cloud/prepare_the_environment_for_using_the_openstack_api/) com o cliente python-swiftclient
-- [Carregar as variáveis de ambiente OpenStack](https://docs.ovh.com/pt/public-cloud/set-openstack-environment-variables/)
+- [Preparar o ambiente para utilizar a API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) com o cliente python-swiftclient
+- [Carregar as variáveis de ambiente OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## Instruções
 

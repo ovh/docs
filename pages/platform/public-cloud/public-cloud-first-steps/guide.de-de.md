@@ -1,9 +1,6 @@
 ---
 title: 'Erste Public Cloud Instanz erstellen und auf dieser einloggen'
-slug: public-cloud-erste-schritte
 excerpt: 'So starten Sie nach der Erstellung eines Projekts mit der Verwendung Ihres Public Cloud Dienstes'
-section: 'Erste Schritte'
-order: 1
 updated: 2023-01-26
 ---
 
@@ -142,7 +139,7 @@ Unabhängig von der zur Erstellung der SSH-Schlüssel verwendeten Methode verfü
 
 > [!primary]
 >
-Gespeicherte SSH-Schlüssel ermöglichen es Ihnen, Ihre Instanzen schneller zu erstellen. Zur Änderung von Schlüsselpaaren oder zum späteren Hinzufügen von Benutzern folgen Sie der Anleitung “[Zusätzliche SSH-Schlüssel konfigurieren](https://docs.ovh.com/de/public-cloud/zusaetzliche-ssh-schluessel-konfigurieren/)”.
+Gespeicherte SSH-Schlüssel ermöglichen es Ihnen, Ihre Instanzen schneller zu erstellen. Zur Änderung von Schlüsselpaaren oder zum späteren Hinzufügen von Benutzern folgen Sie der Anleitung “[Zusätzliche SSH-Schlüssel konfigurieren](/pages/platform/public-cloud/configuring_additional_ssh_keys)”.
 >
 
 Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie dann in der linken Menüleiste unter “Project Management” auf `SSH-Schlüssel`{.action}.
@@ -214,7 +211,7 @@ Je nach geplanter Nutzung Ihrer Instanzen können Sie **Öffentlicher Modus** od
 
 Der Öffentliche Modus ist das klassische Netzwerkmodell und erlaubt es Ihren Instanzen, einen eigenen öffentlichen Netzwerk-Port einzurichten. Jede Instanz ist mit dem vRack verbunden und verfügt über eine öffentliche und eine private IP.
 
-Der Private Modus bietet Ihnen die Möglichkeit, Ihre Instanzen ausschließlich einem privaten Netzwerk zuzuweisen. Die Instanzen dieses Modus können dem öffentlichen Netzwerk nur mit einem Gateway oder Loadbalancer mit Floating IPs ausgesetzt werden. Weitere Informationen finden Sie in unserer Dokumentation zu den [Netzwerklösungen für die OVHcloud Public Cloud](https://docs.ovh.com/de/publiccloud/network-services/).
+Der Private Modus bietet Ihnen die Möglichkeit, Ihre Instanzen ausschließlich einem privaten Netzwerk zuzuweisen. Die Instanzen dieses Modus können dem öffentlichen Netzwerk nur mit einem Gateway oder Loadbalancer mit Floating IPs ausgesetzt werden. Weitere Informationen finden Sie in unserer Dokumentation zu den [Netzwerklösungen für die OVHcloud Public Cloud](/products/public-cloud-network).
 
 Wählen Sie nach der Wahl Ihr privates Netzwerk aus, an das Ihre Instanz angehängt werden soll, oder klicken Sie auf `Ein neues privates Netzwerk erstellen`{.action}, um ein neues zu erstellen.
 
@@ -242,13 +239,13 @@ Für die Instanz wird automatisch ein Benutzer mit erweiterten Berechtigungen er
 
 > [!primary]
 >
-Sollten Verbindungsprobleme auftreten, d. h. kommt es zu Fehlern mit Ihren SSH-Schlüsseln, lesen Sie bitte die Anleitung “[Änderung des SSH-Schlüssels bei Verlust](https://docs.ovh.com/de/public-cloud/nderung_des_ssh_schlussels_bei_verlust/)”.
+Sollten Verbindungsprobleme auftreten, d. h. kommt es zu Fehlern mit Ihren SSH-Schlüsseln, lesen Sie bitte die Anleitung “[Änderung des SSH-Schlüssels bei Verlust](/pages/platform/public-cloud/replacing_lost_ssh_key)”.
 >
 
 
 > [!primary]
 >
-Wenn Sie über die OVHcloud API oder das Interface von OpenStack Horizon eine Instanz ohne SSH-Schlüssel erstellt haben, können Sie Ihrer Instanz nur über den [Rescue-Modus](https://docs.ovh.com/de/public-cloud/umstellung_einer_instanz_auf_den_rescue-modus/) einen SSH-Schlüssel hinzufügen. Beachten Sie hierzu die Anweisungen in [diesem Abschnitt der entsprechenden Anleitung](../nderung_des_ssh_schlussels_bei_verlust/#in-der-praktischen-anwendung).
+Wenn Sie über die OVHcloud API oder das Interface von OpenStack Horizon eine Instanz ohne SSH-Schlüssel erstellt haben, können Sie Ihrer Instanz nur über den [Rescue-Modus](/pages/platform/public-cloud/put_an_instance_in_rescue_mode) einen SSH-Schlüssel hinzufügen. Beachten Sie hierzu die Anweisungen in [diesem Abschnitt der entsprechenden Anleitung](/pages/platform/public-cloud/replacing_lost_ssh_key#in-der-praktischen-anwendung).
 >
 
 #### Über Linux / Mac mit einer Linux-Instanz verbinden
@@ -354,10 +351,10 @@ Erscheint eine Zertifikatsmeldung, klicken Sie auf `Ja`{.action}. Geben Sie ansc
 
 ## Weiterführende Informationen
 
-[Backup einer Instanz erstellen](../ein_backup_einer_instanz_erstellen/)
+[Backup einer Instanz erstellen](/pages/platform/public-cloud/save_an_instance)
 
-[Public Cloud Quota erhöhen](../increase-public-cloud-quota/)
+[Public Cloud Quota erhöhen](/pages/platform/public-cloud/increasing_public_cloud_quota)
 
-[Von der stündlichen auf monatliche Abrechnung umstellen](../abrechnungsart-aendern-public-cloud/)
+[Von der stündlichen auf monatliche Abrechnung umstellen](/pages/platform/public-cloud/changing_hourly_monthly_billing)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

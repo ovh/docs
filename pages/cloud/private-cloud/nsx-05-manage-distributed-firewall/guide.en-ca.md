@@ -1,9 +1,6 @@
 ---
 title: Distributed Firewall Management in NSX
-slug: nsx-manage-distributed-firewall
 excerpt: Learn how to manage the distributed firewall by creating a rule that blocks traffic between a virtual machine and all virtual machines in another segment
-section: NSX
-order: 05
 updated: 2023-02-27
 ---
 
@@ -27,7 +24,7 @@ To simplify the administration of NSX, it is possible to place tags on your elem
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ca/enterprise/products/hosted-private-cloud/) to receive login credentials.
 - A user account with access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
-- Having **NSX** deployed with two segments configured in your NSX configuration, you can use our guide on [segment management in NSX](https://docs.ovh.com/ca/en/private-cloud/nsx-segment-management) for more information.
+- Having **NSX** deployed with two segments configured in your NSX configuration, you can use our guide on [segment management in NSX](/pages/cloud/private-cloud/nsx-02-segment-management) for more information.
 
 ## Instructions
 
@@ -237,9 +234,9 @@ Your rule is active, the traffic between the virtual machine member of the g-vm 
 
 ## Go further <a name="gofurther"></a>
 
-[Getting started with NSX](https://docs.ovh.com/ca/en/private-cloud/nsx-first-steps/)
+[Getting started with NSX](/pages/cloud/private-cloud/nsx-01-first-steps)
 
-[Segment management in NSX](https://docs.ovh.com/ca/en/private-cloud/nsx-segment-management/)
+[Segment management in NSX](/pages/cloud/private-cloud/nsx-02-segment-management)
 
 [VMware Distributed Firewall in NSX documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-6AB240DB-949C-4E95-A9A7-4AC6EF5E3036.html)
 

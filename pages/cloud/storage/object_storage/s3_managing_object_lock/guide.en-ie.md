@@ -1,9 +1,6 @@
 ---
 title: Object Storage - Managing object immutability with Object Lock (WORM)
-slug: s3/managing-object-lock
 excerpt:
-section: Tutorials
-order: 110
 updated: 2022-06-02
 ---
 
@@ -50,7 +47,7 @@ Legal hold provides the same protection as a retention period, but it has no exp
 - Your S3 credentials (access_key and secret_access_key)
 - Aws cli installed and configured
 
-See our [Getting started with S3 Object Storage](https://docs.ovh.com/ie/en/storage/object-storage/s3/getting-started-with-object-storage/) guide for more information.
+See our [Getting started with S3 Object Storage](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) guide for more information.
 
 ## Instructions
 
@@ -58,7 +55,7 @@ See our [Getting started with S3 Object Storage](https://docs.ovh.com/ie/en/stor
 >
 > All the following examples will use aws cli.
 >
-> To learn more about aws cli, please read this [guide](https://docs.ovh.com/ie/en/storage/object-storage/s3/getting-started-with-object-storage/).
+> To learn more about aws cli, please read this [guide](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage).
 >
 
 ### Permissions
@@ -73,7 +70,7 @@ See our [Getting started with S3 Object Storage](https://docs.ovh.com/ie/en/stor
 | `s3:PutBucketObjectLockConfiguration` | Allows users to place an Object Lock configuration on the specified bucket  |
 | `s3:BypassGovernanceRetention` | Allows users to bypass the Governance mode |
 
-*Read this [guide](https://docs.ovh.com/ie/en/storage/s3/identity-and-access-management/) to learn more about IAM.*
+*Read this [guide](/pages/cloud/storage/object_storage/s3_identity_and_access_management) to learn more about IAM.*
 
 ### Object Lock configuration
 

@@ -1,9 +1,6 @@
 ---
 title: 'Web hosting: Instalar un CMS manualmente'
-slug: web_hosting_instalar_un_cms_manualmente
 excerpt: 'Instalar un CMS manualmente'
-section: CMS
-order: 03
 updated: 2020-02-04
 ---
 
@@ -34,7 +31,7 @@ Nuestros servicios de alojamiento web son compatibles con algunos de los sistema
 >
 >Puede instalar automáticamente cada uno de estos CMS en pocos clics desde su [panel de control de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Lea la siguiente guía:
 >
->[Instalación de su sitio web con módulos de un clic](../modulos-en-un-clic/)
+>[Instalación de su sitio web con módulos de un clic](/pages/web/hosting/cms_install_1_click_modules)
 >
 
 
@@ -52,7 +49,7 @@ El equipo de asistencia de OVHcloud no está autorizado a responder a preguntas 
 Consulte los foros dedicados a [WordPress](https://wordpress.org/support/).
 
 
-- Guía de instalación de WordPress: [CMS, instalación manual de WordPress](../cms_instalar_manualmente_wordpress/)
+- Guía de instalación de WordPress: [CMS, instalación manual de WordPress](/pages/web/hosting/cms_manual_installation_wordpress)
 
 
 
@@ -72,7 +69,7 @@ El equipo de asistencia de OVHcloud no está autorizado a responder a preguntas 
 
 En su lugar, consulte los foros dedicados de [Joomla!](http://forum.joomla.org/). 
 
-- Guía de instalación de Joomla!: [CMS, instalación manual de Joomla!](https://docs.ovh.com/gb/en/hosting/cms_manually_install_joomla/)
+- Guía de instalación de Joomla!: [CMS, instalación manual de Joomla!](/pages/web/hosting/cms_manual_installation_joomla)
 
 
 
@@ -97,7 +94,7 @@ Consulte el foro dedicado a la solución
 [PrestaShop](https://www.prestashop.com/forums/).
 
 
-- Guía de instalación de PrestaShop: [CMS, instalación manual de PrestaShop](https://docs.ovh.com/gb/en/hosting/cms_manually_install_prestashop)
+- Guía de instalación de PrestaShop: [CMS, instalación manual de PrestaShop](/pages/web/hosting/cms_manual_installation_prestashop)
 
 
 
@@ -116,7 +113,7 @@ El equipo de asistencia de OVHcloud no está autorizado a responder a preguntas 
 Consulte los foros dedicados a [Drupal](https://www.drupal.org).
 
 
--  Guía de instalación de Drupal: [CMS, instalación manual de Drupal](https://docs.ovh.com/gb/en/hosting/cms_manually_install_drupal)
+-  Guía de instalación de Drupal: [CMS, instalación manual de Drupal](/pages/web/hosting/cms_manual_installation_drupal)
 
 
 
@@ -127,11 +124,11 @@ Consulte los foros dedicados a [Drupal](https://www.drupal.org).
 
 ## Más información
 
-[Migrar su sitio web y correos electrónicos a OVHcloud](../web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external}
+[Migrar su sitio web y correos electrónicos a OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-[Publicar un sitio web en su espacio de alojamiento web](../web_hosting_publicar_un_sitio_web_en_internet/){.external}
+[Publicar un sitio web en su espacio de alojamiento web](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
-[Alojar varios sitios web en su plan de alojamiento web](../configurar-un-multisitio-en-un-alojamiento-web/){.external}
+[Alojar varios sitios web en su plan de alojamiento web](/pages/web/hosting/multisites_configure_multisite){.external}
 
 Consulte nuestras [soluciones de alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/){.external}
 

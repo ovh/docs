@@ -1,8 +1,6 @@
 ---
 title: 'Creare un’istanza dall’interfaccia Horizon'
-slug: crea_unistanza_con_horizon
 excerpt: 'Come creare un’istanza dall’interfaccia Horizon'
-section: Gestione da Horizon
 legacy_guide_number: g1772
 updated: 2022-08-01
 ---
@@ -22,11 +20,11 @@ In alcuni casi potrebbe essere necessario creare istanze direttamente dall’int
 ## Prerequisiti
 
 - Disporre di un progetto [Public Cloud OVHcloud](https://www.ovhcloud.com/it/public-cloud/){.external}
-- [Essere connesso all’interfaccia Horizon](https://docs.ovh.com/it/public-cloud/horizon/){.external} 
+- [Essere connesso all’interfaccia Horizon](/pages/platform/public-cloud/introducing_horizon){.external} 
 
 ## Procedura
 
-Per avviare la creazione di un’istanza, accedi all’interfaccia Horizon. Se hai bisogno di aiuto per effettuare questa operazione, consulta [la guida](https://docs.ovh.com/it/public-cloud/horizon/){.external}.
+Per avviare la creazione di un’istanza, accedi all’interfaccia Horizon. Se hai bisogno di aiuto per effettuare questa operazione, consulta [la guida](/pages/platform/public-cloud/introducing_horizon){.external}.
 
 Clicca su `Compute`{.action} nel menu a sinistra e seleziona `Instances`{.action}.
 
@@ -58,7 +56,7 @@ A questo punto completa i campi con le informazioni richieste aiutandoti, se nec
 
 > [!warning] 
 >
-> Anche se il campo "Key Pair" non è obbligatorio nell'interfaccia Horizon durante la creazione di un'istanza, la registrazione di una chiave SSH è assolutamente necessaria per potersi connettere a un'istanza. Senza chiave SSH, dovrai riavviare l'istanza in modalità Rescue per creare una password o aggiungere una chiave SSH nel file appropriato (per maggiori informazioni, consulta la guida [Sostituisci la tua chiave SSH in caso di perdita](../sostituisci_la_tua_chiave_ssh_in_caso_di_perdita/#procedura)).
+> Anche se il campo "Key Pair" non è obbligatorio nell'interfaccia Horizon durante la creazione di un'istanza, la registrazione di una chiave SSH è assolutamente necessaria per potersi connettere a un'istanza. Senza chiave SSH, dovrai riavviare l'istanza in modalità Rescue per creare una password o aggiungere una chiave SSH nel file appropriato (per maggiori informazioni, consulta la guida [Sostituisci la tua chiave SSH in caso di perdita](/pages/platform/public-cloud/replacing_lost_ssh_key#procedura)).
 >
 
 Quando tutto è pronto, clicca su `Launch Instance`{.action} per avviare le istanze desiderate.

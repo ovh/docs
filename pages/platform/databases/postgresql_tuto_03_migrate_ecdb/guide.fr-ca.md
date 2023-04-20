@@ -1,11 +1,8 @@
 ---
 title: PostgreSQL - Tutoriel - Comment migrer de Enterprise Cloud Databases vers Public Cloud Databases (EN)
 excerpt: Learn how to migrate a on-premises PostgreSQL database instance to Public Cloud Databases for PostgreSQL
-slug: postgresql/howto-migrate-on-prem-to-pcd
-section: PostgreSQL - Tutoriels
-order: 080
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/howto-migrate-on-prem-to-pcd/'
+    canonical: '/pages/platform/databases/postgresql_tuto_03_migrate_ecdb'
 updated: 2022-03-16
 ---
 
@@ -25,8 +22,8 @@ updated: 2022-03-16
 
 These guides can help you to meet these requirements:
 
-- [Getting started with Public Cloud Databases](https://docs.ovh.com/ca/fr/publiccloud/databases/getting-started/)
-- [PostgreSQL - Connect with CLI](https://docs.ovh.com/ca/fr/publiccloud/databases/postgresql/connect-cli/)
+- [Getting started with Public Cloud Databases](/pages/platform/databases/databases_01_order_control_panel)
+- [PostgreSQL - Connect with CLI](/pages/platform/databases/postgresql_03_connect_cli)
 
 ## Considerations
 
@@ -77,9 +74,9 @@ Edit it so that it reads:
 ALTER TABLE public.<table> OWNER TO avnadmin;
 ```
 
-Then, search the schema dump file for anything that is not compatible with the OVHcloud Public Cloud Databases offer. Review [PostgreSQL - Capabilities and Limitations](https://docs.ovh.com/ca/fr/publiccloud/databases/postgresql/capabilities/) to learn about what the destination database supports.
+Then, search the schema dump file for anything that is not compatible with the OVHcloud Public Cloud Databases offer. Review [PostgreSQL - Capabilities and Limitations](/pages/platform/databases/postgresql_01_capabilities) to learn about what the destination database supports.
 
-Pay particular attention to anything related to extensions, users, roles and schemas. For example, if you installed any third party extensions, you'll need to remove them as extensions are to be handled differently going forward (check the list of supported extensions here: [PostgreSQL - Available extensions](https://docs.ovh.com/ca/fr/publiccloud/databases/postgresql/extensions/)).
+Pay particular attention to anything related to extensions, users, roles and schemas. For example, if you installed any third party extensions, you'll need to remove them as extensions are to be handled differently going forward (check the list of supported extensions here: [PostgreSQL - Available extensions](/pages/platform/databases/postgresql_02_extensions)).
 
 ### Step 5: Import the schema
 

@@ -1,9 +1,6 @@
 ---
 title: Sprawdź system plików na serwerze VPS
 excerpt: Dowiedz się, jak wyszukać błędy w systemie plików w trybie rescue
-slug: check-file-system-vps
-section: Diagnostyka i tryb Rescue
-order: 5
 updated: 2021-04-20
 ---
 
@@ -32,7 +29,7 @@ updated: 2021-04-20
 
 #### VPS GNU/Linux
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i uruchom restart serwera w trybie rescue. W razie potrzeby zapoznaj się z naszym [przewodnikiem dotyczącym trybu Rescue](../rescue/).
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i uruchom restart serwera w trybie rescue. W razie potrzeby zapoznaj się z naszym [przewodnikiem dotyczącym trybu Rescue](/pages/cloud/vps/rescue).
 
 W przypadku starszych gam VPS partycje zostaną automatycznie zamontowane w trybie rescue. Możesz to sprawdzić za pomocą polecenia:
 
@@ -74,7 +71,7 @@ $ fsck /dev/sdb1 -f
 
 Powyższe instrukcje zwykle nie mają zastosowania do serwera VPS z systemem Windows, ponieważ weryfikacja systemu plików nie obsługuje NTFS. Możesz jednak przeprowadzić weryfikację zgodności NTFS na partycjach.
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i uruchom restart serwera w trybie rescue. W razie potrzeby zapoznaj się z naszym [przewodnikiem dotyczącym trybu Rescue](../rescue/).
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i uruchom restart serwera w trybie rescue. W razie potrzeby zapoznaj się z naszym [przewodnikiem dotyczącym trybu Rescue](/pages/cloud/vps/rescue).
 
 W przypadku starszych gam VPS partycje zostaną automatycznie zamontowane w trybie rescue. Możesz to sprawdzić za pomocą polecenia:
 
@@ -107,6 +104,6 @@ $ ntfsfix /dev/sdb1
 
 ## Sprawdź również
 
-[Włącz tryb Rescue na serwerze VPS](../rescue/)
+[Włącz tryb Rescue na serwerze VPS](/pages/cloud/vps/rescue)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

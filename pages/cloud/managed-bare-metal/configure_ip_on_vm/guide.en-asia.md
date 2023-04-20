@@ -1,10 +1,8 @@
 ---
 title: Configure an IP address on a virtual machine
-slug: configure-ip-on-virtual-machine
 routes:
-    canonical: 'https://docs.ovh.com/asia/en/private-cloud/configure-ip-on-virtual-machine/'
+    canonical: '/pages/cloud/private-cloud/configure_ip_on_vm'
 excerpt: Learn how to configure an IP address on a virtual machine
-section: Getting started
 updated: 2020-11-18
 ---
 
@@ -96,7 +94,7 @@ The process for configuring a private IP address is similar to that of a public 
 
 In your interface options, you can edit the following settings:
 
-- A VLAN interface (10 to 20 by default and linked to the vRack, you can create more by consulting [this guide](../creation-vlan/)).
+- A VLAN interface (10 to 20 by default and linked to the vRack, you can create more by consulting [this guide](/pages/cloud/managed-bare-metal/vlan-creation)).
 
 In your virtual machine settings, you can use a VLAN :
 

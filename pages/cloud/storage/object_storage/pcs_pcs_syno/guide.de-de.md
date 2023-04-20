@@ -1,9 +1,6 @@
 ---
 title: Object Storage Swift - Synology NAS mit Object Storage synchronisieren
-slug: pcs/pcs-syno
 excerpt: Erfahren Sie hier, wie Sie ein Synology NAS mit einem Container synchronisieren
-section: OpenStack Swift Storage Class Specifics
-order: 150
 updated: 2021-10-27
 ---
 
@@ -23,8 +20,8 @@ Dieser ist mit dem Object Storage der OVHcloud Public Cloud kompatibel und erlau
 
 ## Voraussetzungen
 
-- [Erstellung von Object Storage Containern](https://docs.ovh.com/de/storage/object-storage/pcs/create-container/)
-- [Einen Zugang zu Horizon erstellen](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/#erstellung-eines-openstack-benutzers)
+- [Erstellung von Object Storage Containern](/pages/cloud/storage/object_storage/pcs_create_container)
+- [Einen Zugang zu Horizon erstellen](/pages/platform/public-cloud/create_and_delete_a_user#erstellung-eines-openstack-benutzers)
 
 ## In der praktischen Anwendung
 
@@ -41,7 +38,7 @@ Um die Synchronisierung Ihres Synology NAS zu konfigurieren müssen Sie über di
 
 Diese können Sie anhand der folgenden Anleitung im Kundencenter herunterladen:
 
-- [OpenStack Umgebungsvariablen einrichten](https://docs.ovh.com/de/public-cloud/set-openstack-environment-variables/)
+- [OpenStack Umgebungsvariablen einrichten](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 #### Konfiguration des Synchronisationspunkts mit Cloud Sync
 

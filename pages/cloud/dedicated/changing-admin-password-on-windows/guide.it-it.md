@@ -1,8 +1,6 @@
 ---
 title: 'Modificare la password amministratore su un server dedicato Windows'
-slug: "modificare-password-admin-su-server-windows"
 excerpt: 'Come impostare una nuova password amministratore su un server Windows'
-section: 'Diagnostica e modalità Rescue'
 updated: 2021-01-12
 ---
 
@@ -14,7 +12,7 @@ updated: 2021-01-12
 
 ## Obiettivo
 
-Durante l’installazione o la reinstallazione di una distribuzione Windows, viene fornita una password per accedere come amministratore. Ti consigliamo vivamente di modificarlo, come spiegato nella nostra guida Mettere in [sicurezza un server dedicato](../mettere-in-sicurezza-un-server-dedicato/){.external}. Se hai perso la password admin, è necessario reimpostarla in modalità Rescue.
+Durante l’installazione o la reinstallazione di una distribuzione Windows, viene fornita una password per accedere come amministratore. Ti consigliamo vivamente di modificarlo, come spiegato nella nostra guida Mettere in [sicurezza un server dedicato](/pages/cloud/dedicated/securing-a-dedicated-server){.external}. Se hai perso la password admin, è necessario reimpostarla in modalità Rescue.
 
 **Questa guida ti mostra come modificare la password admin del tuo server utilizzando le configurazioni della modalità Rescue disponibili con un sistema operativo Windows.**
 
@@ -45,7 +43,7 @@ Una volta terminata la modifica, clicca sui tre puntini `...`{.action} in corris
 
 ![rescuereboot](images/adminpw_win_02.png){.thumbnail}
 
-Per maggiori informazioni sulla modalità Rescue, consulta [questa guida](../rescue_mode/).
+Per maggiori informazioni sulla modalità Rescue, consulta [questa guida](/pages/cloud/dedicated/rescue_mode).
 
 ### Step 2: esegui il mount della partizione di sistema
 
@@ -304,7 +302,7 @@ Una volta terminata la modifica, clicca sui tre puntini `...`{.action} in corris
 
 ![rescuereboot](images/adminpw_win_02.png){.thumbnail}
 
-Per maggiori informazioni sulla modalità Rescue, consulta [questa guida](../rescue_mode/).
+Per maggiori informazioni sulla modalità Rescue, consulta [questa guida](/pages/cloud/dedicated/rescue_mode).
 
 #### Step 2: eliminare la password corrente
 
@@ -339,8 +337,8 @@ Prosegui nella lettura di questa guida allo [Step 5: impostare una nuova passwor
 
 ## Per saperne di più
 
-[Attivare e utilizzare la modalità rescue](../rescue_mode/)
+[Attivare e utilizzare la modalità rescue](/pages/cloud/dedicated/rescue_mode)
 
-[Utilizzare l’IPMI sui server dedicati](../utilizzo-ipmi-server-dedicati/)
+[Utilizzare l’IPMI sui server dedicati](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

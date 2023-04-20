@@ -1,9 +1,6 @@
 ---
 title: Installation Ihrer Website mit 1-Klick-Modulen
 excerpt: So installieren Sie Ihre Website mithilfe unserer 1-Klick-Module
-slug: webhosting_installation_von_webhosting-modulen
-section: CMS
-order: 01
 updated: 2023-01-31
 ---
 
@@ -23,8 +20,8 @@ updated: 2023-01-31
 
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie verwenden eine [kompatible PHP-Version](https://docs.ovh.com/de/hosting/konfiguration_von_php_fur_ein_ovh_webhosting_2014/) auf Ihrem Webhosting. 
-- Ihre [.ovhconfig-Datei ist korrekt konfiguriert](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/).
+- Sie verwenden eine [kompatible PHP-Version](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014) auf Ihrem Webhosting. 
+- Ihre [.ovhconfig-Datei ist korrekt konfiguriert](/pages/web/hosting/ovhconfig_configuration).
 - Sie haben ein neues, leeres Verzeichnis erstellt, um Ihr Modul darin zu installieren.
 - Der Domainname (und gegebenenfalls die Subdomain) Ihrer Website ist als Multisite registriert.
 
@@ -58,7 +55,7 @@ Im angezeigten Fenster wählen Sie zunächst das gewünschte CMS und anschließe
 
 Wenn Sie die gewünschte Domain nicht in der Liste finden, klicken Sie auf den Tab `Multisite`{.action}, um sie hinzuzufügen, und versuchen Sie anschließend erneut, ein Modul hinzuzufügen.
 
-Für weitere Informationen, lesen Sie die Anleitung "[Mehrere Websites auf einem Webhosting hosten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}".
+Für weitere Informationen, lesen Sie die Anleitung "[Mehrere Websites auf einem Webhosting hosten](/pages/web/hosting/multisites_configure_multisite){.external}".
 
 Nachdem Sie die gewünschte Domain ausgewählt haben, haben Sie die Wahl zwischen einer einfachen oder der erweiterten Installation „im Experten-Modus“:
 
@@ -111,7 +108,7 @@ Geben Sie nun die folgenden Informationen zur Konfiguration des Moduls ein:
 - *Name oder E-Mail-Adresse des Administrators:* Die Kennung, mit der Sie sich zur Verwaltung Ihres CMS einloggen.
 - *Passwort:* Das Passwort, mit dem Sie sich im Verwaltungsinterface Ihres CMS einloggen.
 - *Domain:* Der Domainname, mit dem Ihre Website erreicht werden soll.
-Für weitere Informationen lesen Sie die Anleitung [Mehrere Websites auf einem Webhosting verwalten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}.
+Für weitere Informationen lesen Sie die Anleitung [Mehrere Websites auf einem Webhosting verwalten](/pages/web/hosting/multisites_configure_multisite){.external}.
 - *Sprache:* Die Sprache, in der das CMS installiert wird.
 - *Installationspfad:* Wird bei der Domain-Auswahl automatisch angegeben. Sie haben die Möglichkeit, den Pfad durch die Angabe von Unterverzeichnissen zu ergänzen.
 
@@ -147,15 +144,15 @@ Wenn Sie Hilfe zu den Funktionen Ihrer Website benötigen, gehen Sie auf die off
 
 [Finden Sie das richtige CMS für Ihre Website](https://www.ovhcloud.com/de/web-hosting/uc-cms-comparison/){.external}
 
-[Mehrere Websites auf einem Webhosting hosten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}
+[Mehrere Websites auf einem Webhosting hosten](/pages/web/hosting/multisites_configure_multisite){.external}
 
-[Verwaltung einer Datenbank in Ihrem Webhosting](https://docs.ovh.com/de/hosting/verwaltung-einer-datenbank-in-ihrem-webhosting/){.external}
+[Verwaltung einer Datenbank in Ihrem Webhosting](/pages/web/hosting/sql_create_database){.external}
 
 Entdecken Sie unsere [Web Cloud Databases Angebote](https://www.ovh.de/cloud/cloud-databases/){.external}
 
-[CMS verwalten](https://docs.ovh.com/de/hosting/1-click-module-management/)
+[CMS verwalten](/pages/web/hosting/cms_manage_1_click_module)
 
-[Ihr CMS deinstallieren](https://docs.ovh.com/de/hosting/1-click-module-management/#schritt-3-ihr-modul-loschen)
+[Ihr CMS deinstallieren](/pages/web/hosting/cms_manage_1_click_module#schritt-3-ihr-modul-loschen)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

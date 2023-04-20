@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Installazione e configurazione di Cecil, un generatore di siti statici (SSG) in PHP"
-slug: install-configure-cecil
 excerpt: "Scopri come Cecil ti permette di creare il tuo sito statico con l'aiuto di un motore template moderno (Jamstack)"
-section: Tutorial
-order: 030
 updated: 2023-01-17
 ---
 
@@ -25,15 +22,15 @@ Un sito Web composto principalmente da pagine Web statiche garantisce tempi di c
 
 - Disporre di una [offerta di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) con accesso SSH Questo accesso permette di installare online una o più soluzioni alternative a quelle proposte di default nelle nostre soluzioni di hosting Web.
 - Aver familiarità con l'inserimento da riga di comando
-- Essere in grado di trasferire file in FTP con un cliente come [FileZilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/)
-- Impostare la tua zona DNS per far puntare il tuo dominio (o sottodominio) verso il tuo hosting Web condiviso. Questa operazione è utile se vuoi ospitare più siti in [multisiti](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/) sul tuo hosting web condiviso.
+- Essere in grado di trasferire file in FTP con un cliente come [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide)
+- Impostare la tua zona DNS per far puntare il tuo dominio (o sottodominio) verso il tuo hosting Web condiviso. Questa operazione è utile se vuoi ospitare più siti in [multisiti](/pages/web/hosting/multisites_configure_multisite) sul tuo hosting web condiviso.
 - Installare preventivamente [Comporre](https://getcomposer.org/){.external} con il file `composer.phar` alla radice del tuo hosting Web condiviso o nella cartella di destinazione del tuo dominio.
 
 ## Procedura
 
 I [hosting web condivisi](https://www.ovhcloud.com/it/web-hosting/) permettono di dichiarare domini o sottodomini in multisiti. Per implementare il tuo sito Web con **Cecil** è necessario un dominio o un sottodominio.
 
-Per aiutarti a dichiarare un dominio o un sottodominio su un multisito sul tuo hosting, consulta la nostra pagina "[Condivisione dell'hosting tra più siti](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/)".
+Per aiutarti a dichiarare un dominio o un sottodominio su un multisito sul tuo hosting, consulta la nostra pagina "[Condivisione dell'hosting tra più siti](/pages/web/hosting/multisites_configure_multisite)".
 
 ### Crea la directory in cui saranno presenti i tuoi file
 
@@ -96,7 +93,7 @@ Puoi visualizzare il risultato accedendo al tuo dominio:
 
 Per visualizzare il risultato del tuo sito sul browser, modifica il puntamento del tuo dominio o sottodominio nella directory `_site` creata precedentemente al momento dell'installazione di **Cecil**.
 
-Se il tuo dominio o sottodominio è ospitato in OVHcloud, consulta le nostre guide relative alla [configurazione DNS](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/) e all'installazione di un [multisito sul tuo hosting web](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/).
+Se il tuo dominio o sottodominio è ospitato in OVHcloud, consulta le nostre guide relative alla [configurazione DNS](/pages/web/domains/dns_zone_edit) e all'installazione di un [multisito sul tuo hosting web](/pages/web/hosting/multisites_configure_multisite).
 
 ### Configura il tuo sito
 
@@ -220,4 +217,4 @@ Il [sito ufficiale dell'applicazione Cecil](https://cecil.app/){.external}
 
 Uno [guida al formato Markdown](https://www.markdownguide.org/){.external}
 
-Consulta la guida sull'utilizzo di FileZilla (https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/)
+Consulta la guida sull'utilizzo di FileZilla (/pages/web/hosting/ftp_filezilla_user_guide)

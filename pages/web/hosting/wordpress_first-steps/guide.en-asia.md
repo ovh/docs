@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Getting started with WordPress"
-slug: wordpress-first-steps
 excerpt: "Find out how to create a website with the WordPress CMS"
-section: Tutorials
-order: 020
 updated: 2023-02-17
 ---
 
@@ -26,12 +23,12 @@ This tutorial will help you create your first content, organise it, put it onlin
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/) that contains at least one database.
 - A [domain name](https://www.ovhcloud.com/asia/domains/)
-- [WordPress installed](https://docs.ovh.com/asia/en/hosting/web_hosting_web_hosting_modules/) on your web hosting plan
+- [WordPress installed](/pages/web/hosting/cms_install_1_click_modules) on your web hosting plan
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 ## Instructions
 
-If one is not already installed, [add an SSL certificate](https://docs.ovh.com/asia/en/hosting/activate-https-website-ssl/#step-1-activate-the-ssl-certificate-on-the-web-hosting-plan) for the domain name associated with your website before you continue.
+If one is not already installed, [add an SSL certificate](/pages/web/hosting/ssl-activate-https-website#step-1-activate-the-ssl-certificate-on-the-web-hosting-plan) for the domain name associated with your website before you continue.
 
 When you installed your 1-click CMS, you received an email containing the information you need to follow this tutorial:
 

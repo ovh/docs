@@ -1,10 +1,7 @@
 ---
 title: 'Zabezpieczenie domeny za pomocą DNSSEC'
 excerpt: 'Dowiedz się, jak chronić domeny przed atakiem DNS (Cache Poisoning) za pomocą DNSSEC'
-slug: jak_skonfigurowac_strefe_dnssec_dla_domeny
 legacy_guide_number: g609
-section: Bezpieczeństwo
-order: 01
 updated: 2022-10-19
 ---
 

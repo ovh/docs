@@ -1,9 +1,6 @@
 ---
 title: 'Aktywacja zapory systemowej'
 excerpt: 'Hosting www: Aktywacja zapory systemowej'
-slug: hosting_www_aktywacja_zapory_systemowej
-section: 'Optymalizacja strony WWW'
-order: 04
 updated: 2021-04-26
 ---
 

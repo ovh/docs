@@ -1,8 +1,6 @@
 ---
 title: Konfiguration der Linux Firewall mit iptables
 excerpt: Erfahren Sie hier, wie Sie einen Server mit iptables sichern
-slug: vps-firewall-iptables
-section: Tutorial
 updated: 2023-02-27
 ---
 
@@ -43,7 +41,7 @@ Firewalls implementieren Regeln, die erlaubten und gesperrten Traffic verwalten.
 
 Die Entwickler von Distributionen und Betriebssystemen bieten häufig Updates für Softwarepakete an, meist aus Sicherheitsgründen. **Deswegen ist es für die Sicherheit Ihres Servers äußerst wichtig, Ihre Distribution oder Ihr Betriebssystem immer auf dem neuesten Stand zu halten.**
 
-Weitere Informationen finden Sie in unserer [Anleitung zur Sicherung eines VPS](https://docs.ovh.com/de/vps/vps-sicherheit/).
+Weitere Informationen finden Sie in unserer [Anleitung zur Sicherung eines VPS](/pages/cloud/vps/secure_your_vps).
 
 ### Schritt 2: Die iptables Firewall mit Ubuntu installieren
 
@@ -137,7 +135,7 @@ Die Optionen funktionieren wie folgt:
 > [!warning]
 > Wenn Sie den Zugriff auf Ihren Server verlieren, können Sie immer noch das KVM/IPMI Tool verwenden, um Ihre Konfiguration zu ändern oder Ihre Regeln zu löschen.
 >
-> Weitere Informationen zum Zugriff auf dieses Tool finden Sie in [dieser Anleitung](https://docs.ovh.com/de/vps/verwendung_von_kvm_fur_vps/).
+> Weitere Informationen zum Zugriff auf dieses Tool finden Sie in [dieser Anleitung](/pages/cloud/vps/using_kvm_for_vps).
 > 
 
 ### Schritt 6: Den Traffic nach IP-Adresse kontrollieren

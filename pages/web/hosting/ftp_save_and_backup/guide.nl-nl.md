@@ -1,10 +1,7 @@
 ---
 deprecated: true
 title: 'De opslagruimte van uw webhosting herstellen'
-slug: herstel-ftp-filezilla-control-panel
 excerpt: 'Leer hoe u een bestand of de volledige inhoud van uw opslagruimte van uw webhosting kunt herstellen.'
-section: 'FTP en SSH'
-order: 06
 updated: 2023-01-12
 ---
 
@@ -42,9 +39,9 @@ U moet ook beslissen welke herstelmethode u zult gebruiken:
 
 Als u klaar bent om dit te doen, lees dan het gedeelte van deze handleiding dat relevant is voor de door u gekozen herstelmethode.
 
-- [Herstel opslagruimte vanuit het Control Panel.](https://docs.ovh.com/nl/hosting/herstel-ftp-filezilla-control-panel/#uw-opslagruimte-herstellen-vanaf-het-control-panel){.external}
+- [Herstel opslagruimte vanuit het Control Panel.](/pages/web/hosting/ftp_save_and_backup#uw-opslagruimte-herstellen-vanaf-het-control-panel){.external}
 
-- [Herstel een bestand via een software of interface.](https://docs.ovh.com/nl/hosting/herstel-ftp-filezilla-control-panel/#herstel-een-bestand-via-een-software-of-een-interface){.external}
+- [Herstel een bestand via een software of interface.](/pages/web/hosting/ftp_save_and_backup#herstel-een-bestand-via-een-software-of-een-interface){.external}
 
 ### Uw opslagruimte herstellen vanaf het Control Panel
 
@@ -83,9 +80,9 @@ De procedure bestaat uit verschillende stappen. Zorg ervoor dat u het wachtwoord
 
 Stel vast welke software of interface u gaat gebruiken om verbinding te maken met de backup van uw opslag. Als u het al weet, gaat u meteen naar stap 2. Anders raden we aan een van de volgende drie apps te gebruiken:
 
-- **FileZilla**: u moet deze software eerst van de website van de uitgever downloaden. U kunt leren hoe u het kunt gebruiken door onze handleiding over het [Gebruik van FileZilla](https://docs.ovh.com/nl/hosting/webhosting_filezilla_gebruikershandleiding/){.external} te lezen. Let op: het vervangt echter niet de officiële documentatie van de uitgever.
+- **FileZilla**: u moet deze software eerst van de website van de uitgever downloaden. U kunt leren hoe u het kunt gebruiken door onze handleiding over het [Gebruik van FileZilla](/pages/web/hosting/ftp_filezilla_user_guide){.external} te lezen. Let op: het vervangt echter niet de officiële documentatie van de uitgever.
 
-- **Cyberduck**: u moet deze software eerst downloaden van de website van de uitgever. U kunt leren hoe u het kunt gebruiken door onze handleiding over het [Gebruik van Cyberduck](https://docs.ovh.com/nl/hosting/webhosting_handleiding_voor_het_gebruik_van_cyberduck_mac/){.external} te lezen. Let op: het vervangt echter niet de officiële documentatie van de uitgever.
+- **Cyberduck**: u moet deze software eerst downloaden van de website van de uitgever. U kunt leren hoe u het kunt gebruiken door onze handleiding over het [Gebruik van Cyberduck](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac){.external} te lezen. Let op: het vervangt echter niet de officiële documentatie van de uitgever.
 
 - **FTP Explorer**: u moet deze vooraf openen via uw OVH Control Panel. Zodra u ingelogd bent klikt u op Webhosting in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Ga ten slotte naar het tabblad `FTP-SSH`{.action} en klik op de knop `FTP Explorer`{.action}.
 
@@ -131,8 +128,8 @@ Wanneer u eenmaal bent ingelogd, kunt u de gewenste bestanden herstellen. Om dit
 
 ## Verder
 
-[Gebruik van FileZilla bij uw webhosting](https://docs.ovh.com/nl/hosting/webhosting_filezilla_gebruikershandleiding/){.external}
+[Gebruik van FileZilla bij uw webhosting](/pages/web/hosting/ftp_filezilla_user_guide){.external}
 
-[Gebruik van Cyberduck bij uw webhosting](https://docs.ovh.com/nl/hosting/webhosting_handleiding_voor_het_gebruik_van_cyberduck_mac/){.external}
+[Gebruik van Cyberduck bij uw webhosting](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac){.external}
 
 Ga in gesprek met andere communityleden op <https://community.ovh.com/en/>.

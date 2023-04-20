@@ -1,8 +1,6 @@
 ---
 title: Installer WordPress sur une instance
 excerpt: Découvrez comment utiliser une instance Public Cloud pour héberger des sites WordPress
-slug: installer-wordpress-sur-une-instance
-section: Tutoriels
 updated: 2021-10-15
 ---
 
@@ -19,7 +17,7 @@ Ce tutoriel fournit les étapes de base pour une installation manuelle de WordPr
 ## Prérequis
 
 - Un projet [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud
-- Avoir une [instance Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/) avec Debian ou Ubuntu installé
+- Avoir une [instance Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps) avec Debian ou Ubuntu installé
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Disposer d’un accès administratif (root) à votre instance via SSH
 
@@ -32,7 +30,7 @@ Ce tutoriel fournit les étapes de base pour une installation manuelle de WordPr
 
 Afin d'accéder à votre installation via un nom de domaine, vous devez relier celui-ci à votre instance. Pour ce faire, vous devez éditer la zone DNS accessible depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), à condition que OVHcloud soit votre bureau d’enregistrement **et** que le nom de domaine utilise les serveurs DNS OVHcloud.
 
-Consultez le guide [Éditer sa zone DNS](https://docs.ovh.com/ca/fr/domains/editer-ma-zone-dns/) pour en savoir plus. Si le nom de domaine est actuellement utilisé, ne configurez les DNS qu'après l'installation du nouveau WordPress et le démarrage de votre site web.
+Consultez le guide [Éditer sa zone DNS](/pages/web/domains/dns_zone_edit) pour en savoir plus. Si le nom de domaine est actuellement utilisé, ne configurez les DNS qu'après l'installation du nouveau WordPress et le démarrage de votre site web.
 
 ### Étape 1 : installation du serveur web (LAMP)
 
@@ -216,7 +214,7 @@ Le serveur web est maintenant prêt pour la configuration initiale de WordPress.
 
 ### Étape 5 : configurer WordPress
 
-Ouvrez un navigateur Web et connectez-vous au site WordPress en saisissant l'adresse IP de votre instance (ou le nom de domaine si vous en avez déjà [relié un à l'instance](https://docs.ovh.com/ca/fr/domains/editer-ma-zone-dns/)). Choisissez une langue sur la première page.
+Ouvrez un navigateur Web et connectez-vous au site WordPress en saisissant l'adresse IP de votre instance (ou le nom de domaine si vous en avez déjà [relié un à l'instance](/pages/web/domains/dns_zone_edit)). Choisissez une langue sur la première page.
 
 Utilisez l’assistant de configuration WordPress pour donner accès à votre base de données. Renseignez les informations que vous avez [configurées précédemment](#sqlconf).
 

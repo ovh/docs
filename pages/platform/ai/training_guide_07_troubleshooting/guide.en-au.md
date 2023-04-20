@@ -1,9 +1,6 @@
 ---
 title: AI Training - Troubleshooting
-slug: training/debug-jobs
 excerpt: Tutorial about how to debug your jobs
-section: AI Training - Guides
-order: 07
 updated: 2021-10-04
 ---
 
@@ -16,7 +13,7 @@ This tutorial gives you some hints on how to debug your jobs if things go wrong.
 ## Requirements
 
 -   an **AI Training Job** you would like to start
--   the [OVHcloud AI CLI](https://docs.ovh.com/au/en/publiccloud/ai/cli/install-client) installed
+-   the [OVHcloud AI CLI](/pages/platform/ai/cli_10_howto_install_cli) installed
 
 ## Which commands and arguments can I use to debug?
 

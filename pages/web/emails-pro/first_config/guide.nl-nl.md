@@ -1,10 +1,7 @@
 ---
 deprecated: true
 title: 'Configuratie van uw E-mail Pro'
-slug: eerste-configuratie
 excerpt: 'Ontdek hoe u uw E-mail Pro kunt configureren'
-section: Algemeen
-order: 1
 updated: 2020-04-09
 ---
 

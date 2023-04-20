@@ -1,8 +1,5 @@
 ---
 title: FAQ Public Cloud OVHcloud
-slug: public-cloud-faq
-section: Información general
-order: 01
 updated: 2022-12-01
 ---
 
@@ -18,25 +15,25 @@ updated: 2022-12-01
 
 La conexión se realiza gracias a un par de llaves SSH que deberá configurar al crear la instancia de Public Cloud.
 
-Para más información, consulte la guía [Crear y conectarse a una primera instancia de Public Cloud](https://docs.ovh.com/es/public-cloud/public-cloud-primeros-pasos/).
+Para más información, consulte la guía [Crear y conectarse a una primera instancia de Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps).
 
 ### He perdido o quiero cambiar la llave SSH, ¿cómo puedo hacerlo?
 
 Si no puede conectarse debido a la pérdida de su clave privada, deberá cambiar la clave pública de su instancia pasando esta a modo de rescate.
 
-Por favor, consulte la guía [Modificar su llave SSH en caso de pérdida](https://docs.ovh.com/es/public-cloud/modificar_su_llave_ssh_en_caso_de_perdida/).
+Por favor, consulte la guía [Modificar su llave SSH en caso de pérdida](/pages/platform/public-cloud/replacing_lost_ssh_key).
 
 ### ¿Cuáles son las posibilidades de backup de mi instancia?
 
 En cualquier momento puede crear una copia de seguridad de una instancia desde el área de cliente de OVHcloud. con el que podrá restaurar su instancia con una configuración anterior o volver a crearla.
 
-Para más información, consulte la guía [Guardar una copia de seguridad de una instancia](https://docs.ovh.com/es/public-cloud/guardar_copia_de_seguridad_de_una_instancia/).
+Para más información, consulte la guía [Guardar una copia de seguridad de una instancia](/pages/platform/public-cloud/save_an_instance).
 
 ## ¿Cómo crear y gestionar usuarios de OpenStack?  
 
 Para poder utilizar las API Horizon o OpenStack, es necesario crear previamente un usuario OpenStack. Puede crear un número ilimitado.
 
-Para más información, consulte la guía [Crear y eliminar un usuario de OpenStack](https://docs.ovh.com/es/public-cloud/crear-y-eliminar-un-usuario-de-openstack/).
+Para más información, consulte la guía [Crear y eliminar un usuario de OpenStack](/pages/platform/public-cloud/create_and_delete_a_user).
 
 ## ¿Cómo funciona la facturación de Public Cloud?
 
@@ -44,7 +41,7 @@ El consumo realizado cada mes se factura entre los días 1 y 5 del mes siguiente
 Tenga en cuenta que toda instancia será facturada mientras no sea eliminada del área de cliente de OVHcloud.
 Puede consultar el consumo en el historial de uso de su proyecto. También puede elegir una facturación diferenciada para cada proyecto de Public Cloud, lo que permite una posible refacturación dentro de su empresa.
 
-Para pasar de un modo de facturación a otro, consulte nuestra guía [Cambiar de facturación por horas a mensual](https://docs.ovh.com/es/public-cloud/cambiar-modalidad-facturacion-public-cloud/).
+Para pasar de un modo de facturación a otro, consulte nuestra guía [Cambiar de facturación por horas a mensual](/pages/platform/public-cloud/changing_hourly_monthly_billing).
 
 ## ¿Cómo puedo escalar mis instancias si necesito más o menos recursos?
 
@@ -59,7 +56,7 @@ Sí, las imágenes cloud que ofrece OVHcloud incluyen los scripts cloud-init que
 
 En cualquier momento puede crear backups de instancias de sus servidores sin límites. Estas copias de seguridad se almacenan y se facturan como las imágenes en "Private Image". A través de las API OpenStack, podrá descargarlas fuera de la infraestructura de OVHcloud o en otros proyectos.
 
-Para más información, consulte la guía [Guardar una copia de seguridad de una instancia](https://docs.ovh.com/es/public-cloud/guardar_copia_de_seguridad_de_una_instancia/).
+Para más información, consulte la guía [Guardar una copia de seguridad de una instancia](/pages/platform/public-cloud/save_an_instance).
 
 ### ¿Puedo aumentar dinámicamente el tamaño de un volumen mientras sigo escribiendo en el disco?
 
@@ -73,7 +70,7 @@ Puede asociar hasta 25 volúmenes adicionales por instancia.
 
 OVHcloud protege toda su infraestructura gracias a su solución anti-DDoS exclusiva. Además, puede añadir los grupos de seguridad OpenStack: este equivalente de un cortafuegos se gestiona directamente a nivel de la infraestructura de OpenStack, antes de sus instancias.
 
-Le invitamos a consultar la guía [Configurar un grupo de seguridad](https://docs.ovh.com/es/public-cloud/configure-security-group-horizon).
+Le invitamos a consultar la guía [Configurar un grupo de seguridad](/pages/platform/public-cloud/setup_security_group).
 
 Estos sistemas de protección, combinados con los que usted puede implementar en sus servidores, le permitirán optimizar la fiabilidad de su despliegue.
 
@@ -82,13 +79,13 @@ Estos sistemas de protección, combinados con los que usted puede implementar en
 Public Cloud integra una solución SDN (software-defined network). que permite crear redes privadas dinámicamente y conectarlas a las instancias desde el área de cliente o a través de la API.
 Estas redes privadas se basan en la tecnología vRack de OVHcloud, compartida con otros servicios de la empresa, como Private Cloud o servidores dedicados. de esta forma, la solución ofrece la posibilidad de comunicar todos sus elementos de infraestructura con OVHcloud de forma aislada y segura.
 
-Para más información, consulte la guía [Configuración del vRack Public Cloud](https://docs.ovh.com/es/publiccloud/network-services/public-cloud-vrack/).
+Para más información, consulte la guía [Configuración del vRack Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack).
 
 La red privada dispone por defecto de las protecciones de red nativas de OpenStack. Estas incluyen diferentes mecanismos, como la protección contra el spoofing de IP.<br>
 En cuanto a las instancias, esto puede traducirse en bloques de paquetes de red según el uso (pfSense, router, protocolo CARP, etc.).
 
 Si lo necesita, deberá desactivar la función de `Port Security` en el puerto o la red privada.
-Para más información, consulte la guía [gestión de las reglas de firewall y port security en las redes que utilizan OpenStack CLI](https://docs.ovh.com/es/public-cloud/firewall_security_pci/).
+Para más información, consulte la guía [gestión de las reglas de firewall y port security en las redes que utilizan OpenStack CLI](/pages/platform/public-cloud/security_group_private_network).
 
 También encontrará más información sobre [documentación de OpenStack](https://docs.openstack.org/developer/dragonflow/specs/mac_spoofing.html) o sobre [superuser.openstack.org](https://superuser.openstack.org/articles/managing-port-level-security-openstack/).
 
@@ -96,7 +93,7 @@ También encontrará más información sobre [documentación de OpenStack](https
 
 Las IP públicas se asignan automáticamente a las instancias, por lo que no pueden modificarse. Para controlar la IP pública de una instancia, le recomendamos que utilice una Additional IP. De este modo, cualquiera que sea la dirección pública que se haya asignado automáticamente a la instancia, puede añadir una o varias Additional IP a su instancia.
 
-Para más información, consulte la guía [Comprar una Additional IP](https://docs.ovh.com/es/publiccloud/network-services/buy-additional-ip/).
+Para más información, consulte la guía [Comprar una Additional IP](/pages/platform/network-services/additional-ip-buy).
 
 ### ¿Cómo comprobar si mi instancia es vulnerable a la fallo MDS?
 
@@ -108,7 +105,7 @@ cat /sys/devices/system/cpu/vulnerabilities/mds
 
 Si el resultado es `Vulnerable`, no tenga miedo, el hipervisor subyacente te protege.
 
-No obstante, es posible mitigar este fallo directamente en su instancia realizando un "hard reboot" de su instancia, bien [a través del área de cliente de OVHcloud](https://docs.ovh.com/es/public-cloud/empezar-con-una-instancia-public-cloud/), o bien con un comando como este:
+No obstante, es posible mitigar este fallo directamente en su instancia realizando un "hard reboot" de su instancia, bien [a través del área de cliente de OVHcloud](/pages/platform/public-cloud/first_steps_with_public_cloud_instance), o bien con un comando como este:
 
 ```bash
 openstack server reboot --hard $serverID

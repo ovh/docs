@@ -1,10 +1,8 @@
 ---
 deprecated: true
 title: 'Gebruik van de OVH Network plugin'
-slug: plugin-ovh-network
 excerpt: 'Ontdek hoe u de OVH Network plugin op uw Private Cloud kunt gebruiken'
 legacy_guide_number: '7766560'
-section: 'OVH functies'
 updated: 2020-07-01
 ---
 

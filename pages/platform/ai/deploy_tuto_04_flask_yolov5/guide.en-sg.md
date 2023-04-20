@@ -1,9 +1,6 @@
 ---
 title: AI Deploy - Tutorial - Deploy a web service for YOLOv5 using Flask
-slug: deploy/web-service-yolov5
 excerpt: How to deploy a web service for YOLOv5 using your own weights with Flask
-section: AI Deploy - Tutorials
-order: 04
 updated: 2023-04-04
 ---
 
@@ -20,13 +17,13 @@ The purpose of this tutorial is to show how to deploy a web service for YOLOv5 u
 
 In order to do this, you will use [Flask](https://flask.palletsprojects.com/en/2.0.x/), an open-source micro framework for web development in Python. You will also learn how to build and use a custom Docker image for a Flask application.
 
-For more information on how to train YOLOv5 on a custom dataset, refer to the following [documentation](https://docs.ovh.com/sg/en/publiccloud/ai/notebooks/yolov5-example/).
+For more information on how to train YOLOv5 on a custom dataset, refer to the following [documentation](/pages/platform/ai/notebook_tuto_04_yolov5).
 
 ## Requirements
 
 -   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 -   an AI Deploy project created inside a Public Cloud project
--   a [user for AI Deploy](https://docs.ovh.com/sg/en/publiccloud/ai/users)
+-   a [user for AI Deploy](/pages/platform/ai/gi_01_manage_users)
 -   [Docker](https://www.docker.com/get-started) installed on your local computer
 -   some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 -   your weights obtained from training a YOLOv5 model on your dataset (refer to the *"Export trained weights for future inference"* part of the [notebook for YOLOv5](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/object-detection/miniconda/yolov5/notebook_object_detection_yolov5_coco.ipynb)
@@ -251,7 +248,7 @@ Once started, your application should be available on `http://localhost:5000`.
 
 > [!warning]
 >
-> The shared registry of AI Deploy should only be used for testing purpose. Please consider attaching your own Docker registry. More information about this can be found [here](https://docs.ovh.com/sg/en/publiccloud/ai/training/add-private-registry).
+> The shared registry of AI Deploy should only be used for testing purpose. Please consider attaching your own Docker registry. More information about this can be found [here](/pages/platform/ai/training_guide_05_howto_add_registry).
 
 Find the adress of your shared registry by launching this command:
 
@@ -294,8 +291,8 @@ ovhai app run --default-http-port 5000 --cpu 4 <shared-registry-address>/flask-y
 
 ## Go further
 
-- You can imagine deploying a **Flask** app in order to to classify the feelings in a text. Refer to this [tutorial](https://docs.ovh.com/sg/en/publiccloud/ai/deploy/tuto-flask-hugging-face-sentiment-analysis/).
-- Another way to create an AI Deploy app is to use **Streamlit**! [Here it is](https://docs.ovh.com/sg/en/publiccloud/ai/deploy/build-use-streamlit-image/).
+- You can imagine deploying a **Flask** app in order to to classify the feelings in a text. Refer to this [tutorial](/pages/platform/ai/deploy_tuto_06_flask_hugging_face).
+- Another way to create an AI Deploy app is to use **Streamlit**! [Here it is](/pages/platform/ai/deploy_tuto_01_streamlit).
 
 ## Feedback
 

@@ -1,9 +1,6 @@
 ---
 title: ¿Qué hacer en caso de página del « Index of » ?
 excerpt: Descubra cómo poner su sitio web de nuevo en línea cuando muestre una página « Index of »
-slug: diagnostico-index-of
-section: Diagnóstico
-order: 07
 updated: 2022-05-10
 ---
 
@@ -37,7 +34,7 @@ Si una configuración `Multisitio` no está bien configurada, es posible que el 
 
 ### Entender el origen de la página "Index of"
 
-El dominio está conectado a través de la sección `Multisitio`{.action} del alojamiento a un directorio (una `Carpeta raíz`) del [servidor FTP](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/).
+El dominio está conectado a través de la sección `Multisitio`{.action} del alojamiento a un directorio (una `Carpeta raíz`) del [servidor FTP](/pages/web/hosting/ftp_connection).
 
 La página **Index of** indica que el directorio en cuestión no contiene ningún archivo **index.php** o **index.html**. Un archivo de este tipo constituye el "*punto de entrada*" del sitio web.
 
@@ -45,13 +42,13 @@ Para mostrar su sitio web, deberá asociar su dominio a la `Carpeta raíz`{.acti
 
 > [!primary]
 >
-> Si desea asociar temporalmente su dominio a una `Carpeta raíz` que no contenga un archivo **index.php** o **index.html**, puede prohibir la visualización de la lista de carpetas de su sitio web siguiendo esta [guía](https://docs.ovh.com/gb/en/hosting/what_else_can_you_do_with_the_htaccess_file/#prevent-the-content-of-a-directory-from-being-listed). También puede proteger el acceso a sus carpetas con una [contraseña](https://docs.ovh.com/us/es/hosting/compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion/).
+> Si desea asociar temporalmente su dominio a una `Carpeta raíz` que no contenga un archivo **index.php** o **index.html**, puede prohibir la visualización de la lista de carpetas de su sitio web siguiendo esta [guía](/pages/web/hosting/htaccess_what_else_can_you_do#prevent-the-content-of-a-directory-from-being-listed). También puede proteger el acceso a sus carpetas con una [contraseña](/pages/web/hosting/htaccess_protect_directory_by_password).
 >
 > Si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nuestro equipo de soporte no podrá ofrecerle soporte para modificar la programación interna de su sitio web.
 
 ### Solucionar el caso más común de una página "Index of"
 
-Ha importado los archivos de su sitio **mydomain.ovh** a la carpeta `www` de su alojamiento por [FTP](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/). Su dominio no está asociado a esta carpeta en la columna `Carpeta raíz` de su `Multisitio`{.action}.
+Ha importado los archivos de su sitio **mydomain.ovh** a la carpeta `www` de su alojamiento por [FTP](/pages/web/hosting/ftp_connection). Su dominio no está asociado a esta carpeta en la columna `Carpeta raíz` de su `Multisitio`{.action}.
 
 ![index_of_multisite](images/index_of_multisite.png){.thumbnail}
 
@@ -69,7 +66,7 @@ En la nueva ventana:
 
 > [!primary]
 >
-> Usar el directorio `www` como `Carpeta raíz` no es obligatorio. Puede instalar su sitio web en otra carpeta de su [servidor FTP](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/).
+> Usar el directorio `www` como `Carpeta raíz` no es obligatorio. Puede instalar su sitio web en otra carpeta de su [servidor FTP](/pages/web/hosting/ftp_connection).
 >
 
 En la siguiente ventana, haga clic en `Aceptar`{.action}.
@@ -84,11 +81,11 @@ Compruebe que el sitio web se muestre correctamente. En caso contrario, reinicie
 
 ## Más información <a name="gofurther"></a>
 
-[Resolver los errores más frecuentes asociados a los módulos en 1 clic](https://docs.ovh.com/us/es/hosting/errores-frecuentes-modulos-en-1-clic/)
+[Resolver los errores más frecuentes asociados a los módulos en 1 clic](/pages/web/hosting/diagnostic_errors_module1clic)
 
-[Resolver el error "Sitio no instalado"](https://docs.ovh.com/us/es/hosting/web_hosting_error_sitio_no_instalado/)
+[Resolver el error "Sitio no instalado"](/pages/web/hosting/multisites_website_not_installed)
 
-[Alojar varios sitios web en un mismo hosting](https://docs.ovh.com/us/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/)
+[Alojar varios sitios web en un mismo hosting](/pages/web/hosting/multisites_configure_multisite)
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, consulte nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es/support-levels/).
 

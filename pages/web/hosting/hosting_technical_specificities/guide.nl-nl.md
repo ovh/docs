@@ -2,7 +2,6 @@
 deprecated: true
 title: 'Hosting: technische kenmerken van de webhosting'
 excerpt: 'Hosting: technische kenmerken met betrekking tot webhosting'
-slug: hosting_technische_kenmerken_van_de_webhosting
 legacy_guide_number: g1463
 updated: 2022-11-18
 ---

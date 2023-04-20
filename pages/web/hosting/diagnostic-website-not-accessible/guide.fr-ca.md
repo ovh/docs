@@ -1,9 +1,6 @@
 ---
 title: "Que faire si mon site est inaccessible ?"
-slug: erreur-serveur-inaccessible
 excerpt: "Diagnostiquez les causes de l'inaccessibilité de votre site"
-section: Diagnostic
-order: 01
 updated: 2022-08-02
 ---
 
@@ -31,9 +28,9 @@ Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'ina
 
 ## Prérequis
 
-- Avoir la gestion des serveurs et de la [zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) de votre domaine
+- Avoir la gestion des serveurs et de la [zone DNS](/pages/web/domains/dns_zone_edit#comprendre-la-notion-de-dns) de votre domaine
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
-- Être à jour dans les [paiements](https://docs.ovh.com/ca/fr/billing/gerer-factures-ovh/#pay-bills) et [renouvellements](https://docs.ovh.com/ca/fr/billing/renouvellement-automatique-ovh/#renewal-management) des services liés (nom de domaine et hébergement web)
+- Être à jour dans les [paiements](/pages/account/billing/invoice_management#pay-bills) et [renouvellements](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) des services liés (nom de domaine et hébergement web)
 
 ## En pratique
 
@@ -44,7 +41,7 @@ Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'ina
 > Le renouvellement de vos offres est sous votre entière responsabilité.<br>
 > OVHcloud, en tant qu'hébergeur, a l'obligation de supprimer définitivement les services (domaines, hébergements, e-mails, etc.) qui n'ont pas été renouvelés à temps, ainsi que l'ensemble des données qu'ils contiennent.
 >
-> De ce fait, nous vous recommandons fortement d'activer le [renouvellement automatique](../../billing/renouvellement-automatique-ovh/#en-pratique) sur l'ensemble de vos abonnements OVHcloud.
+> De ce fait, nous vous recommandons fortement d'activer le [renouvellement automatique](/pages/account/billing/how_to_use_automatic_renewal#en-pratique) sur l'ensemble de vos abonnements OVHcloud.
 >
 
 Pour vérifier la validité de l'abonnement relatif à votre nom de domaine, cliquez sur votre nom en haut à droite de votre [espace client](	https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), afin de faire apparaître le menu contextuel, puis sur `Produits et services`{.action}.
@@ -79,7 +76,7 @@ Un avertissement dans l'onglet `Zone DNS`{.action} indique que les serveurs DNS 
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
-Modifiez les serveurs DNS en suivant les instructions de [ce guide](../../domains/generalites-serveurs-dns/#modifier-les-serveurs-dns), afin qu'ils soient identiques aux cibles des entrées de type `NS` dans la `Zone DNS`{.action}.
+Modifiez les serveurs DNS en suivant les instructions de [ce guide](/pages/web/domains/dns_server_general_information#modifier-les-serveurs-dns), afin qu'ils soient identiques aux cibles des entrées de type `NS` dans la `Zone DNS`{.action}.
 
 Votre site sera de nouveau accessible sous 48 heures maximum.
 
@@ -91,7 +88,7 @@ Votre site sera de nouveau accessible sous 48 heures maximum.
 >
 > Dans cette situation, contactez l'hébergeur de votre Zone DNS, votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/) avant toute manipulation.
 >
-> Il est en effet possible que les serveurs DNS utilisés par votre nom de domaine soient fonctionnels et que le problème d'accès à votre site soit lié à une entrée manquante ou erronée dans la [zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns). Toute modification des serveurs DNS dans cette situation peut rendre vos adresses e-mails ou d'autres applications en ligne indisponibles.
+> Il est en effet possible que les serveurs DNS utilisés par votre nom de domaine soient fonctionnels et que le problème d'accès à votre site soit lié à une entrée manquante ou erronée dans la [zone DNS](/pages/web/domains/dns_zone_edit#comprendre-la-notion-de-dns). Toute modification des serveurs DNS dans cette situation peut rendre vos adresses e-mails ou d'autres applications en ligne indisponibles.
 >
 
 #### Scénario 3 : aucune entrée de type NS n'apparaît dans la zone DNS
@@ -124,7 +121,7 @@ Dans l'onglet `Informations générales`{.action}, copiez l'adresse IPV4 et/ou I
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-Puis reportez-la dans la [zone DNS](../../domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) de votre domaine, en modifiant ou créant une ou plusieurs entrées de type `A`.
+Puis reportez-la dans la [zone DNS](/pages/web/domains/dns_zone_edit#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine_1) de votre domaine, en modifiant ou créant une ou plusieurs entrées de type `A`.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
@@ -132,13 +129,13 @@ Votre site sera de nouveau accessible sous 24 heures maximum.
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
-[Résoudre l’erreur « Site non installé »](../erreur-site-non-installe/)
+[Résoudre l’erreur « Site non installé »](/pages/web/hosting/multisites_website_not_installed)
 
-[Comment diagnostiquer une page blanche ?](../comment-diagnostiquer-page-blanche/)
+[Comment diagnostiquer une page blanche ?](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
 
-[Que faire en cas d’erreur 500 Internal Server Error ?](../erreur-500-internal-server-error/)
+[Que faire en cas d’erreur 500 Internal Server Error ?](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
 
-[Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic](../erreurs-frequentes-modules-en-1-clic/)
+[Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic](/pages/web/hosting/diagnostic_errors_module1clic)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 

@@ -1,11 +1,8 @@
 ---
 title: PostgreSQL - Tutorial - Build a Strapi app connected to OVHcloud Managed PostgreSQL service
-slug: postgresql/tutorial-connect-strapi-to-managed-postgresql
 excerpt: "Find out how to build a Strapi application connected to an OVHcloud Managed PostgreSQL service"
-section: PostgreSQL - Tutorials
-order: 010
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/tutorial-connect-strapi-to-managed-postgresql/'
+    canonical: '/pages/platform/databases/postgresql_tuto_01_connect_strapi_to_managed_postgresql'
 updated: 2021-01-11
 ---
 
@@ -21,8 +18,7 @@ updated: 2021-01-11
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -46,7 +42,7 @@ In this tutorial, we are going to show you how to build a [Strapi](https://strap
 
 ## Before you begin
 
-You need to be able to order a database solution in the OVHcloud Control Panel, as explained in our [Getting started with Public Cloud Databases](https://docs.ovh.com/pl/publiccloud/databases/getting-started/) guide.
+You need to be able to order a database solution in the OVHcloud Control Panel, as explained in our [Getting started with Public Cloud Databases](/pages/platform/databases/databases_01_order_control_panel) guide.
 
 As [Strapi](https://strapi.io/){.external} is written in Javascript, packages like [nodejs](https://nodejs.org/){.external}, [nvm](https://github.com/nvm-sh/nvm){.external} and [yarn](https://classic.yarnpkg.com/en/){.external} are necessary for this tutorial.
 
@@ -74,7 +70,7 @@ In this step, choose an appropriate service plan. You will be able to upgrade th
 
 ![Choose plan](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql02.png){.thumbnail}
 
-Please visit the [capabilities page](https://docs.ovh.com/pl/publiccloud/databases/postgresql/capabilities/) for detailed information on each plan's properties.
+Please visit the [capabilities page](/pages/platform/databases/postgresql_01_capabilities) for detailed information on each plan's properties.
 
 Click `Next`{.action} to continue.
 
@@ -92,7 +88,7 @@ You can choose the node model in this step. The initial and maximum numbers of n
 
 ![Order nodes](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql04.png){.thumbnail}
 
-Please visit the [capabilities page](https://docs.ovh.com/pl/publiccloud/databases/postgresql/capabilities/) for detailed information on the hardware resources and other properties of the MySQL database installation.
+Please visit the [capabilities page](/pages/platform/databases/postgresql_01_capabilities) for detailed information on the hardware resources and other properties of the MySQL database installation.
 
 Take note of the pricing information and click `Next`{.action} to continue.
 
@@ -106,7 +102,7 @@ Click `Next`{.action} to continue.
 
 #### Step 6: Summary and confirmation
 
-The last section will show a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/).
+The last section will show a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](/pages/account/api/first-steps).
 
 ![Confirm order](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql06.png){.thumbnail}
 
@@ -126,7 +122,7 @@ Your database is ready when cluster status is "Ready", node status is green, and
 
 #### Add your IPs to the DB authorized list
 
-Following the related documentation on how to [authorize the suitable IP addresses](https://docs.ovh.com/pl/publiccloud/databases/mongodb/managing-service/#configuring-authorized-ips), add your IPs to the authorized list.
+Following the related documentation on how to [authorize the suitable IP addresses](/pages/platform/databases/mongodb_02_manage_control_panel#configuring-authorized-ips), add your IPs to the authorized list.
 
 ![Green statuses and authorized IPs setted on Database Control Panel](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql10.png){.thumbnail}
 

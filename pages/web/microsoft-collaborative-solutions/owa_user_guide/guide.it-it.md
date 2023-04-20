@@ -1,9 +1,6 @@
 ---
 title: 'Guida all’utilizzo di Outlook Web App con un account Exchange'
 excerpt: 'Scopri come gestire il tuo indirizzo Exchange utilizzando la Webmail OWA'
-slug: exchange_2016_guida_allutilizzo_di_outlook_web_app
-section: 'Utilizzo di Outlook Web App (OWA)'
-order: 01
 updated: 2021-06-25
 ---
 
@@ -122,7 +119,7 @@ Compila con le informazioni richieste a seconda dell’azione che desideri venga
 
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
-Per istruzioni più dettagliate sulla creazione di regole di posta in arrivo, fai riferimento alla nostra guida: [Creare regole di posta in arrivo in OWA](../creare-regole-posta-in-arrivo-in-owa/).
+Per istruzioni più dettagliate sulla creazione di regole di posta in arrivo, fai riferimento alla nostra guida: [Creare regole di posta in arrivo in OWA](/pages/web/microsoft-collaborative-solutions/creating-inbox-rules-in-owa).
 
 #### Blocca un mittente
 
@@ -186,7 +183,7 @@ A questo punto, compila con le informazioni richieste a seconda dell’azione ch
 
 ![useowa](images/owa_exchange_step21.png){.thumbnail}
 
-Per istruzioni più dettagliate sull’impostazione di risposte automatiche, fai riferimento alla nostra guida: [Impostare risposte automatiche con OWA](../exchange_2016_imposta_una_risposta_automatica_con_owa).
+Per istruzioni più dettagliate sull’impostazione di risposte automatiche, fai riferimento alla nostra guida: [Impostare risposte automatiche con OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies).
 
 ### Aggiungere una firma
 
@@ -200,7 +197,7 @@ Sul lato sinistro della nuova pagina, clicca su `Firma email`{.action}. Nel menu
 
 Componi la tua firma elettronica nel riquadro dell’editor. Puoi specificare se preferisci includere la firma solo nelle nuove mail o anche nelle risposte e nelle email inoltrate come impostazione predefinita. Al termine, clicca su `Salva`{.action} per confermare.
 
-Per scoprire come comporre firme automatiche utilizzando template a livello di dominio, fai riferimento alla nostra guida: [Impostare firme automatiche](../exchange_2013_firma_automatica_-_disclaimer/).
+Per scoprire come comporre firme automatiche utilizzando template a livello di dominio, fai riferimento alla nostra guida: [Impostare firme automatiche](/pages/web/microsoft-collaborative-solutions/feature_footers).
 
 ### Accedere alla sezione delle opzioni
 
@@ -221,12 +218,12 @@ La disattivazione di questi cookies può compromettere la stabilità della webma
 
 ## Per saperne di più
 
-[Impostare risposte automatiche con OWA](../exchange_2016_imposta_una_risposta_automatica_con_owa/)
+[Impostare risposte automatiche con OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies)
 
-[Condividere una cartella con la Webmail OWA](../exchange_2016_condividi_una_cartella_con_la_webmail_owa/)
+[Condividere una cartella con la Webmail OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
-[Condividere un calendario con la Webmail OWA](../exchange_2016_condividi_un_calendario_con_la_webmail_owa/)
+[Condividere un calendario con la Webmail OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Creare gruppi di contatti (mailing list)](../exchange_2013_utilizzo_dei_gruppi_mailing_list/)
+[Creare gruppi di contatti (mailing list)](/pages/web/microsoft-collaborative-solutions/feature_groups)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: Configuring the reverse DNS of a Public Cloud instance
 excerpt: Find out how to set up the reverse DNS resolution
-slug: configure-reverse-dns-instance
-section: Management via Control Panel
-order: 7
 updated: 2021-11-12
 ---
 
@@ -43,13 +40,13 @@ You can also edit the reverse path directly via the icon in the **Reverse DNS** 
 >
 If the modification does not work as expected, verify that the `A` record is correctly configured in the DNS zone of your domain name. Bear in mind that it might take up to 24 hours for DNS zone changes to be effective, in case you have only recently edited the `A` record.
 >
-If the domain name is managed by OVHcloud as its registrar and it uses OVHcloud DNS servers, you can refer to [our DNS zone guide](https://docs.ovh.com/asia/en/domains/web_hosting_how_to_edit_my_dns_zone/).
+If the domain name is managed by OVHcloud as its registrar and it uses OVHcloud DNS servers, you can refer to [our DNS zone guide](/pages/web/domains/dns_zone_edit).
 >
 
 ## Go further <a name="gofurther"></a>
 
-[First steps with Public Cloud instances](https://docs.ovh.com/asia/en/public-cloud/public-cloud-first-steps/)
+[First steps with Public Cloud instances](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Editing an OVHcloud DNS zone](https://docs.ovh.com/asia/en/domains/web_hosting_how_to_edit_my_dns_zone/)
+[Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Beveiliging van uw vSphere web-client
-slug: beveiliging-toegang-vsphere-web
 excerpt: Leer hoe u de beveiliging van uw vSphere web kunt optimaliseren
-section: Eerste stappen
 updated: 2020-06-30
 ---
 

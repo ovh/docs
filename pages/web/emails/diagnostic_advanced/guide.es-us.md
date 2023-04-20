@@ -1,10 +1,7 @@
 ---
 title: 'No se puede enviar o recibir mensajes'
 excerpt: Cómo reaccionar ante un fallo de funcionamiento en el envío o recepción de los mensajes de correo electrónico a OVHcloud
-slug: uso_avanzado_del_correo_de_ovh
 legacy_guide_number: g2117
-section: Diagnóstico
-order: 02
 updated: 2022-07-21
 ---
 
@@ -22,7 +19,7 @@ updated: 2022-07-21
 
 > [!primary]
 >
-> Si tiene otros asuntos que no se tratan en esta guía, no dude en consultar nuestras [FAQ de correo electrónico](https://docs.ovh.com/us/es/emails/correo-electronico-faq/).
+> Si tiene otros asuntos que no se tratan en esta guía, no dude en consultar nuestras [FAQ de correo electrónico](/pages/web/emails/faq-emails).
 
 ## Requisitos
 
@@ -35,7 +32,7 @@ updated: 2022-07-21
 
 Para que sus mensajes de correo funcionen, debe tener un servicio de correo activo. Si su servicio de correo está asociado a un plan de alojamiento, compruebe que este no haya expirado. Puede comprobar esta información directamente desde el área de cliente. Asimismo, el dominio también debe estar activo.
 
-En primer lugar, compruebe que está actualizado en los [pagos](https://docs.ovh.com/us/es/billing/gestionar-facturas-ovh/#pay-bills) y [renovaciones](https://docs.ovh.com/us/es/billing/renovacion-automatica-ovh/#renewal-management) de sus servicios.
+En primer lugar, compruebe que está actualizado en los [pagos](/pages/account/billing/invoice_management#pay-bills) y [renovaciones](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) de sus servicios.
 
 Compruebe que los servicios están correctamente operativos:
 
@@ -48,9 +45,9 @@ Compruebe que los servicios están correctamente operativos:
 
 Si utiliza un cliente de correo en su ordenador (Outlook, Mail de Mac, Thunderbird, etc.) o su smartphone (iOS, Android, etc.) y si experimenta un fallo de funcionamiento en el envío o en la recepción, compruebe los parámetros de configuración según su solución de correo electrónico y el programa de mensajería o aplicación utilizado.
 
-- Para un servicio **MXplan**, en la sección [Correo electrónico](https://docs.ovh.com/us/es/emails/) de nuestras guías **Web Cloud**.
+- Para un servicio **MXplan**, en la sección [Correo electrónico](/products/web-cloud-email-collaborative-solutions-mx-plan) de nuestras guías **Web Cloud**.
 
-- Para un servicio **Exchange**, en la sección [Soluciones colaborativas Microsoft](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/) de nuestras guías **Web Cloud**, compruebe la configuración de su cliente de correo en el apartado `Configuración del cliente de correo Exchange` o su smartphone en `Configuración en un smartphone o tablet compatible con Exchange`.
+- Para un servicio **Exchange**, en la sección [Soluciones colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) de nuestras guías **Web Cloud**, compruebe la configuración de su cliente de correo en el apartado `Configuración del cliente de correo Exchange` o su smartphone en `Configuración en un smartphone o tablet compatible con Exchange`.
 
 ### ¿Los mensajes de correo funcionan desde el webmail?
 
@@ -66,7 +63,7 @@ Asegúrese de tener la contraseña correcta. Si lo necesita, puede modificarlo. 
 
 Esta guía explica cómo cambiar la contraseña de una dirección de correo:
 
-- Para un servicio **MXplan**, consulte nuestra guía [Cambiar la contraseña de una dirección de correo MX Plan.](https://docs.ovh.com/us/es/emails/cambiar-contrasena-direccion-correo/)
+- Para un servicio **MXplan**, consulte nuestra guía [Cambiar la contraseña de una dirección de correo MX Plan.](/pages/web/emails/email_change_password)
 
 - Para un servicio **Exchange**, acceda a la sección `Web Cloud`{.action}, haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}. En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} y luego en `Cambiar`{.action} para cambiar la contraseña.
 
@@ -79,7 +76,7 @@ Puede consultar las distintas tareas en curso en <https://web-cloud.status-ovhcl
 
 ### ¿Es correcto apuntar el dominio a mi servicio de correo?
 
-Compruebe que el dominio apunta correctamente a los servidores de correo de OVHcloud. Para ello, es necesario configurar los registros de tipo MX en la zona DNS. <br>Para más información, consulte nuestra guía [Añadir un registro MX a la configuración del dominio](https://docs.ovh.com/us/es/domains/anadir-registro-mx-configuracion-dominio/).
+Compruebe que el dominio apunta correctamente a los servidores de correo de OVHcloud. Para ello, es necesario configurar los registros de tipo MX en la zona DNS. <br>Para más información, consulte nuestra guía [Añadir un registro MX a la configuración del dominio](/pages/web/domains/dns_zone_mx).
 
 ![DNSzone](images/DNS-CA.png){.thumbnail}
 
@@ -118,7 +115,7 @@ A continuación encontrará la mayoría de los códigos de respuesta negativos S
 |502|Pedido no implementado|Los parámetros o opciones utilizados al enviar el email con su servidor SMTP son reconocidos pero desactivados en su configuración. Por favor, contacte con su proveedor de servicio.|
 |503|El servidor ha encontrado una mala secuencia de comandos.|Esto suele deberse a un problema de autenticación. Asegúrese de estar bien autenticado en el servidor SMTP en lo que respecta a la configuración de su cliente de correo.|
 |504|Parámetro de órdenes no implementado|Los parámetros o opciones utilizados al enviar el email con su servidor SMTP son reconocidos pero desactivados en su configuración. Por favor, contacte con su proveedor de servicio.|
-|535| falló durante la autenticación| Se ha generado la información de usuario/contraseña o el envío puede estar bloqueado en su dirección de correo. Compruebe el estado de su dirección de correo electrónico desde el área de cliente de OVHcloud. Un cambio de la contraseña puede desbloquear el envío si la cuenta ha sido bloqueada por spam, consulte nuestra guía [¿Qué hacer con una cuenta bloqueada debido a correo no deseado?](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/bloqueo-por-correo-no-deseado/) para más información|
+|535| falló durante la autenticación| Se ha generado la información de usuario/contraseña o el envío puede estar bloqueado en su dirección de correo. Compruebe el estado de su dirección de correo electrónico desde el área de cliente de OVHcloud. Un cambio de la contraseña puede desbloquear el envío si la cuenta ha sido bloqueada por spam, consulte nuestra guía [¿Qué hacer con una cuenta bloqueada debido a correo no deseado?](/pages/web/microsoft-collaborative-solutions/locked_for_spam) para más información|
 |550|Acción solicitada no realizada: buzón de correo no disponible|El servidor de correo de destino no ha podido verificar la dirección de correo electrónico utilizada. Esto suele deberse a una dirección de correo electrónico de destino no válida, pero también puede significar que el servidor de correo de destino tenga problemas de cortafuegos o conectividad. Compruebe la dirección de correo electrónico del destinatario e inténtelo de nuevo|
 |551|Usuario no local|Esto se usa generalmente como una estrategia de prevención contra el spam. Por alguna razón, el relevo de correo no está autorizado a transferir su mensaje a otro servidor distinto del suyo. Por favor, contacte con su proveedor de servicio.|
 |552|Petición de acción de correo interrumpida: espacio de almacenamiento superado|El usuario al que ha intentado contactar ya no tiene espacio disponible para recibir mensajes. Desafortunadamente, la única solución es contactar con el destinatario a través de otro método|
@@ -128,6 +125,6 @@ A continuación encontrará la mayoría de los códigos de respuesta negativos S
 
 ## Más información
 
-[FAQ E-mail](https://docs.ovh.com/us/es/emails/correo-electronico-faq/)
+[FAQ E-mail](/pages/web/emails/faq-emails)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -1,8 +1,6 @@
 ---
 title: 'Cambiare il proprietario di un dominio'
-slug: cambiare_proprietario_dominio
 excerpt: 'In questa guida troverai le informazioni necessarie per cambiare il proprietario di un dominio'
-section: 'Cambio di proprietario'
 updated: 2021-03-04
 ---
 
@@ -14,12 +12,12 @@ updated: 2021-03-04
 
 ## Obiettivo
 
-Per registrare un dominio, oltre alla [gestione dei contatti](../../customer/gestisci_i_tuoi_contatti/), è necessario inserire i dati del proprietario. Il **proprietario** in questo contesto riguarda una persona o una società che detiene i diritti su questo nome di dominio. **Il cambiamento di proprietà** si riferisce al trasferimento dei diritti di proprietà di una persona o di un'impresa verso un'altra, le informazioni del **proprietario** hanno un valore giuridico. Ad esempio, questo processo è obbligatorio se una società cambia nome.
+Per registrare un dominio, oltre alla [gestione dei contatti](/pages/account/customer/managing_contacts), è necessario inserire i dati del proprietario. Il **proprietario** in questo contesto riguarda una persona o una società che detiene i diritti su questo nome di dominio. **Il cambiamento di proprietà** si riferisce al trasferimento dei diritti di proprietà di una persona o di un'impresa verso un'altra, le informazioni del **proprietario** hanno un valore giuridico. Ad esempio, questo processo è obbligatorio se una società cambia nome.
 
 > [!primary]
 >Questa operazione non comporta lo spostamento del dominio verso un altro account cliente OVHcloud.
 >
->Per farlo, devi [modificare i contatti](../../customer/gestisci_i_tuoi_contatti/) del dominio.
+>Per farlo, devi [modificare i contatti](/pages/account/customer/managing_contacts) del dominio.
 
 **Questa guida ti mostra come cambiare il proprietario di un dominio**
 
@@ -27,7 +25,7 @@ Per registrare un dominio, oltre alla [gestione dei contatti](../../customer/ges
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Disporre di un dominio registrato in OVHcloud
-- Essere il [contatto amministratore](../../customer/gestisci_i_tuoi_contatti/) del dominio.
+- Essere il [contatto amministratore](/pages/account/customer/managing_contacts) del dominio.
 - Disporre del consenso del proprietario attuale del dominio per effettuare il cambio di proprietario.
 
 ## Procedura
@@ -84,7 +82,7 @@ Se l'indirizzo email non viene modificato in seguito alla modifica del proprieta
 
 > [!warning]
 >
-> Se il proprietario del dominio è stato modificato, il dominio non potrà essere [trasferito verso un altro Registrar](../trasferisci_in_uscita_un_dominio_generico_o_geografico) per un periodo di 60 giorni.
+> Se il proprietario del dominio è stato modificato, il dominio non potrà essere [trasferito verso un altro Registrar](/pages/web/domains/transfer_outgoing_domain) per un periodo di 60 giorni.
 
 ### Aggiornamento delle informazioni del proprietario <a name="updateownerinformation"></a>
 
@@ -98,6 +96,6 @@ Per questa operazione non è necessario confermare le modifiche tramite email.
 
 ## Per saperne di più
 
-[Gestire i contatti dei servizi OVHcloud](../../customer/gestisci_i_tuoi_contatti/)
+[Gestire i contatti dei servizi OVHcloud](/pages/account/customer/managing_contacts)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

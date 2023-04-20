@@ -1,11 +1,8 @@
 ---
 title: Restaurer une sauvegarde (EN)
-slug: restore-backup
 excerpt: Find out how to restore a backup
-section: Guides généraux
-order: 060
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/restore-backup'
+    canonical: '/pages/platform/databases/databases_06_restore_backup'
 updated: 2023-03-27
 ---
 
@@ -28,7 +25,7 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 
 In this guide we will use a PostgreSQL database engine as an example, but the procedure is exactly the same for all other engines.
 
-You can learn more about how backups works on the [Automated backups guide](https://docs.ovh.com/ca/fr/publiccloud/databases/backups/).
+You can learn more about how backups works on the [Automated backups guide](/pages/platform/databases/databases_05_automated_backups).
 
 Restoration of a backup is done by creating a new service and pushing the backup data to this new service. This full process is called forking and is fully automated. Once this process is done, you will have two independent service running, the one from which the backup comes from, and a new one on which the backup data has been imported.
 
@@ -82,7 +79,7 @@ The most common option is to restore from a backup.
 
 ##### Specific date and latest
 
-If your service supports point in time recovery (see [Automated Backup guide](https://docs.ovh.com/ca/fr/publiccloud/databases/backups/) for more details), you will also be offered the option to restore from a specific date and time.
+If your service supports point in time recovery (see [Automated Backup guide](/pages/platform/databases/databases_05_automated_backups) for more details), you will also be offered the option to restore from a specific date and time.
 
 ![Restore point from a specific date](images/restore-point-selection-date.png){.thumbnail}
 

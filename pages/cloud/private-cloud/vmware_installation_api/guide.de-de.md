@@ -1,9 +1,6 @@
 ---
 title: vSphere SDK verwenden
-slug: vsphere-sdk-verwenden
 excerpt: Erfahren Sie hier, wie Sie das vSphere SDK einrichten und verwenden
-section: VMware vSphere Funktionen
-order: 12
 updated: 2020-07-13
 ---
 
@@ -23,7 +20,7 @@ Aktionen in Ihrer Infrastruktur können mithilfe des vSphere SDK automatisiert w
 
 ##### Betriebssystem
 
-Dieses Beispiel verwendet eine auf Debian 9 installierte VM, die mithilfe der [für Ihre Private Cloud bereitgestellten Templates](../ovhcloud-template-deployment/) deployt wurde.
+Dieses Beispiel verwendet eine auf Debian 9 installierte VM, die mithilfe der [für Ihre Private Cloud bereitgestellten Templates](/pages/cloud/private-cloud/ovf_template) deployt wurde.
 
 ##### Voraussetzungen
 
@@ -141,7 +138,7 @@ vconnect()
 
 ##### Betriebssystem
 
-Wir verwenden hier eine auf Ubuntu 18.04 installierte VM, die mithilfe der [für Ihre Private Cloud bereitgestellten Templates](../ovhcloud-template-deployment/) deployt wurde.
+Wir verwenden hier eine auf Ubuntu 18.04 installierte VM, die mithilfe der [für Ihre Private Cloud bereitgestellten Templates](/pages/cloud/private-cloud/ovf_template) deployt wurde.
 
 
 ##### Voraussetzungen

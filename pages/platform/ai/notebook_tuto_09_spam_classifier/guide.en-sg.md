@@ -1,9 +1,6 @@
 ---
 title: AI Notebooks - Tutorial - Build your spam classifier
-slug: notebooks/tuto-spam-classifier
 excerpt: How to build your Spam classifier thanks to Machine Learning
-section: AI Notebooks - Tutorials
-order: 09
 updated: 2022-11-22
 ---
 
@@ -30,7 +27,7 @@ At the end of this tutorial, you will have learnt the principal methods to build
 
 ## Instructions
 
-You can launch your notebook from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) or via the ovhai [CLI](https://docs.ovh.com/sg/en/publiccloud/ai/cli/getting-started-cli/).
+You can launch your notebook from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) or via the ovhai [CLI](/pages/platform/ai/cli_11_cli_getting_started).
 
 ### Launching a Jupyter notebook with "Miniconda" via UI
 
@@ -99,7 +96,7 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 
 ## Go further
 
-- If you are interested in **NLP** (Natural Language Processing), familiarise yourself with speech to text by following this [tutorial](https://docs.ovh.com/sg/en/publiccloud/ai/notebooks/tuto-speech-to-text-recognition/).
+- If you are interested in **NLP** (Natural Language Processing), familiarise yourself with speech to text by following this [tutorial](/pages/platform/ai/notebook_tuto_08_speech_to_text).
 
 ## Feedback
 

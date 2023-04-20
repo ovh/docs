@@ -1,11 +1,8 @@
 ---
 title: Tworzenie sieci VLAN
-slug: tworzenie-vlan
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/tworzenie-vlan-vxlan/'
+    canonical: '/pages/cloud/private-cloud/creation_vlan'
 excerpt: Dowiedz się, jak tworzyć sieci VLAN (vRack)
-section: Funkcje OVHcloud
-order: 02
 updated: 2020-11-18
 ---
 
@@ -37,7 +34,7 @@ Pierwszy vDS dysponuje jednym rodzajem *portGroup*, VMnetwork pozwalający na ko
 
 Drugi serwer vDS dysponuje również jednym rodzajem *portGroup*, czyli siecią VLAN pozwalającą na odizolowanie prywatnej komunikacji wewnątrz Managed Bare Metal oraz między różnymi usługami OVHcloud kompatybilnymi z vRack (Serwer dedykowany, Public Cloud...). 
 
-W tym switchu 11 sieci VLAN są tworzone w oparciu o podstawowe projekty (VLAN10 w VLAN20). Dzięki uprawnieniu `administratora` do `dostępu do sieci VLAN` w [zarządzaniu użytkownikami w Panelu klienta](../manager-ovhcloud/#uzytkownicy){.external-link}, będziesz mógł utworzyć dodatkowe sieci VLAN.
+W tym switchu 11 sieci VLAN są tworzone w oparciu o podstawowe projekty (VLAN10 w VLAN20). Dzięki uprawnieniu `administratora` do `dostępu do sieci VLAN` w [zarządzaniu użytkownikami w Panelu klienta](/pages/cloud/managed-bare-metal/manager-ovhcloud#uzytkownicy){.external-link}, będziesz mógł utworzyć dodatkowe sieci VLAN.
 
 Po pierwsze, przejdź do widoku `tworzenia sieci` Twojego klienta vSphere. Uruchom folder **vrack**, kliknij prawym przyciskiem myszy **na serwer **dVS** kończący się *-vrack*, a następnie kliknij `New Distributed Port Group`{.action}.
 

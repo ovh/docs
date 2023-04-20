@@ -1,9 +1,6 @@
 ---
 title: Data Processing Capabilities and Limitations
-slug: capabilities
 excerpt: Find out what are the current capabilities and limitations of the OVHcloud Data Processing Platform 
-section: Concepts
-order: 1
 updated: 2023-03-08
 ---
 
@@ -96,7 +93,7 @@ We distinguish three types of resources: CPU cores, RAM and Instances.
 
 You have a limited amount of those resources that you can use simultaneously. If you have a job using all of your quotas, you will not be able to submit other jobs until it is completed. The maximum amount of each resource you can use simultaneously is fetched from your cloud project quotas. Only the maximum quotas are shared between Data Processing and your cloud project. If you run out of resource on your cloud project, it will not impact your ability to submit a job on Data Processing. 
 
-If you would like to increase the quotas for Data Processing you will need to increase your cloud project quotas. Please visit [Increasing Public Cloud quota](../../public-cloud/increase-public-cloud-quota/) for more details on the subject. 
+If you would like to increase the quotas for Data Processing you will need to increase your cloud project quotas. Please visit [Increasing Public Cloud quota](/pages/platform/public-cloud/increasing_public_cloud_quota) for more details on the subject. 
 
 ## Planned features
 

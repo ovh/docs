@@ -1,8 +1,6 @@
 ---
 title: Ottimizza l'invio delle email
 excerpt: Scopri come inviare email limitando il rischio di spam
-slug: ottimiza-invio-email
-section: Utilizzo avanzato
 updated: 2022-12-20
 ---
 
@@ -52,7 +50,7 @@ Per le infrastrutture dedicate (server dedicati, VPS, istanze Public Cloud o Hos
 
 Per maggiori informazioni sulla sintassi del record SPF, clicca su questo link: <http://www.open-spf.org/>.
 
-È possibile andare oltre configurando il record SPF di un dominio specifico o specificando un IPv6. Per effettuare questa operazione, consulta la nostra guida su come [aggiungere un record SPF](https://docs.ovh.com/it/domains/hosting_condiviso_il_record_spf/).
+È possibile andare oltre configurando il record SPF di un dominio specifico o specificando un IPv6. Per effettuare questa operazione, consulta la nostra guida su come [aggiungere un record SPF](/pages/web/domains/dns_zone_spf).
 
 ### Configura il record DKIM
 
@@ -66,7 +64,7 @@ Per ottimizzare l'invio e ridurre i rischi di blocco delle tue email, è necessa
 
 Per prima cosa, crea un record A nella zona DNS del tuo dominio con l'indirizzo IP del tuo server come destinazione.
 
-Se i server DNS sono gestiti da OVHcloud, consulta questa [guida](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/#accedere-alla-gestione-di-una-zona-dns-ovhcloud).
+Se i server DNS sono gestiti da OVHcloud, consulta questa [guida](/pages/web/domains/dns_zone_edit#accedere-alla-gestione-di-una-zona-dns-ovhcloud).
 
 Una volta modificata la zona DNS del dominio, la propagazione delle modifiche potrebbe richiedere fino a 24 ore.
 

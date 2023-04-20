@@ -1,9 +1,6 @@
 ---
 title: "Montowanie NAS-HA przy użyciu zasobów NFS"
-slug: nas/nfs
 excerpt: "Dowiedz się, jak się zalogować do usługi NAS-HA przy użyciu protokołu NFS"
-section: NAS-HA
-order: 03
 updated: 2022-12-06
 ---
 
@@ -30,8 +27,8 @@ Usługa NAS-HA OVHcloud pozwala na zarządzanie przestrzenią dyskową plików d
 - Posiadanie oferty [NAS-HA OVHcloud](https://www.ovhcloud.com/pl/storage-solutions/nas-ha/)
 - Posiadanie usługi OVHcloud, do której przypisany jest publiczny adres IP (Hosted Private Cloud, serwer dedykowany, VPS, instancja Public Cloud, etc.)
 - Posiadanie systemu operacyjnego kompatybilnego z NFS zainstalowanego na Twoim serwerze
-- [Utworzenie partycji dla Twojej usługi przy użyciu protokołu NFS](https://docs.ovh.com/pl/storage/file-storage/nas/get-started/#partition)
-- [Posiadanie wpisu ACL dla adresu IP serwera](https://docs.ovh.com/pl/storage/file-storage/nas/get-started/#addaccess)
+- [Utworzenie partycji dla Twojej usługi przy użyciu protokołu NFS](/pages/cloud/storage/file_storage/nas_get_started#partition)
+- [Posiadanie wpisu ACL dla adresu IP serwera](/pages/cloud/storage/file_storage/nas_get_started#addaccess)
 - Dostęp administracyjny (root) do serwera przez SSH lub GUI
 
 ## W praktyce

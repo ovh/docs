@@ -1,9 +1,6 @@
 ---
 title: Managing an SMS SMPP account
 excerpt: Find out how to manage an SMPP account settings from the OVHcloud Control Panel
-slug: smpp-control-panel
-section: SMPP
-order: 01
 updated: 2023-02-09
 ---
 
@@ -17,7 +14,7 @@ In the OVHcloud Control Panel, you can retrieve your SMPP credentials, change yo
 
 > [!primary]
 >
-> We recommend that you read the [technical specifications of the OVHcloud SMPP solution](https://docs.ovh.com/ie/en/sms/smpp-specifications/).
+> We recommend that you read the [technical specifications of the OVHcloud SMPP solution](/pages/telecom/sms/smpp-specification).
 
 ## Requirements
 
@@ -56,12 +53,12 @@ Click the `Add IP`{.action} button to add IP addresses to this list.
 
 ### Manage senders and credits
 
-See our guides on [sender management](https://docs.ovh.com/ie/en/sms/send_sms_messages_via_control_panel/#step-3-choose-an-sms-sender_1) and [managing SMS credits and enabling automatic re-crediting](https://docs.ovh.com/ie/en/sms/enable-automatic-recredit-sms-credit/).
+See our guides on [sender management](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#step-3-choose-an-sms-sender_1) and [managing SMS credits and enabling automatic re-crediting](/pages/telecom/sms/activer_la_recharge_automatique_du_credit_sms).
 
 ## Go further
 
-See [our guide on managing SMS history](https://docs.ovh.com/ie/en/sms/manage-sms-history/).
+See [our guide on managing SMS history](/pages/telecom/sms/gerer_l_historique_des_sms).
 
-[The technical specifications of the OVHcloud SMPP solution](https://docs.ovh.com/ie/en/sms/smpp-specifications/).
+[The technical specifications of the OVHcloud SMPP solution](/pages/telecom/sms/smpp-specification).
 
 Join our community of users on <https://community.ovh.com/en/>

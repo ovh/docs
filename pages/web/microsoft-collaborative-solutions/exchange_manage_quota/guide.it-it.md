@@ -1,11 +1,8 @@
 ---
 title: Gestire lo spazio di storage di un account email
-slug: manage-email-quota
 excerpt: Come gestire e ottimizzare lo spazio di storage di un indirizzo email
-section: Diagnostica
-order: 02
 routes:
-  canonical: "https://docs.ovh.com/it/emails/manage-email-quota/"
+  canonical: "/products/email-manage-email-quota"
 updated: 2022-11-17
 ---
 
@@ -32,8 +29,8 @@ Ogni account email OVHcloud dispone di uno spazio di storage dedicato. Gestire c
 > **Casi particolari**
 >
 > - Se disponi di un hosting Start 10M, prima di creare un indirizzo email è necessario attivarlo. Questa operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), selezionando il dominio interessato.
-> - Prima di continuare la lettura di questa guida, è necessario attivare il servizio di [hosting Web](https://www.ovhcloud.com/it/web-hosting/). Per farlo, consulta la guida [Attiva gli indirizzi email inclusi nel tuo hosting Web](https://docs.ovh.com/it/hosting/attivare-email-hosting-web/).
+> - Prima di continuare la lettura di questa guida, è necessario attivare il servizio di [hosting Web](https://www.ovhcloud.com/it/web-hosting/). Per farlo, consulta la guida [Attiva gli indirizzi email inclusi nel tuo hosting Web](/pages/web/hosting/activate-email-hosting).
 
 ## Procedura <a name="instructions"></a>
 
-Seguite la nostra guida [Gestire lo spazio di storage di un account email](https://docs.ovh.com/it/emails/manage-email-quota/) nella sezione "Hosted email - MX Plan".
+Seguite la nostra guida [Gestire lo spazio di storage di un account email](/products/email-manage-email-quota) nella sezione "Hosted email - MX Plan".

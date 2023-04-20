@@ -1,11 +1,8 @@
 ---
 title: Object Storage - Verschlüsseln Ihrer serverseitigen Objekte mit SSE-C (EN)
-slug: s3/encrypt-your-objects-with-sse-c
 excerpt:
-section: Tutorials
-order: 005
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/s3/encrypt-your-objects-with-sse-c/'
+    canonical: '/pages/cloud/storage/object_storage/s3_encrypt_your_objects_with_sse_c'
 updated: 2022-04-15
 ---
 
@@ -42,7 +39,7 @@ When you upload an object, S3 Object Storage uses the encryption key you provide
 - A user with the required access rights on the bucket
 - Have installed and configured aws-cli
 
-See our [Getting started with S3 Object Storage](https://docs.ovh.com/de/storage/object-storage/s3/getting-started-with-object-storage/) guide.
+See our [Getting started with S3 Object Storage](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) guide.
 
 ## Instructions
 

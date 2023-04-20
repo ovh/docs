@@ -1,9 +1,6 @@
 ---
 title: 'Tutorial - Criar a sua página web pessoal na OVHcloud'
-slug: create-your-own-web-page
 excerpt: 'Saiba como criar a primeira página num alojamento gratuito Start 10M'
-section: "Tutoriais"
-order: 012
 updated: 2023-02-17
 ---
 
@@ -385,13 +382,13 @@ Para apresentar o alvo do link num novo separador, basta adicionar um atributo `
 
 ### Como armazenar conteúdo no meu alojamento?
 
-Para que as suas páginas e, portanto, o seu site, sejam visíveis para todos, deve colocá-las no seu alojamento (deve ativar o alojamento [como indicado neste guia](https://docs.ovh.com/pt/hosting/ativar-start10m/)).
+Para que as suas páginas e, portanto, o seu site, sejam visíveis para todos, deve colocá-las no seu alojamento (deve ativar o alojamento [como indicado neste guia](/pages/web/hosting/activate_start10m)).
 
 A transferência dos ficheiros faz-se através de um protocolo dedicado: o **FTP** (para **F**ile **T**ransfer **P**rotocol). Utilize um software dedicado para esta operação, como o [FileZilla](https://filezilla-project.org/download.php?type=client) ou ainda o [Cyberduck](https://cyberduck.io/download/).
 
 ### Implementar um site com FTP
 
-Para transferir os seus ficheiros para o seu alojamento, consulte o manual sobre a [utilização do FileZilla](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/).
+Para transferir os seus ficheiros para o seu alojamento, consulte o manual sobre a [utilização do FileZilla](/pages/web/hosting/ftp_filezilla_user_guide).
 
 Depois de transferir os ficheiros para o seu alojamento, poderá visualizar o resultado introduzindo o seu domínio na barra de endereço do seu browser ou pressionando a tecla `F5` do seu teclado para carregar a página se já está no seu site.
 

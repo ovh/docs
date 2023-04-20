@@ -1,9 +1,6 @@
 ---
 title: 'Crear claves SSH'
-slug: crear-claves-ssh-dedicadas
 excerpt: 'Cómo crear claves SSH para una conexión segura con su servidor dedicado'
-section: 'SSH y llave SSH'
-order: 3
 updated: 2022-03-31
 ---
 
@@ -171,7 +168,7 @@ Si ha copiado el resultado completo, ya debería estar incluido el identificador
 
 > [!primary]
 >
-> Las claves guardadas en la sección «Dedicada» también podrán utilizarse en sus servicios de servidores virtuales privados (VPS). Por lo que se refiere a las claves SSH para los servicios Public Cloud, consulte [esta guía](../../public-cloud/public-cloud-primeros-pasos).
+> Las claves guardadas en la sección «Dedicada» también podrán utilizarse en sus servicios de servidores virtuales privados (VPS). Por lo que se refiere a las claves SSH para los servicios Public Cloud, consulte [esta guía](/pages/platform/public-cloud/public-cloud-first-steps).
 >
 
 ### Establecer una clave SSH por defecto (solo para el universo "Dedicado") <a name="cpsshkey"></a>

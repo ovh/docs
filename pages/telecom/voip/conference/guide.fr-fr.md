@@ -1,9 +1,6 @@
 ---
 title: 'Créer et gérer des conférences téléphoniques'
-slug: conference
 excerpt: 'Apprenez à gérer des conférences téléphoniques avec votre numéro OVHcloud'
-section: 'Numéros ou alias'
-order: 7
 updated: 2022-08-05
 ---
 
@@ -30,7 +27,7 @@ Une interface spécifique vous propose également de suivre en temps réel les d
 
 > [!primary]
 >
-> Consultez notre guide « [Choisir et appliquer une configuration pour un numéro](../quelle-configuration-est-adaptee-a-mes-besoins/) » pour plus de détails sur les différentes configurations applicables à un numéro alias.
+> Consultez notre guide « [Choisir et appliquer une configuration pour un numéro](/pages/telecom/voip/quelle_configuration_est_adaptee_a_mes_besoins) » pour plus de détails sur les différentes configurations applicables à un numéro alias.
 >
 
 ## En pratique

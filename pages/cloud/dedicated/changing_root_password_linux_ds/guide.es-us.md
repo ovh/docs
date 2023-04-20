@@ -1,8 +1,6 @@
 ---
 title: 'Cambiar la contraseña root en un servidor dedicado'
-slug: cambiar-contrasena-root-linux-en-servidor-dedicado
 excerpt: 'Cómo cambiar la contraseña root de un servidor dedicado'
-section: 'Diagnóstico y modo de rescate'
 updated: 2021-02-16
 ---
 
@@ -66,7 +64,7 @@ passwd: password updated successfully
 
 #### 1. Identificar la partición del sistema
 
-Una vez reiniciado el servidor en [modo de rescate](../modo_de_rescate/), deberá identificar la partición del sistema. Para ello, ejecute el siguiente comando:
+Una vez reiniciado el servidor en [modo de rescate](/pages/cloud/dedicated/rescue_mode), deberá identificar la partición del sistema. Para ello, ejecute el siguiente comando:
 
 ```
 # fdisk -l
@@ -130,10 +128,10 @@ Una vez realizado este paso, cambie el modo de arranque en el servidor para `arr
 
 ## Más información
 
-[Activar y utilizar el modo de rescate](../modo_de_rescate/)
+[Activar y utilizar el modo de rescate](/pages/cloud/dedicated/rescue_mode)
 
-[Proteger un servidor dedicado](../seguridad-de-un-servidor-dedicado/)
+[Proteger un servidor dedicado](/pages/cloud/dedicated/securing-a-dedicated-server)
 
-[Cambiar la contraseña de administrador en un servidor dedicado Windows](../cambiar-contrasena-administrador-en-servidor-windows/)
+[Cambiar la contraseña de administrador en un servidor dedicado Windows](/pages/cloud/dedicated/changing-admin-password-on-windows)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

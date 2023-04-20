@@ -1,9 +1,6 @@
 ---
 title: Les questions fréquentes concernant le NAS
-slug: nas/faq
 excerpt: Une question sur le NAS ? Voici les questions les plus fréquemment posées.
-section: NAS-HA
-order: 02
 updated: 2021-09-09
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: 'Optymalizacja wydajności witryny internetowej'
 excerpt: 'Dowiedz się, jak analizować opóźnienia w witrynie internetowej i ulepszyć jej działanie'
-slug: hosting_www_przewodnik_dotyczacy_optymalizacji_wydajnosci_strony
-section: 'Optymalizacja strony WWW'
-order: 06
 updated: 2022-02-03
 ---
 
@@ -66,9 +63,9 @@ W przypadku korzystania z mechanizmu PHP-FPM zmieniają się niektóre zmienne s
 |max_input_vars|2000|16000|
 |memory_limit|128M|512M|
 
-Informacje o aktualizacji wersji PHP zawiera [ten przewodnik](https://docs.ovh.com/pl/hosting/konfiguracja_php_na_hostingu_www_ovh_2014/){.external}.
+Informacje o aktualizacji wersji PHP zawiera [ten przewodnik](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014){.external}.
 
-Aby zmienić wersję PHP-FPM na _stabilną_ lub uzyskać szczegółowe informacje o bardziej zaawansowanych opcjach hostingu WWW, zapoznaj się z [tym przewodnikiem](https://docs.ovh.com/pl/hosting/zmiana_srodowiska_uruchomieniowego_dla_hostingu_www/){.external}.
+Aby zmienić wersję PHP-FPM na _stabilną_ lub uzyskać szczegółowe informacje o bardziej zaawansowanych opcjach hostingu WWW, zapoznaj się z [tym przewodnikiem](/pages/web/hosting/ovhconfig_modify_system_runtime){.external}.
 
 Plik _.ovhconfig_ działa w katalogu głównym hostingu albo w podkatalogu poziomu 1 (na przykład: _/www/_), ale nie w katalogach poziomu drugiego lub wyższego (na przykład: _/www/test/_, _/www/test/test2/_).
 
@@ -223,10 +220,10 @@ Jeśli pomimo wprowadzonych zmian i optymalizacji baza danych działa powoli, al
 
 ## Sprawdź również
 
-[Zmiana konfiguracji hostingu WWW](https://docs.ovh.com/pl/hosting/zmiana_srodowiska_uruchomieniowego_dla_hostingu_www/){.external}
+[Zmiana konfiguracji hostingu WWW](/pages/web/hosting/ovhconfig_modify_system_runtime){.external}
 
-[Zarządzanie bazą danych w hostingu WWW](https://docs.ovh.com/pl/hosting/zarzadzanie-baza-danych-na-hostingu-www/){.external}
+[Zarządzanie bazą danych w hostingu WWW](/pages/web/hosting/sql_create_database){.external}
 
-[Pierwsze kroki z usługą Cloud Databases](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/){.external}
+[Pierwsze kroki z usługą Cloud Databases](/pages/web/clouddb/starting_with_clouddb){.external}
 
 Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.

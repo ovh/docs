@@ -1,9 +1,6 @@
 ---
 title: Object Storage Swift - Utiliser S3QL pour monter un conteneur Object Storage
-slug: pcs/use-s3ql-to-mount-object-storage-containers
-section: Spécificités de la classe de stockage OpenStack Swift
 legacy_guide_number: g1908
-order: 160
 updated: 2021-10-27
 ---
 
@@ -20,8 +17,8 @@ Vous pouvez trouver plus d'informations directement sur leur [Site Web](http://w
 
 ## Prérequis
 
-- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/fr/public-cloud/set-openstack-environment-variables/)
-- [Avoir créé un conteneur](https://docs.ovh.com/fr/storage/object-storage/pcs/create-container/)
+- [Charger les variables d’environnement OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
+- [Avoir créé un conteneur](/pages/cloud/storage/object_storage/pcs_create_container)
 
 > [!primary]
 >

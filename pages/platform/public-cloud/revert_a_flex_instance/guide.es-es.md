@@ -1,9 +1,6 @@
 ---
 title: Cambiar de una instancia flex a una instancia clásica
-slug: modificar-una-instancia-flex
 excerpt: Cómo cambiar una instancia flex desde el panel de control de OpenStack Horizon
-section: Gestión desde Horizon
-order: 8
 updated: 2021-11-15
 ---
 
@@ -17,8 +14,8 @@ Una instancia *flex* es una instancia de disco único (50 GB) que ofrece un proc
 
 ## Requisitos
 
-- Tener una [instancia de Public Cloud de OVHcloud](../public-cloud-primeros-pasos/#3-crear-una-instancia) de tipo *flex*.
-- [Crear un acceso a Horizon](https://docs.ovh.com/es/public-cloud/crear_un_acceso_a_horizon/)
+- Tener una [instancia de Public Cloud de OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#3-crear-una-instancia) de tipo *flex*.
+- [Crear un acceso a Horizon](/pages/platform/public-cloud/introducing_horizon)
 
 ## Procedimiento
 
@@ -58,7 +55,7 @@ Una vez finalizado el proceso, su instancia se migrará a un modelo clásico, co
 
 Si quiere cambiar a un modelo *flex*, puede hacerlo realizando los mismos pasos [anteriores](#flavorchoice) seleccionando una plantilla *flex* en lugar de la clásica. 
 
-También puede [editar la configuración de una instancia](https://docs.ovh.com/es/public-cloud/empezar-con-una-instancia-public-cloud/#editar-la-configuracion-de-una-instancia) desde el área de cliente.
+También puede [editar la configuración de una instancia](/pages/platform/public-cloud/first_steps_with_public_cloud_instance#editar-la-configuracion-de-una-instancia) desde el área de cliente.
 
 ## Más información
 

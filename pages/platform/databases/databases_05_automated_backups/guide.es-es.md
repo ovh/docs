@@ -1,11 +1,8 @@
 ---
 title: Automated Backups
-slug: backups
 excerpt: Discover the automated backup methods for each engine
-section: General guides
-order: 17
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/backups'
+    canonical: '/pages/platform/databases/databases_05_automated_backups'
 updated: 2023-03-27
 ---
 

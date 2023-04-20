@@ -1,9 +1,6 @@
 ---
 title: "Configuration du stockage d'un serveur HGR-STOR-2"
-slug: hgrstor2-system-configuration
 excerpt: "Mise en place et configuration du multipath dans le cadre de l'utilisation d'un serveur HGR-STOR-2"
-section: 'Utilisation avancée'
-order: 6
 updated: 2022-08-25
 ---
 

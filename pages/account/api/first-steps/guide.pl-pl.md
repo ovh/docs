@@ -1,9 +1,6 @@
 ---
 title: 'Pierwsze kroki z API OVHcloud'
-slug: first-steps-with-ovh-api
 excerpt: 'Dowiedz się, jak korzystać z API OVHcloud'
-section: 'Pierwsze kroki'
-order: 01
 updated: 2022-05-30
 ---
 
@@ -49,7 +46,7 @@ Aby korzystać z API na produktach, należy zalogować się na tej stronie za po
 
 > [!primary]
 >
-> Jeśli Twoje konto OVHcloud jest chronione [weryfikacją dwuetapową](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/), wpisz również kod wygenerowany w wiadomości SMS lub aplikacji OTP lub klucz U2F.
+> Jeśli Twoje konto OVHcloud jest chronione [weryfikacją dwuetapową](/pages/account/customer/secure-ovhcloud-account-with-2fa), wpisz również kod wygenerowany w wiadomości SMS lub aplikacji OTP lub klucz U2F.
 >
 
 #### Sprawdź produkty dostępne na API
@@ -167,7 +164,7 @@ MtSwSrPpNjqfVSmJhLbPyr2i45lSwPU1
 
 W tym przypadku klucz **CK** jest przypisany do Twojego konta.
 
-Token **CK** może być wykorzystywany do przekazywania uprawnień. Więcej informacji znajdziesz w przewodniku: [Jak zarządzać kontem klienta OVHcloud za pomocą API](https://docs.ovh.com/gb/en/api/api-rights-delegation/) (przewodnik po języku angielskim).
+Token **CK** może być wykorzystywany do przekazywania uprawnień. Więcej informacji znajdziesz w przewodniku: [Jak zarządzać kontem klienta OVHcloud za pomocą API](/pages/account/api/api_right_delegation) (przewodnik po języku angielskim).
 
 #### Pierwsze wykorzystanie API
 
@@ -207,8 +204,8 @@ print("Welcome", client.get('/me')['firstname'])
 
 ## Sprawdź również <a name="gofurther"></a>
 
-[Zarządzanie domeną poprzez API OVHcloud](https://docs.ovh.com/it/domains/api/) (przewodnik po angielsku)
+[Zarządzanie domeną poprzez API OVHcloud](/pages/web/domains/api_domain_intro) (przewodnik po angielsku)
 
-[Jak zarządzać kontem klienta OVHcloud za pomocą API](https://docs.ovh.com/gb/en/api/api-rights-delegation/) (przewodnik po angielsku)
+[Jak zarządzać kontem klienta OVHcloud za pomocą API](/pages/account/api/api_right_delegation) (przewodnik po angielsku)
 
 Przyłącz się do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en/)

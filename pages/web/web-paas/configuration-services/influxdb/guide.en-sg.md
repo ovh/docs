@@ -1,7 +1,5 @@
 ---
 title: InfluxDB (Database service)
-slug: influxdb
-section: Services
 updated: 2021-06-03
 ---
 
@@ -26,7 +24,7 @@ It exposes an HTTP API for client interaction. See the [InfluxDB documentation](
 
 ## Relationship
 
-The format exposed in the ``$PLATFORM_RELATIONSHIPS`` [environment variable](../../development-variables#platformsh-provided-variables):
+The format exposed in the ``$PLATFORM_RELATIONSHIPS`` [environment variable](/pages/web/web-paas/development-variables#platformsh-provided-variables):
 
 ```json  
 {

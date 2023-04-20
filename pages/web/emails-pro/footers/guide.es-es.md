@@ -1,8 +1,5 @@
 ---
 title: 'Crear firmas automáticas'
-slug: email-automatic-signature-disclaimer
-section: Primeros pasos
-order: 6
 updated: 2020-03-26
 ---
 
@@ -23,4 +20,4 @@ El área de cliente de OVHcloud le permite crear firmas genéricas (pies de mens
 
 ## Procedimiento
 
-Siga nuestra guía [Qué hacer en caso de cuenta bloqueada por spam?](https://docs.ovh.com/es/microsoft-collaborative-solutions/bloqueo-por-correo-no-deseado/){.external} en la sección "Soluciones colaborativas de Microsoft".
+Siga nuestra guía [Qué hacer en caso de cuenta bloqueada por spam?](/pages/web/microsoft-collaborative-solutions/locked_for_spam){.external} en la sección "Soluciones colaborativas de Microsoft".

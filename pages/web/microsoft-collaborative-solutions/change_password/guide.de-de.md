@@ -1,11 +1,8 @@
 ---
 title: "Passwort eines E-Mail-Accounts ändern"
-slug: changing-email-address-password
 excerpt: "Erfahren Sie hier, wie Sie das Passwort eines OVHcloud E-Mail-Accounts ändern"
-section: Erste Schritte mit Exchange
-order: 03
 routes:
-    canonical: 'https://docs.ovh.com/de/emails/passwort-e-mail-adresse-aendern/'
+    canonical: '/pages/web/emails/email_change_password'
 updated: 2023-01-03
 ---
 
@@ -33,11 +30,11 @@ Die Accounts Ihrer OVHcloud E-Mail-Dienste sind nur mit dem zugehörigen Passwor
 >
 > Wenn Sie das Passwort Ihrer E-Mail-Adresse ändern, muss diese Änderung auch auf alle E-Mail-Clients, die auf diesen Account zugreifen, angewendet werden. Finden Sie dazu die Konfigurationsanleitung zu Ihrer E-Mail-Anwendung auf der Anleitungsseite für Ihr E-Mail-Angebot:
 >
-> - [MX Plan](https://docs.ovh.com/de/emails/)
-> - [E-Mail Pro](https://docs.ovh.com/de/emails-pro/)
-> - [Exchange](https://docs.ovh.com/de/microsoft-collaborative-solutions/)
+> - [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan)
+> - [E-Mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro)
+> - [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 >
 
 ## In der praktischen Anwendung
 
-Folgen Sie unserem Leitfaden [Speicherplatz eines E-Mail-Accounts verwalten](https://docs.ovh.com/de/emails/passwort-e-mail-adresse-aendern/) im Abschnitt "Hosted E-Mail - MX Plan".
+Folgen Sie unserem Leitfaden [Speicherplatz eines E-Mail-Accounts verwalten](/pages/web/emails/email_change_password) im Abschnitt "Hosted E-Mail - MX Plan".

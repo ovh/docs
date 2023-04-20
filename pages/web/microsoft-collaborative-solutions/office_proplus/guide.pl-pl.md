@@ -1,9 +1,6 @@
 ---
 title: Skorzystaj ze zdalnego pulpitu z Microsoft 365 apps
-slug: office365-proplus-biuro-a-zdalne
 excerpt: Dowiedz się, jak zainstalować i korzystać z Microsoft 365 apps na zdalnym pulpicie (RDS) lub komputerze współdzielonym
-section: Office
-order: 04
 updated: 2021-09-06
 ---
 

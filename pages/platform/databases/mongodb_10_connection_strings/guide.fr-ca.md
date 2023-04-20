@@ -1,12 +1,9 @@
 ---
 title: MongoDB - Comprendre le format URI des chaînes de connection (EN)
 excerpt: Find out how connections syntax work for MongoDB
-slug: mongodb/connection-strings
-section: MongoDB - Guides
-order: 022
 updated: 2023-03-02
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/connection-strings/'
+    canonical: '/pages/platform/databases/mongodb_10_connection_strings'
 ---
 
 **Last updated March 2nd, 2023**
@@ -23,8 +20,8 @@ MongoDB 3.6 introduced the concept of a seed list that is specified using DNS re
 
 - A [Public Cloud project](https://www.ovhcloud.com/fr-ca/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
-- A MongoDB instance running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/ca/fr/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your MongoDB instance](https://docs.ovh.com/ca/fr/publiccloud/databases/mongodb/managing-service/) to accept incoming connections
+- A MongoDB instance running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your MongoDB instance](/pages/platform/databases/mongodb_02_manage_control_panel) to accept incoming connections
 - A MongoDB Compass stable version installed and public network connectivity (Internet). This guide was made in MongoDB Compass version 1.30.1
 
 ## Concepts

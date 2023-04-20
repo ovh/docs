@@ -1,9 +1,6 @@
 ---
 title: Setting-up a Persistent Volume on OVHcloud Managed Kubernetes
-slug: setting-up-a-persistent-volume
 excerpt: 'Find out how to create Persistent Volume Claim (PVC) and Persistent Volumes (PV), attach a Pod to a PVC, change PV reclaim policy and delete created objects'
-section: Storage
-order: 0
 updated: 2022-11-28
 ---
 
@@ -21,8 +18,7 @@ updated: 2022-11-28
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #fff;
  }
@@ -40,9 +36,9 @@ Then you will create a `Pod` attached to the PVC.
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/platform/kubernetes-k8s/deploying-hello-world).
 
-It also supposes you have read our [Persistent Volumes on OVHcloud Managed Kubernetes](../ovh-kubernetes-persistent-volumes) guide.
+It also supposes you have read our [Persistent Volumes on OVHcloud Managed Kubernetes](/pages/platform/kubernetes-k8s/persistent-volumes-on-ovh-managed-kubernetes) guide.
 
 > [!warning]
 > When a __Persistent Volumes__ resource is created inside a Managed Kubernetes cluster, an associated Public Cloud __Block Storage__ volume is automatically created with it.
@@ -213,7 +209,7 @@ csi-cinder-high-speed (default)   cinder.csi.openstack.org   Delete          Imm
 
 When you create a Persistent Volume Claim on your Kubernetes cluster, we provision the Cinder storage into your account. This storage is charged according to the OVH [flexible cloud storage prices](https://www.ovh.com/world/public-cloud/storage/additional-disks/){.external}.
 
-Since Kubernetes 1.11, support for expanding PersistentVolumeClaims (PVCs) is enabled by default, and it works on Cinder volumes. In order to learn how to resize them, please refer to the [Resizing Persistent Volumes](../resizing-persistent-volumes/) tutorial. Kubernetes PVCs resizing only allows to expand volumes, not to decrease them.
+Since Kubernetes 1.11, support for expanding PersistentVolumeClaims (PVCs) is enabled by default, and it works on Cinder volumes. In order to learn how to resize them, please refer to the [Resizing Persistent Volumes](/pages/platform/kubernetes-k8s/resizing-persistent-volumes) tutorial. Kubernetes PVCs resizing only allows to expand volumes, not to decrease them.
 
 ## Access Modes
 

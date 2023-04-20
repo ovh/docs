@@ -1,9 +1,6 @@
 ---
 title: "Anwendungsbeispiele - Domainnamen einer Website ändern"
-slug: how_to_change_the_domain_name_for_an_existing_website
 excerpt: "Erfahren Sie hier, wie Sie den Domainnamen einer bestehenden Website ändern"
-section: "Tutorials"
-order: 011
 updated: 2022-10-25
 ---
 
@@ -46,7 +43,7 @@ Um den Domainnamen für den Zugang zu Ihrer Website zu ändern, müssen mehrere 
 
 ### Schritt 1: Die neue Domain auf Ihrem Webhosting <a name="step1"></a> deklarieren
 
-Melden Sie Ihren neuen Domainnamen unter Verwendung unserer Dokumentation zum [Hinzufügen einer Multisite auf Ihrem Webhosting](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/). Aktivieren Sie auch die Subdomain `www`, wenn Sie möchten, dass Ihre Website auch unter `www.NeueDomain.tld`, zusätzlich zu `NeueDomain.tld` angezeigt wird.
+Melden Sie Ihren neuen Domainnamen unter Verwendung unserer Dokumentation zum [Hinzufügen einer Multisite auf Ihrem Webhosting](/pages/web/hosting/multisites_configure_multisite). Aktivieren Sie auch die Subdomain `www`, wenn Sie möchten, dass Ihre Website auch unter `www.NeueDomain.tld`, zusätzlich zu `NeueDomain.tld` angezeigt wird.
 
 Für Schritt 1 sind mehrere Bedingungen zu erfüllen:
 
@@ -55,7 +52,7 @@ Für Schritt 1 sind mehrere Bedingungen zu erfüllen:
 
 > [!warning]
 >
-> Wenn Sie die Optionen **Länder-IP** oder **CDN** auf Ihrer neuen Domain aktivieren, ermitteln Sie die richtige IP-Adresse mithilfe unserer Dokumentation: [Verzeichnis von IP-Adressen für die Webhosting Cluster](https://docs.ovh.com/de/hosting/verzeichnis-der-ip-adressen-web-hosting-cluster/)).
+> Wenn Sie die Optionen **Länder-IP** oder **CDN** auf Ihrer neuen Domain aktivieren, ermitteln Sie die richtige IP-Adresse mithilfe unserer Dokumentation: [Verzeichnis von IP-Adressen für die Webhosting Cluster](/pages/web/hosting/clusters_and_shared_hosting_IP)).
 >
 > Um die Nummer des Clusters zu finden, in dem sich Ihr Webhosting befindet, gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf den Bereich `Hosting-Pakete`{.action}, wählen Sie dann den Tab `FTP-SSH`{.action}. Sie sehen die Cluster-Nummer unter **FTP- und SFTP-Server**: `ftp.clusterXXX.ovh.net` (wobei `XXX` die Cluster-Nummer ist).
 >
@@ -63,8 +60,8 @@ Für Schritt 1 sind mehrere Bedingungen zu erfüllen:
 > **SSL-Zertifikate**
 >
 > Wenn die aktuell für den Zugang zu Ihrer Website verwendete Domain über ein SSL Zertifikat verfügt, lesen Sie unsere beiden Anleitungen, um die nachfolgenden Aktionen durchzuführen:
-> - [SSL-Zertifikat auf einem Webhosting verwalten](https://docs.ovh.com/de/hosting/ssl-zertifikate-auf-webhostings-verwalten/)
-> - [Website auf HTTPS umstellen](https://docs.ovh.com/de/hosting/website-umstellen-https-ssl/)
+> - [SSL-Zertifikat auf einem Webhosting verwalten](/pages/web/hosting/ssl_on_webhosting)
+> - [Website auf HTTPS umstellen](/pages/web/hosting/ssl-activate-https-website)
 >
 > Für das kostenlose SSL *Let's Encrypt* Zertifikat genügt es, die Option `SSL` **ab sofort** für Ihre neue Domain zu aktivieren. Gehen Sie hierzu in den Tab `Multisite`{.action} Ihres Hostings. Klicken Sie anschließend auf den Button `Aktionen`{.action} und dann auf `SSL-Zertifikat neu erstellen`{.action}. Die Regenerierung dauert mindestens 2 Stunden.
 >
@@ -94,7 +91,7 @@ Die meisten Websites verwenden Datenbanken, um zu funktionieren. Die Baumstruktu
 >
 > Achtung, die in Schritt 2 beschriebenen Operationen sind äußerst sensibel und können schwerwiegende Folgen für Ihre Website haben, wenn sie nicht mit Vorsicht durchgeführt werden. Sollten Sie Zweifel haben, wenden Sie sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/).
 >
-> Wir empfehlen Ihnen, vor jeder Aktion eine [Sicherung Ihres FTP-Speicherplatzes](https://docs.ovh.com/de/hosting/webhosting-speicherplatz-wiederherstellen/) sowie eine [Sicherung Ihrer Datenbank](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/) abzurufen. So können Sie Ihre Website im Fall eines Fehlers wiederherstellen.
+> Wir empfehlen Ihnen, vor jeder Aktion eine [Sicherung Ihres FTP-Speicherplatzes](/pages/web/hosting/ftp_save_and_backup) sowie eine [Sicherung Ihrer Datenbank](/pages/web/hosting/sql_database_export) abzurufen. So können Sie Ihre Website im Fall eines Fehlers wiederherstellen.
 >
 
 Wir werden zwei Arten von Websites unterscheiden: 
@@ -114,13 +111,13 @@ Da die CMS von Drittanbietern entwickelt werden und nicht von OVHcloud verwaltet
 - Drupal: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung der Domain für den Zugang zu Ihrer Website. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. Weitere Informationen finden Sie auf der offiziellen Seite [drupal.org](https://drupal.org){.external}.
 - PrestaShop: Der Herausgeber dieses Programms bietet keine Dokumentation zur Änderung der Domain für den Zugang zu Ihrer Website. Kontaktieren Sie bitte den Herausgeber zu diesem Thema. FWeitere Informationen finden Sie auf der [offiziellen Seite](https://help-center.prestashop.com){.external}.
 
-Bitte beachten Sie, dass bei diesen CMS Änderungen auch direkt vorgenommen werden können, indem Sie die verwendete [Datenbank editieren](https://docs.ovh.com/de/hosting/datenbank-erstellen/). Ändern Sie dazu die URL Ihrer Website in der entsprechenden Tabelle.
+Bitte beachten Sie, dass bei diesen CMS Änderungen auch direkt vorgenommen werden können, indem Sie die verwendete [Datenbank editieren](/pages/web/hosting/sql_create_database). Ändern Sie dazu die URL Ihrer Website in der entsprechenden Tabelle.
 
 Für andere CMS, die nicht von OVHcloud als automatische Installation angeboten werden, wenden Sie sich bitte an die jeweiligen Herausgeber, um diese Umschreibung auf sichere Weise durchzuführen. 
 
 #### Fall 2: Sie haben eine individuell gestaltete Website
 
-Um Ihre URLs auf Ihren neuen Domainnamen umzuschreiben, [verbinden Sie sich mit der Datenbank Ihrer Website](https://docs.ovh.com/de/hosting/datenbank-erstellen/) und ersetzen Sie anschließend Ihren alten Domainnamen in der entsprechenden Tabelle mit dem neuen Domainnamen. 
+Um Ihre URLs auf Ihren neuen Domainnamen umzuschreiben, [verbinden Sie sich mit der Datenbank Ihrer Website](/pages/web/hosting/sql_create_database) und ersetzen Sie anschließend Ihren alten Domainnamen in der entsprechenden Tabelle mit dem neuen Domainnamen. 
 
 Überprüfen Sie auch in Ihrer `.htaccess` Datei, ob URL-Einträge auf Ihren neuen Domainnamen aktualisiert werden müssen.
 
@@ -133,26 +130,26 @@ Wenn Sie einen Dienstleister für die Erstellung Ihrer Website beauftragt haben,
 
 ### Schritt 3: Den alten Domainnamen entfernen <a name="step3"></a>
 
-Um *duplicate content* zu vermeiden, muss der Multisite-Eintrag des alten Domainnamens entfernt werden. Sobald Ihre Website unter dem neuen Domainnamen funktionsfähig ist, verwenden Sie unsere Anleitung zur [Verwaltung von Multisites](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/), um ihn zu löschen.
+Um *duplicate content* zu vermeiden, muss der Multisite-Eintrag des alten Domainnamens entfernt werden. Sobald Ihre Website unter dem neuen Domainnamen funktionsfähig ist, verwenden Sie unsere Anleitung zur [Verwaltung von Multisites](/pages/web/hosting/multisites_configure_multisite), um ihn zu löschen.
 
 > [!warning]
 >
 > Denken Sie daran, sich um Ihr SSL *Sectigo EV*, *Sectigo DV* oder *Custom* Zertifikat zu kümmern, wie in [Schritt 1](#step1) beschrieben.
 >
 
-Sofern der alte Domainname bei OVHcloud registriert ist, kann er nach dem Entfernen im Tab "Multisite" mithilfe einer [permanenten sichtbare Weiterleitung (301)](https://docs.ovh.com/de/domains/domainweiterleitung/) umgeleitet werden. So können Ihre Besucher automatisch auf Ihre Website weitergeleitet werden, wenn sie den alten Domainnamen über die Adresszeile eines Browsers aufrufen.
+Sofern der alte Domainname bei OVHcloud registriert ist, kann er nach dem Entfernen im Tab "Multisite" mithilfe einer [permanenten sichtbare Weiterleitung (301)](/pages/web/domains/redirect_domain_name) umgeleitet werden. So können Ihre Besucher automatisch auf Ihre Website weitergeleitet werden, wenn sie den alten Domainnamen über die Adresszeile eines Browsers aufrufen.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-[Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/)
+[Mehrere Websites auf einem Webhosting einrichten](/pages/web/hosting/multisites_configure_multisite)
 
-[SSL-Zertifikat auf einem Webhosting verwalten](https://docs.ovh.com/de/hosting/ssl-zertifikate-auf-webhostings-verwalten/)
+[SSL-Zertifikat auf einem Webhosting verwalten](/pages/web/hosting/ssl_on_webhosting)
 
-[Website auf HTTPS umstellen](https://docs.ovh.com/de/hosting/website-umstellen-https-ssl/)
+[Website auf HTTPS umstellen](/pages/web/hosting/ssl-activate-https-website)
 
-[Weiterleitung von bei OVHcloud verwalteten Domainnamen](https://docs.ovh.com/de/domains/domainweiterleitung/)
+[Weiterleitung von bei OVHcloud verwalteten Domainnamen](/pages/web/domains/redirect_domain_name)
 
-[Verzeichnis von IP-Adressen für die Webhosting Cluster](https://docs.ovh.com/de/hosting/verzeichnis-der-ip-adressen-web-hosting-cluster/)    
+[Verzeichnis von IP-Adressen für die Webhosting Cluster](/pages/web/hosting/clusters_and_shared_hosting_IP)    
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

@@ -1,8 +1,6 @@
 ---
 title: 'Tutoriales - Cómo crear un servidor Minecraft en un VPS o un servidor dedicado'
-slug: crear-servidor-minecraft-en-vps
 excerpt: 'Cómo instalar un servidor Minecraft'
-section: Tutoriales
 updated: 2021-06-29
 ---
 
@@ -42,9 +40,9 @@ Puede contratar un servidor Minecraft preconstruido o configurarlo usted mismo e
 ### Paso 1: Preparar el servidor
 
 En primer lugar, configure su VPS para una instalación de Minecraft.
-<br>Se recomienda pedir un nuevo VPS o reinstalar uno existente desde su [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), utilizando la última versión disponible de Ubuntu o Debian. Si es necesario, consulte nuestra guía "[Primeros pasos](../primeros-pasos-con-vps/#reinstallvps)". 
+<br>Se recomienda pedir un nuevo VPS o reinstalar uno existente desde su [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), utilizando la última versión disponible de Ubuntu o Debian. Si es necesario, consulte nuestra guía "[Primeros pasos](/pages/cloud/vps/starting_with_a_vps#reinstallvps)". 
 
-Una vez instalado el sistema operativo, conéctese al VPS por SSH como se describe en la guía "[Primeros pasos con un VPS](../primeros-pasos-con-vps/)".
+Una vez instalado el sistema operativo, conéctese al VPS por SSH como se describe en la guía "[Primeros pasos con un VPS](/pages/cloud/vps/starting_with_a_vps)".
 
 En primer lugar, actualice los paquetes con sus últimas versiones:
 

@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguracja kilku serwerów dedykowanych w sieci vRack'
-slug: konfiguracja-kilku-serwerow-dedykowanych-vrack
 excerpt: 'Dowiedz się, jak połączyć kilka serwerów w ramach rozwiązania vRack'
-section: vRack
-order: 01
 updated: 2022-05-02
 ---
 
@@ -54,7 +51,7 @@ Wybierz z listy usługę vRack, aby wyświetlić listę usług, które chcesz za
 
 ### Etap 3: konfiguracja interfejsów sieciowych
 
-Kolejne etapy obejmują konfigurację najpopularniejszych ostatnio używanych dystrybucji/systemów operacyjnych. Pierwszy etap polega zawsze na [logowaniu się do serwera](https://docs.ovh.com/pl/dedicated/pierwsze-kroki-z-serwerem-dedykowanym/) przez SSH lub przez sesję RDP (dla systemu Windows). Poniższe przykłady zakładają, że jesteś zalogowany jako użytkownik z dużymi uprawnieniami (Administrator/sudo).
+Kolejne etapy obejmują konfigurację najpopularniejszych ostatnio używanych dystrybucji/systemów operacyjnych. Pierwszy etap polega zawsze na [logowaniu się do serwera](/pages/cloud/dedicated/getting-started-with-dedicated-server) przez SSH lub przez sesję RDP (dla systemu Windows). Poniższe przykłady zakładają, że jesteś zalogowany jako użytkownik z dużymi uprawnieniami (Administrator/sudo).
 
 > [!primary]
 >
@@ -218,6 +215,6 @@ Powtórz tę procedurę dla innych serwerów i przypisz każdemu z nich nieużyw
 
 ## Sprawdź również
 
-[Tworzenie kilku sieci VLAN w prywatnej sieci vRack](https://docs.ovh.com/pl/dedicated/tworzenie-vlan-vrack/).
+[Tworzenie kilku sieci VLAN w prywatnej sieci vRack](/pages/cloud/dedicated/creating-multiple-vlans-in-a-vrack).
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

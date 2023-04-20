@@ -1,8 +1,6 @@
 ---
 title: Inviare degli SMS da un indirizzo e-mail
-slug: inviare-sms-da-indirizzo-email
 excerpt: Scopri come inviare SMS da un indirizzo email
-section: Inviare SMS
 updated: 2020-06-04
 ---
 
@@ -87,7 +85,7 @@ Il risultato dovrebbe essere simile a quello dell’immagine qui di seguito. Per
 Se desideri utilizzare un numero breve che consenta la risposta, digita senderForResponse=1 come mittente.
 >
 
-Puoi consultare la guida che segue per qualsiasi dettaglio sugli utenti SMS: [Tutte le informazioni sugli utenti SMS](../tutto_sugli_utenti_sms/)
+Puoi consultare la guida che segue per qualsiasi dettaglio sugli utenti SMS: [Tutte le informazioni sugli utenti SMS](/pages/telecom/sms/tout_savoir_sur_les_utilisateurs_sms)
 
 
 ### Step 2: aggiungere dei campi facoltativi

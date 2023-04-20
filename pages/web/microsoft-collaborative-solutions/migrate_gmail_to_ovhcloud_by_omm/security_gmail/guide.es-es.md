@@ -1,6 +1,5 @@
 ---
 title: 'Cómo autorizar las conexiones poco seguras en Gmail'
-slug: seguridad_gmail
 hidden: true
 updated: 2022-04-06
 ---
@@ -13,7 +12,7 @@ updated: 2022-04-06
 <b>Esta guía explica cómo activar la opción «Autorizar las aplicaciones poco seguras» en su cuenta de Gmail.</b>
 
 > [!primary] Esta documentación constituye una etapa vinculada a la guía
-> [«Migrar una cuenta de Gmail a una dirección de correo electrónico de OVHcloud a través de OVH Mail Migrator»](https://docs.ovh.com/es/microsoft-collaborative-solutions/migracion-de-gmail-mediante-ovh-mail-migrator){.external}
+> [«Migrar una cuenta de Gmail a una dirección de correo electrónico de OVHcloud a través de OVH Mail Migrator»](/pages/web/microsoft-collaborative-solutions/migrate_gmail_to_ovhcloud_by_omm){.external}
 
 ## Procedimiento
 
@@ -54,4 +53,4 @@ Tras la validación, el siguiente mensaje le indica que su elección ha sido con
 
 ## Más información
 
-[«Migrar una cuenta de Gmail a una dirección de correo electrónico de OVHcloud a través de OVH Mail Migrator»](https://docs.ovh.com/es/microsoft-collaborative-solutions/migracion-de-gmail-mediante-ovh-mail-migrator){.external}
+[«Migrar una cuenta de Gmail a una dirección de correo electrónico de OVHcloud a través de OVH Mail Migrator»](/pages/web/microsoft-collaborative-solutions/migrate_gmail_to_ovhcloud_by_omm){.external}

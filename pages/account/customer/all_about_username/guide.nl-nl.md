@@ -2,7 +2,6 @@
 deprecated: true
 title: 'Alles over uw gebruikersnaam'
 excerpt: Gebruikersnaam
-slug: alles_over_uw_gebruikersnaam
 legacy_guide_number: g2123
 updated: 2021-07-01
 ---

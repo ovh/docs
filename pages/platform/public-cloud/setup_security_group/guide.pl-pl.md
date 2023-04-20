@@ -1,9 +1,7 @@
 ---
 title: 'Tworzenie i konfigurowanie grupy zabezpieczeń w interfejsie Horizon'
-slug: configure-security-group-horizon
 excerpt: 'Dowiedz się, jak utworzyć grupę zabezpieczeń i skonfigurować ją na instancji Public Cloud'
 legacy_guide_number: g1925
-section: Zarządzanie w interfejsie Horizon
 updated: 2021-08-24
 ---
 
@@ -22,13 +20,13 @@ Ze względów bezpieczeństwa możesz konfigurować i używać reguł filtrowani
 ## Wymagania początkowe
 
 - Projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/).
-- [Dostęp do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie-i-usuwanie-uzytkownika-openstack/)
+- [Dostęp do interfejsu Horizon](/pages/platform/public-cloud/create_and_delete_a_user)
 
 ## W praktyce
 
 ### Etap 1: utworzyć grupę zabezpieczeń
 
-Dostęp do interfejsu [Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie-i-usuwanie-uzytkownika-openstack/). Wybierz region, w którym chcesz utworzyć grupę zabezpieczeń, klikając przycisk w lewym górnym rogu.
+Dostęp do interfejsu [Horizon](/pages/platform/public-cloud/create_and_delete_a_user). Wybierz region, w którym chcesz utworzyć grupę zabezpieczeń, klikając przycisk w lewym górnym rogu.
 
 ![określenie regionu](images/security-group0.png){.thumbnail}
 

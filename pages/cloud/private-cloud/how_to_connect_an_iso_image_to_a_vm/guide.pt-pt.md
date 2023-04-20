@@ -1,11 +1,9 @@
 ---
 title: Ligar uma imagem ISO a uma VM (EN)
 excerpt: How do you connect an ISO image to a virtual machine?
-slug: connect_iso_to_vm
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/connect_iso_to_vm/'
+    canonical: '/pages/cloud/private-cloud/how_to_connect_an_iso_image_to_a_vm'
 legacy_guide_number: g1438
-section: Introdução
 updated: 2022-01-11
 ---
 

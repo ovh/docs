@@ -1,9 +1,6 @@
 ---
 title: AI Notebooks - Tutorial - Create and train a Rasa chatbot
-slug: notebooks/create-rasa-chatbot
 excerpt: Understand how to create  and train a chatbot with AI Notebooks
-section: AI Notebooks - Tutorials
-order: 10
 updated: 2023-03-20
 ---
 
@@ -11,7 +8,7 @@ updated: 2023-03-20
 
 ## Objective
 
-The aim of the tutorial is to understand how to create and train a chatbot model with AI Notebooks. We will create and train the chatbot with a Visual Studio Code notebook. At the end of the tutorial, we will have a model and we can speak to our chatbot. There is an another tutorial with which you can train your chatbot with the tool `AI Training`: [How to train a chatbot with AI Training](https://docs.ovh.com/asia/en/publiccloud/ai/training/tuto-train-rasa-chatbot/).
+The aim of the tutorial is to understand how to create and train a chatbot model with AI Notebooks. We will create and train the chatbot with a Visual Studio Code notebook. At the end of the tutorial, we will have a model and we can speak to our chatbot. There is an another tutorial with which you can train your chatbot with the tool `AI Training`: [How to train a chatbot with AI Training](/pages/platform/ai/training_tuto_07_train_rasa_chatbot).
 
 We will use the famous open source framework [Rasa](https://rasa.community/) to build the chatbot.
 
@@ -19,8 +16,8 @@ We will use the famous open source framework [Rasa](https://rasa.community/) to 
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 - A Public Cloud project created
-- The ovhai CLI interface installed on your system (more information [here](https://docs.ovh.com/asia/en/publiccloud/ai/cli/install-client/))
-- A [user for AI Notebooks](https://docs.ovh.com/asia/en/publiccloud/ai/users/)
+- The ovhai CLI interface installed on your system (more information [here](/pages/platform/ai/cli_10_howto_install_cli))
+- A [user for AI Notebooks](/pages/platform/ai/gi_01_manage_users)
 
 ## Instructions
 
@@ -34,17 +31,17 @@ To do this, launch this command on the terminal once the ovhai CLI is installed:
 ovhai token create -l model=rasabotRW --role operator token-RW-chatbot
 ```
 
-Here is the reference to install the CLI: [CLI Installation](https://docs.ovh.com/asia/en/publiccloud/ai/cli/install-client/).
+Here is the reference to install the CLI: [CLI Installation](/pages/platform/ai/cli_10_howto_install_cli).
 
 The token is now created. Don't forget to save the token to use it later.
 
-Now, if you already have trained some Rasa models with AI Training by following [our tutorial](https://docs.ovh.com/asia/en/publiccloud/ai/training/tuto-train-rasa-chatbot/), you already have created a container with your trained models. You can skip the next part and go directly [here](#visualstudiocode).
+Now, if you already have trained some Rasa models with AI Training by following [our tutorial](/pages/platform/ai/training_tuto_07_train_rasa_chatbot), you already have created a container with your trained models. You can skip the next part and go directly [here](#visualstudiocode).
 
 ### Understand storage concepts
 
 The obvious goal about using object storage and not the local storage of the AI Notebook is to decorrelate compute and storage, allowing us to stop or delete the notebook while keeping the data safe.
 
-If you want to know more about data storage concept, read this guide: [Create an object container](https://docs.ovh.com/asia/en/storage/object-storage/pcs/create-container/). 
+If you want to know more about data storage concept, read this guide: [Create an object container](/pages/cloud/storage/object_storage/pcs_create_container). 
 
 For the chatbot, we will create one object storage bucket. This bucket will be filled over time by our trained model output. The container in which the model will be saved does not need to be created. When we will launch our notebook, the container will be automatically created. 
 
@@ -112,11 +109,11 @@ If you want to use more functionalities of Rasa, please follow this link. We use
 
 If you want to deploy your created model with the chatbot, you can follow this tutorial:
 
-[How to deploy a chatbot](https://docs.ovh.com/asia/en/publiccloud/ai/deploy/rasa-chatbot)
+[How to deploy a chatbot](/pages/platform/ai/deploy_tuto_11_rasa_chatbot_flask)
 
 If you want to train a Rasa chatbot with the tool AI Training, please refer to this tutorial:
 
-[How to train a chatbot with docker and AI Training](https://docs.ovh.com/asia/en/publiccloud/ai/training/tuto-train-rasa-chatbot/)
+[How to train a chatbot with docker and AI Training](/pages/platform/ai/training_tuto_07_train_rasa_chatbot)
 
 ## Feedback
 

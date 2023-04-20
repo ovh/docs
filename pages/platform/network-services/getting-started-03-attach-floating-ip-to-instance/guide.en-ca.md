@@ -1,9 +1,6 @@
 ---
 title: Attaching a Floating IP to a Public Cloud instance
 excerpt: Find out how a Floating IP address functions and how to configure it
-slug: attaching-pci-floating-ip-to-instance
-section: Getting started
-order: 02
 updated: 2022-11-14
 ---
 
@@ -11,14 +8,14 @@ updated: 2022-11-14
 
 ## Objective
 
-Floating IPs are public IP addresses for [Public Cloud](https://www.ovhcloud.com/en-ca/public-cloud/), used to expose a private instance or a private network service to the public network. You can read more about it on our dedicated [concepts page](https://docs.ovh.com/ca/en/publiccloud/network-services/additional-ip-vs-floating-ip/).
+Floating IPs are public IP addresses for [Public Cloud](https://www.ovhcloud.com/en-ca/public-cloud/), used to expose a private instance or a private network service to the public network. You can read more about it on our dedicated [concepts page](/pages/platform/network-services/concepts-02-additional-ip-vs-floating-ip).
 
 **This guide explains how to attach Floating IP addresses to your instances.**
 
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud API](https://ca.api.ovh.com/), the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) or the OpenStack command line environment ([Tutorial](https://docs.ovh.com/ca/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/))
+- Access to the [OVHcloud API](https://ca.api.ovh.com/), the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) or the OpenStack command line environment ([Tutorial](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api))
 - The [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} tool installed on your working environment (optional)
 
 ## Understanding the Floating IP service
@@ -55,9 +52,9 @@ Next, we will use this Floating IP to connect to the instance (VM) from the outs
 >>
 >> Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 >> 
->> Before creating your instance, make sure you have created a [private network with Gateway](https://docs.ovh.com/ca/en/publiccloud/network-services/creating-private-network-with-gateway/).
+>> Before creating your instance, make sure you have created a [private network with Gateway](/pages/platform/network-services/getting-started-02-create-private-network-gateway).
 >>
->> To create a new instance, follow [this guide](https://docs.ovh.com/ca/en/public-cloud/public-cloud-first-steps/#create-instance) if necessary. 
+>> To create a new instance, follow [this guide](/pages/platform/public-cloud/public-cloud-first-steps#create-instance) if necessary. 
 >>
 >>
 >> > [!warning]
@@ -95,7 +92,7 @@ Next, we will use this Floating IP to connect to the instance (VM) from the outs
 >>
 >> **In case of an existing instance (created with a private network only).**
 >>
->> Please note that the private network must be linked to a gateway. For more information, consult this guide: [Creating a private network with Gateway](https://docs.ovh.com/ca/en/publiccloud/network-services/creating-private-network-with-gateway/).
+>> Please note that the private network must be linked to a gateway. For more information, consult this guide: [Creating a private network with Gateway](/pages/platform/network-services/getting-started-02-create-private-network-gateway).
 >>
 >> In the public cloud section, click on `Public IPs`{.action} in the left-hand menu under **Network**.
 >>

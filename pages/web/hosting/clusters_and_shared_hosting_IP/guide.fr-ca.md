@@ -1,8 +1,5 @@
 ---
 title: 'Liste des adresses IP des clusters et hebergements web'
-slug: liste-des-adresses-ip-des-clusters-et-hebergements-web
-section: "Configuration de l'hébergement"
-order: 01
 updated: 2021-01-08
 ---
 

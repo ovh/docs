@@ -1,9 +1,6 @@
 ---
 title: Installare i moduli in 1 click OVHcloud
 excerpt: Come creare il tuo sito utilizzando i moduli in 1 click
-slug: hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi
-section: CMS
-order: 01
 updated: 2023-01-31
 ---
 
@@ -23,8 +20,8 @@ I moduli in 1 click permettono di creare un sito Web in modo semplice e veloce, 
 
 - Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attiva
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
-- Utilizzare [una versione di PHP compatibile](https://docs.ovh.com/it/hosting/configura_php_sul_tuo_hosting_web_condiviso_2014_ovh/) sul tuo hosting Web.
-- Aver [configurato correttamente il file.ovhconfig](https://docs.ovh.com/it/hosting/configurare-file-ovhconfig/)
+- Utilizzare [una versione di PHP compatibile](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014) sul tuo hosting Web.
+- Aver [configurato correttamente il file.ovhconfig](/pages/web/hosting/ovhconfig_configuration)
 - La directory in cui verrà installato il tuo modulo deve essere vuota o al momento inesistente.
 - Aver impostato come multisito il dominio (ed eventualmente il sottodominio) che verrà utilizzato per il sito Web
 
@@ -56,7 +53,7 @@ Si apre una finestra da cui è possibile selezionare l’applicazione e sceglier
 
 Se il dominio non è presente nella lista, seleziona la scheda `Multisito`{.action} per aggiungerlo e ripeti l’operazione.
 
-Per maggiori informazioni, consulta la guida [Ospitare più siti su uno stesso hosting](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/){.external}.
+Per maggiori informazioni, consulta la guida [Ospitare più siti su uno stesso hosting](/pages/web/hosting/multisites_configure_multisite){.external}.
 
 Una volta selezionato il dominio, scegli se effettuare un'installazione base o avanzata:
 
@@ -106,7 +103,7 @@ Inserisci le informazioni richieste:
 
 - *Nome dell'amministratore*: l'identificativo per accedere all'interfaccia di gestione del tuo CMS
 - *Password*: la password per accedere all'interfaccia di gestione del tuo CMS
-- *Dominio*: il dominio su cui verrà installato il sito. Per maggiori informazioni, consulta la guida [Ospitare più siti su uno stesso hosting](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/).
+- *Dominio*: il dominio su cui verrà installato il sito. Per maggiori informazioni, consulta la guida [Ospitare più siti su uno stesso hosting](/pages/web/hosting/multisites_configure_multisite).
 - *Lingua*: la lingua di installazione del CMS
 - *Percorso di installazione*: questo campo viene compilato automaticamente quando si seleziona il dominio, ma è possibile completarlo aggiungendovi sottocartelle
 
@@ -142,13 +139,13 @@ Per maggiori informazioni sulle funzionalità disponibili ti consigliamo di cons
 
 [Scegli il CMS per il tuo sito Web](https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/){.external}
 
-[Ospitare più siti su uno stesso hosting](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/){.external}
+[Ospitare più siti su uno stesso hosting](/pages/web/hosting/multisites_configure_multisite){.external}
 
-[Gestire un database da un hosting condiviso](https://docs.ovh.com/it/hosting/gestisci_un_database_dal_tuo_hosting_condiviso/){.external}
+[Gestire un database da un hosting condiviso](/pages/web/hosting/sql_create_database){.external}
 
-[Gestire il vostro CMS](https://docs.ovh.com/it/hosting/1-click-module-management/)
+[Gestire il vostro CMS](/pages/web/hosting/cms_manage_1_click_module)
 
-[Disinstallare il tuo CMS](https://docs.ovh.com/it/hosting/1-click-module-management/#step-3-elimina-il-tuo-modulo)
+[Disinstallare il tuo CMS](/pages/web/hosting/cms_manage_1_click_module#step-3-elimina-il-tuo-modulo)
 
 Scopri la nostra soluzione [Cloud Database](https://www.ovh.it/cloud/cloud-databases/){.external}
 

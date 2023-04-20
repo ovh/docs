@@ -1,9 +1,6 @@
 ---
 title: Änderung der Größe einer Instanz im Kundencenter
 excerpt: Erfahren Sie hier, wie Sie die Größe einer Instanz in OVHcloud Kundencenter ändern
-slug: resize-an-instance-manager
-section: Verwaltung im OVHcloud Kundencenter
-order: 06
 updated: 2022-08-24
 ---
 
@@ -32,7 +29,7 @@ Durch einen Anstieg der Last oder aufgrund neuer Anforderungen kann es mit der Z
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) in Ihrem Kunden-Account.
+- Sie haben eine [Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps#schritt-3-instanz-erstellen) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
@@ -57,7 +54,7 @@ Scrollen Sie auf dem neuen Tab zum Abschnitt **Modell**, um die gewünschte Vorl
 Wenn die Größe der Disk 50 GB oder weniger beträgt, können Sie auf eine `Flexible Instanz`{.action} wechseln, wenn Sie möchten.
 
 > [!warning]
-> Achtung, wenn Sie eine Instanz vom Typ *Flex* bearbeiten, können Sie nicht über das Kundencenter auf eine klassische Instanz umstellen. Weitere Informationen finden Sie in unserer Anleitung [Revertierung einer Flex-Instanz](https://docs.ovh.com/de/public-cloud/revertieren-einer-flex-instanz/).
+> Achtung, wenn Sie eine Instanz vom Typ *Flex* bearbeiten, können Sie nicht über das Kundencenter auf eine klassische Instanz umstellen. Weitere Informationen finden Sie in unserer Anleitung [Revertierung einer Flex-Instanz](/pages/platform/public-cloud/revert_a_flex_instance).
 >
 
 Wenn Sie die Auswahl vorgenommen haben, klicken Sie auf `Modell ändern`{.action} um Ihre Auswahl zu bestätigen.

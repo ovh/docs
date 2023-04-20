@@ -1,9 +1,6 @@
 ---
 title: 'Devenire utente root e selezionare una password'
-slug: imposta_una_password_amministratore
 excerpt: "Imparare a usare l'utente root e creare una password per esso"
-section: Tutorial
-order: 08
 updated: 2022-03-24
 ---
 
@@ -21,14 +18,14 @@ Per eseguire alcune funzioni amministrative sul tuo server (ad esempio l'install
 
 ## Prerequisiti
 
-- Un'[istanza Public Cloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/#step-3-crea-unistanza) nel tuo account OVHcloud
+- Un'[istanza Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#step-3-crea-unistanza) nel tuo account OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
 ### Impostare la password di root  <a name="settingtherootpassword"></a>
 
-Per prima cosa accedi al server utilizzando una [connessione SSH](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/#step-4-accedi-alla-tua-istanza) con il tuo utente predefinito.
+Per prima cosa accedi al server utilizzando una [connessione SSH](/pages/platform/public-cloud/public-cloud-first-steps#step-4-accedi-alla-tua-istanza) con il tuo utente predefinito.
 
 Esegui il comando qui sotto e definisci una password per l’utente “root” (per motivi di sicurezza, la password non verrà mostrata):
 

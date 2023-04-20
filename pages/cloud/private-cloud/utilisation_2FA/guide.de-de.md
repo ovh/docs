@@ -1,8 +1,6 @@
 ---
 title: Zwei-Faktor-Authentifizierung (2FA) auf Ihrer Private Cloud Infrastruktur verwenden
-slug: 2FA-verwenden
 excerpt: Erfahren Sie hier, wie Sie die Zwei-Faktor-Authentifizierung einrichten, um Ihre Infrastruktur zu schützen
-section: OVHcloud Funktionen
 updated: 2022-06-10
 ---
 
@@ -85,7 +83,7 @@ Der einzige Unterschied besteht in der Autonomie des Benutzers, Token zu validie
 
 Es ist möglich, mehrere Drittanwendungen zu verwenden, die Zugriff auf vCenter benötigen.
 
-Diese Anwendungen müssen zuerst über die vCenter-Zugangseinstellungen, die Sie über Ihr [Kundencenter](../manager-ovh-private-cloud/#sicherheit) festlegen, autorisiert werden.
+Diese Anwendungen müssen zuerst über die vCenter-Zugangseinstellungen, die Sie über Ihr [Kundencenter](/pages/cloud/private-cloud/manager_ovh_private_cloud#sicherheit) festlegen, autorisiert werden.
 
 Daraufhin können die Anwendungen auf unsere Infrastrukturen zugreifen; das heißt allerdings nicht, dass sie zwangsweise auch die Zwei-Faktor-Authentifizierung verarbeiten.
 

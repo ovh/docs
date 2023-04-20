@@ -1,8 +1,6 @@
 ---
 title: Getting started with SSH
-slug: ssh-introduction
 excerpt: Find out how to use SSH connections to access your server
-section: 'Getting started'
 updated: 2022-06-08
 ---
 
@@ -31,7 +29,7 @@ The SSH (Secure Shell) communication protocol is the main practice to establish 
 
 ## Instructions
 
-There are multiple ways to authenticate a connection to a remote device via SSH. The following instructions will involve the authentication method with username and password. You can also configure SSH keys to enable secure logins without passwords. Find the details in our [SSH key guide](https://docs.ovh.com/ca/en/dedicated/creating-ssh-keys-dedicated/).
+There are multiple ways to authenticate a connection to a remote device via SSH. The following instructions will involve the authentication method with username and password. You can also configure SSH keys to enable secure logins without passwords. Find the details in our [SSH key guide](/pages/cloud/dedicated/creating-ssh-keys-dedicated).
 
 The login credentials (username and password) are sent to you by email after a server installation or reinstallation from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
 
@@ -39,9 +37,9 @@ The username corresponds to the operating system, for example `ubuntu` or `debia
 
 Be sure to consult our "Getting started" guides as well:
 
-- For a [dedicated server](https://docs.ovh.com/ca/en/dedicated/getting-started-dedicated-server/)
-- For a [dedicated server of the **Eco** product line](https://docs.ovh.com/ca/en/dedicated/getting-started-dedicated-server-eco/)
-- For a [VPS](https://docs.ovh.com/ca/en/vps/getting-started-vps/)
+- For a [dedicated server](/pages/cloud/dedicated/getting-started-with-dedicated-server)
+- For a [dedicated server of the **Eco** product line](/pages/cloud/dedicated/getting-started-with-dedicated-server-eco)
+- For a [VPS](/pages/cloud/vps/starting_with_a_vps)
 
 ### Connecting from a GNU/Linux distribution or macOS
 
@@ -165,10 +163,10 @@ Please consult the official FAQ and documentation of PuTTY for more information.
 
 ## Go further <a name="gofurther"></a>
 
-[Creating SSH keys](https://docs.ovh.com/ca/en/dedicated/creating-ssh-keys-dedicated/)
+[Creating SSH keys](/pages/cloud/dedicated/creating-ssh-keys-dedicated)
 
-[Dedicated server rescue mode](https://docs.ovh.com/ca/en/dedicated/rescue-mode/)
+[Dedicated server rescue mode](/pages/cloud/dedicated/rescue_mode)
 
-[VPS rescue mode](https://docs.ovh.com/ca/en/vps/rescue/)
+[VPS rescue mode](/pages/cloud/vps/rescue)
 
 Join our user community on <https://community.ovh.com/en/>.

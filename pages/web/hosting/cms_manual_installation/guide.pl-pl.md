@@ -1,9 +1,6 @@
 ---
 title: 'Ręczna instalacja modułu CMS w ramach hostingu WWW'
 excerpt: 'Dowiedz się więcej o systemach CMS kompatybilnych z hostingiem WWW'
-slug: hosting_www_reczna_instalacja_modulu_cms
-section: CMS
-order: 03
 updated: 2020-02-04
 ---
 
@@ -34,7 +31,7 @@ Nasze usługi hostingu WWW są kompatybilne z popularnymi systemami zarządzania
 >
 >Aby automatycznie zainstalować wybrany moduł CMS, wystarczy kilka kliknięć w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Zapoznaj się z następującym przewodnikiem:
 >
->[Automatyczna instalacja strony WWW za pomocą modułu CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/)
+>[Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web/hosting/cms_install_1_click_modules)
 >
 
 
@@ -52,7 +49,7 @@ Zespół wsparcia OVHcloud nie jest upoważniony do odpowiadania na pytania doty
 Pomoc można uzyskać na forach związanych z [WordPress](https://wordpress.org/support/).
 
 
-- Przewodnik dotyczący instalacji modułu WordPress: [CMS — ręczna instalacja modułu WordPress](https://docs.ovh.com/pl/hosting/cms_-_reczna_instalacja_modulu_wordpress/)
+- Przewodnik dotyczący instalacji modułu WordPress: [CMS — ręczna instalacja modułu WordPress](/pages/web/hosting/cms_manual_installation_wordpress)
 
 
 
@@ -72,7 +69,7 @@ Zespół wsparcia OVHcloud nie jest upoważniony do odpowiadania na pytania doty
 
 Pomoc można uzyskać na forach związanych z [Joomla!](http://forum.joomla.org/). 
 
-- Przewodnik dotyczący instalacji modułu Joomla!: [CMS — ręczna instalacja modułu Joomla!](https://docs.ovh.com/pl/hosting/cms_-_reczna_instalacja_modulu_joomla/)
+- Przewodnik dotyczący instalacji modułu Joomla!: [CMS — ręczna instalacja modułu Joomla!](/pages/web/hosting/cms_manual_installation_joomla)
 
 
 
@@ -97,7 +94,7 @@ Pomoc można uzyskać na forach związanych z
 [rozwiązaniem PrestaShop](https://www.prestashop.com/forums/).
 
 
-- Przewodnik dotyczący instalacji modułu PrestaShop: [CMS — ręczna instalacja modułu PrestaShop](https://docs.ovh.com/pl/hosting/cms_-_reczna_instalacja_modulu_prestashop/)
+- Przewodnik dotyczący instalacji modułu PrestaShop: [CMS — ręczna instalacja modułu PrestaShop](/pages/web/hosting/cms_manual_installation_prestashop)
 
 
 
@@ -116,7 +113,7 @@ Zespół wsparcia OVHcloud nie jest upoważniony do odpowiadania na pytania doty
 Pomoc można uzyskać na forach związanych z [Drupal](https://www.drupal.org).
 
 
--  Przewodnik dotyczący instalacji modułu Drupal: [CMS — ręczna instalacja modułu Drupal](https://docs.ovh.com/pl/hosting/cms_-_reczna_instalacja_modulu_drupal/)
+-  Przewodnik dotyczący instalacji modułu Drupal: [CMS — ręczna instalacja modułu Drupal](/pages/web/hosting/cms_manual_installation_drupal)
 
 
 
@@ -127,11 +124,11 @@ Pomoc można uzyskać na forach związanych z [Drupal](https://www.drupal.org).
 
 ## Sprawdź również
 
-[Przeniesienie strony WWW i kont e-mail do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}
+[Przeniesienie strony WWW i kont e-mail do OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-[Uruchomienie strony WWW na hostingu](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/){.external}
+[Uruchomienie strony WWW na hostingu](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
-[Instalacja kilku stron WWW na jednym hostingu](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/){.external}
+[Instalacja kilku stron WWW na jednym hostingu](/pages/web/hosting/multisites_configure_multisite){.external}
 
 Zobacz nasze [rozwiązania hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/){.external}
 

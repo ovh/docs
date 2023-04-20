@@ -1,8 +1,6 @@
 ---
 title: La desserte interne
-slug: la-desserte-interne
 legacy_guide_number: '7962664'
-section: Premiers pas
 updated: 2018-03-26
 ---
 

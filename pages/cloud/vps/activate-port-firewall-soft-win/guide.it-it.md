@@ -1,8 +1,6 @@
 ---
 title: Configura il firewall su Windows
 excerpt: Scopri come configurare un firewall Windows
-slug: vps-firewall-windows
-section: Per iniziare
 updated: 2023-02-17
 ---
 

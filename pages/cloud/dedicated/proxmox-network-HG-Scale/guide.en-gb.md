@@ -1,9 +1,6 @@
 ---
 title: 'Configuring the network on Proxmox VE on the High Grade & SCALE ranges'
-slug: proxmox-network-hg-scale
 excerpt: 'Find out how to configure the network on Proxmox VE on the High Grade & SCALE ranges'
-section: 'Advanced use'
-order: 5
 updated: 2023-01-09
 ---
 

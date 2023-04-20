@@ -1,11 +1,8 @@
 ---
 title: Włączanie szyfrowania maszyn wirtualnych (VM Encryption)
-slug: szyfrowanie-vm
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/szyfrowanie-vm/'
+    canonical: '/pages/cloud/private-cloud/vm_encrypt'
 excerpt: Dowiedz się, jak włączyć szyfrowanie maszyn wirtualnych
-section: Funkcjonalności VMware vSphere
-order: 07
 updated: 2020-11-18
 ---
 

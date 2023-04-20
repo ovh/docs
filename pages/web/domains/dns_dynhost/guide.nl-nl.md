@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: 'Configuratie van een dynamische DNS voor een domeinnaam'
-slug: hosting_dynhost
 excerpt: 'Ontdek hoe u een dynamisch DNS-record (DynHost) voor uw OVH domeinnaam kunt configureren'
-section: 'DNS en DNS-zone'
 legacy_guide_number: g2024
 updated: 2018-07-19
 ---
@@ -51,7 +49,7 @@ Nadat u alle vereiste velden hebt ingevuld, klikt u op `Bevestigen`{.action}. De
 
 ### Stap 2: Creëer het dynamische DNS-record (DynHost).
 
-Deze tweede stap omvat het aanmaken van het DNS-record die dynamisch moet worden bijgewerkt. Ter herinnering: het mag in de OVH DNS-zone van uw domeinnaam nog niet bestaan als een A-record. Om dit te controleren en indien nodig het A-record te verwijderen, kunt u onze handleiding lezen over het [bewerken van een OVH DNS-zone](https://docs.ovh.com/nl/domains/hosting_hoe_wijzig_ik_mijn_dns_zone/){.external}.
+Deze tweede stap omvat het aanmaken van het DNS-record die dynamisch moet worden bijgewerkt. Ter herinnering: het mag in de OVH DNS-zone van uw domeinnaam nog niet bestaan als een A-record. Om dit te controleren en indien nodig het A-record te verwijderen, kunt u onze handleiding lezen over het [bewerken van een OVH DNS-zone](/pages/web/domains/dns_zone_edit){.external}.
 
 Als u klaar bent om het DynHost-record te maken, gaat u naar het tabblad `DynHost`{.action} en klikt u vervolgens op `DynHost toevoegen`{.action}. Voer in het popup-venster de volgende informatie in:
 

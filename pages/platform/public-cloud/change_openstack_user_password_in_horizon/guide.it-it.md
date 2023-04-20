@@ -1,8 +1,6 @@
 ---
 title: 'Modificare la password di un utente OpenStack in Horizon'
 excerpt: 'Scopri come modificare una password utente nell’interfaccia Horizon'
-slug: modifica-della-password-di-un-utente-openstack
-section: Gestione da Horizon
 updated: 2018-03-07
 ---
 
@@ -14,7 +12,7 @@ updated: 2018-03-07
 
 ## Obiettivo
 
-Dopo aver creato un utente OpenStack e generato una password di accesso seguendo la guida [Creare un utente per accedere a Horizon](https://docs.ovh.com/it/public-cloud/horizon/){.external}, è possibile effettuarne la modifica attraverso l'interfaccia Horizon. È importante ricordare che questa operazione comporta l’annullamento delle precedenti credenziali.
+Dopo aver creato un utente OpenStack e generato una password di accesso seguendo la guida [Creare un utente per accedere a Horizon](/pages/platform/public-cloud/introducing_horizon){.external}, è possibile effettuarne la modifica attraverso l'interfaccia Horizon. È importante ricordare che questa operazione comporta l’annullamento delle precedenti credenziali.
 
 **Questa guida ti mosta come personalizzare una password utente dall’interfaccia Horizon.**
 

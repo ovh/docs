@@ -1,11 +1,8 @@
 ---
 title: "Managing the storage space for an email account"
-slug: manage-email-quota
 excerpt: "Find out how to manage and optimise an email account storage space"
-section: 'Troubleshooting'
-order: 02
 routes:
-  canonical: "https://docs.ovh.com/gb/en/emails/manage-email-quota/"
+  canonical: "/products/email-manage-email-quota"
 updated: 2022-11-17
 ---
 
@@ -28,8 +25,8 @@ Every OVHcloud email account has a dedicated storage space. By managing your sto
 > **Special cases**
 >
 > - Regarding the free Start 10M hosting solution, you will need to activate it beforehand in order to create an email account. You can do this from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) by going to the domain name concerned.
-> - For [web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/), you will need to activate your MX Plan before continuing with this guide. To do this, please refer to our guide on [Activating the email addresses included in your web hosting plan](https://docs.ovh.com/ie/en/hosting/activate-email-web-hosting/).
+> - For [web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/), you will need to activate your MX Plan before continuing with this guide. To do this, please refer to our guide on [Activating the email addresses included in your web hosting plan](/pages/web/hosting/activate-email-hosting).
 
 ## Instructions <a name="instructions"></a>
 
-Follow our guide [Managing the storage space for an email account](https://docs.ovh.com/ie/en/emails/manage-email-quota/) in the "Hosted email - MX Plan" section.
+Follow our guide [Managing the storage space for an email account](/products/email-manage-email-quota) in the "Hosted email - MX Plan" section.

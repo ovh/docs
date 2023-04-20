@@ -1,11 +1,8 @@
 ---
 title: AI Deploy - Accessing your app with tokens
-slug: deploy/tokens
 excerpt: Discover how to create a scoped token and query your AI Deploy app
-section: AI Deploy - Guides
-order: 03
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tokens/'
+    canonical: '/pages/platform/ai/deploy_guide_03_tokens'
 updated: 2023-04-04
 ---
 
@@ -89,7 +86,7 @@ This newly generated token provides read access over all resources tagged with t
 
 #### Operator token
 
-An operator token grants read access along with management access for the matching apps. This means that you can manage the AI Deploy app lifecycle (start/stop/delete) using either the CLI (more info [here](https://docs.ovh.com/us/es/publiccloud/ai/cli/install-client/)) or the [AI Training API](https://gra.ai.cloud.ovh.net/) by providing this token.
+An operator token grants read access along with management access for the matching apps. This means that you can manage the AI Deploy app lifecycle (start/stop/delete) using either the CLI (more info [here](/pages/platform/ai/cli_10_howto_install_cli)) or the [AI Training API](https://gra.ai.cloud.ovh.net/) by providing this token.
 
 This Operator token will be scoped on a specific AI Deploy app and we will use the default `ovh/id` label to do so (since it is reserved, there is only one AI Deploy app that can match this label selector).
 
@@ -99,7 +96,7 @@ This Operator token will be scoped on a specific AI Deploy app and we will use t
 
 ![token generation input operator](images/07-token-gen-input-op.png){.thumbnail}
 
-Additional information about the use of a token to manage an AI Training resource can be found [here](https://docs.ovh.com/us/es/publiccloud/ai/cli/app-token-cli/#use-the-app-token).
+Additional information about the use of a token to manage an AI Training resource can be found [here](/pages/platform/ai/cli_13_howto_app_token_cli#use-the-app-token).
 
 ### Using a token to query an AI Deploy app
 

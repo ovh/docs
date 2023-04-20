@@ -1,8 +1,6 @@
 ---
 title: 'Assegnare un MAC virtuale a un Additional IP'
-slug: network-virtual-mac
 excerpt: 'Scopri come aggiungere un indirizzo MAC virtuale e come associarlo a un Additional IP'
-section: 'Rete e IP'
 updated: 2022-12-20
 ---
 
@@ -23,7 +21,7 @@ OVHcloud ti permette di associare un indirizzo MAC virtuale a un indirizzo IP al
 - Possedere un [server dedicato](https://www.ovh.it/server_dedicati/){.external}
 - Disporre di un [indirizzo Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/){.external} o di un blocco Additional IP (RIPE)
 - Essere connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o all'[API OVHcloud](https://api.ovh.com/)
-- Il tuo server deve supportare i MAC virtuali. Consulta [questa guida](https://docs.ovh.com/it/dedicated/network-support-virtual-mac/) per determinarlo.
+- Il tuo server deve supportare i MAC virtuali. Consulta [questa guida](/pages/cloud/dedicated/network_support_virtual_mac) per determinarlo.
 
 > [!warning]
 > Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
@@ -31,7 +29,7 @@ OVHcloud ti permette di associare un indirizzo MAC virtuale a un indirizzo IP al
 > Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
 
 > [!primary]
-> Se non conosci l'utilizzo dell'API OVHcloud, consulta la nostra guida [Iniziare a utilizzare le API OVHcloud](https://docs.ovh.com/it/api/first-steps-with-ovh-api/).
+> Se non conosci l'utilizzo dell'API OVHcloud, consulta la nostra guida [Iniziare a utilizzare le API OVHcloud](/pages/account/api/first-steps).
 
 ## Procedura
 

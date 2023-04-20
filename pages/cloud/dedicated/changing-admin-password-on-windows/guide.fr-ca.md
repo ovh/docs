@@ -1,9 +1,6 @@
 ---
 title: 'Changer le mot de passe administrateur sur un serveur dédié Windows'
-slug: changer-mot-passe-admin-windows
 excerpt: 'Découvrez comment changer le mot de passe administrateur sur un serveur dédié Windows'
-section: 'Diagnostic et mode Rescue'
-order: 2
 updated: 2021-01-12
 ---
 
@@ -11,7 +8,7 @@ updated: 2021-01-12
 
 ## Objectif
 
-Lors de l’installation ou de la réinstallation d’un système d’exploitation Windows, un mot de passe pour l’accès administrateur vous est fourni. Nous vous conseillons vivement de le modifier, comme expliqué dans notre guide intitulé « [Sécuriser un serveur dédié](../securiser-un-serveur-dedie/){.external} ». Si vous avez perdu votre mot de passe admin, vous devrez le réinitialiser en mode rescue.
+Lors de l’installation ou de la réinstallation d’un système d’exploitation Windows, un mot de passe pour l’accès administrateur vous est fourni. Nous vous conseillons vivement de le modifier, comme expliqué dans notre guide intitulé « [Sécuriser un serveur dédié](/pages/cloud/dedicated/securing-a-dedicated-server){.external} ». Si vous avez perdu votre mot de passe admin, vous devrez le réinitialiser en mode rescue.
 
 **Ce guide vous accompagnera tout au long du processus de modification du mot de passe admin de votre serveur, via les configurations de mode rescue disponibles pour un système d'exploitation Windows.**
 
@@ -42,11 +39,11 @@ Une fois la modification terminée, cliquez sur `...`{.action} à droite de « S
 
 ![rescuereboot](images/adminpw_win_02.png){.thumbnail}
 
-Pour plus d'informations sur le mode rescue, consultez [ce guide](../ovh-rescue/).
+Pour plus d'informations sur le mode rescue, consultez [ce guide](/pages/cloud/dedicated/rescue_mode).
 
 ### Étape 2 : monter la partition système
 
-Connectez-vous à votre serveur via SSH. Si nécessaire, consultez le guide d'[introduction au SSH](../ssh-introduction/).
+Connectez-vous à votre serveur via SSH. Si nécessaire, consultez le guide d'[introduction au SSH](/pages/cloud/dedicated/ssh_introduction).
 <br>Étant donné qu'il s'agit d'un serveur Windows, les partitions seront intitulées « Microsoft LDM data ».
 
 ```
@@ -302,7 +299,7 @@ Une fois la modification terminée, cliquez sur `...`{.action} à droite de « S
 
 ![rescuereboot](images/adminpw_win_02.png){.thumbnail}
 
-Pour plus d'informations sur le mode rescue, consultez [ce guide](../ovh-rescue/).
+Pour plus d'informations sur le mode rescue, consultez [ce guide](/pages/cloud/dedicated/rescue_mode).
 
 #### Étape 2 : supprimer le mot de passe actuel
 
@@ -337,8 +334,8 @@ Poursuivez la lecture de ce guide à l'[etape 5: définir un nouveau mot de pass
 
 ## Aller plus loin
 
-[Activer et utiliser le mode rescue](../ovh-rescue/)
+[Activer et utiliser le mode rescue](/pages/cloud/dedicated/rescue_mode)
 
-[Utilisation de l'IPMI pour les serveurs dédiés](../utilisation-ipmi-serveurs-dedies/)
+[Utilisation de l'IPMI pour les serveurs dédiés](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers)
 
 Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.

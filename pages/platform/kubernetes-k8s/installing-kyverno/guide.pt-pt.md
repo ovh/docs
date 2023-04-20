@@ -1,11 +1,8 @@
 ---
 title: Enforcing policy management on OVHcloud Managed Kubernetes with Kyverno
-slug: installing-kyverno
 excerpt: Find out how to secure your OVHcloud Managed Kubernetes and deploy Kyverno for policy management
-section: Security
-order: 0
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-kyverno/'
+    canonical: '/pages/platform/kubernetes-k8s/installing-kyverno'
 updated: 2022-08-11
 ---
 
@@ -23,8 +20,7 @@ updated: 2022-08-11
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -89,7 +85,7 @@ You can use the *Reset cluster* function in the Public Cloud section of the [OVH
 
 ## Requirements
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-hello-world) documentation.
 
 ## Instructions
 

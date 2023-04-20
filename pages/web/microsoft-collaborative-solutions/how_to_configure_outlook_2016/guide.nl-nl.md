@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Configuratie van uw Exchange-account in Outlook 2016 voor Windows
-slug: configuratie-outlook-2016
 excerpt: Leer hoe u uw Exchange-account in Outlook 2016 voor Windows kunt configureren
-section: Configuratie van Exchange
 updated: 2021-07-05
 ---
 
@@ -24,7 +22,7 @@ De Exchange-accounts kunnen worden geconfigureerd met compatibele e-mailsoftware
 
 > [!primary]
 >
-> Gebruikt u Outlook 2016 voor Mac? Raadpleeg onze handleidingen: [Configuratie van uw Exchange-account in Outlook 2016 voor Mac](https://docs.ovh.com/nl/microsoft-collaborative-solutions/configuratie-outlook-2016-mac/){.external}.
+> Gebruikt u Outlook 2016 voor Mac? Raadpleeg onze handleidingen: [Configuratie van uw Exchange-account in Outlook 2016 voor Mac](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016_mac){.external}.
 >
 
 ## Instructies
@@ -64,8 +62,8 @@ OVH biedt ook een web-app met [teamwerk-functies](https://www.ovh.com/nl/emails/
 
 ## Verder
 
-[Configuratie van het e-mailadres dat is opgenomen in MX Plan of in een webhostingsplan in Outlook 2016 voor Windows](https://docs.ovh.com/nl/emails/configuratie-outlook-2016/){.external}
+[Configuratie van het e-mailadres dat is opgenomen in MX Plan of in een webhostingsplan in Outlook 2016 voor Windows](/pages/web/emails/how_to_configure_outlook_2016){.external}
 
-[Configuratie van uw Email Pro-account in Outlook 2016 voor Windows](https://docs.ovh.com/nl/emails-pro/configuratie-outlook-2016/){.external}
+[Configuratie van uw Email Pro-account in Outlook 2016 voor Windows](/pages/web/emails-pro/how_to_configure_outlook_2016){.external}
 
 Ga in gesprek met andere communityleden op <https://community.ovh.com/en/>.

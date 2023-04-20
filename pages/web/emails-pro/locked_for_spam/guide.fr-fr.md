@@ -1,9 +1,6 @@
 ---
 title: 'Que faire en cas de compte bloqué pour spam ?'
-slug: bloque-pour-spam
 excerpt: 'Découvrez comment réagir lorsque votre adresse a été bloquée pour spam'
-section: Diagnostic
-order: 1
 updated: 2020-04-20
 ---
 
@@ -22,4 +19,4 @@ Si vous avez reçu un e-mail indiquant que l'une de vos adresses e-mail est bloq
 
 ## En pratique
 
-Suivez notre guide [Que faire en cas de compte bloqué pour spam ?](https://docs.ovh.com/fr/microsoft-collaborative-solutions/bloque-pour-spam/){.external} dans la rubrique « Solutions collaboratives Microsoft ».
+Suivez notre guide [Que faire en cas de compte bloqué pour spam ?](/pages/web/microsoft-collaborative-solutions/locked_for_spam){.external} dans la rubrique « Solutions collaboratives Microsoft ».

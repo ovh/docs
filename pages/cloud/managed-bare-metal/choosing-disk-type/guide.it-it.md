@@ -1,12 +1,9 @@
 ---
 title: Scegliere il formato del disco
-slug: scegliere-formato-del-disco
 routes:
-    canonical: 'https://docs.ovh.com/it/private-cloud/scegliere-formato-del-disco/'
+    canonical: '/pages/cloud/private-cloud/quel_format_de_disque_choisir'
 excerpt: Come scegliere tra i diversi tipi di dischi VMware
 legacy_guide_number: '1441955'
-section: Gestione delle macchine virtuali
-order: 04
 updated: 2020-11-18
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Configuring kubectl on an OVHcloud Managed Kubernetes cluster
-slug: configuring-kubectl
 excerpt: Find out how to retrieve the `kubectl` configuration file to interact with an OVHcloud Managed Kubernetes cluster.
-section: User guides
-order: 0
 updated: 2022-04-27
 ---
 
@@ -140,6 +137,6 @@ Or you can install and use [kubectx](https://github.com/ahmetb/kubectx).
 
 ## Go further
 
-To deploy your first application on your Kubernetes cluster, we suggest you refer to our guide to [Deploying an application](../deploying-an-application/).
+To deploy your first application on your Kubernetes cluster, we suggest you refer to our guide to [Deploying an application](/pages/platform/kubernetes-k8s/deploying-an-application).
 
 Join our [community of users](https://community.ovh.com/en/).

@@ -1,8 +1,6 @@
 ---
 title: 'Konfiguracja adresu Additional IP jako aliasu'
-slug: network-ip-alias
 excerpt: 'Dowiedz się, jak dodać kilka adresów Additional IP do interfejsu'
-section: 'Sieć & IP'
 updated: 2022-12-07
 ---
 

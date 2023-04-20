@@ -1,9 +1,6 @@
 ---
 title: CLI - Commands reference for data
-slug: cli/data-cli
 excerpt: Learn how to manage your object storage data with the ovhai CLI
-section: Command Line Interface
-order: 206
 updated: 2021-06-16
 ---
 
@@ -15,7 +12,7 @@ This guide covers the basic commands needed to manipulate your data on object st
 
 ## Requirements
 
-- a working `ovhai` CLI. See our guide on [how to install ovhai CLI](https://docs.ovh.com/au/en/publiccloud/ai/cli/install-client).
+- a working `ovhai` CLI. See our guide on [how to install ovhai CLI](/pages/platform/ai/cli_10_howto_install_cli).
 
 ## Instructions
 

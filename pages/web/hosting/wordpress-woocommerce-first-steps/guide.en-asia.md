@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Using WooCommerce with WordPress"
-slug: wordpress-woocommerce-first-steps
 excerpt: "Find out how to use the WooCommerce solution with the WordPress CMS"
-section: "Tutorials"
-order: 023
 updated: 2023-03-07
 ---
 
@@ -25,9 +22,9 @@ This tutorial explains how to create an online store with the open-source plugin
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/)  that contains at least one database
 - A [domain name](https://www.ovhcloud.com/asia/domains/).
-- [WordPress installed](https://docs.ovh.com/asia/en/hosting/web_hosting_web_hosting_modules/) on your web hosting plan
+- [WordPress installed](/pages/web/hosting/cms_install_1_click_modules) on your web hosting plan
 
-If one is not already installed, [add an SSL certificate](https://docs.ovh.com/asia/en/hosting/activate-https-website-ssl/#step-1-activate-the-ssl-certificate-on-the-web-hosting-plan) for the domain name associated with your website before you continue.
+If one is not already installed, [add an SSL certificate](/pages/web/hosting/ssl-activate-https-website#step-1-activate-the-ssl-certificate-on-the-web-hosting-plan) for the domain name associated with your website before you continue.
   
 ## Instructions
   

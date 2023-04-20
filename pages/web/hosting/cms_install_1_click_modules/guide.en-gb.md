@@ -1,9 +1,6 @@
 ---
 title: 'Setting up your website with 1-click modules'
-slug: web_hosting_web_hosting_modules
 excerpt: 'Find out how to set up your website using our 1-click modules'
-section: CMS
-order: 01
 updated: 2023-01-31
 ---
 
@@ -21,8 +18,8 @@ updated: 2023-01-31
 
 - You have an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) in your customer account.
 - You have access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
-- Your web hosting uses a [compatible PHP version](https://docs.ovh.com/gb/en/hosting/how_to_configure_php_on_your_ovh_web_hosting_package_2014/).
-- You have [correctly configured your .ovhconfig file](https://docs.ovh.com/gb/en/hosting/configuring-file-ovhconfig/).
+- Your web hosting uses a [compatible PHP version](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014).
+- You have [correctly configured your .ovhconfig file](/pages/web/hosting/ovhconfig_configuration).
 - The directory where your module will be installed must be empty or currently non-existent.
 - The website’s domain name (with a subdomain, if applicable) is declared as a multisite.
 
@@ -56,7 +53,7 @@ In the window that opens, select the CMS you would like to use, and the domain y
 
 If the domain you want to use does not appear in the list, go to the `Multi-site`{.action} tab to add it, then try adding a module again.
 
-You can also refer to the guide [Hosting multiple websites on your web hosting plan](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/).
+You can also refer to the guide [Hosting multiple websites on your web hosting plan](/pages/web/hosting/multisites_configure_multisite).
 
 Once you have selected your domain, you must choose between basic or advanced installation:
 
@@ -106,7 +103,7 @@ Now, you will need to enter the following information to configure the module:
 - **Admin name or email address:** the username you will use to log in to your CMS admin interface.
 - **Password:** the password you will use to log in to your CMS admin interface.
 - **Domain:** the domain you wish to install your website on.
-You can also refer to the guide [Hosting multiple websites on your web hosting plan](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/).
+You can also refer to the guide [Hosting multiple websites on your web hosting plan](/pages/web/hosting/multisites_configure_multisite).
 - **Language:** the language that the CMS will be installed in.
 - **Installation path:** this is automatically entered when you select your domain. You can also add subdirectories to it.
 
@@ -144,11 +141,11 @@ Below, we've included some links from these CMS publishers, to help you get star
 
 [Choosing a CMS for building your website](https://www.ovhcloud.com/en-gb/web-hosting/uc-cms-comparison/){.external}
 
-[Hosting multiple websites on your web hosting plan](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/)
+[Hosting multiple websites on your web hosting plan](/pages/web/hosting/multisites_configure_multisite)
 
-[Manage your CMS](https://docs.ovh.com/gb/en/hosting/1-click-module-management/)
+[Manage your CMS](/pages/web/hosting/cms_manage_1_click_module)
 
-[Uninstall your CMS](https://docs.ovh.com/gb/en/hosting/1-click-module-management/#step-3-delete-your-module)
+[Uninstall your CMS](/pages/web/hosting/cms_manage_1_click_module#step-3-delete-your-module)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 

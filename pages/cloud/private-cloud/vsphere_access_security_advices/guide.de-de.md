@@ -1,8 +1,6 @@
 ---
 title: vSphere Web Client sichern
-slug: vsphere-web-zugang-sichern
 excerpt: Hier erfahren Sie, wie Sie den Zugang zu Ihrem vSphere Web Client sichern.
-section: Erste Schritte
 updated: 2020-06-30
 ---
 

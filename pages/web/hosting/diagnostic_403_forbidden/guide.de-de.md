@@ -1,9 +1,6 @@
 ---
 title: Was tun bei dem Fehler "403 forbidden"?
 excerpt: Erfahren Sie hier, wie Sie Ihre Website wieder online bringen, wenn “403 forbidden“ angezeigt wird
-slug: diagnose-403-forbidden
-section: Diagnose
-order: 08
 updated: 2022-06-16
 ---
 
@@ -32,14 +29,14 @@ Es kann auch vorkommen, dass unsere Sicherheitsbots nach der Erkennung von siche
 ## Voraussetzungen
 
 - Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
-- Sie verfügen über die [Login-Daten](../verbindung-ftp-speicher-webhosting/#schritt-1-erforderliche-verbindungsinformationen-abrufen) für den Speicherplatz Ihres Hostings.
+- Sie verfügen über die [Login-Daten](/pages/web/hosting/ftp_connection#schritt-1-erforderliche-verbindungsinformationen-abrufen) für den Speicherplatz Ihres Hostings.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
 
 ## In der praktischen Anwendung
 
 ### Schritt 1: Die Situation analysieren
 
-Wenn die Seite "**403 forbidden**" aufgrund einer fehlerhaften Änderung Ihrer Website auftaucht, setzen Sie den [Speicherplatz Ihres Hostings zu einem früheren Zeitpunkt zurück](../webhosting-speicherplatz-wiederherstellen/).
+Wenn die Seite "**403 forbidden**" aufgrund einer fehlerhaften Änderung Ihrer Website auftaucht, setzen Sie den [Speicherplatz Ihres Hostings zu einem früheren Zeitpunkt zurück](/pages/web/hosting/ftp_save_and_backup).
 
 Wenn Sie mit den verfügbaren Backups den Zugang zu Ihrer Website nicht wiederherstellen können, kontaktieren Sie einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/).
 
@@ -53,8 +50,8 @@ Wenn "**403 forbidden**" ohne Aktion Ihrerseits erschienen ist und Sie diesbezü
 
 - Wenden Sie Sicherheitsupdates an;
 - Überprüfen Sie, ob ein Antivirus-Dienst installiert ist, aktualisieren Sie ihn und starten Sie einen vollständigen Scan. Wenn Sie keine solche Software besitzen, konsultieren Sie vor der Installation einen spezialisierten [Dienstleister](https://partner.ovhcloud.com/de/directory/);
-- Ändern Sie alle Ihre persönlichen Passwörter, insbesondere Ihrer E-Mail-Accounts, und halten Sie sich dabei an diese [bewährten Vorgehensweisen](https://docs.ovh.com/de/customer/Passwort-verwalten/#ein-adaquates-passwort-erstellen);
-- Ändern Sie die Passwörter Ihres OVHcloud Webhostings, um die Zugänge zu [Ihrem FTP-Speicherplatz](../ftp-benutzer-passwort-aendern/), sowie der [Datenbanken](../datenbank-passwort-aendern/) abzusichern.
+- Ändern Sie alle Ihre persönlichen Passwörter, insbesondere Ihrer E-Mail-Accounts, und halten Sie sich dabei an diese [bewährten Vorgehensweisen](/pages/account/customer/manage-ovh-password#ein-adaquates-passwort-erstellen);
+- Ändern Sie die Passwörter Ihres OVHcloud Webhostings, um die Zugänge zu [Ihrem FTP-Speicherplatz](../ftp-benutzer-passwort-aendern/), sowie der [Datenbanken](/pages/web/hosting/sql_change_password) abzusichern.
 
 > [!warning]
 >
@@ -71,15 +68,15 @@ Beachten Sie zunächst das Datum des Versands der E-Mail von OVHcloud, in der di
 
 #### Fall 1: Ihr Hosting wurde vor weniger als zwei Wochen deaktiviert
 
-Wenn Ihr Hosting vor weniger als zwei Wochen geschlossen wurde und nur eine Website enthält, stellen Sie Ihren Speicherplatz gemäß den Anweisungen in dieser [Anleitung](../webhosting-speicherplatz-wiederherstellen/#speicherplatz-uber-das-kundencenter-wiederherstellen) wieder her.
+Wenn Ihr Hosting vor weniger als zwei Wochen geschlossen wurde und nur eine Website enthält, stellen Sie Ihren Speicherplatz gemäß den Anweisungen in dieser [Anleitung](/pages/web/hosting/ftp_save_and_backup#speicherplatz-uber-das-kundencenter-wiederherstellen) wieder her.
 
-Wenn Ihr Hosting vor weniger als zwei Wochen geschlossen wurde und mehrere Websites enthält, stellen Sie nur die Dateien mit den verdächtigen Dateien gemäß den Anweisungen in dieser [Anleitung](../webhosting-speicherplatz-wiederherstellen/#datei-mithilfe-einer-software-oder-uber-ein-interface-wiederherstellen) wieder her.
+Wenn Ihr Hosting vor weniger als zwei Wochen geschlossen wurde und mehrere Websites enthält, stellen Sie nur die Dateien mit den verdächtigen Dateien gemäß den Anweisungen in dieser [Anleitung](/pages/web/hosting/ftp_save_and_backup#datei-mithilfe-einer-software-oder-uber-ein-interface-wiederherstellen) wieder her.
 
 > [!warning]
 >
 > Die Wiederherstellung Ihres Speicherplatzes allein reicht nicht aus, um potenzielle Sicherheitslücken zu beheben, die bereits auf Ihrer Website vorhanden sind.
 >
-> Um diese Sicherheitslücken zu identifizieren, können Sie die [Web-Logs](https://docs.ovh.com/de/hosting/webhosting_die_statistiken_und_logs_meiner_website_einsehen/#logs) Ihres Hostings analysieren oder einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) kontaktieren, um eine Sicherheitsüberprüfung Ihrer Lösungen durchzuführen.
+> Um diese Sicherheitslücken zu identifizieren, können Sie die [Web-Logs](/pages/web/hosting/logs_and_statistics#logs) Ihres Hostings analysieren oder einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) kontaktieren, um eine Sicherheitsüberprüfung Ihrer Lösungen durchzuführen.
 >
 
 #### Fall 2: Ihr Hosting wurde vor mehr als zwei Wochen deaktiviert
@@ -97,7 +94,7 @@ Wenn Ihr Hosting vor mehr als zwei Wochen geschlossen wurde, kontaktieren Sie ei
 
 > [!primary]
 >
-> Wenn Sie die Anwendung **FileZilla** installieren möchten, um die Dateien Ihrer Website zu bearbeiten, folgen Sie den Anweisungen in dieser [Anleitung](../webhosting_hilfe_zur_verwendung_von_filezilla/).
+> Wenn Sie die Anwendung **FileZilla** installieren möchten, um die Dateien Ihrer Website zu bearbeiten, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web/hosting/ftp_filezilla_user_guide).
 >
 
 Öffnen Sie FileZilla und verbinden Sie sich mit Ihrem Speicherplatz. Klicken Sie dann im Menü auf `Server`{.action} und dann auf `Benutzerdefinierten Befehl eingeben`{.action}. (Je nach der Version von FileZilla kann die Bezeichnung variieren.)
@@ -118,7 +115,7 @@ Die Antwort "**200 Permissions changed on /**" bestätigt, dass die Änderung er
 
 Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Web Cloud`{.action} und öffnen Sie `Hosting-Pakete`{.action} im linken Menü. Wechseln Sie zum Tab `FTP-SSH`{.action} des betroffenen Hostings.
 
-Klicken Sie anschließend auf den Button `FTP-Explorer`{.action} und loggen Sie sich entsprechend den [hier beschriebenen Anweisungen](../verbindung-ftp-speicher-webhosting/#1-via-ftp-explorer-verbinden) in Ihrem FTP-Speicherplatz ein. Klicken Sie auf `Erweitert`{.action} und dann auf den Button `Weiter`{.action} neben "**Sende benutzerdefinierte FTP-Kommandos zum FTP-Server**".
+Klicken Sie anschließend auf den Button `FTP-Explorer`{.action} und loggen Sie sich entsprechend den [hier beschriebenen Anweisungen](/pages/web/hosting/ftp_connection#1-via-ftp-explorer-verbinden) in Ihrem FTP-Speicherplatz ein. Klicken Sie auf `Erweitert`{.action} und dann auf den Button `Weiter`{.action} neben "**Sende benutzerdefinierte FTP-Kommandos zum FTP-Server**".
 
 ![net2ftp](images/net2ftp.png){.thumbnail}
 
@@ -130,11 +127,11 @@ Die Antwort "**200 Permissions changed on /**" bestätigt, dass die Änderung er
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Was tun, wenn Ihre WordPress Seite gehackt wurde?](../was_tun_wenn_ihre_wordpress_seite_gehackt_wurde/)
+[Was tun, wenn Ihre WordPress Seite gehackt wurde?](/pages/web/hosting/cms_what_to_do_if_your_site_is_hacked)
 
-[Aktivieren der Web Application Firewall](../webhosting_aktivieren_der_web_application_firewall/)
+[Aktivieren der Web Application Firewall](/pages/web/hosting/multisites_activating_application_firewall)
 
-[PHP-Version Ihres Webhostings ändern](../konfiguration_von_php_fur_ein_ovh_webhosting_2014/)
+[PHP-Version Ihres Webhostings ändern](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

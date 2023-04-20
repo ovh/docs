@@ -1,9 +1,6 @@
 ---
 title: Comment résilier votre offre Private Cloud 
-slug: comment-resilier-le-private-cloud
 excerpt: Découvrez comment demander la résiliation d'une infrastructure Private cloud
-section: Fonctionnalités OVHcloud
-order: 09
 updated: 2020-07-08
 ---
 

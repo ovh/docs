@@ -1,8 +1,6 @@
 ---
 title: 'Configurar un bloque de IP en el vRack'
-slug: configurar-un-bloque-ip-en-el-vrack
 excerpt: 'Cómo configurar un bloque de direcciones IP públicas en el vRack'
-section: vRack
 updated: 2022-07-26
 ---
 
@@ -148,10 +146,10 @@ Reinicie el servidor para que se apliquen los cambios realizados.
 
 ## Más información
 
-[Configurar varios servidores dedicados en el vRack](../configurar-vrack-en-servidor-dedicado/){.external}
+[Configurar varios servidores dedicados en el vRack](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server){.external}
 
-[Crear varias VLAN en el vRack](../crear-vlan-vrack/){.external}
+[Crear varias VLAN en el vRack](/pages/cloud/dedicated/creating-multiple-vlans-in-a-vrack){.external}
 
-[Configurar el vRack entre la solución Public Cloud y un servidor dedicado](../configurar-vrack-entre-public-cloud-servidor-dedicado/){.external}
+[Configurar el vRack entre la solución Public Cloud y un servidor dedicado](/pages/cloud/dedicated/configuring-the-vrack-between-the-public-cloud-and-a-dedicated-server){.external}
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

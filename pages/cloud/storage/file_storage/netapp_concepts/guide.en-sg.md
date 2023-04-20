@@ -1,9 +1,6 @@
 ---
 title: Enterprise File Storage - Concepts
-slug: netapp/concepts
 excerpt: Find out the basic concepts of Enterprise File Storage
-section: Enterprise File Storage
-order: 010
 updated: 2022-04-07
 ---
 
@@ -27,7 +24,7 @@ You can order one or more storage spaces between 1 TiB and 58 TiB with your OVHc
 
 When you order an Enterprise File Storage service between 1 and 58 TiB via your OVHcloud account, you will receive an NFS storage space.
 
-By default, the OVHcloud account is the administrative, technical and billing contact for the service. You can find more information in our guide [“Managing contacts for your services”](https://docs.ovh.com/sg/en/customer/managing-contacts/).
+By default, the OVHcloud account is the administrative, technical and billing contact for the service. You can find more information in our guide [“Managing contacts for your services”](/pages/account/customer/managing_contacts).
 
 ![Enterprise File Storage 1](images/Netapp_Concept_1.png)
 
@@ -52,7 +49,7 @@ Once you have ordered your Enterprise File Storage service, you will have a serv
 > - The size of a volume can be scaled up or down.
 >
 
-You can find more information in our guide on [“Managing volumes”](https://docs.ovh.com/sg/en/storage/file-storage/netapp/volume-acl/).
+You can find more information in our guide on [“Managing volumes”](/pages/cloud/storage/file_storage/netapp_volume_acl).
 
 ### The principle of ACL operation
 
@@ -67,7 +64,7 @@ A rule consists of a source IP address of your network in the format x.x.x.x/x a
 > You can create one or more rules per volume.
 >
 
-You can find more information in the guide [“Managing volume ACLs”](https://docs.ovh.com/sg/en/storage/file-storage/netapp/volume-acl/).
+You can find more information in the guide [“Managing volume ACLs”](/pages/cloud/storage/file_storage/netapp_volume_acl).
 
 ### The working principle of snapshots
 
@@ -83,7 +80,7 @@ The daily observed consumption of snapshots is between 1% and 5% of the volume's
 
 ![Enterprise File Storage 4](images/Netapp_Concept_4.png)
 
-You can find more information in the [“Managing volume snapshots”](https://docs.ovh.com/sg/en/storage/file-storage/netapp/volume-snapshots/) guide.
+You can find more information in the [“Managing volume snapshots”](/pages/cloud/storage/file_storage/netapp_volume_snapshots) guide.
 
 ### Enterprise File Storage service limits
 

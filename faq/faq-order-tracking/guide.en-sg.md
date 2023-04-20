@@ -33,7 +33,7 @@ Log in to the OVHcloud Control Panel, then look at the dashboard in the centre o
 
 #### Tips and tricks
 
-We have created a [detailed guide](https://docs.ovh.com/sg/en/billing/managing-ovh-orders/) to help you manage your orders.
+We have created a [detailed guide](/pages/account/billing/managing_ovh_orders) to help you manage your orders.
 
 ### How do I change my order?
 
@@ -48,7 +48,7 @@ If you have already paid for your order, please contact our [customer service te
 
 If you do not pay for an order, will automatically be cancelled after 24 hours.
 
-As a private customer, if you have already paid for your order and it is not linked to a custom service (e.g. a domain name) or a licence (e.g. Office 365 or SharePoint), you can retract your order within 14 days. If you need further information on this, please refer to our [detailed guide](https://docs.ovh.com/sg/en/billing/managing-ovh-orders/#apply-the-right-of-withdrawal) on this topic.
+As a private customer, if you have already paid for your order and it is not linked to a custom service (e.g. a domain name) or a licence (e.g. Office 365 or SharePoint), you can retract your order within 14 days. If you need further information on this, please refer to our [detailed guide](/pages/account/billing/managing_ovh_orders#apply-the-right-of-withdrawal) on this topic.
 
 #### Tips and tricks
 

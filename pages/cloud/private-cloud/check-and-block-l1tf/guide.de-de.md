@@ -1,8 +1,6 @@
 ---
 title: 'Sicherheitslücke L1TF überprüfen und blockieren'
-slug: sicherheitsluecke-l1tf-pruefen-blockieren
 excerpt: 'So schließen Sie die Sicherheitslücke L1TF'
-section: Sicherheit
 updated: 2019-02-26
 ---
 
@@ -58,7 +56,7 @@ Dieser Prozess wird in 4 Phasen unterteilt.
 
 ### 1. Update-Phase
 
-Das Update für vCenter wird von OVHcloud durchgeführt. Der Patch für die ESXi-Hosts wird von Ihnen selbst durchgeführt und ist im [Update Manager](https://docs.ovh.com/de/private-cloud/verwendung_des_vmware_update_manager/) verfügbar.
+Das Update für vCenter wird von OVHcloud durchgeführt. Der Patch für die ESXi-Hosts wird von Ihnen selbst durchgeführt und ist im [Update Manager](/pages/cloud/private-cloud/vmware_update_manager) verfügbar.
 
 Die Liste mit den Patches für ESXi-Hosts finden Sie in [diesem Dokument](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
 

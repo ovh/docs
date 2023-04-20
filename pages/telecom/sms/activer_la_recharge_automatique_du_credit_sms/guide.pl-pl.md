@@ -1,8 +1,6 @@
 ---
 title: Zarządzanie zasileniami SMS i aktywowanie automatycznego doładowania
-slug: aktywowanie-automatycznego-ladowania-zasilen-sms
 excerpt: Dowiedz się, jak zarządzać zasileniami SMS OVHcloud
-section: Zarządzanie ofertą
 updated: 2023-02-09
 ---
 
@@ -43,7 +41,7 @@ Koszt wysyłki wiadomości SMS (w zasileniach) w zależności od ich miejsca prz
 >
 > Wiadomość SMS może zawierać ograniczoną liczbę znaków, zależną od rodzaju kodowania. Szczegóły dotyczące kodowania i dopuszczalnych znaków są dostępne w tym przewodniku:
 > 
-> [Wysyłanie wiadomości SMS z Panelu klienta OVHcloud](../wysylanie-wiadomosci-sms-z-panelu-klienta/#etap-2-tworzenie-wiadomosci-sms)
+> [Wysyłanie wiadomości SMS z Panelu klienta OVHcloud](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#etap-2-tworzenie-wiadomosci-sms)
 >
 
 ### Automatyczne doładowanie

@@ -1,11 +1,8 @@
 ---
 title: CLI - Commands reference
-slug: cli/overview-cli
 excerpt: Learn how to use the CLI to interact with AI Training
-section: Command Line Interface
-order: 205
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/overview-cli/'
+    canonical: '/pages/platform/ai/cli_15_commands_reference'
 updated: 2021-04-20
 ---
 
@@ -17,7 +14,7 @@ This guide covers the usage of the **ovhai** CLI.
 
 ## Requirements
 
--   a working `ovhai` CLI [how to install ovhai CLI](https://docs.ovh.com/pl/publiccloud/ai/cli/install-client)
+-   a working `ovhai` CLI [how to install ovhai CLI](/pages/platform/ai/cli_10_howto_install_cli)
 
 ## Instructions
 

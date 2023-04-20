@@ -1,8 +1,6 @@
 ---
 title: 'Daten via SFTP auf einem Dedicated Server ablegen oder herunterladen'
-slug: daten-via-sftp-exportieren-und-ablegen
 excerpt: 'Erfahren Sie hier, wie Sie SFTP zur Datenübertragung verwenden'
-section: Tutorial
 updated: 2021-05-18
 ---
 
@@ -33,9 +31,9 @@ Bei einer Migration kann es erforderlich werden, eine große Datenmenge von eine
 
 ### FileZilla für das Übertragen Ihrer Daten verwenden
 
-Das SFTP Protokoll kann verwendet werden, um Dateien über eine gesicherte Verbindung (SSH) zu übertragen. Für dieses Szenario gibt es zwei Möglichkeiten: entweder haben Sie normalen Zugriff auf Ihren Server oder verbinden sich im [Rescue-Modus](../ovh-rescue/).
+Das SFTP Protokoll kann verwendet werden, um Dateien über eine gesicherte Verbindung (SSH) zu übertragen. Für dieses Szenario gibt es zwei Möglichkeiten: entweder haben Sie normalen Zugriff auf Ihren Server oder verbinden sich im [Rescue-Modus](/pages/cloud/dedicated/rescue_mode).
 
-Standardmäßig erhält ein Server, der ein GNU/Linux-Betriebssystem verwendet, über Port 22 SSH-Zugriff. Möglicherweise haben Sie diesen Port jedoch bereits geändert (zum Beispiel anhand unserer [Anleitung zur Sicherung eines Dedicated Servers](../dedizierten-server-sichern/)).
+Standardmäßig erhält ein Server, der ein GNU/Linux-Betriebssystem verwendet, über Port 22 SSH-Zugriff. Möglicherweise haben Sie diesen Port jedoch bereits geändert (zum Beispiel anhand unserer [Anleitung zur Sicherung eines Dedicated Servers](/pages/cloud/dedicated/securing-a-dedicated-server)).
 
 #### **Wenn Sie Zugriff auf Ihren Server haben**
 
@@ -55,7 +53,7 @@ Der Fortschritt der Datenübertragung wird dann unten im FileZilla-Interface ang
 
 #### **Wenn Ihr Server im Rescue-Modus ist**
 
-Im Rescue-Modus müssen Sie zuerst Ihre Partition mounten. Folgen Sie hierzu den Anweisungen in dieser [Anleitung](../ovh-rescue/).
+Im Rescue-Modus müssen Sie zuerst Ihre Partition mounten. Folgen Sie hierzu den Anweisungen in dieser [Anleitung](/pages/cloud/dedicated/rescue_mode).
 
 Wenn die Partition gemountet ist, verwenden Sie den FileZilla-Client wie oben beschrieben, und nutzen Sie Port 22 für die Verbindung zu Ihrem Server.
 
@@ -70,8 +68,8 @@ Wenn Sie den Mount korrekt erstellt haben, befinden sich die Daten im Verzeichni
 
 ## Weiterführende Informationen
 
-[Rescue-Modus aktivieren und verwenden](../ovh-rescue/)
+[Rescue-Modus aktivieren und verwenden](/pages/cloud/dedicated/rescue_mode)
 
-[Einen dedizierten Server sichern](../dedizierten-server-sichern/)
+[Einen dedizierten Server sichern](/pages/cloud/dedicated/securing-a-dedicated-server)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

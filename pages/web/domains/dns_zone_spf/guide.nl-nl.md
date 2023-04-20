@@ -2,8 +2,6 @@
 deprecated: true
 title: Toevoegen van een SPF-veld aan de configuratie van uw domeinnaam
 excerpt: Ontdek hoe u een SPF-veld kunt toevoegen aan de configuratie van uw domeinnaam
-slug: het_spf_veld
-section: Geavanceerd gebruik
 updated: 2022-09-12
 ---
 
@@ -179,6 +177,6 @@ Zodra de informatie is ingevuld, klikt u op `Volgende`{.action}, zorgt u ervoor 
 
 ## Verder
 
-[Algemene informatie over al onze DNS.](https://docs.ovh.com/nl/domains/gedeelde_hosting_algemene_informatie_over_dns_servers/){.external}
+[Algemene informatie over al onze DNS.](/pages/web/domains/dns_server_general_information){.external}
 
 Ga in gesprek met andere communitygebruikers op [https://community.ovh.com](https://community.ovh.com){.external}.

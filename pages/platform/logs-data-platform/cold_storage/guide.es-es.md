@@ -1,11 +1,8 @@
 ---
 title: Keeping your logs for years with the Cold Storage feature
-slug: cold-storage
-order: 4
 excerpt: This long-term storage feature keeps your logs safely and cost efficiently over several years.
-section: Features
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/cold-storage/'
+    canonical: '/pages/platform/logs-data-platform/cold_storage'
 updated: 2023-01-16
 ---
 
@@ -17,7 +14,7 @@ The Logs Data Platform gives you a custom log retention system, you can adjust i
 
 ## Requirements
 
-As implied in the title, you will need a stream. If you don't know what a stream is or if you don't have any, you can follow this [quick start tutorial](../quick-start){.ref}. You must edit the stream configuration to activate the cold storage. Click on the Edit button in the menu to go to the stream configuration page.
+As implied in the title, you will need a stream. If you don't know what a stream is or if you don't have any, you can follow this [quick start tutorial](/pages/platform/logs-data-platform/quick_start){.ref}. You must edit the stream configuration to activate the cold storage. Click on the Edit button in the menu to go to the stream configuration page.
 
 ![Streams menu](images/streams-menu-1.png){.thumbnail}
 
@@ -30,7 +27,7 @@ On this page you will find the long-term storage toggle. Once enabled, you will 
 - The compression algorithm. We currently support [GZIP](http://www.gzip.org/){.external}, [DEFLATE (AKA zip)](http://www.zlib.net/feldspar.html){.external}, [Zstandard](https://facebook.github.io/zstd/){.external} or [LZMA (used by 7-Zip)](http://www.7-zip.org/7z.html){.external}.
 - The retention duration of your archives (from one year to ten years).
 - The storage backend for your logs (on [OVH Object Storage](https://www.ovhcloud.com/fr/public-cloud/object-storage/){.external} or [OVH Public Archive](https://www.ovhcloud.com/fr/public-cloud/cloud-archive/){.external}).
-- The content of your archives : GELF, one special field [X-OVH-TO-FREEZE](../field-naming-conventions){.ref}, or both (you will get two separate archive in this case)
+- The content of your archives : GELF, one special field [X-OVH-TO-FREEZE](/pages/platform/logs-data-platform/field_naming_conventions){.ref}, or both (you will get two separate archive in this case)
 - The activation of the notification for each new archive available.
 
 Note that OVHcloud Object Storage is more expensive than OVHcloud Public Archive but allow you to immediately download your archive whereas there is a delay (from 10 minutes to 4h) before being able to download your files on Public Archive. Depending or the urgency of your futures logs retrieval, you will have to choose your backend accordingly.
@@ -188,7 +185,7 @@ The installation and configuration procedure is described on the related [github
 
 #### Content of the archive
 
-The data you retrieve in the archive is by default in [GELF format](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification){.external}. It is ordered by the field timestamp and retain all additional fields that you would have add (with your [Logstash collector](../logstash-input){.ref} for example). Since this format is fully compatible with JSON, you can use it right away in any other system.
+The data you retrieve in the archive is by default in [GELF format](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification){.external}. It is ordered by the field timestamp and retain all additional fields that you would have add (with your [Logstash collector](/pages/platform/logs-data-platform/logstash_input){.ref} for example). Since this format is fully compatible with JSON, you can use it right away in any other system.
 
 ```json
  {"_facility":"gelf-rb","_id":11,"_monitoring":"cb1068c485e738655cfe10df5df3a9a185aa8e301b5c8d0747b3502e8fdcc157","_type":"direct","full_message":"monitoring message (11) at 2017-05-17 09:58:08 +0000","host":"shinken","level":1,"short_message":"monitoring msg (11)","timestamp":1.4950150886486998E9}
@@ -206,7 +203,7 @@ Remember, that you can also use a special field X-OVH-TO-FREEZE on your logs to 
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start){.ref}
-- Documentation: [Guides](../){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/quick_start){.ref}
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

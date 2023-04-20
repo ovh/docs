@@ -1,9 +1,6 @@
 ---
 title: 'Delegare i diritti su un account email'
 excerpt: 'Come assegnare i diritti del tuo email a un altro account'
-slug: exchange_2013_assegna_i_diritti_full_access_a_un_account
-section: Funzionalità degli account Exchange
-order: 03
 updated: 2020-10-24
 ---
 
@@ -66,11 +63,11 @@ Ora che la delega è pronta, non resta che utilizzarla. Prima di proseguire, ass
 
 Il procedimento è diverso in base ai diritti delegati e al software o all’interfaccia Web con cui accedi al tuo account email. Continua a consultare questa guida in base al tipo di diritto delegato.
 
-- [Utilizzare il “diritto di accesso”](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2013_assegna_i_diritti_full_access_a_un_account/#utilizzare-il-diritto-di-accesso){.external}
+- [Utilizzare il “diritto di accesso”](/pages/web/microsoft-collaborative-solutions/feature_delegation#utilizzare-il-diritto-di-accesso){.external}
 
-- [Utilizzare il “diritto di invio”](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2013_assegna_i_diritti_full_access_a_un_account/#utilizzare-il-diritto-di-invio){.external}
+- [Utilizzare il “diritto di invio”](/pages/web/microsoft-collaborative-solutions/feature_delegation#utilizzare-il-diritto-di-invio){.external}
 
-- [Utilizzare il “diritto di invio da parte di”](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2013_assegna_i_diritti_full_access_a_un_account/#utilizzare-il-diritto-invia-da-parte-di){.external}
+- [Utilizzare il “diritto di invio da parte di”](/pages/web/microsoft-collaborative-solutions/feature_delegation#utilizzare-il-diritto-invia-da-parte-di){.external}
 
 > [!warning]
 >

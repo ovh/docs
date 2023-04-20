@@ -1,9 +1,6 @@
 ---
 title: Einen Domainnamen zu einem anderen Registrar transferieren
-slug: ausgehender-transfer-einer-generischen-oder-geografischen-domain
 excerpt: Erfahren Sie hier, wie Sie Ihre Domain von OVHcloud zu einem Provider Ihrer Wahl transferieren
-section: Transfer
-order: 04
 updated: 2023-03-10
 ---
 
@@ -25,9 +22,9 @@ Um unbefugte Transferanfragen zu verhindern, sind Domains in der Regel vom Regis
 >
 > Soll der betreffende Domainname bei OVHcloud registriert bleiben, aber hinsichtlich der Verwaltungs- oder Eigentumsverhältnisse bearbeitet werden, ist ein ausgehender Transfer der Domain nicht der geeignete Vorgang.
 >
-> Um die Verwaltung des Domainnamens einem anderen OVHcloud Kunden-Account zu übertragen, muss stattdessen eine **Änderung der Kontakte** durchgeführt werden. Die Vorgehensweise wird in [dieser Anleitung](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/) beschrieben.
+> Um die Verwaltung des Domainnamens einem anderen OVHcloud Kunden-Account zu übertragen, muss stattdessen eine **Änderung der Kontakte** durchgeführt werden. Die Vorgehensweise wird in [dieser Anleitung](/pages/account/customer/managing_contacts) beschrieben.
 >
-> Wenn auch der **Inhaber des Domainnamens** geändert werden muss, sollte dies erfolgen, **bevor** Sie die Kontakte des Domainnamens ändern. Verwenden Sie dazu unsere Anleitung zum [Inhaberwechsel für Domainnamen](https://docs.ovh.com/de/domains/wechsel_des_domaininhabers/).
+> Wenn auch der **Inhaber des Domainnamens** geändert werden muss, sollte dies erfolgen, **bevor** Sie die Kontakte des Domainnamens ändern. Verwenden Sie dazu unsere Anleitung zum [Inhaberwechsel für Domainnamen](/pages/web/domains/trade_domain).
 >
 
 ## Voraussetzungen
@@ -38,7 +35,7 @@ Um unbefugte Transferanfragen zu verhindern, sind Domains in der Regel vom Regis
 
 > [!primary]
 >
-> Wenn Sie der **Inhaber** der Domain sind, deren Verwaltung Ihnen im OVHcloud Kundencenter jedoch nicht möglich ist, weder über Ihren eigenen Zugang noch den Administrator-Kontakt der Domain, konsultieren Sie bitte [diese Anleitung](../../customer/verwaltung-der-kontakte/#sonderfall-bei-domaininhabern), bevor Sie fortfahren.
+> Wenn Sie der **Inhaber** der Domain sind, deren Verwaltung Ihnen im OVHcloud Kundencenter jedoch nicht möglich ist, weder über Ihren eigenen Zugang noch den Administrator-Kontakt der Domain, konsultieren Sie bitte [diese Anleitung](/pages/account/customer/managing_contacts#sonderfall-bei-domaininhabern), bevor Sie fortfahren.
 >
 
 ## In der praktischen Anwendung
@@ -106,7 +103,7 @@ Weitere Informationen hierzu erhalten Sie bei Ihren neuen Registrar.
 
 ## Weiterführende Informationen
 
-[Transfer einer .co.uk Domain](https://docs.ovh.com/de/domains/transfer-ausgehend-einer-domainnamen-couk/)
+[Transfer einer .co.uk Domain](/pages/web/domains/transfer_outgoing_couk)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

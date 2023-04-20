@@ -1,6 +1,5 @@
 ---
 title: 'Consentire alle applicazioni meno sicure di accedere al tuo account Gmail'
-slug: sicurezza-gmail
 hidden: true
 updated: 2022-04-06
 ---
@@ -14,7 +13,7 @@ Questa guida ti mostra come attivare l’opzione “Consenti app meno sicure” 
 
 > [!primary]
 > Questa documentazione costituisce uno step della guida
-> [“Migrare un account Gmail verso OVHcloud con OVH Mail Migrator”](../)
+> [“Migrare un account Gmail verso OVHcloud con OVH Mail Migrator”](/pages/web/microsoft-collaborative-solutions/migrate_gmail_to_ovhcloud_by_omm)
 
 ## Procedura
 
@@ -55,4 +54,4 @@ Dopo la convalida, questo messaggio ti conferma che la tua scelta è stata presa
 
 ## Per saperne di più
 
-[“Migrare un account Gmail verso OVHcloud con OVH Mail Migrator”](../){.external}
+[“Migrare un account Gmail verso OVHcloud con OVH Mail Migrator”](/pages/web/microsoft-collaborative-solutions/migrate_gmail_to_ovhcloud_by_omm){.external}

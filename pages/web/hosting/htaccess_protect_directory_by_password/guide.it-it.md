@@ -1,9 +1,6 @@
 ---
 title: "Proteggi l'interfaccia di gestione del tuo sito con un file.htaccess"
-slug: condividi-htaccess-come-proteggere-laccesso-a-una-cartella-tramite-autenticazione
 excerpt: "Come proteggere l'accesso alla gestione del tuo sito con un file .htaccess"
-section: Scrittura e autenticazione
-order: 02
 updated: 2021-09-20
 ---
 
@@ -30,7 +27,7 @@ A volte potrebbe essere necessario proteggere l'accesso a una parte del tuo sito
 
 - Disporre di una [soluzione di hosting Web](https://www.ovhcloud.com/it/web-hosting/) OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Avere a disposizione le credenziali di accesso allo [spazio di storage dell'hosting](../accedere-spazio-storage-ftp-hosting-web/)
+- Avere a disposizione le credenziali di accesso allo [spazio di storage dell'hosting](/pages/web/hosting/ftp_connection)
 
 ## Procedura
 
@@ -43,7 +40,7 @@ A volte potrebbe essere necessario proteggere l'accesso a una parte del tuo sito
 
 ### Step 1: creare l'arborescenza
 
-Accedi allo [spazio di storage](../accedere-spazio-storage-ftp-hosting-web/) del tuo hosting. Apri la ["Cartella di root"](../configurare-un-multisito-su-un-hosting-web/#step-21-aggiungere-un-dominio-registrato-in-ovhcloud) del tuo sito.
+Accedi allo [spazio di storage](../accedere-spazio-storage-ftp-hosting-web/) del tuo hosting. Apri la ["Cartella di root"](/pages/web/hosting/multisites_configure_multisite#step-21-aggiungere-un-dominio-registrato-in-ovhcloud) del tuo sito.
 Crea un file "crypter.php".
 
 ![root_folder](images/root_folder.png){.thumbnail}
@@ -72,7 +69,7 @@ echo nl2br("$string_1 \n $string_2 \n $string_3");
  ?>
 ```
 
-Se disponi di un hosting [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/), accedi in [SSH](../hosting_condiviso_il_protocollo_ssh/) al tuo hosting. Esegui questo comando:
+Se disponi di un hosting [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/), accedi in [SSH](/pages/web/hosting/ssh_on_webhosting) al tuo hosting. Esegui questo comando:
 
 ```bash
 php crypter.php
@@ -120,9 +117,9 @@ Richiedi valid-user
 
 > [!warning]
 >
-> In questo esempio, è necessario sostituire "il_tuo_login_ftp" con il tuo [identificativo FTP](../accedere-spazio-storage-ftp-hosting-web/#step-1-recupera-i-dati-necessari-a-effettuare-laccesso). Nella sezione `Hosting`{.action}, è disponibile nella scheda `FTP-SSH`{.action} del tuo hosting.
+> In questo esempio, è necessario sostituire "il_tuo_login_ftp" con il tuo [identificativo FTP](/pages/web/hosting/ftp_connection#step-1-recupera-i-dati-necessari-a-effettuare-laccesso). Nella sezione `Hosting`{.action}, è disponibile nella scheda `FTP-SSH`{.action} del tuo hosting.
 >
-> Sostituisci, se necessario, nell'esempio qui sotto ["Cartella di root"](../configurare-un-multisito-su-un-hosting-web/#step-21-aggiungere-un-dominio-registrato-in-ovhcloud) con il nome della cartella contenente i file del tuo sito.
+> Sostituisci, se necessario, nell'esempio qui sotto ["Cartella di root"](/pages/web/hosting/multisites_configure_multisite#step-21-aggiungere-un-dominio-registrato-in-ovhcloud) con il nome della cartella contenente i file del tuo sito.
 >
 
 #### Blocca l'accesso a uno o più file
@@ -149,7 +146,7 @@ Require valid-user
 
 ## Spingiti oltre <a name="gofurther"></a>
 
-[Hosting condiviso: tutto sul file .htaccess](../hosting_condiviso_tutto_sul_file_htaccess/)
+[Hosting condiviso: tutto sul file .htaccess](/it/hosting/hosting_condiviso_tutto_sul_file_htaccess/)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 

@@ -1,9 +1,6 @@
 ---
 title: 'All our Public Cloud Network Services guides'
-slug: public-cloud-network-services-redirection
 excerpt: 'Find all our our Public Cloud Network Services guides'
-section: 'Networking'
-order: 00
 updated: 2022-11-02
 ---
 
@@ -11,7 +8,7 @@ updated: 2022-11-02
 
 ## Objective
 
-Explore our Public Cloud Network services guides on [this page](https://docs.ovh.com/ie/en/publiccloud/network-services/).
+Explore our Public Cloud Network services guides on [this page](/products/public-cloud-network).
 
 ## Go further
 

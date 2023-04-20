@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: 'Implementatie van een GPU instance'
-slug: implementatie-gpu-instance
 excerpt: 'Ontdek hoe u een GPU instance op Linux of Windows kunt opzetten'
-section: 'Vanaf OVH’s Control Panel'
 updated: 2019-12-06
 ---
 

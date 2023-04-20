@@ -3,7 +3,6 @@ deprecated: true
 title: 'Hosting: Geautomatiseerde taken/Cron'
 excerpt: 'Hosting: Geautomatiseerde taken/Cron'
 id: '1990'
-slug: hosting_geautomatiseerde_takencron
 legacy_guide_number: g1990
 updated: 2022-12-01
 ---

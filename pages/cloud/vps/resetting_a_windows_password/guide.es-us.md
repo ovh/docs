@@ -1,8 +1,6 @@
 ---
 title: 'Restaurar una contraseña Windows'
-slug: restaurar-una-contrasena-windows
 excerpt: Guía para restaurar una contraseña en Windows
-section: Diagnóstico y modo de rescate
 updated: 2020-11-25
 ---
 
@@ -18,7 +16,7 @@ Es posible que deba restaurar una contraseña en su VPS con Windows. Esta guía 
 
 ## Requisitos
 
-- El VPS debe estar en modo de rescate (para más información, consulte [Activar el modo de rescate en un VPS](../rescue)).
+- El VPS debe estar en modo de rescate (para más información, consulte [Activar el modo de rescate en un VPS](/pages/cloud/vps/rescue)).
 
 ## Procedimiento
 
@@ -46,7 +44,7 @@ chntpw -u Administrator SAM
 
 Pulse `1`{.action} e `Intro`{.action} para borrar la contraseña. Pulse `q`{.action} para salir de la consola de órdenes de cambio de contraseña. A continuación, pulse `y`{.action} para escribir los cambios.
 
-Ya puede sacar el VPS del modo de rescate. (para más información, consulte la guía [Activar el modo de rescate en un VPS](../rescue))
+Ya puede sacar el VPS del modo de rescate. (para más información, consulte la guía [Activar el modo de rescate en un VPS](/pages/cloud/vps/rescue))
 
 La próxima vez que se conecte, no tendrá que introducir una contraseña para la sesión en la que haya cambiado la contraseña.
 

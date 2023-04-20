@@ -1,10 +1,8 @@
 ---
 title: OVF Tool (EN)
-slug: ovf-tool
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/ovf-tool/'
+    canonical: '/pages/cloud/private-cloud/ovf_tool'
 excerpt: Find out how to export or import virtual machines using the OVF Tool
-section: Gestão das máquinas virtuais
 updated: 2022-01-31
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: HA-NAS - Frequently Asked Questions
-slug: nas/faq
 excerpt: Do you have questions about HA-NAS? Here are the most frequently asked questions
-section: HA-NAS
-order: 02
 updated: 2021-09-09
 ---
 

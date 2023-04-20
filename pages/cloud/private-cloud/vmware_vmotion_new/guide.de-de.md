@@ -1,9 +1,6 @@
 ---
 title: VMware vMotion
-slug: vmware-vmotion-neu
 excerpt: Verlagern Sie Ihre virtuelle Maschine bei laufendem Betrieb auf einen anderen Host (Hot-Swap)
-section: VMware vSphere Funktionen
-order: 04
 updated: 2020-07-10
 ---
 
@@ -30,7 +27,7 @@ Um eine virtuelle Maschine zu verlagern müssen Sie nur mit der rechten Maustast
 
 Das Menü schlägt Ihnen verschiedene Optionen für vMotion vor. In unserem Beispiel möchten wir nur die virtuelle Maschine auf einen anderen Host verlagern. Daher wählen wir „Change compute resource only“.
 
-Mit der Option „Change storage only“ können Sie die virtuelle Maschine in einen anderen Datastore verlegen. Diese Aktion wird **Storage vMotion** genannt und in [dieser Anleitung beschrieben](../vmware-storage-vmotion-neu/).
+Mit der Option „Change storage only“ können Sie die virtuelle Maschine in einen anderen Datastore verlegen. Diese Aktion wird **Storage vMotion** genannt und in [dieser Anleitung beschrieben](/pages/cloud/private-cloud/vmware_storage_vmotion).
 
 ![Wahl des vMotion-Typs](images/Vmotion2.png){.thumbnail}
 

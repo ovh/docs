@@ -1,11 +1,8 @@
 ---
 title: Installing Nginx Ingress on OVHcloud Managed Kubernetes
-slug: installing-nginx-ingress
 excerpt: 'Find out how to install Nginx Ingress on OVHcloud Managed Kubernetes'
-section: Traffic management
-order: 0
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-nginx-ingress/'
+    canonical: '/pages/platform/kubernetes-k8s/installing-nginx-ingress'
 updated: 2022-06-27
 ---
 
@@ -39,9 +36,9 @@ In this tutorial we are going to guide you with the setup of [Nginx Ingress](htt
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/platform/kubernetes-k8s/deploying-hello-world).
 
-You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/platform/kubernetes-k8s/installing-helm) tutorial.
 
 ## Ingress resources and Nginx Ingress Controller
 
@@ -156,7 +153,7 @@ Ingress URL: http://51.178.69.190/
 </code></pre>
 
 
-In order to test your `nginx-ingress`, you can for example [install a WordPress](../installing-wordpress) on your cluster, and then create a YAML file for the Ingress that uses the controller:
+In order to test your `nginx-ingress`, you can for example [install a WordPress](/pages/platform/kubernetes-k8s/installing-wordpress) on your cluster, and then create a YAML file for the Ingress that uses the controller:
 
 ```
 apiVersion: networking.k8s.io/v1

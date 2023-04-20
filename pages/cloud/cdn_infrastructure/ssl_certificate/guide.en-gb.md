@@ -1,9 +1,6 @@
 ---
 title: 'Adding an SSL certificate on the CDN'
-slug: ssl-certificate-cdn
 excerpt: 'Find out how to add an SSL certificate on the CDN'
-section: 'Getting started'
-order: 4
 updated: 2018-02-22
 ---
 
@@ -29,7 +26,7 @@ You can add an [SSL certificate](https://www.ovh.co.uk/ssl/){.external} to your 
 - If you are adding another subdomain to the CDN, the certificate will be automatically regenerated to include the new subdomain that you have just added.
 
 
-To ensure that the certificate is generated properly, the subdomain you add will need to point correctly to the CDN. To check that this is the case, please follow the instructions listed in our guide to [Configuring a domain name for the first time](https://docs.ovh.com/gb/en/cdn-infrastructure/first-domain-configuration-on-cdn/){.external}.
+To ensure that the certificate is generated properly, the subdomain you add will need to point correctly to the CDN. To check that this is the case, please follow the instructions listed in our guide to [Configuring a domain name for the first time](/pages/cloud/cdn_infrastructure/first_domain_name_configuration){.external}.
 
 The certificate is renewed automatically 20 days before its expiry date.
 
@@ -71,6 +68,6 @@ If you already have a Let's Encrypt certificate, then you can use the `Replace w
 
 ## Go further
 
-[Configuring a domain name for the first time](https://docs.ovh.com/gb/en/cdn-infrastructure/first-domain-configuration-on-cdn/){.external}
+[Configuring a domain name for the first time](/pages/cloud/cdn_infrastructure/first_domain_name_configuration){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

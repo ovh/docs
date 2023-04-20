@@ -1,8 +1,6 @@
 ---
 title: 'Saiba como carregar ou descarregar dados num servidor dedicado através de SFTP'
-slug: carregar-e-descarregar-dados-através-de-sftp
 excerpt: 'Transfira informações do servidor dedicado para o computador pessoal, e vice-versa'
-section: Tutoriais
 updated: 2021-05-18
 ---
 
@@ -33,9 +31,9 @@ Este tutorial explica a utilização de uma ou várias soluções da OVHcloud at
 
 ### Utilizar o FileZilla para recuperar e registar os seus dados
 
-O protocolo SFTP pode ser utilizado para transferir ficheiros através de uma ligação segura (SSH). Existem duas possibilidades para este cenário: tem um acesso normal ao servidor ou liga-se em [modo rescue](../rescue_mode/).
+O protocolo SFTP pode ser utilizado para transferir ficheiros através de uma ligação segura (SSH). Existem duas possibilidades para este cenário: tem um acesso normal ao servidor ou liga-se em [modo rescue](/pages/cloud/dedicated/rescue_mode).
 
-Por predefinição, um servidor que utilize um sistema operativo GNU/Linux terá acesso SSH através da porta 22. No entanto, poderá já ter alterado esta porta (por exemplo, seguindo o [nosso guia para proteger um servidor dedicado](../proteger-um-servidor-dedicado/)).
+Por predefinição, um servidor que utilize um sistema operativo GNU/Linux terá acesso SSH através da porta 22. No entanto, poderá já ter alterado esta porta (por exemplo, seguindo o [nosso guia para proteger um servidor dedicado](/pages/cloud/dedicated/securing-a-dedicated-server)).
 
 #### **Se tem acesso ao seu servidor**
 
@@ -55,7 +53,7 @@ O progresso da transferência de dados aparece na parte inferior da interface do
 
 #### **Se o servidor estiver em modo rescue**
 
-Em modo rescue, primeiro deve montar a sua partição. Para isso, siga as instruções indicadas [neste manual](../rescue_mode/).
+Em modo rescue, primeiro deve montar a sua partição. Para isso, siga as instruções indicadas [neste manual](/pages/cloud/dedicated/rescue_mode).
 
 Depois de montar a partição, utilize o cliente FileZilla da forma descrita acima, utilizando a porta 22 para a ligação ao seu servidor.
 
@@ -70,8 +68,8 @@ Se criou corretamente o ponto de montagem, os dados encontram-se no diretório "
 
 ## Saiba mais
 
-[Ativar e utilizar o modo rescue](../rescue_mode/)
+[Ativar e utilizar o modo rescue](/pages/cloud/dedicated/rescue_mode)
 
-[Proteger um servidor dedicado](../proteger-um-servidor-dedicado/)
+[Proteger um servidor dedicado](/pages/cloud/dedicated/securing-a-dedicated-server)
 
 Junte-se à nossa comunidade de utilizadores <https://community.ovh.com/en/>.

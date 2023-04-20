@@ -1,9 +1,6 @@
 ---
 title: End-Of-Life management for LV1 and LV2 storage
-slug: eol-storage-migration
 excerpt: 'Learn how to perform a storage migration'
-section: FAQ
-order: 05
 hidden: true
 updated: 2023-03-02
 ---
@@ -18,7 +15,7 @@ updated: 2023-03-02
 
 ## Objective
 
-Some storages will no longer be available at the end of March 2023 as they will no longer be maintained, as described in this guide: [Life cycle of Hosted Private Cloud powered by VMware](https://docs.ovh.com/gb/en/private-cloud/lifecycle-policy/#datastores-stockage).
+Some storages will no longer be available at the end of March 2023 as they will no longer be maintained, as described in this guide: [Life cycle of Hosted Private Cloud powered by VMware](/pages/cloud/private-cloud/lifecycle_policy#datastores-stockage).
 
 We will go through all the steps to migrate your data to more recent storage and disable your obsolete storage.
 
@@ -34,7 +31,7 @@ We will go through all the steps to migrate your data to more recent storage and
 
 Using the new storage ranges will provide you with full-SSD (vs SSD-accelerated) disks, 2x2x25Gbps network cards (vs 2x10Gbps), higher availability and resilience. Click this link for more information: [NFS Datastore](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/datastores-nfs/).
 
-Use this guide to add more storage if you have not yet subscribed to a more recent solution: [How do I add storage space?](https://docs.ovh.com/fr/private-cloud/additional-storage/)
+Use this guide to add more storage if you have not yet subscribed to a more recent solution: [How do I add storage space?](/pages/cloud/private-cloud/how_to_add_storage)
 
 ### Migrating your virtual machines
 
@@ -44,7 +41,7 @@ Click on the `storage`{.action} icon, select your Datastore in `Shared Storage`{
 
 ![01 check existing VM on datastore 01](images/01-check-existing-vm-on-datastore01.png){.thumbnail}
 
-Right-click each of the virtual machines that are on this datastore, choose `Migrate`{.action} and use the [VMware Storage vMotion](https://docs.ovh.com/gb/en/private-cloud/vmware_storage_vmotion/#finalising-the-operation) guide to migrate to a more recent datastore.
+Right-click each of the virtual machines that are on this datastore, choose `Migrate`{.action} and use the [VMware Storage vMotion](/pages/cloud/private-cloud/vmware_storage_vmotion#finalising-the-operation) guide to migrate to a more recent datastore.
 
 ![01 check existing VM on datastore 02](images/01-check-existing-vm-on-datastore02.png){.thumbnail}
 
@@ -98,7 +95,7 @@ Go to the `VM & templates`{.action} tab to make your model appear.
 
 ### Deleting storage for your VMware cluster
 
-Use this guide to delete your obsolete storage: [Delete a datastore](https://docs.ovh.com/gb/en/private-cloud/remove-data-store/)
+Use this guide to delete your obsolete storage: [Delete a datastore](/pages/cloud/private-cloud/delete_datastore)
 
 > [!warning]
 > After deleting your Datastore, log in to your OVHcloud Control Panel to stop subscribing to this service.

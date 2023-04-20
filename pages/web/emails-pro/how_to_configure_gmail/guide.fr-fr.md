@@ -1,9 +1,6 @@
 ---
 title: "Configurer son compte E-mail Pro sur l'interface en ligne de Gmail"
-slug: configuration-gmail
 excerpt: "Apprenez à configurer un compte E-mail Pro sur l'interface en ligne de Gmail"
-section: 'Configuration sur une interface en ligne'
-order: 1
 updated: 2020-03-18
 ---
 

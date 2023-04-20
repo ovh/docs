@@ -1,11 +1,8 @@
 ---
 title: 'Cambiar la contraseña de una dirección de correo'
-slug: changing-email-address-password
 excerpt: 'Cómo cambiar la contraseña de una dirección de correo de OVHcloud'
-section: 'Primeros pasos'
-order: 03
 routes:
-    canonical: 'https://docs.ovh.com/es/emails/cambiar-contrasena-direccion-correo/'
+    canonical: '/pages/web/emails/email_change_password'
 updated: 2023-01-03
 ---
 
@@ -29,11 +26,11 @@ Es posible acceder a las cuentas de correo de su solución de OVHcloud mediante 
 >
 > Al cambiar la contraseña de una dirección de correo, también deberá modificarla en todos los dispositivos en los que esté configurada la dirección de correo. No dude en consultar nuestras guías de configuración para su cliente de correo desde la página de inicio de su solución de correo:
 >
-> - [MXplan](https://docs.ovh.com/es/emails/)
-> - [Email Pro](https://docs.ovh.com/es/emails-pro/)
-> - [Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/)
+> - [MXplan](/products/web-cloud-email-collaborative-solutions-mx-plan)
+> - [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro)
+> - [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 >
 
 ## Procedimiento
 
-Siga nuestra guía [Cambiar la contraseña de una dirección de correo](https://docs.ovh.com/es/emails/cambiar-contrasena-direccion-correo/) en la sección "Correo electrónico".
+Siga nuestra guía [Cambiar la contraseña de una dirección de correo](/pages/web/emails/email_change_password) en la sección "Correo electrónico".

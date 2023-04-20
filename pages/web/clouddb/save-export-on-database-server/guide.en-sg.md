@@ -1,9 +1,6 @@
 ---
 title: 'Backing up and exporting a database of your database server'
-slug: backup-export-database-server
 excerpt: 'Find out how to back up and export your database'
-section: Configuration
-order: 04
 updated: 2023-02-15
 ---
 
@@ -61,7 +58,7 @@ In some cases, the RAM available in your database server may not be sufficient t
 
 ##### 1\.1 Exporting a MySQL or MariaDB database with OVHcloud phpMyAdmin 
 
-To export your database directly from phpMyAdmin, you will need to log in to the interface first. To do this, you can refer to our guide on [connecting to a database](../connecting-to-database-on-database-server).
+To export your database directly from phpMyAdmin, you will need to log in to the interface first. To do this, you can refer to our guide on [connecting to a database](/pages/web/clouddb/connecting-to-database-on-database-server).
 
 Once you have logged in to phpMyAdmin, click on the name of the database you want to export, then on the `Export`{.action} tab at the top.
 
@@ -88,7 +85,7 @@ mysqldump --host=server --user=username --port=port --password=password database
 
 > [!warning]
 >
-> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](https://docs.ovh.com/sg/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](/pages/web/hosting/htaccess_protect_directory_by_password).
 > - This action is only possible on an OVHcloud Web Hosting plan.
 >
 
@@ -114,13 +111,13 @@ pg_dump --host=server --port=port --user=usernmame --password=password database_
 
 > [!warning]
 >
-> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](https://docs.ovh.com/sg/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](/pages/web/hosting/htaccess_protect_directory_by_password).
 > - This action is only possible on an OVHcloud Web Hosting plan.
 >
 
 ## Go further
 
-[Restoring and importing a database to your database server](../restore-import-database)
+[Restoring and importing a database to your database server](/pages/web/clouddb/restore-import-on-database-server)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
 

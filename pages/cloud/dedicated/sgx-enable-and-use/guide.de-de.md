@@ -1,8 +1,6 @@
 ---
 title: 'Intel SGX auf Ihrem Dedicated Server aktivieren'
-slug: intel-sgx-aktivieren-und-verwenden
 excerpt: 'SGX auf Ihrem Dedicated Server aktivieren und den Linux-SGX-Software-Stack installieren'
-section: 'Fortgeschrittene Nutzung'
 updated: 2022-08-31
 ---
 

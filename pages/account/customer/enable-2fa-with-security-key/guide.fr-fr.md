@@ -1,8 +1,6 @@
 ---
 title: 'Activer la double authentification par clé de sécurité'
-slug: activer-la-double-authentification-par-cle-de-securite
 excerpt: 'Découvrez comment sécuriser votre espace client OVHcloud en activant la double authentification par clé de sécurité U2F'
-section: Sécurité
 hidden: true
 updated: 2022-07-08
 ---
@@ -17,7 +15,7 @@ La double authentification par clé de sécurité Universal Second Factor (U2F) 
 
 ## Prérequis
 
-- Prendre connaissance des [différentes méthodes de double authentification proposées par OVHcloud](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/).
+- Prendre connaissance des [différentes méthodes de double authentification proposées par OVHcloud](/pages/account/customer/secure-ovhcloud-account-with-2fa).
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 - Posséder une clé de sécurité U2F.
 - Disposer d'un port USB libre sur votre ordinateur.
@@ -86,9 +84,9 @@ Tous les choix que vous avez activés apparaîtront alors.
 
 ## Aller plus loin
 
-[Sécuriser son compte OVHcloud avec la double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/)
+[Sécuriser son compte OVHcloud avec la double authentification](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
-[Désactiver la double authentification sur son compte OVHcloud](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/#desactivation)
+[Désactiver la double authentification sur son compte OVHcloud](/pages/account/customer/secure-ovhcloud-account-with-2fa#desactivation)
 
 Le site officiel de la [FIDO Alliance](https://fidoalliance.org/){.external}.
 

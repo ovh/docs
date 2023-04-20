@@ -1,8 +1,6 @@
 ---
 title: 'Renewing your services via the OVHcloud API'
-slug: renewing-service-ia-api
 excerpt: 'Find out how to renew your services via the OVHcloud API'
-section: 'Managing the renewal of services'
 updated: 2020-05-05
 ---
 

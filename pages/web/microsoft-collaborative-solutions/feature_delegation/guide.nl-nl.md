@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: 'Rechten van een Exchange account delen'
-slug: exchange_2013_het_geven_van_full_access_rechten_op_een_account
 excerpt: 'Ontdek hoe u de rechten van uw Exchange account aan een andere gebruiker kunt geven'
-section: 'Functies en delen van Exchange'
 updated: 2020-10-24
 ---
 
@@ -61,11 +59,11 @@ Nu de rechten gedeeld zijn, kunnen ze worden toegepast.  Voordat u verder gaat, 
 
 Dit werkt anders, afhankelijk van de rechten die u hebt gedelegeerd, en ook de software of webinterface die u gebruikt voor toegang tot uw Exchange account. Vanaf dit punt in de handleiding kunt u de instructies volgen die relevant zijn voor de rechten die u hebt gedelegeerd.
 
-- [Toegangsrecht gebruiken](https://docs.ovh.com/nl/microsoft-collaborative-solutions/exchange_2013_het_geven_van_full_access_rechten_op_een_account/#21-gebruik-van-uw-toegangsrecht){.external}
+- [Toegangsrecht gebruiken](/pages/web/microsoft-collaborative-solutions/feature_delegation#21-gebruik-van-uw-toegangsrecht){.external}
 
-- [‘Verzenden als’-recht gebruiken](https://docs.ovh.com/nl/microsoft-collaborative-solutions/exchange_2013_het_geven_van_full_access_rechten_op_een_account/#22-gebruik-van-uw-verzenden-als-recht){.external}
+- [‘Verzenden als’-recht gebruiken](/pages/web/microsoft-collaborative-solutions/feature_delegation#22-gebruik-van-uw-verzenden-als-recht){.external}
 
-- [‘Verzenden namens’-recht gebruiken](https://docs.ovh.com/nl/microsoft-collaborative-solutions/exchange_2013_het_geven_van_full_access_rechten_op_een_account/#23-gebruik-van-uw-verzenden-namens-recht){.external}
+- [‘Verzenden namens’-recht gebruiken](/pages/web/microsoft-collaborative-solutions/feature_delegation#23-gebruik-van-uw-verzenden-namens-recht){.external}
 
 > [!warning]
 >

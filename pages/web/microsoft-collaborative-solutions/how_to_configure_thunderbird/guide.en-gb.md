@@ -1,9 +1,6 @@
 ---
 title: 'Configuring your Exchange account in Thunderbird for Windows'
-slug: exchange-configuration-thunderbird
 excerpt: 'Find out how to configure your Exchange account in Thunderbird'
-section: 'Configuration on computer'
-order: 04
 updated: 2021-08-26
 ---
 
@@ -61,11 +58,11 @@ For **POP** configuration, the values are:
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-Your Exchange email address and all of its collaborative features are also available via the [OWA interface](https://www.ovh.co.uk/mail/). If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](../exchange_2016_outlook_web_app_user_guide/).
+Your Exchange email address and all of its collaborative features are also available via the [OWA interface](https://www.ovh.co.uk/mail/). If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](/pages/web/microsoft-collaborative-solutions/owa_user_guide).
 
 ### Retrieving a backup of your email address
 
-If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the “**Exporting**” part of the “**Thunderbird**” section in our guide on [Manually migrating an email address](https://docs.ovh.com/gb/en/emails/migrate-email-addresses-manually/#exporting_1).
+If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the “**Exporting**” part of the “**Thunderbird**” section in our guide on [Manually migrating an email address](/pages/web/emails/manual_email_migration#exporting_1).
 
 ### Modifying existing settings
 

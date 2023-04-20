@@ -1,9 +1,6 @@
 ---
 title: Updating your Nutanix cluster firmware
-slug: nutanix-cluster-firmware-update
 excerpt: Find out how to update your Nutanix cluster firmware
-section: Upgrade
-order: 02
 updated: 2023-03-09
 ---
 
@@ -24,7 +21,7 @@ Our services will take over to apply updates and firmwares and will restart the 
 
 - A Nutanix cluster in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-- Consulting the guide [First steps to use the OVHcloud API](https://docs.ovh.com/us/en/api/first-steps-with-ovh-api/) (to familiarise yourself with the OVHcloud API)
+- Consulting the guide [First steps to use the OVHcloud API](/pages/account/api/first-steps) (to familiarise yourself with the OVHcloud API)
 
 ## Instructions
 

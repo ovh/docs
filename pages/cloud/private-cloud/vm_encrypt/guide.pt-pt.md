@@ -1,9 +1,6 @@
 ---
 title: Ativação da encriptação das máquinas virtuais (VM Encryption)
-slug: vm-encrypt
 excerpt: Saiba como ativar a encriptação das suas máquinas virtuais
-section: Funcionalidades VMware vSphere
-order: 08
 updated: 2020-06-29
 ---
 

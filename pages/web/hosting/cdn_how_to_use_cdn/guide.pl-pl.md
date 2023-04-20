@@ -1,9 +1,6 @@
 ---
 title: 'Przewodnik dotyczący usługi CDN na hostingu www'
 excerpt: 'Zoptymalizuj Twoją witrynę internetową, przyspieszając jej ładowanie w hostingu WWW dzięki usłudze CDN'
-slug: przewodnik_dotyczacy_uslugi_geocache_na_hostingu_www
-section: 'Optymalizacja strony WWW'
-order: 03
 updated: 2021-12-23
 ---
 
@@ -63,7 +60,7 @@ Zaznacz opcję „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action}, a nast
 > [!warning]
 > 
 > W przypadku nazwy domeny wykupionej poza OVHcloud i dodanej w opcji Multisite w hostingu WWW, należy podać adres IP Twojego hostingu w strefie DNS dla nazwy domeny.<br>
-> Zapoznaj się z [listą adresów IP klastrów i hostingów WWW](https://docs.ovh.com/pl/hosting/lista-adresow-ip-klastrow-i-hostingow-www/), aby znaleźć adres IP wykorzystywany przez usługę GeoCache w Twoim klastrze.
+> Zapoznaj się z [listą adresów IP klastrów i hostingów WWW](/pages/web/hosting/clusters_and_shared_hosting_IP), aby znaleźć adres IP wykorzystywany przez usługę GeoCache w Twoim klastrze.
 
  
 **Dlaczego nie mogę korzystać z geolokalizowanego adresu IP z opcją CDN?** <br>
@@ -179,7 +176,7 @@ Przejdź do karty `MultiSite`{.action} hostingu, kliknij `...`{.action} po prawe
 
 > [!warning]
 >
-> Aby instalacja [modułu za pomocą 1 kliknięcia OVHcloud](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/) mogła zostać wyłączona, należy wyłączyć WAF.
+> Aby instalacja [modułu za pomocą 1 kliknięcia OVHcloud](/pages/web/hosting/cms_install_1_click_modules) mogła zostać wyłączona, należy wyłączyć WAF.
 
 > [!primary]
 >  

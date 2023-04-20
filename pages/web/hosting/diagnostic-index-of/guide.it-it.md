@@ -1,9 +1,6 @@
 ---
 title: Cosa fare in caso di pagina « Index of »?
 excerpt: Come caricare il tuo sito online, quando visualizza una pagina « Index of »
-slug: diagnostic-index-of
-section: Diagnostica
-order: 07
 updated: 2022-05-10
 ---
 
@@ -37,7 +34,7 @@ Se una configurazione `Multisito` non è configurata correttamente, il tuo sito 
 
 ### Comprendere l'origine della pagina "Index of"
 
-Il tuo dominio è collegato tramite la sezione `Multisito`{.action} del tuo hosting a una directory (una "`Cartella di root`") sul tuo server [FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/).
+Il tuo dominio è collegato tramite la sezione `Multisito`{.action} del tuo hosting a una directory (una "`Cartella di root`") sul tuo server [FTP](/pages/web/hosting/ftp_connection).
 
 La pagina **Index of** indica che la directory in questione non contiene file **index.php** o **index.html**. Un file di questo tipo costituisce il "*punto di accesso*" del tuo sito.
 
@@ -45,13 +42,13 @@ Per visualizzare il tuo sito Web, dalla sezione `Multisito`{.action} del tuo hos
 
 > [!primary]
 >
-> Per collegare temporaneamente il tuo dominio a una `Cartella di root` che non contiene file **index.php** o **index.html**, è possibile vietare la visualizzazione della lista delle cartelle del tuo sito seguendo questa [guida](https://docs.ovh.com/it/hosting/hosting_condiviso_altre_operazioni_possibili_con_il_file_htaccess/#impedire-il-listing-del-contenuto-di-una-directory). È inoltre possibile proteggere l'accesso alle cartelle tramite una [password](https://docs.ovh.com/it/hosting/condividi-htaccess-come-proteggere-laccesso-a-una-cartella-tramite-autenticazione/).
+> Per collegare temporaneamente il tuo dominio a una `Cartella di root` che non contiene file **index.php** o **index.html**, è possibile vietare la visualizzazione della lista delle cartelle del tuo sito seguendo questa [guida](/pages/web/hosting/htaccess_what_else_can_you_do#impedire-il-listing-del-contenuto-di-una-directory). È inoltre possibile proteggere l'accesso alle cartelle tramite una [password](/pages/web/hosting/htaccess_protect_directory_by_password).
 >
 > In caso di difficoltà nell'implementare questa configurazione, ti consigliamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/). Il nostro team di supporto non sarà infatti in grado di fornirti assistenza su eventuali modifiche della programmazione interna del tuo sito.
 
 ### Risolvere il caso più comune di una pagina "Index of"
 
-Hai importato i file del tuo sito **mydomain.ovh** nella cartella `www` del tuo hosting tramite [FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/). Il tuo dominio non è associato a questa cartella nella colonna `Cartella di root` del tuo `Multisito`{.action}.
+Hai importato i file del tuo sito **mydomain.ovh** nella cartella `www` del tuo hosting tramite [FTP](/pages/web/hosting/ftp_connection). Il tuo dominio non è associato a questa cartella nella colonna `Cartella di root` del tuo `Multisito`{.action}.
 
 ![index_of_multisite](images/index_of_multisite.png){.thumbnail}
 
@@ -69,7 +66,7 @@ Nella finestra che appare:
 
 > [!primary]
 >
-> Utilizzare la directory `www` come `Cartella di root` non è in nessun caso obbligatorio. Puoi installare il tuo sito in un'altra cartella del tuo [server FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/).
+> Utilizzare la directory `www` come `Cartella di root` non è in nessun caso obbligatorio. Puoi installare il tuo sito in un'altra cartella del tuo [server FTP](/pages/web/hosting/ftp_connection).
 >
 
 Nella nuova finestra, clicca su `Conferma`{.action}.
@@ -84,11 +81,11 @@ e verifica che il tuo sito venga visualizzato correttamente. In caso contrario, 
 
 ## Per saperne di più <a name="gofurther"></a>
 
-[Risolvere gli errori più frequenti associati ai moduli in 1 click](https://docs.ovh.com/it/hosting/errori-frequenti-moduli-in-1-click/)
+[Risolvere gli errori più frequenti associati ai moduli in 1 click](/pages/web/hosting/diagnostic_errors_module1clic)
 
-[Risolvere l’errore «Sito non installato»](https://docs.ovh.com/it/hosting/errore-sito-non-installato/)
+[Risolvere l’errore «Sito non installato»](/pages/web/hosting/multisites_website_not_installed)
 
-[Ospitare più siti su uno stesso hosting](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/)
+[Ospitare più siti su uno stesso hosting](/pages/web/hosting/multisites_configure_multisite)
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](https://www.ovhcloud.com/it/support-levels/).
 

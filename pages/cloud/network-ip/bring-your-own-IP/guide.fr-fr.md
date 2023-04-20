@@ -1,9 +1,6 @@
 ---
 title: Utiliser la fonctionnalité Bring Your Own IP
 excerpt: Découvrez comment importer facilement votre propre adresse IP comme Additional IP dans votre compte OVHcloud
-slug: bring-your-own-ip
-section: Bring Your Own IP
-order: 1
 updated: 2022-11-23
 ---
 

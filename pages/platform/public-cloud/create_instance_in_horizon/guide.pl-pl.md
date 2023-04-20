@@ -1,9 +1,7 @@
 ---
 title: 'Tworzenie instancji w interfejsie Horizon'
 excerpt: 'Dowiedz się, jak utworzyć instancję w interfejsie Horizon'
-slug: tworzenie_instancji_w_interfejsie_horizon
 legacy_guide_number: g1772
-section: 'Zarządzanie w interfejsie Horizon'
 updated: 2022-08-01
 ---
 
@@ -22,11 +20,11 @@ Istnieje możliwość tworzenia instancji bezpośrednio w interfejsie Horizon. M
 ## Wymagania początkowe
 
 - Utworzenie [projektu Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud
-- [Dostęp do interfejsu Horizon](../horizon/){.external}
+- [Dostęp do interfejsu Horizon](/pages/platform/public-cloud/introducing_horizon){.external}
 
 ## W praktyce
 
-Aby rozpocząć tworzenie instancji, zaloguj się do interfejsu Horizon. Jeśli potrzebujesz więcej informacji, aby przeprowadzić tę operację, zapoznaj się z naszym [przewodnikiem](../horizon/){.external}.
+Aby rozpocząć tworzenie instancji, zaloguj się do interfejsu Horizon. Jeśli potrzebujesz więcej informacji, aby przeprowadzić tę operację, zapoznaj się z naszym [przewodnikiem](/pages/platform/public-cloud/introducing_horizon){.external}.
 
 Kliknij `Compute`{.action} w menu po lewej stronie, a następnie kliknij `Instances`{.action}.
 
@@ -58,7 +56,7 @@ Wprowadź następnie odpowiednie dane. W razie potrzeby skorzystaj z poniższej 
 
 > [!warning] 
 > 
-> Chociaż pole "Key Pair" nie jest obowiązkowe w interfejsie Horizon podczas tworzenia instancji, rejestracja klucza SSH jest absolutnie konieczna, aby móc połączyć się z instancją. Bez klucza SSH będziesz musiał zrestartować instancję w trybie Rescue, aby móc utworzyć hasło lub dodać klucz SSH do odpowiedniego pliku (aby uzyskać więcej informacji, zapoznaj się z przewodnikiem [Zmiana klucza SSH w przypadku utraty](../zmiana_klucza_ssh_w_przypadku_utraty/#w-praktyce)).
+> Chociaż pole "Key Pair" nie jest obowiązkowe w interfejsie Horizon podczas tworzenia instancji, rejestracja klucza SSH jest absolutnie konieczna, aby móc połączyć się z instancją. Bez klucza SSH będziesz musiał zrestartować instancję w trybie Rescue, aby móc utworzyć hasło lub dodać klucz SSH do odpowiedniego pliku (aby uzyskać więcej informacji, zapoznaj się z przewodnikiem [Zmiana klucza SSH w przypadku utraty](/pages/platform/public-cloud/replacing_lost_ssh_key#w-praktyce)).
 >
 
 Kiedy jesteś gotowy, aby uruchomić instancję lub instancje, kliknij przycisk `Launch Instance`{.action}.

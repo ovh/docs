@@ -1,11 +1,8 @@
 ---
 title: AI Deploy - Tutoriel - Déployer un chatbot Rasa avec une simple application Flask (EN)
-slug: deploy/rasa-chatbot
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/rasa-chatbot/'
+    canonical: '/pages/platform/ai/deploy_tuto_11_rasa_chatbot_flask'
 excerpt: Découvrez comment déployer de manière simple un chatbot avec AI Deploy
-section: AI Deploy - Tutoriels
-order: 11
 updated: 2023-04-04
 ---
 
@@ -18,7 +15,7 @@ updated: 2023-04-04
 
 ## Objective
 
-In a previous tutorial, we created and trained a Rasa Chatbot with AI Notebooks: [How to create and train a chatbot on OVHcloud](https://docs.ovh.com/ca/fr/publiccloud/ai/notebooks/create-rasa-chatbot).
+In a previous tutorial, we created and trained a Rasa Chatbot with AI Notebooks: [How to create and train a chatbot on OVHcloud](/pages/platform/ai/notebook_tuto_10_create_chatbot).
 Now, the aim of this tutorial is to deploy a chatbot with OVHcloud AI Tools. We also train our chatbot with AI Training. 
 
 We used the famous open source framework [Rasa](https://rasa.community/) to build the chatbot. 
@@ -38,7 +35,7 @@ Here is a schema to explain how it works:
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - A Public Cloud project created
-- The ovhai CLI interface installed on your system (more information [here](https://docs.ovh.com/ca/fr/publiccloud/ai/cli/install-client/))
+- The ovhai CLI interface installed on your system (more information [here](/pages/platform/ai/cli_10_howto_install_cli))
 - [Docker](https://www.docker.com/get-started) installed on your local computer
 - A [Docker Hub account](https://hub.docker.com/)
 - Knowledge about building images with [Dockerfile](https://docs.docker.com/engine/reference/builder/)
@@ -87,7 +84,7 @@ Splitting input data and output data is a good practice, allowing you faster dev
 
 The obvious goal about using object storage and not the local storage of the AI Notebook is to decorrelate compute and storage, allowing us to stop or delete the notebook while keeping the data safe.
 
-If you want to know more about data storage concept, read this guide: [Create an object container](https://docs.ovh.com/ca/fr/storage/object-storage/pcs/create-container/).
+If you want to know more about data storage concept, read this guide: [Create an object container](/pages/cloud/storage/object_storage/pcs_create_container).
 
 For the chatbot deployment, we will create one object storage bucket. It will contain a pretrained model. If you've already trained a model before with other tutorials, don't create a new container.
 
@@ -249,11 +246,11 @@ Here is an example of a discussion with the chatbot:
 
 If you want to see how the model is created and trained with AI Notebooks, please follow this tutorial.
 
-[How to create and train a rasa chatbot](https://docs.ovh.com/ca/fr/publiccloud/ai/notebooks/create-rasa-chatbot)
+[How to create and train a rasa chatbot](/pages/platform/ai/notebook_tuto_10_create_chatbot)
   
 If you want to train a Rasa chatbot with the tool AI Training, please refer to this tutorial.
 
-[How to train a chatbot with Docker and AI Training](https://docs.ovh.com/ca/fr/publiccloud/ai/training/tuto-train-rasa-chatbot)
+[How to train a chatbot with Docker and AI Training](/pages/platform/ai/training_tuto_07_train_rasa_chatbot)
   
 If you want to use more functionalities of Rasa, please follow this link. We use Rasa Open Source and not Rasa X.  
 

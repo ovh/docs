@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Wijziging van uw root-wachtwoord op een VPS
-slug: root-password
 excerpt: Leer hoe u het root-wachtwoord van een VPS kunt wijzigen.
-section: Diagnose en Reddingsmodus
 updated: 2021-04-20
 ---
 
@@ -11,13 +9,13 @@ updated: 2021-04-20
 
 ## Introductie
 
-Wanneer u een distributie- of besturingssysteem installeert of opnieuw installeert, krijgt u een root-toegangswachtwoord. Het is sterk aanbevolen deze te wijzigen, zoals beschreven in onze handleiding over het [beveiligen van een VPS](https://docs.ovh.com/fr/vps/conseils-securisation-vps/). Het kan ook voorkomen dat u dit wachtwoord kwijtraakt en moet wijzigen. In deze handleiding wordt u door beide scenario's geleid.
+Wanneer u een distributie- of besturingssysteem installeert of opnieuw installeert, krijgt u een root-toegangswachtwoord. Het is sterk aanbevolen deze te wijzigen, zoals beschreven in onze handleiding over het [beveiligen van een VPS](/pages/cloud/vps/secure_your_vps). Het kan ook voorkomen dat u dit wachtwoord kwijtraakt en moet wijzigen. In deze handleiding wordt u door beide scenario's geleid.
 Leer hoe u het root-wachtwoord van een VPS kunt wijzigen.
 
 ## Vereisten
 
 - U moet SSH-toegang tot de VPS hebben (root-toegang).
-- [Start uw VPS opnieuw op in de reddingsmodus.](https://docs.ovh.com/nl/vps/rescue)
+- [Start uw VPS opnieuw op in de reddingsmodus.](/pages/cloud/vps/rescue)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -112,6 +110,6 @@ Tot slot herstart u uw VPS op zijn drive via uw OVH Control Panel.
 ## Ga verder
 
 [Introductie tot SSH](https://docs.ovh.com/nl/dedicated/ssh-introduction/)
-[Reddingsmodus op VPS](https://docs.ovh.com/nl/vps/rescue/)
+[Reddingsmodus op VPS](/pages/cloud/vps/rescue)
 
 Ga in gesprek met andere communitygebruikers op <https://community.ovh.com>.

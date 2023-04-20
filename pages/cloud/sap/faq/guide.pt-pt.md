@@ -1,11 +1,8 @@
 ---
 title: 'FAQ - SAP HANA on OVHcloud'
-slug: faq-sap-hana-ovhcloud
-section: Getting started
-order: 02
 updated: 2022-02-04
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/sap/faq-sap-hana-ovhcloud/'
+    canonical: '/pages/cloud/sap/faq'
 ---
 
 **Last updated 4th February 2022**

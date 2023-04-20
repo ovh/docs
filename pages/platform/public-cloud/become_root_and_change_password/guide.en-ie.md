@@ -1,9 +1,6 @@
 ---
 title: 'Become the root user and select a password'
-slug: become_the_root_user_and_select_a_password
 excerpt: 'This guide will show you how to become the root user and create a password for the root account'
-section: 'Getting started'
-order: 08
 updated: 2022-03-24
 ---
 
@@ -17,14 +14,14 @@ To perform certain administrative functions on your server (e.g. installing pack
 
 ## Requirements
 
-- A [Public Cloud instance](https://docs.ovh.com/ie/en/public-cloud/public-cloud-first-steps/#create-instance) in your OVHcloud account
+- A [Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps#create-instance) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Instructions
 
 ### Setting the root password <a name="settingtherootpassword"></a>
 
-First, establish an [SSH connection](https://docs.ovh.com/ie/en/public-cloud/public-cloud-first-steps/#step-4-connecting-to-your-instance) to your server with your default user.
+First, establish an [SSH connection](/pages/platform/public-cloud/public-cloud-first-steps#step-4-connecting-to-your-instance) to your server with your default user.
 
 At the command line, set a password for the root user (for security reasons, the password will not be shown as you type it):
 

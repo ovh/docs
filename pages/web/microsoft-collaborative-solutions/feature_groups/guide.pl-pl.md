@@ -1,9 +1,6 @@
 ---
 title: 'Korzystanie z grup (mailing listy) dostępnych z kontem Exchange'
 excerpt: 'Dowiedz się, jak zarządzać listami wysyłkowymi w programie Exchange'
-slug: exchange_20132016_korzystanie_z_grup_wewnetrzne_grupy_dyskusyjne
-section: 'Funkcje kont Exchange'
-order: 02
 updated: 2020-02-26
 ---
 
@@ -64,7 +61,7 @@ Nowo utworzona grupa będzie działać już po kilku minutach. Opisane powyżej 
 
 ![contactgroups](images/exchange-groups-step4.png){.thumbnail}
 
-Dodatkowo będzie widoczna pozycja menu `Zarządzaj delegowaniem`{.action}. Opcja ta umożliwia delegowanie uprawnień dostępu w taki sam sposób, jak w przypadku konta Exchange. Więcej informacji zawiera [ten przewodnik](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2013_przyznanie_uprawnien_full_access/).
+Dodatkowo będzie widoczna pozycja menu `Zarządzaj delegowaniem`{.action}. Opcja ta umożliwia delegowanie uprawnień dostępu w taki sam sposób, jak w przypadku konta Exchange. Więcej informacji zawiera [ten przewodnik](/pages/web/microsoft-collaborative-solutions/feature_delegation).
 
 ![contactgroups](images/exchange-groups-step5.png){.thumbnail}
 
@@ -83,10 +80,10 @@ Listę wysyłkową można przetestować za pośrednictwem interfejsu [OVHcloud w
 
 ## Sprawdź również
 
-[Delegowanie uprawnień do konta Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2013_przyznanie_uprawnien_full_access/)
+[Delegowanie uprawnień do konta Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Przewodnik dotyczący korzystania z Outlook Web App (OWA)](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/)
+[Przewodnik dotyczący korzystania z Outlook Web App (OWA)](/pages/web/microsoft-collaborative-solutions/owa_user_guide)
 
-[Exchange 2016: współdzielenie kalendarza w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa/)
+[Exchange 2016: współdzielenie kalendarza w interfejsie OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: 'CMS: installa manualmente Drupal'
 excerpt: Come fai a installare manualmente Drupal?
-slug: cms_installa_manualmente_drupal
-section: CMS
-order: 07
 updated: 2022-12-01
 ---
 
@@ -225,5 +222,5 @@ Altre informazioni utili: per essere presi in carico, i file del tuo sito devono
 
 La causa è semplice: l'ultima versione di PHP non è stata attivata.
 
-Per modificare la versione PHP del tuo hosting coindiviso, consulta la guida [Configura PHP sul tuo Hosting Web OVHcloud]({legacy}1207)
+Per modificare la versione PHP del tuo hosting coindiviso, consulta la guida [Configura PHP sul tuo Hosting Web OVHcloud](/pages/web/hosting/cms_manual_installation_drupal%7Blegacy%7D1207)
 

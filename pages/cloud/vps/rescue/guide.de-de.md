@@ -1,8 +1,6 @@
 ---
 title: Rescue-Modus für einen VPS aktivieren und verwenden
-slug: rescue
 excerpt: Erfahren Sie hier, wie Sie Ihren VPS in den Rescue-Modus versetzen
-section: Diagnose & Rescue Modus
 updated: 2022-05-02
 ---
 
@@ -119,8 +117,8 @@ Sobald Ihre Maßnahmen im Rescue-Modus abgeschlossen sind, starten Sie den VPS �
 
 ## Weiterführende Informationen
 
-[Root-Passwort auf einem VPS ändern](https://docs.ovh.com/de/vps/root-password/)
+[Root-Passwort auf einem VPS ändern](/pages/cloud/vps/root_password)
 
-[SSH Einführung](https://docs.ovh.com/de/dedicated/ssh-einfuehrung/)
+[SSH Einführung](/pages/cloud/dedicated/ssh_introduction)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

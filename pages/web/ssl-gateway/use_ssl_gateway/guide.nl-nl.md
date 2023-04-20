@@ -1,7 +1,6 @@
 ---
 deprecated: true
 title: Gebruik van SSL Gateway
-slug: use-ssl-gateway
 legacy_guide_number: 2370
 excerpt: Beveilig verbindingen met uw website
 updated: 2022-12-01
@@ -15,7 +14,7 @@ updated: 2022-12-01
 
 > [!primary]
 >
-> - [SSL Gateway](../order-ssl-gateway/guide.nl-nl.md) bestelling geplaatst.
+> - [SSL Gateway](/pages/web/ssl-gateway/order-ssl-gatewayguide.nl-nl.md) bestelling geplaatst.
 > - Toegang tot het Sunrise Control Panel.
 >
 

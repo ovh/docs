@@ -1,9 +1,6 @@
 ---
 title: "Geolocalizar o seu website num país específico"
 excerpt: "Descubra como geolocalizar o seu website com os nossos endereços IP geolocalizados"
-slug: geolocalizacao_nos_alojamentos_partilhados
-section: Otimizar o seu site
-order: 05
 updated: 2022-12-22
 ---
 
@@ -52,9 +49,9 @@ Clique em `Seguinte`{.action} e depois em `Validar`{.action} a partir da janela 
 
 >[!primary]
 >
-> Se a zona DNS ativa do seu domínio for inteiramente gerida no seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), a entrada do tipo A na zona DNS do seu domínio mudará automaticamente. Para verificar se o endereço IP foi atualizado, consulte o nosso manual sobre a [criação de uma zona DNS da OVHcloud](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).
+> Se a zona DNS ativa do seu domínio for inteiramente gerida no seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), a entrada do tipo A na zona DNS do seu domínio mudará automaticamente. Para verificar se o endereço IP foi atualizado, consulte o nosso manual sobre a [criação de uma zona DNS da OVHcloud](/pages/web/domains/dns_zone_edit).
 >
-> Caso contrário, deverá efetuar a modificação manualmente junto do fornecedor que gere a zona DNS ativa do seu domínio. Encontre [aqui](https://docs.ovh.com/pt/hosting/lista-dos-enderecos-ip-dos-clusters-e-alojamentos-web/) a documentação que identifica todos os endereços IP da nossa infraestrutura de alojamento partilhado OVHcloud.
+> Caso contrário, deverá efetuar a modificação manualmente junto do fornecedor que gere a zona DNS ativa do seu domínio. Encontre [aqui](/pages/web/hosting/clusters_and_shared_hosting_IP) a documentação que identifica todos os endereços IP da nossa infraestrutura de alojamento partilhado OVHcloud.
 >
 > Em todos os casos, será necessário um prazo de propagação de **4 às 24 horas** após a modificação, para que esta seja plenamente eficaz e visível na Internet.
 >

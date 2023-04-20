@@ -1,9 +1,6 @@
 ---
 title: Monitoring your jobs using Grafana and the Apache Spark dashboard 
-slug: monitor
 excerpt: Find out how to monitor your jobs using Grafana and the Apache Spark dashboard
-section: Getting started
-order: 2
 updated: 2020-03-06
 ---
 
@@ -15,7 +12,7 @@ This guide will tell you how you can monitor you jobs after submitting them.
 
 In this guide, we are assuming that you're using the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} to use the Data Processing platform and you have already submitted a job. 
 
-To read an introduction about Data Processing service you can visit [Data Processing Overview](../overview){.external}.
+To read an introduction about Data Processing service you can visit [Data Processing Overview](/pages/platform/data-processing/00_CONCEPTS_Overview){.external}.
 
 ## Requirements 
 
@@ -61,6 +58,6 @@ After you submit a job to the Data Processing platform, follow these steps to mo
 
 ## Go further
 
-To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at [Data Processing documentations page](../).
+To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at [Data Processing documentations page](/products/public-cloud-data-analytics-data-processing).
 
 You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**

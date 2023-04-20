@@ -1,9 +1,6 @@
 ---
 title: How to cancel your OVHcloud services
 excerpt: Find out how to discontinue your OVHcloud subscriptions
-slug: how-to-cancel-your-services
-section: Managing the renewal of services
-order: 03
 updated: 2022-03-22
 ---
 
@@ -42,7 +39,7 @@ This means that, before any termination, you must be **certain** that:
 >
 > Termination can only be applied if the following conditions are met:
 >
-> - You are the "administrative contact" for the service (for more information, see [this guide](https://docs.ovh.com/gb/en/customer/managing-contacts/#definition)).
+> - You are the "administrative contact" for the service (for more information, see [this guide](/pages/account/customer/managing_contacts#definition)).
 > - The service is not manually renewed.
 > - The service is not suspended, particularly because an invoice has not been paid.
 >
@@ -103,7 +100,7 @@ Specify the reasons for your cancellation request, then click on `Confirm`{.acti
 
 #### Managed Bare Metal <a name="managedbaremetal"></a>
 
-To cancel your [Managed Bare Metal](https://www.ovhcloud.com/en-gb/managed-bare-metal/) solution, follow the instructions in this [guide](https://docs.ovh.com/gb/en/managed-bare-metal/how-to-cancel-managed-bare-metal/).
+To cancel your [Managed Bare Metal](https://www.ovhcloud.com/en-gb/managed-bare-metal/) solution, follow the instructions in this [guide](/pages/cloud/managed-bare-metal/how-to-cancel).
 
 #### HA-NAS server <a name="nas"></a>
 
@@ -133,7 +130,7 @@ Specify the reasons for your cancellation request, then click on `Confirm`{.acti
 
 #### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
 
-To cancel your [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/en-gb/hosted-private-cloud/), follow the instructions in this [guide](https://docs.ovh.com/gb/en/private-cloud/how-to-cancel-private-cloud/).
+To cancel your [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/en-gb/hosted-private-cloud/), follow the instructions in this [guide](/pages/cloud/private-cloud/comment_resilier_le_private_cloud).
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
@@ -149,9 +146,9 @@ Each Public Cloud service can be deleted by clicking on the `...`{.action} butto
 
 ![public cloud instance deletion](images/pci-deletion.png){.thumbnail}
 
-OVHcloud Public Cloud is based on the principle of *Pay-as-you-go* (more details are available on our information page about the [Public Cloud billing method](https://docs.ovh.com/gb/en/public-cloud/information-on-cloud-billing-options/)). At the end of the month, you only pay for the effective resource usage time.
+OVHcloud Public Cloud is based on the principle of *Pay-as-you-go* (more details are available on our information page about the [Public Cloud billing method](/pages/platform/public-cloud/analyze_billing)). At the end of the month, you only pay for the effective resource usage time.
 
-You can also [view your current resource usage](https://docs.ovh.com/gb/en/public-cloud/information-on-cloud-billing-options/#view-your-current-resource-usage) in the OVHcloud Control Panel and receive email alerts when your resource usage is projected to exceed a certain threshold.
+You can also [view your current resource usage](/pages/platform/public-cloud/analyze_billing#view-your-current-resource-usage) in the OVHcloud Control Panel and receive email alerts when your resource usage is projected to exceed a certain threshold.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -200,7 +197,7 @@ Specify the reasons for your cancellation request, then click on `Confirm`{.acti
 
 An MX Plan solution is not subject to a periodic subscription. You cannot cancel your order, but you can delete your service if you wish.
 
-To delete your [MX Plan solution](https://docs.ovh.com/gb/en/emails/), log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on your name in the top right-hand corner, then on `Products and services`{.action}.
+To delete your [MX Plan solution](/products/web-cloud-email-collaborative-solutions-mx-plan), log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
 Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Delete MX Plan immediately`{.action}.
 
@@ -215,23 +212,23 @@ You will then get an email containing the procedure to close your MX Plan, so yo
 
 #### Email Pro <a name="emailpro"></a>
 
-To cancel your [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) service, follow the instructions of this [guide](https://docs.ovh.com/gb/en/emails-pro/emailpro-billing/#deleting-accounts).
+To cancel your [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) service, follow the instructions of this [guide](/pages/web/emails-pro/manage_billing_emailpro#deleting-accounts).
 
 #### Hosted Exchange <a name="hosted"></a>
 
-To cancel your [Hosted Exchange](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) service, follow the instructions of this [guide](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/manage-exchange-billing/#deleting-accounts).
+To cancel your [Hosted Exchange](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) service, follow the instructions of this [guide](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#deleting-accounts).
 
 #### Private Exchange <a name="private"></a>
 
-To cancel your [Private Exchange](https://www.ovhcloud.com/en-gb/emails/private-exchange/) solution, follow the instructions in this [guide](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/manage-exchange-billing/#deleting-accounts_1).
+To cancel your [Private Exchange](https://www.ovhcloud.com/en-gb/emails/private-exchange/) solution, follow the instructions in this [guide](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#deleting-accounts_1).
 
 #### Office 365 CSP1 <a name="office-csp1"></a>
 
-To cancel your [Office 365 CSP1](https://www.ovhcloud.com/en-gb/collaborative-tools/microsoft-365/) solution, follow the instructions in this [guide](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/manage-office-365-csp1/#manage-your-subscriptions).
+To cancel your [Office 365 CSP1](https://www.ovhcloud.com/en-gb/collaborative-tools/microsoft-365/) solution, follow the instructions in this [guide](/pages/web/microsoft-collaborative-solutions/office_csp1#manage-your-subscriptions).
 
 #### Office 365 CSP2 <a name="office-csp2"></a>
 
-To cancel your [Office 365 CSP2](https://www.ovhcloud.com/en-gb/collaborative-tools/microsoft-365/) solution, follow the instructions in this [guide](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/order-and-manage-a-group-of-ovh-office-365-csp2-reseller-licences/#manage-your-subscriptions).
+To cancel your [Office 365 CSP2](https://www.ovhcloud.com/en-gb/collaborative-tools/microsoft-365/) solution, follow the instructions in this [guide](/pages/web/microsoft-collaborative-solutions/office_csp2#manage-your-subscriptions).
 
 #### Sharepoint <a name="sharepoint"></a>
 
@@ -278,6 +275,6 @@ Finally, click on `Confirm cancellation`{.action}.
 
 ## Go further <a name="gofurther"></a>
 
-[Managing renewal for OVHcloud services](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/)
+[Managing renewal for OVHcloud services](/pages/account/billing/how_to_use_automatic_renewal)
 
 Join our community of users on <https://community.ovh.com/en/>.

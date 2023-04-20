@@ -1,9 +1,6 @@
 ---
 title: 'Crear bases de datos y usuarios en un servidor de bases de datos'
-slug: crear-bases-de-datos-y-usuarios
 excerpt: 'Cómo crear una base de datos en un servidor de bases de datos'
-section: Configuración
-order: 02
 updated: 2023-02-15
 ---
 

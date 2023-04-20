@@ -1,8 +1,6 @@
 ---
 title: 'Activer des Machines Windows utilisant Hyper-V sur un Windows Server sous licence OVHcloud'
-slug: activate-windows-vm-hyperv
 excerpt: "Apprenez à créer et activer une machine virtuelle à l'aide de Hyper-V sur un serveur Windows sous licence OVHcloud"
-section: 'Tutoriel'
 updated: 2022-01-06
 ---
 
@@ -152,7 +150,7 @@ C:\Users\Administrator> DISM.exe /Online /Set-Edition:ServerStandard /ProductKey
 
 > [!primary]
 > 
-> Cette licence (N69G4-B89J2-4G8F4-WWYCC-J464C) appartient à notre référentiel de licences de validation KMS actuel pour Windows Server 2019 Standard. Vous pouvez récupérer chacune de nos clés de licence actuelles depuis le guide suivant : [Corriger la clé d'activation Windows Server](../windows-key)
+> Cette licence (N69G4-B89J2-4G8F4-WWYCC-J464C) appartient à notre référentiel de licences de validation KMS actuel pour Windows Server 2019 Standard. Vous pouvez récupérer chacune de nos clés de licence actuelles depuis le guide suivant : [Corriger la clé d'activation Windows Server](/pages/cloud/dedicated/windows_key)
 >
 
 Redémarrez votre machine virtuelle, puis procédez comme suit pour configurer le serveur KMS et activer Windows.

@@ -1,9 +1,6 @@
 ---
 title: Parametry dostępu i bezpieczeństwa w interfejsie Horizon
 excerpt: Dowiedz się, jak zarządzać dostępem do instancji i zabezpieczyć dostęp do nich
-slug: access_and_security_in_horizon
-section: Zarządzanie w interfejsie Horizon
-order: 4
 updated: 2021-05-26
 ---
 
@@ -22,7 +19,7 @@ Możesz na przykład skonfigurować grupy zabezpieczeń, aby filtrować połącz
 
 ## Wymagania początkowe
 
-- [Dostęp do interfejsu Horizon](../horizon/)
+- [Dostęp do interfejsu Horizon](/pages/platform/public-cloud/introducing_horizon)
 
 ## W praktyce
 
@@ -48,7 +45,7 @@ W tej sekcji możesz przechowywać pary kluczy SSH i zarządzać nimi. Możesz p
 
 Jeśli chcesz dodać istniejący klucz, kliknij przycisk `Import Public Key`{.action}. W oknie, które się wyświetla możesz wprowadzić klucz lub wybrać plik klucza.
 
-Ta część interfejsu zawiera podstawowe instrukcje. Więcej informacji na temat kluczy SSH znajdziesz w [tym przewodniku](../tworzenie-kluczy-ssh/).
+Ta część interfejsu zawiera podstawowe instrukcje. Więcej informacji na temat kluczy SSH znajdziesz w [tym przewodniku](/pages/platform/public-cloud/public-cloud-first-steps#krok-1-utworzenie-kluczy-ssh/).
 
 - **Security Groups** (w `ramach projektu`{.action}, a następnie `Network`{.action})
 

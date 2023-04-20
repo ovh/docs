@@ -1,8 +1,6 @@
 ---
 title: 'Trasferire il backup di un’istanza tra datacenter'
 excerpt: 'Come migrare un backup da un datacenter a un altro conservando la configurazione e lo stato dell’istanza'
-slug: trasferisci_il_backup_di_unistanza_da_un_datacenter_a_un_altro
-section: Gestione via OpenStack
 legacy_guide_number: g1853
 updated: 2019-03-29
 ---
@@ -24,7 +22,7 @@ In alcuni casi potresti avere la necessità di spostare le tue istanze da un dat
 
 * Disporre di un’[istanza Public Cloud OVHcloud](https://www.ovhcloud.com/it/public-cloud/)
 * Avere accesso in SSH all'istanza/al sistema operativo (root)
-* Aver consultato la guida [Preparare l’ambiente per utilizzare l’API OpenStack](https://docs.ovh.com/it/public-cloud/prepare_the_environment_for_using_the_openstack_api/) (consigliato)
+* Aver consultato la guida [Preparare l’ambiente per utilizzare l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) (consigliato)
 
 > [!primary]
 >
@@ -146,6 +144,6 @@ Per effettuare questa operazione, esegui il seguente comando utilizzando l’ide
 
 ## Per saperne di più
 
-[Trasferire il backup di un disco aggiuntivo da un datacenter a un altro](https://docs.ovh.com/it/public-cloud/trasferisci_il_backup_di_un_disco_aggiutivo_da_un_datacenter_a_un_altro/)
+[Trasferire il backup di un disco aggiuntivo da un datacenter a un altro](/pages/platform/public-cloud/transfer_volume_backup_from_one_datacentre_to_another)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

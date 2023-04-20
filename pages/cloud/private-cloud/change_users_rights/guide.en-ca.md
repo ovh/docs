@@ -1,8 +1,6 @@
 ---
 title: Changing user rights
-slug: change-users-rights
 excerpt: Find out how to manage user permissions for the vSphere client
-section: OVHcloud Features
 updated: 2020-06-29
 ---
 

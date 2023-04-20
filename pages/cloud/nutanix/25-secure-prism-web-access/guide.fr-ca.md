@@ -1,9 +1,6 @@
 ---
 title: "Sécurisation de l'accès Web à Prism Central"
-slug: nutanix-prism-web-ui-security
 excerpt: "Découvrez comment restreindre l'accès Web à Prism Central"
-section: Réseau et sécurité
-order: 05
 updated: 2022-01-11
 ---
 

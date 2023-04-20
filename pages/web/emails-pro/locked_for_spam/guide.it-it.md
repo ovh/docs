@@ -1,9 +1,6 @@
 ---
 title: 'Che fare in caso di account bloccato per invio di Spam ?'
-slug: blocked-for-spam
 excerpt: 'Cosa fare se il tuo indirizzo email è bloccato per invio di Spam'
-section: 'Diagnostica'
-order: 1
 updated: 2020-04-20
 ---
 
@@ -22,4 +19,4 @@ Se hai ricevuto un’email che ti informa che uno dei tuoi indirizzi email è bl
 
 ## Procedura
 
-Consulta la nostra guida [Cosa fare in caso di account bloccato per Spam?](https://docs.ovh.com/it/microsoft-collaborative-solutions/blocco-per-spam/){.external} nella sezione "Soluzioni collaborative Microsoft".
+Consulta la nostra guida [Cosa fare in caso di account bloccato per Spam?](/pages/web/microsoft-collaborative-solutions/locked_for_spam){.external} nella sezione "Soluzioni collaborative Microsoft".

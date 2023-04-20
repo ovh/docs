@@ -1,9 +1,6 @@
 ---
 title: "Configurar a reverse DNS de um VPS"
 excerpt: Saiba como implementar a resolução reverse DNS
-slug: configurar_a_reverse_dns_vps
-section: Rede e IP
-order: 3
 updated: 2023-01-05
 ---
 
@@ -45,11 +42,11 @@ Também pode editar a reverse diretamente através do ícone da coluna **Reverse
 
 > [!primary]
 >
-Se a alteração não funcionar como previsto, verifique se o campo `A` está corretamente configurado na zona DNS do seu domínio. Atenção, a modificação da [zona DNS](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/) pode demorar até 24 horas se apenas alterou recentemente o campo `A`.
+Se a alteração não funcionar como previsto, verifique se o campo `A` está corretamente configurado na zona DNS do seu domínio. Atenção, a modificação da [zona DNS](/pages/web/domains/dns_zone_edit) pode demorar até 24 horas se apenas alterou recentemente o campo `A`.
 >
 
 ## Quer saber mais? <a name="gofurther"></a>
 
-[VPS - primeira utilização](https://docs.ovh.com/pt/vps/instalar-gerir-vps/)
+[VPS - primeira utilização](/pages/cloud/vps/starting_with_a_vps)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

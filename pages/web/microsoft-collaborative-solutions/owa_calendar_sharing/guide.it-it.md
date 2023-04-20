@@ -1,9 +1,6 @@
 ---
 title: 'Condividi un calendario con la Webmail OWA'
 excerpt: ''
-slug: exchange_2016_condividi_un_calendario_con_la_webmail_owa
-section: 'Utilizzo di Outlook Web App (OWA)'
-order: 03
 updated: 2020-02-19
 ---
 
@@ -91,11 +88,11 @@ Cliccando su un calendario della lista, è possibile visualizzarlo o nasconderlo
 
 ## Per saperne di più 
 
-[Guida all’utilizzo di Outlook Web App](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_guida_allutilizzo_di_outlook_web_app/)
+[Guida all’utilizzo di Outlook Web App](/pages/web/microsoft-collaborative-solutions/owa_user_guide)
 
-[Condividi una cartella con la Webmail OWA](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_condividi_una_cartella_con_la_webmail_owa/)
+[Condividi una cartella con la Webmail OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
-[Utilizzo dei gruppi (mailing list)](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2013_utilizzo_dei_gruppi_mailing_list/)
+[Utilizzo dei gruppi (mailing list)](/pages/web/microsoft-collaborative-solutions/feature_groups)
 
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

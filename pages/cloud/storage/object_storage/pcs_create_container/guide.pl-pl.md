@@ -1,9 +1,6 @@
 ---
 title: Object Storage Swift - Tworzenie kontenera Object Storage
-slug: pcs/create-container
 excerpt: Dowiedz się, jak utworzyć kontenery Object Storage w Panelu klienta OVHcloud
-section: OpenStack Swift Storage Class Specifics
-order: 110
 updated: 2021-10-27
 ---
 
@@ -32,7 +29,7 @@ Pierwszy etap polega na utworzeniu kontenera, który gromadzi Twoje pliki.
 
 Jeśli korzystasz z interfejsu Horizon:
 
-- Utworzenie [użytkownika OpenStack](https://docs.ovh.com/pl/public-cloud/tworzenie-i-usuwanie-uzytkownika-openstack/).
+- Utworzenie [użytkownika OpenStack](/pages/platform/public-cloud/create_and_delete_a_user).
 
 ## W praktyce
 
@@ -72,7 +69,7 @@ Nazwij kontener i kliknij `Dodaj kontener`{.action}:
 > - [ _ ]  
 > - i nie należy używać wielkich liter.  
 >
-> Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Łączenie kontenera z nazwą domeny](https://docs.ovh.com/pl/storage/umieszczenie_kontenera_object_storage_za_domena/)".
+> Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Łączenie kontenera z nazwą domeny](/pages/cloud/storage/object_storage/pcs_link_domain)".
 >
 
 ![kontener name](images/create-container-20211005111805966.png)
@@ -106,7 +103,7 @@ Nazwij kontener.
 > - [ _ ]  
 > - Nie wolno używać wielkich liter.  
 >
-> Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Łączenie kontenera z nazwą domeny](https://docs.ovh.com/pl/storage/umieszczenie_kontenera_object_storage_za_domena/)".
+> Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Łączenie kontenera z nazwą domeny](/pages/cloud/storage/object_storage/pcs_link_domain)".
 >
 
 Wybierz politykę dostępów dla kontenera i kliknij `Next`{.action}

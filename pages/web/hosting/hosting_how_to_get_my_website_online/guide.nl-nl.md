@@ -1,10 +1,7 @@
 ---
 deprecated: true
 title: 'Publiceren van een website op uw webhosting'
-slug: mijn-website-online-zetten
 excerpt: 'Ontdek hoe u een website op uw webhosting online zet'
-section: 'Aan de slag'
-order: 2
 updated: 2022-07-21
 ---
 
@@ -35,12 +32,12 @@ Voor een succesvol project is het cruciaal om eerst een duidelijk beeld te hebbe
 
 - **Creëer uw website zelf**: dit is een meer technische oplossing waarvoor programmeervaardigheden vereist zijn, maar die u wel de mogelijkheid biedt om een project geheel op maat te maken.
 
-- **Migreer een bestaande website naar OVHcloud**: deze oplossing kan ingewikkeld zijn als een onderbreking van de service voor de betreffende website geen optie is. Voor begeleiding bij dit proces kunt u ook de volgende handleiding raadplegen: [Migratie van uw website en e-mails naar OVHcloud](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/){.external}
+- **Migreer een bestaande website naar OVHcloud**: deze oplossing kan ingewikkeld zijn als een onderbreking van de service voor de betreffende website geen optie is. Voor begeleiding bij dit proces kunt u ook de volgende handleiding raadplegen: [Migratie van uw website en e-mails naar OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
 
 Nadat u de verschillende mogelijkheden hierboven hebt doorgenomen, kunt u een van de twee opties kiezen:
 
-- **als u onze 1-klik modules wilt gebruiken**: raadpleeg de instructies in onze handleiding [Installatie van uw website met 1-klik modules](https://docs.ovh.com/nl/hosting/1-klik-modules/);
+- **als u onze 1-klik modules wilt gebruiken**: raadpleeg de instructies in onze handleiding [Installatie van uw website met 1-klik modules](/pages/web/hosting/cms_install_1_click_modules);
 
 - **als u onze 1-klik modules _niet_ wilt gebruiken**: u zult uw website handmatig op uw hostingruimte moeten installeren. De informatie in deze handleiding kan handig zijn, maar is geen vervanging voor daadwerkelijke hulp van een webmaster.
  
@@ -63,7 +60,7 @@ Zorg ervoor dat u alle bestanden hebt voor de te publiceren website. Als u een b
 
 #### 2. Log in op uw opslagruimte.
 
-Als u een FTP-gebruikersnaam, een wachtwoord en een serveradres hebt, kunt u inloggen op uw opslagruimte. Deze zijn in de e-mail naar u verzonden met de mededeling dat uw hostingplan was opgezet. Als u niet langer in het bezit bent van het wachtwoord, raadpleegt u de instructies in onze handleiding [Wijziging van het wachtwoord wijzigen voor een FTP-gebruiker](https://docs.ovh.com/nl/hosting/wijzigen-wachtwoord-ftp-gebruiker/){.external}.
+Als u een FTP-gebruikersnaam, een wachtwoord en een serveradres hebt, kunt u inloggen op uw opslagruimte. Deze zijn in de e-mail naar u verzonden met de mededeling dat uw hostingplan was opgezet. Als u niet langer in het bezit bent van het wachtwoord, raadpleegt u de instructies in onze handleiding [Wijziging van het wachtwoord wijzigen voor een FTP-gebruiker](/pages/web/hosting/ftp_change_password){.external}.
 
 Om het serveradres of de gebruikersnaam van uw opslagruimte te verkrijgen, logt u in op uw [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en klikt u vervolgens op `Hosting`{.action} in de dienstenbalk aan de linkerkant. Selecteer de naam van het betreffende hostingplan en klik op het tabblad `FTP - SSH`{.action}.
 
@@ -143,10 +140,10 @@ Ter herinnering: als u problemen ondervindt bij het publiceren van uw website, r
 
 ## Verder
 
-[Migratie van uw website en e-mails naar OVHcloud](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh//){.external}.
+[Migratie van uw website en e-mails naar OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh/){.external}.
 
-[Installatie van een website met 1-klik modules](https://docs.ovh.com/nl/hosting/1-klik-modules/){.external}.
+[Installatie van een website met 1-klik modules](/pages/web/hosting/cms_install_1_click_modules){.external}.
 
-[Wijziging van het wachtwoord van een FTP-gebruiker](https://docs.ovh.com/nl/hosting/wijzigen-wachtwoord-ftp-gebruiker/){.external}.
+[Wijziging van het wachtwoord van een FTP-gebruiker](/pages/web/hosting/ftp_change_password){.external}.
 
 Ga in gesprek met andere communityleden op <https://community.ovh.com/en/>.

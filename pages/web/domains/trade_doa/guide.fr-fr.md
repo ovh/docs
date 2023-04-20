@@ -1,9 +1,6 @@
 ---
 title: "Changer le propriétaire d’un domaine avec une Demande d'Opération AFNIC (DOA)"
-slug: trade_doa
 excerpt: "Découvrez comment réaliser une Demande d'Opération AFNIC (DOA)"
-section: 'Changement de propriétaire'
-order: 02
 updated: 2022-10-10
 ---
 
@@ -11,7 +8,7 @@ updated: 2022-10-10
 
 ## Objectif
 
-Un [changement de propriétaire d'un nom de domaine](https://docs.ovh.com/fr/domains/changement-proprietaire-domaine/) se fait conventionnellement via une double validation par e-mail.<br>
+Un [changement de propriétaire d'un nom de domaine](/pages/web/domains/trade_domain) se fait conventionnellement via une double validation par e-mail.<br>
 Dans certains cas de figure, cette méthode ne peut pas être mise en oeuvre. Pour pallier à cela, le registre de [l'AFNIC (Association Française pour le Nommage Internet en Coopération)](https://www.afnic.fr/){.external} met à disposition un document pour récupérer la propriété d'un domaine géré par ce registre : **La Demande d'Opération AFNIC (DOA)**.
 
 Cette opération permet de récupérer la propriété d'un domaine dont l'extension est [gérée par l'AFNIC](https://www.afnic.fr/produits-services/){.external} dans les cas suivants :
@@ -24,20 +21,20 @@ Si les situations décrites ci-dessus ne vous correspondent pas, sachez que l'AF
 > [!primary]
 > Cette opération ne déplace pas votre nom de domaine vers un autre compte client OVHcloud et est limitée uniquement aux [extensions gérées par l'AFNIC](https://www.afnic.fr/produits-services/){.external}.
 >
-> Vous pourrez être amené à [modifier les contacts](https://docs.ovh.com/fr/customer/gestion-des-contacts/) du nom de domaine une fois le domaine récupéré avec la DOA.
+> Vous pourrez être amené à [modifier les contacts](/pages/account/customer/managing_contacts) du nom de domaine une fois le domaine récupéré avec la DOA.
 
 **Découvrez comment réaliser une Demande d'Opération AFNIC (DOA)**
 
 ## Prérequis
 
-- Avoir **initié une demande de changement de propriétaire** pour un domaine ayant une [extension gérée par l'AFNIC](https://www.afnic.fr/produits-services/){.external} et pour lequel les procédures indiquées dans notre documentation sur le [changement de propriétaire d'un domaine](https://docs.ovh.com/fr/domains/changement-proprietaire-domaine/) **ne peuvent pas être appliquées**.
+- Avoir **initié une demande de changement de propriétaire** pour un domaine ayant une [extension gérée par l'AFNIC](https://www.afnic.fr/produits-services/){.external} et pour lequel les procédures indiquées dans notre documentation sur le [changement de propriétaire d'un domaine](/pages/web/domains/trade_domain) **ne peuvent pas être appliquées**.
 - Avoir un bon de commande de **changement de propriétaire d'un domaine** dans le statut "en cours".
 - Télécharger la **Demande d'Opération AFNIC (DOA)** via le lien suivant : <https://www.afnic.fr/wp-media/uploads/2021/03/doa.pdf>.
 - Accéder à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
 
-La première étape consiste à initier une demande de changement de propriétaire pour votre domaine ayant une [extension gérée par l'AFNIC](https://www.afnic.fr/produits-services/){.external} à l'aide de notre documentation sur le [changement de propriétaire d'un domaine](https://docs.ovh.com/fr/domains/changement-proprietaire-domaine/).
+La première étape consiste à initier une demande de changement de propriétaire pour votre domaine ayant une [extension gérée par l'AFNIC](https://www.afnic.fr/produits-services/){.external} à l'aide de notre documentation sur le [changement de propriétaire d'un domaine](/pages/web/domains/trade_domain).
 
 Téléchargez ensuite le document présent sur la page <https://www.afnic.fr/wp-media/uploads/2021/03/doa.pdf>.
 
@@ -155,7 +152,7 @@ Retrouvez ci-dessous la liste des documents à fournir en fonction de la situati
 
 ## Aller plus loin
 
-[Gérer les contacts de ses services](https://docs.ovh.com/fr/customer/gestion-des-contacts/)
+[Gérer les contacts de ses services](/pages/account/customer/managing_contacts)
 
 [Procédures OVHcloud](https://www.ovh.com/fr/support/procedures/)
 

@@ -1,11 +1,8 @@
 ---
 title: Kafka - Getting started
 excerpt: Find out how to set up and manage your Public Cloud Databases for Kafka
-slug: kafka/getting-started
-section: Kafka - Guides
-order: 020
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/kafka/getting-started/'
+    canonical: '/pages/platform/databases/kafka_02_getting_started'
 updated: 2022-01-05
 ---
 
@@ -48,7 +45,7 @@ In this step, choose an appropriate service plan. If needed, you will be able to
 
 ![Choose plan](images/kafka_solution_business.png){.thumbnail}
 
-Please visit the [capabilities page](https://docs.ovh.com/us/es/publiccloud/databases/) of your selected database type for detailed information on each plan's properties.
+Please visit the [capabilities page](/products/public-cloud-databases) of your selected database type for detailed information on each plan's properties.
 
 Click `Next`{.action} to continue.
 
@@ -66,7 +63,7 @@ You can increase the number of nodes and choose the node template in this step. 
 
 ![Order nodes](images/kafka_features.png){.thumbnail}
 
-Please visit the [capabilities page](https://docs.ovh.com/us/es/publiccloud/databases/) of your selected database type for detailed information on hardware resources and other properties of the database installation.
+Please visit the [capabilities page](/products/public-cloud-databases) of your selected database type for detailed information on hardware resources and other properties of the database installation.
 
 Take note of the pricing information and click `Next`{.action} to continue.
 
@@ -79,7 +76,7 @@ Please note that attaching a private network is a feature not yet available at t
 
 #### Step 6: Review and confirm
 
-The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/).
+The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](/pages/account/api/first-steps).
 
 ![Confirm order](images/kafka_configuration.png){.thumbnail}
 
@@ -257,7 +254,7 @@ Congratulations, you now have an up and running Apache Kafka cluster, fully mana
 
 ## Go further
 
-[Kafka capabilities](https://docs.ovh.com/us/es/publiccloud/databases/kafka/capabilities/)
+[Kafka capabilities](/pages/platform/databases/kafka_01_capabilities)
 
 [Kafka Official documentation](https://kafka.apache.org/documentation/){.external}
 

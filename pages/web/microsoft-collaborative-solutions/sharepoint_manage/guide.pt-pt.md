@@ -1,9 +1,6 @@
 ---
 title: 'Ativação e gestão do seu SharePoint OVHcloud'
-slug: ativacao_e_gestao_do_seu_sharepoint_ovh
 excerpt: 'Saiba como subscrever e configurar uma plataforma SharePoint.'
-section: SharePoint
-order: 01
 updated: 2020-08-11
 ---
 

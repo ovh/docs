@@ -1,9 +1,6 @@
 ---
 title: "Mettre en place un répondeur depuis l'interface OWA"
 excerpt: guide mise en place d'un répondeur sous owa
-slug: exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa
-section: "Utilisation d'Outlook Web Application (OWA)"
-order: 02
 updated: 2020-02-26
 ---
 
@@ -64,8 +61,8 @@ Un message alternatif pour les expéditeurs externes peut être saisi dans la de
 
 ## Aller plus loin
 
-[ Consulter son compte Exchange depuis l’interface OWA](../exchange-2016-guide-utilisation-outlook-web-app/)
+[ Consulter son compte Exchange depuis l’interface OWA](/pages/web/microsoft-collaborative-solutions/owa_user_guide)
 
-[Partager des calendriers via l’interface OWA](../exchange-2016-partager-un-calendrier-via-le-webmail-owa/)
+[Partager des calendriers via l’interface OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

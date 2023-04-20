@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguracja konta e-mail w interfejsie online programu pocztowego Gmail'
-slug: przewodnik-konfiguracja-konta-e-mail-ovh-w-interfejsie-gmail
 excerpt: 'Dowiedz się, jak skonfigurować konto e-mail MX Plan w interfejsie online programu pocztowego Gmail'
-section: 'Konfiguracja w interfejsie online'
-order: 01
 updated: 2021-01-08
 ---
 

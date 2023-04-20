@@ -1,9 +1,7 @@
 ---
 title: 'Erstellung, Start und Löschung von Abbildern (Images) in Horizon'
 excerpt: 'Erstellung, Start und Löschung von Abbildern (Images) in Horizon'
-slug: erstellung_start_und_loschung_von_abbildern_images_in_horizon
 legacy_guide_number: g1784
-section: 'Horizon'
 updated: 2021-12-30
 ---
 
@@ -22,7 +20,7 @@ In dieser Hilfe werden die Erstellung, der Start und die Löschung von Abbildern
 
 ## Voraussetzungen
 
-- [Erstellung eines Zugangs zu Horizon](https://docs.ovh.com/de/public-cloud/horizon/)
+- [Erstellung eines Zugangs zu Horizon](/pages/platform/public-cloud/introducing_horizon)
 - Aufruf des Menüs Abbilder im OpenStack Horizon Manager
 
 ![public-cloud](images/horizon_menu.png){.thumbnail}

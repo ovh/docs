@@ -1,8 +1,6 @@
 ---
 title: "Replikationskopie einer VM vom Zerto Standort löschen"
-slug: zerto-vm-replica-deletion
 excerpt: Erfahren Sie hier, wie Sie nach Löschung einer VM auch deren Replikat entfernen
-section: OVHcloud Dienste und Optionen
 updated: 2021-12-09
 ---
 
@@ -24,7 +22,7 @@ Sie können diese Kopien dann löschen, um die VPG wieder in den Normalbetrieb z
 
 - Sie sind Administrator-Kontakt der [Hosted Private Cloud Infrastruktur](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/), um Login-Daten zu erhalten.
 - Sie haben eine aktive Benutzerkennung mit spezifischen Rechten für Zerto (erstellt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)).
-- Sie setzen [Zerto Virtual Replication](https://docs.ovh.com/de/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/) ein.
+- Sie setzen [Zerto Virtual Replication](/pages/cloud/private-cloud/zerto_virtual_replication_as_a_service) ein.
 
 ## In der praktischen Anwendung
 

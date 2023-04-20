@@ -1,10 +1,7 @@
 ---
 deprecated: true
 title: 'Wijziging van de DNS-servers voor een OVH-domeinnaam'
-slug: gedeelde_hosting_algemene_informatie_over_dns_servers
 excerpt: 'DNS-servers voor een OVH-domeinnaam wijzigen'
-section: 'DNS en DNS-zone'
-order: 01
 updated: 2021-02-18
 ---
 
@@ -39,7 +36,7 @@ Echter:
 
 - De inhoud van de oude DNS-configuratie wordt niet automatisch gerepliceerd naar de nieuwe configuratie. Zorg ervoor dat uw nieuwe configuratie alle informatie bevat die nodig is om de aan uw domeinnaam gekoppelde diensten correct te laten werken (bijvoorbeeld uw website en e-mailadressen).
 
-- Als u slechts één element van uw huidige DNS-configuratie wilt bewerken (bijvoorbeeld één DNS-record), raden we u aan onze handleiding over het bewerken van de DNS-zone te raadplegen: [Wijziging van een OVH DNS-zone](https://docs.ovh.com/nl/domains/hosting_hoe_wijzig_ik_mijn_dns_zone/){.external}.
+- Als u slechts één element van uw huidige DNS-configuratie wilt bewerken (bijvoorbeeld één DNS-record), raden we u aan onze handleiding over het bewerken van de DNS-zone te raadplegen: [Wijziging van een OVH DNS-zone](/pages/web/domains/dns_zone_edit){.external}.
 
 > [!warning]
 >
@@ -79,6 +76,6 @@ Nadat u de vereiste wijzigingen hebt aangebracht, moet u wachten tot ze volledig
 
 ## Verder
 
-[Wijziging van een OVH DNS-zone](https://docs.ovh.com/nl/domains/hosting_hoe_wijzig_ik_mijn_dns_zone/){.external}.
+[Wijziging van een OVH DNS-zone](/pages/web/domains/dns_zone_edit){.external}.
 
 Ga in gesprek met andere communityleden op <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: Importing an Additional IP
-slug: import-additional-ip
 excerpt: "Find out how to import an Additional IP address into your Public Cloud project"
-section: Additional IP
-order: 03
 updated: 2023-01-04
 ---
 
@@ -74,10 +71,10 @@ Click on `Attach`{.action} to confirm. The page will display a modification mess
 >
 
 The IP address is now associated with your instance.
-The next step will be the IP configuration in your OS; please refer to our [guide](https://docs.ovh.com/ie/en/publiccloud/network-services/configure-additional-ip/).
+The next step will be the IP configuration in your OS; please refer to our [guide](/pages/platform/network-services/getting-started-04-configure-additional-ip-to-instance).
 
 ## Go further
 
-[Configuring an Additional IP](https://docs.ovh.com/ie/en/publiccloud/network-services/configure-additional-ip/).
+[Configuring an Additional IP](/pages/platform/network-services/getting-started-04-configure-additional-ip-to-instance).
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: Optimising the security of your website
 excerpt: Find out how to make your website more secure
-slug: secure-website
-section: Optimise your website
-order: 01
 updated: 2021-12-10
 ---
 
@@ -28,7 +25,7 @@ However, if you experience any difficulties carrying out some of them, please do
 ## Requirements
 
 - An [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting)
-- The [login details](../log-in-to-storage-ftp-web-hosting/#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
+- The [login details](/pages/web/hosting/ftp_connection#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - Access to the [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
 
@@ -44,13 +41,13 @@ First, check the security of your Windows, Mac or Linux desktop:
 
 - Check your OS and software for updates.
 - Run a full scan of your desktop, after updating your antivirus/anti-malware software.
-- Change your desktop admin password regularly (for more information on how to create strong passwords, follow the instructions of this [guide](../../customer/all-about-your-username/#creating-a-strong-unique-password).
+- Change your desktop admin password regularly (for more information on how to create strong passwords, follow the instructions of this [guide](/pages/account/customer/all_about_username#creating-a-strong-unique-password).
 
 ### Step 2 - Secure the access to your OVHcloud Control Panel
 
-To secure your customer account, [enable two-factor authentication](../../customer/secure-account-with-2FA/) and follow the instructions of this [guide](../../customer/all-about-your-username/).
+To secure your customer account, [enable two-factor authentication](../../customer/secure-account-with-2FA/) and follow the instructions of this [guide](/pages/account/customer/all_about_username).
 
-Remember to update your [customer account information](../../customer/all-about-your-username/#changing-your-personal-details) and to add a **backup email** to your account.<br>
+Remember to update your [customer account information](/pages/account/customer/all_about_username#changing-your-personal-details) and to add a **backup email** to your account.<br>
 In the event of your login details being lost and/or the primary email address for your OVHcloud customer account being unavailable, a backup email as well as updated personal information will be essential to help you regain access to your services.
 
 ### Step 3 - Back up your website regularly <a name="backup"></a>
@@ -62,32 +59,32 @@ In the event of your login details being lost and/or the primary email address f
 > OVHcloud regularly backs up your data on its infrastructure. However, a handling error such as a delete operation launched manually on a live database, or a non-renewal of your services, will result in the permanent loss of your data and all their backups.
 >
 
-Start by backing up the data that makes up your website (FTP **AND** database files), following the instructions in this [guide](../export-a-website/). Import them on your desktop or on an external device, such as a NAS server or a USB drive.
+Start by backing up the data that makes up your website (FTP **AND** database files), following the instructions in this [guide](/pages/web/hosting/exporter-son-site-web). Import them on your desktop or on an external device, such as a NAS server or a USB drive.
 
 Website management software (CMS) also provides the ability to install automatic backup plugins.<br>
 Check the official forums for your favourite CMS or contact the [OVHcloud community](https://community.ovh.com/en/).
 
 ### Step 4 - Find out how to recognise fraudulent emails
 
-Phishing emails are a security threat to your website because they can contain malware or install it. To learn how to recognise and protect yourself from them, see this [guide](../../customer/scams-fraud-phishing/).
+Phishing emails are a security threat to your website because they can contain malware or install it. To learn how to recognise and protect yourself from them, see this [guide](/pages/account/customer/phishing_care).
 
 ### Step 5 - Set up automatic renewal
 
 If your services are not renewed, OVHcloud has the legal obligation to delete all data associated with your hosting plan, as well as all of their backups, when your subscription expires. We systemically send follow-up e-mails to our customers reminding them of their renewal dates before the end of their actual subscription.<br>
 However, these follow-up emails may arrive in your spam folder or the email address associated with your OVHcloud account may have been typed incorrectly by mistake or may no longer be available.
 
-If your website plays a major role in your professional activity, [enable automatic renewal](../../billing/how-to-use-automatic-renewal-at-ovh/#access-your-services-settings) across all of your OVHcloud services.<br>
+If your website plays a major role in your professional activity, [enable automatic renewal](/pages/account/billing/how_to_use_automatic_renewal#access-your-services-settings) across all of your OVHcloud services.<br>
 We also recommend checking regularly the **validity of the payment methods** you have registered.
 
 ### Step 6 - Check that your website is up to date
 
-Check your website updates regularly, following the instructions in this [guide](../security-practices-hosting-disabled/#22-update-your-website).
+Check your website updates regularly, following the instructions in this [guide](/pages/web/hosting/diagnostic_403_forbidden#22-update-your-website).
 
-Also remember to use a recent version of the [PHP programming language](../how_to_configure_php_on_your_ovh_web_hosting_package_2014/) on your Web Hosting plan.
+Also remember to use a recent version of the [PHP programming language](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014) on your Web Hosting plan.
 
 ### Step 7 - Activate HTTPS
 
-Set up an encrypted connection to your website using the **HTTPS** protocol by following this [guide](../activate-https-website-ssl/). By enabling this protocol, you can encrypt all of the information sent via your website (particularly data entered by your users on its forms).
+Set up an encrypted connection to your website using the **HTTPS** protocol by following this [guide](/pages/web/hosting/ssl-activate-https-website). By enabling this protocol, you can encrypt all of the information sent via your website (particularly data entered by your users on its forms).
 
 ### Step 8 - Protect your forms
 
@@ -106,7 +103,7 @@ Add a security plugin recommended by the CMS publisher to your website:
 
 In this step, you will need to log in to your [FTP space](../log-in-to-storage-ftp-web-hosting/). It involves technical skills to recognise possible malicious files on your web hosting. If you experience any difficulties with this verification, please do not hesitate to contact our [partners](https://partner.ovhcloud.com/en-gb/directory/).
 
-If you have any doubts regarding the safety of data hosted on your FTP storage, please also carry out the checks in [step 1](#local) once again and [change the password](../modify-ftp-user-password/) for your FTP space.
+If you have any doubts regarding the safety of data hosted on your FTP storage, please also carry out the checks in [step 1](#local) once again and [change the password](/pages/web/hosting/ftp_change_password) for your FTP space.
 
 ### Step 11 - Test your website backups
 
@@ -120,9 +117,9 @@ You can also create a **test version** of your website (e.g. test.mydomain.tld) 
 
 ## Go further <a name="gofurther"></a>
 
-[What to do if your WordPress site is hacked](../what_to_do_if_your_wordpress_site_is_hacked/)
+[What to do if your WordPress site is hacked](/pages/web/hosting/cms_what_to_do_if_your_site_is_hacked)
 
-[Responding when your hosting is deactivated for security purposes](../security-practices-hosting-disabled/)
+[Responding when your hosting is deactivated for security purposes](/pages/web/hosting/diagnostic_403_forbidden)
 
 For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 

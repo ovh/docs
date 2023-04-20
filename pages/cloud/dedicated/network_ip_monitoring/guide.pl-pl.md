@@ -1,8 +1,6 @@
 ---
 title: Jakie są adresy IP monitoringu OVHcloud?
-slug: monitoring-ip-ovh
 excerpt: W tej sekcji odnajdziesz adresy IP, które mają zostać wpisane podczas uruchamiania firewalla. Dzięki temu monitoring OVHcloud będzie nadal działać na Twoim serwerze.
-section: Sieć & IP
 updated: 2022-12-13
 ---
 
@@ -102,6 +100,6 @@ Zostaniesz przekierowany na poniższy ekran. Kliknij `Monitoruj usługę`{.actio
 
 ## Sprawdź również
 
-[Konfiguracja zapory sieciowej Network Firewall](../network-firewall/)
+[Konfiguracja zapory sieciowej Network Firewall](/pages/cloud/dedicated/firewall_network)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

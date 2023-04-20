@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - O que fazer quando a minha base de dados está saturada?"
-slug: database-overquota
 excerpt: "Descubra como agir quando a base de dados está sobrecarregada"
-section: 'Bases de dados'
-order: 06
 updated: 2023-02-16
 ---
 
@@ -39,7 +36,7 @@ Este tutorial propõe-lhe as ações a empreender quando a sua base de dados par
 > Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
 >
 
-Quando a sua base de dados partilhada da OVHcloud chega a saturação (**overquota**), os nossos robôs avisam-no por e-mail no endereço de e-mail do [contacto "Administrador"](https://docs.ovh.com/pt/customer/gestao_dos_contactos/) da base de dados. 
+Quando a sua base de dados partilhada da OVHcloud chega a saturação (**overquota**), os nossos robôs avisam-no por e-mail no endereço de e-mail do [contacto "Administrador"](/pages/account/customer/managing_contacts) da base de dados. 
 
 Um primeiro e-mail é enviado quando a sua base de dados consumiu mais de **80%** da sua capacidade de armazenamento. Um segundo e-mail será enviado quando **90%** desta capacidade de armazenamento for atingida.
 
@@ -61,7 +58,7 @@ A primeira etapa consiste em identificar a ou as tabelas volumosas presentes na 
 
 #### 1.1 - Aceder à base de dados via phpMyAdmin
 
-Obtenha a palavra-passe de acesso à sua base de dados diretamente no ficheiro de configuração do seu website. Para isso, utilize o **etapa 1** do nosso manual sobre [a alteração da palavra-passe de uma base de dados](https://docs.ovh.com/pt/hosting/alterar-palavra-passe-base-de-dados/).
+Obtenha a palavra-passe de acesso à sua base de dados diretamente no ficheiro de configuração do seu website. Para isso, utilize o **etapa 1** do nosso manual sobre [a alteração da palavra-passe de uma base de dados](/pages/web/hosting/sql_change_password).
 
 Ligue-se ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione `Web Cloud`{.action} na barra de navegação no topo do ecrã. Clique em `Alojamentos`{.action} e escolha o alojamento web associado à sua base de dados partilhada OVHcloud. Por fim, clique no separador `Bases de dados`{.action}.
 
@@ -131,9 +128,9 @@ Recomendamos esta oferta para bases de dados volumosas.
 
 De seguida, siga os nossos guias para mover o conteúdo da sua antiga base de dados para a nova:
 
-- [Exportar a sua base de dados existente](https://docs.ovh.com/pt/hosting/partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/)
-- [Primeiros passos com a oferta Web Cloud Databasess](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/)
-- [Importar a sua antiga base de dados para o serviço Web Cloud Databasess](https://docs.ovh.com/pt/clouddb/restaurar-importar-base-de-dados/)
+- [Exportar a sua base de dados existente](/pages/web/hosting/sql_database_export)
+- [Primeiros passos com a oferta Web Cloud Databasess](/pages/web/clouddb/starting_with_clouddb)
+- [Importar a sua antiga base de dados para o serviço Web Cloud Databasess](/pages/web/clouddb/restore-import-on-database-server)
 
 #### Caso n.º 2 - Não é necessária uma parte ou a totalidade do conteúdo da tabela volumosa para o funcionamento do seu site
 

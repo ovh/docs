@@ -1,8 +1,6 @@
 ---
 title: Wysyłanie wiadomości SMS za pomocą interfejsu API OVHcloud w PHP
-slug: wysylanie-wiadomosci-sms-api-ovh-php
 excerpt: Dowiedz się, jak wysyłać wiadomości SMS za pomocą interfejsu API OVHcloud RESTful w PHP
-section: Wysyłanie wiadomości SMS
 updated: 2020-06-25
 ---
 
