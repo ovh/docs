@@ -5,7 +5,7 @@ excerpt: Découvrez comment entraîner un modèle capable de détecter et de seg
 section: AI Notebooks - Tutoriels
 order: 12
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-image-segmentation-unet-tumors/'
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-notebooks-tuto-image-segmentation-unet-tumors?id=kb_article_view&sysparm_article=KB0057606'
 updated: 2023-04-13
 ---
 
