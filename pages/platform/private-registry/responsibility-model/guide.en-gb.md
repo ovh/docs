@@ -6,7 +6,7 @@ section: Informations générales
 order: 030
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/private-registry/responsibility-model/'
-updated: 2023-04-18
+updated: 2023-04-21
 ---
 
 **Last updated April 18th, 2023**
