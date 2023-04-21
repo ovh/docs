@@ -62,7 +62,7 @@ Pour cela, dirigez-vous sur l'onglet `Informations générales`{.action} de votr
 Les hébergements mutualisés **Performance** comprennent une offre Web Cloud Databases activable gratuitement.
 Lorsque vous résiliez ou supprimez votre hébergement mutualisé **Performance**, l'offre Web Cloud Databases qui est attachée est également résiliée. Pour conserver votre Web Cloud Databases, il vous faudra le détacher avant la résiliation de l'hébergement.<br>
 
-Pour cela, cliquez sur l'onglet `Informations générales`{.action} de votre hébergement. Dans la section **Configuration**, cliquez sur le bouton `...`{.action} à droite de « **Base de données Privée** ». Cliquez sur `Délier`{.action} et suivez les instructions afin de commander une offre Web Cloud Databases indépendante, ce qui vous permettra de conserver votre Web Cloud Databases déjà créé.
+Pour cela, cliquez sur l'onglet `Informations générales`{.action} de votre hébergement. Dans la section **Configuration**, cliquez sur le bouton `...`{.action} à droite de « **Web Cloud Databases** ». Cliquez sur `Délier`{.action} et suivez les instructions afin de commander une offre Web Cloud Databases indépendante, ce qui vous permettra de conserver votre Web Cloud Databases déjà créé.
 
 ### Comment augmenter la RAM d'une offre Web Cloud Databases liée à un hébergement mutualisé « Performance »
 
@@ -71,6 +71,8 @@ Pour augmenter la RAM d'une offre Web Cloud Databases liée à un hébergement m
 Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Rendez-vous dans la partie `Web Cloud` puis sur l'hébergement concerné à gauche dans l'onglet `Hébergements`{.action}. 
 
 Sur la page `Informations générales`{.action} qui s'affiche, retrouvez un encadré intitulé `Configuration`{.action} au centre de la page. A droite de la mention `Web Cloud Databases`{.action}, cliquez sur le bouton `...`{.action} puis sur `Délier`{.action}. Choisissez la durée du renouvellement la plus courte puis poursuivez jusqu'à la validation de la commande.
+
+Retrouvez plus d'informations dans notre guide sur la ["Configuration d'une offre Web Cloud Databases"](https://help.ovhcloud.com/csm/fr-web-cloud-db-configure-optimise-database-server?id=kb_article_view&sysparm_article=KB0051464#modifier-votre-offre-web-cloud-databases)
 
 **Cette action est irréversible et l'offre Web Cloud Databases sera ensuite facturée independamment de votre hébergement web Performance.**
 
