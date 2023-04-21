@@ -63,7 +63,7 @@ Go to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&f
 
 Once you have selected the operating system you want to install, tick `Customise the partition configuration`{.action}.
 
-![Customise the partition configuration](images/partition_customization.png){.thumbnail}
+![Customise the partition configuration](images/custompartition.png){.thumbnail}
 
 At this stage, you can modify the RAID type from your `/home` (1), and expand the partition (2) if you wish to do so.
 

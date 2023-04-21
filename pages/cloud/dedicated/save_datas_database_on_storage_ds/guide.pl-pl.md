@@ -73,7 +73,7 @@ Przejdź do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=h
 
 Po wybraniu systemu do instalacji zaznacz pole `Spersonalizuj konfigurację partycji`{.action}.
 
-![Personalizuj konfigurację partycji](images/partition_customization.png){.thumbnail}
+![Personalizuj konfigurację partycji](images/custompartition.png){.thumbnail}
 
 Na tym etapie zmodyfikujesz typ macierzy RAID w Twoim katalogu `/home` (1) i, jeśli chcesz, rozszerzysz partycję (2).
 

@@ -198,10 +198,10 @@ This configuration is more flexible, you don't have to associate an Additional I
 #### Requirements
 
 - A public block of IP addresses in your account, with a minimum of four addresses. The block must be pointed to the vRack.
-- Your chosen private IP address range
-- a [vRack compatible dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/){.external}
-- A [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Your chosen private IP address range.
+- a [vRack compatible dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/){.external}..
+- A [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account.
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
 
 #### Target configuration schema

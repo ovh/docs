@@ -72,7 +72,7 @@ Hiervoor gaat u naar uw [OVH Control Panel](https://www.ovh.com/auth/?action=got
 
 Nadat u het systeem voor installatie hebt geselecteerd, vinkt u het vakje `Partitieconfiguratie aanpassen`{.action} aan.
 
-![Personaliseer de partitieconfiguratie](images/partition_customization.png){.thumbnail}
+![Personaliseer de partitieconfiguratie](images/custompartition.png){.thumbnail}
 
 In dit stadium kunt u het RAID-type wijzigen vanuit uw `/home` (1) en de partitie (2) uitbreiden als u dat wenst.
 
