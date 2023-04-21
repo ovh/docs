@@ -36,7 +36,8 @@ To deploy your app, you need:
 - [The OVHcloud AI CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client/) installed on your local computer
 - [Docker](https://www.docker.com/get-started) installed on your local computer, **or** access to a Debian Docker Instance, which is available on the [Public Cloud](https://www.ovh.com/manager/public-cloud/).
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
-- Your weights obtained from training the U-Net model on the [BraTS2020 dataset](https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation) (refer to the *"Step 6 - Train and Save the model"* part of the [image segmentation notebook tutorial](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-segmentation/tensorflow/brain-tumor-segmentation-unet/notebook_image_segmentation_unet.ipynb)). 
+- The BraTS2020 dataset. [Download it here](https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation)
+- Your weights obtained from training the U-Net model on this dataset (refer to the *"Step 6 - Train and Save the model"* part of the [image segmentation notebook tutorial](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-segmentation/tensorflow/brain-tumor-segmentation-unet/notebook_image_segmentation_unet.ipynb)). 
 - The full code of the application, which can be found on this [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/image-segmentation-brain-tumors), which I invite you to clone.
 
 ## Instructions
