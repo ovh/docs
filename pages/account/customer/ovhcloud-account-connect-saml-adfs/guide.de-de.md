@@ -60,7 +60,7 @@ Sie können die Informationen über die Relying Party manuell eingeben oder aus 
 
 Sie erhalten die passende Metadatendatei über folgende Links:
 
-- [EU-Metadaten](https://www.ovh.com/auth/sso/saml/sp/metadata.xml)
+- [Metadaten der EU-Region](https://www.ovh.com/auth/sso/saml/sp/metadata.xml)
 - [Metadaten der CA-Region](https://ca.ovh.com/auth/sso/saml/sp/metadata.xml)
 
 Wählen Sie `Import data about the relying party from a file`{.action} und dann Ihre Metadatendatei aus.
@@ -231,7 +231,7 @@ Sie sind nun mit derselben Kundenkennung eingeloggt, jedoch über AD FS SSO und 
 
 [OVHcloud Kunden-Account absichern und persönliche Informationen verwalten](https://docs.ovh.com/de/customer/alles_uber_ihre_ovh_kundenkennung/)
 
-[Definition und Verwaltung des Passworts Ihres Accounts](https://docs.ovh.com/de/customer/Passwort-verwalten/)
+[Das Passwort Ihres Kunden-Accounts anlegen und verwalten ](https://docs.ovh.com/de/customer/Passwort-verwalten/)
 
 [Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/)
 

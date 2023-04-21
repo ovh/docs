@@ -176,7 +176,7 @@ Geben Sie auf der [OVHcloud Login-Seite](https://www.ovh.com/auth/?action=gotoma
 
 ![Verbindung zu OVHcloud](images/ovhcloud_federation_login_1.png){.thumbnail}
 
-Sie werden dann auf die Loginseite von Google Workspace weitergeleitet. Geben Sie Login und Passwort eines Benutzers Ihres Google Workspace ein und klicken Sie dann auf den Button `Sign in`{.action} .
+Sie werden dann auf die Loginseite von Google Workspace weitergeleitet. Geben Sie Login und Passwort eines Benutzers Ihres Google Workspace ein und klicken Sie dann auf den Button `Sign in`{.action}.
 
 ![OVHcloud Federation Redirection Google Workspace](images/ovhcloud_federation_login_2.png){.thumbnail}
 
@@ -190,7 +190,7 @@ Sie sind nun mit derselben Kundenkennung eingeloggt, jedoch über Ihr Google Wor
 
 [OVHcloud Kunden-Account absichern und persönliche Informationen verwalten](https://docs.ovh.com/de/customer/alles_uber_ihre_ovh_kundenkennung/)
 
-[Definition und Verwaltung des Passworts Ihres Accounts](https://docs.ovh.com/de/customer/Passwort-verwalten/)
+[Das Passwort Ihres Kunden-Accounts anlegen und verwalten ](https://docs.ovh.com/de/customer/Passwort-verwalten/)
 
 [Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/)
 
