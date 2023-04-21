@@ -118,7 +118,7 @@ In some cases, an event may also contain a link to the resource that the task is
 
 > [!primary]
 >
-> The event and task examples shown above may vary by API section. Please refer to the [console](pages/account/api/console-preview/) to view the exact definition for each section.
+> The event and task examples shown above may vary by API section. Please refer to the [console](/pages/account/api/console-preview) to view the exact definition for each section.
 >
 
 ### Pagination
@@ -165,8 +165,8 @@ Several libraries are available to use the OVHcloud APIs:
 
 ## Go further <a name="gofurther"></a>
 
-[Exploring OVHcloud APIs](pages/account/api/console-preview/)
+[Exploring OVHcloud APIs](/pages/account/api/console-preview)
 
-[Using Terraform with OVHcloud](pages/account/api/terraform-at-ovhcloud) 
+[Using Terraform with OVHcloud](/pages/account/api/terraform-at-ovhcloud) 
 
 Join our community of users on <https://community.ovh.com/en/>.
