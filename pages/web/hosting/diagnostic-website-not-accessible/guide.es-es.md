@@ -128,7 +128,7 @@ En la pestaña `Información general`{.action}, copie la dirección IPV4 y/o IPV
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-A continuación, cópiela en la [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#editar-la-zona-dns-de-ovhcloud-de-su-dominio_1) de su dominio modificando o creando uno o más registros de tipo `A`.
+A continuación, cópiela en la [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#editar-la-zona-dns-de-ovhcloud-de-su-dominio) de su dominio modificando o creando uno o más registros de tipo `A`.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 

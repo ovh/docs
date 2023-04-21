@@ -56,7 +56,7 @@ Click the `Add IP`{.action} button to add IP addresses to this list.
 
 ### Manage senders and credits
 
-See our guides on [sender management](https://docs.ovh.com/ie/en/sms/send_sms_messages_via_control_panel/#step-3-choose-an-sms-sender_1) and [managing SMS credits and enabling automatic re-crediting](https://docs.ovh.com/ie/en/sms/enable-automatic-recredit-sms-credit/).
+See our guides on [sender management](https://docs.ovh.com/ie/en/sms/send_sms_messages_via_control_panel/#step-3-choose-an-sms-sender) and [managing SMS credits and enabling automatic re-crediting](https://docs.ovh.com/ie/en/sms/enable-automatic-recredit-sms-credit/).
 
 ## Go further
 

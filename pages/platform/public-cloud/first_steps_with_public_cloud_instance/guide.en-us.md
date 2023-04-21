@@ -78,7 +78,7 @@ Refer to our guide [Backing up an instance](../back-up-instance/#creating-an-aut
 
 Click on `Stop`{.action}.
 
-This will put the instance in a suspended state. Refer to our guide [Shelve or pause an instance](../shelve-or-pause-an-instance/#suspend-stop-an-instance_1) for detailed information.
+This will put the instance in a suspended state. Refer to our guide [Shelve or pause an instance](../shelve-or-pause-an-instance/#suspend-stop-an-instance) for detailed information.
 
 Click on `Boot`{.action} to reactivate the instance.
 

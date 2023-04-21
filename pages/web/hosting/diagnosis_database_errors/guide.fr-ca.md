@@ -138,7 +138,7 @@ Relancez ensuite le calcul du quota utilisé depuis l'onglet `Bases de données`
 
 #### Méthode 4 : optimiser votre base de données
 
-Pour optimiser votre base de données, suivez les instructions de notre guide « [Configurer votre serveur de bases de données](https://docs.ovh.com/ca/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) ». Relancez ensuite le calcul du quota utilisé depuis l'onglet `Bases de données`{.action} de votre hébergement, en cliquant sur le bouton `...`{.action} de la base de données concernée.
+Pour optimiser votre base de données, suivez les instructions de notre guide « [Configurer votre serveur de bases de données](https://docs.ovh.com/ca/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees) ». Relancez ensuite le calcul du quota utilisé depuis l'onglet `Bases de données`{.action} de votre hébergement, en cliquant sur le bouton `...`{.action} de la base de données concernée.
 
 > [!warning]
 >
@@ -210,7 +210,7 @@ Le nombre maximal de connexions actives pour les bases de données livrées avec
 
 Ce message apparaît lors de la [connexion à PhpMyAdmin](https://docs.ovh.com/ca/fr/hosting/creer-base-de-donnees/#acceder-a-linterface-phpmyadmin) lorsque ce nombre maximal de connexions est dépassé.
 
-Dans cette situation, vous devrez [optimiser vos bases de données](https://docs.ovh.com/ca/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) afin de réduire le nombre de connexions actives.
+Dans cette situation, vous devrez [optimiser vos bases de données](https://docs.ovh.com/ca/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees) afin de réduire le nombre de connexions actives.
 
 > [!warning]
 >

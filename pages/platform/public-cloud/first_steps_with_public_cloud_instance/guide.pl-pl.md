@@ -82,7 +82,7 @@ Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem "[Tworzenie kopii
 
 Kliknij przycisk `Zatrzymaj`{.action}.
 
-Działanie to spowoduje zawieszenie instancji. Więcej informacji znajdziesz w przewodniku "[Wstrzymanie lub uśpienie instancji](../wstrzymanie_lub_uspienie_instancji/#zatrzymaj-suspend-instancje_1)".
+Działanie to spowoduje zawieszenie instancji. Więcej informacji znajdziesz w przewodniku "[Wstrzymanie lub uśpienie instancji](../wstrzymanie_lub_uspienie_instancji/#zatrzymaj-suspend-instancje)".
 
 Kliknij `Uruchom`{.action}, aby ponownie włączyć instancję.
 

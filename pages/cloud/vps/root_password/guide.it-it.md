@@ -62,7 +62,7 @@ passwd: password updated successfully
 > Su una distribuzione Linux, la password che digitate **non** apparirà.
 >
 
-Per autorizzare la connessione come utente root, segui gli step di [questa sezione](./#attiva-la-password-di-root_1).
+Per autorizzare la connessione come utente root, segui gli step di [questa sezione](./#attiva-la-password-di-root).
 
 ### Modifica della password se l'hai perso
 

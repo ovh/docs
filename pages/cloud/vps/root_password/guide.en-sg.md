@@ -59,7 +59,7 @@ passwd: password updated successfully
 > On a GNU/Linux distribution, the password you enter **will not appear**.
 >
 
-If you need to permit logging in as root, follow the steps in [this guide section](./#enabling-root-login_1).
+If you need to permit logging in as root, follow the steps in [this guide section](./#enabling-root-login).
 
 ### Changing the password if you have lost it
 

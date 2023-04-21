@@ -66,7 +66,7 @@ Richiamo della sua definizione e del suo principio di funzionamento:
 > 
 > Se il sistema si attiva e desideri connetterti al tuo ESXi immediatamente, sarà necessario sbloccare manualmente l'account amministratore.
 >
-> Per effettuare questa operazione, è necessario [riavviare](https://docs.ovh.com/it/dedicated/iniziare-a-utilizzare-server-dedicato/#riavvio-del-tuo-server-dedicato_1) il server ESXi attraverso lo Spazio Cliente OVHcloud.
+> Per effettuare questa operazione, è necessario [riavviare](https://docs.ovh.com/it/dedicated/iniziare-a-utilizzare-server-dedicato/#riavvio-del-tuo-server-dedicato) il server ESXi attraverso lo Spazio Cliente OVHcloud.
 > 
 
 È possibile consultare lo storico dei log di accesso in questi file a partire da uno shell SSH:

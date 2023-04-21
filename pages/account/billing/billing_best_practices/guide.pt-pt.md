@@ -45,7 +45,7 @@ Na secção `O meu perfil`{.action} à direita do ecrã (clique novamente no seu
 
 ![myprofile](images/myprofile.png){.thumbnail}
 
-Para mais informações consulte o guia [Proteger a minha conta OVHcloud e gerir as minhas informações pessoais](https://docs.ovh.com/pt/customer/saber_tudo_sobre_o_identificador_de_cliente/#como-gerir-os-meus-dados-pessoais_1).
+Para mais informações consulte o guia [Proteger a minha conta OVHcloud e gerir as minhas informações pessoais](https://docs.ovh.com/pt/customer/saber_tudo_sobre_o_identificador_de_cliente/#como-gerir-os-meus-dados-pessoais).
 
 Certifique-se de que o seu endereço de e-mail está sempre **atualizado, seguro e acessível.** Os e-mails provenientes dos nossos serviços ser-lhe-ão enviados para este endereço, incluindo as **mensagens de reinicialização** em caso de perda da sua palavra-passe.
 

@@ -78,7 +78,7 @@ Introduzca la información solicitada en la ventana que aparece. Prosiga en func
 |Nombre personalizado|Introduzca un nombre que le permita diferenciar este motor de ejecución de los otros motores de su cuenta de OVHcloud.|  
 |Motor de ejecución|Seleccione el nuevo motor de ejecución deseado.|  
 
-Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}. Entonces asegúrese de que el multisitio o los multisitios que desee puedan utilizar debidamente ese motor de ejecución. Para ello, prosiga con la Etapa 3 [«asociar el motor de ejecución a un multisitio»](./#etapa-3-asociar-el-motor-de-ejecucion-a-un-multisitio_2){.external}.
+Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}. Entonces asegúrese de que el multisitio o los multisitios que desee puedan utilizar debidamente ese motor de ejecución. Para ello, prosiga con la Etapa 3 [«asociar el motor de ejecución a un multisitio»](./#etapa-3-asociar-el-motor-de-ejecucion-a-un-multisitio){.external}.
 
 
 
@@ -92,7 +92,7 @@ Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}.
 |Entorno de la aplicación|Especifique si se trata de un entorno de «Producción», de «Prueba» o, incluso, de «Desarrollo».  Tenga en cuenta que este último tiene un comportamiento diferente a los otros y que muestra los errores directamente en la interfaz web, así pues, utilícelo con conocimiento de causa.|
 |Secuencia de comandos de ejecución de la aplicación|Designe la secuencia de comandos que ejecutará la tecnología Node.js.|
 
-Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}. Entonces asegúrese de que el multisitio o los multisitios que desee puedan utilizar debidamente ese motor de ejecución. Para ello, prosiga con la «Etapa 3: [ asociar el motor de ejecución a un multisitio](./#3-asociar-el-motor-de-ejecución-a-un-multisitio _2){.external}».
+Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}. Entonces asegúrese de que el multisitio o los multisitios que desee puedan utilizar debidamente ese motor de ejecución. Para ello, prosiga con la «Etapa 3: [ asociar el motor de ejecución a un multisitio](./#3-asociar-el-motor-de-ejecución-a-un-multisitio ){.external}».
 
 ![cloudweb](images/cloud-web-runtime-step3-2.png){.thumbnail}
 
@@ -106,7 +106,7 @@ Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}.
 |Entorno de la aplicación|Especifique si se trata de un entorno de «Producción», de «Prueba» o, incluso, de «Desarrollo». Tenga en cuenta que este último tiene un comportamiento diferente a los otros y que muestra los errores directamente en la interfaz web, así pues, utilícelo con conocimiento de causa.|
 |Secuencia de comandos de ejecución de la aplicación|Designe la secuencia de comandos que ejecutará el motor de ejecución Ruby.|
 
-Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}. Entonces asegúrese de que el multisitio o los multisitios que desee puedan utilizar debidamente ese motor de ejecución. Para ello, prosiga con la «Etapa 3: [ asociar el motor de ejecución a un multisitio](./#3-asociar-el-motor-de-ejecución-a-un-multisitio _2){.external}».
+Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}. Entonces asegúrese de que el multisitio o los multisitios que desee puedan utilizar debidamente ese motor de ejecución. Para ello, prosiga con la «Etapa 3: [ asociar el motor de ejecución a un multisitio](./#3-asociar-el-motor-de-ejecución-a-un-multisitio ){.external}».
 
 ![cloudweb](images/cloud-web-runtime-step2-1-3.png){.thumbnail}
 
@@ -121,7 +121,7 @@ Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}.
 |Entorno de la aplicación|Especifique si se trata de un entorno de «Producción», de «Prueba» o, incluso, de «Desarrollo». Tenga en cuenta que este último tiene un comportamiento diferente a los otros y que muestra los errores directamente en la interfaz web, así pues, utilícelo con conocimiento de causa.|
 |Secuencia de comandos de ejecución de la aplicación|Designe la secuencia de comandos que ejecutará el motor de ejecución Python.|
 
-Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}. Entonces asegúrese de que el multisitio o los multisitios que desee puedan utilizar debidamente ese motor de ejecución. Para ello, prosiga con la «Etapa 3: [ asociar el motor de ejecución a un multisitio](./#3-asociar-el-motor-de-ejecución-a-un-multisitio _2){.external}».
+Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}. Entonces asegúrese de que el multisitio o los multisitios que desee puedan utilizar debidamente ese motor de ejecución. Para ello, prosiga con la «Etapa 3: [ asociar el motor de ejecución a un multisitio](./#3-asociar-el-motor-de-ejecución-a-un-multisitio ){.external}».
 
 ![cloudweb](images/cloud-web-runtime-step2-1-4.png){.thumbnail}
 

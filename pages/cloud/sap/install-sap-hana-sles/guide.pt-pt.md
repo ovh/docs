@@ -61,7 +61,7 @@ Once these last parameters are configured, click `Confirm`{.action} to launch th
 >
 > `SUSEConnect -r <license>`
 
-Once the SLES 15 for SAP installation is done, you can [connect to your dedicated server](https://docs.ovh.com/pt/dedicated/primeiros-passos-servidor-dedicado/#ligacao-ao-seu-servidor_1).
+Once the SLES 15 for SAP installation is done, you can [connect to your dedicated server](https://docs.ovh.com/pt/dedicated/primeiros-passos-servidor-dedicado/#ligacao-ao-seu-servidor).
 
 ### Preparation of file systems
 

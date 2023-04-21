@@ -71,7 +71,7 @@ Se hai bisogno di aiuto, consulta la guida: [Creare un'istanza Public Cloud](htt
 
 #### Caso di un'istanza già esistente
 
-È possibile associare un'istanza esistente a una rete privata. Per maggiori informazioni, consulta [questa sezione](https://docs.ovh.com/it/public-cloud/public-cloud-vrack/#in-caso-di-istanza-esistente_2) della guida corrispondente.
+È possibile associare un'istanza esistente a una rete privata. Per maggiori informazioni, consulta [questa sezione](https://docs.ovh.com/it/public-cloud/public-cloud-vrack/#in-caso-di-istanza-esistente) della guida corrispondente.
 
 ### Crea una VLAN ID
 
@@ -79,7 +79,7 @@ Per comunicare tra loro, i due servizi devono essere contrassegnati con la stess
 
 #### Utilizzo della VLAN ID predefinito
 
-Sui server dedicati, di default, sei sulla VLAN **0**. Per utilizzare questo ID, sarà necessario « taglare » la rete privata associata alla tua istanza con VLAN **0**. Per farlo, è necessario utilizzare l'[API OVHcloud (EN)](https://docs.ovh.com/it/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1).
+Sui server dedicati, di default, sei sulla VLAN **0**. Per utilizzare questo ID, sarà necessario « taglare » la rete privata associata alla tua istanza con VLAN **0**. Per farlo, è necessario utilizzare l'[API OVHcloud (EN)](https://docs.ovh.com/it/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack).
 
 
 > [!primary]

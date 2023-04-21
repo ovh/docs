@@ -26,7 +26,7 @@ Quando instalar ou reiniciar um sistema operativo Windows, irá receber uma pala
 
 ## Instruções
 
-As etapas seguintes descrevem o processo de modificação da palavra-passe admin local através do modo rescue OVHcloud (baseado em Linux) que está disponível a qualquer momento. Se preferir utilizar o Windows PE (WinRescue), consulte o método dedicado [no fim deste guia](./#reinicializacao-da-password-admin-com-o-auxilio-de-winrescue_1).
+As etapas seguintes descrevem o processo de modificação da palavra-passe admin local através do modo rescue OVHcloud (baseado em Linux) que está disponível a qualquer momento. Se preferir utilizar o Windows PE (WinRescue), consulte o método dedicado [no fim deste guia](./#reinicializacao-da-password-admin-com-o-auxilio-de-winrescue).
 
 ### 1 - reiniciar o servidor em modo rescue
 
@@ -231,7 +231,7 @@ Write hive files? (y/n) [n] : y
 
 ### 4 - Reiniciar o servidor 
 
-Comece por substituir o netboot por **Fazer boot no disco rígido** na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) (ver [Etapa 1](./#1-reiniciar-o-servidor-em-modo-rescue_1)). 
+Comece por substituir o netboot por **Fazer boot no disco rígido** na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) (ver [Etapa 1](./#1-reiniciar-o-servidor-em-modo-rescue)). 
 
 De volta à linha de comandos, desmonte a partição e reinicie o servidor com os seguintes comandos:
 
@@ -331,7 +331,7 @@ O servidor deve ser reiniciado.
 
 #### Etapa 3: reiniciar o servidor 
 
-Comece por substituir o netboot por **Fazer boot no disco rígido** na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) (ver [Etapa 1](./#1-reiniciar-o-servidor-em-modo-rescue_1)). 
+Comece por substituir o netboot por **Fazer boot no disco rígido** na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) (ver [Etapa 1](./#1-reiniciar-o-servidor-em-modo-rescue)). 
 
 De volta à janela KVM, selecione a opção de paragem `Reiniciar`{.action} através do botão Windows "Iniciar" no canto inferior esquerdo.
 

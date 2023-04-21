@@ -224,7 +224,7 @@ Um Ihr [Hosted Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) zu
 
 #### Private Exchange <a name="private"></a>
 
-Um Ihr [Private Exchange](https://www.ovhcloud.com/de/emails/private-exchange/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange-abrechnung-verwalten/#accounts-entfernen_1).
+Um Ihr [Private Exchange](https://www.ovhcloud.com/de/emails/private-exchange/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange-abrechnung-verwalten/#accounts-entfernen).
 
 #### Office 365 CSP1 <a name="office-csp1"></a>
 

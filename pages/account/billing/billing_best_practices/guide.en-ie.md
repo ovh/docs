@@ -41,7 +41,7 @@ In the `My profile`{.action} section on the right of your screen (click on your 
 
 ![myprofile](images/myprofile.png){.thumbnail}
 
-For more information, read the guide [Securing my OVHcloud account and managing my personal information](https://docs.ovh.com/ie/en/customer/all-about-your-username/#how-to-manage-your-personal-details_1).
+For more information, read the guide [Securing my OVHcloud account and managing my personal information](https://docs.ovh.com/ie/en/customer/all-about-your-username/#how-to-manage-your-personal-details).
 
 Ensure your email address is always **up to date, accessible and secured**. Email messages from our services will be sent to this address, including the ones meant to reset your Control Panel's password.
 

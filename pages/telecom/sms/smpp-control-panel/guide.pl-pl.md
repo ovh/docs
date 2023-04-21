@@ -60,7 +60,7 @@ Kliknij przycisk `Dodaj adres IP`{.action}, aby dodać adresy IP do tej listy.
 
 ### Zarządzanie nadawcami i zasileniami
 
-Zapoznaj się z naszymi przewodnikami na temat [zarządzanie nadawcami](https://docs.ovh.com/pl/sms/wysylanie-wiadomosci-sms-z-panelu-klienta/#etap-3-wybor-nadawcy-wiadomosci-sms_1) oraz na temat [zarządzanie zasileniami SMS i automatycznym doładowaniem](https://docs.ovh.com/pl/sms/aktywowanie-automatycznego-ladowania-zasilen-sms/).
+Zapoznaj się z naszymi przewodnikami na temat [zarządzanie nadawcami](https://docs.ovh.com/pl/sms/wysylanie-wiadomosci-sms-z-panelu-klienta/#etap-3-wybor-nadawcy-wiadomosci-sms) oraz na temat [zarządzanie zasileniami SMS i automatycznym doładowaniem](https://docs.ovh.com/pl/sms/aktywowanie-automatycznego-ladowania-zasilen-sms/).
 
 ## Sprawdź również
 

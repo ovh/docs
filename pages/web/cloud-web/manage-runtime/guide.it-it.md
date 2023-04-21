@@ -77,7 +77,7 @@ Nella nuova finestra, inserisci le informazioni richieste e prosegui nella lettu
 |Nome personalizzato|Assegna al motore un nome che ti permetta di riconoscerlo tra quelli presenti nel tuo Spazio Cliente OVHcloud.|  
 |Motore di esecuzione|Seleziona il nuovo motore di esecuzione.|  
 
-Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta lo [Step 3: associa il motore di esecuzione a un multisito](./#etape-3-associer-le-moteur-dexecution-a-un-multisite_2){.external}.
+Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta lo [Step 3: associa il motore di esecuzione a un multisito](./#etape-3-associer-le-moteur-dexecution-a-un-multisite){.external}.
 
 
 
@@ -91,7 +91,7 @@ Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, 
 |Ambiente dell’applicazione|Specifica se si tratta di un ambiente di produzione (production), di prova (test) o di sviluppo (development). Ti ricordiamo che quest’ultimo ha un comportamento diverso rispetto agli altri, in quanto mostra gli eventuali errori direttamente nell’interfaccia Web.|
 |Script per l’avvio dell'applicazione|Assegna un nome allo script che invierà la richiesta alla tecnologia Node.js.|
 
-Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta lo [Step 3: associa il motore di esecuzione a un multisito](./#etape-3-associer-le-moteur-dexecution-a-un-multisite_2){.external}.
+Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta lo [Step 3: associa il motore di esecuzione a un multisito](./#etape-3-associer-le-moteur-dexecution-a-un-multisite){.external}.
 
 ![cloudweb](images/cloud-web-runtime-step3-2.png){.thumbnail}
 
@@ -105,7 +105,7 @@ Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, 
 |Ambiente dell’applicazione|Specifica se si tratta di un ambiente di produzione (production), di prova (test) o di sviluppo (development). Ti ricordiamo che quest’ultimo ha un comportamento diverso rispetto agli altri, in quanto mostra gli eventuali errori direttamente nell’interfaccia Web.|
 |Script di avvio dell'applicazione|Assegna un nome allo script che invierà la richiesta al motore di esecuzione Ruby.|
 
-Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta il paragrafo [Step 3: associa il motore di esecuzione a un multisito](.#step-3-associa-il-motore-di-esecuzione-a-un-multisito_2){.external}.
+Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta il paragrafo [Step 3: associa il motore di esecuzione a un multisito](.#step-3-associa-il-motore-di-esecuzione-a-un-multisito){.external}.
 
 ![cloudweb](images/cloud-web-runtime-step2-1-3.png){.thumbnail}
 
@@ -120,7 +120,7 @@ Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, 
 |Ambiente dell’applicazione|Specifica se si tratta di un ambiente di produzione (production), di prova (test) o di sviluppo (development). Ti ricordiamo che quest’ultimo ha un comportamento diverso rispetto agli altri, in quanto mostra gli eventuali errori direttamente nell’interfaccia Web.|
 |Script di avvio dell'applicazione|Assegna un nome allo script che invierà la richiesta al motore di esecuzione Python.|
 
-Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta il paragrafo [Step 3: associa il motore di esecuzione a un multisito](.#step-3-associa-il-motore-di-esecuzione-a-un-multisito_2){.external}.
+Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta il paragrafo [Step 3: associa il motore di esecuzione a un multisito](.#step-3-associa-il-motore-di-esecuzione-a-un-multisito){.external}.
 
 ![cloudweb](images/cloud-web-runtime-step2-1-4.png){.thumbnail}
 

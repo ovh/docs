@@ -26,7 +26,7 @@ Podczas instalacji lub reinstalacji systemu operacyjnego Windows otrzymujesz has
 
 ## W praktyce
 
-Kolejne etapy opisują proces zmiany lokalnego hasła administratora w trybie Rescue OVHcloud (oparty na Linuxie), który jest dostępny w każdej chwili. Jeśli wolisz korzystać z systemu Windows PE (WinRescue), zapoznaj się z metodą dedykowaną [na końcu tego przewodnika](./#reset-hasla-administratora-za-pomoca-winrescue_1). 
+Kolejne etapy opisują proces zmiany lokalnego hasła administratora w trybie Rescue OVHcloud (oparty na Linuxie), który jest dostępny w każdej chwili. Jeśli wolisz korzystać z systemu Windows PE (WinRescue), zapoznaj się z metodą dedykowaną [na końcu tego przewodnika](./#reset-hasla-administratora-za-pomoca-winrescue). 
 
 ### Etap 1: restart serwera w trybie rescue
 

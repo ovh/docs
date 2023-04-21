@@ -127,7 +127,7 @@ Pode realizar de duas formas:
 
 - criar o seu reencaminhamento a partir do webmail, através das regras de caixa de entrada. Para isso, siga o manual [Regras da caixa de entrada na interface OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/criar-regras-inbox-no-owa/#exemplo-1-redirecionar-e-mails-para-outro-endereco).
 
-- criar o seu reencaminhamento a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Este método permite-lhe, por exemplo, criar um alias, ou seja, reencaminhar um endereço de e-mail que não existe para um endereço de e-mail existente. Para isso, siga o nosso manual [Utilizar os reencaminhamentos de e-mail](https://docs.ovh.com/pt/emails/mail_partilhado_guia_dos_reencaminhamentos_email/#nova-versao-da-oferta-mx-plan_1).
+- criar o seu reencaminhamento a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Este método permite-lhe, por exemplo, criar um alias, ou seja, reencaminhar um endereço de e-mail que não existe para um endereço de e-mail existente. Para isso, siga o nosso manual [Utilizar os reencaminhamentos de e-mail](https://docs.ovh.com/pt/emails/mail_partilhado_guia_dos_reencaminhamentos_email/#nova-versao-da-oferta-mx-plan).
 
 ##### **Voicemail**
 

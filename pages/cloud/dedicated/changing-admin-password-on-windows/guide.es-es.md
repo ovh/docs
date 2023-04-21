@@ -26,7 +26,7 @@ Al instalar o reinstalar un sistema operativo Windows, recibirá una contraseña
 
 ## Procedimiento
 
-Las siguientes etapas describen el proceso de modificación de la contraseña local a través del modo de rescate de OVHcloud (basado en Linux), que está disponible en todo momento. Si prefiere utilizar Windows PE (WinRescue), consulte el método dedicado [al final de esta guía](./#restaurar-la-contrasena-de-administrador-con-winrescue_1).
+Las siguientes etapas describen el proceso de modificación de la contraseña local a través del modo de rescate de OVHcloud (basado en Linux), que está disponible en todo momento. Si prefiere utilizar Windows PE (WinRescue), consulte el método dedicado [al final de esta guía](./#restaurar-la-contrasena-de-administrador-con-winrescue).
 
 ### 1. reiniciar el servidor en modo de rescate
 
@@ -232,7 +232,7 @@ Write hive files? (y/n) [n] : y
 
 ### 4. reiniciar el servidor 
 
-En primer lugar, sustituya el netboot por **Arrancar en el disco duro** en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) (ver [Etapa 1](./#1-reiniciar-el-servidor-en-modo-de-rescate_1)). 
+En primer lugar, sustituya el netboot por **Arrancar en el disco duro** en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) (ver [Etapa 1](./#1-reiniciar-el-servidor-en-modo-de-rescate)). 
 
 Desmonte la partición y reinicie el servidor con los siguientes comandos:
 
@@ -331,7 +331,7 @@ El servidor debe reiniciarse.
 
 #### 3. reiniciar el servidor 
 
-En primer lugar, sustituya el netboot por **Arrancar en el disco duro** en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) (ver [Etapa 1](./#1-reiniciar-el-servidor-en-modo-de-rescate_1)). 
+En primer lugar, sustituya el netboot por **Arrancar en el disco duro** en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) (ver [Etapa 1](./#1-reiniciar-el-servidor-en-modo-de-rescate)). 
 
 Al volver a la ventana de KVM, seleccione la opción de apagado `Reiniciar`{.action} con el botón Windows "Iniciar" en la parte inferior izquierda.
 

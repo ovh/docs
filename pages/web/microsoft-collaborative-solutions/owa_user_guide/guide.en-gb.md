@@ -22,7 +22,7 @@ With OVHcloud Hosted Exchange you can send and receive your emails using a devic
 
 ## Instructions
 
-This guide will give you a better understanding of the usual email account tasks available in the OWA webmail. However, since this interface was not originally created by OVHcloud, we are unable to provide specific instructions about any settings not mentioned in this guide. Regarding Exchange functionalities, we have prepared some additional guides which you can find in the [**Go further**](./#go-further_1) section below.
+This guide will give you a better understanding of the usual email account tasks available in the OWA webmail. However, since this interface was not originally created by OVHcloud, we are unable to provide specific instructions about any settings not mentioned in this guide. Regarding Exchange functionalities, we have prepared some additional guides which you can find in the [**Go further**](./#go-further) section below.
 
 
 > [!primary]

@@ -71,7 +71,7 @@ Enter the information requested in the popup window. Follow the remaining steps 
 |Custom name|Enter a name that will distinguish this runtime environment from any other environments in the OVHcloud Control Panel.|  
 |Runtime environment|Choose the new runtime environment you want.|  
 
-Once you have entered this information, click `Confirm`{.action}. Please ensure that this runtime environment is definitely used by the multisites you want. To do this, continue to step three: [Link your runtime environment to a multisite](./#step-3-link-your-runtime-environment-to-a-multisite_2).
+Once you have entered this information, click `Confirm`{.action}. Please ensure that this runtime environment is definitely used by the multisites you want. To do this, continue to step three: [Link your runtime environment to a multisite](./#step-3-link-your-runtime-environment-to-a-multisite).
 
 
 
@@ -85,7 +85,7 @@ Once you have entered this information, click `Confirm`{.action}. Please ensure 
 |Application environment|Specify whether it is a "production", "test" or "development" environment. Please keep in mind that development environments behave differently from production and test environments, displaying errors directly in the web interface.|
 |Application launch script|Name the script that will call the Node.js technology.|
 
-Once you have entered this information, click `Confirm`{.action}. Please ensure that this runtime environment is definitely used by the multisites you want. To do this, continue to step three: [Link your runtime environment to a multisite](./#step-3-link-your-runtime-environment-to-a-multisite_2){.external}.
+Once you have entered this information, click `Confirm`{.action}. Please ensure that this runtime environment is definitely used by the multisites you want. To do this, continue to step three: [Link your runtime environment to a multisite](./#step-3-link-your-runtime-environment-to-a-multisite){.external}.
 
 ![cloudweb](images/cloud-web-runtime-step3-2.png){.thumbnail}
 
@@ -99,7 +99,7 @@ Once you have entered this information, click `Confirm`{.action}. Please ensure 
 |Application environment|Specify whether it is a "production", "test" or "development" environment. Please keep in mind that development environments behave differently from production and test environments, displaying errors directly in the web interface.|
 |Application launch script|Name the script that will call the Ruby runtime environment.|
 
-Once you have entered this information, click `Confirm`{.action}. Please ensure that this runtime environment is definitely used by the multi-sites you want. To do this, continue to step three: [Link your runtime environment to a multisite](./#step-3-link-your-runtime-environment-to-a-multisite_2){.external}.
+Once you have entered this information, click `Confirm`{.action}. Please ensure that this runtime environment is definitely used by the multi-sites you want. To do this, continue to step three: [Link your runtime environment to a multisite](./#step-3-link-your-runtime-environment-to-a-multisite){.external}.
 
 ![cloudweb](images/cloud-web-runtime-step2-1-3.png){.thumbnail}
 
@@ -114,7 +114,7 @@ Once you have entered this information, click `Confirm`{.action}. Please ensure 
 |Application environment|Specify whether it is a "production", "test" or "development" environment. Please keep in mind that development environments behave differently from production and test environments, displaying errors directly in the web interface.|
 |Application launch script|Name the script that will call the Python runtime environment.|
 
-Once you have entered this information, click `Confirm`{.action}. Please ensure that this runtime environment is definitely used by the multi-sites you want. To do this, continue to step three: [Link your runtime environment to a multisite](./#step-3-link-your-runtime-environment-to-a-multisite_2){.external}.
+Once you have entered this information, click `Confirm`{.action}. Please ensure that this runtime environment is definitely used by the multi-sites you want. To do this, continue to step three: [Link your runtime environment to a multisite](./#step-3-link-your-runtime-environment-to-a-multisite){.external}.
 
 ![cloudweb](images/cloud-web-runtime-step2-1-4.png){.thumbnail}
 

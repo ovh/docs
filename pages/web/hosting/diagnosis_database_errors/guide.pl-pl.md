@@ -148,7 +148,7 @@ Następnie upamiętaj obliczenie rozmiaru używanego w zakładce `Bazy danych`{.
 
 #### Metoda 4: zoptymalizuj bazę danych
 
-Aby zoptymalizować bazę danych, postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Konfiguracja serwera baz danych](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#optymalizacja-baz-danych_1)". Następnie ponownie zastosuj rozmiar w zakładce 'Bazy danych{.action} Twojego hostingu, klikając przycisk `...`{.action} odpowiedniej bazy danych.
+Aby zoptymalizować bazę danych, postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Konfiguracja serwera baz danych](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#optymalizacja-baz-danych)". Następnie ponownie zastosuj rozmiar w zakładce 'Bazy danych{.action} Twojego hostingu, klikając przycisk `...`{.action} odpowiedniej bazy danych.
 
 > [!warning]
 >
@@ -161,7 +161,7 @@ Poniższy komunikat w części `Bazy danych`{.action} Twojego [Panelu klienta OV
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
-W tej sytuacji możesz zwiększyć [ilość pamięci RAM](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#zmiana-oferty-serwera-baz-danych_1) dostępny w części `Bazy danych`{.action} [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W karcie `Informacje ogólne`{.action} kliknij przycisk `...`{.action} w rubryce `RAM`.
+W tej sytuacji możesz zwiększyć [ilość pamięci RAM](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#zmiana-oferty-serwera-baz-danych) dostępny w części `Bazy danych`{.action} [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W karcie `Informacje ogólne`{.action} kliknij przycisk `...`{.action} w rubryce `RAM`.
 
 > [!warning]
 >
@@ -172,7 +172,7 @@ W tej sytuacji możesz zwiększyć [ilość pamięci RAM](https://docs.ovh.com/p
 > W obszarze `Konfiguracja` kliknij na `...`{.action} po prawej stronie pozycji `Prywatna baza danych`, następnie kliknij przycisk `Odłącz`{.action}.
 >
 
-Możesz również zoptymalizować bazę danych, postępując zgodnie z instrukcjami zawartymi w przewodniku "[Konfiguracja serwera baz danych](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#optymalizacja-bazy-danych_1)".
+Możesz również zoptymalizować bazę danych, postępując zgodnie z instrukcjami zawartymi w przewodniku "[Konfiguracja serwera baz danych](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#optymalizacja-bazy-danych)".
 
 > [!primary]
 >
@@ -229,7 +229,7 @@ Aby usunąć tę anomalię, możesz:
 
 - Podziel bazę danych, aby ją importować na kilka operacji zamiast jednej (w przypadku pytań dotyczących operacji, które należy przeprowadzić, skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie.)
 
-- [Zoptymalizuj bazę danych](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#optymalizacja-bazy-danych_1), a następnie powtórzyć operacje eksportu / importu.
+- [Zoptymalizuj bazę danych](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#optymalizacja-bazy-danych), a następnie powtórzyć operacje eksportu / importu.
 
 ### Nie można uzyskać dostępu do PhpMyAdmin
 
@@ -257,7 +257,7 @@ Liczba ta wynosi **200** dla baz serwerów [Web Cloud Databases](https://docs.ov
 
 Wiadomość ta pojawia się podczas [logowania do phpMyAdmin](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/#dostep-do-interfejsu-phpmyadmin), gdy ta maksymalna liczba połączeń jest przekroczona.
 
-W takiej sytuacji powinieneś [zoptymalizować bazy danych](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#optymalizacja-bazy-danych_1), aby zmniejszyć liczbę aktywnych połączeń.
+W takiej sytuacji powinieneś [zoptymalizować bazy danych](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#optymalizacja-bazy-danych), aby zmniejszyć liczbę aktywnych połączeń.
 
 > [!warning]
 >

@@ -41,7 +41,7 @@ Le tableau de bord qui vous est présenté contient des informations importantes
 
 Pour la gamme actuelle de VPS, poursuivez la lecture de ce guide à la section suivante, **Premiers pas (gamme VPS actuelle)**. 
 
-Pour un modèle VPS plus ancien, poursuivez la lecture de ce guide en cliquant sur le lien suivant : [Premiers pas (ancienne gamme VPS)](./#premiers-pas-ancienne-gamme-vps_1).
+Pour un modèle VPS plus ancien, poursuivez la lecture de ce guide en cliquant sur le lien suivant : [Premiers pas (ancienne gamme VPS)](./#premiers-pas-ancienne-gamme-vps).
 
 ### Premiers pas (gamme VPS actuelle)
 
@@ -83,7 +83,7 @@ passwd: password updated successfully
 
 #### Activation des connexions root
 
-Par mesure de sécurité, la connexion avec l'utilisateur « root » est désactivée par défaut. Si vous devez autoriser ce type de connexions, reportez-vous aux instructions de [ce guide](https://docs.ovh.com/ca/fr/vps/root-password/#activer-le-mot-de-passe-root_1).
+Par mesure de sécurité, la connexion avec l'utilisateur « root » est désactivée par défaut. Si vous devez autoriser ce type de connexions, reportez-vous aux instructions de [ce guide](https://docs.ovh.com/ca/fr/vps/root-password/#activer-le-mot-de-passe-root).
 
 #### Redémarrer votre VPS (gamme VPS actuelle) <a name="reboot-current-range"></a>
 

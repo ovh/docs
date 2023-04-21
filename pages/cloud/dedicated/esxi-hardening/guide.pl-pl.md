@@ -66,7 +66,7 @@ Przypomnienie jej definicji i zasady działania:
 > 
 > Jeśli system się uruchomi i chcesz natychmiast zalogować się do ESXi, należy ręcznie odblokować konto administratora.
 >
-> W tym celu konieczne będzie [zrestartowanie](https://docs.ovh.com/pl/dedicated/pierwsze-kroki-z-serwerem-dedykowanym/#restart-serwera-dedykowanego_1) serwera ESXi w Panelu klienta OVHcloud.
+> W tym celu konieczne będzie [zrestartowanie](https://docs.ovh.com/pl/dedicated/pierwsze-kroki-z-serwerem-dedykowanym/#restart-serwera-dedykowanego) serwera ESXi w Panelu klienta OVHcloud.
 > 
 
 Historię logów dostępu można sprawdzić w następujących plikach z powłoki SSH:

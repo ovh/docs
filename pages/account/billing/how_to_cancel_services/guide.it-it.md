@@ -224,7 +224,7 @@ Per disattivare la soluzione [Hosted Exchange](https://www.ovhcloud.com/it/email
 
 #### Private Exchange <a name="private"></a>
 
-Per disattivare la tua offerta [Private Exchange](https://www.ovhcloud.com/it/emails/private-exchange/), segui le indicazioni di questa [guida](https://docs.ovh.com/it/microsoft-collaborative-solutions/gestisci-fatturazione-exchange/#elimina-account_1).
+Per disattivare la tua offerta [Private Exchange](https://www.ovhcloud.com/it/emails/private-exchange/), segui le indicazioni di questa [guida](https://docs.ovh.com/it/microsoft-collaborative-solutions/gestisci-fatturazione-exchange/#elimina-account).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 

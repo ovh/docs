@@ -71,7 +71,7 @@ In this case, the `.platform.app.yaml` file in `main` does not specify a `source
 
 Note that disk parameters in the `.platform.app.yaml` file will be relative to the `source.root` directory if specified.  The `source.root` path is relative to the repository root.
 
-The primary use case for this configuration is if the source code is pulled in as a [Git submodule](#submodules_1) or downloaded during the build phase.
+The primary use case for this configuration is if the source code is pulled in as a [Git submodule](#submodules) or downloaded during the build phase.
 
 ### `applications.yaml`
 

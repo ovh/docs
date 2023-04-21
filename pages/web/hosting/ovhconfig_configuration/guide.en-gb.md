@@ -75,7 +75,7 @@ Customise the values of the variables according to the configuration you wish to
 |app.engine.version|Allows you to define the PHP version used by the hosting plan from [the ones proposed by OVHcloud](https://www.ovhcloud.com/en-gb/web-hosting/uc-programming-language/){.external}. Enter the version of your choice.|
 |http.firewall|Allows you to enable or disable the  [firewall supplied with all OVHcloud Web Hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/options/){.external}. Enter “security” to enable it or “none” to disable it.|
 |environment|Allows you to manage cache behaviour for the static files of your website, as well as PHP error processing. Enter “production” to maximise caching and hide PHP errors or “development”, so that no cache is applied and PHP error are displayed.|
-|container.image|Allows you to modify the runtime environment used by the hosting plan. Enter the search engine of your choice. You can find them here: [View the configurations available](https://docs.ovh.com/gb/en/hosting/modify_your_web_hosting_systems_runtime_environment/#view-the-configurations-available_1){.external}.|
+|container.image|Allows you to modify the runtime environment used by the hosting plan. Enter the search engine of your choice. You can find them here: [View the configurations available](https://docs.ovh.com/gb/en/hosting/modify_your_web_hosting_systems_runtime_environment/#view-the-configurations-available){.external}.|
 
 > [!warning]
 >

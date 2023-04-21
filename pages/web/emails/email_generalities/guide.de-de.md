@@ -122,7 +122,7 @@ Dazu können Sie Weiterleitungen erstellen. Sie können dies auf zwei Arten tun:
 
 - Ihre Weiterleitung über das Webmail-Interface mithilfe der Posteingangsregeln erstellen. Folgen Sie hierzu unserer Anleitung "[Posteingangsregeln in OWA erstellen](https://docs.ovh.com/de/microsoft-collaborative-solutions/posteingangsregeln-in-owa-erstellen/#beispiel-1-e-mails-an-eine-andere-adresse-umleiten)".
 
-- Ihre Weiterleitung über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) anlegen. Mit dieser Methode können Sie zum Beispiel einen Alias erstellen, d.h. eine E-Mail-Adresse, die nicht existiert, auf eine bestehende E-Mail Adresse weiterleiten. Folgen Sie hierzu unserer Anleitung "[E-Mail-Weiterleitungen verwenden](https://docs.ovh.com/de/emails/webhosting_e-mail_anleitung_zum_einrichten_einer_mail-weiterleitung/#neue-mx-plan-version_1)".
+- Ihre Weiterleitung über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) anlegen. Mit dieser Methode können Sie zum Beispiel einen Alias erstellen, d.h. eine E-Mail-Adresse, die nicht existiert, auf eine bestehende E-Mail Adresse weiterleiten. Folgen Sie hierzu unserer Anleitung "[E-Mail-Weiterleitungen verwenden](https://docs.ovh.com/de/emails/webhosting_e-mail_anleitung_zum_einrichten_einer_mail-weiterleitung/#neue-mx-plan-version)".
 
 ##### **Auto-Antworten**
 

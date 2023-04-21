@@ -28,7 +28,7 @@ If you receive an email notifying you that one of your email addresses has been 
 
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action}, then `Exchange`{.action}. Next, select the Exchange service concerned.
 
-Go to the `Email accounts`{.action} section of your platform. If the "Status" column for your email address displays "Blocked", click `...`{.action} to the right of the account concerned, then `Unblock`{.action}. Next, move on to [step 2](./#step-2-access-the-support-ticket_1) of this guide.
+Go to the `Email accounts`{.action} section of your platform. If the "Status" column for your email address displays "Blocked", click `...`{.action} to the right of the account concerned, then `Unblock`{.action}. Next, move on to [step 2](./#step-2-access-the-support-ticket) of this guide.
 
 ![spam](images/blocked-for-SPAM-01-01.png){.thumbnail}
 
@@ -36,7 +36,7 @@ Go to the `Email accounts`{.action} section of your platform. If the "Status" co
 
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Email Pro`{.action}, then select the Email Pro platform concerned.
 
-Go to the `Email accounts`{.action} section of your platform. If the "Status" column to the right of the email address concerned displays "Spam", click on it, then `Reply to the ticket`{.action}. Next, move on to [step 2](./#step-2-access-the-support-ticket_1) of this guide.
+Go to the `Email accounts`{.action} section of your platform. If the "Status" column to the right of the email address concerned displays "Spam", click on it, then `Reply to the ticket`{.action}. Next, move on to [step 2](./#step-2-access-the-support-ticket) of this guide.
 
 ![spam](images/blocked-for-SPAM-01-02.png){.thumbnail}
 
@@ -44,7 +44,7 @@ Go to the `Email accounts`{.action} section of your platform. If the "Status" co
 
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Emails`{.action}, then choose the domain name concerned.
 
-Go to the `Email accounts`{.action} section of your platform. If the "Status" column to the right of the email address concerned displays "Spam", click on it, then `Reply to the ticket`{.action}. Next, move on to [step 2](./#step-2-access-the-support-ticket_1) of this guide.
+Go to the `Email accounts`{.action} section of your platform. If the "Status" column to the right of the email address concerned displays "Spam", click on it, then `Reply to the ticket`{.action}. Next, move on to [step 2](./#step-2-access-the-support-ticket) of this guide.
 
 ![spam](images/blocked-for-SPAM-01-03.png){.thumbnail}
 

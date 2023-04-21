@@ -52,7 +52,7 @@ Im angezeigten Fenster werden Ihnen zwei Optionen angezeigt. Wählen Sie die Opt
 |Option|Detail|
 |---|---|
 |„Zurück zur vorherigen Konfiguration“|Wenn Sie diese Option ausgewählt haben, wählen Sie anschließend neben `Ursprüngliche Wahl` die frühere Konfiguration aus, die Sie wiederherstellen möchten. Diese Option steht gegebenenfalls nicht zur Verfügung, wenn bisher noch keine Konfigurationsänderungen vorgenommen wurden.|
-|„Aktuelle Konfiguration ändern“|Wenn Sie diese Option ausgewählt haben, wählen Sie die auszuführenden Konfigurationsänderungen in den angezeigten Feldern aus. Wenn nötig, können Sie diese im Abschnitt [„Verfügbare Konfigurationen“](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/#verfugbare-konfigurationen_1){.external} in dieser Anleitung nachlesen.|
+|„Aktuelle Konfiguration ändern“|Wenn Sie diese Option ausgewählt haben, wählen Sie die auszuführenden Konfigurationsänderungen in den angezeigten Feldern aus. Wenn nötig, können Sie diese im Abschnitt [„Verfügbare Konfigurationen“](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/#verfugbare-konfigurationen){.external} in dieser Anleitung nachlesen.|
 
 > [!primary]
 >
