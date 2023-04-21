@@ -14,7 +14,7 @@ updated: 2023-04-21
 Un **Volume Snapshot** est un point de récupération stocké dans le même cluster de stockage que le volume d'origine. Les opérations de création et de restauration sont rapides, mais en cas d'incident sur le cluster, le volume et Volume Snapshot peuvent être indisponibles.<br>
 La création d'un Volume Snapshot ne nécessite pas que le volume soit détaché de l'instance.
 
-Il ne faut pas confondre avec un **Volume Backup** qui est une image créée à partir de votre volume, cette dernière est stockée dans le cluster Object Storage de la localisation du volume d'origine.
+Cela ne doit pas être confondu avec un **Volume Backup** qui est une image créée à partir de votre volume, cette dernière est stockée dans le cluster Object Storage de la localisation du volume d'origine.
 Ce niveau de résilience est idéal et vous permettra de réagir rapidement à tout incident sur votre volume, en créant un autre volume à partir de la sauvegarde.<br>
 La création d'une sauvegarde de volume nécessite que le volume soit détaché de l'instance. Pour plus d’informations sur cette option, nous vous invitons à consulter ce [guide](https://docs.ovh.com/fr/public-cloud/volume-backup/).
 
