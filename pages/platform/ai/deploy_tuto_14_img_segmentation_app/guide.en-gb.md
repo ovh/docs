@@ -20,7 +20,7 @@ The purpose of this tutorial is to show how to **deploy an image segmentation ap
 
 In order to do this, we will use [Streamlit](https://streamlit.io/), a Python framework that turns scripts into a shareable web application. We will also learn how to build and use a custom Docker image for a Streamlit application.
 
-For more information on how to train U-Net on the [BraTS2020 Dataset](https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation), refer to the following [documentation](LINK_DOOOOOOOOOOOC).
+For more information on how to train U-Net on the [BraTS2020 Dataset](https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation), refer to the following [documentation](https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-notebooks-tuto-image-segmentation-unet-tumors?id=kb_article_view&sysparm_article=KB0057606).
 
 Overview of our image segmentation app:
 
@@ -30,14 +30,14 @@ Overview of our image segmentation app:
 
 To deploy your app, you need:
 
-- An access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - An AI Deploy Project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
 - A [user for AI Deploy](https://docs.ovh.com/gb/en/publiccloud/ai/users)
 - [The OVHcloud AI CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client/) installed on your local computer
-- [Docker](https://www.docker.com/get-started) installed on your local computer, **or** an access to a Debian Docker Instance, which is available on the [Public Cloud](https://www.ovh.com/manager/public-cloud/).
+- [Docker](https://www.docker.com/get-started) installed on your local computer, **or** access to a Debian Docker Instance, which is available on the [Public Cloud](https://www.ovh.com/manager/public-cloud/).
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 - Your weights obtained from training the U-Net model on the [BraTS2020 dataset](https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation) (refer to the *"Step 6 - Train and Save the model"* part of the [image segmentation notebook tutorial](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-segmentation/tensorflow/brain-tumor-segmentation-unet/notebook_image_segmentation_unet.ipynb)). 
-- The full code of the application, which can be find on this [GitHub repository](LINKKKK APP CODE), which I invite you to clone.
+- The full code of the application, which can be found on this [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/image-segmentation-brain-tumors), which I invite you to clone.
 
 ## Instructions
 
@@ -50,7 +50,7 @@ We are going to follow different steps to deploy our **brain tumor segmentation 
 - **Push the image into a registry.**
 - **Deploy your app**.
 
-*If you have cloned the [app's repository](LINKKKK APP CODE), you will not need to rewrite the files (`requirements.txt` and `Dockerfile`) since you already have them. In this case, you can go directly to the "Build the Docker image" step, even if it is better to understand the global process.*
+*If you have cloned the [app's repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/image-segmentation-brain-tumors), you will not need to rewrite the files (`requirements.txt` and `Dockerfile`) since you already have them. In this case, you can go directly to the "Build the Docker image" step, even if it is better to understand the global process.*
 
 ### Write the requirements.txt file for the application
 
@@ -262,7 +262,7 @@ ovhai app run <shared-registry-address>/tumor_seg_streamlit_app:latest \
 
 ## Go further
 
-- Do you want to use Streamlit to create a audio classification app? [Here it is](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-streamlit-sounds-classification/).
+- Do you want to use Streamlit to create an audio classification app? [Here it is](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-streamlit-sounds-classification/).
 - Learn how to create & deploy a Speech-to-Text app [here](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-streamlit-speech-to-text-app/).
 
 ## Feedback
