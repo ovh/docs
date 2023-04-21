@@ -64,7 +64,7 @@ ls -la
 
 Prima di proseguire, sarà necessario creare un paio di chiavi SSH dal dispositivo che utilizzerai per connetterti al deposito SVN.
 
-Segui la guida [Creare chiavi SSH](https://docs.ovh.com/it/public-cloud/creare-chiave-ssh/). Non è necessario seguire lo step [Importa la tua chiave SSH nello Spazio Cliente OVHcloud](https://docs.ovh.com/it/public-cloud/creare-chiave-ssh/#importa-la-chiave-ssh-nello-spazio-cliente_1) in questa guida.
+Segui la guida [Creare chiavi SSH](https://docs.ovh.com/it/public-cloud/creare-chiave-ssh/). Non è necessario seguire lo step [Importa la tua chiave SSH nello Spazio Cliente OVHcloud](https://docs.ovh.com/it/public-cloud/creare-chiave-ssh/#importa-la-chiave-ssh-nello-spazio-cliente) in questa guida.
 
 ### Aggiunta della chiave pubblica sull'hosting
 

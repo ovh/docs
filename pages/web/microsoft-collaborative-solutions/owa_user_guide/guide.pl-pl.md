@@ -22,7 +22,7 @@ Dzięki usłudze OVHcloud Hosted Exchange można wysyłać oraz odbierać e-mail
 
 ## W praktyce
 
-Ten przewodnik zawiera informacje o zwykłych zadaniach dotyczących konta e-mail, które są dostępne w interfejsie OWA webmail. Ponieważ interfejs nie został opracowany przez OVHcloud, nie możemy udostępnić konkretnych instrukcji dotyczących ustawień, których nie obejmuje ten przewodnik. Przygotowaliśmy natomiast dodatkowe przewodniki dotyczące funkcji programu Exchange i można je znaleźć w poniższej sekcji [**Sprawdź również**](./#sprawdz-rowniez_1).
+Ten przewodnik zawiera informacje o zwykłych zadaniach dotyczących konta e-mail, które są dostępne w interfejsie OWA webmail. Ponieważ interfejs nie został opracowany przez OVHcloud, nie możemy udostępnić konkretnych instrukcji dotyczących ustawień, których nie obejmuje ten przewodnik. Przygotowaliśmy natomiast dodatkowe przewodniki dotyczące funkcji programu Exchange i można je znaleźć w poniższej sekcji [**Sprawdź również**](./#sprawdz-rowniez).
 
 
 > [!primary]

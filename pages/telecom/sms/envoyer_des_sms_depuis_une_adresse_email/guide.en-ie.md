@@ -42,7 +42,7 @@ Please ensure that you have a sufficient number of SMS credits before you send.
 > To send an SMS message with these elements, you will need to do so via the OVHcloud Control Panel or via the APIs.
 >
 
-For further information on authorised characters in 7bit encoding, please refer to the [appendix](./#appendix_1) at the bottom of this guide.
+For further information on authorised characters in 7bit encoding, please refer to the [appendix](./#appendix) at the bottom of this guide.
 
 > [!warning]
 >

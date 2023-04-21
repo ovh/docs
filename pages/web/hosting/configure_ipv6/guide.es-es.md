@@ -65,7 +65,7 @@ Copie la entrada y vaya al siguiente paso en el marco **IPv6**.
 > Además, la adición, modificación o eliminación de un registro DNS en la zona DNS activa de un dominio conlleva un plazo de propagación de **4 a 24 horas** para ser plenamente efectivo.
 >
 
-Para que su navegador encuentre la dirección IPv6 con su nombre de dominio, modifique la zona DNS activa de su dominio. Utilice nuestra guía "[Editar una zona DNS de OVHcloud](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/#editar-la-zona-dns-de-ovhcloud-de-un-dominio_1)" para crear un registro DNS de tipo **AAAA**.
+Para que su navegador encuentre la dirección IPv6 con su nombre de dominio, modifique la zona DNS activa de su dominio. Utilice nuestra guía "[Editar una zona DNS de OVHcloud](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/#editar-la-zona-dns-de-ovhcloud-de-un-dominio)" para crear un registro DNS de tipo **AAAA**.
 
 En la sección `Web Cloud`{.action}, haga clic en `Dominios`{.action}. Seleccione su dominio y abra la pestaña `Zona DNS`{.action}. Haga clic en el botón `Añadir un registro`{.action} a la derecha de la tabla. 
 
@@ -75,7 +75,7 @@ Introduzca la dirección IPv6 previamente copiada utilizando el tipo de registro
 
 ## Más información <a name="go-further"></a>
 
-[Editar una zona DNS de OVHcloud](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/#editar-la-zona-dns-de-ovhcloud-de-un-dominio_1)
+[Editar una zona DNS de OVHcloud](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/#editar-la-zona-dns-de-ovhcloud-de-un-dominio)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
 

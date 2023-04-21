@@ -82,7 +82,7 @@ Para más información, consulte la guía [Guardar una instancia](../guardar_cop
 
 Haga clic en `Detener`{.action}.
 
-Esta acción suspenderá la instancia. Para más información, consulte nuestra guía [Suspender o poner en pausa una instancia](../suspender_o_poner_en_pausa_una_instancia/#detener-stop-una-instancia_1).
+Esta acción suspenderá la instancia. Para más información, consulte nuestra guía [Suspender o poner en pausa una instancia](../suspender_o_poner_en_pausa_una_instancia/#detener-stop-una-instancia).
 
 Haga clic en `Iniciar`{.action} para reactivar la instancia.
 

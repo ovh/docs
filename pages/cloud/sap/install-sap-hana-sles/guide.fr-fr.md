@@ -59,7 +59,7 @@ Une fois ces derniers paramètres configurés, cliquez sur `Valider`{.action} po
 >
 > `SUSEConnect -r <licence>`
 
-Une fois l'installation de l'image SLES 15 for SAP réalisée, vous pouvez [vous connecter à votre serveur dédié](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/#connexion-a-votre-serveur_1).
+Une fois l'installation de l'image SLES 15 for SAP réalisée, vous pouvez [vous connecter à votre serveur dédié](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/#connexion-a-votre-serveur).
 
 ### Préparation des systèmes de fichiers
 

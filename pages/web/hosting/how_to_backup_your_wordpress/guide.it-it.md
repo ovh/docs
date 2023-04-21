@@ -153,7 +153,7 @@ Applicando queste best practice, hai la possibilità di tornare a una versione p
 ## Per saperne di più <a name="go-further"></a>
 
 - [Sito ufficiale di WordPress](https://wordpress.org){.external}
-- [Maggiori informazioni sui backup del tuo hosting Web](https://docs.ovh.com/it/hosting/hosting_condiviso_specifiche_tecniche/#informazioni-sui-backup-automatici_1)
+- [Maggiori informazioni sui backup del tuo hosting Web](https://docs.ovh.com/it/hosting/hosting_condiviso_specifiche_tecniche/#informazioni-sui-backup-automatici)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 

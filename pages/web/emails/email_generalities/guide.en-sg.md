@@ -30,7 +30,7 @@ To do this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?acti
 |MX Plan solution legacy version|MX Plan solution new version|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Find the solution in the "Subscription" box|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Locate the `Server reference` in the "Summary" box|
-|Continue to [Legacy version of the MX Plan solution](./#mx-plan-solution-legacy-version_2)|Continue to [New version of the MX Plan solution](./#new-version-of-the-mx-plan-solution)|
+|Continue to [Legacy version of the MX Plan solution](./#mx-plan-solution-legacy-version)|Continue to [New version of the MX Plan solution](./#new-version-of-the-mx-plan-solution)|
 
 ### New version of the MX Plan solution.
 

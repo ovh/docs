@@ -149,7 +149,7 @@ Si le dépannage de votre téléphone n'a pas permis de résoudre votre problém
 
 Il se peut que votre routeur / modem / Box Internet ne permette plus à votre téléphone de fonctionner correctement. Afin d'écarter cette éventualité, vous pouvez effectuer une réinitialisation de celui-ci. Pour cela, deux possibilités :
 
-- **vous disposez d'une box OVHcloud** : reportez-vous aux instructions décrites dans notre documentation « [Réinitialiser votre box OVHcloud](https://docs.ovh.com/fr/xdsl/redemarrer-reinitialiser-modem-adsl-ovh/#reinitialiser-votre-box-ovhcloud_1) » ;
+- **vous disposez d'une box OVHcloud** : reportez-vous aux instructions décrites dans notre documentation « [Réinitialiser votre box OVHcloud](https://docs.ovh.com/fr/xdsl/redemarrer-reinitialiser-modem-adsl-ovh/#reinitialiser-votre-box-ovhcloud) » ;
 
 - **vous disposez d'un routeur / modem / Box Internet d'un autre opérateur** : reportez-vous à la documentation fournie par votre opérateur. 
 

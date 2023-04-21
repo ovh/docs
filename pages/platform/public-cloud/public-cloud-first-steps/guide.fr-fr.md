@@ -133,7 +133,7 @@ La clé est prête lorsque la barre de progression est pleine.
 
 ![clé de sauvegarde](images/puttygen_03a.png){.thumbnail}
 
-Vous pouvez sélectionner et copier la clé publique à partir de cette fenêtre pour l'enregistrer dans votre espace client OVHcloud à [l'étape 2](./#etape-2-stocker-les-cles-publiques-dans-lespace-client-ovhcloud_1).
+Vous pouvez sélectionner et copier la clé publique à partir de cette fenêtre pour l'enregistrer dans votre espace client OVHcloud à [l'étape 2](./#etape-2-stocker-les-cles-publiques-dans-lespace-client-ovhcloud).
 
 Enregistrez les deux clés dans des fichiers et utilisez l'option pour entrer une phrase secrète (passphrase). Étant donné que seule la clé privée correspondante sera requise pour accéder à votre instance Public Cloud depuis votre poste de travail, des mesures de sécurité appropriées doivent être appliquées à ce stade. La passphrase doit être entrée lorsqu'une connexion à l'instance est établie.
 
@@ -193,7 +193,7 @@ Notez que vous pouvez mettre à niveau votre instance ultérieurement, mais vous
 Si vous choisissez un système d'exploitation nécessitant une licence payante, son coût sera automatiquement inclus dans la facturation mensuelle ou horaire.
 >
 
-Cette étape nécessite également l'ajout d'une clé SSH (sauf instances Windows), soit en ajoutant la clé directement via `Ajouter une clé`{.action}, soit en la sélectionnant dans la liste, à condition que vous l'ayez stockée dans votre espace client OVHcloud à [l'étape 2](./#etape-2-stocker-les-cles-publiques-dans-lespace-client-ovhcloud_1).
+Cette étape nécessite également l'ajout d'une clé SSH (sauf instances Windows), soit en ajoutant la clé directement via `Ajouter une clé`{.action}, soit en la sélectionnant dans la liste, à condition que vous l'ayez stockée dans votre espace client OVHcloud à [l'étape 2](./#etape-2-stocker-les-cles-publiques-dans-lespace-client-ovhcloud).
 
 ![key select](images/instance-creation-03-2022.png){.thumbnail}
 

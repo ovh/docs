@@ -59,7 +59,7 @@ Domyślnie wysyłka wiadomości SMS z konta OVHcloud we Francji odbywa się ze s
 
 ![firstsms](images/firstsms05.png){.thumbnail}
 
-W tym celu zapoznaj się z sekcją poświęconą wyborowi nadawcy wiadomości SMS w przewodniku [„Wysyłanie wiadomości SMS z Panelu klienta”](../wysylanie-wiadomosci-sms-z-panelu-klienta/#etap-3-wybor-nadawcy-wiadomosci-sms_1).
+W tym celu zapoznaj się z sekcją poświęconą wyborowi nadawcy wiadomości SMS w przewodniku [„Wysyłanie wiadomości SMS z Panelu klienta”](../wysylanie-wiadomosci-sms-z-panelu-klienta/#etap-3-wybor-nadawcy-wiadomosci-sms).
 
 ### Etap 3: wysłanie kampanii SMS
 

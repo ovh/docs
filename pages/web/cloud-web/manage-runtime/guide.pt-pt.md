@@ -77,7 +77,7 @@ Na nova janela que aparecerá, preencha as informações necessárias e prossiga
 |Nome personalizado|Insira um nome que lhe permita distinguir este motor do resto dos motores na sua Área de Cliente OVHcloud.|  
 |Motor de execução|Escolha o novo motor de execução desejado.|  
 
-Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site_2){.external}.
+Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site){.external}.
 
 
 
@@ -91,7 +91,7 @@ Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que
 |Ambiente da aplicação|Indique se se trata de um ambiente de “produção”, de “teste” ou de “desenvolvimento”. Tenha em conta que este último tem um comportamento diferente e apresenta erros diretamente na interface web. Utilize-o com precaução.|
 |Script de lançamento da aplicação|Indique o script que chamará a tecnologia Node.js.|
 
-Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site_2){.external}.
+Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site){.external}.
 
 ![cloudweb](images/cloud-web-runtime-step3-2.png){.thumbnail}
 
@@ -105,7 +105,7 @@ Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que
 |Ambiente da aplicação|Indique se se trata de um ambiente de “produção”, de “teste” ou de “desenvolvimento”. Tenha em conta que este último tem um comportamento diferente e apresenta erros diretamente na interface web. Utilize-o com precaução.|
 |Script de lançamento da aplicação|Dê nome ao script que chamará o motor de execução Ruby.|
 
-Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site_2){.external}.
+Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site){.external}.
 
 ![cloudweb](images/cloud-web-runtime-step2-1-3.png){.thumbnail}
 
@@ -120,7 +120,7 @@ Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que
 |Ambiente da aplicação|Indique se se trata de um ambiente de “produção”, de “teste” ou de “desenvolvimento”. Tenha em conta que este último tem um comportamento diferente e apresenta erros diretamente na interface web. Utilize-o com precaução.|
 |Script de lançamento da aplicação|Dê nome ao script que chamará o motor de execução Python.|
 
-Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site_2){.external}.
+Concluída esta etapa, clique no botão `Validar`{.action}. Certifique-se de que este motor de execução está a ser utilizado pelo(s) multi-site(s) pretendido(s). Para isso, passe para a etapa 3 [“ Associar o motor de execução a um multi-site ”](./#etapa-3-associar-o-motor-de-execucao-a-um-multi-site){.external}.
 
 ![cloudweb](images/cloud-web-runtime-step2-1-4.png){.thumbnail}
 

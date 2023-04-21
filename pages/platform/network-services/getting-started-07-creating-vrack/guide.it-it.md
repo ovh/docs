@@ -23,7 +23,7 @@ La [vRack](https://www.ovh.it/soluzioni/vrack/) è una rete privata che permette
 
 - Disporre di un [progetto Public Cloud](https://docs.ovh.com/it/public-cloud/create_a_public_cloud_project/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Aver [creato un utente OpenStack](https://docs.ovh.com/it/public-cloud/creation-and-deletion-of-openstack-user/#crea-un-utente-openstack_1) (facoltativo)
+- Aver [creato un utente OpenStack](https://docs.ovh.com/it/public-cloud/creation-and-deletion-of-openstack-user/#crea-un-utente-openstack) (facoltativo)
 - Conoscenze di rete elementari
 
 ## Presentazione delle interfacce
@@ -209,7 +209,7 @@ Conferma le Region richieste, inserisci un nome per la tua rete privata e clicca
 
 #### Crea una VLAN dalle APIv6 OVHcloud <a name="vlansetup"></a>
 
-Per creare una VLAN dalle APIv6 OVHcloud, clicca [qui](https://docs.ovh.com/it/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) (EN), per consultare la guida specifica a questo metodo.
+Per creare una VLAN dalle APIv6 OVHcloud, clicca [qui](https://docs.ovh.com/it/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack) (EN), per consultare la guida specifica a questo metodo.
 
 #### Crea una rete privata tramite la CLI OpenStack
 
@@ -269,7 +269,7 @@ Consulta la guida [Creare un'istanza dallo Spazio Cliente](https://docs.ovh.com/
 
 ##### **Dalle APIv6 OVHcloud**
 
-Clicca [qui](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack_1) (EN), per consultare la guida specifica a questo metodo.
+Clicca [qui](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack) (EN), per consultare la guida specifica a questo metodo.
 
 ##### **Dalle API OpenStack**
 
@@ -464,7 +464,7 @@ Nel pop-up che appare, seleziona la rete o le reti private da associare alla tua
 
 ##### **Gestione delle interfacce di rete con le APIv6 OVHcloud**
 
-Clicca [qui](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#in-case-of-an-existing-instance_1) (EN), per consultare la guida specifica a questo metodo.
+Clicca [qui](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#in-case-of-an-existing-instance) (EN), per consultare la guida specifica a questo metodo.
 
 ##### **Gestione delle interfacce di rete con OpenStack Horizon**
 

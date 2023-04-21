@@ -75,7 +75,7 @@ Passen Sie die Werte der Variablen entsprechend der Konfiguration an, die Sie f�
 |app.engine.version|Hier können Sie die vom Webhosting verwendete PHP-Version aus den [von OVHcloud angebotenen Versionen](https://www.ovhcloud.com/de/web-hosting/uc-programming-language/){.external} auswählen. Geben Sie Ihre bevorzugte Version ein.|
 |http.firewall|Hier können Sie die [mit den OVHcloud Webhostings angebotene Firewall](https://www.ovh.com/de/hosting/mod_security.xml){.external} aktivieren oder deaktivieren. Geben Sie „security“ ein, um diese zu aktivieren, oder „none“, um sie zu deaktivieren.|
 |environment|Hier können Sie festlegen, wie die statischen Dateien Ihrer Website gecacht werden sowie die PHP-Fehlerbehandlung einstellen. Geben Sie „production“ ein, um das Caching zu maximieren und PHP-Fehler zu verbergen, oder „development“, um das Caching abzustellen und PHP-Fehler anzuzeigen.|
-|container.image|Hier können Sie die von Ihrem Webhosting verwendete Ausführungsumgebung ändern. Geben Sie die gewünschte Engine ein. Die möglichen Konfigurationen finden Sie in unserer Dokumentation: [„Verfügbare Konfigurationen“](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/#verfugbare-konfigurationen_1){.external}|
+|container.image|Hier können Sie die von Ihrem Webhosting verwendete Ausführungsumgebung ändern. Geben Sie die gewünschte Engine ein. Die möglichen Konfigurationen finden Sie in unserer Dokumentation: [„Verfügbare Konfigurationen“](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/#verfugbare-konfigurationen){.external}|
 
 > [!warning]
 >

@@ -42,7 +42,7 @@ Dieses Dashboard enthält wichtige Informationen zu Ihrem Dienst und erlaubt Ihn
 
 Zu einem VPS Service der aktuellen Reihe lesen Sie den nachfolgenden Abschnitt: **Erste Schritte (aktuelle VPS Reihe)**.
 
-Für Informationen zur Verwendung älterer VPS Modelle, fahren Sie weiter unten fort unter [Erste Schritte (alte VPS Reihe)](./#erste-schritte-alte-vps-reihe_1).
+Für Informationen zur Verwendung älterer VPS Modelle, fahren Sie weiter unten fort unter [Erste Schritte (alte VPS Reihe)](./#erste-schritte-alte-vps-reihe).
 
 ### Erste Schritte (aktuelle VPS Reihe)
 

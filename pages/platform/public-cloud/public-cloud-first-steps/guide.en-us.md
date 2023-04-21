@@ -132,7 +132,7 @@ The key is ready when the progress bar is full.
 
 ![save key](images/puttygen_03a.png){.thumbnail}
 
-You can select and copy the public key from this window to save it in your OVHcloud Control Panel in [Step 2](./#step-2-storing-public-keys-in-the-ovhcloud-control-panel_1).
+You can select and copy the public key from this window to save it in your OVHcloud Control Panel in [Step 2](./#step-2-storing-public-keys-in-the-ovhcloud-control-panel).
 
 Save both keys to files and use the option to enter a passphrase. Since only the corresponding private key will be required to access your Public Cloud instance from your working device, appropriate security measures should be applied at this point. The passphrase has to be entered when a connection to the instance is established.
 
@@ -192,7 +192,7 @@ The third option is where you select an operating system for the instance. Which
 If you select an operating system that requires paid licensing, these costs will automatically be included in the monthly or hourly billing.
 >
 
-This step also requires an SSH key to be added (Windows instances excluded), either by pasting the key directly via `Add a key`{.action} or selecting it from the list, provided you have stored it in the Control Panel in [Step 2](./#step-2-storing-public-keys-in-the-ovhcloud-control-panel_1).
+This step also requires an SSH key to be added (Windows instances excluded), either by pasting the key directly via `Add a key`{.action} or selecting it from the list, provided you have stored it in the Control Panel in [Step 2](./#step-2-storing-public-keys-in-the-ovhcloud-control-panel).
 
 ![key select](images/instance-creation-03-2022.png){.thumbnail}
 

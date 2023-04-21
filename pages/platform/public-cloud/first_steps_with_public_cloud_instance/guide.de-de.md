@@ -82,7 +82,7 @@ Weitere Informationen finden Sie in der Anleitung "[Backup einer Instanz erstell
 
 Klicken Sie auf `Anhalten`{.action}.
 
-Diese Aktion wird die Instanz anhalten. Weitere Informationen finden Sie in unserer Anleitung zum [Aussetzen oder Pausieren einer Instanz](../aussetzen_oder_pausieren_einer_instanz/#anhalten-einer-instanz-suspend_1).
+Diese Aktion wird die Instanz anhalten. Weitere Informationen finden Sie in unserer Anleitung zum [Aussetzen oder Pausieren einer Instanz](../aussetzen_oder_pausieren_einer_instanz/#anhalten-einer-instanz-suspend).
 
 Klicken Sie auf `Starten`{.action}, um die Instanz zu reaktivieren.
 

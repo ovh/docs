@@ -124,7 +124,7 @@ In the `General information`{.action} tab, copy the IPV4 and/or IPV6 address of 
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-Then refer to it in your domain’s [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#edit-your-domain-names-ovhcloud-dns-zone_1), by modifying or creating one or more `A` entries.
+Then refer to it in your domain’s [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#edit-your-domain-names-ovhcloud-dns-zone), by modifying or creating one or more `A` entries.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 

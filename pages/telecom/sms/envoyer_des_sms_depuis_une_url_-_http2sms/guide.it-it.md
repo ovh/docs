@@ -88,7 +88,7 @@ Sostituisci le X con le informazioni qui di seguito:
 > 
 >Se si modifica la codifica su Unicode, l’SMS sarà al massimo di 70 caratteri rispetto ai 160 della codifica a 7 bit.
 >
->Per maggiori informazioni sui caratteri autorizzati in codifica a 7 bit, fai riferimento [all'allegato](./#allegato_2) in fondo a questa guida.
+>Per maggiori informazioni sui caratteri autorizzati in codifica a 7 bit, fai riferimento [all'allegato](./#allegato) in fondo a questa guida.
 >
 
 

@@ -128,7 +128,7 @@ W zakładce `Informacje ogólne`{.action} skopiuj adres IPV4 i/lub IPV6 Twojej d
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-Następnie przenieś domenę do [strefy DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#modyfikacja-strefy-dns-domeny_1), modyfikując lub dodając jeden lub więcej rekordów typu `A`.
+Następnie przenieś domenę do [strefy DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#modyfikacja-strefy-dns-domeny), modyfikując lub dodając jeden lub więcej rekordów typu `A`.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 

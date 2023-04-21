@@ -136,7 +136,7 @@ La clave estará lista cuando se complete la barra de progreso.
 
 ![save key](images/puttygen_03a.png){.thumbnail}
 
-Puede seleccionar y copiar la clave pública desde esta ventana para guardarla en su área de cliente de OVHcloud ([paso 2](./#2-guardar-las-claves-publicas-en-el-area-de-cliente-de-ovhcloud_1)).
+Puede seleccionar y copiar la clave pública desde esta ventana para guardarla en su área de cliente de OVHcloud ([paso 2](./#2-guardar-las-claves-publicas-en-el-area-de-cliente-de-ovhcloud)).
 
 Guarde ambas claves como archivo y cree una frase de contraseña. Para acceder a su instancia de Public Cloud desde un dispositivo de trabajo solo necesitará la clave privada correspondiente. Así pues, le recomendamos que aplique medidas adicionales de seguridad. Cada vez que se establezca una conexión con la instancia, deberá introducir la frase de contraseña.
 
@@ -196,7 +196,7 @@ En tercer lugar, deberá seleccionar un sistema operativo para su instancia. Las
 Si selecciona un sistema operativo con licencia de pago, el coste se incluirá automáticamente en su facturación mensual o por horas.
 >
 
-En este paso también deberá añadir una clave SSH (salvo en instancias Windows). Para ello, puede copiar la clave directamente haciendo clic en `Añadir una llave`{.action} o seleccionar una clave de la lista de llaves disponibles (tal y como explicamos en el [paso 2](./#2-guardar-las-claves-publicas-en-el-area-de-cliente-de-ovhcloud_1), deberá haber añadido su clave previamente al área de cliente de OVHcloud).
+En este paso también deberá añadir una clave SSH (salvo en instancias Windows). Para ello, puede copiar la clave directamente haciendo clic en `Añadir una llave`{.action} o seleccionar una clave de la lista de llaves disponibles (tal y como explicamos en el [paso 2](./#2-guardar-las-claves-publicas-en-el-area-de-cliente-de-ovhcloud), deberá haber añadido su clave previamente al área de cliente de OVHcloud).
 
 ![key select](images/instance-creation-03-2022.png){.thumbnail}
 

@@ -35,7 +35,7 @@ Una volta nella pagina di invio SMS, è necessario configurare tre distinti para
 
 Per il mittente dell’SMS (1), è possibile selezionare un numero breve che accetti le risposte (soltanto per gli account OVHcloud presenti in Francia) oppure un mittente alfanumerico.
 Quindi inserisci il numero del destinatario (2) nel formato internazionale (+336xxxxxxxx).
-Per maggiori informazioni sulla creazione di un mittente, consulta lo [step 3: scegli il mittente degli SMS](./#step-3-scegli-il-mittente-sms_1).
+Per maggiori informazioni sulla creazione di un mittente, consulta lo [step 3: scegli il mittente degli SMS](./#step-3-scegli-il-mittente-sms).
 
 È possibile inviare SMS a più destinatari in due diversi modi: 
 

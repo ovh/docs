@@ -97,7 +97,7 @@ Wählen Sie Ihre Backup-Datei aus, indem Sie `Durchsuchen`{.action} klicken. (Di
 > [!primary]
 >
 > Wir empfehlen Ihnen, Ihre Datenbank in mehrere Dateien aufzuteilen, wenn sie mehr als 100 MB groß ist, und mehrere Importe über phpMyAdmin durchzuführen.<br>
-> Der Import von Dateien über 100 MB kann über das Kundencenter erfolgen, indem Sie den Schritten im Abschnitt ["Datenbank über das Kundencenter wiederherstellen und importieren"](./#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren_1) folgen.
+> Der Import von Dateien über 100 MB kann über das Kundencenter erfolgen, indem Sie den Schritten im Abschnitt ["Datenbank über das Kundencenter wiederherstellen und importieren"](./#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren) folgen.
 
 Lassen Sie die Standardoptionen aktiviert und klicken Sie auf `Ausführen`{.action}, um den Import zu starten.
 

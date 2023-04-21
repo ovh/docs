@@ -59,7 +59,7 @@ Vous devez obtenir les répertoires comme indiqué sur l'image suivante :
 
 Avant de poursuivre il vous faudra créer une paire de clés SSH depuis le poste que vous utiliserez pour vous connecter au dépôt SVN.
 
-Nous vous invitons à suivre le guide [Créer des clés SSH](https://docs.ovh.com/ca/fr/public-cloud/creation-des-cles-ssh/). Il n'est pas nécessaire de suivre l'étape [Importez votre clé SSH dans l’Espace client OVHcloud](https://docs.ovh.com/ca/fr/public-cloud/creation-des-cles-ssh/#importez-votre-cle-ssh-dans-lespace-client-ovhcloud_1) dans ce guide.
+Nous vous invitons à suivre le guide [Créer des clés SSH](https://docs.ovh.com/ca/fr/public-cloud/creation-des-cles-ssh/). Il n'est pas nécessaire de suivre l'étape [Importez votre clé SSH dans l’Espace client OVHcloud](https://docs.ovh.com/ca/fr/public-cloud/creation-des-cles-ssh/#importez-votre-cle-ssh-dans-lespace-client-ovhcloud) dans ce guide.
 
 ### Ajout de la clé publique sur l'hébergement
 

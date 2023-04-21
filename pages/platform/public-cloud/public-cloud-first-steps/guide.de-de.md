@@ -132,7 +132,7 @@ Der Schlüssel ist fertig erstellt, wenn die Fortschrittsanzeige voll ist.
 
 ![Schlüssel speichern](images/puttygen_03a.png){.thumbnail}
 
-Sie können den öffentlichen Schlüssel in diesem Fenster auswählen und kopieren, um diesen in Ihrem OVHcloud Kundencenter wie in [Schritt 2](./#schritt-2-offentliche-schlussel-im-ovhcloud-kundencenter-speichern_1) beschrieben zu speichern.
+Sie können den öffentlichen Schlüssel in diesem Fenster auswählen und kopieren, um diesen in Ihrem OVHcloud Kundencenter wie in [Schritt 2](./#schritt-2-offentliche-schlussel-im-ovhcloud-kundencenter-speichern) beschrieben zu speichern.
 
 Speichern Sie beide Schlüssel in Dateien und verwenden Sie die Option zur Eingabe einer Passphrase. Da für den Zugriff auf Ihre Public Cloud Instanz über Ihr Arbeitsgerät nur der zugehörige private Schlüssel erforderlich ist, sollten an dieser Stelle angemessene Sicherheitsvorkehrungen getroffen werden. Die Passphrase muss eingegeben werden, wenn eine Verbindung mit der Instanz hergestellt wird.
 
@@ -192,7 +192,7 @@ Im dritten Schritt wählen Sie das Betriebssystem für Ihre Instanz aus. Welche 
 Wenn Sie ein Betriebssystem auswählen, das eine kostenpflichtige Lizenz erfordert, werden die Kosten automatisch zu Ihrer stündlichen oder monatlichen Abrechnung hinzugefügt.
 >
 
-Auch für diesen Schritt muss ein SSH-Schlüssel hinzugefügt werden (ausgenommen Windows-Instanzen), indem dieser entweder direkt über `Schlüssel hinzufügen`{.action} eingefügt oder aus der Liste ausgewählt wird, wenn Sie diesen bereits in [Schritt 2](./#schritt-2-offentliche-schlussel-im-ovhcloud-kundencenter-speichern_1) im Kundencenter gespeichert haben.
+Auch für diesen Schritt muss ein SSH-Schlüssel hinzugefügt werden (ausgenommen Windows-Instanzen), indem dieser entweder direkt über `Schlüssel hinzufügen`{.action} eingefügt oder aus der Liste ausgewählt wird, wenn Sie diesen bereits in [Schritt 2](./#schritt-2-offentliche-schlussel-im-ovhcloud-kundencenter-speichern) im Kundencenter gespeichert haben.
 
 ![Schlüssel auswählen](images/instance-creation-03-2022.png){.thumbnail}
 

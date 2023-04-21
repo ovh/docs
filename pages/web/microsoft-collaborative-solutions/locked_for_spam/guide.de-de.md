@@ -28,7 +28,7 @@ Wenn Sie eine E-Mail erhalten haben, die darauf hinweist, dass eine Ihrer E-Mail
 
 Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie unter `Microsoft`{.action} und `Exchange`{.action} Ihren Exchange Dienst aus. Gehen Sie dann auf den Tab `E-Mail-Accounts`{.action}.
 
-Wenn die Spalte „Status“ der entsprechenden E-Mail-Adresse die Bezeichnung „Gesperrt“ aufweist, klicken Sie auf `...`{.action} rechts in der Zeile und danach auf `Entsperren`{.action}. Fahren Sie danach mit [Schritt 2](./#schritt-2-auf-das-support-ticket-zugreifen_1) der Anleitung fort.
+Wenn die Spalte „Status“ der entsprechenden E-Mail-Adresse die Bezeichnung „Gesperrt“ aufweist, klicken Sie auf `...`{.action} rechts in der Zeile und danach auf `Entsperren`{.action}. Fahren Sie danach mit [Schritt 2](./#schritt-2-auf-das-support-ticket-zugreifen) der Anleitung fort.
 
 ![spam](images/blocked-for-SPAM-01-01.png){.thumbnail}
 
@@ -36,7 +36,7 @@ Wenn die Spalte „Status“ der entsprechenden E-Mail-Adresse die Bezeichnung �
 
 Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie unter `E-Mail Pro`{.action} Ihren E-Mail Pro Dienst aus. Gehen Sie dann auf den Tab `E-Mail-Accounts`{.action}.
 
-Wenn in der Spalte „Status“ rechts neben der entsprechenden E-Mail-Adresse „Spam“ angegeben ist, klicken Sie auf dieses Element und dann auf `Ticket beantworten`{.action}. Fahren Sie danach mit [Schritt 2](./#schritt-2-auf-das-support-ticket-zugreifen_1) der Anleitung fort.
+Wenn in der Spalte „Status“ rechts neben der entsprechenden E-Mail-Adresse „Spam“ angegeben ist, klicken Sie auf dieses Element und dann auf `Ticket beantworten`{.action}. Fahren Sie danach mit [Schritt 2](./#schritt-2-auf-das-support-ticket-zugreifen) der Anleitung fort.
 
 ![spam](images/blocked-for-SPAM-01-02.png){.thumbnail}
 
@@ -44,7 +44,7 @@ Wenn in der Spalte „Status“ rechts neben der entsprechenden E-Mail-Adresse �
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie unter  `E-Mails`{.action} die betreffende Domain aus. Gehen Sie dann auf den Tab `E-Mails`{.action}.
 
-Wenn in der Spalte „Blockiert wegen SPAM“ rechts neben der entsprechenden E-Mail-Adresse „Ja“ angegeben ist, klicken Sie auf dieses Element und dann auf `Ticket beantworten`{.action}. Fahren Sie danach mit [Schritt 2](./#schritt-2-auf-das-support-ticket-zugreifen_1) der Anleitung fort.
+Wenn in der Spalte „Blockiert wegen SPAM“ rechts neben der entsprechenden E-Mail-Adresse „Ja“ angegeben ist, klicken Sie auf dieses Element und dann auf `Ticket beantworten`{.action}. Fahren Sie danach mit [Schritt 2](./#schritt-2-auf-das-support-ticket-zugreifen) der Anleitung fort.
 
 ![spam](images/blocked-for-SPAM-01-03.png){.thumbnail}
 

@@ -62,7 +62,7 @@ passwd: password updated successfully
 > W dystrybucji Linux wpisane hasło **nie** będzie się wyświetlało.
 >
 
-Jeśli chcesz zezwolić na logowanie jako użytkownik root, postępuj zgodnie z instrukcjami zawartymi w [tej sekcji](./#wlacz-haslo-root_1).
+Jeśli chcesz zezwolić na logowanie jako użytkownik root, postępuj zgodnie z instrukcjami zawartymi w [tej sekcji](./#wlacz-haslo-root).
 
 ### Zmiana hasła, jeśli zostało ono utracone
 

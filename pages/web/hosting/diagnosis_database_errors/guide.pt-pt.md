@@ -148,7 +148,7 @@ De seguida, volte a analisar o cálculo da quota utilizado a partir do separador
 
 #### Método 4: otimizar a sua base de dados
 
-Para otimizar a sua base de dados, siga as instruções do nosso guia "[Configurar o seu servidor de bases de dados](https://docs.ovh.com/pt/hosting/configurar-otimizar-servidor-de-bases-de-dados/#otimizar-as-bases-de-dados_1)". De seguida, volte a analisar o cálculo da quota utilizado a partir do separador `Bases de dados`{.action} do seu alojamento, clicando no botão `...`{.action} da base de dados em questão.
+Para otimizar a sua base de dados, siga as instruções do nosso guia "[Configurar o seu servidor de bases de dados](https://docs.ovh.com/pt/hosting/configurar-otimizar-servidor-de-bases-de-dados/#otimizar-as-bases-de-dados)". De seguida, volte a analisar o cálculo da quota utilizado a partir do separador `Bases de dados`{.action} do seu alojamento, clicando no botão `...`{.action} da base de dados em questão.
 
 > [!warning]
 >
@@ -172,7 +172,7 @@ Nesta situação, pode aumentar a [quantidade de memória RAM](https://docs.ovh.
 > Na zona `Configuration`, clique em as o `...`{.action} à direita da entrada da `Base de dados privada`, e clique no botão `Desassociar`{.action}.
 >
 
-Também pode otimizar a sua base de dados seguindo as instruções do nosso guia "[Configurar o seu servidor de bases de dados](https://docs.ovh.com/pt/hosting/configurar-otimizar-servidor-de-bases-de-dados/#otimizar-as-bases-de-dados_1)".
+Também pode otimizar a sua base de dados seguindo as instruções do nosso guia "[Configurar o seu servidor de bases de dados](https://docs.ovh.com/pt/hosting/configurar-otimizar-servidor-de-bases-de-dados/#otimizar-as-bases-de-dados)".
 
 > [!primary]
 >
@@ -233,7 +233,7 @@ Para resolver esta anomalia, pode:
 
 - Transferir a base de dados para várias operações em vez de uma (para qualquer questão relativa às operações a realizar, contacte a nossa [comunidade](https://community.ovh.com/en/) ou os [parceiros da OVHcloud](https://partner.ovhcloud.com/pt/directory/). De facto, a OVHcloud não lhe poderá fornecer assistência).
 
-- [Otimize a sua base de dados](https://docs.ovh.com/pt/hosting/configurar-otimizar-servidor-de-bases-de-dados/#otimizar-as-bases-de-dados_1) e depois repita as operações de exportação/importação.
+- [Otimize a sua base de dados](https://docs.ovh.com/pt/hosting/configurar-otimizar-servidor-de-bases-de-dados/#otimizar-as-bases-de-dados) e depois repita as operações de exportação/importação.
 
 ### Não é possível aceder ao PhpMyAdmin
 
@@ -261,7 +261,7 @@ Este número é de **200** para as bases dos servidores [Web Cloud Databases](ht
 
 Esta mensagem aparece na [ligação ao PhpMyAdmin](https://docs.ovh.com/pt/hosting/criar-base-de-dados/#acaceder-a-interface-phpmyadmin) quando o número máximo de ligações é ultrapassado.
 
-Nesta situação, deverá [otimizar as suas bases de dados](https://docs.ovh.com/pt/hosting/configurar-otimizar-servidor-de-bases-de-dados/#otimizar-as-bases-de-dados_1) de forma a reduzir o número de ligações ativas.
+Nesta situação, deverá [otimizar as suas bases de dados](https://docs.ovh.com/pt/hosting/configurar-otimizar-servidor-de-bases-de-dados/#otimizar-as-bases-de-dados) de forma a reduzir o número de ligações ativas.
 
 > [!warning]
 >

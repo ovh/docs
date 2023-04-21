@@ -41,7 +41,7 @@ Otrzymasz dashboard, który zawiera ważne informacje o Twojej usłudze i pozwal
 
 W przypadku aktualnej gamy VPS, przeczytaj następną sekcję niniejszego przewodnika: **Pierwsze kroki (aktualna gama VPS)**.
 
-W przypadku starszego modelu VPS, zapraszamy do dalszej lektury przewodnika po kliknięciu w link: [Pierwsze kroki (poprzednia gama VPS)](./#pierwsze-kroki-poprzednia-gama-vps_1).
+W przypadku starszego modelu VPS, zapraszamy do dalszej lektury przewodnika po kliknięciu w link: [Pierwsze kroki (poprzednia gama VPS)](./#pierwsze-kroki-poprzednia-gama-vps).
 
 ### Pierwsze kroki (aktualna gama VPS)
 
@@ -83,7 +83,7 @@ passwd: password updated successfully
 
 #### Aktywacja połączeń root
 
-Ze względów bezpieczeństwa połączenie z użytkownikiem "root" zostało wyłączone. Jeśli chcesz zezwolić na tego typu połączenia, skorzystaj z instrukcji zawartych w [tym przewodniku](https://docs.ovh.com/pl/vps/root-password/#wlacz-haslo-root_1).
+Ze względów bezpieczeństwa połączenie z użytkownikiem "root" zostało wyłączone. Jeśli chcesz zezwolić na tego typu połączenia, skorzystaj z instrukcji zawartych w [tym przewodniku](https://docs.ovh.com/pl/vps/root-password/#wlacz-haslo-root).
 
 #### Restart Twojego serwera VPS (gama aktualna) <a name="reboot-current-range"></a>
 

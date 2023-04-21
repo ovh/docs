@@ -22,7 +22,7 @@ Con OVHcloud Hosted Exchange puoi inviare e ricevere le tue email utilizzando il
 
 ## Procedura
 
-Questa guida ti consentirà di comprendere meglio quello che è possibile ottenere con la Webmail OWA. Tuttavia, dal momento che questa interfaccia non è stata originariamente creata da OVHcloud, non siamo in grado di fornire istruzioni specifiche sulle impostazioni non specificate in questa guida. Riguardo alle funzionalità di Exchange, abbiamo preparato alcune guide supplementari che puoi trovare nella sezione [**Per saperne di più**](./#per-saperne-di-piu_1) di seguito.
+Questa guida ti consentirà di comprendere meglio quello che è possibile ottenere con la Webmail OWA. Tuttavia, dal momento che questa interfaccia non è stata originariamente creata da OVHcloud, non siamo in grado di fornire istruzioni specifiche sulle impostazioni non specificate in questa guida. Riguardo alle funzionalità di Exchange, abbiamo preparato alcune guide supplementari che puoi trovare nella sezione [**Per saperne di più**](./#per-saperne-di-piu) di seguito.
 
 
 > [!primary]

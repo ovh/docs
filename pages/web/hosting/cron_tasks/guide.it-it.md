@@ -72,7 +72,7 @@ L'interfaccia offre due modalità per configurare la frequenza del tuo task. Uti
 |Inserisci valori numerici come in un *crontab*. Gli asterischi indicano ogni valore del periodo, il che significa che il task si eseguirebbe in modo continuo **una volta all'ora ogni giorno** in questo esempio.|
 |![cron frequency](images/cron-jobs-4.png){.thumbnail}|
 
-Durante la configurazione è possibile passare da una modalità all'altra per visualizzare le modifiche di conseguenza. Annota anche i [limiti durante la pianificazione di un'operazione su un hosting Web](./#limitazioni-delle-attivita-pianificate-sul-tuo-hosting-web_1).
+Durante la configurazione è possibile passare da una modalità all'altra per visualizzare le modifiche di conseguenza. Annota anche i [limiti durante la pianificazione di un'operazione su un hosting Web](./#limitazioni-delle-attivita-pianificate-sul-tuo-hosting-web).
 
 ![cron control panel](images/cron-jobs-5.gif){.thumbnail}
 

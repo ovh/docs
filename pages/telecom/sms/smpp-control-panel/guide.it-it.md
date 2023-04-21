@@ -60,7 +60,7 @@ Clicca su `Aggiungi un IP`{.action} per aggiungere indirizzi IP a questa lista.
 
 ### Gestione mittenti e crediti
 
-Consulta le nostre guide sulla [gestione mittenti](https://docs.ovh.com/it/sms/inviare_sms_dallo_spazio_cliente/#step-3-scegli-il-mittente-del-tuo-sms_1) e sulla [gestione dei crediti SMS e ricarica automatica](https://docs.ovh.com/it/sms/attivare-la-ricarica-automatica-del-credito-sms/).
+Consulta le nostre guide sulla [gestione mittenti](https://docs.ovh.com/it/sms/inviare_sms_dallo_spazio_cliente/#step-3-scegli-il-mittente-del-tuo-sms) e sulla [gestione dei crediti SMS e ricarica automatica](https://docs.ovh.com/it/sms/attivare-la-ricarica-automatica-del-credito-sms/).
 
 ## Per saperne di più
 

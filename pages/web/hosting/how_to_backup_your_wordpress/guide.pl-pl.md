@@ -153,7 +153,7 @@ Stosując te dobre praktyki będziesz miał możliwość powrotu do zdrowej wers
 ## Sprawdź również <a name="go-further"></a>
 
 - [Oficjalna strona WordPress](https://wordpress.org){.external}
-- [Więcej informacji na temat kopii zapasowych Twojego hostingu](https://docs.ovh.com/pl/hosting/hosting_www_informacje_techniczne_zwiazane_z_hostingiem_www/#informacje-o-automatycznych-kopiach-zapasowych_1)
+- [Więcej informacji na temat kopii zapasowych Twojego hostingu](https://docs.ovh.com/pl/hosting/hosting_www_informacje_techniczne_zwiazane_z_hostingiem_www/#informacje-o-automatycznych-kopiach-zapasowych)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 

@@ -23,7 +23,7 @@ Lors de l’installation ou de la réinstallation d’un système d’exploitati
 
 ## En pratique
 
-Les étapes suivantes décrivent le processus de modification du mot de passe admin local via le mode rescue OVHcloud (basé sur Linux) qui est disponible à tout moment. Si vous préférez utiliser Windows PE (WinRescue), consultez la méthode dédiée [à la fin de ce guide](./#reinitialisation-du-mot-de-passe-admin-a-laide-de-winrescue_1). 
+Les étapes suivantes décrivent le processus de modification du mot de passe admin local via le mode rescue OVHcloud (basé sur Linux) qui est disponible à tout moment. Si vous préférez utiliser Windows PE (WinRescue), consultez la méthode dédiée [à la fin de ce guide](./#reinitialisation-du-mot-de-passe-admin-a-laide-de-winrescue). 
 
 ### Étape 1 : redémarrer le serveur en mode rescue
 
@@ -228,7 +228,7 @@ Write hive files? (y/n) [n] : y
 
 ### Étape 4 : redémarrer le serveur 
 
-Commencez par remplacer le netboot par **Booter sur le disque dur** dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) (voir [Etape 1](./#etape-1-redemarrer-le-serveur-en-mode-rescue_1)). 
+Commencez par remplacer le netboot par **Booter sur le disque dur** dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) (voir [Etape 1](./#etape-1-redemarrer-le-serveur-en-mode-rescue)). 
 
 De retour en ligne de commande, démontez la partition et redémarrez le serveur avec les commandes suivantes :
 
@@ -328,7 +328,7 @@ Le serveur doit alors être redémarré.
 
 #### Étape 3 : redémarrer le serveur 
 
-Commencez par remplacer le netboot par **Booter sur le disque dur** dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) (voir [Etape 1](./#etape-1-redemarrer-le-serveur-en-mode-rescue_1)).
+Commencez par remplacer le netboot par **Booter sur le disque dur** dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) (voir [Etape 1](./#etape-1-redemarrer-le-serveur-en-mode-rescue)).
 
 De retour dans la fenêtre KVM, sélectionnez l'option d'arrêt `Redémarrer`{.action} via le bouton Windows « Démarrer » en bas à gauche.
 
