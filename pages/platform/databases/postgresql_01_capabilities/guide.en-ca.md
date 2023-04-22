@@ -84,7 +84,7 @@ Here are the node types you can choose from:
 
 | Name    | Storage                 | vCore | Memory (GB) |
 | ------- | ----------------------- | ----- | ----------- |
-| db1-4   | From 80 GB to 240 GB    | 1     | 4           |
+| db1-4   | From 80 GB to 240 GB    | 2     | 4           |
 | db1-7   | From 160 GB to 480 GB   | 2     | 7           |
 | db1-15  | From 320 GB to 960 GB   | 4     | 15          |
 | db1-30  | From 640 GB to 1.92 TB  | 8     | 30          |
