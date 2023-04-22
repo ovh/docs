@@ -83,7 +83,7 @@ Here are the node types you can choose from:
 
 | Name    | Storage  | vCore | Memory (GB) |
 | ------- | -------- | ----- | ----------- |
-| db1-4   | N/A      | 1     | 4           |
+| db1-4   | N/A      | 2     | 4           |
 | db1-7   | N/A      | 2     | 7           |
 | db1-15  | N/A      | 4     | 15          |
 | db1-30  | N/A      | 8     | 30          |
