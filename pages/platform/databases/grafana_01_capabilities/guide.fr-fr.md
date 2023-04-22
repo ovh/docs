@@ -6,10 +6,10 @@ section: Grafana - Guides
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/grafana/capabilities/'
-updated: 2023-01-19
+updated: 2023-04-22
 ---
 
-**Last updated January 19th, 2023**
+**Last updated April 22nd, 2023**
 
 ## Objective
 
@@ -38,7 +38,7 @@ The Public Cloud Databases offer supports the following Grafana versions:
 
 - Grafana 9.1
 
-You can follow the Grafana Release Cycle on their official page: <https://grafana.com/>.
+Please refer to the [DBMS lifecycle policy guide](https://help.ovhcloud.com/csm/en-gb-public-cloud-databases-lifecycle-policy?id=kb_article_view&sysparm_article=KB0048887) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow the Grafana Release Cycle on their official page: <https://grafana.com/>.
 
 ### Grafana clients
 
@@ -71,10 +71,14 @@ Here are the node types you can choose from:
 
 **Essential plans**
 
-| Name    | Disk (GB) | Cores | Memory (GB) |
-| ------- | --------- | ----- | ----------- |
-| db1-4   | n/a       | 1     | 4           |
-| db1-7   | n/a       | 2     | 7           |
+| Name    | Storage | vCore | Memory (GB) |
+| ------- | ------- | ----- | ----------- |
+| db1-4   | N/A     | 2     | 4           |
+| db1-7   | N/A     | 2     | 7           |
+
+#### Node template upgrade
+
+You can upgrade the node template of your cluster to scale your hardware resources up. This operation causes no interruption of service but be aware that you will not be able to downgrade the node template afterwards.
 
 ### Features
 #### Network
@@ -90,14 +94,21 @@ Here are some considerations to take into account when using private network:
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
 - When connecting from outside subnet, Openstack IP gateway must be enabled in the subnet use for the Database service. The customer is responsible for any other custom network setup.
 
+##### Authorised IPs
+
+Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic, until then your service will be unreachable.
+
+#### Advanced parameters
+
+You can customize your Grafana further through the use of advanced parameters. See the [Advanced parameters references documentation](https://help.ovhcloud.com/csm/en-gb-public-cloud-databases-grafana-advanced-parameters-references?id=kb_article_view&sysparm_article=KB0054641) for more information about which ones are supported.
+
 #### Backups
 
 *Essential* plan clusters are automatically backed up daily during their backup window. Backup retention is 1 day.
 
 #### Logs and metrics
 
-Logs and metrics are available via the OVHcloud Public Cloud Control Panel.
-As of today, you can't export logs and metrics, nor plug them into a remote tool.
+Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration could be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your Grafana logs in Opensearch. See the [Cross Service Integration documentation](https://docs.ovh.com/gb/en/publiccloud/databases/cross-service-integration/) for more information.
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month
