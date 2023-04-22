@@ -6,10 +6,10 @@ section: Redis - Guides
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/redis/capabilities/'
-updated: 2023-01-19
+updated: 2023-04-22
 ---
 
-**Last updated January 19th, 2023**
+**Last updated April 22nd, 2023**
 
 ## Objective
 
@@ -37,8 +37,9 @@ Database nodes have to be in the same region. Multi-AZ is currently not supporte
 The Public Cloud Databases offer supports the following Redis versions:
 
 - Redis 6.2
+- Redis 7.0
 
-You can follow Redis Release Cycle on their official page: <https://redis.io/topics/releases>
+Please refer to the [DBMS lifecycle policy guide](https://docs.ovh.com/gb/en/publiccloud/databases/lifecycle-policy/) for recommendations on version upgrades and end of life announcements of major versions. You can, additionally, follow Redis Release Cycle on their official page: <https://redis.io/topics/releases>
 
 ### Redis clients
 
@@ -62,6 +63,9 @@ Here is an overview of the various plans' capabilities:
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
 
+> [!primary]
+> Be aware that you will be able to upgrade your plan but will not be able to downgrade it afterwards.
+
 #### Nodes and replicas
 
 - **Essential**: the cluster can support at most one node.
@@ -77,13 +81,14 @@ More information on <https://redis.com/legal/licenses/>.
 
 Here are the node types you can choose from:
 
-| Name    | Disk (GB) | Cores | Memory (GB) |
-| ------- | --------- | ----- | ----------- |
-| db1-7   | N/A       | 2     | 7           |
-| db1-15  | N/A       | 4     | 15          |
-| db1-30  | N/A       | 8     | 30          |
-| db1-60  | N/A       | 16    | 60          |
-| db1-120 | N/A       | 32    | 120         |
+| Name    | Storage  | vCore | Memory (GB) |
+| ------- | -------- | ----- | ----------- |
+| db1-4   | N/A      | 1     | 4           |
+| db1-7   | N/A      | 2     | 7           |
+| db1-15  | N/A      | 4     | 15          |
+| db1-30  | N/A      | 8     | 30          |
+| db1-60  | N/A      | 16    | 60          |
+| db1-120 | N/A      | 32    | 120         |
 
 Right now, all nodes of a given cluster should be of the same type and distributed in the same region.
 
@@ -102,6 +107,9 @@ Here are some considerations to take into account when using private network:
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
 - When connecting from outside subnet, Openstack IP gateway must be enabled in the subnet use for the Database service. The customer is responsible for any other custom network setup.
 
+##### Authorised IPs
+
+Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic, until then your service will be unreachable. 
 
 #### Maximum simultaneous connections
 
@@ -111,7 +119,7 @@ So for example on a server with 7GB memory, you will get up to 7 \* 4096 = 28672
 
 #### Advanced parameters
 
-We do not currently support Redis advanced parameters.
+You can customize your Redis further through the use of advanced parameters. See the [Advanced parameters references documentation](https://help.ovhcloud.com/csm/en-gb-public-cloud-databases-redis-advanced-parameters-references?id=kb_article_view&sysparm_article=KB0054733) for more information about which ones are supported.
 
 #### Backups
 
@@ -123,8 +131,7 @@ We do not currently support Redis advanced parameters.
 
 #### Logs and metrics
 
-Logs and metrics are available via the OVHcloud Public Cloud Control Panel.
-As of today, you can't export logs and metrics, nor plug them into a remote tool.
+Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration could be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your Redis logs in Opensearch and metrics in Grafana (metrics have to be exported first in a time series compatible engine such as PostgreSQL or M3db). See the [Cross Service Integration documentation](https://docs.ovh.com/gb/en/publiccloud/databases/cross-service-integration/) for more information.
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month
