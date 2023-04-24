@@ -175,7 +175,7 @@ Kafka is a streaming tool. We don't backup Kafka data.
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration could be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your MySQL logs in Opensearch and metrics in Grafana (metrics have to be exported first in a time series compatible engine such as PostgreSQL or M3db). See the [Cross Service Integration documentation](https://help.ovhcloud.com/csm/en-gb-public-cloud-databases-kafka-advanced-parameters-references?id=kb_article_view&sysparm_article=KB0054654) for more information.
+Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration could be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your Kafka logs in Opensearch and metrics in Grafana (metrics have to be exported first in a time series compatible engine such as PostgreSQL or M3db). See the [Cross Service Integration documentation](https://help.ovhcloud.com/csm/en-gb-databases-cross-service-integration?id=kb_article_view&sysparm_article=KB0048804) for more information.
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month
