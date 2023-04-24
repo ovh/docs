@@ -67,7 +67,6 @@ Pour cela, cliquez sur l'onglet `Informations générales`{.action} de votre hé
 
 ### Comment augmenter la RAM d'une offre Web Cloud Databases liée à un hébergement mutualisé « Performance » ?
 
-
 Pour augmenter la RAM d'une offre Web Cloud Databases liée à un hébergement mutualisé **Performance**, vous devrez obligatoirement et préalablement délier l'offre Web Cloud Databases de votre hébergement **Performance** pour basculer sur une offre supérieure.
 
 
