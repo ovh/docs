@@ -65,7 +65,8 @@ Lorsque vous résiliez ou supprimez votre hébergement mutualisé **Performance*
 
 Pour cela, cliquez sur l'onglet `Informations générales`{.action} de votre hébergement. Dans la section **Configuration**, cliquez sur le bouton `...`{.action} à droite de « **Web Cloud Databases** ». Cliquez sur `Délier`{.action} et suivez les instructions afin de commander une offre Web Cloud Databases indépendante, ce qui vous permettra de conserver votre Web Cloud Databases déjà créé.
 
-### Comment augmenter la RAM d'une offre Web Cloud Databases liée à un hébergement mutualisé « Performance »
+### Comment augmenter la RAM d'une offre Web Cloud Databases liée à un hébergement mutualisé « Performance » ?
+
 
 Pour augmenter la RAM d'une offre Web Cloud Databases liée à un hébergement mutualisé **Performance** vous devrez obligatoirement et préalablement délier l'offre Web Cloud Databases de votre hébergement **Performance** pour basculer sur une offre suppérieure.
 
