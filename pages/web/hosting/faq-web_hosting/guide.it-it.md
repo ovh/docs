@@ -66,7 +66,22 @@ Per effettuare questa operazione, clicca sulla scheda `Informazioni generali`{.a
 Gli hosting condivisi **Performance** includono un'offerta Web Cloud Databases attivabile gratuitamente.
 Quando elimini o elimini il tuo hosting condiviso **Performance**, l'offerta Web Cloud Databases associata è disattivata. Per conservare il tuo Web Cloud Databases, dovrai scollegarlo prima della disattivazione dell'hosting.<br>
 
-Clicca sulla scheda `Informazioni generali`{.action} del tuo hosting. Nella sezione **Configurazione**, clicca sul pulsante `...`{.action} a destra di "**Database Private**". Clicca su `Scollega`{.action} e segui le istruzioni per ordinare un'offerta Web Cloud Databases indipendente, per mantenere il tuo Web Cloud Databases già creato.
+Clicca sulla scheda `Informazioni generali`{.action} del tuo hosting. Nella sezione **Configurazione**, clicca sul pulsante `...`{.action} a destra di "**Web Cloud Databases**". Clicca su `Scollega`{.action} e segui le istruzioni per ordinare un'offerta Web Cloud Databases indipendente, per mantenere il tuo Web Cloud Databases già creato.
+
+### Come aumentare la RAM di un'offerta Web Cloud Databases associata a un hosting condiviso "Performance"?
+
+Per aumentare la RAM di un'offerta Web Cloud Database associata a un hosting condiviso **Performance**, è necessario svincolare obbligatoriamente e in precedenza l'offerta Web Cloud Database del tuo hosting **Performance** per passare a un'offerta superiore.
+
+
+accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Accedi alla sezione `Web Cloud`{.action} e clicca su `Hosting`{.action} nella colonna a sinistra. 
+
+Nella pagina `Informazioni generali`{.action}, in alto a sinistra, è possibile trovare un riquadro `Configurazione`{.action}. A destra della menzione `Web Cloud Databases`{.action}, clicca sul pulsante `...`{.action}, quindi su `Scollega`{.action}. Scegli la durata minima del rinnovo e prosegui fino alla conferma dell'ordine.
+
+
+Per maggiori informazioni, consulta la nostra guida sulla ["Configurazione di un'offerta Web Cloud Databases"]()
+
+
+**Questa azione è irreversibile e l'offerta Web Cloud Database sarà fatturata indipendentemente dal tuo hosting Web Performance.**
 
 ## Diagnostica
 

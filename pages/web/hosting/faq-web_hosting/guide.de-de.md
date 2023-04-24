@@ -78,10 +78,10 @@ Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?
 Auf der angezeigten Seite `Allgemeine Informationen`{.action} finden Sie einen Kasten mit dem Titel `Konfiguration`{.action} im Mittelpunkt der Seite. Klicken Sie rechts neben der Bezeichnung `Web Cloud Databases`{.action} auf die Schaltfläche `...`{.action} dann auf `Abtrennen`{.action}. Wählen Sie die kürzeste Verlängerungsdauer aus und fahren Sie mit der Bestätigung der Bestellung fort.
 
 
-Weitere Informationen finden Sie in unserer Anleitung zur ["Konfiguration eines Cloud Databases Webangebots"](/Webseiten/Web/Clouddb/Configure-database-server#ändern-ihres-web-cloud-databases)
+Weitere Informationen finden Sie in unserer Anleitung zur ["Konfiguration eines Cloud Databases Webangebots"]()
 
 
-** Diese Aktion ist unwiderruflich und das Cloud Databases Webhosting wird anschliessend unabhängig von Ihrem Performance Webhosting abgerechnet.**
+**Diese Aktion ist unwiderruflich und das Cloud Databases Webhosting wird anschliessend unabhängig von Ihrem Performance Webhosting abgerechnet.**
 
 ## Diagnose
 
