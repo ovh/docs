@@ -4,7 +4,8 @@ excerpt: Retrouvez les questions les plus fréquemment posées sur les hébergem
 slug: faq-hebergement
 section: Premiers pas
 order: 05
-updated: 2022-11-28
+updated: 2023-04-21
+
 ---
 
 **Dernière mise à jour le 15/02/2023**
