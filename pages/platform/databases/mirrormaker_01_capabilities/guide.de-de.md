@@ -129,7 +129,7 @@ Data retention is only limited by your cluster storage space.
 
 #### Advanced parameters
 
-We do not currently support Kafka advanced parameters.
+While advanced parameters are supported for Kafka, they are not for Kafka MirrorMaker.
 
 #### Backups
 

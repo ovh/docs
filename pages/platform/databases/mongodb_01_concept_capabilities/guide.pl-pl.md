@@ -37,7 +37,7 @@ The Public Cloud Databases offer supports the following MongoDB versions:
 - MongoDB 5.0
 - MongoDB 6.0
 
-MongoDB recommends always installing and using the latest stable version of MongoDB. See [MongoDB Versioning](https://docs.mongodb.com/manual/reference/versioning/){.external} for more information.
+Please refer to the [DBMS lifecycle policy guide](https://help.ovhcloud.com/csm/pl-public-cloud-databases-lifecycle-policy?id=kb_article_view&sysparm_article=KB0048895) for recommendations on version upgrades and end of life announcements of major versions. Additionally, MongoDB recommends always installing and using the latest stable version of MongoDB. See [MongoDB Versioning](https://docs.mongodb.com/manual/reference/versioning/){.external} for more information.
 
 ### MongoDB Drivers
 

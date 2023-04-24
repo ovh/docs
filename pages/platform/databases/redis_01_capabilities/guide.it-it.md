@@ -70,7 +70,7 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 
 - **Essential**: the cluster can support at most one node.
 - **Business**: the cluster is delivered with 2 nodes by default.
-- **Enterprise**: The cluster is delivered with 3 nodes by default.
+- **Enterprise**: the cluster is delivered with 3 nodes by default.
 
 #### License type
 
