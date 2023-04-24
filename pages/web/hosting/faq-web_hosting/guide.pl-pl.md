@@ -4,7 +4,7 @@ excerpt: Znajdź najczęściej zadawane pytania dotyczące hostingu stron intern
 slug: web-hosting-faq
 section: Pierwsze kroki
 order: 05
-updated: 2022-11-28
+updated: 2023-04-24
 ---
 
 > [!primary]

@@ -4,14 +4,14 @@ excerpt: Encuentre las respuestas a las preguntas más frecuentes sobre alojamie
 slug: faq-web-hosting
 section: Primeros pasos
 order: 05
-updated: 2022-11-28
+updated: 2023-04-24
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 07/04/2022**
+**Última actualización: 24/04/2023**
 
 ## Gestión de su producto
 
@@ -61,6 +61,21 @@ Consulte la guía "[Alojar varios sitios web en un mismo hosting](https://docs.o
 Al dar de baja o eliminar el alojamiento compartido, el servicio de correo asociado también se dará de baja. Para conservar sus direcciones de correo, deberá desvincular el servicio de correo antes de dar de baja el alojamiento.<br>
 
 Para ello, acceda a la pestaña `Información general`{.action} del alojamiento. En la sección **Configuración**, haga clic en el botón `...`{.action} situado a la derecha de "**Direcciones de correo**". Haga clic en `Desvincular mi opción de correo`{.action} y siga las instrucciones para contratar una solución de correo independiente que le permitirá conservar sus direcciones de correo ya creadas.
+
+### ¿Cómo aumentar la RAM de un plan de hosting Cloud Databases asociado a un alojamiento compartido "Performance"?
+
+Para aumentar la RAM de un plan de hosting Cloud Databases asociado a un alojamiento compartido **Performance**, deberá eliminar obligatoria y previamente el plan de hosting Cloud Databases del alojamiento **Performance** para migrar a un plan superior.
+
+
+Para ello, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Acceda a la sección `Web Cloud`{.action} y seleccione el alojamiento correspondiente en la pestaña `Alojamientos`{.action}. 
+
+En la página Información general{.action}, encontrará un recuadro titulado `Configuración`{.action} en el centro de la página. Haga clic en el botón `...`{.action} a la derecha de la mención `Web Cloud Databases`{.action} y luego en `Desvincular`{.action}. Seleccione la duración de renovación más corta y continúe hasta la validación del pedido.
+
+
+Para más información, consulte nuestra guía ["Configuración de un plan de hosting Cloud Databases"](/páginas/web/clouddb/configure-database-server#modificar-su-plan-web-cloud-databases)
+
+
+**Esta acción es irreversible y la solución Web Cloud Databases se facturará a continuación, independientemente de su plan de hosting Performance.**
 
 ## Diagnóstico
 

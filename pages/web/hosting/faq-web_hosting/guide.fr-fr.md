@@ -8,7 +8,7 @@ updated: 2023-04-21
 
 ---
 
-**Dernière mise à jour le 15/02/2023**
+**Dernière mise à jour le 24/04/2023**
 
 ## Gestion de votre offre
 
@@ -70,7 +70,7 @@ Pour cela, cliquez sur l'onglet `Informations générales`{.action} de votre hé
 Pour augmenter la RAM d'une offre Web Cloud Databases liée à un hébergement mutualisé **Performance**, vous devrez obligatoirement et préalablement délier l'offre Web Cloud Databases de votre hébergement **Performance** pour basculer sur une offre supérieure.
 
 
-Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Rendez-vous dans la partie `Web Cloud` puis sur l'hébergement concerné à gauche dans l'onglet `Hébergements`{.action}. 
+Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Rendez-vous dans la partie `Web Cloud`{.action} puis sur l'hébergement concerné à gauche dans l'onglet `Hébergements`{.action}. 
 
 Sur la page `Informations générales`{.action} qui s'affiche, vous retrouvez un encadré intitulé `Configuration`{.action} au centre de la page. A droite de la mention `Web Cloud Databases`{.action}, cliquez sur le bouton `...`{.action} puis sur `Délier`{.action}. Choisissez la durée du renouvellement la plus courte puis poursuivez jusqu'à la validation de la commande.
 
