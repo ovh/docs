@@ -78,7 +78,7 @@ Pour un hébergement web OVHcloud, vous pouvez simplement cocher `Autoriser les 
 > **Cette action est irréversible et l'offre Web Cloud Databases sera ensuite facturée indépendamment de votre hébergement web Performance.**
 >
 
-Pour modifier votre offre Web Cloud Databases, rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Cliquez sur l'onglet `Web Cloud`, puis sur `Web Cloud Databases`{.action}. Sélectionnez le nom de votre serveur de bases de données.
+Pour modifier votre offre Web Cloud Databases, rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Cliquez sur l'onglet `Web Cloud`{.action}, puis sur `Web Cloud Databases`{.action}. Sélectionnez le nom de votre serveur de bases de données.
 
 Dans l'onglet **« Informations générales »** qui est affiché par défaut, cliquez sur `...`{.action} à droite de la mention « RAM » puis sur `Changer la quantité de la RAM`{.action} afin d'accéder à la commande de ce basculement.
 

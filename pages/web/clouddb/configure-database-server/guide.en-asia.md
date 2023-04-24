@@ -4,10 +4,10 @@ slug: configure-optimise-database-server
 excerpt: 'Find out how to configure and optimise your database server'
 section: Configuration
 order: 06
-updated: 2023-02-15
+updated: 2023-04-24
 ---
 
-**Last updated 15rd February 2023**
+**Last updated 24th April 2023**
 
 ## Objective
 
@@ -66,6 +66,17 @@ For an OVHcloud web hosting plan, you can simply tick `Authorise OVHcloud web ho
 ![Web Cloud Databases](images/web-cloud-databases-add-ip-step3.png){.thumbnail}
 
 ### Modify your Web Cloud Databases offer
+
+> [!warning]
+> 
+> If your Cloud Databases Web hosting plan is linked to a **Performance** Web hosting plan, you will need to unlink the Cloud Databases Web hosting plan from your **Performance** Web hosting plan beforehand in order to switch to a higher plan.
+>
+> To link a Cloud Databases web hosting plan to a **Performance** web hosting plan, go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). Click on the `Web Cloud`{.action} tab then on the relevant hosting plan in the `Hosting`{.action} tab in the left-hand column. 
+>
+> On the new `General information`{.action} page that appears, you will see a box labelled `Configuration`{.action} in the centre of the page. To the right of the mention `Web Cloud Databases`{.action}, click on the `...`{.action} then `Unlink`{.action}. Select the shortest renewal duration, then continue until you confirm your order.
+>
+> **This action cannot be undone, and the Cloud Databases Web hosting plan will then be billed separately from your Performance Web Hosting plan.**
+>
 
 To modify the solution for your Web Cloud Databases instance, go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). Click the `Web Cloud` tab, and then click `Web Cloud Databases`{.action}. Select the name of your database server.
 
