@@ -90,7 +90,7 @@ Wszystkie symbole X zastąp następującymi informacjami:
 > 
 >Jeśli zmienisz kodowanie na Unicode, Twoja wiadomość SMS będzie mogła zawierać maksymalnie 70 znaków (160 w przypadku kodowania 7-bitowego).
 >
->Aby uzyskać więcej informacji na temat dozwolonych znaków z kodowaniu 7-bitowym, zapoznaj się z [załącznikiem](./#zalacznik_2) na dole tego przewodnika.
+>Aby uzyskać więcej informacji na temat dozwolonych znaków z kodowaniu 7-bitowym, zapoznaj się z [załącznikiem](./#zalacznik) na dole tego przewodnika.
 >
 
 ### Etap 3: analiza wysyłki

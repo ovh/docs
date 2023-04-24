@@ -42,7 +42,7 @@ Si votre texte contient 2 sauts de ligne (double /n) ou si vous écrivez le para
 Pour envoyer un SMS contenant ces éléments, il vous faudra le faire depuis l'espace client ou via les API.
 >
 
-Pour plus d'informations sur les caractères autorisés en encodage 7bit, reportez-vous à [l'annexe](./#annexe_1) en bas de ce guide.
+Pour plus d'informations sur les caractères autorisés en encodage 7bit, reportez-vous à [l'annexe](./#annexe) en bas de ce guide.
 
 > [!warning]
 >

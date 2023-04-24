@@ -4,14 +4,14 @@ excerpt: Cómo cambiar la fórmula de suscripción de un plan de hosting de OVHc
 slug: how_to_change_web_hosting_offer
 section: Optimización del sitio web
 order: 02
-updated: 2023-01-03
+updated: 2023-04-19
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 15/02/2023**
+**Última actualización: 19/04/2023**
 
 ## Objetivo
 
@@ -55,7 +55,7 @@ A continuación, seleccione la nueva suscripción y la duración de la misma. Ac
 > **En primer lugar**, deberá migrar su alojamiento desde la fórmula *Performance 2* al plan *Performance 1* y **después** al plan *Profesional*.
 >
 
-Antes de realizar el cambio a una gama inferior, compruebe los siguientes 6 elementos:
+Antes de realizar el cambio a una gama inferior, compruebe los siguientes 7 elementos:
 
 #### 1 - Número de sitios
 
@@ -111,9 +111,19 @@ Para migrar a un plan de hosting [Personal](https://www.ovhcloud.com/es-es/web-h
 
 En la sección `Correo electrónico`{.action} del área de cliente, seleccione el servicio correspondiente y haga clic en `...`{.action} a la derecha del `Producto`{.action}. Haga clic en `Cambiar de plan`{.action}.
 
+#### 7 - Usuarios FTP
+
+Antes de cambiar el alojamiento a un plan inferior, asegúrese de que el nuevo plan incluye suficientes usuarios FTP.
+
+Puede consultar el número de usuarios FTP en el área de cliente de OVHcloud. Acceda a la sección `Web Cloud`{.action} y seleccione el alojamiento correspondiente en la sección `Alojamientos`{.action} de la columna izquierda. A continuación, abra la pestaña `FTP-SSH`{.action}. En la parte inferior de la página siguiente, una tabla muestra todos los usuarios FTP creados para el alojamiento web.
+
+Para eliminar usuarios FTP, haga clic en el botón `...`{.action} a la derecha del usuario FTP que desea eliminar y, seguidamente, haga clic en `Eliminar`{.action}.
+
+![user FTP deletion](images/userFTP.png){.thumbnail}
+
 #### Finalización
 
-Una vez que haya comprobado estos 6 elementos, puede realizar el [cambio de producto](#modify).
+Una vez que haya comprobado estos 7 elementos, puede realizar el [cambio de producto](#modify).
 
 ### Casos particulares
 

@@ -154,7 +154,7 @@ Ao aplicar estas boas práticas, poderá voltar a uma versão anterior saudável
 ## Quer saber mais? <a name="go-further"></a>
 
 - [Site oficial da WordPress](https://wordpress.org){.external}
-- [Mais informações sobre os backups do seu alojamento web](https://docs.ovh.com/pt/hosting/especificidades-tecnicas-alojamentos-partilhados/#informacoes-sobre-backups-automaticos_1)
+- [Mais informações sobre os backups do seu alojamento web](https://docs.ovh.com/pt/hosting/especificidades-tecnicas-alojamentos-partilhados/#informacoes-sobre-backups-automaticos)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 

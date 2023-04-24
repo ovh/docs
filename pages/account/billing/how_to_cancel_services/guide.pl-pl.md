@@ -224,7 +224,7 @@ Aby zrezygnować z usługi [Hosted Exchange](https://www.ovhcloud.com/pl/emails/
 
 #### Private Exchange <a name="private"></a>
 
-Aby zrezygnować z usługi [Private Exchange](https://www.ovhcloud.com/pl/emails/private-exchange/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-fakturowanie-exchange/#usuwanie-kont_1).
+Aby zrezygnować z usługi [Private Exchange](https://www.ovhcloud.com/pl/emails/private-exchange/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-fakturowanie-exchange/#usuwanie-kont).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 

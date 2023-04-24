@@ -53,7 +53,7 @@ Sprawdź bezpieczeństwo komputera Windows, Mac lub Linux:
 
 Aby zabezpieczyć Twoje konto klienta, [włącz weryfikację dwuetapową](../../customer/zabezpieczenie-konta-za-pomoca-2FA/) i postępuj zgodnie z instrukcjami zawartymi w tym przewodniku](../../customer/identyfikator_klienta/).
 
-Pamiętaj, aby zaktualizować [dane przypisane do Twojego konta klienta](../../customer/identyfikator_klienta/#jak-zarzadzac-danymi-osobowymi_1) i dodać do niego zapasowy **e-mail**.<br>
+Pamiętaj, aby zaktualizować [dane przypisane do Twojego konta klienta](../../customer/identyfikator_klienta/#jak-zarzadzac-danymi-osobowymi) i dodać do niego zapasowy **e-mail**.<br>
 W przypadku utraty danych do logowania i/lub niedostępności głównego adresu e-mail przypisanego do Twojego konta klienta OVHcloud, potrzebujemy wiadomości e-mail zapasowej lub aktualnych danych osobowych, które pomogą Ci w znalezieniu dostępu do Twoich rozwiązań.
 
 ### Etap 3: wykonuj regularnie kopie zapasowe swojej strony <a name="backup"></a>

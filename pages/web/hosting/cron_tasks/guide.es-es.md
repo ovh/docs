@@ -72,7 +72,7 @@ La interfaz ofrece dos modos para configurar la frecuencia de la tarea. Utilice 
 |Introduzca valores numéricos como en una *crontab*. Los asteriscos indican cada valor del período, lo que significa que la tarea se ejecutaría continuamente **una vez por hora todos los días** en este ejemplo.|
 |![cron frequency](images/cron-jobs-4.png){.thumbnail}|
 
-Puede cambiar entre ambos modos durante la configuración para ver los cambios en consecuencia. Asimismo, tenga en cuenta las [limitaciones al planificar una tarea en un alojamiento web](./#limitaciones-de-las-tareas-planificadas-en-su-alojamiento-web_1).
+Puede cambiar entre ambos modos durante la configuración para ver los cambios en consecuencia. Asimismo, tenga en cuenta las [limitaciones al planificar una tarea en un alojamiento web](./#limitaciones-de-las-tareas-planificadas-en-su-alojamiento-web).
 
 ![cron control panel](images/cron-jobs-5.gif){.thumbnail}
 

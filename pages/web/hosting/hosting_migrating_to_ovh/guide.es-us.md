@@ -201,7 +201,7 @@ Una vez que haya migrado sus antiguas direcciones de correo a OVHcloud, reconfig
 
 #### Para las cuentas de correo "MX Plan": 
 
-Todos los parámetros de configuración se encuentran en la guía "[Información general sobre los MX Plan](https://docs.ovh.com/us/es/emails/primeros-pasos-correo-compartido/#32-configurar-la-direccion-de-correo-en-un-dispositivo_1)". También encontrará enlaces a las guías de configuración personalizadas para los principales programas de mensajería.
+Todos los parámetros de configuración se encuentran en la guía "[Información general sobre los MX Plan](https://docs.ovh.com/us/es/emails/primeros-pasos-correo-compartido/#32-configurar-la-direccion-de-correo-en-un-dispositivo)". También encontrará enlaces a las guías de configuración personalizadas para los principales programas de mensajería.
 
 #### Para las cuentas de correo "Exchange":
 

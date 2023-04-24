@@ -63,7 +63,7 @@ Po otworzeniu terminala użyj następującego polecenia, zastępując elementy "
 ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 ```
 
-Po wysłaniu polecenia zostaniesz poproszony(-a) o wpisanie hasła użytkownika SSH. Po zalogowaniu przejdź do etapu kolejnego: „[Operacje na przestrzeni dyskowej za pomocą SSH](./#etap-4-przeprowadzanie-operacji-na-przestrzeni-dyskowej-z-wykorzystaniem-ssh_1)”.
+Po wysłaniu polecenia zostaniesz poproszony(-a) o wpisanie hasła użytkownika SSH. Po zalogowaniu przejdź do etapu kolejnego: „[Operacje na przestrzeni dyskowej za pomocą SSH](./#etap-4-przeprowadzanie-operacji-na-przestrzeni-dyskowej-z-wykorzystaniem-ssh)”.
 
 ![usessh](images/use-ssh-step3.png){.thumbnail}
 

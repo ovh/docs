@@ -77,7 +77,7 @@ Sur la page, dans la partie « Configuration générale », assurez-vous de déc
 Maintenant que vous êtes en possession de votre bloc IP, vous pouvez le configurer dans votre box OVHcloud. Poursuivez selon le modèle que vous possédez :
 
 - [3.1 Configuration sur une box Technicolor ou Thomson](./#31-configuration-sur-une-box-technicolor-ou-thomson){.external} (**excepté pour le modèle Technicolor TG799vac**).
-- [3.2 Configuration sur une box Zyxel](./#32-configuration-sur-une-box-zyxel_1){.external}.
+- [3.2 Configuration sur une box Zyxel](./#32-configuration-sur-une-box-zyxel){.external}.
 
 > [!primary]
 >
@@ -110,7 +110,7 @@ Permet de récupérer l'état d'activation du bloc IP /29.
 
 Permet d'activer ou de désactiver la configuration du bloc IP /29 sur votre box OVHcloud Technicolor ou Thomson compatible.
 
-Une fois configurée, poursuivez vers l'étape 4 « [Configurer les adresses IP sur vos équipements](./#etape-4-configurer-les-adresses-ip-sur-vos-equipements_1){.external} ».
+Une fois configurée, poursuivez vers l'étape 4 « [Configurer les adresses IP sur vos équipements](./#etape-4-configurer-les-adresses-ip-sur-vos-equipements){.external} ».
 
 ##### 3.1.2 Via un client Telnet
 
@@ -179,7 +179,7 @@ Sauvegardez les changements réalisés. Cette configuration restera active même
 saveall
 ```
 
-Le paramétrage maintenant effectué, poursuivez vers l'étape 4 « [Configurer les adresses IP sur vos équipements](./#etape-4-configurer-les-adresses-ip-sur-vos-equipements_1){.external} ».
+Le paramétrage maintenant effectué, poursuivez vers l'étape 4 « [Configurer les adresses IP sur vos équipements](./#etape-4-configurer-les-adresses-ip-sur-vos-equipements){.external} ».
 
 #### 3.2 Configuration sur une box Zyxel
 

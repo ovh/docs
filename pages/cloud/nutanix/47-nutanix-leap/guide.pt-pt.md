@@ -514,6 +514,6 @@ The virtual machine that is a member of the disaster recovery plan will boot to 
 
 [OVHcloud vRack](https://www.ovh.pt/solucoes/vrack/)
 
-[Nutanix Leap documentation](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:Leap-Xi-Leap-Admin-Guide-v6_1)
+[Nutanix Leap documentation](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:Leap-Xi-Leap-Admin-Guide-v6)
 
 Join our community of users on <https://community.ovh.com/en/>.

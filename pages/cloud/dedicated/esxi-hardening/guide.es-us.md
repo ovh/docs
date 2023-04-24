@@ -66,7 +66,7 @@ Recordatorio de su definición y su principio de funcionamiento:
 > 
 > Si se activa este sistema y desea conectarse a su ESXi inmediatamente, deberá desbloquear manualmente la cuenta de administrador.
 >
-> Para ello, deberá [reiniciar](https://docs.ovh.com/us/es/dedicated/primeros-pasos-servidor-dedicado/#reinicio-del-servidor-dedicado_1) el servidor ESXi desde el área de cliente de OVHcloud.
+> Para ello, deberá [reiniciar](https://docs.ovh.com/us/es/dedicated/primeros-pasos-servidor-dedicado/#reinicio-del-servidor-dedicado) el servidor ESXi desde el área de cliente de OVHcloud.
 > 
 
 Puede consultar el historial de los logs de acceso en los siguientes archivos desde un intérprete de órdenes SSH:

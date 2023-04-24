@@ -28,12 +28,12 @@ Dans ce tutoriel, nous allons apprendre à installer et configurer ces quatre br
 
 ### Ce que vous devez avoir
 
-- Un serveur ou une machine virtuelle sous Linux (un [VPS](https://www.ovhcloud.com/fr/vps/){.external}, un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/){.external} ou une [instance Public Cloud OVH](https://www.ovhcloud.com/fr/public-cloud/){.external}).
+- Un serveur ou une machine virtuelle sous Linux (un [VPS](https://www.ovhcloud.com/fr/vps/){.external}, un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/){.external} ou une [instance Public Cloud OVHcloud](https://www.ovhcloud.com/fr/public-cloud/){.external}).
 - Les droits administrateur sur ce serveur (être « root »).
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
+> OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
 >

@@ -4,10 +4,10 @@ excerpt: Find out how to change the subscription offer for your OVHcloud Web Hos
 slug: how_to_change_web_hosting_offer
 section: Optimise your website
 order: 02
-updated: 2023-01-03
+updated: 2023-04-19
 ---
 
-**Last updated 15rd February 2023**
+**Last updated 19th April 2023**
 
 ## Objective
 
@@ -50,7 +50,7 @@ Then select your new subscription and its duration. Confirm the corresponding co
 > For example, you cannot switch from *Performance 2* to *Professional* in a single operation.
 > You will **first** need to downgrade your web hosting plan from the *Performance 2* plan to the *Performance 1* plan, **and then** to the *Professional* plan.
 
-Before you make your switch to a lower range, check the following 6 items:
+Before you make your switch to a lower range, check the following 7 items:
 
 #### 1 - Number of sites
 
@@ -106,9 +106,19 @@ To set up your hosting plan on a [Personal](https://www.ovhcloud.com/en-ie/web-h
 
 In the `Emails`{.action} section of your Control Panel, select the solution concerned, then click on `...`{.action} to the right of `Solution`{.action}. Next, click `Change solution`{.action}.
 
+#### 7 - FTP users
+
+Before switching your hosting plan to a lower plan, ensure that the new plan has enough FTP users.
+
+You can view the number of FTP users in your OVHcloud Control Panel. Go to the `Web Cloud`{.action} section, then select the plan concerned in the `Hosting plans`{.action} section on the left-hand side. On the page that appears, click on the `FTP-SSH`{.action} tab. In the lower part of the next page, a table lists all FTP users created for your Web Hosting plan.
+
+To delete FTP users, click the `...`{.action} to the right of the FTP user you want to delete, then `Delete`{.action}.
+
+![user FTP deletion](images/userFTP.png){.thumbnail}
+
 #### Completion
 
-Once you have checked these 6 elements, you can [change your plan](#modify).
+Once you have checked these 7 elements, you can [change your plan](#modify).
 
 ### Special cases
 

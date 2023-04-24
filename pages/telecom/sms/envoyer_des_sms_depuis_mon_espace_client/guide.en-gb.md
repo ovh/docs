@@ -35,7 +35,7 @@ Once you have landed on the sending page for SMS messages, you will have differe
 
 For the SMS sender (1), you can either select a short number that allows recipients to send back replies (available for OVHcloud accounts in France only), or you can set an alpha-numeric sender name.
 Next, enter the recipient phone number (2) in international format (+44xxxxxxxxxx).
-For further information on how to create a sender, please refer to [Step 3: Choose an SMS sender](./#step-3-choose-an-sms-sender_1).
+For further information on how to create a sender, please refer to [Step 3: Choose an SMS sender](./#step-3-choose-an-sms-sender).
 
 You can also send SMS messages to multiple recipients. There are two methods for doing this:
 

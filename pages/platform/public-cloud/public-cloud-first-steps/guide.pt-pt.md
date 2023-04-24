@@ -136,7 +136,7 @@ A chave está pronta quando a barra de progressão estiver completa.
 
 ![save key](images/puttygen_03a.png){.thumbnail}
 
-Nesta janela pode selecionar e copiar a chave pública para a guardar na Área de Cliente OVHcloud durante o [na etapa 2](./#etapa-2-armazenamento-de-chaves-publicas-na-area-de-cliente-ovhcloud_1).
+Nesta janela pode selecionar e copiar a chave pública para a guardar na Área de Cliente OVHcloud durante o [na etapa 2](./#etapa-2-armazenamento-de-chaves-publicas-na-area-de-cliente-ovhcloud).
 
 Guarde ambas as chaves sob a forma de ficheiro e use a opção de criação de uma frase de acesso. Já que só será exigida uma chave privada correspondente para o acesso à instância de Public Cloud a partir do seu posto de trabalho, neste ponto impõe-se a aplicação de medidas de segurança adequadas. Quando se estabelecer uma conexão à instância, será preciso introduzir uma frase de acesso.
 
@@ -196,7 +196,7 @@ Neste passo, deve escolher um sistema operativo para a instância. As imagens di
 Se escolher um sistema operativo que requeira uma licença paga, os custos serão automaticamente incluídos na faturação mensal ou horária.
 >
 
-Este passo também exige que seja adicionada uma chave SSH (com exceção das instâncias Windows), seja colando a chave diretamente através de `Adicionar uma chave`{.action}, seja escolhendo-a da lista, partindo do princípio de que a armazenou previamente na Área de Cliente durante o [etapa 2](./#etapa-2-armazenamento-de-chaves-publicas-na-area-de-cliente-ovhcloud_1).
+Este passo também exige que seja adicionada uma chave SSH (com exceção das instâncias Windows), seja colando a chave diretamente através de `Adicionar uma chave`{.action}, seja escolhendo-a da lista, partindo do princípio de que a armazenou previamente na Área de Cliente durante o [etapa 2](./#etapa-2-armazenamento-de-chaves-publicas-na-area-de-cliente-ovhcloud).
 
 ![key select](images/instance-creation-03-2022.png){.thumbnail}
 

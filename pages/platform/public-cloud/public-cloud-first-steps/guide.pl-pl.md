@@ -136,7 +136,7 @@ Klucz jest gotowy po wypełnieniu paska postępu.
 
 ![save key](images/puttygen_03a.png){.thumbnail}
 
-W tym oknie można wybrać i skopiować klucz publiczny, aby go zapisać w Panelu klienta OVHcloud — w [kroku 2](./#krok-2-przechowywanie-kluczy-publicznych-w-panelu-klienta-ovhcloud_1).
+W tym oknie można wybrać i skopiować klucz publiczny, aby go zapisać w Panelu klienta OVHcloud — w [kroku 2](./#krok-2-przechowywanie-kluczy-publicznych-w-panelu-klienta-ovhcloud).
 
 Zapisz oba klucze w plikach i wpisz hasło w odpowiednich polach. Ponieważ klucz prywatny będzie wymagany w celu uzyskania dostępu do instancji Public Cloud z działającego urządzenia, należy zastosować odpowiednie środki bezpieczeństwa. Hasło należy podać po nawiązaniu połączenia z instancją.
 
@@ -196,7 +196,7 @@ Trzecia opcja służy do wyboru systemu operacyjnego instancji. Obrazy dostępne
 Jeśli wybierzesz system operacyjny, który wymaga płatnej licencji, jej koszty zostaną automatycznie uwzględnione w rozliczeniu miesięcznym lub godzinowym.
 >
 
-W tym kroku należy też dodać klucz SSH (poza instancjami z systemem Windows) przez wklejenie bezpośrednio za pomocą przycisku `Dodaj klucz`{.action} lub wybranie z listy, o ile klucz został zapisany w Panelu klienta w [kroku 2](./#krok-2-przechowywanie-kluczy-publicznych-w-panelu-klienta-ovhcloud_1).
+W tym kroku należy też dodać klucz SSH (poza instancjami z systemem Windows) przez wklejenie bezpośrednio za pomocą przycisku `Dodaj klucz`{.action} lub wybranie z listy, o ile klucz został zapisany w Panelu klienta w [kroku 2](./#krok-2-przechowywanie-kluczy-publicznych-w-panelu-klienta-ovhcloud).
 
 ![key select](images/instance-creation-03-2022.png){.thumbnail}
 

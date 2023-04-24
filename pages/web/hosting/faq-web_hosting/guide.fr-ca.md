@@ -4,10 +4,10 @@ excerpt: Retrouvez les questions les plus fréquemment posées sur les hébergem
 slug: faq-hebergement
 section: Premiers pas
 order: 05
-updated: 2022-11-28
+updated: 2023-04-24
 ---
 
-**Dernière mise à jour le 07/04/2022**
+**Dernière mise à jour le 24/04/2023**
 
 ## Gestion de votre offre
 
@@ -50,6 +50,21 @@ Consultez le guide [Partager son hébergement entre plusieurs sites](https://doc
 Lorsque vous résiliez ou supprimez votre hébergement mutualisé, l'offre e-mail qui est attachée est également résiliée. Pour conserver vos adresses e-mails, il vous faudra détacher l'offre e-mail avant la résiliation de l'hébergement.<br>
 
 Pour cela, dirigez-vous sur l'onglet `Informations générales`{.action} de votre hébergement. Dans la section **Configuration**, cliquez sur le bouton `...`{.action} à droite de « **Adresses e-mails** ». Cliquez sur `Délier mon option e-mail`{.action} et suivez les instructions pour commander une offre e-mail indépendante qui vous permettra de conserver vos adresses e-mails déjà créées.
+
+### Comment augmenter la RAM d'une offre Web Cloud Databases liée à un hébergement mutualisé « Performance » ?
+
+Pour augmenter la RAM d'une offre Web Cloud Databases liée à un hébergement mutualisé **Performance**, vous devrez obligatoirement et préalablement délier l'offre Web Cloud Databases de votre hébergement **Performance** pour basculer sur une offre supérieure.
+
+
+Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Rendez-vous dans la partie `Web Cloud` puis sur l'hébergement concerné à gauche dans l'onglet `Hébergements`{.action}. 
+
+Sur la page `Informations générales`{.action} qui s'affiche, vous retrouvez un encadré intitulé `Configuration`{.action} au centre de la page. A droite de la mention `Web Cloud Databases`{.action}, cliquez sur le bouton `...`{.action} puis sur `Délier`{.action}. Choisissez la durée du renouvellement la plus courte puis poursuivez jusqu'à la validation de la commande.
+
+
+Retrouvez plus d'informations dans notre guide sur la ["Configuration d'une offre Web Cloud Databases"](/pages/web/clouddb/configure-database-server#modifier-votre-offre-web-cloud-databases)
+
+
+**Cette action est irréversible et l'offre Web Cloud Databases sera ensuite facturée indépendamment de votre hébergement web Performance.**
 
 ## Diagnostic
 

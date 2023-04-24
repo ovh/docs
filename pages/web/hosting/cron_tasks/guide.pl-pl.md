@@ -72,7 +72,7 @@ Interfejs pozwala na skonfigurowanie częstotliwości zadania w dwóch trybach. 
 |Wprowadź wartości liczbowe jak w *crontab*. Gwiazdki wskazują każdą wartość okresu, co oznacza, że zadanie będzie wykonywane stale **raz na godzinę każdego dnia** w tym przykładzie.|
 |![cron frequency](images/cron-jobs-4.png){.thumbnail}|
 
-Możesz przełączyć między dwoma trybami podczas konfiguracji, aby wyświetlić odpowiednie zmiany. Pamiętaj również o [ograniczeniach podczas planowania zadania na hostingu WWW](./#ograniczenia-zaplanowanych-zadan-na-twoim-hostingu_1).
+Możesz przełączyć między dwoma trybami podczas konfiguracji, aby wyświetlić odpowiednie zmiany. Pamiętaj również o [ograniczeniach podczas planowania zadania na hostingu WWW](./#ograniczenia-zaplanowanych-zadan-na-twoim-hostingu).
 
 ![cron control panel](images/cron-jobs-5.gif){.thumbnail}
 

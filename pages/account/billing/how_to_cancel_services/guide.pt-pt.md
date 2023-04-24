@@ -224,7 +224,7 @@ Para rescindir a sua oferta [Hosted Exchange](https://www.ovhcloud.com/pt/emails
 
 #### Private Exchange <a name="private"></a>
 
-Para rescindir a sua oferta [Private Exchange](https://www.ovhcloud.com/pt/emails/private-exchange/), siga as instruções deste [guia](https://docs.ovh.com/pt/microsoft-collaborative-solutions/gestao-faturacao-exchange/#eliminar-contas_1).
+Para rescindir a sua oferta [Private Exchange](https://www.ovhcloud.com/pt/emails/private-exchange/), siga as instruções deste [guia](https://docs.ovh.com/pt/microsoft-collaborative-solutions/gestao-faturacao-exchange/#eliminar-contas).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 

@@ -42,7 +42,7 @@ El panel de control que se le presenta contiene información importante sobre su
 
 Para la gama actual de VPS, lea detenidamente la sección siguiente de esta guía, **Primeros pasos (gama actual de VPS)**. 
 
-Para un modelo de VPS más antiguo, siga leyendo esta guía haciendo clic en el enlace siguiente: [Primeros pasos (antigua gama de VPS)](./#primeros-pasos-antigua-gama-de-vps_1).
+Para un modelo de VPS más antiguo, siga leyendo esta guía haciendo clic en el enlace siguiente: [Primeros pasos (antigua gama de VPS)](./#primeros-pasos-antigua-gama-de-vps).
 
 ### Primeros pasos (gama actual de VPS)
 
@@ -84,7 +84,7 @@ passwd: password updated successfully
 
 #### Activación de las conexiones root
 
-Por motivos de seguridad, la conexión con el usuario root está desactivada por defecto. Si debe autorizar este tipo de conexiones, consulte las instrucciones de [esta guía](https://docs.ovh.com/es/vps/root-password/#activar-la-contrasena-root_1).
+Por motivos de seguridad, la conexión con el usuario root está desactivada por defecto. Si debe autorizar este tipo de conexiones, consulte las instrucciones de [esta guía](https://docs.ovh.com/es/vps/root-password/#activar-la-contrasena-root).
 
 #### Reinicio de su VP (gama actual de VPS) <a name="reboot-current-range"></a>
 

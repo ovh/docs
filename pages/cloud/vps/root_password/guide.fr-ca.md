@@ -59,7 +59,7 @@ passwd: password updated successfully
 > Sur une distribution Linux, le mot de passe que vous tapez **n'apparaîtra pas**.
 >
 
-Si vous devez autoriser la connexion en tant qu'utilisateur root, suivez les étapes de [cette section](./#activer-le-mot-de-passe-root_1).
+Si vous devez autoriser la connexion en tant qu'utilisateur root, suivez les étapes de [cette section](./#activer-le-mot-de-passe-root).
 
 ### Modification du mot de passe si vous l'avez perdu
 

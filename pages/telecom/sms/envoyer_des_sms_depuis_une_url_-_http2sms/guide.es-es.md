@@ -89,7 +89,7 @@ Sustituya las «X» por los valores correspondientes:
 > 
 >Si utiliza la codificación Unicode, el tamaño máximo del SMS se reducirá a 70 caracteres, frente a los 160 de la codificación de 7 bits.
 >
->Para más información sobre los caracteres autorizados con codificación de 7 bits, consulte el [anexo](https://docs.ovh.com/es/sms/enviar-sms-desde-una-url/#anexo_2) que encontrará al final de esta guía.
+>Para más información sobre los caracteres autorizados con codificación de 7 bits, consulte el [anexo](https://docs.ovh.com/es/sms/enviar-sms-desde-una-url/#anexo) que encontrará al final de esta guía.
 >
 
 

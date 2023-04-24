@@ -127,7 +127,7 @@ Możesz to zrobić na dwa sposoby:
 
 - utworzyć przekierowanie w interfejsie webmail zgodnie z regułami skrzynki odbiorczej. W tym celu zapoznaj się z naszym przewodnikiem [Reguły skrzynki odbiorczej w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/tworzenie-regul-skrzynki-odbiorczej-w-owa/#przyklad-1-przekierowanie-e-maili-na-inny-adres).
 
-- utworzyć przekierowanie w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Metoda ta pozwala na przykład na utworzenie aliasu, czyli przekierowanie nieistniejącego konta e-mail na istniejący adres e-mail. W tym celu zapoznaj się z naszym przewodnikiem [Korzystanie z przekierowań e-mail](https://docs.ovh.com/pl/emails/hosting_www_przekierowania_e-mail/#nowa-wersja-uslugi-mx-plan_1).
+- utworzyć przekierowanie w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Metoda ta pozwala na przykład na utworzenie aliasu, czyli przekierowanie nieistniejącego konta e-mail na istniejący adres e-mail. W tym celu zapoznaj się z naszym przewodnikiem [Korzystanie z przekierowań e-mail](https://docs.ovh.com/pl/emails/hosting_www_przekierowania_e-mail/#nowa-wersja-uslugi-mx-plan).
 
 ##### **Autoresponder**
 

@@ -188,7 +188,7 @@ Questa anomalia può avere diverse cause:
 
 - Di recente hai effettuato una modifica nella tua zona o sui tuoi server [DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#capire-il-concetto-di-dns) o un [trasferimento di domini](../../domains/trasferire-un-dominio-generico-in-ovh/). Attendi il completamento di queste operazioni (48 ore per la modifica dei tuoi DNS). Riavvia anche i tuoi dispositivi (PC, smartphone, box, ecc...) e svuota la cache del tuo browser.
 
-- Il tuo dominio è sempre associato al tuo hosting precedente. In questo caso, modifica la tua [Zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#modifica-la-zona-dns-ovhcloud-del-dominio_1) o i tuoi [Server DNS](../../domains/web_hosting_gestisci_il_tuo_server_dns/#modifica-i-server-dns) o contatta il tuo precedente hosting provider.
+- Il tuo dominio è sempre associato al tuo hosting precedente. In questo caso, modifica la tua [Zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#modifica-la-zona-dns-ovhcloud-del-dominio) o i tuoi [Server DNS](../../domains/web_hosting_gestisci_il_tuo_server_dns/#modifica-i-server-dns) o contatta il tuo precedente hosting provider.
 
 ### La password "Amministratore" di accesso al "back office" del tuo modulo in 1 click non funziona più <a name="adminpassword"></a>
 

@@ -210,7 +210,7 @@ Depois de fazer as suas escolhas, clique em `Criar`{.action} para lançar o proc
 
 #### Criar uma rede privada a partir da APIv6 OVHcloud <a name="vlansetup"></a>
 
-Para criar uma VLAN a partir da APIv6 OVHcloud, clique [aqui](https://docs.ovh.com/pt/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) (EN), para consultar o guia específico deste método.
+Para criar uma VLAN a partir da APIv6 OVHcloud, clique [aqui](https://docs.ovh.com/pt/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack) (EN), para consultar o guia específico deste método.
 
 #### Criar uma rede privada através do CLI OpenStack
 
@@ -270,7 +270,7 @@ Consulte o guia: [Criar uma instância a partir da Área de Cliente](https://doc
 
 ##### **A partir da APIv6 OVHcloud**
 
-Clique [aqui](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack_1) (EN), para consultar o guia específico deste método.
+Clique [aqui](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack) (EN), para consultar o guia específico deste método.
 
 ##### **A partir da API OpenStack**
 
@@ -467,7 +467,7 @@ Na pop-up que aparecer, selecione a ou as redes privadas a associar à sua inst�
 
 ##### **Gestão das interfaces de rede a partir da APIv6 OVHcloud**
 
-Clique [aqui](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#in-case-of-an-existing-instance_1) (EN), para consultar o guia específico deste método.
+Clique [aqui](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#in-case-of-an-existing-instance) (EN), para consultar o guia específico deste método.
 
 ##### **Gestão das interfaces de rede a partir do OpenStack Horizon**
 

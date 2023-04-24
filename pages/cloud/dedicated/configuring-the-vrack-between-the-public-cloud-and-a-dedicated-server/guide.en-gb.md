@@ -69,7 +69,7 @@ If you need assistance, follow this guide first: [Creating your first Public Clo
 
 #### In case of an existing instance
 
-You can attach an existing instance to a private network. For more information, please refer to [this section](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#cases-of-an-already-existing-instance_2) of the corresponding guide.
+You can attach an existing instance to a private network. For more information, please refer to [this section](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#cases-of-an-already-existing-instance) of the corresponding guide.
 
 ### Create a VLAN ID
 
@@ -77,7 +77,7 @@ For both services to communicate with each other, they have to be tagged with th
 
 #### Using the default VLAN ID
 
-By default, the VLAN ID for dedicated servers is **0**. To use this VLAN ID, it will be necessary to tag the private network linked to your instance with VLAN **0**. To do this, you will need to go through the [OVHcloud APIv6](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1).
+By default, the VLAN ID for dedicated servers is **0**. To use this VLAN ID, it will be necessary to tag the private network linked to your instance with VLAN **0**. To do this, you will need to go through the [OVHcloud APIv6](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack).
 
 
 > [!primary]

@@ -28,7 +28,7 @@ Se hai ricevuto un’email che ti informa che uno dei tuoi indirizzi email è bl
 
 Accedi alla sezione `Webcloud`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action}.
 
-Clicca sulla scheda `Account email`{.action} della tua piattaforma. Se la colonna “stato” dell’indirizzo email interessato indica “bloccato”, clicca sui tre puntini `...`{.action} a destra in corrispondenza dell’account e poi su `Sblocca`{.action}. A questo punto punto, passa allo [Step 2](./#step-2-accedi-al-ticket-di-assistenza_1){.external} della guida.
+Clicca sulla scheda `Account email`{.action} della tua piattaforma. Se la colonna “stato” dell’indirizzo email interessato indica “bloccato”, clicca sui tre puntini `...`{.action} a destra in corrispondenza dell’account e poi su `Sblocca`{.action}. A questo punto punto, passa allo [Step 2](./#step-2-accedi-al-ticket-di-assistenza){.external} della guida.
 
 ![spam](images/blocked-for-SPAM-01-01.png){.thumbnail}
 
@@ -36,7 +36,7 @@ Clicca sulla scheda `Account email`{.action} della tua piattaforma. Se la colonn
 
 Accedi alla sezione `Webcloud`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > Exchange.
 
-Clicca sulla scheda `Account email`{.action} della tua piattaforma. Se la colonna “stato” a destra dell’indirizzo email in questione indica “Spam”, clicca su questa voce e poi su `Rispondi al ticket`{.action}. Quindi passa allo [Step 2](./#step-2-accedi-al-ticket-di-assistenza_1){.external} della guida.
+Clicca sulla scheda `Account email`{.action} della tua piattaforma. Se la colonna “stato” a destra dell’indirizzo email in questione indica “Spam”, clicca su questa voce e poi su `Rispondi al ticket`{.action}. Quindi passa allo [Step 2](./#step-2-accedi-al-ticket-di-assistenza){.external} della guida.
 
 ![spam](images/blocked-for-SPAM-01-02.png){.thumbnail}
 
@@ -44,7 +44,7 @@ Clicca sulla scheda `Account email`{.action} della tua piattaforma. Se la colonn
 
 Accedi alla sezione `Webcloud`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). e seleziona il tuo servizio nella sezione `Email`{.action}.
 
-Clicca sulla scheda `Account email`{.action} della tua piattaforma. Se la colonna “stato” a destra dell’indirizzo email in questione indica “Spam”, clicca su questa voce e poi su `Rispondi al ticket`{.action}. A questo punto, passa allo [Step 2](./#step-2-accedi-al-ticket-di-assistenza_1){.external} della guida.
+Clicca sulla scheda `Account email`{.action} della tua piattaforma. Se la colonna “stato” a destra dell’indirizzo email in questione indica “Spam”, clicca su questa voce e poi su `Rispondi al ticket`{.action}. A questo punto, passa allo [Step 2](./#step-2-accedi-al-ticket-di-assistenza){.external} della guida.
 
 ![spam](images/blocked-for-SPAM-01-03.png){.thumbnail}
 

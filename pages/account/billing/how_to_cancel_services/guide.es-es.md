@@ -227,7 +227,7 @@ Para dar de baja su servicio [Hosted Exchange](https://www.ovhcloud.com/es-es/em
 
 #### Private Exchange <a name="private"></a>
 
-Para dar de baja su solución [Private Exchange](https://www.ovhcloud.com/es-es/emails/private-exchange/), siga las indicaciones de esta [guía](https://docs.ovh.com/es/microsoft-collaborative-solutions/gestion-de-la-facturacion-exchange/#eliminar-cuentas_1).
+Para dar de baja su solución [Private Exchange](https://www.ovhcloud.com/es-es/emails/private-exchange/), siga las indicaciones de esta [guía](https://docs.ovh.com/es/microsoft-collaborative-solutions/gestion-de-la-facturacion-exchange/#eliminar-cuentas).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 

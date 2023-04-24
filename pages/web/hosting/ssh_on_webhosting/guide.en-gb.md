@@ -63,7 +63,7 @@ Once you have opened the terminal, use the following command, replacing the ‘y
 ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 ```
 
-When you run the command, you will be prompted to enter the SSH user password. Once you have connected, follow the next step: [Interact with your storage space via SSH](./#step-4-interact-with-your-storage-space-via-ssh_1).
+When you run the command, you will be prompted to enter the SSH user password. Once you have connected, follow the next step: [Interact with your storage space via SSH](./#step-4-interact-with-your-storage-space-via-ssh).
 
 ![usessh](images/use-ssh-step3.png){.thumbnail}
 

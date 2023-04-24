@@ -4,7 +4,8 @@ excerpt: Retrouvez les questions les plus fréquemment posées sur les hébergem
 slug: faq-hebergement
 section: Premiers pas
 order: 05
-updated: 2022-11-28
+updated: 2023-04-21
+
 ---
 
 **Dernière mise à jour le 15/02/2023**
@@ -62,7 +63,23 @@ Pour cela, dirigez-vous sur l'onglet `Informations générales`{.action} de votr
 Les hébergements mutualisés **Performance** comprennent une offre Web Cloud Databases activable gratuitement.
 Lorsque vous résiliez ou supprimez votre hébergement mutualisé **Performance**, l'offre Web Cloud Databases qui est attachée est également résiliée. Pour conserver votre Web Cloud Databases, il vous faudra le détacher avant la résiliation de l'hébergement.<br>
 
-Pour cela, cliquez sur l'onglet `Informations générales`{.action} de votre hébergement. Dans la section **Configuration**, cliquez sur le bouton `...`{.action} à droite de « **Base de données Privée** ». Cliquez sur `Délier`{.action} et suivez les instructions afin de commander une offre Web Cloud Databases indépendante, ce qui vous permettra de conserver votre Web Cloud Databases déjà créé.
+Pour cela, cliquez sur l'onglet `Informations générales`{.action} de votre hébergement. Dans la section **Configuration**, cliquez sur le bouton `...`{.action} à droite de « **Web Cloud Databases** ». Cliquez sur `Délier`{.action} et suivez les instructions afin de commander une offre Web Cloud Databases indépendante, ce qui vous permettra de conserver votre Web Cloud Databases déjà créé.
+
+### Comment augmenter la RAM d'une offre Web Cloud Databases liée à un hébergement mutualisé « Performance » ?
+
+Pour augmenter la RAM d'une offre Web Cloud Databases liée à un hébergement mutualisé **Performance**, vous devrez obligatoirement et préalablement délier l'offre Web Cloud Databases de votre hébergement **Performance** pour basculer sur une offre supérieure.
+
+
+Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Rendez-vous dans la partie `Web Cloud` puis sur l'hébergement concerné à gauche dans l'onglet `Hébergements`{.action}. 
+
+Sur la page `Informations générales`{.action} qui s'affiche, vous retrouvez un encadré intitulé `Configuration`{.action} au centre de la page. A droite de la mention `Web Cloud Databases`{.action}, cliquez sur le bouton `...`{.action} puis sur `Délier`{.action}. Choisissez la durée du renouvellement la plus courte puis poursuivez jusqu'à la validation de la commande.
+
+
+Retrouvez plus d'informations dans notre guide sur la ["Configuration d'une offre Web Cloud Databases"](/pages/web/clouddb/configure-database-server#modifier-votre-offre-web-cloud-databases)
+
+
+**Cette action est irréversible et l'offre Web Cloud Databases sera ensuite facturée indépendamment de votre hébergement web Performance.**
+
 
 ## Diagnostic
 

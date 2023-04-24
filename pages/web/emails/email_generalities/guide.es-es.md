@@ -126,7 +126,7 @@ Puede hacerlo de dos formas:
 
 - crear su redirección desde el webmail, a través de las reglas de la bandeja de entrada. Para ello, consulte nuestra guía Reglas de la bandeja de entrada desde la interfaz OWA[ ](https://docs.ovh.com/es/microsoft-collaborative-solutions/crear-reglas-de-bandeja-de-entrada-en-owa/#ejemplo-1-redireccionamiento-de-mensajes-de-correo-electronico-a-otra-direccion).
 
-- crear la redirección desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Este método permite, por ejemplo, crear un alias, es decir, redirigir una dirección de correo electrónico que no exista a una dirección de correo existente. Para ello, consulte nuestra guía [Utilizar las redirecciones de correo](https://docs.ovh.com/es/emails/correo_redirecciones_de_correo/#nueva-version-de-la-solucion-mx-plan_1).
+- crear la redirección desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Este método permite, por ejemplo, crear un alias, es decir, redirigir una dirección de correo electrónico que no exista a una dirección de correo existente. Para ello, consulte nuestra guía [Utilizar las redirecciones de correo](https://docs.ovh.com/es/emails/correo_redirecciones_de_correo/#nueva-version-de-la-solucion-mx-plan).
 
 ##### **Contestador**
 

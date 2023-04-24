@@ -24,7 +24,7 @@ The following links can help you get a headstart on Logstash in order to get sta
 
 - [What is Logstash?](#what-is-logstash){.external}
 - [How do I configure Logstash Collector on Logs Data Platform?](#host-a-logstash-collector-on-logs-data-platform){.external}
-- [What is special about our hosted Logstash? Available plugins, SSL Certificates and more.](#additional-information_1){.external}
+- [What is special about our hosted Logstash? Available plugins, SSL Certificates and more.](#additional-information){.external}
 
 This is "All you need to know about the Logstash Collector on the Logs Data Platform"!
 

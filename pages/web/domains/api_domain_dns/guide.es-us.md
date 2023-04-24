@@ -176,7 +176,7 @@ To get the details of a name server, you need to call the following API:
 >> }
 >> ```
 
-This call allows to get the technical details of the name server, like the `host` or the associated `ip` if it is a **glue record** (cf. [glue records declaration](#glue-records-declaration_1)).
+This call allows to get the technical details of the name server, like the `host` or the associated `ip` if it is a **glue record** (cf. [glue records declaration](#glue-records-declaration)).
 More information is also available through the following API:
 
 > [!api]

@@ -17,15 +17,22 @@ updated: 2022-12-07
 
 L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du réseau de votre serveur dédié, qui vous permet d'associer plusieurs adresses IP sur une seule interface réseau.
 
+**Ce guide vous explique comment réaliser cet ajout.**
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/s1qDqQ0p07Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-**Ce guide vous explique comment réaliser cet ajout.**
+> [!warning]
+>
+> OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
+> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
+>
 
 ## Prérequis
 
 - Posséder un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}, un [VPS](https://www.ovh.com/ca/fr/vps/){.external} ou une [instance Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external}.
 - Avoir une ou plusieurs [Additional IP](https://www.ovhcloud.com/fr-ca/bare-metal/){.external}.
-- Être connecté en SSH au serveur (accès root).
+- Être connecté en SSH au serveur (accès root) ou via remote desktop pour Windows.
 
 > [!warning]
 > Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr-ca/about/).
@@ -33,6 +40,10 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 > Consultez notre [comparatif](https://eco.ovhcloud.com/fr-ca/compare/) pour plus d’informations.
 
 ## En pratique
+
+> [!primary]
+>  
+>Si vous souhaitez utiliser une distribution récente, la procédure adéquate pour configurer votre interface réseau peut nécessiter des adaptations. Si vous rencontrez des difficultés, nous vous recommandons de consulter la documentation relative à votre système d’exploitation.
 
 Voici les configurations pour les distributions et les systèmes d’exploitation principaux.
 

@@ -82,7 +82,7 @@ Para mais informações, consulte o manual "[Guardar uma instância](../efetuar_
 
 Clique em `Parar`{.action}.
 
-Esta ação terá por efeito suspender a instância. Para mais informações, consulte o nosso manual "[Suspender ou colocar em pausa uma instância](../suspender_ou_colocar_em_pausa_uma_instancia/#parar-suspend-uma-instancia_1)".
+Esta ação terá por efeito suspender a instância. Para mais informações, consulte o nosso manual "[Suspender ou colocar em pausa uma instância](../suspender_ou_colocar_em_pausa_uma_instancia/#parar-suspend-uma-instancia)".
 
 Clique em `Iniciar`{.action} para reativar a instância.
 

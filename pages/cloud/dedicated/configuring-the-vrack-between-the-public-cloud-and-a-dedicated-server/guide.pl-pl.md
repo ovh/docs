@@ -71,7 +71,7 @@ Jeśli potrzebujesz pomocy, zapoznaj się z przewodnikiem [Tworzenie instancji P
 
 #### Przypadek już istniejącej instancji
 
-Możesz przypisać istniejącą instancję do sieci prywatnej. Aby uzyskać więcej informacji, należy zapoznać się z [tą sekcją](https://docs.ovh.com/pl/public-cloud/public-cloud-vrack/#w-przypadku-istniejacej-instancji_2) odpowiedniej instrukcji.
+Możesz przypisać istniejącą instancję do sieci prywatnej. Aby uzyskać więcej informacji, należy zapoznać się z [tą sekcją](https://docs.ovh.com/pl/public-cloud/public-cloud-vrack/#w-przypadku-istniejacej-instancji) odpowiedniej instrukcji.
 
 
 ### Utwórz VLAN ID
@@ -80,7 +80,7 @@ Aby obie usługi mogły się ze sobą komunikować, muszą być « otagowane » 
 
 #### Domyślne wykorzystanie VLAN ID
 
-Domyślnie na serwerach dedykowanych znajdujesz się w sieci VLAN id **0**. Jeśli chcesz użyć tego ID, konieczne będzie « oznakować » sieci prywatnej przypisanej do Twojej instancji za pomocą VLAN ID **0**. W tym celu przejdź przez stronę [OVHcloud APIv6 (EN)](https://docs.ovh.com/pl/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1).
+Domyślnie na serwerach dedykowanych znajdujesz się w sieci VLAN id **0**. Jeśli chcesz użyć tego ID, konieczne będzie « oznakować » sieci prywatnej przypisanej do Twojej instancji za pomocą VLAN ID **0**. W tym celu przejdź przez stronę [OVHcloud APIv6 (EN)](https://docs.ovh.com/pl/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack).
 
 
 > [!primary]

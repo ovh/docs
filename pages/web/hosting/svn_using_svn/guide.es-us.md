@@ -63,7 +63,7 @@ Es necesario que los directorios se muestren en la siguiente imagen:
 
 Antes de continuar, deberá crear un par de llaves SSH desde el equipo que utilizará para conectarse al repositorio SVN.
 
-Para más información, consulte la guía [Crear llaves SSH](https://docs.ovh.com/us/es/public-cloud/crear-llave-ssh/). No es necesario seguir el progreso de la operación [Importar la llave SSH al área de cliente de OVHcloud](https://docs.ovh.com/us/es/public-cloud/crear-llave-ssh/#importacion-de-una-clave-ssh-en-el-area-de-cliente-de-ovhcloud_1) en esta guía.
+Para más información, consulte la guía [Crear llaves SSH](https://docs.ovh.com/us/es/public-cloud/crear-llave-ssh/). No es necesario seguir el progreso de la operación [Importar la llave SSH al área de cliente de OVHcloud](https://docs.ovh.com/us/es/public-cloud/crear-llave-ssh/#importacion-de-una-clave-ssh-en-el-area-de-cliente-de-ovhcloud) en esta guía.
 
 ### Adición de la clave pública al alojamiento
 

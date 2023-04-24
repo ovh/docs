@@ -136,7 +136,7 @@ Una volta piena, la chiave sarà pronta.
 
 ![save key](images/puttygen_03a.png){.thumbnail}
 
-Puoi selezionare e copiare la chiave pubblica da questa finestra per salvarla sullo Spazio Cliente OVHcloud allo [Step 2](./#step-2-salva-le-chiavi-pubbliche-nello-spazio-cliente-ovhcloud_1).
+Puoi selezionare e copiare la chiave pubblica da questa finestra per salvarla sullo Spazio Cliente OVHcloud allo [Step 2](./#step-2-salva-le-chiavi-pubbliche-nello-spazio-cliente-ovhcloud).
 
 Salva entrambe le chiavi su file e inserisci una passphrase nell’apposito campo. Poiché per accedere all’istanza Public Cloud dal tuo dispositivo di lavoro sarà necessaria solo la chiave privata corrispondente, in questa fase è necessario applicare adeguate misure di sicurezza. È necessario specificare la passphrase quando si accede all'istanza.
 
@@ -196,7 +196,7 @@ Nello step 3 seleziona un sistema operativo per l’istanza. Le immagini disponi
 Se scegli un sistema operativo che richiede una licenza a pagamento, i relativi costi saranno automaticamente inclusi nella fatturazione oraria o mensile.
 >
 
-In questo step è necessario aggiungere una chiave SSH (ad eccezione delle istanze Windows). Per farlo hai due possibilità: puoi aggiungere la chiave direttamente cliccando sul pulsante `Aggiungi una chiave`{.action} oppure puoi selezionare la chiave dalla lista (a condizione di averla salvato nello Spazio Cliente durante lo [Step 2](./#step-2-salva-le-chiavi-pubbliche-nello-spazio-cliente-ovhcloud_1)).
+In questo step è necessario aggiungere una chiave SSH (ad eccezione delle istanze Windows). Per farlo hai due possibilità: puoi aggiungere la chiave direttamente cliccando sul pulsante `Aggiungi una chiave`{.action} oppure puoi selezionare la chiave dalla lista (a condizione di averla salvato nello Spazio Cliente durante lo [Step 2](./#step-2-salva-le-chiavi-pubbliche-nello-spazio-cliente-ovhcloud)).
 
 ![key select](images/instance-creation-03-2022.png){.thumbnail}
 

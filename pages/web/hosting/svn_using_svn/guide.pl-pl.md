@@ -63,7 +63,7 @@ Aby uzyskać katalogi, należy je uzyskać zgodnie z poniższym obrazkiem:
 
 Przed kontynuowaniem operacji utwórz parę kluczy SSH z poziomu komputera, którego będziesz używał do łączenia się z repozytorium SVN.
 
-Zapoznaj się z przewodnikiem [Tworzenie kluczy SSH](https://docs.ovh.com/pl/public-cloud/tworzenie-kluczy-ssh/). Nie musisz postępować zgodnie z instrukcjami etapu [Zaimportuj klucz SSH do Panelu klienta OVHcloud](https://docs.ovh.com/pl/public-cloud/tworzenie-kluczy-ssh/#importowanie-klucza-ssh-do-panelu-klienta-ovhcloud_1) w tym przewodniku.
+Zapoznaj się z przewodnikiem [Tworzenie kluczy SSH](https://docs.ovh.com/pl/public-cloud/tworzenie-kluczy-ssh/). Nie musisz postępować zgodnie z instrukcjami etapu [Zaimportuj klucz SSH do Panelu klienta OVHcloud](https://docs.ovh.com/pl/public-cloud/tworzenie-kluczy-ssh/#importowanie-klucza-ssh-do-panelu-klienta-ovhcloud) w tym przewodniku.
 
 ### Dodanie klucza publicznego do hostingu
 

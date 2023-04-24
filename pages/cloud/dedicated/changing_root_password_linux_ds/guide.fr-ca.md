@@ -23,7 +23,7 @@ Il peut s'avérer nécessaire de changer le mot de passe root (ou celui de votre
 ## Prérequis
 
 - Posséder un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/){.external}.
-- Disposer des identifiants de connexion reçus par e-mail suite à l'installation (si ceux-ci sont toujours valides)
+- Disposer des identifiants de connexion reçus par e-mail suite à l'installation (si ceux-ci sont toujours valides).
 - Avoir accès à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} (pour utiliser le mode rescue).
 
 > [!warning]

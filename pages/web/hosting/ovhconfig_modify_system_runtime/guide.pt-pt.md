@@ -52,7 +52,7 @@ Aparecerá uma janela com duas opções possíveis. Selecione a operação que d
 |Escolha|Detalhes|
 |---|---|
 |Voltar a uma configuração anterior|Depois de selecionar esta opção, escolha a configuração que deseja restaurar junto da opção `Escolha histórica`. Esta opção não estará disponível se não tiver efetuado nenhuma alteração anteriormente.|
-|Modificar a configuração atual|Escolha as alterações que pretende aplicar à configuração. Para obter mais informações sobre as várias opções de configuração, aceda à secção [Descobrir as configurações disponíveis](./#descobrir-as-configuracoes-disponiveis_1){.external} deste manual.|
+|Modificar a configuração atual|Escolha as alterações que pretende aplicar à configuração. Para obter mais informações sobre as várias opções de configuração, aceda à secção [Descobrir as configurações disponíveis](./#descobrir-as-configuracoes-disponiveis){.external} deste manual.|
 
 > [!primary]
 >

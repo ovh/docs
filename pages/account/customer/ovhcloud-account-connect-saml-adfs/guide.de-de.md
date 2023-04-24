@@ -126,7 +126,7 @@ Klicken Sie auf den Button `Apply`{.action} und bestätigen Sie mit `OK`{.action
 
 Wenn die Entsprechungstabelle vollständig ist, vertraut Ihr AD FS nun OVHcloud als Service Provider. Stellen Sie im nächsten Schritt sicher, dass der OVHcloud Account Ihrem AD FS als Identity Provider vertraut.
 
-### Das Vertrauen des OVHcloud Accounts aufbauen und die Verbindung konfigurieren
+### Das Vertrauen zum OVHcloud Account und die Verbindung konfigurieren
 
 Das Hinzufügen Ihrer AD FS als vertrauenswürdiger Identity Provider erfolgt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), in dem Sie die Metadaten des Identity Providers hinterlegen können.
 
@@ -197,7 +197,7 @@ Sie können dies auch in der SAML *Assertion* überprüfen:
 
 Das bedeutet, dass Sie die Gruppe `manager@<my-domain>.com` zu Ihrem OVHcloud Account hinzufügen müssen und damit einer Rolle zuweisen. Andernfalls kann Ihr OVHcloud Account nicht feststellen, welche Rechte der Benutzer hat.
 
-Fügen Sie diese hinzu, indem Sie auf den Button `Gruppe deklarieren`{.action} und die Felder ausfüllen:
+Fügen Sie diese hinzu, indem Sie auf den Button `Gruppe deklarieren`{.action} klicken und die Felder ausfüllen:
 
 ![AD FS Benutzer-Verwaltungsgruppen](images/ovhcloud_user_management_groups_1.png){.thumbnail}
 
@@ -217,7 +217,7 @@ Geben Sie auf der [OVHcloud Login-Seite](https://www.ovh.com/auth/?action=gotoma
 
 ![Verbindung zum Verband OVHcloud](images/ovhcloud_federation_login_1.png){.thumbnail}
 
-Sie werden dann auf die Verbindungsseite Ihres AD FS weitergeleitet. Geben Sie Login und Passwort eines Benutzers Ihres Active Directory LDAP ein und klicken Sie dann auf den Button `Sign in`{.action} .
+Sie werden dann auf die Loginseite Ihres AD FS weitergeleitet. Geben Sie Login und Passwort eines Benutzers Ihres Active Directory LDAP ein und klicken Sie dann auf den Button `Sign in`{.action} .
 
 ![OVHcloud Federation Login Weiterleitung AD FS](images/ovhcloud_federation_login_2.png){.thumbnail}
 

@@ -78,7 +78,7 @@ Reportez-vous au guide « [Sauvegarder une instance](../sauvegarder-une-instance
 
 Cliquez sur `Arrêter`{.action}.
 
-Cette action aura pour effet de suspendre l'instance. Référez-vous à notre guide « [Suspendre ou mettre en pause une instance](../suspendre-ou-mettre-en-pause-une-instance/#arreter-suspend-une-instance_1) » pour plus d'informations.
+Cette action aura pour effet de suspendre l'instance. Référez-vous à notre guide « [Suspendre ou mettre en pause une instance](../suspendre-ou-mettre-en-pause-une-instance/#arreter-suspend-une-instance) » pour plus d'informations.
 
 Cliquez sur `Démarrer`{.action} pour réactiver l'instance.
 

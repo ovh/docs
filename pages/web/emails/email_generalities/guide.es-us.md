@@ -29,7 +29,7 @@ Para ello, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
 |![Correo electrónico](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> El nombre del producto aparece en el recuadro **Suscripción**, en el epígrafe **Producto**.|![Correo electrónico](images/mxplan-starter-new-step1.png){.thumbnail}<br>El nombre del producto aparece en el recuadro **Resumen**, en el epígrafe **Referencia del servidor**.|
-|Siga leyendo esta guía en el apartado [Versión histórica de la solución MX Plan](./#version-historica-de-la-solucion-mx-plan_2).|Siga leyendo esta guía en el apartado [Nueva versión de la solución MX Plan](./#nueva-version-de-la-solucion-mx-plan).|
+|Siga leyendo esta guía en el apartado [Versión histórica de la solución MX Plan](./#version-historica-de-la-solucion-mx-plan).|Siga leyendo esta guía en el apartado [Nueva versión de la solución MX Plan](./#nueva-version-de-la-solucion-mx-plan).|
 
 ### Nueva versión de la solución MX Plan
 

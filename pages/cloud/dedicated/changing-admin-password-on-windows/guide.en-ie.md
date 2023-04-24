@@ -23,7 +23,7 @@ When you install or reinstall a Windows operating system, you are provided with 
 
 ## Instructions
 
-The following steps describe the process of changing the local admin password by using the always available OVHcloud rescue mode (Linux-based). If you would like to use Windows PE (WinRescue) instead, skip to the pertinent section [at the end of this guide](./#resetting-the-admin-password-using-winrescue_1). 
+The following steps describe the process of changing the local admin password by using the always available OVHcloud rescue mode (Linux-based). If you would like to use Windows PE (WinRescue) instead, skip to the pertinent section [at the end of this guide](./#resetting-the-admin-password-using-winrescue). 
 
 ### Step 1: Rebooting the server into rescue mode
 
@@ -310,7 +310,7 @@ After this, the server needs to be rebooted again.
 
 #### Step 3: Rebooting the server 
 
-First, change the netboot back to **Boot from the hard disk** in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) (see [step 1](./#step-1-rebooting-the-server-into-rescue-mode_1)).
+First, change the netboot back to **Boot from the hard disk** in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) (see [step 1](./#step-1-rebooting-the-server-into-rescue-mode)).
 
 Back in the KVM window, select the shutdown option `Restart`{.action} via the Windows "Start" button on the bottom left.
 
