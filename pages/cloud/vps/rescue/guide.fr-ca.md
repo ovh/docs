@@ -116,4 +116,3 @@ Une fois vos actions terminées en mode rescue, redémarrez le VPS en mode « no
 [Introduction au SSH](../../dedicated/ssh-introduction/)
 
 Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.
-
