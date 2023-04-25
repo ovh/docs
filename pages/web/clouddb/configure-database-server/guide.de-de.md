@@ -73,13 +73,13 @@ Für ein OVHcloud Webhosting können Sie einfach `Den OVHcloud Webhostings den Z
 
 > [!warning]
 > 
-> Wenn Ihr Cloud Databases Webhosting-Angebot an ein Webhosting-Angebot gebunden ist **Performance**, müssen Sie zuerst das Web Cloud Databases Angebot von Ihrem Hosting **Performance** trennen und auf ein größeres Angebot umstellen.
+> Wenn Ihr Web Cloud Databases Dienst an ein **Performance** Webhosting gebunden ist, müssen Sie ihn zuerst von Ihrem **Performance** Hosting trennen, um den Dienst hochzustufen.
 >
-> Begeben Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), um ein Web Cloud Databases Angebot für Ihr Webhosting **Performance** abzutrennen. Klicken Sie auf den Tab `Web Cloud`{.action} und anschließend auf das betreffende Hosting im Tab `Hosting-Pakete`{.action}, der in der linken Spalte erscheint. 
+> Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, um den Web Cloud Databases Dienst vom Webhosting **Performance** abzutrennen. Klicken Sie auf den Tab `Web Cloud`{.action} und wählen Sie Ihr Hosting unter `Hosting-Pakete`{.action} in der linken Spalte aus. 
+
+> Auf der neuen Seite `Allgemeine Informationen`{.action} finden Sie mittig den Bereich `Konfiguration`{.action}. Klicken Sie rechts neben `Web Cloud Databases`{.action} auf `...`{.action} und dann auf `Abtrennen`{.action}. Wählen Sie die kürzeste Verlängerungsdauer aus und fahren Sie fort bis zur Bestätigung der Bestellung.
 >
-> Auf der neu geöffneten Seite `Allgemeine Informationen`{.action} finden Sie einen Kasten mit dem Titel `Konfiguration`{.action} im Mittelpunkt der Seite. Klicken Sie rechts neben der Bezeichnung `Web Cloud Databases`{.action} auf die Schaltfläche Kfz `...`{.action} dann auf `Abtrennen`{.action}. Wählen Sie die kürzeste Verlängerungsdauer aus und fahren Sie mit der Bestätigung der Bestellung fort.
->
-> **Diese Aktion ist unwiderruflich und das Cloud Databases Webhosting wird anschliessend unabhängig von Ihrem Performance Webhosting abgerechnet.**
+> **Diese Aktion ist unwiderruflich. Der Web Cloud Databases Dienst wird anschließend unabhängig von Ihrem Performance Webhosting abgerechnet.**
 >
 
 Um Ihren Web Cloud Databases Dienst zu bearbeiten, melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) an. Klicken Sie auf `Web Cloud`{.action} und dann auf `Web Cloud Databases`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
