@@ -34,22 +34,22 @@ You can therefore use/declare your *public* and *private* networks via our solut
 
 We will present the case of [dedicated server(s)](https://www.ovhcloud.com/en-gb/bare-metal/) configured in **OLA** mode, i.e. with **only** private networks.
 This choice offers your infrastructure the best possible isolation/protection for your hosted service.<br>
-The only significant difference is that [private networks](https://docs.ovh.com/fr/ovhcloud-connect/presentation-concepts/#prive) do not have access to everything that does not belong to your infrastructure.<br>
+The only significant difference is that [private networks](https://docs.ovh.com/gb/en/ovhcloud-connect/overview/#private-connection) do not have access to everything that does not belong to your infrastructure.<br>
 As a result, a server isolated by its private network prevents the boot mechanism. This means that when systems are booted via the **Netboot** (Network Boot) method, they are based on OVHcloud’s internal network and shared services.
 
 ### Netboot startup overview
 
 A major component exists in 2 versions:
 
-- **PXE**: using a standardised client/server environment, based on BOOTP/DHCP/TFTP protocols, to enable boot/deployment through the client system network.<br>
-- **iPXE**: using a more advanced, standardised client/server environment, based on HTTP, iSCSI, AoE, FCoE, Wi-Fi protocols to enable client system network boot/deployment.
+- **PXE**: Using a standardised client/server environment, based on BOOTP/DHCP/TFTP protocols, to enable boot/deployment through the client system network.<br>
+- **iPXE**: Using a more advanced, standardised client/server environment, based on HTTP, iSCSI, AoE, FCoE, Wi-Fi protocols to enable client system network boot/deployment.
 
 ### A quick overview of Netboot startup at OVHcloud 
 
 List of components involved during startup:
 
-- A **DHCP** server: assigns a network configuration (lease with IP address) for a client machine that is attempting to boot.
-- A **TFTP** service: resources available across the network that will be queried/queried by PXE and iXPE.
+- A **DHCP** server: Assigns a network configuration (lease with IP address) for a client machine that is attempting to boot.
+- A **TFTP** service: Resources available across the network that will be queried by PXE and iXPE.
 - The **rEFInd** solution, in the form of a **BootLoader**, was chosen because it was perfectly adapted. It will allow the search of boot sectors of client machines: local disk, USB, etc.
 
 Here is a (logical) Netboot boot schema:
@@ -77,12 +77,12 @@ Here is a (logical) Netboot boot schema:
 
 > [!warning]
 > 
-> This article is intended for experienced users who have minimal knowledge of the open-source world, as well as knowledge of system and network administration.
+> This article is intended for experienced users who have at least basic knowledge of the open-source world, as well as knowledge of system and network administration.
 > 
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/configuration)
-- at least one dedicated [server](https://www.ovhcloud.com/en-gb/bare-metal/) with an operating system **already installed**.
-- An additional dedicated server with the default network interfaces configured, namely public and private network access. This server will host all services (**DHCP** and **TFTP**). The operating system will be the one of your choice.
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/configuration).
+- At least one [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) with an operating system **already installed**.
+- An additional dedicated server with the default network interfaces configured, namely public and private network access. This server will host all services (**DHCP** and **TFTP**). The operating system will be one of your choice.
 - You must have all of the network interfaces for this server in **private** mode, which implies that you have already configured [our OLA feature](pages/cloud/dedicated/ola-enable-manager/).<br>
 
 >
@@ -124,8 +124,8 @@ Depending on your distribution, the tree may be different (`dhcpd.conf`).
 
 In general, it is sufficient to:
 
-- declare a network interface for listening (waiting for requests)
-- specify the IP protocol version (v4 or v6)
+- Declare a network interface for listening (waiting for requests).
+- Specify the IP protocol version (v4 or v6).
 - Enter a primary configuration file (as an example, see file below).
 
 ```bash
@@ -223,16 +223,16 @@ host node_1 {
 
 **Details:**
 
-- private network (e.g. 192.168.1.0/28)
+- Private network (e.g. 192.168.1.0/28)
 - `subnet_mask`: 255.255.255.240
 - `broadcast_address`: 192.168.1.15
 - `dns_servers`: See optional chapter
 - `ntp_servers`: See optional chapter
 - `default_router` : 192.168.1.1
 - `next-server`: 192.168.1.1
-- `host`: client machine name
-- `hardware ethernet`: client machine hardware address (MAC)
-- `server-name`: client hostname machine
+- `host`: Client machine name
+- `hardware ethernet`: Client machine hardware address (MAC)
+- `server-name`: Client hostname machine
 
 
 
@@ -333,7 +333,7 @@ Above, we have the **rEFInd** bootloader loaded on a machine with a *debian* sys
 
 You will find on <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/cloud/dedicated/pxe-with-full-private-dedicated/files/src.zip" download>this link</a> the resources used to develop our tests and examples throughout this presentation. They can be used as templates, depending on your needs.
 
-#### Optionnel
+#### Optional
 
 We also recommend deploying DNS and NTP services.
 
@@ -353,10 +353,10 @@ It is strongly recommended that you use an NTP service, especially if your infra
 
 ## Go further
 
-[Understanding and/or customising your DHCP service](https://wiki.debian.org/DHCP_Server).<br>
-[Understanding and/or customising your iPXE service](https://ipxe.org/docs).<br>
-[Understanding and/or customising your rEFInd service](https://en.wikipedia.org/wiki/REFInd).<br>
-[Understand or discover NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol).<br>
-[Understand or discover Dnsmasq](https://wiki.debian.org/dnsmasq).<br>
+[Understanding and customising your DHCP service](https://wiki.debian.org/DHCP_Server)<br>
+[Understanding and customising your iPXE service](https://ipxe.org/docs)<br>
+[Understanding and customising your rEFInd service](https://en.wikipedia.org/wiki/REFInd)<br>
+[Discovering and understanding NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol)<br>
+[Discovering and understanding Dnsmasq](https://wiki.debian.org/dnsmasq)<br>
 
 Join our community of users on <https://community.ovh.com/en/>.
