@@ -66,22 +66,19 @@ Gehen Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hostings.
 Ein Webhosting der Reihe **Performance** beinhaltet ein kostenlos aktivierbares Web Cloud Databases Angebot.
 Wenn Sie Ihr **Performance** Hosting kündigen oder löschen, wird auch der dazugehörige Web Cloud Databases Dienst gekündigt. Um Ihr Web Cloud Databases zu behalten, müssen Sie es vor der Kündigung des Hostings abtrennen.<br>
 
-Klicken Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hostings. Klicken Sie im Abschnitt **Konfiguration** auf die Schaltfläche `...`{.action} rechts von "**Web Cloud Databases**". Klicken Sie auf `Abtrennen`{.action} und folgen Sie den Anweisungen, um ein unabhängiges Web Cloud Databases Angebot zu bestellen, mit dem Sie Ihr bereits erstelltes Web Cloud Databases beibehalten können.
+Klicken Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hostings. Klicken Sie im Abschnitt **Konfiguration** auf `...`{.action} rechts von **Web Cloud Databases**. Klicken Sie auf `Abtrennen`{.action} und folgen Sie den Anweisungen, um ein eigenständiges Web Cloud Databases Angebot zu bestellen, mit dem Sie Ihren bereits erstellten Web Cloud Databases Dienst beibehalten können.
 
-### Wie kann ich den RAM eines Cloud Databases Webhostings erhöhen, das mit einem "Performance" Shared Hosting verbunden ist?
+### Wie kann ich den RAM eines Web Cloud Databases Dienstes erhöhen, das mit einem "Performance" Hosting verbunden ist?
 
-Um den RAM eines Cloud Databases Webhosting-Angebots zu erhöhen **Performance** müssen Sie zuerst das Web Cloud Databases Angebot von Ihrem Hosting trennen **Performance**, um auf ein höheres Angebot umzustellen.
+Um den RAM eines Web Cloud Databases Dienstes zu erhöhen, wenn Ihr Web Cloud Databases Dienst an ein **Performance** Webhosting gebunden ist, müssen Sie ihn zuerst von Ihrem **Performance** Hosting trennen, um den Dienst hochzustufen.
 
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, um den Web Cloud Databases Dienst vom Webhosting **Performance** abzutrennen. Klicken Sie auf den Tab `Web Cloud`{.action} und wählen Sie Ihr Hosting unter `Hosting-Pakete`{.action} in der linken Spalte aus.
 
-Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Gehen Sie in den Bereich Web Cloud {.action} und klicken Sie links auf das betreffende Hosting im Tab {.action} Hosting. 
+Auf der neuen Seite `Allgemeine Informationen`{.action} finden Sie mittig den Bereich `Konfiguration`{.action}. Klicken Sie rechts neben `Web Cloud Databases`{.action} auf `...`{.action} und dann auf `Abtrennen`{.action}. Wählen Sie die kürzeste Verlängerungsdauer aus und fahren Sie fort bis zur Bestätigung der Bestellung.
 
-Auf der angezeigten Seite `Allgemeine Informationen`{.action} finden Sie einen Kasten mit dem Titel `Konfiguration`{.action} im Mittelpunkt der Seite. Klicken Sie rechts neben der Bezeichnung `Web Cloud Databases`{.action} auf die Schaltfläche `...`{.action} dann auf `Abtrennen`{.action}. Wählen Sie die kürzeste Verlängerungsdauer aus und fahren Sie mit der Bestätigung der Bestellung fort.
+Weitere Informationen finden Sie in unserer Anleitung zur ["Konfiguration eines Web Cloud Databases Anbgebots"]().
 
-
-Weitere Informationen finden Sie in unserer Anleitung zur ["Konfiguration eines Cloud Databases Webangebots"]()
-
-
-**Diese Aktion ist unwiderruflich und das Cloud Databases Webhosting wird anschliessend unabhängig von Ihrem Performance Webhosting abgerechnet.**
+**Diese Aktion ist unwiderruflich. Der Web Cloud Databases Dienst wird anschließend unabhängig von Ihrem Performance Webhosting abgerechnet.**
 
 ## Diagnose
 
