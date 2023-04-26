@@ -29,7 +29,7 @@ updated: 2023-04-26
  }
 </style>
 
-**Last updated April 26, 2023.**
+**Last updated April 26th, 2023.**
 
 ## Objective
 
@@ -121,7 +121,7 @@ Add the NVIDIA Helm repository:
 
 > [!primary]
 >
-> The Nvidia Helm chart have moved, so if you already added a repo with the name `nvidia`, you can remove it: `helm repo remove nvidia`.
+> The Nvidia Helm chart has moved. If you already added a repo with the name `nvidia`, you can remove it: `helm repo remove nvidia`.
 
 ```bash
 helm repo add nvidia https://helm.ngc.nvidia.com/nvidia
