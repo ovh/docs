@@ -4,16 +4,23 @@ slug: crear-volumenes-snapshot
 excerpt: 'Cómo crear un snapshot de un disco adicional Public Cloud'
 section: Almacenamiento
 order: 2
-updated: 2023-03-03
+updated: 2023-04-21
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 03/03/2023**
+**Última actualización: 21/04/2023**
 
 ## Objetivo
+
+Un **volumen Snapshot** es un punto de recuperación almacenado en el mismo cluster de almacenamiento que el volumen original. Las operaciones de creación y restauración son rápidas, pero en caso de incidencia en el cluster, el volumen y volumen Snapshot pueden no estar disponibles.<br>
+No es necesario desvincular el volumen de la instancia para crear un volumen Snapshot.
+
+Esto no debe confundirse con un **volumen Backup** es una imagen creada a partir de su volumen, que se almacena en el cluster Object Storage de la localización del volumen original.
+Este nivel de resiliencia es ideal para reaccionar rápidamente ante cualquier incidencia en su volumen, creando otro volumen a partir del backup.<br>
+Para crear una copia de seguridad, el volumen debe desvincularse de la instancia. Para más información sobre esta opción, consulte esta [guía](https://docs.ovh.com/es/public-cloud/volume-backup/).
 
 Crear un snapshot con un volumen adicional suele tener dos objetivos:
 
@@ -58,6 +65,8 @@ Abra la sección `Volumen Snapshot`{.action} en la columna izquierda. Una vez cr
 Haga clic en el botón `...`{.action} para eliminar o `Crear un volumen`{.action} a partir del snapshot correspondiente. Para más información, consulte [esta guía](../create-volume-from-backup/).
 
 ## Más información
+
+[Crear una copia de seguridad de un volumen](https://docs.ovh.com/es/public-cloud/volume-backup/)
 
 [Crear un volumen a partir de un snapshot](../create-volume-from-backup/)
 

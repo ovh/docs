@@ -6,10 +6,10 @@ section: Kafka MirrorMaker - Guides
 order: 1
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mirrormaker/capabilities/'
-updated: 2023-01-19
+updated: 2023-04-24
 ---
 
-**Last updated January 19th, 2023**
+**Last updated April 24th, 2023**
 
 ## Objective
 
@@ -44,7 +44,7 @@ You can follow Kafka Release Cycle on their official page : <https://kafka.apach
 
 You can use any of the Kafka-recommended clients to access your cluster.
 
-Please note that Kafka Connect is not available so far.
+Additionally, Kafka Connect is available at OVHcloud.
 
 ### Plans
 
@@ -64,11 +64,14 @@ Here is an overview of the various plans' capabilities:
 
 Your choice of plan affects the number of nodes your cluster can run as well as the SLA.
 
+> [!primary]
+> Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
+
 #### Nodes
 
-- **Essential**: The cluster is delivered with 3 nodes by default.
-- **Business**: The cluster is delivered with 3 nodes by default.
-- **Enterprise**: The cluster is delivered with 6 nodes by default.
+- **Essential**: the cluster is delivered with 1 node by default.
+- **Business**: the cluster is delivered with 3 nodes by default.
+- **Enterprise**: the cluster is delivered with 6 nodes by default.
 
 #### License type
 
@@ -79,29 +82,12 @@ More information on <https://github.com/apache/kafka/blob/trunk/LICENSE>.
 
 Here are the node types you can choose from:
 
-**Essential plans**
-
-| Name    | Disk (GB) | Cores | Memory (GB) |
-| ------- | --------- | ----- | ----------- |
-| db1-7   | N/A       | 2     | 7           |
-| db1-15  | N/A       | 4     | 15          |
-| db1-30  | N/A       | 8     | 30          |
-
-**Business plans**
-
-| Name    | Disk (GB) | Cores | Memory (GB) |
-| ------- | --------- | ----- | ----------- |
-| db1-7   | N/A       | 2     | 7           |
-| db1-15  | N/A       | 4     | 15          |
-| db1-30  | N/A       | 8     | 30          |
-
-**Enterprise plans**
-
-| Name    | Disk (GB) | Cores | Memory (GB) |
-| ------- | --------- | ----- | ----------- |
-| db1-7   | N/A       | 2     | 7           |
-| db1-15  | N/A       | 4     | 15          |
-| db1-30  | N/A       | 8     | 30          |
+| Name    | Storage | vCore | Memory (GB) |
+| ------- | ------- | ----- | ----------- |
+| db1-4   | N/A     | 2     | 4           |
+| db1-7   | N/A     | 2     | 7           |
+| db1-15  | N/A     | 4     | 15          |
+| db1-30  | N/A     | 8     | 30          |
 
 Right now, all nodes of a given cluster should be of the same type and distributed in the same region.
 
@@ -115,8 +101,12 @@ Ingress and Egress traffic are included in the service plans and unmetered.
 Here are some considerations to take into account when using private network:
 
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
-- When connecting from outside subnet, Openstack IP gateway must be enabled in the subnet use for the Database service. The customer is responsible for any other custom network setup.
+- When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
 
+
+##### Authorised IPs
+
+Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic. Until then, your service will be unreachable.
 
 #### Kafka replication and data retention
 
@@ -139,7 +129,7 @@ Data retention is only limited by your cluster storage space.
 
 #### Advanced parameters
 
-We do not currently support Kafka advanced parameters.
+Though advanced parameters are supported for Kafka, they are not supported for Kafka MirrorMaker.
 
 #### Backups
 
@@ -147,13 +137,18 @@ Kafka is a streaming tool. We don't backup Kafka data.
 
 #### Logs and metrics
 
-Logs and metrics are available via the OVHcloud Public Cloud Control Panel.
-As of today, you can't export logs and metrics, nor plug them into a remote tool.
+Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your Kafka MirrorMaker logs in Opensearch and metrics in Grafana (metrics have to be exported first in a time series compatible engine such as PostgreSQL or M3db). See the [Cross Service Integration documentation](/pages/platform/databases/databases_07_cross_service_integration) for more information.
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month
 
 Please note that if the database instance is deleted, logs and metrics are also automatically deleted.
+
+#### Users and roles
+
+Creation of users is allowed via the Control Panel and API.
+
+You can specify a username for each user. By default, the role is **admin**.
 
 ## We want your feedback!
 
