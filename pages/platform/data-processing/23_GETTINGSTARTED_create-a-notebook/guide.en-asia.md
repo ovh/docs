@@ -1,6 +1,6 @@
 ---
 title: Notebooks for Apache Spark - Getting started
-slug: notebook-spark-getting-started
+slug: apache-spark-notebooks
 excerpt: Learn how to create Notebooks for Apache Spark
 section: Getting started
 order: 03
