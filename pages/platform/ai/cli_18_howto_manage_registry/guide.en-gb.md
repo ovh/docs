@@ -78,7 +78,7 @@ ovhai registry delete <id>
 
 ## Create, configure and use new registries
 
-Using your own and private registries are the best way to use your images without exposing them to everyone. We distinguish 3 main possibilities: 
+Using your own and private registries is the best way to use your images without exposing them to everyone. We distinguish 3 main possibilities: 
 
 - Private Harbor registry
 - Private Docker registry
@@ -298,9 +298,10 @@ You can also use the Control Panel to deploy a job or an app from a GitHub regis
 
 ## Going Further
 
-- You can check the official documentation about [how to submit a **job**](https://docs.ovh.com/gb/en/publiccloud/ai/training/submit-job)
-- You can check out the documentation about the [`ovhai` CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/overview-cli)
-- You can check out the documentation about [how to setup the `ovhai` CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client)
+- You can check the official documentation about [how to submit a **job**](https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-training-submit-job?id=kb_article_view&sysparm_article=KB0048754)
+- Learn [how to deploy an **app**](https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-deploy-getting-started?id=kb_article_view&sysparm_article=KB0047971)
+- You can check out the documentation about the [AI CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/overview-cli)
+
 
 ## Feedback
 
