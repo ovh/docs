@@ -6,10 +6,10 @@ section: General guides
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/getting-started/'
-updated: 2022-07-27
+updated: 2023-04-14
 ---
 
-**Last updated 15th February 2023**
+**Last updated April 14th, 2023**
 
 ## Objective
 
@@ -34,13 +34,13 @@ Click on the button `Create a database instance`{.action}. (`Create a service`{.
 
 Click on the type of database you want to use and then select the version to install from the respective drop-down menu.
 
-![Choose database](images/databases_01_order_control_panel-20220727191054615.png){.thumbnail}
+![Choose database](images/databases_01_order_control_panel-20230414145850.png){.thumbnail}
 
 #### Step 2: Select a solution
 
 In this step, choose an appropriate service plan. You will be able to upgrade the plan after creation.
 
-![Choose plan](images/databases_01_order_control_panel-2022072719143198.png){.thumbnail}
+![Choose plan](images/databases_01_order_control_panel-20230414150215.png){.thumbnail}
 
 Please visit the [capabilities page](https://docs.ovh.com/pt/publiccloud/databases/) of your selected database type for detailed information on each plan's properties.
 
@@ -48,39 +48,33 @@ Please visit the [capabilities page](https://docs.ovh.com/pt/publiccloud/databas
 
 Choose the geographical region of the data centre in which your database will be hosted.
 
-![Choose region](images/databases_01_order_control_panel-20220727191537259.png){.thumbnail}
+![Choose region](images/databases_01_order_control_panel-20230414150326.png){.thumbnail}
 
 #### Step 4: Configure database nodes
 
-You can increase the number of nodes and choose the node model in this step. The initial and maximum numbers of nodes depends on the solution chosen in step 2.
+You can choose the node template in this step.
 
-![Order nodes](images/databases_01_order_control_panel-2022072719164714.png){.thumbnail}
+![Order nodes](images/databases_01_order_control_panel-20230414150805.png){.thumbnail}
 
 Please visit the [capabilities page](https://docs.ovh.com/pt/publiccloud/databases/) of your selected database type for detailed information on the hardware resources and other properties of the database installation.
 
 Take note of the pricing information.
 
-### Step 5: Size of nodes
+### Step 5: Sizing
 
-Select the number of nodes required for your cluster:
+Additional storage can be ordered and, depending on the engine, the number of nodes in your cluster can be adjusted:
 
-![Size of nodes](images/databases_01_order_control_panel-20221214083133668.png){.thumbnail}
+![Sizing](images/databases_01_order_control_panel-20230414151211.png){.thumbnail}
 
 ### Step 6: Configure your options
 
-Depending on the type of database you can adjust the number of nodes in your cluster and add storage space:
-
-![Cluster sizing](images/databases_01_order_control_panel-20230215131801790.png){.thumbnail}
-
-### Step 7: Database service configuration
-
 Define your network configuration:
 
-![Configure options](images/databases_01_order_control_panel-20220727191850299.png){.thumbnail}
+![Configure options](images/databases_01_order_control_panel-20230414151536.png){.thumbnail}
 
 #### Connecting a private network (optional)
 
-![Attach network](images/creation_mongo06.png){.thumbnail}
+![Attach network](images/databases_01_order_control_panel-20230414152851.png){.thumbnail}
 
 If you already have a private subnet available, check the box **Private** and select it from the drop-down menu. Note that this option might not be available for the selected service type.
 
@@ -88,11 +82,11 @@ You can be forwarded to create a private network or subnet by clicking on the re
 
 Please follow [this guide](https://docs.ovh.com/pt/public-cloud/public-cloud-vrack/) for detailed instructions.
 
-### Step 8: Summary and confirmation
+### Step 7: Summary and confirmation
 
 The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/).
 
-![Confirm order](images/databases_01_order_control_panel-20220727192153640.png){.thumbnail}
+![Confirm order](images/databases_01_order_control_panel-20230414153010.png){.thumbnail}
 
 Within a few minutes your new database service will be deployed. Messages in the OVHcloud Control Panel will inform you when the database is ready to use.
 
