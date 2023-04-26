@@ -4,7 +4,7 @@ excerpt: 'Schützen Sie Ihre Domain mit DNSSEC vor Cache Poisoning'
 slug: sichern_sie_ihre_domain_mit_dnssec_ab
 section: 'Sicherheit'
 order: 01
-updated: 2022-10-19
+updated: 2023-04-26
 ---
 
 > [!primary]

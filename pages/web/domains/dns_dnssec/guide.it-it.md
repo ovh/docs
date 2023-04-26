@@ -5,7 +5,7 @@ excerpt: 'Come proteggere un dominio dal Cache Poisoning attivando DNSSEC'
 section: 'Protezione e sicurezza'
 order: 1
 legacy_guide_number: g609
-updated: 2022-10-19
+updated: 2023-04-26
 ---
 
 > [!primary]
