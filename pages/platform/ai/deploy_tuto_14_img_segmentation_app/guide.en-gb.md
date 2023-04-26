@@ -1,13 +1,13 @@
 ---
-title: AI Deploy - Tutorial - Deploy a brain tumors segmentation app using Streamlit
+title: AI Deploy - Tutorial - Deploy a brain tumor segmentation app using Streamlit
 slug: deploy/tuto-streamlit-image-segmentation-unet-brain-tumors
 excerpt: How to build and deploy a brain tumor segmentation application using streamlit
 section: AI Deploy - Tutorials
 order: 14
-updated: 2023-04-17
+updated: 2023-04-26
 ---
 
-**Last updated 17th April, 2023.**
+**Last updated 26th April, 2023.**
 
 > [!primary]
 >
@@ -18,9 +18,9 @@ updated: 2023-04-17
 
 The purpose of this tutorial is to show how to **deploy an image segmentation application**, which allows to use the U-Net model we trained in [this notebook](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-segmentation/tensorflow/brain-tumor-segmentation-unet/notebook_image_segmentation_unet.ipynb). This will allow us to visualize and segment brain tumors.
 
-In order to do this, we will use [Streamlit](https://streamlit.io/), a Python framework that turns scripts into a shareable web application. We will also learn how to build and use a custom Docker image for a Streamlit application.
+In order to do this, we will use [Streamlit](https://streamlit.io/), a Python framework that turns scripts into a shareable web application. You will also learn how to build and use a custom Docker image for a Streamlit application.
 
-For more information on how to train U-Net on the [BraTS2020 Dataset](https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation), refer to the following [documentation](https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-notebooks-tuto-image-segmentation-unet-tumors?id=kb_article_view&sysparm_article=KB0057606).
+For more information on how to train U-Net on the [BraTS2020 Dataset](https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation), refer to the following [documentation](/pages/platform/ai/notebook_tuto_12_image-segmentation-unet-tumors).
 
 Overview of our image segmentation app:
 
@@ -46,7 +46,7 @@ We are going to follow different steps to deploy our **brain tumor segmentation 
 
 - **Write the requirements.txt** that contains the required libraries that need to be installed so that our application can work.
 - **Write the `Dockerfile`** that contains all the commands to launch our image segmentation app.
-- **Upload the dataset and the model's weights to an Object Storage** *(volume)* to be able to use these datas within the app's environment.
+- **Upload the dataset and the model's weights to an Object Storage** *(volume)* to be able to use this data within the app's environment.
 - **Build the Docker image** from the Dockerfile.
 - **Push the image into a registry.**
 - **Deploy your app**.
@@ -101,7 +101,7 @@ Once our environment is set up, we must define our default launching command to 
 CMD [ "streamlit" , "run" , "/workspace/main.py", "--server.address=0.0.0.0" ]
 ```
 
-Finally, give correct access rights to **OVHcloud user** (`42420:42420`):
+Finally, give correct access rights to the **OVHcloud user** (`42420:42420`):
 
 ```console
 RUN chown -R 42420:42420 /workspace
@@ -110,36 +110,41 @@ ENV HOME=/workspace
 
 ### Upload the dataset and the model's weights in an Object Storage
 
-In order to use our trained model on the dataset images, we need to create two container objects, one for the model's weights, one for the BraTS2020 dataset. We can either upload the dataset as a `.zip` file (4GB), which will be unzipped by the app's python code, when the Streamlit application is started, or the whole dataset, but which is much heavier to upload (40GB), but will not require an unzip step. In this tutorial, we will upload the `.zip` format.
+In order to use our trained model on the dataset images, we need to create two container objects, one for the model's weights, one for the BraTS2020 dataset. We can either:
+
+- upload the dataset as a `.zip` file (4GB) which will be unzipped by the app's python code when the Streamlit application is started.
+- upload the whole dataset. Though it is is much heavier to upload (40GB), it will not require an unzip step. 
+
+In this tutorial, we will upload the `.zip` format.
 
 > [!warning]
 >
-> If your model's weights and/or your .zip are in a folder, be careful to add only the files, and not their folders. Otherwise, the path to these resources will no longer be directly attached to the root `/workspace`. The name of the folder must be specified before the name of the file, which means that you will need to adapt the application code, especially the places where the resource paths are mentioned (`variables.py` and `dataset_unzip()` function from `utils.py`).
+> If your model's weights and/or your .zip are in a folder, be careful to only add the files, not their folders. Otherwise, the path to these resources will no longer be directly attached to the root `/workspace`. The name of the folder must be specified before the name of the file, which means that you will need to adapt the application code, especially the places where the resource paths are mentioned (`variables.py` and `dataset_unzip()` function from `utils.py`).
 >
 
-You can upload your data to the cloud either by using the [OVHcloud Control Panel (UI)](https://www.ovh.com/manager/#/public-cloud/) or with the [OVHcloud AI CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client/).
+You can upload your data to the cloud either by using the [OVHcloud Control Panel (UI)](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) or with the [OVHcloud AI CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client/).
 
 #### Upload data via UI (Control Panel)
 
-If you do not feel comfortable with commands, this way will be more intuitive for you.
+If you do not feel comfortable with commands, this method will be more intuitive.
 
-First, go to the [OVHcloud Public Cloud section](https://www.ovh.com/manager/#/public-cloud/).
+First, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and access the `Public Cloud`{.action} section.
 
-Then, select the Object Storage section (in the Storage category) and [create a new object container](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/) by clicking `Storage` > `Object Storage` > `Create an object container`.
+Then, select the `Object Storage`{.action} section (in the Storage category) and [create a new object container](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/) by clicking `Storage`{.action} > `Object Storage`{.action} > `Create an object container`{.action}.
 
 Here you can create the object container that will store the dataset and the model's weights. Several `types` and `regions` are available, choose the best parameters for you.
 
-We advise you to separate your data by creating a container dedicated to the model weights and one for the dataset.
+We advise you to separate your data by creating a container dedicated to the model weights and a second container for the dataset.
 
 We will name our object containers `BraTS2020_dataset_zip` and `BraTS2020_model_weights`.
 
-Once your object containers are created, you will see them in the Object Storage list. By clicking on them, you will be able to click the `Add Objects` button, which will allow you to upload your data to the cloud.
+Once your object containers are created, you will see them in the Object Storage list. By clicking on them, you will be able to click the `Add Objects`{.action} button, which will allow you to upload your data to the cloud.
 
 #### 1.2 - Upload data via CLI
 
 To follow this part, make sure you have installed the [ovhai CLI](https://cli.bhs.ai.cloud.ovh.net/) on your computer or on an instance.
 
-As in the Control Panel, you will have to specify the `region`, the `name of your container` and the `path` where your data will be located. The creation of an object container can be done by the following command:
+As in the Control Panel, you will have to specify the `region`, the `name of your container` and the `path` where your data will be located. The creation of an object container can be done with the following command:
 
 ```console
 ovhai data upload <region> <container> <paths>
@@ -148,11 +153,13 @@ ovhai data upload <region> <container> <paths>
 Here are the commands that we will enter:
 
 - Upload the dataset (`.zip`):
+
 ```console
 ovhai data upload GRA BraTS2020_dataset_zip brats20-dataset-training-validation.zip 
 ```
 
 - Upload the model's weights:
+
 ```console
 ovhai data upload GRA BraTS2020_model_weights model_.26-0.025329.m5.index
 ovhai data upload GRA BraTS2020_model_weights model_.26-0.025329.m5.data-00000-of-00001
@@ -160,15 +167,15 @@ ovhai data upload GRA BraTS2020_model_weights model_.26-0.025329.m5.data-00000-o
 
 > [!warning]
 >
-> Be careful to upload the 2 files obtained during the training of your model.
-> Weight files names can change for you. Make sure that the variable `best_weights_path`, of the file `variables.py`, indicates the path of your model's weights. Change it if necessary.
+> Make sure to upload the 2 files obtained during the training of your model.
+> Weight files names can change for you. Make sure that the variable `best_weights_path` (of the `variables.py` file) indicates the path of your model's weights. Change it if necessary.
 >
 
 Once your data is uploaded, it can be accessed from all OVHcloud AI tools, either with read-only (RO) or read-write (RW) permissions.
 
 > [!warning]
 >
-> Before continuing, be sure to modify the `samples_test` list in the `variables.py` file.
+> Before continuing, make sure to modify the `samples_test` list in the `variables.py` file.
 > Indeed, this list must contain the patients of the test set, which were not used for the training of the model. This list will not be the same for you, since the patients were randomly shuffled. It is therefore important that you replace it with your own test samples list!
 >
 
@@ -217,7 +224,7 @@ Once started, your application should be available on `http://localhost:8501`.
 
 > [!warning]
 > **Warning**
-> The shared registry of AI Deploy should only be used for testing purpose. Please consider attaching your own Docker registry. More information about this can be found [here](https://docs.ovh.com/gb/en/publiccloud/ai/training/add-private-registry).
+> The shared registry of AI Deploy should only be used for testing purposes. Please consider attaching your own Docker registry. More information about this can be found [here](https://docs.ovh.com/gb/en/publiccloud/ai/training/add-private-registry).
 
 Find the address of your shared registry by launching this command:
 
@@ -263,7 +270,7 @@ ovhai app run <shared-registry-address>/tumor_seg_streamlit_app:latest \
 
 ## Go further
 
-- Do you want to use Streamlit to create an audio classification app? [Here it is](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-streamlit-sounds-classification/).
+- Do you want to use Streamlit to create an audio classification app? [Learn how to do it](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-streamlit-sounds-classification/).
 - Learn how to create & deploy a Speech-to-Text app [here](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-streamlit-speech-to-text-app/).
 
 ## Feedback
