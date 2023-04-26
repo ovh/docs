@@ -64,18 +64,15 @@ When you cancel or delete your **Performance** shared hosting plan, the Web Clou
 
 To do this, click on the `General information`{.action} tab on your web hosting plan. In the **Configuration** section, click the `...`{.action} to the right of **Web Cloud Database**'. Click on `Unlink`{.action} and follow the instructions to order an independent Web Cloud Databases offer, which will allow you to keep your already created Web Cloud Databases.
 
-### How do I increase the RAM for a Web Cloud Databases hosting plan linked to a Performance web hosting plan?
+### How do I increase the RAM of Web Cloud Databases linked to a Performance web hosting plan?
 
-To increase the RAM for a Web Cloud Databases hosting plan linked to a **Performance** hosting plan, you will need to unlink the Web Cloud Databases hosting plan from your **Performance** hosting plan beforehand in order to switch to a higher plan.
+To increase the RAM for a Web Cloud Databases service linked to a **Performance** hosting plan, you will need detach it from your **Performance** web hosting plan beforehand in order to switch to a higher plan.
 
+To do this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Go to the `Web Cloud`{.action} section, then click on the relevant hosting plan in the `Hosting plans`{.action} section in the left-hand column. 
 
-To do this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Go to the `Web Cloud`{.action} section, then to the web hosting plan concerned on the left-hand side, in the `Hosting`{.action} tab. 
+On the new `General information`{.action} page that appears, you will see a box labelled `Configuration`{.action} in the centre of the page. To the right of `Web Cloud Databases`{.action}, click on the `...`{.action} button then `Detach`{.action}. Select the shortest renewal duration, then continue until you confirm your order.
 
-On the `General information`{.action} page that appears, you will see a box labelled `Configuration`{.action} in the centre of the page. To the right of the mention `Web Cloud Databases`{.action}, click on the `...`{.action} then `Unlink`{.action}. Select the shortest renewal duration, then continue until you confirm your order.
-
-
-You can find more information in our guide on [`Configuring a Web Cloud Databases solution`](/pages/web/clouddb/configure-database-server#modify-your-web-cloud-databases-offer)
-
+You can find more information in our guide on [Configuring a Web Cloud Databases solution](/pages/web/clouddb/configure-database-server#modify-your-web-cloud-databases-offer).
 
 **This action cannot be undone, and the Cloud Databases Web hosting plan will then be billed separately from your Performance Web Hosting plan.**
 
