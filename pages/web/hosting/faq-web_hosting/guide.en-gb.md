@@ -64,7 +64,7 @@ When you cancel or delete your **Performance** shared hosting plan, the Web Clou
 
 To do this, click on the `General information`{.action} tab on your web hosting plan. In the **Configuration** section, click the `...`{.action} to the right of **Web Cloud Database**'. Click on `Unlink`{.action} and follow the instructions to order an independent Web Cloud Databases offer, which will allow you to keep your already created Web Cloud Databases.
 
-### How do I increase the RAM for a Cloud Databases web hosting plan linked to a Performance web hosting plan?
+### How do I increase the RAM for a Web Cloud Databases hosting plan linked to a Performance web hosting plan?
 
 To increase the RAM for a Cloud Databases Web hosting plan linked to a Performance hosting plan **Performance**, you will need to unlink the Cloud Databases Web hosting plan from your **Performance** hosting plan beforehand in order to switch to a higher plan.
 
