@@ -4,21 +4,35 @@ slug: capabilities
 excerpt: Find out what are the current capabilities and limitations of the OVHcloud Data Processing Platform 
 section: Concepts
 order: 1
-updated: 2023-03-08
+updated: 2023-04-26
 ---
 
-**Last updated 08<sup>th</sup> March, 2023**
-
+**Last updated April 26th, 2023**
 
 ## Objective 
 
-In this document, we list all the features currently supported by the Data Processing platform. We will also give you a peek at some of our upcoming features.
+This page provides the technical capabilities and limitations of the Public Cloud Data Processing platform.
 
-## Capabilities and known limits
+We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
+
+## Capabilities and limitations
+
+### Supported regions
+
+The Public Cloud Data Processing offer is currently available only in the following region:
+
+- `GRA` (Gravelines, France)
+
+### Main features
+
+Data could be processed in two fashions:
+
+- **Jobs**: start Apache Spark jobs on demand, specifying the amount of RAM and vCPU to use. Upload your code in JAR format or Python code to a Swift container, and run it by submitting a job.
+- **Notebooks**: start your Jupyter notebooks in the cloud, and start your data processing jobs directly from your notebooks on demand with the Python kernel for Apache Spark.
 
 ### Processing engine 
 
-At this moment, OVHcloud Data Processing supports the following engines:
+At this moment, the following engines are supported by Data Processing Jobs:
 
 - Spark 3.3.2 (Scala 2.13.7 and Hadoop 3.3.1)
 - Spark 3.3.1 (Scala 2.13.7 and Hadoop 3.3.1)
@@ -31,22 +45,52 @@ At this moment, OVHcloud Data Processing supports the following engines:
 - Spark 3.0.1 (Scala 2.12.4 and Hadoop 3.2.0)
 - Spark 2.4.3 (Scala 2.12.4 and Hadoop 2.8.5)
 
-It is not possible to interact with Apache Spark cluster via command line.  
+Notebooks for Apache Spark is limited to the latest version (3.3.2) supported by Data Processing Jobs.
 
-### The Apache Spark job in Data Processing is limited to: 
+### Hardware resources
 
-- Minimum 1 and maximum 60 GB of RAM per Executor/Driver (including the memory overhead)
+#### Jobs sizing
+
+Here are the settings limitations for Data Processing jobs:
+
+- Minimum 1 and maximum 59 GB of RAM per Executor/Driver (including the memory overhead)
 - Minimum 1 and maximum 16 Cores of CPU per Executor/Driver
 - Minimum 8 GiB and maximum 143 GiB of local storage per Executor/Driver. This resource can't be directly configured though, for each node, you will have 9 GiB of local storage per core, minus 1 GiB used by system. (eg. If your executors have 4 cores each, they will have 35 GiB of local storage each)
 - Minimum 1 and maximum 10 Executor nodes
 
-### Supported languages for Apache Spark code
+#### Notebooks templates
+
+Notebooks for Apache Spark provide the following templates as kernels:
+
+| Name  | Driver vCores | Driver memory                       | Executor vCores | Executor memory                     | Number of executors | 
+| ----- | ------------- | ----------------------------------- | --------------- | ----------------------------------- | ------------------- |
+| db1-1 | 1             | 2 GiB memory (+ 384 MiB overhead)   | 2               | 2 GiB memory (+ 384 MiB overhead)   | 2                   |
+| db1-2 | 2             | 2 GiB memory (+ 384 MiB overhead)   | 4               | 3 GiB memory (+ 512 MiB overhead)   | 2                   |
+| db1-3 | 3             | 3 GiB memory (+ 1024 MiB overhead)  | 4               | 3 GiB memory (+ 1024 MiB overhead)  | 2                   |
+| db1-4 | 3             | 4 GiB memory (+ 1024 MiB overhead)  | 4               | 6 GiB memory (+ 1024 MiB overhead)  | 3                   |
+| db1-5 | 4             | 10 GiB memory (+ 1524 MiB overhead) | 5               | 15 GiB memory (+ 2048 MiB overhead) | 3                   |
+
+#### Quotas 
+
+You have a limited amount of those resources that you can use simultaneously. If you have a job using all of your quotas, you will not be able to submit other jobs until it is completed. The maximum amount of each resource you can use simultaneously is fetched from your cloud project quotas. Only the maximum quotas are shared between Data Processing and your cloud project. If you run out of resource on your cloud project, it will not impact your ability to submit a job on Data Processing. 
+
+If you would like to increase the quotas for Data Processing you will need to increase your cloud project quotas. Please visit [Increasing Public Cloud quota](../../public-cloud/increase-public-cloud-quota/) for more details on the subject. 
+
+### Supported languages
+
+Data Processing Jobs supports the following languages for Apache Spark code:
 
 - Java 8
 - Scala 2.12
 - Python v2.7+ and v3.4+
 
-### Available ports to public network
+Notebooks for Apache Spark are currently limited to Python.
+
+### Network
+
+#### Public network
+
+Here are the supported ports to public network:
 
 - FTP (21)
 - HTTP (443, 80, 8443, 8080, 9090)
@@ -64,15 +108,11 @@ It is not possible to interact with Apache Spark cluster via command line.
 - MongoDB (27017, 27018, 27019)
 - ElasticSearch (9200)
 
-### OVHcloud vRack
+#### Private network
 
-- Data Processing can not use or access OVHcloud vRack. 
+Data Processing can not use or access OVHcloud vRack. 
 
-### Available regions 
-
-- GRA (Gravelines in France) 
-
-### IP range to allow
+#### IP restrictions
 
 If you need to allow a list of IPs in your application network configuration (for example to allow connections to one of your databases), know that the ODP jobs will run on hosts
 with IP within a range depending on the region:
@@ -81,8 +121,9 @@ with IP within a range depending on the region:
 
 ### Storage
 
-- Before submitting a job, you will need to upload your job into your OVHcloud Object Storage account. 
-- To process data, your data can be stored in OVHcloud Object Storage or any other cloud storage or connected storage that is accessible through public internet.
+Before submitting a job, you will need to upload your job into your OVHcloud Object Storage account. 
+
+To process data, your data can be stored in OVHcloud Object Storage or any other cloud storage or connected storage that is accessible through public internet.
 
 >[!warning]
 >
@@ -90,19 +131,6 @@ with IP within a range depending on the region:
 > 
 > So beware when you are using it as your data storage, mainly for temporary storage or to store checkpoints for Spark Streaming. Those may not be usable as the OVHcloud Object Storage is only eventually consistent.
 >
-
-### Resources quotas 
-
-We distinguish three types of resources: CPU cores, RAM and Instances. 
-
-You have a limited amount of those resources that you can use simultaneously. If you have a job using all of your quotas, you will not be able to submit other jobs until it is completed. The maximum amount of each resource you can use simultaneously is fetched from your cloud project quotas. Only the maximum quotas are shared between Data Processing and your cloud project. If you run out of resource on your cloud project, it will not impact your ability to submit a job on Data Processing. 
-
-If you would like to increase the quotas for Data Processing you will need to increase your cloud project quotas. Please visit [Increasing Public Cloud quota](../../public-cloud/increase-public-cloud-quota/) for more details on the subject. 
-
-## Planned features
-
-- Ability to set a TTL (Time To Live) on your jobs
-- Availability in different OVHcloud regions 
 
 ## Feedback
 
