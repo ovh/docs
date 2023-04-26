@@ -1,49 +1,54 @@
 ---
-title: "Retrieving databases in rescue mode"
+title: "Odzyskiwanie baz danych w trybie Rescue"
 slug: dedicated-servers-retrieve-database
-excerpt: "Find out how to access and save your databases using rescue mode"
-section: Tutorial
+excerpt: "Dowiedz się, jak uzyskać dostęp do baz danych i zapisać je w trybie rescue"
+section: Diagnostyka i tryb Rescue
 updated: 2023-04-13
 ---
 
-**Last updated 13th April 2023**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
+>
 
-## Objective
+## Wprowadzenie
 
-With rescue mode, you can always access your data, even if the server's OS or the software hosted on the server is no longer working.
+Tryb Rescue pozwala na stały dostęp do Twoich danych, nawet jeśli system operacyjny serwera lub zainstalowane na nim oprogramowanie przestały działać.
 
-**This tutorial explains how to access a system in rescue mode and retrieve database files.**
+**Dowiedz się, jak uzyskać dostęp do systemu operacyjnego w trybie Rescue i pobrać pliki bazy danych.**
 
-## Requirements
+## Wymagania początkowe
 
-- A [dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/), a [VPS](https://www.ovhcloud.com/en-sg/vps/) or a [Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account (excluding Windows systems)
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- Serwer [dedykowany](https://www.ovhcloud.com/pl/bare-metal/), [VPS](https://www.ovhcloud.com/pl/vps/) lub instancja [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud (z wyłączeniem systemu Windows)
+- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+
 
 > [!warning]
->OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
->This tutorial is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-sg/directory/) or reach out to [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
+>
+> Celem tego tutoriala jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub wdrażaniem usług na serwerze zalecamy skorzystanie z pomocy wyspecjalizowanego [usługodawcy](https://partner.ovhcloud.com/pl/directory/) lub zbliżenie się do [naszej społeczności](https://community.ovh.com/en/).
 >
 
-## Instructions
 
-### Rebooting your server into rescue mode
+## W praktyce
 
-Follow the respective guide to put your OVHcloud service into rescue mode:
+### Zrestartuj serwer do trybu Rescue
 
-- [Dedicated server](/pages/cloud/dedicated/rescue_mode)
+Zapoznaj się z przewodnikiem dotyczącym uruchomienia usługi OVHcloud w trybie rescue:
+
+- [Serwer dedykowany](/pages/cloud/dedicated/rescue_mode)
 - [VPS](/pages/cloud/vps/rescue)
-- [Public Cloud instance](/pages/platform/public-cloud/put_an_instance_in_rescue_mode)
+- [Instancja Public Cloud](/pages/platform/public-cloud/put_an_instance_in_rescue_mode)
 
-Follow the instructions in [this section](#pci) for a **VPS** or a **Public Cloud instance**. Skip to the [subsequent section](#dedicated) for a **dedicated server**. 
+Postępuj zgodnie z instrukcjami zawartymi w [tej sekcji](#pci) dla serwera **VPS** lub instancji **Public Cloud**. Przejdź do następnej [sekcji](#dedicated) dla serwera **dedykowanego**. 
 
-### Accessing your data on a VPS or a Public Cloud instance <a name="pci"></a>
+### Dostęp do danych na serwerze VPS lub na instancji Public Cloud <a name="pci"></a>
 
-First we need to identify the mount point containing the `/` of our system.
+Najpierw musimy określić punkt montowania, w którym znajduje się `/` system.
 
-To do this, you can use the commands `lsblk` and `fdisk -l`.
+W tym celu możesz użyć poleceń `lsblk` i `fdisk -l`.
 
-- **lsblk** example output:
+- Przykład wydania **lsblk**:
 
 ```output
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
@@ -53,7 +58,7 @@ sdb      8:16   0   10G  0 disk
 └─sdb1   8:17   0   10G  0 part
 ```
  
-- **fdisk -l** example output:
+- Przykład wydania **fdisk -l**:
 
 ```output
 Disk /dev/sdb: 10 GiB, 10737418240 bytes, 20971520 sectors
@@ -80,12 +85,12 @@ Device     Boot Start     End Sectors  Size Id Type
 
 > [!primary]
 >
-> The following code sections are for the purpose of illustration only, based on the example output above. You will need to adjust the instructions according to your actual configuration by replacing the values in the commands with your disk and volume identifiers.
+> Poniższe sekcje kodu podane są jako ilustracja, w odniesieniu do przykładu wyjściowego. Należy dostosować instrukcje do rzeczywistej konfiguracji i zastąpić wartości w poleceniach identyfikatorami dysku i wolumenu.
 >
 
-In this example the primary disk (10 GB) is named "sdb". Our data in `/` is therefore located on the partition `/dev/sdb1`. (Whereas "sda" is the rescue mode disk and "sda1" is the primary rescue partition mounted on `/`.)
+W tym przykładzie dysk główny (10 GB) nazywa się "sdb". Nasze dane in `/` znajdują się zatem na partycji `/dev/sdb`. (podczas gdy "sda" znajduje się w trybie Rescue, a "sda1" - główna partycja w trybie rescue zamontowana na `/`.)
 
-We mount the system partition in the folder `/mnt` and then verify its content:
+Wstawiamy partycję systemu do katalogu `/mnt`, a następnie sprawdzamy jej zawartość:
 
 ```shell-session
 root@rescue:~# mount /dev/sdb1 /mnt
@@ -94,7 +99,7 @@ bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  s
 root@rescue:~#
 ```
 
-In order to launch services on the system from rescue mode, you will need to mount these partitions as well:
+Aby uruchomić usługi w systemie z trybu Rescue, zamontuj również te partycje:
 
 ```shell-session
 root@rescue:~# mount -o rbind /dev /mnt/dev
@@ -112,15 +117,15 @@ proc on /mnt/proc type proc (rw,relatime)
 sys on /mnt/sys type sysfs (rw,relatime)
 ```
 
-Continue with the [database retrieval section below](#databases).
+Przejdź do sekcji odzyskiwania [bazy danych](#databases).
  
-### Accessing your data on a dedicated server (software RAID configuration) <a name="dedicated"></a>
+### Dostęp do danych na serwerze dedykowanym (konfiguracja programowa RAID) <a name="dedicated"></a>
 
-First we need to identify the mount point containing the `/` of our system.
+Najpierw musimy określić punkt montowania, w którym znajduje się `/` system.
 
-To do this, you can use the commands `lsblk` and `fdisk -l`.
+W tym celu możesz użyć poleceń `lsblk` i `fdisk -l`.
 
-Example output:
+Przykład wyjścia:
 
 ```shell-session
 root@rescue:~# fdisk -l
@@ -170,12 +175,12 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 
 > [!primary]
 >
-> The following code sections are for the purpose of illustration only, based on the example output above. You will need to adjust the instructions according to your actual configuration by replacing the values in the commands with your disk and volume identifiers.
+> Poniższe sekcje kodu podane są jako ilustracja, w odniesieniu do przykładu wyjściowego. Należy dostosować instrukcje do rzeczywistej konfiguracji i zastąpić wartości w poleceniach identyfikatorami dysku i wolumenu.
 >
 
-In this example, our data in `/` is located on the volume `/dev/md3`.
+W tym przykładzie dane w `/` znajdują się na woluminie `/dev/md`.
 
-We mount the system partition in the folder `/mnt` and then verify its content:
+Wstawiamy partycję systemu do katalogu `/mnt`, a następnie sprawdzamy jej zawartość:
 
 ```shell-session
 root@rescue:~# mount /dev/md3 /mnt
@@ -184,7 +189,7 @@ bin  boot  dev  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  s
 root@rescue:~#
 ```
 
-In order to launch services on the system from rescue mode, you will need to mount these partitions as well:
+Aby uruchomić usługi w systemie z trybu Rescue, zamontuj również te partycje:
 
 ```shell-session
 root@rescue:~# mount -o rbind /dev /mnt/dev
@@ -203,17 +208,17 @@ sys on /mnt/sys type sysfs (rw,relatime)
 ```
 
  
-### Retrieving the databases <a name="databases"></a>
+### Odzyskiwanie baz danych <a name="databases"></a>
 
-With all the necessary partitions mounted, we need to be able to execute commands on the actual system. You can do this by using the `chroot` command:
+Po zamontowaniu wszystkich niezbędnych partycji musimy mieć możliwość wykonywania poleceń na samym systemie. W tym celu użyj polecenia `chroot`:
 
 ```shell-session
 root@rescue:~# chroot /mnt/
 root@rescue:/#
 ```
-From this point on, all commands that you enter will be applied to your system instead of the temporary rescue mode environment.
+Teraz wszystkie polecenia, które wprowadzisz, zostaną zastosowane w Twoim systemie zamiast tymczasowego środowiska w trybie Rescue.
 
-We can now start the `mysql` service:
+Teraz możemy uruchomić usługę `mysql`:
 
 ```shell-session
 root@rescue:/# service mysql start
@@ -221,7 +226,7 @@ root@rescue:/# service mysql start
 root@rescue:/#
 ```
 
-Use the command `mysqldump` to save the database as a file:
+Użyj komendy `mysqldump`, aby zapisać bazę danych w pliku:
 
 ```shell-session
 root@rescue:/# mysqldump -u root -p scarif > /home/dump.sql
@@ -229,11 +234,11 @@ Enter password:
 root@rescue:/#
 ```
 
-In this case, the `mysql` user logging in to the database is `root`. The option `-p` allows you to enter the password of `root` and the recovered database is named `scarif`.
+W tym przypadku użytkownikiem `mysql`, który łączy się z bazą danych, jest `root`. Opcja `-p` pozwala na wpisanie hasła dla `root`, a odzyskana baza danych jest nazywana `scarif`.
 
-The database file is then saved into the `/home` directory under the name `dump.sql`.
+Plik bazy danych jest następnie zapisywany w katalogu `/home` pod nazwą `dump.sql`.
 
-You can also back up all databases at once:
+Możesz również wykonać kopię zapasową wszystkich baz danych jednocześnie:
 
 ```shell-session
 root@rescue:/# mysqldump -u root -p --all-databases > alldb.sql
@@ -241,25 +246,25 @@ Enter password:
 root@rescue:/#
 ```
 
-Listing the contents of `/home` shows both database files created by the previous commands:
+Lista zawartości `/home` wyświetla dwa pliki bazy danych utworzone w poprzednich komend:
 
 ```shell-session
 root@rescue:/# ls /home
 alldb.sql  dump.sql
 ```
 
-In case of corrupted tables, this command can be used for repair:
+W przypadku uszkodzonych stołów, polecenie to może być użyte do naprawy:
 
 ```shell-session
 root@rescue:/# mysqlcheck -u root -p Password_Root_MySQL --auto-repair --optimize --all-databases
 ```
 
-From the `/home` folder, you can now send your backup files to a remote server. This example uses the file transfer utility `scp`:
+Z katalogu `/home` możesz teraz przesłać pliki kopii zapasowej na zdalny serwer. W tym przykładzie używamy narzędzia do przesyłania plików `scp`:
 
 ```shell-session
 root@rescue:/# scp -P SSH_Port_Number dump.sql user@IP_address:/home/backup
 ```
 
-## Go further
+## Sprawdź również
 
-Join our community of users on <https://community.ovh.com/en/>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

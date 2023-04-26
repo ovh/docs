@@ -16,7 +16,7 @@ With rescue mode, you can always access your data, even if the server's OS or th
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/), a [VPS](https://www.ovhcloud.com/en-gb/vps/) or a [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account (excluding Windows systems)
+- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/), a [VPS](https://www.ovhcloud.com/en-gb/vps/) or a [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account (excluding Windows systems)
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 > [!warning]
@@ -31,9 +31,9 @@ With rescue mode, you can always access your data, even if the server's OS or th
 
 Follow the respective guide to put your OVHcloud service into rescue mode:
 
-- [Dedicated server](https://docs.ovh.com/gb/en/dedicated/ovh-rescue/)
-- [VPS](https://docs.ovh.com/gb/en/vps/rescue/)
-- [Public Cloud instance](https://docs.ovh.com/gb/en/public-cloud/put_an_instance_in_rescue_mode/)
+- [Dedicated server](/pages/cloud/dedicated/rescue_mode)
+- [VPS](/pages/cloud/vps/rescue)
+- [Public Cloud instance](/pages/platform/public-cloud/put_an_instance_in_rescue_mode)
 
 Follow the instructions in [this section](#pci) for a **VPS** or a **Public Cloud instance**. Skip to the [subsequent section](#dedicated) for a **dedicated server**. 
 

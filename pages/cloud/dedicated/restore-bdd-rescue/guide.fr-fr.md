@@ -34,9 +34,9 @@ Le mode Rescue permet d'accéder à vos données en permanence, même si le syst
 
 Suivez le guide correspondant pour passer votre service OVHcloud en mode rescue :
 
-- [Serveur dédié](https://docs.ovh.com/fr/dedicated/ovh-rescue/)
-- [VPS](https://docs.ovh.com/fr/vps/mode-rescue-vps/)
-- [Instance Public Cloud](https://docs.ovh.com/fr/public-cloud/passer-une-instance-en-mode-rescue/)
+- [Serveur dédié](/pages/cloud/dedicated/rescue_mode)
+- [VPS](/pages/cloud/vps/rescue)
+- [Instance Public Cloud](/pages/platform/public-cloud/put_an_instance_in_rescue_mode)
 
 Suivez les instructions de [cette section](#pci) pour un **VPS** ou une instance **Public Cloud**. Passez à la [section suivante](#dedicated) pour un serveur **dédié**. 
 
@@ -46,7 +46,7 @@ Nous devons d'abord identifier le point de montage contenant le `/` de notre sys
 
 Pour cela, vous pouvez utiliser les commandes `lsblk` et `fdisk -l`.
 
-- **exemple de sortie lsblk** :
+- Exemple de sortie **lsblk** :
 
 ```output
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
@@ -56,7 +56,7 @@ sdb      8:16   0   10G  0 disk
 └─sdb1   8:17   0   10G  0 part
 ```
  
-- **fdisk -l** exemple de sortie :
+- Exemple de sortie **fdisk -l** :
 
 ```output
 Disk /dev/sdb: 10 GiB, 10737418240 bytes, 20971520 sectors
