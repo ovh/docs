@@ -1,15 +1,15 @@
 ---
-title: Data Processing Apache Spark Notebooks - Getting started
-slug: apache-spark-notebooks
-excerpt: Learn how to create an Apache Spark notebook
+title: Notebooks for Apache Spark - Getting started
+slug: notebook-spark-getting-started
+excerpt: Learn how to create Notebooks for Apache Spark
 section: Getting started
 order: 03
-updated: 2023-04-20
+updated: 2023-04-26
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-data-processing-apache-spark-notebooks?id=kb_article_view&sysparm_article=KB0057682'
 ---
 
-**Last updated April 20th, 2023.**
+**Last updated April 26th, 2023**
 
 > [!primary]
 >
@@ -18,9 +18,9 @@ routes:
 
 ## Objective
 
-The OVHcloud Data Processing Notebooks service provides you Jupyter notebooks, linked to an Apache Spark environment totally configured that can be propagated to all nodes and executors without installation.
+The OVHcloud Data Processing Notebooks for Apache Spark service provides you Jupyter notebooks, linked to an Apache Spark environment totally configured that can be propagated to all nodes and executors without installation.
 
-This guide will cover the creation of a new Apache Spark notebook from the OVHcloud Control Panel and the OVHcloud APIv6.
+This guide will cover the creation of a new notebook from the OVHcloud Control Panel and the OVHcloud APIv6.
 
 ## Requirements
 
