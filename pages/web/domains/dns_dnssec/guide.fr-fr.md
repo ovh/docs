@@ -4,10 +4,10 @@ slug: securiser-votre-domaine-avec-dnssec
 excerpt: 'Protégez votre nom de domaine du Cache Poisoning en activant le DNSSEC'
 section: 'Protection et sécurité'
 order: 01
-updated: 2022-10-19
+updated: 2023-04-26
 ---
 
-**Dernière mise à jour le 19/10/2022**
+**Dernière mise à jour le 26/04/2023**
 
 ## Objectif
 
@@ -27,8 +27,6 @@ Pour comprendre comment cette protection fonctionne, nous vous conseillons de co
 L'activation du DNSSEC est possible selon deux cas :
 
 - **votre nom de domaine utilise les serveurs DNS d'OVHcloud** : l'activation s'effectue en un clic depuis votre espace client ;
-
-- **votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud** : vous devrez vous rapprocher du prestataire gérant la configuration DNS de celui-ci. Si vous gérez vous-même cette dernière, vous devrez installer manuellement le DNSSEC. Si tel est le cas, aidez-vous des documentations disponibles en ligne.
 
 - **Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud** : rapprochez-vous du prestataire gérant la configuration DNS pour lui demander ses paramètres. Rendez-vous ensuite dans la section « Web Cloud ». Cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine concerné dans la liste.
 Cliquez sur l'onglet `DS records`{.action} puis sur le bouton `Modifier`{.action} à droite et enfin sur le bouton `+`{.action}.

@@ -5,7 +5,7 @@ slug: secure_your_domain_with_dnssec
 legacy_guide_number: g609
 section: 'Security'
 order: 01
-updated: 2022-10-19
+updated: 2023-04-26
 ---
 
 **Last updated 19th October 2022**
