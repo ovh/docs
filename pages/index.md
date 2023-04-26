@@ -831,6 +831,7 @@
                 + [AI Deploy - Tutorial - How to load test your application with Locust](platform/ai/deploy_tuto_10_locust)
                 + [AI Deploy - Tutorial - Deploy a Rasa chatbot with a simple Flask app](platform/ai/deploy_tuto_11_rasa_chatbot_flask)
                 + [AI Deploy - Tutorial - Create a web service to recognize sign language with YOLOv7](platform/ai/deploy_tuto_13_streamlit_yolov7)
+                + [AI Deploy - Tutorial - Deploy a brain tumor segmentation app using Streamlit](platform/ai/deploy_tuto_14_img_segmentation_app)
     + [Data Analytics](public-cloud-data-analytics)
         + [Data Processing](public-cloud-data-analytics-data-processing)
             + [Concepts](public-cloud-data-analytics-data-processing-concepts)
