@@ -69,7 +69,7 @@ For an OVHcloud web hosting plan, you can simply tick `Authorise OVHcloud web ho
 
 > [!warning]
 > 
-> If your Cloud Databases web hosting plan is linked to a **Performance** Web hosting plan, you will need detach the Cloud Databases web hosting plan from your **Performance** Web hosting plan beforehand in order to switch to a higher plan.
+> If your Web Cloud Databases service is linked to a **Performance** web hosting plan, you will need detach it from your **Performance** web hosting plan beforehand in order to switch to a higher plan.
 >
 > To detach a Cloud Databases web hosting plan from a **Performance** web hosting plan, go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Click on the `Web Cloud`{.action} tab then on the relevant hosting plan in the `Hosting plans`{.action} section in the left-hand column. 
 >
