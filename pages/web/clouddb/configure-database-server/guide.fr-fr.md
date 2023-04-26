@@ -65,13 +65,13 @@ Pour un hébergement web OVHcloud, vous pouvez simplement cocher `Autoriser les 
 
 ![Web Cloud Databases](images/web-cloud-databases-add-ip-step3.png){.thumbnail}
 
-### Modifier votre offre Web Cloud Databases
+### Modifier votre offre Web Cloud Databases <a name="modify-ram-web-cloud-db"></a>
 
 > [!warning]
 > 
 > Si votre offre Web Cloud Databases est liée à une offre d'hébergement web **Performance**, vous devrez obligatoirement et préalablement délier l'offre Web Cloud Databases de votre hébergement **Performance** pour basculer sur une offre suppérieure.
 >
-> Pour délier une offre Web Cloud Databases associée à un hébergement web **Performance**, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur l'onglet `Web Cloud` puis sur l'hébergement concerné dans l'onglet `Hébergements`{.action} qui apparaît dans la colonne de gauche. 
+> Pour délier une offre Web Cloud Databases associée à un hébergement web **Performance**, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur l'onglet `Web Cloud`{.action} puis sur l'hébergement concerné dans l'onglet `Hébergements`{.action} qui apparaît dans la colonne de gauche. 
 >
 > Sur la nouvelle page `Informations générales`{.action} qui s'affiche, vous retrouvez un encadré intitulé `Configuration`{.action} au centre de la page. A droite de la mention `Web Cloud Databases`{.action}, cliquez sur le bouton `...`{.action} puis sur `Délier`{.action}. Choisissez la durée du renouvellement la plus courte puis poursuivez jusqu'à la validation de la commande.
 >

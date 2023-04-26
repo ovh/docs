@@ -4,14 +4,14 @@ excerpt: Znajdź najczęściej zadawane pytania dotyczące hostingu stron intern
 slug: web-hosting-faq
 section: Pierwsze kroki
 order: 05
-updated: 2022-11-28
+updated: 2023-04-24
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 15-02-2023**
+**Ostatnia aktualizacja z dnia 24-04-2023**
 
 ## Zarządzanie usługą
  
@@ -66,7 +66,22 @@ W tym celu przejdź do zakładki `Informacje ogólne`{.action} na Twoim hostingu
 Serwery wirtualne **Performance** obejmują usługę Web Cloud Databases włączoną za darmo.
 Gdy rezygnujesz lub usuwasz hosting **Performance**, przypisana do hostingu usługa Web Cloud Databases jest również wyłączona. Aby zachować usługę Web Cloud Databases, należy ją odłączyć przed rezygnacją z hostingu.<br>
 
-W tym celu kliknij zakładkę `Informacje ogólne`{.action} Twojego hostingu. W sekcji **Konfiguracja** kliknij przycisk `...`{.action} po prawej stronie "**Prywatna baza danych**". Kliknij polecenie `Odłącz`{.action} i postępuj zgodnie z instrukcjami, aby zamówić niezależną ofertę Web Cloud Databases, co pozwoli Ci zachować utworzoną wcześniej usługę Web Cloud Databases.
+W tym celu kliknij zakładkę `Informacje ogólne`{.action} Twojego hostingu. W sekcji **Konfiguracja** kliknij przycisk `...`{.action} po prawej stronie "**Web Cloud Databases**". Kliknij polecenie `Odłącz`{.action} i postępuj zgodnie z instrukcjami, aby zamówić niezależną ofertę Web Cloud Databases, co pozwoli Ci zachować utworzoną wcześniej usługę Web Cloud Databases.
+
+### Jak zwiększyć pamięć RAM usługi Web Cloud Databases powiązanej z hostingiem współdzielonym "Performance"?
+
+Aby zwiększyć pamięć RAM w ofercie WWW Cloud Databases powiązanej z hostingiem współdzielonym **Performance**, należy najpierw odłączyć ofertę Web Cloud Databases od hostingu **Performance**, aby przejść na wyższą ofertę.
+
+
+W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Przejdź do sekcji `Web Cloud`{.action}, a następnie na odpowiedni hosting po lewej stronie w zakładce `Hosting`{.action}. 
+
+Na stronie `Informacje ogólne`{.action}, która się wyświetla znajdziesz ramkę zatytułowaną `Konfiguracja`{.action} w centrum strony. Po prawej stronie pozycji `Web Cloud Databases`{.action} kliknij przycisk `...`{.action} a następnie na `Odłącz`{.action}. Wybierz najkrótszy okres odnowienia i postępuj zgodnie z instrukcjami aż do zatwierdzenia zamówienia.
+
+
+Więcej informacji znajdziesz w naszym przewodniku dotyczącym ["Konfiguracji usługi Web Cloud Databases"](/pages/web/clouddb/configure-database-server#modify-ram-web-cloud-db)
+
+
+**Operacja ta jest nieodwracalna i usługa Web Cloud Databases będzie odpłatna niezależnie od hostingu Performance.**
 
 ## Diagnostyka
 
