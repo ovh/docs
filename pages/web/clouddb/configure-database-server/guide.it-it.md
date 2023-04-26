@@ -75,7 +75,7 @@ Per gli hosting Web OVHcloud è sufficiente selezionare `Autorizza gli hosting W
 > 
 > Se la tua offerta Web Cloud Databases è associata a un'offerta di hosting Web **Performance**, per passare a un'offerta superiore è necessario svincolare preventivamente l'offerta Web Cloud Databases del tuo hosting **Performance**.
 >
-> Per creare un'offerta Web Cloud Databases associata a un hosting Web **Performance**, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=itr). Nella colonna di sinistra, clicca sulla scheda `Web Cloud`{.action} e poi su `Hosting`{.action}. 
+> Per creare un'offerta Web Cloud Databases associata a un hosting Web **Performance**, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella colonna di sinistra, clicca sulla scheda `Web Cloud`{.action} e poi su `Hosting`{.action}. 
 >
 > Nella nuova pagina `Informazioni generali`{.action} è possibile trovare un riquadro `Configurazione`{.action}. A destra della menzione `Web Cloud Databases`{.action}, clicca sul pulsante `...`{.action}, quindi su `Scollega`{.action}. Scegli la durata minima del rinnovo e prosegui fino alla conferma dell'ordine.
 >
