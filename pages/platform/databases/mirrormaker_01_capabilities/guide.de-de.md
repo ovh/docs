@@ -65,7 +65,7 @@ Here is an overview of the various plans' capabilities:
 Your choice of plan affects the number of nodes your cluster can run as well as the SLA.
 
 > [!primary]
-> Be aware that you will be able to upgrade your plan but will not be able to downgrade it afterwards.
+> Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
 
 #### Nodes
 
@@ -101,12 +101,12 @@ Ingress and Egress traffic are included in the service plans and unmetered.
 Here are some considerations to take into account when using private network:
 
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
-- When connecting from outside subnet, Openstack IP gateway must be enabled in the subnet use for the Database service. The customer is responsible for any other custom network setup.
+- When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
 
 
 ##### Authorised IPs
 
-Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic, until then your service will be unreachable.
+Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic. Until then, your service will be unreachable.
 
 #### Kafka replication and data retention
 
@@ -129,7 +129,7 @@ Data retention is only limited by your cluster storage space.
 
 #### Advanced parameters
 
-While advanced parameters are supported for Kafka, they are not for Kafka MirrorMaker.
+Though advanced parameters are supported for Kafka, they are not supported for Kafka MirrorMaker.
 
 #### Backups
 
@@ -137,7 +137,7 @@ Kafka is a streaming tool. We don't backup Kafka data.
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration could be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your Kafka MirrorMaker logs in Opensearch and metrics in Grafana (metrics have to be exported first in a time series compatible engine such as PostgreSQL or M3db). See the [Cross Service Integration documentation](https://help.ovhcloud.com/csm/en-gb-databases-cross-service-integration?id=kb_article_view&sysparm_article=KB0048804) for more information.
+Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your Kafka MirrorMaker logs in Opensearch and metrics in Grafana (metrics have to be exported first in a time series compatible engine such as PostgreSQL or M3db). See the [Cross Service Integration documentation](/pages/platform/databases/databases_07_cross_service_integration) for more information.
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month
@@ -148,7 +148,7 @@ Please note that if the database instance is deleted, logs and metrics are also 
 
 Creation of users is allowed via the Control Panel and API.
 
-For each user you can specify a username. Role by default is **admin**.
+You can specify a username for each user. By default, the role is **admin**.
 
 ## We want your feedback!
 

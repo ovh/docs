@@ -60,7 +60,7 @@ Take note of the pricing information.
 
 ### Step 5: Sizing
 
-Additional storage can be ordered and, depending on the engine, the number of nodes in your cluster could be adjusted:
+Additional storage can be ordered and, depending on the engine, the number of nodes in your cluster can be adjusted:
 
 ![Sizing](images/databases_01_order_control_panel-20230414151211.png){.thumbnail}
 

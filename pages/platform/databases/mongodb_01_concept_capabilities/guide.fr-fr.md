@@ -37,7 +37,7 @@ The Public Cloud Databases offer supports the following MongoDB versions:
 - MongoDB 5.0
 - MongoDB 6.0
 
-Please refer to the [DBMS lifecycle policy guide](https://help.ovhcloud.com/csm/fr-public-cloud-databases-lifecycle-policy?id=kb_article_view&sysparm_article=KB0048899) for recommendations on version upgrades and end of life announcements of major versions. Additionally, MongoDB recommends always installing and using the latest stable version of MongoDB. See [MongoDB Versioning](https://docs.mongodb.com/manual/reference/versioning/){.external} for more information.
+Please refer to the [DBMS lifecycle policy guide](/pages/platform/databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, MongoDB recommends always installing and using the latest stable version of MongoDB. See [MongoDB Versioning](https://docs.mongodb.com/manual/reference/versioning/){.external} for more information.
 
 ### MongoDB Drivers
 
@@ -62,7 +62,7 @@ Here is an overview of the various plans' capabilities:
 Your choice of plan affects the number of nodes your cluster can run as well as the MongoDB license type.
 
 > [!primary]
-> Be aware that you will be able to upgrade your plan but will not be able to downgrade it afterwards.
+> Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
 
 #### Nodes
 
@@ -128,11 +128,11 @@ Here are some considerations to take into account when using private network:
 
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
 - **DHCP must be enabled** in your private network in order to launch MongoDB clusters in the said private network.
-- When connecting from outside subnet, Openstack IP gateway must be enabled in the subnet use for the Database service. The customer is responsible for any other custom network setup.
+- When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
 
 ##### Authorised IPs
 
-Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic, until then your service will be unreachable.
+Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic. Until then, your service will be unreachable.
 
 #### Backups
 

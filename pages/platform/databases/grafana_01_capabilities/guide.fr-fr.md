@@ -38,7 +38,7 @@ The Public Cloud Databases offer supports the following Grafana versions:
 
 - Grafana 9.1
 
-Please refer to the [DBMS lifecycle policy guide](https://help.ovhcloud.com/csm/en-gb-public-cloud-databases-lifecycle-policy?id=kb_article_view&sysparm_article=KB0048887) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow the Grafana Release Cycle on their official page: <https://grafana.com/>.
+Please refer to the [DBMS lifecycle policy guide](/pages/platform/databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow the Grafana Release Cycle on their official page: <https://grafana.com/>.
 
 ### Grafana clients
 
@@ -92,15 +92,15 @@ Ingress and Egress traffic are included in the service plans and unmetered.
 Here are some considerations to take into account when using private network:
 
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
-- When connecting from outside subnet, Openstack IP gateway must be enabled in the subnet use for the Database service. The customer is responsible for any other custom network setup.
+- When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
 
 ##### Authorised IPs
 
-Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic, until then your service will be unreachable.
+Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic. Until then, your service will be unreachable.
 
 #### Advanced parameters
 
-You can customize your Grafana further through the use of advanced parameters. See the [Advanced parameters references documentation](https://help.ovhcloud.com/csm/en-gb-public-cloud-databases-grafana-advanced-parameters-references?id=kb_article_view&sysparm_article=KB0054641) for more information about which ones are supported.
+You can further customise your Grafana by using advanced parameters. See the [Advanced parameters references documentation](/pages/platform/databases/grafana_03_advanced_parameters_references) for more information on the supported parameters.
 
 #### Backups
 
@@ -108,7 +108,7 @@ You can customize your Grafana further through the use of advanced parameters. S
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration could be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your Grafana logs in Opensearch. See the [Cross Service Integration documentation](https://docs.ovh.com/gb/en/publiccloud/databases/cross-service-integration/) for more information.
+Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your Grafana logs in Opensearch. See the [Cross Service Integration documentation](/pages/platform/databases/databases_07_cross_service_integration) for more information.
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month

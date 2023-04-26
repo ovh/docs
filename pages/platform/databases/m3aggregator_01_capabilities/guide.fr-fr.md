@@ -40,7 +40,7 @@ The Public Cloud Databases offer supports the following M3 Aggregator versions:
 - M3 Aggregator 1.2
 - M3 Aggregator 1.5
 
-Please refer to the [DBMS lifecycle policy guide](https://docs.ovh.com/gb/en/publiccloud/databases/lifecycle-policy/) for recommendations on version upgrades and end of life announcements of major versions.
+Please refer to the [DBMS lifecycle policy guide](/pages/platform/databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions.
 
 ### Plans
 
@@ -59,7 +59,7 @@ Here is an overview of the various plans' capabilities:
 Your choice of plan affects the number of nodes your cluster can run.
 
 > [!primary]
-> Be aware that you will be able to upgrade your plan but will not be able to downgrade it afterwards.
+> Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
 
 #### Nodes and replicas
 
@@ -110,15 +110,15 @@ Ingress and Egress traffic are included in the service plans and unmetered.
 Here are some considerations to take into account when using private network:
 
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
-- When connecting from outside subnet, Openstack IP gateway must be enabled in the subnet use for the Database service. The customer is responsible for any other custom network setup.
+- When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
 
 ##### Authorised IPs
 
-Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic, until then your service will be unreachable.
+Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic. Until then, your service will be unreachable.
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration could be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your M3 Aggregator logs in Opensearch. See the [Cross Service Integration documentation](https://docs.ovh.com/gb/en/publiccloud/databases/cross-service-integration/) for more information.
+Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your M3 Aggregator logs in Opensearch. See the [Cross Service Integration documentation](/pages/platform/databases/databases_07_cross_service_integration) for more information.
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month

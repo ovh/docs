@@ -42,7 +42,7 @@ The Public Cloud Databases offer supports the following PostgreSQL versions:
 - PostgreSQL 14
 - PostgreSQL 15
 
-Please refer to the [DBMS lifecycle policy guide](https://docs.ovh.com/ca/fr/publiccloud/databases/lifecycle-policy/) for recommendations on version upgrades and end of life announcements of major versions. You can, additionally, follow EOL lifecycle for PostgreSQL version on their official page : <https://www.postgresql.org/support/versioning/>
+Please refer to the [DBMS lifecycle policy guide](https://docs.ovh.com/ca/fr/publiccloud/databases/lifecycle-policy/) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow the EOL lifecycle for PostgreSQL version on their official page : <https://www.postgresql.org/support/versioning/>
 
 ### PostgreSQL connectors
 
@@ -67,7 +67,7 @@ Here is an overview of the various plans' capabilities:
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
 
 > [!primary]
-> Be aware that you will be able to upgrade your plan but will not be able to downgrade it afterwards.
+> Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
 
 #### Nodes and replicas
 
@@ -97,7 +97,7 @@ Right now, all nodes of a given cluster should be of the same type and distribut
 
 #### Flexible storage
 
-You can increased the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](https://docs.ovh.com/ca/fr/publiccloud/databases/resize-cluster-storage/) for more information.
+you can increase the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](https://docs.ovh.com/ca/fr/publiccloud/databases/resize-cluster-storage/) for more information.
 
 #### Node template upgrade
 
@@ -136,11 +136,11 @@ Ingress and Egress traffic are included in the service plans and unmetered.
 Here are some considerations to take into account when using private network:
 
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
-- When connecting from outside subnet, Openstack IP gateway must be enabled in the subnet use for the Database service. The customer is responsible for any other custom network setup.
+- When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
 
 ##### Authorised IPs
 
-Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic, until then your service will be unreachable. 
+Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic. Until then, your service will be unreachable. 
 
 #### Maximum simultaneous connections
 
@@ -151,7 +151,7 @@ So for example on a server with 7 GB memory, you will get approximately 200 conn
 
 #### Advanced parameters
 
-You can customize your PostgreSQL further through the use of advanced parameters. See the [Advanced parameters references documentation](https://docs.ovh.com/ca/fr/publiccloud/databases/postgresql/advanced-parameters-references/) for more information about which ones are supported.
+You can further customise your PostgreSQL by using advanced parameters. See the [Advanced parameters references documentation](https://docs.ovh.com/ca/fr/publiccloud/databases/postgresql/advanced-parameters-references/) for more information on the supported parameters.
 
 #### Backups
 
