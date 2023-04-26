@@ -65,7 +65,7 @@ Pour un hébergement web OVHcloud, vous pouvez simplement cocher `Autoriser les 
 
 ![Web Cloud Databases](images/web-cloud-databases-add-ip-step3.png){.thumbnail}
 
-### Modifier votre offre Web Cloud Databases
+### Modifier votre offre Web Cloud Databases <a name="modify-ram-web-cloud-db"></a>
 
 > [!warning]
 > 

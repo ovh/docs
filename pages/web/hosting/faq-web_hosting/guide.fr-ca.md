@@ -61,7 +61,7 @@ Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/a
 Sur la page `Informations générales`{.action} qui s'affiche, vous retrouvez un encadré intitulé `Configuration`{.action} au centre de la page. A droite de la mention `Web Cloud Databases`{.action}, cliquez sur le bouton `...`{.action} puis sur `Délier`{.action}. Choisissez la durée du renouvellement la plus courte puis poursuivez jusqu'à la validation de la commande.
 
 
-Retrouvez plus d'informations dans notre guide sur la ["Configuration d'une offre Web Cloud Databases"](/pages/web/clouddb/configure-database-server#modifier-votre-offre-web-cloud-databases)
+Retrouvez plus d'informations dans notre guide sur la ["Configuration d'une offre Web Cloud Databases"](/pages/web/clouddb/configure-database-server#modify-ram-web-cloud-db)
 
 
 **Cette action est irréversible et l'offre Web Cloud Databases sera ensuite facturée indépendamment de votre hébergement web Performance.**

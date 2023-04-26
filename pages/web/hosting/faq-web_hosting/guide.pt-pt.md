@@ -78,7 +78,7 @@ Para isso, aceda à Área de Cliente OVHcloud (https://www.ovh.com/auth/?action=
 Na página `Informações gerais`{.action}, encontra-se no centro da página uma caixa intitulada `Configuração`{.action}. À direita da menção `Web Cloud Databases`{.action}, clique no botão `...`{.action} depois `Desassociar`{.action}. Escolha a duração da renovação mais curta e prossiga até à validação da encomenda.
 
 
-Para mais informações, consulte o nosso guia sobre a ["Configuração de uma oferta Web Cloud Databases"]()
+Para mais informações, consulte o nosso guia sobre a ["Configuração de uma oferta Web Cloud Databases"](/pages/web/clouddb/configure-database-server#modify-ram-web-cloud-db)
 
 
 **Esta ação é irreversível e a oferta Web Cloud Databases será depois faturada independentemente do seu alojamento web Performance.**

@@ -78,7 +78,7 @@ W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?a
 Na stronie `Informacje ogólne`{.action}, która się wyświetla znajdziesz ramkę zatytułowaną `Konfiguracja`{.action} w centrum strony. Po prawej stronie pozycji `Web Cloud Databases`{.action} kliknij przycisk `...`{.action} a następnie na `Odłącz`{.action}. Wybierz najkrótszy okres odnowienia i postępuj zgodnie z instrukcjami aż do zatwierdzenia zamówienia.
 
 
-Więcej informacji znajdziesz w naszym przewodniku dotyczącym ["Konfiguracji usługi Web Cloud Databases"]()
+Więcej informacji znajdziesz w naszym przewodniku dotyczącym ["Konfiguracji usługi Web Cloud Databases"](/pages/web/clouddb/configure-database-server#modify-ram-web-cloud-db)
 
 
 **Operacja ta jest nieodwracalna i usługa Web Cloud Databases będzie odpłatna niezależnie od hostingu Performance.**

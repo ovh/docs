@@ -76,7 +76,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 Auf der neuen Seite `Allgemeine Informationen`{.action} finden Sie mittig den Bereich `Konfiguration`{.action}. Klicken Sie rechts neben `Web Cloud Databases`{.action} auf `...`{.action} und dann auf `Abtrennen`{.action}. Wählen Sie die kürzeste Verlängerungsdauer aus und fahren Sie fort bis zur Bestätigung der Bestellung.
 
-Weitere Informationen finden Sie in unserer Anleitung zur ["Konfiguration eines Web Cloud Databases Anbgebots"]().
+Weitere Informationen finden Sie in unserer Anleitung zur ["Konfiguration eines Web Cloud Databases Anbgebots"](/pages/web/clouddb/configure-database-server#modify-ram-web-cloud-db).
 
 **Diese Aktion ist unwiderruflich. Der Web Cloud Databases Dienst wird anschließend unabhängig von Ihrem Performance Webhosting abgerechnet.**
 

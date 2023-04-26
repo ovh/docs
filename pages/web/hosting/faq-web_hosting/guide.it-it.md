@@ -78,7 +78,7 @@ accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotoma
 Nella pagina `Informazioni generali`{.action}, in alto a sinistra, è possibile trovare un riquadro `Configurazione`{.action}. A destra della menzione `Web Cloud Databases`{.action}, clicca sul pulsante `...`{.action}, quindi su `Scollega`{.action}. Scegli la durata minima del rinnovo e prosegui fino alla conferma dell'ordine.
 
 
-Per maggiori informazioni, consulta la nostra guida sulla ["Configurazione di un'offerta Web Cloud Databases"]()
+Per maggiori informazioni, consulta la nostra guida sulla ["Configurazione di un'offerta Web Cloud Databases"](/pages/web/clouddb/configure-database-server#modify-ram-web-cloud-db)
 
 
 **Questa azione è irreversibile e l'offerta Web Cloud Database sarà fatturata indipendentemente dal tuo hosting Web Performance.**

@@ -69,7 +69,7 @@ W przypadku hostingu OVHcloud możesz po prostu zaznaczyć opcję `Zezwól hosti
 
 ![cloud databases - bazy danych na instancji](images/web-cloud-databases-add-ip-step3.png){.thumbnail}
 
-### Zmień ofertę Web Cloud Databases
+### Zmień ofertę Web Cloud Databases <a name="modify-ram-web-cloud-db"></a>
 
 > [!warning]
 > 

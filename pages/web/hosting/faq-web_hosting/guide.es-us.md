@@ -72,7 +72,7 @@ Para ello, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/
 En la página Información general{.action}, encontrará un recuadro titulado `Configuración`{.action} en el centro de la página. Haga clic en el botón `...`{.action} a la derecha de la mención `Web Cloud Databases`{.action} y luego en `Desvincular`{.action}. Seleccione la duración de renovación más corta y continúe hasta la validación del pedido.
 
 
-Para más información, consulte nuestra guía ["Configuración de un plan de hosting Cloud Databases"]()
+Para más información, consulte nuestra guía ["Configuración de un plan de hosting Cloud Databases"](/pages/web/clouddb/configure-database-server#modify-ram-web-cloud-db)
 
 
 **Esta acción es irreversible y la solución Web Cloud Databases se facturará a continuación, independientemente de su plan de hosting Performance.**
