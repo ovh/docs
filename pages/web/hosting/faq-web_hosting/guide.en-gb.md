@@ -66,7 +66,7 @@ To do this, click on the `General information`{.action} tab on your web hosting 
 
 ### How do I increase the RAM for a Web Cloud Databases hosting plan linked to a Performance web hosting plan?
 
-To increase the RAM for a Cloud Databases Web hosting plan linked to a Performance hosting plan **Performance**, you will need to unlink the Cloud Databases Web hosting plan from your **Performance** hosting plan beforehand in order to switch to a higher plan.
+To increase the RAM for a Web Cloud Databases hosting plan linked to a **Performance** hosting plan, you will need to unlink the Web Cloud Databases hosting plan from your **Performance** hosting plan beforehand in order to switch to a higher plan.
 
 
 To do this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Go to the `Web Cloud`{.action} section, then to the web hosting plan concerned on the left-hand side, in the `Hosting`{.action} tab. 
