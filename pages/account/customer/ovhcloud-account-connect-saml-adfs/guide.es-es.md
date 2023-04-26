@@ -203,7 +203,7 @@ Para añadirlo, haga clic en el botón `Declarar un grupo`{.action} e introduzca
 
 ![Grupos de gestión de usuarios AD FS](images/ovhcloud_user_management_groups_2.png){.thumbnail}
 
-A continuación, compruebe que el grupo se ha añadido a su cuenta de OVHcloud en la sección `Grupos` :
+A continuación, compruebe que el grupo se ha añadido a su cuenta de OVHcloud en la sección `Grupos`:
 
 ![Grupos de gestión de usuarios AD FS](images/ovhcloud_user_management_groups_3.png){.thumbnail}
 

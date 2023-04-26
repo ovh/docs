@@ -25,7 +25,7 @@ Der Rescue-Modus ist generell an folgende Aufgaben angepasst:
 - Performance-Test der Festplatten
 - Test des Prozessors und des RAM
 
-Der erste Schritt, auch im Rescue-Modus, sollte immer darin bestehen, ein Backup Ihrer Daten, falls Sie nicht schon über aktuelle Backups verfügen.
+Falls Sie nicht schon über aktuelle Backups verfügen sollte der erste Schritt im Troubleshooting, auch im Rescue-Modus, immer darin bestehen, ein Backup Ihrer Daten zu erstellen.
 
 **Diese Anleitung erklärt, wie Sie Ihren OVHcloud Dedicated Server im Rescue-Modus neu starten.**
 
@@ -37,7 +37,7 @@ Der erste Schritt, auch im Rescue-Modus, sollte immer darin bestehen, ein Backup
 ## In der praktischen Anwendung
 
 > [!warning]
-> Bitte beachten Sie, dass Sie beim Neustart eines Servers im Rescue-Modus kein Root-Passwort erhalten, wenn Sie in Ihrer Dienstverwaltung im Kundencenter einen SSH-Standard-Schlüssel festgelegt haben. In diesem Fall müssen Sie zuerst den SSH-Schlüssel deaktivieren, bevor Sie den Server im Rescue-Modus neu starten. Dazu lesen Sie bitte den [Abschnitt](../ssh-schluessel-erzeugen/#disablesshkey) der entsprechenden Anleitung.
+> Bitte beachten Sie, dass Sie beim Neustart eines Servers im Rescue-Modus kein Root-Passwort erhalten, wenn Sie in Ihrer Dienstverwaltung im Kundencenter einen SSH-Standard-Schlüssel festgelegt haben. In diesem Fall müssen Sie zuerst den SSH-Schlüssel deaktivieren, bevor Sie den Server im Rescue-Modus neu starten. Lesen Sie dazu [diesen Abschnitt](../ssh-schluessel-erzeugen/#disablesshkey) in der zugehörigen Anleitung.
 >
 
 Der Rescue-Modus kann nur über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} aktiviert werden. Wählen Sie Ihren Server aus, indem Sie in den Bereich `Bare Metal Cloud`{.action} wechseln und ihn dann unter `Dedicated Server`{.action} anklicken.
