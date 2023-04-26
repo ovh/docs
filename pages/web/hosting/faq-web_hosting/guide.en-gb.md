@@ -72,7 +72,7 @@ To do this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?ac
 
 On the new `General information`{.action} page that appears, you will see a box labelled `Configuration`{.action} in the centre of the page. To the right of `Web Cloud Databases`{.action}, click on the `...`{.action} button then `Detach`{.action}. Select the shortest renewal duration, then continue until you confirm your order.
 
-You can find more information in our guide on [Configuring a Web Cloud Databases solution](/pages/web/clouddb/configure-database-server#modify-your-web-cloud-databases-offer).
+You can find more information in our guide on [Configuring a Web Cloud Databases solution](/pages/web/clouddb/configure-database-server#modify-ram-web-cloud-db).
 
 **This action cannot be undone, and the Cloud Databases Web hosting plan will then be billed separately from your Performance Web Hosting plan.**
 
