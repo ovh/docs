@@ -79,11 +79,11 @@ Veeam Enterprise Plus allows you to back up and restore snapshots of your virtua
 
 To learn how to install a Veeam Enterprise Plus server in your VMware on OVHcloud solution, please refer to the [OVHcloud documentation](https://docs.ovh.com/it/storage/backup/veeam/veeam-backup-replication/).
 
-### Long-term and archive storage (BETA)
+### Long-term and archive storage
 
 Some data needs to be stored and backed up with long retention for legal and/or technical reasons, ideally in a dedicated storage space with limited access once the data has been written. OVHcloud offers a Cold Archive solution for this application, featuring the highest security for your data by design.
 
-For more information, please refer to the [OVHcloud documentation](https://labs.ovhcloud.com/en/cold-archive/).
+For more information, please refer to the [OVHcloud documentation](https://www.ovhcloud.com/en/public-cloud/cloud-archive/).
 
 ### SAP Support connection
 
