@@ -963,6 +963,7 @@
             + [Tutorial - Using the htaccess file with WordPress](web/hosting/htaccess_how_to_protect_wordpress)
             + [Tutorial - Installation and configuration of Cecil, a static site generator (SSG) in PHP](web/hosting/static_website_installation_cecil)
             + [Tutorial - Add dynamic content to a static web page generated with Cecil](web/hosting/static_website_installation_cecil_api_call)
+            + [Tutorial - Using WooCommerce with WordPress](web/hosting/wordpress-woocommerce-first-steps)
         + [Cloud Web hosting plan Tutorials](web-cloud-hosting-tutorials-cloud-web)
             + [Cloud Web Tutorial - Installing Ghost on a Cloud Web hosting plan](web/cloud-web/install-ghost)
             + [Installer Etherpad sur son hébergement Cloud Web](web/cloud-web/install-etherpad)
