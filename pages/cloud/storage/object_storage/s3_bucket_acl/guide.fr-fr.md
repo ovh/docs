@@ -87,7 +87,7 @@ Les permissions gérées sont listées ci-dessous. Notez que selon le niveau (bu
 
 | Permission | Bucket level | Object level |
 | --- | --- | --- |
-| READ | permet de lister/télécharger tous les objets du bucket |  permet de lister/télécharger l'objet et ses métadonnées |
+| READ | permet de lister tous les objets du bucket |  permet de télécharger l'objet et ses métadonnées |
 | WRITE | permet la création/suppression et l'écrasement des objets dans le bucket | n/a |
 | READ_ACP | permet la lecture des ACLs du bucket | permet la lecture des ACLs de l'objet |
 | WRITE_ACP | permet la création/suppression et l'écrasement des ACLs du bucket | permet la création/suppression et l'écrasement des ACLs de l'objet |
