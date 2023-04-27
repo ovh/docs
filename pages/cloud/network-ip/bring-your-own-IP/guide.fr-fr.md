@@ -67,7 +67,7 @@ Nous acceptons les blocs IP de tailles comprises entre /24 et /19. Vous trouvere
 
 ### Avoir une plage d'IP non utilisée sur Internet <a name="haveaniprangenotinuseontheinternet"></a>
 
-La plage d'IP ne doit pas être annoncée ou utilisée sur Internet (pas d'annonce en terme de Border Gateway Protocol (BGP) sur au moins un réseau public). Vous êtes libre de ne pas satisfaire à ce prérequis, dans ce cas OVHcloud ne pourra assurer le bon fonctionnement et le support de ce service.
+La plage d'IP ne doit pas être annoncée ou utilisée sur Internet (pas d'annonce en terme de Border Gateway Protocol (BGP) sur au moins un réseau public). Vous êtes libre de ne pas satisfaire à ce prérequis, auquel cas OVHcloud ne pourra assurer le bon fonctionnement et le support de ce service.
 
 ### Avoir une plage d'IP ou numéro AS avec une réputation propre <a name="haveacleanipreputation"></a>
 
@@ -148,9 +148,10 @@ Pour plus d'informations sur les objets de routage (*route objects*), veuillez c
 
 ### Comment utiliser les adresses IP
 
-Les adresses IP importées se comporteront comme le produit Additional IP OVHcloud. Une plage d'adresses IP importée sera fractionnée en blocs de /24 pouvant être déplacés vers n’importe quel service d’un même campus.
-Pour activer l'annonce de votre plage IP importée sur Internet, il vous suffit d'affecter un de vos bloc à un produit éligible via l'espace client où l'API OVH.
-Sachez qu'une liste de contrôle d'accès spécifique sera mise en place au cours du processus de livraison du service BYOIP. Ces listes de contrôle d'accès visent à empêcher l'usurpation d'adresse IP, elles bloqueront tout trafic depuis le réseau OVHcloud vers n'importe quelle adresse IP de votre plage IP située sur un réseau externe et depuis n'importe quelle adresse de votre plage IP située sur un réseau externe vers le réseau OVHcloud, même si l'annonce BGP n'est pas encore activée côté OVHcloud. Si votre migration peut être affectée par ce processus, veuillez nous contacter et nous vous aiderons.
+Les adresses IP importées se comporteront comme le produit Additional IP OVHcloud. Une plage d'adresses IP importée sera fractionnée en blocs de /24 pouvant être déplacés vers n’importe quel service d’un même campus.<br>
+Pour activer l'annonce de votre plage IP importée sur Internet, il vous suffit d'affecter un de vos blocs à un produit éligible via l'espace client où l'API OVHcloud.<br>
+Sachez qu'une liste de contrôle d'accès spécifique sera mise en place au cours du processus de livraison du service BYOIP. Ces listes de contrôle d'accès visent à empêcher l'usurpation d'adresses IP, elles bloqueront tout trafic depuis le réseau OVHcloud vers n'importe quelle adresse IP de votre plage IP située sur un réseau externe et depuis n'importe quelle adresse de votre plage IP située sur un réseau externe vers le réseau OVHcloud, même si l'annonce BGP n'est pas encore activée côté OVHcloud.<br>
+Si votre migration peut être affectée par ce processus, veuillez nous contacter et nous vous aiderons.
 
 > [!warning]
 > Certaines opérations disponibles sur l'offre Additional IP ne seront pas disponibles sur l'offre BYOIP.
@@ -194,7 +195,7 @@ Non, une plage d'IP doit être utilisée dans un seul campus.
 
 ### Est-il possible de changer le campus d'une plage IP importée ?
 
-Il n'est possible de changer le campus d'une plage IP importée. Pour y parvenir, il vous faudrait résilier le produit et le commander à nouveau. En revanche, si vous avez choisi un campus français au moment de la commande et que la commande a été effectuée après le 1er janvier 2023, vous pourrez utiliser vos blocs IP sur tous les datacentres situés en France (Roubaix, Gravelines et Strasbourg).
+Il n'est pas possible de changer le campus d'une plage IP importée. Pour y parvenir, il vous faudrait résilier le produit et le commander à nouveau. En revanche, si vous avez choisi un campus français au moment de la commande et que la commande a été effectuée après le 1er janvier 2023, vous pourrez utiliser vos blocs IP sur tous les datacentres situés en France (Roubaix, Gravelines et Strasbourg).
 
 ### Comment savoir quels serveurs DNS OVHcloud géreront la zone ARPA de mon IP importée ?
 
