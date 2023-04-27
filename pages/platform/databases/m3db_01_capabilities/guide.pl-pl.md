@@ -13,7 +13,7 @@ updated: 2023-04-22
 
 ## Objective
 
-This page provides the technical capabilities and limitations of the Public Cloud Databases m3db offer.
+This page provides the technical capabilities and limitations of the Public Cloud Databases M3db offer.
 
 We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
 
@@ -32,15 +32,15 @@ The Public Cloud Databases offer is available in the following regions:
 
 Entire database instances have to be in the same region. Multi-AZ is currently not supported.
 
-### M3DB versions
+### M3db versions
 
-The Public Cloud Databases offer supports the following m3db versions:
+The Public Cloud Databases offer supports the following M3db versions:
 
-- m3db 1.1
-- m3db 1.2
-- m3db 1.5
+- M3db 1.1
+- M3db 1.2
+- M3db 1.5
 
-Please refer to the [DBMS lifecycle policy guide](/pages/platform/databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. M3DB recommends always installing and using the latest stable version.
+Please refer to the [DBMS lifecycle policy guide](/pages/platform/databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. M3db recommends always installing and using the latest stable version.
 
 
 ### Plans
@@ -98,6 +98,7 @@ Here are the node types you can choose from:
 | db1-30  | From 1.92 TB to 5.76 TB  | 8     | 30          |
 | db1-60  | From 3.84 TB to 11.52 TB | 16    | 60          |
 | db1-120 | From 7.68 TB to 23.04 TB | 32    | 120         |
+
 **Enterprise plans**
 
 | Name    | Storage                   | vCore | Memory (GB) |
@@ -157,7 +158,7 @@ Once your service is up and running, you will be able to specify IP addresses (o
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your M3DB logs in Opensearch and metrics in Grafana. See the [Cross Service Integration documentation](/pages/platform/databases/databases_07_cross_service_integration) for more information.
+Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your M3db logs in Opensearch and metrics in Grafana. See the [Cross Service Integration documentation](/pages/platform/databases/databases_07_cross_service_integration) for more information.
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month
