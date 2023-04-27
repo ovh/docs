@@ -111,7 +111,7 @@ Right now, all nodes of a given cluster should be of the same type and distribut
 
 #### Flexible storage
 
-you can increase the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](/pages/platform/databases/databases_11_resize_your_cluster_storage) for more information.
+You can increase the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](/pages/platform/databases/databases_11_resize_your_cluster_storage) for more information.
 
 #### Node template upgrade
 

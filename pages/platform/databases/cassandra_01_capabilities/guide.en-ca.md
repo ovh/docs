@@ -107,7 +107,7 @@ you can increase the storage of your cluster up to the maximum allowed for a giv
 
 #### Node template upgrade
 
-You can upgrade the node template of your cluster to scale your hardware resources up. This operation causes no interruption of service but be aware that you will not be able to downgrade the node template afterwards.
+You can increase the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](/pages/platform/databases/databases_11_resize_your_cluster_storage) for more information.
 
 #### Disk type
 
