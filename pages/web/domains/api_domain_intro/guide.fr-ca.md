@@ -45,7 +45,9 @@ Afin de faciliter les appels à l'API, des SDKs sont disponibles pour plusieurs 
 - C#: [https://github.com/ovh/csharp-ovh](https://github.com/ovh/csharp-ovh)
 - PHP: [https://github.com/ovh/php-ovh](https://github.com/ovh/php-ovh)
 - Perl: [https://github.com/ovh/perl-ovh](https://github.com/ovh/perl-ovh)
-- Swift: [https://github.com/ovh/swift-ovh](https://github.com/ovh/swift-ovh)
+- Swift\*: [https://github.com/ovh/swift-ovh](https://github.com/ovh/swift-ovh)
+
+\* Archivé depuis 2019
 
 <!-- prettier-ignore -->
 > [!tabs]

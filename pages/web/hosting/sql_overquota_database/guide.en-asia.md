@@ -67,7 +67,7 @@ From the `Databases`{.action} tab, click on the button `...`{.action} to the rig
 
 ![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
 
-Enter your database password in addition to the pre-filled information, then click `Run`{.action}.
+Enter your database password in addition to the pre-filled information, then click `Go`{.action}.
 
 #### 1.2 - Find the largest tables
 

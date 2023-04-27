@@ -26,7 +26,7 @@ You want to:
 
 ## Instructions <a name="instructions"></a>
 
-OVHcloud offers 3 email solutions, and the concept of account deletion differs depending on which email solution you choose.
+OVHcloud offers 2 email solutions, and the concept of account deletion differs depending on which email solution you choose.
 
 - **MX Plan**: This offer contains a certain number of email accounts as a bundle. When you delete an account, you free up an account "slot" of the email service.
 - **Hosted Exchange**: Each of these offers consist of the service itself and individually billed email accounts. If you want to delete an email account, you will need to **reset** it. Once you have reset your email account, you can use this account again to create a new email address. You can also [cancel the subscription](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/manage-exchange-billing/#deleting-accounts) for this account if you wish to permanently delete it.

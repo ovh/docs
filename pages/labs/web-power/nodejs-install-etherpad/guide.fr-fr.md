@@ -4,7 +4,7 @@ slug: nodejs-installer-etherpad
 excerpt: Découvrez comment installer Etherpad sur votre hébergement web POWER
 section: Node.js
 order: 2
-updated: 2021-02-04
+updated: 2023-04-27
 ---
 
 <style>
@@ -27,7 +27,7 @@ updated: 2021-02-04
  }
 </style>
 
-**Dernière mise à jour le 03/02/2021**
+**Dernière mise à jour le 27/04/2023**
 
 ## Objectif
 
@@ -61,7 +61,7 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 cd www
 git init
 git remote add origin https://github.com/ether/etherpad-lite.git
-git pull origin release/1.8.6
+git pull origin refs/tags/1.8.6
 ```
 
 > [!alert]
@@ -88,7 +88,7 @@ v14.15.4
 ~ $ cd www
 ~/www $ git init
 ~/www $ git remote add origin https://github.com/ether/etherpad-lite.git
-~/www $ git pull origin release
+~/www $ git pull origin refs/tags/1.8.6
 remote: Enumerating objects: 2, done.
 remote: Counting objects: 100% (2/2), done.
 remote: Compressing objects: 100% (2/2), done.
@@ -116,4 +116,4 @@ Clearing minified cache...
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
 
-**Pour discuter avec les autres utilisateurs du lab et avec l'équipe POWER Web Hosting, venez sur [notre room Gitter](https://gitter.im/ovh/power-web-hosting).**
+**Venez sur [Discord](https://discord.gg/ovhcloud) sur notre room web-hosting-power pour discuter avec les autres utilisateurs du lab et avec l'équipe POWER Web Hosting.**
