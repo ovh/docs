@@ -16,7 +16,7 @@ You can use **Single Sign-On** (SSO) to connect to your OVHcloud account. To ena
 
 - Being an administrator of an Okta service
 - An [OVHcloud account](/pages/account/customer/ovhcloud-account-creation)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 ## Instructions
 
@@ -80,7 +80,7 @@ Your Okta service now trusts OVHcloud as a service provider. The next step is to
 
 ### Registering Okta into the OVHcloud account and configuring the connection
 
-To add Okta as a trusted identity provider, you need to provide the identity provider metadata in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+To add Okta as a trusted identity provider, you need to provide the identity provider metadata in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
 
 Once logged in, click your profile at the top right.
 
@@ -143,7 +143,7 @@ You will then be able to log out of your account and log back in with your Okta 
 
 ### Connecting via SSO
 
-On [the OVHcloud login page](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), enter your [login](/pages/account/customer/ovhcloud-account-creation#what-is-my-nic-handle) followed by **/idp** without a password and click the `Login`{.action} button.
+On [the OVHcloud login page](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), enter your [login](/pages/account/customer/ovhcloud-account-creation#what-is-my-nic-handle) followed by **/idp** without a password and click the `Login`{.action} button.
 
 ![Connection to OVHcloud federation](images/ovhcloud_federation_login_1.png){.thumbnail}
 
