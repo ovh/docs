@@ -90,6 +90,10 @@ Here are the node types you can choose from:
 
 Right now, all nodes of a given cluster should be of the same type and live in the same regions.
 
+#### Flexible storage
+
+You can increase the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](/pages/platform/databases/databases_11_resize_your_cluster_storage) for more information.
+
 #### Disk type
 
 The type of storage available may vary according to the region your cluster lives in: see [Availability of Public Cloud products](https://www.ovhcloud.com/en/public-cloud/regions-availability/) for more information about block storage type availability depending on region. Thus, your cluster may be backed by e.g. *High Speed* or *High Speed Gen2* block storage.
