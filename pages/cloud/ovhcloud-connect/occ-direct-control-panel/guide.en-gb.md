@@ -18,7 +18,7 @@ With OVHcloud Connect, you can link your company network to your private OVHclou
 ## Requirements
 
 > [!warning]
-> To ensure correct operation of this service, you must be aware of the [technical capabilities and limitations of the OVHcloud Connect solution](../occ-limits/) and configure your network devices accordingly.
+> To ensure correct operation of this service, you must be aware of the [technical capabilities and limitations of the OVHcloud Connect solution](/pages/cloud/ovhcloud-connect/occ-limits) and configure your network devices accordingly.
 >
 
 - An [OVHcloud Connect Direct solution](https://www.ovhcloud.com/en-gb/network-security/ovhcloud-connect/)
