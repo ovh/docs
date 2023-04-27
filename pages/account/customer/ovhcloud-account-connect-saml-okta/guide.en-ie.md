@@ -29,7 +29,7 @@ You can use **Single Sign-On** (SSO) to connect to your OVHcloud account. To ena
 
 Your Okta service acts as an identity provider. Requests to authenticate your OVHcloud account will only be accepted if you have first declared it as a trusted third party.
 
-This means that it must be added as `Applications`.
+This means that it must be added to `Applications`.
 
 Log in to the Okta administration interface with your administrator account.
 
