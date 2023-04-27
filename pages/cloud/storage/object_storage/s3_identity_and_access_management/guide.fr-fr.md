@@ -22,7 +22,7 @@ Ce guide a pour objectif de vous montrer la gestion de vos identités et accès 
 
 Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Object Storage`{.action} dans le menu de gauche.
 
-### Création d'un utilsateur
+### Création d'un utilisateur
 
 Cliquez sur `Créer un utilisateur`{.action}.
 
