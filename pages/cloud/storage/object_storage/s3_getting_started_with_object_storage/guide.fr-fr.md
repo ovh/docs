@@ -4,10 +4,10 @@ slug: s3/getting-started-with-object-storage
 excerpt:
 section: Guides généraux pour débuter
 order: 020
-updated: 2022-09-27
+updated: 2023-04-28
 ---
 
-**Dernière mise à jour le 27/09/2022**
+**Dernière mise à jour le 28/04/2023**
 
 ## Objectif
 
@@ -85,9 +85,7 @@ Voici les valeurs de configuration que vous pouvez définir spécifiquement  :
 | max_bandwidth | Integer | **Défaut :** None | La bande passante maximale qui sera consommée pour le chargement et le téléchargement de données vers et depuis vos buckets. |
 | verify_ssl | Boolean | **Défaut :** true | Active / Désactive la vérification des certificats SSL |
 
-
-Pour connaître la liste des endpoints par région et par classe de stockage, vous pouvez vous référer à [cette page](https://help.ovhcloud.com/csm/fr-public-cloud-storage-s3-location?id=kb_article_view&sysparm_article=KB0047389).
-
+Pour connaître la liste des endpoints par région et par classe de stockage, vous pouvez vous référer à [cette page](/pages/cloud/storage/object_storage/s3_location).
 
 #### Utilisation
 

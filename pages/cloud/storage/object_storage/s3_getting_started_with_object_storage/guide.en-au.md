@@ -4,10 +4,10 @@ slug: s3/getting-started-with-object-storage
 excerpt:
 section: General guides to start
 order: 020
-updated: 2022-09-27
+updated: 2023-04-28
 ---
 
-**Last updated September 27<sup>th</sup> 2022**
+**Last updated April 28<sup>th</sup> 2023**
 
 ## Objective
 
@@ -85,11 +85,13 @@ Here are the configuration values that you can specifically set:
 | max_bandwidth | Integer | **Default:** None | The maximum bandwidth that will be used to load and download data to and from your buckets. |
 | verify_ssl | Boolean | **Default:** true | Enable / Disable SSL certificate verification |
 
+For a list of endpoints by region and storage class, refer to [this page](/pages/cloud/storage/object_storage/s3_location).
+
 #### Usage
 
 > [!primary]
 >
-> If you have not installed `awscli-plugin-endpoint`, you must add `--endpoint-url https://s3.<region_in_lowercase>.perf.cloud.ovh.net` to the command line.
+> If you have not installed `awscli-plugin-endpoint`, you must add `--endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net` to the command line.
 >
 
 > [!primary]
@@ -101,7 +103,7 @@ Here are the configuration values that you can specifically set:
 
 ```bash
 aws s3 mb s3://<bucket_name>
-aws --endpoint-url https://s3.<region_in_lowercase>.perf.cloud.ovh.net --profile default s3 mb s3://<bucket_name>
+aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3 mb s3://<bucket_name>
 ```
 
 **Listing your buckets**
