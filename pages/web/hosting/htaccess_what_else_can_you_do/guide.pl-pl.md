@@ -4,8 +4,10 @@ excerpt: 'Przewodnik ten przedstawia inne operacje, które są możliwe dzięki 
 slug: hosting_www_htaccess_-_inne_operacje
 section: 'Przekierowania i uprawnienia dostępu'
 order: 04
-updated: 2022-10-05
+updated: 2020-05-05
 ---
+
+**Ostatnia aktualizacja z dnia 05-05-2020**
 
 ## Blokada listowania zawartości katalogu
 Aby internauci nie mogli listować plików zawartych w danym katalogu, w którym nie ma pliku index (.cgi, .html, .php, itp.)  ....), utwórz plik .htaccess z poniższą linią:

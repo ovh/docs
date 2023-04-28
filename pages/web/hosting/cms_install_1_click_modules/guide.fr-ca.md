@@ -116,10 +116,10 @@ Le reste des informations demandées pour la base de données sont les suivantes
 
 - *Nom de la base* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
+- *Port* : indiquez systématiquement le numéro **3306** (port par défaut) pour une base de données incluse avec votre hébergement web. Pour une base présente sur une instance Web Cloud Databases, consultez [ce guide](https://docs.ovh.com/ca/fr/clouddb/debuter-avec-clouddb/).
+
 - *Nom d'utilisateur* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
 Pour les bases de données créées sur une offre Web Cloud Databases, référez-vous aux informations indiquées dans [ce guide](https://docs.ovh.com/ca/fr/clouddb/debuter-avec-clouddb/).
-
-- *Port* : placez systématiquement le numéro **3306** (port par défaut) pour une base de données incluse avec votre hébergement web. Pour une base présente sur une instance Web Cloud Databases, consultez [ce guide](https://docs.ovh.com/ca/fr/clouddb/debuter-avec-clouddb/).
 
 - *Mot de passe* : il vous a été envoyé par e-mail lors de la création de la base de données. Il est possible que vous l'ayez modifié entre temps.
 
@@ -165,7 +165,7 @@ L'installation peut prendre une dizaine de minutes.
 
 Une fois terminée, vous recevrez un e-mail confirmant la bonne installation du CMS. Cet e-mail vous invitera à vous connecter à l'interface d'administration de votre CMS. Vous pourrez ainsi modifier le thème de votre site web et y publier vos premiers contenus.
 
-> [!Warning]
+> [!warning]
 >
 > Le support OVHcloud n'effectue pas d'accompagnement sur l'utilisation des CMS. Nous les proposons uniquement en installation **en 1 clic**.
 >

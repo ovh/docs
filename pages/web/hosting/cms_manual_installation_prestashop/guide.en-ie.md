@@ -1,244 +1,172 @@
 ---
-title: 'CMS, manually install PrestaShop'
-excerpt: How to manually install PrestaShop
+title: "Tutorial - Installing PrestaShop manually"
+excerpt: "Find out how to manually install PrestaShop"
 slug: cms_manually_install_prestashop
 section: CMS
-order: 06
-updated: 2022-12-01
+order: 07
+updated: 2023-03-27
 ---
 
+**Last updated 27th March 2023**
 
-## Part 1: prepare to install
+## Objective
 
-## Necessary tools
-To install the PrestaShop platform on your web hosting package, we suggest that you get some FTP software such as FileZilla (it's free)
+This tutorial will help you install PrestaShop CMS (Content Management System) manually in just a few steps.
 
-## The credentials you need
-Make sure that you have your nic-handle and password, so that you can log in to your control panel if you need to.
+[!warning]
+>
+> OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
+>
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-ie/directory/) or the [PrestaShop support](https://www.prestashop.com/en/support){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+>
 
+> [!success]
+>
+> To install PrestaShop **automatically** from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), please refer to our documentation on [installing a 1-click module](https://docs.ovh.com/ie/en/hosting/web_hosting_web_hosting_modules/).
+>
+> To manually **install another CMS** (WordPress, Joomla!, Drupal), please refer to our documentation on [installing a CMS manually](https://docs.ovh.com/ie/en/hosting/hosting_install_your_cms_manually/).
+>
 
-- Retrieve your FTP ID and password so that you can connect to the server.
-There is a guide showing you [how to get your FTP details](../modify-ftp-user-password/).
+**This tutorial explains how to install your PrestaShop CMS manually.**
 
-- You also need to have your SQL database ID and password so you can log on to the database.
-There is a guide showing you [how to get your SQL credentials](../creating-database/)
+## Requirements
 
+- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) that contains at least one database
+- A [domain name](https://www.ovhcloud.com/en-ie/domains/)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
-![prestashop](images/3158.png){.thumbnail}
+## Instructions
 
+### Step 1: Prepare for the installation <a name="step1"></a>
 
-## Part 2: get source files
+To install the **PrestaShop** CMS on your [web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/), you will need to make some preparations.
 
-- Go to the [PrestaShop](http://www.prestashop.com/) website. 
+Follow **all steps** described in our tutorial on [installing a CMS manually](https://docs.ovh.com/ie/en/hosting/hosting_install_your_cms_manually/) before continuing with step 2 below.
 
-There should be a link that lets you download the last stable version of the CMS
+### Step 2: Finalise the installation <a name="step2"></a>
 
+> [!success]
+>
+> Before you continue with the installation, clear your web browser cache to avoid any errors.
+>
 
+If you have not downloaded the latest available version of PrestaShop, the following page will appear:
 
-The file will usually be compressed (zipped) so you have to be able to extract the files to your computer. There is lots of help available online.
+![PrestaShop installation step 1](images/Prestashop-install-update-version.png){.thumbnail}
 
-![prestashop](images/3159.png){.thumbnail}
+Click `No thanks`{.action} if you want to keep the version of PrestaShop you just downloaded or `Yes please!`{.action} if you want to use the latest version of the CMS.
 
+#### 2.1 Access your Drupal website via your browser
 
-## Part 3: Set up files on your hosting package via FTP
+Enter your domain name into the address bar of your web browser.
 
-## Open the folder which you want to download the zipped folder into.
-Right-click on the folder, then select "Extract all...".
+If the Drupal source files have been correctly placed in your root folder, the Drupal page for selecting the language appears:
 
-Indicate a destination in order to extract your files in a new folder. 
+![PrestaShop installation step 2](images/Prestashop-install-select-language.png){.thumbnail}
 
-There are a number of tutorials and types of decompression software available on the internet to help you achieve this. 
-Check them out if you are stuck at this stage.
+Select the site language and click `Next`{.action}.
 
+#### 2.2 Confirm the terms and conditions
 
-The target folder will be called "PrestaShop"
+Review the *license agreements*, check the `I agree to the above terms and conditions`{.action} box, then click `Next`{.action}.
 
-![prestashop](images/3160.png){.thumbnail}
+![PrestaShop installation step 3](images/Prestashop-install-licence-agreement-3.png){.thumbnail}
 
-## Log on to the web hosting package via FTP
-To get the WordPress files in to your hosting package, you first have to log on. 
+#### 2.3 Enter your online store details
 
-Follow this guide on [connecting to a hosting package in FTP](../log-in-to-storage-ftp-web-hosting/).
+PrestaShop will request a series of information about your future online store:
 
-![prestashop](images/3161.png){.thumbnail}
+![PrestaShop installation step 4](images/Prestashop-install-store-infos-4.png){.thumbnail}
 
-## Transfer the files via FTP
-Follow this steps to upload your files using FTP
+**Store information**
 
-## Step 1
-Once you are logged in to FileZilla. 
+- *Shop name*: Enter your online store name.
+- *Main activity*: Select your business sector from the drop-down menu.
+- *Country*: Select your country.
+- *Enable SSL*: Tick **Yes** to force your URL to be rewritten to https://. You will need to have an active SSL certificate on your Web Hosting plan or domain name. For more information on this, please refer to our guide on [Managing an SSL certificate on an OVHcloud Web Hosting plan](https://docs.ovh.com/ie/en/hosting/ssl-certificates-on-web-hosting-plans/).
 
-In the "Local site" section, which refers to the list of files on your computer, open the unzipped file entitled "PrestaShop" where your CMS files will be located. 
+**Your account**
 
-In the "Remote site" section, which refers to your OVHcloud web hosting package, open the "www" folder. It is this folder that you need to upload your CMS files to. 
+- *First name*: Enter your first name.
+- *Last name*: Enter your name.
+- *E-mail address*: Enter your email address.
+- *Shop password*: Choose a password to access your online store's administration panel (back office).
+- *Re-type to confirm*: Type the password again.
 
-If this folder does not exist you can create it.
+Review the information entered, then click `Next`{.action}.
 
-Your files must be uploaded to the "www" folder or you will not be able to access the installation procedure from your domain name.
+### 2.4 Install the default content for your store
 
-![prestashop](images/3162.png){.thumbnail}
+PrestaShop allows you to install content and modules for your future e-commerce site:
 
-## Step 2
-Once these folders are open:
+![PrestaShop installation step 5](images/Prestashop-install-store-content-5.png){.thumbnail}
 
-In the "Local site" you will find all the files that you need to install your PrestaShop CMS.
+Make your choices and click `Next`{.action}.
 
-To select them all, press CTRL+A.
+### 2.5 Link your PrestaShop to your OVHcloud database
 
-Then drag and drop the files in to the "www" folder in the "Remote site" section. 
+![PrestaShop installation step 6](images/Prestashop-install-db-config-6.png){.thumbnail}
 
-It is very likely that the "www". folder is not empty. You do not have to delete the files within it. We will go back to this point further on in the guide.
+Have your database login details ready (if necessary, see **Step 1.4** in the [manual installation of a CMS tutorial](https://docs.ovh.com/ie/en/hosting/hosting_install_your_cms_manually/)).
 
-![prestashop](images/3163.png){.thumbnail}
+Enter the information requested for the database:
 
-## Step 3
-The files are being transferred. 
+- *Database server address*: Enter the name of your database server, specified in the installation email and displayed in your OVHcloud Control Panel.
 
-Wait until all of the files are dropped in to the remote FTP server. This could take a few minutes.
+> [!primary]
+> 
+> - The server name of a database included with your web hosting plan usually has this format: `NameOfYourDatabase.mysql.db`.
+>
+> - The server name of a Web Cloud Databases database starts with your OVHcloud NIC handle and is in the following format: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` where **"XXX"** is to be replaced by the reference of your Web Cloud Databases service.
+>
 
-Once the transfer is complete, make sure that all of the files and folders have been correctly transferred. 
+- *Database name*: This name was defined when the database was created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
-This is the end of the section devoted to transferring files via FTP.
+- *Database login*: It is identical to the database name if you are using a database included with your web hosting plan. For databases created on Web Cloud Databases, please refer to the information in **Step 1.4** in the [manual installation of a CMS tutorial](https://docs.ovh.com/ie/en/hosting/hosting_install_your_cms_manually/).
 
-![prestashop](images/3164.png){.thumbnail}
+- *Database password*: You defined it yourself when you created your database. You may have modified it in the meantime.
 
+- *Tables prefix*: If you are installing with a brand new database, enter your preferred prefix. If you are using a database that has already been used by another website, please refer to **Step 1.4** in the tutorial on [manually installing a CMS](https://docs.ovh.com/ie/en/hosting/hosting_install_your_cms_manually/) to avoid entering a table prefix that has already been used in your database.
 
-## Part 4: Link with the database
+- *Drop existing tables*: **Uncheck this box if you are already using your database with another website**.
 
-## Follow the PrestaShop installation steps
+>[!alert]
+>
+> If you leave the **Drop existing tables** check box ticked, it will delete all the tables already in your database.
+>
 
-- Before continuing with the installation, clear your browser's cash, to avoid any errors. 
+Click `Test your database connection now!`{.action} to verify the entered settings:
 
+![PrestaShop installation step 6-1](images/Prestashop-install-db-config-6-1.png){.thumbnail}
 
-In order to link your database to PrestaShop, you have to follow the CMS install steps.
+If the message "Your database is connected" appears, click `Next`{.action}. Otherwise, check the settings you entered until the connection is working. If required, please refer to **Step 1.4** in the tutorial on [manually installing a CMS](https://docs.ovh.com/ie/en/hosting/hosting_install_your_cms_manually//).
 
-## Step 1
-Go to your domain name. 
+#### 2.6 Complete the PrestaShop installation
 
-Select the right language to install PrestaShop. 
+The final step is a summary of the installation you have just carried out:
 
-Click "Next" to continue.
+![PrestaShop installation step 7](images/Prestashop-install-resume-7.png){.thumbnail}
 
-![prestashop](images/3165.png){.thumbnail}
+Retrieve your PrestaShop login details before you leave the page.
 
-## Step 2
-Tick "I accept the terms and conditions below".
+>[!warning]
+>
+> **For security reasons, we recommend deleting the installation folder located on your FTP space.**
+>
+> To do this, please refer to our guide [“How to log in to your OVHcloud web hosting plan’s FTP storage space”](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting//) and visit [PrestaShop forum](https://www.prestashop.com/forums/){.external} to ensure that you delete the correct files.
+>
 
-Click "Next".
+> [!success]
+>
+> You can now start creating content for your PrestaShop website!
+>
 
-![prestashop](images/3166.png){.thumbnail}
+## Go further <a name="go-further"></a>
 
-## Step 3
-You will be prompted for further information on the store which you are about to create.
-Fill in the following fields:
+[PrestaShop official website](https://prestashop.com)
 
-Shop name: the name that you choose can impact your SEO. 
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
 
-Main activity: the main retail sector. 
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 
-Country: select your shop's country. 
-
-"Name: the name of the administrator.
-
-Email address: enter a valid email address so that you can access the shop administration.
-
-Password: Enter the password for administrative access (minimum 8 characters).
-
-Password confirmation: enter your password again. 
-
-Subscribe to the PrestaShop newsletter: tick the box if you want to receive the PrestaShop newsletter.
-
-Click "Next" to validate the information concerning PrestaShop.
-
-![prestashop](images/3167.png){.thumbnail}
-
-## Step 4
-Get your database credentials (see the beginning of this guide)
-
-Enter the information requested concerning the database:
-
-Database server address: enter the name of your database's server, as indicated in the installation email or your customer account. 
-
-Database: chosen when you created the database in the customer account. 
-
-ID: database ID. 
-
-Database password: you will have been sent this by email when you created the database - you may have modified this. 
-
-Table prefix: useful for installing PrestaShop lots of times on the same database. In this case, you have to enter a different prefix for each installation.
-
-Important: the database IDs are not automatically sent when installing the hosting package. To receive them, you have to enable the database in your customer account.
-
-Once the details are complete, you can test the database login
-
-Click "Next" to confirm login details.
-
-
-- These are the final steps for creating a link between your database and PrestaShop. You now just have to complete the installation itself.
-
-
-
-![prestashop](images/3168.png){.thumbnail}
-
-
-## Completion
-
-## Complete the istallation steps
-Take the following steps to finish insallting the PrestaShop store.
-
-## Step 1
-Wait for the installation to finish. Once it is at 100% a new window will appear.
-
-![prestashop](images/3169.png){.thumbnail}
-
-## Step 2
-Your PrestaShop store has now been installed!
-
-You can now log in and start to work on your store. Click "Manage your store".
-
-
-- Please note, for security reasons you have to manually delete the "install" folder on your hosting package in the "www" folder, in order to log in.
-
-
-
-![prestashop](images/3170.png){.thumbnail}
-
-## PrestaShop administration
-A look at the PrestaShop administration panel.
-
-![prestashop](images/3171.png){.thumbnail}
-
-
-## Useful information
-OVHcloud support is not authorised to answer questions about PrestaShop configuration.
-
-Please consult the forum dedicated to PrestaShop
-
-
-- Here is the link to the [support forum](https://www.prestashop.com/forums/) dedicated to this CMS.
-
-
-
-## Typical error: site under construction
-You have set up your files on FTP, however the "site under construction" page is still displayed. 
-
-When your hosting package was installed, OVHcloud set up a "waiting" page while you were uploading files to your site. 
-
-If you only upload your own files to the "www" folder and do not delete the OVHcloud content first, then you may encounter this problem.
-
-To fix this issue, you will need to remove or rename the "index.html" file that was created by OVHcloud.
-
-It may be useful to simply just rename the file so that you can re-enable it at any time, and use it as your own "waiting" page.
-
-Something else to note: Your website's files must be uploaded to the "www" folder in order for them to display your website.
-
-![prestashop](images/3172.png){.thumbnail}
-
-## Typical error: forgot to delete the "install folder"
-
-- Please note, for security reasons you have to manually delete the "install" folder on your hosting package in the "www" folder. Once you have done this you will be able to log in once installation is complete.
-
-
-
-![prestashop](images/3173.png){.thumbnail}
-
+Join our community of users on <https://community.ovh.com/en/>. 

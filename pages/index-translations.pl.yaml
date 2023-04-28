@@ -100,6 +100,7 @@ public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Tr
 public-cloud-containers-orchestration-managed-kubernetes-k8s-tutorials: Tutorials
 public-cloud-containers-orchestration-managed-kubernetes-k8s-user-guides: User guides
 public-cloud-containers-orchestration-managed-kubernetes-k8s-network: Network
+public-cloud-containers-orchestration-managed-kubernetes-k8s-backup-and-restore: Backup and Restore
 public-cloud-containers-orchestration-managed-kubernetes-k8s-observability-monitoring: Monitoring & Observability
 public-cloud-containers-orchestration-managed-kubernetes-k8s-traffic-management: Traffic management
 public-cloud-containers-orchestration-managed-kubernetes-k8s-storage: Storage
@@ -164,6 +165,7 @@ public-cloud-compute-instance-management-getting-started: Zarządzanie instancja
 public-cloud-compute-instance-management-control-panel: Zarządzanie w Panelu klienta OVHcloud
 public-cloud-compute-instance-management-horizon: Zarządzanie w interfejsie Horizon
 public-cloud-compute-instance-management-openstack: Zarządzanie w OpenStack API
+public-cloud-compute-block-storage: Block Storage
 public-cloud-compute-tutorials: Tutorials
 public-cloud-network: Public Cloud Network Services
 public-cloud-network-concepts: Koncepcje
@@ -205,11 +207,13 @@ web-cloud-domains-dns: DNS
 web-cloud-domains-dns-dns-and-dns-zone: Strefy DNS i DNS
 web-cloud-domains-dns-security: Bezpieczeństwo
 web-cloud-domains-domain-names: Nazwy domen
+web-cloud-domains-domain-names-general-guides: Przewodniki
 web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Zmiana właściciela nazwy domeny (handel)
 web-cloud-domains-domain-names-security: Bezpieczeństwo
 web-cloud-domains-domain-names-transferring-between-registrars: Przenoszenie między rejestrami
 web-cloud-domains-domain-names-troubleshooting: Diagnostyka
 web-cloud-domains-domain-names-tutorials: Tutoriale
+web-cloud-domains-domain-names-api: API
 web-cloud-internet: Internet
 web-cloud-internet-internet-access: Dostęp do Internetu
 web-cloud-internet-internet-access-advanced-setup: Konfiguracja zaawansowana
@@ -317,6 +321,7 @@ storage-block-storage: Block Storage
 storage-block-storage-cloud-disk-array: Cloud Disk Array
 storage-backup-and-disaster-recovery-solution: Backup and disaster recovery solution
 storage-backup-and-disaster-recovery-solution-veeam: Veeam
+storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
 network-byoip: Bring your own IP (BYOIP)
 network-additional-ip: Additional IP
 network-ovhcloud-connect: OVHcloud Connect

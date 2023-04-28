@@ -8,7 +8,7 @@ updated: 2022-03-25
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 25/03/2022**
@@ -41,7 +41,7 @@ La dashboard che ti viene presentata contiene informazioni importanti sul tuo se
 
 Per l’attuale gamma di VPS, prosegui nella lettura di questa guida, alla sezione: **Iniziare a utilizzare un VPS (gamma attuale)**.
 
-Per un modello VPS meno recente, prosegui nella lettura di questa guida: [Iniziare a utilizzare un VPS (gamma meno recente)](./#iniziare-a-utilizzare-un-vps-gamma-meno-recente_1)
+Per un modello VPS meno recente, prosegui nella lettura di questa guida: [Iniziare a utilizzare un VPS (gamma meno recente)](./#iniziare-a-utilizzare-un-vps-gamma-meno-recente)
 
 ### Iniziare a utilizzare un VPS (gamma attuale)
 
@@ -83,7 +83,7 @@ passwd: password updated successfully
 
 #### Attiva le connessioni root
 
-Per motivi di sicurezza, la connessione con l'utente "root" viene disattivata di default. Per autorizzare questo tipo di connessioni, consulta questa [guida](https://docs.ovh.com/it/vps/root-password/#attiva-la-password-di-root_1).
+Per motivi di sicurezza, la connessione con l'utente "root" viene disattivata di default. Per autorizzare questo tipo di connessioni, consulta questa [guida](https://docs.ovh.com/it/vps/root-password/#attiva-la-password-di-root).
 
 #### Riavvio del tuo VPS (gamma attuale) <a name="reboot-current-range"></a>
 

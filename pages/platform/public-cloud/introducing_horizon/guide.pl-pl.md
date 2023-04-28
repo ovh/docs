@@ -8,7 +8,7 @@ updated: 2022-03-16
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 16-03-2022**
@@ -30,7 +30,7 @@ Interfejs Horizon, natywnie proponowany z OpenStack, został dostosowany przez O
 
 Otwórz stronę logowania do interfejsu [Horizon](https://horizon.cloud.ovh.net/auth/login/) i wprowadź wcześniej utworzone [identyfikatory OpenStack](../tworzenie-i-usuwanie-uzytkownika-openstack/), a następnie kliknij `Connect`{.action}.
 
-Po otwarciu projektu `Public Cloud`{.action} w [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w menu "Management Interfaces" po lewej stronie kliknij pozycję `Horizon`{.action}.
+Po otwarciu projektu `Public Cloud`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w menu "Management Interfaces" po lewej stronie kliknij pozycję `Horizon`{.action}.
 
 ### Wybór regionu centrum danych
 

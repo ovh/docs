@@ -7,7 +7,7 @@ updated: 2021-01-08
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 12/01/2021**
@@ -23,7 +23,7 @@ Se configuri il tuo server dedicato come server DNS, puoi utilizzare il DNS OVHc
 
 - Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external}
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/){.external} di gestione amministrativa o tecnica
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 > [!warning]
 >

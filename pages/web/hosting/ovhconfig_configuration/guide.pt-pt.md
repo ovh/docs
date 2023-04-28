@@ -75,7 +75,7 @@ Personalize os valores das variáveis em função da configuração que pretende
 |app.engine.version|Permite definir a [versão de PHP](https://www.ovhcloud.com/pt/web-hosting/uc-programming-language/){.external} utilizada pelo alojamento. Indique a versão que pretende utilizar.|
 |http.firewall|Permite ativar ou desativar a [firewall fornecida com os alojamentos web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/options/){.external}. Insira “security” para ativar ou “none” para desativar.|
 |environment|Permite gerir o comportamento da cache dos ficheiros estáticos do seu website, assim como o tratamento dos erros PHP. Insira “production” para maximizar a implementação de cache e ocultar os erros PHP, ou “development” para não aplicar nenhuma cache e apresentar os erros PHP.|
-|container.image|Permite alterar o ambiente de execução utilizado pelo alojamento. Indique um motor à sua escolha. Para mais informações, consulte a secção [“Descobrir as configurações disponíveis”](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web/#descobrir-as-configuracoes-disponiveis_1){.external} do manual "Alterar a configuração do alojamento web".|
+|container.image|Permite alterar o ambiente de execução utilizado pelo alojamento. Indique um motor à sua escolha. Para mais informações, consulte a secção [“Descobrir as configurações disponíveis”](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web/#descobrir-as-configuracoes-disponiveis){.external} do manual "Alterar a configuração do alojamento web".|
 
 > [!warning]
 >

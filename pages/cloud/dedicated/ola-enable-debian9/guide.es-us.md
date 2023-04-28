@@ -7,6 +7,10 @@ order: 2
 updated: 2022-01-07
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
 **Última actualización: 07/01/2022**
 
 ## Objetivo
@@ -17,7 +21,7 @@ La tecnología OVHcloud Link Aggregation (OLA) está diseñada para aumentar la 
 
 ## Requisitos
 
-- [Configurar un NIC para el servicio OVHcloud Link Aggregation en el área de cliente de OVHcloud](../ola-manager){.external}
+- [Configurar un NIC para el servicio OVHcloud Link Aggregation en el área de cliente de OVHcloud](../ola-manager){.external}.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 > [!warning]

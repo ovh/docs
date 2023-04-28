@@ -3,8 +3,10 @@ title: 'Comment copier des données d’un serveur dédié vers un autre en util
 slug: copier-donnees-serveur-rsync
 excerpt: 'Copiez facilement les données de votre serveur dédié vers un autre grâce à rsync'
 section: Tutoriel
-updated: 2022-06-17
+updated: 2022-02-16
 ---
+
+**Dernière mise à jour le 16/02/2022**
 
 ## Introduction
 
@@ -24,14 +26,14 @@ Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH
 
 ### Ce que vous devez savoir
 
-*     Avoir des notions d'administration Linux.
+*     Avoir des notions d'administration Linux
 *     Savoir installer de nouveaux paquets 
 *     Savoir se connecter en SSH
 
 
 ### Ce que vous devez avoir
 
-*     Posséder au moins deux serveurs dédiés OVHcloud fonctionnant sous une distribution GNU/Linux.
+*     Posséder au moins deux serveurs dédiés OVHcloud fonctionnant sous une distribution GNU/Linux
 *     Disposer d'un accès *root* sur la machine source
 *     Disposer d'un accès *SSH* sur la machine de destination
 

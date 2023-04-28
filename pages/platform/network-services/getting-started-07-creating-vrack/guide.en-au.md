@@ -199,7 +199,7 @@ Once done, click on `Create`{.action} to start the process.
 
 #### Creating a private network with the OVHcloud APIv6 <a name="vlansetup"></a>
 
-To create a private network using the OVHcloud APIv6, please refer to [this section](https://docs.ovh.com/au/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) of the corresponding guide.
+To create a private network using the OVHcloud APIv6, please refer to [this section](https://docs.ovh.com/au/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack) of the corresponding guide.
 
 #### Creating a private network with the OpenStack CLI
 
@@ -259,7 +259,7 @@ If you need assistance, follow this guide first: [Creating an instance in the OV
 
 ##### **With the OVHcloud APIv6**
 
-Please refer to [this section](https://docs.ovh.com/au/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack_1) of the corresponding guide.
+Please refer to [this section](https://docs.ovh.com/au/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack) of the corresponding guide.
 
 ##### **With the OpenStack API**
 
@@ -455,7 +455,7 @@ In the popup window that appears, select the private network(s) to attach to you
 
 ##### **Managing network interfaces with the OVHcloud APIv6**
 
-Please refer to [this section](https://docs.ovh.com/au/en/publiccloud/network-services/public-cloud-vrack-apiv6/#in-case-of-an-existing-instance_1) of the corresponding guide.
+Please refer to [this section](https://docs.ovh.com/au/en/publiccloud/network-services/public-cloud-vrack-apiv6/#in-case-of-an-existing-instance) of the corresponding guide.
 
 ##### **Managing network interfaces with OpenStack Horizon**
 

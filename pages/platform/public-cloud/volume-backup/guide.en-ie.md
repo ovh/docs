@@ -4,7 +4,6 @@ slug: volume-backup
 excerpt: Discover how to back up your Block Storage volume in the OVHcloud Control Panel
 section: Storage
 order: 3
-hidden: true
 updated: 2023-03-29
 ---
 

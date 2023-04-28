@@ -110,7 +110,7 @@ Follow this [guide](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instanc
 
 > [!primary]
 >
->If you want to test the access from an existing instance, read this tutorial to connect it to the vRack: [Configuring vRack for Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/public-cloud-vrack/#in-case-of-an-existing-instance_2).
+>If you want to test the access from an existing instance, read this tutorial to connect it to the vRack: [Configuring vRack for Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/public-cloud-vrack/#in-case-of-an-existing-instance).
 >
 
 ### Step 5 - Example of verification with a Public Cloud Databases for Redis

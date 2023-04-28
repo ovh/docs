@@ -1,11 +1,11 @@
 ---
-title: Uruchomienie instancji na przypisanym woluminie
+title: Uruchomienie instancji na przypisanym woluminie (EN)
 excerpt: Uruchomienie instancji na przypisanym woluminie
 slug: uruchomienie_instancji_na_przypisanym_woluminie
 routes:
     canonical: 'https://docs.ovh.com/ca/en/public-cloud/start-instance-on-a-volume/'
 section: Zarządzanie w OpenStack CLI
-updated: 2023-01-11
+updated: 2021-11-01
 ---
 
 **Last updated 1st November 2021**

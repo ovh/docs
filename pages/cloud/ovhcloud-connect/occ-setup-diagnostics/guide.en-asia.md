@@ -114,7 +114,7 @@ If you have ordered a 10 Gbps link, the SFP will be: 10GBase-LR.
 speed 10000
 ```
 
-For more information, please read the [technical capabilities and limitations of the OVHcloud Connect solution](../occ-limits/)
+For more information, please read the [technical capabilities and limitations of the OVHcloud Connect solution](/pages/cloud/ovhcloud-connect/occ-limits)
 
 #### Disabling auto-negotiation
 

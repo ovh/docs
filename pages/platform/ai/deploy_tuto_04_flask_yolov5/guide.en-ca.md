@@ -4,14 +4,12 @@ slug: deploy/web-service-yolov5
 excerpt: How to deploy a web service for YOLOv5 using your own weights with Flask
 section: AI Deploy - Tutorials
 order: 04
-updated: 2023-03-10
+updated: 2023-04-04
 ---
 
-**Last updated 10th March, 2023.**
+**Last updated 4th April, 2023.**
 
 > [!primary]
->
-> AI Deploy is in `beta`. During the beta-testing phase, the infrastructure’s availability and data longevity are not guaranteed. Please do not use this service for applications that are in production, as this phase is not complete.
 >
 > AI Deploy is covered by **[OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf)**.
 >

@@ -3,10 +3,10 @@ title: 'Connectivity API'
 excerpt: 'Develop using connectivity API'
 slug: connectivity-api
 section: 'Advanced technical configurations'
-updated: 2020-12-07
+updated: 2023-04-03
 ---
 
-**Last updated 7th December 2020**
+**Last updated 3rd April 2023**
 
 ## Objective
 
@@ -323,7 +323,7 @@ The response:
 
 We found a single building that is a house.
 
-#### Doing a copper eligibility (ADSL, VDSL or SDSL)
+#### Doing a copper eligibility (ADSL or VDSL)
 
 Possible cases are:
 
@@ -366,91 +366,6 @@ Here is a partial successfull response example:
   "error": null,
   "result": {
     "offers": [
-      {
-        "product": {
-          "downloadRate": 1,
-          "name": "SDSL 1M on 2 pair(s)",
-          "provider": "SFR",
-          "code": "SDSL-1M-2P",
-          "uploadRate": 1,
-          "pairs": 2,
-          "type": "SDSL",
-          "grt": [
-            "4ho",
-            "4hno"
-          ],
-          "guaranteed": true
-        },
-        "eligibility": {
-          "estimatedDownloadRate": null,
-          "underConditions": [],
-          "eligible": true,
-          "activationTypes": [
-            "create"
-          ],
-          "estimatedUploadRate": null,
-          "reasons": []
-        }
-      },
-      {
-        "product": {
-          "downloadRate": 1,
-          "name": "SDSL 1M on 1 pair(s)",
-          "provider": "KOSC",
-          "code": "SDSL-1M-1P",
-          "uploadRate": 1,
-          "pairs": 1,
-          "type": "SDSL",
-          "grt": [
-            "4ho",
-            "4hno"
-          ],
-          "guaranteed": true
-        },
-        "eligibility": {
-          "estimatedDownloadRate": null,
-          "underConditions": [],
-          "eligible": false,
-          "activationTypes": [
-            "activate",
-            "create"
-          ],
-          "estimatedUploadRate": null,
-          "reasons": [
-            {
-              "message": "Too much attenuation to deliver the product.",
-              "code": "TOO_MUCH_ATTENUATION",
-              "availabilityDate": null
-            }
-          ]
-        }
-      },
-      {
-        "product": {
-          "provider": "SFR",
-          "code": "SDSL-1M-4P",
-          "downloadRate": 1,
-          "name": "SDSL 1M on 4 pair(s)",
-          "pairs": 4,
-          "uploadRate": 1,
-          "grt": [
-            "4ho",
-            "4hno"
-          ],
-          "type": "SDSL",
-          "guaranteed": true
-        },
-        "eligibility": {
-          "estimatedDownloadRate": null,
-          "underConditions": [],
-          "activationTypes": [
-            "create"
-          ],
-          "eligible": true,
-          "estimatedUploadRate": null,
-          "reasons": []
-        }
-      },
       {
         "eligibility": {
           "reasons": [
@@ -531,36 +446,6 @@ Here is a partial successfull response example:
           "pairs": 1,
           "grt": [],
           "type": "ADSL",
-          "guaranteed": false
-        }
-      },
-      {
-        "eligibility": {
-          "activationTypes": [
-            "activate",
-            "create"
-          ],
-          "eligible": false,
-          "underConditions": [],
-          "estimatedDownloadRate": 1.46,
-          "reasons": [
-            {
-              "availabilityDate": null,
-              "message": "Copper not currently available in this area.",
-              "code": "COPPER_NOT_YET_AVAILABLE"
-            }
-          ],
-          "estimatedUploadRate": 1.46
-        },
-        "product": {
-          "provider": "KOSC",
-          "code": "SDSL-MAX",
-          "downloadRate": 5,
-          "name": "SDSL-Max",
-          "pairs": 1,
-          "uploadRate": 5,
-          "type": "SDSL",
-          "grt": [],
           "guaranteed": false
         }
       },
@@ -648,10 +533,6 @@ Here is a partial successfull response example:
 
 ```
 
-> [!primary]
->
-> We have omitted some SDSL offers in this example due to the size of the response.
->
 
 The response is composed of:
 
@@ -666,22 +547,7 @@ Here is a description of the offer codes:
 | ADSL-MAX_FULL     | ADSL  | ADSL full unbundling                  |
 | VDSL-MAX_SHARED   | VDSL  | VDSL partial                          |
 | VDSL-MAX_FULL     | VDSL  | VDSL full unbundling                  |
-| SDSL-MAX          | SDSL  | SDSL monopair                         |
 
-For the SDSL offers with guaranteed bandwidth, the offer code is formed with:
-
-* the offer type: SDSL
-* the guaranteed speed: 1M, 2M, 4M, ..
-* the number of pairs: 1P, 2P or 4P
-
-A few examples:
-
-| code              | type  | description                           |
-|-------------------|-------|---------------------------------------|
-| SDSL-1M-1P        | SDSL  | Monopair SDSL with 1M guaranteed      |
-| SDSL-2M-2P        | SDSL  | 2 pairs SDSL with 2M guaranteed       |
-| SDSL-16M-4P       | SDSL  | 4 pairs SDSL with 16M guaranteed      |
-...
 
 ##### **Searching for an active or inactive line for an address** <a name="eligibilitySearchLines"></a>
 
@@ -939,14 +805,14 @@ The response:
       {
         "product": {
           "pairs": null,
-          "uploadRate": 250,
+          "uploadRate": 800,
           "guaranteed": false,
-          "code": "FTTH-MAX-300M",
+          "code": "PROFIBER",
           "type": "FTTH",
           "grt": [],
-          "name": "FTTH-Max 300M download and 250M upload",
+          "name": "PRO FIBER with 1G download and 800M upload",
           "provider": "KOSC",
-          "downloadRate": 300
+          "downloadRate": 1000
         },
         "eligibility": {
           "estimatedDownloadRate": null,
@@ -955,27 +821,6 @@ The response:
           "activationTypes": [],
           "reasons": [],
           "eligible": true
-        }
-      },
-      {
-        "product": {
-          "grt": [],
-          "name": "FTTH-Max 1G download and 250M upload",
-          "downloadRate": 1000,
-          "provider": "KOSC",
-          "pairs": null,
-          "guaranteed": false,
-          "type": "FTTH",
-          "code": "FTTH-MAX-1G",
-          "uploadRate": 250
-        },
-        "eligibility": {
-          "estimatedDownloadRate": null,
-          "activationTypes": [],
-          "eligible": true,
-          "reasons": [],
-          "estimatedUploadRate": null,
-          "underConditions": []
         }
       }
     ],
@@ -1012,7 +857,7 @@ The response:
 }
 ```
 
-In the result for the "offers" table, the *boolean* attribute *eligibility.eligible* tell us we are eligible for "FTTH-Max 300M download and 250M upload" and "FTTH-Max 1G download and 250M upload" offers.
+In the result for the "offers" table, the *boolean* attribute *eligibility.eligible* tell us we are eligible for "PRO FIBER with 1G download and 800M upload" offer.
 
 ##### **Searching eligibility from an OTP identifier** <a name="eligibilityTestOtp"></a>
 

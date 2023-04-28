@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: 6c23686b-7272-46cf-b44c-8d23d2acbd22
 full_slug: voip-troubleshooting-lg-8820

@@ -4,14 +4,12 @@ slug: deploy/tuto-fastapi-spam-classifier
 excerpt: How to deploy and call an API for spam classification using FastAPI
 section: AI Deploy - Tutorials
 order: 08
-updated: 2023-01-31
+updated: 2023-04-04
 ---
 
-**Last updated 31st January, 2023.**
+**Last updated 4th April, 2023.**
 
 > [!primary]
->
-> AI Deploy is in `beta`. During the beta-testing phase, the infrastructure’s availability and data longevity are not guaranteed. Please do not use this service for applications that are in production, as this phase is not complete.
 >
 > AI Deploy is covered by **[OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf)**.
 >
@@ -357,7 +355,7 @@ You can add `/docs` at the end of the url of your app.
 
 > [!primary]
 >
-> In our example, the url is as follows: `https://ba2ef330-3e95-444a-a81b-7ca83dff5836.app.gra.training.ai.cloud.ovh.net/docs`
+> In our example, the url is as follows: `https://ba2ef330-3e95-444a-a81b-7ca83dff5836.app.gra.ai.cloud.ovh.net/docs`
 >
 
 It provides a complete dashboard for interacting with the API!

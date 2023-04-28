@@ -4,12 +4,11 @@ slug: volume-backup
 excerpt: "Dowiedz się, jak utworzyć kopię zapasową wolumenu Block Storage w Panelu klienta"
 section: Przestrzeń dyskowa
 order: 3
-hidden: true
 updated: 2023-03-29
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 29-03-2023**
@@ -97,4 +96,4 @@ Więcej informacji na ten temat znajdziesz w [naszym przewodniku dotyczącym two
 
 [Zwiększ rozmiar dodatkowego dysku](https://docs.ovh.com/pl/public-cloud/utworzenie_i_konfiguracja_dodatkowego_dysku_dla_instancji/)
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -224,7 +224,7 @@ Cet appel API génère un bon de commande qui doit être validé. Si vous n'avez
 <a name="addhostandds"></a>
 #### Etape 2.2 Ajouter des nouveaux hosts et datastores
 
-Au sein de l'espace client OVHcloud, vous devriez voir votre nouveau vDC dans votre infrastructure. vous pouvez procéder à la commande des nouvelles ressources (sélectionnées à l'étape 1) dans le nouveau vDC de destination en suivant ce [guide d'informations sur la facturation Private Cloud](https://docs.ovh.com/fr/private-cloud/facturation-private-cloud/#ressources-mensuelles_1).
+Au sein de l'espace client OVHcloud, vous devriez voir votre nouveau vDC dans votre infrastructure. vous pouvez procéder à la commande des nouvelles ressources (sélectionnées à l'étape 1) dans le nouveau vDC de destination en suivant ce [guide d'informations sur la facturation Private Cloud](https://docs.ovh.com/fr/private-cloud/facturation-private-cloud/#ressources-mensuelles).
 
 <a name="converttoglobal"></a>
 #### Etape 2.3 Convertir une datastore comme global

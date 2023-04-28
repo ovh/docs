@@ -56,7 +56,7 @@ Cliquez sur le bouton `Ajouter une IP`{.action} pour ajouter des adresses IP à 
 
 ### Gestion des expéditeurs et des crédits
 
-Consultez nos guides sur la [gestion des expéditeurs](https://docs.ovh.com/fr/sms/envoyer_des_sms_depuis_mon_espace_client/#etape-3-choisir-votre-expediteur-sms_1) et sur la [gestion des crédits SMS et la recharge automatique](https://docs.ovh.com/fr/sms/activer-la-recharge-automatique-du-credit-sms/).
+Consultez nos guides sur la [gestion des expéditeurs](https://docs.ovh.com/fr/sms/envoyer_des_sms_depuis_mon_espace_client/#etape-3-choisir-votre-expediteur-sms) et sur la [gestion des crédits SMS et la recharge automatique](https://docs.ovh.com/fr/sms/activer-la-recharge-automatique-du-credit-sms/).
 
 ## Aller plus loin
 

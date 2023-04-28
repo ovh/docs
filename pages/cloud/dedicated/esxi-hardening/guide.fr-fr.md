@@ -62,7 +62,7 @@ Rappel de sa définition et son principe de fonctionnement :
 > 
 > Si ce système se déclenche et que vous souhaitez vous connecter à votre ESXi immédiatement, il vous faudra déverrouiller manuellement le compte administrateur.
 >
-> Pour cela, il vous sera nécessaire de [redémarrer](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/#redemarrage-de-votre-serveur-dedie_1) votre serveur ESXi à travers l'espace client OVHcloud.
+> Pour cela, il vous sera nécessaire de [redémarrer](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/#redemarrage-de-votre-serveur-dedie) votre serveur ESXi à travers l'espace client OVHcloud.
 > 
 
 Vous pouvez consulter l'historique des logs d'accès dans les fichiers suivants à partir d'un shell SSH :

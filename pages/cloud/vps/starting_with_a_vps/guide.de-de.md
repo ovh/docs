@@ -8,7 +8,7 @@ updated: 2022-03-25
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
 **Letzte Aktualisierung am 25.03.2022**
@@ -42,7 +42,7 @@ Dieses Dashboard enthält wichtige Informationen zu Ihrem Dienst und erlaubt Ihn
 
 Zu einem VPS Service der aktuellen Reihe lesen Sie den nachfolgenden Abschnitt: **Erste Schritte (aktuelle VPS Reihe)**.
 
-Für Informationen zur Verwendung älterer VPS Modelle, fahren Sie weiter unten fort unter [Erste Schritte (alte VPS Reihe)](./#erste-schritte-alte-vps-reihe_1).
+Für Informationen zur Verwendung älterer VPS Modelle, fahren Sie weiter unten fort unter [Erste Schritte (alte VPS Reihe)](./#erste-schritte-alte-vps-reihe).
 
 ### Erste Schritte (aktuelle VPS Reihe)
 

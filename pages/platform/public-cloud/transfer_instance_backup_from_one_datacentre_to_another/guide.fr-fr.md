@@ -7,7 +7,7 @@ order: 10
 updated: 2019-03-29
 ---
 
-**Dernière mise à jour le 29 mars 2019**
+**Dernière mise à jour le 29/03/2019**
 
 ## Objectif
 
@@ -19,7 +19,7 @@ Vous pouvez avoir besoin de déplacer votre instance Public Cloud d’un datacen
 ## Prérequis
 
 * Posséder une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external} dans votre compte OVH.
-* Disposer d’un accès administrateur (root) à votre datacenter via SSH.
+* Disposer d’un accès administrateur (root) à votre instance/sur votre système d'exploitation via SSH.
 * Lire le guide « [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/){.external} » (recommandé).
 
 > [!primary]
@@ -31,7 +31,7 @@ Les commandes de ce guide sont basées sur la CLI OpenStack, par opposition aux 
 
 ### Créer une sauvegarde
 
-Tout d'abord, établissez une connexion SSH vers votre datacenter. Puis lancez la commande suivante pour lister vos instances existantes :
+Tout d'abord, établissez une connexion SSH vers votre instance/OS. Puis lancez la commande suivante pour lister vos instances existantes :
 
 ```
 #root@server:~$ openstack server list

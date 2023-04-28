@@ -7,6 +7,8 @@ order: 4
 updated: 2021-07-21
 ---
 
+**Última atualização: 21/07/2021**
+
 ## Sumário
 
 A palavra-passe da sua Área de Cliente OVHcloud é a chave de acesso a todos os seus serviços e informações. Deve ser suficientemente complexa e regularmente alterada para garantir a segurança.
@@ -42,7 +44,7 @@ A segurança das suas soluções depende da eficácia da palavra-passe de acesso
 
 Há vários métodos eficazes para criar palavras-passe. Recomendamos-lhe, nomeadamente, o **método das primeiras letras** e o **método fonético**.
 
-Para ficar a saber mais, consulte a secção [Quer saber mais?](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/#quer-saber-mais_2){.external} na parte de baixo deste guia.
+Para ficar a saber mais, consulte a secção [Quer saber mais?](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/#quer-saber-mais){.external} na parte de baixo deste guia.
 
 ### Utilizar um gestor de palavras-passe
 

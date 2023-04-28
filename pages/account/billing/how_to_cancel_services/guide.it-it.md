@@ -8,7 +8,7 @@ updated: 2022-03-22
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 22/03/2022**
@@ -224,7 +224,7 @@ Per disattivare la soluzione [Hosted Exchange](https://www.ovhcloud.com/it/email
 
 #### Private Exchange <a name="private"></a>
 
-Per disattivare la tua offerta [Private Exchange](https://www.ovhcloud.com/it/emails/private-exchange/), segui le indicazioni di questa [guida](https://docs.ovh.com/it/microsoft-collaborative-solutions/gestisci-fatturazione-exchange/#elimina-account_1).
+Per disattivare la tua offerta [Private Exchange](https://www.ovhcloud.com/it/emails/private-exchange/), segui le indicazioni di questa [guida](https://docs.ovh.com/it/microsoft-collaborative-solutions/gestisci-fatturazione-exchange/#elimina-account).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 

@@ -164,15 +164,15 @@ status:
     - state: RUNNING
       date: "2021-02-23T08:45:19.822354Z"
   duration: 6
-  jobUrl: "http://0d916855-1cd4-4b66-8803-b4782bc13902.job.gra.training.ai.cloud.ovh.net"
-  sshUrl: "ssh://0d916855-1cd4-4b66-8803-b4782bc13902@gra.training.ai.cloud.ovh.net"
-  monitoringUrl: "http://monitoring.gra.training.ai.cloud.ovh.net/d/job/job-monitoring?var-job=0d916855-1cd4-4b66-8803-b4782bc13902&from=1614069913000"
+  jobUrl: "http://0d916855-1cd4-4b66-8803-b4782bc13902.job.gra.ai.cloud.ovh.net"
+  sshUrl: "ssh://0d916855-1cd4-4b66-8803-b4782bc13902@gra.ai.cloud.ovh.net"
+  monitoringUrl: "http://monitoring.gra.ai.cloud.ovh.net/d/job/job-monitoring?var-job=0d916855-1cd4-4b66-8803-b4782bc13902&from=1614069913000"
 ```
 
 Then you can connect to it with a terminal:
 
 ``` {.console}
-ssh 0d916855-1cd4-4b66-8803-b4782bc13902@gra.training.ai.cloud.ovh.net -i ~/.ssh/id_ed25519
+ssh 0d916855-1cd4-4b66-8803-b4782bc13902@gra.ai.cloud.ovh.net -i ~/.ssh/id_ed25519
 ```
 
 ### Manage registries

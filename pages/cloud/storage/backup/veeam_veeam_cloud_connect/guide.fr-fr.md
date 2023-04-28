@@ -95,7 +95,7 @@ Renseignez l'IP/nom de votre offre, qui vous a été transmis par e-mail.
 
 ![veeam cloud connect](images/veeam-cloud-connect-add-provider-ip.png){.thumbnail}
 
-Ajoutez l'utilsateur et le mot de passe, puis appliquez pour valider.
+Ajoutez l'utilisateur et le mot de passe, puis appliquez pour valider.
 
 
 ![veeam cloud connect](images/veeam-cloud-connect-add-provider-login.png){.thumbnail}

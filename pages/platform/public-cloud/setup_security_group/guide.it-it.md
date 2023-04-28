@@ -8,7 +8,7 @@ updated: 2021-08-24
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 24/08/2021**
@@ -21,7 +21,7 @@ Per motivi di sicurezza, è possibile configurare e utilizzare regole di filtrag
 
 ## Prerequisiti
 
-- Un [progetto Public Cloud](https://www.ovhcloud.com/it/public-cloud/).
+- Un [progetto Public Cloud](https://www.ovhcloud.com/it/public-cloud/)
 - [Essere connesso all'interfaccia Horizon](https://docs.ovh.com/it/public-cloud/creation-and-deletion-of-openstack-user/)
 
 ## Procedura

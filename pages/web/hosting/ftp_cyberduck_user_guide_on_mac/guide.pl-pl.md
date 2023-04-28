@@ -4,8 +4,10 @@ excerpt: 'Przewodnik dotyczący korzystania z programu Cyberduck (MAC)'
 slug: hosting_www_przewodnik_dotyczacy_korzystania_z_programu_cyberduck_mac
 section: 'FTP i SSH'
 order: 05
-updated: 2022-12-01
+updated: 2020-05-05
 ---
+
+**Ostatnia aktualizacja z dnia 05-05-2020**
 
 ## Wprowadzenie 
 Cyberduck to aplikacja dostępna dla systemu MAC. 

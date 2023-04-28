@@ -2,8 +2,8 @@
 title: Backing-up Persistent Volumes using Stash
 excerpt: Backing-up Persistent Volumes using Stash
 slug: backing-up-volumes-using-stash
-section: Storage
-order: 4
+section: 'Backup and Restore'
+order: 05
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/backing-up-volumes-using-stash/'
 updated: 2022-09-26

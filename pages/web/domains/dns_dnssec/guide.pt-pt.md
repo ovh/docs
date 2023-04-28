@@ -4,7 +4,7 @@ excerpt: "Proteja o seu domínio contra o “cache poisoning” com o serviço D
 slug: proteja_o_seu_dominio_com_dnssec
 legacy_guide_number: g609
 section: Segurança
-updated: 2022-10-19
+updated: 2023-04-26
 ---
 
 > [!primary]

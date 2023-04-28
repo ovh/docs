@@ -2,7 +2,8 @@
 title: Backup and Restore OVHcloud Managed Kubernetes Cluster, Namespace and Applications using TrilioVault for Kubernetes
 slug: backup-and-restore-cluster-namespace-and-applications-with-trilio
 excerpt: 'Backup and Restore Cluster, Namespace and Applications using TVK'
-section: 'Tutorials'
+section: 'Backup and Restore'
+order: 01
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/backup-and-restore-cluster-namespace-and-applications-with-trilio/'
 updated: 2022-08-11

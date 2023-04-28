@@ -4,16 +4,23 @@ slug: volume-snapshot-erstellung
 excerpt: 'Erfahren Sie hier, wie Sie einen Snapshot einer Public Cloud Disk erstellen'
 section: Storage
 order: 2
-updated: 2023-03-03
+updated: 2023-04-21
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 03.03.2023**
+**Letzte Aktualisierung am 21.04.2023**
 
 ## Ziel
+
+Ein **Volume Snapshot** ist ein Wiederherstellungspunkt, der im selben Speichercluster gespeichert ist wie das ursprüngliche Volume. Die Erstellung und Wiederherstellung sind schnell, aber im Falle einer Störung des Clusters können Volume und Snapshot nicht verfügbar sein.<br>
+Die Erstellung eines Volume Snapshots erfordert nicht, dass das Volume von der Instanz getrennt wird.
+
+Sie sind zu unterscheiden von **Volume Backups**, wobei ein Image auf Ihrem Volume basierend erstellt wird. Dieses wird im Object Storage Cluster des ursprünglichen Volumes gespeichert.
+Dieses Maß an Resilienz ist ideal und erlaubt es Ihnen, schnell auf das Volume betreffende Störungen zu reagieren, indem Sie aus dem Backup ein neues Volume erstellen.<br>
+Um ein Volume Backup anzulegen, muss das Volume von der Instanz getrennt werden. Weitere Informationen zu dieser Option finden Sie in [dieser Anleitung](https://docs.ovh.com/de/public-cloud/volume-backup/).
 
 Ein Snapshot eines zusätzlichen Volumes dient zwei allgemeinen Zwecken:
 
@@ -58,6 +65,8 @@ Da ein Volume Snapshot ein Klon der gesamten Disk ist, hat er unabhängig von de
 Klicken Sie auf den Button `...`{.action} um einen Snapshot zu löschen oder ein neues Volume aus dem entsprechenden Snapshot zu erzeugen. Weitere Informationen dazu finden Sie in [dieser Anleitung](https://docs.ovh.com/de/public-cloud/create-volume-from-backup/).
 
 ## Weiterführende Informationen
+
+[Volume Backup erstellen](https://docs.ovh.com/de/public-cloud/volume-backup/)
 
 [Zusätzliche Festplatten aus einem Backup erstellen](https://docs.ovh.com/de/public-cloud/create-volume-from-backup/)
 

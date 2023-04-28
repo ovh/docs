@@ -1,2 +1,10 @@
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-us
+- es-us
 id: 2afb6264-5aed-43bb-86f7-01735c0ebd7b
 full_slug: sms-credit-management

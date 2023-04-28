@@ -6,6 +6,8 @@ excerpt: Come rendere sicure le connessioni al tuo sito Web
 updated: 2022-12-01
 ---
 
+**Ultimo aggiornamento: 01/12/2022**
+
 ## Informazioni generali
 
 ### Prerequisiti

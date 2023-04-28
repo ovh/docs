@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: db18a0d1-8cf1-4233-8ff3-47cd99a817bb
 full_slug: internet-access-enable-backup-LTE

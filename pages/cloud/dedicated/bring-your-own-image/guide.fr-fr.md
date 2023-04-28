@@ -53,7 +53,7 @@ Si votre serveur dispose d'un boot **uefi**, il vous faudra impérativement pré
 
 Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans la section `Bare Metal Cloud`{.action}, puis `Serveurs Dédiés`{.action}, sélectionnez votre serveur.
 
-Dans le cadre `Informations générales`, cliquez sur le bouton `...`{.action} devant `Informations générales`. Cliquez enfin sur `Installer`{.action}.
+Dans le cadre `Informations générales`, cliquez sur le bouton `...`{.action} à côté de "Système (OS)", puis cliquez sur `Installer`{.action}.
 
 ![bring your ownimage](images/byoi-controlpanel01.png){.thumbnail}
 
@@ -71,7 +71,7 @@ Concernant l'activation de `ConfigDrive`, retrouver la documentation sur [cette 
 
 ### Déployer votre image depuis les API <a name="viaapi"></a>
 
-Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/){.external} puis rendez-vous dans la section `dedicated/server`{.action}. Le champ `Filter` vous permettra de rechercher « BringYourOwnImage ».
+Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/){.external} puis rendez-vous dans la section `/dedicated/server`{.action}. Le champ `Filter` vous permettra de rechercher « BringYourOwnImage ».
 
 Vous disposez de trois appels API liés à la fonctionnalité BringYourOwnImage.
 

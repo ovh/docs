@@ -3,9 +3,10 @@ title: FAQ Hosted Private Cloud
 excerpt: ''
 slug: faq_dedicated_cloud
 legacy_guide_number: g598
-updated: 2022-12-08
+updated: 2018-03-26
 ---
 
+**Última atualização: 26/03/2018**
 
 ## Aquando da configuração do HA obtenho o seuginte erro: « Erro HA: Impossível efetuar a configuração HA »
 Se este erro persiste, deverá desconfigurar e depois reconfigurar manualmente o cluster com HA. Para tal, deverá ir às propriedades do seu cluster, retirar a opção HA e depois valida essa modificação. Após terminado a operação, volta ao mesmo sitio e reativa a opção HA. Após tudo ativado, a opção HA ficará ativa no seu cluster.

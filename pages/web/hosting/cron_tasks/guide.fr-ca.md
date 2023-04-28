@@ -68,7 +68,7 @@ L'interface offre deux modes pour configurer la fréquence de votre tâche. Util
 |Entrez des valeurs numériques comme dans une *crontab*. Les astérisques indiquent chaque valeur de la période, ce qui signifie que la tâche s'exécuterait en continu **une fois par heure tous les jours** dans cet exemple.|
 |![cron frequency](images/cron-jobs-4.png){.thumbnail}|
 
-Vous pouvez basculer entre les deux modes pendant la configuration pour visualiser les modifications en conséquence. Notez également les [limitations lors de la planification d'une tâche sur un hébergement Web](./#limitations-des-taches-planifiees-sur-votre-hebergement-web_1).
+Vous pouvez basculer entre les deux modes pendant la configuration pour visualiser les modifications en conséquence. Notez également les [limitations lors de la planification d'une tâche sur un hébergement Web](./#limitations-des-taches-planifiees-sur-votre-hebergement-web).
 
 ![cron control panel](images/cron-jobs-5.gif){.thumbnail}
 
@@ -105,7 +105,7 @@ Veillez toujours à utiliser des chemins d'accès absolus aux fichiers de vos sc
 
 Dans [les logs]  de votre hébergement Web, accessibles depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, vous verrez la catégorie de log intitulée « CRON ».
 
-Consultez notre guide [« Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée »](../mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/#logs_1) pour plus de détails.
+Consultez notre guide [« Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée »](../mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/#logs) pour plus de détails.
 
 ##### **Exemple de logs**
 

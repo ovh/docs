@@ -1,13 +1,13 @@
 ---
-title : "Basculer d'une instance flex à une instance classique"
-slug : modifier-une-instance-flex
+title: "Basculer d'une instance flex à une instance classique"
+slug: modifier-une-instance-flex
 excerpt: Apprenez à modifier une instance flex depuis l'interface OpenStack Horizon
-section : Gestion depuis Horizon
+section: Gestion depuis Horizon
 order : 10
 updated: 2021-11-15
 ---
 
-**Dernière mise à jour le 15 Novembre 2021**
+**Dernière mise à jour le 15/11/2021**
 
 ## Objectif
 

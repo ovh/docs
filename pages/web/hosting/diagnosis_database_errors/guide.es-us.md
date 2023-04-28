@@ -143,7 +143,7 @@ Abra la pestaña `Bases de datos`{.action} del alojamiento correspondiente e ini
 
 #### Método 4: optimizar la base de datos
 
-Para optimizar su base de datos, siga las instrucciones de nuestra guía "[Configurar su servidor de bases de datos](https://docs.ovh.com/us/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#gestionar-las-bases-de-datos_1)". Abra la pestaña `Bases de datos`{.action} de su alojamiento y haga clic en el botón `...`{.action} de la base de datos en cuestión.
+Para optimizar su base de datos, siga las instrucciones de nuestra guía "[Configurar su servidor de bases de datos](https://docs.ovh.com/us/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#gestionar-las-bases-de-datos)". Abra la pestaña `Bases de datos`{.action} de su alojamiento y haga clic en el botón `...`{.action} de la base de datos en cuestión.
 
 > [!warning]
 >
@@ -214,7 +214,7 @@ El número máximo de conexiones activas para las bases de datos entregadas con 
 
 Este mensaje aparece durante [conexión a phpMyAdmin](https://docs.ovh.com/us/es/hosting/crear-base-de-datos/#acceder-a-la-interfaz-phpmyadmin) cuando se supera el número máximo de conexiones.
 
-En ese caso, deberá [optimizar las bases de datos](https://docs.ovh.com/us/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#gestionar-las-bases-de-datos_1) para reducir el número de conexiones activas.
+En ese caso, deberá [optimizar las bases de datos](https://docs.ovh.com/us/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#gestionar-las-bases-de-datos) para reducir el número de conexiones activas.
 
 > [!warning]
 >

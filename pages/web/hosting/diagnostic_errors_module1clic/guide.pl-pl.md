@@ -8,7 +8,7 @@ updated: 2022-11-08
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zaproponuj zmianę" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 15-02-2023**
@@ -188,7 +188,7 @@ Ta nieprawidłowość może mieć kilka przyczyn:
 
 - Dokonałeś ostatnio zmiany strefy lub serwerów [DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#zrozumienie-pojecia-dns) lub [transferu domeny](../../domains/przeniesienie-domeny-globalnej/). Odczekaj, aż operacje te zostaną zakończone (48 godziny w przypadku zmiany serwerów DNS). Pamiętaj, aby zrestartować urządzenia (komputer, smartfon, box, etc.) i usunąć cache przeglądarki.
 
-- Twoja domena jest zawsze powiązana z Twoim poprzednim hostingiem. W tym przypadku zmień [strefę DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#modyfikacja-strefy-dns-domeny_1) lub [serwery DNS](../../domains/hosting_www_informacje_na_temat_serwerow_dns/#zmien-serwery-dns) lub skontaktuj się z aktualnym dostawcą usług hostingowych.
+- Twoja domena jest zawsze powiązana z Twoim poprzednim hostingiem. W tym przypadku zmień [strefę DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#modyfikacja-strefy-dns-domeny) lub [serwery DNS](../../domains/hosting_www_informacje_na_temat_serwerow_dns/#zmien-serwery-dns) lub skontaktuj się z aktualnym dostawcą usług hostingowych.
 
 ### Hasło "Administrator" dostępu do "back-office" modułu za pomocą 1 kliknięcia nie działa <a name="adminpassword"></a>
 

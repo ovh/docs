@@ -1,5 +1,5 @@
 ---
-title: FAQ soluciónes de correo electrónico de OVHcloud
+title: FAQ soluciones de correo electrónico de OVHcloud
 slug: correo-electronico-faq
 section: 'Primeros pasos'
 order: 07

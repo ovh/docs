@@ -8,7 +8,7 @@ updated: 2023-03-22
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 22/03/2023**
@@ -66,7 +66,7 @@ Richiamo della sua definizione e del suo principio di funzionamento:
 > 
 > Se il sistema si attiva e desideri connetterti al tuo ESXi immediatamente, sarà necessario sbloccare manualmente l'account amministratore.
 >
-> Per effettuare questa operazione, è necessario [riavviare](https://docs.ovh.com/it/dedicated/iniziare-a-utilizzare-server-dedicato/#riavvio-del-tuo-server-dedicato_1) il server ESXi attraverso lo Spazio Cliente OVHcloud.
+> Per effettuare questa operazione, è necessario [riavviare](https://docs.ovh.com/it/dedicated/iniziare-a-utilizzare-server-dedicato/#riavvio-del-tuo-server-dedicato) il server ESXi attraverso lo Spazio Cliente OVHcloud.
 > 
 
 È possibile consultare lo storico dei log di accesso in questi file a partire da uno shell SSH:

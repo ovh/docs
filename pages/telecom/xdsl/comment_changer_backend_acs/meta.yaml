@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: 14d5f299-4786-4458-9c7a-e260880fdeee
 full_slug: internet-access-backend-ACS

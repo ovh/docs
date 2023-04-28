@@ -7,7 +7,7 @@ updated: 2022-06-08
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 08/06/2022**
@@ -43,7 +43,7 @@ Puoi anche configurare chiavi SSH per attivare le connessioni sicure senza passw
 
 Le credenziali di accesso (identificativo e password) vengono inviate via email dopo l'installazione o la reinstallazione del server effettuata dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 Il nome utente corrisponde al sistema operativo, ad esempio `ubuntu` o `debian`.<br>
-Per connetterti, devi specificare anche l'indirizzo IPv4 o l'hostname del server. Queste informazioni sono disponibili nell'email di installazione e nello Spazio Cliente OVH.
+Per connetterti, devi specificare anche l'indirizzo IPv4 o l'hostname del server. Queste informazioni sono disponibili nell'email di installazione e nello Spazio Cliente OVHcloud.
 
 Ricordati di consultare anche le nostre guide "Iniziare a fare":
 

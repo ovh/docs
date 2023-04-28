@@ -1,13 +1,13 @@
 ---
-title: "Módulos 1 clique: como instalar um CMS para criar um site"
+title: "Instalar o seu website com um 'módulo 1 clique' (CMS)"
 slug: partilhado_guias_dos_modulos_dos_alojamentos_partilhados
-excerpt: Saiba como instalar um CMS com os módulos 1 clique da OVHcloud
+excerpt: "Descubra como instalar o seu website através dos nossos 'módulos 1 clique'"
 section: CMS
 order: 01
-updated: 2023-01-31
+updated: 2023-03-30
 ---
 
-**Última atualização: 15/02/2023**
+**Última atualização: 30/03/2023**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -15,124 +15,167 @@ updated: 2023-01-31
 
 ## Objetivo
 
-Os Módulos 1 clique permitem instalar um CMS, uma ferramenta para criar um site de forma fácil e rápida, e que dispensa conhecimentos de código web ou de programação. Cada módulo permite instalar um dos Sistemas de Gestão de Conteúdos (*Content Management Systems* / CMS) mais populares do mercado: WordPress, PrestaShop, Drupal e Joomla!.
+Os "módulos 1 clique" permitem a instalação fácil e rápida de um website (sem competências técnicas requeridas). Os "módulos 1 clique" são, na realidade, **C**ontent **M**anagement **S**ystem **(CMS)**. Desta forma, a OVHcloud propõe a instalação dos CMS mais conhecidos: *WordPress*, *Joomla!*, *Drupal* e *PrestaShop*.
 
-**Este guia explica como instalar um CMS usando os nossos Módulos 1 clique.**
+**Descubra como instalar o seu site através dos nossos "módulos 1 clique".**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZrYmmPbMl4I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Requisitos
 
-- Dispor de um serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
+- Dispor de um serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que inclua pelo menos uma base de dados.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - Utilizar [uma versão de PHP compatível](https://docs.ovh.com/pt/hosting/configurar_o_php_num_alojamento_web_alojamentos_2014_ovh/) no seu alojamento web.
 - Ter [configurado corretamente o seu ficheiro .ovhconfig](https://docs.ovh.com/pt/hosting/configurar-ficheiro-ovhconfig/).
-- O diretório onde será instalado o seu módulo deve estar vazio ou atualmente inexistente.
-- Aceder à secção multisite e adicionar o domínio (ou subdomínio) que ficará associado ao seu site.
+- O diretório (pasta raiz) onde será instalado o seu "módulo 1 clique" deve estar vazio ou atualmente inexistente.
+- O domínio (com subdomínio se desejar) que será utilizado no seu website deve ser declarado como [Multi-site](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web//) no seu alojamento web da OVHcloud.
 
 ## Instruções
 
-### Selecionar o CMS mais adequado
+### Etapa 1 - escolher corretamente o seu CMS
 
-Um CMS (Content Management System) é uma interface que permite criar e editar um site de forma muito simples. Com um CMS, toda a gente pode criar e gerir um site. Cada CMS tem vantagens ou funcionalidades diferentes, adequadas às necessidades de cada tipo de site (e.g. blogue, loja online, site normal). Com um CMS pode criar um site personalizado. Basta escolher um dos temas (designs) disponíveis, e adicionar texto, imagens....
+Um CMS permite conceber um website através de uma interface de fácil utilização. Existem vários tipos de CMS, alguns dos quais são pré-concebidos para realizar um site de E-commerce, outros para criar um site, um blogue, etc. Poderá assim beneficiar de uma estrutura de site pronta a ser usada e personalizável (tema, extensões, textos, etc.) à sua escolha.
 
-A OVHcloud disponibiliza 4 CMS que podem ser instalados com os módulos 1 clique. Antes de avançar com esta operação, escolha o CMS. De seguida, siga as instruções indicadas neste manual. Se precisar de ajuda, consulte [a nossa página de comparação entre CMS](https://www.ovhcloud.com/pt/web-hosting/uc-cms-comparison/).
+De todos os CMS, a OVHcloud propõe 4 em instalação automática com os seus "módulos 1 clique". 
 
-Para usar um CMS não incluído nos Módulos 1 clique, deverá instalá-lo manualmente. Este CMS terá que ser compatível com as características da sua oferta (e.g. versão PHP). Veja as várias ofertas [aqui](https://www.ovhcloud.com/pt/web-hosting/)).
+Ao utilizar esta solução, deverá escolher entre os 4 CMS citados acima. Caso já tenha escolhido esta opção, continue a ler as diferentes etapas deste guia. Caso contrário, consulte o nosso [comparativo dos CMS](https://www.ovhcloud.com/pt/web-hosting/uc-cms-comparison/) para fazer a sua escolha.
+
+Se deseja instalar um CMS indisponível através dos nossos "módulos 1 clique", pode instalá-lo manualmente no seu alojamento. Isto sob reserva de que este CMS seja compatível com as nossas ofertas de[alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
 
 ![Logo CMS](images/CMS_logo.png){.thumbnail}
 
-### Aceder à área de gestão dos Módulos 1 clique
+### Etapa 2 - aceder à gestão dos "módulos em 1 clique"
 
-Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione a opção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e selecione o plano correspondente. De seguida, clique em `Módulos 1 clique`{.action}.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action}, selecione a oferta de alojamento em que deseja instalar um "módulo em 1 clique" e clique no separador `Modulos "1 clique"`{.action}.
 
-Nesta página, pode consultar, gerir e instalar vários Módulos 1 clique.
+Aqui, encontrará os eventuais "módulos 1 clique" já instalados. Poderá gerir os seus "módulos 1 clique" e instalar novos módulos.
 
 ![Acesso à secção Módulos 1 clique](images/access_to_the_1_click_modules_section.png){.thumbnail}
 
-### Adicionar um módulo
 
-Para instalar um módulo, clique no botão `Adicionar um módulo`{.action}.
+### Etapa 3 - adicionar um "módulo em 1 clique"
 
-Irá visualizar uma janela onde poderá escolher o CMS e o domínio ao qual deseja associar o seu site:
+No separador `Modulos "1 clique"`{.action} do seu alojamento, clique no botão `Adicionar um módulo`{.action} para adicionar um novo "módulo em 1 clique".
+
+Na nova janela, selecione o CMS desejado e selecione o domínio com o qual deseja instalar o seu website:
 
 ![Escolher módulo](images/add_a_module.png){.thumbnail}
 
-Se não encontrar o domínio desejado na lista, clique no separador `Multisite`{.action} e adicione o domínio. De seguida, tente novamente adicionar o módulo.
+Se o seu domínio não está na lista, aceda ao separador `Multisite`{.action} para o adicionar. Consulte o nosso manual [Como partilhar o meu alojamento web com vários sites](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/), se necessário.
 
-Se tiver dúvidas, pode consultar o guia (em francês) [Como usar meu alojamento web com vários sites](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/){.external} (versão PT disponível em breve).
+Depois de adicionar o domínio corretamente, tente novamente adicionar um "módulo 1 clique".
 
-Depois de selecionar o domínio, selecione a instalação simples ou a instalação avançada:
+Uma vez selecionado o CMS, selecione uma instalação **rápida** ou **avançada**:
 
-- Na instalação simples (opção predefinida), o sistema OVHcloud instala o CMS e envia um e-mail com os dados para aceder e gerir o módulo. Esta é a forma mais simples e mais rápida para instalar um módulo.
-- Já a instalação avançada permite configurar vários aspetos da instalação do CMS. Nesta opção deverá introduzir alguns dados associados ao funcionamento do CMS e da base de dados (e.g. seleção da base de dados, localização, informações de ligação, pasta de instalação, idioma, ID de cliente do administrador)
+- Instalação **rápida** (selecionada por predefinição): A OVHcloud realiza a instalação do CMS e comunica-lhe as suas credenciais para o administrar por e-mail no seu endereço de contacto OVHcloud. Esta é a forma mais fácil e mais rápida de instalar um "módulo 1 clique".
+- Instalação **avançada**: permite-lhe personalizar a configuração a aplicar para a instalação do CMS. Deverá introduzir todas as informações necessárias ao bom funcionamento do CMS: 
+    - informações de ligação à sua base de dados (servidor, nome de utilizador, porta, password, etc.)
+    - caminho de instalação no espaço de armazenamento FTP do seu alojamento
+    - língua do CMS
+    - identificadores de administrador (nome de administrador, palavra-passe, endereço de e-mail, etc.)
 
-#### Instalação simples
+#### Instalação rápida de um "módulo em 1 clique"
 
-Para realizar esta instalação, certifique-se que a `Instalação em modo avançado`{.action} não está selecionada. De seguida, clique no botão `Instalar`{.action}.
+Escolha o nome de domínio do seu CMS, controle o diretório alvo que aparece automaticamente após a escolha do nome de domínio e verifique que a casa `Instalação em modo avançado`{.action}. não está selecionada. Por fim, clique no botão `Instalar` {.action}.
 
 > [!warning]
 >
-> O sucesso da instalação depende de algumas condições: a pasta de instalação do módulo tem que estar vazia; e tem que ter uma base de dados disponível (nota: cada oferta de alojamento permite criar um certo número de base de dados. As bases de dados extra são pagas à parte. O modo simples cria uma base de dados de forma automatica. 
-> 
+> A pasta de instalação do seu "módulo 1 clique" deve estar vazia e deve dispor de, pelo menos, uma base de dados disponível em criação no seu alojamento web da OVHcloud para que a instalação seja efetuada.
+>
+> Para uma instalação rápida, não crie a base de dados antes, o robô de instalação encarregar-se-á disso.
+>
 
-![Instalação simples](images/choose_installation.png){.thumbnail}
+![Instalação rapida](images/choose_installation.png){.thumbnail}
 
-Uma vez concluída a instalação, receberá um e-mail com as informações necessárias para aceder à interface de administrador do CMS. Aceda a esta para personalizar o seu site.
+Uma vez terminada a instalação, receberá um e-mail com as informações de ligação à interface de administrador (*back office*) do seu CMS. Ligue-se a esta para personalizar o seu website.
 
 #### Instalação avançada
 
-Para realizar esta instalação, certifique-se que a `Instalação em modo avançado`{.action} está selecionada. De seguida, clique no botão `Seguinte`{.action}:
+Para realizar esta instalação, certifica-se que a `Instalação em modo avançado`{.action} selecion ada. De seguida, clique no botão `Seguinte`{.action}:
 
 ![Instalação avançada](images/advanced_installation.png){.thumbnail}
 
 ##### Escolher a base de dados
 
-Agora tem que preencher a informação relativa à base de dados. Existem várias possibilidades:
-
-- a base de dados já está criada no seu alojamento: selecione uma das bases de dados indicadas na lista e introduza as informações solicitadas;
-- a base de dados não está criada no seu alojamento: siga as instruções para a criar uma base de dados. Introduza a informação solicitada atrás;
-- a base de dados foi criada na instância Web Cloud Databases: selecione-a `Base de dados externa ao seu alojamento web`{.action} e introduza as informações solicitadas. A instância e o alojamento web devem estar alojadas no mesmo datacenter;
-- a base de dados foi criada noutro alojamento Web OVHcloud : selecione-a `Base de dados externa ao seu alojamento web`{.action} e introduza as informações solicitadas. A base de dados e o alojamento web devem estar alojados no mesmo datacenter;
-
-Concluída esta etapa, clique no botão `Seguinte`{.action}.
-
-> [!warning]
->
-> Se as informações estiverem incorretas, a instalação não poderá ser concluída. Irá receber essa informação por e-mail. Para evitar esta falha, sugerimos que teste a ligação à sua base de dados antes da instalação.
-> 
+Insira as informações de ligação à sua base de dados.
 
 ![Base de dados para instalação avançada](images/advanced_installation_database.png){.thumbnail}
 
-##### Configurar o módulo
+-Existem várias possibilidades:
 
-Para configurar módulo, deve fornecer várias informações.
+- A base de dados já está criada no seu alojamento web: selecione-a no menu pendente `Selecione uma base de dados`{.action} e introduza as informações solicitadas.
+- A base de dados ainda não está criada no seu alojamento web: [crie a sua base de dados incluída com o seu alojamento](https://docs.ovh.com/pt/hosting/criar-base-de-dados/), de seguida, volte ao menu desvio `Selecione uma base de dados`{.action} e depois complete as informações pedidas.
+- A base de dados está [criada na instância Web Cloud Databases](https://docs.ovh.com/pt/clouddb/criar-bases-de-dados-e-utilizadores//): no menu pendente `Selecione uma base de dados`{.action}, selecione a `Base de dados externa ap seu alojamento web`{.action} e introduza as informações solicitadas. A instância e o alojamento web devem estar alojados no mesmo datacenter.
+- A base de dados é criada noutro alojamento Web da OVHcloud: no menu pendente `Selecione uma base de dados`{.action}, selecione a `Base de dados externa ap seu alojamento web`{.action} e introduza as informações solicitadas. A base de dados e o alojamento web devem estar alojados no mesmo datacenter.
 
-- **Nome ou e-mail do administrador:** corresponde ao «nome de utilizador» (username) usado para aceder à interface de gestão do CMS.
-- **Palavra-passe:** palavra-passe usada para aceder à interface de gestão do CMS.
-- **Domínio:** domínio ao qual deseja associar o seu site.
-Em caso de dúvida, consulte o guia (em francês) [Como usar o meu alojamento web com vários sites](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/) (versão PT disponível em breve).
-- **Idioma:** língua de funcionamento do CMS.
-- **Caminho da instalação:** esta informação é preenchida automaticamente após a seleção do domínio. O caminho da instalação pode ser completado adicionando sub-diretórios. (sub-pastas).
+As restantes informações solicitadas para a base de dados são as seguintes:
 
-Depois de introduzida a informação, clique no botão `Seguinte`{.action}:
+- *Endereço do servidor*: indique o nome do servidor da base de dados, presente no e-mail de instalação ou na Área de Cliente OVHcloud. 
+
+> [!primary]
+> 
+> - O nome do servidor de uma base de dados incluída no serviço de alojamento web tem esta forma: `NameOfYourDatabase.mysql.db`. 
+>
+> - O nome do servidor de uma base de dados Web Cloud Databases começa pelo seu identificador de cliente OVHcloud e tem a seguinte forma: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` onde os **"X"** devem ser substituídos pela referência do seu serviço Web Cloud Databases.
+>
+
+- *Nome da base de dados* : este nome foi definido durante a criação da base de dados na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+
+- *Porta*: coloque sistematicamente o número **3306** (porta predefinida) para uma base de dados incluída no seu alojamento web. Para uma base presente numa instância Web Cloud Databases, consulte [este guia](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/).
+
+- *Nome do utilizador*: é idêntico ao nome da base de dados se utiliza uma base de dados incluída no seu alojamento web.
+Para as bases de dados criadas numa oferta Web Cloud Databases, consulte as informações indicadas no [presente guia](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/).
+
+- *Palavra-passe*: foi-lhe enviado por e-mail aquando da criação da base de dados. É possível que a tenha modificado entretanto.
+
+Depois de preencher as informações, clique no botão `Seguinte`{.action}.
 
 > [!warning]
 >
-> Para que a instalação possa ser concluída, a pasta da instalação tem que estar vazia.
+> Se as informações que indica estiverem incorretas, a instalação não chegará ao seu termo. Para evitar esta falha, sugerimos que teste a ligação à sua base de dados.
 > 
+> Para obter as credenciais de acesso à base de dados incluída no alojamento web, consulte [este guia](https://docs.ovh.com/pt/hosting/criar-base-de-dados/).
+>
+> Para obter os dados de acesso à sua base de dados criada numa instância Web Cloud Databases, consulte [este guia](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/).
+>
+
+##### Configurar o módulo
+
+Introduza as seguintes informações para a configuração do módulo:
+
+- *nome ou e-mail do administrador:* identificador que irá utilizar para aceder à interface de gestão do seu CMS (Back Office).
+- *palavra-passe:* palavra-passe usada para aceder à interface de gestão do CMS.
+- *domínio:* domínio com o qual deseja instalar o seu CMS. Se necessário, consulte o nosso manual [Como partilhar o meu alojamento web com vários sites](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/).
+- *Linguagem:* língua na qual o CMS será instalado.
+- *caminho de instalação:* este é automaticamente indicado ao selecionar o domínio. Pode completá-lo introduzindo sub-diretórios (para os utilizadores mais experientes).
+
+Depois de preencher estas informações, clique no botão `Seguinte`{.action}:
+
+> [!warning]
+>
+> O processo final indicado no caminho de instalação indicado deve ser obrigatória e inteiramente vazio para que a instalação chegue a bom porto.
+>
 
 ![Configuração do módulo para instalação avançada](images/advanced_installation_configuration.png){.thumbnail}
 
 ##### Confirmar a instalação
 
-No último passo da instalação avançada, deve verificar as informações apresentadas, e clicar em`Confirmar`{.action}:
+Verifique as informações apresentadas e clique em `Confirmar`{.action} se tudo estiver em ordem:
 
 ![Confirmação da instalação em modo avançado](images/advanced_installation_summary.png){.thumbnail}
 
-### Personalizar o meu site
+### Etapa 4 - personalizar o meu site
 
-No final, é enviado um e-mail para confirmar a instalação do módulo CMS, com o link e os dados para aceder à interface de gestão do CMS. Aceda à área de gestão do site e escolha o tema (design) preferido. Já pode começar publicar conteúdos.
+A instalação pode demorar cerca de dez minutos.
 
-Se precisar de ajuda para usar as funcionalidades de gestão do seu site, aceda ao portal do CMS. Aí poderá encontrar toda a informação útil ao desenvolvimento do seu projeto.
+Uma vez terminado, receberá um e-mail a confirmar a instalação do CMS. Por favor, aceda à interface de gestão do CMS. Assim, poderá alterar o tema do seu website e publicar os seus primeiros conteúdos.
+
+> [!warning]
+>
+> O suporte da OVHcloud não efetua acompanhamento sobre a utilização dos CMS. Propomos-as apenas em instalação **em 1 clique**.
+>
+
+Para mais informações, contacte o editor do CMS que instalou. Encontrará junto deste último documentação para o acompanhar no seu projeto.
 
 |CMS|Manuais em inglês|
 |---|---|
@@ -155,7 +198,7 @@ Veja a nossa [oferta Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databas
 
 [Desinstalar o seu CMS](https://docs.ovh.com/pt/hosting/1-click-module-management/#etapa-3-eliminar-o-modulo)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 

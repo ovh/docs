@@ -1,255 +1,149 @@
 ---
-title: CMS - ręczna instalacja modułu Joomla
-excerpt: Jak ręcznie zainstalować moduł Joomla?
+title: "Tutorial - Zainstaluj ręcznie Joomla!"
+excerpt: "Dowiedz się, jak ręcznie zainstalować CMS Joomla!"
 slug: cms_-_reczna_instalacja_modulu_joomla
 section: CMS
 order: 05
-updated: 2022-12-01
+updated: 2023-04-07
 ---
 
+**Ostatnia aktualizacja z dnia 07-04-2023**
 
-## Część 1: przygotowanie instalacji 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+>
+  
+## Wprowadzenie
 
-## Niezbędne narzędzia
-Aby móc zainstalować platformę Joomla! na hostingu www, skorzystaj z programu FTP takiego jak FileZilla (program darmowy).
+Znajdziesz tutaj wszystkie elementy do ręcznego zainstalowania systemu CMS (Content Management System) Joomla! w kilku krokach.
 
-## Dane niezbędne do instalacji
-Sprawdź, czy posiadasz identyfikator klienta (nic-handle) i hasło, aby móc się zalogować do panelu klienta.
+> [!warning]
+>
+> OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywają na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
+> 
+> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/) lub [edytora CMS Joomla!](https://www.joomla.org/){.external}. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również"](#go-further) niniejszego tutoriala.
+>
 
+> [!success]
+>
+> Do zainstalowania Joomla! **automatycznie** w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) sprawdź naszą dokumentację dotyczącą [instalacji modułu "jednym kliknięciem"](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/).
+>
+> Aby zainstalować **ręcznie inny CMS** (WordPress, Drupal, PrestaShop), zapoznaj się z naszą dokumentacją dotyczącą [ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/).
+>
 
-- Musisz posiadać dane do logowania do FTP, aby zalogować się do hostingu.
-Zapoznaj się z przewodnikiem na temat odzyskania danych do FTP:[]({legacy}1374)
+**Dowiedz się, jak ręcznie zainstalować CMS Joomla!**
+  
+## Wymagania początkowe
 
-- Musisz również posiadać dane do bazy danych SQL, dzięki którym będziesz mógł się połączyć z bazą danych.
-Zapoznaj się z przewodnikiem na temat odzyskania danych do SQL:[]({legacy}1374)
+- Posiadanie oferty [hostingu](https://www.ovhcloud.com/pl/web-hosting/), która zawiera co najmniej jedną bazę danych.
+- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
+- Dostęp do[Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+  
+## W praktyce
 
+### Etap 1 - przygotowanie instalacji <a name="step1"></a>
 
-![joomla](images/3141.png){.thumbnail}
+Instalacja CMS **Joomla!** na Twoim [hostingu](https://www.ovhcloud.com/pl/web-hosting/) wymaga przygotowania.
 
+Postępuj zgodnie z **wszystkie etapy** opisane w tutorialu dotyczącym [Ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/) i przejdź do etapu 2 poniżej.
 
-## Część 2: pobranie plików źródłowych
+### Etap 2 - zakończenie ręcznej instalacji <a name="step2"></a>
 
-- Przejdź na stronę producenta modułu [Joomla!](http://www.joomla.pl/).
+> [!success]
+>
+> Przed kontynuowaniem instalacji, usuń cache przeglądarki internetowej, aby uniknąć błędów.
+>
 
-Na stronie tej znajduje się link pozwalający na pobranie najnowszej stabilnej wersji modułu.
+#### 2.1 - Przejdź na stronę internetową Joomla! przez przeglądarkę
 
+Wpisz nazwę domeny na pasku wyszukiwania przeglądarki internetowej.
 
-Pobrane pliki są spakowane. Należy je rozpakować na swoim komputerze. W Internecie odnajdziesz pomoc na ten temat.
+Jeśli pliki źródłowe Joomla! zostały poprawnie umieszczone w katalogu głównym, na stronie wyboru języka dla Joomla! pojawia się:
 
-![joomla](images/3142.png){.thumbnail}
+![Joomla instalacja step 1](images/Joomla-install-select-language-1.png){.thumbnail}
 
+Wybierz język, wpisz nazwę swojej strony www i kliknij `Setup Login Data`{.action}.
 
-## Część 3: umieszczenie plików na FTP
+#### 2.2 - Konfiguracja danych do połączenia z modułem Joomla!
 
-## Rozpakowywanie plików
-Otwórz katalog, w którym umieściłeś spakowane pliki w postaci katalogu. 
+Zdefiniuj dostęp do swojej przestrzeni administracyjnej (*Back Office*) Joomla! :
 
-Kliknij prawym przyciskiem na ten katalog i wybierz "Extract to".
+![Joomla instalacja step 2](images/Joomla-install-define-admin-2.png){.thumbnail}
 
-Wskaż lokalizację, w której chcesz rozpakować pliki. 
+> [!primary]
+>
+> "Super User" oznacza osobę, która administruje CMS.
 
-W Internecie dostępne są liczne przewodniki związane z tą operacją. Skorzystaj z nich, jeśli na tym etapie napotkasz problem. 
+- *Enter the real name of your Super User*: wpisz swoje prawdziwe nazwisko.
+- *Set the username for your Super User account*: wybierz nazwę użytkownika, która pozwoli Ci zalogować się do Twojego panelu administracyjnego Joomla!.
+- *Set password for your Super User account*: wybierz hasło z minimalną liczbą **12 znaków**.
+- *Enter the email address of the website Super User*: wprowadź poprawny adres e-mail. Będzie ona wykorzystywana do otrzymywania powiadomień wysłanych przez Joomla!.
 
-Katalog docelowy będzie nosił nazwę "Joomla".
+Sprawdź podane elementy i kliknij `Setup Database Connection`{.action}.
 
-![joomla](images/3143.png){.thumbnail}
+#### 2.3 - Połączenie bazy danych z usługą Joomla!
 
-## Logowanie na hosting www przez FTP
-Aby umieścić pliki modułu Joomla! na hostingu, należy najpierw zalogować się na ten hosting. 
+Wpisz wymagane informacje dotyczące bazy danych:
 
-Udostępniamy przewodnik na temat połączenia FTP w ofercie hostingu www:
-[]({legacy}1374)
+![Joomla instalacja step 3](images/Joomla-install-db-connect-3.png){.thumbnail}
 
-![joomla](images/3144.png){.thumbnail}
+W celu uzupełnienia poniższych pól należy zapoznać się z informacjami podanymi w **przewodniku nr 1.4** w przewodniku dotyczącym [ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/):
 
-## Transfer plików przez FTP
-Postępuj zgodnie z opisanymi poniżej etapami, aby umieścić pliki na serwerze FTP.
+- *Select the database type*: wybierz rodzaj bazy danych spośród dostępnych typów dla systemu Joomla! Jeśli korzystasz ze współdzielonej bazy danych OVHcloud, możesz zostawić domyślną wartość **MySQLi**.
 
-## Etap 1
-Po zalogowaniu do programu FileZilla:
+- *Enter the host name, usually "localhost" or a name provided by your host*: wprowadź nazwę serwera Twojej bazy danych, zawartą w e-mailu instalacyjnym lub w Panelu klienta.
 
-W części "Adres lokalny", która zawiera listę plików znajdujących się na Twoim komputerze, otówrz rozpakowany katalog o nazwie "Joomla", w którym znajdują się pliki modułu.
+> [!primary]
+> 
+> - Nazwa serwera bazy danych zawartej w ofercie hostingu WWW ma zazwyczaj taką formę: `NameOfYourDatabase.mysql.db`. 
+>
+> - Nazwa serwera bazy danych Cloud Databases zaczyna się od Twojego identyfikatora klienta OVHcloud i ma następującą formę: `aa00000-XXX.eu.clouddb.ovh.net`, **"aa00000"** odnosi się do twojego identyfikatora OVHcloud bez **"-ovh"**, a **"X"** należy zastąpić pozostałą częścią odniesienia do usługi Web Cloud Databases.
+>
 
-W części "Serwer zdalny", która odnosi się do hostingu www OVHcloud, otwórz katalog "www". W tym katalogu zostaną umieszczone wszystkie pliki modułu. 
+- *Either a username you created or a username provided by your host*: nazwa bazy danych jest identyczna, jeśli korzystasz z bazy danych zawartej w Twoim hostingu.
+W przypadku baz danych utworzonych w ramach usługi WWW Cloud Databases, zapoznaj się z informacjami podanymi w przewodniku [Ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/) **etap 1.4** .
 
-Jeśli taki katalog nie istnieje, możesz go utworzyć.
+- *Either a password you created or a password provided by your host*: zdefiniowałeś ją podczas tworzenia bazy danych. Możliwe jest również, że w międzyczasie zmieniłeś hasło. Prosimy o jego sprawdzenie.
 
-Pliki muszą zostać obowiązkowo umieszczone w katalogu "www". W przeciwnym razie procedura instalacji nie będzie dostępna z poziomu nazwy domeny.
+- *Enter the database name*: nazwa ta została zdefiniowana podczas tworzenia bazy danych w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Jest on identyczny z nazwą użytkownika bazy danych, jeśli korzystasz z bazy danych zawartej w Twoim hostingu.
 
-![joomla](images/3145.png){.thumbnail}
+- *Enter a table prefix or use the randomly generated one*: jeśli instalacja jest wykonywana z nową bazą danych, wprowadź odpowiedni prefiks. Jeśli korzystasz z bazy danych wykorzystywanej już przez inną stronę WWW, zapoznaj się z **krokiem 1.4** w przewodniku dotyczącym [ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/), aby nie wprowadzić prefiksu tabeli już używanego w Twojej bazie danych.
 
-## Etap 2
-Po otwarciu tych katalogów:
+- **Connection Encryption**: pozostaw wartość **Default**.
 
-W części "Adres lokalny" odnajdziesz wszystkie pliki niezbędne do instalacji modułu CMS Joomla!.
+Kliknij polecenie `Install Joomla`{.action}.
 
-Aby zaznaczyć wszystkie pliki, skorzystaj z połączenia klawiszy CTRL+A.
+Pojawi się następujący komunikat:
 
-Następnie skorzystaj z funkcji przeciągnij i upuść do części "Serwer zdalny" do katalogu "www".
+![Joomla instalacja step 3-1](images/Joomla-install-db-connect-3-1.png){.thumbnail}
 
-Możliwe, że katalog "www" nie jest pusty. Nie trzeba usuwać plików z tego katalogu. Powrócimy do tego tematu w dalszej części tego przewodnika.
+Jeśli używasz bazy danych poza hostingiem lokalnym, usuń losowo wygenerowany token* podczas instalacji modułu Joomla!.
 
-![joomla](images/3146.png){.thumbnail}
+Plik ten znajduje się w [przestrzeni dyskowej FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/).
 
-## Etap 3
-Trwa przenoszenie plików.
+Po zalogowaniu się do katalogu **instalacja** Twojego Joomla! następnie usuń tylko *token* wskazany w wiadomości alertu. Jest on obecny w formie pliku **.txt**.
 
-Poczekaj, aż wszystkie pliki zostaną umieszczone na zdalnym serwerze FTP. Operacja ta może zająć kilka minut. 
+Następnie przejdź do przeglądarki internetowej i kliknij ponownie przycisk `Install Joomla`{.action}.
 
-Po przeniesieniu plików, upewnij się, że wszystkie pliki i katalogi zostały poprawnie przeniesione. 
+#### 2.4 - Zakończ instalację
 
-Ta operacja kończy część poświęconą umieszczaniu plików na FTP.
+Po zakończeniu instalacji pojawi się następująca strona:
 
-![joomla](images/3147.png){.thumbnail}
+![Joomla instalacja step 4](images/Joomla-install-ending-4.png){.thumbnail}
 
+Instalacja została zakończona, ale w razie potrzeby możesz dodać dodatkowe języki do CMS-a.
 
-## Część 4: połączenie z bazą danych
+>[!success]
+>
+> Gratulacje, Joomla! jest gotowy do użycia i administrowania.
+>
+  
+## Sprawdź również <a name="go-further"></a>
 
-- Przed kontynuowaniem instalacji wyczyść cache swojej przeglądarki internetowej, aby uniknąć ewentualnych błędów. 
-
-
-Aby połączyć bazę danych z modułem Joomla!, należy przejść przez etapy instalacji modułu.
-
-## Etap 1
-Wpisz w przeglądarce nazwę swojej domeny. Uruchomi się asystent instalacji.
-
-W pierwszej kolejności należy podać dane konfiguracyjne modułu Joomla!: 
-
-Wybierz język: Wybierz język instalacji modułu Joomla!.
-
-Nazwa witryny: Zdefiniuj nazwę strony (może to mieć wpływ na pozycjonowanie).
-
-Opis witryny: Wpisz opis strony (może to mieć wpływ na pozycjonowanie).
-
-Witryna wyłączona: Pozwala na zablokowanie dostępu do strony. 
-
-E-mail administratora: Wpisz prawidłowy adres e-mail. 
-
-Nazwa administratora: Wpisz nazwę używaną do do logowania do panelu administracyjnego. 
-
-Hasło administratora: Zdefiniuj hasło dostępu do części administracyjnej strony.
-
-Powtórz hasło administratora: Wpisz ponownie hasło.
-
-Kliknij na "Dalej", aby przejść do kolejnego etapu.
-
-![joomla](images/3148.png){.thumbnail}
-
-## Etap 2
-Wpisz dane dotyczące bazy danych:
-
-Typ bazy danych: Wybierz typ bazy MySQL.
-
-Nazwa serwera bazy danych: Wpisz nazwę serwera bazy danych wskazaną w e-mailu instalacyjnym i w panelu klienta. 
-
-Nazwa użytkownika: Wpisz nazwę bazy danych, wskazaną w e-mailu instalacyjnym.
-
-Hasło: Zostało wysłane w e-mailu po utworzeniu bazy danych. Możliwe, że je zmieniłeś. 
-
-Nazwa bazy danych: Wybrana podczas zakładania bazy danych w panelu klienta.
-
-Przedrostek dla tabel bazy danych: Opcja użyteczna w przypadku chęci zainstalowania kilku modułów Joomla! na jednej bazie danych. W takim przypadku należy wpisać inny prefiks dla każdej instalacji. 
-
-Przetwarzanie starej bazy danych: Jeśli w bazie danych znajdują się tabele, te które mają taki sam prefiks jak wskazny podczas instalacji, zmienią nazwę i będą mieć prefiks "bak_".
-
-Kliknij na "Dalej", aby kontynuować.
-
-![joomla](images/3149.png){.thumbnail}
-
-
-## Zakończenie
-
-## Zakończenie instalacji
-Aby dokończyć instalowanie modułu Joomla!, kontynuuj etapy instalacji.
-
-## Etap 1
-Pojawi się przypomnienie wybranych parametrów.
-
-Zostaniesz zapytany o dwie informacje:
-
-
-- Typ strony
-
-- E-mail z konfiguracją
-
-
-Wskaż, czy chcesz otrzymać na e-mail dane instalacyjne, takie jak hasło do części administracyjnej zdefiniowane wcześniej. 
-
-Kliknij na "Instaluj", aby kontynuować.
-
-![joomla](images/3150.png){.thumbnail}
-
-## Etap 2
-Instalacja może potrwać kilka minut.
-
-![joomla](images/3151.png){.thumbnail}
-
-## Etap 3
-Ze względów bezpieczeństwa Joomla! zaleca usunięcie katalogu instalacyjnego. 
-
-Kliknij na "Usuń folder instalacyjny".
-
-![joomla](images/3152.png){.thumbnail}
-
-## Etap  4
-Pojawi się komunikat z potwierdzeniem usunięcia katalogu. 
-
-Możesz teraz się zalogować do części administracyjnej modułu b]Joomla!. Wprowadź dane do logowania w oknie, które się pojawi.
-
-![joomla](images/3153.png){.thumbnail}
-
-## Część administracyjna modułu Joomla!
-Tak wygląda panel administracyjny modułu Joomla!.
-
-![joomla](images/3154.png){.thumbnail}
-
-
-## Użyteczne informacje
-Pomoc OVHcloud nie będzie w stanie zapewnić Ci wsparcia w zakresie konfiguracji modułu Joomla!.
-Udostępniamy przewodnik na ten temat: []({legacy}2053).
-
-Zachęcamy do korzystania z forum rozwiązania Joomla!.
-
-
-- Oto link do [forum](http://forum.joomla.pl/) tego modułu.
-
-
-
-## Klasyczny błąd: strona w budowie
-Umieściłeś pliki na FTP, ale nadal wyświetla się informacja "strona w budowie".
-
-Po zainstalowaniu hostingu, OVHcloud umieszcza na nim stronę tymczasową.
-
-Jeśli umieścisz pliki w katalogu "www" i nie usuniesz treści umieszczonych przez OVHcloud, pojawi się ten problem. 
-
-Aby to poprawić, usuń plik "index.html" umieszczony przez OVHcloud lub zmień jego nazwę.
-
-Zmień nazwę tego pliku. Będziesz mógł później aktywować ten plik jako tymczasową stronę główną.
-
-Inna użyteczna informacja: pliki strony muszą zostać umieszczone w katalogu "www", aby były brane pod uwagę.
-
-![joomla](images/3155.png){.thumbnail}
-
-## Klasyczny błąd: wersja PHP
-Chodzi o błąd dotyczący wersji PHP serwera. 
-
-Przyczyna jest prosta: najnowsza wersja PHP nie została włączona.
-
-Udostępniamy przewodnik na temat zmiany wersji PHP na hostingu www:[Zmiana wersji PHP na hostingu]({legacy}1207)
-
-![joomla](images/3156.png){.thumbnail}
-
-## Klasyczny błąd: Magic Quotes
-Chodzi o nieprawidłowo zdefiniowaną zmienną, która przeszkadza w zainstalowaniu modułu Joomla!.
-
-Zmienna Magic Quotes musi być ustawiona na Off i na 0 w Twoim pliku konfiguracyjnym. 
-
-W nowej ofercie 2014, jeśli PHP-FPM jest włączone, zmienna Magic Quotes jest domyślnie wyłączona. W starszych ofertach hostingu www, możesz wyłączyć tę zmienną w pliku .htaccess.
-
-Udostępniamy przewodnik dotyczący zmiany zmiennych PHP na hostingu www 2014:
-[Zmiana wersji PHP na hostingu www]({legacy}1207)
-
-Udostępniamy również przewodnik dotyczący zmiany zmiennych PHP na starszym hostingu www:[Zmiana zmiennych PHP na starych hostingach OVHcloud](http://pomoc.ovh.pl/KonfiguracjaPhp)
-
-![joomla](images/3157.png){.thumbnail}
-
+[Oficjalna strona Joomla!](https://joomla.org){.external}
+ 
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+ 
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+ 
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

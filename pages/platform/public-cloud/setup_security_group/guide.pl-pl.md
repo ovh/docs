@@ -8,7 +8,7 @@ updated: 2021-08-24
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 24-08-2021**
@@ -21,7 +21,7 @@ Ze względów bezpieczeństwa możesz konfigurować i używać reguł filtrowani
 
 ## Wymagania początkowe
 
-- Projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/).
+- Projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/)
 - [Dostęp do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie-i-usuwanie-uzytkownika-openstack/)
 
 ## W praktyce
@@ -105,4 +105,4 @@ Aby usunąć grupę zabezpieczeń, zaznacz ją w odpowiednim polu po lewej stron
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

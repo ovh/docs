@@ -42,7 +42,7 @@ Se il tuo testo contiene 2 a capo (doppia /n) o se scrivi il parametro "--end", 
 Per inviare un SMS contenente questi elementi sarà necessario farlo nello Spazio Cliente o attraverso le API.
 >
 
-Per maggiori informazioni sui caratteri autorizzati in codifica a 7 bit, fai riferimento [all'allegato](./#allegato_1) in fondo a questa guida.
+Per maggiori informazioni sui caratteri autorizzati in codifica a 7 bit, fai riferimento [all'allegato](./#allegato) in fondo a questa guida.
 
 > [!warning]
 >

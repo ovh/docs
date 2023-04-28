@@ -87,7 +87,7 @@ The managed permissions are listed below. Note that depending on the level (buck
 
 | Permission | Bucket level | Object level |
 | --- | --- | --- |
-| READ | allows list/download all objects in the bucket | allows list/download object and its metadata |
+| READ | allows to list all objects in the bucket | allows to read an object and its metadata |
 | WRITE | allows creation/deletion/overwrites of objects in the bucket | n/a |
 | READ_ACP | allows read of the bucket ACL | allows read of the object ACL |
 | WRITE_ACP | allows creation/deletion/overwrites of the bucket ACL | allows creation/deletion/overwrites of the object ACL |

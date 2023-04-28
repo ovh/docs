@@ -11,7 +11,7 @@ updated: 2022-08-05
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 05/08/2022** 
+**Última actualización: 05/08/2022**
 
 ## Objetivo
 
@@ -38,7 +38,7 @@ y poder identificar el origen en caso de que un usuario de la API envíe SMS de 
 - Es posible imponer restricciones (cuotas) a los créditos de SMS de un usuario de la API.
 De este modo, el propietario de la cuenta de SMS puede repartir sus créditos entre las diferentes cuentas de usuarios de la API.
 
-Para gestionar mejor el saldo de su cuenta de SMS, es posible aplicar un límite y una cuota a los usuarios de la API. 
+Para gestionar mejor el saldo de su cuenta de SMS, es posible aplicar un límite y una cuota a los usuarios de la API.
 
 - La **cuota** es la cantidad de créditos de SMS asignada a un usuario de la API.
 
@@ -128,7 +128,7 @@ Para obtener la descripción de un código ptt específico, puede utilizar la si
 
 Para más información sobre el uso de las API de OVHcloud, consulte nuestra guía [Primeros pasos con la API de OVHcloud](https://docs.ovh.com/es/api/first-steps-with-ovh-api/).
 
-En la siguiente tabla encontrará una lista no exhaustiva de los códigos ptt principales.
+En la siguiente tabla encontrará una lista **no exhaustiva** de los códigos ptt principales.
 
 |Código|Descripción|
 |---|---|

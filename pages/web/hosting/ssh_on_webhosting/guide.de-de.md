@@ -63,7 +63,7 @@ Wenn das Terminal geöffnet ist, verwenden Sie folgenden Befehl, indem Sie die E
 ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 ```
 
-Nach Senden des Befehls werden Sie dazu aufgefordert, das Passwort des SSH-Benutzers einzugeben. Wenn Sie eingeloggt sind, können Sie zum nächsten Schritt „[Via SSH mit Ihrem Speicherplatz interagieren](./#schritt-4-via-ssh-mit-ihrem-speicherplatz-interagieren_1)“ übergehen.
+Nach Senden des Befehls werden Sie dazu aufgefordert, das Passwort des SSH-Benutzers einzugeben. Wenn Sie eingeloggt sind, können Sie zum nächsten Schritt „[Via SSH mit Ihrem Speicherplatz interagieren](./#schritt-4-via-ssh-mit-ihrem-speicherplatz-interagieren)“ übergehen.
 
 ![SSH verwenden](images/use-ssh-step3.png){.thumbnail}
 

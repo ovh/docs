@@ -4,7 +4,7 @@ excerpt: Insert Here A Short Desc
 slug: web_hosting_cyberduck_user_guide_on_mac
 section: FTP and SSH
 order: 05
-updated: 2022-12-01
+updated: 2020-05-05
 ---
 
 **Last updated 5th May 2020**

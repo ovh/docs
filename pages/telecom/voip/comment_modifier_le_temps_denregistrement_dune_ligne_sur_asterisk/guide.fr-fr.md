@@ -7,6 +7,8 @@ section: IPBX
 updated: 2018-03-26
 ---
 
+**Dernière mise à jour le 26/03/2018**
+
 
 Le temps d’enregistrement minimum conseillé est de 1800 secondes. Pour modifier ce paramètre suivez ces étapes :
 Sur Asterisk le temps d'enregistrement de votre ligne va se modifier dans le fichier sip.conf, partie [general].

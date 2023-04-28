@@ -8,12 +8,16 @@ section: "Configurations techniques avancées"
 updated: 2021-04-13
 ---
 
+**Dernière mise à jour le 13/04/2021**
+
 ## Sur OverTheBox Plus (switch Ethernet intégré)
+
 - Rendez-vous dans  **Network**  >  **Switch**  >  **go to expert mode**
 - Cliquez sur **Add** puis inscrivez l'ID **666** sur la ligne venant d'apparaitre.
 - Cliquez sur " **Save & Apply** "
 
 ## Autre solution
+
 Rendez-vous dans  **Network**  >  **Interfaces**  > puis cliquez " **Add new interface** ” en bas à gauche de la page.
 
 Ensuite, nommez la nouvelle interface, par exemple : “ **vlan666** ”

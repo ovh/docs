@@ -6,11 +6,11 @@ section: 'Diagnostica e modalità Rescue'
 updated: 2021-01-12
 ---
 
-**Ultimo aggiornamento: 16/12/2020**
-
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
+
+**Ultimo aggiornamento: 16/12/2020**
 
 ## Obiettivo
 
@@ -26,7 +26,7 @@ Durante l’installazione o la reinstallazione di una distribuzione Windows, vie
 
 ## Procedura
 
-Negli step successivi descriviamo il processo di modifica della password admin locale tramite la modalità Rescue OVHcloud (basata su Linux) disponibile in qualsiasi momento. Se preferisci utilizzare Windows PE (WinRescue), consulta il metodo dedicato [alla fine di questa guida](./#reimposta-la-password-amministratore-con-winrescue_1).
+Negli step successivi descriviamo il processo di modifica della password admin locale tramite la modalità Rescue OVHcloud (basata su Linux) disponibile in qualsiasi momento. Se preferisci utilizzare Windows PE (WinRescue), consulta il metodo dedicato [alla fine di questa guida](./#reimposta-la-password-amministratore-con-winrescue).
 
 ### Step 1: riavvia il server in modalità Rescue
 
@@ -49,7 +49,8 @@ Per maggiori informazioni sulla modalità Rescue, consulta [questa guida](../res
 
 ### Step 2: esegui il mount della partizione di sistema
 
-Accedi al tuo server via SSH. Se necessario, consulta la guida d'>Trattandosi di un server Windows, le partizioni saranno intitolate "Microsoft LDM data".
+Accedi al tuo server via SSH. Se necessario, consulta la guida [Introduzione a SSH](../introduzione-ssh/)
+<br>Trattandosi di un server Windows, le partizioni saranno intitolate "Microsoft LDM data".
 
 ```
 # fdisk -l
@@ -230,7 +231,7 @@ Write hive files? (y/n) [n] : y
 
 ### Step 4: Riavviare il server 
 
-Sostituisci il netboot con **Avviare da hard disk** nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) (vedi [Step 1](./#step-1-riavvia-il-server-in-modalita-rescue_1)). 
+Sostituisci il netboot con **Avviare da hard disk** nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) (vedi [Step 1](./#step-1-riavvia-il-server-in-modalita-rescue)). 
 
 Di ritorno da riga di comando, smonta la partizione e riavvia il server con questi comandi:
 
@@ -330,7 +331,7 @@ Il server deve essere riavviato
 
 #### Step 3: riavvia il server 
 
-Sostituisci il netboot con **Avviare da hard disk** nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) (vedi [Step 1](./#step-1-riavvia-il-server-in-modalita-rescue_1)). 
+Sostituisci il netboot con **Avviare da hard disk** nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) (vedi [Step 1](./#step-1-riavvia-il-server-in-modalita-rescue)). 
 
 Nella finestra KVM, seleziona l'opzione di arresto `Riavvia`{.action} utilizzando il pulsante Windows "Avvia" in basso a sinistra.
 

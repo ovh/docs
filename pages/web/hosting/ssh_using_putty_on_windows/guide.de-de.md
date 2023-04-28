@@ -4,9 +4,10 @@ excerpt: 'Webhosting: Verwendung von PuTTY für Windows'
 slug: webhosting_verwendung_von_putty_fur_windows
 section: 'FTP und SSH'
 order: 08
-updated: 2022-10-05
+updated: 2020-05-05
 ---
 
+**Letzte Aktualisierung am 05.05.2020**
  
 ## Einleitung
 Auf den Windows Systemen sind mehrere auf SSH basierende Programme verfügbar.

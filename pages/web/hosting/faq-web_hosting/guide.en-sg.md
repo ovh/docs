@@ -4,10 +4,10 @@ excerpt: Find the answers to the most frequently asked questions about OVHcloud 
 slug: web-hosting-faq
 section: Getting started
 order: 05
-updated: 2022-11-28
+updated: 2023-04-24
 ---
 
-**Last updated 7th April 2022**
+**Last updated 24th April 2023**
 
 ## Manage your solution
 
@@ -56,6 +56,19 @@ See our guide [Hosting multiple websites on your Web Hosting plan](https://docs.
 When you cancel or delete your hosting plan, the email solution attached to it will also be cancelled. To keep your email addresses, you will need to detach the email solution before cancelling the hosting plan.<br>
 
 To do this, go to your Web Hosting plan’s `General information`{.action} tab. In the **Configuration** section, click on the `...`{.action} button to the right of **Email addresses**. Click `Detach my email option`{.action} and follow the instructions to order an independent email solution that lets you keep your email addresses you have already created.
+
+### How do I increase the RAM of Web Cloud Databases linked to a Performance web hosting plan?
+
+To increase the RAM for a Web Cloud Databases service linked to a **Performance** hosting plan, you will need detach it from your **Performance** web hosting plan beforehand in order to switch to a higher plan.
+
+To do this, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). Go to the `Web Cloud`{.action} section, then click on the relevant hosting plan in the `Hosting plans`{.action} section in the left-hand column. 
+
+On the new `General information`{.action} page that appears, you will see a box labelled `Configuration`{.action} in the centre of the page. To the right of `Web Cloud Databases`{.action}, click on the `...`{.action} button then `Detach`{.action}. Select the shortest renewal duration, then continue until you confirm your order.
+
+You can find more information in our guide on [Configuring a Web Cloud Databases solution](/pages/web/clouddb/configure-database-server#modify-ram-web-cloud-db)
+
+
+**This action cannot be undone, and the Cloud Databases Web hosting plan will then be billed separately from your Performance Web Hosting plan.**
 
 ## Diagnostics 
 

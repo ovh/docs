@@ -24,7 +24,7 @@ La configuración de la resolución **inversa DNS** de una instancia resulta esp
 ## Requisitos
 
 - Tener una [instancia de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud.
-- Un dominio con un registro `A` que apunta a la instancia
+- Un dominio con un registro `A` que apunta a la instancia.
 - Tienes acceso a tu [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento

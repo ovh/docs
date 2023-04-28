@@ -47,7 +47,7 @@ ovhai job get <job-id>
 Verify you can connect to the SSH host by running the following command from a terminal / PowerShell window replacing user\@hostname accordingly:
 
 ``` {.bash}
-ssh <job-id>@gra.training.ai.cloud.ovh.net
+ssh <job-id>@gra.ai.cloud.ovh.net
 
 Welcome to OVHcloud AI Training Jobs SSH
 job-0d916855-1cd4-4b66-8803-b4782bc13902:~$

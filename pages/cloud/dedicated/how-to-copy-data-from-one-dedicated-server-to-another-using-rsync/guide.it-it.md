@@ -3,8 +3,14 @@ title: 'Copiare dati da un server dedicato a un altro con rsync'
 slug: copiare-dati-server-rsync
 excerpt: 'Come effettuare la copia dei dati tra server utilizzando il software rsync'
 section: Tutorial
-updated: 2022-06-17
+updated: 2022-02-16
 ---
+
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+>
+
+**Ultimo aggiornamento: 16/02/2022**
 
 ## Introduzione
 

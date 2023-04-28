@@ -146,7 +146,7 @@ Relancez ensuite le calcul du quota utilisé depuis l'onglet `Bases de données`
 
 #### Méthode 4 : optimiser votre base de données
 
-Pour optimiser votre base de données, suivez les instructions de notre guide « [Configurer votre serveur de bases de données](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) ». Relancez ensuite le calcul du quota utilisé depuis l'onglet `Bases de données`{.action} de votre hébergement, en cliquant sur le bouton `...`{.action} de la base de données concernée.
+Pour optimiser votre base de données, suivez les instructions de notre guide « [Configurer votre serveur de bases de données](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees) ». Relancez ensuite le calcul du quota utilisé depuis l'onglet `Bases de données`{.action} de votre hébergement, en cliquant sur le bouton `...`{.action} de la base de données concernée.
 
 > [!warning]
 >
@@ -159,7 +159,7 @@ Le message suivant dans la partie `Bases de données`{.action} de votre [espace 
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
-Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#modifier-loffre-du-serveur-de-bases-de-donnees_1) disponible depuis la partie `Bases de données`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} dans la rubrique `RAM`.
+Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#modifier-loffre-du-serveur-de-bases-de-donnees) disponible depuis la partie `Bases de données`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} dans la rubrique `RAM`.
 
 > [!warning]
 >
@@ -170,7 +170,7 @@ Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](https
 > Dans la zone `Configuration`, cliquez sur le bouton `...`{.action} à droite de l'entrée de la `Base de données privée` puis cliquez sur le bouton `Délier`{.action}.
 >
 
-Vous pouvez également optimiser votre base de données en suivant les instructions de notre guide « [Configurer votre serveur de bases de données](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) ».
+Vous pouvez également optimiser votre base de données en suivant les instructions de notre guide « [Configurer votre serveur de bases de données](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees) ».
 
 > [!primary]
 >
@@ -231,7 +231,7 @@ Pour résoudre cette anomalie, vous pouvez :
 
 - Fractionner votre base de données, afin de l'importer en plusieurs opérations au lieu d'une seule (pour toute question sur les manipulations à réaliser, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.)
 
-- [Optimisez votre base de données](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) puis répétez les opérations d'export / import.
+- [Optimisez votre base de données](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees) puis répétez les opérations d'export / import.
 
 ### Impossible d'accéder à PhpMyAdmin
 
@@ -259,7 +259,7 @@ Ce nombre est de **200** pour les bases des serveurs [Web Cloud Databases](https
 
 Ce message apparaît lors de la [connexion à PhpMyAdmin](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/#acceder-a-linterface-phpmyadmin) lorsque ce nombre maximal de connexions est dépassé.
 
-Dans cette situation, vous devrez [optimiser vos bases de données](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) afin de réduire le nombre de connexions actives.
+Dans cette situation, vous devrez [optimiser vos bases de données](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees) afin de réduire le nombre de connexions actives.
 
 > [!warning]
 >

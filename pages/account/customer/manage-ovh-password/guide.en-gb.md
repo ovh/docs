@@ -4,8 +4,10 @@ slug: manage-password
 excerpt: 'Find out how to set, change and manage your password for the OVHcloud Control Panel'
 section: 'Getting started'
 order: 4
-updated: 2021-07-21
+updated: 2020-06-24
 ---
+
+**Last updated 24th June 2020**
 
 ## Objective
 

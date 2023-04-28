@@ -6,7 +6,7 @@ routes:
     canonical: 'https://docs.ovh.com/ca/en/public-cloud/start-instance-on-a-volume/'
 section: Per iniziare
 order: 9
-updated: 2023-01-11
+updated: 2021-11-01
 ---
 
 **Last updated 1st November 2021**

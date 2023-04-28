@@ -3,8 +3,10 @@ title: 'Configuración de un servidor LAMP en Debian 9 y Ubuntu 18'
 excerpt: 'Averigüe cómo configurar un servidor LAMP'
 slug: configuracion-lamp-debian-ubuntu
 section: Tutoriales
-updated: 2022-07-05
+updated: 2020-08-06
 ---
+
+**Última actualización: 06/08/2020**
 
 # Introducción
 

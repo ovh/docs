@@ -16,7 +16,7 @@ When using private network, you don't have access by default to monitoring tools
 
 **This guide explains how to expose your managed Grafana to internet through the configuration of a NGINX instance in reverse proxy mode.**
 
-Schema concept :
+Schema concept:
 
 ![Schema concept](images/pcdb-expose-grafana-to-internet-20230208211544858.png){.thumbnail}
 

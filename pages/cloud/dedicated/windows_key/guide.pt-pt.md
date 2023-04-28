@@ -6,6 +6,10 @@ section: Diversos
 updated: 2022-07-07
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 **Última atualização: 07/07/2022**
 
 ## Sumário
@@ -19,7 +23,7 @@ Por vezes, durante a instalação de um sistema operativo Windows Server, a chav
 
 - Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/os/server-windows/) com Windows instalado na sua conta OVHcloud
 - Ter uma licença Windows SPLA na sua conta OVHcloud
-- Ter acesso ao servidor via desktop remoto.
+- Ter acesso ao servidor via desktop remoto
 
 
 ## Instruções

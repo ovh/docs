@@ -8,7 +8,10 @@ section: "Configurations de l'OverTheBox"
 updated: 2021-04-13
 ---
 
+**Dernière mise à jour le 13/04/2021**
+
 ## Configuration
+
 - Connectez vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external} en tant qu'administrateur,
 - Rendez vous dans l'onglet **" Network > DHCP and DNS "**
 - Dans le champ "DNS forwardings", ajoutez les IP de vos serveurs DNS

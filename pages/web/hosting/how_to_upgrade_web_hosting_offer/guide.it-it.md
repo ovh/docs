@@ -4,14 +4,14 @@ excerpt: Come modificare la formula di abbonamento della tua offerta di hosting 
 slug: how_to_change_web_hosting_offer
 section: Ottimizza il tuo sito
 order: 02
-updated: 2023-01-03
+updated: 2023-04-19
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
-**Ultimo aggiornamento: 15/02/2023**
+**Ultimo aggiornamento: 19/04/2023**
 
 ## Obiettivo
 
@@ -36,8 +36,6 @@ Il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&fr
 > - [È possibile modificare la tua offerta corrente verso un'offerta inferiore?](#checks)
 >
 
-Prima di effettuare la modifica verso una gamma inferiore, verifica i 6 elementi seguenti:
-
 ### Modifica la tua offerta di hosting <a name="modify"></a>
 
 Per modificare il tuo abbonamento, accedi alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Hosting`{.action} e seleziona l'hosting interessato.
@@ -57,7 +55,7 @@ Seleziona il tuo nuovo abbonamento e la sua durata. Conferma i contratti e clicc
 > Dovrai **prima** far evolvere il tuo hosting dalla formula *Performance 2* verso l'offerta *Performance 1* **poi** verso l'offerta *Pro*.
 >
 
-Prima di effettuare la modifica verso una gamma inferiore, verifica i 6 elementi seguenti:
+Prima di effettuare la modifica verso una gamma inferiore, verifica i 7 elementi seguenti:
 
 #### 1 - Numero di siti
 
@@ -113,9 +111,19 @@ Per attivare un servizio di hosting su un'offerta [Personale](https://www.ovhclo
 
 Nella sezione `Email`{.action} del tuo Spazio Cliente, seleziona l'offerta e clicca su `...`{.action} a destra di `Servizio`{.action} Infine clicca su `Modifica offerta`{.action}.
 
+#### 7 - Utenti FTP
+
+Prima di passare a un'offerta inferiore, assicurati che la nuova offerta offra sufficienti utenti FTP.
+
+Il numero di utenti FTP è visibile nello Spazio Cliente OVHcloud. Accedi alla sezione `Web Cloud`{.action} e seleziona l'hosting interessato nella sezione `Hosting`{.action} sulla tua sinistra. Nella nuova pagina clicca sulla scheda `FTP-SSH`{.action}. Nella parte inferiore della pagina successiva, una tabella elenca tutti gli utenti FTP creati per il tuo hosting Web.
+
+Per rimuovere utenti FTP, clicca sul pulsante `...`{.action} a destra dell'utente FTP che vuoi eliminare e poi su `Elimina`{.action}.
+
+![user FTP deletion](images/userFTP.png){.thumbnail}
+
 #### Finalizzazione
 
-Una volta verificati questi 6 elementi, è possibile [cambiare offerta](#modify).
+Una volta verificati questi 7 elementi, è possibile [cambiare offerta](#modify).
 
 ### Casi particolari
 

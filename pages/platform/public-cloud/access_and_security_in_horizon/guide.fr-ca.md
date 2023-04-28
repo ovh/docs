@@ -1,6 +1,6 @@
 ---
 title: "Paramètres d'accès et de sécurité dans Horizon"
-excerpt : "Découvrez comment gérer et sécuriser l'accès à vos instances"
+excerpt: "Découvrez comment gérer et sécuriser l'accès à vos instances"
 slug: access_and_security_in_horizon
 legacy_guide_number: 1774
 section: Gestion depuis Horizon
@@ -8,7 +8,7 @@ order: 07
 updated: 2021-05-26
 ---
 
-**Dernière mise à jour le 26 mai 2021**
+**Dernière mise à jour le 26/05/2021**
 
 ## Objectif
 

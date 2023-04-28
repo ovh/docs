@@ -28,7 +28,7 @@ From the OVHcloud Control Panel, you can launch the deployment of the SLES 15 fo
 
 Select the `Install from an OVHcloud template`{.action} option.
 
-![select-template](images/select-template.png){.thumbnail width="500" height="500"}
+![select-template](images/select-template.png){.thumbnail width=592 height=420}
 
 The first step involves providing information about the operating system which you want to install.<br>
 &ensp;&thinsp;a. In the drop-down menu `Type of OS`{.action}, select `ERP`{.action}.<br>
@@ -41,7 +41,7 @@ If you want, you can customise the partition configuration.
 > [!primary]
 > By default, partitions `/boot` and `/` are in RAID 1.
 
-![sles-template](images/sles-template.png){.thumbnail width="500" height="500"}
+![sles-template](images/sles-template.png){.thumbnail width=593 height=762}
 
 If you do not custom the configuration of partitions, you will go to the last step.
 
@@ -52,14 +52,14 @@ You can set a hostname which will be displayed with the command `hostname`. You 
 
 ![sles-partitions](images/sles-partitions.png){.thumbnail}
 
-Once these last paramaters are configured, click `Confirm`{.action} to launch the installation.
+Once these last parameters are configured, click `Confirm`{.action} to launch the installation.
 
 > [!warning]
 > The SLES 15 for SAP image provided by OVHcloud is an image without license included. Following the deployment, you should install your SLES 15 for SAP license with the following command:
 >
 > `SUSEConnect -r <license>`
 
-Once the SLES 15 for SAP installation is done, you can [connect to your dedicated server](https://docs.ovh.com/ie/en/dedicated/getting-started-dedicated-server/#logging-on-to-your-server_1).
+Once the SLES 15 for SAP installation is done, you can [connect to your dedicated server](https://docs.ovh.com/ie/en/dedicated/getting-started-dedicated-server/#logging-on-to-your-server).
 
 ### Preparation of file systems
 
@@ -125,7 +125,7 @@ We advise you to follow this table to size your logical volumes.
 | hanashared      |  MIN(1 x RAM; 1 TB)                                   |
 | hanabackup      |  hanadata + hanalog                                   |
 
-In each line, replace the caracter `<X>` by the size of your logical volume wanted in gigabytes, for example 32.
+In each line, replace the character `<X>` by the size of your logical volume wanted in gigabytes, for example 32.
 
 ```bash
 $ lvcreate -L<X>G -n lv_usrsap vg_hana
@@ -139,7 +139,7 @@ $ lvcreate -L<X>G -n lv_hanabackup vg_hana
   <li>Once these logical volumes are created, it is necessary to format them in a format supported by SAP HANA.</li>
 </ol>
 
-In this guide, we use the XFS format. We recommend taking into consideration the [SAP Note 2972496 - SAP HANA Filesystem Types](https://launchpad.support.sap.com/#/notes/2972496) to discover all formats suported by SAP HANA.
+In this guide, we use the XFS format. We recommend taking into consideration the [SAP Note 2972496 - SAP HANA Filesystem Types](https://launchpad.support.sap.com/#/notes/2972496) to discover all formats supported by SAP HANA.
 
 ```bash
 $ mkfs.xfs /dev/vg_hana/lv_usrsap
@@ -184,7 +184,7 @@ UUID=<UUID>       /hanabackup     xfs     noatime,nodiratime,logbsize=256k 0 0
 ```
 
 <ol start="9">
-  <li>You can now execute the command <code>mount -a</code>. This command will mount the logical volumes on your operation system. You have to see it in the ouput of the command <code>df -h</code> with the size previously configured.</li>
+  <li>You can now execute the command <code>mount -a</code>. This command will mount the logical volumes on your operation system. You have to see it in the output of the command <code>df -h</code> with the size previously configured.</li>
 </ol>
 
 ### Application of parameters with SAPtune
@@ -205,7 +205,7 @@ $ zypper install -y saptune
 <ol start="2">
   <li>Depending on your future SAP system, you have two possibilities.</li>
 </ol>
-&ensp;&thinsp;a. The first choice is `HANA` for running a SAP HANA database of a SAP Netweaver system.<br>
+&ensp;&thinsp;a. The first choice is `HANA` for running a SAP HANA database of a SAP NetWeaver system.<br>
 &ensp;&thinsp;b. The second choice is `S4HANA-DBSERVER` for running the SAP HANA database of a SAP S/4HANA system.
 
 To set these parameters after choosing your solution, run this following command:

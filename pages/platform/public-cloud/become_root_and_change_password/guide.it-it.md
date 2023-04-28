@@ -7,11 +7,11 @@ order: 08
 updated: 2022-03-24
 ---
 
-**Ultimo aggiornamento: 24/03/2022**
-
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
+
+**Ultimo aggiornamento: 24/03/2022**
 
 ## Obiettivo
 
@@ -71,7 +71,7 @@ Quando richiesto, inserisci la password associata.
 
 #### Per le connessioni tramite la console VNC integrata nello Spazio cliente OVHcloud
 
-Per prima cosa, [imposta la password di root](#settingtherootpassword)
+Per prima cosa, [imposta la password di root](#settingtherootpassword).
 
 In seguito, accedi alla console VNC:
 
@@ -85,7 +85,7 @@ Accedi alla sezione `Console VNC`{.action}. quando richiesto, inserisci il tuo n
 
 #### Per connessioni che utilizzano terminali Linux
 
-Per prima cosa, [imposta la password di root](#settingtherootpassword)
+Per prima cosa, [imposta la password di root](#settingtherootpassword).
 
 In seguito, attiva l'autenticazione e la password di root nel tuo file **sshd_config**:
 
@@ -105,7 +105,7 @@ Una volta fatto questo, dovresti essere in grado di accedere al tuo server con l
 
 #### Per le connessioni che utilizzano Putty
 
-Per prima cosa, [imposta la password di root](#settingtherootpassword)
+Per prima cosa, [imposta la password di root](#settingtherootpassword).
 
 In seguito, attiva l'autenticazione e la password di root nel tuo file **sshd_config**:
 

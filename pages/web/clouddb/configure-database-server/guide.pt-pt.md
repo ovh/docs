@@ -1,23 +1,23 @@
 ---
 title: 'Configurar o servidor de bases de dados'
 slug: configurar-otimizar-servidor-de-bases-de-dados
-excerpt: 'Saiba como configurar e otimizar o servidor de bases de dados'
+excerpt: 'Descubra como configurar e otimizar o servidor de bases de dados'
 section: 'Configuração'
 order: 06
-updated: 2023-02-15
+updated: 2023-04-24
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 15/02/2023**
+**Última atualização: 24/04/2023**
 
 ## Objetivo
 
 Os servidores Web Cloud Databases oferecem-lhe a possibilidade de agir sobre os parâmetros globais do seu servidor. Além disso, tem a hipótese de visualizar a atividade do servidor. 
 
-**Saiba como configurar e otimizar o servidor de bases de dados.**
+**Descubra como configurar e otimizar o servidor de bases de dados.**
 
 ## Requisitos
 
@@ -49,7 +49,7 @@ Esta secção apresenta as informações essenciais da instância SQL. Sugerimos
 
 O seu Web Cloud Databases está acessível a partir dos seus alojamentos web da OVHcloud ou/e a partir da rede pública.
 
-###### Autorizar um endereço IP
+#### Autorizar um endereço IP
 
 Para que o acesso à sua instância Web Cloud Databases funcione, é obrigatório indicar os IP ou intervalos de IP que podem conectar-se às suas bases de dados.
 
@@ -69,7 +69,18 @@ Para um alojamento web da OVHcloud, pode simplesmente selecionar `Autorizar os a
 
 ![Web Cloud Databases](images/web-cloud-databases-add-ip-step3.png){.thumbnail}
 
-### Alterar a sua oferta Web Cloud Databases
+### Alterar a sua oferta Web Cloud Databases <a name="modify-ram-web-cloud-db"></a>
+
+> [!warning]
+> 
+> Se a sua oferta Web Cloud Databases está associada a uma oferta de alojamento web **Performance**, deverá obrigatoriamente e previamente desassociar a oferta Web Cloud Databases do seu alojamento **Performance** para migrar para uma oferta superior.
+>
+> Para desassociar uma oferta Web Cloud Databases associada a um alojamento web **Performance**, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud`{.action} e, a seguir, no separador `Alojamentos`{.action}, que aparece na coluna da esquerda. 
+>
+> Na nova página `Informações gerais`{.action}, encontrará no centro da página uma caixa intitulada `Configuração`{.action}. À direita da menção `Web Cloud Databases`{.action}, clique no botão `...`{.action} depois `Desassociar`{.action}. Escolha a duração da renovação mais curta e prossiga até à validação da encomenda.
+>
+> **Esta ação é irreversível e a oferta Web Cloud Databases será depois faturada independentemente do seu alojamento web Performance.**
+>
 
 Para alterar a sua oferta Web Cloud Databases, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados.
 No separador **«Informações gerais»**, que aparece de forma predefinida, clique em `...`{.action} à direita da menção «RAM» e, depois, em `Alterar o volume de RAM`{.action} de modo a proceder à encomenda desta modificação.

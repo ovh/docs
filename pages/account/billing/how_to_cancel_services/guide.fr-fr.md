@@ -227,7 +227,7 @@ Pour résilier votre offre [Hosted Exchange](https://www.ovhcloud.com/fr/emails/
 
 #### Private Exchange <a name="private"></a>
 
-Pour résilier votre offre [Private Exchange](https://www.ovhcloud.com/fr/emails/private-exchange/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/microsoft-collaborative-solutions/gestion-facturation-exchange/#supprimer-des-comptes_1).
+Pour résilier votre offre [Private Exchange](https://www.ovhcloud.com/fr/emails/private-exchange/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/microsoft-collaborative-solutions/gestion-facturation-exchange/#supprimer-des-comptes).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 

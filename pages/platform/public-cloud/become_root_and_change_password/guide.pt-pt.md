@@ -7,11 +7,11 @@ order: 08
 updated: 2022-03-24
 ---
 
-**Última atualização: 24/03/2022**
-
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
+
+**Última atualização: 24/03/2022**
 
 ## Sumário
 
@@ -71,7 +71,7 @@ A seguir, indique a palavra-passe root.
 
 #### Para as ligações através da consola VNC integrada na Área de Cliente OVHcloud
 
-Em primeiro lugar, [defina a palavra-passe root](#settingtherootpassword)
+Em primeiro lugar, [defina a palavra-passe root](#settingtherootpassword).
 
 De seguida, aceda à consola VNC:
 
@@ -85,7 +85,7 @@ Vá ao separador `Consola VNC`{.action}. Quando solicitado, introduza o seu nome
 
 #### Para as ligações que utilizam terminais Linux
 
-Em primeiro lugar, [defina a palavra-passe root](#settingtherootpassword)
+Em primeiro lugar, [defina a palavra-passe root](#settingtherootpassword).
 
 A seguir, ative a autenticação da ligação "root" e da palavra-passe no seu ficheiro **sshd_config**:
 
@@ -105,7 +105,7 @@ Uma vez terminado, deverá poder aceder ao seu servidor com o utilizador root e 
 
 #### Para as ligações que utilizam Putty
 
-Em primeiro lugar, [defina a palavra-passe root](#settingtherootpassword)
+Em primeiro lugar, [defina a palavra-passe root](#settingtherootpassword).
 
 A seguir, ative a autenticação da ligação "root" e da palavra-passe no seu ficheiro **sshd_config**:
 

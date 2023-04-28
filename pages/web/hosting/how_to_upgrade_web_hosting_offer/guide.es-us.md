@@ -4,7 +4,7 @@ excerpt: Cómo cambiar la fórmula de suscripción de un plan de hosting de OVHc
 slug: how_to_change_web_hosting_offer
 section: Optimización del sitio web
 order: 02
-updated: 2023-01-03
+updated: 2023-04-19
 ---
 
 > [!primary]

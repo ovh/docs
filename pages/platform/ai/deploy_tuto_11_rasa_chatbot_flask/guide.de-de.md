@@ -6,10 +6,15 @@ routes:
 excerpt: Understand how simple it is to deploy a chatbot with AI Deploy
 section: AI Deploy - Tutorials
 order: 11
-updated: 2023-03-21
+updated: 2023-04-04
 ---
 
-**Last updated 21st March, 2023.**
+**Last updated 4th April, 2023.**
+
+> [!primary]
+>
+> AI Deploy is covered by **[OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf)**.
+>
 
 ## Objective
 
@@ -221,7 +226,7 @@ docker push <yourdockerhubId>/flask-app:latest
 
 Once built, let's run the Frontend application with the ovhai CLI. 
 
-But first, get the URL of your backend Rasa chatbot. It will be something like this: **https://259b36ff-fc61-46a5-9a25-8d9a7b9f8ff6.app.gra.training.ai.cloud.ovh.net/**. You can have it with the CLI by listing all of your apps and locating the one you want. 
+But first, get the URL of your backend Rasa chatbot. It will be something like this: **https://259b36ff-fc61-46a5-9a25-8d9a7b9f8ff6.app.gra.ai.cloud.ovh.net/**. You can have it with the CLI by listing all of your apps and locating the one you want. 
 
 Now you can run this command:
 

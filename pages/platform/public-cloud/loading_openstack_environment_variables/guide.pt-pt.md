@@ -7,6 +7,10 @@ section: Gestão via OpenStack
 updated: 2021-08-18
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 **Última atualização: 18/08/2021**
 
 ## Objetivo
@@ -25,7 +29,7 @@ Carregar as variáveis de ambiente OpenStack no seu computador permitirá usar a
 
 Para recuperar as suas variáveis de ambiente, pode transferir o ficheiro OpenRC do seu utilizador OpenStack previamente criado.
 
-Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda à secção `Public Cloud`{.action e selecione o seu projeto Public Cloud no canto superior esquerdo.
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda à secção `Public Cloud`{.action} e selecione o seu projeto Public Cloud no canto superior esquerdo.
 <br> Na rubrica `Project Management`, clique em `Users & Roles`{.action}, clique nas `...`{.action} do lado direito do seu utilizador, e selecione `Transferir o ficheiro RC do OpenStack`{.action}.
 
 ![openstack-variables](images/pciopenstackvariables1e.png){.thumbnail}
@@ -36,7 +40,7 @@ Um ficheiro OpenRC corresponde a um utilizador e, também, a uma zona. Não pode
 
 #### **Em Linux**
 
-* Abra um terminal, ou ligue-se ao utilizador que fará as chamadas à API OpenStack
+* Abra um terminal, ou ligue-se ao utilizador que fará as chamadas à API OpenStack.
 * Carregue o conteúdo do ficheiro no ambiente normal. A palavra-passe do utilizador Horizon correspondente ser-lhe-á então pedida.
 
 ```bash
@@ -99,4 +103,4 @@ set OS_PASSWORD="Palavra-passe do utilizador Horizon"
 
 Para aprender a utilizar o OpenStack: [Documentação OpenStack](https://docs.openstack.org/train/){.external}
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

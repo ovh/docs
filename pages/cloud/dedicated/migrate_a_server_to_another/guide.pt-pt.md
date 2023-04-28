@@ -78,7 +78,7 @@ Para mais informações, consulte o nosso guia sobre [utilizar o Backup Storage 
 > - Não é possível efetuar a migração de um IP a partir de uma conta OVHcloud para uma conta So you Start.
 >
 
-Se a reputação dos seus endereços IP é importante, recomendamos vivamente que utilize endereços [Additional IP](https://www.ovhcloud.com/pt/bare-metal/ip/)migração, pois estes podem ser conservados se efetuar uma migração.
+Se a reputação dos seus endereços IP é importante, recomendamos vivamente que utilize endereços [Additional IP](https://www.ovhcloud.com/pt/bare-metal/ip/) migração, pois estes podem ser conservados se efetuar uma migração.
 
 Quando tiver estes endereços IP, basta migrá-los para o novo servidor.
 Para isso, consulte o nosso guia sobre: [Migrar um Additional IP](https://docs.ovh.com/pt/dedicated/ip-fo-move/).

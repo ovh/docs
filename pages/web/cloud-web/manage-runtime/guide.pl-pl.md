@@ -8,7 +8,7 @@ updated: 2022-07-27
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 27-07-2022**
@@ -76,7 +76,7 @@ W oknie, które się wyświetla, wprowadź wymagane informacje: Następnie wykon
 |Spersonalizowana nazwa|Wpisz nazwę pozwalającą odróżnić ten framework od pozostałych frameworków wyświetlanych w Twoim panelu klienta OVHcloud.|  
 |Framework|Wybierz nowy framework.|  
 
-Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Upewnij się teraz, czy framework jest używany przez odpowiednie strony podpięte w opcji MultiSite. W tym celu przejdź do etapu 3: [Powiązanie frameworka ze stroną podpiętą w opcji MultiSite](./#etap-3-powiazanie-frameworka-ze-strona-podpieta-w-opcji-multisite_2){.external}.
+Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Upewnij się teraz, czy framework jest używany przez odpowiednie strony podpięte w opcji MultiSite. W tym celu przejdź do etapu 3: [Powiązanie frameworka ze stroną podpiętą w opcji MultiSite](./#etap-3-powiazanie-frameworka-ze-strona-podpieta-w-opcji-multisite){.external}.
 
 ##### **Node.js**
 
@@ -88,7 +88,7 @@ Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Upewnij si�
 |Środowisko aplikacji|Określ, czy chodzi o środowisko „produkcyjne”, „testowe” czy „deweloperskie”. Pamiętaj, że środowisko „deweloperskie” zachowuje się inaczej od pozostałych i wyświetla błędy bezpośrednio w interfejsie internetowym: miej to na uwadze korzystając ze środowiska deweloperskiego.|
 |Skrypt uruchamiania aplikacji|Nazwij skrypt, który wywoła środowisko Node.js.|
 
-Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Upewnij się teraz, czy framework jest używany przez odpowiednie strony podpięte w opcji MultiSite. W tym celu przejdź do etapu 3: [Powiązanie frameworka ze stroną podpiętą w opcji MultiSite](./#etap-3-powiazanie-frameworka-ze-strona-podpieta-w-opcji-multisite_2){.external}.
+Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Upewnij się teraz, czy framework jest używany przez odpowiednie strony podpięte w opcji MultiSite. W tym celu przejdź do etapu 3: [Powiązanie frameworka ze stroną podpiętą w opcji MultiSite](./#etap-3-powiazanie-frameworka-ze-strona-podpieta-w-opcji-multisite){.external}.
 
 ![cloud web hosting ssd](images/cloud-web-runtime-step3-2.png){.thumbnail}
 
@@ -102,7 +102,7 @@ Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Upewnij si�
 |Środowisko aplikacji|Określ, czy chodzi o środowisko „produkcyjne”, „testowe”, czy „deweloperskie”. Pamiętaj, że środowisko „deweloperskie” zachowuje się inaczej od pozostałych i wyświetla błędy bezpośrednio w interfejsie internetowym: miej to na uwadze, korzystając ze środowiska deweloperskiego.|
 |Skrypt uruchamiania aplikacji|Nazwij skrypt, który będzie wywoływał framework Ruby.|
 
-Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Upewnij się teraz, czy framework jest używany przez odpowiednie strony podpięte w opcji MultiSite. W tym celu przejdź do etapu 3: [Powiązanie frameworka ze stroną podpiętą w opcji MultiSite](./#etap-3-powiazanie-frameworka-ze-strona-podpieta-w-opcji-multisite_2){.external}.
+Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Upewnij się teraz, czy framework jest używany przez odpowiednie strony podpięte w opcji MultiSite. W tym celu przejdź do etapu 3: [Powiązanie frameworka ze stroną podpiętą w opcji MultiSite](./#etap-3-powiazanie-frameworka-ze-strona-podpieta-w-opcji-multisite){.external}.
 
 ![cloud web hosting ssd](images/cloud-web-runtime-step2-1-3.png){.thumbnail}
 
@@ -117,7 +117,7 @@ Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Upewnij si�
 |Środowisko aplikacji|Określ, czy chodzi o środowisko „produkcyjne”, „testowe”, czy „deweloperskie”. Pamiętaj, że środowisko „deweloperskie” zachowuje się inaczej od pozostałych i wyświetla błędy bezpośrednio w interfejsie internetowym: miej to na uwadze, korzystając ze środowiska deweloperskiego.|
 |Skrypt uruchamiania aplikacji|Nazwij skrypt, który będzie wywoływał framework Python.|
 
-Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Upewnij się teraz, czy framework jest używany przez odpowiednie strony podpięte w opcji MultiSite. W tym celu przejdź do etapu 3: [Powiązanie frameworka ze stroną podpiętą w opcji MultiSite](./#etap-3-powiazanie-frameworka-ze-strona-podpieta-w-opcji-multisite_2){.external}.
+Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Upewnij się teraz, czy framework jest używany przez odpowiednie strony podpięte w opcji MultiSite. W tym celu przejdź do etapu 3: [Powiązanie frameworka ze stroną podpiętą w opcji MultiSite](./#etap-3-powiazanie-frameworka-ze-strona-podpieta-w-opcji-multisite){.external}.
 
 ![cloud web hosting ssd](images/cloud-web-runtime-step2-1-4.png){.thumbnail}
 

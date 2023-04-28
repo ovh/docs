@@ -10,7 +10,7 @@ updated: 2023-02-22
 **Ultimo aggiornamento: 22/02/2023**
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 ## Obiettivo
@@ -153,7 +153,7 @@ Applicando queste best practice, hai la possibilità di tornare a una versione p
 ## Per saperne di più <a name="go-further"></a>
 
 - [Sito ufficiale di WordPress](https://wordpress.org){.external}
-- [Maggiori informazioni sui backup del tuo hosting Web](https://docs.ovh.com/it/hosting/hosting_condiviso_specifiche_tecniche/#informazioni-sui-backup-automatici_1)
+- [Maggiori informazioni sui backup del tuo hosting Web](https://docs.ovh.com/it/hosting/hosting_condiviso_specifiche_tecniche/#informazioni-sui-backup-automatici)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 

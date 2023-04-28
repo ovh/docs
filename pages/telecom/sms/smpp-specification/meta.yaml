@@ -1,2 +1,10 @@
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-us
+- es-us
 id: 9cf90830-310e-4e81-936f-8effd188dd56
 full_slug: sms-smpp-specifications

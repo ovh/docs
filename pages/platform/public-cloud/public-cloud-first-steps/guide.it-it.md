@@ -7,6 +7,10 @@ order: 1
 updated: 2023-01-26
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 **Ultimo aggiornamento: 26/01/2023**
 
 ## Obiettivo
@@ -132,7 +136,7 @@ Una volta piena, la chiave sarà pronta.
 
 ![save key](images/puttygen_03a.png){.thumbnail}
 
-Puoi selezionare e copiare la chiave pubblica da questa finestra per salvarla sullo Spazio Cliente OVHcloud allo [Step 2](./#step-2-salva-le-chiavi-pubbliche-nello-spazio-cliente-ovhcloud_1).
+Puoi selezionare e copiare la chiave pubblica da questa finestra per salvarla sullo Spazio Cliente OVHcloud allo [Step 2](./#step-2-salva-le-chiavi-pubbliche-nello-spazio-cliente-ovhcloud).
 
 Salva entrambe le chiavi su file e inserisci una passphrase nell’apposito campo. Poiché per accedere all’istanza Public Cloud dal tuo dispositivo di lavoro sarà necessaria solo la chiave privata corrispondente, in questa fase è necessario applicare adeguate misure di sicurezza. È necessario specificare la passphrase quando si accede all'istanza.
 
@@ -145,7 +149,7 @@ A prescindere dal metodo utilizzato per creare le chiavi SSH, ora disponi di una
 Le chiavi SSH salvate ti consentono di creare più rapidamente le tue istanze. Per cambiare le coppie di chiavi e aggiungere utenti in un secondo momento, consulta la guida [Configura chiavi SSH aggiuntive](../configura_chiavi_ssh_aggiuntive).
 >
 
-Accedi allo [Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. A questo punto clicca su `Chiavi SSH`{.action} nella barra di navigazione a sinistra sotto alla voce “Project Management”.
+Accedi allo Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. A questo punto clicca su `Chiavi SSH`{.action} nella barra di navigazione a sinistra sotto alla voce “Project Management”.
 
 Clicca sul pulsante `Aggiungi una chiave SSH`{.action}. Nella nuova pagina, inserisci un nome per la chiave e incolla la stringa di chiave (copiata allo [Step 1](./#step-1-crea-chiavi-ssh) dal file della chiave pubblica o dalla finestra di PuTTYgen) nel campo “Chiave”. Clicca su `Aggiungi`{.action} per confermare l’operazione.
 
@@ -192,7 +196,7 @@ Nello step 3 seleziona un sistema operativo per l’istanza. Le immagini disponi
 Se scegli un sistema operativo che richiede una licenza a pagamento, i relativi costi saranno automaticamente inclusi nella fatturazione oraria o mensile.
 >
 
-In questo step è necessario aggiungere una chiave SSH (ad eccezione delle istanze Windows). Per farlo hai due possibilità: puoi aggiungere la chiave direttamente cliccando sul pulsante `Aggiungi una chiave`{.action} oppure puoi selezionare la chiave dalla lista (a condizione di averla salvato nello Spazio Cliente durante lo [Step 2](./#step-2-salva-le-chiavi-pubbliche-nello-spazio-cliente-ovhcloud_1)).
+In questo step è necessario aggiungere una chiave SSH (ad eccezione delle istanze Windows). Per farlo hai due possibilità: puoi aggiungere la chiave direttamente cliccando sul pulsante `Aggiungi una chiave`{.action} oppure puoi selezionare la chiave dalla lista (a condizione di averla salvato nello Spazio Cliente durante lo [Step 2](./#step-2-salva-le-chiavi-pubbliche-nello-spazio-cliente-ovhcloud)).
 
 ![key select](images/instance-creation-03-2022.png){.thumbnail}
 
@@ -341,7 +345,7 @@ Ad esempio, Remmina Remote Desktop Client è un’applicazione compatibile inclu
 
 ![linux remote](images/linux-connect-01.png){.thumbnail}
 
-Apri Remmina e assicurati che il protocollo di connessione sia impostato su “RDP”. Inserisci l’indirizzo IPv4 della tua istanza Public Cloud e premi “ "↩" (invio).
+Apri Remmina e assicurati che il protocollo di connessione sia impostato su “RDP”. Inserisci l’indirizzo IPv4 della tua istanza Public Cloud e fare clic su "↩" (invio).
 
 ![linux remote](images/linux-connect-02.png){.thumbnail}
 

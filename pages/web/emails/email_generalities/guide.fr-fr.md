@@ -122,7 +122,7 @@ Vous pouvez procéder de deux manières :
 
 - créer votre redirection depuis le webmail, via les règles de boite de réception. Pour cela, nous vous invitons à suivre notre guide « [Règles de boîte de réception depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/regles-boite-de-reception-owa/#exemple-1-rediriger-des-e-mails-vers-une-autre-adresse) ».
 
-- créer votre redirection depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cette méthode vous permet par exemple de créer un alias, c'est à dire rediriger une adresse e-mail qui n'existe pas vers une adresse e-mail existante. Pour cela, nous vous invitons à suivre notre guide « [Utiliser les redirections e-mail](https://docs.ovh.com/fr/emails/guide-des-redirections-emails/#nouvelle-version-de-loffre-mx-plan_1) ».
+- créer votre redirection depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cette méthode vous permet par exemple de créer un alias, c'est à dire rediriger une adresse e-mail qui n'existe pas vers une adresse e-mail existante. Pour cela, nous vous invitons à suivre notre guide « [Utiliser les redirections e-mail](https://docs.ovh.com/fr/emails/guide-des-redirections-emails/#nouvelle-version-de-loffre-mx-plan) ».
 
 ##### **Répondeur**
 

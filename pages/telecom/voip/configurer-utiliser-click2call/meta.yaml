@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: c10ae3a4-dc6c-4640-b28a-dfe01aac92e2
 full_slug: voip-click2call

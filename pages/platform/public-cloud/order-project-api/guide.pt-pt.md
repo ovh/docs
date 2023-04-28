@@ -7,11 +7,11 @@ order: 9
 updated: 2020-12-09
 ---
 
-**Última atualização: 22/12/2020**
-
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
+
+**Última atualização: 22/12/2020**
 
 ## Objetivo
 
@@ -23,7 +23,7 @@ A criação de um projeto é a primeira etapa da implantação de [instâncias P
 
 - Dispor de identificadores OVHcloud válidos
 - Dispor de um [método de pagamento](https://docs.ovh.com/pt/billing/gerir-metodos-de-pagamento/) válido e registado na sua conta OVHcloud
-- Estar familiarizado com o [funcionamento da APIv6 OVHcloud](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/).
+- Estar familiarizado com o [funcionamento da APIv6 OVHcloud](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/)
 
 ## Instruções
 

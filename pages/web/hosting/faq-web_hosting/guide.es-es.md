@@ -4,14 +4,14 @@ excerpt: Encuentre las respuestas a las preguntas más frecuentes sobre alojamie
 slug: faq-web-hosting
 section: Primeros pasos
 order: 05
-updated: 2022-11-28
+updated: 2023-04-24
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 15/02/2023**
+**Última actualización: 24/04/2023**
 
 ## Gestión de su producto
 
@@ -66,7 +66,22 @@ Para ello, acceda a la pestaña `Información general`{.action} del alojamiento.
 Los alojamientos compartidos **Performance** incluyen una solución Web Cloud Databases que se puede activar gratuitamente.
 Al dar de baja o eliminar el alojamiento compartido **Performance**, la solución Web Cloud Databases asociada también se dará de baja. Para conservar su Cloud Databases, deberá desvincularlo antes de dar de baja el alojamiento.<br>
 
-Para ello, abra la pestaña `Información general`{.action} del alojamiento. En la sección **Configuración**, haga clic en el botón `...`{.action} a la derecha de "**Base de datos privada**". Haga clic en `Desvincular`{.action} y siga las instrucciones para contratar una solución Cloud Databases independiente, lo que le permitirá conservar su Cloud Databases ya creado.
+Para ello, abra la pestaña `Información general`{.action} del alojamiento. En la sección **Configuración**, haga clic en el botón `...`{.action} a la derecha de "**Web Cloud Databases**". Haga clic en `Desvincular`{.action} y siga las instrucciones para contratar una solución Cloud Databases independiente, lo que le permitirá conservar su Cloud Databases ya creado.
+
+### ¿Cómo aumentar la RAM de un plan de hosting Cloud Databases asociado a un alojamiento compartido "Performance"?
+
+Para aumentar la RAM de un plan de hosting Cloud Databases asociado a un alojamiento compartido **Performance**, deberá eliminar obligatoria y previamente el plan de hosting Cloud Databases del alojamiento **Performance** para migrar a un plan superior.
+
+
+Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Acceda a la sección `Web Cloud`{.action} y seleccione el alojamiento correspondiente en la pestaña `Alojamientos`{.action}. 
+
+En la página Información general{.action}, encontrará un recuadro titulado `Configuración`{.action} en el centro de la página. Haga clic en el botón `...`{.action} a la derecha de la mención `Web Cloud Databases`{.action} y luego en `Desvincular`{.action}. Seleccione la duración de renovación más corta y continúe hasta la validación del pedido.
+
+
+Para más información, consulte nuestra guía ["Configuración de un plan de hosting Cloud Databases"](/pages/web/clouddb/configure-database-server#modify-ram-web-cloud-db)
+
+
+**Esta acción es irreversible y la solución Web Cloud Databases se facturará a continuación, independientemente de su plan de hosting Performance.**
 
 ## Diagnóstico
 

@@ -6,6 +6,10 @@ excerpt: 'Saiba como realizar esta operação mantendo a configuração e o esta
 updated: 2019-03-29
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 **Última atualização: 24/04/2019**
 
 ## Sumário
@@ -18,7 +22,7 @@ Poderá ter de mover a sua instância Public Cloud de um datacenter para outro, 
 ## Requisitos
 
 * Ter criado uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} a partir da sua conta.
-* Dispor de um acesso administrador (root) ao datacenter através de SSH.
+* Dispor de um acesso administrador (root) à sua instância/ao seu sistema operativo através de SSH.
 * Ler o manual "[Preparar o ambiente para utilizar a API OpenStack](https://docs.ovh.com/pt/public-cloud/prepare_the_environment_for_using_the_openstack_api/){.external}". (Recomendado)
 
 > [!primary]
@@ -30,7 +34,7 @@ Os comandos deste manual baseiam-se na CLI OpenStack, ao contrário das API `Nov
 
 ### Criar uma cópia de segurança
 
-Em primeiro lugar, deve estabelecer uma ligação SSH para o datacenter. De seguida, executa o seguinte comando para listar as instâncias existentes:
+Em primeiro lugar, estabeleça uma ligação SSH para a sua instância/OS. De seguida, executa o seguinte comando para listar as instâncias existentes:
 
 ```
 #root@server:~$ openstack server list

@@ -8,7 +8,7 @@ updated: 2023-02-09
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 09-02-2023**
@@ -60,7 +60,7 @@ Kliknij przycisk `Dodaj adres IP`{.action}, aby dodać adresy IP do tej listy.
 
 ### Zarządzanie nadawcami i zasileniami
 
-Zapoznaj się z naszymi przewodnikami na temat [zarządzanie nadawcami](https://docs.ovh.com/pl/sms/wysylanie-wiadomosci-sms-z-panelu-klienta/#etap-3-wybor-nadawcy-wiadomosci-sms_1) oraz na temat [zarządzanie zasileniami SMS i automatycznym doładowaniem](https://docs.ovh.com/pl/sms/aktywowanie-automatycznego-ladowania-zasilen-sms/).
+Zapoznaj się z naszymi przewodnikami na temat [zarządzanie nadawcami](https://docs.ovh.com/pl/sms/wysylanie-wiadomosci-sms-z-panelu-klienta/#etap-3-wybor-nadawcy-wiadomosci-sms) oraz na temat [zarządzanie zasileniami SMS i automatycznym doładowaniem](https://docs.ovh.com/pl/sms/aktywowanie-automatycznego-ladowania-zasilen-sms/).
 
 ## Sprawdź również
 

@@ -8,7 +8,7 @@ updated: 2023-01-04
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
 
 **Ostatnia aktualizacja z dnia 04-01-2023**
@@ -82,7 +82,7 @@ Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem "[Tworzenie kopii
 
 Kliknij przycisk `Zatrzymaj`{.action}.
 
-Działanie to spowoduje zawieszenie instancji. Więcej informacji znajdziesz w przewodniku "[Wstrzymanie lub uśpienie instancji](../wstrzymanie_lub_uspienie_instancji/#zatrzymaj-suspend-instancje_1)".
+Działanie to spowoduje zawieszenie instancji. Więcej informacji znajdziesz w przewodniku "[Wstrzymanie lub uśpienie instancji](../wstrzymanie_lub_uspienie_instancji/#zatrzymaj-suspend-instancje)".
 
 Kliknij `Uruchom`{.action}, aby ponownie włączyć instancję.
 

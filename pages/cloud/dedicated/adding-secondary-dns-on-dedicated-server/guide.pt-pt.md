@@ -54,7 +54,7 @@ Depois de clicar em `Seguinte`{.action} nesta etapa, a verificação do domínio
 
 Depois de clicar em `Adicionar`{.action} na última janela, o domínio será adicionado ao servidor DNS secundário OVHcloud.
 
-Os domínios adicionados serão listados neste separador e podem ser eliminados ao clicar no botão `..`{.action}. O nome do servidor DNS secundário aparece ao lado do domínio.
+Os domínios adicionados serão listados neste separador e podem ser eliminados ao clicar no botão `...`{.action}. O nome do servidor DNS secundário aparece ao lado do domínio.
 
 ![DNS secundário](images/cp-05.png){.thumbnail}
 

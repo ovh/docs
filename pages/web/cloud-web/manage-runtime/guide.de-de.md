@@ -8,7 +8,7 @@ updated: 2022-07-27
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
 **Letzte Aktualisierung am 26.07.2022**
@@ -77,7 +77,7 @@ Geben Sie im angezeigten Fenster die notwendigen Informationen ein. Fahren Sie e
 |Angepasster Name|Geben Sie einen Namen für diese Engine ein, damit Sie sie später von anderen Engines in Ihrem OVHcloud Kundencenter unterscheiden können.|  
 |Runtime Engine|Wählen Sie die neue Runtime Engine aus.|  
 
-Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{.action}. Stellen Sie sicher, dass die Runtime Engine von den gewünschten Multisites verwendet wird. Gehen Sie hierzu zu Schritt 3: [Runtime Engine mit einer Multisite verbinden](./#schritt-3-runtime-engine-mit-einer-multisite-verbinden_2).
+Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{.action}. Stellen Sie sicher, dass die Runtime Engine von den gewünschten Multisites verwendet wird. Gehen Sie hierzu zu Schritt 3: [Runtime Engine mit einer Multisite verbinden](./#schritt-3-runtime-engine-mit-einer-multisite-verbinden).
 
 
 
@@ -91,7 +91,7 @@ Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{
 |Anwendungsumgebung|Geben Sie an, ob es sich um eine „Produktions-“, „Test-“ oder „Entwicklungs“-Umgebung handelt. Bitte beachten Sie, dass sich Entwicklungsumgebungen anders verhalten als Produktions- und Testumgebungen und Fehler direkt im Webinterface anzeigen.|
 |Startskript der Anwendung|Geben Sie das Skript an, das Node.js aufrufen wird.|
 
-Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{.action}. Stellen Sie sicher, dass die Runtime Engine von den gewünschten Multisites verwendet wird. Gehen Sie hierzu zu Schritt 3: [Runtime Engine mit einer Multisite verbinden](./#schritt-3-runtime-engine-mit-einer-multisite-verbinden_2).
+Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{.action}. Stellen Sie sicher, dass die Runtime Engine von den gewünschten Multisites verwendet wird. Gehen Sie hierzu zu Schritt 3: [Runtime Engine mit einer Multisite verbinden](./#schritt-3-runtime-engine-mit-einer-multisite-verbinden).
 
 ![cloudweb](images/cloud-web-runtime-step3-2.png){.thumbnail}
 
@@ -105,7 +105,7 @@ Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{
 |Anwendungsumgebung|Geben Sie an, ob es sich um eine „Produktions-“, „Test-“ oder „Entwicklungs“-Umgebung handelt. Bitte beachten Sie, dass sich Entwicklungsumgebungen anders verhalten als Produktions- und Testumgebungen und Fehler direkt im Webinterface anzeigen.|
 |Startskript der Anwendung|Geben Sie das Skript an, das Ruby aufrufen wird.|
 
-Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{.action}. Stellen Sie sicher, dass die Runtime Engine von den gewünschten Multisites verwendet wird. Gehen Sie hierzu zu Schritt 3: [Runtime Engine mit einer Multisite verbinden](./#schritt-3-runtime-engine-mit-einer-multisite-verbinden_2).
+Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{.action}. Stellen Sie sicher, dass die Runtime Engine von den gewünschten Multisites verwendet wird. Gehen Sie hierzu zu Schritt 3: [Runtime Engine mit einer Multisite verbinden](./#schritt-3-runtime-engine-mit-einer-multisite-verbinden).
 
 ![cloudweb](images/cloud-web-runtime-step2-1-3.png){.thumbnail}
 
@@ -120,7 +120,7 @@ Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{
 |Anwendungsumgebung|Geben Sie an, ob es sich um eine „Produktions-“, „Test-“ oder „Entwicklungs“-Umgebung handelt. Bitte beachten Sie, dass sich Entwicklungsumgebungen anders verhalten als Produktions- und Testumgebungen und Fehler direkt im Webinterface anzeigen.|
 |Startskript der Anwendung|Geben Sie das Skript an, das Python aufrufen wird.|
 
-Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{.action}. Stellen Sie sicher, dass die Runtime Engine von den gewünschten Multisites verwendet wird. Gehen Sie hierzu zu Schritt 3: [Runtime Engine mit einer Multisite verbinden](./#schritt-3-runtime-engine-mit-einer-multisite-verbinden_2).
+Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{.action}. Stellen Sie sicher, dass die Runtime Engine von den gewünschten Multisites verwendet wird. Gehen Sie hierzu zu Schritt 3: [Runtime Engine mit einer Multisite verbinden](./#schritt-3-runtime-engine-mit-einer-multisite-verbinden).
 
 ![cloudweb](images/cloud-web-runtime-step2-1-4.png){.thumbnail}
 

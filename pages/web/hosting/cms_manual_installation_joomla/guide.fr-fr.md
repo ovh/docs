@@ -27,6 +27,8 @@ Vous trouverez ici tous les éléments pour installer manuellement le CMS (Conte
 > Pour installer **manuellement un autre CMS** (WordPress, Drupal, PrestaShop), consultez notre documentation sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 >
 
+**Découvrez comment installer manuellement votre CMS Joomla!**
+
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) qui contient au moins une base de données.
@@ -94,7 +96,6 @@ Référez-vous aux informations indiquées dans **l'étape 1.4** du tutoriel sur
 > - Le nom du serveur d'une base de données Web Cloud Databases commence par votre identifiant client OVHcloud et a la forme suivante : `aa00000-XXX.eu.clouddb.ovh.net`, **«aa00000»** correspond à votre identifiant OVHcloud sans le **« -ovh »** et les **« X »** sont à remplacer par le reste de la référence de votre service Web Cloud Databases.
 >
 
-
 - *Saisissez soit un nom d'utilisateur que vous avez créé, soit un nom d'utilisateur fourni par votre hébergeur* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
 Pour les bases de données créées sur un Web Cloud Databases, référez-vous aux informations indiquées dans **l'étape 1.4** du guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 
@@ -114,7 +115,7 @@ Le message suivant apparaît :
 
 Du fait que vous utilisez une base de données présente en dehors d'un hébergement local, vous devrez supprimer le *token* généré aléatoirement lors de l'installation de votre Joomla!.
 
-Ce fichier à supprimer se trouve dans votre [espace de stockage FTP](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+Ce fichier à supprimer se trouve dans votre [espace de stockage FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
 
 Une fois connecté, rendez-vous dans le dossier **installation** de votre Joomla! puis supprimez uniquement le *token* indiqué par le message d'alerte. Il est présent sous la forme d'un fichier **.txt**.
 

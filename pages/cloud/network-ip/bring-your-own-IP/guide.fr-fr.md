@@ -4,10 +4,10 @@ excerpt: Découvrez comment importer facilement votre propre adresse IP comme Ad
 slug: bring-your-own-ip
 section: Bring Your Own IP
 order: 1
-updated: 2022-11-23
+updated: 2023-04-24
 ---
 
-**Dernière mise à jour le 23/11/2022**
+**Dernière mise à jour le 24/04/2023**
 
 ## Objectif
 
@@ -67,7 +67,7 @@ Nous acceptons les blocs IP de tailles comprises entre /24 et /19. Vous trouvere
 
 ### Avoir une plage d'IP non utilisée sur Internet <a name="haveaniprangenotinuseontheinternet"></a>
 
-La plage d'IP ne doit pas être annoncée ou utilisée sur Internet (pas d'annonce en terme de Border Gateway Protocol (BGP) sur au moins un réseau public).
+La plage d'IP ne doit pas être annoncée ou utilisée sur Internet (pas d'annonce en terme de Border Gateway Protocol (BGP) sur au moins un réseau public). Vous êtes libre de ne pas satisfaire à ce prérequis, auquel cas OVHcloud ne pourra assurer le bon fonctionnement et le support de ce service.
 
 ### Avoir une plage d'IP ou numéro AS avec une réputation propre <a name="haveacleanipreputation"></a>
 
@@ -141,11 +141,17 @@ Pour plus d'informations sur les objets de routage (*route objects*), veuillez c
 - RIPE - [Managing Route Objects](https://www.ripe.net/manage-ips-and-asns/db/support/managing-route-objects-in-the-irr)
 - ARIN - [Submitting Routing Information](https://www.arin.net/resources/manage/irr/#submitting-routing-information)
 
+> [!warning]
+> Si votre bloc IP importé est déjà annoncé sur Internet à partir d’autre sites qu’OVHcloud lors de l’utilisation du service BYOIP (multihoming), vous risquez d’éventuelles pertes de paquets ou d'autres difficultés de routage. Nous ne serons par conséquent pas en mesure de vous garantir la connectivité aux services OVHcloud avec votre bloc IP importé.
+
 ## En pratique
 
 ### Comment utiliser les adresses IP
 
-Les adresses IP importées se comporteront comme le produit Additional IP OVHcloud. Une plage d'adresses IP importée sera fractionnée en blocs de /24 pouvant être déplacés vers n’importe quel service d’un même campus.
+Les adresses IP importées se comporteront comme le produit Additional IP OVHcloud. Une plage d'adresses IP importée sera fractionnée en blocs de /24 pouvant être déplacés vers n’importe quel service d’un même campus.<br>
+Pour activer l'annonce de votre plage IP importée sur Internet, il vous suffit d'affecter un de vos blocs à un produit éligible via l'espace client où l'API OVHcloud.<br>
+Sachez qu'une liste de contrôle d'accès spécifique sera mise en place au cours du processus de livraison du service BYOIP. Ces listes de contrôle d'accès visent à empêcher l'usurpation d'adresses IP, elles bloqueront tout trafic depuis le réseau OVHcloud vers n'importe quelle adresse IP de votre plage IP située sur un réseau externe et depuis n'importe quelle adresse de votre plage IP située sur un réseau externe vers le réseau OVHcloud, même si l'annonce BGP n'est pas encore activée côté OVHcloud.<br>
+Si votre migration peut être affectée par ce processus, veuillez nous contacter et nous vous aiderons.
 
 > [!warning]
 > Certaines opérations disponibles sur l'offre Additional IP ne seront pas disponibles sur l'offre BYOIP.
@@ -187,9 +193,9 @@ Pas pour le moment.
 
 Non, une plage d'IP doit être utilisée dans un seul campus.
 
-### Est-il possible de changer le campus d'une adresse IP importée ?
+### Est-il possible de changer le campus d'une plage IP importée ?
 
-Pas pour le moment. Pour y parvenir, il vous faudrait libérer le produit et le racheter (pour l'instant c'est la seule façon de procéder).
+Il n'est pas possible de changer le campus d'une plage IP importée. Pour y parvenir, il vous faudrait résilier le produit et le commander à nouveau. En revanche, si vous avez choisi un campus français au moment de la commande et que la commande a été effectuée après le 1er janvier 2023, vous pourrez utiliser vos blocs IP sur tous les datacentres situés en France (Roubaix, Gravelines et Strasbourg).
 
 ### Comment savoir quels serveurs DNS OVHcloud géreront la zone ARPA de mon IP importée ?
 
@@ -198,6 +204,10 @@ Leurs noms vous seront communiqués dans l'e-mail de livraison.
 ### Est-il possible d'importer une IPv6 ?
 
 Pas pour le moment.
+
+### Puis-je commander le service alors que ma plage IP est encore annoncée depuis un autre site ?
+
+Oui, nous l'autorisons à des fins de migration sans coupure. Cependant, vous devez désactiver l'annonce BGP de votre ancien fournisseur juste avant d'activer l'annonce BGP d'OVHcloud, sinon vous risquez de rencontrer des problèmes de routage. Sachez qu'une liste de contrôle d'accès spécifique sera mise en place au cours du processus de livraison du service BYOIP. Ces listes de contrôle d'accès visent à empêcher l'usurpation d'adresse IP, elles bloqueront tout trafic depuis le réseau OVHcloud vers n'importe quelle adresse IP de votre plage IP et depuis n'importe quelle adresse de votre plage IP vers le réseau OVHcloud, même si l'annonce BGP n'est pas encore activée côté OVHcloud. Si votre migration peut être affectée par ce processus, veuillez nous contacter et nous vous aiderons.
 
 ## Allez plus loin
 

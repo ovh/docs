@@ -4,14 +4,14 @@ excerpt: Encontre aqui as questões mais comuns sobre os alojamentos web da OVHc
 slug: faq-alojamento
 section: Primeiros passos
 order: 05
-updated: 2022-11-28
+updated: 2023-04-24
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 15/02/2023**
+**Última atualização: 24/04/2023**
 
 ## Gestão da sua oferta
 
@@ -66,7 +66,22 @@ Para isso, aceda ao separador `Informações gerais`{.action} do alojamento. Na 
 Os alojamentos partilhados **Performance** incluem uma oferta Web Cloud Databases ativável gratuitamente.
 Quando rescinde ou elimina o seu alojamento partilhado **Performance**, a oferta Web Cloud Databases que está associada também é rescindida. Para conservar o seu Web Cloud Databases, terá de o desassociar antes da rescisão do alojamento.<br>
 
-Para isso, clique no separador `Informações gerais`{.action} do seu alojamento. Na secção **Configuração**, clique no botão `...`{.action} à direita de "**Base de dados Privada**". Clique em `Desassociar`{.action} e siga as instruções para encomendar uma oferta Web Cloud Databases independente, o que lhe permitirá conservar o seu Web Cloud Databases já criado.
+Para isso, clique no separador `Informações gerais`{.action} do seu alojamento. Na secção **Configuração**, clique no botão `...`{.action} à direita de "**Web Cloud Databases**". Clique em `Desassociar`{.action} e siga as instruções para encomendar uma oferta Web Cloud Databases independente, o que lhe permitirá conservar o seu Web Cloud Databases já criado.
+
+### Como aumentar a RAM de uma oferta Web Cloud Databases associada a um alojamento partilhado "Performance"?
+
+Para aumentar a RAM de uma oferta Web Cloud Databases associada a um alojamento partilhado **Performance**, deverá obrigatoriamente e previamente desassociar a oferta Web Cloud Databases do seu alojamento **Performance** para migrar para uma oferta superior.
+
+
+Para isso, aceda à Área de Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Aceda à secção `Web Cloud`{.action}, no separador `os Alojamentos`{.action}, à esquerda. 
+
+Na página `Informações gerais`{.action}, encontra-se no centro da página uma caixa intitulada `Configuração`{.action}. À direita da menção `Web Cloud Databases`{.action}, clique no botão `...`{.action} depois `Desassociar`{.action}. Escolha a duração da renovação mais curta e prossiga até à validação da encomenda.
+
+
+Para mais informações, consulte o nosso guia sobre a ["Configuração de uma oferta Web Cloud Databases"](/pages/web/clouddb/configure-database-server#modify-ram-web-cloud-db)
+
+
+**Esta ação é irreversível e a oferta Web Cloud Databases será depois faturada independentemente do seu alojamento web Performance.**
 
 ## Diagnóstico
 

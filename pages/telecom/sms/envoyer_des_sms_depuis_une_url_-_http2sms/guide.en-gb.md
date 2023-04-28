@@ -90,7 +90,7 @@ Replace the Xs with the information below:
 > 
 >If you select Unicode encoding, your SMS will have a 70-character limit, rather than the 160-character limit of 7bit encoding.
 >
->For further information on authorised characters in 7bit encoding, please refer to the [appendix](./#appendix_2) at the bottom of this guide.
+>For further information on authorised characters in 7bit encoding, please refer to the [appendix](./#appendix) at the bottom of this guide.
 >
 
 

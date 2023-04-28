@@ -4,9 +4,10 @@ slug: questions-frequentes
 legacy_guide_number: '7766169'
 section: FAQ
 order: 020
-updated: 2022-12-08
+updated: 2018-03-26
 ---
 
+**Dernière mise à jour le 26/03/2018**
 
 Lors de la configuration de HA j’ai l’erreur : « Erreur HA : Impossible d’effectuer la configuration HA »
 ---------------------------------------------------------------------------------------------------------

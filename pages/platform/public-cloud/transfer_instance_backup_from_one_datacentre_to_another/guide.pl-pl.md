@@ -18,7 +18,7 @@ Możesz przenieść instancję Public Cloud między centrami danych, gdy preferu
 ## Wymagania początkowe
 
 * Utworzenie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} na Twoim koncie OVHcloud
-* Dostęp administratora (root) do centrum danych przez SSH
+* Dostęp administratora (root) Twojej instancji/systemu operacyjnego przez SSH
 * Przeczytanie przewodnika [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/){.external} (zalecane)
 
 > [!primary]
@@ -30,7 +30,7 @@ Komendy zawarte w tym przewodniku opierają się na CLI OpenStack w odróżnieni
 
 ### Tworzenie kopii zapasowej
 
-W pierwszym kroku połącz się przez SSH z Twoim centrum danych. Następnie wprowadź następującą komendę, aby wyświetlić istniejące instancje:
+W pierwszym kroku połącz się przez SSH z Twojej instancji/systemu operacyjnego. Następnie wprowadź następującą komendę, aby wyświetlić istniejące instancje:
 
 ```
 3#root@server:~$ openstack server list

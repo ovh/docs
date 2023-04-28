@@ -82,7 +82,7 @@ Para más información, consulte la guía [Guardar una instancia](../guardar_cop
 
 Haga clic en `Detener`{.action}.
 
-Esta acción suspenderá la instancia. Para más información, consulte nuestra guía [Suspender o poner en pausa una instancia](../suspender_o_poner_en_pausa_una_instancia/#detener-stop-una-instancia_1).
+Esta acción suspenderá la instancia. Para más información, consulte nuestra guía [Suspender o poner en pausa una instancia](../suspender_o_poner_en_pausa_una_instancia/#detener-stop-una-instancia).
 
 Haga clic en `Iniciar`{.action} para reactivar la instancia.
 
@@ -137,7 +137,7 @@ A continuación, abra la pestaña `Consola VNC`{.action}.
 
 La consola VNC proporciona acceso directo a su instancia. Para que este acceso funcione, es necesario configurar primero un nombre de usuario y una contraseña en la instancia. 
 
-Para más información, consulte nuestra guía [Crear y conectarse a una instancia de Public Cloud](../public-cloud-primeros-pasos/#connect-to-instance) a ella.
+Consulte nuestra guía [Crear y conectarse a una instancia de Public Cloud](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/#4-conectarse-a-una-instancia) para obtener más información.
 
 ## Más información
 

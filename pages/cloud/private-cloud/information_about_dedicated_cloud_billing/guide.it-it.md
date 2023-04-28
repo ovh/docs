@@ -4,9 +4,10 @@ excerpt: Dettagli sul funzionamento della fatturazione del Hosted Private Cloud
 slug: informazioni_sulla_fatturazione_dedicated_cloud
 legacy_guide_number: g677
 section: Per iniziare
-updated: 2022-12-08
+updated: 2018-03-26
 ---
 
+**Ultimo aggiornamento: 26/03/2018**
 
 ## 
 

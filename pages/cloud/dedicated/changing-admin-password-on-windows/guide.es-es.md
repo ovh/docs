@@ -7,11 +7,11 @@ order: 2
 updated: 2021-01-12
 ---
 
-**Última actualización: 16/12/2020**
-
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
+
+**Última actualización: 16/12/2020**
 
 ## Objetivo
 
@@ -26,7 +26,7 @@ Al instalar o reinstalar un sistema operativo Windows, recibirá una contraseña
 
 ## Procedimiento
 
-Las siguientes etapas describen el proceso de modificación de la contraseña local a través del modo de rescate de OVHcloud (basado en Linux), que está disponible en todo momento. Si prefiere utilizar Windows PE (WinRescue), consulte el método dedicado [al final de esta guía](./#restaurar-la-contrasena-de-administrador-con-winrescue_1).
+Las siguientes etapas describen el proceso de modificación de la contraseña local a través del modo de rescate de OVHcloud (basado en Linux), que está disponible en todo momento. Si prefiere utilizar Windows PE (WinRescue), consulte el método dedicado [al final de esta guía](./#restaurar-la-contrasena-de-administrador-con-winrescue).
 
 ### 1. reiniciar el servidor en modo de rescate
 
@@ -47,7 +47,7 @@ Una vez que haya realizado los cambios, haga clic en `...`{.action} a la derecha
 
 Para más información sobre el modo de rescate, consulte [esta guía](../modo_de_rescate/).
 
-### 2. Montar la partición del sistema
+### 2. montar la partición del sistema
 
 Conéctese al servidor por SSH. Si fuera necesario, consulte la guía [Introducción al SSH](../introduccion-ssh/).
 
@@ -230,9 +230,9 @@ Write hive files? (y/n) [n] : y
  0  <SAM> - OK
 ```
 
-### 4. Reiniciar el servidor 
+### 4. reiniciar el servidor 
 
-En primer lugar, sustituya el netboot por **Arrancar en el disco duro** en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) (ver [Etapa 1](./#1-reiniciar-el-servidor-en-modo-de-rescate_1)). 
+En primer lugar, sustituya el netboot por **Arrancar en el disco duro** en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) (ver [Etapa 1](./#1-reiniciar-el-servidor-en-modo-de-rescate)). 
 
 Desmonte la partición y reinicie el servidor con los siguientes comandos:
 
@@ -331,7 +331,7 @@ El servidor debe reiniciarse.
 
 #### 3. reiniciar el servidor 
 
-En primer lugar, sustituya el netboot por **Arrancar en el disco duro** en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) (ver [Etapa 1](./#1-reiniciar-el-servidor-en-modo-de-rescate_1)). 
+En primer lugar, sustituya el netboot por **Arrancar en el disco duro** en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) (ver [Etapa 1](./#1-reiniciar-el-servidor-en-modo-de-rescate)). 
 
 Al volver a la ventana de KVM, seleccione la opción de apagado `Reiniciar`{.action} con el botón Windows "Iniciar" en la parte inferior izquierda.
 

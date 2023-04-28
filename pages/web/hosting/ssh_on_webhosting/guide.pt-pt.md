@@ -64,7 +64,7 @@ Uma vez aberto o terminal, utilize o seguinte comando: substitua os elementos "y
 ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 ```
 
-Depois de enviado o comando, deverá introduzir a palavra-passe do utilizador SSH. Quando estiver conectado, prossiga para a etapa seguinte: [Interagir com o espaço de armazenamento em SSH](./#4a-etapa-interagir-com-o-espaco-de-armazenamento-em-ssh_1).
+Depois de enviado o comando, deverá introduzir a palavra-passe do utilizador SSH. Quando estiver conectado, prossiga para a etapa seguinte: [Interagir com o espaço de armazenamento em SSH](./#4a-etapa-interagir-com-o-espaco-de-armazenamento-em-ssh).
 
 ![usessh](images/use-ssh-step3.png){.thumbnail}
 

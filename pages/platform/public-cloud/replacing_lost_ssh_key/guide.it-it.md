@@ -8,7 +8,7 @@ updated: 2022-02-10
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 10/02/2022**
@@ -23,7 +23,7 @@ Per recuperare l'accesso, abbiamo messo a tua disposizione una [modalità Rescue
 
 ## Prerequisiti
 
--- Disporre di una [Istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
+- Disporre di una [Istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
 - Avere accesso alla tua istanza via SSH in [modalità Rescue](https://docs.ovh.com/it/public-cloud/riavvia_la_tua_istanza_in_modalita_di_ripristino_rescue_mode/)
 - Creare una chiave SSH
 

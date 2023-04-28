@@ -4,7 +4,7 @@ slug: Passwort-verwalten
 excerpt: 'Sehen Sie hier, wie Sie das Passwort Ihres OVHcloud Kundencenters anlegen, ändern und verwalten können'
 section: 'Erste Schritte'
 order: 4
-updated: 2021-07-21
+updated: 2020-02-12
 ---
 
 **Letzte Aktualisierung am 12.02.2020**
@@ -46,7 +46,7 @@ Um Passwörter zu erstellen gibt es mehrere effiziente Methoden. Aus diesen empf
 
 In französischer Sprache bietet die Nationale Kommission für Informatik und Freiheiten (frz. CNIL) ebenfalls ein Werkzeug an, um auf Grundlage der Anfangsbuchstaben ein solides Passwort zu erstellen.
 
-Links zu den ausführlichen Beschreibungen finden Sie im Abschnitt [Weiterführende Informationen](./#weiterfuhrende-informationen_2) am Ende dieser Anleitung.
+Links zu den ausführlichen Beschreibungen finden Sie im Abschnitt [Weiterführende Informationen](./#weiterfuhrende-informationen) am Ende dieser Anleitung.
 
 ### Einen Passwort-Manager verwenden 
 

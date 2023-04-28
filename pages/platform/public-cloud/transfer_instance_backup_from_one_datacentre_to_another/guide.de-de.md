@@ -18,7 +18,7 @@ Es kann vorkommen, dass Sie Ihre Public Cloud Instanz von einem Rechenzentrum in
 ## Voraussetzungen
 
 * Sie haben eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/){.external} in Ihrem Account erstellt.
-* Sie haben Administrator-Zugriff (Root) zu Ihrem Rechenzentrum via SSH.
+* Sie haben Administrator-Zugriff (Root) zu Ihrer Instanz / Ihrem Betriebssystem via SSH.
 * Sie haben die Anleitung “[Vorbereitung der Umgebung für die Verwendung der OpenStack API](../prepare_the_environment_for_using_the_openstack_api/)“ gelesen (empfohlen).
 
 > [!primary]
@@ -30,7 +30,7 @@ Die Befehle in dieser Anleitung basieren auf dem OpenStack-CLI, im Gegensatz zu 
 
 ### Backup erstellen
 
-Stellen Sie zunächst eine SSH-Verbindung zu Ihrem Rechenzentrum her. Führen Sie anschließend den folgenden Befehl aus, um Ihre vorhandenen Instanzen aufzulisten:
+Stellen Sie zunächst eine SSH-Verbindung zu Ihrem Instanz/Ihr Betriebssystem her. Führen Sie anschließend den folgenden Befehl aus, um Ihre vorhandenen Instanzen aufzulisten:
 
 ```
 #root@server:~$ openstack server list

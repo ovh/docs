@@ -6,6 +6,10 @@ section: 'Zarządzanie w OpenStack CLI'
 updated: 2021-08-18
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+>
+
 **Ostatnia aktualizacja z dnia 18-08-2021**
 
 ## Wprowadzenie
@@ -98,4 +102,4 @@ set OS_PASSWORD="Hasło użytkownika Horizon"
 
 Informacje na temat korzystania z OpenStack: [Dokumentacja OpenStack](https://docs.openstack.org/train/){.external}
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -4,9 +4,10 @@ excerpt: Find out what else you can do with the .htaccess file
 slug: what_else_can_you_do_with_the_htaccess_file
 section: Rewriting and authentication
 order: 04
-updated: 2022-10-05
+updated: 2020-05-05
 ---
 
+**Last updated 05th May 2020**q
 
 ## Prevent the content of a directory from being listed
 To prevent users from listing all the files contained in a directory in the absence of an index (.cgi, .html, .php etc.), create an .htaccess file containing the following line:

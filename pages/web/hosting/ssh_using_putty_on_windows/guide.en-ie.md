@@ -4,8 +4,10 @@ excerpt: 'Web hosting: Using PuTTy on Windows'
 slug: web_hosting_using_putty_on_windows
 section: FTP and SSH
 order: 08
-updated: 2022-10-05
+updated: 2020-05-05
 ---
+
+**Last updated 5th May 2020**
 
 
 ## Introduction

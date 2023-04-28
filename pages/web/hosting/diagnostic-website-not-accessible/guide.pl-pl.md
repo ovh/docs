@@ -8,7 +8,7 @@ updated: 2022-08-02
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 02/08/2022**
@@ -128,7 +128,7 @@ W zakładce `Informacje ogólne`{.action} skopiuj adres IPV4 i/lub IPV6 Twojej d
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-Następnie przenieś domenę do [strefy DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#modyfikacja-strefy-dns-domeny_1), modyfikując lub dodając jeden lub więcej rekordów typu `A`.
+Następnie przenieś domenę do [strefy DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#modyfikacja-strefy-dns-domeny), modyfikując lub dodając jeden lub więcej rekordów typu `A`.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 

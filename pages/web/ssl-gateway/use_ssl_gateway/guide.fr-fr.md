@@ -8,6 +8,8 @@ order: 01
 updated: 2022-12-01
 ---
 
+**Dernière mise à jour le 01/12/2022**
+
 ## Objectif
 
 Découvrez comment utiliser votre service SSL Gateway afin de sécuriser les connexions vers votre site web.

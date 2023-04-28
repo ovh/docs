@@ -8,7 +8,7 @@ updated: 2022-05-02
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 02-05-2022**
@@ -45,7 +45,7 @@ W sekcji `Mój profil`{.action} po prawej stronie ekranu (kliknij ponownie nazw�
 
 ![miprofile](images/myprofile.png){.thumbnail}
 
-Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem [Zabezpieczenie konta OVHcloud i zarządzanie danymi osobowymi](https://docs.ovh.com/pl/customer/identyfikator_klienta/#jak-zarzadzac-danymi-osobowymi_1).
+Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem [Zabezpieczenie konta OVHcloud i zarządzanie danymi osobowymi](https://docs.ovh.com/pl/customer/identyfikator_klienta/#jak-zarzadzac-danymi-osobowymi).
 
 Upewnij się, czy Twoje konto e-mail jest zawsze **aktualne, bezpieczne i dostępne.** Wiadomości e-mail z naszych usług zostaną wysłane na ten adres, w tym **wiadomości z resetu** w przypadku utraty hasła.
 

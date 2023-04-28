@@ -8,7 +8,7 @@ updated: 2022-12-01
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
 
@@ -73,7 +73,7 @@ Das Interface bietet zwei Wege, um die Frequenz Ihres Tasks zu konfigurieren. Ve
 |Geben Sie numerische Werte ein wie in einem *crontab*. Die Sternchen stehen für "jeden Wert" des Zeitraums, was bedeutet, dass die Aufgabe in diesem Beispiel **einmal pro Stunde täglich** kontinuierlich ausgeführt würde.|
 |![cron frequency](images/cron-jobs-4.png){.thumbnail}|
 
-Sie können während der Konfiguration zwischen den beiden Ansichten wechseln, um die Änderungen zu sehen. Beachten Sie auch die [Einschränkungen bei der Task-Planung auf einem Webhosting](./#einschrankungen-bei-geplanten-tasks-auf-ihrem-webhosting_1).
+Sie können während der Konfiguration zwischen den beiden Ansichten wechseln, um die Änderungen zu sehen. Beachten Sie auch die [Einschränkungen bei der Task-Planung auf einem Webhosting](./#einschrankungen-bei-geplanten-tasks-auf-ihrem-webhosting).
 
 ![cron control panel](images/cron-jobs-5.gif){.thumbnail}
 

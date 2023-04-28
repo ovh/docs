@@ -8,7 +8,7 @@ updated: 2023-03-03
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 03-03-2023**
@@ -203,7 +203,7 @@ Po dokonaniu wyboru kliknij `Utwórz`{.action}, aby rozpocząć proces.
 
 #### Tworzenie sieci prywatnej za pomocą interfejsu APIv6 OVHcloud <a name="vlansetup"></a>
 
-Aby utworzyć sieć VLAN przy użyciu interfejsu APIv6 OVHcloud, zapoznaj się z [tą sekcją](https://docs.ovh.com/pl/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) (EN), odpowiedniego przewodnika.
+Aby utworzyć sieć VLAN przy użyciu interfejsu APIv6 OVHcloud, zapoznaj się z [tą sekcją](https://docs.ovh.com/pl/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack) (EN), odpowiedniego przewodnika.
 
 #### Tworzenie prywatnej sieci za pomocą interfejsu CLI OpenStack
 
@@ -264,7 +264,7 @@ Jeśli potrzebujesz pomocy, zapoznaj się z tym przewodnikiem: [Tworzenie instan
 
 ##### **Za pomocą APIv6 OVHcloud**
 
-Przejdź do [tej sekcji](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack_1) (EN), odpowiedniego przewodnika.
+Przejdź do [tej sekcji](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack) (EN), odpowiedniego przewodnika.
 
 ##### **Za pomocą API OpenStack**
 
@@ -459,7 +459,7 @@ W wyświetlonym oknie wybierz sieci prywatne, które chcesz połączyć z instan
 
 ##### **Zarządzanie interfejsami sieciowymi za pomocą interfejsu APIv6 OVHcloud**
 
-Przejdź do [tej sekcji](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#in-case-of-an-existing-instance_1) (EN), odpowiedniego przewodnika.
+Przejdź do [tej sekcji](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#in-case-of-an-existing-instance) (EN), odpowiedniego przewodnika.
 
 ##### **Zarządzanie interfejsami sieciowymi za pomocą OpenStack Horizon**
 

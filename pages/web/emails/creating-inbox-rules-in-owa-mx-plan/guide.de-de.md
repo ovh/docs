@@ -7,6 +7,10 @@ order: 05
 updated: 2020-03-11
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
+
 **Letzte Aktualisierung am 11.03.2020**
 
 
@@ -98,7 +102,7 @@ Da kein automatisierter Spam-Schutz definitiv entscheiden kann, ob es sich bei e
 
 > [!primary]
 >
-Bitte beachten Sie, dass Spam-*False Positives* nicht direkt in OWA deklariert werden können. Wenn Sie E-Mails erhalten, die fälschlicherweise als \[SPAM] gekennzeichnet sind, empfehlen wir, unser Support-Team zu informieren, indem Sie eine Support-Anfrage in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/manager/dedicated/#/support/tickets/new) erstellen.  
+> Bitte beachten Sie, dass Spam-*False Positives* nicht direkt in OWA deklariert werden können. Wenn Sie E-Mails erhalten, die fälschlicherweise als \[SPAM] gekennzeichnet sind, empfehlen wir, unser Support-Team zu informieren, indem Sie eine Support-Anfrage in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/manager/dedicated/#/support/tickets/new) erstellen.
 >
 
 

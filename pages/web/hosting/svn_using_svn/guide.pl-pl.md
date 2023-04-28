@@ -10,7 +10,7 @@ updated: 2021-01-06
 **Ostatnia aktualizacja z dnia 28-10-2020**
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
 
 ## Wprowadzenie 
@@ -63,7 +63,7 @@ Aby uzyskać katalogi, należy je uzyskać zgodnie z poniższym obrazkiem:
 
 Przed kontynuowaniem operacji utwórz parę kluczy SSH z poziomu komputera, którego będziesz używał do łączenia się z repozytorium SVN.
 
-Zapoznaj się z przewodnikiem [Tworzenie kluczy SSH](https://docs.ovh.com/pl/public-cloud/tworzenie-kluczy-ssh/). Nie musisz postępować zgodnie z instrukcjami etapu [Zaimportuj klucz SSH do Panelu klienta OVHcloud](https://docs.ovh.com/pl/public-cloud/tworzenie-kluczy-ssh/#importowanie-klucza-ssh-do-panelu-klienta-ovhcloud_1) w tym przewodniku.
+Zapoznaj się z przewodnikiem [Tworzenie kluczy SSH](https://docs.ovh.com/pl/public-cloud/tworzenie-kluczy-ssh/). Nie musisz postępować zgodnie z instrukcjami etapu [Zaimportuj klucz SSH do Panelu klienta OVHcloud](https://docs.ovh.com/pl/public-cloud/tworzenie-kluczy-ssh/#importowanie-klucza-ssh-do-panelu-klienta-ovhcloud) w tym przewodniku.
 
 ### Dodanie klucza publicznego do hostingu
 

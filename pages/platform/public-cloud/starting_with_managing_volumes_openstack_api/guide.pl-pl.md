@@ -8,7 +8,7 @@ updated: 2021-05-19
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 19-05-2021**
@@ -145,7 +145,7 @@ admin@server-1:~$ openstack volume create --type high-speed --image be66762f-b84
 +---------------------+--------------------------------------+
 ```
 
-Gdzie **be66762f-b849-43e1-b57c-005d9fe2808** odpowiada ID obrazu Debiana 10.
+Gdzie **be66762f-b849-43e1-b57c-005d9fe2808** odpowiada ID obrazu Debian 10.
 
 #### Przypisz wolumen do instancji
 
@@ -200,4 +200,4 @@ admin@server-1:~$ openstack volume delete f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

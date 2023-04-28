@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: 726ba2fa-2dcb-4879-a8ed-c6c04ecbc4c6
 full_slug: voip-securing-sip-line

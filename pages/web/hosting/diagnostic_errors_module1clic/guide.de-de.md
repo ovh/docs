@@ -9,7 +9,7 @@ updated: 2022-11-08
 
 > [!primary]
 >
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
 **Letzte Aktualisierung am 15.02.2023**
@@ -187,7 +187,7 @@ Dies kann mehrere Ursachen haben:
 
 - Sie haben kürzlich eine Änderung Ihrer [DNS-Zone](../../domains/webhosting_bearbeiten_der_dns_zone/#dns-konzept-verstehen) oder DNS-Server durchgeführt, oder einen [Domain Transfer](../../domains/transfer-einer-generischen-domain/). Warten Sie, bis diese Operationen abgeschlossen sind (48 Stunden bei Änderungen an Ihren DNS-Servern). Denken Sie auch daran, Ihre Geräte (PC, Smartphone, Internetverbindung usw.) neuzustarten und den Cache Ihres Browsers zu leeren.
 
-- Ihre Domain ist noch immer mit Ihrem alten Webhosting verbunden. Bearbeiten Sie in diesem Fall Ihre [DNS-Zone](../../domains/webhosting_bearbeiten_der_dns_zone/#bearbeiten-der-ovhcloud-dns-zone-ihrer-domain_1) oder Ihre [DNS-Server](../../domains/webhosting_allgemeine_informationen_zu_den_dns_servern/#dns-server-andern) oder kontaktieren Sie Ihren bisherigen Hosting-Anbieter, um diese Anpassung durchzuführen.
+- Ihre Domain ist noch immer mit Ihrem alten Webhosting verbunden. Bearbeiten Sie in diesem Fall Ihre [DNS-Zone](../../domains/webhosting_bearbeiten_der_dns_zone/#bearbeiten-der-ovhcloud-dns-zone-ihrer-domain) oder Ihre [DNS-Server](../../domains/webhosting_allgemeine_informationen_zu_den_dns_servern/#dns-server-andern) oder kontaktieren Sie Ihren bisherigen Hosting-Anbieter, um diese Anpassung durchzuführen.
 
 ### Das Administrator-Passwort für den Zugriff auf das Backend Ihres 1-Klick-Moduls funktioniert nicht mehr <a name="adminpassword"></a>
 

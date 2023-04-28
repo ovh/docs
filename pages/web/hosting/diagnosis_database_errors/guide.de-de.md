@@ -8,7 +8,7 @@ updated: 2022-12-09
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
 **Letzte Aktualisierung am 15.02.2023**
@@ -147,7 +147,7 @@ Lassen Sie dann die Quota im Tab `Datenbanken`{.action} des betreffenden Hosting
 
 #### Methode 4: Ihre Datenbank optimieren
 
-Um Ihre Datenbank zu optimieren, folgen Sie den Anweisungen in unserer Anleitung “[Konfigurieren Ihres Datenbankservers](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#ihre-datenbanken-optimieren_1)“. Lassen Sie dann die Quota im Tab `Datenbanken`{.action} des betreffenden Hostings neu berechnen: Klicken Sie auf `...`{.action} und dann auf `Das Quota neu berechnen`{.action}.
+Um Ihre Datenbank zu optimieren, folgen Sie den Anweisungen in unserer Anleitung “[Konfigurieren Ihres Datenbankservers](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#ihre-datenbanken-optimieren)“. Lassen Sie dann die Quota im Tab `Datenbanken`{.action} des betreffenden Hostings neu berechnen: Klicken Sie auf `...`{.action} und dann auf `Das Quota neu berechnen`{.action}.
 
 > [!warning]
 >
@@ -160,7 +160,7 @@ In der unten abgebildeten Nachricht im Bereich `Datenbanken`{.action} in Ihrem [
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
-In diesem Fall können Sie die [RAM-Kapazität](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#wechseln-des-datenbank-angebots_1) im Bereich `Datenbanken`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erhöhen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf die Schaltfläche `...`{.action} im Bereich `RAM`.
+In diesem Fall können Sie die [RAM-Kapazität](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#wechseln-des-datenbank-angebots) im Bereich `Datenbanken`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erhöhen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf die Schaltfläche `...`{.action} im Bereich `RAM`.
 
 > [!warning]
 >
@@ -226,11 +226,11 @@ Diese Fehlermeldung wird beim [Import einer Datenbank](https://docs.ovh.com/de/h
 
 Um dieses Problem zu beheben können Sie Maßnahmen anwenden:
 
-- Erhöhung der [Arbeitsspeicherkapazität (RAM)](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#wechseln-des-datenbank-angebots_1). Gehen Sie hierzu zum [Web Cloud Databases](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) im Bereich `Datenbanken`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie dann auf die Schaltfläche `...`{.action} im Bereich `RAM` und wählen Sie `RAM-Menge ändern`{.action}.
+- Erhöhung der [Arbeitsspeicherkapazität (RAM)](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#wechseln-des-datenbank-angebots). Gehen Sie hierzu zum [Web Cloud Databases](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) im Bereich `Datenbanken`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie dann auf die Schaltfläche `...`{.action} im Bereich `RAM` und wählen Sie `RAM-Menge ändern`{.action}.
 
 - Splitten Sie Ihre Datenbank, um sie dann über mehrere Operationen zu importieren. (Für Fragen zu den durchzuführenden Operationen kontaktieren Sie unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.)
 
-- [Optimieren](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#ihre-datenbanken-optimieren_1) Sie die Datenbank und wiederholen Sie die Export/Import-Operationen.
+- [Optimieren](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#ihre-datenbanken-optimieren) Sie die Datenbank und wiederholen Sie die Export/Import-Operationen.
 
 ### Kein Zugriff auf phpMyAdmin
 
@@ -258,7 +258,7 @@ Diese Zahl erhöht sich auf **200** für Datenbanken auf [Web Cloud Databases](h
 
 Diese Nachricht erscheint bei der [Verbindung über phpMyAdmin](https://docs.ovh.com/de/hosting/datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen), wenn diese maximale Anzahl an Verbindungen überschritten wird.
 
-In dieser Situation müssen Sie [Ihre Datenbanken optimieren](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#ihre-datenbanken-optimieren_1), um die Anzahl der aktiven Verbindungen zu reduzieren.
+In dieser Situation müssen Sie [Ihre Datenbanken optimieren](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#ihre-datenbanken-optimieren), um die Anzahl der aktiven Verbindungen zu reduzieren.
 
 > [!warning]
 >

@@ -6,6 +6,8 @@ section: Outils de migration des Machines Virtuelles
 updated: 2018-03-26
 ---
 
+**Dernière mise à jour le 26/03/2018**
+
 
 **VMware vCenter Converter** est un outil pour convertir une machine physique ou virtuelle vers une infrastructure Cloud en l'occurrence un **P2V** (Physical to Virtual) ou **V2V** (Virtual to Virtual).
 

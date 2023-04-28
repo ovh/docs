@@ -9,7 +9,7 @@ updated: 2021-04-20
 **Ostatnia aktualizacja z dnia 27/04/2021**
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
 
 ## Wprowadzenie
@@ -62,7 +62,7 @@ passwd: password updated successfully
 > W dystrybucji Linux wpisane hasło **nie** będzie się wyświetlało.
 >
 
-Jeśli chcesz zezwolić na logowanie jako użytkownik root, postępuj zgodnie z instrukcjami zawartymi w [tej sekcji](./#wlacz-haslo-root_1).
+Jeśli chcesz zezwolić na logowanie jako użytkownik root, postępuj zgodnie z instrukcjami zawartymi w [tej sekcji](./#wlacz-haslo-root).
 
 ### Zmiana hasła, jeśli zostało ono utracone
 

@@ -7,7 +7,7 @@ updated: 2022-08-26
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 29/08/2022**
@@ -236,11 +236,11 @@ Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utiliz
 
 #### Step 2: Apri il file di configurazione di rete del tuo server
 
-Apri il file di configurazione della rete, file che si trova in `/etc/netplan`. Per dimostrarlo, il nostro file è chiamato '50-cloud-init.yaml'.
+Apri il file di configurazione della rete, file che si trova in `/etc/netplan`. Per dimostrarlo, il nostro file è chiamato "50-cloud-init.yaml".
 
 #### Step 3: Modifica il file di configurazione di rete.
 
-Servendoti di un editor di testo, modificare il file '50-cloud-init.yaml' aggiungendo le righe seguenti alle sezioni interessate, come indicato nell'esempio qui sotto.
+Servendoti di un editor di testo, modificare il file "50-cloud-init.yaml" aggiungendo le righe seguenti alle sezioni interessate, come indicato nell'esempio qui sotto.
 
 Sostituisci i valori generici (YOUR_IPV6, IPV6_PREFIX e IPV6_GATEWAY) e l'interfaccia di rete (se il tuo server non utilizza enp1s0) con i valori specifici.
 

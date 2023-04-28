@@ -3,7 +3,7 @@ title: "Configuration d'un service OVHcloud Load Balancer - Les en-têtes HTTP"
 slug: http-headers
 excerpt: Intégrez vos services web derrière un Load Balancer avec les en-têtes HTTP
 section: Configuration
-updated: 2018-08-03
+updated: 2022-07-27
 ---
 
 **Dernière mise à jour le à 27/07/2022**
@@ -100,7 +100,7 @@ La suite de ce guide vous propose quelques bonnes pratiques de configuration pou
 1. # Trust X-Forwarded-For headers from the OVHcloud Load Balancer
 2. # See https://www.ovh.com/manager/sunrise/iplb/index.html#/iplb for an up to date list
 3. RemoteIPHeader X-Forwarded-For
-4. RemoteIPInternalProxy 10.108.0.0/16
+4. RemoteIPInternalProxy 10.108.0.0/14
 ```
 
 - Remplacez les variables `%h` par `%a` dans les directives `LogFormat` de la configuration Apache

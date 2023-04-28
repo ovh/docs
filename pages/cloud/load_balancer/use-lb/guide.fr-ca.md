@@ -3,10 +3,10 @@ title: Gestion du service de Répartiteur de charge via l'espace client
 slug: utilisation-loadbalancer
 excerpt: Résumé des principales fonctionnalités et prise en main du service de Répartiteur de charge via l'espace client
 section: Premiers pas
-updated: 2022-09-30
+updated: 2017-12-01
 ---
 
-**Dernière mise à jour 2017/12/01**
+**Dernière mise à jour le 01/12/2017**
 
 ## Objectif
 

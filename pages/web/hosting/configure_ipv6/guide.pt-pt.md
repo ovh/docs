@@ -65,7 +65,7 @@ No quadro **IPv6**, copie a entrada e passe ao passo seguinte.
 > Além disso, a adição, modificação ou supressão de uma entrada DNS na zona DNS ativa de um nome de domínio leva a um atraso de propagação de **4 à 24 horas** para ser plenamente efetivo.
 >
 
-Para que o seu browser encontre o endereço IPv6 com o seu nome de domínio, modifique a zona DNS ativa do seu domínio. Utilize o nosso guia "[Editar uma zona DNS da OVHcloud](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#editar-a-zona-dns-da-ovhcloud-do-seu-dominio_1)" para criar uma entrada DNS do tipo **AAAA**.
+Para que o seu browser encontre o endereço IPv6 com o seu nome de domínio, modifique a zona DNS ativa do seu domínio. Utilize o nosso guia "[Editar uma zona DNS da OVHcloud](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#editar-a-zona-dns-da-ovhcloud-do-seu-dominio)" para criar uma entrada DNS do tipo **AAAA**.
 
 Na parte `Web Cloud`{.action}, clique nos `Nomes de domínio`{.action}. Escolha o seu nome de domínio e aceda ao separador `Zona DNS`{.action}. Clique no botão `Para Adicionar uma entrada`{.action} à direita da tabela. 
 
@@ -75,7 +75,7 @@ Introduza o endereço IPv6 previamente copiado utilizando o tipo de registo **AA
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Editar uma zona DNS da OVHcloud](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#editar-a-zona-dns-da-ovhcloud-do-seu-dominio_1)
+[Editar uma zona DNS da OVHcloud](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#editar-a-zona-dns-da-ovhcloud-do-seu-dominio)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 

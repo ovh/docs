@@ -8,7 +8,7 @@ updated: 2022-12-09
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 15/02/2023**
@@ -146,7 +146,7 @@ Esegui il calcolo della quota utilizzando la scheda `Database`{.action} dell'hos
 
 #### Metodo 4: ottimizzare il tuo database
 
-Per ottimizzare il tuo database, segui le istruzioni della nostra guida [Configura il tuo server di database](https://docs.ovh.com/it/hosting/configurare-ottimizzare-il-tuo-database-server/#ottimizza-i-tuoi-database_1). Clicca sulla scheda `Database`{.action} del tuo hosting e poi riavvia il calcolo della quota `...`{.action} del database in questione.
+Per ottimizzare il tuo database, segui le istruzioni della nostra guida [Configura il tuo server di database](https://docs.ovh.com/it/hosting/configurare-ottimizzare-il-tuo-database-server/#ottimizza-i-tuoi-database). Clicca sulla scheda `Database`{.action} del tuo hosting e poi riavvia il calcolo della quota `...`{.action} del database in questione.
 
 > [!warning]
 >
@@ -170,7 +170,7 @@ In questa situazione è possibile aumentare la [quantità di memoria RAM](https:
 > Nella zona `Configurazione`, clicca sui `...`{.action} in corrispondenza dell'entrata della `Database Privato` e clicca su `Scollega`{.action}.
 >
 
-Per ottimizzare il tuo database, segui le istruzioni della nostra guida "[Configurare il tuo server di database](https://docs.ovh.com/it/hosting/configurare-ottimizzare-il-tuo-database-server/#ottimizza-i-tuoi-database_1)".
+Per ottimizzare il tuo database, segui le istruzioni della nostra guida "[Configurare il tuo server di database](https://docs.ovh.com/it/hosting/configurare-ottimizzare-il-tuo-database-server/#ottimizza-i-tuoi-database)".
 
 > [!primary]
 > Se riscontri difficoltà nell'utilizzo delle risorse sul tuo server di database e non desideri aumentarle, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/). Non saremo in grado di fornirti assistenza al riguardo.

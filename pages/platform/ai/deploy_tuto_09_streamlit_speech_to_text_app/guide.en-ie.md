@@ -4,14 +4,12 @@ slug: deploy/tuto-streamlit-speech-to-text-app
 excerpt: How to create and deploy a Streamlit Application for Speech To Text 
 section: AI Deploy - Tutorials
 order: 09
-updated: 2023-02-09
+updated: 2023-04-04
 ---
 
-**Last updated 9th February, 2023.**
+**Last updated 4th April, 2023.**
 
 > [!primary]
->
-> AI Deploy is in `beta`. During the beta-testing phase, the infrastructure’s availability and data longevity are not guaranteed. Please do not use this service for applications that are in production, as this phase is not complete.
 >
 > AI Deploy is covered by **[OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf)**.
 >
@@ -37,7 +35,7 @@ To deploy your app, you need:
 - An access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 - An AI Deploy Project created inside a [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
 - A [user for AI Deploy](https://docs.ovh.com/ie/en/publiccloud/ai/users/).
-- [The OVHcloud AI CLI](https://cli.bhs.training.ai.cloud.ovh.net/) **and** [Docker](https://www.docker.com/get-started) installed on your local computer, **or** only an access to a Debian Docker Instance on the [Public Cloud](https://www.ovh.com/manager/public-cloud/).
+- [The OVHcloud AI CLI](https://cli.bhs.ai.cloud.ovh.net/) **and** [Docker](https://www.docker.com/get-started) installed on your local computer, **or** only an access to a Debian Docker Instance on the [Public Cloud](https://www.ovh.com/manager/public-cloud/).
 - To deploy your app, you must have the full code of the application, either by cloning the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/speech-to-text), or by having followed our [blog article](https://blog.ovhcloud.com/how-to-build-a-speech-to-text-application-with-python-1-3/) that taught you how to build this app step by step.
 - If you want the diarization option (speakers differentiation), you will need an access token. This token will be requested at the launch of the application. To create your token, follow the steps indicated on the [model page](https://huggingface.co/pyannote/speaker-diarization). If the token is not specified, the application will be launched without this feature.
 

@@ -7,7 +7,7 @@ updated: 2022-12-20
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 22/12/2022**
@@ -29,7 +29,7 @@ Per proteggere la propria infrastruttura e i server dei propri clienti, OVHcloud
 
 ## Prerequisiti
 
-- Disporre di un servizio OVHcloud compatibile con il Network Firewall ([Server Dedicati](https://www.ovhcloud.com/it/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/it/vps/){.external}, [istanze Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external}, [Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/){.external}, ecc.).
+- Disporre di un servizio OVHcloud compatibile con il Network Firewall ([Server Dedicati](https://www.ovhcloud.com/it/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/it/vps/){.external}, [istanze Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external}, [Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/){.external}, ecc.)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 > [!warning]

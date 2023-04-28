@@ -220,7 +220,7 @@ To cancel your [Hosted Exchange](https://www.ovhcloud.com/en-ie/emails/hosted-ex
 
 #### Private Exchange <a name="private"></a>
 
-To cancel your [Private Exchange](https://www.ovhcloud.com/en-ie/emails/private-exchange/) solution, follow the instructions in this [guide](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/manage-exchange-billing/#deleting-accounts_1).
+To cancel your [Private Exchange](https://www.ovhcloud.com/en-ie/emails/private-exchange/) solution, follow the instructions in this [guide](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/manage-exchange-billing/#deleting-accounts).
 
 #### Office 365 CSP1 <a name="office-csp1"></a>
 

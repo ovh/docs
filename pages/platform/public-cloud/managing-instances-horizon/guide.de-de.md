@@ -8,7 +8,7 @@ updated: 2022-01-25
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
 **Letzte Aktualisierung am 03.02.2022**
@@ -69,7 +69,7 @@ Wählen Sie im Verwaltungsinterface der Instanz die gewünschte Option aus der D
 
 ![public-cloud](images/list2022.png){.thumbnail}
 
-- Attach Interface: Mit dieser Option können Sie über das VLAN eine oder mehrere private Interfaces zu Ihrer Instanz hinzufügen. Weitere Informationen finden Sie in [diesem Abschnitt](https://docs.ovh.com/de/public-cloud/public-cloud-vrack/#ein-privates-interface-hinzufugen_1) der vRack-Anleitung.
+- Attach Interface: Mit dieser Option können Sie über das VLAN eine oder mehrere private Interfaces zu Ihrer Instanz hinzufügen. Weitere Informationen finden Sie in [diesem Abschnitt](https://docs.ovh.com/de/public-cloud/public-cloud-vrack/#ein-privates-interface-hinzufugen) der vRack-Anleitung.
 - Detach Interface: Mit dieser Option können Sie ein Interface löschen, das zu einer Instanz gehört. Weitere Informationen finden Sie in [diesem Abschnitt](https://docs.ovh.com/de/public-cloud/public-cloud-vrack/#loschung-eines-interfaces) der vRack-Anleitung.
 - Edit Instance: Mit dieser Option können Sie den Namen der Instanz und die [Sicherheitsgruppen ändern](https://docs.ovh.com/de/public-cloud/configure-security-group-horizon/).
 

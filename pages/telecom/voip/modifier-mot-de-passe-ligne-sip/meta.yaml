@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: 10716a50-717d-40ad-91a9-48c64d56431a
 full_slug: voip-sip-line-password
