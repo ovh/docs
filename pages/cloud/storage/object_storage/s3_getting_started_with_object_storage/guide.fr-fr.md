@@ -85,11 +85,15 @@ Voici les valeurs de configuration que vous pouvez définir spécifiquement  :
 | max_bandwidth | Integer | **Défaut :** None | La bande passante maximale qui sera consommée pour le chargement et le téléchargement de données vers et depuis vos buckets. |
 | verify_ssl | Boolean | **Défaut :** true | Active / Désactive la vérification des certificats SSL |
 
+
+Pour connaître la liste des endpoints par région et par classe de stockage, vous pouvez vous référer à [cette page](https://help.ovhcloud.com/csm/fr-public-cloud-storage-s3-location?id=kb_article_view&sysparm_article=KB0047389).
+
+
 #### Utilisation
 
 > [!primary]
 >
-> Si vous n'avez pas installé `awscli-plugin-endpoint`, vous devez ajouter `--endpoint-url https://s3.<region_in_lowercase>.perf.cloud.ovh.net` à la ligne de commande.
+> Si vous n'avez pas installé `awscli-plugin-endpoint`, vous devez ajouter `--endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net` à la ligne de commande.
 >
 
 > [!primary]
@@ -101,7 +105,7 @@ Voici les valeurs de configuration que vous pouvez définir spécifiquement  :
 
 ```bash
 aws s3 mb s3://<bucket_name>
-aws --endpoint-url https://s3.<region_in_lowercase>.perf.cloud.ovh.net --profile default s3 mb s3://<bucket_name>
+aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3 mb s3://<bucket_name>
 ```
 
 **Lister vos buckets**
