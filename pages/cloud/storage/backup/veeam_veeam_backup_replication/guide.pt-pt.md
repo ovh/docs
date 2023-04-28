@@ -3,10 +3,14 @@ title: 'Instalar o Veeam Backup & Replication'
 slug: veeam/veeam-backup-replication
 excerpt: 'Saiba como instalar um servidor Veeam Backup & Replication com Veeam Enterprise'
 section: Veeam
-updated: 2022-03-07
+updated: 2023-04-28
 ---
 
-**Última atualização: 08/03/2022**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 28/04/2023**
 
 ## Sumário
 
@@ -24,49 +28,54 @@ O Veeam Backup & Replication é um programa de proteção de dados, que oferece 
 
 ### Instalar o Veeam Backup & Replication
 
+> [!primary]
+> A versão mais recente do Veeam Backup & Replication (versão 12) não é ainda suportada pela OVHcloud, mas sê-lo-á em [breve](https://github.com/ovh/private-cloud-provider/projects/4).
+> Sugerimos que transfira a versão 11.0.1.1261 (P20230227). Encontre as versões anteriores do Veeam em [esta página](https://www.veeam.com/br/download-version.html?ad=downloads&tab=previous).
+>
+
 Descarregue o programa **Veeam Backup & Replication** a partir do [site da Veeam](https://www.veeam.com/downloads.html?ad=top-sub-menu){.external}. Se não possui contas, será necessário criar uma (esta é gratuita).
 
 O ficheiro apresenta-se sob a forma de uma imagem de disco no formato ISO. Depois de o ter transferido para o servidor, selecione o leitor CD da máquina e escolha a imagem.
 
 Agora já pode executar o instalador na máquina. Selecione a opção `Veeam Backup & Replication Install`{.action}.
 
-![](images/veeamBandR_inst_01.png){.thumbnail}
+![Veeam Backup & Replication](images/veeamBandR_inst_01.png){.thumbnail}
 
 Leia e aceite o contrato de licença e clique em `Next`{.action}.
 
-![](images/veeamBandR_inst_02.png){.thumbnail}
+![Veeam Backup & Replication](images/veeamBandR_inst_02.png){.thumbnail}
 
 Ignore a introdução do ficheiro de licença clicando em `Next`{.action}.
 
-![](images/veeamBandR_inst_03.png){.thumbnail}
+![Veeam Backup & Replication](images/veeamBandR_inst_03.png){.thumbnail}
 
 Na etapa de seleção dos componentes a instalar, não faça qualquer modificação. No entanto, se precisar, pode alterar o destino da instalação. A seguir, valide clicando em `Next`{.action}.
 
-![](images/veeamBandR_inst_04.png){.thumbnail}
+![Veeam Backup & Replication](images/veeamBandR_inst_04.png){.thumbnail}
 
 O instalador realizará uma análise dos requisitos. Se partir de uma instalação bruta de Windows, alguns componentes estarão em falta, mas não se preocupe: o instalador vai descarregar e instalar estes últimos de forma automática. A seguir, valide clicando em `Next`{.action}.
 
-![](images/veeamBandR_inst_05.png){.thumbnail}
+![Veeam Backup & Replication](images/veeamBandR_inst_05.png){.thumbnail}
 
 Aguarde enquanto os requisitos são instalados.
 
-![](images/veeamBandR_inst_06.png){.thumbnail}
+![Veeam Backup & Replication](images/veeamBandR_inst_06.png){.thumbnail}
 
 Após esta etapa, valide a instalação do **Veeam Backup & Replication** clicando em `Next`{.action}.
 
-![](images/veeamBandR_inst_07.png){.thumbnail}
+![Veeam Backup & Replication](images/veeamBandR_inst_07.png){.thumbnail}
 
 Na etapa de personalização da instalação, aceite a configuração predefinida selecionando a opção `Install`{.action}.
 
-![](images/veeamBandR_inst_08.png){.thumbnail}
+![Veeam Backup & Replication](images/veeamBandR_inst_08.png){.thumbnail}
 
 Aguarde que a instalação seja finalizada.
 
-![](images/veeamBandR_inst_09.png){.thumbnail}
+![Veeam Backup & Replication](images/veeamBandR_inst_09.png){.thumbnail}
 
 Quando esta for concluída, saia do instalador clicando em `Finish`{.action}.
 
-![](images/veeamBandR_inst_10.png){.thumbnail}
+![Veeam Backup & Replication](images/veeamBandR_inst_10.png){.thumbnail}
 
 Será redirecionado para o assistente de instalação. Basta fechar a janela.
 
@@ -92,27 +101,27 @@ Tenha em atenção que o nome da conta e a palavra-passe correspondem a um exemp
 
 Abra a consola Veeam e conecte-se.
 
-![](images/veeamBandR_use_12.png){.thumbnail}
+![Veeam Backup & Replication](images/veeamBandR_use_12.png){.thumbnail}
 
 Verifique se está em modo **Community Edition** no canto inferior direito.
 
-![](images/Veeamcommunity.png){.thumbnail}
+![Veeam Backup & Replication](images/Veeamcommunity.png){.thumbnail}
 
 No menu, clique em `Users and Roles`{.action}.
 
-![](images/veeamBandR_conf_2.png){.thumbnail}
+![Veeam Backup & Replication](images/veeamBandR_conf_2.png){.thumbnail}
 
 Na janela `Security`{.action}, selecione a opção `Add...`{.action}.
 
-![](images/veeamBandR_conf_3.png){.thumbnail}
+![Veeam Backup & Replication](images/veeamBandR_conf_3.png){.thumbnail}
 
 Na janela `Add User`{.action}, introduza a conta de serviço criada anteriormente. Selecione o papel **Veeam Backup Administrator** e valide clicando em `OK`{.action}.
 
-![](images/veeamBandR_conf_4.png){.thumbnail}
+![Veeam Backup & Replication](images/veeamBandR_conf_4.png){.thumbnail}
 
 Ao voltar à janela **Security**, pode verificar se a conta aparece.
 
-![](images/veeamBandR_conf_5.png){.thumbnail}
+![Veeam Backup & Replication](images/veeamBandR_conf_5.png){.thumbnail}
 
 #### Autorizações de execução e de ativação
 
@@ -154,7 +163,7 @@ O seu utilizador OVHVeeamEnterprise está agora acessível local e à distância
 
 Ligue-se ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda à secção Hosted Private Cloud {.ação} e selecione `Plataformas e serviços` {.ação}. De seguida, selecione o seu serviço **backupserverenterprise** e clique em `Ativar a licença`{.action} na secção `Atalho`.
 
-![](images/veeam001.png){.thumbnail}
+![Veeam Backup & Replication](images/veeam001.png){.thumbnail}
 
 Na nova janela, introduza as seguintes informações:
  * o endereço de IP público através do qual pode comunicar com o servidor **Veeam Backup & Replication**;
@@ -164,11 +173,11 @@ Na nova janela, introduza as seguintes informações:
 
 Em seguida, confirme clicando em `OK`{.action}.
 
-![](images/veeam03.png){.thumbnail}
+![Veeam Backup & Replication](images/veeam03.png){.thumbnail}
 
 Quando a ativação estiver concluída, poderá encontrar as informações principais na página do serviço.
 
-![](images/veeam02.png){.thumbnail}
+![Veeam Backup & Replication](images/veeam02.png){.thumbnail}
 
 ## Com a API da OVHcloud
 
@@ -204,15 +213,15 @@ Pode obter da seguinte forma o endereço de IP público utilizado pelo Veeam Ent
 
 Abra a consola Veeam e conecte-se.
 
-![](images/veeamBandR_use_12.png){.thumbnail}
+![Veeam Backup & Replication](images/veeamBandR_use_12.png){.thumbnail}
 
 No menu, clique em `License`{.action}.
 
-![](images/veeamBandR_lic_1.png){.thumbnail}
+![Veeam Backup & Replication](images/veeamBandR_lic_1.png){.thumbnail}
 
 Verifique que a informação apresentada corresponde à sua licença da OVHcloud.
 
-![](images/veeamBandR_lic_2.png){.thumbnail}
+![Veeam Backup & Replication](images/veeamBandR_lic_2.png){.thumbnail}
 
 ## Quer saber mais?
 

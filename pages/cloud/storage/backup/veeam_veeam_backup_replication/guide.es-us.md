@@ -3,10 +3,14 @@ title: 'Implementar Veeam Backup & Replication'
 slug: veeam/veeam-backup-replication
 excerpt: 'Cómo instalar un servidor Veeam Backup & Replication con Veeam Enterprise'
 section: 'Veeam Backup & Replication'
-updated: 2022-03-07
+updated: 2023-04-28
 ---
 
-**Última actualización: 08/03/2022**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
+
+**Última actualización: 28/04/2023**
 
 ## Objetivo
 
@@ -23,6 +27,11 @@ Veeam Backup & Replication es un programa que permite gestionar la seguridad de 
 ## Procedimiento
 
 ### Instalar Veeam Backup & Replication
+
+> [!primary]
+> La última versión de Veeam Backup & Replication (versión 12) todavía no es compatible con OVHcloud, pero sí lo será [próximamente](https://github.com/ovh/private-cloud-provider/projects/4).
+> Le invitamos a descargar la versión 11.0.1.1261 (P20230227). Consulte las versiones anteriores de Veeam en [esta página](https://www.veeam.com/es/download-version.html?ad=downloads&tab=previous).
+>
 
 Descargue la solución **Veeam Backup & Replication** desde la [web de Veeam](https://www.veeam.com/downloads.html?ad=top-sub-menu){.external}. Si todavía no tiene una cuenta, deberá crear una (es gratuita).
 
@@ -154,7 +163,7 @@ Ya puede acceder a su usuario de OVHVeeamEnterprise local y a distancia.
 
 Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda a la sección `Hosted Private Cloud`{.action} y seleccione `Plataformas y servicios`{.action}. Seleccione el servicio **backupserverenterprise** y haga clic en `Activar la licencia`{.action} en la sección `Atajos`.
 
-![](images/veeam001.png){.thumbnail}
+![Veeam Backup & Replication](images/veeam001.png){.thumbnail}
 
 En la nueva ventana, introduzca la siguiente información:
 
@@ -165,11 +174,11 @@ En la nueva ventana, introduzca la siguiente información:
 
 Valide haciendo clic en `OK`{.action}.
 
-![](images/veeam03.png){.thumbnail}
+![Veeam Backup & Replication](images/veeam03.png){.thumbnail}
 
 Una vez completada la activación, podrá encontrar la información principal en la página del servicio.
 
-![](images/veeam02.png){.thumbnail}
+![Veeam Backup & Replication](images/veeam02.png){.thumbnail}
 
 #### **Utilizando la API de OVHcloud**
 
