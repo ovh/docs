@@ -22,4 +22,4 @@ If you receive an email notifying you that one of your email addresses has been 
 
 ## Instructions
 
-Follow our guide [What to do if your account is blocked for spam?](https://docs.ovh.com/us/en/emails/blocked-for-spam/) in the "Hosted E-mail - MX Plan section".
+Follow our guide [What to do if your account is blocked for spam?](/pages/web/emails/locked_for_spam) in the "Hosted E-mail - MX Plan section".

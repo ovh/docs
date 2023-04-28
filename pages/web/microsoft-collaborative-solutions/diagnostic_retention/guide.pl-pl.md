@@ -29,4 +29,4 @@ Wykreśliłeś przez przypadek jeden lub kilka elementów (e-mail, kontakt, spot
 
 ## W praktyce
 
-Zapoznaj się z naszym przewodnikiem [Przywróć usunięte elementy konta e-mail](https://docs.ovh.com/pl/emails/blokada-za-spam/){.external} w sekcji "Konta e-mail na hostingu - MX Plan".
+Zapoznaj się z naszym przewodnikiem [Przywróć usunięte elementy konta e-mail](/pages/web/emails/diagnostic_retention){.external} w sekcji "Konta e-mail na hostingu - MX Plan".

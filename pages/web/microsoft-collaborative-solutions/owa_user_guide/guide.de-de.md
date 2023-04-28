@@ -21,4 +21,4 @@ Um über einen Webbrowser von überall aus auf einen Account zuzugreifen, stellt
 
 Unser [Webmail](https://www.ovh.de/mail/) ist die gemeinsame Loginseite zum jeweiligen Interface für alle aktiven E-Mail-Accounts von MX Plan, [Email Pro](https://www.ovhcloud.com/de/emails/email-pro/) und [Hosted Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/).
 
-Weitere Informationen zu den allgemeinen Funktionen von OWA finden Sie in [dieser Anleitung](https://docs.ovh.com/de/emails/verwendung-owa/).
+Weitere Informationen zu den allgemeinen Funktionen von OWA finden Sie in [dieser Anleitung](/pages/web/emails/email_owa).

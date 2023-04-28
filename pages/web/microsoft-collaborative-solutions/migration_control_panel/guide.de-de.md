@@ -29,4 +29,4 @@ OVHcloud bietet verschiedene E-Mail-Lösungen an: MX Plan (autonom oder in einem
 
 ## In der praktischen Anwendung
 
-[E-Mail-Accounts von MX Plan zu E-Mail Pro oder Exchange migrieren](https://docs.ovh.com/de/emails/migration-e-mail-adresse-auf-exchange/)
+[E-Mail-Accounts von MX Plan zu E-Mail Pro oder Exchange migrieren](/pages/web/emails/migration_control_panel)

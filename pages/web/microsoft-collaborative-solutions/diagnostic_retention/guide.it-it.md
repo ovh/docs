@@ -21,4 +21,4 @@ Hai eliminato per errore uno o più elementi (email, contatti, appuntamento con 
  
 ## Prerequisiti
 
-Consulta la nostra guida [Ripristina gli elementi eliminati dal tuo account email](https://docs.ovh.com/it/emails/email-retention/){.external} nella sezione "Hosted E-mail - MX Plan section ".
+Consulta la nostra guida [Ripristina gli elementi eliminati dal tuo account email](/pages/web/emails/diagnostic_retention){.external} nella sezione "Hosted E-mail - MX Plan section ".

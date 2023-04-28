@@ -26,4 +26,4 @@ Este guia descreve como usar a OMM para importar os vários elementos da sua con
 
 ## Instruções
 
-[Migrar uma conta Gmail para uma conta de e-mail OVHcloud através do OVH Mail Migrator](https://docs.ovh.com/pt/emails/migracao-de-gmail-atraves-de-ovh-mail-migrator/)
+[Migrar uma conta Gmail para uma conta de e-mail OVHcloud através do OVH Mail Migrator](/pages/web/emails/migrate_gmail_to_ovhcloud_by_omm)

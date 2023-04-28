@@ -16,5 +16,4 @@ Les comptes e-mail inclus dans votre [Hébergement Web OVHcloud](https://www.ovh
 Pour accéder à un compte de n'importe où via un navigateur web, OVHcloud fournit un client de messagerie en ligne appelé Outlook Web Application (OWA).
 <br>Notre [page de connexion au webmail](https://www.ovh.com/fr/mail/) est le point d'accès unique à l'interface OWA respective pour tous les comptes de messagerie actifs sur MX Plan, [Email Pro](https://www.ovhcloud.com/fr/emails/email-pro/) et [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/).
 
-Consultez [ce guide](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/) pour en savoir plus sur les fonctionnalités générales d'OWA.
-
+Consultez [ce guide](/pages/web/emails/email_owa/) pour en savoir plus sur les fonctionnalités générales d'OWA.

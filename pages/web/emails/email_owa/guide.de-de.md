@@ -1,6 +1,6 @@
 ---
 title: "E-Mail-Accounts über Outlook Web App (OWA) verwenden"
-slug: exchange_2016_verwendung_der_outlook_web_app
+slug: verwendung-owa
 excerpt: 'So verwenden Sie Ihre E-Mail-Adressen über OWA Webmail'
 section: 'E-Mail Clients'
 order: 1

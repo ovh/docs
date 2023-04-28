@@ -17,7 +17,7 @@ Si vous avez reçu un e-mail indiquant que l'une de vos adresses e-mail est bloq
 
 ## Prérequis
 
-- Disposer d'une [offre e-mail OVHcloud](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/){.external}.
+- Disposer d'une [offre e-mail OVHcloud](https://www.ovhcloud.com/fr-ca/emails/){.external}.
 - Être connecté à [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), partie `Web Cloud`{.action}.
 
 ## En pratique

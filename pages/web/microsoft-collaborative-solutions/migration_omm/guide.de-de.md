@@ -27,4 +27,4 @@ updated: 2022-02-14
 
 ## In der praktischen Anwendung
 
-[Einen Gmail-Account mit dem OVH Mail Migrator auf einen OVHcloud E-Mail-Account migrieren](https://docs.ovh.com/de/emails/migration-gmail-mit-ovh-mail-migrator/)
+[E-Mail-Accounts mit dem OVH Mail Migrator migrieren](/pages/web/emails/migration_omm)

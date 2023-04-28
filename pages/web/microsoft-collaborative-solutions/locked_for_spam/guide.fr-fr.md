@@ -22,4 +22,4 @@ Si vous avez reçu un e-mail indiquant que l'une de vos adresses e-mail est bloq
 
 ## En pratique
 
-Suivez notre guide [Que faire en cas de compte bloqué pour spam ?](https://docs.ovh.com/fr/emails/bloque-pour-spam/){.external} dans la rubrique « Solutions collaboratives Microsoft ».
+Suivez notre guide [Que faire en cas de compte bloqué pour spam ?](/pages/web/emails/locked_for_spam){.external} dans la rubrique « Solutions collaboratives Microsoft ».

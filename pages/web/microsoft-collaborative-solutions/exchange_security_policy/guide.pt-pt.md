@@ -9,4 +9,4 @@ updated: 2022-04-22
 
 **Última atualização: 12/06/2020**
 
-[Gerir a política de segurança de um serviço de e-mail](https://docs.ovh.com/pt/microsoft-collaborative-solutions/gerir-politica-de-seguranca-palavra-passe/)
+[Gerir a política de segurança de um serviço de e-mail](/pages/web/emails/security-policy)

@@ -29,4 +29,4 @@ Eliminou por erro um ou vários elementos (e-mail, contacto, calendário) e esva
 
 ## Instruções
 
-Siga o nosso guia [Restaurar os elementos eliminados da sua conta de e-mail](https://docs.ovh.com/pt/emails/email-retention/) na rubrica "Hosted email - MX Plan".
+Siga o nosso guia [Restaurar os elementos eliminados da sua conta de e-mail](/pages/web/emails/diagnostic_retention) na rubrica "Hosted email - MX Plan".

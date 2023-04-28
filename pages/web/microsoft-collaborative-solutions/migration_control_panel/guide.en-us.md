@@ -25,4 +25,4 @@ OVHcloud offers several email solutions: MX Plan (included in a Web Hosting plan
 
 ## Instructions
 
-[Migrating an MX Plan email address to an Exchange account](https://docs.ovh.com/us/en/emails/migration-email-address-to-exchange/)
+[Migrating an MX Plan email address to an Exchange account](/pages/web/emails/migration_control_panel)

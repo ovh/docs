@@ -1,6 +1,6 @@
 ---
 title: 'Utilizar una dirección de correo desde Outlook en la Web'
-slug: exchange_2016_guia_de_uso_de_outlook_web_app
+slug: uso-outlook-en-la-web
 excerpt: 'Cómo utilizar una dirección de correo electrónico desde el webmail Outlook en la Web'
 section: 'Primeros pasos'
 order: 04
@@ -11,7 +11,7 @@ updated: 2021-06-25
 
 ## Objetivo
 
-Con el servicio Hosted Exchange de OVHcloud puede enviar y recibir correo utilizando el dispositivo y el cliente de correo que usted desee. Para poder iniciar sesión en una cuenta desde cualquier lugar a través de un navegador, OVHcloud ofrece un cliente de correo online llamado Outlook Web Application (OWA). Nuestra [página de inicio de sesión de webmail](https://www.ovh.es/mail/) es el único punto de acceso al OWA correspondiente para todas las cuentas activas de correo en MX Plan, Email Pro y Hosted Exchange.
+Con las soluciones de correo de OVHcloud puede enviar y recibir correo utilizando el dispositivo y el cliente de correo que usted desee. Para poder iniciar sesión en una cuenta desde cualquier lugar a través de un navegador, OVHcloud ofrece un cliente de correo online llamado Outlook Web Application (OWA). Nuestra [página de inicio de sesión de webmail](https://www.ovh.es/mail/) es el único punto de acceso al OWA correspondiente para todas las cuentas activas de correo en MX Plan, Email Pro y Hosted Exchange.
 
 **En esta guía aprenderá a realizar las acciones más habituales con su dirección de correo en la interfaz de OWA.**
 

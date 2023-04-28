@@ -9,4 +9,4 @@ updated: 2022-04-22
 
 **Ultimo aggiornamento: 22/04/202**
 
-[Gestire la politica di sicurezza di un servizio di posta elettronica](https://docs.ovh.com/it/microsoft-collaborative-solutions/gestire-politica-di-sicurezza-password/)
+[Gestire la politica di sicurezza di un servizio di posta elettronica](/pages/web/emails/security-policy)

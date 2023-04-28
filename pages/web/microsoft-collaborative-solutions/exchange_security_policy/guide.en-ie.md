@@ -9,4 +9,4 @@ updated: 2022-04-22
 
 **Last updated 22nd April 2022**
 
-[Managing the security policy of an email service](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/manage-security-policy-password/)
+[Managing the security policy of an email service](/pages/web/emails/security-policy)

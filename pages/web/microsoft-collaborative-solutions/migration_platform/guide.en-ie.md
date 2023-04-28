@@ -33,4 +33,4 @@ You want to migrate your email addresses on an Exchange or Email Pro platform to
 
 ## Instructions
 
-[Migrating your email addresses from one OVHcloud email platform to another](https://docs.ovh.com/ie/en/emails/migration-email-platform/)
+[Migrating your email addresses from one OVHcloud email platform to another](/pages/web/emails/migration_platform)

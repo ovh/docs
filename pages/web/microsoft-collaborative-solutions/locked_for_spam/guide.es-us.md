@@ -22,4 +22,4 @@ Si recibe un mensaje de correo electrónico indicándole que una de sus direccio
 
 ## Procedimiento
 
-Siga nuestra guía [¿Qué hacer con una cuenta bloqueada debido a correo no deseado?](https://docs.ovh.com/es/emails/bloqueo-por-correo-no-deseado/) en la sección "Correo electrónico".
+Siga nuestra guía [¿Qué hacer con una cuenta bloqueada debido a correo no deseado?](/pages/web/emails/locked_for_spam) en la sección "Correo electrónico".

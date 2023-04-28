@@ -38,4 +38,4 @@ Per migrare i tuoi indirizzi email presenti su una piattaforma Exchange o Email 
 
 ## Procedura
 
-[Migrare i tuoi indirizzi email da una piattaforma OVHcloud verso un’altra](https://docs.ovh.com/it/emails/migration-email-platform/)
+[Migrare i tuoi indirizzi email da una piattaforma OVHcloud verso un’altra](/pages/web/emails/migration_platform)

@@ -28,4 +28,4 @@ OVHcloud propone diverse soluzioni email: MX Plan (venduto da solo o incluso in 
 
 ## Procedura
 
-[Migrare un indirizzo email MX Plan verso un account Email Pro o Exchange](https://docs.ovh.com/it/emails/migrazione-indirizzo-email-condiviso-verso-exchange/)
+[Migrare un indirizzo email MX Plan verso un account Email Pro o Exchange](/pages/web/emails/migration_control_panel)

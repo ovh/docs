@@ -1,6 +1,6 @@
 ---
 title: 'Utilizzare un account di posta da "Outlook on the web"'
-slug: exchange_2016_guida_allutilizzo_di_outlook_web_app
+slug: utilizzo-owa
 excerpt: 'Come gestire il tuo indirizzo email dalla Webmail "Outlook on the web"'
 section: 'Per iniziare'
 order: 04
@@ -11,7 +11,7 @@ updated: 2021-06-25
 
 ## Obiettivo
 
-Con OVHcloud Hosted Exchange puoi inviare e ricevere le tue email utilizzando il dispositivo e il client che preferisci. Per accedere a un account da qualsiasi luogo mediante un browser Web, OVHcloud fornisce il client di posta elettronica online Outlook Web Application (OWA). La nostra pagina di accesso alla [Webmail](https://www.ovh.it/mail) è l’unico punto di accesso alla relativa OWA per tutti gli account email attivi su MX Plan, Email Pro e Hosted Exchange.
+Con le soluzioni email OVHcloud puoi inviare e ricevere le tue email utilizzando il dispositivo e il client che preferisci. Per accedere a un account da qualsiasi luogo mediante un browser Web, OVHcloud fornisce il client di posta elettronica online Outlook Web Application (OWA). La nostra pagina di accesso alla [Webmail](https://www.ovh.it/mail) è l’unico punto di accesso alla relativa OWA per tutti gli account email attivi su MX Plan, Email Pro e Hosted Exchange.
 
 **Questa guida spiega come eseguire azioni di carattere generale con il tuo indirizzo email nell’interfaccia OWA.**
 

@@ -9,4 +9,4 @@ updated: 2022-04-22
 
 **Letzte Aktualisierung am 17.06.2020**
 
-[Sicherheitseinstellungen eines E-Mail-Dienstes verwalten](https://docs.ovh.com/de/microsoft-collaborative-solutions/passwort-sicherheitseinstellungen-verwalten/)
+[Sicherheitseinstellungen eines E-Mail-Dienstes verwalten](/pages/web/emails/security-policy)

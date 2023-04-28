@@ -29,4 +29,4 @@ Sie haben versehentlich ein oder mehrere Elemente (E-Mail, Kontakt, Kalender) ge
 
 ## In der praktischen Anwendung
 
-Folgen Sie unserer Anleitung [Die aus Ihrem E-Mail-Account gelöschten Elemente wiederherstellen](https://docs.ovh.com/de/emails/email-retention/){.external} im Bereich "Hosted E-Mail - MX Plan".
+Folgen Sie unserer Anleitung [Die aus Ihrem E-Mail-Account gelöschten Elemente wiederherstellen](/pages/web/emails/diagnostic_retention){.external} im Bereich "Hosted E-Mail - MX Plan".

@@ -29,4 +29,4 @@ OVHcloud ofrece varias soluciones de correo electrónico: MX Plan (incluido en u
 
 ## Procedimiento
 
-[Migrar una cuenta MX Plan a una cuenta Exchange](https://docs.ovh.com/us/es/emails/migrar-direccion-correo-en-alojamiento-correo-a-exchange/)
+[Migrar una cuenta MX Plan a una cuenta Exchange](/pages/web/emails/migration_control_panel)

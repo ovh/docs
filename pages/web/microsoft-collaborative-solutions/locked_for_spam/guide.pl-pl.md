@@ -22,4 +22,4 @@ Jeśli otrzymałeś e-mail z informacją, że jeden z Twoich adresów e-mail zos
 
 ## W praktyce
 
-Zapoznaj się z naszym przewodnikiem [Co zrobić, jeśli moje konto zostało zablokowane z powodu rozsyłania spamu?](https://docs.ovh.com/pl/emails/blokada-za-spam/){.external} w sekcji "Konta e-mail na hostingu - MX Plan".
+Zapoznaj się z naszym przewodnikiem [Co zrobić, jeśli moje konto zostało zablokowane z powodu rozsyłania spamu?](/pages/web/emails/locked_for_spam){.external} w sekcji "Konta e-mail na hostingu - MX Plan".

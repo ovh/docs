@@ -24,4 +24,4 @@ You have mistakenly deleted one or more items (email, contact, calendar appointm
 
 ## Instructions
 
-Follow our guide [Restoring deleted items from your email account](https://docs.ovh.com/us/en/emails/email-retention/) in the "Hosted E-mail - MX Plan section".
+Follow our guide [Restoring deleted items from your email account](/pages/web/emails/diagnostic_retention) in the "Hosted E-mail - MX Plan section".

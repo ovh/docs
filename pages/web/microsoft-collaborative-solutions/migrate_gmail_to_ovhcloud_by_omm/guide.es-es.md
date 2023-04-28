@@ -26,4 +26,4 @@ updated: 2020-03-09
 
 ## Procedimiento
 
-[Migrar una cuenta de Gmail a una cuenta de correo electrónico de OVHcloud a través de OVH Mail Migrator](https://docs.ovh.com/es/emails/migracion-de-gmail-mediante-ovh-mail-migrator/)
+[Migrar una cuenta de Gmail a una cuenta de correo electrónico de OVHcloud a través de OVH Mail Migrator](/pages/web/emails/migrate_gmail_to_ovhcloud_by_omm)

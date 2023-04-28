@@ -9,5 +9,5 @@ updated: 2022-04-22
 
 **Dernière mise à jour le 22/04/2022**
 
-Pour consulter ce guide, rendez-vous sur la page [Gérer la politique de sécurité d’un service e-mail](https://docs.ovh.com/fr/microsoft-collaborative-solutions/gerer-politique-de-securite-mot-de-passe/){.external} de nos guides [Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/){.external}.
+Pour consulter ce guide, rendez-vous sur la page [Gérer la politique de sécurité d’un service e-mail](/pages/web/emails/security-policy){.external}.
 

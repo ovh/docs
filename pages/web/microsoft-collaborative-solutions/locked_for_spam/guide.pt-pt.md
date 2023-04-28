@@ -22,4 +22,4 @@ Se tiver recebido um e-mail a indicar que um dos seus endereços de e-mail foi b
 
 ## Instruções
 
-Siga o nosso guia [O que fazer no caso de uma conta bloqueada por spam?](https://docs.ovh.com/pt/microsoft-collaborative-solutions/bloqueado-por-spam/) na rubrica "Hosted email - MX Plan".
+Siga o nosso guia [O que fazer no caso de uma conta bloqueada por spam?](/pages/web/emails/locked_for_spam) na rubrica "Hosted email - MX Plan".

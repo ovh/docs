@@ -22,4 +22,4 @@ Wenn Sie eine E-Mail erhalten haben, die darauf hinweist, dass eine Ihrer E-Mail
 
 ## In der praktischen Anwendung
 
-Folgen Sie unserer Anleitung [Was tun bei einem gesperrten Spam-Account?](https://docs.ovh.com/de/emails/blocked-wegen-spam/) im Bereich "Hosted E-mail - MX Plan".
+Folgen Sie unserer Anleitung [Was tun bei einem gesperrten Spam-Account?](/pages/web/emails/locked_for_spam) im Bereich "Hosted E-mail - MX Plan".

@@ -37,4 +37,4 @@ Chcesz przenieść Twoje konta e-mail obecne na platformę Exchange lub E-mail P
 
 ## W praktyce
 
-[Migracja kont e-mail z jednej platformy e-mail OVHcloud do innej](https://docs.ovh.com/pl/emails/migration-email-platform/)
+[Migracja kont e-mail z jednej platformy e-mail OVHcloud do innej](/pages/web/emails/migration_platform)

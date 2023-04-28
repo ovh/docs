@@ -37,4 +37,4 @@ Sie möchten Ihre E-Mail-Adressen von einer Exchange- oder E-Mail Pro-Plattform 
 
 ## In der praktischen Anwendung
 
-[Ihre E-Mail-Adressen von einer OVHcloud E-Mail-Plattform auf eine andere migrieren](https://docs.ovh.com/de/emails/migration-email-platform/)
+[Ihre E-Mail-Adressen von einer OVHcloud E-Mail-Plattform auf eine andere migrieren](/pages/web/emails/migration_platform)

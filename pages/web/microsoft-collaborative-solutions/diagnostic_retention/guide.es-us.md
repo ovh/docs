@@ -28,4 +28,4 @@ Ha eliminado por error uno o varios elementos (correo electrónico, contacto, ci
 
 ## Procedimiento
 
-Siga nuestra guía [Restaurar los elementos eliminados de su cuenta de correo](https://docs.ovh.com/us/es/emails/email-retention/) en la sección "Correo electrónico".
+Siga nuestra guía [Restaurar los elementos eliminados de su cuenta de correo](/pages/web/emails/diagnostic_retention) en la sección "Correo electrónico".

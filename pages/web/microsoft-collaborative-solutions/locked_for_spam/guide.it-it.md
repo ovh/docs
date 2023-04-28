@@ -22,4 +22,4 @@ Se hai ricevuto un’email che ti informa che uno dei tuoi indirizzi email è bl
 
 ## Procedura
 
-Consulta la nostra guida [Che fare in caso di account bloccato per invio di Spam ?](https://docs.ovh.com/it/emails/blocco-per-spam/){.external} nella sezione "Hosted E-mail - MX Plan section ".
+Consulta la nostra guida [Che fare in caso di account bloccato per invio di Spam ?](/pages/web/emails/locked_for_spam){.external} nella sezione "Hosted E-mail - MX Plan section ".

@@ -37,4 +37,4 @@ Si quiere migrar sus direcciones de correo electrónico a una plataforma Exchang
 
 ## Procedimiento
 
-[Migrar sus direcciones de correo de una plataforma de correo de OVHcloud a otra](https://docs.ovh.com/es/emails/migration-email-platform/)
+[Migrar sus direcciones de correo de una plataforma de correo de OVHcloud a otra](/pages/web/emails/migration_platform)

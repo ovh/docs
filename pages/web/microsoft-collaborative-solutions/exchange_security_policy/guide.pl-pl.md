@@ -9,4 +9,4 @@ updated: 2022-04-22
 
 **Ostatnia aktualizacja z dnia 09/06/2020**
 
-[Zarządzanie polityką bezpieczeństwa usługi e-mail](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-polityka-bezpieczenstwa-exchange/)
+[Zarządzanie polityką bezpieczeństwa usługi e-mail](/pages/web/emails/security-policy)

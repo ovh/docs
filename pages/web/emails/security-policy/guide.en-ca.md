@@ -17,7 +17,7 @@ With the Exchange service, you can set up professional email accounts, and use t
 
 ## Requirements
 
-- An [Exchange](https://www.ovhcloud.com/en-gb/emails/){.external} service
+- An [Exchange](https://www.ovhcloud.com/en-ca/emails/){.external} service
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions

@@ -33,4 +33,4 @@ You want to migrate your email addresses on an Exchange platform to another Exch
 
 ## Instructions
 
-[Migrating your email addresses from one OVHcloud email platform to another](https://docs.ovh.com/ca/en/emails/migration-email-platform/)
+[Migrating your email addresses from one OVHcloud email platform to another](/pages/web/emails/migration_platform)

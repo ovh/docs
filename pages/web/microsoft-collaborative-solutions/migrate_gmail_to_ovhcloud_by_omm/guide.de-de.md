@@ -26,4 +26,4 @@ In dieser Anleitung wird beschrieben, wie Sie mit OMM die verschiedenen Elemente
 
 ## In der praktischen Anwendung
 
-[Einen Gmail-Account mit dem OVH Mail Migrator auf einen OVHcloud E-Mail-Account migriere](https://docs.ovh.com/de/emails/migration-gmail-mit-ovh-mail-migrator/)
+[Einen Gmail-Account mit dem OVH Mail Migrator auf einen OVHcloud E-Mail-Account migriere](/pages/web/emails/migrate_gmail_to_ovhcloud_by_omm)

@@ -37,4 +37,4 @@ Deseja migrar os seus endereços de e-mail presentes numa plataforma Exchange ou
 
 ## Instruções
 
-[Migrar os endereços de e-mail de uma plataforma de e-mail OVHcloud para outra](https://docs.ovh.com/pt/emails/migration-email-platform/)
+[Migrar os endereços de e-mail de uma plataforma de e-mail OVHcloud para outra](/pages/web/emails/migration_platform)

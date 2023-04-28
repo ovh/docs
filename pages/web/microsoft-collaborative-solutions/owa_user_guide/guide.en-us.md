@@ -13,6 +13,4 @@ updated: 2021-06-25
 
 With the email accounts included in your [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/), you can send and receive your emails using a device and client of your choice. To access an account from anywhere via web browser, OVHcloud provides an online email client called Outlook Web Application (OWA). Our [webmail login page](https://www.ovh.com/world/mail/) is the single point of access to the respective OWA for all active email accounts on MX Plan and [Hosted Exchange](https://www.ovhcloud.com/en/emails/hosted-exchange/).
 
-Please refer to [this guide](https://docs.ovh.com/ca/en/emails/using-owa/) to learn about the general OWA functionalities.
-
-
+Please refer to [this guide](/pages/web/emails/email_owa) to learn about the general OWA functionalities.

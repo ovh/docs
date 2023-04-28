@@ -25,4 +25,4 @@ Vous avez supprimé par erreur un ou plusieurs éléments (e-mail, contact, rend
 
 ## En pratique
 
-Suivez notre guide [Restaurer les éléments supprimés de votre compte e-mail](https://docs.ovh.com/fr/emails/exchange-comment-retrouver-des-elements-supprimes/){.external} dans la rubrique « Solutions collaboratives Microsoft ».
+Suivez notre guide [Restaurer les éléments supprimés de votre compte e-mail](/pages/web/emails/diagnostic_retention){.external} dans la rubrique « Solutions collaboratives Microsoft ».

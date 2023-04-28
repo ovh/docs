@@ -25,4 +25,4 @@ OVHcloud propose plusieurs solutions e-mail : MX Plan (vendu seul ou compris dan
 
 ## En pratique
 
-[Migrer une adresse e-mail MX Plan vers un compte Exchange](https://docs.ovh.com/ca/fr/emails/migration-adresse-e-mail-mutualisee-vers-exchange/)
+[Migrer une adresse e-mail MX Plan vers un compte Exchange](/pages/web/emails/migration_control_panel)
