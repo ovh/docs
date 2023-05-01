@@ -2,10 +2,10 @@
 title: Configuring the Network Firewall
 slug: firewall-network
 section: Network Management
-updated: 2022-12-20
+updated: 2023-04-22
 ---
 
-**Last updated 20th December 2022**
+**Last updated 22nd April 2022**
 
 ## Objective
 
@@ -38,7 +38,7 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 
 > [!primary]
 >
-> The Network Firewall protects the IPs that are associated with a server. As a result, you need to configure each IP separately. You cannot configure the server as a whole.
+> The Network Firewall protects the IP associated with a server. As a result, if you have a server with multiple IP addresses, you need to configure each IP separately. You cannot configure the firewall on the server as a whole.
 > 
 
 In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. You can use the drop-down menu underneath **"My public IP addresses and associated services"** to filter your services according to category.
@@ -61,7 +61,7 @@ You can set up to **20 rules per IP**.
 
 > [!warning]
 >
-> The firewall is enabled automatically whenever a DDoS attack is launched, and cannot be disabled before the attack ends. This is why it is important to keep your firewall rules up-to-date.
+> If the Network firewall is enabled automatically whenever a DDoS attack is launched, and cannot be disabled before the attack ends. This is why it is important to keep your firewall rules up-to-date.
 > By default, you do not have any configured rules to start with, so all connections can be set up.
 > If you have any, we recommend checking them regularly, even if the firewall is disabled.
 > 
