@@ -1,13 +1,11 @@
 ---
 title: 'Activation du mode promiscuité sur une machine virtuelle'
-excerp: 'Decouvrer comment activer le mode promiscuité sur une machine virtuelle'
-slug: carp-management
+excerpt: 'Decouvrer comment activer le mode promiscuité sur une machine virtuelle'
 section: 'Fonctionnalités de VMware vSphere'
-order: 
-update: 2023-03-13
+update: 2023-05-01
 ---
 
-**Dernière mise à jour le xx/xx/xxxx**
+**Dernière mise à jour le 01/05/2023**
 
 ## Objectif
 
@@ -29,14 +27,14 @@ Il convient de différencier deux situations, suivant le Distributed Virtual Swi
 
 Les clients sont désormais autonomes pour effectuer cette action via notre API. Les appels API suivants peuvent être utilisés.
 
-- Activer Carp sur une machine virtuelle
+- Activer le mode promiscuité sur une machine virtuelle
     
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}/enableCarp
 >
 
-- Désactiver Carp sur une machine virtuelle
+- Désactiver le mode promiscuité sur une machine virtuelle
 
 > [!api]
 >

@@ -1,13 +1,11 @@
 ---
 title: 'Enabling promiscuous mode on a Virtual Machine'
 excerpt: 'Learn how to enable promiscuous mode on a Virtual machine'
-slug: carp-management
 section: 'VMware vSphere features'
-order: 
-updated: 2023-03-13
+updated: 2023-05-01
 ---
 
-**Last updated xx/xx/xxxx**
+**Last updated 1st May 2023**
 
 ## Objective
 
@@ -34,21 +32,21 @@ A distinction should be made between two situations, depending on the Distribute
 
 Customers are now autonomous to perform this action through our API. The following API calls can be used:
 
-- To enable Carp on a Virtual Machine:
+- To enable promiscuous mode on a Virtual Machine:
 
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}/enableCarp
 >
 
-- To disable Carp on a Virtual Machine:
+- To disable promiscuous mode on a Virtual Machine:
 
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}/disableCarp
 >
 
-- To verify that this has been activated or not on the Virtual Machine:
+- To verify that it has been activated or not on the Virtual Machine:
     
 > [!api]
 >
