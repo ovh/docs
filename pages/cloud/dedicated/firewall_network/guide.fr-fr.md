@@ -3,10 +3,10 @@ title: 'Configurer le Network Firewall'
 slug: firewall-network
 excerpt: 'Découvrez comment configurer votre Network Firewall'
 section: 'Réseau & IP'
-updated: 2022-12-20
+updated: 2023-05-01
 ---
 
-**Dernière mise à jour le 20/12/2022**
+**Dernière mise à jour le 01/05/2023**
 
 ## Objectif
 
@@ -122,22 +122,26 @@ Par exemple, un paquet pour le port 80/TCP sera capturé par la règle 2 et les 
 
 ### Mitigation
 
-Il existe trois modes de mitigation : automatique (détection permanente), permanente ou forcée.
+Notre solution Anti-DDOS (VAC) comprend trois modes de mitigation : automatique, permanente ou forcée.
 
-**Mitigation automatique (détection permanente)** : Avec ce mode, le trafic ne passe par le système de mitigation que s'il est détecté comme « inhabituel » par rapport au trafic normal habituellement reçu par le serveur.
+**Mitigation automatique (détection permanente)** : Par défaut, toutes les IPs OVHcloud sont soumis à la mitigation automatique.  Avec ce mode, le trafic ne passe par le système de mitigation que s'il est détecté comme « inhabituel » par rapport au trafic normal habituellement reçu par le serveur.
 
-**Mitigation permanente** : En activant la mitigation permanente, vous appliquez un premier niveau de filtrage constant à travers notre Shield hardware.<br>
+**Mitigation permanente** : Ce mode peut être activé ou désactivé depuis votre espace client. Avec la mitigation permanente (si activée), vous appliquez un premier niveau de filtrage constant à travers notre Shield hardware.<br>
 Tout le trafic passe en permanence par le système de mitigation avant d'atteindre le serveur. Nous recommandons ce mode pour les services faisant l'objet d'attaques fréquentes.<br>
-Veuillez noter que le Network Firewall ne doit pas être créé/activé pour activer la mitigation permanente sur votre IP.
+Veuillez noter que la mitigation permanente faisant partie de notre solution Anti-DDOS (VAC), vous pouvez l'activer sur votre IP sans activer le Network Firewall.
 
 Pour l'activer, cliquez sur le menu `Bare Metal Cloud`{.action} et ouvrez `IP`{.action}. Cliquez ensuite sur les `...`{.action} à droite de l'IPv4 concernée et sélectionnez `Mitigation : mode permanent`{.action}.
 
-**Mitigation forcée** : Ce mode est activé automatiquement dès qu'une attaque est détectée sur le serveur. Une fois activé, ce mode ne peut être désactivé. Afin de protéger notre infrastructure, la protection sera activée pendant toute la durée de l’attaque, jusqu’à ce qu’elle soit totalement mitigée.
+**Mitigation forcée** : Ce mode est activé automatiquement dès qu'une attaque est détectée sur le serveur. Une fois activé sur notre infrastructure anti-ddos, ce mode ne peut être désactivé. Afin de protéger notre infrastructure, la protection sera activée pendant toute la durée de l’attaque, jusqu’à ce qu’elle soit totalement mitigée.
 
 > [!warning]
 >
 > Si notre solution anti-DDoS limite une attaque, votre Network Firewall s'activera automatiquement, même si vous l'avez désactivé par défaut. Si vous souhaitez qu'aucune règle ne soit appliquée durant une attaque, vous devez supprimer toute règle préalablement créée.
 > 
+
+> Si la mitigation anti-DDoS (VAC) est activée, les règles configurées de votre Network Firewall seront éventuellement appliquées, même si vous avez désactivé le Firewall. Si vous souhaitez qu'aucune règle ne soit appliquée durant une attaque, vous devez supprimer toute règle préalablement créée.
+>
+> La mitigation étant intégrée à notre solution anti-DDOS (VAC), elle ne peut être désactivée sur un service. Tous les produits OVHcloud sont livrés avec la protection Anti-DDoS.
 
 ### Configurer le pare-feu Armor (Firewall Game)
 
