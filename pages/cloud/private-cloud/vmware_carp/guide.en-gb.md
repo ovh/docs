@@ -32,6 +32,18 @@ A distinction should be made between two situations, depending on the Distribute
 
 Customers are now autonomous to perform this action through our API. The following API calls can be used:
 
+First, retrieve the vmid and datacenterid. This information can also be obtained from vSphere.
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+>
+
+> [!api]
+>
+> @api {GET}  /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm
+>
+
 - To enable promiscuous mode on a Virtual Machine:
 
 > [!api]

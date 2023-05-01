@@ -27,6 +27,18 @@ Il convient de différencier deux situations, suivant le Distributed Virtual Swi
 
 Les clients sont désormais autonomes pour effectuer cette action via notre API. Les appels API suivants peuvent être utilisés.
 
+Récupérez tout d'abord le vmid et le datacenterid. Cette information peut également être obtenue depuis vSphere.
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+>
+
+> [!api]
+>
+> @api {GET}  /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm
+>
+
 - Activer le mode promiscuité sur une machine virtuelle
     
 > [!api]
