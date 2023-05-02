@@ -1,13 +1,13 @@
 ---
-title: CLI - Use & manage existing and new registries
-slug: cli/manage-registries
-excerpt: Learn how to use and manage your public and private registries
-section: Command Line Interface
-order: 208
-updated: 2023-04-26
+title: Use & manage existing and new image registries
+slug: use-manage-registries
+excerpt: Learn how to use and manage your public and private image registries
+section: General information
+order: 109
+updated: 2023-05-02
 ---
 
-**Last updated 26th April, 2023.**
+**Last updated 2nd May, 2023.**
 
 ## Objective
 
