@@ -62,12 +62,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 46.105.204.2
 ```
 
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.33
-```
-
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
 
 ```bash
@@ -103,12 +97,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 
 ```bash
 46.105.204.3
-```
-
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.34
 ```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
@@ -148,12 +136,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 46.105.204.5
 ```
 
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.35
-```
-
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
 
 ```bash
@@ -189,12 +171,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 
 ```bash
 46.105.204.6
-```
-
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.36
 ```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
@@ -234,12 +210,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 46.105.204.7
 ```
 
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.37
-```
-
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
 
 ```bash
@@ -275,12 +245,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 
 ```bash
 46.105.204.10
-```
-
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.38
 ```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
@@ -320,12 +284,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 46.105.204.11
 ```
 
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.39
-```
-
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
 
 ```bash
@@ -361,12 +319,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 
 ```bash
 46.105.204.12
-```
-
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.40
 ```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
@@ -406,12 +358,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 46.105.204.13
 ```
 
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.41
-```
-
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
 
 ```bash
@@ -447,12 +393,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 
 ```bash
 46.105.204.14
-```
-
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.42
 ```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
@@ -492,12 +432,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 46.105.204.15
 ```
 
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.43
-```
-
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
 
 ```bash
@@ -533,12 +467,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 
 ```bash
 46.105.204.17
-```
-
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.44
 ```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :

@@ -7,7 +7,7 @@ order: 01
 updated: 2023-04-14
 ---
 
-**Letzte Aktualisierung am 08.01.2021**
+**Letzte Aktualisierung am 14.04.2023**
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
@@ -37,7 +37,6 @@ Um herauszufinden, auf welchem Webhosting Cluster Ihr Dienst liegt, loggen Sie s
 
 #### IP-Adressen der Cluster nach Land
 
-
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
 |Frankreich|FR|213.186.33.2|2001:41d0:1:1b00:213:186:33:2|
@@ -65,23 +64,15 @@ Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webh
 46.105.204.2
 ```
 
-Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-46.105.174.33
-```
-
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
 
 ```bash
 51.68.11.191
 ```
 
-
 ## Cluster 003
 
 #### IP-Adressen der Cluster nach Land
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -110,23 +101,15 @@ Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webh
 46.105.204.3
 ```
 
-Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-46.105.174.34
-```
-
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
 
 ```bash
 51.68.11.195
 ```
 
-
 ## Cluster 005
 
 #### IP-Adressen der Cluster nach Land
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -155,23 +138,15 @@ Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webh
 46.105.204.5
 ```
 
-Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-46.105.174.35
-```
-
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
 
 ```bash
 51.68.11.199
 ```
 
-
 ## Cluster 006
 
 #### IP-Adressen der Cluster nach Land
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -200,12 +175,6 @@ Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webh
 46.105.204.6
 ```
 
-Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-46.105.174.36
-```
-
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -215,7 +184,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 ## Cluster 007
 
 #### IP-Adressen der Cluster nach Land
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -244,23 +212,15 @@ Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webh
 46.105.204.7
 ```
 
-Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-46.105.174.37
-```
-
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
 
 ```bash
 51.68.11.207
 ```
 
-
 ## Cluster 010
 
 #### IP-Adressen der Cluster nach Land
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -289,23 +249,15 @@ Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webh
 46.105.204.10
 ```
 
-Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-46.105.174.38
-```
-
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
 
 ```bash
 51.68.11.211
 ```
 
-
 ## Cluster 011
 
 #### IP-Adressen der Cluster nach Land
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -334,23 +286,15 @@ Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webh
 46.105.204.11
 ```
 
-Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-46.105.174.39
-```
-
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
 
 ```bash
 51.68.11.215
 ```
 
-
 ## Cluster 012
 
 #### IP-Adressen der Cluster nach Land
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -379,18 +323,11 @@ Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webh
 46.105.204.12
 ```
 
-Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-46.105.174.40
-```
-
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
 
 ```bash
 51.68.11.219
 ```
-
 
 ## Cluster 013
 
@@ -435,11 +372,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 51.68.11.223
 ```
 
-
 ## Cluster 014
 
 #### IP-Adressen der Cluster nach Land
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -468,23 +403,15 @@ Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webh
 46.105.204.14
 ```
 
-Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-46.105.174.42
-```
-
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
 
 ```bash
 51.68.11.227
 ```
 
-
 ## Cluster 015
 
 #### IP-Adressen der Cluster nach Land
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -513,23 +440,15 @@ Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webh
 46.105.204.15
 ```
 
-Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-46.105.174.43
-```
-
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
 
 ```bash
 51.68.11.231
 ```
 
-
 ## Cluster 017
 
 #### IP-Adressen der Cluster nach Land
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -558,23 +477,15 @@ Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webh
 46.105.204.17
 ```
 
-Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-46.105.174.44
-```
-
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
 
 ```bash
 51.68.11.239
 ```
 
-
 ## Cluster 020
 
 #### IP-Adressen der Cluster nach Land
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -609,7 +520,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 ```bash
 91.134.248.253
 ```
-
 
 ## Cluster 021
 
