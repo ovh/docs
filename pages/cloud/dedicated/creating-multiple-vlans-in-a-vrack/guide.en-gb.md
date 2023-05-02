@@ -19,9 +19,9 @@ The standard [vRack configuration](https://docs.ovh.com/gb/en/dedicated/configur
 * An active [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service in your account
 * Two or more [vRack-compatible servers](https://www.ovh.co.uk/dedicated_servers/){.external}
 * Administrative (root) access to the server via SSH
-* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 * Your chosen private IP address range
-* You must have completed the [vRack configuration guide](https://docs.ovh.com/gb/en/dedicated/configuring-vrack-on-dedicated-servers/){.external}.
+* You must have completed the [vRack configuration guide](https://docs.ovh.com/gb/en/dedicated/configuring-vrack-on-dedicated-servers/){.external}
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-gb/about/).
@@ -182,7 +182,7 @@ Next, right-click the vLAN interface, and click `Properties`{.action}:
 
 ![Windows vLAN](images/vrack2-windows-08.png){.thumbnail}
 
-Then double-click `Internet Protocol Version 4 (TCP/IP/IPv4)`{.action}:
+Then double-click `Internet Protocol Version 4 (TCP/IPv4)`{.action}:
 
 ![Windows vLAN](images/vrack2-windows-09.png){.thumbnail}
 

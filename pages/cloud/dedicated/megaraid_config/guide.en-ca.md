@@ -121,4 +121,4 @@ MegaCli -LDInfo -Lall -a0 | grep -i size
 
 [Hardware RAID](../raid-hard/)
 
-Join our community of users on <https://community.ovh.com/en/>
+Join our community of users on <https://community.ovh.com/en/>.

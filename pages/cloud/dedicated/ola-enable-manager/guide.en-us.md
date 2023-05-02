@@ -48,7 +48,7 @@ This may take a few minutes. Once it is complete, the next step is to configure 
 - [How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9](../ola-debian9/).
 - [How to Configure Your NIC for OVHcloud Link Aggregation in CentOS 7](../ola-centos7/).
 - [How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/).
-- [How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](https://docs.ovh.com/us/en/dedicated/ola-sles15/)
+- [How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](https://docs.ovh.com/us/en/dedicated/ola-sles15/).
 
 ### Restoring OLA to default values
 
@@ -66,6 +66,6 @@ This may take a few minutes.
 
 [How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/)
 
-[How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](https://docs.ovh.com/us/en/dedicated/ola-sles15/).
+[How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](https://docs.ovh.com/us/en/dedicated/ola-sles15/)
 
 Join our community of users on <https://community.ovh.com/en/>.

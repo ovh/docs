@@ -124,7 +124,7 @@ In our example, we will create a RAID-5 volume on our three disks, with 200GB fo
 
 > [!primary]
 >
-> It is advisable to create a volume with a little more space than the minimum size required. This is to ensure that the the system has room for updates and installations.
+> It is advisable to create a volume with a little more space than the minimum size required. This is to ensure that the system has room for updates and installations.
 > 
 
 ```sh

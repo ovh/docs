@@ -61,7 +61,7 @@ Once you are in the `Dedicated Servers`{.action} menu, click on the server of yo
 - IPV4: Click on the `...`{.action} next to this option to manage your IP.
 - Reverse: Click on the `...`{.action} next to this section to enter/modify your reverse DNS.
 
-**Secondary DNS**: Configure your secondary DNS here. For more information, consult the following [guide](https://docs.ovh.com/us/en/dedicated/secondary-dns/)
+**Secondary DNS**: Configure your secondary DNS here. For more information, consult the following [guide](https://docs.ovh.com/us/en/dedicated/secondary-dns/).
 
 **Backup Storage** (Only available on OVHcloud servers and So you Start servers including those in the Eco line): Order and configure your backup storage here. For more information, consult [this guide](https://docs.ovh.com/us/en/dedicated/using-backup-storage/).
 

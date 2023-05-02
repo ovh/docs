@@ -20,13 +20,13 @@ updated: 2022-01-06
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en/bare-metal/){.external} with Windows Server installed.
+- A [dedicated server](https://www.ovhcloud.com/en/bare-metal/){.external} with Windows Server installed
 - The Hyper-V role installed
 - A Windows License provided by OVHcloud
 
 ## Instructions
 
-This tutorial assumes that you have already installed the Hyper-V role and have access to the Hyper-V Manager. If you have not done this, you can refer to Microsoft's guide to installing the Hyper-V role [here](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server){.external}
+This tutorial assumes that you have already installed the Hyper-V role and have access to the Hyper-V Manager. If you have not done this, you can refer to Microsoft's guide to installing the Hyper-V role [here](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server){.external}.
 
 
 ### Creating a NAT Network

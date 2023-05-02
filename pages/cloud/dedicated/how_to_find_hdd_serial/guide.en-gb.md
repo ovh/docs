@@ -18,7 +18,7 @@ To minimise the chance of human error during hard disk replacements, we ask our 
 
 - a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}
 - administrative (root) access to the server via SSH
-- the sas2ircu utility installed on your Windows server (available via the [broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external} search engine).
+- the sas2ircu utility installed on your Windows server (available via the [broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external} search engine)
 
 ## Instructions
 
@@ -176,4 +176,4 @@ The sg device number will be displayed as follows: /dev/sg0, /dev/sg1) etc.
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>
+Join our community of users on <https://community.ovh.com/en/>.

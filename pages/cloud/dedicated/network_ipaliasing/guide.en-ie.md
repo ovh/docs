@@ -85,7 +85,7 @@ post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast AD
 pre-down /sbin/ifconfig eth0:0 down
 ```
 
-If you have two Additional IPs to configure, the /etc/network/interfaces.d/50-cloud-init file should look like this:
+If you have two Additional IPs to configure, the `/etc/network/interfaces.d/50-cloud-init` file should look like this:
 
 ```bash
 auto eth0
@@ -163,7 +163,7 @@ post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast AD
 pre-down /sbin/ifconfig eth0:0 down
 ```
 
-If you have two Additional IPs to configure, the /etc/network/interfaces file should look like this:
+If you have two Additional IPs to configure, the `/etc/network/interfaces` file should look like this:
 
 ```bash
 auto eth0
@@ -312,7 +312,7 @@ systemctl restart NetworkManager
 
 ### Ubuntu 17.10 and following
 
-Each Additional IP address will need its own line in the configuration file. The configuration file is called "50-cloud-init.yaml" and is located in /etc/netplan.
+Each Additional IP address will need its own line in the configuration file. The configuration file is called "50-cloud-init.yaml" and is located in `/etc/netplan`.
 
 
 #### Step 1: Determine the interface

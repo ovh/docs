@@ -259,7 +259,7 @@ This system enables you to follow up on feedback provided by some internet servi
 
 Some authentication services allow you to protect your reputation:
 
-- **Sender-ID**: An email authentication technology developed by Microsoft which validates the authenticity of your domain name by verifying the IP address of the sender. This technology is based on the IETF standard: [RFC4406](https://datatracker.ietf.org/doc/rfc4406/)
+- **Sender-ID**: An email authentication technology developed by Microsoft which validates the authenticity of your domain name by verifying the IP address of the sender. This technology is based on the IETF standard: [RFC4406](https://datatracker.ietf.org/doc/rfc4406/).
 - **SPF**: Sender Policy Framework is a standard for verifying the domain of the sender. It is based on [RFC4408](https://datatracker.ietf.org/doc/rfc4408/) and consists of adding an SPF or TXT field to the domain DNS, which contains the list of IPs authorised to send emails from this domain.
 - **Reverse DNS**: Reverse enables your IP to be "translated” into your domain. That allows the domain associated with the IP address to be found.
 - **DKIM**: This standard is described in [RFC4871](https://datatracker.ietf.org/doc/html/rfc4871). AOL and Google (Gmail) work on this basis. 

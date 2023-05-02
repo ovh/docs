@@ -74,7 +74,7 @@ Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=got
 
 Una vez seleccionado el sistema operativo, marque la casilla `Personalizar la configuración de las particiones`{.action} y haga clic en `Siguiente`{.action}.
 
-![Personalizar la configuración de las particiones](images/partition_customization.png){.thumbnail}
+![Personalizar la configuración de las particiones](images/custompartition.png){.thumbnail}
 
 Aquí podrá cambiar el tipo de RAID de su **/home** (1) y, si lo desea, aumentar el tamaño de la partición (2).
 
