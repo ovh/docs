@@ -4,10 +4,8 @@ excerpt: 'Découvrez comment activer et utiliser l’option snapshot depuis l’
 slug: snapshot-vps
 section: Sauvegarde
 order: 1
-updated: 2023-03-20
+updated: 2023-04-28
 ---
-
-**Dernière mise à jour le 20/03/2023**
 
 ## Objectif
 
@@ -61,6 +59,11 @@ Si vous êtes sûr de vouloir restaurer votre VPS à l'état du snapshot, clique
 Le snapshot en cours peut être récupéré via un lien de téléchargement. Cliquez sur le bouton `...`{.action} à côté de l'option `Snapshot` et choisissez `Télécharger le Snapshot`{.action} dans le menu contextuel.
 
 ![snapshotvps](images/snapshot_vps03.png){.thumbnail}
+
+> [!primary]
+>
+> Si votre VPS est issu d'une ancienne gamme, il est possible que vous receviez un message d'erreur car l'option n'est pas disponible sur les anciens VPS. Votre VPS est issu d'une ancienne gamme si son modèle de nommage est similaire à : *vpsXXXX.ovh.net* (où *X* représente un nombre). Vous pouvez vérifier cette référence de serveur dans l'onglet `Accueil`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+>
 
 Dans la fenêtre qui s'affiche, cliquez sur `Générer le lien de téléchargement`{.action}.
 

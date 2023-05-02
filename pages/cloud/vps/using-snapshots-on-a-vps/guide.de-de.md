@@ -4,14 +4,12 @@ excerpt: 'Erfahren Sie hier, wie Sie im OVHcloud Kundencenter die Snapshot-Optio
 slug: verwendung-snapshots-vps
 section: 'Backup Optionen'
 order: 1
-updated: 2023-03-20
+updated: 2023-04-28
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
-
-**Letzte Aktualisierung am 20.03.2023**
 
 
 ## Ziel
@@ -65,6 +63,11 @@ Wenn Sie sicher sind, dass Sie Ihren VPS auf den Stand des Snapshots zurücksetz
 Der aktuelle Snapshot kann über einen Download-Link abgerufen werden. Klicken Sie auf `...`{.action} neben der Option "Snapshot" und wählen Sie `Snapshot herunterladen`{.action} aus dem Kontextmenü.
 
 ![snapshotvps](images/snapshot_vps03.png){.thumbnail}
+
+> [!primary]
+>
+> Wenn Ihr VPS aus einer älteren Produktreihe stammt, erhalten Sie möglicherweise eine Fehlermeldung, da die Option für einen Legacy VPS nicht verfügbar ist. Diese älteren Dienste erkennen Sie am folgenden Namensschema: *vpsXXXX.ovh.net* (wobei *X* für eine Zahl steht). Sie können diese Server-Referenz im Tab `Start`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) überprüfen.
+>
 
 Klicken Sie im Popup-Fenster auf `Download-Link erstellen`{.action}. 
 

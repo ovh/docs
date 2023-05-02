@@ -4,10 +4,8 @@ excerpt: 'Find out how to how enable and use the Snapshot option in the OVHcloud
 slug: using-snapshots-on-a-vps
 section: 'Backup options'
 order: 1
-updated: 2023-03-20
+updated: 2023-04-28
 ---
-
-**Last updated 20th March 2023**
 
 ## Objective
 
@@ -59,6 +57,11 @@ If you are sure that you would like to reset your VPS to the status of the snaps
 The current snapshot can be retrieved via download link. Click on `...`{.action} next to the option "Snapshot" and choose `Download the snapshot`{.action} from the context menu.
 
 ![snapshotvps](images/snapshot_vps03.png){.thumbnail}
+
+> [!primary]
+>
+> If your VPS is of an older product range, you might receive an error message because the option is not available for a legacy VPS. These older services have the following naming scheme: *vpsXXXX.ovh.net* (in which *X* stands for a number). You can verify this server reference on the `Home`{.action} tab in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+>
 
 In the popup window, click on `Generate download link`{.action}. 
 

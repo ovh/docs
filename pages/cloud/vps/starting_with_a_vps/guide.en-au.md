@@ -7,7 +7,6 @@ order: 1
 updated: 2022-03-25
 ---
 
-**Last updated 25th March 2022**
 
 ## Objective
 

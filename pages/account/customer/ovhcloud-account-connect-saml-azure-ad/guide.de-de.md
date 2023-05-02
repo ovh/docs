@@ -271,12 +271,12 @@ Sie sind nun mit derselben Kundenkennung eingeloggt, jedoch über Azure AD SSO u
 
 ## Weiterführende Informationen
 
-[OVHcloud Kunden-Account erstellen](https://docs.ovh.com/de/customer/ovhcloud-account-erstellen/)
+[OVHcloud Kunden-Account erstellen](/pages/account/customer/ovhcloud-account-creation)
 
-[OVHcloud Kunden-Account absichern und persönliche Informationen verwalten](https://docs.ovh.com/de/customer/alles_uber_ihre_ovh_kundenkennung/)
+[OVHcloud Kunden-Account absichern und persönliche Informationen verwalten](/pages/account/customer/all_about_username)
 
-[Das Passwort Ihres Kunden-Accounts anlegen und verwalten ](https://docs.ovh.com/de/customer/Passwort-verwalten/)
+[Das Passwort Ihres Kunden-Accounts anlegen und verwalten](/pages/account/customer/manage-ovh-password)
 
-[Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/)
+[Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
