@@ -38,13 +38,13 @@ Escolha cuidadosamente porque cada uma tem as suas vantagens e desvantagens.
 
 Em primeiro lugar, deve verificar se o QEMU Guest Agent está a ser executado no seu servidor. Para o verificar, utilize o seguinte comando:
 
-```
+```bash
 systemctl status qemu-guest
 ```
 
 O estado do serviço é indicado junto de "Ative:". Se estiver ativo ou em execução, o serviço deverá ser interrompido e desativado, de modo a evitar que o mesmo volte a ser ativado no futuro. Para isso, utilize os seguintes comandos:
 
-```
+```bash
 systemctl stop qemu-guest-agent
 systemctl disable qemu-guest-agent;
 ```

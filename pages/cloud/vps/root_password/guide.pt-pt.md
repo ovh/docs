@@ -206,6 +206,6 @@ Se tiver problemas de arranque depois de alterar a sua palavra-passe e iniciar a
 
 [Consulte o manual Introdução ao SSH.](../../dedicated/ssh-introducao/)
 
-[Como proteger um VPS](../como-proteger-vps/)
+[Como proteger um VPS.](../como-proteger-vps/)
 
 Junte-se à nossa comunidade de utilizadores <https://community.ovh.com/en/>.

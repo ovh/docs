@@ -22,7 +22,7 @@ Com os VPS OVHcloud, tem a possibilidade de adicionar um espaço de armazenament
 ## Requisitos
 
 - Ter um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 - Ter acesso administrativo via SSH ou RDP ao VPS
 
 ## Instruções
@@ -53,7 +53,7 @@ Os exemplos abaixo pressupõem que está ligado enquanto utilizador com taxas el
 
 Pode utilizar o seguinte comando para verificar o nome do novo periférico:
 
-```
+```bash
 $ lsblk
 
 sda       8:0    0   80G  0 disk
@@ -67,7 +67,7 @@ Neste exemplo, o disco adicional é chamado `sdb`.
 
 Execute o `fdisk` para criar uma partição no disco. Quando for convidado, insira `n` para uma nova partição e aceite os valores predefinidos seguintes, apoiando-se em "Enter". Por fim, utilize o comando `w` para escrever as modificações no disco.
 
-```
+```bash
 $ sudo fdisk /dev/sdb
 
 Welcome to fdisk (util-linux 2.34).
@@ -75,7 +75,7 @@ Changes will remain in memory only, until you decide to write them.
 Be careful before using the write command.
 ```
 
-```
+```bash
 Command (m for help): n
 
 Partition type
@@ -85,7 +85,7 @@ Partition type
 Select (default p):
 ```
 
-```
+```bash
 Partition number (1-4, default 1): 
 
 First sector (2048-104857599, default 2048):
@@ -94,7 +94,7 @@ Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-104857599, default 104857599
 Created a new partition 1 of type 'Linux' and of size 50 GiB.
 ```
 
-```
+```bash
 Command (m for help): w
 
 The partition table has been altered.
@@ -104,7 +104,7 @@ Syncing disks.
 
 Agora que a partição `sdb1` foi criada, pode formá-la com ext4:
 
-```
+```bash
 $ sudo mkfs.ext4 /dev/sdb1
 
 Creating filesystem with 13106944 4k blocks and 3276800 inodes
@@ -121,14 +121,14 @@ Writing superblocks and filesystem accounting information: done
 
 A última etapa consiste em montar o disco:
 
-```
+```bash
 $ sudo mkdir /mnt/disk
 $ sudo mount /dev/sdb1 /mnt/disk
 ```
 
 Pode ver na última linha que o disco adicional está agora montado a `/mnt/disk`:
 
-```
+```bash
 $ df -h
 Filesystem      Size  Used Avail Use% Mounted on
 udev            1.9G     0  1.9G   0% /dev
@@ -156,7 +156,7 @@ This previous step is not persistent because the disk will be detached if the VP
 
 Em primeiro lugar, obtenha a UUID (ID do bloco) do periférico:
 
-```
+```bash
 $ sudo blkid
 /dev/sda1: LABEL="cloudimg-rootfs" UUID="e616a2cd-3c02-4c79-9823-9b1bb5c13b26" TYPE="ext4" PARTUUID="a44089a3-f407-41e6-b7a5-1ed7672cef20"
 /dev/sda15: LABEL_FATBOOT="UEFI" LABEL="UEFI" UUID="4411-1580" TYPE="vfat" PARTUUID="e1746ac7-80c1-4859-9b4d-fa6ce11b3ae9"
@@ -172,13 +172,13 @@ $ sudo blkid
 
 Abra `/etc/fstab` com um editor de texto:
 
-```
+```bash
 $ sudo nano /etc/fstab
 ```
 
 Adicione a linha abaixo ao ficheiro e substitua a UUID pela sua:
 
-```
+```bash
 UUID=87571b68-30e1-498b-a64c-49ec5cd4f31c /mnt/disk ext4 nofail 0 0
 ```
 
@@ -224,19 +224,19 @@ Introduza `cmd` e clique em `OK`{.action} para abrir a aplicação de linha de c
 
 No convite à encomenda, abra o DISKPARTIDO:
 
-```
+```bash
 C:\> diskpart
 ```
 
 Utilize a seguinte série de comandos DISKPart para configurar o disco online:
 
-```
+```bash
 DISKPARTIDA> san
 
 SAN Policy: Offline Shared
 ```
 
-```
+```bash
 DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system.
@@ -250,19 +250,19 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```
+```bash
 DISKPARTIDO> select disk 1
 
 Disk 1 is now the selected disk.
 ```
 
-```
+```bash
 DISKPart> atributos disk clear readonly
 
 Disk atributos cleared successfully.
 ```
 
-```
+```bash
 DISKPART> attributes disk
 
 Current Read-only State : No
@@ -274,7 +274,7 @@ Crashdump Disk : No
 Clustered Disk : No
 ```
 
-```
+```bash
 DISKPARTIDO> online disk
 
 DiskPart successfully onlined the selected disk.

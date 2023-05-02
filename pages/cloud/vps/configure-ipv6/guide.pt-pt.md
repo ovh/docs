@@ -264,7 +264,7 @@ cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scrip
 
 De seguida, altere o ficheiro `ifcfg-eth0` adicionando a configuração IPv6 do seu servidor. Substitua os elementos genéricos (ou seja, *YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) pelos seus valores personalizados.
 
-```
+```bash
 IPV6INIT=yes
 IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
@@ -280,7 +280,7 @@ IPV6_DEFAULTGW=IPV6_GATEWAY
 
 - Altere o ficheiro e adicione as linhas abaixo. Substitua os elementos genéricos (*IPV6_GATEWAY* e **eth0**, se necessário) pelos valores personalizados.
 
-```
+```bash
 IPV6_GATEWAY dev eth0
 default via IPV6_GATEWAY
 ```
@@ -349,7 +349,7 @@ ping6 proof.ovh.net
 
 - **Para um sistema Windows**, utilize o seguinte comando:
 
-```
+```powershell
 ipconfig
 
 Windows IP Configuration
@@ -367,7 +367,7 @@ Ethernet adapter Ethernet:
 
 Para testar a ligação, pode utilizar o seguinte comando:
 
-```
+```powershell
 ping -6 proof.ovh.net
 ```
 

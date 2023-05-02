@@ -59,7 +59,7 @@ sudo apt update
 Utilize o seguinte comando para garantir que todos os pacotes necessários estão instalados:
 
 ```sh
-sudo apt install screen nano wget git
+~$ sudo apt install screen nano wget git
 ```
 
 Instale o pacote Java:
@@ -81,7 +81,7 @@ O utilizador foi criado. Tenha em conta que não foi especificada nenhuma palavr
 Migre para o novo utilizador:
 
 ```sh
-sudo su - minecraft
+~$ sudo su - minecraft
 ```
 
 > [!primary]

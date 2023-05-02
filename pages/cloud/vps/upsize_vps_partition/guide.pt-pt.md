@@ -26,7 +26,7 @@ Por vezes, depois de efetuar o upgrade do seu VPS, é necessário redimensionar 
 ## Requisitos
 
 - Ter acesso de administrador ao VPS (Windows).
-- Ter reiniciado o servidor em [Modo Rescue](https://docs.ovh.com/pt/vps/rescue/)(Linux).
+- Ter reiniciado o servidor em [Modo Rescue](https://docs.ovh.com/pt/vps/rescue/) (Linux).
 
 ## Instruções
 
