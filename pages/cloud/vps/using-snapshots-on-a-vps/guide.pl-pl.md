@@ -4,14 +4,12 @@ excerpt: 'Dowiedz się, jak włączyć opcję migawki w Panelu klienta OVHcloud 
 slug: uzywanie-migawki-vps
 section: 'Opcje kopii zapasowych'
 order: 1
-updated: 2023-03-20
+updated: 2023-04-28
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
-
-**Ostatnia aktualizacja z dnia: 20-03-2023**
 
 
 ## Wprowadzenie
@@ -65,6 +63,11 @@ Jeśli na pewno chcesz zresetować status prywatnego serwera wirtualnego do stan
 Trwa zapisywanie snapshota można pobrać za pomocą linka do pobrania. Kliknij przycisk `...`{.action} obok opcji `Snapshot` i wybierz opcję `Pobierz Snapshot`{.action} z menu kontekstowego.
 
 ![snapshotvps](images/snapshot_vps03.png){.thumbnail}
+
+> [!primary]
+>
+> Jeśli Twój VPS pochodzi ze starej gamy, możliwe, że otrzymasz komunikat o błędzie, ponieważ opcja nie jest dostępna na starych serwerach VPS. Twój VPS pochodzi z poprzedniej gamy serwerów, jeśli jego model nazewnictwa jest podobny do: *vpsXXXX.ovh.net* (gdzie *X* oznacza liczbę). Możesz sprawdzić ten adres IP serwera w zakładce `Strona główna`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+>
 
 W oknie, które się wyświetli kliknij `Wygeneruj link do pobrania`{.action}.
 

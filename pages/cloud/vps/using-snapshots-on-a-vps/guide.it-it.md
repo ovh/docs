@@ -4,15 +4,12 @@ excerpt: 'Scopri come abilitare e utilizzare l’opzione Snapshot nello Spazio C
 slug: usare-snapshot-su-un-vps
 section: 'Opzioni di backup'
 order: 1
-updated: 2023-03-20
+updated: 2023-04-28
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
-
-**Ultimo aggiornamento: 20/03/2023**
-
 
 ## Obiettivo
 
@@ -65,6 +62,11 @@ Se sei certo che desideri ripristinare il tuo VPS allo stato dello snapshot, cli
 Lo Snapshot in corso può essere recuperato tramite un link di download. Clicca sui tre puntini `...`{.action} in corrispondenza dell'opzione `Snapshot` e seleziona `Scarica lo Snapshot`{.action} nel menu contestuale.
 
 ![snapshotvps](images/snapshot_vps03.png){.thumbnail}
+
+> [!primary]
+>
+> Se il tuo VPS proviene da una gamma precedente, potresti ricevere un messaggio di errore perché l'opzione non è disponibile sui VPS precedenti. I VPS OVHcloud utilizzano una gamma precedente se il modello di attribuzione del nome è simile a: *vpsXXXX.ovh.net* (dove *X* rappresenta un numero). Questa scheda è disponibile nella scheda `Home`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+>
 
 Nella nuova finestra, clicca su `Genera il link di download`{.action}.
 

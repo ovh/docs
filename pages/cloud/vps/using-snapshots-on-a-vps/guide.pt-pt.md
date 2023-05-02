@@ -4,14 +4,12 @@ excerpt: 'Saiba como ativar e utilizar a opção Snapshot na Área de Cliente OV
 slug: utilizar-snapshots-num-alojamento-vps
 section: 'Opções de backup'
 order: 1
-updated: 2023-03-20
+updated: 2023-04-28
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
-
-**Última atualização: 20/03/2023**
 
 
 ## Sumário
@@ -65,6 +63,11 @@ Se tem a certeza que pretende restaurar o estado do seu alojamento VPS de acordo
 A snapshot em curso pode ser recuperada através de um link de download. Clique no botão `...`{.action} junto à opção `Snapshot` e escolha `Fazer o download do Snapshot`{.action} no menu contextual.
 
 ![snapshotvps](images/snapshot_vps03.png){.thumbnail}
+
+> [!primary]
+>
+> Se o seu VPS é de uma gama antiga, é possível que receba uma mensagem de erro, pois a opção não está disponível nos VPS antigos. O seu VPS é de uma gama antiga se o seu modelo de atribuição for semelhante a: *vpsXXXX.ovh.net* (em que *X* representa um número). Pode verificar esta referência de servidor no separador `Página Inicial`{.action} da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+>
 
 Na nova janela, clique em `Gerar o link de download`{.action}.
 

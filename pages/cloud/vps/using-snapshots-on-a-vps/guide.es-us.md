@@ -4,14 +4,12 @@ slug: usar-instantaneas-en-un-vps
 excerpt: 'Cómo activar y usar la opción Instantáneas  en el panel de control de OVHcloud'
 section: 'Opciones de copia de seguridad'
 order: 1
-updated: 2023-03-20
+updated: 2023-04-28
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
-
-**Última actualización: 20/03/2023**
 
 
 ## Objetivo
@@ -65,6 +63,11 @@ Si está seguro de que desea restablecer su servidor virtual privado (VPS) al es
 El snapshot actual puede recuperarse mediante un enlace de descarga. Haga clic en el botón `...`{.action} situado junto a la opción `Snapshot` y seleccione `Descargar el snapshot`{.action} en el menú contextual.
 
 ![snapshotvps](images/snapshot_vps03.png){.thumbnail}
+
+> [!primary]
+>
+> Si su VPS proviene de una antigua gama, es posible que reciba un mensaje de error, ya que la opción no está disponible en los antiguos VPS. Su VPS procede de una antigua gama si su modelo de denominación es similar a: *vpsXXXX.ovh.net* (donde *X* representa un número). Puede consultar esta referencia del servidor en la pestaña `Inicio`{.action} del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+>
 
 En la nueva ventana, haga clic en `Generar el enlace de descarga`{.action}.
 
