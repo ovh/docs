@@ -4,7 +4,7 @@ slug: using-owa
 excerpt: 'Find out how to manage an email address using OWA webmail'
 section: 'Getting started'
 order: 04
-updated: 2020-02-25
+updated: 2021-06-25
 ---
 
 **Last updated 25th June 2021**

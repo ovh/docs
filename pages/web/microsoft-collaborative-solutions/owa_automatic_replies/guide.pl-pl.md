@@ -2,12 +2,12 @@
 title: 'Tworzenie odpowiedzi automatycznych w interfejsie OWA'
 excerpt: 'Dowiedz się, jak skonfigurować odpowiedzi automatyczne w interfejsie OWA'
 slug: exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa
-section: 'Korzystanie z Outlook Web Application (OWA)'
-order: 02
-updated: 2020-02-26
+section: 'Funkcjonalności kont e-mail'
+order: 07
+updated: 2020-07-20
 ---
 
-**Ostatnia aktualizacja: 03-08-2020**
+**Ostatnia aktualizacja: 20-07-2020**
 
 ## Wprowadzenie
 
