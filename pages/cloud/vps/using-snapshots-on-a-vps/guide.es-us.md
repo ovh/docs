@@ -111,27 +111,27 @@ El *qemu-guest-agent* necesario no está instalado por defecto en la mayoría de
 
 Utilice el siguiente comando para comprobar si el sistema está configurado correctamente para los snapshots:
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Si el resultado es diferente (« No such file or directory »), instale la última versión del paquete:
 
-```
+```bash
 $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
-Reiniciar el VPS :
+Reiniciar el VPS:
 
-```
+```bash
 $ sudo reboot
 ```
 
 Verifique el servicio para garantizar que está en ejecución:
 
-```
+```bash
 $ sudo service qemu-guest-agent start
 ```
 
@@ -139,27 +139,27 @@ $ sudo service qemu-guest-agent start
 
 Utilice el siguiente comando para comprobar si el sistema está configurado correctamente para los snapshots:
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Si el resultado es diferente (« No such file or directory »), instale y active el software:
 
-```
+```bash
 $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
-Reiniciar el VPS :
+Reiniciar el VPS:
 
-```
+```bash
 $ sudo reboot
 ```
 
 Verifique el software y compruebe que está en ejecución:
 
-```
+```bash
 $ sudo service qemu-guest-agent status
 ```
 

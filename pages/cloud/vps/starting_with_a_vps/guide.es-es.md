@@ -86,7 +86,7 @@ passwd: password updated successfully
 
 Por motivos de seguridad, la conexión con el usuario root está desactivada por defecto. Si debe autorizar este tipo de conexiones, consulte las instrucciones de [esta guía](https://docs.ovh.com/es/vps/root-password/#activar-la-contrasena-root).
 
-#### Reinicio de su VP (gama actual de VPS) <a name="reboot-current-range"></a>
+#### Reinicio de su VPS (gama actual de VPS) <a name="reboot-current-range"></a>
 
 Es posible que necesite reiniciar para aplicar configuraciones actualizadas o resolver un problema. En la medida de lo posible, ejecute el "soft reboot" del servidor en la siguiente línea de comandos:
 
@@ -144,7 +144,7 @@ Como alternativa, también puede utilizar este comando:
 ssh root@referencia_de_su_VPS
 ```
 
-#### Reinicio de su VP (antigua gama de VPS) <a name="reboot-older-range"></a>
+#### Reinicio de su VPS (antigua gama de VPS) <a name="reboot-older-range"></a>
 
 Es posible que necesite reiniciar para aplicar configuraciones actualizadas o resolver un problema. En la medida de lo posible, ejecute el "soft reboot" del servidor en la siguiente línea de comandos:
 

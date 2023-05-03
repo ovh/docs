@@ -46,7 +46,7 @@ Aparecerá un mensaje confirmando su solicitud. Haga clic en el enlace dentro de
 
 ![size-disk-vps](images/increase_disk_vps03.png){.thumbnail}
 
-El aumento de la capacidad del disco tardará unos minutos después de la validación del pago. Puede consultar el progreso en la pestaña `Discos adicionales`{.action}\: si se muestra el nuevo tamaño seleccionado, el disco está listo.
+El aumento de la capacidad del disco tardará unos minutos después de la validación del pago. Puede consultar el progreso en la pestaña `Discos adicionales`{.action}: si se muestra el nuevo tamaño seleccionado, el disco está listo.
 
 ![size-disk-vps](images/increase_disk_vps04.png){.thumbnail}
 

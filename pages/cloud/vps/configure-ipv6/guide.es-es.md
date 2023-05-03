@@ -367,7 +367,7 @@ Ethernet adapter Ethernet:
 
 Para probar la conexión, utilice el siguiente comando:
 
-```
+```powershell
 ping -6 proof.ovh.net
 ```
 
