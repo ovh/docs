@@ -22,7 +22,6 @@ A Nutanix cluster consists of a stack of OVHcloud services:
 - [Load Balancer](https://www.ovh.com/ca/en/solutions/load-balancer/)
 - [Additional IP](https://www.ovhcloud.com/en-ca/bare-metal/ip/)
 
-
 Dedicated servers (3 minimum) are connected within the vRack which is an L2 network, the hosts (node) private network.
 
 Two VLANs are used, VLAN 0 for public internet and VLAN 1 for Nutanix infrastructure (Hosts, CVMs, Prism Element and Prism Central).
@@ -76,5 +75,7 @@ Once the cluster is delivered, OVHcloud provides you with a FQDN for your cluste
 Acces to Prism Central is available under `https://<fqdn>:9440`. This access is provided through the load balancer. 
 
 ## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

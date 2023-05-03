@@ -287,4 +287,6 @@ The name of the new node will appear in front of **Host** if the migration is co
 
 [Nutanix licences](https://www.nutanix.com/products/software-options)
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 Join our community of users on <https://community.ovh.com/en/>.

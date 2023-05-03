@@ -7,7 +7,7 @@ order: 01
 updated: 2022-12-08
 ---
 
-**Last updated 8th December 2022**
+**Dernière mise à jour le 08/12/2022**
 
 ## Objectif
 
@@ -74,8 +74,10 @@ Pour remplacer cette machine virtuelle par un autre système d'exploitation rés
 
 Une fois le cluster livré, OVHcloud vous fournit un nom de domaine complet (FQDN) pour votre cluster.
 
-L'accès à Prism Central est disponible à l'adresse suivante : `https://<fqdn>:9440`. Cet accès est assuré par le load balancer.
+L'accès à Prism Central est disponible à l'adresse suivante : `https://<fqdn>:9440`. Cet accès est assuré par le load balancer. 
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

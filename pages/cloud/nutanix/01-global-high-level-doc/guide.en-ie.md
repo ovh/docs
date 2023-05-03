@@ -72,8 +72,10 @@ To replace this virtual machine with another network operating system, please re
 
 Once the cluster is delivered, OVHcloud provides you with a FQDN for your cluster.
 
-Acces to Prism Central is available under `https://<fqdn>:9440`. This access is provided through the load balancer.  
+Acces to Prism Central is available under `https://<fqdn>:9440`. This access is provided through the load balancer. 
 
 ## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -25,7 +25,7 @@ Once an upgrade of one Nutanix software component is needed, let's review all th
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact the [OVHcloud Professional Services team](https://www.ovhcloud.com/es/professional-services/) or a [specialist service provider](https://partner.ovhcloud.com/es/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Instructions
@@ -200,5 +200,7 @@ Click `Apply N Updates`{.action}.
 [OVHcloud documentation](https://docs.ovh.com/us/es/nutanix/)
 
 [Nutanix official documentation](https://www.nutanix.com/){.external}
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

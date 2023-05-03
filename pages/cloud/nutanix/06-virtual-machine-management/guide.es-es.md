@@ -25,7 +25,7 @@ Find out how to manage virtual machines in a Nutanix cluster, and how to create 
 ## Requirements
 
 - a Nutanix cluster in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
 - You must be connected to Prism Central on the cluster
 
 ## Overview of Virtual Machine Management in Prism Central
@@ -281,12 +281,14 @@ The name of the new node will appear in front of **Host** if the migration is co
 
 ## Go further <a name="gofurther"></a>
 
-[Presentation of a Nutanix cluster](https://docs.ovh.com/us/es/nutanix/nutanix-hci/)
+[Presentation of a Nutanix cluster](https://docs.ovh.com/es/nutanix/nutanix-hci/)
 
-[Importing images into Nutanix](https://docs.ovh.com/us/es/nutanix/image-import/)
+[Importing images into Nutanix](https://docs.ovh.com/es/nutanix/image-import/)
 
 [Nutanix documentation on AHV](https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v5_20:AHV-Admin-Guide-v5_20)
 
 [Nutanix licences](https://www.nutanix.com/products/software-options)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

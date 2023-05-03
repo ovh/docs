@@ -16,7 +16,7 @@ Ce document rappelle le fonctionnement d'une solution d'hyperconvergence Nutanix
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
-> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à l'équipe [Professional Services OVHcloud](https://www.ovhcloud.com/fr-ca/professional-services/) ou à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
 ## Prérequis
@@ -80,19 +80,19 @@ Maintenant que la solution Nutanix a été présentée, nous allons nous connect
 
 Nous allons nous connecter au travers de Prism Central qui est le point d'entrée, depuis Internet, dans la solution proposée par OVHcloud.
 
-L'accès au cluster se fait via une adresse publique  du type <https://FQDN:9440>. Cette adresse vous est fournie lors de la création d'un cluster Nutanix chez OVHcloud.
+L'accès au cluster se fait via une adresse publique  du type https://FQDN:9440. Cette adresse vous est fournie lors de la création d'un cluster Nutanix chez OVHcloud.
 
-![Interface Prism Central - Login](images/PrismCentralUsername.PNG)
+![Interface Prism Central - Login](images/PrismCentralUsername.PNG){.thumbnail}
 
 Saisissez votre nom d'utilisateur et votre mot de passe et cliquez sur la flèche.
 
-![Interface Prism Central - Dashboard](images/PrismCentralDashboard.PNG)
+![Interface Prism Central - Dashboard](images/PrismCentralDashboard.PNG){.thumbnail}
 
 ### Connexion à Prism Element via Prism Central
 
 Sur le tableau de bord (*Dashboard*) de Prism Central, cliquez sur le nom du cluster dans le cadre **Cluster Quick Access**.
 
-![Interface Prism Central - Dashboard](images/PrismCentralDashboard.PNG)
+![Interface Prism Central - Dashboard](images/PrismCentralDashboard.PNG){.thumbnail}
 
 Vous accédez alors au tableau de bord de votre cluster.
 
@@ -103,22 +103,24 @@ En bas de cet encadré est affiché le niveau de tolérance de panne (1 signifie
 À gauche est affiché un résumé du stockage et de l'espace disque disponible.<br>
 Cliquez sur `View Details`{.action} pour obtenir davantage d'informations sur le stockage.
 
-![Interface Prism Element - DashBoard](images/PrismElementDashBoard.PNG)
+![Interface Prism Element - DashBoard](images/PrismElementDashBoard.PNG){.thumbnail}
 
 Vous pouvez ainsi vérifier l'état du stockage par nœud.
 
-![Stockage](images/StorageDetail.PNG)
+![Stockage](images/StorageDetail.PNG){.thumbnail}
 
 Cliquez sur le menu `Hardware`{.action} pour obtenir le détail du stockage par nœud, ainsi que le nombre de disques alloués par nœud.
 
-![Hardware Menu](images/HardwareMenu.PNG)
+![Hardware Menu](images/HardwareMenu.PNG){.thumbnail}
 
 Cliquez sur `Diagrams`{.action} pour obtenir un résumé graphique tel que présenté ci-dessous.
 
-![Hardware Detail](images/HardwareDetail.PNG)
+![Hardware Detail](images/HardwareDetail.PNG){.thumbnail}
 
 ## Aller plus loin
 
 Visitez le site <https://www.nutanixbible.com/> pour plus d'informations sur le fonctionnement de Nutanix.
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
