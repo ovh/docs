@@ -4,10 +4,10 @@ slug: kafka/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka
 section: Kafka - Guides
 order: 010
-updated: 2023-04-24
+updated: 2023-05-03
 ---
 
-**Last updated April 24th, 2023**
+**Last updated May 3rd, 2023**
 
 ## Objective
 
@@ -34,10 +34,8 @@ Kafka nodes have to be in the same region. Multi-AZ is currently not supported.
 
 The Public Cloud Databases offer supports the following Kafka versions:
 
-- Kafka 3.0
-- Kafka 3.1
-- Kafka 3.2
 - Kafka 3.3
+- Kafka 3.4 (soon)
 
 Please refer to the [DBMS lifecycle policy guide](/pages/platform/databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow Kafka Release Cycle on their official page: <https://kafka.apache.org/downloads>
 
@@ -45,7 +43,7 @@ Please refer to the [DBMS lifecycle policy guide](/pages/platform/databases/info
 
 You can use any of the Kafka-recommended clients to access your cluster.
 
-Please note that Kafka Connect and Kafka Mirrormaker 2 aren't available so far.
+Kafka Connect and Kafka Mirrormaker 2 are available at OVHcloud.
 
 ### Plans
 
