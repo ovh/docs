@@ -54,7 +54,7 @@ Note that the `shared registry` will not appear here. This one is displayed in t
 
 ### Manage existing registries through CLI
 
-If you prefer to use the OVHcloud AI CLI, you can also:
+If you prefer, you can also use the OVHcloud AI CLI (`ovhai`):
 
 List all your available registries with:
 ``` {.console}
