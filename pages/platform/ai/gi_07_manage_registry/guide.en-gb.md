@@ -1,7 +1,7 @@
 ---
 title: Use & manage existing and new registries
 slug: use-manage-registries
-excerpt: Learn how to use and manage your public and private image registries
+excerpt: Learn how to use and manage your public and private registries
 section: General information
 order: 109
 updated: 2023-05-02
