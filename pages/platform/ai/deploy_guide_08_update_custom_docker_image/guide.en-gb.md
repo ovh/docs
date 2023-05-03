@@ -55,7 +55,7 @@ In fact, the image tag that was specified at the initial launch of the applicati
 
 Let's imagine that our AI Deploy app was initially launched based on the following image: `registry_adress.ovh.net/my_ai_app:v1.0.0`. As you can see, our image is stored in the `registry_adress.ovh.net` registry, is named `my_ai_app`, and the version used is tagged `v1.0.0`. 
 
-Our app is still in a `RUUNING` state, which means that it is currently deployed. If we make changes to the image used by this application, by pushing our updated image version to the same registry, with the same tag, our old image will be replaced by the new version. But **as long as our app is running, the deployed image version will not change**, in order to keep the app running correctly.
+Our app is still in a `RUNNING` state, which means that it is currently deployed. If we make changes to the image used by this application, by pushing our updated image version to the same registry, with the same tag, our old image will be replaced by the new version. But **as long as our app is running, the deployed image version will not change**, in order to keep the app running correctly.
 
 However, if we **stop and restart** the app, the image used will be the one indicated when the app was initially launched, which means the one available at `registry_adress.ovh.net/my_ai_app:v1.0.0` in our case. As this image has been updated and the old one has been deleted, the last version (updated one) will now be used by the app.
 
