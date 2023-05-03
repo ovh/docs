@@ -11,7 +11,7 @@ updated: 2023-05-02
 
 ## Objective
 
-This guide is intended to help you **use and manage your public and private registries** through ovhai command line interface (AI CLI), API and OVHcloud control panel. This will help you when working with **OVHcloud AI Tools**, especially with **AI Training** and **AI Deploy**.
+This guide is intended to help you to **use and manage your public and private registries** through `ovhai` command line interface (AI CLI), API and [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). This will help you when working with **OVHcloud AI Tools**, especially with **AI Training** and **AI Deploy**.
 
 ## Requirements
 
