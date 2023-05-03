@@ -4,10 +4,10 @@ slug: postgresql/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for PostgreSQL
 section: PostgreSQL - Guides
 order: 010
-updated: 2023-04-14
+updated: 2023-05-03
 ---
 
-**Last updated April 14th, 2023**
+**Last updated May 3rd, 2023**
 
 ## Objective
 
@@ -71,7 +71,7 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 
 - **Essential**: the cluster can support at most one node.
 - **Business**: the cluster is delivered with 2 nodes by default. Adding read replicas is planned.
-- **Enterprise**: The cluster is delivered with 3 nodes by default. Adding read replicas is planned.
+- **Enterprise**: the cluster is delivered with 3 nodes by default. Adding read replicas is planned.
 
 #### License type
 
