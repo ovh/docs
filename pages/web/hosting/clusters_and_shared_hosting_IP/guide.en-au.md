@@ -4,10 +4,10 @@ slug: list-of-ip-addresses-of-web-hosting-clusters
 excerpt: 'Find out the appropriate IP addresses to use with your OVHcloud Web Hosting plan'
 section: Web Hosting configuration
 order: 01
-updated: 2021-01-08
+updated: 2023-05-03
 ---
 
-**Last updated 20th May 2020**
+**Last updated 03rd May 2023**
 
 ## Objective
 
@@ -33,7 +33,6 @@ You can verify the cluster number of the Web Hosting on this page under **FTP se
 ### Cluster 002
 
 #### Cluster IP addresses per country
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -62,23 +61,15 @@ If you have activated the **Shared CDN** option (released on 19/11/2020) on your
 46.105.204.2
 ```
 
-If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
-
-```bash
-46.105.174.33
-```
-
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
 
 ```bash
 51.68.11.191
 ```
 
-
-## Cluster 003
+### Cluster 003
 
 #### Cluster IP addresses per country
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -107,23 +98,15 @@ If you have activated the **Shared CDN** option (released on 19/11/2020) on your
 46.105.204.3
 ```
 
-If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
-
-```bash
-46.105.174.34
-```
-
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
 
 ```bash
 51.68.11.195
 ```
 
-
-## Cluster 005
+### Cluster 005
 
 #### Cluster IP addresses per country
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -152,23 +135,15 @@ If you have activated the **Shared CDN** option (released on 19/11/2020) on your
 46.105.204.5
 ```
 
-If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
-
-```bash
-46.105.174.35
-```
-
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
 
 ```bash
 51.68.11.199
 ```
 
-
-## Cluster 006
+### Cluster 006
 
 #### Cluster IP addresses per country
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -197,22 +172,15 @@ If you have activated the **Shared CDN** option (released on 19/11/2020) on your
 46.105.204.6
 ```
 
-If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
-
-```bash
-46.105.174.36
-```
-
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
 
 ```bash
 51.68.11.203
 ```
 
-## Cluster 007
+### Cluster 007
 
 #### Cluster IP addresses per country
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -241,23 +209,15 @@ If you have activated the **Shared CDN** option (released on 19/11/2020) on your
 46.105.204.7
 ```
 
-If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
-
-```bash
-46.105.174.37
-```
-
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
 
 ```bash
 51.68.11.207
 ```
 
-
-## Cluster 010
+### Cluster 010
 
 #### Cluster IP addresses per country
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -286,23 +246,15 @@ If you have activated the **Shared CDN** option (released on 19/11/2020) on your
 46.105.204.10
 ```
 
-If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
-
-```bash
-46.105.174.38
-```
-
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
 
 ```bash
 51.68.11.211
 ```
 
-
-## Cluster 011
+### Cluster 011
 
 #### Cluster IP addresses per country
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -331,23 +283,15 @@ If you have activated the **Shared CDN** option (released on 19/11/2020) on your
 46.105.204.11
 ```
 
-If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
-
-```bash
-46.105.174.39
-```
-
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
 
 ```bash
 51.68.11.215
 ```
 
-
-## Cluster 012
+### Cluster 012
 
 #### Cluster IP addresses per country
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -376,20 +320,13 @@ If you have activated the **Shared CDN** option (released on 19/11/2020) on your
 46.105.204.12
 ```
 
-If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
-
-```bash
-46.105.174.40
-```
-
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
 
 ```bash
 51.68.11.219
 ```
 
-
-## Cluster 013
+### Cluster 013
 
 #### Cluster IP addresses per country
 
@@ -420,23 +357,15 @@ If you have activated the **Shared CDN** option (released on 19/11/2020) on your
 46.105.204.13
 ```
 
-If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
-
-```bash
-46.105.174.41
-```
-
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
 
 ```bash
 51.68.11.223
 ```
 
-
-## Cluster 014
+### Cluster 014
 
 #### Cluster IP addresses per country
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -465,23 +394,15 @@ If you have activated the **Shared CDN** option (released on 19/11/2020) on your
 46.105.204.14
 ```
 
-If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
-
-```bash
-46.105.174.42
-```
-
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
 
 ```bash
 51.68.11.227
 ```
 
-
-## Cluster 015
+### Cluster 015
 
 #### Cluster IP addresses per country
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -510,23 +431,15 @@ If you have activated the **Shared CDN** option (released on 19/11/2020) on your
 46.105.204.15
 ```
 
-If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
-
-```bash
-46.105.174.43
-```
-
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
 
 ```bash
 51.68.11.231
 ```
 
-
-## Cluster 017
+### Cluster 017
 
 #### Cluster IP addresses per country
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -555,23 +468,15 @@ If you have activated the **Shared CDN** option (released on 19/11/2020) on your
 46.105.204.17
 ```
 
-If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
-
-```bash
-46.105.174.44
-```
-
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
 
 ```bash
 51.68.11.239
 ```
 
-
-## Cluster 020
+### Cluster 020
 
 #### Cluster IP addresses per country
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -607,11 +512,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 91.134.248.253
 ```
 
-
-## Cluster 021
+### Cluster 021
 
 #### Cluster IP addresses per country
-
 
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
@@ -631,7 +534,6 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 
 If you have activated the **CDN** option on your Web Hosting, use this IP address:
 
-
 ```bash
 213.186.33.177
 ```
@@ -648,7 +550,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 91.134.248.245
 ```
 
-## Cluster 023
+### Cluster 023
 
 #### Cluster IP addresses per country
 
@@ -686,7 +588,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 91.134.248.235
 ```
 
-## Cluster 024
+### Cluster 024
 
 #### Cluster IP addresses per country
 
@@ -724,8 +626,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 91.134.248.230
 ```
 
-
-## Cluster 026
+### Cluster 026
 
 #### Cluster IP addresses per country
 
@@ -763,7 +664,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 91.134.248.211
 ```
 
-## Cluster 027
+### Cluster 027
 
 #### Cluster IP addresses per country
 
@@ -801,7 +702,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 54.37.121.239
 ```
 
-## Cluster 028
+### Cluster 028
 
 #### Cluster IP addresses per country
 
@@ -839,7 +740,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 91.134.248.249
 ```
 
-## Cluster 029
+### Cluster 029
 
 #### Cluster IP addresses per country
 
@@ -877,7 +778,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 91.134.248.192
 ```
 
-## Cluster 030
+### Cluster 030
 
 #### Cluster IP addresses per country
 
@@ -915,7 +816,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 51.178.146.199
 ```
 
-## Cluster 031
+### Cluster 031
 
 #### Cluster IP addresses per country
 
@@ -947,7 +848,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 141.94.87.67
 ```
 
-## Cluster 051
+### Cluster 051
 
 #### Cluster IP addresses per country
 
@@ -975,10 +876,14 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 
 ## Go further
 
-[Hosting multiple websites on your Web Hosting plan](../multisites-configuring-multiple-websites)
+[Hosting multiple websites on your Web Hosting plan](/pages/web/hosting/multisites_configure_multisite)
 
-[Activating HTTPS on your website with an SSL certificate](../activate-https-website-ssl)
+[Activating HTTPS on your website with an SSL certificate](/pages/web/hosting/ssl-activate-https-website)
 
-[Optimise your website’s performance](../web_hosting_optimise_your_website_performance)
+[Optimise your website’s performance](/pages/web/hosting/optimise_your_website_performance)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -3,10 +3,14 @@ title: 'Lista degli indirizzi IP di cluster e hosting Web'
 slug: lista-indirizzi-ip-di-cluster-e-hosting-web
 section: Configurazione dell’hosting
 order: 01
-updated: 2021-01-08
+updated: 2023-05-03
 ---
 
-**Ultimo aggiornamento: 08/01/2021**
+**Ultimo aggiornamento: 03/05/2023**
+
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
 ## Obiettivo
 
@@ -63,12 +67,6 @@ Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi util
 46.105.204.2
 ```
 
-Se hai attivato il **Certificato SSL GlobalSign (a pagamento)** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-46.105.174.33
-```
-
 Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
 
 ```bash
@@ -104,12 +102,6 @@ Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi util
 
 ```bash
 46.105.204.3
-```
-
-Se hai attivato il **Certificato SSL GlobalSign (a pagamento)** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-46.105.174.34
 ```
 
 Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
@@ -149,12 +141,6 @@ Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi util
 46.105.204.5
 ```
 
-Se hai attivato il **Certificato SSL GlobalSign (a pagamento)** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-46.105.174.35
-```
-
 Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
 
 ```bash
@@ -190,12 +176,6 @@ Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi util
 
 ```bash
 46.105.204.6
-```
-
-Se hai attivato il **Certificato SSL GlobalSign (a pagamento)** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-46.105.174.36
 ```
 
 Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
@@ -235,12 +215,6 @@ Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi util
 46.105.204.7
 ```
 
-Se hai attivato il **Certificato SSL GlobalSign (a pagamento)** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-46.105.174.37
-```
-
 Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
 
 ```bash
@@ -276,12 +250,6 @@ Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi util
 
 ```bash
 46.105.204.10
-```
-
-Se hai attivato il **Certificato SSL GlobalSign (a pagamento)** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-46.105.174.38
 ```
 
 Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
@@ -321,12 +289,6 @@ Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi util
 46.105.204.11
 ```
 
-Se hai attivato il **Certificato SSL GlobalSign (a pagamento)** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-46.105.174.39
-```
-
 Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
 
 ```bash
@@ -362,13 +324,6 @@ Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi util
 
 ```bash
 46.105.204.12
-```
-
-Se hai attivato il **Certificato SSL GlobalSign (a pagamento)** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-
-```bash
-46.105.174.40
 ```
 
 Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
@@ -408,12 +363,6 @@ Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi util
 46.105.204.13
 ```
 
-Se hai attivato il **Certificato SSL GlobalSign (a pagamento)** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-46.105.174.41
-```
-
 Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
 
 ```bash
@@ -451,12 +400,6 @@ Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi util
 46.105.204.14
 ```
 
-Se hai attivato il **Certificato SSL GlobalSign (a pagamento)** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-46.105.174.42
-```
-
 Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
 
 ```bash
@@ -490,15 +433,8 @@ Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indi
 
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
-
 ```bash
 46.105.204.15
-```
-
-Se hai attivato il **Certificato SSL GlobalSign (a pagamento)** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-46.105.174.43
 ```
 
 Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
@@ -538,13 +474,6 @@ Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi util
 46.105.204.17
 ```
 
-Se hai attivato il **Certificato SSL GlobalSign (a pagamento)** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-
-```bash
-46.105.174.44
-```
-
 Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
 
 ```bash
@@ -554,7 +483,6 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 ### Cluster 020
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
-
 
 |Paese|Codice Paese|IPv4|IPv6|
 |---|---|----|---|
@@ -574,7 +502,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 
 Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
 
-
 ```bash
 213.186.33.176
 ```
@@ -587,16 +514,13 @@ Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi util
 
 Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
 
-
 ```bash
 91.134.248.253
 ```
 
-
 ### Cluster 021
 
 Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
-
 
 |Paese|Codice Paese|IPv4|IPv6|
 |---|---|----|---|
@@ -615,7 +539,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Belgio|BE|178.32.40.72|2001:41d0:301:10::21|
 
 Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
 
 ```bash
 213.186.33.177
@@ -705,11 +628,9 @@ Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi util
 
 Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
 
-
 ```bash
 91.134.248.230
 ```
-
 
 ### Cluster 026
 
@@ -744,7 +665,6 @@ Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi util
 ```
 
 Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
-
 
 ```bash
 91.134.248.211
@@ -784,7 +704,6 @@ Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi util
 
 Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
 
-
 ```bash
 54.37.121.239
 ```
@@ -822,7 +741,6 @@ Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi util
 ```
 
 Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
-
 
 ```bash
 91.134.248.249
@@ -962,11 +880,20 @@ Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi util
 
 Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
 
-
 ```bash
 51.161.94.36
 ```
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+[Installare un multisito sul tuo hosting Web](/pages/web/hosting/multisites_configure_multisite) 
+
+[Attiva l'HTTPS con il tuo certificato SSL sul tuo hosting Web](/pages/web/hosting/ssl-activate-https-website)
+
+[Ottimizza le performance del tuo sito Web](/pages/web/hosting/optimise_your_website_performance)
+
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+ 
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+ 
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
