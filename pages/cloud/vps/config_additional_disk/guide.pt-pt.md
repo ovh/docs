@@ -224,19 +224,19 @@ Introduza `cmd` e clique em `OK`{.action} para abrir a aplicação de linha de c
 
 No convite à encomenda, abra o DISKPARTIDO:
 
-```bash
+```powershell
 C:\> diskpart
 ```
 
 Utilize a seguinte série de comandos DISKPart para configurar o disco online:
 
-```bash
-DISKPARTIDA> san
+```powershell
+DISKPART> san
 
-SAN Policy: Offline Shared
+SAN Policy : Offline Shared
 ```
 
-```bash
+```powershell
 DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system.
@@ -250,19 +250,19 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```bash
-DISKPARTIDO> select disk 1
+```powershell
+DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
 ```
 
-```bash
-DISKPart> atributos disk clear readonly
+```powershell
+DISKPart> attributes disk clear readonly
 
-Disk atributos cleared successfully.
+Disk attributes cleared successfully.
 ```
 
-```bash
+```powershell
 DISKPART> attributes disk
 
 Current Read-only State : No
@@ -274,8 +274,8 @@ Crashdump Disk : No
 Clustered Disk : No
 ```
 
-```bash
-DISKPARTIDO> online disk
+```powershell
+DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.
 ```
