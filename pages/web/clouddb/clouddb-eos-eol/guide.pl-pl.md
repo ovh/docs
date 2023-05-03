@@ -23,6 +23,7 @@ Więcej informacji na ten temat znajdziesz w [polityce wycofania zarządzanych](
 |MariaDB 10.4|2022-07-22|2023-12-18|2024-06-18|
 |MariaDB 10.5|Do określenia|Do określenia|Do określenia|
 |MariaDB 10.6|Do określenia|Do określenia|Do określenia|
+|MariaDB 10.11|Do określenia|Do określenia|Do określenia|
 |MySQL 5.7|2022-03-29|2023-04-01|2023-10-01|
 |MySQL 8.0|Do określenia|Do określenia|Do określenia|
 |PostgreSQL 10|2021-08-18|2022-05-11|2022-11-10|
@@ -30,6 +31,7 @@ Więcej informacji na ten temat znajdziesz w [polityce wycofania zarządzanych](
 |PostgreSQL 12|2023-03-08|2024-05-15|2024-11-14|
 |PostgreSQL 13|Do określenia|Do określenia|Do określenia|
 |PostgreSQL 14|Do określenia|Do określenia|Do określenia|
+|PostgreSQL 15|Do określenia|Do określenia|Do określenia|
 |Redis 6.0|Do określenia|Do określenia|Do określenia|
 |Redis 7.0|Do określenia|Do określenia|Do określenia|
 

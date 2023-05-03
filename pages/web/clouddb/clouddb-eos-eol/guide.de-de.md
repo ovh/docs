@@ -24,6 +24,7 @@ Weitere Informationen erhalten Sie auf der Seite zur [EOL Policy für Managed Da
 |MariaDB 10.4|2022-07-22|2023-12-18|2024-06-18|
 |MariaDB 10.5|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 |MariaDB 10.6|Noch festzulegen|Noch festzulegen|Noch festzulegen|
+|MariaDB 10.11|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 |MySQL 5.7|2022-03-29|2023-04-01|2023-10-01|
 |MySQL 8.0|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 |PostgreSQL 10|2021-08-18|2022-05-11|2022-11-10|
@@ -31,6 +32,7 @@ Weitere Informationen erhalten Sie auf der Seite zur [EOL Policy für Managed Da
 |PostgreSQL 12|2023-03-08|2024-05-15|2024-11-14|
 |PostgreSQL 13|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 |PostgreSQL 14|Noch festzulegen|Noch festzulegen|Noch festzulegen|
+|PostgreSQL 15|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 |Redis 6.0|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 |Redis 7.0|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 

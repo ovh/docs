@@ -23,6 +23,7 @@ Per maggiori informazioni, consulta la [politica di fine vita dei database gesti
 |MariaDB 10.4|2022-07-22|2023-12-18|2024-06-18|
 |MariaDB 10.5|Da definire|Da definire|Da definire|
 |MariaDB 10.6|Da definire|Da definire|Da definire|
+|MariaDB 10.11|Da definire|Da definire|Da definire|
 |MySQL 5.7|2022-03-29|2023-04-01|2023-10-01|
 |MySQL 8.0|Da definire|Da definire|Da definire|
 |PostgreSQL 10|2021-08-18|2022-05-11|2022-11-10|
@@ -30,6 +31,7 @@ Per maggiori informazioni, consulta la [politica di fine vita dei database gesti
 |PostgreSQL 12|2023-03-08|2024-05-15|2024-11-14|
 |PostgreSQL 13|Da definire|Da definire|Da definire|
 |PostgreSQL 14|Da definire|Da definire|Da definire|
+|PostgreSQL 15|Da definire|Da definire|Da definire|
 |Redis 6.0|Da definire|Da definire|Da definire|
 |Redis 7.0|Da definire|Da definire|Da definire|
 
