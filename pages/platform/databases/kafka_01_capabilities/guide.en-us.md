@@ -4,10 +4,10 @@ slug: kafka/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka
 section: Kafka - Guides
 order: 010
-updated: 2023-04-24
+updated: 2023-05-03
 ---
 
-**Last updated April 24th, 2023**
+**Last updated May 3rd, 2023**
 
 ## Objective
 
@@ -34,10 +34,8 @@ Kafka nodes have to be in the same region. Multi-AZ is currently not supported.
 
 The Public Cloud Databases offer supports the following Kafka versions:
 
-- Kafka 3.0
-- Kafka 3.1
-- Kafka 3.2
 - Kafka 3.3
+- Kafka 3.4 (soon)
 
 Please refer to the [DBMS lifecycle policy guide](/pages/platform/databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow Kafka Release Cycle on their official page: <https://kafka.apache.org/downloads>
 
@@ -45,11 +43,11 @@ Please refer to the [DBMS lifecycle policy guide](/pages/platform/databases/info
 
 You can use any of the Kafka-recommended clients to access your cluster.
 
-Please note that Kafka Connect and Kafka Mirrormaker 2 aren't available so far.
+Kafka Connect and Kafka Mirrormaker 2 are available at OVHcloud.
 
 ### Plans
 
-Three plans are available:
+Two plans are available:
 
 - *Business*
 - *Enterprise*
@@ -82,13 +80,13 @@ Here are the node types you can choose from:
 
 **Business plans**
 
-| Name    | Disk (GB) | Cores | Memory (GB) |
-| ------- | --------- | ----- | ----------- |
-| db1-4   | 480       | 2     | 4           |
-| db1-7   | 960       | 2     | 7           |
-| db1-15  | 1920      | 4     | 15          |
-| db1-30  | 3840      | 8     | 30          |
-| db1-60  | 7680      | 16    | 60          |
+| Name    | Storage                  | vCore | Memory (GB) |
+| ------- | ------------------------ | ----- | ----------- |
+| db1-4   | From 480 GB to 1.44 TB   | 2     | 4           |
+| db1-7   | From 960 GB to 2.88 TB   | 2     | 7           |
+| db1-15  | From 1.92 TB to 5.76 TB  | 4     | 15          |
+| db1-30  | From 3.84 TB to 11.52 TB | 8     | 30          |
+| db1-60  | From 7.68 TB to 23.04 TB | 16    | 60          |
 
 **Enterprise plans**
 
