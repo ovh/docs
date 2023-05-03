@@ -1,5 +1,5 @@
 ---
-title: Use & manage existing and new image registries
+title: Use & manage existing and new registries
 slug: use-manage-registries
 excerpt: Learn how to use and manage your public and private image registries
 section: General information
