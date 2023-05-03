@@ -63,7 +63,7 @@ ovhai registry list
 
 Add a registry by using:
 ``` {.console}
-ovhai registry add <url>
+ovhai registry add <registry-url>
 ```
 
 Update one of your registries with the following command:
