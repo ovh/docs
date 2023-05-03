@@ -81,7 +81,7 @@ To learn how to install a Veeam Enterprise Plus server in your VMware on OVHclou
 
 Some data needs to be stored and backed up with long retention for legal and/or technical reasons, ideally in a dedicated storage space with limited access once the data has been written. OVHcloud offers a Cold Archive solution for this application, featuring the highest security for your data by design.
 
-For more information, please refer to the [OVHcloud documentation](https://www.ovhcloud.com/en/public-cloud/cloud-archive/).
+For more information, please refer to the [OVHcloud documentation](https://www.ovhcloud.com/en/public-cloud/cold-archive/).
 
 ### SAP Support connection
 

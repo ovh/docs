@@ -81,7 +81,7 @@ Pour en savoir plus sur l'installation d'un serveur Veeam Enterprise Plus dans v
 
 Certaines données nécessitent d'être stockées et sauvegardées avec une rétention longue pour des raisons légales et/ou techniques, idéalement dans un espace de stockage dédié avec des accès limités une fois que la donnée a été écrite. OVHcloud propose une solution nommée Cold Archive pour ce type de besoin, solution ayant un haut niveau de sécurité pour vos données.
 
-Plus d'information sur [OVHcloud](https://www.ovhcloud.com/fr/public-cloud/cloud-archive/).
+Plus d'information sur [OVHcloud](https://www.ovhcloud.com/fr/public-cloud/cold-archive/).
 
 ### Connexion du support SAP
 
