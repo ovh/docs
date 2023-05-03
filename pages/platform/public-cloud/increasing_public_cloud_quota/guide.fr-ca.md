@@ -5,10 +5,10 @@ slug: increase-public-cloud-quota
 legacy_guide_number: 1904
 section: 'Gestion de projets'
 order: 6
-updated: 2023-01-27
+updated: 2023-05-03
 ---
 
-**Dernière mise à jour le 27/01/2023**
+**Dernière mise à jour le 03/05/2023**
 
 ## Objectif
 
@@ -52,7 +52,7 @@ Cliquez sur la flèche à côté de « Sélectionnez le volume » pour afficher 
 
 Le tableau ci-dessous vous indique les ressources obtenues pour chaque quota :
 
-|Quota|Instances|CPU/Cores|RAM|Taille du volume|Volumes|Snapshots|Taille des sauvegardes|Floating IPs|Load Balancer Octavia|Gateway (Routers)
+|Quota|Instances|CPU/Cores|RAM|Taille du volume|Volumes|Snapshots|Taille des sauvegardes|Floating IPs|Load Balancer Octavia|Gateway (Routers)|
 |---|---|---|---|---|---|---|---|---|---|---|
 |10 VMs|10|20|40GB|20TB|20|20|59TB|2|2|2|
 |20 VMs|20|40|240GB|20TB|40|40|117TB|2|2|2|

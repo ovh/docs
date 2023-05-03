@@ -5,14 +5,14 @@ slug: increase-public-cloud-quota
 legacy_guide_number: g1904
 order: 6
 section: Gestão do projeto
-updated: 2023-01-27
+updated: 2023-05-03
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização 27/01/2023**
+**Última atualização 03/05/2023**
 
 ## Objetivo
 
