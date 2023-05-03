@@ -45,7 +45,7 @@ Ce guide vous montrera comment émettre un jeton OpenStack, l'utiliser pour les 
 >
 > Retrouvez plus d'informations sur cet outil dans la [documentation OpenStack CLI](https://docs.openstack.org/newton/user-guide/cli.html).
 
-Vous pouvez l'obtenir à partir du gestionnaire de paquets apt (pour les distributions basées sur Debian) ou par yum (pour les distributions basées sur RHEL/CentOS) ;
+Vous pouvez l'obtenir à partir du gestionnaire de paquets apt (pour les distributions basées sur Debian) ou par yum (pour les distributions basées sur RHEL/CentOS) :
 
 ```bash
 # Distributions Debian 
@@ -68,7 +68,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 Cliquez sur `Users & Roles`{.action} dans la section `Project Management` puis sur le bouton `...`{.action} à droite de votre utilisateur OpenStack.<br>
 Téléchargez le fichier OpenRC de cet utilisateur et spécifiez la région dans laquelle vous voulez effectuer des actions.
 
-![télécharger fichier openRC](images/openrc.png){.thumbnail}
+![télécharger le fichier openRC](images/openrc.png){.thumbnail}
 
 Une fois téléchargé, éditez votre fichier OpenRC et ajoutez cette ligne :
 
