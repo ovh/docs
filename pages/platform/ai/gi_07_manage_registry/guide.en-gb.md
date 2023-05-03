@@ -11,7 +11,7 @@ updated: 2023-05-02
 
 ## Objective
 
-This guide is intended to help you to **use and manage your public and private registries** through `ovhai` command line interface (AI CLI), API and [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). This will help you when working with **OVHcloud AI Tools**, especially with **AI Training** and **AI Deploy**.
+This guide is intended to help you to **use and manage your public and private registries** through `ovhai` command line interface ([AI CLI](https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-cli-install-client?id=kb_article_view&sysparm_article=KB0047844)), API and [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). This will help you when working with **OVHcloud AI Tools**, especially with **AI Training** and **AI Deploy**.
 
 ## Requirements
 
@@ -54,7 +54,7 @@ Note that the `shared registry` will not appear here. This one is displayed in t
 
 ### Manage existing registries through CLI
 
-If you prefer, you can also use the OVHcloud AI CLI (`ovhai`):
+If you prefer, you can also use the OVHcloud `ovhai` CLI:
 
 List all your available registries with:
 ``` {.console}
@@ -76,7 +76,7 @@ Delete a registry by using:
 ovhai registry delete <id>
 ```
 
-*If you do not have our AI CLI yet, learn how to install it [here](https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-cli-install-client?id=kb_article_view&sysparm_article=KB0047844).*
+*If you do not have our `ovhai` CLI yet, learn how to install it [here](https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-cli-install-client?id=kb_article_view&sysparm_article=KB0047844).*
 
 ## Create, configure and use new registries
 
@@ -119,7 +119,7 @@ Then, copy the URL of the API Harbor, which is the URL of your private registry:
 
 #### Add the Harbor registry
 
-To add your registry, you can either use the OVHcloud Control Panel (UI) or the ovhai CLI. 
+To add your registry, you can either use the OVHcloud Control Panel (UI) or the `ovhai` CLI. 
 
 During this step, you will be asked your user's credentials (user id and password). You can use the default user (administrator) credentials, which were obtained at the first part of the `Create and configure a new private registry` step, or those of another user if you have created one.
 
@@ -302,7 +302,7 @@ You can also use the Control Panel to deploy a job or an app from a GitHub regis
 
 - You can check the official documentation about [how to submit a **job**](https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-training-submit-job?id=kb_article_view&sysparm_article=KB0048754)
 - Learn [how to deploy an **app**](https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-deploy-getting-started?id=kb_article_view&sysparm_article=KB0047971)
-- You can check out the documentation about the [AI CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/overview-cli)
+- You can check out the documentation about the [ovhai CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/overview-cli)
 
 
 ## Feedback
