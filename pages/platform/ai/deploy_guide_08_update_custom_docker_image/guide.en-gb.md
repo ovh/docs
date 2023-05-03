@@ -47,6 +47,7 @@ When updating a Docker image, we have two options:
 Updating the image of our application is usually more interesting than restarting a new one. Indeed, this allows us first of all to keep the same link to the application. It will also avoid us to deploy a new app and specify again all our arguments (volumes, ports, resources, ...). Finally, this will allow us not to accumulate our number of deployed apps, which will allow us a much more efficient management.
 
 #### Reusing an existing tag
+
 If when updating our Docker image, we have **reused the same tag** as the one specified at the initial launch of our application, we will just have to **stop and restart** the application to use the new version of our Docker image. 
 
 In fact, the image tag that was specified at the initial launch of the application will be pulled again during the restarting step. Since the initial tag corresponds to the tag of the updated image, the new image version will be pulled and used within our restarted application.
