@@ -132,7 +132,7 @@ sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 Las opciones funcionan de la siguiente forma:
 
 - -p: Comprueba el protocolo especificado (tcp).
-- —dport : Especifica el puerto de destino.
+- —dport: Especifica el puerto de destino.
 - -j jump: Realiza la acción 
 
 > [!warning]
@@ -169,7 +169,7 @@ Las opciones iptables que hemos utilizado en los ejemplos funcionan de la siguie
 
 - -m: Coincide con la opción especificada.
 - -iprange: Indica que el sistema espere un rango de direcciones IP en lugar de una.
-- —src-range: Identifica el rango de direcciones IP.
+- --src-range: Identifica el rango de direcciones IP.
 
 ### 7. Eliminar el tráfico no deseado
 
