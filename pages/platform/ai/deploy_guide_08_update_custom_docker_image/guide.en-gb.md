@@ -23,7 +23,7 @@ While our app is running, it is likely that we will have to **update our Docker 
 - A [Public Cloud project](https://docs.ovh.com/gb/en/public-cloud/create_a_public_cloud_project/)
 - A [user for AI Deploy](https://docs.ovh.com/gb/en/publiccloud/ai/users)
 - [Docker](https://www.docker.com/get-started) installed on your local computer or a virtual machine
-- The [OVHcloud AI CLI](https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-cli-install-client?id=kb_article_view&sysparm_article=KB0047844)
+- The [OVHcloud AI CLI](/pages/platform/ai/cli_10_howto_install_cli)
 
 ## Instructions
 
@@ -65,7 +65,7 @@ Our app is still in a `RUNNING` state, which means that it is currently deployed
 
 However, if we **stop and restart** the app, the image used will be the one indicated when the app was initially launched, which means the one available at `registry_adress.ovh.net/my_ai_app:v1.0.0` in our case. As this image has been updated and the old one has been deleted, the last version (updated one) will now be used by the app.
 
-This stop & restart operation can be performed from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (UI) or from the OVHcloud AI CLI (`ovhai`) with the following command:
+This stop & restart operation can be performed from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (UI) or from the `ovhai` CLI with the following command:
 
 ```console
 ovhai app stop <app-id>
@@ -76,7 +76,7 @@ ovhai app start <app-id>
 
 On the other hand, if we have updated our image under another tag, we will have to indicate this change to the application. Otherwise, the application will continue to pull the image that was specified when it was first launched. 
 
-To indicate the updated version of the image to pull, you can use the OVHcloud AI CLI and enter:
+To indicate the updated version of the image to pull, you can use the `ovhai` CLI and enter:
 
 ```console
 ovhai app stop <app-id>
@@ -100,7 +100,7 @@ To remedy this, we need to stop our application, change the image using the `ima
 
 Learn how to use public and private registries when working with OVHcloud AI Tools -> LINK NEED TO BE ADDED
 
-Discover some AI Deploy apps we built with API or Web frontend via our [Apps portfolio](https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-deploy-apps-portfolio?id=kb_article_view&sysparm_article=KB0048015).
+Discover some AI Deploy apps we built with API or Web frontend via our [Apps portfolio](/pages/platform/ai/deploy_guide_05_app_portfolio).
 
 ## Feedback
 
