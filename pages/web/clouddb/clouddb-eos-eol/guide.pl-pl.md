@@ -2,14 +2,14 @@
 title: 'Ogłoszenia dotyczące końca umowy sprzedaży/usługi Web Cloud Databases'
 slug: clouddb-eos-eol
 section: 'Zasoby techniczne'
-updated: 2023-04-13
+updated: 2023-05-03
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 13-04-2023**
+**Ostatnia aktualizacja z dnia 03-05-2023**
 
 ## Wprowadzenie
 
@@ -23,7 +23,6 @@ Więcej informacji na ten temat znajdziesz w [polityce wycofania zarządzanych](
 |MariaDB 10.4|2022-07-22|2023-12-18|2024-06-18|
 |MariaDB 10.5|Do określenia|Do określenia|Do określenia|
 |MariaDB 10.6|Do określenia|Do określenia|Do określenia|
-|MongoDB 4|2019-07-29|2019-02-25|2022-09-28|
 |MySQL 5.7|2022-03-29|2023-04-01|2023-10-01|
 |MySQL 8.0|Do określenia|Do określenia|Do określenia|
 |PostgreSQL 10|2021-08-18|2022-05-11|2022-11-10|

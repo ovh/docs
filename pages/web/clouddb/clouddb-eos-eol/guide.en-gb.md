@@ -2,10 +2,10 @@
 title: 'Web Cloud Databases EOS and EOL announcements'
 slug: clouddb-eos-eol
 section: 'Technical resources'
-updated: 2023-04-13
+updated: 2023-05-03
 ---
 
-**Last updated 13rd April 2023**
+**Last updated 3rd May 2023**
 
 ## Objective
 
@@ -19,7 +19,6 @@ The products covered by those End Of Sale (EOS) and End Of Life (EOL) announceme
 |MariaDB 10.5|To be defined|To be defined|To be defined|
 |MariaDB 10.6|To be defined|To be defined|To be defined|
 |MariaDB 10.11|To be defined|To be defined|To be defined|
-|MongoDB 4|2019-07-29|2019-02-25|2022-09-28|
 |MySQL 5.7|2022-03-29|2023-04-01|2023-10-01|
 |MySQL 8.0|To be defined|To be defined|To be defined|
 |PostgreSQL 10|2021-08-18|2022-05-11|2022-11-10|
