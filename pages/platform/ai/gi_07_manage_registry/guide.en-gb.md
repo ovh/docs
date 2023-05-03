@@ -23,7 +23,7 @@ This guide is intended to help you to **use and manage your public and private r
 This documentation is divided into the following parts:
 - Manage existing registries through
     - OVHcloud Control Panel (UI)
-    - OVHcloud AI CLI
+    - OVHcloud AI CLI `ovhai`
 - Create, configure and use new registries
     - Private Harbor registry
     - Private Docker registry
