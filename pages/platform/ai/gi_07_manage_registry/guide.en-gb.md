@@ -142,7 +142,7 @@ When you have finished filling in the form, click `Add`{.action}.
 To add your private Harbor registry via CLI, use:
 
 ``` {.console}
-ovhai registry add <url>
+ovhai registry add <registry-url>
 ```
 
 Once your registry is added, you should see it in your registries list. You can then use any images pushed on this registry for your AI Training jobs and AI Deploy apps.
