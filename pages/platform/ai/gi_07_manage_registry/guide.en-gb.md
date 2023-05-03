@@ -38,7 +38,7 @@ The Public Cloud provide a default registry called `shared registry`, where user
 >This `shared registry` can help you perform your tests, but **should not be used in production**, as we reserve the right to delete its content if deemed necessary.
 >
 
-This is why it can be interesting to add, manage other registries. We can either do this by using the OVHcloud Control Panel (UI) or the AI CLI.
+This is why it can be interesting to add, manage other registries. We can either do this by using the OVHcloud Control Panel (UI) or the `ovhai` CLI.
 
 ### Manage existing registries through UI
 
