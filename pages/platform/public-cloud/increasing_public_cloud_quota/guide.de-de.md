@@ -58,7 +58,7 @@ Klicken Sie dann auf den Dropdown-Pfeil neben "Wählen Sie die Menge aus", um di
 Die nachstehende Tabelle zeigt die Ressourcen, die Sie für jedes Kontingent erhalten:
 
 |Quota|Instanzen|CPU/Cores|RAM|Größe Disk|Anzahl Disk|Snapshots|Backup Größe|Floating IPs|Octavia Load Balancer|Gateway (Routers)
-|---|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|---|---|
 |10 VMs|10|20|40GB|20TB|20|20|59TB|2|2|2|
 |20 VMs|20|40|240GB|20TB|40|40|117TB|2|2|2|
 |50 VMs|50|64|496GB|20TB|100|100|293TB|10|10|10|

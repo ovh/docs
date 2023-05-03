@@ -59,7 +59,7 @@ In seguito, clicca sulla freccia a discesa accanto a "Seleziona il volume" per v
 Nella tabella seguente vengono indicate le risorse disponibili per ogni quota:
 
 |Quota|Instanze|CPU/Cores|RAM|Dimensione del volume|Volumi|Snapshots|Dimensione di backup|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
-|---|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|---|---|
 |10 VMs|10|20|40GB|20TB|20|20|59TB|2|2|2|
 |20 VMs|20|40|240GB|20TB|40|40|117TB|2|2|2|
 |50 VMs|50|64|496GB|20TB|100|100|293TB|10|10|10|

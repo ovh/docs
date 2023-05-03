@@ -57,7 +57,7 @@ A continuación, haga clic en la flecha desplegable situada junto a "Seleccione 
 La tabla siguiente muestra los recursos que obtiene por cada cuota:
 
 |Quota|Instancias|CPU/núcleos|RAM|Tamaño del volumen|Volúmenes|Snapshots|Tamaño de la copia de seguridad|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
-|---|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|---|---|
 |10 VMs|10|20|40GB|20TB|20|20|59TB|2|2|2|
 |20 VMs|20|40|240GB|20TB|40|40|117TB|2|2|2|
 |50 VMs|50|64|496GB|20TB|100|100|293TB|10|10|10|
