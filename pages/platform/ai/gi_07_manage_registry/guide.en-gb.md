@@ -11,7 +11,7 @@ updated: 2023-05-02
 
 ## Objective
 
-This guide is intended to help you to **use and manage your public and private registries** through `ovhai` command line interface ([AI CLI](https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-cli-install-client?id=kb_article_view&sysparm_article=KB0047844)), API and [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). This will help you when working with **OVHcloud AI Tools**, especially with **AI Training** and **AI Deploy**.
+This guide is intended to help you to **use and manage your public and private registries** through `ovhai` command line interface ([AI CLI](/pages/platform/ai/cli_10_howto_install_cli)), API and [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). This will help you when working with **OVHcloud AI Tools**, especially with **AI Training** and **AI Deploy**.
 
 ## Requirements
 
@@ -76,7 +76,7 @@ Delete a registry by using:
 ovhai registry delete <id>
 ```
 
-*If you do not have our `ovhai` CLI yet, learn how to install it [here](https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-cli-install-client?id=kb_article_view&sysparm_article=KB0047844).*
+*If you do not have our `ovhai` CLI yet, learn how to install it [here](/pages/platform/ai/cli_10_howto_install_cli).*
 
 ## Create, configure and use new registries
 
@@ -99,15 +99,15 @@ OVHcloud Managed Private Registry service allows you to spawn your own authentic
 
 #### Creation
 
-To create your new private registry, we advise you to read and follow the steps mentioned in the [Creating a private registry documentation](https://help.ovhcloud.com/csm/en-sg-public-cloud-private-registry-creation?id=kb_article_view&sysparm_article=KB0050326).
+To create your new private registry, we advise you to read and follow the steps mentioned in the [Creating a private registry documentation](/pages/platform/private-registry/creating-a-private-registry).
 
 At the end of this step, you should have your **registry identification details**.
 
 #### Configuration
 
-Then, you will need to use these credentials to **connect to the Harbor UI**. This will allow you to manage this private registry. This simple step is explained in the [Connecting to the UI documentation](https://help.ovhcloud.com/csm/en-sg-public-cloud-private-registry-connect-to-ui?id=kb_article_view&sysparm_article=KB0050324).
+Then, you will need to use these credentials to **connect to the Harbor UI**. This will allow you to manage this private registry. This simple step is explained in the [Connecting to the UI documentation](/pages/platform/private-registry/connecting-to-the-ui).
 
-To finish setting up your private Harbor registry, you will need to **create a project on Harbor**, and associate a user to it (Administrator user is added by default, but you can create a new one for this project). You will find all needed information in this [documentation](https://help.ovhcloud.com/csm/en-sg-public-cloud-private-registry-managing-users-projects?id=kb_article_view&sysparm_article=KB0050355). 
+To finish setting up your private Harbor registry, you will need to **create a project on Harbor**, and associate a user to it (Administrator user is added by default, but you can create a new one for this project). You will find all needed information in this [documentation](/pages/platform/private-registry/managing-users-and-projects). 
 
 #### Get your OVHcloud Managed Private Registry API URL
 
@@ -300,8 +300,8 @@ You can also use the Control Panel to deploy a job or an app from a GitHub regis
 
 ## Going Further
 
-- You can check the official documentation about [how to submit a **job**](https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-training-submit-job?id=kb_article_view&sysparm_article=KB0048754)
-- Learn [how to deploy an **app**](https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-deploy-getting-started?id=kb_article_view&sysparm_article=KB0047971)
+- You can check the official documentation about [how to submit a **job**](/pages/platform/ai/training_guide_02_howto_submit_job)
+- Learn [how to deploy an **app**](/pages/platform/ai/deploy_guide_02_getting_started)
 - You can check out the documentation about the [ovhai CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/overview-cli)
 
 
