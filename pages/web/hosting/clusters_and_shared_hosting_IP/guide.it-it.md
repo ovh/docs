@@ -886,6 +886,12 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 
 ## Per saperne di più
 
+[Installare un multisito sul tuo hosting Web](/pages/web/hosting/multisites_configure_multisite) 
+
+[Attiva l'HTTPS con il tuo certificato SSL sul tuo hosting Web](/pages/web/hosting/ssl-activate-https-website)
+
+[Ottimizza le performance del tuo sito Web](/pages/web/hosting/optimise_your_website_performance)
+
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
  
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).

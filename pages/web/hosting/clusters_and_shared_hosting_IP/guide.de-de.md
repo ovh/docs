@@ -879,11 +879,12 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 
 ## Weiterführende Informationen
 
-[Mehrere Websites auf einem Webhosting einrichten](../multisites-mehrere-websites-konfigurieren/)
+[Mehrere Websites auf einem Webhosting einrichten](/pages/web/hosting/multisites_configure_multisite)
 
-[Website mit SSL-Zertifikat auf HTTPS umstellen](../website-umstellen-https-ssl)
+[Website mit SSL-Zertifikat auf HTTPS umstellen](/pages/web/hosting/ssl-activate-https-website)
 
-[Optimierung der Performance Ihrer Website](../webhosting_optimierung_der_performance_ihrer_webseite)
+[Optimierung der Performance Ihrer Website](/pages/web/hosting/optimise_your_website_performance)
+
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

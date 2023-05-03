@@ -882,6 +882,12 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 
 ## Quer saber mais?
 
+[Implementar um multi-site no seu alojamento Web](/pages/web/hosting/multisites_configure_multisite)
+
+[Ativar o HTTPS com o seu certificado SSL no seu alojamento Web](/pages/web/hosting/ssl-activate-https-website)
+
+[Otimizar as performances do seu website](/pages/web/hosting/optimise_your_website_performance)
+
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
  
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).

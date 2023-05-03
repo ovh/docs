@@ -876,11 +876,11 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 
 ## Go further
 
-[Hosting multiple websites on your Web Hosting plan](../multisites-configuring-multiple-websites)
+[Hosting multiple websites on your Web Hosting plan](/pages/web/hosting/multisites_configure_multisite)
 
-[Activating HTTPS on your website with an SSL certificate](../activate-https-website-ssl)
+[Activating HTTPS on your website with an SSL certificate](/pages/web/hosting/ssl-activate-https-website)
 
-[Optimise your website’s performance](../web_hosting_optimise_your_website_performance)
+[Optimise your website’s performance](/pages/web/hosting/optimise_your_website_performance)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 

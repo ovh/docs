@@ -883,6 +883,12 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 
 ## Sprawdź również
 
+[Uruchomienie strony podpiętej w opcji MultiSite na Twoim hostingu](/pages/web/hosting/multisites_configure_multisite)
+
+[Włącz HTTPS za pomocą certyfikatu SSL na Twoim hostingu](/pages/web/hosting/ssl-activate-https-website)
+
+[Zoptymalizuj wydajność swojej strony www](/pages/web/hosting/optimise_your_website_performance)
+
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
  
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
