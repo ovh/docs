@@ -21,7 +21,7 @@ cPanel Ã¨ un pannello di controllo sviluppato per gli hosting Web. Grazie a unâ€
 ## Prerequisiti
 
 - Un [VPS della gamma attuale](https://www.ovhcloud.com/it/vps/) (offerte Value, Essential, Comfort o Elite).
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 ## Procedura
 

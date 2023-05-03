@@ -41,7 +41,7 @@ La dashboard che ti viene presentata contiene informazioni importanti sul tuo se
 
 Per l’attuale gamma di VPS, prosegui nella lettura di questa guida, alla sezione: **Iniziare a utilizzare un VPS (gamma attuale)**.
 
-Per un modello VPS meno recente, prosegui nella lettura di questa guida: [Iniziare a utilizzare un VPS (gamma meno recente)](./#iniziare-a-utilizzare-un-vps-gamma-meno-recente)
+Per un modello VPS meno recente, prosegui nella lettura di questa guida: [Iniziare a utilizzare un VPS (gamma meno recente)](./#iniziare-a-utilizzare-un-vps-gamma-meno-recente).
 
 ### Iniziare a utilizzare un VPS (gamma attuale)
 

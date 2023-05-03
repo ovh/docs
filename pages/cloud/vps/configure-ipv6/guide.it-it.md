@@ -29,7 +29,7 @@ L’IPv6 è la versione più recente dell’*Internet Protocol*(IP). Ogni server
 - Disporre di un [server VPS OVHcloud](https://www.ovhcloud.com/it/vps/){.external}
 - Essere connesso al tuo VPS in SSH (accesso root) o tramite desktop remoto (Windows)
 - Possedere conoscenze base di rete
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o all'[API OVHcloud](https://api.ovh.com/).
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o all'[API OVHcloud](https://api.ovh.com/)
 
 ## Procedura
 
@@ -121,7 +121,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Esistono due metodi per configurare la tua rete in base al sistema operativo installato sul tuo server:
 
-- **per Debian 11 e inferiore, Ubuntu 16.04 e inferiore**: utilizza il [metodo basato sul file *interfaces*](#interfaces)
+- **per Debian 11 e inferiore, Ubuntu 16.04 e inferiore**: utilizza il [metodo basato sul file *interfaces*](#interfaces).
 
 - **per Ubuntu 17.04 e versioni successive**: utilizza il [metodo basato sulla funzione *Netplan*](#netplan).
 
@@ -349,7 +349,7 @@ ping6 proof.ovh.net
 
 - **Per un sistema Windows**, utilizza il comando:
 
-```
+```powershell
 ipconfig
 
 Windows IP Configuration
@@ -367,7 +367,7 @@ Ethernet adapter Ethernet:
 
 Per verificare la connessione, utilizza il seguente comando:
 
-```
+```powershell
 ping -6 proof.ovh.net
 ```
 
