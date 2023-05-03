@@ -88,7 +88,7 @@ Yes, that's exactly the use case for Gateway (L3 router with SNAT option). Curre
 
 It depends on the usage:
 
-- For outbound use cases we offer a shared public IP on Gateway which is included.
+- For outbound use cases we offer a public IP which is included in the Gateway price.
 - For inbound use cases (to expose a service running on a private instance to the Internet) you need to have a Floating IP to attach via Gateway to your instance or network service.
 
 ### How can I spawn a private instance to be used with Gateway and SNAT option?
