@@ -37,7 +37,10 @@ When updating a Docker image, we have two options:
 - **Use an existing tag**: Will overwrite the old version of the image with the new one. 
 - **Create a new tag**: Will keep the old version of the image while adding the new version.
 
-In this tutorial, we will assume that you have already an app which is running on an Docker image, and an updated version of this image. The two previous possibilities (existing tag and new one) will be explained.
+[!primary]
+>
+> In this tutorial, we will assume that you have already an app which is running on an Docker image, and an updated version of this image. The two previous possibilities (existing tag and new one) will be explained.
+>
 
 ### Updating our app's image
 
