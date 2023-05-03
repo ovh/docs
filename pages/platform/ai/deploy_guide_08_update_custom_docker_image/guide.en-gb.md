@@ -52,6 +52,11 @@ If when updating our Docker image, we have **reused the same tag** as the one sp
 
 In fact, the image tag that was specified at the initial launch of the application will be pulled again during the restarting step. Since the initial tag corresponds to the tag of the updated image, the new image version will be pulled and used within our restarted application.
 
+> [!warning]
+>
+>As mentioned before, updating your Docker image using the same tag can be dangerous. Keep in mind that this will **overwrite, delete your previous version**.
+>
+
 ##### Example 
 
 Let's imagine that our AI Deploy app was initially launched based on the following image: `registry_adress.ovh.net/my_ai_app:v1.0.0`. As you can see, our image is stored in the `registry_adress.ovh.net` registry, is named `my_ai_app`, and the version used is tagged `v1.0.0`. 
