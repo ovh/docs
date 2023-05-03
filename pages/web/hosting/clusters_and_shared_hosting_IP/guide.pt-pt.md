@@ -3,10 +3,10 @@ title: 'Lista dos endereços IP dos clusters e alojamentos web'
 slug: lista-dos-enderecos-ip-dos-clusters-e-alojamentos-web
 section: Configuração do alojamento
 order: 01
-updated: 2023-04-14
+updated: 2023-05-03
 ---
 
-**Última atualização: 14/04/2023**
+**Última atualização: 03/05/2023**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -67,12 +67,6 @@ Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, 
 46.105.204.2
 ```
 
-Se tem o certificado **SSL GlobalSign (pago)** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-46.105.174.33
-```
-
 Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve utilizar o seguinte endereço IP:
 
 ```bash
@@ -110,12 +104,6 @@ Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, 
 46.105.204.3
 ```
 
-Se tem o certificado **SSL GlobalSign (pago)** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-46.105.174.34
-```
-
 Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve utilizar o seguinte endereço IP:
 
 ```bash
@@ -125,7 +113,6 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 ### Cluster 005
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
-
 
 |País|Código de país|IPv4|IPv6|
 |---|---|----|---|
@@ -154,12 +141,6 @@ Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, 
 46.105.204.5
 ```
 
-Se tem o certificado **SSL GlobalSign (pago)** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-46.105.174.35
-```
-
 Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve utilizar o seguinte endereço IP:
 
 ```bash
@@ -169,7 +150,6 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 ### Cluster 006
 
 De seguida indicamos os endereços IP do **cluster** para cada país (tendo em vista a geolocalização):
-
 
 |País|Código de país|IPv4|IPv6|
 |---|---|----|---|
@@ -196,12 +176,6 @@ Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, 
 
 ```bash
 46.105.204.6
-```
-
-Se tem o certificado **SSL GlobalSign (pago)** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-46.105.174.36
 ```
 
 Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve utilizar o seguinte endereço IP:
@@ -241,12 +215,6 @@ Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, 
 46.105.204.7
 ```
 
-Se tem o certificado **SSL GlobalSign (pago)** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-46.105.174.37
-```
-
 Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve utilizar o seguinte endereço IP:
 
 ```bash
@@ -282,12 +250,6 @@ Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, 
 
 ```bash
 46.105.204.10
-```
-
-Se tem o certificado **SSL GlobalSign (pago)** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-46.105.174.38
 ```
 
 Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve utilizar o seguinte endereço IP:
@@ -327,12 +289,6 @@ Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, 
 46.105.204.11
 ```
 
-Se tem o certificado **SSL GlobalSign (pago)** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-46.105.174.39
-```
-
 Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve utilizar o seguinte endereço IP:
 
 ```bash
@@ -368,12 +324,6 @@ Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, 
 
 ```bash
 46.105.204.12
-```
-
-Se tem o certificado **SSL GlobalSign (pago)** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-46.105.174.40
 ```
 
 Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve utilizar o seguinte endereço IP:
@@ -413,12 +363,6 @@ Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, 
 46.105.204.13
 ```
 
-Se tem o certificado **SSL GlobalSign (pago)** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-46.105.174.41
-```
-
 Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve utilizar o seguinte endereço IP:
 
 ```bash
@@ -454,12 +398,6 @@ Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, 
 
 ```bash
 46.105.204.14
-```
-
-Se tem o certificado **SSL GlobalSign (pago)** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-46.105.174.42
 ```
 
 Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve utilizar o seguinte endereço IP:
@@ -499,12 +437,6 @@ Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, 
 46.105.204.15
 ```
 
-Se tem o certificado **SSL GlobalSign (pago)** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-46.105.174.43
-```
-
 Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve utilizar o seguinte endereço IP:
 
 ```bash
@@ -540,12 +472,6 @@ Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, 
 
 ```bash
 46.105.204.17
-```
-
-Se tem o certificado **SSL GlobalSign (pago)** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-46.105.174.44
 ```
 
 Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve utilizar o seguinte endereço IP:

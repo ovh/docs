@@ -3,10 +3,10 @@ title: 'Liste des adresses IP des clusters et hebergements web'
 slug: liste-des-adresses-ip-des-clusters-et-hebergements-web
 section: "Configuration de l'hébergement"
 order: 01
-updated: 2023-04-14
+updated: 2023-05-03
 ---
 
-**Dernière mise à jour le 14/04/2023**
+**Dernière mise à jour le 03/05/2023**
 
 ## Objectif
 
@@ -839,13 +839,11 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
 Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
-
 ```bash
 46.105.204.31
 ```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
-
 
 ```bash
 141.94.87.67
@@ -859,7 +857,7 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |---|---|----|---|
 |Canada|CA|51.161.122.78|2607:5300:202:0:0::51|
 
-Si le *CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 ```bash
 178.32.120.166

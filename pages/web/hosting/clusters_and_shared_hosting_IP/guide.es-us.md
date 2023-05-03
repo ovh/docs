@@ -3,10 +3,10 @@ title: 'Direcciones IP de los clusters y alojamientos web'
 slug: lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web
 section: 'Configuración del alojamiento'
 order: 01
-updated: 2023-04-14
+updated: 2023-05-03
 ---
 
-**Última actualización: 14/04/2023**
+**Última actualización: 03/05/2023**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -40,7 +40,6 @@ Puede comprobar el número de cluster del alojamiento web en esta página bajo *
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
 
-
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
 |Francia|FR|213.186.33.2|2001:41d0:1:1b00:213:186:33:2|
@@ -58,7 +57,6 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
 
-
 ```bash
 213.186.33.69
 ```
@@ -69,25 +67,15 @@ Si el servicio **Shared CDN** (lanzado el 19/11/2020) está activado en su aloja
 46.105.204.2
 ```
 
-Si tiene el **certificado SSL GlobalSign (de pago)** activado en su alojamiento, debe utilizar la siguiente dirección IP:
-
-
-```bash
-46.105.174.33
-```
-
 Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
-
 
 ```bash
 51.68.11.191
 ```
 
-
 ### Cluster 003
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
-
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
@@ -106,7 +94,6 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
 
-
 ```bash
 213.186.33.85
 ```
@@ -117,25 +104,15 @@ Si el servicio **Shared CDN** (lanzado el 19/11/2020) está activado en su aloja
 46.105.204.3
 ```
 
-Si tiene el **certificado SSL GlobalSign (de pago)** activado en su alojamiento, debe utilizar la siguiente dirección IP:
-
-
-```bash
-46.105.174.34
-```
-
 Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
-
 
 ```bash
 51.68.11.195
 ```
 
-
 ### Cluster 005
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
-
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
@@ -154,7 +131,6 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
 
-
 ```bash
 213.186.33.95
 ```
@@ -165,25 +141,15 @@ Si el servicio **Shared CDN** (lanzado el 19/11/2020) está activado en su aloja
 46.105.204.5
 ```
 
-Si tiene el **certificado SSL GlobalSign (de pago)** activado en su alojamiento, debe utilizar la siguiente dirección IP:
-
-
-```bash
-46.105.174.35
-```
-
 Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
-
 
 ```bash
 51.68.11.199
 ```
 
-
 ### Cluster 006
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
-
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
@@ -202,7 +168,6 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
 
-
 ```bash
 213.186.33.97
 ```
@@ -213,15 +178,7 @@ Si el servicio **Shared CDN** (lanzado el 19/11/2020) está activado en su aloja
 46.105.204.6
 ```
 
-Si tiene el **certificado SSL GlobalSign (de pago)** activado en su alojamiento, debe utilizar la siguiente dirección IP:
-
-
-```bash
-46.105.174.36
-```
-
 Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
-
 
 ```bash
 51.68.11.203
@@ -230,7 +187,6 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 ### Cluster 007
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
-
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
@@ -249,7 +205,6 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
 
-
 ```bash
 213.186.33.105
 ```
@@ -260,25 +215,15 @@ Si el servicio **Shared CDN** (lanzado el 19/11/2020) está activado en su aloja
 46.105.204.7
 ```
 
-Si tiene el **certificado SSL GlobalSign (de pago)** activado en su alojamiento, debe utilizar la siguiente dirección IP:
-
-
-```bash
-46.105.174.37
-```
-
 Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
-
 
 ```bash
 51.68.11.207
 ```
 
-
 ### Cluster 010
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
-
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
@@ -297,7 +242,6 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
 
-
 ```bash
 213.186.33.107
 ```
@@ -308,25 +252,15 @@ Si el servicio **Shared CDN** (lanzado el 19/11/2020) está activado en su aloja
 46.105.204.10
 ```
 
-Si tiene el **certificado SSL GlobalSign (de pago)** activado en su alojamiento, debe utilizar la siguiente dirección IP:
-
-
-```bash
-46.105.174.38
-```
-
 Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
-
 
 ```bash
 51.68.11.211
 ```
 
-
 ### Cluster 011
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
-
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
@@ -345,7 +279,6 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
 
-
 ```bash
 213.186.33.151
 ```
@@ -356,25 +289,15 @@ Si el servicio **Shared CDN** (lanzado el 19/11/2020) está activado en su aloja
 46.105.204.11
 ```
 
-Si tiene el **certificado SSL GlobalSign (de pago)** activado en su alojamiento, debe utilizar la siguiente dirección IP:
-
-
-```bash
-46.105.174.39
-```
-
 Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
-
 
 ```bash
 51.68.11.215
 ```
 
-
 ### Cluster 012
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
-
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
@@ -393,7 +316,6 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
 
-
 ```bash
 213.186.33.153
 ```
@@ -404,20 +326,11 @@ Si el servicio **Shared CDN** (lanzado el 19/11/2020) está activado en su aloja
 46.105.204.12
 ```
 
-Si tiene el **certificado SSL GlobalSign (de pago)** activado en su alojamiento, debe utilizar la siguiente dirección IP:
-
-
-```bash
-46.105.174.40
-```
-
 Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
-
 
 ```bash
 51.68.11.219
 ```
-
 
 ### Cluster 013
 
@@ -440,7 +353,6 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
 
-
 ```bash
 213.186.33.83
 ```
@@ -451,25 +363,15 @@ Si el servicio **Shared CDN** (lanzado el 19/11/2020) está activado en su aloja
 46.105.204.13
 ```
 
-Si tiene el **certificado SSL GlobalSign (de pago)** activado en su alojamiento, debe utilizar la siguiente dirección IP:
-
-
-```bash
-46.105.174.41
-```
-
 Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
-
 
 ```bash
 51.68.11.223
 ```
 
-
 ### Cluster 014
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
-
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
@@ -488,7 +390,6 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
 
-
 ```bash
 213.186.33.169
 ```
@@ -499,25 +400,15 @@ Si el servicio **Shared CDN** (lanzado el 19/11/2020) está activado en su aloja
 46.105.204.14
 ```
 
-Si tiene el **certificado SSL GlobalSign (de pago)** activado en su alojamiento, debe utilizar la siguiente dirección IP:
-
-
-```bash
-46.105.174.42
-```
-
 Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
-
 
 ```bash
 51.68.11.227
 ```
 
-
 ### Cluster 015
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
-
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
@@ -536,7 +427,6 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
 
-
 ```bash
 213.186.33.171
 ```
@@ -547,25 +437,15 @@ Si el servicio **Shared CDN** (lanzado el 19/11/2020) está activado en su aloja
 46.105.204.15
 ```
 
-Si tiene el **certificado SSL GlobalSign (de pago)** activado en su alojamiento, debe utilizar la siguiente dirección IP:
-
-
-```bash
-46.105.174.43
-```
-
 Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
-
 
 ```bash
 51.68.11.231
 ```
 
-
 ### Cluster 017
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
-
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
@@ -584,7 +464,6 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
 
-
 ```bash
 213.186.33.173
 ```
@@ -595,25 +474,15 @@ Si el servicio **Shared CDN** (lanzado el 19/11/2020) está activado en su aloja
 46.105.204.17
 ```
 
-Si tiene el **certificado SSL GlobalSign (de pago)** activado en su alojamiento, debe utilizar la siguiente dirección IP:
-
-
-```bash
-46.105.174.44
-```
-
 Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
-
 
 ```bash
 51.68.11.239
 ```
 
-
 ### Cluster 020
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
-
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
@@ -633,7 +502,6 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 
 Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
 
-
 ```bash
 213.186.33.176
 ```
@@ -646,16 +514,13 @@ Si el servicio **Shared CDN** (lanzado el 19/11/2020) está activado en su aloja
 
 Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
 
-
 ```bash
 91.134.248.253
 ```
 
-
 ### Cluster 021
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
-
 
 |País|Código del país|IPv4|IPv6|
 |---|---|----|---|
@@ -674,7 +539,6 @@ A continuación se indican las direcciones IP del **cluster** para cada país (p
 |Bélgica|BE|178.32.40.72|2001:41d0:301:10::21|
 
 Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
-
 
 ```bash
 213.186.33.177
@@ -764,7 +628,6 @@ Si el servicio **Shared CDN** (lanzado el 19/11/2020) está activado en su aloja
 
 Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
 
-
 ```bash
 91.134.248.230
 ```
@@ -802,7 +665,6 @@ Si el servicio **Shared CDN** (lanzado el 19/11/2020) está activado en su aloja
 ```
 
 Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
-
 
 ```bash
 91.134.248.211
@@ -842,7 +704,6 @@ Si el servicio **Shared CDN** (lanzado el 19/11/2020) está activado en su aloja
 
 Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
 
-
 ```bash
 54.37.121.239
 ```
@@ -880,7 +741,6 @@ Si el servicio **Shared CDN** (lanzado el 19/11/2020) está activado en su aloja
 ```
 
 Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
-
 
 ```bash
 91.134.248.249

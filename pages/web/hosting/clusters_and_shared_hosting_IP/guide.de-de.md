@@ -4,10 +4,10 @@ excerpt: 'Erfahren Sie hier, welche IP-Adresse für Ihr OVHcloud Webhosting zu v
 slug: verzeichnis-der-ip-adressen-web-hosting-cluster
 section: 'Webhosting-Konfiguration'
 order: 01
-updated: 2023-04-14
+updated: 2023-05-03
 ---
 
-**Letzte Aktualisierung am 14.04.2023**
+**Letzte Aktualisierung am 03.05.2023**
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
@@ -360,12 +360,6 @@ Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webh
 46.105.204.13
 ```
 
-Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-46.105.174.41
-```
-
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -543,7 +537,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Belgien|BE|178.32.40.72|2001:41d0:301:10::21|
 
 Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
 
 ```bash
 213.186.33.177

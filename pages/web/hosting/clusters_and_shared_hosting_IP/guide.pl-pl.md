@@ -3,10 +3,10 @@ title: 'Lista adresów IP klastrów i hostingów WWW'
 slug: lista-adresow-ip-klastrow-i-hostingow-www
 section: 'Konfiguracja hostingu'
 order: 01
-updated: 2023-04-14
+updated: 2023-05-03
 ---
 
-**Ostatnia aktualizacja z dnia 14-04-2023**
+**Ostatnia aktualizacja z dnia 03-05-2023**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
@@ -67,12 +67,6 @@ Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj 
 46.105.204.2
 ```
 
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
-
-```bash
-46.105.174.33
-```
-
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
 ```bash
@@ -108,12 +102,6 @@ Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj 
 
 ```bash
 46.105.204.3
-```
-
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
-
-```bash
-46.105.174.34
 ```
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
@@ -153,12 +141,6 @@ Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj 
 46.105.204.5
 ```
 
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
-
-```bash
-46.105.174.35
-```
-
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
 ```bash
@@ -194,12 +176,6 @@ Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj 
 
 ```bash
 46.105.204.6
-```
-
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
-
-```bash
-46.105.174.36
 ```
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
@@ -239,12 +215,6 @@ Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj 
 46.105.204.7
 ```
 
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
-
-```bash
-46.105.174.37
-```
-
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
 ```bash
@@ -280,12 +250,6 @@ Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj 
 
 ```bash
 46.105.204.10
-```
-
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
-
-```bash
-46.105.174.38
 ```
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
@@ -326,12 +290,6 @@ Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj 
 46.105.204.11
 ```
 
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
-
-```bash
-46.105.174.39
-```
-
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
 ```bash
@@ -367,12 +325,6 @@ Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj 
 
 ```bash
 46.105.204.12
-```
-
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
-
-```bash
-46.105.174.40
 ```
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
@@ -412,12 +364,6 @@ Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj 
 46.105.204.13
 ```
 
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
-
-```bash
-46.105.174.41
-```
-
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
 ```bash
@@ -453,12 +399,6 @@ Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj 
 
 ```bash
 46.105.204.14
-```
-
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
-
-```bash
-46.105.174.42
 ```
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
@@ -498,12 +438,6 @@ Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj 
 46.105.204.15
 ```
 
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
-
-```bash
-46.105.174.43
-```
-
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
 ```bash
@@ -539,12 +473,6 @@ Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj 
 
 ```bash
 46.105.204.17
-```
-
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
-
-```bash
-46.105.174.44
 ```
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
@@ -852,7 +780,6 @@ Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj 
 ```
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
-
 
 ```bash
 91.134.248.192
