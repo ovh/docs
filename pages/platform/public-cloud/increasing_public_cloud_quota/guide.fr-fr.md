@@ -5,10 +5,10 @@ slug: increase-public-cloud-quota
 legacy_guide_number: 1904
 section: 'Gestion de projets'
 order: 6
-updated: 2023-01-27
+updated: 2023-05-03
 ---
 
-**Dernière mise à jour le 27/01/2023**
+**Dernière mise à jour le 03/05/2023**
 
 ## Objectif
 
@@ -52,13 +52,13 @@ Cliquez sur la flèche à côté de « Sélectionnez le volume » pour afficher 
 
 Le tableau ci-dessous vous indique les ressources obtenues pour chaque quota :
 
-|Quota|Instances|CPU/Cores|RAM|Taille du volume|Volumes|Snapshots|Floating IPs|Load Balancer Octavia|Gateway (Routers)
-|---|---|---|---|---|---|---|---|---|---|
-|10 VMs|10|20|40GB|20TB|20|20|2|2|2|
-|20 VMs|20|40|240GB|20TB|40|40|2|2|2|
-|50 VMs|50|64|496GB|20TB|100|100|10|10|10|
-|100 VMs|100|128|992GB|39TB|200|200|10|10|10|
-|200 VMs|200|512|3.9TB|78TB|400|400|50|50|50|
+|Quota|Instances|CPU/Cores|RAM|Taille du volume|Volumes|Snapshots|Taille des sauvegardes|Floating IPs|Load Balancer Octavia|Gateway (Routers)|
+|---|---|---|---|---|---|---|---|---|---|---|
+|10 VMs|10|20|40GB|20TB|20|20|59TB|2|2|2|
+|20 VMs|20|40|240GB|20TB|40|40|117TB|2|2|2|
+|50 VMs|50|64|496GB|20TB|100|100|293TB|10|10|10|
+|100 VMs|100|128|992GB|39TB|200|200|586TB|10|10|10|
+|200 VMs|200|512|3.9TB|78TB|400|400|1172TB|50|50|50|
 
 Une fois votre volume sélectionné, cliquez sur `Confirmer`{.action}. Votre paiement sera pris en compte dans les plus brefs délais.
 

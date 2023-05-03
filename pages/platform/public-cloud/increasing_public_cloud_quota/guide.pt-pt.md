@@ -5,14 +5,14 @@ slug: increase-public-cloud-quota
 legacy_guide_number: g1904
 order: 6
 section: Gestão do projeto
-updated: 2023-01-27
+updated: 2023-05-03
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização 27/01/2023**
+**Última atualização 03/05/2023**
 
 ## Objetivo
 
@@ -59,13 +59,13 @@ Em seguida, clique na seta descendente ao lado de "Selecione o volume" para exib
 
 A tabela abaixo mostra os recursos obtidos para cada cota:
 
-|Quota|Instâncias|CPU/Cores|RAM|Tamanho do volume|Volumes|Snapshots|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
-|---|---|---|---|---|---|---|---|---|---|
-|10 VMs|10|20|40GB|20TB|20|20|2|2|2|
-|20 VMs|20|40|240GB|20TB|40|40|2|2|2|
-|50 VMs|50|64|496GB|20TB|100|100|10|10|10|
-|100 VMs|100|128|992GB|39TB|200|200|10|10|10|
-|200 VMs|200|512|3.9TB|78TB|400|400|50|50|50|
+|Quota|Instâncias|CPU/Cores|RAM|Tamanho do volume|Volumes|Snapshots|Tamanho da cópia de segurança|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
+|---|---|---|---|---|---|---|---|---|---|---|
+|10 VMs|10|20|40GB|20TB|20|20|59TB|2|2|2|
+|20 VMs|20|40|240GB|20TB|40|40|117TB|2|2|2|
+|50 VMs|50|64|496GB|20TB|100|100|293TB|10|10|10|
+|100 VMs|100|128|992GB|39TB|200|200|586TB|10|10|10|
+|200 VMs|200|512|3.9TB|78TB|400|400|1172TB|50|50|50|
 
 Depois de selecionar o volume, clique em `Confirmar`{.action}. Seu pagamento será processado o mais rapidamente possível.
 
