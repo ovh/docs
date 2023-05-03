@@ -162,14 +162,14 @@ Substitua o endereço IP na encomenda pelo endereço IP que pretende bloquear.
 Pode rejeitar o tráfego a partir de um intervalo de endereços IP, com o seguinte comando:
 
 ```bash
-sudo iptables -A INPUT -m iprange —selecione o seu_endereço_IP_inicio-o_o_endereço_IP_fin -j REJECT
+sudo iptables -A INPUT -m iprange --src-range o seu_endereço_IP_inicio-o_o_endereço_IP_fin -j REJECT
 ```
 
 As opções essenciais que utilizámos nos exemplos funcionam da seguinte forma:
 
 - -m: Corresponde à opção especificada.
 - -iprange: Indica ao sistema esperar um intervalo de endereços de IP em vez de um só.
-- —-src-range: Identifique o intervalo de endereços IP.
+- --src-range: Identifique o intervalo de endereços IP.
 
 ### Etapa 7: eliminar o tráfego indesejável
 
