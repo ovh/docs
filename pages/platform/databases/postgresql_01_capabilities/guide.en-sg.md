@@ -4,10 +4,10 @@ slug: postgresql/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for PostgreSQL
 section: PostgreSQL - Guides
 order: 010
-updated: 2023-04-14
+updated: 2023-05-03
 ---
 
-**Last updated April 14th, 2023**
+**Last updated May 3rd, 2023**
 
 ## Objective
 
@@ -71,7 +71,7 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 
 - **Essential**: the cluster can support at most one node.
 - **Business**: the cluster is delivered with 2 nodes by default. Adding read replicas is planned.
-- **Enterprise**: The cluster is delivered with 3 nodes by default. Adding read replicas is planned.
+- **Enterprise**: the cluster is delivered with 3 nodes by default. Adding read replicas is planned.
 
 #### License type
 
@@ -119,7 +119,7 @@ We try hard to avoid "disk full" situations that could be harmful to cluster hea
 2. When reaching a concerning level of disk usage, the service is moved in the "DISK_FULL" state, and "read-only" mode, meaning no more writes can be done.
 3. You then have the ability to upgrade to a higher service plan with more storage.
 
-See the [Handling «Disk Full» situations documentation](https://docs.ovh.com/sg/en/publiccloud/databases/handling-disk-full/) for more information.
+See the [Handling «Disk Full» situations documentation](/pages/platform/databases/databases_10_full_disk_handling) for more information.
 
 ### Features
 
@@ -161,8 +161,7 @@ You can further customise your PostgreSQL by using advanced parameters. See the 
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel and the API.
-As of today, you can't export logs and metrics, nor plug them into a remote tool.
+Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your PostgreSQL logs in Opensearch and metrics in Grafana. See the [Cross Service Integration documentation](/pages/platform/databases/databases_07_cross_service_integration) for more information.
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month
