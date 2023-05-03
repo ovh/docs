@@ -81,7 +81,7 @@ To indicate the updated version of the image to pull, you can use the OVHcloud A
 ```console
 ovhai app stop <app-id>
 
-ovhai app set-image <app-id> <registry-address>/<image-identifier>:<tag-name>
+ovhai app set-image <app-id> <registry-address>/<image-identifier>:<new-tag-name>
 
 ovhai app start <app-id>
 ```
