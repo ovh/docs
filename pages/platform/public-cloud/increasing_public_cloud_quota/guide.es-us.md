@@ -56,13 +56,13 @@ A continuación, haga clic en la flecha desplegable situada junto a "Seleccione 
 
 La tabla siguiente muestra los recursos que obtiene por cada cuota:
 
-|Quota|Instancias|CPU/núcleos|RAM|Tamaño del volumen|Volúmenes|Snapshots|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
+|Quota|Instancias|CPU/núcleos|RAM|Tamaño del volumen|Volúmenes|Snapshots|Tamaño de la copia de seguridad|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
 |---|---|---|---|---|---|---|---|---|---|
-|10 VMs|10|20|40GB|20TB|20|20|2|2|2|
-|20 VMs|20|40|240GB|20TB|40|40|2|2|2|
-|50 VMs|50|64|496GB|20TB|100|100|10|10|10|
-|100 VMs|100|128|992GB|39TB|200|200|10|10|10|
-|200 VMs|200|512|3.9TB|78TB|400|400|50|50|50|
+|10 VMs|10|20|40GB|20TB|20|20|59TB|2|2|2|
+|20 VMs|20|40|240GB|20TB|40|40|117TB|2|2|2|
+|50 VMs|50|64|496GB|20TB|100|100|293TB|10|10|10|
+|100 VMs|100|128|992GB|39TB|200|200|586TB|10|10|10|
+|200 VMs|200|512|3.9TB|78TB|400|400|1172TB|50|50|50|
 
 Una vez seleccionado el volumen, haga clic en `Confirmar`{.action}. El pago se procesará lo antes posible.
 
