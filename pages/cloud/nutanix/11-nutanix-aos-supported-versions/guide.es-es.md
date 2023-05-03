@@ -78,4 +78,6 @@ The query result appears below `availableVersions` with both versions supported 
 
 [Using the OVHcloud API](https://docs.ovh.com/es/api/)
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 Join our community of users on <https://community.ovh.com/en/>.

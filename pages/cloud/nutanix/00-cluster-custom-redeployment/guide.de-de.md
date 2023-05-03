@@ -203,8 +203,10 @@ Click `Execute`{.action} to start the cluster redeployment.
 
 ## Go further
 
-[Using the OVHcloud API](https://docs.ovh.com/de/api/).
+[Using the OVHcloud API](https://docs.ovh.com/de/api/)
 
-[Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](https://docs.ovh.com/de/nutanix/activate-licence-on-nutanix-byol/).
+[Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](https://docs.ovh.com/de/nutanix/activate-licence-on-nutanix-byol/)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

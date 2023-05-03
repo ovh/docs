@@ -261,6 +261,8 @@ You can see the bucket you created in the command line. You can create and delet
 
 ## Go further <a name="gofurther"></a>
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/it/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 Join our community of users on <https://community.ovh.com/en/>.
 
 [Nutanix Objects documentation](https://portal.nutanix.com/page/documents/details?targetId=Objects-v3_6:top-intro-c.html).
