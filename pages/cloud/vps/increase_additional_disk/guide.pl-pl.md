@@ -46,7 +46,7 @@ Pojawi się komunikat potwierdzający zlecenie. Kliknij link w wiadomości i pos
 
 ![size-disk-vps](images/increase_disk_vps03.png){.thumbnail}
 
-Zwiększenie pojemności dysku zajmie kilka minut po zatwierdzeniu płatności. Możesz sprawdzić postęp operacji w zakładce `Dodatkowe dyski`{.action}\: jeśli nowy wybrany rozmiar jest wyświetlany, dysk jest gotowy.
+Zwiększenie pojemności dysku zajmie kilka minut po zatwierdzeniu płatności. Możesz sprawdzić postęp operacji w zakładce `Dodatkowe dyski`{.action}: jeśli nowy wybrany rozmiar jest wyświetlany, dysk jest gotowy.
 
 ![size-disk-vps](images/increase_disk_vps04.png){.thumbnail}
 
@@ -124,7 +124,7 @@ Command (m for help): n
 
 Potwierdź wszystkie wartości domyślne, naciskając `Enter`:
 
-````console
+```console
 Partition type
    p   primary (0 primary, 0 extended, 4 free)
    e   extended (container for logical partitions)
@@ -218,4 +218,4 @@ Zmieniony rozmiar przestrzeni dyskowej zawiera teraz dodatkową przestrzeń dysk
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

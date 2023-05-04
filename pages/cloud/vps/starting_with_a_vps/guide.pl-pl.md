@@ -26,7 +26,7 @@ Prywatny serwer wirtualny VPS (z ang. *Virtual Private Server*) to wirtualny ser
 
 ## Wymagania początkowe
 
-- Rezerwacja Twojego serwera VPS na [stronie OVHcloud](https://www.ovhcloud.com/pl/vps/){.external}.
+- Rezerwacja Twojego serwera VPS na [stronie OVHcloud](https://www.ovhcloud.com/pl/vps/){.external}
 - Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - Dane do logowania wysłane e-mailem po instalacji
 
