@@ -38,7 +38,7 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVHclo
 
 > [!primary]
 >
-> Le Network Firewall protège les adresses IP associées à une machine. Vous devez donc configurer chaque adresse IP indépendamment. Une configuration globale du serveur est impossible.
+> Le Network Firewall protège l'adresse IP associée à un serveur. Par conséquent, si vous avez un serveur avec plusieurs adresses IP, vous devez configurer chaque IP indépendamment. Une configuration globale du serveur est impossible.
 > 
 
 Connectez-vous à[ l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, accédez à la section `Bare Metal Cloud`{.action} et cliquez sur `IP`{.action}.
@@ -63,9 +63,9 @@ Vous pouvez configurer jusqu'à **20 règles par adresse IP**.
 
 > [!warning]
 >
-> Le pare-feu s’active automatiquement à chaque attaque DDoS et ne peut pas être désactivé avant la fin de l'attaque. C'est pourquoi il est important de maintenir à jour les règles de pare-feu.
+> Si le Network firewall est configuré avec des règles, ces règles sont automatiquement appliquées à chaque attaque DDoS. Le Firewall ne peut pas être désactivé avant la fin de l'attaque, c'est pourquoi il est important de maintenir à jour les règles de pare-feu.
 > Par défaut, vous n’avez pas de règles configurées. Toutes les connexions peuvent donc être établies.
-> Si vous avez déjà des règles, nous vous recommandons de les vérifier régulièrement, même si le pare-feu est désactivé.
+> Si vous en possédez, nous vous recommandons de les vérifier régulièrement, même si le pare-feu est désactivé.
 > 
 
 
@@ -132,13 +132,11 @@ Veuillez noter que la mitigation permanente faisant partie de notre solution Ant
 
 Pour l'activer, cliquez sur le menu `Bare Metal Cloud`{.action} et ouvrez `IP`{.action}. Cliquez ensuite sur les `...`{.action} à droite de l'IPv4 concernée et sélectionnez `Mitigation : mode permanent`{.action}.
 
-**Mitigation forcée** : Ce mode est activé automatiquement dès qu'une attaque est détectée sur le serveur. Une fois activé sur notre infrastructure Anti-DDoS, ce mode ne peut être désactivé. Afin de protéger notre infrastructure, la protection sera activée pendant toute la durée de l’attaque, jusqu’à ce qu’elle soit totalement mitigée.
+**Mitigation forcée** : ce mode est activé automatiquement dès qu'une attaque est détectée sur le serveur. Une fois activé sur notre infrastructure Anti-DDoS, ce mode ne peut être désactivé. Afin de protéger notre infrastructure, la protection sera activée pendant toute la durée de l’attaque, jusqu’à ce qu’elle soit totalement mitigée.
 
 > [!warning]
->
-> Si notre solution Anti-DDoS limite une attaque, votre Network Firewall s'activera automatiquement, même si vous l'avez désactivé par défaut. Si vous souhaitez qu'aucune règle ne soit appliquée durant une attaque, vous devez supprimer toute règle préalablement créée.
 > 
-> Si la mitigation Anti-DDoS (VAC) est activée, les règles configurées de votre Network Firewall finiront par être appliquées, même si vous avez désactivé le Firewall. Si vous souhaitez qu'aucune règle ne soit appliquée durant une attaque, vous devez supprimer toute règle préalablement créée.
+> Si notre solution anti-DDoS limite une attaque, les règles configurées de votre Network Firewall finiront par être appliquées, même si vous avez désactivé le Firewall. Si vous souhaitez qu'aucune règle ne soit appliquée durant une attaque, vous devez supprimer toute règle préalablement créée.
 >
 > La mitigation étant intégrée à notre solution Anti-DDoS (VAC), elle ne peut être désactivée sur un service. Tous les produits OVHcloud sont livrés avec la protection Anti-DDoS.
 

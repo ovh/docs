@@ -38,7 +38,7 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 
 > [!primary]
 >
-> The Network Firewall protects the IPs that are associated with a server. As a result, you need to configure each IP separately. You cannot configure the server as a whole.
+> The Network Firewall protects the IP associated with a server. As a result, if you have a server with multiple IP addresses, you need to configure each IP separately. You cannot configure the firewall on the server as a whole.
 > 
 
 In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. You can use the drop-down menu underneath **"My public IP addresses and associated services"** to filter your services according to category.
@@ -61,10 +61,10 @@ You can set up to **20 rules per IP**.
 
 > [!warning]
 >
-> The firewall is enabled automatically whenever a DDoS attack is launched, and cannot be disabled before the attack ends. This is why it is important to keep your firewall rules up-to-date.
-> By default, you do not have any configured rules to start with, so all connections can be set up.
-> If you have any, we recommend checking them regularly, even if the firewall is disabled.
-> 
+> If the Network firewall is enabled and configured with rules, they are automatically applied upon each DDoS attack, and cannot be disabled before the attack ends. This is why it is important to keep the firewall rules up to date.
+> As a default setting you do not have any configured rules, so all connections can be set up.
+> If you have chosen to not keep the firewall enabled, remember to check your firewall rules regularly or delete them.
+>
 
 
 > [!primary]
@@ -120,23 +120,23 @@ For example, a packet for TCP port 80 will be captured by rule 2, and the rules 
 
 ### Mitigation
 
-There are three mitigation modes: automatic, permanent or forced.
+Our Anti-DDoS (VAC) solution includes three mitigation modes: automatic, permanent or forced.
 
-**Automatic mitigation**: With this mode, the traffic goes through the mitigation system only if it is detected as "unusual" compared to the normal traffic usually received by the server. 
+**Automatic mitigation**: By default, all OVHcloud IPs are under automatic mitigation. Automatic mitigation will be enabled automatically only if the traffic is detected as "unusual" compared to the normal traffic usually received by the server. 
 
-**Permanent mitigation**: By activating permanent mitigation, you apply a constant first level of filtering through our Shield hardware.<br>
-All traffic at all times gets through the mitigation system before reaching the server. We recommend this mode for services under frequent attacks.<br>
-Please note that the Network firewall must not be created/enabled to activate permanent mitigation on your IP.
+**Permanent mitigation**: This mode can be enabled or disabled via the OVHcloud Control Panel. With permanent mitigation (if enabled), you apply a constant first level of filtering through our Shield hardware.<br>
+All traffic at all times gets through the mitigation system before reaching the server. We recommend enabling this mode for services under frequent attacks.<br>
+Please note that as permanent mitigation is part our Anti-DDoS (VAC) solution, you can activate it on your IP without enabling the Network Firewall.
 
 To enable it, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. Next, click on the `...`{.action} to the right of the relevant IPv4 and select `Mitigation: permanent mode`{.action}.
 
-**Forced mitigation**: This mode is automatically activated once an attack is detected on the server. Once enabled, this mode cannot be disabled. In order to protect our infrastructure, it will be activated throughout the attack until it is completely mitigated.
+**Forced mitigation**: This mode is automatically enabled once an attack is detected on the server. Once enabled on our Anti-DDoS infrastructure, it cannot be disabled. In order to protect our infrastructure, it will be enabled throughout the attack until it is completely mitigated.
 
 > [!warning]
 >
-> If anti-DDoS mitigation is enabled, your Network Firewall rules will be applied, even if you have disabled them. If you wish to disable it, remember to delete your rules.
+> If our Anti-DDoS solution mitigates an attack, your Network Firewall rules will eventually be applied, even if you have disabled the firewall. If you have disabled your firewall, remember to delete your rules as well.
 > 
-> Please note that the anti-DDoS mitigation cannot be disabled.
+> Since the mitigation is part of our Anti-DDoS (VAC) solution, it cannot be disabled on a service. All OVHcloud products are delivered with the Anti-DDoS protection.
 
 ### Configuring Armor
 
