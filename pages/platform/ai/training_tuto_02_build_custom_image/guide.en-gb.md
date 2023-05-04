@@ -29,7 +29,7 @@ In order to be launched, your AI Training job **has to be containerised**, insid
 
 Inside your Docker image, you are free to install almost anything and everything as long as you follow guidelines below.
 
-AI Training accept images from **public** or **private** repositories.
+AI Training accept images from **public** or **private** repositories. Find more information about using public & private registries [in this documentation](/pages/platform/ai/gi_07_manage_registry).
 
 ## Guidelines to follow
 
@@ -140,7 +140,10 @@ ADD . /workspace
 
 ### Give the OVHcloud user access to the home directory
 
-Images in AI Training are not run as root user, but by an "OVHcloud" user with UID 42420. 
+> [!primary]
+>
+>Images in AI Training are not run as root user, but by an "OVHcloud" user with UID 42420.
+>
 
 It means that if we want to be able to create and write in a specific directory at runtime, **we will have to give it specific rights**. We can do it with the following instruction:
 
@@ -149,6 +152,11 @@ RUN chown -R 42420:42420 <specific-directory>
 ```
 
 As mentioned, the home directory for the "OVHcloud" user (with UID 42420) will be `/workspace`. We can then replace `<specific-directory>` by `/workspace`. But keep in mind that you can change the ownership of any other useful directory.
+
+> [!warning]
+>
+>Depending on the models and frameworks you use, other folders may be created during training at the root of your environment. This can be the case for folders like `/runs` or `/logs`. In this case, do not forget to give access rights to these folders as well: `RUN chown -R 42420:42420 /runs /logs`
+>
 
 **To summarize**, this is what our `Dockerfile` looks like for now:
 
@@ -187,6 +195,12 @@ RUN apt-get update && apt-get install -y \
   ffmpeg \
   libsndfile1-dev \
   ... \
+```
+
+To improve your Dockerfile by making it shorter, we can also list all our packages in a `packages.txt` file, and install it with:
+
+``` {.console}
+RUN xargs -a packages.txt apt-get install --yes
 ```
 
 **Install Python libraries**
