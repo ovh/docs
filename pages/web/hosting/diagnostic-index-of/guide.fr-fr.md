@@ -11,7 +11,7 @@ updated: 2023-05-04
 
 ## Objectif
 
-Une page **« Index of »** apparaît lorsque :
+Une page **« Index of »** apparaît dans au moins l'un des cas suivants :
 
 - La configuration [Multisite](/pages/web/hosting/multisites_configure_multisite) de votre nom de domaine n’est pas correctement paramétrée vers votre répertoire cible
 - Le dossier cible vers lequel votre nom de domaine pointe ne contient pas de fichiers **« index.html »** ou **« index.php »**
