@@ -72,15 +72,15 @@ sudo iptables [option] CHAIN_rule [-j target]
 
 Poniżej znajduje się lista kilku opcji Do wyboru:
 
-- -A -—append: Dodaj regułę do łańcucha (na końcu).
-- -C —-check: Wyszukiwanie reguły, która odpowiada wymaganiom łańcucha.
-- -D —-delete: Usuwa określone reguły łańcucha.
-- -F —-flush: Usuń wszystkie reguły.
-- -I —-insert: Dodaje regułę do danego łańcucha.
-- -L —-list: Wyświetl wszystkie reguły łańcucha.
-- -N -new-chain: Stwórz nowy kanał.
-- -v —-verbose: Wyświetla więcej informacji podczas korzystania z opcji listy.
-- -X —-delete-chain: Usuń ciąg.
+- -A --append: Dodaj regułę do łańcucha (na końcu).
+- -C --check: Wyszukiwanie reguły, która odpowiada wymaganiom łańcucha.
+- -D --delete: Usuwa określone reguły łańcucha.
+- -F --flush: Usuń wszystkie reguły.
+- -I --insert: Dodaje regułę do danego łańcucha.
+- -L --list: Wyświetl wszystkie reguły łańcucha.
+- -N --new-chain: Stwórz nowy kanał.
+- -v --verbose: Wyświetla więcej informacji podczas korzystania z opcji listy.
+- -X --delete-chain: Usuń ciąg.
 
 ### Etap 3: sprawdź obecny stan iptables
 
@@ -167,7 +167,7 @@ sudo iptables -A INPUT -m iprange --src-range adres_IP_początku_adresu_IP_fin -
 
 Opcje iptables, których używaliśmy w przykładach działają następująco:
 
-- -m : Odpowiada określonej opcji.
+- -m: Odpowiada określonej opcji.
 - -iprange: Wskazuje, że system będzie czekać na określony zakres adresów IP zamiast na jeden.
 - --src-range: Określa zakres adresów IP.
 
