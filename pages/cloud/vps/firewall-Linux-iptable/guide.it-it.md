@@ -72,15 +72,15 @@ sudo iptables [option] CHAIN_rule [-j target]
 
 Ecco una lista di alcune opzioni iptables comuni:
 
-- -A —append: Aggiungi una regola a una catena (alla fine).
-- -C —check : Ricerca una regola che corrisponde alle esigenze della catena.
-- -D —delete: Elimina le regole specificate di una catena.
-- -F -flush: Elimina tutte le regole.
-- -I —insert: Aggiungi una regola a una catena in una determinata posizione.
-- -L —list: Mostra tutte le regole di un canale.
-- -N -new-chain : Crea un nuovo canale.
-- -v —verbose: Indica maggiori informazioni durante l'utilizzo di un'opzione di lista.
-- -X —delete-chain: Elimina la catena fornita.
+- -A --append: Aggiungi una regola a una catena (alla fine).
+- -C --check: Ricerca una regola che corrisponde alle esigenze della catena.
+- -D --delete: Elimina le regole specificate di una catena.
+- -F --flush: Elimina tutte le regole.
+- -I --insert: Aggiungi una regola a una catena in una determinata posizione.
+- -L --list: Mostra tutte le regole di un canale.
+- -N --new-chain: Crea un nuovo canale.
+- -v --verbose: Indica maggiori informazioni durante l'utilizzo di un'opzione di lista.
+- -X --delete-chain: Elimina la catena fornita.
 
 ### Step 3: verificare lo stato attuale degli iptables
 
@@ -114,25 +114,25 @@ Una porta è un punto terminale di comunicazione specificato per un tipo specifi
 Per autorizzare il traffico Web HTTP, inserisci questo comando:
 
 ```bash
-sudo iptables -A INPUT -p tcp —dport 80 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 ```
 
 Per autorizzare solo il traffico SSH (Secure Shell) in entrata, inserisci (notare che si utilizza la porta 22, che è il numero di porta SSH predefinito). Se il vostro numero di porta è diverso, assicuratevi di adattare di conseguenza i comandi seguenti):
 
 ```bash
-sudo iptables -A INPUT -p tcp —dport 22 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 ```
 
 Per autorizzare il traffico Internet HTTPS, inserisci questo comando:
 
 ```bash
-sudo iptables -A INPUT -p tcp —dport 443 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 ```
 
 Le opzioni funzionano in questo modo:
 
 - -p: Verifica il protocollo specificato (tcp).
-- —dport: Specifica il porto di destinazione.
+- --dport: Specifica il porto di destinazione.
 - -j jump: Effettua l'azione 
 
 > [!warning]
