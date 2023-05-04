@@ -102,7 +102,7 @@ To remedy this, we need to stop our application, change the image using the `ima
 
 ## Go further
 
-Learn how to use public and private registries when working with OVHcloud AI Tools -> LINK NEED TO BE ADDED
+Learn how to use public and private registries when working with OVHcloud AI Tools [here](/pages/platform/ai/gi_07_manage_registry).
 
 Discover some AI Deploy apps we built with API or Web frontend via our [Apps portfolio](/pages/platform/ai/deploy_guide_05_app_portfolio).
 
