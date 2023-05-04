@@ -480,6 +480,7 @@
                 + [Preparing an environment for using the OpenStack API](platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
                 + [Setting OpenStack environment variables](platform/public-cloud/loading_openstack_environment_variables)
                 + [Getting started with the OpenStack API](platform/public-cloud/starting_with_nova)
+                + [Using OpenStack Tokens](platform/public-cloud/using_openstack_tokens_for_multiple_calls)
                 + [Managing tokens](platform/public-cloud/managing_tokens)
                 + [Creating and deleting OpenStack users](platform/public-cloud/create_and_delete_a_user)
                 + [Getting started with managing volumes in the OpenStack API](platform/public-cloud/starting_with_managing_volumes_openstack_api)
