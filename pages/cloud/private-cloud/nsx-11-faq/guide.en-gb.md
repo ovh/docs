@@ -4,7 +4,7 @@ excerpt: Frequently asked questions on NSX
 updated: 2023-05-04
 ---
 
-- [Is it possibible to do BGP?](#bgp)
+- [Is it possible to do BGP?](#bgp)
 - [How to set up or add another Tier-0 Gateway?](#addt0gw)
 - [Can I configure an active-active Tier-0 Gateway in order to have a double bandwidth (10+10=20Gb/s guarantee and 25+25Gb/s "theorical")?](#t0gwdoublebw)
 - [How do I configure the Tier-O public Gateway?](#t0config)
@@ -19,7 +19,7 @@ updated: 2023-05-04
 >> [!faq]
 >
 > <a name="bgp"></a>
-> Is it possibible to do BGP?
+> Is it possible to do BGP?
 >> It is not possible to do Public BGP.
 >> Though it is possible to do BGP in the vRack, a documentation will be available soon to detail this workaround.
 >
