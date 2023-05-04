@@ -819,6 +819,7 @@
                 + [AI Deploy - Apps portfolio](platform/ai/deploy_guide_05_app_portfolio)
                 + [AI Deploy - Troubleshooting](platform/ai/deploy_guide_07_troubleshooting)
                 + [AI Deploy - Billing and lifecycle](platform/ai/deploy_guide_06_billing_concept)
+                + [AI Deploy - Update custom Docker images](platform/ai/deploy_guide_08_update_custom_docker_image)
             + [Tutorials](public-cloud-ai-and-machine-learning-ai-deploy-tutorials)
                 + [AI Deploy - Tutorial - Build & use a custom Docker image](platform/ai/deploy_tuto_12_build_custom_image)
                 + [AI Deploy - Tutorial - Build & use a Streamlit image](platform/ai/deploy_tuto_01_streamlit)
