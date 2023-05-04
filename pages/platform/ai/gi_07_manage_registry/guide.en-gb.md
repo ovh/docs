@@ -188,7 +188,7 @@ Here is a basic example with AI Training, when using the CLI:
 ovhai job run <private-registry-address>/<harbor_project_name>/<image-name>:<tag-name>
 ```
 
-If you prefer to use the OVHcloud Control Ptqtt45455445anel, this is also possible. In this case, you will have to indicate your custom Docker image during Step 2 of your job/app creation. This path will be `<private-registry-address>/<harbor_project_name>/<image-name>:<tag-name>`.
+If you prefer to use the OVHcloud Control Panel, this is also possible. In this case, you will have to indicate your custom Docker image during Step 2 of your job/app creation. This path will be `<private-registry-address>/<harbor_project_name>/<image-name>:<tag-name>`.
 
 ![custom docker image](images/ai-training_add_private_docker_registry.png){.thumbnail}
 
