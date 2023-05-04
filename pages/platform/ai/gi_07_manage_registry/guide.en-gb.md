@@ -21,6 +21,7 @@ This guide is intended to help you to **use and manage your public and private r
 ## Instructions
 
 This documentation is divided into the following parts:
+
 - Manage existing registries through
     - OVHcloud Control Panel (UI)
     - OVHcloud AI CLI `ovhai`
@@ -31,14 +32,14 @@ This documentation is divided into the following parts:
 
 ## Manage existing registries
 
-The Public Cloud provide a default registry called `shared registry`, where users of a same Public Cloud project are able to push their custom images, and use them through our AI Tools. 
+The Public Cloud provides a default registry called `shared registry`, where users of a same Public Cloud project are able to push their custom images, and use them through our AI Tools. 
 
 > [!warning]
 >
 >This `shared registry` can help you perform your tests, but **should not be used in production**, as we reserve the right to delete its content if deemed necessary.
 >
 
-This is why it can be interesting to add, manage other registries. We can either do this by using the OVHcloud Control Panel (UI) or the `ovhai` CLI.
+This is why it can be interesting to add and manage other registries. We can either do this by using the OVHcloud Control Panel (UI) or the `ovhai` CLI.
 
 ### Manage existing registries through UI
 
@@ -90,7 +91,7 @@ We will see how to implement each of these registries and use them through AI To
 
 > [!primary]
 >
->Whatever the case, know that the default `shared registry` will remain available even if you add new registries.
+>In any case, note that the default `shared registry` will remain available even if you add new registries.
 >
 
 ### Harbor private registry
@@ -111,17 +112,17 @@ To finish setting up your private Harbor registry, you will need to **create a p
 
 #### Get your OVHcloud Managed Private Registry API URL
 
-In order to add this registry to AI Tools, you will need to retrieve its URL. To do this, go to the Managed Private Registry section on the OVHcloud Public Cloud Manager, and in the more options (...) button at the right, click on `Harbor API`:
+In order to add this registry to AI Tools, you will need to retrieve its URL. To do this, go to the Managed Private Registry section on the OVHcloud Public Cloud Manager, and in the "more options" button (...) at the right, click on `Harbor API`:
 ![image](images/get-private-registry-api-url-1.png){.thumbnail}
 
-Then, copy the URL of the API Harbor, which is the URL of your private registry:
+Then, copy the URL of the Harbor API, which is the URL of your private registry:
 ![image](images/get-private-registry-api-url-2.png){.thumbnail}
 
 #### Add the Harbor registry
 
 To add your registry, you can either use the OVHcloud Control Panel (UI) or the `ovhai` CLI. 
 
-During this step, you will be asked your user's credentials (user id and password). You can use the default user (administrator) credentials, which were obtained at the first part of the `Create and configure a new private registry` step, or those of another user if you have created one.
+During this step, you will be asked your user's credentials (user ID and password). You can use the default user (administrator) credentials, which were obtained at the first part of the `Create and configure a new private registry` step, or those of another user if you have created one.
 
 ##### Using UI
 
@@ -129,7 +130,7 @@ To add your private registry via UI, log in to the [OVHcloud Control Panel](http
 
 ![image](images/training_menu.png){.thumbnail}
 
-From the dashboard you can add your private Harbor registry by clicking `Private Docker Registry`{.action} > `Add`{.action} button.
+From the dashboard you can add your private Harbor registry by clicking `Private Docker Registry`{.action} > `Add`{.action}.
 
 Here, you will need to provide the credentials of your registry along with its URL.
 
@@ -187,7 +188,7 @@ Here is a basic example with AI Training, when using the CLI:
 ovhai job run <private-registry-address>/<harbor_project_name>/<image-name>:<tag-name>
 ```
 
-If you prefer to use the OVHcloud control panel, this is also possible. In this case, you will have to indicate your custom Docker image during Step 2 of your job/app creation. This path will be `<private-registry-address>/<harbor_project_name>/<image-name>:<tag-name>`.
+If you prefer to use the OVHcloud Control Ptqtt45455445anel, this is also possible. In this case, you will have to indicate your custom Docker image during Step 2 of your job/app creation. This path will be `<private-registry-address>/<harbor_project_name>/<image-name>:<tag-name>`.
 
 ![custom docker image](images/ai-training_add_private_docker_registry.png){.thumbnail}
 
@@ -271,7 +272,7 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 ![image](images/training_menu.png){.thumbnail}
 
-From the dashboard you can add the GitHub registry by clicking `Private Docker Registry`{.action} > `Add`{.action} button.
+From the dashboard you can add the GitHub registry by clicking `Private Docker Registry`{.action} > `Add`{.action}.
 
 Here, you will need to provide your GitHub credentials along with the registry URL.
 
@@ -298,11 +299,11 @@ ovhai app run ghcr.io/<your_username>/<repo-name>:<tag-name> \
 
 You can also use the Control Panel to deploy a job or an app from a GitHub registry. You will just need to specify your GitHub image path, during step 2 of your job/app creation. This path will be `ghcr.io/<your_username>/<repo-name>:<tag-name>`. 
 
-## Going Further
+## Go further
 
-- You can check the official documentation about [how to submit a **job**](/pages/platform/ai/training_guide_02_howto_submit_job)
-- Learn [how to deploy an **app**](/pages/platform/ai/deploy_guide_02_getting_started)
-- You can check out the documentation about the [ovhai CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/overview-cli)
+- You can check the official documentation about [how to submit a **job**](/pages/platform/ai/training_guide_02_howto_submit_job).
+- Learn [how to deploy an **app**](/pages/platform/ai/deploy_guide_02_getting_started).
+- You can check out the documentation about the [ovhai CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/overview-cli).
 
 
 ## Feedback
