@@ -72,15 +72,15 @@ sudo iptables [option] CHAIN_rule [-j target]
 
 Eis uma lista de algumas opções iptables comuns:
 
-- -A —append: Adiciona uma regra a uma cadeia (no fim).
-- -C —check: Procura uma regra que corresponda às exigências da cadeia.
-- -D —delete: Eliminar as regras especificadas de uma cadeia.
-- -F —flush: Elimina todas as regras.
-- -I —insert: Adiciona uma regra a uma cadeia numa determinada posição.
-- -L —list: Indica todas as regras de um canal.
+- -A --append: Adiciona uma regra a uma cadeia (no fim).
+- -C --check: Procura uma regra que corresponda às exigências da cadeia.
+- -D --delete: Eliminar as regras especificadas de uma cadeia.
+- -F --flush: Elimina todas as regras.
+- -I --insert: Adiciona uma regra a uma cadeia numa determinada posição.
+- -L --list: Indica todas as regras de um canal.
 - -N -new-chain: Crie uma nova cadeia.
-- -v —verbose: Afixar mais informações aquando da utilização de uma opção de lista.
-- -X —delete-chain: Eliminar a cadeia fornecida.
+- -v --verbose: Afixar mais informações aquando da utilização de uma opção de lista.
+- -X --delete-chain: Eliminar a cadeia fornecida.
 
 ### Etapa 3: verificar o estado atual dos itens
 
@@ -114,19 +114,19 @@ Uma porta é um ponto de terminação de comunicação especificado para um tipo
 Para autorizar o tráfego Web HTTP, introduza o seguinte comando:
 
 ```bash
-sudo iptables -A INPUT -p tcp —dport 80 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 ```
 
 Para autorizar apenas o tráfego SSH (Secure Shell) de entrada, introduza o seguinte (note que utilizamos a porta 22, que é o número padrão da porta SSH. Se o seu número de porta for diferente, certifique-se de ajustar os seguintes comandos em conformidade):
 
 ```bash
-sudo iptables -A INPUT -p tcp —dport 22 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 ```
 
 Para autorizar o tráfego Internet HTTPS, introduza o seguinte comando:
 
 ```bash
-sudo iptables -A INPUT -p tcp —dport 443 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 ```
 
 As opções funcionam da seguinte forma:
