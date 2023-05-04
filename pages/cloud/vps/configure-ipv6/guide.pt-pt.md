@@ -144,7 +144,7 @@ Isto permite-lhe separar a configuração IPv6 e restaurar facilmente as modific
 
 Adicione as seguintes linhas ao ficheiro. Substitua os elementos genéricos (ou seja, *YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) e a interface de rede (se o seu servidor não utilizar **eth0**) pelos seus valores personalizados.
 
-```
+```console
 auto eth0
 iface eth0 inet6 static
 mtu 1500
@@ -264,7 +264,7 @@ cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scrip
 
 De seguida, altere o ficheiro `ifcfg-eth0` adicionando a configuração IPv6 do seu servidor. Substitua os elementos genéricos (ou seja, *YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) pelos seus valores personalizados.
 
-```bash
+```console
 IPV6INIT=yes
 IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
@@ -280,7 +280,7 @@ IPV6_DEFAULTGW=IPV6_GATEWAY
 
 - Altere o ficheiro e adicione as linhas abaixo. Substitua os elementos genéricos (*IPV6_GATEWAY* e **eth0**, se necessário) pelos valores personalizados.
 
-```bash
+```console
 IPV6_GATEWAY dev eth0
 default via IPV6_GATEWAY
 ```
