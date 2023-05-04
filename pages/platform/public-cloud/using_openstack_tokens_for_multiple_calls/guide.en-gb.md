@@ -1,58 +1,60 @@
 ---
-title: "Using Openstack Tokens"
+title: "Using OpenStack Tokens"
 slug: using-openstack-tokens
-excerpt: "Find out how to create and use Openstack tokens for your actions"
-section: "Openstack"
+excerpt: "Find out how to create and use OpenStack tokens for your actions"
+section: "OpenStack"
 order: 01
-updated: 2023-05-02
+updated: 2023-05-04
 ---
 
-**Last updated 2nd May 2023**
+**Last updated 4th May 2023**
 
 ## Objective
 
-**This guide provide good practices to perform a lot of Openstack actions in a short time**
+**This guide provides best practices for performing a large number of OpenStack actions in a short time.**
 
 > [!primary]
 >
-Informations in this guide applies to version 3.0 of the Keystone API
+> The steps in this guide are based on the Keystone API version 3.0.
 >
-
-## Instructions
 
 ### Definitions
 
-- Endpoint: HTTP address pointing directly to a service's API. For example [https://auth.cloud.ovh.net/v3/](https://auth.cloud.ovh.net/v3/) for the authentication endpoint or [https://image.compute.gra11.cloud.ovh.net/](https://image.compute.gra11.cloud.ovh.net/) for the GRA11 zone image management endpoint. 
+- **Endpoint**: HTTP address pointing directly to a service's API. For example [https://auth.cloud.ovh.net/v3/](https://auth.cloud.ovh.net/v3/) for the authentication endpoint or [https://image.compute.gra11.cloud.ovh.net/](https://image.compute.gra11.cloud.ovh.net/) for the GRA11 zone image management endpoint. 
 
+- **Token**: A unique string of characters used to authenticate and access resources. The user requests it by entering their credentials (login details) to the authentication API. The token is generated and is valid for 24 hours.
 
-- Token: A unique string of characters used to authenticate and access resources. The user requests it by entering their credentials (login details) to the authentication API. The token is generated and it is valid for 24 hours.
-
-- OpenRC : To increase efficiency of interactions with the Identity service via the openstack client, OpenStack supports simple client environment scripts also known as OpenRC files.
-This is a file containing common options for all clients, but also support unique options.
+- **OpenRC** : To improve the efficiency of interactions with the identity service through the OpenStack client, OpenStack supports simple client environment scripts also known as OpenRC files.
+This is a file containing common options for all clients, but which also supports unique options.
 
 ### Outline of a request
+
 Most requests sent to the OpenStack API must follow an authorization procedure, which involves generating a token and validating it.
 
-However, if you perform too much actions in a short time, some Openstack actions will fall in error due to too much API Calls. Current limit is 60 token creation per minutes and per Openstack user, if you go above this limit, authentication endpoint will answer HTTP 429 error.
+However, if you perform too many actions witin a short period of time, some OpenStack actions will fall in error due to too many API Calls. The current limit is 60 token creations per minutes and per OpenStack user. The authentication endpoint will return HTTP 429 errors beyond this limit.
 
 For more information, see the [OpenStack API](http://developer.openstack.org/api-guide/quick-start/) documentation.
 
-This guide will show you how to issue an Openstack token, use it for the actions you want to perform and how to revoke a token
+This guide will show you how to create an OpenStack token, use it for the actions you want to perform and how to revoke a token.
 
 ### Requirements 
 
-This guide needs the Openstack CLI tool installed on your machine
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} 
+- This guide requires the installation of the OpenStack CLI tool on your machine.
 
-You can find more informations on this tool with this guide : [OpenStack CLI](https://docs.openstack.org/python-openstackclient/latest/)
+> [!primary]
+>
+> Find more information about this tool in the [OpenStack CLI documentation](https://docs.openstack.org/python-openstackclient/latest/).
+>
 
-You can get it from package manager apt (for Debian-based distribs) or by yum (for RHEL/CentOS-based distribs)
+You can get it from the apt package manager (for Debian-based distributionss) or by yum (for RHEL/CentOS-based distributions).
 
 ```bash
-# Debian-based distribs: 
+# Debian-based distributions: 
 
 sudo apt install python3-openstackclient
 
-# CentOS-based distribs :
+# CentOS-based distributions:
 
 sudo yum install python3-openstackclient
 ```
@@ -61,43 +63,45 @@ For Windows users, you can follow this guide to export your environment variable
 
 [Set OpenStack Environment Variables](https://docs.ovh.com/gb/en/public-cloud/set-openstack-environment-variables/)
 
-### Step 1: Download and source your openrc file
+## Instructions
 
-Go on your Control Panel, Public Cloud tab, User & Roles, click on the three dots button, then download openrc file of your Openstack user wanted and specify the region you want to perform actions in
+### Step 1: Download and source your OpenRC file
 
-Once downloaded, edit your openrc file and add this line :
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Click on `Users & Roles`{.action} in the `Project Management` section  then click on the `...`{.action} button to the right of your OpenStack user.<br>
+Download this user's OpenRC file and specify the region where you want to perform actions.
+
+![download openRC file](images/openrc.png){.thumbnail}
+
+Once downloaded, edit your OpenRC file and add this line :
 
 ```bash
 OS_PASSWORD=<your_password>
 ```
 
-Please adapt this line with your Openstack User password given at the user's creation step
+Make sure to adapt this line with your OpenStack user password that was given to you when the user was created.
 
-Then, source the file you previously downloaded
+Then source the file you previously downloaded:
 
 ```bash
 source openrc.sh
 ```
 
-### Step 2: Issue an Openstack Token
-
+### Step 2: Issuing an OpenStack token
 
 > [!primary]
 >
-An Openstack token has 24 hours of validity
-
-For a better reliability, you can issue a token every 8 hours (as an example) to avoid proceeding actions with an expired token
-
-Please prefer token creation instead of running directly the wanted action when you want to proceed long actions like snapshots, shelves, image creations, ...
+> An OpenStack token is valid for 24 hours after it is issued. For greater reliability, you can issue a token every 8 hours (as an example) to avoid actions with an expired token.
+>
+> If you are considering long-term actions such as snapshots, instance shelving, image creation, etc., prefer creating a new token rather than performing the desired action directly.
 >
 
-Once you have sourced your openrc file, run this command to issue a token
+Once you have sourced your openrc file, run this command to issue a token:
 
 ```bash
 openstack token issue
 ```
 
-This command should show you a similar output : 
+This command should be similar to the following:
 
 ```bash
 +------------+----------------------------------------------------------------+
@@ -110,12 +114,13 @@ This command should show you a similar output :
 +------------+----------------------------------------------------------------+
 ```
 
-You can now export token previously issued : 
+You can now export the ID of the previously issued token:
+
 ```bash
 export OS_TOKEN = gAAAAA[...]
 ```
 
-You can also export directly your token with this command : 
+You can also export directly your token with this command: 
 
 ```bash
 export OS_TOKEN=$(openstack token issue -f value -c id)
@@ -123,33 +128,33 @@ export OS_TOKEN=$(openstack token issue -f value -c id)
 
 ### Step 3: Remove useless variable
 
-In order to use your issued token to make actions with your user, you have to unset the "OS_USER_DOMAIN_NAME" variable
+In order to use your token to perform actions with your user, you must remove the `OS_USER_DOMAIN_NAME' variable.
 
-To do so, run this command:
+To do this, run the following command:
 
 ```bash
 unset OS_USER_DOMAIN_NAME
 ```
 
-### Step 4: Use token to run commands
+### Step 4: Use the token to run commands
 
-Now that you have your token, you can use classic Openstack calls to manage your infrastructure
+Now that you have your token, you can use classic OpenStack calls to manage your infrastructure.
 
 ```bash
 openstack --os-auth-type token <command>
 ```
 
-Example : 
+- Example : 
 
 ```bash
 openstack --os-auth-type token image list
 ```
 
-### Step 5: Revoke Openstack token
+### Step 5: Revoke OpenStack token
 
-Once you performed all the actions you wanted, you can revoke used token to avoid it to be used for any other actions
+Once you performed all the actions you wanted, you can revoke the used token to prevent it from being used for other actions.
 
-To do so :
+To do this, use the following command:
 
 ```bash
 openstack --os-auth-type token token revoke <token_id>

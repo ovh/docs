@@ -1,13 +1,13 @@
 ---
 title: "Utilisation des tokens OpenStack"
-slug: using-openstack-domains
+slug: using-openstack-tokens
 excerpt: "Découvrez comment créer et utiliser des jetons OpenStack pour vos actions"
 section: "Gestion via Openstack"
 order: 01
-updated: 2023-05-02
+updated: 2023-05-04
 ---
 
-**Dernière mise à jour le 02/05/2023**
+**Dernière mise à jour le 04/05/2023**
 
 ## Objectif
 
@@ -30,7 +30,7 @@ updated: 2023-05-02
 
 La plupart des demandes envoyées à l'API OpenStack doivent suivre une procédure d'autorisation qui implique la génération d'un jeton et sa validation.
 
-Cependant, si vous effectuez trop d'actions en peu de temps, certaines actions OpenStack tomberont en erreur en raison d'un trop grand nombre d'appels à l'API. La limite actuelle est de 60 création de jeton par minutes par utilisateur, l'API d'authentification retournera des erreurs HTTP 429 au delà de cette limite.
+Cependant, si vous effectuez trop d'actions en peu de temps, certaines actions OpenStack tomberont en erreur en raison d'un trop grand nombre d'appels à l'API. La limite actuelle est de 60 créations de jetons par minute et par utilisateur. L'API d'authentification retournera des erreurs HTTP 429 au-delà de cette limite.
 
 Pour plus d'informations, consultez [la documentation officielle OpenStack API](http://developer.openstack.org/api-guide/quick-start/).
 
@@ -61,7 +61,7 @@ sudo yum install python3-openstackclient
 
 ## En pratique
 
-### Étape 1 : téléchargez et sourcez votre fichier openrc
+### Étape 1 : téléchargez et sourcez votre fichier OpenRC
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et ouvrez votre projet `Public Cloud`{.action}.
 
