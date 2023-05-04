@@ -33,7 +33,7 @@ This is a file containing common options for all clients, but also support uniqu
 ### Outline of a request
 Most requests sent to the OpenStack API must follow an authorization procedure, which involves generating a token and validating it.
 
-However, if you perform too much actions in a short time, some Openstack actions will fall in error due to too much API Calls
+However, if you perform too much actions in a short time, some Openstack actions will fall in error due to too much API Calls. Current limit is 60 token creation per minutes and per Openstack user, if you go above this limit, authentication endpoint will answer HTTP 429 error.
 
 For more information, see the [OpenStack API](http://developer.openstack.org/api-guide/quick-start/) documentation.
 
