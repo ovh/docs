@@ -72,15 +72,15 @@ sudo iptables [option] CHAIN_rule [-j target]
 
 A continuación le ofrecemos una lista de algunas de las opciones de iftables habituales:
 
-- -A —append: Añade una regla a una cadena (al final).
-- -C —check : Busca una regla que coincida con los requerimientos de la cadena.
-- -D —delete: Borra las reglas especificadas de una cadena.
-- -F —flush: Elimina todas las reglas.
-- -I —insert: Añade una regla a una cadena en una posición dada.
-- -L —list : Muestra todas las reglas de una cadena.
-- -N -new-chain: Crea una nueva cadena.
-- -v —verbose: Muestra más información cuando se usa una opción de lista.
-- -X —delete-chain: Elimina la cadena proporcionada.
+- -A --append: Añade una regla a una cadena (al final).
+- -C --check: Busca una regla que coincida con los requerimientos de la cadena.
+- -D --delete: Borra las reglas especificadas de una cadena.
+- -F --flush: Elimina todas las reglas.
+- -I --insert: Añade una regla a una cadena en una posición dada.
+- -L --list : Muestra todas las reglas de una cadena.
+- -N --new-chain: Crea una nueva cadena.
+- -v --verbose: Muestra más información cuando se usa una opción de lista.
+- -X --delete-chain: Elimina la cadena proporcionada.
 
 ### 3. Comprobar el estado actual de iptables
 
@@ -132,7 +132,7 @@ sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 Las opciones funcionan de la siguiente forma:
 
 - -p: Comprueba el protocolo especificado (tcp).
-- —dport: Especifica el puerto de destino.
+- --dport: Especifica el puerto de destino.
 - -j jump: Realiza la acción 
 
 > [!warning]
