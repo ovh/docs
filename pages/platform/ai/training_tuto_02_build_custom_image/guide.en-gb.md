@@ -4,10 +4,10 @@ slug: training/build-use-custom-image
 excerpt: Explanations on how to build and use your own custom image
 section: AI Training - Tutorials
 order: 02
-updated: 2023-04-27
+updated: 2023-05-04
 ---
 
-**Last updated 27st April, 2023.**
+**Last updated 4th May, 2023.**
 
 ## Objective
 
@@ -25,9 +25,9 @@ This tutorial covers the process of **building your own job image** for specific
 
 AI Training allows you to train your models easily, with just a few clicks or commands. This solution runs your training job on compute resources such as CPUs or GPUs. As soon as your training job is finished, the billing will be stopped immediately. Thus, you will save time and increase the productivity of your team, while respecting the integrity of your sensitive data (GDPR).
 
-In order to be launched, your AI Training job **has to be containerised**, inside a Docker image. Containers provide isolation but also flexibility. The Docker images that you build can be used locally, with OVHcloud AI Training but also with other cloud providers.
+In order to be launched, your AI Training job **has to be containerised** inside a Docker image. Containers provide isolation but also flexibility. The Docker images that you build can be used locally, with OVHcloud AI Training but also with other cloud providers.
 
-Inside your Docker image, you are free to install almost anything and everything as long as you follow guidelines below.
+Inside your Docker image, you are free to install almost anything and everything as long as you follow the guidelines below.
 
 AI Training accept images from **public** or **private** repositories. Find more information about using public & private registries [in this documentation](/pages/platform/ai/gi_07_manage_registry).
 
@@ -67,7 +67,7 @@ FROM <base-image>
 
 **Which image should we use?** 
 
-There are many official images available on [Docker Hub](https://hub.docker.com/). For example, we could use the basic [Python images](https://hub.docker.com/_/python), which come in many versions and flavors (alpine, slim, ...), each designed for a specific use case.
+There are many official images available on [Docker Hub](https://hub.docker.com/). For example, we could use the basic [Python images](https://hub.docker.com/_/python) which come in many versions and flavors (alpine, slim, ...), each designed for a specific use case.
 
 If we want to start from a [Python 3.10 image](https://hub.docker.com/layers/library/python/3.10/images/sha256-88fb365ea5d52ec8f5799f40a4742b9fb3c91dac92f7048eabaae194a25ccc28?context=explore), we would use the following command, since `python:3.10` is the name of the image:
 
@@ -114,14 +114,14 @@ ENV HOME=/workspace
 
 > [!warning]
 >
->*Declaring the `/workspace` directory as the `HOME` environment variable is necessary to ensure compatibility with AI Training.*
+> **Declaring the `/workspace` directory as the `HOME` environment variable is necessary to ensure compatibility with AI Training.**
 >
 
 ### Add job's files to the home directory
 
 Once the `/workspace` directory is set up, we can add our files (Python scripts, requirements.txt, and the Dockerfile) to it thanks to the `ADD` instruction. 
 
-Here is an example to add one specific file, like a `main.py` Python file:
+Here is an example to add one specific file, such as a `main.py` Python file:
 
 ``` {.console}
 ADD main.py /workspace/
@@ -135,7 +135,7 @@ ADD . /workspace
 
 > [!warning]
 >
->This command could allow you to load your dataset within your Docker image. However, this would increase its size considerably. A best practice is to put data outside, such as [Object Storage](https://www.ovhcloud.com/en-gb/public-cloud/object-storage/), and link it to the AI Training job during its launch.
+>This command could allow you to load your dataset within your Docker image. However, this would increase its size considerably. A best practice is to put data outside, such as [Object Storage](https://www.ovhcloud.com/en-gb/public-cloud/object-storage/) then link it to the AI Training job during its launch.
 >
 
 ### Give the OVHcloud user access to the home directory
@@ -151,7 +151,7 @@ It means that if we want to be able to create and write in a specific directory 
 RUN chown -R 42420:42420 <specific-directory>
 ```
 
-As mentioned, the home directory for the "OVHcloud" user (with UID 42420) will be `/workspace`. We can then replace `<specific-directory>` by `/workspace`. But keep in mind that you can change the ownership of any other useful directory.
+As mentioned, the home directory for the "OVHcloud" user (with UID 42420) will be `/workspace`. We can then replace `<specific-directory>` by `/workspace`. Though keep in mind that you can change the ownership of any other useful directory.
 
 > [!warning]
 >
@@ -175,14 +175,15 @@ RUN chown -R 42420:42420 /workspace
 As explained before, it is possible that the chosen Docker image does not include all the libraries that our project needs to work properly. In this case, we need to install them to ensure that our AI Training job works correctly.
 
 We distinguish two types:
+
 - Linux packages
 - Python libraries
 
-These installation instructions begin with `RUN` prefix, which is used to execute a command during the image building process.
+These installation instructions begin with the `RUN` prefix, which is used to execute a command during the image building process.
 
 **Install system packages**
 
-For example, let's assume that the `ffmpeg` package (used to process multimedia files), is required by our AI Training job but is missing from our base image. We would then use:
+For example, let's assume that the `ffmpeg` package (used to process multimedia files) is required by our AI Training job but is missing from our base image. We would then use:
 
 ``` {.console}
 RUN apt-get update && apt-get install -y ffmpeg
@@ -245,7 +246,7 @@ CMD ["python", "/workspace/main.py", "--arg1", "value1", "--arg2", "value2"]
 >
 >Note that it is not mandatory to specify a `CMD` instruction within the `Dockerfile`. This is only to simplify the user's experience.
 >
->For example, if our `main.py` file has parameters that we would like to customize, rather than fixing them in our Docker image, we would remove the `CMD` option from the `Dockerfile`, and we would use the following command when launching the AI Training job:
+>For example, if our `main.py` file has parameters that we would like to customize, rather than fixing them in our Docker image, we would remove the `CMD` option from the `Dockerfile` and we would use the following command when launching the AI Training job:
 >
 >     -- bash -c 'python /workspace/main.py arg1 arg2'
 >
@@ -254,7 +255,7 @@ CMD ["python", "/workspace/main.py", "--arg1", "value1", "--arg2", "value2"]
 
 Instead of adding all project's file by using `ADD . /workspace`, you might be interested in using the `COPY` instruction, which can be better and safer for copying files and directories from our local directory to our Docker image.
 
-Example if we want to add the file `example.py` to the home directory of our image:
+For example, if we want to add the file `example.py` to the home directory of our image:
 
 ``` {.console}
 COPY example.py /workspace/example.py
@@ -292,7 +293,7 @@ CMD ["python", "/workspace/main.py"]
 
 ## Build our image
 
-Once the **Dockerfile** is complete and match our needs, we have to choose an image name and build the image using the following command (make sure you are still in the root directory of your project, where the `Dockerfile` is located):
+Once the **Dockerfile** is complete and matches our needs, we have to choose an image name and build the image using the following command (make sure you are still in the root directory of your project, where the `Dockerfile` is located):
 
 ``` {.console}
 docker build . -t <image-identifier>
@@ -304,7 +305,7 @@ docker build . -t <image-identifier>
 
 > [!primary]
 >
-> The `-t` argument allow us to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`.
+> The `-t` argument allows us to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`.
 
 > [!warning]
 >
@@ -313,7 +314,7 @@ docker build . -t <image-identifier>
 > `docker buildx build --platform linux/amd64 ...`
 >
 
-**Try to find a name that is easily identifiable**. This will allow you to manage your Docker images more easily, especially when you will have multiple images and versions.
+**Try to find a name that is easily identifiable**. This will allow you to manage your Docker images more easily, especially when you have multiple images and versions.
 
 For example, we could use: 
 
@@ -372,7 +373,7 @@ If you want more concrete examples, feel free to look at the different `Dockerfi
 ## Go further
 
 - Check the [best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) official documentation.
-- Discover how to build a custom Docker image to deploy a **Streamlit** app. [Here it is](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/build-use-streamlit-image/).
+- Discover [how to build a custom Docker image to deploy a **Streamlit** app](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/build-use-streamlit-image/).
 - You can imagine deploying a Docker image for data processing and training tasks. Refer to this [tutorial](https://docs.ovh.com/gb/en/publiccloud/ai/training/tuto-models-comparaison-weights-and-biases/).
 
 ## Feedback
