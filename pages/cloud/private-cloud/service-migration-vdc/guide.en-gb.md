@@ -177,6 +177,7 @@ You can add a destination vDC following those steps:
 >
 
 **Expected return:** you should get "pcc-123-123-123-123/managementfee" 
+
 <a name="checkupgradeto"></a>
 ##### Step 2.1.3 Get your "planCode"
 
@@ -211,6 +212,7 @@ This API call generates an order that needs to be validated. If you don’t have
 >
 > You will not be able to see the new vDC in the vSphere client until you have assigned the correct permissions to users for the new vDC.
 >
+
 <a name="addhostandds"></a>
 #### Step 2.2 Add new hosts and Datastores
 
@@ -356,6 +358,7 @@ For more information, consult OVHcloud's guide [How to create a V(x)LAN within a
 > - Customers can enable this setting themselves on the vRack vDS on the destination vDC.
 > - However, if promiscuous mode needs to be enabled on the “VM Network” portgroup in the new vDC, please open a ticket with OVHcloud support before migration to ensure connectivity remains during migration.
 >
+
 <a name="inventory"></a>
 #### Step 4.7 Check inventory organisation (if relevant)
 
@@ -472,6 +475,7 @@ You can migrate an NSX Edge by following these steps:
 >
 > If you migrated the edge while HA was enabled and you are experiencing connectivity problems, it is recommended to failover the HA edges and re-test. This can be done by going to `Configure`{.action}, `Appliance Settings`{.action} and selecting the cog for the active edge then selecting `Set Admin State Down`{.action}. Re-test and change the admin state back to "Up".
 >
+
 <a name="dlr"></a>
 ##### Step 4.8.3 NSX Distributed Logical Routing
 
@@ -573,6 +577,7 @@ Here is a checklist of aspects to take into account:
 > [!primary]
 > It is recommended to test the migration path with low-impact or test VMs before production migration.
 >
+
 <a name="finalizemigration"></a>
 ### Step 6 Finalize your migration
 <a name="reconveeam"></a>
@@ -707,6 +712,7 @@ A task is created for each call, you can follow the progress with:
 >
 > Wait for the full completion of tasks before continuing.
 >
+
 <a name="removeoldhosts"></a>
 #### Step 6.6 Remove old hosts
 
@@ -742,6 +748,7 @@ A task is created for each call, you can follow the progress with:
 >
 > Wait for the full completion of tasks before continuing.
 >
+
 <a name="removeoldvdc"></a>
 #### Step 6.7 Remove vDC
 

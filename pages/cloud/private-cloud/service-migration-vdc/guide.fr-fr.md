@@ -382,6 +382,7 @@ Pour plus d'informations, consultez le guide OVHcloud sur [comment créer un V(x
 > - Vous pouvez peut activer ce paramètre sur le vRack vDS du vDC de destination.
 > - Cependant, si le « *Promiscuous Mode* » doit être activé sur le portgroup « VM Network » du nouveau vDC, merci d’ouvrir un ticket auprès du support OVHcloud avant la migration, afin de maintenir la connectivité durant la migration.
 >
+
 <a name="inventory"></a>
 #### Etape 4.7 Vérifier l'organisation de votre inventaire (si pertinent)
 
@@ -498,6 +499,7 @@ Vous pouvez migrer un NSX Edge en suivant ces étapes :
 >
 > Si vous avez migré la Edge alors que HA était activé et que vous rencontrez des problèmes de connectivité, il est recommandé de basculer les edge HA et de tester à nouveau. Pour ce faire, accédez à `Configure`{.action}, `Appliance Settings`{.action} et sélectionnez la roue crantée de la edge active, puis sélectionnez `Set Admin State Down`{.action}. Testez à nouveau puis repassez le statut admin à « Up ».
 >
+
 <a name="dlr"></a>
 ##### Etape 4.8.3 NSX Distributed Logical Routing
 
@@ -600,6 +602,7 @@ Voici une liste des aspects à prendre en compte:
 > [!primary]
 > Il est recommandé de tester le chemin de migration avec des VMs à faible impact ou de tester les VMs avant la migration de production.
 >
+
 <a name="finalizemigration"></a>
 ### Etape 6 Finaliser votre migration
 <a name="reconveeam"></a>
@@ -733,6 +736,7 @@ Une tâche est créée pour chaque appel, vous pouvez suivre l'avancement avec :
 >
 > Attendez la fin complète des tâches avant de poursuivre.
 >
+
 <a name="removeoldhosts"></a>
 #### Etape 6.6 Supprimer les anciens hosts
 
@@ -768,6 +772,7 @@ Une tâche est créée pour chaque appel, vous pouvez suivre l'avancement avec :
 >
 > Attendez la fin complète des tâches avant de poursuivre.
 >
+
 <a name="removeoldvdc"></a>
 #### Etape 6.7 Supprimer le vDC source
 
