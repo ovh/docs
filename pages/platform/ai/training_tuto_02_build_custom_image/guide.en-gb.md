@@ -343,7 +343,7 @@ AI Training provides, for each Public Cloud project, a default registry called *
 > [!warning]
 >
 > This shared registry can help you perform your tests, but **should not be used in production**, as we reserve the right to delete its content if deemed necessary.
-> This is why it can be interesting to add other registries. Learn how to do it by following [this documentation](LINK).
+> This is why it can be interesting to add other registries. Learn how to do it by following [this documentation](/pages/platform/ai/gi_07_manage_registry).
 >
 
 Here are the basic commands to push a Docker image to a registry:
