@@ -20,8 +20,8 @@ While our app is running, it is likely that we will have to **update our Docker 
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- A [Public Cloud project](https://docs.ovh.com/gb/en/public-cloud/create_a_public_cloud_project/)
-- A [user for AI Deploy](https://docs.ovh.com/gb/en/publiccloud/ai/users)
+- A [Public Cloud project](/pages/platform/public-cloud/create_a_public_cloud_project)
+- A [user for AI Deploy](/pages/platform/ai/gi_01_manage_users)
 - [Docker](https://www.docker.com/get-started) installed on your local computer or a virtual machine
 - The [OVHcloud AI CLI](/pages/platform/ai/cli_10_howto_install_cli)
 
@@ -44,13 +44,13 @@ When updating a Docker image, we have two options:
 
 ### Updating our app's image
 
-Updating the image of our application is usually more interesting than restarting a new one. Indeed, this allows us first of all to keep the same link to the application. It will also avoid us to deploy a new app and specify again all our arguments (volumes, ports, resources, ...). Finally, this will allow us not to accumulate our number of deployed apps, which will allow us a much more efficient management.
+Updating the image of our application is usually more interesting than restarting a new one. Indeed, this allows us first of all to keep the same link to the application. We will also avoid having to deploy a new app and specify again all our arguments (volumes, ports, resources, ...). Finally, this will allow us not to accumulate our number of deployed apps, resulting in a much more efficient management.
 
 #### Reusing an existing tag
 
-If when updating our Docker image, we have **reused the same tag** as the one specified at the initial launch of our application, we will just have to **stop and restart** the application to use the new version of our Docker image. 
+When updating our Docker image, we have **reused the same tag** as the one specified at the initial launch of our application. We will just have to **stop and restart** the application to use the new version of our Docker image. 
 
-In fact, the image tag that was specified at the initial launch of the application will be pulled again during the restarting step. Since the initial tag corresponds to the tag of the updated image, the new image version will be pulled and used within our restarted application.
+In fact, the image tag that was specified at the initial launch of the application will be pulled again during the restart step. Since the initial tag corresponds to the tag of the updated image, the new image version will be pulled and used within our restarted application.
 
 > [!warning]
 >
@@ -69,7 +69,7 @@ This stop & restart operation can be performed from the [OVHcloud Control Panel]
 
 ![image](images/stop_start_app_control-panel.png){.thumbnail}
 
-from the `ovhai` CLI with the following command:
+Execute it from the `ovhai` CLI with the following commands:
 
 ```console
 ovhai app stop <app-id>
