@@ -43,7 +43,7 @@ This guide will show you how to issue an Openstack token, use it for the actions
 
 This guide needs the Openstack CLI tool installed on your machine
 
-You can find more informations on this tool with this guide : [OpenStack CLI](https://docs.openstack.org/newton/user-guide/cli.html)
+You can find more informations on this tool with this guide : [OpenStack CLI](https://docs.openstack.org/python-openstackclient/latest/)
 
 You can get it from package manager apt (for Debian-based distribs) or by yum (for RHEL/CentOS-based distribs)
 
