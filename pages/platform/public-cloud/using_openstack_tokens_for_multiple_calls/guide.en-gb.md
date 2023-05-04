@@ -24,8 +24,7 @@ updated: 2023-05-04
 
 - **Token**: A unique string of characters used to authenticate and access resources. The user requests it by entering their credentials (login details) to the authentication API. The token is generated and is valid for 24 hours.
 
-- **OpenRC** : To improve the efficiency of interactions with the identity service through the OpenStack client, OpenStack supports simple client environment scripts also known as OpenRC files.
-This is a file containing common options for all clients, but which also supports unique options.
+- **OpenRC**: To improve the efficiency of interactions with the identity service through the OpenStack client, OpenStack supports simple client environment scripts also known as OpenRC files. This is a file containing common options for all clients, but which also supports unique options.
 
 ### Outline of a request
 
@@ -37,17 +36,17 @@ For more information, see the [OpenStack API](http://developer.openstack.org/api
 
 This guide will show you how to create an OpenStack token, use it for the actions you want to perform and how to revoke a token.
 
-### Requirements 
+## Requirements 
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} 
-- This guide requires the installation of the OpenStack CLI tool on your machine.
+- An [OpenStack CLI ready environment](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
 
 > [!primary]
 >
 > Find more information about this tool in the [OpenStack CLI documentation](https://docs.openstack.org/python-openstackclient/latest/).
 >
 
-You can get it from the apt package manager (for Debian-based distributionss) or by yum (for RHEL/CentOS-based distributions).
+You can install the client with the `apt` (for Debian-based distributions) or the `yum` (for RHEL/CentOS-based distributions) package manager.
 
 ```bash
 # Debian-based distributions: 
@@ -59,20 +58,21 @@ sudo apt install python3-openstackclient
 sudo yum install python3-openstackclient
 ```
 
-For Windows users, you can follow this guide to export your environment variables : 
+Windows users can follow this guide to export environment variables: 
 
-[Set OpenStack Environment Variables](https://docs.ovh.com/gb/en/public-cloud/set-openstack-environment-variables/)
+[Set OpenStack Environment Variables](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## Instructions
 
 ### Step 1: Download and source your OpenRC file
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Click on `Users & Roles`{.action} in the `Project Management` section  then click on the `...`{.action} button to the right of your OpenStack user.<br>
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Click on `Users & Roles`{.action} in the `Project Management` section, then click on the `...`{.action} button to the right of your OpenStack user.<br>
+
 Download this user's OpenRC file and specify the region where you want to perform actions.
 
 ![download openRC file](images/openrc.png){.thumbnail}
 
-Once downloaded, edit your OpenRC file and add this line :
+Once downloaded, edit your OpenRC file and add this line:
 
 ```bash
 OS_PASSWORD=<your_password>
@@ -95,13 +95,13 @@ source openrc.sh
 > If you are considering long-term actions such as snapshots, instance shelving, image creation, etc., prefer creating a new token rather than performing the desired action directly.
 >
 
-Once you have sourced your openrc file, run this command to issue a token:
+Once you have sourced your OpenRC file, run this command to issue a token:
 
 ```bash
 openstack token issue
 ```
 
-This command should be similar to the following:
+This command should produce an output similar to the following:
 
 ```bash
 +------------+----------------------------------------------------------------+
@@ -120,13 +120,13 @@ You can now export the ID of the previously issued token:
 export OS_TOKEN = gAAAAA[...]
 ```
 
-You can also export directly your token with this command: 
+You can also export your token directly with this command: 
 
 ```bash
 export OS_TOKEN=$(openstack token issue -f value -c id)
 ```
 
-### Step 3: Remove useless variable
+### Step 3: Remove useless variables
 
 In order to use your token to perform actions with your user, you must remove the `OS_USER_DOMAIN_NAME' variable.
 
