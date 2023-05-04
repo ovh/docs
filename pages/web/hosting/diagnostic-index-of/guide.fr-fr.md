@@ -76,7 +76,8 @@ Dans la fenêtre suivante, cliquez sur `Valider`{.action}.
 
 ![modify_root_folder_confirm](images/modify_root_folder_confirm.png){.thumbnail}
 
-Sous quelques minutes (en raffraîchissant votre navigateur), vous obtiendrez le résultat suivant :
+Sous quelques minutes (en rafraîchissant votre navigateur), vous obtiendrez le résultat suivant :
+
 
 ![multisite_modified](images/multisite_modified.png){.thumbnail}
 
