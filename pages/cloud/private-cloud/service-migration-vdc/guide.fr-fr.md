@@ -7,13 +7,13 @@ slug: vdc-migration
 section: Premiers pas
 order: 6
 hidden: true
-updated: 2023-03-27
+updated: 2023-05-04
 ---
 <style>
 .ovh-api-main { background:#fff;}
 </style> 
 
-**Dernière mise à jour le 27/03/2023**
+**Dernière mise à jour le 04/05/2023**
 
 **Ce guide explique comment déplacer des machines virtuelles (VM) d'un virtual DataCenter (vDC) d'origine (DC ou SDDC) vers un nouveau vDC de destination (Essentials ou Premier).**
 

@@ -7,13 +7,13 @@ slug: vdc-migration
 section: Getting started
 order: 6
 hidden: true
-updated: 2022-11-18
+updated: 2023-05-04
 ---
 <style>
 .ovh-api-main { background:#fff;}
 </style> 
 
-**Last updated 18th November 2022**
+**Last updated 4th May 2023**
 
 **This guide explains how to move virtual machines (VM) from a previous source virtual DataCenter (vDC) (DC or SDDC) to a new destination vDC (Essentials or Premier).**
 
@@ -614,6 +614,13 @@ Before you continue, you can check visually, in the graphic Backup Management pl
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/disable
+>
+
+> [!warning]
+>
+> Warning, this last call will remove the Veeam option from the vDC. This will result in the destruction of all backup jobs / retention points that would still be present on the old vDC.<br>
+> Do not hesitate to first use the API call “checkBackupJobs” (mentioned in step 3 above) several times to ensure you have backups on the new vDC.<br>
+> If you have any doubts, contact OVHcloud support to monitor backup jobs.
 >
 
 <a name="reconzerto"></a>
