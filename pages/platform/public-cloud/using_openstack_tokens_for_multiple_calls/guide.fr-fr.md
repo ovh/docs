@@ -43,7 +43,7 @@ Ce guide vous montrera comment émettre un jeton OpenStack, l'utiliser pour les 
 
 > [!primary]
 >
-> Retrouvez plus d'informations sur cet outil dans la [documentation OpenStack CLI](https://docs.openstack.org/newton/user-guide/cli.html).
+> Retrouvez plus d'informations sur cet outil dans la [documentation OpenStack CLI](https://docs.openstack.org/python-openstackclient/latest/).
 
 Vous pouvez l'obtenir à partir du gestionnaire de paquets apt (pour les distributions basées sur Debian) ou par yum (pour les distributions basées sur RHEL/CentOS) :
 
