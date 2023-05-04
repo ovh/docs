@@ -30,7 +30,7 @@ updated: 2023-05-02
 
 La plupart des demandes envoyées à l'API OpenStack doivent suivre une procédure d'autorisation qui implique la génération d'un jeton et sa validation.
 
-Cependant, si vous effectuez trop d'actions en peu de temps, certaines actions OpenStack tomberont en erreur en raison d'un trop grand nombre d'appels à l'API.
+Cependant, si vous effectuez trop d'actions en peu de temps, certaines actions OpenStack tomberont en erreur en raison d'un trop grand nombre d'appels à l'API. La limite actuelle est de 60 création de jeton par minutes par utilisateur, l'API d'authentification retournera des erreurs HTTP 429 au delà de cette limite.
 
 Pour plus d'informations, consultez [la documentation officielle OpenStack API](http://developer.openstack.org/api-guide/quick-start/).
 
