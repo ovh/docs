@@ -61,9 +61,9 @@ You can set up to **20 rules per IP**.
 
 > [!warning]
 >
-> If the Network firewall is enabled and configured with rules, they are automatically applied upon each DDoS attack, and cannot be disabled before the attack ends. This is why it is important to keep the firewall rules up to date.
+> If the Network firewall is enabled and configured with rules, they are automatically applied upon each DDoS attack, and cannot be disabled before the attack ends. This is why it is important to keep your firewall rules up-to-date.
 > As a default setting you do not have any configured rules, so all connections can be set up.
-> If you have chosen to not keep the firewall enabled, remember to check your firewall rules regularly or delete them.
+> If you have any, we recommend checking them regularly, even if the firewall is disabled.
 >
 
 
