@@ -49,7 +49,7 @@ The examples below presume you are logged in as a user with elevated permissions
 
 You can use the following command to verify the name of the new device:
 
-```
+```bash
 $ lsblk
 
 sda       8:0    0   80G  0 disk
@@ -63,7 +63,7 @@ In this example, the additional disk is named `sdb`.
 
 Execute `fdisk` to create a partition on the disk; when prompted, enter `n` for a new partition and accept the subsequent defaults by pressing Enter. Finally, use the `w` command to write the changes to the disk.
 
-```
+```bash
 $ sudo fdisk /dev/sdb
 
 Welcome to fdisk (util-linux 2.34).
@@ -71,7 +71,7 @@ Changes will remain in memory only, until you decide to write them.
 Be careful before using the write command.
 ```
 
-```
+```bash
 Command (m for help): n
 
 Partition type
@@ -81,7 +81,7 @@ Partition type
 Select (default p):
 ```
 
-```
+```bash
 Partition number (1-4, default 1): 
 
 First sector (2048-104857599, default 2048):
@@ -100,7 +100,7 @@ Syncing disks.
 
 Now that the partition `sdb1` is created, you can format it with ext4:
 
-```
+```bash
 $ sudo mkfs.ext4 /dev/sdb1
 
 Creating filesystem with 13106944 4k blocks and 3276800 inodes
@@ -117,14 +117,14 @@ Writing superblocks and filesystem accounting information: done
 
 The final step is to mount the disk:
 
-```
+```bash
 $ sudo mkdir /mnt/disk
 $ sudo mount /dev/sdb1 /mnt/disk
 ```
 
 You can see in the last line that the additional disk is now mounted at `/mnt/disk`:
 
-```
+```bash
 $ df -h
 Filesystem      Size  Used Avail Use% Mounted on
 udev            1.9G     0  1.9G   0% /dev
@@ -152,7 +152,7 @@ This previous step is not persistent because the disk will be detached if the VP
 
 First, retrieve the UUID (block ID) of the device:
 
-```
+```bash
 $ sudo blkid
 /dev/sda1: LABEL="cloudimg-rootfs" UUID="e616a2cd-3c02-4c79-9823-9b1bb5c13b26" TYPE="ext4" PARTUUID="a44089a3-f407-41e6-b7a5-1ed7672cef20"
 /dev/sda15: LABEL_FATBOOT="UEFI" LABEL="UEFI" UUID="4411-1580" TYPE="vfat" PARTUUID="e1746ac7-80c1-4859-9b4d-fa6ce11b3ae9"
@@ -168,13 +168,13 @@ $ sudo blkid
 
 Open `/etc/fstab` with a text editor:
 
-```
+```bash
 $ sudo nano /etc/fstab
 ```
 
 Add the line below to the file and replace the UUID with your own:
 
-```
+```console
 UUID=87571b68-30e1-498b-a64c-49ec5cd4f31c /mnt/disk ext4 nofail 0 0
 ```
 
@@ -221,19 +221,19 @@ Type `cmd` and click `OK`{.action} to open the command line application.
 
 At the command prompt, open DISKPART:
 
-```
+```powershell
 C:\> diskpart
 ```
 
 Use the following series of DISKPART commands to set the disk to online:
 
-```
+```powershell
 DISKPART> san
 
 SAN Policy : Offline Shared
 ```
 
-```
+```powershell
 DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system.
@@ -247,19 +247,19 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```
+```powershell
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
 ```
 
-```
+```powershell
 DISKPART> attributes disk clear readonly
 
 Disk attributes cleared successfully.
 ```
 
-```
+```powershell
 DISKPART> attributes disk
 
 Current Read-only State : No
@@ -271,7 +271,7 @@ Crashdump Disk : No
 Clustered Disk : No
 ```
 
-```
+```powershell
 DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.

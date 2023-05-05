@@ -110,27 +110,27 @@ The required *qemu-guest-agent* is not installed by default on most distribution
 
 Use the following command to check whether the system is properly set up for snapshots:
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 If the output is different ("No such file or directory"), install the latest package:
 
-```
+```bash
 $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
 Reboot the VPS:
 
-```
+```bash
 $ sudo reboot
 ```
 
 Check the service to ensure it is running:
 
-```
+```bash
 $ sudo service qemu-guest-agent status
 ```
 
@@ -138,27 +138,27 @@ $ sudo service qemu-guest-agent status
 
 Use the following command to check whether the system is properly set up for snapshots:
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 If the output is different ("No such file or directory"), install and enable the agent:
 
-```
+```bash
 $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
 Reboot the VPS:
 
-```
+```bash
 $ sudo reboot
 ```
 
 Check the service to ensure it is running:
 
-```
+```bash
 $ sudo service qemu-guest-agent status
 ```
 
@@ -168,7 +168,7 @@ Consult our [cPanel auto backup](https://docs.ovh.com/us/en/vps/cpanel_auto_back
 
 ##### **Windows**
 
-You can install the agent via MSI file, available from the Fedora project website: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
+You can install the agent via MSI file, available from the Fedora project website: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>.
 
 Verify that the service is running by using this *PowerShell* command:
 
