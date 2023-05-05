@@ -38,20 +38,20 @@ Siete pregati di scegliere attentamente perché ognuno ha i suoi vantaggi e svan
 
 Per prima cosa, verifica se il QEMU Guest Agent è in corso di esecuzione sul tuo server. Per verificarlo, esegui questo comando:
 
-```
+```bash
 systemctl status qemu-guest-agent
 ```
 
 Lo stato del servizio è indicato accanto a "Active:". Se attivo o in corso di esecuzione, il servizio deve essere sospeso e disattivato per impedirne la riattivazione in futuro. utilizzando questi comandi:
 
-```
+```bash
 systemctl stop qemu-guest-agent
 systemctl disable qemu-guest-agent
 ```
 
 ### Passare da Jailed Shell a Normal Shell
 
-Scopri le differenze tra Jailed Shell e Normal Shell [qui](https://support.cpanel.net/hc/en-us/articles/360051992634-Differences-Between-Normal-and-Jailed-Shell)
+Scopri le differenze tra Jailed Shell e Normal Shell [qui](https://support.cpanel.net/hc/en-us/articles/360051992634-Differences-Between-Normal-and-Jailed-Shell).
 
 Per disattivare un ambiente Jailed Shell per tutti gli utenti, è necessario disattivare di default l'opzione jailshell nell'interfaccia "WHM's Tweak Settings" (WHM >> Home >>Server Configuration >>Tweak Settings).
 

@@ -24,7 +24,7 @@ A ativação dos logs de arranque (*boot logs*) Windows pode ser útil para os d
 ## Requisitos
 
 - Uma distribuição Windows instalada num [VPS](https://www.ovhcloud.com/pt/vps/).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 

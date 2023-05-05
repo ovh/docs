@@ -115,21 +115,21 @@ W większości dystrybucji wymagany *qemu-guest-agent* nie jest zainstalowany do
 
 Wprowadź poniższą komendę, aby sprawdzić, czy system został poprawnie skonfigurowany pod kątem tworzenie migawek:
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Jeśli wynik jest inny (“No such file or directory”), zainstaluj najnowszy pakiet:
 
-```
+```bash
 $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
 Uruchom usługę, aby upewnić się, że działa:
 
-```
+```bash
 $ sudo service qemu-guest-agent start
 ```
 
@@ -137,28 +137,28 @@ $ sudo service qemu-guest-agent start
 
 Wprowadź poniższą komendę, aby sprawdzić, czy system został poprawnie skonfigurowany pod kątem tworzenie migawek:
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Jeśli wynik jest inny (“No such file or directory”), zainstaluj i aktywuj agenta:
 
-```
+```bash
 $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
 Uruchom agenta i sprawdź, czy działa:
 
-```
+```bash
 $ sudo service qemu-guest-agent start
 $ sudo service qemu-guest-agent status
 ```
 
 ##### **Windows**
 
-Możesz zainstalować agenta, korzystając z pliku MSI, dostępnego na stronie projektu Fedora <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
+Możesz zainstalować agenta, korzystając z pliku MSI, dostępnego na stronie projektu Fedora <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>.
 
 Sprawdź, czy usługa działa za pomocą poniższej komendy *PowerShell*:
 

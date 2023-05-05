@@ -16,7 +16,7 @@ updated: 2021-06-29
 
 Minecraft è un videogioco da costruzione di successo globale. Per giocare in modalità multiplayer, il server deve essere ospitato su un server.
 
-È possibile noleggiare un server Minecraft precostruito o configurarlo su un [VPS](https://www.ovhcloud.com/it/vps/) o su un [server dedicato](https://www.ovhcloud.com/it/bare-metal/). per permetterti di risparmiare e avere il controllo completo sull'istanza di gioco.
+È possibile noleggiare un server Minecraft precostruito o configurarlo su un [VPS](https://www.ovhcloud.com/it/vps/) o su un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) per permetterti di risparmiare e avere il controllo completo sull'istanza di gioco.
 
 **Questa guida ti mostra come avviare un server Minecraft Java Edition su un VPS OVHcloud e testarne la connettività.**
 

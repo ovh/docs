@@ -23,7 +23,7 @@ L'attivazione dei log di avvio (*boot log*) Windows può essere utile per la dia
 ## Prerequisiti
 
 - Una distribuzione Windows installata su un [VPS](https://www.ovhcloud.com/it/vps/).
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 ## Procedura
 

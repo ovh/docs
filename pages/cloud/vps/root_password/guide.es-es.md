@@ -16,7 +16,7 @@ updated: 2021-04-20
 
 Si necesita cambiar la contraseña root en su sistema operativo Linux, Existen dos posibles escenarios:
 
-- Todavía puede conectarse por SSH
+- Todavía puede conectarse por SSH.
 - No puede conectarse por SSH porque ha perdido la contraseña.
 
 **Esta guía explica cómo cambiar la contraseña de administrador en función de estas dos situaciones.**

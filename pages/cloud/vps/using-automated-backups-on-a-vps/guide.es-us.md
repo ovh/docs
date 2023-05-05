@@ -94,13 +94,13 @@ Primero, conéctese a su servidor virtual privado (VPS) a través del protocolo/
 
 Puede utilizar el comando siguiente para verificar el nombre del nuevo dispositivo conectado:
 
-```
+```bash
 $ lsblk
 ```
 
 A continuación, un resultado de muestra de este comando:
 
-```
+```console
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda       8:0    0   25G  0 disk 
 ├─sda1    8:1    0 24.9G  0 part /
@@ -115,7 +115,7 @@ sdb       8:16   0   25G  0 disk
 En este ejemplo, la partición que contiene el sistema de archivos de la copia de seguridad se denomina «sdb1».
 A continuación, cree un directorio para esta partición y defínalo como el punto de montaje:
 
-```
+```bash
 $ mkdir -p /mnt/restore
 $ mount /dev/sdb1 /mnt/restore
 ```
@@ -160,27 +160,27 @@ La mayoría de las distribuciones no disponen por defecto de *qemu-guest* obliga
 
 Utilice el siguiente comando para comprobar si el sistema está configurado correctamente para los snapshots:
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Si el resultado es diferente (« No such file or directory »), instale la última versión del paquete:
 
-```
+```bash
 $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
 Reinicie el VPS:
 
-```
+```bash
 $ sudo reboot
 ```
 
 Inicie el servicio para garantizar que está en ejecución:
 
-```
+```bash
 $ sudo service qemu-guest-agent start
 ```
 
@@ -188,27 +188,27 @@ $ sudo service qemu-guest-agent start
 
 Utilice el siguiente comando para comprobar si el sistema está configurado correctamente para los snapshots:
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Si el resultado es diferente (« No such file or directory »), instale y active el software:
 
-```
+```bash
 $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
 Reinicie el VPS:
 
-```
+```bash
 $ sudo reboot
 ```
 
 Inicie el software y compruebe que está en ejecución:
 
-```
+```bash
 $ sudo service qemu-guest-agent start
 $ sudo service qemu-guest-agent status
 ```
@@ -219,7 +219,7 @@ Puede instalar el agente a través de un archivo MSI, disponible en el sitio web
 
 Compruebe que el servicio está en ejecución con el siguiente comando PowerShell:
 
-```
+```powershell
 PS C:\Users\Administrator> Get-Service QEMU-GA
 Status   Name               DisplayName
 ------   ----               -----------

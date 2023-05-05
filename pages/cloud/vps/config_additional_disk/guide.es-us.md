@@ -178,7 +178,7 @@ $ sudo nano /etc/fstab
 
 Añada la siguiente línea al archivo y sustituya el UUID por el suyo:
 
-```bash
+```console
 UUID=87571b68-30e1-498b-a64c-49ec5cd4f31c /mnt/disk ext4 nofail 0 0
 ```
 
@@ -224,19 +224,19 @@ Pulse `cmd` y haga clic en `Aceptar`{.action} para abrir la aplicación de líne
 
 En la línea de comandos, abra DISKPART:
 
-```bash
+```powershell
 C:\> diskpart
 ```
 
 Utilice la siguiente serie de comandos DISKPART para configurar el disco en línea:
 
-```bash
+```powershell
 DISKPART> san
 
 SAN Policy: Offline Shared
 ```
 
-```bash
+```powershell
 DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system.
@@ -250,19 +250,19 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```bash
+```powershell
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk
 ```
 
-```bash
-DISKPART> atributos disk clear readonly
+```powershell
+DISKPART> attributes disk clear readonly
 
-Disk atributos cleared successfully.
+Disk attributes cleared successfully.
 ```
 
-```bash
+```powershell
 DISKPART> attributes disk
 
 Current Read-only State : No
@@ -274,7 +274,7 @@ Crashdump Disk : No
 Clustered Disk : No
 ```
 
-```bash
+```powershell
 DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.

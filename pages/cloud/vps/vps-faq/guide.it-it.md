@@ -41,20 +41,20 @@ In generale, si può affermare che gli utenti con un’attività Web in crescita
 ### Quali sono le differenze tra le soluzioni VPS e Public Cloud?
 
 Il VPS è una soluzione adatta ad ambienti di preproduzione e produzione che richiedono prestazioni costanti. 
-Il Public Cloud di OVHcloud propone invece un'infrastruttura multiserver con macchine high availability. e con rete privata vRack disponibile.
+Il Public Cloud di OVHcloud propone invece un'infrastruttura multiserver con macchine high availability e con rete privata vRack disponibile.
 
 ### Come scegliere il proprio VPS OVHcloud?
 
 Per scegliere un VPS adatto alle proprie esigenze, ti consigliamo di verificare:
 
-- la quantità di risorse necessarie (processore, memoria, spazio disco, banda passante...)
-- il sistema operativo richiesto (Linux o Windows)
+- la quantità di risorse necessarie (processore, memoria, spazio disco, banda passante...).
+- il sistema operativo richiesto (Linux o Windows).
 - i prerequisiti tecnici essenziali per il corretto funzionamento dell'applicazione (ad esempio, un database richiede velocità in lettura/scrittura).
 
 Per effettuare questa operazione, scegli tra le nostre soluzioni VPS:
 
-- **VPS Starter**: macchine entry level per testare la nostra offerta (esclusivamente con distribuzione Linux, senza pannello di gestione Web)
-- **VPS Value, Essential e Comfort**: ideali per l'hosting di siti Web, servizi di e-commerce o sistemi di monitoring
+- **VPS Starter**: macchine entry level per testare la nostra offerta (esclusivamente con distribuzione Linux, senza pannello di gestione Web).
+- **VPS Value, Essential e Comfort**: ideali per l'hosting di siti Web, servizi di e-commerce o sistemi di monitoring.
 - **VPS Elite**: adattato a siti e-commerce e applicazioni che richiedono molte risorse CPU e memoria.
 
 

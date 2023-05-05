@@ -53,7 +53,7 @@ Die folgenden Beispiele nehmen an, dass Sie als Benutzer mit erhöhten Rechten e
 
 Sie können folgenden Befehl verwenden, um den Namen des neuen Geräts zu überprüfen:
 
-```
+```bash
 $ lsblk
 
 sda       8:0    0   80G  0 disk
@@ -67,7 +67,7 @@ In diesem Beispiel wird die zusätzliche Disk als `sdb` bezeichnet.
 
 Führen Sie `fdisk` aus, um eine Partition auf der Disk zu erstellen. Wenn Sie dazu aufgefordert werden, geben Sie `n` für eine neue Partition ein und akzeptieren Sie die nachfolgenden Standardwerte, indem Sie die Enter-Taste drücken. Verwenden Sie zuletzt den Befehl `w`, um die Änderungen auf die Disk zu schreiben.
 
-```
+```bash
 $ sudo fdisk /dev/sdb
 
 Welcome to fdisk (util-linux 2.34).
@@ -75,7 +75,7 @@ Changes will remain in memory only, until you decide to write them.
 Be careful before using the write command.
 ```
 
-```
+```bash
 Command (m for help): n
 
 Partition type
@@ -85,7 +85,7 @@ Partition type
 Select (default p):
 ```
 
-```
+```bash
 Partition number (1-4, default 1): 
 
 First sector (2048-104857599, default 2048):
@@ -94,7 +94,7 @@ Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-104857599, default 104857599
 Created a new partition 1 of type 'Linux' and of size 50 GiB.
 ```
 
-```
+```bash
 Command (m for help): w
 
 The partition table has been altered.
@@ -104,7 +104,7 @@ Syncing disks.
 
 Nun, da die `sdb1` Partition erstellt wurde, können Sie diese mit ext4 formatieren:
 
-```
+```bash
 $ sudo mkfs.ext4 /dev/sdb1
 
 Creating filesystem with 13106944 4k blocks and 3276800 inodes
@@ -121,14 +121,14 @@ Writing superblocks and filesystem accounting information: done
 
 Im letzten Schritt wird die Disk gemountet:
 
-```
+```bash
 $ sudo mkdir /mnt/disk
 $ sudo mount /dev/sdb1 /mnt/disk
 ```
 
 Anhand der letzten Zeile sehen Sie, dass die zusätzliche Disk nun auf `/mnt/disk` gemountet ist:
 
-```
+```bash
 $ df -h
 Filesystem      Size  Used Avail Use% Mounted on
 udev            1.9G     0  1.9G   0% /dev
@@ -157,7 +157,7 @@ Die vorherige Anpassung ist nicht persistent, da die Disk wieder getrennt wird, 
 Ermitteln Sie zunächst die UUID (Block-ID) des Geräts:
 
 
-```
+```bash
 $ sudo blkid
 /dev/sda1: LABEL="cloudimg-rootfs" UUID="e616a2cd-3c02-4c79-9823-9b1bb5c13b26" TYPE="ext4" PARTUUID="a44089a3-f407-41e6-b7a5-1ed7672cef20"
 /dev/sda15: LABEL_FATBOOT="UEFI" LABEL="UEFI" UUID="4411-1580" TYPE="vfat" PARTUUID="e1746ac7-80c1-4859-9b4d-fa6ce11b3ae9"
@@ -173,13 +173,13 @@ $ sudo blkid
 
 Öffnen Sie `/etc/fstab` mit einem Texteditor:
 
-```
+```bash
 $ sudo nano /etc/fstab
 ```
 
 Fügen Sie die folgende Zeile zur Datei hinzu und ersetzen Sie die UUID mit Ihrer zuvor ausgelesenen:
 
-```
+```console
 UUID=87571b68-30e1-498b-a64c-49ec5cd4f31c /mnt/disk ext4 nofail 0 0
 ```
 
@@ -225,19 +225,19 @@ Geben Sie `cmd` ein und klicken Sie auf `OK`{.action}, um die Kommandozeilenanwe
 
 In der Eingabeaufforderung starten Sie DISKPART:
 
-```
+```powershell
 C:\> diskpart
 ```
 
 Verwenden Sie folgende Befehle in DISKPART, um die Disk als "Online" zu konfigurieren:
 
-```
+```powershell
 DISKPART> san
 
 SAN Policy : Offline Shared
 ```
 
-```
+```powershell
 DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system.
@@ -251,19 +251,19 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```
+```powershell
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
 ```
 
-```
+```powershell
 DISKPART> attributes disk clear readonly
 
 Disk attributes cleared successfully.
 ```
 
-```
+```powershell
 DISKPART> attributes disk
 
 Current Read-only State : No
@@ -275,7 +275,7 @@ Crashdump Disk : No
 Clustered Disk : No
 ```
 
-```
+```powershell
 DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.

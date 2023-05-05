@@ -20,8 +20,8 @@ Se configurar o VPS como servidor DNS, pode utilizar o serviço DNS secundário 
 
 ## Requisitos
 
-- Um domínio ao qual terá acesso enquanto administrador
-- Um servidor [VPS](https://www.ovhcloud.com/pt/vps/) na sua Área de Cliente OVHcloud
+- Um domínio ao qual terá acesso enquanto administrador.
+- Um servidor [VPS](https://www.ovhcloud.com/pt/vps/) na sua Área de Cliente OVHcloud.
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 > [!warning]
