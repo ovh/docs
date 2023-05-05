@@ -33,7 +33,7 @@ Virtualisation
 Divers  
 
 - Repérer le nom de vos interfaces réseaux
-
+- Problèmes liés à l'EFI
 
 > [!warning]
 >
@@ -588,14 +588,20 @@ Il est nécessaire de vérifier et d'adapter les fichiers suivants :
 
 ### ESXi
 
-Suite au remplacement de la carte mère, il est impossible demodifier les nouvelles adresses MAC à travers le fichier `esxi.conf` viale mode rescue.
+Suite au remplacement de la carte mère, il est impossible de modifier les nouvelles adresses MAC à travers le fichier `esxi.conf` via les outils intégrés au mode rescue.
+Il sera donc nécessaire d'intervenir manuellement.
 
-> [!warning]
->
-> La procédure décrite ci-dessous ne concerne que les versions 6.5 ou inférieurs.
-> Au delà de cette version, le fichier state.tgz est crypté, il n'est donc plus possible de la suivre.
-> Il vous faudra réaliser une réinitialisation du réseau depuis l'interface d'administration via votre KVM ou IPMI.
->
+#### version 7.0 ou supérieur
+La procédure décrite ci-dessous ne concerne que les **versions 7.0 ou supérieurs**.  
+A partir de cette version, le fichier state.tgz est crypté.  
+Il vous faudra réaliser une réinitialisation du réseau depuis le menu Direct Console via votre KVM ou IPMI.  
+cf screen ci-dessous :
+
+ ![reset_network](images/restore.png){.thumbnail}
+ 
+
+#### version 6.7 ou inférieur
+La procédure décrite ci-dessous ne concerne que les **versions 6.7 ou inférieurs**.
 
 - rédemarer le serveur en [mode rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/#en-pratique) afin de monter la partition `/` :
 
@@ -799,8 +805,77 @@ root@rescue:~# umount /mnt/dev
 root@rescue:~# umount /mnt
 ```
 
+### Problèmes liés à l'EFI
 
-## Aller plus loin
+Si vous rencontrez un soucis de démarrage (boot) lié aux partitions présentes sur vos disques.  
+Il existe 2 méthodes :  
 
+#### via le mode rescue
+exemple :le système installé (proxmox ici) n'est plus bootable après le remplacement du disque (aucune entrée EFI n'est visible à travers le BIOS).  
+
+- rédemarer le serveur en [mode rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/#en-pratique).
+- repérer le disque possédant la partition EFI d'origine :
+```bash
+Disk /dev/nvme1n1: 894.3 GiB, 960197124096 bytes, 1875385008 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk /dev/nvme0n1: 894.3 GiB, 960197124096 bytes, 1875385008 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: A28EAF07-248B-4CEB-86D4-92F75A36F1B0
+
+Device              Start        End    Sectors   Size Type
+/dev/nvme0n1p1         34    1048609    1048576   512M EFI System
+/dev/nvme0n1p2    1050624 1875368589 1874317966 893.8G Solaris /usr & Apple ZFS
+/dev/nvme0n1p9 1875368590 1875384974      16385     8M Solaris reserved 1
+```
+
+- monter la partition concernée.
+```bash
+root@rescue:~# ls /mnt/EFI/proxmox/grubx64.efi
+/mnt/EFI/proxmox/grubx64.efi
+root@rescue:~#
+root@rescue:~# umount /mnt
+```
+
+- utilisez la commande suivante pour rendre celle-ci de nouveau fonctionnelle :
+```bash
+root@rescue:~# efibootmgr -v --create --disk /dev/nvme0n1 --part 1 --label "proxmox2" --loader '\EFI\proxmox\grubx64.efi'
+BootCurrent: 0005
+Timeout: 1 seconds
+BootOrder: 0000,0005,0007,0006,0008,0001
+Boot0001* proxmox    Vendor(99e275e7-75a0-4b37-a2e6-c5385e6c00cb,)
+Boot0005* UEFI: PXE IP4 P0 Intel(R) Ethernet Controller X550    ACPI(a0341d0,0)PCI(1b,4)PCI(0,0)MAC(MAC(d05099d5e395,1)..BO
+Boot0006  UEFI: PXE IP4 P1 Intel(R) Ethernet Controller X550    ACPI(a0341d0,0)PCI(1b,4)PCI(0,1)MAC(MAC(d05099d5e394,1)..BO
+Boot0007  UEFI: Built-in EFI Shell    Vendor(5023b95c-db26-429b-a648-bd47664c8012,)..BO
+Boot0008* UEFI: PXE IP4 P0 American Megatrends Inc.    ACPI(a0341d0,0)PCI(14,0)USB(7,0)USB(2,1)MAC(MAC(2ab925859a66,0)..BO
+Boot0000* proxmox2    HD(1,22,100000,0df658ff-5461-470a-9d92-5d95208d5c0f)File(\EFI\proxmox\grubx64.efi)
+```
+
+#### via le BIOS
+exemple :le système installé (centos6 ici) n'est plus bootable après le remplacement du disque (aucune entrée EFI n'est visible à travers le BIOS).
+
+- rédemarer le serveur afin d'entrer dans le menu BIOS.
+
+la *1ere séquence* consiste à générer de nouveau les fichiers nécessaires afin de rendre votre partition de nouveau opérationelle :
+- rendez-vous dans le menu `boot` de votre BIOS :
+	- choisissez `Add New Boot Option`{.action}
+	- choisissez le chemin de votre partition 'Path for boot option'{.action}, selectionnez le système de fichier qui contient votre partition de démarrage.
+	- selectionnez le fichier `EFI\centos6\bootx64.efi` puis choissiez `Create`{.action}.
+ci-dessous, le résumé des actions :
+![generate_efi](images/generate_efi.gif){.thumbnail}
+
+la *2eme séquence* consiste à rendre active la partition sélectionnée lors de la séquence précédente.
+- toujours dans le menu `boot` de votre BIOS : 
+	- choisissez `UEFI Hard Disk BBS Priorities`{.action}
+	- choisissez `UEFI Boot Order #1`{.action} puis sélectionnez `CENTOS6`{.action} afin de le positionner en tant que 1er choix de démarrage dans la liste active.
+ci-dessous, le résumé des actions :
+![select_efi](images/select_efi.gif){.thumbnail}
+
+
+# Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
