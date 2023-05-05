@@ -861,3 +861,7 @@ velero backup delete nginx-backup-with-pv
 
 So now you have a working Velero on your cluster.  
 Please refer to [official Velero documentation](https://velero.io/docs/){.external} to learn how to use it, including scheduling backups, using `pre-` and `post-backup` hooks and other matters.
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

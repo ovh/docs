@@ -1384,3 +1384,7 @@ All the basic tasks and operations explained in this tutorial, are meant to give
 - [Multi-Cluster Management](https://docs.trilio.io/kubernetes/management-console-ui/index/multicloud-management).
 - [Restore Transforms](https://docs.trilio.io/kubernetes/overview/features-and-use-cases#restore-transforms).
 - [Velero Integration to Monitor Velero Backups](https://docs.trilio.io/kubernetes/management-console-ui/index/monitoring-velero-with-triliovault-for-kubernetes).
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

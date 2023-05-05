@@ -475,3 +475,7 @@ And you should get the HTTP parameters of your request, including the right sour
 ## What if I want to use another Ingress Controller
 
 The precedent method should work in a similar way for any Ingress Controller. We will soon update this tutorial with more detailed information on other Ingress Controllers, specifically Traefik.
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

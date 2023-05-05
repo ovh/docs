@@ -41,3 +41,7 @@ Feature gates:
 ### Kubelet
 
 * `protect-kernel-defaults`: Protect tuned kernel parameters from overriding kubelet default kernel parameter values.
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

@@ -175,3 +175,7 @@ It will delete your Jenkins and its associated resources from your cluster:
 <pre class="console"><code>$ helm delete my-first-jenkins
 release "my-first-jenkins" uninstalled
 </code></pre>
+
+## Go further
+
+Join our [community of users](https://community.ovh.com/en/).

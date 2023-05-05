@@ -220,3 +220,7 @@ ingress.extensions/ingress created
 So now if you point your browser to `http://$INGRESS_URL/`, you will see your WordPress:
 
 ![WordPress using Ingress](images/installing-ingress-01.png){.thumbnail}
+
+## Go further
+
+Join our [community of users](https://community.ovh.com/).

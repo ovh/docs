@@ -127,3 +127,7 @@ This table sums up the reserved resources on b2 flavors:
 | b2-30 | 8 | 190 | 30 | 3 | 200 | 43 |
 | b2-60 | 16 | 230 | 60 | 4,5 | 400 | 66 |
 | b2-120 | 32 | 310 | 120 | 7,5 | 400 | 66 |
+
+## Go further
+
+Join our [community of users](https://community.ovh.com/en/).

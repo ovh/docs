@@ -160,3 +160,7 @@ kube-system   wormhole-7cbmc                               1/1     Running   0  
 kube-system   wormhole-7dt6x                               1/1     Running   0             14d
 kube-system   wormhole-vh7pk                               1/1     Running   0             14d
 </code></pre>
+
+## Go further
+
+Join our [community of users](https://community.ovh.com/en/).

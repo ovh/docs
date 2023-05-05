@@ -390,3 +390,7 @@ At the end you can proceed to clean up by deleting everything. Delete the `nginx
 ```bash
 kubectl delete namespace nginx-example
 ```
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

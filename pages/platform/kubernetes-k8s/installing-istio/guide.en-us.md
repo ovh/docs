@@ -458,3 +458,7 @@ namespace "istio-system" deleted
 $ kubectl delete namespace istio-apps
 namespace "istio-apps" deleted
 </code></pre>
+
+## Go further
+
+Join our [community of users](https://community.ovh.com/).

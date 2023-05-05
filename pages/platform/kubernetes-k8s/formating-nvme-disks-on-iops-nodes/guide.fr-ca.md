@@ -405,3 +405,7 @@ kubectl delete -f format-nvme-daemonset.yaml
 ```bash
 kubectl delete -f format-nvme-configmap.yaml
 ```
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

@@ -85,3 +85,7 @@ After its creation, click on the node pool in order to list its nodes details.
 You're now ready to deploy your first application.
 
 For more details about this process, you can refer to our [deploying an application](../deploying-an-application/) documentation.
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

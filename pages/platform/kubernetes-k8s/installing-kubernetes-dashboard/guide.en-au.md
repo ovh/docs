@@ -223,3 +223,7 @@ To remove all resources created by your previous `kubernetes-dashboard` deployme
 kubectl delete -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
 kubectl delete -f dashboard-cluster-role-binding.yml
 ```
+
+## Go further
+
+Join our [community of users](https://community.ovh.com/en/).

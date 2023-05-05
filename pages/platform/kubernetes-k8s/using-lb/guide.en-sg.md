@@ -275,3 +275,7 @@ You will see that the pod created for `hello-world` has been deleted too:
 <pre class="console"><code>$ kubectl get pod -l app=hello-world
 No resources found
 </code></pre>
+
+## Go further
+
+Join our [community of users](https://community.ovh.com/en/).

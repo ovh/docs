@@ -175,3 +175,7 @@ For more details, please refer to the [Resizing Persistent Volumes documentation
 The Persistent Volumes are using our Cinder-based block-storage solution through Cinder CSI.  
 A worker node can have a maximum of 254 persistent volumes attached to it, and a persistent volume can only be attached to a single worker node.  
 You can manually [configure multi-attach persistent volumes with NAS-HA](../configuring-multi-attach-persistent-volumes-with-ovhcloud-nas-ha/).
+
+## Go further
+
+Join our [community of users](https://community.ovh.com/en/).

@@ -567,3 +567,7 @@ To delete an Openstack router, you must first remove the linked ports.
 >> > [!api]
 >> >
 >> > @api {DELETE} /cloud/project/{serviceName}/network/private/{networkId}/region/{region}
+
+## Go further
+
+Join our [community of users](https://community.ovh.com/en/).

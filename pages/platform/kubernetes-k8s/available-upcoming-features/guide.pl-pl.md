@@ -28,3 +28,7 @@ We list here the most frequently requested OVHcloud Managed Kubernetes features 
 We now expose the roadmap of this service, as all of our Public Cloud services, publicly in the OVHcloud GitHub repo.
 When visiting [the "containers and orchestration" board of the roadmap](https://github.com/ovh/public-cloud-roadmap/projects/1) you can view all the backlog, vote or subscribe to notifications on features and even propose new ones to be considered.
 
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
+

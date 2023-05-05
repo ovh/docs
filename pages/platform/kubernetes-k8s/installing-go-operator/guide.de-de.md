@@ -1421,8 +1421,8 @@ To go deeper on Kubernetes operators topic, follow others [Kubernetes tutorials]
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
-
 The [operator](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/) pattern in Kubernetes.
 
 The operator [SDK](https://operatorframework.io/operator-capabilities/).
+
+Join our community of users on <https://community.ovh.com/en/>.

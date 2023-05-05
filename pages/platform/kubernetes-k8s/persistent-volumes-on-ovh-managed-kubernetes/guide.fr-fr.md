@@ -318,3 +318,6 @@ $ kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.
 10.2.2.0 - - [24/Mar/2022:12:31:12 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
 </code></pre>
 
+## Go further
+
+Join our [community of users](https://community.ovh.com/).

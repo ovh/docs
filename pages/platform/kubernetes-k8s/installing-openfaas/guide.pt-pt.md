@@ -405,6 +405,10 @@ So now you have a working OpenFaaS platform on your OVHcloud Managed Kubernetes 
 
 To learn more about OpenFaaS, and how you can get a maximum profit from it, please refer to the [official OpenFaaS documentation](https://docs.openfaas.com/){.external}. You can also follow the [OpenFaaS workshops](https://github.com/openfaas/workshop){.external} to learn in a more practical way.  
 
+## Go further
+
+Join our [community of users](https://community.ovh.com/en/).
+
 
 
 

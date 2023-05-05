@@ -770,3 +770,7 @@ namespace "nginx-example" deleted
 $ helm uninstall stash -n kube-system
 release "stash" uninstalled
 </code></pre>
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

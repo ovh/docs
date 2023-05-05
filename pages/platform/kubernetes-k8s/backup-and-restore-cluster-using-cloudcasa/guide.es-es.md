@@ -301,3 +301,5 @@ Now you can sit back and relax, knowing that you can now take ad-hoc or schedule
 ## Go further
 
 In case you have questions, you can read the [FAQ page](https://cloudcasa.io/faq/) and access the [dedicated forum](https://cloudcasa.io/forum/forum/cloudcasa/).
+
+Join our community of users on <https://community.ovh.com/en/>.
