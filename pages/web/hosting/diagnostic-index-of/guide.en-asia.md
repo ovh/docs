@@ -11,10 +11,10 @@ updated: 2023-05-04
 
 ## Objective
 
-An **”Index of”** page appears in at least one of the following cases:
+An "**Index of**" page appears in at least one of the following cases:
 
-- Your domain name’s [Multisite](/pages/web/hosting/multisites_configure_multisite) configuration has not been correctly set to your target directory
-- The target folder to which your domain name points does not contain **“index.html”** or **“index.php”** files
+- Your domain name’s [Multisite](/pages/web/hosting/multisites_configure_multisite) configuration has not been correctly set to your target directory.
+- The target folder to which your domain name points does not contain **index.html** or **index.php** files.
 
 ![index_of](images/index_of.png){.thumbnail}
 
@@ -38,13 +38,13 @@ An **”Index of”** page appears in at least one of the following cases:
 
 Your domain name is declared to access a target directory (a `Root Folder`) on the server [FTP](https://docs.ovh.com/asia/en/hosting/log-in-to-storage-ftp-web-hosting/) of your web hosting plan. You can do this via the [Multisite](/pages/web/hosting/multisites_configure_multisite) tab in your web hosting plan, in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
 
-The **Index of** page indicates that the target directory does not contain a **index.php** or **index.html** file. A file of this type is the *entry point* for your website. The file name is normalised.
+The "**Index of**" page indicates that the target directory does not contain a **index.php** or **index.html** file. A file of this type is the *entry point* for your website. This file name is standardised.
 
 To view your website, you will need to link your domain to the `Root folder` containing this file **index.php** or **index.html** to view it from the `Multisite`{.action} section of your hosting plan.
 
 > [!primary]
 >
-> To temporarily link your domain to a `Root folder` that does not contain a **index.php** or **index.html** file, you can prevent your website from displaying a list of folders by following this [tutorial](https://docs.ovh.com/asia/en/hosting/what_else_can_you_do_with_the_htaccess_file/#prevent-the-content-of-a-directory-from-being-listed). You can also protect access to your folders with a [password](https://docs.ovh.com/asia/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+> If you want to temporarily link your domain to a `Root folder` that does not contain an **index.php** or **index.html** file, you can prevent the list of folders from being displayed on your site by following this [tutorial](https://docs.ovh.com/asia/en/hosting/what_else_can_you_do_with_the_htaccess_file/#prevent-the-content-of-a-directory-from-being-listed). You can also protect access to your folders with a [password](https://docs.ovh.com/asia/en/hosting/how_to_password_protect_a_directory_on_your_website/).
 >
 > We recommend contacting a [specialist provider](https://partner.ovhcloud.com/asia/directory/) if you experience any difficulties setting up this configuration. Our support teams will not be able to assist you with any changes to your website’s internal programming.
 
@@ -60,8 +60,8 @@ Modify the `Root folder` by clicking on the `...`{.action} button in the row of 
 
 In the window that opens:
 
-- Select the `Also modify the www.mydomain.ovh sub-domain`{.action} (1) box;
-- Specify the directory containing your site's **index.php** or **index.html** file as `Root folder` (2);
+- Select the `Also modify the www.mydomain.ovh sub-domain`{.action} (1) box.
+- Specify the directory containing your site's **index.php** or **index.html** file as `Root folder` (2).
 - Click on `Next`{.action} (3).
 
 ![change_root_folder](images/change_root_folder01.png){.thumbnail}
@@ -75,7 +75,7 @@ In the next window, click on `Confirm`{.action}.
 
 ![modify_root_folder_confirm](images/modify_root_folder_confirm.png){.thumbnail}
 
-In a few minutes (by refreshing your browser), you will get the following result:
+In a few minutes (remember to refresh your browser), you will see the following result: 
 
 ![multisite_modified](images/multisite_modified.png){.thumbnail}
 
