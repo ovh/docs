@@ -15,10 +15,10 @@ updated: 2023-05-04
 
 ## Ziel 
 
-Eine Seite **"Index of"** erscheint in mindestens einem der folgenden Fälle:
+Eine **Index of**-Seite erscheint in mindestens einem der folgenden Fälle:
 
-- Die Konfiguration Ihrer Domain [Multisite](/pages/web/hosting/multisites_configure_multisite) ist nicht korrekt auf Ihr Zielverzeichnis eingestellt
-- Der Zielordner, auf den Ihre Domain verweist, enthält keine **"index.html"** oder **"index.php"**
+- Ihr Domainname ist in der [Multisite-Konfiguration](/pages/web/hosting/multisites_configure_multisite) nicht korrekt auf Ihr Zielverzeichnis eingestellt.
+- Das Zielverzeichnis, auf das Ihr Domainname verweist, enthält keine Datei namens **index.html** oder **index.php**.
 
 ![index_of](images/index_of.png){.thumbnail}
 
@@ -32,7 +32,7 @@ Eine Seite **"Index of"** erscheint in mindestens einem der folgenden Fälle:
 
 ## Voraussetzungen
 
-- Über eine [Domainname](https://www.ovhcloud.com/de/domains/)
+- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
 - Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
@@ -40,15 +40,15 @@ Eine Seite **"Index of"** erscheint in mindestens einem der folgenden Fälle:
 
 ### Den Ursprung der "Index of"-Seite verstehen
 
-Ihre Domain wird für den Zugang zu einem Zielverzeichnis (einem `Wurzelverzeichnis`) auf dem Server [FTP-Speicherplatz](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) Ihres Webhostings angemeldet. Dies geschieht über den Tab [Multisite](/pages/web/hosting/multisites_configure_multisite) Ihres Webhostings in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+Über die `Multisite`-Konfiguration Ihres Hostings wird Ihr Domainname mit einem Zielverzeichnis im [FTP-Speicherplatz](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) Ihres Webhostings verknüpft. Dies geschieht über den Tab [Multisite](/pages/web/hosting/multisites_configure_multisite) Ihres Webhostings in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
-Auf der Seite **Index of** wird angegeben, dass das betreffende Zielverzeichnis keine Dateien enthält **index.php** oder **index.html**. Eine solche Datei ist der "*Eingangspunkt*" Ihrer Website. Der Name dieser Datei ist standardisiert.
+Die Seite "**Index of**" ist ein Anzeichen dafür, dass Ihr Verzeichnis keine Indexdatei, also **index.php** oder **index.html** enthält. Eine solche Datei repräsentiert die Startseite bzw. den Einstiegspunkt Ihrer Website. Der Name dieser Datei ist standardisiert.
 
-Um Ihre Website anzuzeigen, müssen Sie Ihre Domain über den Bereich `Multisite`{.action} Ihres Webhostings mit dem Wurzelverzeichnis verbinden, das diese Datei enthält **index.php** oder **index.html**.
+Ihr Domainname muss daher im Bereich `Multisite`{.action} Ihres Webhostings mit dem Wurzelverzeichnis verknüpft werden, das eine **index.php** oder **index.html** enthält.
 
 > [!primary]
 >
-> Um Ihre Domain temporär mit einem bestimmten `Wurzelverzeichnis`, das keine Datei enthält **index.php** oder **index.html**, zu verbinden, können Sie die Anzeige der Liste der Verzeichnisse Ihrer Website verbieten, indem Sie diesem [Tutorial](https://docs.ovh.com/de/hosting/webhosting_welche_anderen_operationen_sind_mit_htaccess-dateien_moglich/#verzeichnis-browsing-verhindern) folgen. Sie können auch den Zugang zu Ihren Ordnern mit einem [Passwort](https://docs.ovh.com/de/hosting/hosting-htaccess-authentifizierung/) schützen.
+> Wenn Sie Ihren Domainnamen temporär mit einem `Wurzelverzeichnis` verknüpfen möchten, das keine **index.php** oder **index.html** Datei enthält, können Sie verhindern, dass die Auflistung von Ordnern auf Ihrer Website angezeigt wird, indem Sie [diesem Tutorial](https://docs.ovh.com/de/hosting/webhosting_welche_anderen_operationen_sind_mit_htaccess-dateien_moglich/#verzeichnis-browsing-verhindern) folgen. Sie können auch den Zugang zu Ihren Ordnern [mit einem Passwort schützen](https://docs.ovh.com/de/hosting/hosting-htaccess-authentifizierung/).
 >
 > Wir empfehlen Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, falls Sie Schwierigkeiten haben, diese Konfiguration einzurichten. Unsere Support-Teams sind nicht in der Lage, Sie bei Änderungen an der internen Programmierung Ihrer Webseite zu unterstützen.
 
@@ -64,8 +64,8 @@ Sie haben die Dateien Ihrer Website **mydomain.ovh** per [FTP](https://docs.ovh.
 
 Führen Sie im neuen Fenster die folgenden Aktionen aus:
 
-- Setzen Sie einen Haken bei `Auch die Subdomain www.mydomain.ovh ändern`{.action} (1);
-- Geben Sie den Ordnernamen Ihrer Webseite, der die **index.php** oder **index.html** enthält, als `Wurzelverzeichnis` (2) an;
+- Setzen Sie einen Haken bei `Auch die Subdomain www.mydomain.ovh ändern`{.action} (1).
+- Geben Sie den Ordnernamen Ihrer Webseite, der die **index.php** oder **index.html** enthält, als `Wurzelverzeichnis` (2) an.
 - Klicken Sie auf `Weiter`{.action} (3).
 
 ![change_root_folder](images/change_root_folder01.png){.thumbnail}
@@ -79,13 +79,13 @@ Klicken Sie anschließend auf `Bestätigen`{.action}.
 
 ![modify_root_folder_confirm](images/modify_root_folder_confirm.png){.thumbnail}
 
-In wenigen Minuten (wenn Sie Ihren Browser aktualisieren) erhalten Sie folgendes Ergebnis:
+Sie erhalten das Ergebnis innerhalb weniger Minuten (denken Sie daran, Ihren Browser zu aktualisieren) wie in der folgenden Abbildung dargestellt:
 
 ![multisite_modified](images/multisite_modified.png){.thumbnail}
 
 Überprüfen Sie, ob Ihre Webseite korrekt angezeigt wird. Wenn dies nicht der Fall ist, starten Sie Ihr Gerät neu und leeren Sie den Cache Ihres Browsers.
 
-Stellen Sie außerdem sicher, dass eine Datei **index.php** oder **index.html** in Ihrem Zielverzeichnis vorhanden ist.
+Stellen Sie außerdem sicher, dass eine Datei namens **index.php** oder **index.html** in Ihrem Zielverzeichnis vorhanden ist.
 
 ## Weiterführende Informationen <a name=“gofurther“></a>
 
