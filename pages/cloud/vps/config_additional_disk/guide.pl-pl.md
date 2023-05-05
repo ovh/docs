@@ -178,7 +178,7 @@ $ sudo nano /etc/fstab
 
 Dodaj poniższą linię do pliku i zastąp UUID Twoją:
 
-```
+```console
 UUID=87571b68-30e1-498b-a64c-49ec5cd4f31c /mnt/disk ext4 nofail 0 0
 ```
 
