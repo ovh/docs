@@ -45,7 +45,8 @@ O seu nome de domínio é declarado para aceder a um diretório alvo (um "`Pasta
 
 A página **Index of** indica que o diretório-alvo em causa não contém ficheiros **index.php** ou **index.html**. Um ficheiro deste tipo constitui o "*ponto de entrada*" do seu website. O nome deste ficheiro está normalizado.
 
-Para apresentar o seu website, deverá ligar o seu domínio ao 'Dossier racine` que contém o ficheiro **index.php** ou **index.html**.
+Para apresentar o seu website, deverá ligar o seu domínio ao `Pasta raiz` que contém o ficheiro **index.php** ou **index.html**.
+
 
 > [!primary]
 >
