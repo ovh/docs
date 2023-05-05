@@ -481,4 +481,4 @@ Destroy complete! Resources: 1 destroyed.
 
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/fr/public-cloud/kubernetes/).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/>.

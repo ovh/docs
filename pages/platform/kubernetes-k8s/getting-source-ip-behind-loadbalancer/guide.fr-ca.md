@@ -480,4 +480,4 @@ The precedent method should work in a similar way for any Ingress Controller. We
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/>.

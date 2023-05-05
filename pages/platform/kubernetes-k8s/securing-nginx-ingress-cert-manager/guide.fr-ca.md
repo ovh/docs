@@ -445,4 +445,4 @@ Describe the certificate again and wait until you see "Certificate issued succes
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/>.

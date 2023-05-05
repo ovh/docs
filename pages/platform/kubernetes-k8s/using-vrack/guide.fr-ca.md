@@ -79,4 +79,4 @@ In the Managed Kubernetes service dashboard, you will see the cluster, with the 
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/>.

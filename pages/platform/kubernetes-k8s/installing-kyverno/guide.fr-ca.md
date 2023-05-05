@@ -605,4 +605,4 @@ helm uninstall kyverno kyverno/kyverno --namespace kyverno
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/>.

@@ -342,4 +342,4 @@ Hello "what-is-my-pod-deployment-78f7cd684f-xvwvh"!
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/>.

@@ -866,4 +866,4 @@ Please refer to [official Velero documentation](https://velero.io/docs/){.extern
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/>.

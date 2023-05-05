@@ -90,4 +90,4 @@ For more details about this process, you can refer to our [deploying an applicat
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/>.

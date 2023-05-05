@@ -454,4 +454,4 @@ And putting the URL in the browser will take us to the new blog, accessing the M
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/>.

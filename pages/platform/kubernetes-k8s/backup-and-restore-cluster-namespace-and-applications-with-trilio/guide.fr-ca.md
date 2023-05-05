@@ -1389,4 +1389,4 @@ All the basic tasks and operations explained in this tutorial, are meant to give
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/>.

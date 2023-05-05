@@ -193,4 +193,4 @@ Please refer to our tutorial on [How to secure a Nginx Ingress with cert-manager
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/>.

@@ -508,4 +508,4 @@ It thus allows you to automate a way to access reports, export the metrics from 
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/>.

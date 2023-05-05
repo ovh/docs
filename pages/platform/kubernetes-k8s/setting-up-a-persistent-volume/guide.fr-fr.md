@@ -325,4 +325,4 @@ It will not be automatically deleted when a user deletes PVC `default/test-pvc`
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/>.

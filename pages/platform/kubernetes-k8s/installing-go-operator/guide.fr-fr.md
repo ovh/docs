@@ -1425,4 +1425,4 @@ The [operator](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/) 
 
 The operator [SDK](https://operatorframework.io/operator-capabilities/).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/>.
