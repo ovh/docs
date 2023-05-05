@@ -101,7 +101,7 @@ $ lsblk
 
 Aqui está um exemplo deste comando:
 
-```bash
+```console
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda       8:0    0   25G  0 disk 
 ├─sda1    8:1    0 24.9G  0 part /
