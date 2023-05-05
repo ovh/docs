@@ -143,4 +143,6 @@ Pour garantir la continuité de la connexion avec le support SAP, nous recommand
 - [Installer Veeam Backup & Replication](https://docs.ovh.com/ca/fr/storage/backup/veeam/veeam-backup-replication/)
 - [Installer un SAProuter](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html)
 
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services. 
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
