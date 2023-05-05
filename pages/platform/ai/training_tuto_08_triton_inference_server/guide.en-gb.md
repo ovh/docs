@@ -267,7 +267,6 @@ If you have chosen the HTTP protocol, specify the corresponding port: `8001`.
 ```console
 ovhai job run --default-http-port 8001 \
               --gpu 1 \
-              --unsecure-http \
               --volume my-models@GRA:/workspace/models:RO \
               <shared-registry-address>/triton-server:latest \
               -- bash -c 'tritonserver --model-repository=/workspace/models'
