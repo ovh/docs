@@ -19,7 +19,7 @@ While our app is running, it is likely that we will have to **update our Docker 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 - A [Public Cloud project](/pages/platform/public-cloud/create_a_public_cloud_project)
 - A [user for AI Deploy](/pages/platform/ai/gi_01_manage_users)
 - [Docker](https://www.docker.com/get-started) installed on your local computer or a virtual machine
@@ -65,7 +65,7 @@ Our app is still in a `RUNNING` state, which means that it is currently deployed
 
 However, if we **stop and restart** the app, the image used will be the one indicated when the app was initially launched, which means the one available at `registry_adress.ovh.net/my_ai_app:v1.0.0` in our case. As this image has been updated and the old one has been deleted, the last version (updated one) will now be used by the app.
 
-This stop & restart operation can be performed from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (UI) by clicking the `...` button, next to your app, as shown on the screenshot below:
+This stop & restart operation can be performed from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) (UI) by clicking the `...` button, next to your app, as shown on the screenshot below:
 
 ![image](images/stop_start_app_control-panel.png){.thumbnail}
 
