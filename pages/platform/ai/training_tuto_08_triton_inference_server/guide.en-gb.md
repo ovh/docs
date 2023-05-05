@@ -4,18 +4,20 @@ slug: training/tuto-triton-inference-server
 excerpt: How to use optimally AI models with NVIDIA Triton Inference Server and AI Training
 section: AI Training - Tutorials
 order: 08
-updated: 2023-05-04
+updated: 2023-05-05
 ---
 
-**Last updated 4th May, 2023.**
+**Last updated 5th May, 2023.**
 
 ## Objective
 
-In order to proceed with Triton Inference Server and see if we can provide the feature to our customers, we need to do some research on it.
+**Triton Inference Server** is part of the NVIDIA AI. Its goal is to streamline and standardize AI inference.
 
-The aim of this task is to design how Triton Inference Server could be implemented in our AI Tools.
+Triton enables users to *deploy*, *run* and *scale* trained AI models from any framework and on any type of resources: **GPU** or **CPU**. It also allows developers to deliver high-performance inference in the Cloud.
 
-We need to check if it could work into AI Deploy as it is right now. If it doesnt work, we should think of features to add to Deploy so that Triton could run into it.
+The goal of this tutorial is to see how it is possible to deploy **Triton Inference Server** easily thanks to the OVHcloud **AI Training** tool.
+
+![Overview](images/ovh-ai-training-triton-inference-server.png){.thumbnail}
 
 ## Requirements
 
@@ -218,7 +220,7 @@ docker push <shared-registry-address>/triton-server:latest
 
 ### Launch Triton Server in a dedicated job
 
-Triton Inference Server exposes both **HTTP/REST** and **GRPC** endpoints. Therefore, clients can communicate with Triton using either an HTTP/REST and GRPC protocols.
+Triton Inference Server exposes both **HTTP/REST** and **gRPC** endpoints. Therefore, clients can communicate with Triton using either an HTTP/REST and GRPC protocols.
 
 > [!primary]
 >
@@ -295,7 +297,7 @@ Then, test the **densenet_onnx** model on the example image.
 
 > [!warning]
 >
-> Don't forget to specify the **job_url** to be able to send http requests.
+> Don't forget to specify the **server_job_url** to be able to send http requests.
 >
 
 ```console
