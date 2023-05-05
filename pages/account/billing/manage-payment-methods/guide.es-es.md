@@ -3,14 +3,14 @@ title: Gestionar las formas de pago
 slug: gestionar-formas-de-pago
 excerpt: Cómo añadir y gestionar las formas de pago en el área de cliente de OVHcloud
 section: Pedidos, facturas y servicios
-updated: 2022-05-18
+updated: 2023-05-09
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 18/05/2022**
+**Última actualización: 09/05/2023**
 
 ## Objetivo
 
@@ -42,31 +42,42 @@ Esta forma de pago se utilizará por defecto para todas sus renovaciones y se le
 
 Puede registrar otras formas de pago para que le sean propuestas al realizar nuevos pedidos o utilizar por defecto para sus futuros cargos.
 
-Es posible registrar dos tipos de formas de pago:
+Es posible registrar tres tipos de formas de pago:
 
+- Domiciliación bancaria
 - Tarjeta bancaria
 - Cuenta PayPal
 
-Para ello, haga clic en el botón `Añadir una forma de pago`{.action}.
+Para ello, haga clic en el botón `Añadir una forma de pago`{.action} y seleccione la forma de pago que quiera utilizar.
 
 ![manage-payment-methods](images/managepaymentmethods2.png){.thumbnail}
 
-Seleccione la forma de pago que quiera utilizar: 
-
-![choose-payment-method-no-sepa](images/choose-payment-method-no-sepa.png){.thumbnail}
-
 Siga los siguientes pasos para registrar una forma de pago. En el primer paso, puede marcar la casilla `Una vez validada, quiero seleccionar esta forma de pago por defecto`{.action}, para que se utilice en las futuras compras o cargos automáticos.
+
+### Domiciliación bancaria
+
+> [!warning]
+>
+> - El uso de la domiciliación bancaria solo es posible para las cuentas de clientes de Francia, Alemania, España, Irlanda, Italia y los Países Bajos.
+>
+> - El propietario de la cuenta bancaria debe ser idéntico al propietario de la cuenta de OVHcloud.
+
+Para registrar un cargo en su cuenta bancaria, será redirigido a un espacio que permita el registro de dicha cuenta y la firma electrónica de su autorización de cobro.
+
+![forma de pago SEPA](images/sepa.png) {.thumbnail}
+
+Si su entidad bancaria está registrada por nuestro partner, el registro de la cuenta bancaria será inmediato. En caso contrario, puede ser necesario un plazo aproximado de 48 horas.
 
 #### Tarjeta bancaria
 
-![credit-card-no-sepa](images/credit-card-no-sepa.png){.thumbnail}
+![credit-card](images/credit-card.png){.thumbnail}
 
 Para registrar una nueva tarjeta bancaria, será redirigido a la página de pago seguro de nuestro proveedor. Para confirmar el registro y la validez de la tarjeta, realizaremos una retención en su cuenta.<br>
 No se cargará ningún importe y su tarjeta bancaria se activará en unos minutos.
 
 #### Cuenta PayPal
 
-![paypal_no_sepa](images/paypal_no_sepa.png){.thumbnail}
+![paypal](images/paypal.png){.thumbnail}
 
 Seleccionar `PayPal`{.action} como forma de pago. Haga clic en el botón `Paypal`{.action}. Se abrirá una ventana emergente donde podrá conectarse a su cuenta de PayPal® y registrarla como forma de pago autorizada con OVHcloud.
 
