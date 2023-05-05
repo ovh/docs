@@ -50,7 +50,8 @@ Para apresentar o seu website, deverá ligar o seu domínio ao `Pasta raiz` que 
 
 > [!primary]
 >
-> Para associar temporariamente o seu domínio a um `Pasta raiz` que não contém ficheiro **index.php** ou **index.html**, pode proibir a apresentação da lista dos dossiers do seu site seguindo este [tutorial](https://docs.ovh.com/gb/en/hosting/what_else_can_you_do_with_the_htaccess_file/). Pode também proteger o acesso às suas pastas com uma [palavra-passe](https://docs.ovh.com/pt/hosting/partilhado-htaccess-como-protecao-acesso-a-um-diretorio-por-autenticacao/).
+> Para associar temporariamente o seu domínio a um `Pasta raiz` que não contém ficheiro **index.php** ou **index.html**, pode proibir a apresentação da lista de pastas do seu site seguindo este [tutorial](https://docs.ovh.com/gb/en/hosting/what_else_can_you_do_with_the_htaccess_file/). Pode também proteger o acesso às suas pastas com uma [palavra-passe](https://docs.ovh.com/pt/hosting/partilhado-htaccess-como-protecao-acesso-a-um-diretorio-por-autenticacao/).
+
 >
 > Se precisar de ajuda, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/). As nossas equipas de suporte não poderão fornecer-lhe assistência relativamente a qualquer alteração da programação interna do seu site.
 
