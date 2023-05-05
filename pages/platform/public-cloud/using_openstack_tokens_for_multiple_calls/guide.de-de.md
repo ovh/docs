@@ -2,7 +2,6 @@
 title: "Verwendung der OpenStack Token"
 slug: using-openstack-tokens
 excerpt: "Hier erfahren Sie, wie Sie OpenStack-Token für Ihre Aktionen erstellen und verwenden."
-section: "Gestion via Openstack"
 order: 01
 updated: 2023-05-05
 ---
