@@ -4,18 +4,21 @@ excerpt: Descubra cómo poner su sitio web de nuevo en línea cuando muestre una
 slug: diagnostico-index-of
 section: Diagnóstico
 order: 07
-updated: 2022-05-10
+updated: 2023-05-04
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 10/05/2022**
+**Última actualización: 04/05/2023**
 
 ## Objetivo
 
-Si una configuración `Multisitio` no está bien configurada, es posible que el sitio web muestre una página **"Index of"**.
+En al menos uno de los siguientes casos aparece una página **"Index of"**:
+
+- La configuración [Multisitio](/pages/web/hosting/multisites_configure_multisite) de su nombre de dominio no está correctamente configurada hacia su directorio de destino
+- La carpeta de destino a la que apunta su dominio no contiene archivos **"index.html"** o **"index.php"**
 
 ![index_of](images/index_of.png){.thumbnail}
 
@@ -23,13 +26,14 @@ Si una configuración `Multisitio` no está bien configurada, es posible que el 
 
 > [!warning]
 >
-> La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
+La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 >
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#gofurther) de esta guía.
+> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado [Más información](#gofurther) de esta guía.
 >
 
 ## Requisitos
 
+- Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/)
 - Tener un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
@@ -37,15 +41,15 @@ Si una configuración `Multisitio` no está bien configurada, es posible que el 
 
 ### Entender el origen de la página "Index of"
 
-El dominio está conectado a través de la sección `Multisitio`{.action} del alojamiento a un directorio (una `Carpeta raíz`) del servidor [FTP](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/).
+O seu nome de domínio é declarado para aceder a um diretório alvo (um `Carpeta raíz`) no servidor [FTP](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) do seu alojamento web partilhado. Isto no separador [Multisite](/pages/web/hosting/multisites_configure_multisite) do seu alojamento web presente no seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
-La página **Index of** indica que el directorio en cuestión no contiene ningún archivo **index.php** o **index.html**. Un archivo de este tipo constituye el "*punto de entrada*" del sitio web.
+A página **Index of** indica que o diretório-alvo em causa não contém ficheiros **index.php** ou **index.html**. Um ficheiro deste tipo constitui o "*ponto de entrada*" do seu website. O nome deste ficheiro está normalizado.
 
-Para mostrar su sitio web, deberá asociar su dominio a la `Carpeta raíz`{.action} que contiene el archivo **index.php** o **index.html** desde la sección `Multisitio`{.action} del alojamiento.
+Para apresentar o seu website, deverá ligar o seu domínio ao `Carpeta raíz` que contém o ficheiro **index.php** ou **index.html**.
 
 > [!primary]
 >
-> Si desea asociar temporalmente su dominio a una `Carpeta raíz` que no contenga un archivo **index.php** o **index.html**, puede prohibir la visualización de la lista de carpetas de su sitio web siguiendo esta [guía](https://docs.ovh.com/gb/en/hosting/what_else_can_you_do_with_the_htaccess_file/#prevent-the-content-of-a-directory-from-being-listed). También puede proteger el acceso a sus carpetas con una [contraseña](https://docs.ovh.com/es/hosting/compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion/).
+> Para asociar temporalmente su dominio a un `Carpeta raíz` que no contiene un archivo **index.php** o **index.html**, puede prohibir que se muestre la lista de carpetas de su sitio web siguiendo este [tutorial](https://docs.ovh.com/gb/en/hosting/what_else_can_you_do_with_the_htaccess_file/#prevent-the-content-of-a-directory-from-being-listed). También puede proteger el acceso a sus carpetas con una [contraseña](https://docs.ovh.com/es/hosting/compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion/).
 >
 > Si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). Nuestro equipo de soporte no podrá ofrecerle soporte para modificar la programación interna de su sitio web.
 
@@ -76,11 +80,13 @@ En la siguiente ventana, haga clic en `Aceptar`{.action}.
 
 ![modify_root_folder_confirm](images/modify_root_folder_confirm.png){.thumbnail}
 
-En unos minutos (no olvide refrescar su navegador), obtendrá el siguiente resultado:
+En unos minutos (refrescando el navegador), obtendrá el siguiente resultado:
 
 ![multisite_modified](images/multisite_modified.png){.thumbnail}
 
 Compruebe que el sitio web se muestre correctamente. En caso contrario, reinicie el dispositivo y vacie la caché del navegador si fuera necesario.
+
+Asegúrese también de que el directorio de destino contiene un archivo **index.php** o **index.html**.
 
 ## Más información <a name="gofurther"></a>
 
@@ -90,6 +96,8 @@ Compruebe que el sitio web se muestre correctamente. En caso contrario, reinicie
 
 [Alojar varios sitios web en un mismo hosting](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/)
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, consulte nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

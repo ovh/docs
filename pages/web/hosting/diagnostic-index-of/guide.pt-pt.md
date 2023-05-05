@@ -1,25 +1,28 @@
 ---
 title: O que fazer em caso de página « Index of »?
-excerpt: Saiba como repor o seu site online quando exibe uma página « Index of ».
+excerpt: Descubra como repor o seu site online quando exibe uma página « Index of ».
 slug: diagnostico-index-of
 section: Diagnóstico
 order: 07
-updated: 2022-05-10
+updated: 2023-05-04
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 10/05/2022**
+**Última atualização: 04/05/2023**
 
 ## Objetivo
 
-Se uma configuração `Multisite` não estiver corretamente configurada, é possível que o seu site apresente uma página **"Index of"**.
+Uma página **"Index of"** aparece pelo menos num dos casos seguintes:
+
+- A configuração [Multisite](/pages/web/hosting/multisites_configure_multisite) do seu nome de domínio não está corretamente configurada para o seu diretório alvo
+- A pasta alvo para a qual o seu nome de domínio aponta não contém ficheiros **"index.html"** ou **"index.php"**
 
 ![index_of](images/index_of.png){.thumbnail}
 
-**Saiba como corrigir a apresentação de uma página "Index of".**
+**Descubra como corrigir a apresentação de uma página "Index of".**
 
 > [!warning]
 >
@@ -30,6 +33,7 @@ Se uma configuração `Multisite` não estiver corretamente configurada, é poss
 
 ## Requisitos
 
+- Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/)
 - Ter um [serviço de alojamento web](https://www.ovhcloud.com/pt/web-hosting/)
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
@@ -37,17 +41,19 @@ Se uma configuração `Multisite` não estiver corretamente configurada, é poss
 
 ### Compreender a origem da página "Index of"
 
-O seu nome de domínio está ligado através da parte `Multisite`{.action} do seu alojamento a um diretório (um "`Pasta raiz`") no seu servidor [FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/).
+O seu nome de domínio é declarado para aceder a um diretório alvo (um "`Pasta raiz`") no servidor [FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) do seu alojamento web partilhado. Isto no separador [Multisite](/pages/web/hosting/multisites_configure_multisite) do seu alojamento web presente no seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
-A página **Index of** indica que o diretório em causa não contém nenhum ficheiro **index.php** ou **index.html**. Um ficheiro deste tipo constitui o "*ponto de entrada*" do seu site.
+A página **Index of** indica que o diretório-alvo em causa não contém ficheiros **index.php** ou **index.html**. Um ficheiro deste tipo constitui o "*ponto de entrada*" do seu website. O nome deste ficheiro está normalizado.
 
-Para apresentar o seu website, deverá, a partir da parte `Multisite`{.action} do seu alojamento, associar o seu domínio ao `Pasta raiz` que contém este ficheiro **index.php** ou **index.html**.
+Para apresentar o seu website, deverá ligar o seu domínio ao `Pasta raiz` que contém o ficheiro **index.php** ou **index.html**.
+
 
 > [!primary]
 >
-> Se pretender associar temporariamente o seu domínio a uma `Pasta raiz` que não contém um ficheiro **index.php** ou **index.html**, pode proibir a apresentação da lista de pastas do seu site seguindo este [guia](https://docs.ovh.com/gb/en/hosting/what_else_can_you_do_with_the_htaccess_file/). Pode também proteger o acesso às suas pastas com uma [palavra-passe](https://docs.ovh.com/pt/hosting/partilhado-htaccess-como-protecao-acesso-a-um-diretorio-por-autenticacao/).
+> Para associar temporariamente o seu domínio a um `Pasta raiz` que não contém ficheiro **index.php** ou **index.html**, pode proibir a apresentação da lista de pastas do seu site seguindo este [tutorial](https://docs.ovh.com/gb/en/hosting/what_else_can_you_do_with_the_htaccess_file/). Pode também proteger o acesso às suas pastas com uma [palavra-passe](https://docs.ovh.com/pt/hosting/partilhado-htaccess-como-protecao-acesso-a-um-diretorio-por-autenticacao/).
+
 >
-> Se precisar de ajuda, recomendamos que recorra a um [[prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/)](https://partner.ovhcloud.com/pt/directory/). As nossas equipas de suporte não poderão fornecer-lhe assistência relativamente a qualquer alteração da programação interna do seu site.
+> Se precisar de ajuda, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/). As nossas equipas de suporte não poderão fornecer-lhe assistência relativamente a qualquer alteração da programação interna do seu site.
 
 ### Resolver o caso mais comum de uma página "Index of"
 
@@ -76,11 +82,13 @@ Na janela seguinte, clique em `Validar`{.action}.
 
 ![modify_root_folder_confirm](images/modify_root_folder_confirm.png){.thumbnail}
 
-Dentro de alguns minutos (pense em refrescar o seu browser), obterá o seguinte resultado:
+Dentro de alguns minutos (refrescando o seu browser), obterá o seguinte resultado:
 
 ![multisite_modified](images/multisite_modified.png){.thumbnail}
 
 Por fim, verifique se o seu site está a aparecer corretamente. Caso contrário, reinicie o seu dispositivo e esvazie a cache do seu browser, caso seja necessário.
+
+Certifique-se igualmente de que está presente no seu diretório um ficheiro **index.php** ou **index.html**.
 
 ## Quer saber mais? <a name="gofurther"></a>
 
@@ -90,6 +98,8 @@ Por fim, verifique se o seu site está a aparecer corretamente. Caso contrário,
 
 [Partilhar o alojamento entre vários sites](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/)
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, convidamo-lo a consultar as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
