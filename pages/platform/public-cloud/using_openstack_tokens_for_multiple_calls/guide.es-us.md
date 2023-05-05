@@ -1,8 +1,7 @@
 ---
 title: "Uso de los tokens OpenStack"
 slug: using-openstack-tokens
-excerpt: Cómo crear y utilizar tokens OpenStack para sus acciones
-section: "Gestión a través de OpenStack"
+excerpt: "Cómo crear y utilizar tokens OpenStack para sus acciones"
 order: 01
 updated: 2023-05-05
 ---
@@ -32,7 +31,7 @@ La mayoría de las solicitudes enviadas a la API OpenStack deben seguir un proce
 
 Sin embargo, si realiza demasiadas acciones en poco tiempo, algunas acciones OpenStack se verán perjudicadas por el gran número de llamadas a la API. El límite actual es de 60 creaciones de tokens por minuto y por usuario. La API de autenticación devolverá los errores HTTP 429 más allá de este límite.
 
-Para más información, consulte [la documentación oficial de la API](http://developer.openstack.org/api-guide/quick-start/) de OpenStack.
+Para más información, consulte la [documentación oficial de la API](http://developer.openstack.org/api-guide/quick-start/) de OpenStack.
 
 Esta guía explica cómo enviar un token OpenStack, utilizarlo para las acciones que desee realizar y cómo revocar un token.
 

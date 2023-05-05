@@ -32,13 +32,13 @@ Die meisten an die OpenStack-API versandten Anfragen müssen einem Autorisierung
 
 Wenn Sie jedoch in kurzer Zeit zu viele Aktionen ausführen, werden einige OpenStack-Aktionen aufgrund zu vieler API-Aufrufe irregeführt. Die derzeitige Obergrenze beträgt 60 Token pro Minute und Benutzer. Die Authentifizierungsdaten der API werden HTTP 429-Fehler über diese Grenze hinaus übertragen.
 
-Weitere Informationen finden Sie in [der offiziellen OpenStack API Dokumentation](http://developer.openstack.org/api-guide/quick-start/).
+Weitere Informationen finden Sie in der [OpenStack API Dokumentation](http://developer.openstack.org/api-guide/quick-start/).
 
 In dieser Anleitung erfahren Sie, wie Sie ein OpenStack-Token herausgeben, für die von Ihnen gewünschten Aktionen verwenden und wie Sie ein Token zurückziehen.
 
 ## Voraussetzungen 
 
-- Sie sind im OVHcloud [Kundencenter eingeloggt](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}.
+- Sie sind im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 - Diese Anleitung erfordert die Installation des OpenStack CLI Tools auf Ihrer Maschine.
 
 > [!primary]
@@ -63,7 +63,7 @@ sudo yum install python3-openstackclient
 
 ### Schritt 1: Laden Sie Ihre OpenRC Datei herunter und lächeln Sie
 
-Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und öffnen Sie Ihr Public `Cloud Projekt`{.action}.
+Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und öffnen Sie Ihr `Public Cloud`{.action} Projekt.
 
 Klicken Sie auf `Users & Roles`{.action} im Bereich `Project Management` und dann auf den `...`{.action} rechts neben Ihrem OpenStack-Benutzer.<br>
 Laden Sie die OpenRC-Datei dieses Benutzers herunter und geben Sie die Region an, in der Sie Aktionen durchführen möchten.

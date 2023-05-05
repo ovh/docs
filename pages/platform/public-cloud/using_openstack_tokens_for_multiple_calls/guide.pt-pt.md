@@ -2,7 +2,6 @@
 title: "Utilização dos tokens OpenStack"
 slug: using-openstack-tokens
 excerpt: "Saiba como criar e utilizar tokens OpenStack para as suas ações"
-section: "Gestão via Openstack"
 order: 01
 updated: 2023-05-05
 ---
@@ -32,7 +31,7 @@ A maioria dos pedidos enviados à API OpenStack deve seguir um procedimento de a
 
 No entanto, se realizar demasiadas ações em pouco tempo, algumas ações OpenStack irão cair em erro devido a demasiadas chamadas à API. O limite atual é de 60 criações de tokens por minuto e por utilizador. A API de autenticação devolverá os erros HTTP 429 para além deste limite.
 
-Para mais informações, consulte [a documentação oficial OpenStack API](http://developer.openstack.org/api-guide/quick-start/).
+Para mais informações, consulte a [documentação oficial OpenStack API](http://developer.openstack.org/api-guide/quick-start/).
 
 Este manual explica-lhe como emitir um token OpenStack, como utilizá-lo para as ações que pretende realizar e como revogar um token.
 
@@ -63,7 +62,7 @@ sudo yum install python3-openstackclient
 
 ### Etapa 1: descarregue e descarregue o seu ficheiro OpenRC
 
-Ligue-se à sua Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e abra o seu projeto `Public Cloud`{.action}.
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e abra o seu projeto `Public Cloud`{.action}.
 
 Clique em `Users & Roles`{.action} na secção `Project Management` e no botão `...`{.action} à direita do seu utilizador OpenStack.<br>
 Faça o download do ficheiro OpenRC deste utilizador e especifique a região na qual deseja efetuar ações.
