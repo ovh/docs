@@ -181,4 +181,6 @@ Now you can follow [Codefresh official tutorial](https://codefresh.io/docs/docs/
 
 ## Go further
 
-Join our [community of users](https://community.ovh.com/en/).
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our[community of users](https://community.ovh.com/en/).
