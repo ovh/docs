@@ -6,6 +6,10 @@ order: 01
 updated: 2023-05-05
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 **Última atualização: 05/05/2023**
 
 ## Objetivo
@@ -21,7 +25,7 @@ updated: 2023-05-05
 
 - **Ponto de terminação (*Endpoint*)**: endereço Web apontando diretamente para a API de um serviço. Por exemplo, [https://auth.cloud.ovh.net/v3/](https://auth.cloud.ovh.net/v3/) para o ponto de acesso à autenticação ou [https://image.compute.gra11.cloud.ovh.net/](https://image.compute.gra11.cloud.ovh.net/) para o ponto de acesso à gestão das imagens da zona GRA11. 
 
-- **Jeton (*token*)**: uma cadeia de caracteres única utilizada para autenticar e aceder aos recursos. O utilizador pede-o introduzindo as suas informações de identificação (detalhes de ligação) na API de autenticação. O token é gerado e válido durante 24 horas.
+- **Token**: uma cadeia de caracteres única utilizada para autenticar e aceder aos recursos. O utilizador pede-o introduzindo as suas informações de identificação (detalhes de ligação) na API de autenticação. O token é gerado e válido durante 24 horas.
 
 - **OpenRC**: Para melhorar a eficácia das interações com o serviço de identidade através do cliente OpenStack, OpenStack toma a cargo scripts de ambiente de cliente simples também conhecidos como ficheiros OpenRC. Trata-se de ficheiros que contêm opções comuns a todos os clientes, mas que suportam igualmente opções únicas.
 
