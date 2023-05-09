@@ -4,10 +4,10 @@ slug: managing-nodes-with-api
 excerpt: ''
 section: User guides
 order: 1
-updated: 2023-02-14
+updated: 2023-05-09
 ---
 
-**Last updated 14th February 2023.**
+**Last updated 09th May 2023.**
 
 ## Objective
 
@@ -359,6 +359,7 @@ To upsize or downsize your node pool, you can use the `PUT /cloud/project/{servi
 > @api {PUT} /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}
 > 
 
+```json
 {
   "antiAffinity": false,
   "autoscale": false,
@@ -367,6 +368,11 @@ To upsize or downsize your node pool, you can use the `PUT /cloud/project/{servi
   "monthlyBilled": false,
   "name": "my-node-pool"
 }
+```
+
+> [!primary]
+>
+> It is not possible to update/change the following parameters: `antiAffinity`, `flavorName` and `name`.
 
 ## Deleting a node pool
 
