@@ -86,7 +86,7 @@ Clone the GitHub repository:
 git clone -b r23.03 https://github.com/triton-inference-server/server.git
 ```
 
-Before using the repository, you have to fetch any missing model definition files from their public model zoos via the provided script: `etch_models.sh`.
+Before using the repository, you have to fetch any missing model definition files from their public model zoos via the provided script: `fetch_models.sh`.
 
 ```console
 cd server/docs/examples
