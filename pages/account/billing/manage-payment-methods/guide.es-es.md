@@ -54,7 +54,7 @@ Para ello, haga clic en el botón `Añadir una forma de pago`{.action} y selecci
 
 Siga los siguientes pasos para registrar una forma de pago. En el primer paso, puede marcar la casilla `Una vez validada, quiero seleccionar esta forma de pago por defecto`{.action}, para que se utilice en las futuras compras o cargos automáticos.
 
-### Domiciliación bancaria
+#### Domiciliación bancaria
 
 > [!warning]
 >
