@@ -335,7 +335,7 @@ network-load-balancer-setting-up: Início
 network-load-balancer-use-cases: Casos de uso
 network-load-balancer-viewing-statuses: Ver estados
 network-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastructure
-infrastructure-as-code-api: API
-infrastructure-as-code-api-apiv6: APIv6
-infrastructure-as-code-api-getting-started: Primeiros passos
-infrastructure-as-code-terraform: Terraform
+manage-operate-api: API
+manage-operate-api-apiv6: APIv6
+manage-operate-api-getting-started: Primeiros passos
+manage-operate-terraform: Terraform

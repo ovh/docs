@@ -1672,18 +1672,18 @@
         + [Configuring a domain name for the first time](cloud/cdn_infrastructure/first_domain_name_configuration)
         + [Understanding quota on the CDN](cloud/cdn_infrastructure/quota)
         + [Adding an SSL certificate on the CDN](cloud/cdn_infrastructure/ssl_certificate)
-+ Infrastructure as code
-    + [API](infrastructure-as-code-api)
-        + [Getting started](infrastructure-as-code-api-getting-started)
++ Manage and Operate
+    + [API](manage-operate-api)
+        + [Getting started](manage-operate-api-getting-started)
             + [First Steps with the OVHcloud APIs](account/api/first-steps)
             + [Exploring the OVHcloud APIs](account/api/console-preview)
-        + [APIv6](infrastructure-as-code-api-apiv6)
+        + [APIv6](manage-operate-api-apiv6)
             + [OVHcloud API v2 - Operating principles](account/api/apiv2)
             + [Manage services](account/api/services)
             + [Manage payment and billing of OVHcloud services](account/api/enterprise-payment)
             + [How to manage a customer’s account via OVHcloud API](account/api/api_right_delegation)
             + [Create a OVHcloud sub-account and a user account with OVHcloud API](account/api/account)
-    + [Terraform](infrastructure-as-code-terraform)
+    + [Terraform](manage-operate-terraform)
         + [Using Terraform with OVHcloud](account/api/terraform-at-ovhcloud)
 + OVHcloud Labs
     + [Data Collector](ovhcloud-labs-data-collector)
