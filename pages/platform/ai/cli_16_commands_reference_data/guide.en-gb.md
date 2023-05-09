@@ -4,7 +4,7 @@ slug: cli/data-cli
 excerpt: Learn how to manage your object storage data with the ovhai CLI
 section: Command Line Interface
 order: 206
-updated: 2021-06-16
+updated: 2023-05-09
 ---
 
 **Last updated 9th May, 2023.**
