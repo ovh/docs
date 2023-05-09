@@ -3,14 +3,14 @@ title: Meine Zahlungsarten verwalten
 slug: zahlungsarten-verwalten
 excerpt: Erfahren Sie hier, wie Sie Ihre Zahlungsarten in Ihrem OVHcloud Kundencenter hinzufügen und verwalten können
 section: Abrechnung
-updated: 2023-03-28
+updated: 2023-05-09
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 28.03.2023**
+**Letzte Aktualisierung am 09.05.2023**
 
 ## Ziel
 
@@ -58,7 +58,7 @@ Folgen Sie den Schritten für die Eintragung der Zahlungsart. Im ersten Schritt 
 
 > [!warning]
 >
-> - Die Verwendung der SEPA-Lastschrift ist nur für französische, deutsche und italienische Kunden-Accounts möglich.
+> - Die Verwendung der SEPA-Lastschrift ist nur für französische, deutsche, spanische, irische, niederländische und italienische Kunden-Accounts möglich.
 >
 > - Der Inhaber des Bankkontos muss mit dem Inhaber des OVHcloud Kunden-Accounts identisch sein.
 >

@@ -3,14 +3,14 @@ title: Gestire i metodi di pagamento
 slug: manage-payment-methods
 excerpt: Come gestire i tuoi metodi di pagamento nello Spazio Cliente OVHcloud
 section: Fatturazione
-updated: 2023-03-28
+updated: 2023-05-09
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
-**Ultimo aggiornamento: 28/03/2023**
+**Ultimo aggiornamento: 09/05/2023**
 
 ## Obiettivo
 
@@ -58,7 +58,7 @@ Segui gli step successivi per il salvataggio del metodo di pagamento. Al primo s
 
 > [!warning]
 >
-> - L'utilizzo del prelievo bancario è possibile solo per i conti clienti francesi, tedeschi e italiani.
+> - L'utilizzo del prelievo bancario è possibile solo per i conti clienti francesi, tedeschi, spagnoli, irlandesi, italiani e olandesi.
 >
 > - Il titolare del conto bancario deve corrispondere al proprietario dell'account OVHcloud.
 

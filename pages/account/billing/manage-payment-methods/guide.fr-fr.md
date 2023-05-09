@@ -4,10 +4,10 @@ slug: manage-payment-methods
 excerpt: Apprenez à ajouter et gérer vos moyens de paiement au sein de l’espace client OVHcloud
 section: Facturation
 order: 02
-updated: 2023-03-28
+updated: 2023-05-09
 ---
 
-**Dernière mise à jour le 28/03/2023**
+**Dernière mise à jour le 09/05/2023**
 
 ## Objectif
 
@@ -57,7 +57,7 @@ Suivez les étapes successives d'enregistrement du moyen de paiement. A la premi
 
 > [!warning]
 >
-> - L'utilisation du prélèvement bancaire n'est possible que pour les comptes clients français, allemands et italiens.
+> - L'utilisation du prélèvement bancaire n'est possible que pour les comptes clients français, allemands, espagnols, irlandais, italiens et néerlandais.
 >
 > - Le propriétaire du compte bancaire doit être identique au propriétaire du compte OVHcloud.
 
