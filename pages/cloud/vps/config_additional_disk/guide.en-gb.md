@@ -90,7 +90,7 @@ Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-104857599, default 104857599
 Created a new partition 1 of type 'Linux' and of size 50 GiB.
 ```
 
-```
+```bash
 Command (m for help): w
 
 The partition table has been altered.
