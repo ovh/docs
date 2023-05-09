@@ -262,4 +262,6 @@ For more details about this process, you can refer to the [deploying an applicat
 
 As you can see in the [Kubernetes section](https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/kube~GET) of the API Explorer, a lot of useful API endpoints exist to manage your Kubernetes clusters. Feel free to use the API endpoints depending on your use cases.
  
-Join our community of users on <https://community.ovh.com/en/>.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join ourcommunity of users on <https://community.ovh.com/en/>.

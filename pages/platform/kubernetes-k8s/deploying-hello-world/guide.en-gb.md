@@ -85,3 +85,9 @@ After its creation, click on the node pool in order to list its nodes details.
 You're now ready to deploy your first application.
 
 For more details about this process, you can refer to our [deploying an application](../deploying-an-application/) documentation.
+
+## Go further
+
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join ourcommunity of users on <https://community.ovh.com/en/>.

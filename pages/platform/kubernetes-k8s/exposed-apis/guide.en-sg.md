@@ -39,3 +39,9 @@ Feature gates:
 ### Kubelet
 
 * `protect-kernel-defaults`: Protect tuned kernel parameters from overriding kubelet default kernel parameter values.
+
+## Go further
+
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join ourcommunity of users on <https://community.ovh.com/en/>.
