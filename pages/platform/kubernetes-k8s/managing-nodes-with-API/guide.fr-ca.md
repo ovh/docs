@@ -1,7 +1,7 @@
 ---
 title: Managing nodes and node pools with OVHcloud API
 slug: managing-nodes-with-api
-excerpt: ''
+excerpt: 'Find out how to manage OVHcloud Managed Kubernetes node and node pools with OVHcloud API'
 section: User guides
 routes:
     canonical: https://docs.ovh.com/gb/en/kubernetes/managing-nodes-with-api/
