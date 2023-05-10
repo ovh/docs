@@ -11,12 +11,12 @@ updated: 2023-05-10
 
 ## Objective
 
-This guide is intended to help you to use `S3 buckets` with **AI Tools** through OVHcloud Control Panel and `ovhai` CLI. This will help you to manage your data when working with AI Notebooks, AI Training and AI Deploy.
+This guide is intended to help you to use `S3 buckets` with **AI Tools** via the OVHcloud Control Panel and `ovhai` CLI. This will help you to manage your data when working with AI Notebooks, AI Training and AI Deploy.
 
 ## Requirements
 
-- A **Public Cloud project**
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A **Public Cloud project**.
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 - A working `ovhai` CLI. See our guide on [how to install ovhai CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client).
 
 ## Instructions
@@ -25,17 +25,18 @@ In the next steps, you will be able to **create a user to manage your S3 buckets
 
 Then, you will be able to use this bucket with the different **OVHcloud AI Tools** through the `ovhai` CLI.
 
-### Create a S3 user
+### Creating a S3 user
 
-First of all, you must have a user with the right rights to manage S3 buckets.
+First of all, you must have a user with the correct rights to manage S3 buckets.
 
 You have two options:
+
 - [create a new user](/pages/cloud/storage/object_storage/s3_identity_and_access_management)
 - edit your [user roles](/pages/platform/ai/gi_01_manage_users) (the one you use with AI Tools)
 
 > [!primary]
 >
-> Whether you create a *new user*, or use an *existing one*, don't forget to give him at least the `AI Training Operator` and `Object Storage Operator` rights.
+> Whether you create a *new user* or use an *existing one*, don't forget to grant him at least the `AI Training Operator` and `Object Storage Operator` rights.
 >
 
 ![S3 user roles](images/user-roles.png)
@@ -45,7 +46,7 @@ You have two options:
 > Please be sure to save your S3 credentials: **user name**, **S3 access key** and **S3 secret key**.
 >
 
-### Add a new datastore
+### Adding a new datastore
 
 Now that you have a user for S3 buckets management, you have to add a dedicated datastore through `ovhai CLI`.
 
@@ -110,7 +111,7 @@ Options:
 > In this guide, an **OVHcloud S3 datastore** will be used. You are free to use the S3 datastore of your choice.
 >
 
-You have here the basic command to create an OVHcloud S3 datastore:
+Here is the basic command to create an OVHcloud S3 datastore:
 
 ```console
 ovhai datastore add s3 <alias> https://s3.<region>.io.cloud.ovh.net/ <region> <my-access-key> <my-secret-key>
@@ -142,15 +143,15 @@ UK    swift      ovhcloud ~
 WAW   swift      ovhcloud ~
 ```
 
-Now that you have a dedicated datastore, you can create some S3 buckets through OVHcloud Control Panel and `ovhai` CLI.
+Now that you have a dedicated datastore, you can create some S3 buckets via the OVHcloud Control Panel and `ovhai` CLI.
 
-### Create an S3 bucket
+### Creating an S3 bucket
 
-You have two ways to [create a new S3 bucket](/pages/cloud/storage/object_storage/s3_create_bucket). The first one is to use the UI.
+There are two methods to [create a new S3 bucket](/pages/cloud/storage/object_storage/s3_create_bucket). The first one is to use the UI.
 
 #### Using the Control Panel
 
-To create an **Object Storage bucket**, first log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager\&from=https://www.ovh.co.uk/\&ovhSubsidiary=GB) and open your `Public Cloud` project. Click on `Object Storage` in the side bar and then on the `My containers` tab. Now, click the `Create an object container` button.
+To create an **Object Storage bucket**, first log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Click on `Object Storage`{.action} in the side bar and then on the `My containers`{.action} tab. Now, click the `Create an object container`{.action} button.
 
 First, select the solution you need.
 
@@ -178,7 +179,7 @@ Once your bucket is created, you can add files (images, codes, templates,...).
 
 > [!warning]
 >
-> Attention! You have to be sure that your user has the rights to **all the files** in your S3 bucket. Otherwise you may encounter permission issues.
+> Warning! You have to be sure that your user has the rights to **all the files** in your S3 bucket. Otherwise you may encounter permission issues.
 >
 
 #### Using the `ovhai` CLI
@@ -227,15 +228,15 @@ DATE                     BYTES    NAME                 DESCRIPTION ETAG
 2023-05-09T12:39:21.000Z 10.4 KiB train-first-model.py STANDARD    092da9edf113d84e65ba4866892cf249
 ```
 
-### Use S3 buckets with AI Tools
+### Using S3 buckets with AI Tools
 
 Now that your **S3 bucket** has been created, you are free to use it with any OVHcloud AI tool.
 
 > [!primary]
 >
-> Please note the feature can be used through `ovhai` CLI and API only for now, it will soon be available from the OVHcloud Control Panel.
+> Please note that for the moment this feature can be used through `ovhai` CLI and API only. It will soon be available from the OVHcloud Control Panel.
 >
-> *For more information about it, refer to our [Public Roadmap](https://github.com/ovh/public-cloud-roadmap/projects/4).*
+> *For more information about this, refer to our [Public Roadmap](https://github.com/ovh/public-cloud-roadmap/projects/4).*
 >
 
 You can now link your **S3 buckets** to AI notebooks, AI Training and AI Deploy.
