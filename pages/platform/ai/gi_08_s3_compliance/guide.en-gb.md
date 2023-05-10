@@ -150,7 +150,7 @@ You have two ways to [create a new S3 bucket](/pages/cloud/storage/object_storag
 
 #### Using the Control Panel
 
-To create an **Object Storage bucket**, first log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager\&from=https://www.ovh.co.uk/\&ovhSubsidiary=GB) and open your `Public Cloud` project. Click on `Object Storage` in the side bar and then on the `My containers` tab. Now, you can click on `Create Object Container`.
+To create an **Object Storage bucket**, first log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager\&from=https://www.ovh.co.uk/\&ovhSubsidiary=GB) and open your `Public Cloud` project. Click on `Object Storage` in the side bar and then on the `My containers` tab. Now, click the `Create an object container` button.
 
 First, select the solution you need.
 
