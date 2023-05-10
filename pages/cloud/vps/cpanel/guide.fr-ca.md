@@ -18,7 +18,7 @@ cPanel est un panneau de configuration conçu pour les hébergeurs web. Constitu
 ## Prérequis
 
 - Un [VPS de la gamme actuelle](https://www.ovhcloud.com/fr-ca/vps/){.external} (offres Value, Essential, Comfort ou Elite).
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
 

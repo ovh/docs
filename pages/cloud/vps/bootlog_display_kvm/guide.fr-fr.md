@@ -45,7 +45,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 ### Étape 2 : effectuer la vérification initiale
 
-Sur les anciennes gammes de VPS, vos partitions seront automatiquement montées en mode rescue. Vous pouvez utiliser les commandes suivantes pour le vérifier et identifier l'emplacement de montage de votre partition:
+Sur les anciennes gammes de VPS, vos partitions seront automatiquement montées en mode rescue. Vous pouvez utiliser les commandes suivantes pour le vérifier et identifier l'emplacement de montage de votre partition :
 
 #### **df -h**
 
@@ -77,7 +77,7 @@ sdb       8:16   0   50G  0 disk
 
 L'exemple obtenu ci-dessus montre que la partition système est montée sur **/mnt/sdb1**. (Le disque principal est **sdb**. Le disque rescue est **sda** et **sda1** est la partition principale en rescue montée sur **/**).
 
-Si votre VPS appartient aux [**gammes VPS actuelles**](https://www.ovhcloud.com/fr/vps/), aucun montage automatique ne sera effectué et la colonne "MOUNTPOINT`" devrait être vide. Dans ce cas, passez à [l'étape 4](#step4).
+Si votre VPS appartient aux [**gammes VPS actuelles**](https://www.ovhcloud.com/fr/vps/), aucun montage automatique ne sera effectué et la colonne "MOUNTPOINT" devrait être vide. Dans ce cas, passez à [l'étape 4](#step4).
 
 ### Étape 3 : démonter la partition (uniquement pour les anciennes gammes VPS)
 
@@ -89,7 +89,7 @@ Sur un VPS appartenant aux anciennes gammes placé en mode rescue, le disque pri
 
 ### Étape 4 : monter la partition avec les paramètres appropriés <a name="step4"></a>
 
-Si votre VPS appartient aux [**gammes VPS actuelles**](https://www.ovhcloud.com/fr/vps/), vérifiez d'abord que le dossier de montage est créé:
+Si votre VPS appartient aux [**gammes VPS actuelles**](https://www.ovhcloud.com/fr/vps/), vérifiez d'abord que le dossier de montage est créé :
 
 ```sh
 ~$ mkdir -p /mnt/sdb1

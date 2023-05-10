@@ -139,7 +139,7 @@ Cela vous permet de séparer la configuration IPv6 et de rétablir facilement le
 
 Ajoutez les lignes suivantes au fichier. Remplacez les éléments génériques (c'est-à-dire *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY*) ainsi que l'interface réseau (si votre serveur n'utilise pas **eth0**) par vos valeurs personnalisées.
 
-```
+```console
 auto eth0
 iface eth0 inet6 static
 mtu 1500
@@ -153,7 +153,7 @@ pre-down /sbin/ip -6 route del IPV6_GATEWAY dev eth0
 
 Voici un exemple concret :
 
-```
+```console
 iface eth0 inet6 static
 address 2001:41d0:xxx:xxxx::999
 netmask 128
@@ -271,7 +271,7 @@ cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scrip
 
 Modifiez ensuite le fichier `ifcfg-eth0`, en ajoutant la configuration IPv6 de votre serveur. Remplacez les éléments génériques (c'est-à-dire *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY*) par vos valeurs personnalisées.
 
-```
+```console
 IPV6INIT=yes
 IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
@@ -279,7 +279,7 @@ IPV6_DEFAULTGW=IPV6_GATEWAY
 
 Voici un exemple concret :
 
-```
+```console
 IPV6INIT=yes
 IPV6ADDR=2001:41d0:xxx:xxxx::999/128
 IPV6_DEFAULTGW=2001:41d0:xxx:xxxx::111
@@ -295,7 +295,7 @@ IPV6_DEFAULTGW=2001:41d0:xxx:xxxx::111
 
 - Modifiez le fichier et ajoutez les lignes ci-dessous. Remplacez les éléments génériques (*IPV6_GATEWAY* et **eth0**, si nécessaire) par vos valeurs personnalisées.
 
-```
+```console
 IPV6_GATEWAY dev eth0
 default via IPV6_GATEWAY
 ```
@@ -335,7 +335,7 @@ Enfin, cochez la case `Valider les paramètres en quittant` et cliquez sur le bo
 
 Pour vérifier que la configuration est fonctionnelle, il existe plusieurs commandes possibles, selon le système d'exploitation.
 
-- **Pour un système GNU/Linux**, voici deux exemples pour l'interface **eth0** (à adapter si nécessaire):
+- **Pour un système GNU/Linux**, voici deux exemples pour l'interface **eth0** (à adapter si nécessaire) :
 
 ```bash
 ip -6 addr show eth0
@@ -356,15 +356,15 @@ eth0      Link encap:Ethernet  HWaddr ab:cd:ef:gf:ij:kl
           [...]
 ```
 
-Pour tester la connexion, vous pouvez utiliser la commande suivante:
+Pour tester la connexion, vous pouvez utiliser la commande suivante :
 
 ```bash
 ping6 proof.ovh.net
 ```
 
-- **Pour un système Windows**, utilisez la commande suivante:
+- **Pour un système Windows**, utilisez la commande suivante :
 
-```
+```powershell
 ipconfig
 
 Windows IP Configuration
@@ -382,7 +382,7 @@ Ethernet adapter Ethernet:
 
 Pour tester la connexion, vous pouvez utiliser la commande suivante:
 
-```
+```powershell
 ping -6 proof.ovh.net
 ```
 
