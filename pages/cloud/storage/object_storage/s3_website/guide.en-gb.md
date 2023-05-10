@@ -71,11 +71,11 @@ Where storage_class =
 > For more information about OVHCloud domain name offers, you can check [here](https://www.ovhcloud.com/fr/domains/)
 
 > [!warning]
-> Make sure the region you are hosting your bucket in supports the storage class you choose. You can check the list of supported storage classes by regions [here](/pages/cloud/storage/object_storage/s3_location)
-> By default, OVHCloud S3 Object Storage website endpoints do not support HTTPS. In order to enable HTTPS, you can use OVH Load Balancer to proxy your website. For more information, see the Go further section of this guide.
+> * Make sure the region you are hosting your bucket in supports the storage class you choose. You can check the list of supported storage classes by regions [here](/pages/cloud/storage/object_storage/s3_location)
+> * By default, OVHCloud S3 Object Storage website endpoints do not support HTTPS. In order to enable HTTPS, you can use OVH Load Balancer to proxy your website. For more information, see the Go further section of this guide.
 
 
 ## Go further
-Enable HTTPS on a S3 static website using a custom fqdn on <tbd>
+[Enable HTTPS on a S3 static website using a custom fqdn](/pages/cloud/storage/object_storage/s3_website_https)
   
 Join our community of users on <https://community.ovh.com/en/>.
