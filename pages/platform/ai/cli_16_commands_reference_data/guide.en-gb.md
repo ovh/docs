@@ -59,7 +59,7 @@ Options:
     -h, --help           Print help
 ```
 
-At this time, **S3 and Git datastores are supported**. To know more about S3, check [this documentation](/pages/platform/ai/gi_08_s3_compliance).
+At this time, **S3 and Git data stores are supported**. To know more about S3, check [this documentation](/pages/platform/ai/gi_08_s3_compliance).
 
 For help adding your S3 container, use `ovhai datastore add s3 --help`:
 
