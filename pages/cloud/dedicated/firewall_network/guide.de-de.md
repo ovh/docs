@@ -3,14 +3,14 @@ title: Konfiguration der Network Firewall
 slug: firewall-network
 excerpt: Erfahren Sie hier, wie Sie die Network Firewall konfigurieren
 section: 'Netzwerk & IP'
-updated: 2022-12-20
+updated: 2023-05-10
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 22.12.2022**
+**Letzte Aktualisierung am 10.05.2023**
 
 ## Ziel
 
@@ -43,7 +43,7 @@ Zum Schutz seiner weltweiten Infrastruktur und der Server seiner Kunden bietet O
 
 > [!primary]
 >
-> Die Network Firewall schützt IP-Adressen, die mit einem Server verbunden sind. Daher ist es notwendig, jede IP-Adresse einzeln zu konfigurieren; eine globale Serverkonfiguration ist nicht möglich.
+> Die Network Firewall schützt die einem Server zugeordnete IP-Adressen. Wenn Sie also einen Server mit mehreren IP-Adressen haben, müssen Sie jede IP unabhängig konfigurieren. Eine globale Serverkonfiguration ist nicht möglich.
 > 
 
 Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt sind, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und klicken Sie auf `IP`{.action}.
@@ -69,7 +69,7 @@ Sie können bis zu **20 Regeln für jede IP-Adresse** festlegen.
 
 > [!warning]
 >
-> Die Firewall wird bei jedem DDoS-Angriff automatisch aktiviert, und es ist nicht möglich, sie vor Ende des Angriffs zu deaktivieren. Deshalb ist es wichtig, dass Ihre Firewall-Regeln immer auf dem neuesten Stand sind.
+> Wenn Network Firewall mit Regeln konfiguriert ist, werden diese Regeln automatisch auf jeden DDoS-Angriff angewandt. Die Firewall kann vor Ende des Angriffs nicht deaktiviert werden, deshalb ist es wichtig, die Firewall-Regeln auf dem neuesten Stand zu halten.
 > Standardmäßig sind keine Regeln konfiguriert, so dass alle Verbindungen offen sind.
 > Sollten Sie Firewall-Regeln angelegt haben, denken Sie bitte daran, diese regelmäßig zu überprüfen, auch wenn Sie die Firewall deaktivieren.
 > 
@@ -132,23 +132,23 @@ Im Beispiel wird ein Paket für den TCP-Port 80 von der Regel 2 angenommen, die 
 
 ### Schutz
 
-Es gibt drei Varianten des Schutzmodus: Automatisch, Permanent und Erzwungen.
+Unsere Anti-DDoS-Lösung (VAC) umfasst drei Modi zum Schutz: Automatisch, Permanent und Erzwungen.
 
-**Automatischer Schutz**: Bei diesem Modus läuft der Traffic nur über das Abwehrsystem, wenn er im Vergleich zum üblichen Traffic, den der Server normalerweise empfängt, als "ungewöhnlich" erkannt wird.
+**Automatischer Schutz (permanente Erkennung)**: standardmäßig unterliegen alle OVHcloud IPs dem automatischen Schutz.  Bei diesem Modus läuft der Traffic nur über das Abwehrsystem, wenn er im Vergleich zum normalen Traffic, den der Server normalerweise empfängt, als "ungewöhnlich" erkannt wird.
 
-**Permanenter Schutz**: Wenn Sie den permanenten Schutz aktivieren, wird über unsere "Shield"-Hardware ein konstanter Erstfilter angewendet.<br>
+**Permanenter Schutz**: Dieser Modus kann über Ihr Kundencenter aktiviert oder deaktiviert werden. Mit der permanenten Abwehr (falls aktiviert) wenden Sie über unser "Shield"-Hardware eine erste konstante Filterung an.<br>
 Der gesamte Traffic läuft permanent über das Schutzsystem, bevor er den Server erreicht. Wir empfehlen diesen Modus für Dienste mit häufigen Angriffen.<br>
-Bitte beachten Sie, dass die Network Firewall nicht erstellt oder aktiviert sein darf, um den permanenten Schutz für Ihre IP zu aktivieren.
+Bitte beachten Sie, dass der permanente Schutz Teil unserer Anti-DDoS-Lösung (VAC) ist. Sie können ihn auf Ihrer IP aktivieren, ohne Network Firewall zu aktivieren.
 
 Öffnen Sie das Menü `IP`{.action} und klicken Sie auf `...`{.action} rechts neben der betreffenden IPv4. Wählen Sie `Schutz: permanenter Modus`{.action}.
 
-**Erzwungener Schutz**: Dieser Modus wird automatisch aktiviert, sobald ein Angriff auf den Server erkannt wurde. Nach der Aktivierung kann dieser Modus nicht deaktiviert werden. Zum Schutz unserer Infrastruktur wird der Schutz während des gesamten Angriffs aktiviert, bis er vollständig abgeschwächt ist.
+**Erzwungener Schutz**: Dieser Modus wird automatisch aktiviert, sobald ein Angriff auf den Server erkannt wurde. Sobald der Modus für DDoS-Schutz aktiviert ist, kann er nicht deaktiviert werden. Zum Schutz unserer Infrastruktur wird der Schutz während des gesamten Angriffs aktiviert, bis er vollständig abgeschwächt ist.
 
 > [!warning]
 >
-> Wenn Sie die DDoS-Schutz-Funktion aktivieren, werden automatisch auch Ihre Regeln der Network Firewall aktiviert, auch wenn Sie die Firewall deaktiviert haben. Um die Network Firewall vollständig zu deaktivieren, müssen auch Ihre Regeln gelöscht werden.
+> Wenn unser DDoS-Schutz-Funktion einen Angriff begrenzt, werden die konfigurierten Regeln Ihres Network Firewall auch dann angewendet, wenn Sie die Firewall deaktiviert haben. Wenn Sie möchten, dass während eines Angriffs keine Regeln angewandt werden, müssen Sie alle zuvor erstellten Regeln löschen.
 > 
-> Bitte beachten Sie, dass die DDoS-Mitigation nicht deaktiviert werden kann.
+> Da die Abwehr in unseren DDoS-Schutz (VAC) integriert ist, kann sie nicht für einen Dienst deaktiviert werden. Alle OVHcloud Produkte werden mit DDoS-Schutz geliefert.
 
 ### Armor Firewall konfigurieren (Game Firewall)
 
