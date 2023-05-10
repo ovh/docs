@@ -887,7 +887,7 @@ La *1ère séquence* consiste à régénérer les fichiers nécessaires afin de 
 
 L'image ci-dessous est un résumé des actions citées plus haut :
 
-![generate_efi](images/generate_efi.gif){.thumbnail}
+![generate_efi](images/generate_efi-v2.gif){.thumbnail}
 
 la *2ème séquence* consiste à rendre active la partition sélectionnée lors de la séquence précédente.
 
@@ -897,7 +897,7 @@ la *2ème séquence* consiste à rendre active la partition sélectionnée lors 
 
 L'image ci-dessous est un résumé des actions citées plus haut :
 
-![select_efi](images/select_efi.gif){.thumbnail}
+![select_efi](images/select_efi-v2.gif){.thumbnail}
 
 # Aller plus loin
 
