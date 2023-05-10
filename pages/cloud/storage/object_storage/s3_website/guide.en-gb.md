@@ -22,7 +22,7 @@ Here are the prerequisites to hosting a static website in S3:
 ### Step 1: Upload website resources
 In S3, a bucket is a flat container of objects. It does not provide any hierarchical organization as the file system on your computer does. However, you can create a logical hierarchy by using object key names that imply a folder structure.
 
-Example:
+**Example**:
  * index.html Object is the root of the bucket
  * doc/page1.html Object is in a subfolder
 
@@ -30,14 +30,13 @@ Example:
 > [!warning] 
 > * Html pages must be uploaded with text/html as their ContentType and CSS files must be uploaded with text/css as their ContentType
 > * Make your bucket content publicly available i.e all resources must have ACL "public-read"
-> 
 
 
 
 ### Step 2: Set the website configuration for a bucket
 To activate website hosting, you will have to upload a website configuration.
 
-Example:
+**Example**:
 ```sh
 aws --profile user-aws s3 website s3://my-website/ --index-document index.html --error-document error.html
 ```
@@ -69,20 +68,12 @@ Where storage_class =
 
 > [!primary]
 > If you want to use a custom endpoint, you will have to provide your own domain name.
-> For more information about OVHCloud domain name offers, you can check [here|https://www.ovhcloud.com/fr/domains/]
-> 
-
+> For more information about OVHCloud domain name offers, you can check [here](https://www.ovhcloud.com/fr/domains/)
 
 > [!warning]
-> Make sure the region you are hosting your bucket in supports the storage class you choose.
-> You can check the list of supported storage classes by regions [here|https://help.ovhcloud.com/csm/fr-public-cloud-storage-s3-location?id=kb_article_view&sysparm_article=KB0047389]
-> 
+> Make sure the region you are hosting your bucket in supports the storage class you choose. You can check the list of supported storage classes by regions [here](/pages/cloud/storage/object_storage/s3_location)
+> By default, OVHCloud S3 Object Storage website endpoints do not support HTTPS. In order to enable HTTPS, you can use OVH Load Balancer to proxy your website. For more information, see the Go further section of this guide.
 
-
-> [!warning]
-> By default, OVHCloud S3 Object Storage website endpoints do not support HTTPS.
-> In order to enable HTTPS, you can use OVH Load Balancer to proxy your website. For more information, see the Go further section of this guide.
-> 
 
 ## Go further
 Enable HTTPS on a S3 static website using a custom fqdn on <tbd>
