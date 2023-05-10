@@ -66,10 +66,10 @@ To create the volume in GRA (Gravelines data centre), clone the [GitHub repo](ht
 After, you will just have to type:
 
 ```bash
-ovhai data upload GRA <data-to-train-container> data
+ovhai bucket object upload <data-to-train-container>@GRA data
 ```
 
-Your data will be uploaded and created in the container `<data-to-train>` and mounted with the prefix `data`. 3 files will be uploaded: The `nlu.yml` file, the `stories.yml` file and the `rules.yml` file.
+Your data will be uploaded and created in the container `<data-to-train-container>` and mounted with the prefix `data`. 3 files will be uploaded: The `nlu.yml` file, the `stories.yml` file and the `rules.yml` file.
 
 Let's train our model!
 

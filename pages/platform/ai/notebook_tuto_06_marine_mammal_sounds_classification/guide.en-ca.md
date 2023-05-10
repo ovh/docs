@@ -4,10 +4,10 @@ slug: notebooks/tuto-marine-mammal-sounds-classification
 excerpt: How to classify sounds with AI
 section: AI Notebooks - Tutorials
 order: 06
-updated: 2023-03-31
+updated: 2023-05-10
 ---
 
-**Last updated 31st March, 2023.**
+**Last updated 5th May, 2023.**
 
 ## Objective
 
@@ -40,7 +40,7 @@ If you want to upload it from the [OVHcloud Control Panel](https://ca.ovh.com/au
 If you want to run it with the CLI, just follow this [this guide](https://docs.ovh.com/ca/en/publiccloud/ai/cli/access-object-storage-data/). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
 ```bash
-ovhai data upload <region> <container> <paths>
+ovhai bucket object upload <container>@<region> <paths>
 ```
 
 > [!primary]

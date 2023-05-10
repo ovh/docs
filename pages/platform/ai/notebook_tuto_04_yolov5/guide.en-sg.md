@@ -35,7 +35,7 @@ If you want to upload it from the [OVHcloud Control Panel](https://ca.ovh.com/au
 If you want to run it with the CLI, just follow this [guide](https://docs.ovh.com/sg/en/publiccloud/ai/cli/access-object-storage-data/). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
 ```bash
-ovhai data upload <region> <container> <paths>
+ovhai bucket object upload <container>@<region> <paths>
 ```
 
 > [!primary]

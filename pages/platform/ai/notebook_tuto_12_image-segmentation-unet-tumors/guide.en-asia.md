@@ -4,10 +4,10 @@ slug: notebooks/tuto-image-segmentation-unet-tumors
 excerpt: Implementing a Convolutional Neural Network for Brain Tumor Segmentation in Medical Imaging
 section: AI Notebooks - Tutorials
 order: 12
-updated: 2023-04-13
+updated: 2023-05-10
 ---
 
-**Last updated 13th April, 2023.**
+**Last updated 10th May, 2023.**
 
 ## Objective
 
@@ -37,7 +37,9 @@ At the end of this tutorial, you will have learnt the principal methods to **seg
 
 You can launch the notebook from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) or via the ovhai [CLI](https://docs.ovh.com/asia/en/publiccloud/ai/cli/getting-started-cli/).
 
-### Launching a Jupyter notebook with "Miniconda" via UI (Control Panel)
+Direct link to the full code can be found [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-segmentation/tensorflow/brain-tumor-segmentation-unet/notebook_image_segmentation_unet.ipynb).
+
+### Launching a Jupyter notebook with "Tensorflow" via UI (Control Panel)
 
 To launch your notebook from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), refer to the following steps.
 
@@ -58,7 +60,7 @@ Using GPUs is recommended because medical imaging is a training intensive task.
 > Here, using `1 GPU` is sufficient.
 >
 
-### Launching a Jupyter notebook with "Miniconda" via CLI
+### Launching a Jupyter notebook with "Tensorflow" via CLI
 
 *If you do not use our CLI yet, follow [this guide](https://docs.ovh.com/asia/en/publiccloud/ai/cli/install-client/) to install it.*
 
