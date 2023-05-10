@@ -214,7 +214,7 @@ Depending on how you intend to use your instances, you can select the **Public m
 
 The Public mode is the standard network model, it allows your instances to have a public network port attached. Associated with the vrack, each instance has a public and a private IP.
 
-The Private mode provides you with the possiblity of assiging your instances to a private network only. Instances in this mode can only be exposed to the public network using a Gateway or a Loadbalancer service with Floating IPs. For more information, please consult our [Public Cloud Network Services](https://docs.ovh.com/gb/en/publiccloud/network-services/) guides.
+The Private mode provides you with the possiblity of assigning your instances to a private network only. Instances in this mode can only be exposed to the public network using a Gateway or a Loadbalancer service with Floating IPs. For more information, please consult our [Public Cloud Network Services](https://docs.ovh.com/gb/en/publiccloud/network-services/) guides.
 
 Once you have selected a mode, select a private network to attach your instance to or click on `Create a new private network`{.action} to create a new one.
 
