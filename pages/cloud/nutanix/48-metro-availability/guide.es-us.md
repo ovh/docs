@@ -6,11 +6,10 @@ section: Disaster Recovery Plan
 order: 06
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/metro-availability/'
-updated: 2022-11-15
+updated: 2023-05-09
 ---
 
-
-**Last updated 15th november 2022**
+**Last updated 9th May 2023**
 
 ## Objective
 
@@ -27,7 +26,7 @@ updated: 2022-11-15
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 - Access to your clusters via Prism Central
 - You need to have 3 Nutanix clusters within the OVHcloud infrastructure with **Pack Advanced** licences, if you have a package offer on both clusters in the P.R.A. These 3 clusters will need to be at remote sites for maximum security.
-- You must have less than 5 ms of latency between the two replicated clusters.
+- You must have less than 5 ms of latency between the two replicated clusters. Please note that latency is not covered by SLAs.
 
 ## Introduction
 
