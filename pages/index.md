@@ -112,6 +112,7 @@
             + [Hardware diagnostics](cloud/dedicated/hardware-diagnose)
             + [Installing an OVHcloud SSH key](cloud/dedicated/ovh_ssh_key)
             + [Finding the serial number of a hard disk](cloud/dedicated/how_to_find_hdd_serial)
+            + [Finalize a maintenance action performed on your dedicated server](cloud/dedicated/intervention-support)
         + [Tutorials](bare-metal-cloud-dedicated-servers-tutorials)
             + [Backing up data and databases on a Storage Server](cloud/dedicated/save_datas_database_on_storage_ds)
             + [Configuring pfSense network bridge](cloud/dedicated/pfSense_bridging)
