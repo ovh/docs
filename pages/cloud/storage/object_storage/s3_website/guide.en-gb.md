@@ -59,7 +59,7 @@ if you use the AWS low-level commands with website-conf.json:
 
 ### Step 3: Test the endpoint
 Once the website configuration has been successfully uploaded, you can test the endpoint in your web browser.
-The endpoint will depend of the region of your bucket
+The default endpoint will depend of the region of your bucket
 ```sh
 http://{bucket-name}.s3-website.{region}.{storage_class}.cloud.ovh.net
 ```
@@ -67,11 +67,24 @@ Where storage_class =
 * "io" if you are using a standard bucket
 * "perf" if you are using a high perf bucket
 
+> [!primary]
+> If you want to use a custom endpoint, you will have to provide your own domain name.
+> For more information about OVHCloud domain name offers, you can check [here|https://www.ovhcloud.com/fr/domains/]
+> 
+
+
 > [!warning]
 > Make sure the region you are hosting your bucket in supports the storage class you choose.
 > You can check the list of supported storage classes by regions [here|https://help.ovhcloud.com/csm/fr-public-cloud-storage-s3-location?id=kb_article_view&sysparm_article=KB0047389]
 > 
 
+
+> [!warning]
+> By default, OVHCloud S3 Object Storage website endpoints do not support HTTPS.
+> In order to enable HTTPS, you can use OVH Load Balancer to proxy your website. For more information, see the Go further section of this guide.
+> 
+
 ## Go further
+Enable HTTPS on a S3 static website using a custom fqdn on <tbd>
   
 Join our community of users on <https://community.ovh.com/en/>.
