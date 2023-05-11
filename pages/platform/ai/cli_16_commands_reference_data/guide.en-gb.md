@@ -174,7 +174,7 @@ Options:
     -w, --workers <WORKERS>              Number of workers to use
       --delete                           Should also delete files in remote storage that are not present locally. !!WARNING!! we strongly advise to use `--dry-run` once before launching this command for real, also see the `--trash` option
       --trash <TRASH>                    Move files to this container and folder instead of deleting them, to be used with `--delete` (eg. `--trash trash_container/job1/`)
-      --dry-run                          Doesn't execute anything but displays the actions that would be done if this flag was not set
+      --dry-run                          Doesn't execute anything but display what actions would be done if this flag was not set
       --tar <TAR>                        Compress all paths inside a tar archive before uploading it
       --no-color                         Remove colors from output
     -h, --help                           Print help
@@ -235,7 +235,7 @@ Options:
     -w, --workers <WORKERS>              Number of workers to use for downloading objects
         --delete                         Should also delete files locally if they are not present on remote. !!WARNING!! we strongly advise to use `--dry-run` once before launching this command for real, also see the `--trash` option
         --trash <TRASH>                  Move files to this folder instead of deleting them, to be used with `--delete`
-        --dry-run                        Doesn't execute anything but displays the actions that would be done if this flag was not set
+        --dry-run                        Doesn't execute anything but display what actions would be done if this flag was not set
         --untar                          Uncompress given archive from object store
         --no-color                       Remove colors from output
     -h, --help                           Print help
