@@ -26,8 +26,8 @@ This Docker image is freely available.
 If you need any help while submitting a new job, run `ovhai job run --help`:
 
 ``` {.console}
-Usage:
-    ovhai job run [OPTIONS] [IMAGE] [COMMAND]...
+Usage: 
+	ovhai job run [OPTIONS] [IMAGE] [COMMAND]...
 
 Arguments:
   [IMAGE]
