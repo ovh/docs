@@ -30,7 +30,7 @@ Prefect works with local agent on your execution environment (your own computer,
 
 It can be seen as follow:
 
-[!image](images/agent_server.png){.thumbnail} 
+![image](images/agent_server.png){.thumbnail} 
 
 You can find more information on this [Prefect security overview](https://www.prefect.io/security/overview/). 
 
