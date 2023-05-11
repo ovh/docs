@@ -1,6 +1,6 @@
 ---
 title: 'Finalise a maintenance intervention on your dedicated server'
-excerpt: `Find out what actions you can carry out yourself on your server following a maintenance intervention`
+excerpt: "Find out what actions you can carry out yourself on your server following a maintenance intervention"
 updated: 2023-05-09
 ---
 
