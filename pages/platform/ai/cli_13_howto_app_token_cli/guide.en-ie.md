@@ -4,10 +4,10 @@ slug: cli/app-token-cli
 excerpt: Learn how to create Application tokens with the ovhai CLI
 section: Command Line Interface
 order: 203
-updated: 2021-03-25
+updated: 2023-05-11
 ---
 
-**Last updated 25th March, 2021.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 
@@ -24,26 +24,18 @@ This guide covers the creation of application tokens for AI Training.
 If you need any help while creating a new token, run `ovhai token create --help`:
 
 ``` {.console}
-USAGE:
-    ovhai token create [OPTIONS] <name> --role <role>
+Usage: ovhai token create [OPTIONS] --role <ROLE> <NAME>
 
-ARGS:
-    <name>    Token's name
+Arguments:
+  <NAME>  Token's name
 
-FLAGS:
-    -h, --help       Prints help information
-    -V, --version    Prints version information
-
-OPTIONS:
-    -l, --label-selector <name=value>
-            Only jobs with this label's name and value will be accessible using this token
-
-    -o, --output <output>
-            Command output format [default: yaml] [possible values: json, yaml]
-
-    -r, --role <role>
-            Operator role gives all access, read role only allow to access job's APIs [possible
-            values: read, operator]
+Options:
+  -r, --role <ROLE>                  Operator role gives all access, read role only allow to access job's APIs [possible values: read, operator]
+      --token <TOKEN>                Authentication using Token rather than OAuth
+  -l, --label-selector <name=value>  Only jobs with this label's name and value will be accessible using this token
+  -o, --output <OUTPUT>              Command output format [possible values: json, yaml, description]
+      --no-color                     Remove colors from output
+  -h, --help                         Print help
 ```
 
 ### Create an app token

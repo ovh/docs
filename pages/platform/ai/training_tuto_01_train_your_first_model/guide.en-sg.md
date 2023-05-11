@@ -4,10 +4,10 @@ slug: training/tuto-train-first-ml-model
 excerpt: How to train your first machine learning model in AI Training
 section: AI Training - Tutorials
 order: 01	
-updated: 2023-01-26
+updated: 2023-05-11
 ---
 
-**Last updated 26th January, 2023.**
+**Last updated 11th May, 2023.**
 
 This tutorial will allow you to train your first **Model in AI Training**. 
 
@@ -84,7 +84,7 @@ To follow this part, make sure you have installed the [ovhai CLI](https://cli.bh
 As in the Control Panel, you will have to specify the `region`, the `name of your container` and the `path` where your data will be located. The creation of your object container can be done by the following command:
 
 ```console
-ovhai data upload <region> <container> <paths>
+ovhai bucket object upload <container>@<region> <paths>
 ```
 
 For example: 
@@ -92,7 +92,7 @@ For example:
 Assuming a file named `my-dataset.zip` exists in your current working directory, you can use the following command to create an object container named `fashion_MNIST_dataset`, located in the `GRA` region that will contain your `my-dataset.zip` file.
 
 ```console
-ovhai data upload GRA fashion_MNIST_dataset my-dataset.zip
+ovhai bucket object upload fashion_MNIST_dataset@GRA my-dataset.zip
 ```
 
 This `.zip` file can now be accessed from all OVHcloud AI products, either with read-only (RO) or read-write (RW) permissions.
@@ -235,16 +235,14 @@ Just click your `object container` as if you still wanted to add new files to it
 If you prefer to use the AI CLI, you will need to use the following command:
 
 ```console
-ovhai data download [OPTIONS] <DATA_STORE> <CONTAINER> [OBJECTS]...
+ovhai bucket object download [OPTIONS] <BUCKET> [OBJECTS]...
 ```
 
 > [!primary]
 >
 > **Arguments**
 >
-> `<DATA_STORE>`: Data store of the container to download from. You can get a list of all available stores for the Object Storage by typing `ovhai data store list`.
->
-> `<CONTAINER>`: Name of container to download from.
+> `<BUCKET>`: container@data_store. Name and region of the container to download from.
 >
 > `[OBJECTS]...`: Name(s) of object(s) to download.
 >
@@ -252,13 +250,13 @@ ovhai data download [OPTIONS] <DATA_STORE> <CONTAINER> [OBJECTS]...
 For more info about this command, you can use:
 
 ```console
-ovhai data download --help
+ovhai bucket object download --help
 ```
 
 For example, in our case we will use:
 
 ```console
-ovhai data download GRA fashion_MNIST_dataset model.net
+ovhai bucket object download fashion_MNIST_dataset@GRA model.net
 ```
 
 ## Go further
