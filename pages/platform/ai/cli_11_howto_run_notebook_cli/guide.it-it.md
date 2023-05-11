@@ -1,11 +1,11 @@
 ---
 title: CLI - Launch an AI notebook
-slug: cli/getting-started-cli
+slug: cli/run-notebook-cli
 excerpt: Learn how to run an AI Notebook using the CLI
 section: Command Line Interface
 order: 201
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/getting-started-cli/'
+    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/run-notebook-cli/'
 updated: 2023-05-11
 ---
 

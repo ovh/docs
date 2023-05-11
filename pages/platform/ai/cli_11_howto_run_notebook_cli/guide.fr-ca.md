@@ -1,11 +1,11 @@
 ---
 title: CLI - Lancer un AI Notebook (EN)
-slug: cli/getting-started-cli
+slug: cli/run-notebook-cli
 excerpt: Découvrez comment lancer un AI Notebooks avec la CLI
 section: Command Line Interface
 order: 201
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/getting-started-cli/'
+    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/run-notebook-cli/'
 updated: 2023-05-11
 ---
 
