@@ -67,6 +67,9 @@ L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de sig
     - [Activer ou changer un sélecteur DKIM](#enable-switch)
     - [Désactiver et supprimer le DKIM](#disable-delete)
 - [Configurer DKIM pour une offre e-mail hors de votre compte OVHcloud](#external-dkim)
+    - [Enregistrement DKIM](#dkim-record)
+    - [Enregistrement TXT](#txt-record)
+    - [Enregistrement CNAME](#cname-record)
 - [Testez votre DKIM](#test-dkim)
 
 
@@ -142,9 +145,9 @@ Assurez-vous également que le nom de domaine que vous souhaitez utiliser pour v
 
 ![email](images/dns-dkim-domain.png){.thumbnail}
 
-Pour configurer le DKIM, rendez-vous sur le site https://api.ovh.com/console/, connectez-vous à l'aide du bouton `Login`{.action} en haut à droite à l'aide de vos identifiants OVHcloud.
+Pour configurer le DKIM, rendez-vous sur le site <https://api.ovh.com/console/>, connectez-vous à l'aide du bouton `Login`{.action} en haut à droite à l'aide de vos identifiants OVHcloud.
 
-> Appuyez-vous de notre guide [Découvrez comment utiliser les API OVHcloud](/pages/account/api/first-steps) si vous n'avez jamais utilisé les API.
+> Appuyez-vous de notre guide [« Découvrez comment utiliser les API OVHcloud »](/pages/account/api/first-steps) si vous n'avez jamais utilisé les API.
 
 Dirigez-vous vers la section `/email/exchange` des API et tapez « dkim » dans la case `Filter` pour faire uniquement apparaitre les API relatives au DKIM.
 
@@ -152,7 +155,7 @@ Dirigez-vous vers la section `/email/exchange` des API et tapez « dkim » dans 
 
 #### **Configuration complète du DKIM** <a name="firststep"></a>
 
-Suivez les instructions ci-dessous en cliquant sur chacun des onglets
+Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets
 
 > [!tabs]
 > **1.Liste des sélecteurs**
@@ -164,13 +167,13 @@ Suivez les instructions ci-dessous en cliquant sur chacun des onglets
 >> >
 >> > @api {GET} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkimSelector
 >> >
+>> <br>
 >>
->> <br>
->> - `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 »
->> - `exchangeService`: saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 »
->> - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange sur lequel vous souhaitez activer DKIM
->> <br>
->> Exemple de résultat: <br>
+>> - `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ». <br>
+>> - `exchangeService`: saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ». <br>
+>> - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange sur lequel vous souhaitez activer DKIM. <br>
+>>
+>> *Exemple de résultat:* 
 >> ```
 >>   "ovhex123456-selector1"
 >>   "ovhex123456-selector2"
@@ -186,14 +189,15 @@ Suivez les instructions ci-dessous en cliquant sur chacun des onglets
 >> > @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim
 >> >
 >>
->> - `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 »
->> - `exchangeService`: saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 »
->> - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange sur lequel vous souhaitez activer le DKIM
+>> - `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ».
+>> - `exchangeService`: saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ».
+>> - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange sur lequel vous souhaitez activer le DKIM.
 >> - `autoEnableDKIM` : le DKIM sera directement activé en cochant cette case. **Ne cochez pas cette case si votre nom de domaine n'est pas enregistré dans le même espace client OVHcloud ou dans un autre bureau d'enregistrement**.
 >> - `configureDkim` : l'enregistrement CNAME sera automatiquement ajouté dans votre zone DNS de votre nom de domaine si celui-ci est géré dans le même espace client OVHcloud que votre plateforme Exchange. **Ne cochez pas cette case si votre nom de domaine n'est pas enregistré dans le même espace client OVHcloud ou dans un autre bureau d'enregistrement**.
->> - `selectorName` : saisissez le nom d'un sélecteur que vous avez relevé à l'étape précédente <br>
+>> - `selectorName` : saisissez le nom d'un sélecteur que vous avez relevé à l'étape précédente. <br>
+>>
 >> Cliquez sur `Execute`{.action} pour lancer la création du sélecteur.<br>
->> Exemple de résultat :
+>> *Exemple de résultat :*
 >> ```
 >>  status: "todo",
 >>  function: "addExchangeDomainDKIM",
@@ -206,7 +210,8 @@ Suivez les instructions ci-dessous en cliquant sur chacun des onglets
 >> > Si votre nom de domaine est géré dans le même espace client que votre plateforme et que vous avez coché `autoEnableDKIM` et `configureDkim`, passez directement à la section [**Les différents états du DKIM**](dkim-status#) pour suivre l'activation du DKIM.
 >>
 > **3.Récupérer l'enregistrement DNS**
->> Vous devrez configurer manuellement la zone DNS de votre nom de domaine, si :<br>
+>> Vous devrez configurer manuellement la zone DNS de votre nom de domaine, si :
+>>
 >> - votre plateforme Exchange est liée à un nom de domaine qui est géré dans un autre espace client OVHcloud <br>
 >> - votre plateforme Exchange est liée à un nom de domaine qui est géré dans un autre bureau d'enregistrement <br>
 >> - vous avez choisi de ne pas cocher la case `configureDkim` à l'étape précédente.<br>
@@ -223,7 +228,7 @@ Suivez les instructions ci-dessous en cliquant sur chacun des onglets
 >> - `exchangeService`: saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 »
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange sur lequel vous souhaitez configurer le DKIM
 >>
->> Exemple de résultat :<br>
+>> *Exemple de résultat :*
 >> ```
 >>   targetRecord: "ovhex123456-selector1._domainkey.1675.ac.dkim.mail.ovh.net"
 >>   recordType: "CNAME"
@@ -235,15 +240,21 @@ Suivez les instructions ci-dessous en cliquant sur chacun des onglets
 >>  customerRecord: "ovhex123456-selector1._domainkey.mydomain.ovh"
 >>  selectorName: "ovhex1234565-selector1"
 >> ```
->> récupérez les valeurs `customerRecord`et `targetRecord` dans un fichier texte. Passez à l'étape suivante.<br>
+>> Récupérez les valeurs `customerRecord`et `targetRecord` dans un fichier texte. Passez à l'étape suivante.
+>>
+>> > [!primary]
+>> >
 >> > Il est possible que le `status:` soit en `todo`, cela n'a pas d'incidence sur la configuration de votre zone DNS.
 >>
 > **4.Configurer l'enregistrement DNS**
 >> Depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou est hébergé le nom de domaine de votre plateforme Exchange, dans l'onglet `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action} dans la colonne de gauche et sélectionnez le nom de domaine concerné.<br>
 >> Dirigez-vous vers l'onglet `Zone DNS`{.action} puis cliquez sur `Ajoutez une entrée`{.action} dans la fenêtre qui s'affiche. choisissez `CNAME` puis complétez selon les valeurs que vous avez relevées.<br>
->> Si on prend les valeurs de l'exemple à l'étape "**3.Récupérer l'enregistrement DNS**": <br>
->> - `customerRecord: "ovhex123456-selector1._domainkey.mydomain.ovh"` > sous-domaine de l'enregistrement CNAME, on garde seulement `ovhex123456-selector1._domainkey` car le `.mydomain.ovh`est déjà préremplie <br>
->> - `targetRecord: "ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net"` > cible de l'enregistrement, on y rajoute un point à la fin pour ponctuer la valeur. cela donne `ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.`<br>
+>>
+>> Si on prend les valeurs de l'exemple à l'étape "**3.Récupérer l'enregistrement DNS**":
+>>
+>> - `customerRecord: "ovhex123456-selector1._domainkey.mydomain.ovh"` correspond au sous-domaine de l'enregistrement CNAME, on garde seulement `ovhex123456-selector1._domainkey` car le `.mydomain.ovh`est déjà préremplie <br>
+>> - `targetRecord: "ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net"` correspond à la cible de l'enregistrement, on y rajoute un point à la fin pour ponctuer la valeur. cela donne `ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.`<br>
+>>
 >> ![email](images/dns-dkim-api02.png){.thumbnail} <br>
 >> 
 >> Une fois les valeurs saisies, cliquez sur `suivant`{.action}, puis `valider`{.action}.
@@ -275,7 +286,7 @@ Suivez les instructions ci-dessous en cliquant sur chacun des onglets
 >> - `exchangeService`: saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 »
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange sur lequel vous souhaitez activer le DKIM
 >>
->> Exemple de résultat :<br>
+>> *Exemple de résultat :*
 >> ```
 >>  id: 108716876
 >>  todoDate: "2023-05-05T11:30:11+02:00"
@@ -286,7 +297,7 @@ Suivez les instructions ci-dessous en cliquant sur chacun des onglets
 >>
 >> > [!success]
 >> >
->> > Vous avez maintenant effectué toutes les manipulations pour activer le DKIM. Pour s'assurer que celui-ci est bien activé, je vous invite à consulter à nouveau la section [**Les différents états du DKIM**](dkim-status#) de ce guide pour vérifier que la valeur `status:` est bien en `inProduction`. Si c'est le cas, votre DKIM est désormais actif.
+>> > Vous avez maintenant effectué toutes les manipulations pour activer le DKIM. Pour s'assurer que celui-ci est bien activé, je vous invite à consulter à nouveau la section [**« Les différents états du DKIM »**](dkim-status#) de ce guide pour vérifier que la valeur `status:` est bien en `inProduction`. Si c'est le cas, votre DKIM est désormais actif.
 >>  
 
 
@@ -314,7 +325,7 @@ Regardez ensuite la valeur `status:` dans le résultat:
 
 Si vous rencontrez l'erreur suivante lorsque vous lancez cette API, cela signifie que le sélecteur n'existe pas ou a été supprimé. Il faudra le créer.
 
-```bash
+```
 Not Found (404)
 { "message": "The requested object (selectorName = ovhex123456-selector1) does not exist" }
 ```
@@ -378,35 +389,35 @@ Depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&f
 
 Dirigez-vous vers l'onglet `Zone DNS`{.action}, puis cliquez sur `Ajoutez une entrée`{.action}. Il existe 3 manières d'ajouter un enregistrement pour paramétrer le DKIM dans votre zone DNS:
 
-- un enregistrement DKIM : configuration permettant de visualiser l'ensemble des paramètres d'un enregistrement DKIM.
-- un enregistrement TXT : enregistrement à utiliser lorsque l'ensemble des paramètres DKIM vous ont été fournis.
-- un enregistrement CNAME : enregistrement utilisé pour une offre e-mail OVHcloud ou un serveur e-mail Microsoft
+- [un enregistrement DKIM](#dkim-record) : configuration permettant de visualiser l'ensemble des paramètres d'un enregistrement DKIM.
+- [un enregistrement TXT](#txt-record) : enregistrement à utiliser lorsque l'ensemble des paramètres DKIM vous ont été fournis.
+- [un enregistrement CNAME](#cname-record) : enregistrement utilisé pour une offre e-mail OVHcloud ou un serveur e-mail Microsoft.
 
-#### **l'enregistrement DKIM**<a name="dkim-record"></a>
+#### **Enregistrement DKIM**<a name="dkim-record"></a>
 
 Cet enregistrement est nommé DKIM sur l'interface, mais il s'agit en réalité d'un enregistrement TXT en sortie. L'enregistrement DKIM a pour but de facilité la lecture des différents éléments de paramétrage du DKIM en les présentant sous forme de cases indépendantes.
 
 ![email](images/dns-dkim-add.png){.thumbnail}
 
-- **Sous-domaine** : renseignez le nom du sélecteur DKIM et ajoutez `._domainkey`à la fin.
+- **Sous-domaine** : renseignez le nom du sélecteur DKIM et ajoutez `._domainkey` à la suite, votre nom de domaine s'ajoutera automatiquement à la fin.
 
 *exemple:*
 ```
   selector-name._domainkey.mydomain.ovh.
 ```
 
-- **Version** (v=): sers à indiquer la version du DKIM. Il est recommandé de l'utiliser et sa valeur par défaut est "DKIM1". Si spécifié, ce tag doit être placé en premier dans l'enregistrement et doit être égal à "DKIM1" (sans les guillemets). Les enregistrements qui commencent par un tag "v=" avec une autre valeur doivent être ignorés.
-- **Granularité** (g=): permet de spécifier la partie «local-part» d'une adresse e-mail, c'est-à-dire la partie située avant le «@». Elle permet de spécifier l'adresse e-mail ou les adresses e-mail qui sont autorisées à signer un message électronique avec la clé DKIM du sélecteur. La valeur par défaut de "g=" est "\*", ce qui signifie que toutes les adresses e-mail sont autorisées à utiliser la clé de signature DKIM. En indiquant une valeur spécifique pour "g=", on peut limiter l'utilisation de la clé à une partie locale d'adresse e-mail spécifique ou à une plage d'adresses e-mail spécifiques en utilisant des caractères génériques (exemple "\*-group").
-- **Algorithme (hash)** (h=): permet de spécifier les algorithmes de hachage utilisés pour signer les en-têtes d'e-mail. Cette balise permet de définir une liste d'algorithmes de hachage qui seront utilisés pour générer une signature DKIM pour un message donné.
-- **Type de clé** (k=): spécifie l'algorithme de signature utilisé pour signer les messages électroniques sortants. Il permet aux destinataires de savoir comment le message a été signé et quelle est la méthode utilisée pour vérifier son authenticité. Les valeurs possibles pour le tag "k=" comprennent "rsa" pour l'algorithme de signature RSA et "ed25519" pour l'algorithme de signature Ed25519. Le choix de l'algorithme dépend de la politique de sécurité de l'expéditeur et de la prise en charge par le destinataire.
-- **Notes** (n=): sers à inclure des notes d'intérêt pour les administrateurs qui gèrent le système de clés DKIM. Ces notes peuvent être utiles pour des raisons de documentation ou pour aider les administrateurs à comprendre ou à gérer le fonctionnement de DKIM. Les notes incluses dans n= ne sont pas interprétées par les programmes et n'affectent pas le fonctionnement du DKIM. 
-- **Clé publique (base64)** (p=): Utilisé pour renseigner les données de clé publique DKIM, qui sont encodées en base64. Ce tag est obligatoire dans la signature DKIM et permet aux destinataires de la signature de récupérer la clé publique nécessaire pour vérifier l'authenticité du message signé. 
-- **Révoquer la clé publique** : si une clé publique DKIM a été révoquée (par exemple en cas de compromission de la clé privée), une valeur vide doit être utilisée pour le tag "p=", indiquant que cette clé publique n'est plus valide. Les destinataires doivent alors retourner une erreur pour toute signature DKIM faisant référence à une clé révoquée.
-- **Type de service** (s=): La balise "s=" (Service Type) est optionnelle et n'est pas présente par défaut. Elle permet de spécifier le ou les types de services au(x)quel(s) cet enregistrement DKIM s'applique. Les types de services sont définis en utilisant une liste de mots-clés séparés par des deux-points ":". Le destinataire doit ignorer cet enregistrement si le type de service approprié n'est pas répertorié. La balise "s=" est destinée à restreindre l'utilisation des clés pour d'autres fins, dans le cas où l'utilisation du DKIM serait définie pour d'autres services à l'avenir. Les types de services actuellement définis sont "*" (tous les types de services), "email" (courrier électronique).
-- **Mode test** (t=y) : permet aux propriétaires du nom de domaine de tester la mise en place du DKIM sans risquer de voir les messages rejetés ou marqués comme SPAM si la vérification de signature DKIM échoue. Lorsque le flag "t=y" est utilisé, le destinataire ne doit pas traiter différemment les messages signés en mode de test et les messages non signés. Cependant, le destinataire peut suivre le résultat du mode de test pour aider les signataires.
-- **Sous-domaines** (t=s): permet de restreindre l'utilisation de la signature DKIM au nom de domaine uniquement (*exemple*: @mydomain.ovh) ou de permettre l'envoi depuis le nom de domaine et ses sous-domaines (*exemple*: @mydomain.ovh, @test.mydomain.ovh, @other.mydomain.ovh, etc.).
+- **Version (v=)**: sers à indiquer la version du DKIM. Il est recommandé de l'utiliser et sa valeur par défaut est "DKIM1". Si spécifié, ce tag doit être placé en premier dans l'enregistrement et doit être égal à "DKIM1" (sans les guillemets). Les enregistrements qui commencent par un tag "v=" avec une autre valeur doivent être ignorés.<br>
+- **Granularité (g=)**: permet de spécifier la partie «local-part» d'une adresse e-mail, c'est-à-dire la partie située avant le «@». Elle permet de spécifier l'adresse e-mail ou les adresses e-mail qui sont autorisées à signer un message électronique avec la clé DKIM du sélecteur. La valeur par défaut de "g=" est "\*", ce qui signifie que toutes les adresses e-mail sont autorisées à utiliser la clé de signature DKIM. En indiquant une valeur spécifique pour "g=", on peut limiter l'utilisation de la clé à une partie locale d'adresse e-mail spécifique ou à une plage d'adresses e-mail spécifiques en utilisant des caractères génériques (exemple "\*-group").<br>
+- **Algorithme (hash) (h=)**: permet de spécifier les algorithmes de hachage utilisés pour signer les en-têtes d'e-mail. Cette balise permet de définir une liste d'algorithmes de hachage qui seront utilisés pour générer une signature DKIM pour un message donné.<br>
+- **Type de clé (k=)**: spécifie l'algorithme de signature utilisé pour signer les messages électroniques sortants. Il permet aux destinataires de savoir comment le message a été signé et quelle est la méthode utilisée pour vérifier son authenticité. Les valeurs possibles pour le tag "k=" comprennent "rsa" pour l'algorithme de signature RSA et "ed25519" pour l'algorithme de signature Ed25519. Le choix de l'algorithme dépend de la politique de sécurité de l'expéditeur et de la prise en charge par le destinataire.<br>
+- **Notes (n=)**: sers à inclure des notes d'intérêt pour les administrateurs qui gèrent le système de clés DKIM. Ces notes peuvent être utiles pour des raisons de documentation ou pour aider les administrateurs à comprendre ou à gérer le fonctionnement de DKIM. Les notes incluses dans n= ne sont pas interprétées par les programmes et n'affectent pas le fonctionnement du DKIM.<br>
+- **Clé publique (base64) (p=)**: Utilisé pour renseigner les données de clé publique DKIM, qui sont encodées en base64. Ce tag est obligatoire dans la signature DKIM et permet aux destinataires de la signature de récupérer la clé publique nécessaire pour vérifier l'authenticité du message signé.<br>
+- **Révoquer la clé publique** : si une clé publique DKIM a été révoquée (par exemple en cas de compromission de la clé privée), une valeur vide doit être utilisée pour le tag "p=", indiquant que cette clé publique n'est plus valide. Les destinataires doivent alors retourner une erreur pour toute signature DKIM faisant référence à une clé révoquée.<br>
+- **Type de service (s=)**: La balise "s=" (Service Type) est optionnelle et n'est pas présente par défaut. Elle permet de spécifier le ou les types de services au(x)quel(s) cet enregistrement DKIM s'applique. Les types de services sont définis en utilisant une liste de mots-clés séparés par des deux-points ":". Le destinataire doit ignorer cet enregistrement si le type de service approprié n'est pas répertorié. La balise "s=" est destinée à restreindre l'utilisation des clés pour d'autres fins, dans le cas où l'utilisation du DKIM serait définie pour d'autres services à l'avenir. Les types de services actuellement définis sont "*" (tous les types de services), "email" (courrier électronique).<br>
+- **Mode test (t=y)**: permet aux propriétaires du nom de domaine de tester la mise en place du DKIM sans risquer de voir les messages rejetés ou marqués comme SPAM si la vérification de signature DKIM échoue. Lorsque le flag "t=y" est utilisé, le destinataire ne doit pas traiter différemment les messages signés en mode de test et les messages non signés. Cependant, le destinataire peut suivre le résultat du mode de test pour aider les signataires.<br>
+- **Sous-domaines (t=s)**: permet de restreindre l'utilisation de la signature DKIM au nom de domaine uniquement (*exemple*: @mydomain.ovh) ou de permettre l'envoi depuis le nom de domaine et ses sous-domaines (*exemple*: @mydomain.ovh, @test.mydomain.ovh, @other.mydomain.ovh, etc.).
 
-#### **l'enregistrement TXT** <a name="txt-record"></a>
+#### **Enregistrement TXT** <a name="txt-record"></a>
 
 Il s'agit du type d'enregistrement natif utilisé pour paramétrer le DKIM dans la zone DNS de votre nom de domaine, mais il demande de bien maitriser sa syntaxe pour le compléter.
 
@@ -427,7 +438,7 @@ cible:
 ```
 
 
-#### **l'enregistrement CNAME** <a name="cname-record"></a>
+#### **Enregistrement CNAME** <a name="cname-record"></a>
 
 L'enregistrement CNAME est un alias, cela signifie que la valeur cible renvoie vers une URL qui fournira elle-même l'enregistrement DKIM au serveur qui interrogera l'enregistrement CNAME. Ce type d'enregistrement CNAME pour paramétrer le DKIM est fréquent dans le cadre de l'utilisation d'un serveur e-mail Microsoft.
 
@@ -437,7 +448,7 @@ C'est précisément ce type d'enregistrement utilisé pour activer le DKIM sur u
 
 ### Tester votre DKIM <a name="test-dkim"></a>
 
-Nous vous conseillons d'envoyer un e-mail depuis un compte de votre plateforme Exchange vers une adresse e-mail qui effectue une vérification DKIM à la réception.
+Nous vous conseillons d'envoyer un e-mail depuis un compte de votre plateforme Exchange vers une adresse e-mail qui vérifie la signature DKIM lors de la réception.
 
 Voici ce que vous pourrez trouver dans l'en-tête de l'e-mail reçu :
 
