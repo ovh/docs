@@ -769,7 +769,7 @@
             + [Use & manage existing and new image registries](platform/ai/gi_07_manage_registry)
         + [Command Line Interface](public-cloud-ai-and-machine-learning-command-line-interface)
             + [CLI - Installation](platform/ai/cli_10_howto_install_cli)
-            + [CLI - Launch an AI notebook](platform/ai/cli_11_cli_getting_started)
+            + [CLI - Launch an AI notebook](platform/ai/cli_11_howto_run_notebook_cli)
             + [CLI - Launch an AI Training job](platform/ai/cli_12_howto_run_job_cli)
             + [CLI - Manage access tokens](platform/ai/cli_13_howto_app_token_cli)
             + [CLI - Launch and share an AI Notebook with tokens](platform/ai/cli_14_howto_cli_sharing)
