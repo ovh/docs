@@ -4,10 +4,10 @@ slug: proxmox-network-hg-scale
 excerpt: 'Découvrez comment configurer le réseau sur Proxmox VE sur les gammes High Grade & SCALE.'
 section: 'Utilisation avancée'
 order: 5
-updated: 2023-01-09
+updated: 2023-05-11
 ---
 
-**Dernière mise à jour le 09/01/2023**
+**Dernière mise à jour le 11/05/2023**
 
 > [!primary]
 >
