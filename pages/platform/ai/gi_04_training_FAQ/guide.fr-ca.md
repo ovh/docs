@@ -1,14 +1,14 @@
 ---
-title: FAQ AI Training (EN)
+title: FAQ - AI training (EN)
 slug: faq
 section: Informations générales
 order: 106
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/faq/'
-updated: 2021-04-20
+updated: 2023-05-12
 ---
 
-**Last updated 20th April, 2021.**
+**Last updated 12th May, 2023.**
 
 ## Objective
 

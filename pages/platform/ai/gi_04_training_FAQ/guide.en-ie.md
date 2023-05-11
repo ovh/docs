@@ -1,12 +1,12 @@
 ---
-title: FAQ AI training
+title: FAQ - AI training
 slug: faq
 section: General information
 order: 106
-updated: 2021-04-20
+updated: 2023-05-12
 ---
 
-**Last updated 20th April, 2021.**
+**Last updated 12th May, 2023.**
 
 ## Objective
 
