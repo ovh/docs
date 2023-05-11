@@ -7,9 +7,9 @@ order: 100
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/ai-comparative-tables/'
 updated: 2023-05-12
-**Last updated 12th May, 2023.**
+---
 
-**Last updated 1st September, 2022.**
+**Last updated 12th May, 2023.**
 
 ## Objective
 
