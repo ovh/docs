@@ -1,5 +1,5 @@
 ---
-title: FAQ AI training
+title: FAQ - AI training
 slug: faq
 section: General information
 order: 106
@@ -75,4 +75,4 @@ Here are the most frequently asked questions about AI Training.
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)

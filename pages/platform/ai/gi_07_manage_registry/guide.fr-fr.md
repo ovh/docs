@@ -1,5 +1,5 @@
 ---
-title: Utiliser et gérer vos registres (EN)
+title: Registres - Utiliser et gérer vos registres (EN)
 slug: use-manage-registries
 excerpt: Découvrez comment vous pouvez gérer vos registres existants, mais aussi en utiliser de nouveaux
 section: General information
@@ -34,7 +34,7 @@ This documentation is divided into the following parts:
 
 ## Manage existing registries
 
-The Public Cloud provides a default registry called `shared registry`, where users of a same Public Cloud project are able to push their custom images, and use them through our AI Tools. 
+The Public Cloud provides a default registry called `shared registry`, where users of a same Public Cloud project are able to push their custom images, and use them through our AI Tools.
 
 > [!warning]
 >
@@ -83,13 +83,13 @@ ovhai registry delete <id>
 
 ## Create, configure and use new registries
 
-Using your own and private registries is the best way to use your images without exposing them to everyone. We distinguish 3 main possibilities: 
+Using your own and private registries is the best way to use your images without exposing them to everyone. We distinguish 3 main possibilities:
 
 - Private Harbor registry
 - Private Docker registry
 - GitHub registry / packages
 
-We will see how to implement each of these registries and use them through AI Tools. 
+We will see how to implement each of these registries and use them through AI Tools.
 
 > [!primary]
 >
@@ -110,7 +110,7 @@ At the end of this step, you should have your **registry identification details*
 
 Then, you will need to use these credentials to **connect to the Harbor UI**. This will allow you to manage this private registry. This simple step is explained in the [Connecting to the UI documentation](/pages/platform/private-registry/connecting-to-the-ui).
 
-To finish setting up your private Harbor registry, you will need to **create a project on Harbor**, and associate a user to it (Administrator user is added by default, but you can create a new one for this project). You will find all needed information in this [documentation](/pages/platform/private-registry/managing-users-and-projects). 
+To finish setting up your private Harbor registry, you will need to **create a project on Harbor**, and associate a user to it (Administrator user is added by default, but you can create a new one for this project). You will find all needed information in this [documentation](/pages/platform/private-registry/managing-users-and-projects).
 
 #### Get your OVHcloud Managed Private Registry API URL
 
@@ -122,7 +122,7 @@ Then, copy the URL of the Harbor API, which is the URL of your private registry:
 
 #### Add the Harbor registry
 
-To add your registry, you can either use the OVHcloud Control Panel (UI) or the `ovhai` CLI. 
+To add your registry, you can either use the OVHcloud Control Panel (UI) or the `ovhai` CLI.
 
 During this step, you will be asked your user's credentials (user ID and password). You can use the default user (administrator) credentials, which were obtained at the first part of the `Create and configure a new private registry` step, or those of another user if you have created one.
 
@@ -165,7 +165,7 @@ docker login -u <user> -p <password> <private-registry-address>
 
 Once connected, all you have to do is build, tag, and push your image. Here is an example:
 
-Build the image from the current directory's Dockerfile: 
+Build the image from the current directory's Dockerfile:
 ```console
 docker build . -t <image-name>:<tag-name>
 ```
@@ -197,7 +197,7 @@ If you prefer to use the OVHcloud Control Panel, this is also possible. In this 
 ### Docker private registry
 If you prefer to use a private registry from your Docker account, it is also possible.
 
-Let's say we have created a private repository on our Docker account. 
+Let's say we have created a private repository on our Docker account.
 
 We build, tag and push our Docker image in this private repository:
 
@@ -209,7 +209,7 @@ docker <docker_hub_username>/<private_repository_name>:<tag-name>
 
 #### Add the private Docker registry
 
-Once your image is pushed to your Docker account, you will need to add your private Docker registry to the registries of your Public Cloud project. 
+Once your image is pushed to your Docker account, you will need to add your private Docker registry to the registries of your Public Cloud project.
 
 As with Harbor, this can either be done with UI or CLI. This time, your private registry's URL will be `index.docker.io` and the requested username and password correspond to those of your Docker account.
 
@@ -237,7 +237,7 @@ To add your private Docker registry via CLI, use:
 ovhai registry add index.docker.io
 ```
 
-Once your registry is added, you should see it in your registries list. 
+Once your registry is added, you should see it in your registries list.
 
 #### Use your private registry images with OVHcloud AI Tools
 
@@ -248,12 +248,12 @@ ovhai app run index.docker.io/<docker_hub_username>/<private_repository_name>:<t
 --default-http-port 8501
 ```
 
-You can also use the Control Panel to deploy a job or an app from your private Docker registry. You will just need to specify your Docker image path, during step 2 of your job/app creation. This path will be `index.docker.io/<docker_hub_username>/<private_repository_name>:<tag-name>`. 
+You can also use the Control Panel to deploy a job or an app from your private Docker registry. You will just need to specify your Docker image path, during step 2 of your job/app creation. This path will be `index.docker.io/<docker_hub_username>/<private_repository_name>:<tag-name>`.
 
 ### GitHub registry
 
 You can also use a GitHub registry, also known as [GitHub Packages](ghcr.io).
- 
+
 As indicated on their documentation, you can build and push a package image by using the following commands:
 
 ```console
@@ -288,7 +288,7 @@ When you have finished filling in the form, click `Add`{.action}.
 ovhai registry add ghcr.io
 ```
 
-Once your registry is added, you should see it in your registries list. 
+Once your registry is added, you should see it in your registries list.
 
 #### Use your GitHub registry images with OVHcloud AI Tools
 
@@ -299,7 +299,7 @@ ovhai app run ghcr.io/<your_username>/<repo-name>:<tag-name> \
 --default-http-port 8501
 ```
 
-You can also use the Control Panel to deploy a job or an app from a GitHub registry. You will just need to specify your GitHub image path, during step 2 of your job/app creation. This path will be `ghcr.io/<your_username>/<repo-name>:<tag-name>`. 
+You can also use the Control Panel to deploy a job or an app from a GitHub registry. You will just need to specify your GitHub image path, during step 2 of your job/app creation. This path will be `ghcr.io/<your_username>/<repo-name>:<tag-name>`.
 
 ## Go further
 

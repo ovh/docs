@@ -1,5 +1,5 @@
 ---
-title: FAQ AI training
+title: FAQ - AI training
 slug: faq
 section: General information
 order: 106

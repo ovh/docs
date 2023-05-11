@@ -1,5 +1,5 @@
 ---
-title: Tableaux comparatifs entre AI Notebooks, AI Training, AI Deploy (EN)
+title: Tableaux comparatifs - AI Notebooks, AI Training, AI Deploy (EN)
 slug: ai-comparative-tables
 excerpt: "Découvrir les principales différences entre chaque AI Tools d'OVHcloud"
 section: Informations générales

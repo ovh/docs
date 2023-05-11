@@ -1,5 +1,5 @@
 ---
-title: ovhai CLI Cheat Sheet
+title: ovhai CLI - Cheat Sheet
 slug: cheat-sheet
 excerpt: Find all the useful commands for OVHcloud AI Training ovhai CLI
 section: General information
@@ -25,4 +25,4 @@ The goal of this [cheat sheet](https://github.com/ovh/ovhai-cheat-sheet/blob/mai
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)

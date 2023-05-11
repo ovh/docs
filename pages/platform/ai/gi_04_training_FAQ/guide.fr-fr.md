@@ -1,5 +1,5 @@
 ---
-title: FAQ AI Training (EN)
+title: FAQ - AI training (EN)
 slug: faq
 section: Informations générales
 order: 106
