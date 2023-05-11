@@ -4,10 +4,10 @@ slug: cli/data-cli
 excerpt: Learn how to manage your object storage data with the ovhai CLI
 section: Command Line Interface
 order: 206
-updated: 2023-05-09
+updated: 2023-05-11
 ---
 
-**Last updated 9th May, 2023.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 
@@ -18,6 +18,7 @@ This guide covers the basic commands needed to manipulate your data on object st
 - a working `ovhai` CLI. See our guide on [how to install ovhai CLI](/pages/platform/ai/cli_10_howto_install_cli).
 
 ## Instructions
+
 This documentation is divided into the following parts:
 
 - Listing available regions of data stores
@@ -59,9 +60,9 @@ Options:
     -h, --help           Print help
 ```
 
-At this time, **S3 and Git data stores are supported**. To know more about S3, check [this documentation](/pages/platform/ai/gi_08_s3_compliance).
+At this time, **S3 and Git data stores are supported**. To know more about S3, please read [this documentation](/pages/platform/ai/gi_08_s3_compliance).
 
-For help adding your S3 container, use `ovhai datastore add s3 --help`:
+To get help on how to add your S3 container, use `ovhai datastore add s3 --help`:
 
 ``` {.console}
 Usage: 
@@ -173,13 +174,13 @@ Options:
     -w, --workers <WORKERS>              Number of workers to use
       --delete                           Should also delete files in remote storage that are not present locally. !!WARNING!! we strongly advise to use `--dry-run` once before launching this command for real, also see the `--trash` option
       --trash <TRASH>                    Move files to this container and folder instead of deleting them, to be used with `--delete` (eg. `--trash trash_container/job1/`)
-      --dry-run                          Doesn't execute anything but display what actions would be done if this flag was not set
+      --dry-run                          Doesn't execute anything but displays the actions that would be done if this flag was not set
       --tar <TAR>                        Compress all paths inside a tar archive before uploading it
       --no-color                         Remove colors from output
     -h, --help                           Print help
 ```
 
-*A good practice is to use the `--dry-run` parameter to have a preview of what actions would be done by the entered command, if this flag was not set.* 
+*A good practice is to use the `--dry-run` parameter to get a preview of the actions that would be done by the entered command if this flag was not set.* 
 
 #### Uploading data - Example 1
 
@@ -234,13 +235,13 @@ Options:
     -w, --workers <WORKERS>              Number of workers to use for downloading objects
         --delete                         Should also delete files locally if they are not present on remote. !!WARNING!! we strongly advise to use `--dry-run` once before launching this command for real, also see the `--trash` option
         --trash <TRASH>                  Move files to this folder instead of deleting them, to be used with `--delete`
-        --dry-run                        Doesn't execute anything but display what actions would be done if this flag was not set
+        --dry-run                        Doesn't execute anything but displays the actions that would be done if this flag was not set
         --untar                          Uncompress given archive from object store
         --no-color                       Remove colors from output
     -h, --help                           Print help
 ```
 
-*A good practice is to use the `--dry-run` parameter to have a preview of what actions would be done by the entered command, if this flag was not set.*
+*A good practice is to use the `--dry-run` parameter to get a preview of the actions that would be done by the entered command if this flag was not set.* 
 
 #### Downloading data - Example 1
 
@@ -296,7 +297,7 @@ Options:
 
 #### Deleting data - Example 1
 
-Use this command to delete all the content of a container named `my-container`, in region `GRA`, but without deleting the container:
+Use this command to delete all the content of a container named `my-container`, in region `GRA`, **without** deleting the container:
 
 ``` {.console}
 ovhai bucket object delete my-container@GRA --all
@@ -304,7 +305,7 @@ ovhai bucket object delete my-container@GRA --all
 
 #### Deleting data - Example 2
 
-Use this command to delete a single object with name `file1` inside the container `my-container` of region `GRA`:
+Use this command to delete a single object named `file1` inside the container `my-container` of region `GRA`:
 
 ``` {.console}
 ovhai bucket object delete my-container@GRA file1
@@ -367,7 +368,7 @@ ovhai bucket object copy source-container@GRA --container dest-container --prefi
 
 ### Moving data
 
-You can also move an object within a container, or in another one. If you need any help, run `ovhai bucket object move --help`:
+You can also move an object within a container or in another one. If you need any help, run `ovhai bucket object move --help`:
 
 ``` {.console}
 Usage:
