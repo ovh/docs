@@ -933,6 +933,7 @@
                 + [Configuring a dynamic DNS for a domain name](web/domains/dns_dynhost)
                 + [Customising the DNS servers for an OVHcloud domain name](web/domains/glue_registry)
                 + [Adding an SPF record to the configuration of your domain name](web/domains/dns_zone_spf)
+                + [Adding a DKIM record to the configuration of your domain name](web/domains/dns_zone_dkim)
                 + [Add an MX record to your domain name’s configuration](web/domains/dns_zone_mx)
             + [Security](web-cloud-domains-dns-security)
                 + [Securing your domain name with DNSSEC](web/domains/dns_dnssec)
