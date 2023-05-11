@@ -159,26 +159,33 @@ Suivez les instructions ci-dessous en cliquant sur chacun des onglets
 >> Avant de créer un des sélecteurs pour votre nom de domaine, vous devrez récupérer le nom qui leur est attribué automatiquement par la plateforme Exchange.<br>
 >> <br>
 >> Pour cela, utiliser l'API suivante:<br>
+>>
 >> > [!api]
 >> >
 >> > @api {GET} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkimSelector
 >> >
+>>
 >> <br>
 >> - `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 »
 >> - `exchangeService`: saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 »
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange sur lequel vous souhaitez activer DKIM
 >> <br>
 >> Exemple de résultat: <br>
->> ![email](images/email-dns-dkim-api01.png){.thumbnail}
+>> ```
+>>   "ovhex123456-selector1"
+>>   "ovhex123456-selector2"
+>> ```
 >>
 > **2.Créer un sélecteur**
 >> Vous allez maintenant créer un sélecteur, générer sa paire de clés et l'enregistrement DNS associé au nom de domaine.<br>
 >><br>
 >> Pour cela, utiliser l'API suivante:<br>
+>>
 >> > [!api]
 >> >
 >> > @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim
 >> >
+>>
 >> - `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 »
 >> - `exchangeService`: saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 »
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange sur lequel vous souhaitez activer le DKIM
@@ -200,15 +207,17 @@ Suivez les instructions ci-dessous en cliquant sur chacun des onglets
 >>
 > **3.Récupérer l'enregistrement DNS**
 >> Vous devrez configurer manuellement la zone DNS de votre nom de domaine, si :<br>
->> - votre plateforme Exchange est liée à un nom de domaine qui est géré dans un autre espace client OVHcloud 
->> - votre plateforme Exchange est liée à un nom de domaine qui est géré dans un autre bureau d'enregistrement
+>> - votre plateforme Exchange est liée à un nom de domaine qui est géré dans un autre espace client OVHcloud <br>
+>> - votre plateforme Exchange est liée à un nom de domaine qui est géré dans un autre bureau d'enregistrement <br>
 >> - vous avez choisi de ne pas cocher la case `configureDkim` à l'étape précédente.<br>
 >>
 >> Pour configurez votre zone DNS, vous devez récupérer les valeurs de l'enregistrement DNS. Pour cela, lancez l'API suivante:
+>>
 >> > [!api]
 >> >
 >> > @api {GET} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}
 >> >
+>>
 >> - `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 »
 >> - `selectorName` : saisissez le nom du sélecteur que vous avez créé à l'étape précédente 
 >> - `exchangeService`: saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 »
@@ -232,15 +241,16 @@ Suivez les instructions ci-dessous en cliquant sur chacun des onglets
 > **4.Configurer l'enregistrement DNS**
 >> Depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou est hébergé le nom de domaine de votre plateforme Exchange, dans l'onglet `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action} dans la colonne de gauche et sélectionnez le nom de domaine concerné.<br>
 >> Dirigez-vous vers l'onglet `Zone DNS`{.action} puis cliquez sur `Ajoutez une entrée`{.action} dans la fenêtre qui s'affiche. choisissez `CNAME` puis complétez selon les valeurs que vous avez relevées.<br>
->> Si on prend les valeurs de l'exemple à l'étape "**3.Récupérer l'enregistrement DNS**":
->> - `customerRecord: "ovhex123456-selector1._domainkey.mydomain.ovh"` > sous-domaine de l'enregistrement CNAME, on garde seulement `ovhex123456-selector1._domainkey` car le `.mydomain.ovh`est déjà préremplie
->> - `targetRecord: "ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net"` > cible de l'enregistrement, on y rajoute un point à la fin pour ponctuer la valeur. cela donne `ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.`
->> ![email](images/dns-dkim-api02.png){.thumbnail}
+>> Si on prend les valeurs de l'exemple à l'étape "**3.Récupérer l'enregistrement DNS**": <br>
+>> - `customerRecord: "ovhex123456-selector1._domainkey.mydomain.ovh"` > sous-domaine de l'enregistrement CNAME, on garde seulement `ovhex123456-selector1._domainkey` car le `.mydomain.ovh`est déjà préremplie <br>
+>> - `targetRecord: "ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net"` > cible de l'enregistrement, on y rajoute un point à la fin pour ponctuer la valeur. cela donne `ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.`<br>
+>> ![email](images/dns-dkim-api02.png){.thumbnail} <br>
+>> 
 >> Une fois les valeurs saisies, cliquez sur `suivant`{.action}, puis `valider`{.action}.
 >>
 >> Si vous configurez votre zone DNS dans une interface tierce hors OVHcloud, votre enregistrement CNAME doit avoir la forme suivante:
 >>
->> ```
+>> ```bash
 >> ovhex123456-selector1._domainkey IN CNAME ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.
 >> ```
 >>
@@ -259,6 +269,7 @@ Suivez les instructions ci-dessous en cliquant sur chacun des onglets
 >> >
 >> > @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
+>>
 >> - `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 »
 >> - `selectorName` : saisissez le nom du sélecteur que vous avez créé
 >> - `exchangeService`: saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 »
@@ -303,7 +314,7 @@ Regardez ensuite la valeur `status:` dans le résultat:
 
 Si vous rencontrez l'erreur suivante lorsque vous lancez cette API, cela signifie que le sélecteur n'existe pas ou a été supprimé. Il faudra le créer.
 
-```
+```bash
 Not Found (404)
 { "message": "The requested object (selectorName = ovhex123456-selector1) does not exist" }
 ```
@@ -322,7 +333,7 @@ Pour activer le DKIM sur un sélecteur, utilisez l'API suivante:
 >
 
 - `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 »
-- `selectorName` : saisissez le nom d'un sélecteur actif.
+- `selectorName` : saisissez le nom d'un sélecteur existant.
 - `exchangeService`: saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 »
 - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange sur lequel vous souhaitez activer le DKIM
 
@@ -341,10 +352,11 @@ Si vous souhaitez désactiver le DKIM sans supprimer le sélecteur et sa paire d
 >
 > @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/disable
 >
+
 - `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 »
-- `selectorName` : saisissez le nom d'un sélecteur actif.
+- `selectorName` : saisissez le nom du sélecteur que vous souhaitez désactiver.
 - `exchangeService`: saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 »
-- `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange sur lequel vous souhaitez activer le DKIM
+- `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange
 
 Si vous souhaitez supprimer le sélecteur DKIM et sa paire de clés, lancez l'API suivante:
 
@@ -352,6 +364,11 @@ Si vous souhaitez supprimer le sélecteur DKIM et sa paire de clés, lancez l'AP
 >
 > @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/disable
 >
+
+- `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 »
+- `selectorName` : saisissez le nom du sélecteur que vous souhaitez supprimer
+- `exchangeService`: saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 »
+- `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange 
 
 ### Configurer le DKIM pour une offre e-mail hors de votre compte OVHcloud <a name="external-dkim"></a>
 
@@ -373,10 +390,10 @@ Cet enregistrement est nommé DKIM sur l'interface, mais il s'agit en réalité 
 
 - **Sous-domaine** : renseignez le nom du sélecteur DKIM et ajoutez `._domainkey`à la fin.
 
-  *exemple:*
-  ```
+*exemple:*
+```
   selector-name._domainkey.mydomain.ovh.
-  ```
+```
 
 - **Version** (v=): sers à indiquer la version du DKIM. Il est recommandé de l'utiliser et sa valeur par défaut est "DKIM1". Si spécifié, ce tag doit être placé en premier dans l'enregistrement et doit être égal à "DKIM1" (sans les guillemets). Les enregistrements qui commencent par un tag "v=" avec une autre valeur doivent être ignorés.
 - **Granularité** (g=): permet de spécifier la partie «local-part» d'une adresse e-mail, c'est-à-dire la partie située avant le «@». Elle permet de spécifier l'adresse e-mail ou les adresses e-mail qui sont autorisées à signer un message électronique avec la clé DKIM du sélecteur. La valeur par défaut de "g=" est "\*", ce qui signifie que toutes les adresses e-mail sont autorisées à utiliser la clé de signature DKIM. En indiquant une valeur spécifique pour "g=", on peut limiter l'utilisation de la clé à une partie locale d'adresse e-mail spécifique ou à une plage d'adresses e-mail spécifiques en utilisant des caractères génériques (exemple "\*-group").
