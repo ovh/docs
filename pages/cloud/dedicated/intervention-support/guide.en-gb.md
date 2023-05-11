@@ -9,11 +9,12 @@ updated: 2023-05-09
 Our maintenance interventions are limited to the hardware aspect of your server. Following a maintenance intervention, actions may be required on your server’s software section.
 
 This guide, which is based on a number of feedback received from our teams and use cases, lists the actions that need to be taken, depending on your installation: operating systems, hypervisor, etc.
+
 Its goal is to support you and ensure that there is as little impact as possible in the lifecycle of your environments.
 
 ## Requirements
 
-- Order a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/)
+- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
 
 ## Instructions
 
@@ -44,15 +45,16 @@ Continue reading this guide by clicking on the link for your installation:
 <a name="ubuntu"></a>
 
 ### Ubuntu 
-If you are experiencing network connectivity issues (for example, no ping after the motherboard replacement), perform the following steps:
+If you are experiencing network connectivity issues (for example, no ping after a motherboard replacement), perform the following steps:
 
 1\. Reboot the server in [rescue mode](/pages/cloud/dedicated/rescue_mode).
-2\. Mount the partition `/` :
+2\. Mount the partition `/`:
 
 ```bash
 root@rescue:~# mount /dev/my_system_disk /mnt
 ```
-If the `70-persistent-net.rules` file does not exist (refer to the section of this guide on [the names of your network](#network-interface) interfaces), check the following files in the `/etc/systemd/network/` tree:
+
+If the `70-persistent-net.rules` file does not exist (refer to the section of this guide on [the names of your network interfaces](#network-interface)), check the following files in the `/etc/systemd/network/` tree:
 
 - `50-default.network`
 - `50-public-interface.link`
@@ -136,7 +138,7 @@ In some cases, it is necessary to propagate the new MAC address to the following
 
 ### CentOS/Alma Linux
 
-If you are experiencing network connectivity issues (for example, no ping after the motherboard replacement), perform the following steps: 
+If you are experiencing network connectivity issues (for example, no ping after a motherboard replacement), perform the following steps: 
 
 1\. Reboot the server in [rescue mode](/pages/cloud/dedicated/rescue_mode).
 2\. Mount the partition `/`:
@@ -159,7 +161,7 @@ root@rescue:~# cp /mnt/etc/sysconfig/network-scripts/ifcfg-eth0 /mnt/etc/sysconf
 
 ### SmartOS
 
-If you are experiencing network connectivity issues (for example, no ping after the motherboard replacement), perform the following steps:
+If you are experiencing network connectivity issues (for example, no ping after a motherboard replacement), perform the following steps:
 
 1\. Reboot the server in [rescue mode](/pages/cloud/dedicated/rescue_mode).
 
@@ -188,7 +190,7 @@ root@rescue:~# zfs set mountpoint=`/usbkey` zones/usbkey
 
 ### FreeBSD
 
-If you are experiencing network connectivity issues (for example, no ping after the motherboard replacement), perform the following steps:
+If you are experiencing network connectivity issues (for example, no ping after a motherboard replacement), perform the following steps:
 
 1\. Reboot the server in rescue-bsd mode.
 2\. Run the `ifconfig` command from the rescue-bsd prompt.
@@ -202,7 +204,7 @@ options=403bb<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,JUMBO_MTU,VLAN_HWCSUM,TSO4,T
 ether xx:xx:xx:xx:xx:xx
 ```
 
-3\. Run the `gpart show` command, you can locate and associate the partitions/names:
+3\. Run the `gpart show` command to locate and associate the partitions/names:
 
 ```bash
 root@rescue-bsd:~ # gpart show
@@ -346,7 +348,7 @@ root@rescue-bsd:~ #
 
 ### Gentoo
 
-After the motherboard has been replaced, it is not possible to modify the new MAC addresses through the OS via rescue mode.
+After a motherboard has been replaced, it is not possible to modify the new MAC addresses through the OS via rescue mode.
 
 1\. Reboot the server in [rescue mode](/pages/cloud/dedicated/rescue_mode) and locate the partition `/`:
 
@@ -462,7 +464,7 @@ root@rescue:~#
 
 ### Proxmox
 
-If you are experiencing network connectivity issues (for example, no ping after the motherboard replacement), this may be related to an error during system startup caused by the old MAC address value still present:
+If you are experiencing network connectivity issues (for example, no ping after a motherboard replacement), this may be related to an error during system startup caused by the old MAC address value still present:
 
 ![proxmox](images/proxmox_edited.jpg){.thumbnail}
 
@@ -520,7 +522,7 @@ root@rescue:~#
 
 ### XenServer
 
-If you are experiencing network connectivity issues (for example, no ping after the motherboard replacement), the MAC address is static configured and must be reset.
+If you are experiencing network connectivity issues (for example, no ping after a motherboard replacement), the MAC address is static configured and must be reset.
 
 Do the following:
 
@@ -541,7 +543,7 @@ root@rescue:~# chroot /mnt
 [root@rescue /]# xe-reset-networking --device=eth0 --mode=static --ip=xx.xx.xx.xx --netmask=255.255.255.0 --gateway=xx.xx.xx.xxx
 ```
 
-3\. You will be asked to answer the question with yes, then press Enter:
+3\. You will be asked to answer the question with `yes`, then press Enter:
 
 ```bash
 ----------------------------------------------------------------------
@@ -576,7 +578,7 @@ Updating inventory file...
 Running in chroot, ignoring request.
 ```
 
-4\. Type "exit" to exit `chroot` mode, then unmount all partitions:
+4\. Type "exit" to leave `chroot` mode, then unmount all partitions:
 
 ```bash
 root@rescue:~# umount /mnt/sys
@@ -597,21 +599,21 @@ You need to check and adapt the following files:
 
 ### ESXi
 
-After the motherboard has been replaced, it is not possible to modify the new MAC addresses through the `esxi.conf` file via the tools integrated in rescue mode.
+After a motherboard has been replaced, it is not possible to modify the new MAC addresses through the `esxi.conf` file via the tools integrated in rescue mode.
 This will require manual intervention.
 
-#### Version 7.0 or later
+#### Version 7.0 or newer
 
-The following procedure applies only to **versions 7.0 or later**. From this release, the state.tgz file is encrypted.
+The following procedure applies only to **versions 7.0 and later**. From this release on, the state.tgz file is encrypted.
 You will need to reboot the network from the Direct Console menu via your KVM or IPMI.
 
 Please refer to the screenshot below:
 
 ![reset_network](images/restore.png){.thumbnail}
 
-#### Version 6.7 or lower
+#### Version 6.7 or older
 
-The procedure described below applies only to **versions 6.7 or lower**.
+The procedure described below applies only to **versions 6.7 and earlier**.
 
 1\. Restart the server in [rescue mode](/pages/cloud/dedicated/rescue_mode) in order to mount the partition `/`:
 
@@ -743,10 +745,10 @@ There are 2 methods:
 ```
 
 > [!warning]
-> As long as we are on WinPE, the value `CurrentControlSet` should be equal to `CurrentSet001`
+> As long as we are on WinPE, the value `CurrentControlSet` should be equal to `CurrentSet001`.
 >
 
-You should see several subkeys named like this: 0000, 0001, etc...
+You should see several subkeys named like this: 0000, 0001, etc.
 
 8\. Click each subkey to check the `DriverDesc` value that should match your network interface.
 You can check the name of your interface from a terminal using the following command:
@@ -820,7 +822,7 @@ root@rescue:~# umount /mnt
 ### Problems with your EFI partition
 
 The following steps are indicated if you experience a boot problem related to the partitions present on your disks.<br>
-There are 2 methods, via rescue mode or via BIOS
+There are 2 methods, via rescue mode or via BIOS.
 
 
 #### Via rescue mode
@@ -881,7 +883,7 @@ Boot0000* proxmox2    HD(1,22,100000,0df658ff-5461-470a-9d92-5d95208d5c0f)File(\
 The *first step* involves regenerating the files you need to restore your partition to full operation:
 
 - Go to the BIOS `boot` menu:
-    - Choisissez `Add New Boot Option`{.action}.
+    - Select `Add New Boot Option`{.action}.
     - Choose the path to your `Path for boot partition option`{.action} and select the file system that contains your boot partition.
     - Select the `EFI\centos6\bootx64.efi` file and choose `Create`{.action}.
 
@@ -889,11 +891,11 @@ The image below is a summary of the actions mentioned above:
 
 ![generate_efi](images/generate_efi-v2.gif){.thumbnail}
 
-the *2nd sequence* is to make the selected partition active in the previous sequence.
+The *second sequence* is to make the selected partition active in the previous sequence.
 
 - In the BIOS `boot` menu: 
     - Choose `UEFI Hard Disk BBS Priorities`{.action}.
-    - Choose `UEFI Boot Order #1`{.action} then select `CENTOS6`{.action} to position it as the 1st start choice in the current list.
+    - Choose `UEFI Boot Order #1`{.action} then select `CENTOS6`{.action} to position it as the first start choice in the current list.
 
 The image below is a summary of the actions mentioned above:
 
