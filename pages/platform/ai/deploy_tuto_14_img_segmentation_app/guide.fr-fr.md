@@ -4,12 +4,12 @@ slug: deploy/tuto-streamlit-image-segmentation-unet-brain-tumors
 excerpt: Comment créer et déployer une application permettant de segmenter des tumeurs cérébrales présentes dans des images IRM
 section: AI Deploy - Tutoriels
 order: 14
-updated: 2023-05-10
+updated: 2023-05-11
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-deploy-streamlit-image-segmentation-unet-brain-tumors?id=kb_article_view&sysparm_article=KB0057739'
 ---
 
-**Last updated 10th May, 2023.**
+**Last updated 11th May, 2023.**
 
 > [!primary]
 >

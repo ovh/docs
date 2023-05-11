@@ -6,10 +6,10 @@ section: AI Training - Tutoriels
 order: 07
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/training/tuto-train-rasa-chatbot/'
-updated: 2023-03-21
+updated: 2023-05-11
 ---
 
-**Last updated 21st March, 2023**
+**Last updated 11th May, 2023**
 
 ## Objective
 

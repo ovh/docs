@@ -6,10 +6,10 @@ section: AI Notebooks - Tutoriels
 order: 06
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-marine-mammal-sounds-classification/'
-updated: 2023-05-10
+updated: 2023-05-11
 ---
 
-**Last updated 10th May, 2023.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 

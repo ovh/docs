@@ -4,10 +4,10 @@ slug: training/tuto-train-rasa-chatbot
 excerpt: Understand how simple it is to train a chatbot with AI Training
 section: AI Training - Tutorials
 order: 07
-updated: 2023-03-21
+updated: 2023-05-11
 ---
 
-**Last updated 21st March, 2023**
+**Last updated 11th May, 2023**
 
 ## Objective
 

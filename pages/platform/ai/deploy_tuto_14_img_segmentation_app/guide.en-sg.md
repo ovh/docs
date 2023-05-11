@@ -4,10 +4,10 @@ slug: deploy/tuto-streamlit-image-segmentation-unet-brain-tumors
 excerpt: How to build and deploy a brain tumor segmentation application using streamlit
 section: AI Deploy - Tutorials
 order: 14
-updated: 2023-05-10
+updated: 2023-05-11
 ---
 
-**Last updated 10th May, 2023.**
+**Last updated 11th May, 2023.**
 
 > [!primary]
 >

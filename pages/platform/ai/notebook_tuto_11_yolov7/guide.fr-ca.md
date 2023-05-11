@@ -4,12 +4,12 @@ slug: notebooks/yolov7-sign-language
 excerpt: "Découvrez comment entraîner le modèle YOLOv7 sur un ensemble de données personnalisé avec AI Notebooks"
 section: AI Notebooks - Tutoriels
 order: 11
-updated: 2023-05-10
+updated: 2023-05-11
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/yolov7-sign-language/'
 ---
 
-**Last updated 10th May, 2023.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 

@@ -4,10 +4,10 @@ slug: cli/app-token-cli
 excerpt: Learn how to create Application tokens with the ovhai CLI
 section: Command Line Interface
 order: 203
-updated: 2023-05-10
+updated: 2023-05-11
 ---
 
-**Last updated 10th May, 2023.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 

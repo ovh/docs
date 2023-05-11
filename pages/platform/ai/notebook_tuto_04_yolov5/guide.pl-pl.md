@@ -6,10 +6,10 @@ section: AI Notebooks - Tutorials
 order: 04
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/yolov5-example/'
-updated: 2023-03-10
+updated: 2023-05-11
 ---
 
-**Last updated 10th March, 2023.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 

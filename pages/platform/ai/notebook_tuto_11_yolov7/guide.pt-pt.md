@@ -4,12 +4,12 @@ slug: notebooks/yolov7-sign-language
 excerpt: How to train the YOLOv7 model on a custom dataset with AI Notebooks
 section: AI Notebooks - Tutorials
 order: 11
-updated: 2023-05-10
+updated: 2023-05-11
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/yolov7-sign-language/'
 ---
 
-**Last updated 10th May, 2023.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 

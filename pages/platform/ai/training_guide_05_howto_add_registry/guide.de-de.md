@@ -6,10 +6,10 @@ section: AI Training - Guides
 order: 05
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/training/add-private-registry/'
-updated: 2021-04-20
+updated: 2023-05-11
 ---
 
-**Last updated 20th April, 2021.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 

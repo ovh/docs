@@ -4,10 +4,10 @@ slug: cli/run-job-cli
 excerpt: Learn how to run an AI Training job using the CLI
 section: Command Line Interface
 order: 202
-updated: 2023-05-09
+updated: 2023-05-11
 ---
 
-**Last updated 9th May, 2023.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 
@@ -26,8 +26,8 @@ This Docker image is freely available.
 If you need any help while submitting a new job, run `ovhai job run --help`:
 
 ``` {.console}
-Usage: 
-	ovhai job run [OPTIONS] [IMAGE] [COMMAND]...
+Usage:
+    ovhai job run [OPTIONS] [IMAGE] [COMMAND]...
 
 Arguments:
   [IMAGE]

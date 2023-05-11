@@ -6,10 +6,10 @@ section: Command Line Interface
 order: 202
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/run-job-cli/'
-updated: 2023-05-09
+updated: 2023-05-11
 ---
 
-**Last updated 9th May, 2023.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 
@@ -28,8 +28,8 @@ This Docker image is freely available.
 If you need any help while submitting a new job, run `ovhai job run --help`:
 
 ``` {.console}
-Usage: 
-	ovhai job run [OPTIONS] [IMAGE] [COMMAND]...
+Usage:
+    ovhai job run [OPTIONS] [IMAGE] [COMMAND]...
 
 Arguments:
   [IMAGE]

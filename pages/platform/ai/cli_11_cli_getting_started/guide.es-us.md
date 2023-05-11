@@ -6,10 +6,10 @@ section: Command Line Interface
 order: 201
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/getting-started-cli/'
-updated: 2023-05-09
+updated: 2023-05-11
 ---
 
-**Last updated 9th May, 2023.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 

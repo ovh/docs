@@ -4,10 +4,10 @@ slug: deploy/rasa-chatbot
 excerpt: Understand how simple it is to deploy a chatbot with AI Deploy
 section: AI Deploy - Tutorials
 order: 11
-updated: 2023-04-04
+updated: 2023-05-11
 ---
 
-**Last updated 4th April, 2023.**
+**Last updated 11th May, 2023.**
 
 > [!primary]
 >

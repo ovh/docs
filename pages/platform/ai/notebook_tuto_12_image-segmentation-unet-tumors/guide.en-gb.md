@@ -4,10 +4,10 @@ slug: notebooks/tuto-image-segmentation-unet-tumors
 excerpt: Implementing a Convolutional Neural Network for Brain Tumor Segmentation in Medical Imaging
 section: AI Notebooks - Tutorials
 order: 12
-updated: 2023-05-10
+updated: 2023-05-11
 ---
 
-**Last updated 10th May, 2023.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 

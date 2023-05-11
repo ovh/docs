@@ -6,10 +6,10 @@ section: AI Notebooks - Tutoriels
 order: 12
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-notebooks-tuto-image-segmentation-unet-tumors?id=kb_article_view&sysparm_article=KB0057606'
-updated: 2023-05-10
+updated: 2023-05-11
 ---
 
-**Last updated 10th May, 2023.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 
