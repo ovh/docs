@@ -1,7 +1,7 @@
 ---
 title:  Managing nodes with the NodePools CRD
 slug: node-pools-crd
-excerpt: 'Find out hos to manage nodes  with the NodePools CRD'
+excerpt: 'Find out how to manage nodes with the NodePools CRD'
 section: User guides
 routes:
     canonical: https://docs.ovh.com/gb/en/kubernetes/node-pools-crd/
@@ -9,7 +9,7 @@ order: 2
 updated: 2023-05-11
 ---
 
-**Last updated 11th March 2023**
+**Last updated 11th May 2023**
 
 <style>
  pre {
@@ -166,7 +166,7 @@ spec:
 
 After creation:
 
-- the `desiredNodes` can be edited, and the node pool will automatically be resized to accommodate this new value. 
+- The `desiredNodes` can be edited and the node pool will automatically be resized to accommodate this new value. 
 - `minNodes`, `maxNodes`, `autoscale` and `autoscaling` can also be edited at any time.
 - /!\ `flavor`, `name` and `antiAffinity` are not editable.
 
@@ -249,7 +249,7 @@ nodepool-b2-7      b2-7     false        true             true           2      
 
 ## Editing the node pool size
 
-To upsize or downsize your node pool, you can use simply edit the YAML file and re-apply it.
+To upsize or downsize your node pool, you can simply edit the YAML file and re-apply it.
 For example, raise the `desiredNodes` to 5 in `new-nodepool.yaml` and apply the file:
 
 <pre class="console"><code>$ kubectl apply -f new-nodepool.yaml
