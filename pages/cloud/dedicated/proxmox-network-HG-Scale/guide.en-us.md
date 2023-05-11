@@ -79,7 +79,8 @@ auto lo
 iface lo inet loopback
   # Enable IP forwarding and proxy-arp
   up echo "1" > /proc/sys/net/ipv4/ip_forward
-  up echo "1" > /proc/sys/net/ipv4/conf/all/proxy_arp
+  # Enable proxy-arp only for public bond
+  up echo "1" > /proc/sys/net/ipv4/conf/bond0/proxy_arp
 
 # public interface 1
 auto ens33f0
@@ -112,7 +113,7 @@ iface bond0 inet static
 	bond-downdelay 200
 	bond-updelay 200
 	bond-lacp-rate 1
-	bond-xmit-hash-policy layer2+3
+	bond-xmit-hash-policy layer3+4
 	# Use the mac address of the first public interface
 	hwaddress AB:CD:EF:12:34:56
 
@@ -125,7 +126,7 @@ iface bond1 inet static
 	bond-downdelay 200
 	bond-updelay 200
 	bond-lacp-rate 1
-	bond-xmit-hash-policy layer2+3
+	bond-xmit-hash-policy layer3+4
 	# Use the mac address of the first private interface
 	hwaddress GH:IJ:KL:12:34:56
 
