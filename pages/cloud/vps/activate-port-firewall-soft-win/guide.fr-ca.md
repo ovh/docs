@@ -23,7 +23,7 @@ Pour protéger de manière optimale votre système, votre serveur sous Windows S
 
 ## Prérequis
 
-- Disposer d’un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) sous Windows dans votre compte OVHcloud
+- Disposer d’un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) sous Windows dans votre compte OVHcloud.
 - Disposer d'un accès administrateur à votre serveur via un bureau distant sous Windows. 
 
 ## En pratique

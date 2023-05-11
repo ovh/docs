@@ -138,7 +138,7 @@ screen -ls
 
 Pour vous détacher du `shell` (et le maintenir en cours d'exécution), appuyez sur `Ctrl`{.action}, puis sur `a`{.action}, puis sur `d`{.action} sur votre clavier.
 
-Pour passer d'un `shell`à un autre, utilisez la commande suivante:
+Pour passer d'un `shell`à un autre, utilisez la commande suivante :
 
 ```sh
 ~/server$ screen -x nom_du_shell

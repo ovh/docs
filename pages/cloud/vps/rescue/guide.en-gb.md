@@ -75,9 +75,10 @@ You will then need to access your server via the command line or an SSH tool, us
 
 For example:
 
-```
+```bash
 ssh root@your_server_IP
 root@your_server_password:
+
 ```
 > [!warning]
 > 

@@ -169,7 +169,7 @@ By default, no port needs to be specified.
 
 Your Vanilla Minecraft server is now installed on your VPS.
 
-Please note that this installation guide should also work on an OVHcloud [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) or a [Public Cloud](https://www.ovhcloud.com/en-ie/public-cloud/). instance. With those services, you will have the advantage of better stability since the hardware is dedicated.
+Please note that this installation guide should also work on an OVHcloud [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) or a [Public Cloud](https://www.ovhcloud.com/en-ie/public-cloud/) instance. With those services, you will have the advantage of better stability since the hardware is dedicated.
 
 ## Go further <a name="gofurther"></a>
 

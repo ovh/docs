@@ -73,7 +73,7 @@ Here is a list of some common *iptables* options:
 - -F --flush: Deletes all rules.
 - -I --insert: Adds a rule to a string at a given position.
 - -L --list: Displays all rules in a string.
-- -N -new chain: Creates a new string.
+- -N --new chain: Creates a new string.
 - -v --verbose: Displays more information when using a list option.
 - -X --delete-chain: Deletes the supplied string.
 

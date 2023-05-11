@@ -63,7 +63,7 @@ Your server should now be responding to requests using these protocols.
 
 ### Activating Windows boot logs (optional)
 
-Connect to your server via a Remote Desktop or [KVM](https://docs.ovh.com/ca/en/vps/use-kvm-for-vps/)) session. Open the Windows start menu and click on `Run`{.action}.
+Connect to your server via a Remote Desktop or [KVM](https://docs.ovh.com/ca/en/vps/use-kvm-for-vps/) session. Open the Windows start menu and click on `Run`{.action}.
 
 ![Bootlog](images/windowsboot1.png){.thumbnail}
 
