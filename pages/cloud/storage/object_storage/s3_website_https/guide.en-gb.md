@@ -27,3 +27,19 @@ The following are the prerequisites to have in order to enable https:
 ### Step 1.1: Add your certificate
 
 Got to your load balancer management page and go to the SSL certificates page to add your certificate.
+![Upload certificate](images/cert-creation.PNG){.thumbnail}
+
+
+![Upload certificate](images/cert-creation-2.PNG){.thumbnail}
+
+
+> [!primary]
+> Optionally, you can also order a free Let's Encrypt certificate via the "Order an SSL certificate" button.
+
+
+### Step 1.2: Configure a server cluster
+
+Next step is to configure a server cluster and add it to your load balancer. A server cluster is a pool of backend machines that will handle the workload.
+
+In the load balancer management page, go to Server clusters to create a new server cluster.
+
