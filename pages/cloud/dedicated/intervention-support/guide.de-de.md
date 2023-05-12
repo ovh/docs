@@ -1,5 +1,5 @@
 ---
-title: 'Beenden Sie einen Wartungseingriff an Ihrem dedizierten Server (EN)'
+title: 'Abschließen eines Wartungseingriffs an Ihrem dedizierten Server (EN)'
 excerpt: "Find out what actions you can carry out yourself on your server following a maintenance intervention"
 updated: 2023-05-09
 routes:
