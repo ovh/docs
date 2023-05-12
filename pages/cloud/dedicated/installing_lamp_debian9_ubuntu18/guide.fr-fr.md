@@ -167,7 +167,7 @@ MariaDB [(none)]> exit;
 
 ### Étape 5 : configuration du firewall (facultatif)
 
-[La configuration d’un pare-feu](/pages/cloud/dedicated/firewall-linux-iptable) (*iptables*) permettra d’améliorer la sécurité de votre serveur. Ce processus peut être simplifié en utilisant le frontend « Uncomplex Firewall » (UFW) et son ensemble de profils prédéfinis. 
+[La configuration d’un pare-feu](https://docs.ovh.com/fr/dedicated/firewall-iptables/) (*iptables*) permettra d’améliorer la sécurité de votre serveur. Ce processus peut être simplifié en utilisant le frontend « Uncomplex Firewall » (UFW) et son ensemble de profils prédéfinis. 
 
 Installez UFW :
 
