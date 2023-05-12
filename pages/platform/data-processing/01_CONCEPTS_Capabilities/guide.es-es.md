@@ -6,10 +6,10 @@ section: Concepts
 order: 1
 routes:
     canonical: 'https://docs.ovh.com/gb/en/data-processing/capabilities/'
-updated: 2023-04-26
+updated: 2023-05-12
 ---
 
-**Last updated April 26th, 2023**
+**Last updated May 12th, 2023**
 
 ## Objective 
 
@@ -36,9 +36,11 @@ Data can be processed in two ways:
 
 At this moment, the following engines are supported by Data Processing Jobs:
 
+- Spark 3.4.0 (Scala 2.13.7 and Hadoop 3.3.1)
 - Spark 3.3.2 (Scala 2.13.7 and Hadoop 3.3.1)
 - Spark 3.3.1 (Scala 2.13.7 and Hadoop 3.3.1)
 - Spark 3.3.0 (Scala 2.13.7 and Hadoop 3.3.1)
+- Spark 3.2.4 (Scala 2.13.7 and Hadoop 3.3.1)
 - Spark 3.2.3 (Scala 2.13.7 and Hadoop 3.3.1)
 - Spark 3.2.2 (Scala 2.13.7 and Hadoop 3.3.1)
 - Spark 3.2.1 (Scala 2.13.7 and Hadoop 3.3.1)
@@ -47,7 +49,7 @@ At this moment, the following engines are supported by Data Processing Jobs:
 - Spark 3.0.1 (Scala 2.12.4 and Hadoop 3.2.0)
 - Spark 2.4.3 (Scala 2.12.4 and Hadoop 2.8.5)
 
-Notebooks for Apache Spark is limited to the latest version (3.3.2) supported by Data Processing Jobs.
+Notebooks for Apache Spark is limited to the latest version (3.4.0) supported by Data Processing Jobs.
 
 ### Hardware resources
 
