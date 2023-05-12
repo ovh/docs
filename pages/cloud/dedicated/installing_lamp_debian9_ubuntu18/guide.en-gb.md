@@ -169,7 +169,7 @@ MariaDB [(none)]> exit;
 
 ### Step 5: Configuring the firewall (optional)
 
-[Configuring a firewall](/pages/cloud/dedicated/firewall-Linux-iptable) (*iptables*) will enhance the security of your server. This process can be simplified by using the frontend "Uncomplicated Firewall" (UFW) and its preset of profiles. Install UFW:
+[Configuring a firewall](/pages/cloud/dedicated/firewall-linux-iptable) (*iptables*) will enhance the security of your server. This process can be simplified by using the frontend "Uncomplicated Firewall" (UFW) and its preset of profiles. Install UFW:
 
 ```shell-session
 sudo apt install ufw
@@ -239,7 +239,7 @@ Please refer to our guide on [Editing a DNS zone](/pages/web/domains/dns_zone_ed
 >
 > In order to establish secure connections (`https`), the web server has to be secured via an official Certificate Authority such as "[Let’s Encrypt](https://letsencrypt.org/)" which offers free certificates. You will need to install a client tool (such as "Certbot") and configure Apache accordingly. Without this step, your website or application can only accept unencrypted `http` requests.
 > 
-> As an alternative, OVHcloud offers the solution [SSL Gateway](https://www.ovh.co.uk/ssl-gateway/). Refer to the [guide pages](/pages/web/ssl-gateway) as well for further information.
+> As an alternative, OVHcloud offers the solution [SSL Gateway](https://www.ovh.co.uk/ssl-gateway/). Refer to the [guide pages](/pages/web/ssl-gateway/order-ssl-gateway) as well for further information.
 > 
 
 First make sure that your domain name has the correct records in the DNS zone, i.e. is mapped to the IP address of your server.
