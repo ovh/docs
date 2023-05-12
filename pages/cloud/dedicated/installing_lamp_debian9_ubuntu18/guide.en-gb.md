@@ -169,7 +169,7 @@ MariaDB [(none)]> exit;
 
 ### Step 5: Configuring the firewall (optional)
 
-[Configuring a firewall](/pages/cloud/dedicated/firewall-linux-iptable) (*iptables*) will enhance the security of your server. This process can be simplified by using the frontend "Uncomplicated Firewall" (UFW) and its preset of profiles. Install UFW:
+[Configuring a firewall](https://docs.ovh.com/gb/en/dedicated/firewall-iptables/) (*iptables*) will enhance the security of your server. This process can be simplified by using the frontend "Uncomplicated Firewall" (UFW) and its preset of profiles. Install UFW:
 
 ```shell-session
 sudo apt install ufw
