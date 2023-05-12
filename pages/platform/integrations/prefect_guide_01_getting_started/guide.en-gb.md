@@ -204,6 +204,7 @@ The graph shows us the execution time of the "display-swift-containers" flow bas
 ## Go further
 
 - Official Prefect website : [Prefect.io](https://prefect.io/)
+- - Send an email with prefect : [Send an email through blocks and automation with Prefect](/pages/platform/integrations/prefect_tuto_02_block_automation)
 - Run your first job with Prefect and the OVHcloud API : [Create your first AI pipeline with prefect](/pages/platform/integrations/prefect_tuto_03_ai_pipeline)
 
 ## Feedback
