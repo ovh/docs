@@ -3,13 +3,13 @@ title: Creating a cluster
 slug: creating-a-cluster
 excerpt: ''
 section: Getting started
-order: 0
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/'
-updated: 2021-09-29
+    canonical: https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster
+order: 0
+updated: 2023-05-12
 ---
 
-**Last updated 29th September 2021**
+**Last updated 12th May 2023**
 
 ## Objective
 
@@ -36,12 +36,12 @@ Select a location for your new cluster.
 
 Choose the minor version of Kubernetes.
 
+![Choose the minor version of Kubernetes](images/creating-a-cluster3.png){.thumbnail}
+
 > [!primary]
 > We recommend to always use the last stable version. 
 > Please read our [End of life / end of support](../eos-eol-policies/) page to understand our version policy.
 >
-
-![Choose the minor version of Kubernetes](images/creating-a-cluster3.png){.thumbnail}
 
 You can now choose to integrate your Kubernetes cluster into a private network using OVHcloud vRack. For more information about this option, please read our guide [Using the vRack](../using_vrack/).
 
@@ -69,12 +69,23 @@ In the next step, choose the appropriate billing mode (monthly or hourly). You c
 
 > [!primary]
 > By enabling anti-affinity, current and future nodes will be launched on different hypervisors (physical servers), guaranteeing higher fault tolerance. Anti-affinity node pools can only include up to 5 nodes.
+>
+> Moreover, if you choose monthly for the billing method, it will not be possible to change later from monthly to hourly, but the contrary is possible. 
 > 
 
-Finally, enter a for name your cluster and click the `Send`{.action} button.
+Finally, enter a name for your cluster.
+
+![Enter a name for your cluster](images/creating-a-cluster9.png){.thumbnail}
+
+And click the `Send`{.action} button.
 
 The cluster creation is now in progress. It should be available within a few minutes in your OVHcloud Control Panel.
 
+## Warning
+
+After a cluster is created, you could not change anymore:
+- the region
+- the private network ID
 
 ## Go further
 
@@ -84,4 +95,4 @@ To deploy your first application on your Kubernetes cluster, we invite you to fo
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-- Join our community of users on <https://community.ovh.com/>.
+- Join our community of users on <https://community.ovh.com/en/>.
