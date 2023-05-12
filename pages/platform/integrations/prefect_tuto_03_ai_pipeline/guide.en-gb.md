@@ -340,7 +340,7 @@ email(state_job=status,
 
 Open a terminal, launch the command `python3 <name-of-your-file.py` and wait until it's done. You should have received an email like this: 
 
-![image](email_example.png){.thumbnail}
+![image](images/email_example.png){.thumbnail}
 
 ### Monitor your pipeline in Prefect Cloud UI
 
@@ -348,7 +348,7 @@ Now, let's see on the Prefect Cloud UI how the situation is going.
 
 The "Flow Runs" tab in the Prefect Cloud UI displays information about the executions of your Prefect flows. You can find the name of the flows, the state of the flows, the tasks run inside the flows and much more information about your running or past flows. Overall, the Flow Runs tab provides a detailed overview of the execution history of your Prefect flows, allowing you to monitor performance, troubleshoot issues, and make improvements to your workflows. Here is an example : 
 
-![image](flow_run_example.png){.thumbnail}
+![image](images/flow_run_example.png){.thumbnail}
 
 I choose to display the launch of the job, the second flow of this pipeline. We can see our three task display on the graph. We also see the order to execute them. Below the graph, you can found some tab to see the details of your tasks or the results of each task.
 
