@@ -79,7 +79,7 @@ Finally, click the `Send`{.action} button.
 
 The cluster creation is now in progress. It should be available within a few minutes in your OVHcloud Control Panel.
 
-## Warning
+### Warning
 
 After a cluster is created, you can no longer change:<br>
 \-  The region.<br>
