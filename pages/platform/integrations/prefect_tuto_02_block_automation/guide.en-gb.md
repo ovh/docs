@@ -16,7 +16,7 @@ The purpose of this tutorial is to show you how to send a notification (in this 
 ## Requirements
 
 - Basic Knowledge or Prefect.io
-- First configurationf for Prefect and OVHcloud. See our guide [Getting started]()
+- First configurationf for Prefect and OVHcloud. See our guide [Getting started](/pages/platform/integrations/prefect_guide_01_getting_started)
 - An email address
 
 ## Instructions
@@ -37,7 +37,7 @@ In Prefect, as explained in their official documentation, an automation is a hig
 
 In our case, we will use automation to send a notification. Thanks to the block **Email**, we will create a notification through an automation. This automation can only be created on the Prefect cloud's UI. Custom automations can also be created directly from your Python code. Go on the sidebar of our workspace, select `Automations` and click on the `+` icon. 
 
-The first step to complete is the trigger. For this example, we will send an email when the our flow previously created in our [Getting Started guide](xxxx] is completed. You can fill the page like this:
+The first step to complete is the trigger. For this example, we will send an email when the our flow previously created in our [Getting Started guide](/pages/platform/integrations/prefect_guide_01_getting_started) is completed. You can fill the page like this:
 
 ![image](images/trigger.png){.thumbnail}
 
@@ -54,7 +54,7 @@ In the last step, you have to fill the details of your automations like the name
 
 ### Run your flow
 
-Before running the flow, be sure that you set up your agent in prefect. Following the guide [getting-started]() you should be able to have the python code. Check if you connected to the prefect cloud UI. If you not sure that your agent is connected to the client run `prefect login` and connect with your credentials. Now, run the flow !  
+Before running the flow, be sure that you set up your agent in prefect. Following the guide [getting-started](/pages/platform/integrations/prefect_guide_01_getting_started) you should be able to have the python code. Check if you connected to the prefect cloud UI. If you not sure that your agent is connected to the client run `prefect login` and connect with your credentials. Now, run the flow !  
 
 ```console
 python3 console.py
@@ -70,4 +70,4 @@ The event feed tab is a good way to see if you flow failed or not and if the aut
 
 - Official documentation for [blocks in Prefect](https://docs.prefect.io/concepts/blocks/)
 - Official documentation for [automations in Prefect](https://docs.prefect.io/ui/automations/)
-- XXXXXXXXX / Mettre ici un lien pour le tutorial end to end pipeline.
+- Run your first job with Prefect and the OVHcloud API : [Create your first AI pipeline with prefect](/pages/platform/integrations/prefect_tuto_03_ai_pipeline)
