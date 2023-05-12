@@ -6,10 +6,10 @@ section: General guides
 order: 060
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/restore-backup'
-updated: 2023-03-27
+updated: 2023-05-11
 ---
 
-**Last updated March 27th, 2023**
+**Last updated May 11th, 2023**
 
 ## Objective
 
@@ -54,7 +54,7 @@ Click on the `...`{.action} button corresponding to the chosen backup. Then clic
 > [!warning]
 > The MongoDB service has the option to restore a backup in place, meaning restoring the backup on the same service. This option will rollback ALL data to the state it was in when the backup was done. This can induce data loss.
 
-![Backup tab](images/backup-tab-20230331.png){.thumbnail}
+![Backup tab](images/backup-tab-20230511.png){.thumbnail}
 
 ### Step 4: Configure the target service
 
