@@ -11,7 +11,7 @@ updated: 2022-01-04
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 04/01/2022**
+**Última actualización: 12/05/2023**
 
 ## Objetivo
 
@@ -28,7 +28,7 @@ Es probable que desee comprobar la velocidad de sus discos, ya sea para comparar
 
 ## Procedimiento
 
-### Instalar el pedido de prueba
+### Instalar comando para realizar las pruebas
 
 El comando que necesita para comprobar la velocidad del disco se denomina `fio`. No está presente por defecto en el servidor.
 
