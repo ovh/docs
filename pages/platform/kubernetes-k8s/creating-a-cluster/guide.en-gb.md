@@ -82,7 +82,7 @@ The cluster creation is now in progress. It should be available within a few min
 ## Warning
 
 After a cluster is created, you can no longer change:<br>
-\-  The region.
+\-  The region.<br>
 \-  The private network ID.
 
 ## Go further
