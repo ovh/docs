@@ -763,7 +763,7 @@
             + [Users - Manage AI users and roles](platform/ai/gi_01_manage_users)
             + [Data - Concept and best practices](platform/ai/gi_02_concepts_data)
             + [Data - S3 compliance with AI Tools](platform/ai/gi_08_s3_compliance)
-            + [FAQ - AI training](platform/ai/gi_04_training_FAQ)
+            + [FAQ - AI Training](platform/ai/gi_04_training_FAQ)
             + [ovhai CLI - Cheat Sheet](platform/ai/gi_05_ovhai_cheatsheet)
             + [AI Dashboard - Getting started](platform/ai/gi_06_dashboard_getting_started)
             + [Registries - Use & manage registries](platform/ai/gi_07_manage_registry)
