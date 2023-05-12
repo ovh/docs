@@ -17,7 +17,7 @@ The purpose of this guide is to discover [Prefect](https://docs.prefect.io/), an
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- Access to the [OVHcloud API](https://api.ovh.com/). We can found more information [here](/pages/account/api/first-steps). Be sure your application token can access the POST and GET request **/cloud** and the GET request **/me**. 
+- Access to the [OVHcloud API](https://api.ovh.com/). You can find more information [here](/pages/account/api/first-steps). Be sure your application token can access the POST and GET request **/cloud** and the GET request **/me**. 
 - A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/)
 
 ## Instructions
@@ -36,7 +36,7 @@ You can find more information on this [Prefect security overview](https://www.pr
 
 #### Key components
 
-Here is a non-exhaustive list of key elements that you will always meeting during next Prefect tutorials.
+Here is a non-exhaustive list of key elements that you will always meet during next Prefect tutorials.
 Feel free to read their [official Prefect documentation](https://docs.prefect.io/latest/concepts/) for detailed information.
 
 **Workspace**: an isolated environment within Prefect Cloud for your flows and deployments. You can use workspaces to organize or compartmentalize your workflows. Once created, you can launch your flows.
@@ -45,7 +45,7 @@ Feel free to read their [official Prefect documentation](https://docs.prefect.io
 
 **Task** : a unit of computation that performs a specific operation. Tasks can be thought of as the building blocks of a Prefect flow, where each task represents a single step in a larger pipeline.  
 
-An an example, if we want to create an AI Pipeline, one task could be a job launch to train a model and another task to deploy the model. With this two tasks, we can create a flow.
+As an example, if we want to create an AI Pipeline, one task could be a job launch to train a model and another task to deploy the model. With this two tasks, we can create a flow.
 
 ### Start with Prefect
 
@@ -74,8 +74,8 @@ Fill in your OVHcloud customer ID, password, and application name. The name will
 
 You can also add a description of the application and a validity period.
 
-The Rights field allows you to restrict the use of the application to certain APIs.
-In order to allow all OVHcloud APIs for an HTTP method, put an asterisk (*) into the field, as in the following example where the GET method is allowed for all APIs
+The Rights field allows you to restrict the use of the application to certain APIs. You must provide access to the POST and GET request **/cloud** and the GET request **/me**.
+
 
 After you click Create keys, you will be issued three keys:
 
