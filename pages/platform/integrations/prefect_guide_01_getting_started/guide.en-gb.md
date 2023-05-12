@@ -1,5 +1,5 @@
 ---
-title: Guide - Getting Started
+title: Prefect - Guide - Getting Started
 slug: prefect/getting-started
 excerpt: Discover Prefect and configure it for your first workflows
 section: Prefect
