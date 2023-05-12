@@ -1,7 +1,7 @@
 ---
 title: Creating a cluster
 slug: creating-a-cluster
-excerpt: ''
+excerpt: 'Find out how to create an OVHcloud Managed Kubernetes cluster through the OVHcloud Control Panel'
 section: Getting started
 routes:
     canonical: https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster
