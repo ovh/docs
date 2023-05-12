@@ -1,5 +1,5 @@
 ---
-title: Tutorial - Prefect - AI pipeline with training job
+title: Prefect - Tutorial - AI pipeline with training job
 slug: prefect/ai-pipeline-training
 excerpt: Create your first AI pipeline in a public Cloud by launching an AI Training job linked to a S3 bucket
 section: Prefect
@@ -33,7 +33,7 @@ The used model will be classic a **PyTorch** model doing image classification. I
 - A coding environment with Prefect configured. See this [tutorial](Getting-started)
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/)
-- A S3 data store configured (you can do this easily with the cli : `ovhai data store ls`. If you never done this before, you can check [our tutorial](https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-s3-compliance?id=kb_article_view&sysparm_article=KB0058011)
+- A S3 data store configured (you can do this easily with the cli : `ovhai data store ls`. If you never done this before, you can check [our tutorial](/pages/platform/ai/gi_08_s3_compliance)
 
 ## Instructions
 
@@ -45,7 +45,7 @@ Here, we will first generate credentials allowing us to manage S3 buckets and da
 Follow our [S3 official documentaiton for credentials here](https://docs.ovh.com/gb/en/storage/object-storage/s3/identity-and-access-management/). 
 Keep the access key and the secret key, we will need them later. 
 
-Ok, now let's synchronize our S3 credentials with the boto3 client. To do this, we have to create a folder and two files in it. To configurate the boto3 client, I suggest you to follow this part of the [tutorial](https://docs.ovh.com/gb/en/storage/object-storage/pcs/getting-started-with-the-swift-s3-api/#configure-aws-client). Once the two files are created and you fill them with your credentials, we can start coding and create our S3 object storage with a Prefect flow !
+Ok, now let's synchronize our S3 credentials with the boto3 client. To do this, we have to create a folder and two files in it. To configurate the boto3 client, I suggest you to follow this part of the [tutorial](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage#configuration). Once the two files are created and you fill them with your credentials, we can start coding and create our S3 object storage with a Prefect flow !
 
 To create a S3 object storage, we must provide With the [SDK OVHcloud](https://github.com/ovh/python-ovh), we can easily communicate with the OVHcloud's API. To interact with S3 object container, we must use a S3 protocol. OVHcloud don't provide this protocol yet but The [boto3 library](https://github.com/boto/boto3) provides it. The boto3 SDK is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python, which allows Python developers to write software that makes use of services like S3 containers. It provides a low-level interface to many of the services, as well as higher-level abstractions that make it easier to work with those services. 
 
@@ -121,10 +121,7 @@ def init_s3(username):
  
 Now, let's create another task to create an S3 bucket. For this task, we will need a name for our bucket. To name an S3 object storage, you need to provide a unique object key which serves as the identifier for the object. The object key consists of the bucket name and a unique identifier, separated by a dash (-). To get this unique identifier, you can use a timestamp or [UIID generator](https://www.uuidgenerator.net/). Here is the python code to create our second task:
 
-(XXXX il faut répéter 2x le @task dans le code? XXX)
-
 ```python
-@task
 @task(name="create-a-S3-bucket",
       task_run_name=generate_task_name)
 def create_bucket(bucket_name, client, region, username):
@@ -211,7 +208,7 @@ def create_and_upload_in_S3(username):
 
 ### Create a second flow to train your machine learning model 
 
-In this flow, we will need a Python client who can connect to the OVHcloud API. This is our first task. If you followed the [getting started tutorial](link), you should be able to have this task already. 
+In this flow, we will need a Python client who can connect to the OVHcloud API. This is our first task. If you followed the [getting started tutorial](/pages/platform/integrations/prefect_guide_01_getting_started), you should be able to have this task already. 
 
 The second task will use the OVHcloud SDK for Python. This library provides a POST method on the url we want from the API. According to the API, we will use this [API call](https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/ai/job~POST) :
 
@@ -358,7 +355,7 @@ You also have the possibility to see the steps of your flows directly in the con
  
 - [Official Prefect documentation](https://docs.prefect.io/latest/)
 - [OVHcloud API console](https://api.ovh.com/console/)
-- Learn about AI Training jobs with tutorials : [AI Training - Tutorials](https://help.ovhcloud.com/csm/en-gb-documentation-public-cloud-ai-and-machine-learning-ai-training-tutorials?id=kb_browse_cat&kb_id=574a8325551974502d4c6e78b7421938&kb_category=aa3a6120b4d681902d4cf1f95804f442)
+- Learn about AI Training jobs with tutorials : [AI Training - Tutorials](/pages/platform/ai)
 
 ## Feedback
 
