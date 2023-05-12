@@ -4,11 +4,11 @@ slug: prefect/getting-started
 excerpt: Discover Prefect and configure it for your first workflows
 section: Prefect
 order: 01
-updated: 2024-05-11
+updated: 2024-05-12
 ---
 
 
-**Last updated 11th May, 2023**
+**Last updated 12th May, 2023**
  
 ## Objective
  
@@ -17,7 +17,7 @@ The purpose of this guide is to discover [Prefect](https://docs.prefect.io/), an
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- Access to the [OVHcloud API](https://api.ovh.com/). We can found more information [here](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/). Be sure your application token can access the GET request **/cloud** and the GET request **/me**. 
+- Access to the [OVHcloud API](https://api.ovh.com/). We can found more information [here](/pages/account/api/first-steps). Be sure your application token can access the POST and GET request **/cloud** and the GET request **/me**. 
 - A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/)
 
 ## Instructions
@@ -63,12 +63,12 @@ For the next tutorials, we will choose this option.
 
 > [!primary]
 >
-> Exhaustive information can be found in following guide: [first steps with OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+> Exhaustive information can be found in following guide: [first steps with OVHcloud API](/pages/account/api/first-steps).
 >
 
 Any application that wants to communicate with the OVHcloud API must be declared in advance.
 
-To do this, click the following link: <https://eu.api.ovh.com/createToken/>.
+To do this, click the following [link](https://eu.api.ovh.com/createToken/).
 
 Fill in your OVHcloud customer ID, password, and application name. The name will be useful later if you want to allow others to use it.
 
@@ -183,7 +183,7 @@ In this python code, we create two tasks:
 
 Now that our Python code is ready, let's run it:
 
-```
+```console
 # Log into Prefect
 $prefect cloud login
 
@@ -203,8 +203,8 @@ The graph shows us the execution time of the "display-swift-containers" flow bas
 
 ## Go further
 
-- Official Prefect website : <https://prefect.io/>
-- Run your first job with Prefect and the OVHcloud API : [Run your first job with prefect]()
+- Official Prefect website : [Prefect.io](https://prefect.io/)
+- Run your first job with Prefect and the OVHcloud API : [Create your first AI pipeline with prefect](/pages/platform/integrations/prefect_tuto_03_ai_pipeline)
 
 ## Feedback
 
