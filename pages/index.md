@@ -428,7 +428,6 @@
             + [SAP HANA on Bare Metal and SAP Application Servers on VMware on OVHcloud](cloud/sap/concept-dedicated-server-and-hpc)
         + [Getting started](hosted-private-cloud-sap-ovhcloud-getting-started)
             + [SAP HANA on Bare Metal - Installing SAP HANA on SLES 15 for SAP](cloud/sap/install-sap-hana-sles)
-            + [FAQ - SAP HANA on OVHcloud](cloud/sap/faq)
         + [Advanced usage](hosted-private-cloud-sap-ovhcloud-advanced-usage)
             + [Backup a SAP HANA database solution](cloud/sap/backup-sap-hana)
 + Public Cloud
