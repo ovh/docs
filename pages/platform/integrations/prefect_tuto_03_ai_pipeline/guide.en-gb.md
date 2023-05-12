@@ -45,15 +45,11 @@ Here, we will first generate credentials allowing us to manage S3 buckets and da
 Follow our [S3 official documentaiton for credentials here](https://docs.ovh.com/gb/en/storage/object-storage/s3/identity-and-access-management/). 
 Keep the access key and the secret key, we will need them later. 
 
-=========
-Once you get your credential
-
 Ok, now let's synchronize our S3 credentials with the boto3 client. To do this, we have to create a folder and two files in it. To configurate the boto3 client, I suggest you to follow this part of the [tutorial](https://docs.ovh.com/gb/en/storage/object-storage/pcs/getting-started-with-the-swift-s3-api/#configure-aws-client). Once the two files are created and you fill them with your credentials, we can start coding and create our S3 object storage with a Prefect flow !
 
 To create a S3 object storage, we must provide With the [SDK OVHcloud](https://github.com/ovh/python-ovh), we can easily communicate with the OVHcloud's API. To interact with S3 object container, we must use a S3 protocol. OVHcloud don't provide this protocol yet but The [boto3 library](https://github.com/boto/boto3) provides it. The boto3 SDK is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python, which allows Python developers to write software that makes use of services like S3 containers. It provides a low-level interface to many of the services, as well as higher-level abstractions that make it easier to work with those services. 
 
 We need some credentials to use this protocol. You can get your credentials as S3 users. You can create them on the OVHcloud control panel, in your public cloud project in the object storage tab. If you want to know more about this credentials, 
-=========
 
 
 ### Create environments variables inside our Prefect Cloud workspace. 
