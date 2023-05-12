@@ -62,7 +62,7 @@ python3 console.py
 
 Wait until your flow is completed and... Check your mailbox, you will receive an email from prefect ! If you go directly on the events feed in the prefect UI, you can see the email has been sent. Here is a picture of the event run by your automation :
 
-![result_mail](images/result_mail.png){.thumbnail}
+![image](images/result_mail.png){.thumbnail}
 
 The event feed tab is a good way to see if you flow failed or not and if the automation has been proceed. In our case, we also receive an email on the address mail provided. 
 
