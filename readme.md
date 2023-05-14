@@ -1,6 +1,6 @@
 # OVHcloud Documentation
 
-[![Build Status](https://travis-ci.org/ovh/docs.svg?branch=develop)](https://travis-ci.org/ovh/docs)
+[![Build Status](https://travis-ci.com/ovh/docs.svg?branch=develop)](https://travis-ci.org/ovh/docs)
 
 Here is all public documentation available about OVHcloud products, in all languages. A good way to find answers to some "how to" questions about OVHcloud products.
 
