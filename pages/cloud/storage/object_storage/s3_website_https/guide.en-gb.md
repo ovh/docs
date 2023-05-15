@@ -35,9 +35,9 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 Celect your Load Balancer from the list, click the `SSL certificates`{.action} tab then click `Add an SSL certificate`{.action}.
 
-![Upload certificate](images/cert-creation.PNG){.thumbnail}
+![Upload certificate](images/cert-creation01.png){.thumbnail}
 
-![Upload certificate](images/cert-creation-2.PNG){.thumbnail}
+![Upload certificate](images/cert-creation02.png){.thumbnail}
 
 > [!primary]
 > Optionally, you can also order a free Let's Encrypt certificate via the "Order an SSL certificate" button.
@@ -48,7 +48,7 @@ You now need to configure a server cluster and add it to your Load Balancer. A s
 
 Still from the Load Balancer section of the OVHcloud Control Panel, click the `Server clusters`{.action} tab then click `Add a server cluster`{.action}.
 
-![server custer configuration](images/serv-cluster-1.PNG){.thumbnail}
+![server custer configuration](images/serv-cluster-01.png){.thumbnail}
 
 Enter the configuration of the new server cluster:
 
@@ -57,11 +57,11 @@ Enter the configuration of the new server cluster:
 - Port: 80
 - Datacenter: choose the region in which you have hosted your website
 
-![server custer configuration](images/serv-cluster-2.PNG){.thumbnail}
+![server custer configuration](images/serv-cluster-02.png){.thumbnail}
 
 You now need to add servers to your server cluster. Click the `Add a server`{.action} button.
 
-![server custer configuration](images/serv-cluster-3.PNG){.thumbnail}
+![server custer configuration](images/serv-cluster-03.png){.thumbnail}
 
 Enter the configuration information of your server:
 
@@ -95,7 +95,7 @@ cloud.ovh.net.          33      IN      SOA     dns111.ovh.net. tech.ovh.net. 20
 ;; MSG SIZE  rcvd: 108
 ```
 
-![server custer configuration](images/serv-cluster-4.PNG){.thumbnail}
+![server custer configuration](images/serv-cluster-04.png){.thumbnail}
 
 #### Step 1.3 - Configure your front-ends
 
@@ -103,7 +103,7 @@ The next steps consists in adding front-ends to your Load Balancer. A front-end 
 
 In the Load Balancer section of the OVHcloud Control Panel, click the `Front-ends`{.action} tab then click `Add a front-end`{.action}.
 
-![frontend configuration](images/front-1.PNG){.thumbnail}
+![frontend configuration](images/front-01.png){.thumbnail}
 
 Add 2 frontends:
 
@@ -129,7 +129,7 @@ Add 2 frontends:
 
 Once you created and configured all the ressources, do not forget to click the `Apply configuration`{.action} button to apply all the changes to the Load Balancer.
 
-![apply LB configuration](images/LB-apply-conf.PNG){.thumbnail}
+![apply LB configuration](images/LB-apply-conf.png){.thumbnail}
 
 ### Step 2: Configure your DNS
 
@@ -140,15 +140,15 @@ CLick the `Web Cloud`{.action} tab of your OVHcloud Control Panel and select you
 
 The click the `DNS zone`{.action} tab.
 
-![DNS configuration](images/DNS-1.PNG){.thumbnail}
+![DNS configuration](images/DNS-01.png){.thumbnail}
 
 Edit the two A records to add the public IP address of your Load Balancer.
 
-![DNS configuration](images/DNS-2.PNG){.thumbnail}
+![DNS configuration](images/DNS-02.png){.thumbnail}
 
-![DNS configuration](images/DNS-3.PNG){.thumbnail}
+![DNS configuration](images/DNS-03.png){.thumbnail}
 
-![DNS configuration](images/DNS-4.PNG){.thumbnail}
+![DNS configuration](images/DNS-04.png){.thumbnail}
 
 > [!warning]
 > You can find the public IP address of your Load Balancer in the home page of the `Load Balancer`{.action} section of the OVHcloud Control Panel.
