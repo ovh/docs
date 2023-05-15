@@ -1539,6 +1539,8 @@
             + [Object Storage - Use S3 Object Storage with S3cmd](cloud/storage/object_storage/s3_s3cmd)
             + [Object Storage - Servers Access Logging](cloud/storage/object_storage/s3_server_access_logging)
             + [Object Storage - Bucket ACL](cloud/storage/object_storage/s3_bucket_acl)
+            + [Object Storage - Hosting a static website in a S3 bucket](cloud/storage/object_storage/s3_website)
+            + [Object Storage - Enabling HTTPS on a S3 static website using a custom domain](cloud/storage/object_storage/s3_website_https)
         + [Configure Object Storage with your solutions](storage-object-storage-configure-object-storage-with-your-solutions)
             + [Object Storage - Use S3 Object Storage with Rclone](cloud/storage/object_storage/s3_rclone)
             + [Object Storage - Use S3 Object Storage with Veeam](cloud/storage/object_storage/s3_veeam)
