@@ -101,16 +101,12 @@ Below is a list of current campuses:
     - vin1
 - HIL (Hillsboro)
     - hil1
-- SYD (Sydney 1)
-    - syd1
-- SY2 (Sydney 2)
-    - syd2
 
 The list of available campuses will depend on your geographical location, and on the RIR of the IP. Below are listed all IP campuses where we plan to launch the BYOIP product. However, note that not all campuses may be supported at launch:
 
 |**Customer IPs' RIR is:**|**ARIN**|**RIPE**|
 |---|---|---|
-|**Available campuses** |BHS<br>SGP<br>SYD<br>SY2|RBX<br>GRA<br>SBG<br>WAW<br>LIM<br>ERI|
+|**Available campuses** |BHS<br>SGP|RBX<br>GRA<br>SBG<br>WAW<br>LIM<br>ERI|
 
 ### You must prove ownership of the IP range <a name="proveownershipip"></a>
 
