@@ -20,11 +20,11 @@ The OVHcloud Managed Kubernetes service provides you Kubernetes clusters without
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/es-es/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=es)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=es), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu and click on `Create a cluster`{.action}.
 
@@ -70,22 +70,22 @@ In the next step, choose the appropriate billing mode (monthly or hourly). You c
 > [!primary]
 > By enabling anti-affinity, current and future nodes will be launched on different hypervisors (physical servers), guaranteeing higher fault tolerance. Anti-affinity node pools can only include up to 5 nodes.
 >
-> Moreover, if you choose monthly for the billing method, it will not be possible to change later from monthly to hourly, but the contrary is possible. 
+> Moreover, if you choose the monthly billing method, you cannot change later from monthly to hourly. A change is only possible the other way around.
 > 
 
-Finally, enter a name for your cluster.
+Enter a name for your cluster.
 
 ![Enter a name for your cluster](images/creating-a-cluster9.png){.thumbnail}
 
-And click the `Send`{.action} button.
+Finally, click the `Send`{.action} button.
 
 The cluster creation is now in progress. It should be available within a few minutes in your OVHcloud Control Panel.
 
-## Warning
+### Warning
 
-After a cluster is created, you could not change anymore:
-- the region
-- the private network ID
+After a cluster is created, you can no longer change:<br>
+\-  The region.<br>
+\-  The private network ID.
 
 ## Go further
 
