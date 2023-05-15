@@ -6,7 +6,7 @@ updated: 2023-05-11
 
 ## Objective
 
-**This guides explains how to create, configure and activate a static website hosted in a S3 bucket.**
+**This guide explains how to create, configure and activate a static website hosted in a S3 bucket.**
 
 ## Requirements
 
