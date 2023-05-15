@@ -63,8 +63,8 @@ L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de sig
     - [Qu'est-ce qu'un sélecteur DKIM ?](#selector)
 - [Configurer le DKIM pour une offre e-mail Exchange ou E-mail Pro OVHcloud](#internal-dkim)
     - [Configuration complète du DKIM](#firststep)
-      -[Pour Exchange](#confex)
-      -[Pour E-mail Pro](#confemp)
+      - [Pour Exchange](#confex)
+      - [ Pour E-mail Pro](#confemp)
     - [Les différents états du DKIM](#status)
     - [Activer ou changer un sélecteur DKIM](#enable-switch)
     - [Désactiver et supprimer le DKIM](#disable-delete)
@@ -140,7 +140,9 @@ Le destinataire **recipient@otherdomain.ovh** pourra déchiffrer cette signature
 
 ### Configurer le DKIM pour une offre e-mail Exchange ou E-mail Pro OVHcloud <a name="internal-dkim"></a>
 
-Pour configurer votre DKIM, vous devez d'abord récupérer la référence de votre plateforme Exchange ou E-mail Pro. Cliquez sur l'onglet ci-dessous correspondant à votre offre.
+Pour configurer votre DKIM, vous devez d'abord récupérer la référence de votre plateforme Exchange ou E-mail Pro. 
+
+Cliquez sur l'onglet ci-dessous correspondant à votre offre.
 
 > [!tabs]
 > **Exchange**
@@ -386,7 +388,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> > @api {GET} /email/pro/{service}/domain/{domainName}/dkim/{selectorName}
 >> >
 >>
->> - `service`: saisissez le nom de votre plateforme E-mail Pro se présentant sous la forme « emailpro-zz111111-1 » . <br>
+>> - `service`: saisissez le nom de votre plateforme E-mail Pro se présentant sous la forme « emailpro-zz111111-1 » .
 >> - `selectorName` : saisissez le nom du sélecteur que vous avez créé à l'étape précédente.
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme E-mail Proe sur lequel vous souhaitez configurer le DKIM.
 >>
@@ -443,9 +445,8 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> > @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
 >>
->> - `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ».
+>> - `service`: saisissez le nom de votre plateforme E-mail Pro se présentant sous la forme « emailpro-zz111111-1 » .
 >> - `selectorName` : saisissez le nom du sélecteur que vous avez créé.
->> - `exchangeService`: saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ».
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange sur lequel vous souhaitez activer le DKIM.
 >>
 >> *Exemple de résultat :*
