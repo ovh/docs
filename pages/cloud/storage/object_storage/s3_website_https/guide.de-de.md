@@ -1,7 +1,9 @@
 ---
-title: Object Storage - Enabling HTTPS on an S3 static website using a custom domain
+title: Object Storage - Aktivieren von HTTPS auf einer statischen S3-Website unter Verwendung einer benutzerdefinierten Domäne (EN)
 excerpt: Learn how to configure your website and the OVHcloud Load Balancer to enable HTTPS
 updated: 2023-05-15
+routes:
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-storage-s3-static-website-https?id=kb_article_view&sysparm_article=KB0058057'
 ---
 
 ## Objective
@@ -19,11 +21,11 @@ However, OVHcloud Object Storage S3 static website hosting does not support HTTP
 
 The following are the prerequisites to have in order to enable https:
 
-- An [OVHcloud Load Balancer](https://www.ovhcloud.com/en-gb/network/load-balancer/) which will serve the role of an SSL gateway and can offer protection against DDOS attacks.
-- A registered [domain name](https://www.ovhcloud.com/en-gb/domains/).
+- An [OVHcloud Load Balancer](https://www.ovhcloud.com/de/network/load-balancer/) which will serve the role of an SSL gateway and can offer protection against DDOS attacks.
+- A registered [domain name](https://www.ovhcloud.com/de/domains/).
 - You need to order a TLS certificate associated with your domain name at OVHcloud (optional if you already have a trusted TLS certificate associated with your domain name).
 - You have to [enable web hosting on your S3 bucket](/pages/cloud/storage/object_storage/s3_website).
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## Instructions
 
@@ -31,7 +33,7 @@ The following are the prerequisites to have in order to enable https:
 
 #### Step 1.1 - Add your certificate
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Bare Metal Cloud`{.action} section and click `Load Balancer`{.action}.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), go to the `Bare Metal Cloud`{.action} section and click `Load Balancer`{.action}.
 
 Select your Load Balancer from the list, click the `SSL certificates`{.action} tab then click `Add an SSL certificate`{.action}.
 

@@ -19,11 +19,11 @@ However, OVHcloud Object Storage S3 static website hosting does not support HTTP
 
 The following are the prerequisites to have in order to enable https:
 
-- An [OVHcloud Load Balancer](https://www.ovhcloud.com/en-gb/network/load-balancer/) which will serve the role of an SSL gateway and can offer protection against DDOS attacks.
-- A registered [domain name](https://www.ovhcloud.com/en-gb/domains/).
+- An [OVHcloud Load Balancer](https://www.ovhcloud.com/en-au/network/load-balancer/) which will serve the role of an SSL gateway and can offer protection against DDOS attacks.
+- A registered [domain name](https://www.ovhcloud.com/en-au/domains/).
 - You need to order a TLS certificate associated with your domain name at OVHcloud (optional if you already have a trusted TLS certificate associated with your domain name).
 - You have to [enable web hosting on your S3 bucket](/pages/cloud/storage/object_storage/s3_website).
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
 
 ## Instructions
 
@@ -31,7 +31,7 @@ The following are the prerequisites to have in order to enable https:
 
 #### Step 1.1 - Add your certificate
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Bare Metal Cloud`{.action} section and click `Load Balancer`{.action}.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Bare Metal Cloud`{.action} section and click `Load Balancer`{.action}.
 
 Select your Load Balancer from the list, click the `SSL certificates`{.action} tab then click `Add an SSL certificate`{.action}.
 
