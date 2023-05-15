@@ -17,13 +17,13 @@ We will launch a flow in Prefect which will simulate an AI Training job in a Pub
 
 ## AI pipeline overview
 
-As a quick overview, hare are the main flows and steps:
+As a quick overview, here are the main flows and steps:
 
 1. Create a new S3 bucket (object storage) and upload data in it.
 2. Run an AI Training job linked to this data, and train a previously built model.
-3. Once the job is over, receive a notification via email.
+3. Once the job is over, you receive a notification via email.
 
-The used model will be classic a **PyTorch** model doing image classification. If you want to have some details about this model, feel free to look at [our tutorial](https://docs.ovh.com/gb/en/publiccloud/ai/training/tuto-train-first-ml-model/). The AI pipeline can be represented as follow:
+The used model will be classic a **PyTorch** model doing image classification. If you want to have some details about this model, feel free to look at [our tutorial](https://docs.ovh.com/gb/en/publiccloud/ai/training/tuto-train-first-ml-model/). The AI pipeline can be represented as follows:
 
 ![image](images/flows_email_job.png){.thumbnail}
 
@@ -33,7 +33,7 @@ The used model will be classic a **PyTorch** model doing image classification. I
 - A coding environment with Prefect configured. See this [tutorial](Getting-started)
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/)
-- A S3 data store configured (you can do this easily with the cli : `ovhai data store ls`. If you never done this before, you can check [our tutorial](/pages/platform/ai/gi_08_s3_compliance)
+- A S3 data store configured (you can do this easily with cli: `ovhai data store ls`. If you have never done this before, you can check [our tutorial](/pages/platform/ai/gi_08_s3_compliance)
 
 ## Instructions
 
@@ -41,24 +41,24 @@ The used model will be classic a **PyTorch** model doing image classification. I
 
 Object storage is the most common and powerful solution to easily store data. OVHcloud object storage offers are natevily compliant with S3 protocol.
 
-Here, we will first generate credentials allowing us to manage S3 buckets and data over API. 
+First, we will generate credentials allowing us to manage S3 buckets and data over API. 
 Follow our [S3 official documentaiton for credentials here](https://docs.ovh.com/gb/en/storage/object-storage/s3/identity-and-access-management/). 
 Keep the access key and the secret key, we will need them later. 
 
-Ok, now let's synchronize our S3 credentials with the boto3 client. To do this, we have to create a folder and two files in it. To configurate the boto3 client, I suggest you to follow this part of the [tutorial](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage#configuration). Once the two files are created and you fill them with your credentials, we can start coding and create our S3 object storage with a Prefect flow !
+Next, let's synchronize our S3 credentials with the boto3 client. To do this, we have to create a folder and two files in it. To configurate the boto3 client, we recommend following this [part](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage#configuration) of the tutorial. Once the two files are created and you have filled them with your credentials, we can start coding and create our S3 object storage with a Prefect flow.
 
-To create a S3 object storage, we must provide With the [SDK OVHcloud](https://github.com/ovh/python-ovh), we can easily communicate with the OVHcloud's API. To interact with S3 object container, we must use a S3 protocol. OVHcloud don't provide this protocol yet but The [boto3 library](https://github.com/boto/boto3) provides it. The boto3 SDK is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python, which allows Python developers to write software that makes use of services like S3 containers. It provides a low-level interface to many of the services, as well as higher-level abstractions that make it easier to work with those services. 
+To create an S3 object storage, we must provide With the [SDK OVHcloud](https://github.com/ovh/python-ovh), we can easily communicate with the OVHcloud's API. To interact with an S3 object container, we must use an S3 protocol. OVHcloud does not provide this protocol yet, but [The boto3 library](https://github.com/boto/boto3) does. The boto3 SDK is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python, which allows Python developers to write software that makes use of services like S3 containers. It provides a low-level interface to many of the services, as well as higher-level abstractions that facilitate working with these services. 
 
-We need some credentials to use this protocol. You can get your credentials as S3 users. You can create them on the OVHcloud control panel, in your public cloud project in the object storage tab. If you want to know more about this credentials, 
+We require certain credentials to use this protocol. You can get these credentials as S3 users. You can create them in the OVHcloud control panel, go to your public cloud project and open the object storage tab. To know more about these credentials, consult this [guide](/pages/cloud/storage/object_storage/s3_identity_access_management).
 
 
 ### Create environments variables inside our Prefect Cloud workspace. 
 
-Before starting our flows, a best practice is to use environments variables, avoiding hard-coded and unsafe parameters. Instead of storing them in a `.env` file, we can do this directly on the prefect cloud UI. In Prefect, variables enable you to store and reuse non-sensitive bits of data, such as configuration information. Variables are named, mutable string values, much like environment variables. Variables are scoped to a Prefect Server instance or a single workspace in Prefect Cloud. To find more information, you can go directly on their [official website](https://docs.prefect.io/latest/concepts/variables/). 
+Before starting our flows, a best practice is to use environments variables, avoiding hard-coded and unsafe parameters. Instead of storing them in a `.env` file, we can do this directly on the Prefect cloud UI. In Prefect, variables enable you to store and reuse non-sensitive bits of data, such as configuration information. Variables are named, mutable string values, much like environment variables. Variables are scoped to a Prefect Server instance or a single workspace in Prefect Cloud. For more information, you can consult their [official website](https://docs.prefect.io/latest/concepts/variables/) directly. 
 
-For this pipeline, we will create 9 variables. Most of them are for your S3 access key or also your credentials for the OVHcloud API. 
+For this pipeline, we will create 9 variables. Most of them are for your S3 access key or your credentials for the OVHcloud API. 
 
-Go to Prefect Cloud interface, and create the 9 variables with their UI. :
+Go to Prefect Cloud interface, and create the 9 variables with their UI:
 
 - app_endpoint = the endpoint of the OVHcloud API. It can be the European endpoint for example. 
 - app_key = your application key to access the OVHcloud API's. 
@@ -70,10 +70,10 @@ Go to Prefect Cloud interface, and create the 9 variables with their UI. :
 - s3_region = the name of the region where your s3 bucket will be store
 - project_uuid = your public cloud project id, you can found it on the url. 
 
-Once your variable are created in the UI, you have to call them on your workspace in python. This will be ensure by a simple function directly provide by the SDK prefect for python. Let's take a look at this code :
+Once your variables are created in the UI, you have to call them on your workspace in python. This will be ensured by a simple function directly provide by the SDK Prefect for python. Let's take a look at this code:
 
 ```python
-# Get the variables from your environment in prefect cloud  :
+# Get the variables from your environment in Prefect cloud:
 appEndpoint = variables.get("app_endpoint", default="<your-app-endpoint>")
 applicationKey = variables.get("app_key", default="<your-app-key>")
 applicationSecret = variables.get("app_secret", default="<your-application-secret")
@@ -88,9 +88,9 @@ projectUuid = variables.get("project_uiid", default="<your-project-uuid>")
 
 A good practice is to split your code with flows and tasks. Flows can call tasks of subflows, and tasks should represent a single logical step of your workflow.
 
-Of course, putting all of our code in a single flow function with a no-name flow will be happily run by Prefect, but organizing our workflow code into smaller flow and task units let you take advantage of Prefect features like retries, more granular visibility into runtime state, the ability to determine final state regardless of individual task state, and more. To easily name your flows and tasks, we can create two functions who will take as parameters your username (chose it randomly, for this tutorial we will use `OVHcloud`). This username is defined as a prefect variable (directly via the UI). 
+Of course, putting all of our code in a single flow function with a no-name flow will be happily run by Prefect, but organizing our workflow code into a smaller flow and task units allows you to take advantage of Prefect features such as retries, more granular visibility into runtime state, the ability to determine the final state regardless of individual task state, and more. To easily name your flows and tasks, we can create two functions that will take as parameters your user name (chosen at random, for this tutorial we will use `OVHcloud`). This username is defined as a Prefect variable (directly via the UI). 
 
-More information about tasks and flows can be found [in Prefect official documentation](https://docs.prefect.io/latest/concepts/flows/). 
+More information about tasks and flows can be found in the [Prefect official documentation](https://docs.prefect.io/latest/concepts/flows/). 
  
 ### Create a first flow for uploading data in S3 bucket
 
@@ -116,10 +116,10 @@ def init_s3(username):
 
 > [!primary]
 >
-> The **endpoint_url** should look something like this : https://s3.gra.io.cloud.ovh.net/. In this case, your region name is `gra`. The access and secret key is your credentials, created them in the previous steps.  
+> The **endpoint_url** should be similar to this: https://s3.gra.io.cloud.ovh.net/. In this case, your region name is `gra`. The access key and secret key are your credentials, created in the previous steps.
 >
  
-Now, let's create another task to create an S3 bucket. For this task, we will need a name for our bucket. To name an S3 object storage, you need to provide a unique object key which serves as the identifier for the object. The object key consists of the bucket name and a unique identifier, separated by a dash (-). To get this unique identifier, you can use a timestamp or [UIID generator](https://www.uuidgenerator.net/). Here is the python code to create our second task:
+Now, let's create another task to create an S3 bucket. For this task, we will need a name for our bucket. To name an S3 object storage, you need to provide a unique object key which serves as the identifier for the object. The object key consists of the bucket name and a unique identifier, separated by a dash (-). To get this unique identifier, you can use a timestamp or [UUID generator](https://www.uuidgenerator.net/). Here is the python code to create our second task:
 
 ```python
 @task(name="create-a-S3-bucket",
@@ -136,10 +136,10 @@ def create_bucket(bucket_name, client, region, username):
 
 > [!warning]
 > 
-> In this task, if there is a Client Error because the credentials are false, the task will return `False`. Thanks to this, we will be able to raise and notify an error later if any.
+> In this task, if there is a Client Error because the credentials are false, the task will return `False`. Thanks to this, we can raise and notify an error later, if necessary.
 >
 
-Now, let's upload our data in the S3 bucket. We will upload some code to create the model and extract our data, a requirements file and a .zip file with all the data to train. The python file and the requirements file can be downloaded on this [git repo](https://github.com/ovh/ai-training-examples/tree/main/jobs/getting-started/train-first-model). The dataset can be found on Kaggle [here](https://www.kaggle.com/datasets/zalando-research/fashionmnist). Let's create this task !
+Now, let's upload our data in the S3 bucket. We will upload some code to create the model and extract our data, a requirements file and a .zip file with all the data to train. The python file and the requirements file can be downloaded on this [git repo](https://github.com/ovh/ai-training-examples/tree/main/jobs/getting-started/train-first-model). The dataset can be found [here](https://www.kaggle.com/datasets/zalando-research/fashionmnist) on Kaggle. Let's create this task!
 
 ```python
 @task(name="upload-files-in-a-S3-bucket",
@@ -174,7 +174,7 @@ def list_bucket_objects(bucket, client, username):
     pass
 ```
 
-Our four tasks for the first flow has been created. Now, we have to link variables and tasks in the flow:
+Our fourth tasks for the first flow has been created. Now, we have to link variables and tasks in the flow:
 
 ```python
 # Flow to create an S3 bucket and upload files in it
@@ -203,25 +203,26 @@ def create_and_upload_in_S3(username):
 
 > [!warning]
 > 
-> Don't forget to download the data on your local environment. If you don't do it, it can't be uploaded on the S3 object storage. 
+> Don't forget to download the data on your local environment. If you don't, it won't be able to be uploaded to the S3 Object Storage. 
 >
 
 ### Create a second flow to train your machine learning model 
 
-In this flow, we will need a Python client who can connect to the OVHcloud API. This is our first task. If you followed the [getting started tutorial](/pages/platform/integrations/prefect_guide_01_getting_started), you should be able to have this task already. 
+In this flow, we will need a Python client that can connect to the OVHcloud API. This is our first task. If you have followed the [getting started tutorial](/pages/platform/integrations/prefect_guide_01_getting_started), you should already be able to perform this task.
 
-The second task will use the OVHcloud SDK for Python. This library provides a POST method on the url we want from the API. According to the API, we will use this [API call](https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/ai/job~POST) :
+The second task will use the OVHcloud SDK for Python. This library provides a POST method on the url we want from the API. According to the API, we will use this API call:
 
 > [!api]
 >
 > @api {POST}  /cloud/project/{serviceName}/ai/job
 >
 
-To launch a job, we must define some parameters. We can't launch a job without a name and an image. With the OVHcloud SDK parameters are really easy to provide. The method **client.post("url",\*\*job_params)** has two parameters. The first one is the url of the post request. The second one is a JSON object with all of the parameters of your job. If you not sure about how the body of the request is, you can your web browser and launch your job with the OVHcloud control panel as shown below. Control panel is based on OVHcloud API, so in developer mode you will see the provided parameters.
+To launch a job, we must define some parameters. We can't launch a job without a name and an image. With the OVHcloud SDK, parameters are very easy to provide. 
+The method **client.post("url",\*\*job_params)** has two parameters. The first one is the url of the post request and the second one is a JSON object with all of the parameters of your job. If you are not sure what the body of the request looks like, you can use your web browser and launch your job with the OVHcloud control panel as shown below. The OVHcloud control panel is based on OVHcloud API, so in developer mode you will see the provided parameters.
 
 ![image](images/button_job.png){.thumbnail}
 
-Here is our Python code :
+Here is our Python code:
 
 ```python
 # Define the task to launch a job
@@ -259,14 +260,14 @@ def launch_job(client, bucket_name, region_job, alias_s3, docker_image, name_job
     return (result)
 ``` 
 
-Once the job is launched, the next step is to know if the job is done or failed. Thanks to the API, when you do the post request of your job, you retrieve all of the infos  for your job. In our example, we will just get the `id` and with this `id` we will do a get request every minute to get the state of the training job. Here is the reference to the API :
+Once the job is launched, the next step is to find out if the job was completed or if it failed. Thanks to the API, when you do the `POST` request of your job, you retrieve all of the information for your job. In our example, we will get the `id` and with this `id` we will do a `GET` request every minute to get the state of the training job. Here is the reference to the API:
 
 > [!api]
 >
 > @api {GET}  /cloud/project/{serviceName}/ai/job/{jobId}
 >
 
-Here is the task who handled the check of the end of the job:
+The task that ensured the verification of the end of the job:
 
 ```python
 @task(name="wait-for-the-state-finish-of-the-job",
@@ -288,10 +289,10 @@ def wait_state(client, id, username):
 
 ### Create a last flow to send an email notification
 
-As a last part, we will send an email to notify that our job is over.
-Create a flow with the parameters you want to send. Before create the task, don't forget to create an `Email Server Credentials` block directly on the prefect cloud UI. More information for this can be found [here](https://prefecthq.github.io/prefect-email/). You can also do this with Python code. This configuration of the email allows Prefect to send email with the credentials of one of your address mail.
+Finally, we will send an email to indicate that our job is complete.
+Create a flow with the parameters you want to send. Before creating the task, do not forget to create an `Email Server Credentials` block directly on the Prefect cloud UI. More information on this can be found [here](https://prefecthq.github.io/prefect-email/). You can also do this with Python code. This email configuration allows Prefect to send emails with the credentials of one of your email addresses.
 
-Now, let's define the last flow ! 
+Now, let's define the last flow: 
 
 ```python
 @flow(name="send-email-with-details-of-the-job",
@@ -317,7 +318,9 @@ The three flows are now defined. Let's run them!
 
 ### Run the three flows
 
-Before running the flow, make sure you install prefect-email. You should already have done that if you followed the tutorial to create the `Email Server Credentials` block. The last thing to do is launch the function which prefect will understand them as flow or task. Let's do this !
+Before running the flows, make sure you have installed the Prefect-email. You should have already done this if you followed the tutorial to create the `Email Server Credentials` block. 
+
+The last thing to do is launch the function which Prefect will understand them as flow or task. Let's do this!
 
 ```python
 # Run the flow for the data container and data
@@ -335,21 +338,21 @@ email(state_job=status,
       username=myUsername)
 ```
 
-Open a terminal, launch the command `python3 <name-of-your-file.py` and wait until it's done. You should have received an email like this: 
+Open a terminal, launch the command `python3 <name-of-your-file.py` and wait until it's done. You should receive an email like this: 
 
 ![image](images/email_example.png){.thumbnail}
 
 ### Monitor your pipeline in Prefect Cloud UI
 
-Now, let's see on the Prefect Cloud UI how the situation is going.
+Now, let's see on the Prefect Cloud UI how the situation evolves.
 
-The "Flow Runs" tab in the Prefect Cloud UI displays information about the executions of your Prefect flows. You can find the name of the flows, the state of the flows, the tasks run inside the flows and much more information about your running or past flows. Overall, the Flow Runs tab provides a detailed overview of the execution history of your Prefect flows, allowing you to monitor performance, troubleshoot issues, and make improvements to your workflows. Here is an example : 
+The "Flow Runs" tab in the Prefect Cloud UI displays information about the executions of your Prefect flows. You can find the name of the flows, the state of the flows, the tasks executed inside the flows and many other information about your current or past flows. Overall, the "Flow Runs" tab provides a detailed overview of the execution history of your Prefect flows, allowing you to monitor performance, troubleshoot issues, and make improvements to your workflows. Here is an example: 
 
 ![image](images/flow_run_example.png){.thumbnail}
 
-I choose to display the launch of the job, the second flow of this pipeline. We can see our three task display on the graph. We also see the order to execute them. Below the graph, you can found some tab to see the details of your tasks or the results of each task.
+We choose to display the launch of the job, the second flow in this pipeline. We can see our three tasks displayed on the graph. We also see the order in which they should be executed. Below the graph, you can find tabs to see the details of your tasks or the results of each task.
 
-You also have the possibility to see the steps of your flows directly in the console but it is less precise than directly on the prefect cloud UI.   
+You also have the possibility to see the steps of your flows directly in the console but it is less precise than directly on the Prefect cloud UI.   
 
 ## Go further
  
