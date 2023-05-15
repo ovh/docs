@@ -107,9 +107,9 @@ You can also start this app with the `ovhai` [CLI](/pages/platform/ai/cli_10_how
 ```console
 ovhai app run \
   	--gpu 1 \
-	  --default-http-port 8080 \
-	  --label <name=value> \
-	  <lettria_image_name>
+	--default-http-port 8080 \
+	--label <name=value> \
+	<lettria_image_name>
 ```
 
 > [!primary]
