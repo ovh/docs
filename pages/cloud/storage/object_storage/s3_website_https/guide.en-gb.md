@@ -129,7 +129,7 @@ Add 2 frontends:
 
 Once you created and configured all the ressources, do not forget to click the `Apply configuration`{.action} button to apply all the changes to the Load Balancer.
 
-![apply LB configuration](images/LB-apply-conf.png){.thumbnail}
+![apply LB configuration](images/LB-apply-conf.PNG){.thumbnail}
 
 ### Step 2: Configure your DNS
 
@@ -153,7 +153,7 @@ Edit the two A records to add the public IP address of your Load Balancer.
 > [!warning]
 > You can find the public IP address of your Load Balancer on the home page of the `Load Balancer`{.action} section in the OVHcloud Control Panel.
 >
-> ![DNS configuration](images/DNS-5.PNG){.thumbnail}
+> ![DNS configuration](images/DNS-05.png){.thumbnail}
 
 ### Step 3: Test your website
 
