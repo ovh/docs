@@ -4,10 +4,10 @@ slug: bring-your-own-ip
 excerpt: Find out how to easily import your own IP as Additional IP to your OVHcloud account
 section: Bring Your Own IP
 order: 1
-updated: 2023-04-24
+updated: 2023-05-15
 ---
 
-**Last updated 24th April 2023**
+**Last updated 15th May 2023**
 
 ## Objective
 

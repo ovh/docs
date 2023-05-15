@@ -4,10 +4,10 @@ excerpt: Découvrez comment importer facilement votre propre adresse IP comme Ad
 slug: bring-your-own-ip
 section: Bring Your Own IP
 order: 1
-updated: 2023-04-24
+updated: 2023-05-15
 ---
 
-**Dernière mise à jour le 24/04/2023**
+**Dernière mise à jour le 15/05/2023**
 
 ## Objectif
 
