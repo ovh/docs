@@ -249,23 +249,55 @@ To obtain the total cost of a Lettria app started with AI Deploy, add the two am
 total-price = basic-app-hour-price + lettria-model-price-licensing
 ```
 
+![billing](images/lettria-ai-deploy-billing.png){.thumbnail}
+
 ### Examples
 
-#### Example 1: a GPU app with 2 replicas for 10 hours then deleted
+#### Example 1: 1 GPU app with for 10 hours then deleted
 
 Deploy one Lettria app with AI Deploy, with 1 GPU and we keep it running for 10 hours then we **delete it**.
 
-We receive thousands of calls: it's included (no pay per call provided, you pay running compute).
+*You receive thousands of calls: it's included (no pay per call provided, you pay running compute).*
 
 - compute resources per replica: 1 x GPU NVIDIA V100s (1,93€ /hour /gpu)
 - scaling: fixed
-- replicas: 2
+- replicas: 1
 - amount of calls: unlimited
 - duration: 10 hours then deleted
+- lettria service: 1 x Lettria service for GPU usage (2,50€ /hour /gpu)
 
-Price calculation for compute: 10 (hours) x 1 (GPU) x 2 (replica) x 1,93€ (price /hour /gpu) = **39 euros**
+Price calculation for **compute**: 1,93€ (price /hour /gpu) x 1 (gpu) x 1 (replica) x 10 (hours) = `19,30€`
+Price calculation for **Lettria service**: 2,50€ (lettria price /hour /gpu) x 1 (gpu) x 1 (replica) x 10 (hours) = `25,00€`
 
-#### Example 2
+**Total price calculation: `19,30€` + `25,00€` = `44,30€`**
+
+#### Example 2: 2 CPUs and autoscaling
+
+Deploy one Lettria app with 1 CPU, choose autoscaling configuration with 1 replica minimum, and 3 replicas maximum.
+
+*You receive thousands of calls: it's included (no pay per call provided, you pay running compute).*
+
+- compute resources per replica : 2 x CPUs (0,03€ /hour /cpu)
+- scaling : auto-scaling, from 1 to 3 replicas
+- amount of calls : unlimited
+- duration: 5 hours with 1 replica running, then a peak with 1 hour at 3 replicas, then stopped and deleted.
+- lettria service: 2 x Lettria service for CPU usage (1,50€ /hour /cpu)
+
+Price calculation for **compute** (it will vary over time due to auto-scaling):
+0,03€ (price /hour /cpu) x 2 (cpus) x 1 (replica) x 5 (hours) = `0,30€`
++
+0,03€ (price /hour /cpu) x 2 (cpus) x 3 (replicas) x 1 (hour) = `0,18€`
+
+Total for **compute** is `0,48€`.
+
+Price calculation for **Lettria service** (it will vary over time due to auto-scaling):
+1,50€ (lettria price /hour /cpu) x 2 (cpus) x 1 (replica) x 5 (hours) = `15,00€`
++
+1,50€ (lettria price /hour /cpu) x 2 (cpus) x 3 (replicas) x 1 (hour) = `9,00€`
+
+Total for **Lettria service** is `24,00€`.
+
+**Total price calculation: `0,48€` + `24,00€` = `24,48€`**
 
 ## Feedback
 
