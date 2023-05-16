@@ -2,6 +2,7 @@
 title: Introduction to Logs Data Platform
 slug: logs-start-introduction
 order: 1
+excerpt: Discover what Logs Data Platform is and how it works.
 section: Presentation 
 ---
 

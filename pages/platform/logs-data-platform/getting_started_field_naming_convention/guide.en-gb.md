@@ -1,5 +1,5 @@
 ---
-title: The field naming convention
+title: Field naming convention
 slug: logs-data-platform-field-naming-conventions
 order: 2
 section: Get Started

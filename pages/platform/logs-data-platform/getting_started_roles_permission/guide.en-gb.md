@@ -1,5 +1,5 @@
 ---
-title: Roles and permissions
+title: Handling roles and permissions
 slug: logs-data-platform-roles
 order: 8
 excerpt: Manage who can have access to your data and what they can do with them.

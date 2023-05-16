@@ -2,6 +2,7 @@
 title: Mutualized Inputs
 slug: logs-ingestion-inputs-mutualized
 order: 1
+excerpt: Discover what inputs are and how to use them to ingest your logs in Logs Data Platform.
 section: Mutualized Inputs 
 ---
 
