@@ -84,14 +84,7 @@ Si vous ou votre développeur souhaitez avoir accès à ces détails, il vous es
 
 ### Vérifier l'état de la base de données
 
-La base de données passe en état READONLY si elle n'a plus assez d'espace disponible, ce qui peut provoquer des dysfonctionnements au niveau du site.  
-
-Si la base est pleine et qu'elle est en état READONLY, essayez de la nettoyer en supprimant des données non-nécessaires au fonctionnement du site (données de cache, log, soumissions de formulaire, etc.) puis faites un recalcul du quota pour libérer de l'espace.
-
-> [!warning]
->
-> Effectuez toujours une sauvegarde de la base de données avant de supprimer des données.
-> 
+Pour toute erreur 500 pouvant être en lien avec la base de données de votre site web, appuyez-vous sur notre documentation [« Résoudre les erreurs les plus fréquentes liées aux bases de données »](/pages/web/hosting/diagnosis_database_errors).
 
 ### Restaurer votre site à son état antérieur <a name="restore"></a>
 
@@ -110,10 +103,20 @@ Enfin, si l'erreur 500 est apparue suite à une mise à jour de la version PHP d
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Tout sur le fichier .htaccess](../mutualise-tout-sur-le-fichier-htaccess/)
+[Que faire si mon site est inaccessible ?](/pages/web/hosting/diagnostic-website-not-accessible)
 
-[Comment diagnostiquer une page blanche ?](../comment-diagnostiquer-page-blanche/)
+[Que faire en cas d'erreur « Votre connexion n'est pas privée » ?](/pages/web/hosting/diagnostic-not-secured)
 
-[Les codes de reponse d’un serveur HTTP](../mutualise-les-codes-de-reponse-dun-serveur-http/)
+[Que faire en cas de page « Index of » ?](/pages/web/hosting/diagnostic-index-of)
+
+[Que faire en cas de page « 403 forbidden » ?](/pages/web/hosting/diagnostic_403_forbidden)
+
+[Résoudre les erreurs les plus fréquentes liées aux bases de données](/pages/web/hosting/diagnosis_database_errors)
+
+[Que faire en cas d’erreur 500 Internal Server Error ?](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
+
+[Mon site est lent. Que faire ?](/pages/web/hosting/diagnostic_slownesses)
+
+[Résoudre l'erreur « Site non installé »](/pages/web/hosting/multisites_website_not_installed)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
