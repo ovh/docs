@@ -75,7 +75,7 @@ Où `storage_class` est :
 
 > [!primary]
 > Si vous souhaitez utiliser un endpoint personnalisé, vous devrez fournir votre propre nom de domaine.
-> Retrouvez plus d'informations sur les offres de noms de domaine OVHcloud sur [le site OVHcloud](https://www.ovhcloud.com/fr/domains/).
+> Retrouvez plus d'informations sur les offres de noms de domaine OVHcloud sur [le site OVHcloud](https://www.ovhcloud.com/fr-ca/domains/).
 
 > [!warning]
 > - Assurez-vous que la région dans laquelle vous hébergez votre bucket supporte la classe de stockage que vous choisissez. Vous pouvez consulter la liste des classes de stockage prises en charge par région [ici](/pages/cloud/storage/object_storage/s3_location).
