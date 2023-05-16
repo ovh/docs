@@ -82,6 +82,17 @@ Pour des raisons de sécurité, votre site masque les détails éventuels sur l'
 
 Si vous ou votre développeur souhaitez avoir accès à ces détails, il vous est possible, à partir de la formule d’hébergement [pro2014](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), de vous connecter à votre site via une [connexion ssh](../mutualise-le-ssh-sur-les-hebergements-mutualises/).
 
+### Vérifier l'état de la base de données
+
+La base de données passe en état READONLY si elle n'a plus assez d'espace disponible, ce qui peut provoquer des dysfonctionnements au niveau du site.  
+
+Si la base est pleine et qu'elle est en état READONLY, essayez de la nettoyer en supprimant des données non-nécessaires au fonctionnement du site (données de cache, log, soumissions de formulaire, etc.) puis faites un recalcul du quota pour libérer de l'espace.
+
+> [!warning]
+>
+> Effectuez toujours une sauvegarde de la base de données avant de supprimer des données.
+> 
+
 ### Restaurer votre site à son état antérieur <a name="restore"></a>
 
 > [!warning]
