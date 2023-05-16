@@ -19,11 +19,11 @@ Par défaut, le protocole HTTPS n'est pas pris en charge sur un site web statiqu
 
 Voici les prérequis à avoir pour activer le protocole HTTPS :
 
-- Disposer d’un [Load Balancer OVHcloud](https://www.ovhcloud.com/fr/network/load-balancer/), qui jouera le rôle de passerelle SSL et pourra offrir une protection contre les attaques DDOS.
-- Un [nom de domaine](https://www.ovhcloud.com/fr/domains/).
+- Disposer d’un [Load Balancer OVHcloud](https://www.ovhcloud.com/fr-ca/network/load-balancer/), qui jouera le rôle de passerelle SSL et pourra offrir une protection contre les attaques DDOS.
+- Un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/).
 - Commander un certificat TLS associé à votre nom de domaine chez OVHcloud (facultatif si vous disposez déjà d’un certificat TLS de confiance associé à votre nom de domaine).
 - Vous devez [activer l'hébergement sur votre bucket S3](/pages/cloud/storage/object_storage/s3_website).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 ## En pratique
 
@@ -31,7 +31,7 @@ Voici les prérequis à avoir pour activer le protocole HTTPS :
 
 #### Étape 1.1 - Ajouter votre certificat
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la section `Bare Metal Cloud`{.action} et cliquez sur `Load Balancer`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez-vous dans la section `Bare Metal Cloud`{.action} et cliquez sur `Load Balancer`{.action}.
 
 Sélectionnez votre Load Balancer dans la liste, cliquez sur l'onglet `Certificats SSL`{.action} puis sur `Ajouter un certificat SSL`{.action}.
 

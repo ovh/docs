@@ -108,20 +108,20 @@ In the Load Balancer section of the OVHcloud Control Panel, click the `Front-end
 Add 2 frontends:
 
 - One frontend whose sole purpose is to handle all incoming HTTP requests and redirect them to your domain name in HTTPS
-    * name (optional)
-    * protocol: HTTP
-    * port: 80
-    * datacenter: all
-    * default server cluster: none
-    * advanced settings > HTTP Redirection: `https://<your_domain_name>`
+    - name (optional)
+    - protocol: HTTP
+    - port: 80
+    - datacenter: all
+    - default server cluster: none
+    - advanced settings > HTTP Redirection: `https://<your_domain_name>`
 - One frontend that will handle all incoming HTTPS requests and perform the role of the SSL gateway
-    * name (optional)
-    * protocol: HTTPS
-    * port: 443
-    * datacenter: the region where your bucket sits
-    * default server cluster: the server cluster previously created
-    * certificate: the certificate that you created
-    * advanced settings > HTTP Header: Host `<default_website_url>` in the form `<bucket>.s3-website.<region>.io.cloud.ovh.net`
+    - name (optional)
+    - protocol: HTTPS
+    - port: 443
+    - datacenter: the region where your bucket sits
+    - default server cluster: the server cluster previously created
+    - certificate: the certificate that you created
+    - advanced settings > HTTP Header: Host `<default_website_url>` in the form `<bucket>.s3-website.<region>.io.cloud.ovh.net`
 
 ![frontend configuration](images/front-2.PNG){.thumbnail}
 
