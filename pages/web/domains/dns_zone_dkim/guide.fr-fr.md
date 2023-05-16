@@ -563,7 +563,7 @@ Sélectionnez l'offre e-mail concerné dans les onglets suivant:
 >
 > Lors d'une rotation de sélecteur DKIM, vous pouvez directement activer le deuxième sélecteur que vous avez créé afin de basculer dessus, tout en conservant le premier sélecteur qui restera actif le temps que tous les e-mails délivrés avec celui-ci soient bien analysés par leur destinataire.
 
- #### 4.Désactiver et supprimer le DKIM <a name="enable-switch"></a>
+#### 4.Désactiver et supprimer le DKIM <a name="enable-switch"></a>
 
 > [!warning]
 >
