@@ -1,9 +1,6 @@
 ---
 title: Prefect - Getting Started
-slug: prefect/getting-started
 excerpt: Discover Prefect and configure it for your first workflows
-section: Prefect
-order: 01
 updated: 2024-05-16
 ---
 
