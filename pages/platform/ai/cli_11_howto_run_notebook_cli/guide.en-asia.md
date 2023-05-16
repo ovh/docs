@@ -1,6 +1,6 @@
 ---
 title: CLI - Launch an AI notebook
-slug: cli/getting-started-cli
+slug: cli/run-notebook-cli
 excerpt: Learn how to run an AI Notebook using the CLI
 section: Command Line Interface
 order: 201
