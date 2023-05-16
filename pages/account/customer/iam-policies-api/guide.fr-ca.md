@@ -4,10 +4,10 @@ slug: iam-policies-api
 excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs d'un compte OVHcloud"
 section: 'Utilisation avancée'
 order: 03
-updated: 2023-03-07
+updated: 2023-05-16
 ---
 
-**Dernière mise à jour le 07/03/2023**
+**Dernière mise à jour le 16/05/2023**
 
 > [!warning]
 >
