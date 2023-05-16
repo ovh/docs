@@ -152,7 +152,7 @@ Edit the two A records to add the public IP address of your Load Balancer.
 
 ![DNS configuration](images/DNS-04.png){.thumbnail}
 
-> [!warning]
+> [!primary]
 > You can find the public IP address of your Load Balancer on the home page of the `Load Balancer`{.action} section in the OVHcloud Control Panel.
 >
 > ![DNS configuration](images/DNS-05.png){.thumbnail}
