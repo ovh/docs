@@ -134,7 +134,7 @@ Once you created and configured all the ressources, do not forget to click the `
 ### Step 2: Configure your DNS
 
 > [!warning]
-> This section is relevant only if your your domain name is registered at OVHcloud. If you have an external domain name, please check with your provider.
+> This section is relevant only if your domain name is registered at OVHcloud. If you have an external domain name, please check with your provider.
 
 CLick the `Web Cloud`{.action} tab of your OVHcloud Control Panel and select your domain name from the `Domain names`{.action} section. 
 

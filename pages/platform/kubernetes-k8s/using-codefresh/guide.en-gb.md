@@ -173,7 +173,7 @@ Then click on *Save* to save your cluster on your Codefresh Dashboard.
 
 ### And now?
 
-Now you can follow [Codefresh official tutorial](https://codefresh.io/docs/docs/getting-started/deployment-to-kubernetes-quick-start-guide/){.external} to deploy a Docker image to a Kubernetes cluster and also how to to setup an automated pipeline to automatically redeploy it when the source code changes.
+Now you can follow [Codefresh official tutorial](https://codefresh.io/docs/docs/getting-started/deployment-to-kubernetes-quick-start-guide/){.external} to deploy a Docker image to a Kubernetes cluster and also how to setup an automated pipeline to automatically redeploy it when the source code changes.
 
 ![Connect an OVH Kubernetes cluster to Codefresh dashboard](images/using-codefresh-08.jpg){.thumbnail}
 
