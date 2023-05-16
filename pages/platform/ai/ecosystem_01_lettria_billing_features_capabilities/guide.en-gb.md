@@ -93,7 +93,7 @@ To launch your Lettria app from the UI, you have to fill in some information:
 ![lettria](images/lettria-emotions-image.png){.thumbnail}
 
 - **Resources** - *we advise you to use 1 GPU*
-- **Configure your app** - *add an label if you have chosen a restricted access*
+- **Configure your app** - *add a label if you have chosen a restricted access*
 
 > [!primary]
 >
@@ -191,33 +191,84 @@ The pricing of Lettria differs slightly from the classic AI Deploy offer. In ord
 
 > [!primary]
 >
-> The total cost of your app will include the price of the resources you have selected as well as the partner's model licence price.
+> The total cost of your app will include the price of the resources you have selected as well as the partner's model license price.
 >
 
-### How to calculate the total cost of a Lettria app?**
+### Estimate the cost of a Lettria app
+
+**How to calculate the total cost of a Lettria app?**
 
 You will need two items:
 - The price of the **resources selected with AI Deploy**
 - The price of the **Lettria model licenses**
 
-#### Selected resources price
+#### Resources price
 
-To learn more about the basic cost of an app launched with AI Deploy, please refer to this documentation.
+The first step consists in calculating the price of an AI Deploy app according to the computing resources chosen.
 
+> [!primary]
+>
+> To launch your app you can choose between two types of resources: `CPU` or `GPU`. The price will therefore vary depending on the resource chosen.
+> For more information on pricing, click [here](https://www.ovhcloud.com/en-gb/public-cloud/prices/).
+>
+
+To calculate the price of an app per hour, you have two methods of calculation.
+
+```console
 basic-app-hour-price = ai-deploy-price-<resource-type>-minute x 60 x nb-resources x nb-replicas
-
+```
 OR
 
+```console
 basic-app-hour-price = price-<resource-type>-hour x nb-resources x nb-replicas
+```
+
+To learn more about the basic cost of an app launched with AI Deploy, please refer to this [documentation](/pages/platform/ai/deploy_guide_06_billing_concept).
 
 #### Lettria model licenses price
 
+The second step consists in calculating the cost of one of the Lettria partner service according to the chosen resource.
+
+To calculate the price of a Lettria service per hour, you have two methods of calculation.
+
+```console
 lettria-model-price-licensing = lettria-price-<resource-type>-minute x 60 x nb-resources x nb-replicas
-
+```
+    
 OR
-
+    
+```console
 lettria-model-price-licensing = lettria-price-<resource-type>-hour x nb-resources x nb-replicas
+```
 
 #### Total price
 
+To obtain the total cost of a Lettria app started with AI Deploy, add the two amounts from the previous calculations.
+
+```console
 total-price = basic-app-hour-price + lettria-model-price-licensing
+```
+
+### Examples
+
+#### Example 1: a GPU app with 2 replicas for 10 hours then deleted
+
+Deploy one Lettria app with AI Deploy, with 1 GPU and we keep it running for 10 hours then we **delete it**.
+
+We receive thousands of calls: it's included (no pay per call provided, you pay running compute).
+
+- compute resources per replica: 1 x GPU NVIDIA V100s (1,93€ /hour /gpu)
+- scaling: fixed
+- replicas: 2
+- amount of calls: unlimited
+- duration: 10 hours then deleted
+
+Price calculation for compute: 10 (hours) x 1 (GPU) x 2 (replica) x 1,93€ (price /hour /gpu) = **39 euros**
+
+#### Example 2
+
+## Feedback
+
+Please send us your questions, feedback and suggestions to improve the service:
+
+- On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
