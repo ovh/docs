@@ -235,7 +235,7 @@ Sie können mit UFW noch weitere Maßnahmen umsetzen, beispielsweise um DOS-Angr
 
 ### Schritt 6: DNS-Konfiguration (optional)
 
-Um über einen Domainnamen auf Ihre Webserver-Installation zuzugreifen, muss dieser mit Ihrem Dienst verbunden werden. Dazu müssen Sie die DNS-Zone bearbeiten, auf die Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zugreifen können, vorausgesetzt OVHcloud ist Ihr Domain-Registrar **und** der Domainname verwendet die OVHcloud DNS-Server.
+Um über einen Domainnamen auf Ihre Webserver-Installation zuzugreifen, muss dieser mit Ihrem Dienst verbunden werden. Dazu müssen Sie die DNS-Zone bearbeiten, auf die Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zugreifen können, vorausgesetzt OVHcloud ist Ihr Domain-Registrar **und** der Domainname verwendet die OVHcloud DNS-Server. 
 
 Weitere Informationen finden Sie in der [Anleitung zum Bearbeiten der DNS-Zone](/pages/web/domains/dns_zone_edit). Wenn der Domainname aktuell verwendet wird, konfigurieren Sie DNS erst nachdem Ihre neue Website oder Anwendung bereit ist.
 
@@ -243,7 +243,7 @@ Weitere Informationen finden Sie in der [Anleitung zum Bearbeiten der DNS-Zone](
 
 > [!primary]
 >
-> Um sichere Verbindungen (`https`) herstellen zu können, muss der Webserver über eine Zertifizierungsstelle wie [Let's Encrypt](https://letsencrypt.org/){.external}, die kostenlose Zertifikate anbietet, abgesichert werden. Hierzu muss ein Client-Tool (etwa "Certbot") installiert und Apache entsprechend konfiguriert werden. Ohne diesen Schritt wird Ihre Website oder Anwendung nur unverschlüsselte Anfragen über `http` akzeptieren können.
+> Um sichere Verbindungen (`https`) herstellen zu können, muss der Webserver über eine Zertifizierungsstelle wie [Let's Encrypt](https://letsencrypt.org/){.external}, die kostenlose Zertifikate anbietet, abgesichert werden. Hierzu muss ein Client-Tool ("Certbot" in diesem Beispiel) installiert und Apache entsprechend konfiguriert werden. Ohne diesen Schritt wird Ihre Website oder Anwendung nur unverschlüsselte Anfragen über `http` akzeptieren können.
 > 
 > Alternativ dazu bietet Ihnen OVHcloud die Lösung [SSL Gateway](https://www.ovh.de/ssl-gateway/). Weitere Informationen dazu finden Sie in [unseren Anleitungen](/pages/web/ssl-gateway/order-ssl-gateway).
 > 

@@ -243,7 +243,7 @@ Please refer to our guide on [Editing a DNS zone](/pages/web/domains/dns_zone_ed
 >
 > In order to establish secure connections (`https`), the web server has to be secured via an official Certificate Authority such as "[Let’s Encrypt](https://letsencrypt.org/)" which offers free certificates. You will need to install a client tool (such as "Certbot") and configure Apache accordingly. Without this step, your website or application can only accept unencrypted `http` requests.
 > 
-> As an alternative, OVHcloud offers the solution [SSL Gateway](https://www.ovh.co.uk/ssl-gateway/). Refer to the [guide pages](/pages/web/ssl-gateway/order-ssl-gateway) as well for further information.
+> As an alternative, OVHcloud offers the solution [SSL Gateway](https://www.ovh.com/ca/en/ssl-gateway/). Refer to the [guide pages](/pages/web/ssl-gateway/order-ssl-gateway) as well for further information.
 > 
 
 First make sure that your domain name has the correct records in the DNS zone, i.e. is mapped to the IP address of your server.
