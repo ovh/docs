@@ -571,6 +571,7 @@ Sélectionnez l'offre e-mail concernée dans les onglets suivant:
 
 Sélectionnez l'offre e-mail concernée dans les onglets suivant:
 
+
 > [!tabs]
 > **Exchange**
 >> Si vous souhaitez désactiver le DKIM sans supprimer le sélecteur et sa paire de clés, utilisez l'appel API suivant :
