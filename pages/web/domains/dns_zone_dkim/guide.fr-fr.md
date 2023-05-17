@@ -39,7 +39,7 @@ L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de sig
 
 ## Prérequis
 
-- Disposer d'un accès à la gestion du nom de domaine concerné depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou auprès de votre prestataire de domaine s'il est enregistré en dehors d'OVHcloud .
+- Disposer d'un accès à la gestion du nom de domaine concerné depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou auprès de votre prestataire de domaine s'il est enregistré en dehors d'OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir souscrit une de nos offres [Exchange](https://www.ovhcloud.com/fr/emails/), [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/) ou une offre e-mail hors OVHcloud disposant du DKIM.
 
@@ -563,7 +563,7 @@ Sélectionnez l'offre e-mail concernée dans les onglets suivant:
 >
 > Lors d'une rotation de sélecteur DKIM, vous pouvez directement activer le deuxième sélecteur que vous avez créé afin de basculer dessus, tout en conservant le premier sélecteur qui restera actif le temps que tous les e-mails délivrés avec celui-ci soient bien analysés par leur destinataire.
 
-#### 4.Désactiver et supprimer le DKIM <a name="enable-switch"></a>
+#### Désactiver et supprimer le DKIM <a name="enable-switch"></a>
 
 > [!warning]
 >
