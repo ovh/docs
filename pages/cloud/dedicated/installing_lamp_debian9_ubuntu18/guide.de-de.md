@@ -12,7 +12,7 @@ updated: 2023-05-10
 
 ## Ziel 
 
-Mit der Einrichtung eines Webservers und verwandter Software kann Ihr Cloud Server dynamische Webseiten oder Webanwendungen hosten. Die Installation eines *LAMP Stack* ist ein bewährter Ansatz, um dies mithilfe von Open-Source-Anwendungen zu erreichen. LAMP steht für **L**inux (OS), **A**pache (Webserver), ***M**ariaDB (Datenbankmanagementsystem) und **P**HP (Programmiersprache). 
+Mit der Einrichtung eines Webservers und verwandter Software kann Ihr Cloud Server dynamische Webseiten oder Webanwendungen hosten. Die Installation eines *LAMP Stack* ist ein bewährter Ansatz, um dies mithilfe von Open-Source-Anwendungen zu erreichen. LAMP steht für **L**inux (OS), **A**pache (Webserver), **M**ariaDB (Datenbankmanagementsystem) und **P**HP (Programmiersprache). 
 
 **Dieses Tutorial erklärt, wie Sie einen LAMP Webserver auf Ihrem OVHcloud Dienst installieren.**
 
