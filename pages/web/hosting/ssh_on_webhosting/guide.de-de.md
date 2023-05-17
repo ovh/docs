@@ -23,7 +23,7 @@ Mit OVHcloud Webhosting Angeboten erhalten Sie einen Speicherplatz zum Online-St
 
 > [!warning]
 > 
-> SSH-Zugang zu einem OVHcloud Webhosting ist ab [Pro Hosting](https://www.ovhcloud.com/de/web-hosting/compare/)Angebot möglich.
+> SSH-Zugang zu einem OVHcloud Webhosting ist ab dem Angebot [Pro Hosting](https://www.ovhcloud.com/de/web-hosting/compare/) verfügbar.
 
 ## In der praktischen Anwendung
 
