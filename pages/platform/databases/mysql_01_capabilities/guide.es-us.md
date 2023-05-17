@@ -6,10 +6,10 @@ section: MySQL - Guides
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mysql/capabilities/'
-updated: 2023-04-14
+updated: 2023-05-17
 ---
 
-**Last updated April 14th, 2023**
+**Last updated May 17th, 2023**
 
 ## Objective
 
@@ -158,6 +158,8 @@ You can further customise your MySQL by using advanced parameters. See the [Adva
 *Business* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 14 days.
 
 *Enterprise* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 30 days.
+
+See the [Automated Backups guide](/pages/platform/databases/databases_05_automated_backups) for more information.
 
 #### Logs and metrics
 
