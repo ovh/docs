@@ -775,6 +775,7 @@
             + [CLI - Commands reference](platform/ai/cli_15_commands_reference)
             + [CLI - Commands reference for data](platform/ai/cli_16_commands_reference_data)
             + [CLI - Use your data in a notebook](platform/ai/cli_17_how_to_cli_data_notebooks)
+            + [CLI - Launch an AI Deploy app](platform/ai/cli_18_howto_deploy_app)
         + [AI Notebooks](public-cloud-ai-and-machine-learning-ai-notebooks)
             + [Guides](public-cloud-ai-and-machine-learning-ai-notebooks-guides)
                 + [AI Notebooks - Getting started](platform/ai/notebook_guide_introduction_definition)
