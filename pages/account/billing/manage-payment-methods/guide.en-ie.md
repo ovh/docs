@@ -48,7 +48,7 @@ To do this, simply click `Add a payment method`{.action} and choose the payment 
 
 ![manage-payment-methods](images/managepaymentmethods2.png){.thumbnail}
 
-Follow the the steps for saving a payment method. In the first step, you are asked to check the option `I want to choose this as my default payment method as soon as it is validated`{.action}, so that it is used for future orders and automatic payments.
+Follow the steps for saving a payment method. In the first step, you are asked to check the option `I want to choose this as my default payment method as soon as it is validated`{.action}, so that it is used for future orders and automatic payments.
 
 #### Direct Debit
 

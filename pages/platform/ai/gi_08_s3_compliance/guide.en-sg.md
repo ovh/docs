@@ -245,7 +245,7 @@ You can now link your **S3 buckets** to AI notebooks, AI Training and AI Deploy.
 
 In the following command, replace the **editor** and **framework** by those of your choice:
 
-*For more information about the notebooks commands, please check this [documentation](/pages/platform/ai/cli_11_cli_getting_started).*
+*For more information about the notebooks commands, please check this [documentation](/pages/platform/ai/cli_11_howto_run_notebook_cli).*
 
 ```console
 ovhai notebook run <framework-id> <editor-id> \

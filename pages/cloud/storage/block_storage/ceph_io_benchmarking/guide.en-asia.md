@@ -39,7 +39,7 @@ If you can see output similar to above then you can start preparing image for te
 rbd -p rbd create --size 1024 --image-format 2 test-image
 ```
 
-You can can test performance in three different situations:
+You can test performance in three different situations:
 
 - directly use RBD
 - map image to */dev/rbd** device

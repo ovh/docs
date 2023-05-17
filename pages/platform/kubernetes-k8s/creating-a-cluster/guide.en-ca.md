@@ -1,13 +1,13 @@
 ---
 title: Creating a cluster
 slug: creating-a-cluster
-excerpt: ''
+excerpt: 'Find out how to create an OVHcloud Managed Kubernetes cluster through the OVHcloud Control Panel'
 section: Getting started
 order: 0
-updated: 2021-09-29
+updated: 2023-05-12
 ---
 
-**Last updated 29th September 2021**
+**Last updated 12th May 2023**
 
 ## Objective
 
@@ -34,12 +34,12 @@ Select a location for your new cluster.
 
 Choose the minor version of Kubernetes.
 
+![Choose the minor version of Kubernetes](images/creating-a-cluster3.png){.thumbnail}
+
 > [!primary]
 > We recommend to always use the last stable version. 
 > Please read our [End of life / end of support](../eos-eol-policies/) page to understand our version policy.
 >
-
-![Choose the minor version of Kubernetes](images/creating-a-cluster3.png){.thumbnail}
 
 You can now choose to integrate your Kubernetes cluster into a private network using OVHcloud vRack. For more information about this option, please read our guide [Using the vRack](../using_vrack/).
 
@@ -67,12 +67,23 @@ In the next step, choose the appropriate billing mode (monthly or hourly). You c
 
 > [!primary]
 > By enabling anti-affinity, current and future nodes will be launched on different hypervisors (physical servers), guaranteeing higher fault tolerance. Anti-affinity node pools can only include up to 5 nodes.
+>
+> Moreover, if you choose the monthly billing method, you cannot change later from monthly to hourly. A change is only possible the other way around.
 > 
 
-Finally, enter a for name your cluster and click the `Send`{.action} button.
+Enter a name for your cluster.
+
+![Enter a name for your cluster](images/creating-a-cluster9.png){.thumbnail}
+
+Finally, click the `Send`{.action} button.
 
 The cluster creation is now in progress. It should be available within a few minutes in your OVHcloud Control Panel.
 
+### Warning
+
+After a cluster is created, you can no longer change:<br>
+\-  The region.<br>
+\-  The private network ID.
 
 ## Go further
 

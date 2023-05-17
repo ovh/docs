@@ -36,7 +36,7 @@ vScope provides two types of information:
 
 ### Collecting **live** data
 
-**Live** data is is the data available via the vScope interface’s main page.
+**Live** data is the data available via the vScope interface’s main page.
 
 ![vScope-API](images/vScope1.png){.thumbnail}
 

@@ -13,7 +13,7 @@ Elle a pour objectif de vous accompagner et faire en sorte qu'il y ait le moins 
 
 ## Prérequis
 
-- Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
+- Posséder un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/){.external}.
 
 ## En pratique
 
@@ -899,6 +899,6 @@ L'image ci-dessous est un résumé des actions citées plus haut :
 
 ![select_efi](images/select_efi-v2.gif){.thumbnail}
 
-# Aller plus loin
+## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

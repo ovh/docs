@@ -3,14 +3,14 @@ title: 'Konfiguracja zapory sieciowej Network Firewall'
 excerpt: 'Dowiedz się, jak skonfigurować reguły firewalla w OVHcloud'
 slug: network-firewall
 section: 'Sieć & IP'
-updated: 2022-12-20
+updated: 2023-05-10
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 22-12-2022**
+**Ostatnia aktualizacja z dnia 10-05-2023**
 
 ## Wprowadzenie
 
@@ -43,7 +43,7 @@ Aby chronić swoją globalną infrastrukturę oraz serwery klientów, OVHcloud u
 
 > [!primary]
 >
-> Network Firewall chroni adresy IP powiązane z serwerem.  Należy zatem skonfigurować reguły dla każdego adresu IP oddzielnie. Wprowadzenie wspólnej konfiguracji dla całego serwera nie jest możliwe.
+> Network Firewall chroni adres IP przypisany do serwera. Dlatego też, jeśli posiadasz serwer z kilkoma adresami IP, musisz samodzielnie skonfigurować każdy adres IP. Nie można przeprowadzić globalnej konfiguracji serwera.
 > 
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij menu `Bare Metal Cloud`{.action} i otwórz sekcję `IP`{.action}. 
@@ -68,7 +68,7 @@ Do dyspozycji masz **20 reguł dla każdego adresu IP**.
 
 > [!warning]
 >
-> Firewall uruchamia się automatycznie przy każdym ataku DDoS i nie można go wyłączyć przed zakończeniem ataku.  Dlatego ważne jest, aby reguły firewalla były aktualne. 
+> Jeśli Network firewall jest skonfigurowany z regułami, reguły te są automatycznie stosowane dla każdego ataku DDoS. Firewall nie może zostać wyłączony przed zakończeniem ataku, dlatego ważne jest, aby reguły firewalla były aktualizowane.
 > Domyślnie, żadne reguły nie są skonfigurowane, więc można ustanowić dowolne połączenia z serwerem. 
 > Kiedy korzystasz z firewalla, pamiętaj o regularnym sprawdzaniu reguł (jeśli je ustawiłeś), nawet jeśli jest on w danej chwili dezaktywowany.
 > 
@@ -127,23 +127,23 @@ Na przykład pakiet przeznaczony dla portu 80/TCP zostanie przechwycony przez re
 
 ### Mitygacja ataków - Filtrowanie ataku DDoS - OVH Anty-DDoS
 
-Istnieją trzy tryby filtrowania: automatyczne, stałe lub wymuszone.
+Rozwiązanie Anty-DDoS (VAC) obejmuje trzy tryby filtrowania: automatyczne, stałe lub wymuszone.
 
-**Automatyczne filtrowanie**: Dzięki temu trybowi ruch przechodzi przez system mitygacji tylko wtedy, gdy zostanie wykryty jako "nietypowy" w porównaniu do normalnego ruchu otrzymywanego przez serwer.
+**Automatyczne filtrowanie (stałe wykrywanie)**: domyślnie wszystkie adresy IP OVHcloud podlegają automatycznej mitygacji.  Dzięki temu trybowi ruch przechodzi przez system mitygacji tylko wtedy, gdy zostanie wykryty jako "nietypowy" w porównaniu do normalnego ruchu otrzymywanego przez serwer.
 
-**Stałe filtrowanie**: Aktywując stałe filtrowanie, stosujesz pierwszy poziom stałego filtrowania przez sprzęt Shield.<br>
+**Stałe filtrowanie**: tryb ten może zostać włączony lub wyłączony w Panelu klienta. Dzięki stałej mitygacji (jeśli jest włączona), stosujesz pierwszy stały poziom filtrowania za pomocą sprzętowego systemu Shield.<br>
 Cały ruch przechodzi przez system mitygacji zanim dotrze do serwera. Zalecamy ten tryb w przypadku usług będących przedmiotem częstych ataków.<br>
-Pamiętaj, że Firewall Network nie powinien zostać utworzony/aktywowany, aby włączyć stałe filtrowanie dla Twojego IP.
+Pamiętaj, że stała mitygacja jest częścią rozwiązania Anty-DDoS (VAC). Możesz ją włączyć dla Twojego IP bez aktywacji Network Firewall.
 
 Aby go aktywować, kliknij menu `Bare Metal Cloud`{.action} i otwórz `IP`{.action}. Następnie kliknij przycisk `...`{.action} po prawej stronie odpowiedniego IPv4 i wybierz `Filtrowanie: tryb stały`{.action}.
 
-**Wymuszone filtrowanie**: Tryb ten jest włączany automatycznie po wykryciu ataku na serwer. Po włączeniu tego trybu nie można wyłączyć. W celu ochrony naszej infrastruktury, ochrona będzie aktywowana przez cały czas trwania ataku, aż do całkowitego zniszczenia infrastruktury.
+**Wymuszone filtrowanie**: tryb ten jest aktywowany automatycznie po wykryciu ataku na serwer. Po włączeniu w infrastrukturę Anty-DDoS tryb ten nie może zostać wyłączony. W celu ochrony naszej infrastruktury, ochrona będzie aktywowana przez cały czas trwania ataku, aż zostanie całkowicie mitygowana.
 
 > [!warning]
 >
-> W chwili gdy włącza się ochrona Anty-DDoS, Twoje reguły zdefiniowane w usłudze Network Firewall zostaną uaktywnione, nawet jeśli je wyłączyłeś. W przypadku dezaktywacji firewalla, pamiętaj o usunięciu reguł.
+> Jeśli nasze rozwiązanie Anty-DDoS ogranicza atak, ostatecznie skonfigurowane reguły Network Firewall zostaną zastosowane, nawet jeśli wyłączyłeś Firewall. Jeśli chcesz, aby żadna reguła nie została zastosowana podczas ataku, usuń wcześniej utworzone reguły.
 > 
-> Pamiętaj, że tłumienie anty-DDoS nie może zostać wyłączone.
+> Mitygacja jest zintegrowana z naszym rozwiązaniem Anty-DDoS (VAC) i nie może zostać dezaktywowana w ramach usługi. Wszystkie produkty OVHcloud są dostarczane z ochroną Anty-DDoS.
 
 ### Konfiguracja zapory Armor (Firewall Game)
 
