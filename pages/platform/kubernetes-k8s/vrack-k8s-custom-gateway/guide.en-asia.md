@@ -1,6 +1,6 @@
 ---
 title: Using a custom gateway on an OVHcloud Managed Kubernetes cluster
-excerpt: Find out how to use use a custom gateway on an OVHcloud Managed Kubernetes working with vRack private network.
+excerpt: Find out how to use a custom gateway on an OVHcloud Managed Kubernetes working with vRack private network.
 slug: vrack-k8s-custom-gateway
 section: Network
 updated: 2022-07-25

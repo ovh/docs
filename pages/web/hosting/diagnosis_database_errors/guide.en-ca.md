@@ -174,7 +174,7 @@ The following query is also not allowed:
 CREATE DATABASE IF NOT EXISTS `Database-Name` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
 ```
 
-Use this this line instead:
+Use this line instead:
 
 ```mysql
 USE `Database-Name`;

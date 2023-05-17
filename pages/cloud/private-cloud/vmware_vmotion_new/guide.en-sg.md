@@ -12,7 +12,7 @@ updated: 2020-07-10
 
 ## Objective
 
-The **vMotion** feature allows you to to perform a hot migration of a (running) virtual machine from a host to another host, resource pool, or Vapp within the same **cluster**.
+The **vMotion** feature allows you to perform a hot migration of a (running) virtual machine from a host to another host, resource pool, or Vapp within the same **cluster**.
 
 **This guide explains how to perform this operation.**
 

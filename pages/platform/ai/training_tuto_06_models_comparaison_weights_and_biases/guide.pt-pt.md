@@ -300,7 +300,7 @@ docker build . -t <your-docker-id>/audio-classification-models:latest
 
 > [!warning]
 >
-> To know more about the the **Docker Hub**, click [here](https://hub.docker.com/).
+> To know more about the **Docker Hub**, click [here](https://hub.docker.com/).
 >
 
 ```console

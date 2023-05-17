@@ -192,7 +192,7 @@ Then search the latest version of stash:
 helm search repo appscode/stash --version v2021.11.24
 ```
 
-And install it with the the release name `stash-operator`:
+And install it with the release name `stash-operator`:
 
 ```bash
 helm install stash appscode/stash          \

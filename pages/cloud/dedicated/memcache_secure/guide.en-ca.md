@@ -50,7 +50,7 @@ The developers have pointed out that UDP connections were highly important when 
 In this guide, we will assume that you are one of the 99% of users who do not require UDP connections.
 
 If your Memcached server is only used by your local server, you can limit the listening address to `127.0.0.1`.
-If other servers need to connect to to your Memcached server via a private network, force it to listen on a private IP (e.g. `10.0.0.1`. You will need to adapt this according to your network class).
+If other servers need to connect to your Memcached server via a private network, force it to listen on a private IP (e.g. `10.0.0.1`. You will need to adapt this according to your network class).
 
 **In all cases**, disable UDP listening by running the `-U 0` command.
 
