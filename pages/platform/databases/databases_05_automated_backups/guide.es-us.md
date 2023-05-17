@@ -6,10 +6,10 @@ section: General guides
 order: 17
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/backups'
-updated: 2023-05-11
+updated: 2023-05-17
 ---
 
-**Last updated May 11th, 2023**
+**Last updated May 17th, 2023**
 
 ## Objective
 
@@ -40,6 +40,29 @@ OpenSearch | Incremental | On-Site, Off-Site | Hourly | 1h | Yes
 M3 | Backup on object storage | On-Site, Off-Site | Daily | 24h | Yes
 Cassandra | Backup on object storage | On-Site, Off-Site | Daily | 24h | Yes
 Kafka | N/A | N/A | N/A | N/A | N/A
+
+### Custom settings
+
+Backup default location and time could be override by setting the `backups` attribute at database creation. As an example, the following settings define `GRA` (Gravelines, France) and `DE` (Frankfurt, Germany) as backup location and `01:00:00` as daily backup time:
+
+```json
+"backups": {
+  "regions": ["GRA", "DE"],
+  "time": "01:00:00"
+}
+```
+
+As a reminder, here is API endpoint for database creation.
+
+> [!api]
+>
+> @api {POST} /cloud/project/{serviceName}/database/{engine}/
+>
+
+Backup settings must respect the following rules:
+
+- For MongoDB, `regions` array only one accepts one element. You are free to define the backup location in the same region as the service which could be considered **unwise**.
+- For other engines, `regions` array accepts one or two elements. If one only element is specified, it must match the region the service is running in. If two elements are specified, one of these elements must match the region the service is running, while the other element could be set to any other region.
 
 ## Lexicon
 
