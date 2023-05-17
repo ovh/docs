@@ -41,9 +41,30 @@ M3 | Backup on object storage | On-Site, Off-Site | Daily | 24h | Yes
 Cassandra | Backup on object storage | On-Site, Off-Site | Daily | 24h | Yes
 Kafka | N/A | N/A | N/A | N/A | N/A
 
+## Off-site backup
+
+### Replication mecanism
+
+For MongoDB, backup data gets shipped directly to the remote region.
+
+For the other engines, backups are first prepared on-site, then replicated to another region. The on-site backup data persists once it gets replicated to the other region.
+
+### Default location
+
+Public Cloud Databases provide a default configuration for remote backups based on the region the service is running in:
+
+| Service location            | Off-site default backup location |
+|-----------------------------|----------------------------------|
+| GRA (Gravelines, France)    | SBG (Strasbourg, France)         |
+| BHS (Beauharnois, Canada)   | SBG (Strasbourg, France)         |
+| DE (Frankfurt, Germany)     | GRA (Gravelines, France)         |
+| SBG (Strasbourg, France)    | GRA (Gravelines, France)         |
+| UK (London, United Kingdom) | GRA (Gravelines, France)         |
+| WAW (Warsaw, Poland)        | GRA (Gravelines, France)         |
+
 ### Custom settings
 
-Backup default location and time could be override by setting the `backups` attribute at database creation. As an example, the following settings define `GRA` (Gravelines, France) and `DE` (Frankfurt, Germany) as backup location and `01:00:00` as daily backup time:
+Backup default location and time could be override by setting the `backups` attribute either when creating or updating your service. As an example, the following settings define `GRA` (Gravelines, France) and `DE` (Frankfurt, Germany) as backup location and `01:00:00` as daily backup time:
 
 ```json
 "backups": {
@@ -62,7 +83,10 @@ As a reminder, here is API endpoint for database creation.
 Backup settings must respect the following rules:
 
 - For MongoDB, `regions` array only one accepts one element. You are free to define the backup location in the same region as the service which could be considered **unwise**.
-- For other engines, `regions` array accepts one or two elements. If one only element is specified, it must match the region the service is running in. If two elements are specified, one of these elements must match the region the service is running, while the other element could be set to any other region.
+- For other engines, `regions` array accepts one or two elements. If one only element is specified, it must match the region the service is running in. If two elements are specified, one of these elements must match the region the service is running, while the other element could be set to any other region. It is **recommended** to use 2 regions for your backups.
+
+> [!primary]
+> Be aware that the backup time could only be customized on MongoDB, MySQL, and PostgreSQL.
 
 ## Lexicon
 
