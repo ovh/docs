@@ -29,7 +29,7 @@ To access the lists of blocks, go on your Prefect Cloud account. In the sidebar,
 
 ![image](images/email_block.png){.thumbnail}
 
-Click on `Add +`button and fill the block with a name and the desired email address, where you will receive a notification. You can enter multiple email address. Once your block is created, let's see what is an automation and why it will be useful to send our email. 
+Click on `Add +`button and fill the block with a name and the desired email address where you will receive a notification. You can enter multiple email address. Once your block is created, let's see what is an automation and why it will be useful to send our email. 
 
 ### Configure a first automation
 
