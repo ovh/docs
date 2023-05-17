@@ -80,7 +80,7 @@ As a reminder, here is API endpoint for database creation.
 
 Backup settings must respect the following rules:
 
-- For MongoDB, `regions` array only one accepts one element. You are free to define the backup location in the same region as the service which could be considered **unwise**.
+- For MongoDB, `regions` array only accepts one element. You are free to define the backup location in the same region as the service which could be considered **unwise**.
 - For other engines, `regions` array accepts one or two elements. If one only element is specified, it must match the region the service is running in. If two elements are specified, one of these elements must match the region the service is running, while the other element could be set to any other region. It is **recommended** to use 2 regions for your backups.
 
 > [!primary]
