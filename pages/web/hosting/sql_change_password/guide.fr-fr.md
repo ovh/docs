@@ -79,7 +79,7 @@ Recherchez et ouvrez le fichier de configuration de votre site :
 Deux cas sont possibles :
 
 - Cas n°1 : la base de données de votre site fait partie de votre offre d'hébergement;
-- Cas n°2 : elle est est incluse dans une offre *Web Cloud Databases*, auquel cas vous devrez retrouver le **nom du serveur** et le **nom d'utilisateur** de votre base de données, afin d'identifier cette dernière sans risque d'erreur.
+- Cas n°2 : elle est incluse dans une offre *Web Cloud Databases*, auquel cas vous devrez retrouver le **nom du serveur** et le **nom d'utilisateur** de votre base de données, afin d'identifier cette dernière sans risque d'erreur.
 
 Afin de déterminer quel cas s'applique à votre site, dans le fichier de configuration identifié à [l'étape 1](#step1), commencez par noter le nom de sa base de données :
 

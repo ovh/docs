@@ -43,7 +43,7 @@ Sur la page qui apparaît, donnez un nom et une description au groupe que vous �
 
 ![créer un groupe de sécurité](images/security-group2.png){.thumbnail}
 
-De retour sur sur l'onglet `Security Groups`{.action}, le tableau affiche désormais le groupe nouvellement créé. Des règles y sont configurées par défaut. Ces dernières laissent passer uniquement le trafic sortant. Poursuivez vers l'étape suivante si vous souhaitez modifier ces dernières.
+De retour sur l'onglet `Security Groups`{.action}, le tableau affiche désormais le groupe nouvellement créé. Des règles y sont configurées par défaut. Ces dernières laissent passer uniquement le trafic sortant. Poursuivez vers l'étape suivante si vous souhaitez modifier ces dernières.
 
 Si ces règles vous conviennent, poursuivez la lecture de ce guide à l'étape 3 « [configurer un groupe de sécurité sur son instance](#instance-security-group) ».
 

@@ -126,7 +126,7 @@ Pour ce faire, connectez-vous à votre [espace client OVHcloud](https://www.ovh.
 
 Prenez connaissance des informations affichées dans la fenêtre qui apparaît, puis cliquez sur le bouton `Valider`{.action}. Attendez ensuite que votre certificat SSL soit régénéré. Cette étape peut prendre plusieurs heures.
 
-Veuillez noter que Let's Encrypt, l'autorité qui fournit le certificat SSL inclus avec avec votre hébergement web, impose une [limite de cinq régénérations par semaine](https://letsencrypt.org/docs/rate-limits/){.external}. Par conséquent, nous vous invitons à être vigilant sur les différentes régénérations que vous pourriez entreprendre à court terme  afin de ne pas être temporairement bloqué.
+Veuillez noter que Let's Encrypt, l'autorité qui fournit le certificat SSL inclus avec votre hébergement web, impose une [limite de cinq régénérations par semaine](https://letsencrypt.org/docs/rate-limits/){.external}. Par conséquent, nous vous invitons à être vigilant sur les différentes régénérations que vous pourriez entreprendre à court terme  afin de ne pas être temporairement bloqué.
 
 ![managessl](images/manage-ssl-step8.png){.thumbnail}
 

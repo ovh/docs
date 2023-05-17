@@ -274,7 +274,7 @@ In your document root you should `touch` the file `tmp/restart.txt`.
 
 ## Go further
 
-[Accessing a web web hosting plan via SSH](../../hosting/web_hosting_ssh_on_web_hosting_packages/) 
+[Accessing a web hosting plan via SSH](../../hosting/web_hosting_ssh_on_web_hosting_packages/) 
 
 [Hosting multiple websites on your Web Hosting plan](../../hosting/multisites-configuring-multiple-websites/)
 

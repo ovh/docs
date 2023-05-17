@@ -275,7 +275,7 @@ At this point, we have a functional and secure link between our on-premises plat
 
 ### Step 5: ZVM Pairing
 
-Log in in to your on-premises ZVM. The following screen is displayed:
+Log in to your on-premises ZVM. The following screen is displayed:
 
 ![zerto vpn](images/image-EN-35.png){.thumbnail}
 

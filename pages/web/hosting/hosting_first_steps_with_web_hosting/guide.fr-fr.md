@@ -93,7 +93,7 @@ Il n'existe pas de marche à suivre universelle tant les sites peuvent être dif
 
 ### Étape 3 : créer vos adresses e-mail
 
-Cette étape peut être facultative si vous ne souhaitez pas utiliser les adresses e-mail comprises avec votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}. Pour créer une une plusieurs adresses e-mail, assurez-vous dans un premier temps d'être connecté dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.Rendez-vous dans la section `Emails`{.action} puis sur le nom de l'hébergement web que vous venez de commander. puis, dans l'onglet `Emails`{.action}, cliquez sur le bouton `Créer une adresse e-mail`{.action}.
+Cette étape peut être facultative si vous ne souhaitez pas utiliser les adresses e-mail comprises avec votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}. Pour créer une ou plusieurs adresses e-mail, assurez-vous dans un premier temps d'être connecté dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Rendez-vous dans la section `Emails`{.action} puis sur le nom de l'hébergement web que vous venez de commander. puis, dans l'onglet `Emails`{.action}, cliquez sur le bouton `Créer une adresse e-mail`{.action}.
 
 ![Créer une adresse e-mail](images/create_an_email_address.png){/thumbnail}
 
