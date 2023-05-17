@@ -4,10 +4,10 @@ slug: cassandra/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Cassandra
 section: Cassandra - Guides
 order: 010
-updated: 2023-04-14
+updated: 2023-05-17
 ---
 
-**Last updated April 14th, 2023**
+**Last updated May 17th, 2023**
 
 ## Objective
 
@@ -148,6 +148,12 @@ Once your service is up and running, you will be able to specify IP addresses (o
 #### Advanced parameters
 
 You can further customise your Cassandra by using advanced parameters. See the [Advanced parameters references documentation](https://docs.ovh.com/sg/en/publiccloud/databases/cassandra/advanced-parameters-references/) for more information on the supported parameters.
+
+#### Backups
+
+Your services are automatically backed up daily during their maintenance window. The point-in-time recovery (PITR) feature is currently not available.
+
+See the [Automated Backups guide](/pages/platform/databases/databases_05_automated_backups) for more information.
 
 #### Logs and metrics
 
