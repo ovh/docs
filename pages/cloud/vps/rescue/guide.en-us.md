@@ -75,10 +75,11 @@ You will then need to access your server via the command line or an SSH tool, us
 
 For example:
 
-```
+```bash
 ssh root@your_server_IP
 root@your_server_password:
 ```
+
 > [!warning]
 > 
 > Your SSH client will likely block the connection at first due to a mismatch of the ECDSA fingerprint. This is normal because the rescue mode uses its own temporary SSH server.

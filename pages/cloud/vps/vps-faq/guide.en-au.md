@@ -49,8 +49,8 @@ To choose a VPS adapted to your needs, please check the following:
 
 This will help you make the right choice from our VPS solutions:
 
-- **VPS Starter**: entry-level server to test our solution (with a Linux distribution only, no web hosting control panel)
-- **VPS Value, Essential and Comfort**: ideal for hosting websites, e-commerce services or monitoring systems
+- **VPS Starter**: entry-level server to test our solution (with a Linux distribution only, no web hosting control panel).
+- **VPS Value, Essential and Comfort**: ideal for hosting websites, e-commerce services or monitoring systems.
 - **VPS Elite**: adapted for e-commerce websites and applications that require more CPU and memory resources.
 
 
@@ -65,7 +65,7 @@ If you would like to get guaranteed resources but don't know how to manage serve
 You will need to log in to your VPS via SSH, using the IP address, user name and password provided by email when you received your order.
 From a Windows desktop, we recommend that you log in using the Putty software. On a Linux desktop, you can connect directly via the terminal.
 
-All the details are set out in our guide on Getting [started with a VPS](../getting-started-vps/).
+All the details are set out in our guide on [Getting started with a VPS](../getting-started-vps/).
 
 ### Can I host several websites on a VPS?
 
@@ -79,7 +79,7 @@ To take backups, you can use the following options: manual backup (snapshots), o
 ### How do I secure my VPS?
 
 By default, the VPS is provided “naked”, and there is no security configuration on it. For this reason, the first thing you need to do when you receive a VPS is configure security measures for it.
-To do this, please refer to our guide on Securing [a VPS](../tips-for-securing-a-vps/).
+To do this, please refer to our guide on [Securing a VPS](../tips-for-securing-a-vps/).
 
 ### What bandwidth is allocated to my VPS? Is it guaranteed?
 

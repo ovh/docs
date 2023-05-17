@@ -6,10 +6,10 @@ section: AI Training - Tutorials
 order: 06
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/training/tuto-models-comparaison-weights-and-biases/'
-updated: 2023-01-31
+updated: 2023-05-11
 ---
 
-**Last updated 31st January, 2023.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 
@@ -115,7 +115,7 @@ If you want to upload it from the [OVHcloud Control Panel](https://ca.ovh.com/au
 If you want to run it with the CLI, just follow [this guide](https://docs.ovh.com/us/es/publiccloud/ai/cli/access-object-storage-data/). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
 ```console
-ovhai data upload <region> <container> <paths>
+ovhai bucket object upload <container>@<region> <paths>
 ```
 
 You should have:
@@ -300,7 +300,7 @@ docker build . -t <your-docker-id>/audio-classification-models:latest
 
 > [!warning]
 >
-> To know more about the the **Docker Hub**, click [here](https://hub.docker.com/).
+> To know more about the **Docker Hub**, click [here](https://hub.docker.com/).
 >
 
 ```console

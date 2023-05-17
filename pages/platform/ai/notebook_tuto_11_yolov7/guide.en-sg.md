@@ -4,10 +4,10 @@ slug: notebooks/yolov7-sign-language
 excerpt: How to train the YOLOv7 model on a custom dataset with AI Notebooks
 section: AI Notebooks - Tutorials
 order: 11
-updated: 2023-04-03
+updated: 2023-05-11
 ---
 
-**Last updated 3rd April, 2023.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 
@@ -51,13 +51,13 @@ If you want to run it with the CLI, just follow this [guide](https://docs.ovh.co
 - An object container `asl-volov7-data` dedicated to the dataset:
 
 ```bash
-ovhai data upload <region> asl-volov7-data
+ovhai bucket create <region> asl-volov7-data
 ```
 
 - An object container `asl-volov7-model` to save the model weights (for a future inference for example):
 
 ```bash
-ovhai data upload <region> asl-volov7-model
+ovhai bucket create <region> asl-volov7-model
 ```
 
 > [!warning]
@@ -86,7 +86,7 @@ Once the repository has been cloned, find the YOLOv7 notebook by following this 
 If you want to launch it with the CLI, choose the [volumes](https://docs.ovh.com/sg/en/publiccloud/ai/cli/access-object-storage-data/) you want to attach and the number of GPUs (`<nb-gpus>`) to use on your notebook and use the following command:
 
 ```bash
-ovhai notebook run miniconda jupyterlab \
+ovhai notebook run conda jupyterlab \
 	--name <name> \
 	--gpu <nb-gpus> \
 	--volume asl-volov7-data@<region>/:/workspace/data:RW \

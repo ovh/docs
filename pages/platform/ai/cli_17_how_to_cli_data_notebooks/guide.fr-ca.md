@@ -6,10 +6,10 @@ section: Command Line Interface
 order: 207
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data/'
-updated: 2022-04-13
+updated: 2023-05-11
 ---
 
-**Last updated 13th April, 2022.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 
@@ -27,7 +27,7 @@ Assuming a file named `my-dataset.zip` exists in your current working directory,
 to create a data container named `my-dataset` in the GRA region that will contain your `my-dataset.zip` file.
 
 ``` {.console}
-$ ovhai data upload GRA my-dataset my-dataset.zip
+$ ovhai bucket object upload my-dataset@GRA my-dataset.zip
 ```
 
 This file can now be accessed from your notebooks, either with read-only or read-write permissions.

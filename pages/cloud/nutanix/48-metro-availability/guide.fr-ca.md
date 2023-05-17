@@ -4,10 +4,10 @@ slug: metro-availability
 excerpt: "Mise en oeuvre de Metro pour un plan de reprise d'activité"
 section: "Plan de Reprise d'Activité"
 order: 06
-updated: 2022-11-15
+updated: 2023-05-09
 ---
 
-**Dernière mise à jour le 15/11/2022**
+**Dernière mise à jour le 09/05/2023**
 
 ## Objectif
 
@@ -24,7 +24,7 @@ updated: 2022-11-15
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Être connecté sur vos clusters via Prism Central.
 - Avoir 3 clusters Nutanix au sein de l'infrastructure OVHcloud avec des licences **Pack Advanced** si vous avez une offre packagée sur les deux clusters du P.R.A. Ces 3 clusters devront être sur des sites distants pour obtenir un maximum de sûreté.
-- Avoir une latence de moins de 5 ms entre les deux clusters répliqués.
+- Avoir une latence de moins de 5 ms entre les deux clusters répliqués. Veuillez noter que la latence n'est pas couverte par les SLA.
 
 ## Présentation
 

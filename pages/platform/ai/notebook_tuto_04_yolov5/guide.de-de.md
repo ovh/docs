@@ -6,10 +6,10 @@ section: AI Notebooks - Tutorials
 order: 04
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/yolov5-example/'
-updated: 2023-03-10
+updated: 2023-05-11
 ---
 
-**Last updated 10th March, 2023.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 
@@ -37,7 +37,7 @@ If you want to upload it from the [OVHcloud Control Panel](https://www.ovh.com/a
 If you want to run it with the CLI, just follow this [guide](https://docs.ovh.com/de/publiccloud/ai/cli/access-object-storage-data). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
 ```bash
-ovhai data upload <region> <container> <paths>
+ovhai bucket object upload <container>@<region> <paths>
 ```
 
 > [!primary]

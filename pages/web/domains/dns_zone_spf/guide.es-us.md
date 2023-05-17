@@ -95,12 +95,27 @@ Para añadir un registro SPF, haga clic en `Añadir un registro`{.action}.
 
 Se abrirá una ventana en la que podrá elegir entre varios registros DNS. Para añadir un SPF, existen dos posibilidades:
 
-- [Añadir un registro TXT](#txtrecord) : para usuarios avanzados o que ya dispongan del registro completo. Por ejemplo, su proveedor de soluciones de correo electrónico transmite el valor.
-- [Añadir un registro SPF](#spfrecord) : para los usuarios que no dispongan del registro completo. Por ejemplo, solo tiene una dirección IP o el nombre del host del servidor de correo.
 - [Añadir un registro SPF](#spfrecordovhcloud)**y utilizar la configuración de OVHcloud**: para los usuarios que solo posean los productos de correo electrónico de OVHcloud en su dominio (excepto [Private Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/){.external} y Exchange Provider).
+- [Añadir un registro SPF](#spfrecord) : para los usuarios que no dispongan del registro completo. Por ejemplo, solo tiene una dirección IP o el nombre del host del servidor de correo.
+- [Añadir un registro TXT](#txtrecord) : para usuarios avanzados o que ya dispongan del registro completo. Por ejemplo, su proveedor de soluciones de correo electrónico transmite el valor.
 
 ![Dominio](images/spf_records_add_entry.png){.thumbnail}
 
+#### Utilizar el registro SPF de OVHcloud <a name="spfrecordovhcloud"></a>
+
+Ha elegido el registro `SPF`{.action} y quiere aplicar la configuración de OVHcloud. Esto le permite incluir todos los servidores de correo saliente de OVHcloud para las siguientes ofertas de correo electrónico:
+
+- Solo MX Plan o incluido en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} .
+- [Hosted Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/)
+
+Haga clic en el botón `Utilizar el SPF para hosting compartido OVHcloud`{.action}, situado en la parte superior de la ventana de asistencia. Se mostrará la información relativa al SPF de OVHcloud. Haga clic en `Aceptar`{.action} para aplicar los cambios.
+
+![Dominio](images/spf_records_add_entry_step2.png){.thumbnail}
+
+> [!primary]
+>
+> Los cambios tardan entre 4 y 24 horas en propagarse y ser efectivos.
+>
 
 #### Añadir un registro SPF <a name="spfrecord"></a>
 
@@ -141,22 +156,6 @@ Por último, en lo relativo a la pregunta «**¿La información que ha indicado 
 |No|Pide a los servidores que reciban mensajes de correo procedentes de su dominio que los acepten si provienen de un origen no legítimo  (no indicado en su SPF), sin realizar ninguna otra acción. La cabecera del email se incrementará si elige esta opción.|
 
 Una vez completada la información, haga clic en `Siguiente`{.action}, asegúrese de que la información mostrada es correcta y haga clic en `Confirmar`{.action}.
-
-> [!primary]
->
-> Los cambios tardan entre 4 y 24 horas en propagarse y ser efectivos.
->
-
-#### Utilizar el registro SPF de OVHcloud <a name="spfrecordovhcloud"></a>
-
-Ha elegido el registro `SPF`{.action} y quiere aplicar la configuración de OVHcloud. Esto le permite incluir todos los servidores de correo saliente de OVHcloud para las siguientes ofertas de correo electrónico:
-
-- Solo MX Plan o incluido en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} .
-- [Hosted Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/)
-
-Haga clic en el botón `Utilizar el SPF para hosting compartido OVHcloud`{.action}, situado en la parte superior de la ventana de asistencia. Se mostrará la información relativa al SPF de OVHcloud. Haga clic en `Aceptar`{.action} para aplicar los cambios.
-
-![Dominio](images/spf_records_add_entry_step2.png){.thumbnail}
 
 > [!primary]
 >
