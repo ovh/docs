@@ -64,7 +64,7 @@ Wait until your flow is completed and... Check your mailbox, you will receive an
 
 ![image](images/result_email.png){.thumbnail}
 
-The event feed tab is a good way to see if you flow failed or not and if the automation has been proceed. In our case, we also receive an email on the address mail provided. 
+The event feed tab is a good way to see if your flow failed or not and if the automation has been processed. In our case, we also receive an email on the address mail provided. 
 
 ## Go further
 
