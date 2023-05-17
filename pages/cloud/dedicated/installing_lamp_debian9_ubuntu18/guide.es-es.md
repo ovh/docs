@@ -18,20 +18,20 @@ La creación de un servidor web y los programas asociados permiten que su servid
 
 ## Requisitos
 
-- Un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/), un [VPS](https://www.ovhcloud.com/es/vps/) o una instancia de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud (excepto sistemas Windows)
-- Tienes acceso a tu [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/), un [VPS](https://www.ovhcloud.com/es-es/vps/) o una instancia de [Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud (excepto sistemas Windows)
+- Tienes acceso a tu [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
 - Acceso administrativo al servicio por SSH
 
 
 > [!warning]
 > Este tutorial explica cómo utilizar una solución de OVHcloud con herramientas externas en un contexto concreto. Puede que necesite adaptar las indicaciones a su situación.
 >
-> Le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) o con [nuestra comunidad](https://community.ovh.com/en/) si tiene problemas o dudas relativos a la administración, el uso o la instalación de servicios en un servidor.
+> Le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con [nuestra comunidad](https://community.ovh.com/en/) si tiene problemas o dudas relativos a la administración, el uso o la instalación de servicios en un servidor.
 >
 
 ## Procedimiento
 
-Si ya tiene instalada una distribución Debian o Ubuntu en el servidor, realice la reinstalación desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Es la mejor manera de tener un sistema propio para su servidor web y las aplicaciones que se ejecutan en él.
+Si ya tiene instalada una distribución Debian o Ubuntu en el servidor, realice la reinstalación desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Es la mejor manera de tener un sistema propio para su servidor web y las aplicaciones que se ejecutan en él.
 
 Consulte la guía correspondiente para instalar una distribución en su servicio OVHcloud y conecte a él por [SSH](/pages/cloud/dedicated/ssh_introduction):
 
@@ -171,7 +171,7 @@ MariaDB [(none)]> exit;
 
 ### Paso 5: configuración del firewall (opcional)
 
-[La configuración de un cortafuegos](https://docs.ovh.com/us/es/dedicated/firewall-iptables/) (*iptables*) mejorará la seguridad del servidor. Este proceso puede simplificarse utilizando el frontend "Uncomplicated Firewall" (UFW) y su conjunto de perfiles predefinidos. 
+[La configuración de un cortafuegos](https://docs.ovh.com/es/dedicated/firewall-iptables/) (*iptables*) mejorará la seguridad del servidor. Este proceso puede simplificarse utilizando el frontend "Uncomplicated Firewall" (UFW) y su conjunto de perfiles predefinidos. 
 
 Instale UFW:
 
@@ -233,7 +233,7 @@ Puede ir más allá con el UFW, por ejemplo si desea restringir los ataques de *
 
 ### Paso 6: configuración DNS (opcional)
 
-Para acceder a la instalación de su servidor web a través de un dominio, es necesario asociarlo al servicio. Para ello, edite la zona DNS accesible desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), siempre que OVHcloud sea su agente registrador **y que** el dominio utilice los servidores DNS de OVHcloud.
+Para acceder a la instalación de su servidor web a través de un dominio, es necesario asociarlo al servicio. Para ello, edite la zona DNS accesible desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), siempre que OVHcloud sea su agente registrador **y que** el dominio utilice los servidores DNS de OVHcloud.
 
 Para más información, consulte la guía [Editar una zona DNS](/pages/web/domains/dns_zone_edit). Si el dominio está en uso, configure los DNS únicamente después de que el sitio web o la aplicación estén listos.
 
@@ -243,7 +243,7 @@ Para más información, consulte la guía [Editar una zona DNS](/pages/web/domai
 >
 > Para establecer conexiones seguras (`https`), el servidor web debe estar protegido a través de una Autoridad de Certificación oficial como "[Let's Encrypt](https://letsencrypt.org/)" que ofrece certificados gratuitos. Es necesario instalar una herramienta de cliente (como Certbot) y configurar Apache en consecuencia. Sin este paso, su sitio web o su aplicación solo pueden aceptar peticiones `http` sin cifrar.
 > 
-> Como alternativa, OVHcloud le ofrece la solución [SSL Gateway](https://www.ovh.com/world/es/ssl-gateway/). Para más información, consulte [nuestra guía](/pages/web/ssl-gateway/order-ssl-gateway).
+> Como alternativa, OVHcloud le ofrece la solución [SSL Gateway](https://www.ovh.es/ssl-gateway/). Para más información, consulte [nuestra guía](/pages/web/ssl-gateway/order-ssl-gateway).
 > 
 
 En primer lugar, asegúrese de que el dominio se ha introducido correctamente en la zona DNS, es decir, en la dirección IP del servidor.
