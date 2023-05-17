@@ -54,7 +54,7 @@ In the last step, you have to fill the details of your automations like the name
 
 ### Run your flow
 
-Before running the flow, be sure that you set up your agent in prefect. Following the guide [getting-started](/pages/platform/integrations/prefect_guide_01_getting_started) you should be able to have the python code. Check if you connected to the prefect cloud UI. If you not sure that your agent is connected to the client run `prefect login` and connect with your credentials. Now, run the flow !  
+Before running the flow, be sure that you set up your agent in prefect. Following the guide [getting-started](/pages/platform/integrations/prefect_guide_01_getting_started) you should be able to have the python code. Check if you connected to the prefect cloud UI. If you are not sure that your agent is connected to the client run `prefect login` and connect with your credentials. Now, run the flow !  
 
 ```console
 python3 console.py
