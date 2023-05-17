@@ -4,10 +4,10 @@ slug: postgresql/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for PostgreSQL
 section: PostgreSQL - Guides
 order: 010
-updated: 2023-05-03
+updated: 2023-05-17
 ---
 
-**Last updated May 3rd, 2023**
+**Last updated May 17th, 2023**
 
 ## Objective
 
@@ -158,6 +158,8 @@ You can further customise your PostgreSQL by using advanced parameters. See the 
 *Business* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 14 days.
 
 *Enterprise* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 30 days.
+
+See the [Automated Backups guide](/pages/platform/databases/databases_05_automated_backups) for more information.
 
 #### Logs and metrics
 
