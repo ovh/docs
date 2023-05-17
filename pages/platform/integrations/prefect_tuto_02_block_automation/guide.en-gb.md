@@ -16,7 +16,7 @@ The purpose of this tutorial is to show you how to send a notification (in this 
 ## Requirements
 
 - Basic Knowledge of Prefect.io
-- First configurationf for Prefect and OVHcloud. See our guide [Getting started](/pages/platform/integrations/prefect_guide_01_getting_started)
+- First configuration for Prefect and OVHcloud. See our guide [Getting started](/pages/platform/integrations/prefect_guide_01_getting_started)
 - An email address
 
 ## Instructions
