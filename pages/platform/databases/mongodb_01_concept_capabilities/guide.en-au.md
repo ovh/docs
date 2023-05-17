@@ -4,10 +4,10 @@ slug: mongodb/capabilities
 excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
 section: MongoDB - Guides
 order: 010
-updated: 2023-04-14
+updated: 2023-05-17
 ---
 
-**Last updated April 14th, 2023**
+**Last updated May 17th, 2023**
 
 ## Objective
 
@@ -142,6 +142,8 @@ Once your service is up and running, you will be able to specify IP addresses (o
 *Business* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 7 days.
 
 *Enterprise* plan clusters are automatically backed up daily during their maintenance window, with [PITR](https://en.wikipedia.org/wiki/Point-in-time_recovery){.external} support. Backup retention is 30 days with PITR capability for the last 24 hours.
+
+See the [Automated Backups guide](/pages/platform/databases/databases_05_automated_backups) for more information.
 
 #### Logs and Metrics
 
