@@ -35,7 +35,7 @@ Click on `Add +`button and fill the block with a name and the desired email addr
 
 In Prefect, as explained in their official documentation, an automation is a higher-level construct that allows you to orchestrate and automate workflows using a set of pre-defined rules and conditions. It provides an easy-to-use interface for configuring, scheduling, and monitoring the execution of workflows, making it easier for developers to manage and maintain their pipelines. Automations can be used to trigger workflows based on specific events or data conditions, schedule workflows to run at specific times or intervals, and handle errors and exceptions in a more streamlined manner. 
 
-In our case, we will use automation to send a notification. Thanks to the block **Email**, we will create a notification through an automation. This automation can only be created on the Prefect cloud's UI. Custom automations can also be created directly from your Python code. Go on the sidebar of our workspace, select `Automations` and click on the `+` icon. 
+In our case, we will use automation to send a notification. Thanks to the block **Email**, we will create a notification through an automation. This automation can only be created on the Prefect cloud's UI. Custom automations can also be created directly from your Python code. Go on the sidebar of your workspace, select `Automations` and click on the `+` icon. 
 
 The first step to complete is the trigger. For this example, we will send an email when the our flow previously created in our [Getting Started guide](/pages/platform/integrations/prefect_guide_01_getting_started) is completed. You can fill the page like this:
 
