@@ -6,10 +6,10 @@ section: M3db - Guides
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/m3db/capabilities/'
-updated: 2023-04-22
+updated: 2023-05-17
 ---
 
-**Last updated April 22nd, 2023**
+**Last updated May 17th, 2023**
 
 ## Objective
 
@@ -155,6 +155,16 @@ Here are some considerations to take into account when using private network:
 ##### Authorised IPs
 
 Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic. Until then, your service will be unreachable.
+
+#### Backups
+
+*Essential* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 1 days.
+
+*Business* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 6 days.
+
+*Enterprise* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 13 days.
+
+See the [Automated Backups guide](/pages/platform/databases/databases_05_automated_backups) for more information.
 
 #### Logs and metrics
 
