@@ -23,7 +23,7 @@ Les offres d'hébergement web d'OVHcloud vous donnent accès à un espace de sto
 
 > [!warning]
 > 
-> L'accès SSH à un hébergement web OVHcloud est possible à partir de [l'offre Pro](https://www.ovhcloud.com/fr-ca/web-hosting/compare/).
+> L'accès SSH à un hébergement web OVHcloud est disponible à partir de [l'offre Pro](https://www.ovhcloud.com/fr/web-hosting/compare/).
 
 ## En pratique
 

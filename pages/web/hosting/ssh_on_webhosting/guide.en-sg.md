@@ -23,7 +23,7 @@ OVHcloud web hosting plans provide you with access to a storage space you can us
 
 > [!warning]
 > 
-> SSH access to an OVHcloud web hosting plan is possible from [the Pro plan](https://www.ovhcloud.com/en-sg/web-hosting/compare/).
+> SSH access to an OVHcloud web hosting plan is possible from the [Pro plan](https://www.ovhcloud.com/en-sg/web-hosting/compare/) and above.
 
 ## Instructions
 
