@@ -113,7 +113,7 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 
 ![manage-ovh-password](images/account-password-modif-manager-step4.png){.thumbnail}
 
-- Un message vous indiquant le succès de l’opération s’affiche alors. Cliquez sur le bouton `Continuer`{.action} en bas ce message pour être redirigé vers la page d’identification. Renseignez alors votre identifiant et votre nouveau mot de passe.
+- Un message vous indiquant le succès de l’opération s’affiche alors. Cliquez sur le bouton `Continuer`{.action} en bas de ce message pour être redirigé vers la page d’identification. Renseignez alors votre identifiant et votre nouveau mot de passe.
 
 > [!primary]
 >
