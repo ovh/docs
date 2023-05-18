@@ -77,4 +77,6 @@ Votre règle est active sur la passerelle **ovh-T0-gw**. Elle bloque tout le tra
 
 [Documentation VMware sur les pare-feux de passerelles dans NSX](https://docs.vmware.com/fr/VMware-NSX-T-Data-Center/3.2/administration/GUID-A52E1A6F-F27D-41D9-9493-E3A75EC35481.html)
 
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
