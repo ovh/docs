@@ -40,7 +40,7 @@ This tutorial demonstrates how to install Apache Pulsar on an OVHcloud Managed K
 
 ## Prerequisites
 
-- An OVHcloud Managed Kubernetes cluster (v1.16 <= Kubernetes version < v1.26). Once you have the cluster ready, you should have a default storage class automatically installed, which is required for Pulsar instances on Kubernetes. You can run `kubectl get sc` to view your available storage classes.
+- An OVHcloud Managed Kubernetes cluster (v1.16 <= Kubernetes version < v1.26) with a minimum of 3 worker nodes, each having at least 2 vCores and 4 GB of memory. Once you have the cluster ready, you should have a default storage class automatically installed, which is required for Pulsar instances on Kubernetes. You can run `kubectl get sc` to view your available storage classes.
 - `kubectl` installed and configured (v1.16 or later). For more information, see [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](../configuring-kubectl/).
 
 ## Instructions
@@ -130,6 +130,59 @@ StreamNative provides a quickstart YAML file that contains the manifests of Puls
    ```
 
 The Pulsar cluster is now ready to serve requests.
+
+## Testing the Pulsar cluster
+
+## Cleaning up
+
+You can uninstall the operators and Pulsar when you no longer need them.
+
+### Uninstalling Pulsar
+
+If you already have deployed Pulsar with Pulsar operators, you need to uninstall Pulsar first. You can skip this step if Pulsar is not installed.
+
+- Run the following command to uninstall Pulsar if you installed it with proxies.
+
+  ```
+  kubectl delete -f https://raw.githubusercontent.com/streamnative/charts/master/examples/pulsar-operators/proxy.yaml
+  ```
+
+- Run the following command to uninstall Pulsar if you installed it without proxies.
+
+  ```
+  kubectl delete -f https://raw.githubusercontent.com/streamnative/charts/master/examples/pulsar-operators/quick-start.yaml
+  ```
+
+### Uninstalling the operators
+
+1. Delete the Subscriptions created by OLM. Subscriptions convey a user’s intent to subscribe to the latest version of an operator. By deleting the Subscriptions associated with Pulsar operators, you let OLM know that you no longer want new versions of operators to be installed.
+
+   ```
+   kubectl delete -f https://raw.githubusercontent.com/streamnative/charts/master/examples/pulsar-operators/olm-subscription.yaml
+   ```
+
+2. Delete the ClusterServiceVersions (CSVs) of Pulsar operators. You can run `kubectl get csv -n operators` to check the versions.
+
+   ```
+   kubectl delete csv pulsar-operator.<version> bookkeeper-operator.<version> zookeeper-operator.<version> -n operators
+   ```
+
+3. Delete the CRDs of Pulsar.
+
+   ```
+   kubectl delete crd pulsarbrokers.pulsar.streamnative.io pulsarproxies.pulsar.streamnative.io bookkeeperclusters.bookkeeper.streamnative.io zookeeperclusters.zookeeper.streamnative.io
+   ```
+
+Uninstalling OLM
+
+Run the following commands to uninstall OLM:
+
+```
+export OLM_RELEASE=<olm-release-version>
+kubectl delete apiservices.apiregistration.k8s.io v1.packages.operators.coreos.com
+kubectl delete -f https://github.com/operator-framework/operator-lifecycle-manager/releases/download/${OLM_RELEASE}/crds.yaml
+kubectl delete -f https://github.com/operator-framework/operator-lifecycle-manager/releases/download/${OLM_RELEASE}/olm.yaml
+```
 
 ## More resources
 
