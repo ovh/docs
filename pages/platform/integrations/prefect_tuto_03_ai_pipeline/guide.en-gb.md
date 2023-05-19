@@ -56,7 +56,7 @@ For this pipeline, we will create 9 variables. Most of them are for your S3 acce
 
 Go to the Prefect Cloud interface and create the 9 variables with their UI:
 
-- app_endpoint = the endpoint of the OVHcloud API. It can be the European endpointf, or example.
+- app_endpoint = the endpoint of the OVHcloud API. It can be the European endpoint, for example.
 - app_key = your application key to access the OVHcloud API's.
 - app_secret = your application secret key to access the OVHcloud API's.
 - consumer_key = your consumer key to access the OVHcloud API's.
