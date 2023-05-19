@@ -133,7 +133,7 @@ The Pulsar cluster is now ready to serve requests.
 
 ## Testing the Pulsar cluster
 
-1. Exec into a broker Pod to create a tenant, namespace, and a topic with 4 partitions.
+1. Exec into a broker Pod to create a tenant, a namespace, and a topic with 4 partitions.
 
    ```bash
    kubectl exec -n pulsar brokers-broker-0 -- bin/pulsar-admin tenants create apache
@@ -200,13 +200,13 @@ If you already have deployed Pulsar with Pulsar operators, you need to uninstall
 
 - Run the following command to uninstall Pulsar if you installed it with proxies.
 
-  ```
+  ```bash
   kubectl delete -f https://raw.githubusercontent.com/streamnative/charts/master/examples/pulsar-operators/proxy.yaml
   ```
 
 - Run the following command to uninstall Pulsar if you installed it without proxies.
 
-  ```
+  ```bash
   kubectl delete -f https://raw.githubusercontent.com/streamnative/charts/master/examples/pulsar-operators/quick-start.yaml
   ```
 
@@ -214,19 +214,19 @@ If you already have deployed Pulsar with Pulsar operators, you need to uninstall
 
 1. Delete the Subscriptions created by OLM. Subscriptions convey a user’s intent to subscribe to the latest version of an operator. By deleting the Subscriptions associated with Pulsar operators, you let OLM know that you no longer want new versions of operators to be installed.
 
-   ```
+   ```bash
    kubectl delete -f https://raw.githubusercontent.com/streamnative/charts/master/examples/pulsar-operators/olm-subscription.yaml
    ```
 
 2. Delete the ClusterServiceVersions (CSVs) of Pulsar operators. You can run `kubectl get csv -n operators` to check the versions.
 
-   ```
+   ```bash
    kubectl delete csv pulsar-operator.<version> bookkeeper-operator.<version> zookeeper-operator.<version> -n operators
    ```
 
 3. Delete the CRDs of Pulsar.
 
-   ```
+   ```bash
    kubectl delete crd pulsarbrokers.pulsar.streamnative.io pulsarproxies.pulsar.streamnative.io bookkeeperclusters.bookkeeper.streamnative.io zookeeperclusters.zookeeper.streamnative.io
    ```
 
@@ -234,7 +234,7 @@ If you already have deployed Pulsar with Pulsar operators, you need to uninstall
 
 Run the following commands to uninstall OLM:
 
-```
+```bash
 export OLM_RELEASE=<olm-release-version>
 kubectl delete apiservices.apiregistration.k8s.io v1.packages.operators.coreos.com
 kubectl delete -f https://github.com/operator-framework/operator-lifecycle-manager/releases/download/${OLM_RELEASE}/crds.yaml
