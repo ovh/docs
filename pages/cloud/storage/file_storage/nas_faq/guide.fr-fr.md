@@ -131,7 +131,7 @@ La capacité utilisée par un snapshot est variable en fonction des actions effe
 
 ### Où puis-je récupérer mes snapshots ?
 
-Dans la partition concernée : répertoire caché appelé `.zfs` → répertoire `snapshots` . Fichiers disponibles en read only.
+Dans la partition concernée : répertoire caché appelé `.zfs` → répertoire `snapshots`. Fichiers disponibles en read only.
 
 ### OVHcloud réalise-t-il également des sauvegardes de mes données ?
 
