@@ -63,8 +63,8 @@ delete-ovh-archive = s3api delete-bucket-intelligent-tiering-configuration --id 
 
 ### Bucket archiving
 
-Before archiving a bucket, make sure there is no incomplete multipart uploads.
-this can be done with:
+Before archiving a bucket, make sure there are no incomplete multipart uploads.
+This can be done with:
 
 ```bash
 aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api list-multipart-uploads --bucket <bucket_name>
