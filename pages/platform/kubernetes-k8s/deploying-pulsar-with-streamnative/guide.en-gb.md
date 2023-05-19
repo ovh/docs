@@ -133,6 +133,63 @@ The Pulsar cluster is now ready to serve requests.
 
 ## Testing the Pulsar cluster
 
+1. Exec into a broker Pod to create a tenant, namespace, and a topic with 4 partitions.
+
+   ```bash
+   kubectl exec -n pulsar brokers-broker-0 -- bin/pulsar-admin tenants create apache
+   kubectl exec -n pulsar brokers-broker-0 -- bin/pulsar-admin namespaces create apache/pulsar
+   kubectl exec -n pulsar brokers-broker-0 -- bin/pulsar-admin topics create-partitioned-topic apache/pulsar/test-topic -p 4
+   ```
+
+2. List all the partitioned topics in the namespace `apache/pulsar`.
+
+   ```bash
+   kubectl exec -n pulsar brokers-broker-0 -- bin/pulsar-admin topics list-partitioned-topics apache/pulsar
+   ```
+
+   Expected output:
+
+   ```bash
+   persistent://apache/pulsar/test-topic
+   ```
+
+3. Create a subscription to consume messages from `apache/pulsar/test-topic`.
+
+   ```bash
+   kubectl exec -n pulsar brokers-broker-0 -- bin/pulsar-client consume -s sub apache/pulsar/test-topic -n 0
+   ```
+
+4. Open a new terminal and run the following command to send 10 messages to the `test-topic` topic.
+
+   ```bash
+   kubectl exec -n pulsar brokers-broker-0 -- bin/pulsar-client produce apache/pulsar/test-topic -m "---------hello apache pulsar-------" -n 10
+   ```
+
+   Expected output on the consumer side:
+
+   ```bash
+   ----- got message -----
+   key:[null], properties:[], content:---------hello apache pulsar-------
+   ----- got message -----
+   key:[null], properties:[], content:---------hello apache pulsar-------
+   ----- got message -----
+   key:[null], properties:[], content:---------hello apache pulsar-------
+   ----- got message -----
+   key:[null], properties:[], content:---------hello apache pulsar-------
+   ----- got message -----
+   key:[null], properties:[], content:---------hello apache pulsar-------
+   ----- got message -----
+   key:[null], properties:[], content:---------hello apache pulsar-------
+   ----- got message -----
+   key:[null], properties:[], content:---------hello apache pulsar-------
+   ----- got message -----
+   key:[null], properties:[], content:---------hello apache pulsar-------
+   ----- got message -----
+   key:[null], properties:[], content:---------hello apache pulsar-------
+   ----- got message -----
+   key:[null], properties:[], content:---------hello apache pulsar-------
+   ```
+
 ## Cleaning up
 
 You can uninstall the operators and Pulsar when you no longer need them.
@@ -173,7 +230,7 @@ If you already have deployed Pulsar with Pulsar operators, you need to uninstall
    kubectl delete crd pulsarbrokers.pulsar.streamnative.io pulsarproxies.pulsar.streamnative.io bookkeeperclusters.bookkeeper.streamnative.io zookeeperclusters.zookeeper.streamnative.io
    ```
 
-Uninstalling OLM
+## Uninstalling OLM
 
 Run the following commands to uninstall OLM:
 
