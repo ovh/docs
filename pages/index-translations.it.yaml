@@ -167,6 +167,8 @@ public-cloud-compute-instance-management-horizon: Gestione via Horizon
 public-cloud-compute-instance-management-openstack: Gestione via API OpenStack
 public-cloud-compute-block-storage: Block Storage
 public-cloud-compute-tutorials: Tutorials
+public-cloud-integrations: Integrations
+public-cloud-integrations-prefect: Prefect
 public-cloud-network: Public Cloud Network Services
 public-cloud-network-concepts: Concetti
 public-cloud-network-getting-started: Per iniziare

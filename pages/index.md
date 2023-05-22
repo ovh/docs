@@ -899,6 +899,9 @@
                 + [How to query logs from the command line](platform/logs-data-platform/bonfire)
                 + [Kubernetes Logging with Fluent Bit in a nutshell](platform/logs-data-platform/kubernetes_fluent_bit)
                 + [Powerful alerting with ElastAlert](platform/logs-data-platform/elastalert)
+    + [Integrations](public-cloud-integrations)
+        + [Prefect](public-cloud-integrations-prefect)
+            + [Prefect - Guide - Getting Started](platform/integrations/prefect_guide_01_getting_started)
 + Web Cloud
     + [Domains](web-cloud-domains)
         + [Domain names](web-cloud-domains-domain-names)
