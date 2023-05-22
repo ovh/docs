@@ -4,10 +4,10 @@ slug: iam-policies-api
 excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs d'un compte OVHcloud"
 section: 'Utilisation avancée'
 order: 03
-updated: 2023-03-07
+updated: 2023-05-16
 ---
 
-**Dernière mise à jour le 07/03/2023**
+**Dernière mise à jour le 16/05/2023**
 
 > [!warning]
 >
@@ -111,7 +111,7 @@ Les éléments des politiques sont définis par des URNs. Ces URNs sont définie
 |**Possible values**|urn|:|v1|:|eu, ca, us|:|identité, ressource, resourceGroup|:|<p>Pour le type **identity** : account, user, group</p><p>Pour le type **resource** : tous les types de ressources</p>|:|Valeur alphanumérique|
 |**Account ID Example**|urn|:|v1|:|eu|:|identity|:|account|:|xx1111-ovh|
 |**User group Example**|urn|:|v1|:|eu|:|identity|:|group|:|xx1111-ovh/admin@mycompany.com|
-|**VPS Example**|urn|:|v1|:|ca|:|resource|:|vps|:|b96ffed4-3467-4129-b8be-39a3eb3a0a93|
+|**VPS Example**|urn|:|v1|:|ca|:|resource|:|vps|:|vps-5b48d78b.vps.ovh.net|
 |**Resource Group Example**|urn|:|v1|:|us|:|resourceGroup|||:|aa0713ab-ed13-4f1a-89a5-32aa0cb936d8|
 
 #### Attributs d'une politique
@@ -159,7 +159,7 @@ Par exemple, créez une politique autorisant l'utilisateur nommé "*user1*" à f
     },
     "resources": [
         {
-            "urn": "urn:v1:eu:resource:vps:b96ffed4-3467-4129-b8be-39a3eb3a0a93"
+            "urn": "urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net"
         }
     ]
 }
@@ -209,7 +209,7 @@ Vérifiez cela avec `GET /iam/policy`:
         ],
         "resources": [
             {
-                "urn": "urn:v1:eu:resource:vps:b96ffed4-3467-4129-b8be-39a3eb3a0a93"
+                "urn": "urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net"
             }
         ],
         "permissions": {
@@ -227,7 +227,7 @@ Vérifiez cela avec `GET /iam/policy`:
 ]
 ```
 
-La politique a été créée avec succès. Maintenant, "***user1***" peut **effectuer des redémarrages et créer des sauvegardes (snapshots))** sur le VPS "***urn:v1:eu:resource:vps:b96ffed4-3467-4129-b8be-39a3eb3a0a93***".
+La politique a été créée avec succès. Maintenant, "***user1***" peut **effectuer des redémarrages et créer des sauvegardes (snapshots))** sur le VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***".
 
 ### Identités
 
@@ -341,7 +341,7 @@ Visualisez toutes les ressources liées au compte OVHcloud en appelant :
 [
   {
     "id": "b96ffed4-3467-4129-b8be-39a3eb3a0a93",
-    "urn": "urn:v1:eu:resource:vps:b96ffed4-3467-4129-b8be-39a3eb3a0a93",
+    "urn": "urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net",
     "name": "vps-5b48d78b.vps.ovh.net",
     "displayName": "vps-5b48d78b.vps.ovh.net",
     "type": "vps",
@@ -349,7 +349,7 @@ Visualisez toutes les ressources liées au compte OVHcloud en appelant :
   },
   {
     "id": "c24ace5e-6c9c-436b-9a73-515db8df6250",
-    "urn": "urn:v1:eu:resource:emailDomain:c24ace5e-6c9c-436b-9a73-515db8df6250",
+    "urn": "urn:v1:eu:resource:emailDomain:acme.com",
     "name": "acme.com",
     "displayName": "acme.com",
     "type": "emailDomain",
@@ -357,7 +357,7 @@ Visualisez toutes les ressources liées au compte OVHcloud en appelant :
   },
   {
     "id": "8d70a49b-7a8b-4ec0-ad4b-756da802d994",
-    "urn": "urn:v1:eu:resource:cdn:8d70a49b-7a8b-4ec0-ad4b-756da802d994",
+    "urn": "urn:v1:eu:resource:cdn:cdn-46.105.198.89-12969",
     "name": "cdn-46.105.198.89-12969",
     "displayName": "cdn-46.105.198.89-12969",
     "type": "cdn",

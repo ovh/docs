@@ -99,7 +99,7 @@ sdb      8:16   0   80G  0 disk
 
 Ensuite, montez la partition :
 
-```
+```bash
 [RESCUE] root@vps-111111d:~ $ mount /dev/sdb1 /mnt
 ```
 

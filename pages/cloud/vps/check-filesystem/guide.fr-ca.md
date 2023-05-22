@@ -72,7 +72,7 @@ Les instructions ci-dessus ne s'appliquent généralement pas à un VPS sous Win
 
 Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et lancez un redémarrage du serveur en mode rescue. Si nécessaire, consultez notre [guide du mode rescue](../mode-rescue-vps/).
 
-Sur les anciennes gammes de VPS, vos partitions seront automatiquement montées en mode rescue. Vous pouvez le vérifier à l'aide de la commande suivante:
+Sur les anciennes gammes de VPS, vos partitions seront automatiquement montées en mode rescue. Vous pouvez le vérifier à l'aide de la commande suivante :
 
 ```bash
 $ lsblk
@@ -95,7 +95,7 @@ $ umount /dev/sdb1
 >
 > Si votre VPS est récent, la colonne `MOUNTPOINT` devrait être vide et vous pouvez ignorer l'étape précédente.
 
-La commande suivante vérifie la cohérence de la partition et tente de résoudre les erreurs éventuelles:
+La commande suivante vérifie la cohérence de la partition et tente de résoudre les erreurs éventuelles :
 
 ```bash
 $ ntfsfix /dev/sdb1

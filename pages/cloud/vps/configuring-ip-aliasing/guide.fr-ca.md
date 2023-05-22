@@ -292,7 +292,7 @@ Dans la section « IP Addresses », vérifiez que l'adresse Additional IP a ét�
 
 Tout d'abord, redémarrez votre serveur via la ligne de commande ou son interface utilisateur. Si vous ne parvenez toujours pas à établir une connexion entre le réseau public et votre adresse IP d'alias et que vous suspectez un problème réseau, vous devez redémarrer le serveur en [mode rescue](../mode-rescue-vps/). Vous pouvez ensuite configurer l'adresse Additional IP directement sur le serveur.
 
-Une fois que vous êtes connecté à votre serveur via SSH, entrez la commande suivante:
+Une fois que vous êtes connecté à votre serveur via SSH, entrez la commande suivante :
 
 ```bash
 ifconfig ens3:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up

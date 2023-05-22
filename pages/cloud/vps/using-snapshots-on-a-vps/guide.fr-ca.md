@@ -110,28 +110,28 @@ Le *qemu-guest-agent* requis n'est pas installé par défaut sur la plupart des 
 
 Utilisez la commande suivante pour vérifier si le système est correctement configuré pour les snapshots :
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Si le résultat est différent (« No such file or directory »), installez le dernier package :
 
-```
+```bash
 $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
 Redémarrez le vps :
 
-```
+```bash
 $ sudo reboot
 ```
 
 
 Vérifier le service pour vous assurer qu'il est en cours d'exécution :
 
-```
+```bash
 $ sudo service qemu-guest-agent status
 ```
 
@@ -139,27 +139,27 @@ $ sudo service qemu-guest-agent status
 
 Utilisez la commande suivante pour vérifier si le système est correctement configuré pour les snapshots :
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Si le résultat est différent (« No such file or directory »), installez et activez l'agent :
 
-```
+```bash
 $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
 Redémarrez le vps :
 
-```
+```bash
 $ sudo reboot
 ```
 
 Vérifier l'agent et vérifiez qu'il est en cours d'exécution :
 
-```
+```bash
 $ sudo service qemu-guest-agent status
 ```
 
@@ -169,7 +169,7 @@ Consultez notre guide [Sauvegarde automatique - Kernel panic (cPanel)](https://d
 
 ##### **Windows**
 
-Vous pouvez installer l'agent via un fichier MSI, disponible sur le site du projet Fedora: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
+Vous pouvez installer l'agent via un fichier MSI, disponible sur le site du projet Fedora: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>.
 
 Vérifiez que le service est en cours d'exécution à l'aide de la commande *PowerShell* suivante :
 
@@ -185,4 +185,4 @@ Running  QEMU-GA            QEMU Guest Agent
 
 [Utiliser la sauvegarde automatique sur un VPS](https://docs.ovh.com/ca/fr/vps/autobackup-vps/)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

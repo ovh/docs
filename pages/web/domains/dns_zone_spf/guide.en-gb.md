@@ -92,11 +92,28 @@ To add an SPF record, click on `Add an entry`{.action} in the right-hand menu.
 
 In the window that pops up, the configuration assistant offers several different types of DNS records. There are two ways of adding an SPF record:
 
-- [Add a TXT record](#txtrecord): For users who are experienced or already have the full record. For example, your email solution provider will send you the value.
-- [Add an SPF record](#spfrecord): For users who do not have the entire record. For example, you only have an IP address or the host name of the email server.
 - [Add an OVHcloud SPF record](#spfrecordovhcloud) **and use the OVHcloud configuration**: For users who only have OVHcloud email offers on their domain name (excluding [Private Exchange](https://www.ovhcloud.com/en-gb/emails/private-exchange/){.external}).
+- [Add an SPF record](#spfrecord): For users who do not have the entire record. For example, you only have an IP address or the host name of the email server.
+- [Add a TXT record](#txtrecord): For users who are experienced or already have the full record. For example, your email solution provider will send you the value.
 
 ![domain](images/spf_records_add_entry.png){.thumbnail}
+
+#### Use OVHcloud SPF record <a name="spfrecordovhcloud"></a>
+
+You have chosen the `SPF`{.action} record and would like to apply the OVHcloud configuration. This means that all of the OVHcloud outgoing email servers are included for the following email offers:
+
+- MX Plan standalone or included in an OVHcloud [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}
+- [E-mail Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/)
+- [Hosted Exchange](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/)
+
+Choose the `SPF`{.action} type record and then click on the button `Use the SPF for OVHcloud web hosting`{.action}. In the following step, click on `Confirm`{.action} to approve the action.
+
+![domain](images/spf_records_add_entry_step2.png){.thumbnail}
+
+> [!primary]
+>
+> It can take between 4 and 24 hours until the configuration is fully effectual.
+>
 
 #### Adding an SPF record <a name="spfrecord"></a>
 
@@ -132,23 +149,6 @@ Regarding the question: "**Does the data you have entered describe all hosts tha
 |No|Specify that servers receiving emails from your domain should accept them if they come from illegitimate sources (not present in your SPF record), without any particular action. The email header will however be increased.|
 
 Once finished, click on `Next`{.action} and verify that the values you have entered are correct by clicking `Confirm`{.action}.
-
-> [!primary]
->
-> It can take between 4 and 24 hours until the configuration is fully effectual.
->
-
-#### Use OVHcloud SPF record <a name="spfrecordovhcloud"></a>
-
-You have chosen the `SPF`{.action} record and would like to apply the OVHcloud configuration. This means that all of the OVHcloud outgoing email servers are included for the following email offers:
-
-- MX Plan standalone or included in an OVHcloud [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}
-- [E-mail Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/)
-- [Hosted Exchange](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/)
-
-Choose the `SPF`{.action} type record and then click on the button `Use the SPF for OVHcloud web hosting`{.action}. In the following step, click on `Confirm`{.action} to approve the action.
-
-![domain](images/spf_records_add_entry_step2.png){.thumbnail}
 
 > [!primary]
 >

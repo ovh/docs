@@ -22,6 +22,10 @@ Le soluzioni di hosting Web OVHcloud mettono a disposizione uno spazio di storag
 - Disporre delle informazioni necessarie per l’accesso in SSH allo spazio di storage
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}
 
+> [!warning]
+> 
+> L'accesso SSH a un hosting Web OVHcloud è possibile a partire da [l'offerta Pro](https://www.ovhcloud.com/it/web-hosting/compare/).
+
 ## Procedura
 
 ### Step 1: verifica che l’accesso SSH sia attivo <a name="sshcheck"></a>

@@ -283,7 +283,7 @@ Consult our documentation for [resolving recurring errors when using FTP](https:
 
 Generally, find all our [of our guides related to shared](https://docs.ovh.com/asia/en/hosting/).
 
-Do not hesitate to consult the the [official page of FileZilla](https://filezilla-project.org/).
+Do not hesitate to consult the [official page of FileZilla](https://filezilla-project.org/).
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/).
 

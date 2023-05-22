@@ -42,7 +42,7 @@ chntpw -u Administrator SAM
 
 Appuyez sur `1`{.action} et `Entrée`{.action} pour effacer le mot de passe. Appuyez sur `q`{.action} pour quitter l'invite de commande de changement de mot de passe. Par la suite, appuyez sur `y`{.action} pour écrire les changements.
 
-Vous pouvez maintenant sortir le VPS du mode rescue. (pour plus d'informations, consultez le guide [Activer le mode rescue sur un VPS](../mode-rescue-vps))
+Vous pouvez maintenant sortir le VPS du mode rescue (pour plus d'informations, consultez le guide [Activer le mode rescue sur un VPS](../mode-rescue-vps)).
 
 A votre prochaine connexion, vous ne serez pas obligé d'entrer un mot de passe pour la session dont vous avez fait le changement de mot de passe.
 

@@ -39,7 +39,7 @@ L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de sig
 
 ## Prérequis
 
-- Disposer d'un accès à la gestion du nom de domaine concerné depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou auprès de votre prestataire de domaine s'il est enregistré en dehors d'OVHcloud .
+- Disposer d'un accès à la gestion du nom de domaine concerné depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou auprès de votre prestataire de domaine s'il est enregistré en dehors d'OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir souscrit une de nos offres [Exchange](https://www.ovhcloud.com/fr/emails/), [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/) ou une offre e-mail hors OVHcloud disposant du DKIM.
 
@@ -165,7 +165,7 @@ Pour configurer le DKIM, rendez-vous sur le site <https://api.ovh.com/console/>,
 
 > Appuyez-vous sur notre guide [« Découvrez comment utiliser les API OVHcloud »](/pages/account/api/first-steps) si vous n'avez jamais utilisé les API.
 
-Dirigez-vous vers la section `/email/exchange` (offres Exchanges) ou `/email/pro` (offre E-mail Pro) des API et tapez « dkim » dans la case `Filter` pour faire apparaître uniquement les API relatives au DKIM.
+Dirigez-vous vers la section `/email/exchange` (offres Exchanges) ou `/email/pro` (offre E-mail Pro) des API et tapez « dkim » dans la case `Filter` pour faire apparaître uniquement les API relatifs au DKIM.
 
 ![email](images/dns-dkim-api01.png){.thumbnail}
 
@@ -465,11 +465,11 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 
 #### Les différents états du DKIM <a name="dkim-status"></a>
 
-Sélectionnez l'offre e-mail concerné dans les onglets suivant:
+Sélectionnez l'offre e-mail concernée dans les onglets suivant:
 
 > [!tabs]
 > **Exchange**
->> Lors de vos opérations sur le DKIM de votre plateforme Exchange, utilisez l'API ci-dessous pour vérifier le statut actuel du DKIM.
+>> Lors de vos opérations sur le DKIM de votre plateforme Exchange, utilisez l'appel API ci-dessous pour vérifier le statut actuel du DKIM.
 >>
 >> > [!api]
 >> >
@@ -490,14 +490,14 @@ Sélectionnez l'offre e-mail concerné dans les onglets suivant:
 >> - `disabling` : le DKIM est en cours de désactivation. <br>
 >> - `deleting` : le DKIM est en cours de suppression. <br>
 >>
->> Si vous rencontrez l'erreur suivante lorsque vous lancez cette API, cela signifie que le sélecteur n'existe pas ou a été supprimé. Il faudra le créer.
+>> Si vous rencontrez l'erreur suivante lorsque vous lancez l'appel API, cela signifie que le sélecteur n'existe pas ou a été supprimé. Il faudra le créer.
 >>
 >> ```
 >> Not Found (404)
 >> { "message": "The requested object (selectorName = ovhemp123456-selector1) does not exist" }
 >> ```
 > **E-mail Pro**
->> Lors de vos opérations sur le DKIM de votre plateforme E-mail Pro, utilisez l'API ci-dessous pour vérifier le statut actuel du DKIM.
+>> Lors de vos opérations sur le DKIM de votre plateforme E-mail Pro, utilisez l'appel API ci-dessous pour vérifier le statut actuel du DKIM.
 >>
 >> > [!api]
 >> >
@@ -517,7 +517,7 @@ Sélectionnez l'offre e-mail concerné dans les onglets suivant:
 >> - `disabling` : le DKIM est en cours de désactivation. <br>
 >> - `deleting` : le DKIM est en cours de suppression. <br>
 >>
->> Si vous rencontrez l'erreur suivante lorsque vous lancez cette API, cela signifie que le sélecteur n'existe pas ou a été supprimé. Il faudra le créer.
+>> Si vous rencontrez l'erreur suivante lorsque vous lancez l'appel API, cela signifie que le sélecteur n'existe pas ou a été supprimé. Il faudra le créer.
 >>
 >> ```
 >> Not Found (404)
@@ -530,7 +530,7 @@ Sélectionnez l'offre e-mail concerné dans les onglets suivant:
 >
 > Le sélecteur DKIM doit être en statut `ready` avant de pouvoir être activé.
 
-Sélectionnez l'offre e-mail concerné dans les onglets suivant:
+Sélectionnez l'offre e-mail concernée dans les onglets suivant:
 
 > [!tabs]
 > **Exchange**
@@ -563,13 +563,14 @@ Sélectionnez l'offre e-mail concerné dans les onglets suivant:
 >
 > Lors d'une rotation de sélecteur DKIM, vous pouvez directement activer le deuxième sélecteur que vous avez créé afin de basculer dessus, tout en conservant le premier sélecteur qui restera actif le temps que tous les e-mails délivrés avec celui-ci soient bien analysés par leur destinataire.
 
- #### 4.Désactiver et supprimer le DKIM <a name="enable-switch"></a>
+#### Désactiver et supprimer le DKIM <a name="enable-switch"></a>
 
 > [!warning]
 >
 > Le sélecteur DKIM doit être en statut `inProduction` avant de pouvoir être désactivé.
 
-Sélectionnez l'offre e-mail concerné dans les onglets suivant:
+Sélectionnez l'offre e-mail concernée dans les onglets suivant:
+
 
 > [!tabs]
 > **Exchange**

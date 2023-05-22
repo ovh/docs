@@ -6,10 +6,10 @@ section: Guides généraux
 order: 17
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/backups'
-updated: 2023-03-27
+updated: 2023-05-11
 ---
 
-**Last updated March 27th, 2023**
+**Last updated May 11th, 2023**
 
 ## Objective
 
@@ -29,21 +29,16 @@ Either you run into a problem or you just want to see what your data looked like
 
 ## Engine Specifications
 
-> [!warning]
->
-> Starting March 6th 2023, on top of on-site backups, free of charge off-site backups are being made available progressively. Until total completion of this rollout, please rely exclusively on the on-site backups for recovery procedures. See the concerned engines in the table below.
->
-
 Engine | Backup Method(s) | Location(s) | Frequency | RPO | Encrypted
 :--- | :--- | :---: | :---: | :---: | :---:
 MongoDB | Backup on object storage | Off-Site | Daily | 24h | Yes
 MongoDB Enterprise | PITR on object storage | Off-site | Continuous | Few minutes | Yes
-PostgreSQL | PITR on object storage | On-Site, *Off-Site* | Continuous | Few minutes | Yes
-MySQL | PITR on object storage | On-Site, *Off-Site* | Continuous | Few minutes | Yes
-Redis | Backup on object storage | On-Site, *Off-Site* | 2 times a day | 12h | Yes
-OpenSearch | Incremental | On-Site, *Off-Site* | Hourly | 1h | Yes
-M3 | Backup on object storage | On-Site, *Off-Site* | Daily | 24h | Yes
-Cassandra | Backup on object storage | On-Site, *Off-Site* | Daily | 24h | Yes
+PostgreSQL | PITR on object storage | On-Site, Off-Site | Continuous | Few minutes | Yes
+MySQL | PITR on object storage | On-Site, Off-Site | Continuous | Few minutes | Yes
+Redis | Backup on object storage | On-Site, Off-Site | 2 times a day | 12h | Yes
+OpenSearch | Incremental | On-Site, Off-Site | Hourly | 1h | Yes
+M3 | Backup on object storage | On-Site, Off-Site | Daily | 24h | Yes
+Cassandra | Backup on object storage | On-Site, Off-Site | Daily | 24h | Yes
 Kafka | N/A | N/A | N/A | N/A | N/A
 
 ## Off-site backup replication mecanism

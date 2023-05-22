@@ -6,10 +6,10 @@ section: AI Notebooks - Tutorials
 order: 05
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-hugging-face-sentiment-analysis/'
-updated: 2022-09-01
+updated: 2023-05-11
 ---
 
-**Last updated 1st September, 2022.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 
@@ -71,14 +71,14 @@ If you want to upload it from the [OVHcloud Control Panel](https://www.ovh.com/a
 If you want to run it with the CLI, just follow [this guide](https://docs.ovh.com/pt/publiccloud/ai/cli/access-object-storage-data/). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
 ```bash
-ovhai data upload <region> <container> <paths>
+ovhai bucket object upload <container>@<region> <paths>
 ```
 
 ### Launch and access a Jupyter notebook
 
 The first step will consist in creating a Jupyter Notebook with OVHcloud AI Notebooks.
 
-First, you have to install the OVHAI CLI then choose the name of the notebook (`<notebook-name>`), the Hugging Face image (`huggingface-transformers`) and the number of GPUs (`<nb-gpus>`) to use on your notebook. You can also attach your data, previously stored in the object storage (`<container@region/prefix:mount_path:permission>`) and use the following command:
+First, you have to install the `ovhai` CLI then choose the name of the notebook (`<notebook-name>`), the Hugging Face image (`huggingface-transformers`) and the number of GPUs (`<nb-gpus>`) to use on your notebook. You can also attach your data, previously stored in the object storage (`<container@region/prefix:mount_path:permission>`) and use the following command:
 
 ```bash
 ovhai notebook run huggingface-transformers jupyterlab \
