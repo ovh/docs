@@ -902,6 +902,7 @@
     + [Integrations](public-cloud-integrations)
         + [Prefect](public-cloud-integrations-prefect)
             + [Prefect - Guide - Getting Started](platform/integrations/prefect_guide_01_getting_started)
+            + [Prefect - Tutorial - Emails notification with blocks and automations](platform/integrations/prefect_tuto_02_block_automation)
 + Web Cloud
     + [Domains](web-cloud-domains)
         + [Domain names](web-cloud-domains-domain-names)
