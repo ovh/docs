@@ -269,6 +269,7 @@ Notre service essaie d'envoyer les `deliver_sm` au ESME pendant 7 jours maximum.
 |100 | Invalid Destination Numbering Plan |
 |101 | Invalid Content |
 |102 | Invalid GSM7 Coding (e.g. error with packed/unpacked GSM7) |
+|103 | Message too long for the number of allowed segments |
 |254 | Pending |
 |255 | Unknown Error |
 |800 | Undeliverable |
