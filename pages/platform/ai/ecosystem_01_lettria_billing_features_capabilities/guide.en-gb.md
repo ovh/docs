@@ -106,8 +106,8 @@ You can also start this app with the `ovhai` [CLI](/pages/platform/ai/cli_10_how
 
 ```console
 ovhai app run \
-  	--gpu 1 \
-	--default-http-port 8080 \
+    --gpu 1 \
+    --default-http-port 8080 \
     --label <name=value> \
     --partner lettria
     emotions:v1.0.0
