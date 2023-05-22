@@ -1,13 +1,11 @@
 ---
 title: Prefect - Tutorial - AI pipeline with training job
 excerpt: Create your first AI pipeline in a public Cloud by launching an AI Training job linked to an S3 bucket
-updated: 2024-05-12
+updated: 2024-05-22
 ---
 
-**Last updated 12th May 2023**
- 
 ## Objective
- 
+
 The purpose of this tutorial is to create an end-to-end AI pipeline, from the ingestion of data in an S3 object storage to the email notification when your AI Training job is done. 
 We will launch a flow in Prefect which will simulate an AI Training job in a Public cloud project. The main goal is to show that we can launch AI training jobs without having to monitor their state over time, and start a real use case with automation. Prefect will help us achieve these goals.
 
