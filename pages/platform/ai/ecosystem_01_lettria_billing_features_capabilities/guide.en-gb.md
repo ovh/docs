@@ -4,10 +4,10 @@ slug: ecosystem/lettria-billing-features
 excerpt: Learn how Lettria models and billing work
 section: AI Partners Ecosystem
 order: 01
-updated: 2023-05-15
+updated: 2023-05-22
 ---
 
-**Last updated 15th May, 2023.**
+**Last updated 22th May, 2023.**
 
 ## Objective
 
@@ -109,7 +109,8 @@ ovhai app run \
   	--gpu 1 \
 	--default-http-port 8080 \
 	--label <name=value> \
-	<lettria_image_name>
+    --partner lettria
+	emotions:v1.0.0
 ```
 
 > [!primary]
@@ -154,7 +155,7 @@ curl --request POST \
 Giving us:
 
 ```console
-[{"document":"Congratulations! You have successfully launched your Lettria app.","sentiment":0.946,"emotions":{"gratitude":0.936,"admiration":0.921,"pride":0.861,"joy":0.701,"excitement":0.689,"amusement":0.306,"caring":0.244,"approval":0.239,"optimism":0.207,"relief":0.168,"neutral":0.154,"surprise":0.148,"realization":0.081,"curiosity":0.07,"love":0.06,"desire":0.04,"anger":0.04,"annoyance":0.035,"fear":0.019,"embarrassment":0.017,"disappointment":0.017,"disapproval":0.014,"confusion":0.014,"grief":0.013,"sadness":0.012,"disgust":0.011,"nervousness":0.005,"remorse":0.004}}]
+[{"type":"gratitude","confidence":0.936,"detail":{"gratitude":0.936,"admiration":0.921,"pride":0.861,"joy":0.701,"excitement":0.689,"amusement":0.306,"caring":0.244,"approval":0.239,"optimism":0.207,"relief":0.168,"neutral":0.154,"surprise":0.148,"realization":0.081,"curiosity":0.07,"love":0.06,"desire":0.04,"anger":0.04,"annoyance":0.035,"fear":0.019,"embarrassment":0.017,"disappointment":0.017,"disapproval":0.014,"confusion":0.014,"grief":0.013,"sadness":0.012,"disgust":0.011,"nervousness":0.005,"remorse":0.004}}]
 ```
 
 #### Generate a Python query
@@ -182,7 +183,7 @@ print(r.text)
 Result:
 
 ```console
-[{"document":"Congratulations! You have successfully launched your Lettria app.","sentiment":0.946,"emotions":{"gratitude":0.936,"admiration":0.921,"pride":0.861,"joy":0.701,"excitement":0.689,"amusement":0.306,"caring":0.244,"approval":0.239,"optimism":0.207,"relief":0.168,"neutral":0.154,"surprise":0.148,"realization":0.081,"curiosity":0.07,"love":0.06,"desire":0.04,"anger":0.04,"annoyance":0.035,"fear":0.019,"embarrassment":0.017,"disappointment":0.017,"disapproval":0.014,"confusion":0.014,"grief":0.013,"sadness":0.012,"disgust":0.011,"nervousness":0.005,"remorse":0.004}}]
+[{"type":"gratitude","confidence":0.936,"detail":{"gratitude":0.936,"admiration":0.921,"pride":0.861,"joy":0.701,"excitement":0.689,"amusement":0.306,"caring":0.244,"approval":0.239,"optimism":0.207,"relief":0.168,"neutral":0.154,"surprise":0.148,"realization":0.081,"curiosity":0.07,"love":0.06,"desire":0.04,"anger":0.04,"annoyance":0.035,"fear":0.019,"embarrassment":0.017,"disappointment":0.017,"disapproval":0.014,"confusion":0.014,"grief":0.013,"sadness":0.012,"disgust":0.011,"nervousness":0.005,"remorse":0.004}}]
 ```
 
 ## Lettria billing concept
