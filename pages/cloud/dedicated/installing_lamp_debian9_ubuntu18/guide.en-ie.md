@@ -104,13 +104,13 @@ It is recommended to use the proposed authentication method (*unix_socket*) inst
 
 Enter `n`{.action} at the next prompt:
 
-``` { .console }
+``` {.console}
 Change the root password? [Y/n]
 ```
 
 Since the subsequent prompts concern security measures, confirm them all with `y`{.action} until the script is finished.
 
-``` { .console }
+``` {.console}
 Reloading the privilege tables will ensure that all changes made so far
 will take effect immediately.
 
@@ -142,7 +142,7 @@ Open the MariaDB shell:
 sudo mariadb
 ```
 
-``` { .mysql }
+``` {.mysql}
 MariaDB [(none)]> 
 ```
 
@@ -154,7 +154,7 @@ MariaDB [(none)]> CREATE DATABASE database_name;
 
 Create a "user" with a name of your choice and grant it all rights on this database. This account can then access the database and carry out all operations for the application using this database. Replace `database_name` with the name of your database, `user_name` with a name of your choice and `password` with a strong password.
 
-``` { .sql }
+``` {.sql}
 MariaDB [(none)]> GRANT ALL ON database_name.* TO 'user_name'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION;
 ```
 
@@ -173,13 +173,13 @@ MariaDB [(none)]> exit;
 
 [Configuring a firewall](https://docs.ovh.com/ie/en/dedicated/firewall-iptables/) (*iptables*) will enhance the security of your server. This process can be simplified by using the frontend "Uncomplicated Firewall" (UFW) and its preset of profiles. Install UFW:
 
-``` { .shell-session }
+``` {.shell-session}
 sudo apt install ufw
 ```
 
 The relevant profiles are labelled as "WWW" in the application list:
 
-``` { .shell-session }
+``` {.shell-session}
 sudo ufw app list | grep WWW
   WWW
   WWW Cache
@@ -199,7 +199,7 @@ sudo ufw allow 'WWW Full'
 
 Since all ports not explicitly allowed will be **blocked** after enabling the firewall, make sure to allow SSH connections (port 22 in a default configuration) as well:
 
-``` { .bash }
+``` {.bash}
 sudo ufw allow 'SSH'
 ```
 
