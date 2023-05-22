@@ -51,7 +51,7 @@ Um einen "Fehler 500" zu beheben, können Sie Ihre Website aus einem Backup [wie
 
 ### Die Logs Ihres Hostings überprüfen
 
-Lesen Sie zuerst [diese Anleitung](../webhosting_die_statistiken_und_logs_meiner_website_einsehen/), um die Ursache des Fehlers 500 in den Logs Ihres Hostings zu ermitteln.
+Lesen Sie zuerst [diese Anleitung](../webhosting_die_statistiken_und_logs_meiner_website_einsehen/), um die Ursache des Fehlercodes 500 in den Logs Ihres Hostings zu ermitteln.
 
 ### Ihre Website in den Entwicklermodus versetzen
 
@@ -83,13 +83,13 @@ Die Anleitung "[Verwendung von FileZilla](../webhosting_hilfe_zur_verwendung_von
 
 ### Auf die Fehlerdetails in Ihren Skripten zugreifen
 
-Aus Sicherheitsgründen verschleiert Ihre Website alle technischen Details über einen Fehler 500.
+Aus Sicherheitsgründen verschleiert Ihre Website alle technischen Details über einen Fehler vom Typ "500".
 
 Wenn Sie oder Ihr Entwickler Zugang zu diesen Informationen haben möchten, können Sie sich [über SSH mit Ihrer Website verbinden](../webhosting_ssh_auf_ihren_webhostings/) (nur verfügbar mit einem [Webhosting der Reihe Pro, Performance oder Cloud Web](https://www.ovhcloud.com/de/web-hosting/)).
 
 ### Den Zustand der Datenbank überprüfen
 
-Für alle Fehler 500, die mit der Datenbank Ihrer Website in Zusammenhang stehen können, lesen Sie unsere Anleitung ["Die häufigsten Datenbankfehler beheben"](/pages/web/hosting/diagnosis_database_errors).
+Für alle "Fehler 500", die mit der Datenbank Ihrer Website in Zusammenhang stehen könnten, lesen Sie unsere Anleitung ["Die häufigsten Datenbankfehler beheben"](/pages/web/hosting/diagnosis_database_errors).
 
 ### Ihre Website auf einen vorherigen Zustand zurücksetzen <a name="restore"></a>
 
@@ -115,11 +115,9 @@ Wenn Ihre Website eine Datenbank nutzt, lesen Sie unsere Anleitung "[Backup in e
 
 [Was tun, wenn eine “Index of“-Seite angezeigt wird?](/pages/web/hosting/diagnostic-index-of)
 
-[WWas tun bei dem Fehler "403 forbidden"?](/pages/web/hosting/diagnostic_403_forbidden)
+[Was tun bei dem Fehler "403 forbidden"?](/pages/web/hosting/diagnostic_403_forbidden)
 
 [Die häufigsten Datenbankfehler beheben](/pages/web/hosting/diagnosis_database_errors)
-
-[Beheben des Fehlers “500 Internal Server Error”](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
 
 [Meine Website lädt zu langsam. Was soll ich tun?](/pages/web/hosting/diagnostic_slownesses)
 
