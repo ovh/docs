@@ -4,14 +4,12 @@ slug: error-500-internal-server-error
 excerpt: Diagnosticar los casos más comunes de errores 500
 section: Diagnóstico
 order: 06
-updated: 2022-07-21
+updated: 2023-05-16
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
-
-**Última actualización: 21/07/2022**
 
 ## Objetivo
 
@@ -118,8 +116,6 @@ Por último, si se ha producido un error al actualizar la versión PHP del aloja
 [¿Qué hacer en caso de página 403 forbidden?](/pages/web/hosting/diagnostic_403_forbidden)
 
 [Resolver los errores más frecuentes asociados a las bases de datos](/pages/web/hosting/diagnosis_database_errors)
-
-[¿Qué hacer en caso de error 500 Internal Server Error?](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
 
 [Mi sitio es lento. ¿Qué hacer?](/pages/web/hosting/diagnostic_slownesses)
 

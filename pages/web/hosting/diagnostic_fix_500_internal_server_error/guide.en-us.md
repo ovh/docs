@@ -4,11 +4,9 @@ excerpt: Find out how to fix some of the most common website errors
 slug: web_hosting_how_to_fix_the_500_internal_server_error
 section: 'Troubleshooting'
 order: 06
-updated: 2022-07-21
+updated: 2023-05-16
 ---
 
-
-**Last updated 21st July 2022**
 
 ## Objective
 
@@ -113,8 +111,6 @@ If your website uses a database, read our guide [Importing a backup into a Web H
 [What do I do if I have a 403 forbidden page?](/pages/web/hosting/diagnostic_403_forbidden)
 
 [Troubleshooting common database errors](/pages/web/hosting/diagnosis_database_errors)
-
-[Fixing the 500 Internal Server Error](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
 
 [My website is slow. What to do?](/pages/web/hosting/diagnostic_slownesses)
 

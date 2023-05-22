@@ -4,14 +4,12 @@ excerpt: Erfahren Sie hier, welche Maßnahmen Sie bei einem Fehlercode 500 anwen
 slug: webhosting_bei_einem_fehler_500_internal_server_error
 section: 'Diagnose'
 order: 06
-updated: 2022-07-21
+updated: 2023-05-16
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
-
-**Letzte Aktualisierung am 21.07.2022**
 
 ## Ziel 
 

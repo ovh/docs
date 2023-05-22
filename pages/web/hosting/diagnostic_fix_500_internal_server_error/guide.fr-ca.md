@@ -4,10 +4,8 @@ slug: erreur-500-internal-server-error
 excerpt: Diagnostiquez les cas les plus courants d'erreurs 500
 section: Diagnostic
 order: 06
-updated: 2022-07-21
+updated: 2023-05-16
 ---
-
-**Dernière mise à jour le 21/07/2022**
 
 ## Objectif
 
@@ -109,8 +107,6 @@ Enfin, si l'erreur 500 est apparue suite à une mise à jour de la version PHP d
 [Que faire en cas de page « 403 forbidden » ?](/pages/web/hosting/diagnostic_403_forbidden)
 
 [Résoudre les erreurs les plus fréquentes liées aux bases de données](/pages/web/hosting/diagnosis_database_errors)
-
-[Que faire en cas d’erreur 500 Internal Server Error ?](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
 
 [Mon site est lent. Que faire ?](/pages/web/hosting/diagnostic_slownesses)
 

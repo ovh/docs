@@ -111,8 +111,6 @@ Enfin, si l'erreur 500 est apparue suite à une mise à jour de la version PHP d
 
 [Résoudre les erreurs les plus fréquentes liées aux bases de données](/pages/web/hosting/diagnosis_database_errors)
 
-[Que faire en cas d’erreur 500 Internal Server Error ?](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
-
 [Mon site est lent. Que faire ?](/pages/web/hosting/diagnostic_slownesses)
 
 [Résoudre l'erreur « Site non installé »](/pages/web/hosting/multisites_website_not_installed)
