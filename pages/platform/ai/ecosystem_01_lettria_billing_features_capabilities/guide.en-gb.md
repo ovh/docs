@@ -37,13 +37,13 @@ The goal of sentiment analysis is to automatically classify textual data as **po
 
 Input example:
 ```console
-I love Lettria and OVH!
+I love Lettria and OVHcloud!
 ```
 
 Output example:
 
 ```console
-{ "value": 0,87 }
+{"type":"positive","score":0.893}
 ```
 
 > [!primary]
@@ -57,15 +57,15 @@ Lettria allows you to extract emotion from text data. The goal is to automatical
 
 Input example:
 ```console
-I love Lettria and OVH !
+I love Lettria and OVHcloud!
 ```
 
 Output example:
 
 ```console
-{ "type": "love", "value": 0.99 },
-{ "type": "admiration", "value": 0.65 },
-{ "type": "joy", "value": 0.59 }
+{"type":"love","confidence":0.99}
+{"type":"admiration","confidence":0.65}
+{"type":"joy","confidence":0.585}
 ```
 
 > [!primary]
