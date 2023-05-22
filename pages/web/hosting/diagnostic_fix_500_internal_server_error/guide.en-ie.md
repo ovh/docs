@@ -82,6 +82,10 @@ For security reasons, your website hides all technical details about the error 5
 
 To verify these details, you can use a [SSH connection](../web_hosting_ssh_on_web_hosting_packages/). (SSH is only available with the [Professional Hosting, Performance Hosting and Cloud Web Hosting](https://www.ovhcloud.com/en-ie/web-hosting/).)
 
+### Check the status of the database
+
+For any 500 errors that may be related to your website’s database, please refer to our documentation [“Troubleshooting common database errors”](/pages/web/hosting/diagnosis_database_errors).
+
 ### Restore your website to its previous state <a name="restore"></a>
 
 If the 500 error appeared after modifying the PHP configuration of your web hosting, return to the previous one by following our guide [Changing a Web Hosting plan’s PHP version](../how_to_configure_php_on_your_ovh_web_hosting_package_2014/).
@@ -100,6 +104,20 @@ If your website uses a database, read our guide [Importing a backup into a Web H
 
 ## Go further <a name="gofurther"></a>
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/)
+[What do I do if my website is down?](/pages/web/hosting/diagnostic-website-not-accessible)
+
+[What to do if you get a "Your connection is not private" error?](/pages/web/hosting/diagnostic-not-secured)
+
+[Troubleshooting an "Index of" page](/pages/web/hosting/diagnostic-index-of)
+
+[What do I do if I have a 403 forbidden page?](/pages/web/hosting/diagnostic_403_forbidden)
+
+[Troubleshooting common database errors](/pages/web/hosting/diagnosis_database_errors)
+
+[Fixing the 500 Internal Server Error](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
+
+[My website is slow. What to do?](/pages/web/hosting/diagnostic_slownesses)
+
+[Resolving a “Website not installed” error](/pages/web/hosting/multisites_website_not_installed)
 
 Join our community of users on <https://community.ovh.com/en/>

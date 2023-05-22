@@ -87,6 +87,10 @@ Por motivos de seguridad, su sitio web oculta los detalles sobre el origen del e
 
 Si usted o su desarrollador desea tener acceso a estos detalles, puede conectarse a su sitio web a través de una [conexión SSH](../web_hosting_ssh_en_alojamiento_compartido/) a través de la fórmula de alojamiento [Pro2014](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) o superior.
 
+### Comprobar el estado de la base de datos
+
+Para más información sobre los errores que puedan estar relacionados con la base de datos de su sitio web, consulte nuestra guía ["Resolver los errores más frecuentes asociados a las bases de datos"](/pages/web/hosting/diagnóstico_database_errors).
+
 ### Restaurar el sitio web a su estado anterior <a name="restore"></a>
 
 > [!warning]
@@ -104,5 +108,21 @@ Por último, si se ha producido un error al actualizar la versión PHP del aloja
 
 
 ## Más información <a name="gofurther"></a>
+
+[¿Qué hacer si mi sitio web no está accesible?](/pages/web/hosting/diagnostic-website-not-accessible)
+
+[¿Qué hacer en caso de error « La conexión no es privada »?](/pages/web/hosting/diagnostic-not-secured)
+
+[¿Qué hacer en caso de página del « Index of » ?](/pages/web/hosting/diagnostic-index-of)
+
+[¿Qué hacer en caso de página 403 forbidden?](/pages/web/hosting/diagnostic_403_forbidden)
+
+[Resolver los errores más frecuentes asociados a las bases de datos](/pages/web/hosting/diagnosis_database_errors)
+
+[¿Qué hacer en caso de error 500 Internal Server Error?](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
+
+[Mi sitio es lento. ¿Qué hacer?](/pages/web/hosting/diagnostic_slownesses)
+
+[RSolucionar el error «Sitio no instalado»](/pages/web/hosting/multisites_website_not_installed)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -87,6 +87,10 @@ Aus Sicherheitsgründen verschleiert Ihre Website alle technischen Details über
 
 Wenn Sie oder Ihr Entwickler Zugang zu diesen Informationen haben möchten, können Sie sich [über SSH mit Ihrer Website verbinden](../webhosting_ssh_auf_ihren_webhostings/) (nur verfügbar mit einem [Webhosting der Reihe Pro, Performance oder Cloud Web](https://www.ovhcloud.com/de/web-hosting/)).
 
+### Den Zustand der Datenbank überprüfen
+
+Für alle Fehler 500, die mit der Datenbank Ihrer Website in Zusammenhang stehen können, lesen Sie unsere Anleitung ["Die häufigsten Datenbankfehler beheben"](/pages/web/hosting/diagnosis_database_errors).
+
 ### Ihre Website auf einen vorherigen Zustand zurücksetzen <a name="restore"></a>
 
 Wenn der "Fehler 500" nach dem Ändern der PHP-Konfiguration Ihres Webhostings aufgetreten ist, kehren Sie zur vorherigen Einstellung zurück, indem Sie [unserer Anleitung folgen](../konfiguration_von_php_fur_ein_ovh_webhosting_2014/).
@@ -105,6 +109,20 @@ Wenn Ihre Website eine Datenbank nutzt, lesen Sie unsere Anleitung "[Backup in e
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Kontaktieren Sie OVHcloud Partner](https://partner.ovhcloud.com/de/directory/)
+[Was tun, wenn Ihre Website nicht erreichbar ist?](/pages/web/hosting/diagnostic-website-not-accessible)
+
+[Was tun bei dem Fehler "Dies ist keine sichere Verbindung"?](/pages/web/hosting/diagnostic-not-secured)
+
+[Was tun, wenn eine “Index of“-Seite angezeigt wird?](/pages/web/hosting/diagnostic-index-of)
+
+[WWas tun bei dem Fehler "403 forbidden"?](/pages/web/hosting/diagnostic_403_forbidden)
+
+[Die häufigsten Datenbankfehler beheben](/pages/web/hosting/diagnosis_database_errors)
+
+[Beheben des Fehlers “500 Internal Server Error”](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
+
+[Meine Website lädt zu langsam. Was soll ich tun?](/pages/web/hosting/diagnostic_slownesses)
+
+[Fehler "Seite nicht installiert" beheben](/pages/web/hosting/multisites_website_not_installed)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>
