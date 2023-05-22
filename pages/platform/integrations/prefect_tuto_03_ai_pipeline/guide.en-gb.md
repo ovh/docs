@@ -1,7 +1,7 @@
 ---
 title: Prefect - Tutorial - AI pipeline with training job
 excerpt: Create your first AI pipeline in a public Cloud by launching an AI Training job linked to an S3 bucket
-updated: 2024-05-22
+updated: 2023-05-22
 ---
 
 ## Objective
