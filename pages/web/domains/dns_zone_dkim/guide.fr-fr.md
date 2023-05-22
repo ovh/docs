@@ -169,7 +169,7 @@ Dirigez-vous vers la section `/email/exchange` (offres Exchanges) ou `/email/pro
 
 #### Configuration complète du DKIM <a name="firststep"></a>
 
-##### **Pour exchange**
+##### **Pour Exchange** <a name="confex"></a>
 
 Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 
@@ -317,7 +317,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> > Vous avez maintenant effectué toutes les manipulations pour activer le DKIM. Pour s'assurer que celui-ci est bien activé, consultez la section [**« Les différents états du DKIM »**](dkim-status#) de ce guide pour vérifier que la valeur `status:` est bien en `inProduction`. Si c'est bien le cas, votre DKIM est désormais actif.
 >>
 
-##### **Pour E-mail Pro**
+##### **Pour E-mail Pro** <a name="confemp"></a>
 
 Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 
