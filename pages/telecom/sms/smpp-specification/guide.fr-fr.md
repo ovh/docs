@@ -4,10 +4,10 @@ slug: smpp-specifications
 excerpt: 'Découvrez les spécifications techniques du SMPP'
 section: SMPP
 order: 02
-updated: 2023-03-31
+updated: 2023-05-22
 ---
 
-**Dernière mise à jour le 31/03/2023**
+**Dernière mise à jour le 22/05/2023**
 
 ## Objectif
 
@@ -269,6 +269,7 @@ Notre service essaie d'envoyer les `deliver_sm` au ESME pendant 7 jours maximum.
 |100 | Invalid Destination Numbering Plan |
 |101 | Invalid Content |
 |102 | Invalid GSM7 Coding (e.g. error with packed/unpacked GSM7) |
+|103 | Message too long for the number of allowed segments |
 |254 | Pending |
 |255 | Unknown Error |
 |800 | Undeliverable |
