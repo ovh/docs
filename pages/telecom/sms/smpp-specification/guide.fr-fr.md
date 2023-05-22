@@ -4,10 +4,10 @@ slug: smpp-specifications
 excerpt: 'Découvrez les spécifications techniques du SMPP'
 section: SMPP
 order: 02
-updated: 2023-03-31
+updated: 2023-05-22
 ---
 
-**Dernière mise à jour le 31/03/2023**
+**Dernière mise à jour le 22/05/2023**
 
 ## Objectif
 

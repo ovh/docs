@@ -6,10 +6,10 @@ routes:
 excerpt: 'Discover the technical specifications of the OVHcloud SMPP solution'
 section: SMPP
 order: 02
-updated: 2023-03-31
+updated: 2023-05-22
 ---
 
-**Last updated 31st March 2023**
+**Last updated 22nd May 2023**
 
 ## Objective
 
