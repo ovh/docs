@@ -4,7 +4,7 @@ slug: dkim-record
 excerpt: Découvrez comment configurer un enregistrement DKIM sur votre nom de domaine et votre plateforme e-mail OVHcloud
 section: DNS et zone DNS
 order: 06
-updated: 2022-09-12
+updated: 2023-05-17
 ---
 
 <style>
@@ -28,8 +28,6 @@ updated: 2022-09-12
      font-size: 0.90em;
  }
 </style>
-
-**Dernière mise à jour le 12/09/2022**
 
 ## Objectif
 
