@@ -3,10 +3,10 @@ title: Configuring the API server flags on an OVHcloud Managed Kubernetes cluste
 slug: apiserver-flags-configuration
 excerpt: 'Find out how to configure the managed components of your Kubernetes: CoreDNS, IPVS, and even API server admission plugins on an OVHcloud Managed Kubernetes cluster'
 section: User guides
-updated: 2023-02-14
+updated: 2023-05-22
 ---
 
-**Last updated 14th February 2023**
+**Last updated 12th May 2023**
 
 <style>
  pre {
@@ -99,6 +99,11 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/projec
     }
 }
 ```
+
+> [!primary]
+>
+> `kubeProxy` can't be editted. You can define it only at the cluster creation step.
+>
 
 - Create a Kubernetes cluster in the GRA5 region while disabling the "AlwaysPullImages" admission plugin:
 
