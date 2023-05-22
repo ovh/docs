@@ -148,7 +148,7 @@ Lastly, press the `F4` key to save your changes and restart the server.
 
 In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), open the [KVM web browser console](./#kvm-browser).
 
-Here you have access to the same information and functionalities as in in the Java-based IPMI modules.
+Here you have access to the same information and functionalities as in the Java-based IPMI modules.
 
 > [!primary]
 >

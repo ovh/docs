@@ -181,7 +181,7 @@ kubectl get svc -n openfaas gateway-external -o wide
 > gateway-external   LoadBalancer   10.3.xxx.yyy  PENDING                           8080:30012/TCP   10s   
 > </code></pre>
 >
->The problem come from the the `LoadBalancer` creation, that is asynchronous, and the provisioning of the load balancer can take several minutes.
+>The problem come from the `LoadBalancer` creation, that is asynchronous, and the provisioning of the load balancer can take several minutes.
 > Please try again in a few minutes, and you will normally see the newly assigned URL.
 
 

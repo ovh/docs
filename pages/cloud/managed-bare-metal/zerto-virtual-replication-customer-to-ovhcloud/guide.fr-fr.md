@@ -305,7 +305,7 @@ Si l’opération s’est bien déroulée, le message suivant s’affiche :
 
 ![zerto vpn](images/image-EN-37.png){.thumbnail}
 
-Vous pouvez vérifier que le le nom de votre PCC OVHcloud est bien visible dans l’onglet `Sites`{.action}.
+Vous pouvez vérifier que le nom de votre PCC OVHcloud est bien visible dans l’onglet `Sites`{.action}.
 
 ![zerto vpn](images/image-EN-38.png){.thumbnail}
 

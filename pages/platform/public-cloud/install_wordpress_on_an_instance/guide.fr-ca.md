@@ -3,7 +3,7 @@ title: Installer WordPress sur une instance
 excerpt: Découvrez comment utiliser une instance Public Cloud pour héberger des sites WordPress
 slug: installer-wordpress-sur-une-instance
 section: Tutoriels
-updated: 2021-10-15
+updated: 2023-05-17
 ---
 
 **Dernière mise à jour le 15/10/2021**
@@ -83,7 +83,7 @@ Change the root password? [Y/n]
 
 Les invites suivantes concernant les mesures de sécurité, confirmez-les toutes avec `y`{.action} jusqu'à la fin du script.
 
-Si vous avez configuré l'accès MariaDB de la façon recommandée (*unix_socket*), vous disposez désormais d'un accès root automatique à celui-ci chaque fois que vous êtes connecté à l'instance en tant qu'utilisateur avec des droits élevés.
+Si vous avez configuré l'accès MariaDB de la manière recommandée (*unix_socket*), vous disposez désormais d'un accès administrateur automatique (*root*) à celui-ci chaque fois que vous êtes connecté au serveur en tant qu'utilisateur avec des droits élevés (*sudo*).
 
 Ouvrez le shell MariaDB :
 
@@ -142,7 +142,7 @@ debian@instance:~$ sudo ufw app list | grep WWW
 
 En choisissant « WWW Full », les connexions sécurisées (port 443) et les requêtes http non sécurisées (port 80) au serveur web seront autorisées.
 
-Pour voir quels ports sont affectés par un profil particulier, entrez ```sudo ufw app info "profile name"```.
+Pour voir quels ports sont affectés par un profil particulier, entrez `sudo ufw app info "profile name"`.
 
 Avec la commande suivante, les ports définis par le profil "WWW Full" seront ouverts :
 
@@ -150,20 +150,20 @@ Avec la commande suivante, les ports définis par le profil "WWW Full" seront ou
 debian@instance:~$ sudo ufw allow 'WWW Full'
 ```
 
-Comme tous les ports non explicitement autorisés seront bloqués après l'activation du firewall, assurez-vous d'autoriser également les connexions SSH (port 22) :
+Comme tous les ports non explicitement autorisés seront **bloqués** après l'activation du firewall, assurez-vous d'autoriser également les connexions SSH (port 22 dans une configuration par défaut) :
 
 ```bash
 debian@instance:~$ sudo ufw allow 'SSH'
 ```
 
-Finalement, vérifiez la configuration et activez les règles de firewall :
-
-```bash
-debian@instance:~$ sudo ufw status
-```
+Enfin, activez les règles de pare-feu et vérifiez la configuration :
 
 ```bash
 debian@instance:~$ sudo ufw enable
+```
+
+```bash
+debian@instance:~$ sudo ufw status
 ```
 
 Vous pouvez aller plus loin avec l’UFW, par exemple si vous souhaitez restreindre les attaques par *déni de service* (DOS) ou empêcher les requêtes par certaines plages d’adresses IP. Reportez-vous à la documentation officielle de l'UFW.
@@ -231,11 +231,17 @@ Une fois validé, vous pourrez vous connecter à l'espace d'administration de vo
 > [!primary]
 >
 > Pour établir des connexions sécurisées (`https`), le serveur web doit être sécurisé via une Autorité de Certification comme [Let’s Encrypt](https://letsencrypt.org/){.external} qui propose des certificats gratuits. Vous devrez installer un outil client (comme « Certbot ») et configurer Apache. Sans cette étape, votre site ne pourra accepter que des requêtes `http`.
+> 
+> En alternative, OVHcloud vous propose la solution [SSL Gateway](https://www.ovh.com/ca/fr/ssl-gateway/). Référez-vous à [notre documentation](/pages/web/ssl-gateway/order-ssl-gateway) pour plus d'informations.
 >
 
 ### Étape 6 (facultatif) : activer des connexions sécurisées avec Let’s Encrypt
 
 Vérifiez en premier lieu que votre nom de domaine dispose des bons enregistrements dans la zone DNS, c'est-à-dire qu'il pointe vers l'adresse IP de votre instance.
+
+> [!warning]
+> La commande suivante installe une version de Certbot qui fonctionne mais est obsolète (*certbot 1.12.0*). Pour installer la dernière version, vous devez utiliser le gestionnaire de paquets supplémentaire *snappy*. Vous trouverez les instructions d'installation sur le [site de Certbot](https://certbot.eff.org/instructions?ws=apache&os=debianbuster).
+>
 
 Installez les paquers nécessaires pour le client Certbot :
 
@@ -243,10 +249,10 @@ Installez les paquers nécessaires pour le client Certbot :
 debian@instance:~$ sudo apt install certbot python3-certbot-apache
 ```
 
-Obtenez le certificat de votre nom de domaine. (Vous pouvez inclure le sous-domaine « www » en ajoutant `-d www.yourdomainname.ovh`.)
+Obtenez le certificat de votre nom de domaine et du sous-domaine « www » :
 
 ```bash
-debian@instance:~$ sudo certbot --apache -d yourdomainname.ovh
+debian@instance:~$ sudo certbot --apache -d domainname.ovh -d www.domainname.ovh
 ```
 
 Vous devrez renseigner une adresse e-mail valide et accepter les conditions d'utilisation.

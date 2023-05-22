@@ -73,7 +73,7 @@ For more information, we invite you to read [the following guide](../capabilitie
 In the short term, there are no plans for OVHcloud to deploy a new tool.
 
 
-### What are the the Data Processing product limitations?
+### What are the Data Processing product limitations?
 
 For more information, we invite you to read [the following guide](../capabilities/).
 

@@ -41,7 +41,7 @@ Suivez le guide correspondant pour installer une distribution sur votre service 
 > Les instructions suivantes sont vérifiées pour Debian 11. Ubuntu étant basé sur Debian, ce tutoriel devrait également fonctionner sur une distribution Ubuntu actuelle.
 
 
-### Étape 1 : mise à jour du système
+### Étape 1 : mise à jour du système
 
 Une fois connecté à votre serveur via SSH, assurez-vous que tous les paquets sont à jour :
 
@@ -55,7 +55,7 @@ Vous pouvez maintenant installer les paquets LAMP actuels.
 >
 > Comme les progiciels sont régulièrement mis à jour, vous devrez peut-être ajuster les instructions suivantes en fonction des dernières versions.
 
-### Étape 2 : installation d'Apache
+### Étape 2 : installation d'Apache
 
 Installez les paquets Apache (y compris la documentation) :
 
@@ -72,7 +72,7 @@ sudo systemctl status apache2
 Vous pouvez également ouvrir `http://server_IP` dans un navigateur Web. La page « Apache2 Debian Default Page » devrait s'afficher.
 
 
-### Étape 3 : installer le serveur de bases de données et PHP
+### Étape 3 : installer le serveur de bases de données et PHP
 
 Installez les paquets de MariaDB et PHP :
 
@@ -80,7 +80,7 @@ Installez les paquets de MariaDB et PHP :
 sudo apt install -y php php-pdo php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath mariadb-server
 ```
 
-### Étape 4 : configuration du serveur de base de données <a name="sqlconf"></a>
+### Étape 4 : configuration du serveur de base de données <a name="sqlconf"></a>
 
 MariaDB fournit un script pour vous aider dans la configuration initiale et pour appliquer certains paramètres liés à la sécurité.
 
@@ -165,9 +165,9 @@ MariaDB [(none)]> FLUSH PRIVILEGES;
 MariaDB [(none)]> exit;
 ```
 
-### Étape 5 : configuration du firewall (facultatif)
+### Étape 5 : configuration du firewall (facultatif)
 
-[La configuration d’un pare-feu](https://docs.ovh.com/fr/dedicated/firewall-iptables/) (*iptables*) permettra d’améliorer la sécurité de votre serveur. Ce processus peut être simplifié en utilisant le frontend « Uncomplex Firewall » (UFW) et son ensemble de profils prédéfinis. 
+[La configuration d’un pare-feu](https://docs.ovh.com/fr/dedicated/firewall-iptables/) (*iptables*) permettra d’améliorer la sécurité de votre serveur. Ce processus peut être simplifié en utilisant le frontend « Uncomplicated Firewall » (UFW) et son ensemble de profils prédéfinis. 
 
 Installez UFW :
 
@@ -227,17 +227,17 @@ To                         Action      From
 
 Vous pouvez aller plus loin avec l’UFW, par exemple si vous souhaitez restreindre les attaques par *déni de service* (DOS) ou empêcher les requêtes par certaines plages d’adresses IP. Reportez-vous à la [documentation officielle de l'UFW](https://help.ubuntu.com/community/UFW).
 
-### Étape 6 : configuration DNS (facultatif)
+### Étape 6 : configuration DNS (facultatif)
 
 L'accès à l'installation de votre serveur web via un nom de domaine nécessite de l'attacher à votre service. Pour ce faire, vous devez éditer la zone DNS accessible depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), à condition qu’OVHcloud soit votre bureau d’enregistremente **et** que le nom de domaine utilise les serveurs DNS d’OVHcloud.
 
 Consultez le guide « [Éditer une zone DNS](/pages/web/domains/dns_zone_edit) » pour en savoir plus. Si le nom de domaine est actuellement utilisé, configurez les DNS uniquement après que votre site web ou votre application soit prêt.
 
-### Étape 7 : activer des connexions sécurisées avec Let’s Encrypt (facultatif)
+### Étape 7 : activer des connexions sécurisées avec Let’s Encrypt (facultatif)
 
 > [!primary]
 >
-> Pour établir des connexions sécurisées (`https`), le serveur web doit être sécurisé via une Autorité de Certification officielle comme [Let’s Encrypt](https://letsencrypt.org/)"qui propose des certificats gratuits. Vous devrez installer un outil client (tel que Certbot) et configurer Apache en conséquence. Sans cette étape, votre site web ou votre application ne peut accepter que des requêtes `http` non chiffrées.
+> Pour établir des connexions sécurisées (`https`), le serveur web doit être sécurisé via une Autorité de Certification officielle comme « [Let’s Encrypt](https://letsencrypt.org/) » qui propose des certificats gratuits. Vous devrez installer un outil client (tel que Certbot) et configurer Apache en conséquence. Sans cette étape, votre site web ou votre application ne peut accepter que des requêtes `http` non chiffrées.
 > 
 > En alternative, OVHcloud vous propose la solution [SSL Gateway](https://www.ovh.com/fr/ssl-gateway/). Référez-vous à [notre documentation](/pages/web/ssl-gateway/order-ssl-gateway) pour plus d'informations.
 > 
@@ -245,7 +245,7 @@ Consultez le guide « [Éditer une zone DNS](/pages/web/domains/dns_zone_edit) �
 Assurez-vous d’abord que votre nom de domaine est correctement renseigné dans la zone DNS, c’est-à-dire mappé sur l’adresse IP de votre serveur.
 
 > [!warning]
-> La commande suivante installe une version de Certbot qui fonctionne mais est obsolète (*certbot 1.12.0*). Pour installer la dernière version, vous devez utiliser le *snappy* du gestionnaire de paquets additionnels. Vous trouverez les instructions d'installation sur le [site de Certbot](https://certbot.eff.org/instructions?ws=apache&os=debianbuster).
+> La commande suivante installe une version de Certbot qui fonctionne mais est obsolète (*certbot 1.12.0*). Pour installer la dernière version, vous devez utiliser le gestionnaire de paquets supplémentaire *snappy*. Vous trouverez les instructions d'installation sur le [site de Certbot](https://certbot.eff.org/instructions?ws=apache&os=debianbuster).
 >
 
 Installez les paquets requis pour le client Certbot :

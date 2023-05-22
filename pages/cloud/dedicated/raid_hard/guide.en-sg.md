@@ -195,7 +195,7 @@ The command will retrieve the enclosure ID and slot ID, as shown above.
 > CacheCade is a module from LSI used to improve random read performance of hard drives using an SSD as front caching device.
 > 
 
-To verify the the CacheCade's configuration, use the following command:
+To verify the CacheCade's configuration, use the following command:
 
 ```sh
 MegaCli -CfgCacheCadeDsply -a0 (Or : storcli /c0 /dall show cachecade)

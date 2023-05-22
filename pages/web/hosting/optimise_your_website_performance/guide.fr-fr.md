@@ -234,7 +234,7 @@ Par exemple :
 
 #### Web Cloud Databases
 Si, en dépit de toutes les modifications et mesures d’optimisation que vous avez appliquées, la base de données est toujours lente, ou si un grand nombre de requêtes sont envoyées à la base de données, vous pourrez éventuellement opter pour notre offre Web Cloud Databases pour disposer de plus de ressources.
-[Consulter notre offre Web Cloud Databases sur sur le site](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/){.external}.
+[Consulter notre offre Web Cloud Databases sur le site](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/){.external}.
 
 ## Aller plus loin
 
