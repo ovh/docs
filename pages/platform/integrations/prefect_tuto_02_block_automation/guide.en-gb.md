@@ -1,10 +1,8 @@
 ---
 title: Prefect - Tutorial - Emails notification with blocks and automations
 excerpt: Discover how to send email notification through blocks and automations in Prefect Cloud
-updated: 2023-05-19
+updated: 2023-05-22
 ---
-
-**Last updated 19th May 2023**
 
 ## Objective
 
