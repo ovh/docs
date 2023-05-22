@@ -4,10 +4,10 @@ excerpt: Découvrez comment importer facilement votre propre adresse IP comme Ad
 slug: bring-your-own-ip
 section: Bring Your Own IP
 order: 1
-updated: 2023-04-24
+updated: 2023-05-15
 ---
 
-**Dernière mise à jour le 24/04/2023**
+**Dernière mise à jour le 15/05/2023**
 
 ## Objectif
 
@@ -101,16 +101,12 @@ Vous trouverez ci-dessous une liste des campus actuels :
     - vin1
 - HIL (Hillsboro)
     - hil1
-- SYD (Sydney 1)
-    - syd1
-- SY2 (Sydney 2)
-    - syd2
 
 La liste des campus disponibles dépendra de votre situation géographique et du RIR de l'IP. Vous trouverez ci-dessous la liste de tous les campus IP sur lesquels nous prévoyons de l'offre BYOIP. Cependant, il est possible que tous les campus ne soient pas pris en charge dès le lancement :
 
 |**Le RIR des adresses IP du client est :**|**ARIN**|**RIPE**|
 |---|---|---|
-|**Campus disponibles :** |BHS<br>SGP<br>SYD<br>SY2|RBX<br>GRA<br>SBG<br>WAW<br>LIM<br>ERI|
+|**Campus disponibles :** |BHS<br>SGP|RBX<br>GRA<br>SBG<br>WAW<br>LIM<br>ERI|
 
 ### Prouver que vous êtes propriétaire de la plage d'adresses IP <a name="proveownershipontheiprange"></a>
 

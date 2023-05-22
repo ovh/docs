@@ -2,7 +2,7 @@
 title: 'Avoiding VM freeze with the Veeam Managed Backup option'
 slug: avoid-vm-freeze-with-veeam-backup
 section: 'Virtual machine management'
-excerpt: 'This guide will show you how to to implement a bypass solution, using the VMware DRS mechanism'
+excerpt: 'This guide will show you how to implement a bypass solution, using the VMware DRS mechanism'
 updated: 2022-02-22
 ---
 
@@ -16,7 +16,7 @@ This disk lock happens because the VMDK snapshot is mounted on the backup proxy,
 
 This problem will not occur if the virtual machine and the backup proxy are located on the same host.
 
-**This guide will show you how to to implement a bypass solution, using the VMware DRS mechanism.**
+**This guide will show you how to implement a bypass solution, using the VMware DRS mechanism.**
 
 ## Requirements
 

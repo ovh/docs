@@ -52,7 +52,7 @@ Antes de empezar, la recomendamos que eche un vistazo a la siguiente tabla, en l
 |IPv6_GATEWAY|Puerta de enlace del bloque IPv6.|
 
 
-### Obtener la la información relativa a la red
+### Obtener la información relativa a la red
 
 Conéctese al área de cliente de OVHcloud en la sección `Public Cloud`{.action} y seleccione el proyecto correspondiente. En la columna izquierda, seleccione el menú `Instances`{.action} y haga clic en el botón `...`{.action} junto a la instancia correspondiente y haga clic en `Detalles de la instancia`{.action}.
 

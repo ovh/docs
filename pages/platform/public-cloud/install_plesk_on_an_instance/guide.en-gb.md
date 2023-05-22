@@ -60,7 +60,7 @@ Select the Plesk interface view type you want to apply.
 
 ![public-cloud](images/3303.png){.thumbnail}
 
-You you will then need to enter information regarding access to your instance:
+You will then need to enter information regarding access to your instance:
 
 - the host name
 - the IP address

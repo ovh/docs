@@ -184,7 +184,7 @@ Le `submit_sm` est utilisée par un ESME pour soumettre un SMS au SMSC pour tran
 
 
 Le `submit_sm_resp` est la confirmation de la bonne réception du submit_sm par le SMSC.<br>
-Il contient un `message_id` qui est l'identifiant du message du SMSC permettant de faire le lien avec avec l'accusé de réception (DLR) envoyé plus tard lorsque le mobile a reçu le SMS (sous réserve que la demande d'un DLR est spécifiée dans le `submit_sm`).
+Il contient un `message_id` qui est l'identifiant du message du SMSC permettant de faire le lien avec l'accusé de réception (DLR) envoyé plus tard lorsque le mobile a reçu le SMS (sous réserve que la demande d'un DLR est spécifiée dans le `submit_sm`).
 
 ##### **deliver_sm et deliver_sm_resp**
 

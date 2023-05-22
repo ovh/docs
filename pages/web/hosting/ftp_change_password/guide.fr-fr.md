@@ -45,7 +45,7 @@ Un tableau affiche les utilisateurs FTP créés sur votre hébergement. Ces util
 
 Selon votre offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/), la modification du mot de passe de votre utilisateur FTP via l'onglet `FTP-SSH`{.action} se fera par deux chemins différents :
 
-- **pour les offres ne permettant pas de créer un second utilisateur FTP** (offres Start 10M, Kimsufi Web et Perso) : cliquez sur sur le pictogramme en forme de crayon dans la colonne `Mot de passe`{.action}, renseignez le nouveau mot de passe puis confirmez le changement en cliquant sur le bouton vert.
+- **pour les offres ne permettant pas de créer un second utilisateur FTP** (offres Start 10M, Kimsufi Web et Perso) : cliquez sur le pictogramme en forme de crayon dans la colonne `Mot de passe`{.action}, renseignez le nouveau mot de passe puis confirmez le changement en cliquant sur le bouton vert.
 
 ![change-ftp-password-step1-perso](images/change-ftp-password-step1-perso.png){.thumbnail}
 

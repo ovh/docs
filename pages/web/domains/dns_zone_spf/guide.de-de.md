@@ -95,11 +95,28 @@ Um einen SPF-Eintrag hinzuzufügen klicken Sie rechts im Menü auf `Eintrag hinz
 
 Im neu angezeigten Fenster bietet der Konfigurationsassistent verschiedene Arten von DNS-Einträgen an. Es gibt zwei Möglichkeiten, einen SPF-Eintrag hinzuzufügen: 
 
-- [TXT-Eintrag hinzufügen](#txtrecord): Für erfahrene Benutzer bzw. wenn der vollständige SPF-Eintrag vorliegt. Ihr E-Mail-Anbieter übermittelt Ihnen zum Beispiel den Wert.
-- [SPF-Eintrag hinzufügen](#spfrecord): Für Benutzer, die nicht über den vollständigen Wert verfügen. Sie haben beispielsweise nur eine IP-Adresse oder den Hostnamen des E-Mail-Servers als Information.
 - [Einen OVHcloud SPF-Eintrag hinzufügen](#spfrecordovhcloud) **und die OVHcloud-Konfiguration verwenden**: Für Benutzer, die ausschließlich die E-Mail-Angebote von OVHcloud für ihre Domain nutzen (ausgenommen [Private Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/){.external}).
+- [SPF-Eintrag hinzufügen](#spfrecord): Für Benutzer, die nicht über den vollständigen Wert verfügen. Sie haben beispielsweise nur eine IP-Adresse oder den Hostnamen des E-Mail-Servers als Information.
+- [TXT-Eintrag hinzufügen](#txtrecord): Für erfahrene Benutzer bzw. wenn der vollständige SPF-Eintrag vorliegt. Ihr E-Mail-Anbieter übermittelt Ihnen zum Beispiel den Wert.
 
 ![domain](images/spf_records_add_entry.png){.thumbnail}
+
+##### Hinzufügen des OVHcloud SPF-Eintrags <a name="spfrecordovhcloud"></a>
+
+Sie haben den `SPF`{.action}-Eintrag ausgewählt und möchten die OVHcloud-Konfiguration anwenden. Diese erlaubt es, alle ausgehenden E-Mail-Server von OVHcloud für die folgenden E-Mail-Angebote einzubeziehen:
+
+- MX Plan Standalone oder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot inklusive
+- [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/)
+- [Hosted Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/)
+
+Klicken Sie auf den `Button SPF für das Shared Hosting von OVHcloud`{.action} oben im Support-Fenster. Die Informationen zum OVHcloud SPF werden angezeigt. Klicken Sie auf den Button `Bestätigen`{.action}, um die Änderung vorzunehmen.
+
+![domain](images/spf_records_add_entry_step2.png){.thumbnail}
+
+> [!primary]
+>
+> Die Änderung erfordert eine Propagationszeit von 4 bis 24 Stunden, bevor sie voll wirksam ist. 
+>
 
 ##### Hinzufügen eines SPF Eintrags <a name="spfrecord"></a>
 
@@ -135,23 +152,6 @@ Zu der Frage: "**Umfassen die von Ihnen gemachten Angaben sämtliche Hosts, die 
 |Nein|Stellt ein, dass Server, die E-Mails von Ihrer Domain empfangen, diese ohne besondere Aktion akzeptieren, wenn sie von einer nicht-legitimen (in Ihrem SPF nicht genannten) Quelle stammen. Der E-Mail-Header wird jedoch inkrementiert.|
 
 Wenn Sie fertig sind, klicken Sie auf `Weiter`{.action}. Bestätigen Sie dann, dass die von Ihnen eingegebenen Werte korrekt sind, indem Sie auf `Bestätigen`{.action} klicken.
-
-> [!primary]
->
-> Die Änderung erfordert eine Propagationszeit von 4 bis 24 Stunden, bevor sie voll wirksam ist. 
->
-
-##### Hinzufügen des OVHcloud SPF-Eintrags <a name="spfrecordovhcloud"></a>
-
-Sie haben den `SPF`{.action}-Eintrag ausgewählt und möchten die OVHcloud-Konfiguration anwenden. Diese erlaubt es, alle ausgehenden E-Mail-Server von OVHcloud für die folgenden E-Mail-Angebote einzubeziehen:
-
-- MX Plan Standalone oder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot inklusive
-- [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/)
-- [Hosted Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/)
-
-Klicken Sie auf den `Button SPF für das Shared Hosting von OVHcloud`{.action} oben im Support-Fenster. Die Informationen zum OVHcloud SPF werden angezeigt. Klicken Sie auf den Button `Bestätigen`{.action}, um die Änderung vorzunehmen.
-
-![domain](images/spf_records_add_entry_step2.png){.thumbnail}
 
 > [!primary]
 >
