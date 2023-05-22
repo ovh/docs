@@ -1,10 +1,8 @@
 ---
 title: Prefect - Getting Started
 excerpt: Discover Prefect and configure it for your first workflows
-updated: 2024-05-16
+updated: 2024-05-22
 ---
-
-**Last updated 16th May, 2023**
 
 ## Objective
 
