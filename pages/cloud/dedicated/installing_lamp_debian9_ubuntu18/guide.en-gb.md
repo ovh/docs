@@ -3,7 +3,7 @@ title: Setting up a web server (LAMP) on Debian or Ubuntu
 slug: setup-lamp-debian-ubuntu
 excerpt: Find out how to configure a LAMP-based web server
 section: Tutorials
-updated: 2023-05-03
+updated: 2023-05-10
 ---
 
 ## Introduction 
@@ -104,13 +104,13 @@ It is recommended to use the proposed authentication method (*unix_socket*) inst
 
 Enter `n`{.action} at the next prompt:
 
-```console
+``` { .console }
 Change the root password? [Y/n]
 ```
 
 Since the subsequent prompts concern security measures, confirm them all with `y`{.action} until the script is finished.
 
-```console
+``` { .console }
 Reloading the privilege tables will ensure that all changes made so far
 will take effect immediately.
 
@@ -141,19 +141,20 @@ Open the MariaDB shell:
 ```shell-session
 sudo mariadb
 ```
-```mysql
+
+``` { .mysql }
 MariaDB [(none)]> 
 ```
 
 Create a database:
 
-```mysql
+```sql
 MariaDB [(none)]> CREATE DATABASE database_name;
 ```
 
 Create a "user" with a name of your choice and grant it all rights on this database. This account can then access the database and carry out all operations for the application using this database. Replace `database_name` with the name of your database, `user_name` with a name of your choice and `password` with a strong password.
 
-```mysql
+``` { .sql }
 MariaDB [(none)]> GRANT ALL ON database_name.* TO 'user_name'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION;
 ```
 
@@ -162,6 +163,7 @@ Ensure the changes made are applied and then exit the MariaDB shell:
 ```mysql
 MariaDB [(none)]> FLUSH PRIVILEGES;
 ```
+
 ```mysql
 MariaDB [(none)]> exit;
 ```
@@ -169,15 +171,15 @@ MariaDB [(none)]> exit;
 
 ### Step 5: Configuring the firewall (optional)
 
-[Configuring a firewall](/pages/cloud/dedicated/firewall-linux-iptable) (*iptables*) will enhance the security of your server. This process can be simplified by using the frontend "Uncomplicated Firewall" (UFW) and its preset of profiles. Install UFW:
+[Configuring a firewall](https://docs.ovh.com/gb/en/dedicated/firewall-iptables/) (*iptables*) will enhance the security of your server. This process can be simplified by using the frontend "Uncomplicated Firewall" (UFW) and its preset of profiles. Install UFW:
 
-```shell-session
+``` { .shell-session }
 sudo apt install ufw
 ```
 
 The relevant profiles are labelled as "WWW" in the application list:
 
-```shell-session
+``` { .shell-session }
 sudo ufw app list | grep WWW
   WWW
   WWW Cache
@@ -191,13 +193,13 @@ To see which ports are affected by a particular profile, enter `sudo ufw app inf
 
 By entering the following command, the ports defined by the profile "WWW Full" will be opened:
 
-```shell-session
+```bash
 sudo ufw allow 'WWW Full'
 ```
 
 Since all ports not explicitly allowed will be **blocked** after enabling the firewall, make sure to allow SSH connections (port 22 in a default configuration) as well:
 
-```shell-session
+``` { .bash }
 sudo ufw allow 'SSH'
 ```
 
@@ -206,9 +208,11 @@ Finally, activate the firewall rules and verify the configuration:
 ```shell-session
 sudo ufw enable
 ```
+
 ```shell-session
 sudo ufw status
 ```
+
 ```console
 Status: active
 Logging: on (low)
@@ -224,7 +228,7 @@ To                         Action      From
 ```
 
 
-You can go further with UFW, for example if you want to restrict *denial of service* (DOS) attacks or prevent requests by certain IP address ranges. Please refer to the official UFW documentation.
+You can go further with UFW, for example if you want to restrict *denial of service* (DOS) attacks or prevent requests by certain IP address ranges. Please refer to the [official UFW documentation](https://help.ubuntu.com/community/UFW).
 
 
 ### Step 6: DNS configuration (optional)

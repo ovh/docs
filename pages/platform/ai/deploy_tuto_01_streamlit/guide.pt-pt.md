@@ -59,7 +59,7 @@ st.write(pd.DataFrame({
 
 ### Write the Dockerfile for your application
 
-Your Dockerfile should start with the the `FROM` instruction indicating the parent image to use. In our case we choose to start from a classic python image.
+Your Dockerfile should start with the `FROM` instruction indicating the parent image to use. In our case we choose to start from a classic python image.
 
 ``` {.console}
 FROM python:3.8

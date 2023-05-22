@@ -21,6 +21,10 @@ OVHcloud web hosting plans provide you with access to a storage space you can us
 - the login credentials required to connect to your storage space via SSH
 - access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}
 
+> [!warning]
+> 
+> SSH access to an OVHcloud web hosting plan is possible from the [Pro plan](https://www.ovhcloud.com/asia/web-hosting/compare/) and above.
+
 ## Instructions
 
 ### Step 1: Ensure that SSH access is enabled <a name="sshcheck"></a>

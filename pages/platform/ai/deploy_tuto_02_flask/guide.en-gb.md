@@ -75,7 +75,7 @@ Flask==1.1.2
 
 ### Write the Dockerfile for your application
 
-Your Dockerfile should start with the the `FROM` instruction indicating the parent image to use. In our case we choose to start from a classic Python image.
+Your Dockerfile should start with the `FROM` instruction indicating the parent image to use. In our case we choose to start from a classic Python image.
 
 ```console
 FROM python

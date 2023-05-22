@@ -214,5 +214,7 @@ Your rule is active. If you click on `http://virtual-ip-address-on-T0` you will 
 
 [VMware NSX Load Balancer documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-D39660D9-278B-4D08-89DF-B42C5400FEB2.html)
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 Join our community of users on <https://community.ovh.com/en/>.
 
