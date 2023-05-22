@@ -6,7 +6,7 @@ section: User guides
 updated: 2023-05-22
 ---
 
-**Last updated 12th May 2023**
+**Last updated 22nd May 2023**
 
 <style>
  pre {
@@ -102,7 +102,7 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/projec
 
 > [!primary]
 >
-> `kubeProxy` can't be editted. You can define it only at the cluster creation step.
+> `kubeProxy` can't be edited. You can define it only at the cluster creation step.
 >
 
 - Create a Kubernetes cluster in the GRA5 region while disabling the "AlwaysPullImages" admission plugin:
