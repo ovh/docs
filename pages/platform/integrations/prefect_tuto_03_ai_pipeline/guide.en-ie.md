@@ -25,8 +25,8 @@ The model used will be a classical **PyTorch** image classification model. If yo
 
 - A Prefect cloud profile and an open Prefect workspace. See this [tutorial](/pages/platform/integrations/prefect_guide_01_getting_started)
 - A coding environment with Prefect configured. See this [tutorial](/pages/platform/integrations/prefect_guide_01_getting_started)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/)
 - An S3 data store configured (you can do this easily with cli: `ovhai data store ls`. If you have never done this before, you can check [our tutorial](/pages/platform/ai/gi_08_s3_compliance)
 
 ## Instructions
