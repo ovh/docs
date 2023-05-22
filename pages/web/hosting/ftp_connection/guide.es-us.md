@@ -114,7 +114,7 @@ Una vez establecida la conexión SSH, existen dos formas de conectarse según el
 
 Si se conecta en línea de comandos, sustituya los elementos «sshlogin», «sshserver» y «connectionport» del siguiente comando por el valor correspondiente. Una vez ejecutado el comando, deberá introducir la contraseña del usuario SSH.
 
-```ssh
+```bash
 ssh sshlogin@sshserver -p connectionport
 ```
 

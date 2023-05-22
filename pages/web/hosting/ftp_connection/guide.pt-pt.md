@@ -114,7 +114,7 @@ Uma vez estabelecida a ligação SSH e em função do método selecionado, exist
 
 Se se ligar através de uma linha de comandos, deverá: substituir os elementos “sshlogin”, “sshserver” e “connectionport” pela sua informação. Uma vez enviado o comando, deverá introduzir a palavra-passe do utilizador SSH.
 
-```ssh
+```bash
 ssh sshlogin@sshserver -p connectionport
 ```
 

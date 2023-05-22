@@ -42,7 +42,7 @@ If you add theses lines to your MySQL configuration file and restart it, MySQL w
 
 Here is a sample of the lines produced by the slow query log:
 
-```MySQL
+```sql
  # Time: 161223 16:43:49
  # User@Host: guest[guest] @ localhost []  Id:     2
  # Query_time: 0.734103  Lock_time: 0.000161 Rows_sent: 72761  Rows_examined: 518199

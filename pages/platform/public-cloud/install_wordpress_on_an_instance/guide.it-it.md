@@ -101,19 +101,19 @@ Apri lo shell MariaDB:
 ```bash
 debian@instance:~$ sudo mariadb
 ```
-```mysql
+```sql
 MariaDB [(none)]> 
 ```
 
 Crea il database per WordPress:
 
-```mysql
+```sql
 MariaDB [(none)]> CREATE DATABASE wordpress;
 ```
 
 Dopodiché assegna al nuovo utente "wordpress" tutti i diritti su questo database. Questo utente accederà al database ed effettuerà tutte le operazioni per il CMS WordPress. Sostituisci `your_password` con una password forte per questo utente.
 
-```mysql
+```sql
 MariaDB [(none)]> GRANT ALL ON wordpress.* TO 'wordpress'@'localhost' IDENTIFIED BY 'your_password' WITH GRANT OPTION;
 ```
 
@@ -124,11 +124,11 @@ MariaDB [(none)]> GRANT ALL ON wordpress.* TO 'wordpress'@'localhost' IDENTIFIED
 
 Il database è pronto per essere utilizzato con WordPress. Assicurati che le modifiche siano applicate per i prossimi step, poi chiudi la shell MariaDB:
 
-```mysql
+```sql
 MariaDB [(none)]> FLUSH PRIVILEGES;
 ```
 
-```mysql
+```sql
 MariaDB [(none)]> exit;
 ```
 

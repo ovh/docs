@@ -73,7 +73,7 @@ Możesz zaakceptować plik domyślny, naciskając klawisz “↩” (Enter). Po 
 
 Klucze powinny zostać zapisane w katalogu “.ssh”. Klucz publiczny ma dodane “pub” do nazwy pliku.
 
-```ssh
+```bash
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:

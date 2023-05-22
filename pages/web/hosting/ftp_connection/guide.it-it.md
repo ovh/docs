@@ -110,7 +110,7 @@ Una volta stabilita la connessione SSH, in base al metodo scelto, esistono due m
 
 Se scegli quest’ultima opzione, ecco il comando da eseguire:
 
-```ssh
+```bash
 ssh sshlogin@sshserver -p connectionport
 ```
 

@@ -49,7 +49,7 @@ Per installare una distribuzione sul tuo servizio OVHcloud, segui questa guida i
 
 Una volta connesso al tuo server via SSH, assicurati che tutti i pacchetti siano aggiornati:
 
-```shell-session
+```bash
 sudo apt update && sudo apt upgrade -y
 ```
 
@@ -63,13 +63,13 @@ A questo punto puoi installare i pacchetti LAMP.
 
 Installa i pacchetti Apache (inclusa la documentazione):
 
-```shell-session
+```bash
 sudo apt install -y apache2 apache2-doc
 ```
 
 Per verificare l'installazione, esegui questo comando:
 
-```shell-session
+```bash
 sudo systemctl status apache2
 ```
 
@@ -80,7 +80,7 @@ sudo systemctl status apache2
 
 Installa i pacchetti di MariaDB e PHP:
 
-```shell-session
+```bash
 sudo apt install -y php php-pdo php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath mariadb-server
 ```
 
@@ -90,7 +90,7 @@ MariaDB fornisce uno script per aiutarti nella configurazione iniziale e applica
 
 Per eseguirlo, esegui questo comando:
 
-```shell-session
+```bash
 sudo mysql_secure_installation
 ```
 
@@ -139,33 +139,33 @@ Se hai configurato l'accesso MariaDB come consigliato (*unix_socket*), disponi d
 
 Apri lo shell MariaDB:
 
-```shell-session
+```bash
 sudo mariadb
 ```
 
-```mysql
+```sql
 MariaDB [(none)]> 
 ```
 
 Crea un database:
 
-```mysql
+```sql
 MariaDB [(none)]> CREATE DATABASE database_name;
 ```
 
 Crea un "user" con il nome che preferisci e assegnagli tutti i permessi su questo database. che può accedere al database ed effettuare tutte le operazioni per l'applicazione utilizzando questo database. Sostituisci `database_name` con il nome del tuo database, `user_name` con il nome scelto e `password` con una password elevata.
 
-```mysql
+```sql
 MariaDB [(none)]> GRANT ALL ON database_name.* TO 'user_name'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION;
 ```
 
 Assicurati che le modifiche siano applicate e infine chiudi lo shell MariaDB:
 
-```mysql
+```sql
 MariaDB [(none)]> FLUSH PRIVILEGES;
 ```
 
-```mysql
+```sql
 MariaDB [(none)]> exit;
 ```
 
@@ -175,13 +175,13 @@ MariaDB [(none)]> exit;
 
 Installate UFW:
 
-```shell-session
+```bash
 sudo apt install ufw
 ```
 
 I profili in questione recano l'indicazione "WWW" nell'elenco delle applicazioni:
 
-```shell-session
+```bash
 sudo ufw app list | grep WWW
   WWW
   WWW Cache
@@ -195,23 +195,23 @@ Per visualizzare quali porti sono interessati da un profilo particolare, accedi 
 
 Con il comando successivo, le porte definite dal profilo "WWW Full" saranno aperte:
 
-```shell-session
+```bash
 sudo ufw allow 'WWW Full'
 ```
 
 Dal momento che tutte le porte non esplicitamente autorizzate saranno **bloccate** dopo l'attivazione del firewall, assicurati di autorizzare anche le connessioni SSH (porta 22 con configurazione di default):
 
-```shell-session
+```bash
 sudo ufw allow 'SSH'
 ```
 
 Infine, attiva le regole del firewall e verifica la configurazione:
 
-```shell-session
+```bash
 sudo ufw enable
 ```
 
-```shell-session
+```bash
 sudo ufw status
 ```
 
@@ -254,13 +254,13 @@ Per prima cosa, assicurati che il tuo dominio sia inserito correttamente nella z
 
 Installa i pacchetti richiesti per il client Cerbot:
 
-```shell-session
+```bash
 sudo apt install -y certbot python3-certbot-apache
 ```
 
 Ottieni il certificato del tuo dominio e del sottodominio "www":
 
-```shell-session
+```bash
 sudo certbot --apache -d domainname.ovh -d www.domainname.ovh
 ```
 

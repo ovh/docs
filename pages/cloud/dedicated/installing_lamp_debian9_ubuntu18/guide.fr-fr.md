@@ -45,7 +45,7 @@ Suivez le guide correspondant pour installer une distribution sur votre service 
 
 Une fois connecté à votre serveur via SSH, assurez-vous que tous les paquets sont à jour :
 
-```shell-session
+```bash
 sudo apt update && sudo apt upgrade -y
 ```
 
@@ -59,13 +59,13 @@ Vous pouvez maintenant installer les paquets LAMP actuels.
 
 Installez les paquets Apache (y compris la documentation) :
 
-```shell-session
+```bash
 sudo apt install -y apache2 apache2-doc
 ```
 
 Vous pouvez vérifier l’installation avec la commande suivante :
 
-```shell-session
+```bash
 sudo systemctl status apache2
 ```
 
@@ -76,7 +76,7 @@ Vous pouvez également ouvrir `http://server_IP` dans un navigateur Web. La page
 
 Installez les paquets de MariaDB et PHP :
 
-```shell-session
+```bash
 sudo apt install -y php php-pdo php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath mariadb-server
 ```
 
@@ -86,7 +86,7 @@ MariaDB fournit un script pour vous aider dans la configuration initiale et pour
 
 Pour l'exécuter, entrez la commande suivante :
 
-```shell-session
+```bash
 sudo mysql_secure_installation
 ```
 
@@ -135,33 +135,33 @@ Si vous avez configuré l'accès MariaDB de la manière recommandée (*unix_sock
 
 Ouvrez le shell MariaDB :
 
-```shell-session
+```bash
 sudo mariadb
 ```
 
-```mysql
+```sql
 MariaDB [(none)]> 
 ```
 
 Créez une base de données :
 
-```mysql
+```sql
 MariaDB [(none)]> CREATE DATABASE database_name;
 ```
 
 Créez un « utilisateur » portant le nom de votre choix et accordez-lui tous les droits sur cette base de données. Ce dernier peut alors accéder à la base de données et effectuer toutes les opérations pour l'application utilisant cette base de données. Remplacez `database_name` par le nom de votre base de données, `user_name` par le nom de votre choix et `password` par un mot de passe fort.
 
-```mysql
+```sql
 MariaDB [(none)]> GRANT ALL ON database_name.* TO 'user_name'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION;
 ```
 
 Assurez-vous que les modifications apportées sont appliquées et quittez ensuite le shell MariaDB :
 
-```mysql
+```sql
 MariaDB [(none)]> FLUSH PRIVILEGES;
 ```
 
-```mysql
+```sql
 MariaDB [(none)]> exit;
 ```
 
@@ -171,13 +171,13 @@ MariaDB [(none)]> exit;
 
 Installez UFW :
 
-```shell-session
+```bash
 sudo apt install ufw
 ```
 
 Les profils concernés portent la mention « WWW » dans la liste des applications :
 
-```shell-session
+```bash
 sudo ufw app list | grep WWW
   WWW
   WWW Cache
@@ -191,23 +191,23 @@ Pour voir quels ports sont affectés par un profil particulier, entrez `sudo ufw
 
 En entrant la commande suivante, les ports définis par le profil « WWW Full » seront ouverts :
 
-```shell-session
+```bash
 sudo ufw allow 'WWW Full'
 ```
 
 Comme tous les ports non explicitement autorisés seront **bloqués** après l'activation du firewall, assurez-vous d'autoriser également les connexions SSH (port 22 dans une configuration par défaut) :
 
-```shell-session
+```bash
 sudo ufw allow 'SSH'
 ```
 
 Enfin, activez les règles de pare-feu et vérifiez la configuration :
 
-```shell-session
+```bash
 sudo ufw enable
 ```
 
-```shell-session
+```bash
 sudo ufw status
 ```
 
@@ -250,13 +250,13 @@ Assurez-vous d’abord que votre nom de domaine est correctement renseigné dans
 
 Installez les paquets requis pour le client Certbot :
 
-```shell-session
+```bash
 sudo apt install -y certbot python3-certbot-apache
 ```
 
 Obtenez le certificat de votre nom de domaine et du sous-domaine « www » :
 
-```shell-session
+```bash
 sudo certbot --apache -d domainname.ovh -d www.domainname.ovh
 ```
 

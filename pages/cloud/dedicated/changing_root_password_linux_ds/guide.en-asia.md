@@ -37,15 +37,15 @@ It may become necessary to change the root password (or the one of your admin/su
 
 Log in to your server via SSH. Switch to the root user, if necessary:
 
-```
-~$ sudo su -
-~#
+```bash
+sudo su -
+#
 ```
 
 To change the password of the current user, type `passwd`:
 
-```
-~# passwd
+```bash
+passwd
 
 New password:
 Retype new password:
@@ -64,8 +64,8 @@ passwd: password updated successfully
 
 After restarting your server into [rescue mode](../ovh-rescue/), you will need to identify the system partition. You can do this with the following command:
 
-```
-# fdisk -l
+```bash
+fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
@@ -98,24 +98,24 @@ If your server has a RAID configuration, you will need to mount your raid volume
 
 Once you have identified the system partition, you can mount it with the following command:
 
-```
-# mount /dev/hda1 /mnt/
+```bash
+mount /dev/hda1 /mnt/
 ```
 
 #### Step 3: Edit the root partition
 
 The system partition is locked for editing by default so you need to open it for write access first, which you can do with the following command:
 
-```
-# chroot /mnt
+```bash
+chroot /mnt
 ```
 
 #### Step 4: Change the root password
 
 The final step is to change the password with the following command:
 
-```
-# passwd
+```bash
+passwd
 
 Enter new UNIX password:
 Retype new UNIX password:

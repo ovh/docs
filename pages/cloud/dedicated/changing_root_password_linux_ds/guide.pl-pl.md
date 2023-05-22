@@ -42,15 +42,15 @@ Może zaistnieć konieczność zmiany hasła root (lub hasła użytkownika admin
 
 Zaloguj się do serwera przez SSH. Przejdź na użytkownika root, jeśli konieczne:
 
-```
-~$ sudo su -
-~#
+```bash
+sudo su -
+#
 ```
 
 Aby zmienić hasło dla aktualnego użytkownika, wprowadź `passwd`. Następnie wpisz dwa razy nowe hasło, jak pokazano poniżej:
 
-```
-~# passwd
+```bash
+passwd
 
 New password:
 Retype new password:
@@ -68,8 +68,8 @@ passwd: password updated successfully
 
 Po ponownym uruchomieniu serwera w [trybie Rescue](../ovh-rescue/) zidentyfikuj partycję systemu. W tym celu wprowadź następującą komendę:
 
-```
-# fdisk -l
+```bash
+fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
@@ -102,24 +102,24 @@ W powyższym przykładzie partycja systemowa to /dev/hda1.
 
 Po zidentyfikowaniu partycji systemu możesz ją zamontować przy użyciu polecenia:
 
-```
-# mount /dev/hda1 /mnt/
+```bash
+mount /dev/hda1 /mnt/
 ```
 
 #### Etap 3: modyfikacja partycji root
 
 Domyślnie partycja systemu jest zablokowana do edycji. Aby uzyskać dostęp do zapisu, otwórz go za pomocą polecenia:
 
-```
-# chroot /mnt
+```bash
+chroot /mnt
 ```
 
 #### Etap 4: zmień hasło root
 
 Ostatni etap polega na zmianie hasła za pomocą polecenia:
 
-```
-# passwd
+```bash
+passwd
 
 Enter new UNIX password:
 Retype new UNIX password:
