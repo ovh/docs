@@ -64,7 +64,7 @@ delete-ovh-archive = s3api delete-bucket-intelligent-tiering-configuration --id 
 ### Archiver un bucket
 
 Avant d'archiver un bucket, il est nécessaire de s'assurer qu'il n'y a pas de parts de MPU non complétées.
-Cela peut se faire avec la commande:
+Cela peut se faire avec la commande :
 
 ```bash
 aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api list-multipart-uploads --bucket <bucket_name>
