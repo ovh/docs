@@ -1,8 +1,7 @@
 ---
 title: 'Activation du mode promiscuité sur une machine virtuelle'
-excerpt: 'Decouvrer comment activer le mode promiscuité sur une machine virtuelle'
-section: 'Fonctionnalités de VMware vSphere'
-update: 2023-05-01
+excerpt: 'Découvrez comment activer le mode promiscuité sur une machine virtuelle'
+update: 2023-05-23
 ---
 
 **Dernière mise à jour le 01/05/2023**
@@ -27,7 +26,9 @@ Il convient de différencier deux situations, suivant le Distributed Virtual Swi
 
 Les clients sont désormais autonomes pour effectuer cette action via notre API. Les appels API suivants peuvent être utilisés.
 
-Récupérez tout d'abord le vmid et le datacenterid. Cette information peut également être obtenue depuis vSphere.
+Récupérez tout d'abord le **vmid** et le **datacenterid**. Cette information peut également être obtenue depuis vSphere.
+
+Depuis l'API OVHcloud :
 
 > [!api]
 >
@@ -38,6 +39,16 @@ Récupérez tout d'abord le vmid et le datacenterid. Cette information peut éga
 >
 > @api {GET}  /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm
 >
+
+Depuis vSphere :
+
+Connectez-vous d’abord à votre vSphere et sélectionnez la VM dans la liste des VM de l’onglet de gauche :
+
+![select VM](images/vcenter_select_vm_edit.png){.thumbnail}
+
+Une fois fait, vous pouvez récupérer le **vmid** depuis l'URL :
+
+![retrieve vmid](images/vcenter_vmID_edit.png){.thumbnail}
 
 - Activer le mode promiscuité sur une machine virtuelle
     

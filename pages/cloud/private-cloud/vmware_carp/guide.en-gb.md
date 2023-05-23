@@ -1,8 +1,7 @@
 ---
 title: 'Enabling promiscuous mode on a Virtual Machine'
 excerpt: 'Learn how to enable promiscuous mode on a Virtual machine'
-section: 'VMware vSphere features'
-updated: 2023-05-01
+updated: 2023-05-23
 ---
 
 **Last updated 1st May 2023**
@@ -32,7 +31,9 @@ A distinction should be made between two situations, depending on the Distribute
 
 Customers are now autonomous to perform this action through our API. The following API calls can be used:
 
-First, retrieve the vmid and datacenterid. This information can also be obtained from vSphere.
+First, retrieve the **vmid** and **datacenterid**. This information can also be obtained from vSphere.
+
+From the OVHcloud API:
 
 > [!api]
 >
@@ -43,6 +44,17 @@ First, retrieve the vmid and datacenterid. This information can also be obtained
 >
 > @api {GET}  /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm
 >
+
+From vSphere:
+
+First, connect to your vsphere and select the VM from the list of VMs in the left tab:
+
+![select VM](images/vcenter_select_vm_edit.png){.thumbnail}
+
+Once done, you can retrieve the **vmid** from the URL:
+
+![retrieve vmid](images/vcenter_vmID_edit.png){.thumbnail}
+
 
 - To enable promiscuous mode on a Virtual Machine:
 
