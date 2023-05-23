@@ -4,7 +4,7 @@ excerpt: 'Learn how to enable promiscuous mode on a Virtual machine'
 updated: 2023-05-23
 ---
 
-**Last updated 1st May 2023**
+**Last updated 23rd May 2023**
 
 ## Objective
 
