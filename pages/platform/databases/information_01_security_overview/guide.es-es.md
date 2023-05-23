@@ -9,7 +9,7 @@ routes:
 updated: 2023-05-23
 ---
 
-**Last updated 21st November 2022**
+**Last updated 23rd May 2023**
 
 ## Objective
 
@@ -44,25 +44,53 @@ We perform end-to-end encryption for all our Public Cloud Databases and backups.
 
 #### In-transit encryption (transport)
 
-To ensure your data is safe, all inbound and outbound network traffic to your database services is TSL encrypted.
+All network traffic to managed databases clusters is protected by TLS by default. 
 
-Customer access to provided services is only provided over TLS encrypted connections. There is no option for using unencrypted plaintext connections.
+**TLS cannot be disabled**.
 
-Communication between virtual machines within Public Cloud Databases is secured with either TLS or IPsec. There are no unencrypted plaintext connections.
+Depending on the DBMS selected, the default version may vary but the minimum is TLS v1.1. Data that is transmitted to managed databases clusters, as well as data transmitted between nodes of your clusters, is encrypted in-transit using TLS.
 
 #### At-rest encryption (on disk)
 
-At-rest data encryption covers both active service instances as well as service backups in cloud object storage.
+> [!primary]
+>
+> Currently, OVHcloud does not offer a KMS as a service, you cannot bring your own keys. KMIP is managed by OVHcloud.
+>
 
-All customer data stored on disk is encrypted using [LUKS](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup). 
+At-rest encryption is a database-level protection layer to guarantee that the written files and data are encrypted while stored.
 
-A unique key is generated for each database service or backup, and is never re-used. The key is never re-used and will be trashed at the destruction of the instance, so there’s a natural key rotation with roll-forward upgrades. We use the LUKS2 default mode aes-xts-plain64:sha256 with a 512-bit key.
+##### All databases engines except MongoDB
 
-#### Client-side encryption
+For all the databases engines such as MySQL, PostgreSQL, Redis, and so on, at-rest data encryption covers both active service instances as well as service backups in cloud object storage.
 
-Client side-encryption allows a customer to encrypt data from the sender's side, before the transmission, with his personal encryption key.
+- **Nodes:** service instances and the underlying VMs use full volume encryption using [LUKS](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup) with a randomly generated ephemeral key for each instance and each volume. 
+The key is never re-used and will be trashed at the destruction of the instance, so there’s a natural key rotation with roll-forward upgrades. 
+We use the LUKS2 default mode aes-xts-plain64:sha256 with a 512-bit key.
 
-We do not provide client-side encryption so far.
+- **Backups:** backups are encrypted with a randomly generated key per file. These keys are in turn encrypted with a RSA key-encryption key-pair and stored in the header section of each backup segment. 
+The file encryption is performed with AES-256 in CTR mode with HMAC-SHA256 for integrity protection. 
+The RSA key-pair is randomly generated for each service. The key lengths are 256-bit for block encryption, 512-bit for the integrity protection and 3072-bits for the RSA key.
+
+##### MongoDB
+
+- **Nodes:** service instances and the underlying VMs use full volume encryption using LUKS with a randomly generated ephemeral key for each instance and each volume. 
+The key is never re-used and will be trashed at the destruction of the instance, so there’s a natural key rotation with roll-forward upgrades. 
+We use the LUKS2 mode aes-cbc-essiv:sha256 with a 512-bit key.
+
+- **Backups:** backups are encrypted with a randomly generated key. This key is Asymetric RSA4096.
+
+#### In-Use encryption (client side)
+
+> [!primary]
+>
+> Currently, OVHcloud does not offer a KMS as a service, you cannot bring your own keys. KMIP is managed by OVHcloud.
+>
+
+Currently, we do not provide in-use encryption except for MongoDB Enterprise plans, based on MongoDB Client-Side Field Level Encryption.
+
+Data is encrypted client-side with customer-controlled encryption keys, before being sent, stored, or retrieved from the database
+
+Client-Side Field Level Encryption (FLE) is an in-use encryption capability that enables a client application to encrypt sensitive data before storing it in the MongoDB database. Sensitive data is transparently encrypted, remains encrypted throughout its lifecycle, and is only decrypted on the client side.
 
 ### CVE monitoring
 
@@ -78,7 +106,7 @@ Public Cloud Databases provide interconnection with your private network. This o
 
 ### IP restriction
 
-All database services are IP restricted. By default, services are not accessible. Users can specify unique IP or IP blocks from which the service will accept connections. IP restriction prevents all attacks from the outside of a specific information system.
+All database services are IPv4 restricted. By default, services are not accessible. Users can specify unique IP or IP blocks from which the service will accept connections. IP restriction prevents all attacks from the outside of a specific information system.
 
 
 ## Go further
