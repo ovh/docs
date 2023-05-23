@@ -6,10 +6,10 @@ section: Guides généraux
 order: 17
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/backups'
-updated: 2023-05-17
+updated: 2023-05-23
 ---
 
-**Last updated May 17th, 2023**
+**Last updated May 23rd, 2023**
 
 ## Objective
 
