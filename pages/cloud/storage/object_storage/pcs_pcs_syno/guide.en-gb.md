@@ -7,24 +7,23 @@ order: 150
 updated: 2023-05-22
 ---
 
-**Last updated 22th May 2023**
+**Last updated 22nd May 2023**
 
 ## Objective
 
 Synology DiskStation Manager 7.0 provides a tool for synchronisation with different cloud solutions.
 
-This is compatible with the OVHcloud Public Cloud Object Storage and lets you back up your data and access it from any location. This guide explains how to configure DiskStation Manager 7.0 so that you can synchronise your NAS files and your Object Storage.
+It is compatible with the OVHcloud Public Cloud Object Storage and lets you back up your data and access it from any location. This guide explains how to configure DiskStation Manager 7.0 so that you can synchronise your NAS files and your Object Storage.
 
 > [!primary]
 >
-> DiskStation Manager 6 is not compatible with Public Cloud Object Storage.
+> DiskStation Manager 6 is not compatible with OVHcloud Public Cloud Object Storage.
 >
 
-## Prerequisites
+## Requirements
 
 - [Create an Object Storage container](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/)
 - [Configure an Openstack user](https://docs.ovh.com/gb/en/public-cloud/creation-and-deletion-of-openstack-user/#creating-an-openstack-user)
-
 
 ## Instructions
 
@@ -59,11 +58,11 @@ Once you have your credentials, you can log in to your NAS and take the followin
 
 You can find this information in the OpenRC file which you downloaded in the previous step.
 
-- Select container's location and name:
+- Select the container's location and name:
 
 ![public-cloud](images/DSM7_3.png){.thumbnail}
 
-- Configure the folder to synchronise
+- Configure the folder to synchronise:
 
 ![public-cloud](images/DSM7_4.png){.thumbnail}
 
