@@ -1,7 +1,7 @@
 ---
 title: Object Storage Swift - Synchroniser un NAS Synology avec l’Object Storage
 slug: pcs/pcs-syno
-excerpt: Retrouvez ici comment synchroniser un NAS Synology a un conteneur.
+excerpt: Retrouvez ici comment synchroniser un NAS Synology avec un conteneur
 section: Spécificités de la classe de stockage OpenStack Swift
 order: 150
 updated: 2023-05-22
@@ -13,13 +13,13 @@ updated: 2023-05-22
 
 DiskStation Manager 7.0 de Synology propose un outil de synchronisation avec différentes solutions Cloud.
 
-Celui ci est compatible avec l'Object Storage du Public Cloud OVHcloud et vous permettra donc de pouvoir effectuer une sauvegarde de vos données, et de les rendre accessibles depuis n'importe quel endroit.
+Il est compatible avec l'Object Storage du Public Cloud OVHcloud et vous permet donc d'effectuer une sauvegarde de vos données et de les rendre accessibles depuis n'importe quel endroit.
 
 **Ce guide vous explique comment configurer DiskStation Manager 7.0 afin de synchroniser les fichiers se trouvant sur votre NAS vers votre Object Storage.**
 
 > [!primary]
 >
-> DiskStation Manager 6 n'est pas compatible avec l'Object Storage du Public Cloud OVHCloud.
+> DiskStation Manager 6 n'est pas compatible avec l'Object Storage Public Cloud OVHcloud.
 >
 
 ## Prérequis
@@ -33,10 +33,10 @@ Celui ci est compatible avec l'Object Storage du Public Cloud OVHcloud et vous p
 
 > [!warning]
 >
-> Les solutions Synology telles que DiskStation ou Hyperbackup ne sont pas compatible avec l'offre Public Cloud Archive
+> Les solutions Synology telles que DiskStation ou Hyperbackup ne sont pas compatible avec l'offre Public Cloud Archive.
 >
 
-#### Recuperation de vos identifiants Openstack
+#### Récupération de vos identifiants Openstack
 
 Afin de configurer la synchronisation de votre NAS Synology, vous devez être en possession des identifiants de votre utilisateur OpenStack.
 
@@ -50,7 +50,7 @@ Une fois en possession de vos identifiants, vous pouvez vous connecter sur votre
 
 - Lancer l'application Cloud Sync 
 
-- Sélectionner OpenStack Swift en tant que Cloud Providers
+- Sélectionner OpenStack Swift en tant que Cloud Provider :
 
 ![public-cloud](images/DSM7_1.png){.thumbnail}
 
@@ -60,11 +60,11 @@ Une fois en possession de vos identifiants, vous pouvez vous connecter sur votre
 
 Toutes ces informations sont trouvables dans le fichier OpenRC que vous avez récupéré lors de la précédente étape.
 
-- Configurer la localisation ainsi que le nom de votre conteneur de stockage
+- Configurer la localisation ainsi que le nom de votre conteneur de stockage :
 
 ![public-cloud](images/DSM7_3.png){.thumbnail}
 
-- Configurer votre dossier à synchroniser
+- Configurer votre dossier à synchroniser :
 
 ![public-cloud](images/DSM7_4.png){.thumbnail}
 
