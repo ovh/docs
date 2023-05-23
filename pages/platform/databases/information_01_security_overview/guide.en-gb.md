@@ -4,7 +4,7 @@ excerpt: Public Cloud Databases security overview
 slug: concepts-security-overview
 section: General information
 order: 010
-updated: 2022-11-21
+updated: 2023-05-23
 ---
 
 **Last updated 23rd May 2023**
@@ -46,7 +46,7 @@ All network traffic to managed databases clusters is protected by TLS by default
 
 **TLS cannot be disabled**.
 
-Depending of the DBMS selected, the default version may vary but minimum is TLS v1.1. Data that is transmitted to managed databases clusters, as well as data transmitted between nodes of your  clusters, is encrypted in-transit using TLS.
+Depending on the DBMS selected, the default version may vary but the minimum is TLS v1.1. Data that is transmitted to managed databases clusters, as well as data transmitted between nodes of your clusters, is encrypted in-transit using TLS.
 
 #### At-rest encryption (on disk)
 
@@ -61,21 +61,21 @@ At-rest encryption is a database-level protection layer to guarantee that the wr
 
 For all the databases engines such as MySQL, PostgreSQL, Redis, and so on, at-rest data encryption covers both active service instances as well as service backups in cloud object storage.
 
-**Nodes :** service instances and the underlying VMs use full volume encryption using [LUKS](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup) with a randomly generated ephemeral key per each instance and each volume. 
+- **Nodes:** service instances and the underlying VMs use full volume encryption using [LUKS](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup) with a randomly generated ephemeral key for each instance and each volume. 
 The key is never re-used and will be trashed at the destruction of the instance, so there’s a natural key rotation with roll-forward upgrades. 
 We use the LUKS2 default mode aes-xts-plain64:sha256 with a 512-bit key.
 
-**Backups :** backups are encrypted with a randomly generated key per file. These keys are in turn encrypted with RSA key-encryption key-pair and stored in the header section of each backup segment. 
+- **Backups:** backups are encrypted with a randomly generated key per file. These keys are in turn encrypted with a RSA key-encryption key-pair and stored in the header section of each backup segment. 
 The file encryption is performed with AES-256 in CTR mode with HMAC-SHA256 for integrity protection. 
 The RSA key-pair is randomly generated for each service. The key lengths are 256-bit for block encryption, 512-bit for the integrity protection and 3072-bits for the RSA key.
 
 ##### MongoDB
 
-**Nodes :** service instances and the underlying VMs use full volume encryption using LUKS with a randomly generated ephemeral key per each instance and each volume. 
+- **Nodes:** service instances and the underlying VMs use full volume encryption using LUKS with a randomly generated ephemeral key for each instance and each volume. 
 The key is never re-used and will be trashed at the destruction of the instance, so there’s a natural key rotation with roll-forward upgrades. 
 We use the LUKS2 mode aes-cbc-essiv:sha256 with a 512-bit key.
 
-**Backups :** backups are encrypted with a randomly generated key. This key is Asymetric RSA4096.
+- **Backups:** backups are encrypted with a randomly generated key. This key is Asymetric RSA4096.
 
 #### In-Use encryption (client side)
 

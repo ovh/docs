@@ -4,7 +4,7 @@ excerpt: Public Cloud Databases security overview
 slug: concepts-security-overview
 section: General information
 order: 010
-updated: 2022-11-21
+updated: 2023-05-23
 ---
 
 **Last updated 21st November 2022**
