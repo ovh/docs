@@ -1,5 +1,5 @@
 ---
-title: "Tutorial - Operazioni realizzabili con un file ".htaccess"
+title: "Tutorial - Operazioni realizzabili con un file .htaccess"
 excerpt: "Questa guida ti mostra alcuni esempi di operazioni realizzabili con un file .htaccess"
 slug: hosting_condiviso_altre_operazioni_possibili_con_il_file_htaccess
 section: Scrittura e autenticazione

@@ -1,7 +1,7 @@
 ---
-title: "Tutorial - Operações realizáveis com um ficheiro ".htaccess""
+title: "Tutorial - Operações realizáveis com um ficheiro .htaccess"
 slug: what_else_can_you_do_with_the_htaccess_file
-excerpt: "Descubra alguns exemplos de operações que podem ser realizadas com um ficheiro ".htaccess""
+excerpt: "Descubra alguns exemplos de operações que podem ser realizadas com um ficheiro .htaccess"
 section: Reescrita e autenticação
 order: 04
 updated: 2023-05-23
