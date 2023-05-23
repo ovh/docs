@@ -29,7 +29,7 @@ To use the .htaccess file correctly, you need to know and follow the following r
 > 
 > This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this guide.
 >
-> The following examples should be set up in a .htaccess file. Please note that the rules you define in this file have a direct impact on your website. Always check the rules you add before applying them to your website. 
+> The following examples should be set up in a ".htaccess" file. Please note that the rules you define in this file have a direct impact on your website. Always check the rules you add before applying them to your website. 
 > 
 
 **Find out the main operations you can do with a .htaccess file.**
@@ -130,7 +130,7 @@ You can also redirect an error to a **C**ommon **G**Gateway **I**interface (**CG
 For example, to redirect an error to a **CGI** script, add the following line to your ".htaccess" file:
 
 ```bash
-ErrorDocument 404 /cgi-bin/erreur.cgi?type=404
+ErrorDocument 404 /cgi-bin/error.cgi?type=404
 ```
 
 The line above will redirect the visitor who encounters an error **404** to your script *error.cgi*. This will execute the directives it contains, specifically against error **404**.
