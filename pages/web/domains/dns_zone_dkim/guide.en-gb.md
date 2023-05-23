@@ -85,7 +85,7 @@ The hash function is useful when you want to check the integrity of a message. T
 
 #### Asymmetric encryption <a name="encrypt"></a>
 
-The purpose of "**encryption**", as its name suggests, is to encrypt the data it is given. It is "**asymmetric**" because the encryption key is not the same as the 	decryption, unlike symmetric encryption, which uses the same key to encrypt and decrypt.
+The purpose of "**encryption**", as its name suggests, is to encrypt the data it is given. It is "**asymmetric**" because the encryption key is not the same as the decryption, unlike symmetric encryption, which uses the same key to encrypt and decrypt.
 
 Asymmetric encryption uses a **public key** and a **private key**. The public key is visible and usable by everyone. The private key is only used by the owner and is not visible to all. 
 
@@ -621,9 +621,9 @@ Select the email solution concerned in the following tabs:
 
 If you would like to configure your DNS zone to add a DKIM record to it for your solution, follow the instructions below.
 
-In [the OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) Control Panel, click on the `Web Cloud`{.action} tab, then on Domain `names`{.action} in the left-hand column, and select the domain name concerned.
+In [the OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) Control Panel, click on the `Web Cloud`{.action} tab, then on `Domain names`{.action} in the left-hand column, and select the domain name concerned.
 
-Click on the `DNS`{.action} Zone tab, then `Add record`{.action}. There are 3 ways to add a record to set the DKIM in your DNS zone:
+Click on the `DNS Zone`{.action}  tab, then `Add record`{.action}. There are 3 ways to add a record to set the DKIM in your DNS zone:
 
 - [a DKIM record](#dkim-record): a configuration that allows you to view all settings for a DKIM record.
 - [a TXT record](#txt-record): record to use when all DKIM parameters have been provided to you.
@@ -643,7 +643,7 @@ This record is named DKIM on the interface but it is actually a TXT record on ou
   selector-name._domainkey.mydomain.ovh.
 ```
 
-- **Version (v=)**: is used to specify the DKIM version. It is recommended that you use it and its default value is `DKIM1`.<br>
+- **Version (v=)**: is used to specify the DKIM version. It is recommended that you use it and its default value is "DKIM1".<br>
 If specified, this tag must be placed first in the record and must be equal to "DKIM1" (without quotes). Records that begin with a "v=" tag with another value should be ignored.
 
 - **Granularity (g=)**: allows you to specify the local-part of an email address, i.e. the part before the "@".<br>
