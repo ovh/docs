@@ -6,10 +6,10 @@ section: PostgreSQL - Guides
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/capabilities/'
-updated: 2023-05-03
+updated: 2023-05-23
 ---
 
-**Last updated May 3rd, 2023**
+**Last updated May 23rd, 2023**
 
 ## Objective
 
@@ -160,6 +160,8 @@ You can further customise your PostgreSQL by using advanced parameters. See the 
 *Business* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 14 days.
 
 *Enterprise* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 30 days.
+
+See the [Automated Backups guide](/pages/platform/databases/databases_05_automated_backups) for more information.
 
 #### Logs and metrics
 

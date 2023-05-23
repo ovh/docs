@@ -6,10 +6,10 @@ section: Redis - Guides
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/redis/capabilities/'
-updated: 2023-04-22
+updated: 2023-05-23
 ---
 
-**Last updated April 22nd, 2023**
+**Last updated May 23rd, 2023**
 
 ## Objective
 
@@ -123,11 +123,13 @@ You can further customise your Redis by using advanced parameters. See the [Adva
 
 #### Backups
 
-*Essential* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 2 days.
+*Essential* plan clusters are automatically backed up every 12 hours during their maintenance window. Backup retention is 1 day.
 
-*Business* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 14 days.
+*Business* plan clusters are automatically backed up every 12 hours during their maintenance window. Backup retention is 3 days.
 
-*Enterprise* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 30 days.
+*Enterprise* plan clusters are automatically backed up every 12 hours during their maintenance window. Backup retention is 13 days.
+
+See the [Automated Backups guide](/pages/platform/databases/databases_05_automated_backups) for more information.
 
 #### Logs and metrics
 
