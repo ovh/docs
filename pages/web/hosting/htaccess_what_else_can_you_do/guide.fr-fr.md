@@ -4,10 +4,10 @@ slug: mutualise-htaccess-les-autres-operations-realisables-avec-des-fichiers-hta
 excerpt: "Découvrez quelques exemples d'opérations réalisables avec un fichier « .htaccess »"
 section: Réécriture et authentification
 order: 04
-updated: 2023-05-22
+updated: 2023-05-23
 ---
 
-**Dernière mise à jour le 22/05/2023**
+**Dernière mise à jour le 23/05/2023**
 
 ## Objectif
 
@@ -15,13 +15,13 @@ Ce tutoriel a pour objectif de vous présenter les principales fonctionnalités 
 
 Le fichier « .htaccess » est un fichier de configuration (HTTP) Apache exécuté par le serveur Web de votre hébergement Web. Il permet de définir des règles spécifiques pour un répertoire et l'ensemble de ses sous-répertoires. Plusieurs fichiers « .htaccess » peuvent être créés dans [l'espace FTP](/pages/web/hosting/ftp_connection/) de votre hébergement Web. 
 
-S'il n'existe pas déjà dans votre espace FTP, vous pouvez l'ajouter en créant un fichier que vous nommerez « **.htaccess** » dans le répertoire pour lequel vous souhaitez appliquer une ou plusieurs des règles décrites dans le présent tutoriel.
+S'il n'existe pas déjà dans votre espace FTP, vous pouvez l'ajouter en créant un fichier que vous nommerez « **.htaccess** » dans le répertoire pour lequel vous souhaitez appliquer une ou plusieurs des règles décrites dans ce tutoriel.
 
 Pour utiliser correctement le fichier « .htaccess », vous devez connaître et respecter les règles suivantes : 
 
-- **un seul** fichier « .htaccess » par répertoire ou sous-répertoire pour éviter les conflits entre différents fichiers « .htaccess ».
-- le fichier « .htaccess » est invisible pour les internautes qui visitent votre site Web. 
-- Les règles déclarées dans un fichier « .htaccess » s'appliquent à l'ensemble du répertoire où le fichier « .htaccess » est installé, ainsi qu'à tout les sous-répertoires de ce même répertoire.
+- **un seul** fichier « .htaccess » par répertoire ou sous-répertoire pour éviter les conflits entre différents fichiers « .htaccess » ;
+- le fichier « .htaccess » est invisible pour les internautes qui visitent votre site Web ;
+- les règles déclarées dans un fichier « .htaccess » s'appliquent à l'ensemble du répertoire où le fichier « .htaccess » est installé, ainsi qu'à tous les sous-répertoires de ce même répertoire.
 
 > [!warning]
 >
@@ -48,19 +48,19 @@ Pour plus d'informations, consultez notre tutoriel : [« Comment bloquer l'accè
 
 ### Définir un mot de passe d'accès chiffré pour accéder à un répertoire ou un site web
 
-Via le fichier « .htaccess », vous pouvez mettre en place un accès protégé par un mot de passe chiffré à vos données présentes sur votre hébergement.
+Via le fichier « .htaccess », vous pouvez mettre en place un accès protégé (par un mot de passe chiffré) à vos données présentes sur votre hébergement.
 
 Pour plus d'informations, consultez notre tutoriel [« Protéger l'interface d'administration de votre site par un fichier .htaccess »](/pages/web/hosting/htaccess_protect_directory_by_password/).
 
-### Spécifier un fichier d'index different
+### Spécifier un fichier d'index différent
 
-Par défaut, le fichier **index** d'un répertoire est *index.html*, *index.htm* ou *index.php*. Si vous voulez que ce soit un autre fichier, vous pouvez mettre une ligne de ce type dans votre « .htaccess » :
+Par défaut, le fichier **index** d'un répertoire est *index.html*, *index.htm* ou *index.php*. Si vous préférez que cela soit un autre fichier, vous pouvez ajouter une ligne de ce type dans votre « .htaccess » :
 
 ```bash
 DirectoryIndex File_Name
 ```
 
-Par exemple, si vous voulez utiliser la page **accueil.html** comme page d'index, utilisez la ligne suivante :
+Par exemple, si vous voulez utiliser la page **accueil.html** comme page d'index, ajoutez la ligne suivante :
 
 ```bash
 DirectoryIndex accueil.html
@@ -76,15 +76,15 @@ Options -Indexes
 
 ### Faire de la réécriture d'URL
 
-Cette fonctionnalité permet, grâce au module **mod_rewrite** du serveur Web HTTP Apache pré-installé sur votre hébergement Web, de rediriger :
+Grâce au module **mod_rewrite** du serveur Web HTTP Apache pré-installé sur votre hébergement Web, cette fonctionnalité permet de rediriger :
 
-- toutes les requêtes HTTP vers un seul fichier de votre site web
-- une partie des requêtes HTTP vers un seul fichier de votre site web
-- votre nom de domaine vers son sous-domaine en « www »
-- les requêtes vers un dossier en particulier sans afficher le dossier concerné
-- automatiquement un visiteur vers votre site web en HTTPS lorsqu'il le consulte avec une URL en HTTP
+- toutes les requêtes HTTP vers un seul fichier de votre site web ;
+- une partie des requêtes HTTP vers un seul fichier de votre site web ;
+- votre nom de domaine vers son sous-domaine en « www » ;
+- les requêtes vers un dossier en particulier, sans afficher le dossier concerné ;
+- automatiquement un visiteur vers votre site web en HTTPS lorsqu'il le consulte avec une URL en HTTP.
 
-Retrouvez plus d'informations dans notre tutoriel : [« Réécrire l'URL d'accès à mon site grâce au mod_rewrite via le fichier .htaccess »](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite/)
+Retrouvez plus d'informations dans notre tutoriel : [« Réécrire l'URL d'accès à mon site grâce au mod_rewrite via le fichier .htaccess »](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite/).
 
 #### Rediriger les messages d'erreur
 
@@ -94,47 +94,46 @@ Pour personnaliser et/ou rediriger vos messages d'erreurs sur une page web, cré
 ErrorDocument Error_Code_Number Message_Or_Destination
 ```
 
-Remplacez "**Error_Code_Number**" uniquement par le numéro du code erreur HTTP Apache correspondant. 
+Remplacez uniquement "**Error_Code_Number**" par le numéro du code erreur HTTP Apache correspondant. 
 
 Retrouvez plus d'informations sur cette fonctionnalité dans la [documentation officielle Apache](https://httpd.apache.org/docs/trunk/fr/custom-error.html){.external}.
 
 Les codes erreur HTTP les plus courants sont :
 
-- 401 : Authorization required : Erreur est générée lorsqu'un visiteur saisit un mauvais login/mot de passe lors de l'accès à un fichier ou répertoire protégé.
-- 403 : Access denied : S'affiche lorsque l'accès à un répertoire dans lequel le fichier *index.html* (ou *index.cgi*, etc.) est absent et que la configuration du serveur interdit l'affichage des fichiers du répertoire.
-- 404 : Not Found : Le fichier que le visiteur essaie de voir n'existe pas.
-- 500 : Internal Server Error : S'affiche lorsqu'un script ne s'est pas exécuté correctement ou que le script ou les droits du script sont incorrects.
+- 401 : Authorization required : cette erreur est générée lorsqu'un visiteur saisit un mauvais login/mot de passe lors de l'accès à un fichier ou répertoire protégé.
+- 403 : Access denied : cette erreur s'affiche lors de l'accès à un répertoire dans lequel le fichier *index.html* (ou *index.cgi*, etc.) est absent et si la configuration du serveur interdit l'affichage des fichiers du répertoire.
+- 404 : Not Found : le fichier que le visiteur essaie de voir n'existe pas.
+- 500 : Internal Server Error : cette erreur s'affiche lorsqu'un script ne s'est pas exécuté correctement ou que le script ou les droits du script sont incorrects.
 
 Remplacez **"Message_Or_Destination"** par l'action à effectuer. Pour afficher un message directement, tapez le message correspondant entre guillemets. Pour rediriger sur une page précise, renseignez le chemin d'accès à cette page. 
 
-Retrouvez ci-après deux exemples concrêts :
+Retrouvez ci-dessous deux exemples concrets :
 
-- Vous souhaitez indiquer *"Désolé, vous n'avez pas le droit d'accéder à ce fichier"* si le visiteur rencontre une erreur **403**. Placez la ligne ci-dessous dans votre fichier « .htaccess » :
+- Vous souhaitez indiquer *"Désolé, vous n'avez pas le droit d'accéder à ce fichier"* si le visiteur rencontre une erreur **403**. Ajoutez la ligne ci-dessous dans votre fichier « .htaccess » :
 
 ```bash
 ErrorDocument 403 "Désolé, vous n'avez pas le droit d'accéder à ce fichier"
 ```
 
-- Vous souhaitez renvoyer les erreurs **404** sur votre page personnalisée *404.html* (pour votre domaine : domaine.tld).
-Placez la ligne ci-dessous dans votre fichier « .htaccess » :
+- Vous souhaitez renvoyer les erreurs **404** vers votre page personnalisée *404.html* (pour votre domaine : domain.tld). Ajoutez la ligne ci-dessous dans votre fichier « .htaccess » :
 
 ```bash
-ErrorDocument 404 http://domaine.tld/404.html
+ErrorDocument 404 http://domain.tld/404.html
 ```
 
 Vous pouvez aussi rediriger une erreur vers un script **C**ommon **G**ateway **I**nterface (**CGI**). Vous pouvez coder un script en **CGI** pour, par exemple, effectuer les actions suivantes :
  
-- afficher un message
-- rediriger le visiteur vers un autre fichier selon l'URL demandée initialement (disponible dans la variable d'environnement **REQUEST_URI**)
-- envoyer un e-mail
+- afficher un message ;
+- rediriger le visiteur vers un autre fichier selon l'URL demandée initialement (disponible dans la variable d'environnement **REQUEST_URI**) ;
+- envoyer un e-mail.
 
-Pour rediriger une erreur vers un script **CGI**, rajoutez, par exemple la ligne suivante dans votre fichier « .htaccess » :
+Par exemple, pour rediriger une erreur vers un script **CGI**, rajoutez la ligne suivante dans votre fichier « .htaccess » :
 
 ```bash
 ErrorDocument 404 /cgi-bin/erreur.cgi?type=404
 ```
 
-La ligne ci-dessus redirigera le visiteur qui rencontre une erreur **404** vers votre script *erreur.cgi*. Celui-ci exécutera les directives qu'il contient spécifiquement par rapport à l'erreur **404**.
+La ligne ci-dessus redirigera le visiteur qui rencontre une erreur **404** vers votre script *erreur.cgi*. Celui-ci exécutera les directives qu'il contient, spécifiquement par rapport à l'erreur **404**.
 
 ## Aller plus loin <a name="go-further"></a>
 
