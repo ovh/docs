@@ -4,10 +4,10 @@ excerpt: In dieser Hilfe erfahren Sie, welche anderen Operationen mit .htaccess-
 slug: webhosting_welche_anderen_operationen_sind_mit_htaccess-dateien_moglich
 section: 'Weiterleitung und Authentifizierung'
 order: 04
-updated: 2020-05-05
+updated: 2023-05-23
 ---
 
-**Letzte Aktualisierung am 05.05.2020**
+**Letzte Aktualisierung am 23.05.2023**
 
 ## Verzeichnis-Browsing verhindern
 Wenn Sie nicht wollen, dass Internetuser den Inhalt eines Verzeichnisses ohne Index-Datei (index.cgi, index.html, index.php, etc.) "durchstöbern" können, erstellen Sie eine .htaccess-Datei mit folgender Zeile:

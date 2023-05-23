@@ -4,10 +4,10 @@ excerpt: This guide explains how else you can use the .htaccess file
 slug: what_else_can_you_do_with_the_htaccess_file
 section: Rewriting and authentication
 order: 04
-updated: 2020-05-05
+updated: 2023-05-23
 ---
 
-**Last updated 05th May 2020**
+**Last updated 23rd May 2023**
 
 ## Prevent the content of a directory from being listed
 

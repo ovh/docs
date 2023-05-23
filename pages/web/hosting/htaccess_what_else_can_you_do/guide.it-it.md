@@ -4,10 +4,10 @@ excerpt: Questa guida ti mostra le altre operazioni che possono essere effettuat
 slug: hosting_condiviso_altre_operazioni_possibili_con_il_file_htaccess
 section: Scrittura e autenticazione
 order: 04
-updated: 2020-05-05
+updated: 2023-05-23
 ---
 
-**Ultimo aggiornamento: 05/05/2020**
+**Ultimo aggiornamento: 23/05/2023**
 
 
 ## Impedire il listing del contenuto di una directory
