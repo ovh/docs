@@ -13,7 +13,7 @@ updated: 2023-05-22
 
 Ce tutoriel a pour objectif de vous présenter les principales fonctionnalités du fichier « .htaccess » pour votre hébergement Web.
 
-Le fichier « .htaccess » est un fichier texte exécuté par le serveur Web de votre hébergement Web. Il permet de définir des règles spécifiques pour un répertoire et l'ensemble de ses sous-répertoires. Plusieurs fichiers « .htaccess » peuvent être créés dans [l'espace FTP](/pages/web/hosting/ftp_connection/) de votre hébergement Web. 
+Le fichier « .htaccess » est un fichier de configuration (HTTP) Apache exécuté par le serveur Web de votre hébergement Web. Il permet de définir des règles spécifiques pour un répertoire et l'ensemble de ses sous-répertoires. Plusieurs fichiers « .htaccess » peuvent être créés dans [l'espace FTP](/pages/web/hosting/ftp_connection/) de votre hébergement Web. 
 
 S'il n'existe pas déjà dans votre espace FTP, vous pouvez l'ajouter en créant un fichier que vous nommerez « **.htaccess** » dans le répertoire pour lequel vous souhaitez appliquer une ou plusieurs des règles décrites dans le présent tutoriel.
 
