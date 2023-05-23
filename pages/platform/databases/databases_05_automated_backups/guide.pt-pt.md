@@ -73,7 +73,7 @@ Backup default location and time could be override by setting the `backups` attr
 }
 ```
 
-As a reminder, here is API endpoint for database creation.
+As a reminder, here is the API endpoint for database creation.
 
 > [!api]
 >
@@ -82,11 +82,11 @@ As a reminder, here is API endpoint for database creation.
 
 Backup settings must respect the following rules:
 
-- For MongoDB, `regions` array only accepts one element. You are free to define the backup location in the same region as the service which could be considered **unwise**.
-- For other engines, `regions` array accepts one or two elements. If one only element is specified, it must match the region the service is running in. If two elements are specified, one of these elements must match the region the service is running, while the other element could be set to any other region. It is **recommended** to use 2 regions for your backups.
+- For MongoDB, the `regions` array only accepts one element. You are free to define the backup location in the same region as the service, though this could be considered **unwise**.
+- For other engines, the `regions` array accepts one or two elements. If one only element is specified, it must match the region the service is running in. If two elements are specified, one of these elements must match the region the service is running in, while the other element could be set to any other region. It is **recommended** to use 2 regions for your backups.
 
 > [!primary]
-> Be aware that the backup time could only be customized on MongoDB, MySQL, and PostgreSQL.
+> Be aware that the backup time can only be customized on MongoDB, MySQL, and PostgreSQL.
 
 ## Lexicon
 
