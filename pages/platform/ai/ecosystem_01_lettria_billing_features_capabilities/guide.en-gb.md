@@ -11,17 +11,17 @@ updated: 2023-05-22
 
 ## Objective
 
-OVHcloud's **AI Ecosystem Partner** provides Artificial Intelligence partner services for NLP, audio and image tasks. You will benefit from ready-to-use and quickly deployable applications with AI Deploy according to your needs.
+OVHcloud offers different Artificial Intelligence services through its AI Partners Ecosystem. You will benefit from a catalogue of **ready-to-use applications** provided by our partners which you will easily be able to deploy according to your needs through **AI Deploy**.
 
-**Lettria is an OVHcloud partner that offers AI services dedicated to text. This guide covers Lettria models features, how it works and its billing principle.**
+**Lettria is an OVHcloud partner that offers AI services dedicated to text. This guide will introduce Lettria models features, as well as cover how it works and associated billing.**
 
 ## Introduction
 
-**Lettria** is a start-up specialized in **NLP** (Natural Language Processing). The platform allows all organizations, from start-ups to large corporations, to perform textual analysis on their data to make the best strategic decisions.
+**Lettria** is a start-up specialized in **NLP** (Natural Language Processing). The platform enables all organizations, from start-ups to large corporations, to perform textual analysis on their data to make the best strategic decisions.
 
 Lettria provides text understanding models that allow users to easily identify and extract key information from their text. This method relies on artificial intelligence and NLP techniques to understand the sentiment or emotions of a text.
 
-The uses are varied:
+The uses are many:
 - Customer service automation
 - Social media monitoring
 - Content moderation
@@ -33,7 +33,7 @@ The Lettria models available at OVHcloud cover two NLP tasks: **sentiment analys
 
 ### Sentiment
 
-The goal of sentiment analysis is to automatically classify textual data as **positive**, **negative** or **neutral** based on the underlying sentiment expressed in the text.
+Lettria gives you the possibility to analyze the sentiments of a text. The principle is to automatically classify textual data as **positive**, **negative** or **neutral** based on the underlying sentiment expressed in the text.
 
 Input example:
 ```console
@@ -195,33 +195,29 @@ The pricing of Lettria differs slightly from the classic AI Deploy offer. In ord
 > The total cost of your app will include the price of the resources you have selected as well as the partner's model license price.
 >
 
+*Please bear in mind Lettria models are billed on pay-per-use. We do not offer yet pay-per-call billing.*
+
 ### Estimate the cost of a Lettria app
 
 **How to calculate the total cost of a Lettria app?**
 
-You will need two items:
-- The price of the **resources selected with AI Deploy**
-- The price of the **Lettria model licenses**
+Total price is composed by two different parts:
+* `Resources price`
+* `Lettria model licencing price`
 
 #### Resources price
 
 The first step consists in calculating the price of an AI Deploy app according to the computing resources chosen.
 
+*Please keep in mind we bill per second although pricing is displayed per hour HT for a more user-friendly experience.*
+
 > [!primary]
 >
 > To launch your app you can choose between two types of resources: `CPU` or `GPU`. The price will therefore vary depending on the resource chosen.
-> For more information on pricing, click [here](https://www.ovhcloud.com/en-gb/public-cloud/prices/).
 >
 
-To calculate the price of an app per hour, you have two methods of calculation.
-
 ```console
-basic-app-hour-price = ai-deploy-price-<resource-type>-minute x 60 x nb-resources x nb-replicas
-```
-OR
-
-```console
-basic-app-hour-price = price-<resource-type>-hour x nb-resources x nb-replicas
+Resources price = (nb app) x (nb resources) x (nb replicas) x [ (unit price per hour HT) x (nb hour) ]
 ```
 
 To learn more about the basic cost of an app launched with AI Deploy, please refer to this [documentation](/pages/platform/ai/deploy_guide_06_billing_concept).
@@ -230,16 +226,8 @@ To learn more about the basic cost of an app launched with AI Deploy, please ref
 
 The second step consists in calculating the cost of one of the Lettria partner service according to the chosen resource.
 
-To calculate the price of a Lettria service per hour, you have two methods of calculation.
-
 ```console
-lettria-model-price-licensing = lettria-price-<resource-type>-minute x 60 x nb-resources x nb-replicas
-```
-    
-OR
-    
-```console
-lettria-model-price-licensing = lettria-price-<resource-type>-hour x nb-resources x nb-replicas
+Lettria model licensing price = (nb app) x (nb resources) x (nb replicas) x [ (Lettria model licensing unit price per hour for specified resource type) x (nb hour) ]
 ```
 
 #### Total price
@@ -247,10 +235,17 @@ lettria-model-price-licensing = lettria-price-<resource-type>-hour x nb-resource
 To obtain the total cost of a Lettria app started with AI Deploy, add the two amounts from the previous calculations.
 
 ```console
-total-price = basic-app-hour-price + lettria-model-price-licensing
+Total price = Resources price + Lettria model licencing price
 ```
 
 ![billing](images/lettria-ai-deploy-billing.png){.thumbnail}
+
+> [!primary]
+>
+> To learn more about the basic cost (resource price) of an app launched with AI Deploy, please refer to this [documentation](/pages/platform/ai/deploy_guide_06_billing_concept).
+> 
+> Please refer to the [OVHcloud Public Cloud website](https://www.ovhcloud.com/en-gb/public-cloud/prices/) for all information about resources and partners models prices.
+>
 
 ### Examples
 
