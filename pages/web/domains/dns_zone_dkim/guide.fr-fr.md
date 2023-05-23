@@ -1,9 +1,6 @@
 ---
 title: Configurer un enregistrement DKIM
-slug: dkim-record
 excerpt: Découvrez comment configurer un enregistrement DKIM sur votre nom de domaine et votre plateforme e-mail OVHcloud
-section: DNS et zone DNS
-order: 06
 updated: 2023-05-17
 ---
 
@@ -104,7 +101,7 @@ Il existe deux utilisations du chiffrement asymétrique :
 
 #### Comment le hachage et le chiffrement asymétrique sont-ils utilisés pour le DKIM ? <a name="encrypt-and-hash"></a>
 
-Depuis la plateforme e-mail, le DKIM va utiliser le hachage pour créer une signature à partir de certains éléments de [l'en-tête de l'e-mail](https://docs.ovh.com/fr/emails/recuperation-des-entetes-e-mails/#comprendre-le-contenu-dun-en-tete) et du corps de l'e-mail (contenu de l'e-mail).
+Depuis la plateforme e-mail, le DKIM va utiliser le hachage pour créer une signature à partir de certains éléments de [l'en-tête de l'e-mail](pages/web/emails/diagnostic_headers) et du corps de l'e-mail (contenu de l'e-mail).
 
 La signature est ensuite chiffrée avec la clé privée en utilisant le chiffrement asymétrique.
 
@@ -116,7 +113,7 @@ Pour que le destinataire puisse vérifier la signature DKIM de l'expéditeur, il
 
 Lorsque vous activez le DKIM, celui-ci fonctionne avec une paire de clé publique / clé privée. Il est possible d'attribuer plusieurs paires de clés à votre nom de domaine, dans le cadre d'une rotation par exemple. En effet, lorsque vous changez de paire de clés, l'ancienne paire doit rester active le temps que l'ensemble des e-mails que vous avez envoyé avec l'ancienne clé ne rencontre pas d'échec dans la vérification du DKIM sur le serveur de réception.
 
-Pour que ce principe de rotation fonctionne, on va utiliser ce qu'on appelle les **sélecteurs DKIM**. Un sélecteur DKIM comprend une paire de clé privée/clé publique. Il est visible sous la forme d'une chaîne de caractère dans la signature DKIM d'un e-mail par l'argument `s=`. Cette signature est visible dans [l'en-tête de l'e-mail](https://docs.ovh.com/fr/emails/recuperation-des-entetes-e-mails/#comprendre-le-contenu-dun-en-tete).
+Pour que ce principe de rotation fonctionne, on va utiliser ce qu'on appelle les **sélecteurs DKIM**. Un sélecteur DKIM comprend une paire de clé privée/clé publique. Il est visible sous la forme d'une chaîne de caractère dans la signature DKIM d'un e-mail par l'argument `s=`. Cette signature est visible dans [l'en-tête de l'e-mail](pages/web/emails/diagnostic_headers).
 
 **Exemple d'une partie de signature DKIM**
 
@@ -571,7 +568,7 @@ Sélectionnez l'offre e-mail concernée dans les onglets suivant:
 
 > [!tabs]
 > **Exchange**
->> Si vous souhaitez désactiver le DKIM sans supprimer le sélecteur et sa paire de clés, utilisez l'appel API suivant :
+>> Si vous souhaitez désactiver le DKIM sans supprimer le sélecteur et sa paire de clés, utilisez l'appel API suivant:
 >> 
 >> > [!api]
 >> >
@@ -667,7 +664,7 @@ Ce tag est obligatoire dans la signature DKIM et permet aux destinataires de la 
 
 - **Révoquer la clé publique** : si une clé publique DKIM a été révoquée (par exemple en cas de compromission de la clé privée), une valeur vide doit être utilisée pour le tag "p=", indiquant que cette clé publique n'est plus valide. Les destinataires doivent alors retourner une erreur pour toute signature DKIM faisant référence à une clé révoquée.
 
-- **Type de service (s=)**c: La balise "s=" (Service Type) est optionnelle et n'est pas présente par défaut. Elle permet de spécifier le ou les types de services au(x)quel(s) cet enregistrement DKIM s'applique.<br>
+- **Type de service (s=)**: La balise "s=" (Service Type) est optionnelle et n'est pas présente par défaut. Elle permet de spécifier le ou les types de services au(x)quel(s) cet enregistrement DKIM s'applique.<br>
 Les types de services sont définis en utilisant une liste de mots-clés séparés par des deux-points ":".<br>
 Le destinataire doit ignorer cet enregistrement si le type de service approprié n'est pas répertorié.<br>
 La balise "s=" est destinée à restreindre l'utilisation des clés pour d'autres fins, dans le cas où l'utilisation du DKIM serait définie pour d'autres services à l'avenir.<br>
