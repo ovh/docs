@@ -118,7 +118,7 @@ To change the MTU size using the OpenStack API
 
 ```bash
 TOKEN=$(openstack token issue -c id -f value)
-curl -s -H "X-Auth-Token: $TOKEN" -H "Content-Type: application/json"  -H "Accept: application/json" -X PUT -d '{"network": {"mtu": 1500}}' http://	https://network.compute.<region>.cloud.ovh.net/:9696/v2.0/networks/<networkid>
+curl -s -H "X-Auth-Token: $TOKEN" -H "Content-Type: application/json"  -H "Accept: application/json" -X PUT -d '{"network": {"mtu": 1500}}' http://	https://network.compute.<region>.cloud.ovh.net/v2.0/networks/<networkid>
 ```
 
 ### Step 4: Verify the changes
