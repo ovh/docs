@@ -47,7 +47,7 @@ Une fois connecté dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?
 
 Quelques secondes plus tard, l'instance est démarrée. Vous pourrez ensuite vous y connecter et vérifier la présence de la carte graphique : 
 
-```ssh
+```bash
 lspci | grep -i nvidia
 00:05.0 VGA compatible controller: NVIDIA Corporation Device 1c03 (rev a1)
 00:06.0 Audio device: NVIDIA Corporation Device 10f1 (rev a1)

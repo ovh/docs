@@ -64,7 +64,7 @@ Assim, há duas possibilidades de conexão, em função do método utilizado:
 
 Uma vez aberto o terminal, utilize o seguinte comando: substitua os elementos "yourlogin", "ssh.cluster00.hosting.ovh.net" e "22" pelos que correspondem aos seus identificadores SSH. 
 
-```ssh
+```bash
 ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 ```
 

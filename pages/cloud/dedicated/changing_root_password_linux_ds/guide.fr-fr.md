@@ -38,15 +38,15 @@ Il peut s'avérer nécessaire de changer le mot de passe root (ou celui de votre
 
 Connectez-vous à votre serveur via SSH. Basculez vers l'utilisateur root, si nécessaire :
 
-```
-~$ sudo su -
-~#
+```bash
+sudo su -
+#
 ```
 
 Pour modifier le mot de passe de l'utilisateur actuel, tapez `passwd`. Vous devrez alors indiquer votre nouveau mot de passe à deux reprises, comme indiqué ci-dessous :
 
-```
-~# passwd
+```bash
+passwd
 
 New password:
 Retype new password:
@@ -64,8 +64,8 @@ passwd: password updated successfully
 
 Après avoir redémarré votre serveur en [mode rescue](../ovh-rescue/), vous devez identifier la partition système. Pour ce faire, exécutez la commande suivante :
 
-```
-# fdisk -l
+```bash
+fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
@@ -97,24 +97,24 @@ Dans l'exemple ci-dessus, la partition système est /dev/hda1.
 
 Une fois la partition système identifiée, vous pouvez la monter avec la commande suivante :
 
-```
-# mount /dev/hda1 /mnt/
+```bash
+mount /dev/hda1 /mnt/
 ```
 
 #### Étape 3 : modifier la partition root
 
 Par défaut, la partition système est verrouillée pour l'édition. Vous devez donc l'ouvrir pour un accès en écriture, via la commande suivante :
 
-```
-# chroot /mnt
+```bash
+chroot /mnt
 ```
 
 #### Étape 4 : modifier le mot de passe root
 
 La dernière étape consiste à modifier votre mot de passe, avec la commande suivante :
 
-```
-# passwd
+```bash
+passwd
 
 Enter new UNIX password:
 Retype new UNIX password:

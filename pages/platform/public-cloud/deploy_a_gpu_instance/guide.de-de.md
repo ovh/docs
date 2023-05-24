@@ -52,7 +52,7 @@ Wählen Sie die gewünschte Unix-Distribution aus:
 
 Die Instanz wird einige Sekunden später gestartet. Sie können sich dann anmelden und nach der Grafikkarte suchen: 
 
-```ssh
+```bash
 lspci | grep -i nvidia
 00:05.0 3D-Controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)
 ```

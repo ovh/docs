@@ -44,7 +44,7 @@ If you add theses lines to your MySQL configuration file and restart it, MySQL w
 
 Here is a sample of the lines produced by the slow query log:
 
-```MySQL
+```sql
  # Time: 161223 16:43:49
  # User@Host: guest[guest] @ localhost []  Id:     2
  # Query_time: 0.734103  Lock_time: 0.000161 Rows_sent: 72761  Rows_examined: 518199
@@ -177,4 +177,4 @@ All this information can help you to analyse the most difficult queries for your
 - Getting Started: [Quick Start](../quick-start){.ref}
 - Documentation: [Guides](../){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

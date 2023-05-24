@@ -73,7 +73,7 @@ Pode aceitar o ficheiro padrão fazendo «Enter». A seguir terá a opção de i
 
 As suas chaves SSH devem ser guardadas no diretório «.ssh». Ao nome do ficheiro de chave pública será acrescentado «.pub».
 
-```ssh
+```bash
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:

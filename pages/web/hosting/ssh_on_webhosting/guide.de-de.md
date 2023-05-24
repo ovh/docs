@@ -63,7 +63,7 @@ Je nach der von Ihnen verwendeten Methode gibt es nun zwei Arten, um sich via SS
 
 Wenn das Terminal geöffnet ist, verwenden Sie folgenden Befehl, indem Sie die Elemente "Yourlogin", "ssh.cluster000.hosting.ovh.net"und "22"durch die Elemente ersetzen, die Ihren SSH-Kennungen entsprechen. 
 
-```ssh
+```bash
 ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 ```
 

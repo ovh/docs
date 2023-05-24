@@ -38,24 +38,24 @@ Numa máquina com sistema operativo Mac ou Linux, abra a aplicação Terminal (l
 
 Confirme que tem uma pasta ".ssh" no seu diretório $HOME. Se esta pasta não existir, crie uma:
 
-```sh
-# mkdir ~/.ssh
+```bash
+mkdir ~/.ssh
 ```
 
 Utilize o seguinte comando para criar uma chave RSA de 4096 bits:
 
-```sh
-# ssh-keygen -b 4096
+```bash
+ssh-keygen -b 4096
 ```
 A utilização da opção “-t” com este comando permite-lhe especificar um método de encriptação diferente, por exemplo:
 
-```sh
-# ssh-keygen -t ed25519 -a 256
+```bash
+ssh-keygen -t ed25519 -a 256
 ```
 
 O comando irá solicitar-lhe que guarde a chave recém-criada:
 
-```sh
+```console
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
@@ -64,7 +64,7 @@ Confirme e terá a opção de introduzir uma frase de acesso para proteger a sua
 
 As suas chaves SSH devem ser guardadas no diretório ".ssh".
 
-```ssh
+```console
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:
@@ -90,8 +90,8 @@ The key's randomart image is:
 
 Para ler e exportar a sua chave pública, utilize o comando “cat” no respetivo ficheiro e copie o seguinte resultado:
 
-```ssh
-# cat ~/.ssh/id_rsa.pub
+```bash
+cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8teh2NJ42qYZV98gTNhumO1b6rMYIkAfRVazl
 k6dSS3xf2MXJ4YHsDacdjtJ+evXCFBy/IWgdkFtcvsGAMZ2N1RdvhDyQYcy6NDaJCBYw1K6Gv5fJ
 SHCiFXvMF0MRRUSMneYlidxUJg9eDvdygny4xOdC6c1JrPrSgOc2nQuKeMpOoOWLINIswg1IIFVk
@@ -123,25 +123,25 @@ Continue a mover o rato até que a barra de progresso esteja completa. A sua cha
 
 Navegue até ao diretório $HOME e crie a pasta ".ssh" (se esta não existir):
 
-```ssh
+```bash
 $ mkdir ~/.ssh
 ```
 
 Para guardar a chave para o utilizador atual, abra um ficheiro denominado "authorized_keys" com o seu editor de texto preferido:
 
-```ssh
+```bash
 $ nano ~/.ssh/authorized_keys
 ```
 
 Copie e cole a sua **chave pública** neste novo ficheiro. Guarde-o e saia do editor. Reinicie o seu servidor ou apenas o OpenSSH daemon (o comando adequado pode variar em função do seu sistema operativo):
 
-```ssh
+```bash
 $ systemctl restart sshd
 ```
 
 Para verificar se a sua chave foi devidamente configurada, tente aceder ao seu servidor via SSH utilizando o seguinte comando. Substitua "IP_ADDRESSorHOSTNAME" pelo endereço IP ou pelo nome de anfitrião do servidor a que está a tentar aceder:
 
-```ssh
+```bash
 $ ssh user@IP_ADDRESSorHOSTNAME
 ```
 

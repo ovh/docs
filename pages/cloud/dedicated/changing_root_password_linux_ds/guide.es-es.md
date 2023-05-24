@@ -42,15 +42,15 @@ Puede ser necesario cambiar la contraseña root (o la de su usuario admin/sudo) 
 
 Conéctese al servidor por SSH. Cambie al usuario root si fuera necesario:
 
-```
-~$ sudo su -
-~#
+```bash
+sudo su -
+#
 ```
 
 Para cambiar la contraseña del usuario actual, escriba `passwd`. A continuación introduzca la nueva contraseña una primera vez y después confírmela introduciéndola de nuevo. Recibirá la siguiente respuesta:
 
-```
-~# passwd
+```bash
+passwd
 
 New password:
 Retype new password:
@@ -68,8 +68,8 @@ passwd: password updated successfully
 
 Una vez reiniciado el servidor en [modo de rescate](../modo_de_rescate/), deberá identificar la partición del sistema. Para ello, ejecute el siguiente comando:
 
-```
-# fdisk -l
+```bash
+fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
@@ -102,24 +102,24 @@ En el ejemplo anterior, la partición del sistema es /dev/hda1.
 
 Una vez identificada la partición del sistema, móntela utilizando el siguiente comando:
 
-```
-# mount /dev/hda1 /mnt/
+```bash
+mount /dev/hda1 /mnt/
 ```
 
 #### 3. Cambiar la partición root
 
 De forma predeterminada, la partición del sistema está bloqueada para editarla. Para acceder a la escritura, utilice el siguiente comando:
 
-```
-# chroot /mnt
+```bash
+chroot /mnt
 ```
 
 #### 4. cambiar la contraseña root
 
 Para terminar, debe cambiar la contraseña con el siguiente comando:
 
-```
-# passwd
+```bash
+passwd
 
 Enter new UNIX password:
 Retype new UNIX password:

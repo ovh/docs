@@ -35,23 +35,23 @@ Na komputerze z systemem Mac lub Linux otwórz aplikację terminala (wiersz pole
 Sprawdź, czy w katalogu domowym $HOME masz folder “.ssh”. Jeśli taki folder nie istnieje, utwórz go:
 
 ```bash
-# mkdir ~/.ssh
+mkdir ~/.ssh
 ```
 
 Utwórz 4096-bitowy klucz RSA przy użyciu następującego polecenia:
 
 ```bash
-# ssh-keygen -b 4096
+ssh-keygen -b 4096
 ```
 Aby określić inną metodę szyfrowania, użyj tego polecenia z opcją “-t”, na przykład:
 
 ```bash
-# ssh-keygen -t ed25519 -a 256
+ssh-keygen -t ed25519 -a 256
 ```
 
 Zostanie wyświetlony monit o zapisanie nowo utworzonego klucza:
 
-```bash
+```console
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
@@ -60,7 +60,7 @@ Po potwierdzeniu możesz podać hasło, które będzie stanowić zabezpieczenie 
 
 Klucze powinny zostać zapisane w katalogu “.ssh”.
 
-```bash
+```console
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:
@@ -87,7 +87,7 @@ The key's randomart image is:
 Aby odczytać i wyeksportować klucz publiczny, użyj polecenia “cat” względem pliku klucza i skopiuj dane wyjściowe:
 
 ```bash
-# cat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8teh2NJ42qYZV98gTNhumO1b6rMYIkAfRVazl
 k6dSS3xf2MXJ4YHsDacdjtJ+evXCFBy/IWgdkFtcvsGAMZ2N1RdvhDyQYcy6NDaJCBYw1K6Gv5fJ
 SHCiFXvMF0MRRUSMneYlidxUJg9eDvdygny4xOdC6c1JrPrSgOc2nQuKeMpOoOWLINIswg1IIFVk

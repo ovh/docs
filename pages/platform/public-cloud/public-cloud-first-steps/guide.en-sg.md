@@ -69,7 +69,7 @@ You can accept the default file by pressing "Enter". Now you will have the optio
 
 Your SSH keys should be stored in the ".ssh" directory. The public key file will have ".pub" added to the filename.
 
-```ssh
+```bash
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:

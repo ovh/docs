@@ -49,7 +49,7 @@ Consulte la guía correspondiente para instalar una distribución en su servicio
 
 Una vez que se haya conectado al servidor por SSH, asegúrese de que todos los paquetes estén actualizados:
 
-```shell-session
+```bash
 sudo apt update && sudo apt upgrade -y
 ```
 
@@ -63,13 +63,13 @@ Ahora puede instalar los paquetes LAMP actuales.
 
 Instale los paquetes Apache (incluida la documentación):
 
-```shell-session
+```bash
 sudo apt install -y apache2 apache2-doc
 ```
 
 Para comprobar la instalación, utilice el siguiente comando:
 
-```shell-session
+```bash
 sudo systemctl status apache2
 ```
 
@@ -80,7 +80,7 @@ También puede abrir `http://server_IP` en un navegador web. Se abrirá la pági
 
 Instale los paquetes de MariaDB y PHP:
 
-```shell-session
+```bash
 sudo apt install -y php php-pdo php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath mariadb-server
 ```
 
@@ -90,7 +90,7 @@ MariaDB proporciona un script para ayudarle con la configuración inicial y apli
 
 Para ejecutarlo, introduzca el siguiente comando:
 
-```shell-session
+```bash
 sudo mysql_secure_installation
 ```
 
@@ -139,33 +139,33 @@ Si ha configurado el acceso MariaDB como se recomienda (*unix_socket*), dispondr
 
 Abra el intérprete MariaDB:
 
-```shell-session
+```bash
 sudo mariadb
 ```
 
-```mysql
+```sql
 MariaDB [(none)]> 
 ```
 
 Cree una base de datos:
 
-```mysql
+```sql
 MariaDB [(none)]> CREATE DATABASE database_name;
 ```
 
 Cree un usuario con el nombre que prefiera y conceda todos los permisos sobre esta base de datos. Este último puede acceder a la base de datos y realizar todas las operaciones para la aplicación que utiliza esta base de datos. Sustituya `database_name` por el nombre de su base de datos, `user_name` por el nombre que elija y `password` por una contraseña fuerte.
 
-```mysql
+```sql
 MariaDB [(none)]> GRANT ALL ON database_name.* TO 'user_name'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION;
 ```
 
 Asegúrese de que los cambios realizados se aplican y salga del shell MariaDB:
 
-```mysql
+```sql
 MariaDB [(none)]> FLUSH PRIVILEGES;
 ```
 
-```mysql
+```sql
 MariaDB [(none)]> exit;
 ```
 
@@ -175,13 +175,13 @@ MariaDB [(none)]> exit;
 
 Instale UFW:
 
-```shell-session
+```bash
 sudo apt install ufw
 ```
 
 Los perfiles incluyen la mención "WWW" en la lista de aplicaciones:
 
-```shell-session
+```bash
 sudo ufw app list | grep WWW
   WWW
   WWW Cache
@@ -195,23 +195,23 @@ Para ver qué puertos están afectados por un perfil particular, introduzca `sud
 
 Introduzca el siguiente comando para abrir los puertos definidos en el perfil "WWW Full":
 
-```shell-session
+```bash
 sudo ufw allow 'WWW Full'
 ```
 
 Como todos los puertos no autorizados estarán **bloqueados** después de activar el firewall, asegúrese de autorizar también las conexiones SSH (puerto 22 con una configuración por defecto):
 
-```shell-session
+```bash
 sudo ufw allow 'SSH'
 ```
 
 Por último, active las reglas de firewall y compruebe la configuración:
 
-```shell-session
+```bash
 sudo ufw enable
 ```
 
-```shell-session
+```bash
 sudo ufw status
 ```
 
@@ -254,13 +254,13 @@ En primer lugar, asegúrese de que el dominio se ha introducido correctamente en
 
 Instale los paquetes necesarios para el cliente Cierbot:
 
-```shell-session
+```bash
 sudo apt install -y certbot python3-certbot-apache
 ```
 
 Obtenga el certificado de su nombre de dominio y del subdominio "www":
 
-```shell-session
+```bash
 sudo certbot --apache -d domainname.ovh -d www.domainname.ovh
 ```
 

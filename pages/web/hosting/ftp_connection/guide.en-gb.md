@@ -114,7 +114,7 @@ Once the SSH connection has been established using your chosen method, there are
 
 If you are logging in via the command line, the commands you will need to use are listed below. You will need to replace "sshlogin", "sshserver" and "connectionport" with your own SSH login details. Once the command has been sent, you will be prompted to enter the SSH user password.
 
-```ssh
+```bash
 ssh sshlogin@sshserver -p connectionport
 ```
 

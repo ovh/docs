@@ -142,7 +142,7 @@ Open the MariaDB shell:
 sudo mariadb
 ```
 
-``` {.mysql}
+```sql
 MariaDB [(none)]> 
 ```
 
@@ -160,11 +160,11 @@ MariaDB [(none)]> GRANT ALL ON database_name.* TO 'user_name'@'localhost' IDENTI
 
 Ensure the changes made are applied and then exit the MariaDB shell:
 
-```mysql
+```sql
 MariaDB [(none)]> FLUSH PRIVILEGES;
 ```
 
-```mysql
+```sql
 MariaDB [(none)]> exit;
 ```
 
@@ -199,7 +199,7 @@ sudo ufw allow 'WWW Full'
 
 Since all ports not explicitly allowed will be **blocked** after enabling the firewall, make sure to allow SSH connections (port 22 in a default configuration) as well:
 
-``` {.shell-session}
+```bash
 sudo ufw allow 'SSH'
 ```
 

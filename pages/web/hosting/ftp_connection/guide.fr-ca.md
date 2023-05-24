@@ -114,7 +114,7 @@ Une fois la connexion SSH établie et selon la méthode choisie, il existe deux 
 
 Pour une utilisation en ligne de commande, voici celle que vous devrez utiliser. Remplacez les éléments « sshlogin », « sshserver » et « connectionport » par ceux adaptés à votre situation personnelle. Une fois la commande envoyée, vous serez invité à renseigner le mot de passe de l'utilisateur SSH.
 
-```ssh
+```bash
 ssh sshlogin@sshserver -p connectionport
 ```
 

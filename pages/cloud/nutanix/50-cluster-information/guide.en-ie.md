@@ -149,7 +149,7 @@ Connect to the IP address of **Prism Central** via SSH with the **ssh** command 
 
 For example on Linux:
 
-```ssh nutanix@prismcentralipaddress```
+```bash nutanix@prismcentralipaddress```
 
 Collect logs:
 
@@ -177,7 +177,7 @@ Log in on the cluster’s IP address via SSH with the **ssh** command on Linux, 
 
 For example on Linux:
 
-```ssh nutanix@prismelementipaddress```
+```bash nutanix@prismelementipaddress```
 
 Collect all node logs:
 

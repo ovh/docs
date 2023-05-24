@@ -203,12 +203,12 @@ Kontaktieren Sie gegebenenfalls unsere [Community](https://community.ovh.com/en/
 
 Außerdem ist folgende Abfrage nicht zulässig:
 
-```mysql
+```sql
 CREATE DATABASE IF NOT EXISTS `Database-Name` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
 ```
 Ersetzen Sie sie mit der Zeile:
 
-```mysql
+```sql
 USE `Database-Name`;
 ```
 

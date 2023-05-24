@@ -46,7 +46,7 @@ Follow the respective guide to install an operating system on your OVHcloud serv
 
 After logging in to your server with SSH, ensure that all packages are up-to-date:
 
-```shell-session
+```bash
 sudo apt update && sudo apt upgrade -y
 ```
 
@@ -61,13 +61,13 @@ Now you can install the current LAMP packages.
 
 Install the Apache packages (including documentation):
 
-```shell-session
+```bash
 sudo apt install -y apache2 apache2-doc
 ```
 
 You can verify the installation with the following command:
 
-```shell-session
+```bash
 sudo systemctl status apache2
 ```
 
@@ -78,7 +78,7 @@ You can also open `http://server_IP` in a web browser. The "Apache2 Debian Defau
 
 Install the packages of MariaDB and PHP:
 
-```shell-session
+```bash
 sudo apt install -y php php-pdo php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath mariadb-server
 ```
 
@@ -88,7 +88,7 @@ MariaDB provides a script to assist with the initial configuration and to apply 
 
 To run it, enter this command:
 
-```shell-session
+```bash
 sudo mysql_secure_installation
 ```
 
@@ -138,11 +138,11 @@ If you have configured MariaDB access in the recommended way (*unix_socket*), yo
 
 Open the MariaDB shell:
 
-```shell-session
+```bash
 sudo mariadb
 ```
 
-``` {.mysql}
+```sql
 MariaDB [(none)]> 
 ```
 
@@ -160,11 +160,11 @@ MariaDB [(none)]> GRANT ALL ON database_name.* TO 'user_name'@'localhost' IDENTI
 
 Ensure the changes made are applied and then exit the MariaDB shell:
 
-```mysql
+```sql
 MariaDB [(none)]> FLUSH PRIVILEGES;
 ```
 
-```mysql
+```sql
 MariaDB [(none)]> exit;
 ```
 
@@ -173,13 +173,13 @@ MariaDB [(none)]> exit;
 
 [Configuring a firewall](https://docs.ovh.com/asia/en/dedicated/firewall-iptables/) (*iptables*) will enhance the security of your server. This process can be simplified by using the frontend "Uncomplicated Firewall" (UFW) and its preset of profiles. Install UFW:
 
-``` {.shell-session}
+```bash
 sudo apt install ufw
 ```
 
 The relevant profiles are labelled as "WWW" in the application list:
 
-``` {.shell-session}
+```bash
 sudo ufw app list | grep WWW
   WWW
   WWW Cache
@@ -205,11 +205,11 @@ sudo ufw allow 'SSH'
 
 Finally, activate the firewall rules and verify the configuration:
 
-```shell-session
+```bash
 sudo ufw enable
 ```
 
-```shell-session
+```bash
 sudo ufw status
 ```
 
@@ -252,13 +252,13 @@ First make sure that your domain name has the correct records in the DNS zone, i
 
 Install the required packages for the Certbot client:
 
-```shell-session
+```bash
 sudo apt install -y certbot python3-certbot-apache
 ```
 
 Obtain the certificate for your domain name and the "www" subdomain:
 
-```shell-session
+```bash
 sudo certbot --apache -d domainname.ovh -d www.domainname.ovh
 ```
 

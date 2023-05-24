@@ -54,7 +54,7 @@ You can terminate a session only when you are the owner of the database.
 
 To verify your roles and grants, run the following command in `psql`:
 
-```psql
+```sql
 \l
 ```
 
@@ -75,7 +75,7 @@ Otherwise, instructions below will return an error.
 
 Once you are connected to your database, type for example:
 
-```psql
+```sql
 SELECT * FROM pg_stat_activity WHERE state <> 'idle';
 ```
 
@@ -87,7 +87,7 @@ For more information about statistics, please follow the [official documentation
 
 Now that you get the PID, you can terminate a specific query with the following command:
 
-```psql
+```sql
 SELECT pg_terminate_backend(pid);
 ```
 
