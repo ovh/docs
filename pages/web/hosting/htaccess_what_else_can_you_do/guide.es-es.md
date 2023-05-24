@@ -116,9 +116,9 @@ ErrorDocument 403 "Disculpe, no tiene permisos para acceder a este archivo"
 
 - Desea reenviar los errores **404** a su página personalizada *404.html* (para su dominio : domain.tld). Añada la siguiente línea al archivo ".htaccess":
 
-"bash
+```bash
 ErrorDocument 404 http://domain.tld/404.html
-"
+```
 
 También puede redirigir un error hacia un script **C**ommon **G**ateway **I**nterface (**CGI**). Puede codificar un script en **CGI** para, por ejemplo, realizar las siguientes acciones:
  
