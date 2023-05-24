@@ -6,7 +6,7 @@ updated: 2023-05-09
 
 ## Objectif
 
-Nos interventions de maintenance se limitent uniquement à l'aspect matériel de votre seveur. Suite à une intervention de maintenance, des actions de votre part peuvent s'avérer nécessaires sur la partie logicielle de votre serveur.
+Nos interventions de maintenance se limitent uniquement à l'aspect matériel de votre serveur. Suite à une intervention de maintenance, des actions de votre part peuvent s'avérer nécessaires sur la partie logicielle de votre serveur.
 
 Cette documentation, basée sur de nombreux retours d'expériences et cas d'usages rencontrés par nos équipes, liste les actions à entreprendre en fonction de vos installations : systèmes d'exploitation, hyperviseur, etc...
 Elle a pour objectif de vous accompagner et faire en sorte qu'il y ait le moins d'impact possible dans le cycle de vie de vos environnements.
