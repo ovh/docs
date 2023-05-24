@@ -1,6 +1,6 @@
 ---
-title: "Tutorial - Operationen mit .htaccess Datei durchführbar"
-excerpt: "Entdecken Sie einige Beispiele für durchführbare Operationen mit einer .htaccess Datei"
+title: "Tutorial - Operationen mit .htaccess Dateien"
+excerpt: "Erfahren Sie hier einige Möglichkeiten zur Nutzung der .htaccess Datei"
 slug: webhosting_welche_anderen_operationen_sind_mit_htaccess-dateien_moglich
 section: 'Weiterleitung und Authentifizierung'
 order: 04
@@ -15,62 +15,61 @@ updated: 2023-05-23
 
 ## Ziel
 
-Diese Anleitung bietet Ihnen die wichtigsten Funktionen der ".htaccess" Datei für Ihr Webhosting.
+Diese Anleitung zeigt anhand von Beispielen einige bedeutende Funktionen der ".htaccess" Datei für Ihr Webhosting.
 
 Die Datei ".htaccess" ist eine Apache-Konfigurationsdatei (HTTP), die vom Webserver Ihres Webhostings ausgeführt wird. Es erlaubt die Festlegung spezifischer Regeln für ein Verzeichnis und alle seine Unterverzeichnisse. Mehrere ".htaccess" Dateien können im [FTP Bereich](/pages/web/hosting/ftp_connection/) Ihres Webhostings erstellt werden. 
 
-Wenn es nicht bereits in Ihrem FTP-Bereich existiert, können Sie diese hinzufügen, indem Sie eine Datei erstellen, die Sie "**.htaccess**" im Verzeichnis nennen, für das Sie eine oder mehrere der in diesem Tutorial beschriebenen Regeln anwenden möchten.
+Wenn sie nicht bereits in Ihrem FTP-Bereich existiert, können Sie einfach eine Datei namens "**.htaccess**" in dem Verzeichnis erstellen, für das Sie eine oder mehrere der in diesem Tutorial beschriebenen Regeln anwenden möchten.
 
-Um die Datei ".htaccess"korrekt zu verwenden müssen Sie folgende Regeln kennen und einhalten: 
+Um die Datei ".htaccess" korrekt zu verwenden müssen Sie folgende Regeln kennen und einhalten: 
 
-- **Eine einzige** ".htaccess"-Datei pro Verzeichnis oder Unterverzeichnis, um Konflikte zwischen verschiedenen ".htaccess"-Dateien zu vermeiden.
-- Die Datei ".htaccess"ist für Besucher Ihrer Website unsichtbar.
-- Die in einer ".htaccess"-Datei angegebenen Regeln gelten für das gesamte Verzeichnis, in dem die ".htaccess"-Datei installiert ist, sowie für alle Unterverzeichnisse desselben Verzeichnisses.
+- Legen Sie nur **einze** ".htaccess" Datei pro Verzeichnis oder Unterverzeichnis an, um Konflikte zwischen verschiedenen ".htaccess" Dateien zu vermeiden.
+- Die Datei ".htaccess" ist für Besucher Ihrer Website unsichtbar.
+- Die in einer ".htaccess" Datei befindlichen Regeln gelten für das gesamte Verzeichnis, in dem die ".htaccess" Datei liegt, sowie für alle Unterverzeichnisse desselben Verzeichnisses.
 
 > [!warning]
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
-> OVHcloud stellt Ihnen Dienste zur Verfügung, deren Konfiguration, Verwaltung und Verantwortung Ihnen obliegen. Es liegt daher an Ihnen, dafür zu sorgen, dass sie ordnungsgemäß funktionieren.
-> 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Sie bei alltäglichen Aufgaben bestmöglich zu unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Wir werden Ihnen leider keine Unterstützung anbieten können. Weitere Informationen finden Sie im Abschnitt ["Weiterführende Informationen"](#go-further) dieser Anleitung.
+> Wenn Sie Schwierigkeiten haben, die Schritte in diesem Tutorial durchzuführen, empfehlen wir, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
-> Folgende Beispiele sind in einer ".htaccess" Datei zu erstellen. Achtung, die Regeln, die Sie in dieser Datei festlegen, haben direkte Auswirkungen auf Ihre Website. Überprüfen Sie systematisch die Regeln, die Sie hinzufügen, bevor Sie sie auf Ihrer Website anwenden. 
+> Die folgende Beispiele sind in eine ".htaccess" Datei einzufügen. Achtung, die Regeln, die Sie in dieser Datei festlegen, haben direkte Auswirkungen auf Ihre Website. Überprüfen Sie systematisch die Regeln, die Sie hinzufügen, bevor Sie sie auf Ihre Website anwenden. 
 > 
 
-**Diese Anleitung erklärt, wie Sie die wichtigsten Operationen, die mithilfe einer ".htaccess"-Datei durchgeführt werden können.**
+**Dieses Tutorial erklärt die wichtigsten Operationen, die mithilfe einer ".htaccess" Datei durchgeführt werden können.**
 
 ## Voraussetzungen
 
-- über ein [OVHcloud Hosting-Pakete](https://www.ovhcloud.com/de/web-hosting/)
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
 
 ## In der praktischen Anwendung
 
 ### Zugriff auf ein Verzeichnis oder eine Website für eine oder mehrere IP-Adressen erlauben oder einschränken
 
-Diese Funktion ist sehr nützlich und erhöht die Sicherheit für Ihre Websites. Sie kann dazu beitragen, das Risiko der Piraterie auf Ihrer Website zu verringern.
+Diese Funktion ist sehr nützlich und erhöht die Sicherheit für Ihre Website. Sie verringert das Risiko, dass Ihre Website gehackt wird.
 
-Mehr Informationen finden Sie in unserer Anleitung: ["Wie kann ich den Zugang zu meiner Website für bestimmte IP-Adressen über eine .htaccess-Datei sperren? "](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+Mehr Informationen finden Sie in unserer Anleitung ["Wie kann ich den Zugang zu meiner Website für bestimmte IP-Adressen über eine .htaccess-Datei sperren?"](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
 
 ### Ein verschlüsseltes Zugangspasswort festlegen, um auf ein Verzeichnis oder eine Website zuzugreifen
 
-Über die Datei ".htaccess" können Sie einen geschützten Zugang (mit verschlüsselten Passwörtern) zu Ihren Daten auf Ihrem Hosting einrichten.
+Über die Datei ".htaccess" können Sie einen geschützten Zugang (mit verschlüsselten Passwörtern) zu den Dateien auf Ihrem Hosting einrichten.
 
 Weitere Informationen finden Sie in unserer Anleitung ["Das Verwaltungsinterface Ihrer Website durch eine .htaccess-Datei schützen"](/pages/web/hosting/htaccess_protect_directory_by_password/)).
 
-### Eine andere Indexdatei angeben
+### Eine andere Indexdatei festlegen
 
-Standardmäßig ist die Datei **index** eines Verzeichnisses *index.html*, *index.htm* oder *index.php*. Wenn Sie möchten, dass es sich um eine andere Datei handelt, dann können Sie eine solche Zeile in Ihrem ".htaccess" hinzufügen:
+Standardmäßig ist die **index**-Datei eines Verzeichnisses *index.html*, *index.htm* oder *index.php*. Wenn Sie hierzu eine andere Datei verwenden möchten, dann können Sie die folgende Zeile in Ihrem ".htaccess" hinzufügen:
 
 ```bash
 DirectoryIndex File_Name
 ```
 
-Wenn Sie zum Beispiel die Seite **empfang.html** als Indexseite verwenden möchten, fügen Sie folgende Zeile hinzu:
+Wenn Sie zum Beispiel die Seite **home.html** als Indexseite verwenden möchten, fügen Sie folgende Zeile hinzu:
 
 ```bash
-DirectoryIndex empfang.html
+DirectoryIndex home.html
 ```
 
-### Das Auflisten des Inhalts eines Verzeichnisses verhindern
+### Das Auflisten des Inhalts von Verzeichnissen verhindern
 
 Um zu verhindern, dass Internetnutzer alle in einem Verzeichnis enthaltenen Dateien ohne Datei **index** (.cgi, .html, .php usw.) auflisten, erstellen Sie eine "**.htaccess**" Datei mit folgender Zeile:
 
@@ -78,76 +77,76 @@ Um zu verhindern, dass Internetnutzer alle in einem Verzeichnis enthaltenen Date
 Options -Indexes
 ```
 
-### Rewriting der URL durchführen
+### Umschreiben von URLs
 
-Dank des **mod_rewrite** Moduls des Apache HTTP Webservers auf Ihrem Webhosting erlaubt diese Funktion die Weiterleitung:
+Das **mod_rewrite** Moduls des Apache Webservers auf Ihrem Webhosting erlaubt die Weiterleitung von:
 
-- alle HTTP Anfragen zu einer einzigen Datei Ihrer Website
-- einen Teil der HTTP Anfragen zu einer einzigen Datei Ihrer Website
-- Ihre Domain zu ihrer Subdomain "www"
-- Anfragen zu einem bestimmten Ordner, ohne den betreffenden Ordner anzuzeigen;
-- automatisch einen Besucher Ihrer Website mit HTTPS, wenn er diese mit einer URL mit HTTP abfragt.
+- Allen HTTP-Anfragen zu einer einzigen Datei Ihrer Website.
+- Einen Teil der-HTTP Anfragen zu einer einzigen Datei Ihrer Website.
+- Ihren Domainnamen zur Subdomain "www".
+- Anfragen zu einem bestimmten Ordner, ohne den betreffenden Ordner anzuzeigen.
+- Webseitenaufrufe zu HTTPS, wenn eine URL über HTTP abgefragt wurde.
 
-Weitere Informationen finden Sie in unserer Anleitung: ["Die URL für den Zugang zu meiner Website mithilfe des mod_rewrite über die .htaccess-Datei umschreiben"](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite/).
+Weitere Informationen finden Sie in unserer Anleitung ["Die URL einer Website mit mod_rewrite über die .htaccess Datei umschreiben"](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite/).
 
 #### Fehlermeldungen weiterleiten
 
-Um Ihre fehlerhaften Nachrichten zu personalisieren und/oder auf eine Webseite weiterzuleiten, erstellen Sie eine "**.htaccess**" Datei mit folgender Codelinie:
+Um Ihre Fehlermeldungen zu personalisieren und/oder im Fehlerfall auf eine Webseite umzuleiten, erstellen Sie eine "**.htaccess**" Datei mit folgender Zeile:
 
 ```bash
 ErrorDocument Error_Code_Number Message_Or_Destination
 ```
 
-Ersetzen Sie nur "**Error_Code_Number**"durch die Nummer des entsprechenden HTTP-Apache-Fehlercodes. 
+Ersetzen Sie "**Error_Code_Number**" durch die Nummer des entsprechenden Apache-Fehlercodes. 
 
-Weitere Informationen zu dieser Funktion finden Sie in der [offiziellen Dokumentation Apache](https://httpd.apache.org/docs/trunk/en/custom-error.html){.external}.
+Weitere Informationen zu dieser Funktion finden Sie in der [offiziellen Dokumentation zu Apache](https://httpd.apache.org/docs/trunk/en/custom-error.html){.external}.
 
 Die gängigsten HTTP-Fehlercodes sind:
 
-- 401: Authority required: Dieser Fehler entsteht, wenn ein Besucher beim Zugriff auf eine geschützte Datei oder ein geschütztes Verzeichnis einen falschen Login/Passwort eingibt.
-- 403: Zugang denied: Dieser Fehler wird beim Zugriff auf ein Verzeichnis angezeigt, in dem die Datei *index.html* (oder *index.cgi* etc.) fehlt und die Serverkonfiguration die Anzeige der Dateien des Verzeichnisses untersagt.
-- 404: Not Found: die Datei, die der Besucher sehen will, existiert nicht.
-- 500: Internal Server Error: Dieser Fehler wird angezeigt, wenn ein Skript nicht korrekt ausgeführt wurde oder das Skript oder die Rechte des Skripts nicht korrekt sind.
+- *401: Authorisation required*: Dieser Fehler entsteht, wenn ein Besucher beim Zugriff auf eine geschützte Datei oder ein geschütztes Verzeichnis falsche Zugangsdaten eingibt.
+- *403: Access denied*: Dieser Fehler wird beim Zugriff auf ein Verzeichnis angezeigt, in dem die Datei *index.html* (oder *index.cgi*, etc.) fehlt und die Serverkonfiguration die Anzeige der Dateien des Verzeichnisses untersagt.
+- *404: Not found*: Die Datei, die der Besucher aufgerufen hat, existiert nicht.
+- *500: Internal Server Error*: Dieser Fehler wird angezeigt, wenn ein Skript nicht korrekt ausgeführt wurde oder das Skript oder die Rechte des Skripts nicht korrekt sind.
 
-Ersetzen Sie **"Message_Or_Destination** durch die durchzuführende Aktion. Um eine Nachricht direkt anzuzeigen, geben Sie die entsprechende Nachricht in Anführungszeichen ein. Geben Sie den Zugriffspfad auf diese Seite ein, um auf eine bestimmte Seite weiterzuleiten. 
+Ersetzen Sie **"Message_Or_Destination** mit der durchzuführenden Aktion. Um eine Nachricht direkt anzuzeigen, geben Sie die entsprechende Nachricht in Anführungszeichen ein. Geben Sie den Zugriffspfad auf eine Seite ein, um auf eine bestimmte Fehlerseite weiterzuleiten. 
 
 Im Folgenden finden Sie zwei konkrete Beispiele:
 
-- Sie möchten angeben *"Leider haben Sie keinen Zugriff auf diese Datei"*, wenn der Besucher einen Fehler bemerkt **403**. Fügen Sie die folgende Zeile in Ihrer ".htaccess" Datei hinzu:
+- Sie möchten eine Meldung der Art "*Sie haben keinen Zugriff auf diese Datei*" ausgeben, wenn der Besucher einen Fehler **403** auslöst. Fügen Sie die folgende Zeile in Ihrer ".htaccess" Datei hinzu:
 
 ```bash
-ErrorDocument 403 "Leider haben Sie keinen Zugriff auf diese Datei"
+ErrorDocument 403 "Sorry, you do not have permission to access this file"
 ```
 
-- Sie möchten die Fehler **404** auf Ihre personalisierte Seite *404.html* (für Ihre Domain: domain.tld). Fügen Sie die folgende Zeile in Ihrer ".htaccess" Datei hinzu:
+- Sie möchten bei Fehlern des Typs **404** Ihre personalisierte Seite *404.html* anzeigen (für Ihren Domainnamen: domain.tld). Fügen Sie die folgende Zeile in Ihrer ".htaccess" Datei hinzu:
 
 ```bash
 ErrorDocument 404 http://domain.tld/404.html
 ```
 
-Sie können einen Fehler auch auf ein Skript weiterleiten **C**ommon **G**ateway **I**Nterface (**CGI**). Sie können ein Skript in **CGI** codieren, um zum Beispiel folgende Aktionen durchzuführen:
+Sie können einen Fehler auch auf ein Skript des Typs **C**ommon **G**ateway **I**nterface (**CGI**) weiterleiten. Wenn Sie ein Skript in **CGI** verfassen, können Sie zum Beispiel folgende Aktionen durchzuführen:
  
-- Eine Nachricht anzeigen;
-- Den Besucher gemäß der ursprünglich angeforderten URL auf eine andere Datei weiterleiten (verfügbar in der Umgebungsvariable **REQUEST_URI**);
-- eine E-Mail versenden.
+- Anzeigen einer Nachricht
+- Weiterleiten von Besuchern anhand der ursprünglich angeforderten URL auf eine andere Datei (verfügbar in der Umgebungsvariable **REQUEST_URI**)
+- Versenden einer E-Mail
 
-Um zum Beispiel einen Fehler auf ein **CGI*** Skript weiterzuleiten, fügen Sie folgende Zeile in Ihrer ".htaccess" Datei ein:
+Um zum Beispiel eine Fehlermeldung auf ein **CGI**-Skript weiterzuleiten, fügen Sie folgende Zeile in Ihrer ".htaccess" Datei ein:
 
 ```bash
-ErrorDocument 404 /cgi-bin/fehler.cgi?type=404
+ErrorDocument 404 /cgi-bin/error.cgi?type=404
 ```
 
-Die obige Zeile leitet den Besucher, der einen Fehler **404** bemerkt, auf Ihr Skript um *fehler.cgi*. Dieser wird die darin enthaltenen Richtlinien insbesondere in Bezug auf den Fehler **404** umsetzen.
+Diese Zeile leitet Besucher auf Ihr Skript *error.cgi* um, sobald ein Fehler **404** erzeugt wird. Das Skript wird dann die darin enthaltenen Direktiven umsetzen, hier in Bezug auf den Fehler **404**.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-[Mit dem FTP Bereich Ihres Webhostings verbinden](/pages/web/hosting/ftp_connection/)
+[Mit dem Speicherplatz eines Webhostings verbinden](/pages/web/hosting/ftp_connection/)
 
-[Den Zugang zu meiner Website für bestimmte IP-Adressen über eine .htaccess-Datei sperren?](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/)
+[Tutorial - Wie kann ich den Zugang zu meiner Website für bestimmte IP-Adressen über eine .htaccess Datei sperren?](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/)
 
-[Das Verwaltungsinterface Ihrer Website durch eine .htaccess-Datei schützen](/pages/web/hosting/htaccess_protect_directory_by_password/)
+[Den Adminbereich Ihrer Website mit einer .htaccess Datei schützen](/pages/web/hosting/htaccess_protect_directory_by_password/)
 
-[Umschreiben der URL für den Zugang zu meiner Website mithilfe des mod_rewrite über die .htaccess-Datei](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite/)
+[Tutorial - Die URL einer Website mit mod_rewrite über die .htaccess Datei umschreiben](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite/)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 
