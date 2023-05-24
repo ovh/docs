@@ -40,7 +40,7 @@ openstack network list
 | ID                                   | Name       | Subnets                             |
 +--------------------------------------+------------+-------------------------------------+
 | 34567890-12ab-cdef-xxxx-xxxxxxxxxxxx | Ext-Net    | zzzzzzzz-yyyy-xxxx-yyyy-xxxxxxxxxxxx|
-| 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | openstack  | yyyyyyyy-xxxx-xxxx-yyyy-xxxxxxxxxxxx|
+| ed85c4df-5ba6-48fb-a7d3-xxxxxxxxxxxx | openstack  | 10d5fe8b-0596-4525-a387-xxxxxxxxxxxx|
 +--------------------------------------+------------+-------------------------------------+
 ```
 > [!primary]
