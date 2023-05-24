@@ -1,0 +1,151 @@
+---
+title: Change the mtu of a public cloud network
+slug: change-mtu-public-cloud-network
+excerpt: Find out how to change the mtu of a public cloud network
+section: Network
+updated: 2023-04-21
+---
+
+<style>
+ pre {
+     font-size: 14px;
+ }
+ pre.console {
+   background-color: #300A24; 
+   color: #ccc;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
+ }
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
+ }
+ .small {
+     font-size: 0.75em;
+ }
+</style>
+
+**Last updated 21st April 2023**
+
+## Objective
+
+> [!primary]
+>Jumbo frames are Ethernet frames with more than 1500 bytes of payload. They can carry up to 9000 bytes of payload. Using them minimizes routing processing time. In the case of vRack, this will optimize traffic on it.
+But if connectivity from a fully private instance to outside networks (Internet) is done in the network, the MTU have to be set to 1500 bytes of payload.
+MTU size will be the same for all services using IPs in the same network.
+
+**This guide explains how to change the mtu on a Public Cloud Network.**
+
+## Pre-requisites
+
+- A [Public Cloud project](https://docs.ovh.com/gb/en/public-cloud/create_a_public_cloud_project/) in your OVHcloud account.
+
+Before proceeding, it is recommended that you consult these guides:
+
+- [Preparing an environment to use the OpenStack API](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- [Setting OpenStack environment variables](https://docs.ovh.com/gb/en/public-cloud/set-openstack-environment-variables/)
+
+## Instructions
+
+### Step 1: List Networks available in the Public Cloud project
+
+List Networks available in the Public Cloud project
+
+```sh
+openstack network list
+ 
++--------------------------------------+------------+-------------------------------------+
+| ID                                   | Name       | Subnets                             |
++--------------------------------------+------------+-------------------------------------+
+| 34567890-12ab-cdef-xxxx-xxxxxxxxxxxx | Ext-Net    | zzzzzzzz-yyyy-xxxx-yyyy-xxxxxxxxxxxx|
+| 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MyVLAN_0   | yyyyyyyy-xxxx-xxxx-yyyy-xxxxxxxxxxxx|
++--------------------------------------+------------+-------------------------------------+
+```
+
+or
+
+```sh
+nova net-list
+ 
++--------------------------------------+------------+------+
+| ID                                   | Label      | CIDR |
++--------------------------------------+------------+------+
+| 34567890-12ab-cdef-xxxx-xxxxxxxxxxxx | Ext-Net    | None |
+| 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MyVLAN_0   | None |
++--------------------------------------+------------+------+
+```
+
+> [!primary]
+> You will need to note the network IDs of interest:
+><br> - Ext-Net for a public IP address
+><br> - The VLAN(s) required for your configuration
+
+### Step 2: Show private network parameters
+
+Show private network parameters
+
+```sh
+openstack network show ed85c4df-5ba6-48fb-a7d3-xxxxxxxxxxxx
++---------------------------+--------------------------------------+
+| Field                     | Value                                |
++---------------------------+--------------------------------------+
+| admin_state_up            | UP                                   |
+| availability_zone_hints   |                                      |
+| availability_zones        | nova                                 |
+| created_at                | 2023-01-13T08:45:06Z                 |
+| description               |                                      |
+| dns_domain                | None                                 |
+| id                        | ed85c4df-5ba6-48fb-a7d3-xxxxxxxxxxxx |
+| ipv4_address_scope        | None                                 |
+| ipv6_address_scope        | None                                 |
+| is_default                | None                                 |
+| is_vlan_transparent       | None                                 |
+| l2_adjacency              | True                                 |
+| mtu                       | 9000                                 |
+| name                      | openstack                            |
+| port_security_enabled     | True                                 |
+| project_id                | f6e0b44aa5104f689870xxxxxxxxxxxx     |
+| provider:network_type     | vrack                                |
+| provider:physical_network | None                                 |
+| provider:segmentation_id  | 0                                    |
+| qos_policy_id             | None                                 |
+| revision_number           | 5                                    |
+| router:external           | Internal                             |
+| segments                  | None                                 |
+| shared                    | False                                |
+| status                    | ACTIVE                               |
+| subnets                   | 10d5fe8b-0596-4525-a387-xxxxxxxxxxxx |
+| tags                      |                                      |
+| tenant_id                 | f6e0b44aa5104f689870bxxxxxxxxxxx     |
+| updated_at                | 2023-01-13T13:43:27Z                 |
++---------------------------+--------------------------------------+
+```
+
+### Step 3: Setting new MTU size
+
+To modify the MTU on private network, here is command you can use in Openstack CLI
+
+```bash
+openstack network set --mtu 1500 <network>
+```
+
+### Step 4: Verify the changes
+
+Show private network parameters to verify change is applied
+
+```bash
+openstack network show <network>
+```
+
+### Step 5: Restart the services
+
+In order to apply the mtu change, you will need to restart all the services with port in this network:
+<br> - Public cloud instances
+<br> - Managed Kubernetes Node(s) if you [use a custom gateway deployed in vRack with a Managed Kubernetes cluster](https://help.ovhcloud.com/csm/fr-managed-kubernetes-k8s-vrack-k8s-custom-gateway?id=kb_article_view&sysparm_article=KB0056027) .  
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
