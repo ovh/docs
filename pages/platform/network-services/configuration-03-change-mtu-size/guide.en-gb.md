@@ -1,37 +1,34 @@
 ---
-title: Change MTU Size For Existing Network Using OpenStack CLI/API
-excerpt: Find out how to change the mtu size for existing public cloud network using OpenStack CLI/API
+title: Changing the MTU size for existing networks using OpenStack CLI/API
+excerpt: Find out how to change the MTU size for an existing public cloud network using OpenStack CLI/API
 updated: 2023-05-24
 ---
 
-**Last updated 24th May 2023**
-
 ## Objective
 
-> [!primary]
-> Jumbo frames are Ethernet frames with more than 1500 bytes of payload. They can carry up to 9000 bytes of payload. Using them minimizes routing processing time. In the case of vRack, this will optimize traffic on it.
-But if connectivity from a fully private instance to outside networks (Internet) is done in the network, the MTU have to be set to 1500 bytes of payload.
-MTU size will be the same for all services using IPs in the same network.
+Jumbo frames are Ethernet frames with more than 1500 bytes of payload. They can carry up to 9000 bytes of payload. Using them minimizes routing processing time. In the case of vRack, this will optimize traffic on it.<br>
+But if connectivity from a fully private instance to outside networks (Internet) is done in the network, the MTU has to be set to 1500 bytes of payload.<br>
+The MTU size will be the same for all services using IPs in the same network.
 
 **This guide explains how to change the MTU size for an existing network using OpenStack CLI/API.**
-
-Before proceeding, it is recommended that you consult these guides:
-
-- [Preparing an environment to use the OpenStack API](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Setting OpenStack environment variables](https://docs.ovh.com/gb/en/public-cloud/set-openstack-environment-variables/)
-- [Managing tokens](https://help.ovhcloud.com/csm/en-public-cloud-compute-managing-tokens?id=kb_article_view&sysparm_article=KB0050965)
 
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- Using the [OpenStack command line environment](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- Using the [OpenStack command line environment](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
 - The [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html) tool installed on your working environment
+
+Before proceeding, it is recommended that you read these guides:
+
+- [Preparing an environment to use the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Setting OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables)
+- [Managing tokens](/pages/platform/public-cloud/managing_tokens)
 
 ## Instructions
 
-### Step 1: List Networks available in the Public Cloud project
+### Step 1: Listing networks available in the Public Cloud project
 
-List available networks in the region
+List available networks in the region:
 
 ```bash
 openstack network list
@@ -43,12 +40,13 @@ openstack network list
 | ed85c4df-5ba6-48fb-a7d3-xxxxxxxxxxxx | openstack  | 10d5fe8b-0596-4525-a387-xxxxxxxxxxxx|
 +--------------------------------------+------------+-------------------------------------+
 ```
+
 > [!primary]
-> You can grab the ID of your private Network. ( Ext-Net is a public network used for public IP address and is managed by OVH )
+> You can grab the ID of your private network ( Ext-Net is a public network used for public IP addresses and is managed by OVHcloud).
 
-### Step 2: Show private network parameters
+### Step 2: Displaying private network parameters
 
-Show private network parameters
+Use the following command to display the private network parameters:
 
 ```bash
 openstack network show ed85c4df-5ba6-48fb-a7d3-xxxxxxxxxxxx
@@ -87,34 +85,35 @@ openstack network show ed85c4df-5ba6-48fb-a7d3-xxxxxxxxxxxx
 +---------------------------+--------------------------------------+
 ```
 
-### Step 3: Setting new MTU size
+### Step 3: Setting the new MTU size
 
-To modify the MTU size via the OpenStack CLI
+- Using the OpenStack CLI:
 
 ```bash
 openstack network set --mtu 1500 <networkid>
 ```
 
-To change the MTU size using the OpenStack API
+- Using the OpenStack API:
 
 ```bash
 TOKEN=$(openstack token issue -c id -f value)
 curl -s -H "X-Auth-Token: $TOKEN" -H "Content-Type: application/json"  -H "Accept: application/json" -X PUT -d '{"network": {"mtu": 1500}}' https://network.compute.<region>.cloud.ovh.net/v2.0/networks/<networkid>
 ```
 
-### Step 4: Verify the changes
+### Step 4: Verifying the changes
 
-Show private network parameters to verify change is applied
+Display the private network parameters to verify that the change is applied:
 
 ```bash
 openstack network show <network>
 ```
 
-### Step 5: Restart the services
+### Step 5: Restarting the services
 
-Updating the mtu value for an existing network with instances plugged into it requires either a hard reboot of those instances with port in this network:
-<br> - Public cloud instances
-<br> - Managed Kubernetes Node(s) if you [use a custom gateway deployed in vRack with a Managed Kubernetes cluster](https://help.ovhcloud.com/csm/fr-managed-kubernetes-k8s-vrack-k8s-custom-gateway?id=kb_article_view&sysparm_article=KB0056027) .  
+Updating the MTU value for an existing network with instances plugged into it requires a hard reboot of those instances which have a port in this network:
+
+- Public cloud instances
+- Managed Kubernetes Node(s) if you [use a custom gateway deployed in vRack with a Managed Kubernetes cluster](/pages/platform/kubernetes-k8s/vrack-k8s-custom-gateway).
 
 ## Go further
 
