@@ -15,9 +15,9 @@ updated: 2023-05-22
 
 ## Ziel
 
-Synology DiskStation Manager 7.0 von bietet ein Synchronisierungswerkzeug für verschiedene Cloud Lösungen an.
+Mit DiskStation Manager 7.0 bietet Synology ein Synchronisierungstool für verschiedene Cloud Lösungen an.
 
-Dieser ist mit dem Object Storage der OVHcloud Public Cloud kompatibel und erlaubt es Ihnen so, ein Backup Ihrer Daten durchzuführen und diese von überall aus verfügbar zu machen.
+Es ist mit dem Object Storage der OVHcloud Public Cloud kompatibel und kann somit ein Backup Ihrer Daten durchführen und diese von überall aus verfügbar machen.
 
 > [!primary]
 >
@@ -29,7 +29,7 @@ Dieser ist mit dem Object Storage der OVHcloud Public Cloud kompatibel und erlau
 ## Voraussetzungen
 
 - [Erstellung von Object Storage Containern](https://docs.ovh.com/de/storage/object-storage/pcs/create-container/)
-- [Einen Zugang zu Horizon erstellen](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/#erstellung-eines-openstack-benutzers)
+- [Einen Zugang zu Horizon einrichten](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/#erstellung-eines-openstack-benutzers)
 
 ## In der praktischen Anwendung
 
@@ -52,7 +52,7 @@ Diese können Sie anhand der folgenden Anleitung im Kundencenter herunterladen:
 
 Sobald Sie Ihre Zugangsdaten haben, können Sie sich mit Ihrem NAS verbinden und die folgenden Aktionen ausführen:
 
-- Cloud Sync Anwendung starten:
+- Cloud Sync Anwendung starten.
 
 - OpenStack Swift als Cloud Provider auswählen:
 
