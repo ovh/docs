@@ -28,7 +28,7 @@ Customers are now autonomous to perform this action through our API. The followi
 
 First, retrieve the **vmid** and **datacenterid**. This information can also be obtained from vSphere.
 
-From the OVHcloud API:
+**From the OVHcloud API:**
 
 > [!api]
 >
@@ -37,10 +37,10 @@ From the OVHcloud API:
 
 > [!api]
 >
-> @api {GET}  /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm
 >
 
-From vSphere:
+**From vSphere:**
 
 First, connect to your vsphere and select the VM from the list of VMs in the left tab:
 
