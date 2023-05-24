@@ -4,6 +4,8 @@ excerpt: Find out how to change the mtu size for existing public cloud network u
 updated: 2023-05-24
 ---
 
+**Last updated 24th May 2023**
+
 ## Objective
 
 > [!primary]
@@ -13,23 +15,25 @@ MTU size will be the same for all services using IPs in the same network.
 
 **This guide explains how to change the MTU size for an existing network using OpenStack CLI/API.**
 
-## Pre-requisites
-
-- A [Public Cloud project](https://docs.ovh.com/gb/en/public-cloud/create_a_public_cloud_project/) in your OVHcloud account.
-
 Before proceeding, it is recommended that you consult these guides:
 
 - [Preparing an environment to use the OpenStack API](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
 - [Setting OpenStack environment variables](https://docs.ovh.com/gb/en/public-cloud/set-openstack-environment-variables/)
 - [Managing tokens](https://help.ovhcloud.com/csm/en-public-cloud-compute-managing-tokens?id=kb_article_view&sysparm_article=KB0050965)
 
+## Requirements
+
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- Using the [OpenStack command line environment](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- The [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} tool installed on your working environment
+
 ## Instructions
 
 ### Step 1: List Networks available in the Public Cloud project
 
-List Networks available in the Public Cloud project
+List available networks in the region
 
-```sh
+```bash
 openstack network list
  
 +--------------------------------------+------------+-------------------------------------+
@@ -46,7 +50,7 @@ openstack network list
 
 Show private network parameters
 
-```sh
+```bash
 openstack network show ed85c4df-5ba6-48fb-a7d3-xxxxxxxxxxxx
 +---------------------------+--------------------------------------+
 | Field                     | Value                                |
