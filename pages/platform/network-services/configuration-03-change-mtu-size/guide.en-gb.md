@@ -1,8 +1,6 @@
 ---
 title: Change MTU Size For Existing Network Using OpenStack CLI/API
-slug: change-mtu-size-public-cloud-network
 excerpt: Find out how to change the mtu size for existing public cloud network using OpenStack CLI/API
-section: Network
 updated: 2023-05-24
 ---
 
@@ -28,7 +26,6 @@ updated: 2023-05-24
  }
 </style>
 
-**Last updated 24th May 2023**
 
 ## Objective
 
