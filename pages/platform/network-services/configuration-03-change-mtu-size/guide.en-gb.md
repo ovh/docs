@@ -11,7 +11,7 @@ updated: 2023-05-24
 But if connectivity from a fully private instance to outside networks (Internet) is done in the network, the MTU have to be set to 1500 bytes of payload.
 MTU size will be the same for all services using IPs in the same network.
 
-**This guide explains how to change the mtu on a Public Cloud Network.**
+**This guide explains how to change the MTU size for an existing network using OpenStack CLI/API.**
 
 ## Pre-requisites
 
