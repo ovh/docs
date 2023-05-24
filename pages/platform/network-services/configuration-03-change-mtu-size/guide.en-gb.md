@@ -59,7 +59,7 @@ openstack network list
 | ID                                   | Name       | Subnets                             |
 +--------------------------------------+------------+-------------------------------------+
 | 34567890-12ab-cdef-xxxx-xxxxxxxxxxxx | Ext-Net    | zzzzzzzz-yyyy-xxxx-yyyy-xxxxxxxxxxxx|
-| 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MyVLAN_0   | yyyyyyyy-xxxx-xxxx-yyyy-xxxxxxxxxxxx|
+| 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | openstack  | yyyyyyyy-xxxx-xxxx-yyyy-xxxxxxxxxxxx|
 +--------------------------------------+------------+-------------------------------------+
 ```
 > [!primary]
