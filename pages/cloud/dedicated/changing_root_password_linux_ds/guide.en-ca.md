@@ -40,7 +40,7 @@ Log in to your server via SSH. Switch to the root user, if necessary:
 ```bash
 sudo su -
 #
-````
+```
 
 To change the password of the current user, type `passwd`:
 
