@@ -15,7 +15,7 @@ updated: 2023-02-15
 
 ## Ziel
 
-Bei den VPS von OVHcloud können Sie einen sicheren Speicherplatz als Dienstoption hinzufügen. Dieser Storage ist von der internen Speicherkapazität der VPS Lösung getrennt, was ihn zu einem sicheren Ort für Ihre Backups oder andere statische Daten macht. Die zusätzliche Disk kann nur von der IP-Adresse des Servers aus abgerufen werden, und die darauf enthaltenen Daten bleiben davon unberührt, selbst wenn der VPS neu installiert ist oder Datenverlust erlitten hat.
+Bei den VPS von OVHcloud können Sie einen sicheren Speicherplatz als Dienstoption hinzufügen. Dieser Storage ist von der internen Speicherkapazität der VPS Lösung getrennt, was ihn zu einem sicheren Ort für Ihre Backups oder andere statische Daten macht. Die zusätzliche Disk kann nur von der IP-Adresse des Servers aus abgerufen werden, und die darauf enthaltenen Daten bleiben erhalten, selbst wenn der VPS neu installiert ist oder Datenverlust erlitten hat.
 
 **Diese Anleitung erklärt, wie Sie die Option für zusätzliche Disks aktivieren und den Speicherplatz zur Verwendung mit dem VPS konfigurieren.**
 
