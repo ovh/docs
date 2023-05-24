@@ -536,7 +536,7 @@
         + [Configuration](public-cloud-network-configuration)
             + [L3 services SNAT configuration](platform/network-services/configuration-01-snat-configuration)
             + [Configuring IPv6 on a Public Cloud instance](platform/network-services/configuration-02-how-to-configure-ipv6)
-            + [Changing the MTU size For an existing network using OpenStack CLI/API](platform/network-services/configuration-03-change-mtu-size)
+            + [Changing the MTU size for an existing network using OpenStack CLI/API](platform/network-services/configuration-03-change-mtu-size)
         + [Technical resources](public-cloud-network-technical-resources)
             + [Deploying an Octavia Load Balancer](platform/network-services/technical-resources-01-using-lbaas-in-openstack-environment)
         + [Tutorials](public-cloud-network-tutorials)
