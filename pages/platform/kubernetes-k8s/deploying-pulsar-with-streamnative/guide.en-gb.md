@@ -40,7 +40,7 @@ This tutorial demonstrates how to install Apache Pulsar on an OVHcloud Managed K
 
 ## Prerequisites
 
-- An OVHcloud Managed Kubernetes cluster (v1.16 <= Kubernetes version < v1.26) with a minimum of 3 worker nodes, each having at least 2 vCores and 4 GB of memory. Once you have the cluster ready, you should have a default storage class automatically installed, which is required for Pulsar instances on Kubernetes. You can run `kubectl get sc` to view your available storage classes.
+- An OVHcloud Managed Kubernetes cluster (v1.16 <= Kubernetes version < v1.26) with a minimum of 3 worker nodes, each having at least 2 vCores and 6 GB of memory. Once you have the cluster ready, you should have a default storage class automatically installed, which is required for Pulsar instances on Kubernetes. You can run `kubectl get sc` to view your available storage classes.
 - `kubectl` installed and configured (v1.16 or later). For more information, see [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](../configuring-kubectl/).
 
 ## Instructions
@@ -235,10 +235,9 @@ If you already have deployed Pulsar with Pulsar operators, you need to uninstall
 Run the following commands to uninstall OLM:
 
 ```bash
-export OLM_RELEASE=<olm-release-version>
 kubectl delete apiservices.apiregistration.k8s.io v1.packages.operators.coreos.com
-kubectl delete -f https://github.com/operator-framework/operator-lifecycle-manager/releases/download/${OLM_RELEASE}/crds.yaml
-kubectl delete -f https://github.com/operator-framework/operator-lifecycle-manager/releases/download/${OLM_RELEASE}/olm.yaml
+kubectl delete -f https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.24.0/crds.yaml
+kubectl delete -f https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.24.0/olm.yaml
 ```
 
 ## More resources
