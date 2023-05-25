@@ -320,7 +320,7 @@ Nel primo step, scegli i parametri di localizzazione, selezionando la regione, l
 
 ![windows sysprep](images/windows-connect-02.png){.thumbnail}
 
-Il secondo step richiede la configurazione dell’account predefinito “Amministrator”. Inserisci la tua passphrase per due volte e clicca su `Finish`{.action} per completare il processo di installazione. Clicca sul simbolo dell'occhio per controllare se tutti i caratteri inseriti nei campi corrispondono alla configurazione effettiva della tua tastiera.
+Il secondo step richiede la configurazione dell’account predefinito "Administrator". Inserisci la tua passphrase per due volte e clicca su `Finish`{.action} per completare il processo di installazione. Clicca sul simbolo dell'occhio per controllare se tutti i caratteri inseriti nei campi corrispondono alla configurazione effettiva della tua tastiera.
 
 L’istanza si riavvierà e sarà possibile accedere con queste credenziali tramite un client Desktop remoto. 
 
