@@ -77,7 +77,7 @@ Use the following API call:
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}/disableCarp
 >
 
-#### Verifying if promiscuous mode has been activated on the Virtual Machine:
+#### Verifying if promiscuous mode has been activated on the Virtual Machine
 
 Use the following API call:
 
