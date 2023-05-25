@@ -1,13 +1,13 @@
 ---
-title: "Protéger l'interface d'administration de votre site par un fichier .htaccess"
+title: "Tutoriel - Protéger l'interface d'administration de votre site web par un fichier .htaccess"
 slug: mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification
-excerpt: "Retrouvez ici comment protéger l'accès à l'administration de votre site avec un fichier .htaccess"
+excerpt: "Decouvrez comment protéger l'accès à l'administration de votre site web avec un fichier .htaccess"
 section: Réécriture et authentification
 order: 02
-updated: 2021-09-20
+updated: 2023-05-24
 ---
 
-**Dernière mise à jour le 20/09/2021**
+**Dernière mise à jour le 24/05/2023**
 
 ## Objectif
 
@@ -19,7 +19,7 @@ Il peut parfois être nécessaire de protéger l'accès à une partie de votre s
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
 >
 
 ## Prérequis
@@ -143,10 +143,10 @@ Require valid-user
 > Les directives « Files » s'appliquent à l'ensemble des fichiers du même nom ou se terminant par le nom spécifié. Ceci à condition qu'ils soient contenus dans le même répertoire que le « .htaccess » ou dans l'un de ses sous-répertoires (Dans la configuration indiquée ici, la directive « Files » s'appliquerait par exemple sur un fichier « nouveau_test.php » contenu dans un sous-répertoire du dossier « admin »).
 >
 
-## Aller plus loin <a name="aller-plus-loin"></a>
-
-[Tout sur le fichier .htaccess](../mutualise-tout-sur-le-fichier-htaccess/)
+## Aller plus loin <a name="go-further"></a>
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
