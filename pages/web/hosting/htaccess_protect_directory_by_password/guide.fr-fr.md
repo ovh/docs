@@ -167,19 +167,21 @@ encrypted_password2
 encrypted_password3
 ```
 
-### Etape 3 : compléter le fichier « .htpasswd »
+### Etape 3 : Définir les utilisateurs et les mots de passe chiffrés avec le fichier « .htpasswd »
 
-Le fichier « .htpasswd » contient la liste des utilisateurs autorisés à se connecter à l'interface d'administration de votre site et leur mot de passe chiffré.
+Le fichier « .htpasswd » contient les mots de passe chiffrés respectifs à chacun des utilisateurs déclarés dans le fichier. Ce sont ces utilisateurs uniquement qui seront autorisés à se connecter au répertoire pour lequel vous souhaitez restreindre l'accès.
 
-Inscrivez dans ce fichier pour **chaque utilisateur** une ligne indiquant son identifiant et son mot de passe chiffré :
+Pour cela, inscrivez dans ce fichier pour **chaque utilisateur** une ligne indiquant son identifiant et son mot de passe chiffré :
 
 ```bash
-utilisateur1:motdepasse_chiffré1
-utilisateur2:motdepasse_chiffré2
-utilisateur3:motdepasse_chiffré3
+user1:encrypted_password1
+user2:encrypted_password2
+user3:encrypted_password3
 ```
 
-### Etape 4 : compléter le fichier « .htaccess »
+Remplacez, dans notre exemple, les `user1`, `user2` et `user3` par vos propres noms d'utilisateurs.
+
+### Etape 4 : Configurer les règles dans le fichier « .htaccess »
 
 #### Bloquer l'accès à un répertoire complet
 
