@@ -64,7 +64,7 @@ Utilisez l'appel API suivant :
 Renseignez les informations suivantes :
 
 - `serviceName` : nom de votre PCC
-- `vmId` :` vmId précédemment récupéré depuis vSphere ou via l'API
+- `vmId` : vmId précédemment récupéré depuis vSphere ou via l'API
 - `datacenterId` : récupéré précédemment via l'API
 - `macAddress` : la macAddress de l'interface réseau de la VM où CARP doit être activé
 
