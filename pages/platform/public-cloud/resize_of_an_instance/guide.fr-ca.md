@@ -5,7 +5,7 @@ excerpt: "Découvrez comment redimensionner une instance depuis l'interface Hori
 legacy_guide_number: 1778
 section: Gestion depuis Horizon
 order: 13
-updated: 2023-05-25
+updated: 2023-05-24
 ---
 
 **Dernière mise à jour le 24/05/2023**
