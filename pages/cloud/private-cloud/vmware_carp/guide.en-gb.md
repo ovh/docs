@@ -1,7 +1,7 @@
 ---
 title: 'Enabling promiscuous mode on a Virtual Machine'
 excerpt: 'Learn how to enable promiscuous mode on a Virtual machine, for the proper operation of certain HA protocols such as CARP'
-updated: 2023-05-23
+updated: 2023-05-25
 ---
 
 ## Objective
@@ -24,9 +24,11 @@ A distinction should be made between two situations. Depending on the Distribute
 
 ### Public DVS
 
+#### Retrieving information
+
 Customers are now autonomous to perform this action through our API. The following API calls can be used.
 
-First, retrieve the **vmid** and **datacenterid**. This information can also be obtained from vSphere.
+First, retrieve the **vmId** and **datacenterId**. This information can also be obtained from vSphere.
 
 **From the OVHcloud API:**
 
@@ -46,26 +48,38 @@ First, connect to your vsphere and select the VM from the list of VMs in the lef
 
 ![select VM](images/vcenter_select_vm_edit.png){.thumbnail}
 
-Once done, you can retrieve the **vmid** from the URL:
+Once done, you can retrieve the **vmId** from the URL:
 
 ![retrieve vmid](images/vcenter_vmID_edit.png){.thumbnail}
 
+#### Enabling promiscuous mode on a Virtual Machine
 
-- To enable promiscuous mode on a Virtual Machine:
+Use the following API call:
 
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}/enableCarp
 >
 
-- To disable promiscuous mode on a Virtual Machine:
+Enter the following information:
+
+- `serviceName`: name of your PCC
+- `vmId`:` vmID previously retrieved from vSphere or from the API
+- `datacenterId`: previously retrieved from the API
+- `macAddress`: the macAddress of the network interface of the VM where CARP needs to be enabled
+
+#### Disabling promiscuous mode on a Virtual Machine
+
+Use the following API call:
 
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}/disableCarp
 >
 
-- To verify if it has been activated on the Virtual Machine:
+#### Verifying if promiscuous mode has been activated on the Virtual Machine:
+
+Use the following API call:
 
 > [!api]
 >

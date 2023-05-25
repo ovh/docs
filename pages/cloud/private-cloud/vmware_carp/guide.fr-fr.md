@@ -1,7 +1,7 @@
 ---
 title: 'Activation du mode promiscuité sur une machine virtuelle'
 excerpt: 'Découvrez comment activer le mode promiscuité sur une machine virtuelle pour le bon fonctionnement de certains protocoles HA comme le CARP'
-update: 2023-05-23
+update: 2023-05-25
 ---
 
 ## Objectif
@@ -23,6 +23,8 @@ Il convient de différencier deux situations. En fonction du Distributed Virtual
 - dvs vrack (nom : pcc-xxx-xx-xxx-xx_DCxxx-vrack, vlan vrack)
 
 ### DVS Public
+
+#### Récupérer les informations
 
 Les clients sont désormais autonomes pour effectuer cette action via notre API. Les appels API suivants peuvent être utilisés.
 
@@ -50,21 +52,34 @@ Vous pouvez alors récupérer le **vmid** depuis l'URL :
 
 ![retrieve vmid](images/vcenter_vmID_edit.png){.thumbnail}
 
-- Activer le mode promiscuité sur une machine virtuelle :
+#### Activer le mode promiscuité sur une machine virtuelle
+
+Utilisez l'appel API suivant :
 
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}/enableCarp
 >
 
-- Désactiver le mode promiscuité sur une machine virtuelle :
+Renseignez les informations suivantes :
+
+- `serviceName` : nom de votre PCC
+- `vmId` :` vmId précédemment récupéré depuis vSphere ou via l'API
+- `datacenterId` : récupéré précédemment via l'API
+- `macAddress` : la macAddress de l'interface réseau de la VM où CARP doit être activé
+
+#### Désactiver le mode promiscuité sur une machine virtuelle
+
+Utilisez l'appel API suivant :
 
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}/disableCarp
 >
 
-- Vérifier si l'option est activée ou non sur la machine virtuelle :
+#### Vérifier si l'option est activée ou non sur la machine virtuelle
+
+Utilisez l'appel API suivant :
 
 > [!api]
 >
