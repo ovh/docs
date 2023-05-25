@@ -330,7 +330,7 @@ Utilisez Windows Search si nécessaire et ouvrez l'application cliente native "C
 
 ![windows remote](images/windows-connect-03.png){.thumbnail}
 
-Entrez l'adresse IPv4 de votre instance et "Administrateur" en tant qu'utilisateur, puis tapez votre mot de passe. Habituellement, un message d'avertissement s'affiche, vous demandant de confirmer la connexion en raison d'un certificat inconnu. Cliquez sur `Oui`{.action} pour vous connecter à l'instance.
+Entrez l'adresse IPv4 de votre instance et "Administrator" en tant qu'utilisateur, puis tapez votre mot de passe. Habituellement, un message d'avertissement s'affiche, vous demandant de confirmer la connexion en raison d'un certificat inconnu. Cliquez sur `Oui`{.action} pour vous connecter à l'instance.
 
 > [!primary]
 >
