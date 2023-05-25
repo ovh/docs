@@ -123,7 +123,7 @@ Remplacez uniquement `plain_text_password1`, `plain_text_password2` et `plain_te
 
 > [!primary]
 >
-> Les deux scripts ci-dessus utilisent, à date, la méthode de chiffrement la plus sûre à l'aide de l'algorythme **bcrypt** recommandé par Apache.
+> Les deux scripts ci-dessus utilisent, à date, la méthode de chiffrement la plus sûre à l'aide de l'algorithme **bcrypt** recommandé par Apache.
 >
 > Pour plus d'informations sur le sujet, consultez la [documentation officielle Apache](https://httpd.apache.org/docs/2.4/fr/misc/password_encryptions.html){.external}
 >
@@ -188,18 +188,18 @@ Remplacez, dans notre exemple, les `user1`, `user2` et `user3` par vos propres n
 Dans le répertoire à protéger, créez un fichier « .htaccess » avec le code suivant :
 
 ```bash
-AuthName "Indiquez votre identifiant administrateur et son mot de passe"
+AuthName "Indicates your login(s)"
 AuthType Basic
-AuthUserFile "/home/votre_login_ftp/dossier_racine/admin/.htpasswd"
+AuthUserFile "/home/your_ftp_login/root_folder/admin/.htpasswd"
 Require valid-user
 ```
 
-> [!warning]
->
-> Dans cet exemple, il faut remplacer « votre_login_ftp » par votre [identifiant FTP](../connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter). Dans la rubrique `Hébergements`{.action}, vous le trouverez dans l'onglet `FTP-SSH`{.action} de l'hébergement concerné.
->
-> Remplacez si besoin dans l'exemple ci-dessous « dossier_racine » par le nom du [dossier contenant les fichiers de votre site](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-21-ajouter-un-domaine-enregistre-chez-ovhcloud).
->
+Dans le script ci-dessus, remplacez les éléments suivants par vos propres éléments :
+
+- `"Indicates your login(s)"` : correspond à l'utilisateur (ou aux utilisateurs) autorisé(s) à accéder au répertoire complet. Si vous avez plusieurs utilisateurs, séparez-les par un *espace*.
+- `your_ftp_login` : le login FTP que vous utilisez pour vous connecter à votre espace de stockage FTP.
+Pour récupérer votre login FTP, consulter notre guide sur la [connexion à votre espace FTP](/pages/web/hosting/ftp_connection/).
+- `root_folder/admin/.htpasswd` : chemin d'accès répertoire de la racine FTP de votre hébergement web jusqu'au fichier « .htpasswd » devant être utilisé pour authentifier les utilisateurs autorisés par la directive.
 
 #### Bloquer l'accès à un ou plusieurs fichiers
 
@@ -208,22 +208,44 @@ Pour bloquer l'accès à un ou plusieurs fichiers précis, ajoutez une [directiv
 ```bash
 <Files test.php>
 
-AuthName "Indiquez vos identifiants"
+AuthName "Indicates your login(s)"
 AuthType Basic
-AuthUserFile "/home/votre_login_ftp/dossier_racine/admin/.htpasswd"
+AuthUserFile "/home/your_ftp_login/root_folder/admin/.htpasswd"
 Require valid-user
 
 </Files>
 ```
 
+Dans le script ci-dessus, remplacez les éléments suivants par vos propres éléments :
+
+- `test.php` : nom du fichier spécifique ou groupe de fichiers contenant ici le terme **test.php** pour lequel la restriction d'accès doit s'appliquer.
+- `"Indicates your login(s)"` : correspond à l'utilisateur (ou aux utilisateurs) autorisé(s) à accéder aux fichiers dont leurs noms contiennent **test.php**. Si vous avez plusieurs utilisateurs, séparez-les par un *espace*.
+- `your_ftp_login` : le login FTP que vous utilisez pour vous connecter à votre espace de stockage FTP.
+Pour récupérer votre login FTP, consulter notre guide sur la [connexion à votre espace FTP](/pages/web/hosting/ftp_connection/).
+- `root_folder/admin/.htpasswd` : chemin d'accès répertoire de la racine FTP de votre hébergement web jusqu'au fichier « .htpasswd » devant être utilisé pour authentifier les utilisateurs autorisés par la directive.
+
 > [!warning]
 >
 > Vous devrez indiquer une [directive « Files »](https://httpd.apache.org/docs/2.4/fr/mod/core.html#files){.external} pour **chaque fichier** à protéger.
 >
-> Les directives « Files » s'appliquent à l'ensemble des fichiers du même nom ou se terminant par le nom spécifié. Ceci à condition qu'ils soient contenus dans le même répertoire que le « .htaccess » ou dans l'un de ses sous-répertoires (Dans la configuration indiquée ici, la directive « Files » s'appliquerait par exemple sur un fichier « nouveau_test.php » contenu dans un sous-répertoire du dossier « admin »).
+> Les directives « Files » s'appliquent à l'ensemble des fichiers du même nom ou se terminant par le nom spécifié. Ceci à condition qu'ils soient contenus dans le même répertoire que le « .htaccess » ou dans l'un de ses sous-répertoires 
+
+Dans la configuration indiquée ci-dessus, la directive « Files » s'appliquerait aussi sur un fichier « new_test.php » contenu dans un sous-répertoire du dossier « admin ». Du fait que « new_test.php » contient **test.php** dans son nom.
+>
+> De plus, tant que vous ne vous êtes pas authentifié pour accéder aux fichiers concernés par la directive, ces derniers peuvent ne pas apparaître et donc être « listable » via une page « index of »
 >
 
 ## Aller plus loin <a name="go-further"></a>
+
+[Documentation officielle Apache](https://httpd.apache.org/docs/2.4/){.external}
+
+[Se connecter à l'espace FTP de son hébergement Web](/pages/web/hosting/ftp_connection/)
+
+[Tutoriel - Opérations réalisables avec un fichier « .htaccess »](/pages/web/hosting/htaccess_what_else_can_you_do/)
+
+[Bloquer l'accès à mon site pour certaines adresses IP via un fichier .htaccess ?](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/)
+
+[Réécrire l'URL d'accès à mon site grâce au mod_rewrite via le fichier .htaccess](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite/)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
