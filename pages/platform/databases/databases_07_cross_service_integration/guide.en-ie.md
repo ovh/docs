@@ -100,7 +100,7 @@ Your first integration is ready:
 
 > [!primary]
 >
-> Note that this integration creation has created two users, respectively: `metrics_reader` and `metrics_writer` in your engine instance.
+> Note that this integration creation may have created two users, respectively: `metrics_reader` and `metrics_writer` in your engine instance.
 >
 > ![Users & Roles](images/databases_07_cross_service_integration-20220708170641519.png){.thumbnail}
 >
