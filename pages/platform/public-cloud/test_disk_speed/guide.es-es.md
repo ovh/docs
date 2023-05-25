@@ -50,7 +50,7 @@ root@server:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwri
 >
 > Deberá adaptar el argumento `--numjobs` al número de CPU de su instancia. 
 > 
-> Puede consultar la lista de argumentos y sus funciones directamente en el [manual de fio](https://github.com/axboe/fio/blob/master/HOWTO).
+> Puede consultar la lista de argumentos y sus funciones directamente en el [manual de fio](https://github.com/axboe/fio/blob/master/HOWTO.rst).
 > 
 
 Para comprobar el rendimiento de un disco adicional, deberá acceder a una de las carpetas del punto de montaje. 
