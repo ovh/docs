@@ -235,6 +235,11 @@ Dans la configuration indiquée ci-dessus, la directive « Files » s'appliquera
 > De plus, tant que vous ne vous êtes pas authentifié pour accéder aux fichiers concernés par la directive, ces derniers peuvent ne pas apparaître et donc être « listable » via une page « index of »
 >
 
+>[!alert]
+>
+> Dès que vous avez terminé la mise en place de vos fichiers « .htaccess » et « .htpasswd », supprimez le fichier de chiffrement « crypt.php » de votre hébergement web.
+>
+
 ## Aller plus loin <a name="go-further"></a>
 
 [Documentation officielle Apache](https://httpd.apache.org/docs/2.4/){.external}
