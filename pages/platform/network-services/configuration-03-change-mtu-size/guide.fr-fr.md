@@ -110,7 +110,7 @@ openstack network show <network>
 
 ### Étape 5 - Redémarrer les services
 
-A la suite de la mise à jour la valeur MTU sur un réseau existant sur lequel des instances sont connectées, il est nécessaire de procéder à un hard-reboot des instances qui ont un port dans ce réseau :
+A la suite de la mise à jour de la valeur MTU sur un réseau sur lequel des instances sont connectées, il est nécessaire de procéder à un hard-reboot des instances qui ont un port dans ce réseau :
 
 - Les instances Public Cloud
 - Le(s) Node(s) Managed Kubernetes si vous utilisez une [passerelle personnalisée déployée dans le vRack avec un cluster Managed Kubernetes](/pages/platform/kubernetes-k8s/vrack-k8s-custom-gateway).
