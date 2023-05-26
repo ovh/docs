@@ -1,9 +1,10 @@
 ---
 title: FAQ dotyczący płatności i fakturowania
 excerpt: Znajdziesz najczęściej zadawane pytania dotyczące płatności i fakturowania
+updated: 2023-05-26
 ---
 
-**Ostatnia aktualizacja z dnia 08/11/2022**
+**Ostatnia aktualizacja z dnia 26-05-2023**
   
 ## Wprowadzenie
 
@@ -85,6 +86,8 @@ Przed usunięciem sposobu płatności, upewnij się, że masz zarejestrowany inn
 ### Który z moich sposobów płatności jest domyślny?
 
 Po zalogowaniu się do Panelu klienta Twój domyślny sposób płatności wyświetli się bezpośrednio na dashboardzie.
+
+Aby zmienić domyślny sposób płatności, przejdź do naszej strony [payment methods management guide](/pages/account/billing/manage-payment-methods).
 
 #### Wskazówki i porady
 

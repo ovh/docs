@@ -1,9 +1,10 @@
 ---
 title: FAQ für Abrechnung und Zahlung
 excerpt: Hier finden Sie die häufigsten Fragen zu Abrechnung und Zahlung
+updated: 2023-05-26
 ---
 
-**Letzte Aktualisierung am 08.11.2022**
+**Letzte Aktualisierung am 26.05.2023**
   
 ## Ziel
   
@@ -22,15 +23,6 @@ Mehr Informationen zur Verwaltung der Kontakte finden Sie in der folgenden ausf�
 Ihre Zahlungsdaten entsprechen den Daten Ihrer Kundenkennung. Gehen Sie für eine Aktualisierung dieser Informationen in Ihrem OVHcloud Kundencenter auf den Bereich `Mein Account`{.action}.
 
 Aus rechtlichen Gründen können Sie die Daten für bereits erstellte Rechnungen nicht mehr ändern. Sollte Ihre Anfrage auf einen Fehler unserer Dienste zurückgehen, kontaktieren Sie uns bitte über ein Support-Ticket.
-
-
-
-
-
-
-
-
-
 
 
 ### Wie werden meine Dienste verlängert?
@@ -95,6 +87,8 @@ Versichern Sie sich, dass Sie zuvor ein anderes Zahlungsmittel ausgewählt haben
 ### Welches ist mein Standardzahlungsmittel?
 
 Wenn Sie sich in Ihrem Kundencenter anmelden, sehen Sie Ihr Standardzahlungsmittel direkt auf Ihrem Dashboard.
+
+Um Ihre Standardzahlungsart zu ändern, lesen Sie unsere Anleitung zur [Verwaltung der Zahlungsarten](/pages/account/billing/manage-payment-methods).
 
 #### Tipps und Tricks
 
