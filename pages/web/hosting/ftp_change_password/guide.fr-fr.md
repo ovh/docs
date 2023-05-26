@@ -43,7 +43,7 @@ Un tableau affiche les *utilisateurs FTP* créés sur votre hébergement web. Ce
 
 > [!primary]
 >
-> Pour plus d'informations sur les bonnes pratiques en matière de gestion de mots de passe, suivez les instructions de ce [guide](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/).
+> Pour plus d'informations sur les bonnes pratiques en matière de gestion de mots de passe, suivez les instructions de ce [guide](/pages/account/customer/manage-ovh-password/).
 >
 
 Votre nouveau mot de passe devra respecter la **politique des mots de passe** suivante :
