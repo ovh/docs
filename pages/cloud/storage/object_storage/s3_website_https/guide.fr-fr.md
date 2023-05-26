@@ -121,7 +121,7 @@ Ajouter 2 frontends :
     - datacenter : la région où se trouve votre bucket
     - ferme de serveurs par défaut : la ferme de serveurs créée au préalable
     - certificate: le certificat que vous avez créé
-    - paramètres avancés > HTTP Header : Hôte `<default_website_url>` sous la forme `<bucket>.s3-website.<region>.io.cloud.ovh.net`
+    - paramètres avancés > HTTP Header : Host `<default_website_url>` sous la forme `<bucket>.s3-website.<region>.io.cloud.ovh.net`
 
 ![configuration du frontend](images/front-2.PNG){.thumbnail}
 
