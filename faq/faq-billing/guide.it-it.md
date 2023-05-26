@@ -1,9 +1,10 @@
 ---
 title: FAQ fatturazione e pagamento
 excerpt: Scopri le domande più frequenti su fatturazione e pagamento
+updated: 2023-05-26
 ---
 
-**Dernière mise à jour le 08/11/2022**
+**Ultimo aggiornamento: 26/05/2023**
 
 ## Obiettivo
   
@@ -83,6 +84,8 @@ Prima di rimuovere un metodo di pagamento, assicurati di averne salvato un altro
 ### Dove visualizzare il metodo di pagamento predefinito?
 
 Accedi allo Spazio Cliente: il metodo di pagamento predefinito è indicato direttamente nella dashboard, nella parte destra dell'interfaccia.
+
+Per modificare il tuo metodo di pagamento predefinito, consulta la nostra [guida alla gestione dei metodi di pagamento](/pages/account/billing/manage-payment-methods).
 
 #### Consigli e suggerimenti
 

@@ -1,9 +1,10 @@
 ---
 title: Billing and payment FAQ
 excerpt: Find the most frequently asked questions about billing and payment
+updated: 2023-05-26
 ---
 
-**Last updated 23rd November 2022**
+**Last updated 26th May 2023**
 
 ## Objective
 
@@ -85,6 +86,8 @@ If you want to delete a payment method, you will need to set another one first.
 ### What is my default payment method?
 
 Once you have signed in to the OVHcloud Control Panel, your default payment method is listed in your dashboard.
+
+To change your default payment method, see our [payment methods management guide](/pages/account/billing/manage-payment-methods).
 
 #### Tips and tricks
 

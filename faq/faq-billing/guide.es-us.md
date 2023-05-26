@@ -1,9 +1,10 @@
 ---
 title: Preguntas frecuentes sobre la facturación y el pago
 excerpt: Encuentre las preguntas más frecuentes sobre la facturación y el pago
+updated: 2023-05-26
 ---
 
-**Última actualización: 08/11/2022**
+**Última actualización: 26/05/2023**
 
 ## Objetivo
 
@@ -86,6 +87,8 @@ Antes de eliminar una forma de pago, asegúrese de haber añadido otra.
 ### ¿Cuál es mi forma de pago por defecto?
 
 Puede consultar su forma de pago por defecto directamente en el panel de gestión de su área de cliente.
+
+Para cambiar su forma de pago por defecto, consulte nuestra [guía de gestión de las formas de pago](/pages/account/billing/manage-payment-methods).
 
 #### Ideas y consejos
 
