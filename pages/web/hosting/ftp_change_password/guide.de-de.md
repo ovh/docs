@@ -51,8 +51,6 @@ Eine Tabelle zeigt die *FTP-Benutzer*, die auf Ihrem Webhosting erstellt wurden.
 
 Ihr neues Passwort muss folgenden **Passwortpolitik** entsprechen:
 
-Wählen Sie das neue Passwort Ihrer Datenbank aus und notieren Sie es. In beiden Fällen muss es folgende Bedingungen erfüllen:
-
 - Mindestens 8 Zeichen
 - Maximal 30 Zeichen
 - Mindestens ein Großbuchstabe
