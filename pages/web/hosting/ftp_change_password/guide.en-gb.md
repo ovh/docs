@@ -4,10 +4,10 @@ slug: modify-ftp-user-password
 excerpt: Find out how to change the password for a FTP user created on your OVHcloud Web Hosting plan
 section: FTP and SSH
 order: 03
-updated: 2022-08-18
+updated: 2023-05-29
 ---
 
-**Last updated 18th August 2022**
+**Last updated 18th August 2023**
 
 ## Objective
 

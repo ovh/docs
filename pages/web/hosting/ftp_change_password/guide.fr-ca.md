@@ -61,7 +61,7 @@ Selon votre offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/w
 
 ![change-ftp-password-step1-perso](images/change-ftp-password-step1-perso.png){.thumbnail}
 
-- **pour les offres permettant de créer plusieurs utilisateurs FTP** (offres *Pro* et *Performance*) : cliquez sur le *pictogramme en forme de roue dentée* à droite de l'utilisateur FTP concerné puis sur `Changer le mot de passe`{.action}. Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe souhaité **en respectant la politique des mots de passe**, confirmez en le saisissant une seconde fois puis cliquez sur le bouton `Valider`{.action}.
+- **pour les offres permettant de créer plusieurs utilisateurs FTP** (offres *Pro* et *Performance*) : cliquez sur le bouton `...`{.action} à droite de l'utilisateur FTP concerné puis sur `Changer le mot de passe`{.action}. Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe souhaité **en respectant la politique des mots de passe**, confirmez en le saisissant une seconde fois puis cliquez sur le bouton `Valider`{.action}
 
 ![change-ftp-password-step1-pro](images/change-ftp-password-step1-pro.png){.thumbnail}
 
@@ -74,7 +74,7 @@ Pour accéder à votre espace de stockage FTP, consultez notre guide [« Se conn
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Modifier le mot de passe de votre compte](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/)
+[Modifier le mot de passe de votre compte](/pages/account/customer/manage-ovh-password/)
 
 [Se connecter à l’espace de stockage de son hébergement web](/pages/web/hosting/ftp_connection/)
 

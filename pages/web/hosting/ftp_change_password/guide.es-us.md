@@ -4,14 +4,14 @@ slug: cambiar-contrasena-usuario-ftp
 excerpt: Cómo cambiar la contraseña de un usuario FTP en un alojamiento de OVHcloud
 section: FTP y SSH
 order: 03
-updated: 2022-08-18
+updated: 2023-05-29
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 24/01/2022**
+**Última actualización: 24/01/2023**
 
 ## Objetivo
 
