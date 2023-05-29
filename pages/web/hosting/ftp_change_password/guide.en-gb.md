@@ -70,7 +70,6 @@ Then go to the `Ongoing Jobs`{.action} tab and refresh the page regularly. Your 
 ### Step 3: Access your storage space
 
 To access your FTP storage space, please refer to our guide ["Logging in to your Web Hosting plan’s storage space"](/pages/web/hosting/ftp_connection/).
->
 
 ## Go further <a name="gofurther"></a>
 

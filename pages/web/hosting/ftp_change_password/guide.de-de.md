@@ -76,7 +76,6 @@ Gehen Sie dann zum Tab `Aktuelle Tasks`{.action} und laden Sie die Seite regelm√
 ### Schritt 3: Auf Ihren Speicherplatz zugreifen
 
 Um auf Ihren FTP-Speicherplatz zuzugreifen, lesen Sie unsere Anleitung ["Mit dem Speicherplatz Ihres Webhostings verbinden"](/pages/web/hosting/ftp_connection/).
->
 
 ## Weiterf√ºhrende Informationen <a name="gofurther"></a>
 

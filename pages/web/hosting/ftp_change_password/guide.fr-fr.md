@@ -70,7 +70,6 @@ Consultez enfin l'onglet `Tâches en cours`{.action} et rafraîchissez la page r
 ### Étape 3 : accéder à votre espace de stockage
 
 Pour accéder à votre espace de stockage FTP, consultez notre guide [« Se connecter à l’espace de stockage de son hébergement web »](/pages/web/hosting/ftp_connection/).
->
 
 ## Aller plus loin <a name="go-further"></a>
 
