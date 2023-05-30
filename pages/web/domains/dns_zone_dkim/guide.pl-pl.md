@@ -117,7 +117,7 @@ Aby odbiorca mógł zweryfikować podpis DKIM nadawcy, będzie potrzebował para
 
 Po włączeniu DKIM działa on z parą klucza publicznego / klucza prywatnego. Możesz przypisać kilka par kluczy do Twojej domeny, na przykład w trakcie rotacji. W przypadku zmiany pary kluczy stara para powinna pozostać aktywna tak długo, jak wszystkie e-maile wysłane przez Ciebie z dawnym kluczem nie poniosą porażki w weryfikacji DKIM na serwerze poczty przychodzącej.
 
-Aby zasada rotacji działała, użyjemy tzw. **selektorów DKIM**. Wybieracz DKIM zawiera parę klucza prywatnego/klucza publicznego. Jest on widoczny w postaci łańcucha znaków w podpisze DKIM w wiadomości e-mail przez argument `s=`. Podpis ten jest widoczny [w nagłówku wiadomości e-mail](pages/web/emails/diagnostic_headers).
+Aby zasada rotacji działała, użyjemy tzw. **selektorów DKIM**. Wybieracz DKIM zawiera parę klucza prywatnego/klucza publicznego. Jest on widoczny w postaci łańcucha znaków w podpisze DKIM w wiadomości e-mail przez argument `s=`. Podpis ten jest widoczny [w nagłówku wiadomości e-mail](/pages/web/emails/diagnostic_headers).
 
 **Przykład części podpisu DKIM**
 
