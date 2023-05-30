@@ -89,7 +89,7 @@ Funkcja siekania jest przydatna, gdy chcesz sprawdzić integralność wiadomośc
 
 #### Szyfrowanie asymetryczne <a name="encrypt"></a>
 
-Szyfrowanie **danych**, jak sama nazwa wskazuje, ma na celu zaszyfrowanie ich danych. Jest "**asymetryczny**", ponieważ klucz szyfrujący nie jest taki sam jak klucz 	w przeciwieństwie do symetrycznego szyfrowania, które będzie używać tego samego klucza do szyfrowania i rozszyfrowania.
+Szyfrowanie **danych**, jak sama nazwa wskazuje, ma na celu zaszyfrowanie ich danych. Jest "**asymetryczny**", ponieważ klucz szyfrujący nie jest taki sam jak klucz w przeciwieństwie do symetrycznego szyfrowania, które będzie używać tego samego klucza do szyfrowania i rozszyfrowania.
 
 W asymetrycznym szyfrowaniu używamy **klucza publicznego** i **klucza prywatnego**. Klucz publiczny jest widoczny i możliwy do wykorzystania przez wszystkich. Klucz prywatny jest używany tylko przez właściciela i nie jest widoczny dla wszystkich. 
 

@@ -89,7 +89,7 @@ La funzione di scatto è utile per verificare l'integrità di un messaggio. Infa
 
 #### Crittografia asimmetrica <a name="encrypt"></a>
 
-La **cifratura**, come indica il nome, ha lo scopo di cifrare i dati che gli vengono dati. È "**asimmetrico**" perché la chiave di crittografia non è la stessa della chiave di 	decifrare, a differenza di una crittografia simmetrica che utilizzerà la stessa chiave per cifrare e decifrare.
+La **cifratura**, come indica il nome, ha lo scopo di cifrare i dati che gli vengono dati. È "**asimmetrico**" perché la chiave di crittografia non è la stessa della chiave di decifrare, a differenza di una crittografia simmetrica che utilizzerà la stessa chiave per cifrare e decifrare.
 
 Nella crittografia asimmetrica, si usa una **chiave pubblica** e una **chiave privata**. La chiave pubblica è visibile e utilizzabile da tutti. La chiave privata è utilizzata solo dal proprietario e non è visibile a tutti. 
 
@@ -304,7 +304,7 @@ Clicca sui **5 step** seguenti, cliccando su ciascuna scheda.
 >> - `exchangeService` : inserisci il nome della tua piattaforma Exchange in formato "hosted-zz11111-1" o "private-zz11111-1".
 >> - `domainName` : inserisci il dominio associato alla tua piattaforma Exchange sulla quale vuoi attivare il DKIM.
 >>
->> *Exemple de résultat :*
+>> *Esempio di risultato :*
 >> ```
 >> id: 108716876
 >> todoDate: "2023-05-05T11:30:11+02:00"
@@ -415,7 +415,7 @@ Clicca sui **5 step** seguenti, cliccando su ciascuna scheda.
 >>
 >> Se prendiamo i valori dell'esempio nello step "**3.Recupera il record DNS**":
 >>
->> - `customerRecord: "ovhemp123456-selector1._domainkey.mydomain.ovh"` corrisponde al sottodominio del record CNAME. Si tiene `ovhemp123456-selector1._domainkey` perché il `.mydomain.`ovhè già precompilato. <br>
+>> - `customerRecord: "ovhemp123456-selector1._domainkey.mydomain.ovh"` corrisponde al sottodominio del record CNAME. Si tiene `ovhemp123456-selector1._domainkey` perché il `.mydomain.ovh`è già precompilato. <br>
 >> - `targetRecord: "ovhemp123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net"` corrisponde al bersaglio della registrazione. Aggiungiamo un punto alla fine per mettere a segno il valore. Cela donne `ovhemp123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.`<br>
 >>
 >> ![email](images/dns-dkim-api02.png){.thumbnail} <br>
