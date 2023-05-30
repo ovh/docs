@@ -60,7 +60,7 @@ The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign 
     - [Full DKIM configuration](#firststep)
         - [For Exchange](#confex)
         - [For Email Pro](#confemp)
-    - [The different states of DKIM](#status)
+    - [The different states of DKIM](#dkim-status)
     - [Enable or change DKIM selector](#enable-switch)
     - [Disable and delete DKIM](#disable-delete)
 - [Configuring DKIM for an email solution outside of your OVHcloud account](#external-dkim)
@@ -101,7 +101,7 @@ There are two uses for asymmetric encryption:
 
 #### How are hashing and asymmetric encryption used for DKIM? <a name="encrypt-and-hash"></a>
 
-From the email platform, DKIM will use hashing to create a signature from certain elements of [the email header](pages/web/emails/diagnostic_headers) and email body (email content).
+From the email platform, DKIM will use hashing to create a signature from certain elements of [the email header](/pages/web/emails/diagnostic_headers) and email body (email content).
 
 The signature is then encrypted with the private key using asymmetric encryption.
 
@@ -113,7 +113,7 @@ In order for a recipient to verify the sender's DKIM signature, they will need t
 
 When you enable DKIM, it works with a public/private key pair. You can assign several pairs of keys to your domain name, for example, as part of a rotation. Indeed, when you change the key pair, the old pair must remain active until all emails you sent with the old key fail to pass the DKIM check on the incoming server.
 
-For this rotation principle to work, we're going to use something called **DKIM selectors**. A DKIM selector includes a private/public key pair. It is visible as a character string in the DKIM signature of an email after the argument `s=`. This signature is visible in [the email header](pages/web/emails/diagnostic_headers).
+For this rotation principle to work, we're going to use something called **DKIM selectors**. A DKIM selector includes a private/public key pair. It is visible as a character string in the DKIM signature of an email after the argument `s=`. This signature is visible in [the email header](/pages/web/emails/diagnostic_headers).
 
 **Example of a DKIM signature part**
 
@@ -221,7 +221,7 @@ Follow the **5 steps** below by clicking on each tab.
 >> ```
 >> > [!primary]
 >> >
->> > If your domain name is managed in the same OVHcloud customer account as your platform, and you have ticked `autoEnableDKIM` and `configureDkim`, go directly to the [**Different DKIM states**](dkim-status#) section below to track DKIM activation.
+>> > If your domain name is managed in the same OVHcloud customer account as your platform, and you have ticked `autoEnableDKIM` and `configureDkim`, go directly to the [**Different DKIM states**](#dkim-status) section below to track DKIM activation.
 >>
 > **3. Retrieve the DNS record**
 >> You must manually configure your domain name’s DNS zone **in the following cases**:
@@ -311,7 +311,7 @@ Follow the **5 steps** below by clicking on each tab.
 >>
 >> > [!success]
 >> >
->> > You have now made all the changes to enable DKIM. To ensure that DKIM is enabled, please refer to the [**Different DKIM states**](dkim-status#) section of this guide to check that the `status:` value is `inProduction`. If this is the case, your DKIM is now active.
+>> > You have now made all the changes to enable DKIM. To ensure that DKIM is enabled, please refer to the [**Different DKIM states**](#dkim-status) section of this guide to check that the `status:` value is `inProduction`. If this is the case, your DKIM is now active.
 >>
 
 ##### **For Email Pro** <a name="confemp"></a>
@@ -367,7 +367,7 @@ Follow the **5 steps** below by clicking on each tab.
 >> ```
 >> > [!primary]
 >> >
->> > If your domain name is managed in the same OVHcloud customer account as your platform, and you have ticked `autoEnableDKIM` and `configureDkim`, go directly to the [**Different DKIM states**](dkim-status#) section below to track DKIM activation.
+>> > If your domain name is managed in the same OVHcloud customer account as your platform, and you have ticked `autoEnableDKIM` and `configureDkim`, go directly to the [**Different DKIM states**](#dkim-status) section below to track DKIM activation.
 >>
 > **3. Retrieve the DNS record**
 >> You must manually configure your domain name’s DNS zone **in the following cases**:
@@ -455,7 +455,7 @@ Follow the **5 steps** below by clicking on each tab.
 >>
 >> > [!success]
 >> >
->> > You have now made all the changes to enable DKIM. To ensure that DKIM is enabled, please refer to the [**Different DKIM states**](dkim-status#) section of this guide to check that the value `status:` is `inProduction`. If this is the case, your DKIM is now active.
+>> > You have now made all the changes to enable DKIM. To ensure that DKIM is enabled, please refer to the [**Different DKIM states**](#dkim-status) section of this guide to check that the value `status:` is `inProduction`. If this is the case, your DKIM is now active.
 >>
 
 #### The different states of DKIM <a name="dkim-status"></a>
@@ -717,7 +717,7 @@ Return-Path: <test-dkim@mydomain.ovh>
 </code></pre>
 
 
-To retrieve the header of an email, please read our guide on [Retrieving email headers](pages/web/emails/diagnostic_headers).
+To retrieve the header of an email, please read our guide on [Retrieving email headers](/pages/web/emails/diagnostic_headers).
 
 ## Go further
 
