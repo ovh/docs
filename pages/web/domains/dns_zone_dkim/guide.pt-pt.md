@@ -117,7 +117,7 @@ Para que o destinatário possa verificar a assinatura DKIM do remetente, precisa
 
 Quando ativa o DKIM, este funciona com um par de chave pública / chave privada. É possível atribuir vários pares de chaves ao seu domínio, no quadro de uma rotação, por exemplo. Com efeito, quando muda de par de chaves, o antigo par deve permanecer ativo enquanto o conjunto dos e-mails que enviou com a antiga chave não encontrar falha na verificação do DKIM no servidor de receção.
 
-Para que este princípio de rotação funcione, vamos utilizar o que chamamos os **seletores DKIM**. Um seletor DKIM inclui um par de chave privada/chave pública. É visível sob a forma de um canal de caráter na assinatura DKIM de um e-mail pelo argumento `s=`. Esta assinatura é visível [no cabeçalho do e-mail](pages/web/emails/diagnostic_headers).
+Para que este princípio de rotação funcione, vamos utilizar o que chamamos os **seletores DKIM**. Um seletor DKIM inclui um par de chave privada/chave pública. É visível sob a forma de um canal de caráter na assinatura DKIM de um e-mail pelo argumento `s=`. Esta assinatura é visível [no cabeçalho do e-mail](/pages/web/emails/diagnostic_headers).
 
 **Exemplo de uma parte de assinatura DKIM**
 
