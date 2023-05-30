@@ -1,7 +1,7 @@
 ---
-title: "Changing a FTP user password"
+title: "Changing an FTP user password"
 slug: modify-ftp-user-password
-excerpt: "Find out how to change the password for a FTP user created on your OVHcloud Web Hosting plan"
+excerpt: "Find out how to change the password for an FTP user created on your OVHcloud Web Hosting plan"
 section: FTP and SSH
 order: 03
 updated: 2023-05-29
@@ -13,11 +13,11 @@ updated: 2023-05-29
 
 OVHcloud web hosting plans provide access to an online file storage space, which you can use via the **FTP** protocol: FTP storage space.
 
-You can access this space using a **FTP user** and its associated password.
+You can access this space using an **FTP user** and its associated password.
 
 This access allows you to [put your website online](/pages/web/hosting/hosting_how_to_get_my_website_online/).
 
-**This guide explains how to change the password for a FTP user created on your OVHcloud Web Hosting plan.**
+**This guide explains how to change the password for an FTP user created on your OVHcloud Web Hosting plan.**
 
 > [!warning]
 >
@@ -57,11 +57,11 @@ Your new password must respect the following **password policy**:
 
 Depending on which OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) you have, there are two different paths for changing your FTP user password user via the `FTP-SSH`{.action} tab:
 
-- **For Web Hosting plans that do not allow you to create a second FTP user** (*Start 10M* (only available in Europe) and *Personal hosting*): click on the *pencil icon* in the `Password`{.action} column of the table that appears, enter the new password **in accordance with the password policy**, then confirm the change by clicking on the *green* validation button.
+- **For Web Hosting plans that do not allow you to create a second FTP user** (*Start 10M* (only available in Europe) and *Personal hosting*): Click on the *pencil icon* in the `Password`{.action} column of the table that appears, enter the new password **in accordance with the password policy**, then confirm the change by clicking on the *green* validation button.
 
 ![change-ftp-password-step1-perso](images/change-ftp-password-step1-perso.png){.thumbnail}
 
-- **For plans that allow you to create multiple FTP users** (*Professional* and *Performance*): click on the `...`{.action} button to the right of the FTP user concerned, then `Change password`{.action}. In the window that pops up, enter the new password you want **by following the password policy**, enter it again and click the `Confirm`{.action} button.
+- **For plans that allow you to create multiple FTP users** (*Professional* and *Performance*): Click on the `...`{.action} button to the right of the FTP user concerned, then `Change password`{.action}. In the window that pops up, enter the new password you want **by following the password policy**, enter it again and click the `Confirm`{.action} button.
 
 ![change-ftp-password-step1-pro](images/change-ftp-password-step1-pro.png){.thumbnail}
 
