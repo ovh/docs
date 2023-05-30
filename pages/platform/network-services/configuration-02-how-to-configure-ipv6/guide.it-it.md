@@ -49,8 +49,8 @@ Ecco una lista di termini impiegati in questa guida:
 |Lessico|Descrizione|
 |---|---|
 |YOUR_IPV6|Indirizzo IPv6 assegnato al servizio|
-|IPv6_PREFIX|Il prefisso del tuo blocco IPv6 (esempio: 2607:5300:60:62ac::/128 -> netmask = 128)|
-|IPv6_GATEWAY|Gateway del blocco IPv6|
+|IPV6_PREFIX|Il prefisso del tuo blocco IPv6 (esempio: 2607:5300:60:62ac::/128 -> netmask = 128)|
+|IPV6_GATEWAY|Gateway del blocco IPv6|
 
 
 ### Recupera le informazioni di rete

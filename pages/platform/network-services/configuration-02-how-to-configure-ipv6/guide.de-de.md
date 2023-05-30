@@ -51,8 +51,8 @@ Hier ein kurzes Glossar der in dieser Anleitung verwendeten Begriffe:
 |Glossar|Beschreibung|
 |---|---|
 |YOUR_IPV6|Die IPv6-Adresse, die Ihrem Dienst zugewiesen ist|
-|IPv6_PREFIX|Das Präfix Ihres IPv6-Blockes (Bsp. für "2607:5300:60:62ac::/128": netmask = 128)|
-|IPv6_GATEWAY|Das Gateway Ihres IPv6-Blocks|
+|IPV6_PREFIX|Das Präfix Ihres IPv6-Blockes (Bsp. für "2607:5300:60:62ac::/128": netmask = 128)|
+|IPV6_GATEWAY|Das Gateway Ihres IPv6-Blocks|
 
 
 ### Netzwerk-Informationen abrufen
