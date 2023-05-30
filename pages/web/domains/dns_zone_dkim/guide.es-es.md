@@ -231,7 +231,7 @@ Siga los **5 pasos** que se indican a continuación haciendo clic en cada una de
 >> Es necesario configurar manualmente la zona DNS del dominio **en los siguientes** casos:
 >>
 >> - su plataforma Exchange está asociada a un dominio gestionado en otra cuenta de cliente de OVHcloud ;<br>
->> - La plataforma Exchange está asociada a un dominio gestionado en otro agente registrador ;<br>
+>> - la plataforma Exchange está asociada a un dominio gestionado en otro agente registrador ;<br>
 >> - ha elegido no marcar la casilla `configureDkim` en el paso anterior.<br>
 >>
 >> Para configurar su zona DNS, es necesario recuperar los valores del registro DNS. Para ello, utilice la siguiente llamada a la API:
