@@ -724,4 +724,4 @@ Para obter o cabeçalho de um e-mail, consulte o nosso manual "[Obter o cabeçal
 
 ## Saiba mais
 
-Fale com a nossa comunidade de utilizadores: [https://community.ovh.com/en/](https://community.ovh.com).
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
