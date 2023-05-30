@@ -49,8 +49,8 @@ Antes de empezar, la recomendamos que eche un vistazo a la siguiente tabla, en l
 |Valor|Descripción|
 |---|---|
 |YOUR_IPV6|Dirección IPv6 asignada al servicio.|
-|IPv6_PREFIX|Prefijo del bloque IPv6 (p. ej.: 2607:5300:60:62ac::/128 -> netmask = 128).|
-|IPv6_GATEWAY|Puerta de enlace del bloque IPv6.|
+|IPV6_PREFIX|Prefijo del bloque IPv6 (p. ej.: 2607:5300:60:62ac::/128 -> netmask = 128).|
+|IPV6_GATEWAY|Puerta de enlace del bloque IPv6.|
 
 
 ### Obtener la información relativa a la red

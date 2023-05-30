@@ -46,8 +46,8 @@ Here is a short glossary of the terms used in this tutorial:
 |Glossary|Description|
 |---|---|
 |YOUR_IPV6|The IPv6 address assigned to your service.|
-|IPv6_PREFIX|The prefix of your IPv6 block (e.g. 2607:5300:60:62ac::/128 -> netmask = 128)|
-|IPv6_GATEWAY|The gateway of your IPv6 block.|
+|IPV6_PREFIX|The prefix of your IPv6 block (e.g. 2607:5300:60:62ac::/128 -> netmask = 128)|
+|IPV6_GATEWAY|The gateway of your IPv6 block.|
 
 
 ### Retrieve your network information.

@@ -50,8 +50,8 @@ Aqui tem um breve léxico dos termos utilizados neste tutorial:
 |Léxico|Descrição|
 |---|---|
 |YOUR_IPV6|O endereço IPv6 associado ao seu serviço|
-|IPv6_PREFIX|O prefixo do bloco IPv6 (por ex.: 2607:5300:60:62ac::/128 -> netmask = 128)|
-|IPv6_GATEWAY|A gateway do bloco IPv6|
+|IPV6_PREFIX|O prefixo do bloco IPv6 (por ex.: 2607:5300:60:62ac::/128 -> netmask = 128)|
+|IPV6_GATEWAY|A gateway do bloco IPv6|
 
 
 ### Obter as informações de rede
