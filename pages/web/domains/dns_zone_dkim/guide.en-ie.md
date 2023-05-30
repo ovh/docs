@@ -34,15 +34,15 @@ The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign 
 
 ## Requirements
 
-- Access to manage the domain name concerned in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), or via your DNS service provider if it is registered outside of OVHcloud
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- An OVHcloud [Exchange](https://www.ovhcloud.com/en-gb/emails/), OVHcloud [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) or external email solution with DKIM
+- Access to manage the domain name concerned in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), or via your DNS service provider if it is registered outside of OVHcloud
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- An OVHcloud [Exchange](https://www.ovhcloud.com/en-ie/emails/), OVHcloud [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/) or external email solution with DKIM
 
 > [!warning]
 >
 > If your domain name does not use OVHcloud DNS servers, you will need to modify the DKIM records in the interface of the service provider that manages your domain name configuration.
 >
-> If your domain name is registered with OVHcloud, you can check if it is using the OVHcloud configuration in your [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). To do this, go to the `DNS servers`{.action} tab, and select the domain concerned.
+> If your domain name is registered with OVHcloud, you can check if it is using the OVHcloud configuration in your [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). To do this, go to the `DNS servers`{.action} tab, and select the domain concerned.
 >
 
 ## Instructions
@@ -60,7 +60,7 @@ The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign 
     - [Full DKIM configuration](#firststep)
         - [For Exchange](#confex)
         - [For Email Pro](#confemp)
-    - [The different states of DKIM](#dkim-status)
+    - [The different states of DKIM](#status)
     - [Enable or change DKIM selector](#enable-switch)
     - [Disable and delete DKIM](#disable-delete)
 - [Configuring DKIM for an email solution outside of your OVHcloud account](#external-dkim)
@@ -142,13 +142,13 @@ Click on the tab below for your solution.
 > [!tabs]
 > **Exchange**
 >>
->> In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} tab, click `Microsoft`{.action}, then `Exchange`{.action}. Next, click on the name of the Exchange service concerned. By default, your platform name will match its reference number, or it will be visible under the name you have given it (see image below).
+>> In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), in the `Web Cloud`{.action} tab, click `Microsoft`{.action}, then `Exchange`{.action}. Next, click on the name of the Exchange service concerned. By default, your platform name will match its reference number, or it will be visible under the name you have given it (see image below).
 >>
 >> ![email](images/dns-dkim-platform-exchange.png){.thumbnail}
 >>
 > **Email Pro**
 >>
->> In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} tab, click `Email Pro`{.action}, then click the name of the Email Pro service concerned. By default, your platform name will match its reference number, or it will be visible under the name you have given it (see image below).
+>> In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), in the `Web Cloud`{.action} tab, click `Email Pro`{.action}, then click the name of the Email Pro service concerned. By default, your platform name will match its reference number, or it will be visible under the name you have given it (see image below).
 >>
 >> ![email](images/dns-dkim-platform-emailpro.png){.thumbnail}
 
@@ -261,7 +261,7 @@ Follow the **5 steps** below by clicking on each tab.
 >> > It is possible that the `status:` is in `todo`, this will not affect your DNS zone’s configuration.
 >>
 > **4. Configure the DNS record**
->> Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). In the `Web Cloud`{.action} section, click on `Domain names`{.action} in the left column and select the relevant domain name.<br>
+>> Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). In the `Web Cloud`{.action} section, click on `Domain names`{.action} in the left column and select the relevant domain name.<br>
 >> Go to the `DNS Zone`{.action} tab, then click `Add an entry`{.action} in the window that appears. Choose `CNAME`, then enter the information according to the values you have entered.<br>
 >>
 >> If we take the values of the example in step "**3. Retrieve the DNS record**":
@@ -406,7 +406,7 @@ Follow the **5 steps** below by clicking on each tab.
 >> > It is possible that the `status:` is in `todo`, this will not affect your DNS zone’s configuration.
 >>
 > **4. Configure the DNS record**
->> Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). In the `Web Cloud`{.action} section, click on `Domain names`{.action} in the left column and select the relevant domain name of your Email Pro platform.<br>
+>> Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). In the `Web Cloud`{.action} section, click on `Domain names`{.action} in the left column and select the relevant domain name of your Email Pro platform.<br>
 >> Go to the `DNS Zone`{.action} tab, then click `Add an entry`{.action} in the window that appears. Choose `CNAME`, then enter the information according to the values you have entered.<br>
 >>
 >> If we take the values of the example in step **3.Retrieve the DNS record**:
@@ -621,7 +621,7 @@ Select the email solution concerned in the following tabs:
 
 If you would like to configure your DNS zone to add a DKIM record to it for your solution, follow the instructions below.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). In the `Web Cloud`{.action} section, click on `Domain names`{.action} in the left column and select the domain name concerned.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). In the `Web Cloud`{.action} section, click on `Domain names`{.action} in the left column and select the domain name concerned.
 
 Click on the `DNS Zone`{.action} tab, then `Add an entry`{.action}. There are 3 ways to add a record to set the DKIM in your DNS zone:
 
