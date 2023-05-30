@@ -459,7 +459,7 @@ Clicca sui **5 step** seguenti, cliccando su ciascuna scheda.
 >>
 >> > [!success]
 >> >
->> > Hai effettuato tutte le operazioni necessarie per attivare il DKIM. Per assicurarti che sia attivo, consulta la sezione [**"I diversi stati del DKIM"**](dkim-status#) di questa guida per verificare che il valore `status:` è in `produzione`. In caso affermativo, il tuo DKIM è attivo.
+>> > Hai effettuato tutte le operazioni necessarie per attivare il DKIM. Per assicurarti che sia attivo, consulta la sezione [**"I diversi stati del DKIM"**](#dkim-status) di questa guida per verificare che il valore `status:` è in `produzione`. In caso affermativo, il tuo DKIM è attivo.
 >>
 
 #### I diversi stati del DKIM <a name="dkim-status"></a>
