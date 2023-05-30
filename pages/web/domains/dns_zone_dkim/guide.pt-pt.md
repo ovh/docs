@@ -89,7 +89,7 @@ A função de triagem é útil quando deseja verificar a integridade de uma mens
 
 #### A encriptação assimétrica <a name="encrypt"></a>
 
-A **encriptação**, como o seu nome indica, tem como objetivo encriptar os dados que lhe são dados. É "**assimétrica**" porque a chave de encriptação não é a mesma que a chave de 	decifrar, ao contrário de uma encriptação simétrica que vai usar a mesma chave para encriptar e decifrar.
+A **encriptação**, como o seu nome indica, tem como objetivo encriptar os dados que lhe são dados. É "**assimétrica**" porque a chave de encriptação não é a mesma que a chave de decifrar, ao contrário de uma encriptação simétrica que vai usar a mesma chave para encriptar e decifrar.
 
 Na encriptação assimétrica, utilizamos uma **chave pública** e uma **chave privada**. A chave pública é visível e utilizável por todos. A chave privada só é utilizada por proprietário e não é visível de todos. 
 
@@ -668,7 +668,7 @@ Esta etiqueta é obrigatória na assinatura DKIM e permite aos destinatários da
 
 - **Revogar a chave pública** : se uma chave pública DKIM tiver sido revogada (por exemplo, em caso de comprometimento da chave privada), deve ser utilizado um valor vazio para a etiqueta "p=", indicando que esta chave pública deixou de ser válida. Os destinatários devem, então, enviar um erro para qualquer assinatura DKIM que faça referência a uma chave revogada.
 
-- \*\*Tipo de serviço (s=)\*\*c: A localização "s=" (Service Type) é opcional e não está presente por predefinição. Permite especificar o(s) tipo(s) de serviços aos quais se aplica este registo DKIM.<br>
+- **Tipo de serviço (s=)**c: A localização "s=" (Service Type) é opcional e não está presente por predefinição. Permite especificar o(s) tipo(s) de serviços aos quais se aplica este registo DKIM.<br>
 Os tipos de serviços são definidos utilizando uma lista de palavras-chave separadas por dois pontos ":".<br>
 O destinatário deve ignorar este registo se o tipo de serviço adequado não estiver registado.<br>
 A baliza "s=" destina-se a restringir a utilização das chaves para outros fins, no caso de a utilização do DKIM ser definida para outros serviços no futuro.<br>
