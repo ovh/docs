@@ -724,4 +724,4 @@ Aby pobrać nagłówek wiadomości e-mail, zapoznaj się z naszym przewodnikiem 
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com)
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
