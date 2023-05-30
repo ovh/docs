@@ -25,6 +25,7 @@ You can also use the OVHcloud Control Panel to manage your personal data, and de
 
 > [!primary]
 > If you experience any difficulties logging in to your account, please read the “[What do I do if I can't log in?](https://docs.ovh.com/au/en/customer/log-in-to-ovhcloud-control-panel#login-failure)” section of our guide on [Logging in to the OVHcloud Control Panel](https://docs.ovh.com/au/en/customer/log-in-to-ovhcloud-control-panel).
+>
 
 ## Instructions
 
