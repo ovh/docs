@@ -271,7 +271,7 @@ Clicca sui **5 step** seguenti, cliccando su ciascuna scheda.
 >> Se prendiamo i valori dell'esempio nello step "**3.Recupera il record DNS**":
 >>
 >> - `customerRecord: "ovhex123456-selector1._domainkey.mydomain.ovh"` corrisponde al sottodominio del record CNAME. Si tiene `ovhex123456-selector1._domainkey` perché il `.mydomain.ovh` è già precompilato. <br>
->> - `targetRecord: "ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net"` corrisponde al bersaglio della registrazione. Aggiungiamo un punto alla fine per mettere a segno il valore. Cela donne `ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.`<br>
+>> - `targetRecord: "ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net"` corrisponde al bersaglio della registrazione. Aggiungiamo un punto alla fine per mettere a segno il valore. Questo da `ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.`<br>
 >>
 >> ![email](images/dns-dkim-api02.png){.thumbnail} <br>
 >> 
@@ -416,7 +416,7 @@ Clicca sui **5 step** seguenti, cliccando su ciascuna scheda.
 >> Se prendiamo i valori dell'esempio nello step "**3.Recupera il record DNS**":
 >>
 >> - `customerRecord: "ovhemp123456-selector1._domainkey.mydomain.ovh"` corrisponde al sottodominio del record CNAME. Si tiene `ovhemp123456-selector1._domainkey` perché il `.mydomain.ovh`è già precompilato. <br>
->> - `targetRecord: "ovhemp123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net"` corrisponde al bersaglio della registrazione. Aggiungiamo un punto alla fine per mettere a segno il valore. Cela donne `ovhemp123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.`<br>
+>> - `targetRecord: "ovhemp123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net"` corrisponde al bersaglio della registrazione. Aggiungiamo un punto alla fine per mettere a segno il valore. Questo da `ovhemp123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.`<br>
 >>
 >> ![email](images/dns-dkim-api02.png){.thumbnail} <br>
 >> 

@@ -271,7 +271,7 @@ Siga los **5 pasos** que se indican a continuación haciendo clic en cada una de
 >> Si se toman los valores del ejemplo en el paso "**3. Obtener el registro DNS**":
 >>
 >> - `customerRecord: "ovhex123456-selector1._domainkey.mydomain.ovh"` corresponde al subdominio del registro CNAME. Solo se conserva `ovhex123456-selector1._domainkey`, ya que el `.mydomain.ovh` est ya se ha completado. <br>
->> - `targetRecord: "ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net"` corresponde al destino del registro. Se agrega un punto al final para calcular el valor. Cela donne `ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.`<br>
+>> - `targetRecord: "ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net"` corresponde al destino del registro. Se agrega un punto al final para calcular el valor. Esto da `ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.`<br>
 >>
 >> ![Correo electrónico](images/dns-dkim-api02.png){.thumbnail} <br>
 >> 
@@ -407,7 +407,7 @@ Siga los **5 pasos** que se indican a continuación haciendo clic en cada una de
 >>
 >> > [!primary]
 >> >
->> > Es posible que el `status:` o bien en `todo`, esto no afecta a la configuración de su zona DNS.
+>> > Es posible que el `status:` esté en `todo`, pero esto no tiene ningún efecto en la configuración de su zona DNS.
 >>
 > **4.Configurar el registro DNS**
 >> Desde [el área de clientes de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) donde el nombre de dominio de su Exchange, en la pestaña `Web Cloud`{.action}, haga clic en `Domain name`{.action} en la columna de la izquierda y seleccione el nombre de dominio correspondiente.<br>
