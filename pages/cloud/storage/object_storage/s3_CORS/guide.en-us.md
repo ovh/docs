@@ -7,6 +7,7 @@ updated: 2023-05-30
 ## Objective
 By default, modern browsers impose a same-origin security policy i.e by preventing a resource loaded from one origin to interact with another resource loaded from another origin.
 
+![CORS](images/cors.png){.thumbnail}
 
 Cross-origin resource sharing (CORS) is a technique that allows resources from a client web applications that is loaded from one domain to interact with resources located in another different domain.
 The purpose of this guide is to familiarise you with the concept of CORS and enable it on your S3 buckets.
