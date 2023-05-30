@@ -308,6 +308,8 @@ You can also use the Control Panel to deploy a job or an app from a GitHub regis
 - You can check out the documentation about the [ovhai CLI](https://docs.ovh.com/de/publiccloud/ai/cli/overview-cli).
 
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:

@@ -305,6 +305,8 @@ If you want to know the exact commands to push on the shared registry, please co
 
 - Discover some AI Deploy apps we built with API or Web frontend via our [Apps portfolio](https://docs.ovh.com/fr/publiccloud/ai/deploy/apps-portfolio/).
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:
