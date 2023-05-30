@@ -720,7 +720,7 @@ ARC-Authentication-Results: i=1; mx.example.com;
 Return-Path: <test-dkim@mydomain.ovh>
 </code></pre>
 
-Para obter o cabeçalho de um e-mail, consulte o nosso manual "[Obter o cabeçalho de um e-mail](pages/web/emails/diagnostic_headers)".
+Para obter o cabeçalho de um e-mail, consulte o nosso manual "[Obter o cabeçalho de um e-mail](/pages/web/emails/diagnostic_headers)".
 
 ## Saiba mais
 
