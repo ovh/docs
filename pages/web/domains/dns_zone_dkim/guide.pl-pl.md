@@ -105,7 +105,7 @@ Istnieją dwa sposoby szyfrowania asymetrycznego:
 
 #### W jaki sposób stosowane są szyfrowanie i szyfrowanie asymetryczne? <a name="encrypt-and-hash"></a>
 
-W ramach platformy e-mail DKIM będzie używać hakowania do tworzenia podpisu [z określonych elementów nagłówka e-maila](pages/web/emails/diagnostic_headers) i treści e-maila (zawartość e-maila).
+W ramach platformy e-mail DKIM będzie używać hakowania do tworzenia podpisu [z określonych elementów nagłówka e-maila](/pages/web/emails/diagnostic_headers) i treści e-maila (zawartość e-maila).
 
 Podpis jest następnie szyfrowany kluczem prywatnym, używając asymetrycznego szyfrowania.
 
