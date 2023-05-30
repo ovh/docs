@@ -4,9 +4,10 @@ slug: connexion-espace-stockage-ftp-hebergement-web
 excerpt: "Découvrez comment vous connecter à l'espace de stockage FTP de votre hébergement web OVHcloud"
 section: 'FTP et SSH'
 order: 02
-updated: 2023-05-26
+updated: 2023-05-30
 ---
-**Dernière mise à jour le 26/05/2023**
+
+**Dernière mise à jour le 30/05/2023**
 
 ## Objectif
 
@@ -16,8 +17,12 @@ Les offres d'hébergement web OVHcloud donnent accès à un espace de stockage F
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}.Sachez que seuls les hébergements web **Pro** ou **Performance** permettent l'activation de plusieurs utilisateurs FTP et disposent de connexions en SSH.
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.
+
+> [!primary]
+> Seuls les hébergements web **Pro** ou **Performance** permettent l'activation de plusieurs utilisateurs FTP et disposent de connexions en SSH.
+>
 
 ## En pratique
 
@@ -34,7 +39,7 @@ Pour vous connecter à votre espace de stockage FTP, récupérez les éléments 
 >
 > Ces éléments vous ont été communiqués dans l’e-mail notifiant l’installation de votre hébergement web lors de sa souscription. Ils sont accessibles depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 >
-> **Si vous disposez déjà de ces derniers**, poursuivez directement vers l'étape 2 « [Accéder à votre espace de stockage](#ftp_storage_access) » du présent guide.
+> **Si vous disposez déjà de ces éléments**, poursuivez directement vers l'étape 2 « [Accéder à votre espace de stockage](#ftp_storage_access) » de ce guide.
 > 
 
 Si vous ne disposez pas de ces éléments, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur la section `Hébergements`{.action} dans la colonne de gauche. Choisissez le nom de l'hébergement web concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. 
@@ -52,28 +57,28 @@ Les informations liées à votre espace de stockage apparaissent alors, ainsi qu
 
 Tous les éléments requis pour vous connecter à l'espace de stockage FTP sont présents sur cette même page.
 
-Retrouvez ci-après un descriptifs des informations essentielles affichées sur la page `FTP-SSH` :
+Retrouvez ci-dessous un descriptif des informations essentielles affichées sur la page `FTP-SSH` :
 
-- **Serveur FTP et SFTP**: Adresse du serveur FTP de votre hébergement web permettant d'accéder à votre espace de stockage FTP. Ceci en utilisant, par exemple, un logiciel FTP via le protocole FTP ou SFTP.
+- **Serveur FTP et SFTP** : adresse du serveur FTP de votre hébergement web permettant d'accéder à votre espace de stockage FTP. Ceci en utilisant, par exemple, un logiciel FTP via le protocole FTP ou SFTP.
 
 > Le port classique de connexion est le port « 21 ». Utilisez le port « 22 » pour une connexion via le protocole SFTP (dans le cas où celui-ci est activé)
 
-- **Serveur SSH**: Adresse du serveur SSH de votre hébergement web permettant d'accéder à votre espace de stockage FTP. Ceci en utilisant un terminal via le protocole SSH.
+- **Serveur SSH** : adresse du serveur SSH de votre hébergement web permettant d'accéder à votre espace de stockage FTP. Ceci en utilisant un terminal via le protocole SSH.
 
 > Le port de connexion SSH est le port « 22 ».
 
-- **Login principal**: Identifiant (S)FTP principal créé sur votre hébergement web. Vous pouvez retrouver l'intégralité des utilisateurs (S)FTP de votre hébergement en vous reportant à la colonne « Login » du tableau.
+- **Login principal** : identifiant (S)FTP principal créé sur votre hébergement web. Vous pouvez retrouver l'intégralité des utilisateurs (S)FTP de votre hébergement dans la colonne « Login » du tableau.
 
 > [!primary]
 >
-> Certaines des informations décrites ci-dessus (notamment concernant le SSH) peuvent ne pas apparaître selon l'offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} que vous possédez.
+> Selon l'offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} que vous possédez, certaines des informations décrites ci-dessus (notamment concernant le SSH) peuvent ne pas apparaître.
 >
 
 Si vous ne connaissez plus le mot de passe d'un utilisateur FTP ou SSH, consultez notre guide « [Modifier le mot de passe d’un utilisateur FTP](/pages/web/hosting/ftp_change_password/) ».
 
 ![ftpconnect](images/connect-ftp-step2.png){.thumbnail}
 
-À ce stade, vous disposez de tous éléments permettant de vous connecter à votre espace de stockage FTP.
+À ce stade, vous disposez de tous les éléments permettant de vous connecter à votre espace de stockage FTP.
 
 ### Étape 2 : accéder à votre espace de stockage FTP <a name="ftp_storage_access"></a>
 
@@ -90,7 +95,7 @@ Vous devrez au préalable installer le logiciel/client FTP choisi sur votre ordi
 
 Pour vous connecter à votre espace de stockage FTP via le « FTP Explorer », connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web Cloud`{.action}.
 
-Cliquez sur la section `Hébergements`{.action} dans la colonne de gauche. Choisissez le nom de l'hébergement web concerné, positionnez-vous sur l'onglet `FTP - SSH`{.action}, puis cliquez sur le bouton `FTP Explorer`{.action}. 
+Cliquez sur la section `Hébergements`{.action} dans la colonne de gauche. Choisissez le nom de l'hébergement web concerné, positionnez-vous sur l'onglet `FTP - SSH`{.action} puis cliquez sur le bouton `FTP Explorer`{.action}. 
 
 ![ftpconnect](images/connect-ftp-step3.png){.thumbnail}
 
@@ -102,20 +107,20 @@ Sur la nouvelle page qui apparaît, renseignez votre identifiant FTP ainsi que s
 
 Après avoir installé au préalable le logiciel FTP de votre choix sur votre ordinateur (comme [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide/) ou [Cyberduck](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac/)), démarrez-le. 
 
-Vous devriez trouver un endroit où renseigner les informations de connexion. 
+Vous devriez retrouver des champs spécifiques où renseigner les informations de connexion. 
 
 > [!warning]
 >
-Cette manipulation étant inhérente au logiciel que vous utilisez ainsi qu'à sa version, nous ne pouvons pas toutes les référencer dans la présente documentation.
+> Cette manipulation étant inhérente au logiciel que vous utilisez ainsi qu'à sa version, nous ne pouvons pas toutes les référencer dans cette documentation.
 >
 
 Voici un rappel des informations que vous devrez y renseigner :
 
 
-- **Serveur FTP et SFTP**: Adresse du serveur FTP permettant d'accéder à votre espace de stockage FTP. Selon le logiciel utilisé, la dénomination peut ressembler à : « Serveur », « Adresse de serveur », « Hôte », « Nom d'hôte », ou encore « Host ».
-- **Login principal**: Identifiant permettant d'accéder à votre espace de stockage FTP. Selon le logiciel utilisé, la dénomination peut ressembler à : « Utilisateur », « Nom d'utilisateur », « Identifiant », « Login », ou encore « Username ».
-- **Mot de passe de l'utilisateur FTP**: Mot de passe associé au login FTP. Selon le logiciel utilisé, la dénomination peut ressembler à « Mot de passe » ou « Password ».
-- **Port de connexion** : Celui-ci est généralement complété automatiquement par le logiciel. Si vous devez le renseigner :
+- **Serveur FTP et SFTP** : adresse du serveur FTP permettant d'accéder à votre espace de stockage FTP. Selon le logiciel utilisé, la dénomination peut ressembler à : « Serveur », « Adresse de serveur », « Hôte », « Nom d'hôte », ou encore « Host ».
+- **Login principal** : identifiant permettant d'accéder à votre espace de stockage FTP. Selon le logiciel utilisé, la dénomination peut ressembler à : « Utilisateur », « Nom d'utilisateur », « Identifiant », « Login », ou encore « Username ».
+- **Mot de passe de l'utilisateur FTP** : mot de passe associé au login FTP. Selon le logiciel utilisé, la dénomination peut ressembler à « Mot de passe » ou « Password ».
+- **Port de connexion** : celui-ci est généralement complété automatiquement par le logiciel. Si vous devez le renseigner :
     - utilisez le port « 21 » pour une connexion utilisant le protocole FTP ;
     - utilisez le port « 22 » pour une connexion utilisant le protocole SFTP (dans le cas où celui-ci est activé).
 
@@ -129,12 +134,12 @@ Retrouvez plus d'informations sur le SSH dans notre guide sur l'[utilisation du 
 
 Cet outil est installé par défaut sur *macOS*, *Linux* et *Windows 10*. Un environnement Windows plus ancien nécessitera l’installation d’un logiciel comme [PuTTY](/pages/web/hosting/ssh_using_putty_on_windows/) ou l’ajout de la fonctionnalité « *OpenSSH* ». 
 
->[!warning]
+> [!warning]
 > 
 > Cette démarche étant spécifique au système d’exploitation que vous utilisez, nous ne pouvons pas la détailler dans cette documentation.
 >
 
-Une fois la connexion SSH établie et selon la méthode choisie, il existe deux manières pour vous connecter : 
+Une fois la connexion SSH établie et selon la méthode choisie, il existe deux méthodes pour vous connecter : 
 
 - **depuis un logiciel** : les zones de texte doivent être complétées par les informations de connexion ;
 - **en ligne de commande** : une syntaxe spécifique devra être respectée.
@@ -145,7 +150,7 @@ En ligne de commande, utilisez la syntaxe suivante :
 ssh sshlogin@sshserver -p connectionport
 ```
 
-Remplacez les éléments `sshlogin`, `sshserver` et `connectionport` par vos propres éléments. 
+Remplacez les éléments `sshlogin`, `sshserver` et `connectionport` par vos propres informations. 
 
 Une fois la commande envoyée, vous serez invité à renseigner le mot de passe de l'utilisateur SSH.
 
