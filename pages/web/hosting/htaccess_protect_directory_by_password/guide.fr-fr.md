@@ -69,7 +69,7 @@ Nous allons vous expliquer les 4 étapes principales à réaliser pour protéger
 >
 > En effet, les scripts et informations décrites plus bas dans ce tutoriel ne fonctionnent qu'avec un environnement d'exécution et une version PHP récente.
 > 
-> Si non, nous vous conseillons d'optimiser votre site web afin de le rendre compatible avant de mettre en place ce qui va suivre. Cela réduira d'avantage les risques de piratage de vos données via des failles de sécurités.
+> Si non, nous vous conseillons d'optimiser votre site web afin de le rendre compatible avant de mettre en place ce qui va suivre. Cela réduira d'avantage les risques de piratage de vos données via des failles de sécurité.
 >
 
 ### Etape 1 : Créer les fichiers « crypt.php », « .htaccess » et « .htpasswd »
