@@ -1548,6 +1548,7 @@
             + [Object Storage - Bucket ACL](cloud/storage/object_storage/s3_bucket_acl)
             + [Object Storage - Hosting a static website in a S3 bucket](cloud/storage/object_storage/s3_website)
             + [Object Storage - Enabling HTTPS on a S3 static website using a custom domain](cloud/storage/object_storage/s3_website_https)
+            + [Object Storage - Setting up CORS on S3 Object Storage](cloud/storage/object_storage/s3_cors)
         + [Configure Object Storage with your solutions](storage-object-storage-configure-object-storage-with-your-solutions)
             + [Object Storage - Use S3 Object Storage with Rclone](cloud/storage/object_storage/s3_rclone)
             + [Object Storage - Use S3 Object Storage with Veeam](cloud/storage/object_storage/s3_veeam)
