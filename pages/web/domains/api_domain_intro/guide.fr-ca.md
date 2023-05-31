@@ -33,7 +33,7 @@ Pensez à remplacer [https://eu.api.ovh.com](https://eu.api.ovh.com) par [https:
 Avant de lire cette documentation, il est nécessaire de commencer par prendre connaissance de la documentation suivante.
 Elle décrit la mise en place de l'environnement de test et la connexion à l'API OVHcloud, et permet également de comprendre la signature des requêtes.
 
-- [Premiers pas avec les APIs OVHcloud](../../api/first-steps-with-ovh-api/)
+- [Premiers pas avec les APIs OVHcloud](/pages/account/api/first-steps)
 
 ## SDKs disponibles
 
