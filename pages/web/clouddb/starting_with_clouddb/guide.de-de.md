@@ -119,7 +119,7 @@ Geben Sie im angezeigten Fenster die angefragten Informationen ein und klicken S
 
 > [!warning]
 >
-> Aus Sicherheitsgründen halten Sie sich bitte an die bei der Eingabe der Informationen angezeigten Bedingungen.
+> Beachten Sie aus Sicherheitsgründen die bei Eingabe der Informationen angezeigten Richtlinien.
 >
 
 ![Web Cloud Databases](images/web-cloud-databases-add-user-step2.png){.thumbnail}
@@ -196,8 +196,8 @@ Damit Sie Ihre Website in jedem Fall erfolgreich mit Ihrer Datenbank verbinden k
 
 > [!warning]
 >
-> Das Feld `port`{.action} wird in der Konfiguration Ihrer Website möglicherweise nicht angeboten. Sie müssen dieses Feld nach dem Hostnamen Ihres Servers hinzufügen, indem Sie beide durch ein *:* trennen. <br><br>
-> Für den Hostnamen `zz1111111-002.eu.clouddb.ovh.net` mit dem SQL-Port `34567` müssen Sie beispielsweise `zz1111111-002.eu.clouddb.ovh.net:34567` eingeben Teil "Host" / "Hostname".
+> Das Feld `Server-Port`{.action} wird in der Konfiguration Ihrer Website möglicherweise nicht angeboten. In diesem Fall muss der Wert nach dem Hostnamen Ihres Servers angefügt werden, getrennt mit einem *:*. <br><br>
+> Beispiel: Für den Hostnamen `zz1111111-002.eu.clouddb.ovh.net` mit dem SQL-Port `34567` müssen Sie `zz1111111-002.eu.clouddb.ovh.net:34567` als Hostname ("Name des Host-Servers") eingeben.
 >
 
 ![Web Cloud Databases](images/web-cloud-databases-login-information.png){.thumbnail}
