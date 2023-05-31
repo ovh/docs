@@ -28,7 +28,7 @@ updated: 2023-05-31
  }
 </style>
 
-**Last updated 31th May 2023**
+**Last updated 31st May 2023**
 
 ## Objective
 
