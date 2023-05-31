@@ -4,8 +4,8 @@ slug: customizing-coredns
 excerpt: 'Find out how to customize CoreDNS on an OVHcloud Managed Kubernetes cluster'
 section: User guides
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/customizing-coredns/'
-updated: 2022-10-11
+    canonical: https://docs.ovh.com/gb/en/kubernetes/customizing-coredns/
+updated: 2023-05-31
 ---
 
 <style>
@@ -30,7 +30,7 @@ updated: 2022-10-11
  }
 </style>
 
-**Last updated 11th October 2022**
+**Last updated 31st May 2023**
 
 ## Objective
 
@@ -95,7 +95,7 @@ metadata:
   namespace: kube-system
   resourceVersion: "5786561917"
   uid: a4e7310b-50b9-4976-a014-13e4bee12344
-</code</pre>
+</code></pre>
 
 > [!warning]
 > When the Kubernetes Control Plane is redeployed or when the cluster is upgrading to the latest patch, this default CoreDNS configuration is restored to the default one. 
