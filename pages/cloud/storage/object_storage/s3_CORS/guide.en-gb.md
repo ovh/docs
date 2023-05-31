@@ -1,50 +1,60 @@
 ---
-title: Object Storage - Enabling CORS on S3 Object Storage
+title: Object Storage - Setting up CORS on S3 Object Storage
 excerpt: Learn how to enable and configure CORS on your buckets
 updated: 2023-05-30
 ---
 
 ## Objective
+
 By default, modern browsers impose a same-origin security policy i.e by preventing a resource loaded from one origin to interact with another resource loaded from another origin.
 
 ![CORS](images/cors.png){.thumbnail}
 
-Cross-origin resource sharing (CORS) is a technique that allows resources from a client web applications that is loaded from one domain to interact with resources located in another different domain.
-The purpose of this guide is to familiarise you with the concept of CORS and enable it on your S3 buckets.
+Cross-Origin Resource Sharing (CORS) is a technique that allows resources from a client web application that is loaded from one domain to interact with resources located in another different domain.
 
+**The purpose of this guide is to explain the concept of CORS and how to enable it on your S3 buckets.**
 
-## Use case scenarios
-Typically, good candidate scenarios for CORS in OVHCloud Object Storage would be the following:
-- suppose you host a static website in a bucket and you want to use javascript to access resources hosted in the same bucket or in anotger bucket
-- suppose you have a frontend application (for example, a mobile application) that needs to access resources hosted in a S3 bucket
+### Use case scenarios
 
+Usual use case scenarios for CORS in OVHcloud Object Storage would be the following:
 
-## How it works
-Under the hood, the client must first know if CORS is enabled on the serverside. It sends a preflight requests (OPTIONS request) to the OVHCloud Object Storage to check the rules for CORS:
-- what origins are accepted
-- what HTTP verbs
-- what headers
-- ...etc
+- You host a static website in a bucket and you want to use javascript to access resources hosted in the same bucket or in another bucket.
+- You have a frontend application (e.g. a mobile application) that needs to access resources hosted in a S3 bucket.
 
-Then, based on what the server responds, the CORS request is allowed or not i.e:
-- the request's Origin header must be defined in the AllowedOrigin element
-- the request method (GET, PUT, ...etc) or the Access-Control-Request-Method header in case of a preflight OPTIONS request must be one of the AllowedMethod elements
-- all the headers listed in the request's Access-Control-Request-Headers header on the preflight request must be defined in the AllowedHeader element
+### How does it work?
+
+Under the hood, the client must first know if CORS is enabled on the server side. It sends a preflight request (OPTIONS request) to the OVHcloud Object Storage to check the rules for CORS:
+
+- which origins are accepted ;
+- which HTTP verbs ;
+- which headers ;
+- etc.
+
+Then, based on what the server responds, the CORS request is allowed or not :
+
+- The request's `Origin` header must be defined in the `AllowedOrigins` element.
+- The request method (GET, PUT, etc) or the `Access-Control-Request-Methods` header (in case of a preflight OPTIONS request) must be one of the `AllowedMethods` elements.
+- All the headers listed in the request's `Access-Control-Request-Headers` header on the preflight request must be defined in the `AllowedHeaders` element.
 
 The rules for accepted CORS requests are configured at the bucket level.
 
+## Requirements
 
-## In practice
-### Prerequisites
-- Create a bucket on bucket on which you can configure the CORS rule.
-- Make sure credentials and permissions on the bucket/objects are set for the user making the requests.
+- A bucket on which you can configure the CORS rule.
+- Credentials and permissions on the bucket/objects for the user making the requests.
+
+## Instructions
 
 ### Configuration
-By using the AWS cli, set up CORS on the bucket:
+
+Using the AWS CLI, set up CORS on the bucket:
+
 ```sh
 aws s3api put-bucket-cors --bucket my-bucket --cors-configuration cors.json
 ```
-where cors.json contains the following configuration:
+
+The cors.json file contains the following configuration:
+
 ```json
 {
    "CORSRules": [
@@ -57,17 +67,18 @@ where cors.json contains the following configuration:
    ]
 }
 ```
+#### Configuration example
 
-**Example**:
+Let's assume we have a frontend web application hosted on `https://my-app.xyz` that uses JavaScript (React, Angular or any frontend framework) to query media files hosted in a S3 bucket (`https://my-media.s3.gra.io.cloud.ovh.net/`).
 
-Suppose we have a frontend web application hosted on https://my-app.xyz that uses javascript (React, Angular or any frontend framework) to query media files hosted in a S3 bucket (https://my-media.s3.gra.io.cloud.ovh.net/).
+We enable CORS on the my-media bucket:
 
-Enable CORS on my-media bucket:
 ```sh
 aws s3api put-bucket-cors --bucket my-media --cors-configuration cors.json
 ```
 
-Where cors.json :
+The cors.json file contains the following configuration:
+
 ```json
 {
    "CORSRules": [
@@ -81,9 +92,14 @@ Where cors.json :
 }
 ```
 
-Basically, what we've done is to tell the client app that the targeted bucket allows CORS requests only if:
-- the request contains the "Authorization" header
-- the request is limited to "GET" and "HEAD" requests
-- the request must come from the "my-app.xyz" domain
+Basically, what has been done here is to tell the client application that the targeted bucket allows CORS requests only if:
 
-And the Object Storage server will expose the "Access-Control-Allow-Origin" header in its responses
+- the request contains the "Authorization" header ;
+- the request is limited to "GET" and "HEAD" requests ;
+- the request comes from the "my-app.xyz" domain.
+
+The Object Storage server will expose the `Access-Control-Allow-Origin` header in its responses.
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
