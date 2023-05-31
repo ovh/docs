@@ -198,7 +198,8 @@ Damit Sie Ihre Website in jedem Fall erfolgreich mit Ihrer Datenbank verbinden k
 
 > [!warning]
 >
-> In seltenen Fällen ist das Feld `Port`{.action} in der Konfiguration Ihrer Website nicht verfügbar. Ist das der Fall, fügen Sie dieses Feld hinter dem Hostnamen Ihres Servers hinzu und trennen Sie beide Informationen durch ein *:* (zum Beispiel hostname:port).
+> Das Feld `port`{.action} ist in Ihrer Site-Konfiguration möglicherweise nicht verfügbar. Sie müssen dieses Feld nach dem Hostnamen Ihres Servers hinzufügen und diese von *:* trennen. <br><br>
+> Für den Hostnamen `zz1111111-002.eu.clouddb.ovh.net` mit dem SQL-Port `34567` müssen Sie beispielsweise `zz1111111-002.eu.clouddb.ovh.net:34567` eingeben Teil "Host" / "Hostname".
 >
 
 ![Web Cloud Databases](images/web-cloud-databases-login-information.png){.thumbnail}

@@ -196,7 +196,8 @@ Durante este procedimento, serão solicitadas cinco informações essenciais:
 
 > [!warning]
 >
-> Em certos casos, o campo `Porta`{.action} pode não estar disponível na área de configuração do site. Neste caso, terá de adicionar esta informação a seguir ao nome servidor host, separando os campos com «dois pontos» (exemplo: endereçohost:porta).
+> O campo `port`{.action} pode não estar disponível na configuração do seu site. Você precisará adicionar este campo após o nome do host do seu servidor, separando-o de *:* . <br><br>
+> Por exemplo, para o nome do host `zz1111111-002.eu.clouddb.ovh.net` com porta SQL `34567`, você precisará inserir `zz1111111-002.eu.clouddb.ovh.net:34567` no Parte "Host" / "Hostname".
 >
 
 ![Web Cloud Databases](images/web-cloud-databases-login-information.png){.thumbnail}

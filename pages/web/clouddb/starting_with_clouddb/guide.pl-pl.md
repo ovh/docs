@@ -194,7 +194,8 @@ Aby pomyślnie zakończyć tę operację, potrzebne Ci będą następujące info
 
 > [!warning]
 >
-> W rzadkich przypadkach pole `port`{.action} może się nie pojawić w konfiguracji Twojej strony WWW. Jeśli taki przypadek wystąpi, pole to należy dodać po nazwie hosta. Dane te muszą być oddzielone dwukropkiem *:* (na przykład: nazwahosta: port).
+> Pole `port`{.action} może nie być dostępne w konfiguracji Twojej witryny. Będziesz musiał dodać to pole po nazwie hosta twojego serwera oddzielając je od *:* . <br><br>
+> Na przykład dla nazwy hosta `zz1111111-002.eu.clouddb.ovh.net` z portem SQL `34567` należy wpisać `zz1111111-002.eu.clouddb.ovh.net:34567` w Część "Host" / "Nazwa hosta".
 >
 
 ![cloud databases - bazy danych na instancji](images/web-cloud-databases-login-information.png){.thumbnail}

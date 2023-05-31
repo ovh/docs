@@ -190,7 +190,8 @@ No matter which method you choose to follow, you must have the following five pi
 
 > [!warning]
 >
-> In some rare cases, the `port`{.action} field may not be available in your website’s configuration. If this is the case, you will need to add this field after your server’s host name, separating them with a *:*, i.e. `hostname:port`.
+> The `port`{.action} field may not be available in your site configuration. You will need to add this field after your server's hostname separating them from *:* . <br><br>
+> For example, for the host name `zz1111111-002.eu.clouddb.ovh.net` with SQL port `34567`, you will need to enter `zz1111111-002.eu.clouddb.ovh.net:34567` in the "Host" / "Hostname" part.
 >
 
 ![Web Cloud Databases](images/web-cloud-databases-login-information.png){.thumbnail}
