@@ -51,14 +51,14 @@ Wenn Sie die Option “-t” mit diesem Befehl verwenden, können Sie eine ander
 ssh-keygen -t ed25519 -a 256
 ```
 
-Sie werden nachfolgend aufgefordert, den neu erstellten Schlüssel in der Standarddatei zu speichern:
+Sie werden aufgefordert, den neu erstellten Schlüssel in der Standarddatei zu speichern:
 
 ```console
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
-Sie können die Standarddatei akzeptieren, indem Sie "↩" drücken. Jetzt haben Sie die Möglichkeit, eine Passphrase einzugeben, um Ihren SSH-Schlüssel abzusichern. Dies wird als zusätzliche Sicherheitsmaßnahme empfohlen.
+Sie können die Standarddatei akzeptieren, indem Sie "Enter" drücken. Jetzt haben Sie die Möglichkeit, eine Passphrase einzugeben, um Ihren SSH-Schlüssel abzusichern. Dies wird als zusätzliche Sicherheitsmaßnahme empfohlen.
 
 Ihre SSH-Schlüssel sollten im Verzeichnis “.ssh” gespeichert sein. Der Datei mit dem öffentlichen Schlüssel wird ".pub" zum Dateinamen hinzugefügt.
 

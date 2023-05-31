@@ -56,7 +56,7 @@ Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
-Confirm, and you will now have the option to enter a passphrase to password-protect your SSH key. This is recommended for added security.
+Confirm with "Enter". You can protect your SSH key with a passphrase at the next prompt. This is recommended for added security.
 
 Your SSH keys should be stored in the ".ssh" directory.
 

@@ -28,7 +28,7 @@ updated: 2023-05-17
 
 ## Objective
 
-The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign emails to prevent identity theft. This signature works on the principle of hashing combined with asymmetric cryptography.
+The DKIM (**D**omain **K**eys **I**dentified **M**ail) record allows you to sign emails to prevent identity fraud. This signature works on the principle of hashing combined with asymmetric cryptography.
 
 **This guide explains how DKIM works, and how to set it up for your email service.**
 

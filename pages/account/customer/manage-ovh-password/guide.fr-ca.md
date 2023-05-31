@@ -55,7 +55,7 @@ Pour en savoir plus, reportez-vous à la section [Aller plus loin](https://docs.
 
 Des logiciels spécifiques permettent de sauvegarder et sécuriser votre mot de passe d'accès au compte OVHcloud.
 
-Vous pouvez, par exemple, utiliser le gestionnaire de mots de passe **Keepass**. Il s’agit d’un logiciel libre et gratuit recommandé par l'Agence nationale de sécurité des systèmes d'information (ANSSI).
+Vous pouvez, par exemple, utiliser le gestionnaire de mots de passe **KeePass**. Il s’agit d’un logiciel libre et gratuit recommandé par l'Agence nationale de sécurité des systèmes d'information (ANSSI).
 
 Son principe est simple : un mot de passe maître – qui doit être suffisamment complexe, mais que vous devez mémoriser – permet d'accéder à une base de données regroupant tous vos identifiants et mots de passe. Ces derniers peuvent être très complexes, car le logiciel pourra les retenir.
 
@@ -131,6 +131,6 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 
 [Les conseils de cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/){.external}
 
-[Le gestionnaire de mots de passe Keepass](https://keepass.info/){.external}
+[Le gestionnaire de mots de passe KeePass](https://keepass.info/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

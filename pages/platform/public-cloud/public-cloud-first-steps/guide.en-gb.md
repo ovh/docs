@@ -60,16 +60,16 @@ $ ssh-keygen -t ecdsa -a 256
 
 The command will prompt you to save the newly created key in the standard file:
 
-```bash
+```console
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
-You can accept the default file by pressing "Enter". Now you will have the option to enter a passphrase to password-protect your SSH key. This is recommended for added security. Since only the corresponding private key will be required to access your Public Cloud instance from your working device, appropriate security measures should be applied at this point. The passphrase has to be entered when a connection to the instance is established.
+You can accept the default file by pressing "Enter". Now you will have the option to enter a passphrase to protect your SSH key. This is recommended for added security. Since only the corresponding private key will be required to access your Public Cloud instance from your working device, appropriate security measures should be applied at this point. The passphrase has to be entered when a connection to the instance is established.
 
 Your SSH keys should be stored in the ".ssh" directory. The public key file will have ".pub" added to the filename.
 
-```bash
+```console
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:

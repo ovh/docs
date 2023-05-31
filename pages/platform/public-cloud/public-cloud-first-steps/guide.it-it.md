@@ -64,7 +64,7 @@ $ ssh-keygen -t ed25519 -a 256
 
 Il comando ti chiederà di salvare la chiave appena creata nel file standard:
 
-```bash
+```console
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
@@ -73,7 +73,7 @@ Per accettare il file predefinito premi "↩" (Invio). Una volta confermata l’
 
 È necessario salvare la chiave SSH nella directory “.ssh” e aggiungere ".pub" al nome del file della chiave pubblica.
 
-```bash
+```console
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:

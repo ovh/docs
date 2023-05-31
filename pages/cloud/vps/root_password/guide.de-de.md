@@ -16,8 +16,8 @@ updated: 2021-04-20
 
 Es kann sein, dass Sie das Root-Passwort Ihres Linux-Betriebssystems ändern müssen. Es gibt dabei zwei mögliche Szenarien:
 
-- Sie können sich noch via SSH verbinden
-- Sie können sich nicht via SSH verbinden, da Sie Ihr Passwort verloren haben
+- Sie können sich noch via SSH verbinden.
+- Sie können sich nicht via SSH verbinden, da Sie Ihr Passwort verloren haben.
 
 **Diese Anleitung erklärt, wie Sie Ihr Administrator-Passwort je nach Ausgangssituation ändern.**
 
@@ -35,7 +35,7 @@ Es kann sein, dass Sie das Root-Passwort Ihres Linux-Betriebssystems ändern mü
 
 ## In der praktischen Anwendung
 
-### Änderung des Passworts, wenn Sie noch Zugriff haben (als Root- oder *sudo*-Benutzer)
+### Änderung des Passworts, wenn Sie noch Zugriff haben (als *root* oder *sudo*-Benutzer)
 
 > [!primary]
 >
@@ -44,15 +44,16 @@ Es kann sein, dass Sie das Root-Passwort Ihres Linux-Betriebssystems ändern mü
 
 Verbinden Sie sich via SSH mit Ihrem VPS. Wenn nötig, wechseln Sie zum Root-Account:
 
-```sh
-~$ sudo su -
-~#
+```bash
+sudo su -
+#
 ```
 
 Ändern Sie das Passwort des aktuellen Benutzers:
 
-```sh
-~# passwd
+```bash
+passwd
+
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -132,8 +133,9 @@ Sie können eine Überprüfung durchführen, indem Sie den Befehl `ls -l` eingeb
 
 Ändern Sie im letzten Schritt Ihr Passwort mit dem Befehl `passwd`.
 
-```sh
-~# passwd
+```bash
+passwd
+
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -143,8 +145,8 @@ Wenn Ihr VPS aus der neueren Generation ist (Namensschema: *vps-xxxxx.vps.ovh.ne
 
 Es ist daher erforderlich, dass Sie den tatsächlich verwendeten Login-Benutzernamen nach `passwd` eingeben:
 
-```sh
-~# passwd <username>
+```bash
+~# passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -194,7 +196,7 @@ Speichern Sie die Datei und verlassen Sie den Editor.
 ~$ systemctl restart sshd
 ```
 
-Dies sollte ausreichen, um die Änderungen anzuwenden. Sie können alternativ den VPS neu starten (```~$ reboot```).
+Dies sollte ausreichen, um die Änderungen anzuwenden. Sie können alternativ den VPS neu starten (`~$ sudo reboot`).
 
 ### Troubleshooting
 

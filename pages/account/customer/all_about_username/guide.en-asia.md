@@ -50,7 +50,7 @@ You can find all of our password recommendations in our guide on [Setting and ma
 If you have not already done so, save your password in a [password manager](https://docs.ovh.com/asia/en/customer/manage-password/#use-a-password-manager) .
 
 > [!primary]
-> The **Keepass** and **Bitwarden** software are free and open-source password managers.
+> The **KeePass** and **Bitwarden** software are free and open-source password managers.
 >
 
 #### Adding a backup email address <a name="backup-email"></a>
