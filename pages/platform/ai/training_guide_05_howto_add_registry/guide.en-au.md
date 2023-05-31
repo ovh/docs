@@ -55,6 +55,8 @@ The default shared registry remains available even with a private registry added
 -   You can check out the documentation about the [`ovhai` CLI](https://docs.ovh.com/au/en/publiccloud/ai/cli/overview-cli)
 -   You can check out the documentation about [how to setup the `ovhai` CLI](https://docs.ovh.com/au/en/publiccloud/ai/cli/install-client)
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:

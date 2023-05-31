@@ -108,6 +108,8 @@ Learn how to use public and private registries when working with OVHcloud AI Too
 
 Discover some AI Deploy apps we built with API or Web frontend via our [Apps portfolio](/pages/platform/ai/deploy_guide_05_app_portfolio).
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 ## Feedback
 
 Please send us your questions, feedback and suggestions to help our team improve the service on the [OVHcloud Discord server](https://discord.gg/ovhcloud).

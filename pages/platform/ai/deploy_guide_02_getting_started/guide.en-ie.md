@@ -224,6 +224,7 @@ Be sure to also delete your Object Storage data if you don't need it anymore.
 - You can imagine deploying an AI model for sketch recognition thanks to **AI Deploy**. Refer to this [tutorial](https://docs.ovh.com/ie/en/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/).
 - Do you want to use **Streamlit** in order to create an app? [Here it is](https://docs.ovh.com/ie/en/publiccloud/ai/deploy/tuto-build-use-flask-image/).
 
-## Feedback
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
+## Feedback
 Please feel free to send us your questions, feedback and suggestions to help our team improve the service on the OVHcloud [Discord server](https://discord.com/invite/KbrKSEettv)!
