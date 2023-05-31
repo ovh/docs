@@ -24,9 +24,9 @@ Suite à la détection d'un fonctionnement suspect, nos robots de sécurité peu
 - l'envoi de code malveillant vers d'autres entités/sites web pouvant entraîner un piratage de ces derniers;
 - la réalisation d'opérations illégales.
  
- Cela vise également à vous protéger juridiquement contre les actions résultantes d'un éventuel piratage de votre hébergement web sur d'autres organisations/sites web. 
+ Cela vise également à vous protéger juridiquement contre les actions résultantes d'un éventuel piratage de votre hébergement web en direction d'autres organisations/sites web. 
  
- *Si vous êtes concernés par ce type de blocage, une notification vous est envoyée par e-mail à l'adresse e-mail du contact « administrateur » de votre hébergement web*
+ *Si vous êtes concernés par ce type de blocage, une notification vous est envoyée sur l'adresse e-mail du contact « administrateur » de votre hébergement web*
 
 ![403error](images/403error.png){.thumbnail}
 
@@ -70,7 +70,7 @@ Vérifiez tout d'abord la sécurité de votre (vos) poste(s)/appareil(s) informa
 >
 > Avant de changer le mot de passe de la base de données de votre site web depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), mettez à jour le fichier de configuration de votre site web afin qu'il se connecte à la base de données avec le nouveau mot de passe.
 >
-> Dans le cas contraire, la modification du mot de passe de votre base de données entraînera une coupure d'accès au site web ou aux services qui l'utilisent.
+> Dans le cas contraire, la modification du mot de passe de votre base de données entraînera une coupure d'accès à votre site web ou à vos services/clients qui l'utilisent.
 >
 > En cas de doute sur les manipulations à réaliser, contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 >
@@ -81,16 +81,14 @@ Notez tout d'abord la date d'envoi de l'e-mail d'OVHcloud indiquant la désactiv
 
 #### Cas n°1 : votre hébergement web a été désactivé il y a moins de deux semaines
 
-Si votre hébergement a été fermé il y a moins de deux semaines et qu'il ne contient qu'un seul site web, restaurez votre espace de stockage FTP.
-
-Si votre hébergement a été fermé il y a moins de deux semaines et qu'il contient plusieurs sites web, restaurez uniquement le ou les dossiers contenant les fichiers illégitimes.
+Si votre hébergement a été fermé il y a moins de deux semaines et qu'il ne contient qu'un seul site web, restaurez votre espace de stockage FTP. S'il contient plusieurs sites web, restaurez uniquement le ou les dossiers contenant les fichiers illégitimes.
 
 Pour restaurer tout ou partie de votre espace de stockage FTP, consultez notre [guide](/pages/web/hosting/ftp_save_and_backup/) sur le sujet.
 
 > [!warning]
 >
 > La restauration seule de votre espace de stockage FTP ne suffit pas à corriger de potentielles failles de sécurité préalablement présentes sur votre site web.
-> Pour identifier ces failles de sécurité, vous pouvez analyser les [« logs web »](/pages/web/hosting/logs_and_statistics/) de votre hébergement web ou faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) afin de réaliser un audit de sécurité de vos sites web.
+> Pour identifier ces failles de sécurité, analysez les [« logs web »](/pages/web/hosting/logs_and_statistics/) de votre hébergement web ou faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) afin de réaliser un audit de sécurité de vos sites web.
 >
 
 #### Cas n°2 : votre hébergement web a été désactivé il y a plus de deux semaines
@@ -99,7 +97,7 @@ Si votre hébergement a été fermé il y a plus de deux semaines, contactez un 
 
 > [!success]
 >
-> Concernant les [étapes 2 et 3](#step-2) précédentes, sachez que nous mettons à votre disposition un tutoriel détaillé sur [les actions à réaliser en cas de piratage de votre site web](/pages/web/hosting/cms_what_to_do_if_your_site_is_hacked/)
+> Si vous souhaitez plus de détails oncernant les [étapes 2 et 3](#step-2) précédentes, consultez notre tutoriel sur [les actions à réaliser en cas de piratage de votre site web](/pages/web/hosting/cms_what_to_do_if_your_site_is_hacked/).
 >
 
 ### Étape 4 : réactiver votre hébergement web <a name="reactivate-web-hosting"></a>
@@ -130,6 +128,13 @@ SITE CHMOD 705 /
 
 Une réponse **« 200 Permissions changed on / »** confirme que la manipulation s'est bien effectuée. Pour le vérifier, essayez à nouveau d'accéder à votre site web.
 
+> [warning]
+>
+> Un délais de quelques minutes (maximum 20 minutes) peut être nécessaire pour que la modification soit visible via votre navigateur Internet.
+>
+> Parfois et en fonction de votre site web, vous devrez vider le cache de votre navigateur en complément.
+>
+
 Si la commande ci-dessus ne fonctionne pas, vous pouvez essayer cette autre commande :
 
 ```
@@ -157,6 +162,13 @@ puis cliquez sur le bouton représentant un « V » vert.
 ![result_command_on_net2ftp](images/result_command_on_net2ftp.png){.thumbnail}
 
 Une réponse **« 200 Permissions changed on / »** confirme que la manipulation s'est bien effectuée. Pour le vérifier, essayez à nouveau d'accéder à votre site web.
+
+> [warning]
+>
+> Un délais de quelques minutes (maximum 20 minutes) peut être nécessaire pour que la modification soit visible via votre navigateur Internet.
+>
+> Parfois et en fonction de votre site web, vous devrez vider le cache de votre navigateur en complément.
+>
 
 ## Aller plus loin <a name="go-further"></a>
 
