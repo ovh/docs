@@ -188,35 +188,48 @@ The following examples show how to use Node.js to access various [services](../c
 To configure a given service, see the page dedicated to that service.
 
 > [!tabs]      
-> Elasticsearch     
->> ``` js     
->> {!> web/web-paas/static/files/fetch/examples/nodejs/elasticsearch !}  
->> ```     
-> Memcached     
->> ``` js     
->> {!> web/web-paas/static/files/fetch/examples/nodejs/memcached !}  
->> ```     
-> MongoDB     
->> ``` js     
->> {!> web/web-paas/static/files/fetch/examples/nodejs/mongodb !}  
->> ```     
-> MySQL     
->> ``` js     
->> {!> web/web-paas/static/files/fetch/examples/nodejs/mysql !}  
->> ```     
-> PostgreSQL     
->> ``` js     
->> {!> web/web-paas/static/files/fetch/examples/nodejs/postgresql !}  
->> ```     
-> Redis     
->> ``` js     
->> {!> web/web-paas/static/files/fetch/examples/nodejs/redis !}  
->> ```     
-> Solr     
->> ``` js     
->> {!> web/web-paas/static/files/fetch/examples/nodejs/solr !}  
->> ```     
-
+> Elasticsearch
+>> >   
+>> > ```js     
+>> > {!> web/web-paas/static/files/fetch/examples/nodejs/elasticsearch !}  
+>> > ```
+>> > 
+> Memcached
+>> >     
+>> > ```js     
+>> > {!> web/web-paas/static/files/fetch/examples/nodejs/memcached !}  
+>> > ```
+>> >    
+> MongoDB
+>> >   
+>> > ```js     
+>> > {!> web/web-paas/static/files/fetch/examples/nodejs/mongodb !}  
+>> > ```
+>> >  
+> MySQL
+>> >     
+>> > ```js     
+>> > {!> web/web-paas/static/files/fetch/examples/nodejs/mysql !}  
+>> > ```     
+>> >
+> PostgreSQL
+>> >     
+>> > ```js     
+>> > {!> web/web-paas/static/files/fetch/examples/nodejs/postgresql !}  
+>> > ```
+>> >     
+> Redis
+>> >     
+>> > ```js     
+>> > {!> web/web-paas/static/files/fetch/examples/nodejs/redis !}  
+>> > ```
+>> >     
+> Solr
+>> >    
+>> > ```js     
+>> > {!> web/web-paas/static/files/fetch/examples/nodejs/solr !}  
+>> > ```     
+>> >
 
 [`platformsh-config` package](https://github.com/platformsh/config-reader-nodejs)
 

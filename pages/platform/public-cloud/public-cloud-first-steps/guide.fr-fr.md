@@ -62,7 +62,7 @@ $ ssh-keygen -t ecdsa -a 256
 
 La commande vous invite à enregistrer la nouvelle clé dans le fichier standard :
 
-```bash
+```console
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
@@ -71,7 +71,7 @@ Vous pouvez accepter le fichier par défaut en appuyant sur « ↩ ». Vous pouv
 
 Vos clés SSH doivent être stockées dans le répertoire « .ssh ». L'extension « .pub » sera ajoutée au nom du fichier de clé publique.
 
-```bash
+```console
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:

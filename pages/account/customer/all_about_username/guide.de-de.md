@@ -54,7 +54,7 @@ Alle Empfehlungen zu Passwörtern finden Sie in unserer [Anleitung zur Passwort�
 Wenn Sie das noch nicht getan haben, speichern Sie Ihr Passwort in einem [Passwort-Manager](https://docs.ovh.com/de/customer/Passwort-verwalten/#einen-passwort-manager-verwenden).
 
 > [!primary]
-> **Keepass** und **Bitwarden** sind kostenlose Open-Source-Passwortmanager.
+> **KeePass** und **Bitwarden** sind kostenlose Open-Source-Passwortmanager.
 >
 
 #### Eine sekundäre E-Mail-Adresse hinzufügen <a name="backup-email"></a>

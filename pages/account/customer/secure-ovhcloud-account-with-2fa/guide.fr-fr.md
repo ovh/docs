@@ -45,7 +45,7 @@ Une fois la première méthode ajoutée, vous pouvez également en ajouter une o
 
 ### Étape 2 : sauvegarder les codes de secours <a name="codes"></a>
 
-Lorsque vous ajoutez une double authentification pour la première fois, des codes de secours vous seront communiqués. **Conservez-les précieusement**. Nous vous conseillons de les sauvegarder dans un gestionnaire de mots de passe, tel que [Keepass](https://keepass.info/){.external}.
+Lorsque vous ajoutez une double authentification pour la première fois, des codes de secours vous seront communiqués. **Conservez-les précieusement**. Nous vous conseillons de les sauvegarder dans un gestionnaire de mots de passe, tel que [KeePass](https://keepass.info/){.external}.
 
 ![2FA](images/2facodes.png){.thumbnail}
 
