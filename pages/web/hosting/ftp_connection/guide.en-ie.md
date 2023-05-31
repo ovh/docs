@@ -4,10 +4,10 @@ slug: log-in-to-storage-ftp-web-hosting
 excerpt: 'Find out how to log in to your OVHcloud Web Hosting plan’s storage space'
 section: 'FTP and SSH'
 order: 02
-updated: 2022-10-21
+updated: 2023-05-31
 ---
 
-**Last updated 19th January 2022**
+**Last updated 19th January 2023**
 
 ## Objective
 

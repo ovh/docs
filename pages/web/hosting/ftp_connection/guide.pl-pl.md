@@ -4,10 +4,10 @@ slug: logowanie-przestrzen-dyskowa-ftp-hosting-web
 excerpt: 'Dowiedz się, jak się zalogować do przestrzeni dyskowej hostingu od OVHcloud'
 section: 'FTP i SSH'
 order: 02
-updated: 2022-10-21
+updated: 2023-05-31
 ---
 
-**Ostatnia aktualizacja z dnia 19-01-2022**
+**Ostatnia aktualizacja z dnia 19-01-2023**
 
 ## Wprowadzenie 
 
