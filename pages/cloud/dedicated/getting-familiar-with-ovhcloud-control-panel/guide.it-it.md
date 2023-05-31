@@ -119,4 +119,6 @@ Ecco alcune guide aggiuntive che ti aiuteranno nei tuoi primi passi:
 [Creare una chiave SSH](https://docs.ovh.com/it/dedicated/creare-chiave-ssh-dedicata/).<br>
 [Quali sono gli indirizzi IP del monitoring OVHcloud?](https://docs.ovh.com/it/dedicated/monitoring-ip-ovh/).
 
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
