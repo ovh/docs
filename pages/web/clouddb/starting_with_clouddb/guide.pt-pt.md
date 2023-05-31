@@ -5,10 +5,8 @@ excerpt: 'Saiba como começar a usar e a gerir o serviço Web Cloud Databases'
 legacy_guide_number: 2216
 section: 'Primeiros passos'
 order: 01
-updated: 2023-02-15
+updated: 2023-05-31
 ---
-
-**Última atualização: 15/02/2023**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -196,7 +194,7 @@ Durante este procedimento, serão solicitadas cinco informações essenciais:
 
 > [!warning]
 >
-> O campo `port`{.action} pode não estar disponível na configuração do seu site. Você precisará adicionar este campo após o nome do host do seu servidor, separando-o de *:* . <br><br>
+> O campo `port`{.action} pode não estar disponível na configuração do seu site. Terá de adicionar este campo após o nome do anfitrião do seu servidor, separando-os com um *:*. <br><br>
 > Por exemplo, para o nome do host `zz1111111-002.eu.clouddb.ovh.net` com porta SQL `34567`, você precisará inserir `zz1111111-002.eu.clouddb.ovh.net:34567` no Parte "Host" / "Hostname".
 >
 

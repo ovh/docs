@@ -7,8 +7,6 @@ order: 01
 updated: 2023-02-15
 ---
 
-**Ostatnia aktualizacja dnia 15-02-2023**
-
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
@@ -194,7 +192,7 @@ Aby pomyślnie zakończyć tę operację, potrzebne Ci będą następujące info
 
 > [!warning]
 >
-> Pole `port`{.action} może nie być dostępne w konfiguracji Twojej witryny. Będziesz musiał dodać to pole po nazwie hosta twojego serwera oddzielając je od *:* . <br><br>
+> Pole `port`{.action} może nie być dostępne w konfiguracji witryny. Będziesz musiał dodać to pole po nazwie hosta swojego serwera, oddzielając je znakiem *:*. <br><br>
 > Na przykład dla nazwy hosta `zz1111111-002.eu.clouddb.ovh.net` z portem SQL `34567` należy wpisać `zz1111111-002.eu.clouddb.ovh.net:34567` w Część "Host" / "Nazwa hosta".
 >
 

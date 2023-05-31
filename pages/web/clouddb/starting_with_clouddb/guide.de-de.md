@@ -7,14 +7,12 @@ links:
 excerpt: 'Erfahren Sie hier, wie Sie, wie Sie die Web Cloud Databases Lösung verwenden'
 section: 'Erste Schritte'
 order: 01
-updated: 2023-02-15
+updated: 2023-05-31
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
-
-**Letzte Aktualisierung am 15.02.2023**
 
 ## Ziel
 
@@ -198,7 +196,7 @@ Damit Sie Ihre Website in jedem Fall erfolgreich mit Ihrer Datenbank verbinden k
 
 > [!warning]
 >
-> Das Feld `port`{.action} ist in Ihrer Site-Konfiguration möglicherweise nicht verfügbar. Sie müssen dieses Feld nach dem Hostnamen Ihres Servers hinzufügen und diese von *:* trennen. <br><br>
+> Das Feld `port`{.action} wird in der Konfiguration Ihrer Website möglicherweise nicht angeboten. Sie müssen dieses Feld nach dem Hostnamen Ihres Servers hinzufügen, indem Sie beide durch ein *:* trennen. <br><br>
 > Für den Hostnamen `zz1111111-002.eu.clouddb.ovh.net` mit dem SQL-Port `34567` müssen Sie beispielsweise `zz1111111-002.eu.clouddb.ovh.net:34567` eingeben Teil "Host" / "Hostname".
 >
 

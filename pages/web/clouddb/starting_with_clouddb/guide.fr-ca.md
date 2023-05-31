@@ -7,8 +7,6 @@ order: 01
 updated: 2023-02-15
 ---
 
-**Dernière mise à jour le 15/02/2023**
-
 ## Objectif
 
 La solution Web Cloud Databases permet de bénéficier d’une instance de bases de données dont les ressources sont dédiées et garanties, vous offrant performances et flexibilité.
@@ -187,8 +185,8 @@ Afin de pouvoir mener à bien cette manipulation, vous devez quoi qu'il arrive �
 
 > [!warning]
 >
-> Le champ `port`{.action} peut ne pas être proposé dans la configuration de votre site. Vous devrez ajouter ce champ après le nom d'hôte de votre serveur en les séparant de *:* .  <br><br>
-> Par exemple, pour le nom d'hôte `zz1111111-002.eu.clouddb.ovh.net` avec comme port SQL `34567`, vous devrez renseignez `zz1111111-002.eu.clouddb.ovh.net:34567` dans la partie "Hôte" / "Nom d'hôte".
+> Le champ `port`{.action} peut ne pas être proposé dans la configuration de votre site. Vous devrez ajouter ce champ après le nom d'hôte de votre serveur en les séparant par un *:* .<br><br>
+> Par exemple, pour le nom d'hôte `zz1111111-002.eu.clouddb.ovh.net` avec comme port SQL `34567`, vous devrez renseignez `zz1111111-002.eu.clouddb.ovh.net:34567` dans la partie "Hôte" / "Nom d'hôte" .
 >
 
 ![Web Cloud Databases](images/web-cloud-databases-login-information.png){.thumbnail}

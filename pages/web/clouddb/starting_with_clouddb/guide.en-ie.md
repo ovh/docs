@@ -7,8 +7,6 @@ order: 01
 updated: 2023-02-15
 ---
 
-**Last updated 15rd February 2023**
-
 ## Objective
 
 With the Web Cloud Databases solution, you get a database instance with dedicated, guaranteed resources that gives you performance and flexibility.
@@ -190,7 +188,7 @@ No matter which method you choose to follow, you must have the following five pi
 
 > [!warning]
 >
-> The `port`{.action} field may not be available in your site configuration. You will need to add this field after your server's hostname separating them from *:* . <br><br>
+> The `port`{.action} field may not be available in your site configuration. You will need to add this field after the hostname of your server, separating them with a *:*. <br><br>
 > For example, for the host name `zz1111111-002.eu.clouddb.ovh.net` with SQL port `34567`, you will need to enter `zz1111111-002.eu.clouddb.ovh.net:34567` in the "Host" / "Hostname" part.
 >
 

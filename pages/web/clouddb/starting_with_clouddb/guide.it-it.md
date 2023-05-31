@@ -8,8 +8,6 @@ order: 01
 updated: 2023-02-15
 ---
 
-**Ultimo aggiornamento: 15/02/2023**
-
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
@@ -196,7 +194,7 @@ In ogni caso, è necessario disporre di queste cinque informazioni:
 
 > [!warning]
 >
-> Il campo `port`{.action} potrebbe non essere disponibile nella configurazione del tuo sito. Dovrai aggiungere questo campo dopo il nome host del tuo server separandolo da *:* . <br><br>
+> Il campo `port`{.action} potrebbe non essere disponibile nella configurazione del sito. È necessario aggiungere questo campo dopo il nome dell'host del server, separandoli con un *:*. <br><br>
 > Ad esempio, per il nome host `zz1111111-002.eu.clouddb.ovh.net` con la porta SQL `34567`, dovrai inserire `zz1111111-002.eu.clouddb.ovh.net:34567` nel Parte "Host" / "Nome host".
 >
 
