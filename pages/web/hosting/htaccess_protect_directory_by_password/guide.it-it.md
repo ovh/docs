@@ -15,6 +15,24 @@ updated: 2023-06-01
 
 ## Obiettivo
 
+Questa guida ti mostra come impostare un'autenticazione "utente/password" per accedere a tutto o a parte del tuo sito Web tramite un browser. 
+
+utilizzando due file di configurazione (HTTP) Apache da inserire nello [spazio FTP](/pages/web/hosting/ftp_connection/) del tuo hosting Web: 
+
+- "**.htaccess**": per maggiori informazioni sulle funzionalità di questo file, consulta il nostro tutorial sulle ["Operazioni realizzabili con un file ".htaccess"](/pages/web/hosting/htaccess_what_else_can_you_do/).
+- "**.htpasswd**": in aggiunta a questo tutorial, consulta la [documentazione ufficiale Apache](https://httpd.apache.org/docs/2.4/en/programs/htpasswd.html) relativa a questo file.
+
+> [!warning]
+>
+> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
+> 
+> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/) o di contattare l'amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
+>
+> Gli esempi che seguiranno devono essere salvati in file denominati ".htaccess" e ".htpasswd". Attenzione, le regole definite in questi file hanno conseguenze dirette sul tuo sito web. Prima di applicarle al tuo sito, verifica sistematicamente le regole che aggiungi. 
+> 
+
+**Questa guida ti mostra come proteggere una directory o l'accesso alla sezione amministratore del tuo sito Web tramite un'autenticazione con i file ".htaccess" e ".htpasswd".**
+
 ## Prerequisiti
 
 ## Procedura

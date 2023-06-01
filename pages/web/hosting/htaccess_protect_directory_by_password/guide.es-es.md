@@ -15,6 +15,24 @@ updated: 2023-06-01
 
 ## Objetivo
 
+Este tutorial explica cómo crear la autenticación "usuario/contraseña" para acceder a la totalidad o parte de su sitio web a través de un navegador de internet. 
+
+Utilizando dos archivos de configuración (HTTP) Apache que quiere situar en [el espacio FTP](/pages/web/hosting/ftp_connection/) de su alojamiento web: 
+
+- "**.htaccess**": para más información sobre las funcionalidades de este fichero, consulte nuestro tutorial sobre ["Operaciones realizables con un fichero ".htaccess"](/pages/web/hosting/htaccess_what_else_can_you_do/).
+- "**.htpasswd**": además de este tutorial, consulte la [documentación oficial de Apache](https://httpd.apache.org/docs/2.4/en/programs/htpasswd.html) relativa a este archivo.
+
+> [!warning]
+>
+La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
+> 
+> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con el editor del servicio. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
+>
+> Deberá configurar los siguientes ejemplos en archivos con los nombres ".htaccess" y ".htpasswd". Atención: Las reglas que usted establezca en estos archivos tienen consecuencias directas en su sitio web. Compruebe sistemáticamente las reglas que añade antes de aplicarlas a su sitio web. 
+> 
+
+**Descubra cómo proteger un repertorio o el acceso a la parte de administrador de su sitio web mediante autenticación con los archivos ".htaccess" y ".htpasswd".**
+
 ## Requisitos
 
 ## Procedimiento
