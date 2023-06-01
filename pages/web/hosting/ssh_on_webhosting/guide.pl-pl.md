@@ -21,6 +21,10 @@ Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej
 - Posiadanie informacji umożliwiających logowanie się do przestrzeni dyskowej za pomocą SSH.
 - Mieć dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), sekcja `Web Cloud`{.action}.
 
+> [!warning]
+> 
+> Dostęp SSH do hostingu OVHcloud jest możliwy od [oferta Pro](https://www.ovhcloud.com/pl/web-hosting/compare/).
+
 ## W praktyce
 
 ### Etap 1: upewnij się, że dostęp przez SSH jest aktywny <a name="sshcheck"></a>
@@ -59,7 +63,7 @@ Masz teraz dwie możliwości zalogowania się, w zależności od używanej przez
 
 Po otworzeniu terminala użyj następującego polecenia, zastępując elementy "yourlogin", "ssh.cluster000.hosting.ovh.net" i "22" elementami odpowiadającymi Twojemu identyfikatorowi SSH. 
 
-```ssh
+```bash
 ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 ```
 

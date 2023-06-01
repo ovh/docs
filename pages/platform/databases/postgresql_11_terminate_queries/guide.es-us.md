@@ -54,7 +54,7 @@ You can terminate a session only when you are the owner of the database.
 
 To verify your roles and grants, run the following command in `psql`:
 
-```psql
+```sql
 \l
 ```
 
@@ -75,7 +75,7 @@ Otherwise, instructions below will return an error.
 
 Once you are connected to your database, type for example:
 
-```psql
+```sql
 SELECT * FROM pg_stat_activity WHERE state <> 'idle';
 ```
 
@@ -87,7 +87,7 @@ For more information about statistics, please follow the [official documentation
 
 Now that you get the PID, you can terminate a specific query with the following command:
 
-```psql
+```sql
 SELECT pg_terminate_backend(pid);
 ```
 
@@ -99,5 +99,7 @@ As explained here, the query will disappear if you check again the statistics, b
 ## Go further
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

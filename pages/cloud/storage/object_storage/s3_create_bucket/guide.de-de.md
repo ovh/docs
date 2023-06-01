@@ -1,5 +1,5 @@
 ---
-title: Object Storage - Erstellen eines Eimers (EN)
+title: Object Storage - Bucket erstellen (EN)
 slug: s3/create-bucket
 section: General guides to start
 order: 040

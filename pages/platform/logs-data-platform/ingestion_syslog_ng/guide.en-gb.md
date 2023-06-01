@@ -187,4 +187,4 @@ The best feature is to mix criteria, based on what is important to you. For exam
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
 - Documentation: [Guides](/pages/platform/logs-data-platform){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

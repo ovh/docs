@@ -45,8 +45,8 @@ Voici un lexique rapide des termes utilisés dans ce tutoriel :
 |Lexique|Description|
 |---|---|
 |YOUR_IPV6|L’adresse IPv6 assignée à votre service|
-|IPv6_PREFIX|Le préfixe de votre bloc IPv6 (Ex: 2607:5300:60:62ac::/128 -> netmask = 128)|
-|IPv6_GATEWAY|La passerelle de votre bloc IPv6|
+|IPV6_PREFIX|Le préfixe de votre bloc IPv6 (Ex: 2607:5300:60:62ac::/128 -> netmask = 128)|
+|IPV6_GATEWAY|La passerelle de votre bloc IPv6|
 
 
 ### Récupérer les informations réseaux

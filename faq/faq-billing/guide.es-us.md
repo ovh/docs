@@ -1,9 +1,10 @@
 ---
 title: Preguntas frecuentes sobre la facturación y el pago
 excerpt: Encuentre las preguntas más frecuentes sobre la facturación y el pago
+updated: 2023-05-26
 ---
 
-**Última actualización: 08/11/2022**
+**Última actualización: 26/05/2023**
 
 ## Objetivo
 
@@ -19,7 +20,7 @@ Si desea más información sobre la gestión de los contactos, consulte nuestra 
 
 ### ¿Cómo modificar los datos de facturación?
 
-Los datos de facturación son los que haya indicado en su cuenta de de cliente. Si desea actualizarlos para sus próximas facturas, solo tiene que editarlos en la sección `Mi cuenta`{.action} del área de cliente de OVHcloud.
+Los datos de facturación son los que haya indicado en su cuenta de cliente. Si desea actualizarlos para sus próximas facturas, solo tiene que editarlos en la sección `Mi cuenta`{.action} del área de cliente de OVHcloud.
 
 Por motivos legales, no es posible modificar una factura ya emitida. No obstante, si su solicitud se debe a un error nuestro, contacte con nosotros mediante un tíquet de soporte.
 
@@ -86,6 +87,8 @@ Antes de eliminar una forma de pago, asegúrese de haber añadido otra.
 ### ¿Cuál es mi forma de pago por defecto?
 
 Puede consultar su forma de pago por defecto directamente en el panel de gestión de su área de cliente.
+
+Para cambiar su forma de pago por defecto, consulte nuestra [guía de gestión de las formas de pago](/pages/account/billing/manage-payment-methods).
 
 #### Ideas y consejos
 

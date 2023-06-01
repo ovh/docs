@@ -189,31 +189,31 @@ To configure a given service, see the page dedicated to that service.
 
 > [!tabs]      
 > Elasticsearch     
->> ``` js     
+>> ```js     
 >> {!> web/web-paas/static/files/fetch/examples/nodejs/elasticsearch !}  
 >> ```     
 > Memcached     
->> ``` js     
+>> ```js     
 >> {!> web/web-paas/static/files/fetch/examples/nodejs/memcached !}  
 >> ```     
 > MongoDB     
->> ``` js     
+>> ```js     
 >> {!> web/web-paas/static/files/fetch/examples/nodejs/mongodb !}  
 >> ```     
 > MySQL     
->> ``` js     
+>> ```js     
 >> {!> web/web-paas/static/files/fetch/examples/nodejs/mysql !}  
 >> ```     
 > PostgreSQL     
->> ``` js     
+>> ```js     
 >> {!> web/web-paas/static/files/fetch/examples/nodejs/postgresql !}  
 >> ```     
 > Redis     
->> ``` js     
+>> ```js     
 >> {!> web/web-paas/static/files/fetch/examples/nodejs/redis !}  
 >> ```     
 > Solr     
->> ``` js     
+>> ```js     
 >> {!> web/web-paas/static/files/fetch/examples/nodejs/solr !}  
 >> ```     
 

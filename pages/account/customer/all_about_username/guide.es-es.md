@@ -55,7 +55,7 @@ Consulte todas nuestras recomendaciones sobre las contraseñas en nuestra guía 
 Si todavía no lo ha hecho, guarde su contraseña en un [gestor de contraseñas](https://docs.ovh.com/es/customer/gestionar-su-contrasena/#utilizar-un-gestor-de-contrasenas).
 
 > [!primary]
-> Los programas **Keepass** y **Bitwarden** son gestores de contraseñas libres y de impuestos.
+> Los programas **KeePass** y **Bitwarden** son gestores de contraseñas libres y de impuestos.
 >
 
 #### Añadir una dirección de correo electrónico alternativa <a name="backup-email"></a>

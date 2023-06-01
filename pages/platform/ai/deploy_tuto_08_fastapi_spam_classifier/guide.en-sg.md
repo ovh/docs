@@ -377,6 +377,8 @@ Congratulations! You have obtained the result of the prediction with the **label
 - You can imagine deploying an AI model with an other tool: **Gradio**. Read this [tutorial](https://docs.ovh.com/sg/en/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/).
 - Another way to create an AI Deploy app is to use **Streamlit**! [Follow this tutorial](https://docs.ovh.com/sg/en/publiccloud/ai/deploy/tuto-streamlit-eda-iris/).
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:

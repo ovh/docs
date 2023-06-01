@@ -114,7 +114,7 @@ Wenn die SSH-Verbindung hergestellt ist, haben Sie je nach gewählter Vorgehensw
 
 Wenn Sie sich via Befehlszeile verbinden, ersetzen Sie die Elemente „sshlogin“, „sshserver“ und „connectionport“ mit den entsprechenden Angaben. Nachdem Sie den Befehl abgeschickt haben, werden Sie dazu aufgefordert, das Passwort des SSH-Benutzers einzugeben.
 
-```ssh
+```bash
 ssh sshlogin@sshserver -p connectionport
 ```
 

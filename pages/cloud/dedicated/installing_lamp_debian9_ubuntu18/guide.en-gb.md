@@ -3,7 +3,7 @@ title: Setting up a web server (LAMP) on Debian or Ubuntu
 slug: setup-lamp-debian-ubuntu
 excerpt: Find out how to configure a LAMP-based web server
 section: Tutorials
-updated: 2023-05-03
+updated: 2023-05-10
 ---
 
 ## Introduction 
@@ -46,7 +46,7 @@ Follow the respective guide to install an operating system on your OVHcloud serv
 
 After logging in to your server with SSH, ensure that all packages are up-to-date:
 
-```shell-session
+```bash
 sudo apt update && sudo apt upgrade -y
 ```
 
@@ -61,13 +61,13 @@ Now you can install the current LAMP packages.
 
 Install the Apache packages (including documentation):
 
-```shell-session
+```bash
 sudo apt install -y apache2 apache2-doc
 ```
 
 You can verify the installation with the following command:
 
-```shell-session
+```bash
 sudo systemctl status apache2
 ```
 
@@ -78,7 +78,7 @@ You can also open `http://server_IP` in a web browser. The "Apache2 Debian Defau
 
 Install the packages of MariaDB and PHP:
 
-```shell-session
+```bash
 sudo apt install -y php php-pdo php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath mariadb-server
 ```
 
@@ -88,7 +88,7 @@ MariaDB provides a script to assist with the initial configuration and to apply 
 
 To run it, enter this command:
 
-```shell-session
+```bash
 sudo mysql_secure_installation
 ```
 
@@ -104,13 +104,13 @@ It is recommended to use the proposed authentication method (*unix_socket*) inst
 
 Enter `n`{.action} at the next prompt:
 
-```console
+``` {.console}
 Change the root password? [Y/n]
 ```
 
 Since the subsequent prompts concern security measures, confirm them all with `y`{.action} until the script is finished.
 
-```console
+``` {.console}
 Reloading the privilege tables will ensure that all changes made so far
 will take effect immediately.
 
@@ -138,31 +138,33 @@ If you have configured MariaDB access in the recommended way (*unix_socket*), yo
 
 Open the MariaDB shell:
 
-```shell-session
+```bash
 sudo mariadb
 ```
-```mysql
+
+```sql
 MariaDB [(none)]> 
 ```
 
 Create a database:
 
-```mysql
+```sql
 MariaDB [(none)]> CREATE DATABASE database_name;
 ```
 
 Create a "user" with a name of your choice and grant it all rights on this database. This account can then access the database and carry out all operations for the application using this database. Replace `database_name` with the name of your database, `user_name` with a name of your choice and `password` with a strong password.
 
-```mysql
+``` {.sql}
 MariaDB [(none)]> GRANT ALL ON database_name.* TO 'user_name'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION;
 ```
 
 Ensure the changes made are applied and then exit the MariaDB shell:
 
-```mysql
+```sql
 MariaDB [(none)]> FLUSH PRIVILEGES;
 ```
-```mysql
+
+```sql
 MariaDB [(none)]> exit;
 ```
 
@@ -171,13 +173,13 @@ MariaDB [(none)]> exit;
 
 [Configuring a firewall](https://docs.ovh.com/gb/en/dedicated/firewall-iptables/) (*iptables*) will enhance the security of your server. This process can be simplified by using the frontend "Uncomplicated Firewall" (UFW) and its preset of profiles. Install UFW:
 
-```shell-session
+``` {.bash}
 sudo apt install ufw
 ```
 
 The relevant profiles are labelled as "WWW" in the application list:
 
-```shell-session
+``` {.bash}
 sudo ufw app list | grep WWW
   WWW
   WWW Cache
@@ -191,24 +193,26 @@ To see which ports are affected by a particular profile, enter `sudo ufw app inf
 
 By entering the following command, the ports defined by the profile "WWW Full" will be opened:
 
-```shell-session
+```bash
 sudo ufw allow 'WWW Full'
 ```
 
 Since all ports not explicitly allowed will be **blocked** after enabling the firewall, make sure to allow SSH connections (port 22 in a default configuration) as well:
 
-```shell-session
+```bash
 sudo ufw allow 'SSH'
 ```
 
 Finally, activate the firewall rules and verify the configuration:
 
-```shell-session
+``` {.bash}
 sudo ufw enable
 ```
-```shell-session
+
+```bash
 sudo ufw status
 ```
+
 ```console
 Status: active
 Logging: on (low)
@@ -224,7 +228,7 @@ To                         Action      From
 ```
 
 
-You can go further with UFW, for example if you want to restrict *denial of service* (DOS) attacks or prevent requests by certain IP address ranges. Please refer to the official UFW documentation.
+You can go further with UFW, for example if you want to restrict *denial of service* (DOS) attacks or prevent requests by certain IP address ranges. Please refer to the [official UFW documentation](https://help.ubuntu.com/community/UFW).
 
 
 ### Step 6: DNS configuration (optional)
@@ -250,13 +254,13 @@ First make sure that your domain name has the correct records in the DNS zone, i
 
 Install the required packages for the Certbot client:
 
-```shell-session
+```bash
 sudo apt install -y certbot python3-certbot-apache
 ```
 
 Obtain the certificate for your domain name and the "www" subdomain:
 
-```shell-session
+```bash
 sudo certbot --apache -d domainname.ovh -d www.domainname.ovh
 ```
 

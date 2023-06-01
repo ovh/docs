@@ -38,7 +38,7 @@ Por ejemplo: desea que se elimine todo email que contenga "[SPAM]" en el asunto.
 Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
 |![Correo electrónico](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> El nombre del producto aparece en el recuadro Suscripción, en el epígrafe Producto.|![Correo electrónico](images/mxplan-starter-new-step1.png){.thumbnail}<br>El nombre del producto aparece en el recuadro Resumen, en el epígrafe Referencia del servidor.|
-|Continúe leyendo esta guía en el apartado "[En la práctica](#oldmxplan)".|Para más información, consulte nuestra guía Reglas de la bandeja de entrada desde la [interfaz OWA](https://docs.ovh.com/es/microsoft-collaborative-solutions/crear-reglas-de-bandeja-de-entrada-en-owa/).|
+|Continúe leyendo esta guía en el apartado "[En la práctica](#oldmxplan)".|Para más información, consulte nuestra guía Reglas de la bandeja de entrada desde la [interfaz OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan).|
 
 ## En la práctica <a name="oldmxplan"></a>
 
@@ -81,7 +81,7 @@ Primera elección (cabecera):
 
 Segunda opción (regla):
 
-- **spf:** Indique el valor del [registro SPF](https://docs.ovh.com/es/domains/web_hosting_el_registro_spf/) que quiera tener en cuenta, por ejemplo: "... no tiene registro SPF ... ".
+- **spf:** Indique el valor del [registro SPF](/pages/web/domains/dns_zone_spf) que quiera tener en cuenta, por ejemplo: "... no tiene registro SPF ... ".
 - **contiene:** ejemplo: "... contiene ... ".
 - **no contiene:** ejemplo: "... no contiene ... ".
 
@@ -142,8 +142,8 @@ Si el asunto del mensaje contiene la palabra "money" **y el** remitente del mens
 
 ## Más información
 
-[Primeros pasos con la solución MX Plan](https://docs.ovh.com/es/emails/primeros-pasos-correo-compartido/)
+[Primeros pasos con la solución MX Plan](/pages/web/emails/email_generalities)
 
-[Reglas de la bandeja de entrada desde la interfaz OWA](https://docs.ovh.com/es/emails/crear-reglas-de-bandeja-de-entrada-en-owa/)
+[Reglas de la bandeja de entrada desde la interfaz OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

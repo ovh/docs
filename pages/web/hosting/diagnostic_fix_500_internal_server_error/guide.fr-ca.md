@@ -4,10 +4,8 @@ slug: erreur-500-internal-server-error
 excerpt: Diagnostiquez les cas les plus courants d'erreurs 500
 section: Diagnostic
 order: 06
-updated: 2022-07-21
+updated: 2023-05-16
 ---
-
-**Dernière mise à jour le 21/07/2022**
 
 ## Objectif
 
@@ -80,6 +78,11 @@ Pour des raisons de sécurité, votre site masque les détails éventuels sur l'
 
 Si vous ou votre développeur souhaitez avoir accès à ces détails, il vous est possible, à partir de la formule d’hébergement [pro2014](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/), de vous connecter à votre site via une [connexion ssh](../mutualise-le-ssh-sur-les-hebergements-mutualises/).
 
+### Vérifier l'état de la base de données
+
+Pour toute erreur 500 pouvant être en lien avec la base de données de votre site web, appuyez-vous sur notre documentation [« Résoudre les erreurs les plus fréquentes liées aux bases de données »](/pages/web/hosting/diagnosis_database_errors).
+
+
 ### Restaurer votre site à son état antérieur <a name="restore"></a>
 
 > [!warning]
@@ -95,8 +98,18 @@ Enfin, si l'erreur 500 est apparue suite à une mise à jour de la version PHP d
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Comment diagnostiquer une page blanche ?](../comment-diagnostiquer-page-blanche/)
+[Que faire si mon site est inaccessible ?](/pages/web/hosting/diagnostic-website-not-accessible)
 
-[Les codes de reponse d’un serveur HTTP](../mutualise-les-codes-de-reponse-dun-serveur-http/)
+[Que faire en cas d'erreur « Votre connexion n'est pas privée » ?](/pages/web/hosting/diagnostic-not-secured)
+
+[Que faire en cas de page « Index of » ?](/pages/web/hosting/diagnostic-index-of)
+
+[Que faire en cas de page « 403 forbidden » ?](/pages/web/hosting/diagnostic_403_forbidden)
+
+[Résoudre les erreurs les plus fréquentes liées aux bases de données](/pages/web/hosting/diagnosis_database_errors)
+
+[Mon site est lent. Que faire ?](/pages/web/hosting/diagnostic_slownesses)
+
+[Résoudre l'erreur « Site non installé »](/pages/web/hosting/multisites_website_not_installed)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

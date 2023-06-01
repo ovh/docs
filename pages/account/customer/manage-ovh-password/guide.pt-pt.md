@@ -50,7 +50,7 @@ Para ficar a saber mais, consulte a secção [Quer saber mais?](https://docs.ovh
 
 Programas específicos permitem guardar e proteger a sua palavra-passe de acesso à conta OVHcloud.
 
-Pode, por exemplo, utilizar o gestor de palavras-passe **Keepass**. Trata-se de um programa livre e gratuito.
+Pode, por exemplo, utilizar o gestor de palavras-passe **KeePass**. Trata-se de um programa livre e gratuito.
 
 O princípio é simples: uma palavra-passe principal – que deve ser suficientemente complexa, mas que tem de memorizar – permite aceder a uma base de dados que reúne todas as suas ID de utilizador e palavras-passe. Estas podem ser muito complexas porque o programa consegue lembrar-se delas.
 
@@ -119,6 +119,6 @@ Se a sua palavra-passe estiver comprometida, recomendamos vivamente que a [alter
 
 ## Quer saber mais?
 
-[O gestor de palavras-passe Keepass](https://keepass.info/){.external}
+[O gestor de palavras-passe KeePass](https://keepass.info/){.external}
 
 Fale com a nossa comunidade de utilizadores em https://community.ovh.com/en/

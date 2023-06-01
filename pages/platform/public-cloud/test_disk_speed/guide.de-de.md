@@ -52,7 +52,7 @@ root@server:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwri
 > 
 > Das Argument --numjobs muss abhängig von der Anzahl der CPUs angepasst werden, über die Ihre Instanz verfügt.
 >
-> Sie finden eine vollständige Liste der verfügbaren Argumente und Funktionen im [fio Manual](https://github.com/axboe/fio/blob/master/HOWTO).
+> Sie finden eine vollständige Liste der verfügbaren Argumente und Funktionen im [fio Manual](https://github.com/axboe/fio/blob/master/HOWTO.rst).
 >
 
 Um die Performance einer zusätzlichen Festplatte zu testen, begeben Sie sich in einen der Ordner des Mountpunkts.

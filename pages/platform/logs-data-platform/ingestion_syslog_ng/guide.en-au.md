@@ -45,7 +45,7 @@ Conclusion : lot of info, with a date, a process, a description. but hard to fol
 
 ### Configure your Account
 
-First thing to do is to configure your Logs Data Platform account: [create your user](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}, a stream and a dashboard. Verify that everything works already perfectly. We wrote an independent guide for this, please read it and come back here after : [Quick start](../quick-start){.ref} Good? let's go to following step then !
+First thing to do is to configure your Logs Data Platform account: [create your user](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}, a stream and a dashboard. Verify that everything works already perfectly. We wrote an independent guide for this, please read it and come back here after : [Quick start](../quick-start){.ref} Good? let's go to following step then !
 
 ### Install and configure a log collector
 
@@ -187,4 +187,4 @@ The best feature is to mix criteria, based on what is important to you. For exam
 - Getting Started: [Quick Start](../quick-start){.ref}
 - Documentation: [Guides](../){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

@@ -108,6 +108,8 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 - Do you want to observe the evolution of your metrics during the training of your model? Click [here](https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-weights-and-biases/)!
 - Do you want to use your YOLOv5 model in an app? [Here it is](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/web-service-yolov5/).
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:

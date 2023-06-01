@@ -1,9 +1,10 @@
 ---
 title: FAQ sobre faturação e pagamento
 excerpt: Encontre as questões mais frequentes sobre faturação e pagamento
+updated: 2023-05-26
 ---
 
-**Última atualização: 08/11/2022**
+**Última atualização: 26/05/2023**
   
 ## Objetivo
 
@@ -86,6 +87,8 @@ Antes de eliminar um método de pagamento, certifique-se de que registou uma alt
 ### Qual é o meu método de pagamento predefinido?
 
 Uma vez ligado à sua Área de Cliente, o seu método de pagamento predefinido está indicado no painel de controlo.
+
+Para alterar o seu método de pagamento predefinido, consulte o nosso [guia de gestão dos métodos de pagamento](/pages/account/billing/manage-payment-methods).
 
 #### Truques e dicas
 

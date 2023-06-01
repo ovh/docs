@@ -192,6 +192,8 @@ Learn how to access your object storage data from your notebooks [here](https://
 
 Learn how to share your notebooks with other people [here](https://docs.ovh.com/gb/en/publiccloud/ai/cli/sharing-notebooks/).
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:

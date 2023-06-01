@@ -357,8 +357,11 @@ ovhai app run \
 - You can imagine deploying an AI model with an other tool: **Gradio**. Refer to this [tutorial](https://docs.ovh.com/au/en/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/).
 - Another way to create an AI Deploy app is to use **Flask**! [Here it is](https://docs.ovh.com/au/en/publiccloud/ai/deploy/web-service-yolov5/).
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
+

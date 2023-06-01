@@ -1,9 +1,10 @@
 ---
 title: FAQ sur la facturation et le paiement
 excerpt: Retrouvez les questions les plus fréquemment posées sur la facturation et le paiement
+updated: 2023-05-26
 ---
 
-**Dernière mise à jour le 08/11/2022**
+**Dernière mise à jour le 26/05/2023**
 
 ## Objectif
 
@@ -94,6 +95,8 @@ Avant de supprimer un moyen de paiement, assurez-vous d'en avoir enregistré aut
 ### Quel est mon moyen de paiement par défaut ?
 
 Une fois connecté à votre espace client, votre moyen de paiement par défaut est directement indiqué sur votre tableau de bord.
+
+Pour changer de moyen de paiement par défaut, consultez notre guide sur la [gestion des moyens de paiement](/pages/account/billing/manage-payment-methods).
 
 #### Trucs et astuces
 

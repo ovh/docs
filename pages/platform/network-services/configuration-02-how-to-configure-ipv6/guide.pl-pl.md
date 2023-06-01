@@ -49,8 +49,8 @@ Oto krótki słowniczek terminów stosowanych w tym tutorialu:
 |Słowniczek|Opis|
 |---|---|
 |YOUR_IPV6|Adres IPv6 przypisany do Twojej usługi|
-|IPv6_PREFIX|Prefiks Twojego bloku IPv6 (np. 2607:5300:60:62ac::/128 -> netmask = 128)|
-|IPv6_GATEWAY|Brama sieciowa Twojego bloku IPv6|
+|IPV6_PREFIX|Prefiks Twojego bloku IPv6 (np. 2607:5300:60:62ac::/128 -> netmask = 128)|
+|IPV6_GATEWAY|Brama sieciowa Twojego bloku IPv6|
 
 
 ### Pobranie danych sieciowych

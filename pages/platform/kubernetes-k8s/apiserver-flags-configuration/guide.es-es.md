@@ -5,10 +5,10 @@ excerpt: 'Find out how to configure the managed components of your Kubernetes: C
 section: User guides
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/apiserver-flags-configuration/'
-updated: 2023-02-14
+updated: 2023-05-22
 ---
 
-**Last updated 14th February 2023**
+**Last updated 22nd May 2023**
 
 <style>
  pre {
@@ -101,6 +101,11 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/projec
     }
 }
 ```
+
+> [!primary]
+>
+> `kubeProxy` can't be edited. You can define it only at the cluster creation step.
+>
 
 - Create a Kubernetes cluster in the GRA5 region while disabling the "AlwaysPullImages" admission plugin:
 
@@ -491,4 +496,4 @@ To learn more about how to use your Kubernetes cluster the practical way, we inv
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-- Join our[community of users](https://community.ovh.com/en/).
+- Join our [community of users](https://community.ovh.com/en/).

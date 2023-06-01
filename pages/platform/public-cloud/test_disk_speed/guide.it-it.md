@@ -52,7 +52,7 @@ root@server:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwri
 >
 > È necessario adattare l'argomento --numjobs al numero di CPU della tua istanza.
 >
-> Per visualizzare la lista completa degli argomenti e la loro funzione, consulta il [manuale fio](https://github.com/axboe/fio/blob/master/HOWTO).
+> Per visualizzare la lista completa degli argomenti e la loro funzione, consulta il [manuale fio](https://github.com/axboe/fio/blob/master/HOWTO.rst).
 >
 
 Per testare le performance di un disco aggiuntivo, è necessario cambiare la directory del tuo ambiente di lavoro.

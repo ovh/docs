@@ -173,13 +173,13 @@ Avoir un **« trigger »** dans votre script n'est, par exemple, pas autorisé s
 
 Par ailleurs, la requête suivante n'est pas autorisée :
 
-```mysql
+```sql
 CREATE DATABASE IF NOT EXISTS `Database-Name` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
 ```
 
 Remplacez-la par :
 
-```mysql
+```sql
 USE `Database-Name`;
 ```
 

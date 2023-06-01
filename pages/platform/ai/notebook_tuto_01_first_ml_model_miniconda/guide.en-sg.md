@@ -100,6 +100,8 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 - If you want to learn more about the field of **Computer vision** and **Image Classification**, check out this [notebook](https://docs.ovh.com/sg/en/publiccloud/ai/notebooks/tuto-transfer-learning-resnet/).
 - If you are interested in **NLP** (Natural Language Processing), familiarise yourself with speech to text by following this [tutorial](https://docs.ovh.com/sg/en/publiccloud/ai/notebooks/tuto-speech-to-text-recognition/).
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:

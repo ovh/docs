@@ -264,6 +264,8 @@ ovhai bucket object download fashion_MNIST_dataset@GRA model.net
 - If you are interested in **deploying your model** in a Python app, discover AI Deploy by following this [tutorial](https://docs.ovh.com/us/en/publiccloud/ai/deploy/build-use-streamlit-image/).
 - If you want learn about Docker, check out this [tutorial](https://docs.ovh.com/us/en/publiccloud/ai/training/build-use-custom-image/).
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:

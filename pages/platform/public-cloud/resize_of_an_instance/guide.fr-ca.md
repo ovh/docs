@@ -5,10 +5,10 @@ excerpt: "Découvrez comment redimensionner une instance depuis l'interface Hori
 legacy_guide_number: 1778
 section: Gestion depuis Horizon
 order: 13
-updated: 2021-11-22
+updated: 2023-05-24
 ---
 
-**Dernière mise à jour le 17/11/2021**
+**Dernière mise à jour le 24/05/2023**
 
 ## Objectif
 
@@ -21,6 +21,11 @@ En raison d'une activité accrue, ou simplement de nouveaux besoins, votre insta
 > Seul le redimensionnement vers un modèle supérieur est possible pour les modèles classiques.
 > De plus, cette manipulation entraine une coupure de l'instance le temps de l'opération.
 > 
+
+> [!warning]
+>
+> Les instances Metal ne peuvent être redimensionnées que depuis et vers d'autres instances Metal.
+>
 
 > [!success]
 >
@@ -67,7 +72,7 @@ Une fois la configuration terminée, cliquez sur `Resize`{.action}.
 
 ### Redimensionnement du disque sous Windows
 
-Attention, lors d'un redimensionnement pour une Instance Windows, la taille de la partition n'est pas automatiquement mise à jour, il faudra donc étendre celle ci en utilisant le  **gestionnaire de disque**  :
+Attention, lors d'un redimensionnement pour une Instance Windows, la taille de la partition n'est pas automatiquement mise à jour, il faudra donc étendre celle ci en utilisant le  **gestionnaire de disque** :
 
 - Faites un clic droit sur le menu `Démarrer`{.action} et lancez le gestionnaire de disque en cliquant sur `Gestion du disque`{.action} :
 

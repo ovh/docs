@@ -6,10 +6,10 @@ routes:
 excerpt: 'Discover the technical specifications of the OVHcloud SMPP solution'
 section: SMPP
 order: 02
-updated: 2023-03-31
+updated: 2023-05-22
 ---
 
-**Last updated 31st March 2023**
+**Last updated 22nd May 2023**
 
 ## Objective
 
@@ -269,6 +269,7 @@ Our service will attempt to send the `deliver_sm` to ESME for up to 7 days.
 |100 | Invalid Destination Numbering Plan |
 |101 | Invalid Content |
 |102 | Invalid GSM7 Coding (e.g. error with packed/unpacked GSM7) |
+|103 | Message too long for the number of allowed segments |
 |254 | Pending |
 |255 | Unknown Error |
 |800 | Undeliverable |

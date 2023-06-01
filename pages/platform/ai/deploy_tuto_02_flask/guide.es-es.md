@@ -200,6 +200,8 @@ Once the app is running you can access your Flask application directly from the 
 - To go further with **Flask**, imagine creating an app to deploy an Object Detection model. Refer to this [tutorial](https://docs.ovh.com/es/publiccloud/ai/deploy/web-service-yolov5/).
 - **Flask** allows you to do sentiment classification on texts using Hugging Face models. [Here it is](https://docs.ovh.com/es/publiccloud/ai/deploy/tuto-flask-hugging-face-sentiment-analysis/).
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:

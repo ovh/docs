@@ -218,5 +218,5 @@ The only place you cannot use your token is the Graylog Web Interface.
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
 - Documentation: [Guides](/pages/platform/logs-data-platform){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
 

@@ -114,7 +114,7 @@ Po ustanowieniu połączenia SSH i w zależności od wybranej metody możesz zal
 
 W tym drugim przypadku użyj następującego polecenia. Zastąp elementy „sshlogin”, „sshserver” oraz „connectionport” danymi odpowiadającymi Twojemu przypadkowi. Po wysłaniu polecenia zostaniesz poproszony o wpisanie hasła użytkownika SSH.
 
-```ssh
+```bash
 ssh sshlogin@sshserver -p connectionport
 ```
 

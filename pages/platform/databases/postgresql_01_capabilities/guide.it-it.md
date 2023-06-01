@@ -6,10 +6,10 @@ section: PostgreSQL - Guides
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/capabilities/'
-updated: 2023-05-03
+updated: 2023-05-23
 ---
 
-**Last updated May 3rd, 2023**
+**Last updated May 23rd, 2023**
 
 ## Objective
 
@@ -161,6 +161,8 @@ You can further customise your PostgreSQL by using advanced parameters. See the 
 
 *Enterprise* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 30 days.
 
+See the [Automated Backups guide](/pages/platform/databases/databases_05_automated_backups) for more information.
+
 #### Logs and metrics
 
 Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your PostgreSQL logs in Opensearch and metrics in Grafana. See the [Cross Service Integration documentation](/pages/platform/databases/databases_07_cross_service_integration) for more information.
@@ -178,5 +180,7 @@ You can't select specific privileges.
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/it/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!
