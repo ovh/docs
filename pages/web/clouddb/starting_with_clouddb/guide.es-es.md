@@ -4,7 +4,7 @@ slug: empezar-con-clouddb
 excerpt: 'Cómo empezar a utilizar la solución Cloud Databases'
 section: 'Primeros pasos'
 order: 01
-updated: 2023-02-15
+updated: 2023-05-31
 ---
 
 > [!primary]
