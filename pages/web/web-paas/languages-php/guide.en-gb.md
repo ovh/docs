@@ -243,35 +243,35 @@ The individual service pages have more information on configuring each service.
 > [!tabs]      
 > Elasticsearch     
 >> ``` php     
->> {!> web/web-paas/static/files/fetch/examples/php/elasticsearch !}  
+>> {!> /pages/web/web-paas/static/files/fetch/examples/php/elasticsearch !}  
 >> ```     
 > Memcached     
 >> ``` php     
->> {!> web/web-paas/static/files/fetch/examples/php/memcached !}  
+>> {!> /pages/web/web-paas/static/files/fetch/examples/php/memcached !}  
 >> ```     
 > MongoDB     
 >> ``` php     
->> {!> web/web-paas/static/files/fetch/examples/php/mongodb !}  
+>> {!> /pages/web/web-paas/static/files/fetch/examples/php/mongodb !}  
 >> ```     
 > MySQL     
 >> ``` php     
->> {!> web/web-paas/static/files/fetch/examples/php/mysql !}  
+>> {!> /pages/web/web-paas/static/files/fetch/examples/php/mysql !}  
 >> ```     
 > PostgreSQL     
 >> ``` php     
->> {!> web/web-paas/static/files/fetch/examples/php/postgresql !}  
+>> {!> /pages/web/web-paas/static/files/fetch/examples/php/postgresql !}  
 >> ```     
 > RabbitMQ     
 >> ``` php     
->> {!> web/web-paas/static/files/fetch/examples/php/rabbitmq !}  
+>> {!> /pages/web/web-paas/static/files/fetch/examples/php/rabbitmq !}  
 >> ```     
 > Redis     
 >> ``` php     
->> {!> web/web-paas/static/files/fetch/examples/php/redis !}  
+>> {!> /pages/web/web-paas/static/files/fetch/examples/php/redis !}  
 >> ```     
 > Solr     
 >> ``` php     
->> {!> web/web-paas/static/files/fetch/examples/php/solr !}  
+>> {!> /pages/web/web-paas/static/files/fetch/examples/php/solr !}  
 >> ```     
 
 
