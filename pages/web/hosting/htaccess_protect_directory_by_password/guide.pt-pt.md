@@ -35,6 +35,10 @@ Isto utilizando dois ficheiros de configuração (HTTP) Apache que pretende colo
 
 ## Requisitos
 
+- Ter um [serviço de alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Dispor de credenciais de acesso ao [espaço FTP do seu alojamento](/pages/web/hosting/ftp_connection/).
+
 ## Instruções
 
 ## Quer saber mais? <a name="go-further"></a>

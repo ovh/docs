@@ -31,6 +31,10 @@ You can do this by using two Apache configuration files (HTTP) to place in [the 
 
 ## Requirements
 
+- You must have a [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).
+- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- You must have the login details for [your web hosting plan’s FTP space](/pages/web/hosting/ftp_connection/).
+
 ## Instructions
 
 ## Go further <a name="go-further"></a>
