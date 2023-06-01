@@ -109,7 +109,7 @@ Na nova página, insira o seu identificador FTP e a respetiva palavra-passe. Se 
 
 #### 2. Ligação através de um software FTP <a name="ftpsoftware"></a>
 
-Depois de instalar o software FTP à sua escolha no seu computador (como [FileZilla](/pages/web/hosting/ftp_filezilla_user_user_guide/) ou [Cyberduck](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac/), inicie-o. 
+Depois de instalar o software FTP à sua escolha no seu computador (como [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide/) ou [Cyberduck](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac/), inicie-o. 
 
 Deverá encontrar campos específicos onde inserir as informações de ligação. 
 

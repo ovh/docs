@@ -173,7 +173,7 @@ Wenn nötig lesen Sie unsere Anleitung "[SSH-Verbindung auf einem Webhosting ver
 
 [PuTTY verwenden, um sich via SSH zu verbinden](/pages/web/hosting/ssh_using_putty_on_windows/)
 
-[Webhosting: FileZilla verwenden](pages/web/hosting/ftp_filezilla_user_guide/)
+[Webhosting: FileZilla verwenden](/pages/web/hosting/ftp_filezilla_user_guide/)
 
 [Verwenden Sie Cyberduck mit Ihrem Webhosting](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac/)
 

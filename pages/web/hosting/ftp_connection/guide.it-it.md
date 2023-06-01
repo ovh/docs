@@ -161,7 +161,7 @@ Una volta inviato il comando, ti verrà chiesto di inserire la password dell'ute
 
 Se le informazioni sono corrette, verrà effettuato l'accesso allo spazio di storage FTP. 
 
-Se necessario, consulta la guida "Utilizzare una connessione SSH su un hosting Web](/pagine/web/hosting/ssh_on_webhosting/)".
+Se necessario, consulta la guida "[Utilizzare una connessione SSH su un hosting Web](/pages/web/hosting/ssh_on_webhosting/)".
 
 ![ftpconnect](images/connect-ftp-step5.png){.thumbnail}
 
