@@ -22,7 +22,31 @@ Si vous avez reçu un e-mail indiquant que l'une de vos adresses e-mail est bloq
 
 ## En pratique
 
-### Étape 1 : vérifier le statut de l'adresse e-mail et accéder au ticket d'assistance associé
+### Étape 1 : Comprendre pourquoi votre adresse e-mail est bloqué pour SPAM
+
+Lorsque votre adresse e-mail est bloqué pour SPAM, cela signifie qu'une activité suspecte a été détecté au niveau de l'envoi des e-mail depuis cette adresse. Dans cette situation vous ne pouvez plus envoyer d'e-mail depuis cette adresse e-mail.
+
+Si les envois mentionnés dans les en-têtes n'ont pas été initiés par le ou les utilisateurs légitimes de l'adresse e-mail, nous vous invitons à prendre les mesures ci-dessous:
+
+- Effectuer une analyse antivirus de chacun des postes utilisant l'adresse e-mail bloquée pour spam et appliquer un correctif si ces derniers sont infectés.
+
+- Vérifier tous les logiciels utilisant les identifiants de l'adresse e-mail bloquée pour spam (Exemple: télécopieur, logiciel métier, logiciel de messagerie).
+
+- Modifier le mot de passe de l'adresse e-mail, après avoir effectué l'analyse antivirus, en veillant à ce qu'il soit suffisamment fort. Vous pouvez utiliser [l'outil de création de mot de passe solide](https://www.cnil.fr/fr/generer-un-mot-de-passe-solide) de la CNIL.
+
+### Étape 2 : répondre aux trois questions posées
+
+> [!warning]
+>
+> Le déblocage de l'adresse e-mail ne se fait pas automatiquement. Il est nécessaire de contacter le support, sur le ticket d'assistance, en répondant aux 3 questions posées.
+
+- **Êtes-vous l'émetteur de l'e-mail en question ?** : à l'aide des en-têtes fournis, vérifiez l'expéditeur, le destinataire ainsi que l'objet du message pour vérifier s'il s'agit bien de l'un de vos messages.
+
+- **Avez-vous une règle de redirection vers une autre adresse e-mail ?** : vérifiez les règles de boîte de réception de votre adresse e-mail pour vous assurer que des e-mails non-désirés n'ont pas été redirigés vers une autre adresse.
+
+- **Avez-vous répondu à un spam ?** : en effet, le simple fait d'avoir répondu à un spam contribue à dégrader la réputation des serveurs d'envoi d'e-mails mais aussi de votre nom de domaine.
+
+### Étape 3 : vérifier le statut de l'adresse e-mail et accéder au ticket d'assistance associé
 
 #### Pour une adresse e-mail Exchange
 
@@ -36,7 +60,7 @@ Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la 
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Webcloud`{.action}. Cliquez sur `E-mail Pro`{.action} puis sélectionnez la plateforme E-mail Pro concernée.
 
-Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la colonne « statut » à droite de l'adresse e-mail concernée mentionne « Spam », cliquez sur cette mention puis sur `Répondre au ticket`{.action}. Passez ensuite à  [l'étape 2](./#etape-2-acceder-au-ticket-dassistance_1){.external} du guide.
+Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la colonne « statut » à droite de l'adresse e-mail concernée mentionne « Spam », cliquez sur cette mention puis sur `Répondre au ticket`{.action}. Passez ensuite à [l'étape 2](./#etape-2-acceder-au-ticket-dassistance_1){.external} du guide.
 
 ![spam](images/blocked-for-SPAM-01-02.png){.thumbnail}
 
@@ -49,7 +73,7 @@ Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la 
 ![spam](images/blocked-for-SPAM-01-03.png){.thumbnail}
 
 
-### Étape 2 : accéder au ticket d'assistance
+### Étape 4 : accéder au ticket d'assistance
 
 Suite à l'étape 1, vous serez alors redirigé vers la fenêtre « Mes demandes d'assistance ». Cliquez sur `...`{.action} à droite du ticket mentionnant l'objet « Account locked for spam.», puis cliquez sur `Voir le détail`{.action}. 
 
@@ -84,30 +108,6 @@ Le ticket d'assistance qui a été créé se présente comme ci-dessous :
 Dans la continuité de ce message, un échantillon d'en-têtes des e-mails envoyés vous a été transmis.
 
 Ces en-têtes permettent de déterminer le cheminement et l'origine des e-mails envoyés.
-
-### Étape 3 : répondre aux trois questions posées
-
-> [!warning]
->
-> Le déblocage de l'adresse e-mail ne se fait pas automatiquement. Il est nécessaire de contacter le support, sur le ticket d'assistance, en répondant aux 3 questions posées.
-
-- **Êtes-vous l'émetteur de l'e-mail en question ?** : à l'aide des en-têtes fournis, vérifiez l'expéditeur, le destinataire ainsi que l'objet du message pour vérifier s'il s'agit bien de l'un de vos messages.
-
-- **Avez-vous une règle de redirection vers une autre adresse e-mail ?** : vérifiez les règles de boîte de réception de votre adresse e-mail pour vous assurer que des e-mails non-désirés n'ont pas été redirigés vers une autre adresse.
-
-- **Avez-vous répondu à un spam ?** : en effet, le simple fait d'avoir répondu à un spam contribue à dégrader la réputation des serveurs d'envoi d'e-mails mais aussi de votre nom de domaine.    
-
-
-### Étape 4 : mesures à prendre en cas d'accès frauduleux à votre adresse e-mail
-
-Si les envois mentionnés dans les en-têtes n'ont pas été initiés par le ou les utilisateurs légitimes de l'adresse e-mail, nous vous invitons à prendre les mesures ci-dessous:
-
-- Effectuer une analyse antivirus de chacun des postes utilisant l'adresse e-mail bloquée pour spam et appliquer un correctif si ces derniers sont infectés.
-
-- Vérifier tous les logiciels utilisant les identifiants de l'adresse e-mail bloquée pour spam (Exemple: télécopieur, logiciel métier, logiciel de messagerie).
-
-- Modifier le mot de passe de l'adresse e-mail, après avoir effectué l'analyse antivirus, en veillant à ce qu'il soit suffisamment fort. Vous pouvez utiliser [l'outil de création de mot de passe solide](https://www.cnil.fr/fr/generer-un-mot-de-passe-solide) de la CNIL.
-
 
 ## Aller plus loin
 
