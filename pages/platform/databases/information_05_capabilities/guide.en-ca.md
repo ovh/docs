@@ -4,12 +4,12 @@ excerpt: Discover the capabilities and limitations of Public Cloud Databases
 updated: 2023-06-01
 ---
 
-## Public cloud databases
+## Public Cloud Databases
 
 With our managed database services, we take care of the database infrastructure and administration, including set-up, backup, scalability and security.
 Choose from a large portfolio of popular engines.
 
-We continuously improve our offers. You can follow and submit ideas to add to our roadmap at https://github.com/ovh/public-cloud-roadmap/projects/2.
+We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
 
 ## Database Engines
 
