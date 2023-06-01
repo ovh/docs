@@ -15,7 +15,8 @@ This page provides an overview of the technical limitations of the S3 Object Sto
 
 ### Maximum number of buckets per project
 
-100
+- 100 (default)
+- 1000 (requires manual intervention, please contact support team)
 
 ### Maximum number of objects in a bucket
 
@@ -31,9 +32,17 @@ Unlimited
 
 ### Maximum size per object / mpu / part
 
-- Maximum 5 GB per object
+#### Via a single PUT
+
+Maximum 5 GB per object (for objects whose size is above 5GB, use a multi-part upload)
+
+#### Via a multi-part upload (MPU)
+
+- size for a part must be between 5MB (minimum) and 5GB (maximum)
 - 10000 parts maximum in a mpu
-- 5MB is the minimum size for a part
+
+The theoretical maximum size of a single large object uploaded via MPU is thus 48TB.     
+
 
 ### Maximum number of user accounts per project
 
