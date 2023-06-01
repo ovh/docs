@@ -59,9 +59,9 @@ The cors.json file contains the following configuration:
 {
    "CORSRules": [
         {
-            "AllowedHeaders": ["header1", "header2", ...etc],
-            "AllowedMethods": ["GET", "HEAD", ...etc],
-            "AllowedOrigins": ["https://<origin-domain>", ...etc],
+            "AllowedHeaders": ["header1", "header2", etc.],
+            "AllowedMethods": ["GET", "HEAD", etc.],
+            "AllowedOrigins": ["https://<origin-domain>", etc.],
             "ExposeHeaders": ["Access-Control-Allow-Origin"]
         }
    ]

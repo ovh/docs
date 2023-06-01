@@ -1,5 +1,5 @@
 ---
-title: Object Storage - Setting up CORS on S3 Object Storage
+title: Object Storage - Instalación de CORS en el Object Storage S3 (EN)
 excerpt: Learn how to enable and configure CORS on your buckets
 updated: 2023-05-30
 routes:
@@ -61,9 +61,9 @@ The cors.json file contains the following configuration:
 {
    "CORSRules": [
         {
-            "AllowedHeaders": ["header1", "header2", ...etc],
-            "AllowedMethods": ["GET", "HEAD", ...etc],
-            "AllowedOrigins": ["https://<origin-domain>", ...etc],
+            "AllowedHeaders": ["header1", "header2", etc.],
+            "AllowedMethods": ["GET", "HEAD", etc.],
+            "AllowedOrigins": ["https://<origin-domain>", etc.],
             "ExposeHeaders": ["Access-Control-Allow-Origin"]
         }
    ]
