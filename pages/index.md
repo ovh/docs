@@ -548,6 +548,7 @@
             + [DBMS lifecycle policy](platform/databases/information_02_lifecycle_policy)
             + [Responsibility model](platform/databases/information_03_shared_responsibility)
             + [FAQ Public Cloud databases](platform/databases/information_04_faq)
+            + [Public Cloud Databases - Capabilities and Limitations](platform/databases/information_05_capabilities)
         + [General guides](public-cloud-databases-general-guides)
             + [Getting started with Public Cloud Databases](platform/databases/databases_01_order_control_panel)
             + [Getting started with Public Cloud Databases via API](platform/databases/databases_02_order_api)
