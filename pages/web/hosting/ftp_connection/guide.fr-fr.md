@@ -116,7 +116,6 @@ Vous devriez retrouver des champs spécifiques où renseigner les informations d
 
 Voici un rappel des informations que vous devrez y renseigner :
 
-
 - **Serveur FTP et SFTP** : adresse du serveur FTP permettant d'accéder à votre espace de stockage FTP. Selon le logiciel utilisé, la dénomination peut ressembler à : « Serveur », « Adresse de serveur », « Hôte », « Nom d'hôte », ou encore « Host ».
 - **Login principal** : identifiant permettant d'accéder à votre espace de stockage FTP. Selon le logiciel utilisé, la dénomination peut ressembler à : « Utilisateur », « Nom d'utilisateur », « Identifiant », « Login », ou encore « Username ».
 - **Mot de passe de l'utilisateur FTP** : mot de passe associé au login FTP. Selon le logiciel utilisé, la dénomination peut ressembler à « Mot de passe » ou « Password ».
