@@ -1,7 +1,7 @@
 ---
 title : Object Storage - Activer HTTPS sur un site web S3 statique en utilisant un domaine personnalisé
 excerpt: Découvrez comment configurer votre site web et le Load Balancer OVHcloud pour activer le HTTPS
-updated : 2023-05-15
+updated: 2023-05-15
 ---
 
 ## Objectif
