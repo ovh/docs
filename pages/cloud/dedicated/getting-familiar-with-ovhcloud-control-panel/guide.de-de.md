@@ -119,4 +119,6 @@ Hier einige zusätzliche Anleitungen, die Ihnen bei Ihren ersten Schritten helfe
 [SSH-Schlüssel erzeugen](https://docs.ovh.com/de/dedicated/ssh-schluessel-erzeugen/).<br>
 [Was sind die IP-Adressen des OVHcloud Monitorings?](https://docs.ovh.com/de/dedicated/monitoring-ip-ovh/).
 
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

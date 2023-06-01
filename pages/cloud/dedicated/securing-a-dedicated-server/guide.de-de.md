@@ -267,4 +267,6 @@ Für weitere Informationen zu unseren Storage-Angeboten lesen Sie [unsere Anleit
 
 [Network Firewall](https://docs.ovh.com/de/dedicated/firewall-network/)
 
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -89,4 +89,6 @@ Aby uzyskać dostęp do zawartości tego pliku w trybie Rescue, postępuj zgodni
 
 [Konfiguracja firewalla w systemie Windows](https://docs.ovh.com/pl/dedicated/firewall-windows/)
 
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
