@@ -38,7 +38,7 @@ Zum Beispiel: Sie können jede E-Mail, die von unserem Spamschutz als Spam marki
 MX Plan Legacy|MX Plan neuere Version|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Die Angebotsbezeichnung steht in der Box "Abo".|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Die `Server-Referenz` befindet sich in der Box "Zusammenfassung".|
-|Lesen Sie weiter in dieser `[Anleitung](#oldmxplan)`.|Fahren Sie fort mit unserer Anleitung zu [Posteingangsregeln in OWA](https://docs.ovh.com/de/microsoft-collaborative-solutions/posteingangsregeln-in-owa-erstellen/).|
+|Lesen Sie weiter in dieser `[Anleitung](#oldmxplan)`.|Fahren Sie fort mit unserer Anleitung zu [Posteingangsregeln in OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan).|
 
 ## In der praktischen Anwendung <a name="oldmxplan"></a>
 

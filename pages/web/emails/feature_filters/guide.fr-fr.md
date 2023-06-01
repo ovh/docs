@@ -34,7 +34,7 @@ Par exemple : vous souhaitez que tout e-mail contenant « [SPAM] » dans le suje
 Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé »|
-|Poursuivez la lecture de ce guide à partir de la section « [En pratique](#oldmxplan) ».|Poursuivez vers notre guide « [Règles de boîte de réception depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/regles-boite-de-reception-owa/) ».|
+|Poursuivez la lecture de ce guide à partir de la section « [En pratique](#oldmxplan) ».|Poursuivez vers notre guide « [Règles de boîte de réception depuis l’interface OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan) ».|
 
 ## En pratique <a name="oldmxplan"></a>
 
@@ -77,7 +77,7 @@ Premier choix (en-tête) :
 
 Deuxième choix (règle) :
 
-- **spf :** Indiquez une valeur du [champ SPF](https://docs.ovh.com/fr/domains/le-champ-spf/) à prendre en compte, par exemple : « ... n'a pas de champ SPF ... ».
+- **spf :** Indiquez une valeur du [champ SPF](/pages/web/domains/dns_zone_spf) à prendre en compte, par exemple : « ... n'a pas de champ SPF ... ».
 - **contient :** exemple : « ... contient ... ».
 - **ne contient pas :** exemple : « ... ne contient pas ... ».
 
@@ -138,8 +138,8 @@ Si le sujet du message contient le mot « money », **et que** l'expéditeur du 
 
 ## Aller plus loin
 
-[Premiers pas avec l’offre MX Plan](https://docs.ovh.com/fr/emails/generalites-sur-les-emails-mutualises/)
+[Premiers pas avec l’offre MX Plan](/pages/web/emails/email_generalities)
 
-[Règles de boîte de réception depuis l’interface OWA](https://docs.ovh.com/fr/emails/regles-boite-de-reception-owa-mx-plan/)
+[Règles de boîte de réception depuis l’interface OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
