@@ -1,7 +1,9 @@
 ---
-title: Object Storage - Setting up CORS on S3 Object Storage
+title: Object Storage - Ustawianie funkcji CORS w Object Storage S3 (EN)
 excerpt: Learn how to enable and configure CORS on your buckets
 updated: 2023-05-30
+routes:
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-storage-s3-cors?id=kb_article_view&sysparm_article=KB0058275'
 ---
 
 ## Objective
