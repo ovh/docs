@@ -4,7 +4,7 @@ slug: pierwsze-kroki-z-clouddb
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z rozwiązania Web Cloud Databases'
 section: 'Pierwsze kroki'
 order: 01
-updated: 2023-02-15
+updated: 2023-05-31
 ---
 
 > [!primary]
