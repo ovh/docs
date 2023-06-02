@@ -62,4 +62,6 @@ Aby cofnąć dostęp, kliknij przycisk `...`{.action} i wybierz `Usuń`{.action}
 
 [Parametry dostępu i bezpieczeństwa w Horizon](https://docs.ovh.com/pl/public-cloud/access_and_security_in_horizon/)
 
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
