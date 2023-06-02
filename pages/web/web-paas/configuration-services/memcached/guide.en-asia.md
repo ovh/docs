@@ -102,20 +102,16 @@ You can then use the service in a configuration file of your application with so
 
 > [!tabs]      
 > Go     
->> ``` go     
->> {!> web/web-paas/static/files/fetch/examples/golang/memcached !}  
->> ```     
+>> [Memcached - Go](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/golang/memcached)  
+>>      
 > Java     
->> ``` java     
->> {!> web/web-paas/static/files/fetch/examples/java/memcached !}  
->> ```     
+>> [Memcached - Java](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/java/memcached)  
+>>      
 > PHP     
->> ``` php     
->> {!> web/web-paas/static/files/fetch/examples/php/memcached !}  
->> ```     
+>> [Memcached - PHP](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/memcached)  
+>>      
 > Python     
->> ``` python     
->> {!> web/web-paas/static/files/fetch/examples/python/memcached !}  
->> ```     
+>> [Memcached - Python](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/memcached)  
+>>      
 
 

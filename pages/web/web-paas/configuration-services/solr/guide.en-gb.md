@@ -100,21 +100,17 @@ You can then use the service in a configuration file of your application with so
 
 > [!tabs]      
 > Go     
->> ``` go     
->> {!> web/web-paas/static/files/fetch/examples/golang/solr !}  
->> ```     
+>> [Solr - Go](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/golang/solr)  
+>>      
 > Java     
->> ``` java     
->> {!> web/web-paas/static/files/fetch/examples/java/solr !}  
->> ```     
+>> [Solr - Java](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/java/solr)  
+>>      
 > PHP     
->> ``` php     
->> {!> web/web-paas/static/files/fetch/examples/php/solr !}  
->> ```     
+>> [Solr - PHP](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/solr)  
+>>      
 > Python     
->> ``` python     
->> {!> web/web-paas/static/files/fetch/examples/python/solr !}  
->> ```     
+>> [Solr - Python](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/solr)  
+>>      
 
 ## Solr 4
 

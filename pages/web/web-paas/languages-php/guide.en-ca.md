@@ -266,8 +266,6 @@ The individual service pages have more information on configuring each service.
 >> [PHP - Solr](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/solr)
 >>
 
-
-
 [Composer library](https://github.com/platformsh/config-reader-php)
 
 ## Runtime configuration
