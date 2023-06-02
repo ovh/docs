@@ -200,5 +200,5 @@ We have only scratched the surface of what Logs Data Platform can do for you. yo
 - [Using OpenSearch Dashboards and aliases to unleash the power of OpenSearch](/pages/platform/logs-data-platform/visualization_opensearch_dashboards){.ref}
 - If you want to master Graylog, this is the place to go: [Graylog documentation](https://docs.graylog.org/docs/queries){.external}
 - Documentation: [Guides](/pages/platform/logs-data-platform){.ref}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)))
 - Join our community of users on [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
