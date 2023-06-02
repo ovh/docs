@@ -662,4 +662,6 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 
 [Creating multiple vLANs in a vRack](https://docs.ovh.com/ie/en/dedicated/multiple-vlans/)
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
 Join our community of users on <https://community.ovh.com/en/>.
