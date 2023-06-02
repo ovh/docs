@@ -67,7 +67,7 @@
     + [Responsibility sharing](account-and-service-management-responsibility-sharing)
         + [Dedicated servers - Shared Responsibility](account/responsibility-sharing/dedicated-servers)
         + [Hosted Private Cloud powered by VMware - Shared Responsibility](cloud/private-cloud/responsibility-sharing)
-        + [Logs Data Platform - Shared Responsibility](platform/logs-data-platform/responsibility-model)
+        + [Logs Data Platform - Shared Responsibility](platform/logs-data-platform/getting_started_responsibility_model)
         + [Public Cloud Instances - Shared Responsibility](platform/public-cloud/responsibility-model-instances)
         + [Public Cloud Databases - Shared Responsibility](platform/databases/information_03_shared_responsibility)
         + [Public Cloud Block Storage - Shared Responsibility](platform/public-cloud/responsibility-model-block-storage)
