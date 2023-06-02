@@ -240,41 +240,31 @@ $ php-fpm-status --socket=unix://$SOCKET --path=/-/status --full
 To access various [services](../configuration-services) with PHP, see the following examples.
 The individual service pages have more information on configuring each service.
 
-> [!tabs]      
-> Elasticsearch     
->> ``` php     
->> {!> /pages/web/web-paas/static/files/fetch/examples/php/elasticsearch !}  
->> ```     
+> [!tabs]
+> Elasticsearch
+>> [PHP - Elasticsearch](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/elasticsearch)
+>>
 > Memcached     
->> ``` php     
->> {!> /pages/web/web-paas/static/files/fetch/examples/php/memcached !}  
->> ```     
+>> [PHP - Memcached](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/memcached)
+>>
 > MongoDB     
->> ``` php     
->> {!> /pages/web/web-paas/static/files/fetch/examples/php/mongodb !}  
->> ```     
+>> [PHP - MongoDB](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/mongodb)
+>>
 > MySQL     
->> ``` php     
->> {!> /pages/web/web-paas/static/files/fetch/examples/php/mysql !}  
->> ```     
+>> [PHP - MySQL](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/mysql)
+>>
 > PostgreSQL     
->> ``` php     
->> {!> /pages/web/web-paas/static/files/fetch/examples/php/postgresql !}  
->> ```     
+>> [PHP - PostgreSQL](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/postgresql)
+>>
 > RabbitMQ     
->> ``` php     
->> {!> /pages/web/web-paas/static/files/fetch/examples/php/rabbitmq !}  
->> ```     
+>> [PHP - RabbitMQ](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/rabbitmq)
+>>
 > Redis     
->> ``` php     
->> {!> /pages/web/web-paas/static/files/fetch/examples/php/redis !}  
->> ```     
+>> [PHP - Redis](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/redis)
+>>
 > Solr     
->> ``` php     
->> {!> /pages/web/web-paas/static/files/fetch/examples/php/solr !}  
->> ```     
-
-
+>> [PHP - Solr](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/solr)
+>>
 
 [Composer library](https://github.com/platformsh/config-reader-php)
 
