@@ -361,7 +361,7 @@ Here are some links to help you go further with Logstash
 
 - [Logstash official documentation](https://www.elastic.co/guide/en/logstash/current/index.html){.external}
 - [Grok filters documentation](https://www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html){.external}
-- [Logstash + Groks + Filebeat = Awesome](../filebeat-logs){.ref}
+- [Logstash + Groks + Filebeat = Awesome](/pages/platform/logs-data-platform/ingestion_filebeat)
 - [Grok Constructor](http://grokconstructor.appspot.com/do/match){.external}
 - [A Ruby regular expression editor](https://rubular.com/){.external}
 

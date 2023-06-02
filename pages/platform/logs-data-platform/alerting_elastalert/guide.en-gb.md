@@ -36,7 +36,7 @@ In order to deploy ElastAlert, it is important that you have data on which you w
 
 ![Alias creation](images/alias.png){.thumbnail}
 
-If you only have [indices](../index-as-a-service){.ref}, you can use them directly in the ElastAlert configuration.
+If you only have [indices](/pages/platform/logs-data-platform/opensearch_index), you can use them directly in the ElastAlert configuration.
 
 ## Instructions
 
@@ -90,7 +90,7 @@ Tou should pay attention to the following points:
 
 - The `<ldp-cluster>` must be the one assigned to you (find on the **Home** page of the LDP Manager).
 - `<username>` is the username used to connect to the API or to the Logs Data Platform interfaces (Graylog or OpenSearch Dashboards).
-- `<password>` is the associated password. You can use [tokens](../tokens-logs-data-platform){.ref} in place of the username/password couple for your credentials.
+- `<password>` is the associated password. You can use [tokens](/pages/platform/logs-data-platform/security_tokens) in place of the username/password couple for your credentials.
 - The `--index` is the most important here since you **must** follow the index naming convention of Logs Data Platform. Use the presented form `<username>-i-` as a base name for your meta-indices. `<suffix>` can be personalized to any alphanumeric characters.
 
 This command will prompt you with different questions:
@@ -210,7 +210,7 @@ To launch ElastAlert, use the following command:
 $ elastalert --config config.yml
 ```
 
-To test your alert you can use the following curl command sending logs to our [OpenSearch endpoint](../ldp-index){.ref}:
+To test your alert you can use the following curl command sending logs to our [OpenSearch endpoint](/pages/platform/logs-data-platform/ingestion_opensearch_api_mutualized_input):
 
 ```shell-session
 $ curl -H 'Content-Type: application/json' -u '<username>:<password>' -XPOST https://<ldp-cluster>.logs.ovh.com:9200/ldp-logs/message -d '{ "X-OVH-TOKEN" : "stream-token>" , "test_field" : "OVHcloud" , "user": "Oles", "short_message" : "Hello OpenSearch input", "host" : "OVHcloud_elastalert" }'
@@ -223,7 +223,7 @@ ElastAlert has a lot of integrations for alerting including Email, JIRA, OpsGeni
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
 - Documentation: [Guides](../){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

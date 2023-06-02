@@ -78,110 +78,67 @@ Role management can be automated by using the [OVHcloud API](https://api.ovh.com
 
 Here are a few exemples of the role API calls you can use:
 
+### Listing available services
 
->[!faq]
+> [!api]
 >
-> Endpoint:
+> @api {GET} /dbaas/logs
 >
->> > [!api]
->> >
->> > @api {GET} /dbaas/logs
->> >
->>
->
-> About:
->
->> List available services.
 
+### Returning the list of roles associated with the service
 
->[!faq]
+> [!api]
 >
-> Endpoint:
+> @api {GET} /dbaas/logs/{serviceName}/role
 >
->> > [!api]
->> >
->> > @api {GET} /dbaas/logs/{serviceName}/role
->> >
->>
->
-> About:
->
->> Return the list of roles associated with the service.
->
-> Parameters:
->> serviceName *
->>> The internal ID of your Logs Data Platform service (string)
-
->[!faq]
->
-> Endpoint:
->
->> > [!api]
->> >
->> > @api {GET} /dbaas/logs/{serviceName}/role/{roleId}
->> >
->>
->
-> About:
->
->> Return the specified role.
->
-> Parameters:
->> serviceName *
->>> The internal ID of your Logs Data Platform service (string)
->> roleId *
->>> UUID of your role (string)
 
 
->[!faq]
->
-> Endpoint:
->
->> > [!api]
->> >
->> > @api {POST} /dbaas/logs/{serviceName}/role/{roleId}/member
->> >
->>
->
-> About:
->
->> Grant given LDP user.
->
-> Parameters:
->> serviceName *
->>> The internal ID of your Logs Data Platform service (string)
->> roleId *
->>> UUID of your role (string)
->RequestBody:
->> RoleMemberCreation *
->>> A JSON object containing the field {username} (string), the username of the member and a {note}, the description of this member.
+**Parameters:**
 
+- `serviceName`: The internal ID of your Logs Data Platform service (string)
 
->[!faq]
+### Returning the specified role
+
+> [!api]
 >
-> Endpoint:
+> @api {GET} /dbaas/logs/{serviceName}/role/{roleId}
 >
->> > [!api]
->> >
->> > @api {POST} /dbaas/logs/{serviceName}/role/{roleId}/permissions/alias
->> >
->>
+
+**Parameters:**
+
+- `serviceName`: The internal ID of your Logs Data Platform service (string)
+- `roleId`: UUID of your role (string)
+
+### Granting a given LDP user
+
+> [!api]
 >
-> About:
+> @api {POST} /dbaas/logs/{serviceName}/role/{roleId}/member
 >
->> Allow access on given alias.
+
+**Parameters:**
+
+- `serviceName`: The internal ID of your Logs Data Platform service (string)
+- `roleId`: UUID of your role (string)
+- `RoleMemberCreation`: A JSON object containing the field {username} (string), the username of the member and a {note}, the description of this member
+
+### Allowing access on a given alias
+
+> [!api]
 >
-> Parameters:
->> serviceName *
->>> The internal ID of your Logs Data Platform service (string)
->> roleId *
->>> UUID of your role (string)
->RequestBody:
->> RolePermissionAliasCreation *
->>> A JSON object containing the field {aliasId} (string), the UUID of the alias you want to share.
+> @api {POST} /dbaas/logs/{serviceName}/role/{roleId}/permissions/alias
+>
+
+**Parameters:**
+
+- `serviceName`: The internal ID of your Logs Data Platform service (string)
+- `roleId`: UUID of your role (string)
+
+**RequestBody:**
+
+- `RolePermissionAliasCreation`: A JSON object containing the field {aliasId} (string), the UUID of the alias you want to share.
 
 Don't hesitate to [explore the API](https://api.ovh.com/console/#/dbaas/logs){.external}, and try it with the provided console.
-
 
 ## Go further
 

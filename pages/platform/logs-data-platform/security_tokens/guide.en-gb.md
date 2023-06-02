@@ -4,10 +4,10 @@ slug: logs-data-platform-tokens
 order: 7
 excerpt: If you want to give access to your logs to a software or automatize some tasks depending on your logs. You will maybe need to access them through the API. The most secure way to do this is to use tokens.
 section: Features
-updated: 2022-10-13
+updated: 2023-06-02
 ---
 
-**Last updated 13th October, 2022**
+**Last updated 2nd June, 2023**
 
 ## Objective
 
@@ -49,103 +49,65 @@ One goal with token is to automatize APIs call. Sometime you even need to automa
 
 First you will have to retrieve the serviceName you want to generate token for. The API call to get your serviceName is the following:
 
->[!faq]
+> [!api]
 >
-> Endpoint:
+> @api {GET} /dbaas/logs
 >
->> > [!api]
->> >
->> > @api {GET} /dbaas/logs
->> >
->>
->
-> About:
->
->> List available services.
+
 
 If you want to know what is the Logs Data Platform username associated with this serviceName, use the following call:
 
->[!faq]
->
-> Endpoint:
->
->> > [!api]
->> >
->> > @api {GET} /dbaas/logs/{serviceName}
->> >
->>
->
-> About:
->
->> Return the service object of connected identity.
->
-> Parameters:
->> serviceName *
->>> The internal ID of your Logs Data Platform service (string)
 
-Once you have the login you want, use:
+> [!api]
+>
+> @api {GET} /dbaas/logs/{serviceName}
+>
 
->[!faq]
->
-> Endpoint:
->
->> > [!api]
->> >
->> > @api {POST} /dbaas/logs/{serviceName}/token
->> >
->>
->
-> About:
->
->> Add a new token.
->
+This call returns the service object of the connected identity.
+
+
 > Parameters:
->> serviceName *
->>> The internal ID of your Logs Data Platform service (string)
->> name *
->>> The name of your token (string)
+>
+> - `serviceName`: The internal ID of your Logs Data Platform service (string)
+
+Once you have the login you want, use the following call to add a new token:
+
+
+> [!api]
+>
+> @api {POST} /dbaas/logs/{serviceName}/token
+>
+
+
+> Parameters:
+>
+> - `serviceName`: The internal ID of your Logs Data Platform service (string)
+> - `name`: The name of your token (string)
+>
 
 Please replace **serviceName** with your serviceName, and replace **name** by the name of your choice for your token. This call will give you a taskId. After a few seconds you can retrieve your **tokenId** with this call:
 
->[!faq]
+> [!api]
 >
-> Endpoint:
+> @api {GET} /dbaas/logs/{serviceName}/token
 >
->> > [!api]
->> >
->> > @api {GET} /dbaas/logs/{serviceName}/token
->> >
->>
->
-> About:
->
->> Return the list of service tokens.
->
-> Parameters:
->> serviceName *
->>> The internal ID of your Logs Data Platform service (string)
 
-This will give you back the id of your token. The actual value of the token can be retrieved with:
-
->[!faq]
->
-> Endpoint:
->
->> > [!api]
->> >
->> > @api {GET} /dbaas/logs/{serviceName}/token/{tokenId}
->> >
->>
->
-> About:
->
->> Return the specified token.
->
 > Parameters:
->> serviceName *
->>> The internal ID of your Logs Data Platform service (string)
->> tokenId *
->>> UUID of your token (string)
+>
+> - `serviceName`: The internal ID of your Logs Data Platform service (string)
+>
+
+This will give you back the id of your token. The actual value of the token can be retrieved with this next call:
+
+> [!api]
+>
+> @api {GET} /dbaas/logs/{serviceName}/token/{tokenId}
+>
+
+> Parameters:
+>
+> - `serviceName`: The internal ID of your Logs Data Platform service (string)
+> - `tokenId`: UUID of your token (string)
 
 Here is the final response you will get.
 
@@ -163,25 +125,18 @@ The token value is the value field. That is the field you will need to use the L
 
 Finally to delete your token, use the following call:
 
->[!faq]
+
+> [!api]
 >
-> Endpoint:
+> @api {DELETE} /dbaas/logs/{serviceName}/token/{tokenId}
 >
->> > [!api]
->> >
->> > @api {DELETE} /dbaas/logs/{serviceName}/token/{tokenId}
->> >
->>
->
-> About:
->
->> Delete the specified token.
->
+
+
 > Parameters:
->> serviceName *
->>> The internal ID of your Logs Data Platform service (string)
->> tokenId *
->>> UUID of your token (string)
+>
+> - `serviceName`: The internal ID of your Logs Data Platform service (string)
+> - `tokenId`: UUID of your token (string)
+>
 
 ### Using your tokens
 

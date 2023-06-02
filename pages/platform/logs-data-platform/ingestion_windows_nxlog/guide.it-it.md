@@ -18,7 +18,7 @@ At OVHcloud, we love Microsoft products too. So it is important for us to provid
 
 For this tutorial you will need to have completed the following steps :
 
-- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
+- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)))){.external}
 - [To create at least one Stream and get its token.](../quick-start){.ref}
 
 ## NXLog

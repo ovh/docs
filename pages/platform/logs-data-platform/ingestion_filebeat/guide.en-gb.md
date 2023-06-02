@@ -316,7 +316,7 @@ Filebeat is a handy tool to send the content of your current log files to Logs D
 
 - Configuration's details: [https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-configuration-details.html](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-configuration-details.html){.external}
 - Getting started: [https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-getting-started.html](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-getting-started.html){.external}
-- Learn how to configure Filebeat and Logstash to add your own extra filters: [All you have to know about the Logstash Collector on Logs Data Platform!](/pages/platform/logs-data-platform/ingestion_logstash_dedicated_input){.ref}
+- Learn how to configure Filebeat and Logstash to add your own extra filters: [Dedicated input - Logstash](/pages/platform/logs-data-platform/ingestion_logstash_dedicated_input)
 
 ## Going further
 

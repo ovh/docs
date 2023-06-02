@@ -69,73 +69,48 @@ You will need your OVHcloud service name associated with your account. Your serv
 
 **Retrieve your stream using the streams API call**
 
-> [!faq]
+- Return the list of graylog streams:
+
+> [!api]
 >
-> Endpoint:
+> @api {GET} /dbaas/logs/{serviceName}/output/graylog/stream
 >
->> > [!api]
->> >
->> > @api {GET} /dbaas/logs/{serviceName}/output/graylog/stream
->> >
->>
->
-> About:
->
->> Return the list of graylog streams.
->
+
 > Parameters:
->> serviceName *
->>> The internal ID of your Logs Data Platform service (string)
+>
+> - `serviceName`: The internal ID of your Logs Data Platform service (string)
 
 **Retrieve the list of your archives and its details with the corresponding endpoints**
 
-> [!faq]
+- Return details of specified archive:
+
+> [!api]
 >
-> Endpoint:
+> @api {GET} /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}/archive/{archiveId}
 >
->> > [!api]
->> >
->> > @api {GET} /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}/archive/{archiveId}
->> >
->>
->
-> About:
->
->> Return details of specified archive.
->
+
 > Parameters:
->> serviceName *
->>> The internal ID of your Logs Data Platform service (string)
->> streamId *
->>> The stream you want archives from.
->> archiveId *
->>> The archive you want details from.
+>
+> - `serviceName`: The internal ID of your Logs Data Platform service (string)
+> - `streamId`: The stream you want archives from
+> - `archiveId`: The archive you want details from
 
 **You can generate a temporary URL download by using this following endpoint**
 
-> [!faq]
+- Get a public temporary URL to access the archive:
+
+> [!api]
 >
-> Endpoint:
+> @api {POST} /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}/archive/{archiveId}/url
 >
->> > [!api]
->> >
->> > @api {POST} /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}/archive/{archiveId}/url
->> >
->>
->
-> About:
->
->> Get a public temporary URL to access the archive.
->
+
 > Parameters:
->> serviceName *
->>> The internal ID of your Logs Data Platform service (string)
->> streamId *
->>> The stream you want archives from.
->> archiveId *
->>> The archive you want details from.
->> expirationInSeconds
->>> The URL expiration duration in seconds.
+>
+> - `serviceName`: The internal ID of your Logs Data Platform service (string)
+> - `streamId`: The stream you want archives from.
+> - `archiveId`: The archive you want details from.
+> - `expirationInSeconds`: The URL expiration duration in seconds.
+>
 
 Using this call will generate a URL. You will have to make a GET on this URL to start the unfreezing of your archive. The first call will be a **HTTP 429 Error Code** meaning you will have to retry after some time. The time you will have to wait is in the response Header **Retry-After** and is specified in seconds. For example here is the result of the call with a curl.
 
