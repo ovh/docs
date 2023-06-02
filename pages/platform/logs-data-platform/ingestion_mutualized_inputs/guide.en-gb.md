@@ -1,7 +1,7 @@
 ---
 title: Mutualized Inputs
 excerpt: Discover what inputs are and how to use them to ingest your logs in Logs Data Platform
-updated: 2023-05-17
+updated: 2023-06-02
 ---
 
 ## Objective
