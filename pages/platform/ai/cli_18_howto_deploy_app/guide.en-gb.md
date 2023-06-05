@@ -99,7 +99,7 @@ ovhai app run <registry-address>/<image-identifier>:<tag-name> \
 
 ### Assigning a name to the app 
 
-In order to manage your apps more easily, and to avoid ending up with random names, we recommend that you give your app a name. To do this, use the '--name' parameter in the following way:
+In order to manage your apps more easily, and avoid ending up with random names, we recommend that you give your app a name. To do this, use the '--name' parameter in the following way:
 
 ``` {.console}
 ovhai app run <registry-address>/<image-identifier>:<tag-name> \
