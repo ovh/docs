@@ -41,7 +41,7 @@ To check the current configuration of a domain name, enter your domain name, the
 To check a DNS configuration that has been prepared but not yet applied to the domain name concerned, select the `Options`{.action} box, and then enter the following information:
 
 - **Nameservers**: Enter the information for the DNS server associated with a domain name. Click the `+`{.action} button to add additional nameservers. Entering an IP address is optional.
-- **Delegation Signers (DS records)**: If DNSSEC protection applies, enter the DS record items here. Click `+`{.action} to add additional DS records. If the DNS servers do not use the DNSSEC protocol, you can leave these fields empty.
+- **Delegation Signers (DS records)**: If DNSSEC protection applies, enter the DS record items here. Click `+`{.action} to add additional DS records. If the DNS servers do not use the DNSSEC protocol, you can leave these fields empty. If a zone is signed with DNSSEC, this feature allows to check that the zone works correctly with a validating resolver, with the DS records that are about to be published, before their publication.
 
 You can also force checks on a specific IP protocol by using the `Disable IPv6` and `Disable IPv4` checkboxes.
 

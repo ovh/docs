@@ -41,7 +41,8 @@ Pour vérifier la configuration actuelle d'un nom de domaine, saisissez votre no
 Pour vérifier une configuration DNS que vous avez préparée mais pas encore appliquée au nom de domaine concerné, cochez la case `Options`{.action}, puis saisissez les informations suivantes :
 
 - **Serveurs DNS** : Saisissez les informations du serveur de nom associé à un nom de domaine. Cliquez sur le `+`{.action} pour pouvoir ajouter un serveur de nom supplémentaire. La saisie d'une adresse IP est facultative.
-- **Délégation du Signataire (enregistrement DS)**: Dans le cadre d'une protection DNSSEC, saisissez les éléments de l'enregistrement DS. Cliquez sur le `+`{.action} pour pouvoir ajouter un enregistrement DS supplémentaire. Si les serveurs DNS n'utilisent pas le protocole DNSSEC, vous pouvez laisser ces champs libres.
+- **Délégation du Signataire (enregistrement DS)**: Dans le cadre d'une protection DNSSEC, saisissez les éléments de l'enregistrement DS. Cliquez sur le `+`{.action} pour pouvoir ajouter un enregistrement DS supplémentaire. Si les serveurs DNS n'utilisent pas le protocole DNSSEC, vous pouvez laisser ces champs libres. Dans le cas d’une zone signée avec DNSSEC, cette fonction permet de vérifier que la zone fonctionne correctement avec un résolveur validant, avec les enregistrements DS qu’on est sur le point de publier, préalablement à leur publication.
+
 
 Vous pouvez également forcer les vérifications sur un protocole IP spécifique, via les cases `Désactiver IPv6` et `Désactiver IPv4`
 
