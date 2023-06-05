@@ -11,7 +11,7 @@ updated: 2022-07-28
 
 ## Objective
 
-[ElastAlert 2](https://github.com/jertel/elastalert){.external} is an alerting framework originally designed by Yelp. It is able to detect anomalies, spikes, or other patterns of interest. It is production-ready and is a well known standard of alerting in the Elasticsearch/OpenSearch ecosystem. Their mojo is : "If you can see it in your dashboards, ElastAlert 2 can alert on it." In this document you will learn how to deploy this component on Logs Data Platform thanks to its compability with OpenSearch through [aliases](/pages/platform/logs-data-platform/visualization_opensearch_dashboards){.ref} and [indexes](/pages/platform/logs-data-platform/ingestion_opensearch_api_mutualized_input){.ref}. Logs Data Platform also allows you to host ElastAlert meta-indices on Logs Data Platform..
+[ElastAlert 2](https://github.com/jertel/elastalert){.external} is an alerting framework originally designed by Yelp. It is able to detect anomalies, spikes, or other patterns of interest. It is production-ready and is a well known standard of alerting in the Elasticsearch/OpenSearch ecosystem. Their mojo is : "If you can see it in your dashboards, ElastAlert 2 can alert on it." In this document you will learn how to deploy this component on Logs Data Platform thanks to its compability with OpenSearch through [aliases](/pages/platform/logs-data-platform/visualization_opensearch_dashboards) and [indexes](/pages/platform/logs-data-platform/ingestion_opensearch_api_mutualized_input). Logs Data Platform also allows you to host ElastAlert meta-indices on Logs Data Platform..
 
 ## Requirements
 
@@ -224,6 +224,6 @@ ElastAlert has a lot of integrations for alerting including Email, JIRA, OpsGeni
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](../){.ref}
+- Documentation: [Guides](https://docs.ovh.com/gb/en/logs-data-platform/)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

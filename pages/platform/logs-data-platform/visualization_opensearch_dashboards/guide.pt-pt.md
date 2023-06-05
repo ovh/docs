@@ -1,10 +1,10 @@
 ---
 title: Using OpenSearch Dashboards with Logs Data Platform
-slug: opensearch-dashboards
+slug: logs-data-platform-opensearch-dashboards
 order: 2
 section: Visualize your logs
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/opensearch-dashboards/'
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-opensearch-dashboards?id=kb_article_view&sysparm_article=KB0050065'
 updated: 2022-06-13
 ---
 
@@ -18,7 +18,7 @@ This guide will help you unleash the full power of [OpenSearch Dashboards](https
 
 This is what you need to know to get you started:
 
-- You are already sending logs on a stream you own: [see the quick start tutorial](../quick-start)
+- You are already sending logs on a stream you own: [see the quick start tutorial](/pages/platform/logs-data-platform/getting_started_quick_start)
 - There is nothing else
 
 After some training you will be able to do this kind of Dashboard:
@@ -60,14 +60,13 @@ In this configuration page, you can configure as the Index name, the full name o
 
 ![osd setup](images/osd_setup.png){.thumbnail}
 
-You can also explore any [OpenSearch index](../index-as-a-service) you created on the platform. One OpenSearch Dashboards instance allows you to explore all the data you delivered on Logs Data Platform.
+You can also explore any [OpenSearch index](/pages/platform/logs-data-platform/opensearch_index) you created on the platform. One OpenSearch Dashboards instance allows you to explore all the data you delivered on Logs Data Platform.
 
 To know what you can do with OpenSearch Dashboards, read the [OpenSearch Dashboards documentation](https://opensearch.org/docs/latest/dashboards/index/){.external}
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start)
-- Documentation: [Guides](../)
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
+- Documentation: [Guides](https://docs.ovh.com/pt/logs-data-platform/)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
-

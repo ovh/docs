@@ -1,9 +1,11 @@
 ---
 title: Tracking slow MySQL queries with Logs Data Platform
-slug: mysql-slow-queries
+slug: logs-data-platform-mysql-slow-queries
 order: 04
 excerpt: Keep your MySQL database at high speed with Logs Data Platform!
 section: Use cases
+routes:
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-mysql-slow-queries?id=kb_article_view&sysparm_article=KB0050059'
 updated: 2019-04-11
 ---
 
@@ -19,9 +21,9 @@ This guide will help you to track your slowest queries and send them to Logs Dat
 
 Before, you must read these three guides:
 
-- [Starting with Logs Data Platform.](../quick-start){.ref}
-- [How to setup a Logstash input?](../logstash-input){.ref}
-- [Using Filebeat with Logs Data Platform.](../filebeat-logs){.ref}
+- [Starting with Logs Data Platform.](/pages/platform/logs-data-platform/getting_started_quick_start)
+- [How to setup a Logstash input?](/pages/platform/logs-data-platform/ingestion_logstash_dedicated_input)
+- [Using Filebeat with Logs Data Platform.](/pages/platform/logs-data-platform/ingestion_filebeat)
 
 ## Instructions
 
@@ -77,7 +79,7 @@ Slow query logs are multi-line logs giving information:
 ### Configure Filebeat on your system
 
 Our favorite way to send MySQL slow query logs is to send logs directly to Logs Data Platform by using [Filebeat](https://www.elastic.co/fr/downloads/beats/filebeat-oss){.external}.
-We cover Filebeat in depth in [another tutorial](https://docs.ovh.com/ca/fr/logs-data-platform/filebeat-logs/){.external}. Here is a minimal **filebeat.yml** configuration file.
+We cover Filebeat in depth in [another tutorial](/pages/platform/logs-data-platform/ingestion_filebeat){.external}. Here is a minimal **filebeat.yml** configuration file.
 
 ```yaml
 #=========================== Filebeat inputs =============================
@@ -166,13 +168,13 @@ A fully parsed log looks like this:
 - You can track the **mysql_slowlog_user** and the **mysql_slowlog_host** that trigger the slowest queries.
 - You have the **mysql_slowlog_rows_examined_int** scanned and returned
 
-All this information can help you to analyse the most difficult queries for your database. You will know when to scale and when your database is too big for your hardware or when to optimize your queries. Of course it is always better to have a nice dashboard to display your own key performance indicators. One way to have this critical information as soon as it arrives is to use the [alerting feature.](../alerting){.ref}
+All this information can help you to analyse the most difficult queries for your database. You will know when to scale and when your database is too big for your hardware or when to optimize your queries. Of course it is always better to have a nice dashboard to display your own key performance indicators. One way to have this critical information as soon as it arrives is to use the [alerting feature.](/pages/platform/logs-data-platform/alerting_stream)
 
 ![slow_graylog](images/mysql_slow_dashboard.png){.thumbnail}
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start){.ref}
-- Documentation: [Guides](../){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
+- Documentation: [Guides](https://docs.ovh.com/ca/fr/logs-data-platform/)
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

@@ -126,7 +126,7 @@ Happy Logging
 
 ## Go further
 
-- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
-- Documentation: [Guides](/pages/platform/logs-data-platform){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
+- Documentation: [Guides](https://docs.ovh.com/gb/en/logs-data-platform/)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)))

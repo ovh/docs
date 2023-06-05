@@ -1,10 +1,10 @@
 ---
-title: Quick start
-slug: quick-start
+title: Quick start for Logs Data Platform
+slug: logs-data-platform-quick-start
 order: 1
 section: Get Started
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/quick-start/'
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-quick-start?id=kb_article_view&sysparm_article=KB0037679'
 updated: 2023-03-30
 ---
 
@@ -29,7 +29,7 @@ Your Logs Data Platform username is located on the bottom left of the page, in t
 
 1. Identify your assigned access point for this account and your LDP username.
 2. Reset your password of your LDP account.
-3. Edit your LDP access tokens (more on this functionality [here](../tokens-logs-data-platform){.ref}).
+3. Edit your LDP access tokens (more on this functionality [here](/pages/platform/logs-data-platform/security_tokens)).
 
 
 The main page allows you also to consult the SSL certificates used on your access point in the **SSL Configuration panel**. This panel lets you also review the available ports and formats supported.
@@ -66,9 +66,9 @@ The menu **"..."** at the right gives you several features:
 - **Edit** allows you to edit the name and the description of your Stream.
 - **Graylog access** gives you a direct access to your stream and its logs.
 - **Copy the write token** allows you to retrieve your token and to use it in your different logs collector.
-- **Monitor in real-time** allows you to see the logs incoming into your stream in real-time. Note that Graylog also provides this functionality. On this page you can also **Test** different log formats from your computer to your stream. [More about](../ldp-tail){.ref}
-- **Manage alerts** allows you to define your alert conditions on the logs routed to the stream. [More about](../alerting){.ref}
-- **Archives** allows you to download the cold stored archives. [More about](../cold-storage){.ref}
+- **Monitor in real-time** allows you to see the logs incoming into your stream in real-time. Note that Graylog also provides this functionality. On this page you can also **Test** different log formats from your computer to your stream. [More about](/pages/platform/logs-data-platform/cli_ldp_tail)
+- **Manage alerts** allows you to define your alert conditions on the logs routed to the stream. [More about](/pages/platform/logs-data-platform/alerting_stream)
+- **Archives** allows you to download the cold stored archives. [More about](/pages/platform/logs-data-platform/archive_cold_storage)
 - **Delete** Deletes your stream from the system and all related content.
 
 Logs Data Platform supports several logs formats, each one of them has its own advantages and disadvantages. Here are the different formats available
@@ -78,7 +78,7 @@ Logs Data Platform supports several logs formats, each one of them has its own a
 - **RFC 5424**: This format is commonly used by logs utility such as syslog. It is extensible enough to allow you to send all your data. More information about it can be found at this link: [RFC
 5424](https://tools.ietf.org/html/rfc5424){.external}.
 - **Cap'n'Proto**: The most efficient log format. this is a binary format that allows you to maintain a low footprint and high speed performance. For more information, check out the official website: [Cap'n'Proto](https://capnproto.org/){.external}.
-- **Beats**: A secure and reliable protocol used by the beats family in the Elasticsearch ecosystem (Ex: [Filebeat](../filebeat-logs){.ref}, [Metricbeat](https://www.elastic.co/beats/metricbeat){.external}, [Winlogbeat](https://www.elastic.co/beats/winlogbeat){.external}).
+- **Beats**: A secure and reliable protocol used by the beats family in the Elasticsearch ecosystem (Ex: [Filebeat](/pages/platform/logs-data-platform/ingestion_filebeat), [Metricbeat](https://www.elastic.co/beats/metricbeat){.external}, [Winlogbeat](https://www.elastic.co/beats/winlogbeat){.external}).
 
 Here are the ports you can use on your cluster to send your logs. You can either use the secured ones with SSL Enabled (TLS >= 1.2) or use the plain unsecured ones if you can't use a SSL transport.
 
@@ -196,11 +196,11 @@ Note that dashboards are interactive and you can use the top search bar and the 
 ## Going further
 We have only scratched the surface of what Logs Data Platform can do for you. you will find soon enough how to:
 
-- [Send correctly formatted logs](../field-naming-conventions){.ref} to use custom types as number, boolean and other stuffs
-- [Configure your syslog-ng](../how-to-log-your-linux){.ref} to send your Linux logs to Logs Data Platform.
-- [Using roles](../roles){.ref} to allow other users of the platform to let them see yours beautiful Dashboards or let them dig in your Streams instead of doing it for them.
-- [Using OpenSearch Dashboards and aliases to unleash the power of OpenSearch](../opensearch-dashboards){.ref}
+- [Send correctly formatted logs](/pages/platform/logs-data-platform/getting_started_field_naming_convention) to use custom types as number, boolean and other stuffs
+- [Configure your syslog-ng](/pages/platform/logs-data-platform/ingestion_syslog_ng) to send your Linux logs to Logs Data Platform.
+- [Using roles](/pages/platform/logs-data-platform/getting_started_roles_permission) to allow other users of the platform to let them see yours beautiful Dashboards or let them dig in your Streams instead of doing it for them.
+- [Using OpenSearch Dashboards and aliases to unleash the power of OpenSearch](/pages/platform/logs-data-platform/visualization_opensearch_dashboards)
 - If you want to master Graylog, this is the place to go: [Graylog documentation](https://docs.graylog.org/docs/queries){.external}
-- Documentation: [Guides](../){.ref}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
+- Documentation: [Guides](https://docs.ovh.com/it/logs-data-platform/)
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)))
 - Join our community of users on [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}

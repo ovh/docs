@@ -1,11 +1,11 @@
 ---
-title: Follow your logs in real time with ldp-tail
-slug: ldp-tail
+title: CLI - ldp-tail, a tool to follow your logs in real-time
+slug: logs-data-platform-ldp-tail
 order: 3
 excerpt: This super-powered tail will follow and format your logs with flying colors.
 section: Features
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/ldp-tail/'
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-ldp-tail?id=kb_article_view&sysparm_article=KB0050062'
 updated: 2023-01-16
 ---
 
@@ -21,7 +21,7 @@ The Logs Data Platform allows you to connect different applications or servers t
 
 - **ldp-tail** can be run on Linux, Mac or Windows, locally or remotely
 - You will need an internet connection
-- A LDP account with [an active stream](../quick-start){.ref} and WebSocket option enabled
+- A LDP account with [an active stream](/pages/platform/logs-data-platform/getting_started_quick_start) and WebSocket option enabled
 
 ## Instructions
 
@@ -167,7 +167,7 @@ To make the magic happens, replace begin and end values with timestamps that hav
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start){.ref}
-- Documentation: [Guides](../){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
+- Documentation: [Guides](https://docs.ovh.com/it/logs-data-platform/)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
