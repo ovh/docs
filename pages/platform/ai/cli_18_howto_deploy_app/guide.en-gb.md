@@ -103,7 +103,7 @@ In order to manage your apps more easily, and avoid ending up with random names,
 
 ``` {.console}
 ovhai app run <registry-address>/<image-identifier>:<tag-name> \
-    --name segmentation_app
+    --name my_first_app
 ```
 
 ### Attaching data
