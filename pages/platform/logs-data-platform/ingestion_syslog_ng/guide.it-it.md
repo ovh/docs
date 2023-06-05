@@ -1,10 +1,10 @@
 ---
-title: How to log your Linux with syslog-ng 3.8+
-slug: how-to-log-your-linux
+title: Pushing logs with a forwarder - Syslog-ng 3.8+ (Linux)
+slug: logs-data-platform-how-to-log-your-linux
 order: 02
 section: Use cases
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/how-to-log-your-linux/'
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-how-to-log-your-linux?id=kb_article_view&sysparm_article=KB0050048'
 updated: 2020-07-27
 ---
 
@@ -23,7 +23,7 @@ In this guide will show you how to send Logs from your Linux instance to Logs Da
 - A **Linux** based instance (server, VPS, Cloud instance, Raspberry Pi, ...). Command lines will be for **DEBIAN 9** in this tutorial
 - A root access to this instance
 - [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
-- [To create at least one Stream and get its token.](../quick-start){.ref}
+- [To create at least one Stream and get its token.](/pages/platform/logs-data-platform/getting_started_quick_start)
 
 ## Instructions
 
@@ -47,7 +47,7 @@ Conclusion : lot of info, with a date, a process, a description. but hard to fol
 
 ### Configure your Account
 
-First thing to do is to configure your Logs Data Platform account: [create your user](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}, a stream and a dashboard. Verify that everything works already perfectly. We wrote an independent guide for this, please read it and come back here after : [Quick start](../quick-start){.ref} Good? let's go to following step then !
+First thing to do is to configure your Logs Data Platform account: [create your user](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}, a stream and a dashboard. Verify that everything works already perfectly. We wrote an independent guide for this, please read it and come back here after : [Quick start](/pages/platform/logs-data-platform/getting_started_quick_start) Good? let's go to following step then !
 
 ### Install and configure a log collector
 
@@ -182,11 +182,11 @@ Alright, you just created the first widget in you dashboard. Now, let's create a
 
 Well done, second Widget added!
 
-The best feature is to mix criteria, based on what is important to you. For example, `facility:auth AND level:6`.  Why not [create an alert](../alerting){.ref} on this condition?
+The best feature is to mix criteria, based on what is important to you. For example, `facility:auth AND level:6`.  Why not [create an alert](/pages/platform/logs-data-platform/alerting_stream) on this condition?
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start){.ref}
-- Documentation: [Guides](../){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
+- Documentation: [Guides](https://docs.ovh.com/it/logs-data-platform/)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

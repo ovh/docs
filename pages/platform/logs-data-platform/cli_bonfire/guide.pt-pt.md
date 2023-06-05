@@ -1,10 +1,10 @@
 ---
-title: How to query logs from the command line
-slug: bonfire
+title: CLI - bonfire, querying graylog from a CLI
+slug: logs-data-platform-bonfire
 order: 09
 section: Use cases
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/bonfire/'
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-bonfire?id=kb_article_view&sysparm_article=KB0050045'
 updated: 2020-07-27
 ---
 
@@ -24,7 +24,7 @@ For all of these examples, you will have to replace `<your_cluster>.logs.ovh.com
 
 - Python
 - Pip
-- Having fully completed the [Quick Start](../quick-start){.ref}
+- Having fully completed the [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
 
 ## Instructions
 
@@ -173,7 +173,7 @@ $ bonfire --node sadev -k -x "uuid=08bce56b-9e85-4daa-9c8d-5b39c0d75d69" :contai
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start){.ref}
-- Documentation: [Guides](../){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
+- Documentation: [Guides](https://docs.ovh.com/pt/logs-data-platform/)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

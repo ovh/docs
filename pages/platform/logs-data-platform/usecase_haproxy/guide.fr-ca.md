@@ -1,8 +1,10 @@
 ---
 title: Supervising your HAProxy deployment with Logs Data Platform
-slug: haproxy
+slug: logs-data-platform-haproxy
 order: 05
 section: Use cases
+routes:
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-haproxy?id=kb_article_view&sysparm_article=KB0037662'
 excerpt: Monitor and analyze your web applications with HAProxy and Logs Data Platform.
 updated: 2020-07-27
 ---
@@ -29,9 +31,9 @@ This guide will show you two ways to forward your HAProxy logs to the Logs Data 
 
 For this tutorial, you should have read the following ones to fully understand what's next:
 
-- [Starting with Logs Data Platform.](../quick-start){.ref}
-- [Field Naming conventions of Logs Data Platform.](../field-naming-conventions){.ref}
-- [How to setup a Logstash input?](../logstash-input){.ref}
+- [Starting with Logs Data Platform.](/pages/platform/logs-data-platform/getting_started_quick_start)
+- [Field Naming conventions of Logs Data Platform.](/pages/platform/logs-data-platform/getting_started_field_naming_convention)
+- [How to setup a Logstash input?](/pages/platform/logs-data-platform/ingestion_logstash_dedicated_input)
 
 ## Instructions
 
@@ -89,19 +91,19 @@ We can send logs to Logs Data Platform by using several softwares. One of them i
 
 [Rsyslog](http://www.rsyslog.com){.external} is a fast log processor fully compatible with the syslog protocol. It has evolved into a generic collector able to accept entries from a lot of different inputs, transform them and finally send them to various destinations. Installation and configuration documentation can be found at the official website. Head to [http://www.rsyslog.com/doc/v8-stable/](http://www.rsyslog.com/doc/v8-stable/){.external} for detailed information.
 
-To send HAProxy logs with RSyslog, we will use several methods: a [dedicated Logstash collector](../logstash-input){.ref} and the plain [LTSV format](http://ltsv.org){.external}. The first method is the least intrusive and can be used when you need Logstash processing of your logs (for example to anonymize some logs under some conditions). The second method should be preferred when you have a high traffic website (at least 1000 requests by second.).
+To send HAProxy logs with RSyslog, we will use several methods: a [dedicated Logstash collector](/pages/platform/logs-data-platform/ingestion_logstash_dedicated_input) and the plain [LTSV format](http://ltsv.org){.external}. The first method is the least intrusive and can be used when you need Logstash processing of your logs (for example to anonymize some logs under some conditions). The second method should be preferred when you have a high traffic website (at least 1000 requests by second.).
 
 For both methods you will need our SSL certificate to enable TLS communication. Some Debian Linux distributions need you to install the package **rsyslog-gnutls** to enable SSL.
 
 ### Exploit a dedicated Logstash Data-Gathering tool
 
-Once you have activated the tcp or http logs of your HAProxy instance, you must then send them and transform them. For this part of the tutorial you will need your own dedicated Logstash collector. Logstash is one of the most powerful tool to transform logs. Create a Logstash data-gathering tool as described in the [Logstash tutorial](../logstash-input){.ref}, and configure the port **1514** (or the port of your choice) as the exposed port.
+Once you have activated the tcp or http logs of your HAProxy instance, you must then send them and transform them. For this part of the tutorial you will need your own dedicated Logstash collector. Logstash is one of the most powerful tool to transform logs. Create a Logstash data-gathering tool as described in the [Logstash tutorial](/pages/platform/logs-data-platform/ingestion_logstash_dedicated_input), and configure the port **1514** (or the port of your choice) as the exposed port.
 
 ![edit\_logstash](images/logstash_edit.png){.thumbnail}
 
 #### Logstash collector configuration
 
-As you may guess we have to configure the Logstash collector with some clever [Grok filters](https://www.elastic.co/guide/en/logstash/6.7/plugins-filters-grok.html){.external} to make the collector be aware of our [field naming convention](../field-naming-conventions){.ref}. The collector will accept logs in a generic [TCP input](https://www.elastic.co/guide/en/logstash/7.x/plugins-inputs-tcp.html){.external} and use grok filters to extract the information. Thanks to the wizard feature, you won't even need to copy and paste the following configuration snippets, but they are still given for reference purpose.
+As you may guess we have to configure the Logstash collector with some clever [Grok filters](https://www.elastic.co/guide/en/logstash/6.7/plugins-filters-grok.html){.external} to make the collector be aware of our [field naming convention](/pages/platform/logs-data-platform/getting_started_field_naming_convention). The collector will accept logs in a generic [TCP input](https://www.elastic.co/guide/en/logstash/7.x/plugins-inputs-tcp.html){.external} and use grok filters to extract the information. Thanks to the wizard feature, you won't even need to copy and paste the following configuration snippets, but they are still given for reference purpose.
 
 Here is the Logstash input configuration:
 
@@ -339,7 +341,7 @@ output.elasticsearch:
 
 ```
 
-In this configuration you have to replace the token by your X-OVH-TOKEN value of your destination stream. Note that you also got to indicate the username and password or your [token](../tokens-logs-data-platform){.ref}. Don't change the destination index **ldp-logs**. Start your filebeat and head to Logs Data Platform to start analyzing your logs.
+In this configuration you have to replace the token by your X-OVH-TOKEN value of your destination stream. Note that you also got to indicate the username and password or your [token](/pages/platform/logs-data-platform/security_tokens). Don't change the destination index **ldp-logs**. Start your filebeat and head to Logs Data Platform to start analyzing your logs.
 
 ```shell-session
 $ sudo systemctl enable filebeat
@@ -347,7 +349,7 @@ $ sudo systemctl start filebeat
 
 ### Dashboard and alerts
 
-Here is an example of a dashboard that you can craft from the HAProxy logs. HAProxy logs give you a lot of information about your application and infrastructure. It's up to you to exploit them in whichever way suits you best. You can also configure some [alerts](../alerting){.ref} to warn you when a backend is down or is not responding properly.
+Here is an example of a dashboard that you can craft from the HAProxy logs. HAProxy logs give you a lot of information about your application and infrastructure. It's up to you to exploit them in whichever way suits you best. You can also configure some [alerts](/pages/platform/logs-data-platform/alerting_stream) to warn you when a backend is down or is not responding properly.
 
 ![dashboard\_1](images/dashboard_1.png){.thumbnail}
 ![dashboard\_2](images/dashboard_2.png){.thumbnail}
@@ -355,7 +357,7 @@ Here is an example of a dashboard that you can craft from the HAProxy logs. HAPr
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start){.ref}
-- Documentation: [Guides](../){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
+- Documentation: [Guides](https://docs.ovh.com/ca/fr/logs-data-platform/)
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
