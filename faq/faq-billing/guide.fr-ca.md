@@ -1,10 +1,10 @@
 ---
 title: FAQ sur la facturation et le paiement
 excerpt: Retrouvez les questions les plus fréquemment posées sur la facturation et le paiement
-updated: 2023-05-26
+updated: 2023-06-05
 ---
 
-**Dernière mise à jour le 26/05/2023**
+**Dernière mise à jour le 05/06/2023**
 
 ## Objectif
 
@@ -38,7 +38,7 @@ Dans ce cas, nous vous conseillons de contacter votre banque afin d’être info
 Par défaut, vos services sont renouvelés automatiquement lorsqu'ils arrivent à échéance, et le montant de votre facture est prélevé en début de mois sur votre moyen de paiement par défaut. Veillez donc à bien enregistrer un moyen de paiement sur votre compte client, afin d'éviter toute suspension, et à résilier vos services AVANT la date d'échéance.
 Sur certaines gammes (domaines, hébergements web, VPS et serveurs dédiés), vous avez la possibilité de choisir un mode de renouvellement `manuel`.
 Si vos services sont paramétrés en renouvellement manuel, des notifications vous sont envoyées par e-mail à l'approche de la date d'expiration de votre service, avec un lien permettant de payer en ligne.
-Si vous ne renouvelez pas votre service avant cette date, il sera simplement suspendu, puis supprimé au bout de quelques jours.
+Si vous ne renouvelez pas votre service avant cette date, il sera simplement suspendu, puis supprimé au bout de quelques jours (le délai est variable en fonction du service concerné).
 
 #### Trucs et astuces
 

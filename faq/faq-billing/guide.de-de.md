@@ -1,10 +1,10 @@
 ---
 title: FAQ für Abrechnung und Zahlung
 excerpt: Hier finden Sie die häufigsten Fragen zu Abrechnung und Zahlung
-updated: 2023-05-26
+updated: 2023-06-05
 ---
 
-**Letzte Aktualisierung am 26.05.2023**
+**Letzte Aktualisierung am 05.06.2023**
   
 ## Ziel
   
@@ -30,7 +30,7 @@ Aus rechtlichen Gründen können Sie die Daten für bereits erstellte Rechnungen
 Standardmäßig werden Ihre Dienste automatisch nach Ablauf verlängert. Der Rechnungsbetrag wird am Monatsanfang von Ihrem Standardzahlungsmittel abgebucht. Bitte achten Sie daher darauf, ein Zahlungsmittel in Ihrem Kundenkonto zu hinterlegen. So vermeiden Sie die Unterbrechung Ihrer Dienste. Möchten Sie einen Dienst kündigen? Bitte tun Sie dies vor dessen Ablauf.
 Einige Produktreihen wie Domains, Webhosting, VPS und Dedicated Server lassen sich auch manuell verlängern.
 Wenn die manuelle Verlängerung für Ihren Dienst aktiviert ist, erhalten Sie bei nahendem Ablaufdatum Benachrichtigungen per E-Mail. Darin enthalten ist ein Link, über den Sie dann online bezahlen können.
-Verlängern Sie Ihren Dienst nicht vor dem Ablaufdatum, wird er gesperrt und nach einigen Tagen entfernt.
+Verlängern Sie Ihren Dienst nicht vor dem Ablaufdatum, wird er gesperrt und nach einigen Tagen entfernt (Die Frist hängt vom betreffenden Dienst ab).
 
 #### Gut zu wissen:
 
