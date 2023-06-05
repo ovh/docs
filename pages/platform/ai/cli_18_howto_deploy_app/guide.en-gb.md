@@ -139,7 +139,7 @@ ovhai app run <registry-address>/<image-identifier>:<tag-name> \
 ```
 
 > [!primary]
-> * Data in the cache is not persisted indefinitely. After a period of inactivity, the data is emptied from the cache. Inactivity is defined as having no running apps using the data in cache.
+> Data in the cache is not persisted indefinitely. After a period of inactivity, the data is emptied from the cache. Inactivity is defined as having no running apps using the data in cache.
 
 ### Attaching compute resources
 
