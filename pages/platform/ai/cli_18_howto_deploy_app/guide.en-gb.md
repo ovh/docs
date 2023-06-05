@@ -16,7 +16,7 @@ To deploy an app, some parameters are mandatory. Others are optional, depending 
 
 ## Requirements
 
--   A working `ovhai` CLI [how to install ovhai CLI](/pages/platform/ai/cli_10_howto_install_cli)
+- A working `ovhai` CLI [how to install ovhai CLI](/pages/platform/ai/cli_10_howto_install_cli)
 
 ## Instructions
 
