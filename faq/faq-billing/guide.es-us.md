@@ -1,10 +1,10 @@
 ---
 title: Preguntas frecuentes sobre la facturación y el pago
 excerpt: Encuentre las preguntas más frecuentes sobre la facturación y el pago
-updated: 2023-05-26
+updated: 2023-06-05
 ---
 
-**Última actualización: 26/05/2023**
+**Última actualización: 05/06/2023**
 
 ## Objetivo
 
@@ -30,7 +30,7 @@ Por defecto, los servicios se renuevan automáticamente en su fecha de expiraci�
 
 En algunos servicios (dominios, alojamientos web, VPS y servidores dedicados), es posible elegir la modalidad de renovación manual. Si sus servicios están configurados para renovarse manualmente, recibirá por correo electrónico una notificación con un enlace para abonar online la factura correspondiente al servicio, cuando se acerque su fecha de expiración.
 
-Si no renueva el servicio antes de la fecha de expiración, este se suspenderá y posteriormente se eliminará al cabo de unos días.
+Si no renueva el servicio antes de la fecha de expiración, este se suspenderá y posteriormente se eliminará al cabo de unos días (el plazo varía en función del servicio en cuestión).
 
 #### Ideas y consejos
 
