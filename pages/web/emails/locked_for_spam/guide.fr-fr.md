@@ -28,18 +28,17 @@ Avant de poursuivre, si le blocage concerne une adresse e-mail de type MXplan, i
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé »|
 
-### Étape 1 : pourquoi votre adresse e-mail est bloquée pour SPAM ?
+### Étape 1 : pourquoi votre adresse e-mail est bloquée pour SPAM ? <a name="step1"></a>
 
 Lorsqu'une activité suspecte est détectée au niveau de l'envoi des e-mails, l'adresse concernée est automatiquement bloquée. Dans cette situation vous ne pouvez plus envoyer d'e-mail depuis cette adresse e-mail.
 
-Tout d'abord, assurez-vous auprès du ou des utilisateurs de l'adresse e-mail bloquée qu'ils ne soient pas directement à l'origine du blocage, suite à une utilisation inhabituelle. Si c'est le cas, il est nécessaire de corriger cela avant de débloquer l'adresse.
+Tout d'abord, assurez-vous auprès du ou des utilisateurs de l'adresse e-mail bloquée qu'ils ne soient pas directement à l'origine du blocage, suite à une utilisation inhabituelle (exemple: envois massif d'e-mail). Si c'est le cas, il est nécessaire de corriger cela avant de débloquer l'adresse.
 
 Si l'activité suspect détecté par l'anti-spam n'a pas été initiée par le ou les utilisateurs légitimes de l'adresse e-mail, nous vous invitons à prendre les mesures ci-dessous:
 
 - Effectuer une analyse antivirus de chacun des postes utilisant l'adresse e-mail bloquée pour spam et appliquer un correctif si ces derniers sont infectés.
 
 - Vérifier tous les logiciels utilisant les identifiants de l'adresse e-mail bloquée pour spam (Exemple: télécopieur, logiciel métier, logiciel de messagerie).
-
 
 ### Étape 2 : vérifier le statut de l'adresse e-mail et accéder au ticket d'assistance associé
 
@@ -75,7 +74,7 @@ Sélectionnez l'offre e-mail concernée dans les onglets suivant:
 >>
 > **MX plan - Historique**
 >>
->> Si le blocage concerne une adresse e-mail [MXplan version historique](#instructions), il n'y a pas de ticket d'assistance. Suivez les instructions suivante.
+>> Si le blocage concerne une adresse e-mail [MXplan version historique](#instructions), il n'y a pas de ticket d'assistance. Veillez bien à consulter [l'étape 1](#step1) de ce guide avant de suivre les instructions suivante.
 >>
 >> Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Webcloud`{.action}. Cliquez sur `Emails`{.action}, puis sélectionnez le nom de domaine concerné.
 >>
