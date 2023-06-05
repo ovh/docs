@@ -40,7 +40,6 @@ Si l'activité suspect détecté par l'anti-spam n'a pas été initiée par le o
 
 - Vérifier tous les logiciels utilisant les identifiants de l'adresse e-mail bloquée pour spam (Exemple: télécopieur, logiciel métier, logiciel de messagerie).
 
-- Modifier le mot de passe de l'adresse e-mail, après avoir effectué l'analyse antivirus, en veillant à ce qu'il soit suffisamment fort. Vous pouvez utiliser [l'outil de création de mot de passe solide](https://www.cnil.fr/fr/generer-un-mot-de-passe-solide) de la CNIL.
 
 ### Étape 2 : vérifier le statut de l'adresse e-mail et accéder au ticket d'assistance associé
 
@@ -124,6 +123,11 @@ Le ticket d'assistance qui a été créé se présente comme ci-dessous :
 Dans la continuité de ce message, un échantillon d'en-têtes des e-mails envoyés vous a été transmis.
 
 Ces en-têtes permettent de déterminer le cheminement et l'origine des e-mails envoyés.
+
+> [!primary]
+>
+> Une fois que votre ticket a été traité par le support client et que votre adresse e-mail a été débloqué, il est conseillé de modifier le mot de passe de l'adresse e-mail, en veillant à ce qu'il soit suffisamment fort. Vous pouvez utiliser [l'outil de création de mot de passe solide](https://www.cnil.fr/fr/generer-un-mot-de-passe-solide) de la CNIL.
+
 
 ## Aller plus loin
 
