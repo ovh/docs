@@ -4,10 +4,10 @@ slug: logs-data-platform-elastalert
 order: 11
 excerpt: Deploy in a few minutes one of the most complete alert system.
 section: Use cases
-updated: 2022-07-28
+updated: 2023-06-05
 ---
 
-**Last updated July 28th, 2022**
+**Last updated June 5th, 2023**
 
 ## Objective
 
@@ -178,6 +178,7 @@ timestamp_field: timestamp
 timestamp_type: custom
 timestamp_format: '%Y-%m-%d %H:%M:%S.%f'
 timestamp_format_expr:  'ts[:23]'
+timestamp_to_datetime_format_expr: 'ts[:23]'
 
 # (Required)
 # A list of OpenSearch filters used for find events
@@ -200,7 +201,7 @@ email:
 
 We won't detail all the parameters since most of them are self-explanatory. However, please pay attention to the **index** parameter. This index or alias is the one containing the logs or documents you want to be alerted from.
 
-It's also important to customize the timestamp parameters according to the timestamp of your logs or documents. Here we customize a **custom** timestamp on the **timestamp_field** `timestamp` with the format used in the logs pipeline `%Y-%m-%d %H:%M:%S.%f`. Because this format can have more than 3 extra numbers, we need to truncate them using the **timestamp_format_expr** option. Note that Elastalert does not support nanoseconds, so you will have to limit the precision of your timestamp to microseconds.
+It's also important to customize the timestamp parameters according to the timestamp of your logs or documents. Here we customize a **custom** timestamp on the **timestamp_field** `timestamp` with the format used in the logs pipeline `%Y-%m-%d %H:%M:%S.%f`. Because this format can have more than 3 extra numbers, we need to truncate them using the **timestamp_format_expr** option. Note that Elastalert does not support nanoseconds, this is why the option **timestamp_to_datetime_format_expr** cuts the timestamp string to 23 characters, so it can be parsed.
 
 ## Launch ElastAlert
 
