@@ -68,31 +68,13 @@ Enter the configuration information of your server:
 - Name (optional)
 - IPv4 address: Enter the public IP associated with your static website default URL in the form of `{bucket}.s3-website.{region}.io.cloud.ovh.net`
 
-*You can retrieve this IP address by doing a dig command on the URL.*
+*You can retrieve this IP address by doing a dig or host command on the URL.*
 
 **Example**:
 
 ```sh
-lxxxx@LWI1XXXXXX:~$ dig s3-website.gra.io.cloud.ovh.net
-
-; <<>> DiG 9.16.1-Ubuntu <<>> s3-website.gra.io.cloud.ovh.net
-;; global options: +cmd
-;; Got answer:
-;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 36134
-;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
- 
-;; OPT PSEUDOSECTION:
-; EDNS: version: 0, flags:; udp: 4096
-;; QUESTION SECTION:
-;s3-website.gra.io.cloud.ovh.net. IN    A
- 
-;; AUTHORITY SECTION:
-cloud.ovh.net.          33      IN      SOA     dns111.ovh.net. tech.ovh.net. 2023040507 86400 3600 3600000 60
- 
-;; Query time: 19 msec
-;; SERVER: 10.15.25.129#53(10.15.25.129)
-;; WHEN: Thu Apr 06 16:06:51 CEST 2023
-;; MSG SIZE  rcvd: 108
+lxxxx@LWI1XXXXXX:~$ host s3-website.gra.io.cloud.ovh.net
+s3-website.gra.io.cloud.ovh.net has address 198.27.92.14
 ```
 
 ![server custer configuration](images/serv-cluster-04.png){.thumbnail}
@@ -159,7 +141,7 @@ Edit the two A records to add the public IP address of your Load Balancer.
 
 Check that the website and the redirect work properly. Open a private browser to ensure that you do have a clean cache and type your domain name.
 
-**Example**: You can check the [https://monkey-profile.xyz](https://monkey-profile.xyz) website that is entirely hosted on an S3 bucket with HTTPS enabled and a **self-signed certificate**.
+**Example**:
 
 ![Testing the website](images/test.PNG){.thumbnail}
 
