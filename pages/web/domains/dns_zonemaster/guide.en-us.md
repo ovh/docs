@@ -34,7 +34,7 @@ updated: 2022-09-12
 
 The Zonemaster tool allows you to check a DNS configuration in place on a domain name or to test a preconfigured DNS zone on future DNS servers.
 
-To check the current configuration of a domain name, enter your domain name, then click `Check`{.action}.
+To check the current configuration of a domain name, enter your domain name, then click `Run`{.action}.
 
 ![Screenshot of the Zonemaster input form. The domain "mydomain.ovh" has been entered and is now ready to be tested.](images/zonemaster01.png){.thumbnail}
 
@@ -72,7 +72,7 @@ For each test, it is possible to get more details, for instance, to understand w
 
 ### Useful information
 
-If you have any additional questions about Zonemaster, see the [FAQ](https://zonemaster.net/en/faq) on <https://zonemaster.fr/>.
+If you have any additional questions about Zonemaster, see the [FAQ](https://zonemaster.net/en/faq) on <https://zonemaster.net/>.
 
 ## Go further <a name="go-further"></a>
 
