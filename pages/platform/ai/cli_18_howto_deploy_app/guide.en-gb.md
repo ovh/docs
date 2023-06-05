@@ -69,7 +69,12 @@ Options:
   -h, --help                                                                                                    Print help (see more with '--help')
 ```
 
-The `IMAGE` argument is mandatory. Indeed, you need to specify a Docker image that you either built yourself or find freely available on a public repository such as [DockerHub](https://hub.docker.com/). 
+The `IMAGE` argument is mandatory. Indeed, you need to specify a Docker image that you either built yourself or find freely available on a public repository such as [DockerHub](https://hub.docker.com/).
+
+> [!primary]
+>
+> More information about adding and managing public & private registries can be found [here](/pages/platform/ai/gi_07_manage_registry).
+>
 
 **To launch a basic app, use the following command**:
 
