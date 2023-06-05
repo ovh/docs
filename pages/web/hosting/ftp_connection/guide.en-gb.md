@@ -74,7 +74,7 @@ Below is a description of the essential information displayed on the `FTP-SSH` p
 > Depending on which OVHcloud [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} you have, some of the information listed above (particularly concerning SSH) may not appear.
 >
 
-If you have forgotten your FTP or SSH user password, please refer to our guide on [Modifying a FTP user password](/pages/web/hosting/ftp_change_password/).
+If you have forgotten your FTP or SSH user password, please refer to our guide on [Modifying a FTP user password](/pages/web/hosting/ftp_change_password).
 
 ![ftpconnect](images/connect-ftp-step2.png){.thumbnail}
 
@@ -86,7 +86,7 @@ There are several ways you can access your FTP storage space. We recommend readi
 
 - [1. Logging in via FTP Explorer](#ftpexplorer): Allows you to access your FTP storage space from your browser.
 
-- [2. Logging in via FTP software](#ftpsoftware): Allows you to access your FTP storage space via software (e.g. [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide/) or [Cyberduck](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac/)). 
+- [2. Logging in via FTP software](#ftpsoftware): Allows you to access your FTP storage space via software (e.g. [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide) or [Cyberduck](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac)). 
 You must first install the FTP client/software you have chosen on your computer.
 
 - [3. Connecting via SSH access](#ssh): Allows you to access your FTP storage space via SSH. You will need advanced knowledge and an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} **Pro** or **Performance** to use this access type.
@@ -105,7 +105,7 @@ On the new page that pops up, enter your FTP username and password, then log in.
 
 #### 2. Logging in via FTP software <a name="ftpsoftware"></a>
 
-Once you have installed the FTP software of your choice on your computer (e.g. [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide/) or [Cyberduck](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac/)), start it. 
+Once you have installed the FTP software of your choice on your computer (e.g. [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide) or [Cyberduck](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac)), start it. 
 
 You should find specific fields where you can enter your login details. 
 
@@ -129,9 +129,9 @@ If the information is correct, the software you are using will display the conte
 
 To connect via SSH, use a terminal to interact directly with your FTP storage space via command lines.
 
-You can find more information on SSH in our guide on [using SSH with your OVHcloud web hosting plan](/pages/web/hosting/ssh_on_webhosting/)
+You can find more information on SSH in our guide on [using SSH with your OVHcloud web hosting plan](/pages/web/hosting/ssh_on_webhosting)
 
-An SSH client is installed by default on *macOS*, *Linux* and *Windows 10*. An older Windows environment will require the installation of software such as [PuTTY](/pages/web/hosting/ssh_using_putty_on_windows/) or the addition of the *OpenSSH* feature. 
+An SSH client is installed by default on *macOS*, *Linux* and *Windows 10*. An older Windows environment will require the installation of software such as [PuTTY](/pages/web/hosting/ssh_using_putty_on_windows) or the addition of the *OpenSSH* feature. 
 
 > [!warning]
 > 
@@ -155,21 +155,21 @@ Once the command has been sent, you will be prompted to enter the SSH user passw
 
 If the information you have entered is correct, you will be logged in to your FTP storage space. 
 
-Please refer to our guide on [Using an SSH connection on a web hosting plan](/pages/web/hosting/ssh_on_webhosting/) if you need help with this.
+Please refer to our guide on [Using an SSH connection on a web hosting plan](/pages/web/hosting/ssh_on_webhosting) if you need help with this.
 
 ![ftpconnect](images/connect-ftp-step5.png){.thumbnail}
 
 ## Go further
 
-[Changing an FTP user password](/pages/web/hosting/ftp_change_password/)
+[Changing an FTP user password](/pages/web/hosting/ftp_change_password)
 
-[Accessing a web hosting plan via SSH](/pages/web/hosting/ssh_on_webhosting/)
+[Accessing a web hosting plan via SSH](/pages/web/hosting/ssh_on_webhosting)
 
-[Using PuTTy for Windows](/pages/web/hosting/ssh_using_putty_on_windows/)
+[Using PuTTy for Windows](/pages/web/hosting/ssh_using_putty_on_windows)
 
-[Tutorial - Using FileZilla with your OVHcloud hosting](/pages/web/hosting/ftp_filezilla_user_guide/)
+[Tutorial - Using FileZilla with your OVHcloud hosting](/pages/web/hosting/ftp_filezilla_user_guide)
 
-[Tutorial - Using Cyberduck with your OVHcloud hosting](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac/)
+[Tutorial - Using Cyberduck with your OVHcloud hosting](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
