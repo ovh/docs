@@ -11,7 +11,7 @@ updated: 2020-04-20
 
 ## Objectif
 
-Si vous avez reçu un e-mail indiquant que l'une de vos adresses e-mail est bloquée pour spam, voici les vérifications et actions à mener.
+Lorsque votre adresse e-mail est bloqué pour SPAM, cela signifie qu'une activité suspecte a été détecté au niveau de l'envoi des e-mails depuis cette adresse. Dans cette situation vous ne pouvez plus envoyer d'e-mail depuis cette adresse e-mail, il est donc nécessaire de comprendre pourquoi une activité détecté et comment l'éviter.
 
 **Découvrez comment réagir lorsque votre adresse est bloquée pour spam.**
 
@@ -20,13 +20,21 @@ Si vous avez reçu un e-mail indiquant que l'une de vos adresses e-mail est bloq
 - Disposer d'une [offre e-mail OVHcloud](https://www.ovhcloud.com/fr/emails/){.external}.
 - Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}.
 
-## En pratique
+## En pratique <a name="instructions"></a>
 
-### Étape 1 : Comprendre pourquoi votre adresse e-mail est bloqué pour SPAM
+Avant de poursuivre, si le blocage concerne une adresse e-mail de type MXplan, il est necessaire d'identifier la version que vous possédez pour suivre le bon processus de déblocage. Verifiez à l'aide du tableau ci-dessous comment distinguer les deux versions.
 
-Lorsque votre adresse e-mail est bloqué pour SPAM, cela signifie qu'une activité suspecte a été détecté au niveau de l'envoi des e-mail depuis cette adresse. Dans cette situation vous ne pouvez plus envoyer d'e-mail depuis cette adresse e-mail.
+|Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
+|---|---|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé »|
 
-Si les envois mentionnés dans les en-têtes n'ont pas été initiés par le ou les utilisateurs légitimes de l'adresse e-mail, nous vous invitons à prendre les mesures ci-dessous:
+### Étape 1 : Pourquoi votre adresse e-mail est bloqué pour SPAM ?
+
+Lorsqu'une activité suspecte est détectée au niveau de l'envoi des e-mails, l'adresse concernée est automatiquement bloqué. Dans cette situation vous ne pouvez plus envoyer d'e-mail depuis cette adresse e-mail.
+
+Tout d'abord, asurez-vous auprès du ou des utilisateurs de l'adresse e-mail bloquée qu'ils ne soient pas directement à l'origine du blocage, suite à une utilisation inhabituel. Si c'est le cas, il est necessaire de corriger cela avant de débloquer l'adresse.
+
+Si l'activité suspect détecté par l'anti-spam n'a pas été initiée par le ou les utilisateurs légitimes de l'adresse e-mail, nous vous invitons à prendre les mesures ci-dessous:
 
 - Effectuer une analyse antivirus de chacun des postes utilisant l'adresse e-mail bloquée pour spam et appliquer un correctif si ces derniers sont infectés.
 
@@ -38,7 +46,9 @@ Si les envois mentionnés dans les en-têtes n'ont pas été initiés par le ou 
 
 > [!warning]
 >
-> Le déblocage de l'adresse e-mail ne se fait pas automatiquement. Il est nécessaire de contacter le support, sur le ticket d'assistance, en répondant aux 3 questions posées.
+> Si le blocage concerne une adresse e-mail [MXplan version historique](#instructions), il n'y a pas d'e-mail 
+
+Le déblocage de l'adresse e-mail ne se fait pas automatiquement. Il est nécessaire de contacter le support, sur le ticket d'assistance, en répondant aux 3 questions posées.
 
 - **Êtes-vous l'émetteur de l'e-mail en question ?** : à l'aide des en-têtes fournis, vérifiez l'expéditeur, le destinataire ainsi que l'objet du message pour vérifier s'il s'agit bien de l'un de vos messages.
 
@@ -48,34 +58,49 @@ Si les envois mentionnés dans les en-têtes n'ont pas été initiés par le ou 
 
 ### Étape 3 : vérifier le statut de l'adresse e-mail et accéder au ticket d'assistance associé
 
-#### Pour une adresse e-mail Exchange
+Sélectionnez l'offre e-mail concernée dans les onglets suivant:
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Webcloud`{.action}. Cliquez sur `Microsoft`{.action} puis sur `Exchange`{.action} et sélectionnez la plateforme Exchange concernée.
-
-Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la colonne « statut » de l'adresse e-mail concernée mentionne « bloqué », cliquez sur `...`{.action} à droite du compte puis sur `Débloquer`{.action}. Passez ensuite à [l'étape 2](./#etape-2-acceder-au-ticket-dassistance_1){.external} du guide.
-
-![spam](images/blocked-for-SPAM-01-01.png){.thumbnail}
-
-#### Pour une adresse E-mail Pro
-
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Webcloud`{.action}. Cliquez sur `E-mail Pro`{.action} puis sélectionnez la plateforme E-mail Pro concernée.
-
-Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la colonne « statut » à droite de l'adresse e-mail concernée mentionne « Spam », cliquez sur cette mention puis sur `Répondre au ticket`{.action}. Passez ensuite à [l'étape 2](./#etape-2-acceder-au-ticket-dassistance_1){.external} du guide.
-
-![spam](images/blocked-for-SPAM-01-02.png){.thumbnail}
-
-#### Pour une adresse e-mail MX plan
-
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Webcloud`{.action}. Cliquez sur `Emails`{.action}, puis sélectionnez le nom de domaine concerné.
-
-Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la colonne « statut » à droite de l'adresse e-mail concernée mentionne « Spam », cliquez sur cette mention puis sur `Répondre au ticket`{.action}. Passez ensuite à [l'étape 2](./#etape-2-acceder-au-ticket-dassistance_1){.external} du guide.
-
-![spam](images/blocked-for-SPAM-01-03.png){.thumbnail}
+> [!tabs]
+> **Exchange**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Webcloud`{.action}. Cliquez sur `Microsoft`{.action} puis sur `Exchange`{.action} et sélectionnez la plateforme Exchange concernée.
+>> 
+>> Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la colonne « statut » de l'adresse e-mail concernée mentionne « bloqué », cliquez sur `...`{.action} à droite du compte puis sur `Débloquer`{.action}. Passez ensuite à [l'étape 2](./#etape-2-acceder-au-ticket-dassistance_1){.external} du guide.
+>> 
+>> ![spam](images/blocked-for-SPAM-01-01.png){.thumbnail}
+>>
+> **Email Pro**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Webcloud`{.action}. Cliquez sur `E-mail Pro`{.action} puis sélectionnez la plateforme E-mail Pro concernée.
+>> 
+>> Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la colonne « statut » à droite de l'adresse e-mail concernée mentionne « Spam », cliquez sur cette mention puis sur `Répondre au ticket`{.action}. Passez ensuite à [l'étape 2](./#etape-2-acceder-au-ticket-dassistance_1){.external} du guide.
+>> 
+>> ![spam](images/blocked-for-SPAM-01-02.png){.thumbnail}
+>>
+> **MX plan - Nouvelle version**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Webcloud`{.action}. Cliquez sur `Emails`{.action}, puis sélectionnez le nom de domaine concerné.
+>>
+>> Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la colonne « statut » à droite de l'adresse e-mail concernée mentionne « Spam », cliquez sur cette mention puis sur `Répondre au ticket`{.action}. Passez ensuite à [l'étape 2](./#etape-2-acceder-au-ticket-dassistance_1){.external} du guide.
+>>
+>> ![spam](images/blocked-for-SPAM-01-03.png){.thumbnail}
+>>
+> **MX plan - Historique**
+>>
+>> Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Webcloud`{.action}. Cliquez sur `Emails`{.action}, puis sélectionnez le nom de domaine concerné.
+>>
+>> Dirigez-vous vers l'onglet `Emails`{.action} de votre plateforme. Si la colonne « Bloqué pour SPAM » mentionne « Oui », cliquez sur cette mention puis sur `Changer le mot de passe`{.action}. Passez ensuite à [l'étape 2](./#etape-2-acceder-au-ticket-dassistance_1){.external} du guide.
+>>
+>> ![spam](images/blocked-for-SPAM-01-04.png){.thumbnail}
+>>
+>> > [!warning]
+>> >
+>> > Dans de rares cas, la colonne « Bloqué pour SPAM » peut indiquer « Non » malgré le fait que l'adresse e-mail soit bloqué. Si vous avez fait le nécessaire pour sécuriser l'adresse e-mail, la solution reste la même que ci-dessus.
 
 
 ### Étape 4 : accéder au ticket d'assistance
 
-Suite à l'étape 1, vous serez alors redirigé vers la fenêtre « Mes demandes d'assistance ». Cliquez sur `...`{.action} à droite du ticket mentionnant l'objet « Account locked for spam.», puis cliquez sur `Voir le détail`{.action}. 
+Suite à l'étape 3, vous serez alors redirigé vers la fenêtre « Mes demandes d'assistance ». Cliquez sur `...`{.action} à droite du ticket mentionnant l'objet « Account locked for spam.», puis cliquez sur `Voir le détail`{.action}.
 
 ![spam](images/blocked-for-SPAM-02.png){.thumbnail}
 
@@ -86,12 +111,12 @@ Le ticket d'assistance qui a été créé se présente comme ci-dessous :
 > 
 > Cher Client,
 >
-> Notre système a détecté que l'adresse **youraddress@domain.com** hébergée sur nos systèmes sous le service **servicename** est source d'envoi de courriers indésirables (spams).
+> Notre système a détecté que l'adresse **youraddress@example.com** hébergée sur nos systèmes sous le service **servicename** est source d'envoi de courriers indésirables (spams).
 > L'envoi d'e-mail a donc été temporairement désactivé.
 >
 > Nous avons actuellement détecté **X** message(s) suspect(s).
 >
-> Afin de nous aider à réactiver l'envoi d'e-mail pour l'adresse : **address@domain.com**,
+> Afin de nous aider à réactiver l'envoi d'e-mail pour l'adresse : **address@example.com**,
 > répondez à cet e-mail en complétant les questions suivantes :
 >
 > - Êtes-vous l'émetteur de l'e-mail en question (voir l'entête ci-dessous) ?
