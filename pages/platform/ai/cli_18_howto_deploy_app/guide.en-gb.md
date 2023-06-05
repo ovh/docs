@@ -134,7 +134,6 @@ Assuming our data is located in the Gravelines (GRA) Object Storage in a contain
 
 ``` {.console}
 ovhai app run <registry-address>/<image-identifier>:<tag-name> \
-    --gpu 1 \
     --volume dataset@GRA:/workspace/dataset:ro:cache \
     --volume output@GRA:/workspace/output:rw \
 ```
