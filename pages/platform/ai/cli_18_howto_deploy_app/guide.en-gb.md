@@ -81,7 +81,7 @@ As indicated in the help command, many options can be passed to this command. Le
 
 ### Setting environment variables
 
-You can tweak the behavior of your Docker image without having to rebuild it every time (like updating the input source of your model (camera, image, video, file, ...)) by using the `--env` flag. Using this, you can simply set environment variables directly in your app. 
+You can tweak the behavior of your Docker image without having to rebuild it every time (like updating the input source of your model (camera, image, video, file, ...) by using the `--env` flag. Using this, you can simply set environment variables directly in your app. 
 
 The values of these `--env` flags will take precedence over those specified in your Dockerfile and in your Python scripts, provided that the python variable is only initialized if it does not exist, as follows:
 
