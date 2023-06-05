@@ -64,6 +64,7 @@ Your choice of plan affects the number of nodes your cluster can run as well as 
 
 > [!primary]
 > Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
+
 #### Nodes
 
 - **Essential**: the cluster is delivered with 1 node by default.
