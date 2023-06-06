@@ -6,7 +6,7 @@ section: User guides
 routes:
     canonical: https://docs.ovh.com/gb/en/kubernetes/managing-nodes-with-api/
 order: 1
-updated: 2023-05-10
+updated: 2023-06-06
 ---
 
 **Last updated 6th June 2023.**
