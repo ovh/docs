@@ -110,7 +110,7 @@ In questa situazione, [connettiti in FTP](../accedere-spazio-storage-ftp-hosting
 
 > [!primary]
 >
-> Per maggiori informazioni sui dati da eliminare per diminuire la quantità di dati presenti sul tuo hosting, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/).<br>
+> Per maggiori informazioni sui dati da eliminare per diminuire la quantità di dati presenti sul tuo hosting, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).<br>
 > Non saremo in grado di fornirti assistenza al riguardo.
 
 ### "Impossibile accedere al database" <a name="delete-the-module"></a>
@@ -141,7 +141,7 @@ Se non disponi di altri database e non desideri ordinare un'offerta complementar
 >
 > **Eliminare elementi nel tuo database può causare un'interruzione del sito.**
 >
-> Per maggiori informazioni, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/).<br>
+> Per maggiori informazioni, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).<br>
 > Non saremo in grado di fornirti assistenza al riguardo.
 >
 
@@ -198,7 +198,7 @@ In caso di rifiuto della password attuale di accesso all'interfaccia di amminist
 
 [Come diagnosticare una pagina bianca?](../web_hosting_come_fai_a_diagnosticare_una_pagina_bianca/)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/)
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/)
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le diverse [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 

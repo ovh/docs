@@ -96,7 +96,7 @@ Si no ha utilizado la funcionalidad "[Módulo en 1 clic](https://docs.ovh.com/us
 
 [Uso de FileZilla con el alojamiento](https://docs.ovh.com/us/es/hosting/web_hosting_guia_de_uso_de_filezilla/)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, consulte nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es/support-levels/).
 

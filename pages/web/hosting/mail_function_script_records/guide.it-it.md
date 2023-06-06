@@ -194,7 +194,7 @@ Il nostro servizio anti-spam analizzerà la situazione e il nostro supporto ti r
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Mettiamo a tua disposizione la sezione che seguirà per supportarti in caso di necessità. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione "Per saperne di più" di questa guida.
+> Mettiamo a tua disposizione la sezione che seguirà per supportarti in caso di necessità. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione "Per saperne di più" di questa guida.
 >
 
 Anche se ti consigliamo vivamente di privilegiare l'utilizzo della funzione "mail()" di PHP, gli hosting condivisi permettono di inviare email passando per uno script che utilizza il protocollo SMTP (Simple Mail Transfer Protocol). La dimensione totale della tua email non potrà superare i **10 MB** (cioè **7/8 MB senza incapsulamento**).
@@ -228,7 +228,7 @@ $mail->Password = "YourEmailPassword";
 
 [Ripristina lo spazio di storage FTP del tuo hosting](https://docs.ovh.com/it/hosting/web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 

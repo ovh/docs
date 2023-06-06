@@ -27,7 +27,7 @@ Hacking can occur in several ways (non-exhaustive list):
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a (https://partner.ovhcloud.com/asia/) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a (https://partner.ovhcloud.com/asia/directory/) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -96,7 +96,7 @@ We also recommend using a [password manager](https://docs.ovh.com/asia/en/custom
 
 > [!warning]
 >
-> If you experience any difficulties carrying out the actions described below, contact a [specialist provider](https://partner.ovhcloud.com/asia/) in cyber security.
+> If you experience any difficulties carrying out the actions described below, contact a [specialist provider](https://partner.ovhcloud.com/asia/directory/) in cyber security.
 >
 
 Use our guide to [your web hosting plan’s statistics and logs](https://docs.ovh.com/asia/en/hosting/shared_view_my_websites_logs_and_statistics/) to search for malicious elements injected into your website. You can find the information in the web logs. 
@@ -221,7 +221,7 @@ Please also refer to our guide on [how to secure your website](https://docs.ovh.
 
 [Optimise your website’s performance](https://docs.ovh.com/asia/en/hosting/web_hosting_optimise_your_website_performance/)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our our [support offers](https://www.ovhcloud.com/asia/support-levels/).
 

@@ -65,7 +65,7 @@ Antes de passar da oferta [Perso](https://www.ovhcloud.com/pt/web-hosting/person
 
 Antes de passar o seu alojamento numa oferta inferior, certifique-se de que a nova oferta inclui suficientes [bases de dados](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/). Verifique também que têm tamanhos suficientes.
 
-Caso contrário, elimine as bases de dados não utilizadas e reduza, se necessário, a quantidade de dados que contêm. Esta quantidade não deve exceder o tamanho máximo das bases de dados da nova oferta (para qualquer pedido de assistência sobre as operações a efetuar, contacte os [parceiros da OVHcloud](https://partner.ovhcloud.com/pt/)).
+Caso contrário, elimine as bases de dados não utilizadas e reduza, se necessário, a quantidade de dados que contêm. Esta quantidade não deve exceder o tamanho máximo das bases de dados da nova oferta (para qualquer pedido de assistência sobre as operações a efetuar, contacte os [parceiros da OVHcloud](https://partner.ovhcloud.com/pt/directory/)).
 
 No seguimento da eliminação de dados nas suas bases de dados, pense em recalcular a quota utilizada a partir do separador `Bases de dados`{.action} na parte `Alojamentos`{.action} do seu Espaço Cliente. Clique no botão `...`{.action} à direita da base em questão e depois `Recalcular o limite`{.action}.
 
@@ -175,7 +175,7 @@ Siga [estas instruções](#modify) para realizar a alteração da oferta.
 
 [Otimizar o desempenho do seu site](https://docs.ovh.com/pt/hosting/partilhado_guia_de_otimizacao_das_performances_do_seu_site/)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, convidamo-lo a consultar as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 

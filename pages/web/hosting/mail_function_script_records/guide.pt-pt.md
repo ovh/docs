@@ -194,7 +194,7 @@ O nosso serviço antisspam irá analisar a situação e o nosso suporte irá vol
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Colocamos à sua disposição a parte que vai seguir para o acompanhar melhor nas suas tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [#go-further](#go-further) deste manual.
+> Colocamos à sua disposição a parte que vai seguir para o acompanhar melhor nas suas tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [#go-further](#go-further) deste manual.
 >
 
 Embora recomendamos vivamente que privilegie a utilização da função "mail()" de PHP, os alojamentos partilhados permitem enviar e-mails passando por um script que utiliza o protocolo SMTP (Simple Mail Transfer Protocol). O tamanho total do seu e-mail não poderá ultrapassar **10 MB** (ou seja, **7/8 MB sem encapsulamento**).
@@ -228,7 +228,7 @@ $mail->Password = "YourEmailPassword";
 
 [Restaurar o espaço de armazenamento FTP do seu alojamento](https://docs.ovh.com/pt/hosting/restauracao-ftp-filezilla-area-de-cliente/)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
  

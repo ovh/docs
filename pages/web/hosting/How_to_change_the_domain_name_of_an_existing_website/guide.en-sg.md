@@ -21,7 +21,7 @@ The aim of this tutorial is to explain the main steps you need to follow when yo
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-sg/) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-sg/directory/) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -35,7 +35,7 @@ The aim of this tutorial is to explain the main steps you need to follow when yo
 > [!warning]
 >
 > Changing a domain name to access your website may affect its SEO ranking. 
-> Be careful about the changes you make, and contact a [specialised provider](https://partner.ovhcloud.com/en-sg/) for SEO if necessary.
+> Be careful about the changes you make, and contact a [specialised provider](https://partner.ovhcloud.com/en-sg/directory/) for SEO if necessary.
 >
 
 To change the access domain name for your website, there are several steps to follow in a specific order.
@@ -88,7 +88,7 @@ Most sites use databases to operate. The tree structure for these nodes is gener
 
 > [!warning]
 >
-> Warning, the operations described in step 2 are extremely sensitive and can have serious consequences for your website if they are not carried out with caution. If you have any doubts, do not try anything and contact a [specialist provider](https://partner.ovhcloud.com/en-sg/).
+> Warning, the operations described in step 2 are extremely sensitive and can have serious consequences for your website if they are not carried out with caution. If you have any doubts, do not try anything and contact a [specialist provider](https://partner.ovhcloud.com/en-sg/directory/).
 >
 > Before you take any action, we advise retrieving a [backup of your FTP storage space](https://docs.ovh.com/gb/en/hosting/restoring-ftp-filezilla-control-panel/) and a [backup of your database](https://docs.ovh.com/sg/en/hosting/web_hosting_database_export_guide/). This will allow you to restore your website in the event of an error.
 >
@@ -150,7 +150,7 @@ Once your old domain has been removed from the multisites tab, and if it is regi
 
 [IP address list for Web Hosting clusters](https://docs.ovh.com/sg/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
 

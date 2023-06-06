@@ -22,7 +22,7 @@ It may also be the case that our security robots have temporarily blocked access
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialised service provider](https://partner.ovhcloud.com/en-au/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialised service provider](https://partner.ovhcloud.com/en-au/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 
@@ -38,18 +38,18 @@ It may also be the case that our security robots have temporarily blocked access
 
 If the page "**403 forbidden**" appeared following an incorrect modification of your site, restore all or part of your [hosting storage space](../restoring-ftp-filezilla-control-panel/) to an earlier date.
 
-If the backups available do not allow you to restore access to your site, contact a [specialised service provider](https://partner.ovhcloud.com/en-au/).
+If the backups available do not allow you to restore access to your site, contact a [specialised service provider](https://partner.ovhcloud.com/en-au/directory/).
 
 If the page "**403 forbidden**" did appear without a modification on your website, check your inbox for an email notifying you that your hosting has been closed due to security reasons. If you have received such a message from our system, skip to [step 2](#step2).
 
-If the page "**403 forbidden**" appeared without any action on your part and you have not received any emails from our hosting services on this subject, contact a [specialised service provider](https://partner.ovhcloud.com/en-au/).
+If the page "**403 forbidden**" appeared without any action on your part and you have not received any emails from our hosting services on this subject, contact a [specialised service provider](https://partner.ovhcloud.com/en-au/directory/).
 
 ### Step 2: Apply security measures on your side <a name="step2"></a>
 
 First, verify the security of your devices and services:
 
 - Perform security updates;
-- Also check that an antivirus software is installed, update it and run a complete scan. If you do not have such software, consult a [specialised service provider](https://partner.ovhcloud.com/en-au/) before installing it;
+- Also check that an antivirus software is installed, update it and run a complete scan. If you do not have such software, consult a [specialised service provider](https://partner.ovhcloud.com/en-au/directory/) before installing it;
 - Change all your personal passwords, including the ones of your email accounts, in accordance with these [best practices](https://docs.ovh.com/au/en/customer/manage-password/#generate-a-strong-password);
 - Change the passwords for all of your OVHcloud services, including your [databases](../change-password-database/) and access to your [FTP storage space](../modify-ftp-user-password/).
 
@@ -59,7 +59,7 @@ First, verify the security of your devices and services:
 >
 > Otherwise, changing your database password will result in your website and any services accessing it being blocked.
 >
-> If you have any doubts about how to do this, contact a [specialised service provider](https://partner.ovhcloud.com/en-au/).
+> If you have any doubts about how to do this, contact a [specialised service provider](https://partner.ovhcloud.com/en-au/directory/).
 >
 
 ### Step 3: Intervene on your hosting
@@ -75,12 +75,12 @@ If your Web Hosting plan was closed less than two weeks ago and contains multipl
 > [!warning]
 >
 > Restoring your storage space alone will not be enough to correct potential security vulnerabilities already present on your site.
-> To identify these security vulnerabilities, you can analyse your hosting system’s ["web logs"](https://docs.ovh.com/au/en/hosting/shared_view_my_websites_logs_and_statistics/#logs), or contact a [specialised service provider](https://partner.ovhcloud.com/en-au/) to perform a security audit on your solutions.
+> To identify these security vulnerabilities, you can analyse your hosting system’s ["web logs"](https://docs.ovh.com/au/en/hosting/shared_view_my_websites_logs_and_statistics/#logs), or contact a [specialised service provider](https://partner.ovhcloud.com/en-au/directory/) to perform a security audit on your solutions.
 >
 
 #### Case no. 2: Your Web Hosting plan has been disabled for more than two weeks
 
-If your Web Hosting plan was closed more than two weeks ago, contact a [specialised service provider](https://partner.ovhcloud.com/en-au/). 
+If your Web Hosting plan was closed more than two weeks ago, contact a [specialised service provider](https://partner.ovhcloud.com/en-au/directory/). 
 
 ### Step 4: Reactivate your Web Hosting plan <a name="reactivate-web-hosting"></a>
 
