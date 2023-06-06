@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Enabling HTTPS on an S3 static website using a custom domain
 excerpt: Learn how to configure your website and the OVHcloud Load Balancer to enable HTTPS
-updated: 2023-05-15
+updated: 2023-06-06
 ---
 
 ## Objective
