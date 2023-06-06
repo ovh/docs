@@ -3,7 +3,7 @@ title: 'Automatische Sicherung - Kernel Panic (cPanel)'
 slug: cpanel_auto_backup
 excerpt: 'Erfahren Sie, wie Sie Probleme mit der Blockierung von cPanel-Servern beim automatischen Backup von OVHcloud lösen.'
 section: 'Fortgeschrittene Nutzung'
-updated: 2021-03-09
+updated: 2023-06-06
 ---
 
 > [!primary]
@@ -62,6 +62,16 @@ Mit dieser Einstellung können Sie die Verwendung einer Jailed Shell für besteh
 Diese Einstellung beeinträchtigt nicht die Accounts, die bereits auf dem Server existieren, aber in diesen Interfaces nicht geändert wurden.
 
 Um die Jailed Shell-Umgebung eines bestimmten Benutzers zu deaktivieren, verwenden Sie "Manage Shell Access" von WHM (WHM >> Home >> Account Functions >> Manage Shell Access).
+
+Alle diese Informationen finden Sie in der [cPanel Dokumentation](https://docs.cpanel.net/knowledge-base/accounts/virtfs-jailed-shell/#disable-or-remove-a-jailed-shell-environment).
+
+> [!warning]
+>
+> Wie von cPanel angegeben, können bestimmte Funktionen weiterhin die von Jailed Shell erstellten Ordner verwenden. So können Sie trotz der Deaktivierung der Jailed Shell Umgebung weiterhin Schwierigkeiten bei der Verwaltung Ihrer Backups haben.
+>
+> Wenn Sie trotzdem die Jailed Shell Funktion deaktivieren und die erstellten "virtfs"-Ordner löschen möchten, beachten Sie bitte, dass das Löschen des "virtfs"-Verzeichnisses zum Verlust von Benutzerdaten führen kann.
+>
+> Vergewissern Sie sich, dass Sie zuvor alle notwendigen Sicherungen durchgeführt haben.
 
 ### Die Sicherheit der /tmp Partition auf cPanel deaktivieren
 
