@@ -4,7 +4,7 @@ slug: blocked-for-spam
 excerpt: 'Find out what to do if your email address has been blocked for spam'
 section: Troubleshooting
 order: 01
-updated: 2020-04-20
+updated: 2023-06-06
 ---
 
 **Last updated 20th April 2020**
