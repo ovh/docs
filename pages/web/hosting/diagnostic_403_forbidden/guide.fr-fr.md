@@ -79,6 +79,18 @@ Vérifiez tout d'abord la sécurité de votre (vos) poste(s)/appareil(s) informa
 
 Notez tout d'abord la date d'envoi de l'e-mail d'OVHcloud indiquant la désactivation de votre hébergement web, ainsi que le ou les dossiers contenant les exemples de fichiers illégitimes.
 
+> [!primary]
+>
+> Nos robots de sécurité peuvent appliquer deux niveaux de désactivation sur votre hébergement web : 
+>
+> - une désactivation en appliquant un « **CHMOD 700** » à la racine FTP de votre hébergement web;
+> - une désactivation en appliquant un « **CHMOD 000** » à la racine FTP de votre hébergement web.
+>
+> Dans le cas d'une désactivation par restriction d'accès FTP en « **CHMOD 000** », contactez obligatoirement nos [équipes support](https://www.ovhcloud.com/fr/support-levels/) pour faire le point sur la situation avant de poursuivre les étapes décrites dans ce guide. 
+>
+> En fonction de votre situation, ces derniers appliqueront une restriction moins élevée en transformant le « **CHMOD 000** » en « **CHMOD 700** » afin que vous puissiez agir sur l'espace FTP de votre hébergement web.
+>
+
 #### Cas n°1 : votre hébergement web a été désactivé il y a moins de deux semaines
 
 Si votre hébergement a été fermé il y a moins de deux semaines et qu'il ne contient qu'un seul site web, restaurez votre espace de stockage FTP. S'il contient plusieurs sites web, restaurez uniquement le ou les dossiers contenant les fichiers illégitimes.
