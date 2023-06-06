@@ -30,7 +30,7 @@ updated: 2022-07-28
  }
 </style>
 
-**Last updated 28th July 2022.**
+**Last updated 6th June 2023.**
 
 ## Objective
 
@@ -165,12 +165,12 @@ resource "ovh_cloud_project_kube_nodepool" "pool" {
         }
         spec {
             unschedulable = false
-            taints = [
-            {
-                effect = "PreferNoSchedule"
-                key    = "k1"
-                value  = "v1"
-            }
+taints = [
+                {
+                    effect = "PreferNoSchedule"
+                    key    = "k1"
+                    value  = "v1"
+                }
             ]
         }
     }
