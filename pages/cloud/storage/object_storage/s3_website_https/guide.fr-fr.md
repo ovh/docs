@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Activer HTTPS sur un site web S3 statique en utilisant un domaine personnalisé
 excerpt: Découvrez comment configurer votre site web et le Load Balancer OVHcloud pour activer le HTTPS
-updated: 2023-05-15
+updated: 2023-06-06
 ---
 
 ## Objectif
@@ -70,29 +70,32 @@ Renseignez les informations de configuration de votre serveur :
 
 *Vous pouvez récupérer cette adresse IP en effectuant une commande dig sur l'URL.*
 
-**Exemple** :
+**Exemple**: via une commande `dig`
 
 ```sh
-lxxxx@LWI1XXXXXX:~$ dig s3-website.gra.io.cloud.ovh.net
-
-; <<>> DiG 9.16.1-Ubuntu <<>> s3-website.gra.io.cloud.ovh.net
+lxxxx@LWI1XXXXXX:~$ dig my-site.s3-website.gra.io.cloud.ovh.net
+; <<>> DiG 9.16.1-Ubuntu <<>> my-site.s3-website.gra.io.cloud.ovh.net
 ;; global options: +cmd
 ;; Got answer:
-;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 36134
-;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
- 
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 22041
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
 ;; OPT PSEUDOSECTION:
 ; EDNS: version: 0, flags:; udp: 4096
 ;; QUESTION SECTION:
-;s3-website.gra.io.cloud.ovh.net. IN    A
- 
-;; AUTHORITY SECTION:
-cloud.ovh.net.          33      IN      SOA     dns111.ovh.net. tech.ovh.net. 2023040507 86400 3600 3600000 60
- 
-;; Query time: 19 msec
+;my-site.s3-website.gra.io.cloud.ovh.net. IN A
+;; ANSWER SECTION:
+my-site.s3-website.gra.io.cloud.ovh.net. 3600 IN A 141.95.161.77
+;; Query time: 12 msec
 ;; SERVER: 10.15.25.129#53(10.15.25.129)
-;; WHEN: Thu Apr 06 16:06:51 CEST 2023
-;; MSG SIZE  rcvd: 108
+;; WHEN: Mon Jun 05 16:09:56 CEST 2023
+;; MSG SIZE  rcvd: 84
+```
+
+**Example**: via une commande `host`
+
+```sh
+lxxxx@LWI1XXXXXX:~$ host my-site.s3-website.gra.io.cloud.ovh.net
+my-site.s3-website.gra.io.cloud.ovh.NET has address 141.95.161.77
 ```
 
 ![configuration cluster du serveur](images/serv-cluster-04.png){.thumbnail}
@@ -159,7 +162,7 @@ Modifiez les deux enregistrements A pour ajouter l'adresse IP publique de votre 
 
 Vérifiez que le site web et la redirection fonctionnent correctement. Ouvrez votre navigateur internet en navigation privée pour vous assurer que le cache est vide et saisissez votre nom de domaine.
 
-**Exemple** : vous pouvez vérifier le site [https://monkey-profile.xyz](https://monkey-profile.xyz) entièrement hébergé sur un bucket S3 avec HTTPS activé et un certificat **auto-signé**.
+**Exemple** : 
 
 ![Test du site web](images/test.PNG){.thumbnail}
 
