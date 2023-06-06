@@ -1,7 +1,7 @@
 ---
 title: NSX - FAQ
 excerpt: Frequently asked questions on NSX
-updated: 2023-05-23
+updated: 2023-06-06
 ---
 
 **Find below the frequently asked questions about NSX.**
@@ -13,13 +13,11 @@ updated: 2023-05-23
 - [Is it possible to connect to the Tier-0 from the command line to perform debugging or packet capture?](#t0commandline)
 - [Is it possible to modify or add NSX Edge VMs?](#nsxedgeaddition)
 - [What is the maximum number of interfaces (connected segments) on a Tier-1 Gateway?](#t1interfacecapacity)
-- [What is the maximum number of Tier-1 Gateways per Edge?](#t1edgecapacity)
 - [Is it possible to connect to the Tier-1 from the command line to perform debugging or packet capture?](t1commandline)
 - [How can I add more Public IPs?](#addpublicip)
 - [Can IP address blocks be used/distributed between two VMware DCs in the same PCC?](#ipblockdistribution)
 - [Is the Internet output configurable? In other words, can I deploy the interface?](#internetoutput)
 - [Will the compute cluster have access to vRack ? Or will the vRACK be connected only to Edge Node?](#vrackaccess)
-- [Can I bridge/stretch (using NSX) a vRack VLAN into Geneve (Generic Network Virtualization Encapsulation) portgroups?](vrackbridge)
 - [Can I configure High Availability (HA)?](#ha)
 - [Is it possible to use NSX Advanced Load Balancer?](#lb)
 - [Can I use the OVHcloud API to configure and use NSX?](#api)
@@ -58,9 +56,6 @@ updated: 2023-05-23
 > <a name="t1interfacecapacity"></a>
 > What is the maximum number of interfaces (connected segments) on a Tier-1 Gateway?
 >> This information can be found in NSX > Inventory > Capacity.
->
-> <a name="t1edgecapacity"></a>
-> What is the maximum number of Tier-1 Gateways per Edge?
 >> Regarding the Edges, we refer to the Gateways and the Tier-0 and Tier-1. Tier-0 is already deployed and uses 3 public IPs to route between the active/backup Gateways and uses the concept of a VIP that is in front of the 2 internal public IPs. This is used for failover and redundancy.
 >> NSX and NSX-v are different and at the moment you cannot break the current Tier-0 configuration and deploy others.
 >
@@ -84,10 +79,6 @@ updated: 2023-05-23
 > Will the compute cluster have access to vRack ? Or will the vRACK be connected only to Edge Node ?
 >> The NSX cluster is fully compatible with vRack. You can add the NSX service in your PCC vRack. Find more information about vRack on [this page](/pages/cloud/private-cloud/vrack_and_hosted_private_cloud).
 >
-> <a name="vrackbridge"></a>
-> Can I bridge/stretch (using NSX) a vRack VLAN into Geneve (Generic Network Virtualization Encapsulation) portgroups?
-> The NSX cluster is fully compatible with vRack. You can add the NSX service in your PCC vRack. Find more information about vRack on [this page](/pages/cloud/private-cloud/vrack_and_hosted_private_cloud).
->
 > <a name="ha"></a>
 > Can I configure High Availability (HA)?
 >> No, NSX Edges are configured by OVHcloud following VMware best practices regarding HA.
@@ -106,7 +97,7 @@ updated: 2023-05-23
 >
 > <a name="veeamzerto"></a>
 > What about my Veeam and Zerto options? Are they still compatible with NSX?
->> Yes but your should configure them after the vDC migration.
+>> Yes but you will have to reconfigure them after vDC migration.
 >
 > <a name="nsxedge"></a>
 > Is it possible to communicate an NSX edge between 2 PCC?
