@@ -3,7 +3,7 @@ title: 'Tutoriel - Utilisation de Zonemaster'
 slug: ovhcloud-domain-zonemaster-tutorial
 section: DNS et zone DNS
 order: 08
-updated: 2022-09-12
+updated: 2023-06-06
 ---
 
 **Dernière mise à jour le 12/09/2022**
@@ -40,8 +40,8 @@ Pour vérifier la configuration actuelle d'un nom de domaine, saisissez votre no
 
 Pour vérifier une configuration DNS que vous avez préparée mais pas encore appliquée au nom de domaine concerné, cochez la case `Options`{.action}, puis saisissez les informations suivantes :
 
-- **Serveurs DNS** : Saisissez les informations du serveur de nom associé à un nom de domaine. Cliquez sur le `+`{.action} pour pouvoir ajouter un serveur de nom supplémentaire. La saisie d'une adresse IP est facultative.
-- **Délégation du Signataire (enregistrement DS)**: Dans le cadre d'une protection DNSSEC, saisissez les éléments de l'enregistrement DS. Cliquez sur le `+`{.action} pour pouvoir ajouter un enregistrement DS supplémentaire. Si les serveurs DNS n'utilisent pas le protocole DNSSEC, vous pouvez laisser ces champs libres. Dans le cas d’une zone signée avec DNSSEC, cette fonction permet de vérifier que la zone fonctionne correctement avec un résolveur validant, avec les enregistrements DS qu’on est sur le point de publier, préalablement à leur publication.
+- **Serveurs DNS** : saisissez les informations du serveur de nom associé à un nom de domaine. Cliquez sur le `+`{.action} pour pouvoir ajouter un serveur de nom supplémentaire. La saisie d'une adresse IP est facultative.
+- **Délégation du Signataire (enregistrement DS)**: dans le cadre d'une protection DNSSEC, saisissez les éléments de l'enregistrement DS. Cliquez sur le `+`{.action} pour pouvoir ajouter un enregistrement DS supplémentaire. Si les serveurs DNS n'utilisent pas le protocole DNSSEC, vous pouvez laisser ces champs libres. Dans le cas d’une zone signée avec DNSSEC, cette fonction permet de vérifier que la zone fonctionne correctement avec un résolveur validant, avec les enregistrements DS qu’on est sur le point de publier, préalablement à leur publication.
 
 
 Vous pouvez également forcer les vérifications sur un protocole IP spécifique, via les cases `Désactiver IPv6` et `Désactiver IPv4`
@@ -59,17 +59,16 @@ Vous pouvez également forcer les vérifications sur un protocole IP spécifique
 >
 > ![Capture d'écran de la page de résultats de Zonemaster pour le domaine « mydomain.ovh ». La section « Adresses » est développée.](images/zonemaster03.png){.thumbnail}
 
-
 ### Résultat
 
-Une fois le formulaire validé, les résultats sont affichés par groupe de tests. Les tests sont classés par niveau de sévérité
+Une fois le formulaire validé, les résultats sont affichés par groupe de tests. Les tests sont classés par niveau de sévérité.
 
-- **Erreur** : Cette partie présente des erreurs ou des éléments manquants pouvant causer un dysfonctionnement.
-- **Avertissement** : Cette partie est fonctionnelle, mais mérite une attention particulière. L'outil a détecté qu'un paramètre ne répond pas au standard de sa catégorie, sans que cela ne bloque son fonctionnement.
-- **Note** : Il s'agit d'une simple information, sans conséquence particulière sur le fonctionnement du nom de domaine.
-- **Info** : Cette partie est fonctionnelle et répond aux critères standard dans sa catégorie.
+- **Erreur** : cette partie présente des erreurs ou des éléments manquants pouvant causer un dysfonctionnement.
+- **Avertissement** : cette partie est fonctionnelle mais mérite une attention particulière. L'outil a détecté qu'un paramètre ne répond pas au standard de sa catégorie, sans que cela ne bloque son fonctionnement.
+- **Note** : il s'agit d'une simple information, sans conséquence particulière sur le fonctionnement du nom de domaine.
+- **Info** : cette partie est fonctionnelle et répond aux critères standard dans sa catégorie.
 
-Pour chaque test il est possible d'avoir plus de détails, par example pour comprendre l'erreur dans le cas d'un disfonctionnement, ou simplement à titre indicatif.
+Pour chaque test, il est possible d'obtenir plus de détails, par example pour comprendre l'erreur dans le cas d'un dysfonctionnement, ou simplement à titre indicatif.
 
 ![domains](images/zonemaster04.png){.thumbnail}
 
