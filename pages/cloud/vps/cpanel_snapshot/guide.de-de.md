@@ -22,7 +22,7 @@ Wenn Sie jedoch den Jailed Shell Zugang aktiviert haben, erstellt cPanel ein *vi
 
 1. QEMU Guest Agent deaktivieren
 2. Jailed Shell nicht erlauben
-3. Die Sicherheit der /tmp Partition deaktivieren (von cPanel nicht empfohlen, dies ist jedoch eine verfügbare Option)
+3. Die Sicherung der /tmp Partition deaktivieren (von cPanel nicht empfohlen, dies ist jedoch eine verfügbare Option)
 
 ## Voraussetzungen
 
@@ -48,20 +48,20 @@ systemctl stop qemu-guest-agent
 systemctl disable qemu-guest-agent
 ```
 
-### Von Jailed Shell zu Normal Shell
+### Von Jailed Shell zu Normal Shell umstellen
 
 Sie können [hier die Unterschiede zwischen Jailed Shell und Normal Shell](https://support.cpanel.net/hc/en-us/articles/360051992634-Differences-Between-Normal-and-Jailed-Shell) nachlesen.
 
-Um eine Jailed Shell Umgebung für alle Benutzer zu deaktivieren, müssen Sie die "jailshell"-Option in den "WHM Tweak Settings" (WHM >> Home >> Server Tweak >> Settings Konfiguration) deaktivieren.
+Um eine Jailed Shell Umgebung für alle Benutzer zu deaktivieren, müssen Sie die "jailshell"-Option im WHM Interface "Tweak Settings" (WHM >> Home >> Server Configuration >> Tweak Settings) deaktivieren.
 
 Mit dieser Einstellung können Sie die Verwendung einer Jailed Shell für bestehende Konten aktivieren und deaktivieren, sowie für Konten, die Sie in den folgenden Interfaces bearbeiten: 
 
-1. Interface "WHM's Modify an Account" (WHM >> Home >> Account Functions >> Modify An Account)
-2. Interface "WHM's Upgrade/Downgrade an Account" (WHM >> Home >> Account Functions >> Upgrade/Downgrade An Account)
+1. WHM Interface "Modify An Account" (WHM >> Home >> Account Functions >> Modify An Account)
+2. WHM Interface "Upgrade/Downgrade An Account" (WHM >> Home >> Account Functions >> Upgrade/Downgrade An Account)
 
 Diese Einstellung beeinträchtigt nicht die Accounts, die bereits auf dem Server existieren, aber in diesen Interfaces nicht geändert wurden.
 
-Um die Jailed Shell-Umgebung eines bestimmten Benutzers zu deaktivieren, verwenden Sie "Manage Shell Access" von WHM (WHM >> Home >> Account Functions >> Manage Shell Access).
+Um die Jailed Shell Umgebung eines bestimmten Benutzers zu deaktivieren, verwenden Sie in WHM "Manage Shell Access" (WHM >> Home >> Account Functions >> Manage Shell Access).
 
 Alle diese Informationen finden Sie in der [cPanel Dokumentation](https://docs.cpanel.net/knowledge-base/accounts/virtfs-jailed-shell/#disable-or-remove-a-jailed-shell-environment).
 
@@ -69,13 +69,13 @@ Alle diese Informationen finden Sie in der [cPanel Dokumentation](https://docs.c
 >
 > Wie von cPanel angegeben, können bestimmte Funktionen weiterhin die von Jailed Shell erstellten Ordner verwenden. So können Sie trotz der Deaktivierung der Jailed Shell Umgebung weiterhin Schwierigkeiten bei der Verwaltung Ihrer Backups haben.
 >
-> Wenn Sie trotzdem die Jailed Shell Funktion deaktivieren und die erstellten "virtfs"-Ordner löschen möchten, beachten Sie bitte, dass das Löschen des "virtfs"-Verzeichnisses zum Verlust von Benutzerdaten führen kann.
+> Wenn Sie trotzdem die Jailed Shell Funktion deaktivieren und die erstellten "virtfs"-Ordner löschen möchten, beachten Sie, dass das Löschen von "virtfs" zum Verlust von Benutzerdaten führen kann.
 >
-> Vergewissern Sie sich, dass Sie zuvor alle notwendigen Sicherungen durchgeführt haben.
+> Vergewissern Sie sich, dass Sie zuvor alle notwendigen Datensicherungen durchgeführt haben.
 
-### Die Sicherheit der /tmp Partition auf cPanel deaktivieren
+### Die Sicherung der /tmp Partition auf cPanel deaktivieren
 
-Bitte beachten Sie, dass diese Methode von cPanel nicht empfohlen wird. Ihre Verwendung ist auf Ihr eigenes Risiko beschränkt. Wenn Sie mit dieser Option fortfahren möchten, können Sie die genauen Schritte aus der [cPanel Dokumentation](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/#harden-your-tmp-partition) erfahren.
+Beachten Sie, dass diese Methode von cPanel nicht empfohlen wird. Ihre Verwendung erfolgt auf Ihr eigenes Risiko. Wenn Sie mit dieser Option fortfahren möchten, können Sie die genauen Schritte aus der [cPanel Dokumentation](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/#harden-your-tmp-partition) erfahren.
 
 ## Weiterführende Informationen
 
