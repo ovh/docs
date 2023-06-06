@@ -100,7 +100,7 @@ Zalecamy również użycie [menedżera haseł](https://docs.ovh.com/pl/customer/
 
 > [!warning]
 >
-> W przypadku trudności z wykonaniem opisanych poniżej operacji, należy skontaktować się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/) w zakresie bezpieczeństwa cybernetycznego.
+> W przypadku trudności z wykonaniem opisanych poniżej operacji, należy skontaktować się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/) w zakresie bezpieczeństwa cybernetycznego.
 >
 
 Skorzystaj z naszego przewodnika na temat [statystyki i logi Twojego hostingu www](https://docs.ovh.com/pl/hosting/hosting_statystyki_i_logi_strony/), aby wyszukać złośliwe elementy wprowadzone na Twoją stronę WWW. Informacje znajdziesz w logach "www". 

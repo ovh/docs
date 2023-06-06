@@ -19,7 +19,7 @@ L'utilisation de vos bases de données peut entraîner un certain nombre d'anoma
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
 >
 
 ## Prérequis
@@ -55,7 +55,7 @@ Connectez-vous en [FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockag
 >
 > Le choix et la configuration du fichier comportant les informations de connexion à la base de données est inhérent à l'éditeur de contenu (CMS) concerné et non à OVHcloud.
 >
-> Nous vous recommandons donc de vous rapprocher de l’éditeur du [CMS](https://docs.ovh.com/fr/hosting/modules-en-1-clic/) utilisé pour créer votre site ou de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) en cas de besoin. Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
+> Nous vous recommandons donc de vous rapprocher de l’éditeur du [CMS](https://docs.ovh.com/fr/hosting/modules-en-1-clic/) utilisé pour créer votre site ou de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) en cas de besoin. Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
 Vérifiez ensuite la correspondance **exacte** entre les identifiants de connexion à [PhpMyAdmin](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/#acceder-a-linterface-phpmyadmin) et ceux du fichier de configuration de votre site.
@@ -92,7 +92,7 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 >
 > Si ces manipulations ne vous permettent pas de rétablir l'accès à votre site, [sauvegardez votre base de données](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/) puis [restaurez-la à une date antérieure](https://docs.ovh.com/fr/hosting/restaurer-importer-base-de-donnees/#1-restaurer-une-sauvegarde-existante) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 >
-> Contactez ensuite un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si nécessaire. Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
+> Contactez ensuite un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si nécessaire. Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
 ### Dépassement du quota autorisé de la base de données
@@ -141,7 +141,7 @@ Relancez ensuite le calcul du quota utilisé depuis l'onglet `Bases de données`
 
 > [!warning]
 >
-> Cette opération nécessite de fortes compétences techniques. Nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) en cas de besoin pour la réaliser. Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
+> Cette opération nécessite de fortes compétences techniques. Nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) en cas de besoin pour la réaliser. Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
 >
 
 #### Méthode 4 : optimiser votre base de données
@@ -195,7 +195,7 @@ Vous pouvez également cocher la case `Vider la base de données actuelle`{.acti
 
 ![database-import-empty](images/database-import-empty.png){.thumbnail}
 
-Contactez si besoin notre [communauté d'utilisateurs](https://community.ovh.com) ou un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) à ce sujet. Nous ne serons pas en mesure de vous fournir une assistance sur la correction de cette anomalie.
+Contactez si besoin notre [communauté d'utilisateurs](https://community.ovh.com) ou un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) à ce sujet. Nous ne serons pas en mesure de vous fournir une assistance sur la correction de cette anomalie.
 
 > [!faq]
 >

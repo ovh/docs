@@ -39,7 +39,7 @@ Este tutorial tem como objetivo explicar os principais passos a seguir quando de
 > [!warning]
 >
 > A alteração do nome de domínio para aceder ao seu site pode afetar o seu referenciamento. 
-> Esteja atento às operações que vai efetuar ou contactar um [fornecedor especializado](https://partner.ovhcloud.com/pt/) no referenciamento, se necessário.
+> Esteja atento às operações que vai efetuar ou contactar um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) no referenciamento, se necessário.
 >
 
 Para alterar o domínio de acesso ao seu website, deverá realizar várias etapas por uma ordem precisa.

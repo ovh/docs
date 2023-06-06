@@ -260,7 +260,7 @@ Aby zmniejszyć przepływ zapytań do każdego załadowania strony, możesz rów
 
 > [!warning]
 >
-> Operacje, które wykonujesz w bazie danych mogą mieć nieodwracalne konsekwencje, jeśli nie są przeprowadzane metodycznie i prawidłowo. Skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/), jeśli nie masz pewności co do działań, jakie należy przeprowadzić. 
+> Operacje, które wykonujesz w bazie danych mogą mieć nieodwracalne konsekwencje, jeśli nie są przeprowadzane metodycznie i prawidłowo. Skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/), jeśli nie masz pewności co do działań, jakie należy przeprowadzić. 
 >
 
 Sprawdź, czy do Twojej bazy danych wykonywana jest znaczna liczba zapytań.<br>

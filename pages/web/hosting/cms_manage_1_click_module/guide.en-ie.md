@@ -97,7 +97,7 @@ Then, click on the `...`{.action} button to the right of the line related to you
 > - PrestaShop : The software publisher does not currently offer any documentation for changing the password for accessing the PrestaShop administration interface. Please contact the publisher directly on this subject. For more information, click [here](https://www.prestashop.com){.external} to go to their official page.
 >
 You can also change the password for accessing your CMS admin interface directly from your database.<br>
-However, we strongly recommend using the documentation provided by your CMS publisher, or contacting a [specialist provider](https://partner.ovhcloud.com/en-ie/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+However, we strongly recommend using the documentation provided by your CMS publisher, or contacting a [specialist provider](https://partner.ovhcloud.com/en-ie/directory/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 
 ### Delete your module
 

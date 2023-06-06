@@ -25,7 +25,7 @@ Permite publicar archivos o su sitio web [conectándose al espacio FTP](https://
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 > 
-> Ponemos a su disposición este tutorial para ayudarle a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) o con el editor del programa. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado ["Más información"](#go-further) de este tutorial.
+> Ponemos a su disposición este tutorial para ayudarle a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con el editor del programa. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado ["Más información"](#go-further) de este tutorial.
 > 
 
 ## Requisitos

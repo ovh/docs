@@ -23,7 +23,7 @@ Este tutorial explica cómo utilizar el generador de sitios web [Cecil](https://
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 > 
-> Si necesita ayuda para seguir los pasos de este tutorial, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) . Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado ["Más información"](#go-further) de esta guía.
+> Si necesita ayuda para seguir los pasos de este tutorial, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) . Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado ["Más información"](#go-further) de esta guía.
 >
 
 ## Requisitos

@@ -27,7 +27,7 @@ Hacking can occur in several ways (non-exhaustive list):
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a (https://partner.ovhcloud.com/en-ie/) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a (https://partner.ovhcloud.com/en-ie/directory/) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -96,7 +96,7 @@ We also recommend using a [password manager](https://docs.ovh.com/ie/en/customer
 
 > [!warning]
 >
-> If you experience any difficulties carrying out the actions described below, contact a [specialist provider](https://partner.ovhcloud.com/en-ie/) in cyber security.
+> If you experience any difficulties carrying out the actions described below, contact a [specialist provider](https://partner.ovhcloud.com/en-ie/directory/) in cyber security.
 >
 
 Use our guide to [your web hosting plan’s statistics and logs](https://docs.ovh.com/ie/en/hosting/shared_view_my_websites_logs_and_statistics/) to search for malicious elements injected into your website. You can find the information in the web logs. 

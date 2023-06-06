@@ -27,7 +27,7 @@ Może się również zdarzyć, że po wykryciu anomalii nasze roboty związane z
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [[wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/)](https://partner.ovhcloud.com/pl/) i/lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [[wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/)](https://partner.ovhcloud.com/pl/directory/) i/lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
 >
 
 ## Wymagania początkowe
@@ -42,18 +42,18 @@ Może się również zdarzyć, że po wykryciu anomalii nasze roboty związane z
 
 Jeśli strona **"403 forbidden"** pojawiła się w wyniku nieprawidłowej modyfikacji strony WWW, [przywróć całość lub część przestrzeni dyskowej hostingu](../hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/) z wcześniejszą datą.
 
-Jeśli dostępne kopie zapasowe nie pozwolą Ci przywrócić dostępu do Twojej strony WWW, skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/).
+Jeśli dostępne kopie zapasowe nie pozwolą Ci przywrócić dostępu do Twojej strony WWW, skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/).
 
 Jeśli strona **"403 forbidden"** nie pojawiła się po zmianie strony, sprawdź swoją skrzynkę pocztową. Jeśli otrzymałeś e-mail z naszych usług informujący o zamknięciu Twojego hostingu ze względów bezpieczeństwa, przejdź [do etapu drugiego](#step2).
 
-Jeśli pojawi się strona **"403 forbidden"** bez podjęcia przez Ciebie działań i nie otrzymałeś e-maili od naszych usług w tym zakresie, skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/).
+Jeśli pojawi się strona **"403 forbidden"** bez podjęcia przez Ciebie działań i nie otrzymałeś e-maili od naszych usług w tym zakresie, skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/).
 
 ### Etap 2: zabezpiecz swoje rozwiązania <a name="step2"></a>
 
 Sprawdź bezpieczeństwo Twojej poczty lub stacji:
 
 - Wykonaj aktualizacje dotyczące bezpieczeństwa;
-- Upewnij się również, czy zainstalowany jest antywirus, zaktualizuj go i uruchom pełny skan. Jeśli nie posiadasz domeny w OVHcloud, przed instalacją skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/) usług hostingowych;
+- Upewnij się również, czy zainstalowany jest antywirus, zaktualizuj go i uruchom pełny skan. Jeśli nie posiadasz domeny w OVHcloud, przed instalacją skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/) usług hostingowych;
 - Zmień wszystkie Twoje lokalne hasła, zwłaszcza te przypisane do Twoich kont e-mail, przestrzegając tych [dobrych praktyk](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/#generowanie-hasla);
 - Zmień hasła do wszystkich usług OVHcloud, w szczególności do [bazy danych](../zmiana-hasla-do-bazy-danych/) i do [przestrzeni dyskowej FTP](../zmiana-hasla-konto-ftp/).
 
@@ -63,7 +63,7 @@ Sprawdź bezpieczeństwo Twojej poczty lub stacji:
 >
 > W przeciwnym razie zmiana hasła do Twojej bazy danych spowoduje wyłączenie strony WWW lub jej usług.
 >
-> W przypadku wątpliwości dotyczących sposobu postępowania skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+> W przypadku wątpliwości dotyczących sposobu postępowania skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 >
 
 ### Etap 3: interweniować na Twoim hostingu
@@ -79,12 +79,12 @@ Jeśli Twój hosting został zamknięty mniej niż dwa tygodnie temu i zawiera k
 > [!warning]
 >
 > Sam powrót do przestrzeni dyskowej nie wystarczy, aby usunąć ewentualne luki bezpieczeństwa, które pojawiły się na Twojej stronie WWW.
-> W celu identyfikacji luk w zabezpieczeniach, możesz przeanalizować ["logi WWW"](https://docs.ovh.com/pl/hosting/hosting_statystyki_i_logi_strony/#logi) Twojego hostingu lub skorzystać z pomocy [[wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/)](https://partner.ovhcloud.com/pl/) aby przeprowadzić audyt bezpieczeństwa Twoich rozwiązań.
+> W celu identyfikacji luk w zabezpieczeniach, możesz przeanalizować ["logi WWW"](https://docs.ovh.com/pl/hosting/hosting_statystyki_i_logi_strony/#logi) Twojego hostingu lub skorzystać z pomocy [[wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/)](https://partner.ovhcloud.com/pl/directory/) aby przeprowadzić audyt bezpieczeństwa Twoich rozwiązań.
 >
 
 #### Przypadek nr 2: Twój hosting został wyłączony dwa tygodnie temu
 
-Jeśli Twój hosting został zamknięty dwa tygodnie temu, skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/) usług hostingowych w celu przeprowadzenia audytu bezpieczeństwa swoich rozwiązań. 
+Jeśli Twój hosting został zamknięty dwa tygodnie temu, skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/) usług hostingowych w celu przeprowadzenia audytu bezpieczeństwa swoich rozwiązań. 
 
 ### Etap 4: reaktywacja hostingu <a name="reactivate-web-hosting"></a>
 
@@ -136,7 +136,7 @@ Odpowiedź **"200 Permissions changed on /"** potwierdza, że operacja została 
 
 [Zmiana wersji PHP na hostingu](../konfiguracja_php_na_hostingu_www_ovh_2014/)
 
-Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
+Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, sprawdź naszą [ofertę pomocy](https://www.ovhcloud.com/pl/support-levels/).
 

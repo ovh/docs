@@ -40,7 +40,7 @@ Este tutorial explica los pasos que debe seguir para cambiar el dominio de su si
 > [!warning]
 >
 > El cambio del dominio para acceder a su sitio puede tener consecuencias en su posicionamiento. 
-> Esté atento a las operaciones que vaya a realizar o contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) en el posicionamiento, si es necesario.
+> Esté atento a las operaciones que vaya a realizar o contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) en el posicionamiento, si es necesario.
 >
 
 Para cambiar el dominio de acceso al sitio web, deberá realizar diversas acciones en un orden adecuado.

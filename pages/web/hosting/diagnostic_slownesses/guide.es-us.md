@@ -258,7 +258,7 @@ Para reducir el flujo de peticiones a cada una de las cargas de sus páginas, ta
 
 > [!warning]
 >
-> Las acciones que realice en la base de datos pueden tener consecuencias irreversibles si no se realizan de forma ordenada y correcta. Contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/) si no está seguro de las acciones a realizar. 
+> Las acciones que realice en la base de datos pueden tener consecuencias irreversibles si no se realizan de forma ordenada y correcta. Contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) si no está seguro de las acciones a realizar. 
 >
 
 Compruebe si se realizan un número considerable de consultas a la base de datos.<br>

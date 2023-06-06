@@ -100,7 +100,7 @@ Também recomendamos que utilize um [gestor de palavras-passe](https://docs.ovh.
 
 > [!warning]
 >
-> Se encontrar dificuldades para efetuar as ações descritas abaixo, recorra a um prestador de [serviços especializado](https://partner.ovhcloud.com/pt/) em cibersegurança.
+> Se encontrar dificuldades para efetuar as ações descritas abaixo, recorra a um prestador de [serviços especializado](https://partner.ovhcloud.com/pt/directory/) em cibersegurança.
 >
 
 Utilize o nosso manual sobre [estatísticas e logs do seu alojamento web](https://docs.ovh.com/pt/hosting/partilhado_consultar_as_estatisticas_e_os_logs_do_meu_site/) para pesquisar os elementos maliciosos injetados no seu website. As informações podem ser encontradas nos logs "web". 

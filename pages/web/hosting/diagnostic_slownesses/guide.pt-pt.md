@@ -141,7 +141,7 @@ phpinfo();
 >
 > Em certos casos, os ficheiros "**.htaccess**" presentes nos diretórios/dossiers situados a montante ou ao mesmo nível que o local onde colocou o seu ficheiro "**phpinfo.php**" podem influir na visualização num browser do "**phpinfo.php**". 
 >
-> As manipulações num ficheiro "**.htaccess**" podem ter consequências na visualização do seu site. Recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/) se sentir dificuldades em realizar o seguinte.
+> As manipulações num ficheiro "**.htaccess**" podem ter consequências na visualização do seu site. Recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) se sentir dificuldades em realizar o seguinte.
 >
 > Se não for apresentada e **unicamente para os utilizadores experientes**, renomeie os seus ficheiros "**.htaccess**" em "**.htaccess_OLD**" para que o servidor não os execute durante o seu teste. Dê-lhes o nome correto quando o diagnóstico for efetuado.
 >
@@ -260,7 +260,7 @@ Para diminuir o fluxo de pedidos a cada um dos carregamentos das suas páginas, 
 
 > [!warning]
 >
-> As ações que realiza na sua base de dados podem ter consequências irreversíveis se não forem realizadas de forma metódica e correta. Recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/) se não tem a certeza das ações a realizar. 
+> As ações que realiza na sua base de dados podem ter consequências irreversíveis se não forem realizadas de forma metódica e correta. Recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) se não tem a certeza das ações a realizar. 
 >
 
 Verifique se um número consequente de pedidos é efetuado para a sua base de dados.<br>

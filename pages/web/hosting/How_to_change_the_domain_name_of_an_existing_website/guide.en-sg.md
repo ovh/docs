@@ -21,7 +21,7 @@ The aim of this tutorial is to explain the main steps you need to follow when yo
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-sg/) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-sg/directory/) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -35,7 +35,7 @@ The aim of this tutorial is to explain the main steps you need to follow when yo
 > [!warning]
 >
 > Changing a domain name to access your website may affect its SEO ranking. 
-> Be careful about the changes you make, and contact a [specialised provider](https://partner.ovhcloud.com/en-sg/) for SEO if necessary.
+> Be careful about the changes you make, and contact a [specialised provider](https://partner.ovhcloud.com/en-sg/directory/) for SEO if necessary.
 >
 
 To change the access domain name for your website, there are several steps to follow in a specific order.

@@ -40,7 +40,7 @@ Questa guida ti mostra le operazioni da effettuare per modificare il dominio di 
 > [!warning]
 >
 > La modifica del dominio per accedere al tuo sito può avere conseguenze sul suo posizionamento nei motori di ricerca. 
-> Presta la massima attenzione alle operazioni che intendi effettuare o contatta uno dei [provider specializzati](https://partner.ovhcloud.com/it/) nel referenziamento se necessario.
+> Presta la massima attenzione alle operazioni che intendi effettuare o contatta uno dei [provider specializzati](https://partner.ovhcloud.com/it/directory/) nel referenziamento se necessario.
 >
 
 Per modificare il dominio di accesso al tuo sito Web, segui diversi step in un ordine preciso.

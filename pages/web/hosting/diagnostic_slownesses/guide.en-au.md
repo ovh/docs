@@ -51,7 +51,7 @@ In rare cases, the slow display may also be caused by your Internet service prov
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 > 
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-au/) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you with issues **not caused by the relevant hosting infrastructure itself**. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-au/directory/) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you with issues **not caused by the relevant hosting infrastructure itself**. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 > [!success]
@@ -138,7 +138,7 @@ phpinfo();
 >
 > In some cases, the "**.htaccess**" files in the upstream directories/folders or at the same level as where you placed your "**phpinfo.php**" file may affect the display of the **phpinfo.php** in an Internet browser. 
 >
-> Changes to a "**.htaccess**" file may affect your website’s display. Contact a [specialist provider](https://partner.ovhcloud.com/en-au/) if you have difficulty in doing the following.
+> Changes to a "**.htaccess**" file may affect your website’s display. Contact a [specialist provider](https://partner.ovhcloud.com/en-au/directory/) if you have difficulty in doing the following.
 >
 > If it does not appear and **only for informed users**, rename your files "**.htaccess**" to "**.htaccess_OLD**" so that the server does not run them for your test. Rename them correctly after your diagnostic.
 >
@@ -257,7 +257,7 @@ To reduce the flow of requests each time your pages load, you can also set up a 
 
 > [!warning]
 >
-> The actions you carry out in your database can have irreversible consequences if they are not carried out methodically and correctly. Contact a [specialist provider](https://partner.ovhcloud.com/en-au/) if you are unsure about what you need to do. 
+> The actions you carry out in your database can have irreversible consequences if they are not carried out methodically and correctly. Contact a [specialist provider](https://partner.ovhcloud.com/en-au/directory/) if you are unsure about what you need to do. 
 >
 
 Check to see if a significant number of queries are made to your database.<br>

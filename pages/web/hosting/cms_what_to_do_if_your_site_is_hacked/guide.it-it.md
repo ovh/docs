@@ -100,7 +100,7 @@ Consigliamo inoltre di utilizzare un [gestore di password](https://docs.ovh.com/
 
 > [!warning]
 >
-> In caso di difficoltà nell'esecuzione delle azioni descritte di seguito, rivolgiti a un [fornitore specializzato](https://partner.ovhcloud.com/it/) in sicurezza informatica.
+> In caso di difficoltà nell'esecuzione delle azioni descritte di seguito, rivolgiti a un [fornitore specializzato](https://partner.ovhcloud.com/it/directory/) in sicurezza informatica.
 >
 
 Utilizza la nostra guida su [le statistiche e i log del tuo hosting Web](https://docs.ovh.com/it/hosting/hosting_condiviso_consulta_le_statistiche_e_i_log_del_tuo_sito/) per ricercare gli elementi malevoli iniettati nel tuo sito Web. Trovi le informazioni nei log "web". 
