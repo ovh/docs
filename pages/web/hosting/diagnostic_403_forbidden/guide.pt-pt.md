@@ -42,11 +42,11 @@ Também pode acontecer que, após uma deteção de anomalias, os nossos robôs d
 
 Se a página **"403 forbidden"** surgiu na sequência de uma alteração errada do seu site, [restaure todo ou parte do espaço de armazenamento do seu alojamento](../restauracao-ftp-filezilla-area-de-cliente/) numa data anterior.
 
-Se os backups disponíveis não lhe permitem restabelecer o acesso ao seu site, contacte um [fornecedor especializado](https://partner.ovhcloud.com/pt/).
+Se os backups disponíveis não lhe permitem restabelecer o acesso ao seu site, contacte um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/).
 
 Se a página **"403 forbidden"** não aparecer após uma modificação do seu site, consulte o seu correio. Se recebeu um e-mail dos nossos serviços indicando um encerramento do seu alojamento por razões de segurança, passe para [o passo 2](#step2).
 
-Se a página **"403 forbidden"** aparecer sem ação da sua parte e não tiver recebido emails dos nossos serviços, contacte um [fornecedor especializado](https://partner.ovhcloud.com/pt/).
+Se a página **"403 forbidden"** aparecer sem ação da sua parte e não tiver recebido emails dos nossos serviços, contacte um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/).
 
 ### Etapa 2: proteger as suas soluções <a name="step2"></a>
 
@@ -63,7 +63,7 @@ Em primeiro lugar, verifique a segurança do(s) seu(s) computador(s):
 >
 > Caso contrário, a alteração da palavra-passe da sua base de dados levará a um corte do site ou dos serviços que o utilizam.
 >
-> Em caso de dúvida sobre as operações a realizar, contacte os [parceiros da OVHcloud](https://partner.ovhcloud.com/pt/).
+> Em caso de dúvida sobre as operações a realizar, contacte os [parceiros da OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 >
 
 ### Etapa 3: intervir no seu alojamento
@@ -136,7 +136,7 @@ Uma resposta **"200 Permissions changed on /"** confirma que a operação foi be
 
 [Mudar a versão de PHP do alojamento web](../configurar_o_php_num_alojamento_web_alojamentos_2014_ovh/)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, convidamo-lo a consultar as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 

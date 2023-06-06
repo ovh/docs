@@ -110,7 +110,7 @@ Neste caso, [ligue-se em FTP](../aceder-espaco-de-armazenamento-ftp-alojamento-w
 
 > [!primary]
 >
-> Para qualquer questão relativa aos dados a eliminar para reduzir a quantidade de dados no seu alojamento, contacte a nossa [comunidade de utilizadores](https://community.ovh.com/en/) ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).<br>
+> Para qualquer questão relativa aos dados a eliminar para reduzir a quantidade de dados no seu alojamento, contacte a nossa [comunidade de utilizadores](https://community.ovh.com/en/) ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).<br>
 > Não poderemos prestar-lhe assistência nesta matéria.
 >
 
@@ -142,7 +142,7 @@ Se não dispõe de outras bases de dados e não deseja encomendar uma oferta com
 >
 > **Eliminar elementos na sua base de dados pode causar um corte no seu site**
 >
-> Para mais informações, contacte a nossa [comunidade](https://community.ovh.com/en/) ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).<br>
+> Para mais informações, contacte a nossa [comunidade](https://community.ovh.com/en/) ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).<br>
 > Não poderemos prestar-lhe assistência nesta matéria.
 >
 

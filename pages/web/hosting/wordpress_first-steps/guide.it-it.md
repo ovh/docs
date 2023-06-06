@@ -194,7 +194,7 @@ I tuoi link saranno costruiti utilizzando lo slug inserito precedentemente duran
     - [Elementor](https://elementor.com/){.external}, un altro editor di temi.
 - Il sito ufficiale [WordPress](https://wordpress.org/){.external}.
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 

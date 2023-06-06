@@ -110,7 +110,7 @@ W tej sytuacji [zaloguj się przez FTP](../logowanie-przestrzen-dyskowa-ftp-host
 
 > [!primary]
 >
-> W przypadku pytań dotyczących danych do usunięcia, w celu zmniejszenia ilości danych na hostingu, skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).<br>
+> W przypadku pytań dotyczących danych do usunięcia, w celu zmniejszenia ilości danych na hostingu, skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).<br>
 > Nie będziemy w stanie udzielić wsparcia w tym zakresie.
 
 ### "Nie można połączyć się z bazą danych" <a name="delete-module"></a>
@@ -141,7 +141,7 @@ Jeśli nie posiadasz innych baz danych i nie chcesz zamawiać dodatkowej oferty,
 >
 > **Usunięcie elementów z bazy danych może spowodować zablokowanie Twojej strony WWW.**
 >
-> W przypadku dodatkowych pytań skontaktuj się z naszym [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).<br>
+> W przypadku dodatkowych pytań skontaktuj się z naszym [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).<br>
 > Nie będziemy w stanie udzielić wsparcia w tym zakresie.
 >
 

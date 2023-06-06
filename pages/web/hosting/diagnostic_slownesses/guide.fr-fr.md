@@ -192,7 +192,7 @@ A ce stade, vous savez désormais que les ralentissements sont générés par le
 
 > [!warning]
 >
-> Si vous éprouvez des difficultés pour réaliser les actions qui vont suivre, vous pouvez contacter l'un de nos [prestataires spécialisés](https://partner.ovhcloud.com/fr/). En effet, OVHcloud n'apportera pas d'assistance sur le développement et/ou l'optimisation du contenu de votre site web.
+> Si vous éprouvez des difficultés pour réaliser les actions qui vont suivre, vous pouvez contacter l'un de nos [prestataires spécialisés](https://partner.ovhcloud.com/fr/directory/). En effet, OVHcloud n'apportera pas d'assistance sur le développement et/ou l'optimisation du contenu de votre site web.
 >
 
 Retrouvez ci-après les actions à réaliser pour identifier la ou les source(s) des lenteurs et optimiser votre site web.
@@ -299,7 +299,7 @@ Vous pouvez envisager une [offre d'hébergement mutualisée](https://www.ovhclou
 
 ## Aller plus loin <a name="go-further"></a>
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, consultez nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 

@@ -236,6 +236,6 @@ Na nova janela, introduza a nova palavra-passe da base de dados (definida no [Et
 
 [Resolver os erros mais frequentes associados às bases de dados](https://docs.ovh.com/pt/hosting/erros-frequentes-bases-de-dados/)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -164,7 +164,7 @@ Do not install plugins or templates that have not been recommended by the offici
 
 [Resolving the most common 1-click module errors](https://docs.ovh.com/ie/en/hosting/error-frequently-1-click-modules/).
 
-For specialised services (SEO, development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
+For specialised services (SEO, development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 

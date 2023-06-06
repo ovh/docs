@@ -118,7 +118,7 @@ Jeśli zamówiłeś jeden z płatnych **certyfikatów SSL** od naszego partnera 
 
 [Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia](../bledy-frameworki-moduly-za-1-kliknieciem/)
  
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 

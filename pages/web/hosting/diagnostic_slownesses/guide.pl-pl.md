@@ -54,7 +54,7 @@ W rzadkich przypadkach informacje o powolnym wyświetlaczu mogą pochodzić od T
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/). Niestety nie będziemy w stanie udzielić Ci wsparcia **w przypadku, gdy infrastruktura, na której hostowana jest Twoja oferta hostingu współdzielonego, nie jest istotna**. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Niestety nie będziemy w stanie udzielić Ci wsparcia **w przypadku, gdy infrastruktura, na której hostowana jest Twoja oferta hostingu współdzielonego, nie jest istotna**. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
 > [!success]
@@ -141,7 +141,7 @@ phpinfo();
 >
 > W niektórych przypadkach pliki "**.htaccess**" znajdujące się w katalogach/folderach znajdujących się na górze lub na tym samym poziomie, w jakim umieściłeś plik "**phpinfo.php**" mogą mieć wpływ na wyświetlanie w przeglądarce internetowej "**phpinfo.php***". 
 >
-> Operacje na pliku "**.htaccess**" mogą mieć wpływ na wyświetlanie strony. W przypadku trudności z realizacją tego zadania, należy skontaktować się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/).
+> Operacje na pliku "**.htaccess**" mogą mieć wpływ na wyświetlanie strony. W przypadku trudności z realizacją tego zadania, należy skontaktować się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/).
 >
 > Jeśli nie wyświetla się i **tylko dla zaawansowanych użytkowników**, należy zmienić nazwę plików "**.htaccess**" na "**.htaccess_OLD***", aby serwer nie wykonywał już testu. Zmień nazwę poprawnie po zakończeniu diagnostyki.
 >
@@ -196,7 +196,7 @@ Na tym etapie już wiesz, że spowolnienia są generowane przez strony/skrypty/p
 
 > [!warning]
 >
-> Jeśli masz trudności z wykonaniem kolejnych działań, możesz skontaktować się z naszym [wyspecjalizowanym usługodawcą](https://partner.ovhcloud.com/pl/). OVHcloud nie będzie wspierać rozwoju i/lub optymalizacji zawartości Twojej strony WWW.
+> Jeśli masz trudności z wykonaniem kolejnych działań, możesz skontaktować się z naszym [wyspecjalizowanym usługodawcą](https://partner.ovhcloud.com/pl/directory/). OVHcloud nie będzie wspierać rozwoju i/lub optymalizacji zawartości Twojej strony WWW.
 >
 
 Poniżej znajdziesz działania, które należy przeprowadzić, aby zidentyfikować źródło(-a) powolnego czasu i zoptymalizować Twoją stronę WWW.
@@ -303,7 +303,7 @@ Możesz rozważyć ofertę [hostingu współdzielonego](https://www.ovhcloud.com
 
 ## Sprawdź również <a name="go-further"></a>
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 

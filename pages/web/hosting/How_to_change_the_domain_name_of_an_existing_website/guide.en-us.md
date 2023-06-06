@@ -88,7 +88,7 @@ Most sites use databases to operate. The tree structure for these nodes is gener
 
 > [!warning]
 >
-> Warning, the operations described in step 2 are extremely sensitive and can have serious consequences for your website if they are not carried out with caution. If you have any doubts, do not try anything and contact a [specialist provider](https://partner.ovhcloud.com/en/).
+> Warning, the operations described in step 2 are extremely sensitive and can have serious consequences for your website if they are not carried out with caution. If you have any doubts, do not try anything and contact a [specialist provider](https://partner.ovhcloud.com/en/directory/).
 >
 > Before you take any action, we advise retrieving a [backup of your FTP storage space](https://docs.ovh.com/gb/en/hosting/restoring-ftp-filezilla-control-panel/) and a [backup of your database](https://docs.ovh.com/us/en/hosting/web_hosting_database_export_guide/). This will allow you to restore your website in the event of an error.
 >
@@ -150,7 +150,7 @@ Once your old domain has been removed from the multisites tab, and if it is regi
 
 [IP address list for Web Hosting clusters](https://docs.ovh.com/us/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
 

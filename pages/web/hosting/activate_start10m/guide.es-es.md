@@ -82,7 +82,7 @@ Consulte la guía [creación de una cuenta MX Plan](https://docs.ovh.com/es/emai
 
 [Crear una dirección de correo electrónico con su solución MX Plan](https://docs.ovh.com/es/emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/){.external}
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 

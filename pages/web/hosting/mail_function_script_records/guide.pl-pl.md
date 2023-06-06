@@ -194,7 +194,7 @@ Nasza usługa anty-spamowa będzie analizować sytuację, a nasz dział wsparcia
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy do Twojej dyspozycji następną część, która pomoże Ci w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Idź dalej"](#go-further) niniejszego przewodnika.
+> Oddajemy do Twojej dyspozycji następną część, która pomoże Ci w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Idź dalej"](#go-further) niniejszego przewodnika.
 >
 
 Mimo że rekomendujemy korzystanie z funkcji "mail()" PHP, hosting współdzielony umożliwia wysyłanie e-maili przy użyciu skryptu SMTP (Simple Mail Transfer Protocol). Całkowity rozmiar wiadomości e-mail nie może przekroczyć **10 MB** (tj. **7/8 MB bez kapsułek**).
@@ -228,7 +228,7 @@ $mail->Password = "YourEmailPassword";
 
 [Przywracanie przestrzeni dyskowej FTP Twojego hostingu](https://docs.ovh.com/pl/hosting/hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z [naszymi ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 

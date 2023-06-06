@@ -168,7 +168,7 @@ Katalog **wp-admin** pozwala na połączenie z Twoim interfejsem administracyjny
 
 Sprawdź [tutorial dostępny na stronie internetowej Fundacji Apache](https://httpd.apache.org/docs/2.4/en/howto/htaccess.html).
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 

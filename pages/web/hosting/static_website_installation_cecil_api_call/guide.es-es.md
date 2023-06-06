@@ -257,7 +257,7 @@ Este tutorial muestra un ejemplo de integración de datos dinámicos recuperados
     - una lista de [API públicas](https://github.com/public-api-lists/public-api-lists){.external}
 - Las [órdenes de Cecil](https://cecil.app/documentation/commands/){.external}.
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 

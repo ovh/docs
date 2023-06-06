@@ -102,7 +102,7 @@ Clicca sui tre puntini `...`{.action} a destra della riga relativa al tuo modulo
 > - PrestaShop : L'editor di questo software non offre, alla data, la documentazione necessaria per modificare la password di accesso all'interfaccia di amministrazione di PrestaShop. Ti invitiamo a contattare direttamente l'editor su questo argomento. Per maggiori informazioni, clicca [qui](https://www.prestashop.com){.external} per accedere alla pagina ufficiale.
 >
 È inoltre possibile modificare la password di accesso all'interfaccia di gestione del tuo CMS direttamente dal tuo database.<br>
-Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di eseguire l'operazione utilizzando la documentazione proposta dal tuo CMS o di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) di questa guida.
+Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di eseguire l'operazione utilizzando la documentazione proposta dal tuo CMS o di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) di questa guida.
 
 ### Elimina il tuo modulo
 
@@ -169,7 +169,7 @@ Non installate sul vostro sito plugin o template che non sono stati consigliati 
 
 [Risolvere gli errori più frequenti associati ai moduli in 1 click](https://docs.ovh.com/it/hosting/errori-frequenti-moduli-in-1-click/).
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 

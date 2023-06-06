@@ -194,7 +194,7 @@ Nuestro servicio antispam analizará la situación y nuestro soporte volverá a 
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición la parte que viene a continuación para acompañarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
+> Ponemos a su disposición la parte que viene a continuación para acompañarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
 >
 
 Aunque le recomendamos encarecidamente que prefiera utilizar la función "mail()" de PHP, los alojamientos compartidos permiten enviar emails pasando por un script que utiliza el protocolo SMTP (Simple Mail Transfer Protocol). El tamaño total del mensaje de correo electrónico no podrá ser superior a **10 MB* (es decir, **7/8 MB sin encapsular**).
@@ -228,7 +228,7 @@ $mail->Password = "YourEmailPassword";
 
 [Restaurar el espacio de almacenamiento FTP de su alojamiento](https://docs.ovh.com/es/hosting/restaurar-espacio-almacenamiento-alojamiento-web/)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
 

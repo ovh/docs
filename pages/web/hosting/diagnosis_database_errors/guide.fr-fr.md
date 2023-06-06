@@ -113,7 +113,7 @@ Si vous disposez d'une formule **Perso2014** ou **Pro2014**, nous vous conseillo
 >
 > Dans ce cas, le changement d'offre d'hébergement est inefficace, car votre base de données continuera à se remplir.
 >
-> Nous vous conseillons donc, si vous constatez une augmentation soudaine de la taille de votre base de données ou si vous disposez d'un site de type « blog » normalement peu consommateur de données, de contacter immédiatement un [prestataire spécialisé](https://partner.ovhcloud.com/fr/). Nous ne serons pas en mesure de vous apporter un support sur ce sujet.
+> Nous vous conseillons donc, si vous constatez une augmentation soudaine de la taille de votre base de données ou si vous disposez d'un site de type « blog » normalement peu consommateur de données, de contacter immédiatement un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/). Nous ne serons pas en mesure de vous apporter un support sur ce sujet.
 >
 
 Pour effectuer ce changement, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis cliquez sur `Hébergements`{.action}, puis sur l'hébergement concerné. Cliquez sur le bouton `...`{.action} dans la rubrique `Offre` sur la droite de votre écran puis sur `Changer d'offre`{.action}.
@@ -150,7 +150,7 @@ Pour optimiser votre base de données, suivez les instructions de notre guide «
 
 > [!warning]
 >
-> Si les conseils fournis sur l'optimisation de votre base de données ne suffisaient pas à débloquer l'accès à votre site, nous vous conseillons de contacter notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
+> Si les conseils fournis sur l'optimisation de votre base de données ne suffisaient pas à débloquer l'accès à votre site, nous vous conseillons de contacter notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
 ### Dépassements de la mémoire RAM
@@ -174,7 +174,7 @@ Vous pouvez également optimiser votre base de données en suivant les instructi
 
 > [!primary]
 >
-> Si vous rencontrez des difficultés à diminuer l'utilisation des ressources sur votre serveur de bases de données et que vous ne souhaitez pas les augmenter, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
+> Si vous rencontrez des difficultés à diminuer l'utilisation des ressources sur votre serveur de bases de données et que vous ne souhaitez pas les augmenter, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/). Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
 ### Erreurs d'import de bases de données
@@ -229,7 +229,7 @@ Pour résoudre cette anomalie, vous pouvez :
 
 - Augmenter la [quantité de mémoire vive (RAM)](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#suivre-la-ram-consommee). Pour cela, rendez vous sur le [serveur Web Cloud Databases](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/) concerné dans la rubrique `Bases de données`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez ensuite sur le bouton `...`{.action} dans la partie `RAM`, puis sur `Changer la quantité de RAM`{.action}.
 
-- Fractionner votre base de données, afin de l'importer en plusieurs opérations au lieu d'une seule (pour toute question sur les manipulations à réaliser, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.)
+- Fractionner votre base de données, afin de l'importer en plusieurs opérations au lieu d'une seule (pour toute question sur les manipulations à réaliser, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.)
 
 - [Optimisez votre base de données](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees) puis répétez les opérations d'export / import.
 
@@ -263,7 +263,7 @@ Dans cette situation, vous devrez [optimiser vos bases de données](https://docs
 
 > [!warning]
 >
-> Pour toute question sur les manipulations à réaliser afin de réduire le nombre de connexions actives sur votre base de données, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
+> Pour toute question sur les manipulations à réaliser afin de réduire le nombre de connexions actives sur votre base de données, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
 #### « Name or service not known »
@@ -291,7 +291,7 @@ Disposer d'un serveur [Cloud Databases](https://docs.ovh.com/fr/clouddb/) vous p
 
 Si cette connexion s'avère impossible, commencez par vérifier que vous avez bien [autorisé votre adresse IP publique](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/#autoriser-une-adresse-ip) à se connecter au serveur de bases de données.
 
-Si cette opération a bien été réalisée, contactez votre Fournisseur d'Accès à Internet ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). Nous ne serons pas en mesure de vous fournir une assistance dans cette situation.
+Si cette opération a bien été réalisée, contactez votre Fournisseur d'Accès à Internet ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/). Nous ne serons pas en mesure de vous fournir une assistance dans cette situation.
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
@@ -299,6 +299,6 @@ Si cette opération a bien été réalisée, contactez votre Fournisseur d'Accè
 
 [Premiers pas avec le service Web Cloud Databases](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

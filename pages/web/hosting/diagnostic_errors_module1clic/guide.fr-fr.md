@@ -114,7 +114,7 @@ Dans cette situation, [connectez-vous en FTP](../connexion-espace-stockage-ftp-h
 
 > [!primary]
 >
-> Pour toute question sur les données à supprimer afin de dimininuer la quantité de données sur votre hébergement, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).<br>
+> Pour toute question sur les données à supprimer afin de dimininuer la quantité de données sur votre hébergement, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).<br>
 > Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
 >
 
@@ -146,7 +146,7 @@ Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas 
 >
 > **Supprimer des éléments dans votre base de données peut entraîner une coupure de votre site.**
 >
-> Pour toute question complémentaire, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).<br>
+> Pour toute question complémentaire, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).<br>
 > Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
 >
 

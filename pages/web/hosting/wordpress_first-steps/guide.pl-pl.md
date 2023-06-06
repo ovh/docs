@@ -194,7 +194,7 @@ Twoje linki zostaną zbudowane na podstawie wcześniej podanego sluga podczas ed
     - [Elementor](https://elementor.com/){.external}, inny edytor tematów.
 - Oficjalna strona [WordPress](https://wordpress.org/){.external}.
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 

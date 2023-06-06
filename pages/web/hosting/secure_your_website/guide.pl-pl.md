@@ -17,7 +17,7 @@ updated: 2021-12-10
 
 Z tego przewodnika dowiesz się, jak zapewnić dostępność usług, bezpieczeństwo danych oraz dostęp do rozwiązań. Dotyczy on wyłącznie stron WWW hostowanych na [rozwiązaniach hostingowych OVHcloud](https://www.ovhcloud.com/pl/web-hosting/).
 
-Jest on organizowany etapami w coraz większym stopniu w zakresie znaczenia i trudności technicznych, co oznacza, że pierwsze kroki są najbardziej potrzebne. Bezpieczeństwo Twojej strony będzie mierzone przy użyciu najmniej chronionego elementu. Zalecamy przeprowadzenie wszystkich opisanych działań. Jeśli jednak napotkasz trudności w przeprowadzeniu niektórych z opisanych tutaj operacji, skontaktuj się z [społecznością OVHcloud](https://community.ovh.com/en/) lub naszymi [partnerami](https://partner.ovhcloud.com/pl/).
+Jest on organizowany etapami w coraz większym stopniu w zakresie znaczenia i trudności technicznych, co oznacza, że pierwsze kroki są najbardziej potrzebne. Bezpieczeństwo Twojej strony będzie mierzone przy użyciu najmniej chronionego elementu. Zalecamy przeprowadzenie wszystkich opisanych działań. Jeśli jednak napotkasz trudności w przeprowadzeniu niektórych z opisanych tutaj operacji, skontaktuj się z [społecznością OVHcloud](https://community.ovh.com/en/) lub naszymi [partnerami](https://partner.ovhcloud.com/pl/directory/).
 
 **Dowiedz się, jak zabezpieczyć Twoją stronę WWW.**
 
@@ -107,7 +107,7 @@ Dodaj do swojej strony wtyczkę bezpieczeństwa zalecaną przez producenta CMS:
 
 ### Etap 10: sprawdź, czy Twój hosting nie zawiera złośliwych plików
 
-Na tym etapie należy zalogować się do [przestrzeni FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web/). Wymaga to umiejętności technicznych, aby rozpoznawać ewentualne złośliwe pliki na Twoim hostingu. Jeśli masz trudności z przeprowadzeniem tej weryfikacji, skontaktuj się z naszymi [partnerami](https://partner.ovhcloud.com/pl/).
+Na tym etapie należy zalogować się do [przestrzeni FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web/). Wymaga to umiejętności technicznych, aby rozpoznawać ewentualne złośliwe pliki na Twoim hostingu. Jeśli masz trudności z przeprowadzeniem tej weryfikacji, skontaktuj się z naszymi [partnerami](https://partner.ovhcloud.com/pl/directory/).
 
 W przypadku wątpliwości przejdź do weryfikacji opisanych w [etapie 1](#local) niniejszego przewodnika i [zmień hasło](../zmiana-hasla-konto-ftp/) do przestrzeni FTP.
 

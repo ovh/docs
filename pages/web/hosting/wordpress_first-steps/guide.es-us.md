@@ -194,7 +194,7 @@ Los enlaces se construirán a partir del slug que haya indicado anteriormente al
     - [Elemor](https://elementor.com/){.external}, otro editor de temas.
 - Sitio oficial [WordPress](https://wordpress.org/){.external}.
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
 

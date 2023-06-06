@@ -112,7 +112,7 @@ If you **imported a SSL certificate** from another provider, contact its support
 
 [Resolving the most common 1-click module errors](../error-frequently-1-click-modules/)
  
-For specialized service providers (SEO, IT development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/en-sg/).
+For specialized service providers (SEO, IT development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
 
 If you need assistance using and configuring your OVHcloud solutions, please refer to our [support offers page](https://www.ovhcloud.com/en-sg/support-levels/).
 

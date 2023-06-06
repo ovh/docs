@@ -221,7 +221,7 @@ Please also refer to our guide on [how to secure your website](https://docs.ovh.
 
 [Optimise your website’s performance](https://docs.ovh.com/sg/en/hosting/web_hosting_optimise_your_website_performance/)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
 

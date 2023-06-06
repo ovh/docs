@@ -23,7 +23,7 @@ Tutorial wyjaśnia, jak używać generatora strony [Cecil](https://cecil.app){.e
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 > 
-> Jeśli masz trudności z postępuniem zgodnie z instrukcjami zawartymi w tym przewodniku, zalecamy skorzystanie z [pomocy specjalisty](https://partner.ovhcloud.com/pl/). Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+> Jeśli masz trudności z postępuniem zgodnie z instrukcjami zawartymi w tym przewodniku, zalecamy skorzystanie z [pomocy specjalisty](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
 ## Wymagania początkowe

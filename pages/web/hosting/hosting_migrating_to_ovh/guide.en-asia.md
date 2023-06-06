@@ -237,7 +237,7 @@ Once you have transferred your data and services, you can cancel your old servic
 
 [Creating and managing a database in your Web Hosting plan](https://docs.ovh.com/asia/en/hosting/creating-database/).
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
 

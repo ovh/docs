@@ -231,6 +231,6 @@ Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe de votre base
 
 [Résoudre les erreurs les plus fréquentes liées aux bases de données](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

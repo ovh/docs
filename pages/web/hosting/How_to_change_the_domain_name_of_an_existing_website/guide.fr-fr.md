@@ -88,7 +88,7 @@ La plupart des sites utilisent des bases de données pour fonctionner. L'arbores
 
 > [!warning]
 >
-> Attention, les opérations décrites dans l'étape 2 sont extrêmement sensibles et peuvent avoir des conséquences graves pour votre site web si elle ne sont pas effectuées avec précaution. Si vous avez le moindre doute, ne tentez rien et faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/).
+> Attention, les opérations décrites dans l'étape 2 sont extrêmement sensibles et peuvent avoir des conséquences graves pour votre site web si elle ne sont pas effectuées avec précaution. Si vous avez le moindre doute, ne tentez rien et faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/).
 >
 > Avant d'effectuer toute action, nous vous conseillons de récupérer une [sauvegarde de votre espace de stockage FTP](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/) ainsi qu'une [sauvegarde de votre base de données](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/). Cela vous permettra de restaurer votre site en cas de mauvaise manipulation.
 >
@@ -148,7 +148,7 @@ Une fois votre ancien domaine retiré de l'onglet multisites et s'il est enregis
 
 [Rediriger un domaine](https://docs.ovh.com/fr/domains/redirection-nom-de-domaine/)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 

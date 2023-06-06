@@ -168,7 +168,7 @@ La directory **wp-admin** permette di accedere alla tua interfaccia di amministr
 
 Consulta il [tutorial disponibile sul sito della Fondazione Apache](https://httpd.apache.org/docs/2.4/en/howto/htaccess.html).
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 

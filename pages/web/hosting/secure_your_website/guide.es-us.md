@@ -17,7 +17,7 @@ updated: 2021-12-10
 
 Esta guía explica cómo adquirir conocimientos básicos para garantizar la disponibilidad de sus servicios, proteger la integridad de sus datos y proteger el acceso a sus soluciones. Solo concierne a los sitios web alojados en las [soluciones compartidas de OVHcloud](https://www.ovhcloud.com/es/web-hosting/).
 
-Se organiza por etapas en un orden creciente de importancia y dificultad técnica, lo que significa que los primeros pasos son los más indispensables. La seguridad de su sitio web se medirá en el elemento que le concierna, que es el menos protegido. Le recomendamos que realice todas las acciones descritas. No obstante, si tiene dificultades para realizar algunas de las operaciones que se describen en la guía, no dude en contactar con la [comunidad de OVHcloud](https://community.ovh.com/en/) o con nuestros [partners](https://partner.ovhcloud.com/es/).
+Se organiza por etapas en un orden creciente de importancia y dificultad técnica, lo que significa que los primeros pasos son los más indispensables. La seguridad de su sitio web se medirá en el elemento que le concierna, que es el menos protegido. Le recomendamos que realice todas las acciones descritas. No obstante, si tiene dificultades para realizar algunas de las operaciones que se describen en la guía, no dude en contactar con la [comunidad de OVHcloud](https://community.ovh.com/en/) o con nuestros [partners](https://partner.ovhcloud.com/es/directory/).
 
 **Esta guía explica cómo proteger un sitio web.**
 
@@ -107,7 +107,7 @@ Añada a su sitio web un plugin de seguridad recomendado por el editor del CMS:
 
 ### Etapa 10: compruebe que su alojamiento no contenga archivos maliciosos
 
-Para ello, debe conectarse al [espacio FTP](../conexion-espacio-almacenamiento-ftp-alojamiento-web/). y requiere conocimientos técnicos para reconocer los posibles archivos maliciosos del alojamiento. Si necesita ayuda para realizar esta comprobación, no dude en ponerse en contacto con nuestros [partners](https://partner.ovhcloud.com/es/).
+Para ello, debe conectarse al [espacio FTP](../conexion-espacio-almacenamiento-ftp-alojamiento-web/). y requiere conocimientos técnicos para reconocer los posibles archivos maliciosos del alojamiento. Si necesita ayuda para realizar esta comprobación, no dude en ponerse en contacto con nuestros [partners](https://partner.ovhcloud.com/es/directory/).
 
 Si tiene dudas sobre este asunto, no olvide realizar las comprobaciones que se describen en [el etapa 1 de esta guía](#local) y [cambiar la contraseña](../cambiar-contrasena-usuario-ftp/) de su espacio FTP.
 
@@ -123,7 +123,7 @@ También puede crear una **versión de prueba** del sitio web (p. ej.: test.mond
 
 ## Más información <a name="gofurther"></a>
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, consulte nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es/support-levels/).
 

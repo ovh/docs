@@ -224,7 +224,7 @@ $mail->Password = "YourEmailPassword";
 
 [Restore your web hosting plan’s FTP storage space](https://docs.ovh.com/gb/en/hosting/restoring-ftp-filezilla-control-panel/)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
 
