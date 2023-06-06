@@ -5,11 +5,11 @@ slug: known-limits
 section: Technical resources
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/known-limits/'
-updated: 2023-03-03
+updated: 2023-06-06
 ---
 
 
-**Last updated 3rd March 2023.**
+**Last updated 6th June 2023.**
 
 <style>
  pre {
@@ -43,8 +43,9 @@ A node can run up to 110 pods. This limit does not depend on node flavor.
 
 In general, it is better to have several mid-size Kubernetes clusters than a monster-size one.
 
-To ensure high availability for your services, it is recommended to possess the computation power capable of handling your workload even when one of your nodes becomes unavailable.  
-Note that any operation requested to our services, like node deletions or updates, will be performed even if Kubernetes budget restrictions are present.
+To ensure high availability for your services, it is recommended to possess the computation power capable of handling your workload even when one of your nodes becomes unavailable.
+
+Please note that any operation requested to our services, like node deletions or rolling updates, will try to gracefully drain the nodes by respecting [Pod Disruption Budgets](https://kubernetes.io/docs/tasks/run-application/configure-pdb/) for a maximum duration of 10 minutes. After this time period, the nodes will be forcefully drained to ensure the smooth progress of the operation. This graceful node draining process only applies when there is at least one other node in the cluster.
 
 Most worker nodes (be them added manually or through cluster autoscaler) are created within a few minutes, with the exception of GPU worker nodes (t1 and t2 flavors) where ready status can take up to a bit more than one hour.
 
