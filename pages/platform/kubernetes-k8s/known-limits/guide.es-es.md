@@ -5,7 +5,7 @@ slug: known-limits
 section: Technical resources
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/known-limits/'
-updated: 2023-03-03
+updated: 2023-06-06
 ---
 
 
