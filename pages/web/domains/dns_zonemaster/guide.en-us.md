@@ -3,10 +3,10 @@ title: Tutorial - Using Zonemaster
 slug: ovhcloud-domain-zonemaster-tutorial
 section: DNS and DNS Zone
 order: 08
-updated: 2022-09-12
+updated: 2023-06-06
 ---
 
-**Last updated 12th September 2022**
+**Last updated 6th June 2023**
 
 > [!warning]
 >
