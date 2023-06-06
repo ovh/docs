@@ -342,6 +342,7 @@
             + [Configuring NAT for port redirections with NSX](cloud/private-cloud/nsx-07-configure-nat-redirection)
             + [Load Balancing configuration in NSX](cloud/private-cloud/nsx-09-configure-loadbalancing)
             + [Adding a new Tier-1 Gateway in NSX](cloud/private-cloud/nsx-10-add-new-tier1-gateway)
+            + [NSX - FAQ](cloud/private-cloud/nsx-11-faq)
         + [VMware NSX-v](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx-v)
             + [Accessing the NSX-v interface](cloud/private-cloud/nsx_access-interface)
             + [How to deploy an NSX-v Edge Services Gateway](cloud/private-cloud/nsx_deploying_edge_gateway)
