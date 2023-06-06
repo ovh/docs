@@ -69,6 +69,8 @@ GET /dedicated/ceph/98d166d8-7c88-47b7-9cb6-63acd5a59c15/user
 
 ## Go further
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Storage and Backup services.
 
 Join our community of users on <https://community.ovh.com/en/>.

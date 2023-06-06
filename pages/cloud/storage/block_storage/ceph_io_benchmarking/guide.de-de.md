@@ -113,11 +113,8 @@ fio --name=test-1 --ioengine=rbd --pool=rbd --rbdname=test-image --numjobs=1 \
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
-
-
-## Weiterführende Informationen
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Besuchen Sie unseren speziellen Discord-Kanal: <https://discord.gg/ovhcloud>. Stellen Sie Fragen, geben Sie Feedback und interagieren Sie direkt mit dem Team, das unsere Speicher- und Sicherungsdienste entwickelt.
 
-Treten Sie unserer Benutzergemeinschaft auf <https://community.ovh.com/> bei.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

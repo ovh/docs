@@ -211,4 +211,6 @@ Use the following route to delete a partition:
 
 [Mount your NAS on Windows Server via CIFS](https://docs.ovh.com/us/en/storage/file-storage/nas/cifs/)
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
 Join our community of users on <https://community.ovh.com/en/>.
