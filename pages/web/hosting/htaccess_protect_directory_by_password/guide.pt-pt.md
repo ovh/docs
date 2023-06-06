@@ -17,9 +17,9 @@ updated: 2023-06-01
 
 Este tutorial explica como implementar uma autenticação "utilizador/palavra-passe" para aceder a todo ou parte do seu website através de um browser. 
 
-Isto utilizando dois ficheiros de configuração (HTTP) Apache que pretende colocar no [espaço FTP](/pages/web/hosting/ftp_connection/) do seu alojamento Web: 
+Isto utilizando dois ficheiros de configuração (HTTP) Apache que pretende colocar no [espaço FTP](/pages/web/hosting/ftp_connection) do seu alojamento Web: 
 
-- "**.htaccess**": para mais informações sobre as funcionalidades deste ficheiro, consulte o nosso tutorial sobre as ["Operações possíveis com um ficheiro ".htaccess"](/pages/web/hosting/htaccess_what_else_can_you_do/).
+- "**.htaccess**": para mais informações sobre as funcionalidades deste ficheiro, consulte o nosso tutorial sobre as ["Operações possíveis com um ficheiro ".htaccess"](/pages/web/hosting/htaccess_what_else_can_you_do).
 - "**.htpasswd**": para além deste tutorial, consulte a [documentação oficial Apache](https://httpd.apache.org/docs/2.4/en/programs/htpasswd.html) relativa a este ficheiro.
 
 > [!warning]
@@ -37,7 +37,7 @@ Isto utilizando dois ficheiros de configuração (HTTP) Apache que pretende colo
 
 - Ter um [serviço de alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Dispor de credenciais de acesso ao [espaço FTP do seu alojamento](/pages/web/hosting/ftp_connection/).
+- Dispor de credenciais de acesso ao [espaço FTP do seu alojamento](/pages/web/hosting/ftp_connection).
 
 ## Instruções
 
@@ -47,7 +47,7 @@ Isto utilizando dois ficheiros de configuração (HTTP) Apache que pretende colo
 >
 > Tenha em conta, por exemplo, que se utilizar um **C**ontent **M**anagement **S**ystem (**CMS**), existem outras soluções de segurança.
 >
-> Se utilizar um CMS Wordpress, a OVHcloud também disponibiliza um tutorial sobre como [utilizar o ficheiro htaccess com WordPress](/pages/web/hosting/htaccess_how_to_protect_wordpress/).
+> Se utilizar um CMS Wordpress, a OVHcloud também disponibiliza um tutorial sobre como [utilizar o ficheiro htaccess com WordPress](/pages/web/hosting/htaccess_how_to_protect_wordpress).
 >
 > Para qualquer questão relativa à criação, utilização ou programação do seu website, o suporte da OVHcloud não poderá ajudá-lo nestas questões.
 >
@@ -68,8 +68,8 @@ Vamos explicar-lhe as 4 etapas principais a realizar para proteger o acesso a um
 > 
 > Para alterar a versão de PHP dos seus websites no seu alojamento web, consulte os seguintes guias:
 > 
-> - [Alterar a configuração do alojamento web](/pages/web/hosting/ovhconfig_modify_system_runtime/)
-> - [Mudar a versão de PHP do alojamento web](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014/)
+> - [Alterar a configuração do alojamento web](/pages/web/hosting/ovhconfig_modify_system_runtime)
+> - [Mudar a versão de PHP do alojamento web](/pages/web/hosting/ovhconfig_modify_system_runtime/)
 >
 > De facto, os scripts e informações descritas abaixo neste tutorial apenas funcionam com um ambiente de execução e uma versão PHP recente.
 > 
@@ -78,7 +78,7 @@ Vamos explicar-lhe as 4 etapas principais a realizar para proteger o acesso a um
 
 ### Etapa 1: criar os ficheiros "crypt.php", "htaccess" e "htpasswd"
 
-Ligue-se ao [espaço de armazenamento FTP](/pages/web/hosting/ftp_connection/) do seu alojamento web. Abra a ["pasta raiz"](/pages/web/hosting/multisites_configure_multisite/) para a qual aponta o seu domínio.
+Ligue-se ao [espaço de armazenamento FTP](/pages/web/hosting/ftp_connection) do seu alojamento web. Abra a ["pasta raiz"](/pages/web/hosting/multisites_configure_multisite) para a qual aponta o seu domínio.
 
 Crie um ficheiro "crypt.php" nesta "pasta raiz".
 
@@ -132,7 +132,7 @@ Substitua apenas `plain_text_password1`, `plain_text_password2` e `plain_text_pa
 > Para mais informações sobre o assumpto, consulte a [documentação oficial Apache](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html){.external}.
 >
 
-Se dispõe de um alojamento [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), aceda em [SSH](/pages/web/hosting/ssh_on_webhosting/) ao seu alojamento web. Desça à "**pasta raiz**" onde está o script "crypt.php".
+Se dispõe de um alojamento [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), aceda em [SSH](/pages/web/hosting/ssh_on_webhosting) ao seu alojamento web. Desça à "**pasta raiz**" onde está o script "crypt.php".
 
 Para isso, utilize o seguinte comando SSH:
 
@@ -211,7 +211,7 @@ Require valid-user
 No script acima, substitua os seguintes elementos pelos seus próprios valores:
 
 - `"Indicates your login(s)"`: corresponde ao(s) utilizador(es) autorizado(s) a aceder ao diretório completo. Se tiver vários utilizadores, separe-os apenas por um *espaço*.
-- `your_ftp_login`: o login FTP que utiliza para se ligar ao seu espaço de armazenamento FTP. Para obter o seu login FTP, consulte o nosso guia sobre a [ligação ao seu espaço FTP](/pages/web/hosting/ftp_connection/).
+- `your_ftp_login`: o login FTP que utiliza para se ligar ao seu espaço de armazenamento FTP. Para obter o seu login FTP, consulte o nosso guia sobre a [ligação ao seu espaço FTP](/pages/web/hosting/ftp_connection).
 - `root_folder/admin/.htpasswd`: caminho de acesso diretório desde a raiz FTP do seu alojamento web até ao ficheiro ".htpasswd" que deve ser utilizado para autenticar os utilizadores autorizados pela regra presente no seu ficheiro ".htaccess".
 
 #### Bloquear o acesso a um ou vários ficheiros
@@ -233,7 +233,7 @@ No script acima, substitua os seguintes elementos pelos seus próprios valores:
 
 - `test.php`: nome do ficheiro específico ou grupo de ficheiros contendo, no nosso exemplo, o termo **test.php** (termo ao qual a restrição de acesso deve ser aplicada).
 - `"Indicates your login(s)"`: corresponde ao(s) utilizador(es) autorizado(s) a aceder aos ficheiros cujos nomes contêm **test.php**. Se tiver vários utilizadores, separe-os por um *espaço*.
-- `your_ftp_login`: o login FTP que utiliza para se ligar ao seu espaço de armazenamento FTP. Para obter o seu login FTP, consulte o nosso guia sobre a [ligação ao seu espaço FTP](/pages/web/hosting/ftp_connection/).
+- `your_ftp_login`: o login FTP que utiliza para se ligar ao seu espaço de armazenamento FTP. Para obter o seu login FTP, consulte o nosso guia sobre a [ligação ao seu espaço FTP](/pages/web/hosting/ftp_connection).
 - `root_folder/admin/.htpasswd`: caminho de acesso diretório da raiz FTP do seu alojamento web até ao ficheiro ".htpasswd" que deve ser utilizado para autenticar os utilizadores autorizados pela diretiva do ficheiro ".htaccess".
 
 > [!warning]
@@ -256,13 +256,13 @@ No script acima, substitua os seguintes elementos pelos seus próprios valores:
 
 [Documentação oficial Apache](https://httpd.apache.org/docs/2.4/) {.external}
 
-[Aceder ao espaço FTP do alojamento web](/pages/web/hosting/ftp_connection/)
+[Aceder ao espaço FTP do alojamento web](/pages/web/hosting/ftp_connection)
 
-[Tutorial - Operações realizáveis com um ficheiro ".htaccess"](/pages/web/hosting/htaccess_what_else_can_you_do/)
+[Tutorial - Operações realizáveis com um ficheiro ".htaccess"](/pages/web/hosting/htaccess_what_else_can_you_do)
 
-[Bloquear o acesso ao meu website para determinados endereços IP através de um ficheiro .htaccess](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_acessing_your_website/)
+[Bloquear o acesso ao meu website para determinados endereços IP através de um ficheiro .htaccess](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website)
 
-[Reescrever o URL de acesso ao meu website graças ao mod_rewrite através do ficheiro .htaccess](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite/)
+[Reescrever o URL de acesso ao meu website graças ao mod_rewrite através do ficheiro .htaccess](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 

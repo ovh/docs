@@ -13,9 +13,9 @@ updated: 2023-06-01
 
 This tutorial explains how to set up user/password authentication to access all or part of your website via an internet browser. 
 
-You can do this by using two Apache configuration files (HTTP) to place in [the FTP space](/pages/web/hosting/ftp_connection/) of your web hosting plan: 
+You can do this by using two Apache configuration files (HTTP) to place in [the FTP space](/pages/web/hosting/ftp_connection) of your web hosting plan: 
 
-- "**.htaccess**": for more information on the functionalities of this file, please read our tutorial on [`Operations carried out with a .htaccess file`](/pages/web/hosting/htaccess_what_else_can_you_do/).
+- "**.htaccess**": for more information on the functionalities of this file, please read our tutorial on [`Operations carried out with a .htaccess file`](/pages/web/hosting/htaccess_what_else_can_you_do).
 - "**.htpasswd**": in addition to this tutorial, please refer to the [official Apache documentation](https://httpd.apache.org/docs/2.4/en/programs/htpasswd.html) for this file.
 
 > [!warning]
@@ -33,7 +33,7 @@ You can do this by using two Apache configuration files (HTTP) to place in [the 
 
 - You must have a [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).
 - You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
-- You must have the login details for [your web hosting plan’s FTP space](/pages/web/hosting/ftp_connection/).
+- You must have the login details for [your web hosting plan’s FTP space](/pages/web/hosting/ftp_connection).
 
 ## Instructions
 
@@ -43,7 +43,7 @@ You can do this by using two Apache configuration files (HTTP) to place in [the 
 >
 > For example, if you use a **C**ontent **M**anagement **S**ystem (**CMS**), other security solutions exist.
 >
-> If you are using a WordPress CMS, OVHcloud also provides a tutorial on how to [use the htaccess file with WordPress](/pages/web/hosting/htaccess_how_to_protect_wordpress/).
+> If you are using a WordPress CMS, OVHcloud also provides a tutorial on how to [use the htaccess file with WordPress](/pages/web/hosting/htaccess_how_to_protect_wordpress).
 >
 > If you have any questions regarding the creation, use or programming of your website, OVHcloud support will not be able to provide you with assistance in this regard.
 >
@@ -64,8 +64,8 @@ We will explain the 4 main steps to take to protect access to a directory or all
 > 
 > To modify the PHP version of your websites on your Web Hosting plan, please refer to the following guides:
 > 
-> - [Modify your Web Hosting plan’s configuration](/pages/web/hosting/ovhconfig_modify_system_runtime/)
-> - [Change PHP version of your web hosting plan](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014/)
+> - [Modify your Web Hosting plan’s configuration](/pages/web/hosting/ovhconfig_modify_system_runtime)
+> - [Change PHP version of your web hosting plan](/pages/web/hosting/ovhconfig_modify_system_runtime/)
 >
 > The scripts and information described below in this tutorial only work with a runtime environment and a recent PHP version.
 > 
@@ -74,7 +74,7 @@ We will explain the 4 main steps to take to protect access to a directory or all
 
 ### Step 1: create the files "crypt.php", ".htaccess" and ".htpasswd"
 
-Log in to [the FTP storage space](/pages/web/hosting/ftp_connection/) of your web hosting plan. Open the ["root folder"](/pages/web/hosting/multisites_configure_multisite/) that your domain name points to.
+Log in to [the FTP storage space](/pages/web/hosting/ftp_connection) of your web hosting plan. Open the ["root folder"](/pages/web/hosting/multisites_configure_multisite) that your domain name points to.
 
 Create a "crypt.php" file in this "root folder".
 
@@ -127,7 +127,7 @@ Replace only `plain_text_password1`, `plain_text_password2` and `plain_text_pass
 > For more information on this subject, see the [official Apache documentation](https://httpd.apache.org/docs/2.4/en/misc/password_encryptions.html){.external}.
 >
 
-If you have a [Pro](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/) or [Performance](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/) hosting package, then log in [SSH](/pages/web/hosting/ssh_on_webhosting/) to your web hosting package. Go to the **root folder** where your script “crypt.php” is located.
+If you have a [Pro](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/) or [Performance](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/) hosting package, then log in [SSH](/pages/web/hosting/ssh_on_webhosting) to your web hosting package. Go to the **root folder** where your script “crypt.php” is located.
 
 To do this, use the following SSH command:
 
@@ -206,7 +206,7 @@ Require valid-user
 In the script above, replace the following with your own values:
 
 - `Indicates your login(s)`: is the user (or users) who is authorised to access the full directory. If you have multiple users, separate them only with a *space*.
-- `your_ftp_login`: the FTP login you use to log in to your FTP storage space To retrieve your FTP login, please refer to our guide on [logging in to your FTP space](/pages/web/hosting/ftp_connection/).
+- `your_ftp_login`: the FTP login you use to log in to your FTP storage space To retrieve your FTP login, please refer to our guide on [logging in to your FTP space](/pages/web/hosting/ftp_connection).
 - `root_folder/admin/.htpasswd`: directory path from the FTP root of your web hosting plan to the ".htpasswd" file to be used to authenticate users authorised by the rule in your ".htaccess" file.
 
 #### Block access to one or more files
@@ -228,7 +228,7 @@ In the script above, replace the following with your own values:
 
 -`test.php`: the name of the specific file or filegroup that contains, in our example, the term **test.php** (the term for which the access restriction should apply).
 - `Indicates your login(s)`: is the user (or users) who is authorised to access files whose names contain **test.php**. If you have several users, separate them with a *space*.
-- `your_ftp_login`: the FTP login you use to log in to your FTP storage space To retrieve your FTP login, please refer to our guide on [logging in to your FTP space](/pages/web/hosting/ftp_connection/).
+- `your_ftp_login`: the FTP login you use to log in to your FTP storage space To retrieve your FTP login, please refer to our guide on [logging in to your FTP space](/pages/web/hosting/ftp_connection).
 - `root_folder/admin/.htpasswd`: directory path from the FTP root of your web hosting plan to the ".htpasswd" file to be used to authenticate users authorised by the ".htaccess" file directive.
 
 > [!warning]
@@ -251,13 +251,13 @@ In the script above, replace the following with your own values:
 
 [Official Apache documentation](https://httpd.apache.org/docs/2.4/){.external}
 
-[Logging in to your Web Hosting plan’s FTP space](/pages/web/hosting/ftp_connection/)
+[Logging in to your Web Hosting plan’s FTP space](/pages/web/hosting/ftp_connection)
 
-[Tutorial - Operations available with .htaccess file](/pages/web/hosting/htaccess_what_else_can_you_do/)
+[Tutorial - Operations available with .htaccess file](/pages/web/hosting/htaccess_what_else_can_you_do)
 
-[Block access to my website for certain IP addresses via a .htaccess file](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/)
+[Block access to my website for certain IP addresses via a .htaccess file](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website)
 
-[Rewrite the URL for accessing my website with mod_rewrite via the .htaccess file](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite/)
+[Rewrite the URL for accessing my website with mod_rewrite via the .htaccess file](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
