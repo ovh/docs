@@ -7,7 +7,7 @@ order: 1
 updated: 2023-05-10
 ---
 
-**Last updated 10th May 2023.**
+**Last updated 6th June 2023.**
 
 ## Objective
 
@@ -44,7 +44,9 @@ In this guide we explain how to do some basic operations with nodes and node poo
 
 Editing the `desiredNodes` property to a different value will trigger the node pool upsizing or downsizing.
 
-When downsizing, the last created nodes will be drained then deleted in parallel. You can also specify which nodes should be removed by filling the optional `nodesToRemove` property, which can be a list of node names, node IDs or openstack instance IDs.
+When downsizing, the last created nodes will be drained then deleted in parallel. You can specify which nodes should be removed by filling the optional `nodesToRemove` property, which can be a list of node names, node IDs or openstack instance IDs.
+
+We will try to gracefully drain the nodes by respecting [Pod Disruption Budgets](https://kubernetes.io/docs/tasks/run-application/configure-pdb/) for a maximum duration of 10 minutes. After this time period, the nodes will be forcefully drained to ensure the smooth progress of the operation. This graceful node draining process only applies when there is at least one other node in the cluster.
 
 When upsizing, all new nodes will be created in parallel.
 
