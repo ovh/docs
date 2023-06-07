@@ -70,4 +70,6 @@ Klicken Sie dann auf `Connect`{.action}. Sobald Sie eingeloggt sind, haben Sie Z
 
 [Erste Schritte mit der Swift API](https://docs.ovh.com/de/public-cloud/die_ersten_schritte_mit_der_swift_api/)
 
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

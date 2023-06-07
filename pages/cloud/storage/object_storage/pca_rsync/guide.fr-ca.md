@@ -91,4 +91,6 @@ En outre, seul un sous-ensemble d'options est autorisé côté client:
 
 [Page d'accueil de Rsync](https://linux.die.net/man/1/rsync)
 
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
 Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.

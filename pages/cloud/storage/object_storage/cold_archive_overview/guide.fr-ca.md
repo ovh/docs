@@ -151,4 +151,6 @@ Exploitez votre cycle de vie et apprenez à créer un bucket, archiver, récupé
 
 Rendez-vous sur notre chaîne Discord dédiée : [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud) . Posez des questions, fournissez des commentaires et interagissez directement avec l'équipe qui construit nos services de stockage et de sauvegarde.
 
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
 Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.
