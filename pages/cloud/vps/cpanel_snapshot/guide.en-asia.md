@@ -54,8 +54,8 @@ To disable a jailed shell environment for all new and modified users, you will n
 
 This option allows you to enable/disable the use of a jailed shell for new accounts and accounts that you subsequently edit in the following interfaces:
 
-1. WHM’s Modify an Account interface (WHM >> Home >> Account Functions >> Modify An Account).
-2. WHM’s Upgrade/Downgrade an Account interface (WHM >> Home >> Account Functions >> Upgrade/Downgrade An Account).
+1. WHM’s Modify An Account interface (WHM >> Home >> Account Functions >> Modify An Account)
+2. WHM’s Upgrade/Downgrade An Account interface (WHM >> Home >> Account Functions >> Upgrade/Downgrade An Account)
 
 This option does not affect accounts that already exist on the server but that you have not edited in these interfaces.
 
@@ -73,7 +73,7 @@ You can find all this information in the [cPanel official documentation](https:/
 
 ### Disable cPanel /tmp partition security
 
-Please note this is not recommended by cPanel and it is in your own risk. Should you wish to continue with this option, you can read the exact steps from the following [cPanel page](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/#harden-your-tmp-partition).
+Please note this is not recommended by cPanel and at your own risk. Should you wish to continue with this option, you can find the exact steps on [this cPanel page](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/#harden-your-tmp-partition).
 
 
 ## Go further
