@@ -1,9 +1,6 @@
 ---
 title: Evitar el modo de solo lectura del disco de las MV en Linux
-slug: como-evitar-disco-en-solo-lectura-en-linux
 excerpt: Cómo evitar el modo de solo lectura del disco de las MV en Linux
-section: Gestión de las máquinas virtuales
-order: 10
 updated: 2020-06-25
 ---
 

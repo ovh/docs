@@ -1,8 +1,6 @@
 ---
 title: 'Changer le mot de passe root sur un serveur dédié'
-slug: changer-mot-passe-root-linux-sur-serveur-dedie
 excerpt: 'Découvrez comment modifier le mot de passe root de votre serveur dédié'
-section: 'Diagnostic et mode Rescue'
 updated: 2021-02-16
 ---
 
@@ -62,7 +60,7 @@ passwd: password updated successfully
 
 #### Étape 1 : identifier la partition système
 
-Après avoir redémarré votre serveur en [mode rescue](../ovh-rescue/), vous devez identifier la partition système. Pour ce faire, exécutez la commande suivante :
+Après avoir redémarré votre serveur en [mode rescue](/pages/cloud/dedicated/rescue_mode), vous devez identifier la partition système. Pour ce faire, exécutez la commande suivante :
 
 ```
 # fdisk -l
@@ -125,10 +123,10 @@ Une fois cette étape effectuée, changez le mode de démarrage sur votre serveu
 
 ## Aller plus loin
 
-[Activer et utiliser le mode rescue](../ovh-rescue/)
+[Activer et utiliser le mode rescue](/pages/cloud/dedicated/rescue_mode)
 
-[Sécuriser un serveur dédié](../securiser-un-serveur-dedie/)
+[Sécuriser un serveur dédié](/pages/cloud/dedicated/securing-a-dedicated-server)
 
-[Changer le mot de passe administrateur sur un serveur dédié Windows](../changer-mot-passe-admin-windows/)
+[Changer le mot de passe administrateur sur un serveur dédié Windows](/pages/cloud/dedicated/changing-admin-password-on-windows)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

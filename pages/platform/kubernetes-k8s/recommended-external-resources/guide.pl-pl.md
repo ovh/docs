@@ -1,10 +1,8 @@
 ---
 title: Recommended external resources
 excerpt: ''
-slug: recommended-external-resources
-section: Technical resources
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/recommended-external-resources/'
+    canonical: '/pages/platform/kubernetes-k8s/recommended-external-resources'
 updated: 2019-07-01
 ---
 

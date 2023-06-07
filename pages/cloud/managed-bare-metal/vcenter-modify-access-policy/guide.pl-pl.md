@@ -1,10 +1,8 @@
 ---
 title: Zmiana polityki dostępu do vCenter
-slug: zmiana-polityki-dostepu-do-vcenter
 routes:
     canonical: 'https://docs.ovh.com/pl/private-cloud/zmiana-polityki-dostepu-do-vcenter/'
 excerpt: Dowiedz się, jak zmienić strategię dostępu do vCenter
-section: Funkcjonalności OVHcloud
 updated: 2020-11-18
 ---
 
@@ -35,11 +33,11 @@ W oknie, które się wyświetli rozwiń menu i wybierz “Otwarta” lub "Ograni
 
 > [!primary]
 >
-> Jeśli wybierzesz politykę dostępu “Ograniczona", sprawdź przewodnik ["Autoryzacja IP, które mogą łączyć się z vCenter”](../autoryzacja-IP-ktore-moga-laczyc-sie-z-vCenter/).
+> Jeśli wybierzesz politykę dostępu “Ograniczona", sprawdź przewodnik ["Autoryzacja IP, które mogą łączyć się z vCenter”](/pages/cloud/managed-bare-metal/vcenter-authorise-ip-access).
 > 
 
 ## Sprawdź również
 
-[Autoryzacja IP, które mogą łączyć się z vCenter](../autoryzacja-IP-ktore-moga-laczyc-sie-z-vCenter/)
+[Autoryzacja IP, które mogą łączyć się z vCenter](/pages/cloud/managed-bare-metal/vcenter-authorise-ip-access)
 
 Przyłącz się do społeczności naszych użytkowników na stronie [ https://community.ovh.com/en/](https://community.ovh.com/en/){.external}

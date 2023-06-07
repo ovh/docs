@@ -1,8 +1,6 @@
 ---
 title: 'Configuring IPv6 on dedicated servers'
-slug: network-ipv6
 excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
-section: 'Network Management'
 updated: 2022-08-26
 ---
 
@@ -24,7 +22,7 @@ Internet Protocol version 6 (IPv6) is the latest version of the Internet Protoco
 
 - A [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) in your OVHcloud account
 - All your IPv6 information (prefix, gateway etc.)
-- Basic knowledge of [SSH](../ssh-introduction/) and networking
+- Basic knowledge of [SSH](/pages/cloud/dedicated/ssh_introduction) and networking
 
 > [!warning]
 > Please note that Kimsufi servers are only provided with a single IPV6 block (/128). IPv6 will be configured automatically when installing the OS.
@@ -47,7 +45,7 @@ If you want to have more than one IPv6 configured on your server (or want to use
 > - The IPv6 range of the server is `2607:5300:60:62ac::/64` or `2607:5300:60:62ac:0000:0000:0000:0000/64`. The IPv6_GATEWAY will therefore be `2607:5300:60:62FF:FF:FF:FF:FF`.
 > - The IPv6 range of the server is `2001:41D0:1:46e::/64` or `2001:41D0:0001:046e:0000:0000:0000:0000/64`. The IPv6_GATEWAY will therefore be `2001:41D0:1:4FF:FF:FF:FF:FF`.
 >
-> The safe way to retrieve the networking information for your server is to [use the OVHcloud API](https://docs.ovh.com/asia/en/api/first-steps-with-ovh-api/). Execute the following API call, indicating the internal server name (example: `ns3956771.ip-169-254-10.eu`):
+> The safe way to retrieve the networking information for your server is to [use the OVHcloud API](/pages/account/api/first-steps). Execute the following API call, indicating the internal server name (example: `ns3956771.ip-169-254-10.eu`):
 >
 
 
@@ -76,7 +74,7 @@ If you want to have more than one IPv6 configured on your server (or want to use
 
 #### Step 1: Use SSH to connect to your server
 
-Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server).
+Find more information in [this guide](/pages/cloud/dedicated/getting-started-with-dedicated-server#logging-on-to-your-server).
 
 #### Step 2: Open your server's network configuration file
 
@@ -122,7 +120,7 @@ ping6 -c 4 2001:4860:4860::8888
 ```
 
 
-If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../ovh-rescue/).
+If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](/pages/cloud/dedicated/rescue_mode).
 
 ### Fedora 26 and above
 
@@ -133,7 +131,7 @@ If you are not able to ping this IPv6 address, check your configuration and try 
 
 #### Step 1: Use SSH to connect to your server
 
-Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server).
+Find more information in [this guide](/pages/cloud/dedicated/getting-started-with-dedicated-server#logging-on-to-your-server).
 
 
 #### Step 2: Open your server's network configuration file
@@ -177,13 +175,13 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../ovh-rescue/).
+If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](/pages/cloud/dedicated/rescue_mode).
 
 ### FreeBSD
 
 #### Step 1: Use SSH to connect to your server
 
-Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server).
+Find more information in [this guide](/pages/cloud/dedicated/getting-started-with-dedicated-server#logging-on-to-your-server).
 
 
 #### Step 2: Open your server's network configuration file
@@ -224,13 +222,13 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../ovh-rescue/).
+If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](/pages/cloud/dedicated/rescue_mode).
 
 ### Ubuntu 18.04 and 20.04
 
 #### Step 1: Use SSH to connect to your server
 
-Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server).
+Find more information in [this guide](/pages/cloud/dedicated/getting-started-with-dedicated-server#logging-on-to-your-server).
 
 #### Step 2: Open your server's network configuration file
 
@@ -322,7 +320,7 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 
 #### Step 1: Use RDP to connect to your server
 
-Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server).
+Find more information in [this guide](/pages/cloud/dedicated/getting-started-with-dedicated-server#logging-on-to-your-server).
 
 
 #### Step 2: Open your server's network configuration

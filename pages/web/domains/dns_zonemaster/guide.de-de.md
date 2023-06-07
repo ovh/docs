@@ -1,8 +1,5 @@
 ---
 title: Tutorial - Verwendung von Zonemaster
-slug: ovhcloud-domain-zonemaster-tutorial
-section: DNS und DNS-Zone
-order: 08
 updated: 2022-09-12
 ---
 
@@ -24,7 +21,7 @@ updated: 2022-09-12
 
 > [!primary]
 >
-> Um mehr über DNS zu erfahren, lesen Sie die Einführung unserer Anleitung zur [Konfiguration einer DNS Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/).
+> Um mehr über DNS zu erfahren, lesen Sie die Einführung unserer Anleitung zur [Konfiguration einer DNS Zone](/pages/web/domains/dns_zone_edit).
 
 ## Voraussetzungen
 
@@ -76,11 +73,11 @@ Wenn Sie weitere Fragen zu Zonemaster haben, lesen Sie den Abschnitt [FAQ](https
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-[DNS-Server einer OVHcloud Domain ändern](https://docs.ovh.com/de/domains/webhosting_allgemeine_informationen_zu_den_dns_servern/){.external}
+[DNS-Server einer OVHcloud Domain ändern](/pages/web/domains/dns_server_general_information){.external}
 
-[Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}.
+[Bearbeiten der OVHcloud DNS-Zone](/pages/web/domains/dns_zone_edit){.external}.
 
-[Domain mit DNSSEC sichern](https://docs.ovh.com/de/domains/sichern_sie_ihre_domain_mit_dnssec_ab/){.external}
+[Domain mit DNSSEC sichern](/pages/web/domains/dns_dnssec){.external}
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

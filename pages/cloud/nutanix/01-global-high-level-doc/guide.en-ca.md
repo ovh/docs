@@ -1,9 +1,6 @@
 ---
 title: "Nutanix on OVHcloud - High-level documentation"
-slug: high-level-documentation
 excerpt: Technical details of the Nutanix on OVHcloud solution
-section: Getting started
-order: 01
 updated: 2022-12-08
 ---
 
@@ -66,7 +63,7 @@ OVHgateway has a lightweight design, using 1 vCPU, 1 GB memory and a 11 GiB disk
 
 Bandwidth for Internet access is 1 Gbps.
 
-To replace this virtual machine with another network operating system, please read this guide: [Replace OVHgateway](https://docs.ovh.com/ca/en/nutanix/software-gateway-replacement/).
+To replace this virtual machine with another network operating system, please read this guide: [Replace OVHgateway](/pages/cloud/nutanix/30-software-gateway-replacement).
 
 ### Prism Central Access
 

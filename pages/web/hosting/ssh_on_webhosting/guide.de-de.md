@@ -1,9 +1,6 @@
 ---
 title: 'SSH-Zugang Ihres Webhostings verwenden'
 excerpt: 'Erfahren Sie hier, wie Sie den SSH-Zugang zur Verbindung mit Ihrem OVHcloud Webhosting nutzen'
-slug: webhosting_ssh_auf_ihren_webhostings
-section: 'FTP und SSH'
-order: 07
 updated: 2022-01-19
 ---
 
@@ -110,8 +107,8 @@ Je nach der PHP-Version, die Sie verwenden möchten, kann es sein, dass die Ausf
 
 ## Weiterführende Informationen
 
-[Konfiguration Ihres Webhostings bearbeiten](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/)
+[Konfiguration Ihres Webhostings bearbeiten](/pages/web/hosting/ovhconfig_modify_system_runtime)
 
-[.ovhconfig-Datei Ihres Webhostings konfigurieren](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/)
+[.ovhconfig-Datei Ihres Webhostings konfigurieren](/pages/web/hosting/ovhconfig_configuration)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

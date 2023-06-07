@@ -1,7 +1,5 @@
 ---
 title: Kafka (Message queue service)
-slug: kafka
-section: Services
 updated: 2021-06-03
 ---
 
@@ -27,7 +25,7 @@ It is a framework for storing, reading and analyzing streaming data. See the [Ka
 
 ## Relationship
 
-The format exposed in the ``$PLATFORM_RELATIONSHIPS`` [environment variable](../../development-variables#platformsh-provided-variables):
+The format exposed in the ``$PLATFORM_RELATIONSHIPS`` [environment variable](/pages/web/web-paas/development-variables#platformsh-provided-variables):
 
 ```json  
 {

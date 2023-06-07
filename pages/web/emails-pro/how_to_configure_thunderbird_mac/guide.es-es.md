@@ -1,9 +1,6 @@
 ---
 title: 'Configurar una cuenta Email Pro en Thunderbird para macOS'
-slug: configuracion-thunderbird-emailpro-mac
 excerpt: 'Cómo configurar una cuenta Email Pro en Thunderbird para macOS'
-section: Configuración del cliente de correo
-order: 5
 updated: 2021-08-26
 ---
 
@@ -70,7 +67,7 @@ OVHcloud también ofrece una aplicación web que permite acceder a su dirección
 
 ### Obtener una copia de seguridad de su dirección de correo
 
-Si necesita realizar alguna operación que pueda provocar la pérdida de los datos de su cuenta de correo, le recomendamos que realice una copia de seguridad previa de la cuenta de correo. Para ello, consulte el apartado "**Exportar**" de la sección "**Thunderbird**" de nuestra guía [Migrar manualmente su dirección de correo electrónico](https://docs.ovh.com/es/emails/migrar-sus-direcciones-de-correo-manualmente/#exportar).
+Si necesita realizar alguna operación que pueda provocar la pérdida de los datos de su cuenta de correo, le recomendamos que realice una copia de seguridad previa de la cuenta de correo. Para ello, consulte el apartado "**Exportar**" de la sección "**Thunderbird**" de nuestra guía [Migrar manualmente su dirección de correo electrónico](/pages/web/emails/manual_email_migration#exportar).
 
 ### Modificar los parámetros existentes
 

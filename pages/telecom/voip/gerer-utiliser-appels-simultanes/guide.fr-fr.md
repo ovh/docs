@@ -1,8 +1,6 @@
 ---
 title: 'Gérer et utiliser les appels simultanés'
-slug: gerer-utiliser-appels-simultanes
 excerpt: 'Apprenez à gérer et utiliser les appels simultanés avec une ligne téléphonique OVHcloud'
-section: 'Lignes téléphoniques'
 updated: 2022-06-21
 ---
 
@@ -49,9 +47,9 @@ Un signal sonore (un bip) vous avertira lorsque vous recevrez un nouvel appel, u
 
 Lorsque vous souhaitez utiliser les appels simultanés :
 
-- **avec un poste standard OVHcloud** : assurez-vous d'avoir paramétré une touche de ligne pour chacun d'entre eux. Si vous ne savez pas comment faire, reportez-vous aux informations décrites dans la documentation intitulée « [Configurer les touches programmables de votre téléphone OVHcloud](https://docs.ovh.com/fr/voip/configurer-touches-programmables/) » ;
+- **avec un poste standard OVHcloud** : assurez-vous d'avoir paramétré une touche de ligne pour chacun d'entre eux. Si vous ne savez pas comment faire, reportez-vous aux informations décrites dans la documentation intitulée « [Configurer les touches programmables de votre téléphone OVHcloud](/pages/telecom/voip/configuration_ovh_phone) » ;
 
-- **avec un numéro configuré en file d'appels** : assurez-vous que celui-ci est correctement configuré par rapport au nombre d'appels simultanés qu'il peut recevoir. Si nécessaire, reportez-vous aux informations décrites dans la documentation intitulée « [Configurer une file d’appels sur un numéro alias](https://docs.ovh.com/fr/voip/les-files-d-appels/) ».
+- **avec un numéro configuré en file d'appels** : assurez-vous que celui-ci est correctement configuré par rapport au nombre d'appels simultanés qu'il peut recevoir. Si nécessaire, reportez-vous aux informations décrites dans la documentation intitulée « [Configurer une file d’appels sur un numéro alias](/pages/telecom/voip/les_files_d_appels) ».
 
 > [!primary]
 >

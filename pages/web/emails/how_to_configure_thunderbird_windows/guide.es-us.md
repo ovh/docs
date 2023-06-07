@@ -1,10 +1,7 @@
 ---
 title: 'Configurar una cuenta de correo electrónico en Thunderbird para Windows'
-slug: correo_guia_de_configuracion_en_thunderbird
 legacy_guide_number: g1297 
 excerpt: 'Aquí encontrará la información necesaria para configurar su dirección de correo electrónico en Thunderbird'
-section: Configuración en el ordenador
-order: 04
 updated: 2021-08-26
 ---
 
@@ -60,11 +57,11 @@ En una configuración en **POP**, los valores son los siguientes:
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVHcloud también ofrece una aplicación web que permite acceder a su dirección de correo electrónico desde un navegador de internet. y está disponible en la dirección <https://www.ovh.com/world/us/es/mail/>. Puede conectarse con las credenciales de acceso de su dirección de correo electrónico. Si tiene cualquier duda sobre su uso, consulte nuestra guía [Consultar su cuenta Exchange desde la interfaz OWA](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/exchange_2016_guia_de_uso_de_outlook_web_app/) o [Utilizar su dirección de correo desde el webmail Roundcube](https://docs.ovh.com/us/es/emails/webmail_guia_de_uso_de_roundcube/).
+OVHcloud también ofrece una aplicación web que permite acceder a su dirección de correo electrónico desde un navegador de internet. y está disponible en la dirección <https://www.ovh.com/world/us/es/mail/>. Puede conectarse con las credenciales de acceso de su dirección de correo electrónico. Si tiene cualquier duda sobre su uso, consulte nuestra guía [Consultar su cuenta Exchange desde la interfaz OWA](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/exchange_2016_guia_de_uso_de_outlook_web_app/) o [Utilizar su dirección de correo desde el webmail Roundcube](https://docs.ovh.com/us/pages/web/emails/email_roundcube).
 
 ### Obtener una copia de seguridad de su dirección de correo
 
-Si necesita realizar alguna operación que pueda provocar la pérdida de los datos de su cuenta de correo, le recomendamos que realice una copia de seguridad previa de la cuenta de correo. Para ello, consulte el apartado "**Exportar**" de la sección "**Thunderbird**" de nuestra guía [Migrar manualmente su dirección de correo electrónico](https://docs.ovh.com/us/es/emails/migrar-sus-direcciones-de-correo-manualmente/#exportar).
+Si necesita realizar alguna operación que pueda provocar la pérdida de los datos de su cuenta de correo, le recomendamos que realice una copia de seguridad previa de la cuenta de correo. Para ello, consulte el apartado "**Exportar**" de la sección "**Thunderbird**" de nuestra guía [Migrar manualmente su dirección de correo electrónico](/pages/web/emails/manual_email_migration#exportar).
 
 ### Modificar los parámetros existentes
 

@@ -1,11 +1,8 @@
 ---
 title: Configura HYCU Backup (EN)
-slug: hycu-backup
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/nutanix/hycu-backup/'
+    canonical: '/pages/cloud/nutanix/40-hycu-backup'
 excerpt: Installing HYCU Backup on a Nutanix cluster
-section: Backups
-order: 01
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
 category_l2: Backups
@@ -33,8 +30,8 @@ HYCU for Nutanix is a backup software available for Nutanix.
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - You must be connected to the cluster via Prism Central. 
 - A Public Cloud project with a High Performance Object Storage type storage bucket, with a user with read and write permissions for this bucket. You can find more information on how to create a Public Cloud project and how to use the High Performance Object Storage service on the following pages:
-    - [Creating your first OVHcloud Public Cloud project](https://docs.ovh.com/it/public-cloud/create_a_public_cloud_project/)
-    - [Getting started with S3 High Performance](https://docs.ovh.com/it/storage/object-storage/s3/getting-started-with-object-storage/).
+    - [Creating your first OVHcloud Public Cloud project](/pages/platform/public-cloud/create_a_public_cloud_project)
+    - [Getting started with S3 High Performance](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage).
 - 60 GB of storage, 8 GB of memory and 8 cores on your Nutanix Cluster.
 
 ## Instructions
@@ -665,13 +662,13 @@ The database is restored into a new database.
 
 ## Go further <a name="gofurther"></a>
 
-[Nutanix Hyper-Convergence](https://docs.ovh.com/it/nutanix/nutanix-hci/)
+[Nutanix Hyper-Convergence](/pages/cloud/nutanix/03-nutanix-hci)
 
 [HYCU Home Page](https://www.hycu.com/)
 
 [HYCU documentation](https://support.hycu.com/hc/en-us/sections/115001018365-Product-documentation)
 
-[OVHcloud Load Balancer documentation](https://docs.ovh.com/gb/en/load-balancer/)
+[OVHcloud Load Balancer documentation](/products/network-load-balancer)
 
 [Our OVHcloud Object Storage solutions](https://www.ovhcloud.com/it/public-cloud/object-storage/)
 

@@ -1,8 +1,6 @@
 ---
 title: 'Uruchomienie instancji GPU'
-slug: uruchomienie-instancji-gpu
 excerpt: 'Dowiedz się, jak uruchomić instancję GPU z systemem Linux lub Windows'
-section: 'Zarządzanie w Panelu klienta OVH'
 updated: 2019-12-06
 ---
 

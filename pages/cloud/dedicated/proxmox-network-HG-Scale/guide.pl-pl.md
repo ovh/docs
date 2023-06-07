@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguracja sieci na Proxmox VE w ofercie High Grade & SCALE'
-slug: proxmox-network-hg-scale
 excerpt: 'Dowiedz się, jak skonfigurować sieć na Proxmox VE w ofercie High Grade & SCALE'
-section: 'Poziom zaawansowany'
-order: 5
 updated: 2023-01-09
 ---
 

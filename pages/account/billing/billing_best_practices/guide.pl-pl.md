@@ -1,9 +1,6 @@
 ---
 title: Dobre praktyki zarządzania usługami i kontem OVHcloud
-slug: billing-best-practices
 excerpt: Znajdziesz tutaj elementy niezbędne do prawidłowego zarządzania fakturami, zamówieniami, sposobami płatności i kontem klienta.
-section: Zamówienia, faktury i usługi
-order: 02
 updated: 2022-05-02
 ---
 
@@ -30,9 +27,9 @@ Niniejszy przewodnik zawiera elementy niezbędne do prawidłowego zarządzania k
 
 #### Zabezpiecz swoje konto
 
-- [Utwórz silne](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/#generowanie-hasla) hasło, które zapewni poufność Twojego konta.
+- [Utwórz silne](/pages/account/customer/manage-ovh-password#generowanie-hasla) hasło, które zapewni poufność Twojego konta.
 
-- [Włącz weryfikację](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/) dwuetapową, aby uniknąć ryzyka nielegalnego dostępu do panelu klienta.
+- [Włącz weryfikację](/pages/account/customer/secure-ovhcloud-account-with-2fa) dwuetapową, aby uniknąć ryzyka nielegalnego dostępu do panelu klienta.
 
 Aby środki bezpieczeństwa były skuteczne, upewnij się, że Twoje konta e-mail (główne i zapasowe) oraz numer telefonu komórkowego są **aktualne i dostępne**.
 
@@ -45,7 +42,7 @@ W sekcji `Mój profil`{.action} po prawej stronie ekranu (kliknij ponownie nazw�
 
 ![miprofile](images/myprofile.png){.thumbnail}
 
-Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem [Zabezpieczenie konta OVHcloud i zarządzanie danymi osobowymi](https://docs.ovh.com/pl/customer/identyfikator_klienta/#jak-zarzadzac-danymi-osobowymi).
+Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem [Zabezpieczenie konta OVHcloud i zarządzanie danymi osobowymi](/pages/account/customer/all_about_username#jak-zarzadzac-danymi-osobowymi).
 
 Upewnij się, czy Twoje konto e-mail jest zawsze **aktualne, bezpieczne i dostępne.** Wiadomości e-mail z naszych usług zostaną wysłane na ten adres, w tym **wiadomości z resetu** w przypadku utraty hasła.
 
@@ -63,21 +60,21 @@ Kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie kliknij `E-mail
 
 > [!primary]
 >
-> Aby uniknąć przerw w świadczeniu usług oraz zapewnić prawidłowe funkcjonowanie automatycznego odnowienia, [Zarządzanie sposobami płatności](https://docs.ovh.com/pl/billing/zarzadzanie-sposobami-platnosci/) w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+> Aby uniknąć przerw w świadczeniu usług oraz zapewnić prawidłowe funkcjonowanie automatycznego odnowienia, [Zarządzanie sposobami płatności](/pages/account/billing/manage-payment-methods) w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 >
 > Upewnij się regularnie, czy Twój sposób płatności jest **prawidłowy**.
 >
 
 Więcej informacji na temat aktywacji automatycznego odnowienia znajdziesz w przewodnikach:
 
-- [Zarządzanie odnawianiem usług](https://docs.ovh.com/pl/billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/);
-- [Zarządzanie sposobami płatności](https://docs.ovh.com/pl/billing/zarzadzanie-sposobami-platnosci/);
+- [Zarządzanie odnawianiem usług](/pages/account/billing/how_to_use_automatic_renewal);
+- [Zarządzanie sposobami płatności](/pages/account/billing/manage-payment-methods);
 
 Jeśli zdecydujesz się nie aktywować automatycznego odnowienia, otrzymasz e-mail z powiadomieniami o konieczności dokonania **ręcznej płatności**. Umożliwi odnowienie usługi z wyprzedzeniem lub uregulowanie zaległej faktury.
 
 ### Informacje o zamówieniach
 
-Czy wiesz, że możesz [śledzić zamówienia](https://docs.ovh.com/pl/billing/zarzadzanie-zamowieniami-ovh/) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)?<br>
+Czy wiesz, że możesz [śledzić zamówienia](/pages/account/billing/managing_ovh_orders) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)?<br>
 Wystarczy przejść do zakładki `Dashboard`{.action} w górnym menu ekranu, a następnie kliknąć `Wyswietl moje zamówienia`{.action}.
 
 ![starsi](images/viewmyorders.png){.thumbnail}
@@ -103,8 +100,8 @@ Następnie skorzystaj z [tego formularza](https://www.ovh.pl/ochrona-danych-osob
 
 ## Sprawdź również <a name="gofurther"></a>
 
-[Rozpoznawanie e-maili typu phishing](https://docs.ovh.com/pl/customer/oszustwa-phishing/)
+[Rozpoznawanie e-maili typu phishing](/pages/account/customer/phishing_care)
 
-[Zarządzanie fakturami OVHcloud](https://docs.ovh.com/pl/billing/zarzadzanie-fakturami-ovhcloud/)
+[Zarządzanie fakturami OVHcloud](/pages/account/billing/invoice_management)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

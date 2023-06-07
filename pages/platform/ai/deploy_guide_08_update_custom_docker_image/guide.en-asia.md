@@ -1,9 +1,6 @@
 ---
 title: AI Deploy - Update custom Docker images
-slug: deploy/update-custom-docker-image
 excerpt: How to update and use the Docker image of your AI Deploy app
-section: AI Deploy - Guides
-order: 08
 updated: 2023-05-04
 ---
 

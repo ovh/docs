@@ -1,8 +1,6 @@
 ---
 title: How to add a host?
 excerpt: Learn how to add compute capabilities to your infrastructure
-slug: how_do_you_add_a_host
-section: Resource management
 updated: 2022-02-01
 ---
 
@@ -24,7 +22,7 @@ Within your OVHcloud environment, you can add a new dedicated host in just a few
 > [!warning]
 >
 > Adding resources through vSphere adds them as hourly resources for billing purposes. If you wish to switch them to monthly resources, it can be changed in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
-> For more info on this, check out our [Introduction to the Hosted Private Cloud Control Panel](https://docs.ovh.com/ie/en/private-cloud/control-panel-ovh-private-cloud/)
+> For more info on this, check out our [Introduction to the Hosted Private Cloud Control Panel](/pages/cloud/private-cloud/manager_ovh_private_cloud)
 > 
 
 In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.

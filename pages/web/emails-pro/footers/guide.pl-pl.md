@@ -1,8 +1,5 @@
 ---
 title: 'Tworzenie automatycznych podpisów'
-slug: email-automatic-signature-disclaimer
-section: 'Pierwsze kroki'
-order: 6
 updated: 2020-03-26
 ---
 

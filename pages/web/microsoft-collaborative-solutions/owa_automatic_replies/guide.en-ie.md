@@ -1,9 +1,6 @@
 ---
 title: 'Creating automatic replies in OWA'
 excerpt: 'Find out how to set up automatic replies in OWA'
-slug: exchange_2016_how_to_set_up_automatic_replies_in_owa
-section: 'Email address features'
-order: 07
 updated: 2020-07-20
 ---
 
@@ -59,10 +56,10 @@ An alternative message for external senders can be entered into the second edito
 
 ## Go further
 
-[Using the Outlook Web App with an Exchange account](../exchange_2016_outlook_web_app_user_guide)
+[Using the Outlook Web App with an Exchange account](/ie/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide)
 
-[Delegating permissions on an Exchange account](../exchange_2013_how_to_grant_full_access_permissions_for_an_account)
+[Delegating permissions on an Exchange account](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Sharing calendars in OWA](../exchange_2016_how_to_share_calendars_via_owa)
+[Sharing calendars in OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Join our community of users on <https://community.ovh.com/en/>.

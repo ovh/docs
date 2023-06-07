@@ -1,9 +1,6 @@
 ---
 title: MongoDB - Capabilities and Limitations
-slug: mongodb/capabilities
 excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
-section: MongoDB - Guides
-order: 010
 updated: 2023-04-14
 ---
 
@@ -112,7 +109,7 @@ We try hard to avoid "disk full" situations that could be harmful to cluster hea
 2. receive a second email alert once cluster is reaching 90% storage capacity;
 3. have his database instance moved in "read-only" mode, meaning no more writes can be done.
 
-See the [Handling «Disk Full» situations documentation](https://docs.ovh.com/us/en/publiccloud/databases/handling-disk-full/) for more information.
+See the [Handling «Disk Full» situations documentation](/products/public-cloud-databases-handling-disk-full) for more information.
 
 ### Features
 

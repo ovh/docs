@@ -1,11 +1,8 @@
 ---
 title: Scan for vulnerabilities and misconfigurations of your OVHcloud Managed Kubernetes with Trivy
-slug: installing-trivy
 excerpt: Find out how to scan for vulnerabilities and misconfigurations of your OVHcloud Managed Kubernetes with Trivy
-section: Security
-order: 3
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-trivy/'
+    canonical: '/pages/platform/kubernetes-k8s/installing-trivy'
 updated: 2022-06-01
 ---
 
@@ -23,8 +20,7 @@ updated: 2022-06-01
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -72,7 +68,7 @@ You can use the *Reset cluster* function in the Public Cloud section of the [OVH
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it.
 
-Moreover, follow the [deploying a Hello World application](../deploying-an-application/) documentation in order to have an example application running on your cluster.
+Moreover, follow the [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-an-application) documentation in order to have an example application running on your cluster.
 
 At this time you should have a running Kubernetes cluster with hello-world deployment and pod like below:
 

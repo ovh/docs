@@ -1,10 +1,8 @@
 ---
 title: 'Resetting a Windows password'
-slug: resetting-a-windows-password-pci
 routes:
-    canonical: 'https://docs.ovh.com/ca/en/vps/resetting-a-windows-password-vps'
+    canonical: '/pages/cloud/vps/resetting_a_windows_password'
 excerpt: 'Guide to resetting a Windows password'
-section: Tutorials
 updated: 2020-11-25
 ---
 
@@ -16,7 +14,7 @@ In some cases you might need to reset a Windows password. This guide will show y
 
 ## Requirements
 
-- The instance must be in rescue mode (see [Putting an instance in rescue mode](../put_an_instance_in_rescue_mode)).
+- The instance must be in rescue mode (see [Putting an instance in rescue mode](/pages/platform/public-cloud/put_an_instance_in_rescue_mode)).
 
 ## Instructions
 
@@ -44,7 +42,7 @@ chntpw -u Administrator SAM
 
 Press `1` and `Enter` to clear the password. Press `q` to quit the password change prompt. Afterwards, press `y` to write the changes to the file.
 
-You can now leave the rescue mode and reboot normally (see [Putting an instance in rescue mode](../put_an_instance_in_rescue_mode)).
+You can now leave the rescue mode and reboot normally (see [Putting an instance in rescue mode](/pages/platform/public-cloud/put_an_instance_in_rescue_mode)).
 
 When logging in to your instance now, you will not have to enter a password to log in to a Windows session.
 

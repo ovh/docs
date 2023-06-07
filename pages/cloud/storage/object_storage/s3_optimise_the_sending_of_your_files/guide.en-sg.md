@@ -1,9 +1,6 @@
 ---
 title: Object Storage - Optimise the sending of your files to S3 Object Storage
-slug: s3/optimise-the-sending-of-your-files
 excerpt:
-section: Tutorials
-order: 040
 updated: 2021-12-08
 ---
 
@@ -15,7 +12,7 @@ Learn how to optimise the sending of your files to your bucket.
 
 ## Requirements
 
-- [awscli](https://docs.ovh.com/sg/en/storage/object-storage/s3/getting-started-with-object-storage/) installed
+- [awscli](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) installed
 
 ## Instructions
 

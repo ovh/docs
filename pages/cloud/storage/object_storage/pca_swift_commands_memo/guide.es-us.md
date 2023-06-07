@@ -1,11 +1,8 @@
 ---
 title: Cloud Archive Swift - Swift Command Memo (EN)
-slug: pca/swift-commands-memo
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/pca/swift-commands-memo/'
+    canonical: '/pages/cloud/storage/object_storage/pca_swift_commands_memo'
 excerpt: Find here the main swift commands to manage your Public Cloud Archive object containers
-section: OpenStack Swift Archive Storage Class Specifics
-order: 070
 updated: 2021-09-21
 ---
 
@@ -21,8 +18,8 @@ The OpenStack swiftclient allows you to interact with and manage your containers
 
 ## Requirements
 
-- [Prepare the environment to use the OpenStack API](https://docs.ovh.com/us/es/public-cloud/prepare_the_environment_for_using_the_openstack_api/) by installing python-swiftclient.
-- [Load the OpenStack environment variables](https://docs.ovh.com/us/es/public-cloud/set-openstack-environment-variables/).
+- [Prepare the environment to use the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) by installing python-swiftclient.
+- [Load the OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 ## Instructions
 
@@ -195,7 +192,7 @@ swift copy -d /<destination_container> <container> <object>
 > [!primary]
 >
 > In this example, the LargeObject was uploaded in SLO mode.
-> See the [Curl command memo](https://docs.ovh.com/gb/en/storage/pca/curl-commands-memo/) documentation for the manifest upload.
+> See the [Curl command memo](/pages/cloud/storage/object_storage/pca_curl_commands_memo) documentation for the manifest upload.
 >
 
 On a LargeObject, the `swift copy` command returns a **413 error**:
@@ -312,7 +309,7 @@ sys	0m0,091s
 > [!primary]
 >
 > In this example, the LargeObject was uploaded in SLO mode.
-> See the [Curl command memo](https://docs.ovh.com/gb/en/storage/pca/curl-commands-memo/) documentation for the manifest upload.
+> See the [Curl command memo](/pages/cloud/storage/object_storage/pca_curl_commands_memo) documentation for the manifest upload.
 >
 
 ```bash

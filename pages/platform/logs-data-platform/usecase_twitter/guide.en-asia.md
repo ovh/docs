@@ -1,9 +1,6 @@
 ---
 title: Twitter Analysis with Logs Data Platform
-slug: twitter
-order: 07
 excerpt: Logs Data Platform can be used in multiple ways. Twitter feed and keyword analysis is one of them.
-section: Use cases
 updated: 2019-04-10
 ---
 
@@ -17,9 +14,9 @@ Twitter can be an amazing source to have a direct feedback on your products or e
 
 Prior to completing this guide, you should read the following:
 
-- [Quick Start of Logs Data Platform](../quick-start){.ref}
-- [Field naming conventions](../field-naming-conventions){.ref}
-- [Logstash collector](../logstash-input){.ref}
+- [Quick Start of Logs Data Platform](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
+- [Field naming conventions](/pages/platform/logs-data-platform/getting_started_field_naming_convention){.ref}
+- [Logstash collector](/pages/platform/logs-data-platform/ingestion_logstash_dedicated_input){.ref}
 
 If you have completely understood these three guides, let's dive into this one.
 
@@ -265,7 +262,7 @@ That's all for now. If you have any proposition or trouble with this tutorial, d
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start){.ref}
-- Documentation: [Guides](../){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

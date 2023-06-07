@@ -1,8 +1,6 @@
 ---
 title: 'Choosing the disk group to install an operating system'
-slug: install-hybrid
 excerpt: 'Learn here how to choose a disk group to install your operating system'
-section: 'Advanced use'
 updated: 2018-11-22
 ---
 

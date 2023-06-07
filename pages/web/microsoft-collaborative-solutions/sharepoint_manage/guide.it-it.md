@@ -1,9 +1,6 @@
 ---
 title: 'Attiva e gestisci il tuo Sharepoint OVH'
 excerpt: 'Attiva e gestisci il tuo Sharepoint OVH'
-slug: attiva_e_gestisci_il_tuo_sharepoint_ovh
-section: SharePoint
-order: 01
 updated: 2020-08-11
 ---
 

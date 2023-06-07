@@ -1,8 +1,5 @@
 ---
 title: Spring
-slug: frameworks-spring
-section: Frameworks
-order: 6
 updated: 2021-05-11
 ---
 
@@ -17,11 +14,11 @@ The [Spring Framework](https://spring.io/projects/spring-framework) provides a c
 
 ## Services
 
-The [configuration reader library](https://github.com/platformsh/config-reader-java) for Java is used in these examples, so be sure to check out the [documentation](../languages-java#support-libraries) for installation instructions and the latest version.
+The [configuration reader library](https://github.com/platformsh/config-reader-java) for Java is used in these examples, so be sure to check out the [documentation](/pages/web/web-paas/languages-java#support-libraries) for installation instructions and the latest version.
 
 ### Apache Solr
 
-You can use [Spring Data Solr](https://spring.io/projects/spring-data-solr) to use [Solr](../configuration-services/solr) with your application by first determining the Solr client programmatically.
+You can use [Spring Data Solr](https://spring.io/projects/spring-data-solr) to use [Solr](/pages/web/web-paas/configuration-services/solr) with your application by first determining the Solr client programmatically.
 
 ```java
 import org.apache.solr.client.solrj.impl.HttpSolrClient;
@@ -54,7 +51,7 @@ public class SolrConfig {
 
 ### Redis
 
-You can use [Spring Data Redis](https://spring.io/projects/spring-data-redis) to use [Redis](../configuration-services/redis) with your application by first determining the Redis client programmatically.
+You can use [Spring Data Redis](https://spring.io/projects/spring-data-redis) to use [Redis](/pages/web/web-paas/configuration-services/redis) with your application by first determining the Redis client programmatically.
 
 ```java
 import org.springframework.context.annotation.Bean;

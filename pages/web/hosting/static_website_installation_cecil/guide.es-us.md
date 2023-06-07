@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Instalación y configuración de Cecil, un generador de sitios estáticos (SSG) en PHP"
-slug: install-configure-cecil
 excerpt: "Descubra cómo Cecil le permite crear su sitio estático con un motor de plantillas moderno (Jamstack)"
-section: 'Tutoriales'
-order: 030
 updated: 2023-01-17
 ---
 
@@ -25,15 +22,15 @@ Un sitio web compuesto principalmente por páginas web estáticas garantiza un m
 
 - Disponer de un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/) con acceso SSH. Este acceso permite instalar en línea de comandos una o más soluciones alternativas a las que ofrecen nuestros planes de hosting por defecto.
 - Estar familiarizado con la entrada en línea de comandos.
-- Poder transferir archivos por FTP con un cliente como [FileZilla](https://docs.ovh.com/us/es/hosting/web_hosting_guia_de_uso_de_filezilla/).
-- Configurar la zona DNS para que su dominio (o subdominio) apunte hacia su alojamiento web compartido. Esto resulta especialmente útil si desea alojar varios sitios web en [multisitios](https://docs.ovh.com/us/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/) en su alojamiento compartido.
+- Poder transferir archivos por FTP con un cliente como [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide).
+- Configurar la zona DNS para que su dominio (o subdominio) apunte hacia su alojamiento web compartido. Esto resulta especialmente útil si desea alojar varios sitios web en [multisitios](/pages/web/hosting/multisites_configure_multisite) en su alojamiento compartido.
 - Instalar previamente [Componer](https://getcomposer.org/){.external} con el archivo `composer.phar` en la raíz de su alojamiento web compartido o en la carpeta de destino de su nombre de dominio.
 
 ## Procedimiento
 
 Los [alojamientos web compartidos](https://www.ovhcloud.com/es/web-hosting/) permiten declarar dominios o subdominios en multisitios. Un dominio o subdominio es necesario para desplegar su sitio web con **Cecil**.
 
-Si necesita ayuda para declarar un dominio o subdominio multisitio en su alojamiento, consulte nuestra página "[Alojar varios sitios web en un mismo hosting](https://docs.ovh.com/us/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/)".
+Si necesita ayuda para declarar un dominio o subdominio multisitio en su alojamiento, consulte nuestra página "[Alojar varios sitios web en un mismo hosting](/pages/web/hosting/multisites_configure_multisite)".
 
 ### Crear el directorio en el que serán sus archivos
 
@@ -96,7 +93,7 @@ Ahora puede ver el resultado accediendo a su dominio :
 
 Para ver el resultado de su sitio en su navegador, cambie el puntero del dominio o subdominio al directorio_sitio creado anteriormente durante la instalación de **Cecil**.
 
-Si tiene su dominio o subdominio alojado en OVHcloud, consulte nuestras guías relativas a la [configuración DNS](https://docs.ovh.com/us/es/domains/web_hosting_como_editar_mi_zona_dns/) y la instalación de un [multisitio en su alojamiento web](https://docs.ovh.com/us/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/).
+Si tiene su dominio o subdominio alojado en OVHcloud, consulte nuestras guías relativas a la [configuración DNS](/pages/web/domains/dns_zone_edit) y la instalación de un [multisitio en su alojamiento web](/pages/web/hosting/multisites_configure_multisite).
 
 ### Configurar su sitio
 
@@ -219,4 +216,4 @@ El [sitio oficial de la aplicación Cecil](https://cecil.app/){.external}
 
 Un [guía sobre el formato de Markdown](https://www.markdownguide.org/){.external}
 
-Nuestra [guía sobre el uso de FileZilla](https://docs.ovh.com/us/es/hosting/web_hosting_guia_de_uso_de_filezilla/)
+Nuestra [guía sobre el uso de FileZilla](/pages/web/hosting/ftp_filezilla_user_guide)

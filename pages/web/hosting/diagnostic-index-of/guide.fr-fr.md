@@ -1,9 +1,6 @@
 ---
 title: Que faire en cas de page « Index of » ?
 excerpt: Découvrez comment remettre votre site en ligne quand il affiche une page « Index of »
-slug: diagnostic-index-of
-section: Diagnostic
-order: 07
 updated: 2023-05-04
 ---
 
@@ -37,7 +34,7 @@ Une page **« Index of »** apparaît dans au moins l'un des cas suivants :
 
 ### Comprendre l'origine de la page « Index of »
 
-Votre nom de domaine est déclaré pour accéder à un répertoire cible (un « `Dossier racine` ») sur le serveur [FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement web mutualisé. Ceci via l'onglet [Multisite](/pages/web/hosting/multisites_configure_multisite) de votre hébergement web présent dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+Votre nom de domaine est déclaré pour accéder à un répertoire cible (un « `Dossier racine` ») sur le serveur [FTP](/pages/web/hosting/ftp_connection) de votre hébergement web mutualisé. Ceci via l'onglet [Multisite](/pages/web/hosting/multisites_configure_multisite) de votre hébergement web présent dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 La page **Index of** indique que le répertoire cible concerné ne contient pas de fichier **index.php** ou **index.html**. Un fichier de ce type constitue le « *point d'entrée* » de votre site web. Le nom de ce fichier est normalisé.
 
@@ -45,13 +42,13 @@ Pour afficher votre site web, vous devrez donc, depuis la partie `Multisite`{.ac
 
 > [!primary]
 >
-> Pour relier temporairement votre domaine à un `Dossier racine` ne contenant pas de fichier **index.php** ou **index.html**, vous pouvez interdire l'affichage de la liste des dossiers de votre site en suivant ce [tutoriel](https://docs.ovh.com/fr/hosting/mutualise-htaccess-les-autres-operations-realisables-avec-des-fichiers-htaccess/#empecher-le-listage-du-contenu-dun-repertoire). Vous pouvez également protéger l'accès à vos dossiers par un [mot de passe](https://docs.ovh.com/fr/hosting/mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification/).
+> Pour relier temporairement votre domaine à un `Dossier racine` ne contenant pas de fichier **index.php** ou **index.html**, vous pouvez interdire l'affichage de la liste des dossiers de votre site en suivant ce [tutoriel](/pages/web/hosting/htaccess_what_else_can_you_do#empecher-le-listage-du-contenu-dun-repertoire). Vous pouvez également protéger l'accès à vos dossiers par un [mot de passe](/pages/web/hosting/htaccess_protect_directory_by_password).
 >
 > Nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés à mettre en place cette configuration. En effet, nos équipes support ne seront pas en mesure de vous fournir une assistance pour toute modification de la programmation interne de votre site web.
 
 ### Résoudre le cas le plus courant d’une page « Index of »
 
-Vous avez importé les fichiers de votre site **mydomain.ovh** dans le dossier `www` de votre hébergement par [FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/). Hors, votre nom de domaine n'est pas relié à ce dossier dans la colonne `Dossier racine` de votre `Multisite`{.action}.
+Vous avez importé les fichiers de votre site **mydomain.ovh** dans le dossier `www` de votre hébergement par [FTP](/pages/web/hosting/ftp_connection). Hors, votre nom de domaine n'est pas relié à ce dossier dans la colonne `Dossier racine` de votre `Multisite`{.action}.
 
 ![index_of_multisite](images/index_of_multisite.png){.thumbnail}
 
@@ -69,7 +66,7 @@ Dans la fenêtre qui s'affiche :
 
 > [!primary]
 >
-> Utiliser le répertoire `www` comme `Dossier racine` n'est en aucun cas obligatoire. Vous pouvez installer votre site dans un autre dossier de votre [serveur FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+> Utiliser le répertoire `www` comme `Dossier racine` n'est en aucun cas obligatoire. Vous pouvez installer votre site dans un autre dossier de votre [serveur FTP](/pages/web/hosting/ftp_connection).
 >
 
 Dans la fenêtre suivante, cliquez sur `Valider`{.action}.
@@ -87,11 +84,11 @@ Assurez-vous également qu'un fichier **index.php** ou **index.html** est prése
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic](https://docs.ovh.com/fr/hosting/erreurs-frequentes-modules-en-1-clic/)
+[Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic](/pages/web/hosting/diagnostic_errors_module1clic)
 
-[Résoudre l’erreur « Site non installé »](https://docs.ovh.com/fr/hosting/erreur-site-non-installe/)
+[Résoudre l’erreur « Site non installé »](/pages/web/hosting/multisites_website_not_installed)
 
-[Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/)
+[Partager son hébergement entre plusieurs sites](/pages/web/hosting/multisites_configure_multisite)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 

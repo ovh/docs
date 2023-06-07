@@ -1,9 +1,6 @@
 ---
 title: 'Utiliser le snapshot'
 excerpt: 'Découvrez comment activer et utiliser l’option snapshot depuis l’espace client OVHcloud'
-slug: snapshot-vps
-section: Sauvegarde
-order: 1
 updated: 2023-04-28
 ---
 
@@ -165,7 +162,7 @@ $ sudo service qemu-guest-agent status
 
 ##### **Problèmes Kernel sur Cpanel**
 
-Consultez notre guide [Sauvegarde automatique - Kernel panic (cPanel)](https://docs.ovh.com/fr/vps/cpanel_auto_backup/) pour savoir comment résoudre les problèmes de blocage des serveurs cPanel lors de la sauvegarde automatique OVHcloud.
+Consultez notre guide [Sauvegarde automatique - Kernel panic (cPanel)](/pages/cloud/vps/cpanel_snapshot) pour savoir comment résoudre les problèmes de blocage des serveurs cPanel lors de la sauvegarde automatique OVHcloud.
 
 ##### **Windows**
 
@@ -183,6 +180,6 @@ Running  QEMU-GA            QEMU Guest Agent
 
 ## Aller plus loin
 
-[Utiliser la sauvegarde automatique sur un VPS](../autobackup-vps/)
+[Utiliser la sauvegarde automatique sur un VPS](/pages/cloud/vps/using-automated-backups-on-a-vps)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -1,8 +1,5 @@
 ---
 title: Pushing logs with a SDK - Python 3.x - logging-ldp
-slug: logs-data-platform-logging-ldp
-order: 20
-section: Logging libraries
 updated: 2023-01-16
 ---
 

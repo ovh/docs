@@ -1,9 +1,6 @@
 ---
 title: 'Migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange'
-slug: migracao-endereco-email-partilhado-vers-exchange
 excerpt: 'Saiba como migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange'
-section: 'Migração'
-order: 02
 updated: 2022-11-22
 ---
 
@@ -62,7 +59,7 @@ Para isso, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action
 >
 > A sua conta OVHcloud deve ter um contacto com o administrador **e** contacto técnico do serviço MX plan a migrar, **bem como** do serviço E-mail Pro ou Exchange para o qual migra.
 >
-> Para mais informações sobre as alterações de contactos, consulte o nosso guia para [gerir os contactos dos seus serviços](https://docs.ovh.com/pt/customer/gestao_dos_contactos/).
+> Para mais informações sobre as alterações de contactos, consulte o nosso guia para [gerir os contactos dos seus serviços](/pages/account/customer/managing_contacts).
 >
 
 A migração pode ser efetuada a partir de duas interfaces:<br>
@@ -112,7 +109,7 @@ Por fim, confirme a palavra-passe do endereço de e-mail original (aquela que pr
 >
 >![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
-> Para mais informações sobre a adição de um domínio, siga [o guia E-mail Pro](https://docs.ovh.com/pt/emails-pro/configuracao-inicial/#2-adicionar-o-dominio) ou [o guia Exchange](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/adding-domain-exchange/).
+> Para mais informações sobre a adição de um domínio, siga [o guia E-mail Pro](/pages/web/emails-pro/first_config#2-adicionar-o-dominio) ou [o guia Exchange](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain).
 
 A migração do seu MXPlan far-se-á em 3 grandes etapas, **Renomear**, **Criar** e **Migrar**.
 
@@ -136,7 +133,7 @@ No separador `Contas de e-mail`{.action} da plataforma E-mail Pro ou Exchange, c
 
 3\. **Migre** a conta MXPlan para a sua nova plataforma com a nossa ferramenta [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
 
-Para mais informações sobre OMM, consulte o nosso guia [Migrar contas de e-mail através do OVH Mail Migrator](../exchange-migracao-de-contas-email-ovh-mail-migrator/).
+Para mais informações sobre OMM, consulte o nosso guia [Migrar contas de e-mail através do OVH Mail Migrator](/pages/web/emails/migration_omm).
 
 ![Exchange](images/mxplan-migration-configure-account03.png){.thumbnail}
 
@@ -167,7 +164,7 @@ Para alterar a configuração, clique na etiqueta vermelha e execute a operaçã
 
 Só precisa de utilizar os seus endereços de e-mail migrados. Para isso, a OVHcloud disponibiliza uma aplicação online (_web app_) acessível no endereço <https://www.ovh.com/pt/mail/>. Introduza os dados de acesso relativos ao seu endereço de e-mail.
 
-Se configurou uma das contas migradas num cliente de e-mail (como o Outlook), deve configurá-la novamente. As informações de ligação ao servidor OVHcloud foram alteradas após a migração. Para o ajudar nas suas operações, consulte o nosso manual através das secções dos guias [E-mail Pro](../../emails-pro/) e [Hosted Exchange](../). Se não consegue reconfigurar a conta de forma imediata, o acesso através da aplicação online é sempre possível.
+Se configurou uma das contas migradas num cliente de e-mail (como o Outlook), deve configurá-la novamente. As informações de ligação ao servidor OVHcloud foram alteradas após a migração. Para o ajudar nas suas operações, consulte o nosso manual através das secções dos guias [E-mail Pro](../../emails-pro/) e [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-mx-plan). Se não consegue reconfigurar a conta de forma imediata, o acesso através da aplicação online é sempre possível.
 
 ## Organização do conteúdo dos seus endereços de e-mail na sequência de uma migração <a name="content-after-migration"></a>
 
@@ -181,14 +178,14 @@ Após uma migração, não hesite em explorar todas as pastas e subpastas da sua
 
 ### Migrar Manual
 
-Também pode migrar manualmente os seus endereços de e-mail para a nova oferta de e-mail OVHcloud utilizando apenas o seu software de correio. Apoie-se no nosso guia [Migrar manualmente o seu endereço de e-mail](../../emails/migrar-os-enderecos-email-manualmente/). No entanto, recomendamos que só utilize este método quando os métodos principais não forem possíveis.
+Também pode migrar manualmente os seus endereços de e-mail para a nova oferta de e-mail OVHcloud utilizando apenas o seu software de correio. Apoie-se no nosso guia [Migrar manualmente o seu endereço de e-mail](/pages/web/emails/manual_email_migration). No entanto, recomendamos que só utilize este método quando os métodos principais não forem possíveis.
 
 ## Quer saber mais?
 
-[Como gerir os contactos (gestores) dos serviços OVHcloud](../../customer/gestao_dos_contactos/){.external}.
+[Como gerir os contactos (gestores) dos serviços OVHcloud](/pages/account/customer/managing_contacts){.external}.
 
-[Guias E-mail Pro](../../emails-pro/){.external}.
+[Guias E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro){.external}.
 
-[Guias Exchange](../../microsoft-collaborative-solutions/){.external}.
+[Guias Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}.
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

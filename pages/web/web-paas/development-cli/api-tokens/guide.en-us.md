@@ -1,7 +1,5 @@
 ---
 title: API tokens
-slug: api-tokens
-section: Cli
 updated: 2021-06-03
 ---
 
@@ -47,7 +45,7 @@ It will also show up in logs and activity streams as a separate entry from human
 
 A common use case for an API token is to allow the Web PaaS CLI to be run on an app container, often via a cron hook.  An API token is necessary for authentication, but the CLI will be able to auto-detect the current project and environment.
 
-First, create a machine user (see above) that you invite to your project. Then, log in as that machine user to obtain an API token. Set this token as the [top-level](../../development-variables#top-level-environment-variables) environment variable `env:OVHCLOUD_WEBPAAS_CLI_TOKEN` either through the management console or via the CLI, like so:
+First, create a machine user (see above) that you invite to your project. Then, log in as that machine user to obtain an API token. Set this token as the [top-level](/pages/web/web-paas/development-variables#top-level-environment-variables) environment variable `env:OVHCLOUD_WEBPAAS_CLI_TOKEN` either through the management console or via the CLI, like so:
 
 ```bash
 webpaas variable:create -e master --level environment --name env:OVHCLOUD_WEBPAAS_CLI_TOKEN --sensitive true --value 'your API token'

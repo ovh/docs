@@ -1,7 +1,5 @@
 ---
 title: EOL Policy für Managed Databases
-slug: managed-db-life-cycle-policy
-section: 'Technische Ressourcen'
 updated: 2023-03-07
 ---
 
@@ -31,8 +29,8 @@ Sie verfügen über einen der folgenden Dienste:
 
 Die von der EOL Policy betroffenen Dienste sind:
 
-- Webhosting Web Cloud Databases (auch Private SQL Dienste genannt), dedizierte DBMS Instanzen, die über das Webhosting-Netzwerk erreichbar sind ([siehe Ankündigungen](https://docs.ovh.com/de/clouddb/clouddb-eos-eol/)).
-- SharedSQL Web Hosting Dienste, MySQL Datenbanken, die über das Webhosting-Netzwerk erreichbar sind ([siehe Ankündigungen](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
+- Webhosting Web Cloud Databases (auch Private SQL Dienste genannt), dedizierte DBMS Instanzen, die über das Webhosting-Netzwerk erreichbar sind ([siehe Ankündigungen](/pages/web/clouddb/clouddb-eos-eol)).
+- SharedSQL Web Hosting Dienste, MySQL Datenbanken, die über das Webhosting-Netzwerk erreichbar sind ([siehe Ankündigungen](/pages/web/hosting/sql_eos_eol)).
 
 ### Definitionen und Leitlinien für EOL-Richtlinien
 

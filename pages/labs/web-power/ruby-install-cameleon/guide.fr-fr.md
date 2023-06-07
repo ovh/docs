@@ -1,9 +1,6 @@
 ---
 title: Installer Camaleon sur votre hébergement web POWER
-slug: ruby-installer-camaleon
 excerpt: Découvrez comment installer Camaleon sur votre hébergement web POWER
-section: Ruby
-order: 2
 updated: 2021-02-04
 ---
 
@@ -40,7 +37,7 @@ Vous avez souscrit à un hébergement web POWER Ruby et vous voulez y déployer 
 - Disposer de l'offre d'hébergement web POWER [Ruby](https://labs.ovh.com/managed-ruby).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
-Si vous n'êtes pas encore familier avec l'utilisation de votre hébergement web POWER, nous vous conseillons de consulter notre guide « [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) » avant de poursuivre la lecture de ce guide.
+Si vous n'êtes pas encore familier avec l'utilisation de votre hébergement web POWER, nous vous conseillons de consulter notre guide « [Premiers pas avec un hébergement web POWER](/pages/labs/web-power/getting-started) » avant de poursuivre la lecture de ce guide.
 
 ## En pratique
 
@@ -58,10 +55,10 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 > [!primary]
 >
-> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration).
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](/pages/labs/web-power/getting-started#api-get-active-configuration).
 
 
-[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER.
+[Accédez via SSH](/pages/labs/web-power/getting-started#ssh) à votre hébergement web POWER.
 
 Supprimez le dossier racine pour l'initialiser avec Rails. N'oubliez pas d'exporter votre `gempath` ou l'installation du bundle va échouer :
 
@@ -123,7 +120,7 @@ development:
   check_yarn_integrity: false
 ```
 
-[Redémarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre CMS Camaleon sera alors en ligne.
+[Redémarrez votre instance](/pages/labs/web-power/getting-started#restart), votre CMS Camaleon sera alors en ligne.
 
 ![Camaleon](images/ruby-install-camaleon-01.png){.thumbnail}
 

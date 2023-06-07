@@ -1,9 +1,6 @@
 ---
 title: AI Notebooks - Tutorial - Use Speech-to-Text powers on audio and video
-slug: notebooks/tuto-speech-to-text-recognition
 excerpt: How to convert Speech to Text using AI Notebooks
-section: AI Notebooks - Tutorials
-order: 08
 updated: 2022-09-01
 ---
 
@@ -116,7 +113,7 @@ Once the repository has been cloned, find your notebook by following this path: 
 
 ## Go further
 
-- With NLP, you can do **sentiment analysis**. For more information, click [here](https://docs.ovh.com/au/en/publiccloud/ai/notebooks/tuto-hugging-face-sentiment-analysis/).
+- With NLP, you can do **sentiment analysis**. For more information, click [here](/pages/platform/ai/notebook_tuto_05_hugging_face_sentiment_analysis).
 
 ## Feedback
 

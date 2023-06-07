@@ -1,9 +1,6 @@
 ---
 title: "Przykłady zastosowania - Porady po włamaniu się na stronę WWW"
 excerpt: "Dowiedz się, jak naprawić stronę WWW"
-slug: wlamanie_na_strone_z_modulem_wordpress_porady_i_przyklady_zastosowania
-section: "Tutoriale" 
-order: 010
 updated: 2022-11-15
 ---
 
@@ -79,12 +76,12 @@ Jeśli strona WWW została zhakowana i przez środki ostrożności, zmień wszys
 
 W przypadku OVHcloud skorzystaj z naszej dokumentacji dotyczącej:
 
-- [Zmiana hasła do konta klienta OVHcloud](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/).
-- [Zabezpieczenie dostępu do Panelu klienta OVHcloud za pomocą weryfikacji dwuetapowej](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/).
-- [Zmień hasło dostępowe do przestrzeni dyskowej FTP Twojego hostingu](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/).
-- [Zmiana hasła do bazy danych](https://docs.ovh.com/pl/hosting/zmiana-hasla-do-bazy-danych/).
+- [Zmiana hasła do konta klienta OVHcloud](/pages/account/customer/manage-ovh-password).
+- [Zabezpieczenie dostępu do Panelu klienta OVHcloud za pomocą weryfikacji dwuetapowej](/pages/account/customer/secure-ovhcloud-account-with-2fa).
+- [Zmień hasło dostępowe do przestrzeni dyskowej FTP Twojego hostingu](/pages/web/hosting/ftp_change_password).
+- [Zmiana hasła do bazy danych](/pages/web/hosting/sql_change_password).
 
-Zalecamy również użycie [menedżera haseł](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/#uzycie-managera-hasel).
+Zalecamy również użycie [menedżera haseł](/pages/account/customer/manage-ovh-password#uzycie-managera-hasel).
 
 > [!warning]
 > 
@@ -103,7 +100,7 @@ Zalecamy również użycie [menedżera haseł](https://docs.ovh.com/pl/customer/
 > W przypadku trudności z wykonaniem opisanych poniżej operacji, należy skontaktować się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/) w zakresie bezpieczeństwa cybernetycznego.
 >
 
-Skorzystaj z naszego przewodnika na temat [statystyki i logi Twojego hostingu www](https://docs.ovh.com/pl/hosting/hosting_statystyki_i_logi_strony/), aby wyszukać złośliwe elementy wprowadzone na Twoją stronę WWW. Informacje znajdziesz w logach "www". 
+Skorzystaj z naszego przewodnika na temat [statystyki i logi Twojego hostingu www](/pages/web/hosting/logs_and_statistics), aby wyszukać złośliwe elementy wprowadzone na Twoją stronę WWW. Informacje znajdziesz w logach "www". 
 
 Rozpocznij poszukiwania od dnia, w którym widziałeś hacking, a następnie przejdź do historii Twoich logów.
 
@@ -123,7 +120,7 @@ W ten sposób usuń luki bezpieczeństwa występujące na Twojej stronie WWW, a 
 >
 > Kilka stron WWW (nie obsługiwanych przez OVHcloud) pozwala na uzyskanie informacji o złośliwych adresach IP. Możesz użyć jednego z nich do pobierania informacji, takich jak dostawca IP, jego geolokalizacja, menedżer, itp...
 >
-> Jeśli jesteś absolutnie pewien, że chodzi o złośliwy adres IP, możesz zablokować dostęp do Twojego hostingu zgodnie z naszą dokumentacją dotyczącą [ograniczenia dostępu przez plik ".htaccess"](https://docs.ovh.com/pl/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+> Jeśli jesteś absolutnie pewien, że chodzi o złośliwy adres IP, możesz zablokować dostęp do Twojego hostingu zgodnie z naszą dokumentacją dotyczącą [ograniczenia dostępu przez plik ".htaccess"](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 > 
 
 ### Etap 4 - Usunięcie złośliwych elementów i usunięcie luk w zabezpieczeniach
@@ -143,9 +140,9 @@ W zależności od daty włamania na Twojej stronie (mniej niż 14 dni), OVHcloud
 
 W tym celu zapoznaj się z naszymi 3 przewodnikami:
 
-- [Przywracanie przestrzeni dyskowej FTP z Twojego hostingu www](https://docs.ovh.com/pl/hosting/hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/)
-- [Pobranie kopii zapasowej SQL bazy danych](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/)
-- [Import kopii zapasowej SQL do bazy danych](https://docs.ovh.com/pl/hosting/hosting_www_importowanie_bazy_danych_mysql/)
+- [Przywracanie przestrzeni dyskowej FTP z Twojego hostingu www](/pages/web/hosting/ftp_save_and_backup)
+- [Pobranie kopii zapasowej SQL bazy danych](/pages/web/hosting/sql_database_export)
+- [Import kopii zapasowej SQL do bazy danych](/pages/web/hosting/sql_importing_mysql_database)
 
 Wybierz maksymalnie dwie daty przywrócenia przestrzeni dyskowej FTP i bazy danych SQL.
 
@@ -157,7 +154,7 @@ Wybierz maksymalnie dwie daty przywrócenia przestrzeni dyskowej FTP i bazy dany
 > Jeśli Twój hosting jest wyłączony, roboty przywracania automatycznego dostępne w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) zostaną również wyłączone.
 > Musisz wykonać ręczne przywracanie strony, usunąć pozostałości złośliwych elementów, a następnie usunąć luki bezpieczeństwa występujące w kopii zapasowej. To **przed** włączyć hosting.
 >
-> Aby ponownie włączyć hosting WWW, postępuj zgodnie z instrukcjami etapu 4 tego [przewodnika](https://docs.ovh.com/pl/hosting/diagnostyka-403-forbidden/).
+> Aby ponownie włączyć hosting WWW, postępuj zgodnie z instrukcjami etapu 4 tego [przewodnika](/pages/web/hosting/diagnostic_403_forbidden).
 >
 
 Twoja strona WWW powinna pojawić się ponownie, jeśli operacje te zostały wykonane prawidłowo.
@@ -166,8 +163,8 @@ Twoja strona WWW powinna pojawić się ponownie, jeśli operacje te zostały wyk
 
 W tym celu zapoznaj się z naszymi 2 przewodnikami:
 
-- [Przywracanie przestrzeni dyskowej FTP z Twojego hostingu www](https://docs.ovh.com/pl/hosting/hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/)
-- [Import kopii zapasowej SQL do bazy danych](https://docs.ovh.com/pl/hosting/hosting_www_importowanie_bazy_danych_mysql/)
+- [Przywracanie przestrzeni dyskowej FTP z Twojego hostingu www](/pages/web/hosting/ftp_save_and_backup)
+- [Import kopii zapasowej SQL do bazy danych](/pages/web/hosting/sql_importing_mysql_database)
 
 >[!warning]
 >
@@ -176,7 +173,7 @@ W tym celu zapoznaj się z naszymi 2 przewodnikami:
 >
 > Jeśli Twój hosting jest "wyłączony", przywracaj stronę ręcznie, usuń resztki złośliwych elementów, a następnie usuń luki bezpieczeństwa występujące w kopii zapasowej. To **przed** włączyć hosting.
 >
-> Aby ponownie włączyć hosting WWW, postępuj zgodnie z instrukcjami etapu 4 tego [przewodnika](https://docs.ovh.com/pl/hosting/diagnostyka-403-forbidden/).
+> Aby ponownie włączyć hosting WWW, postępuj zgodnie z instrukcjami etapu 4 tego [przewodnika](/pages/web/hosting/diagnostic_403_forbidden).
 >
 
 Twoja strona WWW powinna pojawić się ponownie, jeśli operacje te zostały wykonane prawidłowo.
@@ -185,7 +182,7 @@ Twoja strona WWW powinna pojawić się ponownie, jeśli operacje te zostały wyk
 
 Musisz ręcznie usunąć wykryte wcześniej pliki i złośliwe kody w [Etap 2](#step2) z tego przewodnika, a następnie usunąć luki bezpieczeństwa na Twojej stronie.
 
-Aby zalogować się do przestrzeni dyskowej Twojego hostingu, zapoznaj się z [naszym przewodnikiem](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/).
+Aby zalogować się do przestrzeni dyskowej Twojego hostingu, zapoznaj się z [naszym przewodnikiem](/pages/web/hosting/ftp_connection).
 
 > [!warning]
 >
@@ -194,7 +191,7 @@ Aby zalogować się do przestrzeni dyskowej Twojego hostingu, zapoznaj się z [n
 >
 > Jeśli Twój hosting jest "wyłączony", usuń pozostałości złośliwych elementów, a następnie usuń luki bezpieczeństwa w kopii zapasowej **przed**, aby ponownie włączyć hosting.
 >
-> Aby ponownie włączyć hosting WWW, postępuj zgodnie z instrukcjami etapu 4 tego [przewodnika](https://docs.ovh.com/pl/hosting/diagnostyka-403-forbidden/).
+> Aby ponownie włączyć hosting WWW, postępuj zgodnie z instrukcjami etapu 4 tego [przewodnika](/pages/web/hosting/diagnostic_403_forbidden).
 >
 
 Twoja strona WWW powinna pojawić się ponownie, jeśli operacje te zostały wykonane prawidłowo.
@@ -205,24 +202,24 @@ Zaktualizuj Twoją stronę WWW, używaj jej kodu źródłowego, dostępnych para
 
 Sprawdź uprawnienia dostępu FTP "CHMOD" dla każdego z Twoich katalogów i plików przechowywanych w Twojej przestrzeni dyskowej.
 Domyślnie zalecamy maksymalne wykorzystanie uprawnień "CHMOD" **705** w przypadku katalogów i **604** w przypadku plików.
-Więcej informacji na temat uprawnień "CHMOD" znajduje się w sekcji "Przydatne informacje" w naszym [tutorial dotyczący korzystania z klienta FTP Filezilla](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/#useful-information).
+Więcej informacji na temat uprawnień "CHMOD" znajduje się w sekcji "Przydatne informacje" w naszym [tutorial dotyczący korzystania z klienta FTP Filezilla](/pages/web/hosting/ftp_filezilla_user_guide#useful-information).
 
 Jeśli korzystasz z CMS (Wordpress, Joomla!, PrestaShop, Drupal,...), aktualizuj wtyczki, temat i sam CMS.
 Uruchom wtyczki/tematy "oficjalne" i aktualizuj stronę internetową tak regularnie, jak to możliwe i wyczerpująco.
 
-Zabezpiecz swoje formularze kontaktowe za pomocą systemu Captcha, aby zapobiec wysyłaniu przez złośliwe roboty SPAM. Jeśli funkcja "mail()" PHP została również zablokowana na Twoim hostingu, w celu rozwiązania tej blokady, zapoznaj się z [naszym przewodnikiem](https://docs.ovh.com/pl/hosting/hosting_www_monitorowanie_automatycznych_e-maili/).
+Zabezpiecz swoje formularze kontaktowe za pomocą systemu Captcha, aby zapobiec wysyłaniu przez złośliwe roboty SPAM. Jeśli funkcja "mail()" PHP została również zablokowana na Twoim hostingu, w celu rozwiązania tej blokady, zapoznaj się z [naszym przewodnikiem](/pages/web/hosting/mail_function_script_records).
 
-Zapoznaj się również z naszym przewodnikiem dotyczącym [jak zabezpieczyć Twoją stronę internetową](https://docs.ovh.com/pl/hosting/secure-website/), aby zminimalizować ryzyko ponownego włamania.
+Zapoznaj się również z naszym przewodnikiem dotyczącym [jak zabezpieczyć Twoją stronę internetową](/pages/web/hosting/secure_your_website), aby zminimalizować ryzyko ponownego włamania.
 
 ## Sprawdź również <a name="go-further"></a>
 
-[Logowanie do przestrzeni dyskowej hostingu WWW](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/)
+[Logowanie do przestrzeni dyskowej hostingu WWW](/pages/web/hosting/ftp_connection)
 
-[Zmiana konfiguracji hostingu](https://docs.ovh.com/pl/hosting/zmiana_srodowiska_uruchomieniowego_dla_hostingu_www//)
+[Zmiana konfiguracji hostingu](/pages/web/hosting/ovhconfig_modify_system_runtime/)
 
-[Włącz firewall aplikacyjny](https://docs.ovh.com/pl/hosting/hosting_www_aktywacja_zapory_systemowej/)
+[Włącz firewall aplikacyjny](/pages/web/hosting/multisites_activating_application_firewall)
 
-[Optymalizacja wydajności strony](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_optymalizacji_wydajnosci_strony/)
+[Optymalizacja wydajności strony](/pages/web/hosting/optimise_your_website_performance)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
 

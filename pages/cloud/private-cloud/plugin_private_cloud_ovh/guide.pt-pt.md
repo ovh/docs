@@ -1,8 +1,6 @@
 ---
 title: 'Utilizar o plugin OVHcloud'
-slug: plugin-private-cloud-ovh
 excerpt: 'Saiba como utilizar o plugin Private Cloud da OVHcloud'
-section: 'Funcionalidades da OVHcloud'
 updated: 2021-11-15
 ---
 

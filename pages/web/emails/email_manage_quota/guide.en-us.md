@@ -1,9 +1,6 @@
 ---
 title: "Managing the storage space for an email account"
-slug: manage-email-quota
 excerpt: "Find out how to manage and optimise an email address storage space"
-section: 'Troubleshooting'
-order: 02
 updated: 2022-11-17
 ---
 
@@ -124,24 +121,24 @@ Below is a non-exhaustive list of configuration guides for email clients using:
 > **Emails (MXplan)**
 >>
 >> Configuring an MXplan account on **Windows**:<br><br>
->> - [Mail on Windows 10](https://docs.ovh.com/us/en/emails/mail-configuration-windows-10/) (included with Windows)<br>
->> - [Outlook for Mxplan](https://docs.ovh.com/us/en/emails/configuration-outlook-2016/)
->> - [Thunderbird](https://docs.ovh.com/us/en/emails/configure-email-for-thunderbird-windows/) (free)<br><br>
+>> - [Mail on Windows 10](/pages/web/emails/how_to_configure_windows_10) (included with Windows)<br>
+>> - [Outlook for Mxplan](/pages/web/emails/how_to_configure_outlook_2016)
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_windows) (free)<br><br>
 >> Configuring an MXplan account on **macOS**:<br><br>
->> - [Mail](https://docs.ovh.com/us/en/emails/guide-configuring-mail-on-macos/) (included with macOS)<br>
->> - [Outlook](https://docs.ovh.com/us/en/emails/configuration-outlook-2016-mac/)<br>
->> - [Thunderbird](https://docs.ovh.com/us/en/emails/configure-email-for-thunderbird-mac/) (free)<br>
+>> - [Mail](/pages/web/emails/how_to_configure_mail_macos) (included with macOS)<br>
+>> - [Outlook](/pages/web/emails/how_to_configure_outlook_2016_mac)<br>
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_mac) (free)<br>
 >>
 > **Exchange**
 >>
 >> Configuring an Exchange account on **Windows**:<br><br>
->> - [Mail on Windows 10](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/exchange-mail-configuration-windows-10/) (included with Windows)<br>
->> - [Outlook](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/configuration-outlook-2016/)<br>
->> - [Thunderbird](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/exchange-configuration-thunderbird/) (free)<br><br>
+>> - [Mail on Windows 10](/pages/web/microsoft-collaborative-solutions/how_to_configure_windows_10) (included with Windows)<br>
+>> - [Outlook](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016)<br>
+>> - [Thunderbird](/pages/web/microsoft-collaborative-solutions/how_to_configure_thunderbird) (free)<br><br>
 >> Configuring an Exchange account on **macOS**:<br><br>
->> - [Mail](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/exchange-configuration-mail-macos/) (included with macOS)<br>
->> - [Outlook](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/exchange-configuration-outlook-2016-mac/)<br>
->> - [Thunderbird](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/exchange-configuration-thunderbird-mac/) (free)<br>
+>> - [Mail](/pages/web/microsoft-collaborative-solutions/how_to_configure_mail_macos) (included with macOS)<br>
+>> - [Outlook](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016_mac)<br>
+>> - [Thunderbird](/pages/web/microsoft-collaborative-solutions/how_to_configure_thunderbird_mac) (free)<br>
 >>
 
 Once you have installed your email software, follow the instructions below to prepare the archive folder on your email software.
@@ -184,7 +181,7 @@ Select the current solution for your email account from the menu below:
 
 [Migrate an MX Plan email address to an Exchange account](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/migration-email-address-to-exchange/)
 
-[Manually migrate your email address](https://docs.ovh.com/us/en/emails/migrate-email-addresses-manually/)
+[Manually migrate your email address](/pages/web/emails/manual_email_migration)
 
 [Migrate your email addresses from one OVHcloud email platform to another](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/migration-email-platform/)
 

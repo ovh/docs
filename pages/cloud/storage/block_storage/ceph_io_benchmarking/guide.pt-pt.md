@@ -1,8 +1,6 @@
 ---
 title: 'Avaliar o desempenho do armazenamento Benchmarking'
-slug: ceph-io-benchmarking
 excerpt: 'Como avaliar os desempenhos da solução Cloud Disk Array'
-section: 'Cloud Disk Array'
 updated: 2019-05-25
 ---
 

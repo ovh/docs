@@ -1,9 +1,7 @@
 ---
 title: Enterprise File Storage - Concetti di performance
 excerpt: "Scopri i concetti di approvvigionamento, monitoraggio e test delle performance della soluzione Enterprise File Storage"
-slug: netapp/performance
 sezione: Enterprise File Storage
-order: 011
 updated: 2022-11-30
 ---
 
@@ -62,7 +60,7 @@ Per eseguire i tuoi test di performance e familiarizzare con i livelli di serviz
 
 È importante testare le prestazioni del tuo Enterprise File Storage nello stesso datacenter in cui vengono eseguiti i carichi di lavoro. La latenza tra i datacenter è troppo elevata durante il funzionamento normale perché questa valutazione sia rilevante.
 
-Prima di iniziare il test, verifica che il cliente utilizzato per questo benchmark abbia accesso al tuo servizio Enterprise File Storage e a un volume di test. Se non lo hai ancora fatto, consulta la guida di [gestione dallo Spazio Cliente OVHcloud](https://docs.ovh.com/it/storage/file-storage/netapp/control-panel/).
+Prima di iniziare il test, verifica che il cliente utilizzato per questo benchmark abbia accesso al tuo servizio Enterprise File Storage e a un volume di test. Se non lo hai ancora fatto, consulta la guida di [gestione dallo Spazio Cliente OVHcloud](/pages/cloud/storage/file_storage/netapp_control_panel).
 
 #### Banco di test
 

@@ -1,9 +1,6 @@
 ---
 title: 'Instalar VMware Tools'
-slug: instalar_las_vmware_tools
 excerpt: 'Cómo instalar VMware Tools en Linux o Windows'
-section: 'Gestión de las máquinas virtuales'
-order: 6
 updated: 2022-02-01
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: AI Deploy - Tutorial - Deploy a brain tumor segmentation app using Streamlit
-slug: deploy/tuto-streamlit-image-segmentation-unet-brain-tumors
 excerpt: How to build and deploy a brain tumor segmentation application using streamlit
-section: AI Deploy - Tutorials
-order: 14
 updated: 2023-05-11
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-deploy-streamlit-image-segmentation-unet-brain-tumors?id=kb_article_view&sysparm_article=KB0057739'
@@ -34,8 +31,8 @@ To deploy your app, you need:
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 - An AI Deploy Project created inside a [Public Cloud project](https://www.ovhcloud.com/es/public-cloud/) in your OVHcloud account
-- A [user for AI Deploy](https://docs.ovh.com/us/es/publiccloud/ai/users)
-- [The OVHcloud AI CLI](https://docs.ovh.com/us/es/publiccloud/ai/cli/install-client/) installed on your local computer
+- A [user for AI Deploy](/pages/platform/ai/gi_01_manage_users)
+- [The OVHcloud AI CLI](/pages/platform/ai/cli_10_howto_install_cli) installed on your local computer
 - [Docker](https://www.docker.com/get-started) installed on your local computer, **or** access to a Debian Docker Instance, which is available on the [Public Cloud](https://www.ovh.com/manager/public-cloud/).
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 - The BraTS2020 dataset. [Download it here](https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation)
@@ -124,7 +121,7 @@ In this tutorial, we will upload the `.zip` format.
 > If your model's weights and/or your .zip are in a folder, be careful to only add the files, not their folders. Otherwise, the path to these resources will no longer be directly attached to the root `/workspace`. The name of the folder must be specified before the name of the file, which means that you will need to adapt the application code, especially the places where the resource paths are mentioned (`variables.py` and `dataset_unzip()` function from `utils.py`).
 >
 
-You can upload your data to the cloud either by using the [OVHcloud Control Panel (UI)](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) or with the [OVHcloud AI CLI](https://docs.ovh.com/us/es/publiccloud/ai/cli/install-client/).
+You can upload your data to the cloud either by using the [OVHcloud Control Panel (UI)](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) or with the [OVHcloud AI CLI](/pages/platform/ai/cli_10_howto_install_cli).
 
 #### Upload data via UI (Control Panel)
 
@@ -132,7 +129,7 @@ If you do not feel comfortable with commands, this method will be more intuitive
 
 First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) and access the `Public Cloud`{.action} section.
 
-Then, select the `Object Storage`{.action} section (in the Storage category) and [create a new object container](https://docs.ovh.com/us/es/storage/object-storage/pcs/create-container/) by clicking `Storage`{.action} > `Object Storage`{.action} > `Create an object container`{.action}.
+Then, select the `Object Storage`{.action} section (in the Storage category) and [create a new object container](/pages/cloud/storage/object_storage/pcs_create_container) by clicking `Storage`{.action} > `Object Storage`{.action} > `Create an object container`{.action}.
 
 Here you can create the object container that will store the dataset and the model's weights. Several `types` and `regions` are available, choose the best parameters for you.
 
@@ -225,7 +222,7 @@ Once started, your application should be available on `http://localhost:8501`.
 
 > [!warning]
 > **Warning**
-> The shared registry of AI Deploy should only be used for testing purposes. Please consider attaching your own Docker registry. More information about this can be found [here](https://docs.ovh.com/us/es/publiccloud/ai/training/add-private-registry).
+> The shared registry of AI Deploy should only be used for testing purposes. Please consider attaching your own Docker registry. More information about this can be found [here](/pages/platform/ai/training_guide_05_howto_add_registry).
 
 Find the address of your shared registry by launching this command:
 
@@ -271,8 +268,8 @@ ovhai app run <shared-registry-address>/tumor_seg_streamlit_app:latest \
 
 ## Go further
 
-- Do you want to use Streamlit to create an audio classification app? [Learn how to do it](https://docs.ovh.com/us/es/publiccloud/ai/deploy/tuto-streamlit-sounds-classification/).
-- Learn how to create & deploy a Speech-to-Text app [here](https://docs.ovh.com/us/es/publiccloud/ai/deploy/tuto-streamlit-speech-to-text-app/).
+- Do you want to use Streamlit to create an audio classification app? [Learn how to do it](/pages/platform/ai/deploy_tuto_03_streamlit_sounds_classification).
+- Learn how to create & deploy a Speech-to-Text app [here](/pages/platform/ai/deploy_tuto_09_streamlit_speech_to_text_app).
 
 ## Feedback
 

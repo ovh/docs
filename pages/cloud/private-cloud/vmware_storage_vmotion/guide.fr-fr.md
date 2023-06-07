@@ -1,10 +1,7 @@
 ---
 title: VMware Storage vMotion
-slug: vmware-storage-vmotion-new
 excerpt: Déplacer votre machine virtuelle sur un hôte différent à chaud
 legacy_guide_number: '7767010'
-section: Fonctionnalités VMware vSphere
-order: 05
 updated: 2020-07-10
 ---
 
@@ -30,7 +27,7 @@ Le menu propose plusieurs options de **vMotion**. Dans notre exemple, nous dési
 
 L'option « Modifier uniquement la ressource de calcul » permet de migrer la machine virtuelle sur un autre hôte.  
 
-Cette opération appelé **vMotion** est décrit dans [ce guide](../vmware-vmotion-new/).
+Cette opération appelé **vMotion** est décrit dans [ce guide](/pages/cloud/private-cloud/vmware_vmotion_new).
 
 ![choix de vMotion](images/VmotionStorage2.png){.thumbnail}
 
@@ -40,7 +37,7 @@ Choisissez vers quel stockage migrer les données.
 
 Il est également possible de modifier la politique de stockage lors de cette opération.
 
-Ainsi, vous pouvez appliquer les politiques de stockage créées si vous disposez d'un [stockage vSAN](../vmware-vsan/) ou de l'option [VMencryption](../vm-encrypt/).
+Ainsi, vous pouvez appliquer les politiques de stockage créées si vous disposez d'un [stockage vSAN](../vmware-vsan/) ou de l'option [VMencryption](/pages/cloud/private-cloud/vm_encrypt).
 
 ![choix datastore](images/VmotionStorage3.png){.thumbnail}
 

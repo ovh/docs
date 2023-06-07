@@ -1,8 +1,6 @@
 ---
 title: Activer les connexions Okta SSO avec votre compte OVHcloud
-slug: connect-saml-sso-okta
 excerpt: "Apprenez à associer votre service Okta à votre compte OVHcloud via SAML 2.0"
-section: 'Utilisation avancée'
 updated: 2023-04-18
 ---
 

@@ -1,11 +1,8 @@
 ---
 title: Avvia la tua istanza da un volume aggiuntivo (EN)
 excerpt: Avvia la tua istanza da un volume aggiuntivo
-slug: avvia_la_tua_istanza_da_un_volume_aggiuntivo
 routes:
-    canonical: 'https://docs.ovh.com/ca/en/public-cloud/start-instance-on-a-volume/'
-section: Per iniziare
-order: 9
+    canonical: '/pages/platform/public-cloud/start_instance_on_attached_volume'
 updated: 2021-11-01
 ---
 
@@ -32,7 +29,7 @@ It is also possible to deploy an operating system to and from a volume. The clou
 ## Requirements
 
 - A volume with an installed image
-- [Setting OpenStack environment variables](https://docs.ovh.com/it/public-cloud/set-openstack-environment-variables/){.external}
+- [Setting OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables){.external}
 
 ### Configuring the volume
 

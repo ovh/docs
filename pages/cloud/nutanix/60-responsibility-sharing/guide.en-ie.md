@@ -1,7 +1,5 @@
 ---
 title: Responsibility sharing - Nutanix on OVHcloud
-slug: raci-hosted-private-cloud-nutanix
-section: RACI
 excerpt: "Shared responsibility between OVHcloud and the customer for the use of the Nutanix on OVHcloud product"
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud

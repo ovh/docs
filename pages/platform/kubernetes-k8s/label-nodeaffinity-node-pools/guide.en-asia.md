@@ -1,8 +1,6 @@
 ---
 title: Deploy applications to specific Nodes and Nodes Pools
-slug: label-nodeaffinity-node-pools
 excerpt: 'Find out how to deploy applications to specific Nodes and Nodes Pools, with labels and NodeAffinity, on OVHcloud Managed Kubernetes'
-section: Tutorials
 updated: 2021-12-15
 ---
 
@@ -18,8 +16,7 @@ updated: 2021-12-15
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -72,12 +69,12 @@ Choose the minor version of Kubernetes.
 
 > [!primary]
 > We recommend to always use the last stable version. 
-> Please read our [End of life / end of support](../eos-eol-policies/) page to understand our version policy.
+> Please read our [End of life / end of support](/pages/platform/kubernetes-k8s/eos-eol-policies) page to understand our version policy.
 >
 
 ![Choose the minor version of Kubernetes](images/creating-a-cluster3-bis.png){.thumbnail}
 
-You can now choose to integrate your Kubernetes cluster into a private network using OVHcloud vRack. For more information about this option, please read our guide [Using the vRack](../using_vrack/).
+You can now choose to integrate your Kubernetes cluster into a private network using OVHcloud vRack. For more information about this option, please read our guide [Using the vRack](/pages/platform/kubernetes-k8s/using-vrack).
 
 ![Choose a private network for this cluster](images/creating-a-cluster4-bis.png){.thumbnail}
 
@@ -88,7 +85,7 @@ Reminder: A node pool is a group of nodes sharing the same configuration, allowi
 ![Node pool](images/nodepool.png){.thumbnail}
 
 > [!primary]
-> You can read the [Managing node pools](../managing-nodes/) guide for more information on node pools.
+> You can read the [Managing node pools](/pages/platform/kubernetes-k8s/managing-nodes) guide for more information on node pools.
 >
 
 For our first node pool, choose a flavor, "B2-7" for example.
@@ -153,7 +150,7 @@ Wait until its status changes to `OK`.
 
 ### Check and prepare our Node pools
 
-To deploy your application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings](https://docs.ovh.com/asia/en/kubernetes/configuring-kubectl/) for `kubectl`.
+To deploy your application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings](/pages/platform/kubernetes-k8s/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster) for `kubectl`.
 
 When you can access to the cluster through `kubectl` command, let's display our node pools:
 
@@ -310,7 +307,7 @@ In this tutorial you saw how to create, in your OVHcloud Managed Kubernetes clus
 
 But do you know that you can do several others Node operations like taint, drain and cordon thanks to Node pool labels propagation to the Nodes?
 
-To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation site](../).
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation site](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

@@ -1,9 +1,6 @@
 ---
 title: Pierwsze kroki z zarządzaniem wolumenami w API Openstack
-slug: pierwsze-wolumeny-api-openstack
 legacy_guide_number: 2071
-section: Zarządzanie w OpenStack CLI
-order: 6
 updated: 2021-05-19
 ---
 
@@ -22,8 +19,8 @@ Aby zautomatyzować Twoje operacje w infrastrukturze Public Cloud, możesz uży�
 
 ## Wymagania początkowe
 
-- [Przygotowanie środowiska do korzystania z API OpenStack](../prepare_the_environment_for_using_the_openstack_api/) poprzez instalację Python-cinderclient oraz python-novaclient
-- [Pobranie zmiennych środowiskowych OpenStack](../set-openstack-environment-variables/)
+- [Przygotowanie środowiska do korzystania z API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) poprzez instalację Python-cinderclient oraz python-novaclient
+- [Pobranie zmiennych środowiskowych OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## W praktyce
 

@@ -1,10 +1,8 @@
 ---
 title: 'Hosty zapasowe'
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/hosty_zapasowe/'
+    canonical: '/pages/cloud/private-cloud/spare_hosts'
 excerpt: 'Zarządzanie hostami zapasowymi w usłudze Managed Bare Metal'
-slug: hosty_zapasowe
-section: 'Funkcjonalności OVHcloud'
 legacy_guide_number: g860
 updated: 2020-11-18
 ---
@@ -30,7 +28,7 @@ Należy oddać host zapasowy. Nie ma możliwości zachowania hosta zapasowego, a
 
 
 ## 
-Po przywróceniu prawidłowego działania hosta i zniknięciu alertów, możesz zwrócić host zapasowy. Wystarczy postępować zgodnie z procedurą opisaną w sekcji "usuwanie hosta" w przewodniku [Jak dodać hosta?](https://docs.ovh.com/pl/managed-bare-metal/usuwanie-serwera-hosta/)
+Po przywróceniu prawidłowego działania hosta i zniknięciu alertów, możesz zwrócić host zapasowy. Wystarczy postępować zgodnie z procedurą opisaną w sekcji "usuwanie hosta" w przewodniku [Jak dodać hosta?](/pages/cloud/managed-bare-metal/delete_host)
 
 
 ## Sprawdź również

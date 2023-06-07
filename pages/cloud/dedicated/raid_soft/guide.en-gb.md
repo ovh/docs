@@ -1,8 +1,6 @@
 ---
 title: 'Configuring software RAID'
-slug: raid-soft
 excerpt: 'Find out how to rebuild your server’s drive configuration after a disk replacement'
-section: 'RAID and disks'
 updated: 2022-10-11
 ---
 
@@ -382,10 +380,10 @@ mount /dev/md4 /home
 
 ## Go Further
 
-[Hot Swap – Hardware RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/)
+[Hot Swap – Hardware RAID](/pages/cloud/dedicated/hotswap_raid_hard)
 
-[Hot Swap – Software RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-soft/)
+[Hot Swap – Software RAID](/pages/cloud/dedicated/hotswap_raid_soft)
 
-[Hardware RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard/)
+[Hardware RAID](/pages/cloud/dedicated/raid_hard)
 
 Join our community of users on <https://community.ovh.com/en/>.

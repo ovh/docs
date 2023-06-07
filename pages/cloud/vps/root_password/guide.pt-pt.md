@@ -1,8 +1,6 @@
 ---
 title: Como alterar a palavra-passe root de um VPS (Linux)
-slug: root-password
 excerpt: Aprenda a alterar a palavra-passe root do seu VPS
-section: Diagnóstico e Modo Rescue
 updated: 2021-04-20
 ---
 
@@ -38,7 +36,7 @@ Pode ser necessário alterar a palavra-passe root do sistema operativo Linux. Ex
 
 > [!primary]
 >
-> Para mais informações sobre a ligação ao seu VPS, consulte o nosso guia [Começar com um VPS](../instalar-gerir-vps/).
+> Para mais informações sobre a ligação ao seu VPS, consulte o nosso guia [Começar com um VPS](/pages/cloud/vps/starting_with_a_vps).
 >
 
 Ligue-se ao seu VPS através de SSH. Migre para o utilizador root, se necessário:
@@ -70,7 +68,7 @@ Se pretender autorizar a ligação como utilizador root, siga os passos [indicad
 
 #### Etapa 1: Reinicie o VPS em modo rescue
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e reinicie o VPS em modo rescue. Se precisar de mais instruções sobre a utilização do modo rescue com um VPS, consulte o [guia do modo rescue](../rescue/).
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e reinicie o VPS em modo rescue. Se precisar de mais instruções sobre a utilização do modo rescue com um VPS, consulte o [guia do modo rescue](/pages/cloud/vps/rescue).
 
 #### Etapa 2: Identificar o ponto de montagem
 
@@ -162,7 +160,7 @@ Se o VPS for de última geração (o seu nome é: *vps-XXXXXXX.vps.ovh.net*), re
 >
 > Ativar a palavra-passe root é geralmente considerada uma vulnerabilidade de segurança, pelo que não é recomendado.
 >
-> Recomendamos que tome primeiro medidas para proteger o seu VPS. Consulte o nosso manual sobre a [segurança de um VPS](../como-proteger-vps/).
+> Recomendamos que tome primeiro medidas para proteger o seu VPS. Consulte o nosso manual sobre a [segurança de um VPS](/pages/cloud/vps/secure_your_vps).
 >
 
 #### Etapa 1: Modificar o ficheiro sshd_config
@@ -199,13 +197,13 @@ Tal deverá ser suficiente para aplicar as alterações. Também pode reiniciar 
 
 Se tiver problemas de arranque depois de alterar a sua palavra-passe e iniciar a reinicialização:
 
-- Consulte o KVM para saber por que o VPS não pode iniciar. Consulte o [guia KVM](../utilizar_o_kvm_para_um_servidor_vps/) para obter ajuda na utilização desta funcionalidade na Área de Cliente OVHcloud.
+- Consulte o KVM para saber por que o VPS não pode iniciar. Consulte o [guia KVM](/pages/cloud/vps/using_kvm_for_vps) para obter ajuda na utilização desta funcionalidade na Área de Cliente OVHcloud.
 - Se o KVM mostrar o arranque do VPS ou se este não conseguir encontrar o disco, certifique-se de que o [bootlog está ativado](../visualizacao-bootlog-em-kvm/). Transmita os logs pertinentes às nossas equipas de suporte criando um pedido de suporte na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) para mais informações.
 
 ## Vá mais longe
 
-[Consulte o manual Introdução ao SSH.](../../dedicated/ssh-introducao/)
+[Consulte o manual Introdução ao SSH.](/pages/cloud/dedicated/ssh_introduction)
 
-[Como proteger um VPS.](../como-proteger-vps/)
+[Como proteger um VPS.](/pages/cloud/vps/secure_your_vps)
 
 Junte-se à nossa comunidade de utilizadores <https://community.ovh.com/en/>.

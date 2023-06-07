@@ -1,9 +1,6 @@
 ---
 title: "Proteger un servidor dedicado"
-slug: seguridad-de-un-servidor-dedicado
 excerpt: "Descubra los elementos básicos que le permiten proteger un servidor dedicado"
-section: Primeros pasos
-order: 2
 updated: 2023-02-24
 ---
 
@@ -38,7 +35,7 @@ Los servidores dedicados no incluyen de forma nativa ningún protocolo de seguri
 >
 > Tenga en cuenta que se trata de una guía general basada en un sistema operativo Ubuntu Server. Tenga en cuenta que algunos comandos deben adaptarse a la distribución que utilice y que algunos consejos le invitan a utilizar herramientas de terceros. Si necesita ayuda, consulte la documentación oficial de estas aplicaciones.
 >
-> Si se trata de su primera configuración de un servidor dedicado de OVHcloud, consulte nuestra guía [Primeros pasos con un servidor dedicado](https://docs.ovh.com/es/dedicated/primeros-pasos-servidor-dedicado/).
+> Si se trata de su primera configuración de un servidor dedicado de OVHcloud, consulte nuestra guía [Primeros pasos con un servidor dedicado](/pages/cloud/dedicated/getting-started-with-dedicated-server).
 >
 
 Los siguientes ejemplos implican que está conectado como usuario con permisos muy exigentes.
@@ -111,7 +108,7 @@ ssh username@IPv4_of_your_server -p NewPortNumber
 
 ### Cambiar la contraseña del usuario root
 
-Le recomendamos encarecidamente que cambie la contraseña del usuario root para evitar que se quede en el valor predeterminado de un nuevo sistema. Para más información, consulte [esta guía](https://docs.ovh.com/es/dedicated/cambiar-contrasena-root-linux-en-servidor-dedicado/).
+Le recomendamos encarecidamente que cambie la contraseña del usuario root para evitar que se quede en el valor predeterminado de un nuevo sistema. Para más información, consulte [esta guía](/pages/cloud/dedicated/changing_root_password_linux_ds).
 
 ### Crear un usuario con permisos restringidos
 
@@ -174,7 +171,7 @@ Las distribuciones GNU/Linux habituales se entregan con un servicio de cortafueg
 iptables -L
 ```
 
-Para más información sobre iptables, consulte nuestra [guía dedicada](https://docs.ovh.com/es/dedicated/firewall-iptables/).
+Para más información sobre iptables, consulte nuestra [guía dedicada](/pages/cloud/dedicated/firewall-Linux-iptable).
 
 Le recomendamos que cree y adapte las reglas de firewall en función de su uso. Para más información sobre las diversas operaciones posibles, consulte la documentación oficial de la distribución utilizada.
 
@@ -254,7 +251,7 @@ Para más información y recomendaciones sobre Fail2ban, consulte [la documentac
 
 Las soluciones de OVHcloud incluyen la posibilidad de activar un firewall de red en el punto de entrada de la infraestructura. Una configuración correcta de este cortafuegos permite bloquear las conexiones incluso antes de que lleguen al servidor.
 
-Para activarlo, consulte la guía [Configurar el firewall de red](https://docs.ovh.com/es/dedicated/firewall-de-red/).
+Para activarlo, consulte la guía [Configurar el firewall de red](/pages/cloud/dedicated/firewall_network).
 
 ### Guardar copia de seguridad del sistema y los datos
 
@@ -267,13 +264,13 @@ La noción de seguridad va más allá de proteger un sistema frente a posibles a
 
 Para replicar sus datos y transferirlos a su espacio de backup, necesitará una solución de backup externa.
 
-Para más información sobre este espacio de backup, consulte nuestra guía [Backup Storage](https://docs.ovh.com/es/dedicated/servicio-backup-storage/){.external}.
+Para más información sobre este espacio de backup, consulte nuestra guía [Backup Storage](/pages/cloud/dedicated/services_backup_storage){.external}.
 
 
 ## Más información
 
-[Configurar el firewall de Windows](https://docs.ovh.com/es/dedicated/firewall-windows/)
+[Configurar el firewall de Windows](/pages/cloud/dedicated/activate-port-firewall-soft-win)
 
-[Network Firewall](https://docs.ovh.com/es/dedicated/firewall-de-red/)
+[Network Firewall](/pages/cloud/dedicated/firewall_network)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

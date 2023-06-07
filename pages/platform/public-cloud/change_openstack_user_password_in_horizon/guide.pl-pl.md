@@ -1,8 +1,6 @@
 ---
 title: Zmiana hasła dla użytkownika OpenStack
-slug: zmiana-hasla-horizon
 excerpt: Zmiana hasła użytkownika OpenStack w interfejsie Horizon
-section: Zarządzanie w interfejsie Horizon
 updated: 2018-03-07
 ---
 
@@ -11,7 +9,7 @@ updated: 2018-03-07
 
 ## Wprowadzenie
 
-W przewodniku [Dostęp do panelu Horizon](https://docs.ovh.com/pl/public-cloud/horizon/){.external} pokazano, jak stworzyć i usunąć użytkownika OpenStack oraz wygenerować hasło dostępowe.
+W przewodniku [Dostęp do panelu Horizon](/pages/platform/public-cloud/introducing_horizon){.external} pokazano, jak stworzyć i usunąć użytkownika OpenStack oraz wygenerować hasło dostępowe.
 Za pomocą panelu Horizon można ustawić własne hasło dla danego użytkownika. 
 Zmiana hasła do konta użytkownika powoduje unieważnienie aktywnych tokenów w momencie zmiany.
 

@@ -1,9 +1,6 @@
 ---
 title: 'Criar assinaturas automáticas'
 excerpt: 'Saiba como criar assinaturas automáticas nas suas contas de e-mail'
-slug: exchange_20132016_assinatura_automatica_-_disclaimer
-section: 'Funcionalidades das contas Exchange'
-order: 07
 updated: 2020-03-26
 ---
 
@@ -56,16 +53,16 @@ Antes de criar assinaturas, tenha em consideração o seguinte:
 ![exchangesig](images/exchange-footer-step5.png){.thumbnail}
 
 - A assinatura será adicionada ao corpo do e-mail sem quebras, pelo que aconselhamos que a comece com pelo menos uma linha em branco.
-- No OWA não se indica se o domínio tem uma assinatura ativa e **não há sincronização**. Se os utilizadores acrescentarem uma [assinatura própria](../exchange_2016_guia_de_utilizacao_do_outlook_web_app/#adicionar-assinatura), os e-mails vão incluir tanto a assinatura individual quanto a assinatura associada ao domínio.
+- No OWA não se indica se o domínio tem uma assinatura ativa e **não há sincronização**. Se os utilizadores acrescentarem uma [assinatura própria](/pt/microsoft-collaborative-solutions/exchange_2016_guia_de_utilizacao_do_outlook_web_app/#adicionar-assinatura), os e-mails vão incluir tanto a assinatura individual quanto a assinatura associada ao domínio.
 - O editor permite formatação HTML, hiperligações, imagens, etc. Contudo, as assinaturas não deverão contar demasiado com estas opções. Os destinatários podem usar clientes de e-mail incompatíveis com HTML e imagens integradas, ou então as assinaturas podem ser exibidas de forma distorcida. Tenha em conta que as tags HTML serão removidas por completo se a mensagem for enviada como «Texto simples» a partir do OWA.
 - O serviço não conta com a opção «Initials». Se introduzir esta variável, não verificará nenhum efeito.
 
 ## Saiba mais
 
-[Guia de utilização do Outlook Web App](../exchange_2016_guia_de_utilizacao_do_outlook_web_app/)
+[Guia de utilização do Outlook Web App](/pt/microsoft-collaborative-solutions/exchange_2016_guia_de_utilizacao_do_outlook_web_app/)
 
-[Atribuir permissões a uma conta de e-mail](../exchange_3013_atribuir_permissoes_full_access_a_uma_conta/)
+[Atribuir permissões a uma conta de e-mail](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Partilha de calendários em OWA](../exchange_2016_partilhar_um_calendario_atraves_do_webmail_owa/)
+[Partilha de calendários em OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

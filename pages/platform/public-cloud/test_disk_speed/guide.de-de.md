@@ -1,8 +1,6 @@
 ---
 title: Die Geschwindigkeit der Festplatten testen
 excerpt: Die Geschwindigkeit der Festplatten testen
-slug: die_geschwindigkeit_der_festplatten_testen
-section: 'Storage'
 legacy_guide_number: g1956
 updated: 2022-01-04
 ---
@@ -111,6 +109,6 @@ In diesem Beispiel liefert die getestete Festplatte also etwa 891 IOPS.
 
 ## Weiterführende Informationen
 
-[Zusätzliches Volume auf einer Instanz erstellen und konfigurieren](https://docs.ovh.com/de/public-cloud/erstellen_zustzliche_festplatte_public_cloud/)
+[Zusätzliches Volume auf einer Instanz erstellen und konfigurieren](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
  
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

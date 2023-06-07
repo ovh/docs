@@ -1,9 +1,6 @@
 ---
 title: Migration von Daten von einem HA-NAS auf ein anderes über NFS
-slug: nas/migration
 excerpt: Erfahren Sie hier, wie Sie Ihre Daten über eine NFS-Freigabe von einem HA-NAS auf ein anderes migrieren.
-section: HA-NAS
-order: 05
 updated: 2021-02-09
 ---
 
@@ -21,7 +18,7 @@ Diese Anleitung erklärt, wie Sie Daten von einem HA-NAS auf ein anderes übertr
 
 - OVHcloud HA-NAS.
 - Eine mit NFS kompatible Distribution.
-- Sie haben Ihr NAS bereits gemountet, nach [dieser Anleitung](https://docs.ovh.com/de/storage/file-storage/nas/nfs/).
+- Sie haben Ihr NAS bereits gemountet, nach [dieser Anleitung](/pages/cloud/storage/file_storage/nas_nfs).
 
 ## In der praktischen Anwendung
 

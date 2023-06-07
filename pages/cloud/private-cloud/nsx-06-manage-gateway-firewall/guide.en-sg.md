@@ -1,9 +1,6 @@
 ---
 title: Gateway Firewall Management in NSX
-slug: nsx-manage-gateway-firewall
 excerpt: Learn how to manage gateway firewalls
-section: NSX
-order: 06
 updated: 2023-02-27
 ---
 
@@ -15,7 +12,7 @@ Gateway Firewall allows filtering between internal segments and the network outs
 
 It works on the North-South (Tier-0 Gateways) and East-West (Tier-1 Gateways) gateways if the source or destination is not inside the cluster.
 
-If you want to create filtering rules between internal segments, you will need to use distributed firewall using our guide on [distributed firewall management](https://docs.ovh.com/sg/en/private-cloud/nsx-manage-distributed-firewall/).
+If you want to create filtering rules between internal segments, you will need to use distributed firewall using our guide on [distributed firewall management](/pages/cloud/private-cloud/nsx-05-manage-distributed-firewall).
 
 **Learn how to manage gateway firewalls.**
 
@@ -29,13 +26,13 @@ If you want to create filtering rules between internal segments, you will need t
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-sg/enterprise/products/hosted-private-cloud/) to receive login credentials.
 - A user account with access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
-- Having **NSX** deployed with one segment configured in your NSX configuration. You can use our guide on [segment management in NSX](https://docs.ovh.com/sg/en/private-cloud/nsx-segment-management/) for more information.
+- Having **NSX** deployed with one segment configured in your NSX configuration. You can use our guide on [segment management in NSX](/pages/cloud/private-cloud/nsx-02-segment-management) for more information.
 
 ## Instructions
 
 We will create a strategy to improve the visibility and administration of rules based on their usefulness.
 
-Next, we will add a rule within our strategy that blocks access to the entire external network of a cluster from a group that contains a segment (you can use our [Distributed Firewall Management](https://docs.ovh.com/sg/en/private-cloud/nsx-manage-distributed-firewall/) guide to create groups) and **any** for the destination.
+Next, we will add a rule within our strategy that blocks access to the entire external network of a cluster from a group that contains a segment (you can use our [Distributed Firewall Management](/pages/cloud/private-cloud/nsx-05-manage-distributed-firewall) guide to create groups) and **any** for the destination.
 
 Go to the `Security`{.action} tab, select `Gateway Firewall`{.action} and click `+ ADD POLICY`{.action}.
 
@@ -69,11 +66,11 @@ Your rule is active on the **ovh-T0-gw** gateway, it blocks all outgoing traffic
 
 ## Go further <a name="gofurther"></a>
 
-[Getting started with NSX](https://docs.ovh.com/sg/en/private-cloud/nsx-first-steps/)
+[Getting started with NSX](/pages/cloud/private-cloud/nsx-01-first-steps)
 
-[Segment management in NSX](https://docs.ovh.com/sg/en/private-cloud/nsx-segment-management/)
+[Segment management in NSX](/pages/cloud/private-cloud/nsx-02-segment-management)
 
-[Distributed Firewall management](https://docs.ovh.com/sg/en/private-cloud/nsx-manage-distributed-firewall/).
+[Distributed Firewall management](/pages/cloud/private-cloud/nsx-05-manage-distributed-firewall).
 
 [VMware Gateway Firewall in NSX Documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A52E1A6F-F27D-41D9-9493-E3A75EC35481.html)
 

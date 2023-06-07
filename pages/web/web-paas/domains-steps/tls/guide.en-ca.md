@@ -1,7 +1,5 @@
 ---
 title: (Optional) Configure a third-party TLS certificate
-slug: tls
-section: Steps
 updated: 2021-05-11
 ---
 
@@ -11,7 +9,7 @@ updated: 2021-05-11
 
 ## Objective  
 
-Web PaaS automatically provides standard TLS certificates issued by [Let's Encrypt](https://letsencrypt.org/) to all production instances. No further action is required to use TLS-encrypted connections beyond [specifying HTTPS routes](../../configuration-routes/https) in your `routes.yaml` file.
+Web PaaS automatically provides standard TLS certificates issued by [Let's Encrypt](https://letsencrypt.org/) to all production instances. No further action is required to use TLS-encrypted connections beyond [specifying HTTPS routes](/pages/web/web-paas/configuration-routes/https) in your `routes.yaml` file.
 
 Alternatively, you may provide your own third party TLS certificate from the TLS issuer of your choice at no charge from us.  Please consult your TLS issuer for instructions on how to generate an TLS certificate.
 
@@ -31,7 +29,7 @@ A custom certificate is not necessary for development environments.  Web PaaS au
 
 ### Adding a custom certificate through the management console
 
-You can add a custom certificate via the Web PaaS [management console](../../administration-web). In the management console for the project go to [Settings](../../administration-web/configure-project) and click Certificates on the left hand side. You can add a certificate with the `Add` button at the top of the page. You can then add your private key, public key certificate and optional certificate chain.
+You can add a custom certificate via the Web PaaS [management console](../../administration-web). In the management console for the project go to [Settings](/pages/web/web-paas/administration-web/configure-project) and click Certificates on the left hand side. You can add a certificate with the `Add` button at the top of the page. You can then add your private key, public key certificate and optional certificate chain.
 
 > [!primary]  
 > You will need to redeploy the impacted environment(s) for the new certificate to be taken into account.
@@ -57,4 +55,4 @@ See `webpaas help domain:add` for more information.
 > Your site should now be live, and accessible to the world (as soon as the DNS propagates).
 > 
 
-If something is not working see the [troubleshooting guide](../../domains-troubleshoot) for common issues. If that doesn't help, feel free to contact support.
+If something is not working see the [troubleshooting guide](/pages/web/web-paas/domains-troubleshoot) for common issues. If that doesn't help, feel free to contact support.

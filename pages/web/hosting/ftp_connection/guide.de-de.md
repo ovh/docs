@@ -1,9 +1,6 @@
 ---
 title: 'Mit dem Speicherplatz eines Webhostings verbinden'
-slug: verbindung-ftp-speicher-webhosting
 excerpt: 'Erfahren Sie hier, wie Sie sich mit dem Speicherplatz Ihres OVHcloud Webhostings verbinden'
-section: 'FTP und SSH'
-order: 02
 updated: 2022-10-21
 ---
 
@@ -56,7 +53,7 @@ In den angezeigten Informationen finden Sie alle Elemente, die Sie für die Verb
 - **SSH-Server**: Hierbei handelt es sich um die Serveradresse, die den Zugriff auf Ihren Speicherplatz über ein SSH-Protokoll ermöglicht.
 - **Haupt-Login**: Hierbei handelt es sich um die Haupt-FTP-Kennung (S)Ihres Hostings. Sie finden alle FTP-Benutzer Ihres Hostings in der Tabelle in der Spalte "Login".
 
-Wenn Sie das Passwort eines FTP- oder SSH-Benutzers vergessen haben, klicken Sie je nach Angebot auf das Bleistift-Symbol oder den Button `...`{.action} und dann auf `Passwort ändern`{.action}. Weitere Informationen hierzu finden Sie in der Anleitung „[Passwort eines FTP-Benutzers ändern](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern/)“.
+Wenn Sie das Passwort eines FTP- oder SSH-Benutzers vergessen haben, klicken Sie je nach Angebot auf das Bleistift-Symbol oder den Button `...`{.action} und dann auf `Passwort ändern`{.action}. Weitere Informationen hierzu finden Sie in der Anleitung „[Passwort eines FTP-Benutzers ändern](/pages/web/hosting/ftp_change_password)“.
 
 ![ftp login](images/connect-ftp-step2.png){.thumbnail}
 
@@ -118,14 +115,14 @@ Wenn Sie sich via Befehlszeile verbinden, ersetzen Sie die Elemente „sshlogin�
 ssh sshlogin@sshserver -p connectionport
 ```
 
-Sind alle Informationen korrekt, können Sie jetzt mit Ihrem Speicherplatz interagieren. Für weitere Informationen, lesen Sie unsere Anleitung „[SSH auf Ihren Webhostings](https://docs.ovh.com/de/hosting/webhosting_ssh_auf_ihren_webhostings/)“.
+Sind alle Informationen korrekt, können Sie jetzt mit Ihrem Speicherplatz interagieren. Für weitere Informationen, lesen Sie unsere Anleitung „[SSH auf Ihren Webhostings](/pages/web/hosting/ssh_on_webhosting)“.
 
 ![ftp login](images/connect-ftp-step5.png){.thumbnail}
 
 ## Weiterführende Informationen
 
-[Passwort eines FTP-Benutzers ändern](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern/){.external}
+[Passwort eines FTP-Benutzers ändern](/pages/web/hosting/ftp_change_password){.external}
 
-[SSH auf Ihren Webhostings](https://docs.ovh.com/de/hosting/webhosting_ssh_auf_ihren_webhostings/)
+[SSH auf Ihren Webhostings](/pages/web/hosting/ssh_on_webhosting)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

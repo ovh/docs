@@ -1,9 +1,6 @@
 ---
 title: vRack compatibility with Hosted Private Cloud
-slug: vrack-compatibility-hosted-private-cloud
 excerpt: Compatibility guide for vRack and Hosted Private Cloud products
-section: OVHcloud Features
-order: 01
 updated: 2021-12-31
 ---
 

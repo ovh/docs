@@ -1,9 +1,6 @@
 ---
 title: 'Attivare HTTPS su un sito Internet tramite il certificato SSL'
-slug: attivare-https-su-sito-internet-tramite-certificato-ssl
 excerpt: 'Come abilitare il protocollo HTTPS sul tuo sito grazie al certificato SSL'
-section: SSL
-order: 02
 updated: 2022-10-04
 ---
 
@@ -49,7 +46,7 @@ L’attivazione del certificato SSL sull’hosting Web, possibile direttamente d
 |Attivazione del certificato SSL sull’hosting|Una volta scelto il certificato SSL più adatto alle proprie esigenze tra le diverse tipologie proposte, OVHcloud provvederà alla sua installazione sull'hosting.  |
 |Attivazione del certificato SSL sul multisito corrispondente|Il sito su cui si vuole utilizzare l’HTTPS deve essere configurato sull’hosting come “multisito”: assicurati che il certificato SSL sia attivo per questa funzionalità.|
 
-Per maggiori informazioni sulla procedura completa da seguire per effettuare queste due operazioni, consulta la nostra guida [Gestire un certificato SSL su un hosting Web](https://docs.ovh.com/it/hosting/i_certificati_ssl_sugli_hosting_web_ovh/){.external}. Se hai appena attivato un hosting OVHcloud, è possibile che sia già installato un certificato SSL gratuito e che il multisito disponga già di una connessione SSL attiva.
+Per maggiori informazioni sulla procedura completa da seguire per effettuare queste due operazioni, consulta la nostra guida [Gestire un certificato SSL su un hosting Web](/pages/web/hosting/ssl_on_webhosting){.external}. Se hai appena attivato un hosting OVHcloud, è possibile che sia già installato un certificato SSL gratuito e che il multisito disponga già di una connessione SSL attiva.
 
 Per verificarlo, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} e clicca nella scheda `Informazioni generali`{.action}. Nel riquadro <b>Configurazione</b>, verifica se sotto <b>Certificato SSL</b> compare la voce <b>Sì</b>: in questo caso, significa che sull’hosting Web è già installato un certificato SSL. 
 
@@ -59,7 +56,7 @@ A questo punto, clicca sulla scheda `Multisito`{.action}. Visualizzi una tabella
 
 ![httpswebsite](images/activate-https-website-ssl-step3.png){.thumbnail}
 
-Se hai difficoltà a verificare che il certificato SSL sia installato sull’hosting o sia attivo sul multisito corrispondente, consulta la nostra guida [Gestire un certificato SSL su un hosting Web](https://docs.ovh.com/it/hosting/i_certificati_ssl_sugli_hosting_web_ovh/){.external}.
+Se hai difficoltà a verificare che il certificato SSL sia installato sull’hosting o sia attivo sul multisito corrispondente, consulta la nostra guida [Gestire un certificato SSL su un hosting Web](/pages/web/hosting/ssl_on_webhosting){.external}.
 
 ### Step 2: verifica l’ambiente tecnico
 
@@ -154,7 +151,7 @@ Per attivare il protocollo HTTPS su un altro sito, ripeti la procedura descritta
 
 ## Per saperne di più
 
-[Gestire un certificato SSL su un hosting Web](https://docs.ovh.com/it/hosting/i_certificati_ssl_sugli_hosting_web_ovh/){.external}
+[Gestire un certificato SSL su un hosting Web](/pages/web/hosting/ssl_on_webhosting){.external}
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 

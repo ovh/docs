@@ -1,9 +1,6 @@
 ---
 title: Créer et utiliser un compte partagé
-slug: exchange-utilisation-des-comptes-partages
 excerpt: Ajouter et utiliser un compte partagé sur votre offre E-mail Exchange
-section: Fonctionnalités des comptes Exchange
-order: 06
 updated: 2021-06-15
 ---
 
@@ -99,12 +96,12 @@ Depuis votre logiciel Outlook, vous retrouverez votre compte partagé dans la co
 
 ## Aller plus loin
 
-[Consulter son compte Exchange depuis l’interface OWA](../exchange-2016-guide-utilisation-outlook-web-app/)
+[Consulter son compte Exchange depuis l’interface OWA](/ca/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/)
 
-[Déléguer des permissions sur un compte Exchange](../exchange-donner-les-droits-full-access-sur-un-compte/)
+[Déléguer des permissions sur un compte Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Partager un calendrier via le webmail OWA](../exchange-2016-partager-un-calendrier-via-le-webmail-owa/)
+[Partager un calendrier via le webmail OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Ajouter un pied de page pour vos comptes Exchange](../exchange-signature-automatique-disclaimer/)
+[Ajouter un pied de page pour vos comptes Exchange](/pages/web/microsoft-collaborative-solutions/feature_footers)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

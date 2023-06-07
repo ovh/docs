@@ -1,8 +1,6 @@
 ---
 title: 'AMD SME/SEV on Ubuntu 20'
-slug: enable-and-use-amd-sme-sev
 excerpt: 'Enable SME on your ubuntu server and spawn an SEV virtual machine'
-section: 'Advanced use'
 updated: 2020-05-07
 ---
 

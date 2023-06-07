@@ -1,9 +1,6 @@
 ---
 title: 'Creating an autoresponder for your email addresses'
-slug: set-up-email-responder
 excerpt: 'Find out how to set up automatic email replies'
-section: 'Email address features'
-order: 02
 hidden: true
 updated: 2021-04-20
 ---
@@ -25,7 +22,7 @@ This OVHcloud feature allows you to set up an automatic email responder that wil
 
 > [!primary]
 >
-> If your email account is hosted on [**Exchange**](https://www.ovhcloud.com/en/emails/hosted-exchange/) or if the functionality is not available in your Control Panel, you can instead create responders from your OWA webmail using the guide "[Creating automatic replies in OWA](../../microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa/)".
+> If your email account is hosted on [**Exchange**](https://www.ovhcloud.com/en/emails/hosted-exchange/) or if the functionality is not available in your Control Panel, you can instead create responders from your OWA webmail using the guide "[Creating automatic replies in OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies)".
 
 ### Creating autoresponders
 

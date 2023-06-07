@@ -1,7 +1,5 @@
 ---
 title: Java
-slug: java
-section: New-Relic
 updated: 2021-05-11
 ---
 
@@ -87,7 +85,7 @@ Unzip `newrelic-java.zip` by configuring `maven-dependency-plugin` in your `pom.
     </plugin>
 ```
 
-The next step is to configure the [`.platform.app.yaml`](../../../configuration-app) file to set the agent in the JVM parameters:
+The next step is to configure the [`.platform.app.yaml`](/pages/web/web-paas/configuration-app) file to set the agent in the JVM parameters:
 
 ```yaml
 name: app

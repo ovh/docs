@@ -1,9 +1,6 @@
 ---
 title: Archiving your logs - Cold-storage
-slug: logs-data-platform-cold-storage
-order: 4
 excerpt: This long-term storage feature keeps your logs safely and cost efficiently over several years.
-section: Features
 updated: 2023-01-16
 ---
 

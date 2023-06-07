@@ -1,9 +1,6 @@
 ---
 title: 'Configurer un Contact Center Solution'
-slug: contact-center-solution
 excerpt: 'Découvrez comment configurer un Contact Center Solution sur votre numéro alias'
-section: 'Numéros ou alias'
-order: 7
 updated: 2022-08-04
 ---
 
@@ -11,7 +8,7 @@ updated: 2022-08-04
 
 ## Objectif
 
-Le Contact Center Solution (CCS) est la configuration la plus complète applicable à un numéro alias. Elle permet notamment de combiner les configurations avancées que sont la [file d'appels](https://docs.ovh.com/fr/voip/les-files-d-appels/) et le [serveur vocal interactif (SVI)](https://docs.ovh.com/fr/voip/svi-serveur-vocal-interactif/).
+Le Contact Center Solution (CCS) est la configuration la plus complète applicable à un numéro alias. Elle permet notamment de combiner les configurations avancées que sont la [file d'appels](/pages/telecom/voip/les_files_d_appels) et le [serveur vocal interactif (SVI)](/pages/telecom/voip/svi_serveur_vocal_interactif).
 
 Vous pouvez par exemple proposer à vos appelants, via la seule composition de votre numéro principal, un choix de touches pour joindre chaque service de votre entreprise, chaque touche composée faisant sonner un ensemble de lignes selon une stratégie que vous définissez depuis l'espace client OVHcloud.
 
@@ -34,8 +31,8 @@ Vous pouvez par exemple proposer à vos appelants, via la seule composition de v
 |Nom|Définition|
 |---|---|
 |Agent|Un agent est une ligne téléphonique, interne au compte OVHcloud ou externe à celui-ci, en capacité de sonner lorsque le numéro alias sera appelé.|
-|File|Une file est un groupe d'agents, sur le principe de la [file d'appels](../les-files-d-appels/). La file permet de faire sonner ces agents selon une stratégie à définir.|
-|Menu interactif|Un menu interactif propose à l'appelant des choix de touches pour faire sonner un agent/une file ou jouer un son, sur le principe du [serveur vocal interactif (SVI)](../svi-serveur-vocal-interactif/).|
+|File|Une file est un groupe d'agents, sur le principe de la [file d'appels](/pages/telecom/voip/les_files_d_appels). La file permet de faire sonner ces agents selon une stratégie à définir.|
+|Menu interactif|Un menu interactif propose à l'appelant des choix de touches pour faire sonner un agent/une file ou jouer un son, sur le principe du [serveur vocal interactif (SVI)](/pages/telecom/voip/svi_serveur_vocal_interactif).|
 |TTS|Un Text-To-Speech (TTS) est un son créé à partir d'un texte que vous définissez dans l'espace client OVHcloud.|
 
 ## En pratique
@@ -102,7 +99,7 @@ Cliquez alors sur `+ Ajouter un TTS`{.action}, choisissez une voix parmi celles 
 
 Les files d'appels regroupent plusieurs agents (des lignes téléphoniques internes ou externes) qui vont sonner selon une stratégie que vous définissez dans l'espace client.
 
-Leur fonctionnement est identique à la configuration [File d'appels](../les-files-d-appels/) applicable directement sur un numéro alias.
+Leur fonctionnement est identique à la configuration [File d'appels](/pages/telecom/voip/les_files_d_appels) applicable directement sur un numéro alias.
 
 #### 3.1 Ajouter les agents <a name="ajouter-agents"></a>
 
@@ -179,9 +176,9 @@ Vous pouvez créer autant de files que nécessaire pour répondre à votre besoi
 
 ### Étape 4 : créer les menus interactifs (facultatif) <a name="creer-svi"></a>
 
-À la différence de la configuration d'un numéro alias en [Serveur Vocal Interactif (SVI)](../svi-serveur-vocal-interactif/), le CCS permet d'associer une file d'appels entière (et non plus une simple ligne) à une touche de téléphone composée par un appelant.
+À la différence de la configuration d'un numéro alias en [Serveur Vocal Interactif (SVI)](/pages/telecom/voip/svi_serveur_vocal_interactif), le CCS permet d'associer une file d'appels entière (et non plus une simple ligne) à une touche de téléphone composée par un appelant.
 
-Pour plus d'informations sur le fonctionnement d'un SVI, consultez notre guide [Configurer un serveur vocal interfactif](../svi-serveur-vocal-interactif/).
+Pour plus d'informations sur le fonctionnement d'un SVI, consultez notre guide [Configurer un serveur vocal interfactif](/pages/telecom/voip/svi_serveur_vocal_interactif).
 
 #### 4.1 Créer le premier menu <a name="creer-menu-svi"></a>
 

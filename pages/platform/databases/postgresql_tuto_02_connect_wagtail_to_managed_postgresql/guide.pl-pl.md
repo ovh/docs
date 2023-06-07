@@ -1,11 +1,8 @@
 ---
 title: PostgreSQL - Tutorial - Install Wagtail and connect it to OVHcloud Managed PostgreSQL service
-slug: postgresql/tutorial-connect-wagtail-to-managed-postgresql
 excerpt: "Find out how to install Wagtail and connect it to an OVHcloud Managed PostgreSQL service"
-section: PostgreSQL - Tutorials
-order: 020
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/tutorial-connect-wagtail-to-managed-postgresql/'
+    canonical: '/pages/platform/databases/postgresql_tuto_02_connect_wagtail_to_managed_postgresql'
 updated: 2022-02-11
 ---
 

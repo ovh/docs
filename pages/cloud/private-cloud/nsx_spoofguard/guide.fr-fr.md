@@ -1,10 +1,7 @@
 ---
 title: Eviter l'usurpation d'IP avec le service SpoofGuard
-slug: spoofguard
 excerpt: Paramétrez des politiques pour éviter l'usurpation d'IP
 legacy_guide_number: '4816988'
-section: NSX-v
-order: 10
 updated: 2021-02-12
 ---
 
@@ -20,7 +17,7 @@ SpoofGuard protège contre l'usurpation d'adresse IP en conservant une table de 
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)).
-- Avoir activé le [firewall distribué](https://docs.ovh.com/fr/private-cloud/configurer-le-firewall-distribue-nsx/)
+- Avoir activé le [firewall distribué](/pages/cloud/private-cloud/nsx_configurer_le_firewall_distribue)
 
 ## En pratique
 

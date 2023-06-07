@@ -1,9 +1,6 @@
 ---
 title: Replacing the OVHgateway with a dedicated server
-slug: hardware-gateway-replacement
 excerpt: "How to replace your gateway integrated in Nutanix with a dedicated server to increase bandwidth"
-section: Network & Security
-order: 10
 updated: 2022-12-05
 ---
 

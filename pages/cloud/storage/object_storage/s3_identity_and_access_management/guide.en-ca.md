@@ -1,9 +1,6 @@
 ---
 title: Object Storage - Identity and access management
-slug: s3/identity-and-access-management
 excerpt:
-section: General guides to start
-order: 030
 updated: 2022-09-27
 ---
 

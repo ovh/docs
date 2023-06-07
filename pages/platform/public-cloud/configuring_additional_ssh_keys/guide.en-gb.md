@@ -1,9 +1,6 @@
 ---
 title: 'Configuring additional SSH keys'
-slug: configuring_additional_ssh_keys
 excerpt: 'Find out how to configure additional SSH keys for your Public Cloud instance'
-section: Tutorials
-order: 01
 updated: 2022-02-04
 ---
 
@@ -30,11 +27,11 @@ If you would like to store an SSH key in the OVHcloud Control Panel, we recommen
 
 ### Creating the SSH key
 
-To create a new SSH key, consult the [Public Cloud first steps guide](../public-cloud-first-steps/).
+To create a new SSH key, consult the [Public Cloud first steps guide](/pages/platform/public-cloud/public-cloud-first-steps).
 
 ### Configuring the new user
 
-[Connect to your instance with SSH](../public-cloud-first-steps/#connect-to-instance) and use the command below to create a new user:
+[Connect to your instance with SSH](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) and use the command below to create a new user:
 
 ```bash
 ~$ sudo adduser user2
@@ -88,8 +85,8 @@ user2@server:~$
 
 ## Go further
 
-[Public Cloud first steps](../public-cloud-first-steps/)
+[Public Cloud first steps](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Replacing your lost SSH key pair](../replacing_your_lost_ssh_key_pair/)
+[Replacing your lost SSH key pair](/pages/platform/public-cloud/replacing_lost_ssh_key)
 
 Join our community of users on <https://community.ovh.com/en/>.

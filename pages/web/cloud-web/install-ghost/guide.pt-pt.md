@@ -1,9 +1,6 @@
 ---
 title: 'Instalar o Ghost num alojamento Cloud Web'
-slug: instalar-o-ghost-cloud-web
 excerpt: 'Saiba como instalar um blogue com a plataforma Ghost num alojamento Cloud Web'
-section: Tutoriais
-order: 01
 updated: 2022-05-04
 ---
 
@@ -60,7 +57,7 @@ No nova janela, insira as informações solicitadas com os valores do nosso exem
 |Ambiente da aplicação|production|
 |Script de lançamento da aplicação|server.js|
 
-Concluída esta etapa, clique no botão `Validar`{.action}. Para mais informações sobre os motores de execução, consulte o nosso manual [Gerir os motores de execução de um alojamento Cloud Web](https://docs.ovh.com/pt/cloud-web/gerir-motores-execucao-alojamento-cloud-web/){.external}.
+Concluída esta etapa, clique no botão `Validar`{.action}. Para mais informações sobre os motores de execução, consulte o nosso manual [Gerir os motores de execução de um alojamento Cloud Web](/pages/web/cloud-web/manage-runtime){.external}.
 
 ![ghostcloudweb](images/ghost-cloud-web-step2.png){.thumbnail}
 
@@ -90,7 +87,7 @@ Na nova janela que aparecerá, preencha as informações necessárias em funçã
 |Pasta raiz|ghost|
 |Motor de execução|NodeJS 8|
 
-No que diz respeito às opções adicionais, selecione as que pretende ativar. Uma vez as informações introduzidas, clique em `Seguinte`{.action} e finalize a operação. Esta operação pode demorar até uma hora. No entanto, a alteração da configuração DNS pode demorar até 24 horas antes de ficar totalmente efetiva. Se pretender obter mais informações sobre a gestão dos multisites, consulte o nosso manual “[Partilhar o alojamento entre vários sites](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/){.external}”.
+No que diz respeito às opções adicionais, selecione as que pretende ativar. Uma vez as informações introduzidas, clique em `Seguinte`{.action} e finalize a operação. Esta operação pode demorar até uma hora. No entanto, a alteração da configuração DNS pode demorar até 24 horas antes de ficar totalmente efetiva. Se pretender obter mais informações sobre a gestão dos multisites, consulte o nosso manual “[Partilhar o alojamento entre vários sites](/pages/web/hosting/multisites_configure_multisite){.external}”.
 
 ![ghostcloudweb](images/ghost-cloud-web-step4.png){.thumbnail}
 
@@ -273,17 +270,17 @@ Neste tutorial, foi-lhe explicado como instalar uma aplicação Node.js num aloj
 
 ## Quer saber mais? Veja os guias abaixo
 
-[Transferir o meu site para a OVHcloud](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external} (Versão PT disponível em breve)
+[Transferir o meu site para a OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external} (Versão PT disponível em breve)
 
-[Colocar o meu site online](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/){.external}
+[Colocar o meu site online](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
-[Instalar um CMS com os Módulos 1 clique](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/){.external}
+[Instalar um CMS com os Módulos 1 clique](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Partilhar o alojamento entre vários sites](https://docs.ovh.com/ie/en/hosting/multisites-configuring-multiple-websites/){.external}
+[Partilhar o alojamento entre vários sites](/pages/web/hosting/multisites_configure_multisite){.external}
 
-[Como criar um endereço de e-mail](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external}
+[Como criar um endereço de e-mail](/pages/web/emails/email_creation){.external}
 
-[Utilização do RoundCube](https://docs.ovh.com/pt/emails/webmail_guia_de_utilizacao_do_roundcube/){.external}
+[Utilização do RoundCube](/pages/web/emails/email_roundcube){.external}
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 

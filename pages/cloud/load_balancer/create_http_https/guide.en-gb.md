@@ -1,8 +1,6 @@
 ---
 title: 'Configuring a HTTP/HTTPS OVH Load Balancer service'
-slug: configure-iplb
 excerpt: 'Find out how to configure an OVH Load Balancer service'
-section: Configuration
 updated: 2020-09-30
 ---
 
@@ -37,7 +35,7 @@ As a reminder, the OVHcloud Load Balancer has four primary components:
 > This guide will take you through the steps required. Depending on the way you have designed your architecture, some configurations may vary.
 > 
 
-If you have not done so already, we recommend reading a general introduction to the OVHcloud Load Balancer service before you get started: [Introduction to the OVHcloud Load Balancer](../loadbalancer-introduction/)
+If you have not done so already, we recommend reading a general introduction to the OVHcloud Load Balancer service before you get started: [Introduction to the OVHcloud Load Balancer](/pages/cloud/load_balancer/use_presentation)
 
 
 > [!warning]
@@ -58,7 +56,7 @@ Similarly, this can be done via the OVHcloud API, in the section:
 > @api {GET} /ipLoadbalancing
 > 
 
-For more information on the API’s features, you can consult [the following guide in French](https://docs.ovh.com/fr/load-balancer/iplb-api-reference/).
+For more information on the API’s features, you can consult [the following guide in French](/pages/cloud/load_balancer/use_api_reference).
 
 
 ## Add a server farm.

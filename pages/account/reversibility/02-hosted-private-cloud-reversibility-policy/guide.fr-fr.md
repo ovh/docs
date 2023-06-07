@@ -1,8 +1,5 @@
 ---
 title: Politique de réversibilité de Hosted Private Cloud
-slug: politique-reversibilite-hosted-private-cloud
-section: Politiques de réversibilité
-order: 3
 updated: 2021-05-05
 ---
 
@@ -34,22 +31,22 @@ The following migration models and available documentation apply to all the feat
 
 |Modèle de migration|Documentation disponible|
 |---|---|
-|**Migration entrante**:<br>- Souscrivez un projet Hosted Private Cloud<br>-Commandez le nombre approprié d'hôtes et de datastores sur le projet pour obtenir une capacité comparable à celle de l'infrastructure d'origine.<br>-Migrez à l'aide d'un outil spécialisé (Veeam, Zerto, HCX...)<br><br>**Migration sortante**: <br> -Configurez un hyperviseur vSphere dans l'environnement cible<br>- Planifiez les capacités de l'environnement cible comparativement à l'environnement d'origine<br>- Migrez via un outil spécialisé (par exemple Veeam, Zerto, HCX ...)|La [Documentation vSphere standard](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-CEFF6D89-8C19-4143-8C26-4B6D6734D2CB.html) s'applique.<br><br>[Déployer un template OVF Linux, Windows Server et Windows SQL Server](https://docs.ovh.com/fr/private-cloud/deploiement-template-ovh/)<br><br>[Déploiement d'une machine virtuelle avec vSphere](https://docs.ovh.com/fr/private-cloud/deploiement-d-une-machine-virtuelle/)<br><br>[Création de cluster et activation EVC](https://docs.ovh.com/fr/private-cloud/create-cluster-enable-evc/)|
+|**Migration entrante**:<br>- Souscrivez un projet Hosted Private Cloud<br>-Commandez le nombre approprié d'hôtes et de datastores sur le projet pour obtenir une capacité comparable à celle de l'infrastructure d'origine.<br>-Migrez à l'aide d'un outil spécialisé (Veeam, Zerto, HCX...)<br><br>**Migration sortante**: <br> -Configurez un hyperviseur vSphere dans l'environnement cible<br>- Planifiez les capacités de l'environnement cible comparativement à l'environnement d'origine<br>- Migrez via un outil spécialisé (par exemple Veeam, Zerto, HCX ...)|La [Documentation vSphere standard](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-CEFF6D89-8C19-4143-8C26-4B6D6734D2CB.html) s'applique.<br><br>[Déployer un template OVF Linux, Windows Server et Windows SQL Server](/pages/cloud/private-cloud/ovf_template)<br><br>[Déploiement d'une machine virtuelle avec vSphere](/pages/cloud/private-cloud/deploiement_d_une_machine_virtuelle)<br><br>[Création de cluster et activation EVC](/pages/cloud/private-cloud/create_cluster_enable_evc)|
 
 ### Implémentation OVHcloud <a name="ovhcloud-implementation"></a>
 
 |Fonction|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|
-|vRack|Le vRack, ou rack virtuel, est une technologie VLAN privée qui permet la connexion entre les services OVHcloud|N/A|**Migration entrante**: Les services Hosted private Cloud sont inclus par défaut dans vRack.<br><br>**Migration sortante**: Prenez note de l'architecture réseau et reproduisez-la avec des VLAN.|[Utiliser le Hosted Private Cloud au sein d’un vRack](https://docs.ovh.com/fr/private-cloud/utiliser-le-private-cloud-au-sein-d-un-vrack/)<br><br>[Création de V(x)LAN](https://docs.ovh.com/fr/private-cloud/creation-vlan-vxlan/)|
-|vROps|Solution standard de Monitoring VMware.|N/A|**Migration entrante**: vROps est inclus par défaut avec chaque Hosted Private Cloud.<br><br>**Migration sortante**: Installer et configurer vROps dans un environnement vSphere.|[First connection on vROps](https://docs.ovh.com/fr/private-cloud/first-connection-on-vrops/)|
-|Managed Veeam backup|Solution de sauvegarde en tant que service pour vos VMs|VBK, VIB, VBM|**Migration entrante**: Activez une option de sauvegarde Veeam dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).<br><br>**Migration sortante**: Importez des sauvegardes manuellement, puis restaurez-les.|[Activer et utiliser Veeam Managed Backup](https://docs.ovh.com/fr/private-cloud/veeam-backup-as-a-service/)<br><br>[Importer des sauvegardes](https://helpcenter.veeam.com/docs/backup/hyperv/importing_backups.html?ver=110)(EN)|
-|Zerto|Plateforme de continuité et de reprise d'activité après sinistre.|N/A|**Migration entrante**: Activez le service Zerto dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou directement dans l'interface de réplication Zerto fournie.<br><br>**Migration sortante**:  Exportez les paramètres VPG de Zerto et importez-les dans le nouvel environnement.|[Mise en oeuvre de Zerto Virtual Replication pour votre PRA](https://docs.ovh.com/fr/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/)<br><br>[Exporter les paramètres VPG Zerto](https://www.zerto.com/myzerto/knowledge-base/exporting-and-importing-vpg-settings-with-zerto-diagnostic-tool/)(EN)|
+|vRack|Le vRack, ou rack virtuel, est une technologie VLAN privée qui permet la connexion entre les services OVHcloud|N/A|**Migration entrante**: Les services Hosted private Cloud sont inclus par défaut dans vRack.<br><br>**Migration sortante**: Prenez note de l'architecture réseau et reproduisez-la avec des VLAN.|[Utiliser le Hosted Private Cloud au sein d’un vRack](/pages/cloud/private-cloud/using_private_cloud_in_vrack)<br><br>[Création de V(x)LAN](/pages/cloud/private-cloud/creation_vlan)|
+|vROps|Solution standard de Monitoring VMware.|N/A|**Migration entrante**: vROps est inclus par défaut avec chaque Hosted Private Cloud.<br><br>**Migration sortante**: Installer et configurer vROps dans un environnement vSphere.|[First connection on vROps](/pages/cloud/private-cloud/vrops_introduction)|
+|Managed Veeam backup|Solution de sauvegarde en tant que service pour vos VMs|VBK, VIB, VBM|**Migration entrante**: Activez une option de sauvegarde Veeam dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).<br><br>**Migration sortante**: Importez des sauvegardes manuellement, puis restaurez-les.|[Activer et utiliser Veeam Managed Backup](/pages/cloud/private-cloud/veeam_backup_as_a_service)<br><br>[Importer des sauvegardes](https://helpcenter.veeam.com/docs/backup/hyperv/importing_backups.html?ver=110)(EN)|
+|Zerto|Plateforme de continuité et de reprise d'activité après sinistre.|N/A|**Migration entrante**: Activez le service Zerto dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou directement dans l'interface de réplication Zerto fournie.<br><br>**Migration sortante**:  Exportez les paramètres VPG de Zerto et importez-les dans le nouvel environnement.|[Mise en oeuvre de Zerto Virtual Replication pour votre PRA](/pages/cloud/private-cloud/zerto_virtual_replication_as_a_service)<br><br>[Exporter les paramètres VPG Zerto](https://www.zerto.com/myzerto/knowledge-base/exporting-and-importing-vpg-settings-with-zerto-diagnostic-tool/)(EN)|
 
 ### Fonctionnalités spécifiques <a name="fonctionnalites-specifiques"></a>
 
 |Fonction|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|
-|Monitoring vScope|Outil de monitoring de l'état et de l'utilisation des ressources conçu par OVHcloud pour Hosted Private Cloud.|N/A|N/A ; vScope est une interface statique.|[Comment utiliser vScope](https://docs.ovh.com/fr/private-cloud/vscope/)|
+|Monitoring vScope|Outil de monitoring de l'état et de l'utilisation des ressources conçu par OVHcloud pour Hosted Private Cloud.|N/A|N/A ; vScope est une interface statique.|[Comment utiliser vScope](/pages/cloud/private-cloud/how_to_use_vscope)|
 |Anti-DDoS|L'anti-DDoS est un ensemble d'équipements et de moyens mis en place pour absorber les attaques par déni de service. Il comprend une analyse du trafic, « l’aspiration » vers un réseau spécialisé et la mitigation, assurée par la technologie VAC développée par OVHcloud.|N/A|**Migration entrante**: Le système anti-DDoS est un composant de notre infrastructure, activé par défaut. Aucune action n'est requise.<br><br>**Migration sortante**: Commandez et configurez un anti-DDoS avec le nouveau fournisseur.|[Protection anti-DDoS OVHcloud](https://www.ovh.com/fr/anti-ddos/)<br><br>[Technologie anti-DDoS](https://www.ovh.com/fr/anti-ddos/technologie-anti-ddos.xml)|
 |Sécurité avancée pour SDDC|Ensemble de fonctionnalités améliorant la sécurité, telles que l'implémentation de Sécurité Zero Trust, MFA, IDS pour l'accès vSphere...|N/A|**Migration entrante**: Commandez l'activation de la sécurité avancée depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).<br><br>**Migration sortante**: Commandez et configurez les fonctionnalités de sécurité appropriées avec le nouveau fournisseur.|[SDDC Advanced Security Pack](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/safety-compliance/sddc/)|
 
@@ -59,9 +56,9 @@ Les informations relatives à l'architecture (serveurs, stockage, etc.) sont cen
 
 ### Outils de migration disponibles
 
-[Importer/exporter des machnes virtuelles](https://docs.ovh.com/fr/private-cloud/ovf-tool/).
+[Importer/exporter des machnes virtuelles](/pages/cloud/private-cloud/ovf_tool).
 
-[Convertir une machine physique/virtuelle en une infrastructure Cloud](https://docs.ovh.com/fr/private-cloud/vmware-vcenter-converter/).
+[Convertir une machine physique/virtuelle en une infrastructure Cloud](/pages/cloud/private-cloud/vmware_vcenter_converter).
 
 ### Services Partenaires
 
@@ -77,4 +74,4 @@ Les données sont conservées jusqu'à la fin du mois suivant la résiliation du
 
 ## Aller plus loin
 
-[Migrer une infrastructure vers Hosted Private Cloud](https://docs.ovh.com/fr/private-cloud/sddc-migration/).
+[Migrer une infrastructure vers Hosted Private Cloud](/pages/cloud/private-cloud/service-migration).

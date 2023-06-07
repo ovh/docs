@@ -1,7 +1,5 @@
 ---
 title: Web Cloud Databases - EOL und EOS Ankündigungen
-slug: clouddb-eos-eol
-section: 'Technische Ressourcen'
 updated: 2023-05-03
 ---
 
@@ -15,7 +13,7 @@ updated: 2023-05-03
 
 Die von der folgenden Terminierung zu End-of-Life (EOL) und End-of-Sale (EOS) erfassten Produkte sind Web Cloud Databases Dienstleistungen d.h. DBMS Instanzen, die über das öffentliche Internet erreichbar sind.
 
-Weitere Informationen erhalten Sie auf der Seite zur [EOL Policy für Managed Databases](../managed-db-life-cycle-policy/).
+Weitere Informationen erhalten Sie auf der Seite zur [EOL Policy für Managed Databases](/pages/web/clouddb/eol-policy).
 
 |Version|EOL Ankündigung|End-of-Sale|End-of-Support|
 |---|---|---|---|

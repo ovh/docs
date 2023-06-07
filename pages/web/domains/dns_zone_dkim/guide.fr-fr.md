@@ -1,9 +1,6 @@
 ---
 title: Configurer un enregistrement DKIM
-slug: dkim-record
 excerpt: Découvrez comment configurer un enregistrement DKIM sur votre nom de domaine et votre plateforme e-mail OVHcloud
-section: DNS et zone DNS
-order: 06
 updated: 2022-09-12
 ---
 
@@ -106,7 +103,7 @@ Il existe deux utilisations du chiffrement asymétrique :
 
 #### Comment le hachage et le chiffrement asymétrique sont-ils utilisés pour le DKIM ? <a name="encrypt-and-hash"></a>
 
-Depuis la plateforme e-mail, le DKIM va utiliser le hachage pour créer une signature à partir de certains éléments de [l'en-tête de l'e-mail](https://docs.ovh.com/fr/emails/recuperation-des-entetes-e-mails/#comprendre-le-contenu-dun-en-tete) et du corps de l'e-mail (contenu de l'e-mail).
+Depuis la plateforme e-mail, le DKIM va utiliser le hachage pour créer une signature à partir de certains éléments de [l'en-tête de l'e-mail](/pages/web/emails/diagnostic_headers#comprendre-le-contenu-dun-en-tete) et du corps de l'e-mail (contenu de l'e-mail).
 
 La signature est ensuite chiffrée avec la clé privée en utilisant le chiffrement asymétrique.
 
@@ -118,7 +115,7 @@ Pour que le destinataire puisse vérifier la signature DKIM de l'expéditeur, il
 
 Lorsque vous activez le DKIM, celui-ci fonctionne avec une paire de clé publique / clé privée. Il est possible d'attribuer plusieurs paires de clés à votre nom de domaine, dans le cadre d'une rotation par exemple. En effet, lorsque vous changez de paire de clés, l'ancienne paire doit rester active le temps que l'ensemble des e-mails que vous avez envoyé avec l'ancienne clé ne rencontre pas d'échec dans la vérification du DKIM sur le serveur de réception.
 
-Pour que ce principe de rotation fonctionne, on va utiliser ce qu'on appelle les **sélecteurs DKIM**. Un sélecteur DKIM comprend une paire de clé privée/clé publique. Il est visible sous la forme d'une chaîne de caractère dans la signature DKIM d'un e-mail par l'argument `s=`. Cette signature est visible dans [l'en-tête de l'e-mail](https://docs.ovh.com/fr/emails/recuperation-des-entetes-e-mails/#comprendre-le-contenu-dun-en-tete).
+Pour que ce principe de rotation fonctionne, on va utiliser ce qu'on appelle les **sélecteurs DKIM**. Un sélecteur DKIM comprend une paire de clé privée/clé publique. Il est visible sous la forme d'une chaîne de caractère dans la signature DKIM d'un e-mail par l'argument `s=`. Cette signature est visible dans [l'en-tête de l'e-mail](/pages/web/emails/diagnostic_headers#comprendre-le-contenu-dun-en-tete).
 
 **Exemple d'une partie de signature DKIM**
 
@@ -226,7 +223,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> ```
 >> > [!primary]
 >> >
->> > Si votre nom de domaine est géré dans le même espace client que votre plateforme et que vous avez coché `autoEnableDKIM` et `configureDkim`, passez directement à la section [**Les différents états du DKIM**](dkim-status#) ci-dessous pour suivre l'activation du DKIM.
+>> > Si votre nom de domaine est géré dans le même espace client que votre plateforme et que vous avez coché `autoEnableDKIM` et `configureDkim`, passez directement à la section [**Les différents états du DKIM**](/pages/web/domains/dns_zone_dkimdkim-status) ci-dessous pour suivre l'activation du DKIM.
 >>
 > **3.Récupérer l'enregistrement DNS**
 >> Vous devez configurer manuellement la zone DNS de votre nom de domaine **dans les cas suivants** :
@@ -316,7 +313,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >>
 >> > [!success]
 >> >
->> > Vous avez maintenant effectué toutes les manipulations pour activer le DKIM. Pour s'assurer que celui-ci est bien activé, consultez la section [**« Les différents états du DKIM »**](dkim-status#) de ce guide pour vérifier que la valeur `status:` est bien en `inProduction`. Si c'est bien le cas, votre DKIM est désormais actif.
+>> > Vous avez maintenant effectué toutes les manipulations pour activer le DKIM. Pour s'assurer que celui-ci est bien activé, consultez la section [**« Les différents états du DKIM »**](/pages/web/domains/dns_zone_dkimdkim-status) de ce guide pour vérifier que la valeur `status:` est bien en `inProduction`. Si c'est bien le cas, votre DKIM est désormais actif.
 >>
 
 ##### **Pour E-mail Pro**
@@ -372,7 +369,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> ```
 >> > [!primary]
 >> >
->> > Si votre nom de domaine est géré dans le même espace client que votre plateforme et que vous avez coché `autoEnableDKIM` et `configureDkim`, passez directement à la section [**Les différents états du DKIM**](dkim-status#) ci-dessous pour suivre l'activation du DKIM.
+>> > Si votre nom de domaine est géré dans le même espace client que votre plateforme et que vous avez coché `autoEnableDKIM` et `configureDkim`, passez directement à la section [**Les différents états du DKIM**](/pages/web/domains/dns_zone_dkimdkim-status) ci-dessous pour suivre l'activation du DKIM.
 >>
 > **3.Récupérer l'enregistrement DNS**
 >> Vous devez configurer manuellement la zone DNS de votre nom de domaine **dans les cas suivants** :
@@ -460,7 +457,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >>
 >> > [!success]
 >> >
->> > Vous avez maintenant effectué toutes les manipulations pour activer le DKIM. Pour s'assurer que celui-ci est bien activé, consultez la section [**« Les différents états du DKIM »**](dkim-status#) de ce guide pour vérifier que la valeur `status:` est bien en `inProduction`. Si c'est bien le cas, votre DKIM est désormais actif.
+>> > Vous avez maintenant effectué toutes les manipulations pour activer le DKIM. Pour s'assurer que celui-ci est bien activé, consultez la section [**« Les différents états du DKIM »**](/pages/web/domains/dns_zone_dkimdkim-status) de ce guide pour vérifier que la valeur `status:` est bien en `inProduction`. Si c'est bien le cas, votre DKIM est désormais actif.
 >>
 
 #### Les différents états du DKIM <a name="dkim-status"></a>
@@ -722,7 +719,7 @@ ARC-Authentication-Results: i=1; mx.example.com;
 Return-Path: <test-dkim@mydomain.ovh>
 </code></pre>
 
-Pour récupérer l'en-tête d'un e-mail, consulter notre guide « [Récupérer l'en-tête d'un e-mail](pages/web/emails/diagnostic_headers) ».
+Pour récupérer l'en-tête d'un e-mail, consulter notre guide « [Récupérer l'en-tête d'un e-mail](/pages/web/domains/dns_zone_dkimpages/web/emails/diagnostic_headers) ».
 
 ## Aller plus loin
 

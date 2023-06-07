@@ -1,10 +1,7 @@
 ---
 title: 'Konfiguracja filtrów e-mail w Panelu klienta'
 excerpt: 'Dowiedz się, jak utworzyć i skonfigurować filtr na Twoim koncie e-mail'
-slug: hosting_www_konfiguracja_filtrow_e-mail_w_panelu_klienta
 legacy_guide_number: g1973
-section: 'Funkcjonalności kont e-mail'
-order: 04
 updated: 2021-09-27
 ---
 
@@ -81,7 +78,7 @@ Wybór (nagłówek):
 
 Druga opcja (reguła):
 
-- **spf:** Wskaż wartość [pola SPF](https://docs.ovh.com/pl/domains/uslugi_www_pole_spf/), które należy uwzględnić, na przykład: "... nie ma pola SPF ... ".
+- **spf:** Wskaż wartość [pola SPF](/pages/web/domains/dns_zone_spf), które należy uwzględnić, na przykład: "... nie ma pola SPF ... ".
 - **zawiera:** przykład: "... zawiera ... ".
 - **nie zawiera:** przykład: ".. nie zawiera ... ".
 
@@ -142,8 +139,8 @@ Jeśli temat wiadomości zawiera słowo "money", **a nadawcą wiadomości nie je
 
 ## Sprawdź również
 
-[Pierwsze kroki z usługą MX Plan](https://docs.ovh.com/pl/emails/hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/)
+[Pierwsze kroki z usługą MX Plan](/pages/web/emails/email_generalities)
 
-[Reguły skrzynki odbiorczej w interfejsie OWA](https://docs.ovh.com/pl/emails/tworzenie-regul-skrzynki-odbiorczej-w-owa/)
+[Reguły skrzynki odbiorczej w interfejsie OWA](/products/email-owa-creating-inbox-rules)
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

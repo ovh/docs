@@ -1,9 +1,6 @@
 ---
 title: 'Usar copias de seguridad automáticas en un servidor virtual privado (VPS)'
-slug: usar-copias-de-seguridad-automatizadas-en-un-vps
 excerpt: 'Cómo activar y usar la opción «Copia de seguridad automatizada» en el panel de control de OVHcloud'
-section: 'Opciones de copia de seguridad'
-order: 2
 updated: 2022-11-15
 ---
 
@@ -228,6 +225,6 @@ Running  QEMU-GA            QEMU Guest Agent
 
 ## Más información
 
-[Usar instantáneas en un servidor virtual privado (VPS)](../usar-instantaneas-en-un-vps/)
+[Usar instantáneas en un servidor virtual privado (VPS)](/pages/cloud/vps/using-snapshots-on-a-vps)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

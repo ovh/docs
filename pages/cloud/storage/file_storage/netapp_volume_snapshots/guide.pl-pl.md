@@ -1,9 +1,6 @@
 ---
 title: Enterprise File Storage - Zarządzanie snapshotami wolumenu
-slug: netapp/volume-snapshots
 excerpt: Dowiedz się, jak zarządzać snapshotami wolumenu Enterprise File Storage przy użyciu interfejsu API OVHcloud
-section: Enterprise File Storage
-order: 042
 updated: 2021-10-27
 ---
 

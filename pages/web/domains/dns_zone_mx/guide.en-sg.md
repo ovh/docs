@@ -1,9 +1,6 @@
 ---
 title: "Add an MX record to your domain name’s configuration"
-slug: web_hosting_configuring_mx_with_the_ovh_dns_zone
 excerpt: "Find out how to add a MX record to your OVHcloud domain name’s configuration"
-section: 'DNS and DNS Zone'
-order: 04
 updated: 2018-05-30
 ---
 
@@ -66,7 +63,7 @@ To check if MX records already exist, use the filter above the DNS table to sele
 
 To add a record, click `Add record`{.action} button to the right of the table, then select `MX`{.action}. Fill in the information required, depending on the email solution you have ordered:
 
-- **If you have an OVHcloud email solution:** Please refer to the information provided in [Step 2: Familiarise yourself with the OVHcloud MX configuration](../web_hosting_configuring_mx_with_the_ovh_dns_zone/#step-2-familiarise-yourself-with-the-ovh-mx-configuration).
+- **If you have an OVHcloud email solution:** Please refer to the information provided in [Step 2: Familiarise yourself with the OVHcloud MX configuration](/pages/web/domains/dns_zone_mx#step-2-familiarise-yourself-with-the-ovh-mx-configuration).
 
 - **If you are using an email solution from another service provider:** Please refer to the information given by your service provider.
 
@@ -79,9 +76,9 @@ Once you have entered the information, finalise the steps, then click `Confirm`{
 
 ## Go further
 
-[General information about DNS servers](../web_hosting_general_information_about_dns_servers/){.external}
+[General information about DNS servers](/pages/web/domains/dns_server_general_information){.external}
 
-[Web hosting: How to edit your DNS zone](../web_hosting_how_to_edit_my_dns_zone/){.external}.
+[Web hosting: How to edit your DNS zone](/pages/web/domains/dns_zone_edit){.external}.
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/).
 

@@ -1,8 +1,5 @@
 ---
 title: Dedicated input - Logstash
-slug: logs-data-platform-logstash-input
-order: 1
-section: Features
 updated: 2021-07-30
 ---
 
@@ -361,7 +358,7 @@ Here are some links to help you go further with Logstash
 
 - [Logstash official documentation](https://www.elastic.co/guide/en/logstash/current/index.html){.external}
 - [Grok filters documentation](https://www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html){.external}
-- [Logstash + Groks + Filebeat = Awesome](../filebeat-logs){.ref}
+- [Logstash + Groks + Filebeat = Awesome](/gb/en/logs-data-platform/filebeat-logs){.ref}
 - [Grok Constructor](http://grokconstructor.appspot.com/do/match){.external}
 - [A Ruby regular expression editor](https://rubular.com/){.external}
 

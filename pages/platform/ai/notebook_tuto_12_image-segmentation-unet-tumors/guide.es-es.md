@@ -1,9 +1,6 @@
 ---
 title: AI Notebooks - Tutorial - Brain tumor segmentation using U-Net
-slug: notebooks/tuto-image-segmentation-unet-tumors
 excerpt: Implementing a Convolutional Neural Network for Brain Tumor Segmentation in Medical Imaging
-section: AI Notebooks - Tutorials
-order: 12
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-notebooks-tuto-image-segmentation-unet-tumors?id=kb_article_view&sysparm_article=KB0057606'
 updated: 2023-05-11
@@ -64,7 +61,7 @@ Using GPUs is recommended because medical imaging is a training intensive task.
 
 ### Launching a Jupyter notebook with "Tensorflow" via CLI
 
-*If you do not use our CLI yet, follow [this guide](https://docs.ovh.com/es/publiccloud/ai/cli/install-client/) to install it.*
+*If you do not use our CLI yet, follow [this guide](/pages/platform/ai/cli_10_howto_install_cli) to install it.*
 
 If you want to launch your notebook with the OVHcloud AI CLI, choose the `jupyterlab` editor and the `tensorflow` framework.
 

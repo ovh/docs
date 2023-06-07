@@ -1,11 +1,8 @@
 ---
 title: CLI - Commandes principales (EN)
-slug: cli/overview-cli
 excerpt: Découvrez les principales commandes de la CLI pour interagir sur les AI Tools
-section: Command Line Interface
-order: 205
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/overview-cli/'
+    canonical: '/pages/platform/ai/cli_15_commands_reference'
 updated: 2023-05-11
 ---
 
@@ -17,7 +14,7 @@ This guide covers the usage of the **ovhai** CLI.
 
 ## Requirements
 
--   a working `ovhai` CLI [how to install ovhai CLI](https://docs.ovh.com/ca/fr/publiccloud/ai/cli/install-client)
+-   a working `ovhai` CLI [how to install ovhai CLI](/pages/platform/ai/cli_10_howto_install_cli)
 
 ## Instructions
 

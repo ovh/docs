@@ -1,7 +1,5 @@
 ---
 title: HTTPS
-slug: https
-section: Routes
 updated: 2021-05-11
 ---
 
@@ -195,7 +193,7 @@ For the DNS challenge to work, domains and subdomains should point directly to y
   E: Error validating domain www.some-example.webpaas.ovh.net: Couldn't complete challenge [HTTP01: pending | DNS01: pending | TLSALPN01: pending]
   Unable to validate domains www.some-example.webpaas.ovh.net, will retry in the background.
 ```
-Note that DNS changes can take up to 24-48 hours to propagate.  If you have waited the 24-48 hours, properly configured the subdomain, and are still seeing an error of this type, [redeploying](../../development-redeploy) the impacted environment will usually solve the issue.
+Note that DNS changes can take up to 24-48 hours to propagate.  If you have waited the 24-48 hours, properly configured the subdomain, and are still seeing an error of this type, [redeploying](/pages/web/web-paas/development-redeploy) the impacted environment will usually solve the issue.
 
 If the issue persists, you could also verify if an outage is currently ongoing on [let's encrypt's side](https://letsencrypt.status.io/).
 If that is not the case, please open a support ticket.

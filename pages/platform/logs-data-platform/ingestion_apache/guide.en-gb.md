@@ -1,9 +1,6 @@
 ---
 title: Pushing logs from software - Apache
-slug: logs-data-platform-apache-logs
-order: 03
 excerpt: Get to know what is happening on your websites in real time.
-section: Use cases
 updated: 2020-07-27
 ---
 

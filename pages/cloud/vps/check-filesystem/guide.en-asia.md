@@ -1,9 +1,6 @@
 ---
 title: Checking the file system on a VPS
 excerpt: Find out how to check a file system for errors in rescue mode
-slug: check-file-system-vps
-section: 'Diagnostics and rescue mode'
-order: 5
 updated: 2021-04-20
 ---
 
@@ -29,7 +26,7 @@ updated: 2021-04-20
 
 #### GNU/Linux VPS
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and initiate a server reboot in rescue mode. Follow our [rescue mode guide](../rescue/) if necessary.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and initiate a server reboot in rescue mode. Follow our [rescue mode guide](/pages/cloud/vps/rescue) if necessary.
 
 On older VPS ranges, your partitions will be automatically mounted in rescue mode. You can verify this by using the following command:
 
@@ -71,7 +68,7 @@ $ fsck /dev/sdb1 -f
 
 The instructions above do generally not apply to a Windows VPS, because the file system check does not support NTFS. You can however perform a NTFS consistency check on the partitions.
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and initiate a server reboot in rescue mode. Follow our [rescue mode guide](../rescue/) if necessary.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and initiate a server reboot in rescue mode. Follow our [rescue mode guide](/pages/cloud/vps/rescue) if necessary.
 
 On older VPS ranges, your partitions will be automatically mounted in rescue mode. You can verify this by using the following command:
 
@@ -106,6 +103,6 @@ $ ntfsfix /dev/sdb1
 
 ## Go further
 
-[Activating Rescue Mode on VPS](../rescue/)
+[Activating Rescue Mode on VPS](/pages/cloud/vps/rescue)
 
 Join our community of users on <https://community.ovh.com/en/>.

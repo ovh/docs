@@ -1,9 +1,6 @@
 ---
 title: "Comprendre l'interface vScope"
-slug: vscope
 excerpt: "Découvrez comment utiliser l'interface vScope pour surveiller votre infrastructure"
-section: Services et options OVHcloud
-order: 01
 updated: 2022-01-28
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Securing a dedicated server
-slug: securing-a-dedicated-server
 excerpt: Find out the basics of securing your dedicated server
-section: Getting started
-order: 2
 updated: 2023-02-24
 ---
 
@@ -34,7 +31,7 @@ When you order your dedicated server, you can choose a distribution or operating
 >
 > Bear in mind that this is a general guide based on an Ubuntu server OS. Some commands need to be adapted to the distribution or operating system you are using and some tips will advise you to use third-party tools. Please refer to the official documentation for these applications if you require assistance.
 >
-> If you are configuring your first OVHcloud dedicated server, we recommend to consult our guide on [getting started with a dedicated server](https://docs.ovh.com/sg/en/dedicated/getting-started-dedicated-server/) before continuing.
+> If you are configuring your first OVHcloud dedicated server, we recommend to consult our guide on [getting started with a dedicated server](/pages/cloud/dedicated/getting-started-with-dedicated-server) before continuing.
 >
 
 ### Updating your system
@@ -98,7 +95,7 @@ ssh username@IPv4_of_your_server -p NewPortNumber
 
 ### Changing the password associated with the user "root"
 
-It is strongly recommended that you modify the password of the root user as to not leave it at default value on a new system. Please refer to the information in [this guide](https://docs.ovh.com/sg/en/dedicated/root-password/) for details.
+It is strongly recommended that you modify the password of the root user as to not leave it at default value on a new system. Please refer to the information in [this guide](/pages/cloud/dedicated/changing_root_password_linux_ds) for details.
 
 ### Creating a user with restricted rights
 
@@ -159,7 +156,7 @@ Common GNU/Linux distributions come with a firewall service named iptables. By d
 iptables -L
 ```
 
-You can learn more about iptables in our [Firewall guide](https://docs.ovh.com/sg/en/dedicated/firewall-iptables/).
+You can learn more about iptables in our [Firewall guide](/pages/cloud/dedicated/firewall-Linux-iptable).
 
 It is recommended that you create and adjust firewall rules according to your needs. For more detailed information on the variety of manipulations that are possible, please refer to the relevant section in the official documentation of the distribution used.
 
@@ -238,7 +235,7 @@ For any additional information and recommendations concerning Fail2ban, please r
 
 OVHcloud solutions include the option of enabling a firewall at the entry point to the infrastructure, called the Network Firewall. Configuring it correctly allows connections to be blocked before they even arrive on your server.
 
-Please refer to the [Network Firewall guide](https://docs.ovh.com/sg/en/dedicated/firewall-network/) if you would like to activate it.
+Please refer to the [Network Firewall guide](/pages/cloud/dedicated/firewall_network) if you would like to activate it.
 
 ### Backing up your system and your data
 
@@ -253,12 +250,12 @@ Securing your data is a key element, which is why OVHcloud offers you 500GB of f
 
 You will need a third-party backup solution to replicate your data and transfer it to your backup storage.
 
-For more information on our backup storage solutions, please see our [backup storage guide](https://docs.ovh.com/sg/en/dedicated/using-backup-storage/).
+For more information on our backup storage solutions, please see our [backup storage guide](/pages/cloud/dedicated/services_backup_storage).
 
 ## Go further
 
-[Configuring the firewall on Windows](https://docs.ovh.com/sg/en/dedicated/firewall-windows/)
+[Configuring the firewall on Windows](/pages/cloud/dedicated/activate-port-firewall-soft-win)
 
-[Network Firewall guide](https://docs.ovh.com/sg/en/dedicated/firewall-network/)
+[Network Firewall guide](/pages/cloud/dedicated/firewall_network)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,12 +1,9 @@
 ---
 title: Activer et utiliser Veeam Managed Backup
-slug: veeam-backup-as-a-service
 routes:
-    canonical: 'https://docs.ovh.com/fr/private-cloud/veeam-backup-as-a-service/'
+    canonical: '/pages/cloud/private-cloud/veeam_backup_as_a_service'
 excerpt: Découvrez comment activer et utiliser l'option Veeam Managed Backup
 legacy_guide_number: '2883711'
-section: Services et options OVHcloud
-order: 06
 updated: 2020-11-18
 ---
 
@@ -25,8 +22,8 @@ Les sauvegardes sont réalisées à l'aide d'une machine virtuelle (VM) située 
 * Posséder une offre [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.external}.
 * [Donner le droit « Ajout de ressources »](../changer-les-droits-d-un-utilisateur/){.external} pour le datacenter concerné à l'utilisateur depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 * Être connecté au client vSphere.
-* Avoir activé la [haute disponibilité (HA)](../vmware-ha-high-availability){.external}.
-* Avoir activé le [Distributed Ressource Scheduler (DRS)](../vmware-drs-distributed-ressource-scheduler-new){.external} sur le ou les clusters.
+* Avoir activé la [haute disponibilité (HA)](/pages/cloud/managed-bare-metal/vmware_ha_high_availability){.external}.
+* Avoir activé le [Distributed Ressource Scheduler (DRS)](/pages/cloud/managed-bare-metal/vmware_drs_distributed_ressource_scheduler){.external} sur le ou les clusters.
 * Mettre en place la gestion des licences Windows sur le Managed Bare Metal.
 
 > [!primary]

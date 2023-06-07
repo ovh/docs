@@ -1,8 +1,5 @@
 ---
 title: Update all the things
-slug: security-updates
-section: Security
-order: 8
 updated: 2021-05-11
 ---
 
@@ -17,4 +14,4 @@ Web PaaS periodically updates its container images for the latest security updat
 
 However, these updates are not automatically propagated to individual projects as that would involve potential customer downtime.  Instead, the latest available version of every requested container is loaded on each deploy to a given environment.  After a deploy you are always guaranteed to be running the latest Web PaaS-provided version of a container.
 
-If you are using Web PaaS-provided [Let's Encrypt TLS certificates](../configuration-routes/https), your site will be automatically redeployed approximately once every two months to ensure it always has an up to date certificate.  That will also ensure your container versions are up to date at the same time.
+If you are using Web PaaS-provided [Let's Encrypt TLS certificates](/pages/web/web-paas/configuration-routes/https), your site will be automatically redeployed approximately once every two months to ensure it always has an up to date certificate.  That will also ensure your container versions are up to date at the same time.

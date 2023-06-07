@@ -1,9 +1,6 @@
 ---
 title: "¿Qué hacer en caso de página 403 forbidden?"
 excerpt: Cómo volver a publicar un sitio web cuando este muestre la página 403 forbidden
-slug: diagnostico-403-forbidden
-section: Diagnóstico
-order: 08
 updated: 2022-06-16
 ---
 
@@ -33,14 +30,14 @@ También puede ocurrir que, debido a una detección de anomalías, nuestros robo
 ## Requisitos
 
 - Tener contratado un plan de [hosting](https://www.ovhcloud.com/es-es/web-hosting/) de OVHcloud.
-- Disponer de las [claves de conexión](../conexion-espacio-almacenamiento-ftp-alojamiento-web/#1-obtener-los-datos-de-conexion) al espacio de almacenamiento del alojamiento.
+- Disponer de las [claves de conexión](/pages/web/hosting/ftp_connection#1-obtener-los-datos-de-conexion) al espacio de almacenamiento del alojamiento.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
 ### Etapa 1: analizar la situación
 
-Si la página **"403 forbidden"** aparece debido a una modificación errónea de su sitio web, [restablezca la totalidad o parte del espacio de almacenamiento de su alojamiento](../restaurar-espacio-almacenamiento-alojamiento-web/) a una fecha anterior.
+Si la página **"403 forbidden"** aparece debido a una modificación errónea de su sitio web, [restablezca la totalidad o parte del espacio de almacenamiento de su alojamiento](/pages/web/hosting/ftp_save_and_backup) a una fecha anterior.
 
 Si las copias de seguridad disponibles no le permiten restablecer el acceso a su sitio web, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/).
 
@@ -54,8 +51,8 @@ En primer lugar, compruebe la seguridad de sus equipos informáticos:
 
 - Realice las actualizaciones de seguridad.
 - Compruebe también que haya instalado un antivirus, actualícela y lance una exploración completa. Si no tiene ninguno, consulte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) antes de instalar el módulo.
-- Cambie todas sus contraseñas locales, incluidas las de sus direcciones de correo, respetando las [buenas prácticas](https://docs.ovh.com/es/customer/gestionar-su-contrasena/#generar-una-contrasena-adecuada).
-- Cambie las contraseñas de todos sus servicios de OVHcloud, especialmente de su [base de datos](../cambiar-contrasena-base-de-datos/) y del acceso a su [espacio de almacenamiento FTP](../cambiar-contrasena-usuario-ftp/).
+- Cambie todas sus contraseñas locales, incluidas las de sus direcciones de correo, respetando las [buenas prácticas](/pages/account/customer/manage-ovh-password#generar-una-contrasena-adecuada).
+- Cambie las contraseñas de todos sus servicios de OVHcloud, especialmente de su [base de datos](../cambiar-contrasena-base-de-datos/) y del acceso a su [espacio de almacenamiento FTP](/pages/web/hosting/ftp_change_password).
 
 > [!warning]
 >
@@ -72,14 +69,14 @@ En primer lugar, la fecha de envío del mensaje de correo electrónico de OVHclo
 
 #### Caso n° 1: el alojamiento se desactivó hace menos de dos semanas.
 
-Si su alojamiento ha sido cerrado hace menos de dos semanas y solo contiene un sitio, restablezca su espacio de almacenamiento siguiendo las instrucciones de esta [guía](../restaurar-espacio-almacenamiento-alojamiento-web/#restaurar-el-espacio-de-almacenamiento-desde-el-area-de-cliente).
+Si su alojamiento ha sido cerrado hace menos de dos semanas y solo contiene un sitio, restablezca su espacio de almacenamiento siguiendo las instrucciones de esta [guía](/pages/web/hosting/ftp_save_and_backup#restaurar-el-espacio-de-almacenamiento-desde-el-area-de-cliente).
 
-Si su alojamiento ha sido cerrado hace menos de dos semanas y contiene varios sitios web, restablezca únicamente el directorio o carpetas que contengan los archivos ilegítimos siguiendo las instrucciones de esta [guía](../restaurar-espacio-almacenamiento-alojamiento-web/#restaurar-un-archivo-desde-un-programa-o-una-interfaz-web).
+Si su alojamiento ha sido cerrado hace menos de dos semanas y contiene varios sitios web, restablezca únicamente el directorio o carpetas que contengan los archivos ilegítimos siguiendo las instrucciones de esta [guía](/pages/web/hosting/ftp_save_and_backup#restaurar-un-archivo-desde-un-programa-o-una-interfaz-web).
 
 > [!warning]
 >
 > Solo la restauración de su espacio de almacenamiento no bastará para corregir posibles fallos de seguridad presentes previamente en su sitio web.
-> Para identificar estos fallos de seguridad, puede analizar los ["logs web"](https://docs.ovh.com/es/hosting/web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/#logs) de su alojamiento o recurrir a un [proveedor especializado](https://partner.ovhcloud.com/es-es/) para realizar una auditoría de seguridad de sus soluciones.
+> Para identificar estos fallos de seguridad, puede analizar los ["logs web"](/pages/web/hosting/logs_and_statistics#logs) de su alojamiento o recurrir a un [proveedor especializado](https://partner.ovhcloud.com/es-es/) para realizar una auditoría de seguridad de sus soluciones.
 >
 
 #### Caso n° 2: su alojamiento ha sido desactivado más de dos semanas antes.
@@ -97,7 +94,7 @@ Si su alojamiento ha sido cerrado más de dos semanas antes, póngase en contact
 
 > [!primary]
 >
-> Si desea instalar **FileZilla** para manipular los archivos de su sitio web, siga las indicaciones de esta [guía](../web_hosting_guia_de_uso_de_filezilla/).
+> Si desea instalar **FileZilla** para manipular los archivos de su sitio web, siga las indicaciones de esta [guía](/pages/web/hosting/ftp_filezilla_user_guide).
 >
 
 Abra FileZilla y conéctese al espacio de almacenamiento. En el menú superior, haga clic en `Servidor`{.action} y seleccione `Introducir comando personalizado`{.action} (el nombre puede variar ligeramente según la versión de FileZilla que utilice).
@@ -118,7 +115,7 @@ Una respuesta **"200 Permissions changed on /"** confirma que la operación se h
 
 En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Web Cloud`{.action} y, seguidamente, haga clic en `Alojamientos`{.action} en la pestaña `FTP-SSH`{.action} del alojamiento correspondiente.
 
-Haga clic en el botón `Explorador FTP `{.action} y conéctese al espacio de almacenamiento siguiendo las instrucciones de esta [guía](../conexion-espacio-almacenamiento-ftp-alojamiento-web/#21-conexion-mediante-un-explorador-ftp). Haga clic en el botón `Avanzado`{.action} y, a continuación, en el botón `Go`{.action} situado junto a "Send arbitrary FTP commands to the FTP server".
+Haga clic en el botón `Explorador FTP `{.action} y conéctese al espacio de almacenamiento siguiendo las instrucciones de esta [guía](/pages/web/hosting/ftp_connection#21-conexion-mediante-un-explorador-ftp). Haga clic en el botón `Avanzado`{.action} y, a continuación, en el botón `Go`{.action} situado junto a "Send arbitrary FTP commands to the FTP server".
 
 ![net2ftp](images/net2ftp.png){.thumbnail}
 
@@ -130,11 +127,11 @@ Una respuesta **"200 Permissions changed on /"** confirma que la operación se h
 
 ## Más información <a name="gofurther"></a>
 
-[Pirateo de su sitio web WordPress: Consejos y casos prácticos](../pirateo_de_su_sitio_web_wordpress_consejos_y_casos_practicos/)
+[Pirateo de su sitio web WordPress: Consejos y casos prácticos](/pages/web/hosting/cms_what_to_do_if_your_site_is_hacked)
 
-[Activación del firewall de aplicación](../web_hosting_activating_an_application_firewall/)
+[Activación del firewall de aplicación](/pages/web/hosting/multisites_activating_application_firewall)
 
-[Cambiar la versión de PHP de un alojamiento web](../cambiar-version-php-en-alojamiento-web/)
+[Cambiar la versión de PHP de un alojamiento web](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
 

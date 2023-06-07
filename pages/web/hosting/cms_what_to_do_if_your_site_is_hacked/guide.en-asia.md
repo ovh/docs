@@ -1,9 +1,6 @@
 ---
 title: "Use cases - What to do if your  Website is hacked"
 excerpt: "Learn our tips for repairing your hacked website"
-slug: what_to_do_if_your_wordpress_site_is_hacked
-section: "Tutorials"
-order: 010
 updated: 2022-11-15
 ---
 
@@ -75,12 +72,12 @@ When a website has been hacked and as a precaution, change all passwords related
 
 For OVHcloud services, please use our documentation to:
 
-- [Change the password for accessing your OVHcloud NIC handle](https://docs.ovh.com/asia/en/customer/manage-password/).
-- [Secure access to your OVHcloud Control Panel with two-factor authentication](https://docs.ovh.com/asia/en/customer/secure-account-with-2FA/)
-- [Change the password for accessing your Web Hosting plan’s FTP storage space](https://docs.ovh.com/asia/en/hosting/modify-ftp-user-password/).
-- [Change the password for accessing your database](https://docs.ovh.com/asia/en/hosting/change-password-database/).
+- [Change the password for accessing your OVHcloud NIC handle](/pages/account/customer/manage-ovh-password).
+- [Secure access to your OVHcloud Control Panel with two-factor authentication](/pages/account/customer/secure-ovhcloud-account-with-2fa)
+- [Change the password for accessing your Web Hosting plan’s FTP storage space](/pages/web/hosting/ftp_change_password).
+- [Change the password for accessing your database](/pages/web/hosting/sql_change_password).
 
-We also recommend using a [password manager](https://docs.ovh.com/asia/en/customer/manage-password/#use-a-password-manager).
+We also recommend using a [password manager](/pages/account/customer/manage-ovh-password#use-a-password-manager).
 
 > [!warning]
 > 
@@ -99,7 +96,7 @@ We also recommend using a [password manager](https://docs.ovh.com/asia/en/custom
 > If you experience any difficulties carrying out the actions described below, contact a [specialist provider](https://partner.ovhcloud.com/asia/) in cyber security.
 >
 
-Use our guide to [your web hosting plan’s statistics and logs](https://docs.ovh.com/asia/en/hosting/shared_view_my_websites_logs_and_statistics/) to search for malicious elements injected into your website. You can find the information in the web logs. 
+Use our guide to [your web hosting plan’s statistics and logs](/pages/web/hosting/logs_and_statistics) to search for malicious elements injected into your website. You can find the information in the web logs. 
 
 Start searching from the date you first noticed the hack, then go back to your logs.
 
@@ -119,7 +116,7 @@ Trace the security vulnerabilities in your website and list the malicious files 
 >
 > Several websites (not managed by OVHcloud) can be used to obtain information on malicious IPs. You can use one of them to retrieve information such as the IP provider, its geolocation, the manager, etc.
 >
-> If you are absolutely sure that this is a malicious IP, you can block access to your hosting by following our documentation on [access restrictions via the .htaccess file](https://docs.ovh.com/asia/en/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+> If you are absolutely sure that this is a malicious IP, you can block access to your hosting by following our documentation on [access restrictions via the .htaccess file](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 >
 
 ### Step 4: Remove malicious elements and fix security vulnerabilities
@@ -139,9 +136,9 @@ Depending on the date your website was hacked (less than 14 days), OVHcloud can 
 
 To do this, please refer to our 3 guides:
 
-- [Restore your Web Hosting plan’s FTP storage space](https://docs.ovh.com/gb/en/hosting/restoring-ftp-filezilla-control-panel/)
-- [Retrieve SQL backup of your database](https://docs.ovh.com/asia/en/hosting/web_hosting_database_export_guide/)
-- [Import SQL backup into your database](https://docs.ovh.com/asia/en/hosting/web_hosting_guide_to_importing_a_mysql_database/)
+- [Restore your Web Hosting plan’s FTP storage space](/pages/web/hosting/ftp_save_and_backup)
+- [Retrieve SQL backup of your database](/pages/web/hosting/sql_database_export)
+- [Import SQL backup into your database](/pages/web/hosting/sql_importing_mysql_database)
 
 Make the restore dates for your FTP storage space and SQL database coincide as much as possible.
 
@@ -153,7 +150,7 @@ Make the restore dates for your FTP storage space and SQL database coincide as m
 > If your hosting system is in the "disabled" state, the automatic restoration robots available from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) will be disabled as well.
 > You will need to carry out a “manual” restore of your site, delete the remaining malicious elements, then correct all security vulnerabilities present in this backup. Do this **before** reactivating your hosting.
 >
-> To reactivate the Web Hosting, follow the instructions in step 4 of [this guide](https://docs.ovh.com/asia/en/hosting/diagnostic-403-forbidden/).
+> To reactivate the Web Hosting, follow the instructions in step 4 of [this guide](/pages/web/hosting/diagnostic_403_forbidden).
 >
 
 Your website should reappear if these actions have been performed correctly.
@@ -162,8 +159,8 @@ Your website should reappear if these actions have been performed correctly.
 
 To do this, please refer to our 2 guides on the subject:
 
-- [Restore your Web Hosting plan’s FTP storage space](https://docs.ovh.com/gb/en/hosting/restoring-ftp-filezilla-control-panel/)
-- [Import SQL backup into your database](https://docs.ovh.com/asia/en/hosting/web_hosting_guide_to_importing_a_mysql_database/)
+- [Restore your Web Hosting plan’s FTP storage space](/pages/web/hosting/ftp_save_and_backup)
+- [Import SQL backup into your database](/pages/web/hosting/sql_importing_mysql_database)
 
 >[!warning]
 >
@@ -172,7 +169,7 @@ To do this, please refer to our 2 guides on the subject:
 >
 > If your hosting is in "disabled" state, perform a "manual" restore of your site, delete the remaining malicious elements then correct all security vulnerabilities present in this backup. This **before** reactivating your hosting.
 >
-> To reactivate Web Hosting, follow the instructions in step 4 of this [guide](https://docs.ovh.com/asia/en/hosting/diagnostic-403-forbidden/).
+> To reactivate Web Hosting, follow the instructions in step 4 of this [guide](/pages/web/hosting/diagnostic_403_forbidden).
 >
 
 Your website should reappear if these actions have been performed correctly.
@@ -181,7 +178,7 @@ Your website should reappear if these actions have been performed correctly.
 
 You will need to manually delete the files and malicious codes previously detected in [step 2](#step2) of this guide, then fix your website’s security vulnerabilities.
 
-To log in to your hosting plan’s storage space, please refer to [our guide](https://docs.ovh.com/asia/en/hosting/log-in-to-storage-ftp-web-hosting/) on this subject.
+To log in to your hosting plan’s storage space, please refer to [our guide](/pages/web/hosting/ftp_connection) on this subject.
 
 > [!warning]
 >
@@ -190,7 +187,7 @@ To log in to your hosting plan’s storage space, please refer to [our guide](ht
 >
 > If your hosting is in "disabled" state, perform a "manual" restore of your site, delete the remaining malicious elements, then correct all security vulnerabilities present in this backup. Do this **before** reactivating your hosting.
 >
-> To reactivate Web Hosting, follow the instructions in step 4 of this [guide](https://docs.ovh.com/asia/en/hosting/diagnostic-403-forbidden/).
+> To reactivate Web Hosting, follow the instructions in step 4 of this [guide](/pages/web/hosting/diagnostic_403_forbidden).
 >
 
 Your website should reappear if these actions have been performed correctly.
@@ -202,24 +199,24 @@ Update your website with regard to its source code, its security settings and th
 Check the FTP access rights ("CHMOD") for each of your folders and files hosted in your storage space.
 By default, we recommend using "CHMOD" **705** for folders and **604** for files as far as possible.
 
-You can find more details on "CHMOD" rights in the "Useful information" section of our [tutorial on using the Filezilla FTP client](https://docs.ovh.com/asia/en/hosting/web_hosting_filezilla_user_guide/#useful-information).
+You can find more details on "CHMOD" rights in the "Useful information" section of our [tutorial on using the Filezilla FTP client](/pages/web/hosting/ftp_filezilla_user_guide#useful-information).
 
 If you use a CMS (WordPress, Joomla!, PrestaShop, Drupal, ...), update your plugins, your theme and the CMS itself.
 Try to use "official" plugins/themes only and keep your website up-to-date as regularly as possible, in a comprehensive manner.
 
-Secure your contact forms at a minimum by using a "Captcha" type system, to prevent malicious robots from emitting SPAM through it. If PHP’s "mail()" function has also been blocked on your web hosting plan, please refer to [our guide](https://docs.ovh.com/asia/en/hosting/web_hosting_monitoring_automatic_emails/) for information on how to resolve this block.
+Secure your contact forms at a minimum by using a "Captcha" type system, to prevent malicious robots from emitting SPAM through it. If PHP’s "mail()" function has also been blocked on your web hosting plan, please refer to [our guide](/pages/web/hosting/mail_function_script_records) for information on how to resolve this block.
 
-Please also refer to our guide on [how to secure your website](https://docs.ovh.com/asia/en/hosting/secure-website/), to minimise the risk of a new hack occurring.
+Please also refer to our guide on [how to secure your website](/pages/web/hosting/secure_your_website), to minimise the risk of a new hack occurring.
 
 ## Go further <a name="go-further"></a>
 
-[Logging in to your Web Hosting plan’s storage space](https://docs.ovh.com/asia/en/hosting/log-in-to-storage-ftp-web-hosting/)
+[Logging in to your Web Hosting plan’s storage space](/pages/web/hosting/ftp_connection)
 
-[Modify your Web Hosting plan’s configuration](https://docs.ovh.com/asia/en/hosting/modify_your_web_hosting_systems_runtime_environment//)
+[Modify your Web Hosting plan’s configuration](/pages/web/hosting/ovhconfig_modify_system_runtime/)
 
-[Enable Application Firewall](https://docs.ovh.com/asia/en/hosting/web_hosting_activating_an_application_firewall/)
+[Enable Application Firewall](/pages/web/hosting/multisites_activating_application_firewall)
 
-[Optimise your website’s performance](https://docs.ovh.com/asia/en/hosting/web_hosting_optimise_your_website_performance/)
+[Optimise your website’s performance](/pages/web/hosting/optimise_your_website_performance)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/).
 

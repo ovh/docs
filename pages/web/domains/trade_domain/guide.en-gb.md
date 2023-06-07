@@ -1,9 +1,7 @@
 ---
 title: Changing the owner of a domain name
-slug: how-to-change-domain-name-holder
 legacy_guide_number: 1350
 excerpt: Find out how to change the owner of a a domain name in the OVHcloud Control Panel
-section: Trade
 updated: 2021-03-04
 ---
 
@@ -11,12 +9,12 @@ updated: 2021-03-04
 
 ## Objective
 
-Besides the [three contacts](../../customer/managing-contacts/), you need to provide information on the owner when registering a domain name. "**Owner**" in this context pertains to a person or company holding the usage rights to this domain name (sometimes also referred to as "domain name holder"). **Domain trade** refers to a change of ownership by modifying this information in a legally binding way. For example, this process is the mandatory procedure in case of a company changing its name.
+Besides the [three contacts](/pages/account/customer/managing_contacts), you need to provide information on the owner when registering a domain name. "**Owner**" in this context pertains to a person or company holding the usage rights to this domain name (sometimes also referred to as "domain name holder"). **Domain trade** refers to a change of ownership by modifying this information in a legally binding way. For example, this process is the mandatory procedure in case of a company changing its name.
 
 > [!primary]
 >This operation will not move your domain name to another OVHcloud customer account.
 >
->To do this you need to change the domain name's [contacts](../../customer/managing-contacts/).
+>To do this you need to change the domain name's [contacts](/pages/account/customer/managing_contacts).
 
 **This guide will provide you with information on how to change the owner of a domain name.**
 
@@ -24,7 +22,7 @@ Besides the [three contacts](../../customer/managing-contacts/), you need to pro
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - a domain name registered with OVHcloud
-- access as the [admin contact](../../customer/managing-contacts/) for the domain name concerned
+- access as the [admin contact](/pages/account/customer/managing_contacts) for the domain name concerned
 - permission from the current domain name owner to change owners
 
 
@@ -80,7 +78,7 @@ If the email address is not changed as part of the domain trade, one recipient w
 
 > [!warning]
 >
-> If the domain name owner has been successfully changed, the domain name will be blocked from being [transferred to another registrar](../outgoing-transfer-of-generic-or-geographical-domain-name/) for a period of 60 days. 
+> If the domain name owner has been successfully changed, the domain name will be blocked from being [transferred to another registrar](/pages/web/domains/transfer_outgoing_domain) for a period of 60 days. 
 
 ### Updating the owner information <a name="updateownerinformation"></a>
 
@@ -94,6 +92,6 @@ With this operation you do not need to confirm changes by email.
 
 ## Go further
 
-[Managing contacts for your services](../../customer/managing-contacts/)
+[Managing contacts for your services](/pages/account/customer/managing_contacts)
 
 Join our community of users on https://community.ovh.com/en/.

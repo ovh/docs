@@ -1,11 +1,8 @@
 ---
 title: PostgreSQL - Se connecter avec CLI (EN)
 excerpt: Connect to your Public Cloud Databases for PostgreSQL using the Command Line Interface (CLI)
-slug: postgresql/connect-cli
-section: PostgreSQL - Guides
-order: 040
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/connect-cli/'
+    canonical: '/pages/platform/databases/postgresql_03_connect_cli'
 updated: 2022-04-04
 ---
 
@@ -21,8 +18,8 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 - A [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/fr/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your PostgreSQL instance](https://docs.ovh.com/fr/publiccloud/databases/postgresql/configure-postgresql-instance/) to accept incoming connections
+- A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your PostgreSQL instance](/pages/platform/databases/postgresql_07_prepare_for_incoming_connections) to accept incoming connections
 
 ## Concept
 
@@ -155,9 +152,9 @@ URL: https://www.postgresql.org/docs/13/sql-createdatabase.html
 
 ## Go further
 
-[PostgreSQL capabilities](https://docs.ovh.com/fr/publiccloud/databases/postgresql/capabilities/)
+[PostgreSQL capabilities](/pages/platform/databases/postgresql_01_capabilities)
 
-[Getting started with Public Cloud Databases](https://docs.ovh.com/fr/publiccloud/databases/getting-started/)
+[Getting started with Public Cloud Databases](/pages/platform/databases/databases_01_order_control_panel)
 
 Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/postgresql) to find how to connect to your database with several languages.
 

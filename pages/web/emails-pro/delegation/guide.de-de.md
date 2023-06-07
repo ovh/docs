@@ -1,8 +1,5 @@
 ---
 title: 'Berechtigungen für einen E-Mail Account übertragen'
-slug: emailpro-delegation
-section: 'Erste Schritte'
-order: 5
 updated: 2020-10-24
 ---
 
@@ -23,4 +20,4 @@ Mit den Exchange und E-Mail Pro Dienstleistungen profitieren Sie von professione
 
 ## In der praktischen Anwendung
 
-Hier finden Sie unsere Anleitung [Berechtigungen für einen E-Mail Account übertragen](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2013_send_as_versand_als/) unter "Microsoft Collaborative Solutions".
+Hier finden Sie unsere Anleitung [Berechtigungen für einen E-Mail Account übertragen](/pages/web/microsoft-collaborative-solutions/feature_delegation) unter "Microsoft Collaborative Solutions".

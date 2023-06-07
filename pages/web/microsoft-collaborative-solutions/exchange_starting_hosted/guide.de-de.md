@@ -1,9 +1,6 @@
 ---
 title: 'Erste Schritte mit Hosted Exchange'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Hosted Exchange Dienst konfigurieren'
-slug: exchange_20132016_konfiguration_der_dienstleistung
-section: 'Erste Schritte mit Exchange'
-order: 01
 updated: 2023-03-06
 ---
 
@@ -94,7 +91,7 @@ In diesem Fenster können Sie einen **CNAME-Eintrag** zur DNS-Zone der Domain hi
 ![E-Mail](images/exchange-wizard06.png){.thumbnail .w-640}<br>
 Hier finden Sie die einzugebenden Werte für Ihre DNS Zone. Die **MX Einträge** entsprechen den Eingangsservern Ihrer E-Mails. Der **SRV-Eintrag** dient der automatischen Konfiguration Ihrer E-Mail-Accounts.
 
-Details zur Konfiguration Ihrer DNS-Zone für Ihren E-Mail-Dienst finden Sie auf der Seite "[MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen](https://docs.ovh.com/de/domains/webhosting_e-mail_mx-konfiguration_mit_dns_zone_von_ovh/)".
+Details zur Konfiguration Ihrer DNS-Zone für Ihren E-Mail-Dienst finden Sie auf der Seite "[MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen](/pages/web/domains/dns_zone_mx)".
 
 ### Zusätzliche Domainnamen hinzufügen (optional)
 
@@ -107,7 +104,7 @@ Wenn die erste Konfiguration Ihres Domainnamens abgeschlossen ist, können Sie �
 
 Um eine neue Domain hinzuzufügen, wählen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) den betreffenden Hosted Exchange Dienst aus und klicken Sie auf den Tab `Assoziierte Domains`{.action}. Die Tabelle zeigt die Domains an, die aktuell für Ihre Dienstleistung konfiguriert sind oder gerade eingerichtet werden. Um eine weitere Domain hinzuzufügen, klicken Sie auf den Button `Eine Domain hinzufügen`{.action} und folgen Sie dem Assistenten.
 
-Für weitere Informationen, lesen Sie bitte die Anleitung [Eine Domain zu Ihrem Exchange Dienst hinzufügen](https://docs.ovh.com/de/microsoft-collaborative-solutions/domain-zu-exchange-hinzufugen/).
+Für weitere Informationen, lesen Sie bitte die Anleitung [Eine Domain zu Ihrem Exchange Dienst hinzufügen](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain).
 
 > [!primary]
 >
@@ -133,13 +130,13 @@ Die Accounts, deren Konfiguration in Bearbeitung ist, werden in der Tabelle mit 
 
 ### E-Mail-Adressen verwenden
 
-Nachdem Sie Ihre Accounts fertig eingerichtet haben, können Sie diese nun verwenden. OVHcloud stellt hierzu die Webmail **Outlook Web Application** (OWA) zur Verfügung. Sie können sich über folgenden Link einloggen: [https://mail.ovh.net/de/](https://www.ovhcloud.com/de/mail/). Geben Sie hierzu die Zugangsdaten zu Ihrer E-Mail-Adresse ein. Weitere Anleitungen zur Verwendung von OWA finden Sie in unserer Dokumentation unter folgendem Link: [https://docs.ovh.com/de/microsoft-collaborative-solutions/](https://docs.ovh.com/de/microsoft-collaborative-solutions/).
+Nachdem Sie Ihre Accounts fertig eingerichtet haben, können Sie diese nun verwenden. OVHcloud stellt hierzu die Webmail **Outlook Web Application** (OWA) zur Verfügung. Sie können sich über folgenden Link einloggen: [https://mail.ovh.net/de/](https://www.ovhcloud.com/de/mail/). Geben Sie hierzu die Zugangsdaten zu Ihrer E-Mail-Adresse ein. Weitere Anleitungen zur Verwendung von OWA finden Sie in unserer Dokumentation unter folgendem Link: [https://docs.ovh.com/de/microsoft-collaborative-solutions/](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
-Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder auf einem Gerät (beispielsweise einem Smartphone oder einem Tablet) einrichten möchten, finden Sie die entsprechende Dokumentation unter [https://docs.ovh.com/de/microsoft-collaborative-solutions/](https://docs.ovh.com/de/microsoft-collaborative-solutions/). Vergewissern Sie sich, dass der E-Mail-Client mit Ihrer Dienstleistung kompatibel ist, damit Ihre Exchange Adresse optimal funktioniert.
+Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder auf einem Gerät (beispielsweise einem Smartphone oder einem Tablet) einrichten möchten, finden Sie die entsprechende Dokumentation unter [https://docs.ovh.com/de/microsoft-collaborative-solutions/](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Vergewissern Sie sich, dass der E-Mail-Client mit Ihrer Dienstleistung kompatibel ist, damit Ihre Exchange Adresse optimal funktioniert.
 
 OVHcloud bietet über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) optional Outlook-Lizenzen mit Ihrem Exchange E-Mail-Account an.
 
-Um eine Domain mit dieser Endung bestellen zu können, lesen Sie unsere Anleitung ["Eine Outlook-Lizenz für Exchange beziehen"](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange-outlook-lizenz/). 
+Um eine Domain mit dieser Endung bestellen zu können, lesen Sie unsere Anleitung ["Eine Outlook-Lizenz für Exchange beziehen"](/pages/web/microsoft-collaborative-solutions/office_outlook_license). 
 
 Sie können auch Office 365 Lizenzen auf der Seite [https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/](https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/) erhalten. Wir empfehlen Ihnen, eine dieser Lösungen zu verwenden, wenn Sie den Outlook E-Mail-Client oder weitere Software der Office Suite nutzen möchten.
 
@@ -155,20 +152,20 @@ Nun, da Ihr Hosted Exchange Dienst konfiguriert und funktionsfähig ist, können
 
 Um die verschiedenen Funktionen zu aktivieren, wählen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) den betreffenden Hosted Exchange Dienst aus und wählen Sie dann aus den Tabs, in denen die durchzuführende Aktion angezeigt wird.
 
-Weitere Anleitungen zu den Funktionen finden Sie in unserer Dokumentation unter [https://docs.ovh.com/de/microsoft-collaborative-solutions/](https://docs.ovh.com/de/microsoft-collaborative-solutions/).
+Weitere Anleitungen zu den Funktionen finden Sie in unserer Dokumentation unter [https://docs.ovh.com/de/microsoft-collaborative-solutions/](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
 ## Weiterführende Informationen
 
-[Kontaktgruppen erstellen](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_verwendung_der_gruppen_mailinglisten/)
+[Kontaktgruppen erstellen](/pages/web/microsoft-collaborative-solutions/feature_groups)
 
-[Freigegebenes Postfach erstellen und verwenden](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange-verwendung-freigegebene-accounts/)
+[Freigegebenes Postfach erstellen und verwenden](/pages/web/microsoft-collaborative-solutions/feature_shared_account)
 
-[Verwendung von Ressourcen-Accounts](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_verwendung_der_ressourcen-accounts/)
+[Verwendung von Ressourcen-Accounts](/pages/web/microsoft-collaborative-solutions/feature_resources)
 
-[Berechtigungen für einen E-Mail Account übertragen](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2013_send_as_versand_als/)
+[Berechtigungen für einen E-Mail Account übertragen](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Ordner in OWA freigeben](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2016_einen_ordner_via_owa_webmail_freigeben/)
+[Ordner in OWA freigeben](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
-[Die Abrechnung für Ihre Exchange Accounts verwalten](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange-abrechnung-verwalten/)
+[Die Abrechnung für Ihre Exchange Accounts verwalten](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

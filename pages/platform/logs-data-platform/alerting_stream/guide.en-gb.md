@@ -1,9 +1,6 @@
 ---
 title: Alerting - Configuring alerts on your streams
-slug: logs-data-platform-alerting
-order: 6
 excerpt: With the alerting feature you don't even need to watch your logs, our platform does it for you.
-section: Features
 updated: 2022-07-28
 ---
 

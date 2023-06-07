@@ -1,9 +1,6 @@
 ---
 title: 'Optimizar el rendimiento de su sitio web'
 excerpt: 'Cómo analizar la latencia de su sitio web y cómo mejorarla'
-slug: web_hosting_guia_de_optimizacion_del_rendimiento_de_un_sitio_web
-section: 'Optimización del sitio web'
-order: 06
 updated: 2022-02-03
 ---
 
@@ -66,9 +63,9 @@ Algunas variables del servidor se modifican con la utilización de PHP-FPM:
 |max_input_vars|2000|16 000|
 |memory_limit|128 M|512 M|
 
-Averigüe cómo actualizar el lenguaje PHP en [esta guía](../cambiar-version-php-en-alojamiento-web/){.external}.
+Averigüe cómo actualizar el lenguaje PHP en [esta guía](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014){.external}.
 
-Para cambiar al uso de PHP-FPM en la versión _estable_ o para obtener información sobre opciones más avanzadas de su hospedaje web, consulte [esta guía](../cambiar-version-php-en-alojamiento-web/){.external}.
+Para cambiar al uso de PHP-FPM en la versión _estable_ o para obtener información sobre opciones más avanzadas de su hospedaje web, consulte [esta guía](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014){.external}.
 
 El archivo _.ovhconfig_ opera en la raíz del paquete de hospedaje o en un subdirectorio de nivel 1 (p. ej.: _/www/_), pero no en directorios de nivel 2 o superior (p. ej.: _/www/test/_ y _/www/test/test2/_)
 
@@ -222,8 +219,8 @@ Evite usar la cláusula «HAVING», ya que puede lentificar las consultas. Tambi
 
 ## Más información
 
-[Modificar la configuración de un plan de hospedaje web](../cambiar_el_entorno_de_ejecucion_de_un_alojamiento/){.external}
+[Modificar la configuración de un plan de hospedaje web](/pages/web/hosting/ovhconfig_modify_system_runtime){.external}
 
-[Gestionar una base de datos en un paquete de hospedaje web](../gestion-de-una-base-de-datos-desde-un-alojamiento-compartido/){.external}
+[Gestionar una base de datos en un paquete de hospedaje web](/pages/web/hosting/sql_create_database){.external}
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

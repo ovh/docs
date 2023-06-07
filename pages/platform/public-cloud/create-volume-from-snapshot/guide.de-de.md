@@ -1,9 +1,6 @@
 ---
 title: Zusätzliche Festplatten aus einem Backup erstellen
-slug: create-volume-from-backup
 excerpt: Erfahren Sie hier, wie Sie zusätzliche Festplatten aus einem Volume Snapshot erzeugen
-section: Storage
-order: 4
 updated: 2021-04-06
 ---
 
@@ -68,7 +65,7 @@ Der Vorgang zur Anbindung der Festplatte an Ihre Instanz beginnt und kann einige
 Achten Sie darauf, den aktuell angezeigten Bereich des Kundencenters während der Festplattenbindung nicht zu verlassen. Der laufende Prozess könnte unterbrochen werden.
 >
 
-Sobald der Vorgang abgeschlossen ist, können Sie für die nächsten Schritte unsere Konfigurationsanleitung verwenden, für [Linux](../erstellen_zustzliche_festplatte_public_cloud/#unter-linux)- oder [Windows](../erstellen_zustzliche_festplatte_public_cloud/#unter-windows)-Instanzen.
+Sobald der Vorgang abgeschlossen ist, können Sie für die nächsten Schritte unsere Konfigurationsanleitung verwenden, für [Linux](../erstellen_zustzliche_festplatte_public_cloud/#unter-linux)- oder [Windows](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#unter-windows)-Instanzen.
 
 ## Weiterführende Informationen
 

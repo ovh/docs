@@ -1,9 +1,6 @@
 ---
 title: Apresentação da Área de Cliente Private Cloud OVHcloud
-slug: manager-ovh-private-cloud
 excerpt: Descubra as possibilidades da sua Área de Cliente Private Cloud
-section: Introdução
-order: 1
 updated: 2021-12-15
 ---
 
@@ -64,7 +61,7 @@ Nele também está indicada a próxima renovação do seu serviço Private Cloud
 
 ![Opções](images/controlpanel4.png){.thumbnail}
 
-Para mais informações sobre o cancelamento de um serviço Private Cloud, consulte [este guia](https://docs.ovh.com/gb/en/private-cloud/how-to-cancel-private-cloud/).
+Para mais informações sobre o cancelamento de um serviço Private Cloud, consulte [este guia](/pages/cloud/private-cloud/comment_resilier_le_private_cloud).
 
 #### Datacenters
 
@@ -168,7 +165,7 @@ Neste exemplo, se estiverem conectados 50 utilizadores e um 51.º se conectar, o
 
 Está disponível um segundo quadro relativamente à opção *VM encryption*.
 
-Encontrará mais informações sobre essa opção [neste guia](https://docs.ovh.com/gb/en/private-cloud/vm-encrypt/).
+Encontrará mais informações sobre essa opção [neste guia](/pages/cloud/private-cloud/vm_encrypt).
 
 #### Operações
 
@@ -250,7 +247,7 @@ O separador Backup permite-lhe ativar a solução `Veeam Backup`.
 
 ![Backup](images/controlpanel14.png){.thumbnail}
 
-Para mais informações acerca desta opção, consulte [este guia](https://docs.ovh.com/gb/en/private-cloud/veeam-backup-as-a-service/){.external}.
+Para mais informações acerca desta opção, consulte [este guia](/pages/cloud/private-cloud/veeam_backup_as_a_service){.external}.
 
 
 ## Quer saber mais?

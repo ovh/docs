@@ -1,9 +1,6 @@
 ---
 title: "Protecting your website's administration interface with a .htaccess file"
-slug: how_to_password_protect_a_directory_on_your_website
 excerpt: "Find out how to protect access to your website's administration with a .htaccess file"
-section: Rewriting and authentication
-order: 02
 updated: 2021-09-20
 ---
 
@@ -25,7 +22,7 @@ You may need to protect access to part of your website with login credentials. Y
 
 - An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/)
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
-- The [login details](../log-in-to-storage-ftp-web-hosting/#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
+- The [login details](/pages/web/hosting/ftp_connection#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
 
 ## Instructions
 
@@ -38,7 +35,7 @@ You may need to protect access to part of your website with login credentials. Y
 
 ### Step 1: Create the file path
 
-Log in to your [Web Hosting plan’s storage space](../log-in-to-storage-ftp-web-hosting/) and open your site's [root folder](../multisites-configuring-multiple-websites/#step-21-adding-an-ovhcloud-registered-domain).<br>
+Log in to your [Web Hosting plan’s storage space](../log-in-to-storage-ftp-web-hosting/) and open your site's [root folder](/pages/web/hosting/multisites_configure_multisite#step-21-adding-an-ovhcloud-registered-domain).<br>
 Create a file named "crypter.php".
 
 ![root_folder](images/root_folder.png){.thumbnail}
@@ -67,7 +64,7 @@ echo nl2br(`$string_1 \n $string_2 \n $string_3`);
  ?>
 ```
 
-If you have a [Professional](https://www.ovhcloud.com/en-au/web-hosting/professional-offer/) or [Performance](https://www.ovhcloud.com/en-au/web-hosting/performance-offer/) Web Hosting plan, log in to your hosting via [SSH](../web_hosting_ssh_on_web_hosting_packages/). Run the following command:
+If you have a [Professional](https://www.ovhcloud.com/en-au/web-hosting/professional-offer/) or [Performance](https://www.ovhcloud.com/en-au/web-hosting/performance-offer/) Web Hosting plan, log in to your hosting via [SSH](/pages/web/hosting/ssh_on_webhosting). Run the following command:
 
 ```bash
 php crypter.php
@@ -115,9 +112,9 @@ Require valid-user
 
 > [!warning]
 >
-> In this example, replace "your_login_ftp" with your [FTP username](../log-in-to-storage-ftp-web-hosting/#step-1-retrieve-your-login-information). In the `Hosting plans`{.action} section, you will find it in the `FTP-SSH`{.action} tab of the hosting plan concerned.
+> In this example, replace "your_login_ftp" with your [FTP username](/pages/web/hosting/ftp_connection#step-1-retrieve-your-login-information). In the `Hosting plans`{.action} section, you will find it in the `FTP-SSH`{.action} tab of the hosting plan concerned.
 >
-> In the example below, replace "root_folder" with the name of the [folder containing your site files](../multisites-configuring-multiple-websites/#step-21-adding-an-ovhcloud-registered-domain).
+> In the example below, replace "root_folder" with the name of the [folder containing your site files](/pages/web/hosting/multisites_configure_multisite#step-21-adding-an-ovhcloud-registered-domain).
 >
 
 #### Blocking access to one or more files
@@ -144,7 +141,7 @@ Require valid-user
 
 ## Go further <a name="gofurther"></a>
 
-[What else can you do with the .htaccess file?](../what_else_can_you_do_with_the_htaccess_file/)
+[What else can you do with the .htaccess file?](/pages/web/hosting/htaccess_what_else_can_you_do)
 
 For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
 

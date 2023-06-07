@@ -1,9 +1,6 @@
 ---
 title: "Utiliser l'accès SSH de son hébergement web"
-slug: mutualise-le-ssh-sur-les-hebergements-mutualises
 excerpt: "Apprenez à vous connecter et utiliser l'accès SSH de votre hébergement web OVHcloud"
-section: 'FTP et SSH'
-order: 07
 updated: 2022-01-19
 ---
 
@@ -107,12 +104,12 @@ Vous pouvez également lancer un script en utilisant une version spécifique de 
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-Selon la version de PHP que vous souhaitez utiliser, il se peut que l'environnement d'exécution nécessite d'être modifié pour des raisons de compatibilité. Reportez-vous à notre documentation « [Modifier la configuration de son hébergement web](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/) » pour en apprendre plus. 
+Selon la version de PHP que vous souhaitez utiliser, il se peut que l'environnement d'exécution nécessite d'être modifié pour des raisons de compatibilité. Reportez-vous à notre documentation « [Modifier la configuration de son hébergement web](/pages/web/hosting/ovhconfig_modify_system_runtime) » pour en apprendre plus. 
 
 ## Aller plus loin
 
-[Modifier la configuration de son hébergement web](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/).
+[Modifier la configuration de son hébergement web](/pages/web/hosting/ovhconfig_modify_system_runtime).
 
-[Configurer le fichier .ovhconfig de son hébergement web](../configurer-fichier-ovhconfig/).
+[Configurer le fichier .ovhconfig de son hébergement web](/pages/web/hosting/ovhconfig_configuration).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

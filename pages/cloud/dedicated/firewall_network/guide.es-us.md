@@ -1,8 +1,6 @@
 ---
 title: 'Configurar el firewall de red'
-slug: firewall-de-red
 excerpt: 'Cómo configurar el Network Firewall'
-section: 'Red e IP'
 updated: 2023-05-10
 ---
 
@@ -85,7 +83,7 @@ Es posible añadir hasta **20 reglas por IP**.
 
 > [!warning]
 > Tenga en cuenta que el Network Firewall de OVHcloud no puede utilizarse para abrir puertos en un servidor. Para abrir puertos en un servidor, debe utilizar el cortafuegos del sistema operativo instalado en el servidor.<br>
-> Para más información, consulte las siguientes guías: [Configurar el firewall de Windows](https://docs.ovh.com/us/es/dedicated/firewall-windows/) y [Configurar el firewall de Linux con iptables](https://docs.ovh.com/us/es/dedicated/firewall-iptables/).
+> Para más información, consulte las siguientes guías: [Configurar el firewall de Windows](/pages/cloud/dedicated/activate-port-firewall-soft-win) y [Configurar el firewall de Linux con iptables](/pages/cloud/dedicated/firewall-Linux-iptable).
 >
 
 Para añadir una regla, haga clic en el botón `Añadir una regla`{.action}.

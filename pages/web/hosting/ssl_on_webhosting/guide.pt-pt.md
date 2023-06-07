@@ -1,9 +1,6 @@
 ---
 title: 'Gerir um certificado SSL num alojamento web'
-slug: os-certificados-ssl-nos-alojamentos-web
 excerpt: 'Saiba como gerir um certificado SSL no alojamento web da OVHcloud'
-section: SSL
-order: 01
 updated: 2022-08-01
 ---
 
@@ -49,7 +46,7 @@ Neste caso, podem surgir três estados:
 
 |Estados|Descrição|
 |---|---|
-|Ativado|Um certificado SSL já foi ativado para este multisite. No entanto, se o seu website não estiver disponível em HTTPS, consulte as instruções indicadas no nosso manual “[Ativar o HTTPS num website com certificado SSL](../ativar-https-website-certificado-ssl/){.external}”.|
+|Ativado|Um certificado SSL já foi ativado para este multisite. No entanto, se o seu website não estiver disponível em HTTPS, consulte as instruções indicadas no nosso manual “[Ativar o HTTPS num website com certificado SSL](/pages/web/hosting/ssl-activate-https-website){.external}”.|
 |A gerar / atualizar|Um certificado SSL foi ativado para este multisite, mas ainda não está ativo a nível técnico. Para isso, deverá regenerá-lo para que inclua os novos domínios do multisite.|
 |Desativado|Não foi ativado nenhum certificado SSL para este multisite. Para o ativar, siga os passo abaixo.|
 
@@ -81,7 +78,7 @@ Antes de realizar esta configuração, certifique-se de que a etapa anterior de 
 > - Configure a zona DNS do domínio declarado em multi-site, a partir da rubrica `Domínio`{.action}, onglet `Zona DNS`{.action}. Altere ou adicione um registo de tipo `A` para a sua entrada multisite e indique o endereço IP do seu alojamento na `Alvo`.
 > ![managessl](images/manage-ssl-arecord02.png){.thumbnail}
 >
-> Para mais informações, consulte os nossos manuais [sobre a configuração de uma entrada multisite](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/) ou sobre [a configuração de uma zona DNS](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).
+> Para mais informações, consulte os nossos manuais [sobre a configuração de uma entrada multisite](/pages/web/hosting/multisites_configure_multisite) ou sobre [a configuração de uma zona DNS](/pages/web/domains/dns_zone_edit).
 
 O alojamento web da OVHcloud permite-lhe ativar um [certificado SSL graças a várias soluções](https://www.ovhcloud.com/pt/web-hosting/options/ssl/){.external}:
 

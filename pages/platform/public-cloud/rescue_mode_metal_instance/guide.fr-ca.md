@@ -1,9 +1,6 @@
 ---
 title: Passer une instance Metal en mode rescue
-slug: metal-instance-rescue-mode
 excerpt: 'Découvrez comment activer le mode rescue sur une instance Metal'
-section: Premiers pas
-order: 3
 hidden: true
 updated: 2023-01-04
 ---
@@ -18,19 +15,19 @@ Contrairement aux autres instances Public Cloud pour lesquelles le mode rescue p
 
 > [!primary]
 >
-> Ce guide s'applique uniquement aux instances Metal. Pour accéder au mode rescue pour tous les autres types d'instances, suivez [ce guide principal](https://docs.ovh.com/ca/fr/public-cloud/passer-une-instance-en-mode-rescue/).
+> Ce guide s'applique uniquement aux instances Metal. Pour accéder au mode rescue pour tous les autres types d'instances, suivez [ce guide principal](/pages/platform/public-cloud/put_an_instance_in_rescue_mode).
 
 ## Prérequis
 
 - Un [projet Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud.
-- Une [instance Metal Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/) dans votre projet.
+- Une [instance Metal Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps) dans votre projet.
 
 ## En pratique
 
 Avant toute chose, il est recommandé d'effectuer les opérations suivantes :
 
-- [Préparer l'environnement pour utiliser l'API OpenStack](https://docs.ovh.com/ca/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Charger les variables d'environnement OpenStack](https://docs.ovh.com/ca/fr/public-cloud/set-openstack-environment-variables/)
+- [Préparer l'environnement pour utiliser l'API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Charger les variables d'environnement OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ### Passer une instance Metal en mode rescue à l'aide de l'OpenStack CLI
 

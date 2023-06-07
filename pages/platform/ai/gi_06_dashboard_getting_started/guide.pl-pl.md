@@ -1,11 +1,8 @@
 ---
 title: AI Dashboard - Getting started
-slug: dashboard-getting-started
 excerpt: Learn how to use AI Dashboard
-section: General information
-order: 108
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/dashboard-getting-started/'
+    canonical: '/pages/platform/ai/gi_06_dashboard_getting_started'
 updated: 2023-03-15
 ---
 
@@ -39,10 +36,10 @@ The following chapters will help you to discover each section of the `AI Dashboa
 
 ![Dashboard tab](images/dashboard-02.png){.thumbnail}
 
-In this section, you will find information related to your use of the AI Tools with easy access to [AI Notebooks](https://docs.ovh.com/pl/publiccloud/ai/notebooks/definition/), [AI Training](https://docs.ovh.com/pl/publiccloud/ai/training/submit-job/) and [AI Deploy](https://docs.ovh.com/pl/publiccloud/ai/deploy/getting-started/).  
+In this section, you will find information related to your use of the AI Tools with easy access to [AI Notebooks](/pages/platform/ai/notebook_guide_introduction_definition), [AI Training](/pages/platform/ai/training_guide_02_howto_submit_job) and [AI Deploy](/pages/platform/ai/deploy_guide_02_getting_started).  
 Listed instances are the ones that are in `RUNNING` and `STOPPED` status.
 
-You can also easily access to your [Object Storage](https://docs.ovh.com/pl/storage/object-storage/).
+You can also easily access to your [Object Storage](/products/storage-object-storage).
 
 You can find more details on the prices of the AI tools [here](https://www.ovhcloud.com/pl/public-cloud/prices/#ai-&-machine-learning).
 
@@ -58,7 +55,7 @@ You can easily create new Public Cloud users with dedicated AI Tools roles (`AI 
 
 You can also manage tokens (create, update and delete) that you can then use with your notebooks, jobs or apps.
 
-To know how to manage your users and token, please read the following guide: [Manage AI users and roles](https://docs.ovh.com/pl/publiccloud/ai/users/).
+To know how to manage your users and token, please read the following guide: [Manage AI users and roles](/pages/platform/ai/gi_01_manage_users).
 
 ### Command Line Interface 
 

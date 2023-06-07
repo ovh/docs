@@ -1,11 +1,8 @@
 ---
 title: Technical capabilities
-slug: technical-capabilities
 routes:
-    canonical: 'https://docs.ovh.com/au/en/private-cloud/technical-capabilities/'
+    canonical: '/pages/cloud/private-cloud/hpc_limits'
 excerpt: 'Learn the technical capabilities and limitations of the OVHcloud Managed Bare Metal'
-section: FAQ
-order: 1
 updated: 2020-10-27
 ---
 

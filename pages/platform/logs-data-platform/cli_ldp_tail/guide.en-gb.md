@@ -1,9 +1,6 @@
 ---
 title: CLI - ldp-tail, a tool to follow your logs in real-time
-slug: logs-data-platform-ldp-tail
-order: 3
 excerpt: This super-powered tail will follow and format your logs with flying colors.
-section: Features
 updated: 2023-01-16
 ---
 

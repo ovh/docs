@@ -1,9 +1,6 @@
 ---
 title: 'Configurar la red en Windows Server con Hyper-V en las gamas High Grade & SCALE'
-slug: hiperv-network-hg-scale
 excerpt: 'Cómo configurar la red en Windows Server con Hyper-V en las gamas High Grade & SCALE'
-section: 'Uso avanzado'
-order: 5
 updated: 2021-11-15
 ---
 
@@ -180,7 +177,7 @@ Una vez que haya introducido todas las direcciones, haga clic en `Aceptar`{.acti
 
 > [!warning]
 >
-> Este paso puede provocar la pérdida de conexión. Si lo desea, conéctese utilizando el [IPMI](https://docs.ovh.com/us/es/dedicated/utilizar-ipmi-servidor-dedicado/) y vuelva a modificar la configuración. Comprobará que la puerta de enlace predeterminada ha vuelto al estado vacío. Añada la puerta de enlace 100.64.0.1.
+> Este paso puede provocar la pérdida de conexión. Si lo desea, conéctese utilizando el [IPMI](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers) y vuelva a modificar la configuración. Comprobará que la puerta de enlace predeterminada ha vuelto al estado vacío. Añada la puerta de enlace 100.64.0.1.
 >
 
 #### Añadir una ruta estática

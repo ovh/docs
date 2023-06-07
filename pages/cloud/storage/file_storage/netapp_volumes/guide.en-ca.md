@@ -1,9 +1,6 @@
 ---
 title: Enterprise File Storage - Managing volumes
-slug: netapp/volumes
 excerpt: Manage Enterprise File Storage volumes using the OVHcloud API
-section: Enterprise File Storage
-order: 040
 updated: 2021-10-27
 ---
 
@@ -151,7 +148,7 @@ The mount command will be different, depending on the protocol chosen for the vo
 
 > [!primary]
 >
-> For NFS, you can refer to [this guide](https://docs.ovh.com/ca/en/storage/file-storage/nas/nfs/).
+> For NFS, you can refer to [this guide](/pages/cloud/storage/file_storage/nas_nfs).
 >
 > Note that the retrieved mount path replaces IP_NAS/NFS_PATH in that documentation.
 >

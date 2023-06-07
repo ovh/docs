@@ -1,9 +1,6 @@
 ---
 title: 'Demander et suivre une portabilité de numéro'
-slug: demander-la-portabilite-de-mon-numero
 excerpt: "Apprenez à porter un ou plusieurs numéros chez OVHcloud et à suivre l'avancement du processus"
-section: 'Numéros ou alias'
-order: 1
 updated: 2023-01-23
 ---
 
@@ -27,7 +24,7 @@ La portabilité permet à un abonné de conserver son numéro de téléphone lor
 
 > [!warning]
 >
-> Si vous souhaitez porter un ou plusieurs numéros belges, nous vous invitons à consulter notre guide dédié « [Demander et suivre une portabilité de numéro belge](../portabilite-numero-belge) ».
+> Si vous souhaitez porter un ou plusieurs numéros belges, nous vous invitons à consulter notre guide dédié « [Demander et suivre une portabilité de numéro belge](/pages/telecom/voip/portabilite-numero-belge) ».
 >
 
 ### Étape 1 : préparer sa demande de portabilité
@@ -88,7 +85,7 @@ Vos choix faits, cliquez sur `Suivant`{.action}.
 
 La dernière étape consiste à finaliser votre demande de portabilité. Prenez connaissance des contrats liés à la portabilité et validez leur acceptation. Cliquez ensuite sur `Commander`{.action} et validez le bon de commande qui vous sera présenté. 
 
-Dès lors, pour suivre l'avancement de votre demande, reportez-vous aux informations de l'étape 3 « [Suivre une demande de portabilité](https://docs.ovh.com/fr/voip/demander-la-portabilite-de-mon-numero/#etape-3-suivre-une-demande-de-portabilite){.external} » de cette documentation. 
+Dès lors, pour suivre l'avancement de votre demande, reportez-vous aux informations de l'étape 3 « [Suivre une demande de portabilité](/pages/telecom/voip/demander_la_portabilite_de_mon_numero#etape-3-suivre-une-demande-de-portabilite){.external} » de cette documentation. 
 
 #### Porter une tranche de numéros <a name="tranche-numeros"></a>
 
@@ -137,7 +134,7 @@ Avant la validation manuelle du mandat par nos services techniques, vous pouvez,
 
 ![numberport](images/porting-number-step7-2.png){.thumbnail}
 
-Pour suivre l'avancement de votre demande de portabilité, reportez-vous aux informations décrites dans l'étape 3 « [Suivre une demande de portabilité](https://docs.ovh.com/fr/voip/demander-la-portabilite-de-mon-numero/#etape-3-suivre-une-demande-de-portabilite){.external} » de cette documentation.
+Pour suivre l'avancement de votre demande de portabilité, reportez-vous aux informations décrites dans l'étape 3 « [Suivre une demande de portabilité](/pages/telecom/voip/demander_la_portabilite_de_mon_numero#etape-3-suivre-une-demande-de-portabilite){.external} » de cette documentation.
 
 #### Porter un numéro spécial de Services à Valeur Ajoutée (SVA) <a name="numero-special"></a>
 
@@ -147,7 +144,7 @@ L'exploitation de numéros de Services à Valeur Ajoutée (SVA) nécessite d'êt
 Une fois le numéro spécial à porter renseigné (au format international) dans le champ prévu à cet effet, cliquez sur le bouton `Vérifier l'identité`{.action}. Vous serez alors redirigé vers la procédure de vérification d'identité.
 
 > [!primary]
-> Pour plus d'informations sur cette procédure, consultez notre guide « [Valider votre identité pour l'exploitation d'un numéro spécial SVA](https://docs.ovh.com/fr/voip/validation-identite-numeros-speciaux-sva) ».
+> Pour plus d'informations sur cette procédure, consultez notre guide « [Valider votre identité pour l'exploitation d'un numéro spécial SVA](/pages/telecom/voip/verification_identite_numeros_sva) ».
 >
 
 ### Étape 3 : suivre une demande de portabilité
@@ -193,7 +190,7 @@ Vous trouverez ci-dessous un récapitulatif des différentes étapes du **proces
 
 Vous avez la possibilité de préparer la configuration du ou des numéros portés 48 heures avant que celle-ci soit effective. Ceci peut vous permettre de limiter, voire d'éviter, une coupure de service lors de votre changement d'opérateur pour OVHcloud.
 
-Pour cela, et selon la configuration que vous souhaitez mettre en place sur vos numéros, reportez-vous aux instructions décrites dans notre documentation « [Choisir et appliquer une configuration pour un numéro alias](../quelle-configuration-est-adaptee-a-mes-besoins/) ».
+Pour cela, et selon la configuration que vous souhaitez mettre en place sur vos numéros, reportez-vous aux instructions décrites dans notre documentation « [Choisir et appliquer une configuration pour un numéro alias](/pages/telecom/voip/quelle_configuration_est_adaptee_a_mes_besoins) ».
 
 ## Aller plus loin
 

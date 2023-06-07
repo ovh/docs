@@ -1,9 +1,6 @@
 ---
 title: "Instalar o seu website com um 'módulo 1 clique' (CMS)"
-slug: partilhado_guias_dos_modulos_dos_alojamentos_partilhados
 excerpt: "Descubra como instalar o seu website através dos nossos 'módulos 1 clique'"
-section: CMS
-order: 01
 updated: 2023-03-30
 ---
 
@@ -25,10 +22,10 @@ Os "módulos 1 clique" permitem a instalação fácil e rápida de um website (s
 
 - Dispor de um serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que inclua pelo menos uma base de dados.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Utilizar [uma versão de PHP compatível](https://docs.ovh.com/pt/hosting/configurar_o_php_num_alojamento_web_alojamentos_2014_ovh/) no seu alojamento web.
-- Ter [configurado corretamente o seu ficheiro .ovhconfig](https://docs.ovh.com/pt/hosting/configurar-ficheiro-ovhconfig/).
+- Utilizar [uma versão de PHP compatível](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014) no seu alojamento web.
+- Ter [configurado corretamente o seu ficheiro .ovhconfig](/pages/web/hosting/ovhconfig_configuration).
 - O diretório (pasta raiz) onde será instalado o seu "módulo 1 clique" deve estar vazio ou atualmente inexistente.
-- O domínio (com subdomínio se desejar) que será utilizado no seu website deve ser declarado como [Multi-site](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web//) no seu alojamento web da OVHcloud.
+- O domínio (com subdomínio se desejar) que será utilizado no seu website deve ser declarado como [Multi-site](/pages/web/hosting/multisites_configure_multisite/) no seu alojamento web da OVHcloud.
 
 ## Instruções
 
@@ -61,7 +58,7 @@ Na nova janela, selecione o CMS desejado e selecione o domínio com o qual desej
 
 ![Escolher módulo](images/add_a_module.png){.thumbnail}
 
-Se o seu domínio não está na lista, aceda ao separador `Multisite`{.action} para o adicionar. Consulte o nosso manual [Como partilhar o meu alojamento web com vários sites](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/), se necessário.
+Se o seu domínio não está na lista, aceda ao separador `Multisite`{.action} para o adicionar. Consulte o nosso manual [Como partilhar o meu alojamento web com vários sites](/pages/web/hosting/multisites_configure_multisite), se necessário.
 
 Depois de adicionar o domínio corretamente, tente novamente adicionar um "módulo 1 clique".
 
@@ -104,8 +101,8 @@ Insira as informações de ligação à sua base de dados.
 -Existem várias possibilidades:
 
 - A base de dados já está criada no seu alojamento web: selecione-a no menu pendente `Selecione uma base de dados`{.action} e introduza as informações solicitadas.
-- A base de dados ainda não está criada no seu alojamento web: [crie a sua base de dados incluída com o seu alojamento](https://docs.ovh.com/pt/hosting/criar-base-de-dados/), de seguida, volte ao menu desvio `Selecione uma base de dados`{.action} e depois complete as informações pedidas.
-- A base de dados está [criada na instância Web Cloud Databases](https://docs.ovh.com/pt/clouddb/criar-bases-de-dados-e-utilizadores//): no menu pendente `Selecione uma base de dados`{.action}, selecione a `Base de dados externa ap seu alojamento web`{.action} e introduza as informações solicitadas. A instância e o alojamento web devem estar alojados no mesmo datacenter.
+- A base de dados ainda não está criada no seu alojamento web: [crie a sua base de dados incluída com o seu alojamento](/pages/web/hosting/sql_create_database), de seguida, volte ao menu desvio `Selecione uma base de dados`{.action} e depois complete as informações pedidas.
+- A base de dados está [criada na instância Web Cloud Databases](/pages/web/clouddb/create-db-and-user-on-db-server/): no menu pendente `Selecione uma base de dados`{.action}, selecione a `Base de dados externa ap seu alojamento web`{.action} e introduza as informações solicitadas. A instância e o alojamento web devem estar alojados no mesmo datacenter.
 - A base de dados é criada noutro alojamento Web da OVHcloud: no menu pendente `Selecione uma base de dados`{.action}, selecione a `Base de dados externa ap seu alojamento web`{.action} e introduza as informações solicitadas. A base de dados e o alojamento web devem estar alojados no mesmo datacenter.
 
 As restantes informações solicitadas para a base de dados são as seguintes:
@@ -121,10 +118,10 @@ As restantes informações solicitadas para a base de dados são as seguintes:
 
 - *Nome da base de dados* : este nome foi definido durante a criação da base de dados na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
-- *Porta*: coloque sistematicamente o número **3306** (porta predefinida) para uma base de dados incluída no seu alojamento web. Para uma base presente numa instância Web Cloud Databases, consulte [este guia](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/).
+- *Porta*: coloque sistematicamente o número **3306** (porta predefinida) para uma base de dados incluída no seu alojamento web. Para uma base presente numa instância Web Cloud Databases, consulte [este guia](/pages/web/clouddb/starting_with_clouddb).
 
 - *Nome do utilizador*: é idêntico ao nome da base de dados se utiliza uma base de dados incluída no seu alojamento web.
-Para as bases de dados criadas numa oferta Web Cloud Databases, consulte as informações indicadas no [presente guia](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/).
+Para as bases de dados criadas numa oferta Web Cloud Databases, consulte as informações indicadas no [presente guia](/pages/web/clouddb/starting_with_clouddb).
 
 - *Palavra-passe*: foi-lhe enviado por e-mail aquando da criação da base de dados. É possível que a tenha modificado entretanto.
 
@@ -134,9 +131,9 @@ Depois de preencher as informações, clique no botão `Seguinte`{.action}.
 >
 > Se as informações que indica estiverem incorretas, a instalação não chegará ao seu termo. Para evitar esta falha, sugerimos que teste a ligação à sua base de dados.
 > 
-> Para obter as credenciais de acesso à base de dados incluída no alojamento web, consulte [este guia](https://docs.ovh.com/pt/hosting/criar-base-de-dados/).
+> Para obter as credenciais de acesso à base de dados incluída no alojamento web, consulte [este guia](/pages/web/hosting/sql_create_database).
 >
-> Para obter os dados de acesso à sua base de dados criada numa instância Web Cloud Databases, consulte [este guia](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/).
+> Para obter os dados de acesso à sua base de dados criada numa instância Web Cloud Databases, consulte [este guia](/pages/web/clouddb/starting_with_clouddb).
 >
 
 ##### Configurar o módulo
@@ -145,7 +142,7 @@ Introduza as seguintes informações para a configuração do módulo:
 
 - *nome ou e-mail do administrador:* identificador que irá utilizar para aceder à interface de gestão do seu CMS (Back Office).
 - *palavra-passe:* palavra-passe usada para aceder à interface de gestão do CMS.
-- *domínio:* domínio com o qual deseja instalar o seu CMS. Se necessário, consulte o nosso manual [Como partilhar o meu alojamento web com vários sites](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/).
+- *domínio:* domínio com o qual deseja instalar o seu CMS. Se necessário, consulte o nosso manual [Como partilhar o meu alojamento web com vários sites](/pages/web/hosting/multisites_configure_multisite).
 - *Linguagem:* língua na qual o CMS será instalado.
 - *caminho de instalação:* este é automaticamente indicado ao selecionar o domínio. Pode completá-lo introduzindo sub-diretórios (para os utilizadores mais experientes).
 
@@ -188,15 +185,15 @@ Para mais informações, contacte o editor do CMS que instalou. Encontrará junt
 
 [Escolher um CMS para criar um *site*](https://www.ovhcloud.com/pt/web-hosting/uc-cms-comparison/){.external}.
 
-[Como usar o meu alojamento com vários sites](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/){.external} (versão PT disponível em breve).
+[Como usar o meu alojamento com vários sites](/pages/web/hosting/multisites_configure_multisite){.external} (versão PT disponível em breve).
 
-[Gestão de uma base de dados a partir de um alojamento partilhado](https://docs.ovh.com/pt/hosting/gestao-de-uma-base-de-dados-a-partir-de-um-alojamento-partilhado-ovh/){.external}
+[Gestão de uma base de dados a partir de um alojamento partilhado](/pages/web/hosting/sql_create_database){.external}
 
 Veja a nossa [oferta Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/){.external}
 
-[Gerir o CMS](https://docs.ovh.com/pt/hosting/1-click-module-management/)
+[Gerir o CMS](/pages/web/hosting/cms_manage_1_click_module)
 
-[Desinstalar o seu CMS](https://docs.ovh.com/pt/hosting/1-click-module-management/#etapa-3-eliminar-o-modulo)
+[Desinstalar o seu CMS](/pages/web/hosting/cms_manage_1_click_module#etapa-3-eliminar-o-modulo)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 

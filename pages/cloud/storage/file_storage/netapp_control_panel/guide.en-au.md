@@ -1,9 +1,6 @@
 ---
 title: Managing Enterprise File Storage from the OVHcloud Control Panel
 excerpt: Find out how to manage your Enterprise File Storage service in the OVHcloud Control Panel
-slug: netapp/control-panel
-section: Enterprise File Storage
-order: 020
 updated: 2022-04-14
 ---
 
@@ -11,7 +8,7 @@ updated: 2022-04-14
 
 ## Objective
 
-Enterprise File Storage services can be managed [via the OVHcloud API](https://docs.ovh.com/au/en/storage/file-storage/netapp/quick-start/) or in the OVHcloud Control Panel.
+Enterprise File Storage services can be managed [via the OVHcloud API](/pages/cloud/storage/file_storage/netapp_quick_start) or in the OVHcloud Control Panel.
 
 **This guide explains how to manage Enterprise File Storage volumes and snapshots in the OVHcloud Control Panel.**
 
@@ -29,7 +26,7 @@ Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomana
 The `General information`{.action} tab displays some technical information, general subscription details and a shortcut to [create a volume](#create_volume).
 
 > [!primary]
-> Please visit the [concepts page](https://docs.ovh.com/au/en/storage/file-storage/netapp/concepts/) for detailed information on the technical properties of Enterprise File Storage.
+> Please visit the [concepts page](/pages/cloud/storage/file_storage/netapp_concepts) for detailed information on the technical properties of Enterprise File Storage.
 >
 
 ### Managing volumes <a name="manage_volume"></a>
@@ -143,12 +140,12 @@ If you are new to using Enterprise File Storage, you can follow this sequence of
 
 ## Go further <a name="gofurther"></a>
 
-[API Quickstart](https://docs.ovh.com/au/en/storage/file-storage/netapp/quick-start/)
+[API Quickstart](/pages/cloud/storage/file_storage/netapp_quick_start)
 
-[Managing volumes via API](https://docs.ovh.com/au/en/storage/file-storage/netapp/volumes/)
+[Managing volumes via API](/pages/cloud/storage/file_storage/netapp_volumes)
 
-[Managing volume ACLs via API](https://docs.ovh.com/au/en/storage/file-storage/netapp/volume-acl/)
+[Managing volume ACLs via API](/pages/cloud/storage/file_storage/netapp_volume_acl)
 
-[Managing volume snapshots via API](https://docs.ovh.com/au/en/storage/file-storage/netapp/volume-snapshots/)
+[Managing volume snapshots via API](/pages/cloud/storage/file_storage/netapp_volume_snapshots)
 
 Join our community of users on <https://community.ovh.com/en/>.

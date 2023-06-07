@@ -1,8 +1,6 @@
 ---
 title: 'Sostituire un disco a caldo su un server con RAID Software'
-slug: hotswap-raid-soft
 excerpt: 'Come sostituire un disco senza interruzione di servizio sul tuo server con RAID Software'
-section: 'RAID e dischi'
 updated: 2016-11-21
 ---
 
@@ -204,11 +202,11 @@ Una volta completata l’operazione, verifica nuovamente lo stato del RAID.
 ```sh
 root@ns3054662:/home# cat /proc/mdstat
 >>> Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty]
->>> md2 : active raid1 sda2[0] sdb2[1](F)
+>>> md2 : active raid1 sda2[0] sdb2[1](/pages/cloud/dedicated/hotswap_raid_softF)
 >>>       3885385728 blocks super 1.2 [2/1] [U_]
 >>>       bitmap: 0/29 pages [0KB], 65536KB chunk
 
->>> md1 : active raid1 sdb1[2](F) sda1[0]
+>>> md1 : active raid1 sdb1[2](/pages/cloud/dedicated/hotswap_raid_softF) sda1[0]
 >>>       20971456 blocks [2/1] [U_]
 
 >>> unused devices: <none>
@@ -241,7 +239,7 @@ root@ns3054662:/home# cat /proc/mdstat
 >>> unused devices: <none>
 ```
 
-A questo punto il disco malfunzionante è pronto per essere sostituito da un tecnico nel datacenter e, a intervento ultimato, non resta che risincronizzare il RAID. Per effettuare questa operazione, consulta la guida [Configurare un RAID software](https://docs.ovh.com/it/dedicated/raid-software/){.external}.
+A questo punto il disco malfunzionante è pronto per essere sostituito da un tecnico nel datacenter e, a intervento ultimato, non resta che risincronizzare il RAID. Per effettuare questa operazione, consulta la guida [Configurare un RAID software](/pages/cloud/dedicated/raid_soft){.external}.
 
 ### Con Windows
 
@@ -293,7 +291,7 @@ Per disattivare la spia lampeggiante del disco, esegui il comando precedente sos
 
 Questa operazione può essere effettuata dall’interfaccia **Gestione disco** del server Windows.
 
-A questo punto il disco malfunzionante è pronto per essere sostituito da un tecnico nel datacenter e, a intervento ultimato, non resta che risincronizzare il RAID. Per effettuare questa operazione, consulta la guida [Configurare un RAID software](https://docs.ovh.com/it/dedicated/raid-software/){.external}.
+A questo punto il disco malfunzionante è pronto per essere sostituito da un tecnico nel datacenter e, a intervento ultimato, non resta che risincronizzare il RAID. Per effettuare questa operazione, consulta la guida [Configurare un RAID software](/pages/cloud/dedicated/raid_soft){.external}.
 
 ## Per saperne di più
 

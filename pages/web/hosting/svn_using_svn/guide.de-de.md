@@ -1,9 +1,6 @@
 ---
 title: SVN verwenden
-slug: webhosting_verwendung_von_svn
 excerpt: So verwenden Sie SVN via SSH auf Ihrem Webhosting
-section: FTP und SSH
-order: 09
 updated: 2021-01-06
 ---
 
@@ -29,7 +26,7 @@ SVN, die Abkürzung für "Subversion", ist ein Versionsverwaltungssystem.
 ## Voraussetzungen
 
 - Sie verfügen über ein [Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/) mit SSH (**ab dem Pro Angebot**).
-- Sie können sich über SSH mit Ihrem Webhosting verbinden (vgl. unsere Anleitung [SSH-Zugang Ihres Webhostings verwenden](../webhosting_ssh_auf_ihren_webhostings/)).
+- Sie können sich über SSH mit Ihrem Webhosting verbinden (vgl. unsere Anleitung [SSH-Zugang Ihres Webhostings verwenden](/pages/web/hosting/ssh_on_webhosting)).
 
 ## In der praktischen Anwendung
 
@@ -61,7 +58,7 @@ Sie sollten die Verzeichnisse wie unten dargestellt erhalten:
 
 Bevor Sie fortfahren, erstellen Sie ein SSH-Schlüsselpaar von dem Desktop aus, den Sie für die Verbindung mit dem SVN-Repository verwenden.
 
-Um ein Schlüsselpaar zu erstellen, folgen Sie unserer Anleitung zur [SSH-Schlüsselerstellung](../../public-cloud/create-ssh-keys/). Sie können hierbei den Schritt zum Import Ihres SSH Schlüssels ins OVHcloud Kundencenter ignorieren.
+Um ein Schlüsselpaar zu erstellen, folgen Sie unserer Anleitung zur [SSH-Schlüsselerstellung](/pages/platform/public-cloud/public-cloud-first-steps#schritt-1-ssh-schlussel-erstellen/). Sie können hierbei den Schritt zum Import Ihres SSH Schlüssels ins OVHcloud Kundencenter ignorieren.
 
 ### Öffentlichen Schlüssel zum Hosting hinzufügen
 
@@ -84,7 +81,7 @@ command="/usr/bin/svnserve --root=/homez.XXX/loginFTP/svn --tunnel --tunnel-user
 > Ersetzen Sie "/home.XXX/LoginFTP" und "john" mit Ihren SSH-Zugangsdaten.
 > Um die zu verwendenden Zahlen in "/home.XXX/LoginFTP"zu erfahren, geben Sie den Befehl "pwd" in der Kommandozeile ein.
 >
-> Weitere Informationen finden Sie in unserer Anleitung [SSH-Zugang Ihres Webhostings verwenden](../webhosting_ssh_auf_ihren_webhostings/){.external}.
+> Weitere Informationen finden Sie in unserer Anleitung [SSH-Zugang Ihres Webhostings verwenden](/pages/web/hosting/ssh_on_webhosting){.external}.
 > 
 
 ![Hosting](images/3080.png){.thumbnail}
@@ -145,6 +142,6 @@ svn+ssh://login@ftp.ftp.name-of-site.tld/home.XXX/login/svn/depot_test
 
 ## Weiterführende Informationen
 
-[SSH-Zugang Ihres Webhostings verwenden](../webhosting_ssh_auf_ihren_webhostings/){.external}
+[SSH-Zugang Ihres Webhostings verwenden](/pages/web/hosting/ssh_on_webhosting){.external}
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: Cassandra - Capabilities and Limitations
-slug: cassandra/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Cassandra
-section: Cassandra - Guides
-order: 010
 updated: 2023-04-14
 ---
 
@@ -126,7 +123,7 @@ We try hard to avoid "disk full" situations that could be harmful to cluster hea
 1. When reaching a concerning level of disk usage, a warning email is sent.
 2. When reaching a concerning level of disk usage, the service is moved in the "DISK_FULL" state, and "read-only" mode, meaning no more writes can be done.
 
-See the [Handling «Disk Full» situations documentation](https://docs.ovh.com/au/en/publiccloud/databases/handling-disk-full/) for more information.
+See the [Handling «Disk Full» situations documentation](/products/public-cloud-databases-handling-disk-full) for more information.
 
 ### Features
 
@@ -147,11 +144,11 @@ Once your service is up and running, you will be able to specify IP addresses (o
 
 #### Advanced parameters
 
-You can further customise your Cassandra by using advanced parameters. See the [Advanced parameters references documentation](https://docs.ovh.com/au/en/publiccloud/databases/cassandra/advanced-parameters-references/) for more information on the supported parameters.
+You can further customise your Cassandra by using advanced parameters. See the [Advanced parameters references documentation](/pages/platform/databases/cassandra_03_advanced_parameters_references) for more information on the supported parameters.
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your Cassandra logs in Opensearch and metrics in Grafana (metrics have to be exported first in a time series compatible engine such as PostgreSQL or M3db). See the [Cross Service Integration documentation](https://docs.ovh.com/au/en/publiccloud/databases/cross-service-integration/) for more information.
+Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your Cassandra logs in Opensearch and metrics in Grafana (metrics have to be exported first in a time series compatible engine such as PostgreSQL or M3db). See the [Cross Service Integration documentation](/pages/platform/databases/databases_07_cross_service_integration) for more information.
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month

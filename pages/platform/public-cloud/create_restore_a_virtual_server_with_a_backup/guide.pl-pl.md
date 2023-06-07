@@ -1,9 +1,7 @@
 ---
 title: 'Tworzenie / przywracanie serwera wirtualnego na podstawie kopii zapasowej'
 excerpt: 'Dowiedz się, jak utworzyć lub przywrócić kopię zapasową instancji'
-slug: tworzenie_przywracanie_serwera_wirtualnego_na_podstawie_kopii_zapasowej
 legacy_guide_number: g1882
-section: 'Zarządzanie w Panelu klienta OVH'
 updated: 2021-03-19
 ---
 
@@ -15,7 +13,7 @@ updated: 2021-03-19
 
 ## Wprowadzenie
 
-Panel klienta OVHcloud pozwala na tworzenie [kopii zapasowych instancji](../kopia_zapasowa_instancji/) za pomocą kilku kliknięć i zautomatyzowanie tego procesu.
+Panel klienta OVHcloud pozwala na tworzenie [kopii zapasowych instancji](/pages/platform/public-cloud/save_an_instance) za pomocą kilku kliknięć i zautomatyzowanie tego procesu.
 Może zajść konieczność przywrócenia instancji z kopii zapasowej, np. w przypadku błędu podczas konfigurowania Twojej instancji. Kopie zapasowe instancji mogą być używane z dwóch powodów:
 
 - Utwórz instancję na podstawie kopii zapasowej, aby duplikować oryginalną instancję. Na przykład, jeśli skonfigurujesz infrastrukturę równoważenia obciążenia (load balancing).
@@ -25,7 +23,7 @@ Może zajść konieczność przywrócenia instancji z kopii zapasowej, np. w prz
 
 ## Wymagania początkowe
 
-- Posiadanie kopii zapasowej instancji Public Cloud. Należy zapoznać się w tym celu z [instrukcją tworzenia kopii zapasowej](../kopia_zapasowa_instancji/).
+- Posiadanie kopii zapasowej instancji Public Cloud. Należy zapoznać się w tym celu z [instrukcją tworzenia kopii zapasowej](/pages/platform/public-cloud/save_an_instance).
 - Dostęp do [Panelu klienta OVHcloud]( https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
@@ -52,11 +50,11 @@ Niektóre elementy są wstępnie określone:
 
 Zdefiniuj nazwę nowej instancji, klucz SSH, vRack i okres rozliczeniowy, następnie kliknij przycisk `Utwórz instancję`{.action}.
 
-Aby uzyskać więcej informacji na temat tworzenia instancji, zapoznaj się z [tym przewodnikiem](../tworzenie_instancji_w_panelu_klienta_ovh/).
+Aby uzyskać więcej informacji na temat tworzenia instancji, zapoznaj się z [tym przewodnikiem](/pages/platform/public-cloud/public-cloud-first-steps#krok-3-tworzenie-instancji/).
 
 > [!primary]
 >
-> Aby utworzyć instancję w innym centrum danych niż lokalizacja kopii zapasowej, konieczne będzie jej przeniesienie do odpowiedniej strefy. Aby to zrobić, należy postępować zgodnie z [instrukcją przenoszenia instancji do innego centrum danych](../przenoszenie_kopii_zapasowych_pomiedzy_centrami_danych/).
+> Aby utworzyć instancję w innym centrum danych niż lokalizacja kopii zapasowej, konieczne będzie jej przeniesienie do odpowiedniej strefy. Aby to zrobić, należy postępować zgodnie z [instrukcją przenoszenia instancji do innego centrum danych](/pages/platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another).
 >
 
 ### Przywracanie instancji z kopii zapasowej
@@ -89,8 +87,8 @@ Instancja będzie miała status `Reinstalacja` do czasu zakończenia procesu. Mo
 
 ## Sprawdź również
 
-[Tworzenie i logowanie do pierwszej instancji Public Cloud](../rozpoczecie_pracy_z_instancja_public_cloud/)
+[Tworzenie i logowanie do pierwszej instancji Public Cloud](/pages/platform/public-cloud/first_steps_with_public_cloud_instance)
 
-[Tworzenie kopii zapasowej instancji](../kopia_zapasowa_instancji/)
+[Tworzenie kopii zapasowej instancji](/pages/platform/public-cloud/save_an_instance)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>

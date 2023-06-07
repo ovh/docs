@@ -1,9 +1,6 @@
 ---
 title: Empezar con PostgreSQL
-slug: empezar-con-postgresql
 excerpt: Como utilizar las bases de datos
-section: Primeros pasos
-order: 03
 updated: 2023-02-15
 ---
 
@@ -18,7 +15,7 @@ updated: 2023-02-15
 Para seguir los pasos de esta guía, es necesario:
 
 - tener una instancia Web Cloud Databases;
-- haber consultado [esta guía](../empezar-con-clouddb/).
+- haber consultado [esta guía](/pages/web/clouddb/starting_with_clouddb).
 
 
 ### Que es una base de datos PostgreSQL
@@ -47,7 +44,7 @@ Para conectarse a ella, es necesario disponer de la siguiente información relat
 
 Puede encontrar todos estos datos en el [área de cliente Web](https://www.ovh.com/manager/web/){.external}.
 
-Para más información, puede consultar la guía [Primeros pasos con el servicio Cloud Databases](../starting_with_clouddb/guide.es-es.md){.ref}
+Para más información, puede consultar la guía [Primeros pasos con el servicio Cloud Databases](/us/es/clouddb/starting_with_clouddb/guide.es-es.md){.ref}
 
 
 ### Conexion en linea de comandos

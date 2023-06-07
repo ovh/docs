@@ -1,9 +1,7 @@
 ---
 title: Zmiana rozmiaru instancji
 excerpt: Jak zmienić rozmiar instancji w interfejsie Horizon.
-slug: zmiana_rozmiaru_instancji
 legacy_guide_number: g1778
-section: Zarządzanie w interfejsie Horizon
 updated: 2021-11-22
 ---
 
@@ -32,8 +30,8 @@ Jeśli Twoja działalność się rozwija i zapotrzebowanie na zasoby wzrasta, mo
 
 ## Wymagania początkowe
 
-- Utworzenie [instancji Public Cloud](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud
-- [Dostęp do interfejsu Horizon](../horizon/)
+- Utworzenie [instancji Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud
+- [Dostęp do interfejsu Horizon](/pages/platform/public-cloud/introducing_horizon)
 
 ## W praktyce
 

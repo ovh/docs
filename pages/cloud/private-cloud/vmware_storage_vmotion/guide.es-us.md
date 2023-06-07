@@ -1,9 +1,6 @@
 ---
 title: VMware Storage VMotion
 excerpt: Cómo migrar en caliente una máquina virtual a un host diferente
-slug: vmware_storage_vmotion
-section: Funcionalidades de VMware vSphere
-order: 05
 updated: 2020-07-10
 ---
 
@@ -29,7 +26,7 @@ Puede elegir entre diversas opciones de **vMotion**. En nuestro ejemplo, solo qu
 
 La opción `Change compute resource only`{.action} permite migrar la máquina virtual hacia otro host.  
 
-Para más información sobre la operación **vMotion**, consulte nuestra [guía](../vmware-vmotion-new/).
+Para más información sobre la operación **vMotion**, consulte nuestra [guía](/pages/cloud/private-cloud/vmware_vmotion_new).
 
 ![Selección de vMotion](images/VmotionStorage2.png){.thumbnail}
 
@@ -39,7 +36,7 @@ También puede elegir hacia qué almacenamiento desea migrar los datos.
 
 Asimismo, es posible modificar la política de almacenamiento durante esta operación.
 
-De este modo, si dispone de un [almacenamiento vSAN](../vmware-vsan/) o de la opción [VM encryption](https://docs.ovh.com/gb/en/private-cloud/vm-encrypt/), podrá aplicar las políticas de almacenamiento creadas.
+De este modo, si dispone de un [almacenamiento vSAN](../vmware-vsan/) o de la opción [VM encryption](/pages/cloud/private-cloud/vm_encrypt), podrá aplicar las políticas de almacenamiento creadas.
 
 ![Selección del datastore](images/VmotionStorage3.png){.thumbnail}
 

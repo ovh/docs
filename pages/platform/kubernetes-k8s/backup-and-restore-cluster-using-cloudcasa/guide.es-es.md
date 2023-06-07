@@ -1,11 +1,8 @@
 ---
 title: Backing-up an OVHcloud Managed Kubernetes cluster using CloudCasa
 excerpt: Find out how to back-up an OVHcloud Managed Kubernetes cluster using CloudCasa
-slug: backup-and-restore-cluster-using-cloudcasa
-section: 'Backup and Restore'
-order: 02
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/backup-and-restore-cluster-using-cloudcasa/'
+    canonical: '/pages/platform/kubernetes-k8s/backup-and-restore-cluster-using-cloudcasa'
 updated: 2022-10-31
 ---
 
@@ -21,8 +18,7 @@ updated: 2022-10-31
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -52,7 +48,7 @@ Setup and configuration of CloudCasa for your OVHcloud Managed Kubernetes cluste
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-hello-world) documentation.
 
 The kubectl tool must be installed and configured.
 You will need cluster administrative access to install the CloudCasa agent on your cluster. While registering your cluster in the user interface (UI), each cluster will be given a unique YAML file to be applied to your cluster.

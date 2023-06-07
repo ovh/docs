@@ -1,9 +1,6 @@
 ---
 title: 'CNAME-Eintrag zu einer assoziierten Domain hinzufügen'
 excerpt: 'Hier erfahren Sie, wozu ein CNAME-Eintrag notwendig ist und wie Sie diesen bei OVHcloud hinzufügen'
-slug: exchange_20132016_einen_cname_eintrag_hinzufugen
-section: 'Erste Schritte mit Exchange'
-order: 05
 updated: 2019-03-26
 ---
 

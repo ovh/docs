@@ -1,9 +1,6 @@
 ---
 title: 'Premiers pas avec les e-mails de votre hébergement web'
-slug: generalites-sur-les-emails-mutualises
 excerpt: 'Découvrez comment bien débuter avec les e-mails de votre hébergement web'
-section: 'Premiers pas'
-order: 01
 updated: 2021-07-19
 ---
 
@@ -67,13 +64,13 @@ Une fois vos adresses e-mail créées, il ne vous reste plus qu’à les utilise
 
 Accédez à la page « [Connexion au webmail](https://www.ovh.com/ca/fr/mail/){.external} », puis renseignez l'adresse e-mail concernée ainsi que son mot de passe. Cliquez ensuite sur le bouton `Connexion`{.action}.
 
-Lors d'une première connexion au webmail, vous êtes invité à définir la langue de l'interface ainsi que le fuseau horaire sur lequel vous vous trouvez. Votre boîte de réception s'affiche ensuite. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail OWA, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail Outlook Web Access (OWA)](../utilisation-owa/){.external} ».
+Lors d'une première connexion au webmail, vous êtes invité à définir la langue de l'interface ainsi que le fuseau horaire sur lequel vous vous trouvez. Votre boîte de réception s'affiche ensuite. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail OWA, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail Outlook Web Access (OWA)](/products/email-owa-user-guide){.external} ».
 
 ![email](images/mxplan-starter-new-step4.png){.thumbnail}
 
 ##### 2. Utiliser l'appareil de votre choix
 
-Vous devez configurer votre adresse e-mail sur l'appareil souhaité (comme un smartphone ou une tablette). Pour cela, vous pouvez vous aider de [nos guides de configuration](../)
+Vous devez configurer votre adresse e-mail sur l'appareil souhaité (comme un smartphone ou une tablette). Pour cela, vous pouvez vous aider de [nos guides de configuration](/products/web-cloud-email-collaborative-solutions-mx-plan)
 
 
 Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre adresse e-mail, retrouvez ci-dessous les paramètres à utiliser :
@@ -94,7 +91,7 @@ Si vous désirez simplement obtenir les éléments nécessaires pour configurer 
 
 > [!warning]
 >
-> Si vous éprouvez des difficultés dans la configuration de votre adresse e-mail sur votre appareil, [aidez-vous de nos guides de configuration](../) ou rapprochez-vous de l'éditeur de l'application que vous utilisez, la manipulation étant inhérente à cette dernière.
+> Si vous éprouvez des difficultés dans la configuration de votre adresse e-mail sur votre appareil, [aidez-vous de nos guides de configuration](/products/web-cloud-email-collaborative-solutions-mx-plan) ou rapprochez-vous de l'éditeur de l'application que vous utilisez, la manipulation étant inhérente à cette dernière.
 >
 
 ### Version historique de l'offre MX Plan
@@ -132,13 +129,13 @@ Une fois vos adresses e-mail créées, il ne vous reste plus qu’à les utilise
 
 Accédez à la page « [Connexion au webmail](https://www.ovh.com/ca/fr/mail/){.external} », puis renseignez l'adresse e-mail concernée ainsi que son mot de passe. Cliquez ensuite sur le bouton `Connexion`{.action}.
 
-Votre boîte de réception s'affiche alors. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail RoundCube, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail RoundCube](../utilisation-roundcube/){.external} ».
+Votre boîte de réception s'affiche alors. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail RoundCube, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail RoundCube](/ca/pages/web/emails/email_roundcube){.external} ».
 
 ![email](images/mxplan-starter-legacy-step4.png){.thumbnail}
 
 ##### 2. Utiliser l'appareil de votre choix
 
-Vous devez configurer votre adresse e-mail sur l'appareil souhaité (comme un smartphone ou une tablette). Pour cela, vous avez la possibilité de vous aider de [nos guides de configuration](../)
+Vous devez configurer votre adresse e-mail sur l'appareil souhaité (comme un smartphone ou une tablette). Pour cela, vous avez la possibilité de vous aider de [nos guides de configuration](/products/web-cloud-email-collaborative-solutions-mx-plan)
 
 Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre adresse e-mail, retrouvez ci-dessous les paramètres à utiliser :
 
@@ -158,7 +155,7 @@ Si vous désirez simplement obtenir les éléments nécessaires pour configurer 
 
 > [!warning]
 >
-> Si vous éprouvez des difficultés dans la configuration de votre adresse e-mail sur votre appareil, [aidez-vous de nos guides de configuration](../) ou rapprochez-vous de l'éditeur de l'application que vous utilisez, la manipulation étant inhérente à cette dernière.
+> Si vous éprouvez des difficultés dans la configuration de votre adresse e-mail sur votre appareil, [aidez-vous de nos guides de configuration](/products/web-cloud-email-collaborative-solutions-mx-plan) ou rapprochez-vous de l'éditeur de l'application que vous utilisez, la manipulation étant inhérente à cette dernière.
 >
 
 ## Aller plus loin

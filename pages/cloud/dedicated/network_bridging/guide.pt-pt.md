@@ -1,8 +1,6 @@
 ---
 title: 'Modo bridge IP'
-slug: network-bridging
 excerpt: 'Saiba como utilizar o modo bridge para configurar o acesso à Internet das suas máquinas virtuais'
-section: 'Redes & IP'
 updated: 2022-12-20
 ---
 
@@ -38,7 +36,7 @@ A ligação em rede em modo bridge pode ser utilizada para configurar as suas m�
 >
 > O presente guia não é aplicável aos servidores das gamas [Scale](https://www.ovhcloud.com/pt/bare-metal/scale/) e [High Grade](https://www.ovhcloud.com/pt/bare-metal/high-grade/).
 >
-> Aceda a [página de configuração dedicada](https://docs.ovh.com/pt/dedicated/proxmox-network-hg-scale/).
+> Aceda a [página de configuração dedicada](/pages/cloud/dedicated/proxmox-network-HG-Scale).
 
 
 ## Instruções

@@ -1,9 +1,6 @@
 ---
 title: Presentación del Load Balancer de OVHcloud
-slug: presentacion-load-balancer
 excerpt: Descubra el nuevo Load Balancer de OVHcloud
-section: Primeros pasos
-order: 1
 updated: 2018-01-17
 ---
 

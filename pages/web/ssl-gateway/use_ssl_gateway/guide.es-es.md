@@ -1,10 +1,7 @@
 ---
 title: Utilizar el servicio SSL Gateway
-slug: utilizar-servicio-ssl-gateway
 legacy_guide_number: 2370
 excerpt: Proteja las conexiones a su sitio web
-section: Uso
-order: 01
 updated: 2022-12-01
 ---
 
@@ -13,7 +10,7 @@ updated: 2022-12-01
 ## Introduccion
 
 ### Requisitos
-- [Haber contratado un servicio SSL Gateway](../contratar-un-ssl-gateway/).
+- [Haber contratado un servicio SSL Gateway](/pages/web/ssl-gateway/order-ssl-gateway).
 - Tener acceso al [área de cliente Sunrise](https://www.ovh.com/manager/sunrise/){.external}.
 
 

@@ -1,8 +1,6 @@
 ---
 title: API SMS Cookbook
 excerpt: Ce guide présente quelques combinaisons possible avec l'API pour utiliser la plateforme SMS d'OVH.
-slug: api_sms_cookbook
-section: Utilisation avancée
 updated: 2018-03-26
 ---
 

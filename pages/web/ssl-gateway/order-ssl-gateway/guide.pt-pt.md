@@ -1,6 +1,5 @@
 ---
 title: Encomendar um SSL Gateway
-slug: encomendar-um-ssl-gateway
 links: 
    - docs/web/ssl-gateway/use_ssl_gateway/
 excerpt: Torne seguras as ligacoes ao seu website

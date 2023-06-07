@@ -1,9 +1,6 @@
 ---
 title: 'Utilização das contas de recurso'
 excerpt: Insert Here A Short Desc
-slug: exchange_20132016_utilizacao_das_contas_de_recurso
-section: Funcionalidades das contas Exchange
-order: 05
 updated: 2020-06-05
 ---
 
@@ -50,7 +47,7 @@ Clique em `Seguinte`{.action} para passar ao resumo e confirme a tarefa clicando
 
 ### Etapa 2: utilizar recursos
 
-Os seus recursos podem ser geridos a partir da tabela do separador "Recursos". Clique em `...`{.action} para modificar ou eliminar um recurso. A opção `Configurar as delegações`{.action} também será apresentada. Com esta opção, poderá delegar o acesso da mesma forma que para uma conta Exchange. Consulte os detalhes [neste guia](../exchange_3013_atribuir_permissoes_full_access_a_uma_conta/).
+Os seus recursos podem ser geridos a partir da tabela do separador "Recursos". Clique em `...`{.action} para modificar ou eliminar um recurso. A opção `Configurar as delegações`{.action} também será apresentada. Com esta opção, poderá delegar o acesso da mesma forma que para uma conta Exchange. Consulte os detalhes [neste guia](/pages/web/microsoft-collaborative-solutions/feature_delegation).
 
 ![utilizar](images/exchange-resources-step3.png){.thumbnail}
 
@@ -58,7 +55,7 @@ Os seus recursos podem ser geridos a partir da tabela do separador "Recursos". C
 
 > [!primary]
 >
-Consulte também o nosso manual sobre [Partilha de calendários a partir da interface OWA](../exchange_2016_partilhar_um_calendario_atraves_do_webmail_owa/).
+Consulte também o nosso manual sobre [Partilha de calendários a partir da interface OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing).
 >
 
 Ligue-se à sua conta Exchange através do [webmail OVHcloud](https://www.ovh.pt/mail/). Migre para a interface "Calendário" clicando no "aplicador" no canto superior esquerdo e selecionando o ícone `Calendário`{.action}.
@@ -123,10 +120,10 @@ Depois de criar o evento (ao clicar em `Enviar`{.action} para a barra de menu su
 
 ## Quer saber mais?
 
-[Consultar a sua conta Exchange a partir da interface OWA](../exchange_2016_guia_de_utilizacao_do_outlook_web_app/)
+[Consultar a sua conta Exchange a partir da interface OWA](/pt/microsoft-collaborative-solutions/exchange_2016_guia_de_utilizacao_do_outlook_web_app/)
 
-[Partilhar um calendário a partir da interface OWA](../exchange_2016_partilhar_um_calendario_atraves_do_webmail_owa/)
+[Partilhar um calendário a partir da interface OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Partilhar uma pasta a partir da interface OWA](../exchange_2016_partilhar_uma_pasta_atraves_do_webmail_owa/)
+[Partilhar uma pasta a partir da interface OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

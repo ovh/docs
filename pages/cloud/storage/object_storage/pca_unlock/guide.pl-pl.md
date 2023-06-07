@@ -1,9 +1,6 @@
 ---
 title: Cloud Archive Swift - Odblokuj dane przechowywane w systemie Public Cloud Archive
-slug: pca/unlock
 excerpt: Sprawdź, jak odblokować archiwa
-section: OpenStack Swift Archive Storage Class Specifics
-order: 030
 updated: 2022-04-12
 ---
 
@@ -24,8 +21,8 @@ W przypadku rzadko używanych danych wymagane jest odblokowanie, co oznacza koni
 - Odblokowanie w Panelu klienta:
     - Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 - Odblokowanie za pomocą python-swiftclient:
-    - [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/) poprzez instalację python-swiftclient.
-    - [Pobranie zmiennych środowiskowych OpenStack](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/).
+    - [Przygotowanie środowiska do korzystania z API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) poprzez instalację python-swiftclient.
+    - [Pobranie zmiennych środowiskowych OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 ## W praktyce
 
@@ -41,7 +38,7 @@ Po rozpoczęciu procesu w kolumnie `Dostępność` wyświetli się data i godzin
 
 ![okres przed odblokowaniem](images/unfreeze_result.png){.thumbnail}
 
-Twój plik będzie dostępny do pobrania po tym czasie. Pobieranie można wówczas rozpocząć bezpośrednio przez przeglądarkę lub przez [klienta Swift/SFTP/SCP](https://docs.ovh.com/pl/storage/pca/sftp/).
+Twój plik będzie dostępny do pobrania po tym czasie. Pobieranie można wówczas rozpocząć bezpośrednio przez przeglądarkę lub przez [klienta Swift/SFTP/SCP](/pages/cloud/storage/object_storage/pca_sftp).
 
 ### Odblokuj swoje obiekty poprzez python-swiftclient
 

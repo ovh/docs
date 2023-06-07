@@ -1,11 +1,8 @@
 ---
 title: Administração de grade de cluster de gerenciamento Tanzu (EN)
-slug: tanzu-tkgm-management
 excerpt: TKG administration to create a Workload cluster and add applications to this cluster
-section: Tanzu
-order: 04
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/tanzu-tkgm-management/'
+    canonical: '/pages/cloud/private-cloud/tanzu_tkgm_03manage'
 updated: 2022-11-10
 ---
 
@@ -26,7 +23,7 @@ updated: 2022-11-10
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 - A user account with access to vSphere
-- You need to have the **Tanzu Kubernetes GRID** administration cluster installed, using the [Install Tanzu Kubernetes Grid](https://docs.ovh.com/pt/private-cloud/tanzu-tkgm-installation) guide.
+- You need to have the **Tanzu Kubernetes GRID** administration cluster installed, using the [Install Tanzu Kubernetes Grid](/pages/cloud/private-cloud/tanzu_tkgm_02installation) guide.
 - A VLAN with Internet access and a DHCP server
 - You must have these resources:
     - 16 GB memory, 4 vCPU, 40 GB storage per Kubernetes node (requires 6 nodes per **Workload** cluster in production mode).
@@ -146,7 +143,7 @@ An application can consist of multiple pods that communicate with each other thr
 
 ## Go further
 
-[Installing Tanzu Kubernetes Grid](https://docs.ovh.com/pt/private-cloud/tanzu-tkgm-installation)
+[Installing Tanzu Kubernetes Grid](/pages/cloud/private-cloud/tanzu_tkgm_02installation)
 
 [Tanzu Kubernetes Grid VMware Overview](https://tanzu.vmware.com/kubernetes-grid)
 

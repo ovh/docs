@@ -1,9 +1,6 @@
 ---
 title: 'Configuring your Exchange account in Outlook 2016 for Mac'
-slug: exchange-configuration-outlook-2016-mac
 excerpt: 'Find out how to configure your Exchange account in Outlook 2016 for Mac.'
-section: Configuration on computer
-order: 02
 updated: 2018-06-01
 ---
 
@@ -23,7 +20,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 > [!primary]
 >
-> Are you using Outlook 2016 for Windows? Read our guide: [Configuring your Exchange account in Outlook 2016 for Windows](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/configuration-outlook-2016/){.external}.
+> Are you using Outlook 2016 for Windows? Read our guide: [Configuring your Exchange account in Outlook 2016 for Windows](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016){.external}.
 >
 
 ## Instructions

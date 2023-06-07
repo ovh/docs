@@ -1,9 +1,6 @@
 ---
 title: 'Spécificités techniques liées aux hébergements mutualisés'
-slug: specificites-techniques-hebergements-mutualises
 excerpt: 'Vous trouverez dans ce guide différentes informations et spécificités techniques liées aux hébergements mutualisés.'
-section: "Configuration de l'hébergement"
-order: 05
 updated: 2022-11-18
 ---
 
@@ -29,7 +26,7 @@ updated: 2022-11-18
 
 ### FTP
 
-- Erreur d'accès ("Échec de l'authentification de connexion 530"): Vous pouvez vous assurer que les informations d'accès à votre espace FTP sont correctes en vérifiant celles-ci via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans l'onglet `FTP - SSH`. Les mots de passe ne sont jamais affichés, mais ils peuvent être modifiés. Veuillez consulter nos [guides FTP](../connexion-espace-stockage-ftp-hebergement-web/).
+- Erreur d'accès ("Échec de l'authentification de connexion 530"): Vous pouvez vous assurer que les informations d'accès à votre espace FTP sont correctes en vérifiant celles-ci via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans l'onglet `FTP - SSH`. Les mots de passe ne sont jamais affichés, mais ils peuvent être modifiés. Veuillez consulter nos [guides FTP](/pages/web/hosting/ftp_connection).
 
 - Les connexions FTP doivent utiliser le **mode passif**. Assurez-vous que votre script ou votre client FTP est ajusté en conséquence.
 
@@ -58,7 +55,7 @@ Sur une période glissante de 3600 secondes (soit 1 heure), votre offre d'héber
 
     - *max_user_connections*: 50 par défaut, avec possibilité de passer à 200
 
-Pour en savoir plus, consultez les détails de nos [offres d'hébergement](https://www.ovhcloud.com/fr/web-hosting/) et [notre guide](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/).
+Pour en savoir plus, consultez les détails de nos [offres d'hébergement](https://www.ovhcloud.com/fr/web-hosting/) et [notre guide](/pages/web/clouddb/starting_with_clouddb).
 
 #### Connexions depuis un serveur externe
 
@@ -74,7 +71,7 @@ Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to conn
 
 - La version MySQL ne peut pas être modifiée pour les bases de données intégrées à l'hébergement Web.
 
-Pour plus d'informations sur la gestion des bases de données, reportez-vous au guide [Créer une base de données sur son hébergement web](../creer-base-de-donnees/).
+Pour plus d'informations sur la gestion des bases de données, reportez-vous au guide [Créer une base de données sur son hébergement web](/pages/web/hosting/sql_create_database).
 
 ### PHP
 
@@ -89,8 +86,8 @@ Pour plus d'informations sur la gestion des bases de données, reportez-vous au 
 
 - Vous pourrez modifier la version PHP de votre hébergement web, soit depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ("**Configuration**"), soit en modifiant le fichier .ovhconfig. Des configurations mixtes sont également possibles avec ces dernières. Des instructions détaillées sont disponibles dans nos guides :
 
-[Configurer le fichier .ovhconfig de son hébergement web](../configurer-fichier-ovhconfig/)  
-[Modifier la configuration de son hébergement web](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/)
+[Configurer le fichier .ovhconfig de son hébergement web](/pages/web/hosting/ovhconfig_configuration)  
+[Modifier la configuration de son hébergement web](/pages/web/hosting/ovhconfig_modify_system_runtime)
 
 
 > [!primary]
@@ -153,13 +150,13 @@ Toutes nos offres d'hébergement web mutualisé situées:
 
 - à Beauharnois (BHS), au Canada, disposent de sauvegardes automatiques à J-1 / J-2 / J-3 / J-7 / J-14. Ces sauvegardes sont également stockées sur le datacenter de Beauharnois (BHS), au Canada.
 
-Découvrez comment [se connecter à l’espace de stockage](../connexion-espace-stockage-ftp-hebergement-web/) ou [restaurer l’espace de stockage de son hébergement web](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/) sur nos documentations.
+Découvrez comment [se connecter à l’espace de stockage](../connexion-espace-stockage-ftp-hebergement-web/) ou [restaurer l’espace de stockage de son hébergement web](/pages/web/hosting/ftp_save_and_backup) sur nos documentations.
 
 #### Base de données / SQL
 
 Pour les bases de données mutualisées (comprises dans votre offre d'hébergement Web) ou les serveurs de base de données (Web Cloud Databases), proposés sur Gravelines (GRA), en France et Beauharnois (BHS), au Canada, la sauvegarde des bases est faite tous les jours. Ces sauvegardes sont accessibles (via [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} ou via les [API OVHcloud](https://api.ovh.com/)). Les sauvegardes sont également stockées sur une autre infrastructure. Ces données sont répliquées à 3 endroits distincts en France : Roubaix(RBX), Strasbourg(SBG), et Gravelines(GRA). La politique de rétention des sauvegardes est de 30 jours.
 
-Découvrez comment [Récupérer la sauvegarde de la base de données d’un hébergement web](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/) sur notre documentation.
+Découvrez comment [Récupérer la sauvegarde de la base de données d’un hébergement web](/pages/web/hosting/sql_database_export) sur notre documentation.
 
 #### E-mail
 
@@ -189,14 +186,14 @@ Afin d’être utilisées dans le cadre d’OVHcloud Web Statistics, les donnée
 
 ## Aller plus loin
 
-[Se connecter à l’espace de stockage de son hébergement web](../connexion-espace-stockage-ftp-hebergement-web/)
+[Se connecter à l’espace de stockage de son hébergement web](/pages/web/hosting/ftp_connection)
 
-[Passer son site internet en HTTPS grâce au SSL](../passer-site-internet-https-ssl/)
+[Passer son site internet en HTTPS grâce au SSL](/pages/web/hosting/ssl-activate-https-website)
 
-[Optimisation des performances de votre site](../optimisation-performances-site/)
+[Optimisation des performances de votre site](/pages/web/hosting/optimise_your_website_performance)
 
-[Restaurer l’espace de stockage de son hébergement web](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/)
+[Restaurer l’espace de stockage de son hébergement web](/pages/web/hosting/ftp_save_and_backup)
 
-[Récupérer la sauvegarde de la base de données d’un hébergement web](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/)
+[Récupérer la sauvegarde de la base de données d’un hébergement web](/pages/web/hosting/sql_database_export)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

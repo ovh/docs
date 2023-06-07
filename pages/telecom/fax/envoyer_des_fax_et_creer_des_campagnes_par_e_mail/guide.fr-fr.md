@@ -1,10 +1,7 @@
 ---
 title: Envoyer des fax par e-mail
-slug: envoyer-des-fax-et-creer-des-campagnes-par-e-mail
 excerpt: Découvrez comment envoyer des fax ou des campagnes de fax par e-mail
 legacy_guide_number: '8355851'
-section: Envoi/Réception de fax
-order: 1
 updated: 2022-06-23
 ---
 
@@ -20,7 +17,7 @@ Vous pouvez envoyer des fax OVHcloud de différentes manières. Ce guide vous pr
 
 - Disposer d’une [ligne Fax OVHcloud](https://www.ovhtelecom.fr/fax/).
 - Être connecté à son adresse e-mail via un client e-mail (webmail ou logiciel).
-- Connaître ou réinitialiser le mot de passe de la ligne Fax. Pour plus d'informations, consultez notre guide « [Configuration de votre ligne Fax](https://docs.ovh.com/fr/fax/configuration-fax/#mot-de-passe-fax) ».
+- Connaître ou réinitialiser le mot de passe de la ligne Fax. Pour plus d'informations, consultez notre guide « [Configuration de votre ligne Fax](/pages/telecom/fax/configuration_fax_espace_client#mot-de-passe-fax) ».
 
 ## En pratique
 
@@ -36,7 +33,7 @@ Pour envoyer un fax par e-mail, vous devez renseigner les informations suivantes
 |**1.** Le **numéro de fax de votre destinataire** |Renseignez le numéro sous la forme `numero@ecofax.fr` dans le champ `À`{.action} où vous renseignez habituellement l'adresse e-mail d'un destinataire.<br><br>**Par exemple** : `0123456789@ecofax.fr`|
 |**2.** Le **numéro de votre ligne Ecofax émettrice** | Renseignez votre numéro, sans espaces, dans le champ `Objet`{.action}.<br><br>**Par exemple** : `0987654321` pour le numéro 09 87 65 43 21|
 |**3.** Le **fichier** à faxer|Ajoutez le fichier à faxer en tant que `pièce jointe`{.action} attachée à l'e-mail.<br><br>Retrouvez la liste des formats acceptés [en bas de ce guide](#formats)|
-|**4.** Le **mot de passe** de la ligne Ecofax |Renseignez ce mot de passe dans le `corps`{.action} de l'e-mail, précédé de `p:`<br><br>**Par exemple** : `p:motdepassefax`.<br><br>Ce mot de passe est bien entendu donné ici à titre d'exemple, veillez à bien utiliser le véritable [mot de passe de votre ligne Fax](https://docs.ovh.com/fr/fax/configuration-fax/#mot-de-passe-fax).<br><br>Veillez à désactiver toute signature automatique d'e-mail et à ne pas ajouter de caractères supplémentaires dans le corps de votre e-mail. En effet, ces éléments pourraient empêcher la bonne prise en compte de votre mot de passe.|
+|**4.** Le **mot de passe** de la ligne Ecofax |Renseignez ce mot de passe dans le `corps`{.action} de l'e-mail, précédé de `p:`<br><br>**Par exemple** : `p:motdepassefax`.<br><br>Ce mot de passe est bien entendu donné ici à titre d'exemple, veillez à bien utiliser le véritable [mot de passe de votre ligne Fax](/pages/telecom/fax/configuration_fax_espace_client#mot-de-passe-fax).<br><br>Veillez à désactiver toute signature automatique d'e-mail et à ne pas ajouter de caractères supplémentaires dans le corps de votre e-mail. En effet, ces éléments pourraient empêcher la bonne prise en compte de votre mot de passe.|
 
 Vous devriez obtenir des champs complétés de façon similaire à l'exemple ci-dessous (les numéros indiqués en orange correspondent à ceux du tableau ci-dessus) :
 
@@ -80,7 +77,7 @@ Pour envoyer une campagne de fax par e-mail, vous devez renseigner les informati
 |**2.** Le **numéro de votre ligne Ecofax émettrice** | Renseignez votre numéro, sans espaces, dans le champ `Objet`{.action}.<br><br>**Par exemple** : `0987654321` pour le numéro 09 87 65 43 21|
 |**3.** Le **fichier** à faxer|Ajoutez le fichier à faxer en tant que `pièce jointe`{.action} attachée à l'e-mail.<br><br>Retrouvez la liste des formats acceptés [en bas de ce guide](#formats)|
 |**4.** Le **fichier de destinaires**|Ajoutez, en tant que `pièce jointe`{.action} attachée à l'e-mail, le fichier `numbers.txt` contenant votre liste de destinataires.|
-|**5.** Le **mot de passe** de la ligne Ecofax |Renseignez ce mot de passe dans le `corps`{.action} de l'e-mail, précédé de `p:`<br><br>**Par exemple** : `p:motdepassefax`.<br><br>Ce mot de passe est bien entendu donné ici à titre d'exemple, veillez à bien utiliser le véritable [mot de passe de votre ligne Fax](https://docs.ovh.com/fr/fax/configuration-fax/#mot-de-passe-fax).<br><br>Veillez à désactiver toute signature automatique d'e-mail et à ne pas ajouter de caractères supplémentaires dans le corps de votre e-mail. En effet, ces éléments pourraient empêcher la bonne prise en compte de votre mot de passe.|
+|**5.** Le **mot de passe** de la ligne Ecofax |Renseignez ce mot de passe dans le `corps`{.action} de l'e-mail, précédé de `p:`<br><br>**Par exemple** : `p:motdepassefax`.<br><br>Ce mot de passe est bien entendu donné ici à titre d'exemple, veillez à bien utiliser le véritable [mot de passe de votre ligne Fax](/pages/telecom/fax/configuration_fax_espace_client#mot-de-passe-fax).<br><br>Veillez à désactiver toute signature automatique d'e-mail et à ne pas ajouter de caractères supplémentaires dans le corps de votre e-mail. En effet, ces éléments pourraient empêcher la bonne prise en compte de votre mot de passe.|
 
 Vous devriez obtenir des champs complétés de façon similaire à l'exemple ci-dessous (les numéros indiqués en orange correspondent à ceux du tableau ci-dessus) :
 

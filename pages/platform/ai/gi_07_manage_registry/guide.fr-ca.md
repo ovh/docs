@@ -1,9 +1,6 @@
 ---
 title: Registres - Utiliser et gérer vos registres (EN)
-slug: use-manage-registries
 excerpt: Découvrez comment vous pouvez gérer vos registres existants, mais aussi en utiliser de nouveaux
-section: General information
-order: 109
 updated: 2023-05-12
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-manage-registries?id=kb_article_view&sysparm_article=KB0057949'
@@ -252,7 +249,7 @@ You can also use the Control Panel to deploy a job or an app from your private D
 
 ### GitHub registry
 
-You can also use a GitHub registry, also known as [GitHub Packages](ghcr.io).
+You can also use a GitHub registry, also known as [GitHub Packages](/pages/platform/ai/gi_07_manage_registryghcr.io).
 
 As indicated on their documentation, you can build and push a package image by using the following commands:
 
@@ -305,7 +302,7 @@ You can also use the Control Panel to deploy a job or an app from a GitHub regis
 
 - You can check the official documentation about [how to submit a **job**](/pages/platform/ai/training_guide_02_howto_submit_job).
 - Learn [how to deploy an **app**](/pages/platform/ai/deploy_guide_02_getting_started).
-- You can check out the documentation about the [ovhai CLI](https://docs.ovh.com/ca/fr/publiccloud/ai/cli/overview-cli).
+- You can check out the documentation about the [ovhai CLI](/pages/platform/ai/cli_15_commands_reference).
 
 
 ## Feedback

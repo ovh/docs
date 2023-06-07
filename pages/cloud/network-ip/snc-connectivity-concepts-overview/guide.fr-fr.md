@@ -1,14 +1,11 @@
 ---
 title: Présentation des concepts
-slug: secnumcloud-connectivity-overview-concept
 excerpt: 'Présentation des concepts de SecNumCloud Connectivity'
-section: SecNumCloud Connectivity
-order: 01
 updated: 2021-11-18
 ---
 
 > [!primary]
-> Une version en langue anglaise de cette page est disponible [ici](https://docs.ovh.com/gb/en/network-ip/secnumcloud-connectivity-overview-concept/).
+> Une version en langue anglaise de cette page est disponible [ici](/pages/cloud/network-ip/snc-connectivity-concepts-overview).
 >
 
 **Dernière mise à jour le 18/11/2021**

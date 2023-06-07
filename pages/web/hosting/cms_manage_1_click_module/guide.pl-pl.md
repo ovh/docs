@@ -1,9 +1,6 @@
 ---
 title: Jak zarządzać modułem za 1 kliknięciem?
 excerpt: Dowiedz się, jak zarządzać modułem za pomocą 1 kliknięcia w Panelu klienta OVHcloud
-slug: 1-click-module-management
-section: CMS
-order: 02
 updated: 2022-09-05
 ---
 
@@ -29,7 +26,7 @@ Moduły za 1 kliknięciem pozwalają na szybką i prostą instalację internetow
 ## Wymagania początkowe
 
 - Posiadanie [oferty hostingu WWW Cloud](https://www.ovhcloud.com/pl/web-hosting/) umożliwiającej instalację modułu za pomocą 1 kliknięcia.
-- Instalacja modułu za 1 kliknięciem (Jeśli jeszcze nie przeprowadziłeś tej instalacji, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/)).
+- Instalacja modułu za 1 kliknięciem (Jeśli jeszcze nie przeprowadziłeś tej instalacji, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/hosting/cms_install_1_click_modules)).
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
@@ -42,7 +39,7 @@ Następnie kliknij przycisk `...`{.action} znajdujący się po prawej stronie li
 
 > [!primary]
 >
-> Jeśli po wykonaniu tej operacji Twoja strona WWW nie wyświetla się poprawnie, zapoznaj się z przewodnikami OVHcloud dotyczącymi hostingu współdzielonego w sekcji [Diagnostyka](https://docs.ovh.com/pl/hosting/).
+> Jeśli po wykonaniu tej operacji Twoja strona WWW nie wyświetla się poprawnie, zapoznaj się z przewodnikami OVHcloud dotyczącymi hostingu współdzielonego w sekcji [Diagnostyka](/products/web-cloud-hosting).
 >
 
 ### Dostęp do interfejsu administratora
@@ -108,7 +105,7 @@ Zalecamy jednak, abyś przeprowadził operację w oparciu o dokumentację przygo
 
 > [!warning]
 >
-> Tworzenie kopii zapasowych danych jest częścią operacji niezbędnych do [zabezpieczenia Twoich stron WWW](https://docs.ovh.com/pl/hosting/secure-website/). Zalecamy regularne importowanie kopii zapasowej danych na lokalny nośnik, taki jak klucz USB lub zewnętrzny dysk twardy, zgodnie z instrukcjami zawartymi w tym [przewodniku](https://docs.ovh.com/pl/hosting/eksportowanie-witryna-internetowa/).
+> Tworzenie kopii zapasowych danych jest częścią operacji niezbędnych do [zabezpieczenia Twoich stron WWW](/pages/web/hosting/secure_your_website). Zalecamy regularne importowanie kopii zapasowej danych na lokalny nośnik, taki jak klucz USB lub zewnętrzny dysk twardy, zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/hosting/exporter-son-site-web).
 >
 
 #### Etap 1: zidentyfikować bazę danych powiązaną z modułem <a name="step1"></a>
@@ -119,7 +116,7 @@ Jeśli w tej części Panelu klienta dysponujesz jedną bazą danych i nie posia
 
 W przeciwnym razie przejdź do zakładki `MultiSite`{.action}. Zapisz nazwę katalogu `Katalog główny`: jest to katalog, w którym znajdują się pliki tworzące moduł za pomocą 1 kliknięcia na serwer FTP.
 
-Zaloguj się do [przestrzeni FTP Twojego hostingu](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/). Otwórz `Katalog główny` znajdujący się w zakładce `MultiSite`{.action} i wyszukaj plik konfiguracyjny Twojego modułu:
+Zaloguj się do [przestrzeni FTP Twojego hostingu](/pages/web/hosting/ftp_connection). Otwórz `Katalog główny` znajdujący się w zakładce `MultiSite`{.action} i wyszukaj plik konfiguracyjny Twojego modułu:
 
 - WordPress : **"wp-config.php"** (nazwa bazy danych pojawia się pod nagłówkiem **"DB_NAME"**).
 - Joomla! : **"configuration.php"** (nazwa bazy danych pojawia się pod nagłówkiem **"public $db"**).
@@ -128,7 +125,7 @@ Zaloguj się do [przestrzeni FTP Twojego hostingu](https://docs.ovh.com/pl/hosti
 
 #### Etap 2: zapisz moduł
 
-Aby wykonać kopię zapasową Twojej strony WWW, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](https://docs.ovh.com/pl/hosting/eksportowanie-witryna-internetowa/), aby pobrać jej pliki zarówno z przestrzeni FTP, jak i z bazy danych.
+Aby wykonać kopię zapasową Twojej strony WWW, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/hosting/exporter-son-site-web), aby pobrać jej pliki zarówno z przestrzeni FTP, jak i z bazy danych.
 
 #### Etap 3: usuń moduł
 
@@ -143,7 +140,7 @@ Następnie kliknij przycisk `...`{.action} znajdujący się po prawej stronie li
 
 > [!warning]
 >
-> Usunięcie modułu 1 kliknięcia **nie spowoduje automatycznego usunięcia bazy danych**. Jeśli uruchomisz instalację nowego CMS bez wcześniejszego usunięcia bazy danych (a Twój hosting nie pozwala na automatyczne utworzenie nowej bazy), w Panelu klienta wyświetli się komunikat "[Wystąpił błąd podczas pobierania informacji (You need at least one free database)](https://docs.ovh.com/pl/hosting/bledy-frameworki-moduly-za-1-kliknieciem/#wystapil-blad-podczas-pobierania-informacji-you-need-at-least-one-free-database)".
+> Usunięcie modułu 1 kliknięcia **nie spowoduje automatycznego usunięcia bazy danych**. Jeśli uruchomisz instalację nowego CMS bez wcześniejszego usunięcia bazy danych (a Twój hosting nie pozwala na automatyczne utworzenie nowej bazy), w Panelu klienta wyświetli się komunikat "[Wystąpił błąd podczas pobierania informacji (You need at least one free database)](/pages/web/hosting/diagnostic_errors_module1clic#wystapil-blad-podczas-pobierania-informacji-you-need-at-least-one-free-database)".
 >
 > Jeśli posiadasz hosting [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/) lub utworzyłeś już cztery bazy danych na hostingu [Hosting Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) lub [Hosting Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/), usuń bazę danych zidentyfikowaną w [etapie 1](#step1) **PRZEDADP**, aby utworzyć nowy moduł za pomocą 1 kliknięcia.
 >
@@ -154,7 +151,7 @@ Przed ponownym uruchomieniem instalacji nowego modułu sprawdź, czy wymagane wc
 
 ### Dobre praktyki
 
-Zabezpiecz swoją stronę, postępując zgodnie z instrukcjami zawartymi w tym [przewodniku](https://docs.ovh.com/pl/hosting/secure-website/).
+Zabezpiecz swoją stronę, postępując zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/hosting/secure_your_website).
 
 Dodaj narzędzia testowe typu CAPTCHA do formularzy na Twojej stronie.
 
@@ -167,7 +164,7 @@ Nie instaluj na Twojej stronie wtyczek ani szablonów, które nie są zalecane p
 
 ## Sprawdź również <a name="go-further"></a>
 
-[Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia](https://docs.ovh.com/pl/hosting/bledy-frameworki-moduly-za-1-kliknieciem/).
+[Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia](/pages/web/hosting/diagnostic_errors_module1clic).
 
 Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 

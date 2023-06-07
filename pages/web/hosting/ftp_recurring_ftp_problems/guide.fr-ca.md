@@ -1,9 +1,6 @@
 ---
 title: "Résoudre les erreurs récurrentes lors de l’utilisation d’un logiciel FTP"
 excerpt: "Retrouvez ici les anomalies les plus fréquentes liées à votre logiciel FTP"
-slug: mutualise-les-problemes-ftp-recurrents
-section: FTP et SSH
-order: 04
 updated: 2022-01-05
 ---
 
@@ -33,7 +30,7 @@ L'utilisation de logiciels FTP lors de la connexion à votre [hébergement Web C
 
 ![filezilla_error](images/filezilla_error.png){.thumbnail}
 
-Ce message sur le logiciel [FileZilla](https://docs.ovh.com/ca/fr/hosting/mutualise-guide-utilisation-filezilla/) indique que vous n'avez pas activé l'option SFTP ou SSH depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). De ce fait, les informations échangées entre votre serveur d'hébergement OVHcloud et votre ordinateur ne seront pas chiffrées.
+Ce message sur le logiciel [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide) indique que vous n'avez pas activé l'option SFTP ou SSH depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). De ce fait, les informations échangées entre votre serveur d'hébergement OVHcloud et votre ordinateur ne seront pas chiffrées.
 
 Si les données que vous souhaitez échanger par ce biais ne sont pas confidentielles, cliquez sur `OK`{.action}.
 
@@ -47,18 +44,18 @@ Choisissez `SFTP`{.action} ou `Activé`{.action} (pour activer le protocole SSH 
 
 > [!primary]
 >
-> Pour tout autre message d'erreur, consultez la section `Diagnostic` de nos guides [Hébergements Web](../).
+> Pour tout autre message d'erreur, consultez la section `Diagnostic` de nos guides [Hébergements Web](/products/web-cloud-hosting).
 >
 
 ### J'ai transféré mes fichiers avec un logiciel FTP, mais mon site ne s'affiche pas.
 
-Vérifiez tout d'abord que les fichiers et dossiers de votre site sont bien présents dans le [dossier racine](https://docs.ovh.com/ca/fr/hosting/mettre-mon-site-en-ligne/#3-telecharger-les-fichiers-sur-lespace-de-stockage) de votre hébergement.
+Vérifiez tout d'abord que les fichiers et dossiers de votre site sont bien présents dans le [dossier racine](/pages/web/hosting/hosting_how_to_get_my_website_online#3-telecharger-les-fichiers-sur-lespace-de-stockage) de votre hébergement.
 
-Si vous avez réalisé une modification dans vos [serveurs ou votre zone DNS](https://docs.ovh.com/ca/fr/domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) il y a moins de 48 heures, patientez et redémarrez régulièrement vos appareils afin de vider leur cache.
+Si vous avez réalisé une modification dans vos [serveurs ou votre zone DNS](/pages/web/domains/dns_zone_edit#comprendre-la-notion-de-dns) il y a moins de 48 heures, patientez et redémarrez régulièrement vos appareils afin de vider leur cache.
 
 ### Mes identifiants FTP ne fonctionnent pas.
 
-Si vous ne parvenez pas à vous authentifier, modifiez votre mot de passe FTP en suivant les instructions de ce [guide](https://docs.ovh.com/ca/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/).
+Si vous ne parvenez pas à vous authentifier, modifiez votre mot de passe FTP en suivant les instructions de ce [guide](/pages/web/hosting/ftp_change_password).
 
 ### Je rencontre des erreurs aléatoires sur mon site.
 
@@ -74,11 +71,11 @@ La quantité de données enregistrée sur votre serveur d'hébergement (hors bas
 
 Vérifiez que votre logiciel FTP est connecté en « Mode Passif » (Mode de configuration d'un serveur FTP dans lequel le serveur détermine le port de connexion).
 
-Par exemple pour [Filezilla](https://docs.ovh.com/ca/fr/hosting/mutualise-guide-utilisation-filezilla/), cliquez sur `Édition`{.action}, puis `Paramètres`{.action}, `Connexion`{.action}, `FTP`{.action} et choisissez `Passif (recommandé)`{.action}.
+Par exemple pour [Filezilla](/pages/web/hosting/ftp_filezilla_user_guide), cliquez sur `Édition`{.action}, puis `Paramètres`{.action}, `Connexion`{.action}, `FTP`{.action} et choisissez `Passif (recommandé)`{.action}.
 
 Limitez également la taille de vos transferts de données (vous ne pourrez pas envoyer plus de **5000 fichiers et dossiers** sur les serveurs mutualisés OVHcloud en un seul transfert). Effectuez vos imports en plusieurs fois si nécessaire en utilisant des dossiers compressés.
 
-Si vous disposez d'une [formule Pro](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/), utilisez de préférence le [protocole SSH](https://docs.ovh.com/ca/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/) pour réaliser vos imports de fichiers sur l'espace de stockage de fichiers de votre hébergement.
+Si vous disposez d'une [formule Pro](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/), utilisez de préférence le [protocole SSH](/pages/web/hosting/ssh_on_webhosting) pour réaliser vos imports de fichiers sur l'espace de stockage de fichiers de votre hébergement.
 
 ### Je n'arrive pas à supprimer le lien symbolique « index.html » sur mon espace FTP
 
@@ -86,11 +83,11 @@ Ce lien est installé par défaut sur les hébergements mutualisés OVHcloud. Il
 
 ![site_under_construction](images/site_under_construction.png){.thumbnail}
 
-Si vous n'avez pas utilisé la fonctionnalité « [Module en 1 clic](https://docs.ovh.com/ca/fr/hosting/modules-en-1-clic/) » pour créer votre site, vous devrez utiliser le logiciel [Net2FTP](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/#1-connexion-via-le-ftp-explorer) accessible via l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) afin de supprimer manuellement la page « Site en construction ».
+Si vous n'avez pas utilisé la fonctionnalité « [Module en 1 clic](/pages/web/hosting/cms_install_1_click_modules) » pour créer votre site, vous devrez utiliser le logiciel [Net2FTP](/pages/web/hosting/ftp_connection#1-connexion-via-le-ftp-explorer) accessible via l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) afin de supprimer manuellement la page « Site en construction ».
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
-[Utilisation du logiciel FileZilla avec votre hébergement](https://docs.ovh.com/ca/fr/hosting/mutualise-guide-utilisation-filezilla/)
+[Utilisation du logiciel FileZilla avec votre hébergement](/pages/web/hosting/ftp_filezilla_user_guide)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 

@@ -1,9 +1,6 @@
 ---
 title: 'Root-Passwort auf einem Dedicated Server ändern'
-slug: root-passwort-aendern-linux-dedicated-server
 excerpt: 'Erfahren Sie hier, wie Sie das administrative Passwort Ihres Dedicated Servers ändern'
-section: 'Server Management'
-order: 1
 updated: 2021-02-16
 ---
 
@@ -67,7 +64,7 @@ passwd: password updated successfully
 
 #### Schritt 1: Systempartition identifizieren
 
-Nachdem Sie Ihren Server im [Rescue-Modus](../ovh-rescue/) neu gestartet haben, müssen Sie die Systempartition identifizieren. Führen Sie hierzu folgenden Befehl aus:
+Nachdem Sie Ihren Server im [Rescue-Modus](/pages/cloud/dedicated/rescue_mode) neu gestartet haben, müssen Sie die Systempartition identifizieren. Führen Sie hierzu folgenden Befehl aus:
 
 ```
 # fdisk -l
@@ -131,10 +128,10 @@ Nachdem Sie diesen Schritt durchgeführt haben, ändern Sie den Netboot-Modus Ih
 
 ## Weiterführende Informationen
 
-[Rescue-Modus aktivieren und verwenden](../ovh-rescue/)
+[Rescue-Modus aktivieren und verwenden](/pages/cloud/dedicated/rescue_mode)
 
-[Absichern eines Servers](../dedizierten-server-sichern/)
+[Absichern eines Servers](/pages/cloud/dedicated/securing-a-dedicated-server)
 
-[Administrator-Passwort eines Windows Servers ändern](../windows-admin-passwort-aendern/)
+[Administrator-Passwort eines Windows Servers ändern](/pages/cloud/dedicated/changing-admin-password-on-windows)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

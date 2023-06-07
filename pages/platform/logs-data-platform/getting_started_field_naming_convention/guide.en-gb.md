@@ -1,8 +1,5 @@
 ---
 title: Field naming convention
-slug: logs-data-platform-field-naming-conventions
-order: 2
-section: Get Started
 updated: 2023-01-16
 ---
 

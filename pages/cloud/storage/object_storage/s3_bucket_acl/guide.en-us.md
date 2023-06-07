@@ -1,8 +1,5 @@
 ---
 title: Object Storage - Bucket ACL
-slug: s3/bucket-acl
-section: Tutorials
-order: 150
 updated: 2023-03-09
 ---
 
@@ -63,7 +60,7 @@ Example: if you have a Public Cloud project named `my_project` and you have crea
 
 Supported predefined user groups are the following and are identified by a URI:
 
-- **log delivery group**: this group contains the applicative users used by OVHcloud services to write server access logs inside buckets (read our [Server Access Logging](https://docs.ovh.com/us/en/storage/object-storage/s3/server-access-logging/) guide for more information)
+- **log delivery group**: this group contains the applicative users used by OVHcloud services to write server access logs inside buckets (read our [Server Access Logging](/pages/cloud/storage/object_storage/s3_server_access_logging) guide for more information)
 
 ```console
 http://acs.amazonaws.com/groups/s3/LogDelivery

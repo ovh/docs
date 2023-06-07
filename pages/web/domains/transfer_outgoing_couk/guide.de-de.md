@@ -1,9 +1,6 @@
 ---
 title: "Einen .uk-Domainnamen zu einem anderen Registrar transferieren"
-slug: transfer-ausgehend-einer-domainnamen-couk
 excerpt: "Erfahren Sie hier, wie Sie Domainnamen mit UK-Ländercode zu einem anderen Provider transferieren"
-section: Transfer
-order: 05
 updated: 2022-10-19
 ---
 
@@ -15,7 +12,7 @@ updated: 2022-10-19
 
 ## Ziel
 
-Der Transferprozess für Top Level Domains (TLDs) des Ländercodes **UK** (**.uk**) unterscheidet sich von dem, der in unserer [Anleitung zu generischen TLDs](../ausgehender-transfer-einer-generischen-oder-geografischen-domain/) erklärt wird. Die nachfolgenden Anweisungen betreffen diese Endungen:
+Der Transferprozess für Top Level Domains (TLDs) des Ländercodes **UK** (**.uk**) unterscheidet sich von dem, der in unserer [Anleitung zu generischen TLDs](/pages/web/domains/transfer_outgoing_domain) erklärt wird. Die nachfolgenden Anweisungen betreffen diese Endungen:
 
 - .uk
 - .co.uk
@@ -33,9 +30,9 @@ Der Transferprozess für Top Level Domains (TLDs) des Ländercodes **UK** (**.uk
 >
 > Soll der betreffende Domainname bei OVHcloud registriert bleiben, aber hinsichtlich der Verwaltungs- oder Eigentumsverhältnisse bearbeitet werden, ist ein ausgehender Transfer der Domain nicht der geeignete Vorgang.
 >
-> Um die Verwaltung des Domainnamens einem anderen OVHcloud Kunden-Account zu übertragen, muss stattdessen eine **Änderung der Kontakte** durchgeführt werden. Die Vorgehensweise wird in [dieser Anleitung](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/) beschrieben.
+> Um die Verwaltung des Domainnamens einem anderen OVHcloud Kunden-Account zu übertragen, muss stattdessen eine **Änderung der Kontakte** durchgeführt werden. Die Vorgehensweise wird in [dieser Anleitung](/pages/account/customer/managing_contacts) beschrieben.
 >
-> Wenn auch der **Inhaber des Domainnamens** geändert werden muss, sollte dies erfolgen, **bevor** Sie die Kontakte des Domainnamens ändern. Verwenden Sie dazu unsere Anleitung zum [Inhaberwechsel für Domainnamen](https://docs.ovh.com/de/domains/wechsel_des_domaininhabers/).
+> Wenn auch der **Inhaber des Domainnamens** geändert werden muss, sollte dies erfolgen, **bevor** Sie die Kontakte des Domainnamens ändern. Verwenden Sie dazu unsere Anleitung zum [Inhaberwechsel für Domainnamen](/pages/web/domains/trade_domain).
 >
 
 ## Voraussetzungen
@@ -49,7 +46,7 @@ Der Transferprozess für Top Level Domains (TLDs) des Ländercodes **UK** (**.uk
 >
 > Wenn der Domainname seit **weniger als 90 Tagen** abgelaufen ist, kann er dennoch transferiert werden. Kontaktieren Sie in diesem Fall unsere Support Teams, indem Sie im OVHcloud Kundencenter eine Ticket-Anfrage zur Transferfreigabe erstellen.
 >
-> Wenn Sie der **Inhaber** der Domain sind, deren Verwaltung Ihnen im OVHcloud Kundencenter jedoch nicht möglich ist, weder über Ihren eigenen Zugang noch den Administrator-Kontakt der Domain, konsultieren Sie bitte [diese Anleitung](../../customer/verwaltung-der-kontakte/#sonderfall-bei-domaininhabern), bevor Sie fortfahren.
+> Wenn Sie der **Inhaber** der Domain sind, deren Verwaltung Ihnen im OVHcloud Kundencenter jedoch nicht möglich ist, weder über Ihren eigenen Zugang noch den Administrator-Kontakt der Domain, konsultieren Sie bitte [diese Anleitung](/pages/account/customer/managing_contacts#sonderfall-bei-domaininhabern), bevor Sie fortfahren.
 >
 
 ## In der praktischen Anwendung
@@ -85,6 +82,6 @@ Eine erfolgreiche Änderung des TAG startet den Transferprozess. Wenden Sie sich
 
 ## Weiterführende Informationen
 
-[Einen Domainnamen zu einem anderen Registrar transferieren](../ausgehender-transfer-einer-generischen-oder-geografischen-domain/)
+[Einen Domainnamen zu einem anderen Registrar transferieren](/pages/web/domains/transfer_outgoing_domain)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

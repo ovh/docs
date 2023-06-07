@@ -1,8 +1,6 @@
 ---
 title: Zoptymalizuj wysyłkę e-maili
 excerpt: Dowiedz się, jak wysyłać e-maile zmniejszając ryzyko spamu
-slug: optymalizacja-wysylki-emaili
-section: Poziom zaawansowany
 updated: 2022-12-20
 ---
 
@@ -52,7 +50,7 @@ W przypadku infrastruktury dedykowanej (serwer dedykowany, VPS, instancja Public
 
 Aby uzyskać więcej informacji na temat składni rekordu SPF, zapoznaj się z poniższym linkiem: <http://www.open-spf.org/>.
 
-Możesz oczywiście pójść o krok dalej, konfigurując rekordu SPF danej domeny lub podając IPv6. Aby dowiedzieć się, jak to zrobić, zapoznaj się z naszym przewodnikiem dotyczącym [konfiguracji rekordu SPF](https://docs.ovh.com/pl/domains/uslugi_www_pole_spf/).
+Możesz oczywiście pójść o krok dalej, konfigurując rekordu SPF danej domeny lub podając IPv6. Aby dowiedzieć się, jak to zrobić, zapoznaj się z naszym przewodnikiem dotyczącym [konfiguracji rekordu SPF](/pages/web/domains/dns_zone_spf).
 
 ### Konfiguracja rekordu DKIM
 
@@ -66,7 +64,7 @@ Aby zoptymalizować wysyłkę i zmniejszyć ryzyko blokady kont e-mail, należy 
 
 Najpierw należy utworzyć rekord A w strefie DNS domeny, używając adresu IP Twojego serwera jako celu.
 
-Jeśli Twoje Rewers DNS są zarządzane przez OVHcloud, zapoznaj się z tym [przewodnikiem](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/#dostep-do-interfejsu-zarzadzania-strefa-dns).
+Jeśli Twoje Rewers DNS są zarządzane przez OVHcloud, zapoznaj się z tym [przewodnikiem](/pages/web/domains/dns_zone_edit#dostep-do-interfejsu-zarzadzania-strefa-dns).
 
 Czas propagacji wprowadzonych w strefie DNS zmian wynosi maksymalnie 24 godziny.
 

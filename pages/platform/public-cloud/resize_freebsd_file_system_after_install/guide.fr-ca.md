@@ -1,8 +1,6 @@
 ---
 title: Redimensionner le système de fichiers sur FreeBSD 12
-slug: redimensionner-systeme-de-fichiers-freebsd-12
 excerpt: Découvrez comment redimensionner le système de fichiers d'une instance Public Cloud ou d'un VPS sous FreeBSD 12
-section: Tutoriels
 updated: 2020-10-27
 ---
 
@@ -15,7 +13,7 @@ Ce guide a pour but de vous expliquer comment redimensionner votre système de f
 ## Prérequis
 
  * Avoir une instance avec FreeBSD 12 dans votre projet [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) ou un [VPS](https://www.ovhcloud.com/fr-ca/vps/) sous FreeBSD 12
- * Avoir récemment installé l'instance/le VPS ou [l'avoir redimensionnée](https://docs.ovh.com/fr/public-cloud/redimensionner-une-instance/)
+ * Avoir récemment installé l'instance/le VPS ou [l'avoir redimensionnée](/pages/platform/public-cloud/resize_of_an_instance)
 
 > [!primary]
 >

@@ -1,9 +1,6 @@
 ---
 title: Włączanie szyfrowania maszyn wirtualnych (VM Encryption)
-slug: szyfrowanie-vm
 excerpt: Dowiedz się, jak włączyć szyfrowanie maszyn wirtualnych
-section: Funkcjonalności VMware vSphere
-order: 08
 updated: 2020-06-29
 ---
 

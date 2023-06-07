@@ -1,9 +1,6 @@
 ---
 title: Reverse DNS einer Public Cloud Instanz konfigurieren
 excerpt: Erfahren Sie hier, wie Sie die Reverse DNS-Auflösung bearbeiten
-slug: reverse-dns-konfigurieren-instanz
-section: Verwaltung im OVHcloud Kundencenter
-order: 7
 updated: 2021-11-12
 ---
 
@@ -51,13 +48,13 @@ Sie können den Reverse-Pfad auch direkt mithilfe des Icons in der Spalte "**Rev
 >
 Wenn die Änderung nicht wie erwartet funktioniert, überprüfen Sie, ob der Eintrag vom Typ `A` in der DNS-Zone Ihres Domainnamens korrekt konfiguriert ist. Bedenken Sie, dass es bis zu 24 Stunden dauern kann, bis DNS-Zonenänderungen wirksam sind, falls Sie den `A`-Eintrag erst kürzlich bearbeitet haben.
 >
-Wenn die Domain von OVHcloud als Registrar verwaltet wird und OVHcloud DNS-Server verwendet, können Sie den Anweisungen in [unserer Anleitung zu DNS](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/) folgen.
+Wenn die Domain von OVHcloud als Registrar verwaltet wird und OVHcloud DNS-Server verwendet, können Sie den Anweisungen in [unserer Anleitung zu DNS](/pages/web/domains/dns_zone_edit) folgen.
 >
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Erste Schritte mit Ihrer Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/)
+[Erste Schritte mit Ihrer Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/)
+[Bearbeiten der OVHcloud DNS-Zone](/pages/web/domains/dns_zone_edit)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

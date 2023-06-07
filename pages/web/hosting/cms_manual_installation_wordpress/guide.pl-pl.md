@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Zainstaluj ręcznie WordPress"
 excerpt: "Dowiedz się, jak ręcznie zainstalować CMS WordPress"
-slug: cms_-_reczna_instalacja_modulu_wordpress
-section: CMS
-order: 04
 updated: 2023-04-06
 ---
 
@@ -26,9 +23,9 @@ Tutorial ten pomoże Ci ręcznie zainstalować CMS (Content Management System) W
 
 > [!success]
 >
-> Aby zainstalować moduł WordPress **automatycznie** z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), zapoznaj się z naszą dokumentacją dotyczącą [instalacji modułu za pomocą jednego kliknięcia](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/).
+> Aby zainstalować moduł WordPress **automatycznie** z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), zapoznaj się z naszą dokumentacją dotyczącą [instalacji modułu za pomocą jednego kliknięcia](/pages/web/hosting/cms_install_1_click_modules).
 >
-> Aby zainstalować **ręcznie inny CMS** (Joomla!, Drupal, PrestaShop), zapoznaj się z naszą dokumentacją dotyczącą [ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/).
+> Aby zainstalować **ręcznie inny CMS** (Joomla!, Drupal, PrestaShop), zapoznaj się z naszą dokumentacją dotyczącą [ręczna instalacja CMS](/pages/web/hosting/cms_manual_installation).
 >
 
 **Dowiedz się, jak ręcznie zainstalować CMS WordPress.**
@@ -45,7 +42,7 @@ Tutorial ten pomoże Ci ręcznie zainstalować CMS (Content Management System) W
 
 Aby zainstalować CMS **WordPress** na Twoim hostingu [hosting](https://www.ovhcloud.com/pl/web-hosting/), konieczne są pewne przygotowania.
 
-Postępuj zgodnie z **wszystkie etapy** opisane w tutorialu dotyczącym [Ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/) i przejdź do etapu 2 poniżej.
+Postępuj zgodnie z **wszystkie etapy** opisane w tutorialu dotyczącym [Ręczna instalacja CMS](/pages/web/hosting/cms_manual_installation) i przejdź do etapu 2 poniżej.
 
 ### Etap 2 - zakończenie ręcznej instalacji <a name="step3"></a>
 
@@ -71,7 +68,7 @@ WordPress poprosi Cię o pobranie danych do logowania do bazy danych:
 
 ![hosting](images/WPstart.png){.thumbnail}
 
-Przygotuj dane do logowania do bazy danych (w razie potrzeby sprawdź **etap 1.4** tutoriala na stronie [ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/)), następnie kliknij na `Let's go !`{.action}, aby kontynuować.
+Przygotuj dane do logowania do bazy danych (w razie potrzeby sprawdź **etap 1.4** tutoriala na stronie [ręczna instalacja CMS](/pages/web/hosting/cms_manual_installation)), następnie kliknij na `Let's go !`{.action}, aby kontynuować.
 
 Pojawi się następująca strona:
 
@@ -82,7 +79,7 @@ Wpisz wymagane informacje dotyczące bazy danych:
 - *Database Name*: nazwa ta została zdefiniowana podczas tworzenia bazy danych w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 - *Username*: nazwa bazy danych jest identyczna, jeśli korzystasz z bazy danych zawartej w Twoim hostingu.
-W przypadku baz danych utworzonych w ramach usługi Web Cloud Databases, zapoznaj się z informacjami podanymi w przewodniku **etap 1.4** w przewodniku dotyczącym [ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/).
+W przypadku baz danych utworzonych w ramach usługi Web Cloud Databases, zapoznaj się z informacjami podanymi w przewodniku **etap 1.4** w przewodniku dotyczącym [ręczna instalacja CMS](/pages/web/hosting/cms_manual_installation).
 
 - *Password*: otrzymasz e-mail podczas tworzenia bazy danych. Możliwe, że zmieniłeś ją w międzyczasie.
 
@@ -95,7 +92,7 @@ W przypadku baz danych utworzonych w ramach usługi Web Cloud Databases, zapozna
 > - Nazwa serwera bazy danych Web Cloud Databases zaczyna się od Twojego identyfikatora klienta OVHcloud i ma następującą formę: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` gdzie **"X"** należy zastąpić odniesieniem do Twojej usługi Web Cloud Databases.
 >
 
-- *Table Prefix*: jeśli instalacja jest wykonywana z nową bazą danych, wprowadź odpowiedni prefiks. Jeśli używasz bazy danych wykorzystywanej już przez inną stronę WWW, sprawdź **etap 1.4** tutoriala na [ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/), aby nie wpisywać prefiksu tabeli już używanego w Twojej bazie danych.
+- *Table Prefix*: jeśli instalacja jest wykonywana z nową bazą danych, wprowadź odpowiedni prefiks. Jeśli używasz bazy danych wykorzystywanej już przez inną stronę WWW, sprawdź **etap 1.4** tutoriala na [ręczna instalacja CMS](/pages/web/hosting/cms_manual_installation), aby nie wpisywać prefiksu tabeli już używanego w Twojej bazie danych.
 
 Kliknij polecenie `Submit`{.action}, aby potwierdzić dane do logowania do bazy danych.
 

@@ -1,9 +1,6 @@
 ---
 title: Zarządzanie grupą licencji Microsoft 365 OVHcloud
-slug: zamowienie_grupy_licencji_office_365_ovh
 excerpt: Dowiedz się, jak zamówić licencję Microsoft 365 i zarządzać nią w Panelu klienta OVHcloud.
-section: Office
-order: 02
 updated: 2021-09-09
 ---
 
@@ -108,6 +105,6 @@ Podaj przyczyny rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
 
 ## Sprawdź również
 
-[Skorzystaj ze zdalnego pulpitu z Microsoft 365 apps](https://docs.ovh.com/pl/microsoft-collaborative-solutions/office365-proplus-biuro-a-zdalne/)
+[Skorzystaj ze zdalnego pulpitu z Microsoft 365 apps](/pages/web/microsoft-collaborative-solutions/office_proplus)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

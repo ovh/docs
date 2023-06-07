@@ -1,7 +1,5 @@
 ---
 title: Extensions
-slug: extensions
-section: Php
 updated: 2022-06-02
 ---
 

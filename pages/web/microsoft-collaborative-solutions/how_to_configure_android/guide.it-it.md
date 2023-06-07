@@ -1,9 +1,6 @@
 ---
 title: 'Configurare un account Exchange su Android tramite l’applicazione Gmail'
-slug: exchange_configurazione_di_android
 excerpt: 'Scopri come configurare un account Exchange su Android tramite l’applicazione Gmail'
-section: 'Configurazione su smartphone/tablet'
-order: 02
 updated: 2018-03-12
 ---
 
@@ -73,6 +70,6 @@ OVHcloud ti propone un'applicazione Web che dispone di [funzionalità collaborat
 
 ## Per saperne di più
 
-[Configurare un indirizzo email su Android tramite l’applicazione Gmail](https://docs.ovh.com/it/emails/configurazione-android-6/){.external}.
+[Configurare un indirizzo email su Android tramite l’applicazione Gmail](/pages/web/emails/how_to_configure_android){.external}.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

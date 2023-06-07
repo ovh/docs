@@ -1,11 +1,8 @@
 ---
 title: Elenco dei servizi e delle licenze inclusi (EN)
-slug: available-services
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/nutanix/available-services/'
+    canonical: '/pages/cloud/nutanix/02-available-services'
 excerpt: 'Presentation of the included services and licences in the Nutanix on OVHcloud offer'
-section: Per iniziare
-order: 02
 updated: 2022-09-20
 ---
 

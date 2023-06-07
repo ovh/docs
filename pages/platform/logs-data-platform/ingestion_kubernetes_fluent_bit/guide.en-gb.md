@@ -1,9 +1,6 @@
 ---
 title: Pushing logs from software - Kubernetes and Fluent Bit
-slug: logs-data-platform-kubernetes-fluent-bit
-order: 09
 excerpt: All the logs of your pods in one place
-section: Use cases
 updated: 2022-11-15
 ---
 
@@ -172,7 +169,7 @@ data:
     [PARSER]
         Name   apache_error
         Format regex
-        Regex  ^\[[^ ]* (?<time>[^\]]*)\] \[(?<level>[^\]]*)\](?: \[pid (?<pid>[^\]]*)\])?( \[client (?<client>[^\]]*)\])? (?<message>.*)$
+        Regex  ^\[[^ ]* (?<time>[^\]]*)\] \[(?<level>[^\]]*)\](/pages/platform/logs-data-platform/ingestion_kubernetes_fluent_bit?: \[pid (?<pid>[^\]]*)\])?( \[client (?<client>[^\]]*)\])? (?<message>.*)$
 
     [PARSER]
         Name   nginx

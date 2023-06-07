@@ -1,11 +1,8 @@
 ---
 title: VMware HA (High Availability)
-slug: vmware-ha-high-availability
 routes:
-    canonical: 'https://docs.ovh.com/us/es/private-cloud/vmware-ha-high-availability/'
+    canonical: '/pages/cloud/private-cloud/vmware_ha_high_availability'
 excerpt: Gestionar la política de reinicio con la función HA
-section: Funcionalidades de VMware vSphere
-order: 02
 updated: 2020-11-18
 ---
 
@@ -21,7 +18,7 @@ La función principal de **VMware HA**(Alta disponibilidad) es reiniciar las má
 
 ## Requisitos
 
-- Estar conectado a la [interfaz vSphere](../instalar_el_vsphere_client/).
+- Estar conectado a la [interfaz vSphere](/pages/cloud/managed-bare-metal/vsphere-interface).
 - Tener contratado un [Managed Bare Metal de OVHcloud](https://www.ovhcloud.com/es/managed-bare-metal/){.external}.
 
 ## Procedimiento
@@ -93,7 +90,7 @@ En caso de que falle un almacén de datos con estado APD (all path down), se pue
 
 ##### Supervisión de las MV
 
-La supervisión de las máquinas virtuales está disponible después de instalar las [VMware tools](../instalar_las_vmware_tools/).
+La supervisión de las máquinas virtuales está disponible después de instalar las [VMware tools](/pages/cloud/managed-bare-metal/vmware_tools_install).
 En caso de no haber respuesta a través de las **tools**(latidos), la máquina virtual se reiniciará de forma automática. Se puede realizar una configuración avanzada con respecto a esta funcionalidad (por ejemplo, con intervalos de reinicio).
 
 ![Supervisión de las MV](images/HAparam5.PNG){.thumbnail}

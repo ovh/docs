@@ -1,9 +1,6 @@
 ---
 title: Utilizza SVN
-slug: hosting_condiviso_come_utilizzare_svn
 excerpt: Scopri come utilizzare SVN in SSH sul tuo hosting Web
-section: FTP e SSH
-order: 09
 updated: 2021-01-06
 ---
 
@@ -30,13 +27,13 @@ SVN, che è l'abbreviazione di "sovversione", è un sistema di gestione delle ve
 ## Pre-obbligatorio
 
 - Disporre di un'[offerta di hosting Web](https://www.ovhcloud.com/it/web-hosting/) che permette una connessione SSH (**a partire dall'offerta Pro**)
-- Connettersi in SSH al tuo hosting Web (consulta la nostra guida [Utilizzare l'accesso SSH al tuo hosting Web](../hosting_condiviso_il_protocollo_ssh/))
+- Connettersi in SSH al tuo hosting Web (consulta la nostra guida [Utilizzare l'accesso SSH al tuo hosting Web](/pages/web/hosting/ssh_on_webhosting))
 
 ## Procedura
 
 ### Creazione del deposito
 
-Una volta connesso in [SSH al tuo hosting](../hosting_condiviso_il_protocollo_ssh/){.external}, crea la directory di root dei depositi SVN e poi la deposizione.
+Una volta connesso in [SSH al tuo hosting](/pages/web/hosting/ssh_on_webhosting){.external}, crea la directory di root dei depositi SVN e poi la deposizione.
 
 Ti basta digitare il comando:
 
@@ -64,7 +61,7 @@ ls -la
 
 Prima di proseguire, sarà necessario creare un paio di chiavi SSH dal dispositivo che utilizzerai per connetterti al deposito SVN.
 
-Segui la guida [Creare chiavi SSH](https://docs.ovh.com/it/public-cloud/creare-chiave-ssh/). Non è necessario seguire lo step [Importa la tua chiave SSH nello Spazio Cliente OVHcloud](https://docs.ovh.com/it/public-cloud/creare-chiave-ssh/#importa-la-chiave-ssh-nello-spazio-cliente) in questa guida.
+Segui la guida [Creare chiavi SSH](/pages/platform/public-cloud/public-cloud-first-steps#step-1-crea-chiavi-ssh/). Non è necessario seguire lo step [Importa la tua chiave SSH nello Spazio Cliente OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#step-1-crea-chiavi-ssh/#importa-la-chiave-ssh-nello-spazio-cliente) in questa guida.
 
 ### Aggiunta della chiave pubblica sull'hosting
 
@@ -89,7 +86,7 @@ Segui la chiave precedentemente creata, il tutto sulla stessa linea.
 > Sostituisci "/home.XXX/loginFTP" e "john" con le credenziali SSH.
 > Per conoscere le cifre da utilizzare per sostituire "/home.XXX/loginFTP", digita il comando "pwd" in SSH.
 >
-> Per maggiori informazioni, consulta la guida [Utilizzare l'accesso SSH di un hosting Web](../hosting_condiviso_il_protocollo_ssh/){.external}.
+> Per maggiori informazioni, consulta la guida [Utilizzare l'accesso SSH di un hosting Web](/pages/web/hosting/ssh_on_webhosting){.external}.
 > 
 
 ![hosting](images/3080.png){.thumbnail}
@@ -155,6 +152,6 @@ svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 
 ## Per saperne di più
 
-[Utilizza l'accesso SSH di un hosting Web](../hosting_condiviso_il_protocollo_ssh/){.external}
+[Utilizza l'accesso SSH di un hosting Web](/pages/web/hosting/ssh_on_webhosting){.external}
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

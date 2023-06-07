@@ -1,11 +1,8 @@
 ---
 title: Comment résilier votre offre Managed Bare Metal 
-slug: comment-resilier-le-managed-bare-metal
 routes:
-    canonical: 'https://docs.ovh.com/ca/fr/private-cloud/comment-resilier-le-private-cloud/'
+    canonical: '/pages/cloud/private-cloud/comment_resilier_le_private_cloud'
 excerpt: Découvrez comment demander la résiliation d'une infrastructure Managed Bare Metal
-section: Fonctionnalités OVHcloud
-order: 09
 updated: 2020-11-18
 ---
 

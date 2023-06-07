@@ -1,9 +1,6 @@
 ---
 title: "Commander un projet Public Cloud via l'API OVHcloud"
 excerpt: "Découvrez comment commander votre projet Public Cloud avec l'API OVHcloud"
-slug: commander-projet-public-cloud-api
-section: Gestion de projets
-order: 1
 updated: 2020-12-09
 ---
 
@@ -18,8 +15,8 @@ La création d'un projet est la première étape du déploiement d'[instances Pu
 ## Prérequis
 
 - Disposer d'identifiants OVHcloud valides
-- Disposer d'un [mode de paiement](https://docs.ovh.com/fr/billing/manage-payment-methods/) valide et enregistré dans votre compte OVHcloud
-- Être familiarisé avec le [fonctionnement de l'APIv6 OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/).
+- Disposer d'un [mode de paiement](/pages/account/billing/manage-payment-methods) valide et enregistré dans votre compte OVHcloud
+- Être familiarisé avec le [fonctionnement de l'APIv6 OVHcloud](/pages/account/api/first-steps).
 
 ## En pratique
 

@@ -1,9 +1,6 @@
 ---
 title: 'Preparing an environment for using the OpenStack API'
-slug: prepare_the_environment_for_using_the_openstack_api
 excerpt: 'Install the OpenStack environment to manage your instances via the API'
-section: OpenStack
-order: 1
 updated: 2022-03-30
 ---
 
@@ -174,6 +171,6 @@ nova help
 
 ## Go further
 
-[Setting OpenStack environment variables](https://docs.ovh.com/asia/en/public-cloud/set-openstack-environment-variables/).
+[Setting OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 Join our community of users on <https://community.ovh.com/en/>.

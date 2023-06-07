@@ -1,9 +1,6 @@
 ---
 title: 'Web hosting: Using PuTTy on Windows'
 excerpt: 'Web hosting: Using PuTTy on Windows'
-slug: web_hosting_using_putty_on_windows
-section: FTP and SSH
-order: 08
 updated: 2020-05-05
 ---
 
@@ -22,7 +19,7 @@ You will also need your FTP credentials
 - FTP password.
 
 You can find this information in your control panel. Go to the FTP section or follow
-[this guide](../log-in-to-storage-ftp-web-hosting/).
+[this guide](/pages/web/hosting/ftp_connection).
 
 
 ## Run PuTTy

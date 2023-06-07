@@ -1,8 +1,6 @@
 ---
 title: Zarządzanie fakturami OVHcloud
-slug: zarzadzanie-fakturami-ovhcloud
 excerpt: Dowiedz się, jak zarządzać fakturami i związanymi z nimi płatnościami
-section: Płatności
 updated: 2022-05-12
 ---
 
@@ -27,7 +25,7 @@ OVHcloud oddaje do Twojej dyspozycji Panel klienta, na którym możesz przegląd
 
 ## Wymagania początkowe
 
-- Zalogowanie się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) jako [kontakt księgowy](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/) dla Twojej usługi.
+- Zalogowanie się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) jako [kontakt księgowy](/pages/account/customer/managing_contacts) dla Twojej usługi.
 
 ## W praktyce
 
@@ -117,16 +115,16 @@ Aby uregulować zaległe płatności, kliknij menu `Masowe operacje`{.action}, a
 
 ![Spłata zaległej należności](images/pay_debt.png){.thumbnail}
 
-Zostanie wówczas [utworzone zamówienie](https://docs.ovh.com/pl/billing/zarzadzanie-zamowieniami-ovh/#zamowienie) do opłacania faktur. Po dokonaniu płatności saldo zostanie uregulowane.
+Zostanie wówczas [utworzone zamówienie](/pages/account/billing/managing_ovh_orders#zamowienie) do opłacania faktur. Po dokonaniu płatności saldo zostanie uregulowane.
 
 #### Zlecenie anulowania faktury
 
 > [!primary]
 >
-> Aby zlecić rezygnację z usługi w dniu jej wygaśnięcia, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](https://docs.ovh.com/pl/billing/how-to-cancel-your-services/).
+> Aby zlecić rezygnację z usługi w dniu jej wygaśnięcia, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/account/billing/how_to_cancel_services).
 >
 
-Jeśli otrzymałeś fakturę, której nie uważasz za słuszną i chcesz zwrócić się o jej zwrot lub skorzystać z prawa do odstąpienia od umowy (https://docs.ovh.com/pl/billing/zarzadzanie-zamowieniami-ovh/#korzystanie-z-prawa-do-odstapienia-od-umowy), możesz złożyć skargę w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), z zastrzeżeniem zastosowania naszych [Ogólnych warunków korzystania z Usług](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-pl.pdf).
+Jeśli otrzymałeś fakturę, której nie uważasz za słuszną i chcesz zwrócić się o jej zwrot lub skorzystać z prawa do odstąpienia od umowy (/pages/account/billing/managing_ovh_orders#korzystanie-z-prawa-do-odstapienia-od-umowy), możesz złożyć skargę w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), z zastrzeżeniem zastosowania naszych [Ogólnych warunków korzystania z Usług](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-pl.pdf).
 <br> Kliknij w prawym górnym rogu ekranu Twojej nazwy użytkownika, a następnie kliknij przycisk `Utwórz zgłoszenie`{.action}.
 
 
@@ -145,9 +143,9 @@ W tej sekcji możesz również wyeksportować dokumenty potwierdzające płatno�
 
 ## Sprawdź również
 
-[Zarządzanie odnawianiem usług](https://docs.ovh.com/pl/billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/)
+[Zarządzanie odnawianiem usług](/pages/account/billing/how_to_use_automatic_renewal)
 
-[Zarządzanie sposobami płatności](https://docs.ovh.com/pl/billing/zarzadzanie-sposobami-platnosci/)
+[Zarządzanie sposobami płatności](/pages/account/billing/manage-payment-methods)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
 

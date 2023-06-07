@@ -1,9 +1,6 @@
 ---
 title: Créer et utiliser des comptes de ressource
-slug: exchange-utilisation-des-comptes-de-ressource
 excerpt: Ajouter et utiliser les comptes de ressource avec l’offre Exchange
-section: Fonctionnalités des comptes Exchange
-order: 05
 updated: 2020-06-05
 ---
 
@@ -46,7 +43,7 @@ Cliquez sur `Suivant`{.action} pour passer au résumé, puis confirmez la tâche
 
 ### Étape 2 : utiliser des ressources
 
-Vos ressources peuvent être gérées à partir du tableau de l'onglet « Ressources ». Cliquez sur `...`{.action} pour modifier ou supprimer une ressource. L'option  `Configurer les délégations`{.action} s'affichera également. Avec cette option, vous pourrez déléguer l'accès de la même manière que pour un compte Exchange. Retrouvez les détails dans [ce guide](../exchange-donner-les-droits-full-access-sur-un-compte/).
+Vos ressources peuvent être gérées à partir du tableau de l'onglet « Ressources ». Cliquez sur `...`{.action} pour modifier ou supprimer une ressource. L'option  `Configurer les délégations`{.action} s'affichera également. Avec cette option, vous pourrez déléguer l'accès de la même manière que pour un compte Exchange. Retrouvez les détails dans [ce guide](/pages/web/microsoft-collaborative-solutions/feature_delegation).
 
 ![utiliser ressources](images/exchange-resources-step3.png){.thumbnail}
 
@@ -54,7 +51,7 @@ Vos ressources peuvent être gérées à partir du tableau de l'onglet « Ressou
 
 > [!primary]
 >
-Consultez également notre guide sur le [Partage de calendriers depuis l'interface OWA](../exchange-2016-partager-un-calendrier-via-le-webmail-owa/).
+Consultez également notre guide sur le [Partage de calendriers depuis l'interface OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing).
 >
 
 Connectez-vous à votre compte Exchange via le [webmail OVHcloud](https://www.ovh.com/fr/mail/). Basculez vers l'interface « Calendrier » en cliquant sur le « lanceur d'application » dans le coin supérieur gauche, puis en sélectionnant l'icône `Calendrier`{.action}.
@@ -119,10 +116,10 @@ Après avoir créé l'événement (en cliquant sur `Envoyer`{.action} dans la ba
 
 ## Aller plus loin
 
-[Consulter son compte Exchange depuis l’interface OWA](../exchange-2016-guide-utilisation-outlook-web-app/)
+[Consulter son compte Exchange depuis l’interface OWA](/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/)
 
-[Partager un calendrier depuis l’interface OWA](../exchange-2016-partager-un-calendrier-via-le-webmail-owa/)
+[Partager un calendrier depuis l’interface OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Partager un dossier depuis l’interface OWA](../exchange-2016-partager-un-dossier-via-le-webmail-owa/)
+[Partager un dossier depuis l’interface OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.

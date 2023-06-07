@@ -1,8 +1,6 @@
 ---
 title: 'Crear una partición de Windows en un servidor con RAID de hardware'
 excerpt: 'Esta guía explicará los pasos necesarios para crear una partición de Windows en un servidor con RAID de hardware.'
-slug: windows-raid-hard
-section: RAID y discos
 updated: 2018-07-24
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: AI Deploy - Update custom Docker images
-slug: deploy/update-custom-docker-image
 excerpt: How to update and use the Docker image of your AI Deploy app
-section: AI Deploy - Guides
-order: 08
 updated: 2023-05-04
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-deploy-update-custom-docker-image?id=kb_article_view&sysparm_article=KB0057968'

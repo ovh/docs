@@ -1,8 +1,6 @@
 ---
 title: Network Bridge einrichten
-slug: network-bridging
 excerpt: Erfahren Sie hier, wie Sie den Internet-Zugang Ihrer virtuellen Maschinen konfigurieren
-section: Netzwerk & IP
 updated: 2022-12-20
 ---
 
@@ -38,7 +36,7 @@ Bridged Networking kann verwendet werden, um Ihre virtuellen Maschinen zu konfig
 >
 > Diese Anleitung gilt nicht für Server der Reihen [Scale](https://www.ovhcloud.com/de/bare-metal/scale/) und [High Grade](https://www.ovhcloud.com/de/bare-metal/high-grade/).
 >
-> Verwenden Sie stattdessen die entsprechende [Konfigurationsanleitung](https://docs.ovh.com/de/dedicated/proxmox-network-hg-scale/).
+> Verwenden Sie stattdessen die entsprechende [Konfigurationsanleitung](/pages/cloud/dedicated/proxmox-network-HG-Scale).
 
 
 ## In der praktischen Anwendung

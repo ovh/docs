@@ -1,9 +1,6 @@
 ---
 title: Criar e utilizar uma conta partilhada
-slug: exchange-utilizacao-das-contas-partilhas
 excerpt: Adicionar e utilizar uma conta partilhada na sua oferta E-mail Exchange
-section: Funcionalidades das contas Exchange
-order: 06
 updated: 2021-06-15
 ---
 
@@ -103,10 +100,10 @@ A partir do Outlook, a sua conta será partilhada na coluna da esquerda, da mesm
 
 [Consultar a sua conta Exchange a partir da interface OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2016_guia_de_utilizacao_do_outlook_web_app/)
 
-[Delegar permissões numa conta Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_3013_atribuir_permissoes_full_access_a_uma_conta/)
+[Delegar permissões numa conta Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Partilhar um calendário através do webmail OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2016_partilhar_um_calendario_atraves_do_webmail_owa/)
+[Partilhar um calendário através do webmail OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Adicionar um rodapé para as suas contas Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_20132016_assinatura_automatica_-_disclaimer/)
+[Adicionar um rodapé para as suas contas Exchange](/pages/web/microsoft-collaborative-solutions/feature_footers)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

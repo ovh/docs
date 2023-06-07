@@ -1,9 +1,6 @@
 ---
 title: VLAN creation
-slug: creation-vlan
 excerpt: Find out how to create VLANs (vRack)
-section: OVHcloud Features
-order: 02
 updated: 2020-11-18
 ---
 
@@ -31,7 +28,7 @@ The first vDS has a single *portGroup* type, the VMnetwork being used to communi
 
 The second vDS also has a single *portGroup* type, with VLANs that can be used to isolate private communications within the Managed Bare Metal interface, and between different OVHcloud services that are vRack-compatible(Dedicated Server, Public Cloud...). 
 
-On this switch, 11 VLANs are created as standard (VLAN10 to VLAN20). By giving the `administrator` right on `Access to the V(x)LAN` in [the users management tab of your Control Panel](../control-panel-ovhcloud/#users-tab), you can create additional VLANs.
+On this switch, 11 VLANs are created as standard (VLAN10 to VLAN20). By giving the `administrator` right on `Access to the V(x)LAN` in [the users management tab of your Control Panel](/pages/cloud/managed-bare-metal/manager-ovhcloud#users-tab), you can create additional VLANs.
 
 First, go to your vSphere client's `networking` view. Deploy the **vrack** folder then right-click on the **dVS** ending in *-vrack* and finally click on `New Distributed Port Group`{.action}.
 

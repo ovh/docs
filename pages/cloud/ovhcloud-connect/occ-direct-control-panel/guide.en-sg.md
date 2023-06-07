@@ -1,9 +1,6 @@
 ---
 title: Installation of OVHcloud Connect Direct from the OVHcloud Control Panel
 excerpt: Find out how to set up your OVHcloud Connect Direct solution via the OVHcloud Control Panel
-slug: occ-direct-manager-setup
-section: Getting started
-order: 2
 updated: 2020-09-28
 ---
 
@@ -48,7 +45,7 @@ A message will confirm the vRack association.
 >
 
 > [!primary]
-> For more details on the differences between levels L2 and L3, see our [FAQ](../occdedicated-faq/#how-do-i-choose-between-a-layer-2-or-layer-3-cross-connection-for-the-osi-model).
+> For more details on the differences between levels L2 and L3, see our [FAQ](/pages/cloud/ovhcloud-connect/occdedicated-faq#how-do-i-choose-between-a-layer-2-or-layer-3-cross-connection-for-the-osi-model).
 >
 
 #### Configuration 

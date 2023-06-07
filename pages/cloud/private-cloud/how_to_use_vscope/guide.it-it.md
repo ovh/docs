@@ -1,11 +1,8 @@
 ---
 title: "Capire l'interfaccia vScope (EN)"
-slug: vscope
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/how_to_use_vscope/'
+    canonical: '/pages/cloud/private-cloud/how_to_use_vscope'
 excerpt: The vScope interface allows you to monitor your infrastructure
-section: Servizi e opzioni OVHcloud
-order: 01
 updated: 2022-01-28
 ---
 

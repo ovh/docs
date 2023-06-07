@@ -1,9 +1,6 @@
 ---
 title: Migrer une infrastructure vers Hosted Private Cloud
 excerpt: Découvrez comment gérer tous les aspects liés à la migration d'une infrastructure vers la solution Hosted Private Cloud
-slug: sddc-migration
-section: Premiers pas
-order: 6
 updated: 2021-12-06
 ---
 
@@ -20,7 +17,7 @@ La migration d'un service Hosted Private Cloud comprend deux aspects :
 
 > [!primary]
 >
-> Si vous choisissez de migrer une infrastructure vers un nouveau vDC, veuillez suivre [ce guide dédié](../vdc-migration).
+> Si vous choisissez de migrer une infrastructure vers un nouveau vDC, veuillez suivre [ce guide dédié](/pages/cloud/private-cloud/service-migration-vdc).
 >
 
 ## Prérequis
@@ -46,7 +43,7 @@ Nous aborderons dans ce guide les notions d'**infrastructure d'origine** et de *
 
 ##### **Contexte de connexion au Hosted Private Cloud**
 
-Pour vous connecter à la plateforme VMware, vous pouvez choisir de bloquer l'accès au vSphere par défaut. Pour cela, consultez notre guide sur la [politique d'accès au vCenter](../changer-la-politique-d-acces-au-vcenter/).
+Pour vous connecter à la plateforme VMware, vous pouvez choisir de bloquer l'accès au vSphere par défaut. Pour cela, consultez notre guide sur la [politique d'accès au vCenter](/fr/private-cloud/changer-la-politique-d-acces-au-vcenter/).
 
 Suite au changement de politique d'accès, si celle-ci est passée en « restreinte », il faut bien sûr appliquer les mêmes IPs de connexion sur le Hosted Private Cloud de destination que sur l'infrastructure d'origine.
 
@@ -54,19 +51,19 @@ Suite au changement de politique d'accès, si celle-ci est passée en « restrei
 
 Dans le cycle de vie de l'infrastructure d'origine, une liste d'utilisateurs peut avoir été créée pour des besoins métiers, ou des besoins organisationnels. Vous devez donc les créer à nouveau sur le Hosted Private Cloud de destination et leur attribuer les droits adéquats, en fonction de la configuration du Hosted Private Cloud de destination.
 
-Consultez à cet effet nos guides pour [changer les droits d'un utilisateur](../changer-les-droits-d-un-utilisateur/), [modifier le mot de passe d'un utilisateur](../changement-du-mot-de-passe-utilisateur/) et [associer un e-mail à un utilisateur](../associer-email-a-un-utilisateur/).
+Consultez à cet effet nos guides pour [changer les droits d'un utilisateur](../changer-les-droits-d-un-utilisateur/), [modifier le mot de passe d'un utilisateur](../changement-du-mot-de-passe-utilisateur/) et [associer un e-mail à un utilisateur](/pages/cloud/private-cloud/vsphere_edit_user).
 
 ##### **KMS**
 
 Si des machines virtuelles sont protégées par un chiffrement et que cela constitue un prérequis pour le Hosted Private Cloud de destination, il sera nécessaire de recréer le contexte de chiffrement sur ce dernier.
 
-Consultez donc notre guide sur l'[activation du chiffrement des machines virtuelles](../vm-encrypt/) afin d'activer le KMS sur le Hosted Private Cloud de destination.
+Consultez donc notre guide sur l'[activation du chiffrement des machines virtuelles](/pages/cloud/private-cloud/vm_encrypt) afin d'activer le KMS sur le Hosted Private Cloud de destination.
 
 ##### **Certifications**
 
 Pour des raisons de conformité, les options [PCI DSS](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/safety-compliance/pci-dss/) et [HDS](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/safety-compliance/hds/)  peuvent avoir été activées sur l'infrastructure d'origine.
 
-Ces options doivent donc être réactivées sur le Hosted Private Cloud de destination. À cet effet, consultez [notre guide sur leur activation](../activer-l-option-hds-ou-pci-dss/).
+Ces options doivent donc être réactivées sur le Hosted Private Cloud de destination. À cet effet, consultez [notre guide sur leur activation](/pages/cloud/private-cloud/activer_l_option_hds_hipaa_ou_pci_dss).
 
 #### Réseau
 
@@ -77,7 +74,7 @@ Ces options doivent donc être réactivées sur le Hosted Private Cloud de desti
 > Des VMnetwork situés dans la même région ne pourront pas être inter-connectés dans un vRack.
 >
 
-Vous pouvez, dans le cadre d'une migration, lier vos services Hosted Private Cloud au sein du même vRack. Consultez notre guide sur [l'utilisation du Private Cloud au sein d'un vRack](../utiliser-le-private-cloud-au-sein-d-un-vrack/).
+Vous pouvez, dans le cadre d'une migration, lier vos services Hosted Private Cloud au sein du même vRack. Consultez notre guide sur [l'utilisation du Private Cloud au sein d'un vRack](/pages/cloud/private-cloud/using_private_cloud_in_vrack).
 
 ##### **Réseau public**
 
@@ -88,7 +85,7 @@ Vous pouvez, dans le cadre d'une migration, lier vos services Hosted Private Clo
 
 Si les adresses IP publiques attachées à l'infrastructure d'origine sont nécessaires sur le Hosted Private Cloud de destination, il sera nécessaire d'en effectuer le transfert.
 
-Consultez notre guide pour [migrer des blocs IP entre deux services Hosted Private Cloud](../ajout-de-bloc-ip/#migrer-un-bloc-ip-entre-deux-hosted-private-cloud).
+Consultez notre guide pour [migrer des blocs IP entre deux services Hosted Private Cloud](/pages/cloud/private-cloud/ajout_de_bloc_ip#migrer-un-bloc-ip-entre-deux-hosted-private-cloud).
 
 La vidéo ci-dessous vous détaillera également comment déplacer un bloc d'adresses IP entre deux Hosted Private Cloud.
 
@@ -101,7 +98,7 @@ La vidéo ci-dessous vous détaillera également comment déplacer un bloc d'adr
 
 ##### **1.1 VMware HA**
 
-La migration implique de refaire la configuration du VMware High Availability (HA), notamment l'ordre et la priorité de boot. Consultez [notre guide sur sa configuration](../vmware-ha-high-availability/).
+La migration implique de refaire la configuration du VMware High Availability (HA), notamment l'ordre et la priorité de boot. Consultez [notre guide sur sa configuration](/pages/cloud/private-cloud/vmware_ha_high_availability).
 
 Voici une liste d'éléments à prendre en compte :
 
@@ -116,7 +113,7 @@ L'applet de commande Powercli « Get-Cluster » renvoie des informations sur les
 
 ##### **1.2 VMware DRS**
 
-La migration implique la reconfiguration de la fonction VMware DRS (Distributed Resource Scheduler), en particulier des règles d'affinité ou d'anti-affinité pour les groupes d'hôtes et de VMs. Consultez notre guide sur la [configuration de VMware DRS](../vmware-drs-distributed-ressource-scheduler-new/).
+La migration implique la reconfiguration de la fonction VMware DRS (Distributed Resource Scheduler), en particulier des règles d'affinité ou d'anti-affinité pour les groupes d'hôtes et de VMs. Consultez notre guide sur la [configuration de VMware DRS](/pages/cloud/private-cloud/vmware_drs_distributed_ressource_scheduler_new).
 
 Voici une liste des éléments à prendre en compte:
 
@@ -155,11 +152,11 @@ Voici une liste des éléments à prendre en compte:
 
 ##### **1.5 vSAN**
 
-Si vSAN était activé sur votre infrastructure d'origine, il sera nécessaire de l'activer à nouveau sur le Hosted Private Cloud de destination. Consultez notre guide pour [mettre en œuvre l'hyperconvergence VMware avec vSAN](../vmware-vsan/).
+Si vSAN était activé sur votre infrastructure d'origine, il sera nécessaire de l'activer à nouveau sur le Hosted Private Cloud de destination. Consultez notre guide pour [mettre en œuvre l'hyperconvergence VMware avec vSAN](/pages/cloud/private-cloud/vmware_vsan).
 
 ##### ** 1.6 Réseaux vSphere**
 
-La migration implique la recréation des groupes de ports virtuels de vRack sur le Hosted Private Cloud de destination pour garantir la cohérence du réseau de VMs. Si des VLAN vRack sont en cours d'utilisation sur le vRack de l'infrastructure d'origine, ils peuvent être utilisés pour étendre le domaine L2 au Hosted Private Cloud de destination afin de permettre un plan de migration plus échelonné. Pour plus d'informations, consultez notre guide sur l'[Utilisation du cloud privé dans un vRack](../utiliser-le-private-cloud-au-sein-d-un-vrack/).
+La migration implique la recréation des groupes de ports virtuels de vRack sur le Hosted Private Cloud de destination pour garantir la cohérence du réseau de VMs. Si des VLAN vRack sont en cours d'utilisation sur le vRack de l'infrastructure d'origine, ils peuvent être utilisés pour étendre le domaine L2 au Hosted Private Cloud de destination afin de permettre un plan de migration plus échelonné. Pour plus d'informations, consultez notre guide sur l'[Utilisation du cloud privé dans un vRack](/pages/cloud/private-cloud/using_private_cloud_in_vrack).
 
 Voici une liste des éléments à prendre en compte:
 
@@ -189,7 +186,7 @@ Voici une liste des éléments à prendre en compte:
 - Liste des VMs en cours de sauvegarde
 - Paramètres de sauvegarde
 
-Pour plus d'informations, consultez notre guide pour [activer et utiliser Veeam Backup Managed](../veeam-backup-as-a-service/).
+Pour plus d'informations, consultez notre guide pour [activer et utiliser Veeam Backup Managed](/pages/cloud/private-cloud/veeam_backup_as_a_service).
 
 **Conseils d'automatisation :** L'API OVHcloud fournit des informations liées à chaque sauvegarde de VM via:
 
@@ -257,10 +254,10 @@ Les éléments suivants sont nécessaires :
 - des licences SPLA (sur l'infrastructure d'origine et le Hosted Private Cloud de destination);
 - une licence Veeam;
 - une adresse IP disponible sur l'infrastructure d'origine et le Hosted Private Cloud de destination;
-- une machine virtuelle [Veeam Backup & Replication](../../storage/veeam-backup-replication/) sur l'infrastructure d'origine;
-- [autoriser la machine virtuelle Veeam Backup & Replication à se connecter](../autoriser-des-ip-a-se-connecter-au-vcenter/) sur le vCenter d'origine et de destination.
+- une machine virtuelle [Veeam Backup & Replication](/pages/cloud/storage/backup/veeam_veeam_backup_replication) sur l'infrastructure d'origine;
+- [autoriser la machine virtuelle Veeam Backup & Replication à se connecter](/pages/cloud/private-cloud/autoriser_des_ip_a_se_connecter_au_vcenter) sur le vCenter d'origine et de destination.
 
-Consultez notre guide pour [mettre en place Veeam Backup & Replication](../../storage/veeam-backup-replication/).
+Consultez notre guide pour [mettre en place Veeam Backup & Replication](/pages/cloud/storage/backup/veeam_veeam_backup_replication).
 
 La vidéo ci-dessous vous détaillera comment configurer un Hosted Private Cloud avec la solution Veeam Backup & Replication.
 

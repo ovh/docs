@@ -1,9 +1,7 @@
 ---
 title: Comprobar la velocidad de los discos
 excerpt: Comprobar la velocidad de los discos
-slug: comprobar_la_velocidad_de_los_discos
 legacy_guide_number: g1956
-section: Almacenamiento
 updated: 2022-01-04
 ---
 
@@ -108,6 +106,6 @@ En este ejemplo, podemos ver cómo las prestaciones del disco corresponden a 891
 
 ## Más información
 
-[Crear y configurar un disco adicional en una instancia](https://docs.ovh.com/es/public-cloud/crear_y_configurar_un_disco_adicional_en_una_instancia/)
+[Crear y configurar un disco adicional en una instancia](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

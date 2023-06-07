@@ -1,9 +1,6 @@
 ---
 title: Installing a FaaS platform on OVHcloud Managed Kubernetes using OpenFaaS
-slug: installing-openfaas
 excerpt: Find out how to install a FaaS platform on OVHcloud Managed Kubernetes using OpenFaaS
-section: Serverless
-order: 0
 updated: 2020-05-12
 ---
 
@@ -53,9 +50,9 @@ At the end, the one that scored the best on our objectives was OpenFaaS, so we d
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-hello-world) documentation.
 
-You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/platform/kubernetes-k8s/installing-helm) tutorial.
 
 
 
@@ -312,7 +309,7 @@ In OpenFaaS you can write your these function on many languages, not only the us
 
 That also means that in order to create your own functions, you need to have [Docker](https://www.docker.com/){.external} installed in your workstation, and you will need to push the images in a Docker registry, either the official one or a private one.
 
-If you need a private registry, you can use our [OVHcloud Managed Private Registry](../../private-registry). For this tutorial we are choosing to deploy our image on the official Docker registry.
+If you need a private registry, you can use our [OVHcloud Managed Private Registry](/ca/en/private-registry). For this tutorial we are choosing to deploy our image on the official Docker registry.
 
 
 ## Writing our first function

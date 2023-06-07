@@ -1,9 +1,6 @@
 ---
 title: 'Publishing a website on your Web Hosting space'
-slug: web_hosting_how_to_get_my_website_online
 excerpt: 'Learn how to publish a website on your OVHcloud web hosting space'
-section: 'Getting started'
-order: 06
 updated: 2022-07-21
 ---
 
@@ -21,7 +18,7 @@ There are a multitude of different websites on the internet. Whether you are cre
 - You must have received an email confirming that your Web Hosting plan has been set up.
 - You must have a [domain name](https://www.ovhcloud.com/en-ie/domains/){.external} that can be used to access your website.
 - You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
-- being up-to-date in the [payments](https://docs.ovh.com/ie/en/billing/manage-ovh-bills/#pay-bills) and [renewals](https://docs.ovh.com/ie/en/billing/how-to-use-automatic-renewal-at-ovh/#renewal-management) of related services (domain name and web hosting plan).
+- being up-to-date in the [payments](/pages/account/billing/invoice_management#pay-bills) and [renewals](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan).
 
 ## Instructions
 
@@ -35,11 +32,11 @@ Having a clear idea of your objective is essential if your project is to be a su
 
 - **Create your website yourself.** This is a more technical solution that requires programming skills, but it does give you the option of creating a tailor-made project.
 
-- **Migrate an existing website to OVHcloud.** This solution may prove complicated if an interruption in service for the website concerned is not an option. To guide you through this process, you should consult the following guide: [“Migrating your website and emails to OVHcloud”](https://docs.ovh.com/ie/en/hosting/migrating-website-to-ovh/){.external}.
+- **Migrate an existing website to OVHcloud.** This solution may prove complicated if an interruption in service for the website concerned is not an option. To guide you through this process, you should consult the following guide: [“Migrating your website and emails to OVHcloud”](/pages/web/hosting/hosting_migrating_to_ovh){.external}.
 
 Once you have examined these various possibilities, you can choose one of two options:
 
-- **You wish to use our 1-click modules.** Refer to the instructions set out in our [“Install your website with 1-click modules”](https://docs.ovh.com/ie/en/hosting/web_hosting_web_hosting_modules/){.external} guide;
+- **You wish to use our 1-click modules.** Refer to the instructions set out in our [“Install your website with 1-click modules”](/pages/web/hosting/cms_install_1_click_modules){.external} guide;
 
 - **You do not wish to use our 1-click modules.** You will have to manually install your website on your hosting space. You may find the information set out in this documentation helpful, but it is no substitute for the assistance of a webmaster.
  
@@ -62,7 +59,7 @@ Make sure you have all the files for the website that you are looking to publish
 
 #### 2. Log in to your storage space
 
-If you have an FTP username, a password and a server address, you will be able to log in to your storage space. These elements were sent to you in the email informing you that your OVHcloud Web Hosting plan had been set up. If you are no longer in possession of the password, refer to the instructions set out in this guide: [“Changing the password for an FTP user”](https://docs.ovh.com/ie/en/hosting/modify-ftp-user-password/){.external}.
+If you have an FTP username, a password and a server address, you will be able to log in to your storage space. These elements were sent to you in the email informing you that your OVHcloud Web Hosting plan had been set up. If you are no longer in possession of the password, refer to the instructions set out in this guide: [“Changing the password for an FTP user”](/pages/web/hosting/ftp_change_password){.external}.
 
 To obtain the server address or username to allow you to access your storage space, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, then click on `Hosting Plans`{.action}. Select the name of the hosting plan concerned and click on the `FTP - SSH`{.action} tab.
 
@@ -143,10 +140,10 @@ As a reminder, if you encounter difficulties when publishing your website, we re
 
 ## Go further
 
-[Migrating your website and emails to OVHcloud](https://docs.ovh.com/ie/en/hosting/migrating-website-to-ovh/){.external}
+[Migrating your website and emails to OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-[Install your website with 1-click modules](https://docs.ovh.com/ie/en/hosting/web_hosting_web_hosting_modules/){.external}
+[Install your website with 1-click modules](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Modifying an FTP user password](https://docs.ovh.com/ie/en/hosting/modify-ftp-user-password/){.external}
+[Modifying an FTP user password](/pages/web/hosting/ftp_change_password){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

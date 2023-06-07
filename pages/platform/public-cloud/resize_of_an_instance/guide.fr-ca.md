@@ -1,10 +1,7 @@
 ---
 title: Redimensionner une instance
-slug: redimensionner-une-instance
 excerpt: "Découvrez comment redimensionner une instance depuis l'interface Horizon"
 legacy_guide_number: 1778
-section: Gestion depuis Horizon
-order: 13
 updated: 2021-11-22
 ---
 
@@ -29,8 +26,8 @@ En raison d'une activité accrue, ou simplement de nouveaux besoins, votre insta
 
 ## Prérequis
 
-- Avoir [créé une instance Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-3-creer-une-instance) dans votre compte OVHcloud
-- [Accéder à l'interface Horizon](../horizon/)
+- Avoir [créé une instance Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#etape-3-creer-une-instance) dans votre compte OVHcloud
+- [Accéder à l'interface Horizon](/pages/platform/public-cloud/introducing_horizon)
 
 ## En pratique
 

@@ -1,11 +1,8 @@
 ---
 title: 'Connecting to the UI'
 excerpt: ''
-slug: connecting-to-the-ui
-section: 'Getting started'
-order: 03
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-registry/connecting-to-the-ui/'
+    canonical: '/pages/platform/private-registry/connecting-to-the-ui'
 updated: 2021-09-24
 ---
 
@@ -39,7 +36,7 @@ OVHcloud Managed Private Registry service provides you a managed, authenticated 
 
 ## Requirements
 
-- An OVHcloud Managed Private Registry (see the [creating a private registry](../creating-a-private-registry/) guide for more information)
+- An OVHcloud Managed Private Registry (see the [creating a private registry](/pages/platform/private-registry/creating-a-private-registry) guide for more information)
 
 ## Instructions
 
@@ -57,4 +54,4 @@ Now you can use the Harbor UI to manage your private registry
 
 ## Go further
 
-To go further you can look at our guide on [Managing users and projects](../managing-users-and-projects/).
+To go further you can look at our guide on [Managing users and projects](/pages/platform/private-registry/managing-users-and-projects).

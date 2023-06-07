@@ -1,9 +1,6 @@
 ---
 title: "Eliminar una cuenta de correo"
-slug: delete-email-account
 excerpt: "Cómo eliminar o restaurar una dirección de correo electrónico en un servicio de correo"
-section: 'Gestión de la cuenta de correo'
-order: 02
 updated: 2023-01-27
 ---
 
@@ -34,7 +31,7 @@ Quiere:
 OVHcloud ofrece 3 soluciones de correo electrónico. El concepto de eliminación de cuenta es diferente según su solución.
 
 - **Email MXplan**: esta solución se vende en forma de pack de varias cuentas de correo. Cuando elimina una cuenta, libera una ubicación en su pack. 
-- **Email Pro** y **Hosted Exchange**: estos dos productos son a la carta, usted contrata una suscripción individual por cuenta e-mail. Si quiere eliminar una dirección de correo, deberá **restaurar** la cuenta de correo. Una vez que haya restaurado la cuenta de correo, puede reutilizar la cuenta para crear una nueva dirección de correo. También puede [dar de baja la suscripción](https://docs.ovh.com/es/microsoft-collaborative-solutions/gestion-de-la-facturacion-exchange/#eliminar-cuentas) de esta cuenta si desea eliminarla definitivamente.
+- **Email Pro** y **Hosted Exchange**: estos dos productos son a la carta, usted contrata una suscripción individual por cuenta e-mail. Si quiere eliminar una dirección de correo, deberá **restaurar** la cuenta de correo. Una vez que haya restaurado la cuenta de correo, puede reutilizar la cuenta para crear una nueva dirección de correo. También puede [dar de baja la suscripción](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#eliminar-cuentas) de esta cuenta si desea eliminarla definitivamente.
 
 ### Eliminar o restaurar una cuenta de correo
 
@@ -58,13 +55,13 @@ Seleccione la pestaña correspondiente a su servicio de correo:
 > **Email Pro**
 >>
 >> Haga clic en `Email Pro`{.action} y seleccione el nombre de la plataforma correspondiente. Abra la pestaña `Cuentas de correo`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes. Haga clic en el botón <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> situado al final de la línea correspondiente a la cuenta que desea modificar y, seguidamente, en `Restaurar la cuenta`{.action}.<br><br>
->> Después de restaurar su cuenta, si desea eliminarla definitivamente, deberá darlo de baja. Para ello, consulte nuestra guía [Gestionar la facturación de sus cuentas Email-Pro](https://docs.ovh.com/es/emails-pro/gestion-facturacion-emailpro/).<br><br>
+>> Después de restaurar su cuenta, si desea eliminarla definitivamente, deberá darlo de baja. Para ello, consulte nuestra guía [Gestionar la facturación de sus cuentas Email-Pro](/pages/web/emails-pro/manage_billing_emailpro).<br><br>
 >>![Correo electrónico](images/emailpro-reset.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
 >> Haga clic en `Microsoft`{.action}, luego en `Exchange`{.action}, y seleccione el nombre de la plataforma correspondiente. Abra la pestaña `Cuentas de correo`{.action}. Haga clic en el botón <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> situado al final de la línea correspondiente a la cuenta que desea modificar y, seguidamente, en `Reiniciar`{.action}.<br><br>
->> Después de restaurar su cuenta, si desea eliminarla definitivamente, deberá darlo de baja. Para ello, consulte nuestra guía [Gestionar la facturación de sus cuentas Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/gestion-de-la-facturacion-exchange/).<br><br>
+>> Después de restaurar su cuenta, si desea eliminarla definitivamente, deberá darlo de baja. Para ello, consulte nuestra guía [Gestionar la facturación de sus cuentas Exchange](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange).<br><br>
 >>![Correo electrónico](images/exchange-reset.png){.thumbnail}<br>
 >>
 
@@ -80,15 +77,15 @@ En la siguiente tabla encontrará la información necesaria para identificar su 
 
 ## Más información
 
-[Primeros pasos con la solución MXplan](https://docs.ovh.com/es/emails/primeros-pasos-correo-compartido/)
+[Primeros pasos con la solución MXplan](/pages/web/emails/email_generalities)
 
-[Primeros pasos con la solución Email Pro](https://docs.ovh.com/es/emails-pro/primera-configuracion/)
+[Primeros pasos con la solución Email Pro](/pages/web/emails-pro/first_config)
 
-[Primeros pasos con la solución Hosted Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_20132016_primera_configuracion_del_servicio/)
+[Primeros pasos con la solución Hosted Exchange](/pages/web/microsoft-collaborative-solutions/exchange_starting_hosted)
 
-[Gestionar la facturación de las cuentas Email Pro](https://docs.ovh.com/es/emails-pro/gestion-facturacion-emailpro/)
+[Gestionar la facturación de las cuentas Email Pro](/pages/web/emails-pro/manage_billing_emailpro)
 
-[Gestionar la facturación de las cuentas Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/gestion-de-la-facturacion-exchange/)
+[Gestionar la facturación de las cuentas Exchange](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange)
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 

@@ -1,9 +1,6 @@
 ---
 title: 'Tutorial - Crear una página web personal en OVHcloud'
-slug: create-your-own-web-page
 excerpt: 'Cómo crear su primera página web en un alojamiento web gratuito Start 10M'
-section: "Tutoriales"
-order: 012
 updated: 2023-02-17
 ---
 
@@ -385,13 +382,13 @@ Para mostrar el destino del enlace en una nueva pestaña, solo tiene que añadir
 
 ### ¿Cómo almacenar contenido en mi alojamiento?
 
-Para que sus páginas, y por tanto su sitio web, sean visibles para todo el mundo, debe guardarlas en su alojamiento (debe activar su alojamiento [como se indica en esta guía](https://docs.ovh.com/es/hosting/activar-start10m/)).
+Para que sus páginas, y por tanto su sitio web, sean visibles para todo el mundo, debe guardarlas en su alojamiento (debe activar su alojamiento [como se indica en esta guía](/pages/web/hosting/activate_start10m)).
 
 La transferencia de los archivos se realiza a través de un protocolo dedicado: el **FTP** (para **F**ile **T**ransfert **P**rotocol). Utilice un programa dedicado para realizar esta operación, como [FileZilla](https://filezilla-project.org/download.php?type=client) o [Cyberduck](https://cyberduck.io/download/).
 
 ### Desplegar su sitio web por FTP
 
-Para subir los archivos a su alojamiento, consulte la guía [FileZilla](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/) utilizada.
+Para subir los archivos a su alojamiento, consulte la guía [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide) utilizada.
 
 Una vez que los archivos se hayan transferido por completo al alojamiento, podrá ver el resultado introduciendo su dominio en la barra de direcciones de su navegador o pulsando la tecla `F5` para volver a cargar la página si ya está en su sitio web.
 

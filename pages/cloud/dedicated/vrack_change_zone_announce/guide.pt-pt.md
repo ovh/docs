@@ -1,8 +1,6 @@
 ---
 title: 'Alterar o anúncio de um bloco IP no vRack'
-slug: alterar-anuncio-bloco-ip-vrack
 excerpt: 'Saiba como alterar o anúncio de um bloco IP no vRack'
-section: vRack
 updated: 2019-03-12
 ---
 
@@ -17,7 +15,7 @@ O [vRack](https://www.ovh.pt/solucoes/vrack/){.external} é uma rede privada que
 ## Requisitos
 
 - Ter um [vRack](https://www.ovh.pt/solucoes/vrack/){.external}.
-- Ter [configurado um bloco de endereços IP no vRack](https://docs.ovh.com/pt/dedicated/adicionar-ou-remover-um-bloco-ip-do-vrack/).
+- Ter [configurado um bloco de endereços IP no vRack](/pages/cloud/dedicated/configuring-an-ip-block-in-a-vrack).
 - Ter conhecimentos avançados de rede.
 
 > [!warning]

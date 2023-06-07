@@ -1,9 +1,6 @@
 ---
 title: 'Tworzenie pola CNAME po dodaniu przypisanej domeny'
-slug: exchange_20132016_dodanie_pola_cname
 excerpt: 'Dowiesz się, dlaczego dodanie pola CNAME może być wymagane i jak je dodać w Panelu klienta OVHcloud'
-section: 'Pierwsze kroki z Exchange'
-order: 05
 updated: 2019-03-26
 ---
 

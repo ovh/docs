@@ -1,8 +1,6 @@
 ---
 title: Gestionar los pedidos en OVHcloud
-slug: gestionar-los-pedidos-en-ovh
 excerpt: Cómo gestionar los pedidos en OVHcloud
-section: Pedidos, facturas y servicios
 updated: 2022-05-06
 ---
 
@@ -40,7 +38,7 @@ La orden de pedido se genera al realizar el pedido. En él se enumeran los produ
 |---|---|
 |1|Número, fecha de creación y fecha de expiración de la orden de pedido. Si ha expirado, deberá volver a realizar el pedido.|
 |2|Sus datos de facturación. Es necesario identificarse para mostrar y abonar la orden de pedido.|
-|3|Formas de pago registradas en su cuenta de cliente. Para más información, consulte la guía [Gestionar mis formas de pago](https://docs.ovh.com/es/billing/gestionar-formas-de-pago/).|
+|3|Formas de pago registradas en su cuenta de cliente. Para más información, consulte la guía [Gestionar mis formas de pago](/pages/account/billing/manage-payment-methods).|
 |4|Formas de pago disponibles. Solo se mostrarán las formas de pago autorizadas en el país de origen de la cuenta o las asociadas al tipo de cuenta registrada.|
 
 En cualquier momento puede consultar la orden de pedido desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), tal y como se explica a continuación.
@@ -99,7 +97,7 @@ Encontrará todas las modalidades de la aplicación de dicho derecho en los sigu
 > El derecho de desistimiento sólo se aplica a los particulares y solo a los nuevos pedidos. Por lo tanto, no puede hacerlo:
 >
 > - renovaciones;
-> - si su cuenta de cliente de OVHcloud es de un [tipo diferente a Particular](https://docs.ovh.com/es/customer/todo-sobre-el-id-de-cliente/#cambiar-el-tipo-de-cuenta).
+> - si su cuenta de cliente de OVHcloud es de un [tipo diferente a Particular](/pages/account/customer/all_about_username#cambiar-el-tipo-de-cuenta).
 >
 > Además, el derecho de desistimiento no se aplica a los pedidos no pagados, ya que estos se cancelan automáticamente cuando la orden de pedido expira.
 >

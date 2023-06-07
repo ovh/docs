@@ -1,9 +1,6 @@
 ---
 title: 'Primeros pasos con las API de OVHcloud'
-slug: first-steps-with-ovh-api
 excerpt: 'Cómo utilizar las API de OVHcloud'
-section: 'Primeros pasos'
-order: 01
 updated: 2022-05-30
 ---
 
@@ -49,7 +46,7 @@ Para utilizar las API en sus productos, debe conectarse a este sitio web con sus
 
 > [!primary]
 >
-> Si su cuenta de OVHcloud está protegida por una [doble autenticación](https://docs.ovh.com/es/customer/proteger-su-cuenta-con-una-2FA/), también deberá introducir el código generado por SMS o aplicación OTP o llave U2F.
+> Si su cuenta de OVHcloud está protegida por una [doble autenticación](/pages/account/customer/secure-ovhcloud-account-with-2fa), también deberá introducir el código generado por SMS o aplicación OTP o llave U2F.
 >
 
 #### Explorar los productos disponibles en las API
@@ -167,7 +164,7 @@ MtSwSrPpNjqfVSmJhLbPyr2i45lSwPU1
 
 En este caso, la clave **CK** está asociada a su cuenta.
 
-El token **CK** puede utilizarse para delegar permisos. Para más información, consulte la siguiente guía: [Cómo gestionar la cuenta de un cliente de OVHcloud a través de las API](https://docs.ovh.com/gb/en/api/api-rights-delegation/) (guía en inglés).
+El token **CK** puede utilizarse para delegar permisos. Para más información, consulte la siguiente guía: [Cómo gestionar la cuenta de un cliente de OVHcloud a través de las API](/pages/account/api/api_right_delegation) (guía en inglés).
 
 #### Uso inicial de la API
 
@@ -207,8 +204,8 @@ print("Welcome", client.get('/me')['firstname'])
 
 ## Más información <a name="gofurther"></a>
 
-[Gestionar los dominios a través de la API](https://docs.ovh.com/es/domains/api/) (documentación en inglés)
+[Gestionar los dominios a través de la API](/pages/web/domains/api_domain_intro) (documentación en inglés)
 
-[Cómo gestionar la cuenta de un cliente de OVHcloud a través de las API](https://docs.ovh.com/us/en/api/api-rights-delegation/) (guía en inglés)
+[Cómo gestionar la cuenta de un cliente de OVHcloud a través de las API](/pages/account/api/api_right_delegation) (guía en inglés)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

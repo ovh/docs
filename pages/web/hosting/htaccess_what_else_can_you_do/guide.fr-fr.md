@@ -1,9 +1,6 @@
 ---
 title: Les operations secondaires realisables avec des fichiers .htaccess
-slug: mutualise-htaccess-les-autres-operations-realisables-avec-des-fichiers-htaccess
 excerpt: Retrouvez ici toutes les operations possibles avec votre .htaccess autre que la protection de dossier.
-section: Réécriture et authentification
-order: 04
 updated: 2020-05-05
 ---
 
@@ -74,7 +71,7 @@ DirectoryIndex accueil.html
 ```
 
 ### Faire de la reecriture d'URL
-Vous pouvez pour cela vous rendre sur le lien suivant : [Cliquer ici](../htaccess-reecriture-url-mod-rewrite/)
+Vous pouvez pour cela vous rendre sur le lien suivant : [Cliquer ici](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite)
 
 ## Aller plus loin
 

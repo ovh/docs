@@ -1,9 +1,6 @@
 ---
 title: 'Crear una dirección de correo electrónico en un MX Plan'
-slug: correo_guia_de_creacion_de_una_direccion_de_correo_electronico
 excerpt: 'Cómo crear una dirección de correo electrónico en la solución MX Plan'
-section: 'Primeros pasos'
-order: 02
 updated: 2022-10-11
 ---
 
@@ -29,7 +26,7 @@ La solución MX Plan le permite disfrutar de direcciones de correo asociadas a u
 > **Casos particulares**
 >
 > - En el caso del hosting gratuito Start 10M, es necesario activar previamente el alojamiento para poder crear una dirección de correo. Puede realizar esta operación desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, accediendo al dominio correspondiente.
-> - Si tiene un [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/){.external}, deberá activar su solución MX Plan incluida antes de continuar la lectura de esta guía. Para ello, consulte nuestra guía [Activar las direcciones de correo incluidas en su alojamiento web](https://docs.ovh.com/es/hosting/activar-correo-hosting-web/).
+> - Si tiene un [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/){.external}, deberá activar su solución MX Plan incluida antes de continuar la lectura de esta guía. Para ello, consulte nuestra guía [Activar las direcciones de correo incluidas en su alojamiento web](/pages/web/hosting/activate-email-hosting).
 
 ## Procedimiento <a name="instructions"></a>
 
@@ -76,7 +73,7 @@ Repita el procedimiento descrito en este apartado para crear las cuentas que des
 
 Vaya a la [página de conexión al webmail](https://www.ovhcloud.com/es-es/mail/){.external} e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
-La primera vez que se conecte al webmail, deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía "[Utilizar una dirección de correo desde Outlook Web App (OWA)"](https://docs.ovh.com/es/emails/uso-outlook-en-la-web/){.external}.
+La primera vez que se conecte al webmail, deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía "[Utilizar una dirección de correo desde Outlook Web App (OWA)"](/products/email-owa-user-guide){.external}.
 
 ![Correo electrónico](images/mxplan-creation-new-step5.png){.thumbnail}
 
@@ -88,7 +85,7 @@ Desde la nueva versión MXplan, cuando debe eliminarla, se habla de *reinicializ
 
 > [!warning]
 >
-> Antes de eliminar las cuentas de correo, asegúrese de que no se utilizan. Es posible que necesite guardar estas cuentas. Si lo necesita, consulte la guía [Migrar manualmente su dirección de correo electrónico](https://docs.ovh.com/es/emails/migrar-sus-direcciones-de-correo-manualmente/), en la que se explica cómo exportar los datos de una cuenta desde el área de cliente o desde un cliente de correo.
+> Antes de eliminar las cuentas de correo, asegúrese de que no se utilizan. Es posible que necesite guardar estas cuentas. Si lo necesita, consulte la guía [Migrar manualmente su dirección de correo electrónico](/pages/web/emails/manual_email_migration), en la que se explica cómo exportar los datos de una cuenta desde el área de cliente o desde un cliente de correo.
 
 En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} a la derecha de la cuenta que desea eliminar y luego en `Restaurar la cuenta`{.action}.
 
@@ -127,7 +124,7 @@ Repita el procedimiento descrito en este apartado para crear las cuentas que des
 
 Vaya a la [página de conexión al webmail](https://www.ovhcloud.com/es-es/mail/){.external} e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
-A continuación, podrá consultar su bandeja de entrada. Para más información, consulte nuestra [Guía de uso de Roundcube](https://docs.ovh.com/es/emails/webmail_guia_de_uso_de_roundcube/){.external}.
+A continuación, podrá consultar su bandeja de entrada. Para más información, consulte nuestra [Guía de uso de Roundcube](/pages/web/emails/email_roundcube){.external}.
 
 ![Correo electrónico](images/mxplan-creation-legacy-step4.png){.thumbnail}
 
@@ -137,7 +134,7 @@ Para consultar sus mensajes de correo desde un cliente de correo, consulte la se
 
 > [!warning]
 >
-> Antes de eliminar las cuentas de correo, asegúrese de que no se utilizan. Es posible que necesite guardar estas cuentas. Si lo necesita, consulte la guía [Migrar manualmente su dirección de correo electrónico](https://docs.ovh.com/es/emails/migrar-sus-direcciones-de-correo-manualmente/), en la que se explica cómo exportar los datos de una cuenta desde el área de cliente o desde un cliente de correo.
+> Antes de eliminar las cuentas de correo, asegúrese de que no se utilizan. Es posible que necesite guardar estas cuentas. Si lo necesita, consulte la guía [Migrar manualmente su dirección de correo electrónico](/pages/web/emails/manual_email_migration), en la que se explica cómo exportar los datos de una cuenta desde el área de cliente o desde un cliente de correo.
 
 En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} a la derecha de la cuenta que desea eliminar y luego en `Eliminar la cuenta`{.action}.
 
@@ -150,24 +147,24 @@ Puede configurar su dirección de correo en el dispositivo que desee (smartphone
 > [!tabs]
 > **Windows**
 >>
->> - [Correo en Windows 10](https://docs.ovh.com/es/emails/configuracion-correo-windows-10/)
->> - [Outlook](https://docs.ovh.com/es/emails/configuracion-outlook-2016/)
->> - [Thunderbird](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_thunderbird/)
+>> - [Correo en Windows 10](/pages/web/emails/how_to_configure_windows_10)
+>> - [Outlook](/pages/web/emails/how_to_configure_outlook_2016)
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_windows)
 >>
 > **Apple**
 >>
->> - [Mail de macOS](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/)
->> - [Correo electrónico para iPhone o iPad](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_iphone_ios_91/)
->> - [Outlook Mac OS](https://docs.ovh.com/es/emails/configuracion-outlook-2016-mac/)
->> - [Thunderbird](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_para_thunderbird_en_mac/)
+>> - [Mail de macOS](/pages/web/emails/how_to_configure_mail_macos)
+>> - [Correo electrónico para iPhone o iPad](/pages/web/emails/how_to_configure_ios)
+>> - [Outlook Mac OS](/pages/web/emails/how_to_configure_outlook_2016_mac)
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_mac)
 >>
 > **Android**
 >>
->> - [Android](https://docs.ovh.com/es/emails/configuracion-android/)
+>> - [Android](/pages/web/emails/how_to_configure_android)
 >>
 > **Otros**
 >>
->> - [Interfaz Gmail](https://docs.ovh.com/es/emails/configurar-direccion-de-correo-electronico-en-interfaz-web-gmail/)
+>> - [Interfaz Gmail](/pages/web/emails/how_to_configure_gmail)
 >>
 
 A continuación se indican los parámetros necesarios para configurar una cuenta MX Plan:
@@ -190,7 +187,7 @@ A continuación se indican los parámetros necesarios para configurar una cuenta
 
 > [!warning]
 >
-> Si necesita ayuda para configurar la dirección de correo en su dispositivo, consulte nuestras [guías de configuración](../) o contacte con el editor de la aplicación que utilice.
+> Si necesita ayuda para configurar la dirección de correo en su dispositivo, consulte nuestras [guías de configuración](/products/web-cloud-email-collaborative-solutions-mx-plan) o contacte con el editor de la aplicación que utilice.
 >
 
 ## Más información

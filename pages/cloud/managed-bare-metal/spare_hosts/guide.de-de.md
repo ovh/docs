@@ -1,11 +1,8 @@
 ---
 title: Spare-Hosts
 routes:
-    canonical: 'https://docs.ovh.com/de/private-cloud/die_spare-hosts/'
+    canonical: '/pages/cloud/private-cloud/spare_hosts'
 excerpt: Bereitstellung eines Spare-Hosts in Managed Bare Metal
-slug: die_spare-hosts
-section: OVHcloud Funktionen
-order: 04
 updated: 2020-11-18
 ---
 
@@ -28,7 +25,7 @@ Wenn einer Ihrer Hosts ausfällt, liefern wir Ihnen automatisch und kostenfrei e
 
 Sofort nach Lieferung dieses Hosts erhalten Sie eine E-Mail mit allen Informationen zu diesem Host. Sie erhalten auch seine IP-Adresse, mit der Sie ihn leicht in Ihrem vSphere Interface finden können.
 
-Standardmäßig ist der Dienst HA ([High Availability](../vmware-ha-high-availability/)) von VMware für Ihren Cluster aktiviert. Wenn Sie Ihn aktiviert lassen, werden Ihre virtuellen Maschinen automatisch neu gestartet. Ist der Dienst DRS (Distributed Ressources Scheduler) aktiviert und im Modus “fully automated”, so findet die Lastverteilung zwischen den Hosts Ihres Clusters ebenfalls automatisch statt.
+Standardmäßig ist der Dienst HA ([High Availability](/pages/cloud/managed-bare-metal/vmware_ha_high_availability)) von VMware für Ihren Cluster aktiviert. Wenn Sie Ihn aktiviert lassen, werden Ihre virtuellen Maschinen automatisch neu gestartet. Ist der Dienst DRS (Distributed Ressources Scheduler) aktiviert und im Modus “fully automated”, so findet die Lastverteilung zwischen den Hosts Ihres Clusters ebenfalls automatisch statt.
 
 > [!warning]
 > 
@@ -39,7 +36,7 @@ Standardmäßig ist der Dienst HA ([High Availability](../vmware-ha-high-availab
 
 Wenn der Original-Host wieder funktioniert (nach der Reparatur), können Sie einen der beiden Hosts (Original oder Ersatz) an uns zurückgeben.
 
-Wir empfehlen Ihnen, uns den Original-Host zurückzugeben, damit wir ihn nach dieser Störung einer Reihe von Tests unterziehen (und so zukünftige Störungen vermeiden) können. Sie können dann den Ersatz-Host behalten. Dazu können Sie die Anleitung [Host-Server löschen](../host-server-loeschen/) zu Rate ziehen.
+Wir empfehlen Ihnen, uns den Original-Host zurückzugeben, damit wir ihn nach dieser Störung einer Reihe von Tests unterziehen (und so zukünftige Störungen vermeiden) können. Sie können dann den Ersatz-Host behalten. Dazu können Sie die Anleitung [Host-Server löschen](/pages/cloud/managed-bare-metal/delete_host) zu Rate ziehen.
 
 OVHcloud kann dann automatisch den Original-Host zurücknehmen, sobald er entfernt ist.
 

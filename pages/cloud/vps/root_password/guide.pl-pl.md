@@ -1,8 +1,6 @@
 ---
 title: Zmiana hasła root na serwerze VPS
-slug: root-password
 excerpt: Sprawdź, jak zmienić hasło root
-section: Diagnostyka i tryb Rescue
 updated: 2021-04-20
 ---
 
@@ -38,7 +36,7 @@ Może zaistnieć konieczność zmiany hasła root do systemu operacyjnego Linux.
 
 > [!primary]
 >
-> Aby uzyskać więcej informacji na temat logowania do serwera VPS, zapoznaj się z naszym przewodnikiem Pierwsze kroki [z serwerem VPS](../pierwsze-kroki-vps/).
+> Aby uzyskać więcej informacji na temat logowania do serwera VPS, zapoznaj się z naszym przewodnikiem Pierwsze kroki [z serwerem VPS](/pages/cloud/vps/starting_with_a_vps).
 >
 
 Zaloguj się do Twojego serwera VPS przez SSH. Przejdź na użytkownika root, jeśli konieczne:
@@ -70,7 +68,7 @@ Jeśli chcesz zezwolić na logowanie jako użytkownik root, postępuj zgodnie z 
 
 #### Etap 1: Zrestartuj serwer VPS do trybu Rescue.
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i zrestartuj serwer VPS w trybie Rescue. Jeśli potrzebujesz dodatkowych instrukcji dotyczących trybu Rescue na serwerze VPS, zapoznaj się z [przewodnikiem dotyczącym trybu Rescue](../rescue/).
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i zrestartuj serwer VPS w trybie Rescue. Jeśli potrzebujesz dodatkowych instrukcji dotyczących trybu Rescue na serwerze VPS, zapoznaj się z [przewodnikiem dotyczącym trybu Rescue](/pages/cloud/vps/rescue).
 
 #### Etap 2: Sprawdzenie punktu montowania
 
@@ -162,7 +160,7 @@ Jeśli VPS to najnowsza generacja (masz na imię: *vps-XXXXXXX.vps.ovh.net*), ot
 >
 > Włączenie hasła root jest traktowane jako podatność na zagrożenia i dlatego nie jest zalecane.
 >
-> Zalecamy podjęcie działań mających na celu zabezpieczenie serwera VPS. Zapoznaj się z przewodnikiem dotyczącym [zabezpieczenia serwera VPS](../porady-zabezpieczenie-vps/).
+> Zalecamy podjęcie działań mających na celu zabezpieczenie serwera VPS. Zapoznaj się z przewodnikiem dotyczącym [zabezpieczenia serwera VPS](/pages/cloud/vps/secure_your_vps).
 >
 
 #### Etap 1: Zmodyfikuj plik sshd_config
@@ -199,13 +197,13 @@ Powinno to wystarczyć do wdrożenia zmian. Możesz również zrestartować serw
 
 Jeśli po zmianie hasła i uruchomieniu pojawią się problemy z jego rozpoczęciem:
 
-- Sprawdź KVM, dlaczego VPS nie może uruchomić. Zapoznaj się z [przewodnikiem KVM](../kvm_na_serwerach_vps/), aby uzyskać pomoc w korzystaniu z tej funkcji w Panelu klienta OVHcloud.
+- Sprawdź KVM, dlaczego VPS nie może uruchomić. Zapoznaj się z [przewodnikiem KVM](/pages/cloud/vps/using_kvm_for_vps), aby uzyskać pomoc w korzystaniu z tej funkcji w Panelu klienta OVHcloud.
 - Jeśli KVM wyświetla uruchomienie serwera VPS lub nie jest w stanie odnaleźć dysku, upewnij się, że [bootlog jest włączony](../wyswietlanie-bootlog-w-kvm/). Prześlij stosowne logi do naszych zespołów wsparcia, tworząc zgłoszenie w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), aby uzyskać więcej informacji.
 
 ## Sprawdź również
 
-[Wprowadzenie do protokołów SSH](../../dedicated/ssh-wprowadzenie/)
+[Wprowadzenie do protokołów SSH](/pages/cloud/dedicated/ssh_introduction)
 
-[Zabezpieczenie serwera VPS](../porady-zabezpieczenie-vps/)
+[Zabezpieczenie serwera VPS](/pages/cloud/vps/secure_your_vps)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

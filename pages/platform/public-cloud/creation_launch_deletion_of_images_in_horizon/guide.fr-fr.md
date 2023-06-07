@@ -1,9 +1,6 @@
 ---
 title: Création, lancement et suppression d’images dans Horizon
-slug: creation-lancement-et-suppression-dimages-dans-horizon
 legacy_guide_number: 1784
-section: Gestion depuis Horizon
-order: 09
 updated: 2021-12-30
 ---
 
@@ -18,7 +15,7 @@ L'ajout d'images personnalisées est possible via l'interface OpenStack Horizon.
 
 ### Prérequis
 
-- [Créer un accès à Horizon](../horizon/)
+- [Créer un accès à Horizon](/pages/platform/public-cloud/introducing_horizon)
 - Se rendre dans le menu Images de l'interface OpenStack Horizon
 
 

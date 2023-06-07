@@ -1,10 +1,8 @@
 ---
 title: 'Enabling Virtual Machine Encryption (VM Encrypt)'
 routes:
-    canonical: 'https://docs.ovh.com/ca/en/private-cloud/vm-encrypt/'
+    canonical: '/pages/cloud/private-cloud/vm_encrypt'
 excerpt: 'Learn how to enable VM encryption'
-slug: vm-encrypt
-section: 'VMware vSphere features'
 updated: 2020-11-18
 ---
 

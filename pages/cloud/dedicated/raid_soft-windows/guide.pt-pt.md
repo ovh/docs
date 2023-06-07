@@ -1,8 +1,6 @@
 ---
 title: Configurar um espelho de software (RAID) em Windows
-slug: dedicated-servers-mirror-soft-raid-windows
 excerpt: "Descubra como reconstruir a configuração dos discos do seu servidor após uma substituição de disco"
-section: RAID e discos
 updated: 2023-03-28
 ---
 
@@ -69,7 +67,7 @@ DISKPART> list volume
 
 ```
 
-Neste exemplo, o `Disk 1` é um disco de substituição que foi instalado para substituir o `Disk M0` defeituoso que tinha sido [fisicamente removido](https://docs.ovh.com/pt/dedicated/substituicao-disco/) anteriormente.
+Neste exemplo, o `Disk 1` é um disco de substituição que foi instalado para substituir o `Disk M0` defeituoso que tinha sido [fisicamente removido](/pages/cloud/dedicated/disk_replacement) anteriormente.
 
 
 > [!primary]
@@ -200,7 +198,7 @@ DISKPART> list volume
 ```
 
 
-Neste exemplo, o `Disk 1` é um disco de substituição que foi instalado para substituir o `Disk M0` defeituoso que tinha sido [fisicamente removido](https://docs.ovh.com/pt/dedicated/substituicao-disco/) anteriormente.
+Neste exemplo, o `Disk 1` é um disco de substituição que foi instalado para substituir o `Disk M0` defeituoso que tinha sido [fisicamente removido](/pages/cloud/dedicated/disk_replacement) anteriormente.
 
 > [!primary]
 >

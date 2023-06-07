@@ -1,9 +1,6 @@
 ---
 title: 'Hosting condiviso: consulta le statistiche e i log del tuo sito'
 excerpt: Accedi alle statistiche del tuo sito
-slug: hosting_condiviso_consulta_le_statistiche_e_i_log_del_tuo_sito
-section: Ottimizza il tuo sito
-order: 04
 updated: 2021-01-05
 ---
 
@@ -46,7 +43,7 @@ Clicca sul pulsante `Crea un nuovo utente`{.action} nella sezione `Amministrazio
 
 > [!warning] 
 >
-> Se hai attivato i log separati su un [record multisito](../configurare-un-multisito-su-un-hosting-web/#step-2-aggiungi-un-dominio-o-un-sottodominio), gli utenti creati qui non possono accedere alle statistiche di questo record multisito.
+> Se hai attivato i log separati su un [record multisito](/pages/web/hosting/multisites_configure_multisite#step-2-aggiungi-un-dominio-o-un-sottodominio), gli utenti creati qui non possono accedere alle statistiche di questo record multisito.
 >
 
 ### Statistiche delle visite
@@ -81,7 +78,7 @@ Sono a tua disposizione diversi tipi di log:
 - Logs CGI: i diversi appelli agli scripts cgi.bin realizzati.
 - Logs out: le statistiche del tuo hosting sulle diverse chiamate esterne effettuate.
 - Logs SSH: questi log indicano le differenti connessioni realizzate con il protocollo SSH.
-- Logs CRON: il risultato dell'esecuzione delle operazioni pianificate ([Le operazioni automatizzate (CRON) sul tuo hosting](../hosting_web_task_automatizzaticron/)).
+- Logs CRON: il risultato dell'esecuzione delle operazioni pianificate ([Le operazioni automatizzate (CRON) sul tuo hosting](/pages/web/hosting/cron_tasks)).
 
 ### Attività dell'hosting
 

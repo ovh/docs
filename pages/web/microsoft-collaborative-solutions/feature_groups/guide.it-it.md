@@ -1,9 +1,6 @@
 ---
 title: 'Utilizzo dei gruppi (mailing list)'
 excerpt: 'Come gestire la mailing list di Exchange'
-slug: exchange_2013_utilizzo_dei_gruppi_mailing_list
-section: 'Funzionalità degli account Exchange'
-order: 02
 updated: 2020-02-26
 ---
 
@@ -64,7 +61,7 @@ Il tuo gruppo appena creato sarà operativo in pochi minuti.  Per modificare le 
 
 ![contactgroups](images/exchange-groups-step4.png){.thumbnail}
 
-Inoltre, visualizzi la voce del menu `Gestisci le deleghe`{.action}. Questa opzione ti consente di delegare l’accesso proprio come per un account Exchange. Per saperne di più, consulta [questa guida](../exchange_2013_assegna_i_diritti_full_access_a_un_account/).
+Inoltre, visualizzi la voce del menu `Gestisci le deleghe`{.action}. Questa opzione ti consente di delegare l’accesso proprio come per un account Exchange. Per saperne di più, consulta [questa guida](/pages/web/microsoft-collaborative-solutions/feature_delegation).
 
 ![contactgroups](images/exchange-groups-step5.png){.thumbnail}
 
@@ -83,10 +80,10 @@ Per verificare la tua Mailing List tramite [OVHcloud Webmail](https://www.ovh.it
 
 ## Per saperne di più 
 
-[Delegare i diritti su un account Exchange](../exchange_2013_assegna_i_diritti_full_access_a_un_account)
+[Delegare i diritti su un account Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Guida all’utilizzo di Outlook Web App](../exchange_2016_guida_allutilizzo_di_outlook_web_app)
+[Guida all’utilizzo di Outlook Web App](/it/microsoft-collaborative-solutions/exchange_2016_guida_allutilizzo_di_outlook_web_app)
 
-[Condividi un calendario con la Webmail OWA](../exchange_2016_condividi_un_calendario_con_la_webmail_owa)
+[Condividi un calendario con la Webmail OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

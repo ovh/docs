@@ -1,9 +1,6 @@
 ---
 title: How to submit a job on the Data Processing platform using the CLI
-slug: submit-cli
 excerpt: Find out how to run your Apache Spark job with the Data Processing platform using the CLI
-section: How to
-order: 7
 updated: 2022-10-11
 ---
 
@@ -12,12 +9,12 @@ updated: 2022-10-11
 ## Objective
 This guide helps you to upload your application code to Object Storage and submit an Apache Spark job using the Data Processing CLI.
 
-To read an introduction about the Data Processing service you can visit [Data Processing Overview](../overview){.external}.
+To read an introduction about the Data Processing service you can visit [Data Processing Overview](/pages/platform/data-processing/00_CONCEPTS_Overview){.external}.
 
 ## Requirements
 - An OVHcloud account
-- An activated cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/create_a_public_cloud_project/){.external} and [How to activate the Data Processing service for your cloud project](../activation){.external} for details)
-- An Openstack user in your cloud project and access to Openstack Horizon dashboard (see [How to create an Openstack user and access to Horizon](../../public-cloud/horizon/){.external} for details)
+- An activated cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/create_a_public_cloud_project/){.external} and [How to activate the Data Processing service for your cloud project](/pages/platform/data-processing/30_HOWTO_activate_project){.external} for details)
+- An Openstack user in your cloud project and access to Openstack Horizon dashboard (see [How to create an Openstack user and access to Horizon](/pages/platform/public-cloud/introducing_horizon){.external} for details)
 - An application code to be run in Apache Spark environment
 
 ## Instructions
@@ -56,12 +53,12 @@ consumer_key=my_consumer_key
 Before running your job in the Data Processing platform, you will need to create a container in OVHcloud Object Storage.
 You can work with your Object Storage using either the OVHcloud Manager or the Openstack Horizon dashboard.
 
-Please see [Creating Storage Containers in Customer Panel](https://docs.ovh.com/us/en/storage/object-storage/pcs/create-container/){.external} or [Create an object container in Horizon](https://docs.ovh.com/us/en/storage/object-storage/pcs/create-container/){.external} for more details.
+Please see [Creating Storage Containers in Customer Panel](/pages/cloud/storage/object_storage/pcs_create_container){.external} or [Create an object container in Horizon](/pages/cloud/storage/object_storage/pcs_create_container){.external} for more details.
 
-You can also manage your Object storage through command line with the [Openstack Swift API](https://docs.ovh.com/us/en/storage/object-storage/pcs/getting-started-with-the-swift-api/){.external} 
+You can also manage your Object storage through command line with the [Openstack Swift API](/pages/cloud/storage/object_storage/pcs_getting_started_with_the_swift_api){.external} 
 
 When it is created, upload your application code and environment file if needed at the root of the container. If you don't have any application code, you can still try the CLI with the examples files provided inside the `testdata` directory of the [GitHub project](https://github.com/ovh/data-processing-spark-submit){.external}.
-If you want to submit a python job, do not forget to upload your environment.yml file (see [How to generate environment file for Python jobs](../generate-environment){.external})
+If you want to submit a python job, do not forget to upload your environment.yml file (see [How to generate environment file for Python jobs](/pages/platform/data-processing/34_HOWTO_handle-python-environment){.external})
 
 >[!primary]
 >
@@ -96,7 +93,7 @@ If you want to know more about these parameters, run:
 $ ./ovh-spark-submit -h
 ```
 
-If you don't know how to set these parameters values, please refer to the page [How to fill the job submit form in the Data Processing page from the OVHcloud Manager](../job-submit-form){.external})
+If you don't know how to set these parameters values, please refer to the page [How to fill the job submit form in the Data Processing page from the OVHcloud Manager](/pages/platform/data-processing/32_HOWTO_fill-job-submit-form){.external})
 
 While your job is running, you can watch logs in your terminal or access Spark UI through this URL:
 
@@ -111,7 +108,7 @@ At any time, you can stop your job by pressing `Ctrl+C`. If you do so, the CLI w
 > When streaming logs you are limited to 10 000 character at a time. Meaning you could experience missing logs in streaming mode. All logs will be uploaded to your Object Storage at job end.
 >
 
-If you want to check your results after the job is finished, you can download its logs from your Object Storage (see [Checking a job's logs in the Data Processing manager's page](../check-logs)).
+If you want to check your results after the job is finished, you can download its logs from your Object Storage (see [Checking a job's logs in the Data Processing manager's page](/pages/platform/data-processing/21_GETTINGSTARTED_check-job-logs)).
 
 #### Optionally use auto-upload
 If you want to save time when you often need to change your application code, the auto-upload feature of the CLI allows you to upload your code on Object Storage automatically.
@@ -160,6 +157,6 @@ Then the Spark-Submit CLI will exit with it.
 
 ## Go further
 
-To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at [Data Processing documentations page](../).
+To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at [Data Processing documentations page](/products/public-cloud-data-analytics-data-processing).
 
 You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**

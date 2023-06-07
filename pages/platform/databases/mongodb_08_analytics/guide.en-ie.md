@@ -1,9 +1,6 @@
 ---
 title: MongoDB - Configure an Analytics node
 excerpt: Configure a dedicated Analytics node in your Public Cloud Databases for MongoDB to support analytics workloads
-slug: mongodb/analytics-node
-section: MongoDB - Guides
-order: 080
 updated: 2022-09-19
 ---
 
@@ -17,8 +14,8 @@ This guide shows how to configure a node in your cluster dedicated to analytics-
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- A multi-node capable (so, either *Business* or *Enterprise* plan) MongoDB database cluster running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/ie/en/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your MongoDB instance](https://docs.ovh.com/ie/en/publiccloud/databases/mongodb/managing-service/) to accept incoming connections
+- A multi-node capable (so, either *Business* or *Enterprise* plan) MongoDB database cluster running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your MongoDB instance](/pages/platform/databases/mongodb_02_manage_control_panel) to accept incoming connections
 
 ## What purpose does an Analytics node serve?
 
@@ -91,7 +88,7 @@ You can either use the delete node endpoint to remove the Analytics node, or tur
 
 ## Go further
 
-[MongoDB capabilities](https://docs.ovh.com/ie/en/publiccloud/databases/mongodb/capabilities/)
+[MongoDB capabilities](/pages/platform/databases/mongodb_01_concept_capabilities)
 
 Join our community of users on <https://community.ovh.com/en/>.
 

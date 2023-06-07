@@ -1,9 +1,6 @@
 ---
 title: Object Storage - Premiers pas avec Object Storage
-slug: s3/getting-started-with-object-storage
 excerpt:
-section: Guides généraux pour débuter
-order: 020
 updated: 2023-04-28
 ---
 
@@ -15,9 +12,9 @@ Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs 
 
 ## Prérequis
 
-- Un [projet Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/create_a_public_cloud_project/) dans votre compte OVHcloud
+- Un [projet Public Cloud](/pages/platform/public-cloud/create_a_public_cloud_project) dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
-- Avoir créé un [utilisateur S3](https://docs.ovh.com/ca/fr/storage/s3/gestion-des-identites-et-des-acces/)
+- Avoir créé un [utilisateur S3](/pages/cloud/storage/object_storage/s3_identity_and_access_management)
 
 ## En pratique
 
@@ -40,7 +37,7 @@ user@host:~$ pip3 install awscli awscli-plugin-endpoint
 #### Collecter les informations d'identification
 
 - Vous aurez besoin de l'*Access key* et de la *Secret key* de votre utilisateur. Ces informations sont accessibles depuis l'onglet `Utilisateurs S3` dans votre espace client.
-- Vous aurez également besoin de votre *url_endpoint*. Si vous avez déjà créé votre bucket, cette information est accessible depuis l'onglet `Mes conteneurs` puis dans les détails du votre bucket. En cas de besoin, suivez ce [guide](https://docs.ovh.com/ca/fr/storage/object-storage/s3/location/).
+- Vous aurez également besoin de votre *url_endpoint*. Si vous avez déjà créé votre bucket, cette information est accessible depuis l'onglet `Mes conteneurs` puis dans les détails du votre bucket. En cas de besoin, suivez ce [guide](/pages/cloud/storage/object_storage/s3_location).
 
 #### Configuration
 

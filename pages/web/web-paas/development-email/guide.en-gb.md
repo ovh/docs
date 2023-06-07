@@ -1,8 +1,5 @@
 ---
 title: Sending E-mail
-slug: development-email
-section: Development
-order: 4
 updated: 2021-03-31
 ---
 

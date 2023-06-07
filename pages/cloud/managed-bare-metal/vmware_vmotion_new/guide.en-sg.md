@@ -1,11 +1,8 @@
 ---
 title: VMware vMotion
-slug: vmotion-new
 routes:
-    canonical: 'https://docs.ovh.com/sg/en/private-cloud/vmotion-new/'
+    canonical: '/pages/cloud/private-cloud/vmware_vmotion_new'
 excerpt: Find out how to move your virtual machine to a different host (hot migration)
-section: VMware vSphere features
-order: 4
 updated: 2020-11-18
 ---
 
@@ -29,7 +26,7 @@ To move a virtual machine to another resource, right-click on the VM and select 
 
 The menu offers several options for vMotion. In this example, the VM is to be migrated to another host. Therefore, select "Change compute resource only".
 
-The option "Change storage only" allows to migrate the VM to another datastore. It is explained in [this guide](../vmware_storage_vmotion/).
+The option "Change storage only" allows to migrate the VM to another datastore. It is explained in [this guide](/pages/cloud/managed-bare-metal/vmware_storage_vmotion).
 
 ![choose vMotion type](images/Vmotion2.png){.thumbnail}
 

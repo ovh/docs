@@ -1,9 +1,6 @@
 ---
 title: Co zrobić w przypadku strony "403 forbidden"?
 excerpt: Dowiedz się, jak przywrócić Twoją stronę WWW online, gdy wyświetla ona stronę "403 forbidden"
-slug: diagnostyka-403-forbidden
-section: Diagnostyka
-order: 08
 updated: 2022-06-16
 ---
 
@@ -33,14 +30,14 @@ Może się również zdarzyć, że po wykryciu anomalii nasze roboty związane z
 ## Wymagania początkowe
 
 - Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/) OVHcloud
-- Posiadanie [danych do logowania](../logowanie-przestrzen-dyskowa-ftp-hosting-web/#etap-1-pobranie-informacji-niezbednych-do-logowania) do przestrzeni dyskowej Twojego hostingu
+- Posiadanie [danych do logowania](/pages/web/hosting/ftp_connection#etap-1-pobranie-informacji-niezbednych-do-logowania) do przestrzeni dyskowej Twojego hostingu
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
 ### Etap 1: analiza sytuacji
 
-Jeśli strona **"403 forbidden"** pojawiła się w wyniku nieprawidłowej modyfikacji strony WWW, [przywróć całość lub część przestrzeni dyskowej hostingu](../hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/) z wcześniejszą datą.
+Jeśli strona **"403 forbidden"** pojawiła się w wyniku nieprawidłowej modyfikacji strony WWW, [przywróć całość lub część przestrzeni dyskowej hostingu](/pages/web/hosting/ftp_save_and_backup) z wcześniejszą datą.
 
 Jeśli dostępne kopie zapasowe nie pozwolą Ci przywrócić dostępu do Twojej strony WWW, skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/).
 
@@ -54,8 +51,8 @@ Sprawdź bezpieczeństwo Twojej poczty lub stacji:
 
 - Wykonaj aktualizacje dotyczące bezpieczeństwa;
 - Upewnij się również, czy zainstalowany jest antywirus, zaktualizuj go i uruchom pełny skan. Jeśli nie posiadasz domeny w OVHcloud, przed instalacją skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/) usług hostingowych;
-- Zmień wszystkie Twoje lokalne hasła, zwłaszcza te przypisane do Twoich kont e-mail, przestrzegając tych [dobrych praktyk](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/#generowanie-hasla);
-- Zmień hasła do wszystkich usług OVHcloud, w szczególności do [bazy danych](../zmiana-hasla-do-bazy-danych/) i do [przestrzeni dyskowej FTP](../zmiana-hasla-konto-ftp/).
+- Zmień wszystkie Twoje lokalne hasła, zwłaszcza te przypisane do Twoich kont e-mail, przestrzegając tych [dobrych praktyk](/pages/account/customer/manage-ovh-password#generowanie-hasla);
+- Zmień hasła do wszystkich usług OVHcloud, w szczególności do [bazy danych](../zmiana-hasla-do-bazy-danych/) i do [przestrzeni dyskowej FTP](/pages/web/hosting/ftp_change_password).
 
 > [!warning]
 >
@@ -72,14 +69,14 @@ Najpierw zapisz datę wysłania wiadomości e-mail OVHcloud informującej o wył
 
 #### Przypadek nr 1: Twój hosting został wyłączony mniej niż dwa tygodnie temu
 
-Jeśli Twój hosting został zamknięty mniej niż dwa tygodnie temu i zawiera tylko jedną stronę, przywracaj przestrzeń dyskową zgodnie z instrukcjami zawartymi w tym [przewodniku](../hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/#przywracanie-przestrzeni-dyskowej-w-panelu-klienta).
+Jeśli Twój hosting został zamknięty mniej niż dwa tygodnie temu i zawiera tylko jedną stronę, przywracaj przestrzeń dyskową zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/hosting/ftp_save_and_backup#przywracanie-przestrzeni-dyskowej-w-panelu-klienta).
 
-Jeśli Twój hosting został zamknięty mniej niż dwa tygodnie temu i zawiera kilka stron WWW, przywracaj tylko folder lub katalogi zawierające nieprawidłowe pliki zgodnie z instrukcjami zawartymi w tym [przewodniku](../hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/#przywracanie-pliku-za-pomoca-programu-lub-interfejsu).
+Jeśli Twój hosting został zamknięty mniej niż dwa tygodnie temu i zawiera kilka stron WWW, przywracaj tylko folder lub katalogi zawierające nieprawidłowe pliki zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/hosting/ftp_save_and_backup#przywracanie-pliku-za-pomoca-programu-lub-interfejsu).
 
 > [!warning]
 >
 > Sam powrót do przestrzeni dyskowej nie wystarczy, aby usunąć ewentualne luki bezpieczeństwa, które pojawiły się na Twojej stronie WWW.
-> W celu identyfikacji luk w zabezpieczeniach, możesz przeanalizować ["logi WWW"](https://docs.ovh.com/pl/hosting/hosting_statystyki_i_logi_strony/#logi) Twojego hostingu lub skorzystać z pomocy [[wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/)](https://partner.ovhcloud.com/pl/) aby przeprowadzić audyt bezpieczeństwa Twoich rozwiązań.
+> W celu identyfikacji luk w zabezpieczeniach, możesz przeanalizować ["logi WWW"](/pages/web/hosting/logs_and_statistics#logi) Twojego hostingu lub skorzystać z pomocy [[wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/)](https://partner.ovhcloud.com/pl/) aby przeprowadzić audyt bezpieczeństwa Twoich rozwiązań.
 >
 
 #### Przypadek nr 2: Twój hosting został wyłączony dwa tygodnie temu
@@ -97,7 +94,7 @@ Jeśli Twój hosting został zamknięty dwa tygodnie temu, skontaktuj się z [wy
 
 > [!primary]
 >
-> Jeśli chcesz zainstalować program **FileZilla** do zarządzania plikami Twojej strony, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](../hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/).
+> Jeśli chcesz zainstalować program **FileZilla** do zarządzania plikami Twojej strony, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/hosting/ftp_filezilla_user_guide).
 >
 
 Otwórz program FileZilla i zaloguj się do Twojej przestrzeni dyskowej. Następnie kliknij `Serwer`{.action} na pasku menu, po czym kliknij `Wprowadź dowolne polecenie`{.action} (nazwa może być nieco inna w zależności od wersji FileZilla, której używasz):
@@ -118,7 +115,7 @@ Odpowiedź **"200 Permissions changed on /"** potwierdza, że operacja została 
 
 W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) przejdź do sekcji `Web Cloud`{.action}, następnie `Hosting`{.action} i kliknij zakładkę `FTP-SSH`{.action} odpowiedniego hostingu.
 
-Następnie kliknij przycisk `FTP Explorer`{.action} i zaloguj się do przestrzeni dyskowej, postępując zgodnie z instrukcjami zawartymi w tym [przewodniku](../logowanie-przestrzen-dyskowa-ftp-hosting-web/#1-logowanie-przez-ftp-explorer). Kliknij przycisk `Zaawansowane`{.action}, a następnie przycisk `Go`{.action} obok przycisku "Send arbitrary FTP commands to the FTP server".
+Następnie kliknij przycisk `FTP Explorer`{.action} i zaloguj się do przestrzeni dyskowej, postępując zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/hosting/ftp_connection#1-logowanie-przez-ftp-explorer). Kliknij przycisk `Zaawansowane`{.action}, a następnie przycisk `Go`{.action} obok przycisku "Send arbitrary FTP commands to the FTP server".
 
 ![net2ftp](images/net2ftp.png){.thumbnail}
 
@@ -130,11 +127,11 @@ Odpowiedź **"200 Permissions changed on /"** potwierdza, że operacja została 
 
 ## Sprawdź również <a name="gofurther"></a>
 
-[Włamanie na stronę z modułem WordPress: porady i przykłady zastosowania](../wlamanie_na_strone_z_modulem_wordpress_porady_i_przyklady_zastosowania/)
+[Włamanie na stronę z modułem WordPress: porady i przykłady zastosowania](/pages/web/hosting/cms_what_to_do_if_your_site_is_hacked)
 
-[Aktywacja zapory systemowej](../hosting_www_aktywacja_zapory_systemowej/)
+[Aktywacja zapory systemowej](/pages/web/hosting/multisites_activating_application_firewall)
 
-[Zmiana wersji PHP na hostingu](../konfiguracja_php_na_hostingu_www_ovh_2014/)
+[Zmiana wersji PHP na hostingu](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014)
 
 Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 

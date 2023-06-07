@@ -1,9 +1,6 @@
 ---
 title: AI Deploy - Tutorial - Deploy an app for sentiment analysis with Hugging Face and Flask
-slug: deploy/tuto-flask-hugging-face-sentiment-analysis
 excerpt: How to deploy an app to analyse text sentiment with Hugging Face and Flask
-section: AI Deploy - Tutorials
-order: 06
 updated: 2023-04-04
 ---
 
@@ -29,7 +26,7 @@ For more information about Hugging Face, please visit <https://huggingface.co/>.
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie);
 - An AI Deploy project created inside a [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account;
-- A [user for AI Deploy](https://docs.ovh.com/ie/en/publiccloud/ai/users/);
+- A [user for AI Deploy](/pages/platform/ai/gi_01_manage_users);
 - [Docker](https://www.docker.com/get-started) installed on your local computer;
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
 
@@ -204,7 +201,7 @@ Once started, your application should be available on `http://localhost:5000`.
 
 > [!warning]
 >
-> The shared registry of AI Deploy should only be used for testing purposes. Please consider attaching your own Docker registry. More information about this can be found [here](https://docs.ovh.com/ie/en/publiccloud/ai/training/add-private-registry/).
+> The shared registry of AI Deploy should only be used for testing purposes. Please consider attaching your own Docker registry. More information about this can be found [here](/pages/platform/ai/training_guide_05_howto_add_registry).
 >
 
 Find the adress of your shared registry by launching this command:
@@ -245,8 +242,8 @@ ovhai app run --default-http-port 5000 --cpu 4 <shared-registry-address>/sentime
 
 ## Go further
 
-- You can also imagine deploying an Object Detection model with **Flask** in this [tutorial](https://docs.ovh.com/ie/en/publiccloud/ai/deploy/web-service-yolov5/).
-- Discover an other tool to deploy easily AI models: **Gradio**. Refer to this [documentation](https://docs.ovh.com/ie/en/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/).
+- You can also imagine deploying an Object Detection model with **Flask** in this [tutorial](/pages/platform/ai/deploy_tuto_04_flask_yolov5).
+- Discover an other tool to deploy easily AI models: **Gradio**. Refer to this [documentation](/pages/platform/ai/deploy_tuto_05_gradio_sketch_recognition).
 
 ## Feedback
 

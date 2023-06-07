@@ -1,10 +1,8 @@
 ---
 title: Persistent Volumes on OVHcloud Managed Kubernetes
-slug: ovh-kubernetes-persistent-volumes
 excerpt: 'Find out how to setup and manage Persistent Volumes on OVHcloud Managed Kubernetes'
-section: Getting started
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/ovh-kubernetes-persistent-volumes/'
+    canonical: '/pages/platform/kubernetes-k8s/persistent-volumes-on-ovh-managed-kubernetes'
 updated: 2022-10-17
 ---
 
@@ -35,7 +33,7 @@ updated: 2022-10-17
 ## Before you begin
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it.  
-If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/platform/kubernetes-k8s/deploying-hello-world).
 
 > [!warning]
 > When a __PersistentVolume__ resource is created inside a Managed Kubernetes cluster, an associated Public Cloud __Block Storage__ volume is automatically created with it, with a lifespan depending on the parent cluster's lifespan.
@@ -90,7 +88,7 @@ The difference between them is the associated physical storage device. The `csi-
 
 When you create a PersistentVolume Claim on your Kubernetes cluster, we provision the Cinder storage into your account. This storage is charged according to the OVH [Flexible Cloud Block Storage Policy](https://www.ovhcloud.com/fr-ca/public-cloud/block-storage/){.external}.
 
-Since Kubernetes 1.11, support for expanding `PersistentVolumeClaims` (PVCs) is enabled by default, and it works on Cinder volumes. In order to learn how to resize them, please refer to the [Resizing PersistentVolumes](../resizing-persistent-volumes/) tutorial. Kubernetes PVCs resizing only allows to expand volumes, nor to decrease them.
+Since Kubernetes 1.11, support for expanding `PersistentVolumeClaims` (PVCs) is enabled by default, and it works on Cinder volumes. In order to learn how to resize them, please refer to the [Resizing PersistentVolumes](/pages/platform/kubernetes-k8s/resizing-persistent-volumes) tutorial. Kubernetes PVCs resizing only allows to expand volumes, nor to decrease them.
 
 ## Setting up a PersistentVolume
 

@@ -1,8 +1,6 @@
 ---
 title: Checking and applying patches for Spectre/Meltdown vulnerabilities on your hosts
-slug: check_patch_spectre_meltdown_vulnerabilities_hosts
 excerpt: Find out how to apply patches for the Spectre and Meltdown vulnerabilities
-section: Meltdown and Spectre information
 updated: 2018-03-26
 ---
 
@@ -10,7 +8,7 @@ updated: 2018-03-26
 
 ## Objective
 
-To find general information on Spectre and Meltdown, please refer to our [detailed guide](https://docs.ovh.com/fr/dedicated/information-about-meltdown-spectre-vulnerability-fixes/){.external} and [our guide for each OS](https://docs.ovh.com/fr/dedicated/meltdown-spectre-kernel-update-per-operating-system/){.external}.
+To find general information on Spectre and Meltdown, please refer to our [detailed guide](/pages/cloud/dedicated/meltdown_spectre_fixes){.external} and [our guide for each OS](/pages/cloud/dedicated/meltdown_spectre_fixes_os){.external}.
 
 **This guide will explain how to apply patches for the Spectre and Meltdown vulnerabilities**.
 
@@ -41,7 +39,7 @@ For **Private Cloud** solutions, there is planned scheduled maintenance to apply
 
 ### Check the host version
 
-To check your host version, log in to your [vSphere interface](https://docs.ovh.com/gb/en/private-cloud/login-vsphere-interface/){.external} and go to the host summary, in the `Configuration`{.action} section:
+To check your host version, log in to your [vSphere interface](/pages/cloud/private-cloud/vsphere_interface_connexion){.external} and go to the host summary, in the `Configuration`{.action} section:
 
 ![Host configuration section](images/spectre1.JPG)
 

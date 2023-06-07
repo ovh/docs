@@ -1,9 +1,6 @@
 ---
 title: Tracking slow MySQL queries with Logs Data Platform
-slug: logs-data-platform-mysql-slow-queries
-order: 04
 excerpt: Keep your MySQL database at high speed with Logs Data Platform!
-section: Use cases
 updated: 2019-04-11
 ---
 

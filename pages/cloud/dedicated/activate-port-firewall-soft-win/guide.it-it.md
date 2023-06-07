@@ -1,9 +1,6 @@
 ---
 title: Configura il firewall su Windows
 excerpt: Scopri come configurare un firewall Windows
-slug: firewall-windows
-section: Sicurezza
-order: 02
 updated: 2022-01-31
 ---
 

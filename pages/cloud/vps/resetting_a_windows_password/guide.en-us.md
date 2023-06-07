@@ -1,8 +1,6 @@
 ---
 title: 'Resetting a Windows password'
-slug: resetting-a-windows-password-vps
 excerpt: 'Guide to resetting a Windows password'
-section: Diagnostics and rescue mode
 updated: 2020-11-25
 ---
 
@@ -14,7 +12,7 @@ In some cases you might need to reset a Windows password. This guide will show y
 
 ## Requirements
 
-- The VPS must be in rescue mode (see [Activating rescue mode on a VPS](../rescue)).
+- The VPS must be in rescue mode (see [Activating rescue mode on a VPS](/pages/cloud/vps/rescue)).
 
 ## Instructions
 
@@ -42,7 +40,7 @@ chntpw -u Administrator SAM
 
 Press `1` and `Enter` to clear the password. Press `q` to quit the password change prompt. Afterwards, press `y` to write the changes to the file.
 
-You can now leave the rescue mode and reboot normally (see [Activating rescue mode on a VPS](../rescue)).
+You can now leave the rescue mode and reboot normally (see [Activating rescue mode on a VPS](/pages/cloud/vps/rescue)).
 
 When logging in to your VPS now, you will not have to enter a password to log in to a Windows session.
 

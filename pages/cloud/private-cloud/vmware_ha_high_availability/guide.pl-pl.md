@@ -1,12 +1,9 @@
 ---
 title: VMware HA (High Availability)
-slug: vmware-ha-high-availability
 excerpt: Zarządzanie polityką restartowania przy użyciu funkcji HA
 legacy_guide_number: '2163279'
 space_key: VS
 space_name: vSphere as a Service
-section: Funkcjonalności VMware vSphere
-order: 02
 updated: 2020-04-30
 ---
 
@@ -22,7 +19,7 @@ Główną funkcją usługi **VMware HA** (High Availability) w razie awarii sprz
 
 ## Wymagania początkowe
 
-- Dostęp do [interfejsu vSphere](../polaczenie-interfejs-vsphere/).
+- Dostęp do [interfejsu vSphere](/pages/cloud/private-cloud/vsphere_interface_connexion).
 - Posiadanie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}
 
 ## W praktyce
@@ -38,7 +35,7 @@ Jeśli funkcja HA nie jest aktywna w Twoim klastrze, przejdź do karty `Konfigur
 Kliknij polecenie `Edytuj`{.action} i zaznacz pole, aby włączyć funkcję HA.
 
 Ważne jest również, aby włączyć monitorowanie hosta. To ustawienie umożliwia wysyłanie zapytań o dostępność między hostami ESXi w celu wykrycia ewentualnej awarii.
-Wyłączenie tej funkcji jest konieczne na przykład do przeprowadzenia aktualizacji przy użyciu narzędzia [Update Manager](../korzystanie_z_vmware_update_manager/). W tym konkretnym przypadku host jest izolowany.
+Wyłączenie tej funkcji jest konieczne na przykład do przeprowadzenia aktualizacji przy użyciu narzędzia [Update Manager](/pages/cloud/private-cloud/vmware_update_manager). W tym konkretnym przypadku host jest izolowany.
 
 ![activation HA](images/HA.png){.thumbnail}
 
@@ -94,7 +91,7 @@ W razie usterki magazynu danych ze statusem APD (All Path Down) możesz określi
 
 ##### Monitoring maszyn wirtualnych
 
-Monitoring maszyn wirtualnych jest dostępny po zainstalowaniu narzędzia [VMware tools](../instalacja_vmware_tools/).
+Monitoring maszyn wirtualnych jest dostępny po zainstalowaniu narzędzia [VMware tools](/pages/cloud/private-cloud/vmware_tools_install).
 W razie braku reakcji ze strony **tools** (zapytania o dostępność) maszyna wirtualna zostanie automatycznie zrestartowana. Możliwa jest zaawansowana konfiguracja tej funkcji (np. odstępów czasu restartu).
 
 ![Surveillande de VM](images/HAparam5.PNG){.thumbnail}

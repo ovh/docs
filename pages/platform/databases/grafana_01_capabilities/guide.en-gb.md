@@ -1,9 +1,6 @@
 ---
 title: Grafana - Capabilities and Limitations
-slug: grafana/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Grafana
-section: Grafana - Guides
-order: 010
 updated: 2023-04-22
 ---
 

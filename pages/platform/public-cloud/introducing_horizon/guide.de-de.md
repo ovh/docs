@@ -1,9 +1,6 @@
 ---
 title: Einführung in das Horizon Interface
-slug: horizon
 excerpt: Erfahren Sie hier, wie Sie das Horizon Interface verwenden
-section: Horizon
-order: 01
 updated: 2022-03-16
 ---
 
@@ -21,14 +18,14 @@ Das mit OpenStack ausgelieferte Horizon Interface wurde von OVHcloud angepasst, 
 
 ## Voraussetzungen
 
-- Sie haben ein [Public Cloud Projekt](https://docs.ovh.com/de/public-cloud/create_a_public_cloud_project/) in Ihrem Kunden-Account.
-- Sie haben einen [OpenStack Benutzer](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/) in Ihrem Projekt erstellt.
+- Sie haben ein [Public Cloud Projekt](/pages/platform/public-cloud/create_a_public_cloud_project) in Ihrem Kunden-Account.
+- Sie haben einen [OpenStack Benutzer](/pages/platform/public-cloud/create_and_delete_a_user) in Ihrem Projekt erstellt.
 
 ## In der praktischen Anwendung
 
 ### In OpenStack Horizon einloggen
 
-Öffnen Sie die [Horizon Login Seite](https://horizon.cloud.ovh.net/auth/login/). Geben Sie die zuvor erstellten Login-Daten des [OpenStack Users](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/) ein und klicken Sie auf `Connect`{.action}.
+Öffnen Sie die [Horizon Login Seite](https://horizon.cloud.ovh.net/auth/login/). Geben Sie die zuvor erstellten Login-Daten des [OpenStack Users](/pages/platform/public-cloud/create_and_delete_a_user) ein und klicken Sie auf `Connect`{.action}.
 
 Sie können hierzu auch auf `Horizon`{.action} im linken Menü unter "Management Interfaces" klicken, wenn Sie Ihr `Public Cloud`{.action} Projekt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) geöffnet haben.
 
@@ -117,6 +114,6 @@ Oben rechts im Horizon Interface haben Sie folgende Optionen im Benutzermenü:
 
 ## Weiterführende Informationen
 
-[Einführung in das Public Cloud Interface](https://docs.ovh.com/de/public-cloud/public-cloud-interface/)
+[Einführung in das Public Cloud Interface](/pages/platform/public-cloud/03-public-cloud-interface-walk-me)
  
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

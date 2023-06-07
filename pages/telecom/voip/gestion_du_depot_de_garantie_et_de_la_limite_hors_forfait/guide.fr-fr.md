@@ -1,9 +1,7 @@
 ---
 title: 'Gestion du dépôt de garantie et de la limite hors-forfait'
-slug: gestion-du-depot-de-garantie-et-de-la-limite-hors-forfait
 excerpt: 'Découvrez comment gérer les consommations hors-forfait de vos services VoIP OVHcloud'
 legacy_guide_number: '7536699'
-section: Administratif
 updated: 2021-06-01
 ---
 
@@ -35,7 +33,7 @@ Vous aurez alors une autorisation de hors-forfait à 150€ HT par groupe.
 
 > [!primary]
 > Cette limitation est obligatoire. Celle-ci peut vous éviter d'avoir une facture hors-normes en cas de piratage de votre ligne SIP.
-> Pour éviter ce dernier cas de figure, nous vous recommandons de [sécuriser votre ligne SIP](https://docs.ovh.com/fr/voip/securiser-ligne-sip/).  
+> Pour éviter ce dernier cas de figure, nous vous recommandons de [sécuriser votre ligne SIP](/pages/telecom/voip/secure-sip-line).  
 > 
 
 ### Exemple
@@ -54,14 +52,14 @@ Il ne reste donc plus que 10€ HT (150-(50+90)=10) de hors-forfait autorisé po
 
 Selon vos besoins, deux méthodes existent pour augmenter l'autorisation de hors-forfait. Ces deux méthodes peuvent être cumulées.
 
-Vous pouvez augmenter la limite de base du groupe à 300€ sans verser d'argent, en [suivant ces instructions.](https://docs.ovh.com/fr/voip/gestion-du-depot-de-garantie-et-de-la-limite-hors-forfait/#augmenter-la-limite-de-base)
+Vous pouvez augmenter la limite de base du groupe à 300€ sans verser d'argent, en [suivant ces instructions.](/pages/telecom/voip/gestion_du_depot_de_garantie_et_de_la_limite_hors_forfait#augmenter-la-limite-de-base)
 
 Pour l'exemple cité plus haut :
 
 ![hors-forfait voip](images/HFvoip2.png){.thumbnail}
 
 
-Vous pouvez également augmenter votre dépôt de garantie en [suivant cette méthode](https://docs.ovh.com/fr/voip/gestion-du-depot-de-garantie-et-de-la-limite-hors-forfait/#augmenter-le-depot-de-garantie). 
+Vous pouvez également augmenter votre dépôt de garantie en [suivant cette méthode](/pages/telecom/voip/gestion_du_depot_de_garantie_et_de_la_limite_hors_forfait#augmenter-le-depot-de-garantie). 
 
 Pour l'exemple cité plus haut :
 
@@ -70,7 +68,7 @@ Pour l'exemple cité plus haut :
 > [!primary]
 >
 > En cas de dépassement du hors-forfait autorisé sur votre groupe de téléphonie, vous ne pourrez pas augmenter la limite de base du groupe. Vous devrez alors augmenter votre dépôt de garantie.
-> Pour en savoir plus, reportez-vous à la partie [Qu'arrive t-il en cas de dépassement ?](https://docs.ovh.com/fr/voip/gestion-du-depot-de-garantie-et-de-la-limite-hors-forfait/#quarrive-t-il-en-cas-de-depassement) en bas de ce guide.
+> Pour en savoir plus, reportez-vous à la partie [Qu'arrive t-il en cas de dépassement ?](/pages/telecom/voip/gestion_du_depot_de_garantie_et_de_la_limite_hors_forfait#quarrive-t-il-en-cas-de-depassement) en bas de ce guide.
 >
 
 
@@ -123,7 +121,7 @@ Pour supprimer un groupe de téléphonie, sélectionnez-le dans le menu de gauch
 >
 > Si des services sont encore présents dans ce groupe, ils seront également supprimés à la prochaine date de facturation.
 > Si vous souhaitez conserver ces services, vous devez les déplacer dans un autre groupe de téléphonie, **avant** de supprimer le groupe initial.
-> Pour cela, consultez le guide ["Gestion des groupes de téléphonie"](../gestion-des-groupes-de-telephonie/) afin de créer un nouveau groupe ou de déplacer les services dans un groupe existant.
+> Pour cela, consultez le guide ["Gestion des groupes de téléphonie"](/pages/telecom/voip/regrouper_services_telephonie) afin de créer un nouveau groupe ou de déplacer les services dans un groupe existant.
 >
 
 ### Les transferts entre groupes
@@ -163,9 +161,9 @@ Dans l'onglet `Facturation`{.action}, cliquez sur `Consommation générale`{.act
 
 ![consommation générale](images/voipconso.png){.thumbnail}
 
-Si vous constatez des anomalies, commencez par [sécuriser votre ligne SIP](https://docs.ovh.com/fr/voip/securiser-ligne-sip/). 
+Si vous constatez des anomalies, commencez par [sécuriser votre ligne SIP](/pages/telecom/voip/secure-sip-line). 
 
-Une fois ces vérifications effectuées, vous pouvez débloquer le groupe en [augmentant le dépôt de garantie du groupe](https://docs.ovh.com/fr/voip/gestion-du-depot-de-garantie-et-de-la-limite-hors-forfait/#augmenter-le-depot-de-garantie).
+Une fois ces vérifications effectuées, vous pouvez débloquer le groupe en [augmentant le dépôt de garantie du groupe](/pages/telecom/voip/gestion_du_depot_de_garantie_et_de_la_limite_hors_forfait#augmenter-le-depot-de-garantie).
 
 ## Aller plus loin
 

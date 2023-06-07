@@ -1,9 +1,6 @@
 ---
 title: 'Erste Schritte mit MX Plan'
-slug: allgemeines-zu-shared-e-mails
 excerpt: 'Erfahren Sie hier, wie Sie Ihr MX Plan Angebot verwenden'
-section: 'Erste Schritte'
-order: 01
 updated: 2021-07-19
 ---
 
@@ -57,7 +54,7 @@ Geben Sie hier die angeforderten Informationen ein.
 |Vorname|Geben Sie einen Vornamen an.|
 |Name|Geben Sie einen Nachnamen an.|
 |Anzeigename|Geben Sie den Namen an, der als Absender angezeigt werden soll, wenn E-Mails mit dieser Adresse verschickt werden.|
-|Passwort|[Legen Sie ein Passwort fest](https://docs.ovh.com/de/customer/Passwort-verwalten/#in-der-praktischen-anwendung) und bestätigen Sie dieses. Aus Sicherheitsgründen empfehlen wir Ihnen, ein neues zu generieren, das keinerlei Zusammenhang mit Ihren persönlichen Angaben hat (vermeiden Sie beispielsweise Ihren Namen, Vornamen oder Ihr Geburtsdatum), und dieses regelmäßig zu ändern.|
+|Passwort|[Legen Sie ein Passwort fest](/pages/account/customer/manage-ovh-password#in-der-praktischen-anwendung) und bestätigen Sie dieses. Aus Sicherheitsgründen empfehlen wir Ihnen, ein neues zu generieren, das keinerlei Zusammenhang mit Ihren persönlichen Angaben hat (vermeiden Sie beispielsweise Ihren Namen, Vornamen oder Ihr Geburtsdatum), und dieses regelmäßig zu ändern.|
 
 Wenn Sie die Felder ausgefüllt haben, klicken Sie auf `Weiter`{.action} und überprüfen Sie die in der Zusammenfassung angezeigten Informationen. Sind diese korrekt, klicken Sie auf `Bestätigen`{.action}. Führen Sie diesen Schritt so oft wie nötig durch (je nach Anzahl Ihrer Accounts).
 
@@ -71,7 +68,7 @@ Sobald Ihre E-Mail-Accounts angelegt wurden, können Sie diese verwenden. Hierf�
 
 Gehen Sie zum [Webmail-Login](https://www.ovh.de/mail/) und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
 
-Beim ersten Login werden Sie aufgefordert, die Sprache sowie Ihre Zeitzone festzulegen. Daraufhin wird Ihr Posteingang angezeigt. Weitere Informationen zur Verwendung Ihrer E-Mail-Adresse finden Sie in unserer Anleitung zur [Verwendung Ihrer E-Mail-Adresse mit OWA](https://docs.ovh.com/de/emails/verwendung-owa/).
+Beim ersten Login werden Sie aufgefordert, die Sprache sowie Ihre Zeitzone festzulegen. Daraufhin wird Ihr Posteingang angezeigt. Weitere Informationen zur Verwendung Ihrer E-Mail-Adresse finden Sie in unserer Anleitung zur [Verwendung Ihrer E-Mail-Adresse mit OWA](/products/email-owa-user-guide).
 
 ![E-Mail](images/mxplan-starter-new-step4.png){.thumbnail}
 
@@ -81,9 +78,9 @@ Um Ihren Mailaccount mit einer E-Mail-Software zu verwenden, müssen Sie diese E
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
-|[Windows 10](https://docs.ovh.com/de/emails/mail-konfiguration-windows-10/)|[Windows Outlook](https://docs.ovh.com/de/emails/konfiguration-outlook-2016/)|[macOS Mail (neueste Version)](https://docs.ovh.com/de/emails/anleitung-mail-konfiguration-auf-macos/)|[Android (neueste Version)](https://docs.ovh.com/de/emails/konfiguration-android/)|
-|[Thunderbird Windows](https://docs.ovh.com/de/emails/konfiguration-email-thunderbird-windows/)|[Outlook Mac OS](https://docs.ovh.com/de/emails/konfiguration-outlook-2016-mac/)|[Mail für iPhone oder iPad](https://docs.ovh.com/de/emails/mail-konfiguration-iphone-ios-91/)|
-|||[Thunderbird Mac OS](https://docs.ovh.com/de/emails/konfiguration-email-thunderbird-mac/)|
+|[Windows 10](/pages/web/emails/how_to_configure_windows_10)|[Windows Outlook](/pages/web/emails/how_to_configure_outlook_2016)|[macOS Mail (neueste Version)](/pages/web/emails/how_to_configure_mail_macos)|[Android (neueste Version)](/pages/web/emails/how_to_configure_android)|
+|[Thunderbird Windows](/pages/web/emails/how_to_configure_thunderbird_windows)|[Outlook Mac OS](/pages/web/emails/how_to_configure_outlook_2016_mac)|[Mail für iPhone oder iPad](/pages/web/emails/how_to_configure_ios)|
+|||[Thunderbird Mac OS](/pages/web/emails/how_to_configure_thunderbird_mac)|
 
 Wenn Sie nur die Einstellungsdetails zur Konfiguration Ihres E-Mail-Accounts benötigen, verwenden Sie die folgenden Werte:
 
@@ -103,7 +100,7 @@ Wenn Sie nur die Einstellungsdetails zur Konfiguration Ihres E-Mail-Accounts ben
 
 > [!warning]
 >
-> Sollten Sie Schwierigkeiten bei der Konfiguration des E-Mail-Accounts auf Ihrem Gerät haben, verwenden Sie unsere [Konfigurationsanleitungen](../) oder wenden Sie sich an den Anbieter der Software oder des Geräts.
+> Sollten Sie Schwierigkeiten bei der Konfiguration des E-Mail-Accounts auf Ihrem Gerät haben, verwenden Sie unsere [Konfigurationsanleitungen](/products/web-cloud-email-collaborative-solutions-mx-plan) oder wenden Sie sich an den Anbieter der Software oder des Geräts.
 >
 
 #### Erweiterte Funktionen
@@ -122,31 +119,31 @@ Dazu können Sie Weiterleitungen erstellen. Sie können dies auf zwei Arten tun:
 
 - Ihre Weiterleitung über das Webmail-Interface mithilfe der Posteingangsregeln erstellen. Folgen Sie hierzu unserer Anleitung "[Posteingangsregeln in OWA erstellen](https://docs.ovh.com/de/microsoft-collaborative-solutions/posteingangsregeln-in-owa-erstellen/#beispiel-1-e-mails-an-eine-andere-adresse-umleiten)".
 
-- Ihre Weiterleitung über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) anlegen. Mit dieser Methode können Sie zum Beispiel einen Alias erstellen, d.h. eine E-Mail-Adresse, die nicht existiert, auf eine bestehende E-Mail Adresse weiterleiten. Folgen Sie hierzu unserer Anleitung "[E-Mail-Weiterleitungen verwenden](https://docs.ovh.com/de/emails/webhosting_e-mail_anleitung_zum_einrichten_einer_mail-weiterleitung/#neue-mx-plan-version)".
+- Ihre Weiterleitung über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) anlegen. Mit dieser Methode können Sie zum Beispiel einen Alias erstellen, d.h. eine E-Mail-Adresse, die nicht existiert, auf eine bestehende E-Mail Adresse weiterleiten. Folgen Sie hierzu unserer Anleitung "[E-Mail-Weiterleitungen verwenden](/pages/web/emails/feature_redirections#neue-mx-plan-version)".
 
 ##### **Auto-Antworten**
 
 Falls Sie für einen bestimmten Zeitraum keine E-Mails beantworten können, gibt es die Möglichkeit, einen Auto-Responder einzurichten.
 
-Um automatische E-Mail-Antworten einzurichten, folgen Sie unserer Anleitung "[Einrichten einer automatischen Antwort in OWA](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2016_einrichten_einer_automatischen_antwort_in_owa/)".
+Um automatische E-Mail-Antworten einzurichten, folgen Sie unserer Anleitung "[Einrichten einer automatischen Antwort in OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies)".
 
 ##### **Delegationen**
 
 Sie können eine E-Mail von Ihrer persönlichen E-Mail-Adresse aus versenden, entweder **anstelle** oder **von einer anderen** E-Mail-Adresse Ihrer Domain.
 
-Konfigurieren Sie hierzu die Delegation der betreffenden E-Mail-Adresse anhand unserer Anleitung "[Berechtigungen für einen Exchange Account übertragen](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2013_send_as_versand_als/)".
+Konfigurieren Sie hierzu die Delegation der betreffenden E-Mail-Adresse anhand unserer Anleitung "[Berechtigungen für einen Exchange Account übertragen](/pages/web/microsoft-collaborative-solutions/feature_delegation)".
 
 ##### **Mailinglisten**
 
 Sie können regelmäßig Mails an bestimmte Empfänger, etwa einen Newsletter, an Ihre Kontakte senden.
 
-Hierzu können Sie eine Mailingliste erstellen, mithilfe unserer Anleitung "[Mailinglisten verwalten und nutzen](https://docs.ovh.com/de/emails/webhosting_e-mail_verwendung_von_mailinglisten/)".
+Hierzu können Sie eine Mailingliste erstellen, mithilfe unserer Anleitung "[Mailinglisten verwalten und nutzen](/pages/web/emails/feature_mailing_list)".
 
 ##### **Fußzeile**
 
 Sie können eine globale Signatur auf alle E-Mail-Adressen einer Domain anwenden.
 
-Diese E-Mail-Signatur (*Footer*) wird automatisch an Mails aller Benutzer angehängt und kann im Kundencenter eingerichtet werden. Folgen Sie dazu unserer Anleitung "[Automatische Signaturen erstellen](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_automatische_signatur_-_disclaimer/)".
+Diese E-Mail-Signatur (*Footer*) wird automatisch an Mails aller Benutzer angehängt und kann im Kundencenter eingerichtet werden. Folgen Sie dazu unserer Anleitung "[Automatische Signaturen erstellen](/pages/web/microsoft-collaborative-solutions/feature_footers)".
 
 ### MX Plan Legacy <a name="oldmxplan"></a>
 
@@ -169,7 +166,7 @@ Geben Sie hier die angeforderten Informationen ein.
 |Account-Name|Geben Sie die E-Mail-Adresse ein (zum Beispiel Vorname.Name). Der Domainname der E-Mail-Adresse wird automatisch angehängt.|  
 |Account-Beschreibung:|Geben Sie eine kurze Beschreibung ein, damit Sie diesen Account später von anderen Accounts in Ihrem OVHcloud Kundencenter unterscheiden können.|  
 |Account-Größe:|Wählen Sie die gewünschte Account-Größe aus. Hierbei handelt es sich um den Speicherplatz Ihres Accounts zum Speichern von Nachrichten.|  
-|Passwort|[Legen Sie ein Passwort fest](https://docs.ovh.com/de/customer/Passwort-verwalten/#in-der-praktischen-anwendung) und bestätigen Sie dieses. Aus Sicherheitsgründen empfehlen wir Ihnen, ein neues zu generieren, das keinerlei Zusammenhang mit Ihren persönlichen Angaben hat (vermeiden Sie beispielsweise Ihren Namen, Vornamen oder Ihr Geburtsdatum), und dieses regelmäßig zu ändern.|
+|Passwort|[Legen Sie ein Passwort fest](/pages/account/customer/manage-ovh-password#in-der-praktischen-anwendung) und bestätigen Sie dieses. Aus Sicherheitsgründen empfehlen wir Ihnen, ein neues zu generieren, das keinerlei Zusammenhang mit Ihren persönlichen Angaben hat (vermeiden Sie beispielsweise Ihren Namen, Vornamen oder Ihr Geburtsdatum), und dieses regelmäßig zu ändern.|
 
 Wenn Sie die Felder ausgefüllt haben, klicken Sie auf `Weiter`{.action} und überprüfen Sie die in der Zusammenfassung angezeigten Informationen. Sind diese korrekt, klicken Sie auf `Bestätigen`{.action}. Führen Sie diesen Schritt so oft wie nötig durch (je nach Anzahl Ihrer Accounts).
 
@@ -183,7 +180,7 @@ Sobald Ihre E-Mail-Adressen angelegt wurden, können Sie diese verwenden. Hierf�
 
 Gehen Sie zum [Webmail-Login](https://www.ovh.de/mail/) und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
 
-Daraufhin wird Ihr Posteingang angezeigt. Weitere Informationen zur Verwendung Ihres E-Mail-Accounts finden Sie in unserer Anleitung zur [Verwendung von RoundCube](https://docs.ovh.com/de/emails/webmail_verwendung_von_roundcube/)“.
+Daraufhin wird Ihr Posteingang angezeigt. Weitere Informationen zur Verwendung Ihres E-Mail-Accounts finden Sie in unserer Anleitung zur [Verwendung von RoundCube](/pages/web/emails/email_roundcube)“.
 
 ![E-Mail](images/mxplan-starter-legacy-step4.png){.thumbnail}
 
@@ -193,9 +190,9 @@ Um Ihren Mailaccount mit einer E-Mail-Software zu verwenden, müssen Sie diese E
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
-|[Windows 10](https://docs.ovh.com/de/emails/mail-konfiguration-windows-10/)|[Windows Outlook](https://docs.ovh.com/de/emails/konfiguration-outlook-2016/)|[macOS Mail (neueste Version)](https://docs.ovh.com/de/emails/anleitung-mail-konfiguration-auf-macos/)|[Android (neueste Version)](https://docs.ovh.com/de/emails/konfiguration-android/)|
-|[Thunderbird Windows](https://docs.ovh.com/de/emails/konfiguration-email-thunderbird-windows/)|[Outlook Mac OS](https://docs.ovh.com/de/emails/konfiguration-outlook-2016-mac/)|[Mail für iPhone oder iPad](https://docs.ovh.com/de/emails/mail-konfiguration-iphone-ios-91/)|
-|||[Thunderbird Mac OS](https://docs.ovh.com/de/emails/konfiguration-email-thunderbird-mac/)|
+|[Windows 10](/pages/web/emails/how_to_configure_windows_10)|[Windows Outlook](/pages/web/emails/how_to_configure_outlook_2016)|[macOS Mail (neueste Version)](/pages/web/emails/how_to_configure_mail_macos)|[Android (neueste Version)](/pages/web/emails/how_to_configure_android)|
+|[Thunderbird Windows](/pages/web/emails/how_to_configure_thunderbird_windows)|[Outlook Mac OS](/pages/web/emails/how_to_configure_outlook_2016_mac)|[Mail für iPhone oder iPad](/pages/web/emails/how_to_configure_ios)|
+|||[Thunderbird Mac OS](/pages/web/emails/how_to_configure_thunderbird_mac)|
 
 Wenn Sie nur die Einstellungsdetails zur Konfiguration Ihrer E-Mail-Adresse benötigen, verwenden Sie die folgenden Werte:
 
@@ -215,7 +212,7 @@ Wenn Sie nur die Einstellungsdetails zur Konfiguration Ihrer E-Mail-Adresse ben�
 
 > [!warning]
 >
-> Sollten Sie Schwierigkeiten bei der Konfiguration der E-Mail-Adresse auf Ihrem Gerät haben, verwenden Sie unsere [Konfigurationsanleitungen](../) oder wenden Sie sich an den Anbieter der Software oder des Geräts.
+> Sollten Sie Schwierigkeiten bei der Konfiguration der E-Mail-Adresse auf Ihrem Gerät haben, verwenden Sie unsere [Konfigurationsanleitungen](/products/web-cloud-email-collaborative-solutions-mx-plan) oder wenden Sie sich an den Anbieter der Software oder des Geräts.
 >
 
 #### Erweiterte Funktionen
@@ -224,25 +221,25 @@ Wenn Sie nur die Einstellungsdetails zur Konfiguration Ihrer E-Mail-Adresse ben�
 
 Sie können Ihre E-Mails an einen anderen Empfänger weiterleiten oder einen Alias erstellen.
 
-Dazu können Sie Weiterleitungen erstellen. Folgen Sie hierzu unserer Anleitung "[E-Mail-Weiterleitungen verwenden](https://docs.ovh.com/de/emails/webhosting_e-mail_anleitung_zum_einrichten_einer_mail-weiterleitung/#historische-mx-plan-version)".
+Dazu können Sie Weiterleitungen erstellen. Folgen Sie hierzu unserer Anleitung "[E-Mail-Weiterleitungen verwenden](/pages/web/emails/feature_redirections#historische-mx-plan-version)".
 
 ##### **Auto-Antworten**
 
 Falls Sie für einen bestimmten Zeitraum keine E-Mails beantworten können, gibt es die Möglichkeit, einen Auto-Responder einzurichten.
 
-Um automatische E-Mail-Antworten einzurichten, folgen Sie unserer Anleitung "[Einrichten von Auto-Antworten für E-Mails](https://docs.ovh.com/de/emails/einrichten_von_auto-antworten/)".
+Um automatische E-Mail-Antworten einzurichten, folgen Sie unserer Anleitung "[Einrichten von Auto-Antworten für E-Mails](/pages/web/emails/feature_auto_responses)".
 
 ##### **Delegationen**
 
 Sie können die **Verwaltung Ihrer E-Mail-Accounts an einen oder mehrere OVHcloud Accounts delegieren** oder **E-Mail-Accounts an einen Benutzer delegieren**, um beispielsweise dem Inhaber dieses anderen OVHcloud Kunden-Accounts zu ermöglichen, das Passwort eines E-Mail-Accounts zu ändern.
 
-Folgen Sie dazu unserer Anleitung zur [Delegation von E-Mail-Accounts](https://docs.ovh.com/de/emails/delegation-emails/).
+Folgen Sie dazu unserer Anleitung zur [Delegation von E-Mail-Accounts](/pages/web/emails/feature_delegation).
 
 ##### **Mailinglisten**
 
 Sie können regelmäßig Mails an bestimmte Empfänger, etwa einen Newsletter, an Ihre Kontakte senden.
 
-Hierzu können Sie eine Mailingliste erstellen, mithilfe unserer Anleitung "[Mailinglisten verwalten und nutzen](https://docs.ovh.com/de/emails/webhosting_e-mail_verwendung_von_mailinglisten/)".
+Hierzu können Sie eine Mailingliste erstellen, mithilfe unserer Anleitung "[Mailinglisten verwalten und nutzen](/pages/web/emails/feature_mailing_list)".
 
 ## Weiterführende Informationen
 

@@ -1,11 +1,8 @@
 ---
 title: Data Processing Capabilities and Limitations
-slug: capabilities
 excerpt: Find out what are the current capabilities and limitations of the OVHcloud Data Processing Platform 
-section: Concepts
-order: 1
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/data-processing/capabilities/'
+    canonical: '/pages/platform/data-processing/01_CONCEPTS_Capabilities'
 updated: 2023-05-12
 ---
 

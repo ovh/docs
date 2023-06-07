@@ -1,9 +1,6 @@
 ---
 title: 'Sharing calendars in OWA'
 excerpt: 'Find out how to share calendars in Exchange'
-slug: exchange_2016_how_to_share_calendars_via_owa
-section: 'Outlook Web Application (OWA)'
-order: 03
 updated: 2020-02-19
 ---
 
@@ -91,11 +88,11 @@ Clicking on a calendar in the list adds or removes them from the overview displa
 
 ## Go further
 
-[Using the Outlook Web App with an Exchange account](../exchange_2016_outlook_web_app_user_guide)
+[Using the Outlook Web App with an Exchange account](/us/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide)
 
-[Sharing folders in OWA](../exchange_2016_how_to_share_a_folder_via_owa)
+[Sharing folders in OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
-[Creating contact groups](../exchange_20132016_how_to_use_the_groups_feature_mailing_lists)
+[Creating contact groups](/pages/web/microsoft-collaborative-solutions/feature_groups)
 
 
 Join our community of users on <https://community.ovh.com/en/>.

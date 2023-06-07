@@ -1,9 +1,6 @@
 ---
 title: 'Ativar uma licença Windows para uma instância em modo privado'
-slug: activate-windows-licence-private-mode-instance
 excerpt: 'Descubra como ativar uma licença Windows numa instância em modo privado'
-section: Introdução
-order: 09
 updated: 2023-01-25
 ---
 
@@ -22,11 +19,11 @@ Neste caso, deverá ativar a licença manualmente para ter acesso a todos os ser
 
 ## Requisitos
 
-- Dispor de um [projeto Public Cloud](https://docs.ovh.com/pt/public-cloud/create_a_public_cloud_project/)
+- Dispor de um [projeto Public Cloud](/pages/platform/public-cloud/create_a_public_cloud_project)
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
-- [Ter criado um utilizador OpenStack](https://docs.ovh.com/pt/public-cloud/criar-e-eliminar-um-utilizador-openstack/)
+- [Ter criado um utilizador OpenStack](/pages/platform/public-cloud/create_and_delete_a_user)
 
-Recomendamos que consulte o guia "[Aceder à interface Horizon](https://docs.ovh.com/pt/public-cloud/horizon/)" para se familiarizar com o Horizon.
+Recomendamos que consulte o guia "[Aceder à interface Horizon](/pages/platform/public-cloud/introducing_horizon)" para se familiarizar com o Horizon.
 
 ## Instruções
 
@@ -34,7 +31,7 @@ Recomendamos que consulte o guia "[Aceder à interface Horizon](https://docs.ovh
 
 #### A partir da interface Horizon
 
-Ligue-se à interface [Horizon](https://horizon.cloud.ovh.net/auth/login/) de acordo com o método indicado na [primeira parte deste guia](https://docs.ovh.com/pt/publiccloud/network-services/public-cloud-vrack/#interface-horizon).
+Ligue-se à interface [Horizon](https://horizon.cloud.ovh.net/auth/login/) de acordo com o método indicado na [primeira parte deste guia](/pages/platform/network-services/getting-started-07-creating-vrack#interface-horizon).
 
 Ligue-se bem à sua zona de trabalho:
 
@@ -56,8 +53,8 @@ Selecione a sua interface e valide:
 
 Antes de prosseguir, recomendamos que consulte os seguintes guias:
 
-- [Preparar o ambiente para utilizar a API OpenStack](https://docs.ovh.com/pt/public-cloud/prepare_the_environment_for_using_the_openstack_api/).
-- [Carregar as variáveis de ambiente OpenStack](https://docs.ovh.com/pt/public-cloud/set-openstack-environment-variables/).
+- [Preparar o ambiente para utilizar a API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api).
+- [Carregar as variáveis de ambiente OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 Compile todas as informações necessárias:
 
@@ -187,6 +184,6 @@ slmgr.vbs -dli
 
 ## Quer saber mais?
 
-[Saiba como alterar a chave de produto do Windows Server](https://docs.ovh.com/pt/dedicated/windows-key/).
+[Saiba como alterar a chave de produto do Windows Server](/pages/cloud/dedicated/windows_key).
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: Cosa fare in caso di pagina "403 forbidden"?
 excerpt: Come caricare il tuo sito online su una pagina "403 forbidden"
-slug: diagnostic-403-forbidden
-section: Diagnostica
-order: 08
 updated: 2022-06-16
 ---
 
@@ -29,14 +26,14 @@ In caso di malfunzionamenti, i nostri sistemi di sicurezza hanno dovuto bloccare
 ## Prerequisiti
 
 - Disporre di una [soluzione di hosting Web](https://www.ovhcloud.com/it/web-hosting/) OVHcloud
-- Disporre delle [credenziali di accesso](../accedere-spazio-storage-ftp-hosting-web/#step-1-recupera-i-dati-necessari-a-effettuare-laccesso) allo spazio di storage dell'hosting
+- Disporre delle [credenziali di accesso](/pages/web/hosting/ftp_connection#step-1-recupera-i-dati-necessari-a-effettuare-laccesso) allo spazio di storage dell'hosting
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
 ### Step 1: analizzare la situazione
 
-Se la pagina **"403 forbidden"** è apparsa a seguito di una modifica errata del tuo sito, [ripristina in tutto o in parte lo spazio di storage del tuo hosting](../web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/) a una data precedente.
+Se la pagina **"403 forbidden"** è apparsa a seguito di una modifica errata del tuo sito, [ripristina in tutto o in parte lo spazio di storage del tuo hosting](/pages/web/hosting/ftp_save_and_backup) a una data precedente.
 
 Se i backup disponibili non ti permettono di ripristinare l'accesso al tuo sito, contatta un [provider specializzato](https://partner.ovhcloud.com/it/).
 
@@ -50,8 +47,8 @@ Verifica la sicurezza della tua postazione(e) informatica:
 
 - Effettua gli aggiornamenti di sicurezza;
 - Verifica anche che sia installato un antivirus, aggiorna e avvia una scansione completa. Se non ne hai uno, consulta un [provider specializzato](https://partner.ovhcloud.com/it/) prima di installare il tuo servizio;
-- Modificate l'insieme delle vostre password locali, in particolare quelle dei vostri indirizzi email, rispettando queste [buone pratiche](https://docs.ovh.com/it/customer/gestire-la-password/#genera-una-password-efficace);
-- Modifica le password di tutti i tuoi servizi OVHcloud, in particolare del tuo [database](../modificare-password-database/) e dell'accesso al tuo [spazio di storage FTP](../modificare-la-password-utente-ftp/).
+- Modificate l'insieme delle vostre password locali, in particolare quelle dei vostri indirizzi email, rispettando queste [buone pratiche](/pages/account/customer/manage-ovh-password#genera-una-password-efficace);
+- Modifica le password di tutti i tuoi servizi OVHcloud, in particolare del tuo [database](../modificare-password-database/) e dell'accesso al tuo [spazio di storage FTP](/pages/web/hosting/ftp_change_password).
 
 > [!warning]
 >
@@ -68,14 +65,14 @@ Annota innanzitutto la data di invio dell'email di OVHcloud che indica la disatt
 
 #### Caso 1: il tuo hosting è stato disattivato meno di due settimane fa
 
-Se il tuo hosting è stato chiuso meno di due settimane fa e contiene un solo sito, ripristina il tuo spazio di storage seguendo le istruzioni di questa [guida](../web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/#ripristina-i-dati-dello-storage-dallo-spazio-cliente-ovh).
+Se il tuo hosting è stato chiuso meno di due settimane fa e contiene un solo sito, ripristina il tuo spazio di storage seguendo le istruzioni di questa [guida](/pages/web/hosting/ftp_save_and_backup#ripristina-i-dati-dello-storage-dallo-spazio-cliente-ovh).
 
-Se il tuo hosting è stato chiuso meno di due settimane fa e contiene diversi siti, ripristina solo le cartelle contenenti i file illegittimi seguendo le istruzioni di questa [guida](../web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/#ripristina-un-file-da-un-software-o-uninterfaccia-web).
+Se il tuo hosting è stato chiuso meno di due settimane fa e contiene diversi siti, ripristina solo le cartelle contenenti i file illegittimi seguendo le istruzioni di questa [guida](/pages/web/hosting/ftp_save_and_backup#ripristina-un-file-da-un-software-o-uninterfaccia-web).
 
 > [!warning]
 >
 > Il solo ripristino del tuo spazio di storage non basterà a correggere eventuali falle di sicurezza presenti sul tuo sito.
-> Per identificare queste falle di sicurezza, puoi analizzare i ["logs web"](https://docs.ovh.com/it/hosting/hosting_condiviso_consulta_le_statistiche_e_i_log_del_tuo_sito/#logs) del tuo hosting o rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/) per effettuare un audit di sicurezza delle tue soluzioni.
+> Per identificare queste falle di sicurezza, puoi analizzare i ["logs web"](/pages/web/hosting/logs_and_statistics#logs) del tuo hosting o rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/) per effettuare un audit di sicurezza delle tue soluzioni.
 >
 
 #### Caso 2: il tuo hosting è stato disattivato più di due settimane fa
@@ -93,7 +90,7 @@ Se il tuo hosting è stato chiuso più di due settimane fa, contatta un [provide
 
 > [!primary]
 >
-> Per installare il software **FileZilla** per gestire i file del tuo sito, segui questa [guida](../hosting_condiviso_guida_allutilizzo_di_filezilla/).
+> Per installare il software **FileZilla** per gestire i file del tuo sito, segui questa [guida](/pages/web/hosting/ftp_filezilla_user_guide).
 >
 
 Apri il software FileZilla e accedi allo spazio di storage. Clicca sul `Server`{.action} nella barra del menu e poi su `Esegui comando personalizzato`{.action} (la denominazione può essere leggermente diversa a seconda della versione di FileZilla utilizzata):
@@ -114,7 +111,7 @@ Una risposta **"200 Permissions changed on /"** conferma che l'operazione è sta
 
 Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Web Cloud`{.action}, poi `Hosting`{.action} e clicca sulla scheda `FTP-SSH`{.action} dell'hosting in questione.
 
-Clicca sul pulsante `FTP Explorer`{.action} e accedi allo spazio di storage seguendo le indicazioni di questa [guida](../accedere-spazio-storage-ftp-hosting-web/#1-ftp-explorer). Clicca sul pulsante `Funzioni avanzate`{.action} e poi sul pulsante `Esegui`{.action} accanto a "Send arbitrary FTP commands to the FTP server".
+Clicca sul pulsante `FTP Explorer`{.action} e accedi allo spazio di storage seguendo le indicazioni di questa [guida](/pages/web/hosting/ftp_connection#1-ftp-explorer). Clicca sul pulsante `Funzioni avanzate`{.action} e poi sul pulsante `Esegui`{.action} accanto a "Send arbitrary FTP commands to the FTP server".
 
 ![net2ftp](images/net2ftp.png){.thumbnail}
 
@@ -126,11 +123,11 @@ Una risposta **"200 Permissions changed on /"** conferma che l'operazione è sta
 
 ## Per saperne di più <a name="gofurther"></a>
 
-[Consigli in caso di hacking del tuo sito WordPress](../hacking_del_tuo_sito_wordpress_consigli_e_casi_pratici/)
+[Consigli in caso di hacking del tuo sito WordPress](/pages/web/hosting/cms_what_to_do_if_your_site_is_hacked)
 
-[Attivazione del firewall applicativo](../hosting_condiviso_attiva_un_firewall_applicativo/)
+[Attivazione del firewall applicativo](/pages/web/hosting/multisites_activating_application_firewall)
 
-[Modificare la versione di PHP su un hosting Web](../configura_php_sul_tuo_hosting_web_condiviso_2014_ovh/)
+[Modificare la versione di PHP su un hosting Web](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 

@@ -1,9 +1,6 @@
 ---
 title: 'OVHcloud Kunden-Account erstellen'
-slug: ovhcloud-account-erstellen
 excerpt: Erfahren Sie hier, wie Sie Ihren OVHcloud Kunden-Account anlegen
-section: 'Erste Schritte'
-order: 1
 updated: 2021-07-01
 ---
 
@@ -36,7 +33,7 @@ Um einen OVHcloud Kunden-Account zu erstellen, gehen Sie einfach auf [diese Seit
 |---|---|
 |Vorname - Name|Geben Sie hier einen nachweisbaren Vor- und Nachnamen ein.|
 |E-Mail-Adresse|Geben Sie eine gültige **E-Mail-Adresse, auf die Sie Zugriff haben**, ein.<br><br>Vermeiden Sie hierbei generell E-Mail-Adressen mit Domainnamen, die über denselben Kunden-Account verwaltet werden. Sollte der Domainname eine Dienstunterbrechung erleiden, erhalten Sie unsere Benachrichtigungen nicht mehr.|
-|Passwort|Das Passwort muss einzigartig sein (erstellt und ausschließlich verwendet für Ihren OVHcloud Kunden-Account) und hinreichend komplex sein.<br><br>Um ein effizientes Passwort [zu erstellen, lesen Sie unsere](https://docs.ovh.com/de/customer/Passwort-verwalten/#in-der-praktischen-anwendung) Anleitung zur Passwortverwaltung.|
+|Passwort|Das Passwort muss einzigartig sein (erstellt und ausschließlich verwendet für Ihren OVHcloud Kunden-Account) und hinreichend komplex sein.<br><br>Um ein effizientes Passwort [zu erstellen, lesen Sie unsere](/pages/account/customer/manage-ovh-password#in-der-praktischen-anwendung) Anleitung zur Passwortverwaltung.|
 
 Sobald Sie das erste Formular ausgefüllt haben, wird Ihnen ein Code zur einmaligen Verwendung an die von Ihnen angegebene E-Mail-Adresse zugesandt. Mit diesem Code können Sie Ihre E-Mail-Adresse validieren. Geben Sie ihn in die dafür vorgesehenen Felder ein.
 
@@ -77,14 +74,14 @@ Ihre Kundenkennung ist oben rechts unter Ihrem Namen und Ihrer E-Mail-Adresse an
 
 ## Weiterführende Informationen
 
-Nun, da Ihr OVHcloud Kunden-Account erstellt ist, empfehlen wir Ihnen, [unseren Anleitungen zur Sicherheit Ihres Accounts und zur Verwaltung Ihrer persönlichen Daten](https://docs.ovh.com/de/customer/alles_uber_ihre_ovh_kundenkennung/) zu folgen.
+Nun, da Ihr OVHcloud Kunden-Account erstellt ist, empfehlen wir Ihnen, [unseren Anleitungen zur Sicherheit Ihres Accounts und zur Verwaltung Ihrer persönlichen Daten](/pages/account/customer/all_about_username) zu folgen.
 
 Lesen Sie auch unsere zugehörigen Anleitungen:
 
-[In das OVHcloud Kundencenter einloggen](https://docs.ovh.com/de/customer/sich-mit-ovhcloud-kundencenter-verbinden)
+[In das OVHcloud Kundencenter einloggen](/pages/account/customer/ovhcloud-account-login)
 
-[Passwort Ihres OVHcloud Kunden-Accounts ändern](https://docs.ovh.com/de/customer/Passwort-verwalten/)
+[Passwort Ihres OVHcloud Kunden-Accounts ändern](/pages/account/customer/manage-ovh-password)
 
-[Ihren OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/)
+[Ihren OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

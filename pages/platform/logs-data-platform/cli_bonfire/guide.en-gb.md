@@ -1,8 +1,5 @@
 ---
 title: CLI - bonfire, querying graylog from a CLI
-slug: logs-data-platform-bonfire
-order: 09
-section: Use cases
 updated: 2020-07-27
 ---
 

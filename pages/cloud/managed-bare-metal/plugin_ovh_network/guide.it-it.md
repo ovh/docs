@@ -1,12 +1,9 @@
 ---
 title: 'Utilizzare il plugin OVHcloud Network'
-slug: plugin-ovhcloud-network
 routes:
-    canonical: 'https://docs.ovh.com/it/private-cloud/plugin-ovh-network/'
+    canonical: '/pages/cloud/private-cloud/plugin_ovh_network'
 excerpt: 'Scopri come utilizzare il plugin OVHcloud Network con la soluzione Managed Bare Metal'
 legacy_guide_number: '7766560'
-section: 'Funzionalità OVHcloud'
-order: 03
 updated: 2020-11-18
 ---
 

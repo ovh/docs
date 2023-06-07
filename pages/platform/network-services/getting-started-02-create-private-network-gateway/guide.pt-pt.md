@@ -1,11 +1,8 @@
 ---
 title: Creating a private network with Gateway (EN)
-slug: creating-private-network-with-gateway
 excerpt: Discover how to create a Private network with a Gateway
-section: Introdução
-order: 01
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/network-services/creating-private-network-with-gateway/'
+    canonical: '/pages/platform/network-services/getting-started-02-create-private-network-gateway'
 updated: 2022-11-02
 ---
 
@@ -15,14 +12,14 @@ updated: 2022-11-02
 
 A Gateway offers a secure outbound connection method from your private network instances or the ability to use Floating IPs with your instance or Load Balancer for service exposition.
 
-This can be created via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), the [OpenStack API](https://docs.ovh.com/pt/public-cloud/prepare_the_environment_for_using_the_openstack_api/) or the [OVHcloud API](https://eu.api.ovh.com/).
+This can be created via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), the [OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) or the [OVHcloud API](https://eu.api.ovh.com/).
 
 **Learn how to create a private network with a gateway.**
 
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/pt/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud API](https://eu.api.ovh.com/), the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) or the OpenStack command line environment ([Tutorial](https://docs.ovh.com/pt/public-cloud/prepare_the_environment_for_using_the_openstack_api/))
+- Access to the [OVHcloud API](https://eu.api.ovh.com/), the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) or the OpenStack command line environment ([Tutorial](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api))
 - The [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} tool installed on your working environment (optional)
 
 ## Instructions
@@ -39,7 +36,7 @@ This can be created via the [OVHcloud Control Panel](https://www.ovh.com/auth/?a
 >>
 >> Click on `Gateway`{.action} in the left-hand menu under **Network**.
 >>
->> Please note that you need to have activated the vRack before proceeding, if you do not have a vRack, please consult [this section](https://docs.ovh.com/pt/publiccloud/network-services/public-cloud-vrack/#activation) of the relevant guide.
+>> Please note that you need to have activated the vRack before proceeding, if you do not have a vRack, please consult [this section](/pages/platform/network-services/getting-started-07-creating-vrack#activation) of the relevant guide.
 >> 
 >> Next, click on `Create a Gateway`{.action}. 
 >>
@@ -104,8 +101,8 @@ This can be created via the [OVHcloud Control Panel](https://www.ovh.com/auth/?a
 
 Before proceeding, it is recommended that you consult these guides:
 
-- [Preparing an environment to use the OpenStack API](https://docs.ovh.com/pt/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Setting OpenStack environment variables](https://docs.ovh.com/pt/public-cloud/set-openstack-environment-variables/)
+- [Preparing an environment to use the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Setting OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables)
  
 > [!tabs]
 > **Step 1**
@@ -130,7 +127,7 @@ Before proceeding, it is recommended that you consult these guides:
 > [!tabs]
 > **Step 1** 
 >> 
->> Log in to the OVHcloud APIv6 interface according to the relevant guide ([First steps with the OVHcloud API](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/)).
+>> Log in to the OVHcloud APIv6 interface according to the relevant guide ([First steps with the OVHcloud API](/pages/account/api/first-steps)).
 >> 
 >> In case the project ID is unknown, the calls below allow you to retrieve it.
 >>

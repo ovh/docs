@@ -1,8 +1,6 @@
 ---
 title: 'Instalar WordPress en una instancia'
 excerpt: Cómo utilizar una instancia de Public Cloud para alojar sitios web WordPress
-slug: instalar_wordpress_en_una_instancia
-section: Tutoriales
 updated: 2021-10-15
 ---
 
@@ -30,7 +28,7 @@ Este tutorial explica cómo instalar WordPress manualmente en una instancia de P
 ## Requisitos
 
 - Un [proyecto de Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud.
-- Tener una [instancia de Public Cloud](../public-cloud-primeros-pasos/) con Debian o Ubuntu instalado.
+- Tener una [instancia de Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps) con Debian o Ubuntu instalado.
 - Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 - Acceso de administrador (root) a su instancia a través de SSH.
 
@@ -43,7 +41,7 @@ Este tutorial explica cómo instalar WordPress manualmente en una instancia de P
 
 Para acceder a la instalación a través de un dominio, deberá asociarlo a su instancia. Para ello, edite la zona DNS accesible desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), siempre que OVHcloud sea su agente registrador **y** que el dominio utilice los servidores DNS de OVHcloud.
 
-Para más información, consulte la guía [Editar una zona DNS](https://docs.ovh.com/us/es/domains/web_hosting_como_editar_mi_zona_dns/). Si el dominio está en uso, solo podrá configurar los DNS después de instalar el nuevo WordPress y de iniciar el sitio web.
+Para más información, consulte la guía [Editar una zona DNS](/pages/web/domains/dns_zone_edit). Si el dominio está en uso, solo podrá configurar los DNS después de instalar el nuevo WordPress y de iniciar el sitio web.
 
 ### Paso 1: instalación del servidor web (LAMP)
 
@@ -227,7 +225,7 @@ El servidor web ya está listo para la configuración inicial de WordPress.
 
 ### Paso 5: configurar WordPress
 
-Abra un navegador web y conéctese al sitio WordPress introduciendo la dirección IP de su instancia (o el nombre de dominio si ya ha [asociado uno a la instancia](https://docs.ovh.com/us/es/domains/web_hosting_como_editar_mi_zona_dns/)). Seleccione un idioma en la primera página.
+Abra un navegador web y conéctese al sitio WordPress introduciendo la dirección IP de su instancia (o el nombre de dominio si ya ha [asociado uno a la instancia](/pages/web/domains/dns_zone_edit)). Seleccione un idioma en la primera página.
 
 Utilice el asistente de configuración de WordPress para acceder a la base de datos. Introduzca la información que haya [configurado anteriormente](#sqlconf).
 

@@ -1,9 +1,6 @@
 ---
 title: AI Notebooks - Tutorial - Create and train a Rasa chatbot
-slug: notebooks/create-rasa-chatbot
 excerpt: Understand how to create  and train a chatbot with AI Notebooks
-section: AI Notebooks - Tutorials
-order: 10
 hidden: true
 updated: 2023-03-20
 ---
@@ -20,8 +17,8 @@ We will use the famous open source framework [Rasa](https://rasa.community/) to 
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - A Public Cloud project created
-- The ovhai CLI interface installed on your system (more information [here](https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client/))
-- A [user for AI Notebooks](https://docs.ovh.com/gb/en/publiccloud/ai/users/)
+- The ovhai CLI interface installed on your system (more information [here](/pages/platform/ai/cli_10_howto_install_cli))
+- A [user for AI Notebooks](/pages/platform/ai/gi_01_manage_users)
 
 ## Instructions
 
@@ -35,7 +32,7 @@ To do this, launch this command on the terminal once the ovhai CLI is installed:
 ovhai token create -l model=rasabotRW --role operator token-RW-chatbot
 ```
 
-Here is the reference to install the CLI: [CLI Installation](https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client/).
+Here is the reference to install the CLI: [CLI Installation](/pages/platform/ai/cli_10_howto_install_cli).
 
 The token is now created. Don't forget to save the token to use it later.
 
@@ -45,7 +42,7 @@ Now, if you already have trained some Rasa models with AI Training by following 
 
 The obvious goal about using object storage and not the local storage of the AI Notebook is to decorrelate compute and storage, allowing us to stop or delete the notebook while keeping the data safe.
 
-If you want to know more about data storage concept, read this guide: [Create an object container](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/). 
+If you want to know more about data storage concept, read this guide: [Create an object container](/pages/cloud/storage/object_storage/pcs_create_container). 
 
 For the chatbot, we will create one object storage bucket. This bucket will be filled over time by our trained model output. The container in which the model will be saved does not need to be created. When we will launch our notebook, the container will be automatically created. 
 
@@ -113,7 +110,7 @@ If you want to use more functionalities of Rasa, please follow this link. We use
 
 If you want to deploy your created model with the chatbot, you can follow this tutorial:
 
-[How to deploy a chatbot](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/rasa-chatbot)
+[How to deploy a chatbot](/pages/platform/ai/deploy_tuto_11_rasa_chatbot_flask)
 
 If you want to train a Rasa chatbot with the tool AI Training, please refer to this tutorial:
 

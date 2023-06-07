@@ -1,9 +1,6 @@
 ---
 title: 'Setting up your website with 1-click modules'
-slug: web_hosting_web_hosting_modules
 excerpt: 'Find out how to set up your website using our 1-click modules'
-section: CMS
-order: 01
 updated: 2023-03-28
 ---
 
@@ -21,10 +18,10 @@ OVHcloud 1-click modules allow quick and easy website setups (without technical 
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) that contains at least one database in your customer account.
 - You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
-- Your web hosting uses a [compatible PHP version](https://docs.ovh.com/au/en/hosting/how_to_configure_php_on_your_ovh_web_hosting_package_2014/).
-- You have [correctly configured your .ovhconfig file](https://docs.ovh.com/au/en/hosting/configuring-file-ovhconfig/).
+- Your web hosting uses a [compatible PHP version](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014).
+- You have [correctly configured your .ovhconfig file](/pages/web/hosting/ovhconfig_configuration).
 - The directory (root folder) where your 1-click module will be installed must be empty or currently nonexistent.
-- The domain name (with subdomain if desired) that will be used for your website must be declared as a [Multisite](https://docs.ovh.com/au/en/hosting/multisites-configuring-multiple-websites/) on your OVHcloud web hosting plan.
+- The domain name (with subdomain if desired) that will be used for your website must be declared as a [Multisite](/pages/web/hosting/multisites_configure_multisite) on your OVHcloud web hosting plan.
 
 ## Instructions
 
@@ -56,7 +53,7 @@ In the window that pops up, choose the CMS you want to use, then select the doma
 
 ![Choose a module](images/add_a_module.png){.thumbnail}
 
-If your domain is not in the list, go to the `Multisite`{.action} tab to add it. See our guide [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/au/en/hosting/multisites-configuring-multiple-websites/){.external} if required.
+If your domain is not in the list, go to the `Multisite`{.action} tab to add it. See our guide [Hosting multiple websites on your Web Hosting plan](/pages/web/hosting/multisites_configure_multisite){.external} if required.
 
 Once your domain has been correctly added, try adding a 1-click module again.
 
@@ -99,8 +96,8 @@ Enter the information required to connect to your database.
 There are several possibilities:
 
 - The database has already been created on your web hosting plan: Select it from the `Select the database`{.action} dropdown menu, then enter the information requested.
-- The database has not yet been created on your web hosting plan: [Create your database included with your web hosting plan](https://docs.ovh.com/au/en/hosting/creating-database/), go back to the `Select the database`{.action} drop-down menu and enter the information requested.
-- The database is [created on your Web Cloud Databases instance](https://docs.ovh.com/au/en/clouddb/create-databases-and-users/): In the `Select the database`{.action} dropdown menu, select `Database aside from your web hosting`{.action} and enter the requested information. The instance and web hosting plan must be hosted in the same data centre.
+- The database has not yet been created on your web hosting plan: [Create your database included with your web hosting plan](/pages/web/hosting/sql_create_database), go back to the `Select the database`{.action} drop-down menu and enter the information requested.
+- The database is [created on your Web Cloud Databases instance](/pages/web/clouddb/create-db-and-user-on-db-server): In the `Select the database`{.action} dropdown menu, select `Database aside from your web hosting`{.action} and enter the requested information. The instance and web hosting plan must be hosted in the same data centre.
 - The database is created on another OVHcloud web hosting plan: In the `Select the database`{.action} drop-down menu, select `Database aside from your web hosting`{.action} and enter the requested information. The database and web hosting plan must be hosted in the same data centre.
 
 The remaining information requested for the database is as follows:
@@ -116,9 +113,9 @@ The remaining information requested for the database is as follows:
 
 - *Database name*: this name was defined when the database was created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
 
-- *Port*: Use the number **3306** (the default port) for a database included with your web hosting plan. For a database on a Cloud Web Databases instance, see [this guide](https://docs.ovh.com/au/en/clouddb/getting-started-with-clouddb/).
+- *Port*: Use the number **3306** (the default port) for a database included with your web hosting plan. For a database on a Cloud Web Databases instance, see [this guide](/pages/web/clouddb/starting_with_clouddb).
 
-- *User name*: It is identical to the database name if you are using a database included with your web hosting plan. For databases created on a Web Cloud Databases solution, please refer to the information in [this guide](https://docs.ovh.com/au/en/clouddb/getting-started-with-clouddb/).
+- *User name*: It is identical to the database name if you are using a database included with your web hosting plan. For databases created on a Web Cloud Databases solution, please refer to the information in [this guide](/pages/web/clouddb/starting_with_clouddb).
 
 - *Password*: It was sent to you by email when the database was created. You may have modified it in the meantime.
 
@@ -128,9 +125,9 @@ Once you have entered this information, click `Next`{.action}.
 >
 > If the information you enter is incorrect, the installation will not complete successfully. To avoid this, we recommend that you test the connection to your database.
 > 
-> To retrieve the login details for your database included in your Web Hosting plan, please refer to [this guide](https://docs.ovh.com/au/en/hosting/creating-database/).
+> To retrieve the login details for your database included in your Web Hosting plan, please refer to [this guide](/pages/web/hosting/sql_create_database).
 >
-> To retrieve the login details for a database created on a Cloud Databases Web instance, please refer to [this guide](https://docs.ovh.com/au/en/clouddb/getting-started-with-clouddb/).
+> To retrieve the login details for a database created on a Cloud Databases Web instance, please refer to [this guide](/pages/web/clouddb/starting_with_clouddb).
 >
 
 ##### Configure the module
@@ -139,7 +136,7 @@ Enter the following information for the module configuration:
 
 - *Admin name or email address:* The username you will use to log in to your CMS administration interface (back office).
 - *Password:* The password you use to log in to your CMS admin interface.
-- *Domain:* The domain name you would like to install your CMS with. If you need help with this, please refer to our guide on [How to host multiple websites on your Web Hosting plan](https://docs.ovh.com/au/en/hosting/multisites-configuring-multiple-websites/).
+- *Domain:* The domain name you would like to install your CMS with. If you need help with this, please refer to our guide on [How to host multiple websites on your Web Hosting plan](/pages/web/hosting/multisites_configure_multisite).
 - *Language:* The language in which the CMS will be installed.
 - *Installation path:* This is automatically entered when you select your domain name. You can complete it by entering subdirectories (for informed users).
 
@@ -182,15 +179,15 @@ If you need help with your CMS's features, please contact the publisher of the C
 
 [Choosing a CMS for building your website](https://www.ovhcloud.com/en-au/web-hosting/uc-cms-comparison/){.external}
 
-[Hosting multiple websites on your web hosting plan](https://docs.ovh.com/au/en/hosting/multisites-configuring-multiple-websites/)
+[Hosting multiple websites on your web hosting plan](/pages/web/hosting/multisites_configure_multisite)
 
-[Managing a database on a web hosting plan](https://docs.ovh.com/au/en/hosting/creating-database/){.external}
+[Managing a database on a web hosting plan](/pages/web/hosting/sql_create_database){.external}
 
 Explore our [Web Cloud Database solutions](https://www.ovhcloud.com/en-au/web-cloud/databases/){.external}
 
-[Managing your CMS](https://docs.ovh.com/au/en/hosting/1-click-module-management/)
+[Managing your CMS](/pages/web/hosting/cms_manage_1_click_module)
 
-[Uninstalling your CMS](https://docs.ovh.com/au/en/hosting/1-click-module-management/#step-3-delete-your-module)
+[Uninstalling your CMS](/pages/web/hosting/cms_manage_1_click_module#step-3-delete-your-module)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
 

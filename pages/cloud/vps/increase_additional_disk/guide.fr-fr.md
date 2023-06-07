@@ -1,10 +1,7 @@
 ---
 title: "Augmenter la taille d’un disque additionnel"
 excerpt: "Découvrez comment augmenter la taille d'un volume additionnel et agrandir sa partition principale"
-slug: vps-increase-size-additional-disk
-section: "Sauvegarde"
 updated: 2023-03-14
-order: 4
 ---
 
 **Dernière mise à jour le 14/03/2023**
@@ -18,13 +15,13 @@ Si vous avez atteint la capacité maximale de votre disque additionnel, vous pou
 ## Prérequis
 
 - Un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud.
-- Un [disque additionnel](https://docs.ovh.com/fr/vps/configurer-disque-additionnel/) configuré sur le VPS.
+- Un [disque additionnel](/pages/cloud/vps/config_additional_disk) configuré sur le VPS.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir accès à votre VPS en SSH ou en RDP pour l'administration.
 
 ## En pratique
 
-Les étapes ci-dessous supposent que vous avez configuré un disque additionnel en suivant les instructions de [ce guide](https://docs.ovh.com/fr/vps/configurer-disque-additionnel/).
+Les étapes ci-dessous supposent que vous avez configuré un disque additionnel en suivant les instructions de [ce guide](/pages/cloud/vps/config_additional_disk).
 
 ### Modifier la taille du disque <a name="extend"></a>
 

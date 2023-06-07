@@ -1,9 +1,6 @@
 ---
 title: 'Configuring an Email Pro account on Android via the Gmail app'
-slug: configuration-android
 excerpt: 'Find out how to configure an Email Pro account on Android, via the Gmail app'
-section: 'Email client configuration'
-order: 8
 updated: 2020-03-18
 ---
 
@@ -97,8 +94,8 @@ OVHcloud also offers a web application that includes various [collaborative feat
 
 ## Go further
 
-[Configuring an email address included in an MX Plan or web hosting plan on Android, via the Gmail app](https://docs.ovh.com/gb/en/emails/configuration-android/)
+[Configuring an email address included in an MX Plan or web hosting plan on Android, via the Gmail app](/pages/web/emails/how_to_configure_android)
 
-[Configuring an Exchange account on Android via the Gmail app](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2013_how_to_configure_on_android/)
+[Configuring an Exchange account on Android via the Gmail app](/pages/web/microsoft-collaborative-solutions/how_to_configure_android)
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

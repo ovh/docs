@@ -1,9 +1,6 @@
 ---
 title: 'Primeiros passos com as aplicações pré-instaladas'
-slug: aplicacoes-pre-instaladas
 excerpt: Saiba como implementar aplicações pré-instaladas no seu VPS
-section: 'Primeiros passos'
-order: 4
 updated: 2022-08-25
 ---
 
@@ -27,7 +24,7 @@ A OVHcloud oferece aos clientes VPS imagens de aplicações pré-instaladas para
 
 ### Instalar a aplicação pré-instalada à sua escolha
 
-A partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) ou das API OVHcloud, instale a aplicação que desejar. Também pode consultar o nosso guia [VPS](../instalar-gerir-vps/): primeira utilização.
+A partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) ou das API OVHcloud, instale a aplicação que desejar. Também pode consultar o nosso guia [VPS](/pages/cloud/vps/starting_with_a_vps): primeira utilização.
 
 #### cPanel
 
@@ -54,7 +51,7 @@ Não é necessário mais nenhuma etapa para terminar a primeira configuração d
 > [!faq]
 >
 > Posso utilizar os meus próprios servidores DNS?
->> Sim, podem. Certifique-se de que criou os registos "GLUE" com o seu agente de registo de domínio. Por exemplo, se deseja "ns1.mydomain.com" e "ns2.mydomain.com", deve configurar os registos "GLUE" para que ambos apontem para o endereço IP do seu servidor. Se o seu domínio estiver registado com a OVHcloud, pode seguir [este guia](../../domains/glue_registry/#1-adicionar-os-registos-glue). Note que a criação pode levar 24 horas.
+>> Sim, podem. Certifique-se de que criou os registos "GLUE" com o seu agente de registo de domínio. Por exemplo, se deseja "ns1.mydomain.com" e "ns2.mydomain.com", deve configurar os registos "GLUE" para que ambos apontem para o endereço IP do seu servidor. Se o seu domínio estiver registado com a OVHcloud, pode seguir [este guia](/pages/web/domains/glue_registry#1-adicionar-os-registos-glue). Note que a criação pode levar 24 horas.
 > Porquê definir a password root?
 >> O WHM utiliza de forma padrão o utilizador root para a autenticação. O URL de utilização única permite aceder à primeira configuração e modificar a palavra-passe root. Na próxima vez que aceder ao WHM, deverá utilizar o utilizador root e a palavra-passe que definiu.
 > Onde está a minha licença para o cPanel?
@@ -98,7 +95,7 @@ Esta secção aplica-se apenas às instalações WordPress, Drupal, Joomla! e Pr
      personaldomain.ovh <br>
      www.personaldomain.ovh <br>  
 
-Se o seu domínio estiver registado na OVHcloud, pode seguir [este guia](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).
+Se o seu domínio estiver registado na OVHcloud, pode seguir [este guia](/pages/web/domains/dns_zone_edit).
 <br>Se o seu domínio estiver registado numa outra empresa, deverá contactá-la para obter ajuda na configuração dos seus registos `A`.
 
 <ol start="2">

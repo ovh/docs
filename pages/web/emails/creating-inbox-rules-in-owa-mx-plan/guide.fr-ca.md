@@ -1,9 +1,6 @@
 ---
 title: "Règles de boîte de réception depuis l'interface OWA"
-slug: regles-boite-de-reception-owa-mx-plan
 excerpt: "Comment créer des filtres et des redirections e-mail depuis l'interface OWA"
-section: 'Premiers pas'
-order: 05
 updated: 2020-03-11
 ---
 
@@ -112,10 +109,10 @@ Veuillez noter que les faux-positifs ne peuvent pas être identifiés directemen
 
 ## Aller plus loin
 
-[Création de réponses automatiques depuis OWA](../exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa/)
+[Création de réponses automatiques depuis OWA](/ca/fr/emails/exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa/)
 
-[Partage de calendriers depuis OWA](../exchange-2016-partager-un-calendrier-via-le-webmail-owa/)
+[Partage de calendriers depuis OWA](/ca/fr/emails/exchange-2016-partager-un-calendrier-via-le-webmail-owa/)
 
-[Utilisation de Outlook Web App avec un compte de messagerie](../exchange-2016-guide-utilisation-outlook-web-app/)
+[Utilisation de Outlook Web App avec un compte de messagerie](/ca/fr/emails/exchange-2016-guide-utilisation-outlook-web-app/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

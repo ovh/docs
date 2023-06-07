@@ -1,9 +1,6 @@
 ---
 title: Cassandra - Capabilities and Limitations
-slug: cassandra/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Cassandra
-section: Cassandra - Guides
-order: 010
 updated: 2023-04-14
 ---
 
@@ -146,7 +143,7 @@ Once your service is up and running, you will be able to specify IP addresses (o
 
 #### Advanced parameters
 
-You can further customise your Cassandra by using advanced parameters. See the [Advanced parameters references documentation](https://docs.ovh.com/gb/en/publiccloud/databases/cassandra/advanced-parameters-references/) for more information on the supported parameters.
+You can further customise your Cassandra by using advanced parameters. See the [Advanced parameters references documentation](/pages/platform/databases/cassandra_03_advanced_parameters_references) for more information on the supported parameters.
 
 #### Logs and metrics
 

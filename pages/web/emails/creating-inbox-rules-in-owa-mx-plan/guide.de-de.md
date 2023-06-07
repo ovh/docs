@@ -1,9 +1,6 @@
 ---
 title: 'Posteingangsregeln in OWA erstellen'
-slug: posteingangsregeln-in-owa-erstellen
 excerpt: 'Erfahren Sie hier, wie Sie E-Mail-Weiterleitungen und Eingangsfilter in OWA verwenden'
-section: Erste Schritte
-order: 05
 updated: 2020-03-11
 ---
 
@@ -108,10 +105,10 @@ Da kein automatisierter Spam-Schutz definitiv entscheiden kann, ob es sich bei e
 
 ## Weiterführende Informationen
 
-[Einrichten automatischer Antworten in OWA](../exchange_2016_einrichten_einer_automatischen_antwort_in_owa/)
+[Einrichten automatischer Antworten in OWA](/de/emails/exchange_2016_einrichten_einer_automatischen_antwort_in_owa/)
 
-[Kalender via OWA freigeben](../exchange_2016_einen_kalender_via_owa_webmail_freigeben/)
+[Kalender via OWA freigeben](/de/emails/exchange_2016_einen_kalender_via_owa_webmail_freigeben/)
 
-[Outlook Web App mit einem E-Mail-Konto verwenden](../exchange_2016_verwendung_der_outlook_web_app/)
+[Outlook Web App mit einem E-Mail-Konto verwenden](/de/emails/exchange_2016_verwendung_der_outlook_web_app/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

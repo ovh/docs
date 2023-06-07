@@ -1,8 +1,5 @@
 ---
 title: FAQ OVHcloud Connect
-slug: ovhcloudconnect-faq
-section: Getting started
-order: 3
 updated: 2020-09-14
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-network-ovhcloud-connect-faq?id=kb_article_view&sysparm_article=KB0045291'

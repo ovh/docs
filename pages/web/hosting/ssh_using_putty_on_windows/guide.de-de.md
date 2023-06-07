@@ -1,9 +1,6 @@
 ---
 title: 'Verwendung von PuTTY für Windows'
 excerpt: 'Webhosting: Verwendung von PuTTY für Windows'
-slug: webhosting_verwendung_von_putty_fur_windows
-section: 'FTP und SSH'
-order: 08
 updated: 2020-05-05
 ---
 
@@ -21,7 +18,7 @@ Weiterhin benötigen Sie Ihre FTP-Daten:
 - FTP-Passwort.
 
 Diese Informationen finden Sie im Konfigurationspanel. Gehen Sie in den Bereich FTP oder folgen Sie den nachstehenden Anweisungen
-[diese Anleitung](../verbindung-ftp-speicher-webhosting/).
+[diese Anleitung](/pages/web/hosting/ftp_connection).
 
 ## PuTTY starten
 

@@ -1,8 +1,5 @@
 ---
 title: Build & Deploy
-slug: overview-build-deploy
-section: Overview
-order: 2
 updated: 2021-05-11
 ---
 
@@ -13,7 +10,7 @@ updated: 2021-05-11
 ## Objective  
 
 Every time you push to a live branch (a git branch with an active environment attached to it) or activate an
-[environment](../administration-web/environments) for a branch, there are two main processes that happen: **Build** and **Deploy**.
+[environment](/pages/web/web-paas/administration-web/environments) for a branch, there are two main processes that happen: **Build** and **Deploy**.
 
 1\. The build process looks through the configuration files in your repository and assembles the necessary containers.  
 

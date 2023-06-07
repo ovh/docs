@@ -1,8 +1,5 @@
 ---
 title: Tutorial - Using Zonemaster
-slug: ovhcloud-domain-zonemaster-tutorial
-section: DNS and DNS Zone
-order: 08
 updated: 2022-09-12
 ---
 
@@ -21,7 +18,7 @@ updated: 2022-09-12
 
 > [!primary]
 >
-> To get a better understanding of DNS, please read the introduction to our guide on [configuring a DNS zone](https://docs.ovh.com/sg/en/domains/web_hosting_how_to_edit_my_dns_zone/).
+> To get a better understanding of DNS, please read the introduction to our guide on [configuring a DNS zone](/pages/web/domains/dns_zone_edit).
 
 
 ## Requirements
@@ -74,11 +71,11 @@ If you have any additional questions about Zonemaster, see the [FAQ](https://zon
 
 ## Go further <a name="go-further"></a>
 
-[Editing the DNS servers for an OVHcloud domain name](https://docs.ovh.com/sg/en/domains/web_hosting_general_information_about_dns_servers/)
+[Editing the DNS servers for an OVHcloud domain name](/pages/web/domains/dns_server_general_information)
 
-[Editing an OVHcloud DNS zone](https://docs.ovh.com/sg/en/domains/web_hosting_how_to_edit_my_dns_zone/)
+[Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit)
 
-[Securing your domain name with DNSSEC](https://docs.ovh.com/sg/en/domains/secure_your_domain_with_dnssec/)
+[Securing your domain name with DNSSEC](/pages/web/domains/dns_dnssec)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/) .
 

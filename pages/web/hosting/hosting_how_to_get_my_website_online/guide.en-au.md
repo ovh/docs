@@ -1,9 +1,6 @@
 ---
 title: 'Publishing a website on your Web Hosting plan'
-slug: web_hosting_how_to_get_my_website_online
 excerpt: 'Find how to publish a website on your OVHcloud Web Hosting plan'
-section: Getting started
-order: 06
 updated: 2022-07-21
 ---
 
@@ -21,7 +18,7 @@ There are many different types of website you can put online. Whether you are cr
 - an email confirming that your web hosting plan has been set up
 - a [domain name](https://www.ovhcloud.com/en-au/domains/) which can be used to access your website
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
-- being up-to-date in the [payments](https://docs.ovh.com/au/en/billing/manage-ovh-bills/#pay-bills) and [renewals](https://docs.ovh.com/au/en/billing/how-to-use-automatic-renewal-at-ovh/#renewal-management) of related services (domain name and web hosting plan)
+- being up-to-date in the [payments](/pages/account/billing/invoice_management#pay-bills) and [renewals](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
 
 ## Instructions
 
@@ -29,18 +26,18 @@ There are many different types of website you can put online. Whether you are cr
 
 It is important to have a clear idea of your objective, for your project to succeed. What do you want to do with your website? How will you publish it? There are several ways to get your project off the ground with an OVHcloud web hosting plan.
 
-- **Using a turn-key website, with OVHcloud’s one-click modules**: this solution offers the benefits of a ready-made structure for your website that you can then customise (themes, text, etc.). We offer four different 1-click modules compatible with our infrastructures, and they are detailed on the [Setting up your website with 1-click modules](https://docs.ovh.com/au/en/hosting/web_hosting_web_hosting_modules/) page.
+- **Using a turn-key website, with OVHcloud’s one-click modules**: this solution offers the benefits of a ready-made structure for your website that you can then customise (themes, text, etc.). We offer four different 1-click modules compatible with our infrastructures, and they are detailed on the [Setting up your website with 1-click modules](/pages/web/hosting/cms_install_1_click_modules) page.
 
 - **Using a turn-key website that you install manually**: this solution gives you the benefit of a ready-made website structure that you can customise (themes, text, etc.), and you set it up yourself on your OVHcloud web hosting plan.
 
 - **Creating your website yourself**: this is a more technical solution that requires programming skills, but does give you the option of creating a tailor-made project.
 
-- **Migrating an existing website to OVHcloud**: this solution may prove complicated if an interruption in service for the website concerned is not an option. To guide you through this process, you can also refer to the following documentation: [Migrating your website and emails to OVHcloud](https://docs.ovh.com/au/en/hosting/migrating-website-to-ovh/)
+- **Migrating an existing website to OVHcloud**: this solution may prove complicated if an interruption in service for the website concerned is not an option. To guide you through this process, you can also refer to the following documentation: [Migrating your website and emails to OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh)
 
 
 Once you have considered the possibilities above, you can choose one of two options.
 
-- **If you want to use our 1-click modules**, refer to the instructions set out in our guide on [Setting up your website with 1-click modules](https://docs.ovh.com/au/en/hosting/web_hosting_web_hosting_modules/).
+- **If you want to use our 1-click modules**, refer to the instructions set out in our guide on [Setting up your website with 1-click modules](/pages/web/hosting/cms_install_1_click_modules).
 
 - **If you do not want to use our 1-click modules**, you can set up your website manually on your hosting plan. You may find the information in our guide helpful, but it is not a substitute for the support of a webmaster.
  
@@ -74,7 +71,7 @@ These elements were sent to you in the email informing you that your web hosting
 
 ![websitesetup](images/get-website-online-step1.png){.thumbnail}
 
-The information associated with your storage space will now appear, and you should be able to find the information you need to log in to it. If you need help with this, please refer to our guide on on [Logging in to your Web Hosting plan’s storage space](https://docs.ovh.com/au/en/hosting/modify-ftp-user-password/){.external}. If you no longer have the password, refer to the instructions set out in our documentation on [Modifying a FTP user password](https://docs.ovh.com/au/en/hosting/modify-ftp-user-password/).
+The information associated with your storage space will now appear, and you should be able to find the information you need to log in to it. If you need help with this, please refer to our guide on on [Logging in to your Web Hosting plan’s storage space](/pages/web/hosting/ftp_change_password){.external}. If you no longer have the password, refer to the instructions set out in our documentation on [Modifying a FTP user password](/pages/web/hosting/ftp_change_password).
 
 Once you have everything you need, there are three different ways of connecting to your storage space:
 
@@ -152,10 +149,10 @@ As a reminder, if you encounter any difficulties publishing your website, we rec
 
 ## Go further
 
-[Migrating your website and emails to OVHcloud](https://docs.ovh.com/au/en/hosting/migrating-website-to-ovh/)
+[Migrating your website and emails to OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh)
 
-[Setting up your website with 1-click modules](https://docs.ovh.com/au/en/hosting/web_hosting_web_hosting_modules/)
+[Setting up your website with 1-click modules](/pages/web/hosting/cms_install_1_click_modules)
 
-[Modifying an FTP user password](https://docs.ovh.com/au/en/hosting/modify-ftp-user-password/)
+[Modifying an FTP user password](/pages/web/hosting/ftp_change_password)
 
 Join our community of users on <https://community.ovh.com/en/>.

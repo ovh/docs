@@ -1,9 +1,6 @@
 ---
 title: Cassandra - Capabilities and Limitations
-slug: cassandra/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Cassandra
-section: Cassandra - Guides
-order: 010
 updated: 2023-04-14
 ---
 
@@ -126,7 +123,7 @@ We try hard to avoid "disk full" situations that could be harmful to cluster hea
 1. When reaching a concerning level of disk usage, a warning email is sent.
 2. When reaching a concerning level of disk usage, the service is moved in the "DISK_FULL" state, and "read-only" mode, meaning no more writes can be done.
 
-See the [Handling «Disk Full» situations documentation](https://docs.ovh.com/ie/en/publiccloud/databases/handling-disk-full/) for more information.
+See the [Handling «Disk Full» situations documentation](/products/public-cloud-databases-handling-disk-full) for more information.
 
 ### Features
 
@@ -147,7 +144,7 @@ Once your service is up and running, you will be able to specify IP addresses (o
 
 #### Advanced parameters
 
-You can further customise your Cassandra by using advanced parameters. See the [Advanced parameters references documentation](https://docs.ovh.com/ie/en/publiccloud/databases/cassandra/advanced-parameters-references/) for more information on the supported parameters.
+You can further customise your Cassandra by using advanced parameters. See the [Advanced parameters references documentation](/pages/platform/databases/cassandra_03_advanced_parameters_references) for more information on the supported parameters.
 
 #### Logs and metrics
 

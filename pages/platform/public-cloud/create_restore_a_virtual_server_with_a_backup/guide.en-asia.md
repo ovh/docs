@@ -1,10 +1,7 @@
 ---
 title: Using instance backups to create or restore an instance
-slug: create-restore-virtual-server-from-backup
 excerpt: Find out how to restore an instance or create a new one from a backup
 legacy_guide_number: 1882
-section: Management via Control Panel
-order: 2
 updated: 2021-03-19
 ---
 
@@ -12,7 +9,7 @@ updated: 2021-03-19
 
 ## Objective
 
-The OVHcloud Control Panel enables you to [create backups of your instances](../back-up-instance/) within a few clicks, as well as automating this process.
+The OVHcloud Control Panel enables you to [create backups of your instances](/pages/platform/public-cloud/save_an_instance) within a few clicks, as well as automating this process.
 You can make use of these instance backups for two basic purposes:
 
 - Creating a new instance with the backup as a template in order to duplicate the original instance, for example if you are configuring a load balancing infrastructure.
@@ -49,11 +46,11 @@ Some elements are pre-defined:
 
 Choose the new instance's name, SSH key, vRack and billing period, then click on the `Create the instance`{.action} button.
 
-For further information on creating an instance, please refer to [this guide](../public-cloud-first-steps/).
+For further information on creating an instance, please refer to [this guide](/pages/platform/public-cloud/public-cloud-first-steps).
 
 > [!primary]
 >
->In order to create the instance in a different data centre, you will first need to transfer the backup to the appropriate region. Please refer to our guide to [transferring an instance backup](../transfer_instance_backup_from_one_datacentre_to_another/).
+>In order to create the instance in a different data centre, you will first need to transfer the backup to the appropriate region. Please refer to our guide to [transferring an instance backup](/pages/platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another).
 >
 
 ### Restoring an instance from a backup
@@ -86,8 +83,8 @@ The instance will have the status `Re-installation` until the process is complet
 
 ## Go further
 
-[First steps](../public-cloud-first-steps/)
+[First steps](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Creating instance backups](../back-up-instance/)
+[Creating instance backups](/pages/platform/public-cloud/save_an_instance)
 
 Join our community of users on <https://community.ovh.com/en/>.

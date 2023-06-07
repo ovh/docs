@@ -1,8 +1,5 @@
 ---
 title: C#/.NET Core
-slug: languages-dotnet
-section: Languages
-order: 4
 updated: 2022-06-02
 ---
 

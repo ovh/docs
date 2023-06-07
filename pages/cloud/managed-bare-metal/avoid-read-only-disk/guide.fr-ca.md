@@ -1,11 +1,8 @@
 ---
 title: Comment éviter le passage en lecture seule du disque de votre VM sous Linux
-slug: comment-eviter-le-disk-en-read-only-sous-linux
 routes:
-    canonical: 'https://docs.ovh.com/ca/fr/private-cloud/comment-eviter-le-disk-en-read-only-sous-linux/'
+    canonical: '/pages/cloud/private-cloud/comment_eviter_le_disk_en_read_only_sous_linux'
 excerpt: Eviter le passage en lecture seule du disque de votre VM Linux
-section: Gestion des machines virtuelles
-order: 10
 updated: 2020-11-18
 ---
 

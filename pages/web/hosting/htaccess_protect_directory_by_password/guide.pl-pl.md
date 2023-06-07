@@ -1,9 +1,6 @@
 ---
 title: "Chroń interfejs administracyjny Twojej strony za pomocą pliku .htaccess"
-slug: hosting-htaccess-w-jaki-sposob-zabezpieczyc-dostep-dostepu-do-katalogu
 excerpt: "Dowiedz się, jak zabezpieczyć dostęp do strony WWW za pomocą pliku .htaccess"
-section: Przekierowania i uprawnienia dostępu
-order: 02
 updated: 2021-09-20
 ---
 
@@ -30,7 +27,7 @@ Czasami konieczne może okazać się zabezpieczenie dostępu do części Twojej 
 
 - Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/).
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
-- Posiadanie danych dostępowych umożliwiających zalogowanie się [do przestrzeni dyskowej Twojego hostingu](../logowanie-przestrzen-dyskowa-ftp-hosting-web/).
+- Posiadanie danych dostępowych umożliwiających zalogowanie się [do przestrzeni dyskowej Twojego hostingu](/pages/web/hosting/ftp_connection).
 
 ## W praktyce
 
@@ -43,7 +40,7 @@ Czasami konieczne może okazać się zabezpieczenie dostępu do części Twojej 
 
 ### Etap 1: utwórz drzewo
 
-Zaloguj się do [przestrzeni dyskowej](../logowanie-przestrzen-dyskowa-ftp-hosting-web/) Twojego hostingu. Otwórz ["Katalog główny"](../konfiguracja-multisite-na-hostingu/#etap-21-dodaj-domene-zarejestrowana-w-ovhcloud) Twojej strony WWW.<br>
+Zaloguj się do [przestrzeni dyskowej](../logowanie-przestrzen-dyskowa-ftp-hosting-web/) Twojego hostingu. Otwórz ["Katalog główny"](/pages/web/hosting/multisites_configure_multisite#etap-21-dodaj-domene-zarejestrowana-w-ovhcloud) Twojej strony WWW.<br>
 Utwórz plik "crypter.php".
 
 ![root_folder](images/root_folder.png){.thumbnail}
@@ -72,7 +69,7 @@ echo nl2br("$string_1 \n $string_2 \n $string_3");
  ?>
 ```
 
-Jeśli dysponujesz hostingiem [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) lub [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/), zaloguj się do Twojego hostingu za pomocą [SSH](../hosting_www_ssh_na_hostingu/). Wprowadź następujące polecenie:
+Jeśli dysponujesz hostingiem [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) lub [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/), zaloguj się do Twojego hostingu za pomocą [SSH](/pages/web/hosting/ssh_on_webhosting). Wprowadź następujące polecenie:
 
 ```bash
 php crypter.php
@@ -120,9 +117,9 @@ Require walid-user
 
 > [!warning]
 >
-> W tym przykładzie "login_ftp" należy zastąpić [identyfikatorem FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web/#etap-1-pobranie-informacji-niezbednych-do-logowania). W sekcji `Hosting`{.action} znajdziesz go w zakładce `FTP-SSH`{.action} odpowiedniego hostingu.
+> W tym przykładzie "login_ftp" należy zastąpić [identyfikatorem FTP](/pages/web/hosting/ftp_connection#etap-1-pobranie-informacji-niezbednych-do-logowania). W sekcji `Hosting`{.action} znajdziesz go w zakładce `FTP-SSH`{.action} odpowiedniego hostingu.
 >
-> W razie potrzeby w poniższym przykładzie "katalog_główny" zastąp nazwę [folderu zawierającego pliki Twojej strony](../konfiguracja-multisite-na-hostingu/#etap-21-dodaj-domene-zarejestrowana-w-ovhcloud).
+> W razie potrzeby w poniższym przykładzie "katalog_główny" zastąp nazwę [folderu zawierającego pliki Twojej strony](/pages/web/hosting/multisites_configure_multisite#etap-21-dodaj-domene-zarejestrowana-w-ovhcloud).
 >
 
 #### Zablokuj dostęp do jednego lub kilku plików
@@ -149,7 +146,7 @@ Require walid-user
 
 ## Sprawdź również <a name="gofurther"></a>
 
-[Plik .htaccess na hostingu](../hosting_www_plik_htaccess/)
+[Plik .htaccess na hostingu](/pl/hosting/hosting_www_plik_htaccess/)
 
 Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 

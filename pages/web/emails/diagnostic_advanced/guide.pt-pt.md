@@ -1,10 +1,7 @@
 ---
 title: 'Envio ou receção de e-mails impossível'
-slug: utilizacao_avancada_dos_e-mails_ovh
 legacy_guide_number: 2117
 excerpt: "Saiba como reagir em caso de problemas de envio ou receção de e-mails na OVHcloud"
-section: 'Diagnóstico'
-order: 02
 updated: 2022-07-21
 ---
 
@@ -22,7 +19,7 @@ Não é possível receber ou enviar e-mails a partir do seu software de correio 
 
 > [!primary]
 >
-> Se tiver outras questões que não sejam tratadas neste manual, não hesite em consultar a nossa [FAQ de E-mail](https://docs.ovh.com/pt/emails/faq-emails/).
+> Se tiver outras questões que não sejam tratadas neste manual, não hesite em consultar a nossa [FAQ de E-mail](/pages/web/emails/faq-emails).
 
 ## Requisitos
 
@@ -35,7 +32,7 @@ Não é possível receber ou enviar e-mails a partir do seu software de correio 
 
 Para que os seus e-mails sejam funcionais, deve possuir uma oferta de e-mail ativa. Se a sua oferta de e-mail estiver associada a uma oferta de alojamento, verifique se esta não expirou. Pode verificar esta informação diretamente na Área de Cliente. Da mesma forma, o seu domínio também deve estar ativo.
 
-Comece por verificar que está atualizado nos [pagamentos](https://docs.ovh.com/pt/billing/gerir-faturas-ovhcloud/#pay-bills) e nas [renovações](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/#renewal-management) dos seus serviços.
+Comece por verificar que está atualizado nos [pagamentos](/pages/account/billing/invoice_management#pay-bills) e nas [renovações](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) dos seus serviços.
 
 Eis como verificar que os seus serviços estão corretamente operacionais:
 
@@ -49,11 +46,11 @@ Eis como verificar que os seus serviços estão corretamente operacionais:
 
 Se utiliza um software de mensagens no seu computador (Outlook, Mail do Mac, Thunderbird, etc.) ou no seu smartphone (iOS, Android, etc.) e encontra uma falha no envio ou na receção, verifique os parâmetros de configuração de acordo com a sua oferta de e-mail e o software de mensagens ou de aplicação utilizado.
 
-- Para uma oferta **MXplan**, na secção [Hosted email - MX Plan](https://docs.ovh.com/pt/emails/) dos nossos guias **Web Cloud**.
+- Para uma oferta **MXplan**, na secção [Hosted email - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan) dos nossos guias **Web Cloud**.
 
-- Para uma oferta **E-mail Pro**, na secção [E-mail Pro](https://docs.ovh.com/pt/emails-pro/), dos nossos guias **Web Cloud**.
+- Para uma oferta **E-mail Pro**, na secção [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro), dos nossos guias **Web Cloud**.
 
-- Para uma oferta **Exchange**, na secção [Soluções colaborativas Microsoft](https://docs.ovh.com/pt/microsoft-collaborative-solutions/) dos nossos guias **Web Cloud**.
+- Para uma oferta **Exchange**, na secção [Soluções colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) dos nossos guias **Web Cloud**.
 
 ### Os e-mails estão a funcionar a partir do webmail?
 
@@ -69,11 +66,11 @@ Certifique-se de que tem a palavra-passe correta. Se necessário, pode alterá-l
 
 Como alterar a palavra-passe de um endereço de e-mail:
 
-- Para uma oferta **MXplan**, consulte o nosso guia [Alterar a palavra-passe de um endereço de e-mail MX Plan](https://docs.ovh.com/pt/emails/alterar-palavra-passe-endereco-email/)
+- Para uma oferta **MXplan**, consulte o nosso guia [Alterar a palavra-passe de um endereço de e-mail MX Plan](/pages/web/emails/email_change_password)
 
 - Para uma oferta **E-mail Pro**, aceda à secção `Web Cloud`{.action}, clique em `E-mail Pro`{.action} e selecione a sua plataforma. No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} e em `Alterar`{.action} para alterar a palavra-passe.
 
-- Para uma oferta **Exchange**, dirija-se à secção `Web Cloud`{.action}, clique em `Microsoft`{.action}, e depois clique em `Exchange`{.action} e selecione a sua plataforma. No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} e em `Alterar`{.action} para alterar a palavra-passe. <br> Verifique se a dupla autenticação está ativada ao consultar o nosso guia [Configurar a dupla autenticação numa conta Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/configurar-2fa-exchange/).
+- Para uma oferta **Exchange**, dirija-se à secção `Web Cloud`{.action}, clique em `Microsoft`{.action}, e depois clique em `Exchange`{.action} e selecione a sua plataforma. No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} e em `Alterar`{.action} para alterar a palavra-passe. <br> Verifique se a dupla autenticação está ativada ao consultar o nosso guia [Configurar a dupla autenticação numa conta Exchange](/pages/web/microsoft-collaborative-solutions/manage_2fa_exchange).
 
 ### Há algum incidente ou manutenção em curso no meu serviço?
 
@@ -85,7 +82,7 @@ Pode verificar as diferentes tarefas em curso no <https://web-cloud.status-ovhcl
 
 ### O apontamento do domínio para o meu serviço de e-mail está correto?
 
-Verifique que o seu domínio está a apontar corretamente para os servidores de e-mail OVHcloud. Para isso, devem ser configurados registos do tipo MX na sua zona DNS. <br>Consulte o nosso manual [Adicionar um campo MX à configuração do domínio](https://docs.ovh.com/pt/domains/e-mail-partilhado-manual-de-configuracao-mx-com-zona-dns-ovh/).
+Verifique que o seu domínio está a apontar corretamente para os servidores de e-mail OVHcloud. Para isso, devem ser configurados registos do tipo MX na sua zona DNS. <br>Consulte o nosso manual [Adicionar um campo MX à configuração do domínio](/pages/web/domains/dns_zone_mx).
 
 ![DNSzone](images/DNS.png){.thumbnail}
 
@@ -134,6 +131,6 @@ Encontrará abaixo a maioria dos códigos de respostas negativas SMTP utilizados
 
 ## Saiba mais
 
-[FAQ E-mail](https://docs.ovh.com/pt/emails/faq-emails/)
+[FAQ E-mail](/pages/web/emails/faq-emails)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

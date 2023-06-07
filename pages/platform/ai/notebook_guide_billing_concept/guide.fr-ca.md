@@ -1,11 +1,8 @@
 ---
 title: AI Notebooks - Facturation et cycle de vie (EN)
-slug: notebooks/billing
 excerpt: Découvrez comment sont facturés les AI Notebooks
-section: AI Notebooks - Guides
-order: 5
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/billing/'
+    canonical: '/pages/platform/ai/notebook_guide_billing_concept'
 updated: 2022-04-27
 ---
 
@@ -23,11 +20,11 @@ AI Notebooks are linked to a Public Cloud project. The whole project is billed a
 
 During its lifetime, the notebook will go through the following statuses:
 
-- `STARTING`: the notebook is being started and, if any, the remote data is synchronized. To learn more about data synchronization, please check out the [Data - How it works](https://docs.ovh.com/ca/fr/publiccloud/ai/data/#how-it-works) documentation.
+- `STARTING`: the notebook is being started and, if any, the remote data is synchronized. To learn more about data synchronization, please check out the [Data - How it works](/pages/platform/ai/gi_02_concepts_data#how-it-works) documentation.
 - `RUNNING`: the notebook is running, you can connect to it and use it. Compute resources (GPUs/CPUs) are allocated to your specific notebook and data are available.
 - `STOPPING`: the notebook is stopping, your compute resources are freed, your status is saved and, if any, the data is synchronized back.
 - `STOPPED`: the notebook ended normally. You can restart it whenever you want or delete it.
-- `FAILED`: the notebook ended in error, e.g. the process in the notebook finished with a non 0 exit code. For more information, refer to [this section](https://docs.ovh.com/ca/fr/publiccloud/ai/notebooks/debug-notebooks/#cli-my-notebook-is-in-failed-status) of our [Troubleshooting documentation](https://docs.ovh.com/ca/fr/publiccloud/ai/notebooks/debug-notebooks/).
+- `FAILED`: the notebook ended in error, e.g. the process in the notebook finished with a non 0 exit code. For more information, refer to [this section](/pages/platform/ai/notebook_guide_troubleshooting#cli-my-notebook-is-in-failed-status) of our [Troubleshooting documentation](/pages/platform/ai/notebook_guide_troubleshooting).
 - `ERROR`: the notebook ended due to a backend error. You may reach our support.
 - `DELETING`: the notebook is being removed. When it is deleted, you will no longer see it, it will no longer exist.
 

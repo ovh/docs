@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Utilizar WooCommerce con el CMS WordPress"
-slug: wordpress-woocommerce-first-steps
 excerpt: "Descubra cómo utilizar la solución WooCommerce con el CMS WordPress"
-section: "Tutoriales"
-order: 023
 updated: 2023-02-23
 ---
 
@@ -28,9 +25,9 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 - Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/) que contenga al menos una base de datos.
 - Tener un [dominio](https://www.ovhcloud.com/es-es/domains/).
-- Haber contratado previamente [WordPress](https://docs.ovh.com/es/hosting/modulos-en-un-clic/) en su alojamiento web.
+- Haber contratado previamente [WordPress](/pages/web/hosting/cms_install_1_click_modules) en su alojamiento web.
 
-Si todavía no lo ha hecho, le recomendamos que cambie el sitio web a HTTPS antes de continuar con este tutorial con la guía "[Habilitar HTTPS en un sitio web gracias al SSL](https://docs.ovh.com/es/hosting/activar-https-en-un-sitio-web-con-ssl/)".
+Si todavía no lo ha hecho, le recomendamos que cambie el sitio web a HTTPS antes de continuar con este tutorial con la guía "[Habilitar HTTPS en un sitio web gracias al SSL](/pages/web/hosting/ssl-activate-https-website)".
   
 ## Procedimiento
   

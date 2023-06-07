@@ -1,9 +1,6 @@
 ---
 title: OpenSearch Index as a Service
-slug: logs-data-platform-index-as-a-service
-order: 2
 excerpt: Use the power of OpenSearch without managing a cluster.
-section: Features
 updated: 2022-10-13
 ---
 

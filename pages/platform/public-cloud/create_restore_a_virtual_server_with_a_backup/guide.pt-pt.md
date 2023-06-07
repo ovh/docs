@@ -1,9 +1,7 @@
 ---
 title: 'Criar / Restaurar um servidor virtual a partir de um backup'
 excerpt: 'Criar / Restaurar um servidor virtual a partir de um backup'
-slug: criar_restaurar_um_servidor_virtual_a_partir_de_um_backup
 legacy_guide_number: g1882
-section: Gestão a partir da Área de Cliente OVHcloud
 updated: 2021-03-19
 ---
 
@@ -15,7 +13,7 @@ updated: 2021-03-19
 
 ## Objetivo
 
-A Área de Cliente OVHcloud permite-lhe criar [backups das suas instâncias](../efetuar_backup_de_uma_instancia/) em apenas alguns cliques e automatizar este processo.
+A Área de Cliente OVHcloud permite-lhe criar [backups das suas instâncias](/pages/platform/public-cloud/save_an_instance) em apenas alguns cliques e automatizar este processo.
 Pode querer restaurar a sua instância através de um backup, por exemplo, em caso de manipulação errada realizada na configuração da sua instância. Pode utilizar estes backups de instâncias por duas razões principais:
 
 - Criar uma instância com base no backup, para duplicar a instância de origem. Por exemplo, se configurar uma infraestrutura de repartição de carga (load balancing).
@@ -25,7 +23,7 @@ Pode querer restaurar a sua instância através de um backup, por exemplo, em ca
 
 ## Requisitos
 
-- Ter um backup de uma instância Public Cloud. Para isso, consulte [o guia relativo à criação de um backup](../efetuar_backup_de_uma_instancia/).
+- Ter um backup de uma instância Public Cloud. Para isso, consulte [o guia relativo à criação de um backup](/pages/platform/public-cloud/save_an_instance).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
@@ -52,11 +50,11 @@ Alguns elementos estão predefinidos:
 
 Defina o nome da nova instância, a chave SSH, o vRack e o período de faturação e clique no botão `Criar a instância`{.action}.
 
-Para mais informações sobre a criação de uma instância, consulte [este guia](../criar_uma_instancia_a_partir_do_espaco_cliente_ovh/).
+Para mais informações sobre a criação de uma instância, consulte [este guia](/pages/platform/public-cloud/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia/).
 
 > [!primary]
 >
-> Para criar uma instância num datacenter diferente do do backup, será necessário transferir o backup para a zona correspondente. Consulte então o [guia relativo ao backup de uma instância de um datacenter para outro](../transferir-a-copia-de-seguranca-de-uma-instancia-de-um-datacenter-para-outro/).
+> Para criar uma instância num datacenter diferente do do backup, será necessário transferir o backup para a zona correspondente. Consulte então o [guia relativo ao backup de uma instância de um datacenter para outro](/pages/platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another).
 >
 
 ### Restaurar uma instância a partir de um backup
@@ -89,8 +87,8 @@ A instância terá o estado de `Reinstalação` até que o processo esteja termi
 
 ## Saiba mais
 
-[Criação e ligação a uma primeira instância Public Cloud](../comecar-com-uma-instancia-public-cloud/)
+[Criação e ligação a uma primeira instância Public Cloud](/pages/platform/public-cloud/first_steps_with_public_cloud_instance)
 
-[Efetuar um backup de uma instância](../comecar-com-uma-instancia-public-cloud/)
+[Efetuar um backup de uma instância](/pages/platform/public-cloud/first_steps_with_public_cloud_instance)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>

@@ -1,9 +1,6 @@
 ---
 title: "Tutoriel - Que faire lorsque ma base de données est saturée ?"
-slug: database-overquota
 excerpt: "Découvrez comment agir lorsque votre base de données est saturée"
-section: 'Bases de données'
-order: 06
 updated: 2023-02-16
 ---
 
@@ -35,7 +32,7 @@ Ce tutoriel vous propose des actions à entreprendre lorsque votre base de donn�
 > Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
-Lorsque votre base de données mutualisée OVHcloud arrive à saturation (**overquota**), nos robots vous avertissent par e-mail sur l'adresse e-mail du [contact « Administrateur »](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/) de la base de données. 
+Lorsque votre base de données mutualisée OVHcloud arrive à saturation (**overquota**), nos robots vous avertissent par e-mail sur l'adresse e-mail du [contact « Administrateur »](/pages/account/customer/managing_contacts) de la base de données. 
 
 Un premier e-mail est envoyé lorsque votre base de données a consommé plus de **80%** de sa capacité de stockage. Un deuxième e-mail est envoyé lorsque **90%** de cette capacité de stockage sont atteints.
 
@@ -57,7 +54,7 @@ La première étape consiste à identifier la ou les tables volumineuses présen
 
 #### 1.1 - Se connecter à la base de données via phpMyAdmin
 
-Récupérez le mot de passe d'accès à votre base de données directement dans le fichier de configuration de votre site web. Réalisez cette action à l'aide de l'**étape 1** de notre guide sur [le changement du mot de passe d'une base de données](https://docs.ovh.com/ca/fr/hosting/modifier-mot-de-passe-base-de-donnees/).
+Récupérez le mot de passe d'accès à votre base de données directement dans le fichier de configuration de votre site web. Réalisez cette action à l'aide de l'**étape 1** de notre guide sur [le changement du mot de passe d'une base de données](/pages/web/hosting/sql_change_password).
 
 Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et sélectionnez `Web Cloud`{.action} dans la barre de navigation en haut de l’écran. Cliquez sur `Hébergements`{.action} puis choisissez l’hébergement web associé à votre base de données mutualisée OVHcloud. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
 
@@ -127,9 +124,9 @@ Nous recommandons cette offre pour les bases de données volumineuses.
 
 Suivez ensuite nos guides pour déplacer le contenu de votre ancienne base de données vers la nouvelle :
 
-- [Exporter votre base de données existante](https://docs.ovh.com/ca/fr/hosting/exportation-bases-donnees/)
-- [Premiers pas avec l'offre SQL Privé/Web Cloud Databases](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
-- [Importer votre ancienne base de données dans votre offre SQL Privé/Web Cloud Databases](https://docs.ovh.com/fr/clouddb/restaurer-importer-base-de-donnees/)
+- [Exporter votre base de données existante](/pages/web/hosting/sql_database_export)
+- [Premiers pas avec l'offre SQL Privé/Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb)
+- [Importer votre ancienne base de données dans votre offre SQL Privé/Web Cloud Databases](/pages/web/clouddb/restore-import-on-database-server)
 
 #### Cas n°2 - Une partie ou l'ensemble du contenu de la table volumineuse n'est pas nécessaire au fonctionnement de votre site
 

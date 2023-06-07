@@ -1,11 +1,8 @@
 ---
 title: Object Storage Swift - Utilizar o Object Storage com CyberDuck
 routes:
-    canonical: 'https://docs.ovh.com/pt/storage/pca/cyberduck/'
+    canonical: '/pages/cloud/storage/object_storage/pca_cyberduck'
 excerpt: 'Saiba como utilizar o Object Storage com Cyberduck'
-slug: pcs/manage-object-storage-with-cyberduck
-section: OpenStack Swift Storage Class Specifics
-order: 180
 updated: 2021-06-18
 ---
 
@@ -33,10 +30,10 @@ Se não está familiarizado com a gestão do armazenamento em linha de comandos,
 ## Requisitos
 
 - Descarregar e instalar [Cyberduck](https://cyberduck.io/).
-- Ter os dados de utilizador (*OS_USERNAME*) e os projetos (*OS_PROJECT_NAME* ou *OS_TENANT_NAME*) disponíveis para o descarregar o ficheiro "OpenRC" no menu [Users and Roles](https://docs.ovh.com/pt/public-cloud/set-openstack-environment-variables/#etapa-1-recuperar-as-variaveis) da sua [Área de Cliente Public Cloud da OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter os dados de utilizador (*OS_USERNAME*) e os projetos (*OS_PROJECT_NAME* ou *OS_TENANT_NAME*) disponíveis para o descarregar o ficheiro "OpenRC" no menu [Users and Roles](/pages/platform/public-cloud/loading_openstack_environment_variables#etapa-1-recuperar-as-variaveis) da sua [Área de Cliente Public Cloud da OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - Ter a palavra-passe de utilizador OpenStack.
 
-Se já não conhece a sua palavra-passe de utilizador OpenStack, pode alterá-la através [deste manual](https://docs.ovh.com/pt/public-cloud/alteracao-da-palavra-passe-de-um-utilizador-openstack/).
+Se já não conhece a sua palavra-passe de utilizador OpenStack, pode alterá-la através [deste manual](/pages/platform/public-cloud/change_openstack_user_password_in_horizon).
 
 ## Instruções
 
@@ -71,6 +68,6 @@ A seguir, clique em `Connecter`{.action}. Uma vez ligado, terá acesso à arbore
 
 [Documentação de Cyberduck](https://trac.cyberduck.io/wiki/help/en){.external}
 
-[Primeiros passos com a API Swift](https://docs.ovh.com/pt/public-cloud/os_primeiros_passos_com_a_api_swift/)
+[Primeiros passos com a API Swift](/pages/cloud/storage/object_storage/pcs_getting_started_with_the_swift_api)
 
 Fale com a nossa comunidade de utilizadores <https://community.ovh.com/en/>.

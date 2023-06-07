@@ -1,10 +1,7 @@
 ---
 title: 'Aumentare le quote Public Cloud'
 excerpt: 'Come aumentare la quota Public Cloud'
-slug: increase-public-cloud-quota
 legacy_guide_number: g1904
-section: Gestione del progetto
-order: 6
 updated: 2023-05-03
 ---
 
@@ -25,7 +22,7 @@ Per creare di più, è necessario aumentare la quota disponibile.
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
-- [Disporre di una modalità di pagamento valida](../../billing/manage-payment-methods/) nello Spazio Cliente OVHcloud.
+- [Disporre di una modalità di pagamento valida](/pages/account/billing/manage-payment-methods) nello Spazio Cliente OVHcloud.
 
 
 ## Procedura

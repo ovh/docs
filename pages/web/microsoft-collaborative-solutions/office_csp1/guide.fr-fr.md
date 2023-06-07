@@ -1,9 +1,6 @@
 ---
 title: Gérer un groupe de licences Microsoft 365 OVHcloud (CSP1)
-slug: commander-et-gerer-un-groupe-de-licences-office-365-ovh
 excerpt: Découvez comment souscrire à une licence Microsoft 365 et la gérer dans votre espace client OVHcloud.
-section: Office
-order: 02
 updated: 2021-09-09
 ---
 
@@ -104,6 +101,6 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 
 ## Aller plus loin
 
-[Utiliser le bureau à distance avec Microsoft 365 apps](https://docs.ovh.com/fr/microsoft-collaborative-solutions/office365-proplus-bureau-a-distance/)
+[Utiliser le bureau à distance avec Microsoft 365 apps](/pages/web/microsoft-collaborative-solutions/office_proplus)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

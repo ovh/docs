@@ -1,8 +1,6 @@
 ---
 title: Gerir os meus métodos de pagamento
-slug: gerir-metodos-de-pagamento
 excerpt: Aprenda a adicionar e gerir os seus métodos de pagamento dentro da Área de Cliente OVHcloud
-section: Faturação
 updated: 2022-05-18
 ---
 
@@ -93,7 +91,7 @@ Se já não quiser usar um dos métodos de pagamento, poderá eliminá-lo clican
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
-Se deseja eliminar a integralidade dos seus métodos de pagamento, o conjunto dos seus serviços deve ser [renovado manualmente](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/#a-renovacao-manual).
+Se deseja eliminar a integralidade dos seus métodos de pagamento, o conjunto dos seus serviços deve ser [renovado manualmente](/pages/account/billing/how_to_use_automatic_renewal#a-renovacao-manual).
 
 #### Eliminar um método de pagamento através das API OVHcloud
 
@@ -115,7 +113,7 @@ De seguida, elimine o método de pagamento utilizando o ID que obteve na etapa a
 
 > [!primary]
 >
-> Para mais informações, consulte o guia [Primeiros passos com as API OVHcloud](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/).
+> Para mais informações, consulte o guia [Primeiros passos com as API OVHcloud](/pages/account/api/first-steps).
 >
 > Em caso de dificuldades para identificar os seus métodos de pagamento através das API OVHcloud, utilize a função `Alterar a descrição`{.action} (botão `...`{.action} à direita do ecrã) na parte relativa aos [Métodos de pagamento](#payment_methods) da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 >
@@ -126,7 +124,7 @@ De seguida, elimine o método de pagamento utilizando o ID que obteve na etapa a
 
 A *conta pré-paga* está presente na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) assim que for criada. Permite-lhe creditar antecipadamente a sua conta de cliente e utilizar estes fundos para o pagamento das suas encomendas e das suas faturas de renovação.
 
-Ao creditar regularmente a sua conta, certificar-se-á de que a [renovação automática](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/#a-renovacao-automatica) dos seus serviços nunca será interrompida por falta de pagamento.
+Ao creditar regularmente a sua conta, certificar-se-á de que a [renovação automática](/pages/account/billing/how_to_use_automatic_renewal#a-renovacao-automatica) dos seus serviços nunca será interrompida por falta de pagamento.
 
 Para isso, aceda à secção `Métodos de pagamento` na Área de Cliente:
 

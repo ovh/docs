@@ -1,9 +1,6 @@
 ---
 title: Restaurer les éléments supprimés de votre compte e-mail 
-slug: exchange-comment-retrouver-des-elements-supprimes
 excerpt: Découvrez comment restaurer des éléments supprimés depuis votre compte e-mail via le webmail (OWA)
-section: Diagnostic
-order: 02
 updated: 2022-02-08
 ---
 
@@ -18,7 +15,7 @@ Vous avez supprimé par erreur un ou plusieurs éléments (e-mail, contact, rend
 ## Prérequis
  
 - Disposer d'une solution e-mail OVHcloud:
-    - **MX Plan** ([nouvelle version uniquement](https://docs.ovh.com/ca/fr/emails/generalites-sur-les-emails-mutualises/#en-pratique)) proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/)
+    - **MX Plan** ([nouvelle version uniquement](/pages/web/emails/email_generalities#en-pratique)) proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/)
     - ou [**Hosted Exchange**](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/)
 - Connaître les identifiants de connexion de l’adresse e-mail concernée
 

@@ -1,8 +1,6 @@
 ---
 title: Tutto sugli utenti SMS
 excerpt: Funzionalità degli utenti API per inviare SMS
-slug: tutto_sugli_utenti_sms
-section: Gestisci la tua offerta
 updated: 2022-08-05
 ---
 
@@ -101,7 +99,7 @@ Per l’invio delle richieste https, è possibile inserire fino a 5 diversi indi
 
 ![sms-users](images/smsusers06-2021.png){.thumbnail}
 
-Per maggiori informazioni sulla funzione http2sms, consulta la guida [Inviare SMS da un URL](../inviare_sms_da_un_url_http2sms/).
+Per maggiori informazioni sulla funzione http2sms, consulta la guida [Inviare SMS da un URL](/pages/telecom/sms/envoyer_des_sms_depuis_une_url_-_http2sms).
 
 ### Step 5: specifica un URL di Callback
 
@@ -126,7 +124,7 @@ Per ottenere la descrizione di un codice ptt specifico, utilizza questa API:
 > @api {GET} /sms/ptts
 >
 
-Per maggiori informazioni sull'utilizzo delle API OVHcloud, consulta la nostra guida [Iniziare a utilizzare le API OVHcloud](https://docs.ovh.com/it/api/first-steps-with-ovh-api/).
+Per maggiori informazioni sull'utilizzo delle API OVHcloud, consulta la nostra guida [Iniziare a utilizzare le API OVHcloud](/pages/account/api/first-steps).
 
 Nella tabella seguente è riportato un elenco **non esaustivo** dei codici ptt principali.
 

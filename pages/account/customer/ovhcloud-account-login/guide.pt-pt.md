@@ -1,9 +1,6 @@
 ---
 title: 'Aceder à Área de Cliente OVHcloud'
-slug: conectar-se-espaco-cliente-ovhcloud
 excerpt: 'Saiba como autenticar-se na sua conta OVHcloud'
-Section: Introdução
-order: 2
 updated: 2021-07-01
 ---
 
@@ -21,8 +18,8 @@ A gestão dos seus serviços efetua-se principalmente através da Área de Clien
 
 ## Requisitos
 
-- Ter criado a [sua conta OVHcloud](https://docs.ovh.com/pt/customer/criar-conta-ovhcloud/)
-- Ter consultado as [boas práticas de segurança da sua conta OVHcloud](https://docs.ovh.com/pt/customer/saber_tudo_sobre_o_identificador_de_cliente/)
+- Ter criado a [sua conta OVHcloud](/pages/account/customer/ovhcloud-account-creation)
+- Ter consultado as [boas práticas de segurança da sua conta OVHcloud](/pages/account/customer/all_about_username)
 
 ## Instruções
 
@@ -32,7 +29,7 @@ Aceda [à página de autenticação da OVHcloud](https://www.ovh.com/auth/?actio
 
 ![identificador de cliente](images/log-in.png){.thumbnail}
 
-Se ativou a [dupla autenticação](https://docs.ovh.com/pt/customer/proteger-a-sua-conta-com-uma-2FA/), deverá introduzir o código único de ligação gerado pelo seu periférico (telefone, tablet ou chave U2F).
+Se ativou a [dupla autenticação](/pages/account/customer/secure-ovhcloud-account-with-2fa), deverá introduzir o código único de ligação gerado pelo seu periférico (telefone, tablet ou chave U2F).
 
 ### O que fazer se não conseguir ligar-me? <a name="login-failure"></a>
 
@@ -63,7 +60,7 @@ Uma vez ligado, poderá tomar nota do seu identificador que é apresentado na su
 
 ### Perdi a minha palavra-passe
 
-Em caso de perda da palavra-passe, consulte [este guia](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/#se-nao-se-lembrar-da-sua-palavra-passe-atual), que explica o que deverá fazer para a alterar.
+Em caso de perda da palavra-passe, consulte [este guia](/pages/account/customer/manage-ovh-password#se-nao-se-lembrar-da-sua-palavra-passe-atual), que explica o que deverá fazer para a alterar.
 
 ### Perdi a minha palavra-passe e o meu endereço de e-mail principal já não é válido
 
@@ -73,7 +70,7 @@ Neste caso, o procedimento de reinicialização da palavra-passe não pode ser e
 
 Pode contactar o suporte da OVHcloud em +351 213 155 642 para que este endereço de SOS se torne o endereço de e-mail principal.
 
-Uma vez efetuada esta ação, é essencial [introduzir um **novo** endereço de e-mail de SOS](https://docs.ovh.com/pt/customer/saber_tudo_sobre_o_identificador_de_cliente/#backup-email) na sua conta.
+Uma vez efetuada esta ação, é essencial [introduzir um **novo** endereço de e-mail de SOS](/pages/account/customer/all_about_username#backup-email) na sua conta.
 
 #### Se não indicou um endereço de e-mail de SOS ou se este endereço também é inválido
 
@@ -87,7 +84,7 @@ Deve seguir este [procedimento](https://www.ovh.pt/cgi-bin/pt/procedure/procedur
 
 Neste caso, pode utilizar os códigos de segurança da dupla autenticação, utilizar outro periférico ou desativar a dupla autenticação.
 
-Consulte o manual "[Proteger a sua conta OVHcloud com a dupla autenticação](https://docs.ovh.com/pt/customer/proteger-a-sua-conta-com-uma-2FA/#o-que-devo-fazer-se-um-dos-meus-perifericos-estiver-perdido-ou-parar-de-funcionar)" para obter mais informações.
+Consulte o manual "[Proteger a sua conta OVHcloud com a dupla autenticação](/pages/account/customer/secure-ovhcloud-account-with-2fa#o-que-devo-fazer-se-um-dos-meus-perifericos-estiver-perdido-ou-parar-de-funcionar)" para obter mais informações.
 
 ### Não ativei a dupla autenticação na minha conta, mas ainda assim estão a pedir-me um código
 
@@ -103,12 +100,12 @@ Se não encontrar este código, verifique as pastas "spam" ou "correio indesejá
 
 ## Saiba mais
 
-[Criar a sua conta OVHcloud](https://docs.ovh.com/pt/customer/criar-conta-ovhcloud)
+[Criar a sua conta OVHcloud](/pages/account/customer/ovhcloud-account-creation)
 
-[Proteger a minha conta OVHcloud e gerir as minhas informações pessoais](https://docs.ovh.com/pt/customer/saber_tudo_sobre_o_identificador_de_cliente/)
+[Proteger a minha conta OVHcloud e gerir as minhas informações pessoais](/pages/account/customer/all_about_username)
 
-[Alterar a palavra-passe da sua conta](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/)
+[Alterar a palavra-passe da sua conta](/pages/account/customer/manage-ovh-password)
 
-[Proteger a sua conta OVHcloud com a dupla autenticação](https://docs.ovh.com/pt/customer/proteger-a-sua-conta-com-uma-2FA/)
+[Proteger a sua conta OVHcloud com a dupla autenticação](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

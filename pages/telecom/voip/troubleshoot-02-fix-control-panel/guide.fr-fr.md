@@ -1,9 +1,6 @@
 ---
 title: 'Dépanner son téléphone OVHcloud'
-slug: depannage-telephone-plug-and-phone
 excerpt: 'Apprenez à dépanner votre téléphone OVHcloud'
-section: 'Diagnostic et dépannage'
-order: 02
 updated: 2022-05-09
 ---
 
@@ -54,12 +51,12 @@ Cliquez sur l'image ci-dessous pour afficher un résumé des actions à mener en
 **Question n°1 : Le défaut concerne-t-il un seul téléphone ?**
 
 - **OUI** : Il s'agit donc vraisemblablement d'un incident isolé à votre poste, poursuivez la lecture de ce guide.
-- **NON** : Si plusieurs téléphones sont affectés, cela indique probablement un défaut sur un équipement annexe et commun à ces téléphones (switch, routeur / modem / Box Internet). Vérifiez donc la connectivité réseau des téléphones en vous aidant de notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/diagnostic-reseau-local/).
+- **NON** : Si plusieurs téléphones sont affectés, cela indique probablement un défaut sur un équipement annexe et commun à ces téléphones (switch, routeur / modem / Box Internet). Vérifiez donc la connectivité réseau des téléphones en vous aidant de notre [tutoriel dédié au diagnostic du réseau local](/pages/telecom/voip/troubleshoot-01-local-network).
 
 **Question n°2 : L'écran de votre téléphone s'allume-t-il ?**
 
 - **OUI** : Poursuivez la lecture de ce guide.
-- **NON** : Le défaut peut provenir du raccordement électrique de votre téléphone. Consultez tout d'abord notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/diagnostic-reseau-local/).
+- **NON** : Le défaut peut provenir du raccordement électrique de votre téléphone. Consultez tout d'abord notre [tutoriel dédié au diagnostic du réseau local](/pages/telecom/voip/troubleshoot-01-local-network).
 
 **Question n°3 : Avez-vous déjà redémarré électriquement le téléphone ?**
 
@@ -92,7 +89,7 @@ Le tableau ci-dessous récapitule les manipulations à effectuer pour réinitial
 **Une fois le téléphone réinitialisé, la date et l'heure affichées sur sur son écran sont-elles exactes ?**
 
 - **OUI** : Cela indique que le téléphone contacte bien les serveurs OVHcloud pour récupérer sa configuration. Poursuivez la lecture de ce guide afin d'effectuer un dépannage du téléphone. Cela lui permettra de récupérer les informations nécessaires à l'enregistrement de sa ligne SIP.
-- **NON** : Le téléphone ne parvient pas à contacter efficacement les serveurs OVHcloud. Cela peut venir d'un défaut de configuration du réseau local. Consultez tout d'abord la partie « **Vérifier la connectivité réseau du téléphone** » de notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/diagnostic-reseau-local/#connectivity).
+- **NON** : Le téléphone ne parvient pas à contacter efficacement les serveurs OVHcloud. Cela peut venir d'un défaut de configuration du réseau local. Consultez tout d'abord la partie « **Vérifier la connectivité réseau du téléphone** » de notre [tutoriel dédié au diagnostic du réseau local](/pages/telecom/voip/troubleshoot-01-local-network#connectivity).
 
 ### Étape 3 - Dépanner le téléphone depuis l'espace client OVHcloud <a name="step3"></a>
 
@@ -149,7 +146,7 @@ Si le dépannage de votre téléphone n'a pas permis de résoudre votre problém
 
 Il se peut que votre routeur / modem / Box Internet ne permette plus à votre téléphone de fonctionner correctement. Afin d'écarter cette éventualité, vous pouvez effectuer une réinitialisation de celui-ci. Pour cela, deux possibilités :
 
-- **vous disposez d'une box OVHcloud** : reportez-vous aux instructions décrites dans notre documentation « [Réinitialiser votre box OVHcloud](https://docs.ovh.com/fr/xdsl/redemarrer-reinitialiser-modem-adsl-ovh/#reinitialiser-votre-box-ovhcloud) » ;
+- **vous disposez d'une box OVHcloud** : reportez-vous aux instructions décrites dans notre documentation « [Réinitialiser votre box OVHcloud](/pages/telecom/xdsl/restart_reboot_modem#reinitialiser-votre-box-ovhcloud) » ;
 
 - **vous disposez d'un routeur / modem / Box Internet d'un autre opérateur** : reportez-vous à la documentation fournie par votre opérateur. 
 

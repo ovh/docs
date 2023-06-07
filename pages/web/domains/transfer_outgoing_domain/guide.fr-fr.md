@@ -1,9 +1,6 @@
 ---
 title: Transférer un nom de domaine vers un autre bureau d'enregistrement
-slug: transfert-sortant-dun-nom-de-domaine-generique-ou-geographique
 excerpt: Découvrez comment effectuer le transfert d’un nom de domaine OVHcloud vers le bureau d'enregistrement de votre choix
-section: Transfert
-order: 03
 updated: 2023-03-10
 ---
 
@@ -21,9 +18,9 @@ Afin d'empêcher les transferts de domaine non autorisés, les noms de domaine s
 >
 > Si le nom de domaine en question doit rester enregistré chez OVHcloud mais modifié dans ses modalités de gestion ou de propriété, un transfert sortant de domaine n'est pas la procédure appropriée.
 >
-> Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](https://docs.ovh.com/fr/customer/gestion-des-contacts/).
+> Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](/pages/account/customer/managing_contacts).
 >
-> Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](https://docs.ovh.com/fr/domains/changement-proprietaire-domaine/).
+> Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](/pages/web/domains/trade_domain).
 >
 
 ## Prérequis
@@ -35,7 +32,7 @@ Afin d'empêcher les transferts de domaine non autorisés, les noms de domaine s
 
 > [!primary]
 >
-> Si vous êtes le **propriétaire** du domaine mais que sa gestion dans l'espace client OVHcloud est indisponible, que ce soit via votre propre accès ou via le contact administratif du domaine, veuillez consulter [ce guide](../../customer/gestion-des-contacts/#cas-particulier-dun-proprietaire-de-domaine) avant de continuer.
+> Si vous êtes le **propriétaire** du domaine mais que sa gestion dans l'espace client OVHcloud est indisponible, que ce soit via votre propre accès ou via le contact administratif du domaine, veuillez consulter [ce guide](/pages/account/customer/managing_contacts#cas-particulier-dun-proprietaire-de-domaine) avant de continuer.
 >
 
 ## En pratique
@@ -103,7 +100,7 @@ Pour plus d'informations, contactez votre nouveau bureau d'enregistrement.
 
 ## Aller plus loin
 
-[Transfert de nom de domaine .co.uk sortant](https://docs.ovh.com/fr/domains/transfert-sortant-dun-nom-de-domaine-couk/)
+[Transfert de nom de domaine .co.uk sortant](/pages/web/domains/transfer_outgoing_couk)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 

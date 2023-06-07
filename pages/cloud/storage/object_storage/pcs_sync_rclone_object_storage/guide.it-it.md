@@ -1,8 +1,5 @@
 ---
 title: "Object Storage Swift - Utilizzare l'Object Storage con Rclone"
-slug: pcs/sync-rclone-object-storage
-section: OpenStack Swift Storage Class Specifics
-order: 140
 updated: 2021-10-27
 ---
 
@@ -19,7 +16,7 @@ Rclone è un software di sincronizzazione esterno: per maggiori dettagli sul suo
 ## Prerequisiti
 
 - Aver creato un container *Object Storage* (dallo Spazio Cliente OVH o dall’interfaccia [Horizon](https://docs.ovh.com/fr/public-cloud/creer-un-conteneur-dobjets/){.external})
-- Aver creato un [utente OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/){.external}
+- Aver creato un [utente OpenStack](/pages/platform/public-cloud/create_and_delete_a_user){.external}
 
 ## Procedura
 

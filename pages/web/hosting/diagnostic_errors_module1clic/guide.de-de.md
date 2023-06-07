@@ -1,9 +1,6 @@
 ---
 title: Die häufigsten Fehler bei 1-Klick-Modulen beheben
-slug: fehler-bei-1-klick-modulen
 excerpt: Erfahren Sie hier, wie Sie die häufigsten Fehler bei der Erstellung von 1-Klick-Modulen beheben können
-section: Diagnose
-order: 02
 updated: 2022-11-08
 ---
 
@@ -16,7 +13,7 @@ updated: 2022-11-08
 
 ## Ziel 
 
-Die Erstellung eines [1-Klick-Moduls](../webhosting_installation_von_webhosting-modulen/) im einfachen oder fortgeschrittenen Modus kann verschiedene Anomalien verursachen.
+Die Erstellung eines [1-Klick-Moduls](/pages/web/hosting/cms_install_1_click_modules) im einfachen oder fortgeschrittenen Modus kann verschiedene Anomalien verursachen.
 
 **Hier erfahren Sie, wie Sie die häufigsten Fehler bei der Erstellung von 1-Klick-Modulen diagnostizieren.**
 
@@ -30,13 +27,13 @@ Die Erstellung eines [1-Klick-Moduls](../webhosting_installation_von_webhosting-
 
 - Sie verfügen über ein kompatibles [OVHcloud Webhosting](https://www.ovh.de/hosting/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben die Option [1-Klick-Modul](../webhosting_installation_von_webhosting-modulen/) verwendet, um eine neue Website zu erstellen.
+- Sie haben die Option [1-Klick-Modul](/pages/web/hosting/cms_install_1_click_modules) verwendet, um eine neue Website zu erstellen.
 
 ## In der praktischen Anwendung
 
 > [!primary]
 >
-> Wir weisen hier auf die häufigsten Fehler hin. Falls Sie weitere Schwierigkeiten haben, ziehen Sie unsere [Webhosting FAQ](../webhosting-faq/) zu Rate.
+> Wir weisen hier auf die häufigsten Fehler hin. Falls Sie weitere Schwierigkeiten haben, ziehen Sie unsere [Webhosting FAQ](/pages/web/hosting/faq-web_hosting) zu Rate.
 >
 
 ### “Beim Laden der Informationen ist ein Fehler aufgetreten. (Sie benötigen mindestens eine freie Datenbank)“
@@ -82,7 +79,7 @@ Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=go
 
 #### Lösung Nr. 4: Ihr Modul auf einer bereits genutzten Datenbank installieren
 
-Um Ihr Modul auf einer bereits genutzten Datenbank zu installieren, verwenden Sie den [fortgeschrittenen Modus](../webhosting_installation_von_webhosting-modulen/#erweiterte-installation-eines-moduls).
+Um Ihr Modul auf einer bereits genutzten Datenbank zu installieren, verwenden Sie den [fortgeschrittenen Modus](/pages/web/hosting/cms_install_1_click_modules#erweiterte-installation-eines-moduls).
 
 ### “Das Installationsverzeichnis ist nicht leer“
 
@@ -96,15 +93,15 @@ Um Ihren Domainnamen mit einem anderen Verzeichnis zu verbinden, klicken Sie auf
 
 ![modify_root_folder](images/modify_root_folder.png){.thumbnail}
 
-Sie können sich auch per [FTP](../verbindung-ftp-speicher-webhosting/) mit Ihrem Hosting verbinden und den Ordnerinhalt löschen oder verschieben, nachdem Sie ihn lokal gesichert haben.
+Sie können sich auch per [FTP](/pages/web/hosting/ftp_connection) mit Ihrem Hosting verbinden und den Ordnerinhalt löschen oder verschieben, nachdem Sie ihn lokal gesichert haben.
 
 ### “Es ist ein Fehler beim Laden der Informationen aufgetreten. (Es ist nicht genügend Speicherplatz auf Ihrem Hosting vorhanden (Sie benötigen mindestens xxx MB))“
 
 ![not_enough_space](images/not_enough_space.png){.thumbnail}
 
-Diese Nachricht zeigt an, dass der [Speicherplatz](../verbindung-ftp-speicher-webhosting/) Ihres Hostings zu viele Daten enthält. Sie müssen zuerst Dateien löschen oder verschieben, bevor Sie ein neues [1-Klick-Modul](../webhosting_installation_von_webhosting-modulen/) installieren können.
+Diese Nachricht zeigt an, dass der [Speicherplatz](../verbindung-ftp-speicher-webhosting/) Ihres Hostings zu viele Daten enthält. Sie müssen zuerst Dateien löschen oder verschieben, bevor Sie ein neues [1-Klick-Modul](/pages/web/hosting/cms_install_1_click_modules) installieren können.
 
-In diesem Fall verbinden Sie sich via [FTP mit Ihrem Hosting](../verbindung-ftp-speicher-webhosting/), [sichern Sie die Daten lokal](../webhosting_hilfe_zur_verwendung_von_filezilla/#ubertragen-von-dateien) und löschen Sie dann die Dateien, die für den Betrieb Ihrer Website nicht notwendig sind.
+In diesem Fall verbinden Sie sich via [FTP mit Ihrem Hosting](../verbindung-ftp-speicher-webhosting/), [sichern Sie die Daten lokal](/pages/web/hosting/ftp_filezilla_user_guide#ubertragen-von-dateien) und löschen Sie dann die Dateien, die für den Betrieb Ihrer Website nicht notwendig sind.
 
 > [!primary]
 >
@@ -118,7 +115,7 @@ In diesem Fall verbinden Sie sich via [FTP mit Ihrem Hosting](../verbindung-ftp-
 
 Nachdem Sie die Installation Ihres Moduls im Experten-Modus gestartet haben, erhalten Sie über E-Mail den Hinweis, dass Ihr Modul sich nicht mit der angegebenen Datenbank verbinden kann. 
 
-Überprüfen Sie zunächst Ihre [Login-Daten](../webhosting_installation_von_webhosting-modulen/#datenbank-auswahlen) für die Datenbank.
+Überprüfen Sie zunächst Ihre [Login-Daten](/pages/web/hosting/cms_install_1_click_modules#datenbank-auswahlen) für die Datenbank.
 
 Löschen Sie anschließend Ihr Modul über den Tab `1-Klick-Module`{.action}.
 
@@ -130,11 +127,11 @@ Starten Sie anschließend die Installation eines neuen Moduls.
 
 ![insufficient_rights](images/insufficient_rights.png){.thumbnail}
 
-Ihre Datenbank kann nicht mehr bearbeitet werden, da die darin enthaltene Datenmenge die maximale Schwelle überschreitet. Diese Nachricht wird bei der Installation eines 1-Klick-Moduls im [Experten-Modus](../webhosting_installation_von_webhosting-modulen/#erweiterte-installation-eines-moduls) angezeigt.
+Ihre Datenbank kann nicht mehr bearbeitet werden, da die darin enthaltene Datenmenge die maximale Schwelle überschreitet. Diese Nachricht wird bei der Installation eines 1-Klick-Moduls im [Experten-Modus](/pages/web/hosting/cms_install_1_click_modules#erweiterte-installation-eines-moduls) angezeigt.
 
 Installieren Sie in diesem Fall Ihr Modul über den [einfachen Modus](../webhosting_installation_von_webhosting-modulen/#einfache-installation-eines-moduls) oder wählen Sie bei der Installation im Experten-Modus eine andere Datenbank aus. Wenn nötig, bestellen Sie eine zusätzlichen [Datenbank-Dienst](https://www.ovh.de/hosting/sql-optionen.xml).
 
-Wenn Sie nicht über weitere Datenbanken verfügen und kein zusätzliches Angebot verwenden möchten, [importieren Sie eine Kopie Ihrer Datenbank](../webhosting_hilfe_zum_export_von_datenbanken/#beschreibung) und löschen Sie anschließend unnötige Daten.
+Wenn Sie nicht über weitere Datenbanken verfügen und kein zusätzliches Angebot verwenden möchten, [importieren Sie eine Kopie Ihrer Datenbank](/pages/web/hosting/sql_database_export#beschreibung) und löschen Sie anschließend unnötige Daten.
 
 > [!warning]
 >
@@ -148,17 +145,17 @@ Wenn Sie nicht über weitere Datenbanken verfügen und kein zusätzliches Angebo
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 
-Sie haben die Installation eines 1-Klick-Moduls im [Experten-Modus](../webhosting_installation_von_webhosting-modulen/#erweiterte-installation-eines-moduls) unter Angabe einer Datenbank auf einem [Web Cloud Databases Server](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) gestartet. Sie erhalten diese Fehlermeldung per E-Mail, wenn der bei der Installation angegebene Benutzer nicht über ausreichende Datenbankrechte verfügt oder die angegebenen Kennungen nicht korrekt sind.
+Sie haben die Installation eines 1-Klick-Moduls im [Experten-Modus](../webhosting_installation_von_webhosting-modulen/#erweiterte-installation-eines-moduls) unter Angabe einer Datenbank auf einem [Web Cloud Databases Server](/pages/web/clouddb/starting_with_clouddb) gestartet. Sie erhalten diese Fehlermeldung per E-Mail, wenn der bei der Installation angegebene Benutzer nicht über ausreichende Datenbankrechte verfügt oder die angegebenen Kennungen nicht korrekt sind.
 
-Ändern Sie in diesem Fall zunächst die betreffenden [Rechte des Benutzers](../datenbank-und-benutzer-erstellen/#verwaltung-der-benutzerrechte), damit dieser über die Rechte **Administrator** oder **Lesen/Schreiben** auf der Datenbank verfügt.
+Ändern Sie in diesem Fall zunächst die betreffenden [Rechte des Benutzers](/pages/web/clouddb/create-db-and-user-on-db-server#verwaltung-der-benutzerrechte), damit dieser über die Rechte **Administrator** oder **Lesen/Schreiben** auf der Datenbank verfügt.
 
-Überprüfen Sie auch die Zugangsdaten, indem Sie sich [mit Ihrem Datenbankserver verbinden](../datenbank-verbindung-auf-bdd/#in-der-praktischen-anwendung) und anschließend die Installation Ihres Moduls neu starten.
+Überprüfen Sie auch die Zugangsdaten, indem Sie sich [mit Ihrem Datenbankserver verbinden](/pages/web/clouddb/connecting-to-database-on-database-server#in-der-praktischen-anwendung) und anschließend die Installation Ihres Moduls neu starten.
 
 ### “Verbindung nicht möglich zur Datenbank 'xxxxxxxx' auf 'xxxxxxxx.mysql.db'. Fehler: Unbekannter MySQL Server Host 'xxxxxx.mysql.db'“
 
 ![cant_connect_server](images/cant_connect_server.png){.thumbnail}
 
-Sie haben die Installation eines 1-Klick-Moduls im [Experten-Modus](../webhosting_installation_von_webhosting-modulen/#erweiterte-installation-eines-moduls) unter Angabe einer Datenbank auf einem [Web Cloud Databases Server](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) gestartet. Sie erhalten diese Fehlermeldung per E-Mail, wenn der angegebene Name des Datenbankservers nicht korrekt ist.
+Sie haben die Installation eines 1-Klick-Moduls im [Experten-Modus](../webhosting_installation_von_webhosting-modulen/#erweiterte-installation-eines-moduls) unter Angabe einer Datenbank auf einem [Web Cloud Databases Server](/pages/web/clouddb/starting_with_clouddb) gestartet. Sie erhalten diese Fehlermeldung per E-Mail, wenn der angegebene Name des Datenbankservers nicht korrekt ist.
 
 Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf den Bereich `Web Cloud`{.action} und anschließend auf das Menü `Datenbanken`{.action}.
 
@@ -172,8 +169,8 @@ Klicken Sie auf den Tab `Multisite`{.action} und führen Sie folgende Schritte d
 
 |Szenario|Erforderliche Maßnahme|
 |---|---|
-|Die Domain oder Subdomain der zu erstellenden Website erscheint nicht unter `Multisite`{.action}.|Fügen Sie Ihre Domain mithilfe [dieser Anleitung](../multisites-mehrere-websites-konfigurieren/#schritt-21-eine-bei-ovhcloud-registrierte-domain-hinzufugen) hinzu.|
-|Die Domain wurde ohne Aktion Ihrerseits aus dem `Multisite`{.action} Bereich gelöscht.|Wenn Ihre Domain oder deren [DNS-Zone](../../domains/webhosting_bearbeiten_der_dns_zone/#dns-konzept-verstehen) nicht über Ihren OVHcloud Kunden-Account verwaltet wird, fügen Sie Ihre Domain zur `Multisite`{.action} gemäß [dieser Anleitung](../multisites-mehrere-websites-konfigurieren/#schritt-22-eine-externe-domain-hinzufugen) hinzu.|
+|Die Domain oder Subdomain der zu erstellenden Website erscheint nicht unter `Multisite`{.action}.|Fügen Sie Ihre Domain mithilfe [dieser Anleitung](/pages/web/hosting/multisites_configure_multisite#schritt-21-eine-bei-ovhcloud-registrierte-domain-hinzufugen) hinzu.|
+|Die Domain wurde ohne Aktion Ihrerseits aus dem `Multisite`{.action} Bereich gelöscht.|Wenn Ihre Domain oder deren [DNS-Zone](../../domains/webhosting_bearbeiten_der_dns_zone/#dns-konzept-verstehen) nicht über Ihren OVHcloud Kunden-Account verwaltet wird, fügen Sie Ihre Domain zur `Multisite`{.action} gemäß [dieser Anleitung](/pages/web/hosting/multisites_configure_multisite#schritt-22-eine-externe-domain-hinzufugen) hinzu.|
 
 ### Ihr Modul wird unter einer Webadresse der Art “xxxxx.cluster0xx.hosting.ovh.net“ angezeigt
 
@@ -185,13 +182,13 @@ Nachdem Sie alle notwendigen Backups durchgeführt haben, [löschen Sie Ihr Modu
 
 Dies kann mehrere Ursachen haben: 
 
-- Sie haben kürzlich eine Änderung Ihrer [DNS-Zone](../../domains/webhosting_bearbeiten_der_dns_zone/#dns-konzept-verstehen) oder DNS-Server durchgeführt, oder einen [Domain Transfer](../../domains/transfer-einer-generischen-domain/). Warten Sie, bis diese Operationen abgeschlossen sind (48 Stunden bei Änderungen an Ihren DNS-Servern). Denken Sie auch daran, Ihre Geräte (PC, Smartphone, Internetverbindung usw.) neuzustarten und den Cache Ihres Browsers zu leeren.
+- Sie haben kürzlich eine Änderung Ihrer [DNS-Zone](../../domains/webhosting_bearbeiten_der_dns_zone/#dns-konzept-verstehen) oder DNS-Server durchgeführt, oder einen [Domain Transfer](/pages/web/domains/transfer_incoming_generic_domain). Warten Sie, bis diese Operationen abgeschlossen sind (48 Stunden bei Änderungen an Ihren DNS-Servern). Denken Sie auch daran, Ihre Geräte (PC, Smartphone, Internetverbindung usw.) neuzustarten und den Cache Ihres Browsers zu leeren.
 
-- Ihre Domain ist noch immer mit Ihrem alten Webhosting verbunden. Bearbeiten Sie in diesem Fall Ihre [DNS-Zone](../../domains/webhosting_bearbeiten_der_dns_zone/#bearbeiten-der-ovhcloud-dns-zone-ihrer-domain) oder Ihre [DNS-Server](../../domains/webhosting_allgemeine_informationen_zu_den_dns_servern/#dns-server-andern) oder kontaktieren Sie Ihren bisherigen Hosting-Anbieter, um diese Anpassung durchzuführen.
+- Ihre Domain ist noch immer mit Ihrem alten Webhosting verbunden. Bearbeiten Sie in diesem Fall Ihre [DNS-Zone](../../domains/webhosting_bearbeiten_der_dns_zone/#bearbeiten-der-ovhcloud-dns-zone-ihrer-domain) oder Ihre [DNS-Server](/pages/web/domains/dns_server_general_information#dns-server-andern) oder kontaktieren Sie Ihren bisherigen Hosting-Anbieter, um diese Anpassung durchzuführen.
 
 ### Das Administrator-Passwort für den Zugriff auf das Backend Ihres 1-Klick-Moduls funktioniert nicht mehr <a name="adminpassword"></a>
 
-Wenn das aktuelle Passwort für den Zugriff auf das Verwaltungsinterface Ihres CMS abgelehnt wird, lesen Sie den Abschnitt "Passwort Ihres Moduls ändern" in unserer Anleitung zur [Verwaltung Ihres 1-Klick-Moduls](https://docs.ovh.com/de/hosting/1-click-module-management/#password-change).
+Wenn das aktuelle Passwort für den Zugriff auf das Verwaltungsinterface Ihres CMS abgelehnt wird, lesen Sie den Abschnitt "Passwort Ihres Moduls ändern" in unserer Anleitung zur [Verwaltung Ihres 1-Klick-Moduls](/pages/web/hosting/cms_manage_1_click_module#password-change).
 
 
 ## Weiterführende Informationen <a name="gofurther"></a>

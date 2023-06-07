@@ -1,12 +1,9 @@
 ---
 title: Choosing a disk type
-slug: choosing-disk-type
 routes:
-    canonical: 'https://docs.ovh.com/ca/en/private-cloud/choosing-disk-type/'
+    canonical: '/pages/cloud/private-cloud/quel_format_de_disque_choisir'
 excerpt: Find out how to choose between the VMware disk types
 legacy_guide_number: '1441955'
-section: Virtual machine management
-order: 4
 updated: 2020-11-18
 ---
 

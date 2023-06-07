@@ -1,9 +1,6 @@
 ---
 title: 'Migrating an MX Plan email address to an Exchange account'
-slug: migration-email-address-to-exchange
 excerpt: 'Find out how to migrate an MX Plan email address to an Exchange account'
-section: 'Migration'
-order: 02
 hidden: true
 updated: 2022-11-22
 ---
@@ -58,7 +55,7 @@ To do this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?acti
 >
 > Your OVHcloud account must first be an administrative contact **and** technical contact for the MX plan service to be migrated, **as well as** for the Exchange service you are migrating to.
 >
-> For more information on editing contacts, please refer to our guide on [managing contacts for your services](https://docs.ovh.com/us/en/customer/managing-contacts/).
+> For more information on editing contacts, please refer to our guide on [managing contacts for your services](/pages/account/customer/managing_contacts).
 >
 
 You can migrate from two interfaces:<br>
@@ -108,7 +105,7 @@ Finally, confirm the password for the source email address (the one you want to 
 >
 >![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
-> To find out more about adding a domain name, follow [the Exchange guide](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/adding-domain-exchange/).
+> To find out more about adding a domain name, follow [the Exchange guide](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain).
 
 Your MXPlan migration will be done in 3 main steps: **Renaming**, **Creating** and **Migrating**.
 
@@ -132,7 +129,7 @@ In the `Email accounts`{.action} tab for your Exchange platform, click the `...`
 
 3\. **Migrate** the MXPlan account to your new platform account using our [OMM](https://omm.ovh.net/) (OVH Mail Migrator) tool.
 
-For more information on OMM, please read our guide on [Migrating email accounts via the OVH Mail Migrator](../exchange-account-migration-with-ovh-mail-migrator/).
+For more information on OMM, please read our guide on [Migrating email accounts via the OVH Mail Migrator](/pages/web/emails/migration_omm).
 
 ![Exchange](images/mxplan-migration-configure-account03.png){.thumbnail}
 
@@ -163,7 +160,7 @@ To modify the configuration, click on the red box and carry out the requested op
 
 Now, you can start using your migrated email addresses. To do this, OVHcloud offers an online interface (_web app_), available here: <https://www.ovh.com/world/mail/>. You will need to enter your email credentials.
 
-If you have configured one of the migrated accounts on an email client (such as Outlook), you must set it up again. The login details for the OVHcloud server have changed following the migration. To help you make changes, please read the relevant guides in the [Hosted Exchange](../) guide section. Even if you are unable to reconfigure the account immediately, access via the online application is still possible.
+If you have configured one of the migrated accounts on an email client (such as Outlook), you must set it up again. The login details for the OVHcloud server have changed following the migration. To help you make changes, please read the relevant guides in the [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-mx-plan) guide section. Even if you are unable to reconfigure the account immediately, access via the online application is still possible.
 
 ### Organise the content of your email addresses following a migration <a name=`content-after-migration`></a>
 
@@ -175,10 +172,10 @@ After a migration, please check all of the folders and sub-folders in your accou
 
 ### Migrating manually
 
-You can also manually migrate your email addresses to your new OVHcloud email solution using only your email software. Please refer to our guide on [Migrating your email address manually](../../emails/migrate-email-addresses-manually/). However, we recommend that you use this method only when the main methods are not possible.
+You can also manually migrate your email addresses to your new OVHcloud email solution using only your email software. Please refer to our guide on [Migrating your email address manually](/pages/web/emails/manual_email_migration). However, we recommend that you use this method only when the main methods are not possible.
 
 ## Go further
 
-[Exchange guides](../){.external}.
+[Exchange guides](/products/web-cloud-email-collaborative-solutions-mx-plan){.external}.
 
 Join our community of users on ‹https://community.ovh.com/en/>.

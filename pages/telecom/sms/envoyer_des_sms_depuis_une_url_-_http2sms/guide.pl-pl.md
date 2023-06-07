@@ -1,8 +1,6 @@
 ---
 title: 'Wysyłanie wiadomości SMS z adresu URL — http2sms'
-slug: wysylanie-wiadomosci-sms-z-adresu-url-http2sms
 excerpt: 'Dowiedz się, jak wysyłać wiadomości SMS z adresu http'
-section: 'Wysyłanie wiadomości SMS'
 updated: 2020-05-20
 ---
 
@@ -16,7 +14,7 @@ Istnieją różne metody wysyłania wiadomości SMS. Jedna z nich polega na wyko
 
 ## Wymagania początkowe
 
-- Utworzenie użytkownika SMS w Panelu klienta OVHcloud lub bezpośrednio przez interfejs API. W tym celu zapoznaj się z następującym przewodnikiem: [Informacje o użytkownikach wiadomości SMS](../informacje-o-uzytkownikach-sms/)
+- Utworzenie użytkownika SMS w Panelu klienta OVHcloud lub bezpośrednio przez interfejs API. W tym celu zapoznaj się z następującym przewodnikiem: [Informacje o użytkownikach wiadomości SMS](/pages/telecom/sms/tout_savoir_sur_les_utilisateurs_sms)
 - Posiadanie konta SMS OVHcloud z zasileniami SMS
 
 

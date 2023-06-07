@@ -1,11 +1,8 @@
 ---
 title: MySQL - Capabilities and Limitations
-slug: mysql/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for MySQL
-section: MySQL - Guides
-order: 010
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mysql/capabilities/'
+    canonical: '/pages/platform/databases/mysql_01_capabilities'
 updated: 2023-04-14
 ---
 
@@ -38,7 +35,7 @@ The Public Cloud Databases offer supports the following MySQL versions:
 
 - MySQL 8.0
 
-Please refer to the [DBMS lifecycle policy guide](https://docs.ovh.com/pl/publiccloud/databases/lifecycle-policy/) for recommendations on version upgrades and end of life announcements of major versions. MySQL recommends always installing and using the latest stable version.
+Please refer to the [DBMS lifecycle policy guide](/pages/platform/databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. MySQL recommends always installing and using the latest stable version.
 
 ### MySQL connectors
 
@@ -118,7 +115,7 @@ We try hard to avoid "disk full" situations that could be harmful to cluster hea
 2. When reaching a concerning level of disk usage, the service is moved in the "DISK_FULL" state, and "read-only" mode, meaning no more writes can be done.
 3. You then have the ability to upgrade to a higher service plan with more storage.
 
-See the [Handling «Disk Full» situations documentation](https://docs.ovh.com/pl/publiccloud/databases/handling-disk-full/) for more information.
+See the [Handling «Disk Full» situations documentation](/products/public-cloud-databases-handling-disk-full) for more information.
 
 ### Features
 
@@ -149,7 +146,7 @@ Note that the MySQL max-connections setting is always set to one higher (e.g. 52
 
 #### Advanced parameters
 
-You can further customise your MySQL by using advanced parameters. See the [Advanced parameters references documentation](https://docs.ovh.com/pl/publiccloud/databases/mysql/advanced-parameters-references/) for more information on the supported parameters.
+You can further customise your MySQL by using advanced parameters. See the [Advanced parameters references documentation](/pages/platform/databases/mysql_08_advanced_parameters_references) for more information on the supported parameters.
 
 #### Backups
 
@@ -161,7 +158,7 @@ You can further customise your MySQL by using advanced parameters. See the [Adva
 
 #### Logs and metrics
 
-Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your MySQL logs in Opensearch and metrics in Grafana (metrics have to be exported first in a time series compatible engine such as PostgreSQL or M3db). See the [Cross Service Integration documentation](https://docs.ovh.com/pl/publiccloud/databases/cross-service-integration/) for more information.
+Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your MySQL logs in Opensearch and metrics in Grafana (metrics have to be exported first in a time series compatible engine such as PostgreSQL or M3db). See the [Cross Service Integration documentation](/pages/platform/databases/databases_07_cross_service_integration) for more information.
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month

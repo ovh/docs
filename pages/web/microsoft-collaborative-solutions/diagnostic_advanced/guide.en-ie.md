@@ -1,9 +1,6 @@
 ---
 title: 'Using Exchange error diagnostics'
 excerpt: 'Find out how to run automated error checks on Exchange accounts'
-slug: exchange_diagnostic_what_to_do_if_you_encounter_an_error
-section: Exchange Diagnostics
-order: 01
 updated: 2022-10-19
 ---
 
@@ -20,7 +17,7 @@ Since there is a multitude of reasons why errors might occur on Exchange email a
 - an [OVHcloud Exchange solution](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/) already set up
 - credentials for the Exchange account to be checked
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- being up to date in the [payments](https://docs.ovh.com/ie/en/billing/manage-ovh-bills/#pay-bills) for this service and the related domain name.
+- being up to date in the [payments](/pages/account/billing/invoice_management#pay-bills) for this service and the related domain name.
 
 ## Instructions
 
@@ -54,12 +51,12 @@ A blocked account still receives emails but sending has been disabled by the aut
 
 You can verify this in the `Email accounts`{.action} tab of your Exchange service. The account will have the `SPAM`{.action} status displayed in the table.
 
-Please follow the instructions in [this guide](../blocked-for-spam/) to enable our security teams to re-enable the account.
+Please follow the instructions in [this guide](/ie/en/microsoft-collaborative-solutions/blocked-for-spam/) to enable our security teams to re-enable the account.
 
 ### Subscription to the account has expired <a name="expired"></a>
 
 Your subscription is no longer active, sending and receiving has been disabled.<br>
-To reactivate your subscription, simply reconfigure its [billing frequency](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/manage-exchange-billing/#periodicity) in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+To reactivate your subscription, simply reconfigure its [billing frequency](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#periodicity) in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
 ### Account locked due to the security policy
 
@@ -69,11 +66,11 @@ You can for example decide that the account will be locked after multiple unsucc
 
 In this case, you can either wait until the account becomes available again or you can contact our Exchange teams by creating a support request.
 
-You can find more information about this topic in the [security policy guide](../manage-security-policy-password/).
+You can find more information about this topic in the [security policy guide](/ie/en/microsoft-collaborative-solutions/manage-security-policy-password/).
 
 ### Webmail authentication has failed <a name="password"></a>
 
-This can be caused by entering an incorrect account password. First verify via a [webmail login](../exchange_2016_outlook_web_app_user_guide/) that the password is correct, then restart the diagnostics.
+This can be caused by entering an incorrect account password. First verify via a [webmail login](/ie/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/) that the password is correct, then restart the diagnostics.
 
 If necessary, you can change the password of the account concerned in the Exchange tab `Email accounts`{.action} of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). If the issue persists, create a support request.
 
@@ -91,15 +88,14 @@ Depending on your Exchange service usage, the following MX servers are valid:
 > [!warning]
 > In our guides, we use as the server name: ex<b>?</b>.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server  for your Exchange service.
 >
-> You can find this information in the OVHcloud Control Panel, in the `Web Cloud`{.action} section: Open `Microsoft`{.action} , then `Exchange`{.action} and select your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
->
+> You can find this information in the OVHcloud Control Panel, in the `Web Cloud`{.action} >
 
 
 ### The domain's SRV record is not valid
 
 The SRV record is essential to the automatic configuration of your Exchange account with a compatible email software such as Microsoft Outlook.
 
-You can verify these settings in your [domain's DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/).
+You can verify these settings in your [domain's DNS zone](/pages/web/domains/dns_zone_edit).
 
 Here are the mandatory values for an Exchange service:
 

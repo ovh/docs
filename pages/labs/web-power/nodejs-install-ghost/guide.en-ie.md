@@ -1,9 +1,6 @@
 ---
 title: Install Ghost on your POWER web hosting plan
-slug: nodejs-install-ghost
 excerpt: Find out how to install Ghost  on your POWER web hosting plan
-section: Node.js
-order: 3
 updated: 2021-02-04
 ---
 
@@ -45,7 +42,7 @@ This guide will explain how to do it.
 - A [Node.js](https://labs.ovh.com/managed-nodejs) POWER web hosting plan
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
-If you have just started to use your Web POWER web hosting plan, we suggest to have a look at our [Getting started with a POWER web hosting plan](../getting-started-with-power-web-hosting/) guide before going further.
+If you have just started to use your Web POWER web hosting plan, we suggest to have a look at our [Getting started with a POWER web hosting plan](/pages/labs/web-power/getting-started) guide before going further.
 
 ## Instructions
 
@@ -58,9 +55,9 @@ Let's suppose you have the default configuration for Node.js hosting:
 
 > [!primary]
 >
-> To verify your configuration, you can use the [Retrieve active configuration](../getting-started-with-power-web-hosting/#api-get-active-configuration) API endpoint
+> To verify your configuration, you can use the [Retrieve active configuration](/pages/labs/web-power/getting-started#api-get-active-configuration) API endpoint
 
-[Connect via SSH](../getting-started-with-power-web-hosting/#ssh) to your POWER web hosting.
+[Connect via SSH](/pages/labs/web-power/getting-started#ssh) to your POWER web hosting.
 Let's begin by configuring the domain name in a `DOMAIN` variable:
 
 ```sh
@@ -101,7 +98,7 @@ VERSION=$(ghost --version | sed -n 's/Ghost version: \([0-9.]*\).*/\1/p')
 ln -fs versions/${VERSION}/index.js index.js
 ```
 
-[Restart your instance](../getting-started-with-power-web-hosting/#restart) and your Ghost will be online.
+[Restart your instance](/pages/labs/web-power/getting-started#restart) and your Ghost will be online.
 
 
 ![Ghost](images/nodejs-install-ghost-01.png){.thumbnail}

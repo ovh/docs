@@ -1,9 +1,6 @@
 ---
 title: Utilizzare SDK vSphere
-slug: utilizzare-sdk-vsphere
 excerpt: Come installare e utilizzare il Software Development Kit di vSphere
-section: Funzionalità VMware vSphere
-order: 12
 updated: 2020-07-13
 ---
 
@@ -23,7 +20,7 @@ Per automatizzare le azioni all’interno della propria infrastruttura è possib
 
 ##### OS
 
-In questa guida utilizzeremo una VM installata su Debian 9, creata a partire dai [template disponibili sul servizio Private Cloud](../installazione-template-ovh/).
+In questa guida utilizzeremo una VM installata su Debian 9, creata a partire dai [template disponibili sul servizio Private Cloud](/pages/cloud/private-cloud/ovf_template).
 
 ##### Prerequisiti
 
@@ -141,7 +138,7 @@ vconnect()
 
 ##### OS
 
-In questo esempio utilizziamo una VM installata su Ubuntu 18.04, creata a partire dai [template disponibili sul servizio Private Cloud](../installazione-template-ovh/).
+In questo esempio utilizziamo una VM installata su Ubuntu 18.04, creata a partire dai [template disponibili sul servizio Private Cloud](/pages/cloud/private-cloud/ovf_template).
 
 
 ##### Prerequisiti

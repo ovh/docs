@@ -1,8 +1,6 @@
 ---
 title: 'Przeniesienie kopii zapasowej instancji do innego centrum danych'
 excerpt: 'Dowiedz się, jak przenieść instancję zachowując jej stan i konfigurację'
-slug: przenoszenie_kopii_zapasowych_pomiedzy_centrami_danych
-section: 'Z poziomu wiersza poleceń '
 updated: 2019-03-29
 ---
 
@@ -19,7 +17,7 @@ Możesz przenieść instancję Public Cloud między centrami danych, gdy preferu
 
 * Utworzenie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} na Twoim koncie OVHcloud
 * Dostęp administratora (root) Twojej instancji/systemu operacyjnego przez SSH
-* Przeczytanie przewodnika [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/){.external} (zalecane)
+* Przeczytanie przewodnika [Przygotowanie środowiska do korzystania z API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api){.external} (zalecane)
 
 > [!primary]
 >
@@ -140,7 +138,7 @@ Użyj ID kopii zapasowej jako obrazu, wprowadzając poniższą komendę:
 
 ## Sprawdź również
 
-[Przeniesienie kopii zapasowej wolumenu do innego centrum danych](https://docs.ovh.com/gb/en/public-cloud/transfer_volume_backup_from_one_datacentre_to_another/){.external}
+[Przeniesienie kopii zapasowej wolumenu do innego centrum danych](/pages/platform/public-cloud/transfer_volume_backup_from_one_datacentre_to_another){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
 

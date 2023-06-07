@@ -1,11 +1,8 @@
 ---
 title: Migrating an infrastructure to a new vDC
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/sddc-migration/'
+    canonical: '/pages/cloud/private-cloud/service-migration'
 excerpt: Find out how to manage all aspects of migrating an infrastructure to a vDC
-slug: vdc-migration
-section: Getting started
-order: 6
 hidden: true
 updated: 2020-12-16
 ---
@@ -41,7 +38,7 @@ This guide will utilise the notions of a **source infrastructure** and a **desti
 
 ##### **Managed Bare Metal access**
 
-For connections to the VMware platform, you can choose to block access to vSphere by default. Please refer to our guide on the [vCenter access policy](../modify-vcenter-access-policy/) for details.
+For connections to the VMware platform, you can choose to block access to vSphere by default. Please refer to our guide on the [vCenter access policy](/pages/cloud/managed-bare-metal/vcenter-modify-access-policy) for details.
 
 If the access policy has been changed to "Restricted", you will need to apply the same connection IPs to the destination vDC as to the source infrastructure.
 
@@ -49,12 +46,12 @@ If the access policy has been changed to "Restricted", you will need to apply th
 
 In the lifecycle of the source infrastructure, a list of users may have been created for business or organisational needs. You must therefore provide the current users the same rights to the new vDC.
 
-To do this, please refer to our guides on [Changing user rights](../change-users-rights/), [Changing the User Password](../changing-user-password/) and [Associating an email with a vSphere user](../associate-email-with-vsphere-user/).
+To do this, please refer to our guides on [Changing user rights](../change-users-rights/), [Changing the User Password](../changing-user-password/) and [Associating an email with a vSphere user](/pages/cloud/managed-bare-metal/vsphere-edit-user).
 
 ##### **Key Management Server (KMS)**
 
 If virtual machines are protected by encryption and this is a prerequisite for the destination vDC, it will be necessary to recreate the encryption context on that destination infrastructure.
-Please refer to our guide on [Enabling Virtual Machine Encryption](../vm-encrypt/) in order to enable KMS on the destination vDC.
+Please refer to our guide on [Enabling Virtual Machine Encryption](/pages/cloud/managed-bare-metal/vm_encrypt) in order to enable KMS on the destination vDC.
 
 #### Network
 
@@ -65,7 +62,7 @@ Please refer to our guide on [Enabling Virtual Machine Encryption](../vm-encrypt
 > VMnetworks located in the same region cannot be interconnected in a vRack.
 >
 
-As part of a migration process, you can link your Managed Mare Metal services within the same vRack. Please consult our guide on how to [Using Managed Bare Metal within a vRack](../using-managed-bare-metal-with-vrack/).
+As part of a migration process, you can link your Managed Mare Metal services within the same vRack. Please consult our guide on how to [Using Managed Bare Metal within a vRack](/pages/cloud/managed-bare-metal/using-vrack).
 
 
 ### VMware context
@@ -74,7 +71,7 @@ As part of a migration process, you can link your Managed Mare Metal services wi
 
 ##### **Configuring VMware HA**
 
-The migration involves reconfiguring VMware High Availability (HA), including boot order and priority. Please consult our guide about [VMware HA configuration](../vmware-ha-high-availability/).
+The migration involves reconfiguring VMware High Availability (HA), including boot order and priority. Please consult our guide about [VMware HA configuration](/pages/cloud/managed-bare-metal/vmware_ha_high_availability).
 
 Here is a checklist of aspect to take into account:
 
@@ -88,7 +85,7 @@ Here is a checklist of aspect to take into account:
 
 ##### **Configuring VMware DRS**
 
-The migration involves reconfiguring the VMware Distributed Resource Scheduler (DRS) feature, in particular the affinity or anti-affinity rules for groups of hosts and VMs. Please consult our guide about [configuring VMware DRS](../vmware-drs-distributed-ressource-scheduler/).
+The migration involves reconfiguring the VMware Distributed Resource Scheduler (DRS) feature, in particular the affinity or anti-affinity rules for groups of hosts and VMs. Please consult our guide about [configuring VMware DRS](/pages/cloud/managed-bare-metal/vmware_drs_distributed_ressource_scheduler).
 
 Here is a checklist of aspects to take into account:
 
@@ -127,7 +124,7 @@ Here is a checklist of aspects to take into account:
 
 ##### **Networks**
 
-Migration involves recreating the vRack VLAN-backed portgroups on the destination vDC to ensure VM network consistency. If vRack VLANs are in use on the source infrastructure vRack can be used to stretch the L2 domain to the destination vDC to allow for a more phased migration plan. For more information consult our guide about [Using Managed Bare Metal within a vRack](../using-managed-bare-metal-with-vrack/).
+Migration involves recreating the vRack VLAN-backed portgroups on the destination vDC to ensure VM network consistency. If vRack VLANs are in use on the source infrastructure vRack can be used to stretch the L2 domain to the destination vDC to allow for a more phased migration plan. For more information consult our guide about [Using Managed Bare Metal within a vRack](/pages/cloud/managed-bare-metal/using-vrack).
 
 Here is a checklist of aspects to take into account:
 
@@ -149,7 +146,7 @@ Here is a checklist of aspects to take into account:
 - List of VMs being backed up
 - Backup settings
 
-Please refer to our guide on [activating and using Veeam Managed Backup](../veeam-backup-as-a-service/).
+Please refer to our guide on [activating and using Veeam Managed Backup](/pages/cloud/managed-bare-metal/veeam_backup_as_a_service).
 
 **Automation tips:** OVHcloud API provides VM backup information attached to each VM via:
 

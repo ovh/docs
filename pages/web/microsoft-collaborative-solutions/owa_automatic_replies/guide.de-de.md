@@ -1,9 +1,6 @@
 ---
 title: 'Einrichten einer automatischen Antwort in OWA'
 excerpt: 'Erfahren Sie hier, wie Sie automatische Antworten in OWA erstellen'
-slug: exchange_2016_einrichten_einer_automatischen_antwort_in_owa
-section: 'E-Mail Account Funktionen'
-order: 07
 updated: 2020-07-20
 ---
 
@@ -59,10 +56,10 @@ In das zweite Feld kann eine alternative Nachricht für externe Absender eingege
 
 ## Weiterführende Informationen
 
-[Verwendung der Outlook Web App](../exchange_2016_verwendung_der_outlook_web_app/)
+[Verwendung der Outlook Web App](/de/microsoft-collaborative-solutions/exchange_2016_verwendung_der_outlook_web_app/)
 
-[Berechtigungen für einen Exchange Account übertragen](../exchange_2013_send_as_versand_als/)
+[Berechtigungen für einen Exchange Account übertragen](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Kalender in OWA freigeben](../exchange_2016_einen_kalender_via_owa_webmail_freigeben/)
+[Kalender in OWA freigeben](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

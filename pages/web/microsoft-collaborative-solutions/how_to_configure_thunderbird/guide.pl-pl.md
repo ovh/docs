@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguracja konta Exchange w programie Thunderbird na urządzeniu z systemem Windows'
-slug: exchange_20132016_konfiguracja_w_programie_thunderbird
 excerpt: 'Tutaj znajdziesz procedurę dodawania konta Exchange w programie Thunderbird'
-section: 'Konfiguracja komputerowa'
-order: 04
 updated: 2021-08-26
 ---
 
@@ -68,7 +65,7 @@ OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie 
 
 ### Pobierz kopię zapasową Twojego konta e-mail
 
-Jeśli musisz wykonać operację, która może spowodować utratę danych przypisanych do Twojego konta e-mail, zalecamy wykonanie kopii zapasowej odpowiedniego konta e-mail. W tym celu zapoznaj się z sekcją "**Eksport**" w części "**Thunderbird**" w naszym przewodniku [Ręczna migracja Twojego konta e-mail](https://docs.ovh.com/pl/emails/przenoszenie-kont-e-mail/#eksport).
+Jeśli musisz wykonać operację, która może spowodować utratę danych przypisanych do Twojego konta e-mail, zalecamy wykonanie kopii zapasowej odpowiedniego konta e-mail. W tym celu zapoznaj się z sekcją "**Eksport**" w części "**Thunderbird**" w naszym przewodniku [Ręczna migracja Twojego konta e-mail](/pages/web/emails/manual_email_migration#eksport).
 
 ### Zmień istniejące parametry
 

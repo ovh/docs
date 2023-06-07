@@ -1,9 +1,6 @@
 ---
 title: 'Configuring an email address on the macOS Mail app'
-slug: guide-configuring-mail-on-macos
 excerpt: 'Find out how to configure an email address on the Mail app, for the following macOS operating systems - El Capitan, Sierra and High Sierra'
-section: 'Configure on computer'
-order: 03
 updated: 2022-06-13
 ---
 
@@ -46,11 +43,11 @@ You can configure MX Plan accounts on email clients, if they are compatible. By 
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.co.uk/mail/>. You can log in using your email credentials. If you have any question about how to use it, you can refer to our guide on [Using an account in the OWA](https://docs.ovh.com/asia/en/emails/using-owa/) interface or use your email address via the RoundCube webmail.
+OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.co.uk/mail/>. You can log in using your email credentials. If you have any question about how to use it, you can refer to our guide on [Using an account in the OWA](/products/email-owa-user-guide) interface or use your email address via the RoundCube webmail.
 
 ### Retrieve a backup of your email address
 
-If you need to make any changes that could lead to the loss of your email account data, we advise backing up the email account concerned beforehand. To do this, please read the "**Export**" section in the "**Mail on macOS**" chapter of our guide on [Manually migrate your email address](https://docs.ovh.com/asia/en/emails/migrate-email-addresses-manually/#exporting).
+If you need to make any changes that could lead to the loss of your email account data, we advise backing up the email account concerned beforehand. To do this, please read the "**Export**" section in the "**Mail on macOS**" chapter of our guide on [Manually migrate your email address](/pages/web/emails/manual_email_migration#exporting).
 
 ### Modify existing settings
 

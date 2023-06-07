@@ -1,9 +1,6 @@
 ---
 title: Additional IP importieren
-slug: import-additional-ip
 excerpt: "Erfahren Sie hier, wie Sie eine Additional IP-Adresse in ein Public Cloud Projekt importieren"
-section: Additional IP
-order: 03
 updated: 2023-01-04
 ---
 
@@ -75,7 +72,7 @@ Klicken Sie auf `Verbinden`{.action}, um zu bestätigen. Im Interface wird nun e
 
 Ihre Additional IP-Adresse wird nun mit Ihrer Instanz verbunden.
 
-Im nächsten Schritt muss die IP-Adresse in Ihrem Betriebssystem konfiguriert werden. Lesen Sie dazu unsere [Anleitung zur IP-Konfiguration](https://docs.ovh.com/de/publiccloud/network-services/configure-additional-ip/).
+Im nächsten Schritt muss die IP-Adresse in Ihrem Betriebssystem konfiguriert werden. Lesen Sie dazu unsere [Anleitung zur IP-Konfiguration](/pages/platform/network-services/getting-started-04-configure-additional-ip-to-instance).
 
 ## Weiterführende Informationen
 

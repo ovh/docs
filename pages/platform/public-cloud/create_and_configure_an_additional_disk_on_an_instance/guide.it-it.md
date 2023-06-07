@@ -1,10 +1,7 @@
 ---
 title: 'Crea e configura un disco aggiuntivo sulla tua istanza'
 excerpt: 'Come associare un nuovo volume alla tua istanza Public Cloud'
-slug: crea_e_configura_un_disco_aggiuntivo_sulla_tua_istanza
 legacy_guide_number: g1863
-section: Storage
-order: 1
 updated: 2023-03-03
 ---
 
@@ -73,7 +70,7 @@ Gli esempi che seguono presuppongono che tu sia connesso come utente con autoriz
 
 #### Con Linux
 
-Apri una [connessione SSH alla tua istanza](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/#connect-to-instance) e utilizza il comando qui sotto per visualizzare i dischi associati.
+Apri una [connessione SSH alla tua istanza](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) e utilizza il comando qui sotto per visualizzare i dischi associati.
 
 ```bash
 ~$ admin@server-1:~$ lsblk
@@ -325,7 +322,7 @@ Per scollegare un volume dall'istanza, la migliore pratica è smontare il volume
 
 #### Con Linux
 
-Apri una [connessione SSH alla tua istanza](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/#step-3-crea-unistanza) e utilizza il comando qui sotto per visualizzare i dischi associati.
+Apri una [connessione SSH alla tua istanza](/pages/platform/public-cloud/public-cloud-first-steps#step-3-crea-unistanza) e utilizza il comando qui sotto per visualizzare i dischi associati.
 
 ```bash
 ~$ admin@server-1:~$ lsblk

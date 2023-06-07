@@ -1,9 +1,6 @@
 ---
 title: 'Using resource accounts'
 excerpt: 'Find out how to create and manage resource accounts'
-slug: exchange_20132016_how_to_use_resource_accounts
-section: 'Exchange account features'
-order: 05
 updated: 2020-06-05
 ---
 
@@ -46,7 +43,7 @@ Click `Next`{.action} to proceed to the summary, then confirm the task by clicki
 
 ### Step 2: Utilising resources
 
-Your resources can be managed from the table in the `Resources` tab. Click on `...`{.action} to modify or delete a resource. Additionally, the menu item `Manage delegations`{.action} will be displayed. With this option you will be able to delegate access in the same way as for an Exchange account. Please find the details in [this guide](../exchange_2013_how_to_grant_full_access_permissions_for_an_account).
+Your resources can be managed from the table in the `Resources` tab. Click on `...`{.action} to modify or delete a resource. Additionally, the menu item `Manage delegations`{.action} will be displayed. With this option you will be able to delegate access in the same way as for an Exchange account. Please find the details in [this guide](/pages/web/microsoft-collaborative-solutions/feature_delegation).
 
 ![resourceview](images/exchange-resources-step3.png){.thumbnail}
 
@@ -54,7 +51,7 @@ Your resources can be managed from the table in the `Resources` tab. Click on `.
 
 > [!primary]
 >
-Please also refer to our guide on [Sharing calendars in OWA](../exchange_2016_how_to_share_calendars_via_owa).
+Please also refer to our guide on [Sharing calendars in OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing).
 >
 
 Log in to your Exchange account via the [OVHcloud webmail](https://www.ovh.com/ca/en/mail/). Switch to the "Calendar" interface by clicking on the "app launcher" in the top left-hand corner and then selecting the `Calendar`{.action} icon.
@@ -123,10 +120,10 @@ After creating the event (clicking `Send`{.action} in the top menu bar) Exchange
 
 ## Go further
 
-[Using the Outlook Web App with an Exchange account](../exchange_2016_outlook_web_app_user_guide)
+[Using the Outlook Web App with an Exchange account](/ca/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide)
 
-[Sharing calendars in OWA](../exchange_2016_how_to_share_calendars_via_owa)
+[Sharing calendars in OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Sharing folders in OWA](../exchange_2016_how_to_share_a_folder_via_owa)
+[Sharing folders in OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
 Join our community of users on <https://community.ovh.com/en/>.

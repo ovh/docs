@@ -1,9 +1,6 @@
 ---
 title: 'Adicionar um campo MX à configuração do domínio'
-slug: e-mail-partilhado-manual-de-configuracao-mx-com-zona-dns-ovh
 excerpt: 'Saiba como adicionar um campo MX ao seu domínio da OVHcloud'
-section: 'DNS e zona DNS'
-order: 04
 updated: 2018-05-30
 ---
 
@@ -65,7 +62,7 @@ Para verificar mais rapidamente se já existem campos MX, selecione, com o filtr
 
 Para isso, clique no botão `Adicionar uma entrada`{.action} à direita da tabela e selecione a opção `MX`{.action}. Introduza as informações necessárias em função da solução de e-mail selecionada:
 
-- **se possuir uma solução de e-mail da OVHcloud**: consulte as informações no passo [“2 - Conhecer a configuração MX da OVHcloud”](https://docs.ovh.com/pt/domains/e-mail-partilhado-manual-de-configuracao-mx-com-zona-dns-ovh/#2-conhecer-a-configuracao-mx-da-ovh){.external};
+- **se possuir uma solução de e-mail da OVHcloud**: consulte as informações no passo [“2 - Conhecer a configuração MX da OVHcloud”](/pages/web/domains/dns_zone_mx#2-conhecer-a-configuracao-mx-da-ovh){.external};
 
 - **se possuir outra solução de e-mail**: consulte as informações comunicadas pelo seu fornecedor de serviço de e-mail.
 
@@ -77,9 +74,9 @@ Depois de preencher os dados, finalize os passos e clique em `Validar`{.action}.
 
 ## Quer saber mais?
 
-[Alterar os servidores DNS de um nome de domínio OVHcloud](https://docs.ovh.com/pt/domains/partilhado_generalidades_sobre_os_servidores_dns/){.external}.
+[Alterar os servidores DNS de um nome de domínio OVHcloud](/pages/web/domains/dns_server_general_information){.external}.
 
-[Como editar a minha zona DNS?](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}
+[Como editar a minha zona DNS?](/pages/web/domains/dns_zone_edit){.external}
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 

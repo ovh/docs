@@ -1,9 +1,6 @@
 ---
 title: 'Zmiana konfiguracji hostingu'
-slug: zmiana_srodowiska_uruchomieniowego_dla_hostingu_www
 excerpt: 'Dowiedz się, jak zmienić konfigurację hostingu OVHcloud'
-section: 'Konfiguracja hostingu'
-order: 03
 updated: 2022-12-09
 ---
 
@@ -44,7 +41,7 @@ Przed rozpoczęciem operacji zaloguj się do [Panelu klienta OVHcloud](https://w
 > [!primary]
 >Jeśli przycisk `Zmień konfigurację`{.action} jest wyszarzony, możliwe jest, że trwa weryfikacja **głównej wersji PHP**. W takim przypadku obok wersji wyświetli się okrągły niebieski symbol oznaczający, że weryfikacja jest w toku. Odczekaj kilka minut, aby przycisk `Zmień konfigurację`{.action} stał się znowu aktywny.
 >
-> Jeśli w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) nie pojawi się opcja `stronie PHP`{.action}, sprawdź, czy plik "**.ovhconfig**" istnieje w katalogu FTP Twojego hostingu współdzielonego OVHcloud, korzystając z naszego przewodnika dotyczącego [konfiguracji pliku ".ovhconfig"](https://docs.ovh.com/pl/hosting/konfiguracja-pliku-ovhconfig/).
+> Jeśli w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) nie pojawi się opcja `stronie PHP`{.action}, sprawdź, czy plik "**.ovhconfig**" istnieje w katalogu FTP Twojego hostingu współdzielonego OVHcloud, korzystając z naszego przewodnika dotyczącego [konfiguracji pliku ".ovhconfig"](/pages/web/hosting/ovhconfig_configuration).
 >
 
 #### Etap 2: zmiana konfiguracji hostingu
@@ -97,7 +94,7 @@ Zmiana frameworka umożliwia modyfikację niektórych parametrów technicznych T
 Po dokonaniu wyboru masz dwie możliwości przeprowadzenia zmiany:
 
 - **w Panelu klienta**: postępuj zgodnie z instrukcjami zawartymi w sekcji niniejszego przewodnika zatytułowanej [Modyfikacja konfiguracji hostingu w Panelu klienta](./#zmiana-konfiguracji-hostingu-w-panelu-klienta){.external};
-- **modyfikując ręcznie plik .ovhconfig**: to rozwiązanie wymagające wiedzy technicznej i połączenia z przestrzenią dyskową FTP. Jeśli chcesz zmodyfikować plik **.ovhconfig**, postępuj zgodnie z instrukcjami zawartymi w przewodniku [Konfiguracja pliku .ovhconfig na hostingu](../konfiguracja-pliku-ovhconfig/){.external}.
+- **modyfikując ręcznie plik .ovhconfig**: to rozwiązanie wymagające wiedzy technicznej i połączenia z przestrzenią dyskową FTP. Jeśli chcesz zmodyfikować plik **.ovhconfig**, postępuj zgodnie z instrukcjami zawartymi w przewodniku [Konfiguracja pliku .ovhconfig na hostingu](/pages/web/hosting/ovhconfig_configuration){.external}.
 
 #### Wersja PHP
 
@@ -110,7 +107,7 @@ Istnieje kilka sposobów modyfikacji wersji PHP na Twoim hostingu:
 - **w Panelu klienta**: postępuj zgodnie z instrukcjami zawartymi w sekcji niniejszego przewodnika zatytułowanej [Modyfikacja konfiguracji hostingu w Panelu klienta](./#zmiana-konfiguracji-hostingu-w-panelu-klienta){.external};
 - **modyfikując ręcznie plik na przestrzeni FTP**: to rozwiązanie wymagające wiedzy technicznej i połączenia z przestrzenią dyskową FTP.
 
-Jeśli chcesz uzyskać więcej informacji o zmianie wersji PHP, skorzystaj z instrukcji zawartych w naszym przewodniku [Zmiana wersji PHP na hostingu OVHcloud](../konfiguracja_php_na_hostingu_www_ovh_2014/){.external}.
+Jeśli chcesz uzyskać więcej informacji o zmianie wersji PHP, skorzystaj z instrukcji zawartych w naszym przewodniku [Zmiana wersji PHP na hostingu OVHcloud](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014){.external}.
 
 #### Silnik PHP
 
@@ -119,7 +116,7 @@ Wybór silnika PHP pozwala aktywować lub dezaktywować akcelerator PHP (PHP-FPM
 Istnieją dwa sposoby zmiany silnika PHP wykorzystywanego przez Twój hosting:
 
 - **w Panelu klienta**: postępuj zgodnie z instrukcjami zawartymi w sekcji niniejszego przewodnika zatytułowanej [Modyfikacja konfiguracji hostingu w Panelu klienta](./#zmiana-konfiguracji-hostingu-w-panelu-klienta){.external}; Aby aktywować akcelerator PHP (PHP-FPM), wybierz „php” jako silnik. Aby go dezaktywować, wybierz „phpcgi”;
-- **modyfikując ręcznie plik .ovhconfig**: to rozwiązanie wymagające wiedzy technicznej i połączenia z przestrzenią dyskową FTP. Jeśli chcesz zmodyfikować plik **.ovhconfig**, postępuj zgodnie z instrukcjami zawartymi w przewodniku [Konfiguracja pliku .ovhconfig na hostingu](../konfiguracja-pliku-ovhconfig/){.external}.
+- **modyfikując ręcznie plik .ovhconfig**: to rozwiązanie wymagające wiedzy technicznej i połączenia z przestrzenią dyskową FTP. Jeśli chcesz zmodyfikować plik **.ovhconfig**, postępuj zgodnie z instrukcjami zawartymi w przewodniku [Konfiguracja pliku .ovhconfig na hostingu](/pages/web/hosting/ovhconfig_configuration){.external}.
 
 #### Tryb
 
@@ -138,7 +135,7 @@ Wybór trybu umożliwia zarządzanie pamięcią podręczną plików statycznych 
 Zmianę trybu możesz wprowadzić na dwa sposoby:
 
 - **w Panelu klienta**: postępuj zgodnie z instrukcjami zawartymi w sekcji niniejszego przewodnika zatytułowanej [Modyfikacja konfiguracji hostingu w Panelu klienta](./#zmiana-konfiguracji-hostingu-w-panelu-klienta){.external};
-- **modyfikując ręcznie plik .ovhconfig**: to rozwiązanie wymagające wiedzy technicznej i połączenia z przestrzenią dyskową FTP. Jeśli chcesz zmodyfikować plik **.ovhconfig**, postępuj zgodnie z instrukcjami zawartymi w przewodniku [Konfiguracja pliku .ovhconfig na hostingu](../konfiguracja-pliku-ovhconfig/){.external}.
+- **modyfikując ręcznie plik .ovhconfig**: to rozwiązanie wymagające wiedzy technicznej i połączenia z przestrzenią dyskową FTP. Jeśli chcesz zmodyfikować plik **.ovhconfig**, postępuj zgodnie z instrukcjami zawartymi w przewodniku [Konfiguracja pliku .ovhconfig na hostingu](/pages/web/hosting/ovhconfig_configuration){.external}.
 
 ## Sprawdź również
 

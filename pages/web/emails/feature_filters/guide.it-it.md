@@ -1,10 +1,7 @@
 ---
 title: Creare filtri per i tuoi indirizzi email
 excerpt: Come creare e configurare un filtro sul tuo indirizzo email
-slug: servizio_email_configura_i_filtri_email_nel_tuo_spazio_cliente_ovh
 legacy_guide_number: g1973
-section: Funzionalità degli indirizzi email
-order: 04
 updated: 2021-09-27
 ---
 
@@ -81,7 +78,7 @@ Prima scelta (intestazione):
 
 Seconda scelta (regola):
 
-- **spf:** Indica un valore del [record SPF](https://docs.ovh.com/it/domains/hosting_condiviso_il_record_spf/) da considerare, ad esempio: "... non ha record SPF ... ".
+- **spf:** Indica un valore del [record SPF](/pages/web/domains/dns_zone_spf) da considerare, ad esempio: "... non ha record SPF ... ".
 - **contiene:** esempio: "... contiene ... ".
 - **non contiene:** esempio: "... non contiene... ".
 
@@ -142,8 +139,8 @@ Se l'oggetto del messaggio contiene la parola "money" **e il** mittente del mess
 
 ## Per saperne di più
 
-[Iniziare a utilizzare la soluzione MX Plan](https://docs.ovh.com/it/emails/informazioni-generali-email-condivise/)
+[Iniziare a utilizzare la soluzione MX Plan](/pages/web/emails/email_generalities)
 
-[Regole della casella della posta in arrivo dall'interfaccia OWA](https://docs.ovh.com/it/emails/creare-regole-posta-in-arrivo-in-owa/)
+[Regole della casella della posta in arrivo dall'interfaccia OWA](/products/email-owa-creating-inbox-rules)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

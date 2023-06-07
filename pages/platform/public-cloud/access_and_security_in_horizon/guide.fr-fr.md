@@ -1,10 +1,7 @@
 ---
 title: "Paramètres d'accès et de sécurité dans Horizon"
 excerpt: "Découvrez comment gérer et sécuriser l'accès à vos instances"
-slug: access_and_security_in_horizon
 legacy_guide_number: 1774
-section: Gestion depuis Horizon
-order: 07
 updated: 2021-05-26
 ---
 
@@ -19,7 +16,7 @@ Vous pouvez par exemple configurer des groupes de sécurité pour filtrer les co
 
 ## Prérequis
 
-- [Accéder à l'interface Horizon](../horizon/)
+- [Accéder à l'interface Horizon](/pages/platform/public-cloud/introducing_horizon)
 
 ## En pratique
 
@@ -45,7 +42,7 @@ Cette section vous permet de stocker et de gérer les paires de clés SSH. Vous 
 
 Si vous souhaitez ajouter une clé pré-existante, cliquez sur `Import Public Key`{.action}. Dans la fenêtre qui s'affiche, vous pouvez entrer une clé ou sélectionner un fichier de clé.
 
-Cette section d'interface contient des instructions de base. Pour plus d'informations sur les clés SSH, consultez [ce guide](../creation-des-cles-ssh/).
+Cette section d'interface contient des instructions de base. Pour plus d'informations sur les clés SSH, consultez [ce guide](/pages/platform/public-cloud/public-cloud-first-steps#etape-1-creer-des-cles-ssh/).
 
 - **Security Groups** (sous `Project`{.action} puis `Network`{.action})
 

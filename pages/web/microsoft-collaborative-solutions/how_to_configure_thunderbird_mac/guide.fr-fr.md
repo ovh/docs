@@ -1,9 +1,6 @@
 ---
 title: 'Configurer son compte Exchange sur Thunderbird pour Mac OS'
-slug: exchange-configuration-de-thunderbird-mac
 excerpt: 'Découvrez comment configurer votre adresse e-mail Exchange sur Thunderbird pour Mac OS'
-section: 'Configuration sur ordinateur'
-order: 05
 updated: 2021-08-26
 ---
 
@@ -66,7 +63,7 @@ OVHcloud propose aussi une application web permettant d'accéder à votre adress
 
 ### Récupérer une sauvegarde de votre adresse e-mail
 
-Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consultez le paragraphe « **Exporter** » dans la partie « **Thunderbird** » de notre guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#exporter).
+Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consultez le paragraphe « **Exporter** » dans la partie « **Thunderbird** » de notre guide [Migrer manuellement votre adresse e-mail](/pages/web/emails/manual_email_migration#exporter).
 
 ### Modifier les paramètres existants
 

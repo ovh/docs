@@ -1,11 +1,8 @@
 ---
 title: Creare uno Snapshot (EN)
-slug: creare-uno-snapshot
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/create-a-snapshot/'
+    canonical: '/pages/cloud/private-cloud/creer_un_snapshot'
 excerpt: Return to a previous VM state using snapshots
-section: Gestione delle macchine virtuali
-order: 08
 updated: 2022-01-19
 ---
 

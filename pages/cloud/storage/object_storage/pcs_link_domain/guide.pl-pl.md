@@ -1,10 +1,7 @@
 ---
 title: Object Storage Swift - Umieszczenie kontenera Object Storage za domeną
 excerpt: Umieszczenie kontenera Object Storage za domeną
-slug: pcs/link-domain
-section: OpenStack Swift Storage Class Specifics
 legacy_guide_number: g2006
-order: 120
 updated: 2021-10-27
 ---
 
@@ -20,7 +17,7 @@ Przewodnik ten wyjaśnia, jak skonfigurować domenę na kontenerach, aby ułatwi
 
 ## Wymagania
 
-- [Dodanie przestrzeni dyskowej](https://docs.ovh.com/pl/storage/object-storage/pcs/create-container/) (EN)
+- [Dodanie przestrzeni dyskowej](/pages/cloud/storage/object_storage/pcs_create_container) (EN)
 - Domena
 
 ## W teorii

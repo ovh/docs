@@ -1,10 +1,8 @@
 ---
 title: Managed Bare Metal kündigen
-slug: eine-managed-bare-metal-kuendigen
 routes:
-    canonical: 'https://docs.ovh.com/de/private-cloud/eine-private-cloud-kuendigen/'
+    canonical: '/pages/cloud/private-cloud/comment_resilier_le_private_cloud'
 excerpt: Erfahren Sie hier, wie Sie eine Managed Bare Metal Infrastruktur kündigen können
-section: OVHcloud Funktionen
 updated: 2020-11-18
 ---
 

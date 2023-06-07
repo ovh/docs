@@ -1,9 +1,6 @@
 ---
 title: Concepts - Additional IP ou Floating IP
-slug: additional-ip-vs-floating-ip
 excerpt: "Découvrez comment utiliser les adresses IP publiques dans le cadre du réseau Public Cloud"
-section: Concepts
-order: 02
 updated: 2022-11-02
 ---
 
@@ -31,7 +28,7 @@ Une fois qu'une adresse Additional IP est disponible dans votre espace client, e
 
 Veuillez noter que dans l'univers Public Cloud, les Additional IP ne peuvent être utilisées qu'avec des instances en **Mode Public** de mise en réseau (ayant des IP publiques dans le réseau externe).
 
-Retrouvez plus d'informations sur la configuration d'adresses Additional IP dans [ce guide](https://docs.ovh.com/fr/publiccloud/network-services/configure-additional-ip/).
+Retrouvez plus d'informations sur la configuration d'adresses Additional IP dans [ce guide](/pages/platform/network-services/getting-started-04-configure-additional-ip-to-instance).
 
 ### Floating IP
 
@@ -43,7 +40,7 @@ Veuillez noter que les Floating IP ne peuvent être utilisées qu'avec des insta
 
 Les Floating IP sont facturées à l'heure et à l'usage (pay-as-you-go).
 
-Pour plus d'informations sur la configuration des Floating IP, consultez la page [Concepts - Réseau Public Cloud](https://docs.ovh.com/fr/publiccloud/network-services/networking-concepts/).
+Pour plus d'informations sur la configuration des Floating IP, consultez la page [Concepts - Réseau Public Cloud](/pages/platform/network-services/concepts-01-public-cloud-networking-concepts).
 
 ### Comment obtenir des adresses IP publiques dans votre espace client ?
 

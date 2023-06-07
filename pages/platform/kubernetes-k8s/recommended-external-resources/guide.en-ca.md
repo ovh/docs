@@ -1,8 +1,6 @@
 ---
 title: Recommended external resources
 excerpt: ''
-slug: recommended-external-resources
-section: Technical resources
 updated: 2019-07-01
 ---
 

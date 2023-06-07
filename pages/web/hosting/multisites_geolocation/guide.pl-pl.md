@@ -1,9 +1,6 @@
 ---
 title: "Geolokalizacja strony WWW w danym kraju"
 excerpt: "Dowiedz się, jak geolokalizować Twoją stronę WWW za pomocą geolokalizowanych adresów IP"
-slug: geolokalizacja_na_hostingu_www
-section: Optymalizacja strony WWW
-order: 05
 updated: 2022-12-22
 ---
 
@@ -52,9 +49,9 @@ Kliknij przycisk `Dalej`{.action}, a następnie kliknij `Zatwierdź`{.action} w 
 
 >[!primary]
 >
-> Jeśli aktywna strefa DNS Twojej domeny jest w pełni zarządzana w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), wpis A w strefie DNS Twojej domeny zostanie automatycznie zmieniony. Możesz sprawdzić, czy adres IP został zaktualizowany w naszym przewodniku dotyczącym [edycji strefy DNS OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/).
+> Jeśli aktywna strefa DNS Twojej domeny jest w pełni zarządzana w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), wpis A w strefie DNS Twojej domeny zostanie automatycznie zmieniony. Możesz sprawdzić, czy adres IP został zaktualizowany w naszym przewodniku dotyczącym [edycji strefy DNS OVHcloud](/pages/web/domains/dns_zone_edit).
 >
-> W przeciwnym razie przeprowadź ręcznie zmianę u dostawcy zarządzającego aktywną strefą DNS Twojej domeny. Zapoznaj się z dokumentacją [tutaj](https://docs.ovh.com/pl/hosting/lista-adresow-ip-klastrow-i-hostingow-www/) zawierającą listę adresów IP naszej infrastruktury hostingu współdzielonego OVHcloud.
+> W przeciwnym razie przeprowadź ręcznie zmianę u dostawcy zarządzającego aktywną strefą DNS Twojej domeny. Zapoznaj się z dokumentacją [tutaj](/pages/web/hosting/clusters_and_shared_hosting_IP) zawierającą listę adresów IP naszej infrastruktury hostingu współdzielonego OVHcloud.
 >
 > W każdym przypadku, aby modyfikacja stała się w pełni skuteczna i widoczna w Internecie, konieczny będzie okres propagacji od **4 do 24 godzin**.
 >

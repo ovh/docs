@@ -1,9 +1,6 @@
 ---
 title: Installer Flask sur votre hébergement web POWER
-slug: python-installer-flask
 excerpt: Découvrez comment installer Flask sur votre hébergement web POWER
-section: Python
-order: 2
 updated: 2021-01-05
 ---
 
@@ -40,7 +37,7 @@ Vous avez souscrit à un hébergement web POWER Python et vous souhaitez y dépl
 - Disposer de l'offre d'hébergement web POWER [Python](https://labs.ovh.com/managed-python).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
-Si vous n'êtes pas encore familier avec l'utilisation de votre hébergement web POWER, nous vous conseillons de consulter notre guide « [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) » avant de poursuivre la lecture de ce guide.
+Si vous n'êtes pas encore familier avec l'utilisation de votre hébergement web POWER, nous vous conseillons de consulter notre guide « [Premiers pas avec un hébergement web POWER](/pages/labs/web-power/getting-started) » avant de poursuivre la lecture de ce guide.
 
 ## En pratique
 
@@ -54,11 +51,11 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 > [!primary]
 >
-> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration)
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](/pages/labs/web-power/getting-started#api-get-active-configuration)
 
 Pour utiliser les frameworks [Python WSGI](https://www.fullstackpython.com/wsgi-servers.html), le plus simple est d'utiliser [virtualenv](https://pypi.org/project/virtualenv/). 
 
-[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER et activez `virtualenv` :
+[Accédez via SSH](/pages/labs/web-power/getting-started#ssh) à votre hébergement web POWER et activez `virtualenv` :
 
 ```sh
 cd www
@@ -92,7 +89,7 @@ def hello_world():
     return 'Hello, World!'
 ```
 
-[Redémarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre projet Flask sera en ligne.
+[Redémarrez votre instance](/pages/labs/web-power/getting-started#restart), votre projet Flask sera en ligne.
 
 
 ![Flask](images/python-install-flask-01.png){.thumbnail}

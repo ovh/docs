@@ -1,9 +1,6 @@
 ---
 title: Was tun, wenn eine “Index of“-Seite angezeigt wird?
 excerpt: Erfahren Sie hier, wie Sie Ihre Website wieder online bringen, wenn eine “Index of“-Seite angezeigt wird
-slug: diagnose-index-of
-section: Diagnose
-order: 07
 updated: 2023-05-04
 ---
 
@@ -40,7 +37,7 @@ Eine **Index of**-Seite erscheint in mindestens einem der folgenden Fälle:
 
 ### Den Ursprung der "Index of"-Seite verstehen
 
-Über die `Multisite`-Konfiguration Ihres Hostings wird Ihr Domainname mit einem Zielverzeichnis im [FTP-Speicherplatz](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) Ihres Webhostings verknüpft. Dies geschieht über den Tab [Multisite](/pages/web/hosting/multisites_configure_multisite) Ihres Webhostings in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+Über die `Multisite`-Konfiguration Ihres Hostings wird Ihr Domainname mit einem Zielverzeichnis im [FTP-Speicherplatz](/pages/web/hosting/ftp_connection) Ihres Webhostings verknüpft. Dies geschieht über den Tab [Multisite](/pages/web/hosting/multisites_configure_multisite) Ihres Webhostings in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 Die Seite "**Index of**" ist ein Anzeichen dafür, dass Ihr Verzeichnis keine Indexdatei, also **index.php** oder **index.html** enthält. Eine solche Datei repräsentiert die Startseite bzw. den Einstiegspunkt Ihrer Website. Der Name dieser Datei ist standardisiert.
 
@@ -48,13 +45,13 @@ Ihr Domainname muss daher im Bereich `Multisite`{.action} Ihres Webhostings mit 
 
 > [!primary]
 >
-> Wenn Sie Ihren Domainnamen temporär mit einem `Wurzelverzeichnis` verknüpfen möchten, das keine **index.php** oder **index.html** Datei enthält, können Sie verhindern, dass die Auflistung von Ordnern auf Ihrer Website angezeigt wird, indem Sie [diesem Tutorial](https://docs.ovh.com/de/hosting/webhosting_welche_anderen_operationen_sind_mit_htaccess-dateien_moglich/#verzeichnis-browsing-verhindern) folgen. Sie können auch den Zugang zu Ihren Ordnern [mit einem Passwort schützen](https://docs.ovh.com/de/hosting/hosting-htaccess-authentifizierung/).
+> Wenn Sie Ihren Domainnamen temporär mit einem `Wurzelverzeichnis` verknüpfen möchten, das keine **index.php** oder **index.html** Datei enthält, können Sie verhindern, dass die Auflistung von Ordnern auf Ihrer Website angezeigt wird, indem Sie [diesem Tutorial](/pages/web/hosting/htaccess_what_else_can_you_do#verzeichnis-browsing-verhindern) folgen. Sie können auch den Zugang zu Ihren Ordnern [mit einem Passwort schützen](/pages/web/hosting/htaccess_protect_directory_by_password).
 >
 > Wir empfehlen Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, falls Sie Schwierigkeiten haben, diese Konfiguration einzurichten. Unsere Support-Teams sind nicht in der Lage, Sie bei Änderungen an der internen Programmierung Ihrer Webseite zu unterstützen.
 
 ### Die häufigste Ursache einer "Index of"-Seite beheben
 
-Sie haben die Dateien Ihrer Website **mydomain.ovh** per [FTP](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) in den `www`-Ordner Ihres OVHcloud Webhostings importiert. Ihr Domainname ist jedoch nicht mit diesem Ordner in der Spalte `Wurzelverzeichnis` Ihrer `Multisite`-Konfiguration verknüpft.
+Sie haben die Dateien Ihrer Website **mydomain.ovh** per [FTP](/pages/web/hosting/ftp_connection) in den `www`-Ordner Ihres OVHcloud Webhostings importiert. Ihr Domainname ist jedoch nicht mit diesem Ordner in der Spalte `Wurzelverzeichnis` Ihrer `Multisite`-Konfiguration verknüpft.
 
 ![index_multisite](images/index_of_multisite.png){.thumbnail}
 
@@ -72,7 +69,7 @@ Führen Sie im neuen Fenster die folgenden Aktionen aus:
 
 > [!primary]
 >
-> Den `www`-Ordner als `Wurzelverzeichnis` zu verwenden ist nicht zwingend. Sie können Ihre Webseite auch in einem anderen Ordner innerhalb Ihres [FTP-Speicherplatzes](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) installieren.
+> Den `www`-Ordner als `Wurzelverzeichnis` zu verwenden ist nicht zwingend. Sie können Ihre Webseite auch in einem anderen Ordner innerhalb Ihres [FTP-Speicherplatzes](/pages/web/hosting/ftp_connection) installieren.
 >
 
 Klicken Sie anschließend auf `Bestätigen`{.action}.
@@ -89,11 +86,11 @@ Stellen Sie außerdem sicher, dass eine Datei namens **index.php** oder **index.
 
 ## Weiterführende Informationen <a name=“gofurther“></a>
 
-[Die häufigsten Fehler bei 1-Klick-Modulen beheben](https://docs.ovh.com/de/hosting/fehler-bei-1-klick-modulen/)
+[Die häufigsten Fehler bei 1-Klick-Modulen beheben](/pages/web/hosting/diagnostic_errors_module1clic)
 
-[Fehler “Seite nicht installiert” beheben](https://docs.ovh.com/de/hosting/webhosting_fehler_-_webseite_ist_nicht_installiert/)
+[Fehler “Seite nicht installiert” beheben](/pages/web/hosting/multisites_website_not_installed)
 
-[Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/)
+[Mehrere Websites auf einem Webhosting einrichten](/pages/web/hosting/multisites_configure_multisite)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

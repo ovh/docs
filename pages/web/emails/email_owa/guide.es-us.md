@@ -1,9 +1,6 @@
 ---
 title: 'Utilizar una dirección de correo desde Outlook en la Web'
-slug: uso-outlook-en-la-web
 excerpt: 'Cómo utilizar una dirección de correo electrónico desde el webmail Outlook en la Web'
-section: 'Primeros pasos'
-order: 04
 updated: 2021-06-25
 ---
 
@@ -122,7 +119,7 @@ Rellene la información solicitada según la acción que quiere que lleve a cabo
 
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
-Para obtener instrucciones más detalladas sobre la creación de reglas de la bandeja de entrada, consulte nuestra guía: [Crear reglas de la bandeja de entrada en OWA](../crear-reglas-de-bandeja-de-entrada-en-owa/).
+Para obtener instrucciones más detalladas sobre la creación de reglas de la bandeja de entrada, consulte nuestra guía: [Crear reglas de la bandeja de entrada en OWA](/products/email-owa-creating-inbox-rules).
 
 #### Bloquear un remitente
 
@@ -186,7 +183,7 @@ Rellene la información solicitada según la acción que quiere que se lleve a c
 
 ![useowa](images/owa_exchange_step21.png){.thumbnail}
 
-Para obtener instrucciones más detalladas sobre la creación de respuestas automáticas, consulte nuestra guía: [Crear respuestas automáticas en OWA](../exchange_2016_crear_un_contestador_con_el_webmail_owa/).
+Para obtener instrucciones más detalladas sobre la creación de respuestas automáticas, consulte nuestra guía: [Crear respuestas automáticas en OWA](/us/es/emails/exchange_2016_crear_un_contestador_con_el_webmail_owa/).
 
 ### Añadir una firma
 
@@ -200,7 +197,7 @@ En la barra de la izquierda de la página nueva, haga clic en `Firma de correo e
 
 Introduzca su firma electrónica en el cuadro de edición. Puede especificar si quiere incluir la firma por defecto solo en los correos nuevos o también en respuestas o correos reenviados. Una vez haya terminado, haga clic en `Guardar`{.action} para confirmar.
 
-Para obtener instrucciones sobre la creación de firmas automáticas mediante el uso de plantillas para todos los dominios, consulte nuestra guía: [Creación de firmas automáticas](../exchange_20132016_firma_automatica_disclaimer).
+Para obtener instrucciones sobre la creación de firmas automáticas mediante el uso de plantillas para todos los dominios, consulte nuestra guía: [Creación de firmas automáticas](/us/es/emails/exchange_20132016_firma_automatica_disclaimer).
 
 ### Acceder a la sección de opciones
 
@@ -221,12 +218,12 @@ No obstante, la desactivación de estas cookies puede afectar a la estabilidad d
 
 ## Más información
 
-[Crear respuestas automáticas en OWA](../exchange_2016_crear_un_contestador_con_el_webmail_owa/)
+[Crear respuestas automáticas en OWA](/us/es/emails/exchange_2016_crear_un_contestador_con_el_webmail_owa/)
 
-[Compartir carpetas en OWA](../exchange_2016_compartir_una_carpeta_con_el_webmail_owa/)
+[Compartir carpetas en OWA](/us/es/emails/exchange_2016_compartir_una_carpeta_con_el_webmail_owa/)
 
-[Compartir calendarios en OWA](../exchange_2016_compartir_un_calendario_con_el_webmail_owa/)
+[Compartir calendarios en OWA](/us/es/emails/exchange_2016_compartir_un_calendario_con_el_webmail_owa/)
 
-[Crear grupos de contactos](../exchange_20132016_uso_de_los_grupos_listas_de_correo/)
+[Crear grupos de contactos](/us/es/emails/exchange_20132016_uso_de_los_grupos_listas_de_correo/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
