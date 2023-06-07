@@ -4,10 +4,10 @@ slug: multisites-configurer-un-multisite-sur-mon-hebergement-web
 excerpt: "Découvrez comment héberger différents sites Internet sur votre offre d'hébergement web"
 section: 'Premiers pas'
 order: 03
-updated: 2022-11-04
+updated: 2023-06-07
 ---
 
-**Dernière mise à jour le 22/08/2022**
+**Dernière mise à jour le 07/06/2023**
 
 ## Objectif
 
