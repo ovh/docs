@@ -30,7 +30,7 @@ Avant de poursuivre et si le blocage concerne une adresse e-mail de type MXplan,
 
 ### Étape 1 : pourquoi votre adresse e-mail est bloquée pour SPAM ? <a name="step1"></a>
 
-Lorsqu'une activité suspecte est détectée au niveau de l'envoi des e-mails, l'adresse concernée est automatiquement bloquée. Dans cette situation vous ne pouvez plus envoyer d'e-mail depuis cette adresse e-mail.
+Lorsqu'une activité suspecte est détectée au niveau de l'envoi des e-mails, l'adresse concernée est automatiquement bloquée. Dans cette situation vous ne pouvez plus envoyer d'e-mails depuis cette adresse e-mail.
 
 Tout d'abord, assurez-vous auprès du ou des utilisateurs de l'adresse e-mail bloquée qu'ils ne soient pas directement à l'origine du blocage, suite à une utilisation inhabituelle (exemple: envois massif d'e-mail). Si c'est le cas, il est nécessaire de corriger cela avant de débloquer l'adresse.
 
