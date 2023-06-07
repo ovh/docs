@@ -125,7 +125,7 @@ Ces en-têtes permettent de déterminer le cheminement et l'origine des e-mails 
 
 > [!primary]
 >
-> Une fois que votre ticket a été traité par le support client et que votre adresse e-mail a été débloqué, il est conseillé de modifier le mot de passe de l'adresse e-mail, en veillant à ce qu'il soit suffisamment fort. Vous pouvez utiliser [l'outil de création de mot de passe solide](https://www.cnil.fr/fr/generer-un-mot-de-passe-solide) de la CNIL.
+> Une fois que votre ticket a été traité par le support client et que votre adresse e-mail a été débloquée, modifiez le mot de passe de l'adresse e-mail, en veillant à ce qu'il soit suffisamment fort. Vous pouvez utiliser [l'outil de création de mot de passe solide](https://www.cnil.fr/fr/generer-un-mot-de-passe-solide) de la CNIL.
 
 
 ## Aller plus loin
