@@ -95,7 +95,8 @@ Notez tout d'abord la date d'envoi de l'e-mail d'OVHcloud indiquant la désactiv
 >
 > Nos robots de sécurité peuvent appliquer deux niveaux de désactivation sur votre hébergement web : 
 >
-> - une désactivation en appliquant un « **CHMOD 700** » à la racine FTP de votre hébergement web;
+> - une désactivation en appliquant un « **CHMOD 700** » à la racine FTP de votre hébergement web ;
+
 > - une désactivation en appliquant un « **CHMOD 000** » à la racine FTP de votre hébergement web.
 >
 > Dans le cas d'une désactivation par restriction d'accès FTP en « **CHMOD 000** », contactez obligatoirement nos [équipes support](https://www.ovhcloud.com/fr/support-levels/) pour faire le point sur la situation avant de poursuivre les étapes décrites dans ce guide. 
