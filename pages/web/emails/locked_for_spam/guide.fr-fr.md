@@ -11,7 +11,7 @@ updated: 2023-06-06
 
 ## Objectif
 
-Lorsque votre adresse e-mail est bloquée pour SPAM, cela signifie qu'une activité suspecte a été détectée au niveau de l'envoi des e-mails depuis cette adresse. Dans cette situation vous ne pouvez plus envoyer d'e-mail depuis cette adresse e-mail, il est donc nécessaire de comprendre pourquoi une activité suspecte a été détectée et comment l'éviter.
+Lorsque votre adresse e-mail est bloquée pour SPAM, cela signifie qu'une activité suspecte a été détectée au niveau de l'envoi des e-mails depuis cette adresse. Dans cette situation vous ne pouvez plus envoyer d'e-mail depuis cette adresse e-mail. Vous devrez comprendre pourquoi une activité suspecte a été détectée et réaliser des actions afin d'éviter que cela se reproduise.
 
 **Découvrez comment réagir lorsque votre adresse est bloquée pour spam.**
 
