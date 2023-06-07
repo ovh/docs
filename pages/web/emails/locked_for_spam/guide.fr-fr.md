@@ -34,7 +34,7 @@ Lorsqu'une activité suspecte est détectée au niveau de l'envoi des e-mails, l
 
 Tout d'abord, assurez-vous, auprès du (des) utilisateur(s) de l'adresse e-mail bloquée, qu'il(s) n'est (ne sont) pas directement à l'origine du blocage, suite à une utilisation inhabituelle de l'adresse e-mail (par exemple, suite à la réalisation d'envois massifs d'e-mails). Si c'est le cas, vous devez corriger la situation avant de débloquer l'adresse.
 
-Si l'activité suspecte détectée par l'anti-spam n'a pas été initiée par le (les) utilisateur(s) légitime(s) de l'adresse e-mail, prennez les mesures nécessaires ci-dessous:
+Si l'activité suspecte détectée par l'anti-spam n'a pas été initiée par le (les) utilisateur(s) légitime(s) de l'adresse e-mail, prenez les mesures nécessaires et détaillées ci-dessous :
 
 - Effectuez une analyse antivirus de chacun des postes utilisant l'adresse e-mail bloquée pour SPAM et appliquez un correctif si ces derniers sont infectés.
 
