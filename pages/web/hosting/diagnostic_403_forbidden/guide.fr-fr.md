@@ -108,7 +108,8 @@ Notez tout d'abord la date d'envoi de l'e-mail d'OVHcloud indiquant la désactiv
 
 Si votre hébergement a été fermé il y a moins de deux semaines et qu'il ne contient qu'un seul site web, restaurez votre espace de stockage FTP. S'il contient plusieurs sites web, restaurez uniquement le ou les dossiers contenant les fichiers illégitimes.
 
-Pour restaurer tout ou partie de votre espace de stockage FTP, consultez notre [guide](/pages/web/hosting/ftp_save_and_backup) sur le sujet.
+Pour restaurer tout ou partie de votre espace de stockage FTP, consultez [notre guide](/pages/web/hosting/ftp_save_and_backup) sur le sujet.
+
 
 > [!warning]
 >
