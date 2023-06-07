@@ -78,7 +78,7 @@ Sélectionnez l'offre e-mail concernée dans les onglets suivants:
 >>
 >> Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Webcloud`{.action}. Cliquez sur `Emails`{.action}, puis sélectionnez le nom de domaine concerné.
 >>
->> Dirigez-vous vers l'onglet `Emails`{.action} de votre plateforme. Si la colonne « Bloqué pour SPAM » mentionne « Oui », cliquez sur cette mention puis sur `Changer le mot de passe`{.action}. Votre adresse e-mail est maintenant débloquée, vous n'avez pas besoin de suivre l'étape 3.
+>> Dirigez-vous vers l'onglet `Emails`{.action} de votre plateforme. Si la colonne « Bloqué pour SPAM » mentionne « Oui », cliquez sur cette mention puis sur `Changer le mot de passe`{.action}. Votre adresse e-mail est maintenant débloquée, vous n'avez pas besoin de suivre l'[étape 3](#step3).
 >>
 >> ![spam](images/blocked-for-SPAM-01-04.png){.thumbnail}
 >>
