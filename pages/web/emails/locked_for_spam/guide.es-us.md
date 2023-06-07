@@ -4,7 +4,7 @@ slug: bloqueo-por-correo-no-deseado
 excerpt: 'Cómo proceder cuando su dirección ha sido bloqueada debido a correo no deseado'
 section: Diagnóstico
 order: 01
-updated: 2023-06-06
+updated: 2020-04-20
 ---
 
 **Última actualización: 16/03/2020**
