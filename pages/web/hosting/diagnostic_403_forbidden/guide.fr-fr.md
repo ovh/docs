@@ -114,7 +114,8 @@ Si votre hébergement a été fermé il y a plus de deux semaines, contactez un 
 
 > [!success]
 >
-> Si vous souhaitez plus de détails oncernant les [étapes 2 et 3](#step-2) précédentes, consultez notre tutoriel sur [les actions à réaliser en cas de piratage de votre site web](/pages/web/hosting/cms_what_to_do_if_your_site_is_hacked).
+> Si vous souhaitez plus de détails concernant les [étapes 2 et 3](#step-2) précédentes, consultez notre tutoriel sur [les actions à réaliser en cas de piratage de votre site web](/pages/web/hosting/cms_what_to_do_if_your_site_is_hacked).
+
 >
 
 ### Étape 4 : réactiver votre hébergement web <a name="reactivate-web-hosting"></a>
