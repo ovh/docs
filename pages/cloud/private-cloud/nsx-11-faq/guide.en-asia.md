@@ -34,7 +34,7 @@ It is not possible by default. The Tier-0 gateways are each hosted in a differen
 
 ### Can I configure an active-active Tier-0 Gateway in order to have a double bandwidth (10+10=20Gb/s guarantee and 25+25Gb/s "theorical")?
 
-No, it is ot possible by default, the configuration is managed by OVHcloud and is done in active/passive mode with a VIP (10 Gbp/s Guaranted Bandwith).
+No, it is not possible by default, the configuration is managed by OVHcloud and is done in active/passive mode with a VIP (10 Gbp/s guaranted bandwidth).
 
 <a name="t0commandline"></a>
 
@@ -52,7 +52,7 @@ No, Edges are managed by OVHCloud. Customers cannot modify them or add more.
 
 ### What is the maximum number of interfaces (connected segments) on a Tier-1 Gateway?
 
-This information can be found in NSX ### Inventory ### Capacity.
+This information can be found in NSX > Inventory > Capacity.
 
 Regarding the Edges, we refer to the Gateways and the Tier-0 and Tier-1. Tier-0 is already deployed and uses 3 public IPs to route between the active/backup Gateways and uses the concept of a VIP that is in front of the 2 internal public IPs. This is used for failover and redundancy.
 
@@ -80,11 +80,11 @@ IP address blocks are PCC-dependent, not vDC-dependent. Therefore it is possible
 
 ### Is the Internet output configurable? In other words, can I deploy the interface?
 
-It is not possible to manage the Internet output in NSX as the Edge is managed by OVHcloud, but you can configure the network on your VM (vSHPERE).
+It is not possible to manage the Internet output in NSX as the Edge is managed by OVHcloud, but you can configure the network on your VM (vSPHERE).
 
 <a name="vrackaccess"></a>
 
-### Will the compute cluster have access to vRack ? Or will the vRACK be connected only to Edge Node ?
+### Will the compute cluster have access to vRack ? Or will the vRack be connected only to Edge Node ?
 
 The NSX cluster is fully compatible with vRack. You can add the NSX service in your PCC vRack. Find more information about vRack on [this page](/pages/cloud/private-cloud/vrack_and_hosted_private_cloud).
 
