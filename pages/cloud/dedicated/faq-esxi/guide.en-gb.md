@@ -1,9 +1,6 @@
 ---
 title: "ESXi Dedicated Servers - FAQ"
-slug: esxi-faq
 excerpt: "Find the most frequently asked questions about the wave of attacks targeting ESXi servers"
-section: 'Security'
-order: 4
 updated: 2023-02-10
 ---
 
@@ -28,7 +25,7 @@ Enter your IP or server name in a browser to determine if a ransom message is di
 
 ### I am a victim of ransomware, how to recover my data?
 
-If you want to attempt to recover the data on your server, you can rely on the steps in the following documentation: [Enable and use rescue mode - Mounting a datastore](https://docs.ovh.com/gb/en/dedicated/ovh-rescue/#mounting-a-datastore).
+If you want to attempt to recover the data on your server, you can rely on the steps in the following documentation: [Enable and use rescue mode - Mounting a datastore](/pages/cloud/dedicated/rescue_mode#mounting-a-datastore).
 However, we don't have all the devices we need to recover all of your data.
 
 The US National Cybersecurity and Infrastructure Security Agency ([CISA](https://www.cisa.gov/uscert/ncas/current-activity/2023/02/07/cisa-releases-esxiargs-ransomware-recovery-script){.external}) also made available [a tool](https://github.com/cisagov/ESXiArgs-Recover) to retrieve data from an ESXi server targeted by the ESXiArgs ransomware.<br>
@@ -38,7 +35,7 @@ In case of difficulties, we recommend that you contact a [specialist provider](h
 
 ### Does OVHcloud have a backup to restore my data?
 
-The Dedicated Server offering is optionally supported by [Backup Storage](https://www.ovhcloud.com/en-gb/bare-metal/backup-storage/). However, the backup is not automatic. More details on how this solution works can be found in our [Use Backup Storage on a Dedicated Server](https://docs.ovh.com/gb/en/dedicated/services-backup-storage/) guide.
+The Dedicated Server offering is optionally supported by [Backup Storage](https://www.ovhcloud.com/en-gb/bare-metal/backup-storage/). However, the backup is not automatic. More details on how this solution works can be found in our [Use Backup Storage on a Dedicated Server](/pages/cloud/dedicated/services_backup_storage) guide.
 
 Our dedicated servers are also compatible with our [different backup solutions](https://www.ovhcloud.com/en-gb/storage-solutions/).
 
@@ -50,10 +47,10 @@ When you order your dedicated server, no security protocols are implemented nati
 
 ### How do I reinstall and secure my dedicated ESXi server?
 
-1. Secure access to your dedicated server through [Network Firewall](https://docs.ovh.com/gb/en/dedicated/firewall-network/) or your own firewall system.
-2. Install the VMware ESXi 7.0 U3c version available [via your dedicated server administration interface](https://docs.ovh.com/gb/en/dedicated/getting-started-dedicated-server/#installing-or-reinstalling-your-dedicated-server).
+1. Secure access to your dedicated server through [Network Firewall](/pages/cloud/dedicated/firewall_network) or your own firewall system.
+2. Install the VMware ESXi 7.0 U3c version available [via your dedicated server administration interface](/pages/cloud/dedicated/getting-started-with-dedicated-server#installing-or-reinstalling-your-dedicated-server).
 3. The inability to connect after installing ESXi 7 comes from VMWare's security system. There are no blocking rules in your firewall. It will not be possible to reset the administrator password on VMware.
-4. [Secure your dedicated server](https://docs.ovh.com/gb/en/dedicated/securing-a-dedicated-server/).
+4. [Secure your dedicated server](/pages/cloud/dedicated/securing-a-dedicated-server).
 
 Safety best practices include:
 

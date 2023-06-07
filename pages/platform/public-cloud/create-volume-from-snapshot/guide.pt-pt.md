@@ -1,9 +1,6 @@
 ---
 title: Criar um volume a partir de um backup
-slug: create-volume-from-backup
 excerpt: Saiba como criar discos adicionais a partir de um backup de um disco suplementar
-section: 'Armazenamento'
-order: 4
 updated: 2021-04-06
 ---
 
@@ -68,7 +65,7 @@ O processo de conexão do disco à sua instância vai então começar e pode lev
 Deve evitar a navegação fora do separador em curso durante a conexão do disco. Isto pode interromper o processo.
 >
 
-Uma vez efetuada a associação, pode seguir os passos indicados [em Linux](../criar_e_configurar_um_disco_suplementar_numa_instancia/#utilizando-o-linux) ou [em Windows](../criar_e_configurar_um_disco_suplementar_numa_instancia/#utilizando-o-windows).
+Uma vez efetuada a associação, pode seguir os passos indicados [em Linux](../criar_e_configurar_um_disco_suplementar_numa_instancia/#utilizando-o-linux) ou [em Windows](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#utilizando-o-windows).
 
 ## Saiba mais
 

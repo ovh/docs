@@ -1,9 +1,6 @@
 ---
 title: 'Creating contact groups'
-slug: exchange_20132016_how_to_use_the_groups_feature_mailing_lists
 excerpt: 'Find out how to manage mailing lists in Exchange'
-section: 'Exchange account features'
-order: 02
 updated: 2020-02-26
 ---
 
@@ -64,7 +61,7 @@ Your newly created group will be operational within a few minutes. From the grou
 
 ![contactgroups](images/exchange-groups-step4.png){.thumbnail}
 
-Additionally, the menu item `Manage delegations`{.action} will be displayed. With this option you will be able to delegate access in the same way as for an Exchange account. Please find the details in [this guide](../exchange_2013_how_to_grant_full_access_permissions_for_an_account).
+Additionally, the menu item `Manage delegations`{.action} will be displayed. With this option you will be able to delegate access in the same way as for an Exchange account. Please find the details in [this guide](/pages/web/microsoft-collaborative-solutions/feature_delegation).
 
 ![contactgroups](images/exchange-groups-step5.png){.thumbnail}
 
@@ -83,10 +80,10 @@ You can now test your mailing list via [OVHcloud webmail](https://www.ovh.com/ca
 
 ## Go further
 
-[Delegating permissions on an Exchange account](../exchange_2013_how_to_grant_full_access_permissions_for_an_account)
+[Delegating permissions on an Exchange account](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Using the Outlook Web App with an Exchange account](../exchange_2016_outlook_web_app_user_guide)
+[Using the Outlook Web App with an Exchange account](/ca/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide)
 
-[Sharing calendars in OWA](../exchange_2016_how_to_share_calendars_via_owa)
+[Sharing calendars in OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Join our community of users on <https://community.ovh.com/en/>.

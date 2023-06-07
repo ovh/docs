@@ -1,11 +1,8 @@
 ---
 title: MongoDB - Informations sur la migration des disques distants (EN)
 excerpt: Everything you need to know about the remote disk migration
-slug: mongodb/remote-disk-migration
-section: MongoDB - Guides
-order: 090
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/remote-disk-migration/'
+    canonical: '/pages/platform/databases/mongodb_09_remote_disk_migration'
 updated: 2023-02-09
 ---
 

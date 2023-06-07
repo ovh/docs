@@ -1,9 +1,6 @@
 ---
 title:  Déplacer une Additional IP
 excerpt: "Découvrez comment déplacer une Additional IP depuis l'espace client ou via les API OVHcloud"
-slug: ip-fo-move
-section: 'Réseau & IP'
-order: 7
 updated: 2022-12-20
 ---
 
@@ -42,7 +39,7 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 
 > [!warning]
 > Si l'adresse Additional IP, ou une des adresses IP du bloc, a une MAC virtuelle affectée, le serveur cible doit supporter la fonctionnalité des MAC virtuelles.
-> Consultez [ce guide](https://docs.ovh.com/fr/dedicated/network-support-virtual-mac/) afin de le déterminer.
+> Consultez [ce guide](/pages/cloud/dedicated/network_support_virtual_mac) afin de le déterminer.
 >
 > Dans le cas contraire, les MAC virtuelles doivent être supprimées des Additional IP avant le déplacement.
 

@@ -1,9 +1,6 @@
 ---
 title: Installare Composer su un hosting Web
-slug: installare-di-comporre-sugli-hosting-condivisi
 excerpt: Scopri come installare e fare i primi passi su Composer.
-section: PHP
-order: 02
 updated: 2023-02-24
 ---
 
@@ -33,7 +30,7 @@ updated: 2023-02-24
 
 ## Procedura
 
-Accedi in SSH al tuo hosting condiviso utilizzando la nostra guida su [l'utilizzo dell'SSH con il tuo hosting Web OVHcloud](https://docs.ovh.com/it/hosting/hosting_condiviso_il_protocollo_ssh/).
+Accedi in SSH al tuo hosting condiviso utilizzando la nostra guida su [l'utilizzo dell'SSH con il tuo hosting Web OVHcloud](/pages/web/hosting/ssh_on_webhosting).
 
 Verifica di utilizzare una versione di PHP compatibile con il tuo ordine:
 

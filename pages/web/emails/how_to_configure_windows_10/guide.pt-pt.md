@@ -1,9 +1,6 @@
 ---
 title: 'Configurar um endereço de e-mail no Correio para Windows 10'
-slug: mail-configuration-windows-10
 excerpt: "Saiba como configurar um endereço de e-mail MX Plan sobre a aplicação Correio para Windows"
-section: 'Configuração num computador'
-order: 06
 updated: 2018-04-04
 ---
 
@@ -93,8 +90,8 @@ A OVHcloud oferece uma aplicação web que permite aceder ao seu endereço de e-
  
 ## Quer saber mais?
 
-[Configurar uma conta E-mail Pro na aplicação Correio para Windows](https://docs.ovh.com/pt/emails-pro/mail-configuration-windows-10/)
+[Configurar uma conta E-mail Pro na aplicação Correio para Windows](/pages/web/emails-pro/how_to_configure_windows_10)
 
-[Configurar uma conta Exchange na aplicação Correio para Windows](https://docs.ovh.com/pt/microsoft-collaborative-solutions/mail-configuration-windows-10/)
+[Configurar uma conta Exchange na aplicação Correio para Windows](/pages/web/microsoft-collaborative-solutions/how_to_configure_windows_10)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

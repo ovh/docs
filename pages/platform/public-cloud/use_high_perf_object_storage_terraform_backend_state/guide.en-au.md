@@ -1,9 +1,6 @@
 ---
 title: 'Using OVHcloud High Performance (S3) Object Storage as Terraform Backend to store your Terraform state'
-slug: use_high_perf_object_storage_terraform_backend_state
 excerpt: 'Find out how to use an OVHcloud High Performance (S3) Object Storage as a Terraform Backend to store your Terraform state'
-section: Tutorials
-order: 04
 updated: 2022-07-12
 ---
 
@@ -84,7 +81,7 @@ In order to do that you need to configure a `backend` in your Terraform HCL conf
 
 ### Creating a High Performance Object Storage container/bucket
 
-First, you need to have a High Performance Object Storage container. If you don't already have one, you can follow the [Creating a High Performance Object Storage container](https://docs.ovh.com/au/en/storage/object-storage/s3/getting-started-with-object-storage/) tutorial.
+First, you need to have a High Performance Object Storage container. If you don't already have one, you can follow the [Creating a High Performance Object Storage container](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) tutorial.
 
 For this guide, our Object Storage container is named `terraform-state-hp`, its solution is `High Performance` and its region is `GRA`.
 

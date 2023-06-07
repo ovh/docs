@@ -1,9 +1,6 @@
 ---
 title: Verwendung von Ressourcen-Accounts
 excerpt: In dieser Hilfe wird die Verwendung der Ressourcen-Accounts Ihres Exchange Angebots beschrieben
-slug: exchange_20132016_verwendung_der_ressourcen-accounts
-section: Exchange Account-Funktionen
-order: 05
 updated: 2020-06-05
 ---
 
@@ -51,7 +48,7 @@ Klicken Sie auf `Weiter`{.action}, um zur Zusammenfassung zu gelangen, und best�
 
 ### Schritt 2: Ressourcen verwenden
 
-Ihre Ressourcen können in der Tabelle im Tab "Ressourcen" verwaltet werden. Klicken Sie auf `...`{.action} um eine Ressource zu ändern oder zu löschen. Hier erscheint auch die Option `Berechtigungen konfigurieren`{.action}. Mit dieser Option können Sie den Zugriff auf die gleiche Weise wie für einen Exchange Account delegieren. Die Details finden Sie [in dieser Anleitung](../exchange_2013_send_as_versand_als/).
+Ihre Ressourcen können in der Tabelle im Tab "Ressourcen" verwaltet werden. Klicken Sie auf `...`{.action} um eine Ressource zu ändern oder zu löschen. Hier erscheint auch die Option `Berechtigungen konfigurieren`{.action}. Mit dieser Option können Sie den Zugriff auf die gleiche Weise wie für einen Exchange Account delegieren. Die Details finden Sie [in dieser Anleitung](/pages/web/microsoft-collaborative-solutions/feature_delegation).
 
 ![Verwenden](images/exchange-resources-step3.png){.thumbnail}
 
@@ -59,7 +56,7 @@ Ihre Ressourcen können in der Tabelle im Tab "Ressourcen" verwaltet werden. Kli
 
 > [!primary]
 >
-Nutzen Sie auch unsere Anleitung zur [Kalenderfreigabe über OWA](../exchange_2016_einen_kalender_via_owa_webmail_freigeben/).
+Nutzen Sie auch unsere Anleitung zur [Kalenderfreigabe über OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing).
 >
 
 Verbinden Sie sich mit Ihrem Exchange Account über das [OVHcloud Webmail](https://www.ovh.de/mail/). Wechseln Sie zum "Kalender"-Interface, indem Sie in der oberen linken Ecke auf den "Launcher"-Button klicken und anschließend den `Kalender`{.action} auswählen.
@@ -126,10 +123,10 @@ Nach Erstellung des Events (indem Sie auf `Senden`{.action} im oberen Menü klic
 
 ## Weiterführende Informationen
 
-[Verwendung der Outlook Web App](../exchange_2016_verwendung_der_outlook_web_app/)
+[Verwendung der Outlook Web App](/de/microsoft-collaborative-solutions/exchange_2016_verwendung_der_outlook_web_app/)
 
-[Kalender in OWA freigeben](../exchange_2016_einen_kalender_via_owa_webmail_freigeben/)
+[Kalender in OWA freigeben](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Ordner in OWA freigeben](../exchange_2016_einen_ordner_via_owa_webmail_freigeben/)
+[Ordner in OWA freigeben](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

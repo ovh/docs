@@ -1,8 +1,5 @@
 ---
 title: Pushing logs with a forwarder - NXLog (Windows)
-slug: logs-data-platform-windows-nxlog
-order: 06
-section: Use cases
 updated: 2023-01-16
 ---
 

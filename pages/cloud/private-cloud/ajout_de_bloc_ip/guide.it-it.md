@@ -1,9 +1,6 @@
 ---
 title: Aggiungere un blocco IP
-slug: aggiunger-un-blocco-ip
 excerpt: Ordinare un blocco IP su un Private Cloud
-section: Funzionalità OVHcloud
-order: 01
 updated: 2022-04-06
 ---
 
@@ -46,7 +43,7 @@ Per la creazione del tuo blocco IP è necessario compilare diversi campi.
 
 > [!primary]
 >
-> Per conoscere gli indirizzi IP riservati al tuo blocco e il relativo utilizzo, consulta la nostra guida sul [plugin OVHcloud Network](../plugin-ovh-network/).
+> Per conoscere gli indirizzi IP riservati al tuo blocco e il relativo utilizzo, consulta la nostra guida sul [plugin OVHcloud Network](/pages/cloud/private-cloud/plugin_ovh_network).
 >
 
 - Paese del blocco IP:  importante in alcuni casi per il posizionamento dei tuoi servizi (un sito italiano avrà un SEO migliore in Italia se anche l’IP è italiano)

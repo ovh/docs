@@ -1,11 +1,8 @@
 ---
 title: Ligar-se à interface vSphere
 routes:
-    canonical: 'https://docs.ovh.com/pt/private-cloud/instalar_o_vsphere_client/'
+    canonical: '/pages/cloud/private-cloud/vsphere_interface_connexion'
 excerpt: Descubra as diferentes formas de se ligar ao vSphere
-slug: instalar_o_vsphere_client
-section: Introdução
-order: 2
 updated: 2020-11-18
 ---
 

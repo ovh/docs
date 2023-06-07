@@ -1,11 +1,8 @@
 ---
 title: AI Deploy - Tutorial - Deploy a Gradio app for sketch recognition
-slug: deploy/tuto-gradio-sketch-recognition
 excerpt: How to build and use a custom Docker image containing a Gradio application
-section: AI Deploy - Tutorials
-order: 05
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/'
+    canonical: '/pages/platform/ai/deploy_tuto_05_gradio_sketch_recognition'
 updated: 2023-04-04
 ---
 
@@ -32,10 +29,10 @@ Overview of the app:
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - An AI Deploy project created inside a [Public Cloud project](https://www.ovhcloud.com/de/public-cloud/) in your OVHcloud account.
-- A [user for AI Deploy](https://docs.ovh.com/de/publiccloud/ai/users/).
+- A [user for AI Deploy](/pages/platform/ai/gi_01_manage_users).
 - [Docker](https://www.docker.com/get-started) installed on your local computer.
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/).
-- You also should have followed the steps of the *Image Classification with MNIST dataset* notebook from the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-classification/tensorflow/weights-and-biases/notebook_Weights_and_Biases_MNIST.ipynb). You will be able to train and save your model. To launch this notebook and run it, please refer to this [documentation](https://docs.ovh.com/de/publiccloud/ai/notebooks/tuto-weights-and-biases/).
+- You also should have followed the steps of the *Image Classification with MNIST dataset* notebook from the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-classification/tensorflow/weights-and-biases/notebook_Weights_and_Biases_MNIST.ipynb). You will be able to train and save your model. To launch this notebook and run it, please refer to this [documentation](/pages/platform/ai/notebook_tuto_03_weight_biases).
 
 ## Instructions
 
@@ -90,7 +87,7 @@ Load the previously trained model for handwritten digits classification.
 
 > [!primary]
 >
-> Here you will use your trained model, then save it in an Object Storage container. Click [here](https://docs.ovh.com/de/publiccloud/ai/cli/data-cli/) to learn more about Object Storage.
+> Here you will use your trained model, then save it in an Object Storage container. Click [here](/pages/platform/ai/cli_16_commands_reference_data) to learn more about Object Storage.
 >
 
 ```python
@@ -189,7 +186,7 @@ docker build . -t gradio_app:latest
 
 > [!warning]
 >
-> The shared registry of AI Deploy should only be used for testing purposes. Please consider attaching your own Docker registry. More information about this can be found [here](https://docs.ovh.com/de/publiccloud/ai/training/add-private-registry/).
+> The shared registry of AI Deploy should only be used for testing purposes. Please consider attaching your own Docker registry. More information about this can be found [here](/pages/platform/ai/training_guide_05_howto_add_registry).
 >
 
 Find the address of your shared registry by launching this command:
@@ -245,8 +242,8 @@ If you want your **AI Deploy app** to be accessible without the need to authenti
 
 ## Go further
 
-- You can imagine deploying an AI model with an other tool: **Flask**. Refer to this [tutorial](https://docs.ovh.com/de/publiccloud/ai/deploy/tuto-flask-hugging-face-sentiment-analysis/).
-- Do you want to use **Streamlit** to create a audio classification app? [Here it is](https://docs.ovh.com/de/publiccloud/ai/deploy/tuto-streamlit-sounds-classification/).
+- You can imagine deploying an AI model with an other tool: **Flask**. Refer to this [tutorial](/pages/platform/ai/deploy_tuto_06_flask_hugging_face).
+- Do you want to use **Streamlit** to create a audio classification app? [Here it is](/pages/platform/ai/deploy_tuto_03_streamlit_sounds_classification).
 
 ## Feedback
 

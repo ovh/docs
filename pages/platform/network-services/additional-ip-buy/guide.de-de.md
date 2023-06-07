@@ -1,9 +1,6 @@
 ---
 title: Eine Additional IP erwerben
-slug: buy-additional-ip
 excerpt: "Erfahren Sie hier, wie Sie für Ihre Instanzen Additional IP-Adressen bestellen können"
-section: Additional IP
-order: 02
 updated: 2023-01-04
 ---
 
@@ -35,7 +32,7 @@ Diese Additional IPs können nur für Instanzen desselben Projekts migriert werd
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben mindestens eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte) in Ihrem Kunden-Account.
+- Sie haben mindestens eine [Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps) in Ihrem Kunden-Account.
 
 > [!warning]
 > Diese Funktion ist derzeit für Metal Instanzen nicht verfügbar.
@@ -88,10 +85,10 @@ Wählen Sie im letzten Schritt Ihre Instanz im Drop-down-Menü aus. Klicken Sie 
 
 Der Bestellschein wird automatisch geöffnet, damit Sie Ihre Bestellung abschließen können.
 
-Weitere Informationen finden Sie in unserer [Anleitung zur Verwaltung von Bestellungen](https://docs.ovh.com/de/billing/bestellungen-verwalten-ovh/).
+Weitere Informationen finden Sie in unserer [Anleitung zur Verwaltung von Bestellungen](/pages/account/billing/managing_ovh_orders).
 
 Sie finden den Bestellschein auch in Ihrem Kundencenter, wenn Sie im Bereich `Dashboard`{.action} auf `Meine Bestellungen`{.action} klicken.
 
-Im nächsten Schritt muss die IP-Adresse in Ihrem Betriebssystem konfiguriert werden. Lesen Sie dazu unsere [Anleitung zur IP-Konfiguration](https://docs.ovh.com/de/publiccloud/network-services/configure-additional-ip/).
+Im nächsten Schritt muss die IP-Adresse in Ihrem Betriebssystem konfiguriert werden. Lesen Sie dazu unsere [Anleitung zur IP-Konfiguration](/pages/platform/network-services/getting-started-04-configure-additional-ip-to-instance).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

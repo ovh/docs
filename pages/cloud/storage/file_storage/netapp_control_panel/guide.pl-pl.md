@@ -1,9 +1,6 @@
 ---
 title: "Enterprise File Storage - Zarządzanie w panelu klienta OVHcloud"
 excerpt: Dowiedz się, jak zarządzać usługą Enterprise File Storage w Panelu klienta OVHcloud
-slug: netapp/control-panel
-section: Enterprise File Storage
-order: 020
 updated: 2022-04-14
 ---
 
@@ -15,7 +12,7 @@ updated: 2022-04-14
 
 ## Wprowadzenie
 
-Usługi Enterprise File Storage mogą być zarządzane [za pośrednictwem API OVHcloud](https://docs.ovh.com/pl/storage/file-storage/netapp/quick-start/) lub w Panelu klienta OVHcloud.
+Usługi Enterprise File Storage mogą być zarządzane [za pośrednictwem API OVHcloud](/pages/cloud/storage/file_storage/netapp_quick_start) lub w Panelu klienta OVHcloud.
 
 **Dowiedz się, jak zarządzać wolumenami oraz migawkami do przechowywania plików firmowych w Panelu klienta.**
 
@@ -33,7 +30,7 @@ Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotoma
 W zakładce `Informacje ogólne`{.action} znajdują się informacje techniczne dotyczące Twojej usługi, ogólne informacje o abonamencie oraz skrót, w celu [utworzenia wolumenu](#create_volume).
 
 > [!primary]
-> Zapoznaj się ze stroną [Concepts](https://docs.ovh.com/pl/storage/file-storage/netapp/concepts/), aby uzyskać szczegółowe informacje na temat właściwości technicznych rozwiązania Enterprise File Storage.
+> Zapoznaj się ze stroną [Concepts](/pages/cloud/storage/file_storage/netapp_concepts), aby uzyskać szczegółowe informacje na temat właściwości technicznych rozwiązania Enterprise File Storage.
 >
 
 ### Zarządzanie wolumenami <a name="manage_volume"></a>
@@ -145,12 +142,12 @@ Jeśli nie jesteś zaznajomiony z korzystaniem z rozwiązania Enterprise File St
 
 ## Sprawdź również <a name="gofurther"></a>
 
-[Enterprise File Storage - API Quickstart](https://docs.ovh.com/pl/storage/file-storage/netapp/quick-start/)
+[Enterprise File Storage - API Quickstart](/pages/cloud/storage/file_storage/netapp_quick_start)
 
-[Enterprise File Storage - Zarządzanie wolumenami](https://docs.ovh.com/pl/storage/file-storage/netapp/volumes/)
+[Enterprise File Storage - Zarządzanie wolumenami](/pages/cloud/storage/file_storage/netapp_volumes)
 
-[Enterprise File Storage - Zarządzanie ACL wolumenu](https://docs.ovh.com/pl/storage/file-storage/netapp/volume-acl/)
+[Enterprise File Storage - Zarządzanie ACL wolumenu](/pages/cloud/storage/file_storage/netapp_volume_acl)
 
-[Enterprise File Storage - Zarządzanie snapshotami wolumenów](https://docs.ovh.com/pl/storage/file-storage/netapp/volume-snapshots/)
+[Enterprise File Storage - Zarządzanie snapshotami wolumenów](/pages/cloud/storage/file_storage/netapp_volume_snapshots)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

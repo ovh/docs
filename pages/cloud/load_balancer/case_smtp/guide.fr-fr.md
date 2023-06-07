@@ -1,8 +1,6 @@
 ---
 title: 'Configuration SMTP sur un service Load Balancer'
-slug: case-smtp
 excerpt: 'Cas pratique SMTP'
-section: "Cas d'usage"
 updated: 2018-12-28
 ---
 
@@ -50,7 +48,7 @@ Depuis l'API OVHcloud :
 > @api {GET} /ipLoadbalancing
 > 
 
-Pour plus d'informations sur les fonctionnalités de l'API, consultez la page « [Détails des fonctions API](../api-details/) ».
+Pour plus d'informations sur les fonctionnalités de l'API, consultez la page « [Détails des fonctions API](/pages/cloud/load_balancer/use_api_details) ».
 
 ### Ajouter une ferme de serveurs
 

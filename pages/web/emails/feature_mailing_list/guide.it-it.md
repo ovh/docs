@@ -1,9 +1,6 @@
 ---
 title: 'Gestire e utilizzare una mailing list'
-slug: gestire_e_utilizzare_una_mailing_list
 excerpt: 'Come gestire e utilizzare una mailing list'
-section: 'Funzionalità degli indirizzi email'
-order: 03
 updated: 2020-03-19
 ---
 

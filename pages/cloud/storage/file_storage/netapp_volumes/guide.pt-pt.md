@@ -1,9 +1,6 @@
 ---
 title: Enterprise File Storage - Gerir os seus volumes
-slug: netapp/volumes
 excerpt: Saiba como criar e gerir os seus volumes OVHcloud Enterprise File Storage através das API OVHcloud
-section: Enterprise File Storage
-order: 040
 updated: 2021-10-27
 ---
 
@@ -155,7 +152,7 @@ O comando de montagem será diferente, consoante o protocolo escolhido para o vo
 
 > [!primary]
 >
-> Para NFS, encontrará as instruções de montagem no guia [Monter o seu NAS através de NFS](https://docs.ovh.com/pt/storage/file-storage/nas/nfs/).
+> Para NFS, encontrará as instruções de montagem no guia [Monter o seu NAS através de NFS](/pages/cloud/storage/file_storage/nas_nfs).
 > Tenha em conta que o caminho de montagem recuperado substitui IP_NAS/NFS_PATH neste manual.
 >  
 
@@ -188,6 +185,6 @@ Substitua o `serviceName` pelo ID do seu serviço e `shareId` pelo ID do volume 
 
 ## Saiba mais
 
-[Primeiros passos com as API OVHcloud](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/)(EN)
+[Primeiros passos com as API OVHcloud](/pages/account/api/first-steps)(EN)
 
 Junte-se à nossa comunidade de utilizadores <https://community.ovh.com/en/>.

@@ -1,10 +1,7 @@
 ---
 title: Utiliser son fax physique avec l’offre Plug & Fax
-slug: utiliser-son-fax-physique-avec-l-offre-plug-and-fax
 excerpt: Découvrez comment configurer l’offre Plug & Fax pour utiliser un fax physique
 legacy_guide_number: '8355855'
-section: Premiers pas
-order: 2
 updated: 2021-03-11
 ---
 
@@ -73,7 +70,7 @@ Enfin, cliquez sur `Valider`{.action}.
 
 ![renvoi d'appels](images/renvoi_dappel.png){.thumbnail}
 
-Pour configurer les notifications par e-mail de votre ligne, reportez vous au guide [Configurer ma ligne Ecofax Pro](../utilisation_de_loffre_ecofax_pro_plug_and_fax/#options-de-notifications).
+Pour configurer les notifications par e-mail de votre ligne, reportez vous au guide [Configurer ma ligne Ecofax Pro](/fr/fax/utilisation_de_loffre_ecofax_pro_plug_and_fax/#options-de-notifications).
 
 #### Réception uniquement par e-mail ou Ecofax
 
@@ -88,7 +85,7 @@ Enfin, cliquez sur `Valider`{.action}.
 
 ![renvoi d'appels inconditionnel](images/renvoi_dappel2.png){.thumbnail}
 
-Pour configurer les notifications par e-mail de votre ligne, reportez vous au guide [Configurer ma ligne Ecofax Pro](../utilisation_de_loffre_ecofax_pro_plug_and_fax/#options-de-notifications).
+Pour configurer les notifications par e-mail de votre ligne, reportez vous au guide [Configurer ma ligne Ecofax Pro](/fr/fax/utilisation_de_loffre_ecofax_pro_plug_and_fax/#options-de-notifications).
 
 ### Configurer la présentation du numéro en appel sortant
 

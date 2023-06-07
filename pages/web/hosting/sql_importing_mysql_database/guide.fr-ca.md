@@ -1,9 +1,6 @@
 ---
 title: "Importer une sauvegarde dans la base de données d'un hébergement web"
-slug: mutualise-guide-importation-dune-base-de-donnees-mysql
 excerpt: 'Découvrez comment importer une sauvegarde dans la base de données de votre hébergement web OVHcloud'
-section: 'Bases de données'
-order: 04
 updated: 2018-09-25
 ---
 
@@ -140,7 +137,7 @@ Prenez soin de remplacer les informations génériques présentes dans ce script
 
 #### Étape 2 : télécharger le script et la sauvegarde sur l'espace de stockage
 
-Une fois le script d'import correctement créé, vous devez le télécharger ainsi que le fichier de sauvegarde que vous souhaitez importer sur l'espace de stockage de votre hébergement web. Pour cela, vous devrez vous connecter à ce dernier. Si vous ne savez pas comment faire, reportez-vous aux informations décrites dans l'étape 2 de la documentation intitulée « [Se connecter à l’espace de stockage](../mettre-mon-site-en-ligne/#2-se-connecter-a-lespace-de-stockage){.external} ».
+Une fois le script d'import correctement créé, vous devez le télécharger ainsi que le fichier de sauvegarde que vous souhaitez importer sur l'espace de stockage de votre hébergement web. Pour cela, vous devrez vous connecter à ce dernier. Si vous ne savez pas comment faire, reportez-vous aux informations décrites dans l'étape 2 de la documentation intitulée « [Se connecter à l’espace de stockage](/pages/web/hosting/hosting_how_to_get_my_website_online#2-se-connecter-a-lespace-de-stockage){.external} ».
 
 Afin de pouvoir mener à bien les étapes suivantes, téléchargez le script d'import et le fichier de sauvegarde dans le dossier « www ». **Nous vous invitons à être particulièrement attentif quant au nom du fichier du script d'import.** Assurez-vous de ne pas écraser un fichier déjà existant portant le même nom sur l'espace de stockage lorsque vous allez télécharger le script. Si un message d'avertissement de ce type apparaît, modifiez le nom du script nouvellement créé pour un autre, puis tentez de nouveau de le télécharger.
 

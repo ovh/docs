@@ -1,9 +1,6 @@
 ---
 title: Migrating a PCC to Hosted Private Cloud 
 excerpt: Find out how to manage all aspects of migrating a PCC infrastructure
-slug: sddc-migration
-section: Getting started
-order: 6
 updated: 2021-12-06
 ---
 
@@ -20,7 +17,7 @@ There are two aspects to migrating a PCC infrastructure:
 
 > [!primary]
 >
-> Should you choose to migrate an infrastructure to a new vDC instead, please follow [this dedicated guide](../vdc-migration).
+> Should you choose to migrate an infrastructure to a new vDC instead, please follow [this dedicated guide](/pages/cloud/private-cloud/service-migration-vdc).
 >
 
 ## Requirements
@@ -46,7 +43,7 @@ This guide will use the notions of a **source PCC** and a **destination Hosted P
 
 ##### **Hosted Private Cloud access**
 
-For connections to the VMware platform, you can choose to block access to vSphere by default. Please refer to our guide on the [vCenter access policy](../modify-vcenter-access-policy/) for details.
+For connections to the VMware platform, you can choose to block access to vSphere by default. Please refer to our guide on the [vCenter access policy](/gb/en/private-cloud/modify-vcenter-access-policy/) for details.
 
 If the access policy has been changed to "Restricted", you will need to apply the same connection IPs to the destination Hosted Private Cloud as to the source PCC.
 
@@ -54,18 +51,18 @@ If the access policy has been changed to "Restricted", you will need to apply th
 
 In the lifecycle of the source PCC, a list of users may have been created for business or organisational needs. You must therefore create them again on the destination Hosted Private Cloud and assign them the appropriate rights, depending on the configuration of the destination Hosted Private Cloud.
 
-To do this, please refer to our guides on [Changing user rights](../change-users-rights/), [Changing the User Password](../changing-user-password/) and [Associating an email with a vSphere user](../associate-email-with-vsphere-user/).
+To do this, please refer to our guides on [Changing user rights](../change-users-rights/), [Changing the User Password](../changing-user-password/) and [Associating an email with a vSphere user](/pages/cloud/private-cloud/vsphere_edit_user).
 
 ##### **Key Management Server (KMS)**
 
 If virtual machines are protected by encryption and this is a prerequisite for the destination Hosted Private Cloud, it will be necessary to recreate the encryption context on the destination Hosted Private Cloud.
-Please refer to our guide on [Enabling Virtual Machine Encryption](../vm-encrypt/) in order to enable KMS on the destination Hosted Private Cloud.
+Please refer to our guide on [Enabling Virtual Machine Encryption](/pages/cloud/private-cloud/vm_encrypt) in order to enable KMS on the destination Hosted Private Cloud.
 
 ##### **Certifications**
 
 For compliance reasons, [PCI DSS](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/pci-dss/) and [HDS](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/hds/) options may have been enabled on the source PCC.
 
-These options must therefore be reactivated on the destination Hosted Private Cloud. To do this, please refer to our [guide on activating them](../activate-pci-dss-option/).
+These options must therefore be reactivated on the destination Hosted Private Cloud. To do this, please refer to our [guide on activating them](/pages/cloud/private-cloud/activer_l_option_hds_hipaa_ou_pci_dss).
 
 #### Network
 
@@ -76,7 +73,7 @@ These options must therefore be reactivated on the destination Hosted Private Cl
 > VMnetworks located in the same region cannot be interconnected in a vRack.
 >
 
-As part of a migration process, you can link your PCC services within the same vRack. Please consult our guide to [Using Private Cloud within a vRack](../using-private-cloud-with-vrack/).
+As part of a migration process, you can link your PCC services within the same vRack. Please consult our guide to [Using Private Cloud within a vRack](/pages/cloud/private-cloud/using_private_cloud_in_vrack).
 
 ##### **Public network**
 
@@ -87,7 +84,7 @@ As part of a migration process, you can link your PCC services within the same v
 
 If the public IP addresses attached to the source PCC are required on the destination Hosted Private Cloud, it will be necessary to transfer them.
 
-Please consult our guide to [Migrate an IP block between two Hosted Private Cloud services](../add-ip-block/#migrate-an-ip-block-between-two-hosted-private-cloud-solutions).
+Please consult our guide to [Migrate an IP block between two Hosted Private Cloud services](/pages/cloud/private-cloud/ajout_de_bloc_ip#migrate-an-ip-block-between-two-hosted-private-cloud-solutions).
 
 The video below also shows how to migrate an IP block between two Hosted Private Cloud services.
 
@@ -99,7 +96,7 @@ The video below also shows how to migrate an IP block between two Hosted Private
 
 ##### **1.1 HA**
 
-The migration involves reconfiguring VMware High Availability (HA), including boot order and priority. Please consult our guide about [VMware HA configuration](../vmware-ha-high-availability/).
+The migration involves reconfiguring VMware High Availability (HA), including boot order and priority. Please consult our guide about [VMware HA configuration](/pages/cloud/private-cloud/vmware_ha_high_availability).
 
 Here is a checklist of aspect to take into account:
 
@@ -113,7 +110,7 @@ Here is a checklist of aspect to take into account:
 
 ##### **1.2 DRS**
 
-The migration involves reconfiguring the VMware Distributed Resource Scheduler (DRS) feature, in particular the affinity or anti-affinity rules for groups of hosts and VMs. Please consult our guide about [configuring VMware DRS](../vmware-drs-distributed-ressource-scheduler/).
+The migration involves reconfiguring the VMware Distributed Resource Scheduler (DRS) feature, in particular the affinity or anti-affinity rules for groups of hosts and VMs. Please consult our guide about [configuring VMware DRS](/pages/cloud/private-cloud/vmware_drs_distributed_ressource_scheduler_new).
 
 Here is a checklist of aspects to take into account:
 
@@ -152,11 +149,11 @@ Here is a checklist of aspects to take into account:
 
 ##### **1.5 vSAN**
 
-If vSAN was enabled on your source PCC, you will need to enable it again on the destination Hosted Private Cloud. Please refer to our guide on [Using VMware Hyperconvergence with vSAN](../vmware-vsan/).
+If vSAN was enabled on your source PCC, you will need to enable it again on the destination Hosted Private Cloud. Please refer to our guide on [Using VMware Hyperconvergence with vSAN](/pages/cloud/private-cloud/vmware_vsan).
 
 ##### **1.6 vSphere networking**
 
-Migration involves recreating the vRack VLAN-backed portgroups on the destination Hosted Private Cloud to ensure VM network consistency. If vRack VLANs are in use on the source PCC vRack can be used to stretch the L2 domain to the destination Hosted Private Cloud to allow for a more phased migration plan. For more information consult our guide about [Using Private Cloud within a vRack](../using-private-cloud-with-vrack/).
+Migration involves recreating the vRack VLAN-backed portgroups on the destination Hosted Private Cloud to ensure VM network consistency. If vRack VLANs are in use on the source PCC vRack can be used to stretch the L2 domain to the destination Hosted Private Cloud to allow for a more phased migration plan. For more information consult our guide about [Using Private Cloud within a vRack](/pages/cloud/private-cloud/using_private_cloud_in_vrack).
 
 Here is a checklist of aspects to take into account:
 
@@ -186,7 +183,7 @@ Here is a checklist of aspects to take into account:
 - List of VMs being backed up
 - Backup settings
 
-Please refer to our guide on [activating and using Veeam Managed Backup](../veeam-backup-as-a-service/).
+Please refer to our guide on [activating and using Veeam Managed Backup](/pages/cloud/private-cloud/veeam_backup_as_a_service).
 
 **Automation tips:** OVHcloud API provides VM backup information attached to each VM via:
 
@@ -256,10 +253,10 @@ The following elements are required:
 - SPLA licences (on source PCC and destination Hosted Private Cloud)
 - A Veeam licence
 - An IP address available on the source PCC and destination Hosted Private Cloud
-- A [Veeam Backup & Replication](../../storage/veeam-backup-replication/) virtual machine on the source PCC
-- [Authorising the Veeam Backup & Replication virtual machine to connect](../authorise-ip-addresses-vcenter/) to the source and destination vCenter
+- A [Veeam Backup & Replication](/pages/cloud/storage/backup/veeam_veeam_backup_replication) virtual machine on the source PCC
+- [Authorising the Veeam Backup & Replication virtual machine to connect](/pages/cloud/private-cloud/autoriser_des_ip_a_se_connecter_au_vcenter) to the source and destination vCenter
 
-Please refer to our guide on setting up [Veeam Backup & Replication](../../storage/veeam-backup-replication/).
+Please refer to our guide on setting up [Veeam Backup & Replication](/pages/cloud/storage/backup/veeam_veeam_backup_replication).
 
 The video below shows how to configure Hosted Private Cloud with the Veeam Backup & Replication solution.
 

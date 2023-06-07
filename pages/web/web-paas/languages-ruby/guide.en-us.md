@@ -1,8 +1,5 @@
 ---
 title: Ruby
-slug: languages-ruby
-section: Languages
-order: 4
 updated: 2022-06-02
 ---
 
@@ -69,7 +66,7 @@ variables:
 
 3\. Build your application with the build hook.
 
-Assuming you have your dependencies stored in the `Gemfile` at [your app root](../configuration-app), create a hook like the following:
+Assuming you have your dependencies stored in the `Gemfile` at [your app root](/pages/web/web-paas/configuration-app), create a hook like the following:
 
 ```yaml
 hooks:
@@ -296,7 +293,7 @@ web:
 ## Configuring services
 
 This example assumes there is a MySQL instance.
-To configure it, [create a service](../configuration-services) such as the following:
+To configure it, [create a service](/pages/web/web-paas/configuration-services) such as the following:
 
 ```yaml 
 location=".platform/services.yaml"
@@ -307,7 +304,7 @@ database:
 
 ## Connecting to services
 
-Once you have a service, link to it in your [app configuration](../configuration-app):
+Once you have a service, link to it in your [app configuration](/pages/web/web-paas/configuration-app):
 
 ```yaml 
 location=".platform.app.yaml"

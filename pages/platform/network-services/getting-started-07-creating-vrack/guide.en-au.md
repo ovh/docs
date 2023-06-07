@@ -1,9 +1,6 @@
 ---
 title: 'Configuring vRack for Public Cloud'
 excerpt: 'Find out how to set up vRack for your Public Cloud instances'
-slug: public-cloud-vrack
-section: Getting started
-order: 07
 updated: 2023-03-03
 ---
 
@@ -19,7 +16,7 @@ The OVHcloud [vRack](https://www.ovh.com.au/solutions/vrack/) is a private netwo
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
-- An [OpenStack user](https://docs.ovh.com/au/en/public-cloud/creation-and-deletion-of-openstack-user/) (optional)
+- An [OpenStack user](/pages/platform/public-cloud/create_and_delete_a_user) (optional)
 - Basic networking knowledge
 
 ## Interfaces
@@ -44,7 +41,7 @@ The [Horizon](https://horizon.cloud.ovh.net/auth/login/) interface (independent 
 
 This multifunctional, technical interface allows you to manage almost all OpenStack actions. It is one of the necessary interfaces if you need to manage more than two VLANS, add private network interfaces to your instances, manage custom images, etc.
 
-Please refer to [this guide](https://docs.ovh.com/au/en/public-cloud/horizon/) to familiarise yourself with Horizon.
+Please refer to [this guide](/pages/platform/public-cloud/introducing_horizon) to familiarise yourself with Horizon.
 
 > [!primary]
 > Horizon functions zone-specific, therefore you need to remember to choose your logical (geographic) work zone at the top left of your interface (GRA5, SBG3, BHS1, etc.).
@@ -60,7 +57,7 @@ You can simply access it from [our web page](https://ca.api.ovh.com/) but also u
 
 You may need to retrieve various information before using some API calls because a specific input is required.
 
-Please refer to [this guide](https://docs.ovh.com/au/en/api/first-steps-with-ovh-api/) to get started with the OVHcloud APIv6.
+Please refer to [this guide](/pages/account/api/first-steps) to get started with the OVHcloud APIv6.
 
 ### OpenStack API
 
@@ -74,8 +71,8 @@ With the OpenStack API, you can also easily automate this management through you
 
 To know more about the usage of the OpenStack API, please consult these guides:
 
-- [Preparing an environment for using the OpenStack API](https://docs.ovh.com/au/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Setting OpenStack environment variables](https://docs.ovh.com/au/en/public-cloud/set-openstack-environment-variables/)
+- [Preparing an environment for using the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Setting OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 You will then be able to use the APIs dedicated to OpenStack as needed:
 
@@ -96,7 +93,7 @@ You will then be able to use the APIs dedicated to OpenStack as needed:
 
 Terraform can also be used to manage OVHcloud infrastructures.
 
-For that you need to cherry-pick the correct terraform provider & resource. Find more information in our guide on [using Terraform with OVHcloud](https://docs.ovh.com/au/en/api/terraform-at-ovhcloud/).
+For that you need to cherry-pick the correct terraform provider & resource. Find more information in our guide on [using Terraform with OVHcloud](/pages/account/api/terraform-at-ovhcloud).
 
 ## Instructions
 
@@ -122,7 +119,7 @@ To continue the configuration of your vRack in the OVHcloud Control Panel, skip 
 
 #### With the OVHcloud APIv6
 
-To activate and manage a vRack using the OVHcloud APIv6, please refer to [this section](https://docs.ovh.com/au/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-1-activating-and-managing-a-vrack) of the corresponding guide.
+To activate and manage a vRack using the OVHcloud APIv6, please refer to [this section](/pages/platform/network-services/getting-started-08-creating-vrack-with-api#step-1-activating-and-managing-a-vrack) of the corresponding guide.
 
 ### Step 2: Creating a private network in the vRack
 
@@ -141,7 +138,7 @@ Using the OVHcloud APIv6, you can customise all settings: IP range (10.0.0.0/16 
 >
 > Unlike dedicated servers, there is no need to tag a VLAN directly on a Public Cloud instance.
 >
-> To learn more about this topic, please refer to the guide [Creating multiple vLANs in a vRack](https://docs.ovh.com/au/en/dedicated/multiple-vlans/)
+> To learn more about this topic, please refer to the guide [Creating multiple vLANs in a vRack](/pages/cloud/dedicated/creating-multiple-vlans-in-a-vrack)
 
 > [!warning]
 > vRack is managed at the OVHcloud infrastructure level, meaning you can only administrate it in the OVHcloud Control Panel and the OVHcloud APIv6.
@@ -169,7 +166,7 @@ In the **Private Network Name** field, set a name for your private network.
 
 **Create a Gateway and connect to the private network**
 
-Select this option if you intend to create instances with a private network only. For more information, please consult the following guides: [Creating a private network with Gateway](https://docs.ovh.com/au/en/publiccloud/network-services/creating-private-network-with-gateway/) and [Creating and connecting to your first Public Cloud instance](https://docs.ovh.com/au/en/public-cloud/public-cloud-first-steps/#step-3-creating-an-instance).
+Select this option if you intend to create instances with a private network only. For more information, please consult the following guides: [Creating a private network with Gateway](/pages/platform/network-services/getting-started-02-create-private-network-gateway) and [Creating and connecting to your first Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps#step-3-creating-an-instance).
 
 > [!warning]
 > If the option is greyed out, it means the region selected does not support it. For more information, please refer to our [regions availability](https://www.ovhcloud.com/en-au/public-cloud/regions-availability/) page. 
@@ -185,7 +182,7 @@ If you wish to set the VLAN ID number to 0, you will need to go through the [OVH
 
 Please note that if you have an existing private network with VLAN ID 0, this option will be ticked by default and greyed out.
 
-In case you need to be able to communicate with dedicated servers in this VLAN, please consult the guide [Creating multiple vLANs in a vRack](https://docs.ovh.com/au/en/dedicated/multiple-vlans/).
+In case you need to be able to communicate with dedicated servers in this VLAN, please consult the guide [Creating multiple vLANs in a vRack](/pages/cloud/dedicated/creating-multiple-vlans-in-a-vrack).
 
 **DHCP address distribution options**
 
@@ -199,7 +196,7 @@ Once done, click on `Create`{.action} to start the process.
 
 #### Creating a private network with the OVHcloud APIv6 <a name="vlansetup"></a>
 
-To create a private network using the OVHcloud APIv6, please refer to [this section](https://docs.ovh.com/au/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack) of the corresponding guide.
+To create a private network using the OVHcloud APIv6, please refer to [this section](/pages/platform/network-services/getting-started-08-creating-vrack-with-api#step-3-creating-a-vlan-in-the-vrack) of the corresponding guide.
 
 #### Creating a private network with the OpenStack CLI
 
@@ -248,7 +245,7 @@ There are two possible scenarios:
 
 ##### **In the OVHcloud Control Panel**
 
-If you need assistance, follow this guide first: [Creating an instance in the OVHcloud Control Panel](https://docs.ovh.com/au/en/public-cloud/public-cloud-first-steps/#create-instance). When creating an instance, you can specify, in Step 4, a private network to integrate your instance into. Choose your previously created vRack from the drop-down menu.
+If you need assistance, follow this guide first: [Creating an instance in the OVHcloud Control Panel](/pages/platform/public-cloud/public-cloud-first-steps#create-instance). When creating an instance, you can specify, in Step 4, a private network to integrate your instance into. Choose your previously created vRack from the drop-down menu.
 
 ![attach new instance](images/network-selection.png){.thumbnail}
 
@@ -259,7 +256,7 @@ If you need assistance, follow this guide first: [Creating an instance in the OV
 
 ##### **With the OVHcloud APIv6**
 
-Please refer to [this section](https://docs.ovh.com/au/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack) of the corresponding guide.
+Please refer to [this section](/pages/platform/network-services/getting-started-08-creating-vrack-with-api#step-4-integrating-an-instance-into-the-vrack) of the corresponding guide.
 
 ##### **With the OpenStack API**
 
@@ -303,7 +300,7 @@ nova net-list
 ><br> - The VLAN(s) required for your configuration
 >
 
-Also, note the information explicated in [this guide](https://docs.ovh.com/au/en/public-cloud/starting-with-nova-api/):
+Also, note the information explicated in [this guide](/pages/platform/public-cloud/starting_with_nova):
 
 - ID or name of the OpenStack SSH key
 - ID of the instance type (flavor)
@@ -455,7 +452,7 @@ In the popup window that appears, select the private network(s) to attach to you
 
 ##### **Managing network interfaces with the OVHcloud APIv6**
 
-Please refer to [this section](https://docs.ovh.com/au/en/publiccloud/network-services/public-cloud-vrack-apiv6/#in-case-of-an-existing-instance) of the corresponding guide.
+Please refer to [this section](/pages/platform/network-services/getting-started-08-creating-vrack-with-api#in-case-of-an-existing-instance) of the corresponding guide.
 
 ##### **Managing network interfaces with OpenStack Horizon**
 
@@ -658,8 +655,8 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 
 ## Go further
 
-[Configuring vRack for Public Cloud using OVHcloud APIv6](https://docs.ovh.com/au/en/publiccloud/network-services/public-cloud-vrack-apiv6/)
+[Configuring vRack for Public Cloud using OVHcloud APIv6](/pages/platform/network-services/getting-started-08-creating-vrack-with-api)
 
-[Creating multiple vLANs in a vRack](https://docs.ovh.com/au/en/dedicated/multiple-vlans/)
+[Creating multiple vLANs in a vRack](/pages/cloud/dedicated/creating-multiple-vlans-in-a-vrack)
 
 Join our community of users on <https://community.ovh.com/en/>.

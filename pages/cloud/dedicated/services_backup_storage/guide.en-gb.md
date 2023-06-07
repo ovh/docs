@@ -1,8 +1,6 @@
 ---
 title: Using backup storage on a dedicated server
-slug: services-backup-storage
 excerpt: 'Find out how to enable and access your additional storage space'
-section: Server management
 updated: 2021-03-15
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: 'GPU Instanzen einrichten'
-slug: gpu-intanz-einrichten
 excerpt: 'Erfahren Sie hier, wie Sie unter Windows und Linux eine GPU Instanz einrichten'
-section: 'Verwaltung im OVHcloud Kundencenter'
 updated: 2019-12-06
 ---
 

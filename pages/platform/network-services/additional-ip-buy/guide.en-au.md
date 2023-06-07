@@ -1,9 +1,6 @@
 ---
 title: Buying an Additional IP
-slug: buy-additional-ip
 excerpt: "Find out how to order Additional IP addresses for your instances"
-section: Additional IP
-order: 02
 updated: 2023-01-04
 ---
 
@@ -30,7 +27,7 @@ These Additional IP addresses can only be migrated to instances in the same proj
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
-- A [Public Cloud instance](https://docs.ovh.com/au/en/public-cloud/public-cloud-first-steps/) in your Public Cloud project
+- A [Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps) in your Public Cloud project
 
 ## Instructions
 
@@ -79,14 +76,14 @@ In the final step, select your instance from the drop-down menu. Then click on `
 
 The purchase order will open automatically for you to complete your purchase.
 
-See our guide on [managing OVHcloud orders](https://docs.ovh.com/au/en/billing/managing-ovh-orders/) for more details.
+See our guide on [managing OVHcloud orders](/pages/account/billing/managing_ovh_orders) for more details.
 
 You can also find the purchase order in your Control Panel, by going to the `Dashboard`{.action} section and clicking on `View my orders`{.action}.
 
-The next step will be the IP configuration in your OS; please refer to our [guide](https://docs.ovh.com/au/en/publiccloud/network-services/configure-additional-ip/).
+The next step will be the IP configuration in your OS; please refer to our [guide](/pages/platform/network-services/getting-started-04-configure-additional-ip-to-instance).
 
 ## Go further
 
-[Configuring an Additional IP](https://docs.ovh.com/au/en/publiccloud/network-services/configure-additional-ip/)
+[Configuring an Additional IP](/pages/platform/network-services/getting-started-04-configure-additional-ip-to-instance)
 
 Join our community of users on <https://community.ovh.com/en/>.

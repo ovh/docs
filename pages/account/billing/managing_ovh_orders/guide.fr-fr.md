@@ -1,8 +1,6 @@
 ---
 title: Gérer mes commandes OVHcloud
-slug: gerer-ses-commandes-ovh
 excerpt: Découvrez comment gérer vos commandes chez OVHcloud
-section: Facturation
 updated: 2022-05-06
 ---
 
@@ -36,7 +34,7 @@ Le bon de commande est créé au moment du passage de votre commande. Il liste l
 |---|---|
 |1|Numéro, date de création et date d'expiration du bon de commande. S'il est expiré, vous devrez repasser commande.|
 |2|Vos coordonnées de facturation. Vous devez être identifié pour afficher et payer votre bon de commande.|
-|3|Moyens de paiement enregistrés sur votre compte client. Pour plus d'informations, consultez le guide [Gérer mes moyens de paiement](https://docs.ovh.com/fr/billing/manage-payment-methods/).|
+|3|Moyens de paiement enregistrés sur votre compte client. Pour plus d'informations, consultez le guide [Gérer mes moyens de paiement](/pages/account/billing/manage-payment-methods).|
 |4|Méthodes de paiement disponibles. Seules les méthodes de paiement autorisés dans le pays d'origine du compte ou ceux liés au type de compte enregistré vous seront proposées.|
 
 Vous pouvez à tout moment retrouver votre bon de commande dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), comme expliqué ci-dessous.
@@ -95,7 +93,7 @@ Vous trouverez toutes les modalités d'application du droit de rétractation dan
 > Le droit de rétraction ne concerne que les particuliers et ne s'applique qu'aux nouvelles commandes. Vous ne pouvez donc pas le faire valoir :
 >
 > - pour des renouvellements;
-> - si votre compte client OVHcloud est d'un [autre type que Particulier](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#modifier-le-type-de-compte).
+> - si votre compte client OVHcloud est d'un [autre type que Particulier](/pages/account/customer/all_about_username#modifier-le-type-de-compte).
 >
 > De plus, le droit de rétractation ne s'applique pas aux commandes non-payées, car celles-ci sont automatiquement annulées lorsque le bon de commande expire.
 >

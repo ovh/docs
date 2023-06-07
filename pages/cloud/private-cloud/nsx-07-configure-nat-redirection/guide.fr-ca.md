@@ -1,9 +1,6 @@
 ---
 title: Mise en place du NAT pour des redirections de ports avec NSX
-slug: nsx-configure-nat-redirection
 excerpt: Découvrez comment configurer le NAT pour créer une redirection de port
-section: NSX
-order: 07
 updated: 2023-02-27
 ---
 
@@ -23,7 +20,7 @@ updated: 2023-02-27
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
-- Avoir **NSX** déployé avec deux segments configurés dans votre configuration NSX. Consultez notre guide sur la [gestion des segments dans NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-segment-management) pour plus d'informations.
+- Avoir **NSX** déployé avec deux segments configurés dans votre configuration NSX. Consultez notre guide sur la [gestion des segments dans NSX](/pages/cloud/private-cloud/nsx-02-segment-management) pour plus d'informations.
 - Avoir une machine virtuelle sous Linux avec OpenSSH activé sur le port 22.
 
 ## En pratique
@@ -80,9 +77,9 @@ La règle est créée et est active.
 
 ## Aller plus loin
 
-[Premiers pas avec NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-first-steps/)
+[Premiers pas avec NSX](/pages/cloud/private-cloud/nsx-01-first-steps)
 
-[Gestion des segments dans NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-segment-management/)
+[Gestion des segments dans NSX](/pages/cloud/private-cloud/nsx-02-segment-management)
 
 [Documentation VMware sur le NAT dans NSX](https://docs.vmware.com/fr/VMware-NSX-T-Data-Center/3.2/administration/GUID-7AD2C384-4303-4D6C-A44A-DEF45AA18A92.html)
 

@@ -1,8 +1,6 @@
 ---
 title: 'Notion de Numéro de commande ou Purchase Order (PO)'
-slug: purchase-order
 excerpt: "Comprendre la notion de numéro de commande ou purchase order et l’appliquer dans le cadre du réglement des factures OVHcloud"
-section: Facturation
 updated: 2022-07-22
 ---
 

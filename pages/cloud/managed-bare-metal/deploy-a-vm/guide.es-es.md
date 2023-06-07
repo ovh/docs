@@ -1,11 +1,8 @@
 ---
 title: Instrumentación de una máquina virtual
-slug: instrumentacion-de-una-maquina-virtual
 routes:
-    canonical: 'https://docs.ovh.com/es/private-cloud/instrumentacion-de-una-maquina-virtual/'
+    canonical: '/pages/cloud/private-cloud/deploiement_d_une_machine_virtuelle'
 excerpt: Cómo instrumentar una máquina virtual desde la interfaz vSphere
-section: Gestión de las máquinas virtuales
-order: 0
 updated: 2020-11-18
 ---
 
@@ -20,7 +17,7 @@ La interfaz vSphere permite instrumentar máquinas virtuales de varios modos.
 ## Requisitos
 
 - Haber contratado una solución [Managed Bare Metal de OVHcloud](https://www.ovhcloud.com/es-es/managed-bare-metal/){.external}.
-- Estar conectado a la [interfaz vSphere](../instalar_el_vsphere_client/).
+- Estar conectado a la [interfaz vSphere](/pages/cloud/managed-bare-metal/vsphere-interface).
 
 ## Procedimiento
 
@@ -34,8 +31,8 @@ Haga clic con el botón derecho en el clúster de su elección y, seguidamente, 
 
 Para crear una máquina virtual, es posible elegir entre varias opciones:
 
-- A partir de un archivo ISO, disponible en su datastore y que para importarlo debe seguir las instrucciones en la [guía de conexión en SFTP](../instalar_el_vsphere_client//).
-- También puede instrumentar una máquina virtual a partir de una plantilla existente o una [plantilla de OVHcloud](../desplegar-plantilla-ovf/).
+- A partir de un archivo ISO, disponible en su datastore y que para importarlo debe seguir las instrucciones en la [guía de conexión en SFTP](/pages/cloud/managed-bare-metal/vsphere-interface/).
+- También puede instrumentar una máquina virtual a partir de una plantilla existente o una [plantilla de OVHcloud](/pages/cloud/managed-bare-metal/ovf_template).
 - Puede clonar una máquina virtual ya existente (hay que tener cuidado con los posibles conflictos de direcciones IP).
 - Puede clonar una máquina virtual en una plantilla para instrumentar más rápidamente sus próximas máquinas virtuales.
 - Puede clonar una plantilla en otra plantilla para, por ejemplo, tenerla en varios datastores y evitar así problemas de rendimiento durante una instrumentación masiva.

@@ -1,9 +1,6 @@
 ---
 title: 'Creating an OVHcloud DNS zone for a domain name'
-slug: create_a_dns_zone_for_a_domain_which_is_not_registered_at_ovh
 excerpt: 'Find out how to create an OVHcloud DNS zone for your domain name via the OVHcloud Control Panel'
-section: 'DNS and DNS Zone'
-order: 02
 updated: 2018-08-06
 ---
 
@@ -56,7 +53,7 @@ If you would like to edit this DNS zone, click `Web Cloud`{.action} in the [OVHc
 > If you have just created the DNS zone but the domain name does not appear under the list of services in the `Domain names`{.action} section, please wait a few moments, then reload the page.
 >
 
-Once it appears, make the required changes. To learn more about how to edit a DNS zone, please read our guide to [Editing an OVHcloud DNS zone](https://docs.ovh.com/au/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}. Once you have modified your domain name’s OVHcloud DNS zone, you will need to allow 4-24 hours for the changes to fully propagate and take effect.
+Once it appears, make the required changes. To learn more about how to edit a DNS zone, please read our guide to [Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit){.external}. Once you have modified your domain name’s OVHcloud DNS zone, you will need to allow 4-24 hours for the changes to fully propagate and take effect.
 
 ### Step 3: Edit the DNS servers for a domain name
 
@@ -68,6 +65,6 @@ Once you have the details, **edit your domain name’s DNS servers using the int
 
 ## Go further
 
-[Editing an OVHcloud DNS zone](https://docs.ovh.com/au/en/domains/web_hosting_how_to_edit_my_dns_zone/)
+[Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: "Installer votre site web avec un « module en 1 clic » (CMS)"
-slug: modules-en-1-clic
 excerpt: "Découvrez comment installer votre site web via nos « modules en 1 clic »"
-section: CMS
-order: 01
 updated: 2023-03-17
 ---
 
@@ -21,10 +18,10 @@ Les « modules en 1 clic » permettent l'installation facile et rapide d'un site
 
 - Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) incluant au moins une base de données.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Utiliser [une version de PHP compatible](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/) sur votre hébergement web OVHcloud.
-- Avoir [configuré correctement votre fichier .ovhconfig](https://docs.ovh.com/fr/hosting/configurer-fichier-ovhconfig/).
+- Utiliser [une version de PHP compatible](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014) sur votre hébergement web OVHcloud.
+- Avoir [configuré correctement votre fichier .ovhconfig](/pages/web/hosting/ovhconfig_configuration).
 - Le répertoire (dossier racine) où sera installé votre « module en 1 clic » doit être vide ou actuellement inexistant.
-- Le domaine (avec sous-domaine si souhaité) qui sera utilisé pour votre site web doit être déclaré en tant que [Multisite](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) sur votre hébergement web OVHcloud.
+- Le domaine (avec sous-domaine si souhaité) qui sera utilisé pour votre site web doit être déclaré en tant que [Multisite](/pages/web/hosting/multisites_configure_multisite) sur votre hébergement web OVHcloud.
 
 ## En pratique
 
@@ -56,7 +53,7 @@ Dans la fenêtre qui s'affiche, choisissez le CMS souhaité puis sélectionnez l
 
 ![Choix du module](images/add_a_module.png){.thumbnail}
 
-Si votre domaine n'est pas dans la liste, rendez-vous dans l'onglet `Multisite`{.action} pour l'ajouter. Consultez notre guide [Comment partager mon hébergement web entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) si besoin.
+Si votre domaine n'est pas dans la liste, rendez-vous dans l'onglet `Multisite`{.action} pour l'ajouter. Consultez notre guide [Comment partager mon hébergement web entre plusieurs sites](/pages/web/hosting/multisites_configure_multisite) si besoin.
 
 Une fois votre domaine correctement ajouté, essayez à nouveau d'ajouter un « module en 1 clic ».
 
@@ -99,8 +96,8 @@ Renseignez les informations de connexion à votre base de données.
 Il existe plusieurs possibilités :
 
 - La base de données est déjà créée sur votre hébergement web: choisissez-la dans le menu déroulant `Sélectionnez la base de données`{.action} puis complétez les informations demandées.
-- La base de données n'est pas encore créée sur votre hébergement web : [créez votre base de données incluse avec votre hébergement](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/), retournez ensuite jusqu'au menu déroulant `Sélectionnez la base de données`{.action} puis complétez les informations demandées.
-- La base de données est [créée sur votre instance Web Cloud Databases](https://docs.ovh.com/fr/clouddb/creer-bases-de-donnees-et-utilisateurs/) : dans le menu déroulant `Sélectionnez la base de données`{.action}, sélectionnez le choix `Base de données en dehors de votre hébergement web`{.action} et complétez les informations demandées. L'instance et l'hébergement web doivent être hébergés dans le même centre de données (datacentre).
+- La base de données n'est pas encore créée sur votre hébergement web : [créez votre base de données incluse avec votre hébergement](/pages/web/hosting/sql_create_database), retournez ensuite jusqu'au menu déroulant `Sélectionnez la base de données`{.action} puis complétez les informations demandées.
+- La base de données est [créée sur votre instance Web Cloud Databases](/pages/web/clouddb/create-db-and-user-on-db-server) : dans le menu déroulant `Sélectionnez la base de données`{.action}, sélectionnez le choix `Base de données en dehors de votre hébergement web`{.action} et complétez les informations demandées. L'instance et l'hébergement web doivent être hébergés dans le même centre de données (datacentre).
 - La base de données est créée sur un autre hébergement Web OVHcloud : dans le menu déroulant `Sélectionnez la base de données`{.action}, sélectionnez le choix `Base de données en dehors de votre hébergement web`{.action} et complétez les informations demandées. La base de données et l'hébergement web doivent être hébergés dans le même centre de données.
 
 Le reste des informations demandées pour la base de données sont les suivantes :
@@ -116,10 +113,10 @@ Le reste des informations demandées pour la base de données sont les suivantes
 
 - *Nom de la base* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
-- *Port* : indiquez systématiquement le numéro **3306** (port par défaut) pour une base de données incluse avec votre hébergement web. Pour une base présente sur une instance Web Cloud Databases, consultez [ce guide](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/).
+- *Port* : indiquez systématiquement le numéro **3306** (port par défaut) pour une base de données incluse avec votre hébergement web. Pour une base présente sur une instance Web Cloud Databases, consultez [ce guide](/pages/web/clouddb/starting_with_clouddb).
 
 - *Nom d'utilisateur* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
-Pour les bases de données créées sur une offre Web Cloud Databases, référez-vous aux informations indiquées dans [ce guide](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/).
+Pour les bases de données créées sur une offre Web Cloud Databases, référez-vous aux informations indiquées dans [ce guide](/pages/web/clouddb/starting_with_clouddb).
 
 - *Mot de passe* : il vous a été envoyé par e-mail lors de la création de la base de données. Il est possible que vous l'ayez modifié entre temps.
 
@@ -129,9 +126,9 @@ Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}
 >
 > Si les informations que vous indiquez sont incorrectes, l'installation n'arrivera pas à son terme. Pour éviter cela, nous vous invitons en premier lieu à tester la connexion à votre base de données.
 > 
-> Pour récupérer les identifiants de connexion à votre base de données incluse avec votre hébergement web, consultez [ce guide](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
+> Pour récupérer les identifiants de connexion à votre base de données incluse avec votre hébergement web, consultez [ce guide](/pages/web/hosting/sql_create_database).
 >
-> Pour récupérer les identifiants de connexion à votre base de données créée sur une instance Web Cloud Databases, consultez [ce guide](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/).
+> Pour récupérer les identifiants de connexion à votre base de données créée sur une instance Web Cloud Databases, consultez [ce guide](/pages/web/clouddb/starting_with_clouddb).
 >
 
 ##### Configurer le module
@@ -140,7 +137,7 @@ Renseignez les informations suivantes pour la configuration du module :
 
 - *nom ou e-mail de l'administrateur :* identifiant que vous utiliserez pour vous connecter à l'interface d'administration de votre CMS (Back Office).
 - *mot de passe :* mot de passe que vous utiliserez pour vous connecter à l'interface d'administration de votre CMS.
-- *domaine :* nom de domaine avec lequel vous souhaitez installer votre CMS. Si besoin, consultez notre guide [Comment partager mon hébergement web entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/).
+- *domaine :* nom de domaine avec lequel vous souhaitez installer votre CMS. Si besoin, consultez notre guide [Comment partager mon hébergement web entre plusieurs sites](/pages/web/hosting/multisites_configure_multisite).
 - *langue :* langue dans laquelle le CMS sera installé.
 - *chemin d’installation :* ce dernier est automatiquement renseigné à la sélection du nom de domaine. Vous pouvez le compléter en y renseignant des sous-répertoires (pour les utilisateurs avertis).
 
@@ -183,15 +180,15 @@ Si vous désirez obtenir de l'aide concernant les fonctionnalités de votre CMS,
 
 [Choisir un CMS pour créer un site web](https://www.ovhcloud.com/fr/web-hosting/uc-cms-comparison/){.external}
 
-[Comment partager mon hébergement Web entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
+[Comment partager mon hébergement Web entre plusieurs sites](/pages/web/hosting/multisites_configure_multisite){.external}
 
-[Gestion d’une base de données depuis un hébergement mutualisé](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/){.external}
+[Gestion d’une base de données depuis un hébergement mutualisé](/pages/web/hosting/sql_create_database){.external}
 
 Découvrez nos [offres Web Cloud Databases](https://www.ovh.com/fr/cloud/cloud-databases/){.external}
 
-[Gérer votre CMS](https://docs.ovh.com/fr/hosting/1-click-module-management/)
+[Gérer votre CMS](/pages/web/hosting/cms_manage_1_click_module)
 
-[Désinstaller votre CMS](https://docs.ovh.com/fr/hosting/1-click-module-management/#etape-3-supprimer-votre-module)
+[Désinstaller votre CMS](/pages/web/hosting/cms_manage_1_click_module#etape-3-supprimer-votre-module)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 

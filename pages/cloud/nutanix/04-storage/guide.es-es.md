@@ -1,11 +1,8 @@
 ---
 title: Presentación del almacenamiento en Nutanix (EN)
-slug: storage
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/nutanix/storage/'
+    canonical: '/pages/cloud/nutanix/04-storage'
 excerpt: Overview of Storage Management in a Nutanix cluster
-section: Primeros pasos
-order: 06
 updated: 2022-02-23
 ---
 
@@ -116,7 +113,7 @@ The **Volume Group** will then appear in the list.
 
 ## Go further <a name="gofurther"></a>
 
-[Presentation of a Nutanix cluster](https://docs.ovh.com/es/nutanix/nutanix-hci/)
+[Presentation of a Nutanix cluster](/pages/cloud/nutanix/03-nutanix-hci)
 
 [Nutanix storage documentation](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v5_20:wc-storage-management-wc-c.html)
 

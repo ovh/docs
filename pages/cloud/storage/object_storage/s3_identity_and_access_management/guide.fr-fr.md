@@ -1,9 +1,6 @@
 ---
 title: Object Storage - Gestion des identités et des accès
-slug: s3/identity-and-access-management
 excerpt:
-section: Guides généraux pour débuter
-order: 030
 updated: 2022-09-27
 ---
 

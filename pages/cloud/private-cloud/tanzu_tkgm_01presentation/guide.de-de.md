@@ -1,11 +1,8 @@
 ---
 title: Einführung in Tanzu Kubernetes Grid (EN)
-slug: tanzu-tkgm-presentation
 excerpt: Discover the Tanzu Kubernetes Grid solution
-section: Tanzu
-order: 02
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/tanzu-tkgm-presentation/'
+    canonical: '/pages/cloud/private-cloud/tanzu_tkgm_01presentation'
 updated: 2022-11-15
 ---
 
@@ -37,7 +34,7 @@ Tanzu Kubernetes Grid enables you to deploy and manage one or more Kubernetes cl
 
 ### Initial installation of Tanzu Kubernetes Grid
 
-Please refer to the [Install Tanzu Kubernetes Grid](https://docs.ovh.com/de/private-cloud/tanzu-tkgm-installation) documentation for installation.
+Please refer to the [Install Tanzu Kubernetes Grid](/pages/cloud/private-cloud/tanzu_tkgm_02installation) documentation for installation.
 
 Running **Tanzu Kubernetes Grid** on the VMware cluster requires six new virtual machines to run the management cluster. Another virtual machine is required for administration, this virtual machine is provided by OVHcloud and is called **Bootstrap**. 
 
@@ -56,7 +53,7 @@ All *WorkLoad* clusters are independent from one another, which means you can ha
 
 When installing **Tanzu Kubernetes Grid**, we chose **kube-vip** for interconnections between a *Workload* cluster and the VMware cluster network. You can also use the **Nsx Advanced Load Balancer**.
 
-Read the [Managing Tanzu Kubernete Grid](https://docs.ovh.com/de/private-cloud/tanzu-tkgm-installation) guide to deploy a *Workload* cluster and application. 
+Read the [Managing Tanzu Kubernete Grid](/pages/cloud/private-cloud/tanzu_tkgm_02installation) guide to deploy a *Workload* cluster and application. 
 
 For each new *WorkLoad* cluster installed in production mode, six new virtual machines are added to your VMware infrastructure.
 
@@ -74,7 +71,7 @@ Persistent volumes are stored by default on VMware storage (vSAN or NFS) that wa
 
 You can create **Custom Storage Classes** to define another location.
 
-Read the [Managing Persistent Volumes in Tanzu Kubernetes Grid](https://docs.ovh.com/de/private-cloud/tanzu-tkgm-persistent-volumes) guide to add an application that uses an external persistent volume.
+Read the [Managing Persistent Volumes in Tanzu Kubernetes Grid](/pages/cloud/private-cloud/tanzu_tkgm_04persistent-volumes) guide to add an application that uses an external persistent volume.
 
 ### Application backup 
 
@@ -82,11 +79,11 @@ Various backup solutions compatible with **Tanzu Kubernetes Grid** exist, includ
 
 ## Go further
 
-[Installing a Tanzu Kubernetes GRID cluster](https://docs.ovh.com/de/private-cloud/tanzu-tkgm-installation)
+[Installing a Tanzu Kubernetes GRID cluster](/pages/cloud/private-cloud/tanzu_tkgm_02installation)
 
-[Managing a Tanzu Kubernetes GRID cluster](https://docs.ovh.com/de/private-cloud/tanzu-tkgm-management)
+[Managing a Tanzu Kubernetes GRID cluster](/pages/cloud/private-cloud/tanzu_tkgm_03manage)
 
-[Managing volumes on a Tanzu Kubernetes GRID cluster](https://docs.ovh.com/de/private-cloud/tanzu-tkgm-persistent-volumes)
+[Managing volumes on a Tanzu Kubernetes GRID cluster](/pages/cloud/private-cloud/tanzu_tkgm_04persistent-volumes)
 
 [Introducing VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid)
 

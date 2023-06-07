@@ -1,11 +1,8 @@
 ---
 title: Cloud Archive Swift - Curl Command Memo (EN)
-slug: pca/curl-commands-memo
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/pca/curl-commands-memo/'
+    canonical: '/pages/cloud/storage/object_storage/pca_curl_commands_memo'
 excerpt: Find here the main curl commands for managing your Public Cloud Archive object containers
-section: OpenStack Swift Archive Storage Class Specifics
-order: 060
 updated: 2023-03-02
 ---
 

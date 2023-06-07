@@ -1,9 +1,6 @@
 ---
 title: Public Cloud Instances - Partage des responsabilités
-slug: raci-instances-public-cloud
-section: Informations générales
 excerpt: "RACI entre OVHcloud et le client pour l'utilisation des instances Public Cloud"
-order: 5
 updated: 2022-12-22
 ---
 

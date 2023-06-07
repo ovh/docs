@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguracja konta E-mail Pro na urządzeniu z Android przy użyciu aplikacji Gmail'
-slug: konfiguracja-android
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro na urządzeniu z systemem Android przy użyciu aplikacji Gmail'
-section: 'Konfiguracja programu pocztowego'
-order: 5
 updated: 2020-03-18
 ---
 
@@ -98,8 +95,8 @@ OVHcloud oferuje również aplikację internetową posiadającą [funkcje pracy 
 
 ## Sprawdź również
 
-[Konfiguracja konta e-mail, zawartego w usłudze MX Plan lub usłudze hostingu, na urządzeniu z systemem Android przy użyciu aplikacji Gmail](https://docs.ovh.com/pl/emails/konfiguracja-android/){.external}
+[Konfiguracja konta e-mail, zawartego w usłudze MX Plan lub usłudze hostingu, na urządzeniu z systemem Android przy użyciu aplikacji Gmail](/pages/web/emails/how_to_configure_android){.external}
 
-[Konfiguracja konta Exchange na urządzeniu z systemem Android przy użyciu aplikacji Gmail](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_20132016_konfiguracja_w_systemie_android/){.external}
+[Konfiguracja konta Exchange na urządzeniu z systemem Android przy użyciu aplikacji Gmail](/pages/web/microsoft-collaborative-solutions/how_to_configure_android){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -1,8 +1,5 @@
 ---
 title: FAQ solutions internet OVHcloud 
-slug: faq-xdsl-ftth
-section: Premiers pas
-order: 1
 updated: 2022-10-10
 ---
 
@@ -18,7 +15,7 @@ Dès réception de votre modem, nous vous invitons à brancher le câble qui rel
 
 #### Trucs et astuces :
 
-Si vous ne disposez pas d'une installation téléphonique récente, il est souvent nécessaire d'ajouter un filtre ADSL. Pour plus de renseignements, consultez le guide suivant : [La desserte interne](https://docs.ovh.com/fr/xdsl/la-desserte-interne/).
+Si vous ne disposez pas d'une installation téléphonique récente, il est souvent nécessaire d'ajouter un filtre ADSL. Pour plus de renseignements, consultez le guide suivant : [La desserte interne](/pages/telecom/xdsl/la_desserte_interne).
 
 ### Un technicien peut-il venir installer mon modem ?
 
@@ -40,7 +37,7 @@ Une fois connecté, rendez-vous dans l'univers `Telecom`{.action} puis `Accès I
 
 Cliquez dessus, s'affiche alors l'ensemble de vos services inclus. Il vous sera alors possible de les activer et les paramétrer à votre convenance.
 
-Pour plus d'informations, consultez le guide [Comment activer mes lignes téléphoniques ?](https://docs.ovh.com/fr/xdsl/comment-activer-mes-lignes-telephoniques-offre-adsl-vdsl/).
+Pour plus d'informations, consultez le guide [Comment activer mes lignes téléphoniques ?](/pages/telecom/xdsl/comment_activer_mes_lignes_telephoniques_offre_adsl_vdsl).
 
 ### Pourquoi ai-je une erreur d'authentification lors de ma connexion à Internet ?
 
@@ -48,7 +45,7 @@ Une erreur d'authentification est généralement liée à la mauvaise saisie du 
 
 Si vous utilisez un modem OVHcloud, sachez que ce dernier est configuré pour se sonnecter automatiquement. Il vous suffit alors de réaliser une réinitialisation de votre modem afin de générer de nouveaux identifiants qui seront automatiquement pris en compte par votre modem.
 
-Vous trouverez de plus amples informations en vous rendant sur le guide [Rétablir son service suite à une coupure complète ou partielle](https://docs.ovh.com/fr/xdsl/interruption-de-service/).
+Vous trouverez de plus amples informations en vous rendant sur le guide [Rétablir son service suite à une coupure complète ou partielle](/pages/telecom/xdsl/interruption_de_service).
 
 #### Trucs et astuces : 
 
@@ -62,7 +59,7 @@ Si la liaison ne remonte pas, vous avez la possibilité d’utiliser notre assis
 
 Si cela ne fonctionne toujours pas, nous vous invitons à consulter la [carte des incidents en cours](https://www.ovhtelecom.fr/xdsl/incident/#/) pour vérifier les éventuels incidents génériques pouvant affecter votre connexion.
 
-Enfin vous pouvez également réaliser les vérifications que vous trouverez dans le guide [Rétablir son service suite à une coupure complète ou partielle](https://docs.ovh.com/fr/xdsl/interruption-de-service/).
+Enfin vous pouvez également réaliser les vérifications que vous trouverez dans le guide [Rétablir son service suite à une coupure complète ou partielle](/pages/telecom/xdsl/interruption_de_service).
 
 #### Trucs et astuces :
 
@@ -70,13 +67,13 @@ De nombreux conseils sont également proposés par les membres de notre communau
 
 ### Pourquoi mon débit est trop faible ?
 
-En cas de débit trop faible, testez tout d'abord votre connexion en effectuant un test neutre. Ne branchez qu'un seul ordinateur sur l'un des ports ethernet (RJ45) de votre modem, sans utiliser un éventuel switch ou autre équipement intermédiaire. [Désactivez le Wi-Fi sur votre modem](https://docs.ovh.com/fr/xdsl/configuration_du_modem_a_partir_de_votre_espace_client/#22-configuration-generale) puis rendez-vous sur [proof.ovh.net](https://proof.ovh.net/) pour effectuer un test de débit (speedtest).
+En cas de débit trop faible, testez tout d'abord votre connexion en effectuant un test neutre. Ne branchez qu'un seul ordinateur sur l'un des ports ethernet (RJ45) de votre modem, sans utiliser un éventuel switch ou autre équipement intermédiaire. [Désactivez le Wi-Fi sur votre modem](/pages/telecom/xdsl/configuration_du_modem_a_partir_de_votre_espace_client#22-configuration-generale) puis rendez-vous sur [proof.ovh.net](https://proof.ovh.net/) pour effectuer un test de débit (speedtest).
 
-Si votre débit reste trop bas, pensez à redémarrer votre modem. Vous pouvez également le réinitialiser. Consultez les méthodes de redémarrage et de réinitialisation applicables à votre modem sur notre guide [Redémarrer ou réinitialiser une box OVHcloud](https://docs.ovh.com/fr/xdsl/redemarrer-reinitialiser-modem-adsl-ovh/).
+Si votre débit reste trop bas, pensez à redémarrer votre modem. Vous pouvez également le réinitialiser. Consultez les méthodes de redémarrage et de réinitialisation applicables à votre modem sur notre guide [Redémarrer ou réinitialiser une box OVHcloud](/pages/telecom/xdsl/restart_reboot_modem).
 
 #### Trucs et astuces :
 
-Pensez également à vérifier votre desserte interne à l'aide du guide [Résoudre une interruption ou des lenteurs de navigation](https://docs.ovh.com/fr/xdsl/resoudre-interruption-lenteurs-navigation/)
+Pensez également à vérifier votre desserte interne à l'aide du guide [Résoudre une interruption ou des lenteurs de navigation](/pages/telecom/xdsl/resoudre-interruption-lenteurs-navigation)
 
 ### Comment rétablir une ligne xDSL écrasée ?
 

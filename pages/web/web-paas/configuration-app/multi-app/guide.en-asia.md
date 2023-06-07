@@ -1,7 +1,5 @@
 ---
 title: Multiple applications
-slug: multi-app
-section: App
 updated: 2021-03-31
 ---
 
@@ -183,13 +181,13 @@ Assuming a domain name of `example.com`, that will result in:
 * `https://backend.example.com/` being served by the Drupal instance.
 * `https://example.com/` being served by the AngularJS instance.
 
-There is no requirement that an application be web-accessible.  If it is not specified in `routes.yaml` then it will not be web-accessible at all.  However, if you are building a non-routable application off of the same code base as another application, you should probably consider defining it as a [`worker`](../workers) instead.  The net result is the same but it is much easier to manage.
+There is no requirement that an application be web-accessible.  If it is not specified in `routes.yaml` then it will not be web-accessible at all.  However, if you are building a non-routable application off of the same code base as another application, you should probably consider defining it as a [`worker`](/pages/web/web-paas/configuration-app/workers) instead.  The net result is the same but it is much easier to manage.
 
 ## Relationships
 
 In a multi-app configuration, applications by default cannot access each other.  However, they may declare a `relationships` block entry that references another application rather than a service.  In that case the endpoint is `http`.
 
-However, be aware that circular relationships are not supported.  That is, application A cannot have a relationship to application B if application B also has a relationship to application A.  Such circular relationships are usually a sign that the applications should be coordinating through a shared data store, like a database, [RabbitMQ server](../../configuration-services/rabbitmq), or similar.
+However, be aware that circular relationships are not supported.  That is, application A cannot have a relationship to application B if application B also has a relationship to application A.  Such circular relationships are usually a sign that the applications should be coordinating through a shared data store, like a database, [RabbitMQ server](/pages/web/web-paas/configuration-services/rabbitmq), or similar.
 
 **Example:**
 

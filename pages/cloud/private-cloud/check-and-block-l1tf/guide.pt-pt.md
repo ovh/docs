@@ -1,8 +1,6 @@
 ---
 title: 'Verificar e bloquear a falha L1TF'
-slug: verificar-bloquear-falha-l1tf
 excerpt: 'Saiba como bloquear a vulnerabilidade L1TF'
-section: Segurança
 updated: 2019-02-26
 ---
 
@@ -56,7 +54,7 @@ Este procedimento divide-se em 3 partes.
 
 ### 1 - Atualização
 
-Embora a OVHcloud atualize o vCenter, deverá encarregar-se da atualização dos hosts ESXi. O patch está disponível no [Update Manager](https://docs.ovh.com/pt/private-cloud/utilizar_o_vmware_update_manager/){.external-link}. 
+Embora a OVHcloud atualize o vCenter, deverá encarregar-se da atualização dos hosts ESXi. O patch está disponível no [Update Manager](/pages/cloud/private-cloud/vmware_update_manager){.external-link}. 
 
 Poderá consultar a lista de patches para os hosts ESXi neste [documento](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
 

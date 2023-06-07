@@ -1,11 +1,8 @@
 ---
 title: M3db - Configure your M3db instance to accept incoming connections
 excerpt: Find out how to configure your M3db instance to accept incoming connections
-slug: m3db/configure-m3db-instance
-section: M3db - Guides
-order: 020
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/m3db/configure-m3db-instance/'
+    canonical: '/pages/platform/databases/m3db_02_prepare_for_incoming_connections'
 updated: 2022-05-12
 ---
 
@@ -21,7 +18,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 - A [Public Cloud project](https://www.ovhcloud.com/pl/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- A M3db database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/pl/publiccloud/databases/getting-started/) can help you to meet this requirement)
+- A M3db database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
 
 ## Instructions
 

@@ -1,8 +1,6 @@
 ---
 title: 'Create a custom OpenStack image with Packer'
-slug: packer-openstack-builder
 excerpt: 'Create and customize an OpenStack image from an existing one with Packer'
-section: Tutorials
 updated: 2018-10-24
 ---
 

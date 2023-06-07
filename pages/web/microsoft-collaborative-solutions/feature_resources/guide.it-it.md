@@ -1,9 +1,6 @@
 ---
 title: 'Crea e utilizza account di risorsa'
 excerpt: In questa guida ti mostriamo come configurare degli account di risorsa
-slug: exchange_2013_utilizzo_account_di_risorsa
-section: Funzionalità degli account Exchange
-order: 05
 updated: 2020-06-05
 ---
 
@@ -50,7 +47,7 @@ Clicca su `Avanti`{.action} per riassumere e conferma cliccando su `Crea`{.actio
 
 ### Step 2: utilizzare le risorse
 
-Le risorse possono essere gestite dalla tabella della scheda "Risorse". Clicca sui tre puntini `...`{.action}. per modificare o eliminare una risorsa. Comparirà anche l'opzione `Configura le deleghe`{.action}. Con questa opzione, potrai delegare l'accesso allo stesso modo di un account Exchange. Per maggiori informazioni, consulta [questa guida](../exchange_2013_assegna_i_diritti_full_access_a_un_account/).
+Le risorse possono essere gestite dalla tabella della scheda "Risorse". Clicca sui tre puntini `...`{.action}. per modificare o eliminare una risorsa. Comparirà anche l'opzione `Configura le deleghe`{.action}. Con questa opzione, potrai delegare l'accesso allo stesso modo di un account Exchange. Per maggiori informazioni, consulta [questa guida](/pages/web/microsoft-collaborative-solutions/feature_delegation).
 
 ![utilizzare le risorse](images/exchange-resources-step3.png){.thumbnail}
 
@@ -58,7 +55,7 @@ Le risorse possono essere gestite dalla tabella della scheda "Risorse". Clicca s
 
 > [!primary]
 >
-Consulta anche la nostra guida sulla [condivisione di calendari dall'interfaccia OWA](../exchange_2016_condividi_un_calendario_con_la_webmail_owa/).
+Consulta anche la nostra guida sulla [condivisione di calendari dall'interfaccia OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing).
 >
 
 Accedi al tuo account Exchange tramite la [Webmail OVHcloud](https://www.ovh.it/mail/). Clicca sul pulsante "Avanti" in alto a sinistra e seleziona l'icona `Calendario`{.action}.
@@ -123,10 +120,10 @@ Dopo aver creato l'evento (cliccando su `Invia`{.action} nella barra del menu su
 
 ## Per saperne di più
 
-[Consulta il tuo account Exchange dall'interfaccia OWA](../exchange_2016_guida_allutilizzo_di_outlook_web_app/)
+[Consulta il tuo account Exchange dall'interfaccia OWA](/it/microsoft-collaborative-solutions/exchange_2016_guida_allutilizzo_di_outlook_web_app/)
 
-[Condividi un calendario dall'interfaccia OWA](../exchange_2016_condividi_un_calendario_con_la_webmail_owa/)
+[Condividi un calendario dall'interfaccia OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Condividi una cartella con l'interfaccia OWA](../exchange_2016_condividi_una_cartella_con_la_webmail_owa/)
+[Condividi una cartella con l'interfaccia OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

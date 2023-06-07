@@ -1,9 +1,6 @@
 ---
 title: 'Cambiar la contraseña de un usuario de OpenStack en Horizon'
-slug: cambiar-la-contrasena-de-usuario-openstack
 excerpt: 'Cómo cambiar una contraseña de usuario en Horizon'
-section: Gestión desde Horizon
-order: 3
 updated: 2018-03-07
 ---
 
@@ -12,7 +9,7 @@ updated: 2018-03-07
 
 ## Objetivo
 
-Una vez que haya creado un usuario OpenStack y haya generado una contraseña de acceso siguiendo la guía [Crear un acceso a Horizon](../horizon/){.external}, puede cambiar dicha contraseña desde el panel Horizon. 
+Una vez que haya creado un usuario OpenStack y haya generado una contraseña de acceso siguiendo la guía [Crear un acceso a Horizon](/pages/platform/public-cloud/introducing_horizon){.external}, puede cambiar dicha contraseña desde el panel Horizon. 
 
 Atención: El cambio de contraseña de una cuenta de usuario inhabilita las claves de acceso activas hasta ese momento.
 

@@ -1,7 +1,5 @@
 ---
 title: 'Avoiding VM freeze with the Veeam Managed Backup option'
-slug: avoid-vm-freeze-with-veeam-backup
-section: 'Virtual machine management'
 excerpt: 'This guide will show you how to implement a bypass solution, using the VMware DRS mechanism'
 updated: 2022-02-22
 ---

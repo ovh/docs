@@ -1,9 +1,6 @@
 ---
 title: "Casos de uso - Como alterar o domínio de um site existente"
-slug: how_to_change_the_domain_name_for_an_existing_website
 excerpt: "Descubra como alterar o nome de domínio de um site existente"
-section: "Tutoriais"
-order: 011
 updated: 2022-10-25
 ---
 
@@ -46,7 +43,7 @@ Para alterar o domínio de acesso ao seu website, deverá realizar várias etapa
 
 ### Etapa 1 - declarar o novo domínio no seu alojamento partilhado <a name="step1"></a>
 
-Declare o seu novo nome de domínio através da nossa documentação sobre a [adição de um multi-site no seu alojamento partilhado](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/). Declare também o seu sub-domínio em `www` se deseja, por exemplo, que `www.NewDomain.tld` apareça também o seu website `NewDomain.tld`.
+Declare o seu novo nome de domínio através da nossa documentação sobre a [adição de um multi-site no seu alojamento partilhado](/pages/web/hosting/multisites_configure_multisite). Declare também o seu sub-domínio em `www` se deseja, por exemplo, que `www.NewDomain.tld` apareça também o seu website `NewDomain.tld`.
 
 Para ser bem-sucedida na etapa 1, é necessário preencher várias condições:
 
@@ -55,7 +52,7 @@ Para ser bem-sucedida na etapa 1, é necessário preencher várias condições:
 
 > [!warning]
 >
-> Se ativar as opções **IP do país** ou **CDN** com o seu novo domínio, utilize o endereço IP correto através do nosso manual de recenseamento [o conjunto dos endereços IP dos nossos alojamentos partilhados](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/).
+> Se ativar as opções **IP do país** ou **CDN** com o seu novo domínio, utilize o endereço IP correto através do nosso manual de recenseamento [o conjunto dos endereços IP dos nossos alojamentos partilhados](/pages/web/hosting/multisites_configure_multisite).
 >
 > Para encontrar o número do cluster onde está o seu alojamento, aceda à parte `Web cloud`{.action}, clique em `Alojamentos`{.action}, selecione o separador `FTP-SSH`{.action}. Visualizará o número do cluster no formulário **Servidor FTP e SFTP**: `ftp.cluster0XX.ovh.net` (onde os `X` representam o número de cluster).
 >
@@ -63,8 +60,8 @@ Para ser bem-sucedida na etapa 1, é necessário preencher várias condições:
 > **Certificados SSL**
 >
 > Se o domínio inicialmente utilizado para aceder ao seu website dispuser de um certificado SSL, consulte os nossos dois guias para efetuar ou verificar as ações descritas imediatamente abaixo destes dois links:
-> - [Gerir um certificado SSL no alojamento web](https://docs.ovh.com/pt/hosting/os-certificados-ssl-nos-alojamentos-web/)
-> - [Ativar o HTTPS num website com certificado SSL](https://docs.ovh.com/pt/hosting/ativar-https-website-certificado-ssl/)
+> - [Gerir um certificado SSL no alojamento web](/pages/web/hosting/ssl_on_webhosting)
+> - [Ativar o HTTPS num website com certificado SSL](/pages/web/hosting/ssl-activate-https-website)
 >
 > Para o certificado SSL *Let's Encrypt* gratuito, basta-lhe ativar a opção `SSL` **a a partir de agora** para o seu novo domínio através do separador `multi-sites`{.action} do seu alojamento. A seguir, clique no botão `ações`{.action} na parte superior da tabela, indicando os seus multistas e depois `Regenerar o certificado SSL`{.action}. A regeneração demorará, no mínimo, 2 horas para ser realizada.
 >
@@ -94,7 +91,7 @@ A maioria dos sites utiliza bases de dados para funcionar. A arborescência dest
 >
 > Atenção, as operações descritas na etapa 2 são extremamente sensíveis e podem ter consequências graves para o seu website se não forem efetuadas com precaução. Se tiver alguma dúvida, não tente nada e recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/).
 >
-> Antes de efetuar qualquer ação, aconselhamos que recupere um [backup do seu espaço de armazenamento FTP](https://docs.ovh.com/pt/hosting/restauracao-ftp-filezilla-area-de-cliente/) bem como um [backup da sua base de dados](https://docs.ovh.com/pt/hosting/partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/). Isto permitir-lhe-á restaurar o seu site em caso de manipulação incorreta.
+> Antes de efetuar qualquer ação, aconselhamos que recupere um [backup do seu espaço de armazenamento FTP](/pages/web/hosting/ftp_save_and_backup) bem como um [backup da sua base de dados](/pages/web/hosting/sql_database_export). Isto permitir-lhe-á restaurar o seu site em caso de manipulação incorreta.
 >
 
 Vamos distinguir dois tipos de websites: 
@@ -114,13 +111,13 @@ Uma vez que os CMS são desenvolvidos por organismos terceiros não geridos pela
 - Drupal: O editor deste programa não propõe, à data, documentação para alterar o domínio de acesso ao seu website. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, consulte as páginas oficiais [drupal.org](https://drupal.org){.external} ou [drupal.fr](https://drupal.fr){.external}.
 - PrestaShop: O editor deste programa não propõe, à data, documentação para alterar o domínio de acesso ao seu website. Sugerimos que contacte diretamente o editor sobre este assumpto. Para mais informações, clique em [aqui](https://help-center.prestashop.com){.external} para aceder à sua página oficial.
 
-Note que, para estes CMS, também é possível efetuar as alterações diretamente [na base de dados](https://docs.ovh.com/pt/hosting/criar-base-de-dados/). Deverá alterar o URL de acesso ao seu site na tabela prevista para esse efeito.
+Note que, para estes CMS, também é possível efetuar as alterações diretamente [na base de dados](/pages/web/hosting/sql_create_database). Deverá alterar o URL de acesso ao seu site na tabela prevista para esse efeito.
 
 Para os outros CMS não propostos em instalação automática pela OVHcloud, convidamo-lo igualmente a aproximar-se dos respetivos suportes para efetuar esta re-escritura com toda a segurança. 
 
 #### Caso n°2: o seu website é um site "feito casa"
 
-Para reescrever os seus URLs com o seu novo domínio, [ligue-se à base de dados do seu site](https://docs.ovh.com/pt/hosting/criar-base-de-dados/) e substitua o antigo domínio pelo novo na tabela correspondente. 
+Para reescrever os seus URLs com o seu novo domínio, [ligue-se à base de dados do seu site](/pages/web/hosting/sql_create_database) e substitua o antigo domínio pelo novo na tabela correspondente. 
 
 Não se esqueça de verificar no seu ficheiro `.htaccess` se existem re-escrituras de URL que não precisam de ser atualizadas com o seu novo domínio.
 
@@ -133,24 +130,24 @@ Se tiver contactado um fornecedor para a criação do seu site, contacte-o para 
 
 ### Etapa 3 - retirar o antigo nome de domínio <a name="step3"></a>
 
-Para evitar o "*Duplicate-content*" e quando o seu novo domínio estiver plenamente operacional com o seu site, deverá eliminar a declaração em multi-sites para o seu antigo domínio através do guia sobre a gestão dos [multi-sites no seu alojamento partilhado](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/).
+Para evitar o "*Duplicate-content*" e quando o seu novo domínio estiver plenamente operacional com o seu site, deverá eliminar a declaração em multi-sites para o seu antigo domínio através do guia sobre a gestão dos [multi-sites no seu alojamento partilhado](/pages/web/hosting/multisites_configure_multisite).
 
 > [!warning]
 >
 > Não se esqueça de ocupar o seu certificado SSL *Sectigo EV*, *Sectigo DV* ou *Custom*, conforme especificado na [etapa 1](#step1).
 >
 
-Uma vez o domínio antigo retirado do separador multi-sites e registado na OVHcloud, poderá reencaminhá-lo através de um [reencaminhamento visível permanente 301](https://docs.ovh.com/pt/domains/reencaminhamento-dominio/). Isto permitirá que os visitantes sejam automaticamente reencaminhados para o seu site ao visualizar o seu novo domínio na barra de endereço/URL do seu browser.
+Uma vez o domínio antigo retirado do separador multi-sites e registado na OVHcloud, poderá reencaminhá-lo através de um [reencaminhamento visível permanente 301](/pages/web/domains/redirect_domain_name). Isto permitirá que os visitantes sejam automaticamente reencaminhados para o seu site ao visualizar o seu novo domínio na barra de endereço/URL do seu browser.
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Lista dos IP dos nossos alojamentos partilhados](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/)
+[Lista dos IP dos nossos alojamentos partilhados](/pages/web/hosting/multisites_configure_multisite)
 
-[Gerir um certificado SSL no alojamento web](https://docs.ovh.com/pt/hosting/os-certificados-ssl-nos-alojamentos-web/)
+[Gerir um certificado SSL no alojamento web](/pages/web/hosting/ssl_on_webhosting)
 
-[Ativar o HTTPS num website com certificado SSL](https://docs.ovh.com/pt/hosting/ativar-https-website-certificado-ssl/)
+[Ativar o HTTPS num website com certificado SSL](/pages/web/hosting/ssl-activate-https-website)
 
-[Reencaminhar um domínio](https://docs.ovh.com/pt/domains/reencaminhamento-dominio/)
+[Reencaminhar um domínio](/pages/web/domains/redirect_domain_name)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 

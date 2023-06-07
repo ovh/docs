@@ -1,9 +1,6 @@
 ---
 title: 'Public Cloud & VPS - Cykl życia obrazów'
-slug: public-cloud-vps-image-life-cycle
 excerpt: Poznaj cykl życia obrazów dostarczanych dla Public Cloud & VPS
-section: 'Pierwsze kroki'
-order: 8
 updated: 2021-09-22
 ---
 

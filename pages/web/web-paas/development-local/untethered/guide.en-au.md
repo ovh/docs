@@ -1,7 +1,5 @@
 ---
 title: Untethered local
-slug: untethered
-section: Local
 updated: 2021-05-11
 ---
 
@@ -15,4 +13,4 @@ It's possible to run your entire site locally on your computer.  That is more pe
 
 If you already have a development workflow in place that works for you, you can keep using it with virtually no changes.
 
-To synchronize data from an environment on Web PaaS, consult the documentation for each [service](../../configuration-services).  Each service type has its own native data import/export process and Web PaaS does not get in the way of that.  It's also straightforward to [download user files](../../tutorials-exporting#downloading-files) from your application using rsync.
+To synchronize data from an environment on Web PaaS, consult the documentation for each [service](../../configuration-services).  Each service type has its own native data import/export process and Web PaaS does not get in the way of that.  It's also straightforward to [download user files](/pages/web/web-paas/tutorials-exporting#downloading-files) from your application using rsync.

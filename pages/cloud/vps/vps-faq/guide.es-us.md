@@ -1,8 +1,5 @@
 ---
 title: FAQ VPS OVHcloud
-slug: vps-faq
-section: 'Primeros pasos'
-order: 2
 updated: 2022-05-05
 ---
 
@@ -69,7 +66,7 @@ Si desea disfrutar de recursos garantizados sin tener conocimientos de administr
 Para conectarse a su VPS, deberá utilizar la dirección IP, el nombre de usuario y la contraseña que le indicaremos por correo electrónico al recibir el pedido.
 En Windows, le recomendamos que se conecte mediante el programa Putty. Puede conectarse directamente al terminal desde un equipo Linux.
 
-En la guía ["Primeros pasos con un VPS"](../primeros-pasos-con-vps/) encontrará todos los detalles.
+En la guía ["Primeros pasos con un VPS"](/pages/cloud/vps/starting_with_a_vps) encontrará todos los detalles.
 
 ## ¿Es posible alojar varios sitios web en un VPS?
 
@@ -83,7 +80,7 @@ Para ello, puede utilizar las siguientes opciones: la copia de seguridad manual 
 ## ¿Cómo proteger mi VPS?
 
 Por defecto, el VPS se entrega "desnudo", por lo que no incluye ninguna configuración de seguridad. Es lo primero que tienes que hacer en la recepción.
-Para ello, no dude en consultar la guía ["Proteger un VPS"](../consejos-proteccion-vps/).
+Para ello, no dude en consultar la guía ["Proteger un VPS"](/pages/cloud/vps/secure_your_vps).
 
 ### ¿Cuál es el ancho de banda asignado a mi VPS? ¿Está garantizada?
 

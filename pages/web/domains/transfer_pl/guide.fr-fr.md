@@ -1,12 +1,9 @@
 ---
 title: 'Transférer son nom de domaine en .pl vers OVHcloud'
-slug: transferer-mon-domaine-pl
 routes:
-    canonical: 'https://docs.ovh.com/fr/domains/transferer-mon-domaine-generique/'
+    canonical: '/pages/web/domains/transfer_incoming_generic_domain'
 hidden: true
 excerpt: "Découvrez comment réaliser le transfert d'un nom de domaine en .pl vers OVHcloud"
-section: Transfert
-order: 09
 updated: 2022-10-19
 ---
 
@@ -24,9 +21,9 @@ En transférant votre nom de domaine, vous changerez de registre pour celui-ci. 
 >
 > Si le nom de domaine en question doit rester enregistré chez OVHcloud mais modifié dans ses modalités de gestion ou de propriété, un transfert sortant de domaine n'est pas la procédure appropriée.
 >
-> Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](https://docs.ovh.com/fr/customer/gestion-des-contacts/).
+> Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](/pages/account/customer/managing_contacts).
 >
-> Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](https://docs.ovh.com/fr/domains/changement-proprietaire-domaine/).
+> Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](/pages/web/domains/trade_domain).
 >
 
 ## Prérequis
@@ -82,7 +79,7 @@ Une fois le déverrouillage de votre nom de domaine effectué et votre code obte
 
 Lorsque vous êtes invité à fournir votre code de transfert, entrez-le dans la zone en face de votre nom de domaine. Si vous ne disposez pas encore du code de transfert, vous pouvez cocher la case intitulée `Entrer le code de transfert ultérieurement`{.action}. Toutefois, nous vous conseillons vivement de vous assurer que vous disposez du code à remettre avant de continuer. N'oubliez pas que le transfert ne démarrera pas tant qu'un code valide n'aura pas été fourni.
 
-Vous pouvez également terminer votre commande avec un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} et d'autres solutions OVHcloud. Cela peut vous intéresser si vous souhaitez également migrer vos services vers OVHcloud. Notre guide intitulé « [Migrer mon site chez OVHcloud](../../hosting/migrer-mon-site-chez-ovh/) » vous fournira des instructions sur la façon de procéder.
+Vous pouvez également terminer votre commande avec un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} et d'autres solutions OVHcloud. Cela peut vous intéresser si vous souhaitez également migrer vos services vers OVHcloud. Notre guide intitulé « [Migrer mon site chez OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh) » vous fournira des instructions sur la façon de procéder.
 
 > [!warning]
 >
@@ -97,7 +94,7 @@ Vous pouvez également terminer votre commande avec un [hébergement web](https:
 
 - En cliquant sur `Modifier la configuration`{.action} dans cette étape, vous pouvez entrer les noms des serveurs DNS que le nom de domaine utilise actuellement. De cette manière, le nom de domaine sera déjà associé à ces serveurs DNS dans la configuration OVHcloud.
 
-- Si vous continuez sans effectuer cette opération, le nom de domaine sera fourni avec une nouvelle zone DNS sur les serveurs DNS OVHcloud. Une [modification manuelle de la zone DNS](../editer-ma-zone-dns/) peut alors devenir nécessaire.
+- Si vous continuez sans effectuer cette opération, le nom de domaine sera fourni avec une nouvelle zone DNS sur les serveurs DNS OVHcloud. Une [modification manuelle de la zone DNS](/pages/web/domains/dns_zone_edit) peut alors devenir nécessaire.
 
 - Dans certains cas, le processus de transfert peut nécessiter des informations supplémentaires concernant le propriétaire du nom de domaine. Pour ajouter ces informations, cliquez sur l'option `Gérer les contacts/le propriétaire`{.action}.
 
@@ -133,6 +130,6 @@ Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de d
 
 ## Aller plus loin
 
-[Migration de votre site Web et de vos e-mails vers OVHcloud](../../hosting/migrer-mon-site-chez-ovh/)
+[Migration de votre site Web et de vos e-mails vers OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh)
 
 Rejoignez notre communauté d'utilisateurs sur [https://community.ovh.com/](https://community.ovh.com/){.external}.

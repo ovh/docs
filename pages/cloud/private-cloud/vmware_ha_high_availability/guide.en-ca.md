@@ -1,9 +1,6 @@
 ---
 title: VMware HA (High Availability)
-slug: vmware-ha-high-availability
 excerpt: Manage restart policy with HA function
-section: VMware vSphere features
-order: 02
 updated: 2020-04-30
 ---
 
@@ -29,7 +26,7 @@ If HA is not enabled in your cluster, go to the `Configure`{.action} tab of your
 Click `Edit`{.action} and slide the cursor to enable the HA feature.
 
 It is also important to enable host monitoring. This setting allows pulsing signals to be sent between ESXi hosts to detect a possible failure.
-Disabling it is required to perform update operations with [Update Manager](https://docs.ovh.com/gb/en/private-cloud/use_vmware_update_manager/){.external}.
+Disabling it is required to perform update operations with [Update Manager](/pages/cloud/private-cloud/vmware_update_manager){.external}.
 
 ![](images/HA.png){.thumbnail}
 
@@ -86,7 +83,7 @@ If a datastore fails with an all path down status, you can set the actions to ta
 
 ##### VM Monitoring
 
-VM monitoring is available after [VMware tools](https://docs.ovh.com/gb/en/private-cloud/install_vmware_tools/){.external} is installed, in case of non-response via the **tools** (heartbeat signals) the virtual machine will be automatically restarted. Advanced configuration is possible for this feature (for example, reboot interval).
+VM monitoring is available after [VMware tools](/pages/cloud/private-cloud/vmware_tools_install){.external} is installed, in case of non-response via the **tools** (heartbeat signals) the virtual machine will be automatically restarted. Advanced configuration is possible for this feature (for example, reboot interval).
 
 ![](images/HAparam5.PNG){.thumbnail}
 

@@ -1,9 +1,6 @@
 ---
 title: 'Gérer vos instances Public Cloud'
-slug: debuter-avec-une-instance-public-cloud
 excerpt: 'Découvrez comment gérer vos instances Public Cloud dans l’espace client OVHcloud'
-section: 'Premiers pas'
-order: 05
 updated: 2023-01-04
 ---
 
@@ -18,7 +15,7 @@ Vous pouvez gérer vos instances Public Cloud dans votre [espace client](https:/
 ## Prérequis
 
 - Un [projet Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud
-- Une [instance Public Cloud](../premiers-pas-instance-public-cloud/) dans votre projet
+- Une [instance Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps) dans votre projet
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 ## En pratique
@@ -55,30 +52,30 @@ Ces actions sont également disponibles sur la page de gestion des instances si 
 
 Cliquez sur `Éditer`{.action}.
 
-La nouvelle page qui s'affiche alors présente une version modifiée des options [de création d'instance](../premiers-pas-instance-public-cloud/), dans laquelle vous pouvez modifier les éléments suivants :
+La nouvelle page qui s'affiche alors présente une version modifiée des options [de création d'instance](/pages/platform/public-cloud/public-cloud-first-steps), dans laquelle vous pouvez modifier les éléments suivants :
 
 - **Modifier le nom** : vous pouvez donner un nom à l'instance pour plus de facilité d'identification.
 - **Modifier l’image** : vous pouvez choisir un autre système d'exploitation pour l'instance (notez que la réinstallation d'une instance supprimera toutes les données qu'elle contient).
-- **Modifier le modèle** : vous pouvez changer de modèle d'instance. Veuillez vous référer à [ce guide](../premiers-pas-instance-public-cloud/#etape-3-creer-une-instance) pour plus d'informations sur les options.
-- **Modifier la période de facturation** : vous pouvez modifier la période de facturation de l'instance d'une facturation horaire à mensuelle. Veuillez vous référer à [ce guide](../changer-type-facturation-public-cloud/) pour plus d'informations.
+- **Modifier le modèle** : vous pouvez changer de modèle d'instance. Veuillez vous référer à [ce guide](/pages/platform/public-cloud/public-cloud-first-steps#etape-3-creer-une-instance) pour plus d'informations sur les options.
+- **Modifier la période de facturation** : vous pouvez modifier la période de facturation de l'instance d'une facturation horaire à mensuelle. Veuillez vous référer à [ce guide](/pages/platform/public-cloud/changing_hourly_monthly_billing) pour plus d'informations.
 
 #### Créer un backup d'une instance
 
 Cliquez sur `Créer un backup`{.action}.
 
-Reportez-vous au guide « [Sauvegarder une instance](../sauvegarder-une-instance/) » pour plus d'informations. 
+Reportez-vous au guide « [Sauvegarder une instance](/pages/platform/public-cloud/save_an_instance) » pour plus d'informations. 
 
 #### Créer un backup automatique d'une instance
 
 Cliquez sur `Créer une sauvegarde automatisée`{.action}.
 
-Reportez-vous au guide « [Sauvegarder une instance](../sauvegarder-une-instance/#creer-une-sauvegarde-automatisee-dune-instance) » pour plus d'informations.
+Reportez-vous au guide « [Sauvegarder une instance](/pages/platform/public-cloud/save_an_instance#creer-une-sauvegarde-automatisee-dune-instance) » pour plus d'informations.
 
 #### Suspendre une instance
 
 Cliquez sur `Arrêter`{.action}.
 
-Cette action aura pour effet de suspendre l'instance. Référez-vous à notre guide « [Suspendre ou mettre en pause une instance](../suspendre-ou-mettre-en-pause-une-instance/#arreter-suspend-une-instance) » pour plus d'informations.
+Cette action aura pour effet de suspendre l'instance. Référez-vous à notre guide « [Suspendre ou mettre en pause une instance](/pages/platform/public-cloud/suspend_or_pause_an_instance#arreter-suspend-une-instance) » pour plus d'informations.
 
 Cliquez sur `Démarrer`{.action} pour réactiver l'instance.
 
@@ -86,7 +83,7 @@ Cliquez sur `Démarrer`{.action} pour réactiver l'instance.
 
 Cliquez sur `Redémarrer en mode rescue`{.action}.
 
-Cela activera le mode rescue de l'instance. Consultez notre guide [Passer une instance en mode rescue](../passer-une-instance-en-mode-rescue/) pour obtenir des informations détaillées.
+Cela activera le mode rescue de l'instance. Consultez notre guide [Passer une instance en mode rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode) pour obtenir des informations détaillées.
 
 #### Redémarrer une instance
 
@@ -103,7 +100,7 @@ Confirmez la demande de redémarrage dans la fenêtre qui apparaît.
 
 Cliquez sur `Suspendre`{.action}.
 
-Ceci placera l'instance dans l'état « *shelved* », affiché ici comme `Suspended`. Consultez notre guide « [Suspendre ou mettre en pause une instance](../suspendre-ou-mettre-en-pause-une-instance/#suspendre-shelve-une-instance) » pour plus d'informations sur les différents états de suspension d'une instance.
+Ceci placera l'instance dans l'état « *shelved* », affiché ici comme `Suspended`. Consultez notre guide « [Suspendre ou mettre en pause une instance](/pages/platform/public-cloud/suspend_or_pause_an_instance#suspendre-shelve-une-instance) » pour plus d'informations sur les différents états de suspension d'une instance.
 
 Cliquez sur `Réactiver`{.action} pour restaurer l'état `Activé` de l'instance.
 
@@ -133,12 +130,12 @@ Cliquez alors sur l'onglet `Console VNC`{.action}.
 
 La console VNC fournit un accès direct à votre instance. Pour que cet accès fonctionne, vous devez d'abord configurer un nom d'utilisateur et un mot de passe sur l'instance. 
 
-Consultez notre guide « [Créer une première instance Public Cloud et s'y connecter](../premiers-pas-instance-public-cloud/#etape-4-connexion-a-votre-instance) » pour plus d'informations.
+Consultez notre guide « [Créer une première instance Public Cloud et s'y connecter](/pages/platform/public-cloud/public-cloud-first-steps#etape-4-connexion-a-votre-instance) » pour plus d'informations.
 
 ## Aller plus loin
 
-[Créer une première instance Public Cloud et s’y connecter](../premiers-pas-instance-public-cloud/)
+[Créer une première instance Public Cloud et s’y connecter](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Présentation d'Horizon](../horizon/)
+[Présentation d'Horizon](/pages/platform/public-cloud/introducing_horizon)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

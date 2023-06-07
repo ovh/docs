@@ -1,11 +1,8 @@
 ---
 title: Añadir un bloque de IP
-slug: anadir-bloque-ip
 routes:
-    canonical: 'https://docs.ovh.com/es/private-cloud/anadir-bloque-ip/'
+    canonical: '/pages/cloud/private-cloud/ajout_de_bloc_ip'
 excerpt: Contratar un bloque de IP en Managed Bare Metal
-section: Funcionalidades de OVHcloud
-order: 01
 updated: 2020-11-18
 ---
 
@@ -48,7 +45,7 @@ Deberá rellenar diferentes campos para crear su bloque de IP.
 
 > [!primary]
 >
-> Para más información sobre las IP reservadas en su bloque y su utilización, consulte la siguiente guía: [Utilizar el plugin OVHcloud Network](../plugin-ovhcloud-network/).
+> Para más información sobre las IP reservadas en su bloque y su utilización, consulte la siguiente guía: [Utilizar el plugin OVHcloud Network](/pages/cloud/managed-bare-metal/plugin_ovh_network).
 >
 
 - El país en el que el bloque de IP está alojado resulta importante en algunos casos para el posicionamiento de sus servicios (por ejemplo, un sitio web español tendrá un mejor posicionamiento en España si la IP es española).

@@ -1,9 +1,6 @@
 ---
 title: 'DNS-Server einer OVHcloud Domain ändern'
-slug: webhosting_allgemeine_informationen_zu_den_dns_servern
 excerpt: 'Erfahren Sie hier, wie Sie DNS-Server im OVHcloud Kundencenter bearbeiten'
-section: 'DNS und DNS-Zone'
-order: 01
 updated: 2021-02-18
 ---
 
@@ -20,7 +17,7 @@ updated: 2021-02-18
 
 **D**omain **N**ame **S**ystem ist ein Satz von Elementen, um eine Domain mit einer IP-Adresse zu verbinden.
 
-Die vollständige Erklärung finden Sie in der Anleitung "[OVHcloud DNS-Zone bearbeiten](../webhosting_bearbeiten_der_dns_zone/#understanddns)".
+Die vollständige Erklärung finden Sie in der Anleitung "[OVHcloud DNS-Zone bearbeiten](/pages/web/domains/dns_zone_edit#understanddns)".
 
 ### DNS Server 
 
@@ -39,7 +36,7 @@ DNS Server werden in der Regel in Doppelkonfigurationen (primärer und sekundär
 - Sie verfügen über eine bei OVHcloud registrierte [Domain](https://www.ovhcloud.com/de/domains/).
 - Sie verfügen über die [entsprechenden Berechtigungen](../../customer/verwaltung-der-kontakte/){.external} für die Verwaltung der Domain über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de
-) mit den [erforderlichen Berechtigungen](../../customer/verwaltung-der-kontakte/) zum Verwalten der Domain
+) mit den [erforderlichen Berechtigungen](/pages/account/customer/managing_contacts) zum Verwalten der Domain
 
 > [!primary]
 >
@@ -59,7 +56,7 @@ Bitte beachten Sie:
 
 - Wenn neue DNS-Server deklariert werden (beispielsweise wenn OVHcloud DNS-Server externe ersetzen), wird die alte DNS-Konfiguration nicht automatisch in die neue repliziert. Stellen Sie sicher, dass Ihre neue DNS-Zone alle DNS-Einträge enthält, die erforderlich sind, damit die Dienste Ihrer Domain korrekt funktionieren (z.B. Ihre Website und Ihre E-Mail-Adressen).
 
-- Wenn Sie nur ein Element Ihrer aktuellen DNS-Konfiguration ändern möchten (also einen DNS-Eintrag), empfehlen wir Ihnen stattdessen, unsere [Anleitung zur Änderung der DNS-Zone](../webhosting_bearbeiten_der_dns_zone/) zu befolgen.
+- Wenn Sie nur ein Element Ihrer aktuellen DNS-Konfiguration ändern möchten (also einen DNS-Eintrag), empfehlen wir Ihnen stattdessen, unsere [Anleitung zur Änderung der DNS-Zone](/pages/web/domains/dns_zone_edit) zu befolgen.
 
 - Bestimmte Organisationen und Registrys, die Domainendungen verwalten, haben besondere Anforderungen an die DNS Server (Anzahl der Namensserver, Wert der Einträge, etc.). Überprüfen Sie im Zweifelsfall die Regeln der zuständigen Registry der Domain.
 
@@ -108,6 +105,6 @@ Nachdem die erforderlichen Änderungen vorgenommen wurden, dauert es eine gewiss
 
 ## Weiterführende Informationen
 
-[Bearbeiten einer OVHcloud DNS-Zone](../webhosting_bearbeiten_der_dns_zone/)
+[Bearbeiten einer OVHcloud DNS-Zone](/pages/web/domains/dns_zone_edit)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

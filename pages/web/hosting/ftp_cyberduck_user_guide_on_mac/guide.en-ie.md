@@ -1,9 +1,6 @@
 ---
 title: 'Web hosting: Cyberduck user guide (on Mac)'
 excerpt: Insert Here A Short Desc
-slug: web_hosting_cyberduck_user_guide_on_mac
-section: FTP and SSH
-order: 05
 updated: 2020-05-05
 ---
 
@@ -22,7 +19,7 @@ To get the application, go to the official Cyberduck website:
 
 
 ![cyberduck macOS](images/2344.png){.thumbnail}
-Cyberduck is an application for Mac users. If you have a machine that uses Windows, use [FileZilla](https://docs.ovh.com/ie/en/hosting/web_hosting_filezilla_user_guide/) instead.
+Cyberduck is an application for Mac users. If you have a machine that uses Windows, use [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide) instead.
 
 
 ## Interface

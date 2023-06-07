@@ -1,9 +1,6 @@
 ---
 title: 'Upgrading your operating system'
-slug: upgrading-operating-system
 excerpt: Find out how to upgrade your end of life operating system
-section: 'Tutorials'
-order: 14
 updated: 2022-02-07
 ---
 
@@ -15,7 +12,7 @@ This tutorial will provide you with the steps to upgrade an end of life operatin
 
 > [!alert]
 > Warning: As with any major release upgrade of an operating system there is risk of failure, data loss or broken software configuration. 
-> Therefore, OVHcloud strongly recommends to [backup your instance](../back-up-instance/) and conduct extensive testing on your applications to make sure they work on the new operating system version prior to following this tutorial.
+> Therefore, OVHcloud strongly recommends to [backup your instance](/pages/platform/public-cloud/save_an_instance) and conduct extensive testing on your applications to make sure they work on the new operating system version prior to following this tutorial.
 >
 
 > [!primary]
@@ -25,8 +22,8 @@ This tutorial will provide you with the steps to upgrade an end of life operatin
 
 ## Requirements
 
-- [Root access](../become_the_root_user_and_select_a_password/) to the server
-- [Backup](../back-up-instance/) must be taken before starting
+- [Root access](/pages/platform/public-cloud/become_root_and_change_password) to the server
+- [Backup](/pages/platform/public-cloud/save_an_instance) must be taken before starting
 
 ## Instructions
 
@@ -129,7 +126,7 @@ $ Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-147-generic x86_64)
 > The new version will not be reflected on the OVHcloud Control Panel / API and on the Horizon / OpenStack API when you upgrade the operating system instead of reinstalling it.
 >
 
-Now verify if your applications are working as expected. In case there are issues, we recommend [restoring your backup](../create-restore-virtual-server-from-backup/) that was taken prior to the upgrade.
+Now verify if your applications are working as expected. In case there are issues, we recommend [restoring your backup](/pages/platform/public-cloud/create_restore_a_virtual_server_with_a_backup) that was taken prior to the upgrade.
 
 ### Fedora
 
@@ -162,7 +159,7 @@ $ sudo dnf system-upgrade reboot
 Once the version is downloaded and the upgrade process has been initiated, the server will reboot to complete the upgrade.
 <br>It may take a while before you an connect again to the server as the upgrade takes a while to be completed.
 
-Verify if your applications are working as expected. In case there are issues, we recommend [restoring your backup](../create-restore-virtual-server-from-backup/) that was taken prior to the upgrade.
+Verify if your applications are working as expected. In case there are issues, we recommend [restoring your backup](/pages/platform/public-cloud/create_restore_a_virtual_server_with_a_backup) that was taken prior to the upgrade.
 
 > [!primary]
 > If you encounter any issues, you may find answers to your questions on the [Fedora Docs](https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/){.external}.

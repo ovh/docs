@@ -1,9 +1,6 @@
 ---
 title: Aktywacja optymalizacji PHP na hostingu OVH
 excerpt: Ten przewodnik pomoże Ci w aktywacji funkcji PHP-FPM na hostingu www OVHcloud, w celu ulepszenia czasu odpowiedzi PHP.
-slug: aktywacja_optymalizacji_php_na_hostingu_ovh
-section: PHP
-order: 03
 updated: 2020-05-05
 ---
 
@@ -17,7 +14,7 @@ PHP-FPM jest skompilowane za pomocą opcode-caching, co pozwala na zminimalizowa
 Otrzymujemy w ten sposób wydajność aż do 7 razy szybszą w naszych testowych laboratoriach w porównaniu ze starym mechanizmem.
 
 ## W panelu klienta
-W tym przewodniku znajdują się informacje na temat aktywacji PHP FPM i zdefiniowania wersji PHP w pliku .ovhconfig. Czynności te można wykonać w [panelu klienta](https://docs.ovh.com/pl/hosting/konfiguracja_php_na_hostingu_www_ovh_2014/).
+W tym przewodniku znajdują się informacje na temat aktywacji PHP FPM i zdefiniowania wersji PHP w pliku .ovhconfig. Czynności te można wykonać w [panelu klienta](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014).
 
 Uwaga: w przypadku PHP-FPM, ze względów bezpieczeństwa, poniższe opcje są wyłączone (niezalecane przez PHP):
 

@@ -1,9 +1,6 @@
 ---
 title: Adicionar um bloco IP
-slug: adicionar-bloco-ip
 excerpt: Encomendar um bloco IP no seu Hosted Private Cloud
-section: Funcionalidades da OVHcloud
-order: 01
 updated: 2022-04-06
 ---
 
@@ -46,7 +43,7 @@ Vários campos deverão ser preenchidos para criar o seu bloco IP
 
 > [!primary]
 >
-> Não hesite em consultar o nosso manual sobre o [plugin OVHcloud Network](../plugin-ovh-network/){.external-link} para saber quais são os IP reservados do seu bloco, assim como a sua utilização.
+> Não hesite em consultar o nosso manual sobre o [plugin OVHcloud Network](/pages/cloud/private-cloud/plugin_ovh_network){.external-link} para saber quais são os IP reservados do seu bloco, assim como a sua utilização.
 >
 
 - País do bloco IP: importante em certos casos para o referenciamento dos seus serviços (um site português terá um melhor SEO em Portugal se o IP também for português)

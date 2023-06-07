@@ -1,8 +1,6 @@
 ---
 title: Gestire il Load Balancer dallo Spazio Cliente OVH
-slug: utilizzo-lb
 excerpt: Principali funzionalità e gestione del servizio Load Balancer dallo Spazio Cliente OVH
-section: Per iniziare
 updated: 2017-12-01
 ---
 

@@ -1,11 +1,8 @@
 ---
 title: Evitar el modo de solo lectura del disco de las MV en Linux
-slug: como-evitar-disco-en-solo-lectura-en-linux
 routes:
-    canonical: 'https://docs.ovh.com/us/es/private-cloud/como-evitar-disco-en-solo-lectura-en-linux/'
+    canonical: '/pages/cloud/private-cloud/comment_eviter_le_disk_en_read_only_sous_linux'
 excerpt: Cómo evitar el modo de solo lectura del disco de las MV en Linux
-section: Gestión de las máquinas virtuales
-order: 10
 updated: 2020-11-18
 ---
 

@@ -1,11 +1,8 @@
 ---
 title: "Adição de um nó num cluster Nutanix (EN)"
-slug: add-node
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/nutanix/add-node/'
+    canonical: '/pages/cloud/nutanix/33-add-node'
 excerpt: 'Add a node and confirm that it is working properly'
-section: Utilização avançada
-order: 03
 hidden: true
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
@@ -118,7 +115,7 @@ Click `Close`{.action} to return to the dashboard.
 
 ## Go further <a name="gofurther"></a>
 
-[Nutanix Hyperconvergence](https://docs.ovh.com/pt/nutanix/nutanix-hci/)
+[Nutanix Hyperconvergence](/pages/cloud/nutanix/03-nutanix-hci)
 
 [Nutanix Node Addition Guide](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v5_20:wc-cluster-expand-wc-t.html)
 

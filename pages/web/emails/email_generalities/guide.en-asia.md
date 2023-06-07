@@ -1,9 +1,6 @@
 ---
 title: 'Getting started with an OVHcloud email solution'
-slug: web_hosting_an_overview_of_ovh_email
 excerpt: 'Find out how to get started with an OVHcloud email solution'
-section: 'Getting started'
-order: 01
 updated: 2021-07-19
 ---
 
@@ -77,8 +74,8 @@ You will need to set up your email address on the device you want to check your 
 
 |Windows|Outlook|Apple|Android|Other|
 |---|---|---|---|---|
-|[Windows 10 Mail](../mail-configuration-windows-10/)|[Outlook 2016](../configuration-outlook-2016/)|[macOS Mail](../guide-configuring-mail-on-macos/)|[Android](../configuration-android/)|[Gmail online interface](../gmail-configuration/)|
-| | |[iPhone and iPad](../email_hosting_iphone_ios_91_configuration/){.external}| | |
+|[Windows 10 Mail](../mail-configuration-windows-10/)|[Outlook 2016](../configuration-outlook-2016/)|[macOS Mail](../guide-configuring-mail-on-macos/)|[Android](../configuration-android/)|[Gmail online interface](/pages/web/emails/how_to_configure_gmail)|
+| | |[iPhone and iPad](/pages/web/emails/how_to_configure_ios){.external}| | |
 
 If you simply need the information required to configure your email account, the settings to use are listed below:
 
@@ -98,7 +95,7 @@ If you simply need the information required to configure your email account, the
 
 > [!warning]
 >
-> If you encounter any issues configuring your email address on your device, [you can use our configuration](../) guides or get in touch with the publishers of the application you are using, because the change required may be particular to the application.
+> If you encounter any issues configuring your email address on your device, [you can use our configuration](/products/web-cloud-email-collaborative-solutions-mx-plan) guides or get in touch with the publishers of the application you are using, because the change required may be particular to the application.
 >
 
 ### MX Plan solution legacy version.
@@ -144,8 +141,8 @@ You will need to set up your email address on the device you want to check your 
 
 |Windows|Outlook|Apple|Android|Other|
 |---|---|---|---|---|
-|[Windows 10 Mail](../mail-configuration-windows-10/)|[Outlook 2016](../configuration-outlook-2016/)|[macOS Mail](../guide-configuring-mail-on-macos/)|[Android](../configuration-android/)|[Gmail online interface](../gmail-configuration/)|
-| | |[iPhone and iPad](../email_hosting_iphone_ios_91_configuration/)| | |
+|[Windows 10 Mail](../mail-configuration-windows-10/)|[Outlook 2016](../configuration-outlook-2016/)|[macOS Mail](../guide-configuring-mail-on-macos/)|[Android](../configuration-android/)|[Gmail online interface](/pages/web/emails/how_to_configure_gmail)|
+| | |[iPhone and iPad](/pages/web/emails/how_to_configure_ios)| | |
 
 If you simply need the information required to configure your email account, the settings to use are listed below:
 
@@ -165,7 +162,7 @@ If you simply need the information required to configure your email account, the
 
 > [!warning]
 >
-> If you encounter any issues configuring your email address on your device, [you can use our configuration](../) guides or get in touch with the publishers of the application you are using, because the change required may be particular to the application.
+> If you encounter any issues configuring your email address on your device, [you can use our configuration](/products/web-cloud-email-collaborative-solutions-mx-plan) guides or get in touch with the publishers of the application you are using, because the change required may be particular to the application.
 >
 
 ## Go further

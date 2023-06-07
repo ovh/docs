@@ -1,9 +1,6 @@
 ---
 title: 'Accedere allo spazio di storage di un hosting Web'
-slug: accedere-spazio-storage-ftp-hosting-web
 excerpt: 'Come connettersi allo spazio di storage del tuo hosting Web OVHcloud'
-section: FTP e SSH
-order: 02
 updated: 2022-10-21
 ---
 
@@ -56,7 +53,7 @@ In questa interfaccia dovresti trovare i dati richiesti per eseguire l’accesso
 - **Server SSH**: Indirizzo del server che consente l'accesso allo spazio di storage utilizzando un terminale tramite il protocollo SSH.
 - **Utente principale**: Identificativo (S)FTP principale creato sul tuo hosting. Tutti gli utenti (S)FTP del tuo hosting sono disponibili nella colonna "Login" della tabella.
 
-Se hai dimenticato la password dell’utente FTP o SSH è possibile, in base alla soluzione attivata, utilizzare l’icona a forma di matita o cliccare sui tre puntini in corrispondenza dell’utente e selezionare l’opzione `Modifica la password`{.action}. In caso di necessità, consulta la guida [Modificare la password di un utente FTP](../modificare-la-password-utente-ftp/).
+Se hai dimenticato la password dell’utente FTP o SSH è possibile, in base alla soluzione attivata, utilizzare l’icona a forma di matita o cliccare sui tre puntini in corrispondenza dell’utente e selezionare l’opzione `Modifica la password`{.action}. In caso di necessità, consulta la guida [Modificare la password di un utente FTP](/pages/web/hosting/ftp_change_password).
 
 ![ftpconnect](images/connect-ftp-step2.png){.thumbnail}
 
@@ -116,14 +113,14 @@ ssh sshlogin@sshserver -p connectionport
 
 Sostituisci “sshlogin” “shserver” e “connectionport”con i tuoi dati. Una volta inviato il comando, ti verrà richiesto di inserire la password dell’utente SSH.
 
-Se le informazioni sono corrette, potrai eseguire operazioni sullo spazio di storage. Per maggiori informazioni, consulta la guida [Utilizzare la connessione SSH su un hosting Web](../hosting_condiviso_il_protocollo_ssh/).
+Se le informazioni sono corrette, potrai eseguire operazioni sullo spazio di storage. Per maggiori informazioni, consulta la guida [Utilizzare la connessione SSH su un hosting Web](/pages/web/hosting/ssh_on_webhosting).
 
 ![ftpconnect](images/connect-ftp-step5.png){.thumbnail}
 
 ## Per saperne di più
 
-[Modificare la password di un utente FTP ](../modificare-la-password-utente-ftp/){.external}
+[Modificare la password di un utente FTP ](/pages/web/hosting/ftp_change_password){.external}
 
-[Utilizzare la connessione SSH su un hosting condiviso](../hosting_condiviso_il_protocollo_ssh/){.external}
+[Utilizzare la connessione SSH su un hosting condiviso](/pages/web/hosting/ssh_on_webhosting){.external}
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: Monitoring GPU usage on OVHcloud Managed Kubernetes Service
-slug: monitoring-gpu-application
 excerpt: 'Find out how to expose, visualize and monitor GPU metrics on OVHcloud Managed Kubernetes Service'
-section: GPU
-order: 1
 updated: 2023-05-02
 ---
 
@@ -42,11 +39,11 @@ It is however always important to keep the costs of GPU in mind. If each applica
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/platform/kubernetes-k8s/deploying-hello-world).
 
-You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/platform/kubernetes-k8s/installing-helm) tutorial.
 
-And you also need to follow [Deploying a GPU application on OVHcloud Managed Kubernetes](../deploying-gpu-application) tutorial to install NVIDIA GPU operator and configure your cluster correctly with needed components for this guide.
+And you also need to follow [Deploying a GPU application on OVHcloud Managed Kubernetes](/pages/platform/kubernetes-k8s/deploying-gpu-application) tutorial to install NVIDIA GPU operator and configure your cluster correctly with needed components for this guide.
 
 ## Instructions
 
@@ -64,7 +61,7 @@ NVIDIA Data Center GPU Manager (DCGM) is a set of tools for managing and monitor
 To gather GPU telemetry in Kubernetes, the NVIDIA GPU Operator deploys the `dcgm-exporter`, based on DCGM exposes GPU metrics for `Prometheus` and can be visualized using `Grafana`. 
 `dcgm-exporter` is architected to take advantage of `KubeletPodResources API` and exposes GPU metrics in a format that can be scraped by `Prometheus`.
 
-As you have already followed the [Deploying a GPU application on OVHcloud Managed Kubernetes](../deploying-gpu-application) tutorial, you should already have `dcgm-exporter` running in your cluster.
+As you have already followed the [Deploying a GPU application on OVHcloud Managed Kubernetes](/pages/platform/kubernetes-k8s/deploying-gpu-application) tutorial, you should already have `dcgm-exporter` running in your cluster.
 
 <pre class="console"><code>$ kubectl get pod -n gpu-operator -l app=nvidia-dcgm-exporter
 NAME                         READY   STATUS    RESTARTS   AGE
@@ -289,7 +286,7 @@ You should now see your new dashboard:
 
 ![Grafana NVIDIA DCGM Exporter Dashboard](images/grafana-dcgm-exporter-dashboard.png){.thumbnail}
 
-If you followed the [Deploying a GPU application on OVHcloud Managed Kubernetes](../deploying-gpu-application) tutorial, you should see metrics like in our example.
+If you followed the [Deploying a GPU application on OVHcloud Managed Kubernetes](/pages/platform/kubernetes-k8s/deploying-gpu-application) tutorial, you should see metrics like in our example.
 
 You can click on the `instance`{.action} drop down menu in order to visualize GPU metrics for another Node for example:
 
@@ -423,7 +420,7 @@ release "video-analytics-demo-0-1683012074" uninstalled
 
 Prometheus and Grafana are very powerful monitoring tools, but also have alerting systems. Don't hesitate to dig in order to create alerts for example.
 
-To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation](../).
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

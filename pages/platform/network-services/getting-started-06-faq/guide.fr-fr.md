@@ -1,9 +1,6 @@
 ---
 title: Public Cloud Network Services - FAQ
-slug: faq
 excerpt: Foire aux questions sur les services réseau Public Cloud
-section: Premiers pas
-order: 03
 updated: 2022-11-02
 ---
 
@@ -82,7 +79,7 @@ Ce mode n'est actuellement pas pris en charge. À ce jour, la Gateway prend uniq
 
 ### Le routeur virtuel L3 (Gateway) peut-il m'aider si je souhaite avoir une Gateway d'accès à Internet pour toutes les VMs de mon vRack ?
 
-Oui, c'est le cas pour une Gateway (routeur L3 avec option SNAT). Actuellement, seules les instances en **mode privé** de réseau et connectées à un réseau privé à région unique sont prises en charge. Pour plus d'informations, consultez notre [guide concept sur le réseau Public Cloud](https://docs.ovh.com/fr/publiccloud/network-services/networking-concepts/).
+Oui, c'est le cas pour une Gateway (routeur L3 avec option SNAT). Actuellement, seules les instances en **mode privé** de réseau et connectées à un réseau privé à région unique sont prises en charge. Pour plus d'informations, consultez notre [guide concept sur le réseau Public Cloud](/pages/platform/network-services/concepts-01-public-cloud-networking-concepts).
 
 ### Le service Gateway sera-t-il fourni avec une IP et un port publics ?
 

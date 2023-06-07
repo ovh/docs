@@ -1,8 +1,6 @@
 ---
 title: Korzystanie z tokenów OpenStack
-slug: using-openstack-tokens
 excerpt: "Dowiedz się, jak tworzyć i wykorzystywać tokeny OpenStack do realizacji Twoich operacji"
-order: 01
 updated: 2023-05-05
 ---
 

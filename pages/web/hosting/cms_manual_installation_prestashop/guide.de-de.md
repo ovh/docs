@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Manuelle Installation von PrestaShop"
-slug: cms_manually_install_prestashop
 excerpt: "Erfahren Sie hier, wie Sie Ihr PrestaShop CMS eigenständig installieren"
-section: CMS
-order: 07
 updated: 2023-04-03
 ---
 
@@ -27,9 +24,9 @@ Hier finden Sie alle Elemente, um das Content Management System (CMS) PrestaShop
 
 > [!success]
 >
-> Um PrestaShop **automatisch** in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu installieren, lesen Sie unsere Anleitung zur [Installation Ihrer Website mit 1-Klick-Modulen](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/).
+> Um PrestaShop **automatisch** in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu installieren, lesen Sie unsere Anleitung zur [Installation Ihrer Website mit 1-Klick-Modulen](/pages/web/hosting/cms_install_1_click_modules).
 >
-> Um ein **anderes CMS manuell** zu installieren (WordPress, Drupal, Joomla!), lesen Sie unsere Anleitung zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/).
+> Um ein **anderes CMS manuell** zu installieren (WordPress, Drupal, Joomla!), lesen Sie unsere Anleitung zur [manuellen Installation eines CMS](/pages/web/hosting/cms_manual_installation).
 >
 
 **Dieses Tutorial erklärt, wie Sie Ihr PrestaShop CMS manuell installieren.**
@@ -46,7 +43,7 @@ Hier finden Sie alle Elemente, um das Content Management System (CMS) PrestaShop
 
 Um das CMS **PrestaShop** auf Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) zu installieren sind einige Vorbereitungen erforderlich.
 
-Führen Sie zunächst **alle Schritte** in unserer Anleitung zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/) aus, bevor Sie mit Schritt 2 fortfahren.
+Führen Sie zunächst **alle Schritte** in unserer Anleitung zur [manuellen Installation eines CMS](/pages/web/hosting/cms_manual_installation) aus, bevor Sie mit Schritt 2 fortfahren.
 
 ### Schritt 2: Manuelle Installation abschließen <a name="step2"></a>
 
@@ -88,7 +85,7 @@ PrestaShop fordert Sie auf, einige Informationen zu Ihrem zukünftigen Onlinesho
 - *Shop name*: Geben Sie den Namen Ihres Onlineshops ein.
 - *Main activity*: Wählen Sie Ihren Tätigkeitsbereich aus den Vorschlägen im Drop-down-Menü.
 - *Country*: Wählen Sie Ihr Land aus.
-- *Enable SSL*: Haken Sie **Yes** an, um das Umschreiben von URLs auf "https://" zu erzwingen. Sie müssen dazu über ein SSL-Zertifikat für Ihr Hosting oder Ihren Domainnamen verfügen. Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung zur [Verwaltung eines SSL-Zertifikats auf Ihrem OVHcloud Webhosting](https://docs.ovh.com/de/hosting/ssl-zertifikate-auf-webhostings-verwalten/).
+- *Enable SSL*: Haken Sie **Yes** an, um das Umschreiben von URLs auf "https://" zu erzwingen. Sie müssen dazu über ein SSL-Zertifikat für Ihr Hosting oder Ihren Domainnamen verfügen. Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung zur [Verwaltung eines SSL-Zertifikats auf Ihrem OVHcloud Webhosting](/pages/web/hosting/ssl_on_webhosting).
 
 **Your Account**
 
@@ -112,7 +109,7 @@ Treffen Sie Ihre Wahl und klicken Sie auf `Next`{.action}.
 
 ![PrestaShop installation step 6](images/Prestashop-install-db-config-6.png){.thumbnail}
 
-Halten Sie die Zugangsdaten für Ihre Datenbank bereit. (Sie können bei Bedarf **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/) verwenden).
+Halten Sie die Zugangsdaten für Ihre Datenbank bereit. (Sie können bei Bedarf **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](/pages/web/hosting/cms_manual_installation) verwenden).
 
 Geben Sie die angeforderten Informationen zur Datenbank ein:
 
@@ -127,11 +124,11 @@ Geben Sie die angeforderten Informationen zur Datenbank ein:
 
 - *Database name*: Dieser Name wurde bei der Erstellung der Datenbank im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) definiert.
 
-- *Database login*: Dieser Name ist identisch mit dem Datenbanknamen, wenn Sie eine im Webhosting inkludierte Datenbank verwenden. Für Datenbanken, die mit Web Cloud Databases erstellt wurden, lesen Sie die Informationen in **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/).
+- *Database login*: Dieser Name ist identisch mit dem Datenbanknamen, wenn Sie eine im Webhosting inkludierte Datenbank verwenden. Für Datenbanken, die mit Web Cloud Databases erstellt wurden, lesen Sie die Informationen in **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](/pages/web/hosting/cms_manual_installation).
 
 - *Database password*: Das Passwort wurde Ihnen bei der Erstellung der Datenbank per E-Mail gesendet. Möglicherweise haben Sie es inzwischen geändert.
 
-- *Tables prefix*: Wenn die Installation mit einer neuen Datenbank erfolgt, geben Sie ein Präfix Ihrer Wahl ein. Wenn Sie eine Datenbank eingeben, die bereits von einer anderen Website verwendet wird, lesen Sie die Informationen in **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/), um kein in Ihrer Datenbank bereits verwendetes Tabellenpräfix einzugeben.
+- *Tables prefix*: Wenn die Installation mit einer neuen Datenbank erfolgt, geben Sie ein Präfix Ihrer Wahl ein. Wenn Sie eine Datenbank eingeben, die bereits von einer anderen Website verwendet wird, lesen Sie die Informationen in **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](/pages/web/hosting/cms_manual_installation), um kein in Ihrer Datenbank bereits verwendetes Tabellenpräfix einzugeben.
 
 - *Drop existing tables*: **Haken Sie diese Option nicht an, wenn Sie Ihre Datenbank bereits mit einer anderen Website verwenden**.
 
@@ -144,7 +141,7 @@ Klicken Sie auf `Test your database connection now!`{.action}, um die verwendete
 
 ![PrestaShop installation step 6-1](images/Prestashop-install-db-config-6-1.png){.thumbnail}
 
-Wenn die Nachricht "Your database is connected" erscheint, klicken Sie auf `Next`{.action}. Wenn nicht, überprüfen Sie die eingegebenen Daten und korrigieren Sie ggf. die Angaben. Bei Bedarf lesen Sie die Informationen in **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/).
+Wenn die Nachricht "Your database is connected" erscheint, klicken Sie auf `Next`{.action}. Wenn nicht, überprüfen Sie die eingegebenen Daten und korrigieren Sie ggf. die Angaben. Bei Bedarf lesen Sie die Informationen in **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](/pages/web/hosting/cms_manual_installation).
 
 #### 2.6 Installation von PrestaShop abschließen
 
@@ -158,7 +155,7 @@ Speichern Sie Ihre Login-Daten zu PrestaShop, bevor Sie die Seite verlassen.
 >
 > **Aus Sicherheitsgründen wird empfohlen, die Installationsdatei in Ihrem FTP-Bereich zu löschen.**
 >
-> Um diese Aktion durchzuführen, folgen Sie unserer Anleitung ["Mit dem Speicherplatz eines Webhostings verbinden"](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) und nutzen Sie das [PrestaShop Forum](https://www.prestashop.com/forums/){.external}, um sicherzustellen, dass die richtigen Dateien gelöscht werden.
+> Um diese Aktion durchzuführen, folgen Sie unserer Anleitung ["Mit dem Speicherplatz eines Webhostings verbinden"](/pages/web/hosting/ftp_connection) und nutzen Sie das [PrestaShop Forum](https://www.prestashop.com/forums/){.external}, um sicherzustellen, dass die richtigen Dateien gelöscht werden.
 >
 
 > [!success]

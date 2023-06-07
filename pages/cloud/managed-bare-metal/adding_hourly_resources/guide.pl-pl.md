@@ -1,10 +1,8 @@
 ---
 title: 'Dodawanie zasobów w systemie godzinowym'
-slug: dodawanie-zasobow-w-systemie-godzinowym
 routes:
     canonical: 'https://docs.ovh.com/pl/private-cloud/dodawanie-zasobow-w-systemie-godzinowym/'
 excerpt: 'Dowiedz się, jak dodawać zasoby płatne w systemie godzinowym'
-section: 'Funkcjonalności OVHcloud'
 updated: 2020-12-15
 ---
 

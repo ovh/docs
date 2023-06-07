@@ -1,9 +1,6 @@
 ---
 title: 'Using email aliases and redirections'
-slug: email-redirection-guide
 excerpt: 'Find out how to manage aliases and email redirections'
-section: 'Email address features'
-order: 01
 updated: 2020-05-20
 ---
 

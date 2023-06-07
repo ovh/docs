@@ -1,9 +1,6 @@
 ---
 title: Transferir um domínio para outro agente de registo
 excerpt: Saiba como transferir um domínio da OVHcloud para o agente de registo da sua escolha
-slug: transferencia_de_saida_de_um_nome_de_dominio_generico_ou_geografico
-section: Transferência
-order: 04
 updated: 2023-03-10
 ---
 
@@ -25,9 +22,9 @@ De modo a impedir as transferências de domínio não autorizadas, os nomes de d
 >
 > Se o domínio em questão deve permanecer registado na OVHcloud mas alterado nas suas modalidades de gestão ou de propriedade, uma transferência de domínio não é o procedimento adequado.
 >
-> Para transferir a gestão do seu domínio para outra conta de cliente OVHcloud, o método adequado é uma alteração de contactos. O procedimento está descrito no [presente guia](https://docs.ovh.com/pt/customer/gestao_dos_contactos/).
+> Para transferir a gestão do seu domínio para outra conta de cliente OVHcloud, o método adequado é uma alteração de contactos. O procedimento está descrito no [presente guia](/pages/account/customer/managing_contacts).
 >
-> Se também tem de mudar o **proprietário** do nome de domínio, deve fazê-lo **antes** de alterar os contactos do nome de domínio. Para isso, siga as instruções descritas na nossa documentação sobre a [alteração de proprietário dos nomes de domínio](https://docs.ovh.com/pt/domains/alteracao-titular-dominio/).
+> Se também tem de mudar o **proprietário** do nome de domínio, deve fazê-lo **antes** de alterar os contactos do nome de domínio. Para isso, siga as instruções descritas na nossa documentação sobre a [alteração de proprietário dos nomes de domínio](/pages/web/domains/trade_domain).
 >
 
 ## Requisitos
@@ -39,7 +36,7 @@ De modo a impedir as transferências de domínio não autorizadas, os nomes de d
 
 > [!primary]
 >
-> Se é o **proprietário** do domínio mas a sua gestão na Área de Cliente OVHcloud está indisponível, seja através do seu próprio acesso ou através do contacto administrativo do domínio, consulte [este guia](../../customer/gestao_dos_contactos/#caso-especifico-de-um-proprietario-de-dominio) antes de continuar.
+> Se é o **proprietário** do domínio mas a sua gestão na Área de Cliente OVHcloud está indisponível, seja através do seu próprio acesso ou através do contacto administrativo do domínio, consulte [este guia](/pages/account/customer/managing_contacts#caso-especifico-de-um-proprietario-de-dominio) antes de continuar.
 >
 
 ## Instruções
@@ -108,7 +105,7 @@ Para mais informações contacte o seu novo agente de registo.
 
 ## Quer saber mais?
 
-[Transferência de domínio .co.uk de saída](https://docs.ovh.com/pt/domains/transferencia_de_saida_de_um_dominio_couk/)
+[Transferência de domínio .co.uk de saída](/pages/web/domains/transfer_outgoing_couk)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 

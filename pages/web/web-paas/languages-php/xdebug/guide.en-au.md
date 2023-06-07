@@ -1,7 +1,5 @@
 ---
 title: Using Xdebug
-slug: xdebug
-section: Php
 updated: 2022-06-02
 ---
 

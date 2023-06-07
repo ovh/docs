@@ -1,9 +1,6 @@
 ---
 title: Introduction to the OVH Load Balancer 
-slug: loadbalancer-introduction 
 excerpt: Find out more about the OVH Load Balancer solution 
-section: Getting started 
-order: 1
 updated: 2018-01-17
 ---
 

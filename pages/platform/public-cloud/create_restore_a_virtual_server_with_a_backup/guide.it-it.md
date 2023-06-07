@@ -1,9 +1,7 @@
 ---
 title: 'Crea/ripristina il tuo server virtuale da un backup'
 excerpt: 'Crea/ripristina il tuo server virtuale da un backup'
-slug: crearipristina_il_tuo_server_virtuale_da_un_backup
 legacy_guide_number: g1882
-section: Gestione dallo Spazio Cliente OVHcloud
 updated: 2021-03-19
 ---
 
@@ -15,7 +13,7 @@ updated: 2021-03-19
 
 ## Obiettivo
 
-Lo Spazio Cliente OVHcloud ti permette di creare i [backup delle tue istanze](../effettuare-snapshot-di-un-istanza/) in pochi click e automatizzare questo processo.
+Lo Spazio Cliente OVHcloud ti permette di creare i [backup delle tue istanze](/pages/platform/public-cloud/save_an_instance) in pochi click e automatizzare questo processo.
 Ripristinare un’istanza utilizzando un backup è necessario, ad esempio, se hai effettuato un’operazione scorretta sulla sua configurazione o semplicemente per crearne una nuova. Puoi utilizzare questi backup di istanze per due ragioni principali:
 
 - Creare un'istanza basata sul backup per duplicare l'istanza di origine ad esempio, se configuri un'infrastruttura di load balancing.
@@ -25,7 +23,7 @@ Ripristinare un’istanza utilizzando un backup è necessario, ad esempio, se ha
 
 ## Prerequisiti
 
-- Disporre del backup di un’istanza Public Cloud A questo proposito, consulta [la guida dedicata alla creazione di un backup](../effettuare-snapshot-di-un-istanza/)
+- Disporre del backup di un’istanza Public Cloud A questo proposito, consulta [la guida dedicata alla creazione di un backup](/pages/platform/public-cloud/save_an_instance)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
@@ -52,11 +50,11 @@ Alcuni elementi sono predefiniti:
 
 Definisci il nome della nuova istanza, la chiave SSH, la vRack e il periodo di fatturazione, poi clicca sul pulsante `Crea l'istanza`{.action}.
 
-Per maggiori informazioni sulla creazione di un’istanza, consulta [questa guida](../crea_unistanza_dallo_spazio_cliente_ovh/).
+Per maggiori informazioni sulla creazione di un’istanza, consulta [questa guida](/pages/platform/public-cloud/public-cloud-first-steps#step-3-crea-unistanza/).
 
 > [!primary]
 >
-> Per creare un’istanza in un datacenter diverso da quello del backup, è necessario trasferirla nell’area corrispondente. Consulta quindi la [guida sul trasferimento del backup di un’istanza tra datacenter](../trasferisci_il_backup_di_unistanza_da_un_datacenter_a_un_altro/).
+> Per creare un’istanza in un datacenter diverso da quello del backup, è necessario trasferirla nell’area corrispondente. Consulta quindi la [guida sul trasferimento del backup di un’istanza tra datacenter](/pages/platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another).
 >
 
 ### Ripristinare un’istanza a partire da un backup
@@ -89,8 +87,8 @@ L'istanza avrà lo stato di `reinstallazione` fino al completamento del processo
 
 ## Per saperne di più
 
-[Creazione e connessione a una prima istanza Public Cloud](../come_utilizzare_la_tua_istanza_public_cloud/)
+[Creazione e connessione a una prima istanza Public Cloud](/pages/platform/public-cloud/first_steps_with_public_cloud_instance)
 
-[Effettuare lo Snapshot di un'istanza](../effettuare-snapshot-di-un-istanza/)
+[Effettuare lo Snapshot di un'istanza](/pages/platform/public-cloud/save_an_instance)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

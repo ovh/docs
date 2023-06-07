@@ -1,9 +1,6 @@
 ---
 title: "Redirecting a domain name managed by OVHcloud"
-slug: redirect-domain-name
 excerpt: "Find out about the various redirection types, and how to create one for a domain name managed by OVHcloud"
-section: General
-order: 01
 updated: 2022-10-06
 ---
 
@@ -43,7 +40,7 @@ There are several ways of doing this:
 > Be careful about the changes you apply, or contact a [specialised provider](https://partner.ovhcloud.com/en/) for SEO if necessary.
 >
 > Warning: A redirection created from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) does not redirect an URL as `https://` to another domain or URL. 
-> To create this type of redirection, you will have to apply [a URL rewrite](https://docs.ovh.com/us/en/hosting/htaccess_url_rewriting_using_mod_rewrite/), for example by editing a ".htaccess" file. 
+> To create this type of redirection, you will have to apply [a URL rewrite](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite), for example by editing a ".htaccess" file. 
 >
 
 ### Redirecting a domain name from the Control Panel
@@ -61,7 +58,7 @@ Three redirection options are available from the [OVHcloud Control Panel](https:
 > The `Redirection`{.action} tab contains a fourth option that allows your domain to be quickly pointed to DNS A, AAAA and CNAME records.<br>
 > Since this is not strictly a "redirection", this option will not be detailed in this guide.
 >
-> For more information on DNS records, see our [DNS records](https://docs.ovh.com/us/en/domains/web_hosting_how_to_edit_my_dns_zone/).
+> For more information on DNS records, see our [DNS records](/pages/web/domains/dns_zone_edit).
 >
 
 Below are the three types of redirections detailed step by step.
@@ -385,15 +382,15 @@ This variable can be used when you temporarily move files to another site. Visit
 
 ## Go further <a name="go-further"></a>
 
-[Tutorial - How do I block access to my website for certain IP addresses via a .htaccess file?](https://docs.ovh.com/us/en/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+[Tutorial - How do I block access to my website for certain IP addresses via a .htaccess file?](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
-[Protecting your website’s administration interface with a .htaccess file](https://docs.ovh.com/us/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+[Protecting your website’s administration interface with a .htaccess file](/pages/web/hosting/htaccess_protect_directory_by_password).
 
-[URL rewriting using mod_rewrite](https://docs.ovh.com/us/en/hosting/htaccess_url_rewriting_using_mod_rewrite/).
+[URL rewriting using mod_rewrite](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite).
 
-[Using .htaccess for advanced purposes](https://docs.ovh.com/us/en/hosting/what_else_can_you_do_with_the_htaccess_file/).
+[Using .htaccess for advanced purposes](/pages/web/hosting/htaccess_what_else_can_you_do).
 
-[Editing an OVHcloud DNS zone](https://docs.ovh.com/us/en/domains/web_hosting_how_to_edit_my_dns_zone/)
+[Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/).
 

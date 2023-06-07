@@ -1,6 +1,5 @@
 ---
 title: Jak zamowic usuge SSL Gateway
-slug: jak-zamowic-ssl-gateway
 links: 
    - docs/web/ssl-gateway/use_ssl_gateway/
 excerpt: Zabezpiecz poaczenia ze swoja strona internetowa

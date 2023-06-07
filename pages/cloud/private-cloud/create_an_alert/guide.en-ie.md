@@ -1,9 +1,6 @@
 ---
 title: Creating an alert
-slug: create_an_alert
 excerpt: Find out how to set up alerts on your vSphere client
-section: Maintenance and monitoring
-order: 09
 updated: 2020-07-08
 ---
 

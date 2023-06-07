@@ -1,8 +1,6 @@
 ---
 title: Gestionar las facturas de OVHcloud
-slug: gestionar-facturas-ovh
 excerpt: Cómo gestionar sus facturas y pagos en OVHcloud
-section: Pedidos, facturas y servicios
 updated: 2022-05-12
 ---
 
@@ -27,7 +25,7 @@ OVHcloud pone a su disposición un espacio que le permitirá consultar, administ
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) como [contacto de facturación](https://docs.ovh.com/us/es/customer/gestion-de-los-contactos/) del servicio.
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) como [contacto de facturación](/pages/account/customer/managing_contacts) del servicio.
 
 ## Procedimiento
 
@@ -117,13 +115,13 @@ Para abonar las facturas pendientes de pago, haga clic en el menú `Acciones mas
 
 ![Abonar el importe pendiente](images/pay_debt.png){.thumbnail}
 
-Se generará una [orden de pedido de regularización](https://docs.ovh.com/us/es/billing/gestionar-los-pedidos-en-ovh/#la-orden-de-pedido). Una vez abonado el importe pendiente, se regularizará su situación.
+Se generará una [orden de pedido de regularización](/pages/account/billing/managing_ovh_orders#la-orden-de-pedido). Una vez abonado el importe pendiente, se regularizará su situación.
 
 #### Solicitar la cancelación de una factura
 
 > [!primary]
 >
-> Para solicitar la baja al vencimiento del servicio, siga las indicaciones de esta [guía](https://docs.ovh.com/us/es/billing/how-to-cancel-your-services/).
+> Para solicitar la baja al vencimiento del servicio, siga las indicaciones de esta [guía](/pages/account/billing/how_to_cancel_services).
 >
 
 ### Seguimiento de los pagos
@@ -141,9 +139,9 @@ También puede exportar sus justificantes de pago en formato *.CSV* utilizando e
 
 ## Más información
 
-[Gestionar la renovación de los servicios](https://docs.ovh.com/us/es/billing/renovacion-automatica-ovh/)
+[Gestionar la renovación de los servicios](/pages/account/billing/how_to_use_automatic_renewal)
 
-[Gestionar las formas de pago](https://docs.ovh.com/us/es/billing/gestionar-formas-de-pago/)
+[Gestionar las formas de pago](/pages/account/billing/manage-payment-methods)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
 

@@ -1,8 +1,6 @@
 ---
 title: 'Utilizza Zerto tra OVHcloud e una piattaforma terza'
-slug: zerto-virtual-replication-customer-to-ovhcloud
 excerpt: "Come connettere il tuo Zerto OVHcloud a un'altra piattaforma"
-section: Servizi e opzioni OVHcloud
 updated: 2022-02-11
 ---
 
@@ -18,7 +16,7 @@ Questa guida ti mostra come configurare la rete privata virtuale (VPN) per colle
 Per illustrare la procedura di interconnessione utilizzeremo le funzionalità VPN di OPNSense, una piattaforma firewall/VPN open source.
 Per facilitare la spiegazione, descriveremo il modo più semplice per stabilire un tunnel VPN con la rete dell’interfaccia Zerto Virtual Manager (ZVM).
 
-Per il secondo caso, consulta la nostra guida "[Zerto tra due datacenter OVHcloud](https://docs.ovh.com/it/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/)".
+Per il secondo caso, consulta la nostra guida "[Zerto tra due datacenter OVHcloud](/pages/cloud/private-cloud/zerto_virtual_replication_as_a_service)".
 
 ## Prerequisiti
 

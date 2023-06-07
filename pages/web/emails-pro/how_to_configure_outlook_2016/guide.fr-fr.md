@@ -1,9 +1,6 @@
 ---
 title: 'Configurer un compte E-mail Pro sur Outlook'
-slug: configuration-outlook-2016
 excerpt: 'Découvrez comment configurer votre compte E-mail Pro sur Outlook pour Windows'
-section: 'Configuration sur ordinateur'
-order: 1
 updated: 2021-07-05
 ---
 
@@ -71,7 +68,7 @@ OVHcloud propose aussi une application web permettant d'accéder à votre adress
 
 ### Récupérer une sauvegarde de votre adresse e-mail
 
-Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consulter le paragraphe « **Exporter depuis Windows** » sur notre guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#exporter-depuis-windows).
+Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consulter le paragraphe « **Exporter depuis Windows** » sur notre guide [Migrer manuellement votre adresse e-mail](/pages/web/emails/manual_email_migration#exporter-depuis-windows).
 
 ### Modifier les paramètres existants
 
@@ -97,8 +94,8 @@ La fenêtre est divisée en deux parties, **Courrier entrant** et **Courrier sor
 
 ## Aller plus loin
 
-[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur Outlook 2016 pour Windows](https://docs.ovh.com/fr/emails/configuration-outlook-2016/){.external}
+[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur Outlook 2016 pour Windows](/pages/web/emails/how_to_configure_outlook_2016){.external}
 
-[Configurer son compte Exchange sur Outlook 2016 pour Windows](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-outlook-2016/){.external}
+[Configurer son compte Exchange sur Outlook 2016 pour Windows](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

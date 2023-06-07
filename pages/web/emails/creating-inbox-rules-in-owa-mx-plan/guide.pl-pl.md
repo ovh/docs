@@ -1,9 +1,6 @@
 ---
 title: 'Tworzenie reguł skrzynki odbiorczej w aplikacji OWA'
-slug: tworzenie-regul-skrzynki-odbiorczej-w-owa
 excerpt: 'Dowiedz się, jak utworzyć reguły przekierowania e-maili i filtry przy użyciu aplikacji OWA'
-section: 'Pierwsze kroki'
-order: 05
 updated: 2020-03-11
 ---
 
@@ -107,10 +104,10 @@ Ponieważ żadne mechanizmy ochrony antyspamowej nie są w stanie precyzyjnie ok
 
 ## Sprawdź również
 
-[Exchange 2016: Uruchomienie autorespondera w interfejsie OWA](../exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa/)
+[Exchange 2016: Uruchomienie autorespondera w interfejsie OWA](/pl/emails/exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa/)
 
-[Exchange 2016: współdzielenie kalendarza w interfejsie OWA](../exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa/)
+[Exchange 2016: współdzielenie kalendarza w interfejsie OWA](/pl/emails/exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa/)
 
-[Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)](../exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/)
+[Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)](/pl/emails/exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/)
 
 Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.

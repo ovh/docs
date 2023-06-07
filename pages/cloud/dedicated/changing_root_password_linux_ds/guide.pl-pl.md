@@ -1,8 +1,6 @@
 ---
 title: 'Zmiana hasła root na serwerze dedykowanym'
-slug: zmiana-hasla-root-na-serwerze-dedykowanym-linux
 excerpt: 'Dowiedz się, jak zmienić hasło root do serwera dedykowanego'
-section: 'Diagnostyka i tryb Rescue'
 updated: 2021-02-16
 ---
 
@@ -66,7 +64,7 @@ passwd: password updated successfully
 
 #### Etap 1: identyfikacja partycji systemu
 
-Po ponownym uruchomieniu serwera w [trybie Rescue](../ovh-rescue/) zidentyfikuj partycję systemu. W tym celu wprowadź następującą komendę:
+Po ponownym uruchomieniu serwera w [trybie Rescue](/pages/cloud/dedicated/rescue_mode) zidentyfikuj partycję systemu. W tym celu wprowadź następującą komendę:
 
 ```
 # fdisk -l
@@ -130,10 +128,10 @@ Po wykonaniu tego etapu, zmień tryb uruchamiania Twojego serwera, aby `Uruchomi
 
 ## Sprawdź również
 
-[Uruchamianie i korzystanie z trybu Rescue](../ovh-rescue/)
+[Uruchamianie i korzystanie z trybu Rescue](/pages/cloud/dedicated/rescue_mode)
 
-[Zabezpieczanie serwera dedykowanego](../porady-zabezpieczanie-serwera-dedykowanego/)
+[Zabezpieczanie serwera dedykowanego](/pages/cloud/dedicated/securing-a-dedicated-server)
 
-[Zmiana hasła administratora na serwerze dedykowanym z systemem Windows](../zmiana-hasla-admin-windows/)
+[Zmiana hasła administratora na serwerze dedykowanym z systemem Windows](/pages/cloud/dedicated/changing-admin-password-on-windows)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

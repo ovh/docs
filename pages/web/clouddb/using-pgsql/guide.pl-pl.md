@@ -1,9 +1,6 @@
 ---
 title: Pierwsze kroki z PostgreSQL
-slug: pierwsze-kroki-z-postgresql
 excerpt: Korzystanie z baz danych
-section: 'Pierwsze kroki'
-order: 03
 updated: 2023-02-15
 ---
 
@@ -17,7 +14,7 @@ Chcesz korzystać z PostgreSQL? Sprawdź, jak w prosty sposób tworzyć bazy dan
 ### Wymagania
 
 - Posiadanie instancji Web Cloud Databases
-- Zapoznanie się z przewodnikiem na temat [Web Cloud Databases](../pierwsze-kroki-z-clouddb/)
+- Zapoznanie się z przewodnikiem na temat [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb)
 
 ### Czym jest baza danych PostgreSQL?
 PostgreSQL to system zarządzania relacyjnymi bazami danych oraz obiektami (SGBDRO).
@@ -43,7 +40,7 @@ Aby zalogować się do bazy danych, musisz dysponować:
 
 Wszystkie te informacje są dostępne w [Panelu klienta](https://www.ovh.com/manager/web/){.external}.
 
-Zapoznaj się również z tym przewodnikiem: [Pierwsze kroki z usługą Cloud Databases](../starting_with_clouddb/guide.pl-pl.md){.ref}
+Zapoznaj się również z tym przewodnikiem: [Pierwsze kroki z usługą Cloud Databases](/pl/clouddb/starting_with_clouddb/guide.pl-pl.md){.ref}
 
 
 ### Logowanie z linii polecen

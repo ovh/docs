@@ -1,9 +1,6 @@
 ---
 title: 'Tutorial - Tworzenie strony WWW w OVHcloud'
-slug: create-your-own-web-page
 excerpt: 'Dowiedz się, jak utworzyć pierwszą stronę internetową na darmowym hostingu Start 10M'
-section: "Tutoriale"
-order: 012
 updated: 2023-02-17
 ---
 
@@ -385,13 +382,13 @@ Aby wyświetlić cel linku w nowej zakładce, wystarczy dodać atrybut `target` 
 
 ### Jak przechowywać treści na hostingu?
 
-Aby Twoje strony WWW były widoczne dla wszystkich użytkowników, należy je umieścić na hostingu (należy aktywować hosting zgodnie [z instrukcjami zawartymi w tym przewodniku](https://docs.ovh.com/pl/hosting/wlaczanie_start10m/)).
+Aby Twoje strony WWW były widoczne dla wszystkich użytkowników, należy je umieścić na hostingu (należy aktywować hosting zgodnie [z instrukcjami zawartymi w tym przewodniku](/pages/web/hosting/activate_start10m)).
 
 Pliki są przesyłane za pomocą dedykowanego protokołu: **FTP** (dla **F**ile **T**ransfert **P**protokół). Skorzystaj z programu dedykowanego do tej operacji, takiego jak [FileZilla](https://filezilla-project.org/download.php?type=client) lub [Cyberduck](https://cyberduck.io/download/).
 
 ### Uruchom swoją stronę przez FTP
 
-Aby umieszczać pliki na Twoim hostingu, zapoznaj się z przewodnikiem dotyczącym [korzystania z FileZilla](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/).
+Aby umieszczać pliki na Twoim hostingu, zapoznaj się z przewodnikiem dotyczącym [korzystania z FileZilla](/pages/web/hosting/ftp_filezilla_user_guide).
 
 Po całkowitym przeniesieniu plików na Twój hosting możesz zobaczyć wynik wpisując nazwę domeny na pasku adresowym przeglądarki lub naciskając klawisz `F5` na klawiaturze, aby odświeżyć stronę, jeśli już jesteś na Twojej stronie.
 

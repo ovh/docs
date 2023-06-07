@@ -1,9 +1,6 @@
 ---
 title: Activar la optimización de PHP en un alojamiento compartido OVH
 excerpt: Esta guía explica cómo activar PHP-FPM en un alojamiento de OVHcloud para mejorar los tiempos de respuesta de PHP
-slug: activar_la_optimizacion_de_php_en_un_alojamiento_compartido_ovh
-section: PHP
-order: 03
 updated: 2020-05-05
 ---
 
@@ -17,7 +14,7 @@ PHP-FPM está compilado con un sistema de opcode cache, lo que permite minimizar
 Esto permite obtener un rendimiento hasta 7 veces más rápido que el anterior mecanismo en nuestros laboratorios de prueba.
 
 ## En su área de cliente
-Esta guía explica cómo activar el PHP FPM y definir la versión de PHP a través del archivo .ovhconfig. Si lo desea, puede realizar esta operación de forma más sencilla directamente desde el área de cliente. Para ello, puede consultar la [siguiente guía](https://docs.ovh.com/es/hosting/cambiar-version-php-en-alojamiento-web/)
+Esta guía explica cómo activar el PHP FPM y definir la versión de PHP a través del archivo .ovhconfig. Si lo desea, puede realizar esta operación de forma más sencilla directamente desde el área de cliente. Para ello, puede consultar la [siguiente guía](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014)
 
 Atención: Por motivos de seguridad, con PHP-FPM se deshabilitan las siguientes opciones (deprecadas por PHP):
 

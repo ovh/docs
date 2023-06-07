@@ -1,9 +1,6 @@
 ---
 title: Evitar las trampas del SSL en un sitio web
 excerpt: Evitar las trampas del SSL en un sitio web
-slug: evitar_las_trampas_del_ssl_en_un_sitio_web
-section: SSL
-order: 04
 updated: 2020-05-05
 ---
 

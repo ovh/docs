@@ -1,11 +1,8 @@
 ---
 title: Object Storage - Utilizar S3 Object Storage con Nextcloud (EN)
-slug: s3/nextcloud
 excerpt: Learn how to set up storage in Nextcloud to use a S3 Object Storage bucket
-section: Configure Object Storage with your solutions
-order: 120
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/s3/nextcloud/'
+    canonical: '/pages/cloud/storage/object_storage/s3_nextcloud'
 updated: 2022-01-03
 ---
 
@@ -30,7 +27,7 @@ Nextcloud is a suite of client-server software for creating and using file hosti
 - A user with the required access rights on the bucket
 - Your S3 credentials (access_key and secret_access_key)
 
-See our [Getting started with S3 Object Storage](https://docs.ovh.com/es/storage/object-storage/s3/getting-started-with-object-storage/) guide.
+See our [Getting started with S3 Object Storage](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) guide.
 
 ## Instructions
 

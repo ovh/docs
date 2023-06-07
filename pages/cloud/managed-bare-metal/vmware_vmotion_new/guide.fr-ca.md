@@ -1,11 +1,8 @@
 ---
 title: VMware vMotion
-slug: vmware-vmotion-new
 routes:
-    canonical: 'https://docs.ovh.com/ca/fr/private-cloud/vmware-vmotion-new/'
+    canonical: '/pages/cloud/private-cloud/vmware_vmotion_new'
 excerpt: Déplacer votre machine virtuelle sur un hôte différent à chaud
-section: Fonctionnalités VMware vSphere
-order: 04
 updated: 2020-11-18
 ---
 
@@ -29,7 +26,7 @@ Pour déplacer une machine virtuelle sur une autre ressource, il vous suffit de 
 
 Le menu propose plusieurs options de Vmotion, dans notre exemple nous désirons uniquement migrer la machine virtuelle sur un autre hôte il faut donc sélectionner « Modifier uniquement la ressource de calcul ».
 
-L'option « Modifier uniquement le stockage » permet de migrer la machine virtuelle sur une autre banque de données. Cette opération appelé **Storage vMotion** est décrit dans [ce guide](../vmware-storage-vmotion-new/).
+L'option « Modifier uniquement le stockage » permet de migrer la machine virtuelle sur une autre banque de données. Cette opération appelé **Storage vMotion** est décrit dans [ce guide](/pages/cloud/managed-bare-metal/vmware_storage_vmotion).
 
 ![choix du type de vMotion](images/Vmotion2.png){.thumbnail}
 

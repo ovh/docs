@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - przepisz URL dostępu do mojej strony za pomocą mod_rewrite za pomocą pliku .htaccess"
 excerpt: "Dowiedz się, jak zmienić adres URL dostępu do Twojej strony za pomocą mod_rewrite za pomocą pliku .htaccess"
-slug: hosting_www_htaccess_-_generowanie_adresow_za_pomoca_mod_rewrite
-section: 'Przekierowania i uprawnienia dostępu'
-order: 03
 updated: 2022-12-22
 ---
 
@@ -53,7 +50,7 @@ Plik ".htaccess", w którym skonfigurujesz "**mod_rewrite**" Apache może być u
 
 Parametry określone w pliku ".htaccess" mają zastosowanie do katalogu, w którym jest on obecny, oraz do wszystkich jego podkatalogów.
 
-Aby edytować (lub utworzyć) katalogi, zaloguj się do przestrzeni FTP Twojego hostingu. W razie potrzeby skorzystaj z przewodnika "[Dostęp do przestrzeni dyskowej](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/)".
+Aby edytować (lub utworzyć) katalogi, zaloguj się do przestrzeni FTP Twojego hostingu. W razie potrzeby skorzystaj z przewodnika "[Dostęp do przestrzeni dyskowej](/pages/web/hosting/ftp_connection)".
 
 Poniżej znajdziesz kilka najpopularniejszych przykładów użycia oprogramowania Apache "**mod_rewrite**". Niektóre z nich mogą również ułatwić pozycjonowanie SEO na Twojej stronie WWW.
 
@@ -97,7 +94,7 @@ Ten adres URL może ułatwić pozycjonowanie SEO Twojej strony WWW.
 
 Kiedy korzystasz z hostingu OVHcloud, Twoja domena (na przykład **domain.tld**) jest zgłaszana w `MultiSite`, aby wyświetlić zawartość folderu docelowego zwanego również `Katalog główny`. Możesz spersonalizować nazwę `Katalog główny`.
 
-Zapoznaj się z naszym przewodnikiem dotyczącym [konfiguracji strony podpiętej w opcji MultiSite na hostingu](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/), jeśli chcesz uzyskać więcej informacji na ten temat.
+Zapoznaj się z naszym przewodnikiem dotyczącym [konfiguracji strony podpiętej w opcji MultiSite na hostingu](/pages/web/hosting/multisites_configure_multisite), jeśli chcesz uzyskać więcej informacji na ten temat.
 
 Niektórzy użytkownicy nie umieszczają swojej strony internetowej bezpośrednio na podstawie `Katalog główny`. Następnie tworzą podfolder (np.: **MyWebsite**) w `Katalog główny`, aby umieścić na nim swoją stronę internetową.
 
@@ -120,7 +117,7 @@ W naszym przykładzie adres Twojej strony internetowej musi być typu **http://d
 
 Certyfikaty SSL pozwalają na szyfrowanie informacji przesyłanych przez HTTP za pomocą Twojej strony WWW. Zapobiega to gromadzeniu przez osoby lub złośliwe roboty danych wymienianych między stroną i użytkownikiem, takich jak np. dane bankowe.
 
-Jeśli nie posiadasz certyfikatu SSL, zapoznaj się z naszym przewodnikiem dotyczącym [zarządzania certyfikatem SSL na hostingu OVHcloud](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/).
+Jeśli nie posiadasz certyfikatu SSL, zapoznaj się z naszym przewodnikiem dotyczącym [zarządzania certyfikatem SSL na hostingu OVHcloud](/pages/web/hosting/ssl_on_webhosting).
 
 Niektórzy z odwiedzających Twoją stronę mogą zapomnieć o wprowadzeniu adresu URL dostępu do Twojej witryny w **https://** : stanowi to istotne ryzyko dla wymiany danych między Twoją stroną WWW a przeglądarkami internetowymi.
 
@@ -136,9 +133,9 @@ W poniższym przykładzie wszystkie zapytania wykonane za pomocą adresu URL w "
   
 ## Sprawdź również <a name="go-further"></a>
 
-[Zablokować dostęp do mojej strony www dla niektórych adresów IP przez plik .htaccess](https://docs.ovh.com/pl/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/)
+[Zablokować dostęp do mojej strony www dla niektórych adresów IP przez plik .htaccess](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website)
 
-[Chroń interfejs administracyjny swojej strony plikiem .htaccess](https://docs.ovh.com/pl/hosting/hosting-htaccess-w-jaki-sposob-zabezpieczyc-dostep-dostepu-do-katalogu/)
+[Chroń interfejs administracyjny swojej strony plikiem .htaccess](/pages/web/hosting/htaccess_protect_directory_by_password)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
 

@@ -1,9 +1,6 @@
 ---
 title: Analyzing Twitter with Logs Data Platform
-slug: logs-data-platform-twitter
-order: 07
 excerpt: Logs Data Platform can be used in multiple ways. Twitter feed and keyword analysis is one of them.
-section: Use cases
 updated: 2019-04-10
 ---
 

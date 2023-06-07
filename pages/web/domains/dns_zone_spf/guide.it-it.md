@@ -1,9 +1,6 @@
 ---
 title: 'Aggiungere un record SPF alla configurazione di un dominio'
 excerpt: 'Come aggiungere un record SPF alla configurazione di un dominio presso OVHcloud'
-slug: hosting_condiviso_il_record_spf
-section: 'DNS e zona DNS'
-order: 05
 updated: 2022-09-12
 ---
 
@@ -222,8 +219,8 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.com ~all"
 
 ## Per saperne di più
 
-[Modifica di una zona DNS OVHcloud](../web_hosting_modifica_la_tua_zona_dns/){.external}.
+[Modifica di una zona DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external}.
 
-[Modificare i server DNS di un dominio OVHcloud](../web_hosting_gestisci_il_tuo_server_dns/){.external}.
+[Modificare i server DNS di un dominio OVHcloud](/pages/web/domains/dns_server_general_information){.external}.
 
 Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en](https://community.ovh.com/en/){.external}

@@ -1,9 +1,6 @@
 ---
 title: Configurer son compte Exchange sur Outlook 2016 pour Windows
-slug: exchange-configuration-automatique-sous-outlook-2016
 excerpt: Découvrez comment configurer un compte Exchange sur Outlook 2016 pour Windows
-section: Configuration sur ordinateur
-order: 01
 updated: 2021-07-05
 ---
 
@@ -27,11 +24,11 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 - Disposer d'une offre [Exchange](https://www.ovhcloud.com/fr/emails/){.external}.
 - Disposer du logiciel Microsoft Outlook 2016 ou ultérieur, installé sur votre ordinateur.
 - Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
-- Le champ SRV d'OVHcloud doit être correctement configuré dans la zone DNS du nom de domaine, n'hésitez pas à consulter notre guide [Ajouter un nom de domaine sur son service Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/ajouter-domaine-exchange/).
+- Le champ SRV d'OVHcloud doit être correctement configuré dans la zone DNS du nom de domaine, n'hésitez pas à consulter notre guide [Ajouter un nom de domaine sur son service Exchange](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain).
 
 > [!primary]
 >
-> Vous utilisez Outlook 2016 et ultérieur pour Mac ? Consultez notre documentation : [Configurer son compte Exchange sur Outlook 2016 pour Mac](https://docs.ovh.com/fr/microsoft-collaborative-solutions/configuration-outlook-2016-mac/){.external}.
+> Vous utilisez Outlook 2016 et ultérieur pour Mac ? Consultez notre documentation : [Configurer son compte Exchange sur Outlook 2016 pour Mac](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016_mac){.external}.
 >
 
 ## En pratique
@@ -75,13 +72,13 @@ Votre adresse e-mail Exchange, ainsi que toutes ses fonctions collaboratives, so
 
 ### Récupérer une sauvegarde de votre adresse e-mail
 
-Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consulter le paragraphe « **Exporter depuis Windows** » sur notre guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#exporter-depuis-windows).
+Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consulter le paragraphe « **Exporter depuis Windows** » sur notre guide [Migrer manuellement votre adresse e-mail](/pages/web/emails/manual_email_migration#exporter-depuis-windows).
 
 
 ## Aller plus loin
 
-[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur Outlook 2016 pour Windows](https://docs.ovh.com/fr/emails/configuration-outlook-2016/){.external}
+[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur Outlook 2016 pour Windows](/pages/web/emails/how_to_configure_outlook_2016){.external}
 
-[Configurer son compte E-mail Pro sur Outlook 2016 pour Windows](https://docs.ovh.com/fr/emails-pro/configuration-outlook-2016/){.external}
+[Configurer son compte E-mail Pro sur Outlook 2016 pour Windows](/pages/web/emails-pro/how_to_configure_outlook_2016){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

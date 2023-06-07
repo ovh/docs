@@ -1,8 +1,6 @@
 ---
 title: Comment ajouter un hôte ?
 excerpt: Découvrez comment ajouter des capacités de calculs à votre infrastructure
-slug: how_do_you_add_a_host
-section: Premiers pas
 updated: 2022-02-01
 ---
 
@@ -24,7 +22,7 @@ En quelques minutes, vous pouvez ajouter un nouvel hôte dans votre environnemen
 > [!warning]
 >
 > Les ressources ajoutées à partir de vSphere sont facturées à l'heure. Si vous souhaitez passer à une facturation mensuelle, vous pouvez changer les paramètres dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)).
-> Pour plus de détails, consultez notre [présentation de l’espace client Hosted Private Cloud OVHcloud](https://docs.ovh.com/ca/fr/private-cloud/manager-ovh-private-cloud/).
+> Pour plus de détails, consultez notre [présentation de l’espace client Hosted Private Cloud OVHcloud](/pages/cloud/private-cloud/manager_ovh_private_cloud).
 > 
 
 Dans l'interface vSphere, rendez-vous dans le tableau de bord `Hôtes et clusters`{.action}.

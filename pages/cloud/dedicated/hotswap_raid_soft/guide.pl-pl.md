@@ -1,8 +1,6 @@
 ---
 title: 'Wymiana dysku bez wyłączania serwera – Programowa macierz RAID'
-slug: hotswap-raid-soft
 excerpt: 'Dowiedz się, jak przebiega wymiana dysku bez wyłączania serwera w programowej macierzy RAID'
-section: 'RAID & dyski'
 updated: 2016-11-21
 ---
 
@@ -204,11 +202,11 @@ Po wykonaniu tych operacji sprawdź ponownie stan macierzy RAID.
 ```sh
 root@ns3054662:/home# cat /proc/mdstat
 >>> Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty]
->>> md2 : active raid1 sda2[0] sdb2[1](F)
+>>> md2 : active raid1 sda2[0] sdb2[1](/pages/cloud/dedicated/hotswap_raid_softF)
 >>>       3885385728 blocks super 1.2 [2/1] [U_]
 >>>       bitmap: 0/29 pages [0KB], 65536KB chunk
 
->>> md1 : active raid1 sdb1[2](F) sda1[0]
+>>> md1 : active raid1 sdb1[2](/pages/cloud/dedicated/hotswap_raid_softF) sda1[0]
 >>>       20971456 blocks [2/1] [U_]
 
 >>> unused devices: <none>
@@ -241,7 +239,7 @@ root@ns3054662:/home# cat /proc/mdstat
 >>> unused devices: <none>
 ```
 
-Niesprawny dysk jest teraz gotowy do wymiany przez technika w centrum danych. Po wykonaniu operacji zsynchronizuj ponownie macierz RAID. Zanim do tego przystąpisz, zapoznaj się z dokumentacją: [Programowa macierz RAID](https://docs.ovh.com/pl/dedicated/raid-soft/){.external}.
+Niesprawny dysk jest teraz gotowy do wymiany przez technika w centrum danych. Po wykonaniu operacji zsynchronizuj ponownie macierz RAID. Zanim do tego przystąpisz, zapoznaj się z dokumentacją: [Programowa macierz RAID](/pages/cloud/dedicated/raid_soft){.external}.
 
 ### Windows
 
@@ -293,7 +291,7 @@ Można wyłączyć miganie diody dysku, zastępując “on” przez “off” w 
 
 Przeprowadź tę operację w interfejsie **Zarządzanie dyskami** na serwerze Windows.
 
-Niesprawny dysk jest teraz gotowy do wymiany przez technika w centrum danych. Po wykonaniu operacji zsynchronizuj ponownie macierz RAID. Zanim do tego przystąpisz, zapoznaj się z dokumentacją: [Programowa macierz RAID](https://docs.ovh.com/pl/dedicated/raid-soft/){.external}.
+Niesprawny dysk jest teraz gotowy do wymiany przez technika w centrum danych. Po wykonaniu operacji zsynchronizuj ponownie macierz RAID. Zanim do tego przystąpisz, zapoznaj się z dokumentacją: [Programowa macierz RAID](/pages/cloud/dedicated/raid_soft){.external}.
 
 ## Sprawdź również
 

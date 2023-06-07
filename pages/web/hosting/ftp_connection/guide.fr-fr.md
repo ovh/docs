@@ -1,9 +1,6 @@
 ---
 title: 'Se connecter à l’espace de stockage de son hébergement web'
-slug: connexion-espace-stockage-ftp-hebergement-web
 excerpt: "Découvrez comment vous connecter à l'espace de stockage de votre hébergement web OVHcloud"
-section: 'FTP et SSH'
-order: 02
 updated: 2022-10-21
 ---
 **Dernière mise à jour le 19/01/2022**
@@ -57,7 +54,7 @@ Grâce à ces informations, vous devriez pouvoir retrouver les éléments requis
 - **Login principal**: Il s'agit de l'identifiant (S)FTP principal créé sur votre hébergement. Vous pouvez retrouver l'intégralité des utilisateurs (S)FTP de votre hébergement en vous reportant à la colonne « Login » du tableau.
 
 
-Si vous ne connaissez plus le mot de passe d'un utilisateur FTP ou SSH, selon votre offre, utilisez soit le pictogramme en forme de crayon, ou le bouton `...`{.action} suivi du bouton `Changer le mot de passe`{.action}. Notre documentation « [Modifier le mot de passe d’un utilisateur FTP](../modifier-mot-de-passe-utilisateur-ftp/) » peut vous accompagner dans cette démarche.
+Si vous ne connaissez plus le mot de passe d'un utilisateur FTP ou SSH, selon votre offre, utilisez soit le pictogramme en forme de crayon, ou le bouton `...`{.action} suivi du bouton `Changer le mot de passe`{.action}. Notre documentation « [Modifier le mot de passe d’un utilisateur FTP](/pages/web/hosting/ftp_change_password) » peut vous accompagner dans cette démarche.
 
 ![ftpconnect](images/connect-ftp-step2.png){.thumbnail}
 
@@ -120,14 +117,14 @@ Pour une utilisation en ligne de commande, voici celle que vous devrez utiliser.
 ssh sshlogin@sshserver -p connectionport
 ```
 
-Si les informations sont correctes, vous pourrez alors interagir avec votre espace de stockage. Aidez-vous de notre documentation « [Utiliser une connexion SSH sur un hébergement web](../mutualise-le-ssh-sur-les-hebergements-mutualises/) » si nécessaire.
+Si les informations sont correctes, vous pourrez alors interagir avec votre espace de stockage. Aidez-vous de notre documentation « [Utiliser une connexion SSH sur un hébergement web](/pages/web/hosting/ssh_on_webhosting) » si nécessaire.
 
 ![ftpconnect](images/connect-ftp-step5.png){.thumbnail}
 
 ## Aller plus loin
 
-[Modifier le mot de passe d’un utilisateur FTP](../modifier-mot-de-passe-utilisateur-ftp/){.external}.
+[Modifier le mot de passe d’un utilisateur FTP](/pages/web/hosting/ftp_change_password){.external}.
 
-[Utiliser une connexion SSH sur un hébergement web](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}.
+[Utiliser une connexion SSH sur un hébergement web](/pages/web/hosting/ssh_on_webhosting){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

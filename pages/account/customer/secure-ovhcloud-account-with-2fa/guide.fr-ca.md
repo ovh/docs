@@ -1,8 +1,6 @@
 ---
 title: 'Sécuriser son compte OVHcloud avec la double authentification'
-slug: securiser-son-compte-avec-une-2FA
 excerpt: 'Découvrez comment améliorer la sécurité de votre compte OVHcloud en activant la double authentification'
-section: Sécurité
 updated: 2022-07-20
 ---
 
@@ -21,7 +19,7 @@ Vous pouvez activer une authentification à deux facteurs (2FA). Celle-ci vient 
 
 - Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Posséder un smartphone ou une tablette (pour la méthode via application mobile) ou une clé de sécurité Universal Second Factor (U2F).
-- Avoir pris connaissance des [recommandations sur la gestion du mot de passe d'accès à votre compte](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/).
+- Avoir pris connaissance des [recommandations sur la gestion du mot de passe d'accès à votre compte](/pages/account/customer/manage-ovh-password).
 
 ## En pratique
 
@@ -35,8 +33,8 @@ Une fois la première association de l'application à votre compte effectuée, i
 
 ### Étape 1 : activer votre première méthode de double authentification
 
-- [Activer la méthode de double authentification par application mobile](https://docs.ovh.com/ca/fr/customer/activer-la-double-authentification-par-application-mobile/).
-- [Activer la méthode de double authentification par clé de sécurité](https://docs.ovh.com/ca/fr/customer/activer-la-double-authentification-par-cle-de-securite/).
+- [Activer la méthode de double authentification par application mobile](/pages/account/customer/enable-2fa-with-mobile-app).
+- [Activer la méthode de double authentification par clé de sécurité](/pages/account/customer/enable-2fa-with-security-key).
 
 Une fois la première méthode ajoutée, vous pouvez également en ajouter une ou deux autres afin de disposer de multiples moyens de vous connecter à votre compte.
 

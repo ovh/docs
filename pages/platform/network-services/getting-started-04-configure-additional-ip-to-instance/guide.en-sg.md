@@ -1,9 +1,6 @@
 ---
 title: Configuring an Additional IP
-slug: configure-additional-ip
 excerpt: "Find out how to add Additional IP addresses to your instance's configuration"
-section: Additional IP
-order: 01
 updated: 2023-01-04
 ---
 
@@ -288,7 +285,7 @@ Back in the section "IP Addresses", verify that the Additional IP address was ad
 
 ### Troubleshooting
 
-First, soft-reboot your instance via the instance's OS or from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). If you are still unable to establish a connection from the public network to your Additional IP and suspect a network problem, you need to reboot the instance in [rescue mode](https://docs.ovh.com/sg/en/public-cloud/put_an_instance_in_rescue_mode/). Then you can set up the Additional IP address directly on the instance.
+First, soft-reboot your instance via the instance's OS or from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). If you are still unable to establish a connection from the public network to your Additional IP and suspect a network problem, you need to reboot the instance in [rescue mode](/pages/platform/public-cloud/put_an_instance_in_rescue_mode). Then you can set up the Additional IP address directly on the instance.
 
 Once you are connected in rescue mode via SSH, enter the following command:
 
@@ -300,8 +297,8 @@ To test the connection, simply ping your Additional IP from the outside. If it r
 
 ## Go further
 
-[Importing an Additional IP](https://docs.ovh.com/sg/en/publiccloud/network-services/import-additional-ip/)
+[Importing an Additional IP](/pages/platform/network-services/additional-ip-import)
 
-[Migrating an Additional IP](https://docs.ovh.com/sg/en/publiccloud/network-services/migrate-additional-ip/)
+[Migrating an Additional IP](/pages/platform/network-services/additional-ip-migrate)
 
 Join our community of users on <https://community.ovh.com/en/>.

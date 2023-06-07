@@ -1,8 +1,6 @@
 ---
 title: 'Verwenden von Backups zum Erzeugen oder Wiederherstellen von Instanzen'
-slug: einen-virtuellen-server-aus-einem-backup-erstellen-wiederherstellen
 excerpt: 'Erfahren Sie hier, wie Sie Instanzen aus Backups oder wiederherstellen'
-section: 'Verwaltung im OVHcloud Kundencenter'
 updated: 2021-03-19
 ---
 
@@ -14,7 +12,7 @@ updated: 2021-03-19
 
 ## Ziel
 
-Das OVHcloud Kundencenter erlaubt es Ihnen, mit wenigen Klicks [Backups Ihrer Instanzen zu erstellen](../ein_backup_einer_instanz_erstellen/) und diesen Prozess auch zu automatisieren.
+Das OVHcloud Kundencenter erlaubt es Ihnen, mit wenigen Klicks [Backups Ihrer Instanzen zu erstellen](/pages/platform/public-cloud/save_an_instance) und diesen Prozess auch zu automatisieren.
 Sie können diese Instanzsicherungen für zwei grundlegende Zwecke verwenden:
 
 - Instanz auf der Grundlage des Backups erstellen, um die originale Instanz zu duplizieren; zum Beispiel, wenn Sie eine Infrastruktur zur Lastverteilung (Loadbalancing) konfigurieren.
@@ -51,11 +49,11 @@ Einige Elemente sind vordefiniert:
 
 Legen Sie den Namen der neuen Instanz, den SSH-Schlüssel, das vRack und den Abrechnungszeitraum fest und klicken Sie auf den Button `Instanz erstellen`{.action}.
 
-Weitere Informationen zur Erstellung einer Instanz finden Sie in [dieser Anleitung](../erstellung_einer_instanz_im_ovh_kundencenter/).
+Weitere Informationen zur Erstellung einer Instanz finden Sie in [dieser Anleitung](/pages/platform/public-cloud/public-cloud-first-steps#schritt-3-instanz-erstellen/).
 
 > [!primary]
 >
-> Um eine Instanz in einem anderen Rechenzentrum als dem des Backups zu erstellen, muss sie in die entsprechende Region migriert werden. Lesen Sie dazu die [Anleitung zum Transfer eines Backups](../instanz-backup-in-anderes-rechenzentrum-uebertragen/).
+> Um eine Instanz in einem anderen Rechenzentrum als dem des Backups zu erstellen, muss sie in die entsprechende Region migriert werden. Lesen Sie dazu die [Anleitung zum Transfer eines Backups](/pages/platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another).
 >
 
 ### Eine Instanz mithilfe eines Backups wiederherstellen
@@ -88,8 +86,8 @@ Die Instanz hat den Status `Reinstallation`, bis der Vorgang abgeschlossen ist. 
 
 ## Weiterführende Informationen
 
-[Erste Schritte](../public-cloud-erste-schritte/)
+[Erste Schritte](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Backup einer Instanz erstellen](../ein_backup_einer_instanz_erstellen/)
+[Backup einer Instanz erstellen](/pages/platform/public-cloud/save_an_instance)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

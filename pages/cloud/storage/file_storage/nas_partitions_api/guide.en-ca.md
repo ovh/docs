@@ -1,9 +1,6 @@
 ---
 title: HA-NAS - Managing partitions via API
-slug: nas/partitions-api
 excerpt: Find out how to manage HA-NAS partitions using the OVHcloud API
-section: HA-NAS
-order: 08
 updated: 2022-07-20
 ---
 
@@ -18,7 +15,7 @@ The OVHcloud HA-NAS service allows you to manage file storage that can be access
 ## Requirements
 
 - An OVHcloud [HA-NAS service](https://www.ovh.com/ca/en/nas/)
-- Consulting the [OVHcloud API first steps guide](https://docs.ovh.com/ca/en/api/first-steps-with-ovh-api/) to familiarise yourself with the OVHcloud APIv6
+- Consulting the [OVHcloud API first steps guide](/pages/account/api/first-steps) to familiarise yourself with the OVHcloud APIv6
 
 ## Instructions
 
@@ -280,8 +277,8 @@ Use the following route to delete a partition:
 
 ## Go further
 
-[Mount your NAS via NFS share](https://docs.ovh.com/ca/en/storage/file-storage/nas/nfs/)
+[Mount your NAS via NFS share](/pages/cloud/storage/file_storage/nas_nfs)
 
-[Mount your NAS on Windows Server via CIFS](https://docs.ovh.com/ca/en/storage/file-storage/nas/cifs/)
+[Mount your NAS on Windows Server via CIFS](/pages/cloud/storage/file_storage/nas_cifs)
 
 Join our community of users on <https://community.ovh.com/en/>.

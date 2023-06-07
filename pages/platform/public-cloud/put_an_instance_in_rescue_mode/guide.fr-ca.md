@@ -1,10 +1,7 @@
 ---
 title: 'Passer une instance en mode rescue'
-slug: passer-une-instance-en-mode-rescue
 excerpt: 'Ce guide vous explique comment activer le mode rescue pour votre instance Public Cloud'
 legacy_guide_number: 2029
-section: "Gestion depuis l'espace client"
-order: 04
 updated: 2023-01-04
 ---
 
@@ -28,7 +25,7 @@ Dans de telles circonstances, vous pouvez utiliser le mode rescue pour reconfigu
 
 > [!alert]
 >
-> A ce jour, le mode rescue pour les instances Metal n'est pas accessible via l'espace client OVHcloud. Pour plus d'informations, consultez notre guide dédié au [mode rescue pour les instances Metal](https://docs.ovh.com/ca/fr/public-cloud/metal-instance-rescue-mode/).
+> A ce jour, le mode rescue pour les instances Metal n'est pas accessible via l'espace client OVHcloud. Pour plus d'informations, consultez notre guide dédié au [mode rescue pour les instances Metal](/pages/platform/public-cloud/rescue_mode_metal_instance).
 
 ### Activer le mode rescue
 

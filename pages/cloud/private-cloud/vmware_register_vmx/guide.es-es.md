@@ -1,9 +1,6 @@
 ---
 title: Reregistrar MV en un nuevo PCC
-slug: vsphere-register-vm-vmx
 excerpt: Cómo reregistrar máquinas virtuales en un nuevo servicio desde datastores antiguos
-section: Funcionalidades de VMware vSphere
-order: 07
 updated: 2021-03-24
 ---
 
@@ -26,7 +23,7 @@ Debido a una incidencia, las máquinas virtuales ya no aparecen en su inventario
 
 ## Procedimiento
 
-En su [interfaz vSphere](../instalar_el_vsphere_client/), sitúese en la vista `Almacenamiento`{.action}.
+En su [interfaz vSphere](/pages/cloud/private-cloud/vsphere_interface_connexion), sitúese en la vista `Almacenamiento`{.action}.
 
 ![vista de almacenamiento](images/register-vmx-01.png){.thumbnail}
 
@@ -44,7 +41,7 @@ Introduzca la información solicitada y haga clic en `Finish`{.action}
 
 Estas operaciones se repiten en cada datastore y por cada MV que se va a volver a registrar.
 
-Compruebe los parámetros de sus MV (nombre, [portgroup](../crear-vlan-vxlan/), etc.) haciendo clic derecho sobre cada una de ellas y seleccionando `Edit Settings`{.action}.
+Compruebe los parámetros de sus MV (nombre, [portgroup](/pages/cloud/private-cloud/creation_vlan), etc.) haciendo clic derecho sobre cada una de ellas y seleccionando `Edit Settings`{.action}.
 
 ![modificar parámetros](images/register-vmx-06.png){.thumbnail}
 

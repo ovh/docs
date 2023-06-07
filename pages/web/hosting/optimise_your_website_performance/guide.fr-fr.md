@@ -1,9 +1,6 @@
 ---
 title: 'Optimisation des performances de votre site'
-slug: optimisation-performances-site
 excerpt: "Vous trouverez dans ce guide differents conseils concernant l'analyse des lenteurs sur votre site web, ainsi que des pistes d'amelioration."
-section: 'Optimiser son site'
-order: 06
 updated: 2022-02-03
 ---
 
@@ -68,9 +65,9 @@ Certaines variables du serveur sont modifiées par l’utilisation de PHP-FPM :
 |max_input_vars|2 000|16 000|
 |memory_limit|128 Mo|512 Mo|
 
-Pour plus d’information sur les mises à jour PHP, veuillez vous référer à [ce guide](../configurer-le-php-sur-son-hebergement-web-mutu-2014/){.externe}.
+Pour plus d’information sur les mises à jour PHP, veuillez vous référer à [ce guide](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014){.externe}.
 
-Pour basculer vers l’utilisation de PHP-FPM en version _stable_ ou pour en savoir plus sur les options avancées de votre hébergement web, veuillez consulter [ce guide](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/){.external}.
+Pour basculer vers l’utilisation de PHP-FPM en version _stable_ ou pour en savoir plus sur les options avancées de votre hébergement web, veuillez consulter [ce guide](/pages/web/hosting/ovhconfig_modify_system_runtime){.external}.
 
 Le fichier _.ovhconfig_ fonctionne à la racine de l’hébergement ou dans un sous-répertoire de niveau 1 (ex. : _/www/_) mais pas dans des répertoires de niveau 2 ou supérieurs (ex. : _/www/test/_ , _/www/test/test2/_)
 
@@ -238,10 +235,10 @@ Si, en dépit de toutes les modifications et mesures d’optimisation que vous a
 
 ## Aller plus loin
 
-[Modifier la configuration d’un d’hébergement web](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/){.externe}
+[Modifier la configuration d’un d’hébergement web](/pages/web/hosting/ovhconfig_modify_system_runtime){.externe}
 
-[Créer une base de données sur son hébergement web](../creer-base-de-donnees/){.external}
+[Créer une base de données sur son hébergement web](/pages/web/hosting/sql_create_database){.external}
 
-[Premiers pas avec le service Web Cloud Databases](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/){.external}
+[Premiers pas avec le service Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

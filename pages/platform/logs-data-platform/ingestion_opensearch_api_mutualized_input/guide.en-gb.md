@@ -1,9 +1,6 @@
 ---
 title: Mutualized input - OpenSearch API
-slug: logs-data-platform-ldp-index
-order: 9
 excerpt: Send your logs to the platform with the OpenSearch API.
-section: Features
 updated: 2022-06-13
 ---
 

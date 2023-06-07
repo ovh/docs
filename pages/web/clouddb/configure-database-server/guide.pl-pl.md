@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguracja serwera baz danych'
-slug: konfiguracja-optymalizacja-serwera-bazy-danych
 excerpt: 'Dowiedz się, jak skonfigurować i zoptymalizować serwer bazy danych'
-section: 'Konfiguracja'
-order: 06
 updated: 2023-04-24
 ---
 
@@ -235,7 +232,7 @@ W zakładce `informacje ogólne` sekcja **"SFTP"** w polu **"Informacje o logowa
 
 ![Web Cloud Databases](images/web-cloud-databases-SFTP01.png){.thumbnail}
 
-Aby zalogować się przez **SFTP**, możesz skorzystać z programu Filezilla i z niniejszego przewodnika: [ "Korzystanie z programu FileZilla na Twoim hostingu"](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/).
+Aby zalogować się przez **SFTP**, możesz skorzystać z programu Filezilla i z niniejszego przewodnika: [ "Korzystanie z programu FileZilla na Twoim hostingu"](/pages/web/hosting/ftp_filezilla_user_guide).
 
 Jeśli ten plik jest pusty, to znaczy, że nie masz żadnych nieoptymalnych zapytań.
 
@@ -312,7 +309,7 @@ Unikanie na przykład stosowania **"HAVING"**. Zwiększa to liczbę twoich zapyt
 
 ## Sprawdź również
 
-[Lista adresów IP klastrów i hostingów](https://docs.ovh.com/pl/hosting/lista-adresow-ip-klastrow-i-hostingow-www/)
+[Lista adresów IP klastrów i hostingów](/pages/web/hosting/clusters_and_shared_hosting_IP)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
 

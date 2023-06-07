@@ -1,9 +1,6 @@
 ---
 title: Changing your web hosting plan offer
 excerpt: Find out how to change the subscription offer for your OVHcloud Web Hosting plan
-slug: how_to_change_web_hosting_offer
-section: Optimise your website
-order: 02
 updated: 2023-04-19
 ---
 
@@ -11,7 +8,7 @@ updated: 2023-04-19
 
 ## Objective
 
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), you can increase the capacity of your [web hosting offers](https://www.ovhcloud.com/en/web-hosting/) to have more compute resources, storage space, databases or email accounts. Additional features such as [mailing lists](https://docs.ovh.com/us/en/emails/guide-dutilisation-mailing-list/) (from the [Professional plan](https://www.ovhcloud.com/en/web-hosting/professional-offer/)) or [Private SQL](https://www.ovhcloud.com/en/web-hosting/options/private-sql/) (included with the offers of the [Performance range](https://www.ovhcloud.com/en/web-hosting/performance-offer/)) will also become available with a subscription upgrade.
+In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), you can increase the capacity of your [web hosting offers](https://www.ovhcloud.com/en/web-hosting/) to have more compute resources, storage space, databases or email accounts. Additional features such as [mailing lists](/pages/web/emails/feature_mailing_list) (from the [Professional plan](https://www.ovhcloud.com/en/web-hosting/professional-offer/)) or [Private SQL](https://www.ovhcloud.com/en/web-hosting/options/private-sql/) (included with the offers of the [Performance range](https://www.ovhcloud.com/en/web-hosting/performance-offer/)) will also become available with a subscription upgrade.
 
 **Find out how to scale your OVHcloud hosting plan without any service interruptions.**
 
@@ -35,7 +32,7 @@ In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&fro
 > [!warning]
 > Subscription downgrading is not available for customers whose services are hosted in a data centre outside Europe.
 >
-> If you would like to change your subscription to a lower plan, please follow the steps in our guide “[Migrating your website and emails to OVHcloud](https://docs.ovh.com/us/en/hosting/migrating-website-to-ovh/)”.
+> If you would like to change your subscription to a lower plan, please follow the steps in our guide “[Migrating your website and emails to OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh)”.
 >
 
 To change your subscription, go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) in the `Web Cloud`{.action} section. Click `Hosting plans`{.action} and select the plan concerned.
@@ -88,9 +85,9 @@ Please follow [these instructions](#modify) to change your plan.
 
 ## Go further <a name="gofurther"></a>
 
-[Accessing a website’s logs and statistics on a web hosting](https://docs.ovh.com/us/en/hosting/shared_view_my_websites_logs_and_statistics/)
+[Accessing a website’s logs and statistics on a web hosting](/pages/web/hosting/logs_and_statistics)
 
-[Optimising your website’s performance](https://docs.ovh.com/us/en/hosting/web_hosting_optimise_your_website_performance/)
+[Optimising your website’s performance](/pages/web/hosting/optimise_your_website_performance)
 
 For specialised services (SEO, development,etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
 

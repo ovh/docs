@@ -1,9 +1,6 @@
 ---
 title: "Anwendungsbeispiele - Ihre Website ist von einem Hack betroffen"
 excerpt: "Erfahren Sie hier, wie Sie Ihre gehackte Website reparieren"
-slug: was_tun_wenn_ihre_wordpress_seite_gehackt_wurde
-section: "Tutorials"
-order: 010
 updated: 2022-11-15
 ---
 
@@ -80,12 +77,12 @@ Wenn eine Website gehackt wurde, ändern Sie alle zugehörigen Passwörter.
 
 Für OVHcloud Dienste verwenden Sie unsere Dokumentation:
 
-- [Passwort für den Zugang zu Ihrer OVHcloud Kundenkennung ändern](https://docs.ovh.com/de/customer/Passwort-verwalten/)
-- [Den Zugang zu Ihrem OVHcloud Kundencenter mit Zwei-Faktor-Authentifizierung absichern](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/)
-- [Passwort für den Zugang zum FTP-Speicherplatz Ihres Webhostings ändern](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern/)
-- [Passwort für den Zugriff auf Ihre Datenbank ändern](https://docs.ovh.com/de/hosting/datenbank-passwort-aendern/)
+- [Passwort für den Zugang zu Ihrer OVHcloud Kundenkennung ändern](/pages/account/customer/manage-ovh-password)
+- [Den Zugang zu Ihrem OVHcloud Kundencenter mit Zwei-Faktor-Authentifizierung absichern](/pages/account/customer/secure-ovhcloud-account-with-2fa)
+- [Passwort für den Zugang zum FTP-Speicherplatz Ihres Webhostings ändern](/pages/web/hosting/ftp_change_password)
+- [Passwort für den Zugriff auf Ihre Datenbank ändern](/pages/web/hosting/sql_change_password)
 
-Wir empfehlen Ihnen auch die Verwendung eines [Passwort-Managers](https://docs.ovh.com/de/customer/Passwort-verwalten/#einen-passwort-manager-verwenden).
+Wir empfehlen Ihnen auch die Verwendung eines [Passwort-Managers](/pages/account/customer/manage-ovh-password#einen-passwort-manager-verwenden).
 
 > [!warning]
 > 
@@ -104,7 +101,7 @@ Wir empfehlen Ihnen auch die Verwendung eines [Passwort-Managers](https://docs.o
 > Wenn Sie Schwierigkeiten haben, die unten beschriebenen Aktionen durchzuführen, wenden Sie sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) für Cyber-Sicherheit.
 >
 
-Folgen Sie unserer Anleitung zu [Statistiken und Logs Ihres Webhostings](https://docs.ovh.com/de/hosting/webhosting_die_statistiken_und_logs_meiner_website_einsehen/), um in den "Web"-Logs nach den entsprechenden Einträgen zu suchen, die Schadcode in die Website injizieren.
+Folgen Sie unserer Anleitung zu [Statistiken und Logs Ihres Webhostings](/pages/web/hosting/logs_and_statistics), um in den "Web"-Logs nach den entsprechenden Einträgen zu suchen, die Schadcode in die Website injizieren.
 
 Beginnen Sie mit der Suche ab dem Datum, an dem Sie den Hack bemerkt haben, und gehen Sie dann durch die Log-History.
 
@@ -124,7 +121,7 @@ Verfolgen Sie so die Sicherheitslücken in Ihrer Website nach und listen Sie dab
 >
 > Über einschlägige Webseiten (die nicht von OVHcloud verwaltet werden) können Sie Informationen zu angreifenden IPs abrufen. Sie können einen dieser Dienste verwenden, um Informationen wie den IP-Anbieter, dessen Geolokalisierung, die Verwaltung usw. abzurufen.
 >
-> Wenn Sie absolut sicher sind, dass es sich um eine unerwünschte IP-Adresse handelt, können Sie den Zugang zu Ihrem Hosting sperren, indem Sie unsere Dokumentation zu den [Zugriffsbeschränkungen über die Datei ".htaccess"](https://docs.ovh.com/de/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/) befolgen.
+> Wenn Sie absolut sicher sind, dass es sich um eine unerwünschte IP-Adresse handelt, können Sie den Zugang zu Ihrem Hosting sperren, indem Sie unsere Dokumentation zu den [Zugriffsbeschränkungen über die Datei ".htaccess"](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website) befolgen.
 > 
 
 ### Schritt 4: Schadcode entfernen und Sicherheitslücken beheben
@@ -144,9 +141,9 @@ Abhängig vom Datum des Vorfalls auf Ihrem Hosting (weniger als 14 Tage) kann OV
 
 Lesen Sie hierzu unsere 3 Anleitungen:
 
-- [FTP-Speicherplatz Ihres Webhostings wiederherstellen](https://docs.ovh.com/de/hosting/webhosting-speicherplatz-wiederherstellen/)
-- [SQL-Backup Ihrer Datenbank abrufen](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/)
-- [SQL-Backup in Ihre Datenbank importieren](https://docs.ovh.com/de/hosting/webhosting_import_einer_mysql-datenbank/)
+- [FTP-Speicherplatz Ihres Webhostings wiederherstellen](/pages/web/hosting/ftp_save_and_backup)
+- [SQL-Backup Ihrer Datenbank abrufen](/pages/web/hosting/sql_database_export)
+- [SQL-Backup in Ihre Datenbank importieren](/pages/web/hosting/sql_importing_mysql_database)
  
 Gleichen Sie die Zeitpunkte für die Wiederherstellung Ihres FTP-Speicherplatzes und Ihrer SQL-Datenbank so weit wie möglich an.
 
@@ -158,7 +155,7 @@ Gleichen Sie die Zeitpunkte für die Wiederherstellung Ihres FTP-Speicherplatzes
 > Wenn sich Ihr Hosting im Zustand "Disabled" befindet, wird auch die über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verfügbare Option zur automatischen Wiederherstellung deaktiviert.
 > Sie müssen eine "manuelle" Wiederherstellung Ihrer Website durchführen, die verbleibenden schadhaften Elemente entfernen und alle Sicherheitslücken in diesem Backup beheben. Dies muss durchgeführt werden, **bevor** das Hosting reaktiviert wird.
 >
-> Um das Webhosting wiederherzustellen, befolgen Sie die Anweisungen in Schritt 4 [dieser Anleitung](https://docs.ovh.com/de/hosting/diagnose-403-forbidden/).
+> Um das Webhosting wiederherzustellen, befolgen Sie die Anweisungen in Schritt 4 [dieser Anleitung](/pages/web/hosting/diagnostic_403_forbidden).
 >
 
 Ihre Website sollte wieder verfügbar sein, wenn diese Aktionen korrekt durchgeführt wurden.
@@ -167,8 +164,8 @@ Ihre Website sollte wieder verfügbar sein, wenn diese Aktionen korrekt durchgef
 
 Lesen Sie hierzu unsere 2 Anleitungen:
 
-- [FTP-Speicherplatz Ihres Webhostings wiederherstellen](https://docs.ovh.com/de/hosting/webhosting-speicherplatz-wiederherstellen/)
-- [SQL Backup in Ihre Datenbank importieren](https://docs.ovh.com/de/hosting/webhosting_import_einer_mysql-datenbank/)
+- [FTP-Speicherplatz Ihres Webhostings wiederherstellen](/pages/web/hosting/ftp_save_and_backup)
+- [SQL Backup in Ihre Datenbank importieren](/pages/web/hosting/sql_importing_mysql_database)
 
 >[!warning]
 >
@@ -177,7 +174,7 @@ Lesen Sie hierzu unsere 2 Anleitungen:
 >
 > Wenn sich Ihr Hosting im Zustand "Disabled" befindet, führen Sie eine "manuelle" Wiederherstellung Ihrer Website durch, beseitigen Sie die verbleibenden schadhaften Elemente und beheben Sie alle Sicherheitslücken in diesem Backup. Dies muss durchgeführt werden, **bevor** das Hosting reaktiviert wird.
 >
-> Um das Webhosting wiederherzustellen, befolgen Sie die Anweisungen in Schritt 4 [dieser Anleitung](https://docs.ovh.com/de/hosting/diagnose-403-forbidden/).
+> Um das Webhosting wiederherzustellen, befolgen Sie die Anweisungen in Schritt 4 [dieser Anleitung](/pages/web/hosting/diagnostic_403_forbidden).
 >
 
 Ihre Website sollte wieder verfügbar sein, wenn diese Aktionen korrekt durchgeführt wurden.
@@ -186,7 +183,7 @@ Ihre Website sollte wieder verfügbar sein, wenn diese Aktionen korrekt durchgef
 
 In [Schritt 2](#step2) dieser Anleitung müssen Sie die zuvor erfassten Dateien und Code manuell löschen und die Sicherheitslücken Ihrer Website korrigieren.
 
-Um sich mit dem Speicherplatz Ihres Hostings zu verbinden, lesen Sie [unsere Anleitung](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/).
+Um sich mit dem Speicherplatz Ihres Hostings zu verbinden, lesen Sie [unsere Anleitung](/pages/web/hosting/ftp_connection).
 
 >[!warning]
 >
@@ -195,7 +192,7 @@ Um sich mit dem Speicherplatz Ihres Hostings zu verbinden, lesen Sie [unsere Anl
 >
 > Wenn sich Ihr Hosting im Zustand "Disabled" befindet, führen Sie eine "manuelle" Wiederherstellung Ihrer Website durch, beseitigen Sie die verbleibenden schadhaften Elemente und beheben Sie alle Sicherheitslücken in diesem Backup. Dies muss durchgeführt werden, **bevor** das Hosting reaktiviert wird.
 >
-> Um das Webhosting wiederherzustellen, befolgen Sie die Anweisungen in Schritt 4 [dieser Anleitung](https://docs.ovh.com/de/hosting/diagnose-403-forbidden/).
+> Um das Webhosting wiederherzustellen, befolgen Sie die Anweisungen in Schritt 4 [dieser Anleitung](/pages/web/hosting/diagnostic_403_forbidden).
 >
 
 Ihre Website sollte wieder verfügbar sein, wenn diese Aktionen korrekt durchgeführt wurden.
@@ -207,24 +204,24 @@ Aktualisieren Sie Ihre Website im Hinblick auf Quellcode, Sicherheitseinstellung
 Überprüfen Sie die FTP-Zugriffsrechte ("CHMOD") für alle in Ihrem Speicherplatz gehosteten Ordner und Dateien.
 Standardmäßig empfehlen wir, keine höheren "CHMOD"-Rechte als **705** für Ordner und **604** für Dateien zu verwenden.
 
-Weitere Informationen zu den "CHMOD"-Rechten finden Sie im Abschnitt "Nützliche Informationen" unseres [Tutorials zur Nutzung des FTP-Clients Filezilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/#useful-information).
+Weitere Informationen zu den "CHMOD"-Rechten finden Sie im Abschnitt "Nützliche Informationen" unseres [Tutorials zur Nutzung des FTP-Clients Filezilla](/pages/web/hosting/ftp_filezilla_user_guide#useful-information).
 
 Wenn Sie ein CMS verwenden (Wordpress, Joomla!, PrestaShop, Drupal, etc.), aktualisieren Sie Ihre Plugins, Themes und das CMS selbst.
 Verwenden Sie nur "offizielle" Plugins/Themes und halten Sie Ihre Website so regelmäßig und umfassend wie möglich auf dem neuesten Stand.
 
-Sichern Sie Ihre Kontaktformulare mindestens mit einem "Captcha"-System ab, um zu vermeiden, dass Bots SPAM über diese Methode versenden. Wenn die "mail()"-Funktion von PHP ebenfalls auf Ihrem Hosting gesperrt wurde, lesen Sie hierzu [unsere Anleitung](https://docs.ovh.com/de/hosting/webhosting_verwaltung_automatischer_e-mails/), um die Sperrung zu beheben.
+Sichern Sie Ihre Kontaktformulare mindestens mit einem "Captcha"-System ab, um zu vermeiden, dass Bots SPAM über diese Methode versenden. Wenn die "mail()"-Funktion von PHP ebenfalls auf Ihrem Hosting gesperrt wurde, lesen Sie hierzu [unsere Anleitung](/pages/web/hosting/mail_function_script_records), um die Sperrung zu beheben.
 
-Lesen Sie auch unsere Anleitung zur [Sicherung Ihrer Website](https://docs.ovh.com/de/hosting/website-absichern/), um das Risiko eines erneuten Hacks möglichst gering zu halten.
+Lesen Sie auch unsere Anleitung zur [Sicherung Ihrer Website](/pages/web/hosting/secure_your_website), um das Risiko eines erneuten Hacks möglichst gering zu halten.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-[Mit dem Speicherplatz Ihres Webhostings verbinden](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/)
+[Mit dem Speicherplatz Ihres Webhostings verbinden](/pages/web/hosting/ftp_connection)
 
-[Konfiguration Ihres Webhostings ändern](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern//)
+[Konfiguration Ihres Webhostings ändern](/pages/web/hosting/ovhconfig_modify_system_runtime/)
 
-[Application Firewall aktivieren](https://docs.ovh.com/de/hosting/webhosting_aktivieren_der_web_application_firewall/)
+[Application Firewall aktivieren](/pages/web/hosting/multisites_activating_application_firewall)
 
-[Die Performance Ihrer Website optimieren](https://docs.ovh.com/de/hosting/webhosting_optimierung_der_performance_ihrer_webseite/)
+[Die Performance Ihrer Website optimieren](/pages/web/hosting/optimise_your_website_performance)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

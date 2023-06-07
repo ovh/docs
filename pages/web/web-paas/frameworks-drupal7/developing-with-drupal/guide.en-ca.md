@@ -1,7 +1,5 @@
 ---
 title: Developing with Drupal
-slug: developing-with-drupal
-section: Drupal7
 updated: 2021-05-11
 ---
 
@@ -149,7 +147,7 @@ appropriate changes to master.
 
 ![Merge your changes.](images/header.png "0.3")
 
-A dialog box will appear that will provide commands to execute future merges from the command line using the [Web PaaS CLI](../../development-cli).
+A dialog box will appear that will provide commands to execute future merges from the command line using the [Web PaaS CLI](/pages/web/web-paas/development-cli).
 
 ![Merge confirmation cli](images/header-merge-box.png "0.4")
 

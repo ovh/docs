@@ -1,9 +1,6 @@
 ---
 title: 'Plik .htaccess - Inne operacje'
 excerpt: 'Przewodnik ten przedstawia inne operacje, które są możliwe dzięki plikom .htaccess.'
-slug: hosting_www_htaccess_-_inne_operacje
-section: 'Przekierowania i uprawnienia dostępu'
-order: 04
 updated: 2020-05-05
 ---
 

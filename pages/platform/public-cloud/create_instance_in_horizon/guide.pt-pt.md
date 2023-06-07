@@ -1,9 +1,7 @@
 ---
 title: 'Criar uma instância a partir da interface Horizon'
-slug: criar_uma_instancia_na_interface_horizon
 excerpt: 'Saiba como criar uma instância a partir da interface Horizon'
 legacy_guide_number: g1772
-section: Gestão a partir do Horizon
 updated: 2022-08-01
 ---
 
@@ -22,11 +20,11 @@ Tem a possibilidade de criar instâncias diretamente a partir da interface Horiz
 ## Requisitos
 
 - Dispor de um [projeto Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud.
-- [Ter acesso à interface Horizon](../horizon/){.external}. 
+- [Ter acesso à interface Horizon](/pages/platform/public-cloud/introducing_horizon){.external}. 
 
 ## Instruções
 
-Para começar a criar uma instância, aceda à interface Horizon. Se precisar de ajuda para realizar esta operação, consulte o [nosso manual](../horizon/).
+Para começar a criar uma instância, aceda à interface Horizon. Se precisar de ajuda para realizar esta operação, consulte o [nosso manual](/pages/platform/public-cloud/introducing_horizon).
 
 A seguir, clique em `Compute`{.action} no menu à esquerda e, de seguida, em `Instances`{.action}.
 
@@ -58,7 +56,7 @@ Deverá preencher as diferentes informações. Caso seja necessário, consulte a
 
 > [!warning]
 > 
-> Embora o campo "Key Pair" não seja obrigatório na interface Horizon aquando da criação de uma instância, o registo de uma chave SSH é absolutamente necessário para poder ligar-se a uma instância. Sem chave SSH, será obrigado a reiniciar a instância em modo rescue para poder criar uma palavra-passe ou adicionar uma chave SSH ao ficheiro adequado (para mais informações, consulte o guia [Alterar a chave SSH em caso de perda](../alterar_a_chave_ssh_em_caso_de_perda/#instrucoes)).
+> Embora o campo "Key Pair" não seja obrigatório na interface Horizon aquando da criação de uma instância, o registo de uma chave SSH é absolutamente necessário para poder ligar-se a uma instância. Sem chave SSH, será obrigado a reiniciar a instância em modo rescue para poder criar uma palavra-passe ou adicionar uma chave SSH ao ficheiro adequado (para mais informações, consulte o guia [Alterar a chave SSH em caso de perda](/pages/platform/public-cloud/replacing_lost_ssh_key#instrucoes)).
 >
 
 Assim que estiver pronto para lançar a(s) instância(s) pretendida(s), clique no botão `Launch Instance`{.action}.

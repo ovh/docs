@@ -1,9 +1,6 @@
 ---
 title: "Migrare i tuoi indirizzi email da una piattaforma OVHcloud verso un'altra"
-slug: migration-email-platform
 excerpt: "Questa guida ti mostra come migrare gli indirizzi email da una piattaforma Exchange o Email Pro verso un'altra piattaforma Exchange, Email Pro o MX Plan"
-section: Migrazione
-order: 04
 updated: 2021-10-21
 ---
 
@@ -40,13 +37,13 @@ Per migrare i tuoi indirizzi email presenti su una piattaforma Exchange o Email 
 
 ### Configura la piattaforma di destinazione
 
-Se hai appena ordinato il nuovo servizio di posta, prima aggiungi il dominio alla tua piattaforma [Email Pro](https://docs.ovh.com/it/emails-pro/prima-configurazione/#step-2-aggiungi-il-dominio) o [Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/aggiungere-dominio-su-exchange/). Se migrate verso una piattaforma MX Plan, con il dominio associato "fisso", potrete passare direttamente allo [step successivo](#accountsmigration).
+Se hai appena ordinato il nuovo servizio di posta, prima aggiungi il dominio alla tua piattaforma [Email Pro](/pages/web/emails-pro/first_config#step-2-aggiungi-il-dominio) o [Exchange](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain). Se migrate verso una piattaforma MX Plan, con il dominio associato "fisso", potrete passare direttamente allo [step successivo](#accountsmigration).
 
 > Seleziona la scheda `Domini associati`{.action} sulla tua piattaforma e clicca su `Aggiungi un dominio`{.action}. Configura il tuo dominio in **modo non autoritativo**. Una volta aggiunto il dominio, assicurati che la voce `OK` sia presente nella colonna `Stato`.
 >
 > ![email-migrazione](images/migration_platform02.png){.thumbnail}
 >
-> Per maggiori informazioni sull'aggiunta di un dominio, consulta [la guida Email Pro](https://docs.ovh.com/it/emails-pro/prima-configurazione/#step-2-aggiungi-il-dominio) o [la guida Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/aggiungere-dominio-su-exchange/).
+> Per maggiori informazioni sull'aggiunta di un dominio, consulta [la guida Email Pro](/pages/web/emails-pro/first_config#step-2-aggiungi-il-dominio) o [la guida Exchange](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain).
 
 ### Migra gli account email <a name="accountsmigration"></a>
 
@@ -84,10 +81,10 @@ Nella scheda `Account email`{.action} della tua piattaforma, clicca sui tre punt
 > Verranno migrati solo i dati dei tuoi account email (email, contatti, calendari, regole della posta in arrivo, ecc...). Le funzionalità legate alla tua piattaforma dovranno essere ripristinate sulla nuova piattaforma:
 >
 > - [Alias](https://docs.ovh.com/it/microsoft-collaborative-solutions/email-alias/)
-> - [Delega dei diritti](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2013_assegna_i_diritti_full_access_a_un_account/)
-> - [Gruppi](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2013_utilizzo_dei_gruppi_mailing_list/)
+> - [Delega dei diritti](/pages/web/microsoft-collaborative-solutions/feature_delegation)
+> - [Gruppi](/pages/web/microsoft-collaborative-solutions/feature_groups)
 > - Contatti esterni
-> - [Firma](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2013_firma_automatica_-_disclaimer/)
+> - [Firma](/pages/web/microsoft-collaborative-solutions/feature_footers)
 
 Migra l'account email "sorgente" verso l'account della tua nuova piattaforma con l'aiuto del nostro tool [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
 
@@ -125,7 +122,7 @@ Per modificare la configurazione, clicca sulla casellina rossa e esegui l'operaz
 A questo punto non ti resta che utilizzare i tuoi account email migrati. OVHcloud mette a disposizione un'applicazione online (_Web app_) accessibile all'indirizzo <https://www.ovh.it/mail/>. inserendo le credenziali associate al tuo indirizzo email.
 
 Se hai configurato uno degli account migrati su un client di posta (ad esempio: Outlook, Thunderbird), è necessario impostarlo di nuovo. Le informazioni di connessione al server OVHcloud sono cambiate in seguito alla migrazione.
-<br>Per maggiori informazioni sulle operazioni da effettuare, consulta la nostra documentazione nelle sezioni delle guide dedicate a [Email Pro](https://docs.ovh.com/it/emails-pro/){.external} e [Hosted Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/){.external}. Se non sei in grado di riconfigurare l'account nell'immediato, l'accesso tramite l'applicazione online è sempre possibile.
+<br>Per maggiori informazioni sulle operazioni da effettuare, consulta la nostra documentazione nelle sezioni delle guide dedicate a [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro){.external} e [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}. Se non sei in grado di riconfigurare l'account nell'immediato, l'accesso tramite l'applicazione online è sempre possibile.
 
 > [!primary]
 >
@@ -134,10 +131,10 @@ Se hai configurato uno degli account migrati su un client di posta (ad esempio: 
 
 ## Per saperne di più
 
-[Gestire i contatti dei servizi](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/){.external} .
+[Gestire i contatti dei servizi](/pages/account/customer/managing_contacts){.external} .
 
-[Guides E-mail Pro](https://docs.ovh.com/it/emails-pro/){.external}.
+[Guides E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro){.external}.
 
-[Guides Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/){.external}.
+[Guides Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

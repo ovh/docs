@@ -1,11 +1,8 @@
 ---
 title: Eine virtuelle Maschine deployen
-slug: virtuelle-maschine-deployen
 routes:
-    canonical: 'https://docs.ovh.com/de/private-cloud/virtuelle-maschine-deployen/'
+    canonical: '/pages/cloud/private-cloud/deploiement_d_une_machine_virtuelle'
 excerpt: Hier erfahren Sie, wie Sie eine virtuelle Maschine über das vSphere Interface erstellen.
-section: Verwaltung virtueller Maschinen
-order: 0
 updated: 2020-11-18
 ---
 
@@ -20,7 +17,7 @@ Es gibt mehrere Möglichkeiten, um virtuelle Maschinen über Ihr vSphere Interfa
 ## Voraussetzungen
 
 - Sie verfügen über ein [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external} Produkt.
-- Sie sind auf Ihrem [vSphere Interface](../den_vsphere_client_installieren/) eingeloggt.
+- Sie sind auf Ihrem [vSphere Interface](/pages/cloud/managed-bare-metal/vsphere-interface) eingeloggt.
 
 ## In der praktischen Anwendung
 
@@ -34,8 +31,8 @@ Klicken Sie mit der rechten Maustaste auf den Cluster Ihrer Wahl und dann auf `N
 
 Sie haben mehrere Optionen, um eine virtuelle Maschine zu erstellen:
 
-- Per ISO-Datei, verfügbar in Ihrem Datastore (um die Datei zu importieren, befolgen Sie die [Anleitung zur Verbindung via SFTP](../verbindung_per_sftp/)).
-- über ein eigenes oder ein [von OVHcloud bereitgestelltes](../ovhcloud-template-deployment/) Template.
+- Per ISO-Datei, verfügbar in Ihrem Datastore (um die Datei zu importieren, befolgen Sie die [Anleitung zur Verbindung via SFTP](/pages/cloud/managed-bare-metal/sftp-connexion)).
+- über ein eigenes oder ein [von OVHcloud bereitgestelltes](/pages/cloud/managed-bare-metal/ovf_template) Template.
 - Durch Klonen einer bereits vorhandenen virtuellen Maschine (achten Sie darauf, mögliche Konflikte in der IP-Adressierung zu vermeiden).
 - Durch Klonen einer virtuellen Maschine als Template, für ein schnelleres Deployment der nächsten virtuellen Maschinen.
 - Klonen eines Templates als ein anderes Template, um das Template beispielsweise auf verschiedenen Datastores abzulegen und Leistungseinbußen bei umfangreicheren Deployments zu vermeiden.

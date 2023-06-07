@@ -1,9 +1,6 @@
 ---
 title: 'Logowanie do przestrzeni dyskowej hostingu'
-slug: logowanie-przestrzen-dyskowa-ftp-hosting-web
 excerpt: 'Dowiedz się, jak się zalogować do przestrzeni dyskowej hostingu od OVHcloud'
-section: 'FTP i SSH'
-order: 02
 updated: 2022-10-21
 ---
 
@@ -56,7 +53,7 @@ Dzięki tym danym będziesz mógł odnaleźć dane wymagane do logowania się do
 - **Serwer SSH**: Jest to adres serwera umożliwiający dostęp do Twojej przestrzeni dyskowej przy użyciu terminala przez protokół SSH.
 - **Login główny**: Główny identyfikator (S)FTP utworzony na Twoim hostingu. Możesz odnaleźć wszystkich użytkowników (S)FTP Twojego hostingu w kolumnie "Login" tabeli.
 
-Jeśli nie znasz hasła użytkownika FTP lub SSH, w zależności od oferty kliknij ikonę ołówka lub przycisk `...`{.action}, a następnie wybierz `Zmień hasło`{.action}. Przewodnik techniczny [Zmień hasło użytkownika FTP](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/) pomoże w przeprowadzeniu tej operacji.
+Jeśli nie znasz hasła użytkownika FTP lub SSH, w zależności od oferty kliknij ikonę ołówka lub przycisk `...`{.action}, a następnie wybierz `Zmień hasło`{.action}. Przewodnik techniczny [Zmień hasło użytkownika FTP](/pages/web/hosting/ftp_change_password) pomoże w przeprowadzeniu tej operacji.
 
 ![ftpconnect](images/connect-ftp-step2.png){.thumbnail}
 
@@ -118,14 +115,14 @@ W tym drugim przypadku użyj następującego polecenia. Zastąp elementy „sshl
 ssh sshlogin@sshserver -p connectionport
 ```
 
-Jeśli wprowadzone dane są poprawne, możesz rozpocząć operacje na Twojej przestrzeni dyskowej. W razie takiej potrzeby, skorzystaj z przewodnika technicznego [Dostęp przez SSH na hostingu](../hosting_www_ssh_na_hostingu/).
+Jeśli wprowadzone dane są poprawne, możesz rozpocząć operacje na Twojej przestrzeni dyskowej. W razie takiej potrzeby, skorzystaj z przewodnika technicznego [Dostęp przez SSH na hostingu](/pages/web/hosting/ssh_on_webhosting).
 
 ![ftpconnect](images/connect-ftp-step5.png){.thumbnail}
 
 ## Sprawdź również
 
-[Zmiana hasła do konta FTP](../zmiana-hasla-konto-ftp/){.external}
+[Zmiana hasła do konta FTP](/pages/web/hosting/ftp_change_password){.external}
 
-[Dostęp przez SSH na hostingu](../hosting_www_ssh_na_hostingu/){.external}
+[Dostęp przez SSH na hostingu](/pages/web/hosting/ssh_on_webhosting){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

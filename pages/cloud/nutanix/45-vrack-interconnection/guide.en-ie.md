@@ -1,9 +1,6 @@
 ---
 title: Interconnect clusters through the vRack
-slug: nutanix-vrack-interconnection
 excerpt: Setting up a two-cluster interconnection through an OVHcloud vRack
-section: Disaster Recovery Plan
-order: 03
 updated: 2022-09-28
 ---
 
@@ -54,7 +51,7 @@ The Roubaix cluster uses these addresses:
 - Gateway: `192.168.2.254`.
 - Cluster version: `6.1`.
 
-Use our guide on [customised redeployment of your Cluster](https://docs.ovh.com/ie/en/nutanix/cluster-custom-redeployment/).
+Use our guide on [customised redeployment of your Cluster](/pages/cloud/nutanix/00-cluster-custom-redeployment).
 
 > [!primary]
 > The guide mentioned above will help you redeploy both clusters. However, you can only redeploy one, the most important thing is not to have the same identical IP addresses across the network, except for the OVHgateway.
@@ -203,11 +200,11 @@ The Load Balancer is connected to the vRack shared by both sites, and access to 
 
 ## Go further
 
-[Disaster Recovery Plan on Nutanix](https://docs.ovh.com/ie/en/nutanix/disaster-recovery-plan-overview/)
+[Disaster Recovery Plan on Nutanix](/pages/cloud/nutanix/43-disaster-recovery-plan-overview)
 
-[Asynchronous or NearSync replication through Prism Element](https://docs.ovh.com/ie/en/nutanix/prism-element-nutanix-replication/)
+[Asynchronous or NearSync replication through Prism Element](/pages/cloud/nutanix/46-prism-element-replication)
 
-[Advanced replication with Leap](https://docs.ovh.com/ie/en/nutanix/leap-replication/)
+[Advanced replication with Leap](/pages/cloud/nutanix/47-nutanix-leap)
 
 [Introduction to vRacks](https://www.ovh.ie/solutions/vrack/)
 

@@ -1,9 +1,6 @@
 ---
 title: 'Creating SSH keys'
-slug: creating-ssh-keys-dedicated
 excerpt: 'Find out how to create SSH keys for a secure connection to your dedicated server'
-section: 'Security'
-order: 1
 updated: 2022-03-31
 ---
 
@@ -182,7 +179,7 @@ If you have copied the full output, the identifier after the key should already 
 
 > [!primary]
 >
-> Any keys saved in the "Dedicated" section will be usable for your VPS services as well. Regarding SSH keys for Public Cloud services, please refer to [this guide](../../public-cloud/public-cloud-first-steps).
+> Any keys saved in the "Dedicated" section will be usable for your VPS services as well. Regarding SSH keys for Public Cloud services, please refer to [this guide](/pages/platform/public-cloud/public-cloud-first-steps).
 >
 
 ### Setting a default SSH key (only for the “Dedicated” section) <a name="cpsshkey"></a>

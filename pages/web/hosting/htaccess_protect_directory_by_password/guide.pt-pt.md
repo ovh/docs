@@ -1,9 +1,6 @@
 ---
 title: "Proteger a interface de administração do seu site com um ficheiro .htaccess"
-slug: partilhado-htaccess-como-protecao-acesso-a-um-diretorio-por-autenticacao
 excerpt: "Encontre aqui como proteger o acesso à administração do seu site com um ficheiro .htaccess"
-section: Reescrita e autenticação
-order: 02
 updated: 2021-09-20
 ---
 
@@ -30,7 +27,7 @@ Por vezes, poderá ser necessário proteger o acesso a uma parte do seu site com
 
 - Ter um [serviço de alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Dispor das credenciais necessárias para aceder ao espaço [de armazenamento do alojamento](../aceder-espaco-de-armazenamento-ftp-alojamento-web/).
+- Dispor das credenciais necessárias para aceder ao espaço [de armazenamento do alojamento](/pages/web/hosting/ftp_connection).
 
 ## Instruções
 
@@ -43,7 +40,7 @@ Por vezes, poderá ser necessário proteger o acesso a uma parte do seu site com
 
 ### Etapa 1: criar a arborescência
 
-Ligue-se ao [espaço de armazenamento](../aceder-espaco-de-armazenamento-ftp-alojamento-web/) do seu alojamento. Abra a ["Pasta raiz"](../multisites-configurar-um-multisite-no-meu-alojamento-web/#etapa-21-adicionar-um-dominio-registado-na-ovhcloud) do seu site.<br>
+Ligue-se ao [espaço de armazenamento](../aceder-espaco-de-armazenamento-ftp-alojamento-web/) do seu alojamento. Abra a ["Pasta raiz"](/pages/web/hosting/multisites_configure_multisite#etapa-21-adicionar-um-dominio-registado-na-ovhcloud) do seu site.<br>
 Crie um ficheiro "crypter.php".
 
 ![root_folder](images/root_folder.png){.thumbnail}
@@ -72,7 +69,7 @@ echo nl2br("$string_1 \n $string_2 \n $string_3");
  ?>
 ```
 
-Se dispõe de um alojamento [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), aceda ao seu alojamento em [SSH](../partilhado_o_ssh_nos_alojamentos_partilhados/). Execute o seguinte comando:
+Se dispõe de um alojamento [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), aceda ao seu alojamento em [SSH](/pages/web/hosting/ssh_on_webhosting). Execute o seguinte comando:
 
 ```bash
 php crypter.php
@@ -120,9 +117,9 @@ Require valid-user
 
 > [!warning]
 >
-> Neste exemplo, é necessário substituir "o_login_ftp" pelo seu [identificador FTP](../aceder-espaco-de-armazenamento-ftp-alojamento-web/#1-recuperar-as-informacoes-de-acesso). Na secção `Alojamentos`{.action}, poderá encontrá-lo no separador `FTP-SSH`{.action} do alojamento correspondente.
+> Neste exemplo, é necessário substituir "o_login_ftp" pelo seu [identificador FTP](/pages/web/hosting/ftp_connection#1-recuperar-as-informacoes-de-acesso). Na secção `Alojamentos`{.action}, poderá encontrá-lo no separador `FTP-SSH`{.action} do alojamento correspondente.
 >
-> Substitua, se necessário, no exemplo abaixo "pasta_raiz" pelo nome da [pasta que contém os ficheiros do seu site](../multisites-configurar-um-multisite-no-meu-alojamento-web/#etapa-21-adicionar-um-dominio-registado-na-ovhcloud).
+> Substitua, se necessário, no exemplo abaixo "pasta_raiz" pelo nome da [pasta que contém os ficheiros do seu site](/pages/web/hosting/multisites_configure_multisite#etapa-21-adicionar-um-dominio-registado-na-ovhcloud).
 >
 
 #### Bloquear o acesso a um ou vários ficheiros
@@ -149,7 +146,7 @@ Require valid-user
 
 ## Quer saber mais? <a name="gofurther"></a>
 
-[Partilhado: Tudo sobre o ficheiro .htaccess](../partilhado_tudo_sobre_o_ficheiro_htaccess/)
+[Partilhado: Tudo sobre o ficheiro .htaccess](/pt/hosting/partilhado_tudo_sobre_o_ficheiro_htaccess/)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 

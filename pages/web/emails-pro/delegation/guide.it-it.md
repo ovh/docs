@@ -1,8 +1,5 @@
 ---
 title: 'Delegare i diritti su un account email'
-slug: emailpro-delegation
-section: 'Per iniziare'
-order: 5
 updated: 2020-10-24
 ---
 
@@ -23,4 +20,4 @@ I servizi Exchange ed Email Pro permettono di usufruire di indirizzi email profe
 
 ## Procedura
 
-Consulta la guida [Delegare i diritti su un account email](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2013_assegna_i_diritti_full_access_a_un_account/) nella sezione "Microsoft collaborative solutions".
+Consulta la guida [Delegare i diritti su un account email](/pages/web/microsoft-collaborative-solutions/feature_delegation) nella sezione "Microsoft collaborative solutions".

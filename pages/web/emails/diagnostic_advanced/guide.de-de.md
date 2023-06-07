@@ -1,9 +1,6 @@
 ---
 title: 'E-Mails können nicht gesendet oder empfangen werden'
 excerpt: 'Erfahren Sie hier die Vorgehensweise, wenn Sende- oder Empfangsprobleme über OVHcloud auftreten'
-slug: die_statuscodes_von_smtp-servern
-section: Diagnose
-order: 02
 legacy_guide_number: g2272
 updated: 2022-07-21
 ---
@@ -23,7 +20,7 @@ Sie können Ihre E-Mails nicht über Ihr E-Mail-Programm oder über das Webmail-
 
 > [!primary]
 >
-> Wenn Sie weitere Fragen haben, die nicht in dieser Anleitung behandelt werden, lesen Sie bitte unsere [E-Mail FAQ](../e-mails-faq/).
+> Wenn Sie weitere Fragen haben, die nicht in dieser Anleitung behandelt werden, lesen Sie bitte unsere [E-Mail FAQ](/pages/web/emails/faq-emails).
 
 ## Voraussetzungen
 
@@ -36,7 +33,7 @@ Sie können Ihre E-Mails nicht über Ihr E-Mail-Programm oder über das Webmail-
 
 Damit Ihre E-Mails funktionieren, benötigen Sie ein aktives E-Mail-Angebot. Wenn Ihre E-Mail-Accounts Teil eines Webhosting-Angebots sind, überprüfen Sie, dass es nicht abgelaufen ist. Sie können das direkt im Kundencenter überprüfen. Die zugehörige Domain muss ebenfalls aktiv sein.
 
-Überprüfen Sie zunächst, dass Sie keine ausstehenden [Zahlungen](https://docs.ovh.com/de/billing/ovh-rechnungen-verwalten/#pay-bills) und [Verlängerungen](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#renewal-management) Ihrer Dienstleistungen haben.
+Überprüfen Sie zunächst, dass Sie keine ausstehenden [Zahlungen](/pages/account/billing/invoice_management#pay-bills) und [Verlängerungen](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) Ihrer Dienstleistungen haben.
 
 Befolgen Sie diese Schritte, um sicherzustellen, dass Ihre relevanten Dienste in Betrieb sind:
 
@@ -50,11 +47,11 @@ Befolgen Sie diese Schritte, um sicherzustellen, dass Ihre relevanten Dienste in
 
 Wenn Sie ein E-Mail-Programm auf Ihrem Computer (Outlook, Mac Mail, Thunderbird etc.) oder Ihrem Smartphone (iOS, Android etc.) verwenden und bei Versand oder Empfang Probleme haben, überprüfen Sie die Konfigurationseinstellungen je nach Ihrem E-Mail-Angebot und dem verwendeten E-Programm.
 
-- Überprüfen Sie bei einem **MXplan** Angebot im Bereich [Hosted E-Mail - MX Plan](https://docs.ovh.com/de/emails/) unserer **Web Cloud**-Anleitungen die Konfiguration Ihres E-Mail-Programms im Abschnitt `E-Mail-Clients` .
+- Überprüfen Sie bei einem **MXplan** Angebot im Bereich [Hosted E-Mail - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan) unserer **Web Cloud**-Anleitungen die Konfiguration Ihres E-Mail-Programms im Abschnitt `E-Mail-Clients` .
 
-- Überprüfen Sie bei einem **E-Mail Pro** Angebot im Bereich [E-Mail Pro](https://docs.ovh.com/de/emails-pro/) unserer **Web Cloud**-Anleitungen die Konfiguration Ihres E-Mail-Programms im Abschnitt `Konfiguration des E-Mail-Clients`.
+- Überprüfen Sie bei einem **E-Mail Pro** Angebot im Bereich [E-Mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro) unserer **Web Cloud**-Anleitungen die Konfiguration Ihres E-Mail-Programms im Abschnitt `Konfiguration des E-Mail-Clients`.
 
-- Für ein **Exchange** Angebot überprüfen Sie im Bereich [Microsoft Collaborative Solutions](https://docs.ovh.com/de/microsoft-collaborative-solutions/) unserer **Web Cloud**-Anleitungen die Konfiguration Ihres E-Mail-Programms im Bereich `Konfiguration des Exchange E-Mail-Clients` oder Ihres Smartphones in `Konfiguration von Exchange auf kompatiblen Smartphones/Tablets`
+- Für ein **Exchange** Angebot überprüfen Sie im Bereich [Microsoft Collaborative Solutions](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) unserer **Web Cloud**-Anleitungen die Konfiguration Ihres E-Mail-Programms im Bereich `Konfiguration des Exchange E-Mail-Clients` oder Ihres Smartphones in `Konfiguration von Exchange auf kompatiblen Smartphones/Tablets`
 
 ### Sind die E-Mails über das Webmail-Interface funktionsfähig?
 
@@ -70,11 +67,11 @@ Stellen Sie sicher, dass Sie das richtige Passwort haben. Sie können es nötign
 
 So ändern Sie das Passwort einer E-Mail-Adresse:
 
-- Für ein **MXplan** Angebot lesen Sie unsere [Anleitung Passwort einer MX Plan E-Mail-Adresse ändern](../passwort-e-mail-adresse-aendern/)
+- Für ein **MXplan** Angebot lesen Sie unsere [Anleitung Passwort einer MX Plan E-Mail-Adresse ändern](/pages/web/emails/email_change_password)
 
 - Für ein **E-Mail Pro** Angebot gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `E-Mail Pro`{.action} und wählen Sie Ihren Dienst aus. Klicken Sie im Tab `E-Mail-Accounts`{.action} auf `...`{.action} und dann auf `Passwort ändern`{.action}.
 
-- Für ein **Exchange** Angebot gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Microsoft`{.action}, klicken Sie dann auf `Exchange`{.action} und wählen Sie Ihren Dienst aus. Klicken Sie im Tab `E-Mail-Accounts`{.action} auf `...`{.action} und dann auf `Passwort ändern`{.action}. <br> Überprüfen Sie, ob die Zwei-Faktor-Authentifizierung aktiviert ist mithilfe unserer Anleitung zur [Zwei-Faktor-Authentifizierung für Exchange](../../microsoft-collaborative-solutions/2fa-exchange-konfigurieren/).
+- Für ein **Exchange** Angebot gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Microsoft`{.action}, klicken Sie dann auf `Exchange`{.action} und wählen Sie Ihren Dienst aus. Klicken Sie im Tab `E-Mail-Accounts`{.action} auf `...`{.action} und dann auf `Passwort ändern`{.action}. <br> Überprüfen Sie, ob die Zwei-Faktor-Authentifizierung aktiviert ist mithilfe unserer Anleitung zur [Zwei-Faktor-Authentifizierung für Exchange](/pages/web/microsoft-collaborative-solutions/manage_2fa_exchange).
 
 ### Ist mein Dienst von einer Störung oder Wartung betroffen?
 
@@ -86,7 +83,7 @@ Sie können alle aktuellen Tasks auf <https://web-cloud.status-ovhcloud.com/> ü
 
 ### Ist die Domain korrekt mit meinem E-Mail-Dienst verbunden?
 
-Überprüfen Sie, ob Ihre Domain korrekt auf die OVHcloud E-Mail-Server verweist. Hierzu müssen MX-Einträge in Ihrer DNS-Zone konfiguriert werden. <br>Lesen Sie dazu unsere Anleitung "[Einen MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen](../../domains/webhosting_e-mail_mx-konfiguration_mit_dns_zone_von_ovh/)".
+Überprüfen Sie, ob Ihre Domain korrekt auf die OVHcloud E-Mail-Server verweist. Hierzu müssen MX-Einträge in Ihrer DNS-Zone konfiguriert werden. <br>Lesen Sie dazu unsere Anleitung "[Einen MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen](/pages/web/domains/dns_zone_mx)".
 
 ![DNS Zone](images/DNS.png){.thumbnail}
 
@@ -135,6 +132,6 @@ Im Folgenden finden Sie von Servern häufig verwendete negative SMTP-Antwortcode
 
 ## Weiterführende Informationen
 
-[E-Mail FAQ](../e-mails-faq/)
+[E-Mail FAQ](/pages/web/emails/faq-emails)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

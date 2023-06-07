@@ -1,13 +1,10 @@
 ---
 title: FAQ SecNumCloud Connectivity
-slug: secnumcloud-connectivity-faq
-section: SecNumCloud Connectivity
-order: 05
 updated: 2022-10-13
 ---
 
 > [!primary]
-> Une version en langue anglaise de cette page est disponible [ici](https://docs.ovh.com/gb/en/network-ip/secnumcloud-connectivity-faq/).
+> Une version en langue anglaise de cette page est disponible [ici](/pages/cloud/network-ip/snc-connectivity-faq).
 >
 
 **Dernière mise à jour le 13/10/2022**

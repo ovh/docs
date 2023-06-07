@@ -1,8 +1,6 @@
 ---
 title: 'Working with probes'
-slug: probes
 excerpt: 'Find out about the general principles behind probes, and why they are used'
-section: Configuration
 updated: 2019-02-12
 ---
 
@@ -14,7 +12,7 @@ With the OVH Load Balancer, you can distribute a front-end’s incoming traffic 
 
 There may be instances where a server in your farm becomes unavailable for a number of reasons, including oversaturation, an incident, or scheduled maintenance. When the OVH Load Balancer detects a connection error, it will try to redirect traffic to another server. The connection will be slower, but it will continue to work.
 
-However, the reasons behind certain types of unavailability can be harder to pinpoint. For example, if a new version of code is being deployed, the application may momentarily experience a glitch, and return a 500 error. In this particular case, a solution would be to mark the servers concerned as unavailable in the API before you begin the maintenance work, apply the configuration and update, then mark the server as available again. This method is not ideal, but it works. For more information on deploying a blue-green architecture with an OVH Load Balancer, please read our guide: <https://docs.ovh.com/us/en/load-balancer/blue-green/>.
+However, the reasons behind certain types of unavailability can be harder to pinpoint. For example, if a new version of code is being deployed, the application may momentarily experience a glitch, and return a 500 error. In this particular case, a solution would be to mark the servers concerned as unavailable in the API before you begin the maintenance work, apply the configuration and update, then mark the server as available again. This method is not ideal, but it works. For more information on deploying a blue-green architecture with an OVH Load Balancer, please read our guide: </pages/cloud/load_balancer/case_blue_green>.
 
 The purpose of a probe is to test an infrastructure’s health. It periodically examines each of your servers, to ensure that they are working properly. If it detects an error, the server is automatically disabled until the situation is resolved.
 

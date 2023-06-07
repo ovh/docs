@@ -1,8 +1,5 @@
 ---
 title: Quick start for Logs Data Platform
-slug: logs-data-platform-quick-start
-order: 1
-section: Get Started
 updated: 2023-03-30
 ---
 

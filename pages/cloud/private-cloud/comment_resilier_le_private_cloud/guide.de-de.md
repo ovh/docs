@@ -1,8 +1,6 @@
 ---
 title: Hosted Private Cloud kündigen
-slug: eine-private-cloud-kuendigen
 excerpt: Erfahren Sie hier, wie Sie eine Hosted Private Cloud Infrastruktur kündigen können
-section: OVHcloud Funktionen
 updated: 2020-07-08
 ---
 

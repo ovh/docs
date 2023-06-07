@@ -1,9 +1,6 @@
 ---
 title: Réenregistrer des VM dans un nouveau PCC
-slug: vsphere-register-vm-vmx
 excerpt: Découvrez comment réenregistrer des VM sur un nouveau service depuis d'anciens datastores
-section: Fonctionnalités VMware vSphere
-order: 07
 updated: 2021-03-24
 ---
 
@@ -22,7 +19,7 @@ Suite à un incident, des machines virtuelles n'apparaissent plus dans votre inv
 
 ## En pratique
 
-Dans votre [interface vSphere](../connexion-interface-vsphere/), placez-vous dans la vue `Stockage`{.action}.
+Dans votre [interface vSphere](/pages/cloud/private-cloud/vsphere_interface_connexion), placez-vous dans la vue `Stockage`{.action}.
 
 ![vue stockage](images/register-vmx-01.png){.thumbnail}
 
@@ -40,7 +37,7 @@ Complétez les informations requises puis cliquez sur `Terminer`{.action}.
 
 Ces mêmes opérations sont à répéter sur chaque datastore et pour chaque VM à re-enregister.
 
-Vérifiez les paramètres de vos VM (nom, [portgroup](../creation-vlan/), etc...) en faisant un clic droit sur chacune d'elles puis en sélectionnant `Edit Settings`{.action}.
+Vérifiez les paramètres de vos VM (nom, [portgroup](/pages/cloud/private-cloud/creation_vlan), etc...) en faisant un clic droit sur chacune d'elles puis en sélectionnant `Edit Settings`{.action}.
 
 ![modifier paramètres](images/register-vmx-06.png){.thumbnail}
 

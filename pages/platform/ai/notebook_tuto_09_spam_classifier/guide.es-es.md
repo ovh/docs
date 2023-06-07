@@ -1,11 +1,8 @@
 ---
 title: AI Notebooks - Tutorial - Build your spam classifier
-slug: notebooks/tuto-spam-classifier
 excerpt: How to build your Spam classifier thanks to Machine Learning
-section: AI Notebooks - Tutorials
-order: 09
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-spam-classifier/'
+    canonical: '/pages/platform/ai/notebook_tuto_09_spam_classifier'
 updated: 2022-11-22
 ---
 
@@ -101,7 +98,7 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 
 ## Go further
 
-- If you are interested in **NLP** (Natural Language Processing), familiarise yourself with speech to text by following this [tutorial](https://docs.ovh.com/es/publiccloud/ai/notebooks/tuto-speech-to-text-recognition/).
+- If you are interested in **NLP** (Natural Language Processing), familiarise yourself with speech to text by following this [tutorial](/pages/platform/ai/notebook_tuto_08_speech_to_text).
 
 ## Feedback
 

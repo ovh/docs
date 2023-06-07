@@ -1,8 +1,6 @@
 ---
 title: Configuring the vRack on the load balancer
-slug: configre-vrack-load-balancer
 excerpt: How to configure vRack on a Load Balancer
-section: Configuration
 updated: 2022-04-04
 ---
 
@@ -12,7 +10,7 @@ The purpose of this guide is to help you link and configure your Load Balancer i
 
 The vRack is a dedicated private network that creates a link between all your cloud products. For more information please visit the page on [vRack](https://www.ovh.com/sg/solutions/vrack/)
 
-Before starting, if you haven't read it yet, we advise you to read the general presentation of the [Load Balancer](https://docs.ovh.com/sg/en/load-balancer/loadbalancer-introduction/) service.
+Before starting, if you haven't read it yet, we advise you to read the general presentation of the [Load Balancer](/pages/cloud/load_balancer/use_presentation) service.
 
 > [!warning]
 >
@@ -96,4 +94,4 @@ You can now create your server farm in the vRack. To do so, configure your TCP o
 
 You can now use the usual API call or even the client area to continue configuring the Load Balancer.
 
-As a reminder, a configuration guide for the Load Balancer is available: [Here](https://docs.ovh.com/ca/en/load-balancer/configure-iplb/).
+As a reminder, a configuration guide for the Load Balancer is available: [Here](/pages/cloud/load_balancer/create_http_https).

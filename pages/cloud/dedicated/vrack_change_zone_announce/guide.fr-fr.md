@@ -1,8 +1,6 @@
 ---
 title: "Modifier l'annonce d'un bloc IP dans le vRack"
-slug: modifier-annonce-bloc-ip-vrack
 excerpt: "Apprenez à modifier l'annonce d'un bloc IP dans le vRack"
-section: vRack
 updated: 2019-03-12
 ---
 
@@ -17,7 +15,7 @@ Le [vRack](https://www.ovh.com/fr/solutions/vrack/){.external} est un réseau pr
 ## Prérequis :
 
 - Posséder un [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}.
-- Avoir [configuré un bloc d’adresses IP dans le vRack](../ajouter-ou-enlever-un-bloc-ip-du-vrack/).
+- Avoir [configuré un bloc d’adresses IP dans le vRack](/pages/cloud/dedicated/configuring-an-ip-block-in-a-vrack).
 - Disposer de connaissances avancées en réseau.
 
 > [!warning]

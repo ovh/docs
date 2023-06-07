@@ -1,9 +1,6 @@
 ---
 title: 'Alojar varios sitios web en un mismo hosting'
-slug: configurar-un-multisitio-en-un-alojamiento-web
 excerpt: 'Cómo utilizar un plan de hosting para alojar varios sitios web'
-section: 'Configuración del alojamiento'
-order: 03
 updated: 2022-11-04
 ---
 
@@ -23,7 +20,7 @@ Es posible alojar varios sitios web en un mismo plan de hosting, aunque los domi
 
 - Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external} compatible.
 - Tener uno o más [dominios](https://www.ovhcloud.com/es-es/domains/){.external}.
-- Poder modificar la configuración de sus dominios (la [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#entender-el-concepto-de-dns)).
+- Poder modificar la configuración de sus dominios (la [zona DNS](/pages/web/domains/dns_zone_edit#entender-el-concepto-de-dns)).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
@@ -91,7 +88,7 @@ Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action}. Com
 Al añadir un dominio registrado en OVHcloud, podrá modificar la configuración DNS de forma automática o manual:
 
 - **Para una configuración DNS automática**, marque la casilla `Configuración automática (recomendado)`{.action}.
-- **Para una configuración DNS manual**, desmarque la casilla `Configuración automática (recomendado)`{.action}. En este caso, se mostrarán los parámetros que debe modificar.  Si desea realizar esta configuración, consulte nuestra guía ["Editar una zona DNS de OVHcloud"](../../domains/web_hosting_como_editar_mi_zona_dns/){.external}.
+- **Para una configuración DNS manual**, desmarque la casilla `Configuración automática (recomendado)`{.action}. En este caso, se mostrarán los parámetros que debe modificar.  Si desea realizar esta configuración, consulte nuestra guía ["Editar una zona DNS de OVHcloud"](/pages/web/domains/dns_zone_edit){.external}.
 
 Haga clic en `Aceptar`{.action} para añadir el dominio. Esta operación puede tardar un máximo de una hora. No obstante, la modificación de la configuración DNS del dominio tarda entre 1 y 24 horas en propagarse y ser efectiva.
 
@@ -105,13 +102,13 @@ Una vez añadido el dominio, vaya al [paso 3\. publicar un sitio web en internet
 
  > Antes de añadir el registro multisitio, es preferible cambiar la zona DNS del dominio externo.
  >
- > Para modificar la configuración del dominio externo (su zona DNS), conéctese al panel que le ofrezca el proveedor que gestione dicho dominio. Si su proveedor es OVHcloud, consulte nuestra guía ["Editar una zona DNS de OVHcloud"](../../domains/web_hosting_como_editar_mi_zona_dns/){.external}. Una vez realizada la operación, los cambios tardarán entre 1 y 24 horas en propagarse y ser plenamente efectivos.
+ > Para modificar la configuración del dominio externo (su zona DNS), conéctese al panel que le ofrezca el proveedor que gestione dicho dominio. Si su proveedor es OVHcloud, consulte nuestra guía ["Editar una zona DNS de OVHcloud"](/pages/web/domains/dns_zone_edit){.external}. Una vez realizada la operación, los cambios tardarán entre 1 y 24 horas en propagarse y ser plenamente efectivos.
 >
 > Estos son los 2 elementos que debe modificar en lo relativo a la configuración DNS de su dominio externo:
 >
 > |Campo|¿Dónde encontrar la información?|Acción a realizar|
 > |---|---|---|
-> |TXT|En la pestaña `Multisitio`{.action}, haciendo clic en `Configuración del código de verificación ovhcontrol`{.action}|Permite a OVHcloud asegurarse de que la adición de cada dominio externo es legítima. Deberá crear el registro TXT con el subdominio ovhcontrol (p. ej., "ovhcontrol.mydomain.ovh") en la zona DNS autorizada para el dominio que quiera añadir.<br></br>Tenga en cuenta que, si quiere añadir `blog.mydomain.ovh`, debe crear el registro para el subdominio `ovhcontrol.mydomain.ovh` y no `ovhcontrol.blog.mydomain.ovh`.<br></br> Para consultar la configuración DNS, acceda a los [servidores DNS](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/) a los que pertenece el dominio. Solo deberá validar el dominio principal, no todos los subdominios.|
+> |TXT|En la pestaña `Multisitio`{.action}, haciendo clic en `Configuración del código de verificación ovhcontrol`{.action}|Permite a OVHcloud asegurarse de que la adición de cada dominio externo es legítima. Deberá crear el registro TXT con el subdominio ovhcontrol (p. ej., "ovhcontrol.mydomain.ovh") en la zona DNS autorizada para el dominio que quiera añadir.<br></br>Tenga en cuenta que, si quiere añadir `blog.mydomain.ovh`, debe crear el registro para el subdominio `ovhcontrol.mydomain.ovh` y no `ovhcontrol.blog.mydomain.ovh`.<br></br> Para consultar la configuración DNS, acceda a los [servidores DNS](/pages/web/domains/dns_server_general_information) a los que pertenece el dominio. Solo deberá validar el dominio principal, no todos los subdominios.|
 >
 > ![Multisitio](images/add-multisite-external-step3.png){.thumbnail}
 >
@@ -149,9 +146,9 @@ Compruebe que la información que se muestra es correcta y haga clic en `Aceptar
 
 Una vez añadido el dominio, solo tiene que publicar el sitio web correspondiente. Le recordamos que debe realizar esta operación en la carpeta raíz que haya indicado en el paso anterior.
 
-Si necesita ayuda, puede disfrutar de una infraestructura de sitio web lista para usar gracias a los módulos en 1 clic de OVHcloud. Si utiliza estos módulos, el sitio web se instalará automáticamente en la carpeta raíz configurada anteriormente. Para más información, consulte nuestra guía [Instalar un sitio web con un módulo en un clic](../modulos-en-un-clic/){.external}. 
+Si necesita ayuda, puede disfrutar de una infraestructura de sitio web lista para usar gracias a los módulos en 1 clic de OVHcloud. Si utiliza estos módulos, el sitio web se instalará automáticamente en la carpeta raíz configurada anteriormente. Para más información, consulte nuestra guía [Instalar un sitio web con un módulo en un clic](/pages/web/hosting/cms_install_1_click_modules){.external}. 
 
-Si, por el contrario, quiere instalar manualmente su sitio web, deberá subir los archivos a la carpeta raíz adecuada de su espacio de almacenamiento. Para más información, consulte nuestra guía [Publicar un sitio web en internet](../web_hosting_publicar_un_sitio_web_en_internet/){.external}.
+Si, por el contrario, quiere instalar manualmente su sitio web, deberá subir los archivos a la carpeta raíz adecuada de su espacio de almacenamiento. Para más información, consulte nuestra guía [Publicar un sitio web en internet](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}.
 
 > [!primary]
 >
@@ -162,11 +159,11 @@ Si, por el contrario, quiere instalar manualmente su sitio web, deberá subir lo
 
 ## Más información
 
-[Instalar un sitio web con un módulo en un clic](../modulos-en-un-clic/){.external}
+[Instalar un sitio web con un módulo en un clic](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Editar una zona DNS de OVHcloud](../../domains/web_hosting_como_editar_mi_zona_dns/){.external}
+[Editar una zona DNS de OVHcloud](/pages/web/domains/dns_zone_edit){.external}
 
-[Publicar un sitio web en internet](../web_hosting_publicar_un_sitio_web_en_internet/){.external}
+[Publicar un sitio web en internet](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 

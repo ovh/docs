@@ -1,9 +1,6 @@
 ---
 title: Skonfigurować NAS-HA na serwerze Windows poprzez CIFS
-slug: nas/cifs
 excerpt: Ten przewodnik pokazuje, jak zamontować NAS-HA w systemie Windows Server poprzez CIFS.
-section: NAS-HA
-order: 04
 updated: 2021-11-22
 ---
 
@@ -50,6 +47,6 @@ net use z: \\10.16.101.8\zpool-000206_PARTITION_NAME_1
 
 ## Sprawdź również
 
-[Najczęściej zadawane pytania dotyczące technologii NAS](https://docs.ovh.com/pl/storage/file-storage/nas/faq/)
+[Najczęściej zadawane pytania dotyczące technologii NAS](/pages/cloud/storage/file_storage/nas_faq)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

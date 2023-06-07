@@ -1,9 +1,6 @@
 ---
 title: Traffic management with Istio on OVHcloud Managed Kubernetes
-slug: traffic-management-with-istio
 excerpt: Find out how to manage traffic with Istio on OVHcloud Managed Kubernetes
-section: Traffic management
-order: 04
 updated: 2021-09-22
 ---
 
@@ -43,7 +40,7 @@ In this tutorial we are showing some of the traffic management features of Istio
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-hello-world) documentation.
 
 It also supposes you have a basic knowledge of Istio, and that you have installed it in your Kubernetes cluster. If it isn't the case, please follow the [Installing Istio on OVHcloud Managed Kubernetes](../installing-istio/) tutorial. We are going to use the [Bookinfo](https://istio.io/docs/examples/bookinfo/){.external} example application, as we did in that tutorial, so if you haven't installed it, please do it now.
 

@@ -1,9 +1,6 @@
 ---
 title: 'Tutorial - Creating your personal webpage at OVHcloud'
-slug: create-your-own-web-page
 excerpt: 'Find out how to create your first webpage with a free Start 10M hosting plan'
-section: "Tutorials"
-order: 012
 updated: 2023-02-17
 ---
 
@@ -381,13 +378,13 @@ To display the link target in a new tab, simply add a `target` attribute to your
 
 ### How do I store content on my hosting plan?
 
-To make your pages, and therefore your website, visible to everyone, you will need to upload them to your hosting plan (you will need to activate your hosting plan [as detailed in this guide](https://docs.ovh.com/gb/en/hosting/activate-start10m/)).
+To make your pages, and therefore your website, visible to everyone, you will need to upload them to your hosting plan (you will need to activate your hosting plan [as detailed in this guide](/pages/web/hosting/activate_start10m)).
 
 You can transfer files via a dedicated protocol: **FTP** (for **F**ile **T**ransfer **P**rotocol) Use dedicated software for this operation, such as [FileZilla](https://filezilla-project.org/download.php?type=client) or [Cyberduck](https://cyberduck.io/download/).
 
 ### Deploy your website in FTP
 
-To upload your files to your hosting, please refer to our guide on [using FileZilla](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/).
+To upload your files to your hosting, please refer to our guide on [using FileZilla](/pages/web/hosting/ftp_filezilla_user_guide).
 
 Once the files have been transferred to your web hosting plan, you can view the results by typing your domain name in the address bar of your browser, or by pressing the `F5` key on your keyboard to reload the page if you are already on your website.
 

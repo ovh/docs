@@ -1,10 +1,8 @@
 ---
 title: Keeping your vSphere web client secure
-slug: securing-access-vsphere-web
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/securing-access-vsphere-web/'
+    canonical: '/pages/cloud/private-cloud/vsphere_access_security_advices'
 excerpt: Find out how to optimise security for your vSphere web client
-section: Getting started
 updated: 2020-11-18
 ---
 

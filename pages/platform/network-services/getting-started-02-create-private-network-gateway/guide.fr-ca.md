@@ -1,9 +1,6 @@
 ---
 title: Créer un réseau privé avec une Gateway
-slug: creating-private-network-with-gateway
 excerpt: "Découvrez comment créer un réseau Privé avec une Gateway via l'espace client OVHcloud, l'API Openstack ou l'API OVHcloud"
-section: Premiers pas
-order: 01
 updated: 2022-11-02
 ---
 
@@ -13,14 +10,14 @@ updated: 2022-11-02
 
 Une Gateway offre une méthode de connexion sortante sécurisée depuis vos instances en réseau privé, ou bien encore la possibilité d’utiliser des adresses Floating IP avec votre instance ou votre Load Balancer pour l’exposition de services.
 
-Ces opérations peuvent être réalisées depuis l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), l’[API OpenStack](https://docs.ovh.com/ca/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/) ou l’[API OVHcloud](https://ca.api.ovh.com/).
+Ces opérations peuvent être réalisées depuis l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), l’[API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) ou l’[API OVHcloud](https://ca.api.ovh.com/).
 
 **Apprenez à créer un réseau privé avec une Gateway**
 
 ## Prérequis
 
 - Posséder un [projet Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud
-- Avoir accès à l’[API OVHcloud](https://ca.api.ovh.com/), à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ou à l’environnement OpenStack ([Tutoriel](https://docs.ovh.com/ca/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/))
+- Avoir accès à l’[API OVHcloud](https://ca.api.ovh.com/), à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ou à l’environnement OpenStack ([Tutoriel](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api))
 - Pour OpenStack, il est nécessaire de mettre en place le client OpenStack
 
 ## En pratique
@@ -37,7 +34,7 @@ Ces opérations peuvent être réalisées depuis l’[espace client OVHcloud](ht
 >>
 >> Cliquez sur `Gateway`{.action} dans le menu de gauche sous l'onglet **Network**.
 >>
->> Veuillez noter qu'il est nécessaire d'avoir activé le vRack avant de poursuivre. Si vous n'en possédez pas, nous vous invitons à consulter cette [section](https://docs.ovh.com/ca/fr/publiccloud/network-services/public-cloud-vrack/#activation) du guide correspondant.
+>> Veuillez noter qu'il est nécessaire d'avoir activé le vRack avant de poursuivre. Si vous n'en possédez pas, nous vous invitons à consulter cette [section](/pages/platform/network-services/getting-started-07-creating-vrack#activation) du guide correspondant.
 >>
 >> Cliquez ensuite sur le bouton `Créer une Gateway`{.action}. 
 >>
@@ -102,8 +99,8 @@ Ces opérations peuvent être réalisées depuis l’[espace client OVHcloud](ht
 
 Avant de poursuivre, il est recommandé de consulter ces guides :
 
-- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/ca/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Définir les variables d'environnement OpenStack](https://docs.ovh.com/ca/fr/public-cloud/set-openstack-environment-variables/)
+- [Préparer l’environnement pour utiliser l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Définir les variables d'environnement OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
  
 > [!tabs]
 > **Étape 1**
@@ -127,7 +124,7 @@ Avant de poursuivre, il est recommandé de consulter ces guides :
 > [!tabs]
 > **Étape 1** 
 >> 
->> Connectez-vous à l'interface APIv6 OVHcloud. Si besoin, aidez-vous du guide « [Premiers pas avec l'API OVHcloud](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/) ».
+>> Connectez-vous à l'interface APIv6 OVHcloud. Si besoin, aidez-vous du guide « [Premiers pas avec l'API OVHcloud](/pages/account/api/first-steps) ».
 >> 
 >> Dans le cas où l'identifiant du projet est inconnu, les appels ci-dessous vous permettent de le récupérer.
 >>

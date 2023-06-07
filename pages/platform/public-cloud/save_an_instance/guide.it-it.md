@@ -1,9 +1,6 @@
 ---
 title: "Effettuare il backup di un'istanza"
-slug: effettuare-snapshot-di-un-istanza
 excerpt: "Come eseguire le prime operazioni su un'istanza Public Cloud dallo Spazio Cliente OVHcloud"
-order: 1
-section: Gestione dallo Spazio Cliente OVHcloud
 updated: 2023-01-04
 ---
 
@@ -91,10 +88,10 @@ I backup delle istanze sono gestiti nella sezione `Instance Backup`{.action} del
 
 ![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
 
-Questa guida ti mostra come utilizzare i backup per clonare o ripristinare le istanze in [questa guida](https://docs.ovh.com/it/public-cloud/crearipristina_il_tuo_server_virtuale_da_un_backup/).
+Questa guida ti mostra come utilizzare i backup per clonare o ripristinare le istanze in [questa guida](/pages/platform/public-cloud/create_restore_a_virtual_server_with_a_backup).
 
 ## Per saperne di più
 
-[Crea/ripristina il tuo server virtuale da un backup](https://docs.ovh.com/it/public-cloud/crearipristina_il_tuo_server_virtuale_da_un_backup/)
+[Crea/ripristina il tuo server virtuale da un backup](/pages/platform/public-cloud/create_restore_a_virtual_server_with_a_backup)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

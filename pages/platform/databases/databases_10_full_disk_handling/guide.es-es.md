@@ -1,12 +1,9 @@
 ---
 title: "Handling &laquo;Disk Full&raquo; situations"
-slug: handling-disk-full
 excerpt: Find out how to avoid, analyse and fix a Public Cloud Databases service reaching its full disk capacity
-section: General guides
-order: 100
 updated: 2023-01-23
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/handling-disk-full/'
+    canonical: '/pages/platform/databases/databases_10_full_disk_handling'
 ---
 
 **Last updated January 23rd, 2023**
@@ -28,7 +25,7 @@ No matter the database technology, when no more physical disk space is available
 
 #### Disk space usage metrics
 
-As part of using your Public Cloud Databases service efficiently, you should keep an eye on the service metrics. You can access those in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) or using the [API](https://docs.ovh.com/es/api/first-steps-with-ovh-api/). You can also make use of [cross-service integrations](https://docs.ovh.com/es/publiccloud/databases/cross-service-integration/) to gather, observe and alert based on services metrics.
+As part of using your Public Cloud Databases service efficiently, you should keep an eye on the service metrics. You can access those in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) or using the [API](/pages/account/api/first-steps). You can also make use of [cross-service integrations](/pages/platform/databases/databases_07_cross_service_integration) to gather, observe and alert based on services metrics.
 
 #### Mail notifications
 

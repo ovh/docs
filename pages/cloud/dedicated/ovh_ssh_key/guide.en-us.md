@@ -1,8 +1,6 @@
 ---
 title: 'Installing an OVHcloud SSH key'
-slug: ovh-ssh-key
 excerpt: 'This guide will explain how to install an OVHcloud SSH key, allowing our administrators to make changes'
-section: 'Diagnostic and rescue mode'
 updated: 2018-02-12
 ---
 
@@ -17,7 +15,7 @@ In some cases, OVHcloud administrators will need to perform interventions on you
 
 ## Requirements
 
-- You must be [logged in via SSH](../ssh-introduction){.external} (root access).
+- You must be [logged in via SSH](/pages/cloud/dedicated/ssh_introduction){.external} (root access).
 
 
 ## Instructions
@@ -120,6 +118,6 @@ cat /root/.ssh/authorized_keys2
 
 ## Go further
 
-[Introduction to SSH](../ssh-introduction/).
+[Introduction to SSH](/pages/cloud/dedicated/ssh_introduction).
 
 Join our community of users on <https://community.ovh.com/en/>.

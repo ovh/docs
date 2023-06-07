@@ -1,9 +1,6 @@
 ---
 title: 'Spécificités techniques liées aux hébergements mutualisés'
-slug: specificites-techniques-hebergements-mutualises
 excerpt: 'Vous trouverez dans ce guide différentes informations et spécificités techniques liées aux hébergements mutualisés.'
-section: "Configuration de l'hébergement"
-order: 05
 updated: 2022-11-18
 ---
 
@@ -29,7 +26,7 @@ updated: 2022-11-18
 
 ### FTP
 
-- Erreur d'accès ("Échec de l'authentification de connexion 530"): Vous pouvez vous assurer que les informations d'accès à votre espace FTP sont correctes en vérifiant celles-ci via votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans l'onglet `FTP - SSH`. Les mots de passe ne sont jamais affichés, mais ils peuvent être modifiés. Veuillez consulter nos [guides FTP](../connexion-espace-stockage-ftp-hebergement-web/).
+- Erreur d'accès ("Échec de l'authentification de connexion 530"): Vous pouvez vous assurer que les informations d'accès à votre espace FTP sont correctes en vérifiant celles-ci via votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans l'onglet `FTP - SSH`. Les mots de passe ne sont jamais affichés, mais ils peuvent être modifiés. Veuillez consulter nos [guides FTP](/pages/web/hosting/ftp_connection).
 
 - Les connexions FTP doivent utiliser le **mode passif**. Assurez-vous que votre script ou votre client FTP est ajusté en conséquence.
 
@@ -67,7 +64,7 @@ Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to conn
 
 - La version MySQL ne peut pas être modifiée pour les bases de données intégrées à l'hébergement Web.
 
-Pour plus d'informations sur la gestion des bases de données, reportez-vous au guide [Créer une base de données sur son hébergement web](../creer-base-de-donnees/).
+Pour plus d'informations sur la gestion des bases de données, reportez-vous au guide [Créer une base de données sur son hébergement web](/pages/web/hosting/sql_create_database).
 
 ### PHP
 
@@ -82,8 +79,8 @@ Pour plus d'informations sur la gestion des bases de données, reportez-vous au 
 
 - Vous pourrez modifier la version PHP de votre hébergement web, soit depuis [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ("**Configuration**"), soit en modifiant le fichier .ovhconfig. Des configurations mixtes sont également possibles avec ces dernières. Des instructions détaillées sont disponibles dans nos guides :
 
-[Configurer le fichier .ovhconfig de son hébergement web](../configurer-fichier-ovhconfig/)  
-[Modifier la configuration de son hébergement web](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/)
+[Configurer le fichier .ovhconfig de son hébergement web](/pages/web/hosting/ovhconfig_configuration)  
+[Modifier la configuration de son hébergement web](/pages/web/hosting/ovhconfig_modify_system_runtime)
 
 
 > [!primary]
@@ -156,10 +153,10 @@ Afin d’être utilisées dans le cadre d’OVHcloud Web Statistics, les donnée
 
 ## Aller plus loin
 
-[Se connecter à l’espace de stockage de son hébergement web](../connexion-espace-stockage-ftp-hebergement-web/)
+[Se connecter à l’espace de stockage de son hébergement web](/pages/web/hosting/ftp_connection)
 
-[Passer son site internet en HTTPS grâce au SSL](../passer-site-internet-https-ssl/)
+[Passer son site internet en HTTPS grâce au SSL](/pages/web/hosting/ssl-activate-https-website)
 
-[Optimisation des performances de votre site](../optimisation-performances-site/)
+[Optimisation des performances de votre site](/pages/web/hosting/optimise_your_website_performance)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

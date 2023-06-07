@@ -15,7 +15,7 @@ Listę kontaktów przypisanych do poszczególnych usług znajdziesz w sekcji `M
 
 #### Wskazówki i porady
 
-Aby dowiedzieć się więcej o zarządzaniu kontaktami, zapoznaj się z przewodnikiem: [Zarządzanie kontaktami usług](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/).
+Aby dowiedzieć się więcej o zarządzaniu kontaktami, zapoznaj się z przewodnikiem: [Zarządzanie kontaktami usług](/pages/account/customer/managing_contacts).
 
 ### Jak zmienić moje dane do faktury?
 
@@ -34,7 +34,7 @@ Jeśli nie odnowisz usługi przed tą datą, zostanie ona po prostu zawieszona, 
 
 Sprawdź status Twoich usług i zarządzaj ich odnawianiem w rubryce `Moje usługi`{.action} w Twoim Panelu klienta.
 Zaloguj się i odnawiaj ręcznie swoje usługi na stronie lien <https://eu.ovh.com/pl/cgi-bin/order/renew.cgi>
-Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania się z treścią przewodnika: [Zarządzanie odnawianiem usług](https://docs.ovh.com/pl/billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/).
+Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania się z treścią przewodnika: [Zarządzanie odnawianiem usług](/pages/account/billing/how_to_use_automatic_renewal).
 
 ### W jaki sposób włączyć automatyczne odnawianie usług?
 
@@ -43,7 +43,7 @@ Przejdź do sekcji `Produkty i usługi`{.action} dostępnej na dashboardzie w Pa
 #### Wskazówki i porady
 
 Zanim włączysz opcję automatycznego odnowienia, pamiętaj o tym, żeby zapisać przynajmniej jeden sposób płatności, ponieważ w przypadku nieopłacenia w terminie danej faktury, po 7 dniach Twoje usługi zostaną zawieszone. W przypadku nieopłacenia w terminie danej faktury, po 7 dniach Twoje usługi zostaną zawieszone.
-Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania się z treścią przewodnika: [Zarządzanie odnawianiem usług](https://docs.ovh.com/pl/billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/)
+Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania się z treścią przewodnika: [Zarządzanie odnawianiem usług](/pages/account/billing/how_to_use_automatic_renewal)
 
 ### W jaki sposób wyłączyć automatyczne odnawianie?
 
@@ -54,7 +54,7 @@ Aby zrezygnować z usługi, sprawdź [W jaki sposób zrezygnować z usługi?](#
 #### Wskazówki i porady
 
 Dzięki opcji automatycznego odnowienia unikasz ryzyka przerw w dostarczaniu usługi. Dodatkowo, otrzymujesz w związku z nadchodzącym terminem odnowienia dwa e-maile: 40 dni oraz 15 dni przed datą odnowienia.
-Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania się z treścią przewodnika: [Zarządzanie odnawianiem usług](https://docs.ovh.com/pl/billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/).
+Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania się z treścią przewodnika: [Zarządzanie odnawianiem usług](/pages/account/billing/how_to_use_automatic_renewal).
 
 ### Jak mogę dodać sposób płatności?
 
@@ -99,7 +99,7 @@ Informujemy, że rozwiązania z opcją automatycznego odnowienia są wznawiane p
 #### Wskazówki i porady
 
 Możesz zmienić częstotliwość odnawiania rozwiązań, udając się do sekcji `Moje usługi`{.action} w Panelu klienta.
-Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania się z treścią przewodnika: [Zarządzanie odnawianiem usług](https://docs.ovh.com/pl/billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/).
+Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania się z treścią przewodnika: [Zarządzanie odnawianiem usług](/pages/account/billing/how_to_use_automatic_renewal).
 
 ### Który z moich sposobów płatności zostanie obciążony?
 
@@ -128,7 +128,7 @@ Jeśli nie masz zarejestrowanego sposobu płatności, ale korzystasz z usług z 
 #### Wskazówki i porady
 
 Znasz Twój identyfikator oraz hasło OVHcloud? Możesz tutaj opłacić fakturę.
-Możesz również zapoznać się z przewodnikiem: [Zarządzanie fakturami OVHcloud - Jak uregulować moje saldo?](https://docs.ovh.com/pl/billing/zarzadzanie-fakturami-ovhcloud/).
+Możesz również zapoznać się z przewodnikiem: [Zarządzanie fakturami OVHcloud - Jak uregulować moje saldo?](/pages/account/billing/invoice_management).
 
 ### Jak mogę sprawdzić status mojej płatności?
 
@@ -152,7 +152,7 @@ Rezygnacja z usługi będzie skuteczna, gdy skończy się okres ważności usłu
 #### Wskazówki i porady
 
 W przypadku błędu w zamówieniu możesz skorzystać, pod pewnymi warunkami, z prawa do odstąpienia od umowy. Więcej informacji znajdziesz w sekcji „Jak anulować zamówienie?”.
-Pełna dokumentacja dotycząca rezygnacji z wszystkich naszych produktów i usług dostępna jest [tutaj](https://docs.ovh.com/pl/billing/how-to-cancel-your-services/)
+Pełna dokumentacja dotycząca rezygnacji z wszystkich naszych produktów i usług dostępna jest [tutaj](/pages/account/billing/how_to_cancel_services)
 
 ### Jak spersonalizować nazwę produktu/usługi na fakturze?
 
@@ -165,7 +165,7 @@ Fakturowanie obejmuje, z jednej strony, zasoby płatne z góry oraz, z drugiej s
 
 #### Wskazówki i porady
 
-Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania się z treścią przewodnika: [Rozliczanie należności za usługę Public Cloud](https://docs.ovh.com/pl/public-cloud/analizowanie_platnosci_i_zarzadzanie_nimi/).
+Jeśli chcesz dowiedzieć się więcej na ten temat, zapraszamy do zapoznania się z treścią przewodnika: [Rozliczanie należności za usługę Public Cloud](/pages/platform/public-cloud/analyze_billing).
 
 ### W jaki sposób uzyskać dostęp do księgi rachunkowej?
 

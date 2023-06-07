@@ -1,9 +1,6 @@
 ---
 title: Configurer son compte Exchange sur Android via l'application Gmail
-slug: exchange-configuration-sous-android
 excerpt: Apprenez à configurer un compte Exchange sur Android, via l'application Gmail
-section: Configuration sur smartphone/tablette
-order: 02
 updated: 2018-03-12
 ---
 
@@ -33,7 +30,7 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 >
 > Cette documentation a été réalisée depuis un appareil Nexus 6 utilisant la version 7.1.1 d'Android. Pour une question d'uniformisation, nous utilisons l'application Gmail pouvant être installée depuis le Play Store. Si vous souhaitez utiliser une autre application, la marche à suivre sera alors différente.
 >
-> Vous utilisez une version antérieure d'Android ? Consultez notre documentation : [Configurer son compte Exchange sur Android 5 Lollipop](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-sous-android-5-lollipop/){.external}.
+> Vous utilisez une version antérieure d'Android ? Consultez notre documentation : [Configurer son compte Exchange sur Android 5 Lollipop](/pages/web/microsoft-collaborative-solutions/how_to_configure_android){.external}.
 >
 
 ## En pratique
@@ -81,8 +78,8 @@ OVHcloud propose également une application web disposant de [fonctions collabor
 
 ## Aller plus loin
 
-[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur Android via l'application Gmail](https://docs.ovh.com/fr/emails/configuration-android-6/){.external}.
+[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur Android via l'application Gmail](/pages/web/emails/how_to_configure_android){.external}.
 
-[Configurer son compte E-mail Pro sur Android via l'application Gmail](https://docs.ovh.com/fr/emails-pro/configuration-android/){.external}.
+[Configurer son compte E-mail Pro sur Android via l'application Gmail](/pages/web/emails-pro/how_to_configure_android){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.

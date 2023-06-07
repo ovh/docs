@@ -1,9 +1,6 @@
 ---
 title: 'Website mit SSL-Zertifikat auf HTTPS umstellen'
-slug: website-umstellen-https-ssl
 excerpt: 'Hier erfahren Sie, wie Sie Ihre Website mit einem SSL-Zertifikat auf HTTPS umstellen.'
-section: SSL
-order: 02
 updated: 2022-10-04
 ---
 
@@ -49,7 +46,7 @@ Die Aktivierung des SSL-Zertifikats für Ihr Webhosting erfolgt über das [OVHcl
 |SSL-Zertifikat auf Ihrem Hosting aktivieren|Erlaubt OVHcloud die Installation eines SSL-Zertifikats auf Ihrem Hosting. Dabei haben Sie die Wahl zwischen verschiedenen Arten von Zertifikaten. Bitte wählen Sie das für Sie passende Angebot aus.|
 |SSL für die betreffende Multisite aktivieren|Die Website, für die Sie HTTPS verwenden möchten, muss auf Ihrem Hosting als „Multisite“ konfiguriert sein. Stellen Sie sicher, dass SSL für die Seite aktiviert und funktional ist.|
 
-Wie diese beiden Schritte genau funktionieren, erfahren Sie in unserer Anleitung „[SSL-Zertifikat auf einem Webhosting verwalten](https://docs.ovh.com/de/hosting/ssl-zertifikate-auf-webhostings-verwalten/){.external}“. Wenn Sie Ihr OVHcloud Hosting neu erworben haben, ist möglicherweise ein kostenloses SSL-Zertifikat vorinstalliert und die Multisite verfügt bereits über eine aktive SSL-Verbindung.
+Wie diese beiden Schritte genau funktionieren, erfahren Sie in unserer Anleitung „[SSL-Zertifikat auf einem Webhosting verwalten](/pages/web/hosting/ssl_on_webhosting){.external}“. Wenn Sie Ihr OVHcloud Hosting neu erworben haben, ist möglicherweise ein kostenloses SSL-Zertifikat vorinstalliert und die Multisite verfügt bereits über eine aktive SSL-Verbindung.
 
 Um dies zu überprüfen, loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Achten Sie darauf, dass Sie sich in dem Tab `Allgemeine Informationen`{.action} befinden. Unter „SSL-Zertifikat“ müsste ein kleines „Ja“ stehen, was anzeigt, dass bereits ein SSL-Zertifikat auf Ihrem Webhosting installiert ist. 
 
@@ -59,7 +56,7 @@ Gehen Sie dann auf den Tab `Multisite`{.action}. Die angezeigte Tabelle listet a
 
 ![HTTPS Website](images/activate-https-website-ssl-step3.png){.thumbnail}
 
-Sollte sich bei dieser Kontrolle herausstellen, dass offenbar kein SSL-Zertifikat korrekt auf Ihrem Webhosting installiert und/oder für die betreffende Multisite aktiviert wurde, lesen Sie bitte unsere Anleitung „[SSL-Zertifikat auf einem Webhosting verwalten](https://docs.ovh.com/de/hosting/ssl-zertifikate-auf-webhostings-verwalten/){.external}“.
+Sollte sich bei dieser Kontrolle herausstellen, dass offenbar kein SSL-Zertifikat korrekt auf Ihrem Webhosting installiert und/oder für die betreffende Multisite aktiviert wurde, lesen Sie bitte unsere Anleitung „[SSL-Zertifikat auf einem Webhosting verwalten](/pages/web/hosting/ssl_on_webhosting){.external}“.
 
 ### Schritt 2: Technische Umgebung überprüfen
 

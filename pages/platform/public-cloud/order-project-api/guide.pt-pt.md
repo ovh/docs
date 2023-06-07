@@ -1,9 +1,6 @@
 ---
 title: "Encomendar um projeto Public Cloud através da API OVHcloud"
 excerpt: "Saiba como encomendar o seu projeto Public Cloud com a API OVHcloud"
-slug: encomendar-project-public-cloud-api
-section: Introdução
-order: 9
 updated: 2020-12-09
 ---
 
@@ -22,8 +19,8 @@ A criação de um projeto é a primeira etapa da implantação de [instâncias P
 ## Requisitos
 
 - Dispor de identificadores OVHcloud válidos
-- Dispor de um [método de pagamento](https://docs.ovh.com/pt/billing/gerir-metodos-de-pagamento/) válido e registado na sua conta OVHcloud
-- Estar familiarizado com o [funcionamento da APIv6 OVHcloud](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/)
+- Dispor de um [método de pagamento](/pages/account/billing/manage-payment-methods) válido e registado na sua conta OVHcloud
+- Estar familiarizado com o [funcionamento da APIv6 OVHcloud](/pages/account/api/first-steps)
 
 ## Instruções
 

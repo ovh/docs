@@ -1,8 +1,6 @@
 ---
 title: 'Ustalenie numeru seryjnego dysku twardego'
-slug: ustalenie-numeru-seryjnego-dysku
 excerpt: 'Dowiedz się, jak ustalić numer seryjny dysku, aby przystąpić do jego wymiany'
-section: 'RAID & dyski'
 updated: 2018-08-21
 ---
 
@@ -73,7 +71,7 @@ Urządzenie zostanie wykryte przez system operacyjny i będzie się wyświetlał
 
 ### Ustalenie numeru seryjnego dysku w przypadku sprzętowej macierzy RAID
 
-Szczegółowy opis poleceń oraz sposobu testowania dysków twardych znajdziesz w tym [przewodniku (kontroler RAID LSI)](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}.
+Szczegółowy opis poleceń oraz sposobu testowania dysków twardych znajdziesz w tym [przewodniku (kontroler RAID LSI)](/pages/cloud/dedicated/raid_hard){.external}.
 
 
 #### Kontroler MegaRaid
@@ -163,7 +161,7 @@ Numer ID urządzenia RAID będzie się wyświetlał w następujący sposób: `/d
 
 Kontroler RAID LSI korzysta z modułu o nazwie `sg-map`, który mapuje urządzenia na `/dev/sgX` (gdzie X to numer określający urządzenie).
 
-Możesz skorzystać z [tego przewodnika (kontroler RAID LSI)](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}, aby określić, który dysk twardy odpowiada oznaczonemu urządzeniu “sg”.
+Możesz skorzystać z [tego przewodnika (kontroler RAID LSI)](/pages/cloud/dedicated/raid_hard){.external}, aby określić, który dysk twardy odpowiada oznaczonemu urządzeniu “sg”.
 
 Po odnalezieniu urządzenia “sg” powiązanego z dyskiem twardym, który chcesz przeanalizować, zastosuj następujące polecenie:
 

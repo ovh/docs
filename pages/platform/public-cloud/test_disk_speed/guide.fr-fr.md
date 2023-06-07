@@ -1,9 +1,6 @@
 ---
 title: 'Tester la vitesse des disques'
-slug: tester-la-vitesse-des-disques
 excerpt: "Vérifiez le nombre d'opérations d'entrée-sortie par seconde (IOPS) que vos disques sont en mesure d'effectuer"
-section: 'Stockage'
-order: 7
 updated: 2022-01-04
 ---
 
@@ -115,8 +112,8 @@ Les performances des disques sont ici d'environ 891 IOPS.
 
 ## Aller plus loin
 
-[Créer et configurer un disque supplementaire sur une instance](../creer-et-configurer-un-disque-supplementaire-sur-une-instance/){.external}.
+[Créer et configurer un disque supplementaire sur une instance](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance){.external}.
 
-[Ajouter des espaces de stockage](../ajouter-des-espaces-de-stockage/){.external}.
+[Ajouter des espaces de stockage](/fr/public-cloud/ajouter-des-espaces-de-stockage/){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

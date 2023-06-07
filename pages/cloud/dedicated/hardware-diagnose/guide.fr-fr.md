@@ -1,9 +1,6 @@
 ---
 title: 'Diagnostiquer des dysfonctionnements matériels sur un serveur dédié'
-slug: diagnostic-dysfonctionnements-materiels-serveur-dedie
 excerpt: 'Découvrez comment utiliser les outils de diagnostic pour identifier des dysfonctionnements matériels sur votre serveur'
-section: Diagnostic et mode Rescue
-order: 03
 updated: 2022-12-15
 ---
 
@@ -18,7 +15,7 @@ L’usure progressive d’un serveur peut amener des dysfonctionnements matérie
 ## Prérequis
 
 - Posséder un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/).
-- Avoir redémarré le serveur en [mode rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/).
+- Avoir redémarré le serveur en [mode rescue](/pages/cloud/dedicated/rescue_mode).
 
 ## En pratique
 

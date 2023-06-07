@@ -1,9 +1,6 @@
 ---
 title: Proteger el panel de administración del sitio web con un archivo .htaccess
-slug: compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion
 excerpt: Cómo proteger el acceso a la administración de su sitio web con un archivo .htaccess
-section: Reescritura y autenticación
-order: 02
 updated: 2021-09-20
 ---
 
@@ -30,7 +27,7 @@ A veces puede ser necesario proteger el acceso a una parte del sitio web con ide
 
 - Tener un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
-- Disponer de las claves necesarias para conectarse al [espacio de almacenamiento del alojamiento](../conexion-espacio-almacenamiento-ftp-alojamiento-web/).
+- Disponer de las claves necesarias para conectarse al [espacio de almacenamiento del alojamiento](/pages/web/hosting/ftp_connection).
 
 ## Procedimiento
 
@@ -43,7 +40,7 @@ A veces puede ser necesario proteger el acceso a una parte del sitio web con ide
 
 ### Etapa 1: crear el árbol
 
-Conéctese al [espacio de almacenamiento](../conexion-espacio-almacenamiento-ftp-alojamiento-web/) de su alojamiento. Abra el ["Pasta raiz"](../configurar-un-multisitio-en-un-alojamiento-web/#21-anadir-un-dominio-registrado-con-ovhcloud) de su sitio web.<br>
+Conéctese al [espacio de almacenamiento](../conexion-espacio-almacenamiento-ftp-alojamiento-web/) de su alojamiento. Abra el ["Pasta raiz"](/pages/web/hosting/multisites_configure_multisite#21-anadir-un-dominio-registrado-con-ovhcloud) de su sitio web.<br>
 Cree un archivo "crypter.php".
 
 ![root_folder](images/root_folder.png){.thumbnail}
@@ -72,7 +69,7 @@ echo nl2br("$string_1 \n $string_2 \n $string_3");
 ?>
 ```
 
-Si tiene contratado un plan de hosting [Profesional](https://www.ovhcloud.com/es/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer/), conéctese al alojamiento por [SSH](../web_hosting_ssh_en_alojamiento_compartido/). Ejecute el siguiente comando:
+Si tiene contratado un plan de hosting [Profesional](https://www.ovhcloud.com/es/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer/), conéctese al alojamiento por [SSH](/pages/web/hosting/ssh_on_webhosting). Ejecute el siguiente comando:
 
 ```bash
 php crypter.php
@@ -120,9 +117,9 @@ Require valid-user
 
 > [!warning]
 >
-> En este ejemplo, sustituya "su_login_ftp" por su [identificador FTP](../conexion-espacio-almacenamiento-ftp-alojamiento-web/#1-obtener-los-datos-de-conexion). En el apartado `Alojamientos`{.action}, encontrará la pestaña `FTP-SSH`{.action} del alojamiento correspondiente.
+> En este ejemplo, sustituya "su_login_ftp" por su [identificador FTP](/pages/web/hosting/ftp_connection#1-obtener-los-datos-de-conexion). En el apartado `Alojamientos`{.action}, encontrará la pestaña `FTP-SSH`{.action} del alojamiento correspondiente.
 >
-> Sustituya si fuera necesario en el ejemplo "carpeta_raíz" por el nombre de la [carpeta que contiene los archivos de su sitio web](../configurar-un-multisitio-en-un-alojamiento-web/#21-anadir-un-dominio-registrado-con-ovhcloud).
+> Sustituya si fuera necesario en el ejemplo "carpeta_raíz" por el nombre de la [carpeta que contiene los archivos de su sitio web](/pages/web/hosting/multisites_configure_multisite#21-anadir-un-dominio-registrado-con-ovhcloud).
 >
 
 #### Bloquear el acceso a uno o más archivos
@@ -149,7 +146,7 @@ Require valid-user
 
 ## Más información <a name="gofurther"></a>
 
-[.htaccess, reescritura de URL con mod_rewrite](../web_hosting_htaccess_reescritura_de_url_con_mod_rewrite/)
+[.htaccess, reescritura de URL con mod_rewrite](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 

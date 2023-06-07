@@ -1,9 +1,6 @@
 ---
 title: 'Specifiche tecniche degli hosting condivisi'
 excerpt: 'Questa guida contiene informazioni e specifiche tecniche degli hosting condivisi'
-slug: hosting_condiviso_specifiche_tecniche
-section: Configurazione dell’hosting
-order: 05
 updated: 2022-11-18
 ---
 
@@ -33,7 +30,7 @@ updated: 2022-11-18
 
 ### FTP
 
-- Errore di accesso (“Autenticazione di connessione 530 non riuscita”): È possibile verificare la correttezza delle credenziali di accesso allo Spazio Cliente FTP dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella scheda `FTP - SSH`. La password non vengono mai mostrate, ma possono essere modificate. Consulta le nostre [guide FTP](../accedere-spazio-storage-ftp-hosting-web/).
+- Errore di accesso (“Autenticazione di connessione 530 non riuscita”): È possibile verificare la correttezza delle credenziali di accesso allo Spazio Cliente FTP dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella scheda `FTP - SSH`. La password non vengono mai mostrate, ma possono essere modificate. Consulta le nostre [guide FTP](/pages/web/hosting/ftp_connection).
 
 - Le connessioni FTP devono utilizzare la **modalità passiva**. Assicurati che il tuo script o il tuo client FTP siano configurati correttamente.
 
@@ -62,7 +59,7 @@ Per un periodo di 3600 secondi (1 ora), la tua offerta di hosting ti permetterà
 
     - *max_user_connections*: 50 di default, con possibilità di passare a 200
 
-Per saperne di più, consulta i dettagli delle nostre [soluzioni di hosting](https://www.ovhcloud.com/it/web-hosting/) e [la nostra guida](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/).
+Per saperne di più, consulta i dettagli delle nostre [soluzioni di hosting](https://www.ovhcloud.com/it/web-hosting/) e [la nostra guida](/pages/web/clouddb/starting_with_clouddb).
 
 #### Connessioni dal server esterno
 
@@ -79,7 +76,7 @@ Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to conn
 
 - La versione MySQL non può essere modificata per i database integrati all’hosting Web.
 
-Per maggiori informazioni sulla gestione dei database, consulta la guida [Creare un database su un hosting Web](../creare-database/).
+Per maggiori informazioni sulla gestione dei database, consulta la guida [Creare un database su un hosting Web](/pages/web/hosting/sql_create_database).
 
 ### PHP
 
@@ -90,12 +87,12 @@ Per maggiori informazioni sulla gestione dei database, consulta la guida [Creare
 > La modifica del file **php.ini** non è disponibile sulle offerte di hosting condiviso. La configurazione PHP è globale per l'intera infrastruttura condivisa.
 >
 
-- È possibile verificare i dettagli della configurazione del tuo hosting Web. Per farlo, consulta la rubrica \[”Informazioni tecniche del tuo hosting Web”\](.#informazioni-tecniche-del-tuo-hosting-web) in fondo a questa guida. 
+- È possibile verificare i dettagli della configurazione del tuo hosting Web. Per farlo, consulta la rubrica \[”Informazioni tecniche del tuo hosting Web”\](/pages/web/hosting/hosting_technical_specificities#informazioni-tecniche-del-tuo-hosting-web) in fondo a questa guida. 
 
 - È possibile modificare la versione PHP del tuo hosting Web dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)(“**Configurazione**”) oppure modificando il file .ovhconfig.  In questo ultimo caso sono possibili anche configurazioni miste. Per maggiori dettagli, consulta le nostre guide:
 
-[Configurare il file .ovhconfig di un hosting Web](../configurare-file-ovhconfig/)  
-[Modificare la configurazione di un hosting Web](../modifica_lambiente_di_esecuzione_del_tuo_hosting_web/)
+[Configurare il file .ovhconfig di un hosting Web](/pages/web/hosting/ovhconfig_configuration)  
+[Modificare la configurazione di un hosting Web](/pages/web/hosting/ovhconfig_modify_system_runtime)
 
 
 > [!primary]
@@ -158,13 +155,13 @@ Tutte le nostre offerte di hosting web condiviso situate:
 
 - a Beauharnois (BHS), Canada, dispongono di backup automatici a J-1 / J-2 / J-3 / J-7 / J-14. Questi backup sono salvati anche nel datacenter di Beauharnois (BHS), in Canada.
 
-Questa guida ti mostra come [accedere allo spazio di storage](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) o [ripristinare lo spazio di storage di un hosting Web](https://docs.ovh.com/it/hosting/web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/) nelle nostre guide.
+Questa guida ti mostra come [accedere allo spazio di storage](/pages/web/hosting/ftp_connection) o [ripristinare lo spazio di storage di un hosting Web](/pages/web/hosting/ftp_save_and_backup) nelle nostre guide.
 
 #### Database / SQL
 
 Per i database condivisi (inclusi nella tua offerta di hosting Web) o i server di database (Web Cloud Databases), proposti su Gravelines (GRA), in Francia e Beauharnois (BHS), in Canada, il backup dei database è effettuato quotidianamente. Questi backup sono accessibili via [Spazio Cliente OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o tramite le [API OVHcloud](https://api.ovh.com/). I backup sono salvati anche su un'altra infrastruttura. Questi dati sono replicati in 3 punti distinti in Francia: Roubaix (RBX), Strasburgo (SBG) e Gravelines (GRA). La politica di mantenimento dei backup è di 30 giorni.
 
-Questa guida ti mostra come [Recuperare il backup del database di un hosting Web](https://docs.ovh.com/it/hosting/web_hosting_come_esportare_un_database/) nella nostra guida.
+Questa guida ti mostra come [Recuperare il backup del database di un hosting Web](/pages/web/hosting/sql_database_export) nella nostra guida.
 
 #### Email
 
@@ -194,10 +191,10 @@ Per poter essere utilizzati nell’ambito del servizio OVHcloud Web Statistics, 
 
 ## Per saperne di più
 
-[Accedere allo spazio di storage di un hosting Web](../accedere-spazio-storage-ftp-hosting-web/)
+[Accedere allo spazio di storage di un hosting Web](/pages/web/hosting/ftp_connection)
 
-[Attivare HTTPS su un sito Internet tramite il certificato SSL](../attivare-https-su-sito-internet-tramite-certificato-ssl/)
+[Attivare HTTPS su un sito Internet tramite il certificato SSL](/pages/web/hosting/ssl-activate-https-website)
 
-[Ottimizza le performance del tuo sito](../web_hosting_ottimizza_le_performance_del_tuo_sito/)
+[Ottimizza le performance del tuo sito](/pages/web/hosting/optimise_your_website_performance)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

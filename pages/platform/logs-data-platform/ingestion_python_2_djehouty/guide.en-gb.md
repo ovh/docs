@@ -1,8 +1,5 @@
 ---
 title: Pushing logs with a SDK - Python 2.x - Djehouty
-slug: logs-data-platform-djehouty
-order: 10
-section: Logging libraries
 updated: 2023-01-16
 ---
 

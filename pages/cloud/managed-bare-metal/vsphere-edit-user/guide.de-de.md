@@ -1,10 +1,8 @@
 ---
 title: Eine E-Mail-Adresse mit einem vSphere-Nutzer verbinden
 routes:
-    canonical: 'https://docs.ovh.com/de/private-cloud/e-mail-mit-nutzerprofil-verbinden/'
+    canonical: '/pages/cloud/private-cloud/vsphere_edit_user'
 excerpt: Erfahren Sie hier, wie Sie eine E-Mail-Adresse mit Ihrem Nutzerprofil bei vSphere verbinden können
-slug: e-mail-mit-nutzerprofil-verbinden
-section: OVHcloud Funktionen
 updated: 2020-11-18
 ---
 

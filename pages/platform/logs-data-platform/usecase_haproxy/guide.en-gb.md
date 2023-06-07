@@ -1,8 +1,5 @@
 ---
 title: Supervising your HAProxy deployment with Logs Data Platform
-slug: logs-data-platform-haproxy
-order: 05
-section: Use cases
 excerpt: Monitor and analyze your web applications with HAProxy and Logs Data Platform.
 updated: 2020-07-27
 ---

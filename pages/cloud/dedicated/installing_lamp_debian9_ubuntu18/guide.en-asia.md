@@ -1,8 +1,6 @@
 ---
 title: 'Setting up a LAMP server in Debian 9 and Ubuntu 18'
-slug: setup-lamp-debian-ubuntu
 excerpt: 'Find out how to set up a LAMP server'
-section: Tutorial
 updated: 2020-08-06
 ---
 
@@ -39,7 +37,7 @@ These technologies form a stack, which you can use to host dynamic websites and 
 
 If you are using a recent Debian or Ubuntu distribution, we recommend reinstalling your server from scratch (if possible) on your machine. Please note that this action will **erase any data stored on it**.
 
-Connect via SSH as a root user. If you are unsure about how to do this, please refer to our guide to [Getting started with SSH](../ssh-introduction/){.external}.
+Connect via SSH as a root user. If you are unsure about how to do this, please refer to our guide to [Getting started with SSH](/pages/cloud/dedicated/ssh_introduction){.external}.
 
 Once you have installed the operating system, we recommend updating it: 
 

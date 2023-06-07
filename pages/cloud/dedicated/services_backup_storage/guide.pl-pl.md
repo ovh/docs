@@ -1,8 +1,6 @@
 ---
 title: 'Korzystanie z Backup Storage na serwerze dedykowanym'
-slug: usluga-backup-storage
 excerpt: 'Dowiedz się, jak aktywować i uzyskać dostęp do dodatkowej przestrzeni dyskowej'
-section: Storage
 updated: 2021-03-15
 ---
 

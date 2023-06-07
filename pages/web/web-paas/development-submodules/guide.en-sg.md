@@ -1,8 +1,5 @@
 ---
 title: Git submodules
-slug: development-submodules
-section: Development
-order: 5
 updated: 2021-03-31
 ---
 

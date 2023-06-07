@@ -1,9 +1,6 @@
 ---
 title: 'Retrieving the backup of a Web Hosting plan’s database'
 excerpt: 'Find out how to retrieve a database backup from your OVHcloud Web Hosting plan'
-slug: web_hosting_database_export_guide
-section: Databases
-order: 03
 updated: 2018-05-19
 ---
 
@@ -131,7 +128,7 @@ Make sure you replace the generic information given in this script (i.e. ‘serv
 
 #### Step 2: Upload the script to the storage space
 
-Once you have finished creating the backup script, you will need to upload it to the storage space on your Web Hosting plan. To do this, you will need to log in to your Web Hosting plan. If you do not know how to do this, please refer to the instructions in step 2 of our guide on publishing a website on your Web Hosting plan:  “[Log in to your storage space](https://docs.ovh.com/ie/en/hosting/web_hosting_how_to_get_my_website_online/#2-log-in-to-your-storage-space){.external}”.
+Once you have finished creating the backup script, you will need to upload it to the storage space on your Web Hosting plan. To do this, you will need to log in to your Web Hosting plan. If you do not know how to do this, please refer to the instructions in step 2 of our guide on publishing a website on your Web Hosting plan:  “[Log in to your storage space](/pages/web/hosting/hosting_how_to_get_my_website_online#2-log-in-to-your-storage-space){.external}”.
 
 In order to carry out the following steps, you will need to upload the script to the “www” folder. **We recommend taking special care when you name the backup script file.** Make sure you do not overwrite an existing file with the same name in your storage space when you upload the script. If a warning message appears for this, change the name of the script you have just created and try to upload it again.
 
@@ -149,7 +146,7 @@ As a final step, we highly recommend deleting the backup file and the script fro
 
 > [!primary]
 >
-> Using a backup script and scheduled tasks (known as ‘CRON’ jobs) is one way to organise automatic backups at an interval of your choice. You can find out more about scheduled tasks in the following guide: “[Setting up scheduled tasks (CRON jobs) on your Web Hosting plan](https://docs.ovh.com/ie/en/hosting/hosting_automated_taskscron/){.external}”.
+> Using a backup script and scheduled tasks (known as ‘CRON’ jobs) is one way to organise automatic backups at an interval of your choice. You can find out more about scheduled tasks in the following guide: “[Setting up scheduled tasks (CRON jobs) on your Web Hosting plan](/pages/web/hosting/cron_tasks){.external}”.
 >
 
 ### Retrieve a backup using an SSH command

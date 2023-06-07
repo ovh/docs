@@ -1,7 +1,6 @@
 ---
 title: Optymalizacja rozdzielenia VM na Hostach
 excerpt: Jak najlepiej rozdzielić wirtualne maszyny na Hostach, aby zoptymalizować zasoby?
-slug: optymalizacja_rozdzielenia_vm_na_hostach
 updated: 2018-03-26
 ---
 

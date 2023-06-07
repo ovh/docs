@@ -1,11 +1,9 @@
 ---
 title: 'Usuwanie serwera hosta'
-slug: usuwanie-serwera-hosta
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/usuwanie-serwera-hosta/'
+    canonical: '/pages/cloud/private-cloud/delete_host'
 excerpt: 'Dowiedz się, jak usunąć serwer hosta z infrastruktury Managed Bare Metal'
 legacy_guide_number: '1442308'
-section: 'Funkcjonalności OVHcloud'
 updated: 2021-03-19
 ---
 

@@ -1,8 +1,5 @@
 ---
 title: Jakarta EE/Eclipse MicroProfile
-slug: frameworks-jakarta
-section: Frameworks
-order: 6
 updated: 2021-05-11
 ---
 
@@ -18,11 +15,11 @@ Java Enterprise Edition (Java EE) is an umbrella that holds specifications and A
 
 ## Services
 
-The [configuration reader library](https://github.com/platformsh/config-reader-java) for Java is used in these examples, so be sure to check out the [documentation](../languages-java#support-libraries) for installation instructions and the latest version.
+The [configuration reader library](https://github.com/platformsh/config-reader-java) for Java is used in these examples, so be sure to check out the [documentation](/pages/web/web-paas/languages-java#support-libraries) for installation instructions and the latest version.
 
 ### Apache Solr
 
-You can use [Jakarta NoSQL](https://projects.eclipse.org/projects/ee4j.nosql)/[JNoSQL](http://www.jnosql.org/) to use [Solr](../configuration-services/solr) with your application by first determining the Solr client programmatically.
+You can use [Jakarta NoSQL](https://projects.eclipse.org/projects/ee4j.nosql)/[JNoSQL](http://www.jnosql.org/) to use [Solr](/pages/web/web-paas/configuration-services/solr) with your application by first determining the Solr client programmatically.
 
 ```java
 import jakarta.nosql.document.DocumentCollectionManager;
@@ -65,7 +62,7 @@ class DocumentManagerProducer {
 
 ### Redis
 
-You can use [Jakarta NoSQL](https://projects.eclipse.org/projects/ee4j.nosql)/[JNoSQL](http://www.jnosql.org/) to use [Redis](../configuration-services/redis) with your application by first determining the Redis client programmatically.
+You can use [Jakarta NoSQL](https://projects.eclipse.org/projects/ee4j.nosql)/[JNoSQL](http://www.jnosql.org/) to use [Redis](/pages/web/web-paas/configuration-services/redis) with your application by first determining the Redis client programmatically.
 
 ```java
 import jakarta.nosql.keyvalue.BucketManager;

@@ -1,8 +1,6 @@
 ---
 title: 'Evitar o bloqueio da máquina virtual com a opção Veeam Managed Backup'
-slug: evitar-o-bloqueio-da-maquina-virtual-com-opcao-veeam-backup
 excerpt: 'Saiba como implementar uma solução para evitar o bloqueio através do mecanismo VMware DRS'
-section: 'Gestão das máquinas virtuais'
 updated: 2022-02-22
 ---
 

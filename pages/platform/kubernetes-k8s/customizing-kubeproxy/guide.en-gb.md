@@ -1,8 +1,6 @@
 ---
 title: Customizing Kube-proxy on an OVHcloud Managed Kubernetes cluster
-slug: customizing-kubeproxy
 excerpt: 'Find out how to customize the Kube-proxy configuration on an OVHcloud Managed Kubernetes cluster'
-section: Network
 updated: 2023-03-14
 ---
 
@@ -253,7 +251,7 @@ The "OVH provider" needs to be configured with a set of credentials:
 
 Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs. 
 
-In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) tutorial.
+In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](/pages/account/api/first-steps) tutorial.
 
 Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
 

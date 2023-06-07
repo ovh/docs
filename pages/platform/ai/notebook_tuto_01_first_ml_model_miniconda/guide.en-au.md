@@ -1,9 +1,6 @@
 ---
 title: AI Notebooks - Tutorial - Create your first Machine Learning model
-slug: notebooks/tuto-first-ml-model-miniconda
 excerpt: How to build your first Machine Learning model thanks to Miniconda
-section: AI Notebooks - Tutorials
-order: 01
 updated: 2022-09-01
 ---
 
@@ -97,8 +94,8 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 
 ## Go further
 
-- If you want to learn more about the field of **Computer vision** and **Image Classification**, check out this [notebook](https://docs.ovh.com/au/en/publiccloud/ai/notebooks/tuto-transfer-learning-resnet/).
-- If you are interested in **NLP** (Natural Language Processing), familiarise yourself with speech to text by following this [tutorial](https://docs.ovh.com/au/en/publiccloud/ai/notebooks/tuto-speech-to-text-recognition/).
+- If you want to learn more about the field of **Computer vision** and **Image Classification**, check out this [notebook](/pages/platform/ai/notebook_tuto_07_transfer_learning_resnet50_image_classification).
+- If you are interested in **NLP** (Natural Language Processing), familiarise yourself with speech to text by following this [tutorial](/pages/platform/ai/notebook_tuto_08_speech_to_text).
 
 ## Feedback
 

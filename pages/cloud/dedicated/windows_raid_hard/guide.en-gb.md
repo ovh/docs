@@ -1,8 +1,6 @@
 ---
 title: 'Creating a Windows partition on a server with hardware RAID'
-slug: windows-raid-hard
 excerpt: 'This guide will explain the steps needed to create a Windows partition on a server with hardware RAID.'
-section: 'RAID and disks'
 updated: 2018-07-24
 ---
 
@@ -245,6 +243,6 @@ Once the system is installed, log in to your Windows system and open up the util
 
 ## Go further
 
-[Hardware RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}.
+[Hardware RAID](/pages/cloud/dedicated/raid_hard){.external}.
 
 Join our community of users on <https://community.ovh.com/en/>.

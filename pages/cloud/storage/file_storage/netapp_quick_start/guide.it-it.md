@@ -1,9 +1,6 @@
 ---
 title: Enterprise File Storage - Iniziare a utilizzare le API
-slug: netapp/quick-start
 excerpt: Iniziare a utilizzare la soluzione Enterprise File Storage con le API OVHcloud
-section: Enterprise File Storage
-order: 030
 updated: 2021-10-27
 ---
 
@@ -23,7 +20,7 @@ In questa guida, scopri come iniziare a utilizzare la soluzione Enterprise File 
 
 - Disporre di una soluzione OVHcloud Enterprise File Storage
 - Essere connesso alla pagina delle [API OVHcloud](https://api.ovh.com/)
-- Saper [eseguire il mount di un NAS tramite NFS](https://docs.ovh.com/it/storage/file-storage/nas/nfs/)
+- Saper [eseguire il mount di un NAS tramite NFS](/pages/cloud/storage/file_storage/nas_nfs)
 
 ## L'essenziale
 

@@ -1,9 +1,6 @@
 ---
 title: 'Transferir un dominio a OVHcloud'
-slug: transferir-un-dominio-generico
 excerpt: 'Cómo realizar la transferencia de un dominio a OVHcloud'
-section: 'Operaciones en los dominios'
-order: 01
 updated: 2022-11-18
 ---
 
@@ -25,9 +22,9 @@ La transferencia de un dominio permite cambiar el agente registrador que lo gest
 >
 > Si el dominio que está siendo modificado se encuentra registrado en OVHcloud, la transferencia entrante de dominio no es el procedimiento adecuado. Este procedimiento solo se aplica al cambio de dominio registrado (OVHcloud).
 >
-> Para transferir la gestión de su dominio a otra cuenta de cliente de OVHcloud, el método adecuado es un *cambio de contactos*. El procedimiento se describe en [esta guía](https://docs.ovh.com/es/customer/gestion-de-los-contactos/).
+> Para transferir la gestión de su dominio a otra cuenta de cliente de OVHcloud, el método adecuado es un *cambio de contactos*. El procedimiento se describe en [esta guía](/pages/account/customer/managing_contacts).
 >
-Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** de cambiar los contactos del dominio. Para ello, siga las indicaciones que le indicamos en la guía sobre el [cambio de propietario de los dominios](https://docs.ovh.com/es/domains/cambio-propietario-dominio/).
+Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** de cambiar los contactos del dominio. Para ello, siga las indicaciones que le indicamos en la guía sobre el [cambio de propietario de los dominios](/pages/web/domains/trade_domain).
 >
 
 ## Requisitos
@@ -99,7 +96,7 @@ Cuando se le pida el código de transferencia, introdúzcalo en el campo situado
 
 ![domain](images/step_authinfo_add.png){.thumbnail}
 
-También puede completar el pedido con un [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/){.external} y otras soluciones de OVHcloud. Esto le puede interesar si quiere migrar sus servicios a OVHcloud. Nuestra guía [Migrar un sitio web y el correo a OVHcloud ](../../hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external} explica cómo hacerlo.
+También puede completar el pedido con un [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/){.external} y otras soluciones de OVHcloud. Esto le puede interesar si quiere migrar sus servicios a OVHcloud. Nuestra guía [Migrar un sitio web y el correo a OVHcloud ](/pages/web/hosting/hosting_migrating_to_ovh){.external} explica cómo hacerlo.
 
 > [!warning]
 >
@@ -114,7 +111,7 @@ También puede completar el pedido con un [alojamiento web](https://www.ovhcloud
 
 - Al hacer clic en `Cambiar la configuración`{.action}, puede introducir los nombres de los servidores DNS que el dominio utiliza actualmente. De este modo, el dominio ya estará asociado a estos servidores DNS en la configuración de OVHcloud.
 
-- Si continúa sin realizar esta operación, el dominio se añadirá a los servidores DNS de OVHcloud con una nueva zona DNS. En ese caso, puede ser necesario [modificar manualmente la zona DNS](../web_hosting_como_editar_mi_zona_dns/).
+- Si continúa sin realizar esta operación, el dominio se añadirá a los servidores DNS de OVHcloud con una nueva zona DNS. En ese caso, puede ser necesario [modificar manualmente la zona DNS](/pages/web/domains/dns_zone_edit).
 
 - En algunos casos, es posible que sea necesario disponer de información adicional sobre el propietario del dominio. Para añadir esta información, haga clic en la opción `Gestionar los contactos o el propietario`{.action}.
 
@@ -158,6 +155,6 @@ Una vez finalizado el procedimiento de transferencia, podrá administrar su domi
 
 ## Más información
 
-[Migración de un sitio web y el correo a OVHcloud](../../hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/)
+[Migración de un sitio web y el correo a OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh)
 
 Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

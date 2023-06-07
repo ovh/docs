@@ -1,9 +1,6 @@
 ---
 title: 'Importar um backup para a base de dados de um alojamento web'
 excerpt: 'Saiba como importar um backup para a base de dados de um alojamento web da OVH'
-slug: partilhado_guia_de_importacao_de_uma_base_de_dados_mysql
-section: Bases de dados
-order: 04
 updated: 2018-09-25
 ---
 
@@ -140,7 +137,7 @@ Substitua a informação genérica do script pela informação da base de dados 
 
 #### 2 - Carregar o script e o backup no espaço de armazenamento
 
-Depois de criar o script de importação, deverá carregá-lo juntamente com o ficheiro de backup que quer importar no espaço de armazenamento do seu alojamento web. Para isso, ligue-se ao seu espaço de armazenamento. Se precisar de ajuda, consulte o passo 2 do nosso manual “[Publicar um website no alojamento web](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/){.external}”.
+Depois de criar o script de importação, deverá carregá-lo juntamente com o ficheiro de backup que quer importar no espaço de armazenamento do seu alojamento web. Para isso, ligue-se ao seu espaço de armazenamento. Se precisar de ajuda, consulte o passo 2 do nosso manual “[Publicar um website no alojamento web](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}”.
 
 Para poder realizar as seguintes ações, carregue o script de importação e o ficheiro de backup na pasta “www”. **Preste especial atenção ao nome do ficheiro do script de importação.** Certifique-se de que não apaga um ficheiro já existente com o mesmo nome no espaço de armazenamento quando carregar o script. Se aparecer uma mensagem de aviso, altere o nome do script que acabou de criar por outro diferente e tente carregá-lo novamente.
 

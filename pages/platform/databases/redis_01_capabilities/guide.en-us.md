@@ -1,9 +1,6 @@
 ---
 title: Redis - Capabilities and Limitations
-slug: redis/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Redis
-section: Redis - Guides
-order: 010
 updated: 2023-04-22
 ---
 
@@ -174,7 +171,7 @@ Here is the list of unsupported commands:
 
 > [!primary]
 >
-> Update of user ACLs is allowed only via API. Follow this [guide](https://docs.ovh.com/us/en/publiccloud/databases/redis/acls/) to learn more.
+> Update of user ACLs is allowed only via API. Follow this [guide](/pages/platform/databases/redis_07_update_acls) to learn more.
 >
 
 ## We want your feedback!

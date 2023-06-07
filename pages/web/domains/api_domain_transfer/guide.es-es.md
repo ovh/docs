@@ -1,11 +1,8 @@
 ---
 title: "Transfer a Domain Name"
-slug: api-transfer
 excerpt: "Use the OVHcloud public API to transfer your domain names"
-section: "API dominios"
-order: 9
 routes:
-  canonical: "https://docs.ovh.com/gb/en/domains/api-transfer/"
+  canonical: "/pages/web/domains/api_domain_transfer"
 updated: 2022-07-21
 ---
 
@@ -15,19 +12,19 @@ updated: 2022-07-21
 
 > [!primary]
 >
-> To follow this guide, make sure you are connected to OVHcloud API. You may find more information on the [API introduction](../api) page if needed.
+> To follow this guide, make sure you are connected to OVHcloud API. You may find more information on the [API introduction](/pages/web/domains/api_domain_intro) page if needed.
 
 <!-- Begin TOC -->
 
 ## Table of Contents
 
-- [Introduction](../api)
-- [Order a Domain Name](../api-order)
-- [Tasks Management](../api-tasks)
-- [Manage Contacts of a Domain Name](../api-contact)
-- [Managing Eligibility Rules](../api-rules)
-- [Configure the Display of Contact Data in the Whois](../api-whois)
-- [Configure the DNS of your Domain Name](../api-dns)
+- [Introduction](/pages/web/domains/api_domain_intro)
+- [Order a Domain Name](/pages/web/domains/api_domain_order)
+- [Tasks Management](/pages/web/domains/api_domain_tasks)
+- [Manage Contacts of a Domain Name](/pages/web/domains/api_domain_contacts)
+- [Managing Eligibility Rules](/pages/web/domains/api_domain_rules)
+- [Configure the Display of Contact Data in the Whois](/pages/web/domains/api_domain_whois)
+- [Configure the DNS of your Domain Name](/pages/web/domains/api_domain_dns)
 - **Transfer a Domain Name**
 <!-- End TOC -->
 
@@ -40,19 +37,19 @@ If you are the domain owner, you may transfer its management to OVHcloud as foll
 
 1. **Fetch the confidential authorization code** (sometimes referred to as "auth code" or "auth info") associated to your domain name on your current registrar dashboard.
 
-2. **Order a transfer**: this will consist in the same steps as [ordering a new domain name](../api-order).
+2. **Order a transfer**: this will consist in the same steps as [ordering a new domain name](/pages/web/domains/api_domain_order).
 
-    - Only the [offer](../api-order/#fetch-available-offers) will differ, since the available action will be `transfer` (instead of `create`) and the pricing mode will be `transfer-default`.
+    - Only the [offer](/pages/web/domains/api_domain_order#fetch-available-offers) will differ, since the available action will be `transfer` (instead of `create`) and the pricing mode will be `transfer-default`.
 
-    - Do not forget to add the authorization code to your order, as the `AUTH_INFO` [configuration value](../api-order/#add-configuration).
+    - Do not forget to add the authorization code to your order, as the `AUTH_INFO` [configuration value](/pages/web/domains/api_domain_order#add-configuration).
 
     When the order is complete, it will generate a new `DomainIncomingTransfer` task.
 
-3. **Monitor** the evolution of the `DomainIncomingTransfer` task using the [task API](../api-tasks/#view-pending-tasks).
+3. **Monitor** the evolution of the `DomainIncomingTransfer` task using the [task API](/pages/web/domains/api_domain_tasks#view-pending-tasks).
 
 4. If you did not add the authorization code to your order, or if it was invalid, the `DomainIncomingTransfer` task may result in error.
 
-    In that case, use the [task API](../api-tasks/#fix-and-relaunch-a-task-in-error) to send the valid code with the `authInfo` argument key, then relaunch the task.
+    In that case, use the [task API](/pages/web/domains/api_domain_tasks#fix-and-relaunch-a-task-in-error) to send the valid code with the `authInfo` argument key, then relaunch the task.
 
 The transfer should be completed by the registry after a few days.
 
@@ -131,7 +128,7 @@ Your new registrar will then proceed with the transfer.
 
 > [!primary]
 >
-> For .uk domain names, please refer to the [dedicated documentation](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_transfer_a_couk_domain_name/).
+> For .uk domain names, please refer to the [dedicated documentation](/pages/web/domains/transfer_incoming_couk).
 
 > [!warning]
 >

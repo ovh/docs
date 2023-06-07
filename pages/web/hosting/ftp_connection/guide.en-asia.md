@@ -1,9 +1,6 @@
 ---
 title: 'Logging in to your Web Hosting plan’s storage space'
-slug: log-in-to-storage-ftp-web-hosting
 excerpt: 'Find out how to log in to your OVHcloud Web Hosting plan’s storage space'
-section: 'FTP and SSH'
-order: 02
 updated: 2022-10-21
 ---
 
@@ -56,7 +53,7 @@ With this information, you should be able to find the items you need to log in t
 - **SSH** server: This is the server address that allows you to access your storage space using a terminal via the SSH protocol.
 - **Main** login: This is the primary FTP username (S)created on your hosting. You can find all of your web hosting plan’s FTP users in the "Login" column of the table.
 
-If you have forgotten the password for an FTP or SSH user, depending on which Web Hosting plan you have, click either the pencil icon or the `...`{.action} button, then `Change password`{.action}. For further support, please refer to our guide to [Modifying a FTP user password](../modify-ftp-user-password/).
+If you have forgotten the password for an FTP or SSH user, depending on which Web Hosting plan you have, click either the pencil icon or the `...`{.action} button, then `Change password`{.action}. For further support, please refer to our guide to [Modifying a FTP user password](/pages/web/hosting/ftp_change_password).
 
 ![ftpconnect](images/connect-ftp-step2.png){.thumbnail}
 
@@ -118,14 +115,14 @@ If you are logging in via the command line, the commands you will need to use ar
 ssh sshlogin@sshserver -p connectionport
 ```
 
-If the information you have entered is correct, then you can interact with your storage space. If you need further support in this regard, please refer to the following guide: [Web Hosting: SSH on web hosting packages](../web_hosting_ssh_on_web_hosting_packages/).
+If the information you have entered is correct, then you can interact with your storage space. If you need further support in this regard, please refer to the following guide: [Web Hosting: SSH on web hosting packages](/pages/web/hosting/ssh_on_webhosting).
 
 ![ftpconnect](images/connect-ftp-step5.png){.thumbnail}
 
 ## Go further
 
-[Modifying an FTP user password](../modify-ftp-user-password/)
+[Modifying an FTP user password](/pages/web/hosting/ftp_change_password)
 
-[Web hosting: SSH on web hosting packages](../web_hosting_ssh_on_web_hosting_packages/)
+[Web hosting: SSH on web hosting packages](/pages/web/hosting/ssh_on_webhosting)
 
 Join our community of users on <https://community.ovh.com/en/>.

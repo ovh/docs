@@ -1,8 +1,6 @@
 ---
 title: 'Creare un’istanza GPU'
-slug: creare-istanza-gpu
 excerpt: 'Scopri come creare un’istanza GPU con Linux o Windows'
-section: Gestione dallo Spazio Cliente OVHcloud
 updated: 2019-12-06
 ---
 

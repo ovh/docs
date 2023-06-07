@@ -1,9 +1,6 @@
 ---
 title: 'Sauvegarder et exporter une base de données sur votre serveur de bases de données'
-slug: sauvegarder-exporter-une-base-de-donnees
 excerpt: 'Découvrez comment sauvegarder et exporter votre base de données'
-section: 'Configuration'
-order: 04
 updated: 2023-02-15
 ---
 
@@ -64,7 +61,7 @@ La liste des sauvegardes disponibles apparaît,  cliquez sur le bouton `...`{.ac
 
 ##### 1\.1 Exporter ma base MySQL ou MariaDB depuis phpMyAdmin OVHcloud 
 
-Pour exporter votre base de données directement depuis phpMyAdmin, il est nécessaire de vous y connecter au préalable. Vous pouvez pour cela vous aider du guide [« Se connecter a une base de données  »](../connexion-base-de-donnees-serveur-bdd){.external}
+Pour exporter votre base de données directement depuis phpMyAdmin, il est nécessaire de vous y connecter au préalable. Vous pouvez pour cela vous aider du guide [« Se connecter a une base de données  »](/pages/web/clouddb/connecting-to-database-on-database-server){.external}
 
 Une fois connecté sur phpMyAdmin, cliquez sur le nom de la base de données que vous souhaitez exporter et ensuite sur l'onglet `Exporter`{.action} en haut.
 

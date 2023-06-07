@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w CentOS 7'
-slug: ola-centos7
 excerpt: 'Dowiedz się, jak włączyć OVHcloud Link Aggregation na serwerze CentOS'
-section: 'Poziom zaawansowany'
-order: 3
 updated: 2021-03-25
 ---
 
@@ -17,7 +14,7 @@ Technologia OVHcloud Link Aggregation (OLA) została przez nas zaprojektowana w 
 
 ## Wymagania początkowe
 
-- [Konfiguracja karty sieciowej dla OVHcloud Link Aggregation w Panelu klienta](../ola-manager)
+- [Konfiguracja karty sieciowej dla OVHcloud Link Aggregation w Panelu klienta](/pages/cloud/dedicated/ola-enable-manager)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
@@ -147,10 +144,10 @@ OVHcloud zapewnia klientom swobodę i elastyczność wykorzystania sprzętu w sp
 
 ## Sprawdź również
 
-[Konfiguracja OVHcloud Link Aggregation w Panelu klienta](../ola-manager/)
+[Konfiguracja OVHcloud Link Aggregation w Panelu klienta](/pages/cloud/dedicated/ola-enable-manager)
 
-[Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation Debian 9](../ola-debian9/)
+[Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation Debian 9](/pages/cloud/dedicated/ola-enable-debian9)
 
-[Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Windows Server 2019](../ola-w2k19/)
+[Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Windows Server 2019](/pages/cloud/dedicated/ola-enable-w2k19)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

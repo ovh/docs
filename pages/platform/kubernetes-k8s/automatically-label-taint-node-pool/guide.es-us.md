@@ -1,10 +1,8 @@
 ---
 title: Adding Labels & Taint on Node Pool (Node Pool template)
-slug: automatically-label-taint-node-pool
 excerpt: 'Find out how to add labels, annotations and taints on Nodes thanks to Node Pools template on OVHcloud Managed Kubernetes'
-section: Tutorials
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/automatically-label-taint-node-pool/'
+    canonical: '/pages/platform/kubernetes-k8s/automatically-label-taint-node-pool'
 updated: 2022-07-28
 ---
 
@@ -56,7 +54,7 @@ Thanks to the `Node Pool's template`, you will:
 
 ### Create a Kubernetes cluster
 
-You can follow the Kubernetes cluster creation step by step guide if you want to create it through the [Control Panel](../label-nodeaffinity-node-pools/#cluster-creation) or through [Terraform](https://docs.ovh.com/us/es/kubernetes/creating-a-cluster-through-terraform/).
+You can follow the Kubernetes cluster creation step by step guide if you want to create it through the [Control Panel](../label-nodeaffinity-node-pools/#cluster-creation) or through [Terraform](/pages/platform/kubernetes-k8s/creating-a-cluster-through-terraform).
 
 ### Create a Node Pool Template with Terraform
 
@@ -74,7 +72,7 @@ The "OVH provider" needs to be configured with a set of credentials:
 
 Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs. 
 
-In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/) tutorial.
+In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](/pages/account/api/first-steps) tutorial.
 
 Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
 
@@ -403,7 +401,7 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 ### Check everything is correctly configured
 
-To do some operations on your Nodes, through `kubectl` CLI, we invite you to follow our guide to [configuring default settings](../configuring-kubectl/).
+To do some operations on your Nodes, through `kubectl` CLI, we invite you to follow our guide to [configuring default settings](/pages/platform/kubernetes-k8s/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster).
 
 When you can access the cluster through `kubectl` command, let's display our node pool:
 

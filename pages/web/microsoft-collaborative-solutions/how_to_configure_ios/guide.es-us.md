@@ -1,9 +1,6 @@
 ---
 title: 'Configurar una cuenta Exchange en iPhone o iPad'
-slug: configuracion-ios-iphone-ipad
 excerpt: 'Cómo configurar una cuenta Exchange en un iPhone o iPad utilizando la aplicación Mail'
-section: 'Configuración en smartphone/tablet'
-order: 03
 updated: 2021-05-21
 ---
 
@@ -70,13 +67,13 @@ OVHcloud también ofrece una aplicación web que tiene las [funciones colaborati
 
 > [!primary]
 >
-> Si necesita ayuda para recibir o enviar mensajes de correo, consulte nuestras [FAQ en los servicios de correo de OVHcloud](https://docs.ovh.com/es/emails/correo-electronico-faq/).
+> Si necesita ayuda para recibir o enviar mensajes de correo, consulte nuestras [FAQ en los servicios de correo de OVHcloud](/pages/web/emails/faq-emails).
 >
 
 ## Más información
 
-[Configurar una cuenta de correo electrónico incluida en un MX Plan o un plan de hosting en iPhone o iPad](https://docs.ovh.com/us/es/emails/correo_guia_de_configuracion_en_iphone_ios_91/)
+[Configurar una cuenta de correo electrónico incluida en un MX Plan o un plan de hosting en iPhone o iPad](/pages/web/emails/how_to_configure_ios)
 
-[FAQ e-mails](https://docs.ovh.com/us/es/emails/correo-electronico-faq/)
+[FAQ e-mails](/pages/web/emails/faq-emails)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: Geolocaliser votre site web dans un pays spécifique
-slug: geolocaliser-site
 excerpt: "Découvrez comment géolocaliser votre site web à l'aide de nos adresses IP géolocalisées"
-section: Optimiser son site
-order: 05
 updated: 2022-12-22
 ---
 
@@ -48,9 +45,9 @@ Cliquez sur `Suivant`{.action} puis sur `Valider`{.action} depuis la fenêtre r�
 
 >[!primary]
 >
-> Si la zone DNS active de votre nom de domaine est entièrement gérée dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), l'entrée de type A dans la zone DNS de votre nom de domaine se changera automatiquement. Vous pouvez vérifier que l'adresse IP a bien été mise à jour à l'aide de notre guide sur [l'édition d'une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/).
+> Si la zone DNS active de votre nom de domaine est entièrement gérée dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), l'entrée de type A dans la zone DNS de votre nom de domaine se changera automatiquement. Vous pouvez vérifier que l'adresse IP a bien été mise à jour à l'aide de notre guide sur [l'édition d'une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit).
 >
-> Dans le cas contraire, vous devrez effectuer la modification manuellement auprès du fournisseur qui gère la zone DNS active de votre nom de domaine. Retrouvez [ici](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/) la documentation qui recense toutes les adresses IP de notre infrastructure d'hébergements mutualisés OVHcloud.
+> Dans le cas contraire, vous devrez effectuer la modification manuellement auprès du fournisseur qui gère la zone DNS active de votre nom de domaine. Retrouvez [ici](/pages/web/hosting/clusters_and_shared_hosting_IP) la documentation qui recense toutes les adresses IP de notre infrastructure d'hébergements mutualisés OVHcloud.
 >
 > Dans tous les cas, un délai de propagation de **4 à 24 heures** après la modification sera nécessaire pour que celle-ci soit pleinement effective et visible sur Internet.
 >

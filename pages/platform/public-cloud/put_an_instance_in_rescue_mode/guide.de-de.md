@@ -1,8 +1,6 @@
 ---
 title: Umstellen einer Instanz auf den Rescue-Modus
-slug: umstellung_einer_instanz_auf_den_rescue-modus
 excerpt: Erfahren Sie hier, wie Sie den Rescue-Modus für Ihre Public Cloud Instanz aktivieren
-section: Verwaltung im OVHcloud Kundencenter
 updated: 2023-01-04
 ---
 
@@ -25,7 +23,7 @@ In diesem Fall können Sie Ihre Instanz mithilfe des Rescue-Modus neu konfigurie
 
 > [!alert]
 >
-> Der Rescue-Modus für Metal Instanzen ist derzeit nicht über das OVHcloud Kundencenter verfügbar. Weitere Informationen finden Sie in unserer Anleitung zum [Rescue-Modus für Metal-Instanzen](https://docs.ovh.com/de/public-cloud/metal-instance-rescue-mode/).
+> Der Rescue-Modus für Metal Instanzen ist derzeit nicht über das OVHcloud Kundencenter verfügbar. Weitere Informationen finden Sie in unserer Anleitung zum [Rescue-Modus für Metal-Instanzen](/pages/platform/public-cloud/rescue_mode_metal_instance).
 
 ### Schritt 1: Rescue-Modus aktivieren
 

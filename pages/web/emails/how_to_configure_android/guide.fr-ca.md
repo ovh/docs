@@ -1,9 +1,6 @@
 ---
 title: Configurer son adresse e-mail sur Android via l'application Gmail
-slug: configuration-android-6
 excerpt: Apprenez à configurer une adresse e-mail MX Plan sur Android, via l'application Gmail
-section: Configuration sur smartphone
-order: 02
 updated: 2018-03-12
 ---
 

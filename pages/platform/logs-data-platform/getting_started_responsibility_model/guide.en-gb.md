@@ -1,9 +1,6 @@
 ---
 title: Logs Data Platform - Responsibility model
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
-slug: logs-data-platform-responsibility-model
-section: Get Started
-order: 3
 updated: 2023-01-26
 ---
 

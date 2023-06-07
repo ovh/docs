@@ -1,8 +1,6 @@
 ---
 title: 'Gérer un carnet de contacts sur une ligne SIP'
-slug: importer_un_carnet_de_contacts
 excerpt: 'Apprenez à gérer un carnet de contacts sur une ligne SIP OVHcloud'
-section: 'Lignes téléphoniques'
 updated: 2022-06-21
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Utilizzare FileZilla con il tuo hosting OVHcloud"
-slug: hosting_condiviso_guida_allutilizzo_di_filezilla
 excerpt: "Consulta qui una guida all'utilizzo del software Filezilla sul tuo hosting condiviso"
-section: FTP e SSH
-order: 01
 updated: 2022-09-13
 ---
 
@@ -17,7 +14,7 @@ updated: 2022-09-13
 ## Obiettivo
 
 FileZilla è un software disponibile gratuitamente su diversi sistemi operativi (Windows, macOS, ecc...).
-Permette di pubblicare online file o sito Internet [accedendo allo spazio FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) del tuo hosting.
+Permette di pubblicare online file o sito Internet [accedendo allo spazio FTP](/pages/web/hosting/ftp_connection) del tuo hosting.
 
 **Questa guida ti mostra come utilizzare Filezilla con il tuo hosting condiviso.**
 
@@ -135,7 +132,7 @@ Questo tipo di messaggio è generato da un errore nella coppia Login/Password.
 Verifica le tue credenziali per assicurarti che non vengano inseriti errori. Se necessario, è possibile modificare la password di accesso FTP dell'hosting direttamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 
 > [!success]
-> Per modificare la [password FTP](https://docs.ovh.com/it/hosting/modificare-la-password-utente-ftp/) sulle offerte condivise, consulta questa guida.
+> Per modificare la [password FTP](/pages/web/hosting/ftp_change_password) sulle offerte condivise, consulta questa guida.
 
 Nel caso sotto riportato, l'errore è generato da un nome host non valido:
 
@@ -220,7 +217,7 @@ Ciò comporterà la modifica dei diritti del fascicolo in questione, nonché dei
 >
 > Indipendentemente da un intervento da parte tua, il tuo hosting può essere disattivato in seguito al rilevamento di file malevoli o non autorizzati sul tuo hosting dai nostri sistemi di sicurezza.
 >
-> In questo caso, è necessario [proteggere le soluzioni](https://docs.ovh.com/it/hosting/diagnostic-403-forbidden/) correggendo le falle di sicurezza indicate nella notifica di blocco ricevuta via email.
+> In questo caso, è necessario [proteggere le soluzioni](/pages/web/hosting/diagnostic_403_forbidden) correggendo le falle di sicurezza indicate nella notifica di blocco ricevuta via email.
 >
 
 Clicca su `Server`{.action} e seleziona `Inserisci un ordine personalizzato`{.action} (questa opzione può anche essere chiamata `Inserisci un ordine FTP`{.action}).
@@ -286,9 +283,9 @@ Cliccando con il tasto destro sull'icona, puoi cambiare il metodo di confronto. 
 
 ## Per saperne di più <a name="go-further"></a>
 
-Di seguito trovi il link alla nostra guida per [risolvere gli errori ricorrenti nell'utilizzo di un software FTP](https://docs.ovh.com/it/hosting/condividili-problemi-ftp-ricorrenti/).
+Di seguito trovi il link alla nostra guida per [risolvere gli errori ricorrenti nell'utilizzo di un software FTP](/pages/web/hosting/ftp_recurring_ftp_problems).
 
-Più in generale, consulta [le nostre guide relative agli hosting condivisi](https://docs.ovh.com/it/hosting/).
+Più in generale, consulta [le nostre guide relative agli hosting condivisi](/products/web-cloud-hosting).
 
 Consulta la [pagina ufficiale di Filezilla](https://filezilla-project.org/).
 

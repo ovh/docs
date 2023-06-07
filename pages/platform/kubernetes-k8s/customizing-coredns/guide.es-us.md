@@ -1,10 +1,8 @@
 ---
 title: Customizing CoreDNS on an OVHcloud Managed Kubernetes cluster
-slug: customizing-coredns
 excerpt: 'Find out how to customize CoreDNS on an OVHcloud Managed Kubernetes cluster'
-section: User guides
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/customizing-coredns/'
+    canonical: '/pages/platform/kubernetes-k8s/customizing-coredns'
 updated: 2022-10-11
 ---
 
@@ -180,7 +178,7 @@ kubectl logs -n kube-system -l k8s-app=kube-dns -f
 
 To have an overview of the OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
 
-To learn more about how to use your Kubernetes cluster the practical way, we invite you to read our [tutorials](../).
+To learn more about how to use your Kubernetes cluster the practical way, we invite you to read our [tutorials](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

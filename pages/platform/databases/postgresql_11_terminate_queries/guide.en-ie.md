@@ -1,9 +1,6 @@
 ---
 title: PostgreSQL - Detect and terminate long-running queries
-slug: postgresql/detect-terminate-queries
 excerpt:
-section: PostgreSQL - Guides
-order: 95
 updated: 2023-02-15
 ---
 
@@ -18,7 +15,7 @@ Queries on a PostgreSQL instance can run indefinitely, and OVHcloud will not sto
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
-- A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/ie/en/publiccloud/databases/getting-started/) can help you to meet this requirement)
+- A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
@@ -44,7 +41,7 @@ For more information, please refer to their [official documentation](https://www
 
 #### Connect to your database using psql
 
-Please refer to this [guide](https://docs.ovh.com/ie/en/publiccloud/databases/postgresql/connect-cli/) to find out how to connect to your database using `psql`.
+Please refer to this [guide](/pages/platform/databases/postgresql_03_connect_cli) to find out how to connect to your database using `psql`.
 
 #### Make sure to get enough access privileges first
 

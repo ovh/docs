@@ -1,9 +1,6 @@
 ---
 title: 'Partilhado DynHost'
-slug: partilhado_dynhost
 excerpt: 'Saiba como configurar um registo DNS dinâmico (DynHost) para o seu nome de domínio OVHcloud'
-section: 'DNS e zona DNS'
-order: 06
 updated: 2018-07-19
 ---
 
@@ -54,7 +51,7 @@ Depois de preencher os campos, clique no botão `Validar`{.action}. O identifica
 
 ### Etapa 2: criar o registo DNS dinâmico (DynHost)
 
-A segunda etapa consiste em criar o registo DNS que deverá ser atualizado de forma dinâmica. Relembramos que este não deve já existir na zona DNS da OVHcloud do seu nome de domínio enquanto registo "A". Para o verificar e, se necessário, eliminá-lo, consulte o nosso manual "[Editar uma zona DNS da OVHcloud](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}".
+A segunda etapa consiste em criar o registo DNS que deverá ser atualizado de forma dinâmica. Relembramos que este não deve já existir na zona DNS da OVHcloud do seu nome de domínio enquanto registo "A". Para o verificar e, se necessário, eliminá-lo, consulte o nosso manual "[Editar uma zona DNS da OVHcloud](/pages/web/domains/dns_zone_edit){.external}".
 
 Quando estiver pronto para criar o registo DynHost, clique no separador `DynHost`{.action} e, em seguida, no botão `Adicionar um DynHost`{.action}. Na nova janela, preencha as informações necessárias:
 

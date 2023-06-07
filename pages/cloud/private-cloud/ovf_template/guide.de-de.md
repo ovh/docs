@@ -1,9 +1,6 @@
 ---
 title: Deployment eines Linux, Windows Server oder Windows SQL Server OVF Template
-slug: ovhcloud-template-deployment
 excerpt: Erfahren Sie hier, wie Sie ein Linux, Windows Server oder Windows SQL Server Template deployen
-section: Verwaltung virtueller Maschinen
-order: 02
 updated: 2020-10-12
 ---
 

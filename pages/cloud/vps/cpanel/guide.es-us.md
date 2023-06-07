@@ -1,8 +1,6 @@
 ---
 title: 'Desplegar cPanel en un VPS'
 excerpt: 'Descubra cómo crear instancias de un VPS con la aplicación cPanel preinstalada'
-slug: cpanel
-section: 'Uso avanzado'
 updated: 2021-10-14
 ---
 
@@ -72,7 +70,7 @@ Ahora usted debería poder iniciar sesión en WHM y SSH usando el usuario y la c
 
 Le recomendamos que tome más medias adicionales para proteger su WHM y VPS. Por esto le recomendamos que lea las recomendamos proporcionadas por cPanel aquí:
 
-Además, le recomendamos configurar el [firewall](../../dedicated/firewall-de-red/) y una [solución de backup](../consejos-proteccion-vps/) en su VPS.
+Además, le recomendamos configurar el [firewall](../../dedicated/firewall-de-red/) y una [solución de backup](/pages/cloud/vps/secure_your_vps) en su VPS.
 
 
 ## Más información

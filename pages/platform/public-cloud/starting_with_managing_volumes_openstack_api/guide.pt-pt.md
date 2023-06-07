@@ -1,9 +1,6 @@
 ---
 title: "Começar com a gestão dos volumes na API OpenStack"
-slug: gestao-volumes-api-openstack
 legacy_guide_number: 2071
-section: Gestão via OpenStack
-order: 7
 updated: 2021-05-19
 ---
 
@@ -22,8 +19,8 @@ De forma a automatizar as suas operações no Public Cloud, é possível utiliza
 
 ## Requisitos
 
-- [Preparar o ambiente para utilizar a API OpenStack](../prepare_the_environment_for_using_the_openstack_api/) instalando pithon-cinderclient e python-novaclient
-- [Carregar as variáveis de ambiente OpenStack](../set-openstack-environment-variables/)
+- [Preparar o ambiente para utilizar a API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) instalando pithon-cinderclient e python-novaclient
+- [Carregar as variáveis de ambiente OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## Instruções
 

@@ -1,9 +1,7 @@
 ---
 title: Sostituisci la tua chiave SSH in caso di perdita
 excerpt: Sostituisci la tua chiave SSH in caso di perdita
-slug: sostituisci_la_tua_chiave_ssh_in_caso_di_perdita
 legacy_guide_number: g2069
-section: Gestione dallo Spazio Cliente OVHcloud
 updated: 2022-02-10
 ---
 
@@ -17,14 +15,14 @@ updated: 2022-02-10
 
 In caso di perdita di chiave SSH, sia in seguito a reinstallazione di un dispositivo che in seguito ad altre operazioni, è possibile che non sia più possibile connettersi alla tua istanza se non hai configurato alcun metodo alternativo per connetterti alla tua istanza.
 
-Per recuperare l'accesso, abbiamo messo a tua disposizione una [modalità Rescue](https://docs.ovh.com/it/public-cloud/riavvia_la_tua_istanza_in_modalita_di_ripristino_rescue_mode/) che ti permette di connetterti tramite una password e modificare i tuoi file.
+Per recuperare l'accesso, abbiamo messo a tua disposizione una [modalità Rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode) che ti permette di connetterti tramite una password e modificare i tuoi file.
 
 **Questa guida ti mostra come configurare il file *authorized_keys* dell'utente *admin* per poter aggiungere una nuova chiave SSH per recuperare l'accesso alla tua istanza.**
 
 ## Prerequisiti
 
 - Disporre di una [Istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
-- Avere accesso alla tua istanza via SSH in [modalità Rescue](https://docs.ovh.com/it/public-cloud/riavvia_la_tua_istanza_in_modalita_di_ripristino_rescue_mode/)
+- Avere accesso alla tua istanza via SSH in [modalità Rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode)
 - Creare una chiave SSH
 
 ## Procedura
@@ -34,7 +32,7 @@ Per recuperare l'accesso, abbiamo messo a tua disposizione una [modalità Rescue
 Per salvare una chiave SSH nello Spazio Cliente OVHcloud, ti consigliamo di utilizzare la cifratura RSA o ECDSA. ED25519 non è attualmente supportato.
 >
 
-Dopo aver montato il disco della tua istanza in [modalità Rescue](../riavvia_la_tua_istanza_in_modalita_di_ripristino_rescue_mode/#accedi-ai-tuoi-dati), sarai in grado di accedere a tutti i tuoi file.
+Dopo aver montato il disco della tua istanza in [modalità Rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode#accedi-ai-tuoi-dati), sarai in grado di accedere a tutti i tuoi file.
 
 Il file contenente le tue chiavi SSH è il file:
 
@@ -92,6 +90,6 @@ Una volta effettuata la modifica e salvata, è sufficiente riavviare la tua ista
 
 ## Per saperne di più
 
-[Devenire utente root e selezionare una password](https://docs.ovh.com/it/public-cloud/imposta_una_password_amministratore/)
+[Devenire utente root e selezionare una password](/pages/platform/public-cloud/become_root_and_change_password)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

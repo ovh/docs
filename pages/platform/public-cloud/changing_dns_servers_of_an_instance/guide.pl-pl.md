@@ -1,10 +1,7 @@
 ---
 title: "Zmiana serwerów DNS instancji Public Cloud"
 excerpt: "Dowiedz się, jak zmienić domyślne serwery DNS instancji Public Cloud"
-slug: zmiana_serwerow_dns_instancji
 legacy_guide_number: g1985
-section: Sieć
-order: 4
 updated: 2021-10-29
 ---
 
@@ -35,9 +32,9 @@ Możesz dodać serwer zapasowy lub zastąpić tę konfigurację Twoją. Serwery 
 
 ## W praktyce
 
-Zaloguj się do instancji przez SSH. Więcej informacji na ten temat znajdziesz w przewodniku "[Logowanie do instancji Public Cloud](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/#connect-to-instance)".
+Zaloguj się do instancji przez SSH. Więcej informacji na ten temat znajdziesz w przewodniku "[Logowanie do instancji Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance)".
 
-Przejdź do użytkownika root. Jeśli potrzebujesz, skorzystaj z naszego przewodnika, aby [zmienić hasło root](https://docs.ovh.com/pl/public-cloud/dostep_root_i_zdefiniowanie_hasla/).
+Przejdź do użytkownika root. Jeśli potrzebujesz, skorzystaj z naszego przewodnika, aby [zmienić hasło root](/pages/platform/public-cloud/become_root_and_change_password).
 
 ### Debian / Ubuntu
 
@@ -138,7 +135,7 @@ DNS configuration:
 
 ### Windows
 
-Zaloguj się do instancji za pomocą sesji zdalnego pulpitu lub konsoli VNC. Więcej informacji na ten temat znajdziesz w przewodniku "[Logowanie do instancji Public Cloud](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/#connect-to-instance)".
+Zaloguj się do instancji za pomocą sesji zdalnego pulpitu lub konsoli VNC. Więcej informacji na ten temat znajdziesz w przewodniku "[Logowanie do instancji Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance)".
 
 Otwórz `Parametry sieci`{.action}.
 
@@ -159,10 +156,10 @@ Polecenie `nslookup` pozwala na sprawdzenie, który serwer DNS jest używany dom
 
 ## Sprawdź również <a name="gofurther"></a>
 
-[Utwórz pierwszą instancję Public Cloud i połącz się z nią](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/)
+[Utwórz pierwszą instancję Public Cloud i połącz się z nią](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Logowanie jako użytkownik root i ustawienie hasła](https://docs.ovh.com/pl/public-cloud/dostep_root_i_zdefiniowanie_hasla/)
+[Logowanie jako użytkownik root i ustawienie hasła](/pages/platform/public-cloud/become_root_and_change_password)
 
-[Zmiana hostname instancji Public Cloud](https://docs.ovh.com/pl/public-cloud/zmiana_hostname_instancji/)
+[Zmiana hostname instancji Public Cloud](/pages/platform/public-cloud/changing_the_hostname_of_an_instance)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

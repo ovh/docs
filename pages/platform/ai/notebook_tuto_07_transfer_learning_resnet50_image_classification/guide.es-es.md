@@ -1,11 +1,8 @@
 ---
 title: AI Notebooks - Tutorial - Use ResNet for image classification
-slug: notebooks/tuto-transfer-learning-resnet
 excerpt: How to use an existing model to do Transfer Learning?
-section: AI Notebooks - Tutorials
-order: 07
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-transfer-learning-resnet/'
+    canonical: '/pages/platform/ai/notebook_tuto_07_transfer_learning_resnet50_image_classification'
 updated: 2022-09-01
 ---
 
@@ -52,7 +49,7 @@ ResNet has many variants that work on the same concept but have different number
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
 - An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/es-es/public-cloud/) in your OVHcloud account
-- A [user](https://docs.ovh.com/es/publiccloud/ai/users/) for AI Notebooks
+- A [user](/pages/platform/ai/gi_01_manage_users) for AI Notebooks
 
 ## Instructions
 
@@ -63,7 +60,7 @@ First, you have to create 2 object containers in your OVHcloud **Object Storage*
 
 > [!primary]
 >
-> To know more about how to **push your data to Object Storage**, please refer to the dedicated [documentation](https://docs.ovh.com/es/publiccloud/ai/cli/data-cli/).
+> To know more about how to **push your data to Object Storage**, please refer to the dedicated [documentation](/pages/platform/ai/cli_16_commands_reference_data).
 >
 
 Then, you can launch your notebook from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) or via the ovhai [CLI](https://docs.ovh.com/es/publiccloud/ai/cli/getting-started-cli/).
@@ -116,7 +113,7 @@ You can choose the number of CPUs or GPUs you want.
 
 > [!primary]
 >
-> To learn more about how to use and **manage your data in a notebook with UI**, check this [documentation](https://docs.ovh.com/es/publiccloud/ai/notebooks/manage-data-ui/).
+> To learn more about how to use and **manage your data in a notebook with UI**, check this [documentation](/pages/platform/ai/notebook_guide_data_ui).
 >
 
 ### Launching a Jupyter notebook with TensorFlow via CLI
@@ -127,7 +124,7 @@ For this tutorial, you can use the following TensorFlow framework version: `tf2.
 
 > [!primary]
 >
-> To know more about how to use and **manage your data in a notebook with the CLI**, refer to this [documentation](https://docs.ovh.com/es/publiccloud/ai/cli/access-object-storage-data/).
+> To know more about how to use and **manage your data in a notebook with the CLI**, refer to this [documentation](/pages/platform/ai/cli_17_how_to_cli_data_notebooks).
 >
 
 Choose the number of GPUs (`<nb-gpus>`) to use in your notebook and use the following command.
@@ -151,8 +148,8 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 
 ## Go further
 
-- If you want to deploy a Gradio app for **Image classification** or **Sketch recognition**, check out this [documentation](https://docs.ovh.com/es/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/).
-- If you are interested in **Computer Vision**, familiarise yourself with Object Detection by following this [tutorial](https://docs.ovh.com/es/publiccloud/ai/notebooks/yolov5-example/).
+- If you want to deploy a Gradio app for **Image classification** or **Sketch recognition**, check out this [documentation](/pages/platform/ai/deploy_tuto_05_gradio_sketch_recognition).
+- If you are interested in **Computer Vision**, familiarise yourself with Object Detection by following this [tutorial](/pages/platform/ai/notebook_tuto_04_yolov5).
 
 ## Feedback
 

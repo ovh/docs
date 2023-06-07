@@ -1,10 +1,7 @@
 ---
 title: VMware Update Manager
-slug: vmware-update-manager
 excerpt: Utilisez l'outil de VMware pour maintenir à jour vos hôtes
 legacy_guide_number: '2163146'
-section: Fonctionnalités VMware vSphere
-order: 11
 updated: 2021-12-09
 ---
 

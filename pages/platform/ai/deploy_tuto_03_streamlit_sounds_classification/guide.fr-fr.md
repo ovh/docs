@@ -1,11 +1,8 @@
 ---
 title: AI Deploy - Tutoriel - Déployer une app de classification audio grâce à Streamlit (EN)
-slug: deploy/tuto-streamlit-sounds-classification
 excerpt: Comment déployer une app Streamlit pour classifier les sons des mammifères marins
-section: AI Deploy - Tutoriels
-order: 03
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-streamlit-sounds-classification/'
+    canonical: '/pages/platform/ai/deploy_tuto_03_streamlit_sounds_classification'
 updated: 2023-04-06
 ---
 
@@ -32,7 +29,7 @@ Overview of the app:
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr);
 - An AI Deploy project created inside a [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account;
-- A [user for AI Deploy](https://docs.ovh.com/fr/publiccloud/ai/users/);
+- A [user for AI Deploy](/pages/platform/ai/gi_01_manage_users);
 - [Docker](https://www.docker.com/get-started) installed on your local computer;
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
 - You also should have followed the steps of the marine mammal sounds classification notebook from the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/audio/audio-classification/notebook-marine-sound-classification.ipynb). You will be able to obtain your `data.csv` file and save your model.
@@ -121,7 +118,7 @@ Define the function that classifies the sounds from the previously trained model
 
 > [!primary]
 >
-> Here you will use your trained model, then save it in an Object Container. Click [here](https://docs.ovh.com/fr/publiccloud/ai/cli/data-cli/) to learn more about Object Storage.
+> Here you will use your trained model, then save it in an Object Container. Click [here](/pages/platform/ai/cli_16_commands_reference_data) to learn more about Object Storage.
 >
 
 ```python
@@ -299,7 +296,7 @@ Once started, your application should be available on `http://localhost:8501`.
 
 > [!warning]
 >
-> The shared registry of AI Deploy should only be used for testing purpose. Please consider attaching your own Docker registry. More information about this can be found [here](https://docs.ovh.com/fr/publiccloud/ai/training/add-private-registry/).
+> The shared registry of AI Deploy should only be used for testing purpose. Please consider attaching your own Docker registry. More information about this can be found [here](/pages/platform/ai/training_guide_05_howto_add_registry).
 >
 
 Find the address of your shared registry by launching this command:
@@ -373,8 +370,8 @@ If you want your notebook to be accessible without the need to authenticate, spe
 
 ## Go further
 
-- You can imagine deploying an AI model with an other tool: **Gradio**. Refer to this [tutorial](https://docs.ovh.com/fr/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/).
-- Another way to create an AI Deploy app is to use **Flask**! [Here it is](https://docs.ovh.com/fr/publiccloud/ai/deploy/web-service-yolov5/).
+- You can imagine deploying an AI model with an other tool: **Gradio**. Refer to this [tutorial](/pages/platform/ai/deploy_tuto_05_gradio_sketch_recognition).
+- Another way to create an AI Deploy app is to use **Flask**! [Here it is](/pages/platform/ai/deploy_tuto_04_flask_yolov5).
 
 ## Feedback
 

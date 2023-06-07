@@ -1,8 +1,6 @@
 ---
 title: How to use the Bring Your Own Image feature
 excerpt: Find out how to easily deploy your own images on dedicated servers
-slug: bringyourownimage
-section: Advanced use
 updated: 2022-11-25
 ---
 
@@ -111,7 +109,7 @@ After you have completed the fields, start the deployment by clicking `Execute`{
 
 ### Checking a deployment
 
-You can track the deployment of your image through the API call below or through the KVM / [IPMI](../use-ipmi-dedicated-servers/).
+You can track the deployment of your image through the API call below or through the KVM / [IPMI](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers).
 
 > [!api]
 >

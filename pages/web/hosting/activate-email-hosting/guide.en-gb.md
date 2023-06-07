@@ -1,9 +1,6 @@
 ---
 title: Activating email addresses included in your Web Hosting plan
-slug: activate-email-web-hosting
 excerpt: Find out how to activate the email addresses included in your Web Hosting plan
-section: Getting started
-order: 07
 updated: 2023-03-02
 ---
 
@@ -27,7 +24,7 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 
 > [!primary]
 >
-> For external domain names you need to activate the DNS zone first. Please read our documentation: [Creating an OVHcloud DNS zone for a domain name](https://docs.ovh.com/gb/en/domains/create_a_dns_zone_for_a_domain_which_is_not_registered_at_ovh/)){.external}.
+> For external domain names you need to activate the DNS zone first. Please read our documentation: [Creating an OVHcloud DNS zone for a domain name](/pages/web/domains/dns_zone_create)){.external}.
 >
 
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the Web Hosting plan that has the email solution.

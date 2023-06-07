@@ -1,9 +1,6 @@
 ---
 title: Instalar Composer en un alojamiento web
 excerpt: Esta guía explica cómo instalar y dar los primeros pasos en Composer
-slug: instalacion_de_composer_en_un_alojamiento_compartido
-section: PHP
-order: 02
 updated: 2023-02-24
 ---
 
@@ -33,7 +30,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ## Procedimiento
 
-Conéctese a su alojamiento compartido por SSH con ayuda de nuestra guía sobre [el uso del SSH con su alojamiento web de OVHcloud](https://docs.ovh.com/es/hosting/web_hosting_ssh_en_alojamiento_compartido/).
+Conéctese a su alojamiento compartido por SSH con ayuda de nuestra guía sobre [el uso del SSH con su alojamiento web de OVHcloud](/pages/web/hosting/ssh_on_webhosting).
 
 Compruebe que utiliza una versión de PHP compatible en línea de comandos:
 

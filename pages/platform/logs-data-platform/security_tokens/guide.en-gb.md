@@ -1,9 +1,6 @@
 ---
 title: Securing Logs Data Platform's APIs with tokens
-slug: logs-data-platform-tokens
-order: 7
 excerpt: If you want to give access to your logs to a software or automatize some tasks depending on your logs. You will maybe need to access them through the API. The most secure way to do this is to use tokens.
-section: Features
 updated: 2022-10-13
 ---
 

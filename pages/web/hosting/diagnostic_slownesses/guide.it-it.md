@@ -1,9 +1,6 @@
 ---
 title: "Il mio sito è lento. Cosa fare?" 
 excerpt: "Individua l'origine delle lentezze del tuo sito Web e scopri come risolvere questa situazione"
-slug: slow-website-fix
-section: Diagnostica
-order: 09
 updated: 2022-11-17
 ---
 
@@ -127,7 +124,7 @@ Prova il tuo sito Web da un altro dispositivo/computer e poi da un altro punto d
 
 #### 1.3 - Prova l'hosting con un file indipendente dal tuo sito Web
 
-Nella root del tuo sito Web accedi allo [spazio di storage FTP del tuo hosting condiviso](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/), un file che potrai chiamare `phpinfo.php`.
+Nella root del tuo sito Web accedi allo [spazio di storage FTP del tuo hosting condiviso](/pages/web/hosting/ftp_connection), un file che potrai chiamare `phpinfo.php`.
 
 Inserisci questo codice nel file:
 
@@ -157,9 +154,9 @@ phpinfo();
 
 #### 1.4 - Prova la connettività del tuo database:
 
-Accedi al tuo database seguendo **lo step 3** della nostra guida sulla [creazione di un database condiviso](https://docs.ovh.com/it/hosting/creare-database/).
+Accedi al tuo database seguendo **lo step 3** della nostra guida sulla [creazione di un database condiviso](/pages/web/hosting/sql_create_database).
 
-Se utilizzi un database su un'offerta **Web Cloud Databases**, consulta la nostra guida su [la connessione al tuo database presente su un'offerta Web Cloud Databases](https://docs.ovh.com/it/clouddb/connessione-database-server-bdd/).
+Se utilizzi un database su un'offerta **Web Cloud Databases**, consulta la nostra guida su [la connessione al tuo database presente su un'offerta Web Cloud Databases](/pages/web/clouddb/connecting-to-database-on-database-server).
 
 Se la connessione è andata a buon fine, accedi all'interfaccia seguente:
 
@@ -167,7 +164,7 @@ Se la connessione è andata a buon fine, accedi all'interfaccia seguente:
 
 > [!warning]
 >
-> In caso di errore, consulta la nostra guida sugli [errori ricorrenti riscontrati nel database](https://docs.ovh.com/it/hosting/errori-frequenti-database/). Per correggere la posizione del tuo database, utilizza la guida qui sotto.
+> In caso di errore, consulta la nostra guida sugli [errori ricorrenti riscontrati nel database](/pages/web/hosting/diagnosis_database_errors). Per correggere la posizione del tuo database, utilizza la guida qui sotto.
 >
 
 #### 1.5 - Interpretazione delle diagnostiche effettuate
@@ -203,11 +200,11 @@ Di seguito trovi le azioni da effettuare per identificare la fonte o le fonti de
 
 #### 2.1 - Verifica la configurazione del tuo hosting Web
 
-Per verificare il motore PHP, la versione PHP e l'ambiente di esecuzione utilizzati sull'hosting Web, consulta la guida sulla [configurazione del tuo hosting Web](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web/).
+Per verificare il motore PHP, la versione PHP e l'ambiente di esecuzione utilizzati sull'hosting Web, consulta la guida sulla [configurazione del tuo hosting Web](/pages/web/hosting/ovhconfig_modify_system_runtime).
 
 Se utilizzi sul tuo hosting Web una versione di PHP obsoleta, il motore "**PHP CGI**" e/o l'ambiente "**legacy**" e **se il tuo sito Web è compatibile**, preferisci l'utilizzo del motore "**PHP**" (PHP FPM), l'ambiente "**stable**" o "**stable64**" versione di PHP più recente possibile.
 
-Per confrontare le versioni di PHP disponibili in base all'ambiente di esecuzione utilizzato, consulta **lo Step 2** della guida sulla [configurazione della versione PHP sul tuo hosting](https://docs.ovh.com/it/hosting/configura_php_sul_tuo_hosting_web_condiviso_2014_ovh/).
+Per confrontare le versioni di PHP disponibili in base all'ambiente di esecuzione utilizzato, consulta **lo Step 2** della guida sulla [configurazione della versione PHP sul tuo hosting](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014).
 
 Utilizzare una versione di PHP recente, l'ambiente di esecuzione "**stable**" o "**stable64**" con il motore "**PHP**" (PHP FPM) rende il tuo sito molto più fluido e veloce. A titolo indicativo, il motore "**PHP**" (PHP FPM) può essere fino a 50 volte più performante del motore "**PHP CGI**" per eseguire i suoi compiti.
 
@@ -217,7 +214,7 @@ Le connessioni in uscita richiedono molte risorse. Quando queste connessioni son
 
 Questo si traduce in rallentamenti o addirittura in codici "504 gateway timeout".
 
-Per analizzare le connessioni in uscita dal tuo hosting, consulta i log **OUT** di quest'ultimo. Consulta la nostra guida su [consulta i log del tuo hosting](https://docs.ovh.com/it/hosting/hosting_condiviso_consulta_le_statistiche_e_i_log_del_tuo_sito/).
+Per analizzare le connessioni in uscita dal tuo hosting, consulta i log **OUT** di quest'ultimo. Consulta la nostra guida su [consulta i log del tuo hosting](/pages/web/hosting/logs_and_statistics).
 
 Se rilevi che sul tuo hosting sono presenti molte connessioni in uscita, confronta i tuoi log **OUT** con i tuoi log **WEB** con l'aiuto dell'orario di questi ultimi. per identificare gli script responsabili.
 
@@ -225,7 +222,7 @@ Se utilizzi un Content Management System (CMS) come WordPress, Joomla!, PrestaSh
 
 #### 2.3 - Analizza il flusso di richieste HTTP verso il tuo hosting Web:
 
-Per effettuare questa azione, consulta i log **WEB** del tuo hosting web utilizzando la nostra guida su [Come consultare i log del tuo hosting](https://docs.ovh.com/it/hosting/hosting_condiviso_consulta_le_statistiche_e_i_log_del_tuo_sito/).
+Per effettuare questa azione, consulta i log **WEB** del tuo hosting web utilizzando la nostra guida su [Come consultare i log del tuo hosting](/pages/web/hosting/logs_and_statistics).
 
 Le richieste più impegnative in termini di risorse sono le richieste HTTP di tipo **POST** e quelle di tipo **PUT**. Queste ultime eseguono rispettivamente modifiche e inserzioni.
 
@@ -253,7 +250,7 @@ Per diminuire il flusso di richieste a ogni caricamento delle tue pagine, puoi a
 
 > [!primary]
 >
-> OVHcloud propone diverse [offerte CDN](https://www.ovhcloud.com/it/web-hosting/options/). Per utilizzarne o attivarne uno per il tuo hosting Web, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e consulta la nostra guida su [l'utilizzo della CDN OVHcloud](https://docs.ovh.com/it/hosting/guida_allutilizzo_dellacceleratore_geocache_su_un_hosting_web/).
+> OVHcloud propone diverse [offerte CDN](https://www.ovhcloud.com/it/web-hosting/options/). Per utilizzarne o attivarne uno per il tuo hosting Web, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e consulta la nostra guida su [l'utilizzo della CDN OVHcloud](/pages/web/hosting/cdn_how_to_use_cdn).
 >
 
 #### 2.4 - ottimizza il tuo database
@@ -286,7 +283,7 @@ Ridimensiona l'insieme delle tue immagini per ridurre al minimo il consumo di ri
 
 #### 2.6 - Ottimizza il resto del tuo sito web
 
-Consulta la nostra guida sull'[ottimizzazione delle performance per il tuo sito Internet](https://docs.ovh.com/it/hosting/web_hosting_ottimizza_le_performance_del_tuo_sito/).
+Consulta la nostra guida sull'[ottimizzazione delle performance per il tuo sito Internet](/pages/web/hosting/optimise_your_website_performance).
 
 Per ottimizzare il tuo sito è possibile consultarlo su [gtmetrix.com](https://gtmetrix.com){.external} (il sito non è associato a OVHcloud).
 

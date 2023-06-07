@@ -1,9 +1,6 @@
 ---
 title: 'Technical specifications of Web Hostings'
-slug: technical-specifications-web-hosting
 excerpt: 'Find out details about the technical capabilities of your Web Hosting plan '
-section: 'Web Hosting configuration'
-order: 05
 updated: 2022-11-18
 ---
 
@@ -29,7 +26,7 @@ updated: 2022-11-18
 
 ### FTP
 
-- Access error ("530 Login authentication failed"): You can make sure the access credentials to your hosting space are correct by checking via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) ("FTP - SSH"). Passwords are never displayed but they can be changed. Please refer to our [FTP guides](../).
+- Access error ("530 Login authentication failed"): You can make sure the access credentials to your hosting space are correct by checking via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) ("FTP - SSH"). Passwords are never displayed but they can be changed. Please refer to our [FTP guides](/products/web-cloud-hosting).
 
 - FTP connections have to use **passive mode**. Please make sure your script or FTP client is adjusted accordingly.
 
@@ -58,7 +55,7 @@ For a rolling period of 3600 seconds (1 hour), your hosting plan will allow you 
 
     - *max_user_connections*: 50 by default, with the possibility of increasing to 200
 
-Find out more on our [website](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/) and in [our guide](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/).
+Find out more on our [website](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/) and in [our guide](/pages/web/clouddb/starting_with_clouddb).
 
 
 #### Connections from an external server
@@ -76,7 +73,7 @@ Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to conn
 
 - The MySQL version cannot be changed for Web Hosting databases.
 
-Please refer to [this guide](../creating-database/) for more information about managing databases.
+Please refer to [this guide](/pages/web/hosting/sql_create_database) for more information about managing databases.
 
 ### PHP
 
@@ -91,8 +88,8 @@ Please refer to [this guide](../creating-database/) for more information about m
 
 - You will be able to change the PHP version for your Web Hosting, either in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) ("**Configuration**") or by editing the .ovhconfig file. Mixed configurations are also possible with the latter. Detailed instructions are available in our guides:
 
-[Configuring the .ovhconfig file of your Web Hosting plan](../configuring-file-ovhconfig/)  
-[Modifying the configuration of a Web Hosting plan](../modify_your_web_hosting_systems_runtime_environment/)
+[Configuring the .ovhconfig file of your Web Hosting plan](/pages/web/hosting/ovhconfig_configuration)  
+[Modifying the configuration of a Web Hosting plan](/pages/web/hosting/ovhconfig_modify_system_runtime)
 
 
 > [!primary]
@@ -156,13 +153,13 @@ All of our Web Hosting plans located in:
 
 - Beauharnois (BHS), Canada have automatic backups at D-1 / D-2 / D-3 / D-7 / D-14. These backups are stored in the Beauharnois (BHS) data centre in Canada.
 
-Find out how to [log in to your storage space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/) or [restore your Web Hosting plan’s storage space](https://docs.ovh.com/gb/en/hosting/restoring-ftp-filezilla-control-panel/) in our documentation.
+Find out how to [log in to your storage space](/pages/web/hosting/ftp_connection) or [restore your Web Hosting plan’s storage space](/pages/web/hosting/ftp_save_and_backup) in our documentation.
 
 #### Database / SQL
 
 For shared database services (included in your Web Hosting plan) or database servers (Web Cloud Databases), offered in Gravelines (GRA), France and Beauharnois (BHS), Canada, the databases are backed up every day. You can access these backups (via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} or via the [OVHcloud API](https://api.ovh.com/)). Backups are also stored on another infrastructure. This data is replicated in 3 separate locations in France: Roubaix (RBX), Strasbourg (SBG), and Gravelines (GRA). The backup retention policy is 30 days.
 
-Find out how to [Retrieve a database backup of a Web Hosting plan](https://docs.ovh.com/gb/en/hosting/web_hosting_database_export_guide/) in our guide.
+Find out how to [Retrieve a database backup of a Web Hosting plan](/pages/web/hosting/sql_database_export) in our guide.
 
 #### Email
 
@@ -193,11 +190,11 @@ In order to be used as part of OVHcloud Web Statistics, the aforementioned data 
 
 ## Go further
 
-[Logging in to your Web Hosting plan’s storage space](../log-in-to-storage-ftp-web-hosting)
+[Logging in to your Web Hosting plan’s storage space](/pages/web/hosting/ftp_connection)
 
-[Activating HTTPS on your website with an SSL certificate](../activate-https-website-ssl)
+[Activating HTTPS on your website with an SSL certificate](/pages/web/hosting/ssl-activate-https-website)
 
-[Optimise your website’s performance](../web_hosting_optimise_your_website_performance)
+[Optimise your website’s performance](/pages/web/hosting/optimise_your_website_performance)
 
 Join our community of users on <https://community.ovh.com/en/>.
 

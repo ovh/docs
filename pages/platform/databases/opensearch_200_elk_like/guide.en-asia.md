@@ -1,9 +1,6 @@
 ---
 title: OpenSearch - Monitor your infra (with Logstash or Fluent Bit)
 excerpt: Find out how to set up Logstash and Fluent Bit with your OpenSearch databases
-slug: opensearch/logstash
-section: OpenSearch - Guides
-order: 200
 updated: 2021-12-17
 ---
 
@@ -26,7 +23,7 @@ This tutorial requires:
     - one or more additional compute instance running Linux, acting as a data injector. It can also be your computer, a Kubernetes cluster, etc.
 
 > [!warning]
-> Make sure that you have a user account with enough privileges to write to the OpenSearch database, and that the IP addresses that you will use to run your agents (Logstash and Fluent Bit) are part of the authorized list. Check our [Getting Started guide](https://docs.ovh.com/asia/en/publiccloud/databases/opensearch/getting-started/){.external} for more information.
+> Make sure that you have a user account with enough privileges to write to the OpenSearch database, and that the IP addresses that you will use to run your agents (Logstash and Fluent Bit) are part of the authorized list. Check our [Getting Started guide](/pages/platform/databases/opensearch_02_getting_Started){.external} for more information.
 
 ### Software environment
 
@@ -246,9 +243,9 @@ Congratulations, you are now able to collect data from multiple sources and push
 
 ## Go further
 
-[OVHcloud documentation on managed Public Cloud Databases](https://docs.ovh.com/asia/en/publiccloud/databases/)
+[OVHcloud documentation on managed Public Cloud Databases](/products/public-cloud-databases)
 
-[OpenSearch capabilities](https://docs.ovh.com/asia/en/publiccloud/databases/opensearch/capabilities/)
+[OpenSearch capabilities](/pages/platform/databases/opensearch_01_capabilities)
 
 [OpenSearch Official documentation](https://opensearch.org/docs/latest){.external}
 

@@ -1,9 +1,6 @@
 ---
 title: SSL-Probleme mit einer Webseite vermeiden
 excerpt: SSL-Probleme mit einer Webseite vermeiden
-slug: ssl-probleme_mit_meiner_webseite_vermeiden
-section: SSL
-order: 04
 updated: 2020-05-05
 ---
 

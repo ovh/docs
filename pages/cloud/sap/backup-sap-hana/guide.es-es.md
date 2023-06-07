@@ -1,12 +1,9 @@
 ---
 title: Backup a SAP HANA database solution
-slug: backup-sap-hana
 excerpt: This guide provides you with general guidelines on how to backup a SAP HANA database.
-section: Advanced usage
-order: 01
 updated: 2022-03-28
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/sap/backup-sap-hana
+    canonical: '/pages/cloud/sap/backup-sap-hana
 /'
 ---
 
@@ -70,7 +67,7 @@ For more information and how to set it up, please refer to the [SAP Documentatio
 
 For our backup needs, we will use the [OVHcloud Veeam Enterprise product](https://www.ovhcloud.com/es-es/storage-solutions/veeam-enterprise/).
 
-You can find the OVHcloud installation guide [here](https://docs.ovh.com/es/storage/veeam-backup-replication/)
+You can find the OVHcloud installation guide [here](/pages/cloud/storage/backup/veeam_veeam_backup_replication)
 
 #### Network Flows
 
@@ -123,7 +120,7 @@ Therefore, we will use the [OVHcloud Object Storage product](https://www.ovhclou
 Requirements:
 
 - an OVHcloud NIC Handle
-- a [Public Cloud Project](https://docs.ovh.com/es/public-cloud/create_a_public_cloud_project/)
+- a [Public Cloud Project](/pages/platform/public-cloud/create_a_public_cloud_project)
 
 
 <ol start="1">

@@ -1,8 +1,6 @@
 ---
 title: 'Installare un template OVF Windows e SQL Server'
-slug: installazione-template-ovh
 excerpt: 'Scopri come installare un template OVF Windows e SQL Server'
-section: 'Servizi e opzioni OVHcloud'
 updated: 2020-10-12
 ---
 

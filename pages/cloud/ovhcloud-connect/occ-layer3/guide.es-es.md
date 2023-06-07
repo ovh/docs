@@ -1,9 +1,6 @@
 ---
 title: Layer 3 mode
-slug: layer3
 excerpt: 'Details about using Layer 3 (L3) with OVHcloud Connect'
-section: Concepts
-order: 2
 updated: 2020-09-14
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-network-ovhcloud-connect-layer3?id=kb_article_view&sysparm_article=KB0045250'

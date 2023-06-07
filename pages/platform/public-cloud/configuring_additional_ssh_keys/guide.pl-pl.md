@@ -1,9 +1,6 @@
 ---
 title: Konfiguracja dodatkowych kluczy SSH
 excerpt: Dowiedz się, jak skonfigurować dodatkowe klucze SSH dla instancji Public Cloud
-slug: konfiguracja_dodatkowych_kluczy_ssh
-section: Tutoriale
-order: 01
 updated: 2022-02-04
 ---
 
@@ -34,11 +31,11 @@ Jeśli chcesz zapisać klucz SSH w Panelu client OVHcloud, zalecamy użycie szyf
 
 ### Tworzenie klucza SSH
 
-Aby utworzyć nowy klucz SSH, zapoznaj się z [przewodnikiem dotyczącym pierwszych kroków w ramach usługi Public Cloud](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/).
+Aby utworzyć nowy klucz SSH, zapoznaj się z [przewodnikiem dotyczącym pierwszych kroków w ramach usługi Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps).
 
 ### Konfiguracja nowego użytkownika
 
-[Zaloguj się do instancji przez SSH](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/#connect-to-instance) i utwórz nowego użytkownika za pomocą poniższych poleceń:
+[Zaloguj się do instancji przez SSH](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) i utwórz nowego użytkownika za pomocą poniższych poleceń:
 
 ```bash
 ~$ sudo adduser user2
@@ -91,8 +88,8 @@ user2@server:~$
 
 ## Sprawdź również
 
-[Utwórz pierwszą instancję Public Cloud i połącz się z nią](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/)
+[Utwórz pierwszą instancję Public Cloud i połącz się z nią](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Zmień klucz SSH w przypadku utraty](https://docs.ovh.com/pl/public-cloud/zmiana_klucza_ssh_w_przypadku_utraty/)
+[Zmień klucz SSH w przypadku utraty](/pages/platform/public-cloud/replacing_lost_ssh_key)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

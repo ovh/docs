@@ -1,8 +1,6 @@
 ---
 title: 'Backup automático - Kernel Panic (cPanel)'
-slug: cpanel_auto_backup
 excerpt: 'Cómo solucionar los problemas de bloqueo de los servidores cPanel durante el backup automático de OVHcloud'
-section: 'Uso avanzado'
 updated: 2021-03-09
 ---
 

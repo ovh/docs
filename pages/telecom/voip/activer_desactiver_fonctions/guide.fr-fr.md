@@ -1,7 +1,5 @@
 ---
 title: Activer ou désactiver des services depuis le téléphone
-slug: activer-desactiver-services-depuis-telephone
-section: Lignes téléphoniques
 updated: 2018-03-26
 ---
 

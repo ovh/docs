@@ -1,8 +1,6 @@
 ---
 title: Otimizar o envio de e-mails
 excerpt: Saiba como enviar e-mails limitando o risco de spam
-slug: otimizar-enviar-emails
-section: Utilização avançada
 updated: 2022-12-20
 ---
 
@@ -52,7 +50,7 @@ No caso de uma infraestrutura dedicada (servidor dedicado, VPS, instância Publi
 
 Para mais informações sobre a sintaxe do registo SPF, consulte a seguinte ligação: <http://www.open-spf.org/>.
 
-Pode, naturalmente, ir mais longe, configurando o registo SPF de um domínio específico ou especificando um IPv6. Para saber como realizar esta operação, consulte o nosso manual sobre como [configurar o registo SPF](https://docs.ovh.com/pt/domains/partilhado_o_campo_spf/).
+Pode, naturalmente, ir mais longe, configurando o registo SPF de um domínio específico ou especificando um IPv6. Para saber como realizar esta operação, consulte o nosso manual sobre como [configurar o registo SPF](/pages/web/domains/dns_zone_spf).
 
 ### Configurar o registo DKIM
 
@@ -66,7 +64,7 @@ Sempre com o objetivo de otimizar o envio e de reduzir os riscos de bloqueio dos
 
 Em primeiro lugar, deve criar um registo A na zona DNS do seu domínio com o endereço IP do seu servidor como alvo.
 
-Se os seus servidores DNS são geridos pela OVHcloud, consulte este [guia](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#aceder-a-gestao-de-uma-zona-dns-da-ovhcloud).
+Se os seus servidores DNS são geridos pela OVHcloud, consulte este [guia](/pages/web/domains/dns_zone_edit#aceder-a-gestao-de-uma-zona-dns-da-ovhcloud).
 
 Depois de alterar a zona DNS do domínio, é necessário aguardar 24 horas até que as alterações sejam efetivas.
 

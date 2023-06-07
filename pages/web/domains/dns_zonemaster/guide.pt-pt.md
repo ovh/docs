@@ -1,8 +1,5 @@
 ---
 title: 'Tutorial - Utilização de Zonemaster'
-slug: ovhcloud-domain-zonemaster-tutorial
-section: DNS e zona DNS
-order: 08
 updated: 2022-09-12
 ---
 
@@ -26,7 +23,7 @@ updated: 2022-09-12
 
 > [!primary]
 >
-> Para compreender melhor a noção de DNS, consulte a introdução do nosso guia sobre a [configuração de uma zona DNS](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).
+> Para compreender melhor a noção de DNS, consulte a introdução do nosso guia sobre a [configuração de uma zona DNS](/pages/web/domains/dns_zone_edit).
 
 ## Requisitos
 
@@ -78,9 +75,9 @@ Se tiver questões adicionais sobre Zonemaster, consulte a secção [FAQ](https:
 
 ## Saiba mais <a name="go-further"></a>
 
-[Alterar os servidores DNS de um nome de domínio OVHcloud](https://docs.ovh.com/pt/domains/partilhado_generalidades_sobre_os_servidores_dns/){.external}
+[Alterar os servidores DNS de um nome de domínio OVHcloud](/pages/web/domains/dns_server_general_information){.external}
 
-[Modificação de uma zona DNS da OVHcloud](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}.
+[Modificação de uma zona DNS da OVHcloud](/pages/web/domains/dns_zone_edit){.external}.
 
 [Proteja o seu domínio contra o Cache Poisoning graças ao DNSSEC](https://www.ovhcloud.com/pt/domains/dnssec/){.external}
 

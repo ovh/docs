@@ -1,9 +1,7 @@
 ---
 title: Test prędkości dysków
 excerpt: Test prędkości dysków
-slug: test_predkosci_dyskow
 legacy_guide_number: g1956
-section: Tutoriale
 updated: 2022-01-04
 ---
 
@@ -112,6 +110,6 @@ W tym przypadku możemy zobaczyć, że wydajność dysku to 891 iops.
 
 ## Sprawdź również
 
-[Zarządzanie wolumenem instancji Public Cloud](https://docs.ovh.com/pl/public-cloud/utworzenie_i_konfiguracja_dodatkowego_dysku_dla_instancji/)
+[Zarządzanie wolumenem instancji Public Cloud](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
  
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

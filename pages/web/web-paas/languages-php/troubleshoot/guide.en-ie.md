@@ -1,7 +1,5 @@
 ---
 title: Troubleshoot PHP
-slug: troubleshoot
-section: Php
 updated: 2022-06-02
 ---
 
@@ -23,7 +21,7 @@ and the estimated average memory size of each process.
 
 There are two ways to increase the number of workers:
 
-- Adjust the [worker sizing hints](../fpm/) for your project.
+- Adjust the [worker sizing hints](/pages/web/web-paas/languages-php/fpm) for your project.
 - Upgrade your Web PaaS plan to get more computing resources.
 
 ## Execution timeout
@@ -69,7 +67,7 @@ WARNING: [pool web] child 112 exited on signal 11 (SIGSEGV) after 7.405936 secon
 ```
 
 Either a PHP extension is hitting a segmentation fault or your PHP application code is crashing.
-You should review recent changes in your application and try to find the cause of it, probably with the help of [Xdebug](../xdebug/).
+You should review recent changes in your application and try to find the cause of it, probably with the help of [Xdebug](/pages/web/web-paas/languages-php/xdebug).
 
 ## PHP process is killed
 
@@ -83,7 +81,7 @@ WARNING: [pool web] child 429 exited on signal 9 (SIGKILL) after 50.938617 secon
 That means the memory usage of your container exceeds the limit allowed on your plan so the kernel kills the offending process. You should try the following:
 
 - Check if the memory usage of your application is expected and try to optimize it.
-- Use [sizing hints](../fpm/) to reduce the amount of PHP workers, which reduces the memory footprint.
+- Use [sizing hints](/pages/web/web-paas/languages-php/fpm) to reduce the amount of PHP workers, which reduces the memory footprint.
 - Upgrade your Web PaaS plan to get more computing resources.
 
 ## Resource temporarily unavailable
@@ -95,9 +93,9 @@ or the requests are taking too long to be processed (such as with calls to exter
 
 To address the issue, you can: 
 
-- Lower the memory consumption of each request so that the amount of PHP workers gets automatically raised. nThis can be customized with the `runtime.sizing_hints.request_memory` key in your `.platform.app.yaml` file. For more details, consult [PHP-FPM sizing](../fpm/).
+- Lower the memory consumption of each request so that the amount of PHP workers gets automatically raised. nThis can be customized with the `runtime.sizing_hints.request_memory` key in your `.platform.app.yaml` file. For more details, consult [PHP-FPM sizing](/pages/web/web-paas/languages-php/fpm).
 - Add a CDN.
-- Set up [HTTP caching](../../bestpractices-http-caching/).
-- Follow the global [performance tuning recommendations](../tuning/).
+- Set up [HTTP caching](/pages/web/web-paas/bestpractices-http-caching).
+- Follow the global [performance tuning recommendations](/pages/web/web-paas/languages-php/tuning).
 - Remove stale plugins and extensions when using a CMS.
 - Upgrade the container size to get more resources.

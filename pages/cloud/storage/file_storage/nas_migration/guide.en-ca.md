@@ -1,9 +1,6 @@
 ---
 title: Migrating data from one HA-NAS to another via NFS
-slug: nas/migration
 excerpt: Find out how to migrate your data from one HA-NAS to another via an NFS share
-section: HA-NAS
-order: 05
 updated: 2021-02-09
 ---
 
@@ -17,7 +14,7 @@ This guide details how to transfer data from one HA-NAS to another.
 
 - An OVHcloud HA-NAS
 - An NFS-compatible distribution
-- You need to have mounted your HA-NAS beforehand by following the guide to [mount your HA-NAS via an NFS](https://docs.ovh.com/ca/en/storage/file-storage/nas/nfs/){.external} share.
+- You need to have mounted your HA-NAS beforehand by following the guide to [mount your HA-NAS via an NFS](/pages/cloud/storage/file_storage/nas_nfs){.external} share.
 
 ## Instructions
 

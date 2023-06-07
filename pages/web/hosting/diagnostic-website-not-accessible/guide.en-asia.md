@@ -1,9 +1,6 @@
 ---
 title: What do I do if my website is down?
-slug: server-error-inaccessible
 excerpt: Diagnose the causes of the inaccessibility of your web site
-section: Troubleshooting
-order: 01
 updated: 2022-08-02
 ---
 
@@ -31,9 +28,9 @@ Several error messages may appear on your browser in the event of your site bein
 
 ## Requirements
 
-- control over your domain’s servers and [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns)
+- control over your domain’s servers and [DNS zone](/pages/web/domains/dns_zone_edit#understanding-dns)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
-- being up-to-date in the [payments](https://docs.ovh.com/asia/en/billing/manage-ovh-bills/#pay-bills) and [renewals](https://docs.ovh.com/asia/en/billing/how-to-use-automatic-renewal-at-ovh/#renewal-management) of related services (domain name and web hosting plan)
+- being up-to-date in the [payments](/pages/account/billing/invoice_management#pay-bills) and [renewals](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
 
 ## Instructions
 
@@ -44,7 +41,7 @@ Several error messages may appear on your browser in the event of your site bein
 > You are solely responsible for renewing your web services.<br>
 > As a hosting provider, OVHcloud is required to permanently delete any web services (domains, hosting plans, e-mails, etc.) that have not been renewed in time, as well as all of the data they store.
 >
-> As a result, we strongly recommend that you enable [automatic renewal](../../billing/how-to-use-automatic-renewal-at-ovh/#instructions) for all of your OVHcloud subscriptions.
+> As a result, we strongly recommend that you enable [automatic renewal](/pages/account/billing/how_to_use_automatic_renewal#instructions) for all of your OVHcloud subscriptions.
 >
 
 To check that your domain name subscription is valid, click on your name at the top right-hand corner of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), then click on `Products and services`{.action} within the right-hand menu.
@@ -73,13 +70,13 @@ If they are identical to the targets of the `NS` type entries in the `DNS zone`{
 
 #### Scenario 2: a warning appears above the DNS zone
 
-A warning in the `DNS zone`{.action} tab indicates that the DNS servers used by your domain name are not the ones indicated in your [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns). Two scenarios are possible:
+A warning in the `DNS zone`{.action} tab indicates that the DNS servers used by your domain name are not the ones indicated in your [DNS zone](/pages/web/domains/dns_zone_edit#understanding-dns). Two scenarios are possible:
 
 - Under the sentence "You are currently using the following DNS servers", the servers listed are "ns **?** .ovh.net" and "dns **?** .ovh.net" (replace the "**?**" by any number):
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
-Modify the DNS servers as described in [this guide](../../domains/web_hosting_general_information_about_dns_servers/#modifying-dns-servers), so that they are identical to the targets of the `NS` type records in your `DNS zone`{.action}.
+Modify the DNS servers as described in [this guide](/pages/web/domains/dns_server_general_information#modifying-dns-servers), so that they are identical to the targets of the `NS` type records in your `DNS zone`{.action}.
 
 Your website will then be available within a maximum of 48 hours.
 
@@ -91,7 +88,7 @@ Your website will then be available within a maximum of 48 hours.
 >
 > In this situation, please contact your DNS Zone provider, your webmaster or a [OVHcloud partner](https://partner.ovhcloud.com/asia/directory/) before making any changes.
 >
-> The DNS servers used by your domain name may be functional and the problem accessing your website be linked to a missing or incorrect entry in the active [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns). Changing the DNS servers in this situation might make your e-mail addresses or other online applications related to your domain name unavailable.
+> The DNS servers used by your domain name may be functional and the problem accessing your website be linked to a missing or incorrect entry in the active [DNS zone](/pages/web/domains/dns_zone_edit#understanding-dns). Changing the DNS servers in this situation might make your e-mail addresses or other online applications related to your domain name unavailable.
 >
 
 #### Scenario 3: no NS-type entries appear in the DNS zone
@@ -124,7 +121,7 @@ In the `General information`{.action} tab, copy the IPV4 and/or IPV6 address of 
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-Then refer to it in your domain’s [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#edit-your-domain-names-ovhcloud-dns-zone), by modifying or creating one or more `A` entries.
+Then refer to it in your domain’s [DNS zone](/pages/web/domains/dns_zone_edit#edit-your-domain-names-ovhcloud-dns-zone), by modifying or creating one or more `A` entries.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
@@ -132,11 +129,11 @@ Your website will then be available within a maximum of 24 hours.
 
 ## Go further <a name="gofurther"></a>
 
-[Resolving a “Site not installed” error](../web_hosting_error_-_website_not_installed/)
+[Resolving a “Site not installed” error](/pages/web/hosting/multisites_website_not_installed)
 
-[Fixing the 500 Internal Server Error](../web_hosting_how_to_fix_the_500_internal_server_error/)
+[Fixing the 500 Internal Server Error](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
 
-[Resolving the most common 1-click module errors](../error-frequently-1-click-modules/)
+[Resolving the most common 1-click module errors](/pages/web/hosting/diagnostic_errors_module1clic)
 
 For specialised services (SEO, development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/asia/).
 

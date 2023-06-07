@@ -1,9 +1,6 @@
 ---
 title: "Sécuriser un serveur dédié"
-slug: securiser-un-serveur-dedie
 excerpt: "Découvrez les éléments de base vous permettant de sécuriser votre serveur dédié"
-section: "Premiers pas"
-order: 2
 updated: 2023-02-24
 ---
 
@@ -36,7 +33,7 @@ Lorsque vous commandez votre serveur dédié, vous pouvez choisir une distributi
 >
 > Gardez à l'esprit qu’il s’agit d’un guide général basé sur un système d’exploitation Ubuntu Server. Certaines commandes nécessitent d’être adaptées à la distribution que vous utilisez et certaines astuces vous invitent à utiliser des outils tiers. Veuillez vous référer à la documentation officielle de ces applications si vous avez besoin d'aide.
 >
-> S'il s'agit de votre première configuration d'un serveur dédié OVHcloud, nous vous invitons à consulter en premier lieu notre guide [Premiers pas avec un serveur dédié](https://docs.ovh.com/ca/fr/dedicated/premiers-pas-serveur-dedie/).
+> S'il s'agit de votre première configuration d'un serveur dédié OVHcloud, nous vous invitons à consulter en premier lieu notre guide [Premiers pas avec un serveur dédié](/pages/cloud/dedicated/getting-started-with-dedicated-server).
 >
 
 Les exemples suivants supposent que vous êtes connecté en tant qu'utilisateur avec des autorisations élevées.
@@ -108,7 +105,7 @@ ssh nomdutilisateur@IPv4_de_votre_serveur -p NouveauPort
 
 ### Modifier le mot de passe associé à l'utilisateur "root"
 
-Il est fortement recommandé de modifier le mot de passe de l'utilisateur root afin de ne pas le laisser à sa valeur par défaut sur un nouveau système. Pour plus d'informations, consultez [ce guide](https://docs.ovh.com/ca/fr/dedicated/changer-mot-passe-root-linux-sur-serveur-dedie/).
+Il est fortement recommandé de modifier le mot de passe de l'utilisateur root afin de ne pas le laisser à sa valeur par défaut sur un nouveau système. Pour plus d'informations, consultez [ce guide](/pages/cloud/dedicated/changing_root_password_linux_ds).
 
 ### Créer un utilisateur avec des droits restreints
 
@@ -170,7 +167,7 @@ Les distributions GNU/Linux courantes sont fournies avec un service de pare-feu 
 iptables -L
 ```
 
-Pour plus d'informations sur iptables, consultez notre [guide dédié](https://docs.ovh.com/ca/fr/dedicated/firewall-iptables/).
+Pour plus d'informations sur iptables, consultez notre [guide dédié](/pages/cloud/dedicated/firewall-Linux-iptable).
 
 Il est alors recommandé de créer et d’ajuster à votre utilisation des règles de pare-feu. Pour plus d'informations sur les diverses manipulations possibles, reportez-vous à la documentation officielle de la distribution utilisée.
 
@@ -250,7 +247,7 @@ Pour toute information complémentaire et pour des recommandations concernant Fa
 
 Les solutions OVHcloud incluent la possibilité d'activer un pare-feu au point d'entrée de l'infrastructure, appelé Network Firewall. Une configuration correcte de ce pare-feu permet de bloquer les connexions avant même qu'elles n'arrivent sur votre serveur.
 
-Consultez le guide « [Configurer le Network Firewall](https://docs.ovh.com/ca/fr/dedicated/firewall-network/) » si vous souhaitez l'activer.
+Consultez le guide « [Configurer le Network Firewall](/pages/cloud/dedicated/firewall_network) » si vous souhaitez l'activer.
 
 ### Sauvegarder votre système et vos données
 
@@ -263,13 +260,13 @@ La notion de sécurité ne se limite pas uniquement à la protection d’un syst
 
 Vous aurez besoin d'une solution de sauvegarde tierce pour répliquer vos données et les transférer vers votre stockage de sauvegarde.
 
-Pour plus d'informations sur nos solutions de stockage de sauvegarde, consultez notre [guide](https://docs.ovh.com/ca/fr/dedicated/services-backup-storage/){.external} de stockage de sauvegarde.
+Pour plus d'informations sur nos solutions de stockage de sauvegarde, consultez notre [guide](/pages/cloud/dedicated/services_backup_storage){.external} de stockage de sauvegarde.
 
 
 ## Aller plus loin
 
-[Configurer le pare-feu sous Windows](https://docs.ovh.com/ca/fr/dedicated/firewall-windows/)
+[Configurer le pare-feu sous Windows](/pages/cloud/dedicated/activate-port-firewall-soft-win)
 
-[Network Firewall](https://docs.ovh.com/ca/fr/dedicated/firewall-network/)
+[Network Firewall](/pages/cloud/dedicated/firewall_network)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

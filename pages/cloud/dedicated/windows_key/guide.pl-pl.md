@@ -1,8 +1,6 @@
 ---
 title: 'Modyfikacja klucza aktywacyjnego Windows Server'
 excerpt: 'Dowiedz się, jak zmodyfikować klucz aktywacyjny Windows Server'
-slug: windows-klucz
-section: Inne
 updated: 2022-07-07
 ---
 

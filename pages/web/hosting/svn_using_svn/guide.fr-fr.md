@@ -1,9 +1,6 @@
 ---
 title: Utiliser SVN
-slug: utiliser-svn
 excerpt: Découvrez comment utiliser SVN en SSH sur votre hebergement web
-section: FTP et SSH
-order: 09
 updated: 2021-01-06
 ---
 
@@ -25,13 +22,13 @@ SVN, qui est l'abrévation de « subversion », est un système de gestion de ve
 ## Pre-requis
 
 - Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/) permettant une connexion SSH (**à partir de l'offre Pro**)
-- Se connecter en SSH à votre hébergement Web (vous pouvez consulter notre guide [Utiliser l’accès SSH de son hébergement web](../mutualise-le-ssh-sur-les-hebergements-mutualises/))
+- Se connecter en SSH à votre hébergement Web (vous pouvez consulter notre guide [Utiliser l’accès SSH de son hébergement web](/pages/web/hosting/ssh_on_webhosting))
 
 ## En pratique
 
 ### Création du dépôt
 
-Une fois connecté en [SSH sur votre hébergement](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}, créez le répertoire racine des dépôts SVN, puis le dépôt.
+Une fois connecté en [SSH sur votre hébergement](/pages/web/hosting/ssh_on_webhosting){.external}, créez le répertoire racine des dépôts SVN, puis le dépôt.
 
 Il vous suffit pour cela de taper la commande :
 
@@ -59,7 +56,7 @@ Vous devez obtenir les répertoires comme indiqué sur l'image suivante :
 
 Avant de poursuivre il vous faudra créer une paire de clés SSH depuis le poste que vous utiliserez pour vous connecter au dépôt SVN.
 
-Nous vous invitons à suivre le guide [Créer des clés SSH](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/). Il n'est pas nécessaire de suivre l'étape [Importez votre clé SSH dans l’Espace client OVHcloud](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/#importez-votre-cle-ssh-dans-lespace-client-ovhcloud) dans ce guide.
+Nous vous invitons à suivre le guide [Créer des clés SSH](/pages/platform/public-cloud/public-cloud-first-steps#etape-1-creer-des-cles-ssh/). Il n'est pas nécessaire de suivre l'étape [Importez votre clé SSH dans l’Espace client OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#etape-1-creer-des-cles-ssh/#importez-votre-cle-ssh-dans-lespace-client-ovhcloud) dans ce guide.
 
 ### Ajout de la clé publique sur l'hébergement
 
@@ -84,7 +81,7 @@ Suivie de la clé précédemment créée, le tout sur la même ligne.
 > Remplacez « /home.XXX/loginFTP » et « john » par vos identifiants SSH. 
 > Pour connaître les chiffres à utiliser pour remplacer « /home.XXX/loginFTP »  tapez la commande « pwd » en SSH.
 >
-> Vous retrouverez également ces infrormations on consultant notre guide [Utiliser l’accès SSH de son hébergement web](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}.
+> Vous retrouverez également ces infrormations on consultant notre guide [Utiliser l’accès SSH de son hébergement web](/pages/web/hosting/ssh_on_webhosting){.external}.
 > 
 
 ![hosting](images/3080.png){.thumbnail}
@@ -150,6 +147,6 @@ svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 
 ## Aller plus loin
 
-[Utiliser l’accès SSH de son hébergement web](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}
+[Utiliser l’accès SSH de son hébergement web](/pages/web/hosting/ssh_on_webhosting){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

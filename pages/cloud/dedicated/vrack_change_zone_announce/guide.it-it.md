@@ -1,8 +1,6 @@
 ---
 title: 'Modificare i blocchi IP annunciati nella vRack'
-slug: modificare-blocchi-ip-annunciati-vrack
 excerpt: 'Come cambiare l’annuncio di un blocco IP nella rete privata vRack'
-section: vRack
 updated: 2019-03-12
 ---
 
@@ -17,7 +15,7 @@ La [vRack](https://www.ovh.it/soluzioni/vrack/){.external} è una rete privata c
 ## Prerequisiti
 
 - Disporre di una [vRack](https://www.ovh.it/soluzioni/vrack/){.external}
-- Aver [configurato un blocco IP nella vRack](https://docs.ovh.com/it/dedicated/configurare-blocco-ip-nella-vRack/)
+- Aver [configurato un blocco IP nella vRack](/pages/cloud/dedicated/configuring-an-ip-block-in-a-vrack)
 - Possedere competenze avanzate di rete
 
 > [!warning]
@@ -91,6 +89,6 @@ In questo esempio l’indirizzo IP testato è annunciato a **Gravelines**, come 
 
 ## Per saperne di più
 
-[Configurare un blocco di indirizzi IP nella vRack](https://docs.ovh.com/it/dedicated/configurare-blocco-ip-nella-vRack/){.external}
+[Configurare un blocco di indirizzi IP nella vRack](/pages/cloud/dedicated/configuring-an-ip-block-in-a-vrack){.external}
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -1,8 +1,5 @@
 ---
 title: FAQ OVHcloud emails
-slug: emails-faq
-section: 'Getting started'
-order: 07
 updated: 2020-05-05
 ---
 
@@ -21,15 +18,15 @@ After sending an email to your email account, do you receive an error message? I
 
 You can also check that your domain name is delivering emails to the right place. To do this, go to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, select the DNS zone for your domain name, then look at the MX records that have been set up. These records must be in the form "mx**X**.mail.ovh.ca." (replace X with a number between 0 and 3). If the MX records are different, this could mean you have an email solution from an operator other than OVHcloud. 
 
-**Tips and tricks**: If you cannot log in via webmail, your password may be incorrect. Check your password, and if necessary, reset it via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external} — then try logging in again. To do this, you can use the following documentation: [Changing your password for an MX Plan email address](../changing-email-address-password).
+**Tips and tricks**: If you cannot log in via webmail, your password may be incorrect. Check your password, and if necessary, reset it via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external} — then try logging in again. To do this, you can use the following documentation: [Changing your password for an MX Plan email address](/pages/web/emails/email_change_password).
 
 ### How do I set up my email address and use it with webmail? 
 
-You can configure your email account to use an email client like Outlook, Thunderbird, Mac Mail, etc. To do this, we have created guides to help you set up your email address. You can find them on [this page](../). 
+You can configure your email account to use an email client like Outlook, Thunderbird, Mac Mail, etc. To do this, we have created guides to help you set up your email address. You can find them on [this page](/products/web-cloud-email-collaborative-solutions-mx-plan). 
 
 With [webmail](https://www.ovh.com/sg/mail/), you can access your inbox at any time from any connected device. Once you have created your email account, you can log in here to access it. 
 
-**Tips and tricks**: If you configure your email account in an email software client, we advise configuring it with the IMAP protocol. This way, emails will stay stored on the server, and you can read them from any device via [webmail](https://www.ovh.com/sg/mail/). To do this, you can use the following documentation: [Getting started with an MX Plan solution](../web_hosting_an_overview_of_ovh_email).
+**Tips and tricks**: If you configure your email account in an email software client, we advise configuring it with the IMAP protocol. This way, emails will stay stored on the server, and you can read them from any device via [webmail](https://www.ovh.com/sg/mail/). To do this, you can use the following documentation: [Getting started with an MX Plan solution](/pages/web/emails/email_generalities).
 
 ### How do I manage my email services? 
 

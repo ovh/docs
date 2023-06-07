@@ -1,9 +1,6 @@
 ---
 title: Delegating projects
-slug: delegate-projects
 excerpt: Find out how to delegate access rights for a Public Cloud project to other OVHcloud accounts
-section: Project management
-order: 7
 updated: 2022-04-04
 ---
 
@@ -29,7 +26,7 @@ On this page you can see the contacts associated with your project.
 
 ![public-cloud-delegate-projects](images/delegatingproject_ca01.png){.thumbnail}
 
-You can click on the `Edit`{.action} buttons to change the current contacts. Follow the instructions in our guide [Changing project contacts](../change_project_contacts/) to complete this process.
+You can click on the `Edit`{.action} buttons to change the current contacts. Follow the instructions in our guide [Changing project contacts](/pages/platform/public-cloud/change_project_contacts) to complete this process.
 
 ### Adding contacts and permissions
 
@@ -53,10 +50,10 @@ To revoke an access, click on the `...`{.action} button and then select `Delete`
 
 ## Go further
 
-[Getting started with a Public Cloud Instance](https://docs.ovh.com/sg/en/public-cloud/public-cloud-first-steps/)
+[Getting started with a Public Cloud Instance](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Information regarding Public Cloud billing options](https://docs.ovh.com/sg/en/public-cloud/information-on-cloud-billing-options/)
+[Information regarding Public Cloud billing options](/pages/platform/public-cloud/analyze_billing)
 
-[Access and Security in Horizon](https://docs.ovh.com/sg/en/public-cloud/access_and_security_in_horizon/)
+[Access and Security in Horizon](/pages/platform/public-cloud/access_and_security_in_horizon)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: "E-Mail-Accounts über Outlook Web App (OWA) verwenden"
-slug: verwendung-owa
 excerpt: 'So verwenden Sie Ihre E-Mail-Adressen über OWA Webmail'
-section: 'E-Mail Clients'
-order: 1
 updated: 2021-06-25
 ---
 
@@ -123,7 +120,7 @@ Geben Sie die erforderlichen Informationen in Abhängigkeit von der Aktion ein, 
 
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
-Ausführlichere Anweisungen zum Erstellen von Posteingangsregeln finden Sie in unserer Anleitung: [Posteingangsregeln in OWA erstellen](../posteingangsregeln-in-owa-erstellen/).
+Ausführlichere Anweisungen zum Erstellen von Posteingangsregeln finden Sie in unserer Anleitung: [Posteingangsregeln in OWA erstellen](/products/email-owa-creating-inbox-rules).
 
 ##### Einen Absender blockieren
 
@@ -187,7 +184,7 @@ Geben Sie jetzt die erforderlichen Informationen in Abhängigkeit von der Aktion
 
 ![useowa](images/owa_exchange_step21.png){.thumbnail}
 
-Ausführlichere Anweisungen hierzu finden Sie in unserer Anleitung: [Einrichten einer automatischen Antwort in OWA](../exchange_2016_einrichten_einer_automatischen_antwort_in_owa)
+Ausführlichere Anweisungen hierzu finden Sie in unserer Anleitung: [Einrichten einer automatischen Antwort in OWA](/de/emails/exchange_2016_einrichten_einer_automatischen_antwort_in_owa)
 
 ### Eine Signatur hinzufügen
 
@@ -201,7 +198,7 @@ Im linken Bereich der neuen Ansicht klicken Sie auf `E-Mail-Signatur`{.action}. 
 
 Verfassen Sie Ihre elektronische Signatur im Editor. Sie können angeben, ob Sie die Signatur standardmäßig nur in neue E-Mails oder auch in Antworten und weitergeleitete E-Mails aufnehmen möchten. Sobald Sie den Vorgang abgeschlossen haben, klicken Sie zum Bestätigen auf `Speichern`{.action}.
 
-Anweisungen zum Erstellen automatisierter Signaturen mithilfe domainübergreifender Vorlagen finden Sie in unserer Anleitung: [Automatische Signaturen erstellen](../exchange_20132016_automatische_signatur_-_disclaimer/).
+Anweisungen zum Erstellen automatisierter Signaturen mithilfe domainübergreifender Vorlagen finden Sie in unserer Anleitung: [Automatische Signaturen erstellen](/de/emails/exchange_20132016_automatische_signatur_-_disclaimer/).
 
 ### Zugang zum Bereich „Optionen“
 
@@ -222,12 +219,12 @@ Die Deaktivierung dieser Cookies kann möglicherweise die stabile Funktionalitä
 
 ## Weiterführende Informationen
 
-[Einrichten einer automatischen Antwort in OWA](../exchange_2016_einrichten_einer_automatischen_antwort_in_owa/)
+[Einrichten einer automatischen Antwort in OWA](/de/emails/exchange_2016_einrichten_einer_automatischen_antwort_in_owa/)
 
-[Ordner in OWA freigeben](../exchange_2016_einen_ordner_via_owa_webmail_freigeben/)
+[Ordner in OWA freigeben](/de/emails/exchange_2016_einen_ordner_via_owa_webmail_freigeben/)
 
-[Kalender in OWA freigeben](../exchange_2016_einen_kalender_via_owa_webmail_freigeben/)
+[Kalender in OWA freigeben](/de/emails/exchange_2016_einen_kalender_via_owa_webmail_freigeben/)
 
-[Kontaktgruppen erstellen](../exchange_20132016_verwendung_der_gruppen_mailinglisten/)
+[Kontaktgruppen erstellen](/de/emails/exchange_20132016_verwendung_der_gruppen_mailinglisten/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: Introduction to the Hosted Private Cloud Control Panel
-slug: control-panel-ovh-private-cloud
 excerpt: Find out how to use the OVHcloud Hosted Private Cloud Control Panel
-section: Getting started
-order: 1
 updated: 2021-12-15
 ---
 
@@ -120,7 +117,7 @@ You can configure options settings with the buttons on the right.
 > 
 
 At the bottom of the page, you can also add or see your Key Management Servers.<br>
-Check out [Enabling Virtual Machine Encryption](https://docs.ovh.com/ie/en/private-cloud/vm-encrypt/) for more details.
+Check out [Enabling Virtual Machine Encryption](/pages/cloud/private-cloud/vm_encrypt) for more details.
 
 ![KMS](images/en09kms.png){.thumbnail}
 
@@ -183,7 +180,7 @@ You can also order a datastore via the `Order a datastore`{.action} button.
 #### Backup
 
 The Backup tab allows you to activate a Veeam Backup solution.<br>
-Check out the [Activating and using Veeam Managed Backup](https://docs.ovh.com/ie/en/private-cloud/veeam-backup-as-a-service/) guide for more details.
+Check out the [Activating and using Veeam Managed Backup](/pages/cloud/private-cloud/veeam_backup_as_a_service) guide for more details.
 
 ![BACKUP](images/en16backup.png){.thumbnail}
 
@@ -194,7 +191,7 @@ Once the solution is activated, the Backup page also allows you to set up daily 
 #### Disaster Recovery Plan (DRP)
 
 The Disaster Recovery Plan tab allows you to build a DRP plan with Zerto.<br>
-Check out [Setting up Zerto Virtual Replication for your DRP](https://docs.ovh.com/ie/en/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/) for more details.
+Check out [Setting up Zerto Virtual Replication for your DRP](/pages/cloud/private-cloud/zerto_virtual_replication_as_a_service) for more details.
 
 ![DRP](images/en18drp.png){.thumbnail}
 

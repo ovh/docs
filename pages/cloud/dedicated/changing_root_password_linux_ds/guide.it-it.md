@@ -1,8 +1,6 @@
 ---
 title: Modificare la password di root su un server dedicato
-slug: modificare-password-root-server-linux
 excerpt: Come modificare la password di root del tuo server dedicato
-section: 'Diagnostica e modalità Rescue'
 updated: 2021-02-16
 ---
 
@@ -66,7 +64,7 @@ passwd: password updated successfully
 
 #### Step 1: individua la partizione di sistema
 
-Dopo aver riavviato il server in [modalità Rescue](../rescue_mode/), è necessario identificare la partizione di sistema. Per eseguire questa operazione, esegui il comando:
+Dopo aver riavviato il server in [modalità Rescue](/pages/cloud/dedicated/rescue_mode), è necessario identificare la partizione di sistema. Per eseguire questa operazione, esegui il comando:
 
 ```
 # fdisk -l
@@ -130,10 +128,10 @@ Una volta completato questo step, modifica la modalità di avvio sul tuo server 
 
 ## Per saperne di più
 
-[Attivare e utilizzare la modalità rescue](../rescue_mode/)
+[Attivare e utilizzare la modalità rescue](/pages/cloud/dedicated/rescue_mode)
 
-[Mettere in sicurezza un server dedicato](../mettere-in-sicurezza-un-server-dedicato/)
+[Mettere in sicurezza un server dedicato](/pages/cloud/dedicated/securing-a-dedicated-server)
 
-[Modificare la password amministratore su un server dedicato Windows](../modificare-password-admin-su-server-windows/)
+[Modificare la password amministratore su un server dedicato Windows](/pages/cloud/dedicated/changing-admin-password-on-windows)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

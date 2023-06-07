@@ -1,9 +1,6 @@
 ---
 title: 'Automatische Signaturen erstellen'
 excerpt: 'Erfahren Sie hier, wie Sie automatische Signaturen zu Ihren E-Mail-Accounts hinzufügen'
-slug: exchange_20132016_automatische_signatur_-_disclaimer
-section: Exchange Account-Funktionen
-order: 07
 updated: 2020-03-26
 ---
 
@@ -54,16 +51,16 @@ Bitte beachten Sie die folgenden Hinweise, bevor Sie Signaturen für Benutzer ei
 ![Exchange Signaturen](images/exchange-footer-step5.png){.thumbnail}
 
 - Die Signatur wird ohne Abstand zum E-Mail-Körper hinzugefügt. Daher empfiehlt es sich, die Signatur mit mindestens einer leeren Zeile zu beginnen.
-- Im OWA wird nicht angezeigt, ob ein Footer für eine Domain aktiviert wurde, und es gibt **keine Synchronisation**. Wenn Benutzer ihre [eigenen Signaturen](../exchange_2016_verwendung_der_outlook_web_app/#eine-signatur-hinzufugen) hinzufügen, werden E-Mails sowohl den eigenen als auch den für die gesamte Domain erstellten Footer enthalten.
+- Im OWA wird nicht angezeigt, ob ein Footer für eine Domain aktiviert wurde, und es gibt **keine Synchronisation**. Wenn Benutzer ihre [eigenen Signaturen](/de/microsoft-collaborative-solutions/exchange_2016_verwendung_der_outlook_web_app/#eine-signatur-hinzufugen) hinzufügen, werden E-Mails sowohl den eigenen als auch den für die gesamte Domain erstellten Footer enthalten.
 - Der Editor unterstützt HTML-Formatierung, Hyperlinks, Bilder etc. Allerdings sollten sich Signaturen nicht zu sehr auf diese Optionen stützen. Empfänger verwenden möglicherweise E-Mail-Clients, die HTML und eingebundene Bilder nicht erlauben, oder die Signaturen werden anders angezeigt, als geplant. Beachten Sie, dass HTML-Tags vollständig entfernt werden, wenn eine E-Mail über OWA als „Plain Text“ versendet wird.
 - „Initialen“ sind für den Dienst nicht aktiv. Wenn Sie diese Variable hinzufügen, hat dies keinerlei Auswirkungen.
 
 ## Weiterführende Informationen
 
-[Verwendung der Outlook Web App](../exchange_2016_verwendung_der_outlook_web_app/)
+[Verwendung der Outlook Web App](/de/microsoft-collaborative-solutions/exchange_2016_verwendung_der_outlook_web_app/)
 
-[Berechtigungen für einen E-Mail Account übertragen](../exchange_2013_send_as_versand_als/)
+[Berechtigungen für einen E-Mail Account übertragen](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Kalender in OWA freigeben](../exchange_2016_einen_kalender_via_owa_webmail_freigeben/)
+[Kalender in OWA freigeben](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

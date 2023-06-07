@@ -1,9 +1,6 @@
 ---
 title: 'Configuring your Email Pro account in Outlook for Windows'
-slug: configuration-outlook-2016
 excerpt: 'Find out how to configure your Email Pro account in Outlook for Windows'
-section: 'Email client configuration'
-order: 2
 updated: 2021-07-05
 ---
 
@@ -66,11 +63,11 @@ For **POP** configuration, the values are:
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovhcloud.com/en-ie/emails/>. You can log in using your email credentials. If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](../../microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/).
+OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovhcloud.com/en-ie/emails/>. You can log in using your email credentials. If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](/ie/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/).
 
 ### Retrieving a backup of your email address
 
-If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the "**Exporting from Windows**" section in our guide on [Migrating your email address manually](../../emails/migrate-email-addresses-manually/#exporting-from-windows).
+If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the "**Exporting from Windows**" section in our guide on [Migrating your email address manually](/pages/web/emails/manual_email_migration#exporting-from-windows).
 
 ### Modifying existing settings
 
@@ -96,8 +93,8 @@ The window is divided into two parts, **Incoming Mail** and **Outgoing Mail**. C
 
 ## Go further <a name="gofurther"></a>
 
-[Configuring your MX Plan address in Outlook for Windows](../../emails/configuration-outlook-2016/)
+[Configuring your MX Plan address in Outlook for Windows](/pages/web/emails/how_to_configure_outlook_2016)
 
-[Configuring your Exchange account in Outlook 2016 for Windows](../../microsoft-collaborative-solutions/configuration-outlook-2016/)
+[Configuring your Exchange account in Outlook 2016 for Windows](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016)
 
 Join our community of users on <https://community.ovh.com/en/>.

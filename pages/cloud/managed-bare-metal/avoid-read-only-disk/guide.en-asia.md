@@ -1,11 +1,8 @@
 ---
 title: Avoiding the read-only switch of your VM disk on Linux
-slug: how-avoid-disk-read-only-switch-linux
 routes:
-    canonical: 'https://docs.ovh.com/asia/en/private-cloud/how-avoid-disk-read-only-switch-linux/'
+    canonical: '/pages/cloud/private-cloud/comment_eviter_le_disk_en_read_only_sous_linux'
 excerpt: Find out how to avoid read-only switching on your Linux VM disk
-section: Virtual machine management
-order: 10
 updated: 2020-11-18
 ---
 

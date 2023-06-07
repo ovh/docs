@@ -1,9 +1,6 @@
 ---
 title: 'Alojamento Cloud Web: primeira utilização'
-slug: primeiros-passos-com-cloud-web
 excerpt: 'Saiba como começar num plano de alojamento Cloud Web'
-section: Introdução
-order: 01
 updated: 2022-05-04
 ---
 
@@ -113,7 +110,7 @@ Por isso, sugerimos que tenha muita atenção durante a introdução das informa
 > Se adicionou um domínio considerado externo, deverá parametrizar um campo TXT chamado **ovhcontrol** na sua configuração DNS. Ele permitirá que a OVHcloud confirme que a operação é legítima. Portanto, é um passo indispensável e, se não for realizado, a operação será anulada. 
 >
 
-Repita esta manipulação se deseja adicionar vários domínios ao seu alojamento Cloud Web. Para obter mais informação acerca da adição de um domínio enquanto Multisite, consulte o guia: [Partilhar o alojamento entre vários sites](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external}.
+Repita esta manipulação se deseja adicionar vários domínios ao seu alojamento Cloud Web. Para obter mais informação acerca da adição de um domínio enquanto Multisite, consulte o guia: [Partilhar o alojamento entre vários sites](/pages/web/hosting/multisites_configure_multisite){.external}.
 
 ![cloudweb](images/cloud-web-first-steps-step3.png){.thumbnail}
 
@@ -127,7 +124,7 @@ Esta solução permite-lhe beneficiar de uma estrutura de site pronta a usar ain
 
 Se optar pela utilização dos nossos módulos em 1 clique, e ainda posicionado no alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external} em causa, clique no separador `Módulos em 1 clique`{.action} e, a seguir, em `Adicionar um módulo`{.action}. Então, poderá iniciar uma instalação em modo «simples» (não personalizável) ou em modo «avançado» (com a possibilidade de personalizar certos elementos).
 
-Para mais informações sobre os módulos, consulte o guia: [Instalar um site com os módulos em 1 clique](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/){.external}.
+Para mais informações sobre os módulos, consulte o guia: [Instalar um site com os módulos em 1 clique](/pages/web/hosting/cms_install_1_click_modules){.external}.
 
 > [!primary]
 >
@@ -142,13 +139,13 @@ Quer se trate de um novo site ou da migração de um site já existente, a insta
 
 Se optou pela instalação manual, deverá ter na sua posse o conjunto dos ficheiros do site ou da aplicação que deseja instalar, assim como (se for necessário para o seu bom funcionamento) as informações de uma base de dados criada previamente no seu alojamento Cloud Web. No quadro da migração de um site, assegure-se de ter uma cópia integral deste último.
 
-Como os projetos podem variar muito entre si, não existe um processo universal a seguir, mas os nossos guias [Colocar o meu website online](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/){.external} e [Como migrar um site e e-mails para a OVHcloud?](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external} podem ajudá-lo quanto às operações a realizar.
+Como os projetos podem variar muito entre si, não existe um processo universal a seguir, mas os nossos guias [Colocar o meu website online](/pages/web/hosting/hosting_how_to_get_my_website_online){.external} e [Como migrar um site e e-mails para a OVHcloud?](/pages/web/hosting/hosting_migrating_to_ovh){.external} podem ajudá-lo quanto às operações a realizar.
 
 ### 6 - Alterar a configuração do domínio
 
 Por esta altura, o seu site está alojado nos serviços da OVHcloud e os endereços de e-mail estão criados. Se estes últimos ainda não estiverem operacionais, é possível que a configuração do domínio não esteja correta. Se for esse o caso, ou se não tiver a certeza, siga as instruções abaixo.
 
-Contudo, repare que, se está a migrar os seus serviços para a OVHcloud, as manipulações ligadas aos DNS podem provocar uma indisponibilidade dos serviços se elas não foram efetuadas num momento adequado. Como tal, deverá seguir as instruções indicadas no guia [Transferir o meu site para a OVHcloud](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external}, e modificar os servidores DNS do seu domínio no final do processo.
+Contudo, repare que, se está a migrar os seus serviços para a OVHcloud, as manipulações ligadas aos DNS podem provocar uma indisponibilidade dos serviços se elas não foram efetuadas num momento adequado. Como tal, deverá seguir as instruções indicadas no guia [Transferir o meu site para a OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}, e modificar os servidores DNS do seu domínio no final do processo.
 
 #### 6.1. Consultar registos DNS do alojamento OVHcloud 
 
@@ -175,7 +172,7 @@ Siga as indicações abaixo para saber onde efetuar estas manipulações:
 
 |Configuração DNS utilizada|Onde realizar as manipulações?|
 |---|---|
-|OVHcloud|Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, posicionado na secção `Domínios`{.action}, no domínio em causa. No separador `Zona DNS`{.action}, verifique e altere as informações necessárias. Se necessário, pode recorrer ao guia [Alojamento Partilhado: como editar a minha zona DNS?](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}.|
+|OVHcloud|Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, posicionado na secção `Domínios`{.action}, no domínio em causa. No separador `Zona DNS`{.action}, verifique e altere as informações necessárias. Se necessário, pode recorrer ao guia [Alojamento Partilhado: como editar a minha zona DNS?](/pages/web/domains/dns_zone_edit){.external}.|
 |Outra|No sistema do agente responsável pela gestão do seu domínio. Sugerimos que o contacte se sentir dificuldades durante as manipulações.|
 
 Uma vez modificada a configuração DNS do domínio, é necessário um tempo máximo de propagação de 24 horas até as alterações serem efetivas. Se adicionou vários domínios ao seu alojamento Cloud Web enquanto Multisite, deverá realizar estas duas manipulações para cada um deles. 
@@ -190,21 +187,21 @@ Caso precise de ajuda relativamente às funcionalidades do seu site, pedimos-lhe
 
 Os seus endereços de e-mail podem ser usados com o Roundcube, um serviço de webmail incluído na oferta de alojamento OVHcloud. Para isso, a OVHcloud disponibiliza uma aplicação online (webmail): RoundCube. Aceda a <https://www.ovh.pt/mail/> e preencha os dados associados ao endereço de e-mail criado através do sistema OVHcloud.
 
-Para saber mais sobre o RoundCube, consulte o guia: [Utilização do RoundCube](https://docs.ovh.com/pt/emails/webmail_guia_de_utilizacao_do_roundcube/){.external} Se desejar associar o seu endereço de e-mail a um software (cliente) de correio eletrónico no computador, smartphone ou um tablet, consulte a página: <https://docs.ovh.com/pt/emails/>.
+Para saber mais sobre o RoundCube, consulte o guia: [Utilização do RoundCube](/pages/web/emails/email_roundcube){.external} Se desejar associar o seu endereço de e-mail a um software (cliente) de correio eletrónico no computador, smartphone ou um tablet, consulte a página: </products/web-cloud-email-collaborative-solutions-mx-plan>.
 
 ## Quer saber mais? Veja os guias abaixo
 
-[Transferir o meu site para a OVHcloud](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external} (Versão PT disponível em breve)
+[Transferir o meu site para a OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external} (Versão PT disponível em breve)
 
-[Colocar o meu site online](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/){.external}
+[Colocar o meu site online](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
-[Instalar um CMS com os Módulos 1 clique](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/){.external}
+[Instalar um CMS com os Módulos 1 clique](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Partilhar o alojamento entre vários sites](https://docs.ovh.com/ie/en/hosting/multisites-configuring-multiple-websites/){.external}
+[Partilhar o alojamento entre vários sites](/pages/web/hosting/multisites_configure_multisite){.external}
 
-[Como criar um endereço de e-mail](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external}
+[Como criar um endereço de e-mail](/pages/web/emails/email_creation){.external}
 
-[Utilização do RoundCube](https://docs.ovh.com/pt/emails/webmail_guia_de_utilizacao_do_roundcube/){.external}
+[Utilização do RoundCube](/pages/web/emails/email_roundcube){.external}
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 

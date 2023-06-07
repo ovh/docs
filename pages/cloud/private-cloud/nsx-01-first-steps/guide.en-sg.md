@@ -1,9 +1,6 @@
 ---
 title: Getting started with NSX
-slug: nsx-first-steps
 excerpt: Discover NSX, the Software-Defined Networking (SDN) solution provided by VMware.
-section: NSX
-order: 01
 updated: 2023-02-27
 ---
 
@@ -77,7 +74,7 @@ The diagram below shows the network topology from top to bottom:
 - The North-South gateway (**ovh-T0-gw**) that provides the link between the physical network (Internet and VLAN on vRack) and the internal networks (Overlays) of your cluster.
 - The connection between the **ovh-T0-gw** and **ovh-T1-gw** gateways is via IP addresses reserved for this purpose.
 - The East-West gateway (**ovh-T1-gw**) that manages communications between the cluster’s internal networks (overlay segments). You can also make connections with VLANs on vRacks.
--  **ovh-segment-nsxpublic** which is a network segment connected to the OVHcloud public network on a VLAN, it contains the network of public addresses usable for customer configurations. Click the rectangular icon below to view this segment. You can find more information about segments in this guide: [Segment management in NSX](https://docs.ovh.com/sg/en/private-cloud/nsx-segment-management).
+-  **ovh-segment-nsxpublic** which is a network segment connected to the OVHcloud public network on a VLAN, it contains the network of public addresses usable for customer configurations. Click the rectangular icon below to view this segment. You can find more information about segments in this guide: [Segment management in NSX](/pages/cloud/private-cloud/nsx-02-segment-management).
 
 ![02 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
 
@@ -148,6 +145,6 @@ You have just seen the default configuration. You can refer to the other OVHclou
 
 ## Go further <a name="gofurther"></a>
 
-[Managing segments in NSX](https://docs.ovh.com/sg/en/private-cloud/nsx-segment-management)
+[Managing segments in NSX](/pages/cloud/private-cloud/nsx-02-segment-management)
 
 Join our community of users on <https://community.ovh.com/en/>.

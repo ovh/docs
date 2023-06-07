@@ -1,9 +1,6 @@
 ---
 title: Que faire en cas de page « 403 forbidden » ?
 excerpt: Découvrez comment remettre votre site en ligne quand il affiche une page « 403 forbidden »
-slug: diagnostic-403-forbidden
-section: Diagnostic
-order: 08
 updated: 2022-06-16
 ---
 
@@ -29,14 +26,14 @@ Il peut aussi arriver que, suite à une détection d'anomalies, nos robots de s�
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) OVHcloud.
-- Disposer des [identifiants de connexion](../connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter) à l'espace de stockage de votre hébergement.
+- Disposer des [identifiants de connexion](/pages/web/hosting/ftp_connection#etape-1-recuperer-les-informations-necessaires-pour-se-connecter) à l'espace de stockage de votre hébergement.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 ## En pratique
 
 ### Étape 1 : analyser la situation
 
-Si la page **« 403 forbidden »** est apparue suite à une modification erronée de votre site, [restaurez tout ou partie de l'espace de stockage de votre hébergement](../restauration-ftp-filezilla-espace-client/) à une date antérieure.
+Si la page **« 403 forbidden »** est apparue suite à une modification erronée de votre site, [restaurez tout ou partie de l'espace de stockage de votre hébergement](/pages/web/hosting/ftp_save_and_backup) à une date antérieure.
 
 Si les sauvegardes disponibles ne vous permettent pas de rétablir l'accès à votre site, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/).
 
@@ -50,8 +47,8 @@ Vérifiez tout d'abord la sécurité de votre/vos poste(s) informatique(s) :
 
 - Effectuez les mises à jour de sécurité ;
 - Vérifiez également qu'un antivirus est installé, mettez-le à jour et lancez un scan complet. Si vous n'en possédez aucun, consultez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) avant toute installation ;
-- Modifiez l'ensemble de vos mots de passe locaux, notamment ceux de vos adresses e-mail, en respectant ces [bonnes pratiques](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/#generer-un-bon-mot-de-passe) ;
-- Modifiez les mots de passe de l'ensemble de vos services OVHcloud, notamment de votre [base de données](../modifier-mot-de-passe-base-de-donnees/) et de l'accès à votre [espace de stockage FTP](../modifier-mot-de-passe-utilisateur-ftp/).
+- Modifiez l'ensemble de vos mots de passe locaux, notamment ceux de vos adresses e-mail, en respectant ces [bonnes pratiques](/pages/account/customer/manage-ovh-password#generer-un-bon-mot-de-passe) ;
+- Modifiez les mots de passe de l'ensemble de vos services OVHcloud, notamment de votre [base de données](../modifier-mot-de-passe-base-de-donnees/) et de l'accès à votre [espace de stockage FTP](/pages/web/hosting/ftp_change_password).
 
 > [!warning]
 >
@@ -68,14 +65,14 @@ Notez tout d'abord la date d'envoi de l'e-mail d'OVHcloud indiquant la désactiv
 
 #### Cas n°1 : votre hébergement a été désactivé il y a moins de deux semaines
 
-Si votre hébergement a été fermé il y a moins de deux semaines et qu'il ne contient qu'un seul site, restaurez votre espace de stockage en suivant les instructions de ce [guide](../restauration-ftp-filezilla-espace-client/#restaurer-lespace-de-stockage-depuis-lespace-client).
+Si votre hébergement a été fermé il y a moins de deux semaines et qu'il ne contient qu'un seul site, restaurez votre espace de stockage en suivant les instructions de ce [guide](/pages/web/hosting/ftp_save_and_backup#restaurer-lespace-de-stockage-depuis-lespace-client).
 
-Si votre hébergement a été fermé il y a moins de deux semaines et qu'il contient plusieurs sites, restaurez uniquement le ou les dossiers contenant les fichiers illégitimes en suivant les instructions de ce [guide](../restauration-ftp-filezilla-espace-client/#restaurer-un-fichier-depuis-un-logiciel-ou-une-interface).
+Si votre hébergement a été fermé il y a moins de deux semaines et qu'il contient plusieurs sites, restaurez uniquement le ou les dossiers contenant les fichiers illégitimes en suivant les instructions de ce [guide](/pages/web/hosting/ftp_save_and_backup#restaurer-un-fichier-depuis-un-logiciel-ou-une-interface).
 
 > [!warning]
 >
 > La restauration seule de votre espace de stockage ne suffira pas à corriger de potentielles failles de sécurité préalablement présentes sur votre site.
-> Pour identifier ces failles de sécurité, vous pouvez analyser les [« logs web »](https://docs.ovh.com/ca/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/#logs) de votre hébergement ou faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) afin de réaliser un audit de sécurité de vos solutions.
+> Pour identifier ces failles de sécurité, vous pouvez analyser les [« logs web »](/pages/web/hosting/logs_and_statistics#logs) de votre hébergement ou faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) afin de réaliser un audit de sécurité de vos solutions.
 >
 
 #### Cas n°2 : votre hébergement a été désactivé il y a plus de deux semaines
@@ -93,7 +90,7 @@ Si votre hébergement a été fermé il y a plus de deux semaines, contactez un 
 
 > [!primary]
 >
-> Si vous souhaitez installer le logiciel **FileZilla** afin de manipuler les fichiers de votre site, suivez les instructions de ce [guide](../mutualise-guide-utilisation-filezilla/).
+> Si vous souhaitez installer le logiciel **FileZilla** afin de manipuler les fichiers de votre site, suivez les instructions de ce [guide](/pages/web/hosting/ftp_filezilla_user_guide).
 >
 
 Ouvrez le logiciel FileZilla puis connectez-vous à votre espace de stockage. Cliquez ensuite sur `Serveur`{.action} dans la barre de menu, puis sur `Entrer une commande FTP`{.action} (l'intitulé peut être légèrement différent suivant la version de FileZilla que vous utilisez) :
@@ -114,7 +111,7 @@ Une réponse **« 200 Permissions changed on / »** confirme que la manipulation
 
 Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez-vous dans la partie `Web Cloud`{.action} puis `Hébergements`{.action} et cliquez sur l'onglet `FTP-SSH`{.action} de l'hébergement concerné.
 
-Cliquez ensuite sur le bouton `FTP Explorer`{.action} et connectez-vous à votre espace de stockage en suivant les instructions de ce [guide](../connexion-espace-stockage-ftp-hebergement-web/#1-connexion-via-le-ftp-explorer). Cliquez sur le bouton `Avancé`{.action} puis sur le bouton `Go`{.action} à côté de « Envoyer des commandes FTP arbitraires au serveur FTP ».
+Cliquez ensuite sur le bouton `FTP Explorer`{.action} et connectez-vous à votre espace de stockage en suivant les instructions de ce [guide](/pages/web/hosting/ftp_connection#1-connexion-via-le-ftp-explorer). Cliquez sur le bouton `Avancé`{.action} puis sur le bouton `Go`{.action} à côté de « Envoyer des commandes FTP arbitraires au serveur FTP ».
 
 ![net2ftp](images/net2ftp.png){.thumbnail}
 
@@ -126,11 +123,11 @@ Une réponse **« 200 Permissions changed on / »** confirme que la manipulation
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
-[Conseils suite au piratage de votre site WordPress](../piratage-de-votre-site-wordpress-conseils-et-cas-dusages/)
+[Conseils suite au piratage de votre site WordPress](/pages/web/hosting/cms_what_to_do_if_your_site_is_hacked)
 
-[Activation du pare-feu applicatif](../activation-pare-feu-applicatif/)
+[Activation du pare-feu applicatif](/pages/web/hosting/multisites_activating_application_firewall)
 
-[Changer la version de PHP de son hébergement web](../configurer-le-php-sur-son-hebergement-web-mutu-2014/)
+[Changer la version de PHP de son hébergement web](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 

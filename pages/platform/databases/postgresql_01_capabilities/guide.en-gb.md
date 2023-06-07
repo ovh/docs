@@ -1,9 +1,6 @@
 ---
 title: PostgreSQL - Capabilities and Limitations
-slug: postgresql/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for PostgreSQL
-section: PostgreSQL - Guides
-order: 010
 updated: 2023-05-03
 ---
 
@@ -149,7 +146,7 @@ So for example on a server with 7 GB memory, you will get approximately 200 conn
 
 #### Advanced parameters
 
-You can further customise your PostgreSQL by using advanced parameters. See the [Advanced parameters references documentation](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/advanced-parameters-references/) for more information on the supported parameters.
+You can further customise your PostgreSQL by using advanced parameters. See the [Advanced parameters references documentation](/pages/platform/databases/postgresql_10_advanced_parameters_references) for more information on the supported parameters.
 
 #### Backups
 

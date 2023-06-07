@@ -1,8 +1,6 @@
 ---
 title: 'Récupérer et déposer des données sur un serveur dédié via SFTP'
-slug: deposer-et-recuperer-donnees-via-sftp
 excerpt: 'Découvrez comment transférer facilement des données depuis et vers votre serveur dédié'
-section: Tutoriel
 updated: 2021-05-18
 ---
 
@@ -29,9 +27,9 @@ Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH
 
 ### Utiliser FileZilla pour récupérer et déposer vos données
 
-Le protocole SFTP peut être utilisé pour transférer des fichiers via une connexion sécurisée (SSH). Il existe deux possibilités pour ce scénario : soit vous disposez d'un accès normal à votre serveur, soit vous vous y connectez en [mode rescue](../ovh-rescue/).
+Le protocole SFTP peut être utilisé pour transférer des fichiers via une connexion sécurisée (SSH). Il existe deux possibilités pour ce scénario : soit vous disposez d'un accès normal à votre serveur, soit vous vous y connectez en [mode rescue](/pages/cloud/dedicated/rescue_mode).
 
-Par défaut, un serveur utilisant un système d'exploitation GNU/Linux aura un accès SSH via le port 22. Cependant, vous avez peut-être déjà modifié ce port (par exemple en suivant [notre guide pour sécuriser un serveur dédié](../securiser-un-serveur-dedie/)).
+Par défaut, un serveur utilisant un système d'exploitation GNU/Linux aura un accès SSH via le port 22. Cependant, vous avez peut-être déjà modifié ce port (par exemple en suivant [notre guide pour sécuriser un serveur dédié](/pages/cloud/dedicated/securing-a-dedicated-server)).
 
 #### **Si vous avez accès à votre serveur**
 
@@ -51,7 +49,7 @@ La progression du transfert de données s'affiche alors en bas de l'interface de
 
 #### **Si votre serveur est en mode rescue**
 
-En mode rescue, vous devez d'abord monter votre partition. Pour ce faire, vous pouvez suivre les instructions indiquées dans [ce guide](../ovh-rescue/).
+En mode rescue, vous devez d'abord monter votre partition. Pour ce faire, vous pouvez suivre les instructions indiquées dans [ce guide](/pages/cloud/dedicated/rescue_mode).
 
 Une fois la partition montée, utilisez le client FileZilla de la même manière que décrite ci-dessus, en utilisant le port 22 pour la connexion à votre serveur.
 
@@ -66,8 +64,8 @@ Si vous avez correctement créé le point de montage, les données se trouvent d
 
 ## Aller plus loin
 
-[Activer et utiliser le mode rescue](../ovh-rescue/)
+[Activer et utiliser le mode rescue](/pages/cloud/dedicated/rescue_mode)
 
-[Sécuriser un serveur dédié](../securiser-un-serveur-dedie/)
+[Sécuriser un serveur dédié](/pages/cloud/dedicated/securing-a-dedicated-server)
 
 Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -1,10 +1,7 @@
 ---
 title: 'Proteger a minha conta OVHcloud e gerir as minhas informações pessoais'
 excerpt: 'Saiba como otimizar a segurança da sua conta OVHcloud, gerir os seus dados pessoais e delegar o acesso à sua conta.'
-slug: saber_tudo_sobre_o_identificador_de_cliente
 legacy_guide_number: g2123
-section: Introdução
-order: 3
 updated: 2021-07-01
 ---
 
@@ -25,11 +22,11 @@ A Área de Cliente OVHcloud permite-lhe também gerir os seus dados pessoais e d
 
 ## Requisitos
 
-- Ter criado a [sua conta OVHcloud](https://docs.ovh.com/pt/customer/criar-conta-ovhcloud)
+- Ter criado a [sua conta OVHcloud](/pages/account/customer/ovhcloud-account-creation)
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 > [!primary]
-> Em caso de dificuldades de ligação à sua conta, consulte a secção "[Não consigo conectar](https://docs.ovh.com/pt/customer/conectar-se-espaco-cliente-ovhcloud/#login-failure)-me" do nosso manual "[Aceder à Área de Cliente OVHcloud](https://docs.ovh.com/pt/customer/conectar-se-espaco-cliente-ovhcloud/)".
+> Em caso de dificuldades de ligação à sua conta, consulte a secção "[Não consigo conectar](/pages/account/customer/ovhcloud-account-login#login-failure)-me" do nosso manual "[Aceder à Área de Cliente OVHcloud](/pages/account/customer/ovhcloud-account-login)".
 >
 
 ## Instruções
@@ -48,11 +45,11 @@ As boas práticas listadas abaixo devem ser aplicadas assim que criar a sua cont
 
 A segurança dos seus serviços e dados depende da eficácia da sua palavra-passe. Este deve ser **complexo, único e regularmente** renovado.
 
-Encontre todas as nossas recomendações sobre as palavras-passe no nosso manual "[Alterar a palavra-passe da sua conta](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/)".
+Encontre todas as nossas recomendações sobre as palavras-passe no nosso manual "[Alterar a palavra-passe da sua conta](/pages/account/customer/manage-ovh-password)".
 
 #### Guardar a sua password
 
-Se ainda não o fez, guarde a sua palavra-passe num [gestor de palavras-passe](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/#utilizar-um-gestor-de-palavras-passe).
+Se ainda não o fez, guarde a sua palavra-passe num [gestor de palavras-passe](/pages/account/customer/manage-ovh-password#utilizar-um-gestor-de-palavras-passe).
 
 > [!primary]
 > Os programas **Keepass** e **Bitwarden** são gestores de palavras-passe gratuitas e sem direitos.
@@ -79,7 +76,7 @@ Clique então, no quadro `O meu perfil` no botão `...`{.action} e em `Editar o 
 
 A dupla autenticação permite reforçar a segurança da sua conta OVHcloud.
 
-Encontrará todos os detalhes para o ativar no nosso manual "[Proteger a sua conta OVHcloud com a dupla autenticação](https://docs.ovh.com/pt/customer/proteger-a-sua-conta-com-uma-2FA/)".
+Encontrará todos os detalhes para o ativar no nosso manual "[Proteger a sua conta OVHcloud com a dupla autenticação](/pages/account/customer/secure-ovhcloud-account-with-2fa)".
 
 > [!primary]
 > A ativação da dupla autenticação na sua conta OVHcloud é um pré-requisito obrigatório para estar em conformidade com [o alojamento dos dados de saúde em França (HDS)](https://www.ovhcloud.com/pt/enterprise/certification-conformity/hds/).
@@ -156,26 +153,26 @@ Desta forma, não só o seu próprio acesso à conta ficará protegido pela dupl
 
 Enquanto utilizador principal da conta, é o gestor dos utilizadores e dos seus direitos.
 
-Para saber mais, consulte o [guia sobre a gestão dos utilizadores](https://docs.ovh.com/pt/customer/gestao-utilizadores/).
+Para saber mais, consulte o [guia sobre a gestão dos utilizadores](/pages/account/customer/ovhcloud-users-management).
 
 #### Gerir contactos
 
-É possível delegar noutro identificador de cliente a gestão administrativa **ou** técnica **ou** de faturação de um ou vários serviços associados à sua conta. Para saber mais, consulte o [guia sobre gestão de contactos](https://docs.ovh.com/pt/customer/gestao_dos_contactos/).
+É possível delegar noutro identificador de cliente a gestão administrativa **ou** técnica **ou** de faturação de um ou vários serviços associados à sua conta. Para saber mais, consulte o [guia sobre gestão de contactos](/pages/account/customer/managing_contacts).
 
 ### O que fazer em caso de suspeição de usurpação de identidade?
 
-Se receber um e-mail a dar-lhe conta de um acesso incomum à sua Área de Cliente, deve [alterar imediatamente a palavra-passe da sua conta](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/#alterar-a-sua-palavra-passe) e [protegê-la por meio de uma dupla autenticação](https://docs.ovh.com/pt/customer/proteger-a-sua-conta-com-uma-2FA/).
+Se receber um e-mail a dar-lhe conta de um acesso incomum à sua Área de Cliente, deve [alterar imediatamente a palavra-passe da sua conta](/pages/account/customer/manage-ovh-password#alterar-a-sua-palavra-passe) e [protegê-la por meio de uma dupla autenticação](/pages/account/customer/secure-ovhcloud-account-with-2fa).
 
 Se detetar uma atividade suspeita na sua conta, [contacte o Apoio ao Cliente OVHcloud](https://www.ovhcloud.com/pt/contact/) em +351 213 155 642 para que as nossas equipas o ajudem nas diligências a efetuar.
 
 ## Saiba mais
 
-[Alterar a palavra-passe da sua conta](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/)
+[Alterar a palavra-passe da sua conta](/pages/account/customer/manage-ovh-password)
 
-[Proteger a sua conta OVHcloud com a dupla autenticação](https://docs.ovh.com/pt/customer/proteger-a-sua-conta-com-uma-2FA/)
+[Proteger a sua conta OVHcloud com a dupla autenticação](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
-[Aceder à Área de Cliente OVHcloud](https://docs.ovh.com/pt/customer/conectar-se-espaco-cliente-ovhcloud/)
+[Aceder à Área de Cliente OVHcloud](/pages/account/customer/ovhcloud-account-login)
 
-[Em caso de falha de ligação à Área de Cliente](https://docs.ovh.com/pt/customer/conectar-se-espaco-cliente-ovhcloud/#login-failure)
+[Em caso de falha de ligação à Área de Cliente](/pages/account/customer/ovhcloud-account-login#login-failure)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

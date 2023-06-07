@@ -1,9 +1,6 @@
 ---
 title: Data - Concept and best practices
-slug: data
 excerpt: Learn the concept behind AI Tools data
-section: General information
-order: 105
 updated: 2022-04-11
 ---
 
@@ -21,8 +18,8 @@ updated: 2022-04-11
 
 There are two ways to manage your data:
 
-- You can upload and download data from your local environment using the CLI, see [how to install `ovhai` CLI](https://docs.ovh.com/sg/en/publiccloud/ai/cli/install-client). Next, find out how to [manage your data with the CLI](https://docs.ovh.com/sg/en/publiccloud/ai/cli/data-cli/).
-- You can use the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), see [create data container](https://docs.ovh.com/sg/en/storage/object-storage/pcs/create-container/).
+- You can upload and download data from your local environment using the CLI, see [how to install `ovhai` CLI](/pages/platform/ai/cli_10_howto_install_cli). Next, find out how to [manage your data with the CLI](/pages/platform/ai/cli_16_commands_reference_data).
+- You can use the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), see [create data container](/pages/cloud/storage/object_storage/pcs_create_container).
 
 ## How it works
 
@@ -106,11 +103,11 @@ User can enable a `cache` feature that allow jobs and notebooks to re-use availa
 
 ## Going further
 
-- You can check the [OVHcloud documentation on how to create a data container](https://docs.ovh.com/sg/en/storage/object-storage/pcs/create-container/).
+- You can check the [OVHcloud documentation on how to create a data container](/pages/cloud/storage/object_storage/pcs_create_container).
 
-- You can check how to [use your data in an AI Notebook](https://docs.ovh.com/sg/en/publiccloud/ai/cli/access-object-storage-data/).
+- You can check how to [use your data in an AI Notebook](/pages/platform/ai/cli_17_how_to_cli_data_notebooks).
 
-- You can check how to [launch an AI Training job with attached volumes](https://docs.ovh.com/sg/en/publiccloud/ai/cli/run-job-cli/).
+- You can check how to [launch an AI Training job with attached volumes](/pages/platform/ai/cli_12_howto_run_job_cli).
 
 ## Feedback
 

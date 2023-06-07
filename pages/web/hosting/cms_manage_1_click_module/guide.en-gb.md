@@ -1,9 +1,6 @@
 ---
 title: How to manage your 1-click module
 excerpt: Find out how to manage your 1-click module in the OVHcloud Control Panel
-slug: 1-click-module-management
-section: CMS
-order: 02
 updated: 2022-09-05
 ---
 
@@ -23,8 +20,8 @@ The 1-click modules are a quick and easy way to install an online website creati
 
 ## Requirements
 
-- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) that allows you to install a 1-click module (only the free [Start10M plan](https://docs.ovh.com/gb/en/hosting/activate-start10m/) does not provide this feature)
-- A 1-click module on your Web Hosting plan (If you did not install one yet, follow the instructions in this [guide](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules/))
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) that allows you to install a 1-click module (only the free [Start10M plan](/pages/web/hosting/activate_start10m) does not provide this feature)
+- A 1-click module on your Web Hosting plan (If you did not install one yet, follow the instructions in this [guide](/pages/web/hosting/cms_install_1_click_modules))
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
@@ -37,7 +34,7 @@ Next, click on the `...`{.action} button to the right of the line related to you
 
 > [!primary]
 >
-> If your website does not display properly after this, please refer to the OVHcloud Web Hosting guides in the [Troubleshooting](https://docs.ovh.com/gb/en/hosting/) section.
+> If your website does not display properly after this, please refer to the OVHcloud Web Hosting guides in the [Troubleshooting](/products/web-cloud-hosting) section.
 >
 
 ### Access the administrator interface
@@ -104,7 +101,7 @@ Then, click on the `...`{.action} button to the right of the line related to you
 
 > [!warning]
 >
-> Backing up your data is an essential part of the [securing of your websites](https://docs.ovh.com/gb/en/hosting/secure-website/). We recommend you to download regularly your data backup on a local device, such as an USB drive or external hard drive, following the instructions in this [guide](https://docs.ovh.com/gb/en/hosting/export-a-website/).
+> Backing up your data is an essential part of the [securing of your websites](/pages/web/hosting/secure_your_website). We recommend you to download regularly your data backup on a local device, such as an USB drive or external hard drive, following the instructions in this [guide](/pages/web/hosting/exporter-son-site-web).
 >
 
 #### Step 1: Identify the database linked to your module <a name="step1"></a>
@@ -115,7 +112,7 @@ If you have only one database in this part of your Control Panel and you do not 
 
 Otherwise, go to the `Multisite`{.action} tab. Note the `Root folder` name: this is the directory where the files that make up your 1-click module are located on the FTP server.
 
-Then log on to the [FTP space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting plan. Open the `Root folder` found earlier in the `Multisite`{.action} tab and browse to the configuration file for your module:
+Then log on to the [FTP space](/pages/web/hosting/ftp_connection) of your hosting plan. Open the `Root folder` found earlier in the `Multisite`{.action} tab and browse to the configuration file for your module:
 
 - WordPress: **"wp-config.php"** (the database name appears as **"DB_NAME"**).
 - Joomla!: **"configuration.php"** (the database name appears under **"public $db"**).
@@ -124,7 +121,7 @@ Then log on to the [FTP space](https://docs.ovh.com/gb/en/hosting/log-in-to-stor
 
 #### Step 2: Back up your data
 
-To back up your website, follow the instructions of this [guide](https://docs.ovh.com/gb/en/hosting/export-a-website/) to retrieve its files from both the FTP space on your hosting plan and its database.
+To back up your website, follow the instructions of this [guide](/pages/web/hosting/exporter-son-site-web) to retrieve its files from both the FTP space on your hosting plan and its database.
 
 #### Step 3: Delete your module
 
@@ -139,7 +136,7 @@ Then click on the `...`{.action} button to the right of the line related to your
 
 > [!warning]
 >
-> Deleting your 1-click module **will not automatically delete its database**. If you launch the installation of a new CMS without having previously deleted the database from the previous one and if your hosting plan does not allow the automatic creation of another database, the message "[An error has occurred loading the information (You need at least one free database)](https://docs.ovh.com/gb/en/hosting/error-frequently-1-click-modules/#an-error-has-occurred-loading-the-information-you-need-at-least-one-free-database)" will appear in your Control Panel.
+> Deleting your 1-click module **will not automatically delete its database**. If you launch the installation of a new CMS without having previously deleted the database from the previous one and if your hosting plan does not allow the automatic creation of another database, the message "[An error has occurred loading the information (You need at least one free database)](/pages/web/hosting/diagnostic_errors_module1clic#an-error-has-occurred-loading-the-information-you-need-at-least-one-free-database)" will appear in your Control Panel.
 >
 > If you have a [Personal Hosting](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) subscription or if you have already created all four databases of your [Professional Hosting](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/) or [Performance Hosting](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/), you will need to delete the database identified in [step 1](#step1) **BEFORE** creating a new 1-click module.
 >
@@ -150,7 +147,7 @@ Before attempting to install a new module again, verify that the previously requ
 
 ### Best practices
 
-Secure your website by following the instructions in this [guide](https://docs.ovh.com/gb/en/hosting/secure-website/).
+Secure your website by following the instructions in this [guide](/pages/web/hosting/secure_your_website).
 
 Add CAPTCHA-type verification tools to the forms on your website.
 
@@ -163,7 +160,7 @@ Do not install plugins or templates that have not been recommended by the offici
 
 ## Go further <a name="go-further"></a>
 
-[Resolving the most common 1-click module errors](https://docs.ovh.com/gb/en/hosting/error-frequently-1-click-modules/)
+[Resolving the most common 1-click module errors](/pages/web/hosting/diagnostic_errors_module1clic)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 

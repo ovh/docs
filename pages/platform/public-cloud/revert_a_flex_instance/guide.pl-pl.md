@@ -1,8 +1,6 @@
 ---
 title: Zmiana instancji flex na instancję klasyczną
-slug: zmiana-instancji-flex
 excerpt: Dowiedz się, jak zmienić instancję flex w interfejsie OpenStack Horizon
-section: Zarządzanie w interfejsie Horizon
 updated: 2021-11-15
 ---
 
@@ -22,8 +20,8 @@ Dzięki stale zmieniającej się infrastrukturze możesz zwiększyć przestrzeń
 
 ## Wymagania
 
-- Posiadanie [instancji Public Cloud](../public-cloud-pierwsze-kroki/#krok-3-tworzenie-instancji) typu *flex*
-- [Utworzenie dostępu do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/horizon/)
+- Posiadanie [instancji Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#krok-3-tworzenie-instancji) typu *flex*
+- [Utworzenie dostępu do interfejsu Horizon](/pages/platform/public-cloud/introducing_horizon)
 
 ## W praktyce
 
@@ -63,7 +61,7 @@ Po zakończeniu procesu Twoja instancja zostanie przeniesiona na model klasyczny
 
 Jeśli chcesz zmienić model *flex*, możesz to zrobić wykonując te same kroki, o których mowa [powyżej](#flavorchoice), wybierając szablon *flex* zamiast klasycznego szablonu. 
 
-Możesz również [edycja-konfiguracji-instancji](https://docs.ovh.com/pl/public-cloud/rozpoczecie_pracy_z_instancja_public_cloud/#edycja-konfiguracji-instancji) w Panelu klienta.
+Możesz również [edycja-konfiguracji-instancji](/pages/platform/public-cloud/first_steps_with_public_cloud_instance#edycja-konfiguracji-instancji) w Panelu klienta.
 
 ## Sprawdź również
  

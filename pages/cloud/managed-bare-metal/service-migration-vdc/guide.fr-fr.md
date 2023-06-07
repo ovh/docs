@@ -1,11 +1,8 @@
 ---
 title: Migrer une infrastructure vers un nouveau vDC
 routes:
-    canonical: 'https://docs.ovh.com/fr/private-cloud/sddc-migration/'
+    canonical: '/pages/cloud/private-cloud/service-migration'
 excerpt: Découvrez comment gérer tous les aspects de la migration d'une infrastructure vers un vDC
-slug: vdc-migration
-section: Premiers pas
-order: 6
 hidden: true
 updated: 2020-12-16
 ---
@@ -41,7 +38,7 @@ Ce guide utilise les notions d'**infrastructure d'origine** et de **vDC de desti
 
 ##### **Contexte de connexion au Managed Bare Metal**
 
-Pour vous connecter à la plateforme VMware, vous pouvez choisir de bloquer l'accès au vSphere par défaut. Pour cela, consultez notre guide sur la [politique d'accès au vCenter](../changer-la-politique-d-acces-au-vcenter/).
+Pour vous connecter à la plateforme VMware, vous pouvez choisir de bloquer l'accès au vSphere par défaut. Pour cela, consultez notre guide sur la [politique d'accès au vCenter](/pages/cloud/managed-bare-metal/vcenter-modify-access-policy).
 
 Suite au changement de politique d'accès, si celle-ci est passée en « restreinte », il faut bien sûr appliquer les mêmes IPs de connexion sur le vDC de destination que sur l'infrastructure d'origine.
 
@@ -49,13 +46,13 @@ Suite au changement de politique d'accès, si celle-ci est passée en « restrei
 
 Dans le cycle de vie de l'infrastructure d'origine, une liste d'utilisateurs peut avoir été créée pour des besoins métiers, ou des besoins organisationnels. Vous devez donc les créer à nouveau sur le vDC de destination et leur attribuer les droits adéquats, en fonction de la configuration du vDC de destination.
 
-Consultez à cet effet nos guides pour [changer les droits d'un utilisateur](../changer-les-droits-d-un-utilisateur/), [modifier le mot de passe d'un utilisateur](../changement-du-mot-de-passe-utilisateur/) et [associer un e-mail à un utilisateur](../associer-email-a-un-utilisateur/).
+Consultez à cet effet nos guides pour [changer les droits d'un utilisateur](../changer-les-droits-d-un-utilisateur/), [modifier le mot de passe d'un utilisateur](../changement-du-mot-de-passe-utilisateur/) et [associer un e-mail à un utilisateur](/pages/cloud/managed-bare-metal/vsphere-edit-user).
 
 ##### **Key Management Server (KMS)**
 
 Si des machines virtuelles sont protégées par un chiffrement et que cela constitue un prérequis pour le vDC de destination, il sera nécessaire de recréer le contexte de chiffrement sur ce dernier.
 
-Consultez donc notre guide sur l'[activation du chiffrement des machines virtuelles](../vm-encrypt/) afin d'activer le KMS sur le vDC de destination.
+Consultez donc notre guide sur l'[activation du chiffrement des machines virtuelles](/pages/cloud/managed-bare-metal/vm_encrypt) afin d'activer le KMS sur le vDC de destination.
 
 #### Réseau
 
@@ -66,7 +63,7 @@ Consultez donc notre guide sur l'[activation du chiffrement des machines virtuel
 > Des VMnetwork situés dans la même région ne pourront pas être inter-connectés dans un vRack.
 >
 
-Vous pouvez, dans le cadre d'une migration, lier vos services Managed Bare Metal au sein du même vRack. Consultez notre guide sur [l'utilisation du Private Cloud au sein d'un vRack](../managed-bare-metal-vrack/).
+Vous pouvez, dans le cadre d'une migration, lier vos services Managed Bare Metal au sein du même vRack. Consultez notre guide sur [l'utilisation du Private Cloud au sein d'un vRack](/pages/cloud/managed-bare-metal/using-vrack).
 
 ### Contexte VMware
 
@@ -74,7 +71,7 @@ Vous pouvez, dans le cadre d'une migration, lier vos services Managed Bare Metal
 
 ##### **Configuration de VMware HA**
 
-La migration implique de refaire la configuration du VMware High Availability (HA), notamment l'ordre et la priorité de boot. Consultez [notre guide sur sa configuration](../vmware-ha-high-availability/).
+La migration implique de refaire la configuration du VMware High Availability (HA), notamment l'ordre et la priorité de boot. Consultez [notre guide sur sa configuration](/pages/cloud/managed-bare-metal/vmware_ha_high_availability).
 
 Voici une liste d'éléments à prendre en compte :
 
@@ -89,7 +86,7 @@ L'applet de commande Powercli « Get-Cluster » renvoie des informations sur les
 
 ##### **Configuration de VMware DRS**
 
-La migration implique la reconfiguration de la fonction VMware DRS (Distributed Resource Scheduler), en particulier des règles d'affinité ou d'anti-affinité pour les groupes d'hôtes et de VMs. Consultez notre guide sur la [configuration de VMware DRS](../vmware-drs-distributed-ressource-scheduler-new/).
+La migration implique la reconfiguration de la fonction VMware DRS (Distributed Resource Scheduler), en particulier des règles d'affinité ou d'anti-affinité pour les groupes d'hôtes et de VMs. Consultez notre guide sur la [configuration de VMware DRS](/pages/cloud/managed-bare-metal/vmware_drs_distributed_ressource_scheduler).
 
 Voici une liste des éléments à prendre en compte:
 
@@ -128,7 +125,7 @@ Voici une liste des éléments à prendre en compte:
 
 ##### **Réseaux**
 
-La migration implique la recréation des groupes de ports virtuels de vRack sur le vDC de destination pour garantir la cohérence du réseau de VMs. Si des VLAN vRack sont en cours d'utilisation sur le vRack de l'infrastructure d'origine, ils peuvent être utilisés pour étendre le domaine L2 au vDC de destination afin de permettre un plan de migration plus échelonné. Pour plus d'informations, consultez notre guide sur l'[Utilisation du cloud privé dans un vRack](../managed-bare-metal-vrack/).
+La migration implique la recréation des groupes de ports virtuels de vRack sur le vDC de destination pour garantir la cohérence du réseau de VMs. Si des VLAN vRack sont en cours d'utilisation sur le vRack de l'infrastructure d'origine, ils peuvent être utilisés pour étendre le domaine L2 au vDC de destination afin de permettre un plan de migration plus échelonné. Pour plus d'informations, consultez notre guide sur l'[Utilisation du cloud privé dans un vRack](/pages/cloud/managed-bare-metal/using-vrack).
 
 Voici une liste des éléments à prendre en compte:
 
@@ -152,7 +149,7 @@ Voici une liste des éléments à prendre en compte:
 * Liste des VMs en cours de sauvegarde
 * Paramètres de sauvegarde
 
-Consultez notre guide pour [activer et utiliser Veeam Backup Managed](../veeam-backup-as-a-service/).
+Consultez notre guide pour [activer et utiliser Veeam Backup Managed](/pages/cloud/managed-bare-metal/veeam_backup_as_a_service).
 
 **Conseils d'automatisation :** L'API OVHcloud fournit des informations liées à chaque sauvegarde de VM via:
 

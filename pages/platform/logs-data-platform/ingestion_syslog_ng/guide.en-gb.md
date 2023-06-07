@@ -1,8 +1,5 @@
 ---
 title: Pushing logs with a forwarder - Syslog-ng 3.8+ (Linux)
-slug: logs-data-platform-how-to-log-your-linux
-order: 02
-section: Use cases
 updated: 2020-07-27
 ---
 

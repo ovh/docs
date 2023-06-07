@@ -1,9 +1,6 @@
 ---
 title: 'Publicar um site num alojamento web'
-slug: partilhado_colocar_o_meu_website_online
 excerpt: 'Saiba como publicar um site no seu alojamento web da OVH'
-section: Primeiros passos
-order: 06
 updated: 2022-07-21
 ---
 
@@ -26,7 +23,7 @@ Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja
 - Ter recebido o e-mail com a confirmação da instalação do alojamento web.
 - Ter um [domínio](https://www.ovhcloud.com/pt/domains/){.external} (endereço que permite identificar e aceder ao seu site).
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
-- Estar atualizado em [pagamentos](https://docs.ovh.com/pt/billing/gerir-faturas-ovhcloud/#pay-bills) e [renovações](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/#renewal-management) dos serviços associados (nome de domínio e alojamento web).
+- Estar atualizado em [pagamentos](/pages/account/billing/invoice_management#pay-bills) e [renovações](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) dos serviços associados (nome de domínio e alojamento web).
 
 ## Instruções
 
@@ -40,12 +37,12 @@ Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja
 
 - **Criar o seu próprio site**: esta solução é mais técnica e requer competências de programação, mas oferece a possibilidade de criar um projeto à medida.
 
-- **Migrar um site já existente para a OVHcloud**: esta solução pode revelar-se sensível se não desejar que se interrompa o acesso ao site. Se precisar de ajuda para o seu site, pode consultar o manual [“Como migrar um site e e-mails para a OVHcloud?”](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external}.
+- **Migrar um site já existente para a OVHcloud**: esta solução pode revelar-se sensível se não desejar que se interrompa o acesso ao site. Se precisar de ajuda para o seu site, pode consultar o manual [“Como migrar um site e e-mails para a OVHcloud?”](/pages/web/hosting/hosting_migrating_to_ovh){.external}.
 
 
 Depois de ter avaliado as diferentes possibilidades descritas acima, pode escolher entre duas opções:
 
-- **Pretende utilizar os módulos 1 clique**: siga as instruções do manual[”Como instalar um CMS para criar um site”](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/){.external}.
+- **Pretende utilizar os módulos 1 clique**: siga as instruções do manual[”Como instalar um CMS para criar um site”](/pages/web/hosting/cms_install_1_click_modules){.external}.
 
 - **Não pretende utilizar os módulos 1 clique**: terá de efetuar manualmente a instalação do site no alojamento. As informações presentes neste manual poderão ser úteis. No entanto, se precisar de ajuda, pode contactar um webmaster.
  
@@ -79,7 +76,7 @@ Estes elementos foram-lhe enviados por e-mail após a instalação do seu alojam
 
 ![siteinstallation](images/get-website-online-step1.png){.thumbnail}
 
-Aparecerá a informação relativa ao seu espaço de armazenamento e terá a possibilidade de encontrar os elementos necessários para aceder mesmo. Caso seja necessário, consulte o nosso manual: [“Aceder ao espaço de armazenamento do alojamento web”](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/){.external}. Caso tenha perdido a palavra-passe, consulte o manual [“Alterar a palavra-passe de um utilizador FTP”](https://docs.ovh.com/pt/hosting/alterar-palavra-passe-utilizador-ftp/){.external}.
+Aparecerá a informação relativa ao seu espaço de armazenamento e terá a possibilidade de encontrar os elementos necessários para aceder mesmo. Caso seja necessário, consulte o nosso manual: [“Aceder ao espaço de armazenamento do alojamento web”](/pages/web/hosting/ftp_connection){.external}. Caso tenha perdido a palavra-passe, consulte o manual [“Alterar a palavra-passe de um utilizador FTP”](/pages/web/hosting/ftp_change_password){.external}.
 
 Quando tiver obtido todos os elementos, o acesso ao espaço de armazenamento pode ser realizado de três formas:
 
@@ -157,12 +154,12 @@ Relembramos que, se encontrar dificuldades durante a publicação do site, será
 
 ## Quer saber mais?
 
-[Como migrar um site e e-mails para a OVH?](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external}
+[Como migrar um site e e-mails para a OVH?](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-[Como instalar um CMS para criar um site](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/){.external}
+[Como instalar um CMS para criar um site](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Aceder ao espaço de armazenamento do alojamento web](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/){.external}
+[Aceder ao espaço de armazenamento do alojamento web](/pages/web/hosting/ftp_connection){.external}
 
-[Alterar a palavra-passe de um utilizador FTP](https://docs.ovh.com/pt/hosting/alterar-palavra-passe-utilizador-ftp/){.external}
+[Alterar a palavra-passe de um utilizador FTP](/pages/web/hosting/ftp_change_password){.external}
 
 Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}

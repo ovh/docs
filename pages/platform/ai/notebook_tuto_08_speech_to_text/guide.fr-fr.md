@@ -1,11 +1,8 @@
 ---
 title: AI Notebooks - Tutoriel - Utiliser le Speech-to-Text sur des audios et vidéos (EN)
-slug: notebooks/tuto-speech-to-text-recognition
 excerpt: Comment faire de la reconnaissance automatique de la parole pour la transcrire sous forme de texte en utilisant AI Notebooks
-section: AI Notebooks - Tutoriels
-order: 08
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-speech-to-text-recognition/'
+    canonical: '/pages/platform/ai/notebook_tuto_08_speech_to_text'
 updated: 2022-09-01
 ---
 
@@ -118,7 +115,7 @@ Once the repository has been cloned, find your notebook by following this path: 
 
 ## Go further
 
-- With NLP, you can do **sentiment analysis**. For more information, click [here](https://docs.ovh.com/fr/publiccloud/ai/notebooks/tuto-hugging-face-sentiment-analysis/).
+- With NLP, you can do **sentiment analysis**. For more information, click [here](/pages/platform/ai/notebook_tuto_05_hugging_face_sentiment_analysis).
 
 ## Feedback
 

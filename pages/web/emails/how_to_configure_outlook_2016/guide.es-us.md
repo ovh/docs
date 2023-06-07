@@ -1,9 +1,6 @@
 ---
 title: 'Configurar una cuenta de correo electrónico en Outlook para Windows'
-slug: configuracion-outlook-2016
 excerpt: 'Cómo configurar una cuenta MX Plan en Outlook para Windows'
-section: Configuración en el ordenador
-order: 01
 updated: 2021-06-05
 ---
 
@@ -36,7 +33,7 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
  
 > [!primary]
 >
-> Si utiliza Outlook 2016 para Mac, consulte nuestra guía [Configurar una cuenta de correo en Outlook 2016 para Mac](https://docs.ovh.com/us/es/emails/configuracion-outlook-2016-mac/){.external}.
+> Si utiliza Outlook 2016 para Mac, consulte nuestra guía [Configurar una cuenta de correo en Outlook 2016 para Mac](/pages/web/emails/how_to_configure_outlook_2016_mac){.external}.
 >
 
 ## Procedimiento
@@ -74,7 +71,7 @@ OVHcloud también ofrece una aplicación web que permite acceder a su dirección
 
 ### Obtener una copia de seguridad de su dirección de correo
 
-Si necesita realizar alguna operación que pueda provocar la pérdida de los datos de su cuenta de correo, le recomendamos que realice una copia de seguridad previa de la cuenta de correo. Para ello, consulte el apartado "**Exportar desde Windows**" en nuestra guía [Migrar manualmente su dirección de correo electrónico](https://docs.ovh.com/us/es/emails/migrar-sus-direcciones-de-correo-manualmente/#exportar-desde-windows).
+Si necesita realizar alguna operación que pueda provocar la pérdida de los datos de su cuenta de correo, le recomendamos que realice una copia de seguridad previa de la cuenta de correo. Para ello, consulte el apartado "**Exportar desde Windows**" en nuestra guía [Migrar manualmente su dirección de correo electrónico](/pages/web/emails/manual_email_migration#exportar-desde-windows).
 
 
 ### Modificar los parámetros existentes

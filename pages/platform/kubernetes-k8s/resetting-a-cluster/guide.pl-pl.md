@@ -1,10 +1,8 @@
 ---
 title: Resetting an OVHcloud Managed Kubernetes cluster
 excerpt: Find out how to reset an OVHcloud Managed Kubernetes cluster
-slug: resetting-a-cluster
-section: User guides
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/resetting-a-cluster/'
+    canonical: '/pages/platform/kubernetes-k8s/resetting-a-cluster'
 updated: 2023-03-23
 ---
 
@@ -182,7 +180,7 @@ By default, if you don't specify it, the `workerNodesPolicy` option will be equi
 
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/pl/public-cloud/kubernetes/).
 
-Otherwise to skip it and learn more about using your Kubernetes cluster the practical way, we invite you to look at our [tutorials](../).
+Otherwise to skip it and learn more about using your Kubernetes cluster the practical way, we invite you to look at our [tutorials](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

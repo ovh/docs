@@ -1,8 +1,6 @@
 ---
 title: 'Alterar a palavra-passe root num servidor dedicado'
-slug: alterar-palavra-passe-root-linux-num-servidor-dedicado
 excerpt: 'Saiba como alterar a palavra-passe root do seu servidor dedicado'
-section: 'Diagnóstico e Modo Rescue'
 updated: 2021-02-16
 ---
 
@@ -66,7 +64,7 @@ passwd: password updated successfully
 
 #### Etapa 1: Identificar a partição do sistema
 
-Depois de reiniciar o servidor em [modo rescue](../rescue_mode/), deve identificar a partição do sistema. Para isso, execute o seguinte comando:
+Depois de reiniciar o servidor em [modo rescue](/pages/cloud/dedicated/rescue_mode), deve identificar a partição do sistema. Para isso, execute o seguinte comando:
 
 ```
 # fdisk -l
@@ -130,10 +128,10 @@ Depois de realizar esta etapa, altere o modo de arranque no seu servidor para `F
 
 ## Quer saber mais?
 
-[Ativar e utilizar o modo rescue](../rescue_mode/)
+[Ativar e utilizar o modo rescue](/pages/cloud/dedicated/rescue_mode)
 
-[Proteger um servidor dedicado](../proteger-um-servidor-dedicado/)
+[Proteger um servidor dedicado](/pages/cloud/dedicated/securing-a-dedicated-server)
 
-[Alterar a palavra-passe administrador num servidor dedicado Windows](../alterar-palavra-passe-admin-windows/)
+[Alterar a palavra-passe administrador num servidor dedicado Windows](/pages/cloud/dedicated/changing-admin-password-on-windows)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

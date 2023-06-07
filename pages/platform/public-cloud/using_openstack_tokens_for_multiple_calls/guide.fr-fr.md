@@ -1,9 +1,6 @@
 ---
 title: "Utilisation des tokens OpenStack"
-slug: using-openstack-tokens
 excerpt: "Découvrez comment créer et utiliser des jetons OpenStack pour vos actions"
-section: "Gestion via Openstack"
-order: 01
 updated: 2023-05-04
 ---
 
@@ -57,7 +54,7 @@ sudo apt install python3-openstackclient
 sudo yum install python3-openstackclient
 ```
 
-- Pour les utilisateurs de Windows, consultez ce guide pour exporter vos variables d'environnement : [Définir les variables d'environnement OpenStack](https://docs.ovh.com/gb/en/public-cloud/set-openstack-environment-variables/).
+- Pour les utilisateurs de Windows, consultez ce guide pour exporter vos variables d'environnement : [Définir les variables d'environnement OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 ## En pratique
 

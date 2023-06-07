@@ -1,8 +1,5 @@
 ---
 title: 'Delegating permissions on an email account'
-slug: emailpro-delegation
-section: 'Getting started'
-order: 5
 updated: 2020-10-24
 ---
 
@@ -23,4 +20,4 @@ With the OVHcloud Exchange or Email Pro services, you can set up professional em
 
 ## Instructions
 
-Follow our guide [Delegating permissions on an email account](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2013_how_to_grant_full_access_permissions_for_an_account/) in the “Microsoft collaborative solutions” section.
+Follow our guide [Delegating permissions on an email account](/pages/web/microsoft-collaborative-solutions/feature_delegation) in the “Microsoft collaborative solutions” section.

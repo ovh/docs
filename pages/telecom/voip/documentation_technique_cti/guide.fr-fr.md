@@ -1,8 +1,6 @@
 ---
 title: 'Documentation technique CTI'
-slug: documentation_technique_cti
 excerpt: 'Ce guide est une introduction aux outils de gestion des appels via les interfaces CRM et ERP les plus connus.'
-section: 'Computer Telephony Integration (CTI)'
 updated: 2018-03-26
 ---
 
@@ -159,7 +157,7 @@ while (1)
 
 ## Aller plus loin
 
-- [Projet communautaire](https://docs.ovh.com/fr/voip/projet_communautaire_cti/){.external}
-- [Intégration CTI de la téléphonie OVH aux CRM et ERP](https://docs.ovh.com/fr/voip/integration-cti-ovh-aux-crm-erp-avec-sugarcrm/){external}
+- [Projet communautaire](/pages/telecom/voip/projet_communautaire_cti){.external}
+- [Intégration CTI de la téléphonie OVH aux CRM et ERP](/pages/telecom/voip/cti_crm_erp_sugarcrm){external}
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com>.

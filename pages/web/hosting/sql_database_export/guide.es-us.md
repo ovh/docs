@@ -1,9 +1,6 @@
 ---
 title: 'Exportar una copia de seguridad de la base de datos de un alojamiento web'
-slug: web_hosting_exportacion_de_una_base_de_datos
 excerpt: 'Cómo descargar un backup de la base de datos de un alojamiento web de OVHcloud'
-section: 'Bases de datos'
-order: 03
 updated: 2018-05-19
 ---
 
@@ -131,7 +128,7 @@ No olvide sustituir la información genérica del script por los datos correspon
 
 #### 2. Cargar el script en el espacio de almacenamiento
 
-Una vez que haya creado el script de backup, deberá cargarlo en el espacio de almacenamiento de su alojamiento web. Para ello, conéctese al espacio de almacenamiento. Si necesita ayuda, consulte el paso «2. Conectarse al espacio de almacenamiento» de la guía [Publicar un sitio web en internet](../web_hosting_publicar_un_sitio_web_en_internet/#2-conectarse-al-espacio-de-almacenamiento){.external}.
+Una vez que haya creado el script de backup, deberá cargarlo en el espacio de almacenamiento de su alojamiento web. Para ello, conéctese al espacio de almacenamiento. Si necesita ayuda, consulte el paso «2. Conectarse al espacio de almacenamiento» de la guía [Publicar un sitio web en internet](/pages/web/hosting/hosting_how_to_get_my_website_online#2-conectarse-al-espacio-de-almacenamiento){.external}.
 
 Para poder realizar las siguientes acciones, cargue el script en la carpeta «www». **Preste especial atención al nombre del archivo del script de backup**: cuando cargue el script, asegúrese de no sobrescribir un archivo presente en su espacio de almacenamiento que pueda tener el mismo nombre. Si aparece un mensaje de aviso que indique lo anterior, cambie el nombre del script que acaba de crear por otro diferente y vuelva a intentar cargarlo.
 
@@ -149,7 +146,7 @@ Una vez que haya finalizado la operación, le recomendamos encarecidamente que e
 
 > [!primary]
 >
-> La utilización de un script de backup y de tareas planificadas (denominadas «Cron») le permitirá automatizar las copias de seguridad con la frecuencia que desee. Para más información sobre las tareas planificadas, consulte la guía [Tareas automatizadas (cron)](../web_hosting_tareas_automatizadas_cron/){.external}.
+> La utilización de un script de backup y de tareas planificadas (denominadas «Cron») le permitirá automatizar las copias de seguridad con la frecuencia que desee. Para más información sobre las tareas planificadas, consulte la guía [Tareas automatizadas (cron)](/pages/web/hosting/cron_tasks){.external}.
 >
 
 ### Exportar una copia de seguridad por SSH

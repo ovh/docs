@@ -1,9 +1,6 @@
 ---
 title: Zamów licencję Outlook dla usługi Exchange
-slug: exchange_2013_przewodnik_dotyczacy_licencji_outlook_exchange_2013
 excerpt: Dowiedz się, jak zamówić licencję Outlook z platformy Exchange OVHcloud i zainstalować ją
-section: Office
-order: 01
 updated: 2022-10-05
 ---
 

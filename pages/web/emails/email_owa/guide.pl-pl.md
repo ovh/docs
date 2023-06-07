@@ -1,9 +1,6 @@
 ---
 title: 'Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)'
-slug: korzystanie-owa
 excerpt: 'Dowiedz się, jak korzystać z konta e-mail przy użyciu Webmail OWA'
-section: 'Pierwsze kroki'
-order: 04
 updated: 2021-06-25
 ---
 
@@ -126,7 +123,7 @@ Podaj wymagane informacje w zależności od działania, które ma wykonywać reg
 
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
-Szczegółowe instrukcje tworzenia reguł skrzynki odbiorczej zawiera przewodnik: [Tworzenie reguł skrzynki odbiorczej w aplikacji OWA](../tworzenie-regul-skrzynki-odbiorczej-w-owa/).
+Szczegółowe instrukcje tworzenia reguł skrzynki odbiorczej zawiera przewodnik: [Tworzenie reguł skrzynki odbiorczej w aplikacji OWA](/products/email-owa-creating-inbox-rules).
 
 #### Zablokuj nadawcę
 
@@ -190,7 +187,7 @@ Podaj wymagane informacje w zależności od działania, które ma być wykonywan
 
 ![useowa](images/owa_exchange_step21.png){.thumbnail}
 
-Szczegółowe instrukcje tworzenia odpowiedzi automatycznych zawiera przewodnik: [Tworzenie odpowiedzi automatycznych w interfejsie OWA](../exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa/).
+Szczegółowe instrukcje tworzenia odpowiedzi automatycznych zawiera przewodnik: [Tworzenie odpowiedzi automatycznych w interfejsie OWA](/pl/emails/exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa/).
 
 ### Dodawanie podpisu
 
@@ -204,7 +201,7 @@ Na nowej stronie (po lewej) kliknij pozycję `Podpis wiadomości e-mail`{.action
 
 Przygotuj podpis elektroniczny w polu edytora. Możesz określić, czy podpis ma być dołączany domyślnie tylko do nowych e-maili, czy też do odpowiedzi i wiadomości przesłanych dalej. Na koniec kliknij przycisk `Zapisz`{.action}, aby potwierdzić.
 
-Instrukcje dotyczące tworzenia automatycznych podpisów przy użyciu szablonów dla domeny zawiera przewodnik: [Automatyczny podpis](../exchange_20132016_automatyczny_podpis_-_disclaimer/).
+Instrukcje dotyczące tworzenia automatycznych podpisów przy użyciu szablonów dla domeny zawiera przewodnik: [Automatyczny podpis](/pl/emails/exchange_20132016_automatyczny_podpis_-_disclaimer/).
 
 ### Dostęp do sekcji opcji
 
@@ -225,12 +222,12 @@ Wyłączenie tych plików cookie może mieć wpływ na stabilność usługi webm
 
 ## Sprawdź również
 
-[Tworzenie odpowiedzi automatycznych w interfejsie OWA](../exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa/)
+[Tworzenie odpowiedzi automatycznych w interfejsie OWA](/pl/emails/exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa/)
 
-[Współdzielenie katalogu w interfejsie OWA](../exchange_2016_wspoldzielenie_katalogu_poprzez_webmail_owa/)
+[Współdzielenie katalogu w interfejsie OWA](/pl/emails/exchange_2016_wspoldzielenie_katalogu_poprzez_webmail_owa/)
 
-[Współdzielenie kalendarza w interfejsie OWA](../exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa/)
+[Współdzielenie kalendarza w interfejsie OWA](/pl/emails/exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa/)
 
-[Korzystanie z grup (mailing listy) dostępnych z kontem Exchange](../exchange_20132016_korzystanie_z_grup_wewnetrzne_grupy_dyskusyjne/)
+[Korzystanie z grup (mailing listy) dostępnych z kontem Exchange](/pl/emails/exchange_20132016_korzystanie_z_grup_wewnetrzne_grupy_dyskusyjne/)
 
 Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.

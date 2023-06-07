@@ -1,9 +1,6 @@
 ---
 title: 'Partilha de calendários em OWA'
 excerpt: 'Saiba como partilhar calendários no Exchange'
-slug: exchange_2016_partilhar_um_calendario_atraves_do_webmail_owa
-section: 'Utilização do Outlook Web Application (OWA)'
-order: 03
 updated: 2020-02-19
 ---
 
@@ -92,11 +89,11 @@ Se clicar num calendário da lista, pode exibi-los ou ocultá-los. Através do c
 
 ## Saiba mais
 
-[Guia de utilização do Outlook Web App](../exchange_2016_guia_de_utilizacao_do_outlook_web_app/)
+[Guia de utilização do Outlook Web App](/pt/microsoft-collaborative-solutions/exchange_2016_guia_de_utilizacao_do_outlook_web_app/)
 
-[Partilhar uma pasta através do webmail OWA](../exchange_2016_partilhar_uma_pasta_atraves_do_webmail_owa/)
+[Partilhar uma pasta através do webmail OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
-[Utilização de grupos de difusão (mailing list)](../exchange_20132016_utilizacao_de_grupos_de_difusao_mailing_list/)
+[Utilização de grupos de difusão (mailing list)](/pages/web/microsoft-collaborative-solutions/feature_groups)
 
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -1,10 +1,7 @@
 ---
 title: 'Crear filtros para sus direcciones de correo'
 excerpt: 'Cómo crear y configurar un filtro en una dirección de correo electrónico'
-slug: correo_configuracion_de_los_filtros_de_correo_desde_el_area_de_cliente
 legacy_guide_number: g1973
-section: Gestión de la cuenta de correo
-order: 04
 updated: 2021-09-27
 ---
 
@@ -81,7 +78,7 @@ Primera elección (cabecera):
 
 Segunda opción (regla):
 
-- **spf:** Indique el valor del [registro SPF](https://docs.ovh.com/es/domains/web_hosting_el_registro_spf/) que quiera tener en cuenta, por ejemplo: "... no tiene registro SPF ... ".
+- **spf:** Indique el valor del [registro SPF](/pages/web/domains/dns_zone_spf) que quiera tener en cuenta, por ejemplo: "... no tiene registro SPF ... ".
 - **contiene:** ejemplo: "... contiene ... ".
 - **no contiene:** ejemplo: "... no contiene ... ".
 
@@ -142,8 +139,8 @@ Si el asunto del mensaje contiene la palabra "money" **y el** remitente del mens
 
 ## Más información
 
-[Primeros pasos con la solución MX Plan](https://docs.ovh.com/es/emails/primeros-pasos-correo-compartido/)
+[Primeros pasos con la solución MX Plan](/pages/web/emails/email_generalities)
 
-[Reglas de la bandeja de entrada desde la interfaz OWA](https://docs.ovh.com/es/emails/crear-reglas-de-bandeja-de-entrada-en-owa/)
+[Reglas de la bandeja de entrada desde la interfaz OWA](/products/email-owa-creating-inbox-rules)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

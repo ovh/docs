@@ -1,8 +1,6 @@
 ---
 title: 'Napraw bootloader GRUB'
-slug: napraw-bootloader-grub
 excerpt: 'Przewodnik naprawy bootloader GRUB na instancji'
-section: Tutoriale
 updated: 2020-11-23
 ---
 
@@ -18,7 +16,7 @@ Możliwe, że trzeba naprawić bootloader GRUB. Niniejszy przewodnik pozwoli Ci 
 
 ## Wymagania początkowe
 
-- Instancja musi być w trybie Rescue (zapoznaj się z przewodnikiem [Zmień instancję w trybie rescue](../przelaczenie_instancji_w_tryb_rescue/))
+- Instancja musi być w trybie Rescue (zapoznaj się z przewodnikiem [Zmień instancję w trybie rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode))
 
 ## W praktyce
 
@@ -50,7 +48,7 @@ grub2-install /dev/sdb
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
-Możesz teraz wyjąć instancję z trybu Rescue. (Sprawdź przewodnik [Zmień instancję w trybie Rescue](../przelaczenie_instancji_w_tryb_rescue/))
+Możesz teraz wyjąć instancję z trybu Rescue. (Sprawdź przewodnik [Zmień instancję w trybie Rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode))
 
 ## Sprawdź również
 

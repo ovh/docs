@@ -1,8 +1,6 @@
 ---
 title: Known limits
 excerpt: 'Requirements and limits to respect'
-slug: known-limits
-section: Technical resources
 updated: 2023-03-03
 ---
 
@@ -21,8 +19,7 @@ updated: 2023-03-03
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -52,7 +49,7 @@ Delivering a fully managed service, including OS and other component updates, yo
 
 If an incident is detected by the OVHcloud monitoring, as part of auto-healing, or in case of a version upgrade, the Nodes can be fully reinstalled. 
 
-We advise you to save your data in Persistent Volumes (PV), not to save data directly on Nodes if you don't want to lose your data. Follow our [guide about how to setup and manage Persistent Volumes on OVHcloud Managed Kubernetes](../ovh-kubernetes-persistent-volumes/) for more information.
+We advise you to save your data in Persistent Volumes (PV), not to save data directly on Nodes if you don't want to lose your data. Follow our [guide about how to setup and manage Persistent Volumes on OVHcloud Managed Kubernetes](/pages/platform/kubernetes-k8s/persistent-volumes-on-ovh-managed-kubernetes) for more information.
 
 ## LoadBalancer
 
@@ -133,7 +130,7 @@ In case you want to apply OpenStack security groups onto your nodes, it is manda
 >
 > It allows you to trust the internal traffic between pods and services within the cluster.
 
-For more details, please refer to the [Creating and configuring a security group in Horizon documentation](../../public-cloud/configure-security-group-horizon/).
+For more details, please refer to the [Creating and configuring a security group in Horizon documentation](/pages/platform/public-cloud/setup_security_group).
 
 ## Private Networks
 
@@ -168,11 +165,11 @@ If you try to decrease the storage size, you will get a message like:
 The PersistentVolumeClaim "mysql-pv-claim" is invalid: spec.resources.requests.storage: Forbidden: field can not be less than previous value
 ```
 
-For more details, please refer to the [Resizing Persistent Volumes documentation](../resizing-persistent-volumes/).
+For more details, please refer to the [Resizing Persistent Volumes documentation](/pages/platform/kubernetes-k8s/resizing-persistent-volumes).
 
 The Persistent Volumes are using our Cinder-based block-storage solution through Cinder CSI.  
 A worker node can have a maximum of 254 persistent volumes attached to it, and a persistent volume can only be attached to a single worker node.  
-You can manually [configure multi-attach persistent volumes with NAS-HA](../configuring-multi-attach-persistent-volumes-with-ovhcloud-nas-ha/).
+You can manually [configure multi-attach persistent volumes with NAS-HA](/pages/platform/kubernetes-k8s/configuring-multi-attach-persistent-volumes-with-ovh-nas-ha).
 
 ## Go further
 

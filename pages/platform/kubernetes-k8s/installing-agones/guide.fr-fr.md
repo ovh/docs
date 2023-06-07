@@ -1,10 +1,8 @@
 ---
 title: Installing Agones on OVHcloud Managed Kubernetes
-slug: installing-agones
 excerpt: 'Find out how to install Agones on OVHcloud Managed Kubernetes'
-section: Tutorials
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-agones/'
+    canonical: '/pages/platform/kubernetes-k8s/installing-agones'
 updated: 2022-12-09
 ---
 
@@ -38,9 +36,9 @@ And to test your install, you will install a [Xonotic](http://www.xonotic.org/){
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-hello-world) documentation.
 
-You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/platform/kubernetes-k8s/installing-helm) tutorial.
 
 ## What is Agones?
 

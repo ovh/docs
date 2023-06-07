@@ -1,7 +1,5 @@
 ---
 title: Configure environments
-slug: configure-environment
-section: Web
 updated: 2022-06-24
 ---
 
@@ -45,7 +43,7 @@ There are also additional options:
 * **URLs** to access the deployed environment from the web.
 * **SSH** to access your project using SSH.
 * **Code**
-  * **CLI** for the command to get your project set up locally with the [Web PaaS CLI](../../development-cli).
+  * **CLI** for the command to get your project set up locally with the [Web PaaS CLI](/pages/web/web-paas/development-cli).
   * **Git** for the command to clone the codebase via Git.
   
     If you're using Web PaaS as your primary remote repository, the command clones from the project.
@@ -116,7 +114,7 @@ For non-Production environment, you can change their status.
 
 ### Outgoing emails
 
-You can allow your environment to [send outgoing emails](../../development-email).
+You can allow your environment to [send outgoing emails](/pages/web/web-paas/development-email).
 
 ![Environment email](images/env-email.png "0.75")
 
@@ -134,6 +132,6 @@ This setting enables you to control access using HTTP methods.
 
 ### Variables
 
-Under **Variables**, you can define the [environment variables](../../development-variables).
+Under **Variables**, you can define the [environment variables](/pages/web/web-paas/development-variables).
 
 ![Configure Web PaaS environment variables](images/settings-variables-environment.png "0.6")

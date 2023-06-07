@@ -1,9 +1,6 @@
 ---
 title: 'Gestionar las instancias de Public Cloud'
-slug: empezar-con-una-instancia-public-cloud
 excerpt: 'Cómo gestionar las instancias de Public Cloud desde el Panel de configuración de OVHcloud'
-section: 'Primeros pasos'
-order: 05
 updated: 2023-01-04
 ---
 
@@ -22,7 +19,7 @@ Puede gestionar sus instancias de Public Cloud desde el [Panel de configuración
 ## Requisitos
 
 - Un [proyecto de Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud
-- Una [instancia de Public Cloud](../public-cloud-primeros-pasos/) en su proyecto
+- Una [instancia de Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps) en su proyecto
 - Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 
 ## Procedimiento
@@ -59,30 +56,30 @@ Estas acciones también están disponibles en la página de gestión de las inst
 
 Haga clic en `Editar`{.action}.
 
-Se abrirá una nueva página en la que podrá modificar las opciones de [creación de instancias](../public-cloud-primeros-pasos/):
+Se abrirá una nueva página en la que podrá modificar las opciones de [creación de instancias](/pages/platform/public-cloud/public-cloud-first-steps):
 
 - **Cambiar el nombre**: puede asignar un nombre a la instancia para facilitar la identificación.
 - **Modificar la imagen**: puede elegir otro sistema operativo para la instancia (tenga en cuenta que la reinstalación de una instancia eliminará todos los datos que contiene).
-- **Modificar el modelo**: puede cambiar el modelo de instancia. Para más información sobre las opciones, consulte [esta guía](../public-cloud-primeros-pasos/#3-crear-una-instancia).
-- **Modificar el período de facturación**: puede cambiar el período de facturación de la instancia desde una facturación mensual por horas. Para más información, consulte [esta guía](../cambiar-modalidad-facturacion-public-cloud/).
+- **Modificar el modelo**: puede cambiar el modelo de instancia. Para más información sobre las opciones, consulte [esta guía](/pages/platform/public-cloud/public-cloud-first-steps#3-crear-una-instancia).
+- **Modificar el período de facturación**: puede cambiar el período de facturación de la instancia desde una facturación mensual por horas. Para más información, consulte [esta guía](/pages/platform/public-cloud/changing_hourly_monthly_billing).
 
 #### Crear un backup de una instancia
 
 Haga clic en `Crear un backup`{.action}.
 
-Para más información, consulte la guía [Guardar una instancia](../guardar_copia_de_seguridad_de_una_instancia/). 
+Para más información, consulte la guía [Guardar una instancia](/pages/platform/public-cloud/save_an_instance). 
 
 #### Crear un backup automático de una instancia
 
 Haga clic en `Crear una copia de seguridad automatizada`{.action}.
 
-Para más información, consulte la guía [Guardar una instancia](../guardar_copia_de_seguridad_de_una_instancia/#crear-una-copia-de-seguridad-automatizada-de-una-instancia).
+Para más información, consulte la guía [Guardar una instancia](/pages/platform/public-cloud/save_an_instance#crear-una-copia-de-seguridad-automatizada-de-una-instancia).
 
 #### Suspender una instancia
 
 Haga clic en `Detener`{.action}.
 
-Esta acción suspenderá la instancia. Para más información, consulte nuestra guía [Suspender o poner en pausa una instancia](../suspender_o_poner_en_pausa_una_instancia/#detener-stop-una-instancia).
+Esta acción suspenderá la instancia. Para más información, consulte nuestra guía [Suspender o poner en pausa una instancia](/pages/platform/public-cloud/suspend_or_pause_an_instance#detener-stop-una-instancia).
 
 Haga clic en `Iniciar`{.action} para reactivar la instancia.
 
@@ -90,7 +87,7 @@ Haga clic en `Iniciar`{.action} para reactivar la instancia.
 
 Haga clic en `Reiniciar en modo de rescate`{.action}.
 
-Esto activará el modo de rescate de la instancia. Para más información, consulte nuestra guía [Poner una instancia en modo de rescate](../poner_una_instancia_en_modo_de_rescate/).
+Esto activará el modo de rescate de la instancia. Para más información, consulte nuestra guía [Poner una instancia en modo de rescate](/pages/platform/public-cloud/put_an_instance_in_rescue_mode).
 
 #### Reiniciar una instancia
 
@@ -107,7 +104,7 @@ Confirme la solicitud de reinicio en la nueva ventana.
 
 Haga clic en `Suspender`{.action}.
 
-Esto hará que la instancia se convierta en "*shelved*", que se muestra aquí como `Suspended`. Para más información sobre el estado de suspensión de una instancia, consulte nuestra guía [Suspender o poner en pausa una instancia](../suspender_o_poner_en_pausa_una_instancia/#suspender-shelve-una-instancia).
+Esto hará que la instancia se convierta en "*shelved*", que se muestra aquí como `Suspended`. Para más información sobre el estado de suspensión de una instancia, consulte nuestra guía [Suspender o poner en pausa una instancia](/pages/platform/public-cloud/suspend_or_pause_an_instance#suspender-shelve-una-instancia).
 
 Haga clic en `Reactivar`{.action} para restaurar el estado `Activado` de la instancia.
 
@@ -137,12 +134,12 @@ A continuación, abra la pestaña `Consola VNC`{.action}.
 
 La consola VNC proporciona acceso directo a su instancia. Para que este acceso funcione, es necesario configurar primero un nombre de usuario y una contraseña en la instancia. 
 
-Consulte nuestra guía [Crear y conectarse a una instancia de Public Cloud](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/#4-conectarse-a-una-instancia) para obtener más información.
+Consulte nuestra guía [Crear y conectarse a una instancia de Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#4-conectarse-a-una-instancia) para obtener más información.
 
 ## Más información
 
-[Crear y conectarse a una instancia de Public Cloud](../public-cloud-primeros-pasos/)
+[Crear y conectarse a una instancia de Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Presentación de Horizon](../horizon/)
+[Presentación de Horizon](/pages/platform/public-cloud/introducing_horizon)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

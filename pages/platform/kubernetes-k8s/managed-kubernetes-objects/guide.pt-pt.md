@@ -1,10 +1,8 @@
 ---
 title: Managed Kubernetes objects (services, deployments, pods...)
 excerpt: ''
-slug: managed-kubernetes-objects
-section: Technical resources
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/managed-kubernetes-objects/'
+    canonical: '/pages/platform/kubernetes-k8s/managed-kubernetes-objects'
 updated: 2022-02-24
 ---
 

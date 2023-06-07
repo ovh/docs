@@ -1,9 +1,6 @@
 ---
 title: "Geolocalizzare il vostro sito web in un paese specifico"
 excerpt: "Questa guida ti mostra come geolocalizzare il tuo sito Web utilizzando i nostri indirizzi IP geolocalizzati"
-slug: hosting_condiviso_geolocalizza_lip_del_tuo_sito
-section: Ottimizza il tuo sito
-order: 05
 updated: 2022-12-22
 ---
 
@@ -52,9 +49,9 @@ Clicca su `Continua`{.action} e poi su `Conferma`{.action} dalla finestra riepil
 
 >[!primary]
 >
-> Se la zona DNS attiva del dominio è gestita totalmente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), l'accesso di tipo A nella zona DNS del dominio si modifica automaticamente. Per verificare che l'indirizzo IP sia stato aggiornato correttamente, consulta la guida su [modifica della zona DNS OVHcloud](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/).
+> Se la zona DNS attiva del dominio è gestita totalmente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), l'accesso di tipo A nella zona DNS del dominio si modifica automaticamente. Per verificare che l'indirizzo IP sia stato aggiornato correttamente, consulta la guida su [modifica della zona DNS OVHcloud](/pages/web/domains/dns_zone_edit).
 >
-> In caso contrario, sarà necessario effettuare la modifica manualmente presso il provider che gestisce la zona DNS attiva del dominio. Consulta [qui](https://docs.ovh.com/it/hosting/lista-indirizzi-ip-di-cluster-e-hosting-web/) la documentazione che contiene tutti gli indirizzi IP della nostra infrastruttura di hosting condivisi OVHcloud.
+> In caso contrario, sarà necessario effettuare la modifica manualmente presso il provider che gestisce la zona DNS attiva del dominio. Consulta [qui](/pages/web/hosting/clusters_and_shared_hosting_IP) la documentazione che contiene tutti gli indirizzi IP della nostra infrastruttura di hosting condivisi OVHcloud.
 >
 > In tutti i casi, un periodo di propagazione da **4 a 24 ore** dopo la modifica sarà necessario per renderla pienamente efficace e visibile su Internet.
 >

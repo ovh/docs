@@ -1,8 +1,5 @@
 ---
 title: Object Storage - Gérer un bucket S3 avec Terraform
-slug: s3/manage-s3-bucket-with-terraform
-section: Configurer Object Storage avec vos solutions
-order: 180
 updated: 2023-03-14
 ---
 
@@ -21,7 +18,7 @@ Ce tutoriel va vous permettre d'automatiser et d'orchestrer des actions pour uti
 
 - Installer la CLI Terraform  (se réferer au [tutoriel](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) d'Hashicorp, la société qui a créé Terraform). 
 - Installer la commande git 
-- Avoir accès aux API v6 (reportez à notre guide de [premiers pas avec les API OVHcloud](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/)). Une fois les accès aux API créés, exportez les 4 IDs dans les variables, tel que décrit ci-dessous :
+- Avoir accès aux API v6 (reportez à notre guide de [premiers pas avec les API OVHcloud](/pages/account/api/first-steps)). Une fois les accès aux API créés, exportez les 4 IDs dans les variables, tel que décrit ci-dessous :
 
 ```bash
 $ export OVH_ENDPOINT=ovh-eu
@@ -71,7 +68,7 @@ $ terraform plan
 
 Regardez à présent le contenu du fichier `main.tf` :
 
-- Le bloc *variable* définit la région et le *s3 endpoint* qui sont utilisés pour créer le bucket. Vous pouvez l'adapter en fonction de votre besoin : [Object Storage - Endpoints et géo-disponibilité de l’Object Storage](https://docs.ovh.com/ca/fr/storage/object-storage/s3/location/) to know what region / endpoints are available..
+- Le bloc *variable* définit la région et le *s3 endpoint* qui sont utilisés pour créer le bucket. Vous pouvez l'adapter en fonction de votre besoin : [Object Storage - Endpoints et géo-disponibilité de l’Object Storage](/pages/cloud/storage/object_storage/s3_location) to know what region / endpoints are available..
 - Le bloc *Providers* définit 2 providers : celui d'OVHcloud et celui d'Hashicorp AWS. Le premier est nécessaire pour créer les utilisateurs qui seront utilisés par le second.
 - Le bloc *User / Credential* définit les user & credential qui sont visibles dans la table Settings > Users & Roles. Ils sont nécessaires pour la configuration du provider Hashicorp AWS provider.
 - Le bloc Bucket définit le bucket 

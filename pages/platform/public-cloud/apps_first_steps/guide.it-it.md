@@ -1,9 +1,6 @@
 ---
 title: Iniziare a utilizzare applicazioni preinstallate
-slug: applicazioni-preinstallallees
 excerpt: Scopri come creare applicazioni preinstallate sulle tue istanze Public Cloud
-section: Per iniziare
-order: 7
 updated: 2021-09-07
 ---
 
@@ -21,7 +18,7 @@ OVHcloud offre ai clienti Public Cloud immagini di applicazioni preinstallate pe
 
 ## Prerequisiti
 
-- Un'[istanza Public Cloud](../crea_unistanza_dallo_spazio_cliente_ovh/) nel tuo account OVHcloud.
+- Un'[istanza Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#step-3-crea-unistanza/) nel tuo account OVHcloud.
 
 ## Procedura
 
@@ -61,7 +58,7 @@ Questa sezione si applica solo agli impianti di WordPress, Drupal, Joomla! e Pre
      personaldomain.ovh <br>
      www.personaldomain.ovh <br>  
 
-Se il tuo dominio è registrato in OVHcloud, consulta [questa guida](../../domains/web_hosting_modifica_la_tua_zona_dns/).
+Se il tuo dominio è registrato in OVHcloud, consulta [questa guida](/pages/web/domains/dns_zone_edit).
 <br>Se il tuo dominio è registrato presso un'altra società, contatta quest'ultima per ottenere assistenza sulla configurazione dei record `A`.
 
 <ol start="2">
@@ -140,7 +137,7 @@ Per completare la prima configurazione dell'applicazione non sono necessari ulte
 > [!faq]
 >
 > Puoi utilizzare i tuoi server DNS?
->> Si', puoi. Assicurati di creare record GLUE con il tuo Registrar Ad esempio, se vuoi "ns1.mydomain.com" e "ns2.mydomain.com", devi configurare i record "GLUE" perché entrambi puntino sull'indirizzo IP del tuo server. Se il tuo dominio è registrato con OVHcloud, segui [questa guida](../../domains/glue-registry/#step-1-aggiungi-i-record-glue). Ti ricordiamo che la creazione potrebbe richiedere 24 ore.
+>> Si', puoi. Assicurati di creare record GLUE con il tuo Registrar Ad esempio, se vuoi "ns1.mydomain.com" e "ns2.mydomain.com", devi configurare i record "GLUE" perché entrambi puntino sull'indirizzo IP del tuo server. Se il tuo dominio è registrato con OVHcloud, segui [questa guida](/pages/web/domains/glue_registry#step-1-aggiungi-i-record-glue). Ti ricordiamo che la creazione potrebbe richiedere 24 ore.
 > Perché impostare la password di root?
 >> WHM utilizza di default l'utente root per l'autenticazione. L'URL monouso permette di accedere alla prima configurazione e di modificare la password di root. La prossima volta che ti connetti a WHM, dovrai utilizzare l'utente root e la password che hai definito.
 > Dov'è la mia licenza per cPanel?

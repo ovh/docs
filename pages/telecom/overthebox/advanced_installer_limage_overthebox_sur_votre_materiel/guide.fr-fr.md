@@ -1,8 +1,6 @@
 ---
 title: "Installer l'image OverTheBox sur votre matériel"
-slug: installer-limage-overthebox-sur-votre-materiel
 excerpt: "Découvrez comment installer une image OverTheBox manuellement sur votre matériel"
-section: "Configurations techniques avancées"
 updated: 2022-11-08
 ---
 
@@ -148,9 +146,9 @@ Dans le cas d'une OverTheBox IT v2, la clé USB doit être branchée sur un des 
 >
 > Votre OvertheBox est maintenant opérationelle, vous pouvez l'installer en suivant la procédure décrite dans les guides suivants :
 >
-> [Installation OverTheBox Intel ou IT v1](../intel-itv1-installation/)
+> [Installation OverTheBox Intel ou IT v1](/pages/telecom/overthebox/intel_itv1_installation)
 >
-> [Installation OverTheBox Plus ou IT v2](../plus-itv2-installation/)
+> [Installation OverTheBox Plus ou IT v2](/pages/telecom/overthebox/plus_itv2_installation)
 >
 
 ### Méthode n°2 : installation manuelle depuis une distribution Linux live <a name="method2"></a>
@@ -206,8 +204,8 @@ Retirez maintenant votre « live usb » et redémarrez votre matériel.
 >
 > Votre matériel est maintenant opérationel, vous pouvez l'installer en suivant la procédure décrite dans les guides suivants :
 >
-> - Sur une machine avec 1 seul port ethernet : [Installation OverTheBox Intel ou IT v1](../intel-itv1-installation/).
-> - Sur une machine avec plus d'un port ethernet : [Installation OverTheBox Plus ou IT v2](../plus-itv2-installation/).
+> - Sur une machine avec 1 seul port ethernet : [Installation OverTheBox Intel ou IT v1](/pages/telecom/overthebox/intel_itv1_installation).
+> - Sur une machine avec plus d'un port ethernet : [Installation OverTheBox Plus ou IT v2](/pages/telecom/overthebox/plus_itv2_installation).
 >
 
 ## Aller plus loin

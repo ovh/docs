@@ -1,9 +1,6 @@
 ---
 title: "Restaurer l'espace de stockage de son hébergement web"
-slug: restauration-ftp-filezilla-espace-client
 excerpt: "Apprenez à restaurer un fichier ou l'intégralité de l'espace de stockage de votre hébergement web"
-section: 'FTP et SSH'
-order: 06
 updated: 2023-01-12
 ---
 
@@ -17,7 +14,7 @@ Votre offre d'hébergement web OVHcloud vous donne accès à un espace de stocka
 > 
 > Les sauvegardes proposées par OVHcloud pour les hébergements mutualisés sont non-contractuelles. Nous vous les proposons en complément de vos services afin de vous aider dans les situations urgentes. Nous vous recommandons d'effectuer régulièrement vos propres sauvegardes de sécurité pour pallier aux éventuelles pertes de données.
 > 
-> Lorsque vous effectuez une sauvegarde de sécurité pour votre site et que vous utilisez une base de données, faites également une sauvegarde de votre base de données. N'hésitez pas à consultez notre guide pour [récupérer une sauvegarde de votre (vos) base(s) de données](https://docs.ovh.com/ca/fr/hosting/exportation-bases-donnees/).
+> Lorsque vous effectuez une sauvegarde de sécurité pour votre site et que vous utilisez une base de données, faites également une sauvegarde de votre base de données. N'hésitez pas à consultez notre guide pour [récupérer une sauvegarde de votre (vos) base(s) de données](/pages/web/hosting/sql_database_export).
 > 
 
 **Apprenez à restaurer un fichier ou l'intégralité de l'espace de stockage de votre hébergement web.**
@@ -59,7 +56,7 @@ Définissez également la méthode de restauration que vous allez utiliser :
 >
 > ![ftp quota](images/check-ftp-quota.png){.thumbnail}
 >
-> Si l'espace de stockage FTP utilisé est supérieur à la moitié de l'espace de stockage FTP total de votre offre d'hébergement, récupérez en local certains éléments volumineux de votre site web (pour cela, vous pouvez utiliser [Filezilla](https://docs.ovh.com/ca/fr/hosting/mutualise-guide-utilisation-filezilla/)). Supprimez-les ensuite de votre espace de stockage FTP. Cela diminuera la taille de l'espace de stockage FTP que vous utilisez et vous pourrez alors lancer votre restauration depuis l'espace client OVHcloud.
+> Si l'espace de stockage FTP utilisé est supérieur à la moitié de l'espace de stockage FTP total de votre offre d'hébergement, récupérez en local certains éléments volumineux de votre site web (pour cela, vous pouvez utiliser [Filezilla](/pages/web/hosting/ftp_filezilla_user_guide)). Supprimez-les ensuite de votre espace de stockage FTP. Cela diminuera la taille de l'espace de stockage FTP que vous utilisez et vous pourrez alors lancer votre restauration depuis l'espace client OVHcloud.
 >
 
 Une fois prêt, poursuivez la lecture de cette documentation en fonction de la méthode de restauration choisie.
@@ -79,11 +76,11 @@ Une fois prêt, poursuivez la lecture de cette documentation en fonction de la m
 > [!primary]
 > **Site en mode « maintenance »**
 > 
-> Pour déterminer si votre site a été placé en mode « maintenance », référez-vous à notre guide [Que faire en cas de page « 403 forbidden » ?](https://docs.ovh.com/ca/fr/hosting/diagnostic-403-forbidden/). 
+> Pour déterminer si votre site a été placé en mode « maintenance », référez-vous à notre guide [Que faire en cas de page « 403 forbidden » ?](/pages/web/hosting/diagnostic_403_forbidden). 
 > 
 > Dans ce cas de figure :
 >
-> - Un e-mail est envoyé au [contact administrateur](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/#acceder-a-la-gestion-des-contacts) de l'hébergement par nos équipes. 
+> - Un e-mail est envoyé au [contact administrateur](/pages/account/customer/managing_contacts#acceder-a-la-gestion-des-contacts) de l'hébergement par nos équipes. 
 > - Le statut « maintenance » apparaît dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Dans la partie `Web Cloud`{.action}, cliquez sur votre service dans la section `Hébergement`{.action} puis sur l'onglet `Informations générales`{.action}.
 > - Le(s) site(s) hébergé(s) affiche(nt) une page « 403 Forbidden ».
 >
@@ -128,9 +125,9 @@ La manipulation s’effectue en plusieurs étapes. Assurez-vous d'être en posse
 
 Dans un premier temps, définissez le logiciel ou l'interface que vous allez utiliser pour vous connecter à la sauvegarde de votre espace de stockage. Si vous le connaissez déjà, passez tout de suite à l'étape 2. Dans le cas contraire, nous vous recommandons d'utiliser l'une des trois solutions suivantes :
 
-- **utiliser le logiciel FileZilla** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVHcloud met à votre disposition la documentation [« Utiliser le logiciel FileZilla avec son hébergement web »](https://docs.ovh.com/ca/fr/hosting/mutualise-guide-utilisation-filezilla/){.external}, vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
+- **utiliser le logiciel FileZilla** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVHcloud met à votre disposition la documentation [« Utiliser le logiciel FileZilla avec son hébergement web »](/pages/web/hosting/ftp_filezilla_user_guide){.external}, vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
 
-- **utiliser le logiciel Cyberduck** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVHcloud met à votre disposition la documentation [« Utiliser le logiciel Cyberduck avec son hébergement web »](https://docs.ovh.com/ca/fr/hosting/utilisation-cyberduck-mac/){.external}, vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
+- **utiliser le logiciel Cyberduck** : vous devrez télécharger au préalable ce logiciel depuis le site de son éditeur. OVHcloud met à votre disposition la documentation [« Utiliser le logiciel Cyberduck avec son hébergement web »](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac){.external}, vous permettant de découvrir comment l'utiliser. Attention cependant, celle-ci ne se substitue pas à la documentation officielle de l'éditeur.
 
 - **utiliser l'interface du FTP Explorer** : vous devrez au préalable accéder à cette dernière via votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Une fois connecté, cliquez sur `Hébergements`{.action}, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `FTP - SSH`{.action} et cliquez sur le bouton `FTP Explorer`{.action}.
 
@@ -142,7 +139,7 @@ Dès que vous êtes prêt à poursuivre la manipulation, continuez vers l'étape
 
 Depuis l'interface ou le logiciel sélectionné, vous allez devoir vous connecter à votre espace de stockage pour accéder aux données de la sauvegarde que vous voulez récupérer. Pour cela, vous devrez être en possession du nom d'utilisateur FTP, de son mot de passe et du nom d'hôte de votre serveur FTP.
 
-Vous pouvez retrouver ces informations dans l'onglet `FTP - SSH`{.action} de votre hébergement. Si vous n’êtes plus en possession du mot de passe de l'utilisateur FTP, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](https://docs.ovh.com/ca/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/){.external}.
+Vous pouvez retrouver ces informations dans l'onglet `FTP - SSH`{.action} de votre hébergement. Si vous n’êtes plus en possession du mot de passe de l'utilisateur FTP, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](/pages/web/hosting/ftp_change_password){.external}.
 
 ![backupftp](images/backupftp-step4.png){.thumbnail}
 
@@ -176,11 +173,11 @@ Une fois connecté, il ne vous reste plus qu'à restaurer le ou les fichiers sou
 
 ## Aller plus loin
 
-[Utiliser le logiciel FileZilla avec son hébergement web](https://docs.ovh.com/ca/fr/hosting/mutualise-guide-utilisation-filezilla/){.external}.
+[Utiliser le logiciel FileZilla avec son hébergement web](/pages/web/hosting/ftp_filezilla_user_guide){.external}.
 
-[Utiliser le logiciel Cyberduck avec son hébergement web](https://docs.ovh.com/ca/fr/hosting/utilisation-cyberduck-mac/){.external}.
+[Utiliser le logiciel Cyberduck avec son hébergement web](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac){.external}.
 
-[Récupérer la sauvegarde de la base de données d’un hébergement web](https://docs.ovh.com/ca/fr/hosting/exportation-bases-donnees/){.external}.
+[Récupérer la sauvegarde de la base de données d’un hébergement web](/pages/web/hosting/sql_database_export){.external}.
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 

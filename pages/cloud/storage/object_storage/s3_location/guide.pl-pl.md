@@ -1,10 +1,7 @@
 ---
 title: Object Storage - Punkty końcowe i Object Storage geoavailability (EN)
-slug: s3/location
-section: General information
-order: 025
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/s3/location/'
+    canonical: '/pages/cloud/storage/object_storage/s3_location'
 updated: 2023-04-28
 ---
 

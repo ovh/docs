@@ -1,9 +1,6 @@
 ---
 title: 'Modificar la configuración de un alojamiento web'
-slug: cambiar_el_entorno_de_ejecucion_de_un_alojamiento
 excerpt: 'Cómo modificar la configuración de un alojamiento web de OVHcloud'
-section: 'Configuración del alojamiento'
-order: 03
 updated: 2022-12-09
 ---
 
@@ -42,7 +39,7 @@ Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=go
 > [!primary]
 > Si el botón `Cambiar la configuración`{.action} aparece oscurecido, es posible que se esté realizando una comprobación de la **versión PHP global**. En ese caso, aparecerá un círculo de color azul junto a la versión, indicando que se esta realizando una comprobación. Espere unos minutos hasta que el botón `Cambiar la configuración`{.action} vuelva a estar habilitado.
 >
-> Si la opción `versión PHP global`{.action} no aparece en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), compruebe que existe un archivo "**.ovhconfig**" en la raíz FTP de su alojamiento compartido de OVHcloud con ayuda de nuestra guía sobre [configuración del archivo ".ovhconfig"](https://docs.ovh.com/es/hosting/configurar-archivo-ovhconfig/).
+> Si la opción `versión PHP global`{.action} no aparece en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), compruebe que existe un archivo "**.ovhconfig**" en la raíz FTP de su alojamiento compartido de OVHcloud con ayuda de nuestra guía sobre [configuración del archivo ".ovhconfig"](/pages/web/hosting/ovhconfig_configuration).
 >
 
 #### 2. Comprobar la configuración del alojamiento web
@@ -52,7 +49,7 @@ La ventana ofrece dos opciones posibles. Seleccione la operación que desee real
 |Operación|Detalle|
 |---|---|
 |Volver a la configuración anterior|Seleccione la configuración que quiera restaurar en el menú desplegable **Historial**. Si no ha realizado ningún cambio anteriormente, esta opción no estará disponible.|
-|Modificar la configuración actual|Seleccione los cambios que quiera realizar en la configuración. Para más información sobre las distintas opciones de configuración, consulte el apartado [Opciones de configuración disponibles](https://docs.ovh.com/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento/#opciones-de-configuracion-disponibles){.external} de esta guía.|
+|Modificar la configuración actual|Seleccione los cambios que quiera realizar en la configuración. Para más información sobre las distintas opciones de configuración, consulte el apartado [Opciones de configuración disponibles](/pages/web/hosting/ovhconfig_modify_system_runtime#opciones-de-configuracion-disponibles){.external} de esta guía.|
 
 > [!primary]
 >
@@ -67,10 +64,10 @@ Haga clic en `Aceptar`{.action} para guardar los cambios y espere a que finalice
 
 Al modificar la configuración de un alojamiento web, se ofrecen diversas opciones. Continúe leyendo esta guía en el apartado correspondiente a la opción de la que desee ampliar la información:
 
-- [Entorno de ejecución](https://docs.ovh.com/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento/#entorno-de-ejecucion){.external}
-- [Versión de PHP](https://docs.ovh.com/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento/#version-de-php){.external}
-- [Motor de PHP](https://docs.ovh.com/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento/#motor-de-php){.external}
-- [Modo](https://docs.ovh.com/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento/#modo){.external}
+- [Entorno de ejecución](/pages/web/hosting/ovhconfig_modify_system_runtime#entorno-de-ejecucion){.external}
+- [Versión de PHP](/pages/web/hosting/ovhconfig_modify_system_runtime#version-de-php){.external}
+- [Motor de PHP](/pages/web/hosting/ovhconfig_modify_system_runtime#motor-de-php){.external}
+- [Modo](/pages/web/hosting/ovhconfig_modify_system_runtime#modo){.external}
 
 #### Entorno de ejecución
 
@@ -94,8 +91,8 @@ Cambiar el entorno de ejecución permite modificar determinados valores técnico
 
 Una vez que haya elegido el nuevo entorno, puede realizar el cambio de dos formas distintas:
 
-- **Desde el área de cliente**: Siga los pasos que se describen en el apartado [Modificar la configuración del alojamiento web desde el área de cliente](https://docs.ovh.com/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento/#modificar-la-configuracion-del-alojamiento-web-desde-el-area-de-cliente){.external} de esta guía.
-- **Modificando manualmente el archivo «.ovhconfig»**: Esta opción es más técnica y requiere estar conectado al espacio de almacenamiento. Si quiere editar el archivo **.ovhconfig**, consulte la guía [Configurar el archivo «.ovhconfig» de un alojamiento web](https://docs.ovh.com/es/hosting/configurar-archivo-ovhconfig/){.external}.
+- **Desde el área de cliente**: Siga los pasos que se describen en el apartado [Modificar la configuración del alojamiento web desde el área de cliente](/pages/web/hosting/ovhconfig_modify_system_runtime#modificar-la-configuracion-del-alojamiento-web-desde-el-area-de-cliente){.external} de esta guía.
+- **Modificando manualmente el archivo «.ovhconfig»**: Esta opción es más técnica y requiere estar conectado al espacio de almacenamiento. Si quiere editar el archivo **.ovhconfig**, consulte la guía [Configurar el archivo «.ovhconfig» de un alojamiento web](/pages/web/hosting/ovhconfig_configuration){.external}.
 
 #### Versión de PHP
 
@@ -105,10 +102,10 @@ Debido a que las nuevas versiones podrían no incluir ciertas funcionalidades, *
 
 Puede modificar la versión de PHP de su alojamiento web de varias formas:
 
-- **Desde el área de cliente**: Siga los pasos que se describen en el apartado [Modificar la configuración del alojamiento web desde el área de cliente](https://docs.ovh.com/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento/#modificar-la-configuracion-del-alojamiento-web-desde-el-area-de-cliente){.external} de esta guía.
+- **Desde el área de cliente**: Siga los pasos que se describen en el apartado [Modificar la configuración del alojamiento web desde el área de cliente](/pages/web/hosting/ovhconfig_modify_system_runtime#modificar-la-configuracion-del-alojamiento-web-desde-el-area-de-cliente){.external} de esta guía.
 - **Modificando manualmente un archivo en su espacio de almacenamiento**: Esta opción es más técnica y requiere estar conectado al espacio de almacenamiento. 
 
-Si desea más información sobre el cambio de una versión de PHP, consulte nuestra guía [Cambiar la versión de PHP de un alojamiento web](https://docs.ovh.com/es/hosting/cambiar-version-php-en-alojamiento-web/){.external}.
+Si desea más información sobre el cambio de una versión de PHP, consulte nuestra guía [Cambiar la versión de PHP de un alojamiento web](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014){.external}.
 
 #### Motor de PHP
 
@@ -116,8 +113,8 @@ La elección del motor de PHP permite activar o desactivar el acelerador de PHP 
 
 Puede cambiar el motor de PHP de su alojamiento web de dos formas distintas:
 
-- **Desde el área de cliente**: Siga los pasos que se describen en el apartado [Modificar la configuración del alojamiento web desde el área de cliente](https://docs.ovh.com/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento/#modificar-la-configuracion-del-alojamiento-web-desde-el-area-de-cliente){.external} de esta guía. Para activar el acelerador de PHP (PHP-FPM), seleccione «php» como motor. Para desactivarlo, seleccione «phpcgi».
-- **Modificando manualmente el archivo «.ovhconfig»**: Esta opción es más técnica y requiere estar conectado al espacio de almacenamiento. Si quiere editar el archivo **.ovhconfig**, consulte la guía [Configurar el archivo «.ovhconfig» de un alojamiento web](https://docs.ovh.com/es/hosting/configurar-archivo-ovhconfig/){.external}.
+- **Desde el área de cliente**: Siga los pasos que se describen en el apartado [Modificar la configuración del alojamiento web desde el área de cliente](/pages/web/hosting/ovhconfig_modify_system_runtime#modificar-la-configuracion-del-alojamiento-web-desde-el-area-de-cliente){.external} de esta guía. Para activar el acelerador de PHP (PHP-FPM), seleccione «php» como motor. Para desactivarlo, seleccione «phpcgi».
+- **Modificando manualmente el archivo «.ovhconfig»**: Esta opción es más técnica y requiere estar conectado al espacio de almacenamiento. Si quiere editar el archivo **.ovhconfig**, consulte la guía [Configurar el archivo «.ovhconfig» de un alojamiento web](/pages/web/hosting/ovhconfig_configuration){.external}.
 
 #### Modo
 
@@ -135,8 +132,8 @@ El modo permite gestionar el comportamiento del cacheado de los archivos estáti
 
 Puede cambiar el modo de su alojamiento web de dos formas distintas:
 
-- **Desde el área de cliente**: Siga los pasos que se describen en el apartado [Modificar la configuración del alojamiento web desde el área de cliente](https://docs.ovh.com/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento/#modificar-la-configuracion-del-alojamiento-web-desde-el-area-de-cliente){.external} de esta guía.
-- **Modificando manualmente el archivo «.ovhconfig»**: Esta opción es más técnica y requiere estar conectado al espacio de almacenamiento. Si quiere editar el archivo **.ovhconfig**, consulte la guía [Configurar el archivo «.ovhconfig» de un alojamiento web](https://docs.ovh.com/es/hosting/configurar-archivo-ovhconfig/){.external}.
+- **Desde el área de cliente**: Siga los pasos que se describen en el apartado [Modificar la configuración del alojamiento web desde el área de cliente](/pages/web/hosting/ovhconfig_modify_system_runtime#modificar-la-configuracion-del-alojamiento-web-desde-el-area-de-cliente){.external} de esta guía.
+- **Modificando manualmente el archivo «.ovhconfig»**: Esta opción es más técnica y requiere estar conectado al espacio de almacenamiento. Si quiere editar el archivo **.ovhconfig**, consulte la guía [Configurar el archivo «.ovhconfig» de un alojamiento web](/pages/web/hosting/ovhconfig_configuration){.external}.
 
 ## Más información
 

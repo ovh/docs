@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Iniziare a utilizzare WordPress"
-slug: wordpress-first-steps
 excerpt: "Questa guida ti mostra come creare un sito Web con CMS WordPress"
-section: Tutorial
-order: 020
 updated: 2023-02-17
 ---
 
@@ -30,12 +27,12 @@ Questa guida ti mostra come creare i tuoi primi contenuti, organizzarli, metterl
 
 - Disporre di un'offerta di [hosting web](https://www.ovhcloud.com/it/web-hosting/) che contiene almeno un database.
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
-- Aver [installato Wordpress](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/) sul tuo hosting Web
+- Aver [installato Wordpress](/pages/web/hosting/cms_install_1_click_modules) sul tuo hosting Web
 - Avere accesso allo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
-Se non lo hai già fatto e prima di continuare, [aggiungi un certificato SSL](https://docs.ovh.com/it/hosting/attivare-https-su-sito-internet-tramite-certificato-ssl/#step-1-attiva-il-certificato-ssl-sullhosting) sul dominio associato al tuo sito Web.
+Se non lo hai già fatto e prima di continuare, [aggiungi un certificato SSL](/pages/web/hosting/ssl-activate-https-website#step-1-attiva-il-certificato-ssl-sullhosting) sul dominio associato al tuo sito Web.
 
 Durante l'installazione del tuo CMS in 1 click, hai ricevuto un'email contenente gli elementi necessari a proseguire con questa guida:
 

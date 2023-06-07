@@ -1,9 +1,6 @@
 ---
 title: Utilizzo della diagnostica di errori Exchange
 excerpt: Come eseguire la diagnostica automatizzata degli errori sugli account Exchange
-slug: diagnostica_exchange_cosa_fare_in_caso_di_errore
-section: Diagnostica Exchange
-order: 01
 updated: 2022-10-19
 ---
 
@@ -24,7 +21,7 @@ Gli errori sugli account email Exchange possono avere diverse cause. Una diagnos
 - Disporre di una [soluzione Exchange OVHcloud](https://www.ovhcloud.com/it/emails/hosted-exchange/) già installata
 - Disporre delle credenziali di accesso per l'account Exchange da verificare
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Essere aggiornato nei [pagamenti](https://docs.ovh.com/it/billing/gestire-fatture-ovhcloud/#pay-bills) di questo servizio e del dominio associato
+- Essere aggiornato nei [pagamenti](/pages/account/billing/invoice_management#pay-bills) di questo servizio e del dominio associato
 
 ## Procedura
 
@@ -58,12 +55,12 @@ Un account bloccato riceve ancora email ma l'invio è stato disattivato dal sist
 
 Puoi verificarlo nella scheda `Account email`{.action} del tuo servizio Exchange. L'account visualizzerà una dicitura `SPAM` nella colonna "Stato" della tabella.
 
-Consulta la nostra guida [Cosa fare in caso di account bloccato per Spam?](../blocco-per-spam/) per consentire ai nostri team di sicurezza di riattivare l'account.
+Consulta la nostra guida [Cosa fare in caso di account bloccato per Spam?](/it/microsoft-collaborative-solutions/blocco-per-spam/) per consentire ai nostri team di sicurezza di riattivare l'account.
 
 ### L'abbonamento all'account è scaduto <a name="expired"></a>
 
 Il tuo abbonamento non è più attivo e l'invio e la ricezione sono stati disattivati.<br>
-Per riattivare il tuo abbonamento, è sufficiente riconfigurarne la [periodicità di fatturazione](https://docs.ovh.com/it/microsoft-collaborative-solutions/gestisci-fatturazione-exchange/#periodicity) nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+Per riattivare il tuo abbonamento, è sufficiente riconfigurarne la [periodicità di fatturazione](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#periodicity) nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 ### La politica di sicurezza ha bloccato l'account
 
@@ -73,11 +70,11 @@ Ad esempio, puoi decidere di bloccare l'account dopo diversi tentativi di connes
 
 In questo caso, puoi aspettare che l'account sia nuovamente disponibile o contattare il nostro team Exchange tramite una richiesta di assistenza.
 
-Per maggiori informazioni su questa funzionalità, consulta la nostra [guida sulla politica di sicurezza](../gestire-politica-di-sicurezza-password/).
+Per maggiori informazioni su questa funzionalità, consulta la nostra [guida sulla politica di sicurezza](/it/microsoft-collaborative-solutions/gestire-politica-di-sicurezza-password/).
 
 ### L'autenticazione alla Webmail è fallita <a name="password"></a>
 
-Questa operazione può essere dovuta all'inserimento di una password dell'account non corretta. Verifica che la password sia corretta, accedendo alla [Webmail](../exchange_2016_guida_allutilizzo_di_outlook_web_app/) e riavvia la diagnostica.
+Questa operazione può essere dovuta all'inserimento di una password dell'account non corretta. Verifica che la password sia corretta, accedendo alla [Webmail](/it/microsoft-collaborative-solutions/exchange_2016_guida_allutilizzo_di_outlook_web_app/) e riavvia la diagnostica.
 
 Se necessario, modifica la password dell'account nella scheda `Account email`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Se il problema persiste, crea una richiesta di assistenza.
 
@@ -107,7 +104,7 @@ In base all'utilizzo del tuo servizio Exchange, i server MX seguenti sono validi
 
 Il record SRV serve alla configurazione automatica del tuo account Exchange con un client di posta compatibile come Microsoft Outlook.
 
-Puoi verificare queste impostazioni nella [zona DNS del tuo dominio](../../domains/web_hosting_modifica_la_tua_zona_dns/).
+Puoi verificare queste impostazioni nella [zona DNS del tuo dominio](/pages/web/domains/dns_zone_edit).
 
 Ecco i valori per un servizio Exchange:
 

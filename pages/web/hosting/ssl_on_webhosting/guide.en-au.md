@@ -1,9 +1,6 @@
 ---
 title: 'Managing SSL certificates on a Web Hosting plan'
-slug: ssl-certificates-on-web-hosting-plans
 excerpt: 'Find out how to configure your SSL certificate on an OVHcloud Web Hosting plan'
-section: SSL
-order: 01
 updated: 2022-08-01
 ---
 
@@ -45,7 +42,7 @@ There are three status types that may appear:
 
 |Status|Description|
 |---|---|
-|Enabled|An SSL certificate has already been activated for this multisite. However, if your website is not available via HTTPS, please refer to the instructions listed in our guide on [Activating HTTPS on your website with an SSL certificate](../activate-https-website-ssl/).|
+|Enabled|An SSL certificate has already been activated for this multisite. However, if your website is not available via HTTPS, please refer to the instructions listed in our guide on [Activating HTTPS on your website with an SSL certificate](/pages/web/hosting/ssl-activate-https-website).|
 |To generate|An SSL certificate has been activated for this website, but it is still not technically active. To activate the SSL certificate properly, you will need to [regenerate the certificate](#regeneratessl), in order to include the new domain names.|
 |Disabled|An SSL certificate has not been activated for this multisite. To activate it, follow the steps listed below.|
 
@@ -79,7 +76,7 @@ Before you configure this, make sure that the previous step of [Activating an SS
 > - Configure the DNS zone of the domain name declared in multisite, in the section `Domains`{.action}, tab `DNS zone`{.action}. Modify or add an `A` record corresponding to your multisite entry and enter your hosting plan’s IP address in the `Target`.
 > ![manager](images/manage-ssl-arecord02.png){.thumbnail}
 >
-> For more details, please refer to our guides [on configuring a multisite record](https://docs.ovh.com/au/en/hosting/multisites-configuring-multiple-websites/) or [on configuring a DNS zone](https://docs.ovh.com/au/en/domains/web_hosting_how_to_edit_my_dns_zone/).
+> For more details, please refer to our guides [on configuring a multisite record](/pages/web/hosting/multisites_configure_multisite) or [on configuring a DNS zone](/pages/web/domains/dns_zone_edit).
 
 With an OVHcloud Web Hosting plan, you can choose from a range of [SSL certificate solutions](https://www.ovhcloud.com/en-au/web-hosting/options/ssl/){.external}:
 

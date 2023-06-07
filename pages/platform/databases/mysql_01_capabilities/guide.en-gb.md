@@ -1,9 +1,6 @@
 ---
 title: MySQL - Capabilities and Limitations
-slug: mysql/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for MySQL
-section: MySQL - Guides
-order: 010
 updated: 2023-04-14
 ---
 
@@ -147,7 +144,7 @@ Note that the MySQL max-connections setting is always set to one higher (e.g. 52
 
 #### Advanced parameters
 
-You can further customise your MySQL by using advanced parameters. See the [Advanced parameters references documentation](https://docs.ovh.com/gb/en/publiccloud/databases/mysql/advanced-parameters-references/) for more information on the supported parameters.
+You can further customise your MySQL by using advanced parameters. See the [Advanced parameters references documentation](/pages/platform/databases/mysql_08_advanced_parameters_references) for more information on the supported parameters.
 
 #### Backups
 

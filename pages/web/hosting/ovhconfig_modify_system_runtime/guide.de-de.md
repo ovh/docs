@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguration Ihres Webhostings bearbeiten'
-slug: die_laufzeitumgebung_meines_webhostings_andern
 excerpt: 'Hier erfahren Sie, wie Sie die Konfiguration Ihres OVHcloud Webhostings bearbeiten.'
-section: 'Webhosting-Konfiguration'
-order: 02
 updated: 2022-12-09
 ---
 
@@ -42,7 +39,7 @@ Um zu beginnen, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https
 > [!primary]
 >Ist der Button `Konfiguration ändern`{.action} ausgegraut, läuft möglicherweise gerade eine Überprüfung der **globalen PHP-Version**. Ist das der Fall, erscheint ein blaues, rundes Symbol neben der Version, um die laufende Überprüfung anzuzeigen. Warten Sie einige Minuten, bis der Button `Konfiguration ändern`{.action} wieder verfügbar ist.
 >
-> Wenn die Option `Globale PHP-Version`{.action} nicht in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erscheint, überprüfen Sie anhand [unserer Anleitung](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/) ob die Datei ".ovhconfig" im FTP-Wurzelverzeichnis Ihres OVHcloud Webhostings existiert. 
+> Wenn die Option `Globale PHP-Version`{.action} nicht in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erscheint, überprüfen Sie anhand [unserer Anleitung](/pages/web/hosting/ovhconfig_configuration) ob die Datei ".ovhconfig" im FTP-Wurzelverzeichnis Ihres OVHcloud Webhostings existiert. 
 >
 
 #### Schritt 2: Webhosting-Konfiguration bearbeiten
@@ -52,7 +49,7 @@ Im angezeigten Fenster werden Ihnen zwei Optionen angezeigt. Wählen Sie die Opt
 |Option|Detail|
 |---|---|
 |„Zurück zur vorherigen Konfiguration“|Wenn Sie diese Option ausgewählt haben, wählen Sie anschließend neben `Ursprüngliche Wahl` die frühere Konfiguration aus, die Sie wiederherstellen möchten. Diese Option steht gegebenenfalls nicht zur Verfügung, wenn bisher noch keine Konfigurationsänderungen vorgenommen wurden.|
-|„Aktuelle Konfiguration ändern“|Wenn Sie diese Option ausgewählt haben, wählen Sie die auszuführenden Konfigurationsänderungen in den angezeigten Feldern aus. Wenn nötig, können Sie diese im Abschnitt [„Verfügbare Konfigurationen“](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/#verfugbare-konfigurationen){.external} in dieser Anleitung nachlesen.|
+|„Aktuelle Konfiguration ändern“|Wenn Sie diese Option ausgewählt haben, wählen Sie die auszuführenden Konfigurationsänderungen in den angezeigten Feldern aus. Wenn nötig, können Sie diese im Abschnitt [„Verfügbare Konfigurationen“](/pages/web/hosting/ovhconfig_modify_system_runtime#verfugbare-konfigurationen){.external} in dieser Anleitung nachlesen.|
 
 > [!primary]
 >
@@ -67,10 +64,10 @@ Wenn Sie fertig sind, klicken Sie auf `Bestätigen`{.action}, um die Änderung d
 
 Wenn Sie die Konfiguration eines Webhostings bearbeiten, können Sie aus verschiedenen möglichen Konfigurationen wählen. Lesen Sie die entsprechenden Abschnitte in dieser Anleitung, um weitere Informationen zur gewünschten Konfigurationsoption zu erhalten.
 
-- [Ausführungsumgebung](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/#ausfuhrungsumgebung){.external}
-- [PHP-Version](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/#php-version){.external}
-- [PHP-Engine](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/#php-engine){.external}
-- [Modus](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/#modus){.external}
+- [Ausführungsumgebung](/pages/web/hosting/ovhconfig_modify_system_runtime#ausfuhrungsumgebung){.external}
+- [PHP-Version](/pages/web/hosting/ovhconfig_modify_system_runtime#php-version){.external}
+- [PHP-Engine](/pages/web/hosting/ovhconfig_modify_system_runtime#php-engine){.external}
+- [Modus](/pages/web/hosting/ovhconfig_modify_system_runtime#modus){.external}
 
 #### Ausführungsumgebung
 
@@ -94,8 +91,8 @@ Indem Sie die Ausführungsumgebung ändern, können Sie auch einige technische W
 
 Wenn Sie Ihre Wahl getroffen haben, haben Sie zwei Optionen, um die Änderung auszuführen:
 
-- **über Ihr Kundencenter**: Folgen Sie den Anweisungen im Abschnitt [„Webhosting-Konfiguration über das Kundencenter bearbeiten“](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/#webhosting-konfiguration-uber-das-kundencenter-bearbeiten){.external} in dieser Anleitung.
-- **indem Sie die Datei „.ovhconfig“ manuell bearbeiten**: Diese Option ist technisch anspruchsvoller und setzt voraus, dass Sie auf Ihrem Speicherplatz eingeloggt sind. Wenn Sie die Datei „**.ovhconfig**“ bearbeiten möchten, folgen Sie den Anweisungen in unserer Anleitung [„.ovhconfig-Datei Ihres Webhostings konfigurieren“](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/){.external}.
+- **über Ihr Kundencenter**: Folgen Sie den Anweisungen im Abschnitt [„Webhosting-Konfiguration über das Kundencenter bearbeiten“](/pages/web/hosting/ovhconfig_modify_system_runtime#webhosting-konfiguration-uber-das-kundencenter-bearbeiten){.external} in dieser Anleitung.
+- **indem Sie die Datei „.ovhconfig“ manuell bearbeiten**: Diese Option ist technisch anspruchsvoller und setzt voraus, dass Sie auf Ihrem Speicherplatz eingeloggt sind. Wenn Sie die Datei „**.ovhconfig**“ bearbeiten möchten, folgen Sie den Anweisungen in unserer Anleitung [„.ovhconfig-Datei Ihres Webhostings konfigurieren“](/pages/web/hosting/ovhconfig_configuration){.external}.
 
 #### PHP-Version
 
@@ -105,10 +102,10 @@ Da manche Features von neueren Versionen nicht mehr unterstützt werden, **stell
 
 Sie haben verschiedene Möglichkeiten, um die PHP-Version Ihres Webhostings zu ändern:
 
-- **über Ihr Kundencenter**: Folgen Sie den Anweisungen im Abschnitt [„Webhosting-Konfiguration über das Kundencenter bearbeiten“](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/#webhosting-konfiguration-uber-das-kundencenter-bearbeiten){.external} in dieser Anleitung.
+- **über Ihr Kundencenter**: Folgen Sie den Anweisungen im Abschnitt [„Webhosting-Konfiguration über das Kundencenter bearbeiten“](/pages/web/hosting/ovhconfig_modify_system_runtime#webhosting-konfiguration-uber-das-kundencenter-bearbeiten){.external} in dieser Anleitung.
 - **indem Sie manuell eine Datei auf Ihrem Speicherplatz bearbeiten**: Diese Option ist technisch anspruchsvoller und setzt voraus, dass Sie auf Ihrem Speicherplatz eingeloggt sind. 
 
-Wenn Sie ganz allgemein mehr Informationen zur Änderung der PHP-Version erhalten möchten, lesen Sie unsere Anleitung [„PHP-Version eines OVHcloud Webhostings ändern“](https://docs.ovh.com/de/hosting/konfiguration_von_php_fur_ein_ovh_webhosting_2014/){.external}.
+Wenn Sie ganz allgemein mehr Informationen zur Änderung der PHP-Version erhalten möchten, lesen Sie unsere Anleitung [„PHP-Version eines OVHcloud Webhostings ändern“](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014){.external}.
 
 #### PHP-Engine
 
@@ -116,8 +113,8 @@ Je nach Wahl der PHP-Engine können Sie den PHP-Beschleuniger („PHP-FPM“) ak
 
 Um die PHP-Engine Ihres Webhostings zu ändern, haben Sie zwei Optionen:
 
-- **über Ihr Kundencenter**: Folgen Sie den Anweisungen im Abschnitt [„Webhosting-Konfiguration über das Kundencenter bearbeiten“](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/#webhosting-konfiguration-uber-das-kundencenter-bearbeiten){.external} in dieser Anleitung. Um den PHP-Beschleuniger („PHP-FPM“) zu aktivieren, wählen Sie „php“ als Engine aus. Um den Beschleuniger zu deaktivieren, wählen Sie „phpcgi“.
-- **indem Sie die Datei „.ovhconfig“ manuell bearbeiten**: Diese Option ist technisch anspruchsvoller und setzt voraus, dass Sie auf Ihrem Speicherplatz eingeloggt sind. Wenn Sie die Datei „**.ovhconfig**“ bearbeiten möchten, folgen Sie den Anweisungen in unserer Anleitung [„.ovhconfig-Datei Ihres Webhostings konfigurieren“](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/){.external}.
+- **über Ihr Kundencenter**: Folgen Sie den Anweisungen im Abschnitt [„Webhosting-Konfiguration über das Kundencenter bearbeiten“](/pages/web/hosting/ovhconfig_modify_system_runtime#webhosting-konfiguration-uber-das-kundencenter-bearbeiten){.external} in dieser Anleitung. Um den PHP-Beschleuniger („PHP-FPM“) zu aktivieren, wählen Sie „php“ als Engine aus. Um den Beschleuniger zu deaktivieren, wählen Sie „phpcgi“.
+- **indem Sie die Datei „.ovhconfig“ manuell bearbeiten**: Diese Option ist technisch anspruchsvoller und setzt voraus, dass Sie auf Ihrem Speicherplatz eingeloggt sind. Wenn Sie die Datei „**.ovhconfig**“ bearbeiten möchten, folgen Sie den Anweisungen in unserer Anleitung [„.ovhconfig-Datei Ihres Webhostings konfigurieren“](/pages/web/hosting/ovhconfig_configuration){.external}.
 
 #### Modus
 
@@ -135,8 +132,8 @@ Indem Sie den Modus wählen, können Sie festlegen, wie die statischen Dateien (
 
 Um den von Ihrem Webhosting verwendeten Modus zu ändern, haben Sie zwei Optionen:
 
-- **über Ihr Kundencenter**: Folgen Sie den Anweisungen im Abschnitt [„Webhosting-Konfiguration über das Kundencenter bearbeiten“](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/#webhosting-konfiguration-uber-das-kundencenter-bearbeiten){.external} in dieser Anleitung.
-- **indem Sie die Datei „.ovhconfig“ manuell bearbeiten**: Diese Option ist technisch anspruchsvoller und setzt voraus, dass Sie auf Ihrem Speicherplatz eingeloggt sind. Wenn Sie die Datei „**.ovhconfig**“ bearbeiten möchten, folgen Sie den Anweisungen in unserer Anleitung [„.ovhconfig-Datei Ihres Webhostings konfigurieren“](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/){.external}.
+- **über Ihr Kundencenter**: Folgen Sie den Anweisungen im Abschnitt [„Webhosting-Konfiguration über das Kundencenter bearbeiten“](/pages/web/hosting/ovhconfig_modify_system_runtime#webhosting-konfiguration-uber-das-kundencenter-bearbeiten){.external} in dieser Anleitung.
+- **indem Sie die Datei „.ovhconfig“ manuell bearbeiten**: Diese Option ist technisch anspruchsvoller und setzt voraus, dass Sie auf Ihrem Speicherplatz eingeloggt sind. Wenn Sie die Datei „**.ovhconfig**“ bearbeiten möchten, folgen Sie den Anweisungen in unserer Anleitung [„.ovhconfig-Datei Ihres Webhostings konfigurieren“](/pages/web/hosting/ovhconfig_configuration){.external}.
 
 ## Weiterführende Informationen
 

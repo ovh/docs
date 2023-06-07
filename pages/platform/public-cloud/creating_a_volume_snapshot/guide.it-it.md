@@ -1,9 +1,6 @@
 ---
 title: Creare uno Snapshot di un volume
-slug: creating-volume-snapshot
 excerpt: Come creare uno Snapshot di un disco aggiuntivo Public Cloud
-section: Storage
-order: 2
 updated: 2023-04-21
 ---
 
@@ -20,7 +17,7 @@ La creazione di un Volume Snapshot non richiede che il volume sia scollegato dal
 
 Questa opzione non deve essere confusa con un **Volume Backup** è un'immagine creata a partire dal tuo volume, salvata nel cluster Object Storage della localizzazione del volume originale.
 Questo livello di resilienza è ideale e permette di reagire rapidamente a qualsiasi incidente sul volume creando un altro volume a partire dal backup.<br>
-Per creare un backup del volume è necessario scollegarlo dall'istanza. Per ulteriori informazioni su questa opzione, consultare questa [guida](https://docs.ovh.com/it/public-cloud/volume-backup/).
+Per creare un backup del volume è necessario scollegarlo dall'istanza. Per ulteriori informazioni su questa opzione, consultare questa [guida](/pages/platform/public-cloud/volume-backup).
 
 Creare uno Snapshot di un volume aggiuntivo corrisponde generalmente a due obiettivi:
 
@@ -40,7 +37,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 ![Volume Snapshot](images/volume_snapshot01.png){.thumbnail}
 
-A destra del volume interessato, clicca sui tre puntini `...`{.action} e poi su `Crea uno Snapshot`{.action} (non è necessario scollegare prima il volume dell'istanza). Se vuoi scollegare il tuo volume, consulta [questa sezione](https://docs.ovh.com/it/public-cloud/crea_e_configura_un_disco_aggiuntivo_sulla_tua_istanza/scollega-un-volume/#con-linux) della relativa guida per Linux e [questa sezione](https://docs.ovh.com/it/public-cloud/crea_e_configura_un_disco_aggiuntivo_sulla_tua_istanza/scollega-un-volume/#con-linux) per Windows.
+A destra del volume interessato, clicca sui tre puntini `...`{.action} e poi su `Crea uno Snapshot`{.action} (non è necessario scollegare prima il volume dell'istanza). Se vuoi scollegare il tuo volume, consulta [questa sezione](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instancescollega-un-volume/#con-linux) della relativa guida per Linux e [questa sezione](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instancescollega-un-volume/#con-linux) per Windows.
 
 ![Volume Snapshot](images/volume_snapshot02.png){.thumbnail}
 
@@ -62,16 +59,16 @@ Dato che uno Snapshot di volume è un clone su tutto il disco, avrà la dimensio
 
 Apri la sezione `Volume Snapshot`{.action} nella barra di navigazione a sinistra. Una volta creato lo Snapshot, verrà aggiunto a questa tabella.
 
-Clicca sul pulsante `...`{.action} per eliminare uno Snapshot o `Creare un volume`{.action} a partire dallo Snapshot corrispondente. Per maggiori informazioni, consulta [questa guida](../creare-volume-da-backup/).
+Clicca sul pulsante `...`{.action} per eliminare uno Snapshot o `Creare un volume`{.action} a partire dallo Snapshot corrispondente. Per maggiori informazioni, consulta [questa guida](/pages/platform/public-cloud/create-volume-from-snapshot).
 
 ## Per saperne di più
 
-[Creare un backup di un volume](https://docs.ovh.com/it/public-cloud/volume-backup/)
+[Creare un backup di un volume](/pages/platform/public-cloud/volume-backup)
 
-[Creare un volume a partire da un backup](../creare-volume-da-backup/)
+[Creare un volume a partire da un backup](/pages/platform/public-cloud/create-volume-from-snapshot)
 
-[Crea e configura un disco aggiuntivo sulla tua istanza](../crea_e_configura_un_disco_aggiuntivo_sulla_tua_istanza/)
+[Crea e configura un disco aggiuntivo sulla tua istanza](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
 
-[Aumenta la spazio del tuo disco aggiuntivo](../aumenta_la_spazio_del_tuo_disco_aggiuntivo/)
+[Aumenta la spazio del tuo disco aggiuntivo](/pages/platform/public-cloud/increase_the_size_of_an_additional_disk)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -1,11 +1,8 @@
 ---
 title: VMware DRS (Distributed Ressource Scheduler)
-slug: vmware-drs-distributed-ressource-scheduler-new
 routes:
-    canonical: 'https://docs.ovh.com/pt/private-cloud/vmware-drs-distributed-ressource-scheduler-new/'
+    canonical: '/pages/cloud/private-cloud/vmware_drs_distributed_ressource_scheduler_new'
 excerpt: Controlar a repartição de carga com a função DRS
-section: Funcionalidades VMware vSphere
-order: 03
 updated: 2020-11-18
 ---
 
@@ -20,7 +17,7 @@ A função **DRS** (Distributed Ressource Scheduler), disponível nos clusters *
 ## Requisitos
 
 - Ter um produto [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
-- Estar ligado à [interface vSphere](../instalar_o_vsphere_client/).
+- Estar ligado à [interface vSphere](/pages/cloud/managed-bare-metal/vsphere-interface).
 
 ## Instruções
 
@@ -112,7 +109,7 @@ Encontrará no separador `Configurar` a gestão das regras relativas a MV/hosts.
 - Separar as máquinas virtuais: As MV são distribuídas por hosts diferentes no seio de um mesmo cluster.
 - Máquinas virtuais a hosts: As MV que pertençam ao grupo especificado devem ser executadas no grupo de hosts designado. É necessário criar grupos de MV e de hosts no separador `Grupos de MV/Hosts`.
 
-A quarta regra, «Máquinas virtuais a máquinas virtuais», encontra-se explicada no guia sobre a [função HA](../vmware-ha-high-availability/).
+A quarta regra, «Máquinas virtuais a máquinas virtuais», encontra-se explicada no guia sobre a [função HA](/pages/cloud/managed-bare-metal/vmware_ha_high_availability).
 
 ![Criação de regras DRS](images/drs07.png){.thumbnail}
 

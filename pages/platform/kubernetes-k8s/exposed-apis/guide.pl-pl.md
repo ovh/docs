@@ -1,10 +1,8 @@
 ---
 title: Exposed APIs, Kubernetes configuration and Feature gates
 excerpt: ''
-slug: exposed-apis-feature-gates
-section: Technical resources
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/exposed-apis-feature-gates/'
+    canonical: '/pages/platform/kubernetes-k8s/exposed-apis'
 updated: 2022-05-30
 ---
 
@@ -18,7 +16,7 @@ We have added a [Kubernetes section](https://ca.api.ovh.com/console/#/cloud/proj
 Using it allows you to add and remove nodes, update and reset your clusters or get `kubectl` configuration.
 
 > [!primary]
-> If you have never used the OVHcloud API, you can learn the basics in [First steps with the OVHcloud API](../../api/first-steps-with-ovh-api/).
+> If you have never used the OVHcloud API, you can learn the basics in [First steps with the OVHcloud API](/pages/account/api/first-steps).
 
 ## Kubernetes configuration
 

@@ -1,9 +1,6 @@
 ---
 title: Come gestire il tuo modulo in 1 click?
 excerpt: Come gestire il tuo modulo in 1 click dallo Spazio Cliente OVHcloud
-slug: 1-click-module-management
-section: CMS
-order: 02
 updated: 2022-09-05
 ---
 
@@ -29,7 +26,7 @@ I moduli in 1 click permettono di installare facilmente e rapidamente un softwar
 ## Prerequisiti
 
 - Disporre di un'[offerta di hosting Web Cloud](https://www.ovhcloud.com/it/web-hosting/) che consenta l'installazione di un modulo in 1 click
-- Aver creato un modulo in 1 click sul tuo hosting (Se non l'hai ancora installato, segui questa [guida](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/)).
+- Aver creato un modulo in 1 click sul tuo hosting (Se non l'hai ancora installato, segui questa [guida](/pages/web/hosting/cms_install_1_click_modules)).
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
@@ -42,7 +39,7 @@ Clicca sui tre puntini `...`{.action} a destra della riga relativa al tuo modulo
 
 > [!primary]
 >
-> Se il tuo sito non appare correttamente a seguito di questa operazione, consulta le guide OVHcloud relative agli hosting condivisi nella sezione [Diagnostica](https://docs.ovh.com/it/hosting/).
+> Se il tuo sito non appare correttamente a seguito di questa operazione, consulta le guide OVHcloud relative agli hosting condivisi nella sezione [Diagnostica](/products/web-cloud-hosting).
 >
 
 ### Accedi all'interfaccia amministratore
@@ -108,7 +105,7 @@ Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di eseguire l'operazion
 
 > [!warning]
 >
-> Il backup dei tuoi dati è una delle operazioni principali per la [sicurezza dei tuoi siti](https://docs.ovh.com/it/hosting/secure-website/). Ti consigliamo di importare regolarmente e **prima di eliminare** il backup dei tuoi dati su un supporto locale, come una chiavetta USB o un hard disk esterno, seguendo le istruzioni di questa [guida](https://docs.ovh.com/gb/en/hosting/export-a-website/).
+> Il backup dei tuoi dati è una delle operazioni principali per la [sicurezza dei tuoi siti](/pages/web/hosting/secure_your_website). Ti consigliamo di importare regolarmente e **prima di eliminare** il backup dei tuoi dati su un supporto locale, come una chiavetta USB o un hard disk esterno, seguendo le istruzioni di questa [guida](/pages/web/hosting/exporter-son-site-web).
 >
 
 #### Step 1: identifica il database associato al tuo modulo <a name="step1"></a>
@@ -119,7 +116,7 @@ Se disponi di un solo database in questa parte del tuo Spazio Cliente e non disp
 
 In caso contrario, clicca sulla scheda `Multisito`{.action}. Annota il nome della `Cartella di root`: è la directory in cui sono presenti i file che costituiscono il tuo modulo in 1 click sul server FTP.
 
-Accedi allo [spazio FTP del tuo hosting](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/). Apri la `Cartella di root` trovata precedentemente nella scheda `Multisito`{.action} e cerca il file di configurazione del tuo modulo:
+Accedi allo [spazio FTP del tuo hosting](/pages/web/hosting/ftp_connection). Apri la `Cartella di root` trovata precedentemente nella scheda `Multisito`{.action} e cerca il file di configurazione del tuo modulo:
 
 - Per WordPress : **"wp-config.php"** (il nome del database compare con la dicitura **"DB_NAME"**).
 - Per Joomla! : **"configuration.php"** (il nome del database compare con la dicitura **"public $db"**).
@@ -128,7 +125,7 @@ Accedi allo [spazio FTP del tuo hosting](https://docs.ovh.com/it/hosting/acceder
 
 #### Step 2: salvare il tuo modulo (facoltativo)
 
-Per effettuare il backup del tuo sito, segui le istruzioni di questa [guida](https://docs.ovh.com/gb/en/hosting/export-a-website/) per recuperare sia i file sullo spazio FTP del tuo hosting che i database.
+Per effettuare il backup del tuo sito, segui le istruzioni di questa [guida](/pages/web/hosting/exporter-son-site-web) per recuperare sia i file sullo spazio FTP del tuo hosting che i database.
 
 #### Step 3: elimina il tuo modulo
 
@@ -143,7 +140,7 @@ Clicca sui tre puntini `...`{.action} a destra della linea che indica il tuo mod
 
 > [!warning]
 >
-> L'eliminazione del modulo 1 click **non comporta automaticamente l'eliminazione del database**. Se avvii l'installazione di un nuovo CMS senza aver prima eliminato il database del precedente (e il tuo hosting non consente la creazione automatica di un nuovo database), il messaggio "[Si è verificato un errore durante il caricamento delle informazioni (You need at least one free database)](https://docs.ovh.com/it/hosting/errori-frequenti-moduli-in-1-click/#si-e-verificato-un-errore-durante-il-caricamento-delle-informazioni-you-need-at-least-one-free-database)" comparirà sul tuo Spazio Cliente.
+> L'eliminazione del modulo 1 click **non comporta automaticamente l'eliminazione del database**. Se avvii l'installazione di un nuovo CMS senza aver prima eliminato il database del precedente (e il tuo hosting non consente la creazione automatica di un nuovo database), il messaggio "[Si è verificato un errore durante il caricamento delle informazioni (You need at least one free database)](/pages/web/hosting/diagnostic_errors_module1clic#si-e-verificato-un-errore-durante-il-caricamento-delle-informazioni-you-need-at-least-one-free-database)" comparirà sul tuo Spazio Cliente.
 >
 > Se disponi di un abbonamento [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/) o hai già creato quattro database sul tuo hosting [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), dovrai eliminare il database identificato nello [Step 1](#step1) **PRIMA** di poter creare un nuovo modulo in 1 click.
 >
@@ -154,7 +151,7 @@ Prima di riavviare l'installazione di un nuovo modulo, verifica che le operazion
 
 ### Buone prassi
 
-Rendi sicuro il tuo sito seguendo le istruzioni di questa [guida](https://docs.ovh.com/it/hosting/secure-website/).
+Rendi sicuro il tuo sito seguendo le istruzioni di questa [guida](/pages/web/hosting/secure_your_website).
 
 Aggiungi strumenti di test del tipo CAPTCHA ai moduli del tuo sito.
 
@@ -167,7 +164,7 @@ Non installate sul vostro sito plugin o template che non sono stati consigliati 
 
 ## Spingiti oltre <a name="go-further"></a>
 
-[Risolvere gli errori più frequenti associati ai moduli in 1 click](https://docs.ovh.com/it/hosting/errori-frequenti-moduli-in-1-click/).
+[Risolvere gli errori più frequenti associati ai moduli in 1 click](/pages/web/hosting/diagnostic_errors_module1clic).
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 

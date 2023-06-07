@@ -1,9 +1,6 @@
 ---
 title: 'Transférer son nom de domaine vers OVHcloud'
-slug: transferer-mon-domaine-generique
 excerpt: "Apprenez comment réaliser le transfert d'un nom de domaine vers OVHcloud"
-section: Transfert
-order: 01
 updated: 2022-11-18
 ---
 
@@ -21,9 +18,9 @@ En transférant votre nom de domaine, vous changerez de registre pour celui-ci. 
 >
 > Si le nom de domaine en cours de modification est actuellement enregistré chez OVHcloud, le transfert entrant de domaine n'est pas la procédure appropriée. Cette procédure s’applique uniquement au changement de nom de domaine enregistré (OVHcloud).
 >
-> Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/).
+> Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](/pages/account/customer/managing_contacts).
 >
-> Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](https://docs.ovh.com/ca/fr/domains/changement-proprietaire-domaine/).
+> Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](/pages/web/domains/trade_domain).
 >
 
 ## Prérequis
@@ -95,7 +92,7 @@ Lorsque vous êtes invité à fournir votre code de transfert, entrez-le dans la
 
 ![domain](images/step_authinfo_add.png){.thumbnail}
 
-Vous pouvez également terminer votre commande avec un [hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} et d'autres solutions OVHcloud. Cela peut vous intéresser si vous souhaitez également migrer vos services vers OVHcloud. Notre guide intitulé « [Migrer mon site chez OVHcloud](../../hosting/migrer-mon-site-chez-ovh/){.external} » vous fournira des instructions sur la façon de procéder.
+Vous pouvez également terminer votre commande avec un [hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} et d'autres solutions OVHcloud. Cela peut vous intéresser si vous souhaitez également migrer vos services vers OVHcloud. Notre guide intitulé « [Migrer mon site chez OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external} » vous fournira des instructions sur la façon de procéder.
 
 > [!warning]
 >
@@ -110,7 +107,7 @@ Vous pouvez également terminer votre commande avec un [hébergement web](https:
 
 - En cliquant sur `Modifier la configuration`{.action} dans cette étape, vous pouvez entrer les noms des serveurs DNS que le nom de domaine utilise actuellement. De cette manière, le nom de domaine sera déjà associé à ces serveurs DNS dans la configuration OVHcloud.
 
-- Si vous continuez sans effectuer cette opération, le nom de domaine sera fourni avec une nouvelle zone DNS sur les serveurs DNS OVHcloud. Une [modification manuelle de la zone DNS](../editer-ma-zone-dns/) peut alors devenir nécessaire.
+- Si vous continuez sans effectuer cette opération, le nom de domaine sera fourni avec une nouvelle zone DNS sur les serveurs DNS OVHcloud. Une [modification manuelle de la zone DNS](/pages/web/domains/dns_zone_edit) peut alors devenir nécessaire.
 
 - Dans certains cas, le processus de transfert peut nécessiter des informations supplémentaires concernant le propriétaire du nom de domaine. Pour ajouter ces informations, cliquez sur l'option `Gérer les contacts/le propriétaire`{.action}.
 
@@ -154,7 +151,7 @@ Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de d
 
 ## Aller plus loin
 
-[Migration de votre site Web et de vos e-mails vers OVHcloud](../../hosting/migrer-mon-site-chez-ovh/){.external}
+[Migration de votre site Web et de vos e-mails vers OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 

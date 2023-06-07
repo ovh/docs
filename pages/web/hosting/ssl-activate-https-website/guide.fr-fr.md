@@ -1,9 +1,6 @@
 ---
 title: "Passer son site internet en HTTPS grâce au SSL"
-slug: passer-site-internet-https-ssl
 excerpt: "Découvrez comment passer votre site internet en HTTPS grâce au SSL"
-section: SSL
-order: 02
 updated: 2022-10-04
 ---
 
@@ -49,7 +46,7 @@ L'activation du certificat SSL sur votre hébergement web s'effectue depuis votr
 |Activer un certificat SSL sur votre hébergement.|Permet à OVHcloud d'installer un certificat SSL sur votre hébergement. Vous devrez choisir entre plusieurs types de certificats. Assurez-vous de sélectionner le plus adapté à votre situation.|
 |Activer le SSL sur le multisite concerné.|Le site internet pour lequel vous souhaitez utiliser le HTTPS doit être configuré en tant que « multisite » sur votre hébergement. Assurez-vous alors que le SSL est bien actif pour celui-ci.|
 
-La marche à suivre complète de ces deux manipulations est accessible sur notre documentation « [Gérer un certificat SSL sur son hébergement web](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/){.external} ». Si vous venez d'acquérir votre hébergement OVHcloud, il est cependant possible qu'un certificat SSL gratuit y soit déjà installé et que le multisite bénéficie déjà d'une connexion SSL active.
+La marche à suivre complète de ces deux manipulations est accessible sur notre documentation « [Gérer un certificat SSL sur son hébergement web](/pages/web/hosting/ssl_on_webhosting){.external} ». Si vous venez d'acquérir votre hébergement OVHcloud, il est cependant possible qu'un certificat SSL gratuit y soit déjà installé et que le multisite bénéficie déjà d'une connexion SSL active.
 
 Pour le vérifier, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement web concerné. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}. En dessous de « Certificat SSL », la mention « Oui » devrait apparaître, vous indiquant qu'un certificat SSL est installé sur votre hébergement web. 
 
@@ -59,7 +56,7 @@ Positionnez-vous ensuite sur l'onglet `Multisite`{.action}. Le tableau qui s’a
 
 ![httpswebsite](images/activate-https-website-ssl-step3.png){.thumbnail}
 
-Si l'une de ces vérifications n'a pas permis de vous assurer qu'un certificat SSL est bien installé sur votre hébergement web et/ou actif sur le multisite concerné, reportez-vous alors à notre documentation « [Gérer un certificat SSL sur son hébergement web](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/){.external} ».
+Si l'une de ces vérifications n'a pas permis de vous assurer qu'un certificat SSL est bien installé sur votre hébergement web et/ou actif sur le multisite concerné, reportez-vous alors à notre documentation « [Gérer un certificat SSL sur son hébergement web](/pages/web/hosting/ssl_on_webhosting){.external} ».
 
 ### Étape 2 : vérifier l'environnement technique
 

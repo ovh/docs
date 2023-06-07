@@ -1,9 +1,6 @@
 ---
 title: "Reencaminhar um domínio gerido pela OVHcloud"
-slug: reencaminhamento-dominio
 excerpt: "Descubra os diferentes tipos de reencaminhamento e como criar um reencaminhamento para um domínio gerido pela OVHcloud"
-section: Geral
-order: 01
 updated: 2022-10-06
 ---
 
@@ -47,7 +44,7 @@ Estas ações podem ser realizadas de várias formas:
 > Esteja atento às operações que vai efetuar ou contactar um [fornecedor especializado](https://partner.ovhcloud.com/pt/) no referenciamento, se necessário.
 >
 > Atenção: um reencaminhamento criado a partir da[Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) não permite reencaminhar um URL em `https://` para outro domínio ou URL. 
-> Para criar este tipo de reencaminhamento, deverá obrigatoriamente passar por [uma re-escritura de URL](https://docs.ovh.com/pt/hosting/partilhado_htaccess_rescrita_de_urls_gracas_ao_mod_write/) através de um ficheiro ".htaccess", por exemplo.
+> Para criar este tipo de reencaminhamento, deverá obrigatoriamente passar por [uma re-escritura de URL](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite) através de um ficheiro ".htaccess", por exemplo.
 
 ### Reencaminhar um domínio a partir da Área de Cliente
 
@@ -64,7 +61,7 @@ Estão disponíveis três opções de reencaminhamento a partir da[Área de Clie
 > O separador `Reencaminhamento`{.action} apresenta uma quarta opção que permite apontar rapidamente o seu domínio para as entradas DNS A, AAAA e CNAME.<br>
 > Uma vez que não se trata propriamente de um "reencaminhamento", esta opção não será detalhada neste guia.
 >
-> Para mais informações sobre as entradas DNS, consulte o nosso manual sobre [registos DNS](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).
+> Para mais informações sobre as entradas DNS, consulte o nosso manual sobre [registos DNS](/pages/web/domains/dns_zone_edit).
 >
 
 Encontre aqui os três tipos de reencaminhamentos detalhados etapa a etapa.
@@ -389,13 +386,13 @@ Esta variável pode ser utilizada quando transfere temporariamente os ficheiros 
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Bloquear o acesso ao meu website para alguns endereços IP através de um ficheiro ".htaccess" ](https://docs.ovh.com/pt/hosting/partilhado_htacess_como_impedir_que_certos_ips_acedam_ao_meu_website/).
+[Bloquear o acesso ao meu website para alguns endereços IP através de um ficheiro ".htaccess" ](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
-[Proteger a interface de administração do seu site através do ".htaccess" ](https://docs.ovh.com/pt/hosting/partilhado-htaccess-como-protecao-acesso-a-um-diretorio-por-autenticacao/).
+[Proteger a interface de administração do seu site através do ".htaccess" ](/pages/web/hosting/htaccess_protect_directory_by_password).
 
-[Reescrever as URLs graças ao "mod_rewrite"](https://docs.ovh.com/pt/hosting/partilhado_htaccess_rescrita_de_urls_gracas_ao_mod_write/).
+[Reescrever as URLs graças ao "mod_rewrite"](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite).
 
-[Como editar a minha zona DNS?](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/)
+[Como editar a minha zona DNS?](/pages/web/domains/dns_zone_edit)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 

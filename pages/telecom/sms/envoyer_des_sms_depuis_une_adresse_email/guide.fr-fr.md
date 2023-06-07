@@ -1,8 +1,6 @@
 ---
 title: 'Envoyer des SMS depuis une adresse e-mail'
-slug: envoyer-sms-depuis-adresse-email
 excerpt: 'Découvrez comment envoyer des SMS depuis une adresse email'
-section: 'Envoyer des SMS'
 updated: 2020-06-04
 ---
 
@@ -99,7 +97,7 @@ Vous devriez obtenir un résultat équivalent à l'image ci-dessous. Par défaut
 Si vous souhaitez utiliser un numéro court permettant la réponse, renseignez senderForResponse=1 en tant qu'expéditeur.
 >
 
-Vous pouvez consulter le guide suivant pour toute précision sur les utilisateurs SMS : [Tout savoir sur les utilisateurs SMS](../tout_savoir_sur_les_utilisateurs_sms/)
+Vous pouvez consulter le guide suivant pour toute précision sur les utilisateurs SMS : [Tout savoir sur les utilisateurs SMS](/pages/telecom/sms/tout_savoir_sur_les_utilisateurs_sms)
 
 
 ### Étape 2 : ajouter des champs facultatifs

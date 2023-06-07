@@ -1,9 +1,6 @@
 ---
 title: Liste des services et licences inclus
-slug: available-services
 excerpt: "Présentation des services et licences inclus dans l'offre Nutanix on OVHcloud"
-section: Premiers pas
-order: 02
 updated: 2022-09-20
 ---
 

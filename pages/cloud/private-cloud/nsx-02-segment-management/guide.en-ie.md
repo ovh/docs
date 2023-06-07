@@ -1,9 +1,6 @@
 ---
 title: Segment management in NSX
-slug: nsx-segment-management
 excerpt: How to create and use segments
-section: NSX
-order: 02
 updated: 2023-02-27
 ---
 
@@ -204,6 +201,6 @@ Go back to the NSX interface, go to the `Networking`{.action} tab and click on `
 
 ## Go further <a name="gofurther"></a>
 
-[Getting started with NSX](https://docs.ovh.com/ie/en/private-cloud/nsx-first-steps/)
+[Getting started with NSX](/pages/cloud/private-cloud/nsx-01-first-steps)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: 'Managing and using mailing lists'
-slug: guide-dutilisation-mailing-list
 excerpt: 'Find out how to use mailing lists'
-section: 'Email address features'
-order: 2
 hidden: true
 updated: 2020-03-19
 ---

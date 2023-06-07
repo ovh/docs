@@ -1,11 +1,8 @@
 ---
 title: Redis - Configure your Redis instance to accept incoming connections
 excerpt: Find out how to configure your Redis instance to accept incoming connections
-slug: redis/configure-redis-instance
-section: Redis - Guides
-order: 020
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/redis/configure-redis-instance/'
+    canonical: '/pages/platform/databases/redis_08_prepare_for_incoming_connections'
 updated: 2022-03-24
 ---
 
@@ -21,7 +18,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 - A [Public Cloud project](https://www.ovhcloud.com/pt/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
-- A Redis database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/pt/publiccloud/databases/getting-started/) can help you to meet this requirement)
+- A Redis database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
 
 ## Instructions
 
@@ -56,7 +53,7 @@ Once created or updated, the user has to be ready and with the "Enabled" status 
 >
 > Follow the [Commands Official Documentation](https://redis.io/commands/) to learn more.
 >
-> Follow this [guide](https://docs.ovh.com/pt/publiccloud/databases/redis/capabilities/#users-and-roles) to learn more about users and roles capabilities and limitations.
+> Follow this [guide](/pages/platform/databases/redis_01_capabilities#users-and-roles) to learn more about users and roles capabilities and limitations.
 >
 
 #### Step 2: Authorise incoming connections from the Redis client

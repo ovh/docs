@@ -1,9 +1,6 @@
 ---
 title: PostgreSQL - Connect with Python
 excerpt: Connect to your Public Cloud Databases for PostgreSQL using the Python programming language
-slug: postgresql/connect-python
-section: PostgreSQL - Guides
-order: 060
 updated: 2022-04-04
 ---
 
@@ -21,14 +18,14 @@ You can find an example on the [Github examples repository](https://github.com/o
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
 - A [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account.
-- A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/sg/en/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your PostgreSQL instance](https://docs.ovh.com/sg/en/publiccloud/databases/postgresql/configure-postgresql-instance/) to accept incoming connections
+- A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your PostgreSQL instance](/pages/platform/databases/postgresql_07_prepare_for_incoming_connections) to accept incoming connections
 - A Python environment with a stable version and public network connectivity (Internet). This guide was made using Python 3.9.7.
 
 ## Concept
 
 A PostgreSQL instance can be managed through multiple ways.
-One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to PostgreSQL with CLI](https://docs.ovh.com/sg/en/publiccloud/databases/postgresql/connect-cli).
+One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to PostgreSQL with CLI](/pages/platform/databases/postgresql_03_connect_cli).
 
 Another way is to interact directly using a programming language, such as Python.
 Python is one of the major programming languages in the world, especially in the Data ecosystem.

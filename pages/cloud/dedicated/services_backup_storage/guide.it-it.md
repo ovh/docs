@@ -1,8 +1,6 @@
 ---
 title: Utilizzare il Backup Storage su un server dedicato
-slug: servizio-backup-storage
 excerpt: Come attivare e accedere allo spazio di storage aggiuntivo
-section: Storage
 updated: 2021-03-15
 ---
 

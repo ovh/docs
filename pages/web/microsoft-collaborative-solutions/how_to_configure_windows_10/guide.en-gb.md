@@ -1,9 +1,6 @@
 ---
 title: 'Configuring your Exchange account in the Mail app for Windows 10'
-slug: mail-configuration-windows-10
 excerpt: 'Find out how to configure an Exchange account on the Mail application for Windows 10'
-section: Configuration on computer
-order: 03
 updated: 2018-04-04
 ---
 
@@ -63,8 +60,8 @@ OVHcloud also offers a web application that includes various [collaborative feat
 
 ## Go further
 
-[Configuring an email address included in an MX Plan or web hosting plan on the Mail application for Windows 10](https://docs.ovh.com/gb/en/emails/mail-configuration-windows-10/){.external}
+[Configuring an email address included in an MX Plan or web hosting plan on the Mail application for Windows 10](/pages/web/emails/how_to_configure_windows_10){.external}
 
-[Configuring your Email Pro account in the Mail app for Windows 10](https://docs.ovh.com/gb/en/emails-pro/mail-configuration-windows-10/){.external}
+[Configuring your Email Pro account in the Mail app for Windows 10](/pages/web/emails-pro/how_to_configure_windows_10){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

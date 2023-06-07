@@ -1,10 +1,8 @@
 ---
 title: Creating a cluster through Terraform
-slug: creating-a-cluster-through-terraform
 excerpt: 'Creates a Kubernetes cluster through Terraform'
-section: Getting started
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster-through-terraform/'
+    canonical: '/pages/platform/kubernetes-k8s/creating-a-cluster-through-terraform'
 updated: 2022-04-14
 ---
 
@@ -23,7 +21,7 @@ If you are interested in leveraging your knowledge about Terraform CLI, a [Cheat
 
 ## Requirements
 
-- A [Public Cloud project](https://docs.ovh.com/ca/fr/public-cloud/create_a_public_cloud_project/) in your OVHcloud account
+- A [Public Cloud project](/pages/platform/public-cloud/create_a_public_cloud_project) in your OVHcloud account
 - Installing [Terraform CLI](https://www.terraform.io/downloads.html){.external}
 
 ## Before you begin
@@ -57,7 +55,7 @@ Why?
 
 Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs. 
 
-In order to retrieve this necessary information, please follow [First steps with the OVHcloud APIs](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/) tutorial.
+In order to retrieve this necessary information, please follow [First steps with the OVHcloud APIs](/pages/account/api/first-steps) tutorial.
 
 Concretely, you have to generate these credentials via the [OVH token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
 
@@ -504,7 +502,7 @@ xxx can be: RAM, CPU, VM, Disk or Port.
 If this is the case, the quotas must be increased.
 In order to check your quotas and increase them, please follow this tutorial:
 
-[Increasing Public Cloud quotas](https://docs.ovh.com/ca/fr/public-cloud/increase-public-cloud-quota/){.external}.
+[Increasing Public Cloud quotas](/pages/platform/public-cloud/increasing_public_cloud_quota){.external}.
 
 ## Destroy (cleanup)
 
@@ -584,7 +582,7 @@ Perfect, your Kubernetes cluster and associated resources (Nodes, Pods...) have 
 
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/fr-ca/public-cloud/kubernetes/).
 
-To deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring-kubectl/) and [deploying a Hello World application](../deploying-hello-world/).
+To deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring-kubectl/) and [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-hello-world).
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

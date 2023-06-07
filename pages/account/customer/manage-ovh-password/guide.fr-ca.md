@@ -1,9 +1,6 @@
 ---
 title: 'Définir et gérer le mot de passe de votre compte'
-slug: gerer-son-mot-de-passe
 excerpt: 'Apprenez à définir, modifier et gérer le mot de passe de votre espace client OVHcloud'
-section: 'Premiers pas'
-order: 4
 updated: 2020-09-30
 ---
 
@@ -49,7 +46,7 @@ Il existe plusieurs méthodes efficaces pour créer des mots de passe. Parmi ell
 
 La Commission nationale de l'informatique et des libertés (CNIL) propose également un outil permettant de générer un mot de passe solide, basé sur la méthode des premières lettres.
 
-Pour en savoir plus, reportez-vous à la section [Aller plus loin](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/#aller-plus-loin){.external} en bas de ce guide.
+Pour en savoir plus, reportez-vous à la section [Aller plus loin](/pages/account/customer/manage-ovh-password#aller-plus-loin){.external} en bas de ce guide.
 
 ### Utiliser un gestionnaire de mots de passe
 

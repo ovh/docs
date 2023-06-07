@@ -1,9 +1,6 @@
 ---
 title: Delegar projetos
 excerpt: "Saiba como delegar direitos de acesso a um projeto Public Cloud noutras contas da OVHcloud"
-slug: delegar_os_seus_projetos
-order: 7
-section: Gestão do projeto
 updated: 2022-04-04
 ---
 
@@ -33,7 +30,7 @@ Esta página permite-lhe ver os contactos associados ao seu projeto.
 
 ![public-cloud-delegate-projects](images/delegatingproject01.png){.thumbnail}
 
-Pode clicar nos botões `Alterar`{.action} para alterar os contactos atuais. Para finalizar esta operação, siga as instruções descritas no nosso manual "[Alterar os contactos de um projeto](../alterar_os_contactos_de_um_projeto/)".
+Pode clicar nos botões `Alterar`{.action} para alterar os contactos atuais. Para finalizar esta operação, siga as instruções descritas no nosso manual "[Alterar os contactos de um projeto](/pages/platform/public-cloud/change_project_contacts)".
 
 ### Adicionar contactos e permissões
 
@@ -56,10 +53,10 @@ Para anular um acesso, clique no botão `...`{.action} e selecione a opção `El
 
 ## Quer saber mais?
 
-[Iniciar com uma instância Public Cloud](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/)
+[Iniciar com uma instância Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Informações sobre o método de faturação Public Cloud](https://docs.ovh.com/pt/public-cloud/informacoes-sobre-o-metodo-de-faturacao-cloud/)
+[Informações sobre o método de faturação Public Cloud](/pages/platform/public-cloud/analyze_billing)
 
-[Parâmetros de acesso e de segurança no Horizon](https://docs.ovh.com/pt/public-cloud/access_and_security_in_horizon/)
+[Parâmetros de acesso e de segurança no Horizon](/pages/platform/public-cloud/access_and_security_in_horizon)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

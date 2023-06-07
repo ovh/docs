@@ -1,9 +1,6 @@
 ---
 title: Sauvegarder une base de données SAP HANA
-slug: backup-sap-hana
 excerpt: "Ce guide fournit des instructions générales sur la sauvegarde d'une base de données SAP HANA"
-section: Utilisation avancée
-order: 01
 updated: 2022-03-28
 ---
 
@@ -67,7 +64,7 @@ Pour plus d'informations et des indications sur la manière de l'installer, cons
 
 Pour nos besoins de sauvegarde, nous utiliserons la solution [OVHcloud Veeam Enterprise](https://www.ovhcloud.com/fr/storage-solutions/veeam-enterprise/).
 
-Vous pouvez retrouver le guide d'installation OVHcloud [ici](https://docs.ovh.com/fr/storage/veeam-backup-replication/).
+Vous pouvez retrouver le guide d'installation OVHcloud [ici](/pages/cloud/storage/backup/veeam_veeam_backup_replication).
 
 #### Flux réseau
 
@@ -119,7 +116,7 @@ Nous utiliserons donc la solution [OVHcloud Object Storage](https://www.ovhcloud
 **Prérequis :**
 
 - un compte client OVHcloud
-- un [projet Public Cloud](https://docs.ovh.com/fr/public-cloud/create_a_public_cloud_project/)
+- un [projet Public Cloud](/pages/platform/public-cloud/create_a_public_cloud_project)
 
 <ol start="1">
   <li>Connectez-vous à l'<a class="external-link" href="https://www.ovh.com/auth/?onsuccess=https%3A//www.ovh.com/manager&ovhSubsidiary=FR/" rel="nofollow">espace client OVHcloud</a>, accédez à la section <code class="action">Public Cloud</code>, sélectionnez votre projet puis cliquez sur <code class="action">Object Storage</code> et enfin cliquez sur <code class="action">Créer un conteneur d'objets</code>.</li>

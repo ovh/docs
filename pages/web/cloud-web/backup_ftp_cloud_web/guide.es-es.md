@@ -1,8 +1,5 @@
 ---
 title: "Exportar la copia de seguridad del espacio FTP de su hosting Cloud Web"
-slug: backup_ftp_cloud_web
-section: Backups
-order: 01
 updated: 2022-09-13
 ---
 
@@ -23,7 +20,7 @@ Su hosting Cloud Web dispone de un espacio de almacenamiento en el que podrá al
 > 
 > Las copias de seguridad ofrecidas por OVHcloud para los alojamientos Cloud Web son extracontractuales. que podrá utilizar para completar sus propias copias de seguridad en situaciones urgentes. Por lo tanto, le recomendamos que realice regularmente sus propias copias de seguridad para paliar posibles pérdidas de datos.
 > 
-> Si realiza una copia de seguridad para su sitio web y utiliza una base de datos, realice una copia de seguridad de la misma. No dude en consultar nuestra guía para [obtener una copia de seguridad de su base de datos](https://docs.ovh.com/es/hosting/web_hosting_exportacion_de_una_base_de_datos/).
+> Si realiza una copia de seguridad para su sitio web y utiliza una base de datos, realice una copia de seguridad de la misma. No dude en consultar nuestra guía para [obtener una copia de seguridad de su base de datos](/pages/web/hosting/sql_database_export).
 > 
 
 **Esta guía explica cómo recuperar y restaurar una copia de seguridad FTP de un alojamiento Cloud Web.**
@@ -86,7 +83,7 @@ El archivo así descargado está en formato *.tar.gz*.
 
 ### Restaurar la copia de seguridad
 
-Una vez que haya cargado los archivos, podrá [conectarse a su espacio FTP](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) utilizando un programa FTP como [Filezilla](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/) y sustituir los archivos que desee por los recuperados.
+Una vez que haya cargado los archivos, podrá [conectarse a su espacio FTP](/pages/web/hosting/ftp_connection) utilizando un programa FTP como [Filezilla](/pages/web/hosting/ftp_filezilla_user_guide) y sustituir los archivos que desee por los recuperados.
 
 > [!primary]
 >
@@ -95,9 +92,9 @@ Una vez que haya cargado los archivos, podrá [conectarse a su espacio FTP](http
 
 ## Más información 
 
-[Conectarse al espacio de almacenamiento de un alojamiento web](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/){.external}
+[Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web/hosting/ftp_connection){.external}
 
-[Conectarse mediante Filezilla](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/)
+[Conectarse mediante Filezilla](/pages/web/hosting/ftp_filezilla_user_guide)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
 

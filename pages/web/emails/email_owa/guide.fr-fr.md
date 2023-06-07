@@ -1,9 +1,6 @@
 ---
 title: 'Utiliser son adresse e-mail depuis le webmail Outlook Web Access (OWA)'
-slug: utilisation-owa
 excerpt: 'Découvrez comment utiliser votre adresse e-mail depuis le webmail OWA'
-section: 'Premiers pas'
-order: 04
 updated: 2020-02-25
 ---
 
@@ -124,7 +121,7 @@ Renseignez les informations demandées en fonction de la tâche que vous voudrez
 
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
-Pour des instructions plus détaillées sur la création des règles de gestion de messagerie, veuillez vous référer à notre guide : [Création de règles de gestion de messagerie sous OWA](../regles-boite-de-reception-owa/).
+Pour des instructions plus détaillées sur la création des règles de gestion de messagerie, veuillez vous référer à notre guide : [Création de règles de gestion de messagerie sous OWA](/fr/emails/regles-boite-de-reception-owa/).
 
 #### Bloquer un expéditeur
 
@@ -188,7 +185,7 @@ Remplissez les informations demandées en fonction de la tâche que vous voudrez
 
 ![useowa](images/owa_exchange_step21.png){.thumbnail}
 
-Pour des instructions plus détaillées sur la création des règles de gestion de messagerie, veuillez vous référer à notre guide : [Créer un répondeur automatique sous OWA](../exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa/).
+Pour des instructions plus détaillées sur la création des règles de gestion de messagerie, veuillez vous référer à notre guide : [Créer un répondeur automatique sous OWA](/fr/emails/exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa/).
 
 ### Ajouter une signature
 
@@ -202,7 +199,7 @@ Sur le côté gauche de la nouvelle page, cliquez sur `Signature électronique`{
 
 Composez votre signature électronique dans la boîte d'éditeur. Vous pouvez spécifier si vous souhaitez inclure la signature par défaut dans les nouveaux e-mails uniquement ou également dans les réponses et les e-mails transférés. Une fois que vous avez terminé, cliquez sur `Enregistrer`{.action} pour confirmer.
 
-Pour obtenir des instructions sur la création de signatures automatiques en utilisant des modèles pour l'ensemble du domaine, veuillez vous référer à notre guide : [Créer des signatures automatiques](../exchange-signature-automatique-disclaimer/).
+Pour obtenir des instructions sur la création de signatures automatiques en utilisant des modèles pour l'ensemble du domaine, veuillez vous référer à notre guide : [Créer des signatures automatiques](/fr/emails/exchange-signature-automatique-disclaimer/).
 
 ### Accéder à la section Options
 
@@ -223,12 +220,12 @@ La désactivation de ces cookies peut néanmoins affecter la stabilité de votre
 
 ## Aller plus loin
 
-[Création de réponses automatiques sous OWA](../exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa/)
+[Création de réponses automatiques sous OWA](/fr/emails/exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa/)
 
-[Partager un dossier depuis l’interface OWA](../exchange-2016-partager-un-dossier-via-le-webmail-owa/)
+[Partager un dossier depuis l’interface OWA](/fr/emails/exchange-2016-partager-un-dossier-via-le-webmail-owa/)
 
-[Partager des calendriers via l’interface OWA](../exchange-2016-partager-un-calendrier-via-le-webmail-owa/)
+[Partager des calendriers via l’interface OWA](/fr/emails/exchange-2016-partager-un-calendrier-via-le-webmail-owa/)
 
-[Créer un groupe de contacts](../exchange-utilisation-des-groupes-mailing-list/)
+[Créer un groupe de contacts](/fr/emails/exchange-utilisation-des-groupes-mailing-list/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -1,9 +1,6 @@
 ---
 title: "Object Storage - Shared Responsibility"
-slug: s3/raci-object-storage-public-cloud
-section: General information
 excerpt: "Shared responsibilities between OVHcloud and the customer for Public Cloud Object Storage"
-order: 030
 updated: 2023-03-20
 ---
 

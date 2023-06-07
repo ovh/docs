@@ -1,9 +1,6 @@
 ---
 title: 'Utilizar o acesso SSH do seu alojamento web'
-slug: partilhado_o_ssh_nos_alojamentos_partilhados
 excerpt: 'Saiba como se conectar e utilizar o acesso SSH do seu alojamento web OVHcloud'
-section: FTP e SSH
-order: 07
 updated: 2022-01-19
 ---
 
@@ -107,12 +104,12 @@ Através de um comando, pode igualmente lançar um script utilizando uma versão
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-Em função da versão de PHP que deseja usar, é possível que o ambiente de execução tenha de ser modificado por uma questão de compatibilidade. Para isso, recorra [ao guia](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web/) «Alterar a configuração do alojamento web».
+Em função da versão de PHP que deseja usar, é possível que o ambiente de execução tenha de ser modificado por uma questão de compatibilidade. Para isso, recorra [ao guia](/pages/web/hosting/ovhconfig_modify_system_runtime) «Alterar a configuração do alojamento web».
 
 ## Quer saber mais?
 
-[Alterar a configuração do alojamento web](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web/)
+[Alterar a configuração do alojamento web](/pages/web/hosting/ovhconfig_modify_system_runtime)
 
-[Configurar o ficheiro .ovhconfig do alojamento web](https://docs.ovh.com/pt/hosting/configurar-ficheiro-ovhconfig/)
+[Configurar o ficheiro .ovhconfig do alojamento web](/pages/web/hosting/ovhconfig_configuration)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

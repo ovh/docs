@@ -1,9 +1,6 @@
 ---
 title: 'Hosting condiviso: guida all’utilizzo di Cyberduck (MAC)'
 excerpt: In questa guida ti mostriamo come utilizzare Cyberduck
-slug: hosting_condiviso_guida_allutilizzo_di_cyberduck_mac
-section: FTP e SSH
-order: 05
 updated: 2020-05-05
 ---
 
@@ -15,7 +12,7 @@ Cyberduck è un software MAC che ti permette di pubblicare il tuo sito accedendo
 Per utilizzarlo, vai sul sito ufficiale Cyberduck: [cyberduck.io](https://cyberduck.io/)
 
 ![cyberduck macOS](images/2344.png){.thumbnail}
-Cyberduck è un software MAC. Se utilizzi Windows, ti consigliamo di utilizzare FileZilla: [](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/))
+Cyberduck è un software MAC. Se utilizzi Windows, ti consigliamo di utilizzare FileZilla: [](/pages/web/hosting/ftp_filezilla_user_guide))
 
 
 ## Interfaccia

@@ -1,9 +1,6 @@
 ---
 title: 'Editing the DNS servers for an OVHcloud domain name'
-slug: web_hosting_general_information_about_dns_servers
 excerpt: 'Find out how to modify DNS servers via the OVHcloud Control Panel'
-section: 'DNS and DNS Zone'
-order: 01
 updated: 2021-02-18
 ---
 
@@ -15,7 +12,7 @@ updated: 2021-02-18
 
 DNS stands for **D**omain **N**ame **S**ystem and is a set of elements used to map a domain name to an IP address.
 
-See the full explanation in our guide on [Editing an OVHcloud DNS zone](../web_hosting_how_to_edit_my_dns_zone/#understanddns).
+See the full explanation in our guide on [Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit#understanddns).
 
 ### DNS servers 
 
@@ -53,7 +50,7 @@ However, it is important to note that:
 
 - When declaring different DNS servers (for example: OVHcloud DNS servers replacing external ones), the content of the old DNS configuration is not automatically replicated in the new configuration. Ensure that your new DNS zone includes all of the DNS records required for the services associated with your domain name to work correctly (for example, your website and email addresses).
 
-- If you only want to modify one element of your current DNS configuration (i.e. a DNS record), we recommend following our guide to [modify the DNS zone](../web_hosting_how_to_edit_my_dns_zone/) instead.
+- If you only want to modify one element of your current DNS configuration (i.e. a DNS record), we recommend following our guide to [modify the DNS zone](/pages/web/domains/dns_zone_edit) instead.
 
 - Some organisations and registries managing domain name extensions have specific requirements for DNS servers (number of name servers, value of records, etc.). If in doubt, check with the registry responsible for the domain.
 
@@ -101,6 +98,6 @@ Once you have made the required changes, there is a waiting period for them to b
 
 ## Go further
 
-[Editing an OVHcloud DNS zone](../web_hosting_how_to_edit_my_dns_zone/){.external}.
+[Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit){.external}.
 
 Join our community of users on <https://community.ovh.com/en/>.

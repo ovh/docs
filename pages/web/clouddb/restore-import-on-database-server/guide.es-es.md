@@ -1,9 +1,6 @@
 ---
 title: 'Restaurar e importar una base de datos en su servidor de bases de datos'
-slug: restaurar-importar-base-de-datos
 excerpt: 'Cómo restaurar e importar la base de datos'
-section: 'Configuración'
-order: 05
 updated: 2023-02-15
 ---
 
@@ -92,7 +89,7 @@ En algunos casos, la RAM disponible en su servidor de bases de datos no permite 
 
 #### Importar una base MySQL o MariaDB desde phpMyAdmin
 
-Para importar su base de datos directamente desde phpMyAdmin, es necesario conectarse a ella previamente. Para ello, puede utilizar el apartado ["Conectarse a una base de datos MySQL o MariaDB"](https://docs.ovh.com/es/clouddb/coneccion-base-de-datos-servidor-bdd/#importar-una-base-de-datos-mysql-o-mariadb).
+Para importar su base de datos directamente desde phpMyAdmin, es necesario conectarse a ella previamente. Para ello, puede utilizar el apartado ["Conectarse a una base de datos MySQL o MariaDB"](/pages/web/clouddb/connecting-to-database-on-database-server#importar-una-base-de-datos-mysql-o-mariadb).
 
 Una vez conectado a phpMyAdmin, seleccione la base de datos haciendo clic en su nombre.
 
@@ -112,7 +109,7 @@ Deje las opciones predeterminadas y haga clic en `Ejecutar`{.action} para inicia
 
 #### Importar una base de datos MySQL o MariaDB en línea de comandos
 
-Esta operación solo es posible por [SSH](https://docs.ovh.com/es/hosting/web_hosting_ssh_en_alojamiento_compartido/) desde un alojamiento compartido de OVHcloud.
+Esta operación solo es posible por [SSH](/pages/web/hosting/ssh_on_webhosting) desde un alojamiento compartido de OVHcloud.
 
 ```bash
 cat nombre_de_la_base.sql | mysql —host=servidor —user=usuario —port=puerto —contraseña=contraseña nombre_de_la_BD
@@ -130,7 +127,7 @@ cat nombre_de_la_base.sql | mysql —host=servidor —user=usuario —port=puert
 
 > [!warning]
 >
-> - Para evitar que alguien acceda a este archivo, que contiene datos sensibles, consulte la guía Proteger el acceso a él: [Uso de .htaccess para proteger con contraseña un directorio de su sitio web](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/)
+> - Para evitar que alguien acceda a este archivo, que contiene datos sensibles, consulte la guía Proteger el acceso a él: [Uso de .htaccess para proteger con contraseña un directorio de su sitio web](/pages/web/hosting/htaccess_protect_directory_by_password)
 > - Esta acción solo es posible desde un alojamiento de OVHcloud compartido.
 >
 
@@ -140,7 +137,7 @@ En algunos casos, la RAM disponible en su servidor de bases de datos no permite 
 
 #### Importar una base de datos PostgreSQL en línea de comandos
 
-Esta operación solo es posible por [SSH](https://docs.ovh.com/es/hosting/web_hosting_ssh_en_alojamiento_compartido/) desde un alojamiento compartido de OVHcloud en versión estable o superior.
+Esta operación solo es posible por [SSH](/pages/web/hosting/ssh_on_webhosting) desde un alojamiento compartido de OVHcloud en versión estable o superior.
 
 ```bash
 psql —host=servidor —port=puerto —user=usuario —password=contraseña nombre_de_la_BD < nombre_de_la_BD.sql
@@ -158,7 +155,7 @@ psql —host=servidor —port=puerto —user=usuario —password=contraseña nom
 
 > [!warning]
 >
-> - Para evitar que alguien acceda a este archivo con datos sensibles, le recomendamos que proteja el acceso a él en la guía [Uso de .htaccess para proteger con contraseña un directorio de su sitio web](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+> - Para evitar que alguien acceda a este archivo con datos sensibles, le recomendamos que proteja el acceso a él en la guía [Uso de .htaccess para proteger con contraseña un directorio de su sitio web](/pages/web/hosting/htaccess_protect_directory_by_password).
 > - Esta acción solo es posible desde un alojamiento de OVHcloud compartido.
 >
 

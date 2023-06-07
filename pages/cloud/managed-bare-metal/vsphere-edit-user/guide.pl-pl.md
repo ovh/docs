@@ -1,10 +1,8 @@
 ---
 title: Powiązanie adresu e-mail z użytkownikiem vSphere 
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/powiazanie-adresu-e-mail-z-uzytkownikiem/'
+    canonical: '/pages/cloud/private-cloud/vsphere_edit_user'
 excerpt: Dowiedz się, jak powiązać adres e-mail z użytkownikiem vSphere
-slug: powiazanie-adresu-e-mail-z-uzytkownikiem
-section: Funkcjonalności OVHcloud
 updated: 2020-11-18
 ---
 

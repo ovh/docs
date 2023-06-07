@@ -1,9 +1,6 @@
 ---
 title: Object Storage - Server Access Logging
-slug: s3/server-access-logging
 excerpt: Découvrez comment configurer et utiliser Server Access Logging
-section: Tutoriels
-order: 130
 updated: 2023-02-16
 ---
 

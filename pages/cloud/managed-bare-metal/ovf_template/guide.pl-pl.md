@@ -1,10 +1,8 @@
 ---
 title: 'Instalacja VM z szablonów OVF Windows i SQL Server'
-slug: instalacja-z-szablonow-ovhcloud
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/instalacja-z-szablonow-ovh/'
+    canonical: '/pages/cloud/private-cloud/ovf_template'
 excerpt: 'Dowiedz się, jak zainstalować VM z szablonu Windows i SQL Server'
-section: 'Usługi i opcje OVHcloud'
 updated: 2020-11-18
 ---
 

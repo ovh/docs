@@ -1,11 +1,8 @@
 ---
 title: Usar el conjunto de librerías vSphere SDK
-slug: usar-vsphere-sdk
 routes:
-    canonical: 'https://docs.ovh.com/us/es/private-cloud/usar-vsphere-sdk/'
+    canonical: '/pages/cloud/private-cloud/vmware_installation_api'
 excerpt: Instrumentación y uso del conjunto de librerías vSphere SDK
-section: Funcionalidades de VMware vSphere
-order: 10
 updated: 2020-11-18
 ---
 
@@ -25,7 +22,7 @@ Es posible automatizar las acciones en su infraestructura utilizando el conjunto
 
 ##### S. O.
 
-En esta guía, utilizaremos una máquina virtual instalada en Debian 9, instrumentada a partir de [las plantillas disponibles en su Managed Bare Metal](../desplegar-plantilla-ovf/).
+En esta guía, utilizaremos una máquina virtual instalada en Debian 9, instrumentada a partir de [las plantillas disponibles en su Managed Bare Metal](/pages/cloud/managed-bare-metal/ovf_template).
 
 ##### Requisitos
 
@@ -144,7 +141,7 @@ vconnect()
 
 ##### S. O.
 
-En esta guía, utilizaremos una máquina virtual instalada en Debian 18.04, instrumentada a partir de [las plantillas disponibles en su Managed Bare Metal](../desplegar-plantilla-ovf/).
+En esta guía, utilizaremos una máquina virtual instalada en Debian 18.04, instrumentada a partir de [las plantillas disponibles en su Managed Bare Metal](/pages/cloud/managed-bare-metal/ovf_template).
 
 
 ##### Requisitos

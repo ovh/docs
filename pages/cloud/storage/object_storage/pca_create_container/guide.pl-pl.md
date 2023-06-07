@@ -1,9 +1,6 @@
 ---
 title: Cloud Archive Swift - Tworzenie kontenera Public Cloud Archive
-slug: pca/create-container
 excerpt: Dowiedz się, jak utworzyć Twoje kontenery Public Cloud Archive w Panelu klienta OVHcloud
-section: OpenStack Swift Archive Storage Class Specifics
-order: 020
 updated: 2021-10-27
 ---
 
@@ -58,7 +55,7 @@ Nazwij kontener i kliknij na `Dodaj kontener`{.action}:
 > - [ _ ]
 > - nie wolno używać wielkich liter.
 >
-> Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Powiązanie kontenera z nazwą domeny](https://docs.ovh.com/pl/storage/umieszczenie_kontenera_object_storage_za_domena/)".
+> Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Powiązanie kontenera z nazwą domeny](/pages/cloud/storage/object_storage/pcs_link_domain)".
 >
 
 ![kontener name](images/create-container-20211006094550334.png)

@@ -1,8 +1,6 @@
 ---
 title: 'Asterisk - configuration et utilisation'
-slug: asterisk-configuration-et-utilisation
 legacy_guide_number: '7536698'
-section: IPBX
 updated: 2018-03-26
 ---
 
@@ -30,7 +28,7 @@ Niveau : Expert
 Pour réaliser les étapes proposées dans ce guide, il faut :
 
 -   Un serveur avec Debian d'installé et un accès Internet.
--   Deux alias configurés en **[redirection DDI](../creer-redirection-avec-presentation/)** vers le trunk.
+-   Deux alias configurés en **[redirection DDI](/pages/telecom/voip/redirection_avec_presentation)** vers le trunk.
 -   Une ligne SIP Trunk. Pour en commander une : **<https://www.ovhtelecom.fr/telephonie/sip_trunk/>**
 
     (La configuration de gestion des numéros appelés ne fonctionne pas sur une ligne SIP.)

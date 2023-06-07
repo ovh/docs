@@ -1,9 +1,6 @@
 ---
 title: "Valider votre identité pour l'utilisation des services VoIP"
 excerpt: 'Découvrez comment valider votre compte OVHcloud suite à votre première commande de services VoIP'
-slug: la-procedure-de-validation-voip
-section: Administratif
-order: 01
 updated: 2022-01-28
 ---
 
@@ -11,7 +8,7 @@ updated: 2022-01-28
 
 ## Objectif
 
-Lorsque vous réalisez votre première commande ou que vous souhaitez [changer le contact de facturation](../effectuer-un-changement-de-contact-pour-les-services-voip/) pour vos services de VoIP, une procédure de validation du compte OVHcloud est à réaliser.
+Lorsque vous réalisez votre première commande ou que vous souhaitez [changer le contact de facturation](/pages/telecom/voip/effectuer_un_changement_de_contact_pour_les_services_voip) pour vos services de VoIP, une procédure de validation du compte OVHcloud est à réaliser.
 Cette procédure vous permet de valider l'identifiant client sur lequel OVHcloud va réaliser la facturation de vos services VoIP.
 
 ## Prérequis
@@ -23,7 +20,7 @@ Cette procédure vous permet de valider l'identifiant client sur lequel OVHcloud
 
 ### Générer la procédure 
 
-Lorsque vous passez commande de votre premier service VoIP, la procédure de validation VoIP est automatiquement générée. Cette procédure vous est envoyée par e-mail au format PDF à l'adresse définie sur le compte du contact facturation. Pour plus de détails sur les différents contacts, consultez notre guide sur le [changement de contacts pour les services VoIP](../effectuer-un-changement-de-contact-pour-les-services-voip/).
+Lorsque vous passez commande de votre premier service VoIP, la procédure de validation VoIP est automatiquement générée. Cette procédure vous est envoyée par e-mail au format PDF à l'adresse définie sur le compte du contact facturation. Pour plus de détails sur les différents contacts, consultez notre guide sur le [changement de contacts pour les services VoIP](/pages/telecom/voip/effectuer_un_changement_de_contact_pour_les_services_voip).
 
 L'objet de l'e-mail reçu est : 
 

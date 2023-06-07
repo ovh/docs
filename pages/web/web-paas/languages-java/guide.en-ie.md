@@ -1,8 +1,5 @@
 ---
 title: Java
-slug: languages-java
-section: Languages
-order: 4
 updated: 2022-06-02
 ---
 

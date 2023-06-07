@@ -1,9 +1,7 @@
 ---
 title: 'Changer le propriétaire d’un nom de domaine'
-slug: changement-proprietaire-domaine
 legacy_guide_number: 1350
 excerpt: 'Vous trouverez dans ce guide différentes informations concernant le changement de propriétaire d’un nom de domaine.'
-section: 'Changement de propriétaire'
 updated: 2021-03-04
 ---
 
@@ -11,12 +9,12 @@ updated: 2021-03-04
 
 ## Objectif
 
-En dehors de la [gestion des contacts](../../customer/gestion-des-contacts/), l’enregistrement d’un nom de domaine nécessite de renseigner les informations relatives au propriétaire de celui-ci. Le **propriétaire** dans ce contexte concerne une personne ou une société détenant les droits sur ce nom de domaine. **Le changement de propriétaire** fait référence au transfert de droits de propriété d'une personne ou entreprise vers une autre, les informations du **propriétaire** ont une valeur juridique. Par exemple, ce processus est obligatoire si une société change de nom.
+En dehors de la [gestion des contacts](/pages/account/customer/managing_contacts), l’enregistrement d’un nom de domaine nécessite de renseigner les informations relatives au propriétaire de celui-ci. Le **propriétaire** dans ce contexte concerne une personne ou une société détenant les droits sur ce nom de domaine. **Le changement de propriétaire** fait référence au transfert de droits de propriété d'une personne ou entreprise vers une autre, les informations du **propriétaire** ont une valeur juridique. Par exemple, ce processus est obligatoire si une société change de nom.
 
 > [!primary]
 > Cette opération ne déplace pas votre nom de domaine vers un autre compte client OVHcloud.
 >
-> Pour ce faire, vous devez [modifier les contacts](../../customer/gestion-des-contacts/) du nom de domaine.
+> Pour ce faire, vous devez [modifier les contacts](/pages/account/customer/managing_contacts) du nom de domaine.
 
 **Découvrez comment changer le propriétaire d'un nom de domaine**
 
@@ -24,7 +22,7 @@ En dehors de la [gestion des contacts](../../customer/gestion-des-contacts/), l�
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
 - Disposer d'un nom de domaine enregistré chez OVHcloud.
-- Être le [contact administrateur](../../customer/gestion-des-contacts/) du nom de domaine concerné.
+- Être le [contact administrateur](/pages/account/customer/managing_contacts) du nom de domaine concerné.
 - Disposer de l'accord du propriétaire actuel du nom de domaine pour effectuer le changement de propriétaire.
 
 ## En pratique
@@ -82,7 +80,7 @@ Si l'adresse e-mail n'est pas modifiée dans le cadre du changement de propriét
 
 > [!warning]
 >
-> Si le propriétaire du nom de domaine a été modifié, le nom de domaine ne pourra pas être [transféré vers un autre bureau d'enregistrement](../transfert-sortant-dun-nom-de-domaine-generique-ou-geographique/) pendant une période de 60 jours. 
+> Si le propriétaire du nom de domaine a été modifié, le nom de domaine ne pourra pas être [transféré vers un autre bureau d'enregistrement](/pages/web/domains/transfer_outgoing_domain) pendant une période de 60 jours. 
 
 ### Mise à jour des informations de propriétaire <a name="updateownerinformation"></a>
 
@@ -96,6 +94,6 @@ Pour cette opération, vous n'avez pas besoin de confirmer les modifications par
 
 ## Aller plus loin
 
-[Gérer les contacts de ses services](../../customer/gestion-des-contacts/)
+[Gérer les contacts de ses services](/pages/account/customer/managing_contacts)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

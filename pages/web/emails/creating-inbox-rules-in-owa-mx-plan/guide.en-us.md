@@ -1,9 +1,6 @@
 ---
 title: 'Creating inbox rules in OWA (MX Plan)'
-slug: creating-inbox-rules-in-owa-mx-plan
 excerpt: 'Find out how to create email redirections and filters using OWA'
-section: 'Getting started'
-order: 05
 updated: 2020-03-11
 ---
 
@@ -103,10 +100,10 @@ Please note that spam false positives cannot be declared directly from OWA. If y
 
 ## Go further
 
-[Creating automatic replies in OWA](../exchange_2016_how_to_set_up_automatic_replies_in_owa)
+[Creating automatic replies in OWA](/us/en/emails/exchange_2016_how_to_set_up_automatic_replies_in_owa)
 
-[Sharing calendars in OWA](../exchange_2016_how_to_share_calendars_via_owa)
+[Sharing calendars in OWA](/us/en/emails/exchange_2016_how_to_share_calendars_via_owa)
 
-[Using the Outlook Web App with an email account](../exchange_2016_outlook_web_app_user_guide/)
+[Using the Outlook Web App with an email account](/us/en/emails/exchange_2016_outlook_web_app_user_guide/)
 
 Join our community of users on <https://community.ovh.com/en/>.

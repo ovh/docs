@@ -1,11 +1,8 @@
 ---
 title: Aislamiento de las máquinas de gestión de la producción (EN)
-slug: nutanix-isolate-management-machines
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/nutanix/nutanix-isolate-management-machines/'
+    canonical: '/pages/cloud/nutanix/27-isolate-management-vm'
 excerpt: Find out how to isolate management machines from production
-section: Red y seguridad
-order: 07
 updated: 2022-01-11
 ---
 

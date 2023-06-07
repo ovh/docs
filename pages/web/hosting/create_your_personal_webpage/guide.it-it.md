@@ -1,9 +1,6 @@
 ---
 title: Tutorial - Creare la propria pagina personale in OVHcloud
-slug: create-your-own-web-page
 excerpt: Come creare la tua prima pagina Web su un hosting gratuito Start 10M
-section: "Tutorial"
-order: 012
 updated: 2023-02-17
 ---
 
@@ -387,13 +384,13 @@ Per visualizzare la destinazione del link in una nuova scheda, è sufficiente ag
 
 ### Come archiviare contenuti sul tuo hosting?
 
-Per rendere visibili le tue pagine e quindi il tuo sito, è necessario depositarle sul tuo hosting (è necessario attivare il tuo hosting [come indicato in questa guida](https://docs.ovh.com/it/hosting/attivare_start10m/)).
+Per rendere visibili le tue pagine e quindi il tuo sito, è necessario depositarle sul tuo hosting (è necessario attivare il tuo hosting [come indicato in questa guida](/pages/web/hosting/activate_start10m)).
 
 Il trasferimento dei file avviene tramite un protocollo dedicato: il **FTP** (per **F**ile **T**ransfert **P**rotocollo). Utilizza un software dedicato per questa operazione, come [FileZilla](https://filezilla-project.org/download.php?type=client) e [Cyberduck](https://cyberduck.io/download/).
 
 ### Crea il tuo sito in FTP
 
-Per salvare i tuoi file sul tuo hosting, consulta la guida sull'[utilizzo di FileZilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/).
+Per salvare i tuoi file sul tuo hosting, consulta la guida sull'[utilizzo di FileZilla](/pages/web/hosting/ftp_filezilla_user_guide).
 
 Una volta che i file sono stati trasferiti completamente sul tuo hosting, puoi visualizzare il risultato digitando il tuo dominio nella barra degli indirizzi del tuo browser o premendo il tasto `F5` della tua tastiera per ricaricare la pagina se sei già sul tuo sito.
 

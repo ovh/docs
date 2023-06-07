@@ -1,9 +1,6 @@
 ---
 title: Configurare un account Email Pro su Thunderbird per Windows
-slug: configurazione-thundebird-emailpro-windows
 excerpt: Come configurare il tuo indirizzo Email Pro su Thunderbird per Windows
-section: Configurazione di un client di posta
-order: 5
 updated: 2021-08-26
 ---
 
@@ -28,7 +25,7 @@ Gli account Email Pro possono essere configurati su client di posta compatibili,
 
 ## Prerequisiti
 
-- Disporre di un account email [Email Pro](https://docs.ovh.com/it/emails-pro/)
+- Disporre di un account email [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro)
 - Aver installato il software Thunderbird sul tuo Windows
 - Disporre delle credenziali associate all’indirizzo email da configurare
  
@@ -70,7 +67,7 @@ OVHcloud propone anche un'applicazione Web che permette di accedere al tuo indir
 
 ### Recuperare un backup del tuo indirizzo email
 
-Se è necessario effettuare un'operazione che potrebbe comportare la perdita dei dati del tuo account email, ti consigliamo di effettuare un backup preliminare dell'account email in questione. Per effettuare questa operazione consulta il paragrafo "**Esporta**" nella sezione "**Thunderbird**" della nostra guida [Migrare manualmente il tuo indirizzo email](https://docs.ovh.com/it/emails/migrare-i-indirizzi-email-manualmente/#esportare).
+Se è necessario effettuare un'operazione che potrebbe comportare la perdita dei dati del tuo account email, ti consigliamo di effettuare un backup preliminare dell'account email in questione. Per effettuare questa operazione consulta il paragrafo "**Esporta**" nella sezione "**Thunderbird**" della nostra guida [Migrare manualmente il tuo indirizzo email](/pages/web/emails/manual_email_migration#esportare).
 
 ### Modifica i parametri esistenti
 

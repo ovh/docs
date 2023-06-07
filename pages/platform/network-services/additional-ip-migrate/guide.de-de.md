@@ -1,9 +1,6 @@
 ---
 title: Additional IP migrieren
 excerpt: "Erfahren Sie hier, wie Sie eine Additional IP-Adresse zu einer anderen Instanz migrieren"
-slug: migrate-additional-ip
-section: Additional IP
-order: 04
 updated: 2023-01-04
 ---
 
@@ -71,8 +68,8 @@ Die Additional IP kann vor oder nach der Migration auf dem Zielserver konfigurie
 
 ## Weiterführende Informationen
 
-[Additional IP konfigurieren](https://docs.ovh.com/de/publiccloud/network-services/configure-additional-ip/)
+[Additional IP konfigurieren](/pages/platform/network-services/getting-started-04-configure-additional-ip-to-instance)
 
-[Additional IP importieren](https://docs.ovh.com/de/publiccloud/network-services/import-additional-ip/)
+[Additional IP importieren](/pages/platform/network-services/additional-ip-import)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

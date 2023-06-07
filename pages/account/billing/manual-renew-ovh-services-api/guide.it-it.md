@@ -1,8 +1,6 @@
 ---
 title: 'Rinnovare un servizio tramite l’API OVHcloud'
-slug: rinnovare-servizi-tramite-api
 excerpt: 'Scopri come rinnovare un servizio utilizzando l’API OVHcloud'
-section: 'Per iniziare'
 updated: 2020-05-05
 ---
 
@@ -18,7 +16,7 @@ Di base, OVHcloud ti propone il rinnovo automatico dei tuoi servizi ma è possib
 ## Prerequisiti
 
 - Essere connesso alle [API OVHcloud](https://api.ovh.com/){.external}
-- Disporre delle [credenziali di accesso per connettersi alle API - EN](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/){.external}
+- Disporre delle [credenziali di accesso per connettersi alle API - EN](/pages/account/api/first-steps){.external}
 
 ## Procedura
 

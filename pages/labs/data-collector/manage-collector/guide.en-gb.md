@@ -1,8 +1,6 @@
 ---
 title: Manage my Data Collector
 excerpt: Learn how to manage your Data Collector, and configure sink(s) and source(s)
-section: Getting started
-order: 2
 updated: 2018-10-09
 ---
 

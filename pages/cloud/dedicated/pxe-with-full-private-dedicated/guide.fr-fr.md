@@ -1,9 +1,6 @@
 ---
 title: "Gestion du reboot de vos serveurs avec la fonctionnalité OVHcloud Link Aggregation"
-slug: netboot-ola
 excerpt: "Découvrez comment réaliser les redémarrages de vos serveurs OVHcloud fonctionnant à travers votre agrégation privée active"
-section: 'Utilisation avancée'
-order: 05
 updated: 2022-12-14
 ---
 
@@ -30,11 +27,11 @@ Profitez d'une infrastructure privée sans avoir modifié la configuration par d
 
 Les [serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/) vous permettent de configurer/déclarer vos propres réseaux.<br>
 Chaque serveur est muni au minimum de 2 interfaces réseaux, fonctionnant en réalité en liens agrégés et assurant la redondance en cas de panne.<br>
-Vous avez donc la possiblité d'utiliser/déclarer vos réseaux *publics* et *privés* en passant par notre solution [vRack](https://docs.ovh.com/fr/dedicated/configurer-plusieurs-serveurs-dedies-dans-le-vrack/).
+Vous avez donc la possiblité d'utiliser/déclarer vos réseaux *publics* et *privés* en passant par notre solution [vRack](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server).
 
 Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.com/fr/bare-metal/) configuré(s) en mode **OLA**, c'est-à-dire possédant **uniquement** des réseaux privés.
 Ce choix propose à votre infrastructure la meilleure isolation/protection possible pour votre service hébergé.<br>
-La seule différence majeure notable est que les [réseaux privés](https://docs.ovh.com/fr/ovhcloud-connect/presentation-concepts/#prive) n'ont donc pas accès à tout ce qui n'appartient pas à votre infrastructure.<br>
+La seule différence majeure notable est que les [réseaux privés](/pages/cloud/ovhcloud-connect/occ-concepts-overview#prive) n'ont donc pas accès à tout ce qui n'appartient pas à votre infrastructure.<br>
 Par conséquent, un serveur isolé de par son réseau privé empêche le mecanisme de démarrage. C'est à dire que lorsque les systèmes sont démarrés via le méthode **Netboot** (Network Boot), ces derniers s'appuient sur le réseau interne d'OVHcloud et ses services mutualisés.
 
 ### Présentation rapide d'un démarrage en Netboot
@@ -83,7 +80,7 @@ Voici un schéma (logique) de démarrage Netboot :
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration).
 - Posséder au moins un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) ayant un système d'exploitation **déjà installé**.
 - Un serveur dédié supplémentaire avec les interfaces réseau configurées par défaut, à savoir un accès au réseau public et privé. Ce serveur hébergera tous les services (**DHCP** et **TFTP**). Le système d'exploitation sera celui de votre choix.
-- Avoir toutes les interfaces réseau de ce serveur en mode **privé**, ce qui sous-entend que vous avez préalablement configuré [notre fonctionnalité OLA](https://docs.ovh.com/fr/dedicated/ola-manager/).<br>
+- Avoir toutes les interfaces réseau de ce serveur en mode **privé**, ce qui sous-entend que vous avez préalablement configuré [notre fonctionnalité OLA](/pages/cloud/dedicated/ola-enable-manager).<br>
 
 >
 > Pour vérifier que votre machine est éligible à notre procédure, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et cliquez sur l'onglet `Bare Metal Cloud`{.action}.

@@ -1,9 +1,6 @@
 ---
 title: "Änderung des SSH-Schlüssels bei Verlust"
 excerpt: "Erfahren Sie hier, wie Sie den SSH-Zugriff auf Ihre Public Cloud Instanz wiederherstellen können"
-slug: nderung_des_ssh_schlussels_bei_verlust
-section: Sicherheit
-order: 4
 updated: 2022-02-10
 ---
 
@@ -21,7 +18,7 @@ Um wieder Zugriff zu erhalten, stellen wir Ihnen den Rescue Modus zur Verfügung
 ## Voraussetzungen
 
 - Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
-- SSH-Zugriff auf Ihre Instanz [Rescue-Modus](https://docs.ovh.com/de/public-cloud/umstellung_einer_instanz_auf_den_rescue-modus).
+- SSH-Zugriff auf Ihre Instanz [Rescue-Modus](/pages/platform/public-cloud/put_an_instance_in_rescue_mode).
 
 
 ## In der praktischen Anwendung
@@ -31,7 +28,7 @@ Um wieder Zugriff zu erhalten, stellen wir Ihnen den Rescue Modus zur Verfügung
 Wenn Sie einen SSH-Schlüssel im OVHcloud Kundencenter speichern möchten, empfehlen wir Ihnen die Verwendung der RSA- oder ECDSA-Verschlüsselung. ED25519 wird derzeit nicht unterstützt.
 >
 
-Nachdem Sie die Disk der Instanz im [Rescue Modus](../umstellung_einer_instanz_auf_den_rescue-modus/#schritt-2-auf-ihre-daten-zugreifen) gemountet haben, können Sie auf sämtliche darauf befindlichen Daten zugreifen.
+Nachdem Sie die Disk der Instanz im [Rescue Modus](/pages/platform/public-cloud/put_an_instance_in_rescue_mode#schritt-2-auf-ihre-daten-zugreifen) gemountet haben, können Sie auf sämtliche darauf befindlichen Daten zugreifen.
 
 Ihre SSH-Schlüssel befinden sich in dieser Datei:
 
@@ -95,7 +92,7 @@ Nachdem Sie die Änderung durchgeführt und gespeichert haben, können Sie Ihre 
 
 ## Weiterführende Informationen
 
-[Root-Rechte erlangen und Passwort festlegen](https://docs.ovh.com/de/public-cloud/root-rechte_erlangen_und_passwort_festlegen)
+[Root-Rechte erlangen und Passwort festlegen](/pages/platform/public-cloud/become_root_and_change_password)
 
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

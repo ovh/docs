@@ -1,11 +1,8 @@
 ---
 title: AI Notebooks - Tutoriel - Utiliser Tensorboard dans un notebook (EN)
-slug: notebooks/tuto-tensorboard-embedded
 excerpt: Comment utiliser Tensorboard dans un AI Notebooks
-section: AI Notebooks - Tutoriels
-order: 02
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-tensorboard-embedded/'
+    canonical: '/pages/platform/ai/notebook_tuto_02_tensorboard'
 updated: 2022-09-01
 ---
 
@@ -63,8 +60,8 @@ A preview of this notebook can be found on [GitHub](https://github.com/ovh/ai-tr
 
 ## Go further
 
-- Another way to track your training with an AI notebook is to use **Weights & Biases**. Follow this [tutorial](https://docs.ovh.com/ca/fr/publiccloud/ai/notebooks/tuto-weights-and-biases/).
-- If you want to launch **TensorBoard** in a job, please refer to this [documentation](https://docs.ovh.com/ca/fr/publiccloud/ai/training/tuto-tensorboard-inside-job).
+- Another way to track your training with an AI notebook is to use **Weights & Biases**. Follow this [tutorial](/pages/platform/ai/notebook_tuto_03_weight_biases).
+- If you want to launch **TensorBoard** in a job, please refer to this [documentation](/pages/platform/ai/training_tuto_05_tensorboard).
 
 ## Feedback
 

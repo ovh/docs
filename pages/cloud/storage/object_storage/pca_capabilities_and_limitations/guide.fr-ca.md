@@ -1,11 +1,8 @@
 ---
 title: Cloud Archive Swift - Capacités et limitations
-slug: pca/capabilities-and-limitations
 routes:
-    canonical: 'https://docs.ovh.com/fr/storage/pcs/capabilities-and-limitations/'
+    canonical: '/pages/cloud/storage/object_storage/pcs_capabilities_and_limitations'
 excerpt: Retrouvez ici les principales capacités et limitations pour la gestion de vos conteneurs
-section: Spécificités de la classe de stockage d'archive OpenStack Swift
-order: 050
 updated: 2021-09-23
 ---
 

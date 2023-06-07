@@ -1,11 +1,9 @@
 ---
 title: 'Gérer l’historique des SMS'
-slug: gerer-l-historique-des-sms
 excerpt: 'Découvrez comment consulter l’historique de vos SMS envoyés depuis votre compte OVHcloud'
 legacy_guide_number: '8650753'
 space_key: CRSMSFAX
 space_name: SMS
-section: 'Gérer mon offre'
 updated: 2022-08-05
 ---
 
@@ -82,7 +80,7 @@ Voici le détail des informations contenues dans cet historique :
 |  tag |  le tag attribué manuellement via les API (à un ou plusieurs SMS) ou automatiquement par nos serveurs à chacun des SMS (ou chaque campagne de SMS) envoyés |
 |  message |  le contenu du SMS |
 
-Vous trouverez plus de détails sur les codes ptt et les différents ID du DLR en consultant la dernière section du guide [Tout savoir sur les utilisateurs SMS](../tout_savoir_sur_les_utilisateurs_sms/#etape-5-specifier-une-url-de-callback).
+Vous trouverez plus de détails sur les codes ptt et les différents ID du DLR en consultant la dernière section du guide [Tout savoir sur les utilisateurs SMS](/pages/telecom/sms/tout_savoir_sur_les_utilisateurs_sms#etape-5-specifier-une-url-de-callback).
  
 ## Aller plus loin
 

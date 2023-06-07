@@ -1,9 +1,6 @@
 ---
 title: Migrate data from one dedicated server to another
-slug: migrate-data-from-one-dedicated-server-to-another
 excerpt: Find out how to migrate data from one dedicated server to another
-section: Getting started
-order: 5
 updated: 2021-09-16
 ---
 
@@ -45,8 +42,8 @@ If an OS or software version change is required, make sure the locations of the 
 
 Data migration usually involves copying files from one server to another. There are several solutions for this:
 
-- The easiest way is to use a suitable software such as [SFTP](https://docs.ovh.com/us/en/dedicated/store-retrieve-data-via-sftp/).
-- The other option is to [synchronise the two servers with each other](https://docs.ovh.com/us/en/dedicated/copy-data-server-rsync/).
+- The easiest way is to use a suitable software such as [SFTP](/pages/cloud/dedicated/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp).
+- The other option is to [synchronise the two servers with each other](/pages/cloud/dedicated/how-to-copy-data-from-one-dedicated-server-to-another-using-rsync).
 
 ### Using the backup storage (available only on OVHcloud and So you Start)
 
@@ -61,7 +58,7 @@ With the [Backup Storage](https://www.ovhcloud.com/en/bare-metal/backup-storage/
 
 You can authorise access to the Backup Storage from your new server. This way, you will have a gateway for transferring your data.
 
-See our guide on [using Backup Storage on a dedicated server](https://docs.ovh.com/us/en/dedicated/using-backup-storage/){.external} for more information.
+See our guide on [using Backup Storage on a dedicated server](/pages/cloud/dedicated/services_backup_storage){.external} for more information.
 
 ### Migrating an Additional IP (only available on OVHcloud and So you Start)
 
@@ -77,7 +74,7 @@ See our guide on [using Backup Storage on a dedicated server](https://docs.ovh.c
 If the reputation of your IP addresses is important, we strongly recommend using [Additional IPs](https://www.ovhcloud.com/en/bare-metal/ip/), as they can be kept if you migrate.
 
 Once you have these IPs, you simply need to move them to the new server.
-To do this, please refer to our dedicated guide: [Moving an Additional IP](https://docs.ovh.com/us/en/dedicated/ip-fo-move/).
+To do this, please refer to our dedicated guide: [Moving an Additional IP](/pages/cloud/dedicated/move-failover-ip).
 
 > [!alert] Deleting the original server, on which one or more options have been ordered (Backup Storage, Additional IP), will permanently delete these options.
 >
@@ -86,7 +83,7 @@ To do this, please refer to our dedicated guide: [Moving an Additional IP](https
 
 Once the data is available on the new server, you may need to modify your DNS configuration, for example if the primary IP address was used.
 
-For more information, please read our documentation on [domains and Dns](https://docs.ovh.com/us/en/domains/).
+For more information, please read our documentation on [domains and Dns](/products/web-cloud-domains-domain-names).
 
 ## Go further
 

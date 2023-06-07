@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - htaccess-Dateien mit WordPress verwenden"
-slug: use-htaccess-with-wordpress
 excerpt: "Erfahren Sie hier, wie Sie Ihre WordPress Website mit einer oder mehreren htaccess-Dateien absichern"
-section: 'Tutorials'
-order: 022
 updated: 2023-03-08
 ---
 
@@ -28,7 +25,7 @@ In dieser Anleitung erfahren Sie, wie Sie bestimmte Funktionen Ihres Webhostings
 ## Voraussetzungen
 
 - Sie verfügen über ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/) und haben WordPress installiert.
-- Sie haben einen FTP-Client, z.B. [FileZilla](https://filezilla-project.org/) installiert, wie in unserem [Tutorial zu FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/) erläutert.
+- Sie haben einen FTP-Client, z.B. [FileZilla](https://filezilla-project.org/) installiert, wie in unserem [Tutorial zu FileZilla](/pages/web/hosting/ftp_filezilla_user_guide) erläutert.
 
 **.htaccess**-Dateien können mit Texteditoren erstellt und bearbeitet werden, zum Beispiel:
 
@@ -107,7 +104,7 @@ Es gibt mehrere Möglichkeiten, die Einstellungen zu konfigurieren, die das Verh
 
 > [!warning]
 >
-> Bevor Sie den folgenden Schritten folgen, leiten Sie HTTP-Anfragen nach HTTPS um. Folgen Sie hierzu den Anweisungen in unserer Anleitung: [Website mit SSL-Zertifikat auf HTTPS umstellen](https://docs.ovh.com/de/hosting/website-umstellen-https-ssl/#schritt-1-ssl-zertifikat-fur-das-hosting-aktivieren)
+> Bevor Sie den folgenden Schritten folgen, leiten Sie HTTP-Anfragen nach HTTPS um. Folgen Sie hierzu den Anweisungen in unserer Anleitung: [Website mit SSL-Zertifikat auf HTTPS umstellen](/pages/web/hosting/ssl-activate-https-website#schritt-1-ssl-zertifikat-fur-das-hosting-aktivieren)
 
 ### Die Anzeige von Verzeichnissen und Unterverzeichnissen verhindern
 
@@ -142,7 +139,7 @@ Wenn Sie eine zu sperrende IP-Adresse identifiziert haben, geben Sie diese Zeile
 
 Ersetzen Sie `xxx.xxx.xxx.xxx` mit der zu blockierenden IP-Adresse.
 
-Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung zur [IP-basierten Zugriffsbeschränkung über die .htaccess-Datei](https://docs.ovh.com/de/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung zur [IP-basierten Zugriffsbeschränkung über die .htaccess-Datei](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
 #### Zugang zum Verzeichnis wp-admin (oder anderen Verzeichnissen) nach IP blockieren
 

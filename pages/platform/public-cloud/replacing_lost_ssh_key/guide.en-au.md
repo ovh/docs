@@ -1,10 +1,7 @@
 ---
 title: 'Replacing your lost SSH key pair'
-slug: replacing_your_lost_ssh_key_pair
 excerpt: 'This guide explains how to configure the authorized_keys file for the admin user, so that you can add a new SSH key to regain access to your instance'
 legacy_guide_number: g2069
-section: Management via Control Panel
-order: 4
 updated: 2022-02-10
 ---
 
@@ -14,14 +11,14 @@ updated: 2022-02-10
 
 If you have lost your SSH key, you might be unable to connect to your instance if you have not configured any alternative way to do so.
 
-To regain access, we have provided you with a [rescue mode](../put_an_instance_in_rescue_mode/){.external}, which allows you to log in with a password and then change your files.
+To regain access, we have provided you with a [rescue mode](/pages/platform/public-cloud/put_an_instance_in_rescue_mode){.external}, which allows you to log in with a password and then change your files.
 
 **This guide explains how to configure the authorized_keys file for the admin user, so that you can add a new SSH key to regain access to your instance.**
 
 ## Requirements
 
 - A [Public Cloud Instance](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
-- Access to your instance via SSH in [rescue mode](https://docs.ovh.com/au/en/public-cloud/put_an_instance_in_rescue_mode/)
+- Access to your instance via SSH in [rescue mode](/pages/platform/public-cloud/put_an_instance_in_rescue_mode)
 - Create an SSH key
 
 ## Instructions
@@ -31,7 +28,7 @@ To regain access, we have provided you with a [rescue mode](../put_an_instance_i
 If you would like to store an SSH key in the OVHcloud Control Panel, we recommend to use RSA or ECDSA encryption. ED25519 is currently not supported.
 >
 
-After mounting your instance's disk in [rescue mode](../put_an_instance_in_rescue_mode/#step-2-accessing-your-data), you will be able to access all your files. The file containing your SSH keys is shown below:
+After mounting your instance's disk in [rescue mode](/pages/platform/public-cloud/put_an_instance_in_rescue_mode#step-2-accessing-your-data), you will be able to access all your files. The file containing your SSH keys is shown below:
 
 ```
 /mnt/home/USER_NAME/.ssh/authorized_keys
@@ -96,6 +93,6 @@ Once this change has taken place and been backed up, you need to reboot your ins
 
 ## Go further
 
-[Become root and select a password](../become_the_root_user_and_select_a_password/){.external}
+[Become root and select a password](/pages/platform/public-cloud/become_root_and_change_password){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

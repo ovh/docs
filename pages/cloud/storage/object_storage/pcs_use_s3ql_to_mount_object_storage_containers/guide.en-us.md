@@ -1,9 +1,6 @@
 ---
 title: Object Storage Swift - Use S3QL to mount object storage containers
-slug: pcs/use-s3ql-to-mount-object-storage-containers
-section: OpenStack Swift Storage Class Specifics
 legacy_guide_number: g1908
-order: 160
 updated: 2021-10-27
 ---
 
@@ -20,8 +17,8 @@ You can find more information directly on their [website](http://www.rath.org/s3
 
 ## Prerequisites
 
-- [Configure user](https://docs.ovh.com/us/en/public-cloud/creation-and-deletion-of-openstack-user/)
-- [Add storage space](https://docs.ovh.com/us/en/storage/object-storage/pcs/create-container/)
+- [Configure user](/pages/platform/public-cloud/create_and_delete_a_user)
+- [Add storage space](/pages/cloud/storage/object_storage/pcs_create_container)
 
 ## Instructions
 
@@ -46,7 +43,7 @@ fs-passphrase: PASSPHRASE
 ```
 
 OS_PROJECT_ID, OS_USERNAME and OS_PASSWORD parameters can be found in your OpenRC file.
-You can follow this guide below in order to retrieve it: [Access and Security in Horizon](https://docs.ovh.com/us/en/public-cloud/access_and_security_in_horizon/)
+You can follow this guide below in order to retrieve it: [Access and Security in Horizon](/pages/platform/public-cloud/access_and_security_in_horizon)
 
 The REGION_NAME and CT_NAME arguments can be adapted according the name and location of your object container.
 
