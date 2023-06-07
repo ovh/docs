@@ -65,8 +65,8 @@ Depois de validado o formulário, os resultados são classificados por código d
 
 - **Error**: esta parte apresenta erros ou elementos em falta que podem causar uma anomalia.
 - **Warning**: esta parte é funcional, mas merece uma atenção especial. A ferramenta detetou que este parâmetro apresenta características que não correspondem ao padrão da sua categoria, sem bloquear o seu funcionamento.
-- **Info**: trata-se de uma simples informação, sem consequências particulares sobre o funcionamento do nome de domínio.
 - **Notice**: trata-se de uma simples informação, sem consequências particulares sobre o funcionamento do nome de domínio.
+- **Info**: esta parte é funcional e cumpre os critérios standard na sua categoria.
 
 Para cada teste, é possível obter mais pormenores, por exemplo para compreender o erro no caso de uma anomalia, ou apenas a título indicativo.
 

@@ -66,7 +66,7 @@ Una vez validado el formulario, los resultados se muestran por grupo de pruebas.
 - **Error**: esta parte presenta errores o elementos faltantes que pueden causar un fallo de funcionamiento.
 - **Advertencia**: esta parte es funcional, pero merece una atención especial. La herramienta ha detectado que este parámetro tiene características que no encajan en el estándar de su categoría, sin bloquear su funcionamiento.
 - **Aviso**:  se trata de una simple información, sin consecuencias particulares sobre el funcionamiento del nombre de dominio.
-- **Información**: se trata de una simple información, sin consecuencias particulares sobre el funcionamiento del nombre de dominio.
+- **Información**: Esta pieza es funcional y cumple los criterios estándar de su categoría.
 
 Para cada prueba, es posible obtener más detalles, por ejemplo, para entender el error en caso de fallo, o simplemente a título indicativo.
 

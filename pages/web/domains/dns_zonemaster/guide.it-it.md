@@ -66,8 +66,9 @@ Una volta convalidato il modulo, i risultati sono classificati per codice colore
 
 - **Error**: questa parte presenta errori o elementi mancanti che possono causare malfunzionamenti.
 - **Warning**: questa sezione funziona, ma merita un'attenzione particolare. Il tool ha rilevato che questo parametro presenta caratteristiche che non rientrano nello standard della sua categoria, senza bloccarne il funzionamento.
-- **Info**: si tratta di una semplice informazione, senza conseguenze particolari sul funzionamento del dominio. 
 - **Notice**: si tratta di una semplice informazione, senza conseguenze particolari sul funzionamento del dominio.
+- **Info**: questa parte è funzionale e soddisfa i criteri standard nella sua categoria.
+
 
 Per ciascun test è possibile ottenere maggiori dettagli, ad esempio per comprendere l'errore nel caso di un malfunzionamento, o semplicemente a titolo indicativo.
 

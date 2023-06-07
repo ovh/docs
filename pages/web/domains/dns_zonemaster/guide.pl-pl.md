@@ -64,8 +64,9 @@ Po zatwierdzeniu formularza wyniki są klasyfikowane według kodu koloru:
 
 - **Error**: ta część zawiera błędy lub brakujące elementy, które mogą powodować nieprawidłowe działanie.
 - **Warning**: ta część jest funkcjonalna, ale zasługuje na szczególną uwagę. Narzędzie wykryło, że parametr nie spełnia normy dla swojej kategorii, nie blokując przy tym jego działania.
-- **Info**: jest to prosta informacja, nie mająca szczególnego wpływu na funkcjonowanie nazwy domeny. 
 - **Notice**: ta część jest funkcjonalna i spełnia standardowe kryteria w swojej kategorii.
+- **Info**: jest to prosta informacja, nie mająca szczególnego wpływu na funkcjonowanie nazwy domeny. 
+
 
 Dla każdego testu możesz uzyskać więcej informacji, na przykład, aby zrozumieć błąd w przypadku awarii lub tylko w celach informacyjnych.
 
