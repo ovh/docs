@@ -73,7 +73,8 @@ Vérifiez tout d'abord la sécurité de votre (vos) poste(s)/appareil(s) informa
 
 - Vérifiez qu'un antivirus est installé, mettez-le à jour et lancez un scan complet. Si vous n'en possédez aucun, consultez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) avant toute installation.
 
-- Modifiez l'ensemble de vos mots de passe locaux, notamment ceux de vos adresses e-mail, en respectant les **bonnes pratiques** précisées dans ce [guide](/pages/account/customer/manage-ovh-password);
+- Modifiez l'ensemble de vos mots de passe locaux, notamment ceux de vos adresses e-mail, en respectant les **bonnes pratiques** précisées dans [ce guide](/pages/account/customer/manage-ovh-password).
+
 - Modifiez les mots de passe de l'ensemble de vos services OVHcloud, notamment ceux de votre [base de données](/pages/web/hosting/sql_change_password) et de l'accès à votre [espace de stockage FTP](/pages/web/hosting/ftp_change_password).
 
 > [!warning]
