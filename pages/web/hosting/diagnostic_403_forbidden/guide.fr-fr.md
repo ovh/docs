@@ -17,7 +17,8 @@ Une page **« 403 forbidden »** peut apparaitre lorsque :
 
 - le fichier **.htaccess** contient une règle de restriction d'accès ;
 
-- un plugin de sécurité protège l'accès à vos fichiers/dossier/sites web via votre navigateur Internet;
+- un plugin de sécurité protège l'accès à vos fichiers/dossier/sites web via votre navigateur Internet ;
+
 - un pare-feu applicatif est activé.
 
 Suite à la détection d'un fonctionnement suspect, nos robots de sécurité peuvent bloquer temporairement l'accès aux fichiers de votre hébergement web. Cela empêche :
