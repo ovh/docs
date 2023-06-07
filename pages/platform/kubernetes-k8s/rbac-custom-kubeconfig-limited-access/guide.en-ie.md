@@ -56,7 +56,7 @@ RBAC introduces 4 Kubernetes objects:
 
 - Role (sets permissions with a given namespace)
 - ClusterRole (same as Role but cluster-wide, for all namespaces)
-- RoleBinding (grants permissions defined in a Role to a user or a set of users within a namespace)
+- RoleBinding (grants permissions defined in a Role to a User, a Group (a set of users) or a ServiceAccount within a namespace)
 - ClusterRoleBinding (same as RoleBinding but for all namespaces)
 
 When you create a Role or a ClusterRole, several operations (verbs) are allowed:
@@ -124,7 +124,7 @@ Create a RoleBinding that grant `pod-reader` Role to `sa-pod-reader` ServiceAcco
 kubectl create rolebinding read-pods --role=pod-reader --serviceaccount=hello-app:sa-pod-reader -n hello-app
 ```
 
-Nos it's time to create the `kubeconfig` file for the reated ServiceAccount with the grants you asked:
+Now it's time to create the `kubeconfig` file for the just-created ServiceAccount with the grants you asked, and obtain a kubeconfig file for this ServiceAccount:
 
 ```bash
 export SA=sa-pod-reader
@@ -175,6 +175,7 @@ hello-world-deployment-5869476bbd-rvtdl   1/1     Running   0          4h43m
 
 That's perfect. As you can see, the new `kubeconfig` file have a restriced access to your Kubernetes cluster.
 Depending on your use cases you will have to play with the ServiceAcccount, Role, ClusterRole, RoleBinding and ClusterRoleBinding resources. If you are interested, you can take a look to the [Using RBAC Authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) official documentation.
+And you can also use an [OIDC provider to authenticate your users and automatically asign them roles](../configure-oidc-provider).
 
 ## Go further
 
