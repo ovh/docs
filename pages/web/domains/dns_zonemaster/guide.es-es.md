@@ -75,7 +75,7 @@ Para cada prueba, es posible obtener más detalles, por ejemplo, para entender e
 
 ### Información útil
 
-Si tiene más preguntas sobre Zonemaster, consulte [FAQ](https://zonemaster.net/es/faq) en <https://zonemaster.net/>.
+Si tiene más preguntas sobre Zonemaster, consulte las [FAQ](https://zonemaster.net/es/faq) en <https://zonemaster.net/>.
 
 ## Más información <a name="go-further"></a>
 
