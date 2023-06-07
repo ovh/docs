@@ -89,7 +89,7 @@ Sélectionnez l'offre e-mail concernée dans les onglets suivant:
 
 ### Étape 3 : accéder au ticket d'assistance <a name="step3"></a>
 
-Suite à l'étape 3, vous serez alors redirigé vers la fenêtre « Mes demandes d'assistance ». Cliquez sur `...`{.action} à droite du ticket mentionnant l'objet « Account locked for spam.», puis cliquez sur `Voir le détail`{.action}.
+Suite à l'étape 2, vous serez alors redirigé vers la fenêtre « Mes demandes d'assistance ». Cliquez sur le bouton `...`{.action} à droite du ticket mentionnant l'objet « Account locked for spam.», puis cliquez sur `Voir le détail`{.action}.
 
 ![spam](images/blocked-for-SPAM-02.png){.thumbnail}
 
