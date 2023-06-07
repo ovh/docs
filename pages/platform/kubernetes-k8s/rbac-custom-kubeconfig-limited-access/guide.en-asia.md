@@ -48,9 +48,9 @@ In this guide you will:
 
 ## RBAC
 
-RBAC (Role-Based Access Control) is a method of regulating access to *resources* based on the *roles* of individual users.
+RBAC (Role-Based Access Control) is a method of regulating access to **resources** based on the **roles** of individual users.
 
-This method alllows you to control *what* your users can do for *which* kind of resources in your cluster.
+This method alllows you to control **what** your users can do for **which** kind of resources in your cluster.
 
 RBAC introduces 4 Kubernetes objects:
 
