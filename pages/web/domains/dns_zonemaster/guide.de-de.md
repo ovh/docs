@@ -15,7 +15,7 @@ updated: 2023-06-06
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Ziel
@@ -24,7 +24,7 @@ updated: 2023-06-06
 
 > [!primary]
 >
-> Um mehr über DNS zu erfahren, lesen Sie die Einführung unserer Anleitung zur [Konfiguration einer DNS Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/).
+> Um mehr über DNS zu erfahren, lesen Sie die Einführung unserer Anleitung zur [Konfiguration einer DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/).
 
 ## Voraussetzungen
 
@@ -42,16 +42,16 @@ Um die aktuelle Konfiguration einer Domain zu überprüfen, geben Sie Ihren Doma
 
 Um eine DNS-Konfiguration zu überprüfen, die für die betreffende Domain erstellt, aber noch nicht angewandt wurde, aktivieren Sie das Feld `Options`{.action} und geben Sie folgende Angaben ein:
 
-- **Nameservers**: Tragen Sie die Informationen des Namensservers ein, der einer Domain zugewiesen ist. Klicken Sie auf `+`{.action}, um einen zusätzlichen Namensserver hinzufügen zu können. Die Eingabe einer IP-Adresse ist optional.
-- **Delegation Signers (DS records)**: Geben Sie im Rahmen eines DNSSEC-Schutzes die Elemente des DS-Eintrags ein. Klicken Sie auf `+`{.action}, um einen zusätzlichen DS-Eintrag hinzuzufügen. Wenn die DNS Server das DNSSEC Protokoll nicht verwenden, können Sie diese Felder freigeben. Im Fall einer mit DNSSEC unterzeichneten Zone erlaubt diese Funktion die Überprüfung, ob die Zone mit einem gültigen Resolver mit den gerade zu veröffentlichenden DS-Eintragungen korrekt funktioniert, bevor diese veröffentlicht werden.
+- **Nameservers**: Tragen Sie die der Domain zugewiesenen DNS-Server ein. Klicken Sie auf `+`{.action}, um einen zusätzlichen Nameserver hinzufügen zu können. Die Eingabe einer IP-Adresse ist optional.
+- **Delegation Signers (DS records)**: Geben Sie die für den DNSSEC-Schutz zuständigen DS-Einträge ein. Klicken Sie auf `+`{.action}, um einen zusätzlichen DS-Eintrag hinzuzufügen. Wenn die DNS-Server das DNSSEC-Protokoll nicht verwenden, können Sie diese Felder frei lassen. Im Fall einer mit DNSSEC signierten Zone erlaubt diese Funktion die Überprüfung der Zone mit einem Resolver, um die neuen DS-Eintragungen vor der Veröffentlichung zu testen.
 
 Sie können auch die Überprüfung eines bestimmten IP-Protokolls erzwingen, indem Sie `Disable IPv4` und `Disable IPv6` verwenden.
 
-> **Beispiel**:<br><br> Sie besitzen die Domain "mydomain.ovh", die aktuell die DNS Server "dns19.ovh.net" und "ns19.ovh.net" verwendet. 
+> **Beispiel**:<br><br> Sie besitzen die Domain "mydomain.ovh", die aktuell die DNS-Server "dns19.ovh.net" und "ns19.ovh.net" verwendet. 
 >
 > Sie haben eine DNS-Zone für diese Domain auf den DNS-Servern "mydns.test.ovh"und "mydns2.test.ovh" konfiguriert.<br>
-> Bevor Sie die DNS Server ändern, können Sie eine erweiterte Suche mithilfe des Feldes `Options`{.action} durchführen, indem Sie "mydns.test.ovh"und "mydns2.test.ovh" jeweils als DNS-Server in `Nameservers` eingeben.<br>
-> Zonemaster führt einen Test durch, als würden Sie die Server "mydns.test.ovh"und "mydns2.test.ovh" mit "mydomain.ovh" verwenden.<br>
+> Bevor Sie die DNS-Server ändern, können Sie eine erweiterte Suche mithilfe des Feldes `Options`{.action} durchführen, indem Sie "mydns.test.ovh"und "mydns2.test.ovh" jeweils als DNS-Server in `Nameservers` eingeben.<br>
+> Zonemaster führt einen Test durch und simuliert dabei die Nutzung der Server "mydns.test.ovh" und "mydns2.test.ovh" mit "mydomain.ovh".<br>
 > ![Screenshot der erweiterten Optionen des Zonemaster-Formulars. Die beiden Namensserver "mydns.test.ovh" und "mydns2.test.ovh" wurden im Abschnitt "Namensserver" des Formulars eingetragen.](images/zonemaster02.png){.thumbnail}
 
 > [!primary]
@@ -64,8 +64,8 @@ Sie können auch die Überprüfung eines bestimmten IP-Protokolls erzwingen, ind
 Sobald das Formular validiert wurde, werden die Ergebnisse nach Testgruppen angezeigt. Die Tests werden nach Schweregrad sortiert.
 
 - **Error**: Fehler oder fehlende Elemente, die zu einer Störung führen können.
-- **Warning**: Dieser Teil ist funktional, verdient jedoch besondere Aufmerksamkeit. Das Tool hat festgestellt, dass dieser Parameter Eigenschaften aufweist, die nicht dem Standard seiner Kategorie entsprechen, ohne dass sein Betrieb blockiert wird.
-- **Info**: Es handelt sich lediglich um eine Information, die keine besonderen Auswirkungen auf die Funktionsweise des Domainnamens hat
+- **Warning**: Dieser Teil ist funktional, verdient jedoch besondere Aufmerksamkeit. Das Tool hat festgestellt, dass dieser Parameter Eigenschaften aufweist, die nicht dem Standard seiner Kategorie entsprechen, ohne aber seinen Betrieb zu blockieren.
+- **Info**: Dieser Teil funktioniert dem Standard seiner Kategorie entsprechend.
 - **Notice**: Es handelt sich lediglich um eine Information, die keine besonderen Auswirkungen auf die Funktionsweise des Domainnamens hat.
 
 Für jeden Test können weitere Einzelheiten ermittelt werden, zum Beispiel zum Verständnis des Fehlers bei einer Fehlfunktion, oder nur zur Information.
