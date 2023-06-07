@@ -22,7 +22,7 @@ Lorsque votre adresse e-mail est bloquée pour SPAM, cela signifie qu'une activi
 
 ## En pratique <a name="instructions"></a>
 
-Avant de poursuivre et si le blocage concerne une adresse e-mail de type MXplan, Identifiez la version que vous possédez pour suivre le bon processus de déblocage. Vérifiez à l'aide du tableau ci-dessous comment distinguer les deux versions.
+Avant de poursuivre et si le blocage concerne une adresse e-mail de type MXplan, identifiez la version que vous possédez pour suivre le bon processus de déblocage. Vérifiez, à l'aide du tableau ci-dessous, comment distinguer les deux versions.
 
 |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 |---|---|
