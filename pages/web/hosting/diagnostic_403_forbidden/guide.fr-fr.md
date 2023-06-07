@@ -26,7 +26,8 @@ Suite à la détection d'un fonctionnement suspect, nos robots de sécurité peu
 
 - la progression d'un éventuel piratage de vos données présentes sur votre hébergement web ;
 
-- l'envoi de code malveillant vers d'autres entités/sites web pouvant entraîner un piratage de ces derniers;
+- l'envoi de code malveillant vers d'autres entités/sites web, pouvant alors entraîner un piratage de ces derniers ;
+
 - la réalisation d'opérations illégales.
  
  Cela vise également à vous protéger juridiquement contre les actions résultantes d'un éventuel piratage de votre hébergement web en direction d'autres organisations/sites web. 
