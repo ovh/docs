@@ -76,7 +76,7 @@ Sélectionnez l'offre e-mail concernée dans les onglets suivants:
 >>
 >> Si le blocage concerne une adresse e-mail [MXplan version historique](#instructions), il n'y a pas de ticket d'assistance. Veillez bien à consulter [l'étape 1](#step1) de ce guide avant de suivre les instructions suivante.
 >>
->> Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Webcloud`{.action}. Cliquez sur `Emails`{.action}, puis sélectionnez le nom de domaine concerné.
+>> Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Web Cloud`{.action}. Cliquez sur `Emails`{.action}, puis sélectionnez le nom de domaine concerné.
 >>
 >> Dirigez-vous vers l'onglet `Emails`{.action} de votre plateforme. Si la colonne « Bloqué pour SPAM » mentionne « Oui », cliquez sur cette mention puis sur `Changer le mot de passe`{.action}. Votre adresse e-mail est maintenant débloquée, vous n'avez pas besoin de suivre l'[étape 3](#step3).
 >>
