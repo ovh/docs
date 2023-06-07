@@ -34,7 +34,7 @@ It is not possible by default. The Tier-0 gateways are each hosted in a differen
 
 ### Can I configure an active-active Tier-0 Gateway in order to have a double bandwidth (10+10=20Gb/s guarantee and 25+25Gb/s "theorical")?
 
-No, it is not possible by default, the configuration is managed by OVHcloud and is done in active/passive mode with a VIP (10 Gbp/s guaranted bandwidth).
+No, it is not possible by default, the configuration is managed by OVHcloud and is done in active/passive mode with a VIP (10 Gbp/s guaranteed bandwidth).
 
 <a name="t0commandline"></a>
 
