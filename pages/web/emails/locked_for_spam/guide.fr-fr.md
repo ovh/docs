@@ -32,7 +32,7 @@ Avant de poursuivre et si le blocage concerne une adresse e-mail de type MXplan,
 
 Lorsqu'une activité suspecte est détectée au niveau de l'envoi des e-mails, l'adresse concernée est automatiquement bloquée. Dans cette situation, vous ne pouvez plus envoyer d'e-mails depuis cette adresse e-mail.
 
-Tout d'abord, assurez-vous, auprès du (des) utilisateur(s) de l'adresse e-mail bloquée, qu'il(s) n'est (ne sont) pas directement lié(s) à l'origine du blocage. Ceci suite à une utilisation inhabituelle de l'adresse e-mail (exemple: réalisation d'envois massifs d'e-mails). Si c'est le cas, vous devrez corriger la situation avant de débloquer l'adresse.
+Tout d'abord, assurez-vous, auprès du (des) utilisateur(s) de l'adresse e-mail bloquée, qu'il(s) n'est (ne sont) pas directement à l'origine du blocage, suite à une utilisation inhabituelle de l'adresse e-mail (par exemple, suite à la réalisation d'envois massifs d'e-mails). Si c'est le cas, vous devez corriger la situation avant de débloquer l'adresse.
 
 Si l'activité suspecte détectée par l'anti-spam n'a pas été initiée par le (les) utilisateur(s) légitime(s) de l'adresse e-mail, prennez les mesures nécessaires ci-dessous:
 
