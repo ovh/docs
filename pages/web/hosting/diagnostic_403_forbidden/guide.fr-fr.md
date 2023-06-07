@@ -24,7 +24,8 @@ Une page **« 403 forbidden »** peut apparaitre lorsque :
 Suite à la détection d'un fonctionnement suspect, nos robots de sécurité peuvent bloquer temporairement l'accès aux fichiers de votre hébergement web. Ce dispositif permet d'empêcher :
 
 
-- la progression d'un éventuel piratage de vos données présentes sur votre hébergement web;
+- la progression d'un éventuel piratage de vos données présentes sur votre hébergement web ;
+
 - l'envoi de code malveillant vers d'autres entités/sites web pouvant entraîner un piratage de ces derniers;
 - la réalisation d'opérations illégales.
  
