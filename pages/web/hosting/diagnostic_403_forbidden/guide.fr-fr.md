@@ -186,7 +186,8 @@ Une réponse **« 200 Permissions changed on / »** confirme que la manipulation
 
 > [warning]
 >
-> Un délais de quelques minutes (maximum 20 minutes) peut être nécessaire pour que la modification soit visible via votre navigateur Internet.
+> Un délai de quelques minutes (maximum 20 minutes) peut être nécessaire pour que la modification soit visible via votre navigateur Internet.
+
 >
 > Parfois et en fonction de votre site web, vous devrez vider le cache de votre navigateur en complément.
 >
