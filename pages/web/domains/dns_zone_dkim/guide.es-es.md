@@ -225,7 +225,7 @@ Siga los **5 pasos** que se indican a continuación haciendo clic en cada una de
 >> ```
 >> > [!primary]
 >> >
->> > Si su dominio está gestionado en el mismo área de cliente que su plataforma y ha marcado `autoEnableDKIM` y `configureDkim`, acceda directamente a [**Los diferentes estados de DKIM**](dkim-status#) para seguir la activación del DKIM.
+>> > Si su dominio está gestionado en el mismo área de cliente que su plataforma y ha marcado `autoEnableDKIM` y `configureDkim`, acceda directamente a [**Los diferentes estados de DKIM**](#dkim-status) para seguir la activación del DKIM.
 >>
 > **3.Obtener el registro DNS**
 >> Es necesario configurar manualmente la zona DNS del dominio **en los siguientes** casos:
@@ -371,7 +371,7 @@ Siga los **5 pasos** que se indican a continuación haciendo clic en cada una de
 >> ```
 >> > [!primary]
 >> >
->> > Si su dominio está gestionado en el mismo área de cliente que su plataforma y ha marcado `autoEnableDKIM` y `configureDkim`, acceda directamente a [**Los diferentes estados de DKIM**](dkim-status#) para seguir la activación del DKIM.
+>> > Si su dominio está gestionado en el mismo área de cliente que su plataforma y ha marcado `autoEnableDKIM` y `configureDkim`, acceda directamente a [**Los diferentes estados de DKIM**](#dkim-status) para seguir la activación del DKIM.
 >>
 > **3.Obtener el registro DNS**
 >> Es necesario configurar manualmente la zona DNS del dominio **en los siguientes** casos:
@@ -459,7 +459,7 @@ Siga los **5 pasos** que se indican a continuación haciendo clic en cada una de
 >>
 >> > [!success]
 >> >
->> > Ahora ha realizado todas las operaciones necesarias para activar el DKIM. Para asegurarse de que esté activado, consulte la sección [**"Estado de DKIM"**](dkim-status#) de esta guía para comprobar que el valor `status:` está bien en `inProduction`. En ese caso, su DKIM estará activo.
+>> > Ahora ha realizado todas las operaciones necesarias para activar el DKIM. Para asegurarse de que esté activado, consulte la sección [**"Estado de DKIM"**](#dkim-status) de esta guía para comprobar que el valor `status:` está bien en `inProduction`. En ese caso, su DKIM estará activo.
 >>
 
 #### Los diferentes estados del DKIM <a name="dkim-status"></a>

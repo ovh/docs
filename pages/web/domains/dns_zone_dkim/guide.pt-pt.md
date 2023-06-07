@@ -459,7 +459,7 @@ Siga os **5 passos** abaixo ao clicar em cada separador.
 >>
 >> > [!success]
 >> >
->> > Já realizou todas as operações para ativar o DKIM. Para assegurar que o servidor está ativo, consulte a secção [**"Os diferentes estados do DKIM"**](dkim-status#) deste guia para verificar que o valor `status:` está bem em `inProduction`. Se for o caso, o seu DKIM está ativo.
+>> > Já realizou todas as operações para ativar o DKIM. Para assegurar que o servidor está ativo, consulte a secção [**"Os diferentes estados do DKIM"**](#dkim-status) deste guia para verificar que o valor `status:` está bem em `inProduction`. Se for o caso, o seu DKIM está ativo.
 >>
 
 #### Os diferentes estados do DKIM <a name="dkim-status"></a>
