@@ -3,7 +3,7 @@ title: Using RBAC to handle limited access to an OVHcloud Managed Kubernetes clu
 slug: rbac-custom-kubeconfig-limited-access
 excerpt: Find out how to use the power of RBAC to generate customized kubeconfig file with limited access to an OVHcloud Managed Kubernetes cluster
 section: Security
-order: 1
+order: 0
 updated: 2023-06-07
 ---
 
@@ -69,7 +69,7 @@ When you create a Role or a ClusterRole, several operations (verbs) are allowed:
 - watch
 - ...
 
-By default, In Kubernetes in every namespace you have a service account, linked to a ClusterRole that allows you to do all the oeprations you want to all the resources you want in this namespace.
+By default, In Kubernetes in every namespace you have a ServiceAccount, linked to a ClusterRole that allows you to do all the operations you want to all the resources you want in this namespace.
 By creating new ServiceAccount, Role/ClusterRole and RoleBinding/ClusterRoleBinding you will control the access to a Kubernetes cluster.
 
 ## Requirements
