@@ -64,7 +64,7 @@ También puede forzar la verificación de un protocolo IP específico mediante l
 Una vez validado el formulario, los resultados se muestran por grupo de pruebas. Las pruebas se clasifican por su severidad.
 
 - **Error**: esta parte presenta errores o elementos faltantes que pueden causar un fallo de funcionamiento.
-- **Advertencia**: Esta parte es funcional, pero merece una atención especial. La herramienta ha detectado que este parámetro tiene características que no encajan en el estándar de su categoría, sin bloquear su funcionamiento.
+- **Advertencia**: esta parte es funcional, pero merece una atención especial. La herramienta ha detectado que este parámetro tiene características que no encajan en el estándar de su categoría, sin bloquear su funcionamiento.
 - **Aviso**:  se trata de una simple información, sin consecuencias particulares sobre el funcionamiento del nombre de dominio.
 - **Información**: se trata de una simple información, sin consecuencias particulares sobre el funcionamiento del nombre de dominio.
 
