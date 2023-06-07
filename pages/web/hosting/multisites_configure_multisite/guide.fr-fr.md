@@ -140,6 +140,8 @@ Notez les éléments qui s’affichent, puis cliquez sur le bouton `Valider`{.ac
 >
 > Vous devez **rapidement** effectuer ces modifications pour que votre domaine soit correctement ajouté. Dans le cas contraire, l'ajout de votre domaine sera annulé.
 >
+> Les entrées DNS de type **A** et **TXT** doivent obligatoirement être placées dans la zone DNS active de votre nom de domaine pour qu'il soit ajouté à votre hébergement web. Seuls les entrées DNS de type **AAAA** sont optionnelles. 
+>
 
 ### Étape 3 : mettre votre site web en ligne <a name="site-online"></a>
 
