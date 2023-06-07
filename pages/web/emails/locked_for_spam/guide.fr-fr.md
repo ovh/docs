@@ -36,7 +36,7 @@ Tout d'abord, assurez-vous, auprès du (des) utilisateur(s) de l'adresse e-mail 
 
 Si l'activité suspecte détectée par l'anti-spam n'a pas été initiée par le (les) utilisateur(s) légitime(s) de l'adresse e-mail, prennez les mesures nécessaires ci-dessous:
 
-- Effectuer une analyse antivirus de chacun des postes utilisant l'adresse e-mail bloquée pour spam et appliquer un correctif si ces derniers sont infectés.
+- Effectuez une analyse antivirus de chacun des postes utilisant l'adresse e-mail bloquée pour SPAM et appliquez un correctif si ces derniers sont infectés.
 
 - Vérifiez tous les logiciels utilisant les identifiants de l'adresse e-mail bloquée pour SPAM (par exemple : télécopieur, logiciel métier, logiciel de messagerie).
 
