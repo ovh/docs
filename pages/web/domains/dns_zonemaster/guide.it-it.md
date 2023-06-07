@@ -65,7 +65,7 @@ Per verificare una configurazione DNS preparata ma non ancora applicata al domin
 Una volta convalidato il modulo, i risultati sono classificati per codice colore:
 
 - **Error**: questa parte presenta errori o elementi mancanti che possono causare malfunzionamenti.
-- **Warning**: Questa sezione funziona, ma merita un'attenzione particolare. Il tool ha rilevato che questo parametro presenta caratteristiche che non rientrano nello standard della sua categoria, senza bloccarne il funzionamento.
+- **Warning**: questa sezione funziona, ma merita un'attenzione particolare. Il tool ha rilevato che questo parametro presenta caratteristiche che non rientrano nello standard della sua categoria, senza bloccarne il funzionamento.
 - **Info**: si tratta di una semplice informazione, senza conseguenze particolari sul funzionamento del dominio. 
 - **Notice**: si tratta di una semplice informazione, senza conseguenze particolari sul funzionamento del dominio.
 
