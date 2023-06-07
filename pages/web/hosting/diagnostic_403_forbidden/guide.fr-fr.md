@@ -30,7 +30,8 @@ Suite à la détection d'un fonctionnement suspect, nos robots de sécurité peu
 
 - la réalisation d'opérations illégales.
  
- Cela vise également à vous protéger juridiquement contre les actions résultantes d'un éventuel piratage de votre hébergement web en direction d'autres organisations/sites web. 
+ Ce dispositif vise également à vous protéger juridiquement contre les actions résultantes d'un éventuel piratage de votre hébergement web en direction d'autres organisations/sites web. 
+
  
  *Si vous êtes concernés par ce type de blocage, une notification vous est envoyée sur l'adresse e-mail du contact « administrateur » de votre hébergement web*
 
