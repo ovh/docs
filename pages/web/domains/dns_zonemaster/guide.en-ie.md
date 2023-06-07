@@ -6,8 +6,6 @@ order: 08
 updated: 2023-06-06
 ---
 
-**Last updated 6th June 2023**
-
 > [!warning]
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
