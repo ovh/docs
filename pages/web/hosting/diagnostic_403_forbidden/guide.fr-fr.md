@@ -13,7 +13,8 @@ updated: 2023-05-30
 
 Une page **« 403 forbidden »** peut apparaitre lorsque :
 
-- les droits d'accès FTP (CHMOD) sont insuffisants ou restreint. L'accès au fichier/dossier/site web auquel vous souhaitez accéder via votre navigateur Internet est alors refusé par le serveur web de votre hébergement web;
+- les droits d'accès FTP (CHMOD) sont insuffisants ou restreints. L'accès au fichier/dossier/site web auquel vous souhaitez accéder via votre navigateur Internet est alors refusé par le serveur web de votre hébergement web ;
+
 - le fichier **.htaccess** contient une règle de restriction d'accès;
 - un plugin de sécurité protège l'accès à vos fichiers/dossier/sites web via votre navigateur Internet;
 - un pare-feu applicatif est activé.
