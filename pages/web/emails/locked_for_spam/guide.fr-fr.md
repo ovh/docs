@@ -42,7 +42,7 @@ Si l'activité suspecte détectée par l'anti-spam n'a pas été initiée par le
 
 ### Étape 2 : vérifier le statut de l'adresse e-mail et accéder au ticket d'assistance associé
 
-Sélectionnez l'offre e-mail concernée dans les onglets suivant:
+Sélectionnez l'offre e-mail concernée dans les onglets suivants:
 
 > [!tabs]
 > **Exchange**
