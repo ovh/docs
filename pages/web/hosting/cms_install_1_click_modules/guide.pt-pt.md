@@ -76,7 +76,7 @@ Uma vez selecionado o CMS, selecione uma instalação **rápida** ou **avançada
 
 #### Instalação rápida de um "módulo em 1 clique"
 
-Escolha o nome de domínio do seu CMS, controle o diretório alvo que aparece automaticamente após a escolha do nome de domínio e verifique que a casa `Instalação em modo avançado`{.action}. não está selecionada. Por fim, clique no botão `Instalar` {.action}.
+Escolha o nome de domínio do seu CMS, controle o diretório alvo que aparece automaticamente após a escolha do nome de domínio e verifique que a casa `Instalação em modo avançado`{.action}. não está selecionada. Por fim, clique no botão `Instalar`{.action}.
 
 > [!warning]
 >

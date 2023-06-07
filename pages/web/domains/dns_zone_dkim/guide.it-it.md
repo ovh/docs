@@ -371,7 +371,7 @@ Clicca sui **5 step** seguenti, cliccando su ciascuna scheda.
 >> ```
 >> > [!primary]
 >> >
->> > Se il tuo dominio è gestito nello stesso Spazio Cliente della tua piattaforma e hai selezionato `autoEnableDKIM` e `configureDkim`, accedi direttamente alla sezione [**I diversi stati del DKIM**](dkim-status#) qui sotto per monitorare l'attivazione del DKIM.
+>> > Se il tuo dominio è gestito nello stesso Spazio Cliente della tua piattaforma e hai selezionato `autoEnableDKIM` e `configureDkim`, accedi direttamente alla sezione [**I diversi stati del DKIM**](#dkim-status) qui sotto per monitorare l'attivazione del DKIM.
 >>
 > **3.Recuperare il record DNS**
 >> È necessario configurare manualmente la zona DNS del dominio **in questi casi**:

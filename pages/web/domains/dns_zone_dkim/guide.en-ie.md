@@ -262,7 +262,7 @@ Follow the **5 steps** below by clicking on each tab.
 >>
 > **4. Configure the DNS record**
 >> Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). In the `Web Cloud`{.action} section, click on `Domain names`{.action} in the left column and select the relevant domain name.<br>
->> Go to the `DNS Zone`{.action} tab, then click `Add an entry`{.action} in the window that appears. Choose `CNAME`, then enter the information according to the values you have entered.<br>
+>> Go to the `DNS Zone`{.action} tab, then click on `Add an entry`{.action}. In the window that appears, choose `CNAME`, then enter the information according to the values retrieved previously.<br>
 >>
 >> If we take the values of the example in step "**3. Retrieve the DNS record**":
 >>
@@ -407,7 +407,7 @@ Follow the **5 steps** below by clicking on each tab.
 >>
 > **4. Configure the DNS record**
 >> Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). In the `Web Cloud`{.action} section, click on `Domain names`{.action} in the left column and select the relevant domain name of your Email Pro platform.<br>
->> Go to the `DNS Zone`{.action} tab, then click `Add an entry`{.action} in the window that appears. Choose `CNAME`, then enter the information according to the values you have entered.<br>
+>> Go to the `DNS Zone`{.action} tab, then click on `Add an entry`{.action}. In the window that appears, choose `CNAME`, then enter the information according to the values retrieved previously.<br>
 >>
 >> If we take the values of the example in step **3.Retrieve the DNS record**:
 >>
@@ -481,7 +481,7 @@ Select the email solution concerned in the following tabs:
 >> - `todo`: The task has been initialised, it will begin. <br>
 >> - `WaitingRecord`: DNS records are pending configuration or being validated in the domain name’s DNS zone. A regular automatic check is performed to check if the DNS record is present and correctly entered.
 >> - `ready`: DNS records are present in the zone. DKIM can now be enabled. <br>
->> - `inProduction`: the DKIM is well configured and activated, so it is fully operational. <br>
+>> - `inProduction`: DKIM is well configured and activated, so it is fully operational. <br>
 >> - `disabling`: DKIM is being disabled. <br>
 >> - `deleting`: DKIM is being deleted. <br>
 >>
@@ -508,7 +508,7 @@ Select the email solution concerned in the following tabs:
 >> - `todo`: The task has been initialised, it will begin. <br>
 >> - `WaitingRecord`: DNS records are pending configuration or being validated in the domain name’s DNS zone. A regular automatic check is performed to check if the DNS record is present and correctly entered. <br>
 >> - `ready`: DNS records are present in the zone. DKIM can now be enabled. <br>
->> - `inProduction`: The DKIM is well configured and activated, so it is fully operational. <br>
+>> - `inProduction`: DKIM is well configured and activated, so it is fully operational. <br>
 >> - `disabling`: DKIM is being disabled. <br>
 >> - `deleting`: DKIM is being deleted. <br>
 >>
