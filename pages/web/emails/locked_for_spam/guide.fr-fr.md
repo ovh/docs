@@ -4,10 +4,10 @@ slug: bloque-pour-spam
 excerpt: 'Découvrez comment réagir lorsque votre adresse a été bloquée pour spam'
 section: Diagnostic
 order: 01
-updated: 2023-06-06
+updated: 2023-06-0È
 ---
 
-**Dernière mise à jour le 16/03/2020**
+**Dernière mise à jour le 07/06/2023**
 
 ## Objectif
 
