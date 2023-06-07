@@ -69,7 +69,7 @@ Une fois que vous avez soumis la demande d'activation, le statut de la connexion
 ### 2. Activer un certificat SSL sur un hébergement web <a name="enablessl"></a>
 
 Avant de procéder à cette configuration, assurez-vous que l'étape précédente, « [activation d'un certificat SSL sur un site multisite](#multisite) », a été effectuée correctement. Au moins un domaine doit avoir l'option SSL `Activée` ou le statut `A générer` pour activer le certificat SSL.<br>
-**Ces informations ne s'appliquent pas si vous sélectionnez `Certificat payant`{.action} ou `Importer de votre certificat SSL`{.action}.**
+**Ces informations ne s'appliquent pas si vous sélectionnez `Certificat payant`{.action} ou `Import de votre certificat SSL`{.action}.**
 
 > [!warning]
 >
