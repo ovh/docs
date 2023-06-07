@@ -60,7 +60,7 @@ Cette option n'affecte pas les comptes qui existent déjà sur le serveur mais q
 
 Pour désactiver l'environnement Jailed Shell d'un utilisateur spécifique, utilisez l'interface « WHM's Manage Shell Access » (WHM >> Home >> Account Functions >> Manage Shell Access).
 
-Vous pourrez retrouver toute ces informations sur la [documentation officielle cPanel](https://docs.cpanel.net/knowledge-base/accounts/virtfs-jailed-shell/#disable-or-remove-a-jailed-shell-environment).
+Vous pourrez retrouver toute ces informations dans la [documentation officielle cPanel](https://docs.cpanel.net/knowledge-base/accounts/virtfs-jailed-shell/#disable-or-remove-a-jailed-shell-environment).
 
 > [!warning]
 >
