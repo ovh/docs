@@ -1,7 +1,9 @@
 ---
-title: NSX - FAQ
+title: NSX - FAQ (EN)
 excerpt: Frequently asked questions on NSX
 updated: 2023-06-07
+routes:
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-vmware-nsx-faq?id=kb_article_view&sysparm_article=KB0058349'
 ---
 
 ## Objective
@@ -128,6 +130,6 @@ Yes, it's possible.
 
 [Getting started with NSX](/pages/cloud/private-cloud/nsx-01-first-steps)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.
