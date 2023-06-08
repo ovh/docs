@@ -34,7 +34,7 @@ updated: 2023-06-06
 
 ## Objective
 
-OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. This guide will explain how to deploy a simple *Hello World* application on a OVHcloud Managed Kubernetes cluster.
+OVHcloud Managed Kubernetes service provides you with Kubernetes clusters without the hassle of installation or operation. This guide will explain how to deploy a simple *Hello World* application on a OVHcloud Managed Kubernetes cluster.
 
 ## Requirements
 
@@ -44,7 +44,7 @@ OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the
 
 > [!warning]
 > When a __LoadBalancer__ Service resource is created inside a Managed Kubernetes cluster, an associated Public Cloud Load Balancer is automatically created, allowing public access to your K8S application.
-> The Public Cloud Load Balancer service is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Network Load Balancer price](https://www.ovhcloud.com/de/public-cloud/prices/#network)
+> The Public Cloud Load Balancer service is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Network Load Balancer price](https://www.ovhcloud.com/de/public-cloud/prices/#network).
 
 ## Instructions
 
@@ -115,7 +115,7 @@ deployment.apps/hello-world-deployment created
 
 > [!primary]
 > The application you have just deployed is a simple Nginx server with a single static *Hello World* page. 
-> Basically it just deploys the Docker image [`ovhplatform/hello`](https://hub.docker.com/r/ovhplatform/hello/){.external}
+> Basically it just deploys the Docker image [`ovhplatform/hello`](https://hub.docker.com/r/ovhplatform/hello/){.external}.
 
 ### Step 2 - List the pods
 
@@ -133,13 +133,13 @@ hello-world-deployment-d98c6464b-7jqvg         1/1       Running   0          47
 </code></pre>
 
 > [!primary]
-> In this tutorial we choosed to create a special namespace to isolate our application.
+> In this tutorial, we chose to create a special namespace to isolate our application.
 >
-> But if you want to use `default` namespace instead, is the Kubernetes namespace by default so you don't need to specify it in your kubectl commands.
+> But if you want to use the `default` namespace instead, it's the default Kubernetes namespace so you don't need to specify it in your kubectl commands.
 
 ### Step 3 - List the deployments
 
-You can also verify the deployment is active:
+You can also verify that the deployment is active:
 
 ```bash
 kubectl get deploy -n hello-app -l app=hello-world
@@ -154,7 +154,7 @@ hello-world-deployment        1         1         1            1           1m
 
 ### Step 4 - List the services
 
-And now you're going to use `kubectl` to see your service:
+Now, you will use `kubectl` to view your service:
 
 ```bash
 kubectl get services -n hello-app -l app=hello-world
@@ -168,7 +168,7 @@ hello-world   LoadBalancer   10.3.234.211   51.178.69.47   80:31885/TCP   6m54s
 </code></pre>
 
 > [!primary]
-> If under `EXTERNAL-IP` you get `<pending>`, don't worry, the provisioning of the LoadBalancer can take a minute or two, please try again in a few moments.
+> In case you get `<pending>` under `EXTERNAL-IP`, it may take a minute or two to provision the LoadBalancer, so try again in a few moments.
 
 ### Step 5 - Test your service
 
@@ -185,7 +185,7 @@ Copy/paste the URL in your browser to see your new running `hello-world` applica
 ![Testing your service](images/deploying_an_application-01.png){.thumbnail}
 
 
-You can even test the newly created service, in command line, with curl:
+You can also test the newly created service, in command line, with curl:
 
 ```bash
 curl $SERVICE_URL
@@ -222,9 +222,9 @@ text-align: center;
 
 ### Step 6 - Clean up
 
-At the end you can proceed to clean up by deleting the service and the deployment.
+At the end, you can clean up by deleting the service and the deployment.
 
-Let's delete the namespace (deleting the namespace will delete all the resources cerated inside it including the deployment and the service):
+Let's delete the namespace (deleting the namespace will delete all resources created within it, including the deployment and the service):
 
 ```bash
 kubectl delete ns hello-app
