@@ -59,7 +59,8 @@ Si utiliza un CMS WordPress, OVHcloud también pone a su disposición un tutoria
 
 A continuación explicamos los 4 pasos principales que debe seguir para proteger el acceso a un directorio o a la totalidad o parte de su sitio web:
 
-- Crear archivos "crypt.php", ".htaccess" y ".htpasswd";
+- Crear archivos "crypt.php", ".htaccess" y ".htpasswd".
+
 - Generar contraseñas codificadas con el archivo "crypt.php".
 - Establecer usuarios y contraseñas codificadas con el archivo ".htpasswd".
 - Configurar reglas en el archivo ".htaccess" y eliminar el archivo "crypt.php".
