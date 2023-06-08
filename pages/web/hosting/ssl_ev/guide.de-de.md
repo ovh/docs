@@ -4,14 +4,14 @@ slug: ssl-ev
 excerpt: "Erfahren Sie hier, wie Sie ein EV SSL-Zertifikat für Ihr OVHcloud Webhosting bestellen und installieren"
 section: SSL
 order: 03
-updated: 2022-12-13
+updated: 2023-06-08
 ---
  
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 13.12.2022**
+**Letzte Aktualisierung am 08.06.2023**
   
 ## Ziel  
 
@@ -137,6 +137,16 @@ Sobald Ihre Bestellung ausgeführt wurde, sendet Sectigo Ihnen eine E-Mail mit e
 Überprüfen Sie Ihre Angaben und bestätigen Sie Ihre Anfrage gemäß den Informationen in dieser E-Mail. 
 
 Um sicherzustellen, dass der E-Mail-Verkehr mit Sectigo korrekt abläuft, überprüfen Sie auch die Gültigkeit der im Formular angegebenen E-Mail-Adresse bei der Bestellung des EV SSL und der Kontakt-E-Mail-Adresse in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+
+> [!primary]
+>
+> Parallel dazu wird automatisch im FTP-Bereich Ihres Webhostings eine Datei im *.txt*-Format erstellt, um die Inhaberschaft Ihrer Domain bei Sectigo zu bestätigen. Dieser wird dann gelöscht, wenn er für Sectigo nicht mehr benötigt wird.
+>
+> Bitte beachten Sie, dass bestimmte Einschränkungen Ihrer Seite (z. B. in einer ".htaccess"-Datei) diese Überprüfung verhindern können.
+> Sind die FTP-Zugriffsrechte "CHMOD" ebenfalls eingeschränkt oder **nicht** ausreichend, kann die Überprüfung ebenfalls blockiert werden.
+>
+> Wir empfehlen Ihnen auch, die [Application Firewall](/pages/web/hosting/multisites_activating_application_firewall), die bei unseren Webhostings verfügbar ist, während der gesamten Dauer der Installation Ihres EV SSL Zertifikats zu aktivieren oder aktiv zu lassen.
+>
 
 #### 2.2 - Überprüfungen durch die Zertifizierungsstelle Sectigo
 
