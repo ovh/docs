@@ -726,6 +726,7 @@
                 + [Sanitize your OVHcloud Managed Kubernetes with Popeye](platform/kubernetes-k8s/installing-popeye)
                 + [Encrypt your Secret for OVHcloud Managed Kubernetes with Sealed Secrets (Kubeseal)](platform/kubernetes-k8s/encrypt-secret-with-kubeseal)
                 + [Scan for vulnerabilities and misconfigurations of your OVHcloud Managed Kubernetes with Trivy](platform/kubernetes-k8s/installing-trivy)
+                + [Using RBAC to handle limited access to an OVHcloud Managed Kubernetes cluster](platform/kubernetes-k8s/rbac-custom-kubeconfig-limited-access)
             + [Serverless](public-cloud-containers-orchestration-managed-kubernetes-k8s-serverless)
                 + [Installing a FaaS platform on OVHcloud Managed Kubernetes using OpenFaaS](platform/kubernetes-k8s/installing-openfaas)
                 + [Run Serverless containers on OVHcloud Managed Kubernetes with Knative](platform/kubernetes-k8s/installing-knative)
