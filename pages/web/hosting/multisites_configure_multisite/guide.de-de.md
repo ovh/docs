@@ -4,14 +4,14 @@ slug: multisites-mehrere-websites-konfigurieren
 excerpt: 'Erfahren Sie hier, wie Sie ein Webhosting für mehrere Websites verwenden'
 section: 'Erste Schritte'
 order: 03
-updated: 2022-11-04
+updated: 2023-06-08
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 22.08.2022**
+**Letzte Aktualisierung am 08.06.2023**
 
 ## Ziel 
 
@@ -143,6 +143,8 @@ Jedes Hinzufügen einer Domain außerhalb von OVHcloud erfordert eine zusätzlic
 > [!warning]
 >
 > Sie müssen diese Änderungen **schnell** vornehmen, damit Ihre Domain korrekt hinzugefügt wird. Andernfalls wird das Hinzufügen Ihrer Domain abgebrochen.
+>
+> DNS Einträge vom Typ **A** und **TXT** müssen zwingend in der aktiven DNS Zone Ihrer Domain platziert werden, damit sie zu Ihrem Webhosting hinzugefügt wird. Nur DNS-Einträge vom Typ **AAAA** sind optional. 
 >
 
 ### Schritt 3: Ihre Website online stellen <a name="site-online"></a>

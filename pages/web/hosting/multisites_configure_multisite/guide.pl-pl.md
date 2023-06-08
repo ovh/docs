@@ -4,14 +4,14 @@ slug: konfiguracja-multisite-na-hostingu
 excerpt: 'Dowiedz się, jak zainstalować kilka stron WWW na hostingu'
 section: 'Pierwsze kroki'
 order: 03
-updated: 2022-11-04
+updated: 2023-06-08
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 22-08-2022**
+**Ostatnia aktualizacja z dnia 08-06-2023**
 
 ## Wprowadzenie 
 
@@ -143,6 +143,8 @@ Zanotuj elementy, które się wyświetlą, następnie kliknij przycisk `Zatwierd
 > [!warning]
 >
 > Aby poprawnie dodać domenę, należy **wykonać** te zmiany. W przeciwnym razie dodanie Twojej domeny zostanie anulowane.
+>
+> Wpisy DNS typu **A** i **TXT** muszą być obowiązkowo umieszczone w aktywnej strefie DNS Twojej domeny, aby dodać je do Twojego hostingu. Opcjonalne są tylko wpisy DNS typu **AAAA**. 
 >
 
 ### Etap 3: umieszczenie strony WWW online <a name="site-online"></a>
