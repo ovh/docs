@@ -141,7 +141,7 @@ Dans le but de s'assurer que les échanges par e-mail avec Sectigo se passent co
 > Sachez que certaines restrictions appliquées de votre côté (comme dans un fichier « .htaccess » par exemple) peuvent empêcher cette vérification.
 > Si les droits d'accès FTP « CHMOD » sont également restreints ou insuffisants, la vérification peut aussi être bloquée.
 >
-> Nous vous recommandons également de **ne pas** activer ou laisser actif le [pare-feu applicatif](/pages/web/hosting/multisites_activating_application_firewall) disponible avec nos hébergements web pendant toute la durée de l'installation de votre certificat SSL EV.
+> Nous vous recommandons aussi de **ne pas** activer ou laisser actif le [pare-feu applicatif](/pages/web/hosting/multisites_activating_application_firewall), disponible avec nos hébergements web, pendant toute la durée de l'installation de votre certificat SSL EV.
 >
 
 #### 2.2 - Vérifications faites par l'Autorité de Certification Sectigo
