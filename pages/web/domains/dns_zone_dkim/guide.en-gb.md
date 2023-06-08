@@ -437,7 +437,7 @@ Follow the **5 steps** below by clicking on each tab.
 >>
 >> > [!api]
 >> >
->> > @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
+>> > @api {POST}  /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable 
 >> >
 >>
 >> - `service`: Enter the name of your Email Pro platform, in the format "emailpro-zz1111111-1".
@@ -450,7 +450,7 @@ Follow the **5 steps** below by clicking on each tab.
 >> todoDate: "2023-05-05T11:30:11+02:00"
 >> finishDate: null
 >> status: "todo"
->> function: "enableExchangeDKIM"
+>> function: "enableDKIM"
 >> ```
 >>
 >> > [!success]

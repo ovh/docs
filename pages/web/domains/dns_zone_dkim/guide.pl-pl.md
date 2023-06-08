@@ -225,7 +225,7 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >> ```
 >> > [!primary]
 >> >
->> > Jeśli Twoja domena jest zarządzana w tym samym panelu klienta co Twoja platforma i zaznaczyłeś `autoEnableDKIM` i `configureDkim`, przejdź bezpośrednio do sekcji [**Poszczególne państwa DKIM**](#dkim-status) poniżej, aby śledzić aktywację DKIM.
+>> > Jeśli Twoja domena jest zarządzana w tym samym panelu klienta co Twoja platforma i zaznaczyłeś `autoEnableDKIM` i `configureDkim`, przejdź bezpośrednio do sekcji [**Poszczególne państwa DKIM**](dkim-status#) poniżej, aby śledzić aktywację DKIM.
 >>
 > **3.Pobierz rekord DNS**
 >> Należy ręcznie skonfigurować strefę DNS Twojej domeny **w następujących** przypadkach:
@@ -315,7 +315,7 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >>
 >> > [!success]
 >> >
->> > Wykonałeś teraz wszystkie operacje, aby aktywować DKIM. Aby upewnić się, że konfiguracja jest aktywna, zapoznaj się z sekcją [**"Różne stany DKIM"**](#dkim-status) w tym przewodniku, aby sprawdzić, czy wartość `status:` jest w `inProduction`. Jeśli tak jest, Twój DKIM jest teraz aktywny.
+>> > Wykonałeś teraz wszystkie operacje, aby aktywować DKIM. Aby upewnić się, że konfiguracja jest aktywna, zapoznaj się z sekcją [**"Różne stany DKIM"**](dkim-status#) w tym przewodniku, aby sprawdzić, czy wartość `status:` jest w `inProduction`. Jeśli tak jest, Twój DKIM jest teraz aktywny.
 >>
 
 ##### **Dla E-mail Pro** <a name="confemp"></a>
@@ -441,12 +441,12 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >>
 >> > [!api]
 >> >
->> > @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
+>> > @api {POST} /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
 >>
 >> - `service`: wpisz nazwę Twojej platformy E-mail Pro w postaci "emailpro-zz111111-1".
 >> - `selectorName`: wprowadź nazwę wybranego przełącznika.
->> - `domainName`: wprowadź nazwę domeny przypisanej do Twojej platformy Exchange, dla której chcesz włączyć DKIM.
+>> - `domainName`: wprowadź nazwę domeny przypisanej do Twojej platformy E-mail Pro, dla której chcesz włączyć DKIM.
 >>
 >> *Przykład wyniku:*
 >> ```
@@ -454,7 +454,7 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >> todoDate: "2023-05-05T11:30:11+02:00"
 >> finishDate: null
 >> status: "todo"
->> function: "enableExchangeDKIM"
+>> function: "enableDKIM"
 >> ```
 >>
 >> > [!success]

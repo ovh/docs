@@ -437,12 +437,12 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >>
 >> > [!api]
 >> >
->> > @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
+>> > @api {POST} /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable 
 >> >
 >>
 >> - `service` : saisissez le nom de votre plateforme E-mail Pro se présentant sous la forme « emailpro-zz111111-1 » .
 >> - `selectorName` : saisissez le nom du sélecteur que vous avez créé.
->> - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange sur lequel vous souhaitez activer le DKIM.
+>> - `domainName` : saisissez le nom de domaine attaché à votre plateforme E-mail Pro sur lequel vous souhaitez activer le DKIM.
 >>
 >> *Exemple de résultat :*
 >> ```
@@ -450,7 +450,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> todoDate: "2023-05-05T11:30:11+02:00"
 >> finishDate: null
 >> status: "todo"
->> function: "enableExchangeDKIM"
+>> function: "enableDKIM"
 >> ```
 >>
 >> > [!success]
