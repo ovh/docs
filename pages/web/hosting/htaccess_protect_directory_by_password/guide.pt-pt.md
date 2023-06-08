@@ -69,7 +69,7 @@ Vamos explicar-lhe as 4 etapas principais a realizar para proteger o acesso a um
 > Para alterar a versão de PHP dos seus websites no seu alojamento web, consulte os seguintes guias:
 > 
 > - [Alterar a configuração do alojamento web](/pages/web/hosting/ovhconfig_modify_system_runtime)
-> - [Mudar a versão de PHP do alojamento web](/pages/web/hosting/ovhconfig_modify_system_runtime/)
+> - [Mudar a versão de PHP do alojamento web](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014)
 >
 > De facto, os scripts e informações descritas abaixo neste tutorial apenas funcionam com um ambiente de execução e uma versão PHP recente.
 > 

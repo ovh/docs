@@ -69,7 +69,7 @@ Per proteggere l'accesso a una directory o a una parte del tuo sito, ti spieghia
 > Per modificare la versione di PHP sui tuoi siti Web, consulta queste guide:
 > 
 > - [Modificare la configurazione di un hosting Web](/pages/web/hosting/ovhconfig_modify_system_runtime)
-> - [Cambiare la versione di PHP su un hosting Web](/pages/web/hosting/ovhconfig_modify_system_runtime/)
+> - [Cambiare la versione di PHP su un hosting Web](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014)
 >
 > In effetti, gli script e le informazioni descritte in questa guida funzionano solo con un ambiente di esecuzione e una versione PHP recente.
 > 

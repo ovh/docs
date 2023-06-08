@@ -11,7 +11,8 @@ updated: 2023-06-01
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 01/06/2023"**
+**Última actualización: 01/06/2023**
+
 
 ## Objetivo
 
@@ -37,7 +38,8 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 - Tener un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/).
 - Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
-- Disponer de las claves de conexión a [el espacio FTP de su alojamiento](/pages/web/hosting/ftp_connection).
+- Disponer de las claves de conexión al [espacio FTP de su alojamiento](/pages/web/hosting/ftp_connection).
+
 
 ## Procedimiento
 
@@ -47,7 +49,8 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 >
 > Tenga en cuenta, por ejemplo, que si utiliza un **C**onent **M**anagement **S**ystem (**CMS**), existen otras soluciones de seguridad.
 >
-Si utiliza un CMS WordPress, OVHcloud también pone a su disposición un tutorial sobre cómo [utilizar el archivo htaccess con WordPress](/pages/web/hosting/htaccess_how_to_protect_wordpress).
+Si utiliza un CMS WordPress, OVHcloud también pone a su disposición un tutorial sobre [cómo utilizar el archivo htaccess con WordPress](/pages/web/hosting/htaccess_how_to_protect_wordpress).
+
 >
 > Si tiene cualquier duda relativa a la creación, el uso o la programación de su sitio web, el soporte de OVHcloud no podrá ofrecerle soporte sobre estos temas.
 >
@@ -56,7 +59,8 @@ Si utiliza un CMS WordPress, OVHcloud también pone a su disposición un tutoria
 
 A continuación explicamos los 4 pasos principales que debe seguir para proteger el acceso a un directorio o a la totalidad o parte de su sitio web:
 
-- Crear archivos "crypt.php", ".htaccess" y ".htpasswd";
+- Crear archivos "crypt.php", ".htaccess" y ".htpasswd".
+
 - Generar contraseñas codificadas con el archivo "crypt.php".
 - Establecer usuarios y contraseñas codificadas con el archivo ".htpasswd".
 - Configurar reglas en el archivo ".htaccess" y eliminar el archivo "crypt.php".
@@ -69,7 +73,8 @@ A continuación explicamos los 4 pasos principales que debe seguir para proteger
 > Para modificar la versión de PHP de sus sitios web en su alojamiento web, consulte las siguientes guías:
 > 
 > - [Modificar la configuración de un alojamiento web](/pages/web/hosting/ovhconfig_modify_system_runtime)
-> - [Cambiar la versión de PHP de un alojamiento web](/pages/web/hosting/ovhconfig_modify_system_runtime/)
+> - [Cambiar la versión de PHP de un alojamiento web](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014)
+
 >
 > En efecto, los scripts e información descritos más abajo en este tutorial sólo funcionan con un entorno de ejecución y una versión PHP reciente.
 > 
@@ -93,7 +98,8 @@ Para utilizar correctamente los archivos ".htaccess" y ".htpasswd", debe conocer
 - **un único** fichero ".htaccess" y **un único** fichero ".htpasswd" por directorio o subdirectorio, para evitar conflictos entre diferentes ficheros ".htaccess" y diferentes ".htpasswd";
 - los archivos ".htaccess" y ".htpasswd" son invisibles para los internautas que visitan su sitio web;
 - las reglas declaradas en un archivo ".htaccess" se aplican a todo el directorio en el que está instalado el archivo ".htaccess", así como a todos los subdirectorios del mismo directorio.
-Los archivos ".htpasswd" y ".htaccess" pueden estar en carpetas diferentes. Solo puede utilizar un fichero ".htpasswd" para varios ".htaccess".
+- Los archivos ".htpasswd" y ".htaccess" pueden estar en carpetas diferentes. Solo puede utilizar un fichero ".htpasswd" para varios ".htaccess".
+
 
 ### Etapa 2: completar el archivo "crypt.php"
 

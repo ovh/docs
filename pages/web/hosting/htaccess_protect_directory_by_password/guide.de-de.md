@@ -69,7 +69,7 @@ Wir erklären Ihnen die 4 wichtigsten Schritte zum Schutz des Zugriffs auf ein V
 > Um die PHP-Version Ihrer Webseiten auf Ihrem Webhosting zu ändern, lesen Sie folgende Anleitungen:
 > 
 > - [Konfiguration Ihres Webhostings ändern](/pages/web/hosting/ovhconfig_modify_system_runtime)
-> - [PHP-Version Ihres Webhostings ändern](/pages/web/hosting/ovhconfig_modify_system_runtime/)
+> - [PHP-Version Ihres Webhostings ändern](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014)
 >
 > Die unten aufgeführten Skripte und Informationen funktionieren nur mit einer Ausführungsumgebung und einer aktuellen PHP Version.
 > 
