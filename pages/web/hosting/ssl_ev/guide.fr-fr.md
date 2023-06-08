@@ -139,7 +139,7 @@ Dans le but de s'assurer que les échanges par e-mail avec Sectigo se passent co
 > En parallèle et afin de certifier la propriété de votre domaine auprès de Sectigo, un fichier au format *.txt* est automatiquement mis en place dans l'espace FTP de votre hébergement web. Celui-ci sera ensuite supprimé lorsqu'il ne sera plus nécessaire à Sectigo.
 >
 > Sachez que certaines restrictions appliquées de votre côté (comme dans un fichier « .htaccess » par exemple) peuvent empêcher cette vérification.
-> Si les droits d'accès FTP « CHMOD » sont également restreints ou insuffisants, la vérification peut également être bloquée.
+> Si les droits d'accès FTP « CHMOD » sont également restreints ou insuffisants, la vérification peut aussi être bloquée.
 >
 > Nous vous recommandons également de **ne pas** activer ou laisser actif le [pare-feu applicatif](/pages/web/hosting/multisites_activating_application_firewall) disponible avec nos hébergements web pendant toute la durée de l'installation de votre certificat SSL EV.
 >
