@@ -3,7 +3,7 @@ title: Deploying an application
 slug: deploying-an-application
 excerpt: 'Find out how to deploy a "Hello World" application on an OVHcloud Managed Kubernetes cluster'
 section: Getting started
-updated: 2022-05-02
+updated: 2023-06-06
 ---
 
 <style>
@@ -28,11 +28,11 @@ updated: 2022-05-02
  }
 </style>
 
-**Last updated 2nd May, 2022.**
+**Last updated 6th June, 2023.**
 
 ## Objective
 
-OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. This guide will explain how to deploy a simple *Hello World* application on a OVHcloud Managed Kubernetes cluster.
+OVHcloud Managed Kubernetes service provides you with Kubernetes clusters without the hassle of installation or operation. This guide will explain how to deploy a simple *Hello World* application on a OVHcloud Managed Kubernetes cluster.
 
 ## Requirements
 
@@ -42,13 +42,19 @@ OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the
 
 > [!warning]
 > When a __LoadBalancer__ Service resource is created inside a Managed Kubernetes cluster, an associated Public Cloud Load Balancer is automatically created, allowing public access to your K8S application.
-> The Public Cloud Load Balancer service is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Network Load Balancer price](https://www.ovhcloud.com/en/public-cloud/prices/#network)
+> The Public Cloud Load Balancer service is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Network Load Balancer price](https://www.ovhcloud.com/en/public-cloud/prices/#network).
 
 ## Instructions
 
 ### Step 1 - Deploy your first application
 
 The following command will deploy a simple application (nginx image) using a [Kubernetes Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) and a [Kubernetes Service](https://kubernetes.io/docs/concepts/services-networking/service/).
+
+Create a new namespace:
+
+```bash
+kubectl create ns hello-app
+```
 
 Create a `hello.yml` file for our `ovhplatform/hello` Docker image:
 
@@ -95,76 +101,78 @@ spec:
 And apply the file:
 
 ```bash
-kubectl apply -f hello.yml -n default
+kubectl apply -f hello.yml -n hello-app
 ```
 
-After applying the YAML file, a new `hello-world` service and the corresponding `hello-world-deployment` deployment are created in the `default` namespace:
+After applying the YAML file, a new `hello-world` service and the corresponding `hello-world-deployment` deployment are created in the `hello-app` namespace:
 
-<pre class="console"><code>$ kubectl apply -f hello.yml -n default
+<pre class="console"><code>$ kubectl apply -f hello.yml -n hello-app
 service/hello-world created
 deployment.apps/hello-world-deployment created
 </code></pre>
 
 > [!primary]
 > The application you have just deployed is a simple Nginx server with a single static *Hello World* page. 
-> Basically it just deploys the Docker image [`ovhplatform/hello`](https://hub.docker.com/r/ovhplatform/hello/){.external}
+> Basically it just deploys the Docker image [`ovhplatform/hello`](https://hub.docker.com/r/ovhplatform/hello/){.external}.
 
 ### Step 2 - List the pods
 
 You have just deployed a `hello-world` service in a pod in your worker node. Let's verify that everything is correct by listing the pods.
 
 ```bash
-kubectl get pods -n default -l app=hello-world
+kubectl get pods -n hello-app -l app=hello-world
 ```
 
 You should see your newly created pod:
 
-<pre class="console"><code>$ kubectl get pods -n default -l app=hello-world
+<pre class="console"><code>$ kubectl get pods -n hello-app -l app=hello-world
 NAME                                           READY     STATUS    RESTARTS   AGE
 hello-world-deployment-d98c6464b-7jqvg         1/1       Running   0          47s
 </code></pre>
 
 > [!primary]
-> `default` namespace is the Kubernetes namespace by default so you don't need to specify it in your kubectl commands.
+> In this tutorial, we chose to create a special namespace to isolate our application.
+>
+> But if you want to use the `default` namespace instead, it's the default Kubernetes namespace so you don't need to specify it in your kubectl commands.
 
 ### Step 3 - List the deployments
 
-You can also verify the deployment is active:
+You can also verify that the deployment is active:
 
 ```bash
-kubectl get deploy -n default -l app=hello-world
+kubectl get deploy -n hello-app -l app=hello-world
 ```
 
 And you will see the `hello-service-deployment`:
 
-<pre class="console"><code>$ kubectl get deploy -n default -l app=hello-world
+<pre class="console"><code>$ kubectl get deploy -n hello-app -l app=hello-world
 NAME                          DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
 hello-world-deployment        1         1         1            1           1m
 </code></pre>
 
 ### Step 4 - List the services
 
-And now you're going to use `kubectl` to see your service:
+Now, you will use `kubectl` to view your service:
 
 ```bash
-kubectl get services -n default -l app=hello-world
+kubectl get services -n hello-app -l app=hello-world
 ```
 
 You should see your newly created service:
 
-<pre class="console"><code>$ kubectl get services -n default -l app=hello-world
+<pre class="console"><code>$ kubectl get services -n hello-app -l app=hello-world
 NAME          TYPE           CLUSTER-IP     EXTERNAL-IP    PORT(S)        AGE
 hello-world   LoadBalancer   10.3.234.211   51.178.69.47   80:31885/TCP   6m54s
 </code></pre>
 
 > [!primary]
-> If under `EXTERNAL-IP` you get `<pending>`, don't worry, the provisioning of the LoadBalancer can take a minute or two, please try again in a few moments.
+> In case you get `<pending>` under `EXTERNAL-IP`, it may take a minute or two to provision the LoadBalancer, so try again in a few moments.
 
 ### Step 5 - Test your service
 
 Retrieve the URL of the `hello-world` application:
 
-<pre class="console"><code>$ export SERVICE_URL=$(kubectl get svc hello-world -n default -o jsonpath='{.status.loadBalancer.ingress[].ip}')
+<pre class="console"><code>$ export SERVICE_URL=$(kubectl get svc hello-world -n hello-app -o jsonpath='{.status.loadBalancer.ingress[].ip}')
 
 $ echo "http://$SERVICE_URL/"
 http://135.125.83.30/
@@ -175,7 +183,7 @@ Copy/paste the URL in your browser to see your new running `hello-world` applica
 ![Testing your service](images/deploying_an_application-01.png){.thumbnail}
 
 
-You can even test the newly created service, in command line, with curl:
+You can also test the newly created service, in command line, with curl:
 
 ```bash
 curl $SERVICE_URL
@@ -212,48 +220,27 @@ text-align: center;
 
 ### Step 6 - Clean up
 
-At the end you can proceed to clean up by deleting the service and the deployment.
+At the end, you can clean up by deleting the service and the deployment.
 
-Let's begin by deleting the service:
-
-```bash
-kubectl delete service hello-world -n default
-```
-
-If you list the services you will see that `hello-world` doesn't exist anymore:
-
-<pre class="console"><code>$ kubectl delete service hello-world -n default
-service "hello-world" deleted
-
-$ kubectl get services -l app=hello-world -n default
-No resources found in default namespace.
-</code></pre>
-
-Then, you can delete the deployment:
+Let's delete the namespace (deleting the namespace will delete all resources created within it, including the deployment and the service):
 
 ```bash
-kubectl delete deploy hello-world-deployment -n default
+kubectl delete ns hello-app
 ```
 
-And now if you list you deployment you will find no resources:
+If you list the services, the deployments and the pods, you will see that `hello-world` doesn't exist anymore:
 
-<pre class="console"><code>$ kubectl delete deploy  hello-world-deployment -n default
-deployment.apps "hello-world-deployment" deleted
+<pre class="console"><code>$ kubectl delete service hello-world -n hello-app
+namespace "hello-app" deleted
 
-$ kubectl get deployments -n default -l app=hello-world
-No resources found in default namespace.
-</code></pre>
+$ kubectl get services -l app=hello-world -n hello-app
+No resources found in hello-app namespace.
 
-If now you list the pods:
+$ kubectl get deployments -n hello-app -l app=hello-world
+No resources found in hello-app namespace.
 
-```bash
-kubectl get pods -n default -l app=hello-world
-```
-
-you will see that the pod created for `hello-world` has been deleted too:
-
-<pre class="console"><code>$ kubectl get pods -n default -l app=hello-world
-No resources found in default namespace.
+$ kubectl get pods -n hello-app -l app=hello-world
+No resources found in hello-app namespace.
 </code></pre>
 
 ## Go further
