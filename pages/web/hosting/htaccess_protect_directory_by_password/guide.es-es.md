@@ -49,7 +49,8 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 >
 > Tenga en cuenta, por ejemplo, que si utiliza un **C**onent **M**anagement **S**ystem (**CMS**), existen otras soluciones de seguridad.
 >
-Si utiliza un CMS WordPress, OVHcloud también pone a su disposición un tutorial sobre cómo [utilizar el archivo htaccess con WordPress](/pages/web/hosting/htaccess_how_to_protect_wordpress).
+Si utiliza un CMS WordPress, OVHcloud también pone a su disposición un tutorial sobre [cómo utilizar el archivo htaccess con WordPress](/pages/web/hosting/htaccess_how_to_protect_wordpress).
+
 >
 > Si tiene cualquier duda relativa a la creación, el uso o la programación de su sitio web, el soporte de OVHcloud no podrá ofrecerle soporte sobre estos temas.
 >
