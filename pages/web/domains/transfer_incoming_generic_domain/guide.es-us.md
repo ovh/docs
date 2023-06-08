@@ -1,17 +1,17 @@
 ---
 title: 'Transferir un dominio a OVHcloud'
 slug: transferir-un-dominio-generico
-excerpt: 'Cómo realizar la transferencia de un dominio a OVHcloud'
+excerpt: 'Descruba cómo realizar la transferencia de un dominio a OVHcloud'
 section: 'Operaciones en los dominios'
 order: 01
-updated: 2022-11-18
+updated: 2023-06-08
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 18/11/2022**
+**Última actualización: 08/06/2023**
 
 ## Objetivo
 
@@ -23,7 +23,9 @@ La transferencia de un dominio permite cambiar el agente registrador que lo gest
 
 > [!warning]
 >
-> Si el dominio que está siendo modificado se encuentra registrado en OVHcloud, la transferencia entrante de dominio no es el procedimiento adecuado. Este procedimiento solo se aplica al cambio de dominio registrado (OVHcloud).
+> El *agente registrador* de un dominio representa la organización o proveedor acreditado en la que el dominio está registrado/suscrito por un particular, una asociación o una organización. Renovar la suscripción de su dominio (generalmente una vez al año) es a través del mismo agente registrador*.
+>
+Si OVHcloud ya es el *agente registrador* de su dominio **antes** para iniciar el procedimiento que se va a seguir, la *transferencia entrante de dominio* no es el procedimiento adecuado. El procedimiento de *transferencia entrante de dominio* se aplica **únicamente** a los dominios registrados en otro agente registrador que no sea OVHcloud.
 >
 > Para transferir la gestión de su dominio a otra cuenta de cliente de OVHcloud, el método adecuado es un *cambio de contactos*. El procedimiento se describe en [esta guía](https://docs.ovh.com/us/es/customer/gestion-de-los-contactos/).
 >

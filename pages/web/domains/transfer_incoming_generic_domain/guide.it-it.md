@@ -1,17 +1,17 @@
 ---
 title: 'Trasferire un dominio in OVHcloud'
 slug: trasferire-un-dominio-generico-in-ovh
-excerpt: 'Come avviare la procedura di trasferimento di un dominio generico verso OVHcloud'
+excerpt: 'Questa guida ti mostra come avviare la procedura di trasferimento di un dominio generico verso OVHcloud'
 section: Trasferimento
 order: 01
-updated: 2022-11-18
+updated: 2023-06-08
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
-**Ultimo aggiornamento: 18/11/2022**
+**Ultimo aggiornamento: 08/06/2023**
 
 ## Obiettivo
 
@@ -23,7 +23,9 @@ L’operazione di trasferimento consente di spostare un dominio da un Registrar 
 
 > [!warning]
 >
-> Se il dominio in corso di modifica è registrato in OVHcloud, il trasferimento in entrata del dominio non è la procedura appropriata. Questa procedura si applica esclusivamente alla modifica del dominio registrato (OVHcloud).
+> L*Registrar* di un dominio rappresenta l'organizzazione/provider accreditata presso la quale il dominio è registrato/sottoscritto da un privato, un'associazione o un'organizzazione. È presso lo stesso *Registrar* che rinnovi la sottoscrizione del tuo dominio (generalmente una volta all'anno).
+>
+> Se OVHcloud è già il *Registrar* del tuo dominio **prima** di avviare la procedura che seguirà, il *trasferimento in entrata del dominio* non è la procedura appropriata. La procedura *trasferimento in entrata da un dominio** si applica **solo** ai domini registrati in un altro *Registrar* di OVHcloud.
 >
 > Per trasferire la gestione del tuo dominio verso un altro account cliente OVHcloud, la modalità corretta è una *modifica dei contatti*. La procedura è descritta in [guida](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/).
 >

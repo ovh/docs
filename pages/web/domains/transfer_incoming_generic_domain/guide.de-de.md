@@ -4,14 +4,14 @@ slug: transfer-einer-generischen-domain
 excerpt: Erfahren Sie hier, wie Sie Ihren Domainnamen zu OVHcloud transferieren
 section: Transfer
 order: 01
-updated: 2022-11-18
+updated: 2023-06-08
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 21.11.2022**
+**Letzte Aktualisierung am 08.06.2023**
 
 ## Ziel
 
@@ -21,7 +21,9 @@ Mit einem Domaintransfer wechseln Sie Ihren Domainnamen-Registrar. Sie können I
 
 > [!warning]
 >
-> Wenn der zu ändernde Domainname aktuell bei OVHcloud registriert ist, ist ein eingehender Domaintransfer nicht der passende Vorgang. Die vorliegende Anleitung betrifft lediglich den Wechsel des Registrars (OVHcloud) des Domainnamens.
+> Der *Registrar* eines Domainnamens repräsentiert die Organisation/den Anbieter, bei der der Domainname von einer Privatperson, einem Verein oder einer Organisation registriert/registriert wird. Bei diesem *Registrar* verlängern Sie die Bestellung Ihrer Domain (in der Regel einmal jährlich).
+>
+> OVHcloud ist bereits der *Registrar* Ihrer Domain , **bevor** Sie den folgenden Vorgang starten, ist der *eingehende Transfer einer Domain* nicht der richtige Vorgang. Das Verfahren für *eingehende Domaintransfers* gilt **nur** für Domainnamen, die bei einem anderen *Registrar* als OVHcloud registriert sind.
 >
 > Um die Verwaltung des Domainnamens einem anderen OVHcloud Kunden-Account zu übertragen, muss stattdessen eine **Änderung der Kontakte** durchgeführt werden. Die Vorgehensweise wird in [dieser Anleitung](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/) beschrieben.
 >

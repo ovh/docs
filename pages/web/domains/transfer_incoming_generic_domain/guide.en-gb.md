@@ -4,10 +4,10 @@ slug: transfer-generic-domain
 excerpt: 'Find out how to transfer a generic domain name to OVHcloud'
 section: Transfer
 order: 01
-updated: 2022-11-18
+updated: 2023-06-08
 ---
 
-**Last updated 18th November 2022**
+**Last updated 8th June 2022**
 
 ## Objective
 
@@ -17,7 +17,9 @@ By transferring your domain name, you will change your domain name registrar. Yo
 
 > [!warning]
 >
-> If the domain name being modified is currently registered with OVHcloud, incoming domain transfer is not the appropriate procedure. This procedure only applies to the change of the domain name registry (OVHcloud).
+> The *registrar* of a domain name is the authorised organisation/provider with which the domain name is registered/subscribed by an individual, association or organisation. You renew your domain name subscription with the same *registrar* (usually once a year).
+>
+> If OVHcloud is already the *registrar* of your domain name **before** starting the next procedure, *domain incoming transfer* is not the appropriate procedure. The *inbound domain transfer* procedure applies **only** to domain names registered in a *registrar* other than OVHcloud.
 >
 > To transfer the domain name management to another OVHcloud customer account, a *change of contacts* must be made instead. The procedure is described in [this guide](https://docs.ovh.com/gb/en/customer/managing-contacts/).
 >
