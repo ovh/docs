@@ -4,10 +4,10 @@ slug: le-champ-spf
 excerpt: Découvrez comment configurer un enregistrement SPF sur votre nom de domaine chez OVHcloud
 section: DNS et zone DNS
 order: 05
-updated: 2022-09-12
+updated: 2023-06-08
 ---
 
-**Dernière mise à jour le 12/09/2022**
+**Dernière mise à jour le 08/06/2023**
 
 ## Objectif
 
@@ -201,7 +201,13 @@ mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 Pour l'offre Exchange Provider, la configuration est la suivante :
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw1.ex-mail.biz a:gw2.ex-mail.biz ~all"
+mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
+```
+
+En revanche, la configuration est la suivante si vous souhaitez aussi déclarer la *gateway* du service **Exchange Provider**:
+
+```bash
+mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw.ex-mail.biz ~all"
 ```
 
 ### Configuration SPF OVHcloud pour Private Exchange 
