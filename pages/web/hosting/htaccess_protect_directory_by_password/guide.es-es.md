@@ -98,7 +98,8 @@ Para utilizar correctamente los archivos ".htaccess" y ".htpasswd", debe conocer
 - **un único** fichero ".htaccess" y **un único** fichero ".htpasswd" por directorio o subdirectorio, para evitar conflictos entre diferentes ficheros ".htaccess" y diferentes ".htpasswd";
 - los archivos ".htaccess" y ".htpasswd" son invisibles para los internautas que visitan su sitio web;
 - las reglas declaradas en un archivo ".htaccess" se aplican a todo el directorio en el que está instalado el archivo ".htaccess", así como a todos los subdirectorios del mismo directorio.
-Los archivos ".htpasswd" y ".htaccess" pueden estar en carpetas diferentes. Solo puede utilizar un fichero ".htpasswd" para varios ".htaccess".
+- Los archivos ".htpasswd" y ".htaccess" pueden estar en carpetas diferentes. Solo puede utilizar un fichero ".htpasswd" para varios ".htaccess".
+
 
 ### Etapa 2: completar el archivo "crypt.php"
 
