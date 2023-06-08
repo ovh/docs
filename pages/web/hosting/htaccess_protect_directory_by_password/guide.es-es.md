@@ -38,7 +38,8 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 - Tener un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
 - Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Disponer de las claves de conexión a [el espacio FTP de su alojamiento](/pages/web/hosting/ftp_connection).
+- Disponer de las claves de conexión al [espacio FTP de su alojamiento](/pages/web/hosting/ftp_connection).
+
 
 ## Procedimiento
 
