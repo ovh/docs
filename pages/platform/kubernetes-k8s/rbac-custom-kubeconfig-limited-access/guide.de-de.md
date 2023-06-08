@@ -9,8 +9,6 @@ order: 0
 updated: 2023-06-07
 ---
 
-**Last updated 07th June 2023**
-
 <style>
  pre {
      font-size: 14px;
@@ -35,22 +33,22 @@ updated: 2023-06-07
 
 ## Objective
 
-When a Kubernetes cluster is created, with the OVHcloud Control Plane, the API or the Terraform provider, you can retrieve its `kubeconfig` file in order to access to your cluster through the `kubectl` Command Line Interface (CLI).
-This `kubeconfig` file is a file that is used to configure access to a cluster.
-By default this `kubeconfig` file allows you to have access to everything in the cluster.
+When a Kubernetes cluster is created, with the OVHcloud Control Panel, the API or the Terraform provider, you can retrieve its `kubeconfig` file in order to access your cluster through the `kubectl` Command Line Interface (CLI).
+This `kubeconfig` file is used to configure access to a cluster.
+By default, this `kubeconfig` file allows you to have access to everything in the cluster.
 
-In your company, you may have several teams, several kind of people with different rights so you maybe need to control and limit the access to your Kubernetes clusters depending on users and their roles.
+In your company, you may have several teams, several kinds of people with different rights. You may need to control and limit the access to your Kubernetes clusters depending on users and their roles.
 
-At OVHcloud, we like to provide you with the best products and services. For us, security is important, that's why we want to help you, un this tutorial, to create customized `kubeconfig` file with different access to your OVHcloud Managed Kubernetes cluster.
+At OVHcloud, we like to provide you with the best products and services. For us, security is important. This tutorial aims at helping you creating a customized `kubeconfig` file with different accesses to your OVHcloud Managed Kubernetes cluster.
 
-In this guide you will:
+In this tutorial, you will:
 
-- learn what is RBAC 
+- learn what is RBAC
 - generate a customized `kubeconfig` file with limited access 
 
 ## RBAC
 
-RBAC (Role-Based Access Control) is a method of regulating access to **resources** based on the **roles** of individual users.
+RBAC (Role-Based Access Control) is a method to regulate access to **resources** based on the **roles** of individual users.
 
 This method alllows you to control **what** your users can do for **which** kind of resources in your cluster.
 
@@ -71,16 +69,16 @@ When you create a Role or a ClusterRole, several operations (verbs) are allowed:
 - watch
 - ...
 
-By default, In Kubernetes in every namespace you have a ServiceAccount, linked to a ClusterRole that allows you to do all the operations you want to all the resources you want in this namespace.
-By creating new ServiceAccount, Role/ClusterRole and RoleBinding/ClusterRoleBinding you will control the access to a Kubernetes cluster.
+By default in Kubernetes, every namespace contains a ServiceAccount linked to a ClusterRole that allows you to do all the operations you want on all the resources in this namespace.
+Creating new ServiceAccount, Role/ClusterRole and RoleBinding/ClusterRoleBinding will allow you to control the access to a Kubernetes cluster.
 
 ## Requirements
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it.
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster and some basic knowledge of how to operate it.
 
-Moreover, follow the [deploying a Hello World application](../deploying-an-application/) documentation in order to have an example application running on your cluster.
+Additionally, follow the [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-an-application) documentation in order to have an example application running on your cluster.
 
-At this time you should have a running Kubernetes cluster with hello-world deployment and pod like below:
+At this point, you should have a running Kubernetes cluster with hello-world deployment and pod such as below:
 
 <pre class="console"><code>$ kubectl get pod,deploy -n hello-app
 NAME                                          READY   STATUS    RESTARTS   AGE
@@ -90,7 +88,7 @@ NAME                                     READY   UP-TO-DATE   AVAILABLE   AGE
 deployment.apps/hello-world-deployment   1/1     1            1           4d22h
 </code></pre>
 
-The idea is to have a namespace (different that default one) and several resources running into it. 
+The idea is to have a different namespace than the default one and several resources running into it. 
 
 ## Instructions
 
@@ -120,13 +118,13 @@ Create a Role `pod-reader` that allows users to perform get, watch and list (rea
 kubectl create role pod-reader --verb=get --verb=list --verb=watch --resource=pods -n hello-app
 ```
 
-Create a RoleBinding that grant `pod-reader` Role to `sa-pod-reader` ServiceAccount within the `hello-app`  namespace
+Create a RoleBinding that grants the `pod-reader` Role to `sa-pod-reader` ServiceAccount within the `hello-app` namespace:
 
 ```bash
 kubectl create rolebinding read-pods --role=pod-reader --serviceaccount=hello-app:sa-pod-reader -n hello-app
 ```
 
-Now it's time to create the `kubeconfig` file for the just-created ServiceAccount with the grants you asked, and obtain a kubeconfig file for this ServiceAccount:
+Now it's time to create the `kubeconfig` file for the newly created ServiceAccount with the grants you asked, and obtain a kubeconfig file for this ServiceAccount:
 
 ```bash
 export SA=sa-pod-reader
@@ -151,7 +149,7 @@ kubectl config set-credentials ${SECRET_NAME} --kubeconfig=kubeconfig.txt --toke
 kubectl config set-context --current --kubeconfig=kubeconfig.txt --user=${SECRET_NAME}
 ```
 
-Now you can use this restricted `kubeconfig` file to access to your cluster and even test it directly in the `kubectl` command with the `--kubeconfig` option.
+Now you can use this restricted `kubeconfig` file to access your cluster and even test it directly in the `kubectl` command with the `--kubeconfig` option.
 
 Try to list the namespaces in your cluster:
 
@@ -166,7 +164,7 @@ Error from server (Forbidden): namespaces is forbidden: User "system:serviceacco
 </code></pre>
 
 As you can see, you executed the `kubectl` command as the ServiceAccount you created with limited access.
-The behavior is normal because with this `kubeconfig` file you don't have the rights to do this operation.
+The behaviour is normal because with this `kubeconfig` file you don't have the rights to do this operation.
 
 Instead, list the pods in the `hello-app` namespace:
 
@@ -175,9 +173,12 @@ NAME                                      READY   STATUS    RESTARTS   AGE
 hello-world-deployment-5869476bbd-rvtdl   1/1     Running   0          4h43m
 </code></pre>
 
-That's perfect. As you can see, the new `kubeconfig` file have a restriced access to your Kubernetes cluster.
-Depending on your use cases you will have to play with the ServiceAcccount, Role, ClusterRole, RoleBinding and ClusterRoleBinding resources. If you are interested, you can take a look to the [Using RBAC Authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) official documentation.
-And you can also use an [OIDC provider to authenticate your users and automatically asign them roles](../configure-oidc-provider).
+As you can see, the new `kubeconfig` file has a restricted access to your Kubernetes cluster.
+
+Depending on your use cases you will have to play with the ServiceAcccount, Role, ClusterRole, RoleBinding and ClusterRoleBinding resources.
+
+For more information, take a look at the [Using RBAC Authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) official documentation.
+You can also use an [OIDC provider to authenticate your users and automatically asign them roles](/pages/platform/kubernetes-k8s/configuring-oidc-provider-config).
 
 ## Go further
 
