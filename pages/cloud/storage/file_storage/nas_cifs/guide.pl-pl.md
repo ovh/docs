@@ -52,4 +52,6 @@ net use z: \\10.16.101.8\zpool-000206_PARTITION_NAME_1
 
 [Najczęściej zadawane pytania dotyczące technologii NAS](https://docs.ovh.com/pl/storage/file-storage/nas/faq/)
 
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

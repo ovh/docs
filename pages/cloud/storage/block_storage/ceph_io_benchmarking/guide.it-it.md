@@ -121,4 +121,6 @@ Per calcolare le performance del servizio Cloud Disk Array, effettueremo test su
 
 Visita il nostro canale Discord dedicato: <https://discord.gg/ovhcloud>. Poni domande, fornisci feedback e interagisci direttamente con il team che crea i nostri servizi di archiviazione e backup.
 
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+
 Unisciti alla nostra community di utenti su <https://community.ovh.com/>.

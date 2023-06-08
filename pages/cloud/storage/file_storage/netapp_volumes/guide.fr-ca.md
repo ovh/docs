@@ -186,4 +186,6 @@ Remplacez `serviceName` par l'ID de votre service et `shareId` par l'ID du volum
 
 [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/)
 
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
 Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.

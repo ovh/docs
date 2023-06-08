@@ -75,4 +75,6 @@ For more information, see [the FIO documentation](https://fio.readthedocs.io/en/
 
 ## Go further
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
 Join our community of Discord users: <https://discord.gg/jW2FgBJ72h>

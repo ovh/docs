@@ -190,4 +190,6 @@ The subscription periods offered are 1 month, 12 months, 24 months and 36 months
 
 ## Go further
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
 Join our user community on <https://community.ovh.com/en/>.
