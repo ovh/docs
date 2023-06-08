@@ -204,7 +204,7 @@ Pour l'offre Exchange Provider, la configuration est la suivante :
 mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 ```
 
-En revanche, la configuration est la suivante si vous souhaitez aussi déclarer la *gateway* du service **Exchange Provider**:
+En revanche, la configuration est la suivante si vous souhaitez aussi déclarer la *gateway* du service **Exchange Provider** :
 
 ```bash
 mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw.ex-mail.biz ~all"
