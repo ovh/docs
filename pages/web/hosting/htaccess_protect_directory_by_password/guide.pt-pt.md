@@ -1,7 +1,7 @@
 ---
-title: "Proteger a interface de administração do seu site com um ficheiro .htaccess"
+title: "Tutorial - Proteger um diretório ou a interface de administração do seu website por ficheiros .htaccess e .htpasswd"
 slug: partilhado-htaccess-como-protecao-acesso-a-um-diretorio-por-autenticacao
-excerpt: "Encontre aqui como proteger o acesso à administração do seu site com um ficheiro .htaccess"
+excerpt: "Descruba como proteger um diretório ou o acesso à administração do seu website através de uma autenticação com os ficheiros .htaccess e .htpasswd"
 section: Reescrita e autenticação
 order: 02
 updated: 2023-06-01
