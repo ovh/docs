@@ -105,7 +105,7 @@ Esistono due utilizzi della cifratura asimmetrica:
 
 #### Come vengono utilizzati la classificazione e la crittografia asimmetrica per il DKIM? <a name="encrypt-and-hash"></a>
 
-Dalla piattaforma email, il DKIM utilizzerà l'hash per creare una firma a partire da alcuni elementi [dell'intestazione dell'email](pages/web/emails/diagnostic_headers) e del corpo dell'email (contenuto dell'email).
+Dalla piattaforma email, il DKIM utilizzerà l'hash per creare una firma a partire da alcuni elementi [dell'intestazione dell'email](/pages/web/emails/diagnostic_headers) e del corpo dell'email (contenuto dell'email).
 
 La firma viene poi cifrata con la chiave privata utilizzando la crittografia asimmetrica.
 
@@ -117,7 +117,7 @@ Affinché il destinatario possa verificare la firma DKIM del mittente, avrà bis
 
 Quando attivate il DKIM, questo funziona con una coppia di chiavi pubbliche / chiave privata. È possibile attribuire più coppie di chiavi al tuo dominio, ad esempio tramite rotazione. Quando cambi coppie di chiavi, la vecchia coppia deve rimanere attiva per il tempo che tutte le email che hai inviato con la vecchia chiave non incontrano errori nella verifica del DKIM sul server di ricezione.
 
-Perché questo principio di rotazione funzioni, utilizzeremo quello che chiamiamo gli **elettori DKIM**. Un selettore DKIM comprende una coppia di chiavi private/chiave pubblica. È visibile come stringa nella firma DKIM di un'email con l'argomento `s=`. Questa firma è visibile nell'intestazione [dell'email](pages/web/emails/diagnostic_headers).
+Perché questo principio di rotazione funzioni, utilizzeremo quello che chiamiamo gli **elettori DKIM**. Un selettore DKIM comprende una coppia di chiavi private/chiave pubblica. È visibile come stringa nella firma DKIM di un'email con l'argomento `s=`. Questa firma è visibile nell'intestazione [dell'email](/pages/web/emails/diagnostic_headers).
 
 **Esempio di una parte della firma DKIM**
 
@@ -720,7 +720,7 @@ ARC-Authentication-Results: i=1; mx.example.com;
 Return-Path: &lt;test-dkim@mydomain.ovh>
 </code></pre>
 
-Per recuperare l'intestazione di un'email, consulta la guida [Recuperare l'intestazione di un'email](pages/web/emails/diagnostic_headers).
+Per recuperare l'intestazione di un'email, consulta la guida [Recuperare l'intestazione di un'email](/pages/web/emails/diagnostic_headers).
 
 ## Per saperne di più
 

@@ -218,7 +218,7 @@ Zapoznaj się również z naszym przewodnikiem dotyczącym [jak zabezpieczyć Tw
 
 [Logowanie do przestrzeni dyskowej hostingu WWW](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/)
 
-[Zmiana konfiguracji hostingu](https://docs.ovh.com/pl/hosting/zmiana_srodowiska_uruchomieniowego_dla_hostingu_www//)
+[Zmiana konfiguracji hostingu](https://docs.ovh.com/pl/hosting/zmiana_srodowiska_uruchomieniowego_dla_hostingu_www/)
 
 [Włącz firewall aplikacyjny](https://docs.ovh.com/pl/hosting/hosting_www_aktywacja_zapory_systemowej/)
 

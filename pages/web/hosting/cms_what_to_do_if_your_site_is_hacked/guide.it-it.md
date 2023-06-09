@@ -218,7 +218,7 @@ Consulta anche la nostra guida su [come proteggere il tuo sito Web](https://docs
 
 [Accedere allo spazio di storage del tuo hosting Web](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/)
 
-[Modifica la configurazione di un hosting Web](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web//)
+[Modifica la configurazione di un hosting Web](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web/)
 
 [Attiva il firewall applicativo](https://docs.ovh.com/it/hosting/hosting_condiviso_attiva_un_firewall_applicativo/)
 

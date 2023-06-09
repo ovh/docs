@@ -214,7 +214,7 @@ Consultez également notre guide sur [comment sécuriser votre site Web](https:/
 
 [Se connecter à l'espace de stockage de son hébergement Web](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/)
 
-[Modifier la configuration de son hébergement Web](https://docs.ovh.com/ca/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web//)
+[Modifier la configuration de son hébergement Web](https://docs.ovh.com/ca/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/)
 
 [Activer le pare-feu applicatif](https://docs.ovh.com/ca/fr/hosting/activation-pare-feu-applicatif/)
 

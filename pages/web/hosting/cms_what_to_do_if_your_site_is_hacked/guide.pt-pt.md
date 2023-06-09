@@ -218,7 +218,7 @@ Consulte também o nosso manual sobre [como proteger o seu website](https://docs
 
 [Aceder ao espaço de armazenamento do alojamento web](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/)
 
-[Alterar a configuração do alojamento web](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web//)
+[Alterar a configuração do alojamento web](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web/)
 
 [Ativar firewall da aplicação](https://docs.ovh.com/pt/hosting/partilhado_ativacao_da_firewall/)
 
