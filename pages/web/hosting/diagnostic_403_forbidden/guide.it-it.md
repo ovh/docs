@@ -117,7 +117,7 @@ Per ripristinare totalmente o in parte il tuo spazio di storage FTP, consulta la
 
 #### Caso 2: il tuo hosting è stato disattivato più di due settimane fa
 
-Se il tuo hosting è stato chiuso più di due settimane fa, contatta un [provider specializzato](https://partner.ovhcloud.com/fr/directory/) per effettuare un audit di sicurezza dei tuoi siti Web. 
+Se il tuo hosting è stato chiuso più di due settimane fa, contatta un [provider specializzato](https://partner.ovhcloud.com/it/directory/) per effettuare un audit di sicurezza dei tuoi siti Web. 
 
 > [!success]
 >
