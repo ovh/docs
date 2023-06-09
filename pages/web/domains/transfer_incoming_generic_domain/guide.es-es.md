@@ -19,7 +19,7 @@ Si tiene un dominio registrado con otro proveedor y quiere transferirlo a OVHclo
 
 La transferencia de un dominio permite cambiar el agente registrador que lo gestiona. Puede transferir su dominio a OVHcloud creando un pedido. Esta operación suele tardar entre uno y diez días.
 
-**Descruba cómo transferir un dominio genérico a OVHcloud.**
+**Descubra cómo transferir un dominio genérico a OVHcloud.**
 
 > [!warning]
 >
