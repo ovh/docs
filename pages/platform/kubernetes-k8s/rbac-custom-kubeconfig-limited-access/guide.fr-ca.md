@@ -1,11 +1,8 @@
 ---
 title: Using RBAC to handle limited access to an OVHcloud Managed Kubernetes cluster
-slug: rbac-custom-kubeconfig-limited-access
 excerpt: Find out how to use the power of RBAC to generate customized kubeconfig file with limited access to an OVHcloud Managed Kubernetes cluster
-section: Security
 routes:
-    canonical: https://docs.ovh.com/gb/en/kubernetes/rbac-custom-kubeconfig-limited-access/
-order: 0
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-kubernetes-rbac-custom-kubeconfig-limited-access?id=kb_article_view&sysparm_article=KB0058392'
 updated: 2023-06-07
 ---
 
