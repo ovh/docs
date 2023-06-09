@@ -1,7 +1,7 @@
 ---
 title: 'Transferir o nome de domínio para a OVHcloud'
 slug: transferir-o-dominio-generico
-excerpt: 'Descruba como transferir um nome de domínio para a OVHcloud'
+excerpt: 'Saiba como transferir um nome de domínio para a OVHcloud'
 section: Transferência
 order: 01
 updated: 2023-06-08
