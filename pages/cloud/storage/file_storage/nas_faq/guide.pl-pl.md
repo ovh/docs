@@ -1,5 +1,6 @@
 ---
 title: Najczęściej zadawane pytania dotyczące technologii NAS-HA
+slug: nas/faq
 excerpt: Masz pytania dotyczące NAS-HA? Oto odpowiedzi na najczęściej zadawane pytania.
 updated: 2023-06-07
 ---
