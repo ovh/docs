@@ -105,7 +105,7 @@ Existem duas utilizações da encriptação assimétrica:
 
 #### Como é que a picadura e a encriptação assimétrica são utilizadas para o DKIM? <a name="encrypt-and-hash"></a>
 
-A partir da plataforma de e-mail, o DKIM vai utilizar a trituração para criar uma assinatura a partir de certos elementos [do cabeçalho do e-mail](pages/web/emails/diagnostic_headers) e do corpo do e-mail (conteúdo do e-mail).
+A partir da plataforma de e-mail, o DKIM vai utilizar a trituração para criar uma assinatura a partir de certos elementos [do cabeçalho do e-mail](/pages/web/emails/diagnostic_headers) e do corpo do e-mail (conteúdo do e-mail).
 
 A assinatura é depois encriptada com a chave privada utilizando a encriptação assimétrica.
 

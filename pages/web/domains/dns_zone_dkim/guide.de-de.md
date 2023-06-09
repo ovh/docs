@@ -105,7 +105,7 @@ Es gibt zwei Verwendungszwecke für asymmetrische Verschlüsselung:
 
 #### Wie werden asymmetrisches Hashing und Verschlüsselung für DKIM verwendet? <a name="encrypt-and-hash"></a>
 
-Für E-Mail-Dienste nutzt DKIM das Hashing-Verfahren, um eine Signatur aus einigen Elementen des [E-Mail-Headers](pages/web/emails/diagnostic_headers) sowie des Inhalts der E-Mail (Body) zu erstellen.
+Für E-Mail-Dienste nutzt DKIM das Hashing-Verfahren, um eine Signatur aus einigen Elementen des [E-Mail-Headers](/pages/web/emails/diagnostic_headers) sowie des Inhalts der E-Mail (Body) zu erstellen.
 
 Die Signatur wird dann mit dem privaten Schlüssel asymmetrisch verschlüsselt.
 
@@ -117,7 +117,7 @@ Damit der Empfänger die DKIM-Signatur des Absenders überprüfen kann, benötig
 
 Wenn Sie DKIM aktivieren, funktioniert es mit einem Schlüsselpaar. Es ist möglich, Ihrem Domainnamen mehrere Schlüsselpaare zuzuweisen, zum Beispiel mittels einer Rotation. Wenn Sie das Schlüsselpaar wechseln, muss das alte Paar so lange aktiv bleiben, bis alle mit dem alten Schlüssel versendete E-Mails den DKIM-Check beim Empfangsserver nicht mehr bestehen.
 
-Damit dieses Prinzip der Rotation funktioniert, werden **DKIM-Selektoren** eingesetzt. Ein DKIM-Selektor beinhaltet ein *private key*/*public key* Paar. Es ist als Zeichenkette in der DKIM-Signatur einer E-Mail sichtbar, nach dem Argument `s=`. Diese Signatur kann im [Header der E-Mail](pages/web/emails/diagnostic_headers) ausgelesen werden.
+Damit dieses Prinzip der Rotation funktioniert, werden **DKIM-Selektoren** eingesetzt. Ein DKIM-Selektor beinhaltet ein *private key*/*public key* Paar. Es ist als Zeichenkette in der DKIM-Signatur einer E-Mail sichtbar, nach dem Argument `s=`. Diese Signatur kann im [Header der E-Mail](/pages/web/emails/diagnostic_headers) ausgelesen werden.
 
 **Beispiel einer DKIM-Signatur**
 
@@ -720,7 +720,7 @@ ARC-Authentication-Results: i=1; mx.example.com;
 Return-Path: <test-dkim@mydomain.ovh>
 </code></pre>
 
-Um den Header einer E-Mail einzusehen, lesen Sie unsere Anleitung "[E-Mail-Header extrahieren](pages/web/emails/diagnostic_headers)".
+Um den Header einer E-Mail einzusehen, lesen Sie unsere Anleitung "[E-Mail-Header extrahieren](/pages/web/emails/diagnostic_headers)".
 
 ## Weiterführende Informationen
 

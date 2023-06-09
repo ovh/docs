@@ -252,7 +252,7 @@ You can also use the Control Panel to deploy a job or an app from your private D
 
 ### GitHub registry
 
-You can also use a GitHub registry, also known as [GitHub Packages](ghcr.io).
+You can also use a GitHub registry, also known as [GitHub Packages](https://github.com/features/packages).
 
 As indicated on their documentation, you can build and push a package image by using the following commands:
 

@@ -85,7 +85,7 @@ Here is a (logical) Netboot boot schema:
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/manager/#/dedicated/configuration).
 - At least one [dedicated server](https://www.ovhcloud.com/pt/bare-metal/) with an operating system **already installed**.
 - An additional dedicated server with the default network interfaces configured, namely public and private network access. This server will host all services (**DHCP** and **TFTP**). The operating system will be one of your choice.
-- You must have all of the network interfaces for this server in **private** mode, which implies that you have already configured [our OLA feature](pages/cloud/dedicated/ola-enable-manager/).<br>
+- You must have all of the network interfaces for this server in **private** mode, which implies that you have already configured [our OLA feature](/pages/cloud/dedicated/ola-enable-manager/).<br>
 
 >
 > To check that your machine is eligible for our procedure, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) and click on the `Bare Metal Cloud`{.action} tab.

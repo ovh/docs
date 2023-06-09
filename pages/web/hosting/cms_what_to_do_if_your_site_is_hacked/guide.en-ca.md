@@ -215,7 +215,7 @@ Please also refer to our guide on [how to secure your website](https://docs.ovh.
 
 [Logging in to your Web Hosting plan’s storage space](https://docs.ovh.com/ca/en/hosting/log-in-to-storage-ftp-web-hosting/)
 
-[Modify your Web Hosting plan’s configuration](https://docs.ovh.com/ca/en/hosting/modify_your_web_hosting_systems_runtime_environment//)
+[Modify your Web Hosting plan’s configuration](https://docs.ovh.com/ca/en/hosting/modify_your_web_hosting_systems_runtime_environment/)
 
 [Enable Application Firewall](https://docs.ovh.com/ca/en/hosting/web_hosting_activating_an_application_firewall/)
 

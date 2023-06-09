@@ -720,7 +720,7 @@ ARC-Authentication-Results: i=1; mx.example.com;
 Return-Path: <test-dkim@mydomain.ovh>
 </code></pre>
 
-Aby pobrać nagłówek wiadomości e-mail, zapoznaj się z naszym przewodnikiem "[Pobierz nagłówek wiadomości](pages/web/emails/diagnostic_headers)".
+Aby pobrać nagłówek wiadomości e-mail, zapoznaj się z naszym przewodnikiem "[Pobierz nagłówek wiadomości](/pages/web/emails/diagnostic_headers)".
 
 ## Sprawdź również
 

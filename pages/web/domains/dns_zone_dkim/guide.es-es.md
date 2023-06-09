@@ -105,7 +105,7 @@ Existen dos usos del cifrado asimétrico:
 
 #### ¿Cómo se utilizan el encriptado y el cifrado asimétrico para el DKIM? <a name="encrypt-and-hash"></a>
 
-Desde la plataforma de correo, DKIM utilizará el hackeo para crear una firma a partir de algunos elementos de [la cabecera del email](pages/web/emails/diagnostic_headers) y del cuerpo del email (contenido del email).
+Desde la plataforma de correo, DKIM utilizará el hackeo para crear una firma a partir de algunos elementos de [la cabecera del email](/pages/web/emails/diagnostic_headers) y del cuerpo del email (contenido del email).
 
 La firma se cifrará con la clave privada utilizando cifrado asimétrico.
 
@@ -117,7 +117,7 @@ Para que el destinatario pueda verificar la firma DKIM del remitente, necesitar�
 
 Al activar el DKIM, este funciona con un par de claves públicas/clave privada. Es posible asignar varios pares de claves a su dominio, por ejemplo, mediante la rotación. De hecho, al cambiar de par de claves, el antiguo par debe permanecer activo hasta que todos los mensajes que haya enviado con la antigua clave no fallen en la verificación del DKIM en el servidor de recepción.
 
-Para que funcione este principio de rotación, usaremos lo que se llama **selector DKIM**. Un selector DKIM incluye un par de claves públicas o privadas. Es visible como una cadena de caracteres en la firma DKIM de un correo electrónico con el argumento `s=`. Puede consultar esta firma en [la cabecera del email](pages/web/emails/diagnostic_headers).
+Para que funcione este principio de rotación, usaremos lo que se llama **selector DKIM**. Un selector DKIM incluye un par de claves públicas o privadas. Es visible como una cadena de caracteres en la firma DKIM de un correo electrónico con el argumento `s=`. Puede consultar esta firma en [la cabecera del email](/pages/web/emails/diagnostic_headers).
 
 **Ejemplo de una parte de la firma DKIM**
 
@@ -720,7 +720,7 @@ ARC-Authentication-Results: i=1; mx.example.com;
 Return-Path: &lt;test-dkim@mydomain.ovh>
 </code></pre>
 
-Para consultar la cabecera de un mensaje de correo electrónico, consulte nuestra guía [Obtener la cabecera de un email](pages/web/emails/diagnostic_headers).
+Para consultar la cabecera de un mensaje de correo electrónico, consulte nuestra guía [Obtener la cabecera de un email](/pages/web/emails/diagnostic_headers).
 
 ## Más información <a name="go-further"></a>
   

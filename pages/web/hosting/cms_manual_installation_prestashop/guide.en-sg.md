@@ -139,7 +139,7 @@ Click `Test your database connection now!`{.action} to verify the entered settin
 
 ![PrestaShop installation step 6-1](images/Prestashop-install-db-config-6-1.png){.thumbnail}
 
-If the message "Your database is connected" appears, click `Next`{.action}. Otherwise, check the settings you entered until the connection is working. If required, please refer to **Step 1.4** in the tutorial on [manually installing a CMS](https://docs.ovh.com/sg/en/hosting/hosting_install_your_cms_manually//).
+If the message "Your database is connected" appears, click `Next`{.action}. Otherwise, check the settings you entered until the connection is working. If required, please refer to **Step 1.4** in the tutorial on [manually installing a CMS](https://docs.ovh.com/sg/en/hosting/hosting_install_your_cms_manually/).
 
 #### 2.6 Complete the PrestaShop installation
 
@@ -153,7 +153,7 @@ Retrieve your PrestaShop login details before you leave the page.
 >
 > **For security reasons, we recommend deleting the installation folder located on your FTP space.**
 >
-> To do this, please refer to our guide [“How to log in to your OVHcloud web hosting plan’s FTP storage space”](https://docs.ovh.com/sg/en/hosting/log-in-to-storage-ftp-web-hosting//) and visit [PrestaShop forum](https://www.prestashop.com/forums/){.external} to ensure that you delete the correct files.
+> To do this, please refer to our guide [“How to log in to your OVHcloud web hosting plan’s FTP storage space”](https://docs.ovh.com/sg/en/hosting/log-in-to-storage-ftp-web-hosting/) and visit [PrestaShop forum](https://www.prestashop.com/forums/){.external} to ensure that you delete the correct files.
 >
 
 > [!success]
