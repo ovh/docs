@@ -66,7 +66,7 @@ Jeśli strona **"403 forbidden"** nie pojawiła się po zmianie strony, sprawdź
 
 Jeśli strona **"403 forbidden"** pojawiła się bez podjęcia przez Ciebie działań i nie otrzymałeś e-maila od naszych usług w tym zakresie, sprawdź prawa dostępu FTP (CHMOD) do Twoich plików/folderów oraz kod zawarty w pliku(-ach) **.htaccess**. Sprawdź również, czy ta sytuacja nie jest generowana przez wtyczkę bezpieczeństwa lub zaporę aplikacyjną. W razie potrzeby należy skontaktować się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/).
 
-### Etap 2: zabezpiecz swoje rozwiązania <a name="step2"></a>
+### Etap 2: zabezpiecz swoje rozwiązania <a name="step-2"></a>
 
 Sprawdź najpierw bezpieczeństwo swoich stacji/urządzeń:
 

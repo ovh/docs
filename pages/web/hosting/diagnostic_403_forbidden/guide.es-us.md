@@ -66,7 +66,7 @@ Si la página **"403 forbidden" ** no ha aparecido debido a una modificación de
 
 Si la página **"403 forbidden"** ha aparecido sin ninguna acción por su parte y no ha recibido ningún email de nuestros servicios al respecto, compruebe los permisos de acceso FTP (CHMOD) de sus ficheros/carpetas así como el código contenido en su(s) archivo(s) **.htaccess**. Compruebe también si este fallo no se ha producido por un plugin de seguridad o por un firewall de aplicación. Si lo necesita, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/).
 
-### Etapa 2: proteger sus soluciones <a name="step2"></a>
+### Etapa 2: proteger sus soluciones <a name="step-2"></a>
 
 En primer lugar, compruebe la seguridad de sus equipos o dispositivos informáticos:
 
