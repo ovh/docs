@@ -20,7 +20,7 @@ O seu domínio está atualmente registado num agente de registo e deseja transfe
 
 A transferência de um domínio permite alterar o agente registador que o gere. Pode transferir o seu domínio para a OVHcloud através da criação de uma encomenda. Esta operação demorará entre um a dez dias.
 
-**Descruba como transferir um domínio genérico para a OVHcloud.**
+**Saiba como transferir um domínio genérico para a OVHcloud.**
 
 > [!warning]
 >
