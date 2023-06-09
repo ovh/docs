@@ -2,19 +2,19 @@
 title: 'Annunci di fine vendita/vita Web Cloud Databases'
 slug: clouddb-eos-eol
 section: 'Risorse tecniche'
-updated: 2023-05-30
+updated: 2023-06-09
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
-**Ultimo aggiornamento: 30/05/2023**
+**Ultimo aggiornamento: 09/06/2023**
 
 ## Obiettivo
 
 I prodotti inclusi in questi annunci di fine vendita e di fine vita sono i servizi Web Cloud Databases, istanze SGBD raggiungibili tramite la rete pubblica o tramite la rete Web Hosting.
-Per maggiori informazioni, consulta la [politica di fine vita dei database gestiti](../managed-db-life-cycle-policy/).
+Per maggiori informazioni, consulta la [politica di fine vita dei database gestiti](/pages/web/clouddb/eol-policy).
 
 |Versione|Annuncio di fine vita|Fine vendita|Fine supporto|
 |---|---|---|---|
@@ -36,8 +36,8 @@ Per maggiori informazioni, consulta la [politica di fine vita dei database gesti
 
 ## Per saperne di più
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com>.
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

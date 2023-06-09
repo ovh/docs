@@ -2,14 +2,14 @@
 title: 'Annonces de fin de vente/vie Web Cloud Databases'
 slug: clouddb-eos-eol
 section: 'Ressources techniques'
-updated: 2023-05-30
+updated: 2023-06-09
 ---
 
-**Dernière mise à jour le 30/05/2023**
+**Dernière mise à jour le 09/06/2023**
 
 ## Objectif
 
-Les produits couverts par ces annonces de fin de vente et de fin de vie sont les services Web Cloud Databases, instances SGBD joignables via le réseau public ou via le réseau Web Hosting. Référez-vous à la [politique de fin de vie des bases de données managées](../managed-db-life-cycle-policy/) pour plus d'informations.
+Les produits couverts par ces annonces de fin de vente et de fin de vie sont les services Web Cloud Databases, instances SGBD joignables via le réseau public ou via le réseau Web Hosting. Référez-vous à la [politique de fin de vie des bases de données managées](/pages/web/clouddb/eol-policy) pour plus d'informations.
 
 |Version|Annonce de fin de vie|Fin de vente|Fin de support|
 |---|---|---|---|
@@ -31,7 +31,8 @@ Les produits couverts par ces annonces de fin de vente et de fin de vie sont les
 
 ## Aller plus loin
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
