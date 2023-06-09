@@ -23,9 +23,9 @@ La transferencia de un dominio permite cambiar el agente registrador que lo gest
 
 > [!warning]
 >
-> El *agente registrador* de un dominio representa la organización o proveedor acreditado en la que el dominio está registrado/suscrito por un particular, una asociación o una organización. Renovar la suscripción de su dominio (generalmente una vez al año) es a través del mismo agente registrador*.
+> El *registrar* de un dominio representa la organización o proveedor acreditado en la que el dominio está registrado/suscrito por un particular, una asociación o una organización. Renovar la suscripción de su dominio (generalmente una vez al año) es a través del mismo *registrar*.
 >
-Si OVHcloud ya es el *agente registrador* de su dominio **antes** para iniciar el procedimiento que se va a seguir, la *transferencia entrante de dominio* no es el procedimiento adecuado. El procedimiento de *transferencia entrante de dominio* se aplica **únicamente** a los dominios registrados en otro agente registrador que no sea OVHcloud.
+Si OVHcloud ya es el *registrar* de su dominio **antes** para iniciar el procedimiento que se va a seguir, la *transferencia entrante de dominio* no es el procedimiento adecuado. El procedimiento de *transferencia entrante de dominio* se aplica **únicamente** a los dominios registrados en otro *registrar* que no sea OVHcloud.
 >
 > Para transferir la gestión de su dominio a otra cuenta de cliente de OVHcloud, el método adecuado es un *cambio de contactos*. El procedimiento se describe en [esta guía](https://docs.ovh.com/us/es/customer/gestion-de-los-contactos/).
 >

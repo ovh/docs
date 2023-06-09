@@ -23,7 +23,7 @@ L’operazione di trasferimento consente di spostare un dominio da un Registrar 
 
 > [!warning]
 >
-> L*Registrar* di un dominio rappresenta l'organizzazione/provider accreditata presso la quale il dominio è registrato/sottoscritto da un privato, un'associazione o un'organizzazione. È presso lo stesso *Registrar* che rinnovi la sottoscrizione del tuo dominio (generalmente una volta all'anno).
+> Il *Registrar* di un dominio rappresenta l'organizzazione/provider accreditata presso la quale il dominio è registrato/sottoscritto da un privato, un'associazione o un'organizzazione. È presso lo stesso *Registrar* che rinnovi la sottoscrizione del tuo dominio (generalmente una volta all'anno).
 >
 > Se OVHcloud è già il *Registrar* del tuo dominio **prima** di avviare la procedura che seguirà, il *trasferimento in entrata del dominio* non è la procedura appropriata. La procedura *trasferimento in entrata da un dominio** si applica **solo** ai domini registrati in un altro *Registrar* di OVHcloud.
 >
