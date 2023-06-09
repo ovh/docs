@@ -1,6 +1,6 @@
 ---
 title: "¿Qué hacer en caso de página 403 forbidden?"
-excerpt: Descruba cómo volver a publicar un sitio web cuando este muestre la página 403 forbidden
+excerpt: Descubra cómo volver a publicar un sitio web cuando este muestre la página 403 forbidden
 slug: diagnostico-403-forbidden
 section: Diagnóstico
 order: 08
@@ -39,7 +39,7 @@ Tras la detección de un funcionamiento sospechoso, nuestros robots de seguridad
 
 ![403error](images/403error.png){.thumbnail}
 
-**Descruba cómo desbloquear el acceso a su sitio web en caso de que aparezca "403 forbidden".**
+**Descubra cómo desbloquear el acceso a su sitio web en caso de que aparezca "403 forbidden".**
 
 > [!warning]
 >
