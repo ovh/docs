@@ -13,7 +13,7 @@ updated: 2023-03-15
 
 Ce concept vous permet de construire une architecture basée sur une base de données SAP HANA jusqu'à 1,5 TB et la solution VMware on OVHcloud pour utiliser tous les avantages des fonctionnalités (templates, Zerto, NSX, DRS, Fault Tolerance, High Availability) pour vos serveurs applicatifs SAP sur une unique localisation OVHcloud ou multiple.
 
-![schema](images/ConceptH.png){.thumbnail}
+![schema](images/concept-hybrid.png){.thumbnail}
 
 | Objectif | Description |
 | --- | --- |
