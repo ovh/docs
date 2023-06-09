@@ -15,7 +15,7 @@ routes:
 
 The following concept allows you to build an architecture with a SAP HANA database up to 1.5 TB, and takes advantage of all VMware on OVHcloud features (templates, Zerto, NSX, DRS, Fault Tolerance, High Availability) for your SAP Application Servers in a single OVHcloud location or multiple OVHcloud locations.
 
-![schema](images/ConceptH.png){.thumbnail}
+![schema](images/concept-hybrid.png){.thumbnail}
 
 | Objective | Description |
 | --- | --- |
