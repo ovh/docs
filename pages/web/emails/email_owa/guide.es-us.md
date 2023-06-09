@@ -119,7 +119,7 @@ Rellene la información solicitada según la acción que quiere que lleve a cabo
 
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
-Para obtener instrucciones más detalladas sobre la creación de reglas de la bandeja de entrada, consulte nuestra guía: [Crear reglas de la bandeja de entrada en OWA](/products/email-owa-creating-inbox-rules).
+Para obtener instrucciones más detalladas sobre la creación de reglas de la bandeja de entrada, consulte nuestra guía: [Crear reglas de la bandeja de entrada en OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan).
 
 #### Bloquear un remitente
 

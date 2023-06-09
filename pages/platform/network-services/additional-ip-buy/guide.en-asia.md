@@ -85,4 +85,6 @@ The next step will be the IP configuration in your OS; please refer to our [guid
 
 [Configuring an Additional IP](/pages/platform/network-services/getting-started-04-configure-additional-ip-to-instance)
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
 Join our community of users on <https://community.ovh.com/en/>.

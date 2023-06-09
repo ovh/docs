@@ -110,6 +110,8 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 - Do you want to observe the evolution of your metrics during the training of your model? Click [here](/pages/platform/ai/notebook_tuto_03_weight_biases)!
 - Do you want to use your YOLOv7 model in an app? [Here it is](/pages/platform/ai/deploy_tuto_13_streamlit_yolov7).
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:

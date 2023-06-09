@@ -217,7 +217,7 @@ Lesen Sie auch unsere Anleitung zur [Sicherung Ihrer Website](/pages/web/hosting
 
 [Mit dem Speicherplatz Ihres Webhostings verbinden](/pages/web/hosting/ftp_connection)
 
-[Konfiguration Ihres Webhostings ändern](/pages/web/hosting/ovhconfig_modify_system_runtime/)
+[Konfiguration Ihres Webhostings ändern](/pages/web/hosting/ovhconfig_modify_system_runtime)
 
 [Application Firewall aktivieren](/pages/web/hosting/multisites_activating_application_firewall)
 

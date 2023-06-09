@@ -22,6 +22,7 @@ You can also use the OVHcloud Control Panel to manage your personal data, and de
 
 > [!primary]
 > If you experience any difficulties logging in to your account, please read the “[What do I do if I can't log in?](/pages/account/customer/ovhcloud-account-login#login-failure)” section of our guide on [Logging in to the OVHcloud Control Panel](/pages/account/customer/ovhcloud-account-login).
+>
 
 ## Instructions
 
@@ -46,7 +47,7 @@ You can find all of our password recommendations in our guide on [Setting and ma
 If you have not already done so, save your password in a [password manager](/pages/account/customer/manage-ovh-password#use-a-password-manager) .
 
 > [!primary]
-> The **Keepass** and **Bitwarden** software are free and open-source password managers.
+> The **KeePass** and **Bitwarden** software are free and open-source password managers.
 >
 
 #### Adding a backup email address <a name="backup-email"></a>

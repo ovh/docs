@@ -35,7 +35,7 @@ Por exemplo: deseja que todo o e-mail que contenha "\[SPAM]" no assumpto seja el
 Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Consulte o tipo de oferta na secção “Subscrição”.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Consulte a Referência do servidor na secção "Resumo".|
-|Consulte este manual a partir da secção "[Na prática](#oldmxplan)".|Consulte o nosso manual "[Regras da caixa de entrada a partir da interface OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/criar-regras-inbox-no-owa/)".|
+|Consulte este manual a partir da secção "[Na prática](#oldmxplan)".|Consulte o nosso manual "[Regras da caixa de entrada a partir da interface OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan)".|
 
 ## Prática <a name="oldmxplan"></a>
 
@@ -141,6 +141,6 @@ Se o assumpto da mensagem contiver a palavra "money" **e o** remetente da mensag
 
 [Primeiros passos com a oferta MX Plan](/pages/web/emails/email_generalities)
 
-[Regras da caixa de entrada a partir da interface OWA](/products/email-owa-creating-inbox-rules)
+[Regras da caixa de entrada a partir da interface OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -167,41 +167,32 @@ For more information on configuring a given service, see the page for that servi
 
 > [!tabs]      
 > Elasticsearch     
->> ``` python     
->> {!> web/web-paas/static/files/fetch/examples/python/elasticsearch !}  
->> ```     
+>> [Elasticsearch - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/elasticsearch)  
+>>     
 > Kafka     
->> ``` python     
->> {!> web/web-paas/static/files/fetch/examples/python/kafka !}  
->> ```     
+>> [Kafka - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/kafka)  
+>>     
 > Memcached     
->> ``` python     
->> {!> web/web-paas/static/files/fetch/examples/python/memcached !}  
->> ```     
+>> [Memcached - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/memcached)  
+>>     
 > MongoDB     
->> ``` python     
->> {!> web/web-paas/static/files/fetch/examples/python/mongodb !}  
->> ```     
+>> [MongoDB - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/mongodb)  
+>>     
 > MySQL     
->> ``` python     
->> {!> web/web-paas/static/files/fetch/examples/python/mysql !}  
->> ```     
+>> [MySQL - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/mysql)  
+>>     
 > PostgreSQL     
->> ``` python     
->> {!> web/web-paas/static/files/fetch/examples/python/postgresql !}  
->> ```     
+>> [PostgreSQL - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/postgresql)  
+>>     
 > RabbitMQ     
->> ``` python     
->> {!> web/web-paas/static/files/fetch/examples/python/rabbitmq !}  
->> ```     
+>> [RabbitMQ - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/rabbitmq)  
+>>     
 > Redis     
->> ``` python     
->> {!> web/web-paas/static/files/fetch/examples/python/redis !}  
->> ```     
+>> [Redis - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/redis)  
+>>     
 > Solr     
->> ``` python     
->> {!> web/web-paas/static/files/fetch/examples/python/solr !}  
->> ```     
+>> [Solr - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/solr)  
+>>     
 
 ## Configuration reader
 While you can read the environment directly from your app, you might want to use the

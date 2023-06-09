@@ -98,6 +98,6 @@ Como a transferência é gratuita, a data de expiração do domínio após a tra
 
 ## Quer saber mais? <a name="gofurther"></a>
 
-[Transferir o nome de domínio para a OVHcloud)[/pages/web/domains/transfer_incoming_generic_domain]
+[Transferir o nome de domínio para a OVHcloud)[https://docs.ovh.com/pt/domains/transferir-o-dominio-generico/]
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

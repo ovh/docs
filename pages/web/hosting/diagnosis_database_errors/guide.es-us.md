@@ -140,7 +140,7 @@ Abra la pestaña `Bases de datos`{.action} del alojamiento correspondiente e ini
 
 #### Método 4: optimizar la base de datos
 
-Para optimizar su base de datos, siga las instrucciones de nuestra guía "[Configurar su servidor de bases de datos](https://docs.ovh.com/us/pages/web/clouddb/configure-database-server#gestionar-las-bases-de-datos)". Abra la pestaña `Bases de datos`{.action} de su alojamiento y haga clic en el botón `...`{.action} de la base de datos en cuestión.
+Para optimizar su base de datos, siga las instrucciones de nuestra guía "[Configurar su servidor de bases de datos](https://docs.ovh.com/us/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#gestionar-las-bases-de-datos)". Abra la pestaña `Bases de datos`{.action} de su alojamiento y haga clic en el botón `...`{.action} de la base de datos en cuestión.
 
 > [!warning]
 >
@@ -174,13 +174,13 @@ Este mensaje de error significa que la base de datos que está intentando import
 Tener un **"trigger"** en el script de importación de su base de datos no está autorizado en los servidores de alojamiento compartido de OVHcloud. 
 Por otro lado, no está permitida la siguiente petición:
 
-```mysql
+```sql
 CREATE DATABASE IF NOT EXISTS `Database-Name` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
 ```
 
 Sustituya por:
 
-```mysql
+```sql
 USE `Database-Name`;
 ```
 
@@ -211,7 +211,7 @@ El número máximo de conexiones activas para las bases de datos entregadas con 
 
 Este mensaje aparece durante [conexión a phpMyAdmin](/pages/web/hosting/sql_create_database#acceder-a-la-interfaz-phpmyadmin) cuando se supera el número máximo de conexiones.
 
-En ese caso, deberá [optimizar las bases de datos](https://docs.ovh.com/us/pages/web/clouddb/configure-database-server#gestionar-las-bases-de-datos) para reducir el número de conexiones activas.
+En ese caso, deberá [optimizar las bases de datos](https://docs.ovh.com/us/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#gestionar-las-bases-de-datos) para reducir el número de conexiones activas.
 
 > [!warning]
 >
@@ -224,7 +224,7 @@ En ese caso, deberá [optimizar las bases de datos](https://docs.ovh.com/us/page
 > **"mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known"**
 >
 
-Este mensaje de error aparece durante [conexión a phpMyAdmin](https://docs.ovh.com/us/pages/web/clouddb/connecting-to-database-on-database-server#procedimiento) cuando el nombre del servidor introducido es incorrecto.
+Este mensaje de error aparece durante [conexión a phpMyAdmin](https://docs.ovh.com/us/es/hosting/coneccion-base-de-datos-servidor-bdd/#procedimiento) cuando el nombre del servidor introducido es incorrecto.
 
 ![name_or_service_not_known](images/name_or_service_not_known.png){.thumbnail}
 

@@ -62,7 +62,7 @@ Po zatwierdzeniu tego etapu otrzymasz wiadomość z informacją o ukończeniu ko
 
 Jeśli Twoja nazwa domeny nie jest zarządzana z poziomu tego samego konta klienta lub też jest utrzymywana poza OVHcloud, otrzymasz drugi e-mail zawierający informacje niezbędne do ręcznej konfiguracji strefy DNS.
 
-E-mail zawiera adresy IPv4 i IPv6 Twojej platformy. Podaj te adresy w strefie DNS subdomeny prawdopodobnie utworzonej uprzednio w [etapu 2 ](./#etap-2-uruchomienie-platformy){.external} w formie wpisu typu „A” lub „AAAA”. W przypadku nazwy domeny w OVHCloud  zapoznaj się z naszym przewodnikiem [„Modyfikowanie strefy DNS”](/pages/web/domains/dns_zone_edit/).
+E-mail zawiera adresy IPv4 i IPv6 Twojej platformy. Podaj te adresy w strefie DNS subdomeny prawdopodobnie utworzonej uprzednio w [etapu 2 ](./#etap-2-uruchomienie-platformy){.external} w formie wpisu typu „A” lub „AAAA”. W przypadku nazwy domeny w OVHCloud  zapoznaj się z naszym przewodnikiem [„Modyfikowanie strefy DNS”](/pages/web/domains/dns_zone_edit).
 
 
 

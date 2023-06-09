@@ -68,7 +68,7 @@ Sobald Ihre E-Mail-Accounts angelegt wurden, können Sie diese verwenden. Hierf�
 
 Gehen Sie zum [Webmail-Login](https://www.ovh.de/mail/) und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
 
-Beim ersten Login werden Sie aufgefordert, die Sprache sowie Ihre Zeitzone festzulegen. Daraufhin wird Ihr Posteingang angezeigt. Weitere Informationen zur Verwendung Ihrer E-Mail-Adresse finden Sie in unserer Anleitung zur [Verwendung Ihrer E-Mail-Adresse mit OWA](/products/email-owa-user-guide).
+Beim ersten Login werden Sie aufgefordert, die Sprache sowie Ihre Zeitzone festzulegen. Daraufhin wird Ihr Posteingang angezeigt. Weitere Informationen zur Verwendung Ihrer E-Mail-Adresse finden Sie in unserer Anleitung zur [Verwendung Ihrer E-Mail-Adresse mit OWA](/pages/web/emails/email_owa).
 
 ![E-Mail](images/mxplan-starter-new-step4.png){.thumbnail}
 

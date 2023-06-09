@@ -167,7 +167,7 @@ La rete sarà necessariamente in /23 (512 IPs).
 
 > [!warning]
 >
-> Attenzione: se si si verifica un errore in questa fase, la VPN non sarà in grado di funzionare. 
+> Attenzione: se si verifica un errore in questa fase, la VPN non sarà in grado di funzionare. 
 >
 
 ![zerto vpn](images/image-EN-19.png){.thumbnail}

@@ -69,6 +69,6 @@ Clicca su `Connetti`{.action}. Una volta effettuato l'accesso, visualizzerai i d
 
 [Documentazione di Cyberduck](https://trac.cyberduck.io/wiki/help/en){.external}
 
-[Come utilizzare l'API Swift](/pages/cloud/storage/object_storage/pcs_getting_started_with_the_swift_api/)
+[Come utilizzare l'API Swift](/pages/cloud/storage/object_storage/pcs_getting_started_with_the_swift_api)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

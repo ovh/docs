@@ -35,7 +35,7 @@ Na przykład: chcesz, aby wszystkie e-maile zawierające "[SPAM]" w temacie zost
 Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Znajdź nazwę oferty w polu „Abonament”.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Znajdź Oznaczenie serwera w polu "Podsumowanie"|
-|Przejdź do sekcji "[W praktyce](#oldmxplan)" niniejszego przewodnika.|Przejdź do naszego przewodnika "[Reguły skrzynki odbiorczej w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/tworzenie-regul-skrzynki-odbiorczej-w-owa/)".|
+|Przejdź do sekcji "[W praktyce](#oldmxplan)" niniejszego przewodnika.|Przejdź do naszego przewodnika "[Reguły skrzynki odbiorczej w interfejsie OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan)".|
 
 ## W praktyce <a name="oldmxplan"></a>
 
@@ -141,6 +141,6 @@ Jeśli temat wiadomości zawiera słowo "money", **a nadawcą wiadomości nie je
 
 [Pierwsze kroki z usługą MX Plan](/pages/web/emails/email_generalities)
 
-[Reguły skrzynki odbiorczej w interfejsie OWA](/products/email-owa-creating-inbox-rules)
+[Reguły skrzynki odbiorczej w interfejsie OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

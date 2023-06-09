@@ -1,6 +1,8 @@
 ---
-title: Kubernetes Logging with Fluent Bit in a nutshell
+title: Pushing logs from software - Kubernetes and Fluent Bit
 excerpt: All the logs of your pods in one place
+routes:
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-kubernetes-fluent-bit?id=kb_article_view&sysparm_article=KB0050055'
 updated: 2022-11-15
 ---
 
@@ -8,14 +10,14 @@ updated: 2022-11-15
 
 ## Objective
 
-[Kubernetes](https://kubernetes.io/){.external} is the de facto standard to manage containerized applications on cloud platforms. It is open source, has a large ecosystem, and has a ever growing community. Kubernetes is great but once your containers go live in the cloud, you still want to monitor their behavior. The more containers you have, the more difficult it can be to navigate through the logs and have a clear picture of what's happening. How can you centralize all your Kubernetes pods logs in one place and analyze them easily ? By using Logs Data Platform with the help of Fluent Bit. [Fluent Bit](http://fluentbit.io/) is a fast and lightweight log processor and forwarder. It is open source, cloud oriented and a part of the [Fluentd](http://fluentd.org/){.external} ecosystem. This tutorial will help you to configure it for Logs Data Platform, you can of course apply it to our [fully managed Kubernetes offer](https://www.ovhcloud.com/en-gb/public-cloud/kubernetes/){.external}.
+[Kubernetes](https://kubernetes.io/){.external} is the de facto standard to manage containerized applications on cloud platforms. It is open source, has a large ecosystem, and has a ever growing community. Kubernetes is great but once your containers go live in the cloud, you still want to monitor their behavior. The more containers you have, the more difficult it can be to navigate through the logs and have a clear picture of what's happening. How can you centralize all your Kubernetes pods logs in one place and analyze them easily ? By using Logs Data Platform with the help of Fluent Bit. [Fluent Bit](http://fluentbit.io/) is a fast and lightweight log processor and forwarder. It is open source, cloud oriented and a part of the [Fluentd](http://fluentd.org/){.external} ecosystem. This tutorial will help you to configure it for Logs Data Platform, you can of course apply it to our [fully managed Kubernetes offer](https://www.ovhcloud.com/fr-ca/public-cloud/kubernetes/){.external}.
 
 ## Requirements
 
 Note that in order to complete this tutorial, you should have at least:
 
 - [Activated your Logs Data Platform account.](https://www.ovh.co.uk/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
-- [Created at least one Stream and get its token.](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
+- [Created at least one Stream and get its token.](/pages/platform/logs-data-platform/getting_started_quick_start)
 - A working kubernetes cluster with some pods already logging to stdout.
 - 15 minutes.
 
@@ -169,7 +171,7 @@ data:
     [PARSER]
         Name   apache_error
         Format regex
-        Regex  ^\[[^ ]* (?<time>[^\]]*)\] \[(?<level>[^\]]*)\](/pages/platform/logs-data-platform/ingestion_kubernetes_fluent_bit?: \[pid (?<pid>[^\]]*)\])?( \[client (?<client>[^\]]*)\])? (?<message>.*)$
+        Regex  ^\[[^ ]* (?<time>[^\]]*)\] \[(?<level>[^\]]*)\](/ca/fr/logs-data-platform/logs-data-platform-kubernetes-fluent-bit/?: \[pid (?<pid>[^\]]*)\])?( \[client (?<client>[^\]]*)\])? (?<message>.*)$
 
     [PARSER]
         Name   nginx
@@ -313,7 +315,7 @@ And that's it. Your kubernetes activity is now perfectly logged in one place. Ha
 
 ## Go further
 
-- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
-- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

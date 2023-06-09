@@ -32,7 +32,7 @@ For example: you can automatically delete emails tagged as spam by our spam prot
 MX Plan legacy version|MX Plan new version|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Find the solution in the section "Plan".|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Locate the `Server model` in the section "Summary".|
-|Continue reading this guide in the `[Instructions](#oldmxplan)` section below.|Continue with our guide regarding [Inbox rules in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/creating-inbox-rules-in-owa/).|
+|Continue reading this guide in the [Instructions](#oldmxplan) section below.|Continue with our guide regarding [Inbox rules in OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan).|
 
 ## Instructions <a name="oldmxplan"></a>
 
@@ -52,13 +52,11 @@ A new window will open which contains the list of filters currently configured f
 
 ![emails](images/img_3241.jpg){.thumbnail}
 
-
 #### Information
 
 - **Filter name:** This is used to differentiate your filters inside the Control Panel.
 - **Priority:** This sets the order in which your filters will run for all emails received on this address. A Priority 1 filter will run before a Priority 5 filter.
 - **Enable filter:** This determines whether the filter will be applied to the inbox (for example, you can temporarily disable a filter without deleting it by unchecking this option).
-
 
 #### <u>Rules:</u>
 
@@ -100,7 +98,6 @@ You can choose between these types of actions:
 - **redirect to a local address**: redirects the email to one of your other email addresses on the same domain.
 - **deletion**: deletes the email from your inbox without further notice.
 - **redirect to a remote address**: redirects the email to whichever email address you enter.
-
 
 ### Examples
 

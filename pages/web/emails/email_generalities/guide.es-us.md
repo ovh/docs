@@ -64,7 +64,7 @@ Una vez que haya creado las direcciones de correo, ya puede empezar a usarlas. P
 
 Vaya a la [página de conexión al webmail](https://www.ovh.com/world/es/mail/){.external} e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
-La primera vez que se conecte al webmail deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía [Utilizar una dirección de correo desde Outlook en la Web](/products/email-owa-user-guide){.external}.
+La primera vez que se conecte al webmail deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía [Utilizar una dirección de correo desde Outlook en la Web](/pages/web/emails/email_owa){.external}.
 
 ![Correo electrónico](images/mxplan-starter-new-step4.png){.thumbnail}
 

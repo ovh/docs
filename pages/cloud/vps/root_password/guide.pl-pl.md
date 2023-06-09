@@ -41,15 +41,16 @@ Może zaistnieć konieczność zmiany hasła root do systemu operacyjnego Linux.
 
 Zaloguj się do Twojego serwera VPS przez SSH. Przejdź na użytkownika root, jeśli konieczne:
 
-```sh
-~$ sudo su -
-~#
+```bash
+sudo su -
+#
 ```
 
 Zmień hasło dla aktualnego użytkownika:
 
-```sh
-~# passwd
+```bash
+passwd
+
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -129,8 +130,9 @@ Możesz przeprowadzić weryfikację, wpisując komendę `ls -l`, która zawiera 
 
 W ostatnim etapie wpisz hasło za pomocą polecenia `passwd`.
 
-```sh
-~# passwd
+```bash
+passwd
+
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -140,8 +142,8 @@ Jeśli VPS to najnowsza generacja (masz na imię: *vps-XXXXXXX.vps.ovh.net*). po
 
 Należy zatem wprowadzić nazwę użytkownika, którego używasz do logowania się po `passwd`:
 
-```sh
-~# passwd <username>
+```bash
+~# passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -191,7 +193,7 @@ Zapisz plik i wyjdź z edytora.
 ~$ systemctl restart sshd
 ```
 
-Powinno to wystarczyć do wdrożenia zmian. Możesz również zrestartować serwer VPS (```~$ reboot```).
+Powinno to wystarczyć do wdrożenia zmian. Możesz również zrestartować serwer VPS (`~$ sudo reboot`).
 
 ### Nieprawidłowe działanie
 

@@ -51,7 +51,7 @@ Pour en savoir plus, reportez-vous à la section [Aller plus loin](/pages/accoun
 
 Des logiciels spécifiques permettent de sauvegarder et sécuriser votre mot de passe d'accès au compte OVHcloud.
 
-Vous pouvez, par exemple, utiliser le gestionnaire de mots de passe **Keepass**. Il s’agit d’un logiciel libre et gratuit recommandé par l'Agence nationale de sécurité des systèmes d'information (ANSSI).
+Vous pouvez, par exemple, utiliser le gestionnaire de mots de passe **KeePass**. Il s’agit d’un logiciel libre et gratuit recommandé par l'Agence nationale de sécurité des systèmes d'information (ANSSI).
 
 Son principe est simple : un mot de passe maître – qui doit être suffisamment complexe, mais que vous devez mémoriser – permet d'accéder à une base de données regroupant tous vos identifiants et mots de passe. Ces derniers peuvent être très complexes, car le logiciel pourra les retenir.
 
@@ -78,7 +78,7 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 
 ![manage-ovh-password](images/newhub2.png){.thumbnail}
 
-- Cliquez ensuite sur sur `Sécurité`{.action} puis sur `Modifier`{.action} à droite de « Mot de passe ».
+- Cliquez ensuite sur `Sécurité`{.action} puis sur `Modifier`{.action} à droite de « Mot de passe ».
 
 ![manage-ovh-password](images/manage-password02.png){.thumbnail}
 
@@ -90,7 +90,7 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 
 ![manage-ovh-password](images/account-password-modif-manager-step4.png){.thumbnail}
 
-- Un message vous indiquant le succès de l’opération s’affiche alors. Cliquez sur le bouton `Continuer`{.action} en bas ce ce message pour être redirigé vers la page d’identification. Renseignez alors votre identifiant et votre nouveau mot de passe.
+- Un message vous indiquant le succès de l’opération s’affiche alors. Cliquez sur le bouton `Continuer`{.action} en bas ce message pour être redirigé vers la page d’identification. Renseignez alors votre identifiant et votre nouveau mot de passe.
 
 #### Si vous ne connaissez plus votre mot de passe actuel
 
@@ -110,7 +110,7 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 
 ![manage-ovh-password](images/account-password-modif-manager-step4.png){.thumbnail}
 
-- Un message vous indiquant le succès de l’opération s’affiche alors. Cliquez sur le bouton `Continuer`{.action} en bas ce ce message pour être redirigé vers la page d’identification. Renseignez alors votre identifiant et votre nouveau mot de passe.
+- Un message vous indiquant le succès de l’opération s’affiche alors. Cliquez sur le bouton `Continuer`{.action} en bas de ce message pour être redirigé vers la page d’identification. Renseignez alors votre identifiant et votre nouveau mot de passe.
 
 > [!primary]
 >
@@ -127,6 +127,6 @@ Si votre mot de passe est compromis, nous vous recommandons vivement de le [modi
 
 [Les conseils de cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/){.external}
 
-[Le gestionnaire de mots de passe Keepass](https://keepass.info/){.external}
+[Le gestionnaire de mots de passe KeePass](https://keepass.info/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>`

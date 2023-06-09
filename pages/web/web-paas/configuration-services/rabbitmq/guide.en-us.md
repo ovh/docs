@@ -96,21 +96,17 @@ You can then use the service in a configuration file of your application with so
 
 > [!tabs]      
 > Go     
->> ``` go     
->> {!> web/web-paas/static/files/fetch/examples/golang/rabbitmq !}  
->> ```     
+>> [RabbitMQ - Go](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/golang/rabbitmq)  
+>>      
 > Java     
->> ``` java     
->> {!> web/web-paas/static/files/fetch/examples/java/rabbitmq !}  
->> ```     
+>> [RabbitMQ - Java](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/java/rabbitmq)  
+>>      
 > PHP     
->> ``` php     
->> {!> web/web-paas/static/files/fetch/examples/php/rabbitmq !}  
->> ```     
+>> [RabbitMQ - PHP](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/rabbitmq)  
+>>     
 > Python     
->> ``` python     
->> {!> web/web-paas/static/files/fetch/examples/python/rabbitmq !}  
->> ```     
+>> [RabbitMQ - Python](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/rabbitmq)  
+>>      
 
 (The specific way to inject configuration into your application will vary. Consult your application or framework's documentation.)
 

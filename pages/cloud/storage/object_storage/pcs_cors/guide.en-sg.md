@@ -14,11 +14,6 @@ Swift supports CORS requests to containers and objects.
 
 CORS metadata is only present in the container. The values specified apply to the container itself and all objects contained within it.
 
-> [!primary]
->
-> CORS is not compatible with the S3 API.
->
-
 **The purpose of this guide is to familiarise you with the concept of CORS.**
 
 ## Requirements

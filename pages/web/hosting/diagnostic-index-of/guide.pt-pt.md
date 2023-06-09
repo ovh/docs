@@ -47,7 +47,7 @@ Para apresentar o seu website, deverá ligar o seu domínio ao `Pasta raiz` que 
 
 > [!primary]
 >
-> Para associar temporariamente o seu domínio a um `Pasta raiz` que não contém ficheiro **index.php** ou **index.html**, pode proibir a apresentação da lista de pastas do seu site seguindo este [tutorial](/pages/web/hosting/htaccess_what_else_can_you_do). Pode também proteger o acesso às suas pastas com uma [palavra-passe](/pages/web/hosting/htaccess_protect_directory_by_password).
+> Para associar temporariamente o seu domínio a um `Pasta raiz` que não contém ficheiro **index.php** ou **index.html**, pode proibir a apresentação da lista de pastas do seu site seguindo este [tutorial](/pages/web/hosting/htaccess_what_else_can_you_do/). Pode também proteger o acesso às suas pastas com uma [palavra-passe](/pages/web/hosting/htaccess_protect_directory_by_password).
 
 >
 > Se precisar de ajuda, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/). As nossas equipas de suporte não poderão fornecer-lhe assistência relativamente a qualquer alteração da programação interna do seu site.

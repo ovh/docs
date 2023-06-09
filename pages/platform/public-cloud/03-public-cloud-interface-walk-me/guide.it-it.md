@@ -80,7 +80,7 @@ Nel tuo progetto Public Cloud sono disponibili diversi tool di gestione, in fond
 |Ingresso del menu|Descrizione|
 |---|---|
 |**Horizon**|È l'[interfaccia grafica](/pages/platform/public-cloud/introducing_horizon) generalmente disponibile su OpenStack. e non viene modificata, permettendo agli utenti abituati a questa interfaccia di navigare facilmente.|
-|**Users and Roles**|Permette di [creare utenti](/pages/platform/public-cloud/create_and_delete_a_user/) e attribuire loro un ruolo. Questi utenti permettono di accedere direttamente alle API o all'interfaccia Horizon. Ad esempio, puoi creare un utente per le tue operazioni di manutenzione classiche e un utente per i tuoi strumenti di automazione, come ad esempio Terraform.|
+|**Users and Roles**|Permette di [creare utenti](/pages/platform/public-cloud/create_and_delete_a_user) e attribuire loro un ruolo. Questi utenti permettono di accedere direttamente alle API o all'interfaccia Horizon. Ad esempio, puoi creare un utente per le tue operazioni di manutenzione classiche e un utente per i tuoi strumenti di automazione, come ad esempio Terraform.|
 |**Quota and Regions**|Questo strumento ti permette di gestire le localizzazioni e i limiti di risorse disponibili sul tuo progetto.<br><br>**Quota**: In base a determinati criteri (numero di fatture già pagate, utilizzo di altri prodotti OVHcloud), il nostro sistema applica delle quote (limiti) al numero di risorse che puoi creare, per evitare problemi di mancato pagamento. Di default, il sistema aumenta automaticamente le proprie quote quando vengono soddisfatti determinati criteri. Tuttavia, è possibile [aumentare manualmente una quota](/pages/platform/public-cloud/increasing_public_cloud_quota#aumentare-la-quota-di-risorse-manualmente) tramite questo strumento.<br><br>**Localizzazioni**: Il Public Cloud è disponibile in diverse localizzazioni nel mondo. Inoltre, ogni localizzazione può includere diverse "regioni" (concetto specifico di OpenStack). Ad esempio, per un cliente europeo, la zona APAC (Asia Pacifica) è disattivata di default. Se questo è il tuo caso, puoi attivare altre regione da questo menu.|
 |**SSH Keys**|Uno strumento che ti permette di [gestire le tue chiavi SSH](/pages/platform/public-cloud/public-cloud-first-steps#step-1-crea-chiavi-ssh) in modo centralizzato.|
 |**Billing Control**|Public Cloud che funziona in *pay as you go*, cioè il pagamento a consumo, le fatture vengono saldate alla fine del mese. In [questo menu](/pages/platform/public-cloud/analyze_billing) è possibile monitorare i consumi correnti, consultare la previsione della prossima fattura e, ovviamente, consultare le fatture precedenti.|
@@ -91,5 +91,7 @@ Nel tuo progetto Public Cloud sono disponibili diversi tool di gestione, in fond
 ## Per saperne di più
 
 [Creare e connettersi a un’istanza Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps)
+
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -14,7 +14,7 @@ updated: 2022-06-15
 
 This is what you need to know to get you started:
 
-- you are already sending logs on a stream you own [see the quick start tutorial](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
+- you are already sending logs on a stream you own [see the quick start tutorial](/pages/platform/logs-data-platform/getting_started_quick_start)
 - Your have access to the port 9200 to your cluster (head to the **Home** page in manager to know the address of your cluster).
 
 After some training you will be able to create this kind of dashboard:
@@ -85,7 +85,7 @@ If you want to know what you can do with Grafana and OpenSearch, read the [offic
 
 ## Go further
 
-- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
-- Documentation: [Guides](/pages/platform/logs-data-platform){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

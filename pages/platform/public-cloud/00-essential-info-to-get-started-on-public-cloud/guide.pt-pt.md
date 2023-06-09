@@ -148,4 +148,6 @@ Uma das grandes vantagens de utilizar tecnologias standard e abertas, como OpenS
 |[Kubernetes CLI Overview](https://kubernetes.io/docs/reference/kubectl/overview/) (EN)| A documentação do incontornável cliente em linha de comandos 'kubectl'.|
 |[Kubernetes APIs Overview](https://kubernetes.io/docs/reference/using-api/) (EN)| A documentação da API de Kubernetes, útil para obter uma visão de conjunto das possibilidades.|
 
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

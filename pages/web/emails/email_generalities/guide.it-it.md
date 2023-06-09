@@ -70,7 +70,7 @@ Una volta creati gli account non ti resta che utilizzarli utilizzando la Webmail
 
 Accedi alla [pagina di connessione](https://www.ovh.it/mail/), inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
 
-Se è la prima volta che esegui l’accesso da questo indirizzo email, ti verrà chiesto di selezionare la lingua dell’interfaccia utente e definire il fuso orario della tua area geografica. Quando effettui il login, si apre di default la casella della posta in arrivo. Per maggiori informazioni consulta la guida all’[utilizzo di un account di posta da "Outlook on the web"](/products/email-owa-user-guide).
+Se è la prima volta che esegui l’accesso da questo indirizzo email, ti verrà chiesto di selezionare la lingua dell’interfaccia utente e definire il fuso orario della tua area geografica. Quando effettui il login, si apre di default la casella della posta in arrivo. Per maggiori informazioni consulta la guida all’[utilizzo di un account di posta da "Outlook on the web"](/pages/web/emails/email_owa).
 
 ![email](images/mxplan-starter-new-step4.png){.thumbnail}
 

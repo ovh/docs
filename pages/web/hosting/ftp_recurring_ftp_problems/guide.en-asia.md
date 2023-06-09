@@ -88,7 +88,7 @@ If you did not use the "[1-click module](/pages/web/hosting/cms_install_1_click_
 
 [Using FileZilla software with your hosting](/pages/web/hosting/ftp_filezilla_user_guide)
 
-For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/asia/).
+For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
 

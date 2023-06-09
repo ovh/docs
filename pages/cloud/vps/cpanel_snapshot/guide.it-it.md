@@ -1,14 +1,14 @@
 ---
 title: Backup automatico - Kernel panic (cPanel)
 excerpt: Come risolvere i problemi di blocco dei server cPanel durante il backup automatico OVHcloud
-updated: 2021-03-09
+updated: 2023-06-06
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
-**Ultimo aggiornamento: 09/03/2021**
+**Ultimo aggiornamento: 06/06/2023**
 
 ## Obiettivo
 
@@ -61,6 +61,16 @@ Questa opzione ti permette di attivare/disattivare l'utilizzo di una Jailed Shel
 Questa opzione non riguarda gli account che esistono già sul server ma che non hai ancora modificato.
 
 Per disattivare l'ambiente Jailed Shell da un utente specifico, utilizza l'interfaccia "WHM's Manage Shell Access" (WHM >> Home >>Account Functions >>Manage Shell Access).
+
+Tutte le informazioni sono disponibili nella [documentazione ufficiale cPanel](https://docs.cpanel.net/knowledge-base/accounts/virtfs-jailed-shell/#disable-or-remove-a-jailed-shell-environment).
+
+> [!warning]
+>
+> Come indicato da cPanel, alcune funzionalità possono continuare a utilizzare le cartelle create da Jailed Shell. Nonostante la disattivazione dell'ambiente Jailed Shell, è possibile continuare a sperimentare difficoltà nella gestione dei backup.
+>
+> Se vuoi disattivare la funzionalità Jailed Shell ed eliminare le cartelle "virtfs" create, fai attenzione perché la cancellazione della directory "virtfs" può causare la perdita dei dati utente.
+>
+> Assicurati di aver effettuato tutti i backup necessari.
 
 ### Disattiva la sicurezza della partizione /tmp su cPanel
 

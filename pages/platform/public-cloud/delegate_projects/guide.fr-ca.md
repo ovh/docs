@@ -55,4 +55,6 @@ Pour révoquer un accès, cliquez sur le bouton `...`{.action} puis sélectionne
 
 [Paramètres d’accès et de sécurité dans Horizon](/pages/platform/public-cloud/access_and_security_in_horizon)
 
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

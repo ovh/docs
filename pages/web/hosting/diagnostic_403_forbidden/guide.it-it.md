@@ -20,7 +20,7 @@ In caso di malfunzionamenti, i nostri sistemi di sicurezza hanno dovuto bloccare
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/) o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) su questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) su questa guida.
 >
 
 ## Prerequisiti
@@ -35,18 +35,18 @@ In caso di malfunzionamenti, i nostri sistemi di sicurezza hanno dovuto bloccare
 
 Se la pagina **"403 forbidden"** è apparsa a seguito di una modifica errata del tuo sito, [ripristina in tutto o in parte lo spazio di storage del tuo hosting](/pages/web/hosting/ftp_save_and_backup) a una data precedente.
 
-Se i backup disponibili non ti permettono di ripristinare l'accesso al tuo sito, contatta un [provider specializzato](https://partner.ovhcloud.com/it/).
+Se i backup disponibili non ti permettono di ripristinare l'accesso al tuo sito, contatta un [provider specializzato](https://partner.ovhcloud.com/it/directory/).
 
 Se la pagina **"403 forbidden"** non è apparsa a seguito di una modifica del tuo sito, consulta la tua messaggeria. Se hai ricevuto un'email dai nostri servizi che indica la chiusura dell'hosting per motivi di sicurezza, passa allo [Step 2](#step2).
 
-Se la pagina **"403 forbidden"** è apparsa senza azione da parte tua e non hai ricevuto email dai nostri servizi a questo proposito, contatta un [provider specializzato](https://partner.ovhcloud.com/it/).
+Se la pagina **"403 forbidden"** è apparsa senza azione da parte tua e non hai ricevuto email dai nostri servizi a questo proposito, contatta un [provider specializzato](https://partner.ovhcloud.com/it/directory/).
 
 ### Step 2: rendere sicure le tue soluzioni <a name="step2"></a>
 
 Verifica la sicurezza della tua postazione(e) informatica:
 
 - Effettua gli aggiornamenti di sicurezza;
-- Verifica anche che sia installato un antivirus, aggiorna e avvia una scansione completa. Se non ne hai uno, consulta un [provider specializzato](https://partner.ovhcloud.com/it/) prima di installare il tuo servizio;
+- Verifica anche che sia installato un antivirus, aggiorna e avvia una scansione completa. Se non ne hai uno, consulta un [provider specializzato](https://partner.ovhcloud.com/it/directory/) prima di installare il tuo servizio;
 - Modificate l'insieme delle vostre password locali, in particolare quelle dei vostri indirizzi email, rispettando queste [buone pratiche](/pages/account/customer/manage-ovh-password#genera-una-password-efficace);
 - Modifica le password di tutti i tuoi servizi OVHcloud, in particolare del tuo [database](../modificare-password-database/) e dell'accesso al tuo [spazio di storage FTP](/pages/web/hosting/ftp_change_password).
 
@@ -56,7 +56,7 @@ Verifica la sicurezza della tua postazione(e) informatica:
 >
 > In caso contrario, la modifica della password del tuo database comporta l'interruzione del sito o dei servizi che lo utilizzano.
 >
-> In caso di dubbi sulle operazioni da effettuare, contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+> In caso di dubbi sulle operazioni da effettuare, contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 >
 
 ### Step 3: intervenire sul tuo hosting
@@ -72,12 +72,12 @@ Se il tuo hosting è stato chiuso meno di due settimane fa e contiene diversi si
 > [!warning]
 >
 > Il solo ripristino del tuo spazio di storage non basterà a correggere eventuali falle di sicurezza presenti sul tuo sito.
-> Per identificare queste falle di sicurezza, puoi analizzare i ["logs web"](/pages/web/hosting/logs_and_statistics#logs) del tuo hosting o rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/) per effettuare un audit di sicurezza delle tue soluzioni.
+> Per identificare queste falle di sicurezza, puoi analizzare i ["logs web"](/pages/web/hosting/logs_and_statistics#logs) del tuo hosting o rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/) per effettuare un audit di sicurezza delle tue soluzioni.
 >
 
 #### Caso 2: il tuo hosting è stato disattivato più di due settimane fa
 
-Se il tuo hosting è stato chiuso più di due settimane fa, contatta un [provider specializzato](https://partner.ovhcloud.com/it/) per effettuare un audit di sicurezza delle tue soluzioni. 
+Se il tuo hosting è stato chiuso più di due settimane fa, contatta un [provider specializzato](https://partner.ovhcloud.com/it/directory/) per effettuare un audit di sicurezza delle tue soluzioni. 
 
 ### Step 4: riattivare il tuo hosting Web <a name="reactivate-web-hosting"></a>
 
@@ -129,7 +129,7 @@ Una risposta **"200 Permissions changed on /"** conferma che l'operazione è sta
 
 [Modificare la versione di PHP su un hosting Web](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](https://www.ovhcloud.com/it/support-levels/).
 

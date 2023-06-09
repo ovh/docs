@@ -264,7 +264,7 @@ Nous allons créer deux applications, tester leur bon fonctionnement et les publ
 
 #### Création de l'application WEB IIS sous Windows
 
-Dans la barre verticale, choisissez `Blueprints`{.action}, faites défiler le menu `Create Blueprint`{.action} et cliquez sur sur `Multi VM/Pod Blueprint`{.action}.
+Dans la barre verticale, choisissez `Blueprints`{.action}, faites défiler le menu `Create Blueprint`{.action} et cliquez sur `Multi VM/Pod Blueprint`{.action}.
 
 ![03 Create Windows Blueprint 01](images/03-create-windows-blueprint01.png){.thumbnail}
 

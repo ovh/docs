@@ -3,10 +3,10 @@ title: MySQL - Capacités et limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for MySQL
 routes:
     canonical: '/pages/platform/databases/mysql_01_capabilities'
-updated: 2023-04-14
+updated: 2023-05-23
 ---
 
-**Last updated April 14th, 2023**
+**Last updated May 23rd, 2023**
 
 ## Objective
 
@@ -115,7 +115,7 @@ We try hard to avoid "disk full" situations that could be harmful to cluster hea
 2. When reaching a concerning level of disk usage, the service is moved in the "DISK_FULL" state, and "read-only" mode, meaning no more writes can be done.
 3. You then have the ability to upgrade to a higher service plan with more storage.
 
-See the [Handling «Disk Full» situations documentation](/products/public-cloud-databases-handling-disk-full) for more information.
+See the [Handling «Disk Full» situations documentation](/pages/platform/databases/databases_10_full_disk_handling) for more information.
 
 ### Features
 
@@ -156,6 +156,8 @@ You can further customise your MySQL by using advanced parameters. See the [Adva
 
 *Enterprise* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 30 days.
 
+See the [Automated Backups guide](/pages/platform/databases/databases_05_automated_backups) for more information.
+
 #### Logs and metrics
 
 Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your MySQL logs in Opensearch and metrics in Grafana (metrics have to be exported first in a time series compatible engine such as PostgreSQL or M3db). See the [Cross Service Integration documentation](/pages/platform/databases/databases_07_cross_service_integration) for more information.
@@ -172,5 +174,7 @@ Creation of users is allowed via the Control Panel and API with default admin ro
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

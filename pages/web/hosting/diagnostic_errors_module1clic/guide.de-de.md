@@ -105,7 +105,7 @@ In diesem Fall verbinden Sie sich via [FTP mit Ihrem Hosting](../verbindung-ftp-
 
 > [!primary]
 >
-> Falls Sie unsicher sind, welche Daten benötigt werden, kontaktieren Sie unsere [User Community](https://community.ovh.com/en/) oder einen der [OVHcloud Partner](https://partner.ovhcloud.com/de/).<br>
+> Falls Sie unsicher sind, welche Daten benötigt werden, kontaktieren Sie unsere [User Community](https://community.ovh.com/en/) oder einen der [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).<br>
 > Wir können Ihnen keine weitergehende Unterstützung anbieten.
 >
 
@@ -137,7 +137,7 @@ Wenn Sie nicht über weitere Datenbanken verfügen und kein zusätzliches Angebo
 >
 > **Die Löschung von Elementen in Ihrer Datenbank kann zum Ausfall Ihrer Website führen.**
 >
-> Kontaktieren Sie im Zweifel unsere [User Community](https://community.ovh.com/en/) oder einen der [OVHcloud Partner](https://partner.ovhcloud.com/de/).<br>
+> Kontaktieren Sie im Zweifel unsere [User Community](https://community.ovh.com/en/) oder einen der [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).<br>
 > Wir können Ihnen keine weitergehende Unterstützung anbieten.
 >
 

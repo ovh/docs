@@ -1,9 +1,10 @@
 ---
 title: FAQ dotyczący płatności i fakturowania
 excerpt: Znajdziesz najczęściej zadawane pytania dotyczące płatności i fakturowania
+updated: 2023-06-05
 ---
 
-**Ostatnia aktualizacja z dnia 08/11/2022**
+**Ostatnia aktualizacja z dnia 05-06-2023**
   
 ## Wprowadzenie
 
@@ -28,7 +29,7 @@ Ze względów prawnych nie ma natomiast możliwości zmiany już wystawionej fak
 Twoje usługi są odnawiane domyślnie w sposób automatyczny w dniu ich terminowego wygaśnięcia. Kwota faktury jest pobierana na początku miesiąca z domyślnego sposobu płatności. Dlatego pamiętaj o zarejestrowaniu sposobu płatności na Twoim koncie klienta, aby uniknąć zawieszenia usługi, a wszelkie rezygnacje z usług zgłaszaj PRZED upływem terminu ich wygaśnięcia.
 W przypadku niektórych gam (domeny, hosting WWW, VPS i serwery dedykowane) możesz wybrać tryb `ręcznego` odnowienia.
 Jeśli Twoje usługi są ustawione na odnawianie ręczne, przed datą wygaśnięcia usługi wysyłamy do Ciebie e-mail z powiadomieniem, zawierający link do płatności online.
-Jeśli nie odnowisz usługi przed tą datą, zostanie ona po prostu zawieszona, a następnie, po upływie kilku dni, usunięta.
+Jeśli nie odnowisz usługi przed tą datą, zostanie ona po prostu zawieszona, a następnie, po upływie kilku dni, usunięta (czas jest zmienny w zależności od danej usługi).
 
 #### Wskazówki i porady
 
@@ -85,6 +86,8 @@ Przed usunięciem sposobu płatności, upewnij się, że masz zarejestrowany inn
 ### Który z moich sposobów płatności jest domyślny?
 
 Po zalogowaniu się do Panelu klienta Twój domyślny sposób płatności wyświetli się bezpośrednio na dashboardzie.
+
+Aby zmienić domyślny sposób płatności, przejdź do naszej strony [payment methods management guide](/pages/account/billing/manage-payment-methods).
 
 #### Wskazówki i porady
 

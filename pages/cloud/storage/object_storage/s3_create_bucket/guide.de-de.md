@@ -1,5 +1,5 @@
 ---
-title: Object Storage - Erstellen eines Eimers (EN)
+title: Object Storage - Bucket erstellen (EN)
 routes:
     canonical: '/pages/cloud/storage/object_storage/s3_create_bucket'
 updated: 2022-09-27

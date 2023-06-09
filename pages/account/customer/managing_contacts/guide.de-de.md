@@ -14,7 +14,7 @@ updated: 2021-12-13
 
 ## Ziel
 
-Die meisten OVHcloud Dienste werden von mehreren Kontakten verwaltet. Jedem dieser Kontakte ist eine eigene Kundenkennung zugewiesen. 
+Die meisten OVHcloud Dienste werden mithilfe mehrerer Kontakte verwaltet. Jedem dieser Kontakte ist eine eigene Kundenkennung zugewiesen. 
 
 **Diese Anleitung erklärt, wie Sie die Kontakte Ihrer OVHcloud Dienste verwalten.**
 
@@ -121,13 +121,15 @@ Geben Sie in diesem Fall Ihrem Dienstleister die Rolle ["technischer Kontakt"](#
 
 Wenn Ihre Domain noch nicht mit Ihrem Webhosting verbunden ist und Sie die notwendigen Schritte hierzu Ihrem Webmaster anvertrauen möchten, vergeben Sie ebenfalls die Berechtigung ["technischer Kontakt"](#gestion_des_contacts) für die [DNS Zone](/pages/web/domains/dns_zone_edit) Ihres Domainnamens.
 
-Die Zugangsberechtigung eines ["technischen Kontakts"](#gestion_des_contacts) ermöglicht keine Änderung der Administrator- oder Rechnungskontakte einer Dienstleistung. Er gewährt Ihrem Webmaster keinen Zugriff auf Ihre Rechnungen oder Bestellungen, die Verlängerung Ihrer Dienstleistungen oder Zahlungsmittel. Ebenfalls nicht möglich ist es, die [Verwaltung Ihres Domainnamens auf einen anderen Hosting-Provider zu übertragen](/pages/web/domains/transfer_outgoing_domain) oder den [Inhaber zu ändern](/pages/web/domains/trade_domain). Weiterhin können Sie als [Administrator-Kontakt](#administrateur) Ihrer Dienste jederzeit den ["technischen Kontakt"](#technique)" Ihrer Dienstleistung ändern.
+Die Zugangsberechtigung eines ["technischen Kontakts"](#gestion_des_contacts) ermöglicht keine Änderung der Administrator- oder Rechnungskontakte einer Dienstleistung. Er gewährt Ihrem Webmaster keinen Zugriff auf Ihre Rechnungen oder Bestellungen, die Verlängerung Ihrer Dienstleistungen oder Zahlungsmittel. Ebenfalls nicht möglich ist es, die [Verwaltung Ihres Domainnamens auf einen anderen Hosting-Provider zu übertragen](/pages/web/domains/transfer_outgoing_domain) oder den [Inhaber zu ändern](/pages/web/domains/trade_domain). 
+
+Weiterhin können Sie als [Administrator-Kontakt](#administrateur) Ihrer Dienste jederzeit den ["technischen Kontakt"](#technique)" Ihrer Dienstleistung ändern.
 
 ### Sonderfall bei Domaininhabern
 
-Bei der Bestellung eines OVHcloud-Dienstes haben Sie einen Inhaber dafür festgelegt. Der Inhaber hat die Möglichkeit, die Inhaberrechte einer Domain an Dritte zu übertragen oder die Verwaltung der Domain einzufordern, wenn der Zugang zu dem OVHcloud Kunden-Account, der mit dem Dienst verbunden ist, nicht besteht (es kann sich um mehrere Accounts handeln).
+Bei der Bestellung eines OVHcloud-Dienstes haben Sie einen Inhaber dafür festgelegt. Der Inhaber hat die Berechtigung, die Inhaberrechte einer Domain an Dritte zu übertragen oder die Verwaltung der Domain einzufordern, wenn der Zugang zu dem OVHcloud Kunden-Account, der mit dem Dienst verbunden ist, nicht besteht (es kann sich um mehrere Accounts handeln).
 
-[Vorgang zur Änderung des Inhabers einer Dienstleistung.](https://www.ovh.com/cgi-bin/de/procedure/procedureChangeOwner.cgi)
+[Vorgang zur Änderung des Inhabers einer Dienstleistung](https://www.ovh.com/cgi-bin/de/procedure/procedureChangeOwner.cgi)
 
 [Die Kontakte Ihrer Domain ändern](https://www.ovh.com/fr/cgi-bin/de/procedure/procedureChangeContacts.cgi)
 

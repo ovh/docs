@@ -1,14 +1,12 @@
 ---
 title: O que fazer em caso de erro 500 Internal Server Error?
 excerpt: Diagnosticar os casos mais comuns de erros 500
-updated: 2022-07-21
+updated: 2023-05-16
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
-
-**Última atualização: 21/07/2022**
 
 ## Objetivo
 
@@ -83,6 +81,10 @@ Por razões de segurança, o seu website oculta eventuais detalhes sobre a orige
 
 Se pretender ter acesso a estes detalhes, poderá aceder ao seu site através de uma [ligação ssh](../partilhado_o_ssh_nos_alojamentos_partilhados/) a partir da fórmula de alojamento [pro2014](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou superior.
 
+### Verificar o estado da base de dados
+
+Para qualquer erro 500 que possa estar relacionado com a base de dados do seu website, consulte o nosso manual ["Resolver os erros mais frequentes associados às bases de dados"](/pages/web/hosting/diagnosis_database_errors).
+
 ### Restaurar o seu site para o estado anterior <a name="restore"></a>
 
 > [!warning]
@@ -100,6 +102,18 @@ Por fim, se o erro 500 aparecer após uma atualização da versão PHP do seu al
 
 ## Saiba mais <a name="gofurther"></a>
 
-[Partilhado: Tudo sobre o ficheiro .htaccess](/pt/hosting/partilhado_tudo_sobre_o_ficheiro_htaccess/)
+[O que fazer se o meu site está inacessível?](/pages/web/hosting/diagnostic-website-not-accessible)
+
+[O que fazer em caso de erro « Sua conexão não é particular »?](/pages/web/hosting/diagnostic-not-secured)
+
+[O que fazer em caso de página « Index of »?](/pages/web/hosting/diagnostic-index-of)
+
+[O que fazer em caso de página "403 forbidden"?](/pages/web/hosting/diagnostic_403_forbidden)
+
+[Resolver os erros mais frequentes associados às bases de dados](/pages/web/hosting/diagnosis_database_errors)
+
+[O meu site é lento. O que fazer?](/pages/web/hosting/diagnostic_slownesses)
+
+[Resolver o erro “Site não instalado”](/pages/web/hosting/multisites_website_not_installed)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

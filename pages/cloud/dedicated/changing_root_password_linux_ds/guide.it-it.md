@@ -40,15 +40,15 @@ Potrebbe essere necessario modificare la password di root (o quella dell'utente 
 
 Accedi al tuo server via SSH. Se necessario, passa all'utente root:
 
-```
-~$ sudo su -
-~#
+```bash
+sudo su -
+#
 ```
 
 Per modificare la password dell'utente attuale, digita `passwd`. Successivamente, digita due volte la tua nuova password come indicato di seguito:
 
-```
-~# passwd
+```bash
+passwd
 
 New password:
 Retype new password:
@@ -66,8 +66,8 @@ passwd: password updated successfully
 
 Dopo aver riavviato il server in [modalità Rescue](/pages/cloud/dedicated/rescue_mode), è necessario identificare la partizione di sistema. Per eseguire questa operazione, esegui il comando:
 
-```
-# fdisk -l
+```bash
+fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
@@ -100,16 +100,16 @@ Nel nostro esempio, la partizione di sistema è /dev/hda1.
 
 Una volta individuata la partizione di sistema puoi effettuarne il mount attraverso il seguente comando:
 
-```
-# mount /dev/hda1 /mnt/
+```bash
+mount /dev/hda1 /mnt/
 ```
 
 #### Step 3: modifica la partizione di root
 
 Di default, la partizione di sistema è bloccata per la modifica. Per effettuare l'accesso in scrittura, esegui questo comando:
 
-```
-# chroot /mnt
+```bash
+chroot /mnt
 ```
 
 #### Step 4: modifica la password di root
@@ -117,7 +117,7 @@ Di default, la partizione di sistema è bloccata per la modifica. Per effettuare
 L'ultimo step consiste nel modificare la password con il seguente comando:
 
 ```
-#passwd
+passwd
 
 Enter new UNIX password:
 Retype new UNIX password:

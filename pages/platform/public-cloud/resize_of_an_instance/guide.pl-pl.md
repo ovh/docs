@@ -2,14 +2,14 @@
 title: Zmiana rozmiaru instancji
 excerpt: Jak zmienić rozmiar instancji w interfejsie Horizon.
 legacy_guide_number: g1778
-updated: 2021-11-22
+updated: 2023-05-24
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 23-11-2021**
+**Ostatnia aktualizacja z dnia 24-05-2023**
 
 ## Wprowadzenie
 
@@ -22,6 +22,11 @@ Jeśli Twoja działalność się rozwija i zapotrzebowanie na zasoby wzrasta, mo
 > W przypadku modeli klasycznych możliwe jest tylko zmiana rozmiaru na wyższy.
 > Operacja ta spowoduje również wycięcie instancji w czasie jej wykonywania.
 > 
+
+> [!warning]
+>
+> Rozmiar instancji Metal można zmieniać tylko z i do innych instancji Metal.
+>
 
 > [!success]
 >

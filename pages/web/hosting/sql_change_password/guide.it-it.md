@@ -233,6 +233,6 @@ Nella nuova finestra, inserisci la nuova password del tuo database (definita all
 
 [Risolvi gli errori più frequenti associati ai database](/pages/web/hosting/diagnosis_database_errors)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

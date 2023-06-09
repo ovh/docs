@@ -75,7 +75,7 @@ Ripeti questa operazione per tutti gli account che vuoi creare, in base al numer
 
 Accedi alla [pagina di connessione](https://www.ovhcloud.com/it/mail/){.external}, inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
 
-Se è la prima volta che esegui l’accesso da questo indirizzo email, ti verrà chiesto di selezionare la lingua dell’interfaccia utente e definire il fuso orario della tua area geografica. Quando effettui il login, si apre di default la casella della posta in arrivo. Per maggiori informazioni sull'utilizzo della Webmail Outlook on the web (OWA), consulta la guida all'utilizzo di un indirizzo [email dalla Webmail Outlook on the web](/products/email-owa-user-guide){.external}.
+Se è la prima volta che esegui l’accesso da questo indirizzo email, ti verrà chiesto di selezionare la lingua dell’interfaccia utente e definire il fuso orario della tua area geografica. Quando effettui il login, si apre di default la casella della posta in arrivo. Per maggiori informazioni sull'utilizzo della Webmail Outlook on the web (OWA), consulta la guida all'utilizzo di un indirizzo [email dalla Webmail Outlook on the web](/pages/web/emails/email_owa){.external}.
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail}
 

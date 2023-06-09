@@ -1,9 +1,9 @@
 ---
 title: 'Annonces de fin de vente/vie Web Cloud Databases'
-updated: 2023-05-03
+updated: 2023-06-09
 ---
 
-**Dernière mise à jour le 03/05/2023**
+**Dernière mise à jour le 09/06/2023**
 
 ## Objectif
 
@@ -11,7 +11,6 @@ Les produits couverts par ces annonces de fin de vente et de fin de vie sont les
 
 |Version|Annonce de fin de vie|Fin de vente|Fin de support|
 |---|---|---|---|
-|MariaDB 10.2|2020-09-29|2021-11-21|2022-05-23|
 |MariaDB 10.3|2021-08-18|2022-11-23|2023-05-25|
 |MariaDB 10.4|2022-07-22|2023-12-18|2024-06-18|
 |MariaDB 10.5|À définir|À définir|À définir|
@@ -30,7 +29,7 @@ Les produits couverts par ces annonces de fin de vente et de fin de vie sont les
 
 ## Aller plus loin
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 

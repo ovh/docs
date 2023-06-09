@@ -54,7 +54,7 @@ Vous retrouvez alors, dans le cadre « Informations SIP », votre **login** et v
 
 Si vous ne connaissez pas votre **mot de passe SIP** ou que vous ne l'avez jamais modifié au profit d'un mot de passe fort, consultez notre guide pour [Modifier le mot de passe d'une ligne SIP](/pages/telecom/voip/modifier-mot-de-passe-ligne-sip).
 
-Vous pouvez utiliser un coffre-fort de mots de passe, comme [Keepass](https://keepass.info/){.external} afin de sauvegarder en toute sécurité votre mot de passe SIP.
+Vous pouvez utiliser un coffre-fort de mots de passe, comme [KeePass](https://keepass.info/){.external} afin de sauvegarder en toute sécurité votre mot de passe SIP.
 
 ### Étape 2 : télécharger le logiciel POPC
 

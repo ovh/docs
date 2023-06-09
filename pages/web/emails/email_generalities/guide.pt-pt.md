@@ -69,7 +69,7 @@ Depois de configurar os endereços de e-mail, já os pode utilizar. Para isso, t
 
 Aceda à página “[Ligação ao webmail](https://www.ovh.pt/mail/)” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
 
-Ao aceder pela primeira vez ao webmail, deverá definir o idioma da interface e o fuso horário no qual se encontra. A seguir, poderá consultar a sua caixa de entrada. Para obter mais informações, consulte o nosso manual [Utilizar o endereço de e-mail a partir do webmail Outlook Web App (OWA)](/products/email-owa-user-guide).
+Ao aceder pela primeira vez ao webmail, deverá definir o idioma da interface e o fuso horário no qual se encontra. A seguir, poderá consultar a sua caixa de entrada. Para obter mais informações, consulte o nosso manual [Utilizar o endereço de e-mail a partir do webmail Outlook Web App (OWA)](/pages/web/emails/email_owa).
 
 ![email](images/mxplan-starter-new-step4.png){.thumbnail}
 

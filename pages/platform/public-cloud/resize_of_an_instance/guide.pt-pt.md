@@ -2,14 +2,14 @@
 title: Redimensionar uma instância
 excerpt: Como redimensionar uma instância
 legacy_guide_number: g1778
-updated: 2021-11-22
+updated: 2023-05-24
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 23/11/2021**
+**Última atualização: 24/05/2023**
 
 ## Objetivo
 
@@ -22,6 +22,11 @@ No seguimento de um crescimento da sua atividade, ou simplesmente porque tem nov
 >
 > Apenas o redimensionamento para um modelo superior é possível para os modelos clássicos.
 > Além disso, esta operação provoca um corte da instância durante o tempo da operação.
+> 
+
+> [!warning]
+>
+> As instâncias de Metal só podem ser redimensionadas de e para outras instâncias de Metal.
 > 
 
 > [!success]

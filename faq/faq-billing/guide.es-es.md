@@ -1,9 +1,10 @@
 ---
 title: Preguntas frecuentes sobre la facturación y el pago
 excerpt: Encuentre las preguntas más frecuentes sobre la facturación y el pago
+updated: 2023-06-05
 ---
 
-**Última actualización: 08/11/2022**
+**Última actualización: 05/06/2023**
 
 ## Objetivo
 
@@ -19,7 +20,7 @@ Si desea más información sobre la gestión de los contactos, consulte nuestra 
 
 ### ¿Cómo modificar los datos de facturación?
 
-Los datos de facturación son los que haya indicado en su cuenta de de cliente. Si desea actualizarlos para sus próximas facturas, solo tiene que editarlos en la sección `Mi cuenta`{.action} del área de cliente de OVHcloud.
+Los datos de facturación son los que haya indicado en su cuenta de cliente. Si desea actualizarlos para sus próximas facturas, solo tiene que editarlos en la sección `Mi cuenta`{.action} del área de cliente de OVHcloud.
 
 Por motivos legales, no es posible modificar una factura ya emitida. No obstante, si su solicitud se debe a un error nuestro, contacte con nosotros mediante un tíquet de soporte.
 
@@ -29,7 +30,7 @@ Por defecto, los servicios se renuevan automáticamente en su fecha de expiraci�
 
 En algunos servicios (dominios, alojamientos web, VPS y servidores dedicados), es posible elegir la modalidad de renovación manual. Si sus servicios están configurados para renovarse manualmente, recibirá por correo electrónico una notificación con un enlace para abonar online la factura correspondiente al servicio, cuando se acerque su fecha de expiración.
 
-Si no renueva el servicio antes de la fecha de expiración, este se suspenderá y posteriormente se eliminará al cabo de unos días.
+Si no renueva el servicio antes de la fecha de expiración, este se suspenderá y posteriormente se eliminará al cabo de unos días (el plazo varía en función del servicio en cuestión).
 
 #### Ideas y consejos
 
@@ -86,6 +87,8 @@ Antes de eliminar una forma de pago, asegúrese de haber añadido otra.
 ### ¿Cuál es mi forma de pago por defecto?
 
 Puede consultar su forma de pago por defecto directamente en el panel de gestión de su área de cliente.
+
+Para cambiar su forma de pago por defecto, consulte nuestra [guía de gestión de las formas de pago](/pages/account/billing/manage-payment-methods).
 
 #### Ideas y consejos
 

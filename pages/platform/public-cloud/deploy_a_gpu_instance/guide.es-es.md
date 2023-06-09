@@ -48,7 +48,7 @@ A continuación, seleccione el sistema operativo Linux de su elección:
 
 La instancia se iniciará unos segundos más tarde. A continuación, puede iniciar sesión y buscar la tarjeta gráfica: 
 
-```ssh
+```bash
 lspci | grep -i nvidia
 00:05.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)
 ```

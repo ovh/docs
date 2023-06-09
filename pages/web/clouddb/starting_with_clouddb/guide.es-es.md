@@ -1,10 +1,8 @@
 ---
 title: 'Primeros pasos con el servicio Cloud Databases'
 excerpt: 'Cómo empezar a utilizar la solución Cloud Databases'
-updated: 2023-02-15
+updated: 2023-05-31
 ---
-
-**Última actualización: 15/02/2023**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -191,7 +189,8 @@ Para poder realizar esta operación, deberá disponer de los siguientes datos:
 
 > [!warning]
 >
-> Existe la posibilidad de que, en la configuración del sitio web, no aparezca el campo `Puerto`{.action}. En ese caso, deberá añadirlo a continuación del nombre del host, separándolo con dos puntos (**nombredehost:puerto**).
+> Es posible que el campo `port`{.action} no esté disponible en la configuración de su sitio. Tendrá que añadir este campo después del nombre de host de su servidor, separándolos con un *:*. <br><br>
+> Por ejemplo, para el nombre de host `zz1111111-002.eu.clouddb.ovh.net` con el puerto SQL `34567`, deberá introducir `zz1111111-002.eu.clouddb.ovh.net:34567` en el Parte "Host" / "Nombre de host".
 >
 
 ![Cloud Databases](images/web-cloud-databases-login-information.png){.thumbnail}

@@ -1,14 +1,12 @@
 ---
 title: 'Beheben des Fehlers “500 Internal Server Error”'
 excerpt: Erfahren Sie hier, welche Maßnahmen Sie bei einem Fehlercode 500 anwenden können
-updated: 2022-07-21
+updated: 2023-05-16
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
-
-**Letzte Aktualisierung am 21.07.2022**
 
 ## Ziel 
 
@@ -48,7 +46,7 @@ Um einen "Fehler 500" zu beheben, können Sie Ihre Website aus einem Backup [wie
 
 ### Die Logs Ihres Hostings überprüfen
 
-Lesen Sie zuerst [diese Anleitung](/pages/web/hosting/logs_and_statistics), um die Ursache des Fehlers 500 in den Logs Ihres Hostings zu ermitteln.
+Lesen Sie zuerst [diese Anleitung](/pages/web/hosting/logs_and_statistics), um die Ursache des Fehlercodes 500 in den Logs Ihres Hostings zu ermitteln.
 
 ### Ihre Website in den Entwicklermodus versetzen
 
@@ -80,9 +78,13 @@ Die Anleitung "[Verwendung von FileZilla](/pages/web/hosting/ftp_filezilla_user_
 
 ### Auf die Fehlerdetails in Ihren Skripten zugreifen
 
-Aus Sicherheitsgründen verschleiert Ihre Website alle technischen Details über einen Fehler 500.
+Aus Sicherheitsgründen verschleiert Ihre Website alle technischen Details über einen Fehler vom Typ "500".
 
 Wenn Sie oder Ihr Entwickler Zugang zu diesen Informationen haben möchten, können Sie sich [über SSH mit Ihrer Website verbinden](../webhosting_ssh_auf_ihren_webhostings/) (nur verfügbar mit einem [Webhosting der Reihe Pro, Performance oder Cloud Web](https://www.ovhcloud.com/de/web-hosting/)).
+
+### Den Zustand der Datenbank überprüfen
+
+Für alle "Fehler 500", die mit der Datenbank Ihrer Website in Zusammenhang stehen könnten, lesen Sie unsere Anleitung ["Die häufigsten Datenbankfehler beheben"](/pages/web/hosting/diagnosis_database_errors).
 
 ### Ihre Website auf einen vorherigen Zustand zurücksetzen <a name="restore"></a>
 
@@ -102,6 +104,18 @@ Wenn Ihre Website eine Datenbank nutzt, lesen Sie unsere Anleitung "[Backup in e
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Kontaktieren Sie OVHcloud Partner](https://partner.ovhcloud.com/de/directory/)
+[Was tun, wenn Ihre Website nicht erreichbar ist?](/pages/web/hosting/diagnostic-website-not-accessible)
+
+[Was tun bei dem Fehler "Dies ist keine sichere Verbindung"?](/pages/web/hosting/diagnostic-not-secured)
+
+[Was tun, wenn eine “Index of“-Seite angezeigt wird?](/pages/web/hosting/diagnostic-index-of)
+
+[Was tun bei dem Fehler "403 forbidden"?](/pages/web/hosting/diagnostic_403_forbidden)
+
+[Die häufigsten Datenbankfehler beheben](/pages/web/hosting/diagnosis_database_errors)
+
+[Meine Website lädt zu langsam. Was soll ich tun?](/pages/web/hosting/diagnostic_slownesses)
+
+[Fehler "Seite nicht installiert" beheben](/pages/web/hosting/multisites_website_not_installed)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>

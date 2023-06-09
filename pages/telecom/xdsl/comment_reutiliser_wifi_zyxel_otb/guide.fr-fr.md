@@ -57,7 +57,7 @@ Un couple user/password vous est alors demandé :
 ![reutiliserWiFiOTB](images/reutiliserWiFiOTB-step2.png){.thumbnail}
 
 > [!primary]
-> L'ensemble des e-mails envoyés par OVHcloud sont accessibles depuis votre espace client. Pour retrouver vos derniers identifiants de connexion reçus par e-mail, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) depuis un autre accès à Internet ou un smartphone. Une fois connecté, cliquez sur sur `E-mails de service`{.action} à droite de l'écran.
+> L'ensemble des e-mails envoyés par OVHcloud sont accessibles depuis votre espace client. Pour retrouver vos derniers identifiants de connexion reçus par e-mail, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) depuis un autre accès à Internet ou un smartphone. Une fois connecté, cliquez sur `E-mails de service`{.action} à droite de l'écran.
 >
 
 ### Étape 3 : accéder aux options de groupe d'interfaces
@@ -92,7 +92,7 @@ Accédez maintenant à la page `Home Networking`{.action} qui se trouve égaleme
 
 Dans la section `Interface Group` sélectionnez le groupe `OverTheBox`.
 <br>Dans le cadre de ce guide, nous utilisons le DHCP par défaut de l'OverTheBox (192.168.100/24). La section `LAN IP Setup` n'a donc pas besoin d'être modifiée. Elle peut nécessiter une modification si vous utilisee une autre plage pour le DHCP de votre OverTheBox, ceci pour eviter les conflits.
-<br>Une fois connecté sur le LAN de l'OverTheBox, l'interface web du modem Zyxel sera accessible via l'IP indiquée (192.168.2.1 dans le cadre ce ce guide).
+<br>Une fois connecté sur le LAN de l'OverTheBox, l'interface web du modem Zyxel sera accessible via l'IP indiquée (192.168.2.1 dans le cadre de ce guide).
 
 Enfin, dans la partie `DHCP Server State`, cliquez sur `Disable`{.action} afin de ne pas utiliser le DHCP.
 

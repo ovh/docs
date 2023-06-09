@@ -664,4 +664,6 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 
 [Serwery dedykowane - Tworzenie kilku sieci VLAN w prywatnej sieci vRack](/pages/cloud/dedicated/creating-multiple-vlans-in-a-vrack)
 
-Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

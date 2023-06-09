@@ -670,7 +670,7 @@ This call also validates the configurations, like owner eligibility for a domain
 
 | Parameter                           | Required | Default | Description                                                                            |
 | ----------------------------------- | -------- | ------- | -------------------------------------------------------------------------------------- |
-| `autoPayWithPreferredPaymentMethod` | yes      | ""      | Used to automatically pay the purchase order with de default payment method of the nic |
+| `autoPayWithPreferredPaymentMethod` | yes      | ""      | Used to automatically pay the purchase order with the default payment method of the nic |
 | `waiveRetractationPeriod`           | yes      | ""      | Required for a domain name, it is used to waive your right to retract                  |
 
 ## Pay Purchase Order

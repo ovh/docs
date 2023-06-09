@@ -142,7 +142,7 @@ Comparez les `Cibles` des entrées de type `NS` indiquées dans l'onglet `Zone D
 
 - Si les éléments ne sont pas identiques, mais que les `Serveurs DNS` indiqués dans l'onglet du même nom apparaissent dans [cette liste](/pages/web/hosting/clusters_and_shared_hosting_IP), effectuez une réinitialisation en suivant les instructions de [ce guide](/pages/web/domains/dns_server_general_information#reinitialiser-les-serveurs-dns).
 
-- Si les éléments ne sont pas identiques et que les `Serveurs DNS` indiqués dans l'onglet du même nom n'apparaissent pas dans [cette liste](/pages/web/hosting/clusters_and_shared_hosting_IP), contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) via la page des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+- Si les éléments ne sont pas identiques et que les `Serveurs DNS` indiqués dans l'onglet du même nom n'apparaissent pas dans [cette liste](/pages/web/hosting/clusters_and_shared_hosting_IP), contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) via la page des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
 ### Que faire si mon site affiche une erreur « La page ne se redirige pas correctement » ?
 
@@ -161,7 +161,7 @@ Restaurez votre site à son état précédent :
 
 - Si votre site comporte une base de données, consultez notre guide [Restaurer une sauvegarde de votre base de données](/pages/web/hosting/sql_importing_mysql_database#restaurer-une-sauvegarde-depuis-lespace-client).
 
-Si les restaurations ne vous permettent pas de rétablir l'accès à votre site, contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Si les restaurations ne vous permettent pas de rétablir l'accès à votre site, contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
 ### Que faire si mon site affiche une erreur « 503 error Backend fetch failed (Varnish cache) » ?
 
@@ -169,7 +169,7 @@ Si les restaurations ne vous permettent pas de rétablir l'accès à votre site,
 
 Si vous avez activé [l'option CDN](/pages/web/hosting/cdn_how_to_use_cdn) de votre hébergement, désactivez le mode *Maintenance* sur votre site WordPress ou PrestaShop.
 
-Si vous n'avez pas activé cette option ni utilisé le mode *Maintenance*, contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Si vous n'avez pas activé cette option ni utilisé le mode *Maintenance*, contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
 ### Que faire si mon site affiche une erreur « Your request has been blocked » ?
 

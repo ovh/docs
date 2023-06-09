@@ -1,5 +1,5 @@
 ---
-title: Encrypt your Cold Stored logs
+title: Encrypting your logs archives
 excerpt: Secure your Cold Stored logs by encrypting them with your PGP public key
 updated: 2023-03-10
 ---

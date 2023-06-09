@@ -1,9 +1,10 @@
 ---
 title: FAQ fatturazione e pagamento
 excerpt: Scopri le domande più frequenti su fatturazione e pagamento
+updated: 2023-06-05
 ---
 
-**Dernière mise à jour le 08/11/2022**
+**Ultimo aggiornamento: 05/06/2023**
 
 ## Obiettivo
   
@@ -26,7 +27,7 @@ Ti ricordiamo che in generale non è possibile modificare una fattura già emess
 ### Come rinnovare un servizio?
 
 Di default, i servizi sono rinnovati automaticamente alla data di scadenza e l'importo della fattura viene prelevato sul metodo di pagamento predefinito all'inizio del mese. Per evitare possibili sospensioni è quindi importante registrare una modalità di pagamento sul proprio account cliente o ricordarsi di disattivare i servizi prima della data di scadenza.
-Per alcune soluzioni (come domini, hosting Web, VPS e server dedicati) è possibile impostare la modalità di rinnovo `manuale`. In questo caso saranno inviate alcune email di notifica per ricordare l’avvicinarsi della scadenza, con un link per effettuare il pagamento online. In caso di mancato rinnovo, i servizi saranno sospesi ed eliminati dopo qualche giorno.
+Per alcune soluzioni (come domini, hosting Web, VPS e server dedicati) è possibile impostare la modalità di rinnovo `manuale`. In questo caso saranno inviate alcune email di notifica per ricordare l’avvicinarsi della scadenza, con un link per effettuare il pagamento online. In caso di mancato rinnovo, i servizi saranno sospesi ed eliminati dopo qualche giorno (il tempo è variabile in funzione del servizio interessato).
 
 #### Consigli e suggerimenti
 
@@ -83,6 +84,8 @@ Prima di rimuovere un metodo di pagamento, assicurati di averne salvato un altro
 ### Dove visualizzare il metodo di pagamento predefinito?
 
 Accedi allo Spazio Cliente: il metodo di pagamento predefinito è indicato direttamente nella dashboard, nella parte destra dell'interfaccia.
+
+Per modificare il tuo metodo di pagamento predefinito, consulta la nostra [guida alla gestione dei metodi di pagamento](/pages/account/billing/manage-payment-methods).
 
 #### Consigli e suggerimenti
 

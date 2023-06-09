@@ -93,7 +93,7 @@ Sur le tableau de bord (*Dashboard*) de Prism Central, cliquez sur le nom du clu
 
 Vous accédez alors au tableau de bord de votre cluster.
 
-À droite apparaît le nombre total de disques, le nombre de VMs ainsi que le le nombre d'hôtes.<br>
+À droite apparaît le nombre total de disques, le nombre de VMs ainsi que le nombre d'hôtes.<br>
 Un coeur de couleur verte indique que le cluster Nutanix fonctionne correctement.<br>
 En bas de cet encadré est affiché le niveau de tolérance de panne (1 signifie que nous sommes en RF2 avec la possibilité d'une perte d'un disque sur un nœud ou d'un nœud entier).
 

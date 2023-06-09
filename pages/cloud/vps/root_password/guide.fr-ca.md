@@ -38,15 +38,16 @@ Il peut être nécessaire de modifier le mot de passe root sur votre système d'
 
 Connectez-vous à votre VPS via SSH. Basculez vers l'utilisateur root, si nécessaire :
 
-```sh
-~$ sudo su -
-~#
+```bash
+sudo su -
+#
 ```
 
 Modifiez le mot de passe de l'utilisateur actuel :
 
-```sh
-~# passwd
+```bash
+passwd
+
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -126,8 +127,9 @@ Vous pouvez procéder à une vérification en tapant la commande `ls -l`, qui r�
 
 Dans la dernière étape, modifiez votre mot de passe à l'aide de la commande `passwd`.
 
-```sh
-~# passwd
+```bash
+passwd
+
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -137,8 +139,8 @@ Si votre VPS est de dernière génération (son nom est alors : *vps-XXXXXXX.vps
 
 Il est donc nécessaire d'entrer le nom d'utilisateur que vous utilisez pour vous connecter après `passwd` :
 
-```sh
-~# passwd <username>
+```bash
+~# passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -188,7 +190,7 @@ Enregistrez le fichier et quittez l'éditeur.
 ~$ systemctl restart sshd
 ```
 
-Cela devrait suffire pour appliquer les modifications. Vous pouvez également redémarrer le VPS (```~$ reboot```).
+Cela devrait suffire pour appliquer les modifications. Vous pouvez également redémarrer le VPS (`~$ sudo reboot`).
 
 ### Dysfonctionnement
 

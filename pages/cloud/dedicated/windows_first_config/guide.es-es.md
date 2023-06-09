@@ -87,4 +87,6 @@ Para acceder al contenido de este archivo en modo de rescate, siga las indicacio
 
 [Configurar el firewall de Windows](/pages/cloud/dedicated/activate-port-firewall-soft-win)
 
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-us/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

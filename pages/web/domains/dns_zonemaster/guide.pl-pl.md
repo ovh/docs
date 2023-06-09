@@ -1,13 +1,11 @@
 ---
 title: 'Tutorial - Korzystanie z opcji Zonemaster'
-updated: 2022-09-12
+updated: 2023-06-06
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
-
-**Ostatnia aktualizacja z dnia 12-09-2022**
 
 > [!warning]
 >
@@ -35,14 +33,14 @@ updated: 2022-09-12
 
 Narzędzie Zonemaster umożliwia sprawdzenie konfiguracji DNS w Twojej domenie lub przetestowanie strefy DNS na przyszłych serwerach DNS.
 
-Aby sprawdzić aktualną konfigurację domeny, wpisz nazwę domeny, następnie kliknij `Check`{.action}
+Aby sprawdzić aktualną konfigurację domeny, wpisz nazwę domeny, następnie kliknij `Run`{.action}
 
-![domeny](images/zonemaster01.png){.thumbnail}
+![Zrzut ekranu z formularza Zonemaster. Domena "mydomain.ovh" została zarejestrowana i jest gotowa do przetestowania.](images/zonemaster01.png){.thumbnail}
 
 Aby sprawdzić konfigurację DNS, która została przygotowana, ale nie została jeszcze zastosowana dla danej domeny, zaznacz kratkę `Options`{.action}, następnie wprowadź następujące informacje:
 
-- **Serwery DNS**: Wpisz informacje dotyczące serwera DNS przypisanego do domeny, następnie kliknij na `+`{.action}, aby zatwierdzić wprowadzone dane. Wpisanie adresu IP jest opcjonalne.
-- **Delegacja Podpisującego (rejestracja DS)**: W ramach ochrony DNSSEC, wprowadź elementy rekordu DS, następnie kliknij `+`{.action}, aby dodać wartość. Jeśli serwery DNS nie używają protokołu DNSSEC, możesz zostawić te pola wolne.
+- **Nameservers**: wprowadź informacje dotyczące serwera nazwy przypisanego do domeny. Kliknij na `+`{.action}, aby dodać serwer nazw. Wpisanie adresu IP jest opcjonalne.
+- **DS records**: w ramach ochrony DNSSEC wprowadź elementy rekordu DS. Kliknij na `+`{.action}, aby dodać dodatkowy wpis DS. Jeśli serwery DNS nie używają protokołu DNSSEC, możesz zostawić te pola wolne. W przypadku strefy podpisanej z DNSSEC funkcja ta pozwala na sprawdzenie, czy strefa działa poprawnie z zatwierdzonym resolwerem, z zapisami DS, które mają zostać opublikowane, przed ich opublikowaniem.
 
 Możesz również wymusić weryfikację przy użyciu wybranego protokołu IP poprzez `Disable IPv4` i `Disable IPv6`
 
@@ -50,27 +48,30 @@ Możesz również wymusić weryfikację przy użyciu wybranego protokołu IP pop
 >
 > Przed zmianą serwerów DNS, możesz przeprowadzić zaawansowane wyszukiwanie w polu `Options`{.action}, wprowadzając "mydns.test.ovh" i "mydns2.test.ovh" w rubrykach `Nameservers`.<br>
 > Zonemaster przeprowadzi test tak, jakby korzystał z serwerów "mydns.test.ovh" i "mydns2.test.ovh" na "mydomain.ovh".<br>
-> ![domeny](images/zonemaster02.png){.thumbnail}
+> ![Zrzut ekranu z zaawansowanych opcji formularza Zonemaster. Dwa serwery nazw "mydns.test.ovh" i "mydns2.test.ovh" zostały wpisane w sekcji "Serwery nazw" formularza.](images/zonemaster02.png){.thumbnail}
 
 > [!primary]
 >
-> Po wpisaniu nazwy domeny i kliknięciu na przycisk `Fetch data from parent zone`{.action}, pojawią się serwery DNS przypisane do domeny wraz z informacjami o rekordzie DS (DNSSEC), jeśli domena została skonfigurowana.
-> ![domeny](images/zonemaster03.png){.thumbnail}
+> Po wpisaniu nazwy domeny i kliknięciu na przycisk `Fetch NS from parent zone`{.action} i `Fetch DS from parent zone`{.action}, pojawią się serwery DNS przypisane do domeny wraz z informacjami o rekordzie DS (DNSSEC), jeśli domena została skonfigurowana.
+> ![Zrzut ekranu przedstawiający zaawansowane opcje formularza Zonemaster. Przycisk "Fetch NS from parent zone" jest podświetlony, a serwery nazw domeny „mydomain.ovh” są wstępnie wypełnione w sekcji Serwery nazw formularza.](images/zonemaster03.png){.thumbnail}
 
 ### Rezultat
 
 Po zatwierdzeniu formularza wyniki są klasyfikowane według kodu koloru:
 
-- **Zielony**: Część ta jest funkcjonalna i spełnia standardowe kryteria w swojej klasie.
-- **Pomarańczowy**: Ta część jest funkcjonalna, ale zasługuje na szczególną uwagę. Narzędzie wykryło, że ten parametr ma cechy, które nie wchodzą w zakres standardu jego kategorii bez zablokowania jego działania.
-- **Czerwony**: W tej części znajdują się błędy lub brakujące elementy, które mogą powodować usterkę. 
-- **Niebieski**: jest to zwykła informacja, bez wpływu na działanie domeny.
+- **Error**: ta część zawiera błędy lub brakujące elementy, które mogą powodować nieprawidłowe działanie.
+- **Warning**: ta część jest funkcjonalna, ale zasługuje na szczególną uwagę. Narzędzie wykryło, że parametr nie spełnia normy dla swojej kategorii, nie blokując przy tym jego działania.
+- **Notice**: ta część jest funkcjonalna i spełnia standardowe kryteria w swojej kategorii.
+- **Info**: jest to prosta informacja, nie mająca szczególnego wpływu na funkcjonowanie nazwy domeny. 
 
-![domeny](images/zonemaster04.png){.thumbnail}
+
+Dla każdego testu możesz uzyskać więcej informacji, na przykład, aby zrozumieć błąd w przypadku awarii lub tylko w celach informacyjnych.
+
+![Zrzut ekranu strony wyników Zonemaster dla domeny "mydomain.ovh". Sekcja "Address" jest rozwinięta.](images/zonemaster04.png){.thumbnail}
 
 ### Przydatne informacje
 
-Jeśli masz dodatkowe pytania dotyczące Zonemaster, sprawdź sekcję [FAQ](https://zonemaster.net/en/faq) na <https://zonemaster.fr/>.
+Jeśli masz dodatkowe pytania dotyczące Zonemaster, sprawdź sekcję [FAQ](https://zonemaster.net/en/faq) na <https://zonemaster.net/>.
 
 ## Sprawdź również <a name="go-further"></a>
 

@@ -74,7 +74,7 @@ vi /etc/network/interfaces
 ```bash
 auto lo
 iface lo inet loopback
-  # Activation de l'ip_forward
+  # Activation de l'ip_forward et du proxy_arp
   up echo "1" > /proc/sys/net/ipv4/ip_forward
   # Activation du proxy_arp pour le bond public uniquement
   up echo "1" > /proc/sys/net/ipv4/conf/bond0/proxy_arp
@@ -273,26 +273,25 @@ iface ens33f1 inet manual
 # interface privée 1
 auto ens35f0
 iface ens35f0 inet manual
-	bond-master bond1
 
 # interface privée 2
 auto ens35f1
 iface ens35f1 inet manual
-	bond-master bond1
 
 auto bond0
-iface bond0 inet static
+iface bond0 inet dhcp
 	bond-slaves ens33f0 ens33f1
-    bond-miimon 100
+        bond-miimon 100
 	bond-mode 802.3ad
-
+        post-up echo 1 > /proc/sys/net/ipv4/conf/bond0/proxy_arp
+        post-up echo 1 > /proc/sys/net/ipv4/ip_forward
 
 auto bond1
 # Agrégat LACP sur les interfaces privées
 # Pas d'IP dessus
 iface bond1 inet manual
 	bond-slaves ens35f0 ens35f1
-    bond-miimon 100
+        bond-miimon 100
 	bond-mode 802.3ad
 
 
@@ -305,8 +304,6 @@ iface vmbr1 inet manual
 	bridge-ports bond1
 	bridge-stp off
 	bridge-fd 0
-
-post-up echo 1 > /proc/sys/net/ipv4/ip_forward
 
 ```
 

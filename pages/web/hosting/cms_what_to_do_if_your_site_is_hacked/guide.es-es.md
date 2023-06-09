@@ -28,7 +28,7 @@ La piratería informática puede manifestarse de varias maneras (lista no exhaus
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
+> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
 >
 
 ## Requisitos
@@ -97,7 +97,7 @@ Si utiliza un CMS como WordPress, Joomla, PrestaShop o Drupal, consulte la docum
 
 > [!warning]
 >
-Si tiene dificultades para realizar las acciones que se describen a continuación, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) en ciberseguridad.
+Si tiene dificultades para realizar las acciones que se describen a continuación, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) en ciberseguridad.
 >
 
 Utilice nuestra guía sobre [las estadísticas y logs de su alojamiento web](/pages/web/hosting/logs_and_statistics) para buscar los elementos maliciosos introducidos en su sitio web. Puede consultar la información en los logs "web". 
@@ -215,13 +215,13 @@ Consulte nuestra guía sobre cómo proteger su sitio web (/pages/web/hosting/sec
 
 [Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web/hosting/ftp_connection)
 
-[Modificar la configuración de un alojamiento web](/pages/web/hosting/ovhconfig_modify_system_runtime/)
+[Modificar la configuración de un alojamiento web](/pages/web/hosting/ovhconfig_modify_system_runtime)
 
 [Activar el firewall de aplicación](/pages/web/hosting/multisites_activating_application_firewall)
 
 [Optimizar el rendimiento de su sitio web](/pages/web/hosting/optimise_your_website_performance)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones (pestañas de soporte)(https://www.ovhcloud.com/es-es/support-levels/).
 

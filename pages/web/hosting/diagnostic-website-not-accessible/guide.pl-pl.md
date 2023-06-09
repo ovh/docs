@@ -141,7 +141,7 @@ Twoja strona będzie dostępna w ciągu maksymalnie 24 godzin.
 
 [Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia](/pages/web/hosting/diagnostic_errors_module1clic)
 
-Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
+Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/pl/support-levels/).
 

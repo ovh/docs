@@ -37,7 +37,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 ![Volume Snapshot](images/volume_snapshot01.png){.thumbnail}
 
-À direita do volume em questão, clique em `...`{.action} e depois em `Criar uma snapshot`{.action} (não é necessário desassociar primeiro o volume da sua instância.) No entanto, se pretender desassociar o seu volume, consulte [esta secção](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instancedesassociar-um-volume/#em-linux) do guia correspondente para Linux e [esta secção](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instancedesassociar-um-volume/#em-windows) para Windows.
+À direita do volume em questão, clique em `...`{.action} e depois em `Criar uma snapshot`{.action} (não é necessário desassociar primeiro o volume da sua instância.) No entanto, se pretender desassociar o seu volume, consulte [esta secção](https://docs.ovh.com/pt/public-cloud/criar_e_configurar_um_disco_suplementar_numa_instancia/desassociar-um-volume/#em-linux) do guia correspondente para Linux e [esta secção](https://docs.ovh.com/pt/public-cloud/criar_e_configurar_um_disco_suplementar_numa_instancia/desassociar-um-volume/#em-windows) para Windows.
 
 ![Volume Snapshot](images/volume_snapshot02.png){.thumbnail}
 

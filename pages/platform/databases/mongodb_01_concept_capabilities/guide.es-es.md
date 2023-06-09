@@ -3,10 +3,10 @@ title: MongoDB - Capabilities and Limitations
 excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
 routes:
     canonical: '/pages/platform/databases/mongodb_01_concept_capabilities'
-updated: 2023-04-14
+updated: 2023-05-23
 ---
 
-**Last updated April 14th, 2023**
+**Last updated May 23rd, 2023**
 
 ## Objective
 
@@ -111,7 +111,7 @@ We try hard to avoid "disk full" situations that could be harmful to cluster hea
 2. receive a second email alert once cluster is reaching 90% storage capacity;
 3. have his database instance moved in "read-only" mode, meaning no more writes can be done.
 
-See the [Handling «Disk Full» situations documentation](/products/public-cloud-databases-handling-disk-full) for more information.
+See the [Handling «Disk Full» situations documentation](/pages/platform/databases/databases_10_full_disk_handling) for more information.
 
 ### Features
 
@@ -142,6 +142,8 @@ Once your service is up and running, you will be able to specify IP addresses (o
 *Business* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 7 days.
 
 *Enterprise* plan clusters are automatically backed up daily during their maintenance window, with [PITR](https://en.wikipedia.org/wiki/Point-in-time_recovery){.external} support. Backup retention is 30 days with PITR capability for the last 24 hours.
+
+See the [Automated Backups guide](/pages/platform/databases/databases_05_automated_backups) for more information.
 
 #### Logs and Metrics
 
@@ -187,6 +189,8 @@ Furthermore, user creation from the MongoDB Shell is **not** supported: You need
 
 ## We want your feedback!
 
-We would love to help answer questions and appreciate any feedback you may have. Join our community of users on <https://community.ovh.com/en/>.
+We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. Join our community of users on <https://community.ovh.com/en/>.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

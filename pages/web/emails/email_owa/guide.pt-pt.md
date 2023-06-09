@@ -119,7 +119,7 @@ Preencha a informação solicitada consoante a regra que pretende que seja execu
 
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
-Para instruções mais detalhadas sobre como criar regras inbox, consulte o nosso guia: [Criar regras inbox no OWA](/products/email-owa-creating-inbox-rules).
+Para instruções mais detalhadas sobre como criar regras inbox, consulte o nosso guia: [Criar regras inbox no OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan).
 
 #### Bloquear um remetente
 

@@ -3,10 +3,10 @@ title: Managing nodes and node pools with OVHcloud API
 excerpt: 'Find out how to manage OVHcloud Managed Kubernetes node and node pools with OVHcloud API'
 routes:
     canonical: /pages/platform/kubernetes-k8s/managing-nodes-with-API
-updated: 2023-05-10
+updated: 2023-06-06
 ---
 
-**Last updated 10th May 2023.**
+**Last updated 6th June 2023.**
 
 ## Objective
 
@@ -43,7 +43,9 @@ In this guide we explain how to do some basic operations with nodes and node poo
 
 Editing the `desiredNodes` property to a different value will trigger the node pool upsizing or downsizing.
 
-When downsizing, the last created nodes will be drained then deleted in parallel. You can also specify which nodes should be removed by filling the optional `nodesToRemove` property, which can be a list of node names, node IDs or openstack instance IDs.
+When downsizing, the last created nodes will be drained then deleted in parallel. You can specify which nodes should be removed by filling the optional `nodesToRemove` property, which can be a list of node names, node IDs or openstack instance IDs.
+
+We will try to gracefully drain the nodes by respecting [Pod Disruption Budgets](https://kubernetes.io/docs/tasks/run-application/configure-pdb/) for a maximum duration of 10 minutes. After this time period, the nodes will be forcefully drained to ensure the smooth progress of the operation. This graceful node draining process only applies when there is at least one other node in the cluster.
 
 When upsizing, all new nodes will be created in parallel.
 
@@ -390,4 +392,4 @@ Otherwise to skip it and push to deploy your first application on your Kubernete
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-- Join our[community of users](https://community.ovh.com/en/).
+- Join our [community of users](https://community.ovh.com/en/).

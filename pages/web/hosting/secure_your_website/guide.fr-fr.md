@@ -11,7 +11,7 @@ updated: 2021-12-10
 Ce guide vous permet d’acquérir des connaissances fondamentales visant à assurer la disponibilité de vos services, à protéger l'intégrité de vos données et à sécuriser l'accès à vos solutions. Il concerne uniquement les sites Web hébergés sur les [solutions mutualisées OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
 
 Ce guide est organisé par étapes dans un ordre croissant de difficulté technique. La sécurité de votre site se mesurera à l'élément le concernant qui est le moins protégé. Nous vous préconisons donc de réaliser l'ensemble des actions décrites ici.<br/>
-Toutefois, si vous rencontrez des difficultés à réaliser certaines d'entre elles, n'hésitez pas à contacter la [communauté OVHcloud](https://community.ovh.com/) ou nos [partenaires](https://partner.ovhcloud.com/fr/).
+Toutefois, si vous rencontrez des difficultés à réaliser certaines d'entre elles, n'hésitez pas à contacter la [communauté OVHcloud](https://community.ovh.com/) ou nos [partenaires](https://partner.ovhcloud.com/fr/directory/).
 
 **Découvrez comment sécuriser votre site Web.**
 
@@ -19,7 +19,7 @@ Toutefois, si vous rencontrez des difficultés à réaliser certaines d'entre el
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
 >
 
 ## Prérequis
@@ -100,7 +100,7 @@ Ajoutez à votre site un plugin de sécurité recommandé par l'éditeur du CMS 
 
 ### Étape 10. Vérifiez que votre hébergement ne contient pas de fichiers malveillants
 
-Cette étape nécessite de vous connecter à votre [espace FTP](../connexion-espace-stockage-ftp-hebergement-web/). Elle implique des compétences techniques pour reconnaître d'éventuels fichiers malveillants sur votre hébergement. Si vous rencontrez des difficultés à effectuer cette vérification, n'hésitez pas à contacter nos [partenaires](https://partner.ovhcloud.com/fr/).
+Cette étape nécessite de vous connecter à votre [espace FTP](../connexion-espace-stockage-ftp-hebergement-web/). Elle implique des compétences techniques pour reconnaître d'éventuels fichiers malveillants sur votre hébergement. Si vous rencontrez des difficultés à effectuer cette vérification, n'hésitez pas à contacter nos [partenaires](https://partner.ovhcloud.com/fr/directory/).
 
 En cas de doutes sur ce sujet, pensez également à effectuer les vérifications décrites à [l'étape 1 de ce guide](#local) et à [changer le mot de passe](/pages/web/hosting/ftp_change_password) de votre espace FTP.
 
@@ -120,7 +120,7 @@ Vous pouvez également créer une **version de test** de votre site (ex : test.m
 
 [Réagir en cas de désactivation pour sécurité d’un hébergement](/pages/web/hosting/diagnostic_403_forbidden)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous invitons à consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 

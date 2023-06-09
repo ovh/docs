@@ -41,15 +41,16 @@ Potrebbe essere necessario modificare la password di root sul tuo sistema operat
 
 Accedi al tuo VPS via SSH. Se necessario, passa all'utente root:
 
-```sh
-~$ sudo su -
-~#
+```bash
+sudo su -
+#
 ```
 
 Modifica la password dell'utente attuale:
 
-```sh
-~# passwd
+```bash
+passwd
+
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -129,8 +130,9 @@ Se il tuo VPS è recente, la colonna `MOUNTPOINT` dovrebbe essere vuota. In ques
 
 Nell'ultimo step, modifica la password utilizzando il comando `passwd`.
 
-```sh
-~# passwd
+```bash
+passwd
+
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -140,8 +142,8 @@ Se il tuo VPS è di ultima generazione: *vps-XXXXX.vps.ovh.net*), hai inizialmen
 
 Inserisci il nome utente che utilizzi per accedere al tuo `passwd`:
 
-```sh
-~# passwd <username>
+```bash
+~# passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -191,7 +193,7 @@ Salva il file e lascia l'editor.
 ~$ systemctl restart sshd
 ```
 
-Ciò dovrebbe bastare per applicare le modifiche. È possibile riavviare il VPS (```~$ reboot```).
+Ciò dovrebbe bastare per applicare le modifiche. È possibile riavviare il VPS (`~$ sudo reboot`).
 
 ### Malfunzionamento
 

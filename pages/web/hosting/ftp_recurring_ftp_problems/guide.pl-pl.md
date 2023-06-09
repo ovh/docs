@@ -93,7 +93,7 @@ Jeśli nie korzystałeś z funkcji "[Moduł za 1 kliknięciem](/pages/web/hostin
 
 [Korzystanie z programu FileZilla na Twoim hostingu](/pages/web/hosting/ftp_filezilla_user_guide)
 
-Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
+Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, sprawdź naszą [ofertę pomocy](https://www.ovhcloud.com/pl/support-levels/).
 

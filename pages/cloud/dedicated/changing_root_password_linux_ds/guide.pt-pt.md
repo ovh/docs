@@ -40,15 +40,15 @@ Pode ser necessário alterar a palavra-passe root (ou a do utilizador admin/sudo
 
 Ligue-se ao seu servidor através de SSH. Migre para o utilizador root, se necessário:
 
-```
-~$ sudo su -
-~#
+```bash
+sudo su -
+#
 ```
 
 Para alterar a palavra-passe do utilizador atual, introduza a `palavra-passe`. A seguir, deverá indicar a sua nova palavra-passe duas vezes, tal como indicado abaixo:
 
-```
-~# passwd
+```bash
+passwd
 
 New password:
 Retype new password:
@@ -66,8 +66,8 @@ passwd: password updated successfully
 
 Depois de reiniciar o servidor em [modo rescue](/pages/cloud/dedicated/rescue_mode), deve identificar a partição do sistema. Para isso, execute o seguinte comando:
 
-```
-# fdisk -l
+```bash
+fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
@@ -100,24 +100,24 @@ No exemplo acima, a partição do sistema é /dev/hda1.
 
 Uma vez a partição identificada, pode montá-la através do seguinte comando:
 
-```
-# mount /dev/hda1 /mnt/
+```bash
+mount /dev/hda1 /mnt/
 ```
 
 #### Etapa 3: Alterar a partição root
 
 Por predefinição, a partição do sistema está bloqueada para a edição. Por isso, deve abri-la para um acesso de escrita através do seguinte comando:
 
-```
-# chroot /mnt
+```bash
+chroot /mnt
 ```
 
 #### Etapa 4: alterar a palavra-passe root
 
 A última etapa consiste em alterar a sua palavra-passe, com o seguinte comando:
 
-```
-# passwd
+```bash
+passwd
 
 Enter new UNIX password:
 Retype new UNIX password:

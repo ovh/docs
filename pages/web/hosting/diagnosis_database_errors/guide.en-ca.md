@@ -167,13 +167,13 @@ If necessary, contact our [user community](https://community.ovh.com/en/) or [OV
 
 The following query is also not allowed:
 
-```mysql
+```sql
 CREATE DATABASE IF NOT EXISTS `Database-Name` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
 ```
 
 Use this line instead:
 
-```mysql
+```sql
 USE `Database-Name`;
 ```
 

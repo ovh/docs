@@ -99,7 +99,7 @@ A continuación, haga clic en el botón `...`{.action} a la derecha de la línea
 > - PrestaShop : El editor de este programa no ofrece documentación en la fecha para cambiar la contraseña de acceso al panel de administración de PrestaShop. Por favor, contacte directamente con el editor sobre este asunto. Para más información, haga clic [aquí](https://www.prestashop.com){.external} para acceder a su página oficial.
 >
 También es posible cambiar la contraseña de acceso al panel de administración del CMS directamente desde la base de datos.<br>
-No obstante, si necesita ayuda, le recomendamos encarecidamente que utilice la documentación que le ofrezca el editor del CMS o que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/). Nosotros no podremos asistirle. Más información en la sección (#go-further) de esta guía.
+No obstante, si necesita ayuda, le recomendamos encarecidamente que utilice la documentación que le ofrezca el editor del CMS o que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nosotros no podremos asistirle. Más información en la sección (#go-further) de esta guía.
 
 ### Eliminar el módulo
 
@@ -164,7 +164,7 @@ No instale en su sitio plugins ni plantillas que no hayan sido recomendados por 
 
 [Resolver los errores más frecuentes asociados a los módulos en 1 clic](/pages/web/hosting/diagnostic_errors_module1clic).
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
 

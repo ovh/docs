@@ -146,7 +146,7 @@ Connectez-vous en SSH avec la commande **ssh** sous Linux, ou avec l'outil **Put
 
 Par exemple sous Linux :
 
-```ssh nutanix@prismcentralipaddress```
+```bash nutanix@prismcentralipaddress```
 
 Collectez les logs :
 
@@ -174,7 +174,7 @@ Connectez-vous en SSH avec la commande **ssh** sous Linux, ou avec l'outil **Put
 
 Par exemple sous Linux :
 
-```ssh nutanix@prismelementipaddress```
+```bash nutanix@prismelementipaddress```
 
 Collectez tous les logs des nœuds :
 

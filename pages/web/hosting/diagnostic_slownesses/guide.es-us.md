@@ -51,7 +51,7 @@ En algunos casos, la lentitud de la visualización también puede provenir de su
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/). Nosotros no podremos asistirle. **siempre que la infraestructura en la que está alojado su plan de hosting no sea válida**. Más información en la sección ["Más información"](#go-further) de esta guía.
+> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nosotros no podremos asistirle. **siempre que la infraestructura en la que está alojado su plan de hosting no sea válida**. Más información en la sección ["Más información"](#go-further) de esta guía.
 >
 
 > [!success]
@@ -138,7 +138,7 @@ phpinfo();
 >
 > En algunos casos, los archivos "**.htaccess**" presentes en los directorios/carpetas situados antes o al mismo nivel que el lugar en el que haya colocado su fichero "**phpinfo.php**" pueden afectar a la visualización en un navegador de Internet del "**phpinfo.php**". 
 >
-> Las operaciones en un archivo "**.htaccess**" pueden afectar a la visualización de su sitio web. Si tiene dificultades para realizar lo siguiente, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/).
+> Las operaciones en un archivo "**.htaccess**" pueden afectar a la visualización de su sitio web. Si tiene dificultades para realizar lo siguiente, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/).
 >
 > Si no aparece y **solo para usuarios avanzados**, renombre los archivos "**.htaccess**" en "***.htaccess_OLD**" para que el servidor no los ejecute durante el tiempo de prueba. Una vez realizado el diagnóstico, renombre correctamente.
 >
@@ -191,7 +191,7 @@ En este punto, ya sabrá que la ralentización es causada por las páginas, scri
 
 > [!warning]
 >
-> Si tiene dificultades para realizar las siguientes acciones, puede contactar con uno de nuestros [proveedores especializados](https://partner.ovhcloud.com/es/). OVHcloud no ayudará en el desarrollo o la optimización del contenido de su sitio web.
+> Si tiene dificultades para realizar las siguientes acciones, puede contactar con uno de nuestros [proveedores especializados](https://partner.ovhcloud.com/es/directory/). OVHcloud no ayudará en el desarrollo o la optimización del contenido de su sitio web.
 >
 
 A continuación se indican las acciones que debe realizar para identificar las fuentes de la lentitud y optimizar su sitio web.
@@ -255,7 +255,7 @@ Para reducir el flujo de peticiones a cada una de las cargas de sus páginas, ta
 
 > [!warning]
 >
-> Las acciones que realice en la base de datos pueden tener consecuencias irreversibles si no se realizan de forma ordenada y correcta. Contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/) si no está seguro de las acciones a realizar. 
+> Las acciones que realice en la base de datos pueden tener consecuencias irreversibles si no se realizan de forma ordenada y correcta. Contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) si no está seguro de las acciones a realizar. 
 >
 
 Compruebe si se realizan un número considerable de consultas a la base de datos.<br>
@@ -297,7 +297,7 @@ Puede considerar un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/) 
 
 ## Más información <a name="go-further"></a>
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
 

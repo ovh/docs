@@ -43,8 +43,8 @@ Here is a short glossary of the terms used in this tutorial:
 |Glossary|Description|
 |---|---|
 |YOUR_IPV6|The IPv6 address assigned to your service.|
-|IPv6_PREFIX|The prefix of your IPv6 block (e.g. 2607:5300:60:62ac::/128 -> netmask = 128)|
-|IPv6_GATEWAY|The gateway of your IPv6 block.|
+|IPV6_PREFIX|The prefix of your IPv6 block (e.g. 2607:5300:60:62ac::/128 -> netmask = 128)|
+|IPV6_GATEWAY|The gateway of your IPv6 block.|
 
 
 ### Retrieve your network information.
@@ -217,5 +217,7 @@ If your instance responds, it is likely that there is an error in one of the ste
 In any case, please feel free to reach out to our support team with the elements tested above, and we can perform an analysis on our end.
 
 ## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

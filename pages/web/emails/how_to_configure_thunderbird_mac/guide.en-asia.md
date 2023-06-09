@@ -53,7 +53,7 @@ For **POP** configuration, the values are:
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.com/asia/mail/>. You can log in using your email credentials. If you have any questions about how to use this interface, please refer to our guides on [Using the Outlook Web App](/products/email-owa-user-guide) and [Using an email address with RoundCube](/pages/web/emails/email_roundcube#ou-et-comment-se-connecter-au-webmail-roundcube) respectively.
+OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.com/asia/mail/>. You can log in using your email credentials. If you have any questions about how to use this interface, please refer to our guides on [Using the Outlook Web App](/pages/web/emails/email_owa) and [Using an email address with RoundCube](/pages/web/emails/email_roundcube#ou-et-comment-se-connecter-au-webmail-roundcube) respectively.
 
 ### Retrieving a backup of your email address
 

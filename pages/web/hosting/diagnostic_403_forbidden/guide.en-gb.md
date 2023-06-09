@@ -71,7 +71,7 @@ If your Web Hosting plan was closed less than two weeks ago and contains multipl
 > [!warning]
 >
 > Restoring your storage space alone will not be enough to correct potential security vulnerabilities already present on your site.
-> To identify these security vulnerabilities, you can analyse your hosting system’s ["web logs"](/pages/web/hosting/logs_and_statistics#logs), or contact a [specialised service provider](https://partner.ovhcloud.com/en-gb/) to perform a security audit on your solutions.
+> To identify these security vulnerabilities, you can analyse your hosting system’s ["web logs"](/pages/web/hosting/logs_and_statistics#logs), or contact a [specialised service provider](https://partner.ovhcloud.com/en-gb/directory/) to perform a security audit on your solutions.
 >
 
 #### Case no. 2: Your Web Hosting plan has been disabled for more than two weeks

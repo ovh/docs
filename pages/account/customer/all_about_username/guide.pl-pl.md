@@ -52,7 +52,7 @@ Wszystkie nasze zalecenia dotyczące haseł znajdują się w przewodniku [Zmiana
 Jeśli jeszcze tego nie zrobiłeś, zapisz hasło w [menedżerze haseł](/pages/account/customer/manage-ovh-password#uzycie-managera-hasel).
 
 > [!primary]
-> Oprogramowanie **Keepass** i **Bitwarden** to darmowe i wolne od praw menedżery haseł.
+> Oprogramowanie **KeePass** i **Bitwarden** to darmowe i wolne od praw menedżery haseł.
 >
 
 #### Dodaj adres zapasowy <a name="backup-email"></a>

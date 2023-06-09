@@ -1,10 +1,10 @@
 ---
 title: Cross Service Integration
 excerpt: Find out how to use Cross Service Integration for Public Cloud Databases engines
-updated: 2022-10-19
+updated: 2023-05-25
 ---
 
-**Last updated October 19th, 2022**
+**Last updated May 25th, 2023**
 
 ## Objective
 
@@ -97,7 +97,7 @@ Your first integration is ready:
 
 > [!primary]
 >
-> Note that this integration creation has created two users, respectively: `metrics_reader` and `metrics_writer` in your engine instance.
+> Note that this integration creation may have created two users, respectively: `metrics_reader` and `metrics_writer` in your engine instance.
 >
 > ![Users & Roles](images/databases_07_cross_service_integration-20220708170641519.png){.thumbnail}
 >
@@ -401,5 +401,7 @@ Then open your new dashboard:
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

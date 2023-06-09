@@ -187,7 +187,7 @@ L’Object Storage prevede la fatturazione di due elementi:
 Lo storage di archivi prevede la fatturazione di tre elementi:
 
 - lo storage di archivi, cioè il volume in GB effettivamente utilizzato
-- il traffico in entrata, cioè la quantità di dati in entrata nel servizio incluso il il contenuto delle richieste (body HTTP)
+- il traffico in entrata, cioè la quantità di dati in entrata nel servizio incluso il contenuto delle richieste (body HTTP)
 - il traffico in uscita, cioè la quantità di dati in uscita dal servizio incluso il contenuto delle richieste (body HTTP)
 
 

@@ -137,7 +137,7 @@ Chcąc uniknąć podobnych sytuacji w przyszłości, zabezpiecz swoje konto z po
 
 ### Otrzymałem e-mail, który wygląda na phishing i kradzież tożsamości OVHcloud. Jak zgłosić tę wiadomość do weryfikacji?
 
-Wyjaśnienie, jak rozpoznać i zgłosić atak phising przeprowadzony przy użyciu wiadomości e-mail lub SMS, znajdziesz w [przewodniku](/pages/account/customer/phishing_care.)
+Wyjaśnienie, jak rozpoznać i zgłosić atak phising przeprowadzony przy użyciu wiadomości e-mail lub SMS, znajdziesz w [przewodniku](https://docs.ovh.com/pl/customer/oszustwa-phishing/.)
 
 ### W jaki sposób zgłosić nadużycie lub treści niezgodne z prawem wykryte na usługach hostowanych przez OVHcloud?
 

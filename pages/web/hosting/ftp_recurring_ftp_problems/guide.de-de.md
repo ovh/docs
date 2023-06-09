@@ -92,7 +92,7 @@ Wenn Sie die Funktion “[1-Klick-Modul](/pages/web/hosting/cms_install_1_click_
 
 [Verwendung des FileZilla Programms mit Ihrem Hosting](/pages/web/hosting/ftp_filezilla_user_guide)
 
-Für spezialisierte Dienstleistungen (Referenzierung, Entwicklung etc.) kontaktieren Sie die [OVHcloud Partner](https://partner.ovhcloud.com/de/).
+Für spezialisierte Dienstleistungen (Referenzierung, Entwicklung etc.) kontaktieren Sie die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, lesen Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 

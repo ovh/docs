@@ -183,7 +183,7 @@ Uma vez ligado, só precisará de restaurar os ficheiros. Para isso, navegue pel
 
 [Recuperar a cópia de segurança da base de dados de um alojamento web](/pages/web/hosting/sql_database_export)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 

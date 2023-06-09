@@ -119,7 +119,7 @@ Compila con le informazioni richieste a seconda dell’azione che desideri venga
 
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
-Per istruzioni più dettagliate sulla creazione di regole di posta in arrivo, fai riferimento alla nostra guida: [Creare regole di posta in arrivo in OWA](/products/email-owa-creating-inbox-rules).
+Per istruzioni più dettagliate sulla creazione di regole di posta in arrivo, fai riferimento alla nostra guida: [Creare regole di posta in arrivo in OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan).
 
 #### Blocca un mittente
 

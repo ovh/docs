@@ -94,4 +94,4 @@ Vous pouvez maintenant créer votre ferme de serveurs dans le vRack. Pour ce fai
 
 Vous pouvez maintenant utiliser les call API habituels ou même l'espace client pour continuer la configuration du Load Balancer.
 
-Pour rappel, un guide de configuration du Load Balancer est disponible: [/pages/cloud/load_balancer/create_http_https](/pages/cloud/load_balancer/create_http_https).
+Pour rappel, un guide de configuration du Load Balancer est disponible: [https://docs.ovh.com/ca/fr/load-balancer/configure-iplb/](/pages/cloud/load_balancer/create_http_https).

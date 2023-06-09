@@ -31,24 +31,24 @@ Sur une machine Mac ou Linux, ouvrir l'application Terminal (ligne de commande).
 
 Vérifier la présence d’un dossier «.ssh» dans votre répertoire $HOME. Si le dossier n'existe pas, le créer :
 
-```sh
-# mkdir ~/.ssh
+```bash
+mkdir ~/.ssh
 ```
 
 Utiliser la commande suivante pour créer une clé RSA de 4096 bits :
 
-```sh
-# ssh-keygen -b 4096
+```bash
+ssh-keygen -b 4096
 ```
 L'utilisation de l'option « -t » avec la commande ci-dessus vous permet de spécifier une méthode de cryptage différente, par exemple :
 
-```sh
-# ssh-keygen -t ed25519 -a 256
+```bash
+ssh-keygen -t ed25519 -a 256
 ```
 
 La commande vous invitera à enregistrer la clé nouvellement créée :
 
-```sh
+```console
 Générer une paire de clés RSA publique/privée.
 Entez le fichier dans lequel enregistrer la clé (/home/user/.ssh/id_rsa) :
 ```
@@ -57,7 +57,7 @@ Confirmez, et vous pourrez maintenant entrer une passphrase, une sorte de mot de
 
 Vos clés SSH doivent être stockées dans le répertoire « .ssh ».
 
-```ssh
+```console
 Votre identification a été enregistrée sous /home/user/.ssh/id_rsa.
 Votre identification a été enregistrée sous /home/user/.ssh/id_rsa.pub.
 Votre l’empreinte de la clé est la suivante :
@@ -83,8 +83,8 @@ L’image randomart de la clé est la suivante :
 
 Utilisez la commande « cat » du fichier de votre clé et copiez la sortie afin de lire et exporter votre clé publique :
 
-```ssh
-# cat .ssh/id_rsa.pub
+```bash
+cat .ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8teh2NJ42qYZV98gTNhumO1b6rMYIkAfRVazl
 k6dSS3xf2MXJ4YHsDacdjtJ+evXCFBy/IWgdkFtcvsGAMZ2N1RdvhDyQYcy6NDaJCBYw1K6Gv5fJ
 SHCiFXvMF0MRRUSMneYlidxUJg9eDvdygny4xOdC6c1JrPrSgOc2nQuKeMpOoOWLINIswg1IIFVk
@@ -116,25 +116,25 @@ Continuez de balader le curseur jusqu'à ce que la barre soit pleine. Votre clé
 
 Accédez à votre répertoire $HOME et créez le dossier « .ssh » (s'il n'existe pas) :
 
-```ssh
+```bash
 $ mkdir ~/.ssh
 ```
 
 Pour stocker la clé de l'utilisateur actuel, ouvrez un fichier nommé « authorized_keys » avec votre éditeur de texte préféré :
 
-```ssh
+```bash
 $ nano ~/.ssh/authorized_keys
 ```
 
 Copiez et collez votre **clé publique** dans ce nouveau fichier. Enregistrez le fichier et quittez l’éditeur. Redémarrez votre serveur ou redémarrez uniquement le serveur OpenSSH (la commande appropriée peut varier en fonction de votre système d'exploitation) :
 
-```ssh
+```bash
 $ systemctl restart sshd
 ```
 
 Pour vérifier que votre clé a été correctement configurée, essayez d'accéder à votre serveur via SSH en utilisant la commande suivante. Remplacez « IP_ADDRESSorHOSTNAME »  par l'adresse IP ou le nom d'hôte du serveur auquel vous essayez d'accéder :
 
-```ssh
+```bash
 $ ssh user@IP_ADDRESSorHOSTNAME
 ```
 

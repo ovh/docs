@@ -1,5 +1,7 @@
 ---
-title: The field naming convention
+title: Field naming convention
+routes:
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-field-naming-conventions?id=kb_article_view&sysparm_article=KB0050047'
 updated: 2023-01-16
 ---
 
@@ -116,14 +118,14 @@ will become:
 ```
 
 
-So this is everything you need to know to send valid messages format and not shoot yourself in the foot. If you have any question you can always reach us [on the community hub](https://community.ovh.com/c/platform/data-platforms){.external}.
+So this is everything you need to know to send valid messages format and not shoot yourself in the foot. If you have any question you can always reach us [on the community hub](https://community.ovh.com/en/c/Platform/data-platforms){.external}.
 
 Happy Logging
 
 
 ## Go further
 
-- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
-- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform){.ref}
-- Join our community of users on [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)))

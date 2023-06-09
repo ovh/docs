@@ -1,6 +1,8 @@
 ---
-title: Follow your logs in real time with ldp-tail
+title: CLI - ldp-tail, a tool to follow your logs in real-time
 excerpt: This super-powered tail will follow and format your logs with flying colors.
+routes:
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-ldp-tail?id=kb_article_view&sysparm_article=KB0050062'
 updated: 2023-01-16
 ---
 
@@ -16,7 +18,7 @@ The Logs Data Platform allows you to connect different applications or servers t
 
 - **ldp-tail** can be run on Linux, Mac or Windows, locally or remotely
 - You will need an internet connection
-- A LDP account with [an active stream](/pages/platform/logs-data-platform/getting_started_quick_start){.ref} and WebSocket option enabled
+- A LDP account with [an active stream](/pages/platform/logs-data-platform/getting_started_quick_start) and WebSocket option enabled
 
 ## Instructions
 
@@ -143,7 +145,7 @@ Value="/dbaas/logs"
 Not=false
 ```
 
-If you have any difficulty understanding this pattern or if you want help creating your own, don't hesitate to reach us on the [Community Hub](https://community.ovh.com/c/platform/data-platforms){.external}.
+If you have any difficulty understanding this pattern or if you want help creating your own, don't hesitate to reach us on the [Community Hub](https://community.ovh.com/en/c/Platform/data-platforms){.external}.
 
 ### Replay tail
 
@@ -162,7 +164,7 @@ To make the magic happens, replace begin and end values with timestamps that hav
 
 ## Go further
 
-- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
-- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

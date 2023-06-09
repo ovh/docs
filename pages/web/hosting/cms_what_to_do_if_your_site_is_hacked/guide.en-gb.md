@@ -212,7 +212,7 @@ Please also refer to our guide on [how to secure your website](/pages/web/hostin
 
 [Logging in to your Web Hosting plan’s storage space](/pages/web/hosting/ftp_connection)
 
-[Modify your Web Hosting plan’s configuration](/pages/web/hosting/ovhconfig_modify_system_runtime/)
+[Modify your Web Hosting plan’s configuration](/pages/web/hosting/ovhconfig_modify_system_runtime)
 
 [Enable Application Firewall](/pages/web/hosting/multisites_activating_application_firewall)
 

@@ -14,11 +14,6 @@ Swift supporte les requêtes CORS vers les conteneurs et les objets.
 
 Les métadonnées CORS ne sont présentes que dans le conteneur. Les valeurs indiquées s'appliquent au conteneur lui-même et à tous les objets qu'il contient.
 
-> [!primary]
->
-> CORS n'est pas compatible avec l'API S3.
->
-
 **Ce guide a pour objectif de vous familiariser avec le concept de CORS.**
 
 ## Prérequis

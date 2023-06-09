@@ -120,7 +120,7 @@ Geben Sie die erforderlichen Informationen in Abhängigkeit von der Aktion ein, 
 
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
-Ausführlichere Anweisungen zum Erstellen von Posteingangsregeln finden Sie in unserer Anleitung: [Posteingangsregeln in OWA erstellen](/products/email-owa-creating-inbox-rules).
+Ausführlichere Anweisungen zum Erstellen von Posteingangsregeln finden Sie in unserer Anleitung: [Posteingangsregeln in OWA erstellen](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan).
 
 ##### Einen Absender blockieren
 

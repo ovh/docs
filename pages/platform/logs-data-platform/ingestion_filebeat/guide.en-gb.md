@@ -18,7 +18,7 @@ This guide will describe how to setup Filebeat OSS on your system for forwarding
 Note that in order to complete this tutorial, you should have at least:
 
 - [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
-- [To create at least one Stream and get its token.](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
+- [To create at least one Stream and get its token.](/pages/platform/logs-data-platform/getting_started_quick_start)
 
 ## Instructions
 
@@ -187,7 +187,7 @@ processors:
 ```
 
 
-You can also use our [OpenSearch endpoint](/pages/platform/logs-data-platform/ingestion_opensearch_api_mutualized_input){.ref} to send your logs. This endpoint support ingest and then ensures a higher performance and a higher compatibility with the modules selected. For legal reasons, we do not support X-Pack modules on this endpoint but any OSS module is supported. To enable this endpoint, replace the Logstash Output configuration with the following snippet:
+You can also use our [OpenSearch endpoint](/pages/platform/logs-data-platform/ingestion_opensearch_api_mutualized_input) to send your logs. This endpoint support ingest and then ensures a higher performance and a higher compatibility with the modules selected. For legal reasons, we do not support X-Pack modules on this endpoint but any OSS module is supported. To enable this endpoint, replace the Logstash Output configuration with the following snippet:
 
 
 ```yaml
@@ -211,7 +211,7 @@ output.elasticsearch:
 
 ```
 
-This configuration deactivates the template configuration (unneeded for our endpoint). You need to provide your credentials **<username>** and **<password>** of your account. Like all Logs Data Platform APIs you can also use [tokens](/pages/platform/logs-data-platform/security_tokens){.ref}. Don't change **ldp-logs** since it is our special destination index.
+This configuration deactivates the template configuration (unneeded for our endpoint). You need to provide your credentials **<username>** and **<password>** of your account. Like all Logs Data Platform APIs you can also use [tokens](/pages/platform/logs-data-platform/security_tokens). Don't change **ldp-logs** since it is our special destination index.
 
 When you use our OpenSearch endpoint with filebeat, it will use the [ingest module](https://www.elastic.co/guide/en/logstash/7.12/use-ingest-pipelines.html){.external} to parse and structure the logs.
 
@@ -313,11 +313,11 @@ Filebeat is a handy tool to send the content of your current log files to Logs D
 
 - Configuration's details: [https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-configuration-details.html](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-configuration-details.html){.external}
 - Getting started: [https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-getting-started.html](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-getting-started.html){.external}
-- Learn how to configure Filebeat and Logstash to add your own extra filters: [All you have to know about the Logstash Collector on Logs Data Platform!](/pages/platform/logs-data-platform/ingestion_logstash_dedicated_input){.ref}
+- Learn how to configure Filebeat and Logstash to add your own extra filters: [Dedicated input - Logstash](/pages/platform/logs-data-platform/ingestion_logstash_dedicated_input)
 
 ## Going further
 
-- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
-- Documentation: [Guides](/pages/platform/logs-data-platform){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

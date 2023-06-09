@@ -1,5 +1,7 @@
 ---
-title: Sending Windows Logs with NXLog to Logs Data Platform in 15 minutes or less
+title: Pushing logs with a forwarder - NXLog (Windows)
+routes:
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-windows-nxlog?id=kb_article_view&sysparm_article=KB0050067'
 updated: 2023-01-16
 ---
 
@@ -13,8 +15,8 @@ At OVHcloud, we love Microsoft products too. So it is important for us to provid
 
 For this tutorial you will need to have completed the following steps :
 
-- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
-- [To create at least one Stream and get its token.](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
+- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
+- [To create at least one Stream and get its token.](/pages/platform/logs-data-platform/getting_started_quick_start)
 
 ## NXLog
 
@@ -115,7 +117,7 @@ If you want to go further, don't hesitate to fly to the [NXlog documentation](ht
 
 ## Getting Help
 
-- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
-- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

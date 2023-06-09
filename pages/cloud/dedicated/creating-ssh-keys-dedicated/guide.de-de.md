@@ -34,32 +34,32 @@ Beachten Sie, dass SSH-Schlüssel bei Servern, auf denen Windows installiert ist
 Stellen Sie sicher, dass sich in Ihrem $HOME-Verzeichnis der Ordner “.ssh” befindet. Wenn der Ordner nicht vorhanden ist, erstellen Sie ihn:
 
 ```bash
-# mkdir ~/.ssh
+mkdir ~/.ssh
 ```
 
 Verwenden Sie den folgenden Befehl, um einen 4096-Bit-RSA-Schlüssel zu erstellen:
 
 ```bash
-# ssh-keygen -b 4096
+ssh-keygen -b 4096
 ```
 Wenn Sie die Option “-t” mit diesem Befehl verwenden, können Sie eine andere Verschlüsselungsmethode angeben, z.B.:
 
 ```bash
-# ssh-keygen -t ed25519 -a 256
+ssh-keygen -t ed25519 -a 256
 ```
 
-Sie werden nachfolgend aufgefordert, den neu erstellten Schlüssel in der Standarddatei zu speichern:
+Sie werden aufgefordert, den neu erstellten Schlüssel in der Standarddatei zu speichern:
 
-```bash
+```console
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
-Sie können die Standarddatei akzeptieren, indem Sie "↩" drücken. Jetzt haben Sie die Möglichkeit, eine Passphrase einzugeben, um Ihren SSH-Schlüssel abzusichern. Dies wird als zusätzliche Sicherheitsmaßnahme empfohlen.
+Sie können die Standarddatei akzeptieren, indem Sie "Enter" drücken. Jetzt haben Sie die Möglichkeit, eine Passphrase einzugeben, um Ihren SSH-Schlüssel abzusichern. Dies wird als zusätzliche Sicherheitsmaßnahme empfohlen.
 
 Ihre SSH-Schlüssel sollten im Verzeichnis “.ssh” gespeichert sein. Der Datei mit dem öffentlichen Schlüssel wird ".pub" zum Dateinamen hinzugefügt.
 
-```bash
+```console
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:
@@ -86,7 +86,7 @@ The key's randomart image is:
 Verwenden Sie zum Lesen und Exportieren Ihres öffentlichen Schlüssels den Befehl “cat” auf Ihre Schlüsseldatei und kopieren Sie die Ausgabe:
 
 ```bash
-# cat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8teh2NJ42qYZV98gTNhumO1b6rMYIkAfRVazl
 k6dSS3xf2MXJ4YHsDacdjtJ+evXCFBy/IWgdkFtcvsGAMZ2N1RdvhDyQYcy6NDaJCBYw1K6Gv5fJ
 SHCiFXvMF0MRRUSMneYlidxUJg9eDvdygny4xOdC6c1JrPrSgOc2nQuKeMpOoOWLINIswg1IIFVk

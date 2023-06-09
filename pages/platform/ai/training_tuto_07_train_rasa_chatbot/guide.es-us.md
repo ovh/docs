@@ -206,6 +206,8 @@ If you want to deploy your model created with the chatbot, you can follow this t
 
 [How to deploy a chatbot](/pages/platform/ai/deploy_tuto_11_rasa_chatbot_flask)
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:

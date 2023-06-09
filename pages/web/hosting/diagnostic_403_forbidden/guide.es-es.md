@@ -24,7 +24,7 @@ También puede ocurrir que, debido a una detección de anomalías, nuestros robo
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#gofurther) de esta guía.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#gofurther) de esta guía.
 >
 
 ## Requisitos
@@ -39,18 +39,18 @@ También puede ocurrir que, debido a una detección de anomalías, nuestros robo
 
 Si la página **"403 forbidden"** aparece debido a una modificación errónea de su sitio web, [restablezca la totalidad o parte del espacio de almacenamiento de su alojamiento](/pages/web/hosting/ftp_save_and_backup) a una fecha anterior.
 
-Si las copias de seguridad disponibles no le permiten restablecer el acceso a su sitio web, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/).
+Si las copias de seguridad disponibles no le permiten restablecer el acceso a su sitio web, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/).
 
 Si la página **"403 forbidden"** no ha aparecido debido a una modificación de su sitio web, consulte su mensajería. Si por motivos de seguridad nuestros servicios le han enviado un mensaje de correo electrónico indicándole que quiere cerrar el alojamiento, vaya al [paso 2](#step2).
 
-Si la página **"403 forbidden"** ha aparecido sin ninguna acción por su parte y no ha recibido ningún correo de nuestros servicios al respecto, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/).
+Si la página **"403 forbidden"** ha aparecido sin ninguna acción por su parte y no ha recibido ningún correo de nuestros servicios al respecto, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/).
 
 ### Etapa 2: proteger sus soluciones <a name="step2"></a>
 
 En primer lugar, compruebe la seguridad de sus equipos informáticos:
 
 - Realice las actualizaciones de seguridad.
-- Compruebe también que haya instalado un antivirus, actualícela y lance una exploración completa. Si no tiene ninguno, consulte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) antes de instalar el módulo.
+- Compruebe también que haya instalado un antivirus, actualícela y lance una exploración completa. Si no tiene ninguno, consulte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) antes de instalar el módulo.
 - Cambie todas sus contraseñas locales, incluidas las de sus direcciones de correo, respetando las [buenas prácticas](/pages/account/customer/manage-ovh-password#generar-una-contrasena-adecuada).
 - Cambie las contraseñas de todos sus servicios de OVHcloud, especialmente de su [base de datos](../cambiar-contrasena-base-de-datos/) y del acceso a su [espacio de almacenamiento FTP](/pages/web/hosting/ftp_change_password).
 
@@ -60,7 +60,7 @@ En primer lugar, compruebe la seguridad de sus equipos informáticos:
 >
 > En caso contrario, si cambia la contraseña de la base de datos, el sitio web o los servicios que lo utilizan se cortarán.
 >
-> Si tiene alguna duda sobre las operaciones que debe realizar, contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+> Si tiene alguna duda sobre las operaciones que debe realizar, contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 >
 
 ### Etapa 3: intervenir en su alojamiento
@@ -76,12 +76,12 @@ Si su alojamiento ha sido cerrado hace menos de dos semanas y contiene varios si
 > [!warning]
 >
 > Solo la restauración de su espacio de almacenamiento no bastará para corregir posibles fallos de seguridad presentes previamente en su sitio web.
-> Para identificar estos fallos de seguridad, puede analizar los ["logs web"](/pages/web/hosting/logs_and_statistics#logs) de su alojamiento o recurrir a un [proveedor especializado](https://partner.ovhcloud.com/es-es/) para realizar una auditoría de seguridad de sus soluciones.
+> Para identificar estos fallos de seguridad, puede analizar los ["logs web"](/pages/web/hosting/logs_and_statistics#logs) de su alojamiento o recurrir a un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) para realizar una auditoría de seguridad de sus soluciones.
 >
 
 #### Caso n° 2: su alojamiento ha sido desactivado más de dos semanas antes.
 
-Si su alojamiento ha sido cerrado más de dos semanas antes, póngase en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) para realizar una auditoría de seguridad de sus soluciones. 
+Si su alojamiento ha sido cerrado más de dos semanas antes, póngase en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) para realizar una auditoría de seguridad de sus soluciones. 
 
 ### Etapa 4: reactivar su alojamiento web <a name="reactivate-web-hosting"></a>
 
@@ -133,7 +133,7 @@ Una respuesta **"200 Permissions changed on /"** confirma que la operación se h
 
 [Cambiar la versión de PHP de un alojamiento web](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, consulte nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 

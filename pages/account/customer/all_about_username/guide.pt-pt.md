@@ -52,7 +52,7 @@ Encontre todas as nossas recomendações sobre as palavras-passe no nosso manual
 Se ainda não o fez, guarde a sua palavra-passe num [gestor de palavras-passe](/pages/account/customer/manage-ovh-password#utilizar-um-gestor-de-palavras-passe).
 
 > [!primary]
-> Os programas **Keepass** e **Bitwarden** são gestores de palavras-passe gratuitas e sem direitos.
+> Os programas **KeePass** e **Bitwarden** são gestores de palavras-passe gratuitas e sem direitos.
 >
 
 #### Adicionar um endereço de e-mail de SOS <a name="backup-email"></a>

@@ -11,7 +11,7 @@ In this case, we want to get sourceIP, scheme trouth OVH API LoadBalancing, with
 
 
 ## Requirements
-We assume you have already an OVH Load Balancer HTTP configured, if not follow [/pages/cloud/load_balancer/use-lb](/pages/cloud/load_balancer/use-lb)
+We assume you have already an OVH Load Balancer HTTP configured, if not follow [https://docs.ovh.com/gb/en/load-balancer/using-iplb/](/pages/cloud/load_balancer/use-lb)
 
 You have :
 

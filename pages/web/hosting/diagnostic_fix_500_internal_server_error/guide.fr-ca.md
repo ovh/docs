@@ -1,10 +1,8 @@
 ---
 title: Que faire en cas d’erreur 500 Internal Server Error ?
 excerpt: Diagnostiquez les cas les plus courants d'erreurs 500
-updated: 2022-07-21
+updated: 2023-05-16
 ---
-
-**Dernière mise à jour le 21/07/2022**
 
 ## Objectif
 
@@ -19,7 +17,7 @@ Elles proviennent parfois aussi d'une mise à jour effectuée **automatiquement*
 > [!warning]
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
 
 ## Prérequis
 
@@ -77,6 +75,11 @@ Pour des raisons de sécurité, votre site masque les détails éventuels sur l'
 
 Si vous ou votre développeur souhaitez avoir accès à ces détails, il vous est possible, à partir de la formule d’hébergement [pro2014](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/), de vous connecter à votre site via une [connexion ssh](/pages/web/hosting/ssh_on_webhosting).
 
+### Vérifier l'état de la base de données
+
+Pour toute erreur 500 pouvant être en lien avec la base de données de votre site web, appuyez-vous sur notre documentation [« Résoudre les erreurs les plus fréquentes liées aux bases de données »](/pages/web/hosting/diagnosis_database_errors).
+
+
 ### Restaurer votre site à son état antérieur <a name="restore"></a>
 
 > [!warning]
@@ -92,8 +95,18 @@ Enfin, si l'erreur 500 est apparue suite à une mise à jour de la version PHP d
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Comment diagnostiquer une page blanche ?](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
+[Que faire si mon site est inaccessible ?](/pages/web/hosting/diagnostic-website-not-accessible)
 
-[Les codes de reponse d’un serveur HTTP](/ca/fr/hosting/mutualise-les-codes-de-reponse-dun-serveur-http/)
+[Que faire en cas d'erreur « Votre connexion n'est pas privée » ?](/pages/web/hosting/diagnostic-not-secured)
+
+[Que faire en cas de page « Index of » ?](/pages/web/hosting/diagnostic-index-of)
+
+[Que faire en cas de page « 403 forbidden » ?](/pages/web/hosting/diagnostic_403_forbidden)
+
+[Résoudre les erreurs les plus fréquentes liées aux bases de données](/pages/web/hosting/diagnosis_database_errors)
+
+[Mon site est lent. Que faire ?](/pages/web/hosting/diagnostic_slownesses)
+
+[Résoudre l'erreur « Site non installé »](/pages/web/hosting/multisites_website_not_installed)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

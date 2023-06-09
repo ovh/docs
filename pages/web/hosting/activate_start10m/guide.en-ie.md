@@ -75,7 +75,7 @@ Please refer to our guide on [Creating an MX Plan email account](/pages/web/emai
 
 [Creating an email address with an MX Plan solution](/pages/web/emails/email_creation){.external}
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 

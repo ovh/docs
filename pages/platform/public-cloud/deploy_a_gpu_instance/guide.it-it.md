@@ -49,7 +49,7 @@ Quindi, seleziona il sistema operativo Linux da utilizzare:
 
 L’istanza si avvierà nel giro di pochi secondi,  dopodiché potrai effettuare la connessione e verificare la presenza della scheda grafica:  
 
-```ssh
+```bash
 lspci | grep -i nvidia
 00:05.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)
 ```

@@ -45,11 +45,11 @@ Antes de empezar, la recomendamos que eche un vistazo a la siguiente tabla, en l
 |Valor|Descripción|
 |---|---|
 |YOUR_IPV6|Dirección IPv6 asignada al servicio.|
-|IPv6_PREFIX|Prefijo del bloque IPv6 (p. ej.: 2607:5300:60:62ac::/128 -> netmask = 128).|
-|IPv6_GATEWAY|Puerta de enlace del bloque IPv6.|
+|IPV6_PREFIX|Prefijo del bloque IPv6 (p. ej.: 2607:5300:60:62ac::/128 -> netmask = 128).|
+|IPV6_GATEWAY|Puerta de enlace del bloque IPv6.|
 
 
-### Obtener la la información relativa a la red
+### Obtener la información relativa a la red
 
 Conéctese al área de cliente de OVHcloud en la sección `Public Cloud`{.action} y seleccione el proyecto correspondiente. En la columna izquierda, seleccione el menú `Instances`{.action} y haga clic en el botón `...`{.action} junto a la instancia correspondiente y haga clic en `Detalles de la instancia`{.action}.
 
@@ -217,5 +217,7 @@ Si la instancia responde, es posible que no haya seguido correctamente alguno de
 Si el problema persiste, puede ponerse en contacto con nuestro equipo de soporte.
 
 ## Más información
+
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

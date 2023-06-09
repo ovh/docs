@@ -42,7 +42,7 @@ You can configure MX Plan accounts on email clients, if they are compatible. By 
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.com/sg/mail/>. You can log in using your email credentials. If you have any question about how to use it, you can refer to our guide on [Using an account in the OWA](/products/email-owa-user-guide) interface or use your email address via the RoundCube webmail.
+OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.com/sg/mail/>. You can log in using your email credentials. If you have any question about how to use it, you can refer to our guide on [Using an account in the OWA](/pages/web/emails/email_owa) interface or use your email address via the RoundCube webmail.
 
 ### Retrieve a backup of your email address
 

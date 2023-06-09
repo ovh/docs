@@ -1,13 +1,11 @@
 ---
 title: 'Tutorial - Uso de Zonemaster'
-updated: 2022-09-12
+updated: 2023-06-06
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
-
-**Última actualización: 12/09/2022**
 
 > [!warning]
 >
@@ -35,14 +33,14 @@ updated: 2022-09-12
 
 La herramienta Zonemaster permite comprobar una configuración DNS en un dominio o probar una zona DNS preconfigurada en futuros servidores DNS.
 
-Para comprobar la configuración actual de un dominio, introduzca el dominio y haga clic en `Check`{.action}.
+Para comprobar la configuración actual de un dominio, introduzca el dominio y haga clic en `Ejecutar`{.action}.
 
-![dominios](images/zonemaster01.png){.thumbnail}
+![Captura de pantalla del formulario de Zonemaster. El dominio "mydomain.ovh" se ha introducido y está listo para ser probado.](images/zonemaster01.png){.thumbnail}
 
 Para comprobar que la configuración DNS se haya preparado, pero todavía no se haya aplicado al dominio, marque la casilla `Opciones`{.action} e introduzca la siguiente información:
 
-- **Servidores DNS**: Introduzca la información del servidor DNS asociado a un dominio y haga clic en el `+`{.action} para validar la entrada. Es opcional introducir una dirección IP.
-- **Delegación del firmante (registro DS)**: En el marco de la protección DNSSEC, introduzca los elementos del registro DS y haga clic en `+`{.action} para añadir el valor. Si los servidores DNS no utilizan el protocolo DNSSEC, puede dejar estos campos libres.
+- **Servidores de nombres** : introduzca la información del servidor de nombres asociado a un dominio. Haga clic en el `+`{.action} para poder añadir un servidor de nombres adicional. Es opcional introducir una dirección IP.
+- **Registros DS** : introduzca los elementos del registro DS en la protección DNSSEC. Haga clic en el `+`{.action} para poder añadir un registro DS adicional. Si los servidores DNS no utilizan el protocolo DNSSEC, puede dejar estos campos libres. En el caso de una zona firmada con DNSSEC, esta función permite comprobar que la zona funciona correctamente con un servidor de resolución válido, con los registros DS que se van a publicar, antes de su publicación.
 
 También puede forzar la verificación de un protocolo IP específico mediante las casillas `Deshabilitar IPv6` y `Deshabilitar IPv4`.
 
@@ -50,27 +48,31 @@ También puede forzar la verificación de un protocolo IP específico mediante l
 > Ha configurado una zona DNS para este dominio en los servidores DNS "mydns.test.ovh" y "mydns2.test.ovh". <br>
 > Antes de cambiar los servidores DNS, puede realizar una búsqueda avanzada en la casilla `Opciones`{.action} introduciendo "mydns.test.ovh" y "mydns2.test.ovh" en las casillas de `servidores de nombres`.<br>
 > Zonemaster realizará una prueba como si utilizara los servidores "mydns.test.ovh" y "mydns2.test.ovh" en "mydomain.ovh".<br>
-> ![dominios](images/zonemaster02.png){.thumbnail}
+> ![Captura de pantalla de las opciones avanzadas del formulario de Zonemaster. Los dos servidores de nombres "mydns.test.ovh" y "mydns2.test.ovh" se han introducido en la sección "Servidores de nombres" del formulario.](images/zonemaster02.png){.thumbnail}
 
 > [!primary]
 >
-> Al introducir un dominio y hacer clic en el botón `Obtener datos desde la zona padre`{.action}, aparecerán los servidores DNS asociados al dominio y la información del registro DS (DNSSEC) si este se ha configurado.
-> ![dominios](images/zonemaster03.png){.thumbnail}
+> Cuando introduzca un dominio y haga clic en los botones `Obtener datos desde la zona padre`{.action} y `Obtener DS desde la zona padre`{.action}, aparecerán los servidores DNS asociados al dominio, así como la información del registro DS (DNSSEC), en caso de que haya sido configurado.
+>
+> ![Captura de pantalla de la página de resultados de Zonemaster para el dominio "mydomain.ovh". Se desarrolla la sección "Direcciones".](images/zonemaster03.png){.thumbnail}
 
 ### Resultado
 
-Una vez validado el formulario, los resultados se clasifican por código de color:
+Una vez validado el formulario, los resultados se muestran por grupo de pruebas. Las pruebas se clasifican por su severidad.
 
-- **Verde**: Esta parte es funcional y cumple los criterios estándar en su categoría.
-- **Naranja**: Esta parte es funcional, pero merece una atención especial. La herramienta ha detectado que este parámetro tiene características que no encajan en el estándar de su categoría, sin bloquear su funcionamiento.
-- **Rojo**: Esta parte presenta errores o elementos que faltan y que pueden provocar un fallo de funcionamiento. 
-- **Azul**: se trata de una simple información, sin consecuencias particulares sobre el funcionamiento del nombre de dominio.
+- **Error**: esta parte presenta errores o elementos faltantes que pueden causar un fallo de funcionamiento.
+- **Advertencia**: esta parte es funcional, pero merece una atención especial. La herramienta ha detectado que este parámetro tiene características que no encajan en el estándar de su categoría, sin bloquear su funcionamiento.
+- **Aviso**:  se trata de una simple información, sin consecuencias particulares sobre el funcionamiento del nombre de dominio.
+- **Información**: Esta pieza es funcional y cumple los criterios estándar de su categoría.
 
-![dominios](images/zonemaster04.png){.thumbnail}
+Para cada prueba, es posible obtener más detalles, por ejemplo, para entender el error en caso de fallo, o simplemente a título indicativo.
+
+
+![Captura de pantalla de la página de resultados de Zonemaster para el dominio "mydomain.ovh". La sección "Address" se expande.](images/zonemaster04.png){.thumbnail}
 
 ### Información útil
 
-Si tiene más preguntas sobre Zonemaster, consulte [FAQ](https://zonemaster.net/es/faq) en <https://zonemaster.fr/>.
+Si tiene más preguntas sobre Zonemaster, consulte las [FAQ](https://zonemaster.net/es/faq) en <https://zonemaster.net/>.
 
 ## Más información <a name="go-further"></a>
 

@@ -202,11 +202,11 @@ once you have made these changes, check the RAID status again.
 ```sh
 root@ns3054662:/home# cat /proc/mdstat
 >>> Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty]
->>> md2 : active raid1 sda2[0] sdb2[1](/pages/cloud/dedicated/hotswap_raid_softF)
+>>> md2 : active raid1 sda2[0] sdb2[1](/gb/en/dedicated/hotswap-raid-soft/F)
 >>>       3885385728 blocks super 1.2 [2/1] [U_]
 >>>       bitmap: 0/29 pages [0KB], 65536KB chunk
 
->>> md1 : active raid1 sdb1[2](/pages/cloud/dedicated/hotswap_raid_softF) sda1[0]
+>>> md1 : active raid1 sdb1[2](/gb/en/dedicated/hotswap-raid-soft/F) sda1[0]
 >>>       20971456 blocks [2/1] [U_]
 
 >>> unused devices: <none>

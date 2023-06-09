@@ -32,7 +32,7 @@ Nos hébergements web sont compatibles IPv6 depuis 2011. Mais l'activation de ce
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 > 
 
 Si votre site n'est pas configuré pour fonctionner avec une adresse IPv6, vous pouvez ajouter [l'adresse IPv6 de votre hébergement mutualisé OVHcloud](/pages/web/hosting/clusters_and_shared_hosting_IP) dans la zone DNS active de votre nom de domaine. L'objectif est de permettre aux navigateurs web de trouver une adresse IPv6 associée à votre site web via votre nom de domaine.
@@ -70,7 +70,7 @@ Insérez l'adresse IPv6 préalablement copiée en utilisant le type d'enregistre
 
 [Éditer une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit#editer-la-zone-dns-ovhcloud-de-votre-nom-de-domaine)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 

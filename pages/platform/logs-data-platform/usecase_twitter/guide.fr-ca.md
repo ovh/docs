@@ -1,6 +1,8 @@
 ---
-title: Twitter Analysis with Logs Data Platform
+title: Analyzing Twitter with Logs Data Platform
 excerpt: Logs Data Platform can be used in multiple ways. Twitter feed and keyword analysis is one of them.
+routes:
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-twitter?id=kb_article_view&sysparm_article=KB0050063'
 updated: 2019-04-10
 ---
 
@@ -14,9 +16,9 @@ Twitter can be an amazing source to have a direct feedback on your products or e
 
 Prior to completing this guide, you should read the following:
 
-- [Quick Start of Logs Data Platform](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
-- [Field naming conventions](/pages/platform/logs-data-platform/getting_started_field_naming_convention){.ref}
-- [Logstash collector](/pages/platform/logs-data-platform/ingestion_logstash_dedicated_input){.ref}
+- [Quick Start of Logs Data Platform](/pages/platform/logs-data-platform/getting_started_quick_start)
+- [Field naming conventions](/pages/platform/logs-data-platform/getting_started_field_naming_convention)
+- [Logstash collector](/pages/platform/logs-data-platform/ingestion_logstash_dedicated_input)
 
 If you have completely understood these three guides, let's dive into this one.
 
@@ -258,11 +260,11 @@ There are many more possibilities. Of course you can create beautiful dashboards
 
 ![Dashboards](images/dashboard.png){.thumbnail}
 
-That's all for now. If you have any proposition or trouble with this tutorial, don't hesitate to reach us on the [Community hub](https://community.ovh.com/c/platform/data-platforms){.external}.
+That's all for now. If you have any proposition or trouble with this tutorial, don't hesitate to reach us on the [Community hub](https://community.ovh.com/en/c/Platform/data-platforms){.external}.
 
 ## Go further
 
-- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
-- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

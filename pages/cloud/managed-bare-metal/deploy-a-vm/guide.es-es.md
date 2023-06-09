@@ -31,7 +31,7 @@ Haga clic con el botón derecho en el clúster de su elección y, seguidamente, 
 
 Para crear una máquina virtual, es posible elegir entre varias opciones:
 
-- A partir de un archivo ISO, disponible en su datastore y que para importarlo debe seguir las instrucciones en la [guía de conexión en SFTP](/pages/cloud/managed-bare-metal/vsphere-interface/).
+- A partir de un archivo ISO, disponible en su datastore y que para importarlo debe seguir las instrucciones en la [guía de conexión en SFTP](/pages/cloud/managed-bare-metal/vsphere-interface).
 - También puede instrumentar una máquina virtual a partir de una plantilla existente o una [plantilla de OVHcloud](/pages/cloud/managed-bare-metal/ovf_template).
 - Puede clonar una máquina virtual ya existente (hay que tener cuidado con los posibles conflictos de direcciones IP).
 - Puede clonar una máquina virtual en una plantilla para instrumentar más rápidamente sus próximas máquinas virtuales.

@@ -3,7 +3,7 @@ title: Backup a SAP HANA database solution
 excerpt: This guide provides you with general guidelines on how to backup a SAP HANA database.
 updated: 2022-03-28
 routes:
-    canonical: '/pages/cloud/sap/backup-sap-hana
+    canonical: 'https://docs.ovh.com/gb/en/sap/backup-sap-hana
 /'
 ---
 

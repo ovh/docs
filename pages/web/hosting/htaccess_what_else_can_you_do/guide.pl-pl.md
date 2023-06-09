@@ -1,106 +1,154 @@
 ---
-title: 'Plik .htaccess - Inne operacje'
-excerpt: 'Przewodnik ten przedstawia inne operacje, które są możliwe dzięki plikom .htaccess.'
-updated: 2020-05-05
+title: "Tutorial - Operacje możliwe do wykonania z plikiem .htaccess"
+excerpt: "Poznaj przykłady operacji, które można wykonać przy użyciu pliku .htaccess"
+updated: 2023-05-23
 ---
 
-**Ostatnia aktualizacja z dnia 05-05-2020**
+**Ostatnia aktualizacja z dnia 23-05-2023**
 
-## Blokada listowania zawartości katalogu
-Aby internauci nie mogli listować plików zawartych w danym katalogu, w którym nie ma pliku index (.cgi, .html, .php, itp.)  ....), utwórz plik .htaccess z poniższą linią:
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
+>
 
+## Wprowadzenie
 
+Tutorial przedstawia główne funkcje pliku ".htaccess" dla Twojego hostingu.
+
+Plik ".htaccess" to plik konfiguracyjny (HTTP) Apache wykonywany przez serwer www Twojego hostingu www. Pozwala on na zdefiniowanie szczególnych zasad dla katalogu i wszystkich jego podkatalogów. Możesz utworzyć kilka plików ".htaccess" w [przestrzeni FTP](/pages/web/hosting/ftp_connection/) Twojego hostingu. 
+
+Jeśli Twoja przestrzeń FTP nie istnieje, możesz ją dodać dodając w katalogu, do którego chcesz zastosować jedną lub kilka reguł opisanych w tym tutorialu.
+
+Aby poprawnie korzystać z pliku ".htaccess", musisz znać i przestrzegać następujących zasad: 
+
+- **tylko jeden** plik ".htaccess" w katalogu lub podkatalogu, aby uniknąć konfliktów między różnymi plikami ".htaccess";
+- plik ".htaccess" jest niewidoczny dla użytkowników odwiedzających Twoją stronę;
+- reguły zadeklarowane w pliku ".htaccess" mają zastosowanie do całego katalogu, w którym zainstalowany jest plik ".htaccess", oraz do wszystkich podkatalogów tego katalogu.
+
+> [!warning]
+>
+> OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywają na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
+> 
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) i/lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Idź dalej"](#go-further) niniejszego przewodnika.
+>
+> Przykłady, które będą następnie wyświetlane są wprowadzane do pliku ".htaccess". Uwaga, reguły, które określiłeś w tym pliku, mają bezpośrednie konsekwencje dla Twojej strony WWW. Sprawdź systematycznie dodawanie reguł przed ich wdrożeniem na Twojej stronie WWW. 
+> 
+
+**Poznaj najważniejsze operacje wykonywane za pomocą pliku ".htaccess".**
+
+## Wymagania początkowe
+
+- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)
+
+## W praktyce
+
+### Umożliwienie lub ograniczenie dostępu do katalogu lub strony internetowej dla jednego lub kilku adresów IP
+
+Funkcja ta jest bardzo przydatna i zwiększa bezpieczeństwo Twoich stron WWW. Może pomóc zmniejszyć ryzyko włamania na Twojej stronie WWW.
+
+Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem: ["Jak zablokować dostęp do mojej strony dla niektórych adresów IP za pomocą pliku .htaccess? "](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+
+### Zdefiniuj zaszyfrowane hasło dostępu do katalogu lub strony www
+
+Za pomocą pliku ".htaccess" możesz wprowadzić zabezpieczony dostęp (hasłem) do danych znajdujących się na Twoim hostingu.
+
+Aby uzyskać więcej informacji, zapoznaj się z naszym tutorialu ["Chroń interfejs administracyjny Twojej strony za pomocą pliku .htaccess"](/pages/web/hosting/htaccess_protect_directory_by_password/).
+
+### Określ inny plik indeksu
+
+Domyślnie plik **index** w katalogu jest *index.html*, *index.htm* lub *index.php*. Jeśli wolisz, aby był to inny plik, możesz dodać wiersz tego typu w swoim ".htaccess":
+
+```bash
+DirectoryIndex File_Name
 ```
+
+Na przykład, jeśli chcesz użyć strony **home.html** jako strony indeksu, dodaj następujący wiersz:
+
+```bash
+DirectoryIndex home.html
+```
+
+### Uniemożliwienie wyświetlania zawartości katalogu
+
+Aby zapobiec wyświetlaniu przez internautów wszystkich plików znajdujących się w katalogu bez pliku **index** (.cgi, .html, .php, itp.), utwórz plik "**.htaccess**" zawierający poniższy wiersz:
+
+```bash
 Options -Indexes
 ```
+
+### Zmień adres URL
+
+Dzięki modułowi **mod_rewrite** z wstępnie zainstalowanego serwera HTTP Apache na Twoim hostingu www, funkcja ta pozwala na przekierowanie:
+
+- wszystkie zapytania HTTP do jednego pliku na Twojej stronie WWW;
+- część zapytań HTTP do jednego pliku na Twojej stronie WWW;
+- Twoja nazwa domeny do subdomeny z wpisem "www";
+- zapytania do konkretnego folderu, bez wyświetlania danego folderu;
+- automatycznie odwiedzający Twoją stronę przez HTTPS podczas wyświetlania jej zawartości poprzez HTTP.
+
+Więcej informacji znajdziesz w przewodniku: ["Prześlij link dostępowy do mojej strony za pomocą mod_rewrite za pomocą pliku .htaccess"](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite/).
+
+#### Przekieruj wiadomości z błędem
+
+Aby spersonalizować i/lub przekierować wiadomości błędów na stronę WWW, utwórz plik "**.htaccess**" zawierający następujący wiersz kodu:
+
+```bash
+ErrorDocument Error_Code_Number Message_Or_Destination
+```
+
+Zastąp tylko "**Error_Code_Number**" odpowiednim kodem błędu HTTP Apache. 
+
+Więcej informacji o tej funkcji znajdziesz w [oficjalnej dokumentacji Apache](https://httpd.apache.org/docs/trunk/en/custom-error.html){.external}.
+
+Najpopularniejsze kody błędów HTTP to:
+
+- 401: Authorization required: błąd ten jest generowany, gdy użytkownik wprowadza nieprawidłowe login/hasło podczas dostępu do chronionego pliku lub katalogu.
+- 403: Access denied: błąd ten pojawia się podczas dostępu do katalogu, w którym brakuje pliku *index.html* (lub *index.cgi*, itp.), a konfiguracja serwera uniemożliwia wyświetlanie plików w katalogu.
+- 404: Not Found: plik, który odwiedzający próbował zobaczyć, nie istnieje.
+- 500: Internal Server Error: błąd ten pojawia się, gdy skrypt nie został prawidłowo wykonany lub skrypt lub uprawnienia skryptu są nieprawidłowe.
+
+Zastąp **"Message_Or_Destination"** akcją do wykonania. Aby wyświetlić wiadomość bezpośrednio, wpisz odpowiednią wiadomość w cudzysłowie. Aby przekierować na określoną stronę, wprowadź ścieżkę dostępu do tej strony. 
+
+Poniżej znajdują się dwa konkretne przykłady:
+
+- Chcesz wskazać *"Przykro nam, nie masz prawa dostępu do tego pliku"*, jeśli osoba odwiedzająca zauważy błąd **403**. Dodaj poniższy wiersz do pliku ".htaccess":
+
+```bash
+ErrorDocument 403 "Przykro nam, nie masz prawa dostępu do tego pliku"
+```
+
+- Chcesz zwrócić błędy **404** na swoją własną stronę *404.html* (dla domeny: domain.tld). Dodaj poniższy wiersz do pliku ".htaccess":
+
+```bash
+ErrorDocument 404 http://domain.tld/404.html
+```
+
+Możesz również przekierować błąd na skrypt **C**ommon **G**ateway **I**interface (**CGI**). Możesz kodować skrypt w **CGI**, aby, na przykład, wykonać następujące operacje:
  
+- wyświetl wiadomość;
+- przekierowanie użytkownika na inny plik zgodnie z pierwotnie żądanym adresem URL (dostępny w zmiennej środowiskowej **REQUEST_URI**);
+- wyślij e-mail.
 
+Na przykład, aby przekierować błąd na skrypt **CGI**, dodaj poniższą linię do pliku ".htaccess":
 
-
-## Przekierowanie komunikatów o błędach
-Jeśli chcesz korzystać z własnych komunikatów błędów lub przekierowywać błędy na wybraną stronę www, utwórz plik .htaccess z tymi liniami:
-
-
-```
-ErrorDocument numer_błędu wiadomość_lub adres
-```
-
-
-Zastąp "numer_błędu" odpowiednim numerem. Najczęstsze błędy to:
-
-
-- 401: Authorization required. Ten błąd pojawia się, gdy użytkownik wpisze nieprawidłowy login / hasło podczas logowania do chronionego pliku / katalogu. 
-- 403: Access denied. Dostęp do katalogu, w którym nie ma katalogu index.html (lub na przykład index.cgi, itp.) a konfiguracja serwera zabrania wyświetlania plików katalogu. 
-- 404: Not Found. Plik wybierany przez odwiedzającego nie istnieje. 
-- 500: Server Error. Plik CGI nie wykonał się prawidłowo lub uprawnienia do skryptu są nieprawidłowe. 
-
-
-Zastąp "wiadomość_lub adres" operacją do wykonania. Aby wyświetlić komunikat, wpisz wiadomość w cudzysłowie. Aby przekierować na określoną stronę, wpisz ścieżke dostępu do tej strony. Poniżej przedstawiamy dwa przykłady:
-
-
-- W przypadku błędu 403, chcesz wyświetlić komunikat "Przykro nam, nie masz uprawnień dostępu do tego pliku". Umieść tę linie w pliku .htaccess: 
-
-
-```
-ErrorDocument 403 "Przykro nam, nie masz uprawnień dostępu do tego pliku"
+```bash
+ErrorDocument 404 /cgi-bin/błąd.cgi?type=404
 ```
 
+Poniższa linia przekieruje osobę odwiedzającą, która ma błąd **404** na Twój skrypt *błąd.cgi*. Będzie on wykonywał zawarte w nim dyrektywy, w szczególności w odniesieniu do błędu **404**.
 
-- Chcesz przekierować błędy 404 na własną stronę 404.html (dla domeny: domaine.com): 
+## Sprawdź również <a name="go-further"></a>
 
+[Logowanie do przestrzeni FTP hostingu WWW](/pages/web/hosting/ftp_connection/)
 
-```
-ErrorDocument 404 http://www.domaine.com/404.php
-```
+[Zablokować dostęp do mojej strony dla niektórych adresów IP przez plik .htaccess?](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/)
 
+[Chroń interfejs administracyjny swojej strony plikiem .htaccess](/pages/web/hosting/htaccess_protect_directory_by_password/)
 
+[Prześlij link dostępowy do mojej strony za pomocą mod_rewrite za pomocą pliku .htaccess](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite)
 
-Możesz również przekierować błąd na skrypt CGI, który wyświetli komunikat, przekieruje użytkownika na inny plik w zależności od adresu, który został odpytany (dostepny w zmiennej środowiskowej REQUEST_URI), i/lub prześle Ci e-mail, itp. W tym celu dodaj poniższą linię w pliku .htaccess:
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 
-```
-Errordocument 404 /cgi-bin/erreur.cgi?type=404
-```
-
-
-Należy wykonać zmianę tylko, gdy jest to strona z https (SSL). Należy wtedy wpisać:
-
-
-```
-Errordocument 401 /~login/error.html
-```
-
-
-Jeśli taka konfiguracja nie działa, sprawdź, czy w ustawieniach przedlądarki Internet Explorer w zakładce Zaawansowane jest odznaczona opcja "Wyświetlaj uproszczone komunikaty błędów HTTP".
-
-
-## Określenie innego pliku index
-Domyślnie plik index w danym katalogu to plik index.html, index.htm lub index.php. Jeśli chcesz, żeby był to inny plik, możesz umieścić tego typu linię w pliku .htaccess:
-
-
-```
-DirectoryIndex nazwa_pliku
-```
-
-
-Jeśli chcesz używać pliku accueil.html jako pliku index, wpisz taką linię:
-
-
-```
-DirectoryIndex accueil.html
-```
-
-
-
-
-## Tworzenie przekierowań
-Skorzystaj z tego przewodnika: [Kliknij tutaj](https://www.ovh.pl/g1339.przekierowanie-domeny#przekierowanie_poprzez_plik_htaccess)
-
-
-## Generowanie adresów URL
-Skorzystaj z tego przewodnika: [Kliknij tutaj](https://www.ovh.pl/g1971.hosting_www_htaccess_-_generowanie_adresow_za_pomoca_mod_rewrite)
-
-
-## 
-Aby przejść do przewodnika z ogólnymi informacjami o pliku .htaccess, [kliknij tutaj](https://www.ovh.pl/g1967.hosting_www_plik_htaccess)
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
 

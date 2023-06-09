@@ -4,14 +4,12 @@ links:
     - docs/cloud/clouddb/utilisation-mysql-mariadb/
     - docs/cloud/clouddb/utilisation-pgsql/
 excerpt: 'Erfahren Sie hier, wie Sie, wie Sie die Web Cloud Databases Lösung verwenden'
-updated: 2023-02-15
+updated: 2023-05-31
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
-
-**Letzte Aktualisierung am 15.02.2023**
 
 ## Ziel
 
@@ -118,7 +116,7 @@ Geben Sie im angezeigten Fenster die angefragten Informationen ein und klicken S
 
 > [!warning]
 >
-> Aus Sicherheitsgründen halten Sie sich bitte an die bei der Eingabe der Informationen angezeigten Bedingungen.
+> Beachten Sie aus Sicherheitsgründen die bei Eingabe der Informationen angezeigten Richtlinien.
 >
 
 ![Web Cloud Databases](images/web-cloud-databases-add-user-step2.png){.thumbnail}
@@ -195,7 +193,8 @@ Damit Sie Ihre Website in jedem Fall erfolgreich mit Ihrer Datenbank verbinden k
 
 > [!warning]
 >
-> In seltenen Fällen ist das Feld `Port`{.action} in der Konfiguration Ihrer Website nicht verfügbar. Ist das der Fall, fügen Sie dieses Feld hinter dem Hostnamen Ihres Servers hinzu und trennen Sie beide Informationen durch ein *:* (zum Beispiel hostname:port).
+> Das Feld `Server-Port`{.action} wird in der Konfiguration Ihrer Website möglicherweise nicht angeboten. In diesem Fall muss der Wert nach dem Hostnamen Ihres Servers angefügt werden, getrennt mit einem *:*. <br><br>
+> Beispiel: Für den Hostnamen `zz1111111-002.eu.clouddb.ovh.net` mit dem SQL-Port `34567` müssen Sie `zz1111111-002.eu.clouddb.ovh.net:34567` als Hostname ("Name des Host-Servers") eingeben.
 >
 
 ![Web Cloud Databases](images/web-cloud-databases-login-information.png){.thumbnail}

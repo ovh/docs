@@ -1,7 +1,7 @@
 ---
 title: Installing WordPress on an instance
 excerpt: Find out how to use a Public Cloud instance to host WordPress websites
-updated: 2021-10-15
+updated: 2023-05-17
 ---
 
 **Last updated 15th October 2021**
@@ -77,7 +77,7 @@ Next you can choose a method to secure access to the database server.
 Switch to unix_socket authentication [Y/n]
 ```
 
-It is recommended to use the proposed authentication method instead of the access via root password. Press `y`{.action} and then `Enter`{.action}. (If you decide to use root user access, type `n`{.action} and then set a root password.)
+It is recommended to use the proposed authentication method (*unix_socket*) instead of the access via root password. Press `y`{.action} and then `Enter`{.action}. (If you decide to use root user access instead, choose `n`{.action} and then set a root password at the next prompt.)
 
 Type `n`{.action} at the next prompt:
 
@@ -87,26 +87,26 @@ Change the root password? [Y/n]
 
 Since the subsequent prompts concern security measures, confirm them all with `y`{.action} until the script is finished.
 
-If you have configured MariaDB access in the recommended way (*unix_socket*), you now have automatic root access to it whenever you are logged in on the instance as a user with with elevated permissions. 
+If you have configured MariaDB access in the recommended way (*unix_socket*), you now have automatic admin access (*root*) to it whenever you are logged on to the server as a user with with elevated permissions (*sudo*).
 
 Open the MariaDB shell:
 
 ```bash
 debian@instance:~$ sudo mariadb
 ```
-```mysql
+```sql
 MariaDB [(none)]> 
 ```
 
 Create the database for WordPress:
 
-```mysql
+```sql
 MariaDB [(none)]> CREATE DATABASE wordpress;
 ```
 
 Next, grant a new user "wordpress" all rights on this database. This user will access the database and carry out all operations for the WordPress CMS. Replace `your_password` with a strong password for this user.
 
-```mysql
+```sql
 MariaDB [(none)]> GRANT ALL ON wordpress.* TO 'wordpress'@'localhost' IDENTIFIED BY 'your_password' WITH GRANT OPTION;
 ```
 
@@ -116,10 +116,10 @@ MariaDB [(none)]> GRANT ALL ON wordpress.* TO 'wordpress'@'localhost' IDENTIFIED
 
 The database is now ready for use with WordPress. Ensure the changes are applied for the next steps and then exit the MariaDB shell:
 
-```mysql
+```sql
 MariaDB [(none)]> FLUSH PRIVILEGES;
 ```
-```mysql
+```sql
 MariaDB [(none)]> exit;
 ```
 
@@ -143,7 +143,7 @@ debian@instance:~$ sudo ufw app list | grep WWW
 
 By choosing "WWW Full", both secure connections (port 443) and not-secured http requests (port 80) to the web server will be allowed.
 
-To see which ports are affected by a particular profile, enter ```sudo ufw app info "profile name"```.
+To see which ports are affected by a particular profile, enter `sudo ufw app info "profile name"`.
 
 By entering the following command, the ports defined by the profile "WWW Full" will be opened:
 
@@ -151,19 +151,20 @@ By entering the following command, the ports defined by the profile "WWW Full" w
 debian@instance:~$ sudo ufw allow 'WWW Full'
 ```
 
-Since all ports not explicitly allowed will be blocked after enabling the firewall, make sure to allow SSH connections (port 22) as well:
+Since all ports not explicitly allowed will be **blocked** after enabling the firewall, make sure to allow SSH connections (port 22 in a default configuration) as well:
 
 ```bash
 debian@instance:~$ sudo ufw allow 'SSH'
 ```
 
-Finally, verify the configuration and activate the firewall rules:
+Finally, activate the firewall rules and verify the configuration:
+
+```bash
+debian@instance:~$ sudo ufw enable
+```
 
 ```bash
 debian@instance:~$ sudo ufw status
-```
-```bash
-debian@instance:~$ sudo ufw enable
 ```
 
 You can go further with UFW, for example if you want to restrict *denial of service* (DOS) attacks or prevent requests by certain IP address ranges. Please refer to the official UFW documentation.
@@ -231,10 +232,17 @@ Once this is confirmed, you will be able to log in to your website's administati
 > [!primary]
 >
 > In order to establish secure connections (`https`), the web server has to be secured via a Certificate Authority such as "[Let’s Encrypt](https://letsencrypt.org/)" which offers free certificates. You will need to install a client tool (such as "Certbot") and configure Apache. Without this step, your website can only accept `http` requests. 
+> 
+> As an alternative, OVHcloud offers the solution [SSL Gateway](https://www.ovh.com/ca/en/ssl-gateway/). Refer to the [guide pages](/pages/web/ssl-gateway/order-ssl-gateway) as well for further information.
+>
 
 ### Step 6 (optional): Enabling secure connections with Let’s Encrypt
 
 First make sure that your domain name has the correct records in the DNS zone, i.e. is pointing to the IP address of your instance.
+
+> [!warning]
+> The following command will install a functioning but outdated version of Certbot (*certbot 1.12.0*). In order to install the latest version, the additional package manager *snappy* must be used. You can find installation instructions on the [Certbot website](https://certbot.eff.org/instructions?ws=apache&os=debianbuster).
+>
 
 Install the necessary packages for the Certbot client:
 
@@ -242,10 +250,10 @@ Install the necessary packages for the Certbot client:
 debian@instance:~$ sudo apt install certbot python3-certbot-apache
 ```
 
-Obtain the certificate for your domain name. (You can include the "www" subdomain by appending `-d www.yourdomainname.ovh`.)
+Obtain the certificate for your domain name and the "www" subdomain:
 
 ```bash
-debian@instance:~$ sudo certbot --apache -d yourdomainname.ovh
+debian@instance:~$ sudo certbot --apache -d domainname.ovh -d www.domainname.ovh
 ```
 
 You will need to enter a valid email address and accept the terms of service.

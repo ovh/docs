@@ -153,7 +153,7 @@ Pode visualizá-lo no seu servidor introduzindo o URL do seu site, seguido de `/
 
 #### Modificação no servidor
 
-A edição dos ficheiros _Markdown_ pode ser feita diretamente no servidor de alojamento web. Na sua oferta de [alojamento Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), o seu acesso SSH permite utilizar indiferentemente [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} ou [vim](/pages/web/hosting/static_website_installation_cecilcom){.external}.
+A edição dos ficheiros _Markdown_ pode ser feita diretamente no servidor de alojamento web. Na sua oferta de [alojamento Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), o seu acesso SSH permite utilizar indiferentemente [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} ou [vim](/pt/hosting/install-configure-cecil/com){.external}.
 As capturas de ecrã do presente tutorial foram realizadas sob **GNU nano**.
 
 Editar o ficheiro `mypage.md` situado no diretório `pages` o seguinte comando se estiver na raiz do seu site:

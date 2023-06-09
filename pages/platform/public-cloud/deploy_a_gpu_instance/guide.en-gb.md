@@ -48,7 +48,7 @@ The, select the Linux OS of your choice:
 
 The instance will start a few seconds later. You can then log in and check for the graphics card: 
 
-```ssh
+```bash
 lspci | grep -i nvidia
 00:05.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)
 ```

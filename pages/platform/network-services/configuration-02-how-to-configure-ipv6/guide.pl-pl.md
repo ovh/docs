@@ -46,8 +46,8 @@ Oto krótki słowniczek terminów stosowanych w tym tutorialu:
 |Słowniczek|Opis|
 |---|---|
 |YOUR_IPV6|Adres IPv6 przypisany do Twojej usługi|
-|IPv6_PREFIX|Prefiks Twojego bloku IPv6 (np. 2607:5300:60:62ac::/128 -> netmask = 128)|
-|IPv6_GATEWAY|Brama sieciowa Twojego bloku IPv6|
+|IPV6_PREFIX|Prefiks Twojego bloku IPv6 (np. 2607:5300:60:62ac::/128 -> netmask = 128)|
+|IPV6_GATEWAY|Brama sieciowa Twojego bloku IPv6|
 
 
 ### Pobranie danych sieciowych
@@ -220,4 +220,6 @@ W każdym przypadku warto skontaktować się z działem pomocy technicznej, poda
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

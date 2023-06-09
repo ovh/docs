@@ -107,7 +107,7 @@ En ese caso, [conéctese por FTP](../conexion-espacio-almacenamiento-ftp-alojami
 
 > [!primary]
 >
-> Para cualquier duda sobre los datos que desea eliminar para reducir la cantidad de datos en su alojamiento, contacte con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).<br>
+> Para cualquier duda sobre los datos que desea eliminar para reducir la cantidad de datos en su alojamiento, contacte con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).<br>
 > No podremos asistirle en este asunto.
 
 ### "Unable to connect to database" <a name="delete-the-module"></a>
@@ -138,7 +138,7 @@ Si no tiene bases de datos adicionales y no desea contratar una solución adicio
 >
 > **Eliminar elementos de la base de datos puede cortar el sitio web.**
 >
-> Para más información, contacte con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).<br>
+> Para más información, contacte con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).<br>
 > No podremos asistirle en este asunto.
 >
 
@@ -174,7 +174,7 @@ En caso de que se rechace la contraseña actual de acceso al panel de administra
 
 ## Más información <a name="gofurther"></a>
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es/support-levels/).
 

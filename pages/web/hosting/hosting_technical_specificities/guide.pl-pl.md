@@ -30,7 +30,7 @@ updated: 2022-11-18
 
 ### FTP
 
-- Błąd dostępu („Uwierzytelnienie połączenia 530 zakończyło się niepowodzeniem”): Upewnij się, że informacje dotyczące dostępu do Twojej przestrzeni FTP są poprawne, sprawdzając je w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w karcie `FTP - SSH`. Hasła nigdy nie są wyświetlane, ale można je zmieniać. Zapoznaj się z [przewodnikami dotyczącymi FTP](/pages/web/hosting/ftp_connection/).
+- Błąd dostępu („Uwierzytelnienie połączenia 530 zakończyło się niepowodzeniem”): Upewnij się, że informacje dotyczące dostępu do Twojej przestrzeni FTP są poprawne, sprawdzając je w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w karcie `FTP - SSH`. Hasła nigdy nie są wyświetlane, ale można je zmieniać. Zapoznaj się z [przewodnikami dotyczącymi FTP](/pages/web/hosting/ftp_connection).
 
 - Połączenia FTP muszą korzystać z **trybu pasywnego**. Upewnij się, że Twój skrypt lub klient FTP jest odpowiednio skonfigurowany.
 
@@ -76,7 +76,7 @@ Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to conn
 
 - Wersji MySQL nie można modyfikować w przypadku baz danych zintegrowanych z hostingiem WWW.
 
-Aby uzyskać więcej informacji na temat zarządzania bazami danych, zapoznaj się z przewodnikiem [Tworzenie bazy danych w hostingu OVHcloud](/pages/web/hosting/sql_create_database/).
+Aby uzyskać więcej informacji na temat zarządzania bazami danych, zapoznaj się z przewodnikiem [Tworzenie bazy danych w hostingu OVHcloud](/pages/web/hosting/sql_create_database).
 
 ### PHP
 
@@ -191,7 +191,7 @@ Aby wspomniane wyżej dane mogły być wykorzystywane w ramach narzędzia OVHclo
 
 ## Sprawdź również
 
-[Logowanie do przestrzeni dyskowej hostingu](/pages/web/hosting/ftp_connection/)
+[Logowanie do przestrzeni dyskowej hostingu](/pages/web/hosting/ftp_connection)
 
 [Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL](/pages/web/hosting/ssl-activate-https-website)
 

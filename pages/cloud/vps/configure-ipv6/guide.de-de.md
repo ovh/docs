@@ -287,7 +287,7 @@ service networking restart
 ```
 
 ```bash
-systemctl restnetworking
+systemctl restart networking
 ```
 
 

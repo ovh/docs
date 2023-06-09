@@ -67,7 +67,7 @@ Pour en savoir plus sur le ProxyProtocol, nous vous invitons à consulter la [sp
 
 
 ## Activation du ProxyProtocol pour un de vos serveurs
-Le ProxyProtocol doit être activé pour chaque serveur enregistré dans dans une Ferme de serveurs. Cette fonctionnalité étant intrusive et ne pouvant être activée de manière transparente, cela permet de la tester sur une machine en particulier puis de déployer progressivement la configuration sur une ferme active.
+Le ProxyProtocol doit être activé pour chaque serveur enregistré dans une Ferme de serveurs. Cette fonctionnalité étant intrusive et ne pouvant être activée de manière transparente, cela permet de la tester sur une machine en particulier puis de déployer progressivement la configuration sur une ferme active.
 
 Votre service OVH Load Balancer gère 4 modes pour le ProxyProtocol:
 

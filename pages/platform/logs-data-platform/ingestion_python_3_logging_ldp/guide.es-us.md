@@ -1,7 +1,7 @@
 ---
-title: Python 3.x - Push logs with logging-ldp
+title: Pushing logs with a SDK - Python 3.x - logging-ldp
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/logging-ldp/'
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-logging-ldp?id=kb_article_view&sysparm_article=KB0037676'
 updated: 2023-01-16
 ---
 
@@ -17,7 +17,7 @@ This package includes:
 
 - a TCP/TLS handler to send log entries over TCP with TLS support.
 - a formatter to convert logging record into [GELF(1.1)](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification#gelf-payload-specification){.external}.
-- a facility to ensure fields suits the [LDP naming conventions](/pages/platform/logs-data-platform/getting_started_field_naming_convention){.ref}.
+- a facility to ensure fields suits the [LDP naming conventions](/pages/platform/logs-data-platform/getting_started_field_naming_convention).
 
 
 ## Requirements
@@ -26,7 +26,7 @@ To complete this guide you will need:
 
 - Python 3, we recommend to install [pip](https://pip.pypa.io/en/stable/installing/){.external}.
 - [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
-- [To create at least one Stream and get its token.](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
+- [To create at least one Stream and get its token.](/pages/platform/logs-data-platform/getting_started_quick_start)
 
 ## Instructions
 
@@ -199,13 +199,13 @@ The log entry sent will be:
 As we can see:
 
 * Objects are transformed to flatten dictionaries: `manager.name` is renamed `manager_name`.
-* Fields are types using the [LDP naming convention](/pages/platform/logs-data-platform/getting_started_field_naming_convention){.ref}: `manager.age` is renamed `manager_age_int`
+* Fields are types using the [LDP naming convention](/pages/platform/logs-data-platform/getting_started_field_naming_convention): `manager.age` is renamed `manager_age_int`
 * Null values are not sent: `user.age`.
 * You can set `required=True` to force meta data value or `default=xxx` to add data automatically.
 
 ## Go further
 
-- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
-- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

@@ -18,7 +18,7 @@ Elles proviennent parfois aussi d'une mise à jour effectuée **automatiquement*
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
 >
 
 ## Prérequis
@@ -107,8 +107,6 @@ Enfin, si l'erreur 500 est apparue suite à une mise à jour de la version PHP d
 [Que faire en cas de page « 403 forbidden » ?](/pages/web/hosting/diagnostic_403_forbidden)
 
 [Résoudre les erreurs les plus fréquentes liées aux bases de données](/pages/web/hosting/diagnosis_database_errors)
-
-[Que faire en cas d’erreur 500 Internal Server Error ?](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
 
 [Mon site est lent. Que faire ?](/pages/web/hosting/diagnostic_slownesses)
 

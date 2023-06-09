@@ -1,7 +1,7 @@
 ---
 title: Using OpenSearch Dashboards with Logs Data Platform
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/opensearch-dashboards/'
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-opensearch-dashboards?id=kb_article_view&sysparm_article=KB0050065'
 updated: 2022-06-13
 ---
 
@@ -66,5 +66,4 @@ To know what you can do with OpenSearch Dashboards, read the [OpenSearch Dashboa
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
 - Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
-
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

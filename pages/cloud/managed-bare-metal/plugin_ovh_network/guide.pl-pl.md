@@ -11,14 +11,14 @@ updated: 2020-11-18
 
 ## Wprowadzenie
 
-Wtyczka OVH Network została stworzona przez OVH. Dzięki niej możesz bardziej precyzyjnie zarządzać wszystkimi adresami IP powiązanymi z Twoją usługą [Managed Bare Metal](https://www.https://www.ovhcloud.com/pl/managed-bare-metal//){.external}. 
+Wtyczka OVH Network została stworzona przez OVH. Dzięki niej możesz bardziej precyzyjnie zarządzać wszystkimi adresami IP powiązanymi z Twoją usługą [Managed Bare Metal](https://www.https://www.ovhcloud.com/pl/managed-bare-metal/){.external}. 
 
 **Dowiedz się, jak korzystać z wtyczki OVH Network w usłudze Managed Bare Metal.**
 
 ## Wymagania początkowe
 
-* Posiadanie oferty [Managed Bare Metal](https://www.https://www.ovhcloud.com/pl/managed-bare-metal//){.external}
-* Posiadanie bloku IP powiązanego z Twoją usługą [Managed Bare Metal](https://www.https://www.ovhcloud.com/pl/managed-bare-metal//){.external}
+* Posiadanie oferty [Managed Bare Metal](https://www.https://www.ovhcloud.com/pl/managed-bare-metal/){.external}
+* Posiadanie bloku IP powiązanego z Twoją usługą [Managed Bare Metal](https://www.https://www.ovhcloud.com/pl/managed-bare-metal/){.external}
 * Dostęp do interfejsu zarządzania vSphere
 
 ## W praktyce

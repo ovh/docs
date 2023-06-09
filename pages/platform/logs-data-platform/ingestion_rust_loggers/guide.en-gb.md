@@ -19,7 +19,7 @@ Those loggers will:
 - serialize log entries using the serde_gelf crate.
 - bufferize the result into memory.
 - batch send over network using TCP/TLS.
-- a facility to ensure fields suits the [LDP naming conventions](/pages/platform/logs-data-platform/getting_started_field_naming_convention){.ref}.
+- a facility to ensure fields suits the [LDP naming conventions](/pages/platform/logs-data-platform/getting_started_field_naming_convention).
 
 ## Requirements
 
@@ -27,7 +27,7 @@ To complete this guide you will need:
 
 - Rust, we recommend the Nightly version.
 - [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
-- [To create at least one Stream and get its token.](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
+- [To create at least one Stream and get its token.](/pages/platform/logs-data-platform/getting_started_quick_start)
 
 ## gelf_logger
 
@@ -147,7 +147,7 @@ You could also look at the [generated API documentation](https://docs.rs/log4rs-
 
 ## Go further
 
-- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
-- Documentation: [Guides](/pages/platform/logs-data-platform){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

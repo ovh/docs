@@ -24,7 +24,7 @@ Hacking can occur in several ways (non-exhaustive list):
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a (https://partner.ovhcloud.com/en-ca/) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a (https://partner.ovhcloud.com/en-ca/directory/) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -93,7 +93,7 @@ We also recommend using a [password manager](/pages/account/customer/manage-ovh-
 
 > [!warning]
 >
-> If you experience any difficulties carrying out the actions described below, contact a [specialist provider](https://partner.ovhcloud.com/en-ca/) in cyber security.
+> If you experience any difficulties carrying out the actions described below, contact a [specialist provider](https://partner.ovhcloud.com/en-ca/directory/) in cyber security.
 >
 
 Use our guide to [your web hosting plan’s statistics and logs](/pages/web/hosting/logs_and_statistics) to search for malicious elements injected into your website. You can find the information in the web logs. 
@@ -212,13 +212,13 @@ Please also refer to our guide on [how to secure your website](/pages/web/hostin
 
 [Logging in to your Web Hosting plan’s storage space](/pages/web/hosting/ftp_connection)
 
-[Modify your Web Hosting plan’s configuration](/pages/web/hosting/ovhconfig_modify_system_runtime/)
+[Modify your Web Hosting plan’s configuration](/pages/web/hosting/ovhconfig_modify_system_runtime)
 
 [Enable Application Firewall](/pages/web/hosting/multisites_activating_application_firewall)
 
 [Optimise your website’s performance](/pages/web/hosting/optimise_your_website_performance)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
 

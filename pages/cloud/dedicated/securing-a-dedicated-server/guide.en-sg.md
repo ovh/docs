@@ -258,4 +258,6 @@ For more information on our backup storage solutions, please see our [backup sto
 
 [Network Firewall guide](/pages/cloud/dedicated/firewall_network)
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 Join our community of users on <https://community.ovh.com/en/>.

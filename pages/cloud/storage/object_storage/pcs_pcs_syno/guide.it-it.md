@@ -1,23 +1,27 @@
 ---
 title: Object Storage Swift - Sincronizza un Synology NAS con l'Object Storage
 excerpt: Come sincronizzare un NAS Synology con un container
-updated: 2021-10-27
+updated: 2023-05-22
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
-**Ultimo aggiornamento: 27/10/2021**
+**Ultimo aggiornamento: 22/05/2023**
 
 ## Obiettivo
 
-[DiskStation Manager 6.0](https://www.synology.com/en-global/dsm/6.0beta){.external} di Synology propone uno strumento di sincronizzazione con diverse soluzioni Cloud.
+DiskStation Manager 7.0 di Synology propone uno strumento di sincronizzazione con diverse soluzioni Cloud.
 
 Questo è compatibile con l'Object Storage Public Cloud OVHcloud e vi permetterà di fare un backup dei vostri dati e di renderli accessibili da qualsiasi punto.
 
+**Questa guida ti mostra come configurare DiskStation Manager 7.0 per sincronizzare i file presenti sul tuo NAS verso il tuo Object Storage.**
 
-**Questa guida ti mostra come configurare DiskStation Manager 6.0 per sincronizzare i file presenti sul tuo NAS verso il tuo Object Storage.**
+> [!primary]
+>
+> DiskStation Manager 6 non è compatibile con l'Object Storage Public Cloud OVHcloud.
+>
 
 ## Prerequisiti
 
@@ -26,7 +30,7 @@ Questo è compatibile con l'Object Storage Public Cloud OVHcloud e vi permetter�
 
 ## Procedura
 
-### Configurazione di DiskStation Manager 6.0
+### Configurazione di DiskStation Manager 7.0
 
 > [!warning]
 >
@@ -47,26 +51,23 @@ Una volta recuperate le credenziali, potete collegarvi al vostro NAS ed effettua
 
 - Avvia l'applicazione Cloud Sync:
 
-![public-cloud](images/3791.png){.thumbnail}
-
 - Seleziona OpenStack Swift come Cloud Providers
 
-![public-cloud](images/3788.png){.thumbnail}
+![public-cloud](images/DSM7_1.png){.thumbnail}
 
 - Inserisci le informazioni del tuo utente OpenStack:
 
-![public-cloud](images/3792.png){.thumbnail}
+![public-cloud](images/DSM7_2.png){.thumbnail}
 
 Tutte queste informazioni sono disponibili nel file OpenRC recuperato nel precedente step.
 
-- Configura la tua cartella da sincronizzare
+- Configura la localizzazione e il nome del tuo container di storage:
 
-![public-cloud](images/3790.png){.thumbnail}
+![public-cloud](images/DSM7_3.png){.thumbnail}
 
-> [!alert]
->
-> Questa guida è basata sulla versione beta di DiskStation Manager 6.0, la procedura di configurazione può essere portata a modificare.
->
+- Configura la tua cartella da sincronizzare:
+
+![public-cloud](images/DSM7_4.png){.thumbnail}
 
 ## Per saperne di più
 

@@ -179,11 +179,11 @@ The RAID status is checked again.
 
 <div> <style type="text/css" scoped>span.prompt:before{content:"$ ";}</style> <pre class="highlight command-prompt"> <span class="prompt">root@ns3054662:/home# cat /proc/mdstat</span>
 <span class="output">Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty]</span>
-<span class="output">md2 : active raid1 sda2[0] sdb2[1](/pages/cloud/dedicated/hotswap_raid_softF)</span>
+<span class="output">md2 : active raid1 sda2[0] sdb2[1](/au/en/dedicated/hotswap-raid-soft/F)</span>
 <span class="output">      3885385728 blocks super 1.2 [2/1] [U_]</span>
 <span class="output">      bitmap: 0/29 pages [0KB], 65536KB chunk</span>
 <span class="blank">&nbsp;</span>
-<span class="output">md1 : active raid1 sdb1[2](/pages/cloud/dedicated/hotswap_raid_softF) sda1[0]</span>
+<span class="output">md1 : active raid1 sdb1[2](/au/en/dedicated/hotswap-raid-soft/F) sda1[0]</span>
 <span class="output">      20971456 blocks [2/1] [U_]</span>
 <span class="blank">&nbsp;</span>
 <span class="output">unused devices: <none></span> </pre></div>

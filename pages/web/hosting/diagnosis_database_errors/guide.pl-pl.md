@@ -200,13 +200,13 @@ Posiadanie **"trigger"** w skrypcie importu bazy danych nie jest dozwolone na se
 
 Ponadto nie zezwala się na następujące zapytanie:
 
-```mysql
+```sql
 CREATE DATABASE IF NOT EXISTS `Database-Name` DEFAULT CHARACTER SET LATIN1 COLLATE LATIN1_swedish_ci; 
 ```
 
 Zastąp ją:
 
-```mysql
+```sql
 USE `Database-Name`;
 ```
 

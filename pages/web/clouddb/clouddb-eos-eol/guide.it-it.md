@@ -1,13 +1,13 @@
 ---
 title: 'Annunci di fine vendita/vita Web Cloud Databases'
-updated: 2023-05-03
+updated: 2023-06-09
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
-**Ultimo aggiornamento: 03/05/2023**
+**Ultimo aggiornamento: 09/06/2023**
 
 ## Obiettivo
 
@@ -16,7 +16,6 @@ Per maggiori informazioni, consulta la [politica di fine vita dei database gesti
 
 |Versione|Annuncio di fine vita|Fine vendita|Fine supporto|
 |---|---|---|---|
-|MariaDB 10.2|2020-09-29|2021-11-21|2022-05-23|
 |MariaDB 10.3|2021-08-18|2022-11-23|2023-05-25|
 |MariaDB 10.4|2022-07-22|2023-12-18|2024-06-18|
 |MariaDB 10.5|Da definire|Da definire|Da definire|
@@ -35,8 +34,8 @@ Per maggiori informazioni, consulta la [politica di fine vita dei database gesti
 
 ## Per saperne di più
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com>.
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

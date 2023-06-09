@@ -271,6 +271,8 @@ ovhai app run <shared-registry-address>/tumor_seg_streamlit_app:latest \
 - Do you want to use Streamlit to create an audio classification app? [Learn how to do it](/pages/platform/ai/deploy_tuto_03_streamlit_sounds_classification).
 - Learn how to create & deploy a Speech-to-Text app [here](/pages/platform/ai/deploy_tuto_09_streamlit_speech_to_text_app).
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:

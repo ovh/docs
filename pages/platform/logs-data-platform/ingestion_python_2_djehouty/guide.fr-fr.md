@@ -1,5 +1,7 @@
 ---
-title: Python 2.x - Push logs with Djehouty
+title: Pushing logs with a SDK - Python 2.x - Djehouty
+routes:
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-djehouty?id=kb_article_view&sysparm_article=KB0050050'
 updated: 2023-01-16
 ---
 
@@ -27,7 +29,7 @@ To complete this guide you will need:
 
 - Python 2, we recommend to install [pip](https://pip.pypa.io/en/stable/installing/){.external}.
 - [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
-- [To create at least one Stream and get its token.](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
+- [To create at least one Stream and get its token.](/pages/platform/logs-data-platform/getting_started_quick_start)
 
 ## Instructions
 
@@ -146,8 +148,7 @@ ltsv_logger.info("Bonjour '%s'", 'John', extra={"lang": 'fr'})
 
 ## Go further
 
-- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
-- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
-
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

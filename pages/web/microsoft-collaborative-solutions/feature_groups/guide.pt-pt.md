@@ -35,7 +35,7 @@ Ao clicar em `Criar um grupo de contacto`{.action}, aparecerá uma janela onde p
 |Nome|Descrição|
 |---|---|
 |Endereço de e-mail|Novo endereço que enviará mensagens ao grupo de difusão. Atenção: não pode introduzir um endereço de email já existente.|
-|Nome do grupo|Nome de exibição na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e no [webmail OVHcloud](https://www.ovh.pt/mail//) (OWA).|
+|Nome do grupo|Nome de exibição na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e no [webmail OVHcloud](https://www.ovh.pt/mail/) (OWA).|
 |Tamanho máx. entrada / saída|Pode especificar o tamanho máximo dos emails recebidos e enviados.|
 |Ocultar no Outlook|Se selecionar esta opção, o endereço de grupo não vai aparecer na lista de endereços do serviço Exchange.|
 |Autenticação necessária|Se selecionar esta opção, apenas os membros do grupo poderão enviar mensagens através do endereço coletivo.|
@@ -73,7 +73,7 @@ Atenção: as alterações feitas podem levar alguns minutos a entrar em vigor. 
 
 ### Passo 3: Enviar um email coletivo em OWA
 
-Já pode testar a sua lista de difusão (mailing list) através do [webmail OVHcloud](https://www.ovh.pt/mail//) (OWA). Para isso, basta enviar um email para o endereço coletivo.
+Já pode testar a sua lista de difusão (mailing list) através do [webmail OVHcloud](https://www.ovh.pt/mail/) (OWA). Para isso, basta enviar um email para o endereço coletivo.
 
 ![contactgroups](images/exchange-groups-step6.png){.thumbnail}
 

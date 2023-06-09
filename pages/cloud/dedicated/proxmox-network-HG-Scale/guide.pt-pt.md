@@ -1,7 +1,7 @@
 ---
 title: 'Configurar a rede em Proxmox VE nas gamas High Grade & SCALE'
 excerpt: 'Saiba como configurar a rede em Proxmox VE nas gamas High Grade & SCALE.'
-updated: 2023-01-09
+updated: 2023-05-11
 ---
 
 > [!primary]
@@ -25,7 +25,7 @@ Nas gamas High Grade & SCALE, o funcionamento dos Additional IP em modo bridged 
 
 - Dispor de um [servidor dedicado OVHcloud](https://www.ovhcloud.com/pt/bare-metal/)
 - Dispor de [Additional IP](https://www.ovhcloud.com/pt/bare-metal/ip/)
-* Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 > [!warning]
 >
@@ -41,19 +41,33 @@ Nas gamas High Grade & SCALE, o funcionamento dos Additional IP em modo bridged 
 
 ### Additional IP em modo roteado nas interfaces de rede públicas
 
+Esta configuração oferece melhores performances em termos de largura de banda, mas é menos flexível. Com esta configuração, os endereços Additional devem estar ligados a um servidor dedicado. Se dispõe de vários servidores de virtualização Proxmox e deseja migrar uma VM de um servidor para outro, deverá também migrar o endereço Additional IP para o servidor de destino, através da Área de Cliente OVHcloud ou através da API OVHcloud. Pode automatizar esta etapa escrevendo um script que utiliza as API da OVHcloud.  
+
 #### Esquema da configuração alvo
 
 ![esquema rodoviário](images/schema_route2022.png){.thumbnail}
 
 #### Explicações
 
+O Proxmox é baseado numa distribuição Debian. Neste guia, a configuração de rede será modificada através de SSH e não através da interface web.
+
 É preciso:
 
-* criar um agregado;
-* criar bridge;
-* autorizar o forwarding e adicionar as estradas.
+- conectar-se em SSH em Proxmox;
+- criar um agregado (linux bond);
+- criar um bridge;
+- autorizar o forwarding;
+- autorizar o proxy_arp;
+- adicionar estradas.
 
 #### Configurar o hypervisor
+
+Ligue-se ao servidor Proxmox através de SSH:
+
+```bash
+ssh root@PUB_IP_DEDICATED_SERVER
+# pode também utilizar o IP privado configurado no vRack
+```
 
 Tudo se passa no ficheiro `/etc/network/interfaces`:
 
@@ -64,6 +78,10 @@ vi /etc/network/interfaces
 ```bash
 auto lo
 iface lo inet loopback
+  # Enable IP forwarding
+  up echo "1" > /proc/sys/net/ipv4/ip_forward
+  # Enable proxy-arp only for public bond
+  up echo "1" > /proc/sys/net/ipv4/conf/bond0/proxy_arp
 
 # public interface 1
 auto ens33f0
@@ -83,32 +101,70 @@ iface ens35f0 inet manual
 auto ens35f1
 iface ens35f1 inet manual
 
-auto bond0
 # LACP aggregate on public interfaces
-# configured in DHCP mode on this example
+# configured in static mode on this example
 # Has the server's public IP
+auto bond0
 iface bond0 inet static
+    address PUB_IP_DEDICATED_SERVER/24
+	gateway PUB_GW
 	bond-slaves ens33f0 ens33f1
-    bond-miimon 100
-	bond-mode 802.3ad
+	bond-mode 4
+	bond-miimon 100
+	bond-downdelay 200
+	bond-updelay 200
+	bond-lacp-rate 1
+	bond-xmit-hash-policy layer3+4
+	# Use the mac address of the first public interface
 	hwaddress AB:CD:EF:12:34:56
 
 #Private
+auto bond1
+iface bond1 inet static
+	bond-slaves ens35f0 ens35f1
+	bond-mode 4
+	bond-miimon 100
+	bond-downdelay 200
+	bond-updelay 200
+	bond-lacp-rate 1
+	bond-xmit-hash-policy layer3+4
+	# Use the mac address of the first private interface
+	hwaddress GH:IJ:KL:12:34:56
 
-auto vmbr0
 # Configure the bridge with a private address and add route(s) to send the Additional IPs to it
 # A.B.C.D/X => Subnet of Additional IPs assigned to the server, this can be a host with /32
+# By default Proxmox creates vmbr0.
+# You can use it or create another one 
+auto vmbr0
 iface vmbr0 inet dhcp
-	bridge-ports bond0
+	# Define a private IP, it should not overlap your existing private networks on the vrack for example 
+	address 192.168.0.1/24
+	bridge-ports none
 	bridge-stp off
 	bridge-fd 0
-	hwaddress AB:CD:EF:12:34:56
-	
-post-up echo 1 > /proc/sys/net/ipv4/ip_forward
-post-up ip route add A.B.C.D/X dev vmbr0
+	# Add single additional
+	up ip route add A.B.C.D/32 dev vmbr0
+	# Add block IP
+	up ip route add A.B.C.D/28 dev vmbr0
+
+# Bridge used for private networks on vRack
+# The VLAN feature is enabled
+auto vmbr1
+iface vmbr1 inet manual
+        bridge-ports bond1
+        bridge-stp off
+        bridge-fd 0
+        bridge-vlan-aware yes
+        bridge-vids 2-4094
 ```
 
-Agora, execute os serviços de rede ou reinicie o servidor.
+Nesta fase, execute novamente os serviços de rede ou reinicie o servidor:
+
+```bash
+systemctl restart networking.service
+```
+
+Quando reinicia os serviços de rede, os flanges (vmbr0, por exemplo) podem estar no estado inativo. Isto deve-se ao facto de que o Proxmox desliga cada VM das luzes e não as liga de novo. Para forçar a ligação das VMs aos bridges, pode reiniciar as VMs.
 
 #### Exemplo de configuração VM cliente Debian
 
@@ -118,12 +174,30 @@ Conteúdo do ficheiro `/etc/network/interfaces`:
 auto lo ens18
 iface lo inet loopback
 iface ens18 inet static
-    address IP_FO
+    address ADDITIONAL_IP       # this should match with the IP A.B.C.D/32
     netmask 255.255.255.255
-    gateway 192.168.0.1
+    gateway 192.168.0.1			# this sould match with the private IP set on bridge
+```
+
+#### Teste e validação
+
+A partir de agora, as suas máquinas virtuais deverão poder associar um serviço público à Internet. Além disso, as suas máquinas virtuais podem também ser anexadas diretamente na Internet através do endereço Additional IP. A largura de banda disponível corresponde à largura de banda disponível nas interfaces públicas do seu servidor e não afetará as interfaces privadas utilizadas para o vRack. Esta largura de banda é partilhada com as outras máquinas virtuais no mesmo host que utilizam um endereço Additional IP e o host Proxmox para o acesso público.
+
+Para verificar o seu IP público, a partir da VM:
+
+```bash
+curl ifconfig.io
+ADDITIONAL_IP    				# should return your additional ip
 ```
 
 ### Additional IP através do vRack
+
+Esta configuração é mais flexível, não precisa de associar um IP adicional a um servidor mas ao vRack. Isto significa que se uma máquina virtual deseja utilizar um endereço Additional IP, pode solicitá-lo diretamente sem nenhuma configuração suplementar e independentemente do host no qual está alojada.
+
+> [!warning]
+>
+> Esta configuração está limitada a 600 Mb/s para o tráfego de saída.
+>
 
 #### Requisitos
 
@@ -135,7 +209,7 @@ iface ens18 inet static
 
 #### Esquema da configuração alvo
 
-![schema vrack](images/schema_vrack2022.png){.thumbnail}
+![esquema vrack](images/schema_vrack2022.png){.thumbnail}
 
 #### Explicações
 
@@ -144,9 +218,9 @@ Tem de:
 * criar um agregado;
 * criar um bridge ligado ao agregado;
 
-Primeiro, adicione o seu bloco público de endereços IP ao vRack. Para isso, aceda à secção `Bare Metal Cloud`{.action} da Área de Cliente OVHcloud e abra o menu `vRack`{.action}.
+Em primeiro lugar, adicione o seu bloco público de endereços IP ao vRack. Para isso, aceda à secção `Bare Metal Cloud`{.action} da Área de Cliente OVHcloud e abra o menu `vRack`{.action}.
 
-Selecione o seu vRack na lista para apresentar a lista dos serviços elegíveis. Clique no bloco público de endereços IP que deseja adicionar ao vRack e, a seguir, clique no botão `Adicionar`{.action}.
+Selecione o seu vRack na lista para apresentar a lista dos serviços elegíveis. Clique no bloco público de endereços IP que deseja adicionar ao vRack e, a seguir, no botão `Adicionar`{.action}.
 
 #### Configurar um endereço IP utilizável
 
@@ -253,6 +327,7 @@ iface ens18 inet static
     netmask 255.255.255.240
     gateway 46.105.135.110
 ```
+
 
 ## Quer saber mais?
 

@@ -135,7 +135,7 @@ Your website will then be available within a maximum of 24 hours.
 
 [Resolving the most common 1-click module errors](/pages/web/hosting/diagnostic_errors_module1clic)
 
-For specialised services (SEO, development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
+For specialised services (SEO, development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 

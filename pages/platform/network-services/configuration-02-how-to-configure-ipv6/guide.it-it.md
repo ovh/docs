@@ -46,8 +46,8 @@ Ecco una lista di termini impiegati in questa guida:
 |Lessico|Descrizione|
 |---|---|
 |YOUR_IPV6|Indirizzo IPv6 assegnato al servizio|
-|IPv6_PREFIX|Il prefisso del tuo blocco IPv6 (esempio: 2607:5300:60:62ac::/128 -> netmask = 128)|
-|IPv6_GATEWAY|Gateway del blocco IPv6|
+|IPV6_PREFIX|Il prefisso del tuo blocco IPv6 (esempio: 2607:5300:60:62ac::/128 -> netmask = 128)|
+|IPV6_GATEWAY|Gateway del blocco IPv6|
 
 
 ### Recupera le informazioni di rete
@@ -219,4 +219,6 @@ In ogni caso, se necessario, invia una richiesta di assistenza con gli elementi 
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

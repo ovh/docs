@@ -61,7 +61,7 @@ $ ssh-keygen -t ed25519 -a 256
 
 Il comando ti chiederà di salvare la chiave appena creata nel file standard:
 
-```bash
+```console
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
@@ -70,7 +70,7 @@ Per accettare il file predefinito premi "↩" (Invio). Una volta confermata l’
 
 È necessario salvare la chiave SSH nella directory “.ssh” e aggiungere ".pub" al nome del file della chiave pubblica.
 
-```ssh
+```console
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:
@@ -317,7 +317,7 @@ Nel primo step, scegli i parametri di localizzazione, selezionando la regione, l
 
 ![windows sysprep](images/windows-connect-02.png){.thumbnail}
 
-Il secondo step richiede la configurazione dell’account predefinito “Amministrator”. Inserisci la tua passphrase per due volte e clicca su `Finish`{.action} per completare il processo di installazione. Clicca sul simbolo dell'occhio per controllare se tutti i caratteri inseriti nei campi corrispondono alla configurazione effettiva della tua tastiera.
+Il secondo step richiede la configurazione dell’account predefinito "Administrator". Inserisci la tua passphrase per due volte e clicca su `Finish`{.action} per completare il processo di installazione. Clicca sul simbolo dell'occhio per controllare se tutti i caratteri inseriti nei campi corrispondono alla configurazione effettiva della tua tastiera.
 
 L’istanza si riavvierà e sarà possibile accedere con queste credenziali tramite un client Desktop remoto. 
 

@@ -51,7 +51,7 @@ Em casos raros, os ecrãs também podem ser provocados pelo seu fornecedor de ac
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/). De facto, não poderemos fornecer-lhe assistência **a partir do momento em que a infraestrutura em que o seu alojamento partilhado está presente não esteja em causa**. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). De facto, não poderemos fornecer-lhe assistência **a partir do momento em que a infraestrutura em que o seu alojamento partilhado está presente não esteja em causa**. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
 >
 
 > [!success]
@@ -138,7 +138,7 @@ phpinfo();
 >
 > Em certos casos, os ficheiros "**.htaccess**" presentes nos diretórios/dossiers situados a montante ou ao mesmo nível que o local onde colocou o seu ficheiro "**phpinfo.php**" podem influir na visualização num browser do "**phpinfo.php**". 
 >
-> As manipulações num ficheiro "**.htaccess**" podem ter consequências na visualização do seu site. Recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/) se sentir dificuldades em realizar o seguinte.
+> As manipulações num ficheiro "**.htaccess**" podem ter consequências na visualização do seu site. Recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) se sentir dificuldades em realizar o seguinte.
 >
 > Se não for apresentada e **unicamente para os utilizadores experientes**, renomeie os seus ficheiros "**.htaccess**" em "**.htaccess_OLD**" para que o servidor não os execute durante o seu teste. Dê-lhes o nome correto quando o diagnóstico for efetuado.
 >
@@ -193,7 +193,7 @@ Neste momento, sabe que as lentidões são geradas pelas páginas/scripts/fichei
 
 > [!warning]
 >
-> Se encontrar dificuldades para realizar as ações que se seguem, pode contactar um dos nossos [prestadores especializados](https://partner.ovhcloud.com/pt/). A OVHcloud não prestará assistência ao desenvolvimento e/ou otimização do conteúdo do seu website.
+> Se encontrar dificuldades para realizar as ações que se seguem, pode contactar um dos nossos [prestadores especializados](https://partner.ovhcloud.com/pt/directory/). A OVHcloud não prestará assistência ao desenvolvimento e/ou otimização do conteúdo do seu website.
 >
 
 Encontre aqui as ações a realizar para identificar a(s) fonte(s) da(s) lentidão e otimizar o seu website.
@@ -257,7 +257,7 @@ Para diminuir o fluxo de pedidos a cada um dos carregamentos das suas páginas, 
 
 > [!warning]
 >
-> As ações que realiza na sua base de dados podem ter consequências irreversíveis se não forem realizadas de forma metódica e correta. Recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/) se não tem a certeza das ações a realizar. 
+> As ações que realiza na sua base de dados podem ter consequências irreversíveis se não forem realizadas de forma metódica e correta. Recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) se não tem a certeza das ações a realizar. 
 >
 
 Verifique se um número consequente de pedidos é efetuado para a sua base de dados.<br>
@@ -300,7 +300,7 @@ Pode considerar uma [oferta de alojamento partilhado](https://www.ovhcloud.com/p
 
 ## Quer saber mais? <a name="go-further"></a>
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 

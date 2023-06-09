@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Abilitazione di HTTPS su un sito web statico S3 utilizzando un dominio personalizzato (EN)
 excerpt: Learn how to configure your website and the OVHcloud Load Balancer to enable HTTPS
-updated: 2023-05-15
+updated: 2023-06-06
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-storage-s3-static-website-https?id=kb_article_view&sysparm_article=KB0058057'
 ---
@@ -72,29 +72,37 @@ Enter the configuration information of your server:
 
 *You can retrieve this IP address by doing a dig command on the URL.*
 
-**Example**:
+**Example**: using dig command
 
 ```sh
-lxxxx@LWI1XXXXXX:~$ dig s3-website.gra.io.cloud.ovh.net
+lxxxx@LWI1XXXXXX:~$ dig my-site.s3-website.gra.io.cloud.ovh.net
 
-; <<>> DiG 9.16.1-Ubuntu <<>> s3-website.gra.io.cloud.ovh.net
+; <<>> DiG 9.16.1-Ubuntu <<>> my-site.s3-website.gra.io.cloud.ovh.net
 ;; global options: +cmd
 ;; Got answer:
-;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 36134
-;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
- 
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 22041
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
 ;; OPT PSEUDOSECTION:
 ; EDNS: version: 0, flags:; udp: 4096
 ;; QUESTION SECTION:
-;s3-website.gra.io.cloud.ovh.net. IN    A
- 
-;; AUTHORITY SECTION:
-cloud.ovh.net.          33      IN      SOA     dns111.ovh.net. tech.ovh.net. 2023040507 86400 3600 3600000 60
- 
-;; Query time: 19 msec
+;my-site.s3-website.gra.io.cloud.ovh.net. IN A
+
+;; ANSWER SECTION:
+my-site.s3-website.gra.io.cloud.ovh.net. 3600 IN A 141.95.161.77
+
+;; Query time: 12 msec
 ;; SERVER: 10.15.25.129#53(10.15.25.129)
-;; WHEN: Thu Apr 06 16:06:51 CEST 2023
-;; MSG SIZE  rcvd: 108
+;; WHEN: Mon Jun 05 16:09:56 CEST 2023
+;; MSG SIZE  rcvd: 84
+```
+
+**Example**: using host command
+
+```sh
+lxxxx@LWI1XXXXXX:~$ host my-site.s3-website.gra.io.cloud.ovh.net
+my-site.s3-website.gra.io.cloud.ovh.NET has address 141.95.161.77
+
 ```
 
 ![server custer configuration](images/serv-cluster-04.png){.thumbnail}
@@ -161,7 +169,7 @@ Edit the two A records to add the public IP address of your Load Balancer.
 
 Check that the website and the redirect work properly. Open a private browser to ensure that you do have a clean cache and type your domain name.
 
-**Example**: You can check the [https://monkey-profile.xyz](https://monkey-profile.xyz) website that is entirely hosted on an S3 bucket with HTTPS enabled and a **self-signed certificate**.
+**Example**:
 
 ![Testing the website](images/test.PNG){.thumbnail}
 

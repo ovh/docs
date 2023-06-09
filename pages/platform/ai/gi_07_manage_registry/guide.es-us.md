@@ -249,7 +249,7 @@ You can also use the Control Panel to deploy a job or an app from your private D
 
 ### GitHub registry
 
-You can also use a GitHub registry, also known as [GitHub Packages](/pages/platform/ai/gi_07_manage_registryghcr.io).
+You can also use a GitHub registry, also known as [GitHub Packages](https://github.com/features/packages).
 
 As indicated on their documentation, you can build and push a package image by using the following commands:
 
@@ -304,6 +304,8 @@ You can also use the Control Panel to deploy a job or an app from a GitHub regis
 - Learn [how to deploy an **app**](/pages/platform/ai/deploy_guide_02_getting_started).
 - You can check out the documentation about the [ovhai CLI](/pages/platform/ai/cli_15_commands_reference).
 
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

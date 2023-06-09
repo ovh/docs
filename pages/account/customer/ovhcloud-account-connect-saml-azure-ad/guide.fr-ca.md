@@ -15,7 +15,7 @@ Vous pouvez utiliser l'authentification **SSO** (*Single Sign-On*) pour vous con
 ## Prérequis
 
 - Avoir accès aux rôles **Administrateur d'applications** et **Administrateur d'utilisateurs** d'un service Azure AD
-- Disposer d'un [compte OVHcloud]/pages/account/customer/ovhcloud-account-creation)
+- Disposer d'un [compte OVHcloud]https://docs.ovh.com/ca/fr/customer/creer-compte-ovhcloud/)
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 ## En pratique

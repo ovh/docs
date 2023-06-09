@@ -93,7 +93,7 @@ Se não utilizou a funcionalidade "[Módulo 1 clique](/pages/web/hosting/cms_ins
 
 [Utilização do software FileZilla com o seu alojamento](/pages/web/hosting/ftp_filezilla_user_guide)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, convidamo-lo a consultar as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 

@@ -1,5 +1,7 @@
 ---
 title: Using OpenSearch Dashboards with Logs Data Platform
+routes:
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-opensearch-dashboards?id=kb_article_view&sysparm_article=KB0050065'
 updated: 2022-06-13
 ---
 
@@ -14,8 +16,9 @@ This guide will help you unleash the full power of [OpenSearch Dashboards](https
 This is what you need to know to get you started:
 
 - You are already sending logs on a stream you own: [see the quick start tutorial](/pages/platform/logs-data-platform/getting_started_quick_start)
+- There is nothing else
 
-After some training you will be able to do this kind of Dashboards:
+After some training you will be able to do this kind of Dashboard:
 
 ![OpenSearch Dashboards](images/osd.png)
 
@@ -48,7 +51,7 @@ Use the **...** menu to the right and select `Access to your OpenSearch Dashboar
 
 ![osd access](images/url.png){.thumbnail}
 
-Once there, use your LDP credentials to sign in and set on the first page. Click on the `Add data`{.action} button to add sample data you can play with. However if you want to use your own data, you must configure **Index Patterns** in the stack management page. This page is accessible by clicking on the `Manage`{.action} button next to the "Add data" button.  option in the left side menu, displayable by using the top left the sandwich button.
+Once there, use your LDP credentials to sign in and set on the first page. Click on the `Add data`{.action} button to add sample data you can play with. However if you want to use your own data, you must configure **Index Patterns** in the stack management page. This page is accessible by clicking on the `Manage`{.action} button next to the "Add data" button. You can also use the "Stack Management" option in the left side menu, displayable by using the top left the sandwich button.
 
 In this configuration page, you can configure as the Index name, the full name of your alias **logs-XXXXX-a-XXXXX**, but you can also use wildcards. Choose **timestamp** for the time field name then click on Discover tab to read your log entries.
 
@@ -62,6 +65,5 @@ To know what you can do with OpenSearch Dashboards, read the [OpenSearch Dashboa
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
 - Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
-- Community hub: <https://community.ovh.com/>
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
-
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

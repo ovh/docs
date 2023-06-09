@@ -193,7 +193,7 @@ De manière plus automatique, OVHcloud vous propose le [SSL Gateway](https://www
 
 ## Allez plus loin
 
-[Créer une clé SSH](/pages/cloud/dedicated/creating-ssh-keys-dedicated/)
+[Créer une clé SSH](/pages/cloud/dedicated/creating-ssh-keys-dedicated)
 
 [Sécuriser un VPS](/pages/cloud/vps/secure_your_vps)
 

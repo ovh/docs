@@ -48,7 +48,7 @@ Wybierz odpowiednią dystrybucję systemu Linux:
 
 Instancja uruchomi się po kilku sekundach. Wówczas zaloguj się i sprawdź kartę graficzną: 
 
-```ssh
+```bash
 lspci | grep -i nvidia
 00:05.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)
 ```

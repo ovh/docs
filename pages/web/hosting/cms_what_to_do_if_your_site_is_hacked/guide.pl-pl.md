@@ -28,7 +28,7 @@ Piractwo może pojawić się na kilka sposobów (niewyczerpująca lista):
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
 ## Wymagania początkowe
@@ -97,7 +97,7 @@ Zalecamy również użycie [menedżera haseł](/pages/account/customer/manage-ov
 
 > [!warning]
 >
-> W przypadku trudności z wykonaniem opisanych poniżej operacji, należy skontaktować się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/) w zakresie bezpieczeństwa cybernetycznego.
+> W przypadku trudności z wykonaniem opisanych poniżej operacji, należy skontaktować się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/) w zakresie bezpieczeństwa cybernetycznego.
 >
 
 Skorzystaj z naszego przewodnika na temat [statystyki i logi Twojego hostingu www](/pages/web/hosting/logs_and_statistics), aby wyszukać złośliwe elementy wprowadzone na Twoją stronę WWW. Informacje znajdziesz w logach "www". 
@@ -215,13 +215,13 @@ Zapoznaj się również z naszym przewodnikiem dotyczącym [jak zabezpieczyć Tw
 
 [Logowanie do przestrzeni dyskowej hostingu WWW](/pages/web/hosting/ftp_connection)
 
-[Zmiana konfiguracji hostingu](/pages/web/hosting/ovhconfig_modify_system_runtime/)
+[Zmiana konfiguracji hostingu](/pages/web/hosting/ovhconfig_modify_system_runtime)
 
 [Włącz firewall aplikacyjny](/pages/web/hosting/multisites_activating_application_firewall)
 
 [Optymalizacja wydajności strony](/pages/web/hosting/optimise_your_website_performance)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 

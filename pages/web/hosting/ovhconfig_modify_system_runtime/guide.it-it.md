@@ -91,7 +91,7 @@ Scegliere un ambiente di esecuzione differente consente di cambiare alcune speci
 
 Una volta scelto il nuovo ambiente, è possibile eseguire le modifiche in due modi:
 
-- **dallo Spazio Cliente OVH**: segui le istruzioni presenti nella sezione [Modificare la configurazione dell’hosting Web dallo Spazio Cliente](/pages/web/hosting/ovhconfig_modify_system_runtime/#modifica-la-configurazione-dellhosting-web-dallo-spazio-cliente-ovh){.external} di questa guida.
+- **dallo Spazio Cliente OVH**: segui le istruzioni presenti nella sezione [Modificare la configurazione dell’hosting Web dallo Spazio Cliente](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web//#modifica-la-configurazione-dellhosting-web-dallo-spazio-cliente-ovh){.external} di questa guida.
 - **agire manualmente sul file .ovhconfig**: questa soluzione, più tecnica, richiede la connessione allo spazio di storage. Per modificare il file **.ovhconfig**, consulta la nostra guida [Configurare il file .ovhconfig di un hosting Web](/pages/web/hosting/ovhconfig_configuration){.external}.
 
 #### Versione di PHP
@@ -102,7 +102,7 @@ Dal momento che le ultime versioni potrebbero non includere alcune funzionalità
 
 È possibile modificare la versione PHP di un hosting Web in diversi modi:
 
-- **dallo Spazio Cliente OVH**: segui le istruzioni presenti nella sezione [Modificare la configurazione dell’hosting Web dallo Spazio Cliente](/pages/web/hosting/ovhconfig_modify_system_runtime/#modifica-la-configurazione-dellhosting-web-dallo-spazio-cliente-ovh){.external} di questa guida.
+- **dallo Spazio Cliente OVH**: segui le istruzioni presenti nella sezione [Modificare la configurazione dell’hosting Web dallo Spazio Cliente](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web//#modifica-la-configurazione-dellhosting-web-dallo-spazio-cliente-ovh){.external} di questa guida.
 - **agire manualmente su un file presente nello spazio di storage**: questa soluzione, più tecnica, richiede la connessione allo spazio di storage. 
 
 In generale, per maggiori informazioni sulle modifiche di una versione di PHP, consulta la nostra guida [Modificare la versione PHP di un hosting Web](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014){.external}.
@@ -113,7 +113,7 @@ Il motore PHP consente di attivare o disattivare l’acceleratore PHP (PHP-FPM),
 
 È possibile modificare il motore PHP di un hosting Web in diversi modi:
 
-- **dallo Spazio Cliente OVH**: segui le istruzioni presenti nella sezione [Modificare la configurazione dell’hosting Web dallo Spazio Cliente](/pages/web/hosting/ovhconfig_modify_system_runtime/#modifica-la-configurazione-dellhosting-web-dallo-spazio-cliente-ovh){.external} di questa guida. Per attivare l’acceleratore PHP (PHP-FPM) seleziona “php” come motore; per disattivarlo, scegli “phpcgi”.
+- **dallo Spazio Cliente OVH**: segui le istruzioni presenti nella sezione [Modificare la configurazione dell’hosting Web dallo Spazio Cliente](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web//#modifica-la-configurazione-dellhosting-web-dallo-spazio-cliente-ovh){.external} di questa guida. Per attivare l’acceleratore PHP (PHP-FPM) seleziona “php” come motore; per disattivarlo, scegli “phpcgi”.
 - **agire manualmente sul file .ovhconfig**: questa soluzione, più tecnica, richiede la connessione allo spazio di storage. Per modificare il file **.ovhconfig**, consulta la nostra guida [Configurare il file .ovhconfig di un hosting Web](/pages/web/hosting/ovhconfig_configuration){.external}.
 
 #### Modalità 
@@ -127,7 +127,7 @@ La modalità permette di gestire sia il comportamento della cache dei file stati
 
 È possibile modificare la modalità utilizzata da un hosting Web in diversi modi:
 
-- **dallo Spazio Cliente OVH**: segui le istruzioni presenti nella sezione [Modificare la configurazione dell’hosting Web dallo Spazio Cliente](/pages/web/hosting/ovhconfig_modify_system_runtime/#modifica-la-configurazione-dellhosting-web-dallo-spazio-cliente-ovh){.external} di questa guida.
+- **dallo Spazio Cliente OVH**: segui le istruzioni presenti nella sezione [Modificare la configurazione dell’hosting Web dallo Spazio Cliente](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web//#modifica-la-configurazione-dellhosting-web-dallo-spazio-cliente-ovh){.external} di questa guida.
 - **agire manualmente sul file .ovhconfig**: questa soluzione, più tecnica, richiede la connessione allo spazio di storage. Per modificare il file **.ovhconfig**, consulta la nostra guida [Configurare il file .ovhconfig di un hosting Web](/pages/web/hosting/ovhconfig_configuration){.external}.
 
 ## Per saperne di più

@@ -196,13 +196,13 @@ Questo messaggio di errore significa che il database che stai cercando di import
 
 Inoltre, la seguente richiesta non è autorizzata:
 
-```mysql
+```sql
 CREATE DATABASE IF NOT EXISTS `Database-Name` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
 ```
 
 Sostituiscila con:
 
-```mysql
+```sql
 USE `Database-Name`;
 ```
 

@@ -2,14 +2,14 @@
 title: Ridimensiona un’istanza
 excerpt: Ridimensiona un'istanza con Horizon
 legacy_guide_number: g1778
-updated: 2021-11-22
+updated: 2023-05-24
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
-**Ultimo aggiornamento: 23/11/2021**
+**Ultimo aggiornamento: 24/05/2023**
 
 ## Obiettivo
 
@@ -21,6 +21,11 @@ In seguito allo sviluppo della tua attività o semplicemente all’evoluzione de
 >
 > Per i modelli classici è possibile solo il ridimensionamento verso un modello superiore.
 > Questa operazione comporta anche l'interruzione dell'istanza durante l'operazione.
+> 
+
+> [!warning]
+>
+> Le istanze Metal possono essere ridimensionate solo da e verso altre istanze Metal.
 > 
 
 > [!success]

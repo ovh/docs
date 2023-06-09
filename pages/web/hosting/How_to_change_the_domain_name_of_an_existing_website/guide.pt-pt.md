@@ -22,7 +22,7 @@ Este tutorial tem como objetivo explicar os principais passos a seguir quando de
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
+> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
 >
 
 ## Requisitos
@@ -36,7 +36,7 @@ Este tutorial tem como objetivo explicar os principais passos a seguir quando de
 > [!warning]
 >
 > A alteração do nome de domínio para aceder ao seu site pode afetar o seu referenciamento. 
-> Esteja atento às operações que vai efetuar ou contactar um [fornecedor especializado](https://partner.ovhcloud.com/pt/) no referenciamento, se necessário.
+> Esteja atento às operações que vai efetuar ou contactar um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) no referenciamento, se necessário.
 >
 
 Para alterar o domínio de acesso ao seu website, deverá realizar várias etapas por uma ordem precisa.
@@ -89,7 +89,7 @@ A maioria dos sites utiliza bases de dados para funcionar. A arborescência dest
 
 > [!warning]
 >
-> Atenção, as operações descritas na etapa 2 são extremamente sensíveis e podem ter consequências graves para o seu website se não forem efetuadas com precaução. Se tiver alguma dúvida, não tente nada e recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/).
+> Atenção, as operações descritas na etapa 2 são extremamente sensíveis e podem ter consequências graves para o seu website se não forem efetuadas com precaução. Se tiver alguma dúvida, não tente nada e recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/).
 >
 > Antes de efetuar qualquer ação, aconselhamos que recupere um [backup do seu espaço de armazenamento FTP](/pages/web/hosting/ftp_save_and_backup) bem como um [backup da sua base de dados](/pages/web/hosting/sql_database_export). Isto permitir-lhe-á restaurar o seu site em caso de manipulação incorreta.
 >
@@ -149,7 +149,7 @@ Uma vez o domínio antigo retirado do separador multi-sites e registado na OVHcl
 
 [Reencaminhar um domínio](/pages/web/domains/redirect_domain_name)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 

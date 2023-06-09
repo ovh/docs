@@ -212,6 +212,6 @@ Já estão instaladas neste modo as seguintes ferramentas:
 
 ## Quer saber mais?
 
-[Alterar a palavra-passe administrador num servidor dedicado Windows](/pages/cloud/dedicated/changing-admin-password-on-windows/)
+[Alterar a palavra-passe administrador num servidor dedicado Windows](/pages/cloud/dedicated/changing-admin-password-on-windows)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

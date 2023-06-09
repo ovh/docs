@@ -64,5 +64,4 @@ To know what you can do with OpenSearch Dashboards, read the [OpenSearch Dashboa
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
 - Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
-
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

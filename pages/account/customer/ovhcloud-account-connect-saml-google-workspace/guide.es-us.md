@@ -1,14 +1,14 @@
 ---
 title: Activar las conexiones SSO de Google Workspace con su cuenta OVHcloud
 excerpt: "Cómo asociar el servicio Google Workspace a su cuenta de OVHcloud a través de SAML 2.0"
-updated: 2023-03-30
+updated: 2023-06-01
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 30/03/2023**
+**Última actualización: 01/06/2023**
 
 ## Objetivo
 

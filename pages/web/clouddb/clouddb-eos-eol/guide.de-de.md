@@ -1,13 +1,13 @@
 ---
 title: Web Cloud Databases - EOL und EOS Ankündigungen
-updated: 2023-05-03
+updated: 2023-06-09
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 03.05.2023**
+**Letzte Aktualisierung am 09.06.2023**
 
 ## Ziel
 
@@ -17,7 +17,6 @@ Weitere Informationen erhalten Sie auf der Seite zur [EOL Policy für Managed Da
 
 |Version|EOL Ankündigung|End-of-Sale|End-of-Support|
 |---|---|---|---|
-|MariaDB 10.2|2020-09-29|2021-11-21|2022-05-23|
 |MariaDB 10.3|2021-08-18|2022-11-23|2023-05-25|
 |MariaDB 10.4|2022-07-22|2023-12-18|2024-06-18|
 |MariaDB 10.5|Noch festzulegen|Noch festzulegen|Noch festzulegen|

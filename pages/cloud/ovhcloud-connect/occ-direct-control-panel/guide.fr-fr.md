@@ -158,13 +158,13 @@ La suppression récursive est plus lente que la suppression séquentielle de cha
 >
 #### Suppression d'une configuration de routage
 
-Pour supprimer une configuration de routage, cliquez sur le le bouton `(...)`{.action} sur la configuration de routage à supprimer puis sur `Supprimer`{.action}.
+Pour supprimer une configuration de routage, cliquez sur le bouton `(...)`{.action} sur la configuration de routage à supprimer puis sur `Supprimer`{.action}.
 
 ![suppression configuration routage](images/deleterouting.png){.thumbnail}
 
 #### Suppression d'une configuration DC
 
-Pour supprimer une configuration DC, cliquez sur le le bouton `(...)`{.action} sur la configuration DC à supprimer puis sur `Supprimer`{.action}.
+Pour supprimer une configuration DC, cliquez sur le bouton `(...)`{.action} sur la configuration DC à supprimer puis sur `Supprimer`{.action}.
 
 ![suppression configuration DC](images/deletedc.png){.thumbnail}
 
@@ -174,7 +174,7 @@ Pour supprimer une configuration DC, cliquez sur le le bouton `(...)`{.action} s
 
 #### Suppression d'une configuration PoP
 
-Pour supprimer une configuration PoP, cliquez sur le le bouton `(...)`{.action} sur la configuration PoP à supprimer puis sur `Supprimer la configuration`{.action}.
+Pour supprimer une configuration PoP, cliquez sur le bouton `(...)`{.action} sur la configuration PoP à supprimer puis sur `Supprimer la configuration`{.action}.
 
 ![suppression configuration PoP](images/deletepop.png){.thumbnail}
 

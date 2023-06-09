@@ -16,9 +16,9 @@ This guide will help you to track your slowest queries and send them to Logs Dat
 
 Before, you must read these three guides:
 
-- [Starting with Logs Data Platform.](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
-- [How to setup a Logstash input?](/pages/platform/logs-data-platform/ingestion_logstash_dedicated_input){.ref}
-- [Using Filebeat with Logs Data Platform.](/pages/platform/logs-data-platform/ingestion_filebeat){.ref}
+- [Starting with Logs Data Platform.](/pages/platform/logs-data-platform/getting_started_quick_start)
+- [How to setup a Logstash input?](/pages/platform/logs-data-platform/ingestion_logstash_dedicated_input)
+- [Using Filebeat with Logs Data Platform.](/pages/platform/logs-data-platform/ingestion_filebeat)
 
 ## Instructions
 
@@ -39,7 +39,7 @@ If you add theses lines to your MySQL configuration file and restart it, MySQL w
 
 Here is a sample of the lines produced by the slow query log:
 
-```MySQL
+```sql
  # Time: 161223 16:43:49
  # User@Host: guest[guest] @ localhost []  Id:     2
  # Query_time: 0.734103  Lock_time: 0.000161 Rows_sent: 72761  Rows_examined: 518199
@@ -163,13 +163,13 @@ A fully parsed log looks like this:
 - You can track the **mysql_slowlog_user** and the **mysql_slowlog_host** that trigger the slowest queries.
 - You have the **mysql_slowlog_rows_examined_int** scanned and returned
 
-All this information can help you to analyse the most difficult queries for your database. You will know when to scale and when your database is too big for your hardware or when to optimize your queries. Of course it is always better to have a nice dashboard to display your own key performance indicators. One way to have this critical information as soon as it arrives is to use the [alerting feature.](/pages/platform/logs-data-platform/alerting_stream){.ref}
+All this information can help you to analyse the most difficult queries for your database. You will know when to scale and when your database is too big for your hardware or when to optimize your queries. Of course it is always better to have a nice dashboard to display your own key performance indicators. One way to have this critical information as soon as it arrives is to use the [alerting feature.](/pages/platform/logs-data-platform/alerting_stream)
 
 ![slow_graylog](images/mysql_slow_dashboard.png){.thumbnail}
 
 ## Go further
 
-- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start){.ref}
-- Documentation: [Guides](/pages/platform/logs-data-platform){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

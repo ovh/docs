@@ -91,4 +91,6 @@ Sie finden den Bestellschein auch in Ihrem Kundencenter, wenn Sie im Bereich `Da
 
 Im nächsten Schritt muss die IP-Adresse in Ihrem Betriebssystem konfiguriert werden. Lesen Sie dazu unsere [Anleitung zur IP-Konfiguration](/pages/platform/network-services/getting-started-04-configure-additional-ip-to-instance).
 
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
+
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

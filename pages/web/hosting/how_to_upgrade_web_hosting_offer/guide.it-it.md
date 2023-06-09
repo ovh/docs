@@ -64,7 +64,7 @@ Prima di passare dall'offerta [Personale](https://www.ovhcloud.com/it/web-hostin
 
 Prima di passare a un'offerta inferiore, assicurati che la nuova offerta contenga sufficienti [database](https://www.ovhcloud.com/it/web-hosting/options/start-sql/). Verifica anche che siano di dimensioni sufficienti.
 
-In caso contrario, rimuovi i database inutilizzati e riduci, se necessario, la quantità di dati che contengono. Questa quantità non dovrà superare la dimensione massima dei database della nuova offerta (per qualsiasi richiesta di assistenza sulle operazioni da effettuare, contatta i partner OVHcloud(https://partner.ovhcloud.com/it/)).
+In caso contrario, rimuovi i database inutilizzati e riduci, se necessario, la quantità di dati che contengono. Questa quantità non dovrà superare la dimensione massima dei database della nuova offerta (per qualsiasi richiesta di assistenza sulle operazioni da effettuare, contatta i partner OVHcloud(https://partner.ovhcloud.com/it/directory/)).
 
 Una volta eliminati i dati sui tuoi database, utilizza la scheda `Database`{.action} nella sezione `Hosting`{.action} dello Spazio Cliente OVHcloud. Clicca sul pulsante `...`{.action} a destra della base interessata e su `Ricalcola la quota`{.action}.
 
@@ -174,7 +174,7 @@ Segui [queste istruzioni](#modify) per effettuare la modifica dell'offerta.
 
 [Ottimizza le performance del tuo sito](/pages/web/hosting/optimise_your_website_performance)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](https://www.ovhcloud.com/it/support-levels/).
 

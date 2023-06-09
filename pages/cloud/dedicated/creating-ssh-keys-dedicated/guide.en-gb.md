@@ -31,33 +31,33 @@ From a Mac computer or a device with a Linux OS installed, first open the comman
 
 Verify that you have a ".ssh" folder in your $HOME directory. If the folder does not exist, create it:
 
-```sh
-# mkdir ~/.ssh
+```bash
+mkdir ~/.ssh
 ```
 
 Use the following command to create a 4096 bit RSA key:
 
-```sh
-# ssh-keygen -b 4096
+```bash
+ssh-keygen -b 4096
 ```
 Using the "-t" option with this command allows you to specify a different encryption method, for example:
 
-```sh
-# ssh-keygen -t ed25519 -a 256
+```bash
+ssh-keygen -t ed25519 -a 256
 ```
 
 The command will prompt you to save the newly created key in the standard file:
 
-```sh
+```console
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
-You can accept the default file by pressing "↩". Now you will have the option to enter a passphrase to password-protect your SSH key. This is recommended for added security.
+Confirm with "Enter". You can protect your SSH key with a passphrase at the next prompt. This is recommended for added security.
 
 Your SSH keys should be stored in the ".ssh" directory. The public key file will have ".pub" added to the filename.
 
-```ssh
+```console
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:
@@ -83,8 +83,8 @@ The key's randomart image is:
 
 In order to view and export your public key, use the "cat" command on your ".pub" key file and copy the output:
 
-```ssh
-# cat ~/.ssh/id_rsa.pub
+```bash
+cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8teh2NJ42qYZV98gTNhumO1b6rMYIkAfRVazl
 k6dSS3xf2MXJ4YHsDacdjtJ+evXCFBy/IWgdkFtcvsGAMZ2N1RdvhDyQYcy6NDaJCBYw1K6Gv5fJ
 SHCiFXvMF0MRRUSMneYlidxUJg9eDvdygny4xOdC6c1JrPrSgOc2nQuKeMpOoOWLINIswg1IIFVk
@@ -98,7 +98,7 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
 >In a MacOS Terminal, you can also use the "pbcopy" and "pbpaste" commands to handle key strings. For example, use this command to copy the key from the file "id_rsa.pub" to the clipboard:
 >
 
-```ssh
+```bash
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
@@ -127,25 +127,25 @@ You can select and copy the public key from this window. There is also the optio
 
 Navigate to your $HOME directory and create the ".ssh" folder (if it does not exist):
 
-```ssh
+```bash
 $ mkdir ~/.ssh
 ```
 
 To store the key for the current user, open a file named "authorized_keys" with your preferred text editor:
 
-```ssh
+```bash
 $ nano ~/.ssh/authorized_keys
 ```
 
 Copy and paste your **public key** into this new file. Save the file and exit the editor. Reboot your server or only restart the OpenSSH daemon (the appropriate command may vary depending on your OS):
 
-```ssh
+```bash
 $ systemctl restart sshd
 ```
 
 To verify that your key has been set up properly, attempt to access your server via SSH using the following command. Replace "IP_ADDRESSorHOSTNAME" with the IP address or hostname of the server you are trying to access:
 
-```ssh
+```bash
 $ ssh user@IP_ADDRESSorHOSTNAME
 ```
 

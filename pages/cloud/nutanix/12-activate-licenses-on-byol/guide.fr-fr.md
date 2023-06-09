@@ -122,7 +122,7 @@ Cliquez sur `Enregistrer`{.action} pour sauver le fichier de licence sur votre o
 
 ![03 create NSF for PC 08](images/03-create-nsf-for-pc08.png){.thumbnail}
 
-Revenez sur sur **Prism Central** dans la gestion des licences et cliquez sur `Upload`{.action} pour installer le fichier de licences.
+Revenez sur **Prism Central** dans la gestion des licences et cliquez sur `Upload`{.action} pour installer le fichier de licences.
 
 ![04 Add license to PC 01](images/04-add-license-to-pc01.png){.thumbnail}
 

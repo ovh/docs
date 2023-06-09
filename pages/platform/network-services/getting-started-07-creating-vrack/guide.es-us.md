@@ -667,4 +667,6 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 
 [Servidores dedicados - Crear varias VLAN en el vRack](/pages/cloud/dedicated/creating-multiple-vlans-in-a-vrack)
 
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

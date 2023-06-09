@@ -147,4 +147,6 @@ Un des gros avantages d'utiliser des technologies standards et ouvertes, comme O
 |[Kubernetes CLI Overview](https://kubernetes.io/docs/reference/kubectl/overview/) (EN)| La documentation de l'incontournable client en ligne de commande 'kubctl'.|
 |[Kubernetes APIs Overview](https://kubernetes.io/docs/reference/using-api/) (EN)| La documentation de l'API de Kubernetes, utile pour avoir une vue d'ensemble des possibilités.|
 
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services. 
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

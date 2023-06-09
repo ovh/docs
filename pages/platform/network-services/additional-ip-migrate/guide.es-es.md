@@ -69,4 +69,6 @@ La Additional IP puede configurarse en el servidor de destino antes o después d
 
 [Importar una Additional IP](/pages/platform/network-services/additional-ip-import)
 
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

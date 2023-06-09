@@ -19,9 +19,9 @@ Sur les gammes High Grade & SCALE, le fonctionnement des Additional IP en mode b
 
 ## Prérequis
 
-* Disposer d'un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
-* Disposer d'[Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/)
-* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Disposer d'un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr/bare-metal/)
+- Disposer d'[Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/)
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 > [!warning]
 >

@@ -167,7 +167,7 @@ Si se ha producido un fallo en el envío:
 </HEAD>
 <BODY>
 KO<br>
-Missing message. For more informations: /pages/telecom/sms/envoyer_des_sms_depuis_une_url_-_http2sms<br>
+Missing message. For more informations: https://docs.ovh.com/es/sms/enviar-sms-desde-una-url<br>
 </BODY>
 </HTML>
 ```

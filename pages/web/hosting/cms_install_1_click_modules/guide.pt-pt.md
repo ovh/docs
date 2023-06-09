@@ -25,7 +25,7 @@ Os "módulos 1 clique" permitem a instalação fácil e rápida de um website (s
 - Utilizar [uma versão de PHP compatível](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014) no seu alojamento web.
 - Ter [configurado corretamente o seu ficheiro .ovhconfig](/pages/web/hosting/ovhconfig_configuration).
 - O diretório (pasta raiz) onde será instalado o seu "módulo 1 clique" deve estar vazio ou atualmente inexistente.
-- O domínio (com subdomínio se desejar) que será utilizado no seu website deve ser declarado como [Multi-site](/pages/web/hosting/multisites_configure_multisite/) no seu alojamento web da OVHcloud.
+- O domínio (com subdomínio se desejar) que será utilizado no seu website deve ser declarado como [Multi-site](/pages/web/hosting/multisites_configure_multisite) no seu alojamento web da OVHcloud.
 
 ## Instruções
 
@@ -73,7 +73,7 @@ Uma vez selecionado o CMS, selecione uma instalação **rápida** ou **avançada
 
 #### Instalação rápida de um "módulo em 1 clique"
 
-Escolha o nome de domínio do seu CMS, controle o diretório alvo que aparece automaticamente após a escolha do nome de domínio e verifique que a casa `Instalação em modo avançado`{.action}. não está selecionada. Por fim, clique no botão `Instalar` {.action}.
+Escolha o nome de domínio do seu CMS, controle o diretório alvo que aparece automaticamente após a escolha do nome de domínio e verifique que a casa `Instalação em modo avançado`{.action}. não está selecionada. Por fim, clique no botão `Instalar`{.action}.
 
 > [!warning]
 >
@@ -102,7 +102,7 @@ Insira as informações de ligação à sua base de dados.
 
 - A base de dados já está criada no seu alojamento web: selecione-a no menu pendente `Selecione uma base de dados`{.action} e introduza as informações solicitadas.
 - A base de dados ainda não está criada no seu alojamento web: [crie a sua base de dados incluída com o seu alojamento](/pages/web/hosting/sql_create_database), de seguida, volte ao menu desvio `Selecione uma base de dados`{.action} e depois complete as informações pedidas.
-- A base de dados está [criada na instância Web Cloud Databases](/pages/web/clouddb/create-db-and-user-on-db-server/): no menu pendente `Selecione uma base de dados`{.action}, selecione a `Base de dados externa ap seu alojamento web`{.action} e introduza as informações solicitadas. A instância e o alojamento web devem estar alojados no mesmo datacenter.
+- A base de dados está [criada na instância Web Cloud Databases](/pages/web/clouddb/create-db-and-user-on-db-server): no menu pendente `Selecione uma base de dados`{.action}, selecione a `Base de dados externa ap seu alojamento web`{.action} e introduza as informações solicitadas. A instância e o alojamento web devem estar alojados no mesmo datacenter.
 - A base de dados é criada noutro alojamento Web da OVHcloud: no menu pendente `Selecione uma base de dados`{.action}, selecione a `Base de dados externa ap seu alojamento web`{.action} e introduza as informações solicitadas. A base de dados e o alojamento web devem estar alojados no mesmo datacenter.
 
 As restantes informações solicitadas para a base de dados são as seguintes:

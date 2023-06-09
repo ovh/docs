@@ -1,7 +1,7 @@
 ---
 title: Installation von WordPress auf einer Instanz
 excerpt: Erfahren Sie hier, wie Sie eine Public Cloud Instanz für das Hosting von WordPress-Webseiten verwenden
-updated: 2021-10-15
+updated: 2023-05-17
 ---
 
 **Letzte Aktualisierung am 15.10.2021**
@@ -15,11 +15,9 @@ Dieses Tutorial enthält die Grundschritte für die manuelle Installation von Wo
 **Diese Anleitung erklärt, wie Sie WordPress auf einer Public Cloud Instanz installieren.**
 
 > [!warning]
+> In diesem Tutorial erläutern wir die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchzuführenden Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen.
 >
-> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
-> 
-> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder stellen Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). 
-Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. 
+> Bei Schwierigkeiten kontaktieren Sie bitte einen spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder stellen Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
 >
 
 ## Voraussetzungen
@@ -79,7 +77,7 @@ Sie können dann eine Methode auswählen, um den Zugang zu Ihrem Datenbankserver
 Switch to unix_socket authentication [Y/n]
 ```
 
-Es wird empfohlen, anstelle des Zugangs mittels Root-Passwort die vorgeschlagene Authentifizierungsmethode zu verwenden. Geben Sie `y`{.action} ein und drücken Sie dann `Enter`{.action}. (Wenn Sie sich stattdessen für die Verwendung des Root-Benutzers als Zugangsmethode entscheiden, geben Sie `n`{.action} ein und legen Sie danach das Root-Passwort fest.)
+Es wird empfohlen, anstelle des Zugangs mittels Root-Passwort die vorgeschlagene Authentifizierungsmethode (*unix_socket*) zu verwenden. Geben Sie `y`{.action} ein und drücken Sie dann `Enter`{.action}. (Wenn Sie sich für die Verwendung des Root-Benutzers als Zugangsmethode entscheiden, geben Sie stattdessen `n`{.action} ein und legen Sie das Root-Passwort an der nächsten Eingabeaufforderung fest.)
 
 Geben Sie bei der nächsten Aufforderung `n`{.action} ein:
 
@@ -89,26 +87,26 @@ Change the root password? [Y/n]
 
 Da die nachfolgenden Prompts Sicherheitseinstellungen betreffen, bestätigen Sie jeden einzelnen mit `y`{.action} bis das Skript abgeschlossen ist.
 
-Wenn Sie den MariaDB-Zugang auf die empfohlene Weise konfiguriert haben (*unix_socket*), verfügen Sie ab sofort über einen automatischen Datenbankserver-Root-Zugang, sobald Sie als Benutzer mit erhöhten Berechtigungen auf der Instanz eingeloggt sind.
+Wenn Sie den MariaDB-Zugang auf die empfohlene Weise konfiguriert haben (*unix_socket*), verfügen Sie ab sofort automatisch über Administrator-Zugang zum Datenbankserver, sobald Sie als Benutzer mit erhöhten Berechtigungen (*sudo*) auf dem Server eingeloggt sind.
 
 Öffnen Sie die MariaDB Shell:
 
 ```bash
 debian@instance:~$ sudo mariadb
 ```
-```mysql
+```sql
 MariaDB [(none)]> 
 ```
 
 Erstellen Sie die Datenbank für WordPress:
 
-```mysql
+```sql
 MariaDB [(none)]> CREATE DATABASE wordpress;
 ```
 
 Geben Sie anschließend einem neuen Benutzer namens "wordpress" alle Rechte auf dieser Datenbank. Dieser Benutzer wird auf die Datenbank zugreifen und alle Operationen für das WordPress-CMS durchführen. Ersetzen Sie dabei `Ihr_Passwort` mit einem starken Passwort für diesen Benutzer.
 
-```mysql
+```sql
 MariaDB [(none)]> GRANT ALL ON wordpress.* TO 'wordpress'@'localhost' IDENTIFIED BY 'Ihr_Passwort' WITH GRANT OPTION;
 ```
 
@@ -119,10 +117,10 @@ MariaDB [(none)]> GRANT ALL ON wordpress.* TO 'wordpress'@'localhost' IDENTIFIED
 
 Die Datenbank ist nun für die Verwendung mit WordPress bereit. Stellen Sie sicher, dass die Änderungen für die nachfolgenden Schritte angewendet werden und verlassen Sie anschließend die MariaDB Shell:
 
-```mysql
+```sql
 MariaDB [(none)]> FLUSH PRIVILEGES;
 ```
-```mysql
+```sql
 MariaDB [(none)]> exit;
 ```
 
@@ -146,7 +144,7 @@ debian@instance:~$ sudo ufw app list | grep WWW
 
 Wenn Sie "WWW Full" wählen, werden sowohl sichere Verbindungen (Port 443) als auch ungesicherte HTTP-Anfragen (Port 80) zum Webserver zugelassen.
 
-Um zu sehen, welche Ports von einem bestimmten Profil beeinflusst werden, geben Sie ```sudo ufw app info "Name des Profils"``` ein.
+Um zu sehen, welche Ports von einem bestimmten Profil beeinflusst werden, geben Sie `sudo ufw app info "Name des Profils"` ein.
 
 Mit folgendem Befehl werden die im Profil "WWW Full" definierten Ports freigegeben:
 
@@ -154,19 +152,20 @@ Mit folgendem Befehl werden die im Profil "WWW Full" definierten Ports freigegeb
 debian@instance:~$ sudo ufw allow 'WWW Full'
 ```
 
-Da alle nicht ausdrücklich autorisierten Ports nach der Aktivierung der Firewall gesperrt werden, stellen Sie sicher, dass auch SSH-Verbindungen weiterhin erlaubt sind (Port 22):
+Da alle nicht ausdrücklich autorisierten Ports nach der Aktivierung der Firewall **gesperrt** werden, stellen Sie sicher, dass auch SSH-Verbindungen weiterhin erlaubt sind (Port 22 in einer Standardkonfiguration):
 
 ```bash
 debian@instance:~$ sudo ufw allow 'SSH'
 ```
 
-Überprüfen Sie schließlich die Konfiguration und aktivieren Sie die Firewall-Regeln:
+Aktivieren Sie die Firewall-Regeln und überprüfen Sie die Konfiguration:
+
+```bash
+debian@instance:~$ sudo ufw enable
+```
 
 ```bash
 debian@instance:~$ sudo ufw status
-```
-```bash
-debian@instance:~$ sudo ufw enable
 ```
 
 Sie können mit UFW noch weitere Maßnahmen umsetzen, beispielsweise um DOS-Angriffe (*denial of service*) einzuschränken oder wenn Sie Anfragen aus bestimmten IP-Adressbereichen verhindern möchten. Folgen Sie hierzu der offiziellen Dokumentation zu UFW.
@@ -233,12 +232,18 @@ Sobald Sie bestätigt haben, können Sie sich mit den im vorherigen Schritt defi
 
 > [!primary]
 >
-> Um sichere Verbindungen (`https`) herstellen zu können, muss der Webserver über eine Zertifizierungsstelle wie [Let's Encrypt](https://letsencrypt.org/){.external}, die kostenlose Zertifikate anbietet, abgesichert werden. Hierzu muss ein Client-Tool (etwa "Certbot") installiert und Apache entsprechend konfiguriert werden. Ohne diesen Schritt wird Ihre Website nur Anfragen über `http` akzeptieren können.
+> Um sichere Verbindungen (`https`) herstellen zu können, muss der Webserver über eine Zertifizierungsstelle wie [Let's Encrypt](https://letsencrypt.org/){.external}, die kostenlose Zertifikate anbietet, abgesichert werden. Hierzu muss ein Client-Tool ("Certbot" in diesem Beispiel) installiert und Apache entsprechend konfiguriert werden. Ohne diesen Schritt wird Ihre Website nur Anfragen über `http` akzeptieren können.
 >
+> Alternativ dazu bietet Ihnen OVHcloud die Lösung [SSL Gateway](https://www.ovh.de/ssl-gateway/). Weitere Informationen dazu finden Sie in [unseren Anleitungen](/pages/web/ssl-gateway/order-ssl-gateway).
+> 
 
 ### Schritt 6 (optional): Sichere Verbindungen mit Let's Encrypt aktivieren
 
 Überprüfen Sie zunächst, dass Ihr Domainname über die richtigen Einträge in der DNS-Zone verfügt, d.h. diese auf die IP-Adresse Ihrer Instanz verweisen.
+
+> [!warning]
+> Der folgende Befehl installiert eine funktionale, aber ältere Version von Certbot (*certbot 1.12.0*). Um die aktuellste Version zu installieren, muss der zusätzliche Paketmanager *snappy* verwendet werden. Die Installationsanleitung finden Sie auf der [Certbot Webseite](https://certbot.eff.org/instructions?ws=apache&os=debianbuster).
+>
 
 Installieren Sie die für den Certbot-Client notwendigen Pakete:
 
@@ -246,10 +251,11 @@ Installieren Sie die für den Certbot-Client notwendigen Pakete:
 debian@instance:~$ sudo apt install certbot python3-certbot-apache
 ```
 
-Beziehen Sie nun das Zertifikat für Ihre Domain. (Sie können die Subdomain "www" hinzufügen, indem Sie `-d www.IhrDomainName.ovh` anhängen.)
+Beziehen Sie nun das Zertifikat für Ihren Domainnamen sowie dessen Subdomain "www":
 
 ```bash
-debian@instance:~$ sudo certbot --apache -d IhrDomainName.ovh
+debian@instance:~$ sudo certbot --apache -d domainname.ovh -d www.domainname.ovh
+```
 ```
 
 Geben Sie eine gültige E-Mail-Adresse ein und akzeptieren Sie die Nutzungsbedingungen.

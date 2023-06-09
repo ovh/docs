@@ -32,7 +32,7 @@ Das SSH-Protokoll sorgt für eine verschlüsselte Client-Server-Kommunikation. D
 >
 Bitte beachten Sie, dass für die Verbindung mit Public Cloud Instanzen ein schlüsselbasierter SSH-Login erforderlich ist (mit Ausnahme von Instanzen mit Windows-Betriebssystem). Zu Ihrem OVHcloud Kundencenter hinzugefügte öffentliche SSH-Schlüssel sind für Public Cloud Dienste in allen Regionen und Rechenzentren verfügbar. Sie können nur **RSA**\- und **ECDSA**-verschlüsselte Schlüssel speichern; ED25519 wird aktuell nicht unterstützt. 
 >
-Für die Login-Authentifizierung auf Windows-Instanzen sind nur Benutzername und Passwort erforderlich.
+Für die Login-Authentifizierung auf Windows-Instanzen sind Benutzername und Passwort erforderlich.
 >
 
 #### SSH-Schlüssel mit Linux- oder Mac-Betriebssystem erstellen
@@ -49,7 +49,7 @@ Verwenden Sie folgenden Befehl, um einen 4096-Bit-RSA-Schlüssel zu erstellen:
 ```bash
 $ ssh-keygen -b 4096
 ```
-Indem Sie die Option “-t” mit diesem Befehl verwenden, können Sie eine andere Verschlüsselungsmethode angeben, z. B.:
+Indem Sie die Option “-t” mit diesem Befehl verwenden, können Sie eine andere Verschlüsselungsmethode angeben, z.B.:
 
 ```bash
 $ ssh-keygen -t ecdsa -a 256
@@ -57,7 +57,7 @@ $ ssh-keygen -t ecdsa -a 256
 
 Nach Ausführen des Befehls werden Sie aufgefordert, den neu erstellten Schlüssel in der Standarddatei zu speichern:
 
-```ssh
+```console
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
@@ -66,7 +66,7 @@ Sie können die Standarddatei akzeptieren, indem Sie “Enter” drücken. Ansch
 
 Ihre SSH-Schlüssel sollten im Verzeichnis “.ssh” gespeichert sein. Zum Dateinamen der öffentlichen Schlüsseldatei wurde die Endung “.pub” hinzugefügt.
 
-```ssh
+```console
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:
@@ -87,7 +87,7 @@ The key's randomart image is:
 
 > [!warning]
 >
-> Der private Schlüssel sollte immer sicher aufbewahrt werden und der Zugriff darauf ausschließlich autorisierten Personen gestattet sein.
+> Der private Schlüssel sollte stets sicher aufbewahrt werden und der Zugriff darauf ausschließlich autorisierten Personen gestattet sein.
 > 
 
 Wenden Sie zum Lesen und Exportieren Ihres öffentlichen Schlüssels den Befehl “cat” auf Ihre “.pub”-Schlüsseldatei an und kopieren Sie die Ausgabe:
@@ -104,7 +104,7 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
 
 > [!primary]
 >
->In einem MacOS-Terminal können Sie auch die “pbcopy”- und “pbpaste”-Befehle verwenden, um die Schlüsselfolgen zu verwalten. Verwenden Sie zum Beispiel diesen Befehl, um den Schlüssel aus der Datei “id_rsa.pub” in der Zwischenablage zu speichern.
+>In einem MacOS-Terminal können Sie auch die -Befehle  “pbcopy” und “pbpaste”verwenden, um die Schlüsselfolgen zu verwalten. Verwenden Sie zum Beispiel den folgenden Befehl, um den Schlüssel aus der Datei “id_rsa.pub” in der Zwischenablage zu speichern.
 >
 
 ```bash
@@ -115,7 +115,7 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 
 [PuTTY](https://putty.org/){.external} ist eine Open-Source-SSH-Client-Software mit grafischem Benutzerinterface, verfügbar für Windows und andere Betriebssysteme. Sie können PuTTY verwenden, um eine Remoteverbindung mit einem Linux-Server herzustellen. Die zugehörige Software PuTTY Key Generator (PuTTYgen) kann zum Erstellen von SSH-Schlüsseln verwendet werden.
 
-Wenn PuTTY nicht bereits installiert ist, laden Sie es zuerst über [die offizielle Webseite](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) herunter. Das empfohlene Standardinstallationspaket enthält PuTTYgen, es ist aber auch als Standalone-Datei verfügbar. Um zu überprüfen, ob Sie bereits über PuTTY verfügen, durchsuchen Sie das Menü “Programme” oder verwenden Sie die Windows-Suche.
+Wenn PuTTY nicht bereits installiert ist, laden Sie es zuerst über [die offizielle Webseite](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) herunter. Das empfohlene Standardinstallationspaket enthält PuTTYgen, es ist aber auch als Standalone-Datei verfügbar. Um zu überprüfen, ob Sie bereits über PuTTY verfügen, öffnen Sie das Menü “Programme” oder verwenden Sie die Windows-Suche.
 
 Öffnen Sie PuTTYgen und wählen Sie einen unterstützten Verschlüsselungsalgorithmus aus. Das vorliegende Beispiel verwendet RSA. Geben Sie 4096 als Bit-Anzahl ein und klicken Sie dann auf den Button `Generate`{.action}.
 
@@ -260,7 +260,8 @@ Geben Sie die Passphrase Ihres privaten Schlüssels ein, wenn Sie dazu aufgeford
 ssh username@IPv4_of_your_instance
 Enter passphrase for key '/Users/username/.ssh/id_rsa':
 ```
-Da Sie mit root-Berechtigung eingeloggt sind (“sudo user”), können Sie direkt Befehle eingeben, um Verwaltungsaufgaben auszuführen. Es wird empfohlen, zuerst Ihr Passwort zu ändern:
+
+Da Sie mit *root*-Berechtigung eingeloggt sind (“sudo user”), können Sie direkt Befehle eingeben, um Verwaltungsaufgaben auszuführen. Es wird empfohlen, zuerst Ihr Passwort zu ändern:
 
 ```bash
 $ sudo passwd username
@@ -268,7 +269,8 @@ New password:
 Retype new password:
 passwd: password updated successfully
 ```
-Sie können diese Login-Daten anschließend verwenden, um sich über die `VNC-Konsole`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einzuloggen. Wechseln Sie nun zum “root”-Benutzer und legen Sie ein sicheres Passwort fest. Wechseln Sie dann wieder zum vorherigen Benutzer.
+
+Sie können diese Login-Daten anschließend verwenden, um sich über die `VNC-Konsole`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einzuloggen. Wechseln Sie nun zum *root*-Benutzer und legen Sie ein sicheres Passwort fest. Wechseln Sie dann wieder zum vorherigen Benutzer.
 
 ```bash
 $ sudo su -
@@ -278,7 +280,8 @@ Retype new password:
 passwd: password updated successfully
 # su - username
 ```
-Beachten Sie, dass es nur selten notwendig ist, zum “root”-Benutzer zu wechseln. Wir empfehlen, dass Sie sich für Verwaltungsaufgaben, die root-Berechtigungen erfordern, als ein Benutzer aus der “sudo”-Gruppe einloggen, um Befehle auszuführen.
+
+Beachten Sie, dass es nur selten notwendig ist, zum *root*-Benutzer zu wechseln. Wir empfehlen, dass Sie sich für Verwaltungsaufgaben, die *root*-Berechtigungen erfordern, als ein Benutzer aus der “sudo”-Gruppe einloggen, um Befehle auszuführen.
 
 #### Über Windows mit einer Linux-Instanz verbinden
 
@@ -315,7 +318,7 @@ Legen Sie im ersten Schritt Ihre Standorteinstellungen fest, indem Sie eine Regi
 
 ![Windows sysprep](images/windows-connect-02.png){.thumbnail}
 
-Im zweiten Schritt wird der Standard-“Administrator”-Account eingerichtet. Geben Sie zweimal Ihre Passphrase ein und klicken Sie auf `Beenden`{.action}, um den Installationsvorgang abzuschließen. Verwenden Sie das Augen-Symbol, um zu überprüfen, dass alle im Feld eingegebenen Zeichen dem Layout Ihrer Tastatur entsprechen.
+Im zweiten Schritt wird der native “Administrator”-Account eingerichtet. Geben Sie zweimal Ihre Passphrase ein und klicken Sie auf `Beenden`{.action}, um den Installationsvorgang abzuschließen. Verwenden Sie das Augen-Symbol, um zu überprüfen, dass alle im Feld eingegebenen Zeichen dem Layout Ihrer Tastatur entsprechen.
 
 Die Instanz wird neu gestartet und Sie können sich mithilfe dieser Login-Daten über einen Remotedesktop-Client einloggen. 
 
@@ -336,7 +339,7 @@ Sollten bei diesem Vorgang Probleme auftreten, stellen Sie sicher, dass Remoteve
 
 Sie können über die eingebaute VNC-Konsole im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf Public Cloud Instanzen zugreifen. Für den Login über Ihr lokales Gerät müssen die Verbindungen über eine Client-Anwendung hergestellt werden, die das Remote Desktop Protocol (RDP) unterstützt.
 
-Zum Beispiel ist Remmina Remote Desktop Client eine kompatible Anwendung, die bei einer Ubuntu-Desktop-Installation enthalten sein sollte. Wenn Sie Remmina in Ihrer Umgebung nicht finden können, können Sie es von der [offiziellen Webseite](https://remmina.org/) herunterladen.
+Zum Beispiel ist *Remmina Remote Desktop Client* eine kompatible Anwendung, die bei einer Ubuntu-Desktop-Installation enthalten sein sollte. Wenn Sie Remmina in Ihrer Umgebung nicht finden können, können Sie es über die [offizielle Webseite](https://remmina.org/) beziehen.
 
 ![Linux Remote](images/linux-connect-01.png){.thumbnail}
 
@@ -344,7 +347,7 @@ Zum Beispiel ist Remmina Remote Desktop Client eine kompatible Anwendung, die be
 
 ![Linux Remote](images/linux-connect-02.png){.thumbnail}
 
-Erscheint eine Zertifikatsmeldung, klicken Sie auf `Ja`{.action}. Geben Sie anschließend den Benutzernamen und das Passwort für die Instanz ein und klicken Sie auf `OK`{.action}, um die Verbindung herzustellen.
+Erscheint eine Zertifikatsmeldung, klicken Sie auf `Yes`{.action}. Geben Sie anschließend den Benutzernamen und das Passwort für die Instanz ein und klicken Sie auf `OK`{.action}, um die Verbindung herzustellen.
 
 ![Linux Remote](images/linux-connect-03.png){.thumbnail}
 

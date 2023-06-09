@@ -1,9 +1,10 @@
 ---
 title: FAQ sobre faturação e pagamento
 excerpt: Encontre as questões mais frequentes sobre faturação e pagamento
+updated: 2023-06-05
 ---
 
-**Última atualização: 08/11/2022**
+**Última atualização: 05/06/2023**
   
 ## Objetivo
 
@@ -28,7 +29,7 @@ Por razões legais, não é possível modificar uma fatura já emitida. Contudo,
 Por predefinição, os seus serviços são renovados automaticamente quando chegam à data de expiração, e o montante da sua fatura é debitado no início do mês no seu método de pagamento predefinido. Assim, certifique-se de que regista um método de pagamento na sua conta de cliente para evitar qualquer suspensão ou, se não pretender renovar o serviço, para cancelar os seus serviços ANTES da data de expiração.
 Em certas gamas (domínios, alojamentos web, VPS e servidores dedicados), pode escolher um modo de renovação `manual`.
 Se os seus serviços estiverem configurados com renovação manual, receberá notificações por e-mail após a data de expiração do serviço, com uma ligação para efetuar o pagamento online.
-Se não renovar o serviço antes dessa data, este será simplesmente suspenso e eliminado ao fim de alguns dias.
+Se não renovar o serviço antes dessa data, este será simplesmente suspenso e eliminado ao fim de alguns dias (o prazo varia em função do serviço em causa).
 
 #### Conselhos e dicas
 
@@ -86,6 +87,8 @@ Antes de eliminar um método de pagamento, certifique-se de que registou uma alt
 ### Qual é o meu método de pagamento predefinido?
 
 Uma vez ligado à sua Área de Cliente, o seu método de pagamento predefinido está indicado no painel de controlo.
+
+Para alterar o seu método de pagamento predefinido, consulte o nosso [guia de gestão dos métodos de pagamento](/pages/account/billing/manage-payment-methods).
 
 #### Truques e dicas
 

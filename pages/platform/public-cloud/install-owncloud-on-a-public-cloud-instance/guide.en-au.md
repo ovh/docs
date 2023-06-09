@@ -8,7 +8,7 @@ updated: 2019-04-10
 
 - Level: Intermediate
 - OS used: Ubuntu 18.04
-- Infrastructure used: B2-15 [Public Cloud Instance](/pages/platform/public-cloud/install-owncloud-on-a-public-cloud-instance%7Bovh_www%7D/public-cloud/instances/){.external}
+- Infrastructure used: B2-15 [Public Cloud Instance](/au/en/public-cloud/install-owncloud-on-public-cloud-ubuntu-1804/%7Bovh_www%7D/public-cloud/instances/){.external}
 - Additional information: If you have intensive storage requirements, it is recommended to use a high-performance additional disk or object storage
 
 > [!warning]
@@ -38,8 +38,8 @@ Before following this tutorial, please refer to these guides:
 
 - A [Public Cloud Instance]({ovh_www}/public-cloud/instances/prices/){.external} in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external} with Ubuntu 18.04 installed
 - Root SSH access on the Instance
-- [Object Storage](/pages/platform/public-cloud/install-owncloud-on-a-public-cloud-instance%7Bovh_www%7D/public-cloud/storage/object-storage/){.external} in the same datacentre as your Public Cloud Instance (optional)
-- [High-performance additional disk](/pages/platform/public-cloud/install-owncloud-on-a-public-cloud-instance%7Bovh_www%7D/public-cloud/storage/additional-disks/){.external} in the same datacentre as your Public Cloud Instance (optional)
+- [Object Storage](/au/en/public-cloud/install-owncloud-on-public-cloud-ubuntu-1804/%7Bovh_www%7D/public-cloud/storage/object-storage/){.external} in the same datacentre as your Public Cloud Instance (optional)
+- [High-performance additional disk](/au/en/public-cloud/install-owncloud-on-public-cloud-ubuntu-1804/%7Bovh_www%7D/public-cloud/storage/additional-disks/){.external} in the same datacentre as your Public Cloud Instance (optional)
 
 
 ## Instructions
@@ -204,13 +204,13 @@ There are advantages and disadvantages to using local disk storage to store your
 
 Using OpenStack Object Storage by OVHcloud, you can store your files externally, with no limit on the total volume of data or how long you store it for. Furthermore, OVHcloud guarantees 100% data durability, and replicates your data in three different locations, delivering exceptional value for money.
 
-Find out more about [OVHcloud Object Storage](/pages/platform/public-cloud/install-owncloud-on-a-public-cloud-instance%7Bovh_www%7D/public-cloud/storage/object-storage/){.external}.
+Find out more about [OVHcloud Object Storage](/au/en/public-cloud/install-owncloud-on-public-cloud-ubuntu-1804/%7Bovh_www%7D/public-cloud/storage/object-storage/){.external}.
 Read out guide to using Object Storage for ownCloud: [Object Storage for ownCloud](/pages/cloud/storage/object_storage/pcs_configure_owncloud_with_object_storage){.external}.
 
 ### Using an additional disk as storage (optional)
 As with Object Storage, the advantage of using an additional disk is that you are less restricted by storage problems. You can also increase the size of an additional disk after its creation, up to 10TB.
 
-Find out more about [Public Cloud additional disks](/pages/platform/public-cloud/install-owncloud-on-a-public-cloud-instance%7Bovh_www%7D/public-cloud/storage/additional-disks/){.external}.
+Find out more about [Public Cloud additional disks](/au/en/public-cloud/install-owncloud-on-public-cloud-ubuntu-1804/%7Bovh_www%7D/public-cloud/storage/additional-disks/){.external}.
 
 > [!warning]
 >

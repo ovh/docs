@@ -53,7 +53,7 @@ La double authentification est maintenant activée. L'ajout d'autres numéros es
 
 ### Étape 4 : sauvegarder les codes de sécurité
 
-Au premier ajout d'une méthode de sécurité par double authentification, des codes de secours vous sont communiqués. **Ils sont à conserver précieusement**. Nous vous conseillons donc de les sauvegarder dans un gestionnaire de mots de passe, tel que [Keepass](https://keepass.info/){.external}.
+Au premier ajout d'une méthode de sécurité par double authentification, des codes de secours vous sont communiqués. **Ils sont à conserver précieusement**. Nous vous conseillons donc de les sauvegarder dans un gestionnaire de mots de passe, tel que [KeePass](https://keepass.info/){.external}.
 
 ![2FA sms](images/2facodes.png){.thumbnail}
 

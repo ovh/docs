@@ -141,7 +141,7 @@ Il tuo sito Web sarà disponibile entro 24 ore.
 
 [Risolvere gli errori più frequenti associati ai moduli in 1 click](/pages/web/hosting/diagnostic_errors_module1clic)
 
-Per prestazioni specializzate (referenziamento, sviluppo, etc ...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, etc ...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le diverse [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 

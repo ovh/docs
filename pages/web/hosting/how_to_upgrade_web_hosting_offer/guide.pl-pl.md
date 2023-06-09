@@ -80,7 +80,7 @@ Przed przejściem z oferty [Perso](https://www.ovhcloud.com/pl/web-hosting/perso
 
 Przed przejściem na niższą ofertę upewnij się, że nowa oferta zawiera wystarczającą ilość [baz danych](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/). Sprawdź również, czy są wystarczająco duże.
 
-Jeśli tak się nie stanie, usuń nieużywane bazy danych i zmniejsz w razie potrzeby ilość danych, które zawierają. Ilość ta nie może przekroczyć maksymalnego rozmiaru baz danych w nowej ofercie (w przypadku prośby o pomoc w zakresie wykonywanych operacji, skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/)).
+Jeśli tak się nie stanie, usuń nieużywane bazy danych i zmniejsz w razie potrzeby ilość danych, które zawierają. Ilość ta nie może przekroczyć maksymalnego rozmiaru baz danych w nowej ofercie (w przypadku prośby o pomoc w zakresie wykonywanych operacji, skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/)).
 
 Po usunięciu danych z baz danych pamiętaj o przeliczeniu rozmiaru używanego w zakładce `Bazy danych`{.action} w części `Hosting`{.action} w Panelu klienta. Kliknij przycisk `...`{.action} po prawej stronie wybranej bazy, a następnie na `Przelicz rozmiar bazy`{.action}.
 
@@ -190,7 +190,7 @@ Postępuj zgodnie [z instrukcjami](#modify), aby zmienić ofertę.
 
 [Optymalizacja wydajności strony](/pages/web/hosting/optimise_your_website_performance)
 
-Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
+Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, sprawdź naszą [ofertę pomocy](https://www.ovhcloud.com/pl/support-levels/).
 

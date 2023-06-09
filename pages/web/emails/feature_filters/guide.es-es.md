@@ -35,7 +35,7 @@ Por ejemplo: desea que se elimine todo email que contenga "[SPAM]" en el asunto.
 Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
 |![Correo electrónico](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> El nombre del producto aparece en el recuadro Suscripción, en el epígrafe Producto.|![Correo electrónico](images/mxplan-starter-new-step1.png){.thumbnail}<br>El nombre del producto aparece en el recuadro Resumen, en el epígrafe Referencia del servidor.|
-|Continúe leyendo esta guía en el apartado "[En la práctica](#oldmxplan)".|Para más información, consulte nuestra guía Reglas de la bandeja de entrada desde la [interfaz OWA](https://docs.ovh.com/es/microsoft-collaborative-solutions/crear-reglas-de-bandeja-de-entrada-en-owa/).|
+|Continúe leyendo esta guía en el apartado "[En la práctica](#oldmxplan)".|Para más información, consulte nuestra guía Reglas de la bandeja de entrada desde la [interfaz OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan).|
 
 ## En la práctica <a name="oldmxplan"></a>
 
@@ -141,6 +141,6 @@ Si el asunto del mensaje contiene la palabra "money" **y el** remitente del mens
 
 [Primeros pasos con la solución MX Plan](/pages/web/emails/email_generalities)
 
-[Reglas de la bandeja de entrada desde la interfaz OWA](/products/email-owa-creating-inbox-rules)
+[Reglas de la bandeja de entrada desde la interfaz OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

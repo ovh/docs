@@ -187,7 +187,7 @@ Our antispam service will analyse the situation, and our support team will get b
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en/directory/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this guide.
 >
 
 Although we strongly recommend using PHP’s "mail()" function, shared hosting allows you to send emails via a script that uses Simple Mail Transfer Protocol (SMTP). The total size of your email can not exceed **10 MB** (i.e. **7/8 MB excluding encapsulation**).
@@ -221,7 +221,7 @@ $mail->Password = "YourEmailPassword";
 
 [Restore your web hosting plan’s FTP storage space](/pages/web/hosting/ftp_save_and_backup)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
 

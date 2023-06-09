@@ -174,7 +174,7 @@ ADD . $foo
 ### Exposing your model or application with an API
 
 Inside your Dockerfile, you will need to expose your model or application so anyone can use it. The easiest way is to expose API via REST endpoint.
-The most popular open source frameworks for exposing APIs are [Flask](/pages/platform/ai/deploy_tuto_12_build_custom_image%29%20and%20%5BFast%20API%5D%28).
+The most popular open source frameworks for exposing APIs are [Flask](/ie/en/publiccloud/ai/deploy/build-use-custom-image/%29%20and%20%5BFast%20API%5D%28).
 
 You can find a basic example in the section below, and more advanced tutorials in our [AI Deploy documentation](/products/public-cloud-ai-and-machine-learning).
 
@@ -299,6 +299,8 @@ If you want to know the exact commands to push on the shared registry, please co
 ## Go further
 
 - Discover some AI Deploy apps we built with API or Web frontend via our [Apps portfolio](/pages/platform/ai/deploy_guide_05_app_portfolio).
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

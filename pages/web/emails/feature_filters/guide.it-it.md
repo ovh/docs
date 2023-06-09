@@ -35,7 +35,7 @@ Ad esempio: vuoi che tutte le email contenenti "[SPAM]" nell'oggetto siano elimi
 Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Il servizio è indicato nel riquadro “Abbonamento”|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Nel riquadro "Riepilogo", individua il "Referenza server"|
-|Prosegui nella lettura di questa guida nella sezione "[In pratica](#oldmxplan)".|Consulta la nostra guida "[Regole di Posta in arrivo dall'interfaccia OWA](https://docs.ovh.com/it/microsoft-collaborative-solutions/creare-regole-posta-in-arrivo-in-owa/)".|
+|Prosegui nella lettura di questa guida nella sezione "[In pratica](#oldmxplan)".|Consulta la nostra guida "[Regole di Posta in arrivo dall'interfaccia OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan)".|
 
 ## In pratica <a name="oldmxplan"></a>
 
@@ -141,6 +141,6 @@ Se l'oggetto del messaggio contiene la parola "money" **e il** mittente del mess
 
 [Iniziare a utilizzare la soluzione MX Plan](/pages/web/emails/email_generalities)
 
-[Regole della casella della posta in arrivo dall'interfaccia OWA](/products/email-owa-creating-inbox-rules)
+[Regole della casella della posta in arrivo dall'interfaccia OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
