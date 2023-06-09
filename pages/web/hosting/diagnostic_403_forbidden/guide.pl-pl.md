@@ -4,14 +4,14 @@ excerpt: Dowiedz się, jak przywrócić Twoją stronę WWW online, gdy wyświetl
 slug: diagnostyka-403-forbidden
 section: Diagnostyka
 order: 08
-updated: 2022-06-16
+updated: 2023-06-09
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 16/06/2022**
+**Ostatnia aktualizacja z dnia 09/06/2023**
 
 ## Wprowadzenie 
 

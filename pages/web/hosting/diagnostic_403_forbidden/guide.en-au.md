@@ -4,10 +4,10 @@ excerpt: How to get your website back online if it displays a 403 forbidden page
 slug: diagnostic-403-forbidden
 section:  Troubleshooting
 order: 08
-updated: 2022-06-16
+updated: 2023-06-09
 ---
 
-**Last updated 16th June 2022**
+**Last updated 09th June 2023**
 
 ## Objective
 
