@@ -4,14 +4,14 @@ slug: ssl-ev
 excerpt: "Saiba como encomendar e instalar um certificado SSL EV no seu alojamento Web OVHcloud"
 section: SSL
 order: 03
-updated: 2022-12-13
+updated: 2023-06-08
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 13/12/2022**
+**Última atualização: 08/06/2023**
   
 ## Objetivo
 
@@ -136,7 +136,17 @@ Todas as ações descritas nesta etapa podem ser realizadas durante vários dias
 Depois de efetuar a encomenda, o Sectigo enviar-lhe-á um e-mail com um link de validação e um procedimento a seguir.
 Verifique as suas informações e valide o seu pedido seguindo as indicações presentes neste e-mail. 
 
-Para garantir que a troca de e-mail com Sectigo é efetuada corretamente, verifique também a validade do endereço de e-mail indicado no formulário aquando da encomenda do SSL EV, bem como o endereço de e-mail associado ao seu [Espaço Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+Para garantir que a troca de e-mail com Sectigo é efetuada corretamente, verifique também a validade do endereço de e-mail indicado no formulário aquando da encomenda do SSL EV, bem como o endereço de e-mail associado ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+
+> [!primary]
+>
+> Em paralelo e para certificar a propriedade do seu domínio junto do Sectigo, é automaticamente implementado um ficheiro em formato *.txt* no espaço FTP do seu alojamento web. Este será eliminado quando deixar de ser necessário para Sectigo.
+>
+> Tenha em conta que algumas restrições aplicadas pelo seu lado (como num ficheiro ".htaccess", por exemplo) podem impedir esta verificação.
+> Se as autorizações de acesso FTP "CHMOD" forem também limitadas ou insuficientes, a verificação pode igualmente ser bloqueada.
+>
+> Também recomendamos que **não** ative ou deixe ativo o [firewall](/pages/web/hosting/multisites_activating_application_firewall), disponível com os nossos alojamentos web, durante toda a duração da instalação do seu certificado SSL EV.
+>
 
 #### 2.2 - Verificações feitas pela Autoridade de Certificação Sectigo
 

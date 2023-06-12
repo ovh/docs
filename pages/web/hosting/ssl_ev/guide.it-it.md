@@ -4,14 +4,14 @@ slug: ssl-ev
 excerpt: "Come ordinare e installare un certificato SSL EV sul tuo hosting Web OVHcloud"
 section: SSL
 order: 03
-updated: 2022-12-13
+updated: 2023-06-08
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
-**Ultimo aggiornamento: 13/12/2022**
+**Ultimo aggiornamento: 08/06/2023**
   
 ## Obiettivo
 
@@ -137,6 +137,16 @@ Una volta effettuato l'ordine, Sectigo invierà un'email con un link di conferma
 Verifica le tue informazioni e conferma la tua richiesta seguendo le indicazioni presenti in questa email. 
 
 Per assicurarti che gli scambi via email con Sectigo avvengano correttamente, verifica anche la validità dell'indirizzo email inserito nel form al momento dell'ordine del certificato SSL EV e l'indirizzo email di contatto associato al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+
+> [!primary]
+>
+> Allo stesso tempo e per certificare la proprietà del tuo dominio presso Sectigo, viene automaticamente creato un file in formato *.txt* nello spazio FTP del tuo hosting web. e verrà rimosso quando non sarà più necessario a Sectigo.
+>
+> Ti ricordiamo che alcune restrizioni applicate dalla tua parte (ad esempio in un file.htaccess) potrebbero impedire questa verifica.
+> Se i diritti di accesso FTP "CHMOD" sono anch'essi limitati o insufficienti, la verifica può anche essere bloccata.
+>
+> Ti consigliamo inoltre di **non** attivare o lasciare attivo il [firewall applicativo](/pages/web/hosting/multisites_activating_application_firewall), disponibile con i nostri hosting Web, per tutta la durata dell'installazione del tuo certificato SSL EV.
+>
 
 #### 2.2 - Verifiche effettuate dall'Autorità di Certificazione Sectigo
 

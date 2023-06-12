@@ -4,14 +4,14 @@ slug: ssl-ev
 excerpt: "Cómo contratar e instalar un certificado SSL EV en un alojamiento web de OVHcloud"
 section: SSL
 order: 03
-updated: 2022-12-13
+updated: 2023-06-08
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 13/12/2022**
+**Última actualización: 08/06/2023**
   
 ## Objetivo
 
@@ -137,6 +137,16 @@ Una vez realizado el pedido, Sectigo le enviará un mensaje de correo electróni
 Compruebe que la información y la solicitud son correctos siguiendo las indicaciones que se ofrecen en este email. 
 
 Para asegurarse de que la comunicación con Sectigo se realiza correctamente, compruebe también la validez de la dirección de correo electrónico que se indica en el formulario al contratar el SSL EV y la dirección de correo electrónico de contacto asociada a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+
+> [!primary]
+>
+> Paralelamente y con el fin de certificar la propiedad de su dominio en Sectigo, un fichero en formato *.txt* se instala automáticamente en el espacio FTP de su alojamiento web. Este se eliminará cuando ya no sea necesario en Sectigo.
+>
+> Tenga en cuenta que algunas restricciones aplicadas por su parte (por ejemplo, en un archivo ".htaccess") pueden impedir esta verificación.
+Si los permisos de acceso FTP CHMOD también están restringidos o son insuficientes, la verificación también puede bloquearse.
+>
+> También le recomendamos que **no** active o deje activo el[firewall de aplicación](/pages/web/hosting/multisites_activating_application_firewall), disponible con nuestros alojamientos web durante toda la instalación de su certificado SSL EV.
+>
 
 #### 2.2 - Verificaciones realizadas por la Autoridad de Certificación Sectigo
 

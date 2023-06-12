@@ -4,10 +4,10 @@ slug: ssl-ev
 excerpt: "Find out how to order and install an EV SSL certificate for an OVHcloud web hosting plan"
 section: SSL
 order: 03
-updated: 2022-12-13
+updated: 2023-06-08
 ---
 
-**Last updated 13th December 2022**
+**Last updated 8th June 2023**
 
 ## Objective
 
@@ -133,6 +133,16 @@ Once your order has been placed, Sectigo will send you an email containing a val
 Check your information and confirm your request by following the instructions in this email.
 
 To ensure that email exchanges with Sectigo are going well, also check the validity of the email address entered in the form when you ordered the EV SSL, as well as the contact email address associated with your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+
+> [!primary]
+>
+> In parallel and in order to certify the ownership of your domain with Sectigo, a *.txt* file is automatically set up in the FTP space of your web hosting plan. This file will be deleted when it is no longer needed by Sectigo.
+>
+> Please note that some restrictions applied on your side (e.g. in a .htaccess file) may prevent this verification.
+> If the FTP access rights `CHMOD` are also restricted or insufficient, the verification can also be blocked.
+>
+> We also recommend that you **do not** enable or leave the [application firewall](/pages/web/hosting/multisites_activating_application_firewall), available with our web hosting plans, active for the duration of your EV SSL certificate installation.
+>
 
 #### 2.2 - Sectigo Certification Authority verifications
 
