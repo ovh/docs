@@ -1,5 +1,5 @@
 ---
-title: Désinstallation du service de monitoring RTM
+title: Désinstallation du service de monitoring RTM v2
 excerpt: Découvrez comment désinstaller le service de monitoring RTM sur votre service
 updated: 2023-06-08
 ---
@@ -7,12 +7,14 @@ updated: 2023-06-08
 
 ## Objectif
 
-Le service de monitoring OVH RTM v2 est désormais déprécié et les dépôts de celui-ci ont été supprimés. Ce guide a pour objectif de vous guider dans le nettoyage des packages utilisés par ce service.
+Le service de monitoring OVH RTM v2 est désormais déprécié et les dépôts de celui-ci ont été supprimés. Nous vous recommandons donc de désinstaller ce service et de supprimer tous les packages qui y sont liés.
+
+**Ce guide a pour objectif de vous guider dans le nettoyage des packages utilisés par ce service.**
 
 ## Prérequis
 
 - Un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) avec RTM v2 installé
-- Avoir un accès administrateur (*root*) à votre serveur via SSH.
+- Avoir un accès administrateur (*root*) à votre serveur via SSH
 
 ## En pratique
 
@@ -45,7 +47,7 @@ Connectez-vous à votre serveur via SSH et supprimez les packages ci-dessous :
 # dnf remove beamium
 ```
 
-Ensuite, vous devez supprimer les dépôts. Si les fichiers mentionnés dans les exemples ci-dessous n'apparaissent pas, c'est que vous n'avez pas les paquets RTM v2, vous n'avez donc rien à faire.
+Ensuite, vous devez supprimer les dépôts. Si les fichiers mentionnés dans les exemples ci-dessous n'apparaissent pas, cela signifie que vous n'avez pas les paquets RTM v2, vous n'avez donc rien à faire.
 
 ### Debian / Ubuntu
 
@@ -67,13 +69,13 @@ sudo apt-get remove ovh-rtm-binaries ovh-rtm-metrics-toolkit noderig beamium
 ls /etc/apt/sources.list.d/
 ``` 
 
-Si les fichiers ` ovh-metrics.list` et `ovh-rtm.list` ne sont pas listés, alors vous n'avez rien à faire. Dans le cas contraire, vous pouvez les supprimer via la commande ci-dessous :
+Si les fichiers `ovh-metrics.list` et `ovh-rtm.list` ne sont pas listés, alors vous n'avez rien à faire. Dans le cas contraire, vous pouvez les supprimer via la commande ci-dessous :
 
 ```bash
 rm -f /etc/apt/sources.list.d/ovh-metrics.list /etc/apt/sources.list.d/ovh-rtm.list
 ```
 
-### Centos
+### CentOS
 
 **Vérifier si les packages sont installés :**
 
