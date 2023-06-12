@@ -344,6 +344,7 @@
             + [Adding a new Tier-1 Gateway in NSX](cloud/private-cloud/nsx-10-add-new-tier1-gateway)
             + [NSX - FAQ](cloud/private-cloud/nsx-11-faq)
         + [VMware NSX-v](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx-v)
+            + [VMware NSX-v - End of Support](cloud/private-cloud/nsx_nsx-v-eos)
             + [Accessing the NSX-v interface](cloud/private-cloud/nsx_access-interface)
             + [How to deploy an NSX-v Edge Services Gateway](cloud/private-cloud/nsx_deploying_edge_gateway)
             + [Setting up DHCP on an NSX-v Edge Services appliance](cloud/private-cloud/nsx_configurer_le_dhcp_sur_une_edge_gateway)
