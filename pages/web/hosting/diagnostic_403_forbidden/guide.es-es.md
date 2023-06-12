@@ -168,7 +168,7 @@ SITE CHMOD 705 .
 
 En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Web Cloud`{.action} y, seguidamente, haga clic en `Alojamientos`{.action} en la pestaña `FTP-SSH`{.action} del alojamiento correspondiente.
 
-Pulse el botón `Explorador FTP `{ y conéctese a su [espacio de almacenamiento FTP](/pages/web/hosting/ftp_connection).
+Pulse el botón `Explorador FTP `{.action} y conéctese a su [espacio de almacenamiento FTP](/pages/web/hosting/ftp_connection).
 
 Haga clic en el botón `Avanzado`{.action} y, a continuación, en el botón `Go`{.action} situado junto a "Send arbitrary FTP commands to the FTP server".
 
