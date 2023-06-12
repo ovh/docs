@@ -765,7 +765,7 @@ Une tâche est créée pour chaque appel, vous pouvez suivre l'avancement avec :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{hostId}/task/{taskId}
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/task/{taskId}
 >
 
 > [!warning]
