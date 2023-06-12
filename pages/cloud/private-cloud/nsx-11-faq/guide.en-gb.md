@@ -1,7 +1,7 @@
 ---
 title: NSX - FAQ
 excerpt: Frequently asked questions on NSX
-updated: 2023-06-07
+updated: 2023-06-12
 ---
 
 ## Objective
@@ -110,7 +110,7 @@ Yes, it it possible to do so.
 
 ### Why is NSX management via Terraform done via a separate `https://nsxt` endpoint?
 
-The NSX API is dedicated and linked to the vSphere API. That's why we created a dedicated endpoint to reach it.
+The NSX API is dedicated and not linked to the vSphere API. That's why we created a dedicated endpoint to reach it.
 
 <a name="veeamzerto"></a>
 
