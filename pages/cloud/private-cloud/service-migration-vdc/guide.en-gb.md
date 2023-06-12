@@ -741,7 +741,7 @@ A task is created for each call, you can follow the progress with:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{hostId}/task/{taskId}
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/task/{taskId}
 >
 
 > [!warning]
