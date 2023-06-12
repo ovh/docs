@@ -1,7 +1,7 @@
 ---
 title: 'Alojar varios sitios web en un mismo hosting'
 slug: configurar-un-multisitio-en-un-alojamiento-web
-excerpt: 'Descruba cómo utilizar un plan de hosting para alojar varios sitios web'
+excerpt: 'Descubra cómo utilizar un plan de hosting para alojar varios sitios web'
 section: 'Configuración del alojamiento'
 order: 03
 updated: 2023-06-08
