@@ -14,9 +14,9 @@ updated: 2023-06-07
 
 ### Est-il possible de faire du BGP ?
 
-Il n'est pas possible de faire de BGP public.
+Il est impossible de faire du BGP public.
 
-Il ets toutefois possible de faire du BGP dans le vRack, une documentation sera disponible prochainement pour détailler cette solution.
+Il est toutefois possible de faire du BGP dans le vRack, une documentation sera disponible prochainement pour détailler cette solution.
 
 <a name="addt0gw"></a>
 
@@ -28,19 +28,19 @@ Il est actuellement impossible d'ajouter une nouvelle Tier-0 Gateway fonctionnel
 
 ### Le bouton "Edit" dans NSX pour Tier-0 est désactivé, comment puis-je configurer la Gateway publique ?
 
-Ce n'est pas possible par défaut. Les Tier-0 Gateways sont hébergées chacune sur un host différent, HA (High Availability) est activé et un VIP est configuré entre les 2 EDGES afin de maintenir la continuité de service. La partie HA est déjà préconfigurée par OVHCloud.
+C'est impossible par défaut. Les Tier-0 Gateways sont hébergées chacune sur un host différent, HA (High Availability) est activée et un VIP est configuré entre les 2 EDGES afin de maintenir la continuité de service. La partie HA est déjà préconfigurée par OVHCloud.
 
 <a name="t0gwdoublebw"></a>
 
 ### Puis-je configurer une Tier-0 Gateway active-active afin d’avoir une double bande passante (garantie 10+10=20Gb/s et "théorique" 25+25Gb/s) ?
 
-Non, ce n’est pas possible par défaut, la configuration est gérée par OVHcloud et se fait en mode actif/passif avec un VIP (10 Gbp/s de bande passante garantie).
+Non, c'est impossible par défaut, la configuration est gérée par OVHcloud et se fait en mode actif/passif avec un VIP (10 Gbp/s de bande passante garantie).
 
 <a name="t0commandline"></a>
 
-### Est-il possible de se connecter au Tier-0 en ligne de commande pour effectuer du debugging ou de la capture de paquets ?
+### Est-il possible de se connecter au Tier-0 en ligne de commande pour effectuer un diagnostic ou de la capture de paquets ?
 
-Non, ce n'est pas possible pour le Tier-0.
+Non, c'est impossible pour le Tier-0.
 
 <a name="nsxedgeaddition"></a>
 
@@ -54,15 +54,15 @@ Non, les Edges sont gérés par OVHcloud. Les clients ne peuvent pas les modifie
 
 Cette information se trouve dans NSX > Inventory > Capacity.
 
-Concernant les Edges, nous nous référons aux Gateways et aux Tier-0 et Tier-1. Le Tier-0 est déjà déployé et utilise 3 IP publiques pour faire le routage entre les Gateways actives/de secours et utilise le concept d’un VIP qui est en amont des 2 IP publiques internes. Ce dispositif est utilisé pour le failover et la redondance.
+Concernant les Edges, nous nous référons aux Gateways et aux Tier-0 et Tier-1. Le Tier-0 est déjà déployé et utilise 3 IPs publiques pour faire le routage entre les Gateways actives/de secours et utilise le concept d’un VIP qui est en amont des 2 IPs publiques internes. Ce dispositif est utilisé pour le failover et la redondance.
 
 NSX et NSX-v sont différents et pour le moment vous ne pouvez pas interrompre la configuration Tier-0 actuelle et en déployer d’autres.
 
 <a name="t1commandline"></a>
 
-### Est-il possible de se connecter au Tier-1 en ligne de commande pour effectuer du debugging ou de la capture de paquets ?
+### Est-il possible de se connecter au Tier-1 en ligne de commande pour effectuer un diagnostic ou de la capture de paquets ?
 
-Non, ce n’est pas possible pour Tier-1. Différents outils sont disponibles dans NSX pour répondre à ces besoins.
+Non, c'est impossible pour le Tier-1. Différents outils sont disponibles dans NSX pour répondre à ces besoins.
 
 <a name="addpublicicip"></a>
 
@@ -84,7 +84,7 @@ Il n'est pas possible de gérer l'output Internet dans NSX car Edge est géré p
 
 <a name="vrackaccess"></a>
 
-### Le cluster de calcul aura-t-il accès au vRack ? Ou le vRack sera-t-il uniquement connecté au Edge Node ?
+### Le cluster de VMs aura-t-il accès au vRack ? Ou le vRack sera-t-il uniquement connecté au Edge Node ?
 
 Le cluster NSX est totalement compatible avec le vRack. Vous pouvez ajouter le service NSX dans votre vRack PCC. Retrouvez plus d'informations à propos du vRack sur [cette page](/pages/cloud/private-cloud/vrack_and_hosted_private_cloud).
 
@@ -92,7 +92,7 @@ Le cluster NSX est totalement compatible avec le vRack. Vous pouvez ajouter le s
 
 ### Puis-je configurer High Availability (HA) ?
 
-Non, les NSX Edges sont configurés par OVHcloud suivant les bonnes pratiques VMware en matière de HA.
+Non, les NSX Edges sont configurées par OVHcloud suivant les bonnes pratiques VMware en matière de HA.
 
 <a name="lb"></a>
 
@@ -110,7 +110,7 @@ Oui, il est possible de le faire.
 
 ### Pourquoi la gestion de NSX via Terraform est-elle réalisée via un endpoint `https://nsxt` distinct ?
 
-L’API NSX est dédiée et liée à l’API vSphere. C'est pourquoi nous avons créé un endpoint dédié pour l'atteindre.
+L’API NSX est indépendante et non liée à l’API vSphere. C'est pourquoi nous avons créé un endpoint dédié pour l'atteindre.
 
 <a name="veeamzerto"></a>
 
