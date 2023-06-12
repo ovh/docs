@@ -22,13 +22,13 @@ To identify your usage of the NSX-v feature in your Hosted Private Cloud environ
 
 ### I do not use any of the NSX-v features
 
-**If you do not use any of the above features, you will be able to deactivate NSX-v. You will be notified when the deactivation process is available.
+If you do not use any of the above features, you will be able to deactivate NSX-v. You will be notified when the deactivation process is available.
 
 ### I only use VXLAN
 
 If the only feature you use is VXLAN, you have the following choice:
 
-- Migrating to NSX-T (see details below)
+- Migrating to NSX-T (see [details](#migration) below)
 - Reconfiguring your network in order to replace VXLAN with [VLAN](/pages/cloud/private-cloud/creation_vlan), using the following API call:
 
 > [!api]
@@ -48,11 +48,11 @@ You will then have to deactivate NSX-v. You will be notified when the deactivati
 
 ### I use some of the NSX-v features
 
-We recommend migrating to NSX-T (see details below) to benefit from all its included features. 
+We recommend migrating to NSX-T (see [details](#migration) below) to benefit from all its included features. 
 
 Alternatively, you can decide to deploy alternatives components (Load-balancer, Firewall appliance, VPN, ...) and then disable NSX-v (you will be notified when the deactivation process is available).
 
-## Migrating to NSX-T
+## Migrating to NSX-T <a name="migration"></a>
 
 The documentation to migrate to NSX-T is not yet available. 
 
