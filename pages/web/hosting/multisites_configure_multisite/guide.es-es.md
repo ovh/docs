@@ -17,7 +17,7 @@ updated: 2023-06-08
 
 Es posible alojar varios sitios web en un mismo plan de hosting, aunque los dominios no estén registrados en OVHcloud.
 
-**Descruba cómo utilizar un plan de hosting para alojar varios sitios web.**
+**Descubra cómo utilizar un plan de hosting para alojar varios sitios web.**
 
 ## Requisitos
 
