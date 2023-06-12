@@ -180,7 +180,8 @@ Introduzca el siguiente comando en la parte superior de la página:
 SITE CHMOD 705 /
 ```
 
-y haga clic en el botón con forma de "V" verde.
+Haga clic en el botón con forma de "V" verde.
+
 
 ![result_command_on_net2ftp](images/result_command_on_net2ftp.png){.thumbnail}
 
