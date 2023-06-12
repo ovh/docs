@@ -140,12 +140,12 @@ Um sicherzustellen, dass der E-Mail-Verkehr mit Sectigo korrekt abläuft, überp
 
 > [!primary]
 >
-> Parallel dazu wird automatisch im FTP-Bereich Ihres Webhostings eine Datei im *.txt*-Format erstellt, um die Inhaberschaft Ihrer Domain bei Sectigo zu bestätigen. Dieser wird dann gelöscht, wenn er für Sectigo nicht mehr benötigt wird.
+> Parallel dazu wird automatisch im FTP-Bereich Ihres Webhostings eine *.txt*-Datei erstellt, um die Inhaberschaft Ihres Domainamens bei Sectigo zu bestätigen. Die Datei wird gelöscht, sobald sie von Sectigo nicht mehr benötigt wird.
 >
-> Bitte beachten Sie, dass bestimmte Einschränkungen Ihrer Seite (z. B. in einer ".htaccess"-Datei) diese Überprüfung verhindern können.
-> Sind die FTP-Zugriffsrechte "CHMOD" ebenfalls eingeschränkt oder **nicht** ausreichend, kann die Überprüfung ebenfalls blockiert werden.
+> Bitte beachten Sie, dass bestimmte Einschränkungen von Ihrer Seite (z.B. in einer ".htaccess"-Datei) diese Überprüfung verhindern können.
+> Zu restriktive FTP-Zugriffsbeschränkungen (*CHMOD*) können die Überprüfung ebenfalls blockieren.
 >
-> Wir empfehlen Ihnen auch, die [Application Firewall](/pages/web/hosting/multisites_activating_application_firewall), die bei unseren Webhostings verfügbar ist, während der gesamten Dauer der Installation Ihres EV SSL Zertifikats zu aktivieren oder aktiv zu lassen.
+> Wir empfehlen auch, die [Application Firewall](/pages/web/hosting/multisites_activating_application_firewall), die bei unseren Webhostings inkludiert ist, während der gesamten Dauer der Installation Ihres EV SSL-Zertifikats zu deaktivieren.
 >
 
 #### 2.2 - Überprüfungen durch die Zertifizierungsstelle Sectigo
