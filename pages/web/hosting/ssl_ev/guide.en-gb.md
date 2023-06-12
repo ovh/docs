@@ -136,7 +136,7 @@ To ensure that email exchanges with Sectigo are going well, also check the valid
 
 > [!primary]
 >
-> In parallel and in order to certify the ownership of your domain with Sectigo, a *.txt* file is automatically set up in the FTP space of your web hosting plan. This will then be deleted when it is no longer needed by Sectigo.
+> In parallel and in order to certify the ownership of your domain with Sectigo, a *.txt* file is automatically set up in the FTP space of your web hosting plan. This file will be deleted when it is no longer needed by Sectigo.
 >
 > Please note that some restrictions applied on your side (e.g. in a .htaccess file) may prevent this verification.
 > If the FTP access rights `CHMOD` are also restricted or insufficient, the verification can also be blocked.
