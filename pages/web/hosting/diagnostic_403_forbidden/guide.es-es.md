@@ -136,7 +136,8 @@ Si su alojamiento ha sido cerrado más de dos semanas antes, contacte con un [pr
 > Para instalar el software **FileZilla** para manipular los archivos de su sitio web, siga las instrucciones de este [tutorial](/pages/web/hosting/ftp_filezilla_user_guide).
 >
 
-Abra FileZilla y luego [conéctese a su espacio de almacenamiento FTP](/pages/web/hosting/ftp_connectio). Haga clic en `Servidor`{.action} en el menú y, seguidamente, en `Introducir un pedido FTP`{.action} (el título puede ser diferente según la versión de FileZilla que utilice).
+Abra FileZilla y luego [conéctese a su espacio de almacenamiento FTP](/pages/web/hosting/ftp_connection). Haga clic en `Servidor`{.action} en el menú y, seguidamente, en `Introducir un pedido FTP`{.action} (el título puede ser diferente según la versión de FileZilla que utilice).
+
 
 ![command_filezilla1](images/command_filezilla1.png){.thumbnail}
 
