@@ -173,4 +173,6 @@ user@host:~$ aws --profile default s3 rb s3://bucket
 
 ## Sprawdź również
 
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
