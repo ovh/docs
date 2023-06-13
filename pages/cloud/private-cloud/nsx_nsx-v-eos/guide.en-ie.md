@@ -20,11 +20,11 @@ To identify your usage of the NSX-v feature in your Hosted Private Cloud environ
 - Am I using an Edge Services Gateway?
 - Am I using an SSL VPN?
 
-### I do not use any of the NSX-v features
+#### I do not use any of the NSX-v features
 
 If you do not use any of the above features, you will be able to deactivate NSX-v. You will be notified when the deactivation process is available.
 
-### I only use VXLAN
+#### I only use VXLAN
 
 If the only feature you use is VXLAN, you have the following choice:
 
@@ -46,13 +46,13 @@ If the only feature you use is VXLAN, you have the following choice:
 
 You will then have to deactivate NSX-v. You will be notified when the deactivation process is available.
 
-### I use some of the NSX-v features
+#### I use some of the NSX-v features
 
 We recommend migrating to NSX (see [details](#migration) below) to benefit from all its included features.
 
 Alternatively, you can decide to deploy alternatives components (Load-balancer, Firewall appliance, VPN, ...) and then disable NSX-v (you will be notified when the deactivation process is available).
 
-## Migrating to NSX <a name="migration"></a>
+### Migrating to NSX <a name="migration"></a>
 
 The NSX software is enabled at the Virtual Datacenter (vDC) level. In order to migrate from NSX-v to NSX, you can order a new vDC for your existing Hosted Private Cloud service (feature available starting July 5, 2023), add new Hosts and then migrate from your current vDC to the new vDC using VMware vMotion.
 
