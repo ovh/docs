@@ -23,7 +23,7 @@ Wenn sie nicht bereits in Ihrem FTP-Bereich existiert, können Sie einfach eine 
 
 Um die Datei ".htaccess" korrekt zu verwenden müssen Sie folgende Regeln kennen und einhalten: 
 
-- Legen Sie nur **einze** ".htaccess" Datei pro Verzeichnis oder Unterverzeichnis an, um Konflikte zwischen verschiedenen ".htaccess" Dateien zu vermeiden.
+- Legen Sie nur **eine** ".htaccess" Datei pro Verzeichnis oder Unterverzeichnis an, um Konflikte zwischen verschiedenen ".htaccess" Dateien zu vermeiden.
 - Die Datei ".htaccess" ist für Besucher Ihrer Website unsichtbar.
 - Die in einer ".htaccess" Datei befindlichen Regeln gelten für das gesamte Verzeichnis, in dem die ".htaccess" Datei liegt, sowie für alle Unterverzeichnisse desselben Verzeichnisses.
 
@@ -32,7 +32,7 @@ Um die Datei ".htaccess" korrekt zu verwenden müssen Sie folgende Regeln kennen
 >
 > Wenn Sie Schwierigkeiten haben, die Schritte in diesem Tutorial durchzuführen, empfehlen wir, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
-> Die folgende Beispiele sind in eine ".htaccess" Datei einzufügen. Achtung, die Regeln, die Sie in dieser Datei festlegen, haben direkte Auswirkungen auf Ihre Website. Überprüfen Sie systematisch die Regeln, die Sie hinzufügen, bevor Sie sie auf Ihre Website anwenden. 
+> Die folgenden Beispiele sind in eine ".htaccess" Datei einzufügen. Achtung, die Regeln, die Sie in dieser Datei festlegen, haben direkte Auswirkungen auf Ihre Website. Überprüfen Sie systematisch die Regeln, die Sie hinzufügen, bevor Sie sie auf Ihre Website anwenden. 
 > 
 
 **Dieses Tutorial erklärt die wichtigsten Operationen, die mithilfe einer ".htaccess" Datei durchgeführt werden können.**
@@ -82,7 +82,7 @@ Options -Indexes
 Das **mod_rewrite** Moduls des Apache Webservers auf Ihrem Webhosting erlaubt die Weiterleitung von:
 
 - Allen HTTP-Anfragen zu einer einzigen Datei Ihrer Website.
-- Einen Teil der-HTTP Anfragen zu einer einzigen Datei Ihrer Website.
+- Einen Teil der HTTP-Anfragen zu einer einzigen Datei Ihrer Website.
 - Ihren Domainnamen zur Subdomain "www".
 - Anfragen zu einem bestimmten Ordner, ohne den betreffenden Ordner anzuzeigen.
 - Webseitenaufrufe zu HTTPS, wenn eine URL über HTTP abgefragt wurde.

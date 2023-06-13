@@ -32,7 +32,7 @@ updated: 2023-05-17
 
 ## Ziel
 
-Der DKIM-Eintrag (**D**omain **K**eys **I**dentified **M**ail) ermöglicht die Signierung von E-Mails, um Identitätsbetrug zu vermeiden. Diese Signatur basiert auf dem Hash-Prinzip in Kombination mit einer asymmetrischen Kryptographie.
+Der DKIM-Eintrag (**D**omain**K**eys **I**dentified **M**ail) ermöglicht die Signierung von E-Mails, um Identitätsbetrug zu vermeiden. Diese Signatur basiert auf dem Hash-Prinzip in Kombination mit einer asymmetrischen Kryptographie.
 
 **Diese Anleitung erklärt, wie DKIM funktioniert und wie Sie es für Ihren E-Mail-Dienst einrichten.**
 
