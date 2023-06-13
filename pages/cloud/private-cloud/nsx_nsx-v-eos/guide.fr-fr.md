@@ -1,5 +1,5 @@
 ---
-title: VMware NSX-v - End of Support (EN)
+title: VMware NSX-v - Fin de prise en charge
 excerpt: "Analysez votre utilisation des fonctionnalités NSX-v et choisissez entre les différents scénarios possibles d’évolution, allant de la désactivation du composant NSX-v jusqu'à la migration vers NSX"
 updated: 2023-06-13
 ---
