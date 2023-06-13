@@ -42,7 +42,7 @@ On the page that appears, click on the `Security`{.action} tab.
 
 This allows you to define whether E-mail accounts should lock after a number of unsuccessful log-in attempts.
 
-To make this change, on the page that appears, enter the information set out in the table below:
+To do this, complete the information below:
 
 - **Lockout threshold**: Set the number of unsuccessful log-in attempts before the account locks. Enter "0" to not apply a lockout threshold.
 - **Lockout counter reset time**: This field will only appear if a lockout threshold has been set. Specify the time in minutes it takes for the failed connection attempt counter to reset.
@@ -54,7 +54,7 @@ Once this information has been entered, you can immediately validate these chang
 
 This allows you to define a complexity requirement, as well as rules for changing passwords.
 
-To make this change, on the page that appears, enter the information set out in the table below:
+To do this, complete the information below:
 
 - **Complexity requirements**: Allows user to set rules regarding the complexity of passwords:<br> not contain all or part of the user’s account name <br>be at least 6 characters long<br> contain uppercase and lowercase letters, non-alphabetic characters (! or $ for example), and numbers
 - **Prevent password change**: Allows to enforce a minimum lifetime for your E-mail accounts’ passwords. This means that users will have to wait a certain number of days before they can change their passwords.

@@ -43,18 +43,18 @@ Aby przejść do polityki bezpieczeństwa usługi e-mail, zaloguj się do [Pane
 Następnie przejdź do aspektów, które chcesz zmodyfikować.
 
 
-- [Wzmocnienie bezpieczeństwa danych](#enhanced-security): Określ, czy konta mają być blokowane po pewnej liczbie nieudanych prób logowania.|
-- [Ustanowienie bardziej złożonego hasła](#password-complexity):Ustaw wymaganie złożoności oraz reguły zmiany hasła.|
-- [Wzmocnienie weryfikacji wiadomości przychodzących (dotyczy wyłącznie usługi Exchange)](./#wzmocnienie-weryfikacji-wiadomosci-przychodzacych-dotyczy-wylacznie-uslugi-exchange){.external}|Określ, czy serwery OVHcloud mają sprawdzać, czy otrzymane wiadomości pochodzą z dozwolonego źródła (weryfikacje DKIM i/lub SPF).|
-- [Określenie sposobu wyświetlania niechcianych wiadomości (dotyczy wyłącznie usługi Exchange)](./#okreslenie-sposobu-wyswietlania-niechcianych-wiadomosci-dotyczy-wylacznie-uslugi-exchange){.external}|Określ, czy niechciane wiadomości mają zawierać tag pozwalający je zidentyfikować, czy też automatycznie trafiać do kosza.|
+- [Wzmocnienie bezpieczeństwa danych](#enhanced-security): Określ, czy konta mają być blokowane po pewnej liczbie nieudanych prób logowania.
+- [Ustanowienie bardziej złożonego hasła](#password-complexity):Ustaw wymaganie złożoności oraz reguły zmiany hasła.
+- [Wzmocnienie weryfikacji wiadomości przychodzących (dotyczy wyłącznie usługi Exchange)](./#wzmocnienie-weryfikacji-wiadomosci-przychodzacych-dotyczy-wylacznie-uslugi-exchange){.external}Określ, czy serwery OVHcloud mają sprawdzać, czy otrzymane wiadomości pochodzą z dozwolonego źródła (weryfikacje DKIM i/lub SPF).
+- [Określenie sposobu wyświetlania niechcianych wiadomości (dotyczy wyłącznie usługi Exchange)](./#okreslenie-sposobu-wyswietlania-niechcianych-wiadomosci-dotyczy-wylacznie-uslugi-exchange){.external}Określ, czy niechciane wiadomości mają zawierać tag pozwalający je zidentyfikować, czy też automatycznie trafiać do kosza.
 
 ### Wzmocnienie bezpieczeństwa danych <a name="enhanced-security"></a>
 
 Możesz ustalić, czy konta e-mail mają być blokowane po określonej liczbie nieudanych prób logowania.
 
-W tym celu uzupełnij informacje podane w poniższej tabeli:
+Aby to zrobić, wypełnij poniższe informacje:
 
-- **Próg blokady|**: Określi liczbę nieudanych prób logowania, po której konto zostanie zablokowane. Wpisz „0”, jeśli nie chcesz ustalać progu blokady.|
+- **Próg blokady**: Określi liczbę nieudanych prób logowania, po której konto zostanie zablokowane. Wpisz „0”, jeśli nie chcesz ustalać progu blokady.
 - **Czas resetu**: Pole to pojawia się tylko wtedy, gdy został określony próg blokady. Określ czas potrzebny na przywrócenie licznika nieudanych prób logowania.
 - **Czas blokady**: Pole to pojawia się tylko wtedy, gdy został określony próg blokady. Określ czas, przez jaki konto e-mail pozostanie zablokowane, jeśli osiągnięty zostanie próg blokady.
 
@@ -64,13 +64,13 @@ Po uzupełnieniu tych informacji możesz zatwierdzić zmiany, klikając `Dalej`{
 
 Ustaw wymaganie złożoności oraz reguły zmiany hasła.
 
-W tym celu uzupełnij informacje podane w poniższej tabeli:
+Aby to zrobić, wypełnij poniższe informacje:
 
 - **Wymagania dotyczące złożoności hasła**: Pozwala ustalić reguły dotyczące złożoności hasła:<br> \- nie może zawierać nazwy konta użytkownika ani jej części;<br> \- musi zawierać co najmniej 6 znaków;<br> \- musi zawierać duże i małe litery, znaki specjalne (np. !, $, etc.) oraz cyfry.
 - **Blokada zmiany hasła**: Umożliwia ustawienie minimalnego czasu ważności haseł ustanowionych dla kont e-mail. Użytkownicy będą musieli odczekać określoną liczbę dni, zanim zmienią hasło.
 - **Maksymalny czas ważności hasła**: Umożliwia ustawienie maksymalnego czasu ważności haseł ustanowionych dla kont e-mail. Użytkownicy będą musieli zmienić hasło po upływie określonego terminu.
 - **Zachowanie historii hasła (dotyczy wyłącznie usługi Exchange)**: Pole to pojawia się tylko wtedy, gdy określony został maksymalny czas ważności hasła. Określ okres, wyrażony w dniach, po upływie którego można ponownie użyć poprzednich haseł.
-- **Minimalna długość hasła|Umożliwia ustawienie minimalnej długości haseł, jeśli użytkownik chce je zmieniać.
+- **Minimalna długość hasłaUmożliwia ustawienie minimalnej długości haseł, jeśli użytkownik chce je zmieniać.
 
 Po uzupełnieniu tych informacji możesz zatwierdzić zmiany, klikając `Dalej`{.action}, a następnie `Zatwierdź`{.action} w przypadku ofert „E-maile” i „E-mail Pro”. W przypadku oferty Exchange kliknij `Zapisz zmiany`{.action}.
 
@@ -78,7 +78,7 @@ Po uzupełnieniu tych informacji możesz zatwierdzić zmiany, klikając `Dalej`{
 
 Możesz określić, czy serwery OVHcloud mają sprawdzać, czy wiadomości spływające na konta e-mail pochodzą z dozwolonego źródła wysyłki (weryfikacje DKIM i/lub SPF).
 
-W tym celu zaznacz żądane pola w poniższej tabeli:
+W tym celu należy zaznaczyć odpowiednie pola:
 
 - **Aktywacja weryfikacji podpisu DKIM**: Określ, czy serwery OVHcloud mają weryfikować podpis DKIM pod wiadomościami, które spływają na Twoje konta Exchange. Czynność ta gwarantuje autentyczność domeny nadawcy i integralność wiadomości. Umożliwia również identyfikację wiadomości pochodzących z nielegalnych źródeł i oznaczenie ich jako spam.
 - **Aktywacja weryfikacji ochrony SPF**: Określ, czy serwery OVHcloud powinny weryfikować, czy źródło wysyłki spływających do Ciebie wiadomości jest zapisane w rekordzie SPF domeny nadawcy. Weryfikacja ta może pomóc w identyfikacji wiadomości pochodzących z nielegalnych źródeł. Wiadomości takie będą oznaczane jako spam.
@@ -89,9 +89,9 @@ Po dokonaniu wyboru zatwierdź zmiany, klikając polecenie `Zapisz zmiany`{.acti
 
 Czynność ta pozwala określić, czy niechciane wiadomości, które spływają na konta e-mail mają zawierać tag pozwalający je zidentyfikować, bądź też automatycznie przenieść do kosza.
 
-W tym celu zaznacz żądane pola w poniższej tabeli:
+W tym celu należy zaznaczyć odpowiednie pola:
 
-- **Identyfikacja niechcianych wiadomości**: Określ, czy serwery OVHcloud mają dodać tag pozwalający zidentyfikować niechciane wiadomości jako spam.|
+- **Identyfikacja niechcianych wiadomości**: Określ, czy serwery OVHcloud mają dodać tag pozwalający zidentyfikować niechciane wiadomości jako spam.
 - **Przenoszenie niechcianych wiadomości do kosza**: Określ, czy serwery OVHcloud mają automatycznie przenosić niechciane wiadomości do kosza.
 
 Po dokonaniu wyboru zatwierdź zmiany, klikając polecenie `Zapisz zmiany`{.action}.

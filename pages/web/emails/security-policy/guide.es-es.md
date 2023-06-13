@@ -51,7 +51,7 @@ Continúe leyendo esta guía en el apartado correspondiente a la acción que des
 
 Permite indicar si las cuentas de correo deben bloquearse al cabo de un cierto número de intentos de conexión fallidos.
 
-Para ello, debe completar los datos que se detallan a continuación:
+Para ello, complete la información que figura a continuación:
 
 - **Umbral de bloqueo**: Introduzca el número de intentos de conexión fallidos permitidos antes de que se bloquee la cuenta. Indique «0» si no desea que se bloquee la cuenta.
 - **Intervalo de puesta a cero del contador**: Este campo solo aparece si se ha establecido un umbral de bloqueo. Indique el tiempo en minutos que tarda el contador de intentos de conexión fallidos en volver a cero.
@@ -63,7 +63,7 @@ Una vez que haya completado esta información, acepte los cambios haciendo clic 
 
 Permite establecer requisitos de complejidad y reglas relativas al cambio de las contraseñas.
 
-Para ello, debe completar los datos que se detallan a continuación:
+Para ello, complete la información que figura a continuación:
 
 - **Requisitos de complejidad**: Permite establecer reglas relativas a la complejidad de las contraseñas:<br> - no contener la totalidad o parte del nombre de la cuenta del usuario;<br> - tener una longitud de al menos 6 caracteres;<br> - contener caracteres en mayúsculas, minúsculas, no alfabéticos (por ejemplo, «!» o «$») y cifras.
 - **Impedir el cambio de la contraseña**: Permite imponer una duración de validez mínima a las contraseñas de las cuentas de correo. Esto significa que los usuarios deberán esperar un número de días determinado antes de poder volver a cambiar la contraseña.
@@ -77,7 +77,7 @@ Una vez que haya completado esta información, acepte los cambios haciendo clic 
 
 Permite indicar si los servidores de OVHcloud deben verificar que los mensajes recibidos en las cuentas de correo provengan de un origen legítimo (verificación DKIM y/o SPF).
 
-Para ello, marque las casillas que desee en la tabla siguiente:
+Para ello, marque las casillas correspondientes:
 
 - **Activar la verificación de la firma DKIM**: Indique si los servidores de OVHcloud deben comprobar la firma DKIM de los mensajes que usted reciba en las cuentas Exchange. Al marcar la casilla, se garantiza la autenticidad del dominio remitente y la integridad del mensaje, permitiendo identificar envíos no legítimos, que serán etiquetados como spam.
 - **Activar la verificación de la protección SPF**: Indique si los servidores de OVHcloud deben comprobar que el origen de envío de los mensajes que usted reciba figura en el registro SPF del dominio remitente. Esta comprobación permite identificar envíos no legítimos, que serán etiquetados como spam.
@@ -88,7 +88,7 @@ Una vez que haya elegido, acepte los cambios haciendo clic en `Guardar los cambi
 
 Permite indicar si los mensajes no deseados que reciba en las cuentas de correo deben llevar una etiqueta que permita identificarlos o deben trasladarse automáticamente a la papelera.
 
-Para ello, marque las casillas que desee en la tabla siguiente:
+Para ello, marque las casillas correspondientes:
 
 - **Identificar el correo no deseado**: Indique si los servidores de OVHcloud deben añadir una etiqueta que permita identificar como spam los mensajes no deseados que reciba.
 - **Mover a la papelera el correo no deseado**: Indique si los servidores de OVHcloud deben trasladar automáticamente a la papelera los mensajes no deseados que reciba.
