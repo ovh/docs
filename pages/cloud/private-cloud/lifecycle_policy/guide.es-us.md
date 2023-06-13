@@ -109,31 +109,6 @@ This table presents a summary of the different phases of the lifecycle of the se
 | Essentials (Intel Broadwell) | 2020 |            |            |            |
 | Premier (Intel Xeon Gold) | 2020 |            |            |            |
 
-### Datastores (storage)
-
-You can get your datastore profile using the following API call :
-
-> [!api]
->
-> @api {GET} /dedicatedCloud/{serviceName}/filer/{filerId}
->
-
-If your datastore's full profile does not start with "2020-...", it is urgent and mandatory that you upgrade your storage to newer flavors.
-
-| Commercial Range | General Availability | End of Sales | End of Growth  | End of Life |
-|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 300Gb | 2013 | 30/11/2021 | 31/03/2022 | 30/06/2023 |
-| 600Gb | 2013 | 30/11/2021 | 31/03/2022 | 30/06/2023 |
-| 800Gb | 2016 | 30/11/2021 | 31/03/2022 | 30/06/2023 |
-| 1.2Tb | 2016 | 30/11/2021 | 31/03/2022 | 30/06/2023 |
-| 3Tb | 2020 |            |            |            |
-| 6Tb | 2020 |            |            |            |
-| 9Tb | 2020 |            |            |            |
-| 18Tb | 2020 |            |            |            |
-| 36Tb | 2020 |            |            |            |
-| 12Tb | 2023 |            |            |            |
-| 24Tb | 2023 |            |            |            |
-
 ## Integrated Software
 
 ### VMware lifecycle policy
