@@ -63,7 +63,7 @@ If the command returns no value, this means that the packages are not installed,
 sudo apt-get remove ovh-rtm-binaries ovh-rtm-metrics-toolkit noderig beamium
 ```
 
-**Verify if repositories exist:**
+**Verify if the repositories exist:**
 
 ```bash
 ls /etc/apt/sources.list.d/
