@@ -58,12 +58,12 @@ The NSX software is enabled at the Virtual Datacenter (vDC) level. In order to m
 
 The documentation to migrate to NSX is not yet available. 
 
-Our support teams and [Professional Services experts](https://www.ovhcloud.com/en-gb/professional-services/) can provide you with assistance when the migration is available.
+Our support teams and [Professional Services experts](https://www.ovhcloud.com/en-au/professional-services/) can provide you with assistance when the migration is available.
 
 ## Go further <a name="gofurther"></a>
 
 [Getting started with NSX](/pages/cloud/private-cloud/nsx-01-first-steps)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.
