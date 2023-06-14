@@ -52,7 +52,7 @@ Mit der automatisierten Sperrung werden Sie auch vor möglichen rechtlichen Kons
 
 - Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
 - Sie verfügen über die [Login-Daten](/pages/web/hosting/ftp_connection) für den FTP-Speicherplatz Ihres Hostings.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
@@ -95,8 +95,8 @@ Beachten Sie zunächst das Datum des Versands der E-Mail von OVHcloud, in der di
 >
 > Unsere Sicherheitsroboter können zwei Stufen der Zugangsbeschränkung auf Ihr Webhosting anwenden: 
 >
-> - Deaktivierung durch Anwendung eines "**CHMOD 700**" auf die FTP-Wurzelspitze Ihres Webhostings
-> - Deaktivierung durch Anwendung eines "**CHMOD 000**" auf die FTP-Wurzelspitze Ihres Webhostings.
+> - Die Zugriffsberechtigungen sind auf "**CHMOD 700**" im FTP-Root Ihres Webhostings gesetzt.
+> - Die Zugriffsberechtigungen sind auf "**CHMOD 000**" im FTP-Root Ihres Webhostings gesetzt.
 >
 > Wenn sie "**CHMOD 000**" zurücksetzen möchten, kontaktieren Sie unsere [Support-Teams](https://www.ovhcloud.com/de/support-levels/), um den Status Ihrer Website überprüfen zu lassen, bevor Sie mit den in dieser Anleitung beschriebenen Schritten fortfahren. 
 >
