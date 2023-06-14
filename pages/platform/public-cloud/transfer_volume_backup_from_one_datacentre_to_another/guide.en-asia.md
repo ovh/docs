@@ -12,7 +12,7 @@ updated: 2021-01-19
 
 ## Objective
 
-It may become necessary to move additional volumes from one datacentre to another, either because you would prefer to move to a newly-available datacentre, or because you want to migrate from [OVHcloud Labs](https://labs.ovh.com/){.external} (formerly RunAbove) to the [Public Cloud]({ovh_www}public-cloud/instances/){.external}.
+It may become necessary to move additional volumes from one datacentre to another, either because you would prefer to move to a newly-available datacentre, or because you want to migrate from [OVHcloud Labs](https://labs.ovh.com/){.external} (formerly RunAbove) to the [Public Cloud](https://www.ovhcloud.com/asia/public-cloud/compute/){.external}.
 
 **This guide will show you how to transfer a volume backup from one datacentre to another.**
 
@@ -24,7 +24,7 @@ Before following these steps, it’s recommended that you first complete this gu
 
 You will also need the following:
 
-* a [Public Cloud Instance]({ovh_www}/public-cloud/instances/){.external} in your OVHcloud account
+* a [Public Cloud Instance](https://www.ovhcloud.com/asia/public-cloud/compute/){.external} in your OVHcloud account
 * administrative (root) access to your datacentre via SSH
 
 > [!primary]

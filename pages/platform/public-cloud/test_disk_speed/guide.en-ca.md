@@ -16,7 +16,7 @@ You'll probably be called upon to check the speed of your disks when you carry o
 
 ## Requirements
 
-- A [Public Cloud Instance]({ovh_www}public-cloud/instances/){.external} in your OVHcloud account
+- A [Public Cloud Instance](https://www.ovhcloud.com/en-ca/public-cloud/compute/){.external} in your OVHcloud account
 - Administrative (root) access to your instance via SSH
 
 ## Instructions

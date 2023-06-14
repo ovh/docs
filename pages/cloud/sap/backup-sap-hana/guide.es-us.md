@@ -6,8 +6,7 @@ section: Advanced usage
 order: 01
 updated: 2022-03-28
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/sap/backup-sap-hana
-/'
+    canonical: 'https://docs.ovh.com/gb/en/sap/backup-sap-hana/'
 ---
 
 **Last updated 28th March 2022**

@@ -35,13 +35,13 @@ Vous souhaitez migrer vos adresses e-mail présentes sur une plateforme Exchange
 
 ### Configurer la plateforme de destination
 
-Avant de commencer votre migration, si vous venez de commander votre nouvelle offre e-mail, ajoutez d'abord le nom de domaine à votre plateforme [E-mail Pro](../../emails-pro/premiere-configuration/#etape-2-ajouter-votre-nom-de-domaine) ou [Exchange](../ajouter-domaine-exchange/). Si vous migrez vers une plateforme MX Plan, le nom de domaine attaché étant « fixe », vous pouvez directement passer à [l'étape suivante](#accountsmigration).
+Avant de commencer votre migration, si vous venez de commander votre nouvelle offre e-mail, ajoutez d'abord le nom de domaine à votre plateforme [E-mail Pro](../../emails-pro/premiere-configuration/#etape-2-ajouter-votre-nom-de-domaine) ou [Exchange](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain). Si vous migrez vers une plateforme MX Plan, le nom de domaine attaché étant « fixe », vous pouvez directement passer à [l'étape suivante](#accountsmigration).
 
 > Sélectionnez l’onglet `Domaines associés`{.action} sur votre plateforme, puis cliquez sur `Ajouter un domaine`{.action}. Configurez votre nom de domaine en **non-autoritatif**. Une fois le nom de domaine ajouté, assurez-vous que la mention `OK` est bien présente dans la colonne `Statut`.
 >
 > ![email-migration](images/migration_platform02.png){.thumbnail}
 >
-> Pour plus de détails sur l'ajout d'un nom de domaine, suivez [le guide E-mail Pro](../../emails-pro/premiere-configuration/#etape-2-ajouter-votre-nom-de-domaine) ou [le guide Exchange](../ajouter-domaine-exchange/).
+> Pour plus de détails sur l'ajout d'un nom de domaine, suivez [le guide E-mail Pro](../../emails-pro/premiere-configuration/#etape-2-ajouter-votre-nom-de-domaine) ou [le guide Exchange](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain).
 
 ### Migrer les comptes e-mail <a name="accountsmigration"></a>
 

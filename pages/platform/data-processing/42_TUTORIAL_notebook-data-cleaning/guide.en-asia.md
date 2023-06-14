@@ -24,7 +24,7 @@ This tutorial presents a simple data cleaning with `Notebooks for Apache Spark`.
 
 ## Requirements 
 
-- A [Public Cloud project](ttps://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 ## Instructions
