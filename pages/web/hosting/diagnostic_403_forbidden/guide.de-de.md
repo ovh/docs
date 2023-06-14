@@ -140,7 +140,7 @@ Wenn Ihr Hosting vor mehr als zwei Wochen gesperrt wurde, kontaktieren Sie einen
 > Wenn Sie die Anwendung **FileZilla** installieren möchten, um die Dateien Ihrer Website zu bearbeiten, folgen Sie den Anweisungen in [diesem Tutorial](/pages/web/hosting/ftp_filezilla_user_guide).
 >
 
-Öffnen Sie FileZilla und [verbinden Sie sich mit Ihrem FTP-Speicherplatz](/pages/web/hosting/ftp_connection). Klicken Sie anschließend im Menü auf `Server`{.action} und dann auf `Benutzerdefinierten Befehl eingeben`{.action} eingeben. (Je nach der Version von FileZilla kann die Bezeichnung variieren.)
+Öffnen Sie FileZilla und [verbinden Sie sich mit Ihrem FTP-Speicherplatz](/pages/web/hosting/ftp_connection). Klicken Sie anschließend im Menü auf `Server`{.action} und dann auf `Benutzerdefinierten Befehl eingeben`{.action}. (Je nach der Version von FileZilla kann die Bezeichnung variieren.)
 
 ![command_filezilla1](images/command_filezilla1.png){.thumbnail}
 
