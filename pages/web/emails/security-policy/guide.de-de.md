@@ -9,7 +9,7 @@ updated: 2021-08-31
 
 **Letzte Aktualisierung am 22.04.2022**
 
-## Einleitung
+## Ziel
 
 Mit den E-Mail-Diensten von OVHcloud können Sie professionelle E-Mail-Adressen erstellen. Um diese Umgebung zu sichern, können Sie die globalen Sicherheitseinstellungen für Ihre E-Mails-Accounts verwalten.
 
@@ -78,7 +78,7 @@ Wenn Sie alle Informationen angegeben haben, bestätigen Sie die Änderungen fü
 
 Sie können festlegen, ob auf Ihren E-Mail-Accounts eingehende Nachrichten auf einen legitimen Absender überprüft werden sollen (Überprüfung der DKIM- und/oder SPF-Signatur).
 
-Kreuzen Sie dazu die gewünschten Optionen an:
+Haken Sie dazu die gewünschten Optionen an:
 
 - **Überprüfung der DKIM-Signatur aktivieren**: Setzen Sie hier einen Haken, wenn unsere Server die DKIM-Signatur der auf Ihren Exchange Accounts eingehenden Nachrichten überprüfen soll. So werden die Authentizität der Sender-Domain sowie die Vertrauenswürdigkeit der Nachricht sichergestellt. Nachrichten von nicht vertrauenswürdigen Absendern können identifiziert und mit Spam-Tags versehen werden.
 - **Überprüfung des SPF-Schutzes aktivieren**: Setzen Sie hier einen Haken, wenn unsere Server überprüfen sollen, dass die Quelle der eingegangenen Nachricht im SPF-Eintrag der Sender-Domain enthalten ist. So können Nachrichten von nicht vertrauenswürdigen Absendern identifiziert und mit Spam-Tags versehen werden.
