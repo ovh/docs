@@ -18,9 +18,15 @@ Lorsqu'un client souscrit à l'offre NSX et qu'elle est activée, une préconfig
 - **ovh-T0-gw** : cette passerelle est le point d'entrée réseau de votre cluster. Elle est préconfigurée avec deux interfaces et une adresse IP virtuelle. Elle est de type **Tier-0 Gateways** (nord-sud).
 - **ovh-T1-gw** : cette passerelle est dans la catégories des **Tier-1 Gateways** (est-ouest). Il est possible de créer des segments (VLAN ou Overlay) qui lui seront connectés. Elle est reliée à **ovh-T0-gw** pour les liaisons exterieures aux clusters (physique et Internet). 
 
-Il est possible de créer de nouvelles passerelles de type **Tier-1 Gateways** et de les relier à la passerelle **ovh-T0-gw**. 
+Il est possible de créer de nouvelles passerelles de type **Tier-1 Gateways** et de les relier à la passerelle **ovh-T0-gw**.
 
-OVHcloud fournit un bloc de 8 adresses IP publiques, certaines sont réservées. L'adresse **HA VIP** est préconfigurée, elle est utilisée pour le SNAT par défaut sur les futurs segments internes.
+OVHcloud fournit un bloc de 16 adresses IP publiques, toutes sont réservées à l'usage des produits OVHcloud. L'adresse **HA VIP** est préconfigurée, elle est utilisée pour le SNAT par défaut sur les futurs segments internes.
+
+> [!warning]
+>
+> Ce bloc d'IP est lié à l'environnement VMware, vous ne pouvez pas le déplacer ou le parquer.
+
+Pensez à [commander un nouveau bloc IP](/pages/cloud/private-cloud/ajout_de_bloc_ip) si vous souhaitez pouvoir ultérieurement migrer d’un environnement VMware on OVHcloud à un autre environnement, ou si votre plan de reprise d’activité nécessite le déplacement du bloc IP.
 
 Par défaut, les routes ne sont pas activées. Les segments créés derrière la passerelle **ovh-T1-gw** peuvent communiquer entre eux mais pas au-delà.
 

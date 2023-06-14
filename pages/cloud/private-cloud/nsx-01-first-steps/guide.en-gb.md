@@ -28,6 +28,8 @@ OVHcloud provides a block of 16 public IP addresses, all of which are reserved f
 
 You should consider [ordering a new IP Block](/pages/cloud/private-cloud/ajout_de_bloc_ip) if you want to be able later to migrate from one VMware on OVHcloud environement to another one, or if your Disaster Recovery Plan requires moving the IP Block.
 
+By default, routes are not enabled. The segments created behind the **ovh-T1-gw** gateway can communicate with each other but not beyond.
+
 **This guide is an introduction to NSX.**
 
 > [!warning]
