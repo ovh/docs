@@ -4,10 +4,10 @@ slug: nsx-first-steps
 excerpt: "Découvrez NSX, la solution de gestion de réseau logicielle Sofware Defined Networking (SDN) fournie par VMware"
 section: NSX
 order: 01
-updated: 2023-02-27
+updated: 2023-06-14
 ---
 
-**Dernière mise à jour le 27/02/2023**
+**Dernière mise à jour le 14/06/2023**
 
 ## Objectif
 
@@ -103,10 +103,6 @@ Les connexions au travers de VLAN sur la passerelle **ovh-T0-gw** n'apparaissent
 Nous allons voir comment afficher les adresses IP virtuelles attachées à la passerelle **ovh-T0-gw**.
 
 Une seule adresse IP virtuelle est affectée lors de la livraison de NSX, elle sert pour le SNAT sur les segments attachés à la passerelle **ovh-T0-gw**.
-
-> [!primary]
-> Il n'est pour le moment pas possible de créer de nouvelles adresses IP virtuelles sur la passerelle **ovh-T0-gw**, mais cette fonctionnalité devrait être bientôt disponible.
-> 
 
 Restez sur l'onglet `Networking`{.action} et cliquez à gauche sur `Tier-0 Gateways`{.action} dans la catégorie **Connectivity**.
 
