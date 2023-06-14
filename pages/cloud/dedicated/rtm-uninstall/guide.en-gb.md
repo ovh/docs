@@ -1,15 +1,15 @@
 ---
-title: Uninstalling the RTM v2 monitoring service
-excerpt: Find out how to uninstall the RTM monitoring service on your service
-updated: 2023-06-08
+title: Uninstalling the RTM v2 monitoring system
+excerpt: Find out how to uninstall the RTM monitoring system on your service(s)
+updated: 2023-06-14
 ---
 
 
 ## Objective
 
-The OVH RTM v2 monitoring service has now been deprecated and its repositories deleted. We therefore recommend that you uninstall this service and remove all related packages.
+The OVH RTM v2 monitoring system has now been deprecated and its repositories deleted. We therefore recommend that you uninstall this system from your service(s) and remove all related packages.
 
-**The purpose of this guide is to guide you in cleaning packages used by this service.**
+**The purpose of this guide is to show you how to clean up the packages used by this system.**
 
 ## Requirements
 
@@ -47,11 +47,11 @@ Log in to your server via SSH and remove the following packages:
 # dnf remove beamium
 ```
 
-Next, you need to delete the repositories. If the files mentioned in the examples below don't appear, this means you don't have the RTM v2 packages, so you don't need to do anything.
+Next, you need to delete the repositories.
 
 ### Debian / Ubuntu
 
-**Check if the packages are installed:**
+**Verify if the packages are installed**
 
 ```bash
 dpkg --list | grep -E "noderig|beamium|ovh-rtm-binaries|ovh-rtm-metrics-toolkit"
@@ -63,7 +63,7 @@ If the command returns no value, this means that the packages are not installed,
 sudo apt-get remove ovh-rtm-binaries ovh-rtm-metrics-toolkit noderig beamium
 ```
 
-**Verify if the repositories exist:**
+**Verify if the repositories exist**
 
 ```bash
 ls /etc/apt/sources.list.d/
@@ -77,7 +77,7 @@ rm -f /etc/apt/sources.list.d/ovh-metrics.list /etc/apt/sources.list.d/ovh-rtm.l
 
 ### CentOS
 
-**Verify if the packages are installed:**
+**Verify if the packages are installed**
 
 ```bash
 yum list installed | grep -E "noderig|beamium|ovh-rtm-binaries|ovh-rtm-metrics-toolkit"
@@ -89,7 +89,7 @@ If the command returns no value, this means that the packages are not installed,
 sudo yum remove ovh-rtm-binaries ovh-rtm-metrics-toolkit noderig beamium
 ```
 
-**Verify if the repositories exist:**
+**Verify if the repositories exist**
 
 ```bash
 ls /etc/yum.repos.d/
