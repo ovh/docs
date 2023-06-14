@@ -61,7 +61,7 @@ If the available backups do not allow you to restore access to your website, con
 
 If the page "**403 forbidden**" did not appear following a modification of your website, check your inbox. If you have received an email from OVHcloud notifying you that your web hosting plan has been closed for security reasons, please skip directly to [step 2](#step-2) of this guide.
 
-If the page "**403 forbidden**" appeared without any action on your part and you have not received any email from our services about it, check the FTP access rights (CHMOD) of your files and folders as well as the code contained in your **.htaccess* file(s). Also check if the restriction is caused by a security plugin or application firewall. If necessary, contact a [specialised provider](https://partner.ovhcloud.com/en-gb/directory/).
+If the page "**403 forbidden**" appeared without any action on your part and you have not received any email from our services about it, check the FTP access rights (CHMOD) of your files and folders as well as the code contained in your **.htaccess** file(s). Also check if the restriction is caused by a security plugin or application firewall. If necessary, contact a [specialised provider](https://partner.ovhcloud.com/en-gb/directory/).
 
 ### Step 2: Apply security measures on your side <a name="step-2"></a>
 
