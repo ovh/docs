@@ -18,15 +18,15 @@ When a customer subscribes to the NSX offer and enables it, a pre-configuration 
 - **ovh-T0-gw** : This gateway is the network entry point for your cluster. It is preconfigured with two interfaces and a virtual IP address. It is of type **Tier-0 Gateways** (North-South). 
 - **ovh-T1-gw** : This gateway is in the **Tier-1 Gateways** (East-West) category. You can create segments (VLANs or Overlay) that will be connected to it. It is connected to **ovh-T0-gw** for connections outside the clusters (Physical and Internet).
 
-New **Tier-1 gateways** can be created and linked to t  he **ovh-T0-gw** gateway.
+New **Tier-1 gateways** can be created and linked to the **ovh-T0-gw** gateway.
 
-OVHcloud provides a block of 16 public IP addresses, all this IP are reserved for OVHcloud Products. The **HA VIP** address is preconfigured, it is used for SNAT by default on future internal segments.
+OVHcloud provides a block of 16 public IP addresses, all of which are reserved for OVHcloud products. The **HA VIP** address is preconfigured and is used for SNAT by default on future internal segments.
 
- > [!warning]This IP block is linked to the VMware environnement you cannot move/park this IP block.
+> [!warning]
+>
+> This IP block is linked to the VMware environnement, you can't move or park it.
 
-You should consider to order a new IP Block to be able later to do migration from one VMware on OVHcloud to another one environnement or Disaster Recovery that required the move of the IP Block.
-https://help.ovhcloud.com/csm/en-vmware-add-ip-block?id=kb_article_view&sysparm_article=KB0045307
-
+You should consider [ordering a new IP Block](/pages/cloud/private-cloud/ajout_de_bloc_ip) if you want to be able later to migrate from one VMware on OVHcloud environement to another one, or if your Disaster Recovery Plan requires moving the IP Block.
 
 **This guide is an introduction to NSX.**
 
