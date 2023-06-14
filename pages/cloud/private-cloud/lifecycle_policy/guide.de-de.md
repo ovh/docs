@@ -6,10 +6,9 @@ routes:
 excerpt: 'Lifecycle policy for Hosted Private Cloud powered by VMware'
 section: FAQ
 order: 3
-updated: 2023-03-27
+updated: 2023-06-13
 ---
 
-**Last updated 27th March 2023**
 
 > [!warning]
 >
@@ -109,31 +108,6 @@ This table presents a summary of the different phases of the lifecycle of the se
 | SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/01/2024 | 31/08/2025 |
 | Essentials (Intel Broadwell) | 2020 |            |            |            |
 | Premier (Intel Xeon Gold) | 2020 |            |            |            |
-
-### Datastores (storage)
-
-You can get your datastore profile using the following API call :
-
-> [!api]
->
-> @api {GET} /dedicatedCloud/{serviceName}/filer/{filerId}
->
-
-If your datastore's full profile does not start with "2020-...", it is urgent and mandatory that you upgrade your storage to newer flavors.
-
-| Commercial Range | General Availability | End of Sales | End of Growth  | End of Life |
-|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 300Gb | 2013 | 30/11/2021 | 31/03/2022 | 30/06/2023 |
-| 600Gb | 2013 | 30/11/2021 | 31/03/2022 | 30/06/2023 |
-| 800Gb | 2016 | 30/11/2021 | 31/03/2022 | 30/06/2023 |
-| 1.2Tb | 2016 | 30/11/2021 | 31/03/2022 | 30/06/2023 |
-| 3Tb | 2020 |            |            |            |
-| 6Tb | 2020 |            |            |            |
-| 9Tb | 2020 |            |            |            |
-| 18Tb | 2020 |            |            |            |
-| 36Tb | 2020 |            |            |            |
-| 12Tb | 2023 |            |            |            |
-| 24Tb | 2023 |            |            |            |
 
 ## Integrated Software
 
