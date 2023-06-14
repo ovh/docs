@@ -4,10 +4,10 @@ slug: nsx-first-steps
 excerpt: Discover NSX, the Software-Defined Networking (SDN) solution provided by VMware.
 section: NSX
 order: 01
-updated: 2023-02-27
+updated: 2023-06-14
 ---
 
-**Last updated 27th February 2023**
+**Last updated 14th June 2023**
 
 ## Objective
 
@@ -15,12 +15,18 @@ NSX is a **Software-Defined Networking (SDN)** solution provided by VMware. OVHc
 
 When a customer subscribes to the NSX offer and enables it, a pre-configuration is applied with two gateways:
 
-- **ovh-T0-gw** : This gateway is the network entry point for your cluster. It is preconfigured with two interfaces and a virtual IP address. It is of type **Tier-0 Gateways** (North-South).
+- **ovh-T0-gw** : This gateway is the network entry point for your cluster. It is preconfigured with two interfaces and a virtual IP address. It is of type **Tier-0 Gateways** (North-South). 
 - **ovh-T1-gw** : This gateway is in the **Tier-1 Gateways** (East-West) category. You can create segments (VLANs or Overlay) that will be connected to it. It is connected to **ovh-T0-gw** for connections outside the clusters (Physical and Internet).
 
-New **Tier-1 gateways** can be created and linked to the **ovh-T0-gw** gateway.
+New **Tier-1 gateways** can be created and linked to t  he **ovh-T0-gw** gateway.
 
-OVHcloud provides a block of 8 public IP addresses, some of which are reserved. The **HA VIP** address is preconfigured, it is used for SNAT by default on future internal segments.
+OVHcloud provides a block of 16 public IP addresses, all this IP are reserved for OVHcloud Products. The **HA VIP** address is preconfigured, it is used for SNAT by default on future internal segments.
+
+ > [!warning]This IP block is linked to the VMware environnement you cannot move/park this IP block.
+
+You should consider to order a new IP Block to be able later to do migration from one VMware on OVHcloud to another one environnement or Disaster Recovery that required the move of the IP Block.
+https://help.ovhcloud.com/csm/en-vmware-add-ip-block?id=kb_article_view&sysparm_article=KB0045307
+
 
 **This guide is an introduction to NSX.**
 
@@ -34,6 +40,7 @@ OVHcloud provides a block of 8 public IP addresses, some of which are reserved. 
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials.
 - A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+
 
 ## Instructions
 
@@ -96,9 +103,7 @@ We will show you how to display the virtual IP addresses attached to the **ovh-T
 
 Only one virtual IP address is assigned when NSX is delivered. It is used for SNAT on the segments attached to the gateway **ovh-T0-gw**.
 
-> [!primary]
-> For now it is not possible to create new virtual IP addresses, but this feature should be available soon.
-> 
+
 
 Stay on the `Networking`{.action} tab and click on `Tier-0 Gateways`{.action} to the left in the **Connectivity** category.
 
