@@ -50,7 +50,7 @@ La fonction Legal hold offre la même protection qu'une période de rétention, 
 - Connaître vos informations d'identification S3 (access_key et secret_access_key)
 - Avoir installé et configuré aws cli
 
-Consultez notre guide « [Débuter avec S3 Object Storage](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/) » pour plus de détails.
+Consultez notre guide « [Débuter avec S3 Object Storage](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) » pour plus de détails.
 
 ## En pratique
 
@@ -58,7 +58,7 @@ Consultez notre guide « [Débuter avec S3 Object Storage](https://docs.ovh.com/
 >
 > Tous les exemples suivants utiliseront aws cli.
 >
-> Pour en savoir plus sur aws cli, suivez ce [guide](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/).
+> Pour en savoir plus sur aws cli, suivez ce [guide](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage).
 >
 
 ### Permissions
@@ -73,7 +73,7 @@ Consultez notre guide « [Débuter avec S3 Object Storage](https://docs.ovh.com/
 | `s3:PutBucketObjectLockConfiguration` | Permet à l'utilisateur de placer une configuration de rétention sur un bucket spécifique |
 | `s3:BypassGovernanceRetention` | Permet à l'utilisateur de contourner le mode *Governance*. |
 
-*Lisez ce [guide](https://docs.ovh.com/fr/storage/s3/gestion-des-identites-et-des-acces/) pour en savoir plus sur la gestion des identités et des accès.*
+*Lisez ce [guide](/pages/cloud/storage/object_storage/s3_identity_and_access_management) pour en savoir plus sur la gestion des identités et des accès.*
 
 ### Configuration d'Object Lock
 

@@ -356,8 +356,7 @@ A partir de esta etapa, el procedimiento será diferente en función del CMS que
 Para continuar con la instalación, siga uno de los siguientes enlaces haciendo clic en la guía correspondiente a su CMS:
 
 - [Finalizar la instalación de WordPress](https://docs.ovh.com/us/es/hosting/cms_instalar_manualmente_wordpress/)
-- [Finalizar la instalación de Joomla!](https://docs.ovh.com/us/es/hosting/cms_manually_install_joomla/
-)
+- [Finalizar la instalación de Joomla!](https://docs.ovh.com/us/es/hosting/cms_manually_install_joomla/)
 - [Finalizar la instalación de Drupal](https://docs.ovh.com/us/es/hosting/cms_manually_install_drupal/)
 - [Finalizar la instalación de PrestaShop](https://docs.ovh.com/us/es/hosting/cms_manually_install_prestashop/)
 

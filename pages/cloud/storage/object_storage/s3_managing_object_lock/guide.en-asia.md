@@ -73,7 +73,7 @@ See our [Getting started with S3 Object Storage](https://docs.ovh.com/asia/en/st
 | `s3:PutBucketObjectLockConfiguration` | Allows users to place an Object Lock configuration on the specified bucket  |
 | `s3:BypassGovernanceRetention` | Allows users to bypass the Governance mode |
 
-*Read this [guide](https://docs.ovh.com/asia/en/storage/s3/identity-and-access-management/) to learn more about IAM.*
+*Read this [guide](/pages/cloud/storage/object_storage/s3_identity_and_access_management) to learn more about IAM.*
 
 ### Object Lock configuration
 

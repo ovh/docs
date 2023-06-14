@@ -15,7 +15,7 @@ Découvrez comment optimiser l'envoi de vos fichiers vers votre bucket.
 
 ## Prérequis
 
-- [Avoir installé awscli](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/)
+- [Avoir installé awscli](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage)
 
 ## En pratique
 

@@ -225,7 +225,7 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >> ```
 >> > [!primary]
 >> >
->> > Jeśli Twoja domena jest zarządzana w tym samym panelu klienta co Twoja platforma i zaznaczyłeś `autoEnableDKIM` i `configureDkim`, przejdź bezpośrednio do sekcji [**Poszczególne państwa DKIM**](dkim-status#) poniżej, aby śledzić aktywację DKIM.
+>> > Jeśli Twoja domena jest zarządzana w tym samym panelu klienta co Twoja platforma i zaznaczyłeś `autoEnableDKIM` i `configureDkim`, przejdź bezpośrednio do sekcji [**Poszczególne państwa DKIM**](#dkim-status) poniżej, aby śledzić aktywację DKIM.
 >>
 > **3.Pobierz rekord DNS**
 >> Należy ręcznie skonfigurować strefę DNS Twojej domeny **w następujących** przypadkach:
