@@ -65,16 +65,20 @@ Compare un messaggio con le informazioni relative alla configurazione della moda
 - **Se hai inserito un dominio non gestito da OVHcloud**: la modalità non autoritativa verrà configurata di default.
 
 - **Se hai selezionato nella lista un dominio gestito da OVHcloud**: dovrai scegliere tra due modalità.
+    - **Autoritativa** : È la più indicata se con il tuo dominio utilizzi esclusivamente la soluzione Exchange o Email Pro. Non consente l'utilizzo di un altro servizio di posta elettronica.
+    - **Non autoritativa** : È la più indicata se con il tuo dominio utilizzi contemporaneamente la soluzione Exchange o Email Pro e un'altra soluzione email. È necessario indicare il server dell’altra soluzione email.
 
-|Modalità |Descrizione|
-|---|---|
-|Autoritativa|È la più indicata se con il tuo dominio utilizzi esclusivamente la soluzione Exchange o Email Pro. Non consente l'utilizzo di un altro servizio di posta elettronica.|
-|Non autoritativa|È la più indicata se con il tuo dominio utilizzi contemporaneamente la soluzione Exchange o Email Pro e un'altra soluzione email. È necessario indicare il server dell’altra soluzione email.|
+>
+> - Quando una e-mail viene trasmessa alla tua piattaforma di posta elettronica (*Server A*) in modalità **autorevole**, significa che tutti gli indirizzi e-mail del tuo nome a dominio sono ospitati solo su questa piattaforma. <br> <br> Ad esempio, se inviamo una e-mail all'indirizzo "*mary.johnson@mydomain.ovh*", il "*Server A*" restituisce un messaggio di errore al mittente, perché questo indirizzo non non esiste su "*Server A*".
+> - Quando una e-mail viene trasmessa alla tua piattaforma di posta elettronica (*Server A*) in modalità **non autoritativa**, significa che gli indirizzi e-mail del tuo nome a dominio sono distribuiti tra le e-mail principali della tua piattaforma (*Server A*) e un altro servizio di posta elettronica (*Server B*). <br> <br> Ad esempio, se inviamo un'e-mail all'indirizzo "*mary.johnson@mydomain.ovh*", il *Server A* inoltrerà l'e-mail al "*Server B*" in modo che può liberarlo.
+>
+>![Aggiungi dominio](images/add_domain_exchange_authoritative.png){.thumbnail}
+>
 
-> [!primary]
+> [!avviso]
 >
-> La scelta di una modalità non è definitiva e può essere modificata in un secondo momento direttamente dallo Spazio Cliente OVHcloud.
->
+> Se ricevi il messaggio "**dominio autorevole rilevato**" quando aggiungi il tuo nome di dominio alla tua piattaforma di posta elettronica, significa che questo nome di dominio è dichiarato in modalità **autorevole** su un'altra piattaforma di posta elettronica. Dovrai passare alla modalità **non autorevole** su entrambe le piattaforme in modo che possano coesistere.
+
 
 Una volta effettuata la scelta, clicca su `Continua`{.action}. 
 

@@ -58,16 +58,19 @@ La fenêtre affiche désormais des informations concernant la configuration des 
 - **Si vous avez renseigné un nom de domaine non géré par OVHcloud** : le mode non-autoritatif sera configuré par défaut.
 
 - **Si vous avez sélectionné dans la liste un nom de domaine géré par OVHcloud** : vous devrez choisir entre deux modes.
+    - **Autoritatif** : convient si votre solution Exchange ou E-mail Pro est la seule solution de messagerie que vous utilisez avec votre nom de domaine. Ne permet pas l'usage d'une autre solution de messagerie avec votre service.
+    - **Non-autoritatif** : Convient si vous utilisez, avec votre nom de domaine, la solution Exchange ou E-mail Pro **ainsi qu'une autre solution de messagerie**. Vous devez renseigner le serveur de votre autre solution e-mail.
 
-|Mode|Description|
-|---|---|
-|Autoritatif|Convient si vous utilisez uniquement votre solution Exchange avec votre nom de domaine. Ne permet pas l'usage d'une autre solution de messagerie avec votre service.|
-|Non-autoritatif|Convient si vous utilisez avec votre nom de domaine la solution Exchange conjointement à une autre solution e-mail. Vous devrez renseigner le serveur de votre autre solution e-mail.|
+>
+> - Lorsqu'un e-mail est transmis vers votre plateforme e-mail (*Server A*) en mode **autoritatif**, cela signifie que toutes les adresses e-mail de votre nom de domaine sont uniquement hébergées sur cette plateforme. <br> <br> Par exemple, si on envoie un e-mail à l'adresse "*mary.johnson@mydomain.ovh*", le "*Server A*" renvoie un message d'échec à l'expéditeur, car cette adresse n'existe pas sur le "*Server A*".
+> - Lorsqu'un e-mail est transmis vers votre plateforme e-mail (*Server A*) en mode **non-autoritatif**, cela signifie que les adresses e-mail de votre nom de domaine sont réparties entre votre plateforme e-mail principale (*Server A*) et un autre service e-mail (*Server B*). <br> <br> Par exemple, si on envoie un e-mail à l'adresse "*mary.johnson@mydomain.ovh*", le *Server A* transmettra l'e-mail au "*Server B*" pour que ce dernier puisse le délivrer.
+>
+> ![Add Domain](images/add_domain_exchange_authoritative.png){.thumbnail}
+>
 
-> [!primary]
+> [!warning]
 >
-> Le choix du mode n'est pas définitif et peut être modifié depuis l'espace client OVHcloud par la suite.
->
+> Si vous obtenez le message "**authoritative domain detected**" lors de l'ajout de votre nom de domaine sur votre plateforme e-mail, cela signifie que ce nom de domaine est déclaré en mode **autoritatif** sur une autre plateforme e-mail. Vous devrez le passer en mode **non-autoritatif** sur les deux plateformes pour qu'elles puissent cohabiter.
 
 Cliquez sur le bouton `Suivant`{.action} pour poursuivre l'ajout du domaine.
 
