@@ -125,7 +125,7 @@ If your hosting plan was closed more than two weeks ago, please contact a [speci
 
 > [!warning]
 >
-> We recommend that you carry out a security audit **before** reopening your web hosting plan. Any malicious actions originating  from your web hosting plan may result in your being held legally responsible.
+> We recommend that you carry out a security audit **before** reopening your web hosting plan. Any malicious actions originating from your web hosting plan may result in your being held legally responsible.
 >
 
 #### Reactivating your web hosting with FileZilla
