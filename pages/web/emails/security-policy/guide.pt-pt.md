@@ -43,16 +43,16 @@ Para aceder à política do seu serviço de e-mail, aceda à [Área de Cliente O
 Continue a ler este manual na secção correspondente à ação que pretende realizar:
 
 
-- [Reforçar a segurança do acesso](#enhanced-security): Indique se as contas devem ser bloqueadas após um certo número de tentativas de ligações sem efeito.|
-- [Tornar a segurança das palavras-passe mais complexa](#password-complexity): Defina uma exigência de complexidade, assim como regras para a alteração da palavra-passe.|
-- [Reforçar a verificação das mensagens de entrada (exclusivamente para Exchange)](#incoming-messages-verification): Indique se os nossos servidores devem verificar se as mensagens recebidas provêm de uma fonte legítima de envio (verificações DKIM e/ou SPF).|
-- [Definir a apresentação das mensagens indesejadas (exclusivamente para Exchange)](#unwanted-messages-management): Especifique se as mensagens indesejadas devem incluir uma identificação que as permita identificar ou mover automaticamente para a reciclagem.|
+- [Reforçar a segurança do acesso](#enhanced-security): Indique se as contas devem ser bloqueadas após um certo número de tentativas de ligações sem efeito.
+- [Tornar a segurança das palavras-passe mais complexa](#password-complexity): Defina uma exigência de complexidade, assim como regras para a alteração da palavra-passe.
+- [Reforçar a verificação das mensagens de entrada (exclusivamente para Exchange)](#incoming-messages-verification): Indique se os nossos servidores devem verificar se as mensagens recebidas provêm de uma fonte legítima de envio (verificações DKIM e/ou SPF).
+- [Definir a apresentação das mensagens indesejadas (exclusivamente para Exchange)](#unwanted-messages-management): Especifique se as mensagens indesejadas devem incluir uma identificação que as permita identificar ou mover automaticamente para a reciclagem.
 
 ### Reforçar a segurança do acesso <a name="enhanced-security"></a>
 
 Esta ação permite-lhe indicar se as contas de e-mail devem ser bloqueadas após um certo número de tentativas de ligação sem efeito.
 
-Para isso, complete as informações mencionadas no quadro abaixo:
+Para o fazer, preencha as informações abaixo:
 
 - **Limite de bloqueio**: Indique o número de tentativas de ligações sem efeito que deve ser atingido para que a conta seja bloqueada. Indique “0” para não aplicar nenhum limite de bloqueio.
 - **Prazo de reinicialização**: Este campo aparece apenas se um limite de bloqueio tiver sido definido. Especifique o tempo necessário, em minutos, para que o contador de tentativas de ligações sem efeito volte a zero.
@@ -64,7 +64,7 @@ Depois de preencher estas informações, valide estas alterações clicando em `
 
 Isto permite-lhe definir uma exigência de complexidade, assim como regras para a alteração da palavra-passe.
 
-Para isso, complete as informações mencionadas no quadro abaixo:
+Para o fazer, preencha as informações abaixo:
 
 - **Exigência de complexidade**: Permite aplicar regras relativamente à complexidade das palavras-passe:<br> - não incluir toda ou parte do nome da conta de utilizador;<br> - ter pelo menos 6 caracteres;<br> - incluir caracteres em maiúsculas, minúsculas, especiais (! ou $, por exemplo), bem como números.
 - **Impedir a alteração da palavra-passe**: Permite aplicar um período de validade mínimo às palavras-passe das contas de e-mail. Ou seja, os utilizadores deverão aguardar um determinado número de dias antes de poder alterar a sua palavra-passe.
@@ -78,7 +78,7 @@ Depois de preencher estas informações, valide estas alterações clicando em `
 
 Isto permite-lhe indicar se os nossos servidores devem verificar se as mensagens recebidas nas suas contas de e-mail provêm de uma fonte legítima de envio (verificações DKIM e/ou SPF).
 
-Para isso, selecione as opções desejadas no quadro abaixo:
+Para o efeito, assinale as casas correspondentes:
 
 - **Ativar a verificação da assinatura DKIM**: Especifique se os nossos servidores devem verificar a assinatura DKIM das mensagens que recebe nas contas Exchange. Esta ação garante a autenticidade do domínio remetente e a integridade da mensagem, permitindo identificar envios não legítimos, que serão identificados como spam.
 - **Ativar a verificação da proteção SPF**: Especifique se os nossos servidores devem verificar que a fonte de envio das mensagens que recebe está bem presente no registo SPF do domínio remetente. Esta verificação pode permitir identificar envios não legítimos, que serão identificados como spam.
@@ -89,7 +89,7 @@ Depois de fazer a sua escolha, valide as alterações clicando em `Registar as m
 
 Isto permite-lhe especificar se as mensagens indesejadas que recebe nas suas contas de e-mail devem incluir uma identificação que as permita identificar ou mover automaticamente para a reciclagem.
 
-Para isso, selecione as opções desejadas no quadro abaixo:
+Para o efeito, assinale as casas correspondentes:
 
 - **Identificar as mensagens indesejadas**: Indique se os nossos servidores devem adicionar uma etiqueta para identificar mensagens recebidas consideradas “indesejadas” como spam.
 - **Mover as mensagens indesejadas para a reciclagem**: Indique se os nossos servidores devem mover automaticamente as mensagens recebidas consideradas “indesejadas” para a reciclagem.
