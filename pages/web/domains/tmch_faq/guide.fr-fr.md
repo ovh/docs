@@ -4,10 +4,8 @@ slug: faq-tmch-trademark-clearinghouse
 excerpt: Apprenez-en plus sur le TMCH grâce à cette FAQ
 section: Protection et sécurité
 order: 02
-updated: 2023-05-05
+updated: 2023-06-14
 ---
-
-**Dernière mise à jour le 05/05/2023**
 
 ## Objectif
 
@@ -88,13 +86,13 @@ Oui, le label (ce qui précise l'extension du domaine, par exemple : label.blog)
 
 ### Le TMCH bloque-t-il les réservations de noms de domaines par des tiers ?
 
-Non, les réservations ne sont pas bloquées. Lors de l’enregistrement par un tiers d’un nom de domaine relatif à l’un de vos labels (ce qui précise l'extension du domaine, par exemple : label.blog), ce même tiers sera notifié de la protection de la marque par le TMCH. S’il poursuit l'enregistrement jusqu'à son terme, vous recevez une notification vous en informant. Vous pouvez alors engager les éventuelles démarches juridiques si vous souhaitez récupérer le nom de domaine.
+Non, les réservations ne sont pas bloquées. Lors de l’enregistrement par un tiers d’un nom de domaine relatif à l’un de vos labels (ce qui précise l'extension du domaine, par exemple : label.blog), ce même tiers sera notifié de la protection de la marque par le TMCH. S’il poursuit l'enregistrement jusqu'à son terme, vous recevez une notification vous en informant. Vous pouvez alors engager d'éventuelles démarches juridiques si vous souhaitez récupérer le nom de domaine.
 
 ## Aller plus loin
 
 [Enregistrez votre nom de domaine chez OVHcloud](https://www.ovhcloud.com/fr/domains/)
 
-[Transférer votre domaine chez OVHcloud](/pages/web/domains/transfer_incoming_generic_domain)
+[Transférez votre domaine chez OVHcloud](/pages/web/domains/transfer_incoming_generic_domain)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
