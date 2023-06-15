@@ -4,14 +4,12 @@ slug: aggiungere-dominio-su-exchange
 excerpt: Come aggiungere un dominio alla piattaforma Exchange o Email Pro
 section: 'Iniziare a utilizzare Exchange'
 order: 04
-updated: 2022-10-07
+updated: 2023-06-14
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
-
-**Ultimo aggiornamento: 07/10/2022**
 
 ## Obiettivo
 
@@ -78,7 +76,6 @@ Compare un messaggio con le informazioni relative alla configurazione della moda
 > [!avviso]
 >
 > Se ricevi il messaggio "**dominio autorevole rilevato**" quando aggiungi il tuo nome di dominio alla tua piattaforma di posta elettronica, significa che questo nome di dominio è dichiarato in modalità **autorevole** su un'altra piattaforma di posta elettronica. Dovrai passare alla modalità **non autorevole** su entrambe le piattaforme in modo che possano coesistere.
-
 
 Una volta effettuata la scelta, clicca su `Continua`{.action}. 
 

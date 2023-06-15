@@ -4,14 +4,12 @@ slug: domain-zu-exchange-hinzufugen
 excerpt: "Erfahren Sie hier, wie Sie einen Domainnamen zu Ihrer Exchange Lösung hinzufügen"
 section: 'Erste Schritte mit Exchange'
 order: 04
-updated: 2022-10-07
+updated: 2023-06-14
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
-
-**Letzte Aktualisierung am 07.10.2022**
 
 ## Ziel
 
@@ -78,11 +76,6 @@ Der Assistent zeigt nun Informationen zur Konfiguration der gewünschten Nutzung
 > [!warnung]
 >
 > Wenn Sie beim Hinzufügen Ihres Domainnamens zu Ihrer E-Mail-Plattform die Meldung „**autoritative Domain erkannt**“ erhalten, bedeutet dies, dass dieser Domainname auf einer anderen E-Mail-Plattform im **autoritativen** Modus deklariert ist. Sie müssen es auf beiden Plattformen in den **nicht autorisierenden** Modus schalten, damit sie koexistieren können.
-
-
-
-
-
 
 Klicken Sie auf `Weiter`{.action}, um die Domain hinzuzufügen.
 

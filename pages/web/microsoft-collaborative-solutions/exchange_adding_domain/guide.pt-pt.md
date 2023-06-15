@@ -4,14 +4,12 @@ slug: adding-domain-exchange
 excerpt: Saiba como adicionar um domínio à sua plataforma Exchange ou E-mail Pro
 section: Primeiros passos com Exchange
 order: 04
-updated: 2022-10-07
+updated: 2023-06-14
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
-
-**Última atualização: 07/10/2022**
 
 ## Objetivo
 

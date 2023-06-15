@@ -4,10 +4,8 @@ slug: ajouter-domaine-exchange
 excerpt: Découvrez comment ajouter un nom de domaine à votre plateforme Exchange
 section: Premiers pas avec Exchange
 order: 04
-updated: 2022-10-07
+updated: 2023-06-14
 ---
-
-**Dernière mise à jour le 07/10/2022**
 
 ## Objectif
 

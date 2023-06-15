@@ -4,14 +4,12 @@ slug: dodanie-domeny-exchange
 excerpt: Dowiedz się, jak dodać domenę do platformy Exchange lub E-mail Pro
 section: Pierwsze kroki z Exchange
 order: 04
-updated: 2022-10-07
+updated: 2023-06-14
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
-
-**Ostatnia aktualizacja z dnia 07-10-2022**
 
 ## Wprowadzenie
 
@@ -78,8 +76,6 @@ Okno wyświetla teraz informacje dotyczące konfiguracji trybów.
 > [!ostrzeżenie]
 >
 > Jeśli otrzymasz komunikat „**wykryto autorytatywną domenę**” podczas dodawania nazwy domeny do platformy poczty e-mail, oznacza to, że ta nazwa domeny jest zadeklarowana w trybie **autorytatywny** na innej platformie poczty e-mail. Będziesz musiał przełączyć go w tryb **nieautorytatywny** na obu platformach, aby mogły współistnieć.
-
-
 
 Kliknij przycisk `Dalej`{.action}, aby kontynuować proces dodawania domeny.
 

@@ -81,9 +81,6 @@ Se mostrará un mensaje informativo relativo al modo de configuración del domin
 >
 > Si recibe el mensaje "**dominio autorizado detectado**" al agregar su nombre de dominio a su plataforma de correo electrónico, esto significa que este nombre de dominio está declarado en modo **autorizado** en otra plataforma de correo electrónico. Deberá cambiarlo al modo **no autorizado** en ambas plataformas para que puedan coexistir.
 
-
-
-
 Haga clic en el botón `«Siguiente»`{.action} para continuar con la adición del dominio.
 
 ![Add Domain](images/add_domain_exchange_step3.png){.thumbnail}
