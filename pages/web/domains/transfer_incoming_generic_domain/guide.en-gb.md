@@ -17,9 +17,9 @@ By transferring your domain name, you will change your domain name registrar. Yo
 
 > [!warning]
 >
-> The *registrar* of a domain name is the authorised organisation/provider with which the domain name is registered/subscribed by an individual, association or organisation. You renew your domain name subscription with the same *registrar* (usually once a year).
+> The domain name *registrar* is a service provider authorised to offer domain names for registration by an individual, association or organisation. You renew your domain name subscription with the same *registrar* (usually once a year).
 >
-> If OVHcloud is already the *registrar* of your domain name **before** starting the next procedure, *domain incoming transfer* is not the appropriate procedure. The *inbound domain transfer* procedure applies **only** to domain names registered in a *registrar* other than OVHcloud.
+> If OVHcloud is already the *registrar* of your domain name, the *incoming domain transfer* procedure does not apply. The *incoming domain transfer* procedure is **only** appropriate for domain names registered with a *registrar* other than OVHcloud.
 >
 > To transfer the domain name management to another OVHcloud customer account, a *change of contacts* must be made instead. The procedure is described in [this guide](https://docs.ovh.com/gb/en/customer/managing-contacts/).
 >
