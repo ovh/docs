@@ -5,14 +5,12 @@ legacy_guide_number: g2272
 excerpt: Come reagire in caso di malfunzionamenti durante l'invio o la ricezione delle email in OVHcloud
 section: Diagnostica
 order: 02
-updated: 2022-07-21
+updated: 2023-06-15
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
-
-**Ultimo aggiornamento: 21/07/2022**
 
 ## Obiettivo
 
@@ -126,6 +124,7 @@ Di seguito trovi la maggior parte dei codici di risposta negativi SMTP utilizzat
 |504|Parametro di comando non implementato|I parametri o le opzioni utilizzati durante l'invio dell'email con il tuo server SMTP sono riconosciuti ma disattivati nella sua configurazione. Contatta il tuo provider di servizi|
 |535|Perdita durante l'autenticazione|Le informazioni utente/password sono eliminate o l'invio è potenzialmente bloccato sul tuo indirizzo email. Dallo Spazio Cliente OVHcloud è possibile verificare lo stato dell'indirizzo email Se l'account è stato bloccato per Spam, è possibile sbloccare la password. Per maggiori informazioni, consulta la nostra guida [Che fare in caso di account bloccato per invio di Spam ?](https://docs.ovh.com/it/microsoft-collaborative-solutions/blocco-per-spam/)|
 |550|Azione richiesta non effettuata: casella di posta non disponibile|Il server di posta di destinazione non ha potuto verificare l'indirizzo email utilizzato. Questo problema è causato principalmente da un indirizzo email di destinazione non valido, ma può anche significare che il server di posta di destinazione ha problemi di firewall o di connettività. Verifica l'indirizzo email del destinatario e/o riprova|
+|550 5.7.26|*This message does not have authentication information or fails to 550-5.7.26 pass authentication checks*| L'e-mail è stata rifiutata perché il servizio di posta del mittente non ha SPF o DKIM configurati sul proprio nome di dominio.<br><br> Si consiglia di impostare un record SPF prioritario, compatibile con tutte le e-mail offerte. Usa la nostra guida "[Configura un record SPF sul tuo nome di dominio](/pages/web/domains/dns_zone_spf)".<br><br> Se la tua offerta e-mail ha l'opzione DKIM, puoi metterla in atto utilizzando la nostra guida "[Imposta un record DKIM](/pages/web/domains/dns_zone_dkim)".|
 |551|Utenti non locali|Questo viene generalmente utilizzato come strategia di prevenzione contro lo spam. Ti ricordiamo che il corriere di posta non è autorizzato per alcun motivo a trasferire il tuo messaggio verso un server diverso dal tuo. Contatta il tuo provider di servizi|
 |552|Azione di messaggistica richiesta interrotta: spazio di storage superato|L'utente che hai cercato di contattare non ha più spazio disponibile per ricevere messaggi. Purtroppo, l'unica soluzione è contattare il destinatario con un altro metodo|
 |553|Azione richiesta non effettuata: indirizzo email non autorizzato|La causa principale di questa operazione è in genere un indirizzo email di destinazione non corretto. Verifica che l'indirizzo email in questione sia corretto|

@@ -5,14 +5,12 @@ slug: uso_avanzado_del_correo_de_ovh
 legacy_guide_number: g2117
 section: Diagnóstico
 order: 02
-updated: 2022-07-21
+updated: 2023-06-15
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
-
-**Última actualización: 21/07/2022**
 
 ## Objetivo
 
@@ -126,6 +124,7 @@ A continuación encontrará la mayoría de los códigos de respuesta negativos S
 |504|Parámetro de órdenes no implementado|Los parámetros o opciones utilizados al enviar el email con su servidor SMTP son reconocidos pero desactivados en su configuración. Por favor, contacte con su proveedor de servicio.|
 |535| falló durante la autenticación| Se ha generado la información de usuario/contraseña o el envío puede estar bloqueado en su dirección de correo. Compruebe el estado de su dirección de correo electrónico desde el área de cliente de OVHcloud. Un cambio de la contraseña puede desbloquear el envío si la cuenta ha sido bloqueada por spam, consulte nuestra guía [¿Qué hacer con una cuenta bloqueada debido a correo no deseado?](https://docs.ovh.com/es/microsoft-collaborative-solutions/bloqueo-por-correo-no-deseado/) para más información|
 |550|Acción solicitada no realizada: buzón de correo no disponible|El servidor de correo de destino no ha podido verificar la dirección de correo electrónico utilizada. Esto suele deberse a una dirección de correo electrónico de destino no válida, pero también puede significar que el servidor de correo de destino tenga problemas de cortafuegos o conectividad. Compruebe la dirección de correo electrónico del destinatario e inténtelo de nuevo|
+|550 5.7.26|*This message does not have authentication information or fails to 550-5.7.26 pass authentication checks*| El correo electrónico fue rechazado porque el servicio de correo electrónico del remitente no tiene configurado SPF o DKIM en su nombre de dominio.<br><br> Se recomienda configurar un registro SPF de prioridad, que es compatible con todos los correos electrónicos. ofertas Use nuestra guía "[Configure un registro SPF en su nombre de dominio](/pages/web/domains/dns_zone_spf)".<br><br> Si su oferta por correo electrónico tiene la opción DKIM, puede implementarla usando nuestra guía “[Configurar un registro DKIM](/pages/web/domains/dns_zone_dkim)”.|
 |551|Usuario no local|Esto se usa generalmente como una estrategia de prevención contra el spam. Por alguna razón, el relevo de correo no está autorizado a transferir su mensaje a otro servidor distinto del suyo. Por favor, contacte con su proveedor de servicio.|
 |552|Petición de acción de correo interrumpida: espacio de almacenamiento superado|El usuario al que ha intentado contactar ya no tiene espacio disponible para recibir mensajes. Desafortunadamente, la única solución es contactar con el destinatario a través de otro método|
 |553|Acción solicitada no realizada: dirección de correo electrónico no autorizada|Esto suele deberse a una dirección de correo electrónico de destino incorrecta. Por favor, compruebe que la dirección de correo electrónico es correcta.|
