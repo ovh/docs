@@ -316,6 +316,7 @@
             + [Avoiding the read-only switch of your VM disk on Linux](cloud/private-cloud/comment_eviter_le_disk_en_read_only_sous_linux)
             + [VMware vCenter Converter](cloud/private-cloud/vmware_vcenter_converter)
             + [OVF Tool](cloud/private-cloud/ovf_tool)
+            + [Deploying an OVF template from content libraries](cloud/private-cloud/how_to_use_content_library)
             + [Deploy an OVF Linux, Windows Server and Windows SQL Server template](cloud/private-cloud/ovf_template)
             + [Avoiding VM freeze with the Veeam Managed Backup option](cloud/private-cloud/eviter_le_freeze_de_vm_avec_l_option_veeam_backup)
         + [Maintenance and monitoring](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-maintenance-and-monitoring)
