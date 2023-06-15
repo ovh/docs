@@ -23,7 +23,6 @@ Une page **« 403 forbidden »** peut apparaitre lorsque :
 
 Suite à la détection d'un fonctionnement suspect, nos robots de sécurité peuvent bloquer temporairement l'accès aux fichiers de votre hébergement web. Ce dispositif permet d'empêcher :
 
-
 - la progression d'un éventuel piratage de vos données présentes sur votre hébergement web ;
 
 - l'envoi de code malveillant vers d'autres entités/sites web, pouvant alors entraîner un piratage de ces derniers ;
@@ -31,10 +30,8 @@ Suite à la détection d'un fonctionnement suspect, nos robots de sécurité peu
 - la réalisation d'opérations illégales.
  
  Ce dispositif vise également à vous protéger juridiquement contre les actions résultantes d'un éventuel piratage de votre hébergement web en direction d'autres organisations/sites web. 
-
  
  *Si vous êtes concerné par ce type de blocage, une notification vous est envoyée sur l'adresse e-mail du contact « administrateur » de votre hébergement web*
-
 
 ![403error](images/403error.png){.thumbnail}
 
@@ -65,7 +62,6 @@ Si la page **« 403 forbidden »** n'est pas apparue suite à une modification d
 
 Si la page **« 403 forbidden »** est apparue sans action de votre part et que vous n'avez pas reçu d'e-mail de nos services à ce sujet, vérifiez les droits d'accès FTP (CHMOD) de vos fichiers/dossiers ainsi que le code contenu dans votre (vos) fichier(s) **.htaccess**. Vérifiez également si cette situation n'est pas générée par un plugin de sécurité ou par un pare-feu applicatif. Si besoin, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/).
 
-
 ### Étape 2 : sécuriser vos solutions <a name="step-2"></a>
 
 Vérifiez tout d'abord la sécurité de votre (vos) poste(s)/appareil(s) informatique(s) :
@@ -81,7 +77,6 @@ Vérifiez tout d'abord la sécurité de votre (vos) poste(s)/appareil(s) informa
 > [!warning]
 >
 > Avant de modifier le mot de passe de la base de données de votre site web depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), mettez à jour le fichier de configuration de votre site web afin qu'il se connecte à la base de données avec le nouveau mot de passe.
-
 >
 > Dans le cas contraire, la modification du mot de passe de votre base de données entraînera une coupure d'accès à votre site web ou à vos services/clients qui l'utilisent.
 >
@@ -97,7 +92,6 @@ Notez tout d'abord la date d'envoi de l'e-mail d'OVHcloud indiquant la désactiv
 > Nos robots de sécurité peuvent appliquer deux niveaux de désactivation sur votre hébergement web : 
 >
 > - une désactivation en appliquant un « **CHMOD 700** » à la racine FTP de votre hébergement web ;
-
 > - une désactivation en appliquant un « **CHMOD 000** » à la racine FTP de votre hébergement web.
 >
 > Dans le cas d'une désactivation par restriction d'accès FTP en « **CHMOD 000** », contactez obligatoirement nos [équipes support](https://www.ovhcloud.com/fr/support-levels/) pour faire le point sur la situation avant de poursuivre les étapes décrites dans ce guide. 
@@ -110,7 +104,6 @@ Notez tout d'abord la date d'envoi de l'e-mail d'OVHcloud indiquant la désactiv
 Si votre hébergement a été fermé il y a moins de deux semaines et qu'il ne contient qu'un seul site web, restaurez votre espace de stockage FTP. S'il contient plusieurs sites web, restaurez uniquement le ou les dossiers contenant les fichiers illégitimes.
 
 Pour restaurer tout ou partie de votre espace de stockage FTP, consultez [notre guide](/pages/web/hosting/ftp_save_and_backup) sur le sujet.
-
 
 > [!warning]
 >
@@ -125,7 +118,6 @@ Si votre hébergement a été fermé il y a plus de deux semaines, contactez un 
 > [!success]
 >
 > Si vous souhaitez plus de détails concernant les [étapes 2 et 3](#step-2) précédentes, consultez notre tutoriel sur [les actions à réaliser en cas de piratage de votre site web](/pages/web/hosting/cms_what_to_do_if_your_site_is_hacked).
-
 >
 
 ### Étape 4 : réactiver votre hébergement web <a name="reactivate-web-hosting"></a>
@@ -159,10 +151,8 @@ Une réponse **« 200 Permissions changed on / »** confirme que la manipulation
 > [warning]
 >
 > Un délai de quelques minutes (maximum 20 minutes) peut être nécessaire pour que la modification soit visible via votre navigateur Internet.
-
 >
 > En fonction de votre site web, il peut également être nécessaire de vider le cache de votre navigateur.
-
 >
 
 Si la commande ci-dessus ne fonctionne pas, vous pouvez essayer cette autre commande :
@@ -196,10 +186,8 @@ Une réponse **« 200 Permissions changed on / »** confirme que la manipulation
 > [warning]
 >
 > Un délai de quelques minutes (maximum 20 minutes) peut être nécessaire pour que la modification soit visible via votre navigateur Internet.
-
 >
 > En fonction de votre site web, il peut également être nécessaire de vider le cache de votre navigateur.
-
 >
 
 ## Aller plus loin <a name="go-further"></a>

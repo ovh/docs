@@ -4,20 +4,38 @@ excerpt: Erfahren Sie hier, wie Sie Ihre Website wieder online bringen, wenn “
 slug: diagnose-403-forbidden
 section: Diagnose
 order: 08
-updated: 2022-06-16
+updated: 2023-06-09
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 16.06.2022**
+**Letzte Aktualisierung am 09.06.2023**
 
 ## Ziel 
 
-Änderungen der Zugriffsrechte auf Ihre Website-Dateien, die Bearbeitung der **.htaccess** Datei oder die Installation einer Sicherheitserweiterung können unter Umständen in einer "**403 forbidden**" Seite resultieren.
+Eine Seite mit der Meldung "**403 forbidden**" kann in folgenden Fällen erscheinen:
 
-Es kann auch vorkommen, dass unsere Sicherheitsbots nach der Erkennung von sicherheitsrelanten Anomalien den Zugriff auf die Dateien Ihres Hostings vorübergehend blockiert haben. Diese automatische Sperrung soll verhindern, dass Schadcode weiter verbreitet wird, und Sie rechtlich schützen.
+- Die FTP-Zugriffsrechte (CHMOD) sind unzureichend oder eingeschränkt. Der Browser-Zugriff auf Dateien, Ordner oder Website wird dann vom Webserver Ihres Webhostings verweigert.
+
+- Die Datei **.htaccess** enthält eine Regel zur Zugriffsbeschränkung.
+
+- Ein Sicherheitsplugin verhindert den Browser-Zugriff auf Dateien, Ordner oder Website.
+
+- Es ist eine Application Firewall aktiviert.
+
+Wenn ein verdächtiges Verhalten erkannt wird, können unsere Sicherheitsroboter den Zugriff auf die Dateien Ihres Webhostings vorübergehend blockieren. Mit dieser Maßnahme sollen folgende Auswirkungen verhindert werden:
+
+- Die Manipulation Ihrer Webhosting-Daten aufgrund eines möglichen Hacks
+
+- Die Verbreitung von Schadcode an andere Webserver und dadurch verursachte Angriffe auf Websites
+
+- Die Ausführung illegaler Aktionen
+ 
+Mit der automatisierten Sperrung werden Sie auch vor möglichen rechtlichen Konsequenzen geschützt, die sich aus der Verbreitung von Schadcode und Angriffen ergeben, die von Ihrem Webhosting stammen. 
+ 
+*Wenn Sie von dieser Sperrung betroffen sind, erhalten Sie eine Benachrichtigung an die E-Mail-Adresse des "Administrator"-Kontakts Ihres Webhostings*.
 
 ![403error](images/403error.png){.thumbnail}
 
@@ -26,41 +44,45 @@ Es kann auch vorkommen, dass unsere Sicherheitsbots nach der Erkennung von siche
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/) zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
+
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
-- Sie verfügen über die [Login-Daten](../verbindung-ftp-speicher-webhosting/#schritt-1-erforderliche-verbindungsinformationen-abrufen) für den Speicherplatz Ihres Hostings.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
+- Sie verfügen über die [Login-Daten](/pages/web/hosting/ftp_connection) für den FTP-Speicherplatz Ihres Hostings.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 ### Schritt 1: Die Situation analysieren
 
-Wenn die Seite "**403 forbidden**" aufgrund einer fehlerhaften Änderung Ihrer Website auftaucht, setzen Sie den [Speicherplatz Ihres Hostings zu einem früheren Zeitpunkt zurück](../webhosting-speicherplatz-wiederherstellen/).
+Wenn die Seite "**403 forbidden**" nach einer Änderung an Ihrer Website erscheint, [setzen Sie den FTP-Speicherplatz Ihres Hostings ganz oder teilweise zu einem früheren Zeitpunkt zurück](/pages/web/hosting/ftp_save_and_backup).
 
-Wenn Sie mit den verfügbaren Backups den Zugang zu Ihrer Website nicht wiederherstellen können, kontaktieren Sie einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/).
+Wenn Sie mit den verfügbaren Backups den Zugang zu Ihrer Website nicht wiederherstellen können, kontaktieren Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/).
 
-Wenn "**403 forbidden**" ohne Änderung Ihrer Website angezeigt wird, überprüfen Sie Ihren E-Mail-Posteingang. Wenn Sie eine E-Mail von unsere System erhalten haben, die eine Schließung Ihres Hostings aus Sicherheitsgründen meldet, gehen Sie zu [Schritt 2](#step2).
+Wenn die Seite "**403 forbidden**" ohne Änderung Ihrer Website erscheint, prüfen Sie Ihren Posteingang. Wenn Sie eine E-Mail von unserem System erhalten haben, die eine Schließung Ihres Hostings aus Sicherheitsgründen meldet, gehen Sie zu [Schritt 2](#step-2) dieser Anleitung.
 
-Wenn "**403 forbidden**" ohne Aktion Ihrerseits erschienen ist und Sie diesbezüglich **keine** Benachrichtigung seitens unserer Hosting-Dienste erhalten haben, kontaktieren Sie einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/).
+Wenn die Seite "**403 forbidden**" ohne Aktion Ihrerseits erscheint und Sie diesbezüglich keine Benachrichtigung erhalten haben, überprüfen Sie zunächst die FTP-Zugriffsrechte (CHMOD) Ihrer Dateien und Ordner sowie den in Ihrer **.htaccess** enthaltenen Code. Überprüfen Sie auch, ob dieser Zustand ggf. von einem Sicherheitsplugin oder einer Application Firewall verursacht wird. Falls nötig, kontaktieren Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/).
 
-### Schritt 2: Sicherheitsmaßnahmen auf Ihrer Seite durchführen <a name="step2"></a>
+### Schritt 2: Sicherheitsmaßnahmen auf Ihrer Seite durchführen <a name="step-2"></a>
 
-Überprüfen Sie zunächst die Sicherheit Ihrer Geräte und Dienste:
+Überprüfen Sie zunächst die Sicherheit Ihrer Computer und Geräte:
 
-- Wenden Sie Sicherheitsupdates an;
-- Überprüfen Sie, ob ein Antivirus-Dienst installiert ist, aktualisieren Sie ihn und starten Sie einen vollständigen Scan. Wenn Sie keine solche Software besitzen, konsultieren Sie vor der Installation einen spezialisierten [Dienstleister](https://partner.ovhcloud.com/de/directory/);
-- Ändern Sie alle Ihre persönlichen Passwörter, insbesondere Ihrer E-Mail-Accounts, und halten Sie sich dabei an diese [bewährten Vorgehensweisen](https://docs.ovh.com/de/customer/Passwort-verwalten/#ein-adaquates-passwort-erstellen);
-- Ändern Sie die Passwörter Ihres OVHcloud Webhostings, um die Zugänge zu [Ihrem FTP-Speicherplatz](../ftp-benutzer-passwort-aendern/), sowie der [Datenbanken](../datenbank-passwort-aendern/) abzusichern.
+- Führen Sie Sicherheitsupdates für alle Ihre Geräte durch.
+
+- Überprüfen Sie, ob ein Antivirus-Dienst installiert ist, aktualisieren Sie ihn und starten Sie einen vollständigen Scan. Wenn Sie keine solche Software besitzen, konsultieren Sie vor der Installation einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)
+
+- Ändern Sie alle Ihre persönlichen Passwörter, insbesondere Ihrer E-Mail-Accounts, und halten Sie sich dabei an die **Best Practices** in [dieser Anleitung](/pages/account/customer/manage-ovh-password).
+
+- Ändern Sie die Passwörter für alle Ihre OVHcloud Dienste, insbesondere für die [Datenbank](/pages/web/hosting/sql_change_password) und den [FTP Speicherplatz](/pages/web/hosting/ftp_change_password).
 
 > [!warning]
 >
 > Bevor Sie Datenbankpasswörter Ihrer Website über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ändern, aktualisieren Sie die Konfigurationsdatei Ihrer Website, damit sie weiterhin auf die Datenbank zugreifen kann.
 >
-> Bleibt diese Aktualisierung aus, führt die Änderung des Passworts Ihrer Datenbank dazu, dass die Website und jegliche Dienste mit Datenbankzugriff blockiert werden.
+> Bleibt diese Aktualisierung aus, führt die Änderung des Passworts Ihrer Datenbank dazu, dass die Website unzugänglich wird und jegliche Dienste mit Datenbankzugriff blockiert werden.
 >
 > Sollten Sie Hilfe bei den durchzuführenden Maßnahmen benötigen, wenden Sie sich an die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 >
@@ -69,38 +91,56 @@ Wenn "**403 forbidden**" ohne Aktion Ihrerseits erschienen ist und Sie diesbezü
 
 Beachten Sie zunächst das Datum des Versands der E-Mail von OVHcloud, in der die Deaktivierung Ihres Hostings mitgeteilt wurde, sowie die Liste der Ordner, die auffällige Dateien enthalten.
 
+> [!primary]
+>
+> Unsere Sicherheitsroboter können zwei Stufen der Zugangsbeschränkung auf Ihr Webhosting anwenden: 
+>
+> - Die Zugriffsberechtigungen sind auf "**CHMOD 700**" im FTP-Root Ihres Webhostings gesetzt.
+> - Die Zugriffsberechtigungen sind auf "**CHMOD 000**" im FTP-Root Ihres Webhostings gesetzt.
+>
+> Wenn sie "**CHMOD 000**" zurücksetzen möchten, kontaktieren Sie unsere [Support-Teams](https://www.ovhcloud.com/de/support-levels/), um den Status Ihrer Website überprüfen zu lassen, bevor Sie mit den in dieser Anleitung beschriebenen Schritten fortfahren. 
+>
+> Je nach Ihrer Situation können die Zugangsbeschränkungen von "**CHMOD 000**" zu "**CHMOD 700**" geändert werden, damit Sie wieder auf den FTP-Bereich Ihres Webhostings zugreifen können.
+>
+
 #### Fall 1: Ihr Hosting wurde vor weniger als zwei Wochen deaktiviert
 
-Wenn Ihr Hosting vor weniger als zwei Wochen geschlossen wurde und nur eine Website enthält, stellen Sie Ihren Speicherplatz gemäß den Anweisungen in dieser [Anleitung](../webhosting-speicherplatz-wiederherstellen/#speicherplatz-uber-das-kundencenter-wiederherstellen) wieder her.
+Wenn Ihr Hosting vor weniger als zwei Wochen gesperrt wurde und es nur eine Website enthält, setzen Sie Ihren FTP-Speicherplatz auf einen früheren Zustand zurück. Enthält er mehrere Websites, setzen Sie nur die Ordner mit den verdächtigen Dateien zurück.
 
-Wenn Ihr Hosting vor weniger als zwei Wochen geschlossen wurde und mehrere Websites enthält, stellen Sie nur die Dateien mit den verdächtigen Dateien gemäß den Anweisungen in dieser [Anleitung](../webhosting-speicherplatz-wiederherstellen/#datei-mithilfe-einer-software-oder-uber-ein-interface-wiederherstellen) wieder her.
+Um Ihren FTP-Speicherplatz ganz oder teilweise zurückzusetzen, lesen Sie [unsere Anleitung](/pages/web/hosting/ftp_save_and_backup).
+
 
 > [!warning]
 >
-> Die Wiederherstellung Ihres Speicherplatzes allein reicht nicht aus, um potenzielle Sicherheitslücken zu beheben, die bereits auf Ihrer Website vorhanden sind.
+> Die Wiederherstellung Ihres FTP Speicherplatzes allein reicht nicht aus, um potenzielle Sicherheitslücken zu beheben, die bereits auf Ihrer Website vorhanden sind.
 >
-> Um diese Sicherheitslücken zu identifizieren, können Sie die [Web-Logs](https://docs.ovh.com/de/hosting/webhosting_die_statistiken_und_logs_meiner_website_einsehen/#logs) Ihres Hostings analysieren oder einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) kontaktieren, um eine Sicherheitsüberprüfung Ihrer Lösungen durchzuführen.
+> Um diese Sicherheitslücken zu identifizieren, analysieren Sie die [Web-Logs](/pages/web/hosting/logs_and_statistics) Ihres Hostings oder wenden Sie sich an einen einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/), um eine Sicherheitsüberprüfung Ihrer Webseiten durchzuführen.
 >
 
 #### Fall 2: Ihr Hosting wurde vor mehr als zwei Wochen deaktiviert
 
-Wenn Ihr Hosting vor mehr als zwei Wochen geschlossen wurde, kontaktieren Sie einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/), um eine Sicherheitsüberprüfung Ihrer Lösungen durchzuführen. 
+Wenn Ihr Hosting vor mehr als zwei Wochen gesperrt wurde, kontaktieren Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/), um eine Sicherheitsüberprüfung Ihrer Webseiten durchzuführen.
+
+> [!success]
+>
+> Wenn Sie weitere Informationen zu den [Schritten 2 und 3](#step-2) benötigen, lesen Sie unsere Hilfe zu [Aktionen wenn Ihre Website von einem Hack betroffen ist](pages/web/hosting/cms_what_to_do_if_your_site_is_hacked).
+>
 
 ### Schritt 4: Webhosting wieder aktivieren <a name="reactivate-web-hosting"></a>
 
 > [!warning]
 >
-> Wir empfehlen, unbedingt eine Sicherheitsüberprüfung durchzuführen, **bevor** Ihr Hosting reaktiviert wird. Sie können auch ohne Vorsatz rechtlich verantwortlich gemacht werden, wenn schädlicher Code von Ihrem Webhosting aus verbreitet wird.
+> Wir empfehlen Ihnen, eine Sicherheitsüberprüfung durchzuführen **bevor** Sie die Reaktivierung Ihres Webhostings anstoßen. Sie können rechtlich auch ohne Vorsatz verantwortlich sein, wenn schädlicher Code von Ihrem Webhosting aus verbreitet wird.
 >
 
 #### Ihr Webhosting mit FileZilla reaktivieren
 
 > [!primary]
 >
-> Wenn Sie die Anwendung **FileZilla** installieren möchten, um die Dateien Ihrer Website zu bearbeiten, folgen Sie den Anweisungen in dieser [Anleitung](../webhosting_hilfe_zur_verwendung_von_filezilla/).
+> Wenn Sie die Anwendung **FileZilla** installieren möchten, um die Dateien Ihrer Website zu bearbeiten, folgen Sie den Anweisungen in [diesem Tutorial](/pages/web/hosting/ftp_filezilla_user_guide).
 >
 
-Öffnen Sie FileZilla und verbinden Sie sich mit Ihrem Speicherplatz. Klicken Sie dann im Menü auf `Server`{.action} und dann auf `Benutzerdefinierten Befehl eingeben`{.action}. (Je nach der Version von FileZilla kann die Bezeichnung variieren.)
+Öffnen Sie FileZilla und [verbinden Sie sich mit Ihrem FTP-Speicherplatz](/pages/web/hosting/ftp_connection). Klicken Sie anschließend im Menü auf `Server`{.action} und dann auf `Benutzerdefinierten Befehl eingeben`{.action}. (Je nach der Version von FileZilla kann die Bezeichnung variieren.)
 
 ![command_filezilla1](images/command_filezilla1.png){.thumbnail}
 
@@ -112,29 +152,57 @@ SITE CHMOD 705 /
 
 ![command_filezilla2](images/command_filezilla2.png){.thumbnail}
 
-Die Antwort "**200 Permissions changed on /**" bestätigt, dass die Änderung erfolgreich durchgeführt wurde. Um dies zu überprüfen, versuchen Sie erneut, auf Ihre Website zuzugreifen.
+Die Ausgabe "**200 Permissions changed on /**" bestätigt, dass die Änderung erfolgreich durchgeführt wurde. Um dies zu überprüfen, versuchen Sie erneut, auf Ihre Website zuzugreifen.
 
-#### Ihr Hosting mit dem FTP-Explorer (“net2ftp“) reaktivieren
+> [warning]
+>
+> Es kann einige Minuten (maximal 20 Minuten) dauern, bis die Änderung über Ihren Webbrowser sichtbar ist.
+>
+> Je nach Ihrer Website kann es auch notwendig sein, den Cache Ihres Browsers zu leeren.
+>
+
+Wenn der oben stehende Befehl nicht funktioniert, versuchen Sie den folgenden Befehl:
+
+```
+SITE CHMOD 705.
+```
+
+#### Ihr Webhosting mit dem FTP-Explorer (“net2ftp“) reaktivieren
 
 Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Web Cloud`{.action} und öffnen Sie `Hosting-Pakete`{.action} im linken Menü. Wechseln Sie zum Tab `FTP-SSH`{.action} des betroffenen Hostings.
 
-Klicken Sie anschließend auf den Button `FTP-Explorer`{.action} und loggen Sie sich entsprechend den [hier beschriebenen Anweisungen](../verbindung-ftp-speicher-webhosting/#1-via-ftp-explorer-verbinden) in Ihrem FTP-Speicherplatz ein. Klicken Sie auf `Erweitert`{.action} und dann auf den Button `Weiter`{.action} neben "**Sende benutzerdefinierte FTP-Kommandos zum FTP-Server**".
+Klicken Sie auf den Button `FTP-Explorer`{.action} und [loggen Sie sich in Ihren FTP-Speicherplatz ein](/pages/web/hosting/ftp_connection). 
+
+Klicken Sie auf `Erweitert`{.action} und dann auf den Button `Weiter`{.action} neben "**Sende benutzerdefinierte FTP-Kommandos zum FTP-Server**".
 
 ![net2ftp](images/net2ftp.png){.thumbnail}
 
-Geben Sie im oberen Bereich der Seite den Befehl `SITE CHMOD 705 /` ein und klicken Sie dann auf den grünen "Haken".
+Geben Sie im oberen Bereich der Seite den folgenden Befehl ein:
+
+```
+SITE CHMOD 705 /
+```
+
+Klicken Sie dann auf den grünen "Haken".
 
 ![result_command_on_net2ftp](images/result_command_on_net2ftp.png){.thumbnail}
 
-Die Antwort "**200 Permissions changed on /**" bestätigt, dass die Änderung erfolgreich durchgeführt wurde. Um dies zu überprüfen, versuchen Sie erneut, auf Ihre Website zuzugreifen.
+Die Ausgabe "**200 Permissions changed on /**" bestätigt, dass die Änderung erfolgreich durchgeführt wurde. Um dies zu überprüfen, versuchen Sie erneut, auf Ihre Website zuzugreifen.
 
-## Weiterführende Informationen <a name="gofurther"></a>
+> [warning]
+>
+> Es kann einige Minuten (maximal 20 Minuten) dauern, bis die Änderung über Ihren Webbrowser sichtbar ist.
+>
+> Je nach Ihrer Website kann es auch notwendig sein, den Cache Ihres Browsers zu leeren.
+>
 
-[Was tun, wenn Ihre WordPress Seite gehackt wurde?](../was_tun_wenn_ihre_wordpress_seite_gehackt_wurde/)
+## Weiterführende Informationen <a name="go-further"></a>
 
-[Aktivieren der Web Application Firewall](../webhosting_aktivieren_der_web_application_firewall/)
+[Was tun, wenn Ihre WordPress Seite gehackt wurde?](/pages/web/hosting/cms_what_to_do_if_your_site_is_hacked)
 
-[PHP-Version Ihres Webhostings ändern](../konfiguration_von_php_fur_ein_ovh_webhosting_2014/)
+[Aktivieren der Web Application Firewall](/pages/web/hosting/multisites_activating_application_firewall)
+
+[PHP-Version Ihres Webhostings ändern](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 
