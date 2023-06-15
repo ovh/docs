@@ -4,10 +4,10 @@ slug: deploy/build-use-custom-image
 excerpt: Explanations on how to build and use your own custom image
 section: AI Deploy - Tutorials
 order: 00
-updated: 2023-04-04
+updated: 2023-06-15
 ---
 
-**Last updated 4th April, 2023.**
+**Last updated 15th June, 2023.**
 
 > [!primary]
 >
@@ -86,8 +86,8 @@ More information can be found in the [official Docker documentation](https://doc
 
 ### Create an OVHcloud user and a working directory
 
-Deployed containers are not run as root, but by an “OVHcloud” user with **UID 42420**. 
-It means that if you want to be able to write in a specific directory at runtime, you will have to give it specific rights. 
+Deployed containers are not run as root, but by an “OVHcloud” user with **UID 42420**.
+It means that if you want to be able to write in a specific directory at runtime, you will have to give it specific rights.
 
 This is the case in the vast majority of use cases.
 
@@ -97,18 +97,18 @@ You can do it with the following instructions:
 ```{.console}
 # Define a working directory called workspace
 WORKDIR /workspace
- 
+
 # Copy some files from your computer to the Docker image
 COPY my_app.py /workspace/
 COPY my_models /workspace/my_models/
- 
+
 # Create a HOME dedicated to the OVHcloud user (42420:42420)
 RUN chown -R 42420:42420 /workspace
 ENV HOME=/workspace
- 
+
 # Change the ownership of any other useful directory to the OVHcloud user (42420:42420)
 RUN chown -R 42420:42420 <another_useful_directory>
- 
+
 # Run your app
 CMD [ "python3" , "/workspace/my_app.py" ]
 ```
@@ -128,7 +128,7 @@ RUN apt-get update && apt-get install -y \
 # Install few Python requirements, such as pandas, scikit-learn, taipy...
 COPY requirements.txt /workspace/requirements.txt
 RUN pip install -r requirements.txt
-``` 
+```
 
 ### Manage output data effectively (S3, ...)
 
@@ -136,7 +136,7 @@ Just like AI Notebooks and AI Training, AI Deploy is easily connected to remote 
 However, unlike AI Notebooks and AI Training, AI Deploy **does NOT** synchronise data back to your remote storage.
 
 If you need to write data somewhere, for example output from your AI model (generated images), your code application should include storage connection.
-For example, you can use the Python `Boto3` library when using Python and S3. 
+For example, you can use the Python `Boto3` library when using Python and S3.
 
 Be careful, **if you write data directly in your working directory, it will be lost when you stop your application**.
 
@@ -153,7 +153,7 @@ During AI Deploy app creation, you will be able to pass environment variables vi
 For example, you can launch a new app with two variables like this:
 
 ```
-ovhai run app <my_docker_image> -e LANGUAGE=english TOKEN=12345678 
+ovhai run app <my_docker_image> -e LANGUAGE=english TOKEN=12345678
 ```
 
 In your Dockerfile, you can easily reuse the variables:
@@ -177,7 +177,7 @@ ADD . $foo
 ### Exposing your model or application with an API
 
 Inside your Dockerfile, you will need to expose your model or application so anyone can use it. The easiest way is to expose API via REST endpoint.
-The most popular open source frameworks for exposing APIs are [Flask]() and [Fast API]().
+The most popular open source frameworks for exposing APIs are [Flask](https://flask.palletsprojects.com/en/2.3.x/) and [Fast API](https://fastapi.tiangolo.com/).
 
 You can find a basic example in the section below, and more advanced tutorials in our [AI Deploy documentation](https://docs.ovh.com/ca/en/publiccloud/ai/).
 
@@ -198,7 +198,7 @@ Here we will build a basic Docker image, following the guidelines.
 
 Create a new file and name it `Dockerfile`, following the guidelines.
 
-1. First you need to choose a base image to start from. 
+1. First you need to choose a base image to start from.
 2. Install what you need as dependencies with `apt` or `pip`. Bash command instructions on your Dockerfile should begin with the `RUN` prefix.
 3. Copy files from your local directory inside the Docker image with the `COPY` prefix.
 4. Allow user "OVHcloud UID 42420" to get specific rights.
@@ -214,7 +214,7 @@ FROM python:3.9
 WORKDIR /workspace
 
 # Install a few requirements, such as vim and git
-RUN apt-get update && apt-get install -y vim git 
+RUN apt-get update && apt-get install -y vim git
 
 # Add your files to your Docker image. NB: best practice is to put data outside, such as S3 storage
 ADD example.py /workspace/
@@ -224,7 +224,7 @@ ADD dataset.csv /workspace/
 RUN chown -R 42420:42420 /workspace
 ENV HOME=/workspace
 
-# Run your script 
+# Run your script
 CMD [ "python3" , "/workspace/example.py" ]
 ```
 
