@@ -562,6 +562,7 @@
             + [Handling "Disk Full" situations](platform/databases/databases_10_full_disk_handling)
             + [Resize your cluster storage](platform/databases/databases_11_resize_your_cluster_storage)
             + [Automated Backups](platform/databases/databases_05_automated_backups)
+            + [Getting started with Kubernetes database operator](platform/databases/databases_12_operator)
             + [Cross Service Integration](platform/databases/databases_07_cross_service_integration)
         + [MongoDB](public-cloud-databases-mongodb)
             + [Guides](public-cloud-databases-mongodb-guides)
