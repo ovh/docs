@@ -734,7 +734,7 @@ Si no consigue establecer una conexión entre la red pública y su alias IP y si
 Para ello, una vez que haya reiniciado el servidor en modo de rescate, ejecute el siguiente comando:
 
 ```bash
-ifconfig_eth0="inet ADDITIONAL_IP netmask 0 broadcast ADDITIONAL_IP"
+ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
 Donde podrá sustituir "ADDITIONAL_IP" por la verdadera IP Aditional.

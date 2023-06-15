@@ -86,7 +86,7 @@ Per eliminare l'autorizzazione di un blocco IP, clicca su `Elimina l'accesso`{.a
 
 L'accesso al Backup Storage può essere limitato al servizio associato tramite lo Spazio Cliente OVHcloud.
 
-Per poter aggiungere altri indirizzi IP di diversi servizi, utilizza l'API OVHcloud.
+Per poter aggiungere altri indirizzi IP di diversi servizi, utilizza [l'API OVHcloud](/pages/account/api/first-steps).
 per recuperare i backup da un servizio di un'altra localizzazione.
 
 > [!warning]

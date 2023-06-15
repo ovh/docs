@@ -86,7 +86,7 @@ Um die Autorisierung für einen IP-Block zu widerrufen, klicken Sie auf `Zugang 
 
 Der Zugang zu Ihrem Backup Storage über Ihr OVHcloud Kundencenter ist auf Ihre damit verbundenen Dienste beschränkt.
 
-Um weitere IP-Adressen verschiedener Dienste hinzuzufügen, können Sie die OVHcloud API verwenden.
+Um weitere IP-Adressen verschiedener Dienste hinzuzufügen, können Sie die [OVHcloud API](/pages/account/api/first-steps) verwenden.
 Auf diese Weise können Sie Ihre gesicherten Daten von einem anderen Dienst aus abrufen.
 
 > [!warning]
@@ -102,7 +102,7 @@ Loggen Sie sich auf [api.ovh.com](https://api.ovh.com/) ein und verwenden Sie fo
 
 Geben Sie die Felder wie folgt ein:
 
-- `serviceName`: der Name Ihres Dedicated Servers
+- `serviceName`: Der Name Ihres Dedicated Servers
 - `cifs`: Anhaken, falls erforderlich
 - `ftp`: Anhaken, falls erforderlich
 - `ipBlock`: Geben Sie die zugreifende IP-Adresse ein, in der Form `1.2.3.4/32`

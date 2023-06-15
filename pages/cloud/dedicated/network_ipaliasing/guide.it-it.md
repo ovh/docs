@@ -732,7 +732,7 @@ Se non riesci a stabilire una connessione tra la rete pubblica e il tuo alias IP
 Una volta riavviato il server in Rescue mode, esegui questo comando:
 
 ```bash
-ifconfig_eth0="inet ADDITIONAL_IP netmask 0 broadcast ADDITIONAL_IP"
+ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
 dove sostituisci "ADDIZIONALE_IP" con l'IP autentico.

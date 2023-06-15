@@ -86,7 +86,7 @@ Aby usunąć autoryzację dla bloku IP, kliknij `Usuń dostęp`{.action}, a nast
 
 Dostęp do Twojej usługi Backup Storage może zostać ograniczony do usługi, do której jest ona powiązana za pośrednictwem Panelu klienta OVHcloud.
 
-Aby móc dodawać inne adresy IP różnych usług, możesz użyć API OVHcloud.
+Aby móc dodawać inne adresy IP różnych usług, możesz użyć [API OVHcloud](/pages/account/api/first-steps).
 Dzięki temu będziesz mógł pobrać Twoje kopie zapasowe z usługi w innej lokalizacji.
 
 > [!warning]

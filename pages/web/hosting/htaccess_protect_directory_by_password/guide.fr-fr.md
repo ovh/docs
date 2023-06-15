@@ -169,7 +169,7 @@ encrypted_password3
 
 Les valeurs `encrypted_password1`, `encrypted_password2` et `encrypted_password3` doivent, par exemple, ressembler au format de la ligne suivante :
 
-```bash
+```text
 $2y$10$8eO7Iq3rh.u3CXvhuhKq.Om.nQJN.Z1sBT2jvOqVKCGzP42T/4LBC
 ```
 

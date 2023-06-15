@@ -79,7 +79,7 @@ To revoke authorisation for an IP block, click on `Delete the access`{.action} a
 
 Access to the storage space of your dedicated server is restricted to IP addresses linked to your OVHcloud customer acccount.
 
-In order to add other IP addresses from which to access, you can use the OVHcloud API. This will allow you to retrieve your backup data from a different service.
+In order to add other IP addresses from which to access, you can use the [OVHcloud API](/pages/account/api/first-steps). This will allow you to retrieve your backup data from a different service.
 
 > [!warning]
 > Only OVHcloud IP addresses can be authorised.

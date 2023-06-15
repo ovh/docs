@@ -731,7 +731,7 @@ Jeśli nie udaje Ci się nawiązać połączenia między siecią publiczną a Tw
 W tym celu, po zrestartowaniu serwera w trybie Rescue, uruchom następujące polecenie:
 
 ```bash
-ifconfig_eth0="inet ADDITIONAL_IP netmask 0 broadcast ADDITIONAL_IP"
+ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
 Gdzie zastąpisz "ADDITIONAL_IP" prawdziwym Additional IP.

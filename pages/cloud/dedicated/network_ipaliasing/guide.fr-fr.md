@@ -748,7 +748,7 @@ Si vous ne parvenez pas à établir une connexion entre le réseau public et vot
 Pour ce faire, une fois que vous avez redémarré votre serveur en mode rescue, veuillez exécuter la commande suivante :
 
 ```bash
-ifconfig_eth0="inet ADDITIONAL_IP netmask 0 broadcast ADDITIONAL_IP"
+ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
 ```
 
 Où vous remplacerez « ADDITIONAL_IP » par la véritable Additional IP.

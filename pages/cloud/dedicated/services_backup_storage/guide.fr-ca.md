@@ -82,7 +82,7 @@ Pour supprimer l'autorisation d'un bloc IP, cliquez sur `Supprimer l'accès`{.ac
 
 L'accès à votre Backup Storage peut être restreint au service auquel il est lié via votre espace client OVHcloud.
 
-Afin de pouvoir ajouter d'autres adresses IP de services différents, vous pouvez utiliser l'API OVHcloud.
+Afin de pouvoir ajouter d'autres adresses IP de services différents, vous pouvez utiliser [l'API OVHcloud](/pages/account/api/first-steps).
 Cela vous permettra alors de récupérer vos backups depuis un service d'une autre localisation.
 
 > [!warning]
