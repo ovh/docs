@@ -21,13 +21,13 @@ Mit einem Domaintransfer wechseln Sie Ihren Domainnamen-Registrar. Sie können I
 
 > [!warning]
 >
-> Der *Registrar* eines Domainnamens repräsentiert die Organisation/den Anbieter, bei der der Domainname von einer Privatperson, einem Verein oder einer Organisation registriert/registriert wird. Bei diesem *Registrar* verlängern Sie die Bestellung Ihrer Domain (in der Regel einmal jährlich).
+> Der Domainnamen-*Registrar* ist ein Diensteanbieter, der authorisiert ist, Domainnamen zur Registrierung seitens Privatpersonen, Unternehmen oder sonstigen Organisationen anzubieten. Sie verlängern ein Domainnamen-Abonnement bei Ihrem *Registrar*, üblicherweise jährlich.
 >
-> OVHcloud ist bereits der *Registrar* Ihrer Domain , **bevor** Sie den folgenden Vorgang starten, ist der *eingehende Transfer einer Domain* nicht der richtige Vorgang. Das Verfahren für *eingehende Domaintransfers* gilt **nur** für Domainnamen, die bei einem anderen *Registrar* als OVHcloud registriert sind.
+> Wenn OVHcloud bereits der *Registrar* Ihres Domainnamens ist, ist der Prozess des *eingehenden Transfers* nicht für diesen Domainnamen anwendbar. Das in dieser Anleitung beschriebene Verfahren für *eingehende Domaintransfers* gilt **nur** für Domainnamen, die derzeit bei einem anderen *Registrar* als OVHcloud registriert sind.
 >
-> Um die Verwaltung des Domainnamens einem anderen OVHcloud Kunden-Account zu übertragen, muss stattdessen eine **Änderung der Kontakte** durchgeführt werden. Die Vorgehensweise wird in [dieser Anleitung](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/) beschrieben.
+> Um die Verwaltung des Domainnamens einem anderen OVHcloud Kunden-Account zu übertragen, muss stattdessen eine **Änderung der Kontakte** durchgeführt werden. Die Vorgehensweise wird in [unserer Anleitung zur Kontakteverwaltung](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/) beschrieben.
 >
-> Wenn auch der **Inhaber des Domainnamens** geändert werden muss, sollte dies erfolgen, **bevor** Sie die Kontakte des Domainnamens ändern. Verwenden Sie dazu unsere Anleitung zum [Inhaberwechsel für Domainnamen](https://docs.ovh.com/de/domains/wechsel_des_domaininhabers/).
+> Wenn auch der **Inhaber des Domainnamens** geändert werden muss, sollte dies erfolgen, **bevor** Sie die Kontakte des Domainnamens ändern. Verwenden Sie dazu [unsere Anleitung zum Inhaberwechsel für Domainnamen](https://docs.ovh.com/de/domains/wechsel_des_domaininhabers/).
 >
 
 ## Voraussetzungen
