@@ -77,7 +77,7 @@ Para más información sobre esta funcionalidad, consulte nuestra [guía sobre l
 
 ### La autenticación en el webmail no ha podido realizarse. <a name="password"></a>
 
-Esto puede deberse a la introducción de una contraseña de cuenta incorrecta. En primer lugar, compruebe que la contraseña es correcta conectándose al [webmail](../exchange_2016_guia_de_uso_de_outlook_web_app/) y reinicie el diagnóstico.
+Esto puede deberse a la introducción de una contraseña de cuenta incorrecta. En primer lugar, compruebe que la contraseña es correcta conectándose al [webmail](/pages/web/emails/email_owa) y reinicie el diagnóstico.
 
 Si lo necesita, puede cambiar la contraseña de la cuenta en la pestaña `Cuentas de correo`{.action} del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Si el problema persiste, cree una solicitud de asistencia.
 

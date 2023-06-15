@@ -80,7 +80,7 @@ Weitere Informationen zu dieser Funktion finden Sie in unserer [Anleitung zu Sic
 
 Vergewissern Sie sich zunächst über eine Webmail-Anmeldung, dass das Passwort korrekt ist, und starten Sie dann die Diagnose neu.
 
-Dies kann durch die Eingabe eines falschen Account-Passworts verursacht werden. Überprüfen Sie zunächst, ob das Passwort korrekt ist, indem Sie sich [über Webmail einloggen](../exchange_2016_verwendung_der_outlook_web_app/), und starten Sie dann die Diagnose neu.
+Dies kann durch die Eingabe eines falschen Account-Passworts verursacht werden. Überprüfen Sie zunächst, ob das Passwort korrekt ist, indem Sie sich [über Webmail einloggen](/pages/web/emails/email_owa), und starten Sie dann die Diagnose neu.
 
 Wenn nötig können Sie das Passwort des betroffenen Accounts im Tab `E-Mail-Accounts`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ändern. Wenn das Problem weiterhin besteht, erstellen Sie eine Support-Anfrage.
 

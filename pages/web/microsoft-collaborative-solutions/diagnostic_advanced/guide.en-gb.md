@@ -73,7 +73,7 @@ You can find more information about this topic in the [security policy guide](..
 
 ### Webmail authentication has failed <a name="password"></a>
 
-This can be caused by entering an incorrect account password. First verify via a [webmail login](../exchange_2016_outlook_web_app_user_guide/) that the password is correct, then restart the diagnostics.
+This can be caused by entering an incorrect account password. First verify via a [webmail login](/pages/web/emails/email_owa) that the password is correct, then restart the diagnostics.
 
 If necessary, you can change the password of the account concerned in the Exchange tab `Email accounts`{.action} of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). If the issue persists, create a support request.
 

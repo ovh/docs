@@ -134,10 +134,10 @@ At this stage, you are now ready to write and send your email.
 
 ## Go further
 
-[Using the Outlook Web App with an Exchange account](../exchange_2016_outlook_web_app_user_guide)
+[Using the Outlook Web App with an Exchange account](/pages/web/emails/email_owa)
 
-[Sharing folders in OWA](../exchange_2016_how_to_share_a_folder_via_owa)
+[Sharing folders in OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
-[Creating contact groups](../exchange_20132016_how_to_use_the_groups_feature_mailing_lists)
+[Creating contact groups](/pages/web/microsoft-collaborative-solutions/feature_groups)
 
 Join our community of users on <https://community.ovh.com/en/>.

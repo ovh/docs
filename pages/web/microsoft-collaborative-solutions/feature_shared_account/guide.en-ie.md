@@ -99,12 +99,12 @@ In the Outlook application, you will see your shared account in the left-hand co
 
 ## Go further
 
-[Using the Outlook Web App with an Exchange account](../exchange_2016_outlook_web_app_user_guide/)
+[Using the Outlook Web App with an Exchange account](/pages/web/emails/email_owa)
 
-[Delegating permissions on an Exchange account](../exchange_2013_how_to_grant_full_access_permissions_for_an_account/)
+[Delegating permissions on an Exchange account](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[How to share calendars via OWA](../exchange_2016_how_to_share_calendars_via_owa/)
+[How to share calendars via OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing/)
 
-[Creating automatic signatures](../exchange_20132016_how_to_create_an_automatic_signature/)
+[Creating automatic signatures](/pages/web/microsoft-collaborative-solutions/feature_footers)
 
 Join our community of users on <https://community.ovh.com/en/>.

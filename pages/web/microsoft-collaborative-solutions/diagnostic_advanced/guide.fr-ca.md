@@ -73,7 +73,7 @@ Pour plus d'informations sur cette fonctionnalité, consultez notre [guide sur l
 
 ### L'authentification au webmail a échoué <a name="password"></a>
 
-Cela peut être dû à la saisie d'un mot de passe de compte incorrect. Vérifiez d'abord que le mot de passe est correct, en vous connectant au [webmail](../exchange-2016-guide-utilisation-outlook-web-app/), puis redémarrez le diagnostic.
+Cela peut être dû à la saisie d'un mot de passe de compte incorrect. Vérifiez d'abord que le mot de passe est correct, en vous connectant au [webmail](/pages/web/emails/email_owa), puis redémarrez le diagnostic.
 
 Si nécessaire, vous pouvez modifier le mot de passe du compte concerné dans l'onglet `Comptes e-mail`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Si le problème persiste, créez une demande d'assistance.
 

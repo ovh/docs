@@ -147,7 +147,7 @@ Klicken Sie im Tab `Assoziierte Domains`{.action} Ihres Dienstes auf `...`{.acti
 
 ## Weiterführende Informationen
 
-[CNAME-Eintrag zu einer assoziierten Domain hinzufügen](../exchange_20132016_einen_cname_eintrag_hinzufugen/)
+[CNAME-Eintrag zu einer assoziierten Domain hinzufügen](/pages/web/microsoft-collaborative-solutions/exchange_dns_cname)
 
 [OVHcloud DNS-Zone bearbeiten](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/)
 
