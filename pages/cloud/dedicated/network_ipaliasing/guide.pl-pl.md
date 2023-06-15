@@ -3,14 +3,13 @@ title: 'Konfiguracja adresu Additional IP jako aliasu'
 slug: network-ip-alias
 excerpt: 'Dowiedz się, jak dodać kilka adresów Additional IP do interfejsu'
 section: 'Sieć & IP'
-updated: 2022-12-07
+updated: 2023-06-15
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
-**Ostatnia aktualizacja dnia 20-02-2023**
 
 > [!primary]
 >
@@ -725,6 +724,22 @@ Pozostaje tylko zrestartować interfejs:
 svcadm restart svc:/network/physical:default
 ```
 
+#### Rozwiązywanie problemów
+
+Jeśli nie udaje Ci się nawiązać połączenia między siecią publiczną a Twoim aliasem IP i podejrzewasz problem z siecią, zrestartuj serwer w [trybie Rescue](/pages/cloud/dedicated/rescue_mode) i skonfiguruj alias bezpośrednio na serwerze.
+
+W tym celu, po zrestartowaniu serwera w trybie Rescue, uruchom następujące polecenie:
+
+```bash
+ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
+```
+
+Gdzie zastąpisz "ADDITIONAL_IP" prawdziwym Additional IP.
+
+Następnie wystarczy wykonać ping z Twojego dodatkowego adresu IP na zewnątrz. Jeśli to działa, prawdopodobnie oznacza to, że istnieje błąd konfiguracji, który należy skorygować. Jeśli zamiast tego IP nadal nie działa, otwórz zgłoszenie do zespołu pomocy w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w celu przeprowadzenia dodatkowego badania.
+
 ## Sprawdź również
+
+[Tryb bridge IP](/pages/cloud/dedicated/network_bridging)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

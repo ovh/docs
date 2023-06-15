@@ -1,17 +1,15 @@
 ---
-title: '.ovhconfig-Datei Ihres Webhostings konfigurieren'
+title: ".ovhconfig-Datei Ihres Webhostings konfigurieren"
 slug: ovhconfig-datei-konfigurieren
-excerpt: 'In dieser Anleitung erfahren Sie, wozu die .ovhconfig-Datei verwendet wird und wie Sie diese bearbeiten.'
+excerpt: "Erfahren Sie hier, wozu die .ovhconfig-Datei verwendet wird und wie Sie diese bearbeiten"
 section: 'Webhosting-Konfiguration'
 order: 03
 updated: 2019-01-03
 ---
 
-**Stand 03.01.2019** 
+## Ziel
 
-## Einleitung
-
-Es gibt mehrere Gründe, um die Konfiguration Ihres [Webhostings](https://www.ovhcloud.com/de/web-hosting/){.external} zu bearbeiten. Aus diesem Grund hat OVHcloud eine Datei erstellt, über die bestimmte Einstellungen geändert werden können: **.ovhconfig**.
+Es gibt mehrere Gründe, um die Konfiguration Ihres [Webhostings](https://www.ovhcloud.com/de/web-hosting/){.external} zu bearbeiten. Aus diesem Grund stellt OVHcloud die Datei **.ovhconfig** zur Verfügung, über die bestimmte Einstellungen geändert werden können.
 
 **Hier erfahren Sie, wozu die .ovhconfig-Datei verwendet wird und wie Sie diese bearbeiten.**
 
@@ -20,15 +18,15 @@ Es gibt mehrere Gründe, um die Konfiguration Ihres [Webhostings](https://www.ov
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot (ausgenommen Cloud Web).
 - Sie haben das Passwort des FTP-Benutzers, um auf Ihren Speicherplatz zuzugreifen. 
 
-## Beschreibung
+## In der praktischen Anwendung
 
 Wenn Sie die .ovhconfig-Datei Ihres Webhostings ändern, ändern Sie auch dessen Konfiguration und somit die Konfiguration Ihrer Website. Wenn Sie eine falsche Änderung vornehmen, kann es daher sein, dass Ihre Website nicht mehr erreichbar ist. Achten Sie also darauf, dass die in der .ovhconfig-Datei angegebene Konfiguration mit Ihrer Website technisch kompatibel ist.
 
 Sie können die .ovhconfig-Datei auf zwei Arten ändern:
 
-- **indem Sie die .ovhconfig-Datei manuell bearbeiten**: Diese Option ist technisch anspruchsvoller und setzt voraus, dass Sie auf Ihrem Speicherplatz eingeloggt sind. In der vorliegenden Anleitung beschreiben wir ausschließlich diese Methode.
+- **Editieren der Konfigurationsdatei „.ovhconfig“**: Diese Option ist technisch anspruchsvoller und setzt voraus, dass Sie auf Ihrem Speicherplatz eingeloggt sind. In der vorliegenden Anleitung beschreiben wir ausschließlich diese Methode.
 
-- **über einen Konfigurationsassistenten in Ihrem OVHcloud Kundencenter**: Diese Option ist weniger technisch anspruchsvoll und setzt voraus, dass Sie in Ihrem OVHcloud Kundencenter eingeloggt sind, um dort die gewünschten Änderungen auszuwählen. Befolgen Sie hierzu die Anleitung [„Konfiguration Ihres Webhostings bearbeiten“](../die_laufzeitumgebung_meines_webhostings_andern/){.external}
+- **Konfigurationsassistent in Ihrem Kundencenter**: Diese Option ist weniger technisch anspruchsvoll und setzt voraus, dass Sie in Ihrem OVHcloud Kundencenter eingeloggt sind, um dort die gewünschten Änderungen auszuwählen. Befolgen Sie hierzu die Anleitung [„Konfiguration Ihres Webhostings bearbeiten“](../die_laufzeitumgebung_meines_webhostings_andern/){.external}
 
 Folgen Sie den Schritten der vorliegenden Anleitung, wenn Sie die .ovhconfig-Datei manuell bearbeiten möchten. 
 
@@ -50,8 +48,8 @@ Wenn Sie sich in Ihrem Speicherplatz eingeloggt haben, können Sie alle aktuell 
 
 Nun gibt es zwei Möglichkeiten:
 
-- **die .ovhconfig-Datei ist vorhanden**: Laden Sie die Datei auf Ihren eigenen Rechner. Wir empfehlen Ihnen, eine Kopie zu speichern, bevor Sie die Datei bearbeiten. So können Sie die .ovhconfig-Datei wenn nötig in ihren Originalzustand zurückversetzen.
-- **die .ovhconfi-Datei ist nicht vorhanden**: Da die Datei nicht existiert, erstellen Sie eine eigene auf Ihrem Rechner und speichern Sie sie unter „.ovhconfig“.
+- **Die .ovhconfig ist vorhanden**. Laden Sie die Datei auf Ihren eigenen Rechner. Wir empfehlen Ihnen, eine Kopie zu speichern, bevor Sie die Datei bearbeiten. So können Sie die .ovhconfig-Datei wenn nötig in ihren Originalzustand zurückversetzen.
+- **Die .ovhconfig ist nicht vorhanden**. Da die Datei nicht existiert, erstellen Sie eine eigene auf Ihrem Rechner und speichern Sie sie unter „.ovhconfig“.
 
 #### Schritt 3: .ovhconfig-Datei bearbeiten
 
