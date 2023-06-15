@@ -4,10 +4,10 @@ slug: multisites-configuring-multiple-websites
 excerpt: 'Find out how to host several websites on your Web Hosting plan'
 section: 'Getting started'
 order: 03
-updated: 2022-11-04
+updated: 2023-06-08
 ---
 
-**Last updated 04th November 2022**
+**Last updated 08th June 2023**
 
 ## Objective
 
@@ -139,6 +139,8 @@ Check the information displayed, then click `Confirm`{.action}. Once you have do
 > [!warning]
 >
 > You need to **quickly** make these changes for your domain to be correctly added. Otherwise, your domain addition will be cancelled.
+>
+> The **A** and **TXT** DNS records must be placed in your domain name’s active DNS zone for it to be added to your Web Hosting plan. Only **AAAA** DNS records are optional. 
 >
 
 ### Step 3: Put your website online <a name="site-online"></a>

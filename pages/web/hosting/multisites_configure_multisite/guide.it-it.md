@@ -1,17 +1,17 @@
 ---
 title: 'Ospitare più siti su uno stesso hosting'
 slug: configurare-un-multisito-su-un-hosting-web
-excerpt: 'Come condividere il tuo hosting Web tra più siti Internet'
+excerpt: 'Questa guida ti mostra come condividere il tuo hosting Web tra più siti Internet'
 section: Per iniziare
 order: 03
-updated: 2022-11-04
+updated: 2023-06-08
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
-**Ultimo aggiornamento: 22/08/2022**
+**Ultimo aggiornamento: 08/06/2023**
 
 ## Obiettivo
 
@@ -143,6 +143,8 @@ annota i parametri indicati e clicca su `Conferma`{.action}. A questo punto, il 
 > [!warning]
 >
 > Per aggiungere correttamente il dominio è necessario **effettuare rapidamente** queste modifiche. In caso contrario, l'aggiunta del tuo dominio sarà annullata.
+>
+> I record DNS di tipo **A** e **TXT** devono obbligatoriamente essere inseriti nella zona DNS attiva del tuo dominio perché sia aggiunto al tuo hosting Web. Sono opzionali solo i record DNS di tipo **AAAA**. 
 >
 
 ### Step 3: mettere online il tuo sito Web <a name="site-online"></a>

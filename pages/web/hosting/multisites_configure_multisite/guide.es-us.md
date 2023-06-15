@@ -1,23 +1,23 @@
 ---
 title: 'Alojar varios sitios web en un mismo hosting'
 slug: configurar-un-multisitio-en-un-alojamiento-web
-excerpt: 'Cómo utilizar un plan de hosting para alojar varios sitios web'
+excerpt: 'Descubra cómo utilizar un plan de hosting para alojar varios sitios web'
 section: 'Configuración del alojamiento'
 order: 03
-updated: 2022-11-04
+updated: 2023-06-08
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 22/08/2022**
+**Última actualización: 08/06/2023**
 
 ## Objetivo
 
 Es posible alojar varios sitios web en un mismo plan de hosting, aunque los dominios no estén registrados en OVHcloud.
 
-**Esta guía explica cómo utilizar un plan de hosting para alojar varios sitios web.**
+**Descubra cómo utilizar un plan de hosting para alojar varios sitios web.**
 
 ## Requisitos
 
@@ -143,6 +143,8 @@ Compruebe que la información que se muestra es correcta y haga clic en `Aceptar
 > [!warning]
 >
 > Es necesario realizar estos cambios **rápidamente** para que el dominio se añada correctamente. Si no la realiza, la adición del dominio se anulará.
+>
+> Los registros DNS de tipo **A** y **TXT** deben estar obligatoriamente situados en la zona DNS activa de su nombre de dominio para que sea añadido a su alojamiento web. Solo los registros DNS de tipo **AAAA** son opcionales. 
 >
 
 ### 3\. publicar un sitio web en internet <a name="site-online"></a>
