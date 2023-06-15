@@ -5,10 +5,10 @@ slug: gestion-des-tokens
 legacy_guide_number: 1872
 section: 'Gestion via OpenStack'
 order: 9
-updated: 2023-03-02
+updated: 2023-06-15
 ---
 
-**Dernière mise à jour le 02/03/2023**
+**Dernière mise à jour le 15/06/2023**
 
 ## Objectif
 
@@ -45,7 +45,9 @@ Pour plus d'information, consultez la documentation d'[OpenStack de l'API](https
 ### Operations manuelles
 Les opérations qui suivent peuvent être effectuées manuellement, elles sont généralement utilisées à des fins pédagogiques ou de debugging.
 
-Il est nécessaire de charger l'environnement à l'aide du fichier openrc (voir le guide).
+Il est nécessaire de charger l'environnement à l'aide du fichier openrc. Pour cela, nous vous recommandons de télécharger et utiliser le fichier openrc.sh que vous trouverez dans l'interface Horizon. Ce dernier disposeras de l’ensemble des variables d’environnement nécessaires â la construction des commandes qui vont suivre.
+
+Pour vous connecter à Horizon et télécharger le fichier, consulter ce [guide](/pages/platform/public-cloud/introducing_horizon/).
 
 Dans notre exemple, nous souhaitons obtenir les informations de metadata d'un objet stocké grâce à l'offre Public Cloud Storage. Les étapes sont :
 
@@ -59,11 +61,10 @@ L'outil en ligne de commande cURL permet de construire des requêtes de toutes p
 #### Étape 1 : Demande de creation d'un token
 
 ```bash
-curl -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | python -mjson.tool
+curl -X POST ${OS_AUTH_URL}v${OS_IDENTITY_API_VERSION}/auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | python -mjson.tool
 ```
 
 La réponse du serveur ressemble à ceci :
-
 
 ```json
  {
@@ -125,6 +126,7 @@ La réponse du serveur ressemble à ceci :
 
 
 #### Étape 2 : Recuperation des variables token ID et endpoint publicURL
+
 Les deux informations sont disponibles dans la sortie de la commande précédente.
 
 Pour le endpoint publicURL, il faut rechercher dans la section "object-store" et la région qui convient, ici "SBG".
@@ -138,7 +140,7 @@ C'est l'adresse du endpoint du service d'object storage qui va permettre de requ
 
 
 ```bash
-export token=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | grep -i '^X-Subject-Token' | cut -d" " -f2)
+export token=$(curl -is -X POST ${OS_AUTH_URL}v${OS_IDENTITY_API_VERSION}/auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | grep -i '^X-Subject-Token' | cut -d" " -f2)
 ```
 
 Ce token est maintenant l'élément d'authentification qui sera utilisé pour la requête suivante.
