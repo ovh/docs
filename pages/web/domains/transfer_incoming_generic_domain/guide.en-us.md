@@ -4,10 +4,10 @@ slug: transfer-generic-domain
 excerpt: 'Find out how to transfer a generic domain name to OVHcloud'
 section: Transfer
 order: 01
-updated: 2022-11-18
+updated: 2023-06-08
 ---
 
-**Last updated 18th November 2022**
+**Last updated 8th June 2022**
 
 ## Objective
 
@@ -17,11 +17,13 @@ By transferring your domain name, you will change your domain name registrar. Yo
 
 > [!warning]
 >
-> If the domain name being modified is currently registered with OVHcloud, incoming domain transfer is not the appropriate procedure. This procedure only applies to the change of the domain name registry (OVHcloud).
+> The domain name *registrar* is a service provider authorised to offer domain names for registration by an individual, association or organisation. You renew your domain name subscription with the same *registrar* (usually once a year).
 >
-> To transfer the domain name management to another OVHcloud customer account, a *change of contacts* must be made instead. The procedure is described in [this guide](https://docs.ovh.com/us/en/customer/managing-contacts/).
+> If OVHcloud is already the *registrar* of your domain name, the *incoming domain transfer* procedure does not apply. The *incoming domain transfer* procedure described in this guide is **only** appropriate for domain names registered with a *registrar* other than OVHcloud.
 >
-> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names](https://docs.ovh.com/us/en/domains/how-to-change-domain-name-holder/) instructions.
+> To transfer the domain name management to another OVHcloud customer account, a *change of contacts* must be made instead. The procedure is described in [our contact management guide](https://docs.ovh.com/us/en/customer/managing-contacts/).
+>
+> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names instructions](https://docs.ovh.com/us/en/domains/how-to-change-domain-name-holder/).
 >
 
 ## Requirements
@@ -39,7 +41,7 @@ By transferring your domain name, you will change your domain name registrar. Yo
 
 > [!success]
 >
-> To find out the pricing conditions for transferring a domain name depending on its extension, enter the domain you wish to transfer on our page [www.ovhcloud.com/en-us/domains/tld/](https://www.ovhcloud.com/en/domains/tld/) and follow the steps in this guide.
+> To find out the pricing conditions for transferring a domain name depending on its extension, enter the domain you wish to transfer on our page [www.ovhcloud.com/en/domains/tld/](https://www.ovhcloud.com/en/domains/tld/) and follow the steps in this guide.
 >
 
 The transfer procedure has several steps. These steps will involve various entities being contacted, including your current domain name registrar, OVHcloud, and other parties. The table below provides a breakdown of who is contacted, and how long each step will take to complete.
@@ -53,7 +55,7 @@ The transfer procedure has several steps. These steps will involve various entit
 
 > [!warning]
 >
-> The exact procedure for domain transfer may vary, especially in case of some country-     code TLDs (ccTLD, such as .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) and a few special purpose TLDs (.am, .fm, etc.). Depending on your domain name extension, you may have additional requirements. We recommend to first check against the information displayed in the section of the extension concerned, on our website: <https://www.ovhcloud.com/en/domains/tld/>.
+> The exact procedure for domain transfer may vary, especially in case of some country-code TLDs (ccTLD, such as .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) and a few special purpose TLDs (.am, .fm, etc.). Depending on your domain name extension, you may have additional requirements. We recommend to first check against the information displayed in the section of the extension concerned, on our website: <https://www.ovhcloud.com/en/domains/tld/>.
 >
 
 ### Step 1: Check the information associated with the domain
@@ -98,7 +100,7 @@ Domains can also be ordered in addition to a [Web Hosting plan](https://www.ovhc
 >
 > Throughout the order process, we advise taking special care with regard to the following points:
 >
-> - **Data on the domain name holder.** Especially since GDPR legislation is in effect, please ensure that all information on the domain name owner matches the information stored by your current domain name registrar. Doing this will ensure that you will not be suspected of domain name theft.
+> - **Data on the domain name owner.** Especially since GDPR legislation is in effect, please ensure that all information on the domain name owner matches the information stored by your current domain name registrar. Doing this will ensure that you will not be suspected of domain name theft.
 >
 > - **Entering the DNS servers for your domain name.** If you are currently using your domain name to keep a website or email service online, you will need to specify their DNS servers in order to avoid any service interruptions.  
 >
@@ -112,8 +114,6 @@ Domains can also be ordered in addition to a [Web Hosting plan](https://www.ovhc
 - In some cases, the transfer process may require additional information regarding the domain name owner. To add this information, click on the option `Manage contacts/owner`{.action}.
 
 ![domain](images/Order_summary.png){.thumbnail}
-
-Once finished, you will receive a purchase order. The transfer process will only start after your payment was received. Afterward, you can track the transfer progress via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}: Switch to `Web Cloud`{.action} and go to the `Domain names`{.action} section. Then select `Ongoing operations`{.action}.
 
 #### Tracking a transfer after the order
 
@@ -155,10 +155,10 @@ To do this, go to `Web Cloud`{.action} and open `Domain names`{.action} in the s
 
 ## Go further
 
-[Migrating your website and emails to OVHcloud](../../hosting/migrating-website-to-ovh/){.external}
+[Migrating your website and emails to OVHcloud](../../hosting/migrating-website-to-ovh/)
 
-[Editing an OVHcloud DNS zone](../web_hosting_how_to_edit_my_dns_zone/){.external}
+[Editing an OVHcloud DNS zone](../web_hosting_how_to_edit_my_dns_zone/)
 
-[Editing the DNS servers for an OVHcloud domain name](../web_hosting_general_information_about_dns_servers/){.external}
+[Editing the DNS servers for an OVHcloud domain name](../web_hosting_general_information_about_dns_servers/)
 
 Join our community of users on <https://community.ovh.com/en/>.

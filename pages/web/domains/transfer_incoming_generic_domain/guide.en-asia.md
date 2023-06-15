@@ -4,10 +4,10 @@ slug: transfer-generic-domain
 excerpt: 'Find out how to transfer a generic domain name to OVHcloud'
 section: Transfer
 order: 01
-updated: 2022-11-18
+updated: 2023-06-08
 ---
 
-**Last updated 18th November 2022**
+**Last updated 8th June 2022**
 
 ## Objective
 
@@ -17,11 +17,13 @@ By transferring your domain name, you will change your domain name registrar. Yo
 
 > [!warning]
 >
-> If the domain name being modified is currently registered with OVHcloud, incoming domain transfer is not the appropriate procedure. This procedure only applies to the change of the domain name registry (OVHcloud).
+> The domain name *registrar* is a service provider authorised to offer domain names for registration by an individual, association or organisation. You renew your domain name subscription with the same *registrar* (usually once a year).
 >
-> To transfer the domain name management to another OVHcloud customer account, a *change of contacts* must be made instead. The procedure is described in [this guide](https://docs.ovh.com/asia/en/customer/managing-contacts/).
+> If OVHcloud is already the *registrar* of your domain name, the *incoming domain transfer* procedure does not apply. The *incoming domain transfer* procedure described in this guide is **only** appropriate for domain names registered with a *registrar* other than OVHcloud.
 >
-> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names](https://docs.ovh.com/asia/en/domains/how-to-change-domain-name-holder/) instructions.
+> To transfer the domain name management to another OVHcloud customer account, a *change of contacts* must be made instead. The procedure is described in [our contact management guide](https://docs.ovh.com/asia/en/customer/managing-contacts/).
+>
+> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names instructions](https://docs.ovh.com/asia/en/domains/how-to-change-domain-name-holder/).
 >
 
 ## Requirements
@@ -98,7 +100,7 @@ Domains can also be ordered in addition to a [Web Hosting plan](https://www.ovhc
 >
 > Throughout the order process, we advise taking special care with regard to the following points:
 >
-> - **Data on the domain name holder.** Especially since GDPR legislation is in effect, please ensure that all information on the domain name owner matches the information stored by your current domain name registrar. Doing this will ensure that you will not be suspected of domain name theft.
+> - **Data on the domain name owner.** Especially since GDPR legislation is in effect, please ensure that all information on the domain name owner matches the information stored by your current domain name registrar. Doing this will ensure that you will not be suspected of domain name theft.
 >
 > - **Entering the DNS servers for your domain name.** If you are currently using your domain name to keep a website or email service online, you will need to specify their DNS servers in order to avoid any service interruptions.  
 >
@@ -153,10 +155,10 @@ To do this, go to `Web Cloud`{.action} and open `Domain names`{.action} in the s
 
 ## Go further
 
-[Migrating your website and emails to OVHcloud](../../hosting/migrating-website-to-ovh/){.external}
+[Migrating your website and emails to OVHcloud](../../hosting/migrating-website-to-ovh/)
 
-[Editing an OVHcloud DNS zone](../web_hosting_how_to_edit_my_dns_zone/){.external}
+[Editing an OVHcloud DNS zone](../web_hosting_how_to_edit_my_dns_zone/)
 
-[Editing the DNS servers for an OVHcloud domain name](../web_hosting_general_information_about_dns_servers/){.external}
+[Editing the DNS servers for an OVHcloud domain name](../web_hosting_general_information_about_dns_servers/)
 
 Join our community of users on <https://community.ovh.com/en/>.
