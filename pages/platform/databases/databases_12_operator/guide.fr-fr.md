@@ -1,6 +1,8 @@
 ---
-title: Getting started with Kubernetes database operator
+title: Premiers pas avec Kubernetes database operator (EN)
 excerpt: Find out how to install and use the Kubernetes database operator
+routes:
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-databases-database-operator?id=kb_article_view&sysparm_article=KB0058469'
 updated: 2023-06-15
 ---
 
