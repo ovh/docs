@@ -85,9 +85,9 @@ Cliquer sur un calendrier de la liste a pour effet de l’ajouter ou de le retir
 
 ## Aller plus loin
 
-[Consulter son compte Exchange depuis l’interface OWA](../exchange-2016-guide-utilisation-outlook-web-app/)
+[Consulter son compte Exchange depuis l’interface OWA](/pages/web/emails/email_owa)
 
-[Partager un dossier depuis l’interface OWA](../exchange-2016-partager-un-dossier-via-le-webmail-owa/)
+[Partager un dossier depuis l’interface OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
 [Créer un groupe de contacts](../exchange-utilisation-des-groupes-mailing-list/)
 

@@ -188,7 +188,7 @@ Remplissez les informations demandées en fonction de la tâche que vous voudrez
 
 ![useowa](images/owa_exchange_step21.png){.thumbnail}
 
-Pour des instructions plus détaillées sur la création des règles de gestion de messagerie, veuillez vous référer à notre guide : [Créer un répondeur automatique sous OWA](../exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa/).
+Pour des instructions plus détaillées sur la création des règles de gestion de messagerie, veuillez vous référer à notre guide : [Créer un répondeur automatique sous OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies).
 
 ### Ajouter une signature
 
@@ -202,7 +202,7 @@ Sur le côté gauche de la nouvelle page, cliquez sur `Signature électronique`{
 
 Composez votre signature électronique dans la boîte d'éditeur. Vous pouvez spécifier si vous souhaitez inclure la signature par défaut dans les nouveaux e-mails uniquement ou également dans les réponses et les e-mails transférés. Une fois que vous avez terminé, cliquez sur `Enregistrer`{.action} pour confirmer.
 
-Pour obtenir des instructions sur la création de signatures automatiques en utilisant des modèles pour l'ensemble du domaine, veuillez vous référer à notre guide : [Créer des signatures automatiques](../exchange-signature-automatique-disclaimer/).
+Pour obtenir des instructions sur la création de signatures automatiques en utilisant des modèles pour l'ensemble du domaine, veuillez vous référer à notre guide : [Créer des signatures automatiques](/pages/web/microsoft-collaborative-solutions/feature_footers).
 
 ### Accéder à la section Options
 
@@ -223,12 +223,12 @@ La désactivation de ces cookies peut néanmoins affecter la stabilité de votre
 
 ## Aller plus loin
 
-[Création de réponses automatiques sous OWA](../exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa/)
+[Création de réponses automatiques sous OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies)
 
-[Partager un dossier depuis l’interface OWA](../exchange-2016-partager-un-dossier-via-le-webmail-owa/)
+[Partager un dossier depuis l’interface OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
-[Partager des calendriers via l’interface OWA](../exchange-2016-partager-un-calendrier-via-le-webmail-owa/)
+[Partager des calendriers via l’interface OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Créer un groupe de contacts](../exchange-utilisation-des-groupes-mailing-list/)
+[Créer un groupe de contacts](/pages/web/microsoft-collaborative-solutions/feature_groups)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

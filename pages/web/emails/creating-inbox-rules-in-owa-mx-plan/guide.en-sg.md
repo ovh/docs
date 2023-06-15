@@ -102,6 +102,6 @@ Please note that spam false positives cannot be declared directly from OWA. If y
 
 ## Go further
 
-[Using the Outlook Web App with an email account](../exchange_2016_outlook_web_app_user_guide/)
+[Using the Outlook Web App with an email account](/pages/web/emails/email_owa)
 
 Join our community of users on <https://community.ovh.com/en/>.

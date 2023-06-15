@@ -74,7 +74,7 @@ Exchange Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingeric
 
 Sobald Ihre E-Mail-Adresse eingerichtet ist, können Sie sie verwenden. Sie können ab sofort E-Mails versenden und empfangen.
 
-Ihre Exchange E-Mail-Adresse sowie alle kollaborativen Funktionen sind ebenfalls über das [OWA Interface](https://www.ovh.de/mail/) verfügbar. Bei Fragen zu dessen Verwendung können Sie unsere Anleitung zur [Outlook Web App](../exchange_2016_verwendung_der_outlook_web_app/) heranziehen.
+Ihre Exchange E-Mail-Adresse sowie alle kollaborativen Funktionen sind ebenfalls über das [OWA Interface](https://www.ovh.de/mail/) verfügbar. Bei Fragen zu dessen Verwendung können Sie unsere Anleitung zur [Outlook Web App](/pages/web/emails/email_owa) heranziehen.
 
 ### Backup Ihrer E-Mail-Adresse
 

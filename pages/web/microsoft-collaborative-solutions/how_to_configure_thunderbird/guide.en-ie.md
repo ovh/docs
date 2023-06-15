@@ -62,7 +62,7 @@ For **POP** configuration, the values are:
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-Your Exchange email address and all of its collaborative features are also available via the [OWA interface](https://www.ovh.ie/mail/). If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](../exchange_2016_outlook_web_app_user_guide/).
+Your Exchange email address and all of its collaborative features are also available via the [OWA interface](https://www.ovh.ie/mail/). If you have any questions about how to use this interface, please refer to our guide on [Using the Outlook Web App](/pages/web/emails/email_owa).
 
 ### Retrieving a backup of your email address
 

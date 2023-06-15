@@ -59,10 +59,10 @@ Poderá inserir uma mensagem alternativa para remetentes externos na segunda cai
 
 ## Saiba mais
 
-[Guia de utilização do Outlook Web App](../exchange_2016_guia_de_utilizacao_do_outlook_web_app)
+[Guia de utilização do Outlook Web App](/pages/web/emails/email_owa)
 
-[Atribuir permissões a uma conta Exchange](../exchange_3013_atribuir_permissoes_full_access_a_uma_conta/)
+[Atribuir permissões a uma conta Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Partilhar calendários em OWA](../exchange_2016_partilhar_um_calendario_atraves_do_webmail_owa/)
+[Partilhar calendários em OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

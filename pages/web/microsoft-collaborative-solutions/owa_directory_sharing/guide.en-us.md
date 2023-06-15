@@ -95,10 +95,10 @@ Log in to your Exchange account via the [OVHcloud webmail](https://www.ovhcloud.
 
 ## Go further
 
-[Using the Outlook Web App with an Exchange account](../exchange_2016_outlook_web_app_user_guide)
+[Using the Outlook Web App with an Exchange account](/pages/web/emails/email_owa)
 
-[Delegating permissions on an Exchange account](../exchange_2013_how_to_grant_full_access_permissions_for_an_account)
+[Delegating permissions on an Exchange account](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Sharing calendars in OWA](../exchange_2016_how_to_share_calendars_via_owa)
+[Sharing calendars in OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Join our community of users on <https://community.ovh.com/en/>.

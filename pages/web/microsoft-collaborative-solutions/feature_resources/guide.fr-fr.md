@@ -54,7 +54,7 @@ Vos ressources peuvent être gérées à partir du tableau de l'onglet « Ressou
 
 > [!primary]
 >
-Consultez également notre guide sur le [Partage de calendriers depuis l'interface OWA](../exchange-2016-partager-un-calendrier-via-le-webmail-owa/).
+Consultez également notre guide sur le [Partage de calendriers depuis l'interface OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing).
 >
 
 Connectez-vous à votre compte Exchange via le [webmail OVHcloud](https://www.ovh.com/fr/mail/). Basculez vers l'interface « Calendrier » en cliquant sur le « lanceur d'application » dans le coin supérieur gauche, puis en sélectionnant l'icône `Calendrier`{.action}.
@@ -119,10 +119,10 @@ Après avoir créé l'événement (en cliquant sur `Envoyer`{.action} dans la ba
 
 ## Aller plus loin
 
-[Consulter son compte Exchange depuis l’interface OWA](../exchange-2016-guide-utilisation-outlook-web-app/)
+[Consulter son compte Exchange depuis l’interface OWA](/pages/web/emails/email_owa)
 
-[Partager un calendrier depuis l’interface OWA](../exchange-2016-partager-un-calendrier-via-le-webmail-owa/)
+[Partager un calendrier depuis l’interface OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Partager un dossier depuis l’interface OWA](../exchange-2016-partager-un-dossier-via-le-webmail-owa/)
+[Partager un dossier depuis l’interface OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.

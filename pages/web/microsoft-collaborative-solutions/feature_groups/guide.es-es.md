@@ -63,7 +63,7 @@ Su grupo recién creado estará operativo en unos minutos. Puede modificar las c
 
 ![contactgroups](images/exchange-groups-step4.png){.thumbnail}
 
-Además, también aparecerá el elemento del menú `Gestionar las delegaciones`{.action}. Con esta opción podrá delegar el acceso del mismo modo que en una cuenta Exchange. Encontrará todos los detalles en [esta guía](../exchange_2013_dar_permisos_full_access_a_una_cuenta/).
+Además, también aparecerá el elemento del menú `Gestionar las delegaciones`{.action}. Con esta opción podrá delegar el acceso del mismo modo que en una cuenta Exchange. Encontrará todos los detalles en [esta guía](/pages/web/microsoft-collaborative-solutions/feature_delegation/).
 
 ![contactgroups](images/exchange-groups-step5.png){.thumbnail}
 
@@ -82,10 +82,10 @@ Ahora puede probar su lista de correo a través del [webmail de OVHcloud](https:
 
 ## Más información
 
-[Delegar permisos en una cuenta Exchange](../exchange_2013_dar_permisos_full_access_a_una_cuenta/)
+[Delegar permisos en una cuenta Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation/)
 
-[Usar Outlook Web App con una cuenta Exchange](../exchange_2016_guia_de_uso_de_outlook_web_app/)
+[Usar Outlook Web App con una cuenta Exchange](/pages/web/emails/email_owa)
 
-[Compartir calendarios en OWA](../exchange_2016_compartir_un_calendario_con_el_webmail_owa/)
+[Compartir calendarios en OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

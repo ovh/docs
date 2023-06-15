@@ -77,7 +77,7 @@ Para mais informações sobre esta funcionalidade, consulte o nosso [guia sobre 
 
 ### A autenticação ao webmail falhou <a name="password"></a>
 
-Isto pode dever-se à introdução de uma palavra-passe de conta incorreta. Verifique primeiro que a palavra-passe está correta, ligando-se ao [webmail](../exchange_2016_guia_de_utilizacao_do_outlook_web_app/) e reinicie o diagnóstico.
+Isto pode dever-se à introdução de uma palavra-passe de conta incorreta. Verifique primeiro que a palavra-passe está correta, ligando-se ao [webmail](/pages/web/emails/email_owa) e reinicie o diagnóstico.
 
 Se necessário, pode alterar a palavra-passe da conta em causa no separador `Contas de e-mail`{.action} na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Se o problema persistir, crie um pedido de assistência.
 

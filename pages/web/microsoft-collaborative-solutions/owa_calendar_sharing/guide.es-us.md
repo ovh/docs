@@ -91,11 +91,11 @@ Al hacer clic en un calendario de la lista, este se añade o se elimina de la vi
 
 ## Más información
 
-[Usar Outlook Web App con una cuenta Exchange](../exchange_2016_guia_de_uso_de_outlook_web_app/)
+[Usar Outlook Web App con una cuenta Exchange](/pages/web/emails/email_owa)
 
-[Compartir carpetas en OWA](../exchange_2016_compartir_una_carpeta_con_el_webmail_owa/)
+[Compartir carpetas en OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
-[Crear grupos de contactos](../exchange_20132016_uso_de_los_grupos_listas_de_correo/)
+[Crear grupos de contactos](/pages/web/microsoft-collaborative-solutions/feature_groups)
 
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

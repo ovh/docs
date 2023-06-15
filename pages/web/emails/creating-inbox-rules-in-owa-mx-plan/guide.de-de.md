@@ -108,10 +108,10 @@ Da kein automatisierter Spam-Schutz definitiv entscheiden kann, ob es sich bei e
 
 ## Weiterführende Informationen
 
-[Einrichten automatischer Antworten in OWA](../exchange_2016_einrichten_einer_automatischen_antwort_in_owa/)
+[Einrichten automatischer Antworten in OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies)
 
-[Kalender via OWA freigeben](../exchange_2016_einen_kalender_via_owa_webmail_freigeben/)
+[Kalender via OWA freigeben](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Outlook Web App mit einem E-Mail-Konto verwenden](../exchange_2016_verwendung_der_outlook_web_app/)
+[Outlook Web App mit einem E-Mail-Konto verwenden](/pages/web/emails/email_owa)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

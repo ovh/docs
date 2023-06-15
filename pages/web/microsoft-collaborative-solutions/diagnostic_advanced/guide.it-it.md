@@ -77,7 +77,7 @@ Per maggiori informazioni su questa funzionalità, consulta la nostra [guida sul
 
 ### L'autenticazione alla Webmail è fallita <a name="password"></a>
 
-Questa operazione può essere dovuta all'inserimento di una password dell'account non corretta. Verifica che la password sia corretta, accedendo alla [Webmail](../exchange_2016_guida_allutilizzo_di_outlook_web_app/) e riavvia la diagnostica.
+Questa operazione può essere dovuta all'inserimento di una password dell'account non corretta. Verifica che la password sia corretta, accedendo alla [Webmail](/pages/web/emails/email_owa) e riavvia la diagnostica.
 
 Se necessario, modifica la password dell'account nella scheda `Account email`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Se il problema persiste, crea una richiesta di assistenza.
 
