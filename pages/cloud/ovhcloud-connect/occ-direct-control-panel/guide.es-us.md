@@ -50,7 +50,7 @@ A message will confirm the vRack association.
 >
 
 > [!primary]
-> For more details on the differences between levels L2 and L3, see our [FAQ](../occdedicated-faq/#how-do-i-choose-between-a-layer-2-or-layer-3-cross-connection-for-the-osi-model).
+> For more details on the differences between levels L2 and L3, see our [FAQ](/pages/cloud/ovhcloud-connect/occdedicated-faq).
 >
 
 #### Configuration 

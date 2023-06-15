@@ -48,7 +48,7 @@ Un message vous confirmera l'association du vRack.
 >
 
 > [!primary]
-> Pour plus de détails sur les différences entre les niveaux L2 et L3, consultez notre [FAQ](../occdedicated-faq/#3-comment-choisir-entre-une-interconnexion-de-niveau-2-ou-de-niveau-3-du-modele-osi).
+> Pour plus de détails sur les différences entre les niveaux L2 et L3, consultez notre [FAQ](/pages/cloud/ovhcloud-connect/occdedicated-faq).
 >
 
 #### Configuration L2 
