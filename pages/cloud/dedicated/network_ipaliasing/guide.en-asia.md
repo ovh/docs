@@ -3,10 +3,9 @@ title: 'Configuring IP aliasing'
 slug: network-ipaliasing
 excerpt: 'Find out how to add Additional IP addresses to your server configuration'
 section: 'Network Management'
-updated: 2022-12-07
+updated: 2023-06-15
 ---
 
-**Last updated 15th February 2023**
 
 > [!primary]
 >
@@ -743,18 +742,18 @@ svcadm restart svc:/network/physical:default
 
 ### Troubleshooting
 
-First, restart your server from the command line or its GUI. If you are still unable to establish a connection from the public network to your alias IP and suspect a network problem, you need to reboot the server in [rescue mode](../ovh-rescue/). Then you can set up the Additional IP address directly on the server.
+First, restart your server from the command line or its GUI. If you are still unable to establish a connection from the public network to your alias IP and suspect a network problem, you need to reboot the server in [rescue mode](/pages/cloud/dedicated/rescue_mode). Then you can set up the Additional IP address directly on the server.
 
 Once you are connected to your server via SSH, enter the following command:
 
 ```bash
-ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
+ifconfig_eth0="inet ADDITIONAL_IP netmask 0 broadcast ADDITIONAL_IP"
 ```
 
 To test the connection, simply ping your Additional IP from the outside. If it responds in rescue mode, that probably means that there is a configuration error. If, however, the IP is still not working, please inform our support teams by creating a support request in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) for further investigations.
  
 ## Go further
 
-[Activating and using rescue mode](../ovh-rescue/)
+[Configuring a network bridge](/pages/cloud/dedicated/network_bridging)
 
 Join our community of users on <https://community.ovh.com/en/>.

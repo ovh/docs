@@ -3,10 +3,9 @@ title: 'Configurer son adresse IP en alias'
 slug: network-ipaliasing
 excerpt: 'Découvrez comment ajouter des Additional IP à votre configuration'
 section: 'Réseau & IP'
-updated: 2022-12-07
+updated: 2023-06-15
 ---
 
-**Dernière mise à jour le 02/02/2023**
 
 > [!primary]
 >
@@ -753,5 +752,7 @@ Où vous remplacerez « ADDITIONAL_IP » par la véritable Additional IP.
 Ensuite, il vous suffit d'effectuer un ping depuis votre Additional IP vers l'extérieur. Si cela fonctionne, cela signifie probablement qu'il y a une erreur de configuration devant être corrigée. Si, au contraire, l'adresse IP ne fonctionne toujours pas, veuillez ouvrir un ticket à l'équipe d'assistance via votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## Aller plus loin
+
+[Mode bridge IP](/pages/cloud/dedicated/network_bridging)
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com>.

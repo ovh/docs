@@ -3,21 +3,20 @@ title: Como configurar um IP alias
 slug: network-ipaliasing
 excerpt: Descubra como adicionar endereços Additional IP à configuração de rede
 section: Redes & IP
-updated: 2022-12-07
+updated: 2023-06-15
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização no dia 20/02/2023**
 
 > [!primary]
 >
 > A partir de 6 de outubro de 2022, a nossa solução "Failover IP" passou a designar-se [Additional IP](https://www.ovhcloud.com/pt/network/additional-ip/). Isto não afeta as suas funcionalidades.
 >
 
-## Sumário
+## Objetivo
 
 O IP aliasing é uma configuração de rede para servidores dedicados que permite associar vários endereços IP à mesma interface de rede.
 
@@ -722,6 +721,22 @@ Agora, execute este comando para reiniciar a interface:
 svcadm restart svc:/network/physical:default
 ```
 
+#### Resolução das deficiências
+
+Se não conseguir estabelecer uma ligação entre a rede pública e o seu alias IP e suspeitar de um problema de rede, reinicie o servidor em [modo rescue](/pages/cloud/dedicated/rescue_mode) e configure o alias diretamente no servidor.
+
+Para isso, execute o seguinte comando depois de reiniciar o servidor em modo rescue:
+
+```bash
+ifconfig_eth0="inet ADDITIONAL_IP netmask 0 broadcast ADDITIONAL_IP"
+```
+
+Onde irá substituir "ADITIONAL_IP" pelo verdadeiro Adicional IP.
+
+De seguida, basta efetuar um ping a partir do seu IP adicional para o exterior. Se isto funcionar, isto provavelmente significa que existe um erro de configuração que precisa de ser corrigido. Se, pelo contrário, o IP ainda não funcionar, abra um ticket à equipa de assistência através da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} para uma investigação complementar.
+
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores <https://community.ovh.com/en/>.
+[Modo bridge IP](/pages/cloud/dedicated/network_bridging)
+
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

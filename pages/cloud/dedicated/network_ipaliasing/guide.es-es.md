@@ -3,14 +3,13 @@ title: 'Configurar una IP como alias'
 slug: network-ipaliasing
 excerpt: 'Descubra cómo añadir direcciones Additional IP a la configuración de un servidor'
 section: 'Red e IP'
-updated: 2022-12-07
+updated: 2023-06-15
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 20/02/2023**
 
 > [!primary]
 >
@@ -728,7 +727,22 @@ Por último, reinicie la interfaz con el siguiente comando:
 svcadm restart svc:/network/physical:default
 ```
 
+#### Resolución de fallos
+
+Si no consigue establecer una conexión entre la red pública y su alias IP y si tiene algún problema de red, reinicie el servidor en [modo de rescate](/pages/cloud/dedicated/rescue_mode) y configure el alias directamente en el servidor.
+
+Para ello, una vez que haya reiniciado el servidor en modo de rescate, ejecute el siguiente comando:
+
+```bash
+ifconfig_eth0="inet ADDITIONAL_IP netmask 0 broadcast ADDITIONAL_IP"
+```
+
+Donde podrá sustituir "ADDITIONAL_IP" por la verdadera IP Aditional.
+
+A continuación, solo tiene que hacer un ping desde su Dirección IP hacia el exterior. Si funciona, probablemente significa que debe corregirse un error de configuración. Si, por el contrario, la IP todavía no funciona, abra un tíquet al equipo de soporte desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} para más información.
 
 ## Más información
+
+[Modo Bridge IP](/pages/cloud/dedicated/network_bridging)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
