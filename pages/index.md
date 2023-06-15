@@ -930,8 +930,6 @@
                 + [Transferring a domain name to OVHcloud](web/domains/transfer_incoming_generic_domain)
             + [Tutorials](web-cloud-domains-domain-names-tutorials)
                 + [Tutorial - Using Zonemaster](web/domains/dns_zonemaster)
-            + [Security](web-cloud-domains-domain-names-security)
-                + [FAQ - TMCH (TradeMark ClearingHouse)](web/domains/tmch_faq)
             + [API](web-cloud-domains-domain-names-api)
                 + [Introduction](web/domains/api_domain_intro)
                 + [Order a Domain Name](web/domains/api_domain_order)
