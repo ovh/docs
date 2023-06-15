@@ -4,10 +4,10 @@ slug: cold-archive/getting-started
 excerpt: This guide shows you how to manage your data with Cold Archive
 section: Cold Archive Storage Class Specifics
 order: 020
-updated: 2022-10-19
+updated: 2023-05-17
 ---
 
-**Last updated 19th October 2022**
+**Last updated 17th May 2023**
 
 ## Objective
 
@@ -63,8 +63,12 @@ delete-ovh-archive = s3api delete-bucket-intelligent-tiering-configuration --id 
 
 ### Bucket archiving
 
-After its creation, a bucket is in write-only mode.<br>
-Allowed actions are adding and listing objects.
+Before archiving a bucket, make sure there are no incomplete multipart uploads.
+This can be done with:
+
+```bash
+aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api list-multipart-uploads --bucket <bucket_name>
+```
 
 Archive a bucket:
 
@@ -108,7 +112,7 @@ aws s3 rb s3://<bucket_name>
 Once an intelligent-tiering configuration has been pushed (via a `put-bucket-intelligent-tiering-configuration` operation) and until it is removed (via a `delete-bucket-intelligent-tiering-configuration` operation), the status of a bucket is readable through:
 
 ```bash
-aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net get-ovh-bucket-status <bucket_name> | jq '.IntelligentTieringConfiguration.Status'
+aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api get-bucket-tagging --bucket <bucket_name>
 ```
 
 #### List of bucket statuses
@@ -124,5 +128,7 @@ aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net get-ovh-bucket-status
 | `Flushed`   | Bucket is empty and can safely be removed.                                       | Listing (empty bucket) |
 
 ## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

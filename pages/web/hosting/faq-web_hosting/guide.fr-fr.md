@@ -4,10 +4,11 @@ excerpt: Retrouvez les questions les plus fréquemment posées sur les hébergem
 slug: faq-hebergement
 section: Premiers pas
 order: 05
-updated: 2022-11-28
+updated: 2023-04-21
+
 ---
 
-**Dernière mise à jour le 15/02/2023**
+**Dernière mise à jour le 24/04/2023**
 
 ## Gestion de votre offre
 
@@ -62,7 +63,23 @@ Pour cela, dirigez-vous sur l'onglet `Informations générales`{.action} de votr
 Les hébergements mutualisés **Performance** comprennent une offre Web Cloud Databases activable gratuitement.
 Lorsque vous résiliez ou supprimez votre hébergement mutualisé **Performance**, l'offre Web Cloud Databases qui est attachée est également résiliée. Pour conserver votre Web Cloud Databases, il vous faudra le détacher avant la résiliation de l'hébergement.<br>
 
-Pour cela, cliquez sur l'onglet `Informations générales`{.action} de votre hébergement. Dans la section **Configuration**, cliquez sur le bouton `...`{.action} à droite de « **Base de données Privée** ». Cliquez sur `Délier`{.action} et suivez les instructions afin de commander une offre Web Cloud Databases indépendante, ce qui vous permettra de conserver votre Web Cloud Databases déjà créé.
+Pour cela, cliquez sur l'onglet `Informations générales`{.action} de votre hébergement. Dans la section **Configuration**, cliquez sur le bouton `...`{.action} à droite de « **Web Cloud Databases** ». Cliquez sur `Délier`{.action} et suivez les instructions afin de commander une offre Web Cloud Databases indépendante, ce qui vous permettra de conserver votre Web Cloud Databases déjà créé.
+
+### Comment augmenter la RAM d'une offre Web Cloud Databases liée à un hébergement mutualisé « Performance » ?
+
+Pour augmenter la RAM d'une offre Web Cloud Databases liée à un hébergement mutualisé **Performance**, vous devrez obligatoirement et préalablement délier l'offre Web Cloud Databases de votre hébergement **Performance** pour basculer sur une offre supérieure.
+
+
+Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Rendez-vous dans la partie `Web Cloud`{.action} puis sur l'hébergement concerné à gauche dans l'onglet `Hébergements`{.action}. 
+
+Sur la page `Informations générales`{.action} qui s'affiche, vous retrouvez un encadré intitulé `Configuration`{.action} au centre de la page. A droite de la mention `Web Cloud Databases`{.action}, cliquez sur le bouton `...`{.action} puis sur `Délier`{.action}. Choisissez la durée du renouvellement la plus courte puis poursuivez jusqu'à la validation de la commande.
+
+
+Retrouvez plus d'informations dans notre guide sur la ["Configuration d'une offre Web Cloud Databases"](/pages/web/clouddb/configure-database-server#modify-ram-web-cloud-db)
+
+
+**Cette action est irréversible et l'offre Web Cloud Databases sera ensuite facturée indépendamment de votre hébergement web Performance.**
+
 
 ## Diagnostic
 
@@ -143,7 +160,7 @@ Comparez les `Cibles` des entrées de type `NS` indiquées dans l'onglet `Zone D
 
 - Si les éléments ne sont pas identiques, mais que les `Serveurs DNS` indiqués dans l'onglet du même nom apparaissent dans [cette liste](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/), effectuez une réinitialisation en suivant les instructions de [ce guide](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/#reinitialiser-les-serveurs-dns).
 
-- Si les éléments ne sont pas identiques et que les `Serveurs DNS` indiqués dans l'onglet du même nom n'apparaissent pas dans [cette liste](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/), contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) via la page des [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+- Si les éléments ne sont pas identiques et que les `Serveurs DNS` indiqués dans l'onglet du même nom n'apparaissent pas dans [cette liste](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/), contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) via la page des [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 ### Que faire si mon site affiche une erreur « La page ne se redirige pas correctement » ?
 
@@ -162,7 +179,7 @@ Restaurez votre site à son état précédent :
 
 - Si votre site comporte une base de données, consultez notre guide « [Restaurer une sauvegarde de votre base de données](https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client) ».
 
-Si les restaurations ne vous permettent pas de rétablir l'accès à votre site, contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Si les restaurations ne vous permettent pas de rétablir l'accès à votre site, contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 ### Que faire si mon site affiche une erreur « 503 error Backend fetch failed (Varnish cache) » ?
 
@@ -170,7 +187,7 @@ Si les restaurations ne vous permettent pas de rétablir l'accès à votre site,
 
 Si vous avez activé [l'option CDN](https://docs.ovh.com/fr/hosting/accelerer-mon-site-web-en-utilisant-le-cdn/) de votre hébergement, désactivez le mode *Maintenance* sur votre site WordPress ou PrestaShop.
 
-Si vous n'avez pas activé cette option ni utilisé le mode *Maintenance*, contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Si vous n'avez pas activé cette option ni utilisé le mode *Maintenance*, contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 ### Que faire si mon site affiche une erreur « Your request has been blocked » ?
 

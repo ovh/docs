@@ -3,14 +3,14 @@ title: 'Configurare il Network Firewall'
 slug: firewall-network
 excerpt: 'Scopri come configurare un Network Firewall'
 section: 'Rete e IP'
-updated: 2022-12-20
+updated: 2023-05-10
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
-**Ultimo aggiornamento: 22/12/2022**
+**Ultimo aggiornamento: 10/05/2023**
 
 ## Obiettivo
 
@@ -29,7 +29,7 @@ Per proteggere la propria infrastruttura e i server dei propri clienti, OVHcloud
 
 ## Prerequisiti
 
-- Disporre di un servizio OVHcloud compatibile con il Network Firewall ([Server Dedicati](https://www.ovhcloud.com/it/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/it/vps/){.external}, [istanze Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external}, [Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/){.external}, ecc.).
+- Disporre di un servizio OVHcloud compatibile con il Network Firewall ([Server Dedicati](https://www.ovhcloud.com/it/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/it/vps/){.external}, [istanze Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external}, [Additional IP](https://www.ovhcloud.com/it/bare-metal/ip/){.external}, ecc.)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 > [!warning]
@@ -43,7 +43,7 @@ Per proteggere la propria infrastruttura e i server dei propri clienti, OVHcloud
 
 > [!primary]
 >
-> Il Network Firewall protegge gli IP associati a una macchina. Non è quindi possibile effettuare una configurazione globale del server, ma sarà necessario eseguirne una per ciascun IP separatamente.
+> Il Network Firewall protegge l'indirizzo IP associato a un server. Pertanto, se hai un server con più indirizzi IP, devi configurare ciascun IP separatamente. Una configurazione globale del server non è possibile.
 > 
 
 Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al menu `Bare Metal Cloud`{.action} e apri `IP`{.action}. 
@@ -68,7 +68,7 @@ A questo punto è possibile attivare e configurare il firewall cliccando di nuov
 
 > [!warning]
 >
-> Il firewall si attiva automaticamente ogni volta che viene rilevato un DDoS e non è possibile disattivarlo fino a quando l’attacco non è terminato: è quindi importante che queste regole siano sempre aggiornate.
+> Se il Network Firewall è configurato con regole, queste regole vengono applicate automaticamente a ogni attacco DDoS. Il Firewall non può essere disattivato prima della fine dell'attacco ed è quindi importante mantenere aggiornate le regole del firewall.
 > Di default non sono presenti regole e tutte le connessioni sono autorizzate.
 > Nel caso in cui siano già state configurate, ti consigliamo di controllarle regolarmente anche se le hai disattivate.
 > 
@@ -127,23 +127,23 @@ Un pacchetto destinato alla porta 80/TCP, ad esempio, verrà catturato dalla reg
 
 ### Mitigazione
 
-Esistono tre modalità di mitigazione: automatico, permanente o forzata.
+La nostra soluzione anti-DDoS (VAC) comprende tre modalità di mitigazione: automatico, permanente o forzata.
 
-**Mitigazione automatico**: Con questa modalità, il traffico passa attraverso il sistema di mitigazione solo se viene rilevato come "insolito" rispetto al traffico normale normalmente ricevuto dal server.
+**Mitigazione automatico**: di default, tutti gli IP OVHcloud sono sottoposti alla mitigazione automatica.  Con questa modalità, il traffico passa attraverso il sistema di mitigazione solo se viene rilevato come "insolito" rispetto al traffico normale normalmente ricevuto dal server.
 
-**Mitigazione permanente**: Attiva la mitigazione permanente per applicare un primo livello di filtraggio costante attraverso il nostro Shield hardware.<br>
+**Mitigazione permanente**: questa modalità può essere attivata o disattivata dallo Spazio Cliente. Con la mitigazione permanente (se attivata), potrai applicare un primo livello di filtraggio costante attraverso il nostro Shield hardware.<br>
 Tutto il traffico passa sempre attraverso il sistema di mitigazione prima di raggiungere il server. Consigliamo questa modalità per i servizi oggetto di attacchi frequenti.<br>
-Ti ricordiamo che il Network Firewall non deve essere creato/attivato per attivare la mitigazione permanente sul tuo IP.
+Ti ricordiamo che la mitigazione permanente è parte della nostra soluzione anti-DDoS (VAC) e che è possibile attivarla sul tuo IP senza attivare il Network Firewall.
 
 Per attivarlo, clicca sul menu `Bare Metal Cloud`{.action} e apri `IP`{.action}. Poi clicca sui `...`{.action} a destra dell'IPv4 in questione e seleziona `Mitigation: modalità permanente`{.action}.
 
-**Mitigazione forzata**: Questa modalità viene attivata automaticamente non appena viene rilevato un attacco sul server. Una volta attivata, questa modalità non può essere disattivata. Per proteggere la nostra infrastruttura, la protezione sarà attivata per tutta la durata dell'attacco, fino a quando non sarà completamente mitigata.
+**Mitigazione forzata**: questa modalità viene attivata automaticamente non appena viene rilevato un attacco sul server. Una volta attivata sull'infrastruttura anti-DDoS, questa modalità non può essere disattivata. Per proteggere la nostra infrastruttura, la protezione sarà attivata per tutta la durata dell'attacco fino a quando non sarà completamente mitigata.
 
 > [!warning]
 >
-> Se è in corso una mitigazione anti-DDoS, le regole vengono applicate anche se il Network Firewall è stato disabilitato. In caso di disattivazione, quindi, ricordati di eliminare le regole configurate.
+> Se la nostra soluzione anti-DDoS limita un attacco, le regole configurate del tuo Network Firewall finiranno per essere applicate, anche se hai disattivato il Firewall. Per evitare l'applicazione di nessuna regola durante un attacco, è necessario eliminare tutte le regole precedentemente create.
 > 
-> Si noti che la mitigazione anti-DDoS non può essere disattivata.
+> La mitigazione è inclusa nella nostra soluzione anti-DDoS (VAC) e non può essere disattivata su un servizio. Tutti i prodotti OVHcloud sono consegnati con protezione anti-DDoS.
 
 ### Configura il Firewall Armor (Firewall Game)
 

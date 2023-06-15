@@ -1,19 +1,17 @@
 ---
 title: AI Deploy - Facturation et cycle de vie (EN)
 slug: deploy/billing
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/billing/'
 excerpt: Découvrez comment la solution AI Deploy est facturée
 section: AI Deploy - Guides
 order: 06
-updated: 2023-03-07
-routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/billing/'
+updated: 2023-04-04
 ---
 
-**Last updated 7th March, 2023.**
+**Last updated 4th April, 2023.**
 
 > [!primary]
->
-> AI Deploy is in `beta`. During the beta-testing phase, the infrastructure’s availability and data longevity are not guaranteed. Please do not use this service for applications that are in production, as this phase is not complete.
 >
 > AI Deploy is covered by **[OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf)**.
 >
@@ -158,3 +156,6 @@ Total is **15,44 euros**, billed at the end of the month.
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+

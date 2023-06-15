@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: 45d40c12-bb58-4563-843b-a053c60eaa78
 full_slug: overthebox-lan-configuration

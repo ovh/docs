@@ -16,7 +16,7 @@ You'll probably be called upon to check the speed of your disks when you carry o
 
 ## Requirements
 
-- A [Public Cloud Instance]({ovh_www}public-cloud/instances/){.external} in your OVHcloud account
+- A [Public Cloud Instance](https://www.ovhcloud.com/en-ca/public-cloud/compute/){.external} in your OVHcloud account
 - Administrative (root) access to your instance via SSH
 
 ## Instructions
@@ -44,7 +44,7 @@ root@server:~$ fio
 >
 > Please note that you will need to modify the `--numjobs` argument to reflect the number of CPUs that your instance has.
 >
-> You can retrieve a list of arguments and their functions directly from the [fio guide](https://github.com/axboe/fio/blob/master/HOWTO).
+> You can retrieve a list of arguments and their functions directly from the [fio guide](https://github.com/axboe/fio/blob/master/HOWTO.rst).
 >
 
 To test the speed of an additional disk, you will need to mount the disk with the following command: 

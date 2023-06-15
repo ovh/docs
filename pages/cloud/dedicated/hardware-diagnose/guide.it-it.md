@@ -2,19 +2,19 @@
 title: 'Diagnosticare problemi hardware su un server dedicato'
 slug: diagnostica-problemi-hardware-server-dedicato
 excerpt: 'Scopri come utilizzare gli strumenti di diagnostica per identificare malfunzionamenti hardware sul tuo server'
-section: Sicurezza
+section: Diagnostica e modalità Rescue
 updated: 2022-12-15
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 15/12/2022**
 
 ## Obiettivo
 
-Con il passare del tempo, l’usura di un server può causare malfunzionamenti dovuti a problemi di tipo hardware. Per questo motivo, i server dedicati OVH sono dotati di numerosi strumenti di diagnostica che permettono di individuare i componenti hardware difettosi.
+Con il passare del tempo, l’usura di un server può causare malfunzionamenti dovuti a problemi di tipo hardware. Per questo motivo, i server dedicati OVHcloud sono dotati di numerosi strumenti di diagnostica che permettono di individuare i componenti hardware difettosi.
 
 **Questa guida ti mostra come diagnosticare problemi hardware su un server.**
 

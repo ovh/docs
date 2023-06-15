@@ -26,7 +26,7 @@ updated: 2022-12-13
 - access to the [OVHcloud API page](https://api.ovh.com/)
 
 > [!warning]
-> If you have signed up to the **Nutanix on OVHcloud BYOL offer** and have activated licences on your cluster, you will need to uninstall your licences before you launch the redeployment. You can use this guide to manage your licences: [Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](https://docs.ovh.com/ie/en/nutanix/activate-licence-on-nutanix-byol/)
+> If you have signed up to the **Nutanix on OVHcloud BYOL offer** and have activated licences on your cluster, you will need to uninstall your licences before you launch the redeployment. You can use this guide to manage your licences: [Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](https://docs.ovh.com/ie/en/nutanix/activate-licence-on-nutanix-byol/).
 >
 
 ## Introduction to using the private network for a Nutanix Cluster at OVHcloud
@@ -94,7 +94,7 @@ Click `Customise the Configuration`{.action} and click `Next`{.action}
 
 ![00 Redeploy cluster from OVHcloud control panel 03](images/00-cluster-redeployment-through-manager03.png)
 
-Enter the information for each of your nodes, which are :
+Enter the information for each of your nodes, which are:
 
 - the private IP address of your AHV hypervisor.
 - the private IP address of the CVM virtual machine.
@@ -201,8 +201,10 @@ Click `Execute`{.action} to start the cluster redeployment.
 
 ## Go further
 
-[Using the OVHcloud API](https://docs.ovh.com/ie/en/api/).
+[Using the OVHcloud API](https://docs.ovh.com/ie/en/api/)
 
-[Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](https://docs.ovh.com/ie/en/nutanix/activate-licence-on-nutanix-byol/).
+[Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](https://docs.ovh.com/ie/en/nutanix/activate-licence-on-nutanix-byol/)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

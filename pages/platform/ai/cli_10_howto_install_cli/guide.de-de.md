@@ -3,13 +3,13 @@ title: CLI - Installation
 slug: cli/install-client
 excerpt: Learn how to install the CLI to interact with AI Tools
 section: Command Line Interface
-order: 200
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client/'
-updated: 2022-09-01
+order: 200
+updated: 2023-03-31
 ---
 
-**Last updated 1st September, 2022.**
+**Last updated 31st March, 2023.**
 
 ## Objective
 
@@ -41,8 +41,16 @@ You can then choose between two methods to install the `ovhai` CLI.
 
 You can install the `ovhai` CLI with a single command line.
 
+For bash:
+
 ``` {.console}
-curl https://cli.gra.training.ai.cloud.ovh.net/install.sh | bash
+curl https://cli.gra.ai.cloud.ovh.net/install.sh | bash
+```
+
+For zsh:
+
+``` {.console}
+curl https://cli.gra.ai.cloud.ovh.net/install.sh | zsh
 ```
 
 Once done, go to **Step 2**.
@@ -54,7 +62,7 @@ If you encounter any issue with the automated installation you can also install 
 You can also install the cli by following the link below:
 
 ``` {.console}
-https://cli.gra.training.ai.cloud.ovh.net
+https://cli.gra.ai.cloud.ovh.net
 ```
 
 After downloading the right zip for your platform, unzip it and add it to your `PATH`:
@@ -96,3 +104,5 @@ In addition, when performing any action in the **AI Training, AI Notebooks or AI
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.

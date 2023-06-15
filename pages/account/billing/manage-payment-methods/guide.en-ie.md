@@ -3,10 +3,10 @@ title: Managing payment methods
 slug: manage-payment-methods
 excerpt: 'Find out how to add and manage payment methods within the OVHcloud Control Panel'
 section: Billing
-updated: 2022-05-18
+updated: 2023-05-09
 ---
 
-**Last updated 18th May 2022**
+**Last updated 9th May 2023**
 
 ## Objective
 
@@ -38,31 +38,42 @@ This payment method is then used by default for all of your renewals and is offe
 
 You can save other payment methods so that they are suggested when you place new orders and used by default for future payments.
 
-You can save two different payment method types:
+You can save three different payment method types:
 
+- Direct debit
 - Credit card
 - PayPal® account
 
-To do this, simply click `Add a payment method`{.action}.
+To do this, simply click `Add a payment method`{.action} and choose the payment method you want to use:.
 
 ![manage-payment-methods](images/managepaymentmethods2.png){.thumbnail}
 
-Choose the payment method you want to use:
+Follow the steps for saving a payment method. In the first step, you are asked to check the option `I want to choose this as my default payment method as soon as it is validated`{.action}, so that it is used for future orders and automatic payments.
 
-![choose-payment-method-no-sepa](images/choose-payment-method-no-sepa.png){.thumbnail}
+#### Direct Debit
 
-Follow the the steps for saving a payment method. In the first step, you are asked to check the option `I want to choose this as my default payment method as soon as it is validated`{.action}, so that it is used for future orders and automatic payments.
+> [!warning]
+>
+> - The use of direct debit is only possible for Dutch, French, German, Irish, Italian and Spanish customer accounts.
+>
+> - The owner of the bank account must be the same as the owner of the OVHcloud account.
+
+To register a direct debit on your bank account, you will be redirected to an interface where you can register this account and electronically sign your direct debit mandate.
+
+![SEPA payment method](images/sepa.png){.thumbnail}
+
+If your bank is listed by our partner, registration of the bank account will be immediate. Otherwise, a delay of approximately 48 hours may be necessary.
 
 #### Credit card
 
-![credit-card-no-sepa](images/credit-card-no-sepa.png){.thumbnail}
+![credit-card](images/credit-card.png){.thumbnail}
 
 To register a new bank card, you will be redirected to our payment provider's secure interface. A small amount of money is deducted from your bank account to check your card details and their validity.<br>
 No amount will be charged and your credit card will be activated in a few minutes.
 
 #### Paypal account
 
-![paypal_no_sepa](images/paypal_no_sepa.png){.thumbnail}
+![paypal](images/paypal.png){.thumbnail}
 
 Select `PayPal`{.action} as your payment method, then click on the button `PayPal`{.action}. A popup window will then open to log in to your PayPal® account and register it as an authorized payment method with OVHcloud.
 

@@ -4,12 +4,16 @@ slug: creating-volume-snapshot
 excerpt: 'Find out how to create a snapshot of a Public Cloud additional disk'
 section: Storage
 order: 2
-updated: 2023-02-10
+updated: 2023-04-21
 ---
 
-**Last updated 10th February 2023** 
+**Last updated 21st April 2023** 
 
 ## Objective
+
+A **volume snapshot** is a recovery point stored within the same storage cluster as the original volume. Operations will be fast, but in case of an incident on the cluster, both volume and volume snapshot might be unavailable. Volume snapshot creation does not require the volume to be detached from the instance.
+
+This is not to be confused with a **volume backup** which is an image created out of your volume, which is stored in the Object Storage cluster where the original volume is located. The level of resiliency is ideal and will allow you to quickly react to any incident on your volume, creating another volume from the backup. Volume backup creation requires the volume to be detached from the instance. For more information on this option, please consult this [guide](https://docs.ovh.com/au/en/public-cloud/volume-backup/).
 
 A snapshot of an additional volume serves two general purposes:
 
@@ -42,7 +46,7 @@ We therefore recommend that you perform your snapshots outside of your productio
 Other best practices include:
 
 - Avoid creating snapshots during peak hours (04:00 AM - 10:00 PM Paris time).
-- Install the qemu-guest agent if it is not installed... or try to disable it if necessary.
+- Install the qemu-guest agent if it is not installed or try to disable it if necessary.
 - Try not to "solicit" the server too much during the snapshot creation phase (I/O limitation, RAM consumption, etc.).
 
 Since a volume snapshot is a clone of the entire disk, it will have the maximum size of the original volume, regardless of the actual disk space allocation.
@@ -55,6 +59,8 @@ Click on the button `...`{.action} to `Delete`{.action} a snapshot or to `Create
 
 
 ## Go further
+
+[Creating a volume backup](https://docs.ovh.com/au/en/public-cloud/volume-backup/)
 
 [Creating a volume from a backup](https://docs.ovh.com/au/en/public-cloud/create-volume-from-backup/)
 

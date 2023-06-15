@@ -6,11 +6,11 @@ section: 'Diagnóstico e Modo Rescue'
 updated: 2021-01-12
 ---
 
-**Última atualização: 16/12/2020**
-
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
+
+**Última atualização: 16/12/2020**
 
 ## Objetivo
 
@@ -26,7 +26,7 @@ Quando instalar ou reiniciar um sistema operativo Windows, irá receber uma pala
 
 ## Instruções
 
-As etapas seguintes descrevem o processo de modificação da palavra-passe admin local através do modo rescue OVHcloud (baseado em Linux) que está disponível a qualquer momento. Se preferir utilizar o Windows PE (WinRescue), consulte o método dedicado [no fim deste guia](./#reinicializacao-da-password-admin-com-o-auxilio-de-winrescue_1).
+As etapas seguintes descrevem o processo de modificação da palavra-passe admin local através do modo rescue OVHcloud (baseado em Linux) que está disponível a qualquer momento. Se preferir utilizar o Windows PE (WinRescue), consulte o método dedicado [no fim deste guia](./#reinicializacao-da-password-admin-com-o-auxilio-de-winrescue).
 
 ### 1 - reiniciar o servidor em modo rescue
 
@@ -231,7 +231,7 @@ Write hive files? (y/n) [n] : y
 
 ### 4 - Reiniciar o servidor 
 
-Comece por substituir o netboot por **Fazer boot no disco rígido** na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) (ver [Etapa 1](./#1-reiniciar-o-servidor-em-modo-rescue_1)). 
+Comece por substituir o netboot por **Fazer boot no disco rígido** na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) (ver [Etapa 1](./#1-reiniciar-o-servidor-em-modo-rescue)). 
 
 De volta à linha de comandos, desmonte a partição e reinicie o servidor com os seguintes comandos:
 
@@ -247,7 +247,7 @@ The system is going down for reboot NOW!
 
 ### 5 - definir uma nova password (IPMI)
 
-Na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda ao separador `IPMI`{.action} para abrir uma sessão KVM.
+Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda ao separador `IPMI`{.action} para abrir uma sessão KVM.
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
@@ -289,7 +289,7 @@ Recomenda-se a utilização do teclado virtual para introduzir palavras-passe ne
 
 #### 1 - reiniciar o servidor em modo rescue
 
-O sistema deve ser ativado em modo rescue antes de poder alterar a palavra-passe admin. Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Bare Metal Cloud`{.action} e selecione o seu servidor de `Servidores dedicados`{.action}.
+O sistema deve ser ativado em modo rescue antes de poder alterar a palavra-passe admin. Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Bare Metal Cloud`{.action} e selecione o seu servidor de `Servidores dedicados`{.action}.
 
 O netboot deve ser migrado para "WinRescue System for Windows". Procure "Boot" na zona **Informações gerais** e clique em `...`{.action} e depois em `Alterar`{.action}.
 <br>Na página seguinte, selecione **Fazer boot em modo rescue** e escolha "WinRescue" no menu. Indique um endereço de e-mail no último campo se os dados de acesso tiverem de ser enviados para um endereço diferente do endereço principal da sua conta OVHcloud. 
@@ -331,7 +331,7 @@ O servidor deve ser reiniciado.
 
 #### Etapa 3: reiniciar o servidor 
 
-Comece por substituir o netboot por **Fazer boot no disco rígido** na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) (ver [Etapa 1](./#1-reiniciar-o-servidor-em-modo-rescue_1)). 
+Comece por substituir o netboot por **Fazer boot no disco rígido** na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) (ver [Etapa 1](./#1-reiniciar-o-servidor-em-modo-rescue)). 
 
 De volta à janela KVM, selecione a opção de paragem `Reiniciar`{.action} através do botão Windows "Iniciar" no canto inferior esquerdo.
 

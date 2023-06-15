@@ -62,7 +62,7 @@ Nommez votre conteneur, puis cliquez sur `Create the container`{.action} :
 
 > [!warning]
 >
-> Si vous souhaitez lier votre conteneur à un nom de domaine, le nom de votre conteneur de doit pas contenir les caractères suivants :
+> Si vous souhaitez lier votre conteneur à un nom de domaine, le nom de votre conteneur ne doit pas contenir les caractères suivants :
 >
 > - [ . ]  
 > - [ _ ]  
@@ -96,7 +96,7 @@ Nommez votre conteneur.
 
 > [!warning]
 >
-> Si vous souhaitez lier votre conteneur à un nom de domaine, le nom de votre conteneur de doit pas contenir les caractères suivants :
+> Si vous souhaitez lier votre conteneur à un nom de domaine, le nom de votre conteneur ne doit pas contenir les caractères suivants :
 >
 > - [ . ]  
 > - [ _ ]  

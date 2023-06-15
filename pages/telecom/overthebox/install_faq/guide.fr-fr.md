@@ -7,6 +7,8 @@ section: FAQ
 updated: 2021-05-17
 ---
 
+**Dernière mise à jour le 17/05/2021**
+
 ## FAQ OverTheBox
 
 ### Où puis-trouver des documentations techniques à propos d'OverTheBox ?
@@ -76,7 +78,7 @@ Suivant l'offre souscrite, l'abonnement sera au prix mensuel de 19,99€ jusqu'�
 
 ### Est-il possible de virtualiser OverTheBox ?
 
-Oui, il est possible de virtualiser OverTheBox. Nous ne proposons pas de support pour cet usage. Il vous faudra pour ceci, suivre la même procédure que l'installation sur un materiel personnel, depuis une une machine virtuelle compatible Linux : [Installer l’image OverTheBox sur votre matériel](../installer-limage-overthebox-sur-votre-materiel//){.external}
+Oui, il est possible de virtualiser OverTheBox. Nous ne proposons pas de support pour cet usage. Il vous faudra pour ceci, suivre la même procédure que l'installation sur un materiel personnel, depuis une machine virtuelle compatible Linux : [Installer l’image OverTheBox sur votre matériel](../installer-limage-overthebox-sur-votre-materiel/){.external}
 
 ### Est-il possible de réinitialiser son OverTheBox ?
 

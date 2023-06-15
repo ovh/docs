@@ -4,12 +4,12 @@ slug: iam-policies-api
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
 section: 'Fortgeschrittene Nutzung'
 order: 03
-updated: 2023-03-01
+updated: 2023-05-16
 routes:
     canonical: 'https://docs.ovh.com/gb/en/customer/iam-policies-api/'
 ---
 
-**Last updated 1st March 2023**
+**Last updated 16th May 2023**
 
 > [!warning]
 >
@@ -112,8 +112,8 @@ Items in policies are defined by URNs. These URNs are defined by the following p
 |**Description**|immutable prefix|:|version of the IAM system|:|Plate where the urn is located|:|Type of the current urn|:|(optional) Subtype for **identity** or **resource** type|:|Unique identifier associated to the urn|
 |**Possible values**|urn|:|v1|:|eu, ca, us|:|identity, resource, resourceGroup|:|<p>For **identity** type: account, user, group</p><p>For **resource** type: any resourceType</p>|:|Alphanumerical value|
 |**Account ID Example**|urn|:|v1|:|eu|:|identity|:|account|:|xx1111-ovh|
-|**User group Example**|urn|:|v1|:|eu|;|identity|:|group|:|xx1111-ovh/admin@mycompany.com|
-|**VPS Example**|urn|:|v1|:|ca|:|resource|:|vps|:|b96ffed4-3467-4129-b8be-39a3eb3a0a93|
+|**User group Example**|urn|:|v1|:|eu|:|identity|:|group|:|xx1111-ovh/admin@mycompany.com|
+|**VPS Example**|urn|:|v1|:|ca|:|resource|:|vps|:|vps-5b48d78b.vps.ovh.net|
 |**Resource Group Example**|urn|:|v1|:|us|:|resourceGroup|||:|aa0713ab-ed13-4f1a-89a5-32aa0cb936d8|
 
 #### Policy attributes
@@ -161,7 +161,7 @@ For example, create a policy to authorise a user named "*user1*" to do some acti
     },
     "resources": [
         {
-            "urn": "urn:v1:eu:resource:vps:b96ffed4-3467-4129-b8be-39a3eb3a0a93"
+            "urn": "urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net"
         }
     ]
 }
@@ -211,7 +211,7 @@ Check it via `GET /iam/policy`:
         ],
         "resources": [
             {
-                "urn": "urn:v1:eu:resource:vps:b96ffed4-3467-4129-b8be-39a3eb3a0a93"
+                "urn": "urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net"
             }
         ],
         "permissions": {
@@ -229,7 +229,7 @@ Check it via `GET /iam/policy`:
 ]
 ```
 
-The policy has been created successfully. Now, "***user1***" can **carry out reboots and create snapshots** on the VPS "***urn:v1:eu:resource:vps:b96ffed4-3467-4129-b8be-39a3eb3a0a93***".
+The policy has been created successfully. Now, "***user1***" can **carry out reboots and create snapshots** on the VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***".
 
 ### Identities
 
@@ -312,7 +312,7 @@ To create a new user group, call the API route with the following body:
 }
 ```
 
-For more information, refer to the [documentation for user management](https://docs.ovh.com/de/customer/managing-users/).
+For more information, refer to the [documentation for user management](https://docs.ovh.com/de/customer/benutzer-verwalten/).
 
 #### With SSO connection enabled
 
@@ -343,7 +343,7 @@ See all the resources linked to the OVHcloud account by calling:
 [
   {
     "id": "b96ffed4-3467-4129-b8be-39a3eb3a0a93",
-    "urn": "urn:v1:eu:resource:vps:b96ffed4-3467-4129-b8be-39a3eb3a0a93",
+    "urn": "urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net",
     "name": "vps-5b48d78b.vps.ovh.net",
     "displayName": "vps-5b48d78b.vps.ovh.net",
     "type": "vps",
@@ -351,7 +351,7 @@ See all the resources linked to the OVHcloud account by calling:
   },
   {
     "id": "c24ace5e-6c9c-436b-9a73-515db8df6250",
-    "urn": "urn:v1:eu:resource:emailDomain:c24ace5e-6c9c-436b-9a73-515db8df6250",
+    "urn": "urn:v1:eu:resource:emailDomain:acme.com",
     "name": "acme.com",
     "displayName": "acme.com",
     "type": "emailDomain",
@@ -359,7 +359,7 @@ See all the resources linked to the OVHcloud account by calling:
   },
   {
     "id": "8d70a49b-7a8b-4ec0-ad4b-756da802d994",
-    "urn": "urn:v1:eu:resource:cdn:8d70a49b-7a8b-4ec0-ad4b-756da802d994",
+    "urn": "urn:v1:eu:resource:cdn:cdn-46.105.198.89-12969",
     "name": "cdn-46.105.198.89-12969",
     "displayName": "cdn-46.105.198.89-12969",
     "type": "cdn",

@@ -6,10 +6,10 @@ section: PostgreSQL - Guides
 order: 800
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/concept-high-availability/'
-updated: 2022-05-27
+updated: 2023-03-21
 ---
 
-**Last updated 27<sup>th</sup> May 2022**
+**Last updated March 21<sup>st</sup>, 2023**
 
 ## Objective
 
@@ -106,13 +106,10 @@ No intervention is required from the customer.
 
 OVHcloud also detects when a whole datacenter is lost. As a user, your cluster will still be visible in API and Control Panel.
 
-As of writing, **automatic backups are stored in the same datacenter location**. In case of Datacenter failure, OVHcloud cannot perform a restoration process.
-A restoration process can be launched manually by the customer if manual backups (pg_dump) are available. It will require the creation of a new cluster, configuring users, authorized IPs, ...
+ Automatic backups are first performed on-site (i.e. in the same region as the service), then replicated off-site, to another datacenter.
 
-We plan to provide backups storage in another location during the 2022 calendar year.
-If the automatic backups are stored in another datacenter location, it will be possible from API or UI to restore a previously made automatic backup. You will be able to select the right one and restore it in the datacenter of your choice.
-It's a manual intervention, that will also create a new Service URI. You will need to modify all the applications that were using the previous (and now unavailable) Service URI.
-
+In case of a Datacenter failure, the recovery strategy involves creating a new service in another region, either using the fork (from the backup feature) from an automatic backup that was replicated off-site, or restoring from backups performed manually (e.g. `pg_restore` as previously performed `pg_dump`).
+You will then need to configure the freshly created service (e.g. adding users, IP restrictions, ..) and reconfigure applications consuming the database service to use new services URIs and credentials.
 In both cases the Recovery Time Objective will vary, depending of multiples parameters such as the amount of data to restore, network congestion and latency or node performances. It can go from a few hours up to a few days.
 
 ### Scenarios for Highly available Business and Enterprise service plans
@@ -156,17 +153,16 @@ No intervention is required from the customer.
 
 OVHcloud also detects when a whole datacenter is lost. As a user, your cluster will still be visible in API and Control Panel.
 
-As of writing, **automatic backups are stored in the same datacenter location**. In case of Datacenter failure, OVHcloud cannot perform a restoration process.
-A restoration process can be launched manually by the customer if manual backups (pg_dump) are available. It will require the creation of a new cluster, configuring users, authorized IPs, ...
+ Automatic backups are first performed on-site (i.e. in the same region as the service), then replicated off-site, to another datacenter.
 
-We plan to provide backups storage in another location during the 2022 calendar year.
-If the automatic backups are stored in another datacenter location, it will be possible from API or UI to restore a previously made automatic backup. You will be able to select the right one and restore it in the datacenter of your choice.
-It's a manual intervention, that will also create a new Service URI. You will need to modify all the applications that were using the previous (and now unavailable) Service URI.
-
+In case of a Datacenter failure, the recovery strategy involves creating a new service in another region, either using the fork (from the backup feature) from an automatic backup that was replicated off-site, or restoring from backups performed manually (e.g. `pg_restore` as previously performed `pg_dump`).
+You will then need to configure the freshly created service (e.g. adding users, IP restrictions, ..) and reconfigure applications consuming the database service to use new services URIs and credentials.
 In both cases the Recovery Time Objective will vary, depending of multiples parameters such as the amount of data to restore, network congestion and latency or node performances. It can go from a few hours up to a few days.
 
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

@@ -60,7 +60,7 @@ $ ssh-keygen -t ecdsa -a 256
 
 La commande vous invite à enregistrer la nouvelle clé dans le fichier standard :
 
-```bash
+```console
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
@@ -69,7 +69,7 @@ Vous pouvez accepter le fichier par défaut en appuyant sur « ↩ ». Vous pouv
 
 Vos clés SSH doivent être stockées dans le répertoire « .ssh ». L'extension « .pub » sera ajoutée au nom du fichier de clé publique.
 
-```ssh
+```console
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:
@@ -131,7 +131,7 @@ La clé est prête lorsque la barre de progression est pleine.
 
 ![clé de sauvegarde](images/puttygen_03a.png){.thumbnail}
 
-Vous pouvez sélectionner et copier la clé publique à partir de cette fenêtre pour l'enregistrer dans votre espace client OVHcloud à [l'étape 2](./#etape-2-stocker-les-cles-publiques-dans-lespace-client-ovhcloud_1).
+Vous pouvez sélectionner et copier la clé publique à partir de cette fenêtre pour l'enregistrer dans votre espace client OVHcloud à [l'étape 2](./#etape-2-stocker-les-cles-publiques-dans-lespace-client-ovhcloud).
 
 Enregistrez les deux clés dans des fichiers et utilisez l'option pour entrer une phrase secrète (passphrase). Étant donné que seule la clé privée correspondante sera requise pour accéder à votre instance Public Cloud depuis votre poste de travail, des mesures de sécurité appropriées doivent être appliquées à ce stade. La passphrase doit être entrée lorsqu'une connexion à l'instance est établie.
 
@@ -191,7 +191,7 @@ Notez que vous pouvez mettre à niveau votre instance ultérieurement, mais vous
 Si vous choisissez un système d'exploitation nécessitant une licence payante, son coût sera automatiquement inclus dans la facturation mensuelle ou horaire.
 >
 
-Cette étape nécessite également l'ajout d'une clé SSH (sauf instances Windows), soit en ajoutant la clé directement via `Ajouter une clé`{.action}, soit en la sélectionnant dans la liste, à condition que vous l'ayez stockée dans votre espace client OVHcloud à [l'étape 2](./#etape-2-stocker-les-cles-publiques-dans-lespace-client-ovhcloud_1).
+Cette étape nécessite également l'ajout d'une clé SSH (sauf instances Windows), soit en ajoutant la clé directement via `Ajouter une clé`{.action}, soit en la sélectionnant dans la liste, à condition que vous l'ayez stockée dans votre espace client OVHcloud à [l'étape 2](./#etape-2-stocker-les-cles-publiques-dans-lespace-client-ovhcloud).
 
 ![key select](images/instance-creation-03-2022.png){.thumbnail}
 
@@ -328,7 +328,7 @@ Utilisez Windows Search si nécessaire et ouvrez l'application cliente native "C
 
 ![windows remote](images/windows-connect-03.png){.thumbnail}
 
-Entrez l'adresse IPv4 de votre instance et "Administrateur" en tant qu'utilisateur, puis tapez votre mot de passe. Habituellement, un message d'avertissement s'affiche, vous demandant de confirmer la connexion en raison d'un certificat inconnu. Cliquez sur `Oui`{.action} pour vous connecter à l'instance.
+Entrez l'adresse IPv4 de votre instance et "Administrator" en tant qu'utilisateur, puis tapez votre mot de passe. Habituellement, un message d'avertissement s'affiche, vous demandant de confirmer la connexion en raison d'un certificat inconnu. Cliquez sur `Oui`{.action} pour vous connecter à l'instance.
 
 > [!primary]
 >

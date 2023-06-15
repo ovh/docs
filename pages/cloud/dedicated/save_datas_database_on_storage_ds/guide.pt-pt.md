@@ -3,8 +3,10 @@ title: 'Fazer o backup das informações e das bases de dados para um servidor d
 slug: backup-informacoes-bases-de-dados-servidor-armazenamento
 excerpt: 'Proteger dados em 5 passos'
 section: Tutoriais
-updated: 2022-02-09
+updated: 2018-09-12
 ---
+
+**Última atualização: 12/09/2018**
 
 ## Introdução 
 
@@ -27,8 +29,7 @@ Neste tutorial, ficará a saber como configurar um servidor de armazenamento da 
 
 ### O que precisa de ter
 
-- Um [servidor de armazenamento OVHcloud](https://www.ovhcloud.com/pt/bare-metal/storage/)
-){.external}.
+- Um [servidor de armazenamento OVHcloud](https://www.ovhcloud.com/pt/bare-metal/storage/){.external}.
 - Uma infraestrutura de produção ([VPS](https://www.ovhcloud.com/pt/vps/){.external}, [servidores dedicados](https://www.ovhcloud.com/pt/bare-metal/){.external}, [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external}, etc.).
 - Um acesso SSH configurado entre o servidor de armazenamento e a infraestrutura de produção.
 - Recomendação: uma rede privada entre os servidores ([vRack OVHcloud](https://www.ovh.pt/solucoes/vrack/){.external}).
@@ -72,7 +73,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 Depois de selecionar o sistema para a instalação, selecione a opção `Personalizar a configuração das partições`{.action}.
 
-![Personalizar a configuração das partições](images/partition_customization.png){.thumbnail}
+![Personalizar a configuração das partições](images/custompartition.png){.thumbnail}
 
 Neste passo, vai poder modificar o tipo de RAID do seu `/home` (1) e, caso o pretenda, expandir a partição (2).
 

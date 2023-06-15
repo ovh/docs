@@ -6,6 +6,7 @@ section: RAID and disks
 updated: 2022-11-16
 ---
 
+**Last updated 16th November 2022**
 
 ## Requirements
 Hot swapping is only possible on the server ranges mHG, HG, and bHG.
@@ -85,7 +86,7 @@ This information is found in the disc listing, performed in the previous step.
 We now know the Enclosure ID, the Slot ID, and the Serial Number of the drive to be replaced.
 
 
-### Step 2&#58; Turn on a disc
+### Step 2&#58; Turn on a disk
 To allow the technician to replace your drive with heater, the HS drive must be switched on (flashing).
 
 In our example, we have Enclosure ID **252**, Slot ID **0**, and Serial Number **BTWH509602CV800CGN** to be replaced.
@@ -108,7 +109,7 @@ The command to flash the disk is as follows: MegaCli -PdLocate -start -physdrv [
 
 To turn the disc off after the operation, simply replace the "start" with "stop" in the above commands.
 
-At this point, the procedure is ready to be performed. You can then provide the previously collected information to the support team and indicate that the disc is turned on.
+At this point, the procedure is ready to be performed. You can then provide the previously collected information to the support team and indicate that the disk is turned on.
 
 
 ### Step 3&#58; Check the rebuilding
@@ -208,7 +209,7 @@ We go to the Logical tab, and we get to this.
 
 On this screen, a lot of information is present.
 
-We see, on the left, the logical view of our RAID. Here we have a RAID 10 (id0) in optimal state. It consists of two clusters of 2 discs.
+We see, on the left, the logical view of our RAID. Here we have a RAID 10 (id0) in optimal state. It consists of two clusters of 2 disks.
 
 We can see that our **Slot Number 1** drive is in the 1st cluster. On the right side of the screen, we retrieve the information we need (**Enclosure / Slot / Serial**).
 
@@ -217,8 +218,8 @@ So our disk has for **Enclosure ID 252**, **Slot Number 1**, and **Serial Number
 From now on, we will be able to light (physically flash) the disk to be replaced for replacement by a Datacenter technician.
 
 
-### Step 3 &#58; Turn on a disc
-With the MegaRAID Storage Manager it will be very easy to turn on the LED of the dicus to be replaced.
+### Step 3 &#58; Turn on a disk
+With the MegaRAID Storage Manager it will be very easy to turn on the LED of the disk to be replaced.
 
 
 
@@ -323,7 +324,7 @@ At first, we will list the disks present on the server while being able to recov
 We have therefore recovered the ID of our HS **Slot Number 1** which is **Device ID 7**, and its **Enclosure ID 252**.
 
 
-### Step 3 &#58; Turn on a disc
+### Step 3 &#58; Turn on a disk
 To perform the replacement operation, the HS drive must be switched on (flashing).
 
 

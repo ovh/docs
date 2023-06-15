@@ -3,10 +3,14 @@ title: 'Veeam Backup & Replication einrichten'
 slug: veeam/veeam-backup-replication
 excerpt: 'Erfahren Sie hier, wie Sie einen Veeam Backup & Replication Server mit Veeam Enterprise installieren'
 section: Veeam
-updated: 2022-03-07
+updated: 2023-04-28
 ---
 
-**Letzte Aktualisierung am 08.03.2022**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 28.04.2023**
 
 ## Ziel
 
@@ -23,6 +27,11 @@ Veeam Backup & Replication ist eine Software zur Datensicherung. Sie bietet zahl
 ## In der praktischen Anwendung
 
 ### Veeam Backup & Replication installieren
+
+> [!primary]
+> Die aktuellste Version von Veeam Backup & Replication (Version 12) ist derzeit noch nicht bei OVHcloud unterstützt, das entsprechende Upgrade wird jedoch [demnächst durchgeführt](https://github.com/ovh/private-cloud-provider/projects/4).
+> Wir empfehlen den Download von Version 11.0.1.1261 (P20230227). Die älteren Versionen von Veeam finden Sie auf [dieser Seite](https://www.veeam.com/de/download-version.html?ad=downloads&tab=previous).
+>
 
 Laden Sie **Veeam Backup & Replication** über die Website von [Veeam herunter](https://www.veeam.com/downloads.html?ad=top-sub-menu){.external}. Sollten Sie bei Veeam noch nicht als Benutzer registriert sein, erstellen Sie zunächst einen kostenlosen Kunden-Account.
 

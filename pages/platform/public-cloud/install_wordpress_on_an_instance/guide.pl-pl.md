@@ -3,11 +3,11 @@ title: Zainstaluj moduł WordPress w instancji
 excerpt: Dowiedz się, jak korzystać z instancji Public Cloud do hostowania stron WordPress
 slug: instalacja_modulu_wordpress_na_instancji
 section: Tutoriale
-updated: 2021-10-15
+updated: 2023-05-17
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
 
 **Ostatnia aktualizacja z dnia 15-10-2021**
@@ -94,26 +94,26 @@ Change the root password? [Y/n]
 
 Poniższe zaproszenia dotyczące środków bezpieczeństwa, potwierdź je wszystkie za pomocą `y`{.action} do końca skryptu.
 
-Jeśli skonfigurowałeś dostęp MariaDB w zalecany sposób (*unix_socket*), możesz uzyskać do niego automatyczny dostęp root za każdym razem, gdy jesteś zalogowany do instancji jako użytkownik z dużymi uprawnieniami.
+Jeśli skonfigurowałeś dostęp MariaDB w zalecany sposób (*unix_socket*), możesz mieć do niego dostęp automatycznie (*root*) za każdym razem, gdy jesteś podłączony do serwera jako użytkownik z dużymi prawami (*sudo*).
 
 Otwórz powłokę MariaDB:
 
 ```bash
 debian@instance:~$ sudo mariadb
 ```
-```mysql
+```sql
 MariaDB [(none)]> 
 ```
 
 Utwórz bazę danych dla WordPress:
 
-```mysql
+```sql
 MariaDB [(none)]> CREATE DATABASE wordpress;
 ```
 
 Następnie nadaj nowemu użytkownikowi "wordpress" wszystkie uprawnienia do korzystania z tej bazy danych. Użytkownik ten będzie miał dostęp do bazy danych i wykonywać wszystkie operacje dla CMS WordPress. Zastąp `your_password` silnym hasłem dla tego użytkownika.
 
-```mysql
+```sql
 MariaDB [(none)]> GRANT ALL ON wordpress.* TO 'wordpress'@'localhost' IDENTIFIED BY 'your_password' WITH GRANT OPTION;
 ```
 
@@ -124,10 +124,10 @@ MariaDB [(none)]> GRANT ALL ON wordpress.* TO 'wordpress'@'localhost' IDENTIFIED
 
 Baza danych jest teraz gotowa do użycia z WordPress. Upewnij się, że zmiany są stosowane w kolejnych krokach, a następnie opuść powłokę MariaDB:
 
-```mysql
+```sql
 MariaDB [(none)]> FLUSH PRIVILEGES;
 ```
-```mysql
+```sql
 MariaDB [(none)]> exit;
 ```
 
@@ -151,7 +151,7 @@ debian@instance:~$ sudo ufw app list | grep WWW
 
 Wybierając "WWW Full", dozwolone będą bezpieczne połączenia (port 443) i zapytania http (port 80) do serwera www.
 
-Aby zobaczyć, które porty mają wpływ na określony profil, wprowadź ```sudo ufw app info "profil"```.
+Aby zobaczyć, które porty mają wpływ na określony profil, wprowadź `sudo ufw app info "profil"`.
 
 Za pomocą poniższego polecenia zostaną otwarte porty zdefiniowane przez profil "WWW Full":
 
@@ -159,20 +159,20 @@ Za pomocą poniższego polecenia zostaną otwarte porty zdefiniowane przez profi
 debian@instance:~$ sudo ufw allow 'WWW Full'
 ```
 
-Ponieważ wszystkie nieautoryzowane porty zostaną zablokowane po aktywacji firewalla, upewnij się, że zezwalasz również na połączenia SSH (port 22):
+Ponieważ wszystkie nieautoryzowane porty zostaną **zablokowane** po aktywacji firewalla, upewnij się, że zezwalasz również na połączenia SSH (port 22 w konfiguracji domyślnej):
 
 ```bash
 debian@instance:~$ sudo ufw allow 'SSH'
 ```
 
-Sprawdź konfigurację i aktywuj reguły firewalla:
-
-```bash
-debian@instance:~$ sudo ufw status
-```
+Włącz reguły firewalla i sprawdź konfigurację:
 
 ```bash
 debian@instance:~$ sudo ufw enable
+```
+
+```bash
+debian@instance:~$ sudo ufw status
 ```
 
 Możesz pójść o krok dalej z UFW, na przykład, jeśli chcesz ograniczyć ataki "*denial of service*" (DOS) lub zapobiec zapytania przez niektóre zakresy adresów IP. Zapoznaj się z oficjalną dokumentacją UFW.
@@ -240,11 +240,17 @@ Po zatwierdzeniu będziesz mógł zalogować się do panelu administracyjnego Tw
 > [!primary]
 >
 > Aby zbudować bezpieczne połączenia (`https`), serwer www musi być zabezpieczony za pośrednictwem Organu Certyfikacyjnego, takiego jak [Let's Encrypt](https://letsencrypt.org/){.external}, który oferuje bezpłatne certyfikaty. Należy zainstalować narzędzie klienta (takie jak "Certbot") i skonfigurować Apache. W przeciwnym razie Twoja strona WWW będzie mogła przyjmować tylko zapytania `http`.
->
+> 
+> OVHcloud oferuje również rozwiązanie [SSL Gateway](https://www.ovh.pl/ssl-gateway/). Więcej informacji znajdziesz w [dokumentacji](/pages/web/ssl-gateway/order-ssl-gateway).
+> 
 
 ### Etap 6 (opcjonalnie): aktywuj bezpieczne połączenia z Let's Encrypt
 
 Sprawdź najpierw, czy Twoja domena posiada dobre rekordy w strefie DNS, czyli wskazuje na adres IP Twojej instancji.
+
+> [!warning]
+> Poniższe polecenie wprowadza działającą wersję Certbot (*certbot 1.12.0*). Aby zainstalować najnowszą wersję, należy użyć dodatkowego *snappy* managera pakietów. Instrukcje instalacji znajdują się na [stronie Certbot](https://certbot.eff.org/instructions?ws=apache&os=debianbuster).
+>
 
 Zainstaluj pakiety niezbędne dla klienta Certbot:
 
@@ -252,10 +258,10 @@ Zainstaluj pakiety niezbędne dla klienta Certbot:
 debian@instance:~$ sudo apt install certbot python3-certbot-apache
 ```
 
-Uzyskaj certyfikat domeny. (Możesz włączyć subdomenę "www" dodając `-d www.yourdomainname.ovh`.)
+Uzyskaj certyfikat dla domeny i subdomeny "www":
 
 ```bash
-debian@instance:~$ sudo certbot --apache -d yourdomainname.ovh
+debian@instance:~$ sudo certbot --apache -d domainname.ovh -d www.domainname.ovh
 ```
 
 Wprowadź poprawny adres e-mail i zaakceptuj warunki korzystania z usługi.

@@ -6,10 +6,10 @@ section: General guides to start
 order: 020
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/s3/getting-started-with-cli/'
-updated: 2022-09-27
+updated: 2023-04-28
 ---
 
-**Last updated September 27<sup>th</sup> 2022**
+**Last updated April 28<sup>th</sup> 2023**
 
 ## Objective
 
@@ -19,7 +19,7 @@ This guide is designed to familiarise you with the management of your containers
 
 - A [Public Cloud project](https://docs.ovh.com/pl/public-cloud/create_a_public_cloud_project/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- An [S3 user](https://docs.ovh.com/pl/storage/s3/identity-and-access-management/) already created
+- An [S3 user](/pages/cloud/storage/object_storage/s3_identity_and_access_management) already created
 
 ## Instructions
 
@@ -87,11 +87,13 @@ Here are the configuration values that you can specifically set:
 | max_bandwidth | Integer | **Default:** None | The maximum bandwidth that will be used to load and download data to and from your buckets. |
 | verify_ssl | Boolean | **Default:** true | Enable / Disable SSL certificate verification |
 
+For a list of endpoints by region and storage class, refer to [this page](/pages/cloud/storage/object_storage/s3_location).
+
 #### Usage
 
 > [!primary]
 >
-> If you have not installed `awscli-plugin-endpoint`, you must add `--endpoint-url https://s3.<region_in_lowercase>.perf.cloud.ovh.net` to the command line.
+> If you have not installed `awscli-plugin-endpoint`, you must add `--endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net` to the command line.
 >
 
 > [!primary]
@@ -103,7 +105,7 @@ Here are the configuration values that you can specifically set:
 
 ```bash
 aws s3 mb s3://<bucket_name>
-aws --endpoint-url https://s3.<region_in_lowercase>.perf.cloud.ovh.net --profile default s3 mb s3://<bucket_name>
+aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3 mb s3://<bucket_name>
 ```
 
 **Listing your buckets**
@@ -213,5 +215,7 @@ aws s3api s3api delete-object-tagging --bucket <bucket_name> --key test1
 ```
 
 ## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

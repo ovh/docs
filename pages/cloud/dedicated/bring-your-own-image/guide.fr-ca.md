@@ -53,7 +53,7 @@ Si votre serveur dispose d'un boot **uefi**, il vous faudra impérativement pré
 
 Depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), dans la section `Bare Metal Cloud`{.action}, puis `Serveurs Dédiés`{.action}, sélectionnez votre serveur.
 
-Dans le cadre `Informations générales`, cliquez sur le bouton `...`{.action} devant `Informations générales`. Cliquez enfin sur `Installer`{.action}.
+Dans le cadre `Informations générales`, cliquez sur le bouton `...`{.action} à côté de "Système (OS)", puis cliquez sur `Installer`{.action}.
 
 ![bring your ownimage](images/byoi-controlpanel01.png){.thumbnail}
 
@@ -65,13 +65,13 @@ Vous serez redirigé vers la page de configuration. Assurez-vous que l'URL de vo
 
 Retrouvez le détail des options dans la partie [« Tableaux des options »](#options) de ce guide.
 
-Concernant l'activation de `ConfigDrive`, retrouver la documentation sur [cette page](https://cloudinit.readthedocs.io/en/latest/topics/datasources/configdrive.html).
+Concernant l'activation de `ConfigDrive`, retrouver la documentation sur [cette page](https://cloudinit.readthedocs.io/en/22.1_a/topics/datasources/configdrive.html).
 
 ![bring your ownimage](images/byoi-controlpanel03.png){.thumbnail}
 
 ### Déployer votre image depuis les API <a name="viaapi"></a>
 
-Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/){.external} puis rendez-vous dans la section `dedicated/server`{.action}. Le champ `Filter` vous permettra de rechercher « BringYourOwnImage ».
+Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/){.external} puis rendez-vous dans la section `/dedicated/server`{.action}. Le champ `Filter` vous permettra de rechercher « BringYourOwnImage ».
 
 Vous disposez de trois appels API liés à la fonctionnalité BringYourOwnImage.
 

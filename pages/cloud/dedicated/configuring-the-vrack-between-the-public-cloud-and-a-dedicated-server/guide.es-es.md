@@ -71,7 +71,7 @@ Si necesita ayuda, consulte la guía [Crear una instancia de Public Cloud](https
 
 #### Caso de una instancia ya existente
 
-Es posible asociar una instancia existente a una red privada. Para más información, puede consultar [esta sección](https://docs.ovh.com/es/public-cloud/public-cloud-vrack/#caso-de-una-instancia-ya-existente_2) de la guía correspondiente.
+Es posible asociar una instancia existente a una red privada. Para más información, puede consultar [esta sección](https://docs.ovh.com/es/public-cloud/public-cloud-vrack/#caso-de-una-instancia-ya-existente) de la guía correspondiente.
 
 ### Crear un VLAN ID
 
@@ -79,7 +79,7 @@ Para que los dos servicios puedan comunicarse entre sí, deben estar « etiqueta
 
 #### Uso de la VLAN ID por defecto
 
-En los servidores dedicados, por defecto está en la VLAN **0**. Si quiere utilizar este ID, deberá « etiquetar » la red privada asociada a su instancia con la VLAN **0**. Para ello, debe pasar por la [API de OVHcloud (EN)](https://docs.ovh.com/es/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1).
+En los servidores dedicados, por defecto está en la VLAN **0**. Si quiere utilizar este ID, deberá « etiquetar » la red privada asociada a su instancia con la VLAN **0**. Para ello, debe pasar por la [API de OVHcloud (EN)](https://docs.ovh.com/es/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack).
 
 
 > [!primary]

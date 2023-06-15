@@ -21,7 +21,7 @@ Ce guide vous présente l'ensemble des outils d'administration, autres que les i
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
-> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à l'équipe [Professional Services OVHcloud](https://www.ovhcloud.com/fr-ca/professional-services/) ou à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
 ## Prérequis
@@ -71,7 +71,7 @@ Connectez-vous en SSH avec un client SSH sur une des **CVM** :
 ssh nutanix@oneofcvm
 ```
 
-La commande ncli s'utilise suivie d'options, comme ici ```ncli entitée action option1="valeur" option2="valeur2``` mais elle est aussi utilisable de manière interactive en exécutant uniquement ```ncli```.
+La commande ncli s'utilise suivie d'options, comme ici ```ncli entité action option1="valeur" option2="valeur2``` mais elle est aussi utilisable de manière interactive en exécutant uniquement ```ncli```.
 
 #### Création d'un Storage Container nommé **newcontainer** en mode interactif
 
@@ -439,7 +439,7 @@ Lancez cette commande pour afficher la liste des réseaux dans Nutanix :
  curl -k -X POST --header "Content-Type: application/json" --header "Accept: application/json" -u "< PRISM CENTRAL USER >:< PRISM CENTRAL PASSWORD >" -d {} "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/subnets/list" | jq
 ```
  
-#### **Affichage des informations sur les clusters administrées la console Prism Central**
+#### **Affichage des informations sur les clusters administrées par la console Prism Central**
 
 Lancez la commande ci-dessous pour afficher les informations sur les clusters administrés par **Prism Central** :
 
@@ -773,5 +773,7 @@ La nouvelle machine virtuelle doit apparaitre dans **Prism Central**, elle est a
 [Installation des CmdLets Nutanix](https://portal.nutanix.com/page/documents/details?targetId=PS-Cmdlets-AOS-v6_0:ps-ps-cmdlets-installv2-r.html) 
 
 [Réferences sur les outils de développements de Nutanix](https://www.nutanix.dev)
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

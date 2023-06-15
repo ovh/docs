@@ -18,15 +18,14 @@ When using private network, you don't have access by default to monitoring tools
 
 **This guide explains how to expose your managed Grafana to internet through the configuration of a NGINX instance in reverse proxy mode.**
 
-Schema concept :
+Schema concept:
 
 ![Schema concept](images/pcdb-expose-grafana-to-internet-20230208211544858.png){.thumbnail}
 
 > [!warning]
+> OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
 >
-> OVHcloud provides services for which you are responsible for their configuration and management. You are therefore responsible for their proper functioning.
->
-> This tutorial is designed to help you as much as possible with common tasks. If you are having difficulty performing these actions, please contact a specialized service provider and/or discuss it with our community of users on <https://community.ovh.com/en/>. OVHcloud can't provide you with technical support in this regard.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialist service provider or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
 >
 
 ## Requirements
@@ -137,5 +136,7 @@ Connect to your https reverse proxy server with your browser (accept the SSL cer
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our databases service!

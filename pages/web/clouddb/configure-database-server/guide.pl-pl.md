@@ -4,14 +4,14 @@ slug: konfiguracja-optymalizacja-serwera-bazy-danych
 excerpt: 'Dowiedz się, jak skonfigurować i zoptymalizować serwer bazy danych'
 section: 'Konfiguracja'
 order: 06
-updated: 2023-02-15
+updated: 2023-04-24
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 15-02-2023**
+**Ostatnia aktualizacja z dnia 24-04-2023**
 
 ## Wprowadzenie
 
@@ -69,7 +69,18 @@ W przypadku hostingu OVHcloud możesz po prostu zaznaczyć opcję `Zezwól hosti
 
 ![cloud databases - bazy danych na instancji](images/web-cloud-databases-add-ip-step3.png){.thumbnail}
 
-### Zmień ofertę Web Cloud Databases
+### Zmień ofertę Web Cloud Databases <a name="modify-ram-web-cloud-db"></a>
+
+> [!warning]
+> 
+> Jeśli Twoja usługa Web Cloud Databases jest powiązana z usługą hostingu www **Performance**, musisz wcześniej odłączyć ofertę Web Cloud Databases od hostingu **Performance**, aby przejść na wyższą ofertę.
+>
+> Aby odłączyć ofertę Web Cloud Databases powiązaną z hostingiem www **Performance**, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`{.action}, a następnie odpowiedni hosting w zakładce `Hosting`{.action}, która pojawi się w kolumnie z lewej strony. 
+>
+> Na nowej stronie `Informacje ogólne`{.action}, która się wyświetla, znajduje się ramka zatytułowana `Konfiguracja`{.action} w centrum strony. Po prawej stronie pozycji `Web Cloud Databases`{.action} kliknij przycisk `...`{.action} a następnie na `Odłącz`{.action}. Wybierz najkrótszy okres odnowienia i postępuj zgodnie z instrukcjami aż do zatwierdzenia zamówienia.
+>
+> **Operacja ta jest nieodwracalna i usługa Web Cloud Databases będzie odpłatna niezależnie od hostingu Performance.**
+>
 
 Aby zmienić ofertę Web Cloud Databases, przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę serwera baz danych.
 W zakładce **"Informacje ogólne"**, która jest wyświetlana domyślnie, kliknij `...`{.action} po prawej stronie słowa "RAM", a następnie `Zmień ilość pamięci RAM`{.action}, aby przejść do zlecenia zamówienia na tą zmianę.

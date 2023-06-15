@@ -4,10 +4,10 @@ slug: proxmox-network-hg-scale
 excerpt: 'Find out how to configure the network on Proxmox VE on the High Grade & SCALE ranges'
 section: 'Advanced use'
 order: 5
-updated: 2023-01-09
+updated: 2023-05-11
 ---
 
-**Last updated 9th January 2023**
+**Last updated 11th May 2023**
 
 > [!primary]
 >
@@ -40,7 +40,7 @@ On the High Grade & SCALE ranges, it is not possible to operate Additional IPs i
 
 ### Additional IP in routed mode on public network interfaces
 
-This configuration offers a better performance in terms of bandwidth, but is less flexible. With this configuration, the Additional IP has to be attached to a dedicated server. If you have multiple Proxmox hosts and want to migrate a VM from one host to another, you must also migrate the Additional IP linked to the VM. This can be done via the OVHcloud control panel or the OVHcloud API (you can automate this task by creating script).
+This configuration offers a better performance in terms of bandwidth, but is less flexible. With this configuration, the Additional IP has to be attached to a dedicated server. If you have multiple Proxmox hosts and want to migrate a VM from one host to another, you must also migrate the Additional IP linked to the VM. This can be done via the OVHcloud Control Panel or the OVHcloud API (you can automate this task by creating a script).
 
 #### Target configuration schema
 
@@ -48,16 +48,16 @@ This configuration offers a better performance in terms of bandwidth, but is les
 
 #### Explanations
 
-Since Proxmox is based on debian distribution, we will update the network configuration file using SSH and not the web-ui.
+Since Proxmox is based on the Debian distribution, we will update the network configuration file using SSH and not the web UI.
 
 You need to:
 
-- administrative access (root) via SSH
-- create an aggregation (linux bond)
-- create a bridge
-- allow forwarding 
-- allow proxy_arp
-- add routes
+- Have administrative access (root) via SSH.
+- Create an aggregation (linux bond).
+- Create a bridge.
+- Allow forwarding.
+- Allow proxy_arp.
+- Add routes.
 
 #### Configure the hypervisor
 
@@ -77,9 +77,10 @@ vi /etc/network/interfaces
 ```bash
 auto lo
 iface lo inet loopback
-  # Enable IP forwarding and proxy-arp
+  # Enable IP forwarding
   up echo "1" > /proc/sys/net/ipv4/ip_forward
-  up echo "1" > /proc/sys/net/ipv4/conf/all/proxy_arp
+  # Enable proxy-arp only for public bond
+  up echo "1" > /proc/sys/net/ipv4/conf/bond0/proxy_arp
 
 # public interface 1
 auto ens33f0
@@ -112,7 +113,7 @@ iface bond0 inet static
 	bond-downdelay 200
 	bond-updelay 200
 	bond-lacp-rate 1
-	bond-xmit-hash-policy layer2+3
+	bond-xmit-hash-policy layer3+4
 	# Use the mac address of the first public interface
 	hwaddress AB:CD:EF:12:34:56
 
@@ -125,7 +126,7 @@ iface bond1 inet static
 	bond-downdelay 200
 	bond-updelay 200
 	bond-lacp-rate 1
-	bond-xmit-hash-policy layer2+3
+	bond-xmit-hash-policy layer3+4
 	# Use the mac address of the first private interface
 	hwaddress GH:IJ:KL:12:34:56
 
@@ -157,6 +158,7 @@ iface vmbr1 inet manual
 ```
 
 At this point, restart the network services or restart the server.
+
 ```bash
 systemctl restart networking.service
 ```
@@ -181,6 +183,7 @@ iface ens18 inet static
 Now, your VMs should be able to reach a public service over internet. In addition, your VMs can also be reached directly over the internet through the Additional IP. The bandwith available corresponds to the bandwith available on the Public interfaces of your server and will not impact the private interfaces used for the vRack. This bandwidth is shared with other VMs on the same host that are using Additional IPs and the Proxmox host for public access.
 
 To check your public IP, from the VM:
+
 ```bash
 curl ifconfig.io
 ADDITIONAL_IP    				# should return your additional ip
@@ -188,7 +191,7 @@ ADDITIONAL_IP    				# should return your additional ip
 
 ### Additional IP via vRack
 
-This configuration is more flexible, you don't have to associate an Additional IP to a server but rather to a vRack. This means that if a VM wants to use an additional IP, it can claim it directly without any additional configuration and independently of the host it is hosted on.
+This configuration is more flexible, you don't have to associate an Additional IP to a server but rather to a vRack. This means that if a VM wants to use an Additional IP, it can claim it directly without any additional configuration and independently of the host it is hosted on.
 
 > [!warning]
 >
@@ -198,10 +201,10 @@ This configuration is more flexible, you don't have to associate an Additional I
 #### Requirements
 
 - A public block of IP addresses in your account, with a minimum of four addresses. The block must be pointed to the vRack.
-- Your chosen private IP address range
-- A [vRack compatible server](https://www.ovhcloud.com/asia/bare-metal/){.external}
-- A [vRack](https://www.ovh.com/asia/solutions/vrack/){.external} service activated in your account
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- Your chosen private IP address range.
+- A [vRack compatible server](https://www.ovhcloud.com/asia/bare-metal/){.external}.
+- A [vRack](https://www.ovh.com/asia/solutions/vrack/){.external} service activated in your account.
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
 
 
 #### Target configuration schema
@@ -212,8 +215,8 @@ This configuration is more flexible, you don't have to associate an Additional I
 
 You need to:
 
-- create an aggregate
-- create a bridge connected to the aggregate
+- Create an aggregate.
+- Create a bridge connected to the aggregate.
 
 First, add your public block of IP addresses to the vRack. To do so, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and open the `vRack`{.action} menu.
 

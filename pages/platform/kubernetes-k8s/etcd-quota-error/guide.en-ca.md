@@ -3,10 +3,10 @@ title: ETCD Quotas, usage, troubleshooting and error
 excerpt: 'Find out how to view ETCD quotas, usage and fix errors'
 slug: etcd-quota-error
 section: Diagnostics
-updated: 2022-12-14
+updated: 2023-04-06
 ---
 
-**Last updated 14th December 2022**
+**Last updated 06th April 2023**
 
 ## Objective
 
@@ -121,6 +121,12 @@ We have found that the following resources can sometimes be generated continuous
 kubectl get backups.velero.io -A | wc -l
 ```
 
+- `podvolumebackups.velero.io`
+
+```bash
+kubectl get podvolumebackups.velero.io -A | wc -l
+```
+
 - `ingress.networking.k8s.io`
 
 ```bash
@@ -139,10 +145,10 @@ kubectl get ingress.extensions -A | wc -l
 kubectl get authrequests.dex.coreos.com -A | wc -l
 ```
 
-- `podvolumebackups`
+- `reportchangerequest.kyverno.io`
 
 ```bash
-kubectl get podvolumebackups -A | wc -l
+kubectl get reportchangerequest.kyverno.io -A | wc -l
 ```
 
 If that still does not cover your case, you can use a tool like [ketall](https://github.com/corneliusweig/ketall) to easily list and count resources in your cluster.  
@@ -152,4 +158,6 @@ Then you should delete the resources in excess and fix the process responsible f
 
 To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes doc site](../).
 
-Join our [community of users](https://community.ovh.com/en/).
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our [community of users](https://community.ovh.com/en/).

@@ -128,7 +128,7 @@ No separador `Informações gerais`{.action}, copie o endereço IPV4 e/ou IPV6 d
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-De seguida, aceda à [Zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#editar-a-zona-dns-da-ovhcloud-do-seu-dominio_1) do seu domínio alterando ou criando uma ou mais entradas de tipo `A`.
+De seguida, aceda à [Zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#editar-a-zona-dns-da-ovhcloud-do-seu-dominio) do seu domínio alterando ou criando uma ou mais entradas de tipo `A`.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
@@ -142,7 +142,7 @@ O seu website estará disponível num prazo máximo de 24 horas.
 
 [Resolver os erros mais frequentes associados aos módulos 1 clique](../erros-frequentes-modulos-em-1-clique/)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 

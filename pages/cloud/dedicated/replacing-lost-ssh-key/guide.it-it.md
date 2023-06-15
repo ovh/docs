@@ -8,7 +8,7 @@ updated: 2023-02-06
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 06/02/2023**
@@ -49,7 +49,7 @@ Nella nuova finestra, clicca su `Conferma`{.action}.
 
 ### Step 2 - Crea una nuova coppia di chiavi
 
-Crea una nuova coppia di chiavi SSH sulla tua postazione di lavoro, come descritto nella prima sezione della guida ["Creare una chiave SSH"](https://docs.ovh.com/it/dedicated/creare-chiave-ssh-dedicata/)
+Crea una nuova coppia di chiavi SSH sulla tua postazione di lavoro, come descritto nella prima sezione della guida ["Creare una chiave SSH"](https://docs.ovh.com/it/dedicated/creare-chiave-ssh-dedicata/).
 
 ### Step 3 - Accedere al tuo server in modalità Rescue e sostituire la chiave
 
@@ -72,7 +72,7 @@ EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 
 Puoi eliminare la catena di chiave "old" (ormai obsoleta) dal file. Salva e lascia l'editor.
 
-Riavvia la modalità "normale" di avvio e riavvia il server dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Se necessario, consulta la guida ["Attiva e utilizza la modalità Rescue"](https://docs.ovh.com/it/dedicated/rescue_mode/).
+Riavvia la modalità "normale" di avvio e riavvia il server dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Se necessario, consulta la guida ["Attivare e utilizzare il Rescue mode"](https://docs.ovh.com/it/dedicated/rescue_mode/).
 
 A questo punto hai accesso al server con la tua nuova coppia di chiavi SSH.
 

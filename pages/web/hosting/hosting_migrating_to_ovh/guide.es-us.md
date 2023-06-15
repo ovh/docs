@@ -21,7 +21,7 @@ Esta guía explica las distintas acciones que debe realizar para migrar su sitio
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
+> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
 >
 
 ## Requisitos
@@ -201,7 +201,7 @@ Una vez que haya migrado sus antiguas direcciones de correo a OVHcloud, reconfig
 
 #### Para las cuentas de correo "MX Plan": 
 
-Todos los parámetros de configuración se encuentran en la guía "[Información general sobre los MX Plan](https://docs.ovh.com/us/es/emails/primeros-pasos-correo-compartido/#32-configurar-la-direccion-de-correo-en-un-dispositivo_1)". También encontrará enlaces a las guías de configuración personalizadas para los principales programas de mensajería.
+Todos los parámetros de configuración se encuentran en la guía "[Información general sobre los MX Plan](https://docs.ovh.com/us/es/emails/primeros-pasos-correo-compartido/#32-configurar-la-direccion-de-correo-en-un-dispositivo)". También encontrará enlaces a las guías de configuración personalizadas para los principales programas de mensajería.
 
 #### Para las cuentas de correo "Exchange":
 
@@ -239,7 +239,7 @@ Una vez que haya realizado la transferencia de los datos y servicios, solo tendr
 
 [Gestión de una base de datos desde un alojamiento compartido](https://docs.ovh.com/us/es/hosting/crear-base-de-datos/).
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
 

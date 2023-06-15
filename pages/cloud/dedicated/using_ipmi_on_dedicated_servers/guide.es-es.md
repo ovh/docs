@@ -15,7 +15,7 @@ updated: 2022-11-16
 
 ## Objetivo
 
-La consola IPMI (Intelligent Platform Management Interface) permite establecer una conexión directa con un servidor dedicado sin necesidad de utilizar software externo (un terminal o PuTY, por ejemplo). Esta guía explica cómo iniciar esta consola.
+La consola IPMI (Intelligent Platform Management Interface) permite establecer una conexión directa con un servidor dedicado sin necesidad de utilizar software externo (un terminal o PuTTY, por ejemplo). Esta guía explica cómo iniciar esta consola.
 
 En otros documentos puede encontrar el término KVM, del inglés keyboard, video and mouse (teclado, vídeo y ratón), que se utiliza sobre todo en el caso de los VPS.
 
@@ -44,7 +44,7 @@ Para activar uno de estos métodos, conéctese al [área de cliente de OVHcloud]
 
 Para que el applet funcione, debe tener Java instalado en su equipo. Si todavía no lo ha hecho, visite la [página oficial](https://www.java.com/en/download/){.external}.
 
-En la sección `IPMI`{.action} del área de cliente de OVHcloud, haga clic en `Desde un applet Java (KVM)`{.action} :
+En la sección `IPMI`{.action} del área de cliente de OVHcloud, haga clic en `Desde un applet Java (KVM)`{.action}:
 
 ![Iniciado IPMI Java](images/java_ipmi_initiate_2022.png){.thumbnail}
 
@@ -196,5 +196,7 @@ El archivo ISO se descargará y el servidor se iniciará a partir del archivo.
 ![Instalación del KVM](images/kvm_install07.png){.thumbnail}
 
 ## Más información
+
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

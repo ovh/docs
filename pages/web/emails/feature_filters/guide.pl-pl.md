@@ -9,7 +9,7 @@ updated: 2021-09-27
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 27-09-2021**
@@ -38,7 +38,7 @@ Na przykład: chcesz, aby wszystkie e-maile zawierające "[SPAM]" w temacie zost
 Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Znajdź nazwę oferty w polu „Abonament”.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Znajdź Oznaczenie serwera w polu "Podsumowanie"|
-|Przejdź do sekcji "[W praktyce](#oldmxplan)" niniejszego przewodnika.|Przejdź do naszego przewodnika "[Reguły skrzynki odbiorczej w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/tworzenie-regul-skrzynki-odbiorczej-w-owa/)".|
+|Przejdź do sekcji "[W praktyce](#oldmxplan)" niniejszego przewodnika.|Przejdź do naszego przewodnika "[Reguły skrzynki odbiorczej w interfejsie OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan)".|
 
 ## W praktyce <a name="oldmxplan"></a>
 
@@ -81,7 +81,7 @@ Wybór (nagłówek):
 
 Druga opcja (reguła):
 
-- **spf:** Wskaż wartość [pola SPF](https://docs.ovh.com/pl/domains/uslugi_www_pole_spf/), które należy uwzględnić, na przykład: "... nie ma pola SPF ... ".
+- **spf:** Wskaż wartość [pola SPF](/pages/web/domains/dns_zone_spf), które należy uwzględnić, na przykład: "... nie ma pola SPF ... ".
 - **zawiera:** przykład: "... zawiera ... ".
 - **nie zawiera:** przykład: ".. nie zawiera ... ".
 
@@ -142,8 +142,8 @@ Jeśli temat wiadomości zawiera słowo "money", **a nadawcą wiadomości nie je
 
 ## Sprawdź również
 
-[Pierwsze kroki z usługą MX Plan](https://docs.ovh.com/pl/emails/hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/)
+[Pierwsze kroki z usługą MX Plan](/pages/web/emails/email_generalities)
 
-[Reguły skrzynki odbiorczej w interfejsie OWA](https://docs.ovh.com/pl/emails/tworzenie-regul-skrzynki-odbiorczej-w-owa/)
+[Reguły skrzynki odbiorczej w interfejsie OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

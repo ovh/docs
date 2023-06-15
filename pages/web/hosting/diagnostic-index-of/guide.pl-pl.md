@@ -4,18 +4,21 @@ excerpt: Dowiedz się, jak przywrócić Twoją stronę WWW online, gdy wyświetl
 slug: diagnostyka-index-of
 section: Diagnostyka
 order: 07
-updated: 2022-05-10
+updated: 2023-05-04
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 10-05-2022**
+**Ostatnia aktualizacja z dnia 04-05-2023**
 
 ## Wprowadzenie 
 
-Jeśli konfiguracja `MultiSite` nie jest poprawnie skonfigurowana, Twoja strona może wyświetlić stronę **"Index of"**.
+Pojawi się strona **"Index of"** w przynajmniej jednym z następujących przypadków:
+
+- Konfiguracja [MultiSite](/pages/web/hosting/multisites_configure_multisite) Twojej domeny nie została poprawnie skonfigurowana w katalogu docelowym
+- Folder docelowy, do którego Twoja nazwa domeny nie zawiera plików **"index.html"** lub **"index.php"**
 
 ![indeks](images/index_of.png){.thumbnail}
 
@@ -23,13 +26,15 @@ Jeśli konfiguracja `MultiSite` nie jest poprawnie skonfigurowana, Twoja strona 
 
 > [!warning]
 >
-> OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
+> OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywają na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) i lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
+
 >
 
 ## Wymagania początkowe
 
+- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
 - Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/)
 - Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
@@ -37,15 +42,16 @@ Jeśli konfiguracja `MultiSite` nie jest poprawnie skonfigurowana, Twoja strona 
 
 ### Zrozumieć pochodzenie strony "Index of"
 
-Twoja domena jest podłączona do katalogu ("`Katalog główny`{.action}") na Twoim serwerze [FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) za pomocą `MultiSite`{.action}.
+Twoja domena jest zadeklarowana, aby uzyskać dostęp do katalogu docelowego ("`Katalog główny`") na serwerze [FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) na hostingu. Jest to w zakładce [MultiSite](/pages/web/hosting/multisites_configure_multisite) Twojego hostingu w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
-Strona **Index of** wskazuje, że dany katalog nie zawiera pliku **index.php** lub **index.html**. Plik ten to "*punkt wejścia*" Twojej strony WWW.
+Strona **Index of** wskazuje, że dany katalog docelowy nie zawiera pliku **index.php** lub **index.html**. Plik ten stanowi "*punkt wejścia*" Twojej strony WWW. Nazwa tego pliku jest znormalizowana.
 
-Aby wyświetlić Twoją stronę WWW, w sekcji `MultiSite`{.action} powiąż domenę z `Katalogiem głównym` zawierającym ten plik **index.php** lub **index.html**.
+Aby wyświetlić Twoją stronę WWW, w części hostingu `Multisite`{.action} należy powiązać domenę z katalogiem głównym, który zawiera ten plik **index.php** lub **index.html*.
+
 
 > [!primary]
 >
-> Jeśli chcesz tymczasowo powiązać domenę z `Katalogiem głównym` niezawierającym pliku **index.php** lub **index.html**, możesz zabronić wyświetlania listy katalogów na Twojej stronie, postępując zgodnie z tym [przewodnikiem](https://docs.ovh.com/pl/hosting/hosting_www_htaccess_-_inne_operacje/#blokada-listowania-zawartosci-katalogu). Możesz również chronić dostęp do Twoich katalogów za pomocą [hasła](https://docs.ovh.com/pl/hosting/hosting-htaccess-w-jaki-sposob-zabezpieczyc-dostep-dostepu-do-katalogu/).
+> Aby tymczasowo powiązać domenę z `Katalogiem głównym` niezawierającym pliku **index.php** lub **index.html**, możesz zablokować wyświetlanie listy katalogów na swojej stronie internetowej zgodnie z tym [tutorial](https://docs.ovh.com/pl/hosting/hosting_www_htaccess_-_inne_operacje/#blokada-listowania-zawartosci-katalogu). Możesz również chronić dostęp do Twoich katalogów za pomocą [hasła](https://docs.ovh.com/pl/hosting/hosting-htaccess-w-jaki-sposob-zabezpieczyc-dostep-dostepu-do-katalogu/).
 >
 > W przypadku trudności z wdrożeniem tej konfiguracji zalecamy skorzystanie z [pomocy specjalisty](https://partner.ovhcloud.com/pl/directory/). Zespół pomocy technicznej OVHcloud nie będzie w stanie udzielić wsparcia w przypadku jakichkolwiek zmian w wewnętrznym programowaniu Twojej strony WWW.
 
@@ -76,11 +82,13 @@ W następnym oknie kliknij `Zatwierdź`{.action}.
 
 ![modify_root_folder_confirm](images/modify_root_folder_confirm.png){.thumbnail}
 
-W ciągu kilku minut (pomyśl o odświeżeniu przeglądarki) otrzymasz następujący wynik:
+W ciągu kilku minut (odświeżając przeglądarkę) otrzymasz następujący wynik:
 
 ![multisite_modified](images/multisite_modified.png){.thumbnail}
 
 Sprawdź, czy Twoja strona wyświetla się poprawnie. W przeciwnym razie zrestartuj urządzenie i w razie potrzeby wyczyść cache przeglądarki.
+
+Upewnij się również, czy w Twoim katalogu docelowym znajduje się plik **index.php** lub **index.html**.
 
 ## Sprawdź również <a name="gofurther"></a>
 
@@ -90,6 +98,8 @@ Sprawdź, czy Twoja strona wyświetla się poprawnie. W przeciwnym razie zrestar
 
 [Instalacja kilku stron WWW na jednym hostingu](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/)
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, sprawdź naszą [ofertę pomocy](https://www.ovhcloud.com/pl/support-levels/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

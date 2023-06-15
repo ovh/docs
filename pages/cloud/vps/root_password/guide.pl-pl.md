@@ -9,7 +9,7 @@ updated: 2021-04-20
 **Ostatnia aktualizacja z dnia 27/04/2021**
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
 
 ## Wprowadzenie
@@ -43,15 +43,16 @@ Może zaistnieć konieczność zmiany hasła root do systemu operacyjnego Linux.
 
 Zaloguj się do Twojego serwera VPS przez SSH. Przejdź na użytkownika root, jeśli konieczne:
 
-```sh
-~$ sudo su -
-~#
+```bash
+sudo su -
+#
 ```
 
 Zmień hasło dla aktualnego użytkownika:
 
-```sh
-~# passwd
+```bash
+passwd
+
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -62,7 +63,7 @@ passwd: password updated successfully
 > W dystrybucji Linux wpisane hasło **nie** będzie się wyświetlało.
 >
 
-Jeśli chcesz zezwolić na logowanie jako użytkownik root, postępuj zgodnie z instrukcjami zawartymi w [tej sekcji](./#wlacz-haslo-root_1).
+Jeśli chcesz zezwolić na logowanie jako użytkownik root, postępuj zgodnie z instrukcjami zawartymi w [tej sekcji](./#wlacz-haslo-root).
 
 ### Zmiana hasła, jeśli zostało ono utracone
 
@@ -131,8 +132,9 @@ Możesz przeprowadzić weryfikację, wpisując komendę `ls -l`, która zawiera 
 
 W ostatnim etapie wpisz hasło za pomocą polecenia `passwd`.
 
-```sh
-~# passwd
+```bash
+passwd
+
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -142,8 +144,8 @@ Jeśli VPS to najnowsza generacja (masz na imię: *vps-XXXXXXX.vps.ovh.net*). po
 
 Należy zatem wprowadzić nazwę użytkownika, którego używasz do logowania się po `passwd`:
 
-```sh
-~# passwd <username>
+```bash
+~# passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -193,7 +195,7 @@ Zapisz plik i wyjdź z edytora.
 ~$ systemctl restart sshd
 ```
 
-Powinno to wystarczyć do wdrożenia zmian. Możesz również zrestartować serwer VPS (```~$ reboot```).
+Powinno to wystarczyć do wdrożenia zmian. Możesz również zrestartować serwer VPS (`~$ sudo reboot`).
 
 ### Nieprawidłowe działanie
 

@@ -137,7 +137,7 @@ Then update the data usage from the `Databases`{.action} tab of the relevant ser
 
 #### Method 4: Optimise your database
 
-To optimise your database, follow the instructions in our guide "[Configuring your database server](https://docs.ovh.com/au/en/hosting/configure-optimise-database-server/#managing-your-databases_1)". Then update the data usage from the `Databases`{.action} tab of the relevant service. Click on the `...`{.action} button next to the database concerned, then select `Recalculate the quota`{.action}.
+To optimise your database, follow the instructions in our guide "[Configuring your database server](https://docs.ovh.com/au/en/hosting/configure-optimise-database-server/#managing-your-databases)". Then update the data usage from the `Databases`{.action} tab of the relevant service. Click on the `...`{.action} button next to the database concerned, then select `Recalculate the quota`{.action}.
 
 > [!warning]
 >
@@ -168,13 +168,13 @@ If necessary, contact our [user community](https://community.ovh.com/en/) or [OV
 
 The following query is also not allowed:
 
-```mysql
+```sql
 CREATE DATABASE IF NOT EXISTS `Database-Name` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
 ```
 
-Use this this line instead:
+Use this line instead:
 
-```mysql
+```sql
 USE `Database-Name`;
 ```
 
@@ -205,7 +205,7 @@ The maximum number of active connections for databases delivered with a shared h
 
 A "Too many connections" error when [connecting to phpMyAdmin](https://docs.ovh.com/au/en/hosting/creating-database/#accessing-the-phpmyadmin-interface) appears, if this maximum number of connections is exceeded.
 
-In this situation, you will need to [optimise your databases](https://docs.ovh.com/au/en/hosting/configure-optimise-database-server/#managing-your-databases_1) in order to reduce the number of active connections.
+In this situation, you will need to [optimise your databases](https://docs.ovh.com/au/en/hosting/configure-optimise-database-server/#managing-your-databases) in order to reduce the number of active connections.
 
 > [!warning]
 >

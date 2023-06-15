@@ -1,9 +1,9 @@
 ---
-title : Les bonnes pratiques pour la gestion de vos services et de votre compte OVHcloud
-slug : billing-best-practices
-excerpt : Retrouvez ici les éléments indispensables pour la bonne gestion de vos factures, commandes, moyens de paiement et compte client
-section : Gérer mes services et leur renouvellement
-order : 02
+title: Les bonnes pratiques pour la gestion de vos services et de votre compte OVHcloud
+slug: billing-best-practices
+excerpt: Retrouvez ici les éléments indispensables pour la bonne gestion de vos factures, commandes, moyens de paiement et compte client
+section: Gérer mes services et leur renouvellement
+order: 02
 updated: 2022-05-02
 ---
 
@@ -41,7 +41,7 @@ Dans la section `Mon profil`{.action} à droite de votre écran (cliquez à nouv
 
 ![myprofile](images/myprofile.png){.thumbnail}
 
-Pour plus d'informations, consultez le guide [Sécuriser mon compte OVHcloud et gérer mes informations personnelles](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#comment-gerer-mes-informations-personnelles_1).
+Pour plus d'informations, consultez le guide [Sécuriser mon compte OVHcloud et gérer mes informations personnelles](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#comment-gerer-mes-informations-personnelles).
 
 Assurez-vous que votre adresse e-mail est toujours **à jour, sécurisée et accessible.** Les e-mails émanant de nos services vous seront envoyés à cette adresse, y compris les **messages de réinitialisation** en cas de perte de votre mot de passe.
 

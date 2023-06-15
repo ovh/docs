@@ -205,7 +205,7 @@ Une fois vos choix faits, cliquez sur `Créer`{.action} pour lancer le processus
 
 #### Créer un réseau privé depuis les APIv6 OVHcloud <a name="vlansetup"></a>
 
-Pour créer un réseau privé depuis les APIv6 OVHcloud, cliquez [ici](https://docs.ovh.com/ca/fr/publiccloud/network-services/public-cloud-vrack-apiv6/#etape-3-creer-un-vlan-dans-le-vrack_1) pour consulter le guide spécifique à cette méthode.
+Pour créer un réseau privé depuis les APIv6 OVHcloud, cliquez [ici](https://docs.ovh.com/ca/fr/publiccloud/network-services/public-cloud-vrack-apiv6/#etape-3-creer-un-vlan-dans-le-vrack) pour consulter le guide spécifique à cette méthode.
 
 #### Créer un réseau privé via le CLI OpenStack
 
@@ -265,7 +265,7 @@ Consultez le guide [Créer une instance depuis l’espace client](https://docs.o
 
 ##### **Depuis les APIv6 OVHcloud**
 
-Cliquez [ici](https://docs.ovh.com/ca/fr/publiccloud/network-services/public-cloud-vrack-apiv6/#etape-4-integrer-une-instance-dans-le-vrack_1) pour consulter le guide spécifique à cette méthode.
+Cliquez [ici](https://docs.ovh.com/ca/fr/publiccloud/network-services/public-cloud-vrack-apiv6/#etape-4-integrer-une-instance-dans-le-vrack) pour consulter le guide spécifique à cette méthode.
 
 ##### **Depuis les API OpenStack**
 
@@ -462,7 +462,7 @@ Dans la pop-up qui apparaît, sélectionnez le ou les réseaux privés à attach
 
 ##### **Gestion des interfaces réseaux depuis les APIv6 OVHcloud**
 
-Cliquez [ici](https://docs.ovh.com/ca/fr/publiccloud/network-services/public-cloud-vrack-apiv6/#cas-dune-instance-deja-existante_1) pour consulter le guide spécifique à cette méthode.
+Cliquez [ici](https://docs.ovh.com/ca/fr/publiccloud/network-services/public-cloud-vrack-apiv6/#cas-dune-instance-deja-existante) pour consulter le guide spécifique à cette méthode.
 
 ##### **Gestion des interfaces réseaux depuis OpenStack Horizon**
 
@@ -668,5 +668,7 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 [Configuration du vRack Public Cloud depuis les APIv6 OVHcloud](https://docs.ovh.com/ca/fr/publiccloud/network-services/public-cloud-vrack-apiv6/)
 
 [Serveurs Dédiés - Créer plusieurs VLAN dans le vRack](https://docs.ovh.com/ca/fr/dedicated/creer-vlan-vrack/)
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -4,14 +4,12 @@ excerpt: 'Saiba como ativar e utilizar a opção Snapshot na Área de Cliente OV
 slug: utilizar-snapshots-num-alojamento-vps
 section: 'Opções de backup'
 order: 1
-updated: 2022-12-02
+updated: 2023-04-28
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
-
-**Última atualização: 02/12/2022**
 
 
 ## Sumário
@@ -60,6 +58,51 @@ Se tem a certeza que pretende restaurar o estado do seu alojamento VPS de acordo
 > Tenha em atenção que quando restaurar um VPS a partir de um instantâneo, este será eliminado. Se deseja conservar a mesma imagem, deve tomar uma nova antes de efetuar modificações no sistema restaurado.
 >
 
+### Descarregar uma snapshot
+
+A snapshot em curso pode ser recuperada através de um link de download. Clique no botão `...`{.action} junto à opção `Snapshot` e escolha `Fazer o download do Snapshot`{.action} no menu contextual.
+
+![snapshotvps](images/snapshot_vps03.png){.thumbnail}
+
+> [!primary]
+>
+> Se o seu VPS é de uma gama antiga, é possível que receba uma mensagem de erro, pois a opção não está disponível nos VPS antigos. O seu VPS é de uma gama antiga se o seu modelo de atribuição for semelhante a: *vpsXXXX.ovh.net* (em que *X* representa um número). Pode verificar esta referência de servidor no separador `Página Inicial`{.action} da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+>
+
+Na nova janela, clique em `Gerar o link de download`{.action}.
+
+![snapshotvps](images/snapshot_vps04.png){.thumbnail}
+
+Depois de alguns segundos, surge uma mensagem de sucesso. Abaixo, pode copiar o comando completo de download num clique.
+
+![snapshotvps](images/snapshot_vps05.png){.thumbnail}
+
+O tamanho da snapshot e a data de expiração do link também serão apresentados.
+
+Note que o link de download expirará após **24 horas**.
+
+O comando de download utiliza um `curl` no seguinte formato:
+
+```bash
+curl "https://storage.sbg.cloud.ovh.net/v1/AUTH_f5fgh4674dd706f15f6ffgf4z667d3f4g5f05/glance/5ceg3f93-8b49-436b-aefe-4185f9fc3f78?
+temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=1678247579" --output vps-x11x11xyy.vps.ovh.net --fail
+```
+
+Este comando deve funcionar a partir de qualquer terminal de linha de comando. No entanto, quando utilizar o Windows *PowerShell*, deverá ajustar o comando da seguinte forma:
+
+```powershell
+curl -Uri "https://storage.sbg.cloud.ovh.net/v1/AUTH_f5fgh4674dd706f15f6ffgf4z667d3f4g5f05/glance/5ceg3f93-8b49-436b-aefe-4185f9fc3f78?
+temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=1678247579" -OutFile vps-x11x11xyy.vps.ovh.net
+```
+
+![snapshotvps](images/snapshot_vps06.png){.thumbnail}
+
+> [!primary]
+>
+> Para evitar o consumo de espaço de armazenamento excessivo, desaconselhamos o download das snapshots diretamente para o VPS.
+>
+
+
 ### Boas práticas para a criação de uma snapshot
 
 #### Configuração do agente QEMU num VPS
@@ -72,21 +115,21 @@ O *qemu-guest-agent* necessário não está instalado por predefinição na maio
 
 Utilize o seguinte comando para verificar se o sistema está corretamente configurado para as snapshots:
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Se o resultado for diferente (“No such file or directory”), instale a última versão do pacote:
 
-```
+```bash
 $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
 Inicie o serviço para garantir que está a ser executado:
 
-```
+```bash
 $ sudo service qemu-guest-agent start
 ```
 
@@ -94,21 +137,21 @@ $ sudo service qemu-guest-agent start
 
 Utilize o seguinte comando para verificar se o sistema está corretamente configurado para as snapshots:
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Se o resultado for diferente (“No such file or directory”), instale e ative o agente:
 
-```
+```bash
 $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
 Inicie o agente e verifique que está a ser executado:
 
-```
+```bash
 $ sudo service qemu-guest-agent start
 $ sudo service qemu-guest-agent status
 ```
@@ -117,9 +160,9 @@ $ sudo service qemu-guest-agent status
 
 Pode instalar o agente através de um ficheiro MSI, disponível no site do projeto Fedora: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
 
-Verifique que o serviço está a ser executado graças ao seguinte comando powershell:
+Verifique que o serviço está a ser executado graças ao seguinte comando *PowerShell*:
 
-```
+```powershell
 PS C:\Users\Administrator> Get-Service QEMU-GA
 
 Status   Name               DisplayName

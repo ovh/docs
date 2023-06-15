@@ -148,7 +148,7 @@ Lastly, press the `F4` key to save your changes and restart the server.
 
 In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), open the [KVM web browser console](./#kvm-browser).
 
-Here you have access to the same information and functionalities as in in the Java-based IPMI modules.
+Here you have access to the same information and functionalities as in the Java-based IPMI modules.
 
 > [!primary]
 >
@@ -185,5 +185,7 @@ The ISO file will now be uploaded, then the server will boot from the file.
 
 
 ## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

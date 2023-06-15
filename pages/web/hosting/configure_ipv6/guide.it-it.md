@@ -10,7 +10,7 @@ updated: 2023-02-10
 **Ultimo aggiornamento: 10/02/2023**
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 ## Obiettivo
@@ -39,7 +39,7 @@ I nostri hosting Web sono compatibili con IPv6 dal 2011. L'attivazione di questo
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/) o di contattare l'amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
+> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/) o di contattare l'amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
 > 
 
 Se il tuo sito non è configurato per funzionare con un indirizzo IPv6, puoi aggiungere [l'indirizzo IPv6 del tuo hosting condiviso OVHcloud](https://docs.ovh.com/it/hosting/lista-indirizzi-ip-di-cluster-e-hosting-web/) nella zona DNS attiva del tuo dominio. L'obiettivo è permettere ai browser di trovare un indirizzo IPv6 associato al tuo sito Web tramite il tuo dominio.
@@ -65,7 +65,7 @@ Nel riquadro **IPv6**, copia l'record e passa allo step successivo.
 > Inoltre, l'aggiunta, la modifica o l'eliminazione di un record DNS nella zona DNS attiva di un dominio comporta un tempo di propagazione da **4 a 24 ore** per essere pienamente efficace.
 >
 
-Per consentire al browser di trovare l'indirizzo IPv6 con il tuo dominio, modifica la zona DNS attiva del tuo dominio. Per creare un record DNS di tipo **AAAA**, consulta la guida "[Modificare una zona DNS OVHcloud](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/#modifica-la-zona-dns-ovhcloud-del-dominio_1)".
+Per consentire al browser di trovare l'indirizzo IPv6 con il tuo dominio, modifica la zona DNS attiva del tuo dominio. Per creare un record DNS di tipo **AAAA**, consulta la guida "[Modificare una zona DNS OVHcloud](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/#modifica-la-zona-dns-ovhcloud-del-dominio)".
 
 Nella sezione `Web Cloud`{.action}, clicca su `Domini`{.action}. Seleziona il tuo dominio e clicca sulla scheda `Zona DNS`{.action}. Clicca su `Aggiungi un record`{.action} a destra della tabella. 
 
@@ -75,9 +75,9 @@ Inserisci l'indirizzo IPv6 precedentemente copiato utilizzando il tipo di record
 
 ## Per saperne di più <a name="go-further"></a>
 
-[Modifica una zona DNS OVHcloud](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/#modifica-la-zona-dns-ovhcloud-del-dominio_1)
+[Modifica una zona DNS OVHcloud](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/#modifica-la-zona-dns-ovhcloud-del-dominio)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 

@@ -143,7 +143,7 @@ Then update the data usage from the `Databases`{.action} tab of the relevant ser
 
 #### Method 4: Optimise your database
 
-To optimise your database, follow the instructions in our guide "[Configuring your database server](https://docs.ovh.com/ie/en/hosting/configure-optimise-database-server/#managing-your-databases_1)". Then update the data usage from the `Databases`{.action} tab of the relevant service. Click on the `...`{.action} button next to the database concerned, then select `Recalculate the quota`{.action}.
+To optimise your database, follow the instructions in our guide "[Configuring your database server](https://docs.ovh.com/ie/en/hosting/configure-optimise-database-server/#managing-your-databases)". Then update the data usage from the `Databases`{.action} tab of the relevant service. Click on the `...`{.action} button next to the database concerned, then select `Recalculate the quota`{.action}.
 
 > [!warning]
 >
@@ -156,7 +156,7 @@ The following message in the `Databases`{.action} section of your [OVHcloud Cont
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
-In this situation, you can increase the [amount of RAM](https://docs.ovh.com/ie/en/hosting/configure-optimise-database-server/#modifying-the-database-server-solution_1) available from the `Databases`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). In the `General information`{.action} tab, click on the `...`{.action} in the `RAM` section.
+In this situation, you can increase the [amount of RAM](https://docs.ovh.com/ie/en/hosting/configure-optimise-database-server/#modifying-the-database-server-solution) available from the `Databases`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). In the `General information`{.action} tab, click on the `...`{.action} in the `RAM` section.
 
 > [!warning]
 >
@@ -167,7 +167,7 @@ In this situation, you can increase the [amount of RAM](https://docs.ovh.com/ie/
 > In the `Configuration` box, click the `...`{.action} button to the right of the `Private database` entry, then click the `Detach`{.action} button.
 > 
 
-You can also optimise your database by following the instructions of our guide "[Configuring your database server](https://docs.ovh.com/ie/en/hosting/configure-optimise-database-server/#managing-your-databases_1)".
+You can also optimise your database by following the instructions of our guide "[Configuring your database server](https://docs.ovh.com/ie/en/hosting/configure-optimise-database-server/#managing-your-databases)".
 
 > [!primary]
 >
@@ -199,13 +199,13 @@ If necessary, contact our [user community](https://community.ovh.com/en/) or [OV
 
 The following query is also not allowed:
 
-```mysql
+```sql
 CREATE DATABASE IF NOT EXISTS `Database-Name` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
 ```
 
-Use this this line instead:
+Use this line instead:
 
-```mysql
+```sql
 USE `Database-Name`;
 ```
 
@@ -221,11 +221,11 @@ This error message appears when [importing a database](https://docs.ovh.com/ie/e
 
 To resolve this issue, you can use the following methods:
 
-- Increase the [amount of RAM](https://docs.ovh.com/ie/en/hosting/configure-optimise-database-server/#modifying-the-database-server-solution_1): go to the [Web Cloud Databases server](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/) concerned in the `Databases` section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). Then click on the `...`{.action} button in the `RAM` section and select `Change the amount of RAM`{.action}.
+- Increase the [amount of RAM](https://docs.ovh.com/ie/en/hosting/configure-optimise-database-server/#modifying-the-database-server-solution): go to the [Web Cloud Databases server](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/) concerned in the `Databases` section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). Then click on the `...`{.action} button in the `RAM` section and select `Change the amount of RAM`{.action}.
 
 - Split your database in order to import it through multiple operations instead of one. (For any questions on the necessary steps, contact our [community](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/). We will not be able to assist you with this.)
 
-- [Optimise your database](https://docs.ovh.com/ie/en/hosting/configure-optimise-database-server/#managing-your-databases_1), then repeat the export/import operations.
+- [Optimise your database](https://docs.ovh.com/ie/en/hosting/configure-optimise-database-server/#managing-your-databases), then repeat the export/import operations.
 
 ### Unable to access phpMyAdmin
 
@@ -253,7 +253,7 @@ This number increases to **200** for the [Web Cloud Databases service](https://d
 
 A "Too many connections" error when [connecting to phpMyAdmin](https://docs.ovh.com/ie/en/hosting/creating-database/#accessing-the-phpmyadmin-interface) appears, if this maximum number of connections is exceeded.
 
-In this situation, you will need to [optimise your databases](https://docs.ovh.com/ie/en/hosting/configure-optimise-database-server/#managing-your-databases_1) in order to reduce the number of active connections.
+In this situation, you will need to [optimise your databases](https://docs.ovh.com/ie/en/hosting/configure-optimise-database-server/#managing-your-databases) in order to reduce the number of active connections.
 
 > [!warning]
 >

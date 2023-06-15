@@ -124,7 +124,7 @@ In the `General information`{.action} tab, copy the IPV4 and/or IPV6 address of 
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-Then refer to it in your domain’s [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#edit-your-domain-names-ovhcloud-dns-zone_1), by modifying or creating one or more `A` entries.
+Then refer to it in your domain’s [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#edit-your-domain-names-ovhcloud-dns-zone), by modifying or creating one or more `A` entries.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
@@ -138,7 +138,7 @@ Your website will then be available within a maximum of 24 hours.
 
 [Resolving the most common 1-click module errors](../error-frequently-1-click-modules/)
 
-For specialised services (SEO, development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/en-sg/).
+For specialised services (SEO, development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
 

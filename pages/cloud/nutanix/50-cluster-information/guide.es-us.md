@@ -151,7 +151,7 @@ Connect to the IP address of **Prism Central** via SSH with the **ssh** command 
 
 For example on Linux:
 
-```ssh nutanix@prismcentralipaddress```
+```bash nutanix@prismcentralipaddress```
 
 Collect logs:
 
@@ -179,7 +179,7 @@ Log in on the cluster’s IP address via SSH with the **ssh** command on Linux, 
 
 For example on Linux:
 
-```ssh nutanix@prismelementipaddress```
+```bash nutanix@prismelementipaddress```
 
 Collect all node logs:
 
@@ -212,5 +212,7 @@ nutanix@CVMN's password:
 [Putty](https://www.putty.org/)
 
 [Logbay Nutanix documentation](https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LM3BCAW)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,19 +1,19 @@
 ---
-title: ovhai CLI Cheat Sheet
+title: ovhai CLI - Cheat Sheet
 slug: cheat-sheet
 excerpt: Find all the useful commands for OVHcloud AI Training ovhai CLI
 section: General information
 order: 107
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cheat-sheet/'
-updated: 2022-03-14
+updated: 2023-05-12
 ---
 
-**Last updated 14th March, 2022.**
+**Last updated 12th May, 2023.**
 
 ## Objective
 
-The goal of this cheat sheet is to provide a quick reference to all the commands and options available in the ovhai CLI.
+The goal of this [cheat sheet](https://github.com/ovh/ovhai-cheat-sheet/blob/main/ovhai-cheat-sheet.pdf) is to provide a quick reference to all the commands and options available in the ovhai CLI.
 
 ## Cheat sheet
 
@@ -25,4 +25,6 @@ The goal of this cheat sheet is to provide a quick reference to all the commands
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.

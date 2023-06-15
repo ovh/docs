@@ -3,8 +3,10 @@ title: 'Asterisk - configuration et utilisation'
 slug: asterisk-configuration-et-utilisation
 legacy_guide_number: '7536698'
 section: IPBX
-updated: 2022-06-17
+updated: 2018-03-26
 ---
+
+**Dernière mise à jour le 26/03/2018**
 
 > [!warning]
 > 
@@ -159,7 +161,7 @@ siptrunk.ovh.net:5060   N       003397232069    1785    Registered  Tue, 24 Mar 
 
 Vous obtenez alors l'information du REGISTER :
 
-![](images/2015-03-24-093012_723x400_scrot.png){.thumbnail}
+![](images/2015-03-24-093012_723x400_scrot2023.png){.thumbnail}
 
 ------------------------------------------------------------------------
 

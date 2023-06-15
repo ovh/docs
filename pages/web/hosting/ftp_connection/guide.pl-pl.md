@@ -1,131 +1,182 @@
 ---
-title: 'Logowanie do przestrzeni dyskowej hostingu'
+title: "Logowanie do przestrzeni dyskowej FTP hostingu"
 slug: logowanie-przestrzen-dyskowa-ftp-hosting-web
-excerpt: 'Dowiedz się, jak się zalogować do przestrzeni dyskowej hostingu od OVHcloud'
+excerpt: "Dowiedz się, jak się zalogować do przestrzeni dyskowej FTP Twojego hostingu WWW OVHcloud"
 section: 'FTP i SSH'
 order: 02
-updated: 2022-10-21
+updated: 2023-06-01
 ---
 
-**Ostatnia aktualizacja z dnia 19-01-2022**
+**Ostatnia aktualizacja z dnia 01-06-2023**
+
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
+>
 
 ## Wprowadzenie 
 
-Wraz z pakietami hostingowymi OVHcloud otrzymujesz dostęp do przestrzeni dyskowej umożliwiającej umieszczanie w Internecie plików z Twojej strony WWW. Do przestrzeni dyskowej możesz zalogować się, używając protokołu FTP lub SSH oraz odpowiednich haseł.
+Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej FTP umożliwiającej umieszczanie w Internecie plików z Twoich stron WWW lub aplikacji. Dostęp do przestrzeni dyskowej jest możliwy przez użytkownika FTP lub SSH z przypisanymi do niego hasłami.
 
-**Dowiedz się, jak zalogować się do przestrzeni dyskowej hostingu od OVHcloud.**
+**Dowiedz się, jak się zalogować do przestrzeni dyskowej FTP Twojego hostingu WWW OVHcloud.**
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external} (aby aktywować wielu użytkowników FTP trzeba co najmniej Professional lub Performance hosting).
+- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
 - Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Web Cloud`{.action}
+
+> [!primary]
+> Tylko hosting WWW **Pro** lub **Performance** umożliwia aktywację kilku użytkowników FTP i połączenie przez SSH.
+>
 
 ## W praktyce
 
-### Etap 1: pobranie informacji niezbędnych do logowania
+### Etap 1: pobierz informacje potrzebne do zalogowania
 
-Aby zalogować się do przestrzeni dyskowej, powinieneś posiadać następujące dane:
+Aby zalogować się do przestrzeni dyskowej FTP, pobierz następujące elementy:
 
 - aktywne konto FTP lub SSH;
 - hasło powiązane z kontem FTP lub SSH;
-- adres serwera;
-- port połączenia z serwerem.
+- adres serwera FTP lub SSH na Twoim hostingu;
+- port połączenia z serwerem FTP lub SSH Twojego hostingu.
 
 > [!primary]
 >
-> Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu.
->
-> **Jeśli masz już dostęp do tych danych**, przejdź bezpośrednio do etapu 2: [Dostęp do przestrzeni dyskowej](./#etap-2-dostep-do-przestrzeni-dyskowej).
+> Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu podczas jego rejestracji. Są one dostępne w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+> 
+> **Jeśli dysponujesz już tymi elementami**, przejdź bezpośrednio do etapu 2  [niniejszego przewodnika](#ftp_storage_access).
 > 
 
-[Jeśli nie posiadasz wskazanych wyżej informacji](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, zaloguj się do `Panelu klienta`{.action} i kliknij `Hosting`{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. 
+Jeśli nie posiadasz tych elementów, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję 'Hosting{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. 
 
 Wyświetlą się wówczas informacje dotyczące Twojej przestrzeni dyskowej oraz tabela zawierająca nazwy użytkowników FTP i SSH utworzonych na Twoim hostingu.
 
 ![ftpconnect](images/connect-ftp-step1.png){.thumbnail}
 
-Aby utworzyć nowego użytkownika FTP/SSH na tej samej stronie, kliknij przycisk Utwórz użytkownika po prawej stronie.
-Wybierz `Użytkownik`{.action} i `Folder główny`{.action}, a następnie kliknij `Dalej`{.action}, wybierz hasło dla tego nowego konta i kliknij `Dalej`{.action} i kliknij `Potwierdź`{.action}.
+> [!primary]
+>
+> Jeśli chcesz utworzyć nowego użytkownika FTP/SSH z tej samej strony, kliknij przycisk `Utwórz użytkownika`{.action} z prawej strony.
+> Zdefiniuj rozszerzenie nazwy nowego `Użytkownik`{.action} i `Folder główny`{.action}, w którym użytkownik będzie mógł działać, a następnie kliknij `Dalej`{.action}.
+> Wybierz hasło dla tego nowego konta użytkownika, kliknij na `Dalej`{.action}, następnie kliknij na `Potwierdź`{.action}.
+>
 
-Dzięki tym danym będziesz mógł odnaleźć dane wymagane do logowania się do przestrzeni dyskowej. Jeśli nie udaje ci się ich odnaleźć, skorzystaj z tabeli. Pamiętaj, że niektóre informacje mogą się nie wyświetlić. Zależy to od oferty, którą wykupiłeś.
+Wszystkie elementy potrzebne do zalogowania się do przestrzeni dyskowej FTP znajdują się na tej samej stronie.
 
-- **Serwer FTP i SFTP**: Jest to adres serwera umożliwiający dostęp do Twojej przestrzeni dyskowej przy użyciu programu FTP przy użyciu protokołu FTP lub SFTP.
+Poniżej znajduje się opis najważniejszych informacji wyświetlanych na stronie `FTP-SSH`:
+
+- **Serwer FTP i SFTP** : adres serwera FTP hostingu pozwalający na dostęp do przestrzeni dyskowej FTP. Używając na przykład oprogramowania FTP za pomocą protokołu FTP lub SFTP.
 
 > Klasycznym portem połączenia jest port "21". Użyj portu "22", aby połączyć się przez protokół SFTP (w przypadku gdy jest on aktywny)
 
-- **Serwer SSH**: Jest to adres serwera umożliwiający dostęp do Twojej przestrzeni dyskowej przy użyciu terminala przez protokół SSH.
-- **Login główny**: Główny identyfikator (S)FTP utworzony na Twoim hostingu. Możesz odnaleźć wszystkich użytkowników (S)FTP Twojego hostingu w kolumnie "Login" tabeli.
+- **Serwer SSH**: adres serwera SSH na hostingu umożliwiający dostęp do przestrzeni dyskowej FTP. Używając terminala przez protokół SSH.
 
-Jeśli nie znasz hasła użytkownika FTP lub SSH, w zależności od oferty kliknij ikonę ołówka lub przycisk `...`{.action}, a następnie wybierz `Zmień hasło`{.action}. Przewodnik techniczny [Zmień hasło użytkownika FTP](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/) pomoże w przeprowadzeniu tej operacji.
+> Port połączenia SSH to port "22".
+
+- **Login główny**: główny identyfikator FTP utworzony na Twoim hostingu. Możesz znaleźć wszystkich użytkowników (S)FTP Twojego hostingu w kolumnie "Login" tabeli.
+
+> [!primary]
+>
+> W zależności od oferty [hosting OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}, którą posiadasz, niektóre z informacji opisanych powyżej (zwłaszcza dotyczących SSH) mogą się nie pojawić.
+>
+
+Jeśli nie znasz hasła użytkownika FTP lub SSH, zapoznaj się z naszym przewodnikiem "[Zmiana hasła do konta FTP](/pages/web/hosting/ftp_change_password)".
 
 ![ftpconnect](images/connect-ftp-step2.png){.thumbnail}
 
-Aby zalogować się do przestrzeni dyskowej, powinieneś posiadać następujące dane:
+W tym momencie dysponujesz wszystkimi elementami pozwalającymi na zalogowanie się do przestrzeni dyskowej FTP.
 
-### Etap 2: dostęp do przestrzeni dyskowej
+### Etap 2: ddostęp do przestrzeni dyskowej FTP <a name="ftp_storage_access"></a>
 
-Logowanie do przestrzeni dyskowej można przeprowadzić na kilka sposobów. Przejdź do opisu operacji, którą chcesz przeprowadzić.
+Połączenie z przestrzenią dyskową FTP można wykonać na kilka sposobów. Przejdź do opisu operacji, której chcesz użyć.
 
-1. [Logowanie przez FTP Explorer](#ftpexplorer): umożliwia dostęp do przestrzeni dyskowej przy użyciu przeglądarki internetowej.
+- [1. Logowanie przez "FTP Explorer"](#ftpexplorer): pozwala na dostęp do Twojej przestrzeni dyskowej FTP z poziomu przeglądarki internetowej.
 
-2. [Logowanie przez program FTP](#ftpsoftware): umożliwia dostęp do Twojej przestrzeni dyskowej przy użyciu programu (np. FileZilla lub Cyberduck). W pierwszym kroku zainstaluj wybrany program na komputerze.
+- [2. Połączenie przez program FTP](#ftpsoftware): umożliwia dostęp do Twojej przestrzeni dyskowej FTP przy użyciu programu (takiego jak [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide) lub [Cyberduck](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac)). 
+Najpierw zainstaluj wybrany program/klient FTP na komputerze.
 
-3. [Logowanie przez SSH](#ssh): umożliwia dostęp do Twojej przestrzeni dyskowej przez SSH. W przypadku tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external} z dostępem SSH.
+- [3. Połączenie przez dostęp SSH](#ssh): umożliwia dostęp do Twojej przestrzeni dyskowej FTP przez SSH. Do tego dostępu konieczne są zaawansowane umiejętności techniczne oraz oferta[hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external} **Pro** lub **Performance**.
 
 #### 1. Logowanie przez FTP Explorer <a name="ftpexplorer"></a>
 
-Aby zalogować się do Twojej przestrzeni dyskowej przez FTP Explorer, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią nazwę hostingu. 
+Aby zalogować się do Twojej przestrzeni dyskowej FTP za pomocą "FTP Explorer", zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web Cloud`{.action}.
 
-Przejdź do zakładki `FTP - SSH`{.action} i kliknij przycisk `FTP Explorer`{.action}. 
+W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}. Wybierz odpowiedni hosting, przejdź do zakładki `FTP - SSH`{.action} i kliknij na przycisk `FTP Explorer`{.action}.
 
 ![ftpconnect](images/connect-ftp-step3.png){.thumbnail}
 
-Na stronie, która się otworzy, zaloguj się, wprowadzając login FTP i hasło. Jeśli wprowadzone dane są poprawne, możesz rozpocząć operacje na Twojej przestrzeni dyskowej.
+Na nowej stronie, która się pojawi, wprowadź Twój identyfikator FTP oraz hasło, a następnie zaloguj się. Jeśli wprowadzone dane są poprawne, Twoja przestrzeń dyskowa się wyświetla.
 
 ![ftpconnect](images/connect-ftp-step4.png){.thumbnail}
 
 #### 2. Logowanie przez program FTP <a name="ftpsoftware"></a>
 
-Po zainstalowaniu na Twoim komputerze wybranego programu FTP (takiego jak FileZilla czy Cyberduck), uruchom go. 
+Po zainstalowaniu na komputerze odpowiedniego oprogramowania FTP (takiego jak [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide) lub [Cyberduck](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac), uruchom je. 
 
-Znajdź miejsce, w którym należy wpisać dane logowania. Ponieważ operacja ta jest ściśle związana z konkretnym programem i wersją, której używasz, nie możemy opisać wszystkich możliwych wariantów w naszej dokumentacji.
+Należy odnaleźć konkretne pola, w których należy wpisać dane do logowania. 
 
-W ramach przypomnienia zamieszczamy poniżej informacje, które należy wprowadzić.
+> [!warning]
+>
+> Ponieważ operacja ta jest ściśle związana z używanym przez Ciebie oprogramowaniem i jego wersją, nie możemy opisać wszystkich operacji w tej dokumentacji.
+>
 
-- **Serwer FTP i SFTP**: Adres serwera umożliwiający dostęp do Twojej przestrzeni dyskowej. W zależności od użytego programu adres ten może być określony jako: „Serwer”, „Adres serwera”, „Host” lub „Nazwa hosta”.
-- **Login główny**: Jest to identyfikator, który umożliwia dostęp do przestrzeni dyskowej. W zależności od użytego programu identyfikator ten może być określony jako: „Użytkownik”, „Nazwa użytkownika”, „Identyfikator”, „Login” lub „Username”.
-- **Hasło użytkownika FTP**: Hasło powiązane z loginem FTP. W zależności od użytego programu możesz zostać poproszony o „Hasło” lub z angielskiego „Password”.
-- **Port połączenia**: Jest on zazwyczaj uzupełniany automatycznie przez program. Jeśli jednak zostaniesz poproszony o jego wprowadzenie:
-    - użyj portu "21", aby połączyć się przez protokół FTP;
+Poniżej znajduje się przypomnienie informacji, które należy wprowadzić:
+
+- **Serwer FTP i SFTP** : adres serwera FTP umożliwiający dostęp do Twojej przestrzeni dyskowej FTP. W zależności od użytego programu nazwa może wyglądać jak: "Serwer", "Adres serwera", "Nazwa hosta" lub "Host".
+- **Login główny**: identyfikator umożliwiający dostęp do Twojej przestrzeni dyskowej FTP W zależności od użytego programu nazwa może wyglądać jak: "Użytkownik", "Nazwa użytkownika", "Identyfikator", "Login" lub "Username".
+- **Hasło użytkownika FTP**: hasło powiązane z loginem FTP. W zależności od użytego programu nazwa może wyglądać jak "Hasło" lub "Password".
+- **Port połączenia**: jest on zazwyczaj uzupełniany automatycznie przez oprogramowanie. Jeśli musisz go wprowadzić:
+    - użyj portu "21", aby połączyć się za pomocą protokołu FTP;
     - użyj portu "22", aby połączyć się przez protokół SFTP (w przypadku gdy jest on aktywny).
 
-Jeśli wprowadzone informacje są poprawne, program, którego używasz powinien wyświetlać zawartość Twojej przestrzeni dyskowej. Może pojawić się komunikat (zwany również „statusem”) potwierdzający, że zawartość została wyświetlona poprawnie przez oprogramowanie.
+Jeśli wprowadzone dane są poprawne, program, którego używasz wyświetla zawartość Twojej przestrzeni dyskowej FTP. Może pojawić się komunikat (zwany również "statusem") w celu potwierdzenia, że zawartość została wyświetlona poprawnie za pomocą programu FTP.
 
 #### 3. Logowanie przez SSH <a name="ssh"></a>
 
-Aby zalogować się przez SSH, użyj terminala, dzięki któremu będziesz mógł działać bezpośrednio na Twojej przestrzeni dyskowej za pomocą wierszy poleceń.
+Aby zalogować się przez SSH, użyj terminala, aby połączyć się bezpośrednio z przestrzenią dyskową FTP za pomocą wierszy poleceń. 
 
-Narzędzie to jest zainstalowane domyślnie na MacOS lub Linuxie. Środowisko Windows będzie wymagało instalacji oprogramowania, takiego jak PuTTY lub dodania funkcji „OpenSSH”. Ponieważ operacja ta jest ściśle związana z systemem operacyjnym, którego używasz, nie możemy jej szczegółowo opisać w przewodniku.
+Więcej informacji na temat SSH znajdziesz w naszym przewodniku [korzystanie z SSH na hostingu OVHcloud](/pages/web/hosting/ssh_on_webhosting)
 
-Po ustanowieniu połączenia SSH i w zależności od wybranej metody możesz zalogować się na dwa sposoby: 
+Narzędzie to jest zainstalowane domyślnie na *macOS*, *Linux* i *Windows 10*. Starsze środowisko Windows będzie wymagało instalacji oprogramowania, takiego jak [PuTTY](/pages/web/hosting/ssh_using_putty_on_windows) lub dodania funkcji "*OpenSSH*". 
 
-- za pomocą programu: w odpowiednie pola tekstowe należy wpisać dane logowania;
-- za pomocą wiersza poleceń: należy przestrzegać określonej składni polecenia.
+> [!warning]
+> 
+> Ponieważ operacja ta jest ściśle związana z używanym przez Ciebie systemem operacyjnym, nie możemy jej szczegółowo opisać w przewodniku.
+>
 
-W tym drugim przypadku użyj następującego polecenia. Zastąp elementy „sshlogin”, „sshserver” oraz „connectionport” danymi odpowiadającymi Twojemu przypadkowi. Po wysłaniu polecenia zostaniesz poproszony o wpisanie hasła użytkownika SSH.
+Po ustanowieniu połączenia SSH i w zależności od wybranej metody możesz zalogować się na dwie metody: 
 
-```ssh
+- **z poziomu oprogramowania**: pola tekstowe muszą być uzupełnione informacjami dotyczącymi logowania;
+- **w wierszu poleceń**: należy przestrzegać specjalnej składni.
+
+W wierszu poleceń użyj następującej składni:
+
+```bash
 ssh sshlogin@sshserver -p connectionport
 ```
 
-Jeśli wprowadzone dane są poprawne, możesz rozpocząć operacje na Twojej przestrzeni dyskowej. W razie takiej potrzeby, skorzystaj z przewodnika technicznego [Dostęp przez SSH na hostingu](../hosting_www_ssh_na_hostingu/).
+Zastąp elementy `sshlogin`, `sshserver` i `connectionport` własnymi informacjami. 
+
+Po wysłaniu polecenia zostaniesz poproszony o wpisanie hasła użytkownika SSH.
+
+Jeśli wprowadzone dane są poprawne, otrzymasz dostęp do przestrzeni FTP. 
+
+Skorzystaj z naszej dokumentacji "[Korzystanie z połączenia SSH na hostingu](/pages/web/hosting/ssh_on_webhosting)", jeśli to konieczne.
 
 ![ftpconnect](images/connect-ftp-step5.png){.thumbnail}
 
 ## Sprawdź również
 
-[Zmiana hasła do konta FTP](../zmiana-hasla-konto-ftp/){.external}
+[Zmień hasło użytkownika FTP](/pages/web/hosting/ftp_change_password){.external}.
 
-[Dostęp przez SSH na hostingu](../hosting_www_ssh_na_hostingu/){.external}
+[Korzystanie z połączenia SSH na hostingu](/pages/web/hosting/ssh_on_webhosting){.external}.
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+[Użyj PuTTY do logowania przez SSH](/pages/web/hosting/ssh_using_putty_on_windows)
+
+[Korzystaj z programu FileZilla na Twoim hostingu](/pages/web/hosting/ftp_filezilla_user_guide)
+
+[Korzystaj z Cyberduck na Twoim hostingu](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

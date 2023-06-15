@@ -4,14 +4,13 @@ slug: web_hosting_how_to_fix_the_500_internal_server_error
 excerpt: Zdiagnozuj najczęstsze przypadki błędów 500
 section: Diagnostyka
 order: 06
-updated: 2022-07-21
+updated: 2023-05-16
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 21-07-2022**
 
 
 ## Wprowadzenie 
@@ -88,6 +87,10 @@ Ze względów bezpieczeństwa Twoja strona WWW ukrywa ewentualne szczegóły dot
 
 Jeśli chcesz uzyskać dostęp do tych danych, możesz, korzystając z formuły hostingu [pro2014](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) lub wyższej, połączyć się ze stroną za pomocą [połączenia ssh](../hosting_www_ssh_na_hostingu/).
 
+### Sprawdź stan bazy danych
+
+W przypadku błędu 500 związanego z bazą danych na Twojej stronie WWW, skorzystaj z naszej dokumentacji ["Rozwiąż najczęstsze błędy związane z bazami danych"](/pages/web/hosting/diagnosis_database_errors).
+
 ### Przywróć zawartość strony <a name="restore"></a>
 
 > [!warning]
@@ -105,8 +108,18 @@ Jeśli po aktualizacji wersji PHP na Twoim hostingu wystąpił błąd 500, zapoz
 
 ## Sprawdź również <a name="gofurther"></a>
 
-[Plik .htaccess na hostingu](../hosting_www_plik_htaccess/)
+[Co zrobić, jeśli moja strona jest niedostępna?](/pages/web/hosting/diagnostic-website-not-accessible)
 
-[Przyczyny wyświetlania się “białej strony”](../hosting_www_jak_sprawdzic_przyczyne_wyswietlania_sie_bialej_strony/)
+[Co zrobić w przypadku błędu « Połączenie nie jest prywatne »?](/pages/web/hosting/diagnostic-not-secured)
+
+[Co zrobić w przypadku strony « Index of »?](/pages/web/hosting/diagnostic-index-of)
+
+[Co zrobić w przypadku strony "403 forbidden"?](/pages/web/hosting/diagnostic_403_forbidden)
+
+[Rozwiąż najczęstsze błędy związane z bazami danych](/pages/web/hosting/diagnosis_database_errors)
+
+[Moja strona jest powolny. Co robić? ](/pages/web/hosting/diagnostic_slownesses)
+
+[Usunięcie błędu "Strona nie została zainstalowana"](/pages/web/hosting/multisites_website_not_installed)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

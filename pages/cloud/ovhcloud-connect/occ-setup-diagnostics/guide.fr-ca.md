@@ -114,7 +114,7 @@ Si vous avez commandé un lien 10 Gbit/s, le SFP sera: 10GBase-LR. Utilisez la c
 speed 10000
 ```
 
-Pour plus d'informations, consultez les [capacités et limites techniques de l'offre OVHcloud Connect](../occ-limits/)
+Pour plus d'informations, consultez les [capacités et limites techniques de l'offre OVHcloud Connect](/pages/cloud/ovhcloud-connect/occ-limits)
 
 #### Désactiver l'auto-négociation
 
@@ -167,5 +167,7 @@ La BGP Area côté client doit être différente de celle côté OVHcloud.
 - La zone AS d'OVHcloud BGP : peut être la même entre la configuration côté DC et la configuration côté PoP (recommandé).
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

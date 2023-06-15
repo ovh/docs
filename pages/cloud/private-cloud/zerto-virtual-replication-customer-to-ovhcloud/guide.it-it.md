@@ -7,7 +7,7 @@ updated: 2022-02-11
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 11/02/2022**
@@ -169,7 +169,7 @@ La rete sarà necessariamente in /23 (512 IPs).
 
 > [!warning]
 >
-> Attenzione: se si si verifica un errore in questa fase, la VPN non sarà in grado di funzionare. 
+> Attenzione: se si verifica un errore in questa fase, la VPN non sarà in grado di funzionare. 
 >
 
 ![zerto vpn](images/image-EN-19.png){.thumbnail}

@@ -108,7 +108,7 @@ Follow this [guide](https://docs.ovh.com/asia/en/public-cloud/public-cloud-first
 
 > [!primary]
 >
->If you want to test the access from an existing instance, read this tutorial to connect it to the vRack: [Configuring vRack for Public Cloud](https://docs.ovh.com/asia/en/public-cloud/public-cloud-vrack/#in-case-of-an-existing-instance_2).
+>If you want to test the access from an existing instance, read this tutorial to connect it to the vRack: [Configuring vRack for Public Cloud](https://docs.ovh.com/asia/en/public-cloud/public-cloud-vrack/#in-case-of-an-existing-instance).
 >
 
 ### Step 5 - Example of verification with a Public Cloud Databases for Redis
@@ -153,5 +153,7 @@ redis-2612345abc-abcd1234defg.database.cloud.ovh.net:20185> GET mykey.test
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

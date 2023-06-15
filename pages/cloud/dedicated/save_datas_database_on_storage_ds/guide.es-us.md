@@ -3,8 +3,10 @@ title: 'Guardar copia de seguridad de la información y las bases de datos en un
 slug: guardar-copia-seguridad-informacion-bases-de-datos-servidor-almacenamiento
 excerpt: 'Cómo crear backups de sus datos en cinco sencillos pasos'
 section: Tutoriales
-updated: 2022-02-09
+updated: 2018-09-12
 ---
+
+**Última actualización: 12/09/2018**
 
 ## Introducción
 
@@ -68,11 +70,11 @@ No existe un modo RAID mejor que otro, ya que cada uno responde a necesidades di
 ### 2. Instalar y configurar el servidor
 
 Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} e instale el servidor.
- Como indicamos al principio, utilizaremos Debian 9.4. Para más información, consulte nuestra guía [Primeros pasos con un servidor dedicado](../primeros-pasos-servidor-dedicado/#instalar-o-reinstalar-el-servidor-dedicado_1){.external}.
+ Como indicamos al principio, utilizaremos Debian 9.4. Para más información, consulte nuestra guía [Primeros pasos con un servidor dedicado](../primeros-pasos-servidor-dedicado/#instalar-o-reinstalar-el-servidor-dedicado){.external}.
 
 Una vez seleccionado el sistema operativo, marque la casilla `Personalizar la configuración de las particiones`{.action} y haga clic en `Siguiente`{.action}.
 
-![Personalizar la configuración de las particiones](images/partition_customization.png){.thumbnail}
+![Personalizar la configuración de las particiones](images/custompartition.png){.thumbnail}
 
 Aquí podrá cambiar el tipo de RAID de su **/home** (1) y, si lo desea, aumentar el tamaño de la partición (2).
 

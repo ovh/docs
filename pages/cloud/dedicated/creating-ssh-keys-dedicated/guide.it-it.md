@@ -7,6 +7,10 @@ order: 4
 updated: 2022-03-31
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+>
+
 **Ultimo aggiornamento: 01/04/2022**
 
 ## Obiettivo
@@ -35,23 +39,23 @@ Su una macchina Mac o Linux, apri il tool Terminal (prompt dei comandi).
 Assicurati di avere una cartella “.ssh” nella tua directory $HOME. Se la cartella non esiste, creala:
 
 ```bash
-# mkdir ~/.ssh
+mkdir ~/.ssh
 ```
 
 Esagui il seguente comando per creare una chiave RSA da 4096 bit:
 
 ```bash
-# ssh-keygen -b 4096
+ssh-keygen -b 4096
 ```
 L’utilizzo dell’opzione “-t” con il comando sopra citato consente di specificare un metodo crittografico, ad esempio:
 
 ```bash
-# ssh-keygen -t ed25519 -a 256
+ssh-keygen -t ed25519 -a 256
 ```
 
 Il comando ti chiederà di salvare la chiave appena creata:
 
-```bash
+```console
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
@@ -60,7 +64,7 @@ Una volta confermata l’operazione, potrai inserire una passphrase, una sorta d
 
 È necessario salvare la chiave SSH nella directory “.ssh”.
 
-```bash
+```console
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:
@@ -87,7 +91,7 @@ The key's randomart image is:
 Per leggere ed esportare la tua chiave pubblica, utilizza il comando “cat” sul file della chiave e copia il seguente risultato: 
 
 ```bash
-# cat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8teh2NJ42qYZV98gTNhumO1b6rMYIkAfRVazl
 k6dSS3xf2MXJ4YHsDacdjtJ+evXCFBy/IWgdkFtcvsGAMZ2N1RdvhDyQYcy6NDaJCBYw1K6Gv5fJ
 SHCiFXvMF0MRRUSMneYlidxUJg9eDvdygny4xOdC6c1JrPrSgOc2nQuKeMpOoOWLINIswg1IIFVk

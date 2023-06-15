@@ -89,7 +89,7 @@ The managed permissions are listed below. Note that depending on the level (buck
 
 | Permission | Bucket level | Object level |
 | --- | --- | --- |
-| READ | allows list/download all objects in the bucket | allows list/download object and its metadata |
+| READ | allows to list all objects in the bucket | allows to read an object and its metadata |
 | WRITE | allows creation/deletion/overwrites of objects in the bucket | n/a |
 | READ_ACP | allows read of the bucket ACL | allows read of the object ACL |
 | WRITE_ACP | allows creation/deletion/overwrites of the bucket ACL | allows creation/deletion/overwrites of the object ACL |
@@ -235,5 +235,7 @@ You might consider using user policies if you want to set **cross-resource** per
 >
 
 ## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

@@ -45,8 +45,8 @@ Voici un lexique rapide des termes utilisés dans ce tutoriel :
 |Lexique|Description|
 |---|---|
 |YOUR_IPV6|L’adresse IPv6 assignée à votre service|
-|IPv6_PREFIX|Le préfixe de votre bloc IPv6 (Ex: 2607:5300:60:62ac::/128 -> netmask = 128)|
-|IPv6_GATEWAY|La passerelle de votre bloc IPv6|
+|IPV6_PREFIX|Le préfixe de votre bloc IPv6 (Ex: 2607:5300:60:62ac::/128 -> netmask = 128)|
+|IPV6_GATEWAY|La passerelle de votre bloc IPv6|
 
 
 ### Récupérer les informations réseaux
@@ -217,5 +217,7 @@ Si votre instance répond, il est probable qu'une des étapes de votre configura
 Dans tous les cas, n'hésitez pas à effectuer une demande au support avec les éléments testés ci-dessus afin d'obtenir une analyse de notre part.
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services. 
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>

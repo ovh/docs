@@ -4,10 +4,10 @@ slug: s3/getting-started-with-object-storage
 excerpt:
 section: Guides généraux pour débuter
 order: 020
-updated: 2022-09-27
+updated: 2023-04-28
 ---
 
-**Dernière mise à jour le 27/09/2022**
+**Dernière mise à jour le 28/04/2023**
 
 ## Objectif
 
@@ -17,7 +17,7 @@ Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs 
 
 - Un [projet Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/create_a_public_cloud_project/) dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
-- Avoir créé un [utilisateur S3](https://docs.ovh.com/ca/fr/storage/s3/gestion-des-identites-et-des-acces/)
+- Avoir créé un [utilisateur S3](/pages/cloud/storage/object_storage/s3_identity_and_access_management)
 
 ## En pratique
 
@@ -85,11 +85,13 @@ Voici les valeurs de configuration que vous pouvez définir spécifiquement  :
 | max_bandwidth | Integer | **Défaut :** None | La bande passante maximale qui sera consommée pour le chargement et le téléchargement de données vers et depuis vos buckets. |
 | verify_ssl | Boolean | **Défaut :** true | Active / Désactive la vérification des certificats SSL |
 
+Pour connaître la liste des endpoints par région et par classe de stockage, vous pouvez vous référer à [cette page](/pages/cloud/storage/object_storage/s3_location).
+
 #### Utilisation
 
 > [!primary]
 >
-> Si vous n'avez pas installé `awscli-plugin-endpoint`, vous devez ajouter `--endpoint-url https://s3.<region_in_lowercase>.perf.cloud.ovh.net` à la ligne de commande.
+> Si vous n'avez pas installé `awscli-plugin-endpoint`, vous devez ajouter `--endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net` à la ligne de commande.
 >
 
 > [!primary]
@@ -101,7 +103,7 @@ Voici les valeurs de configuration que vous pouvez définir spécifiquement  :
 
 ```bash
 aws s3 mb s3://<bucket_name>
-aws --endpoint-url https://s3.<region_in_lowercase>.perf.cloud.ovh.net --profile default s3 mb s3://<bucket_name>
+aws --endpoint-url https://s3.<region_in_lowercase>.<storage_class>.cloud.ovh.net --profile default s3 mb s3://<bucket_name>
 ```
 
 **Lister vos buckets**
@@ -209,5 +211,7 @@ aws s3api s3api delete-object-tagging --bucket <bucket_name> --key test1
 ```
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

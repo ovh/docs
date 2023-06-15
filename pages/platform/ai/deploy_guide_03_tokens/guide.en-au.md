@@ -4,14 +4,12 @@ slug: deploy/tokens
 excerpt: Discover how to create a scoped token and query your AI Deploy app
 section: AI Deploy - Guides
 order: 03
-updated: 2022-11-03
+updated: 2023-04-04
 ---
 
-**Last updated 3rd November, 2022.**
+**Last updated 4th April, 2023.**
 
 > [!primary]
->
-> AI Deploy is in `beta`. During the beta-testing phase, the infrastructure’s availability and data longevity are not guaranteed. Please do not use this service for applications that are in production, as this phase is not complete.
 >
 > AI Deploy is covered by **[OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf)**.
 >
@@ -89,7 +87,7 @@ This newly generated token provides read access over all resources tagged with t
 
 #### Operator token
 
-An operator token grants read access along with management access for the matching apps. This means that you can manage the AI Deploy app lifecycle (start/stop/delete) using either the CLI (more info [here](https://docs.ovh.com/au/en/publiccloud/ai/cli/install-client/)) or the [AI Training API](https://gra.training.ai.cloud.ovh.net/) by providing this token.
+An operator token grants read access along with management access for the matching apps. This means that you can manage the AI Deploy app lifecycle (start/stop/delete) using either the CLI (more info [here](https://docs.ovh.com/au/en/publiccloud/ai/cli/install-client/)) or the [AI Training API](https://gra.ai.cloud.ovh.net/) by providing this token.
 
 This Operator token will be scoped on a specific AI Deploy app and we will use the default `ovh/id` label to do so (since it is reserved, there is only one AI Deploy app that can match this label selector).
 
@@ -125,7 +123,7 @@ You can also directly CURL the AI Deploy app using the token as an `Authorizatio
 
 ```bash
 export TOKEN=<your-token>
-curl "https://<your-app-id>.app.<your-app-region>.training.ai.cloud.ovh.net" -H "Authorization: Bearer $TOKEN"
+curl "https://<your-app-id>.app.<your-app-region>.ai.cloud.ovh.net" -H "Authorization: Bearer $TOKEN"
 
 > Hello, World!
 ```
@@ -157,3 +155,5 @@ If you simply need to invalidate the token, you can delete it using the same act
 ## Feedback
 
 Please feel free to send us your questions, feedback and suggestions to help our team improve the service on the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.

@@ -21,7 +21,7 @@ La tecnología OVHcloud Link Aggregation (OLA) está diseñada por nuestros equi
 
 ## Requisitos
 
-- [Haber configurado su ID de cliente para la funcionalidad de OVHcloud Link Aggregation desde el área de cliente de OVHcloud](https://docs.ovh.com/es/dedicated/ola-manager/)
+- [Haber configurado su ID de cliente para la funcionalidad de OVHcloud Link Aggregation desde el área de cliente de OVHcloud](https://docs.ovh.com/es/dedicated/ola-manager/).
 - Tienes acceso a tu [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento

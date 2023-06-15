@@ -4,8 +4,10 @@ excerpt: In dieser Hilfe wird beschrieben, wie Sie PHP-FPM für Ihr Webhosting a
 slug: die_php-optimierung_beim_ovh_webhosting_aktivieren
 section: PHP
 order: 03
-updated: 2022-10-05
+updated: 2020-05-05
 ---
+
+**Letzte Aktualisierung am 05.05.2020**
 
  
 ## Was ist PHP-FPM?
@@ -16,7 +18,7 @@ PHP-FPM wurde mit Opcode-Caching kompiliert, was es erlaubt, die Festplattenaufr
 Dadurch haben wir bei unseren Labortests im Vergleich zu dem alten Mechanismus eine bis zu siebenfache Steigerung der Performance beobachten können.
 
 ## In Ihrem Kundencenter
-In dieser Anleitung erfahren Sie, wie Sie PHP-FPM aktivieren und die PHP-Version mithilfe der .ovhconfig Datei definieren. Noch einfacher geht das über Ihr Kundencenter - wie, das erfahren Sie in folgender Anleitung: []({legacy}1999)
+In dieser Anleitung erfahren Sie, wie Sie PHP-FPM aktivieren und die PHP-Version mithilfe der .ovhconfig Datei definieren. Noch einfacher geht das über Ihr Kundencenter - wie, das erfahren Sie in [folgender Anleitung](https://docs.ovh.com/de/hosting/konfiguration_von_php_fur_ein_ovh_webhosting_2014/).
 
 Achtung: Wenn Sie PHP-FPM verwenden, sind folgende Optionen aus Sicherheitsgründen deaktiviert:
 

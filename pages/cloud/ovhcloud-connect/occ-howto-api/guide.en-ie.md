@@ -18,11 +18,11 @@ Configuring the OVHcloud Connect solution can be done via API.
 ## Requirements
 
 > [!warning]
-> To ensure correct operation of this service, you must be aware of the [technical capabilities and limitations of the OVHcloud Connect solution](../occ-limits/) and configure your network devices accordingly.
+> To ensure correct operation of this service, you must be aware of the [technical capabilities and limitations of the OVHcloud Connect solution](/pages/cloud/ovhcloud-connect/occ-limits) and configure your network devices accordingly.
 >
 
-- an [OVHcloud Connect service](https://www.ovh.ie/solutions/ovhcloud-connect/)
-- access to the [OVHcloud APIv6](https://api.ovh.com/){.external} (create your credentials by consulting [this guide](../../api/first-steps-with-ovh-api/))
+- an [OVHcloud Connect service](https://www.ovh.co.uk/solutions/ovhcloud-connect/)
+- access to the [OVHcloud APIv6](https://api.ovh.com/){.external} (create your credentials by consulting [this guide](/pages/account/api/first-steps))
 
 ## Instructions
 
@@ -223,5 +223,7 @@ When all sub-resources have been deleted, the PoP configuration can be safely re
 
 
 ## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

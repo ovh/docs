@@ -1,263 +1,149 @@
 ---
-title: 'CMS, instalar manualmente o Joomla'
-excerpt: Como instalar manualmente o Joomla?
+title: "Tutorial - Instalar manualmente o Joomla!"
+excerpt: "Descubra como instalar manualmente o seu CMS Joomla!"
 slug: cms_instalar_manualmente_o_joomla
 section: CMS
 order: 05
-updated: 2022-12-01
+updated: 2023-04-07
 ---
 
+**Última atualização: 07/04/2023**
 
-## Parte 1: preparação da instalação
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+  
+## Objetivo
 
-## Ferramentas necessárias
-Para instalar a sua plataforma Joomla! no seu alojamento partilhado, sugerimos o uso do cliente FTP FileZilla (gratuito).
+Aqui, poderá encontrar todos os elementos para instalar manualmente o CMS (Content Management System) Joomla! em apenas alguns passos.
 
-## Identificadores de acesso necessários para a instalação
-Assegura-se que possui o Nichandle e a palavra-passe associada para poder ligar-se ao seu Espaço Cliente OVHcloud, se necessário.
+> [!warning]
+>
+> A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
+> 
+> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) ou [editor do CMS Joomla!](https://www.joomla.org/){.external}. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste tutorial.
+>
 
+> [!success]
+>
+> Para instalar o Joomla! **automaticamente** a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), consulte o nosso manual sobre a [instalação de um módulo num clique](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/).
+>
+> Para instalar **manualmente um outro CMS** (WordPress, Drupal, PrestaShop), consulte o nosso manual sobre a [instalação manual de um CMS](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/).
+>
 
-- Obtenha o seu identificador e palavra-passe de acesso FTP para se ligar ao espaço de armazenamento do seu serviço de alojamento partilhado OVHcloud.
-Um guia para obtenção dos dados de acesso FTP está à disposição:[]({legacy}1374)
+**Descubra como instalar manualmente o seu CMS Joomla!**
 
-- É necessário possuir um identificador e palavra-passe da base de dados SQL que lhe permita a ligação a uma base de dados.
-Um guia para obtenção dos dados de acesso à base de dados está à disposição:[]({legacy}1374)
+## Requisitos
 
+- Ter um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que contenha, pelo menos, uma base de dados.
+- Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/)
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
+  
+## Instruções
 
-![joomla](images/3141.png){.thumbnail}
+### Etapa 1 - preparar a instalação <a name="step1"></a>
 
+Para instalar o CMS **Joomla!** na sua oferta de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/), são necessários alguns preparativos.
 
-## Parte 2: recuperação dos ficheiros "fonte" da instalação
+Siga os **etapas indicados** no nosso manual sobre a [instalação manual de um CMS](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/) antes de avançar com o passo 2 abaixo.
 
-- Aceda ao site oficial do [Joomla](https://www.joomla.org/download.html).
+### Etapa 2 - finalizar a instalação manual <a name="step2"></a>
 
- Aí encontrará, geralmente, o link para fazer o download da última versão estável do CMS para o seu computador.
+> [!success]
+>
+> Antes de continuar a instalação, esvazie a cache do seu browser para evitar qualquer erro.
+>
 
+#### 2.1 - Aceder ao seu site Joomla! através do seu browser
 
-O ficheiro que vai obter estará, geralmente, comprimido (em formato zip, certamente). Será necessário poder descomprimir esse ficheiro no seu computador. Encontrará na Internet vários tutoriais para ajuda com essa operação.
+Introduza o seu domínio na barra de pesquisa do seu browser.
 
-![joomla](images/3142.png){.thumbnail}
+Se os ficheiros são do Joomla! foram corretamente colocados na sua pasta raiz, a página de seleção da língua para o Joomla! aparece:
 
+![Joomla instalação step 1](images/Joomla-install-select-language-1.png){.thumbnail}
 
-## Parte 3: colocação dos ficheiros no seu espaço de armazenamento através de FTP
+Selecione o idioma, introduza o nome do seu website e clique em `Setup Login Data`{.action}.
 
-## Descompressão da pasta de ficheiros
-Abra a pasta na qual guardou o ficheiro comprimido.
+#### 2.2 - Configurar os dados de ligação ao seu Joomla!
 
-Clique com o botão do lado direito do rato e escolha "Extrair tudo".
+Defina os acessos ao seu espaço de administração (*Back Office*) Joomla! :
 
-Indique um destino a fim de descomprimir os ficheiros para esse destino.
+![Joomla instalação step 2](images/Joomla-install-define-admin-2.png){.thumbnail}
 
-Vários tutoriais e softwares de descompressão estão disponíveis na Internet para o ajudar com estas ações:
+> [!primary]
+>
+> O termo "Super User" designa a pessoa que administra o CMS.
 
-A pasta terá o nome "Joomla"
+- *Enter the real name of your Super User*: introduza o seu nome real.
+- *Set the username for your Super User account*: escolha um nome de utilizador que lhe permitirá aceder ao seu espaço de administração Joomla!
+- *Set password for your Super User account*: escolha uma palavra-passe com um mínimo de **12 caracteres**.
+- *Enter the email address of the website Super User*: introduza um endereço de e-mail válido. Este servirá para receber as notificações enviadas pelo Joomla!
 
-![joomla](images/3143.png){.thumbnail}
+Verifique os elementos inseridos e clique em `Setup Database Connection`{.action}.
 
-## Ligação ao espaço de alojamento através de FTP
-Para colocar os ficheiros de Joomla! no seu alojamento, deverá ligar-se ao mesmo.
+#### 2.3 - Associar a sua base de dados ao seu Joomla!
 
-Está à disposição um guia de ajuda à ligação FTP num alojamento partilhado OVH:[]({legacy}1374)
+Insira as informações solicitadas relativas à base de dados:
 
-![joomla](images/3144.png){.thumbnail}
+![Joomla instalação step 3](images/Joomla-install-db-connect-3.png){.thumbnail}
 
-## Transferência dos ficheiros através de FTP
-Siga estas etapas para colocar os seus ficheiros no espaço FTP.
+Para preencher os campos abaixo, consulte o **etapa 1.4** do tutorial para a [instalação manual de um CMS](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/), e consulte as seguintes informações:
 
-## Etapa 1
-Uma vez já ligado através de FileZilla:
+- *Select the database type*: selecione o tipo da sua base de dados entre os tipos disponíveis para o Joomla! Se utiliza uma base de dados partilhada OVHcloud, pode deixar por defeito o valor **MySQLi**.
 
+- *Enter the host name, usually "localhost" or a name provided by your host*: indique o nome do servidor da base de dados, presente no e-mail de instalação ou na Área de Cliente OVHcloud.
 
-- Na secção "Site local", que corresponde aos ficheiros presentes no seu computador local, abra a pasta que descomprimiu com o nome "Joomla!" e na qual estão presentes os ficheiros do CMS.
+> [!primary]
+> 
+> - O nome do servidor de uma base de dados incluída no serviço de alojamento web tem esta forma: `NameOfYourDatabase.mysql.db`. 
+>
+> - O nome do servidor de uma base de dados Web Cloud Databases começa pelo seu identificador de cliente OVHcloud e tem a seguinte forma: `aa00000-XXX.eu.clouddb.ovh.net`, **"aa00000"** corresponde ao seu identificador OVHcloud sem o **"-ovh"** e os **"X"** devem ser substituídos pelo resto da referência do seu serviço Web Cloud Databases.
+>
 
+- *Either a username you created or a username provided by your host*: é idêntico ao nome da base de dados se utiliza uma base de dados incluída no seu alojamento web.
+Para as bases de dados criadas numa Web Cloud Databases, consulte as informações indicadas o **etapa 1.4** do guia sobre a [instalação manual de um CMS](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/).
 
-Na secção "Site Distante/remoto", que corresponde ao espaço de alojamento OVHcloud, abra a pasta "www". É nessa pasta que deverão ser colocados todos os ficheiros do CMS.
+- *Either a password you created or a password provided by your host*: definiu-o durante a criação da sua base de dados. Também é possível que a tenha modificado entretanto, sugerimos que o verifique.
 
-Se a pasta não existir, terá  a possibilidade de a criar.
+- *Enter the database name*: este nome foi definido durante a criação da base de dados na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Se utiliza uma base de dados incluída no alojamento web, o nome de utilizador da base de dados é idêntico.
 
-Os seus ficheiros devem estar obrigatoriamente na pasta "www". Se não o fizer, o procedimento de instalação não estará diretamente acessível através do seu nome de domínio.
+- *Enter a table prefix or use the randomly generated one*: se a instalação for efetuada com uma nova base de dados, insira o "prefixo" à sua escolha. Se utilizar uma base de dados já utilizada por outro website, consulte o **etapa 1.4** do guia sobre a [instalação manual de um CMS](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/) para não introduzir um "prefixo" de tabela já utilizado na sua base de dados.
 
-![joomla](images/3145.png){.thumbnail}
+- **Connection Encryption**: deixe o valor **Default**.
 
-## Etapa 2
-Uma vez abertas as pastas:
+Clique em `Install Joomla`{.action}.
 
-Na secção "Site local" encontrará os ficheiros necessários à instalação do CMS Joomla!.
+Surge a seguinte mensagem:
 
-Para selecionar todos os ficheiros, use CTRL+A.
+![Joomla instalação step 3-1](images/Joomla-install-db-connect-3-1.png){.thumbnail}
 
-Arraste e largue, de seguida, os ficheiros na secção "Site Distante/Remoto" dentro da pasta "www".
+Uma vez que utiliza uma base de dados presente fora de um alojamento local, deverá eliminar o * token* gerado automaticamente aquando da instalação do seu Joomla!
 
-É muito provável que a sua pasta "www" não esteja vazia. Vamos abordar esse assunto mais adiante neste guia.
+Este ficheiro a eliminar encontra-se no seu [espaço de armazenamento FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/).
 
-![joomla](images/3146.png){.thumbnail}
+Uma vez ligado, aceda à pasta **instalação** do seu Joomla! e elimine apenas o * token* indicado pela mensagem de alerta. Está presente sob a forma de um ficheiro **.txt**.
 
-## Etapa 3
-A transferência de ficheiros está em curso.
+De seguida, volte ao seu browser e clique novamente em `Install Joomla`{.action}.
 
-Aguarde até que todos os ficheiros sejam colocados no servidor FTP. Isso poderá levar alguns minutos.
+#### 2.4 - Terminar a instalação
 
-Uma vez que a transferência esteja concluída, assegure-se que todos os ficheiros e as pastas foram corretamente transferidos.
+Uma vez terminada a instalação, surgirá a seguinte página:
 
-Esta operação é a última da parte consagrada à transferência de ficheiros para o espaço FTP.
+![Joomla instalação step 4](images/Joomla-install-ending-4.png){.thumbnail}
 
-![joomla](images/3147.png){.thumbnail}
+A instalação está terminada, mas pode adicionar línguas adicionais ao seu CMS caso seja necessário.
 
+>[!success]
+>
+> Parabéns, o seu Joomla! está pronto para ser utilizado e administrado.
+>
+  
+## Quer saber mais? <a name="go-further"></a>
 
-## Parte 4: ligação com a base de dados
-
-- Antes de continuar a instalação, limpe a cache do seu browser a fim de evitar eventuais erros.
-
-
-Para estabelecer a ligação entre o Joomla! e a sua base de dados, devemos seguir as etapas de instalação do CMS.
-
-## Etapa 1
-Aceda ao seu nome de domínio. O assistente de instalação será executado.
-
-Num primeiro tempo é necessário definir as informações de configuração do Joomla! :
-
-Selecione a Linguagem: selecione a linguagem de instalação do Joomla!.
-
-Nome do website: defina o nome do site, e este nome pode influenciar o referenciamento.
-
-Descrição: defina a descrição do site, e esta descrição pode influenciar o referenciamento.
-
-Site offline: permite bloquear o acesso do website ao público.
-
-E-mail: introduza aqui um endereço de e-mail válido.
-
-Login: escolha o login com o qual deseja efetuar login na consola de administração.
-
-Password: defina a sua password para aceder à consola de administração do site.
-
-Confirmar a password: valide a password introduza anteriormente.
-
-Clique em "Seguinte" para para a etapa seguinte.
-
-![joomla](images/3148.png){.thumbnail}
-
-## Etapa 2
-Muna-se dos identificadores da sua base de dados (ajuda no inicio deste guia).
-
-Introduza as informações pedidas relativas à base de dados:
-
-Tipo de base de dados: selecione o tipo de base MySQL.
-
-Nome do servidor: introduza o nome do servidor da sua base de dados indicado no e-mail de instalação ou no seu Espaço Cliente.
-
-Nome do utilizador: idêntico ao nome da base de dados, encontra-a no e-mail de instalação da base de dados.
-
-Password: defina no seu Espaço Cliente.
-
-Nome da base de dados: escolhida aquando da sua criação no seu Espaço Cliente.
-
-Prefixo das tabelas: útil para efetuar várias instalações de Joomla! numa mesma base de dados. Neste caso deve introduzir um prefixo diferente para cada uma das instalações.
-
-Instalação anterior: se já existem tabelas na base de dados e são do mesmo prefixo, elas serão renomeadas com o prefixo "bak_".
-
-Clique em "Seguinte" para validar as informações solicitadas
-
-![joomla](images/3149.png){.thumbnail}
-
-
-## Finalização
-
-## Finalização das etapas de instalação
-A fim de terminar a instalação do Joomla!, continue as etapas de instalação
-
-## Etapa 1
-Será relembrado dos parâmetros selecionados anteriormente.
-
-Serão solicitadas duas informações:
-
-
-- Tipo de site:
-
-
-Selecione "Simples página inicial em Português".
-
-
-- Envio da configuração
-
-
-Indique se deseja receber por e-mail informações úteis, tal como a password de acesso à consola de administração definida anteriormente.
-
-Clique em "Instalar" para prosseguir.
-
-![joomla](images/3150.png){.thumbnail}
-
-## Etapa 2
-Aguarde alguns instanates durante a instalação.
-
-![joomla](images/3151.png){.thumbnail}
-
-## Etapa 3
-Por medidas de segurança, o Joomla!convida-o a eliminar a pasta de instalação.
-
-Clique apenas em "Eliminar a pasta de instalação".
-
-![joomla](images/3152.png){.thumbnail}
-
-## Etapa 4
-Aparecerá uma mensagem a confirmar a eliminação da pasta.
-
-Poderá de seguida liga-se à parte de administração do Joomla!. Identifique-se na janela que é apresentada, onde poderá consultar a página padrão implementada pelo Joomla!.
-
-![joomla](images/3153.png){.thumbnail}
-
-## Visualização da parte de administração do Joomla!
-Encontrará aqui uma pré-visualização do painel de administração Joomla!.
-
-![joomla](images/3154.png){.thumbnail}
-
-
-## Informações úteis
-O suporte da OVHcloud não está habilitado para responder às suas questões sobre configuração e utilização de Joomla!.
-Está no entanto disponível um guia para o ajudar na utilização: []({legacy}2053)..
-
-Poderá igualmente consultar os fóruns dedicados à solução Joomla!.
-
-
-- Consulte o link para um [fórum Joomla!](http://forum.joomlapt.com/).
-
-
-
-## Erro clássico: site em construção
-Colocou os seus ficheiros, através de FTP mas, continua a ver "Página em construção" numa página padrão criada pela OVHcloud aquando da instalação do seu alojamento.
-
-Se colocar o seu conteúdo na pasta "www" sem ter eliminado o conteúdo padrão adicionado pela OVHcloud, encontrará esse caso.
-
-Para corrigir o problema:
-
-
-- elimine ou altere o nome do ficheiro "index.html".
-
-
-Poderá ser interessante apenas mudar o nome para que, caso necessário, possa mais tarde colocar o site em manutenção.
-
-Outra informação útil: Os ficheiros do seu website deverão ser colocados na pasta "www" para que sejam tomados em conta.
-
-![joomla](images/3155.png){.thumbnail}
-
-## Erro Clássico: versão de PHP
-Trata-se de um erro relativo à versão de PHP do seu servidor.
-
-A causa é simples: a última versão de PHP não foi ativada.
-
-Tem à sua disposição um guia para o ajudar a alterar a versão de PHP em uso no seu alojamento:[aqui]({legacy}1207)
-
-![joomla](images/3156.png){.thumbnail}
-
-## Erro clássico: Magic Quotes
-Trata-se de uma variável mal definida que impede a instalação do Joomla!.
-
-Magic Quotes deve estar como Off e, como tal, definido como 0 no seu ficheiro de configuração.
-
-Nas novas ofertas 2014, se PHP-FPM está ativado, a variável Magic Quote está desativada de forma padrão. Para as antigas ofcertas partilhada é necessário desativar esta variável no ficheiro .htaccess.
-
-Um guia está disponível para o ajudar na modificação da variável PHP na oferta de alojamento partilhado 2014:[Modificar a versão PHP do alojamento]({legacy}1207)
-
-Um guia está disponível para o ajudar na modificação da variável PHP nas antigas ofertas:[Modificação da variável PHP nas antigas ofertas OVHcloud]({legacy}1175)
-
-![joomla](images/3157.png){.thumbnail}
-
+[Site oficial Joomla!](https://joomla.org){.external}
+ 
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+ 
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+ 
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

@@ -19,13 +19,13 @@ Le protocole de communication SSH (Secure Shell) est l'outil principal pour éta
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
-> Si vous rencontrez des difficultés lors de l'exécution de ces actions, nous vous invitons à contacter un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou échanger avec notre communauté d'utilisateurs sur https://community.ovh.com/. OVHcloud ne peut pas vous fournir d’assistance technique à ce sujet.
+> Si vous rencontrez des difficultés lors de l'exécution de ces actions, nous vous invitons à contacter un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou échanger avec notre communauté d'utilisateurs sur https://community.ovh.com/. OVHcloud ne peut pas vous fournir d’assistance technique à ce sujet.
 >
 
 ## Prérequis
 
 - Avoir un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) ou un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud.
-- Une application cliente SSH (en ligne de commande ou en interface graphique)
+- Une application cliente SSH (en ligne de commande ou en interface graphique).
 
 > [!primary]
 > Ce guide ne s'applique pas aux installations standard de serveurs Windows car celles-ci reposent sur le protocole de Bureau à distance (*Remote Desktop Protocol*) pour les connexions. Les connexions SSH sont cependant utilisées pour le mode rescue OVHcloud. Retrouvez plus d’informations dans la section [Aller plus loin](#gofurther) de ce guide.
@@ -172,5 +172,7 @@ Veuillez consulter la FAQ officielle et la documentation de PuTTY pour plus d'in
 [Mode rescue serveur dédié](https://docs.ovh.com/fr/dedicated/ovh-rescue/)
 
 [VPS mode rescue](https://docs.ovh.com/fr/vps/mode-rescue-vps/)
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: 6a0983a2-77d8-4a47-8f4c-1398ffaddfa5
 full_slug: voip-line-change-offer-options

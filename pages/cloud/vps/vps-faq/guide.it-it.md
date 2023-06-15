@@ -7,8 +7,10 @@ updated: 2022-05-05
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
+
+**Ultimo aggiornamento: 05/05/2022**
 
 ## FAQ VPS
 
@@ -39,20 +41,20 @@ In generale, si può affermare che gli utenti con un’attività Web in crescita
 ### Quali sono le differenze tra le soluzioni VPS e Public Cloud?
 
 Il VPS è una soluzione adatta ad ambienti di preproduzione e produzione che richiedono prestazioni costanti. 
-Il Public Cloud di OVHcloud propone invece un'infrastruttura multiserver con macchine high availability. e con rete privata vRack disponibile.
+Il Public Cloud di OVHcloud propone invece un'infrastruttura multiserver con macchine high availability e con rete privata vRack disponibile.
 
 ### Come scegliere il proprio VPS OVHcloud?
 
 Per scegliere un VPS adatto alle proprie esigenze, ti consigliamo di verificare:
 
-- la quantità di risorse necessarie (processore, memoria, spazio disco, banda passante...)
-- il sistema operativo richiesto (Linux o Windows)
+- la quantità di risorse necessarie (processore, memoria, spazio disco, banda passante...).
+- il sistema operativo richiesto (Linux o Windows).
 - i prerequisiti tecnici essenziali per il corretto funzionamento dell'applicazione (ad esempio, un database richiede velocità in lettura/scrittura).
 
 Per effettuare questa operazione, scegli tra le nostre soluzioni VPS:
 
-- **VPS Starter**: macchine entry level per testare la nostra offerta (esclusivamente con distribuzione Linux, senza pannello di gestione Web)
-- **VPS Value, Essential e Comfort**: ideali per l'hosting di siti Web, servizi di e-commerce o sistemi di monitoring
+- **VPS Starter**: macchine entry level per testare la nostra offerta (esclusivamente con distribuzione Linux, senza pannello di gestione Web).
+- **VPS Value, Essential e Comfort**: ideali per l'hosting di siti Web, servizi di e-commerce o sistemi di monitoring.
 - **VPS Elite**: adattato a siti e-commerce e applicazioni che richiedono molte risorse CPU e memoria.
 
 

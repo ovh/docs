@@ -8,7 +8,7 @@ updated: 2021-12-30
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 30/12/2021**
@@ -31,7 +31,7 @@ In questo modo è possibile, ad esempio, importare le immagini delle macchine vi
 
 ## Gestione delle immagini
 
-- - Di default, se non viene creata alcuna immagine, visualizzi la lista delle immagini pubbliche predefinite:
+- Di default, se non viene creata alcuna immagine, visualizzi la lista delle immagini pubbliche predefinite:
 
 ![public-cloud](images/horizon_images.png){.thumbnail}
 

@@ -4,9 +4,10 @@ excerpt: 'Partilhado: Utilização do Putty em Windows'
 slug: partilhado_utilizacao_do_putty_em_windows
 section: FTP e SSH
 order: 08
-updated: 2022-10-05
+updated: 2020-05-05
 ---
 
+**Última atualização: 05/05/2020**
 
 ## Introdução
 Nos sistemas Windows existem vários programas disponíveis para a utilização de SSH.

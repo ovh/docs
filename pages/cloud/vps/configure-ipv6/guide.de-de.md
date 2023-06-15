@@ -8,7 +8,7 @@ updated: 2022-12-01
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
 **Letzte Aktualisierung am 01.12.2022**
@@ -142,7 +142,7 @@ Auf diese Weise können Sie die IPv6-Konfiguration absondern und die Änderungen
 
 Fügen Sie folgende Zeilen zur Datei hinzu. Ersetzen Sie die generischen Elemente (*YOUR_IPV*, *IPV6_PREFIX* und *IPV6_GATEWAY*) sowie das Netzwerkinterface (falls Ihr Server nicht **eth0** verwendet) durch Ihre personalisierten Werte.
 
-```
+```console
 auto eth0
 iface eth0 inet6 static
 mtu 1500
@@ -262,7 +262,7 @@ cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scrip
 
 Ändern Sie anschließend die Datei `ifcfg-eth0`, indem Sie die IPv6 Konfiguration Ihres Servers hinzufügen. Ersetzen Sie die generischen Elemente (*YOUR_IPV*, *IPV6_PREFIX* und *IPV6_GATEWAY*) durch Ihre personalisierten Werte.
 
-```
+```console
 IPV6INIT=yes
 IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
@@ -278,7 +278,7 @@ IPV6_DEFAULTGW=IPV6_GATEWAY
 
 - Bearbeiten Sie die Datei und fügen Sie die folgenden Zeilen hinzu. Ersetzen Sie die generischen Elemente (*IPV6_GATEWAY* und **eth0**, falls erforderlich) durch Ihre personalisierten Werte.
 
-```
+```console
 IPV6_GATEWAY dev eth0
 default via IPV6_GATEWAY
 ```
@@ -290,7 +290,7 @@ service networking restart
 ```
 
 ```bash
-systemctl restnetworking
+systemctl restart networking
 ```
 
 
@@ -347,7 +347,7 @@ ping6 proof.ovh.net
 
 - **Für ein Windows-System** verwenden Sie den folgenden Befehl:
 
-```
+```powershell
 ipconfig
 
 Windows IP Configuration
@@ -365,7 +365,7 @@ Ethernet adapter Ethernet:
 
 Um die Verbindung zu testen, verwenden Sie folgenden Befehl:
 
-```
+```powershell
 ping -6 proof.ovh.net
 ```
 

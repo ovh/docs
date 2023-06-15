@@ -39,7 +39,7 @@ The data is not stored directly in the Storage Pool, it is stored in **Storage C
 There are also **Volume Groups** that provide the ability to access via ISCSI or directly in SCSI simulation for:
 
 - A third-party computer outside the cluster or a cluster VM
-- Multiple third-party computers or VMs in the cluster for applications that require shared storage, such as Microsoft SQL databases in cluster mode
+- Multiple third-party computers or VMs in the cluster for applications that require shared storage, such as Microsoft SQL databases in Cluster mode
 
 ## Instructions
 
@@ -121,5 +121,7 @@ The **Volume Group** will then appear in the list.
 [Nutanix storage documentation](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v5_20:wc-storage-management-wc-c.html)
 
 [Nutanix licences](https://www.nutanix.com/products/software-options)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -38,7 +38,7 @@ A ligação ao IPMI pode ser efetuada principalmente através de vários método
 
 - Um terceiro método, unicamente disponível para os servidores mais recentes, permite utilizar uma ferramenta KVM a partir de um browser web.
 
-Para ativar um destes métodos, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)). Na secção `Bare Metal Cloud`{.action}, clique em `Servidores dedicados`{.action} e selecione o seu servidor e depois clique no separador `IPMI`{.action}.
+Para ativar um destes métodos, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Na secção `Bare Metal Cloud`{.action}, clique em `Servidores dedicados`{.action} e selecione o seu servidor e depois clique no separador `IPMI`{.action}.
 
 ### Aceder com a applet Java <a name="applet-java"></a>
 
@@ -104,7 +104,7 @@ A reinicialização do IPMI demora alguns minutos.
 > [!warning]
 > A OVHcloud não garante a funcionalidade dos sistemas operativos instalados através do IPMI. Este método só deve ser considerado por um administrador de servidores experiente.
 
-Para começar, abra o [IPMI a partir de uma applet Java](./#applet-java) através da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)). A seguir, clique em `Device`{.action} na barra de menus e selecione `Redirect ISO`{.action} no menu pendente.
+Para começar, abra o [IPMI a partir de uma applet Java](./#applet-java) através da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). A seguir, clique em `Device`{.action} na barra de menus e selecione `Redirect ISO`{.action} no menu pendente.
 
 ![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
 
@@ -196,5 +196,7 @@ O ficheiro ISO vai agora ser telecarregado e o servidor vai começar a partir do
 ![Instalação do KVM](images/kvm_install07.png){.thumbnail}
 
 ## Quer saber mais?
+
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

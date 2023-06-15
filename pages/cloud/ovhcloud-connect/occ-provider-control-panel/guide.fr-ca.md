@@ -18,11 +18,11 @@ OVHcloud Connect permet d’étendre votre réseau d’entreprise avec votre ré
 ## Prérequis
 
 > [!warning]
-> Pour assurer un fonctionnement correct de ce service, vous devez prendre connaissance des [capacités et limites techniques de l'offre OVHcloud Connect](../occ-limits/) et configurer vos équipements réseau en accord avec celles-ci.
+> Pour assurer un fonctionnement correct de ce service, vous devez prendre connaissance des [capacités et limites techniques de l'offre OVHcloud Connect](/pages/cloud/ovhcloud-connect/occ-limits) et configurer vos équipements réseau en accord avec celles-ci.
 >
 
 - Avoir commandé une [offre OVHcloud Connect Provider](https://www.ovhcloud.com/fr-ca/network-security/ovhcloud-connect/)
-- Disposer d'un [vRack OVHcloud](https://www.ovh.com/ca/fr/solutions/vrack/)
+- Disposer d'un [vRack OVHcloud](https://www.ovh.com/fr/solutions/vrack/)
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 ## En pratique
@@ -39,7 +39,7 @@ Vérifiez par la suite dans votre  [espace client OVHcloud](https://ca.ovh.com/a
 
 ### Étape 2 : associer un vRack
 
-Connectez-vous à [l’espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur `Bare Metal Cloud`{.action} puis sélectionnez l'onglet `Network`{.action}. Ensuite, cliquez sur `OVHcloud Connect`{.action} puis sur votre offre.
+Connectez-vous à [l’espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur `Bare Metal Cloud`{.action} en haut à gauche puis sélectionnez l'onglet `Network`{.action}. Cliquez alors sur `OVHcloud Connect`{.action} puis sur votre offre.
 
 ![ovhcloud connect selection](images/occ_01.png){.thumbnail}
 
@@ -141,13 +141,13 @@ La suppression récursive est plus lente que la suppression séquentielle de cha
 
 #### Suppression d'une configuration de routage
 
-Pour supprimer une configuration de routage, cliquez sur le le bouton `(...)`{.action} sur la configuration de routage à supprimer puis sur `Supprimer`{.action}.
+Pour supprimer une configuration de routage, cliquez sur le bouton `(...)`{.action} sur la configuration de routage à supprimer puis sur `Supprimer`{.action}.
 
 ![suppression configuration routage](images/deleterouting.png){.thumbnail}
 
 #### Suppression d'une configuration DC
 
-Pour supprimer une configuration DC, cliquez sur le le bouton `(...)`{.action} sur la configuration DC à supprimer puis sur `Supprimer`{.action}.
+Pour supprimer une configuration DC, cliquez sur le bouton `(...)`{.action} sur la configuration DC à supprimer puis sur `Supprimer`{.action}.
 
 ![suppression configuration DC](images/deletedc.png){.thumbnail}
 
@@ -157,7 +157,7 @@ Pour supprimer une configuration DC, cliquez sur le le bouton `(...)`{.action} s
 
 #### Suppression de la configuration PoP
 
-Pour supprimer une configuration PoP, cliquez sur le le bouton `(...)`{.action} sur la configuration PoP puis sur `Supprimer la configuration`{.action}.
+Pour supprimer une configuration PoP, cliquez sur le bouton `(...)`{.action} sur la configuration PoP puis sur `Supprimer la configuration`{.action}.
 
 ![suppression configuration PoP](images/deletepopl3.png){.thumbnail}
 
@@ -166,5 +166,7 @@ Pour supprimer une configuration PoP, cliquez sur le le bouton `(...)`{.action} 
 >
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

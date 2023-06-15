@@ -21,6 +21,10 @@ Mit OVHcloud Webhosting Angeboten erhalten Sie einen Speicherplatz zum Online-St
 - Sie verfügen über die erforderlichen Informationen, um sich via SSH mit Ihrem Speicherplatz zu verbinden.
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 
+> [!warning]
+> 
+> SSH-Zugang zu einem OVHcloud Webhosting ist ab dem Angebot [Pro Hosting](https://www.ovhcloud.com/de/web-hosting/compare/) verfügbar.
+
 ## In der praktischen Anwendung
 
 ### Schritt 1: Sicherstellen, dass der SSH-Zugang aktiv ist <a name="sshcheck"></a>
@@ -59,11 +63,11 @@ Je nach der von Ihnen verwendeten Methode gibt es nun zwei Arten, um sich via SS
 
 Wenn das Terminal geöffnet ist, verwenden Sie folgenden Befehl, indem Sie die Elemente "Yourlogin", "ssh.cluster000.hosting.ovh.net"und "22"durch die Elemente ersetzen, die Ihren SSH-Kennungen entsprechen. 
 
-```ssh
+```bash
 ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 ```
 
-Nach Senden des Befehls werden Sie dazu aufgefordert, das Passwort des SSH-Benutzers einzugeben. Wenn Sie eingeloggt sind, können Sie zum nächsten Schritt „[Via SSH mit Ihrem Speicherplatz interagieren](./#schritt-4-via-ssh-mit-ihrem-speicherplatz-interagieren_1)“ übergehen.
+Nach Senden des Befehls werden Sie dazu aufgefordert, das Passwort des SSH-Benutzers einzugeben. Wenn Sie eingeloggt sind, können Sie zum nächsten Schritt „[Via SSH mit Ihrem Speicherplatz interagieren](./#schritt-4-via-ssh-mit-ihrem-speicherplatz-interagieren)“ übergehen.
 
 ![SSH verwenden](images/use-ssh-step3.png){.thumbnail}
 

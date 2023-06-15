@@ -21,6 +21,10 @@ Os planos de alojamento web da OVHcloud dão-lhe acesso a um espaço de armazena
 - Estar na posse das informações necessárias à conexão em SSH ao espaço de armazenamento.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, secção `Web Cloud`{.action}.
 
+> [!warning]
+> 
+> O acesso SSH a um alojamento web da OVHcloud é possível a partir de [oferta Pro](https://www.ovhcloud.com/pt/web-hosting/compare/).
+
 ## Instruções
 
 ### 1.ª etapa: Assegurar que o acesso SSH se encontra ativo <a name="sshcheck"></a>
@@ -60,11 +64,11 @@ Assim, há duas possibilidades de conexão, em função do método utilizado:
 
 Uma vez aberto o terminal, utilize o seguinte comando: substitua os elementos "yourlogin", "ssh.cluster00.hosting.ovh.net" e "22" pelos que correspondem aos seus identificadores SSH. 
 
-```ssh
+```bash
 ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 ```
 
-Depois de enviado o comando, deverá introduzir a palavra-passe do utilizador SSH. Quando estiver conectado, prossiga para a etapa seguinte: [Interagir com o espaço de armazenamento em SSH](./#4a-etapa-interagir-com-o-espaco-de-armazenamento-em-ssh_1).
+Depois de enviado o comando, deverá introduzir a palavra-passe do utilizador SSH. Quando estiver conectado, prossiga para a etapa seguinte: [Interagir com o espaço de armazenamento em SSH](./#4a-etapa-interagir-com-o-espaco-de-armazenamento-em-ssh).
 
 ![usessh](images/use-ssh-step3.png){.thumbnail}
 

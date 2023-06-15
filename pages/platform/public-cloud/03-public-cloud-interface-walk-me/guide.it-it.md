@@ -8,7 +8,7 @@ updated: 2021-12-06
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 06/12/2021**
@@ -83,7 +83,7 @@ Nel tuo progetto Public Cloud sono disponibili diversi tool di gestione, in fond
 |Ingresso del menu|Descrizione|
 |---|---|
 |**Horizon**|È l'[interfaccia grafica](https://docs.ovh.com/it/public-cloud/horizon/) generalmente disponibile su OpenStack. e non viene modificata, permettendo agli utenti abituati a questa interfaccia di navigare facilmente.|
-|**Users and Roles**|Permette di [creare utenti](https://docs.ovh.com/it/public-cloud/creation-and-deletion-of-openstack-user//) e attribuire loro un ruolo. Questi utenti permettono di accedere direttamente alle API o all'interfaccia Horizon. Ad esempio, puoi creare un utente per le tue operazioni di manutenzione classiche e un utente per i tuoi strumenti di automazione, come ad esempio Terraform.|
+|**Users and Roles**|Permette di [creare utenti](https://docs.ovh.com/it/public-cloud/creation-and-deletion-of-openstack-user/) e attribuire loro un ruolo. Questi utenti permettono di accedere direttamente alle API o all'interfaccia Horizon. Ad esempio, puoi creare un utente per le tue operazioni di manutenzione classiche e un utente per i tuoi strumenti di automazione, come ad esempio Terraform.|
 |**Quota and Regions**|Questo strumento ti permette di gestire le localizzazioni e i limiti di risorse disponibili sul tuo progetto.<br><br>**Quota**: In base a determinati criteri (numero di fatture già pagate, utilizzo di altri prodotti OVHcloud), il nostro sistema applica delle quote (limiti) al numero di risorse che puoi creare, per evitare problemi di mancato pagamento. Di default, il sistema aumenta automaticamente le proprie quote quando vengono soddisfatti determinati criteri. Tuttavia, è possibile [aumentare manualmente una quota](https://docs.ovh.com/it/public-cloud/increase-public-cloud-quota/#aumentare-la-quota-di-risorse-manualmente) tramite questo strumento.<br><br>**Localizzazioni**: Il Public Cloud è disponibile in diverse localizzazioni nel mondo. Inoltre, ogni localizzazione può includere diverse "regioni" (concetto specifico di OpenStack). Ad esempio, per un cliente europeo, la zona APAC (Asia Pacifica) è disattivata di default. Se questo è il tuo caso, puoi attivare altre regione da questo menu.|
 |**SSH Keys**|Uno strumento che ti permette di [gestire le tue chiavi SSH](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/#step-1-crea-chiavi-ssh) in modo centralizzato.|
 |**Billing Control**|Public Cloud che funziona in *pay as you go*, cioè il pagamento a consumo, le fatture vengono saldate alla fine del mese. In [questo menu](https://docs.ovh.com/it/public-cloud/analizza_i_tuoi_consumi_e_gestisci_la_tua_fatturazione/) è possibile monitorare i consumi correnti, consultare la previsione della prossima fattura e, ovviamente, consultare le fatture precedenti.|
@@ -94,5 +94,7 @@ Nel tuo progetto Public Cloud sono disponibili diversi tool di gestione, in fond
 ## Per saperne di più
 
 [Creare e connettersi a un’istanza Public Cloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/)
+
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

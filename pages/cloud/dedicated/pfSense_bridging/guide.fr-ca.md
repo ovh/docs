@@ -1,8 +1,8 @@
 ---
-title : Tutoriel - Configurer le mode bridge sur pfSense
-slug : pfSense-bridging
+title: Tutoriel - Configurer le mode bridge sur pfSense
+slug: pfSense-bridging
 excerpt: 'Apprenez à configurer le mode bridge sur une machine virtuelle Pfsense'
-section : Tutoriel
+section: Tutoriel
 updated: 2022-12-20
 ---
 
@@ -28,7 +28,7 @@ La mise en réseau en mode bridge peut être utilisée pour configurer votre mac
 > [!warning]
 > Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVHcloud avec des outils externes et décrit les actions à réaliser dans un contexte précis. Veuillez noter que ces actions décrites ici doivent être adaptées à votre cas particulier.
 >
-Si vous rencontrez des difficultés lors de l'exécution de ces actions, merci de contacter un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) et/ou d'échanger avec notre communauté sur <https://community.ovh.com/>. OVHcloud ne peut pas vous fournir d’assistance technique à ce sujet.
+Si vous rencontrez des difficultés lors de l'exécution de ces actions, merci de contacter un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) et/ou d'échanger avec notre communauté sur <https://community.ovh.com/>. OVHcloud ne peut pas vous fournir d’assistance technique à ce sujet.
 >
 
 ## En pratique
@@ -89,7 +89,7 @@ Dans cet exemple, nous avons deux interfaces `enp1s0` et `enp2s0` mais l'interfa
 
 ![Nouveau pont 2](images/hypervisor-1_2.png){.thumbnail}
 
-Veuillez noter que si votre serveur ne dispose pas d'une seconde interface réseau, il n'est pas nécessaire de le relier à une interface.Le bridge fonctionnera bien mais pourra uniquement router en interne sur le serveur.<br>
+Veuillez noter que si votre serveur ne dispose pas d'une seconde interface réseau, il n'est pas nécessaire de le relier à une interface. Le bridge fonctionnera bien mais pourra uniquement router en interne sur le serveur.<br>
 L'utilisation d'une interface sur un réseau bridge vous permet de router vers d'autres machines virtuelles, serveurs dédiés, instances Public Cloud et même des infrastructures Hosted Private Cloud à l'aide du vRack. 
 
 #### Création des machines virtuelles : pfSense
@@ -134,7 +134,7 @@ Nous allons maintenant démarrer la machine virtuelle pfSense et procéder à l'
 
 ![Configuration pfSense 1](images/pfsense-vm-5.png){.thumbnail}
 
-Une fois l'installation du système d'exploitation terminée, pfSense demandera demandera en premier lieu de configurer les VLAN. Puisque pfSense est installé dans un hyperviseur, nous ne suggérons pas de le configurer sur la machine virtuelle. Si toutefois vous avez besoin de VLANs, configurez-les sur l'interface virtuelle au niveau de l'hyperviseur.
+Une fois l'installation du système d'exploitation terminée, pfSense demandera en premier lieu de configurer les VLAN. Puisque pfSense est installé dans un hyperviseur, nous ne suggérons pas de le configurer sur la machine virtuelle. Si toutefois vous avez besoin de VLANs, configurez-les sur l'interface virtuelle au niveau de l'hyperviseur.
 
 ![Configuration pfSense 2](images/pfsense-vm-6.png){.thumbnail}
 

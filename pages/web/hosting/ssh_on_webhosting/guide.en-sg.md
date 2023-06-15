@@ -21,6 +21,10 @@ OVHcloud web hosting plans provide you with access to a storage space you can us
 - the login credentials required to connect to your storage space via SSH
 - access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}
 
+> [!warning]
+> 
+> SSH access to an OVHcloud web hosting plan is possible from the [Pro plan](https://www.ovhcloud.com/en-sg/web-hosting/compare/) and above.
+
 ## Instructions
 
 ### Step 1: Ensure that SSH access is enabled <a name="sshcheck"></a>
@@ -59,11 +63,11 @@ There are now two ways of connecting to your storage space, depending on the met
 
 Once you have opened the terminal, use the following command, replacing the ‘yourlogin’, ‘ssh.cluster000.hosting.ovh.net’ and ‘22’ elements with those corresponding to your SSH credentials. 
 
-```ssh
+```bash
 ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 ```
 
-When you run the command, you will be prompted to enter the SSH user password. Once you have connected, follow the next step: [Interact with your storage space via SSH](./#step-4-interact-with-your-storage-space-via-ssh_1).
+When you run the command, you will be prompted to enter the SSH user password. Once you have connected, follow the next step: [Interact with your storage space via SSH](./#step-4-interact-with-your-storage-space-via-ssh).
 
 ![usessh](images/use-ssh-step3.png){.thumbnail}
 

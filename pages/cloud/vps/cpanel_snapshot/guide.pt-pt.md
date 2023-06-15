@@ -3,14 +3,14 @@ title: 'Backup automático - Kernel panic (cPanel)'
 slug: cpanel_auto_backup
 excerpt: 'Saiba como resolver os problemas de bloqueio dos servidores cPanel durante o backup automático OVHcloud'
 section: 'Utilização avançada'
-updated: 2021-03-09
+updated: 2023-06-06
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 09/03/2021**
+**Última atualização: 06/06/2023**
 
 ## Objetivo
 
@@ -38,13 +38,13 @@ Escolha cuidadosamente porque cada uma tem as suas vantagens e desvantagens.
 
 Em primeiro lugar, deve verificar se o QEMU Guest Agent está a ser executado no seu servidor. Para o verificar, utilize o seguinte comando:
 
-```
+```bash
 systemctl status qemu-guest
 ```
 
 O estado do serviço é indicado junto de "Ative:". Se estiver ativo ou em execução, o serviço deverá ser interrompido e desativado, de modo a evitar que o mesmo volte a ser ativado no futuro. Para isso, utilize os seguintes comandos:
 
-```
+```bash
 systemctl stop qemu-guest-agent
 systemctl disable qemu-guest-agent;
 ```
@@ -63,6 +63,16 @@ Esta opção permite ativar/desativar a utilização de um Jailed Shell para as 
 Esta opção não afeta as contas que já existem no servidor mas que não alterou nestas interfaces.
 
 Para desativar o ambiente Jailed Shell de um utilizador específico, utilize a interface "WHM's Manage Shell Access" (WHM >> Home >> Account Functions >> Manage Shell Access).
+
+Pode encontrar todas estas informações na [documentação oficial cPanel](https://docs.cpanel.net/knowledge-base/accounts/virtfs-jailed-shell/#disable-or-remove-a-jailed-shell-environment).
+
+> [!warning]
+>
+> Tal como indicado pelo cPanel, algumas funcionalidades podem continuar a utilizar os dossieres criados pelo Jailed Shell. Assim, e apesar da desativação do ambiente Jailed Shell, pode continuar a experimentar dificuldades na gestão dos seus backups.
+>
+> Se pretender mesmo assim desativar a funcionalidade Jailed Shell e eliminar as pastas "virtfs" criadas, tenha cuidado pois a eliminação do diretório "virtfs" pode levar à perda de dados dos utilizadores.
+>
+> Certifique-se de que efetuou todas as cópias de segurança necessárias.
 
 ### Desativar a segurança da partição /tmp para cPanel
 

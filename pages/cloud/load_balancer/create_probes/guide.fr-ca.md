@@ -6,6 +6,8 @@ section: Configuration
 updated: 2019-02-12
 ---
 
+**Dernière mise à jour le à 12/02/2019**
+
 ## Objectif
 
 L'OVH Load Balancer permet de répartir le trafic entrant sur un front-end vers un ensemble de serveurs d'une ferme de destination.

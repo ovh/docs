@@ -138,7 +138,7 @@ From this list you can access your job details either by clicking on its `ID` or
 ![image](images/15_jobs_details.png){.thumbnail}
 
 -   **Job Information**: basic information on the job you submitted
--   **Container**: describes the status of your job and provides you with the URL to access any service exposed by your job on the port `8080`. The URL is of the form `https://<JOB-ID>.job.<REGION>.training.ai.cloud.ovh.net/`. If the service is not exposed on the port `8080` it is still accessible by specifying the port in the URL this way: `https://<JOB-ID>-<PORT>.job.<REGION>.training.ai.cloud.ovh.net/`. You can check the list of available ports in the [capabilities](https://docs.ovh.com/ca/fr/publiccloud/ai/training/capabilities).
+-   **Container**: describes the status of your job and provides you with the URL to access any service exposed by your job on the port `8080`. The URL is of the form `https://<JOB-ID>.job.<REGION>.ai.cloud.ovh.net/`. If the service is not exposed on the port `8080` it is still accessible by specifying the port in the URL this way: `https://<JOB-ID>-<PORT>.job.<REGION>.ai.cloud.ovh.net/`. You can check the list of available ports in the [capabilities](https://docs.ovh.com/ca/fr/publiccloud/ai/training/capabilities).
 -   **Resources**: a summary of the resources consumed by the **job**
 -   **Actions**: available actions
 -   **Data**: list of **data** objects attached to the job
@@ -154,3 +154,5 @@ From the list of **jobs** you can list the available actions at the far right of
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.

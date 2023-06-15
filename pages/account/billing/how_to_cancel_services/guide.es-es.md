@@ -227,7 +227,7 @@ Para dar de baja su servicio [Hosted Exchange](https://www.ovhcloud.com/es-es/em
 
 #### Private Exchange <a name="private"></a>
 
-Para dar de baja su solución [Private Exchange](https://www.ovhcloud.com/es-es/emails/private-exchange/), siga las indicaciones de esta [guía](https://docs.ovh.com/es/microsoft-collaborative-solutions/gestion-de-la-facturacion-exchange/#eliminar-cuentas_1).
+Para dar de baja su solución [Private Exchange](https://www.ovhcloud.com/es-es/emails/private-exchange/), siga las indicaciones de esta [guía](https://docs.ovh.com/es/microsoft-collaborative-solutions/gestion-de-la-facturacion-exchange/#eliminar-cuentas).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 
@@ -242,7 +242,7 @@ Para dar de baja la solución [Office 365 csp 2](https://www.ovhcloud.com/es-es/
 Puede **eliminar** una cuenta individual de su plataforma [SharePoint](https://www.ovhcloud.com/es-es/collaborative-tools/sharepoint/) o dar de baja toda la plataforma SharePoint.
 Si desea dar de baja toda la plataforma, le recomendamos que comience por eliminar previamente cada cuenta individual.
 
-* Para eliminar una cuenta SharePoint individual, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) en la sección `Web Cloud`{.action}. Haga clic sucesivamente en `Microsoft`{.action}, `SharePoint`{.action} y, seguidamente, en su plataforma Sharepoint.< br>.
+* Para eliminar una cuenta SharePoint individual, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) en la sección `Web Cloud`{.action}. Haga clic sucesivamente en `Microsoft`{.action}, `SharePoint`{.action} y, seguidamente, en su plataforma Sharepoint.<br>.
 En la pestaña `Usuarios`{.action}, haga clic en el botón Línea `...`{.action} a la derecha de la cuenta que desea eliminar y haga clic en `"Eliminar la cuenta`{.action}. Lea la información y haga clic en `Aceptar`{.action}.
 
 * Para dar de baja toda su plataforma Sharepoint, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en su nombre en la parte superior derecha y luego en el botón `Gestión de servicios`{.action}.

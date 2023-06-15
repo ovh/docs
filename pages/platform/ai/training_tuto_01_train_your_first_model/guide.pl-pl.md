@@ -6,10 +6,10 @@ section: AI Training - Tutorials
 order: 01	
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/training/tuto-train-first-ml-model/'
-updated: 2023-01-26
+updated: 2023-05-11
 ---
 
-**Last updated 26th January, 2023.**
+**Last updated 11th May, 2023.**
 
 This tutorial will allow you to train your first **Model in AI Training**. 
 
@@ -55,7 +55,7 @@ You will follow different steps to export your data, train your model and save i
 
 This step is optional because you may load some open datasets through libraries, commands, etc., so you will not need to upload your own data to the cloud. 
 
-On the other hand, you can upload your data (dataset, python and requirements files, etc.) to the cloud, in the Object Storage. This can be done in two ways: either from the [OVHcloud Control Panel](https://www.ovh.com/manager/#/public-cloud/) or via the [ovhai CLI](https://cli.bhs.training.ai.cloud.ovh.net/).
+On the other hand, you can upload your data (dataset, python and requirements files, etc.) to the cloud, in the Object Storage. This can be done in two ways: either from the [OVHcloud Control Panel](https://www.ovh.com/manager/#/public-cloud/) or via the [ovhai CLI](https://cli.bhs.ai.cloud.ovh.net/).
 
 **This data can be deleted at any time.**
 
@@ -65,7 +65,7 @@ If you do not feel comfortable with commands, this way will be more intuitive fo
 
 First, go to the [OVHcloud Public Cloud section](https://www.ovh.com/manager/#/public-cloud/).
 
-Then, select the Object Storage section (in the Storage category) and [create a new object container](https://docs.ovh.com/pl/storage/pcs/create-container/) by clicking `Storage` > `Object Storage` > `Create an object container`.
+Then, select the Object Storage section (in the Storage category) and [create a new object container](https://docs.ovh.com/pl/storage/object-storage/pcs/create-container/) by clicking `Storage` > `Object Storage` > `Create an object container`.
 
 Here you can create the object container that will store your datas. Several `types` and `regions` are available, choose the best parameters for you.
 
@@ -81,12 +81,12 @@ Once your object container is created, you will see it in the Object Storage lis
 
 #### 1.2 - Upload your data via CLI
 
-To follow this part, make sure you have installed the [ovhai CLI](https://cli.bhs.training.ai.cloud.ovh.net/) on your computer or on an instance. 
+To follow this part, make sure you have installed the [ovhai CLI](https://cli.bhs.ai.cloud.ovh.net/) on your computer or on an instance. 
 
 As in the Control Panel, you will have to specify the `region`, the `name of your container` and the `path` where your data will be located. The creation of your object container can be done by the following command:
 
 ```console
-ovhai data upload <region> <container> <paths>
+ovhai bucket object upload <container>@<region> <paths>
 ```
 
 For example: 
@@ -94,14 +94,14 @@ For example:
 Assuming a file named `my-dataset.zip` exists in your current working directory, you can use the following command to create an object container named `fashion_MNIST_dataset`, located in the `GRA` region that will contain your `my-dataset.zip` file.
 
 ```console
-ovhai data upload GRA fashion_MNIST_dataset my-dataset.zip
+ovhai bucket object upload fashion_MNIST_dataset@GRA my-dataset.zip
 ```
 
 This `.zip` file can now be accessed from all OVHcloud AI products, either with read-only (RO) or read-write (RW) permissions.
 
 ### Step 2 - Launch your training job and attach your data to its environment
 
-To launch your training job, you can also use the [OVHcloud Control Panel](https://www.ovh.com/manager/#/public-cloud/) or the [ovhai CLI](https://cli.bhs.training.ai.cloud.ovh.net/).
+To launch your training job, you can also use the [OVHcloud Control Panel](https://www.ovh.com/manager/#/public-cloud/) or the [ovhai CLI](https://cli.bhs.ai.cloud.ovh.net/).
 
 #### 2.1 - Launch a training job via UI (Control Panel)
 
@@ -237,16 +237,14 @@ Just click your `object container` as if you still wanted to add new files to it
 If you prefer to use the AI CLI, you will need to use the following command:
 
 ```console
-ovhai data download [OPTIONS] <DATA_STORE> <CONTAINER> [OBJECTS]...
+ovhai bucket object download [OPTIONS] <BUCKET> [OBJECTS]...
 ```
 
 > [!primary]
 >
 > **Arguments**
 >
-> `<DATA_STORE>`: Data store of the container to download from. You can get a list of all available stores for the Object Storage by typing `ovhai data store list`.
->
-> `<CONTAINER>`: Name of container to download from.
+> `<BUCKET>`: container@data_store. Name and region of the container to download from.
 >
 > `[OBJECTS]...`: Name(s) of object(s) to download.
 >
@@ -254,19 +252,21 @@ ovhai data download [OPTIONS] <DATA_STORE> <CONTAINER> [OBJECTS]...
 For more info about this command, you can use:
 
 ```console
-ovhai data download --help
+ovhai bucket object download --help
 ```
 
 For example, in our case we will use:
 
 ```console
-ovhai data download GRA fashion_MNIST_dataset model.net
+ovhai bucket object download fashion_MNIST_dataset@GRA model.net
 ```
 
 ## Go further
 
 - If you are interested in **deploying your model** in a Python app, discover AI Deploy by following this [tutorial](https://docs.ovh.com/pl/publiccloud/ai/deploy/build-use-streamlit-image/).
 - If you want learn about Docker, check out this [tutorial](https://docs.ovh.com/pl/publiccloud/ai/training/build-use-custom-image/).
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

@@ -7,12 +7,11 @@ order: 03
 updated: 2021-10-06
 ---
 
-**Última actualización 12/10/2021**
-
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
+**Última actualización 12/10/2021**
 
 ## Objetivo
 
@@ -26,7 +25,7 @@ Crear un proyecto es el primer paso para implementar [instancias Public Cloud](h
 
 ## Procedimiento
 
-Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección`Public Cloud`{.action} y haga clic en `Crear su primer proyecto de Public Cloud de OVH`{.action} de nube pública OVH.
+Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección`Public Cloud`{.action} y haga clic en `Crear su primer proyecto de Public Cloud de OVH`{.action}.
 
 Ahora puede agregar un vale si tiene uno. Sólo se puede usar un vale proporcionado para su rama OVHcloud.
 
@@ -53,5 +52,7 @@ Una vez completado el proceso, tu nuevo proyecto de Public Cloud estará disponi
 ![new project created](images/newprojectcreated.png){.thumbnail}
 
 ## Más información
+
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

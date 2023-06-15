@@ -4,10 +4,9 @@ slug: lifecycle-policy
 excerpt: Hosted Private Cloud Powered by VMware
 section: FAQ
 order: 3
-updated: 2022-12-27
+updated: 2023-06-13
 ---
 
-**Dernière mise à jour le 27/12/2022**
 
 > [!warning]
 >
@@ -103,34 +102,9 @@ Le tableau suivant présente un résumé des différentes phases du cycle de vie
 | DC2014 (AMD PileDriver) | 2014 | 31/08/2017 | 28/02/2022 | 30/09/2022 |
 | DC2016 (AMD PileDriver) | 2016 | 30/11/2018 | 28/02/2022 | 30/09/2022 |
 | SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) | 2016 | 30/04/2017 | 30/01/2024 | 31/08/2024 |
-| SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/01/2024 | 31/08/2024 |
+| SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/01/2024 | 31/08/2025 |
 | Essentials (Intel Broadwell) | 2020 |            |            |            |
 | Premier (Intel Xeon Gold) | 2020 |            |            |            |
-
-### Datastores (stockage)
-
-Vous pouvez obtenir le profil de vos datastores via l'appel API suivant :
-
-> [!api]
->
-> @api {GET} /dedicatedCloud/{serviceName}/filer/{filerId}
->
-
-Si le profil complet de votre datastore ne commence pas par « 2020-... », il est nécessaire de passer sur des datastores plus récents au plus vite. 
-
-| Gamme commerciale | Disponibilité générale | End of Sales | End of Growth  | End of Life |
-|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 300Gb | 2013 | 30/11/2021 | 31/03/2022 | 31/03/2023 |
-| 600Gb | 2013 | 30/11/2021 | 31/03/2022 | 31/03/2023 |
-| 800Gb | 2016 | 30/11/2021 | 31/03/2022 | 31/03/2023 |
-| 1.2Tb | 2016 | 30/11/2021 | 31/03/2022 | 31/03/2023 |
-| 3Tb | 2020 |            |            |            |
-| 6Tb | 2020 |            |            |            |
-| 9Tb | 2020 |            |            |            |
-| 18Tb | 2020 |            |            |            |
-| 36Tb | 2020 |            |            |            |
-| 12Tb | 2023 |            |            |            |
-| 24Tb | 2023 |            |            |            |
 
 ## Logiciels intégrés
 

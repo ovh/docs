@@ -1,98 +1,90 @@
 ---
-title: Object Storage Swift - Montar um container de objetos com S3QL
+title: Object Storage Swift - Montar um container de objetos com S3QL (EN)
 excerpt: Montar um container de objetos com S3QL
 slug: pcs/use-s3ql-to-mount-object-storage-containers
 section: OpenStack Swift Storage Class Specifics
-legacy_guide_number: g1908
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/pcs/use-s3ql-to-mount-object-storage-containers/'
 order: 160
 updated: 2021-10-27
 ---
 
+**Last updated 27th October 2021**
 
-##
-O S3QL é um sistema de ficheiros que pode ser montado para armazenar dados localmente ao utilizar soluções de armazenamento cloud tais como o Object Storage.
-Ele propõe numerosas funcionalidades tais como: compressão transparente, encriptação, ou ainda, snapshotting que é particularmente apropriado para a criação de backups.
+## Objective
 
-Pode encontrar mais informações diretamente no [website do autor](http://www.rath.org/s3ql-docs/).
+S3QL is a remote file system that can be configured locally to store data using cloud storage solutions like OVH Object Storage.
+It has several features, such as data compression, encryption, and container snapshots, which makes this solution particularly suitable for creating backups.
 
-Este guia explica-lhe como montar um container de objetos como um sistema de ficheiros.
+You can find more information directly on their [website](http://www.rath.org/s3ql-docs/).
 
+**This guide shows you how to set up an object container as file system.**
 
-## Pré-requisitos
+## Prerequisites
 
-- [Criar um acesso ao Horizon]({legacy}1773)
-- [Adicionar espaço de armazenamento](https://docs.ovh.com/pt/public-cloud/adicionar_um_espaco_de_armazenamento/)
+- [Configure user](https://docs.ovh.com/pt/public-cloud/creation-and-deletion-of-openstack-user/)
+- [Add storage space](https://docs.ovh.com/pt/public-cloud/create_an_object_container/)
 
+## Instructions
 
+> [!primary]
+>
+> Using an object container as a file system can impact the performance of your operations.
+> S3ql version 3.3 or above is required.
+>
 
-## Atenção
-Utilizar um container de object como um sistema de ficheiros poderá reduzir as performances das suas operações
+### Create your file system
 
+- Create a file containing the login information:
 
-## Criação do sistema de ficheiros
-
-
-- Crie um ficheiro que contenha as informações de ligação:
-
-```
+```bash
 admin@serveur1:~$ sudo vim s3qlcredentials.txt
 
 [swift]
-backend-login: TENANT_NAME:USERNAME
-backend-password: PASSWORD
+backend-login: OS_PROJECT_ID:OS_USERNAME
+backend-password: OS_PASSWORD
 storage-url: swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME
 fs-passphrase: PASSPHRASE
 ```
 
+OS_PROJECT_ID, OS_USERNAME and OS_PASSWORD parameters can be found in your OpenRC file.
+You can follow this guide below in order to retrieve it: [Access and Security in Horizon](https://docs.ovh.com/pt/public-cloud/access_and_security_in_horizon/)
 
+The REGION_NAME and CT_NAME arguments can be adapted according the name and location of your object container.
 
-As informações tais como TENANT_NAME, USERNAME podem ser obtidas no seu ficheiro OpenRC.
-Siga o seguinte guia para os recuperar:
+- Change authentication file access permissions:
 
-- [Acesso e Segurança no Horizon]({legacy}1774)
-
-
-Os argumentos REGION_NAME e CT_NAME tem de ser adaptados conforme o nome e localização do seu container de objetos.
-
-
-- Modificar as permissões de acesso ao ficheiro de autenticação:
-
-```
+```bash
 admin@serveur1:~$ sudo chmod 600 s3qlcredentials.txt
 ```
 
+- Object container formating:
 
-- Formate o container do objeto:
-
-```
+```bash
 admin@serveur1:~$ sudo mkfs.s3ql --backend-options domain=default --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME
 ```
 
+You then have to add the passphrase to your authentication file.
+If you do not want to configure it, you have to delete the "fs-passphrase: PASSPHRASE" line from your file.
 
 
-É necessário adicionar a passphrase que deseja adicionar no seu ficheiro de autenticação.
-Se não a desejar configurar bastará que elimine a linha "fs-passphrase: PASSPHRASE" do seu ficheiro de autenticação para que não seja bloqueado aquando da montagem do sistema de ficheiros.
+### Configure your file system
 
+- Create the mounting point
 
-## Montagem do sistema de ficheiros
-
-- Criação do ponto de montagem
-
-```
+```bash
 admin@serveur1:~$ sudo mkdir /mnt/container
 ```
 
+- Mount the object container
 
-- Montagem do container do objeto
-
-```
+```bash
 admin@serveur1:~$ sudo mount.s3ql --backend-options domain=default --authfile s3qlcredentials.txt swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME /mnt/container/
 ```
 
+- Check mounting:
 
-- Verificação de montagem:
-
-```
+```bash
 admin@serveur1:~$ sudo df -h
 
 Filesystem Size Used Avail Use% Mounted on
@@ -105,7 +97,10 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME 1.0T 0 1.0T 0% /mnt/container
 ```
 
+You cannot use S3QL in offline mode, you should not configure persistance via the /etc/fstab file but by using a script which will run when your server starts up.
 
+## Go further
 
-Não será possível que utilize o S3QL em modo "offline".
-Além disso, não é aconselhado que configure a persistência através da alteração doficheiro /etc/fstab mas através de um script que seja iniciado sempre que o servidor reiniciar.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our community of users on <https://community.ovh.com/en/>.

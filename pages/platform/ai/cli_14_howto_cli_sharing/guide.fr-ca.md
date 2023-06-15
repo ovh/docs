@@ -85,12 +85,12 @@ Status:
   Infos:           
   Transitioned At:
   Duration:        53s
-  Url:             https://d8d809f2-717b-4b60-9881-07e6987a144d.notebook.gra.training.ai.cloud.ovh.net
-  Monitoring Url:  https://monitoring.gra.training.ai.cloud.ovh.net/d/gpu?var-notebook=d8d809f2-717b-4b60-9881-07e6987a144d&from=1622124009877
+  Url:             https://d8d809f2-717b-4b60-9881-07e6987a144d.notebook.gra.ai.cloud.ovh.net
+  Monitoring Url:  https://monitoring.gra.ai.cloud.ovh.net/d/gpu?var-notebook=d8d809f2-717b-4b60-9881-07e6987a144d&from=1622124009877
   Transitioned At: 27-05-21 14:01
 ```
 
-Here the URL is `https://d8d809f2-717b-4b60-9881-07e6987a144d.notebook.gra.training.ai.cloud.ovh.net`.
+Here the URL is `https://d8d809f2-717b-4b60-9881-07e6987a144d.notebook.gra.ai.cloud.ovh.net`.
 It will be different for every notebook you will create. Anyone in your Public Cloud project can now access this URL
 from their browser using their own credentials.
 
@@ -188,8 +188,8 @@ Wait a few seconds for the notebook to be in the `RUNNING` state.
       Infos:           
       Transitioned At:
       Duration:        34s
-      Url:             https://3cd20aa3-3f5d-49be-b027-ccaf6dd06f01.notebook.gra.training.ai.cloud.ovh.net
-      Monitoring Url:  https://monitoring.gra.training.ai.cloud.ovh.net/d/gpu?var-notebook=3cd20aa3-3f5d-49be-b027-ccaf6dd06f01&from=1622124160516
+      Url:             https://3cd20aa3-3f5d-49be-b027-ccaf6dd06f01.notebook.gra.ai.cloud.ovh.net
+      Monitoring Url:  https://monitoring.gra.ai.cloud.ovh.net/d/gpu?var-notebook=3cd20aa3-3f5d-49be-b027-ccaf6dd06f01&from=1622124160516
       Transitioned At: 27-05-21 14:03
 
 The `Url` field corresponds to the address to paste in your browser to access the notebook.
@@ -272,13 +272,15 @@ Status:
   Infos:           
   Transitioned At:
   Duration:        20s
-  Url:             https://8e3ac445-0b47-4eea-9269-19a36b7213c7.notebook.gra.training.ai.cloud.ovh.net
-  Monitoring Url:  https://monitoring.gra.training.ai.cloud.ovh.net/d/gpu?var-notebook=8e3ac445-0b47-4eea-9269-19a36b7213c7&from=1622124347366
+  Url:             https://8e3ac445-0b47-4eea-9269-19a36b7213c7.notebook.gra.ai.cloud.ovh.net
+  Monitoring Url:  https://monitoring.gra.ai.cloud.ovh.net/d/gpu?var-notebook=8e3ac445-0b47-4eea-9269-19a36b7213c7&from=1622124347366
   Transitioned At: 27-05-21 14:06
 ```
 
 Anyone can now access the notebook by pasting the URL shown in the `ovhai notebook get` output in their browser.
-In this example, the `Url` is `https://8e3ac445-0b47-4eea-9269-19a36b7213c7.notebook.gra.training.ai.cloud.ovh.net`.
+In this example, the `Url` is `https://8e3ac445-0b47-4eea-9269-19a36b7213c7.notebook.gra.ai.cloud.ovh.net`.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

@@ -10,7 +10,7 @@ updated: 2023-02-16
 **Ultimo aggiornamento: 16/02/2023**
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 ## Obiettivo
@@ -36,7 +36,7 @@ Questa guida ti mostra le operazioni da effettuare quando il tuo database condiv
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/). OVH non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
+> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/). OVH non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
 >
 
 Quando il database condiviso OVHcloud raggiunge la saturazione (**overquota**), i nostri robot ti avvertono via email all'indirizzo del [contatto "amministratore"](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/) del database. 
@@ -79,7 +79,7 @@ Inserisci la password di accesso al tuo database in aggiunta alle informazioni p
 >
 > Da questo momento, potrete intervenire direttamente sul contenuto del vostro database. Le operazioni eseguite in phpMyAdmin possono avere conseguenze irreversibili se non vengono eseguite correttamente.
 >
-> Assicurati di aver effettuato le operazioni necessarie. In caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/). OVHcloud non potrà fornirti assistenza sul contenuto del database.
+> Assicurati di aver effettuato le operazioni necessarie. In caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/). OVHcloud non potrà fornirti assistenza sul contenuto del database.
 >
 
 Una volta connesso, visualizzi questa pagina:
@@ -147,7 +147,7 @@ Prima di effettuare questa operazione, verifica che i dati contenuti nella tabel
 
 > [!alert]
 >
-> Questa guida ti mostra come eliminare i dati presenti nel tuo database. In caso di dubbi, assicurati di aver consultato uno [specialista del settore](https://partner.ovhcloud.com/it/).
+> Questa guida ti mostra come eliminare i dati presenti nel tuo database. In caso di dubbi, assicurati di aver consultato uno [specialista del settore](https://partner.ovhcloud.com/it/directory/).
 >
 
 I database condivisi OVHcloud dispongono di diversi comandi SQL per agire sul loro contenuto.
@@ -196,7 +196,7 @@ DROP TABLE `table_1`
 
 ## Spingiti oltre <a name="go-further"></a>
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 

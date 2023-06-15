@@ -4,10 +4,10 @@ slug: mysql/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for MySQL
 section: MySQL - Guides
 order: 010
-updated: 2023-01-19
+updated: 2023-05-23
 ---
 
-**Last updated January 19th, 2023**
+**Last updated May 23rd, 2023**
 
 ## Objective
 
@@ -36,7 +36,7 @@ The Public Cloud Databases offer supports the following MySQL versions:
 
 - MySQL 8.0
 
-MySQL recommends always installing and using the latest stable version.
+Please refer to the [DBMS lifecycle policy guide](https://docs.ovh.com/us/en/publiccloud/databases/lifecycle-policy/) for recommendations on version upgrades and end of life announcements of major versions. MySQL recommends always installing and using the latest stable version.
 
 ### MySQL connectors
 
@@ -60,6 +60,9 @@ Here is an overview of the various plans' capabilities:
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
 
+> [!primary]
+> Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
+
 #### Nodes and replicas
 
 - **Essential**: the cluster can support at most one node.
@@ -76,15 +79,24 @@ If any, license cost is included inside the service plans. You can't bring your 
 
 Here are the node types you can choose from:
 
-| Name    | Disk (GB) | Cores | Memory (GB) |
-| ------- | --------- | ----- | ----------- |
-| db1-7   | 160       | 2     | 7           |
-| db1-15  | 320       | 4     | 15          |
-| db1-30  | 640       | 8     | 30          |
-| db1-60  | 1280      | 16    | 60          |
-| db1-120 | 2560      | 32    | 120         |
+| Name    | Storage                 | vCore | Memory (GB) |
+| ------- | ----------------------- | ----- | ----------- |
+| db1-4   | From 80 GB to 240 GB    | 2     | 4           |
+| db1-7   | From 160 GB to 480 GB   | 2     | 7           |
+| db1-15  | From 320 GB to 960 GB   | 4     | 15          |
+| db1-30  | From 640 GB to 1.92 TB  | 8     | 30          |
+| db1-60  | From 1.28 TB to 3.84 TB | 16    | 60          |
+| db1-120 | From 2.56 TB to 7.68 TB | 32    | 120         |
 
 Right now, all nodes of a given cluster should be of the same type and live in the same region.
+
+#### Flexible storage
+
+You can increase the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](/pages/platform/databases/databases_11_resize_your_cluster_storage) for more information.
+
+#### Node template upgrade
+
+You can upgrade the node template of your cluster to scale your hardware resources up. This operation causes no interruption of service but be aware that you will not be able to downgrade the node template afterwards.
 
 #### Disk type
 
@@ -100,8 +112,11 @@ The disk size listed above is the total disk size of the underlying machine. How
 
 We try hard to avoid "disk full" situations that could be harmful to cluster health. Therefore:
 
-1. When reaching 97% capacity, the customer will have his database instance moved in "DISK_FULL" state, and 'read-only" mode, meaning no more writes can be done.
-2. You then have the ability to upgrade to a higher service plan with more storage.
+1. When reaching a concerning level of disk usage, a warning email is sent.
+2. When reaching a concerning level of disk usage, the service is moved in the "DISK_FULL" state, and "read-only" mode, meaning no more writes can be done.
+3. You then have the ability to upgrade to a higher service plan with more storage.
+
+See the [Handling «Disk Full» situations documentation](https://docs.ovh.com/us/en/publiccloud/databases/handling-disk-full/) for more information.
 
 ### Features
 
@@ -116,9 +131,11 @@ Ingress and Egress traffic are included in the service plans and unmetered.
 Here are some considerations to take into account when using private network:
 
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
-- When connecting from outside subnet, Openstack IP gateway must be enabled in the subnet use for the Database service. The customer is responsible for any other custom network setup.
+- When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
 
+##### Authorised IPs
 
+Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic. Until then, your service will be unreachable.
 
 #### Maximum simultaneous connections
 
@@ -130,7 +147,7 @@ Note that the MySQL max-connections setting is always set to one higher (e.g. 52
 
 #### Advanced parameters
 
-We do not currently support MySQL advanced parameters.
+You can further customise your MySQL by using advanced parameters. See the [Advanced parameters references documentation](https://docs.ovh.com/us/en/publiccloud/databases/mysql/advanced-parameters-references/) for more information on the supported parameters.
 
 #### Backups
 
@@ -140,10 +157,11 @@ We do not currently support MySQL advanced parameters.
 
 *Enterprise* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 30 days.
 
+See the [Automated Backups guide](/pages/platform/databases/databases_05_automated_backups) for more information.
+
 #### Logs and metrics
 
-Logs and metrics are available via the OVHcloud Public Cloud Control Panel.
-As of today, you can't export logs and metrics, nor plug them into a remote tool.
+Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your MySQL logs in Opensearch and metrics in Grafana (metrics have to be exported first in a time series compatible engine such as PostgreSQL or M3db). See the [Cross Service Integration documentation](https://docs.ovh.com/us/en/publiccloud/databases/cross-service-integration/) for more information.
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month
@@ -157,5 +175,7 @@ Creation of users is allowed via the Control Panel and API with default admin ro
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

@@ -6,6 +6,8 @@ order: 5
 updated: 2021-03-30
 ---
 
+**Last updated 30th March 2021**
+
 ## Objective 
 
 In certain conditions, a redeployment of a project could be necessary to apply a modification. It could be either manual or automatic, depending on the triggering event.

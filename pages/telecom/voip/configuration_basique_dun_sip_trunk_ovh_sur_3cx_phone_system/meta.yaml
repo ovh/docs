@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: b89aad8b-eea1-4005-aeb4-782fce975714
 full_slug: voip-3cx-siptrunk-configuration

@@ -7,11 +7,11 @@ order: 08
 updated: 2022-03-24
 ---
 
-**Ostatnia aktualizacja z dnia 24-03-2022**
-
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zaproponuj zmianę" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
+
+**Ostatnia aktualizacja z dnia 24-03-2022**
 
 ## Wprowadzenie
 
@@ -71,7 +71,7 @@ Następnie wprowadź hasło root.
 
 #### Dla połączeń przez wbudowaną konsolę VNC w Panelu klienta OVHcloud
 
-Najpierw [ustaw hasło root](#settingtherootpassword)
+Najpierw [ustaw hasło root](#settingtherootpassword).
 
 Następnie przejdź do konsoli VNC:
 
@@ -85,7 +85,7 @@ Przejdź do karty `Konsola VNC`{.action}. W wierszu polecenia wpisz login jako *
 
 #### Dla połączeń przy użyciu terminali Linux
 
-Najpierw [ustaw hasło root](#settingtherootpassword)
+Najpierw [ustaw hasło root](#settingtherootpassword).
 
 Następnie włącz uwierzytelnianie loginu root i hasła w pliku **sshd_config**:
 
@@ -105,7 +105,7 @@ Po zakończeniu operacji będziesz miał dostęp do serwera z ustawionym użytko
 
 #### Dla połączeń przy użyciu programu Putty
 
-Najpierw [ustaw hasło root](#settingtherootpassword)
+Najpierw [ustaw hasło root](#settingtherootpassword).
 
 Następnie włącz uwierzytelnianie loginu root i hasła w pliku **sshd_config**:
 
@@ -128,5 +128,7 @@ Na liście Putty authentication agent (*pageant key list*) usuń swój prywatny 
 Po zakończeniu operacji będziesz miał dostęp do serwera z ustawionym użytkownikiem root i hasłem.
 
 ## Sprawdź również
+
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

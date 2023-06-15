@@ -4,8 +4,10 @@ slug: gestionar-su-contrasena
 excerpt: 'Cómo establecer, cambiar y gestionar la contraseña de acceso al área de cliente de OVHcloud'
 section: 'Primeros pasos'
 order: 4
-updated: 2021-07-21
+updated: 2020-06-23
 ---
+
+**Última actualización: 23/06/2020**
 
 ## Objetivo
 
@@ -48,7 +50,7 @@ Para ahondar más en el tema, consulte la sección [«Más información»](#gofu
 
 Tenga en cuenta que hay programas específicos que permiten guardar y proteger su contraseña de acceso a la cuenta de OVHcloud.
 
-Por ejemplo, puede utilizar el gestor de contraseñas **Keepass**. Es un programa libre y gratuito recomendado por la OSI.
+Por ejemplo, puede utilizar el gestor de contraseñas **KeePass**. Es un programa libre y gratuito recomendado por la OSI.
 
 Su principio es simple: una contraseña maestra —lo suficientemente compleja, pero que se puede memorizar— que le permite acceder a una base de datos que recoge todos sus identificadores y contraseñas. Estas últimas pueden ser muy complejas, pues el programa puede recordarlas.
 
@@ -126,6 +128,6 @@ Si estuviese comprometida, le recomendamos encarecidamente [que la cambie de inm
 
 [Herramientas gratuitas](https://www.osi.es/es/herramientas-gratuitas?herramienta_selec%5B0%5D=118){.external}
 
-[El gestor de contraseñas Keepass](https://keepass.info/){.external}
+[El gestor de contraseñas KeePass](https://keepass.info/){.external}
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

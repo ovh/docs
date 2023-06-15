@@ -6,10 +6,10 @@ section: AI Notebooks - Tutorials
 order: 06
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-marine-mammal-sounds-classification/'
-updated: 2022-09-01
+updated: 2023-05-11
 ---
 
-**Last updated 1st September, 2022.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 
@@ -42,7 +42,7 @@ If you want to upload it from the [OVHcloud Control Panel](https://www.ovh.com/a
 If you want to run it with the CLI, just follow this [this guide](https://docs.ovh.com/de/publiccloud/ai/cli/access-object-storage-data/). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
 ```bash
-ovhai data upload <region> <container> <paths>
+ovhai bucket object upload <container>@<region> <paths>
 ```
 
 > [!primary]
@@ -59,10 +59,11 @@ ovhai data upload <region> <container> <paths>
 
 You need to attach a volume if your data is in your OVHcloud Object Storage and you want to use it during your experiment. For more information on data, volumes and permissions, see [our guide on data](https://docs.ovh.com/de/publiccloud/ai/cli/access-object-storage-data/).
 
-To be able to use the source code below in this article you have to create 2 Object Storage containers mounted as follows:
+To be able to use the source code below in this article you have to create 2 Object Storage containers and a git repository mounted as follows:
 
  - mount point name: `/workspace/data`, permissions: `read & write`
  - mount point name: `/workspace/saved_model`, permissions: `read & write`
+ - mount point name: `/workspace/ai-training-examples`, permissions: `read & write`, Git URL: `https://github.com/ovh/ai-training-examples.git`
 
 `Choose the same region as your object container` > `"One image to rule them all" framework` > `Attach Object Storage containers (the one that contains your dataset)`
 
@@ -71,8 +72,18 @@ If you want to launch it with the CLI, choose the [volume](https://docs.ovh.com/
 ```bash
 ovhai notebook run one-for-all jupyterlab \
   --name <notebook-name> \
-  --gpu <nb-gpus>
+  --gpu <nb-gpus> \
   --volume <container@region/prefix:mount_path:permission>
+```
+
+For example:
+```bash
+ovhai notebook run one-for-all jupyterlab \
+  --name marine-mammal-sounds-classification \
+  --gpu 1 \
+  --volume marine-mammal-sounds@GRA/:/workspace/data:RW:cache \
+  --volume marine-mammal-model@GRA/:/workspace/saved_model:RW:cache \
+  --volume https://github.com/ovh/ai-training-examples.git:/workspace/ai-training-examples:RW
 ```
 
 You can then reach your notebook’s URL once the notebook is running.
@@ -89,6 +100,8 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 
 - If you want to deploy a **Streamlit** app in order to classify marine mammal sounds using your model, please check out this [notebook](https://docs.ovh.com/de/publiccloud/ai/deploy/tuto-streamlit-sounds-classification/).
 - You can also compare two methods for audio classification task by following this [tutorial](https://docs.ovh.com/de/publiccloud/ai/training/tuto-models-comparaison-weights-and-biases/).
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

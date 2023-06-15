@@ -88,7 +88,7 @@ Yes, that's exactly the use case for Gateway (L3 router with SNAT option). Curre
 
 It depends on the usage:
 
-- For outbound use cases we offer a shared public IP on Gateway which is included.
+- For outbound use cases we offer a public IP which is included in the Gateway price.
 - For inbound use cases (to expose a service running on a private instance to the Internet) you need to have a Floating IP to attach via Gateway to your instance or network service.
 
 ### How can I spawn a private instance to be used with Gateway and SNAT option?
@@ -113,5 +113,7 @@ A Floating IP is a flexible public IP address that can be associated to a privat
 The pool for a Floating IP must be "Ext-Net" and you can associate it to a port on the private network.
 
 ## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

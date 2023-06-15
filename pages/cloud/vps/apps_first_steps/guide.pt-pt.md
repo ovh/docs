@@ -58,7 +58,7 @@ Não é necessário mais nenhuma etapa para terminar a primeira configuração d
 > Porquê definir a password root?
 >> O WHM utiliza de forma padrão o utilizador root para a autenticação. O URL de utilização única permite aceder à primeira configuração e modificar a palavra-passe root. Na próxima vez que aceder ao WHM, deverá utilizar o utilizador root e a palavra-passe que definiu.
 > Onde está a minha licença para o cPanel?
->> Pode encomendar a sua licença cPanel para o seu VPS a partir [da Área de Cliente OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+>> Pode encomendar a sua licença cPanel para o seu VPS a partir da [Área de Cliente OVHcloud](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
 
 #### Plesk
 

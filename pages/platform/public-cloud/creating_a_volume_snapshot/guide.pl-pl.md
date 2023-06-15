@@ -4,16 +4,23 @@ slug: migawka-wolumenu
 excerpt: Dowiedz się, jak utworzyć snapshot dodatkowego dysku Public Cloud
 section: Przestrzeń dyskowa
 order: 2
-updated: 2023-03-03
+updated: 2023-04-21
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 03-03-2023**
+**Ostatnia aktualizacja z dnia 21-04-2023**
 
 ## Wprowadzenie
+
+Snapshot **wolumenu** to punkt odzysku przechowywany w tym samym klastrze przestrzeni dyskowej, co oryginalny wolumen. Operacje tworzenia i przywracania są szybkie, ale w przypadku awarii na klastrze, wolumen i wolumen Snapshot mogą być niedostępne.<br>
+Tworzenie wolumenu Snapshot nie wymaga odłączenia wolumenu od instancji.
+
+Nie należy tego mylić z Backup **wolumenu** to obraz utworzony na podstawie wolumenu. Wolumen jest przechowywany w klastrze Object Storage w lokalizacji oryginalnego wolumenu.
+Ten poziom odporności jest idealny i pozwala na szybką reakcję na każdy problem z wolumenem tworząc kolejny wolumen z kopii zapasowej.<br>
+Tworzenie kopii zapasowej wolumenu wymaga odłączenia wolumenu od instancji. Więcej informacji na temat tej opcji można znaleźć w tym [przewodniku](https://docs.ovh.com/pl/public-cloud/volume-backup/).
 
 Tworzenie snapshota dodatkowego wolumenu zwykle odpowiada dwóm celom:
 
@@ -58,6 +65,8 @@ Otwórz sekcję `Volume Snapshot`{.action} na pasku nawigacyjnym po lewej stroni
 Kliknij przycisk `...`{.action}, aby usunąć snapshot lub Utwórz wolumen z odpowiedniego snapshota. Więcej informacji znajdziesz w [tym przewodniku](../create-volume-from-backup/).
 
 ## Sprawdź również
+
+[Tworzenie kopii zapasowej wolumenu](https://docs.ovh.com/pl/public-cloud/volume-backup/)
 
 [Tworzenie wolumenu z kopii zapasowej](../create-volume-from-backup/)
 

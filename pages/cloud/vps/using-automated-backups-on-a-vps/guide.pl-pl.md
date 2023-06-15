@@ -8,7 +8,7 @@ updated: 2022-11-15
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia: 15-11-2022**
@@ -94,13 +94,13 @@ Najpierw połącz się z prywatnym serwerem wirtualnym przy użyciu protokołu S
 
 Aby zweryfikować nazwę nowo przyłączonego urządzenia, użyj następującego polecenia:
 
-```
+```bash
 $ lsblk
 ```
 
 Przykład danych wyświetlonych po wykonaniu tego polecenia:
 
-```
+```console
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda       8:0    0   25G  0 disk 
 ├─sda1    8:1    0 24.9G  0 part /
@@ -115,7 +115,7 @@ sdb       8:16   0   25G  0 disk
 W tym przykładzie partycja zawierająca system plików kopii zapasowej ma nazwę “sdb1”.
 Następnie utwórz katalog dla tej partycji i zdefiniuj go jako punkt montowania:
 
-```
+```bash
 $ mkdir -p /mnt/restore
 $ mount /dev/sdb1 /mnt/restore
 ```
@@ -160,27 +160,27 @@ Wymagany *qemu-guest-agent* nie jest domyślnie zainstalowany na większości dy
 
 Wprowadź poniższą komendę, aby sprawdzić, czy system został poprawnie skonfigurowany pod kątem tworzenie migawek:
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Jeśli wynik jest inny (“No such file or directory”), zainstaluj najnowszy pakiet:
 
-```
+```bash
 $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
 Zrestartuj serwer VPS:
 
-```
+```bash
 $ sudo reboot
 ```
 
 Uruchom usługę, aby upewnić się, że działa:
 
-```
+```bash
 $ sudo service qemu-guest-agent start
 ```
 
@@ -188,27 +188,27 @@ $ sudo service qemu-guest-agent start
 
 Wprowadź poniższą komendę, aby sprawdzić, czy system został poprawnie skonfigurowany pod kątem tworzenie migawek:
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Jeśli wynik jest inny (“No such file or directory”), zainstaluj i aktywuj agenta:
 
-```
+```bash
 $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
 Zrestartuj serwer VPS:
 
-```
+```basj
 $ sudo reboot
 ```
 
 Uruchom agenta i sprawdź, czy działa:
 
-```
+```bash
 $ sudo service qemu-guest-agent start
 $ sudo service qemu-guest-agent status
 ```
@@ -219,7 +219,7 @@ Możesz zainstalować agenta za pomocą pliku MSI dostępnego na stronie projekt
 
 Sprawdź, czy usługa działa za pomocą poniższej komendy powershell:
 
-```
+```powershell
 PS C:\Users\Administrator> Get-Service QEMU-GA
 Status   Name               DisplayName
 ------   ----               -----------
@@ -230,4 +230,4 @@ Running  QEMU-GA            QEMU Guest Agent
 
 [Korzystanie z migawek na prywatnym serwerze wirtualnym](../uzywanie-migawki-vps/)
 
-Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.
+Dołącz do naszej społeczności użytkowników <https://community.ovh.com/en/>.

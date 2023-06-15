@@ -4,7 +4,7 @@ slug: deploying-gpu-application
 excerpt: 'Find out how to deploy a GPU application on OVHcloud Managed Kubernetes'
 section: GPU
 order: 0
-updated: 2022-02-16
+updated: 2023-04-26
 ---
 
 <style>
@@ -29,7 +29,7 @@ updated: 2022-02-16
  }
 </style>
 
-**Last updated February 16, 2022.**
+**Last updated April 26th, 2023.**
 
 ## Objective
 
@@ -119,14 +119,18 @@ For this tutorial we are using the [NVIDIA GPU Operator Helm chart](https://gith
 
 Add the NVIDIA Helm repository:
 
+> [!primary]
+>
+> The Nvidia Helm chart has moved. If you already added a repo with the name `nvidia`, you can remove it: `helm repo remove nvidia`.
+
 ```bash
-helm repo add nvidia https://nvidia.github.io/gpu-operator
+helm repo add nvidia https://helm.ngc.nvidia.com/nvidia
 helm repo update
 ```
 
 This will add the NVIDIA repository and update all of your repositories: 
 
-<pre class="console"><code>$ helm repo add nvidia https://nvidia.github.io/gpu-operator
+<pre class="console"><code>$ helm repo add nvidia https://helm.ngc.nvidia.com/nvidia
 helm repo update
 "nvidia" has been added to your repositories
 Hang tight while we grab the latest from your chart repositories...
@@ -144,8 +148,9 @@ helm install gpu-operator nvidia/gpu-operator -n gpu-operator --create-namespace
 You should have a GPU operator installed and running:
 
 <pre class="console"><code>$ helm install gpu-operator nvidia/gpu-operator -n gpu-operator --create-namespace --wait
+
 NAME: gpu-operator
-LAST DEPLOYED: Thu Dec 23 15:27:25 2021
+LAST DEPLOYED: Tue Apr 25 09:59:59 2023
 NAMESPACE: gpu-operator
 STATUS: deployed
 REVISION: 1
@@ -153,28 +158,37 @@ TEST SUITE: None
 
 $ kubectl get pod -n gpu-operator
 NAME                                                          READY   STATUS      RESTARTS   AGE
-gpu-feature-discovery-n7tv8                                   1/1     Running     0          3m35s
-gpu-feature-discovery-xddz2                                   1/1     Running     0          3m35s
-gpu-operator-bb886b456-llmlg                                  1/1     Running     0          5m31s
-gpu-operator-node-feature-discovery-master-58d884d5cc-lxkb8   1/1     Running     0          5m31s
-gpu-operator-node-feature-discovery-worker-9pqqq              1/1     Running     0          4m27s
-gpu-operator-node-feature-discovery-worker-s5zj9              1/1     Running     0          4m20s
-nvidia-container-toolkit-daemonset-424mm                      1/1     Running     0          3m36s
-nvidia-container-toolkit-daemonset-dqlw9                      1/1     Running     0          3m36s
-nvidia-cuda-validator-5dzf7                                   0/1     Completed   0          76s
-nvidia-cuda-validator-zp9vd                                   0/1     Completed   0          95s
-nvidia-dcgm-4bstw                                             1/1     Running     0          3m36s
-nvidia-dcgm-4t7zd                                             1/1     Running     0          3m36s
-nvidia-dcgm-exporter-rhtbj                                    1/1     Running     1          3m35s
-nvidia-dcgm-exporter-ttq2t                                    1/1     Running     0          3m35s
-nvidia-device-plugin-daemonset-f8vht                          1/1     Running     0          3m36s
-nvidia-device-plugin-daemonset-lt9xr                          1/1     Running     0          3m36s
-nvidia-device-plugin-validator-gj86p                          0/1     Completed   0          28s
-nvidia-device-plugin-validator-w2vz4                          0/1     Completed   0          37s
-nvidia-driver-daemonset-2mcft                                 1/1     Running     0          3m36s
-nvidia-driver-daemonset-v9pv9                                 1/1     Running     0          3m36s
-nvidia-operator-validator-g6fbm                               1/1     Running     0          3m36s
-nvidia-operator-validator-xctsp                               1/1     Running     0          3m36s
+gpu-feature-discovery-8xzzw                                   1/1     Running     0          22m
+gpu-feature-discovery-kxtlh                                   1/1     Running     0          22m
+gpu-feature-discovery-wdvr7                                   1/1     Running     0          22m
+gpu-operator-689dbf694b-clz7f                                 1/1     Running     0          23m
+gpu-operator-node-feature-discovery-master-7db9bfdd5b-9w2hj   1/1     Running     0          23m
+gpu-operator-node-feature-discovery-worker-2wpmm              1/1     Running     0          23m
+gpu-operator-node-feature-discovery-worker-4bsn7              1/1     Running     0          23m
+gpu-operator-node-feature-discovery-worker-9klx5              1/1     Running     0          23m
+gpu-operator-node-feature-discovery-worker-gn62n              1/1     Running     0          23m
+gpu-operator-node-feature-discovery-worker-hdzpx              1/1     Running     0          23m
+nvidia-container-toolkit-daemonset-hvx6x                      1/1     Running     0          22m
+nvidia-container-toolkit-daemonset-lhmxn                      1/1     Running     0          22m
+nvidia-container-toolkit-daemonset-tjrb2                      1/1     Running     0          22m
+nvidia-cuda-validator-fcfwn                                   0/1     Completed   0          18m
+nvidia-cuda-validator-mdbml                                   0/1     Completed   0          18m
+nvidia-cuda-validator-sv979                                   0/1     Completed   0          17m
+nvidia-dcgm-exporter-fvn8h                                    1/1     Running     0          22m
+nvidia-dcgm-exporter-mt5qh                                    1/1     Running     0          22m
+nvidia-dcgm-exporter-n65kl                                    1/1     Running     0          22m
+nvidia-device-plugin-daemonset-hwc95                          1/1     Running     0          22m
+nvidia-device-plugin-daemonset-wr5td                          1/1     Running     0          22m
+nvidia-device-plugin-daemonset-zzzkm                          1/1     Running     0          22m
+nvidia-device-plugin-validator-4k5wd                          0/1     Completed   0          17m
+nvidia-device-plugin-validator-rjkzd                          0/1     Completed   0          17m
+nvidia-device-plugin-validator-swdrr                          0/1     Completed   0          17m
+nvidia-driver-daemonset-2jsmv                                 1/1     Running     0          22m
+nvidia-driver-daemonset-5zq44                                 1/1     Running     0          22m
+nvidia-driver-daemonset-v6qgx                                 1/1     Running     0          22m
+nvidia-operator-validator-kk6nd                               1/1     Running     0          22m
+nvidia-operator-validator-m9p9k                               1/1     Running     0          22m
+nvidia-operator-validator-s6czx                               1/1     Running     0          22m
 </code></pre>
 
 ### Verify GPU Operator Install
@@ -213,7 +227,7 @@ spec:
   restartPolicy: OnFailure
   containers:
   - name: cuda-vectoradd
-    image: "nvidia/samples:vectoradd-cuda11.2.1"
+    image: "nvcr.io/nvidia/k8s/cuda-sample:vectoradd-cuda11.7.1"
     resources:
       limits:
          nvidia.com/gpu: 1
@@ -259,89 +273,10 @@ Done
 
 Our first GPU workload is just started up and has done its task in our OVHcloud Managed Kubernetes cluster.
 
-### Running Load Test GPU Application
-
-After deploying your first application using GPU, you can now run a load test GPU application. 
-
-To do that you have to use the `nvidia-smi` (System Management Interface) in any container with the proper runtime. 
-
-To see this in action, create a `my-load-gpu-pod.yml` YAML manifest file with the following content:
-
-```yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: dcgmproftester
-spec:
-  restartPolicy: OnFailure
-  containers:
-  - name: dcgmproftester
-    image: nvidia/samples:dcgmproftester-2.0.10-cuda11.0-ubuntu18.04
-    args: ["--no-dcgm-validation", "-t 1004", "-d 240"]
-    resources:
-      limits:
-        nvidia.com/gpu: 1
-    securityContext:
-      capabilities:
-        add: ["SYS_ADMIN"]
-```
-
-Apply it:
-
-```bash
-kubectl apply -f my-load-gpu-pod.yml -n default
-```
-
-And watch the Pod startup:
-
-```bash
-kubectl get pod -n default -w
-```
-
-This will create a Pod using the Nvidia `dcgmproftester` to generate a test GPU load:
-
-<pre class="console"><code>$ kubectl apply -f my-load-gpu-pod.yml -n default
-pod/dcgmproftester created
-
-$ kubectl get po -w
-NAME             READY   STATUS      RESTARTS   AGE
-...
-dcgmproftester   1/1     Running     0          7s
-</code></pre>
-
-Then, execute into the pod:
-
-```bash
-kubectl exec -it dcgmproftester -- nvidia-smi -n default
-```
-
-<pre class="console"><code>$ kubectl exec -it dcgmproftester -- nvidia-smi
-
-Fri Dec 24 13:36:50 2021
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 470.82.01    Driver Version: 470.82.01    CUDA Version: 11.4     |
-|-------------------------------+----------------------+----------------------+
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-|                               |                      |               MIG M. |
-|===============================+======================+======================|
-|   0  Tesla V100-PCIE...  On   | 00000000:00:07.0 Off |                    0 |
-| N/A   47C    P0   214W / 250W |    491MiB / 16160MiB |     79%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-
-+-----------------------------------------------------------------------------+
-| Processes:                                                                  |
-|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
-|        ID   ID                                                   Usage      |
-|=============================================================================|
-+-----------------------------------------------------------------------------+
-</code></pre>
-
-You can see your test load under `GPU-Util` (third column), along with other information such as `Memory-Usage` (second column).
-
 ## Go further
 
 To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation](../).
 
-Join our [community of users](https://community.ovh.com/en/).
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our [community of users](https://community.ovh.com/en/).

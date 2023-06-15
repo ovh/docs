@@ -122,7 +122,7 @@ You can do this in two ways:
 
 - Creating a redirection in the webmail interface, via inbox rules. To do this, please follow our guide on [Inbox rules in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/creating-inbox-rules-in-owa/#example-1-redirecting-emails-to-another-address).
 
-- Creating a redirection from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). For example, you can use this method to create an alias, i.e. redirect an email address that does not exist to an existing email address. To do this, please follow our guide on [Using email](https://docs.ovh.com/gb/en/emails/email-redirection-guide/#mx-plan-new-version_1) redirections.
+- Creating a redirection from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). For example, you can use this method to create an alias, i.e. redirect an email address that does not exist to an existing email address. To do this, please follow our guide on [Using email](https://docs.ovh.com/gb/en/emails/email-redirection-guide/#mx-plan-new-version) redirections.
 
 ##### **Automated responses**
 
@@ -169,7 +169,7 @@ In the popup window, enter the following information:
 |User name|Enter the name for your email address (firstname.lastname, for example). The domain name concerned is already entered by default.|  
 |Account description|Enter a short description that will distinguish this account from any other accounts added in the OVHcloud Control Panel.|  
 |Account size|Select the size of account you want. This size refers to the space available to your account for storing messages.|  
-|Password|Type in a password, and confirm it. For security reasons, we recommend not using the the same password twice, and choosing one that does not contain any personal information (e.g. first name, surname and date of birth). We also recommend changing your password regularly.|
+|Password|Type in a password, and confirm it. For security reasons, we recommend not using the same password twice, and choosing one that does not contain any personal information (e.g. first name, surname and date of birth). We also recommend changing your password regularly.|
 
 Once you have completed the text fields, click `Next`{.action} and then check the information that appears in the summary. If it is all correct, click `Confirm`{.action} . Repeat this step as necessary according to the number of accounts you have.
 

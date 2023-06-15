@@ -8,7 +8,7 @@ updated: 2021-12-10
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
 **Letzte Aktualisierung am 10.12.2021**
@@ -54,7 +54,7 @@ Darüber hinaus kann das an Bedeutung zunehmende Phänomen "[Ransomware](https:/
 
 Um Ihren Kunden-Account zu schützen, aktivieren Sie die [Zwei-Faktor-Authentifizierung](../../customer/Account-mit-2FA-absichern/) und folgen Sie den Anweisungen in dieser [Anleitung](../../customer/alles_uber_ihre_ovh_kundenkennung/).
 
-Denken Sie daran, [Ihre Account-Informationen](../../customer/alles_uber_ihre_ovh_kundenkennung/#personliche-daten-im-account-verwalten_1) zu aktualisieren und eine **Zweit-E-Mail-Adresse** hinzuzufügen.<br>
+Denken Sie daran, [Ihre Account-Informationen](../../customer/alles_uber_ihre_ovh_kundenkennung/#personliche-daten-im-account-verwalten) zu aktualisieren und eine **Zweit-E-Mail-Adresse** hinzuzufügen.<br>
 Wenn Ihre Zugangsdaten verloren gehen und/oder die Haupt-E-Mail-Adresse Ihres OVHcloud Kunden-Accounts nicht verfügbar ist, sind eine Backup-E-Mail-Adresse sowie aktuelle persönliche Daten wichtig, um Ihnen schnell weiterhelfen zu können.
 
 ### Schritt 3: Führen Sie regelmäßig Sicherungen Ihrer Seite durch <a name="backup"></a>

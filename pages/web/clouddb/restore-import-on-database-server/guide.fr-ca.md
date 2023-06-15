@@ -83,7 +83,7 @@ Cochez, si vous le désirez, **« Vider la base de données actuelle »** avant 
 
 ### Import de base de données MySQL ou MariaDB hors espace client
 
-Dans certains cas, la RAM disponible dans votre serveur de bases de données ne permet pas de réaliser l'import souhaité en dehors de l'espace client. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. Reportez-vous à la section [« Restaurer et importer une base de données depuis l'espace client »](./#sauvegarde-restauration-et-importation-depuis-lespace-client_1) de cette documentation.
+Dans certains cas, la RAM disponible dans votre serveur de bases de données ne permet pas de réaliser l'import souhaité en dehors de l'espace client. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. Reportez-vous à la section [« Restaurer et importer une base de données depuis l'espace client »](./#sauvegarde-restauration-et-importation-depuis-lespace-client) de cette documentation.
 
 
 #### Importer ma base MySQL ou MariaDB depuis phpMyAdmin
@@ -130,7 +130,7 @@ cat nom_de_la_base.sql | mysql --host=serveur --user=utilisateur --port=port --p
 
 ### Importer une base de données PostgreSQL hors espace client
 
-Dans certains cas, il se peut que la RAM disponible dans votre serveur de bases de données ne permette pas de réaliser l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. Reportez-vous à la section [« Restaurer et importer une base de données depuis l'espace client »](./#sauvegarde-restauration-et-importation-depuis-lespace-client_1) de cette documentation.
+Dans certains cas, il se peut que la RAM disponible dans votre serveur de bases de données ne permette pas de réaliser l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. Reportez-vous à la section [« Restaurer et importer une base de données depuis l'espace client »](./#sauvegarde-restauration-et-importation-depuis-lespace-client) de cette documentation.
 
 #### Importer ma base PostgreSQL en ligne de commande
 

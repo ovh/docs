@@ -4,14 +4,14 @@ slug: ssl-ev
 excerpt: "Erfahren Sie hier, wie Sie ein EV SSL-Zertifikat für Ihr OVHcloud Webhosting bestellen und installieren"
 section: SSL
 order: 03
-updated: 2022-12-13
+updated: 2023-06-08
 ---
  
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 13.12.2022**
+**Letzte Aktualisierung am 08.06.2023**
   
 ## Ziel  
 
@@ -137,6 +137,16 @@ Sobald Ihre Bestellung ausgeführt wurde, sendet Sectigo Ihnen eine E-Mail mit e
 Überprüfen Sie Ihre Angaben und bestätigen Sie Ihre Anfrage gemäß den Informationen in dieser E-Mail. 
 
 Um sicherzustellen, dass der E-Mail-Verkehr mit Sectigo korrekt abläuft, überprüfen Sie auch die Gültigkeit der im Formular angegebenen E-Mail-Adresse bei der Bestellung des EV SSL und der Kontakt-E-Mail-Adresse in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+
+> [!primary]
+>
+> Parallel dazu wird automatisch im FTP-Bereich Ihres Webhostings eine *.txt*-Datei erstellt, um die Inhaberschaft Ihres Domainamens bei Sectigo zu bestätigen. Die Datei wird gelöscht, sobald sie von Sectigo nicht mehr benötigt wird.
+>
+> Bitte beachten Sie, dass bestimmte Einschränkungen von Ihrer Seite (z.B. in einer ".htaccess"-Datei) diese Überprüfung verhindern können.
+> Zu restriktive FTP-Zugriffsbeschränkungen (*CHMOD*) können die Überprüfung ebenfalls blockieren.
+>
+> Wir empfehlen auch, die [Application Firewall](/pages/web/hosting/multisites_activating_application_firewall), die bei unseren Webhostings inkludiert ist, während der gesamten Dauer der Installation Ihres EV SSL-Zertifikats zu deaktivieren.
+>
 
 #### 2.2 - Überprüfungen durch die Zertifizierungsstelle Sectigo
 

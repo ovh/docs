@@ -6,14 +6,12 @@ section: AI Deploy - Guides
 order: 02
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/getting-started/'
-updated: 2022-11-03
+updated: 2023-04-04
 ---
 
-**Last updated 3rd November, 2022.**
+**Last updated 4th April, 2023.**
 
 > [!primary]
->
-> AI Deploy is in `beta`. During the beta-testing phase, the infrastructure’s availability and data longevity are not guaranteed. Please do not use this service for applications that are in production, as this phase is not complete.
 >
 > AI Deploy is covered by **[OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf)**.
 >
@@ -163,7 +161,7 @@ In our case, the exact cURL code is:
 
 ```bash
  curl --request POST
-    --url https://9b5b651e-8514-43d0-ae68-af801771542f.app.gra.training.ai.cloud.ovh.net
+    --url https://9b5b651e-8514-43d0-ae68-af801771542f.app.gra.ai.cloud.ovh.net
     -H "Authorization: Bearer WixOC/dmSoK3d0YSd20UvLMzbSVxMTMosnz6FcBQOQDlqxAsR5BezCVKtYfu18e"
     --header 'Content-Type: application/json'
     --data ' "Elea" '
@@ -186,7 +184,7 @@ import requests
 import json
 from requests.structures import CaseInsensitiveDict
 
-url = "https://9b5b651e-8514-43d0-ae68-af801771542f.app.gra.training.ai.cloud.ovh.net"
+url = "https://9b5b651e-8514-43d0-ae68-af801771542f.app.gra.ai.cloud.ovh.net"
 
 headers = CaseInsensitiveDict()
 headers = {'content-type': 'application/json',
@@ -228,6 +226,7 @@ Be sure to also delete your Object Storage data if you don't need it anymore.
 - You can imagine deploying an AI model for sketch recognition thanks to **AI Deploy**. Refer to this [tutorial](https://docs.ovh.com/it/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/).
 - Do you want to use **Streamlit** in order to create an app? [Here it is](https://docs.ovh.com/it/publiccloud/ai/deploy/tuto-build-use-flask-image/).
 
-## Feedback
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/it/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
+## Feedback
 Please feel free to send us your questions, feedback and suggestions to help our team improve the service on the OVHcloud [Discord server](https://discord.com/invite/KbrKSEettv)!

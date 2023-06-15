@@ -6,14 +6,12 @@ section: AI Deploy - Tutoriels
 order: 08
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-fastapi-spam-classifier/'
-updated: 2023-01-31
+updated: 2023-04-04
 ---
 
-**Last updated 31st January, 2023.**
+**Last updated 4th April, 2023.**
 
 > [!primary]
->
-> AI Deploy is in `beta`. During the beta-testing phase, the infrastructure’s availability and data longevity are not guaranteed. Please do not use this service for applications that are in production, as this phase is not complete.
 >
 > AI Deploy is covered by **[OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf)**.
 >
@@ -359,7 +357,7 @@ You can add `/docs` at the end of the url of your app.
 
 > [!primary]
 >
-> In our example, the url is as follows: `https://ba2ef330-3e95-444a-a81b-7ca83dff5836.app.gra.training.ai.cloud.ovh.net/docs`
+> In our example, the url is as follows: `https://ba2ef330-3e95-444a-a81b-7ca83dff5836.app.gra.ai.cloud.ovh.net/docs`
 >
 
 It provides a complete dashboard for interacting with the API!
@@ -380,6 +378,8 @@ Congratulations! You have obtained the result of the prediction with the **label
 
 - You can imagine deploying an AI model with an other tool: **Gradio**. Read this [tutorial](https://docs.ovh.com/ca/fr/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/).
 - Another way to create an AI Deploy app is to use **Streamlit**! [Follow this tutorial](https://docs.ovh.com/ca/fr/publiccloud/ai/deploy/tuto-streamlit-eda-iris/).
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

@@ -3,11 +3,11 @@ title: Known limits
 excerpt: 'Requirements and limits to respect'
 slug: known-limits
 section: Technical resources
-updated: 2023-03-03
+updated: 2023-06-06
 ---
 
 
-**Last updated 3rd March 2023.**
+**Last updated 6th June 2023.**
 
 <style>
  pre {
@@ -41,8 +41,9 @@ A node can run up to 110 pods. This limit does not depend on node flavor.
 
 In general, it is better to have several mid-size Kubernetes clusters than a monster-size one.
 
-To ensure high availability for your services, it is recommended to possess the computation power capable of handling your workload even when one of your nodes becomes unavailable.  
-Note that any operation requested to our services, like node deletions or updates, will be performed even if Kubernetes budget restrictions are present.
+To ensure high availability for your services, it is recommended to possess the computation power capable of handling your workload even when one of your nodes becomes unavailable.
+
+Please note that any operation requested to our services, like node deletions or rolling updates, will try to gracefully drain the nodes by respecting [Pod Disruption Budgets](https://kubernetes.io/docs/tasks/run-application/configure-pdb/) for a maximum duration of 10 minutes. After this time period, the nodes will be forcefully drained to ensure the smooth progress of the operation. This graceful node draining process only applies when there is at least one other node in the cluster.
 
 Most worker nodes (be them added manually or through cluster autoscaler) are created within a few minutes, with the exception of GPU worker nodes (t1 and t2 flavors) where ready status can take up to a bit more than one hour.
 
@@ -173,3 +174,9 @@ For more details, please refer to the [Resizing Persistent Volumes documentation
 The Persistent Volumes are using our Cinder-based block-storage solution through Cinder CSI.  
 A worker node can have a maximum of 254 persistent volumes attached to it, and a persistent volume can only be attached to a single worker node.  
 You can manually [configure multi-attach persistent volumes with NAS-HA](../configuring-multi-attach-persistent-volumes-with-ovhcloud-nas-ha/).
+
+## Go further
+
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our [community of users](https://community.ovh.com/en/).

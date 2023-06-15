@@ -26,7 +26,7 @@ In certi casi può essere utile rimuovere un datastore dal cluster, ad esempio p
 
 > [!warning]
 >
-> Ti ricordiamo che non è possibile rimuovere i **due datastore da 300 GB o 1,2 TB** inclusi in un pack. Inoltre, per motivi di sicurezza, non è consentito rimuovere un datastore contenente macchine virtuali (nella finestra di conferma troverai l’elenco delle VM allocate nel datastore).
+> Per motivi di sicurezza, non è consentito rimuovere un datastore contenente macchine virtuali (nella finestra di conferma troverai l’elenco delle VM allocate nel datastore).
 > 
 
 

@@ -31,7 +31,7 @@ Puede añadir un servidor secundario o sustituir esta configuración por la suya
 
 - Tener una [instancia de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud.
 - Tener acceso de administrador (root) a la instancia a través de SSH o RDP.
-- Conocimientos básicos de red y administración
+- Conocimientos básicos de red y administración.
 
 ## Procedimiento
 
@@ -113,7 +113,7 @@ NAME         UUID                                  TYPE      DEVICE
 System eth0  5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03  ethernet  eth0
 ```
 
-Desactive la modificación automática de los DNS y añada las direcciones IP (sustituya IP1/IP2) de los servidores DNS que quiera configurar. (Sustituya `System eth0` por el valor real obtenido anteriormente.)
+Desactive la modificación automática de los DNS y añada las direcciones IP (sustituya IP1/IP2) de los servidores DNS que quiera configurar. (Sustituya `System eth0` por el valor real obtenido anteriormente).
 
 ```bash
 nmcli con mod "System eth0" ipv4.ignore-auto-dns yes

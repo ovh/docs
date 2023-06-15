@@ -6,14 +6,12 @@ section: AI Deploy - Tutoriels
 order: 03
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-streamlit-sounds-classification/'
-updated: 2023-01-31
+updated: 2023-04-06
 ---
 
-**Last updated 31st January, 2023.**
+**Last updated 6th April, 2023.**
 
 > [!primary]
->
-> AI Deploy is in `beta`. During the beta-testing phase, the infrastructure’s availability and data longevity are not guaranteed. Please do not use this service for applications that are in production, as this phase is not complete.
 >
 > AI Deploy is covered by **[OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf)**.
 >
@@ -211,17 +209,22 @@ if __name__ == '__main__':
 The `requirements.txt` file will allow us to write all the modules needed to make our application work. This file will be useful when writing the `Dockerfile`.
 
 ```console
-streamlit
+streamlit==1.20.*
+tensorflow==2.12.0
+numpy==1.22.4
+pandas==1.5.3
+scikit-learn==1.2.*
+librosa==0.10.*
 ```
 
 Here we will mainly discuss how to write the `app.py` code, the `requirements.txt` file and the `Dockerfile`. If you want to see the whole code, please refer to the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/audio-classification-app).
 
 ### Write the Dockerfile for the application
 
-Your Dockerfile should start with the the `FROM` instruction indicating the parent image to use. In our case we choose to start from the `one-for-all` OVHcloud image:
+Your Dockerfile should start with the `FROM` instruction indicating the parent image to use. In our case we choose to start from the `python:3.8` image:
 
 ```console
-ovhcom/ai-training-one-for-all
+python:3.8
 ```
 
 Create the home directory and add your files to it:
@@ -373,8 +376,11 @@ If you want your notebook to be accessible without the need to authenticate, spe
 - You can imagine deploying an AI model with an other tool: **Gradio**. Refer to this [tutorial](https://docs.ovh.com/ca/fr/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/).
 - Another way to create an AI Deploy app is to use **Flask**! [Here it is](https://docs.ovh.com/ca/fr/publiccloud/ai/deploy/web-service-yolov5/).
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
+

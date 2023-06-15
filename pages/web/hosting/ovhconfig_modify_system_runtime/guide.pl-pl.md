@@ -54,7 +54,7 @@ W oknie, które się pojawi, masz do wyboru dwie opcje. Wybierz opcję odpowiada
 |Wybór|Szczegóły|
 |---|---|
 |„Powrót do poprzedniej konfiguracji”|Po zaznaczeniu tej opcji, wybierz konfigurację do odtworzenia obok przycisku `Wybór poprzedniej konfiguracji`. Opcja ta może być niedostępna, jeśli nie przeprowadzałeś zmian konfiguracji w przeszłości.|
-|„Zmień bieżącą konfigurację”|Po zaznaczeniu tej opcji wybierz spośród poszczególnych pól modyfikacje do wprowadzenia w danej konfiguracji. Możesz sprawdzić dostępne modyfikacje w sekcji zatytułowanej [Dostępne opcje konfiguracji środowiska uruchomieniowego](./#dostepne-opcje-konfiguracji-srodowiska-uruchomieniowego_1){.external}.|
+|„Zmień bieżącą konfigurację”|Po zaznaczeniu tej opcji wybierz spośród poszczególnych pól modyfikacje do wprowadzenia w danej konfiguracji. Możesz sprawdzić dostępne modyfikacje w sekcji zatytułowanej [Dostępne opcje konfiguracji środowiska uruchomieniowego](./#dostepne-opcje-konfiguracji-srodowiska-uruchomieniowego){.external}.|
 
 > [!primary]
 >

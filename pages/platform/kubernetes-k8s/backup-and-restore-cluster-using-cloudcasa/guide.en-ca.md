@@ -2,8 +2,8 @@
 title: Backing-up an OVHcloud Managed Kubernetes cluster using CloudCasa
 excerpt: Find out how to back-up an OVHcloud Managed Kubernetes cluster using CloudCasa
 slug: backup-and-restore-cluster-using-cloudcasa
-section: Storage
-order: 12
+section: 'Backup and Restore'
+order: 02
 updated: 2022-10-31
 ---
 
@@ -299,3 +299,7 @@ Now you can sit back and relax, knowing that you can now take ad-hoc or schedule
 ## Go further
 
 In case you have questions, you can read the [FAQ page](https://cloudcasa.io/faq/) and access the [dedicated forum](https://cloudcasa.io/forum/forum/cloudcasa/).
+
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our community of users on <https://community.ovh.com/en/>.

@@ -4,10 +4,10 @@ slug: training/tuto-models-comparaison-weights-and-biases
 excerpt: Compare 2 models by running 2 jobs in parallel. See which one performs best on your data!
 section: AI Training - Tutorials
 order: 06
-updated: 2023-01-31
+updated: 2023-05-11
 ---
 
-**Last updated 31st January, 2023.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 
@@ -113,7 +113,7 @@ If you want to upload it from the [OVHcloud Control Panel](https://www.ovh.com/a
 If you want to run it with the CLI, just follow [this guide](https://docs.ovh.com/ie/en/publiccloud/ai/cli/access-object-storage-data/). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
 ```console
-ovhai data upload <region> <container> <paths>
+ovhai bucket object upload <container>@<region> <paths>
 ```
 
 You should have:
@@ -298,7 +298,7 @@ docker build . -t <your-docker-id>/audio-classification-models:latest
 
 > [!warning]
 >
-> To know more about the the **Docker Hub**, click [here](https://hub.docker.com/).
+> To know more about the **Docker Hub**, click [here](https://hub.docker.com/).
 >
 
 ```console
@@ -487,6 +487,8 @@ However, it takes longer to train and consumes **more computing resources**.
 
 - To build an app to classify audios, refer to this [tutorial](https://docs.ovh.com/ie/en/publiccloud/ai/deploy/tuto-streamlit-sounds-classification/).
 - Do you want to know how to build and use custom Docker image with AI Training? [Here it is](https://docs.ovh.com/ie/en/publiccloud/ai/training/build-use-custom-image/).
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

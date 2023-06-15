@@ -4,10 +4,10 @@ slug: unikanie_pulapek_ssl_na_stronie_www
 excerpt: 'Dowiedz się, na co zwrócić uwagę przy wdrożeniu certyfikatu SSL na stronie internetowej'
 section: SSL
 order: 04
-updated: 2022-10-05
+updated: 2020-05-05
 ---
 
-**Ostatnia aktualizacja dnia 20-09-2018**
+**Ostatnia aktualizacja z dnia 05-05-2020**
 
 ## Wprowadzenie 
 

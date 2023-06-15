@@ -1,2 +1,10 @@
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-us
+- es-us
 id: 9a061a3d-f8a4-4f2e-ad9a-060b5a2ab795
 full_slug: sms-managing-answers

@@ -6,7 +6,7 @@ section: Monitoring & Observability
 order: 00
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/monitoring-apps-prometheus-grafana/'
-updated: 2022-03-16
+updated: 2023-03-17
 ---
 
 <style>
@@ -31,7 +31,7 @@ updated: 2022-03-16
  }
 </style>
 
-**Last updated March 16, 2022.**
+**Last updated March 17, 2023.**
 
 ## Objective
 
@@ -85,35 +85,27 @@ Hang tight while we grab the latest from your chart repositories...
 Update Complete. ⎈Happy Helming!⎈
 </code></pre>
 
-You need to modify some settings. To do this, inspect the chart to retrieve these values ​​in a file:
+To install the Prometheus Operator Helm chart in your OVHcloud Managed Kubernetes cluster, you need to customize some values.
+To do this, you can set parameters on the command line (`--set param.name=value`) or create a local file based on the values from the chart and pass it on the command line (`--values /tmp/kube-prometheus-stack.values`).
 
-```bash
-helm inspect values prometheus-community/kube-prometheus-stack > /tmp/kube-prometheus-stack.values
-```
+For this tutorial we choose the first method.
 
-Open the `/tmp/kube-prometheus-stack.values` file in your favorite editor.
-
-Then search into it for `adminPassword` and replace it with the password you want to use for Grafana.
-
-By default, the Grafana password should be like this:
-
-```yaml
-  adminPassword: prom-operator
-```
-
-Copy and save the Grafana admin password, you will use it later in this tutorial.
-
-You are now ready to install Prometheus and Grafana.
+To install Prometheus and Grafana:
 
 ```bash
 helm install prometheus-community/kube-prometheus-stack \
 --create-namespace --namespace prometheus \
 --generate-name \
---values /tmp/kube-prometheus-stack.values \
 --set prometheus.service.type=LoadBalancer \
 --set prometheus.prometheusSpec.serviceMonitorSelectorNilUsesHelmValues=false \
---set grafana.service.type=LoadBalancer
+--set grafana.service.type=LoadBalancer \
+--set grafana.adminpassword=<my cool password>
 ```
+
+> [!primary]
+>
+> You can install only Prometheus without Grafana by setting the following property to false: `--set grafana.enabled=false`
+>
 
 As you can see, a new `prometheus` namespace will be created and we specified that we want to deploy a LoadBalancer in order to access externally to Prometheus and Grafana easily.
 
@@ -125,15 +117,17 @@ You should have a behavior like this:
 --values /tmp/kube-prometheus-stack.values \
 --set prometheus.service.type=LoadBalancer \
 --set prometheus.prometheusSpec.serviceMonitorSelectorNilUsesHelmValues=false \
---set grafana.service.type=LoadBalancer
-NAME: kube-prometheus-stack-1647417678
-LAST DEPLOYED: Wed Mar 16 09:01:23 2022
+--set grafana.service.type=LoadBalancer \
+--set grafana.adminpassword=myawesomepassword
+
+NAME: kube-prometheus-stack-1679042344
+LAST DEPLOYED: Fri Mar 17 09:39:16 2023
 NAMESPACE: prometheus
 STATUS: deployed
 REVISION: 1
 NOTES:
 kube-prometheus-stack has been installed. Check its status by running:
-  kubectl --namespace prometheus get pods -l "release=kube-prometheus-stack-1647417678"
+  kubectl --namespace prometheus get pods -l "release=kube-prometheus-stack-1679042344"
 
 Visit https://github.com/prometheus-operator/kube-prometheus for instructions on how to create & configure Alertmanager and Prometheus instances using the Operator.
 </code></pre>
@@ -141,15 +135,13 @@ Visit https://github.com/prometheus-operator/kube-prometheus for instructions on
 You can also verify by checking the Pods in the new `prometheus` namespace:
 
 <pre class="console"><code>$ kubectl get pods -n prometheus
-NAME                                                              READY   STATUS    RESTARTS   AGE
-alertmanager-kube-prometheus-stack-1647-alertmanager-0            2/2     Running   0          14m
-kube-prometheus-stack-1647-operator-57b69b9667-d92sc              1/1     Running   0          14m
-kube-prometheus-stack-1647417678-grafana-695574b948-znqsd         3/3     Running   0          14m
-kube-prometheus-stack-1647417678-kube-state-metrics-6d4bc49pqlc   1/1     Running   0          14m
-kube-prometheus-stack-1647417678-prometheus-node-exporter-gxphr   1/1     Running   0          14m
-kube-prometheus-stack-1647417678-prometheus-node-exporter-jdtr6   1/1     Running   0          14m
-kube-prometheus-stack-1647417678-prometheus-node-exporter-xkqt2   1/1     Running   0          14m
-prometheus-kube-prometheus-stack-1647-prometheus-0                2/2     Running   0          14m
+NAME                                                              READY   STATUS    RESTARTS        AGE
+alertmanager-kube-prometheus-stack-1679-alertmanager-0            2/2     Running   0               3m3s
+kube-prometheus-stack-1679-operator-9fdc894c9-frqc6               1/1     Running   0               3m12s
+kube-prometheus-stack-1679042344-grafana-86c64879cf-gqqkh         3/3     Running   0               3m12s
+kube-prometheus-stack-1679042344-kube-state-metrics-754cc98m2gh   1/1     Running   0               3m12s
+kube-prometheus-stack-1679042344-prometheus-node-exporter-2r8mc   1/1     Running   0               3m12s
+prometheus-kube-prometheus-stack-1679-prometheus-0                2/2     Running   0               3m2s
 </code></pre>
 
 You can also check that `Prometheus` and `Grafana` have an external IP:
@@ -157,12 +149,12 @@ You can also check that `Prometheus` and `Grafana` have an external IP:
 <pre class="console"><code>$ kubectl get svc -n prometheus
 NAME                                                        TYPE           CLUSTER-IP     EXTERNAL-IP      PORT(S)                      AGE
 alertmanager-operated                                       ClusterIP      None           <none>           9093/TCP,9094/TCP,9094/UDP   15m
-kube-prometheus-stack-1647-alertmanager                     ClusterIP      10.3.14.89     <none>           9093/TCP                     15m
-kube-prometheus-stack-1647-operator                         ClusterIP      10.3.176.201   <none>           443/TCP                      15m
-kube-prometheus-stack-1647-prometheus                       LoadBalancer   10.3.105.242   51.210.210.213   9090:31819/TCP               15m
-kube-prometheus-stack-1647417678-grafana                    LoadBalancer   10.3.28.111    51.210.253.47    80:32481/TCP                 15m
-kube-prometheus-stack-1647417678-kube-state-metrics         ClusterIP      10.3.235.254   <none>           8080/TCP                     15m
-kube-prometheus-stack-1647417678-prometheus-node-exporter   ClusterIP      10.3.237.94    <none>           9100/TCP                     15m
+kube-prometheus-stack-1647-alertmanager                     ClusterIP      ZZ.Z.ZZ.ZZ     <none>           9093/TCP                     15m
+kube-prometheus-stack-1647-operator                         ClusterIP      ZZ.Z.ZZZ.ZZZ   <none>           443/TCP                      15m
+kube-prometheus-stack-1647-prometheus                       LoadBalancer   ZZ.Z.ZZZ.ZZZ   XX.XXX.XXX.XXX   9090:31819/TCP               15m
+kube-prometheus-stack-1647417678-grafana                    LoadBalancer   ZZ.Z.ZZ.ZZZ    YY.YYY.YYY.YY    80:32481/TCP                 15m
+kube-prometheus-stack-1647417678-kube-state-metrics         ClusterIP      ZZ.Z.ZZZ.ZZZ   <none>           8080/TCP                     15m
+kube-prometheus-stack-1647417678-prometheus-node-exporter   ClusterIP      ZZ.Z.ZZZ.ZZ    <none>           9100/TCP                     15m
 prometheus-operated                                         ClusterIP      None           <none>           9090/TCP                     14m
 </code></pre>
 
@@ -187,12 +179,12 @@ You should obtain the following result:
 <pre class="console"><code>$ export PROMETHEUS_URL=$(kubectl get svc -n prometheus -l app=kube-prometheus-stack-prometheus -o jsonpath='{.items[].status.loadBalancer.ingress[].ip}')
 
 $ echo Prometheus URL: http://$PROMETHEUS_URL:9090
-Prometheus URL: http://152.228.168.191:9090
+Prometheus URL: http://XX.XXX.XXX.XXX:9090
 
 $ export GRAFANA_URL=$(kubectl get svc -n prometheus -l app.kubernetes.io/name=grafana -o jsonpath='{.items[].status.loadBalancer.ingress[].ip}')
 
 $ echo Grafana URL: http://$GRAFANA_URL
-Grafana URL: http://51.178.69.167
+Grafana URL: http://YY.YYY.YYY.YY
 </code></pre>
 
 Open your browser and go to the Prometheus interface.
@@ -252,4 +244,6 @@ Prometheus and Grafana are very powerful monitoring tools, but also have alertin
 
 To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation](../).
 
-Join our [community of users](https://community.ovh.com/en/).
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our [community of users](https://community.ovh.com/en/).

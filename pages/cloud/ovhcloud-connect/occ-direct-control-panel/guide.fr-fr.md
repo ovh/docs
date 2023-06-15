@@ -18,7 +18,7 @@ OVHcloud Connect permet d’étendre votre réseau d’entreprise avec votre ré
 ## Prérequis
 
 > [!warning]
-> Pour assurer un fonctionnement correct de ce service, vous devez prendre connaissance des [capacités et limites techniques de l'offre OVHcloud Connect](../occ-limits/) et configurer vos équipements réseau en accord avec celles-ci.
+> Pour assurer un fonctionnement correct de ce service, vous devez prendre connaissance des [capacités et limites techniques de l'offre OVHcloud Connect](/pages/cloud/ovhcloud-connect/occ-limits) et configurer vos équipements réseau en accord avec celles-ci.
 >
 
 - Posséder une [offre OVHcloud Connect Direct](https://www.ovhcloud.com/fr/network-security/ovhcloud-connect/)
@@ -161,13 +161,13 @@ La suppression récursive est plus lente que la suppression séquentielle de cha
 >
 #### Suppression d'une configuration de routage
 
-Pour supprimer une configuration de routage, cliquez sur le le bouton `(...)`{.action} sur la configuration de routage à supprimer puis sur `Supprimer`{.action}.
+Pour supprimer une configuration de routage, cliquez sur le bouton `(...)`{.action} sur la configuration de routage à supprimer puis sur `Supprimer`{.action}.
 
 ![suppression configuration routage](images/deleterouting.png){.thumbnail}
 
 #### Suppression d'une configuration DC
 
-Pour supprimer une configuration DC, cliquez sur le le bouton `(...)`{.action} sur la configuration DC à supprimer puis sur `Supprimer`{.action}.
+Pour supprimer une configuration DC, cliquez sur le bouton `(...)`{.action} sur la configuration DC à supprimer puis sur `Supprimer`{.action}.
 
 ![suppression configuration DC](images/deletedc.png){.thumbnail}
 
@@ -177,7 +177,7 @@ Pour supprimer une configuration DC, cliquez sur le le bouton `(...)`{.action} s
 
 #### Suppression d'une configuration PoP
 
-Pour supprimer une configuration PoP, cliquez sur le le bouton `(...)`{.action} sur la configuration PoP à supprimer puis sur `Supprimer la configuration`{.action}.
+Pour supprimer une configuration PoP, cliquez sur le bouton `(...)`{.action} sur la configuration PoP à supprimer puis sur `Supprimer la configuration`{.action}.
 
 ![suppression configuration PoP](images/deletepop.png){.thumbnail}
 
@@ -186,5 +186,7 @@ Pour supprimer une configuration PoP, cliquez sur le le bouton `(...)`{.action} 
 >
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

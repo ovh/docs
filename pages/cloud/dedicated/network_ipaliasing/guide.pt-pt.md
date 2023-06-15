@@ -72,7 +72,7 @@ post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast AD
 pre-down /sbin/ifconfig eth0:0 down
 ```
 
-Se quiser adicionar dois Additional IP, o ficheiro /etc/network/interfaces.d/50-cloud-init deve ter um conteúdo semelhante a este:
+Se quiser adicionar dois Additional IP, o ficheiro `/etc/network/interfaces.d/50-cloud-init` deve ter um conteúdo semelhante a este:
 
 ```bash
 auto eth0
@@ -146,7 +146,7 @@ post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast AD
 pre-down /sbin/ifconfig eth0:0 down
 ```
 
-Se quiser adicionar dois Additional IP, o ficheiro /etc/network/interfaces deve ter um conteúdo semelhante a este:
+Se quiser adicionar dois Additional IP, o ficheiro `/etc/network/interfaces` deve ter um conteúdo semelhante a este:
 
 ```bash
 auto eth0

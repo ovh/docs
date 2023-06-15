@@ -203,3 +203,9 @@ test-redis	default  	1       	2023-01-11 12:02:08.08556 +0100 CET	deployed	redis
 $ helm uninstall test-redis
 release "test-redis" uninstalled
 </code></pre>
+
+## Go further
+
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our community of users on <https://community.ovh.com/en/>.

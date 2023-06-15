@@ -8,10 +8,8 @@ updated: 2022-03-25
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
-
-**Ostatnia aktualizacja z dnia 25-03-2022**
  
 ## Wprowadzenie
 
@@ -26,7 +24,7 @@ Prywatny serwer wirtualny VPS (z ang. *Virtual Private Server*) to wirtualny ser
 
 ## Wymagania początkowe
 
-- Rezerwacja Twojego serwera VPS na [stronie OVHcloud](https://www.ovhcloud.com/pl/vps/){.external}.
+- Rezerwacja Twojego serwera VPS na [stronie OVHcloud](https://www.ovhcloud.com/pl/vps/){.external}
 - Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - Dane do logowania wysłane e-mailem po instalacji
 
@@ -41,7 +39,7 @@ Otrzymasz dashboard, który zawiera ważne informacje o Twojej usłudze i pozwal
 
 W przypadku aktualnej gamy VPS, przeczytaj następną sekcję niniejszego przewodnika: **Pierwsze kroki (aktualna gama VPS)**.
 
-W przypadku starszego modelu VPS, zapraszamy do dalszej lektury przewodnika po kliknięciu w link: [Pierwsze kroki (poprzednia gama VPS)](./#pierwsze-kroki-poprzednia-gama-vps_1).
+W przypadku starszego modelu VPS, zapraszamy do dalszej lektury przewodnika po kliknięciu w link: [Pierwsze kroki (poprzednia gama VPS)](./#pierwsze-kroki-poprzednia-gama-vps).
 
 ### Pierwsze kroki (aktualna gama VPS)
 
@@ -83,7 +81,7 @@ passwd: password updated successfully
 
 #### Aktywacja połączeń root
 
-Ze względów bezpieczeństwa połączenie z użytkownikiem "root" zostało wyłączone. Jeśli chcesz zezwolić na tego typu połączenia, skorzystaj z instrukcji zawartych w [tym przewodniku](https://docs.ovh.com/pl/vps/root-password/#wlacz-haslo-root_1).
+Ze względów bezpieczeństwa połączenie z użytkownikiem "root" zostało wyłączone. Jeśli chcesz zezwolić na tego typu połączenia, skorzystaj z instrukcji zawartych w [tym przewodniku](https://docs.ovh.com/pl/vps/root-password/#wlacz-haslo-root).
 
 #### Restart Twojego serwera VPS (gama aktualna) <a name="reboot-current-range"></a>
 

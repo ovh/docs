@@ -27,7 +27,7 @@ Un piratage peut se manifester de plusieurs manières (liste non exhaustive) :
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 ## Prérequis
@@ -80,7 +80,7 @@ Concernant OVHcloud, utilisez notre documentation pour :
 - [Modifier le mot de passe d'accès à l'espace de stockage FTP de votre hébergement Web](https://docs.ovh.com/ca/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/).
 - [Changer le mot de passe d'accès à votre base de données](https://docs.ovh.com/ca/fr/hosting/modifier-mot-de-passe-base-de-donnees/).
 
-Nous vous recommandons également d'utiliser un [gestionnaire de mots de passe](ttps://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/#utiliser-un-gestionnaire-de-mots-de-passe).
+Nous vous recommandons également d'utiliser un [gestionnaire de mots de passe](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/#utiliser-un-gestionnaire-de-mots-de-passe).
 
 > [!warning]
 > 
@@ -96,7 +96,7 @@ Nous vous recommandons également d'utiliser un [gestionnaire de mots de passe](
 
 > [!warning]
 >
-> Si vous éprouvez des difficultés pour effectuer les actions décrites ci-dessous, faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) en cyber sécurité.
+> Si vous éprouvez des difficultés pour effectuer les actions décrites ci-dessous, faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) en cyber sécurité.
 >
 
 Utilisez notre guide sur [les statistiques et logs de votre hébergement Web](https://docs.ovh.com/ca/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/) pour rechercher les éléments malveillants injectés dans votre site web. Vous trouverez les informations dans les logs « web ». 
@@ -214,13 +214,13 @@ Consultez également notre guide sur [comment sécuriser votre site Web](https:/
 
 [Se connecter à l'espace de stockage de son hébergement Web](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/)
 
-[Modifier la configuration de son hébergement Web](https://docs.ovh.com/ca/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web//)
+[Modifier la configuration de son hébergement Web](https://docs.ovh.com/ca/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/)
 
 [Activer le pare-feu applicatif](https://docs.ovh.com/ca/fr/hosting/activation-pare-feu-applicatif/)
 
 [Optimiser les performances de son site](https://docs.ovh.com/ca/fr/hosting/optimisation-performances-site/)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 

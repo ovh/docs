@@ -148,7 +148,7 @@ Abra la pestaña `Bases de datos`{.action} del alojamiento correspondiente e ini
 
 #### Método 4: optimizar la base de datos
 
-Para optimizar su base de datos, siga las instrucciones de nuestra guía "[Configurar su servidor de bases de datos](https://docs.ovh.com/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#gestionar-las-bases-de-datos_1)". Abra la pestaña `Bases de datos`{.action} de su alojamiento y haga clic en el botón `...`{.action} de la base de datos en cuestión.
+Para optimizar su base de datos, siga las instrucciones de nuestra guía "[Configurar su servidor de bases de datos](https://docs.ovh.com/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#gestionar-las-bases-de-datos)". Abra la pestaña `Bases de datos`{.action} de su alojamiento y haga clic en el botón `...`{.action} de la base de datos en cuestión.
 
 > [!warning]
 >
@@ -161,7 +161,7 @@ El siguiente mensaje, situado en la sección `Bases de datos`{.action} de su [á
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
-En ese caso, puede aumentar la [cantidad de memoria RAM](https://docs.ovh.com/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#cambiar-la-oferta-del-servidor-de-bases-de-datos_1) disponible desde la sección `Bases de datos`{.action} de su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En la pestaña `Información general`{.action}, haga clic en el botón `...`{.action} en la sección `RAM`.
+En ese caso, puede aumentar la [cantidad de memoria RAM](https://docs.ovh.com/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#cambiar-la-oferta-del-servidor-de-bases-de-datos) disponible desde la sección `Bases de datos`{.action} de su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En la pestaña `Información general`{.action}, haga clic en el botón `...`{.action} en la sección `RAM`.
 
 > [!warning]
 >
@@ -172,7 +172,7 @@ En ese caso, puede aumentar la [cantidad de memoria RAM](https://docs.ovh.com/es
 > En el área de `Configuración`, haga clic en los `...`{.action} a la derecha de la entrada de la `Base de datos privada` y haga clic en el botón `Desvincular`{.action}.
 >
 
-También puede optimizar su base de datos siguiendo las instrucciones de nuestra guía "[Configurar su servidor de bases de datos](https://docs.ovh.com/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#gestionar-las-bases-de-datos_1)".
+También puede optimizar su base de datos siguiendo las instrucciones de nuestra guía "[Configurar su servidor de bases de datos](https://docs.ovh.com/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#gestionar-las-bases-de-datos)".
 
 > [!primary]
 >
@@ -207,13 +207,13 @@ Tener un **"trigger"** en el script de importación de su base de datos no está
 
 Por otro lado, no está permitida la siguiente petición:
 
-```mysql
+```sql
 CREATE DATABASE IF NOT EXISTS `Database-Name` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
 ```
 
 Sustituya por:
 
-```mysql
+```sql
 USE `Database-Name`;
 ```
 
@@ -233,7 +233,7 @@ Para resolver esta anomalía, puede:
 
 - Fraccione su base de datos para importarla en varias operaciones en lugar de una (para cualquier duda sobre las operaciones a realizar, contacte con nuestra [comunidad](https://community.ovh.com/en/) o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/). Nosotros no podremos asistirle en este asunto.
 
-- [Optimice su base de datos](https://docs.ovh.com/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#gestionar-las-bases-de-datos_1) y luego repite las operaciones de exportación/importación.
+- [Optimice su base de datos](https://docs.ovh.com/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#gestionar-las-bases-de-datos) y luego repite las operaciones de exportación/importación.
 
 ### No se ha podido acceder a PhpMyAdmin
 
@@ -261,7 +261,7 @@ Este número es de **200** para las bases de servidores [Web Cloud Databases](ht
 
 Este mensaje aparece durante [conexión a PhpMyAdmin](https://docs.ovh.com/es/hosting/crear-base-de-datos/#acceder-a-la-interfaz-phpmyadmin) cuando se supera el número máximo de conexiones.
 
-En ese caso, deberá [optimizar las bases de datos](https://docs.ovh.com/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#gestionar-las-bases-de-datos_1) para reducir el número de conexiones activas.
+En ese caso, deberá [optimizar las bases de datos](https://docs.ovh.com/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#gestionar-las-bases-de-datos) para reducir el número de conexiones activas.
 
 > [!warning]
 >

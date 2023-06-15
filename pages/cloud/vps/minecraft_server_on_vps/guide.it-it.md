@@ -7,7 +7,7 @@ updated: 2021-06-29
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 29/06/2021**
@@ -16,7 +16,7 @@ updated: 2021-06-29
 
 Minecraft è un videogioco da costruzione di successo globale. Per giocare in modalità multiplayer, il server deve essere ospitato su un server.
 
-È possibile noleggiare un server Minecraft precostruito o configurarlo su un [VPS](https://www.ovhcloud.com/it/vps/) o su un [server dedicato](https://www.ovhcloud.com/it/bare-metal/). per permetterti di risparmiare e avere il controllo completo sull'istanza di gioco.
+È possibile noleggiare un server Minecraft precostruito o configurarlo su un [VPS](https://www.ovhcloud.com/it/vps/) o su un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) per permetterti di risparmiare e avere il controllo completo sull'istanza di gioco.
 
 **Questa guida ti mostra come avviare un server Minecraft Java Edition su un VPS OVHcloud e testarne la connettività.**
 

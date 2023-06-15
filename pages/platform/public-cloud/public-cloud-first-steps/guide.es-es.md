@@ -9,6 +9,10 @@ updated: 2023-01-26
 
 **Última actualización: 26/01/2023**
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
 ## Objetivo
 
 Las instancias del servicio Public Cloud de OVHcloud requieren un enfoque diferente al de los VPS o los servidores dedicados.
@@ -60,7 +64,7 @@ $ ssh-keygen -t ecdsa -a 256
 
 El comando le pedirá que guarde la clave que acaba de crear en un archivo estándar:
 
-```bash
+```console
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
@@ -69,7 +73,7 @@ Puede aceptar el archivo por defecto haciendo clic en «↩». A continuación, 
 
 Las claves SSH deben almacenarse en la carpeta «.ssh». Se añadirá la extensión «.pub» al nombre del archivo («filename») de la clave pública.
 
-```ssh
+```console
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:
@@ -132,7 +136,7 @@ La clave estará lista cuando se complete la barra de progreso.
 
 ![save key](images/puttygen_03a.png){.thumbnail}
 
-Puede seleccionar y copiar la clave pública desde esta ventana para guardarla en su área de cliente de OVHcloud ([paso 2](./#2-guardar-las-claves-publicas-en-el-area-de-cliente-de-ovhcloud_1)).
+Puede seleccionar y copiar la clave pública desde esta ventana para guardarla en su área de cliente de OVHcloud ([paso 2](./#2-guardar-las-claves-publicas-en-el-area-de-cliente-de-ovhcloud)).
 
 Guarde ambas claves como archivo y cree una frase de contraseña. Para acceder a su instancia de Public Cloud desde un dispositivo de trabajo solo necesitará la clave privada correspondiente. Así pues, le recomendamos que aplique medidas adicionales de seguridad. Cada vez que se establezca una conexión con la instancia, deberá introducir la frase de contraseña.
 
@@ -192,7 +196,7 @@ En tercer lugar, deberá seleccionar un sistema operativo para su instancia. Las
 Si selecciona un sistema operativo con licencia de pago, el coste se incluirá automáticamente en su facturación mensual o por horas.
 >
 
-En este paso también deberá añadir una clave SSH (salvo en instancias Windows). Para ello, puede copiar la clave directamente haciendo clic en `Añadir una llave`{.action} o seleccionar una clave de la lista de llaves disponibles (tal y como explicamos en el [paso 2](./#2-guardar-las-claves-publicas-en-el-area-de-cliente-de-ovhcloud_1), deberá haber añadido su clave previamente al área de cliente de OVHcloud).
+En este paso también deberá añadir una clave SSH (salvo en instancias Windows). Para ello, puede copiar la clave directamente haciendo clic en `Añadir una llave`{.action} o seleccionar una clave de la lista de llaves disponibles (tal y como explicamos en el [paso 2](./#2-guardar-las-claves-publicas-en-el-area-de-cliente-de-ovhcloud), deberá haber añadido su clave previamente al área de cliente de OVHcloud).
 
 ![key select](images/instance-creation-03-2022.png){.thumbnail}
 
@@ -210,7 +214,7 @@ Cuando haya terminado, haga clic en `Siguiente`{.acción} para configurar su red
 
 ![configure network](images/network-selection.png){.thumbnail}
 
-En función del uso previsto de sus instancias, puede seleccionar el **Modo público* o **Modo privado**.
+En función del uso previsto de sus instancias, puede seleccionar el **Modo público** o **Modo privado**.
 
 El modo público es el modelo de red clásico. Permite que las instancias tendrán un puerto de red público conectado. Asociada al vRack, cada instancia posee una IP pública y una IP privada.
 
@@ -327,7 +331,7 @@ Si lo necesita, utilice el cuadro de búsqueda de Windows y abra la aplicación 
 
 ![windows remote](images/windows-connect-03.png){.thumbnail}
 
-Indique la dirección IPv4 de su instancia y el usuario administrador y, a continuación, introduzca su frase de contraseña. Al tratarse de un certificado desconocido, es probable que aparezca un mensaje de aviso pidiéndole que confirme la conexión. Confirme que quiere conectarse a la instancia.
+Indique la dirección IPv4 de su instancia y el usuario "Administrator" y, a continuación, introduzca su frase de contraseña. Al tratarse de un certificado desconocido, es probable que aparezca un mensaje de aviso pidiéndole que confirme la conexión. Confirme que quiere conectarse a la instancia.
 
 > [!primary]
 >

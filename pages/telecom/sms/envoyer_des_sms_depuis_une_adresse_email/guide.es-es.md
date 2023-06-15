@@ -42,7 +42,7 @@ Tenga en cuenta que, si el texto contiene 2 saltos de línea (doble /n) o si esc
 Si quiere enviar un SMS con estos elementos, deberá hacerlo desde el área de cliente o a través de las API.
 >
 
-Para más información sobre los caracteres autorizados con codificación de 7 bits, consulte el [anexo](https://docs.ovh.com/es/sms/enviar-sms-desde-correo-electronico/#anexo_1) que encontrará al final de esta guía.
+Para más información sobre los caracteres autorizados con codificación de 7 bits, consulte el [anexo](https://docs.ovh.com/es/sms/enviar-sms-desde-correo-electronico/#anexo) que encontrará al final de esta guía.
 
 > [!warning]
 >

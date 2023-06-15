@@ -1,6 +1,6 @@
 ---
 title: Using a custom gateway on an OVHcloud Managed Kubernetes cluster
-excerpt: Find out how to use use a custom gateway on an OVHcloud Managed Kubernetes working with vRack private network.
+excerpt: Find out how to use a custom gateway on an OVHcloud Managed Kubernetes working with vRack private network.
 slug: vrack-k8s-custom-gateway
 section: Network
 updated: 2022-07-25
@@ -567,3 +567,9 @@ To delete an Openstack router, you must first remove the linked ports.
 >> > [!api]
 >> >
 >> > @api {DELETE} /cloud/project/{serviceName}/network/private/{networkId}/region/{region}
+
+## Go further
+
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our [community of users](https://community.ovh.com/en/).

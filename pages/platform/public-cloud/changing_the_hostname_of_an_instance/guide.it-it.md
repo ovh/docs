@@ -9,6 +9,10 @@ updated: 2018-09-18
 
 **Ultimo aggiornamento: 26/10/2018**
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+>
+
 ## Obiettivo
 
 Nel momento in cui crei un’[istanza Public Cloud](https://www.ovh.it/public-cloud/istanze/){.external}, così come ad ogni riavvio, puoi configurarla grazie al modulo Cloud-Init. Di conseguenza, per riconfigurare l’hostname (ad esempio, in caso di errore durante la creazione dell’istanza o per riconfigurare il server) è necessario disattivare il modulo Cloud-Init, incaricato di configurare l’hostname affinché quest’ultimo non venga ripristinato.
@@ -17,7 +21,7 @@ Nel momento in cui crei un’[istanza Public Cloud](https://www.ovh.it/public-cl
 
 > [!warning]
 >
-> OVH mette a tua disposizione macchine di cui tu sei responsabile. Non avendo accesso a queste macchine, non siamo noi gli amministratori e pertanto non possiamo fornirti alcuna assistenza. È responsabilità dell'utente garantire ogni giorno la gestione e la sicurezza del software.
+> OVHcloud mette a tua disposizione macchine di cui tu sei responsabile. Non avendo accesso a queste macchine, non siamo noi gli amministratori e pertanto non possiamo fornirti alcuna assistenza. È responsabilità dell'utente garantire ogni giorno la gestione e la sicurezza del software.
 >
 > Mettiamo questa guida a tua disposizione per aiutarti con le attività più comuni. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
 >

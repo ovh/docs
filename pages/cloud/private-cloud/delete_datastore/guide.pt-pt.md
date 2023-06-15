@@ -26,7 +26,7 @@ Existem casos em que pode ser útil eliminar um datastore do cluster, por exempl
 
 > [!warning]
 >
-> Por razões de segurança, não é possível eliminar os **dois datastores de 300 GB ou 1,2 TB** incluídos no seu pack nem eliminar um datastore se este tiver máquinas virtuais (na janela de validação, pode ver a lista de máquinas virtuais alojadas no datastore).
+> Por razões de segurança, não é possível eliminar um datastore se este tiver máquinas virtuais (na janela de validação, pode ver a lista de máquinas virtuais alojadas no datastore).
 > 
 
 

@@ -1,5 +1,5 @@
 ---
-title : Attacher une adresse Floating IP à une instance Public Cloud
+title: Attacher une adresse Floating IP à une instance Public Cloud
 excerpt: Comprendre qu'est-ce qu’une Floating IP des services L3 et comment la configurer
 slug: attaching-pci-floating-ip-to-instance
 section: Premiers pas
@@ -494,5 +494,7 @@ Une fois les informations récupérées, utilisez l'appel suivant pour supprimer
 > - **floatingIpId** : ID de l'adresse Floating IP
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

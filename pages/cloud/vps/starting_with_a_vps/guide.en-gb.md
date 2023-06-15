@@ -7,8 +7,6 @@ order: 1
 updated: 2022-03-25
 ---
 
-**Last updated 25th March 2022**
-
 ## Objective
 
 A Virtual Private Server (VPS) is a virtualised dedicated server. Unlike Web Hosting plans (also referred to as "shared hosting"), which are managed on the technical level by OVHcloud, you are fully responsible for administrating your VPS.
@@ -27,6 +25,8 @@ A Virtual Private Server (VPS) is a virtualised dedicated server. Unlike Web Hos
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - Login credentials received via email after the installation
 
+
+
 ## Instructions
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}. This dashboard contains important information about your service and allows you to perform essential operations. It will appear differently, depending on the product range of your VPS solution.
@@ -35,7 +35,7 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 - If you are managing an older VPS, you will notice that the reference name is structured differently: *vpsXXXX.ovh.net* (in which *X* stands for a number).
 
-For the current VPS range, please continue with the next section, **First steps (current VPS range)**. For an older VPS model, skip to [**First steps (older VPS range)**](./#first-steps-older-vps-range_1) in this guide.
+For the current VPS range, please continue with the next section, **First steps (current VPS range)**. For an older VPS model, skip to [**First steps (older VPS range)**](./#first-steps-older-vps-range) in this guide.
 
 ### First steps (current VPS range)
 
@@ -75,7 +75,7 @@ passwd: password updated successfully
 
 #### Enabling root logins
 
-Connecting with the "root" user is disabled by default as a security measure. If you need to permit these connections, refer to the instructions in [this guide](https://docs.ovh.com/gb/en/vps/root-password/#enabling-root-login_1).
+Connecting with the "root" user is disabled by default as a security measure. If you need to permit these connections, refer to the instructions in [this guide](https://docs.ovh.com/gb/en/vps/root-password/#enabling-root-login).
 
 #### Restarting your VPS (current VPS range) <a name="reboot-current-range"></a>
 

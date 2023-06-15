@@ -2,8 +2,8 @@
 title: Backing up and restoring your Persistent Volume with Volume Snapshots on OVHcloud Managed Kubernetes
 excerpt: Find out how to back up and restore your Persistent Volume with Volume Snapshots on OVHcloud Managed Kubernetes
 slug: backup-restore-pv-volume-snapshot
-section: Storage
-order: 2
+section: 'Backup and Restore'
+order: 03
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/backup-restore-pv-volume-snapshot/'
 updated: 2023-01-11
@@ -390,3 +390,9 @@ At the end you can proceed to clean up by deleting everything. Delete the `nginx
 ```bash
 kubectl delete namespace nginx-example
 ```
+
+## Go further
+
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our community of users on <https://community.ovh.com/en/>.

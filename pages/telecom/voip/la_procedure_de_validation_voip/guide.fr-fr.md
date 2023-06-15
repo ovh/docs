@@ -4,10 +4,10 @@ excerpt: 'Découvrez comment valider votre compte OVHcloud suite à votre premi�
 slug: la-procedure-de-validation-voip
 section: Administratif
 order: 01
-updated: 2022-01-28
+updated: 2023-06-06
 ---
 
-**Dernière mise à jour le 28/01/2022**
+**Dernière mise à jour le 06/06/2023**
 
 ## Objectif
 
@@ -60,9 +60,9 @@ La procédure pour les clients français est à renvoyer par **voie postale** ob
 -   ***Société :***
     -   Dater et signer l'autorisation de prélèvement.
     -   Joindre un chèque annulé **original** (Si vous ne possédez pas de chèque annulé, vous pouvez joindre une attestation de bon fonctionnement du compte bancaire à prélever émise par votre conseiller bancaire).
-    -   Photocopie recto/verso de la pièce d'identité du gérant ou d'un dirigeant de la société.
-    -   Un papier à en-tête de l'entreprise certifiant que la personne dépositaire du dossier est habilitée à agir au nom de l'entreprise.
-    -   Un extrait K-Bis de moins de 3 mois.
+    -   Photocopie recto/verso de la pièce d'identité du gérant ou d'un dirigeant de la société (**auto-entrepreneur**: photocopie recto/verso de la pièce d'identité du gérant de l'auto-entreprise).
+    -   Un papier à en-tête de l'entreprise certifiant que la personne dépositaire du dossier est habilitée à agir au nom de l'entreprise (**auto-entrepreneur**: une attestation professionnelle sur papier libre).
+    -   Un extrait K-Bis de moins de 3 mois (**auto-entrepreneur**: un avis de situation INSEE/SIRENE).
 -   ***Association :***
     -   Dater et signer l'autorisation de prélèvement.
     -   Joindre un chèque annulé **original** (Si vous ne possédez pas de chèque annulé, vous pouvez joindre une attestation de bon fonctionnement du compte bancaire à prélever émise par votre conseiller bancaire).

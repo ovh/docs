@@ -78,7 +78,7 @@ Reportez-vous au guide « [Sauvegarder une instance](../sauvegarder-une-instance
 
 Cliquez sur `Arrêter`{.action}.
 
-Cette action aura pour effet de suspendre l'instance. Référez-vous à notre guide « [Suspendre ou mettre en pause une instance](../suspendre-ou-mettre-en-pause-une-instance/#arreter-suspend-une-instance_1) » pour plus d'informations.
+Cette action aura pour effet de suspendre l'instance. Référez-vous à notre guide « [Suspendre ou mettre en pause une instance](../suspendre-ou-mettre-en-pause-une-instance/#arreter-suspend-une-instance) » pour plus d'informations.
 
 Cliquez sur `Démarrer`{.action} pour réactiver l'instance.
 
@@ -140,5 +140,7 @@ Consultez notre guide « [Créer une première instance Public Cloud et s'y conn
 [Créer une première instance Public Cloud et s’y connecter](../premiers-pas-instance-public-cloud/)
 
 [Présentation d'Horizon](../horizon/)
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

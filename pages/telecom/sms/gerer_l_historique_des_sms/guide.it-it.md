@@ -7,7 +7,7 @@ updated: 2022-08-05
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 05/08/2022**
@@ -34,7 +34,7 @@ I dettagli elencati nella cronologia includono la data, l’ora, il mittente, il
 
 ### Step 1: consulta la cronologia dal tuo Spazio Cliente
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) e seleziona `Telecom`{.action}. Clicca su `SMS`{.action} e seleziona il tuo account SMS.
+Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Telecom`{.action}. Clicca su `SMS`{.action} e seleziona il tuo account SMS.
 
 Nella barra delle schede, clicca su `Messaggio e campagna`{.action} e poi su `Gestisci gli SMS`{.action} per accedere allo storico dei tuoi SMS unitari o su `Gestisci le campagne`{.action} per accedere allo storico delle tue campagne di SMS.
 

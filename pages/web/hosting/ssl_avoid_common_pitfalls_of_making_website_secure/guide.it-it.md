@@ -4,9 +4,10 @@ excerpt: Risolvi i problemi SSL sul tuo sito Web
 slug: risolvi_i_problemi_ssl_sul_tuo_sito_web
 section: SSL
 order: 04
-updated: 2022-10-05
+updated: 2020-05-05
 ---
 
+**Ultimo aggiornamento: 05/05/2020**
 
 ## Contenuti misti (mixed content)
 Se il tuo sito non riesce a caricare elementi esterni come i pulsanti di Facebook o Twitter, o la tua pagina non funziona come in HTTP, probabilmente gli errori sono causati da problemi di contenuti misti.

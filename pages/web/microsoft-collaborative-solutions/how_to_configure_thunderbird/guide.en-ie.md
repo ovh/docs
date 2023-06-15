@@ -66,7 +66,7 @@ Your Exchange email address and all of its collaborative features are also avail
 
 ### Retrieving a backup of your email address
 
-If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the “**Exporting**” part of the “**Thunderbird**” section in our guide on [Manually migrating an email address](https://docs.ovh.com/ie/en/emails/migrate-email-addresses-manually/#exporting_1).
+If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the “**Exporting**” part of the “**Thunderbird**” section in our guide on [Manually migrating an email address](https://docs.ovh.com/ie/en/emails/migrate-email-addresses-manually/#exporting).
 
 ### Modifying existing settings
 

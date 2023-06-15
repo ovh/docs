@@ -51,7 +51,7 @@ A continuación, seleccione el sistema operativo Linux de su elección:
 
 La instancia se iniciará unos segundos más tarde. A continuación, puede iniciar sesión y buscar la tarjeta gráfica: 
 
-```ssh
+```bash
 lspci | grep -i nvidia
 00:05.0 3D controller: NVIDIA Corporation GV100GL [Tesla V100 PCIe 16GB] (rev a1)
 ```
@@ -106,7 +106,7 @@ A partir de ahí, la instancia de GPU estará completamente funcional y podrá u
 Existen incompatibilidades entre el controlador NVIDIA y la solución de virtualización *KVM/pci_passthrough*. **Las imágenes estándar de Windows no funcionan.**
 Por ello, ofrecemos imágenes especiales, basadas en una BIOS UEFI virtual que permite que el controlador funcione correctamente (solo en el caso de instancias de G1, G2 y G3, gama 2017 y anteriores).
 
-Una vez iniciada sesión en el [área de cliente de OVHcloud](https://ca..ovh.com/auth/?action=gotomanager){.external}, en su proyecto de Public Cloud en el panel de control, haga clic en `«Crear una instancia»`{.action} y elija una instancia de GPU:
+Una vez iniciada sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en su proyecto de Public Cloud en el panel de control, haga clic en `«Crear una instancia»`{.action} y elija una instancia de GPU:
 
 ![public-cloud](images/gpu.png){.thumbnail}
 

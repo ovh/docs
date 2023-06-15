@@ -7,11 +7,11 @@ order: 07
 updated: 2021-09-07
 ---
 
-**Última actualización: 07/09/2021**
-
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
+
+**Última actualización: 07/09/2021**
 
 ## Objetivo
 
@@ -35,8 +35,8 @@ Desde [el área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomana
 
 Una vez que haya creado la instancia y haya elegido una aplicación preinstalada, solo podrá consultar los datos de conexión a través de la API de OVHcloud.
 
-1. Conéctese a la [consola API](https://api.ovh.com/)
-2. Utilice a continuación [esta llamada a la API](https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/instance/%7BinstanceId%7D/applicationAccess#POST)
+1. Conéctese a la [consola API](https://api.ovh.com/).
+2. Utilice a continuación [esta llamada a la API](https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/instance/%7BinstanceId%7D/applicationAccess#POST).
 
 > Llamada a la API
 >> > [!api]
@@ -196,5 +196,7 @@ A continuación se indican los primeros pasos para poner en servicio la imagen p
 No es necesario realizar ningún otro paso para finalizar la primera configuración de esta aplicación.
 
 ## Vaya más lejos
+
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

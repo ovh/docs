@@ -8,7 +8,7 @@ updated: 2023-03-28
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 28/02/2023**
@@ -24,7 +24,7 @@ Un server dedicato è una macchina fisica localizzata in uno dei nostri datacent
 ## Prerequisiti
 
 - Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external} nello Spazio Cliente OVHcloud
-- Essere connesso al tuo server in SSH (accesso root) con Linux o tramite un desktop remoto con Windows.
+- Essere connesso al tuo server in SSH (accesso root) con Linux o tramite un desktop remoto con Windows
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 > [!primary]
@@ -140,7 +140,7 @@ ma è possibile effettuare un reboot "hard" in qualsiasi momento dal tuo [Spazio
 
 ### Protezione del tuo server dedicato
 
-Come spiegato nella parte iniziale di questa guida, in quanto amministratore del tuo server dedicato In quanto tale, sei responsabile dei tuoi dati e della loro sicurezza. Per maggiori informazioni sulla sicurezza del tuo server, consulta la guida Mettere in sicurezza [un server dedicato](https://docs.ovh.com/it/dedicated/mettere-in-sicurezza-un-server-dedicato/).
+Come spiegato nella parte iniziale di questa guida, in quanto amministratore del tuo server dedicato In quanto tale, sei responsabile dei tuoi dati e della loro sicurezza. Per maggiori informazioni sulla sicurezza del tuo server, consulta la guida [Mettere in sicurezza un server dedicato](https://docs.ovh.com/it/dedicated/mettere-in-sicurezza-un-server-dedicato/).
 
 Se utilizzi un server Windows, consulta [questa guida](https://docs.ovh.com/it/dedicated/firewall-windows/).
 
@@ -172,7 +172,7 @@ Per maggiori informazioni sulla modalità bridge, consulta la nostra guida: [Mod
 
 #### Alias IP
 
-L’alias IP è un tipo di configurazione che permette di associare più indirizzi IP a un’interfaccia di rete.   In questo modo il tuo server è in grado di stabilire più connessioni a una rete, ognuna con un obiettivo diverso.
+L’alias IP è un tipo di configurazione che permette di associare più indirizzi IP a un’interfaccia di rete. In questo modo il tuo server è in grado di stabilire più connessioni a una rete, ognuna con un obiettivo diverso.
 
 Per maggiori informazioni sulla configurazione dell'alias IP, consulta la guida [Configurare un indirizzo IP con l'alias](../network-ipaliasing).
 
@@ -184,13 +184,13 @@ Tutti i server dedicati OVHcloud vengono consegnati con un blocco /64 IPv6. Per 
 
 Per risolvere qualsiasi problema, riavvia il server in modalità Rescue dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). È importante identificare i problemi del server in questa modalità, per escludere i problemi legati al software prima di contattare il nostro team di supporto.
 
-Consulta la guida Attiva [e utilizza la modalità Rescue](../rescue_mode).
+Consulta la guida [Attivare e utilizzare il Rescue mode](../rescue_mode).
 
 ### Accesso con l'IPMI
 
 OVHcloud implementa tutti i server dedicati con una console IPMI (Intelligent Platform Management Interface) che si esegue nel browser o da un'applet Java e ti permette di connetterti direttamente al tuo server anche se non dispone di connessione di rete. che è uno strumento utile per risolvere i problemi che hanno potuto mettere il tuo server online.
 
-Per maggiori informazioni, consulta la guida Utilizzare [l'IPMI sui server dedicati](../utilizzo-ipmi-server-dedicati/).
+Per maggiori informazioni, consulta la guida [Utilizzare l'IPMI sui server dedicati](../utilizzo-ipmi-server-dedicati/).
 
 ### Backup Storage
 
@@ -202,6 +202,8 @@ Per attivare e utilizzare l'opzione Backup Storage, consulta [questa guida](../s
 
 [Mettere in sicurezza un server dedicato](../mettere-in-sicurezza-un-server-dedicato/)
 
-[Attivare e utilizzare la modalità rescue](../rescue_mode/)
+[Attivare e utilizzare il Rescue mode](../rescue_mode/)
+
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

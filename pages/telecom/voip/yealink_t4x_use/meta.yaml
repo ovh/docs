@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: b7a6a76a-3c6d-4369-b6fe-946ec14223c8
 full_slug: voip-getting-started-yealink-t4x

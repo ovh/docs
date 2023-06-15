@@ -22,6 +22,10 @@ Le soluzioni di hosting Web OVHcloud mettono a disposizione uno spazio di storag
 - Disporre delle informazioni necessarie per l’accesso in SSH allo spazio di storage
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}
 
+> [!warning]
+> 
+> L'accesso SSH a un hosting Web OVHcloud è possibile a partire da [l'offerta Pro](https://www.ovhcloud.com/it/web-hosting/compare/).
+
 ## Procedura
 
 ### Step 1: verifica che l’accesso SSH sia attivo <a name="sshcheck"></a>
@@ -60,11 +64,11 @@ A seconda del metodo che utilizzi, hai due possibilità per accedere:
 
 Una volta avviato il terminale, esegui questo comando sostituendo gli elementi "yourlogin", "ssh.cluster00.hosting.ovh.net" e "22" con quelli corrispondenti ai tuoi identificativi SSH. 
 
-```ssh
+```bash
 ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 ```
 
-Una volta eseguito il comando, il sistema chiederà di inserire la password dell’utente SSH. Una volta connesso, passa allo step successivo “[Interagire in SSH con lo spazio di storage](./#step-4-interagire-in-ssh-con-lo-spazio-di-storage_1)”.
+Una volta eseguito il comando, il sistema chiederà di inserire la password dell’utente SSH. Una volta connesso, passa allo step successivo “[Interagire in SSH con lo spazio di storage](./#step-4-interagire-in-ssh-con-lo-spazio-di-storage)”.
 
 ![usessh](images/use-ssh-step3.png){.thumbnail}
 

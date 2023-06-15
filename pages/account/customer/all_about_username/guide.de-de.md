@@ -8,7 +8,7 @@ updated: 2021-07-01
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
 **Letzte Aktualisierung am 01.07.2021**
@@ -54,7 +54,7 @@ Alle Empfehlungen zu Passwörtern finden Sie in unserer [Anleitung zur Passwort�
 Wenn Sie das noch nicht getan haben, speichern Sie Ihr Passwort in einem [Passwort-Manager](https://docs.ovh.com/de/customer/Passwort-verwalten/#einen-passwort-manager-verwenden).
 
 > [!primary]
-> **Keepass** und **Bitwarden** sind kostenlose Open-Source-Passwortmanager.
+> **KeePass** und **Bitwarden** sind kostenlose Open-Source-Passwortmanager.
 >
 
 #### Eine sekundäre E-Mail-Adresse hinzufügen <a name="backup-email"></a>

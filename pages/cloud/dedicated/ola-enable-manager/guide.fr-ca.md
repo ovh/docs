@@ -71,4 +71,4 @@ L'opération peut prendre quelques minutes.
 
 [Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans SLES 15](https://docs.ovh.com/ca/fr/dedicated/ola-sles15/).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

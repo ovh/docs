@@ -6,6 +6,10 @@ excerpt: 'Cómo transferir un backup de un datacenter a otro conservando la conf
 updated: 2019-03-29
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
 **Última actualización: 29/03/2019**
 
 ## Objetivo
@@ -18,7 +22,7 @@ Es posible que necesite transferir una instancia de Public Cloud de un datacente
 ## Requisitos
 
 * Haber creado una [instancia de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/){.external} desde su cuenta de cliente.
-* Tener acceso de administrador (root) a su datacenter a través de SSH.
+* Tener acceso de administrador (root) a su instancia o sistema operativo a través de SSH.
 * Haber leído la guía [Preparar el entorno para utilizar la API de OpenStack](https://docs.ovh.com/es/public-cloud/prepare_the_environment_for_using_the_openstack_api/){.external} (recomendado).
 
 > [!primary]
@@ -30,7 +34,7 @@ Los comandos de esta guía están basados en la CLI de OpenStack, no en las API 
 
 ### Crear un backup
 
-En primer lugar, conéctese a su datacenter por SSH. A continuación, ejecute el siguiente comando para mostrar la lista de las instancias existentes:
+En primer lugar, conéctese a su instancia o sistema operativo por SSH. A continuación, ejecute el siguiente comando para mostrar la lista de las instancias existentes:
 
 ```
 #root@server:~$ openstack server list

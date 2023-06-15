@@ -4,14 +4,12 @@ slug: errore-500-internal-server-error
 excerpt: Diagnostica i casi più comuni di errore 500
 section: Diagnostica
 order: 06
-updated: 2022-07-21
+updated: 2023-05-16
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
-
-**Ultimo aggiornamento: 21/07/2022**
 
 ## Obiettivo
 
@@ -86,6 +84,10 @@ Per ragioni di sicurezza, il tuo sito nasconde gli eventuali dettagli sull'origi
 
 Se vuoi avere accesso a questi dettagli, dal piano di hosting [pro2014](https://www.ovhcloud.com/it/web-hosting/professional-offer/) o superiore puoi connetterti al tuo sito tramite una [connessione ssh](../hosting_condiviso_il_protocollo_ssh/).
 
+### Verifica lo stato del database
+
+Per tutti gli errori 500 che possono essere associati al database del tuo sito Web, clicca sulla nostra documentazione ["Risolvi gli errori più frequenti associati ai database"](/pages/web/hosting/diagnosis_database_errors).
+
 ### Ripristina il tuo sito allo stato precedente <a name="restore"></a>
 
 > [!warning]
@@ -103,8 +105,18 @@ Se l'errore 500 è apparso a seguito di un aggiornamento della versione PHP del 
 
 ## Per saperne di più <a name="gofurther"></a>
 
-[Tutto sul file .htaccess](../hosting_condiviso_tutto_sul_file_htaccess/)
+[Cosa fare se il tuo sito è inaccessibile?](/pages/web/hosting/diagnostic-website-not-accessible)
 
-[Come diagnosticare una pagina bianca?](../web_hosting_come_fai_a_diagnosticare_una_pagina_bianca/)
+[Cosa fare in caso di errore « La connessione non è privata »?](/pages/web/hosting/diagnostic-not-secured)
+
+[Cosa fare in caso di pagina « Index of »?](/pages/web/hosting/diagnostic-index-of)
+
+[Cosa fare in caso di pagina "403 forbidden"?](/pages/web/hosting/diagnostic_403_forbidden)
+
+[Risolvi gli errori più frequenti associati ai database](/pages/web/hosting/diagnosis_database_errors)
+
+[Il mio sito è lento. Cosa fare?](/pages/web/hosting/diagnostic_slownesses)
+
+[Risolvere l’errore «Sito non installato»](/pages/web/hosting/multisites_website_not_installed)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

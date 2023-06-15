@@ -6,10 +6,10 @@ section: Grafana - Guides
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/grafana/capabilities/'
-updated: 2023-01-19
+updated: 2023-05-23
 ---
 
-**Last updated January 19th, 2023**
+**Last updated May 23rd, 2023**
 
 ## Objective
 
@@ -38,7 +38,7 @@ The Public Cloud Databases offer supports the following Grafana versions:
 
 - Grafana 9.1
 
-You can follow the Grafana Release Cycle on their official page: <https://grafana.com/>.
+Please refer to the [DBMS lifecycle policy guide](/pages/platform/databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, you can follow the Grafana Release Cycle on their official page: <https://grafana.com/>.
 
 ### Grafana clients
 
@@ -71,10 +71,14 @@ Here are the node types you can choose from:
 
 **Essential plans**
 
-| Name    | Disk (GB) | Cores | Memory (GB) |
-| ------- | --------- | ----- | ----------- |
-| db1-4   | n/a       | 1     | 4           |
-| db1-7   | n/a       | 2     | 7           |
+| Name    | Storage | vCore | Memory (GB) |
+| ------- | ------- | ----- | ----------- |
+| db1-4   | N/A     | 2     | 4           |
+| db1-7   | N/A     | 2     | 7           |
+
+#### Node template upgrade
+
+You can upgrade the node template of your cluster to scale your hardware resources up. This operation causes no interruption of service but be aware that you will not be able to downgrade the node template afterwards.
 
 ### Features
 #### Network
@@ -88,16 +92,25 @@ Ingress and Egress traffic are included in the service plans and unmetered.
 Here are some considerations to take into account when using private network:
 
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
-- When connecting from outside subnet, Openstack IP gateway must be enabled in the subnet use for the Database service. The customer is responsible for any other custom network setup.
+- When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
+
+##### Authorised IPs
+
+Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic. Until then, your service will be unreachable.
+
+#### Advanced parameters
+
+You can further customise your Grafana by using advanced parameters. See the [Advanced parameters references documentation](/pages/platform/databases/grafana_03_advanced_parameters_references) for more information on the supported parameters.
 
 #### Backups
 
-*Essential* plan clusters are automatically backed up daily during their backup window. Backup retention is 1 day.
+Your services are automatically backed up hourly with a one day retention.
+
+See the [Automated Backups guide](/pages/platform/databases/databases_05_automated_backups) for more information.
 
 #### Logs and metrics
 
-Logs and metrics are available via the OVHcloud Public Cloud Control Panel.
-As of today, you can't export logs and metrics, nor plug them into a remote tool.
+Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your Grafana logs in Opensearch. See the [Cross Service Integration documentation](/pages/platform/databases/databases_07_cross_service_integration) for more information.
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month
@@ -113,5 +126,7 @@ Only one user is created by default and its name is `admin`. You must reset its 
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

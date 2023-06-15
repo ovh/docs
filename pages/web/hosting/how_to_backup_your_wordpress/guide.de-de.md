@@ -8,7 +8,7 @@ updated: 2023-02-22
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
 **Letzte Aktualisierung am 22.02.2023**
@@ -152,7 +152,7 @@ Wenn Sie diese bewährten Verfahren anwenden, können Sie Ihre Website stets zu 
 ## Weiterführende Informationen <a name="go-further"></a>
 
 - [Offizielle Website von WordPress](https://wordpress.org){.external}
-- [Mehr Informationen zu den Sicherungen Ihres Webhostings](https://docs.ovh.com/de/hosting/technische-eigenschaften-web-hosting/#informationen-zu-den-automatischen-backups_1)
+- [Mehr Informationen zu den Sicherungen Ihres Webhostings](https://docs.ovh.com/de/hosting/technische-eigenschaften-web-hosting/#informationen-zu-den-automatischen-backups)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

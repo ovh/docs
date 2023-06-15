@@ -114,7 +114,7 @@ If you have ordered a 10 Gbps link, the SFP will be: 10GBase-LR.
 speed 10000
 ```
 
-For more information, please read the [technical capabilities and limitations of the OVHcloud Connect solution](../occ-limits/)
+For more information, please read the [technical capabilities and limitations of the OVHcloud Connect solution](/pages/cloud/ovhcloud-connect/occ-limits)
 
 #### Disabling auto-negotiation
 
@@ -167,5 +167,7 @@ The BGP Area on the customer side must be different from the OVHcloud side.
 - The OVHcloud BGP AS zone: can be the same between the DC side and the PoP side configuration (recommended)
 
 ## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

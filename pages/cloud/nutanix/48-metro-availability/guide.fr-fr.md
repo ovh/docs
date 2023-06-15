@@ -4,10 +4,10 @@ slug: metro-availability
 excerpt: "Mise en oeuvre de Metro pour un plan de reprise d'activité"
 section: "Plan de Reprise d'Activité"
 order: 06
-updated: 2022-11-15
+updated: 2023-05-09
 ---
 
-**Dernière mise à jour le 15/11/2022**
+**Dernière mise à jour le 09/05/2023**
 
 ## Objectif
 
@@ -24,7 +24,7 @@ updated: 2022-11-15
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur vos clusters via Prism Central.
 - Avoir 3 clusters Nutanix au sein de l'infrastructure OVHcloud avec des licences **Pack Advanced** si vous avez une offre packagée sur les deux clusters du P.R.A. Ces 3 clusters devront être sur des sites distants pour obtenir un maximum de sûreté.
-- Avoir une latence de moins de 5 ms entre les deux clusters répliqués.
+- Avoir une latence de moins de 5 ms entre les deux clusters répliqués. Veuillez noter que la latence n'est pas couverte par les SLA.
 
 ## Présentation
 
@@ -1092,5 +1092,7 @@ La liste des événements survenus apparaît, cliquez sur `Close`{.action} pour 
 [Présentation des vRack](https://www.ovh.com/fr/solutions/vrack/)
 
 [Documentation Nutanix AHV Metro - Witness Option](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v2022_6:ecd-ecdr-witness-syncrep-pc-c.html)
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

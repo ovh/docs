@@ -18,12 +18,12 @@ La mise en place de l'offre OVHcloud Connect peut se faire directement depuis le
 ## Prérequis
 
 > [!warning]
-> Pour assurer un fonctionnement correct de ce service, vous devez prendre connaissance des [capacités et limites techniques de l'offre OVHcloud Connect](../occ-limits/) et configurer vos équipements réseau en accord avec celles-ci.
+> Pour assurer un fonctionnement correct de ce service, vous devez prendre connaissance des [capacités et limites techniques de l'offre OVHcloud Connect](/pages/cloud/ovhcloud-connect/occ-limits) et configurer vos équipements réseau en accord avec celles-ci.
 >
 
 * Posséder une offre [OVHcloud Connect](https://www.ovh.com/fr/solutions/ovhcloud-connect/) dans votre compte OVHcloud.
 * Être connecté aux [API OVHcloud](https://ca.api.ovh.com/){.external}.
-* Avoir [créé vos credentials pour l'utilisation des API OVHcloud](../../api/first-steps-with-ovh-api/).
+* Avoir [créé vos credentials pour l'utilisation des API OVHcloud](/pages/account/api/first-steps).
 
 ## En pratique
 
@@ -233,5 +233,7 @@ Lorsque toutes les sous-ressources ont été supprimées, la configuration POP p
 Si une configuration DC est partagée entre au moins deux services OVHcloud Connect, la suppression de la configuration POP d'un seul service OVHcloud Connect n'affectera pas la ressource DC. 
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services. 
 
 Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.

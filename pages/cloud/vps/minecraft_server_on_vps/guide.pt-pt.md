@@ -42,7 +42,7 @@ Pode alugar um servidor Minecraft pré-construído ou configurá-lo você mesmo 
 ### Etapa 1: preparar o servidor
 
 O primeiro passo consiste em configurar o seu VPS para uma instalação de Minecraft.
-<br>É recomendado encomendar um novo VPS ou reinstalar um já existente a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), usando a última versão disponível do Ubuntu ou Debian. Consulte o nosso guia [Primeiros passos](../instalar-gerir-vps//#reinstallvps), se necessário.
+<br>É recomendado encomendar um novo VPS ou reinstalar um já existente a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), usando a última versão disponível do Ubuntu ou Debian. Consulte o nosso guia [Primeiros passos](../instalar-gerir-vps/#reinstallvps), se necessário.
 
 Depois de instalar o sistema operativo, ligue-se ao VPS em SSH, conforme descrito no manual "[VPS - primeira utilização](../instalar-gerir-vps/)".
 
@@ -59,7 +59,7 @@ sudo apt update
 Utilize o seguinte comando para garantir que todos os pacotes necessários estão instalados:
 
 ```sh
-sudo apt install screen nano wget git
+~$ sudo apt install screen nano wget git
 ```
 
 Instale o pacote Java:
@@ -81,7 +81,7 @@ O utilizador foi criado. Tenha em conta que não foi especificada nenhuma palavr
 Migre para o novo utilizador:
 
 ```sh
-sudo su - minecraft
+~$ sudo su - minecraft
 ```
 
 > [!primary]

@@ -21,7 +21,7 @@ Un serveur dédié est un serveur physique situé dans l'un de nos datacenters. 
 
 - Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/){.external} dans votre espace client OVHcloud.
 - Être connecté à votre serveur en SSH (accès root) sous Linux ou via un bureau distant sous Windows.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 > [!primary]
 >
@@ -144,7 +144,7 @@ Si vous utilisez un serveur Windows, rendez-vous sur [ce guide](https://docs.ovh
 
 Vous pouvez activer ou désactiver le monitoring d'un serveur dédié à partir de l'onglet `Informations générales`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). L'option se situe dans la section `État des services`.
 
-![Monitoring](images/monitoring-your-server.png){.thumbnail}
+![Monitoring](images/monitoring-your-service.png){.thumbnail}
 
 Cliquez sur le bouton `Configurer`{.action}. Dans la fenêtre qui apparaît, vous avez trois options pour le comportement du monitoring :
 
@@ -199,5 +199,7 @@ Pour activer et utiliser l'option Backup Storage, consultez [ce guide](../servic
 [Sécuriser un serveur dédié](../securiser-un-serveur-dedie/)
 
 [Activer et utiliser le mode rescue](../ovh-rescue/)
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.

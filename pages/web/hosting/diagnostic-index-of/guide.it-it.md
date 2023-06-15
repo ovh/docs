@@ -4,18 +4,21 @@ excerpt: Come caricare il tuo sito online, quando visualizza una pagina « Index
 slug: diagnostic-index-of
 section: Diagnostica
 order: 07
-updated: 2022-05-10
+updated: 2023-05-04
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
-**Ultimo aggiornamento: 10/05/2022**
+**Ultimo aggiornamento: 04/05/2023**
 
 ## Obiettivo
 
-Se una configurazione `Multisito` non è configurata correttamente, il tuo sito potrebbe visualizzare una pagina **"Index of"**.
+Una pagina **"Index of"** compare in almeno uno dei seguenti casi:
+
+- La configurazione [Multisito](/pages/web/hosting/multisites_configure_multisite) del tuo dominio non è correttamente configurata verso la tua directory di destinazione
+- La cartella di destinazione verso cui il tuo dominio punta non contiene file **"index.html"** o **"index.php"**
 
 ![index_of](images/index_of.png){.thumbnail}
 
@@ -23,13 +26,15 @@ Se una configurazione `Multisito` non è configurata correttamente, il tuo sito 
 
 > [!warning]
 >
-> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) su questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/) o di contattare l'amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) di questa guida.
+
 >
 
 ## Prerequisiti
 
+- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
 - Disporre di una [soluzione di hosting Web](https://www.ovhcloud.com/it/web-hosting/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
@@ -37,15 +42,15 @@ Se una configurazione `Multisito` non è configurata correttamente, il tuo sito 
 
 ### Comprendere l'origine della pagina "Index of"
 
-Il tuo dominio è collegato tramite la sezione `Multisito`{.action} del tuo hosting a una directory (una "`Cartella di root`") sul tuo server [FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/).
+Il tuo dominio è stato dichiarato per accedere a una directory di destinazione (una "`Cartella root`") sul server [FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) del tuo hosting web condiviso. accedendo alla scheda [Multisito](/pages/web/hosting/multisites_configure_multisite) del tuo hosting Web presente nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=i).
 
-La pagina **Index of** indica che la directory in questione non contiene file **index.php** o **index.html**. Un file di questo tipo costituisce il "*punto di accesso*" del tuo sito.
+La pagina **Index of** indica che la directory di destinazione non contiene file **index.php** o **index.html**. Un file di questo tipo costituisce il "*punto di accesso*" del tuo sito Web. Il nome del file è normalizzato.
 
-Per visualizzare il tuo sito Web, dalla sezione `Multisito`{.action} del tuo hosting dovrai collegare il tuo dominio alla `Cartella di root` che contiene questo file **index.php** o **index.html**.
+Per visualizzare il tuo sito Web, accedi alla sezione `Multisito`{.action} del tuo hosting e associa il tuo dominio alla `Cartella di root` che contiene questo file **index.php** o **index.html**.
 
 > [!primary]
 >
-> Per collegare temporaneamente il tuo dominio a una `Cartella di root` che non contiene file **index.php** o **index.html**, è possibile vietare la visualizzazione della lista delle cartelle del tuo sito seguendo questa [guida](https://docs.ovh.com/it/hosting/hosting_condiviso_altre_operazioni_possibili_con_il_file_htaccess/#impedire-il-listing-del-contenuto-di-una-directory). È inoltre possibile proteggere l'accesso alle cartelle tramite una [password](https://docs.ovh.com/it/hosting/condividi-htaccess-come-proteggere-laccesso-a-una-cartella-tramite-autenticazione/).
+> Per collegare temporaneamente il tuo dominio a una `Cartella root` che non contiene file **index.php** o **index.html***, puoi vietare la visualizzazione della lista delle cartelle del tuo sito seguendo questo [tutorial](https://docs.ovh.com/it/hosting/hosting_condiviso_altre_operazioni_possibili_con_il_file_htaccess/#impedire-il-listing-del-contenuto-di-una-directory). È inoltre possibile proteggere l'accesso alle cartelle tramite una [password](https://docs.ovh.com/it/hosting/condividi-htaccess-come-proteggere-laccesso-a-una-cartella-tramite-autenticazione/).
 >
 > In caso di difficoltà nell'implementare questa configurazione, ti consigliamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/). Il nostro team di supporto non sarà infatti in grado di fornirti assistenza su eventuali modifiche della programmazione interna del tuo sito.
 
@@ -76,11 +81,13 @@ Nella nuova finestra, clicca su `Conferma`{.action}.
 
 ![modify_root_folder_confirm](images/modify_root_folder_confirm.png){.thumbnail}
 
-Tra pochi minuti (ricordati di aggiornare il browser), ottieni questo risultato:
+In pochi minuti (rinfrescando il browser) otterrai questo risultato:
 
 ![multisite_modified](images/multisite_modified.png){.thumbnail}
 
 e verifica che il tuo sito venga visualizzato correttamente. In caso contrario, riavvia il tuo dispositivo e svuota la cache del tuo browser se necessario.
+
+Assicurati inoltre che nella tua directory di destinazione sia presente un file **index.php** o **index.html**.
 
 ## Per saperne di più <a name="gofurther"></a>
 
@@ -90,6 +97,8 @@ e verifica che il tuo sito venga visualizzato correttamente. In caso contrario, 
 
 [Ospitare più siti su uno stesso hosting](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/)
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](https://www.ovhcloud.com/it/support-levels/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

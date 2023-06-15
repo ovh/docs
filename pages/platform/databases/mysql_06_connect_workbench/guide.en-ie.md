@@ -20,7 +20,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
 - A MySQL database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/ie/en/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your MySQL instance](https://docs.ovh.com/ie/en/databases/mysql/configure-mysql-instance/) to accept incoming connections
+- [Configure your MySQL instance](https://docs.ovh.com/ie/en/publiccloud/databases/mysql/configure-mysql-instance/) to accept incoming connections
 - A MySQL Workbench stable version installed and public network connectivity (Internet). *This guide was made with MySQL Workbench version 8.0.28*.
 
 ## Concept
@@ -74,5 +74,7 @@ Congratulations, in the `Schemas`{.action} tab, you will see your databases.
 ## Go further
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

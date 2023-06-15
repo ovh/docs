@@ -28,7 +28,7 @@ updated: 2022-05-05
 Before reading this documentation, make sure you have read the following page.
 It describes the test environment setup and the OVHcloud API connection process, and also helps understanding requests signature.
 
-- [First Steps with the OVHcloud APIs](../../api/first-steps-with-ovh-api/)
+- [First Steps with the OVHcloud APIs](/pages/account/api/first-steps)
 
 ## Available SDKs
 
@@ -40,7 +40,9 @@ We have released SDKs for several languages, to help you use the API:
 - C#: [https://github.com/ovh/csharp-ovh](https://github.com/ovh/csharp-ovh)
 - PHP: [https://github.com/ovh/php-ovh](https://github.com/ovh/php-ovh)
 - Perl: [https://github.com/ovh/perl-ovh](https://github.com/ovh/perl-ovh)
-- Swift: [https://github.com/ovh/swift-ovh](https://github.com/ovh/swift-ovh)
+- Swift\*: [https://github.com/ovh/swift-ovh](https://github.com/ovh/swift-ovh)
+
+\* Archived since 2019
 
 <!-- prettier-ignore -->
 > [!tabs]

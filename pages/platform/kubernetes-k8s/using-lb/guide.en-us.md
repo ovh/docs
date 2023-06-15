@@ -30,7 +30,7 @@ updated: 2022-10-31
  }
 </style>
 
-# Using the OVHcloud Managed Kubernetes LoadBalancer
+## Objective
 
 In this tutorial we are explaining how to deploy services on OVHcloud Managed Kubernetes service using our `LoadBalancer` to get external traffic into your cluster. We will begin by listing the main methods to expose Kubernetes services outside the cluster, with its advantages and disadvantages. Then we will see a complete example of `LoadBalancer` service deployment.
 
@@ -39,7 +39,7 @@ In this tutorial we are explaining how to deploy services on OVHcloud Managed Ku
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
 > [!warning]
-> When a __LoadBalancer__ Service resource is created inside a Managed Kubernetes cluster, an associated Public Cloud Load Balancer is automatically created, allowing public access to your Kubernetes application.
+> When a **LoadBalancer** Service resource is created inside a Managed Kubernetes cluster, an associated Public Cloud Load Balancer is automatically created, allowing public access to your Kubernetes application.
 > The Public Cloud Load Balancer service is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Network Load Balancer price](https://www.ovhcloud.com/en/public-cloud/prices/#network)
 
 ## Some concepts: ClusterIP, NodePort, Ingress and LoadBalancer
@@ -275,3 +275,9 @@ You will see that the pod created for `hello-world` has been deleted too:
 <pre class="console"><code>$ kubectl get pod -l app=hello-world
 No resources found
 </code></pre>
+
+## Go further
+
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our [community of users](https://community.ovh.com/en/).

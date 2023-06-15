@@ -8,7 +8,7 @@ updated: 2022-01-04
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
 **Letzte Aktualisierung am 04.01.2022**
@@ -52,7 +52,7 @@ root@server:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwri
 > 
 > Das Argument --numjobs muss abhängig von der Anzahl der CPUs angepasst werden, über die Ihre Instanz verfügt.
 >
-> Sie finden eine vollständige Liste der verfügbaren Argumente und Funktionen im [fio Manual](https://github.com/axboe/fio/blob/master/HOWTO).
+> Sie finden eine vollständige Liste der verfügbaren Argumente und Funktionen im [fio Manual](https://github.com/axboe/fio/blob/master/HOWTO.rst).
 >
 
 Um die Performance einer zusätzlichen Festplatte zu testen, begeben Sie sich in einen der Ordner des Mountpunkts.

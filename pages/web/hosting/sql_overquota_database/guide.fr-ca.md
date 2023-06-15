@@ -32,7 +32,7 @@ Ce tutoriel vous propose des actions à entreprendre lorsque votre base de donn�
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 Lorsque votre base de données mutualisée OVHcloud arrive à saturation (**overquota**), nos robots vous avertissent par e-mail sur l'adresse e-mail du [contact « Administrateur »](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/) de la base de données. 
@@ -75,7 +75,7 @@ Renseignez le mot de passe d'accès à votre base de données en complément des
 >
 > Désormais, vous intervenez directement sur le contenu de votre base de données. Les manipulations que vous réalisez dans phpMyAdmin peuvent avoir des conséquences irréversibles si celles-ci ne sont pas réalisées correctement.
 >
-> Assurez-vous des manipulations que vous effectuez. Si vous éprouvez la moindre difficulté, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/). En effet, OVHcloud ne pourra pas vous fournir une assistance sur le contenu de votre base de données.
+> Assurez-vous des manipulations que vous effectuez. Si vous éprouvez la moindre difficulté, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/). En effet, OVHcloud ne pourra pas vous fournir une assistance sur le contenu de votre base de données.
 >
 
 Une fois connecté, la page suivante s'affiche :
@@ -143,7 +143,7 @@ Avant d'effectuer ce qui suit, vérifiez si les données contenues dans la table
 
 > [!alert]
 >
-> La suite de ce guide vous décrit comment supprimer des données présentes dans votre base de données. Assurez-vous de ce que vous faites ou contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) en cas de doute.
+> La suite de ce guide vous décrit comment supprimer des données présentes dans votre base de données. Assurez-vous de ce que vous faites ou contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) en cas de doute.
 >
 
 Les bases de données mutualisées OVHcloud disposent de plusieurs commandes SQL pour agir sur leur contenu.
@@ -193,7 +193,7 @@ DROP TABLE `table_1`
 ## Aller plus loin <a name="go-further"></a>
 
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 

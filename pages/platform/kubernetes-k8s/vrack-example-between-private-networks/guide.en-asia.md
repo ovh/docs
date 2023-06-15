@@ -354,7 +354,7 @@ Don't forget to grab your `kubeconfig` and configure `kubectl` to use it, as exp
 
 ### Setting up a PCI attached to `priv_net_02`
 
-Now we can create a new Public Cloud instance, also in GRA5 region, and attach it to `priv_net_02` by following the [Integrating an instance into vRack](../../public-cloud/public-cloud-vrack/#step-3-integrating-an-instance-into-vrack_1) guide.
+Now we can create a new Public Cloud instance, also in GRA5 region, and attach it to `priv_net_02` by following the [Integrating an instance into vRack](../../public-cloud/public-cloud-vrack/#step-3-integrating-an-instance-into-vrack) guide.
 
 We are going to create an Ubuntu instance:
 
@@ -546,4 +546,6 @@ Commercial support is available at
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our community of users on <https://community.ovh.com/en/>.

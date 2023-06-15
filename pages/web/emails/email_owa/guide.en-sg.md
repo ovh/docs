@@ -4,14 +4,14 @@ slug: using-owa
 excerpt: 'Find out how to manage an email address using OWA webmail'
 section: 'Getting started'
 order: 04
-updated: 2020-02-25
+updated: 2021-06-25
 ---
 
 **Last updated 25th June 2021**
 
 ## Objective
 
-With an OVHcloud Email offer you can send and receive your emails using a device and client of your choice. To access an account from anywhere via web browser, OVHcloud provides an online email client called Outlook Web Application (OWA). Our [webmail login page](https://www.ovh.com/sg/mail/) is the single point of access to the respective OWA for all active email accounts on your Email offer.
+With an OVHcloud email solutions you can send and receive your emails using a device and client of your choice. To access an account from anywhere via web browser, OVHcloud provides an online email client called Outlook Web Application (OWA). Our [webmail login page](https://www.ovh.com/sg/mail/) is the single point of access to the respective OWA for all active email accounts on your Email offer.
 
 **This guide explains how to use your email address with OWA and exemplifies the most important features of this interface.**
 

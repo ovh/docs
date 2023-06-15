@@ -91,7 +91,7 @@ If you did not use the "[1-click module](https://docs.ovh.com/asia/en/hosting/we
 
 [Using FileZilla software with your hosting](https://docs.ovh.com/asia/en/hosting/web_hosting_filezilla_user_guide/)
 
-For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/asia/).
+For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
 

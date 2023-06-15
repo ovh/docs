@@ -8,7 +8,7 @@ updated: 2022-05-02
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 02/05/2022**
@@ -54,7 +54,7 @@ Seleziona la tua vRack nella lista per visualizzare la lista dei servizi ammissi
 
 ### Step 3: configurazione delle interfacce di rete
 
-Gli step successivi contengono le configurazioni delle distribuzioni/sistemi operativi più comunemente utilizzati. Il primo step consiste sempre nell'[connetterti al tuo server](https://docs.ovh.com/it/dedicated/iniziare-a-utilizzare-server-dedicato/) in SSH o in sessione RDP (per Windows). Gli esempi che seguono presuppongono che tu sia connesso come utente con elevate autorizzazioni (Administratore/Sudo).
+Gli step successivi contengono le configurazioni delle distribuzioni/sistemi operativi più comunemente utilizzati. Il primo step consiste sempre nel [connetterti al tuo server](https://docs.ovh.com/it/dedicated/iniziare-a-utilizzare-server-dedicato/) in SSH o in sessione RDP (per Windows). Gli esempi che seguono presuppongono che tu sia connesso come utente con elevate autorizzazioni (Administratore/Sudo).
 
 > [!primary]
 >

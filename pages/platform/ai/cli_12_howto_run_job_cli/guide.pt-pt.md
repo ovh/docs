@@ -6,10 +6,10 @@ section: Command Line Interface
 order: 202
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/run-job-cli/'
-updated: 2021-03-25
+updated: 2023-05-11
 ---
 
-**Last updated 25th March, 2021.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 
@@ -28,62 +28,65 @@ This Docker image is freely available.
 If you need any help while submitting a new job, run `ovhai job run --help`:
 
 ``` {.console}
-USAGE:
-    ovhai job run [FLAGS] [OPTIONS] [ARGS]
+Usage:
+    ovhai job run [OPTIONS] [IMAGE] [COMMAND]...
 
-ARGS:
-    <image>         Docker image
-    <command>...    List of command arguments to pass to job. If some job arguments start with
-                    '-' or '--' don't forget to add '--' as first argument to avoid interpreting
-                    following ones as ovhai parameter. Example: `ovhai job run ubuntu -- bash -c
-                    'echo $(date)'`
+Arguments:
+  [IMAGE]
+          Docker image
 
-FLAGS:
-    -h, --help             Prints help information
-        --unsecure-http    HTTP services inside job will not require authentication to be accessed
-                           from the outside
-    -V, --version          Prints version information
+  [COMMAND]...
+          List of command arguments to pass to job. If some job arguments start with '-' or '--' don't forget to add '--' as first argument to avoid interpreting following ones as ovhai parameter. Example: `ovhai job run ubuntu -- bash -c 'echo $(date)'`
 
-OPTIONS:
-    -c, --cpu <cpu>
-            Number of CPUs (ignored if GPUs is specified)
+Options:
+  -e, --env <name=value>
+          Environment variable to be set inside job
 
-    -p, --default-http-port <default-http-port>
-            Port use as the default one to access HTTP service inside job
+      --token <TOKEN>
+          Authentication using Token rather than OAuth
 
-    -e, --env <name=value>...
-            Environment variable to be set inside job
+  -p, --default-http-port <DEFAULT_HTTP_PORT>
+          Port use as the default one to access HTTP service inside job
 
-        --from <job_id>
-            Re-use the same spec as given job uuid. Additional parameters will override this
-            specification. Example: `ovhai job run --from <job_id> --gpu 2` will run the same spec
-            as <job_id> with 2 gpus
+  -t, --timeout <TIMEOUT>
+          Maximum time to spend before killing the job (30s, 1h, ...)
 
-    -g, --gpu <gpu>                                                       Number of GPUs
-    -m, --gpu-model <gpu-model>                                           GPU model
-    -i, --image <image>
-    -l, --label <name=value>...
-            Optional labels, only informative
+      --unsecure-http
+          HTTP services inside job will not require authentication to be accessed from the outside
 
-    -n, --name <name>
-            Optional name, only informative
+  -g, --gpu <GPU>
+          Number of GPUs
 
-    -o, --output <output>
-            Command output format [default: yaml] [possible values: json, yaml]
+  -f, --flavor <FLAVOR>
+          the flavor to use, `ovhai capabilities flavor list` to get the whole list
 
-    -r, --read-user <read-user>
-            Optional user who will be authorize to access job api
+  -c, --cpu <CPU>
+          Number of CPUs (ignored if GPUs is specified)
 
-    -s, --ssh-public-keys <ssh-public-key-file>...
-            Enable the job ssh feature, specify each ssh public key files
+  -v, --volume <container@alias/prefix:mount_path(:permission)(:cache) or url:mount_path(:permission)(:cache)>
+          Volumes mounted on the image. `alias` is the data store alias of your data. You can get a list of all available data stores for the object storage by typing `ovhai data store list`. `/prefix` is optional [default: ""]. `:permission` is optional [default: ro] [possible values: ro, rw, rwd]. `:cache` is optional [default: "no-cache"] [possible values: cache, no-cache].
+          
+          A URL can be given instead of container@alias/prefix for containers that are publicly available.
 
-    -t, --timeout <timeout>
-            Maximum time to spend before killing the job (30s, 1h, ...)
+  -n, --name <NAME>
+          Optional name, only informative
 
-    -v, --volume <container@region/prefix:mount_path:permission:cache>...
-            Volumes mounted on the image. /prefix is optional [default: ""]. :permission is optional
-            [default: ro] [possible values: ro, rw]. :cache is optional [default: "no-cache"]
-            [possible values: cache, no-cache] and can only be set when permission is explicit
+  -l, --label <name=value>
+          Optional labels, only informative
+
+  -o, --output <OUTPUT>
+          Command output format
+          
+          [possible values: json, yaml]
+
+  -s, --ssh-public-keys <ssh-public-key-file>
+          Enable the job ssh feature, specify each ssh public key files or give the public key directly
+
+      --no-color
+          Remove colors from output
+
+  -h, --help
+          Print help (see a summary with '-h')
 ```
 
 ### Size your run
@@ -215,6 +218,8 @@ For more information about the job and its lifecycle refer to the [jobs page](ht
 ## Going further
 
 To know more about the CLI and available commands to interact with your job check out the [overview of `ovhai`](https://docs.ovh.com/pt/publiccloud/ai/cli/overview-cli)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

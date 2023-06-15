@@ -95,13 +95,13 @@ Primeiro, conecte-se ao seu alojamento VPS via SSH.
 
 Pode utilizar o seguinte comando para verificar o nome do novo dispositivo adicionado:
 
-```
+```bash
 $ lsblk
 ```
 
 Aqui está um exemplo deste comando:
 
-```
+```console
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda       8:0    0   25G  0 disk 
 ├─sda1    8:1    0 24.9G  0 part /
@@ -116,7 +116,7 @@ sdb       8:16   0   25G  0 disk
 Neste exemplo, a partição que contém o backup do seu “filesystem” designa-se "sdb1".
 Em seguida, crie um diretório para esta partição e defina-o como “mountpoint”:
 
-```
+```bash
 $ mkdir -p /mnt/restore
 $ mount /dev/sdb1 /mnt/restore
 ```
@@ -135,7 +135,7 @@ O seu backup montado aparecerá como um disco básico com o mesmo espaço de arm
 
 ![mounted backup](images/windowsbackup2.png){.thumbnail}
 
-O disco aparecerá como `Offline`, faça um clique direito no disco e selecione `Online`(action).
+O disco aparecerá como `Offline`, faça um clique direito no disco e selecione `Online`{.action}.
 
 ![online backup](images/windowsbackup3.png){.thumbnail}
 
@@ -161,27 +161,27 @@ Na maioria das distribuições, o *comutador* necessário não está instalado d
 
 Utilize o seguinte comando para verificar se o sistema está corretamente configurado para as snapshots:
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Se o resultado for diferente (“No such file or directory”), instale a última versão do pacote:
 
-```
+```bash
 $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
 Reinicie a VPS:
 
-```
+```bash
 $ sudo reboot
 ```
 
 Inicie o serviço para garantir que está a ser executado:
 
-```
+```bash
 $ sudo service qemu-guest-agent start
 ```
 
@@ -189,27 +189,27 @@ $ sudo service qemu-guest-agent start
 
 Utilize o seguinte comando para verificar se o sistema está corretamente configurado para as snapshots:
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Se o resultado for diferente (“No such file or directory”), instale e ative o agente:
 
-```
+```bash
 $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
 Reinicie a VPS:
 
-```
+```bash
 $ sudo reboot
 ```
 
 Inicie o agente e verifique que está a ser executado:
 
-```
+```bash
 $ sudo service qemu-guest-agent start
 $ sudo service qemu-guest-agent status
 ```
@@ -220,7 +220,7 @@ Pode instalar o agente através de um ficheiro MSI, disponível no site do proje
 
 Verifique que o serviço está a ser executado graças ao seguinte comando powershell:
 
-```
+```powershell
 PS C:\Users\Administrator> Get-Service QEMU-GA
 Status   Name               DisplayName
 ------   ----               -----------

@@ -61,7 +61,7 @@ It helps for:
 - Traffic splitting between revisions, blue/green...
 - Eventing system
 
-Read more about [Knative 1.0 features](https://knative.dev/blog/articles/knative-1.0/).
+Read more about [Knative 1.0 features](https://knative.dev/blog/releases/announcing-knative-v1-0-release/).
 
 Knative reached the 1.0 milestone. To celebrate this achievement, in this tutorial we are going to install Knative on a freshly created OVHcloud Managed Kubernetes Service cluster and we will deploy an example app using Knative Serving component. You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} to reinitialize your cluster before following this tutorial.
 
@@ -477,4 +477,6 @@ kubectl delete namespace knative-apps
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our community of users on <https://community.ovh.com/>.

@@ -4,16 +4,23 @@ slug: creating-volume-snapshot
 excerpt: Come creare uno Snapshot di un disco aggiuntivo Public Cloud
 section: Storage
 order: 2
-updated: 2023-03-03
+updated: 2023-04-21
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
-**Ultimo aggiornamento: 03/03/2023**
+**Ultimo aggiornamento: 21/04/2023**
 
 ## Obiettivo
+
+Un **Volume Snapshot** è un punto di recupero archiviato nello stesso cluster di storage del volume originale. Le operazioni di creazione e ripristino sono rapide, ma in caso di malfunzionamenti sul cluster è possibile che il volume e il Volume Snapshot non siano disponibili.<br>
+La creazione di un Volume Snapshot non richiede che il volume sia scollegato dall'istanza.
+
+Questa opzione non deve essere confusa con un **Volume Backup** è un'immagine creata a partire dal tuo volume, salvata nel cluster Object Storage della localizzazione del volume originale.
+Questo livello di resilienza è ideale e permette di reagire rapidamente a qualsiasi incidente sul volume creando un altro volume a partire dal backup.<br>
+Per creare un backup del volume è necessario scollegarlo dall'istanza. Per ulteriori informazioni su questa opzione, consultare questa [guida](https://docs.ovh.com/it/public-cloud/volume-backup/).
 
 Creare uno Snapshot di un volume aggiuntivo corrisponde generalmente a due obiettivi:
 
@@ -58,6 +65,8 @@ Apri la sezione `Volume Snapshot`{.action} nella barra di navigazione a sinistra
 Clicca sul pulsante `...`{.action} per eliminare uno Snapshot o `Creare un volume`{.action} a partire dallo Snapshot corrispondente. Per maggiori informazioni, consulta [questa guida](../creare-volume-da-backup/).
 
 ## Per saperne di più
+
+[Creare un backup di un volume](https://docs.ovh.com/it/public-cloud/volume-backup/)
 
 [Creare un volume a partire da un backup](../creare-volume-da-backup/)
 

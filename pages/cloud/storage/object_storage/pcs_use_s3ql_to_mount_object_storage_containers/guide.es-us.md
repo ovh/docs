@@ -1,15 +1,15 @@
 ---
-title: Object Storage Swift - Montar un contenedor de objetos con S3QL
+title: Object Storage Swift - Montar un contenedor de objetos con S3QL (EN)
 slug: pcs/use-s3ql-to-mount-object-storage-containers
 section: OpenStack Swift Storage Class Specifics
-legacy_guide_number: g1908
 order: 160
 updated: 2021-10-27
 ---
 
 **Última actualización: 27/10/2021**
 
-##
+## Objectivo
+
 S3QL es un sistema de archivos que se puede montar para almacenar datos en local utilizando soluciones de almacenamiento en la nube como el Object Storage.
 
 Ofrece múltiples funcionalidades, tales como compresión transparente, encriptado o creación de snapshots, que lo hacen especialmente adecuado para la creación de backups.
@@ -21,7 +21,7 @@ Esta guía explica cómo montar un contenedor de objetos como sistema de archivo
 ## Requisitos
 
 - [Crear y eliminar un usuario de OpenStack](https://docs.ovh.com/us/es/public-cloud/crear-y-eliminar-un-usuario-de-openstack/)
-- [Añadir espacios de almacenamiento](https://docs.ovh.com/us/es/storage/horizon_crear_un_contenedor_de_objetos/)
+- [Añadir espacios de almacenamiento](https://docs.ovh.com/us/es/storage/object-storage/pcs/create-container/)
 
 ## Procedimiento
 
@@ -43,7 +43,6 @@ backend-password: PASSWORD
 storage-url: swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME
 fs-passphrase: PASSPHRASE
 ```
-
 
 Puede consultar los datos TENANT_NAME y USERNAME en el archivo OpenRC. La guía «[Acceso y seguridad en Horizon](https://docs.ovh.com/us/es/public-cloud/access_and_security_in_horizon/)» explica cómo.
 
@@ -98,4 +97,6 @@ Atención: Ya no será posible utilizar S3QL en modo «offline». Por otra parte
 
 ## Más información
   
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

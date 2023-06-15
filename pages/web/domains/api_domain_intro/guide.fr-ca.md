@@ -33,7 +33,7 @@ Pensez à remplacer [https://eu.api.ovh.com](https://eu.api.ovh.com) par [https:
 Avant de lire cette documentation, il est nécessaire de commencer par prendre connaissance de la documentation suivante.
 Elle décrit la mise en place de l'environnement de test et la connexion à l'API OVHcloud, et permet également de comprendre la signature des requêtes.
 
-- [Premiers pas avec les APIs OVHcloud](../../api/first-steps-with-ovh-api/)
+- [Premiers pas avec les APIs OVHcloud](/pages/account/api/first-steps)
 
 ## SDKs disponibles
 
@@ -45,7 +45,9 @@ Afin de faciliter les appels à l'API, des SDKs sont disponibles pour plusieurs 
 - C#: [https://github.com/ovh/csharp-ovh](https://github.com/ovh/csharp-ovh)
 - PHP: [https://github.com/ovh/php-ovh](https://github.com/ovh/php-ovh)
 - Perl: [https://github.com/ovh/perl-ovh](https://github.com/ovh/perl-ovh)
-- Swift: [https://github.com/ovh/swift-ovh](https://github.com/ovh/swift-ovh)
+- Swift\*: [https://github.com/ovh/swift-ovh](https://github.com/ovh/swift-ovh)
+
+\* Archivé depuis 2019
 
 <!-- prettier-ignore -->
 > [!tabs]

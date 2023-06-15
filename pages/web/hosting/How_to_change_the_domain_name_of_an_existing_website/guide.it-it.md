@@ -11,7 +11,7 @@ updated: 2022-10-25
 
 > [!primary]
 >
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 ## Obiettivo
@@ -26,7 +26,7 @@ Questa guida ti mostra le operazioni da effettuare per modificare il dominio di 
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
+> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
 >
 
 ## Prerequisiti
@@ -40,7 +40,7 @@ Questa guida ti mostra le operazioni da effettuare per modificare il dominio di 
 > [!warning]
 >
 > La modifica del dominio per accedere al tuo sito può avere conseguenze sul suo posizionamento nei motori di ricerca. 
-> Presta la massima attenzione alle operazioni che intendi effettuare o contatta uno dei [provider specializzati](https://partner.ovhcloud.com/it/) nel referenziamento se necessario.
+> Presta la massima attenzione alle operazioni che intendi effettuare o contatta uno dei [provider specializzati](https://partner.ovhcloud.com/it/directory/) nel referenziamento se necessario.
 >
 
 Per modificare il dominio di accesso al tuo sito Web, segui diversi step in un ordine preciso.
@@ -93,7 +93,7 @@ La maggior parte dei siti utilizza database per funzionare. che viene generalmen
 
 > [!warning]
 >
-> Attenzione: le operazioni descritte nello Step 2 sono estremamente sensibili e, se non eseguite con cautela, possono avere gravi conseguenze per il tuo sito Web. In caso di dubbio, non provi nulla e rivolgiti a [uno specialista](https://partner.ovhcloud.com/it/).
+> Attenzione: le operazioni descritte nello Step 2 sono estremamente sensibili e, se non eseguite con cautela, possono avere gravi conseguenze per il tuo sito Web. In caso di dubbio, non provi nulla e rivolgiti a [uno specialista](https://partner.ovhcloud.com/it/directory/).
 >
 > Prima di effettuare qualsiasi operazione, ti consigliamo di recuperare una [backup del tuo spazio di storage FTP](https://docs.ovh.com/it/hosting/web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/) e una [backup del tuo database](https://docs.ovh.com/it/hosting/web_hosting_come_esportare_un_database/). per ripristinare il sito in caso di operazioni errate.
 >
@@ -153,7 +153,7 @@ Una volta che il dominio precedente è stato rimosso dalla scheda multisito e re
 
 [Reindirizzare un dominio](https://docs.ovh.com/it/domains/reindirizzamento-dominio/)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 

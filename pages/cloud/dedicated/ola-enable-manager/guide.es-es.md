@@ -71,4 +71,4 @@ La operación puede tardar unos minutos.
 
 [Configurar un NIC para el servicio OVHcloud Link Aggregation en Windows Server 2019](../ola-w2k19/).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

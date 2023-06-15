@@ -8,7 +8,7 @@ updated: 2023-02-15
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 15/02/2023**
@@ -53,7 +53,7 @@ Gli esempi che seguono suppongono di essere connessi come utenti con diritti ele
 
 Per verificare il nome della nuova periferica utilizza il seguente comando:
 
-```
+```bash
 $ lsblk
 
 sda       8:0    0   80G  0 disk
@@ -67,7 +67,7 @@ In questo esempio, il disco aggiuntivo è chiamato `sdb`.
 
 Esegui `fdisk` per creare una partizione sul disco. Quando ti viene chiesto, inserisci `n` per una nuova partizione e accetta i valori predefiniti qui sotto premendo "Enter". e utilizza il comando `w` per scrivere le modifiche sul disco.
 
-```
+```bash
 $ sudo fdisk /dev/sdb
 
 Welcome to fdisk (util-linux 2.34).
@@ -75,7 +75,7 @@ Changes will remain in memory only, until you decide to write them.
 Be careful before using the write command.
 ```
 
-```
+```bash
 Command (m for help): n
 
 Partition type
@@ -94,7 +94,7 @@ Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-104857599, default 104857599
 Created a new partition 1 of type 'Linux' and of size 50 GiB.
 ```
 
-```
+```bash
 Command (m for help): w
 
 The partition table has been altered.
@@ -104,7 +104,7 @@ Syncing disks.
 
 Una volta creata la partizione `sdb1`, è possibile formattarla con ext4:
 
-```
+```bash
 $ sudo mkfs.ext4 /dev/sdb1
 
 Creating filesystem with 13106944 4k blocks and 3276800 inodes
@@ -121,14 +121,14 @@ Writing superblocks and filesystem accounting information: done
 
 L'ultimo step consiste nel mount del disco:
 
-```
+```bash
 $ sudo mkdir /mnt/disk
 $ sudo mount /dev/sdb1 /mnt/disk
 ```
 
 Sull'ultima riga puoi vedere che il disco aggiuntivo è stato montato a `/mnt/disk`:
 
-```
+```bash
 $ df -h
 Filesystem      Size  Used Avail Use% Mounted on
 udev            1.9G     0  1.9G   0% /dev
@@ -157,7 +157,7 @@ Questo step precedente non è persistente perché il disco verrà scollegato se 
 Per prima cosa recupera l'UUID (ID del blocco) della periferica:
 
 
-```
+```bash
 $ sudo blkid
 /dev/sda1: LABEL="cloudimg-rootfs" UUID="e616a2cd-3c02-4c79-9823-9b1bb5c13b26" TYPE="ext4" PARTUUID="a44089a3-f407-41e6-b7a5-1ed7672cef20"
 /dev/sda15: LABEL_FATBOOT="UEFI" LABEL="UEFI" UUID="4411-1580" TYPE="vfat" PARTUUID="e1746ac7-80c1-4859-9b4d-fa6ce11b3ae9"
@@ -173,13 +173,13 @@ $ sudo blkid
 
 Apri `etc/fstab` con un editor di testo:
 
-```
+```bash
 $ sudo nano /etc/fstab
 ```
 
-Aggiungi la riga qui sotto al file e sostituisci l'UUUID con la tua:
+Aggiungi la riga qui sotto al file e sostituisci l'UUID con la tua:
 
-```
+```console
 UUID=87571b68-30e1-498b-a64c-49ec5cd4f31c /mnt/disk ext4 nofail 0 0
 ```
 
@@ -223,21 +223,21 @@ Clicca su `cmd` e clicca su `OK`{.action} per aprire l'applicazione della riga d
 
 ![winmountdiskvps](images/disk_vps_win07.png){.thumbnail}
 
-Nel prompt dei comandi, apri DISKpart:
+Nel prompt dei comandi, apri DISKPART:
 
-```
+```powershell
 C:\> diskpart
 ```
 
 Per configurare il disco online, utilizza questo set di comandi DISKpart:
 
-```
+```powershell
 DISKPART> san
 
 SAN Policy: Offline Shared
 ```
 
-```
+```powershell
 DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system.
@@ -251,19 +251,19 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```
+```powershell
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
 ```
 
-```
+```powershell
 DISKPART> attributes disk clear readonly
 
 Disk attributes cleared successfully.
 ```
 
-```
+```powershell
 DISKPART> attributes disk
 
 Current Read-only State : No
@@ -275,7 +275,7 @@ Crashdump Disk : No
 Clustered Disk : No
 ```
 
-```
+```powershell
 DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.
@@ -287,7 +287,7 @@ Nella `gestione dei dischi`{.action}, clicca con il tasto destro sul nuovo disco
 
 ![winmountdiskvps](images/disk_vps_win08.png){.thumbnail}
 
-Nell'assistente, clicca su `Avanti`{.action} per specificare la dimensione del volume. Dovrebbe essere definito di default sul massimo. Clicca su `Avanti`{.action} per continuare
+Nell'assistente, clicca su `Avanti`{.action} per specificare la dimensione del volume. Dovrebbe essere definito di default sul massimo. Clicca su `Avanti`{.action} per continuare.
 
 ![winmountdiskvps](images/disk_vps_win09.png){.thumbnail}
 

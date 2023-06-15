@@ -274,7 +274,7 @@ In your document root you should `touch` the file `tmp/restart.txt`.
 
 ## Go further
 
-[Accessing a web web hosting plan via SSH](../../hosting/web_hosting_ssh_on_web_hosting_packages/) 
+[Accessing a web hosting plan via SSH](../../hosting/web_hosting_ssh_on_web_hosting_packages/) 
 
 [Hosting multiple websites on your Web Hosting plan](../../hosting/multisites-configuring-multiple-websites/)
 
@@ -285,4 +285,4 @@ In your document root you should `touch` the file `tmp/restart.txt`.
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
 
 
-**Join [our Gitter room](https://gitter.im/ovh/power-web-hosting) to discuss directly with the POWER Web Hosting team and the other users of this lab.**
+**Join [our Discord](https://discord.gg/ovhcloud) on our web-hosting-power channel to discuss directly with the team and other users of this lab.**

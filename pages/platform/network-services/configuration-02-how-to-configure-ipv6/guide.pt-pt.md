@@ -50,8 +50,8 @@ Aqui tem um breve léxico dos termos utilizados neste tutorial:
 |Léxico|Descrição|
 |---|---|
 |YOUR_IPV6|O endereço IPv6 associado ao seu serviço|
-|IPv6_PREFIX|O prefixo do bloco IPv6 (por ex.: 2607:5300:60:62ac::/128 -> netmask = 128)|
-|IPv6_GATEWAY|A gateway do bloco IPv6|
+|IPV6_PREFIX|O prefixo do bloco IPv6 (por ex.: 2607:5300:60:62ac::/128 -> netmask = 128)|
+|IPV6_GATEWAY|A gateway do bloco IPv6|
 
 
 ### Obter as informações de rede
@@ -224,4 +224,6 @@ De qualquer forma, não hesite em contactar o suporte com os elementos testados 
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

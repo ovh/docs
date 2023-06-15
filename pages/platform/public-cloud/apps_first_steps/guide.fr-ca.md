@@ -57,7 +57,7 @@ Cette section s'applique uniquement aux installations de WordPress, Drupal, Joom
      personaldomain.ovh <br>
      www.personaldomain.ovh <br>  
 
-Si votre domaine est enregistré chez OVHcloud, vous pouvez suivre [ce guide.](../../domains/editer-ma-zone-dns/).
+Si votre domaine est enregistré chez OVHcloud, vous pouvez suivre [ce guide](../../domains/editer-ma-zone-dns/).
 <br>Si votre domaine est enregistré auprès d'une autre société, vous devrez contacter celle-ci pour obtenir de l'aide sur la configuration de vos enregistrements `A`.
 
 <ol start="2">
@@ -136,7 +136,7 @@ Aucune autre étape n'est nécessaire pour terminer la première configuration d
 > [!faq]
 >
 > Puis-je utiliser mes propres serveurs DNS ?
->> Oui, vous le pouvez. Assurez-vous de créer des enregistrements « GLUE » avec votre bureau d'enregistrement de domaine. Par exemple, si vous voulez "ns1.mydomain.com" et "ns2.mydomain.com", vous devez configurer des enregistrements « GLUE » pour que les deux pointent sur l'adresse IP de votre serveur. Si votre domaine est enregistré avec OVHcloud, vous pouvez suivre [ce guide.](../../domains/glue-registry/#etape-1-ajouter-les-enregistrements-glue). Notez que la création peut prendre 24 heures.
+>> Oui, vous le pouvez. Assurez-vous de créer des enregistrements « GLUE » avec votre bureau d'enregistrement de domaine. Par exemple, si vous voulez "ns1.mydomain.com" et "ns2.mydomain.com", vous devez configurer des enregistrements « GLUE » pour que les deux pointent sur l'adresse IP de votre serveur. Si votre domaine est enregistré avec OVHcloud, vous pouvez suivre [ce guide](../../domains/glue-registry/#etape-1-ajouter-les-enregistrements-glue). Notez que la création peut prendre 24 heures.
 > Pourquoi définir le mot de passe root?
 >> WHM utilise par défaut l'utilisateur root pour l'authentification. L'URL à usage unique permet d'accéder à la première configuration et de modifier le mot de passe root. La prochaine fois que vous vous connecterez à WHM, vous devrez utiliser l'utilisateur root et le mot de passe que vous avez défini.
 > Où est ma licence pour cPanel?
@@ -149,7 +149,7 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 1. Obtenez l'URL d'accès à votre application en [suivant ces étapes](./#details-de-connexion-a-lapplication).
 2. Cliquez sur l'URL renvoyée par l'API.
 3. Connectez-vous à l'aide du nom d'utilisateur et du mot de passe retournés par l'API.
-4. Une fois connecté, Plesk vous demandera:   
+4. Une fois connecté, Plesk vous demandera :   
     a) Vos coordonnées.  
     b) Un nouveau mot de passe pour l'utilisateur « admin » que vous utiliserez pour vous connecter à l'interface de Plesk.  
     c) Des informations sur la licence.*  
@@ -193,5 +193,7 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
 
 ## Allez plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

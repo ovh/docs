@@ -4,14 +4,14 @@ excerpt: "Dowiedz się, jak zmienić formułę subskrypcji hostingu OVHcloud"
 slug: how_to_change_hosting_offer
 section: Optymalizacja strony WWW
 order: 02
-updated: 2023-01-03
+updated: 2023-04-19
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 15-02-2023**
+**Ostatnia aktualizacja z dnia 19-04-2023**
 
 ## Wprowadzenie 
 
@@ -71,7 +71,7 @@ Następnie wybierz Twój nowy abonament oraz czas jego trwania. Zatwierdź odpow
 > Należy **najpierw** zmienić ofertę hostingu z poziomu oferty *Performance 2* na ofertę *Performance 1* **następnie** na ofertę *Pro*.
 >
 
-Przed przejściem na niższą ofertę, sprawdź 6 poniższe elementy:
+Przed przejściem na niższą ofertę, sprawdź 7 poniższe elementy:
 
 #### 1 - Liczba stron
 
@@ -83,7 +83,7 @@ Przed przejściem z oferty [Perso](https://www.ovhcloud.com/pl/web-hosting/perso
 
 Przed przejściem na niższą ofertę upewnij się, że nowa oferta zawiera wystarczającą ilość [baz danych](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/). Sprawdź również, czy są wystarczająco duże.
 
-Jeśli tak się nie stanie, usuń nieużywane bazy danych i zmniejsz w razie potrzeby ilość danych, które zawierają. Ilość ta nie może przekroczyć maksymalnego rozmiaru baz danych w nowej ofercie (w przypadku prośby o pomoc w zakresie wykonywanych operacji, skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/)).
+Jeśli tak się nie stanie, usuń nieużywane bazy danych i zmniejsz w razie potrzeby ilość danych, które zawierają. Ilość ta nie może przekroczyć maksymalnego rozmiaru baz danych w nowej ofercie (w przypadku prośby o pomoc w zakresie wykonywanych operacji, skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/)).
 
 Po usunięciu danych z baz danych pamiętaj o przeliczeniu rozmiaru używanego w zakładce `Bazy danych`{.action} w części `Hosting`{.action} w Panelu klienta. Kliknij przycisk `...`{.action} po prawej stronie wybranej bazy, a następnie na `Przelicz rozmiar bazy`{.action}.
 
@@ -127,9 +127,19 @@ Aby zmienić dotychczasowy hosting na ofertę [Perso](https://www.ovhcloud.com/p
 
 W części `E-maile`{.action} w Panelu klienta wybierz odpowiednią ofertę, a następnie kliknij `...`{.action} po prawej stronie `Usługa`{.action}. Na koniec kliknij polecenie `Zmień ofertę`{.action}.
 
+#### 7 - Użytkownicy FTP
+
+Przed przełączeniem hostingu na niższą ofertę, upewnij się, że nowa oferta zawiera wystarczającą liczbę użytkowników FTP.
+
+Liczba użytkowników FTP jest widoczna w Twoim Panelu klienta OVHcloud. Przejdź do sekcji `Web Cloud`{.action} i wybierz odpowiedni hosting w sekcji `Hosting`{.action} po lewej stronie. Na stronie, która się wyświetla kliknij zakładkę `FTP-SSH`{.action}. W dolnej części następnej strony, tabela zawiera listę wszystkich użytkowników FTP utworzonych dla Twojego hostingu.
+
+Aby usunąć użytkowników FTP, kliknij przycisk `...`{.action} po prawej stronie użytkownika FTP, który chcesz usunąć, a następnie kliknij na `Usuń`{.action}.
+
+[user FTP deletion](images/userFTP.png){.thumbnail}
+
 #### Zakończenie
 
-Po sprawdzeniu 6 elementów możesz wykonać [zmianę oferty](#modify).
+Po sprawdzeniu 7 elementów możesz wykonać [zmianę oferty](#modify).
 
 ### Szczególne przypadki
 
@@ -183,7 +193,7 @@ Postępuj zgodnie [z instrukcjami](#modify), aby zmienić ofertę.
 
 [Optymalizacja wydajności strony](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_optymalizacji_wydajnosci_strony/)
 
-Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
+Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, sprawdź naszą [ofertę pomocy](https://www.ovhcloud.com/pl/support-levels/).
 

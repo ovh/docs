@@ -18,11 +18,11 @@ With OVHcloud Connect, you can link your company network to your private OVHclou
 ## Requirements
 
 > [!warning]
-> To ensure correct operation of this service, you must be aware of the [technical capabilities and limitations of the OVHcloud Connect solution](../occ-limits/) and configure your network devices accordingly.
+> To ensure correct operation of this service, you must be aware of the [technical capabilities and limitations of the OVHcloud Connect solution](/pages/cloud/ovhcloud-connect/occ-limits) and configure your network devices accordingly.
 >
 
 - An [OVHcloud Connect Provider solution](https://www.ovhcloud.com/en-ie/network-security/ovhcloud-connect/)
-- An OVHcloud [vRack](https://www.ovh.ie/solutions/vrack/)
+- An OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/)
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
@@ -164,5 +164,7 @@ To delete a PoP configuration, click the `...`{.action} button on the PoP config
 >
 
 ## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

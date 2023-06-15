@@ -11,7 +11,7 @@ updated: 2020-12-09
 
 ## Objectif
 
-La création d'un projet est la première étape du déploiement d'[instancesPublic Cloud](https://www.ovhcloud.com/fr/public-cloud/).
+La création d'un projet est la première étape du déploiement d'[instances Public Cloud](https://www.ovhcloud.com/fr/public-cloud/).
 
 **Ce guide explique comment commander un projet Public Cloud via l'APIv6 OVHcloud.**
 
@@ -47,7 +47,7 @@ Vous devez ensuite ajouter un projet Public Cloud en tant qu'article. Utilisez c
 > @api {GET} /order/cart/{cartId}/cloud
 >
 
-Dans la réponse, vous pouvez vérifier les paramètres relatifs à un projet Public Cloud:
+Dans la réponse, vous pouvez vérifier les paramètres relatifs à un projet Public Cloud :
 
 >
 >**code_plan** : « project.2018 »
@@ -57,7 +57,7 @@ Dans la réponse, vous pouvez vérifier les paramètres relatifs à un projet Pu
 
 #### Ajouter un projet au panier
 
-Utilisez cet appel pour ajouter l'article à votre panier:
+Utilisez cet appel pour ajouter l'article à votre panier :
 
 > [!api]
 >

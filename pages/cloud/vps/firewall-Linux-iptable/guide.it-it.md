@@ -7,7 +7,7 @@ updated: 2023-02-27
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 27/02/2023**
@@ -28,7 +28,7 @@ I firewall funzionano definendo regole che disciplinano il traffico autorizzato 
 
 ## Prerequisiti
 
-- Disporre di un [VPS](https://www.ovhcloud.com/it/vps/ nel proprio account OVHcloud
+- Disporre di un [VPS](https://www.ovhcloud.com/it/vps/) nel proprio account OVHcloud
 - Avere accesso amministratore (root/sudo) al server via SSH
 
 ## Procedura
@@ -72,15 +72,15 @@ sudo iptables [option] CHAIN_rule [-j target]
 
 Ecco una lista di alcune opzioni iptables comuni:
 
-- -A —append: Aggiungi una regola a una catena (alla fine).
-- -C —check : Ricerca una regola che corrisponde alle esigenze della catena.
-- -D —delete: Elimina le regole specificate di una catena.
-- -F -flush: Elimina tutte le regole.
-- -I —insert: Aggiungi una regola a una catena in una determinata posizione.
-- -L —list: Mostra tutte le regole di un canale.
-- -N -new-chain : Crea un nuovo canale.
-- -v —verbose: Indica maggiori informazioni durante l'utilizzo di un'opzione di lista.
-- -X —delete-chain: Elimina la catena fornita.
+- -A --append: Aggiungi una regola a una catena (alla fine).
+- -C --check: Ricerca una regola che corrisponde alle esigenze della catena.
+- -D --delete: Elimina le regole specificate di una catena.
+- -F --flush: Elimina tutte le regole.
+- -I --insert: Aggiungi una regola a una catena in una determinata posizione.
+- -L --list: Mostra tutte le regole di un canale.
+- -N --new-chain: Crea un nuovo canale.
+- -v --verbose: Indica maggiori informazioni durante l'utilizzo di un'opzione di lista.
+- -X --delete-chain: Elimina la catena fornita.
 
 ### Step 3: verificare lo stato attuale degli iptables
 
@@ -114,26 +114,26 @@ Una porta è un punto terminale di comunicazione specificato per un tipo specifi
 Per autorizzare il traffico Web HTTP, inserisci questo comando:
 
 ```bash
-sudo iptables -A INPUT -p tcp —dport 80 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 ```
 
 Per autorizzare solo il traffico SSH (Secure Shell) in entrata, inserisci (notare che si utilizza la porta 22, che è il numero di porta SSH predefinito). Se il vostro numero di porta è diverso, assicuratevi di adattare di conseguenza i comandi seguenti):
 
 ```bash
-sudo iptables -A INPUT -p tcp —dport 22 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 ```
 
 Per autorizzare il traffico Internet HTTPS, inserisci questo comando:
 
 ```bash
-sudo iptables -A INPUT -p tcp —dport 443 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 ```
 
 Le opzioni funzionano in questo modo:
 
 - -p: Verifica il protocollo specificato (tcp).
-- —dport: Specifica il porto di destinazione.
-- -j jump : Effettua l'azione 
+- --dport: Specifica il porto di destinazione.
+- -j jump: Effettua l'azione 
 
 > [!warning]
 > In caso di perdita dell'accesso al tuo server, puoi sempre utilizzare il tool KVM/IPMI per accedervi nuovamente e modificare la tua configurazione o eliminare le tue regole.
@@ -162,14 +162,14 @@ Sostituisci l'indirizzo IP nel comando con l'indirizzo IP che vuoi bloccare.
 Puoi rifiutare il traffico a partire da una gamma di indirizzi IP, con il seguente comando:
 
 ```bash
-sudo iptables -A INPUT -m iprange —src-ordina il tuo_indirizzo_IP_di_inizio_il_tuo_indirizzo_IP_fine -j REJECT
+sudo iptables -A INPUT -m iprange --src-range il tuo_indirizzo_IP_di_inizio_il_tuo_indirizzo_IP_fine -j REJECT
 ```
 
 Le opzioni iptables che abbiamo utilizzato negli esempi funzionano in questo modo:
 
 - -m: Corrisponde all'opzione specificata.
 - -iprange: Indica al sistema di attendere una gamma di indirizzi IP invece di una sola.
-- —src-range: Identifica la gamma di indirizzi IP.
+- --src-range: Identifica la gamma di indirizzi IP.
 
 ### Step 7: eliminare il traffico indesiderato
 

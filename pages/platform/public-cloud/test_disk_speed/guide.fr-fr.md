@@ -45,7 +45,7 @@ root@serveur:~$ fio
 >
 > Notez que vous devrez modifier l'argument `—numjobs` pour refléter le nombre de CPU de votre instance.
 >
-> Vous pouvez récupérer une liste d'arguments et leurs fonctions directement à partir du [guide](https://github.com/axboe/fio/blob/master/HOWTO) de fio.
+> Vous pouvez récupérer une liste d'arguments et leurs fonctions directement à partir du [guide](https://github.com/axboe/fio/blob/master/HOWTO.rst) de fio.
 >
 
 Pour tester la vitesse d'un disque supplémentaire, vous devez monter celui-ci à l'aide de la commande suivante : 

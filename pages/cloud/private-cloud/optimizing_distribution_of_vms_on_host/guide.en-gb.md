@@ -7,6 +7,7 @@ section: Resource management
 updated: 2018-03-26
 ---
 
+**Last updated 26th March 2018**
 
 ## OVH PRO Configuration
 PRO includes Dynamic Optimization to automatically distribute the load of a cluster among different host servers. 

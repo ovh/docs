@@ -237,3 +237,9 @@ persistentvolumeclaim "data-my-first-k8s-wordpress-mariadb-0" deleted
 So now you have a working WordPress on your OVHcloud Managed Kubernetes cluster.
 
 Don't hesitate to go to our [Managed Kubernetes guides and tutorials](../).
+
+## Go further
+
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our [community of users](https://community.ovh.com/en/).

@@ -35,7 +35,7 @@ Nos hébergements web sont compatibles IPv6 depuis 2011. Mais l'activation de ce
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 > 
 
 Si votre site n'est pas configuré pour fonctionner avec une adresse IPv6, vous pouvez ajouter [l'adresse IPv6 de votre hébergement mutualisé OVHcloud](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/) dans la zone DNS active de votre nom de domaine. L'objectif est de permettre aux navigateurs web de trouver une adresse IPv6 associée à votre site web via votre nom de domaine.
@@ -61,7 +61,7 @@ Dans le cadre **IPv6**, copiez l'entrée et passez à l'étape suivante.
 > De plus, l'ajout, la modification ou la suppression d'une entrée DNS dans la zone DNS active d'un nom de domaine entraîne un délai de propagation de **4 à 24 heures** pour être pleinement effectif.
 >
 
-Afin que votre navigateur trouve l'adresse IPv6 avec votre nom de domaine, modifiez la zone DNS active de votre domaine. Utilisez notre guide « [Éditer une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-de-domaine_1) » pour créer une entrée DNS de type **AAAA**.
+Afin que votre navigateur trouve l'adresse IPv6 avec votre nom de domaine, modifiez la zone DNS active de votre domaine. Utilisez notre guide « [Éditer une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-de-domaine) » pour créer une entrée DNS de type **AAAA**.
 
 Dans la partie `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action}. Choisissez votre nom de domaine puis positionnez-vous sur l'onglet `Zone DNS`{.action}. Cliquez sur le bouton `Ajouter une entrée`{.action} à droite du tableau. 
 
@@ -71,9 +71,9 @@ Insérez l'adresse IPv6 préalablement copiée en utilisant le type d'enregistre
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Éditer une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-de-domaine_1)
+[Éditer une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/#editer-la-zone-dns-ovhcloud-de-votre-nom-de-domaine)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 

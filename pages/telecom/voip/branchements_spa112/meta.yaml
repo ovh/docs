@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: f8abf400-e311-4ab6-8e96-d374c640907d
 full_slug: voip-setting-up-cisco-spa112

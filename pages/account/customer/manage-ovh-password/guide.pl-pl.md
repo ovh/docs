@@ -4,8 +4,10 @@ slug: zarzadzanie-haslem
 excerpt: 'Dowiedz się, jak tworzyć, zmieniać i zarządzać hasłem do Panelu klienta OVHcloud'
 section: 'Pierwsze kroki'
 order: 4
-updated: 2021-07-21
+updated: 2020-06-23
 ---
+
+**Ostatnia aktualizacja z dnia 23-06-2020**
 
 ## Wprowadzenie
 
@@ -50,7 +52,7 @@ Więcej informacji znajdziesz w sekcji  [Sprawdź również](./#sprawdz-rowniez)
 
 Specjalne oprogramowanie do zapisywania i zabezpieczania hasła dostępu do konta OVHcloud.
 
-Można na przykład użyć managera haseł **Keepass**. Jest to bezpłatne i otwarte oprogramowanie rekomendowane przez francuską Agencją ds. Cyberbezpieczeństwa (ANSSI).
+Można na przykład użyć managera haseł **KeePass**. Jest to bezpłatne i otwarte oprogramowanie rekomendowane przez francuską Agencją ds. Cyberbezpieczeństwa (ANSSI).
 
 Jego zasada jest prosta: hasło główne - które musi być silne, ale które powinieneś zapamiętać - umożliwia dostęp do bazy danych zawierającej wszystkie identyfikatory i hasła. Identyfikatory i hasła mogą być bardzo złożone, ponieważ zostaną one zapisane w oprogramowaniu.
 
@@ -123,7 +125,7 @@ Jeśli Twoje hasło wykradzione, rekomendujemy [jego natychmiastową zmianę](./
 
 [Krajowy system cyberbezpieczeństwa](https://www.gov.pl/web/cyfryzacja/krajowy-system-cyberbezpieczenstwa-){.external}
 
-[Manager haseł Keepass](https://keepass.info/){.external}
+[Manager haseł KeePass](https://keepass.info/){.external}
 
 [Przykładowy darmowy generator haseł](https://www.lastpass.com/password-generator){.external}
 

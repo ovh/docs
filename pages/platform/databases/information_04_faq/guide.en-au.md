@@ -3,10 +3,10 @@ title: FAQ Public Cloud databases
 slug: faq
 section: General information
 order: 040
-updated: 2021-08-25
+updated: 2023-03-21
 ---
 
-**Last updated August 25<sup>th</sup>, 2021**
+**Last updated March 21<sup>st</sup>, 2023**
 
 ## Objective
 
@@ -273,8 +273,7 @@ In case of a failover, your cluster will be in degraded mode:
 
 ### How do you perform backups ?
 
-Backups are performed differently according to the DBMS.
-For MongoDB, a mongodump is executed, encrypted and stored on our infrastructure.
+Backups are performed differently according to the DBMS. See [Automated backups](https://docs.ovh.com/au/en/publiccloud/databases/backups/) for more details.
 
 ### Can I perform manual backups ?
 
@@ -455,6 +454,8 @@ If your data is corrupted, you have 2 options:
 
 ## We want your feedback!
 
-We would love to help answer questions and appreciate any feedback you may have. Join our community of users on <https://community.ovh.com/en/>.
+We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. Join our community of users on <https://community.ovh.com/en/>.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

@@ -67,7 +67,7 @@ Si vous avez besoin d’aide, consultez le guide [Créer une instance Public Clo
 
 #### Cas d’une instance déjà existante
 
-Vous pouvez associer une instance existante à un réseau privé. Pour plus d'informations, vous pouvez consulter [cette section du guide correspondant](https://docs.ovh.com/ca/fr/public-cloud/public-cloud-vrack/#cas-dune-instance-deja-existante_2).
+Vous pouvez associer une instance existante à un réseau privé. Pour plus d'informations, vous pouvez consulter [cette section du guide correspondant](https://docs.ovh.com/ca/fr/public-cloud/public-cloud-vrack/#cas-dune-instance-deja-existante).
 
 ### Créer un VLAN ID
 
@@ -75,7 +75,7 @@ Pour que les deux services puissent communiquer entre eux, ils doivent être « 
 
 #### Utilisation du VLAN ID par défaut
 
-Sur les serveurs dédiés, par défaut, vous êtes sur le VLAN **0**. Si vous souhaitez utiliser cet ID, il sera nécessaire de « tagguer » le réseau privé lié à votre instance avec le VLAN **0**. Pour cela, vous devez passer par [l’API OVHcloud](https://docs.ovh.com/ca/fr/publiccloud/network-services/public-cloud-vrack-apiv6/#etape-3-creer-un-vlan-dans-le-vrack_1).
+Sur les serveurs dédiés, par défaut, vous êtes sur le VLAN **0**. Si vous souhaitez utiliser cet ID, il sera nécessaire de « tagguer » le réseau privé lié à votre instance avec le VLAN **0**. Pour cela, vous devez passer par [l’API OVHcloud](https://docs.ovh.com/ca/fr/publiccloud/network-services/public-cloud-vrack-apiv6/#etape-3-creer-un-vlan-dans-le-vrack).
 
 > [!primary]
 > Sur le Public Cloud, vous définissez un VLAN ID unique par réseau privé.

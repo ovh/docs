@@ -4,7 +4,7 @@ slug: monitoring-gpu-application
 excerpt: 'Find out how to expose, visualize and monitor GPU metrics on OVHcloud Managed Kubernetes Service'
 section: GPU
 order: 1
-updated: 2021-01-13
+updated: 2023-05-02
 ---
 
 <style>
@@ -29,7 +29,7 @@ updated: 2021-01-13
  }
 </style>
 
-**Last updated January 13, 2021.**
+**Last updated May 02, 2023.**
 
 ## Objective
 
@@ -68,8 +68,9 @@ As you have already followed the [Deploying a GPU application on OVHcloud Manage
 
 <pre class="console"><code>$ kubectl get pod -n gpu-operator -l app=nvidia-dcgm-exporter
 NAME                         READY   STATUS    RESTARTS   AGE
-nvidia-dcgm-exporter-2rs2t   1/1     Running   0          18d
-nvidia-dcgm-exporter-rcq6t   1/1     Running   0          18d
+nvidia-dcgm-exporter-fvn8h   1/1     Running   0          25h
+nvidia-dcgm-exporter-mt5qh   1/1     Running   0          25h
+nvidia-dcgm-exporter-n65kl   1/1     Running   0          25h
 </code></pre>
 
 ### Prometheus operator
@@ -172,44 +173,47 @@ You should have a behavior like this:
 --set prometheus.service.type=LoadBalancer \
 --set prometheus.prometheusSpec.serviceMonitorSelectorNilUsesHelmValues=false \
 --set grafana.service.type=LoadBalancer
-NAME: kube-prometheus-stack-1641827066
-LAST DEPLOYED: Mon Jan 10 16:04:32 2022
+
+NAME: kube-prometheus-stack-1682576024
+LAST DEPLOYED: Thu Apr 27 08:13:49 2023
 NAMESPACE: prometheus
 STATUS: deployed
 REVISION: 1
 NOTES:
 kube-prometheus-stack has been installed. Check its status by running:
-  kubectl --namespace prometheus get pods -l "release=kube-prometheus-stack-1641827066"
+  kubectl --namespace prometheus get pods -l "release=kube-prometheus-stack-1682576024"
 
 Visit https://github.com/prometheus-operator/kube-prometheus for instructions on how to create & configure Alertmanager and Prometheus instances using the Operator.
 </code></pre>
 
-You can also verify by checking the Pods in the new `prometheus` namespace:
+You can also verify by checking the Pods in the new `prometheus` namespace with the command `kubectl get pods -n prometheus`:
 
 <pre class="console"><code>$ kubectl get pods -n prometheus
-NAME                                                              READY   STATUS    RESTARTS   AGE
-alertmanager-kube-prometheus-stack-1641-alertmanager-0            2/2     Running   0          5m46s
-kube-prometheus-stack-1641-operator-95b87c9cc-rvdmr               1/1     Running   0          5m49s
-kube-prometheus-stack-1641827066-grafana-8686b97b9d-67g92         3/3     Running   0          5m49s
-kube-prometheus-stack-1641827066-kube-state-metrics-78b54fbvbn4   1/1     Running   0          5m49s
-kube-prometheus-stack-1641827066-prometheus-node-exporter-5jlpp   1/1     Running   0          5m49s
-kube-prometheus-stack-1641827066-prometheus-node-exporter-qhmvw   1/1     Running   0          5m49s
-kube-prometheus-stack-1641827066-prometheus-node-exporter-xtc2g   1/1     Running   0          5m49s
-prometheus-kube-prometheus-stack-1641-prometheus-0                2/2     Running   0          5m46s
+NAME                                                              READY   STATUS    RESTARTS      AGE
+alertmanager-kube-prometheus-stack-1682-alertmanager-0            2/2     Running   1 (72s ago)   77s
+kube-prometheus-stack-1682-operator-67798748b6-gc7tg              1/1     Running   0             83s
+kube-prometheus-stack-1682576024-grafana-7b96cfc746-7vmkx         3/3     Running   0             83s
+kube-prometheus-stack-1682576024-kube-state-metrics-6b9fcd7qx2g   1/1     Running   0             83s
+kube-prometheus-stack-1682576024-prometheus-node-exporter-4ch89   1/1     Running   0             84s
+kube-prometheus-stack-1682576024-prometheus-node-exporter-4zlxk   1/1     Running   0             84s
+kube-prometheus-stack-1682576024-prometheus-node-exporter-hs5wc   1/1     Running   0             84s
+kube-prometheus-stack-1682576024-prometheus-node-exporter-p6qp4   1/1     Running   0             84s
+kube-prometheus-stack-1682576024-prometheus-node-exporter-xv4w9   1/1     Running   0             84s
+prometheus-kube-prometheus-stack-1682-prometheus-0                2/2     Running   0             76s
 </code></pre>
 
 And you can check that `Prometheus` and `Grafana` have an external IP:
 
 <pre class="console"><code>$ kubectl get svc -n prometheus
-NAME                                                        TYPE           CLUSTER-IP     EXTERNAL-IP       PORT(S)                      AGE
-alertmanager-operated                                       ClusterIP      None           <none>            9093/TCP,9094/TCP,9094/UDP   6m22s
-kube-prometheus-stack-1641-alertmanager                     ClusterIP      10.3.102.144   <none>            9093/TCP                     6m25s
-kube-prometheus-stack-1641-operator                         ClusterIP      10.3.54.22     <none>            443/TCP                      6m26s
-kube-prometheus-stack-1641-prometheus                       LoadBalancer   10.3.71.71     152.228.168.191   9090:31518/TCP               6m26s
-kube-prometheus-stack-1641827066-grafana                    LoadBalancer   10.3.79.246    51.178.69.167     80:31923/TCP                 6m25s
-kube-prometheus-stack-1641827066-kube-state-metrics         ClusterIP      10.3.154.226   <none>            8080/TCP                     6m25s
-kube-prometheus-stack-1641827066-prometheus-node-exporter   ClusterIP      10.3.215.121   <none>            9100/TCP                     6m26s
-prometheus-operated                                         ClusterIP      None           <none>            9090/TCP                     6m22s
+NAME                                                        TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)                      AGE
+alertmanager-operated                                       ClusterIP      None           <none>          9093/TCP,9094/TCP,9094/UDP   113s
+kube-prometheus-stack-1682-alertmanager                     ClusterIP      10.3.76.157    <none>          9093/TCP                     2m
+kube-prometheus-stack-1682-operator                         ClusterIP      10.3.161.190   <none>          443/TCP                      2m
+kube-prometheus-stack-1682-prometheus                       LoadBalancer   10.3.219.94    xx.xxx.xx.xx    9090:31176/TCP               2m
+kube-prometheus-stack-1682576024-grafana                    LoadBalancer   10.3.17.251    xx.xxx.xxx.xx   80:31358/TCP                 2m
+kube-prometheus-stack-1682576024-kube-state-metrics         ClusterIP      10.3.181.252   <none>          8080/TCP                     2m
+kube-prometheus-stack-1682576024-prometheus-node-exporter   ClusterIP      10.3.13.211    <none>          9100/TCP                     2m
+prometheus-operated                                         ClusterIP      None           <none>          9090/TCP                     112s
 </code></pre>
 
 If it's not the case, please wait until the Load Balancers are correctly created.
@@ -219,23 +223,22 @@ If it's not the case, please wait until the Load Balancers are correctly created
 Now you can retrieve Prometheus and Grafana URL thanks to the following commands:
 
 ```bash
-export PROMETHEUS_URL=$(kubectl get svc kube-prometheus-stack-1641-prometheus -n prometheus -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
-
+export PROMETHEUS_URL=$(kubectl get svc kube-prometheus-stack-1682-prometheus -n prometheus -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 echo Prometheus URL: http://$PROMETHEUS_URL:9090
 
-export GRAFANA_URL=$(kubectl get svc kube-prometheus-stack-1641827066-grafana -n prometheus -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+export GRAFANA_URL=$(kubectl get svc kube-prometheus-stack-1682576024-grafana -n prometheus -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 
 echo Grafana URL: http://$GRAFANA_URL
 ```
 
 You should obtain the following result:
 
-<pre class="console"><code>$ export PROMETHEUS_URL=$(kubectl get svc kube-prometheus-stack-1641-prometheus -n prometheus -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+<pre class="console"><code>$ export PROMETHEUS_URL=$(kubectl get svc kube-prometheus-stack-1682-prometheus -n prometheus -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 
 $ echo Prometheus URL: http://$PROMETHEUS_URL:9090
 Prometheus URL: http://152.228.168.191:9090
 
-$ export GRAFANA_URL=$(kubectl get svc kube-prometheus-stack-1641827066-grafana -n prometheus -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+$ export GRAFANA_URL=$(kubectl get svc kube-prometheus-stack-1682576024-grafana -n prometheus -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 
 $ echo Grafana URL: http://$GRAFANA_URL
 Grafana URL: http://51.178.69.167
@@ -318,19 +321,19 @@ You should have a result like this:
 
 <pre class="console"><code>$ helm fetch https://helm.ngc.nvidia.com/nvidia/charts/video-analytics-demo-0.1.4.tgz && \
 helm install video-analytics-demo-0.1.4.tgz --generate-name
-NAME: video-analytics-demo-0-1641911286
-LAST DEPLOYED: Tue Jan 11 15:28:09 2022
+NAME: video-analytics-demo-0-1683012074
+LAST DEPLOYED: Tue May  2 09:21:15 2023
 NAMESPACE: default
 STATUS: deployed
 REVISION: 1
 NOTES:
 1. Get the RTSP URL by running these commands:
-  export NODE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].nodePort}" services video-analytics-demo-0-1641911286)
+  export NODE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].nodePort}" services video-analytics-demo-0-1683012074)
   export NODE_IP=$(kubectl get nodes --namespace default -o jsonpath="{.items[0].status.addresses[0].address}")
   echo rtsp://$NODE_IP:$NODE_PORT/ds-test
 
 2.Get the WebUI URL by running these commands:
-  export ANT_NODE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].nodePort}" services video-analytics-demo-0-1641911286-webui)
+  export ANT_NODE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].nodePort}" services video-analytics-demo-0-1683012074-webui)
   export NODE_IP=$(kubectl get nodes --namespace default -o jsonpath="{.items[0].status.addresses[0].address}")
   echo http://$NODE_IP:$ANT_NODE_PORT/WebRTCApp/play.html?name=videoanalytics
   Disclaimer:
@@ -341,11 +344,9 @@ You can check if the application is running correctly:
 
 <pre class="console"><code>$ kubectl get pod -n default
 NAME                                                       READY   STATUS      RESTARTS   AGE
-cuda-vectoradd                                             0/1     Completed   0          18d
-dcgmproftester                                             0/1     Completed   0          18d
-gpu-demo                                                   1/1     Running     0          18d
-video-analytics-demo-0-1641911286-6dd579cd6-8rsl6          1/1     Running     0          2m49s
-video-analytics-demo-0-1641911286-webui-7fb477cbbf-jcz9p   1/1     Running     0          2m49s
+cuda-vectoradd                                             0/1     Completed   0          6d21h
+video-analytics-demo-0-1683012074-54cb666d7d-rq5nd         1/1     Running     0          3m36s
+video-analytics-demo-0-1683012074-webui-6679784745-rsz7r   1/1     Running     0          3m36s
 </code></pre>
 
 `video-analytics-demo-*` and `video-analytics-demo-*-webui-*` Pods are running.
@@ -353,7 +354,7 @@ video-analytics-demo-0-1641911286-webui-7fb477cbbf-jcz9p   1/1     Running     0
 The demo can be viewed in the browser by pointing to the address given in the following instructions:
 
 ```bash
-export ANT_NODE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].nodePort}" services video-analytics-demo-0-1641911286-webui)
+export ANT_NODE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].nodePort}" services video-analytics-demo-0-1683012074-webui)
 
 export NODE_IP=$(kubectl get nodes --namespace default -o jsonpath="{.items[0].status.addresses[0].address}")
 
@@ -362,7 +363,7 @@ echo Demo URL: http://$NODE_IP:$ANT_NODE_PORT/WebRTCApp/play.html\?name\=videoan
 
 Result:
 
-<pre class="console"><code>$ export ANT_NODE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].nodePort}" services video-analytics-demo-0-1641911286-webui)
+<pre class="console"><code>$ export ANT_NODE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].nodePort}" services video-analytics-demo-0-1683012074-webui)
 
 $ export NODE_IP=$(kubectl get nodes --namespace default -o jsonpath="{.items[0].status.addresses[0].address}")
 
@@ -395,27 +396,27 @@ You can close the application when you finish the tests in order to stop GPU con
 First, execute `helm list` command in every namespaces (with `-A` option) in your Kubernetes cluster to see what you've installed.
 
 <pre class="console"><code>$ helm list -A
-NAME                             	NAMESPACE   	REVISION	UPDATED                             	STATUS  	CHART                       	APP VERSION
-gpu-operator                     	gpu-operator	1       	2021-12-24 10:05:29.050692 +0100 CET	deployed	gpu-operator-v1.9.0         	v1.9.0
-kube-prometheus-stack-1641827066 	prometheus  	1       	2022-01-10 16:04:32.150408 +0100 CET	deployed	kube-prometheus-stack-30.0.0	0.53.1
-video-analytics-demo-0-1641911286	default     	1       	2022-01-11 15:28:09.463775 +0100 CET	deployed	video-analytics-demo-0.1.4  	1.2
+NAME                             	NAMESPACE    	REVISION	UPDATED                              	STATUS  	CHART                        	APP VERSION
+gpu-operator                     	gpu-operator 	1       	2023-04-25 09:59:59.619362 +0200 CEST	deployed	gpu-operator-v23.3.1         	v23.3.1
+kube-prometheus-stack-1682576024 	prometheus   	1       	2023-04-27 08:13:49.279112 +0200 CEST	deployed	kube-prometheus-stack-45.21.0	v0.63.0
+video-analytics-demo-0-1683012074	default      	1       	2023-05-02 09:21:15.816386 +0200 CEST	deployed	video-analytics-demo-0.1.4   	1.2
 </code></pre>
 
 Now, you can delete what you've installed in this tutorial, thanks to `helm uninstall` commands:
 
 ```bash
-helm uninstall kube-prometheus-stack-1641827066 -n prometheus
+helm uninstall kube-prometheus-stack-1682576024 -n prometheus
 
-helm uninstall video-analytics-demo-0-1641911286 -n default
+helm uninstall video-analytics-demo-0-1683012074 -n default
 ```
 
 You should have a behavior like this:
 
-<pre class="console"><code>$ helm uninstall kube-prometheus-stack-1641827066 -n prometheus
-release "kube-prometheus-stack-1641827066" uninstalled
+<pre class="console"><code>$ helm uninstall kube-prometheus-stack-1682576024 -n prometheus
+release "kube-prometheus-stack-1682576024" uninstalled
 
-$ helm uninstall video-analytics-demo-0-1641911286 -n default
-release "video-analytics-demo-0-1641911286" uninstalled
+$ helm uninstall video-analytics-demo-0-1683012074 -n default
+release "video-analytics-demo-0-1683012074" uninstalled
 </code></pre>
 
 ## Go further
@@ -424,4 +425,6 @@ Prometheus and Grafana are very powerful monitoring tools, but also have alertin
 
 To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation](../).
 
-Join our [community of users](https://community.ovh.com/en/).
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our [community of users](https://community.ovh.com/en/).

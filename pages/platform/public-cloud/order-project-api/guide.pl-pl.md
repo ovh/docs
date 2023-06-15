@@ -7,11 +7,11 @@ order: 9
 updated: 2020-12-09
 ---
 
-**Ostatnia aktualizacja z dnia 22/12/2020**
-
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
+
+**Ostatnia aktualizacja z dnia 22/12/2020**
 
 ## Wprowadzenie
 
@@ -23,7 +23,7 @@ Utworzenie projektu jest pierwszym etapem wdrażania [instancji Public Cloud](ht
 
 - Posiadanie ważnych identyfikatorów OVHcloud
 - Posiadanie ważnego [sposobu płatności](https://docs.ovh.com/pl/billing/zarzadzanie-sposobami-platnosci/) zarejestrowanego na Twoim koncie OVHcloud
-- Poznaj [działanie APIv6 OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/).
+- Poznaj [działanie APIv6 OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/)
 
 ## W praktyce
 

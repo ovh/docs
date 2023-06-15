@@ -8,7 +8,7 @@ updated: 2022-03-22
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
 **Letzte Aktualisierung am 22.03.2022**
@@ -224,7 +224,7 @@ Um Ihr [Hosted Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) zu
 
 #### Private Exchange <a name="private"></a>
 
-Um Ihr [Private Exchange](https://www.ovhcloud.com/de/emails/private-exchange/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange-abrechnung-verwalten/#accounts-entfernen_1).
+Um Ihr [Private Exchange](https://www.ovhcloud.com/de/emails/private-exchange/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange-abrechnung-verwalten/#accounts-entfernen).
 
 #### Office 365 CSP1 <a name="office-csp1"></a>
 

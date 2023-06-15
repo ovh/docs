@@ -22,7 +22,7 @@ Ce guide a pour objectif de vous montrer la gestion de vos identités et accès 
 
 Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `Object Storage`{.action} dans le menu de gauche.
 
-### Création d'un utilsateur
+### Création d'un utilisateur
 
 Cliquez sur `Créer un utilisateur`{.action}.
 
@@ -169,5 +169,7 @@ Quelques exemples de fichiers de configuration JSON :
 | s3:PutObject | Object |
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.

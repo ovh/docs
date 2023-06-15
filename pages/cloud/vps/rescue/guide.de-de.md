@@ -7,7 +7,7 @@ updated: 2022-05-02
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
 **Letzte Aktualisierung am 02.05.2022**
@@ -119,7 +119,7 @@ Sobald Ihre Maßnahmen im Rescue-Modus abgeschlossen sind, starten Sie den VPS �
 
 ## Weiterführende Informationen
 
-[Root-Passwort auf einem VPS ändern](https://docs.ovh.com/de/root-password/)
+[Root-Passwort auf einem VPS ändern](https://docs.ovh.com/de/vps/root-password/)
 
 [SSH Einführung](https://docs.ovh.com/de/dedicated/ssh-einfuehrung/)
 

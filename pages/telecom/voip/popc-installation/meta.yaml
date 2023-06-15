@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: a2b16a3c-888d-4a47-ab80-35328aea134f
 full_slug: voip-popc-setting-up

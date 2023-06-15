@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: 335b4858-fe5c-4e4c-aa69-e269dd63987d
 full_slug: voip-softphone-sip-register-zoiper

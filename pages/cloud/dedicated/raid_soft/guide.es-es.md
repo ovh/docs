@@ -192,11 +192,11 @@ umount /dev/md4
 > [!warning]
 > Tenga en cuenta que, si está conectado como usuario `root`, puede obtener el siguiente mensaje cuando intente desmontar la partición (en nuestro caso, la partición md4 está montada en /home):
 > 
-> `umount: /home: target is busy`
+> <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">umount: /home: target is busy</span> </pre></div>
 >
 > En ese caso, deberá desconectarse como usuario root y conectarse como usuario local (en nuestro caso, `debian`) y utilizar el siguiente comando:
 > 
-> `debian@ns000000:/$ sudo umount /dev/md4`
+> <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">debian@ns000000:/$ sudo umount /dev/md4</span> </pre></div>
 >
 > Si no tiene un usuario local, debe crear uno.
 

@@ -4,9 +4,10 @@ excerpt: Este guia irá ajudá-lo na ativação do PHP-FPM no seu alojamento web
 slug: ativar_a_otimizacao_do_php_no_seu_alojamento_partilhado_ovh
 section: PHP
 order: 03
-updated: 2022-10-05
+updated: 2020-05-05
 ---
 
+**Última atualização: 05/05/2020**
 
 ## O que é o PHP-FPM?
 Nós adaptámos PHP-FPM à nossa infraestrutura Web de forma a podermos tirar beneficio da mesma com o objetivo de acelerar as respostas PHP.
@@ -16,7 +17,7 @@ Está compilado com o opcode-caching que permite minimizar os pedidos ao sistema
 Obtemos desta forma performances que se revelaram nos laboratórios de testes, 7 vezes mais rápidas quanto comparadas ao anterior mecanismo.
 
 ## No seu Espaço cliente
-Encontrará neste guia a explicação sobre como ativar o PHP FPM e como definir a versão de PHP graças ao ficheiro .ovhconfig, embora possa, de forma simples, realizá-lo no seu espaço cliente com a ajuda do seguinte guia: []({legacy}1999)
+Encontrará neste guia a explicação sobre como ativar o PHP FPM e como definir a versão de PHP graças ao ficheiro .ovhconfig, embora possa, de forma simples, realizá-lo no seu espaço cliente com a ajuda do [seguinte guia](https://docs.ovh.com/pt/hosting/configurar_o_php_num_alojamento_web_alojamentos_2014_ovh/).
 
 Atenção: a partir de PHP-FPM, e por razões de segurança, as seguintes opções são desativadas (depreciadas pelo PHP):
 

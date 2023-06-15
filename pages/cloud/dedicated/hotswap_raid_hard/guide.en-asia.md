@@ -6,6 +6,7 @@ section: RAID and disks
 updated: 2022-11-16
 ---
 
+**Last updated 16th November 2022**
 
 ## Requirements
 Hot swapping is only possible on the server ranges mHG, HG, and bHG.
@@ -80,12 +81,12 @@ To test a disk / identify its serial number, you must perform the smartctl comma
 <span class="output">Serial Number:    BTWH509602CV800CGN</span> </pre></div>
 The number **6** in this command corresponds to the Device ID of the disk (*Device ID* under MegaCLI, and *DID* under storCLI).
 
-This information is found in the disc listing, performed in the previous step.
+This information is found in the disk listing, performed in the previous step.
 
 We now know the Enclosure ID, the Slot ID, and the Serial Number of the drive to be replaced.
 
 
-### Step 2&#58; Turn on a disc
+### Step 2&#58; Turn on a disk
 To allow the technician to replace your drive with heater, the HS drive must be switched on (flashing).
 
 In our example, we have Enclosure ID **252**, Slot ID **0**, and Serial Number **BTWH509602CV800CGN** to be replaced.
@@ -106,9 +107,9 @@ The command to flash the disk is as follows: MegaCli -PdLocate -start -physdrv [
 <span class="output">Status = Success</span>
 <span class="output">Description = Start Drive Locate Succeeded.</span> </pre></div>
 
-To turn the disc off after the operation, simply replace the "start" with "stop" in the above commands.
+To turn the disk off after the operation, simply replace the "start" with "stop" in the above commands.
 
-At this point, the procedure is ready to be performed. You can then provide the previously collected information to the support team and indicate that the disc is turned on.
+At this point, the procedure is ready to be performed. You can then provide the previously collected information to the support team and indicate that the disk is turned on.
 
 
 ### Step 3&#58; Check the rebuilding
@@ -208,7 +209,7 @@ We go to the Logical tab, and we get to this.
 
 On this screen, a lot of information is present.
 
-We see, on the left, the logical view of our RAID. Here we have a RAID 10 (id0) in optimal state. It consists of two clusters of 2 discs.
+We see, on the left, the logical view of our RAID. Here we have a RAID 10 (id0) in optimal state. It consists of two clusters of 2 disks.
 
 We can see that our **Slot Number 1** drive is in the 1st cluster. On the right side of the screen, we retrieve the information we need (**Enclosure / Slot / Serial**).
 
@@ -217,8 +218,8 @@ So our disk has for **Enclosure ID 252**, **Slot Number 1**, and **Serial Number
 From now on, we will be able to light (physically flash) the disk to be replaced for replacement by a Datacenter technician.
 
 
-### Step 3 &#58; Turn on a disc
-With the MegaRAID Storage Manager it will be very easy to turn on the LED of the dicus to be replaced.
+### Step 3 &#58; Turn on a disk
+With the MegaRAID Storage Manager it will be very easy to turn on the LED of the disk to be replaced.
 
 
 
@@ -275,7 +276,7 @@ Finally, it is preferable to repeat the operation of the stop locate seen previo
 ## In VmWare ESXi
 In this guide, we assume you have received an alert for the failed **Slot Number 1**, **Serial Number BTWA547608CE800HGN** and you want to replace it hot.
 
-For this we will need the **Enclosure ID**, the **Slot Number**, and **Serial Number** of the disc to be replaced to communicate them to the Datacentre.
+For this we will need the **Enclosure ID**, the **Slot Number**, and **Serial Number** of the disk to be replaced to communicate them to the Datacentre.
 
 
 
@@ -323,7 +324,7 @@ At first, we will list the disks present on the server while being able to recov
 We have therefore recovered the ID of our HS **Slot Number 1** which is **Device ID 7**, and its **Enclosure ID 252**.
 
 
-### Step 3 &#58; Turn on a disc
+### Step 3 &#58; Turn on a disk
 To perform the replacement operation, the HS drive must be switched on (flashing).
 
 
@@ -333,7 +334,7 @@ To perform the replacement operation, the HS drive must be switched on (flashing
 > Before turning on the LED of the disk that interests us here, we will first go through each disk to turn off the LEDs (in case a LED is always on after a previous intervention).
 > 
 
-In this case, we have 4 discs that have as **Enclosure ID** 252, and as **Slot Number** 1, 2, 3, and 4.
+In this case, we have 4 disks that have as **Enclosure ID** 252, and as **Slot Number** 1, 2, 3, and 4.
 
 We will use the following command: ./MegaCli -PdLocate -stop -physdrv [EncID: SlotID] -a0
 
@@ -366,7 +367,7 @@ To do this, we use the following command: ./MegaCli -PdLocate -start -physdrv[En
 <span class="output">Adapter: 0: Device at EnclId-252 SlotId-1  -- PD Locate Start Command was successfully sent to Firmware</span>
 <span class="blank">&nbsp;</span>
 <span class="output">Exit Code: 0x00</span> </pre></div>
-At this point, the procedure is ready to be performed. You can then provide the information previously gathered (**Enclosure ID, Slot Number or Slot ID, Serial Number**), and indicate that the disc is turned on.
+At this point, the procedure is ready to be performed. You can then provide the information previously gathered (**Enclosure ID, Slot Number or Slot ID, Serial Number**), and indicate that the disk is turned on.
 
 
 ### Step 4 &#58; Check the rebuilding

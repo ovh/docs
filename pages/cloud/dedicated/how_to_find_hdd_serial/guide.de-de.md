@@ -73,7 +73,7 @@ Das Gerät wird über das Betriebssystem erkannt und wie folgt angezeigt: `/dev/
 
 ### Seriennummer einer Festplatte ermitteln (Hardware-RAID)
 
-Für eine detaillierte Übersicht der Befehle sowie die Vorgehensweise beim Testen Ihrer Festplatten lesen Sie folgende [Anleitung (LSI Raid Controller)](https://docs.ovh.com/gb/en/dedicated/raid-hard/#using-the-lsi-raid-controller_1){.external} (Englisch).
+Für eine detaillierte Übersicht der Befehle sowie die Vorgehensweise beim Testen Ihrer Festplatten lesen Sie folgende [Anleitung (LSI Raid Controller)](https://docs.ovh.com/gb/en/dedicated/raid-hard/#using-the-lsi-raid-controller){.external} (Englisch).
 
 
 #### MegaRaid-Controller

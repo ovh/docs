@@ -128,7 +128,7 @@ En la pestaña `Información general`{.action}, copie la dirección IPV4 y/o IPV
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-A continuación, cópiela en la [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#editar-la-zona-dns-de-ovhcloud-de-su-dominio_1) de su dominio modificando o creando uno o más registros de tipo `A`.
+A continuación, cópiela en la [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#editar-la-zona-dns-de-ovhcloud-de-su-dominio) de su dominio modificando o creando uno o más registros de tipo `A`.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 
@@ -142,7 +142,7 @@ Su sitio web estará disponible en un plazo máximo de 24 horas.
 
 [Resolver los errores más frecuentes asociados a los módulos en 1 clic](../errores-frecuentes-modulos-en-1-clic/)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es/support-levels/).
 

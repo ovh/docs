@@ -1,15 +1,15 @@
 ---
-title: Tableaux comparatifs entre AI Notebooks, AI Training, AI Deploy (EN)
+title: Tableaux comparatifs - AI Notebooks, AI Training, AI Deploy (EN)
 slug: ai-comparative-tables
 excerpt: "Découvrir les principales différences entre chaque AI Tools d'OVHcloud"
 section: Informations générales
 order: 100
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/ai-comparative-tables/'
-updated: 2022-09-01
+updated: 2023-05-12
 ---
 
-**Last updated 1st September, 2022.**
+**Last updated 12th May, 2023.**
 
 ## Objective
 
@@ -96,3 +96,5 @@ We schematize our AI offers this way:
 ## Feedback
 
 Please feel free to send us your questions, feedback and suggestions to help our team improve the service on the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.

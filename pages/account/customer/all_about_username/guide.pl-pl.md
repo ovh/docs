@@ -9,7 +9,7 @@ updated: 2021-07-01
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 01-07-2021**
@@ -55,7 +55,7 @@ Wszystkie nasze zalecenia dotyczące haseł znajdują się w przewodniku [Zmiana
 Jeśli jeszcze tego nie zrobiłeś, zapisz hasło w [menedżerze haseł](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/#uzycie-managera-hasel).
 
 > [!primary]
-> Oprogramowanie **Keepass** i **Bitwarden** to darmowe i wolne od praw menedżery haseł.
+> Oprogramowanie **KeePass** i **Bitwarden** to darmowe i wolne od praw menedżery haseł.
 >
 
 #### Dodaj adres zapasowy <a name="backup-email"></a>

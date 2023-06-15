@@ -4,134 +4,172 @@ slug: web_hosting_web_hosting_modules
 excerpt: 'Find out how to set up your website using our 1-click modules'
 section: CMS
 order: 01
-updated: 2023-01-31
+updated: 2023-03-28
 ---
 
-**Last updated 31st January 2023**
+**Last updated 28th March 2023**
 
 ## Objective
 
-1-click modules are designed to help you set up a website quickly and easily, without needing any technical knowledge. You can choose from the most popular CMSs: WordPress, PrestaShop, Drupal and Joomla!.
+OVHcloud 1-click modules allow quick and easy website setups (without technical skills required). A 1-click module refers to an automated installation of a **C**ontent **M**anagement **S**system **(CMS)**. In this way, OVHcloud offers a simplified installation process for some of the most popular CMSs: *WordPress*, *Joomla!*, *Drupal*, and *PrestaShop*.
 
-**Find out how to set up your website using our 1-click modules.**
+**This guide explains how to how to set up your website using an OVHcloud 1-click module.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lZYRKYuh2xE?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Requirements
 
-- You have an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) in your customer account.
+- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) that contains at least one database in your customer account.
 - You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
 - Your web hosting uses a [compatible PHP version](https://docs.ovh.com/au/en/hosting/how_to_configure_php_on_your_ovh_web_hosting_package_2014/).
 - You have [correctly configured your .ovhconfig file](https://docs.ovh.com/au/en/hosting/configuring-file-ovhconfig/).
-- The directory where your module will be installed must be empty or currently non-existent.
-- The website’s domain name (with a subdomain, if applicable) is declared as a multisite.
+- The directory (root folder) where your 1-click module will be installed must be empty or currently nonexistent.
+- The domain name (with subdomain if desired) that will be used for your website must be declared as a [Multisite](https://docs.ovh.com/au/en/hosting/multisites-configuring-multiple-websites/) on your OVHcloud web hosting plan.
 
 ## Instructions
 
-### Step 1: Choose the right CMS
+### Step 1: Decide on a CMS to use
 
-You can use a CMS (Content Management System) to build your website via an easy-to-use interface. There are several types, each designed to suit certain projects. By using a CMS, you will get a ready-to-use website template that you can customise with a variety of themes, texts, and much more.
+With a CMS, you can build a website via an easy-to-use interface. Several types of CMS exist, some are designed to create an e-commerce website, others to set up a showcase website, a blog, etc. You can then configure a ready-to-use, customisable website structure (themes, extensions, text, etc.) to suit your needs.
 
-OVHcloud offers a selection of 4 CMSs as 1-click modules. By using this solution, you will need to choose from this list. If you have already chosen a CMS from the list, you can start following the steps in this tutorial. If have not yet chosen which CMS to use, this [CMS comparison page](https://www.ovhcloud.com/en-au/web-hosting/uc-cms-comparison/) can help you decide which one would best suit your project.
+Of all CMSs, OVHcloud offers 4 with its 1-click modules, which can be installed automatically. 
 
-If you would like to install a CMS that isn’t offered as an OVHcloud 1-click module, you can install it manually on your web hosting plan, provided that the CMS is compatible with your plan (see our web hosting plans [here](https://www.ovhcloud.com/en-au/web-hosting/).
+Using this solution, you will need to choose from the 4 CMSs listed above. If you have already made your choice, continue reading the steps in this guide. Otherwise, please refer to our [CMS comparison](https://www.ovhcloud.com/en-au/web-hosting/uc-cms-comparison/) to make your choice.
+
+If you would like to install a CMS that is not available with our 1-click modules, you can install it manually on your web hosting plan. This is provided that the CMS is compatible with our [OVHcloud web hosting offers](https://www.ovhcloud.com/en-au/web-hosting/).
 
 ![CMS logos](images/CMS_logo.png){.thumbnail}
 
 ### Step 2: Access the 1-click module manager
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the relevant web hosting plan. Then click the `1-click modules`{.action} tab.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the web hosting plan you would like to install a 1-click module on. Then click the `1-click modules`{.action} tab.
 
-Here, you can look at the 1-click modules you have already installed, manage them and install new ones.
+You will find any 1-click modules already installed. You can manage your 1-click modules and install new ones.
 
 ![Access to the 1-click modules section](images/access_to_the_1_click_modules_section.png){.thumbnail}
 
-### Step 3: Add a module
+### Step 3: Add a 1-click module
 
-You can launch the installation of a 1-click module by clicking `Add a module`{.action}.
+In the `1-click modules`{.action} tab of your hosting, click on the `Add a module`{.action} button.
 
-In the window that opens, select the CMS you would like to use, and the domain you would like to set up your website on:
+In the window that pops up, choose the CMS you want to use, then select the domain name you want to set up your website with:
 
 ![Choose a module](images/add_a_module.png){.thumbnail}
 
-If the domain you want to use does not appear in the list, go to the `Multi-site`{.action} tab to add it, then try adding a module again.
+If your domain is not in the list, go to the `Multisite`{.action} tab to add it. See our guide [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/au/en/hosting/multisites-configuring-multiple-websites/){.external} if required.
 
-You can also refer to the guide [Hosting multiple websites on your web hosting plan](https://docs.ovh.com/au/en/hosting/multisites-configuring-multiple-websites/).
+Once your domain has been correctly added, try adding a 1-click module again.
 
-Once you have selected your domain, you must choose between basic or advanced installation:
+Once you have selected a CMS, choose between a **fast** or **advanced** installation:
 
-- **For basic installation (selected by default):** we will install your CMS, and send you the admin credentials. This is the simplest, quickest way to install a module.
-- **For advanced installation:** you can customise the configuration applied to your CMS installation. For this, you will need to enter information that is essential for your CMS to work properly on your database: login details, installation directory, language, admin credentials, etc.
+- **Quick** installation (selected by default): OVHcloud installs the CMS, and provides you with your admin credentials via email on the OVHcloud contact email address. This is the easiest and fastest way to install a 1-click module.
+- **Advanced** installation: It allows you to customise the configuration for the CMS installation. You will need to enter all of the information required for the CMS to work properly: 
+    - Login information for your database (server, username, port, password, etc.)
+    - Installation path in your web hosting plan’s FTP storage space
+    - CMS language
+    - Administrator credentials (administrator name, password, email address, etc.)
 
-#### Basic module installation
+#### Quick installation of a 1-click module
 
-To carry out this installation, check that the `Installation in advanced mode`{.action} box is not ticked, then click `Install`{.action}.
+Choose the domain name for your CMS, verify the target directory that will appear automatically after you have chosen your domain name, then check that the `Installation in advanced mode`{.action} box has not been ticked. Then click the `Install`{.action} button.
 
 > [!warning]
 >
-> Your module’s installation directory must be empty, and you must have a database available for the installation to be successful.
-> 
+> The installation directory for your 1-click module must be empty, and you must have at least one database available to create on your OVHcloud web hosting plan for the installation to be carried out.
+>
+> For a quick installation, do not create the database beforehand because the installation robot will take care of it.
+>
 
 ![Basic module installation](images/choose_installation.png){.thumbnail}
 
-Once the installation is complete, you will receive an email containing the information you need to log in to the CMS admin interface. Then log in to the interface to customise your website.
+Once the installation is complete, you will receive an email containing the login details for your CMS administrator interface (back office). Log in to the interface to customise your website.
 
-#### Advanced module installation
+#### Advanced installation of a 1-click module
 
-To complete this installation, check that the `Installation in advanced mode`{.action} box is ticked, then click `Next`{.action}.
+To perform this installation method, ensure that the `Installation in advanced mode`{.action} box is ticked, then click `Next`{.action}:
 
 ![Advanced module installation](images/advanced_installation.png){.thumbnail}
 
 ##### Choose a database
 
-You must now enter the information required to connect to your database. There are several options:
+Enter the information required to connect to your database.
 
-- **If you have already created a database on your web hosting plan:** select it from the list, and enter the information requested.
-- **If you have not yet created a database on your web hosting plan:** follow the instructions for creating one, then try again.
-- **If you have created a database on another OVHcloud web hosting plan:** select it from the `Databases outside of your web hosting plan`{.action} list, and enter the information requested. The database and web hosting plan must be hosted in the same datacentre.
+![Database for advanced installation](images/advanced_installation_database.png){.thumbnail}
+
+There are several possibilities:
+
+- The database has already been created on your web hosting plan: Select it from the `Select the database`{.action} dropdown menu, then enter the information requested.
+- The database has not yet been created on your web hosting plan: [Create your database included with your web hosting plan](https://docs.ovh.com/au/en/hosting/creating-database/), go back to the `Select the database`{.action} drop-down menu and enter the information requested.
+- The database is [created on your Web Cloud Databases instance](https://docs.ovh.com/au/en/clouddb/create-databases-and-users/): In the `Select the database`{.action} dropdown menu, select `Database aside from your web hosting`{.action} and enter the requested information. The instance and web hosting plan must be hosted in the same data centre.
+- The database is created on another OVHcloud web hosting plan: In the `Select the database`{.action} drop-down menu, select `Database aside from your web hosting`{.action} and enter the requested information. The database and web hosting plan must be hosted in the same data centre.
+
+The remaining information requested for the database is as follows:
+
+- *Server address*: Enter the name of your database server, included in the installation email and displayed in your OVHcloud Control Panel. 
+
+> [!primary]
+> 
+> - The server name of a database included with your web hosting plan usually has this form: `NameOfYourDatabase.mysql.db`. 
+>
+> - The server name of a Cloud Web Databases database starts with your OVHcloud NIC handle and is in the following form: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` where the **"X"** are to be replaced by the reference of your Cloud Databases web service.
+>
+
+- *Database name*: this name was defined when the database was created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+
+- *Port*: Use the number **3306** (the default port) for a database included with your web hosting plan. For a database on a Cloud Web Databases instance, see [this guide](https://docs.ovh.com/au/en/clouddb/getting-started-with-clouddb/).
+
+- *User name*: It is identical to the database name if you are using a database included with your web hosting plan. For databases created on a Web Cloud Databases solution, please refer to the information in [this guide](https://docs.ovh.com/au/en/clouddb/getting-started-with-clouddb/).
+
+- *Password*: It was sent to you by email when the database was created. You may have modified it in the meantime.
 
 Once you have entered this information, click `Next`{.action}.
 
 > [!warning]
 >
-> If the information you enter is incorrect, the installation process will not complete successfully. To avoid this issue, we recommend that you test the connection to your database.
+> If the information you enter is incorrect, the installation will not complete successfully. To avoid this, we recommend that you test the connection to your database.
 > 
-
-![Database for advanced installation](images/advanced_installation_database.png){.thumbnail}
+> To retrieve the login details for your database included in your Web Hosting plan, please refer to [this guide](https://docs.ovh.com/au/en/hosting/creating-database/).
+>
+> To retrieve the login details for a database created on a Cloud Databases Web instance, please refer to [this guide](https://docs.ovh.com/au/en/clouddb/getting-started-with-clouddb/).
+>
 
 ##### Configure the module
 
-Now, you will need to enter the following information to configure the module:
+Enter the following information for the module configuration:
 
-- **Admin name or email address:** the username you will use to log in to your CMS admin interface.
-- **Password:** the password you will use to log in to your CMS admin interface.
-- **Domain:** the domain you wish to install your website on.
-You can also refer to the guide [Hosting multiple websites on your web hosting plan](https://docs.ovh.com/au/en/hosting/multisites-configuring-multiple-websites/).
-- **Language:** the language that the CMS will be installed in.
-- **Installation path:** this is automatically entered when you select your domain. You can also add subdirectories to it.
+- *Admin name or email address:* The username you will use to log in to your CMS administration interface (back office).
+- *Password:* The password you use to log in to your CMS admin interface.
+- *Domain:* The domain name you would like to install your CMS with. If you need help with this, please refer to our guide on [How to host multiple websites on your Web Hosting plan](https://docs.ovh.com/au/en/hosting/multisites-configuring-multiple-websites/).
+- *Language:* The language in which the CMS will be installed.
+- *Installation path:* This is automatically entered when you select your domain name. You can complete it by entering subdirectories (for informed users).
 
 Once you have entered this information, click `Next`{.action}:
 
 > [!warning]
 >
-> The installation path entered must not contain any content, for the installation process to complete successfully.
-> 
+> The final folder specified in the installation path must be completely empty for the installation to succeed.
+>
 
 ![Module configuration for advanced installation](images/advanced_installation_configuration.png){.thumbnail}
 
 ##### Confirm the installation
 
-For the final step of advanced configuration, please check that the information you have displayed is correct, then click `Confirm`{.action}:
+Check the information displayed, then click on `Confirm`{.action} if everything is in order:
 
 ![Validating installation in advanced mode](images/advanced_installation_summary.png){.thumbnail}
 
 ### Step 4: Customise your website
 
-You will receive an email confirming that your CMS module has been successfully installed, and you will be prompted to log in to your admin interface. You can then edit your website’s theme, and publish your first pieces of content on it.
+The installation can take up to ten minutes.
 
-If you need help with your website’s features, we would recommend that you go to the CMS publisher’s official website, which will contain documentation to help you with your project.
+Once it has finished, you will receive an email confirming that your CMS has been set up correctly. This email will prompt you to log in to your CMS admin interface. This way, you can edit your website’s appearance, and publish your first pieces of content on it.
 
-Below, we've included some links from these CMS publishers, to help you get started.
+> [!warning]
+>
+> OVHcloud support does not provide assistance for using any CMS. The 1-click installation process is a free, noncontractual service to help install them. 
+>
+
+If you need help with your CMS's features, please contact the publisher of the CMS you have installed. You will find documentation to support you in your project.
 
 |CMS|Official documentation|
 |---|---|
@@ -146,9 +184,13 @@ Below, we've included some links from these CMS publishers, to help you get star
 
 [Hosting multiple websites on your web hosting plan](https://docs.ovh.com/au/en/hosting/multisites-configuring-multiple-websites/)
 
-[Manage your CMS](https://docs.ovh.com/au/en/hosting/1-click-module-management/)
+[Managing a database on a web hosting plan](https://docs.ovh.com/au/en/hosting/creating-database/){.external}
 
-[Uninstall your CMS](https://docs.ovh.com/au/en/hosting/1-click-module-management/#step-3-delete-your-module)
+Explore our [Web Cloud Database solutions](https://www.ovhcloud.com/en-au/web-cloud/databases/){.external}
+
+[Managing your CMS](https://docs.ovh.com/au/en/hosting/1-click-module-management/)
+
+[Uninstalling your CMS](https://docs.ovh.com/au/en/hosting/1-click-module-management/#step-3-delete-your-module)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
 

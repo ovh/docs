@@ -3,10 +3,10 @@ title: 'Installer Veeam Backup & Replication'
 slug: veeam/veeam-backup-replication
 excerpt: 'Découvrez comment installer un serveur Veeam Backup & Replication avec Veeam Enterprise'
 section: 'Veeam'
-updated: 2022-03-07
+updated: 2023-04-28
 ---
 
-**Dernière mise à jour le 07/03/2022**
+**Dernière mise à jour le 28/04/2023**
 
 ## Objectif
 
@@ -22,6 +22,11 @@ Veeam Backup & Replication est un logiciel de protection des données. Il offre 
 ## En pratique
 
 ### Installer Veeam Backup & Replication
+
+> [!primary]
+> La dernière version en date de Veeam Backup & Replication (version 12) n'est pas encore supportée par OVHcloud mais le sera [prochainement](https://github.com/ovh/private-cloud-provider/projects/4).
+> Nous vous invitons à télécharger la version 11.0.1.1261 (P20230227). Retrouvez les versions précédentes de Veeam sur [cette page](https://www.veeam.com/fr/download-version.html?ad=downloads&tab=previous).
+>
 
 Téléchargez la solution **Veeam Backup & Replication** depuis le site de [Veeam](https://www.veeam.com/downloads.html?ad=top-sub-menu){.external}. Si vous n'avez pas de compte, il sera nécessaire d'en créer un (celui-ci est gratuit).
 

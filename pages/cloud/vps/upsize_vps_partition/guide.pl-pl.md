@@ -6,7 +6,7 @@ updated: 2021-05-18
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 18-05-2021**
@@ -25,7 +25,7 @@ Podczas zmiany oferty serwera VPS może okazać się konieczna zmiana rozmiaru p
 ## Wymagania początkowe
 
 - Dostęp administratora do serwera VPS (Windows)
-- Ponowne uruchomienie serwera w [Trybie Rescue](https://docs.ovh.com/pl/vps/rescue/)(Linux)
+- Ponowne uruchomienie serwera w [Trybie Rescue](https://docs.ovh.com/pl/vps/rescue/) (Linux)
 
 ## W praktyce
 

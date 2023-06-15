@@ -6,14 +6,14 @@ section: M3 Aggregator - Guides
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/m3aggregator/capabilities/'
-updated: 2023-01-19
+updated: 2023-04-24
 ---
 
-**Last updated January 19th, 2023**
+**Last updated April 24th, 2023**
 
 ## Objective
 
-This page provides the technical capabilities and limitations of the Public Cloud Databases' M3 aggregator offer.
+This page provides the technical capabilities and limitations of the Public Cloud Databases' M3 Aggregator offer.
 
 We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
 
@@ -34,11 +34,13 @@ The entire database instances must be in the same region. Multi-AZ is currently 
 
 ### M3 Aggregator versions
 
-The Public Cloud Databases offer supports the following M3 aggregator versions:
+The Public Cloud Databases offer supports the following M3 Aggregator versions:
 
-- m3 aggregator 1.1
-- m3 aggregator 1.2
+- M3 Aggregator 1.1
+- M3 Aggregator 1.2
+- M3 Aggregator 1.5
 
+Please refer to the [DBMS lifecycle policy guide](/pages/platform/databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions.
 
 ### Plans
 
@@ -56,10 +58,13 @@ Here is an overview of the various plans' capabilities:
 
 Your choice of plan affects the number of nodes your cluster can run.
 
+> [!primary]
+> Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
+
 #### Nodes and replicas
 
-- **Business**: The cluster is delivered with 3 nodes by default.
-- **Enterprise**: The cluster is delivered with 6 nodes by default.
+- **Business**: the cluster is delivered with 3 nodes by default.
+- **Enterprise**: the cluster is delivered with 6 nodes by default.
 
 #### License type
 
@@ -73,23 +78,23 @@ Here are the node types you can choose from:
 
 **Business plans**
 
-| Name    | Disk (GB) | Cores | Memory (GB) |
-| ------- | --------- | ----- | ----------- |
-| db1-7   | N/A       | 2     | 7           |
-| db1-15  | N/A       | 4     | 15          |
-| db1-30  | N/A       | 8     | 30          |
-| db1-60  | N/A       | 16    | 60          |
-| db1-120 | N/A       | 32    | 120         |
+| Name    | Storage | vCore | Memory (GB) |
+| ------- | ------- | ----- | ----------- |
+| db1-7   | N/A     | 2     | 7           |
+| db1-15  | N/A     | 4     | 15          |
+| db1-30  | N/A     | 8     | 30          |
+| db1-60  | N/A     | 16    | 60          |
+| db1-120 | N/A     | 32    | 120         |
 
 
 **Enterprise plans**
 
-| Name    | Disk (GB) | Cores | Memory (GB) |
-| ------- | --------- | ----- | ----------- |
-| db1-15  | N/A       | 4     | 15          |
-| db1-30  | N/A       | 8     | 30          |
-| db1-60  | N/A       | 16    | 60          |
-| db1-120 | N/A       | 32    | 120         |
+| Name    | Storage | vCore | Memory (GB) |
+| ------- | ------- | ----- | ----------- |
+| db1-15  | N/A     | 4     | 15          |
+| db1-30  | N/A     | 8     | 30          |
+| db1-60  | N/A     | 16    | 60          |
+| db1-120 | N/A     | 32    | 120         |
 
 Right now, all nodes in a given cluster must be of the same type and located in the same region.
 
@@ -104,12 +109,15 @@ Ingress and Egress traffic are included in the service plans and unmetered.
 Here are some considerations to take into account when using private network:
 
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
-- When connecting from outside subnet, Openstack IP gateway must be enabled in the subnet use for the Database service. The customer is responsible for any other custom network setup.
+- When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
+
+##### Authorised IPs
+
+Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic. Until then, your service will be unreachable.
 
 #### Logs and metrics
 
-Logs and metrics are available via the OVHcloud Public Cloud Control Panel.
-As of today, you can't export logs and metrics, nor plug them into a remote tool.
+Logs and metrics are available through the Control Panel and the API. Additionally, cross service integration can be configured to leverage your logs and metrics in other Public Cloud Database services. You could then view your M3 Aggregator logs in Opensearch. See the [Cross Service Integration documentation](/pages/platform/databases/databases_07_cross_service_integration) for more information.
 
 - **Logs retention**: 1000 lines of logs
 - **Metrics retention**: 1 calendar month
@@ -120,5 +128,7 @@ Please note that if the database instance is deleted, logs and metrics are also 
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

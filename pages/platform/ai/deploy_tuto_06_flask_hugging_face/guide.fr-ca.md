@@ -6,14 +6,12 @@ section: AI Deploy - Tutoriels
 order: 06
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-flask-hugging-face-sentiment-analysis/'
-updated: 2023-02-24
+updated: 2023-04-04
 ---
 
-**Last updated 24th February, 2023.**
+**Last updated 4th April, 2023.**
 
 > [!primary]
->
-> AI Deploy is in `beta`. During the beta-testing phase, the infrastructure’s availability and data longevity are not guaranteed. Please do not use this service for applications that are in production, as this phase is not complete.
 >
 > AI Deploy is covered by **[OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf)**.
 >
@@ -252,8 +250,11 @@ ovhai app run --default-http-port 5000 --cpu 4 <shared-registry-address>/sentime
 - You can also imagine deploying an Object Detection model with **Flask** in this [tutorial](https://docs.ovh.com/ca/fr/publiccloud/ai/deploy/web-service-yolov5/).
 - Discover an other tool to deploy easily AI models: **Gradio**. Refer to this [documentation](https://docs.ovh.com/ca/fr/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/).
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
+

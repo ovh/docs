@@ -8,7 +8,7 @@ updated: 2022-01-04
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 04/01/2022**
@@ -52,7 +52,7 @@ root@server:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwri
 >
 > È necessario adattare l'argomento --numjobs al numero di CPU della tua istanza.
 >
-> Per visualizzare la lista completa degli argomenti e la loro funzione, consulta il [manuale fio](https://github.com/axboe/fio/blob/master/HOWTO).
+> Per visualizzare la lista completa degli argomenti e la loro funzione, consulta il [manuale fio](https://github.com/axboe/fio/blob/master/HOWTO.rst).
 >
 
 Per testare le performance di un disco aggiuntivo, è necessario cambiare la directory del tuo ambiente di lavoro.

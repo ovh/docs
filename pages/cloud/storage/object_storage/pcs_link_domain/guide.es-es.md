@@ -20,7 +20,7 @@ Esta guía explica cómo configurar un dominio en sus contenedores para facilita
 
 Para seguir todos los pasos de esta guía, es necesario:
 
-- [Añadir espacios de almacenamiento](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/) (EN)
+- [Añadir espacios de almacenamiento](https://docs.ovh.com/es/storage/object-storage/pcs/create-container/) (EN)
 - Tener un dominio registrado
 
 ## La teoría
@@ -143,6 +143,9 @@ El nombre del contenedor no permite los siguientes caracteres:
 Además, es necesario sustituir «auth-ProjectID» por «auth_ProjectID».
 
 
-## 
- 
+## Más información
+
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
 

@@ -67,7 +67,7 @@ The interface offers two modes to configure the frequency of your task. Use the 
 |Enter numeric values as you would in a *crontab*. The asterisk operator denotes "every value" of the time period, meaning the task would continuously run **once an hour every day** in this example.|
 |![cron frequency](images/cron-jobs-4.png){.thumbnail}|
 
-You can switch between the two modes during configuration to view the changes accordingly. Please also note the [limitations when scheduling a task on a Web Hosting](./#limitations-of-web-hosting-tasks_1).
+You can switch between the two modes during configuration to view the changes accordingly. Please also note the [limitations when scheduling a task on a Web Hosting](./#limitations-of-web-hosting-tasks).
 
 ![cron control panel](images/cron-jobs-5.gif){.thumbnail}
 

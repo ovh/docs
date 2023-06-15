@@ -2,13 +2,13 @@
 title: Konfiguracja firewalla w systemie Linux z systemem iptables
 excerpt: Dowiedz się, jak zabezpieczyć serwer korzystając z iptables
 slug: firewall-iptables
-section: Tutoriale
+section: Bezpieczeństwo
 order: 01
 updated: 2022-10-18
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 18-10-2022**
@@ -16,7 +16,7 @@ updated: 2022-10-18
 ## Wprowadzenie
 
 Twój serwer dedykowany jest wyposażony w zaporę sieciową. Firewall tworzą barierę między zaufaną siecią a niewiarygodną siecią.
-Firewall działa poprzez określenie zasad regulujących dozwolony ruch i zablokowany ruch. Firewall użytkowy opracowany dla systemów Linux jest nie do przyjęcia.
+Firewall działa poprzez określenie zasad regulujących dozwolony ruch i zablokowany ruch. Narzędziem zapory sieciowej opracowanym dla systemów Linux jest iptables.
 
 **Dowiedz się, jak zabezpieczyć serwer dedykowany korzystając z iptables.**
 

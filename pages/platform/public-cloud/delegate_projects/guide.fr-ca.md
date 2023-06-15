@@ -19,7 +19,7 @@ Dans cet objectif, vous pouvez déléguer à d'autres comptes client OVHcloud de
 ## Prérequis
 
 - Avoir une instance [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 ## En pratique 
 
@@ -57,5 +57,7 @@ Pour révoquer un accès, cliquez sur le bouton `...`{.action} puis sélectionne
 [Informations concernant le mode de facturation Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/information-concernant-le-mode-de-facturation-cloud/)
 
 [Paramètres d’accès et de sécurité dans Horizon](https://docs.ovh.com/ca/fr/public-cloud/access_and_security_in_horizon/)
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

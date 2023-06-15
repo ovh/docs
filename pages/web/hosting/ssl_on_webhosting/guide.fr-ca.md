@@ -70,7 +70,7 @@ Une fois que vous avez soumis la demande d'activation, l'état de la connexion s
 ### 2. Activer un certificat SSL sur un hébergement web <a name="enablessl"></a>
 
 Avant de procéder à cette configuration, assurez-vous que l'étape précédente, « [activation d'un certificat SSL sur un site multisite](#multisite) », a été effectuée correctement. Au moins un domaine doit avoir l'option SSL `Activée` ou le statut `A générer` pour activer le certificat SSL.<br>
-**Ces informations ne s'appliquent pas si vous sélectionnez `Certificat payant`{.action} ou `Importer de votre certificat SSL`{.action}.**
+**Ces informations ne s'appliquent pas si vous sélectionnez `Certificat payant`{.action} ou `Import de votre certificat SSL`{.action}.**
 
 > [!warning]
 >
@@ -128,7 +128,7 @@ Pour ce faire, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.c
 
 Prenez connaissance des informations affichées dans la fenêtre qui apparaît, puis cliquez sur le bouton `Valider`{.action}. Attendez ensuite que votre certificat SSL soit regénéré. Cette étape peut prendre plusieurs heures.
 
-Veuillez noter que Let's Encrypt, l'autorité qui fournit le certificat SSL inclus avec avec votre hébergement web, impose une [limite de cinq regénérations par semaine](https://letsencrypt.org/docs/rate-limits/){.external}. Par conséquent, nous vous invitons à être vigilant sur les différentes regénérations que vous pourriez entreprendre à court terme  afin de ne pas être temporairement bloqué.
+Veuillez noter que Let's Encrypt, l'autorité qui fournit le certificat SSL inclus avec votre hébergement web, impose une [limite de cinq regénérations par semaine](https://letsencrypt.org/docs/rate-limits/){.external}. Par conséquent, nous vous invitons à être vigilant sur les différentes regénérations que vous pourriez entreprendre à court terme  afin de ne pas être temporairement bloqué.
 
 ![managessl](images/manage-ssl-step8.png){.thumbnail}
 

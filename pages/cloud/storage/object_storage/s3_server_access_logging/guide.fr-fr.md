@@ -21,7 +21,7 @@ Server Access Logging fournit des enregistrements détaillés des requêtes fait
 - Avoir créé un utilisateur et avoir défini les droits d'accès requis sur le bucket.
 - Connaître vos informations d'identification S3 (access_key et secret_access_key).
 
-Consultez notre guide « [Débuter avec S3 Object Storage](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/) » pour plus de détails.
+Consultez notre guide « [Débuter avec S3 Object Storage](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) » pour plus de détails.
 
 ## En pratique
 
@@ -251,5 +251,7 @@ $ aws --profile my-profile s3api put-bucket-logging --bucket my-bucket --bucket-
 ```
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).

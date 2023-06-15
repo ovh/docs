@@ -4,10 +4,8 @@ excerpt: 'Découvrez comment activer et utiliser l’option snapshot depuis l’
 slug: snapshot-vps
 section: Sauvegarde
 order: 1
-updated: 2022-12-02
+updated: 2023-04-28
 ---
-
-**Dernière mise à jour le 02/12/2022**
 
 ## Objectif
 
@@ -56,6 +54,50 @@ Si vous êtes sûr de vouloir restaurer votre VPS à l'état du snapshot, clique
 > Lorsque vous restaurez un VPS à partir d’un snapshot, ce dernier sera supprimé. Si vous souhaitez conserver le même snapshot, vous devez en créer un nouveau avant d'apporter des modifications au système restauré.
 >
 
+### Télécharger un snapshot
+
+Le snapshot en cours peut être récupéré via un lien de téléchargement. Cliquez sur le bouton `...`{.action} à côté de l'option `Snapshot` et choisissez `Télécharger le Snapshot`{.action} dans le menu contextuel.
+
+![snapshotvps](images/snapshot_vps03.png){.thumbnail}
+
+> [!primary]
+>
+> Si votre VPS est issu d'une ancienne gamme, il est possible que vous receviez un message d'erreur car l'option n'est pas disponible sur les anciens VPS. Votre VPS est issu d'une ancienne gamme si son modèle de nommage est similaire à : *vpsXXXX.ovh.net* (où *X* représente un nombre). Vous pouvez vérifier cette référence de serveur dans l'onglet `Accueil`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+>
+
+Dans la fenêtre qui s'affiche, cliquez sur `Générer le lien de téléchargement`{.action}.
+
+![snapshotvps](images/snapshot_vps04.png){.thumbnail}
+
+Après quelques secondes, un message de succès s'affiche. En dessous, vous pouvez copier la commande complète de téléchargement en un clic.
+
+![snapshotvps](images/snapshot_vps05.png){.thumbnail}
+
+La taille du snapshot et la date d'expiration du lien seront également affichées.
+
+Notez que le lien de téléchargement expirera après **24 heures**.
+
+La commande de téléchargemment utilise un `curl` au format suivant :
+
+```bash
+curl "https://storage.sbg.cloud.ovh.net/v1/AUTH_f5fgh4674dd706f15f6ffgf4z667d3f4g5f05/glance/5ceg3f93-8b49-436b-aefe-4185f9fc3f78?
+temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=1678247579" --output vps-x11x11xyy.vps.ovh.net --fail
+```
+
+Cette commande doit fonctionner depuis n'importe quel terminal de ligne de commande. Cependant, lorsque vous utilisez Windows *PowerShell*, vous devrez ajuster la commande ainsi :
+
+```powershell
+curl -Uri "https://storage.sbg.cloud.ovh.net/v1/AUTH_f5fgh4674dd706f15f6ffgf4z667d3f4g5f05/glance/5ceg3f93-8b49-436b-aefe-4185f9fc3f78?
+temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=1678247579" -OutFile vps-x11x11xyy.vps.ovh.net
+```
+
+![snapshotvps](images/snapshot_vps06.png){.thumbnail}
+
+> [!primary]
+>
+> Pour éviter de consommer trop d'espace de stockage, nous vous déconseillons de télécharger les snapshots directement sur le VPS.
+>
+
 ### Bonnes pratiques pour la création d'un snapshot
 
 #### Configuration de l'agent QEMU sur un VPS
@@ -68,28 +110,28 @@ Le *qemu-guest-agent* requis n'est pas installé par défaut sur la plupart des 
 
 Utilisez la commande suivante pour vérifier si le système est correctement configuré pour les snapshots :
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Si le résultat est différent (« No such file or directory »), installez le dernier package :
 
-```
+```bash
 $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
 Redémarrez le vps :
 
-```
-$ sudo reboot`
+```bash
+$ sudo reboot
 ```
 
 
 Vérifier le service pour vous assurer qu'il est en cours d'exécution :
 
-```
+```bash
 $ sudo service qemu-guest-agent status
 ```
 
@@ -97,27 +139,27 @@ $ sudo service qemu-guest-agent status
 
 Utilisez la commande suivante pour vérifier si le système est correctement configuré pour les snapshots :
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Si le résultat est différent (« No such file or directory »), installez et activez l'agent :
 
-```
+```bash
 $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
 Redémarrez le vps :
 
-```
+```bash
 $ sudo reboot
 ```
 
 Vérifier l'agent et vérifiez qu'il est en cours d'exécution :
 
-```
+```bash
 $ sudo service qemu-guest-agent status
 ```
 
@@ -127,11 +169,11 @@ Consultez notre guide [Sauvegarde automatique - Kernel panic (cPanel)](https://d
 
 ##### **Windows**
 
-Vous pouvez installer l'agent via un fichier MSI, disponible sur le site du projet Fedora: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
+Vous pouvez installer l'agent via un fichier MSI, disponible sur le site du projet Fedora: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>.
 
-Vérifiez que le service est en cours d'exécution à l'aide de la commande powershell suivante :
+Vérifiez que le service est en cours d'exécution à l'aide de la commande *PowerShell* suivante :
 
-```
+```powershell
 PS C:\Users\Administrator> Get-Service QEMU-GA
 
 Status   Name               DisplayName
@@ -143,4 +185,4 @@ Running  QEMU-GA            QEMU Guest Agent
 
 [Utiliser la sauvegarde automatique sur un VPS](https://docs.ovh.com/ca/fr/vps/autobackup-vps/)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

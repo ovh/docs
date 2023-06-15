@@ -7,6 +7,8 @@ order: 4
 updated: 2021-07-21
 ---
 
+**Última atualização: 21/07/2021**
+
 ## Sumário
 
 A palavra-passe da sua Área de Cliente OVHcloud é a chave de acesso a todos os seus serviços e informações. Deve ser suficientemente complexa e regularmente alterada para garantir a segurança.
@@ -42,13 +44,13 @@ A segurança das suas soluções depende da eficácia da palavra-passe de acesso
 
 Há vários métodos eficazes para criar palavras-passe. Recomendamos-lhe, nomeadamente, o **método das primeiras letras** e o **método fonético**.
 
-Para ficar a saber mais, consulte a secção [Quer saber mais?](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/#quer-saber-mais_2){.external} na parte de baixo deste guia.
+Para ficar a saber mais, consulte a secção [Quer saber mais?](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/#quer-saber-mais){.external} na parte de baixo deste guia.
 
 ### Utilizar um gestor de palavras-passe
 
 Programas específicos permitem guardar e proteger a sua palavra-passe de acesso à conta OVHcloud.
 
-Pode, por exemplo, utilizar o gestor de palavras-passe **Keepass**. Trata-se de um programa livre e gratuito.
+Pode, por exemplo, utilizar o gestor de palavras-passe **KeePass**. Trata-se de um programa livre e gratuito.
 
 O princípio é simples: uma palavra-passe principal – que deve ser suficientemente complexa, mas que tem de memorizar – permite aceder a uma base de dados que reúne todas as suas ID de utilizador e palavras-passe. Estas podem ser muito complexas porque o programa consegue lembrar-se delas.
 
@@ -117,6 +119,6 @@ Se a sua palavra-passe estiver comprometida, recomendamos vivamente que a [alter
 
 ## Quer saber mais?
 
-[O gestor de palavras-passe Keepass](https://keepass.info/){.external}
+[O gestor de palavras-passe KeePass](https://keepass.info/){.external}
 
 Fale com a nossa comunidade de utilizadores em https://community.ovh.com/en/

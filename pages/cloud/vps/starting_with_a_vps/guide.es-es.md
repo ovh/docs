@@ -11,8 +11,6 @@ updated: 2022-03-25
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 25/03/2022**
-
 ## Objetivo
 
 Un servidor virtual privado (VPS, por sus siglas en inglés) es un servidor dedicado virtualizado. A diferencia de un alojamiento web (compartido), cuya gestión técnica recae en OVHcloud, usted es el único responsable de la administración de su VPS.
@@ -42,7 +40,7 @@ El panel de control que se le presenta contiene información importante sobre su
 
 Para la gama actual de VPS, lea detenidamente la sección siguiente de esta guía, **Primeros pasos (gama actual de VPS)**. 
 
-Para un modelo de VPS más antiguo, siga leyendo esta guía haciendo clic en el enlace siguiente: [Primeros pasos (antigua gama de VPS)](./#primeros-pasos-antigua-gama-de-vps_1).
+Para un modelo de VPS más antiguo, siga leyendo esta guía haciendo clic en el enlace siguiente: [Primeros pasos (antigua gama de VPS)](./#primeros-pasos-antigua-gama-de-vps).
 
 ### Primeros pasos (gama actual de VPS)
 
@@ -84,9 +82,9 @@ passwd: password updated successfully
 
 #### Activación de las conexiones root
 
-Por motivos de seguridad, la conexión con el usuario root está desactivada por defecto. Si debe autorizar este tipo de conexiones, consulte las instrucciones de [esta guía](https://docs.ovh.com/es/vps/root-password/#activar-la-contrasena-root_1).
+Por motivos de seguridad, la conexión con el usuario root está desactivada por defecto. Si debe autorizar este tipo de conexiones, consulte las instrucciones de [esta guía](https://docs.ovh.com/es/vps/root-password/#activar-la-contrasena-root).
 
-#### Reinicio de su VP (gama actual de VPS) <a name="reboot-current-range"></a>
+#### Reinicio de su VPS (gama actual de VPS) <a name="reboot-current-range"></a>
 
 Es posible que necesite reiniciar para aplicar configuraciones actualizadas o resolver un problema. En la medida de lo posible, ejecute el "soft reboot" del servidor en la siguiente línea de comandos:
 
@@ -144,7 +142,7 @@ Como alternativa, también puede utilizar este comando:
 ssh root@referencia_de_su_VPS
 ```
 
-#### Reinicio de su VP (antigua gama de VPS) <a name="reboot-older-range"></a>
+#### Reinicio de su VPS (antigua gama de VPS) <a name="reboot-older-range"></a>
 
 Es posible que necesite reiniciar para aplicar configuraciones actualizadas o resolver un problema. En la medida de lo posible, ejecute el "soft reboot" del servidor en la siguiente línea de comandos:
 

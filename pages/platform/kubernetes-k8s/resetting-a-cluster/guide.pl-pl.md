@@ -5,10 +5,10 @@ slug: resetting-a-cluster
 section: User guides
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/resetting-a-cluster/'
-updated: 2022-07-27
+updated: 2023-03-23
 ---
 
-**Last updated July 27th, 2022.**
+**Last updated March 23rd, 2023.**
 
 <style>
  pre {
@@ -33,19 +33,35 @@ updated: 2022-07-27
 
 ## Objective
 
-OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. 
+OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them.
 
-**Find out how to reset an OVHcloud Managed Kubernetes cluster.**
+Through the OVHcloud Control Panel and the API, you can reset your OVHcloud Managed Kubernetes cluster.
 
+> [!primary]
+>
+> During a reset, all data in the ETCD will be deleted (pods, deployments, services, secrets, CRDs, etc.). Similarly, load balancers and also all PVC (Persistent Volume Claim) with their PCI cinder volumes will be deleted.
+> Nodes will be either deleted or reinstalled (depending on the option you set during the reset).
+
+The whole cluster configuration is reset but some values can be defined (optional):
+
+- workerNodesPolicy: reinstall|delete
+- minor_version: for ex. 1.25
+- updatePolicy: "ALWAYS_UPDATE" by default
+- customization: API Server & kube proxy configuration
+- privateNetworkId: private network openstack UUID
+- privateNetworkConfiguration: true|false
+- defaultVrackGateway: gateway IP
+- kubeProxyMode: ipvs|iptables
 
 ## Requirements
 
 - an OVHcloud Managed Kubernetes cluster
 
-
 ## Instructions
 
-### Step 1 - Ask for cluster reset on the OVHcloud Control Panel 
+### Reset a Kubernetes cluster on the OVHcloud Control Panel
+
+#### Step 1 - Ask for cluster reset on the OVHcloud Control Panel 
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
@@ -59,8 +75,7 @@ Click on your Kubernetes cluster.
 
 In the *Service* tab of the administration UI, click on *Reset your cluster*.
 
-
-### Step 2 - Choose the type of reset you want
+#### Step 2 - Choose the type of reset you want
 
 You have two options on the reset menu, *Delete* and *Reinstall*. 
 
@@ -75,12 +90,93 @@ You can also choose the minor version of the cluster and the private network att
 Click on the `Confirm`{.action} button to continue.
 
 
-### Step 3 - Wait for the resetting to end 
+#### Step 3 - Wait for the resetting to end 
 
 Depending on the chosen kind of reset, the process can take several minutes. During that time, a message on the manager warns you that the cluster is under resetting:
 
 ![resetting](images/resetting_a_cluster-04.png){.thumbnail}
 
+### Reset a Kubernetes cluster through the API
+
+#### The API Explorer
+
+To simplify things, we are using the [API Explorer](https://api.ovh.com/) which allows to explore, learn and interact with the API in an interactive way.
+
+Log in to the API Explorer using your OVHcloud NIC handle.
+
+![Log in to the API Explorer](images/kubernetes-quickstart-api-ovh-com-001.png){.thumbnail}
+
+If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/kube~GET) of the API Explorer, you will see the available endpoints:
+
+![Kubernetes section of the API Explorer](images/kubernetes-quickstart-api-ovh-com-002.png){.thumbnail}
+
+#### API endpoints
+
+- Reset a Kubernetes cluster:
+
+> [!api]
+>
+> @api {POST} /cloud/project/{serviceName}/kube/{kubeId}/reset
+>
+
+**Input:**
+```json
+{
+  "name": "my-test-cluster",
+  "updatePolicy": "ALWAYS_UPDATE",
+  "version": "1.25"
+}
+```
+
+**Result:**
+```json
+null
+```
+
+By default, if you don't specify it, the `workerNodesPolicy` option will be equivalent to `delete`. If you don't want your Nodes deleted but reinstalled instead, you have to specify `"workerNodesPolicy": "reinstall"`.
+
+> [!primary]
+>
+> You should receive a response with `null` content. This message will be improved in the future with the same information you have after a Kubernetes cluster creation.
+
+- Check the Kubernetes cluster is resetting:
+
+> [!api]
+>
+> @api {GET} /cloud/project/{serviceName}/kube/{kubeId}
+>
+
+**Result:**
+```json
+{
+  "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+  "region": "GRA5",
+  "name": "my-test-cluster",
+  "url": "xxxxxx.xx.gra.k8s.ovh.net",
+  "nodesUrl": "xxxxxx.nodes.c1.gra.k8s.ovh.net",
+  "version": "1.25.4-2",
+  "nextUpgradeVersions": [],
+  "kubeProxyMode": "iptables",
+  "customization": {
+    "apiServer": {
+      "admissionPlugins": {
+        "enabled": [
+          "AlwaysPullImages",
+          "NodeRestriction"
+        ],
+        "disabled": []
+      }
+    }
+  },
+  "status": "REDEPLOYING",
+  "updatePolicy": "ALWAYS_UPDATE",
+  "isUpToDate": true,
+  "controlPlaneIsUpToDate": true,
+  "privateNetworkId": null,
+  "createdAt": "2023-03-21T10:53:35Z",
+  "updatedAt": "2023-03-22T09:16:34Z"
+}
+```
 
 ## Go further
 
@@ -88,4 +184,6 @@ To have an overview of OVHcloud Managed Kubernetes service, you can go to the [O
 
 Otherwise to skip it and learn more about using your Kubernetes cluster the practical way, we invite you to look at our [tutorials](../).
 
-Join our [community of users](https://community.ovh.com/en/).
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our [community of users](https://community.ovh.com/en/).

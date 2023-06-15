@@ -2,8 +2,10 @@
 title: Find your patch for Meltdown and Spectre
 slug: meltdown-spectre-kernel-update-per-operating-system
 section: Meltdown and Spectre informations
-updated: 2021-02-09
+updated: 2020-07-15
 ---
+
+**Last updated 15th July 2020**
 
 <div id="main-content" class="wiki-content table-meltown-spectre">
    <p style="text-align: center;"><span style="color: rgb(51,102,255);"><br></span></p>

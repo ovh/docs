@@ -110,7 +110,7 @@ Neste caso, [ligue-se em FTP](../aceder-espaco-de-armazenamento-ftp-alojamento-w
 
 > [!primary]
 >
-> Para qualquer questão relativa aos dados a eliminar para reduzir a quantidade de dados no seu alojamento, contacte a nossa [comunidade de utilizadores](https://community.ovh.com/en/) ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).<br>
+> Para qualquer questão relativa aos dados a eliminar para reduzir a quantidade de dados no seu alojamento, contacte a nossa [comunidade de utilizadores](https://community.ovh.com/en/) ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).<br>
 > Não poderemos prestar-lhe assistência nesta matéria.
 >
 
@@ -142,7 +142,7 @@ Se não dispõe de outras bases de dados e não deseja encomendar uma oferta com
 >
 > **Eliminar elementos na sua base de dados pode causar um corte no seu site**
 >
-> Para mais informações, contacte a nossa [comunidade](https://community.ovh.com/en/) ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).<br>
+> Para mais informações, contacte a nossa [comunidade](https://community.ovh.com/en/) ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).<br>
 > Não poderemos prestar-lhe assistência nesta matéria.
 >
 
@@ -188,7 +188,7 @@ Esta anomalia pode ter várias causas:
 
 - Efetuou recentemente uma alteração na sua zona ou nos seus servidores [DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#compreender-a-nocao-de-dns) ou uma [transferência de nome de domínio](../../domains/transferir-o-dominio-generico/). Aguarde até que estas operações estejam finalizadas (48 horas para as alterações nos seus DNS). Também pode reiniciar os seus dispositivos (PC, smartphone, box, etc.) e esvaziar a cache do seu browser.
 
-- O seu domínio está sempre associado ao seu antigo alojamento. Neste caso, altere a sua [Zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#editar-a-zona-dns-da-ovhcloud-do-seu-dominio_1) ou os seus [Servidores DNS](../../domains/partilhado_generalidades_sobre_os_servidores_dns/#modificar-os-servidores-dns) ou contacte o seu antigo fornecedor de serviços.
+- O seu domínio está sempre associado ao seu antigo alojamento. Neste caso, altere a sua [Zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#editar-a-zona-dns-da-ovhcloud-do-seu-dominio) ou os seus [Servidores DNS](../../domains/partilhado_generalidades_sobre_os_servidores_dns/#modificar-os-servidores-dns) ou contacte o seu antigo fornecedor de serviços.
 
 ### A palavra-passe "Administrador" de acesso ao "back-office" do seu módulo 1 clique deixou de funcionar <a name="adminpassword"></a>
 
@@ -196,7 +196,7 @@ Se a sua palavra-passe de acesso à interface de gestão do CMS for rejeitada, c
 
 ## Quer saber mais? <a name="gofurther"></a>
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/)
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/)
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 

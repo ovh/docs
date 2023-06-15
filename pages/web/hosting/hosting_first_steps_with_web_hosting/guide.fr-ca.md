@@ -93,13 +93,13 @@ Il n'existe pas de marche à suivre universelle tant les sites peuvent être dif
 
 ### Étape 3 : créer vos adresses e-mail
 
-Cette étape peut être facultative si vous ne souhaitez pas utiliser les adresses e-mail comprises avec votre offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}. Pour créer une une plusieurs adresses e-mail, assurez-vous dans un premier temps d'être connecté dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Rendez-vous dans la section `Emails`{.action} puis sur le nom de l'hébergement web que vous venez de commander. puis, dans l'onglet `Emails`{.action}, cliquez sur le bouton `Créer une adresse e-mail`{.action}.
+Cette étape peut être facultative si vous ne souhaitez pas utiliser les adresses e-mail comprises avec votre offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}. Pour créer une ou plusieurs adresses e-mail, assurez-vous dans un premier temps d'être connecté dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Rendez-vous dans la section `Emails`{.action} puis sur le nom de l'hébergement web que vous venez de commander. puis, dans l'onglet `Emails`{.action}, cliquez sur le bouton `Créer une adresse e-mail`{.action}.
 
 ![Créer une adresse e-mail](images/create_an_email_address.png){/thumbnail}
 
 Suivez les informations demandées jusqu'à la création de votre adresse e-mail. Répétez cette étape pour en créer plusieurs. Si vous êtes dans un processus de migration de vos e-mails chez OVHcloud, nous vous invitons à utiliser notre outil [OVH Mail Migrator](https://omm.ovh.net/){.external} afin de vous aider dans vos démarches. 
 
-Si vous désirez obtenir plus d'informations sur la création d'une adresse e-mail ou sur la migration de vos services chez OVHcloud, consultez nos documentations : [Comment créer une adresse e-mail](../../emails/generalites-sur-les-emails-mutualises/#etape-2-creer-vos-adresses-e-mail_1){.external} et [Migrer mon site chez OVHcloud](../migrer-mon-site-chez-ovh/){.external} si ce dernier s'applique.
+Si vous désirez obtenir plus d'informations sur la création d'une adresse e-mail ou sur la migration de vos services chez OVHcloud, consultez nos documentations : [Comment créer une adresse e-mail](../../emails/generalites-sur-les-emails-mutualises/#etape-2-creer-vos-adresses-e-mail){.external} et [Migrer mon site chez OVHcloud](../migrer-mon-site-chez-ovh/){.external} si ce dernier s'applique.
 
 
 ### Étape 4 : vérifier ou modifier la configuration de votre domaine
@@ -177,7 +177,7 @@ Si vous désirez obtenir plus de détails sur l'utilisation de RoundCube, consul
 
 [Installer son site avec les modules en 1 clic](../modules-en-1-clic/){.external}
 
-[Comment créer une adresse e-mail](../../emails/generalites-sur-les-emails-mutualises/#etape-2-creer-vos-adresses-e-mail_1){.external}
+[Comment créer une adresse e-mail](../../emails/generalites-sur-les-emails-mutualises/#etape-2-creer-vos-adresses-e-mail){.external}
 
 [Utilisation de RoundCube](../../emails/utilisation-roundcube/){.external}
 

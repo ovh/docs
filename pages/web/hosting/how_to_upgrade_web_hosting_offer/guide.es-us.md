@@ -4,7 +4,7 @@ excerpt: Cómo cambiar la fórmula de suscripción de un plan de hosting de OVHc
 slug: how_to_change_web_hosting_offer
 section: Optimización del sitio web
 order: 02
-updated: 2023-01-03
+updated: 2023-04-19
 ---
 
 > [!primary]
@@ -96,7 +96,7 @@ Siga [estas instrucciones](#modify) para cambiar de producto.
 
 [Optimización del rendimiento de su sitio web](https://docs.ovh.com/us/es/hosting/web_hosting_guia_de_optimizacion_del_rendimiento_de_un_sitio_web/)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, consulte [nuestras distintas soluciones pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
 

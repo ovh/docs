@@ -6,6 +6,7 @@ section: Cas d'usage
 updated: 2022-04-26
 ---
 
+**Dernière mise à jour le 25/02/2019**
 
 ## Introduction
 Avec ce guide nous vous proposons d'explorer un cas d'usage particulier de votre service OVHcloud Load Balancer : configurer son service pour gérer facilement une infrastructure production / développement également appelée Blue-Green.

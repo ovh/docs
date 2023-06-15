@@ -120,7 +120,7 @@ Siga los pasos que se describen haciendo clic en cada pestaña:
 
 > [!primary]
 >
-> Para aplicar una **redirección simple** (véase el [esquema 1](#diagram) al inicio de esta guía), añada una regla adicional a su **redirección con copia local** desde esta ventana. Haga clic en `Añadir una acción` {.action} (recuadro 1), luego en `Mover, copiar o eliminar`{.action} y luego en `eliminar el mensaje`{.action}. Esta regla mueve el mensaje directamente a la papelera después de haberlo redirigido hacia el correo de redirección.<br><br>
+> Para aplicar una **redirección simple** (véase el [esquema 1](#diagram) al inicio de esta guía), añada una regla adicional a su **redirección con copia local** desde esta ventana. Haga clic en `Añadir una acción`{.action} (recuadro 1), luego en `Mover, copiar o eliminar`{.action} y luego en `eliminar el mensaje`{.action}. Esta regla mueve el mensaje directamente a la papelera después de haberlo redirigido hacia el correo de redirección.<br><br>
 > ![emails](images/emails-all-07.png){.thumbnail .w-640}
 
 ### Crear un alias <a name="alias"></a>

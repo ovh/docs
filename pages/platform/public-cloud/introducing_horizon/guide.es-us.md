@@ -21,7 +21,7 @@ La interfaz Horizon, que nativamente se ofrece con OpenStack, ha sido adaptada p
 
 ## Requisitos
 
-- Un [proyecto Public Cloud](https://docs.ovh.com/us/es/public-cloud/crear_su_primer_proyecto_de_public_cloud/) en su cuenta de OVHcloud
+- Un [proyecto Public Cloud](https://docs.ovh.com/us/es/public-cloud/crear_su_primer_proyecto_de_public_cloud/) en su cuenta de OVHcloud.
 - Un usuario [OpenStack](../crear-y-eliminar-un-usuario-de-openstack/) creado en su proyecto.
 
 ## Procedimiento

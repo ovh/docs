@@ -4,10 +4,15 @@ slug: deploy/load-test-app
 excerpt: Understand how you can easily benchmark your APIs and find their limits
 section: AI Deploy - Tutorials
 order: 10
-updated: 2023-03-13
+updated: 2023-04-04
 ---
 
-**Last updated 13th March, 2023.**
+**Last updated 4th April, 2023.**
+
+> [!primary]
+>
+> AI Deploy is covered by **[OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf)**.
+>
 
 ## Objective
 
@@ -54,7 +59,7 @@ ovhai app run --name spamclassifier --cpu 1 \
 --auto-max-replicas 5 \
 --auto-resource-type CPU \
 --auto-resource-usage-threshold 75 \
-priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/fastapi-spam-classification
+priv-registry.gra.ai.cloud.ovh.net/ai-deploy-portfolio/fastapi-spam-classification
 ```
 
 ### Verify that your API is up and running with cURL
@@ -244,6 +249,8 @@ Last point : while Locust is measuring an end-to-end latency (from Locust virtua
 Locust official documentation : [Locust.io](https://docs.locust.io/en/stable/)
 
 Comparison of load testing tools : [Comparison of load testing tools](https://k6.io/blog/comparing-best-open-source-load-testing-tools/)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

@@ -31,7 +31,7 @@ La piratería informática puede manifestarse de varias maneras (lista no exhaus
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
+> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
 >
 
 ## Requisitos
@@ -100,10 +100,10 @@ Si utiliza un CMS como WordPress, Joomla, PrestaShop o Drupal, consulte la docum
 
 > [!warning]
 >
-Si tiene dificultades para realizar las acciones que se describen a continuación, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/) en ciberseguridad.
+Si tiene dificultades para realizar las acciones que se describen a continuación, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) en ciberseguridad.
 >
 
-Utilice nuestra guía sobre [las estadísticas y logs de su alojamiento web](ttps://docs.ovh.com/us/es/hosting/web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/) para buscar los elementos maliciosos introducidos en su sitio web. Puede consultar la información en los logs "web". 
+Utilice nuestra guía sobre [las estadísticas y logs de su alojamiento web](https://docs.ovh.com/us/es/hosting/web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/) para buscar los elementos maliciosos introducidos en su sitio web. Puede consultar la información en los logs "web". 
 
 Comience a buscar a partir de la fecha en la que haya detectado la piratería y vuelva al historial de sus logs.
 
@@ -218,13 +218,13 @@ Consulte nuestra guía sobre cómo proteger su sitio web (https://docs.ovh.com/u
 
 [Conectarse al espacio de almacenamiento de un alojamiento web](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/)
 
-[Modificar la configuración de un alojamiento web](https://docs.ovh.com/us/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento//)
+[Modificar la configuración de un alojamiento web](https://docs.ovh.com/us/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento/)
 
 [Activar el firewall de aplicación](https://docs.ovh.com/us/es/hosting/web_hosting_activating_an_application_firewall/)
 
 [Optimizar el rendimiento de su sitio web](https://docs.ovh.com/us/es/hosting/web_hosting_guia_de_optimizacion_del_rendimiento_de_un_sitio_web/)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones (pestañas de soporte)(https://www.ovhcloud.com/es/support-levels/).
 

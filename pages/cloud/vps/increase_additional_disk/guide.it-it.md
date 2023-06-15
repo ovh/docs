@@ -8,7 +8,7 @@ order: 4
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 14/03/2023**
@@ -23,8 +23,8 @@ Se hai raggiunto la capacità massima del tuo disco aggiuntivo, puoi aggiungere 
 
 - Un [VPS](https://www.ovhcloud.com/it/vps/) nel tuo account OVHcloud.
 - Un [disco aggiuntivo](https://docs.ovh.com/it/vps/config-additional-disk-vps/) configurato sul VPS.
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Avere accesso al VPS in SSH o in RDP per l'amministrazione
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+- Avere accesso al VPS in SSH o in RDP per l'amministrazione.
 
 ## Procedura
 
@@ -46,7 +46,7 @@ Visualizzerai un messaggio per confermare la tua richiesta. Clicca sul link all'
 
 ![size-disk-vps](images/increase_disk_vps03.png){.thumbnail}
 
-L'aumento di capacità del disco richiederà alcuni minuti dopo la conferma del pagamento. Puoi verificare lo stato di avanzamento della procedura nella scheda `Dischi aggiuntivi`{.action}\: se visualizzi la nuova dimensione selezionata, il disco è pronto.
+L'aumento di capacità del disco richiederà alcuni minuti dopo la conferma del pagamento. Puoi verificare lo stato di avanzamento della procedura nella scheda `Dischi aggiuntivi`{.action}: se visualizzi la nuova dimensione selezionata, il disco è pronto.
 
 ![size-disk-vps](images/increase_disk_vps04.png){.thumbnail}
 

@@ -7,7 +7,7 @@ updated: 2022-01-12
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 12/01/2022**
@@ -56,7 +56,7 @@ L'operazione da effettuare è diversa a seconda del luogo in cui i DNS del domin
 
 - Se il dominio è gestito da un provider esterno **o** se utilizza server DNS esterni in questa fase, accedi allo Spazio Cliente del tuo provider DNS e aggiungi, nella zona DNS, un record di tipo TXT con il sottodominio "ownercheck" e il valore fornito eseguendo lo [Step 1](#retrievecode).
 
-- Se il dominio è gestito da OVHcloud come registrar **e** utilizza i server DNS di OVHcloud, aggiungi il record TXT nella sezione `Web Cloud`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Segui le istruzioni descritte nella guida [Modificare la zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/)di un dominio.
+- Se il dominio è gestito da OVHcloud come registrar **e** utilizza i server DNS di OVHcloud, aggiungi il record TXT nella sezione `Web Cloud`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Segui le istruzioni descritte nella guida [Modificare la zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/) di un dominio.
 
 ![DNS secondario](images/sec-04.png){.thumbnail}
 

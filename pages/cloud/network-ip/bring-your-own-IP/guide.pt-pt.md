@@ -6,10 +6,10 @@ routes:
 excerpt: Find out how to easily import your own IP as Additional IP to your OVHcloud account
 section: Bring Your Own IP
 order: 1
-updated: 2022-11-23
+updated: 2023-05-15
 ---
 
-**Last updated 23rd November 2022**
+**Last updated 15th May 2023**
 
 ## Objective
 
@@ -69,7 +69,7 @@ We accept IP blocks from size /24 up to size /19. Below, is the number of /24 yo
 
 ### Your IP range is not in use on the Internet <a name="notinuseontheinternet"></a>
 
-The range must not be announced or in use on the Internet (no announcement in terms of Border Gateway Protocol (BGP) on at least one public network).
+The range should not be announced or in use on the Internet (no announcement in terms of Border Gateway Protocol (BGP) on at least one public network). You are free not to meet this prerequisite, in which case OVHcloud will not be able to ensure the proper functioning and support of this service.
 
 ### Your IP/AS have a clean reputation <a name="cleanipreputation"></a>
 
@@ -103,16 +103,12 @@ Below is a list of current campuses:
     - vin1
 - HIL (Hillsboro)
     - hil1
-- SYD (Sydney 1)
-    - syd1
-- SY2 (Sydney 2)
-    - syd2
 
 The list of available campuses will depend on your geographical location, and on the RIR of the IP. Below are listed all IP campuses where we plan to launch the BYOIP product. However, note that not all campuses may be supported at launch:
 
 |**Customer IPs' RIR is:**|**ARIN**|**RIPE**|
 |---|---|---|
-|**Available campuses** |BHS<br>SGP<br>SYD<br>SY2|RBX<br>GRA<br>SBG<br>WAW<br>LIM<br>ERI|
+|**Available campuses** |BHS<br>SGP|RBX<br>GRA<br>SBG<br>WAW<br>LIM<br>ERI|
 
 ### You must prove ownership of the IP range <a name="proveownershipip"></a>
 
@@ -141,11 +137,17 @@ For more information on route objects, please refer to your RIR’s documentatio
 - RIPE - [Managing Route Objects](https://www.ripe.net/manage-ips-and-asns/db/support/managing-route-objects-in-the-irr)
 - ARIN - [Submitting Routing Information](https://www.arin.net/resources/manage/irr/#submitting-routing-information)
 
+> [!warning]
+> If your imported IP block is already advertized on the Internet from sites other than OVHcloud (multihoming case), you risk packet loss or other routing issues. We will therefore not be able to guarantee connectivity to OVHcloud services with your imported IP block.
+
 ## Instructions
 
 ### How to use the product
 
-The imported IPs will behave like the current Additional IP product. An imported IP range will be split into /24 blocks that will be movable to any service in the same campus.
+The imported IPs will behave like the current Additional IP product. An imported IP range will be split into /24 blocks that will be movable to any service in the same campus.<br>
+To activate the announcement of your imported IP range on the Internet, simply assign one of your block to an eligible product via the control panel or the OVHcloud API.<br>
+Be aware that a specific access-control list will be put in place during the BYOIP service delivery process. These access control lists aim at preventing IP spoofing, they will block any traffic from the OVHcloud network to any IP address of your IP range located on an external network and from any address of your IP range located on an external network to the OVHcloud network, even if BGP announcement is not yet activated from the OVHcloud side.<br>
+If your migration may be impacted by this process, please contact us and we will assist you.
 
 > [!warning]
 > Some operations available on the Additional IP product will not be available on the BYOIP product.
@@ -187,9 +189,9 @@ Not for the moment.
 
 No, an IP range must be used in only one campus.
 
-### Is changing the campus of an imported IP possible?
+### Is changing the campus of an imported IP range possible?
 
-Not at the moment, to achieve this you would have to release the product and purchase it again (this is the only option for now).
+It is not possible to change the campus of an imported IP range. To achieve this you would have to release the product and purchase it again. However, if you have chosen a French campus at the time of the order and if you ordered the service after January 1st, 2023, you will be able to move your IP blocks across all the datacenters located in France (Gravelines, Roubaix and Strasbourg).
 
 ### How will I know which OVHcloud DNS servers will handle the ARPA zone for my imported IP?
 
@@ -198,6 +200,10 @@ Their names will be communicated in the delivery email.
 ### Is it possible to import an IPv6?
 
 Not for the moment.
+
+### Can I order the service while I still have my IP range announced from another site?
+
+Yes, we allow this for smooth migration purpose. However, you should de-activate the BGP announcement from your previous provider right before you activate the BGP announcement from OVHcloud, otherwise you may encounter routing issues. Be aware that a specific access-control list will be put in place during the BYOIP service delivery process. These access control lists aim at preventing IP spoofing, they will block any traffic from the OVHcloud network to any IP address of your IP range and from any address of your IP range to the OVHcloud network, even if BGP announcement is not yet activated from the OVHcloud side. If your migration may be impacted by this process, please contact us and we will assist you.
 
 ## Go further
 

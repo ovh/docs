@@ -149,7 +149,7 @@ Connectez-vous en SSH avec la commande **ssh** sous Linux, ou avec l'outil **Put
 
 Par exemple sous Linux :
 
-```ssh nutanix@prismcentralipaddress```
+```bash nutanix@prismcentralipaddress```
 
 Collectez les logs :
 
@@ -177,7 +177,7 @@ Connectez-vous en SSH avec la commande **ssh** sous Linux, ou avec l'outil **Put
 
 Par exemple sous Linux :
 
-```ssh nutanix@prismelementipaddress```
+```bash nutanix@prismelementipaddress```
 
 Collectez tous les logs des nœuds :
 
@@ -210,5 +210,7 @@ nutanix@CVMN's password:
 [Putty](https://www.putty.org/)
 
 [Documentation Nutanix sur Logbay](https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LM3BCAW)
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

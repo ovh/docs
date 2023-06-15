@@ -8,7 +8,7 @@ updated: 2023-02-10
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
 **Letzte Aktualisierung am 10.02.2023**
@@ -65,7 +65,7 @@ Kopieren Sie im Abschnitt **IPv6** die Adresse und gehen Sie zum nächsten Schri
 > Beachten Sie, dass ein Hinzufügen, Ändern oder Löschen von DNS-Einträgen in der aktiven DNS-Zone eines Domainnamens eine Propagationszeit von **4 bis 24 Stunden** benötigt, um voll wirksam zu sein.
 >
 
-Damit ein Browser die IPv6-Adresse Ihres Domainnamens aufrufen kann, bearbeiten Sie die aktive DNS-Zone Ihres Domainnamens. Verwenden Sie bei Bedarf unsere Anleitung "[Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/#bearbeiten-der-ovhcloud-dns-zone-ihrer-domain_1)", um einen DNS-Eintrag vom Typ **AAAA** zu erstellen.
+Damit ein Browser die IPv6-Adresse Ihres Domainnamens aufrufen kann, bearbeiten Sie die aktive DNS-Zone Ihres Domainnamens. Verwenden Sie bei Bedarf unsere Anleitung "[Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/#bearbeiten-der-ovhcloud-dns-zone-ihrer-domain)", um einen DNS-Eintrag vom Typ **AAAA** zu erstellen.
 
 Klicken Sie im Bereich `Web Cloud`{.action} auf `Domainnamen`{.action}. Wählen Sie Ihren Domainnamen aus und gehen Sie dann auf den Tab `DNS-Zone`{.action}. Klicken Sie rechts neben der Tabelle auf den Button `Eintrag hinzufügen`{.action}. 
 
@@ -75,7 +75,7 @@ Tragen Sie die zuvor kopierte IPv6-Adresse als Typ **AAAA** ein.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-[Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/#bearbeiten-der-ovhcloud-dns-zone-ihrer-domain_1)
+[Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/#bearbeiten-der-ovhcloud-dns-zone-ihrer-domain)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

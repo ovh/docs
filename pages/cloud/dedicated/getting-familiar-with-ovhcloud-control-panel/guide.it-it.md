@@ -8,7 +8,7 @@ updated: 2023-01-05
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 13/12/2022**
@@ -118,5 +118,7 @@ Ecco alcune guide aggiuntive che ti aiuteranno nei tuoi primi passi:
 [Gestire i contatti dei servizi OVHcloud](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/).<br>
 [Creare una chiave SSH](https://docs.ovh.com/it/dedicated/creare-chiave-ssh-dedicata/).<br>
 [Quali sono gli indirizzi IP del monitoring OVHcloud?](https://docs.ovh.com/it/dedicated/monitoring-ip-ovh/).
+
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

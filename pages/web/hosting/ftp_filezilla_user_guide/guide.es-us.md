@@ -25,7 +25,7 @@ Permite publicar archivos o su sitio web [conectándose al espacio FTP](https://
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 > 
-> Ponemos a su disposición este tutorial para ayudarle a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/) o con el editor del programa. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado ["Más información"](#go-further) de este tutorial.
+> Ponemos a su disposición este tutorial para ayudarle a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) o con el editor del programa. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado ["Más información"](#go-further) de este tutorial.
 > 
 
 ## Requisitos
@@ -292,7 +292,7 @@ En términos más generales, consulte [todas nuestras guías relativas a los alo
 
 No dude en consultar la [página oficial de Filezilla](https://filezilla-project.org/).
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 

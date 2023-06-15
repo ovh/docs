@@ -1,13 +1,15 @@
 ---
 title:  Managing nodes with the NodePools CRD
 slug: node-pools-crd
-excerpt: ''
+excerpt: 'Find out how to manage nodes with the NodePools CRD'
 section: User guides
-order: 2
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/node-pools-crd/'
-updated: 2022-02-18
+    canonical: https://docs.ovh.com/gb/en/kubernetes/node-pools-crd/
+order: 2
+updated: 2023-05-11
 ---
+
+**Last updated 11th May 2023**
 
 <style>
  pre {
@@ -30,8 +32,6 @@ updated: 2022-02-18
      font-size: 0.75em;
  }
 </style>
-
-**Last updated February 18<sup>th</sup>, 2022.**
 
 ## Objective
 
@@ -71,26 +71,27 @@ You get the list of installed CRDs and inside it the `nodepools.kube.cloud.ovh.c
 
 <pre class="console"><code>$ kubectl get crd
 NAME                                             CREATED AT
-bgpconfigurations.crd.projectcalico.org          2020-07-26T20:00:00Z
-bgppeers.crd.projectcalico.org                   2020-07-26T20:00:00Z
-blockaffinities.crd.projectcalico.org            2020-07-26T20:00:00Z
-clusterinformations.crd.projectcalico.org        2020-07-26T20:00:00Z
-felixconfigurations.crd.projectcalico.org        2020-07-26T20:00:00Z
-globalnetworkpolicies.crd.projectcalico.org      2020-07-26T20:00:00Z
-globalnetworksets.crd.projectcalico.org          2020-07-26T20:00:00Z
-hostendpoints.crd.projectcalico.org              2020-07-26T20:00:00Z
-ipamblocks.crd.projectcalico.org                 2020-07-26T20:00:00Z
-ipamconfigs.crd.projectcalico.org                2020-07-26T20:00:00Z
-ipamhandles.crd.projectcalico.org                2020-07-26T20:00:00Z
-ippools.crd.projectcalico.org                    2020-07-26T20:00:00Z
-networkpolicies.crd.projectcalico.org            2020-07-26T20:00:00Z
-networksets.crd.projectcalico.org                2020-07-26T20:00:00Z
-<b style="color: yellow">nodepools.kube.cloud.ovh.com                     2020-07-26T20:00:22Z</b>
-volumesnapshotclasses.snapshot.storage.k8s.io    2020-07-26T20:00:20Z
-volumesnapshotcontents.snapshot.storage.k8s.io   2020-07-26T20:00:20Z
-volumesnapshots.snapshot.storage.k8s.io          2020-07-26T20:00:20Z
+...
+ingresses.networking.internal.knative.dev              2023-01-03T07:25:05Z
+ipamblocks.crd.projectcalico.org                       2022-09-22T07:00:52Z
+ipamconfigs.crd.projectcalico.org                      2022-09-22T07:00:52Z
+ipamhandles.crd.projectcalico.org                      2022-09-22T07:00:53Z
+ippools.crd.projectcalico.org                          2022-09-22T07:00:53Z
+ipreservations.crd.projectcalico.org                   2022-09-22T07:00:53Z
+kubecontrollersconfigurations.crd.projectcalico.org    2022-09-22T07:00:53Z
+metrics.autoscaling.internal.knative.dev               2023-01-03T07:25:05Z
+networkpolicies.crd.projectcalico.org                  2022-09-22T07:00:53Z
+networksets.crd.projectcalico.org                      2022-09-22T07:00:53Z
+nodefeaturerules.nfd.k8s-sigs.io                       2023-04-25T07:59:58Z
+nodefeatures.nfd.k8s-sigs.io                           2023-04-25T07:59:58Z
+<b style="color: yellow">nodepools.kube.cloud.ovh.com                           2022-09-22T06:59:43Z</b>
+podautoscalers.autoscaling.internal.knative.dev        2023-01-03T07:25:05Z
+podmonitors.monitoring.coreos.com                      2023-04-26T09:19:12Z
+podvolumebackups.velero.io                             2022-10-04T06:56:54Z
+podvolumerestores.velero.io                            2022-10-04T06:56:54Z
+probes.monitoring.coreos.com                           2023-04-26T09:19:12Z
+...
 </code></pre>
-
 
 You can get the details of the `NodePools` CRD by doing:
 
@@ -163,8 +164,13 @@ spec:
   type: object
 ```
 
-After creation, the `desiredNodes` can be edited, and the node pool will automatically be resized to accommodate this new value. `minNodes`, `maxNodes`, `autoscale` and `autoscaling` can also be edited at any time.
-`flavor`, `monthlyBilled` and `antiAffinity` are not editable. Be aware that `maxNodes` is set by default to 5 when `antiAffinity` is enabled.
+After creation:
+
+- The `desiredNodes` can be edited and the node pool will automatically be resized to accommodate this new value. 
+- `minNodes`, `maxNodes`, `autoscale` and `autoscaling` can also be edited at any time.
+- /!\ `flavor`, `name` and `antiAffinity` are not editable.
+
+Be aware that `maxNodes` is set by default to 5 when `antiAffinity` is enabled.
 
 To configure cluster autoscaling based on node pools, follow documentations [Configuring the cluster autoscaler](../configuring-cluster-autoscaler) and [Cluster autoscaler example](../cluster-autoscaler-example).
 To customers developing they own autoscaling scripts, we strongly encourage you to define `minNodes` and `maxNodes`.
@@ -211,6 +217,11 @@ spec:
   monthlyBilled: false
 ```
 
+> [!primary]
+>
+> `antiAffinity`, `flavor` and `name` fields will not be editable after creation.
+> You cannot change the `monthlyBilled` field from true to false.
+
 Then apply it to your cluster:
 
 ```bash
@@ -218,7 +229,6 @@ kubectl apply -f new-nodepool.yaml
 ```
 
 Your new node pool will be created:
-
 
 <pre class="console"><code>$ kubectl apply -f new-nodepool.yaml
 nodepool.kube.cloud.ovh.com/my-new-node-pool created
@@ -239,11 +249,15 @@ nodepool-b2-7      b2-7     false        true             true           2      
 
 ## Editing the node pool size
 
-To upsize or downsize your node pool, you can use simply edit the YAML file and re-apply  it.
+To upsize or downsize your node pool, you can simply edit the YAML file and re-apply it.
 For example, raise the `desiredNodes` to 5 in `new-nodepool.yaml` and apply the file:
 
-<pre class="console"><code>$ kubectl apply -f examples/new-nodepool.yaml
+<pre class="console"><code>$ kubectl apply -f new-nodepool.yaml
 nodepool.kube.cloud.ovh.com/my-new-node-pool configured
+
+> [!primary]
+>
+> `antiaffinity`, `flavor` and `name` fields can't be edited.
 
 $ kubectl get nodepools
 NAME               FLAVOR   AUTOSCALED   MONTHLY BILLED   ANTIAFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
@@ -297,10 +311,14 @@ You can simply use `kubectl` to delete a node pool, as any other Kubernetes reso
 kubectl delete nodepool my-new-node-pool
 ```
 
+After executing this command, Kubernetes will change the state of the nodes to `Ready,SchedulingDisabled`. After a little time, Nodes will be deleted.
+
 ## Go further
 
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
 
 Otherwise to skip it and push to deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [deploying an application](../deploying-an-application/).
 
-Join our [community of users](https://community.ovh.com/en/).
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our [community of users](https://community.ovh.com/en/).

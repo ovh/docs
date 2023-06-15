@@ -8,7 +8,7 @@ updated: 2022-01-04
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 04/01/2022**
@@ -51,7 +51,7 @@ root@server:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwri
 >
 > Należy dostosować argument --numjobs do liczby CPU, którą dysponuje Twoja instancja. 
 >
-> Listę argumentów i funkcji można odnaleźć w [podręczniku fio](https://github.com/axboe/fio/blob/master/HOWTO).
+> Listę argumentów i funkcji można odnaleźć w [podręczniku fio](https://github.com/axboe/fio/blob/master/HOWTO.rst).
 >
 
 Aby sprawdzić wydajność dodatkowego dysku, należy przejść do jednego z katalogów punktu montażu.

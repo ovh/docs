@@ -8,7 +8,7 @@ updated: 2022-02-07
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
 
 **Ostatnia aktualizacja z dnia 07-02-2022**
@@ -21,7 +21,7 @@ Opcja jest dostępna niemal natychmiast. Fakturowanie jest dostosowane do twoich
 
 Niniejszy przewodnik wyjaśnia, co jest niezbędne do prawidłowego działania produktów.
 <br>Prezentujemy w nim najpierw [globalne podejście do Public Cloud](#global-approach) i kilka ogólnych koncepcji, a [następnie konkretne](#concrete-approach) podejście do korzyści płynących z Public Cloud oraz pierwsze etapy rozwoju.
-<br>Wreszcie, proponujemy zasoby, aby [przejść dalej](#gofurther)
+<br>Wreszcie, proponujemy zasoby, aby [przejść dalej](#gofurther).
 
 Jeśli już znasz te pojęcia, możesz kontynuować proces odkrywania Public Cloud OVHcloud, przechodząc do następujących przewodników:
 
@@ -51,7 +51,7 @@ W katalogu Public Cloud znajdują się zasoby o niskim poziomie, takie jak insta
 <br>Zasoby te są dostarczane jako usługa, w tym sensie, że użytkownik nie musi kupować elementów, używa ich przez pewien czas (np. podczas wynajmu) i po prostu płaci cenę odpowiadającą czasowi użytkowania.
 <br>W większości przypadków korzystanie z tych zasobów nie trwa długo (z wyjątkiem przypadku płatności miesięcznych mających na celu zmniejszenie kosztów).
 
-Gdy proponowany zasób jest "zarządzany", najczęściej mówimy o zasobach w warstwach wysokich, które są już zbliżone do aplikacji, takich jak klaster bazy danych, klaster Kubernetes, model szkolenia SI...
+Gdy proponowany zasób jest "zarządzany", najczęściej mówimy o zasobach w warstwach wysokich, które są już zbliżone do aplikacji, takich jak klaster bazy danych, klaster Kubernetes, rozwiązanie do szkolenia modeli dla AI...
 <br>"Zarządzana" oznacza, że platforma jest wdrażana, monitorowana, utrzymywana (upgrade) przez OVHcloud. Nie musisz się przejmować zarządzaniem usługami. Skorzystaj bezpośrednio z usługi.
 
 Zasoby te są dostępne w naszych centrach danych na całym świecie. OVHcloud oferuje usługi Public Cloud w Europie, Ameryce Północnej, Azji i Oceanii.
@@ -149,5 +149,7 @@ Jedną z największych zalet korzystania ze standardowych i otwartych technologi
 |[Developer Documents](https://developer.openstack.org/) (EN)|Dokumentacja dla programistów, którzy chcą podłączyć aplikację do API OpenStack, korzystając z dostępnych bibliotek/SDK.|
 |[Kubernetes CLI Overview](https://kubernetes.io/docs/reference/kubectl/overview/) (EN)| Dokumentacja dotycząca najważniejszego klienta w wierszu poleceń "kubectl".|
 |[Kubernetes APIs Overview](https://kubernetes.io/docs/reference/using-api/) (EN)| Dokumentacja API Kubernetesa, przydatna przy przeglądzie możliwości.|
+
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

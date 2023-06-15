@@ -49,7 +49,7 @@ ovhai job get <job-id>
 Verify you can connect to the SSH host by running the following command from a terminal / PowerShell window replacing user\@hostname accordingly:
 
 ``` {.bash}
-ssh <job-id>@gra.training.ai.cloud.ovh.net
+ssh <job-id>@gra.ai.cloud.ovh.net
 
 Welcome to OVHcloud AI Training Jobs SSH
 job-0d916855-1cd4-4b66-8803-b4782bc13902:~$
@@ -75,6 +75,8 @@ Enjoy.
 
 - Check how to run Tensorflow code with GPUs [here](https://docs.ovh.com/ca/fr/publiccloud/ai/training/tensorflow-gpu-examples/).
 - You can compare AI models based on resource consumption, accuracy and training time. Refer to this [tutorial](https://docs.ovh.com/ca/fr/publiccloud/ai/training/tuto-models-comparaison-weights-and-biases/).
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

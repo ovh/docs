@@ -8,7 +8,7 @@ updated: 2022-05-02
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 02/05/2022**
@@ -45,7 +45,7 @@ Nella sezione `Il tuo profilo`{.action} a destra dello schermo (clicca di nuovo 
 
 ![myprofile](images/myprofile.png){.thumbnail}
 
-Per maggiori informazioni, consulta la guida [Rendere sicuro il tuo account OVHcloud e gestire i tuoi dati personali](https://docs.ovh.com/it/customer/tutto_sullidentificativo_cliente_ovh/#come-gestire-le-tue-informazioni-personali_1).
+Per maggiori informazioni, consulta la guida [Rendere sicuro il tuo account OVHcloud e gestire i tuoi dati personali](https://docs.ovh.com/it/customer/tutto_sullidentificativo_cliente_ovh/#come-gestire-le-tue-informazioni-personali).
 
 Assicurati che il tuo indirizzo email sia sempre **aggiornato, sicuro e accessibile.** Le email provenienti dai nostri servizi ti verranno inviate a questo indirizzo, compresi i **messaggi di reimpostazione** in caso di perdita della password.
 

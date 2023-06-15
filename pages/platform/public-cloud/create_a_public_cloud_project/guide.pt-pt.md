@@ -7,12 +7,11 @@ order: 1
 updated: 2021-10-06
 ---
 
-**Última atualização 12/10/2021**
-
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
+**Última atualização 12/10/2021**
 
 ## Objetivo
 
@@ -53,5 +52,7 @@ Quando o processo estiver concluído, seu novo projeto Public Cloud estará disp
 ![new project created](images/newprojectcreated.png){.thumbnail}
 
 ## Quer saber mais?
+
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
  
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

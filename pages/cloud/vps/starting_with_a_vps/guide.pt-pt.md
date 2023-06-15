@@ -10,8 +10,6 @@ updated: 2022-03-25
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
-
-**Última atualização: 25/03/2022**
  
 ## Objetivo
 
@@ -29,7 +27,7 @@ Um VPS (Virtual Private Server) é um servidor dedicado virtual. Ao contrário d
 
 - Ter contratado um [VPS OVHcloud](https://www.ovhcloud.com/pt/vps/){.external}.
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
-- Dispor dos dados de acesso enviados por e-mail após a instalação
+- Dispor dos dados de acesso enviados por e-mail após a instalação.
 
 ## Instruções
 
@@ -42,7 +40,7 @@ Este painel de controlo contém informações importantes sobre o serviço e per
 
 Quanto à gama atual de VPS, continue a ler este guia a partir da secção **Primeiros passos (gama VPS atual)**.
 
-Quanto a modelos VPS mais antigos, prossiga a leitura deste guia clicando na seguinte ligação: [Primeiros passos (gama VPS antiga)](./#primeiros-passos-gama-vps-antiga_1).
+Quanto a modelos VPS mais antigos, prossiga a leitura deste guia clicando na seguinte ligação: [Primeiros passos (gama VPS antiga)](./#primeiros-passos-gama-vps-antiga).
 
 ### Primeiros passos (gama VPS atual)
 
@@ -84,7 +82,7 @@ passwd: password updated successfully
 
 #### Ativação das ligações root
 
-Por razões de segurança, a ligação ao utilizador "root" é desativada de forma padrão. Para autorizar este tipo de ligações, consulte as instruções [deste manual](https://docs.ovh.com/pt/vps/root-password/#ativar-a-password-root_1).
+Por razões de segurança, a ligação ao utilizador "root" é desativada de forma padrão. Para autorizar este tipo de ligações, consulte as instruções [deste manual](https://docs.ovh.com/pt/vps/root-password/#ativar-a-password-root).
 
 #### Reinicialização do VPS (gama atual) <a name="reboot-current-range"></a>
 

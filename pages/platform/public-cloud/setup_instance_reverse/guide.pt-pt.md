@@ -24,7 +24,7 @@ Configurar a resolução **Reverse DNS** de uma instância é particularmente ú
 ## Requisitos
 
 - Ter uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud.
-- Um domínio com o seu campo `A` apontando para a instância
+- Um domínio com o seu campo `A` apontando para a instância.
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções

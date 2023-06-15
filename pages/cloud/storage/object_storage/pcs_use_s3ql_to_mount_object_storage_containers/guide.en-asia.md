@@ -21,7 +21,7 @@ You can find more information directly on their [website](http://www.rath.org/s3
 ## Prerequisites
 
 - [Configure user](https://docs.ovh.com/asia/en/public-cloud/creation-and-deletion-of-openstack-user/)
-- [Add storage space](https://docs.ovh.com/asia/en/public-cloud/create_an_object_container/)
+- [Add storage space](https://docs.ovh.com/asia/en/storage/object-storage/pcs/create-container/)
 
 ## Instructions
 
@@ -99,4 +99,6 @@ You cannot use S3QL in offline mode, you should not configure persistance via th
 
 ## Go further
   
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
 Join our community of users on <https://community.ovh.com/en/>.

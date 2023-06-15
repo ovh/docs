@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: eeedfbca-f8ff-4e35-8b34-3cb459ec9211
 full_slug: overthebox-concept

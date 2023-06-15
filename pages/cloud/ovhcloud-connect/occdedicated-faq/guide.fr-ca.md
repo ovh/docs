@@ -52,6 +52,7 @@ Les réseaux locaux virtuels (VLAN) ne sont pas les mêmes dans vos datacenters 
 
 OVHcloud n'héberge pas de matériel réseau pour les clients dans ses datacenters et points de présence (PoP). Le client doit faire héberger ses équipements par son opérateur ou par un tiers puis demander une connexion avec les équipements OVHcloud dans la MeetMeRoom (MMR) des points de présence grâce aux informations fournies dans la Letter of Authorization (LOA). 
 
+
 ### Quelles connectiques sont supportées par OVHcloud Connect ?
 
 Nous supportons la fibre optique mono-mode pour modules SFP/SFP+ compatible soit 1000LX/LH (1Gb/s) soit 10G-LR (10Gb/s).
@@ -72,4 +73,6 @@ Une fois la commande finalisée, OVHcloud fournira au client une Lettre d'autori
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

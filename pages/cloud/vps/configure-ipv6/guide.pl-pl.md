@@ -8,7 +8,7 @@ updated: 2022-12-01
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
 
 **Ostatnia aktualizacja z dnia 01-12-2022**
@@ -27,8 +27,8 @@ IPv6 to najnowsza wersja *Internet Protocol* (IP). Każdy serwer VPS OVHcloud je
 ## Wymagania początkowe
 
 - Posiadanie [serwera VPS OVHcloud](https://www.ovhcloud.com/pl/vps/){.external}.
-- Połączenie z serwerem VPS przez SSH (dostęp root) lub przez zdalny pulpit (Windows)
-- Posiadanie podstawowej wiedzy w zakresie sieci
+- Połączenie z serwerem VPS przez SSH (dostęp root) lub przez zdalny pulpit (Windows).
+- Posiadanie podstawowej wiedzy w zakresie sieci.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub [API OVHcloud](https://api.ovh.com/).
 
 ## W praktyce
@@ -81,7 +81,7 @@ Drugie zapytanie API umożliwia pobranie bramy IPv6 przypisanej do Twojego serwe
 > @api {GET} /vps/{serviceName}/ips/{ipAddress}
 >
 
-Po pobraniu adresów przejdź do etapu 2 "[Zastosuj konfigurację IPv6](#applyipv6)".
+Po pobraniu adresów przejdź do etap 2 "[Zastosuj konfigurację IPv6](#applyipv6)".
 
 ### Etap 2: zastosuj konfigurację IPv6 <a name="applyipv6"></a>
 
@@ -144,7 +144,7 @@ Dzięki temu możesz w prosty sposób oddzielić konfigurację IPv6 i przywróci
 
 Dodaj następujące wiersze do pliku. Zastąp ogólne elementy (np. *YOUR_IPV6*, *IPV6_PREFIX* i *IPV6_GATEWAY*) oraz interfejs sieciowy (jeśli Twój serwer nie używa **eth0**) Twoimi wartościami spersonalizowanymi.
 
-```
+```console
 auto eth0
 iface eth0 inet6 static
 mtu 1500
@@ -169,7 +169,7 @@ systemctl restart networking
 Możesz również dodać powyższą konfigurację do jednego z następujących plików (z uprawnieniami *sudo*), w zależności od generacji systemu operacyjnego zainstalowanego na serwerze:
 
 - plik `/etc/network/interfaces`
-- le fichier `/etc/network/interfaces.d/50-cloud-init.cfg`
+- plik `/etc/network/interfaces.d/50-cloud-init.cfg`
 
 Zalecamy zapisanie odpowiedniego pliku konfiguracyjnego. Na przykład wpisz następujące polecenie:
 
@@ -264,7 +264,7 @@ cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scrip
 
 Następnie zmodyfikuj plik `ifcfg-eth0`, dodając konfigurację IPv6 Twojego serwera. Zastąp elementy ogólne (tj. *YOUR_IPV6*, *IPV6_PREFIX* i *IPV6_GATEWAY*) Twoimi wartościami spersonalizowanymi.
 
-```
+```console
 IPV6INIT=yes
 IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
@@ -280,7 +280,7 @@ IPV6_DEFAULTGW=IPV6_GATEWAY
 
 - Zmień plik i dodaj poniższe linie. Zastąp elementy ogólne (*IPV6_GATEWAY* i **eth0**, jeśli to konieczne) Twoimi wartościami spersonalizowanymi.
 
-```
+```console
 IPV6_GATEWAY dev eth0
 default via IPV6_GATEWAY
 ```
@@ -349,7 +349,7 @@ ping6 proof.ovh.net
 
 - **W przypadku systemu Windows** użyj następującej komendy:
 
-```
+```powershell
 ipconfig
 
 Windows IP Configuration
@@ -367,7 +367,7 @@ Ethernet adapter Ethernet:
 
 Aby przetestować połączenie, możesz użyć następującej komendy:
 
-```
+```powershell
 ping6 proof.ovh.net
 ```
 

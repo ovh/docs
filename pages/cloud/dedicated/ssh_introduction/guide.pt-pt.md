@@ -28,7 +28,7 @@ O protocolo de comunicação SSH (Secure Shell) é a ferramenta principal para e
 
 ## Requisitos
 
-- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) ou um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud.
+- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) ou um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
 - Uma aplicação cliente SSH (em linha de comandos ou em interface gráfica)
 
 > [!primary]
@@ -176,5 +176,7 @@ Para mais informações, consulte a FAQ oficial e a documentação do PuTTY.
 [Modo rescue servidor dedicado](https://docs.ovh.com/pt/dedicated/rescue_mode/)
 
 [VPS em modo de rescue](https://docs.ovh.com/pt/vps/rescue/)
+
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

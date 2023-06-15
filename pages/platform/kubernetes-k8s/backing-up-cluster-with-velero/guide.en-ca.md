@@ -2,8 +2,8 @@
 title: Backing-up an OVHcloud Managed Kubernetes cluster using Velero
 excerpt: Find out how to back-up an OVHcloud Managed Kubernetes cluster using Velero, including Persistent Volumes
 slug: backing-up-cluster-with-velero
-section: Storage
-order: 3
+section: 'Backup and Restore'
+order: 04
 updated: 2023-01-11
 ---
 
@@ -861,3 +861,9 @@ velero backup delete nginx-backup-with-pv
 
 So now you have a working Velero on your cluster.  
 Please refer to [official Velero documentation](https://velero.io/docs/){.external} to learn how to use it, including scheduling backups, using `pre-` and `post-backup` hooks and other matters.
+
+## Go further
+
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our community of users on <https://community.ovh.com/en/>.

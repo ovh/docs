@@ -68,6 +68,7 @@ hosted-private-cloud-hosted-private-cloud-powered-by-vmware-networking: Sistemas
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-networking-secnumcloud-connectivity: SecNumCloud Connectivity
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vrops: VMware vROps
 hosted-private-cloud-sap-ovhcloud: SAP on OVHcloud
+hosted-private-cloud-sap-ovhcloud-concepts: Conceitos
 hosted-private-cloud-sap-ovhcloud-getting-started: Primeiros passos
 hosted-private-cloud-sap-ovhcloud-advanced-usage: Utilização avançada
 ovhcloud-labs-data-collector: Data Collector
@@ -99,6 +100,7 @@ public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Tr
 public-cloud-containers-orchestration-managed-kubernetes-k8s-tutorials: Tutorials
 public-cloud-containers-orchestration-managed-kubernetes-k8s-user-guides: User guides
 public-cloud-containers-orchestration-managed-kubernetes-k8s-network: Network
+public-cloud-containers-orchestration-managed-kubernetes-k8s-backup-and-restore: Backup and Restore
 public-cloud-containers-orchestration-managed-kubernetes-k8s-observability-monitoring: Monitoring & Observability
 public-cloud-containers-orchestration-managed-kubernetes-k8s-traffic-management: Traffic management
 public-cloud-containers-orchestration-managed-kubernetes-k8s-storage: Storage
@@ -163,7 +165,10 @@ public-cloud-compute-instance-management-getting-started: Gestão das instância
 public-cloud-compute-instance-management-control-panel: Gestão a partir da Área de Cliente OVHcloud
 public-cloud-compute-instance-management-horizon: Gestão a partir do Horizon
 public-cloud-compute-instance-management-openstack: Gestão via OpenStack API
+public-cloud-compute-block-storage: Block Storage
 public-cloud-compute-tutorials: Tutoriais
+public-cloud-integrations: Integrations
+public-cloud-integrations-prefect: Prefect
 public-cloud-network: Public Cloud Network Services
 public-cloud-network-concepts: Conceitos
 public-cloud-network-getting-started: Introdução
@@ -204,11 +209,13 @@ web-cloud-domains-dns: DNS
 web-cloud-domains-dns-dns-and-dns-zone: Zonas DNS e DNS
 web-cloud-domains-dns-security: Segurança
 web-cloud-domains-domain-names: Nomes de domínio
+web-cloud-domains-domain-names-general-guides: Guias gerais
 web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Alterar o titular de um domínio (trade)
 web-cloud-domains-domain-names-security: Segurança
 web-cloud-domains-domain-names-transferring-between-registrars: Transferência entre agentes de registo
 web-cloud-domains-domain-names-troubleshooting: Diagnóstico
 web-cloud-domains-domain-names-tutorials: Tutoriais
+web-cloud-domains-domain-names-api: API
 web-cloud-internet: Internet
 web-cloud-internet-internet-access: Acesso Internet
 web-cloud-internet-internet-access-advanced-setup: Configuração avançada
@@ -315,6 +322,7 @@ storage-block-storage: Block Storage
 storage-block-storage-cloud-disk-array: Cloud Disk Array
 storage-backup-and-disaster-recovery-solution: Backup and disaster recovery solution
 storage-backup-and-disaster-recovery-solution-veeam: Veeam
+storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
 network-byoip: Bring your own IP (BYOIP)
 network-additional-ip: Additional IP
 network-ovhcloud-connect: OVHcloud Connect
@@ -329,7 +337,7 @@ network-load-balancer-setting-up: Início
 network-load-balancer-use-cases: Casos de uso
 network-load-balancer-viewing-statuses: Ver estados
 network-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastructure
-infrastructure-as-code-api: API
-infrastructure-as-code-api-apiv6: APIv6
-infrastructure-as-code-api-getting-started: Primeiros passos
-infrastructure-as-code-terraform: Terraform
+manage-operate-api: API
+manage-operate-api-apiv6: APIv6
+manage-operate-api-getting-started: Primeiros passos
+manage-operate-terraform: Terraform

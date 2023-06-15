@@ -19,7 +19,7 @@ SVN, qui est l'abrévation de « subversion », est un système de gestion de ve
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
 
 ## Pre-requis
@@ -59,7 +59,7 @@ Vous devez obtenir les répertoires comme indiqué sur l'image suivante :
 
 Avant de poursuivre il vous faudra créer une paire de clés SSH depuis le poste que vous utiliserez pour vous connecter au dépôt SVN.
 
-Nous vous invitons à suivre le guide [Créer des clés SSH](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/). Il n'est pas nécessaire de suivre l'étape [Importez votre clé SSH dans l’Espace client OVHcloud](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/#importez-votre-cle-ssh-dans-lespace-client-ovhcloud_1) dans ce guide.
+Nous vous invitons à suivre le guide [Créer des clés SSH](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/). Il n'est pas nécessaire de suivre l'étape [Importez votre clé SSH dans l’Espace client OVHcloud](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/#importez-votre-cle-ssh-dans-lespace-client-ovhcloud) dans ce guide.
 
 ### Ajout de la clé publique sur l'hébergement
 

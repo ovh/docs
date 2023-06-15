@@ -4,14 +4,14 @@ excerpt: Hier finden Sie die Antworten zu den am häufigsten gestellten Fragen r
 slug: webhosting-faq
 section: Erste Schritte
 order: 05
-updated: 2022-11-28
+updated: 2023-04-24
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 15.02.2023**
+**Letzte Aktualisierung am 24.04.2023**
 
 ## Verwaltung Ihres Angebots 
 
@@ -66,7 +66,19 @@ Gehen Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hostings.
 Ein Webhosting der Reihe **Performance** beinhaltet ein kostenlos aktivierbares Web Cloud Databases Angebot.
 Wenn Sie Ihr **Performance** Hosting kündigen oder löschen, wird auch der dazugehörige Web Cloud Databases Dienst gekündigt. Um Ihr Web Cloud Databases zu behalten, müssen Sie es vor der Kündigung des Hostings abtrennen.<br>
 
-Klicken Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hostings. Klicken Sie im Abschnitt **Konfiguration** auf die Schaltfläche `...`{.action} rechts von "**Private Datenbank**". Klicken Sie auf `Abtrennen`{.action} und folgen Sie den Anweisungen, um ein unabhängiges Web Cloud Databases Angebot zu bestellen, mit dem Sie Ihr bereits erstelltes Web Cloud Databases beibehalten können.
+Klicken Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hostings. Klicken Sie im Abschnitt **Konfiguration** auf `...`{.action} rechts von **Web Cloud Databases**. Klicken Sie auf `Abtrennen`{.action} und folgen Sie den Anweisungen, um ein eigenständiges Web Cloud Databases Angebot zu bestellen, mit dem Sie Ihren bereits erstellten Web Cloud Databases Dienst beibehalten können.
+
+### Wie kann ich den RAM eines Web Cloud Databases Dienstes erhöhen, das mit einem "Performance" Hosting verbunden ist?
+
+Um den RAM eines Web Cloud Databases Dienstes zu erhöhen, wenn Ihr Web Cloud Databases Dienst an ein **Performance** Webhosting gebunden ist, müssen Sie ihn zuerst von Ihrem **Performance** Hosting trennen, um den Dienst hochzustufen.
+
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, um den Web Cloud Databases Dienst vom Webhosting **Performance** abzutrennen. Klicken Sie auf den Tab `Web Cloud`{.action} und wählen Sie Ihr Hosting unter `Hosting-Pakete`{.action} in der linken Spalte aus.
+
+Auf der neuen Seite `Allgemeine Informationen`{.action} finden Sie mittig den Bereich `Konfiguration`{.action}. Klicken Sie rechts neben `Web Cloud Databases`{.action} auf `...`{.action} und dann auf `Abtrennen`{.action}. Wählen Sie die kürzeste Verlängerungsdauer aus und fahren Sie fort bis zur Bestätigung der Bestellung.
+
+Weitere Informationen finden Sie in unserer Anleitung zur ["Konfiguration eines Web Cloud Databases Anbgebots"](/pages/web/clouddb/configure-database-server#modify-ram-web-cloud-db).
+
+**Diese Aktion ist unwiderruflich. Der Web Cloud Databases Dienst wird anschließend unabhängig von Ihrem Performance Webhosting abgerechnet.**
 
 ## Diagnose
 

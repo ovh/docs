@@ -4,10 +4,10 @@ excerpt: Retrouvez les questions les plus fréquemment posées sur les hébergem
 slug: faq-hebergement
 section: Premiers pas
 order: 05
-updated: 2022-11-28
+updated: 2023-04-24
 ---
 
-**Dernière mise à jour le 07/04/2022**
+**Dernière mise à jour le 24/04/2023**
 
 ## Gestion de votre offre
 
@@ -50,6 +50,21 @@ Consultez le guide [Partager son hébergement entre plusieurs sites](https://doc
 Lorsque vous résiliez ou supprimez votre hébergement mutualisé, l'offre e-mail qui est attachée est également résiliée. Pour conserver vos adresses e-mails, il vous faudra détacher l'offre e-mail avant la résiliation de l'hébergement.<br>
 
 Pour cela, dirigez-vous sur l'onglet `Informations générales`{.action} de votre hébergement. Dans la section **Configuration**, cliquez sur le bouton `...`{.action} à droite de « **Adresses e-mails** ». Cliquez sur `Délier mon option e-mail`{.action} et suivez les instructions pour commander une offre e-mail indépendante qui vous permettra de conserver vos adresses e-mails déjà créées.
+
+### Comment augmenter la RAM d'une offre Web Cloud Databases liée à un hébergement mutualisé « Performance » ?
+
+Pour augmenter la RAM d'une offre Web Cloud Databases liée à un hébergement mutualisé **Performance**, vous devrez obligatoirement et préalablement délier l'offre Web Cloud Databases de votre hébergement **Performance** pour basculer sur une offre supérieure.
+
+
+Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Rendez-vous dans la partie `Web Cloud`{.action} puis sur l'hébergement concerné à gauche dans l'onglet `Hébergements`{.action}. 
+
+Sur la page `Informations générales`{.action} qui s'affiche, vous retrouvez un encadré intitulé `Configuration`{.action} au centre de la page. A droite de la mention `Web Cloud Databases`{.action}, cliquez sur le bouton `...`{.action} puis sur `Délier`{.action}. Choisissez la durée du renouvellement la plus courte puis poursuivez jusqu'à la validation de la commande.
+
+
+Retrouvez plus d'informations dans notre guide sur la ["Configuration d'une offre Web Cloud Databases"](/pages/web/clouddb/configure-database-server#modify-ram-web-cloud-db)
+
+
+**Cette action est irréversible et l'offre Web Cloud Databases sera ensuite facturée indépendamment de votre hébergement web Performance.**
 
 ## Diagnostic
 
@@ -130,7 +145,7 @@ Comparez les `Cibles` des entrées de type `NS` indiquées dans l'onglet `Zone D
 
 - Si les éléments ne sont pas identiques, mais que les `Serveurs DNS` indiqués dans l'onglet du même nom apparaissent dans [cette liste](https://docs.ovh.com/ca/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/), effectuez une réinitialisation en suivant les instructions de [ce guide](https://docs.ovh.com/ca/fr/domains/generalites-serveurs-dns/#reinitialiser-les-serveurs-dns).
 
-- Si les éléments ne sont pas identiques et que les `Serveurs DNS` indiqués dans l'onglet du même nom n'apparaissent pas dans [cette liste](https://docs.ovh.com/ca/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/), contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) via la page des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+- Si les éléments ne sont pas identiques et que les `Serveurs DNS` indiqués dans l'onglet du même nom n'apparaissent pas dans [cette liste](https://docs.ovh.com/ca/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/), contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) via la page des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
 ### Que faire si mon site affiche une erreur « La page ne se redirige pas correctement » ?
 
@@ -149,7 +164,7 @@ Restaurez votre site à son état précédent :
 
 - Si votre site comporte une base de données, consultez notre guide [Restaurer une sauvegarde de votre base de données](https://docs.ovh.com/ca/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client).
 
-Si les restaurations ne vous permettent pas de rétablir l'accès à votre site, contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Si les restaurations ne vous permettent pas de rétablir l'accès à votre site, contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
 ### Que faire si mon site affiche une erreur « 503 error Backend fetch failed (Varnish cache) » ?
 
@@ -157,7 +172,7 @@ Si les restaurations ne vous permettent pas de rétablir l'accès à votre site,
 
 Si vous avez activé [l'option CDN](https://docs.ovh.com/ca/fr/hosting/accelerer-mon-site-web-en-utilisant-le-cdn/) de votre hébergement, désactivez le mode *Maintenance* sur votre site WordPress ou PrestaShop.
 
-Si vous n'avez pas activé cette option ni utilisé le mode *Maintenance*, contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+Si vous n'avez pas activé cette option ni utilisé le mode *Maintenance*, contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
 ### Que faire si mon site affiche une erreur « Your request has been blocked » ?
 

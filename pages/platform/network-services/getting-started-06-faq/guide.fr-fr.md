@@ -88,7 +88,7 @@ Oui, c'est le cas pour une Gateway (routeur L3 avec option SNAT). Actuellement, 
 
 Tout dépend de l’usage :
 
-- Pour les cas d'utilisation sortante (outbound), nous proposons une IP publique partagée et incluse dans Gateway.
+- Pour les cas d'utilisation sortante (outbound), nous proposons une IP publique incluse dans le prix de la Gateway.
 - Pour les cas d'utilisation entrante (inbound) (pour exposer un service s'exécutant sur une instance privée vers Internet), vous devez disposer d'une Floating IP à connecter via Gateway à votre instance ou service réseau.
 
 ### Comment générer une instance privée à utiliser avec l'option Gateway et SNAT ?
@@ -113,5 +113,7 @@ Une Floating IP est une adresse IP publique flexible qui peut être associée à
 Le pool d'une Floating IP doit être « Ext-Net » et vous pouvez l'associer à un port du réseau privé.
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

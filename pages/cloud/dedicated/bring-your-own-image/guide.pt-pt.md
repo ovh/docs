@@ -6,6 +6,10 @@ section: Utilização avançada
 updated: 2022-11-25
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 **Última atualização: 25/11/2022**
 
 ## Objetivo
@@ -46,8 +50,8 @@ Se o seu servidor dispõe de um boot **uefi**, certifique-se de que adiciona uma
 
 **Métodos de implantação**
 
-- [Implementação através da Área de Cliente](#viacontrolpanel)\: permitir-lhe-á implementar rápida e facilmente a sua imagem diretamente a partir da sua Área de Cliente OVHcloud.
-- [Implementação através da API](#viaapi)\: pode utilizar as API OVHcloud para as integrar nos seus próprios scripts para automatizar a implementação.
+- [Implementação através da Área de Cliente](#viacontrolpanel): permitir-lhe-á implementar rápida e facilmente a sua imagem diretamente a partir da sua Área de Cliente OVHcloud.
+- [Implementação através da API](#viaapi): pode utilizar as API OVHcloud para as integrar nos seus próprios scripts para automatizar a implementação.
 
 ### Implementar a sua imagem a partir da Área de Cliente OVHcloud <a name="viacontrolpanel"></a>
 
@@ -65,7 +69,7 @@ Será reencaminhado para a página de configuração. Certifique-se de que o URL
 
 Encontre os detalhes das opções na secção ["Tabelas de opções"](#options) deste manual. 
 
-No que diz respeito à ativação do `ConfigDrive`, consulte a documentação [nesta página](https://cloudinit.readthedocs.io/en/latest/topics/datasources/configdrive.html).
+No que diz respeito à ativação do `ConfigDrive`, consulte a documentação [nesta página](https://cloudinit.readthedocs.io/en/22.1_a/topics/datasources/configdrive.html).
 
 ![bring your ownimage](images/byoi-controlpanel03.png){.thumbnail}
 

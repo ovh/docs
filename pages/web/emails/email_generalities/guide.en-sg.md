@@ -30,7 +30,7 @@ To do this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?acti
 |MX Plan solution legacy version|MX Plan solution new version|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Find the solution in the "Subscription" box|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Locate the `Server reference` in the "Summary" box|
-|Continue to [Legacy version of the MX Plan solution](./#mx-plan-solution-legacy-version_2)|Continue to [New version of the MX Plan solution](./#new-version-of-the-mx-plan-solution)|
+|Continue to [Legacy version of the MX Plan solution](./#mx-plan-solution-legacy-version)|Continue to [New version of the MX Plan solution](./#new-version-of-the-mx-plan-solution)|
 
 ### New version of the MX Plan solution.
 
@@ -123,7 +123,7 @@ In the pop-up window, enter the following information:
 |User name|Enter the name for your email address (firstname.lastname, for example). The domain name concerned is already entered by default.|  
 |Account description|Enter a short description that will distinguish this account from any other accounts added in your OVHcloud Control Panel.|  
 |Account size|Select the size of account you want. This size refers to the space available to your account for storing messages.|  
-|Password|Type in a password, and confirm it. For security reasons, we recommend not using the the same password twice, and choosing one that does not contain any personal information (e.g. first name, surname and date of birth). We also recommend changing your password regularly.|
+|Password|Type in a password, and confirm it. For security reasons, we recommend not using the same password twice, and choosing one that does not contain any personal information (e.g. first name, surname and date of birth). We also recommend changing your password regularly.|
 
 Once you have completed the text fields, click `Next`{.action} and then check the information that appears in the summary. If it is all correct, click `Confirm`{.action} . Repeat this step as necessary according to the number of accounts you have.
 

@@ -4,13 +4,11 @@ slug: pierwsze-kroki-z-clouddb
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z rozwiązania Web Cloud Databases'
 section: 'Pierwsze kroki'
 order: 01
-updated: 2023-02-15
+updated: 2023-05-31
 ---
 
-**Ostatnia aktualizacja dnia 15-02-2023**
-
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie
@@ -194,7 +192,8 @@ Aby pomyślnie zakończyć tę operację, potrzebne Ci będą następujące info
 
 > [!warning]
 >
-> W rzadkich przypadkach pole `port`{.action} może się nie pojawić w konfiguracji Twojej strony WWW. Jeśli taki przypadek wystąpi, pole to należy dodać po nazwie hosta. Dane te muszą być oddzielone dwukropkiem *:* (na przykład: nazwahosta: port).
+> Pole `port`{.action} może nie być dostępne w konfiguracji witryny. Będziesz musiał dodać to pole po nazwie hosta swojego serwera, oddzielając je znakiem *:*. <br><br>
+> Na przykład dla nazwy hosta `zz1111111-002.eu.clouddb.ovh.net` z portem SQL `34567` należy wpisać `zz1111111-002.eu.clouddb.ovh.net:34567` w Część "Host" / "Nazwa hosta".
 >
 
 ![cloud databases - bazy danych na instancji](images/web-cloud-databases-login-information.png){.thumbnail}

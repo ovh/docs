@@ -3,8 +3,10 @@ title: 'Tworzenie kopii danych i baz danych na serwerze Storage'
 slug: tworzenie-kopii-danych-i-baz-danych-na-serwerze-storage
 excerpt: 'Zabezpiecz Twoje dane w 5 krokach'
 section: Tutorial
-updated: 2022-02-09
+updated: 2018-09-12
 ---
+
+**Ostatnia aktualizacja z dnia 12-09-2018**
 
 ## Wprowadzenie 
 
@@ -67,11 +69,11 @@ Nie można powiedzieć, że jeden RAID jest lepszy od innego, każdy z nich odpo
 
 ### Etap 2: instalacja i konfiguracja serwera
 
-Przejdź do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wykonaj instalację systemu. Jak zostało wspomniane na początku, będziemy używać dystrybucji Debian 9.4. Więcej informacji znajdziesz w przewodniku [Pierwsze kroki z serwerem dedykowanym](https://docs.ovh.com/pl/dedicated/pierwsze-kroki-z-serwerem-dedykowanym/#instalacja-lub-reinstalacja-serwera-dedykowanego_1){.external}.
+Przejdź do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wykonaj instalację systemu. Jak zostało wspomniane na początku, będziemy używać dystrybucji Debian 9.4. Więcej informacji znajdziesz w przewodniku [Pierwsze kroki z serwerem dedykowanym](https://docs.ovh.com/pl/dedicated/pierwsze-kroki-z-serwerem-dedykowanym/#instalacja-lub-reinstalacja-serwera-dedykowanego){.external}.
 
 Po wybraniu systemu do instalacji zaznacz pole `Spersonalizuj konfigurację partycji`{.action}.
 
-![Personalizuj konfigurację partycji](images/partition_customization.png){.thumbnail}
+![Personalizuj konfigurację partycji](images/custompartition.png){.thumbnail}
 
 Na tym etapie zmodyfikujesz typ macierzy RAID w Twoim katalogu `/home` (1) i, jeśli chcesz, rozszerzysz partycję (2).
 

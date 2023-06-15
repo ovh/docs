@@ -3,8 +3,10 @@ title: 'Sauvegarder mes informations et mes bases de données dans un serveur de
 slug: sauvegarder-informations-bases-de-donnees-serveur-stockage
 excerpt: 'Sécuriser ses données en 5 étapes'
 section: Tutoriel
-updated: 2022-02-09
+updated: 2018-09-12
 ---
+
+**Dernière mise à jour le 12/09/2018**
 
 ## Introduction
 
@@ -67,11 +69,11 @@ Il n'existe pas de RAID meilleur que les autres, tous répondent à des besoins 
 
 ### Étape 2 : installez et configurez le serveur
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et installez votre serveur. Comme indiqué au début, nous allons utiliser Debian 9.4. Référez-vous à notre guide des [premiers pas sur un serveur dédié](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/#installation-ou-reinstallation-de-votre-serveur-dedie_1){.external} pour plus d'informations.
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et installez votre serveur. Comme indiqué au début, nous allons utiliser Debian 9.4. Référez-vous à notre guide des [premiers pas sur un serveur dédié](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/#installation-ou-reinstallation-de-votre-serveur-dedie){.external} pour plus d'informations.
 
 Une fois le système sélectionné pour l'installation, cochez la case `Personnaliser la configuration des partitions`{.action}.
 
-![Personnaliser la configuration des partitions](images/partition_customization.png){.thumbnail}
+![Personnaliser la configuration des partitions](images/custompartition.png){.thumbnail}
 
 C'est à cette étape que vous allez modifier le type de RAID de votre `/home` (1) et, si vous le souhaitez, étendre la partition (2).
 

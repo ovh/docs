@@ -4,10 +4,10 @@ slug: mongodb/capabilities
 excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
 section: MongoDB - Guides
 order: 010
-updated: 2023-03-13
+updated: 2023-05-23
 ---
 
-**Last updated March 13th, 2023**
+**Last updated May 23rd, 2023**
 
 ## Objective
 
@@ -35,7 +35,7 @@ The Public Cloud Databases offer supports the following MongoDB versions:
 - MongoDB 5.0
 - MongoDB 6.0
 
-MongoDB recommends always installing and using the latest stable version of MongoDB. See [MongoDB Versioning](https://docs.mongodb.com/manual/reference/versioning/){.external} for more information.
+Please refer to the [DBMS lifecycle policy guide](/pages/platform/databases/information_02_lifecycle_policy) for recommendations on version upgrades and end of life announcements of major versions. Additionally, MongoDB recommends always installing and using the latest stable version of MongoDB. See [MongoDB Versioning](https://docs.mongodb.com/manual/reference/versioning/){.external} for more information.
 
 ### MongoDB Drivers
 
@@ -58,6 +58,9 @@ Here is an overview of the various plans' capabilities:
 | *Enterprise* | 3 to 8          | Enterprise      | Available     | Available |
 
 Your choice of plan affects the number of nodes your cluster can run as well as the MongoDB license type.
+
+> [!primary]
+> Be aware that you will be able to upgrade your plan but you won't be able to downgrade it afterwards.
 
 #### Nodes
 
@@ -87,6 +90,10 @@ Here are the node types you can choose from:
 
 Right now, all nodes of a given cluster should be of the same type and live in the same regions.
 
+#### Flexible storage
+
+You can increase the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](/pages/platform/databases/databases_11_resize_your_cluster_storage) for more information.
+
 #### Disk type
 
 The type of storage available may vary according to the region your cluster lives in: see [Availability of Public Cloud products](https://www.ovhcloud.com/en-gb/public-cloud/regions-availability/) for more information about block storage type availability depending on region. Thus, your cluster may be backed by e.g. *High Speed* or *High Speed Gen2* block storage.
@@ -105,6 +112,8 @@ We try hard to avoid "disk full" situations that could be harmful to cluster hea
 2. receive a second email alert once cluster is reaching 90% storage capacity;
 3. have his database instance moved in "read-only" mode, meaning no more writes can be done.
 
+See the [Handling «Disk Full» situations documentation](/pages/platform/databases/databases_10_full_disk_handling) for more information.
+
 ### Features
 
 #### Network
@@ -121,7 +130,11 @@ Here are some considerations to take into account when using private network:
 
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
 - **DHCP must be enabled** in your private network in order to launch MongoDB clusters in the said private network.
-- When connecting from outside subnet, Openstack IP gateway must be enabled in the subnet use for the Database service. The customer is responsible for any other custom network setup.
+- When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
+
+##### Authorised IPs
+
+Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic. Until then, your service will be unreachable.
 
 #### Backups
 
@@ -130,6 +143,8 @@ Here are some considerations to take into account when using private network:
 *Business* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 7 days.
 
 *Enterprise* plan clusters are automatically backed up daily during their maintenance window, with [PITR](https://en.wikipedia.org/wiki/Point-in-time_recovery){.external} support. Backup retention is 30 days with PITR capability for the last 24 hours.
+
+See the [Automated Backups guide](/pages/platform/databases/databases_05_automated_backups) for more information.
 
 #### Logs and Metrics
 
@@ -175,6 +190,8 @@ Furthermore, user creation from the MongoDB Shell is **not** supported: You need
 
 ## We want your feedback!
 
-We would love to help answer questions and appreciate any feedback you may have. Join our community of users on <https://community.ovh.com/en/>.
+We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. Join our community of users on <https://community.ovh.com/en/>.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

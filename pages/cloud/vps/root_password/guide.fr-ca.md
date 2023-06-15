@@ -26,7 +26,7 @@ Il peut être nécessaire de modifier le mot de passe root sur votre système d'
 
 > [!warning]
 >
-> OVHcloud met à votre disposition des machines dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
+> OVHcloud met à votre disposition des machines dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
 > 
 
 ## En pratique
@@ -40,15 +40,16 @@ Il peut être nécessaire de modifier le mot de passe root sur votre système d'
 
 Connectez-vous à votre VPS via SSH. Basculez vers l'utilisateur root, si nécessaire :
 
-```sh
-~$ sudo su -
-~#
+```bash
+sudo su -
+#
 ```
 
 Modifiez le mot de passe de l'utilisateur actuel :
 
-```sh
-~# passwd
+```bash
+passwd
+
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -59,7 +60,7 @@ passwd: password updated successfully
 > Sur une distribution Linux, le mot de passe que vous tapez **n'apparaîtra pas**.
 >
 
-Si vous devez autoriser la connexion en tant qu'utilisateur root, suivez les étapes de [cette section](./#activer-le-mot-de-passe-root_1).
+Si vous devez autoriser la connexion en tant qu'utilisateur root, suivez les étapes de [cette section](./#activer-le-mot-de-passe-root).
 
 ### Modification du mot de passe si vous l'avez perdu
 
@@ -128,8 +129,9 @@ Vous pouvez procéder à une vérification en tapant la commande `ls -l`, qui r�
 
 Dans la dernière étape, modifiez votre mot de passe à l'aide de la commande `passwd`.
 
-```sh
-~# passwd
+```bash
+passwd
+
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -139,8 +141,8 @@ Si votre VPS est de dernière génération (son nom est alors : *vps-XXXXXXX.vps
 
 Il est donc nécessaire d'entrer le nom d'utilisateur que vous utilisez pour vous connecter après `passwd` :
 
-```sh
-~# passwd <username>
+```bash
+~# passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -190,7 +192,7 @@ Enregistrez le fichier et quittez l'éditeur.
 ~$ systemctl restart sshd
 ```
 
-Cela devrait suffire pour appliquer les modifications. Vous pouvez également redémarrer le VPS (```~$ reboot```).
+Cela devrait suffire pour appliquer les modifications. Vous pouvez également redémarrer le VPS (`~$ sudo reboot`).
 
 ### Dysfonctionnement
 

@@ -42,7 +42,7 @@ Jeśli tekst zawiera 2 przejścia do nowego wiersza (podwójne /n) lub jeśli wp
 Aby wysłać wiadomość SMS zawierającą te elementy, musisz to zrobić w Panelu klienta lub przez interfejs API.
 >
 
-Dalsze informacje na temat dozwolonych znaków w kodowaniu 7-bitowym zawiera [załącznik](./#zalacznik_1) na dole tego przewodnika.
+Dalsze informacje na temat dozwolonych znaków w kodowaniu 7-bitowym zawiera [załącznik](./#zalacznik) na dole tego przewodnika.
 
 > [!warning]
 >

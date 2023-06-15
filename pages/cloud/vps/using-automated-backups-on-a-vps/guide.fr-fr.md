@@ -23,7 +23,7 @@ Cette option vous offre un moyen pratique de disposer fréquemment de sauvegarde
 
 ## Prérequis
 
-- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Un VPS OVHcloud déjà configuré
 - Un accès administrateur (root) en SSH à votre VPS (facultatif)
 
@@ -75,7 +75,7 @@ Cette option permet d'accéder aux données de sauvegarde au cas où vous ne sou
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 >
 
 Cliquez sur `...`{.action} à droite de la sauvegarde souhaitée et sélectionnez `Montage`{.action}.
@@ -92,13 +92,13 @@ Connectez-vous à votre VPS en SSH.
 
 Vous pouvez utiliser la commande suivante pour vérifier le nom du nouveau périphérique connecté :
 
-```
+```bash
 $ lsblk
 ```
 
 Voici un exemple de résultat de cette commande :
 
-```
+```console
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda       8:0    0   25G  0 disk 
 ├─sda1    8:1    0 24.9G  0 part /
@@ -113,7 +113,7 @@ sdb       8:16   0   25G  0 disk
 Dans cet exemple, la partition contenant votre système de fichiers de sauvegarde est nommée "sdb1".
 Créez à présent un répertoire pour cette partition et définissez-le comme point de montage :
 
-```
+```bash
 $ mkdir -p /mnt/restore
 $ mount /dev/sdb1 /mnt/restore
 ```
@@ -132,7 +132,7 @@ Votre sauvegarde montée apparaîtra comme un disque de base avec le même espac
 
 ![mounted backup](images/windowsbackup2.png){.thumbnail}
 
-Le disque apparaîtra comme `hors ligne`, faites un clic-droit sur le disque et sélectionnez `En ligne`(action).
+Le disque apparaîtra comme `hors ligne`, faites un clic-droit sur le disque et sélectionnez `En ligne`{.action}.
 
 ![online backup](images/windowsbackup3.png){.thumbnail}
 
@@ -158,27 +158,27 @@ Le *qemu-guest-agent* requis n'est pas installé par défaut sur la plupart des 
 
 Utilisez la commande suivante pour vérifier si le système est correctement configuré pour les snapshots :
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Si le résultat est différent (« No such file or directory »), installez le dernier package :
 
-```
+```bash
 $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
 Redémarrez le VPS:
 
-```
+```bash
 $ sudo reboot
 ```
 
 Démarrez le service pour vous assurer qu'il est en cours d'exécution :
 
-```
+```bash
 $ sudo service qemu-guest-agent start
 ```
 
@@ -186,38 +186,38 @@ $ sudo service qemu-guest-agent start
 
 Utilisez la commande suivante pour vérifier si le système est correctement configuré pour les snapshots :
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Si le résultat est différent (« No such file or directory »), installez et activez l'agent :
 
-```
+```bash
 $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
 Redémarrez le VPS:
 
-```
+```bash
 $ sudo reboot
 ```
 
 Démarrez l'agent et vérifiez qu'il est en cours d'exécution :
 
-```
+```bash
 $ sudo service qemu-guest-agent start
 $ sudo service qemu-guest-agent status
 ```
 
 ##### **Windows**
 
-Vous pouvez installer l'agent via un fichier MSI, disponible sur le site du projet Fedora: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
+Vous pouvez installer l'agent via un fichier MSI, disponible sur le site du projet Fedora: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>.
 
 Vérifiez que le service est en cours d'exécution à l'aide de la commande powershell suivante :
 
-```
+```powershell
 PS C:\Users\Administrator> Get-Service QEMU-GA
 Status   Name               DisplayName
 ------   ----               -----------

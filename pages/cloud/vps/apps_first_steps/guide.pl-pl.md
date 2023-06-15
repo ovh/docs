@@ -10,7 +10,7 @@ updated: 2022-08-25
 **Ostatnia aktualizacja z dnia 25/08/2022**
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
 ## Wprowadzenie
@@ -67,7 +67,7 @@ Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalo
 1. Otwórz otrzymany e-mail zawierający dane do logowania do aplikacji.
 2. W tym e-mailu kliknij link Pleska.
 3. Zaloguj się za pomocą nazwy użytkownika i hasła dostępnych w e-mailu.
-4. Po zalogowaniu Plesk poprosi:
+4. Po zalogowaniu Plesk poprosi:<br>
     a) Twoje dane kontaktowe.  
     b) Nowe hasło dla użytkownika "admin", którego będziesz używał do logowania się do interfejsu Plesk.  
     c) Informacje o licencji.*  

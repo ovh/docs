@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Compatibilité S3
 slug: s3/s3-compliancy
-excerpt:
+excerpt: "Découvrez la compatibilité de l'API S3 OVHcloud par rapport à l'API AWS S3"
 section: Informations générales
 order: 010
 updated: 2021-12-08
@@ -92,5 +92,7 @@ Ce guide a pour objectif d'énumérer les fonctionnalités de l'API S3 supporté
 | Upload Part - Copy | ✅ |
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.

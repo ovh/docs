@@ -3,14 +3,14 @@ title: 'Automatyczna kopia zapasowa - kernel panic (cPanel)'
 slug: cpanel_auto_backup
 excerpt: 'Dowiedz się, jak usunąć problemy z blokowaniem serwerów cPanel podczas wykonywania automatycznej kopii zapasowej OVHcloud'
 section: 'Poziom zaawansowany'
-updated: 2021-03-09
+updated: 2023-06-06
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 09-03-2021**
+**Ostatnia aktualizacja z dnia 06-06-2023**
 
 ## Wprowadzenie
 
@@ -38,13 +38,13 @@ Proszę wybrać ostrożnie, ponieważ każda z nich ma swoje wady i zalety.
 
 Najpierw należy sprawdzić, czy QEMU Guest Agent działa na Twoim serwerze. Możesz to sprawdzić za pomocą polecenia:
 
-```
+```bash
 systemctl status qemu-guest-agent
 ```
 
 Status usługi jest wskazany obok opcji "Active:". Jeśli usługa jest aktywna lub wykonywana, należy ją zatrzymać i wyłączyć, aby w przyszłości uniemożliwić jej ponowne uruchomienie. W tym celu użyj następujących poleceń:
 
-```
+```bash
 systemctl stop qemu-guest-agent
 systemctl disable qemu-guest-agent
 ```
@@ -63,6 +63,16 @@ Ta opcja pozwala włączyć/wyłączyć korzystanie z Jailed Shell dla nowych ko
 Ta opcja nie ma wpływu na konta, które są dostępne na serwerze, ale nie zostały zmodyfikowane w tych interfejsach.
 
 Aby wyłączyć środowisko Jailed Shell od określonego użytkownika, użyj interfejsu "WHM's Manage Shell Access" (WHM >> Home Account Functions >> Manage >> Shell Access).
+
+Wszystkie te informacje są dostępne w [oficjalnej dokumentacji cPanel](https://docs.cpanel.net/knowledge-base/accounts/virtfs-jailed-shell/#disable-or-remove-a-jailed-shell-environment).
+
+> [!warning]
+>
+> Jak wskazano w cPanel, niektóre funkcje mogą nadal używać folderów utworzonych przez Jailed Shell. Dzięki temu, pomimo wyłączenia środowiska Jailed Shell, możesz nadal doświadczać trudności w zarządzaniu kopiami zapasowymi.
+>
+> Jeśli jednak chcesz wyłączyć funkcję Jailed Shell i usunąć utworzone katalogi "virtfs", pamiętaj, że usunięcie katalogu "virtfs" może spowodować utratę danych użytkowników.
+>
+> Upewnij się, czy wykonałeś wcześniej wszystkie niezbędne kopie zapasowe.
 
 ### Wyłącz bezpieczeństwo partycji /tmp na cPanel
 

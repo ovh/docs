@@ -12,8 +12,8 @@ updated: 2021-04-20
 
 It may become necessary to change the root password on your GNU/Linux operating system. There are two possible scenarios:
 
-- You are still able to log in via SSH
-- You are unable to log in via SSH because you have lost your password
+- You are still able to log in via SSH.
+- You are unable to log in via SSH because you have lost your password.
 
 **This guide will explain how to proceed with changing your admin password depending on the initial situation.**
 
@@ -40,15 +40,16 @@ It may become necessary to change the root password on your GNU/Linux operating 
 
 Log in to your VPS via SSH. Switch to the root user, if necessary:
 
-```sh
-~$ sudo su -
-~#
+```bash
+sudo su -
+#
 ```
 
 Change the password of the current user:
 
-```sh
-~# passwd
+```bash
+passwd
+
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -59,7 +60,7 @@ passwd: password updated successfully
 > On a GNU/Linux distribution, the password you enter **will not appear**.
 >
 
-If you need to permit logging in as root, follow the steps in [this guide section](./#enabling-root-login_1).
+If you need to permit logging in as root, follow the steps in [this guide section](./#enabling-root-login).
 
 ### Changing the password if you have lost it
 
@@ -75,8 +76,11 @@ On older VPS ranges, your partitions will be automatically mounted in rescue mod
 
 ##### **df -h**
 
-```sh
-~$ df -h
+```bash
+df -h
+```
+
+```console
 Filesystem      Size  Used Avail Use% Mounted on
 udev            5.8G     0  5.8G   0% /dev
 tmpfs           1.2G   17M  1.2G   2% /run
@@ -90,8 +94,12 @@ tmpfs           5.8G     0  5.8G   0% /sys/fs/cgroup
 
 ##### **lsblk**
 
-```sh
-~$ lsblk
+
+```bash
+lsblk
+```
+
+```console
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda       8:0    0  2.5G  0 disk
 └─sda1    8:1    0  2.5G  0 part /
@@ -128,8 +136,9 @@ You can check by typing the `ls -l` command, which will list the content stored 
 
 In the last step, change your password with the `passwd` command.
 
-```sh
-~# passwd
+```bash
+passwd
+
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -139,8 +148,8 @@ If your VPS is of the current ranges (naming scheme: *vps-XXXXXXX.vps.ovh.net*),
 
 It is therefore necessary to enter the username you actually use to log in after `passwd`:
 
-```sh
-~# passwd <username>
+```bash
+~# passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -190,7 +199,7 @@ Save the file and exit the editor.
 ~$ systemctl restart sshd
 ```
 
-This should be sufficient to apply the changes. Alternatively, reboot the VPS (```~$ reboot```).
+This should be sufficient to apply the changes. Alternatively, reboot the VPS (`~$ sudo reboot`).
 
 ### Troubleshooting
 

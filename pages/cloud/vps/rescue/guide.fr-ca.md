@@ -35,7 +35,7 @@ Effectuer des vérifications en mode rescue vous aide également à déterminer 
 
 > [!warning]
 >
-> OVHcloud met à votre disposition des machines dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section “Aller plus loin” de ce guide.
+> OVHcloud met à votre disposition des machines dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section “Aller plus loin” de ce guide.
 > 
 
 ## En pratique
@@ -99,7 +99,7 @@ sdb      8:16   0   80G  0 disk
 
 Ensuite, montez la partition :
 
-```
+```bash
 [RESCUE] root@vps-111111d:~ $ mount /dev/sdb1 /mnt
 ```
 
@@ -116,4 +116,3 @@ Une fois vos actions terminées en mode rescue, redémarrez le VPS en mode « no
 [Introduction au SSH](../../dedicated/ssh-introduction/)
 
 Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.
-

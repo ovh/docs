@@ -19,7 +19,7 @@ L'utilisation de vos bases de données peut entraîner un certain nombre d'anoma
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
 >
 
 ## Prérequis
@@ -55,7 +55,7 @@ Connectez-vous en [FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockag
 >
 > Le choix et la configuration du fichier comportant les informations de connexion à la base de données est inhérent à l'éditeur de contenu (CMS) concerné et non à OVHcloud.
 >
-> Nous vous recommandons donc de vous rapprocher de l’éditeur du [CMS](https://docs.ovh.com/fr/hosting/modules-en-1-clic/) utilisé pour créer votre site ou de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) en cas de besoin. Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
+> Nous vous recommandons donc de vous rapprocher de l’éditeur du [CMS](https://docs.ovh.com/fr/hosting/modules-en-1-clic/) utilisé pour créer votre site ou de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) en cas de besoin. Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
 Vérifiez ensuite la correspondance **exacte** entre les identifiants de connexion à [PhpMyAdmin](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/#acceder-a-linterface-phpmyadmin) et ceux du fichier de configuration de votre site.
@@ -92,7 +92,7 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 >
 > Si ces manipulations ne vous permettent pas de rétablir l'accès à votre site, [sauvegardez votre base de données](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/) puis [restaurez-la à une date antérieure](https://docs.ovh.com/fr/hosting/restaurer-importer-base-de-donnees/#1-restaurer-une-sauvegarde-existante) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 >
-> Contactez ensuite un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si nécessaire. Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
+> Contactez ensuite un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si nécessaire. Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
 ### Dépassement du quota autorisé de la base de données
@@ -113,7 +113,7 @@ Si vous disposez d'une formule **Perso2014** ou **Pro2014**, nous vous conseillo
 >
 > Dans ce cas, le changement d'offre d'hébergement est inefficace, car votre base de données continuera à se remplir.
 >
-> Nous vous conseillons donc, si vous constatez une augmentation soudaine de la taille de votre base de données ou si vous disposez d'un site de type « blog » normalement peu consommateur de données, de contacter immédiatement un [prestataire spécialisé](https://partner.ovhcloud.com/fr/). Nous ne serons pas en mesure de vous apporter un support sur ce sujet.
+> Nous vous conseillons donc, si vous constatez une augmentation soudaine de la taille de votre base de données ou si vous disposez d'un site de type « blog » normalement peu consommateur de données, de contacter immédiatement un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/). Nous ne serons pas en mesure de vous apporter un support sur ce sujet.
 >
 
 Pour effectuer ce changement, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis cliquez sur `Hébergements`{.action}, puis sur l'hébergement concerné. Cliquez sur le bouton `...`{.action} dans la rubrique `Offre` sur la droite de votre écran puis sur `Changer d'offre`{.action}.
@@ -141,16 +141,16 @@ Relancez ensuite le calcul du quota utilisé depuis l'onglet `Bases de données`
 
 > [!warning]
 >
-> Cette opération nécessite de fortes compétences techniques. Nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) en cas de besoin pour la réaliser. Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
+> Cette opération nécessite de fortes compétences techniques. Nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) en cas de besoin pour la réaliser. Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
 >
 
 #### Méthode 4 : optimiser votre base de données
 
-Pour optimiser votre base de données, suivez les instructions de notre guide « [Configurer votre serveur de bases de données](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) ». Relancez ensuite le calcul du quota utilisé depuis l'onglet `Bases de données`{.action} de votre hébergement, en cliquant sur le bouton `...`{.action} de la base de données concernée.
+Pour optimiser votre base de données, suivez les instructions de notre guide « [Configurer votre serveur de bases de données](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees) ». Relancez ensuite le calcul du quota utilisé depuis l'onglet `Bases de données`{.action} de votre hébergement, en cliquant sur le bouton `...`{.action} de la base de données concernée.
 
 > [!warning]
 >
-> Si les conseils fournis sur l'optimisation de votre base de données ne suffisaient pas à débloquer l'accès à votre site, nous vous conseillons de contacter notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
+> Si les conseils fournis sur l'optimisation de votre base de données ne suffisaient pas à débloquer l'accès à votre site, nous vous conseillons de contacter notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
 ### Dépassements de la mémoire RAM
@@ -159,7 +159,7 @@ Le message suivant dans la partie `Bases de données`{.action} de votre [espace 
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
-Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#modifier-loffre-du-serveur-de-bases-de-donnees_1) disponible depuis la partie `Bases de données`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} dans la rubrique `RAM`.
+Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#modifier-loffre-du-serveur-de-bases-de-donnees) disponible depuis la partie `Bases de données`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} dans la rubrique `RAM`.
 
 > [!warning]
 >
@@ -170,11 +170,11 @@ Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](https
 > Dans la zone `Configuration`, cliquez sur le bouton `...`{.action} à droite de l'entrée de la `Base de données privée` puis cliquez sur le bouton `Délier`{.action}.
 >
 
-Vous pouvez également optimiser votre base de données en suivant les instructions de notre guide « [Configurer votre serveur de bases de données](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) ».
+Vous pouvez également optimiser votre base de données en suivant les instructions de notre guide « [Configurer votre serveur de bases de données](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees) ».
 
 > [!primary]
 >
-> Si vous rencontrez des difficultés à diminuer l'utilisation des ressources sur votre serveur de bases de données et que vous ne souhaitez pas les augmenter, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
+> Si vous rencontrez des difficultés à diminuer l'utilisation des ressources sur votre serveur de bases de données et que vous ne souhaitez pas les augmenter, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/). Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
 ### Erreurs d'import de bases de données
@@ -195,7 +195,7 @@ Vous pouvez également cocher la case `Vider la base de données actuelle`{.acti
 
 ![database-import-empty](images/database-import-empty.png){.thumbnail}
 
-Contactez si besoin notre [communauté d'utilisateurs](https://community.ovh.com) ou un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) à ce sujet. Nous ne serons pas en mesure de vous fournir une assistance sur la correction de cette anomalie.
+Contactez si besoin notre [communauté d'utilisateurs](https://community.ovh.com) ou un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) à ce sujet. Nous ne serons pas en mesure de vous fournir une assistance sur la correction de cette anomalie.
 
 > [!faq]
 >
@@ -205,13 +205,13 @@ Avoir un **« trigger »** dans votre script n'est, par exemple, pas autorisé s
 
 Par ailleurs, la requête suivante n'est pas autorisée :
 
-```mysql
+```sql
 CREATE DATABASE IF NOT EXISTS `Database-Name` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
 ```
 
 Remplacez-la par :
 
-```mysql
+```sql
 USE `Database-Name`;
 ```
 
@@ -229,9 +229,9 @@ Pour résoudre cette anomalie, vous pouvez :
 
 - Augmenter la [quantité de mémoire vive (RAM)](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#suivre-la-ram-consommee). Pour cela, rendez vous sur le [serveur Web Cloud Databases](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/) concerné dans la rubrique `Bases de données`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez ensuite sur le bouton `...`{.action} dans la partie `RAM`, puis sur `Changer la quantité de RAM`{.action}.
 
-- Fractionner votre base de données, afin de l'importer en plusieurs opérations au lieu d'une seule (pour toute question sur les manipulations à réaliser, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.)
+- Fractionner votre base de données, afin de l'importer en plusieurs opérations au lieu d'une seule (pour toute question sur les manipulations à réaliser, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.)
 
-- [Optimisez votre base de données](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) puis répétez les opérations d'export / import.
+- [Optimisez votre base de données](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees) puis répétez les opérations d'export / import.
 
 ### Impossible d'accéder à PhpMyAdmin
 
@@ -259,11 +259,11 @@ Ce nombre est de **200** pour les bases des serveurs [Web Cloud Databases](https
 
 Ce message apparaît lors de la [connexion à PhpMyAdmin](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/#acceder-a-linterface-phpmyadmin) lorsque ce nombre maximal de connexions est dépassé.
 
-Dans cette situation, vous devrez [optimiser vos bases de données](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) afin de réduire le nombre de connexions actives.
+Dans cette situation, vous devrez [optimiser vos bases de données](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees) afin de réduire le nombre de connexions actives.
 
 > [!warning]
 >
-> Pour toute question sur les manipulations à réaliser afin de réduire le nombre de connexions actives sur votre base de données, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
+> Pour toute question sur les manipulations à réaliser afin de réduire le nombre de connexions actives sur votre base de données, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
 #### « Name or service not known »
@@ -291,7 +291,7 @@ Disposer d'un serveur [Cloud Databases](https://docs.ovh.com/fr/clouddb/) vous p
 
 Si cette connexion s'avère impossible, commencez par vérifier que vous avez bien [autorisé votre adresse IP publique](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/#autoriser-une-adresse-ip) à se connecter au serveur de bases de données.
 
-Si cette opération a bien été réalisée, contactez votre Fournisseur d'Accès à Internet ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). Nous ne serons pas en mesure de vous fournir une assistance dans cette situation.
+Si cette opération a bien été réalisée, contactez votre Fournisseur d'Accès à Internet ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/). Nous ne serons pas en mesure de vous fournir une assistance dans cette situation.
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
@@ -299,6 +299,6 @@ Si cette opération a bien été réalisée, contactez votre Fournisseur d'Accè
 
 [Premiers pas avec le service Web Cloud Databases](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

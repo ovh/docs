@@ -5,10 +5,10 @@ excerpt: "Find out how to resize an instance in the Horizon interface"
 legacy_guide_number: 1778
 section: Horizon
 order: 11
-updated: 2021-11-22
+updated: 2023-05-24
 ---
 
-**Last updated 22nd November 2021**
+**Last updated 24th May 2023**
 
 ## Objective
 
@@ -20,12 +20,17 @@ As a result of increased activity, or simply new needs, your instance may not be
 >
 > Only upscaling is possible for classic models.
 > In addition, this manipulation causes the instance to be shut down for the time of the operation.
-> 
+>
+
+> [!warning]
+>
+> Metal instances can only be resized to and from other Metal flavors.
+>
 
 > [!success]
 >
 > Flex instances allow resizing to higher or lower models due to a locked single disk size.
-> 
+>
 
 ## Requirements
 

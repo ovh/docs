@@ -5,7 +5,7 @@ order: 3
 updated: 2018-10-09
 ---
 
-Date: Oct 4, 2018
+**Last updated 4th October 2018**
 
 ## Currently supported sources
 

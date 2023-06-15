@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: 48d29f4c-265f-4a1a-8563-9deac9a00b4e
 full_slug: voip-setting-up-cisco-spa504g

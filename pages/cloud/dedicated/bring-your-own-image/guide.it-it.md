@@ -7,7 +7,7 @@ updated: 2022-11-25
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 25/11/2022**
@@ -24,7 +24,7 @@ Oltre ai requisiti e ai limiti indicati in appresso, è necessario assicurarsi c
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato OVHcloud](https://www.ovhcloud.com/it/bare-metal/)
+- Disporre di un [server dedicato OVHcloud](https://www.ovhcloud.com/it/bare-metal/).
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) per la sezione ["Implementazione dallo Spazio Cliente"](#viacontrolpanel) di questa guida.
 - Essere connesso alle [API OVHcloud](https://api.ovh.com/){.external} per la sezione ["Implementazione via API"](#viaapi) di questa guida.
 - Aver generato i [credenziali per utilizzare l'APIv6](https://docs.ovh.com/it/api/first-steps-with-ovh-api/) per la sezione ["Implementazione via API"](#viaapi) di questa guida.
@@ -50,8 +50,8 @@ Se il tuo server dispone di un boot **uefi**, sarà necessario prevedere nella t
 
 **Metodi di implementazione**
 
-- [Implementazione dallo Spazio Cliente](#viacontrolpanel)\: permettendoti di creare rapidamente e facilmente la tua immagine direttamente dal tuo Spazio Cliente OVHcloud.
-- [Implementazione via API](#viaapi)\: puoi utilizzare le API OVHcloud per integrarle nei tuoi script per automatizzare il deploy.
+- [Implementazione dallo Spazio Cliente](#viacontrolpanel): permettendoti di creare rapidamente e facilmente la tua immagine direttamente dal tuo Spazio Cliente OVHcloud.
+- [Implementazione via API](#viaapi): puoi utilizzare le API OVHcloud per integrarle nei tuoi script per automatizzare il deploy.
 
 ### Crea la tua immagine dallo Spazio Cliente OVHcloud <a name="viacontrolpanel"></a>
 
@@ -69,7 +69,7 @@ Verrai reindirizzato alla pagina di configurazione. Assicurati che l'URL dell'im
 
 Per maggiori informazioni, consulta la sezione ["Tabelle opzioni"](#options) di questa guida. 
 
-Per l'attivazione di `ConfigDrive`, consulta la documentazione su [questa pagina](https://cloudinit.readthedocs.io/en/latest/topics/datasources/configdrive.html).
+Per l'attivazione di `ConfigDrive`, consulta la documentazione su [questa pagina](https://cloudinit.readthedocs.io/en/22.1_a/topics/datasources/configdrive.html).
 
 ![bring your ownimage](images/byoi-controlpanel03.png){.thumbnail}
 

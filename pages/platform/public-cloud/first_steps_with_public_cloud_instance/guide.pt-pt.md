@@ -82,7 +82,7 @@ Para mais informações, consulte o manual "[Guardar uma instância](../efetuar_
 
 Clique em `Parar`{.action}.
 
-Esta ação terá por efeito suspender a instância. Para mais informações, consulte o nosso manual "[Suspender ou colocar em pausa uma instância](../suspender_ou_colocar_em_pausa_uma_instancia/#parar-suspend-uma-instancia_1)".
+Esta ação terá por efeito suspender a instância. Para mais informações, consulte o nosso manual "[Suspender ou colocar em pausa uma instância](../suspender_ou_colocar_em_pausa_uma_instancia/#parar-suspend-uma-instancia)".
 
 Clique em `Iniciar`{.action} para reativar a instância.
 
@@ -144,5 +144,7 @@ Para mais informações, consulte o nosso manual "[Criação e conexão a uma pr
 [Criação e conexão a uma primeira instância Public Cloud](../public-cloud-primeiros-passos/)
 
 [Apresentação do Horizon](../horizon/)
+
+Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

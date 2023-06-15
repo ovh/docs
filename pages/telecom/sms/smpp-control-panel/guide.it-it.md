@@ -8,7 +8,7 @@ updated: 2023-02-09
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 09/02/2023**
@@ -60,7 +60,7 @@ Clicca su `Aggiungi un IP`{.action} per aggiungere indirizzi IP a questa lista.
 
 ### Gestione mittenti e crediti
 
-Consulta le nostre guide sulla [gestione mittenti](https://docs.ovh.com/it/sms/inviare_sms_dallo_spazio_cliente/#step-3-scegli-il-mittente-del-tuo-sms_1) e sulla [gestione dei crediti SMS e ricarica automatica](https://docs.ovh.com/it/sms/attivare-la-ricarica-automatica-del-credito-sms/).
+Consulta le nostre guide sulla [gestione mittenti](https://docs.ovh.com/it/sms/inviare_sms_dallo_spazio_cliente/#step-3-scegli-il-mittente-del-tuo-sms) e sulla [gestione dei crediti SMS e ricarica automatica](https://docs.ovh.com/it/sms/attivare-la-ricarica-automatica-del-credito-sms/).
 
 ## Per saperne di più
 

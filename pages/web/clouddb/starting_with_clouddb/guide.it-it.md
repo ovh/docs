@@ -5,13 +5,11 @@ legacy_guide_number: 2216
 excerpt: 'Scopri come utilizzare la soluzione Web Cloud Databases'
 section: Per iniziare
 order: 01
-updated: 2023-02-15
+updated: 2023-05-31
 ---
 
-**Ultimo aggiornamento: 15/02/2023**
-
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 ## Obiettivo
@@ -196,7 +194,8 @@ In ogni caso, è necessario disporre di queste cinque informazioni:
 
 > [!warning]
 >
-> Il campo `Porta`{.action} potrebbe non essere disponibile nella configurazione del tuo sito. In questo caso, è necessario aggiungerlo dopo l’hostname del server, separandolo con il simbolo *:* (ad esempio hostname:porta).
+> Il campo `port`{.action} potrebbe non essere disponibile nella configurazione del sito. È necessario aggiungere questo campo dopo il nome dell'host del server, separandoli con un *:*. <br><br>
+> Ad esempio, per il nome host `zz1111111-002.eu.clouddb.ovh.net` con la porta SQL `34567`, dovrai inserire `zz1111111-002.eu.clouddb.ovh.net:34567` nel Parte "Host" / "Nome host".
 >
 
 ![Web Cloud Databases](images/web-cloud-databases-login-information.png){.thumbnail}

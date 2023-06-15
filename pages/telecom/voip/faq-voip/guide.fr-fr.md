@@ -110,7 +110,7 @@ Pour cela, connectez-vous à l'aide de vos identifiants et dirigez-vous vers la 
 
 #### Trucs et astuces
 
-Si vous avez récemment activé la fonctionnalité de renvois d'appels, pensez à vérifier que celle-ci n'est plus active. Pour tout complément, n'hésitez pas à consulter la partie [Comment configurer un renvoi d'appel depuis ma ligne téléphonique ?](./##comment-configurer-un-renvoi-dappel_1)
+Si vous avez récemment activé la fonctionnalité de renvois d'appels, pensez à vérifier que celle-ci n'est plus active. Pour tout complément, n'hésitez pas à consulter la partie [Comment configurer un renvoi d'appel depuis ma ligne téléphonique ?](./##comment-configurer-un-renvoi-dappel)
 
 
 ### Un message d'erreur apparait sur mon téléphone, que faire ?

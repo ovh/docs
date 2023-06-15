@@ -27,7 +27,7 @@ Para proteger ao máximo o seu sistema, o seu servidor Windows Server dispõe da
 
 ## Requisitos
 
-- Um servidor [VPS](https://www.ovhcloud.com/pt/vps/) Windows na sua conta OVHcloud
+- Um servidor [VPS](https://www.ovhcloud.com/pt/vps/) Windows na sua conta OVHcloud.
 - Dispor de um acesso de administrador ao seu servidor através de um escritório distante em Windows. 
 
 ## Instruções

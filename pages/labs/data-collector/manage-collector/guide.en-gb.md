@@ -6,6 +6,8 @@ order: 2
 updated: 2018-10-09
 ---
 
+**Last updated 9th October 2018**
+
 This tutorial shows you how to configure your agent.
 
 Once you have ordered an agent, you should receive several information :

@@ -6,6 +6,7 @@ section: Configuration
 updated: 2021-02-05
 ---
 
+**Dernière mise à jour le 05/02/2021**
 
 ## Objectif
 

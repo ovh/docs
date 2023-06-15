@@ -19,7 +19,7 @@ updated: 2021-05-03
 
 ## UI Access
 
-The URL to access the monitoring is built like this : *https://monitoring.`<REGION>`{=html}.training.ai.cloud.ovh.net/d/gpu?var-job=`<JOB-ID>`{=html}*
+The URL to access the monitoring is built like this : *https://monitoring.`<REGION>`{=html}.ai.cloud.ovh.net/d/gpu?var-job=`<JOB-ID>`{=html}*
 
 It can be fetched in the CLI using this command:
 
@@ -53,9 +53,9 @@ Status:
   Stopped At:     
   IP:             10.42.165.21
   Duration:       2s
-  Job Url:        https://xxx.job.console.preprod.training.ai.cloud.ovh.net
+  Job Url:        https://xxx.job.console.preprod.ai.cloud.ovh.net
   SSH Url:        
-  Monitoring Url: https://monitoring.console.preprod.training.ai.cloud.ovh.net/d/gpu?var-job=xxx&from=1618392608000
+  Monitoring Url: https://monitoring.console.preprod.ai.cloud.ovh.net/d/gpu?var-job=xxx&from=1618392608000
   Infos:          
   Data Sync:      
   Sync Progress:  
@@ -116,4 +116,6 @@ This panel shows the usage and limit of ephemeral storage allocated to your job.
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. 

@@ -88,13 +88,11 @@ You can then use the service in a configuration file of your application with so
 
 > [!tabs]      
 > Java     
->> ``` java     
->> {!> web/web-paas/static/files/fetch/examples/java/kafka !}  
->> ```     
+>> [Kafka - Java](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/java/kafka)  
+>> 
 > Python     
->> ``` python     
->> {!> web/web-paas/static/files/fetch/examples/python/kafka !}  
->> ```     
+>> [Kafka - Python](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/kafka)  
+>>
 > Ruby     
 >> ``` ruby     
 >> 

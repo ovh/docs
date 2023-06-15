@@ -7,8 +7,6 @@ order: 1
 updated: 2022-03-25
 ---
 
-**Dernière mise à jour le 25/03/2022**
-
 ## Objectif
 
 Un serveur privé virtuel (VPS, pour Virtual Private Server) est un serveur dédié virtualisé. Contrairement à un hébergement web (dit mutualisé) où la gestion technique est prise en charge par OVHcloud, c’est vous qui administrez totalement votre VPS.
@@ -41,7 +39,7 @@ Le tableau de bord qui vous est présenté contient des informations importantes
 
 Pour la gamme actuelle de VPS, poursuivez la lecture de ce guide à la section suivante, **Premiers pas (gamme VPS actuelle)**.
 
-Pour un modèle VPS plus ancien, poursuivez la lecture de ce guide en cliquant sur le lien suivant : [Premiers pas (ancienne gamme VPS)](./#premiers-pas-ancienne-gamme-vps_1).
+Pour un modèle VPS plus ancien, poursuivez la lecture de ce guide en cliquant sur le lien suivant : [Premiers pas (ancienne gamme VPS)](./#premiers-pas-ancienne-gamme-vps).
 
 ### Premiers pas (gamme VPS actuelle)
 
@@ -83,7 +81,7 @@ passwd: password updated successfully
 
 #### Activation des connexions root
 
-Par mesure de sécurité, la connexion avec l'utilisateur « root » est désactivée par défaut. Si vous devez autoriser ce type de connexions, reportez-vous aux instructions de [ce guide](https://docs.ovh.com/fr/vps/root-password/#activer-le-mot-de-passe-root_1).
+Par mesure de sécurité, la connexion avec l'utilisateur « root » est désactivée par défaut. Si vous devez autoriser ce type de connexions, reportez-vous aux instructions de [ce guide](https://docs.ovh.com/fr/vps/root-password/#activer-le-mot-de-passe-root).
 
 #### Redémarrer votre VPS (gamme VPS actuelle) <a name="reboot-current-range"></a>
 
@@ -198,7 +196,7 @@ De manière plus automatique, OVHcloud vous propose le [SSL Gateway](https://www
 
 ## Allez plus loin
 
-[Créer une clé SSH](https://docs.ovh.com/fr/dedicated/creer-cle-ssh-serveur-dediees//)
+[Créer une clé SSH](https://docs.ovh.com/fr/dedicated/creer-cle-ssh-serveur-dediees/)
 
 [Sécuriser un VPS](https://docs.ovh.com/fr/vps/conseils-securisation-vps/)
 

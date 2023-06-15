@@ -8,7 +8,7 @@ updated: 2022-11-15
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 15/11/2022**
@@ -94,13 +94,13 @@ Innanzitutto, connettiti al tuo VPS via SSH.
 
 Puoi utilizzare il comando seguente per verificare il nome dell’ultimo dispositivo collegato:
 
-```
+```bash
 $ lsblk
 ```
 
 Ecco un campione di output di questo comando:
 
-```
+```console
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda       8:0    0   25G  0 disk 
 ├─sda1    8:1    0 24.9G  0 part /
@@ -115,7 +115,7 @@ sdb       8:16   0   25G  0 disk
 In questi esempio, la partizione che contiene il tuo filesystem di backup è nominata “sdb1”.
 Quindi, crea una directory per questa partizione e stabilisci che è il punto di montaggio:
 
-```
+```bash
 $ mkdir -p /mnt/restore
 $ mount /dev/sdb1 /mnt/restore
 ```
@@ -134,7 +134,7 @@ Il tuo backup in salita apparirà come un disco di base con lo stesso spazio di 
 
 ![mounted backup](images/windowsbackup2.png){.thumbnail}
 
-Il disco apparirà come `Offline`, clicca con il tasto destro sul disco e seleziona `Online`(action).
+Il disco apparirà come `Offline`, clicca con il tasto destro sul disco e seleziona `Online`{.action}.
 
 ![online backup](images/windowsbackup3.png){.thumbnail}
 
@@ -160,27 +160,27 @@ Il *qemu-guest-agente* richiesto non è installato di default sulla maggior part
 
 Utilizza il comando seguente per verificare che il sistema sia correttamente configurato per effettuare Snapshot:
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Se il risultato è differente (“No such file or directory”), installa l’ultima versione del pacchetto:
 
-```
+```bash
 $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
 Riavvia il VPS:
 
-```
+```bash
 $ sudo reboot
 ```
 
 Avvia il servizio per assicurarti che sia in esecuzione:
 
-```
+```bash
 $ sudo service qemu-guest-agent start
 ```
 
@@ -188,27 +188,27 @@ $ sudo service qemu-guest-agent start
 
 Utilizza il comando seguente per verificare che il sistema sia correttamente configurato per effettuare Snapshot:
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Se il risultato è differente (“No such file or directory”), installa e attiva il software:
 
-```
+```bash
 $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
 Riavvia il VPS:
 
-```
+```bash
 $ sudo reboot
 ```
 
 Avvia il servizio per assicurarti che sia in esecuzione:
 
-```
+```bash
 $ sudo service qemu-guest-agent start
 $ sudo service qemu-guest-agent status
 ```
@@ -219,7 +219,7 @@ Puoi installare l'agente tramite un file MSI, disponibile sul sito del progetto 
 
 Per verificare che il servizio sia in esecuzione, esegui questo comando powershell:
 
-```
+```powershell
 PS C:\Users\Administrator> Get-Service QEMU-GA
 Status   Name               DisplayName
 ------   ----               -----------

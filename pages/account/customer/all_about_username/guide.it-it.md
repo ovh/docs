@@ -9,7 +9,7 @@ updated: 2021-07-01
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 01/07/2021**
@@ -55,7 +55,7 @@ Per maggiori informazioni sulle password, consulta la guida [Modificare la passw
 Se non l'hai ancora fatto, salva la password in un [gestore di password](https://docs.ovh.com/it/customer/gestire-la-password/#utilizza-un-software-per-la-gestione-di-password).
 
 > [!primary]
-> I software **Keepass** e **Bitwarden** sono gestioni di password gratuite e senza diritti.
+> I software **KeePass** e **Bitwarden** sono gestioni di password gratuite e senza diritti.
 >
 
 #### Aggiungi un indirizzo email di recupero <a name="backup-email"></a>

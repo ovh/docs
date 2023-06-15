@@ -8,7 +8,7 @@ updated: 2021-12-10
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 29-08-2021**
@@ -17,7 +17,7 @@ updated: 2021-12-10
 
 Z tego przewodnika dowiesz się, jak zapewnić dostępność usług, bezpieczeństwo danych oraz dostęp do rozwiązań. Dotyczy on wyłącznie stron WWW hostowanych na [rozwiązaniach hostingowych OVHcloud](https://www.ovhcloud.com/pl/web-hosting/).
 
-Jest on organizowany etapami w coraz większym stopniu w zakresie znaczenia i trudności technicznych, co oznacza, że pierwsze kroki są najbardziej potrzebne. Bezpieczeństwo Twojej strony będzie mierzone przy użyciu najmniej chronionego elementu. Zalecamy przeprowadzenie wszystkich opisanych działań. Jeśli jednak napotkasz trudności w przeprowadzeniu niektórych z opisanych tutaj operacji, skontaktuj się z [społecznością OVHcloud](https://community.ovh.com/en/) lub naszymi [partnerami](https://partner.ovhcloud.com/pl/).
+Jest on organizowany etapami w coraz większym stopniu w zakresie znaczenia i trudności technicznych, co oznacza, że pierwsze kroki są najbardziej potrzebne. Bezpieczeństwo Twojej strony będzie mierzone przy użyciu najmniej chronionego elementu. Zalecamy przeprowadzenie wszystkich opisanych działań. Jeśli jednak napotkasz trudności w przeprowadzeniu niektórych z opisanych tutaj operacji, skontaktuj się z [społecznością OVHcloud](https://community.ovh.com/en/) lub naszymi [partnerami](https://partner.ovhcloud.com/pl/directory/).
 
 **Dowiedz się, jak zabezpieczyć Twoją stronę WWW.**
 
@@ -53,7 +53,7 @@ Sprawdź bezpieczeństwo komputera Windows, Mac lub Linux:
 
 Aby zabezpieczyć Twoje konto klienta, [włącz weryfikację dwuetapową](../../customer/zabezpieczenie-konta-za-pomoca-2FA/) i postępuj zgodnie z instrukcjami zawartymi w tym przewodniku](../../customer/identyfikator_klienta/).
 
-Pamiętaj, aby zaktualizować [dane przypisane do Twojego konta klienta](../../customer/identyfikator_klienta/#jak-zarzadzac-danymi-osobowymi_1) i dodać do niego zapasowy **e-mail**.<br>
+Pamiętaj, aby zaktualizować [dane przypisane do Twojego konta klienta](../../customer/identyfikator_klienta/#jak-zarzadzac-danymi-osobowymi) i dodać do niego zapasowy **e-mail**.<br>
 W przypadku utraty danych do logowania i/lub niedostępności głównego adresu e-mail przypisanego do Twojego konta klienta OVHcloud, potrzebujemy wiadomości e-mail zapasowej lub aktualnych danych osobowych, które pomogą Ci w znalezieniu dostępu do Twoich rozwiązań.
 
 ### Etap 3: wykonuj regularnie kopie zapasowe swojej strony <a name="backup"></a>
@@ -107,7 +107,7 @@ Dodaj do swojej strony wtyczkę bezpieczeństwa zalecaną przez producenta CMS:
 
 ### Etap 10: sprawdź, czy Twój hosting nie zawiera złośliwych plików
 
-Na tym etapie należy zalogować się do [przestrzeni FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web/). Wymaga to umiejętności technicznych, aby rozpoznawać ewentualne złośliwe pliki na Twoim hostingu. Jeśli masz trudności z przeprowadzeniem tej weryfikacji, skontaktuj się z naszymi [partnerami](https://partner.ovhcloud.com/pl/).
+Na tym etapie należy zalogować się do [przestrzeni FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web/). Wymaga to umiejętności technicznych, aby rozpoznawać ewentualne złośliwe pliki na Twoim hostingu. Jeśli masz trudności z przeprowadzeniem tej weryfikacji, skontaktuj się z naszymi [partnerami](https://partner.ovhcloud.com/pl/directory/).
 
 W przypadku wątpliwości przejdź do weryfikacji opisanych w [etapie 1](#local) niniejszego przewodnika i [zmień hasło](../zmiana-hasla-konto-ftp/) do przestrzeni FTP.
 
@@ -123,7 +123,7 @@ Możesz również utworzyć **wersję testową** Twojej strony (np.: test.mojado
 
 ## Sprawdź również <a name="gofurther"></a>
 
-Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
+Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, sprawdź naszą [ofertę pomocy](https://www.ovhcloud.com/pl/support-levels/).
 

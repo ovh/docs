@@ -8,7 +8,7 @@ updated: 2023-01-04
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
 **Letzte Aktualisierung am 04.01.2023**
@@ -82,7 +82,7 @@ Weitere Informationen finden Sie in der Anleitung "[Backup einer Instanz erstell
 
 Klicken Sie auf `Anhalten`{.action}.
 
-Diese Aktion wird die Instanz anhalten. Weitere Informationen finden Sie in unserer Anleitung zum [Aussetzen oder Pausieren einer Instanz](../aussetzen_oder_pausieren_einer_instanz/#anhalten-einer-instanz-suspend_1).
+Diese Aktion wird die Instanz anhalten. Weitere Informationen finden Sie in unserer Anleitung zum [Aussetzen oder Pausieren einer Instanz](../aussetzen_oder_pausieren_einer_instanz/#anhalten-einer-instanz-suspend).
 
 Klicken Sie auf `Starten`{.action}, um die Instanz zu reaktivieren.
 
@@ -144,5 +144,7 @@ Weitere Informationen zu den notwendigen Schritten finden Sie in unserer Anleitu
 [Erste Public Cloud Instanz erstellen und auf dieser einloggen](../public-cloud-erste-schritte/)
 
 [Einführung in Horizon](../horizon/)
+
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

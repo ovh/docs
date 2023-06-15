@@ -116,7 +116,7 @@ We will use the following command: `MegaCli -CfgLdAdd -rX[EncID:SlotID,EncID:Slo
 
 `EncID` is the enclosure ID of the disk found in the previous step.
 
-`SlotID` is the SlotIDs of the the disk found in the previous step.
+`SlotID` is the SlotIDs of the disk found in the previous step.
 
 `YYYYY` is the size of our first virtual disk specified in MB.
 
@@ -124,7 +124,7 @@ In our example, we will create a RAID-5 volume on our three disks, with 200GB fo
 
 > [!primary]
 >
-> It is advisable to create a volume with a little more space than the minimum size required. This is to ensure that the the system has room for updates and installations.
+> It is advisable to create a volume with a little more space than the minimum size required. This is to ensure that the system has room for updates and installations.
 > 
 
 ```sh
@@ -145,7 +145,7 @@ We will therefore create a second RAID via the following command: `MegaCli -CfgL
 
 `EncID` is the enclosure ID of the disk found in the previous step.
 
-`SlotID` is the SlotIDs of the the disk found in the previous step.
+`SlotID` is the SlotIDs of the disk found in the previous step.
 
 Example:
 

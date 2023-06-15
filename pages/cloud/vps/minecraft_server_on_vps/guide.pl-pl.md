@@ -7,7 +7,7 @@ updated: 2021-06-29
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
 
 **Ostatnia aktualizacja z dnia 29-06-2021**
@@ -42,7 +42,7 @@ Możesz wynająć lub samodzielnie skonfigurować serwer Minecraft na [serwerze 
 ### Etap 1: przygotować serwer
 
 Pierwszy etap polega na skonfigurowaniu serwera VPS do instalacji Minecraft.
-<br>Zaleca się zamówienie nowego VPS lub przeinstalowanie istniejącego z [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), używając najnowszej dostępnej wersji Ubuntu lub Debiana. W razie potrzeby zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z serwerem VPS](../pierwsze-kroki-vps/#reinstallvps)"
+<br>Zaleca się zamówienie nowego VPS lub przeinstalowanie istniejącego z [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), używając najnowszej dostępnej wersji Ubuntu lub Debiana. W razie potrzeby zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z serwerem VPS](../pierwsze-kroki-vps/#reinstallvps)".
 
 Po zainstalowaniu systemu operacyjnego zaloguj się do Twojego serwera VPS przez SSH, jak opisano w przewodniku "[Pierwsze kroki z serwerem VPS](../pierwsze-kroki-vps/)".
 

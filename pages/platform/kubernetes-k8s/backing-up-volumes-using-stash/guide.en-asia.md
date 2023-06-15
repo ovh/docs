@@ -2,8 +2,8 @@
 title: Backing-up Persistent Volumes using Stash
 excerpt: Backing-up Persistent Volumes using Stash
 slug: backing-up-volumes-using-stash
-section: Storage
-order: 4
+section: 'Backup and Restore'
+order: 05
 updated: 2022-09-26
 ---
 
@@ -192,7 +192,7 @@ Then search the latest version of stash:
 helm search repo appscode/stash --version v2021.11.24
 ```
 
-And install it with the the release name `stash-operator`:
+And install it with the release name `stash-operator`:
 
 ```bash
 helm install stash appscode/stash          \
@@ -770,3 +770,9 @@ namespace "nginx-example" deleted
 $ helm uninstall stash -n kube-system
 release "stash" uninstalled
 </code></pre>
+
+## Go further
+
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our community of users on <https://community.ovh.com/en/>.

@@ -19,7 +19,7 @@ Floating IPs are public IP addresses for [Public Cloud](https://www.ovhcloud.com
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/it/public-cloud//) in your OVHcloud account
+- A [Public Cloud project](https://www.ovhcloud.com/it/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud API](https://eu.api.ovh.com/), the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) or the OpenStack command line environment ([Tutorial](https://docs.ovh.com/it/public-cloud/prepare_the_environment_for_using_the_openstack_api/))
 - The [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} tool installed on your working environment (optional)
 
@@ -503,5 +503,7 @@ Once the information has been retrieved, use the following call to delete the Fl
 > - **floatingIpId**: The ID of the Floating IP
 
 ## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/it/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

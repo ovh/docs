@@ -6,7 +6,7 @@ updated: 2021-05-18
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 18/05/2021**
@@ -23,13 +23,13 @@ updated: 2021-05-18
 ## Prerequisiti
 
 - Avere un accesso amministratore al VPS (Windows)
-- Aver riavviato il server in [Rescue mode](https://docs.ovh.com/it/vps/rescue/)(Linux)
+- Aver riavviato il server in [Rescue mode](https://docs.ovh.com/it/vps/rescue/) (Linux)
 
 ## Procedura
 
 In seguito a un upgrade, RAM e processore (CPU) vengono ridimensionati automaticamente. Lo spazio di storage disponibile resta invece invariato.
 
-**Questa guida ti mostra come aumentare il tuo spazio di storage dopo un upgrade del tuo VPS.**.
+**Questa guida ti mostra come aumentare il tuo spazio di storage dopo un upgrade del tuo VPS.**
 
 ### Effettua il backup dei dati
 
@@ -149,7 +149,7 @@ Assicurati che il valore predefinito indicato nella riga `First sector` corrispo
 
 ### Rendi la partizione avviabile (bootable)
 
-Per assicurarti che la partizione sia avviabile, esegui il comando `a`{.action}. 
+Per assicurarti che la partizione sia avviabile, esegui il comando `a`{.action}: 
 
 ```sh
 Command (m for help): a

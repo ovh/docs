@@ -51,7 +51,7 @@ Sélectionnez ensuite la distribution Linux de votre choix :
 
 L’instance démarre quelques secondes plus tard. Vous pourrez ensuite vous y connecter et vérifier la présence de la carte graphique : 
 
-```ssh
+```bash
 lspci | grep -i nvidia
 Contrôleur 00:05.0 3D : NVIDIA Corporation GV100GL [Tesla V100 PCIe 16 Go] (rév. a1)
 ```

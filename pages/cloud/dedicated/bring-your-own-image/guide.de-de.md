@@ -7,7 +7,7 @@ updated: 2022-11-25
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
 **Letzte Aktualisierung am 25.11.2022**
@@ -69,7 +69,7 @@ Sie werden auf die Konfigurationsseite weitergeleitet. Vergewissern Sie sich, da
 
 Weitere Informationen zu den Optionen finden Sie im Abschnitt "[Deployment-Optionen](#options)" dieser Anleitung.
 
-Weitere Informationen zur Aktivierung von "ConfigDrive" finden Sie auf [dieser Seite](https://cloudinit.readthedocs.io/en/latest/topics/datasources/configdrive.html).
+Weitere Informationen zur Aktivierung von "ConfigDrive" finden Sie auf [dieser Seite](https://cloudinit.readthedocs.io/en/22.1_a/topics/datasources/configdrive.html).
 
 ![BYOI](images/byoi-controlpanel03.png){.thumbnail}
 

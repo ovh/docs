@@ -1,7 +1,7 @@
 ---
 title: 'Configuring software RAID'
 slug: raid-soft
-excerpt: 'This guide will help you configure your server’s RAID array in the event that it needs to be rebuilt due to corruption or disk failure.'
+excerpt: 'Find out how to rebuild your server’s drive configuration after a disk replacement'
 section: 'RAID and disks'
 updated: 2022-10-11
 ---
@@ -10,7 +10,7 @@ updated: 2022-10-11
 
 ## Objective
 
-Redundant Array of Independent Disks (RAID) is a utility that mitigates data loss on a server by replicating data across two or more disks.
+Redundant Array of Independent Disks (RAID) is a technology that mitigates data loss on a server by replicating data across two or more disks.
 
 The default RAID level for OVHcloud server installations is RAID 1, which doubles the space taken up by your data, effectively halving the useable disk space.
 
@@ -187,12 +187,12 @@ umount /dev/md4
 > [!warning]
 > Please note that if you are connected as the user `root`, you may get the following message when you try to unmount the partition (in our case, where our md4 partition is mounted in /home):
 > 
-> `umount: /home: target is busy`
+> <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">umount: /home: target is busy</span> </pre></div>
 >
 > In this case, you must log out as the user root and connect as a local user (in our case `debian`), and use the following command:
 > 
 > 
-> `debian@ns000000:/$ sudo umount /dev/md4`
+> <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">debian@ns000000:/$ sudo umount /dev/md4</span> </pre></div>
 >
 > 
 > If you do not have a local user, you need to create one.

@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: 0bed7be4-3fc6-4053-aaea-89419c539fee
 full_slug: voip-getting-started-cisco-8851

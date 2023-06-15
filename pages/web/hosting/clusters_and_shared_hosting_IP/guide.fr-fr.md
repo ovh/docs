@@ -3,16 +3,16 @@ title: 'Liste des adresses IP des clusters et hebergements web'
 slug: liste-des-adresses-ip-des-clusters-et-hebergements-web
 section: "Configuration de l'hébergement"
 order: 01
-updated: 2021-01-08
+updated: 2023-05-03
 ---
 
-**Dernière mise à jour le 07/01/2021**
+**Dernière mise à jour le 03/05/2023**
 
 ## Objectif
 
-Vous trouverez dans ce guide toutes les adresses IP des hébergements web OVHcloud. Cela vous permettra par exemple de trouver quelle adresse IP renseigner dans vos zones DNS, en fonction de :
+Retrouvez dans ce guide toutes les adresses IP des hébergements web OVHcloud. Cela vous permettra par exemple de trouver quelle adresse IP renseigner dans vos zones DNS, en fonction de :
 
-- votre cluster
+- votre cluster/votre hébergement
 - vos options (CDN, SSL payant, SSL gratuit...)
 - le pays recherché ...
 
@@ -21,6 +21,7 @@ Vous trouverez dans ce guide toutes les adresses IP des hébergements web OVHclo
 > Les adresses IP de l'option CDN sont "Anycast".
 > C'est à dire qu'elles n'ont pas besoin de géolocalisation ([Plus d'informations ici](https://www.ovhcloud.com/fr/web-hosting/options/cdn/)).
 > 
+
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
@@ -62,12 +63,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 46.105.204.2
 ```
 
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.33
-```
-
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
 
 ```bash
@@ -103,12 +98,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 
 ```bash
 46.105.204.3
-```
-
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.34
 ```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
@@ -148,12 +137,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 46.105.204.5
 ```
 
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.35
-```
-
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
 
 ```bash
@@ -189,12 +172,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 
 ```bash
 46.105.204.6
-```
-
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.36
 ```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
@@ -234,12 +211,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 46.105.204.7
 ```
 
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.37
-```
-
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
 
 ```bash
@@ -275,12 +246,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 
 ```bash
 46.105.204.10
-```
-
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.38
 ```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
@@ -320,12 +285,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 46.105.204.11
 ```
 
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.39
-```
-
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
 
 ```bash
@@ -361,12 +320,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 
 ```bash
 46.105.204.12
-```
-
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.40
 ```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
@@ -406,12 +359,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 46.105.204.13
 ```
 
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.41
-```
-
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
 
 ```bash
@@ -447,12 +394,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 
 ```bash
 46.105.204.14
-```
-
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.42
 ```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
@@ -492,12 +433,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 46.105.204.15
 ```
 
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.43
-```
-
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
 
 ```bash
@@ -533,12 +468,6 @@ Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, v
 
 ```bash
 46.105.204.17
-```
-
-Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.174.44
 ```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
@@ -911,13 +840,11 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
 Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
-
 ```bash
 46.105.204.31
 ```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
-
 
 ```bash
 141.94.87.67
@@ -931,7 +858,7 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |---|---|----|---|
 |Canada|CA|51.161.122.78|2607:5300:202:0:0::51|
 
-Si le *CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 ```bash
 178.32.120.166
@@ -951,4 +878,14 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 
 ## Aller plus loin
 
-Échangez avec notre communauté d’utilisateurs sur [https://community.ovh.com/](https://community.ovh.com/){.external}.
+[Mettre en place un multisite sur votre hébergement Web](/pages/web/hosting/multisites_configure_multisite)
+
+[Activer le HTTPS avec votre certificat SSL sur votre hébergement Web](/pages/web/hosting/ssl-activate-https-website)
+
+[Optimiser les performances de votre site Web](/pages/web/hosting/optimise_your_website_performance)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

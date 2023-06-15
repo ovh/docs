@@ -48,7 +48,7 @@ Nommez votre conteneur puis cliquez sur `Ajouter le conteneur`{.action} :
 
 > [!warning]
 >
-> Si vous souhaitez lier votre conteneur à un nom de domaine, le nom de votre conteneur de doit pas contenir les caractères suivants :
+> Si vous souhaitez lier votre conteneur à un nom de domaine, le nom de votre conteneur ne doit pas contenir les caractères suivants :
 >
 > - [ . ]
 > - [ _ ]
@@ -64,5 +64,7 @@ Votre conteneur est créé :
 ![container created](images/create-container-20211006094630754.png)
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com>.

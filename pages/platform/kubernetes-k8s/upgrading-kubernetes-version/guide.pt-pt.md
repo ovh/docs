@@ -5,7 +5,7 @@ excerpt: 'Find out how to upgrade the Kubernetes version on an OVHcloud Managed 
 section: User guides
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/upgrading-kubernetes-version/'
-updated: 2023-01-03
+updated: 2023-03-28
 ---
 
 <style>
@@ -30,7 +30,7 @@ updated: 2023-01-03
  }
 </style>
 
-**Last updated 3rd January 2023**
+**Last updated 28th March 2023**
 
 ## Objective
 
@@ -81,15 +81,6 @@ Once the update has been performed, you cannot revert to the previous version.
 
     ![Click on Confirm](images/upgrading-kubernetes-version-003.png){.thumbnail}
 
-> [!primary]
->
-> Your security policy must be set at least to "Minimum unavailability", otherwise the upgrade will fail.
->
-> ![Security Policy](images/upgrading-kubernetes-version-005.png){.thumbnail}
->
-> ![Failed Upgrade](images/upgrading-kubernetes-version-006.png){.thumbnail}
->
-
 ### Step 2 - Wait for the upgrading to end 
 
 The upgrading process can take several minutes (around 5 minutes per node in your cluster). During that time, a message on the OVHcloud Control Panel warns you that the cluster is being upgraded:
@@ -99,8 +90,10 @@ The upgrading process can take several minutes (around 5 minutes per node in you
 
 ## Go further
 
-To have an overview of the OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
+To have an overview of the OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/pt/public-cloud/kubernetes/).
 
 To learn more about how to use your Kubernetes cluster the practical way, we invite you to look at our [tutorials](../).
 
-Join our [community of users](https://community.ovh.com/en/).
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our [community of users](https://community.ovh.com/en/).

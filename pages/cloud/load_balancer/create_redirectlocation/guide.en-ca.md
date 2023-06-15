@@ -7,11 +7,13 @@ section: Configuration
 updated: 2021-02-05
 ---
 
+**Last updated 5th February 2021**
+
 ## Objective
 
 The OVH Load Balancer acts by default as a proxy. It can also be configured to redirect your customers to a third-party website, which is useful if you are changing your domain name, or want to redirect your customers to your website’s HTTPS version, for example. This is known as HTTP redirection.
 
-**This guide will show you how to to integrate your web services behind an OVH Load Balancer with redirections.**
+**This guide will show you how to integrate your web services behind an OVH Load Balancer with redirections.**
 
 ## Requirements
 

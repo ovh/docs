@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: dc3a0dc9-be40-4f86-8cd6-fc103b2e3696
 full_slug: voip-cti-crm-erp-sugarcrm

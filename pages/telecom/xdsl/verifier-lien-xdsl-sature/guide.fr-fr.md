@@ -29,7 +29,7 @@ Poursuivez la lecture de cette documentation selon la vérification que vous sou
 
 - [Vérifier l'activité de ma connexion depuis l'espace client](https://docs.ovh.com/fr/xdsl/verifier-lien-xdsl-sature/#verifier-lactivite-de-ma-connexion-depuis-lespace-client){.external}.
 
-- [Effectuer un test ponctuel de débit](https://docs.ovh.com/fr/xdsl/verifier-lien-xdsl-sature/#effectuer-un-test-ponctuel-de-debit_1){.external}.
+- [Effectuer un test ponctuel de débit](https://docs.ovh.com/fr/xdsl/verifier-lien-xdsl-sature/#effectuer-un-test-ponctuel-de-debit){.external}.
 
 ### Vérifier l'activité de ma connexion depuis l'espace client
 
@@ -75,7 +75,7 @@ Par exemple, vérifiez si vous n'avez pas un logiciel ou un système d'exploitat
 
 - **Le débit utilisé sur votre connexion n'atteint pas le débit maximal alloué à cette dernière** : 
 
-Vous ne constatez alors pas de saturation de votre connexion. Si tel est le cas, veuillez poursuivre vers l'étape « [Effectuer un test ponctuel de débit](https://docs.ovh.com/fr/xdsl/verifier-lien-xdsl-sature/#effectuer-un-test-ponctuel-de-debit_1){.external} » de cette documentation.
+Vous ne constatez alors pas de saturation de votre connexion. Si tel est le cas, veuillez poursuivre vers l'étape « [Effectuer un test ponctuel de débit](https://docs.ovh.com/fr/xdsl/verifier-lien-xdsl-sature/#effectuer-un-test-ponctuel-de-debit){.external} » de cette documentation.
 
 ### Effectuer un test ponctuel de débit
 

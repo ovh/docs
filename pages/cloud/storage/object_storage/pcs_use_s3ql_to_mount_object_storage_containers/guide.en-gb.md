@@ -21,7 +21,7 @@ You can find more information directly on their [website](http://www.rath.org/s3
 ## Prerequisites
 
 - [Configure user](https://docs.ovh.com/gb/en/public-cloud/creation-and-deletion-of-openstack-user/)
-- [Add storage space](https://docs.ovh.com/gb/en/public-cloud/create_an_object_container/)
+- [Add storage space](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/)
 
 ## Instructions
 
@@ -98,5 +98,7 @@ swiftks://auth.cloud.ovh.net/REGION_NAME:CT_NAME 1.0T 0 1.0T 0% /mnt/container
 You cannot use S3QL in offline mode, you should not configure persistance via the /etc/fstab file but by using a script which will run when your server starts up.
 
 ## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -9,7 +9,7 @@ updated: 2021-07-19
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
 **Ultimo aggiornamento: 19/07/2021**
@@ -128,7 +128,7 @@ Puoi procedere in due modi:
 
 - creare il reindirizzamento dalla Webmail, tramite le regole della casella di ricezione. Per effettuare questa operazione, consulta la guida "[Regole di Posta in arrivo dall'interfaccia OWA](https://docs.ovh.com/it/microsoft-collaborative-solutions/creare-regole-posta-in-arrivo-in-owa/#esempio-1-inoltrare-unemail-a-un-altro-indirizzo)".
 
-- creare il reindirizzamento dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Questo metodo permette, ad esempio, di creare un alias, cioè di reindirizzare un indirizzo email che non esiste verso un indirizzo email esistente. Per effettuare questa operazione, consulta la guida [Utilizzare i reindirizzamenti email](https://docs.ovh.com/it/emails/servizio_email_configura_il_reindirizzamento_delle_tue_email/#nuova-versione-della-soluzione-mx-plan_1).
+- creare il reindirizzamento dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Questo metodo permette, ad esempio, di creare un alias, cioè di reindirizzare un indirizzo email che non esiste verso un indirizzo email esistente. Per effettuare questa operazione, consulta la guida [Utilizzare i reindirizzamenti email](https://docs.ovh.com/it/emails/servizio_email_configura_il_reindirizzamento_delle_tue_email/#nuova-versione-della-soluzione-mx-plan).
 
 ##### **Segreteria**
 

@@ -3,14 +3,12 @@ title: Tutorial - Utilizzo di Zonemaster
 slug: ovhcloud-domain-zonemaster-tutorial
 section: DNS e zona DNS
 order: 08
-updated: 2022-09-12
+updated: 2023-06-06
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
-
-**Ultimo aggiornamento: 12/09/2022**
 
 > [!warning]
 >
@@ -38,14 +36,14 @@ updated: 2022-09-12
 
 Il tool Zonemaster permette di verificare una configurazione DNS installata su un dominio o di testare una zona DNS preconfigurata su server DNS futuri.
 
-Per verificare l'attuale configurazione di un dominio, inserisci il tuo dominio e clicca su `Check`{.action}
+Per verificare l'attuale configurazione di un dominio, inserisci il tuo dominio e clicca su `Run`{.action}
 
-![domini](images/zonemaster01.png){.thumbnail}
+![Screenshot dal modulo di Zonemaster. Il dominio "mydomain.ovh" è stato inserito ed è pronto per essere testato.](images/zonemaster01.png){.thumbnail}
 
 Per verificare una configurazione DNS preparata ma non ancora applicata al dominio interessato, seleziona la casella `Options`{.action} e inserisci le seguenti informazioni:
 
-- **Server DNS**: Inserisci le informazioni del server DNS associato a un dominio e clicca su `+`{.action} per confermare l'inserimento. Inserire un indirizzo IP è facoltativo.
-- **Delega del firmatario (registrazione DS)**: In caso di protezione DNSSEC, inserisci gli elementi del record DS e clicca su `+`{.action} per aggiungere il valore. Se i server DNS non utilizzano il protocollo DNSSEC, è possibile lasciare liberi questi campi.
+- **Nameservers**: inserisci le informazioni del server del nome associato a un dominio. Clicca su `+`{.action} per aggiungere un server con un nome supplementare. Inserire un indirizzo IP è facoltativo.
+- **DS records**: inserisci gli elementi del record DS nell'ambito di una protezione DNSSEC. Clicca su `+`{.action} per aggiungere un record DS aggiuntivo. Se i server DNS non utilizzano il protocollo DNSSEC, è possibile lasciare liberi questi campi. Nel caso di una zona firmata con DNSSEC, questa funzione permette di verificare che la zona funzioni correttamente con un resolver valido, con i record DS che stiamo per pubblicare, prima della loro pubblicazione.
 
 È inoltre possibile forzare le verifiche su un protocollo IP specifico tramite le caselle `Disable IPv6` e `Disable IPv4`
 
@@ -53,24 +51,28 @@ Per verificare una configurazione DNS preparata ma non ancora applicata al domin
 >
 > Prima di modificare i server DNS, puoi effettuare una ricerca avanzata utilizzando la casella `Options`{.action} inserendo "mydns.test.ovh" e "mydns2.test.ovh" nelle caselle `Nameservers`.<br>
 > Zonemaster eseguirà un test come se utilizzaste i server "mydns.test.ovh" e "mydns2.test.ovh" su "mydomain.ovh".<br>
-> ![domini](images/zonemaster02.png){.thumbnail}
+> ![Screenshot delle opzioni avanzate del modulo di Zonemaster. I due server con i nomi "myns.test.ovh" e "myDNS2.test.ovh" sono stati inseriti nella sezione "Server con i nomi" del form.](images/zonemaster02.png){.thumbnail}
 
 > [!primary]
 >
-> Quando inserisci un dominio e clicca sul pulsante `Fetch data from parent zone`{.action}, i server DNS associati al dominio appariranno insieme alle informazioni del record DS (DNSSEC) se è stato configurato.
-> ![domini](images/zonemaster03.png){.thumbnail}
+> Quando inserisci un dominio e clicca sui pulsanti `Fetch NS from parent zone`{.action} principale e `Fetch DS from parent zone`{.action} principale, se configurato, i server DNS associati al dominio appariranno insieme alle informazioni del record DS (DNSSEC).
+>
+> ![Captura de pantalla de la página de resultados de Zonemaster para el dominio "mydomain.ovh". Se desarrolla la sección "Address".](images/zonemaster03.png){.thumbnail}
 
 
 ### I Risultati
 
 Una volta convalidato il modulo, i risultati sono classificati per codice colore:
 
-- **Verde**: Questa parte è funzionale e soddisfa i criteri standard nella sua categoria.
-- **Orange**: Questa sezione funziona, ma merita un'attenzione particolare. Il tool ha rilevato che questo parametro presenta caratteristiche che non rientrano nello standard della sua categoria, senza bloccarne il funzionamento.
-- **Rosso**: Questa parte presenta errori o elementi mancanti che possono causare un malfunzionamento. 
-- **Blu**: si tratta di una semplice informazione, senza conseguenze particolari sul funzionamento del dominio.
+- **Error**: questa parte presenta errori o elementi mancanti che possono causare malfunzionamenti.
+- **Warning**: questa sezione funziona, ma merita un'attenzione particolare. Il tool ha rilevato che questo parametro presenta caratteristiche che non rientrano nello standard della sua categoria, senza bloccarne il funzionamento.
+- **Notice**: si tratta di una semplice informazione, senza conseguenze particolari sul funzionamento del dominio.
+- **Info**: questa parte è funzionale e soddisfa i criteri standard nella sua categoria.
 
-![domini](images/zonemaster04.png){.thumbnail}
+
+Per ciascun test è possibile ottenere maggiori dettagli, ad esempio per comprendere l'errore nel caso di un malfunzionamento, o semplicemente a titolo indicativo.
+
+![Screenshot della pagina dei risultati di Zonemaster per il dominio "mydomain.ovh". La sezione "Address" viene espansa.](images/zonemaster04.png){.thumbnail}
 
 ### Informazioni utili
 

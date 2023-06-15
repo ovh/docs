@@ -5,7 +5,7 @@ slug: eol-harbor-v1x
 section: 'Getting started'
 order: 06
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-registry/eol-harbor-1.x/'
+    canonical: 'https://docs.ovh.com/gb/en/private-registry/eol-harbor-v1x/'
 updated: 2023-03-10
 ---
 

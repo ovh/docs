@@ -4,14 +4,14 @@ slug: configurare-ottimizzare-il-tuo-database-server
 excerpt: Come configurare e ottimizzare il tuo database server
 section: Configurazione
 order: 06
-updated: 2023-02-15
+updated: 2023-04-24
 ---
 
 > [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
-**Ultimo aggiornamento: 15/02/2023**
+**Ultimo aggiornamento: 24/04/2023**
 
 ## Obiettivo
 
@@ -69,7 +69,18 @@ Per gli hosting Web OVHcloud è sufficiente selezionare `Autorizza gli hosting W
 
 ![Web Cloud Databases](images/web-cloud-databases-add-ip-step3.png){.thumbnail}
 
-### Modifica la tua offerta Web Cloud Databases
+### Modifica la tua offerta Web Cloud Databases <a name="modify-ram-web-cloud-db"></a>
+
+> [!warning]
+> 
+> Se la tua offerta Web Cloud Databases è associata a un'offerta di hosting Web **Performance**, per passare a un'offerta superiore è necessario svincolare preventivamente l'offerta Web Cloud Databases del tuo hosting **Performance**.
+>
+> Per creare un'offerta Web Cloud Databases associata a un hosting Web **Performance**, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella colonna di sinistra, clicca sulla scheda `Web Cloud`{.action} e poi su `Hosting`{.action}. 
+>
+> Nella nuova pagina `Informazioni generali`{.action} è possibile trovare un riquadro `Configurazione`{.action}. A destra della menzione `Web Cloud Databases`{.action}, clicca sul pulsante `...`{.action}, quindi su `Scollega`{.action}. Scegli la durata minima del rinnovo e prosegui fino alla conferma dell'ordine.
+>
+> **Questa azione è irreversibile e l'offerta Web Cloud Database sarà fatturata indipendentemente dal tuo hosting Web Performance.**
+>
 
 Per modificare l'offerta del tua istanza Web Cloud Databases, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Web Cloud Databases`{.action}. Seleziona il nome del tuo database server.
 Nella scheda **"Informazioni generali"**, visualizzata di default, clicca su `...`{.action} a destra della voce "RAM" e poi su `Modifica la quantità di RAM`{.action} per accedere all'ordine di questo passaggio.

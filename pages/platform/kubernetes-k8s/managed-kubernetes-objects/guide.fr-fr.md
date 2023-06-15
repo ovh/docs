@@ -160,3 +160,9 @@ kube-system   wormhole-7cbmc                               1/1     Running   0  
 kube-system   wormhole-7dt6x                               1/1     Running   0             14d
 kube-system   wormhole-vh7pk                               1/1     Running   0             14d
 </code></pre>
+
+## Go further
+
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our [community of users](https://community.ovh.com/).
