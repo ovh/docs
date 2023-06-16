@@ -3,7 +3,7 @@ title: 'Cambiare il proprietario di un dominio'
 slug: cambiare_proprietario_dominio
 excerpt: 'In questa guida troverai le informazioni necessarie per cambiare il proprietario di un dominio'
 section: 'Cambio di proprietario'
-updated: 2021-03-04
+updated: 2023-06-16
 ---
 
 > [!primary]
