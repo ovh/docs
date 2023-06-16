@@ -4,7 +4,7 @@ slug: wechsel_des_domaininhabers
 legacy_guide_number: 1350
 excerpt: 'Erfahren Sie hier, wie Sie den Inhaber eines Domainnamens wechseln können'
 section: Inhaberwechsel
-updated: 2021-03-04
+updated: 2023-06-16
 ---
 
 > [!primary]
@@ -21,6 +21,8 @@ Neben der Angabe von [Kontakten](../../customer/verwaltung-der-kontakte/) erford
 >Bei dieser Operation wird Ihre Domain nicht auf einen anderen OVHcloud-Kundenaccount umgezogen.
 >
 >Hierzu müssen Sie die [Kontaktverwaltung](../../customer/verwaltung-der-kontakte/) der Domain anpassen.
+>
+> Wenn Sie einen Inhaber- und Kontaktwechsel für denselben Domainnamen vornehmen müssen, gibt es keine bevorzugte Enciel-Reihenfolge. Es ist jedoch der Administratorkontakt, der diese Vorgänge einleiten kann. Diese beiden Änderungen werden daher im Kundenbereich vorgenommen.
 
 **Diese Anleitung erklärt die notwendigen Schritte zum Inhaberwechsel eines Domainnamens.**
 

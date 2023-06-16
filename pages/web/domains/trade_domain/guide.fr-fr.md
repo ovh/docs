@@ -17,6 +17,8 @@ En dehors de la [gestion des contacts](../../customer/gestion-des-contacts/), l�
 > Cette opération ne déplace pas votre nom de domaine vers un autre compte client OVHcloud.
 >
 > Pour ce faire, vous devez [modifier les contacts](../../customer/gestion-des-contacts/) du nom de domaine.
+>
+> Si vous devez réaliser un changement de propriétaire et un changement de contact pour le même nom de domaine, il n'y a pas d'ordre préférenciel. Néanmoins, c'est le contact administrateur qui est en mesure de lancer ces opérations. Ces deux changements se font, par conséquent dans l'espace client.
 
 **Découvrez comment changer le propriétaire d'un nom de domaine**
 

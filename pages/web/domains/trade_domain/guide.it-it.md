@@ -20,6 +20,8 @@ Per registrare un dominio, oltre alla [gestione dei contatti](../../customer/ges
 >Questa operazione non comporta lo spostamento del dominio verso un altro account cliente OVHcloud.
 >
 >Per farlo, devi [modificare i contatti](../../customer/gestisci_i_tuoi_contatti/) del dominio.
+>
+> Se devi effettuare un cambio di proprietario e un cambio di contatto per lo stesso nome a dominio, non esiste un ordine di enciel preferito. Tuttavia, è il contatto dell'amministratore che può avviare queste operazioni. Queste due modifiche vengono quindi apportate nell'area clienti.
 
 **Questa guida ti mostra come cambiare il proprietario di un dominio**
 

@@ -16,6 +16,7 @@ Besides the domain contacts, you need to provide information on the owner when r
 > [!primary]
 >This operation will not move your domain name to another OVHcloud customer account.
 >
+> If you need to make a change of owner and a change of contact for the same domain name, there is no preferred enciel order. However, it is the administrator contact who is able to initiate these operations. These two changes are therefore made in the customer area.
 
 **This guide will provide you with information on how to change the owner of a domain name.**
 

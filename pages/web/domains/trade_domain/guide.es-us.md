@@ -20,6 +20,8 @@ Además de [gestionar los contactos](../../customer/gestion-de-los-contactos/), 
 >Esta operación no migra el dominio a otra cuenta de cliente de OVHcloud.
 >
 >Para ello, debe [modificar los contactos](../../customer/gestion-de-los-contactos/) del nombre de dominio.
+>
+> Si necesitas hacer un cambio de titular y un cambio de contacto para el mismo nombre de dominio, no hay orden de enciel preferente. Sin embargo, es el contacto del administrador quien puede iniciar estas operaciones. Por tanto, estos dos cambios se realizan en el área de clientes.
 
 **Cómo cambiar el propietario de un dominio**
 
