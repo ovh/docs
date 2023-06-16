@@ -21,7 +21,7 @@ Para além da [gestão dos contactos](../../customer/gestao_dos_contactos/), o r
 >
 >Para isso, deve [modificar os contactos](../../customer/gestao_dos_contactos/) do nome de domínio.
 >
-> Se necessitar de fazer uma mudança de titular e uma mudança de contacto para o mesmo nome de domínio, não existe ordem de preferência enciel. No entanto, é o contato do administrador quem pode iniciar essas operações. Estas duas alterações são assim efetuadas na área de cliente.
+> Se necessitar de fazer uma mudança de titular e uma mudança de contacto para o mesmo nome de domínio, não existe ordem de preferência. No entanto, é o contato do administrador quem pode iniciar essas operações. Essas duas alterações são, portanto, feitas na área do cliente do contato do administrador do nome de domínio.
 
 **Fique a saber como alterar o titular de um nome de domínio**
 

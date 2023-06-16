@@ -18,7 +18,7 @@ Besides the [three contacts](../../customer/managing-contacts/), you need to pro
 >
 >To do this you need to change the domain name's [contacts](../../customer/managing-contacts/).
 >
-> If you need to make a change of owner and a change of contact for the same domain name, there is no preferred order. However, it is the administrator contact who is able to initiate these operations. These two changes are therefore made in the Control Panel.
+> If you need to make a change of owner and a change of contact for the same domain name, there is no preferential order. However, it is the administrator contact who is able to initiate these operations. These two changes are therefore made in the Control Panel of ​​the domain name administrator contact.
 
 **This guide will provide you with information on how to change the owner of a domain name.**
 

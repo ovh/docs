@@ -21,7 +21,7 @@ Neben der Angabe von [Kontakten](../../customer/verwaltung-der-kontakte/) erford
 >
 >Hierzu müssen Sie die [Kontaktverwaltung](../../customer/verwaltung-der-kontakte/) der Domain anpassen.
 >
-> Wenn Sie einen Inhaber- und Kontaktwechsel für denselben Domainnamen vornehmen müssen, gibt es dabei keine bevorzugte Reihenfolge. Es ist jedoch der Administratorkontakt, der diese Vorgänge einleiten kann. Diese beiden Änderungen werden daher im Kundencenter vorgenommen.
+> Wenn Sie einen Inhaber- und Kontaktwechsel für denselben Domainnamen vornehmen müssen, gibt es dabei keine bevorzugte Reihenfolge. Es ist jedoch der Administrator-Kontakt, der diese Vorgänge einleiten kann. Diese beiden Änderungen werden daher im Kundencenter des Administrator-Kontakts für den Domainnamen vorgenommen.
 
 **Diese Anleitung erklärt die notwendigen Schritte zum Inhaberwechsel eines Domainnamens.**
 

@@ -22,7 +22,7 @@ Oprócz [zarządzania kontaktami](../../customer/zarzadzanie_kontaktami/), zarej
 >
 >W tym celu należy [zmienić kontakty](../../customer/zarzadzanie_kontaktami/) domeny.
 >
-> Jeśli musisz dokonać zmiany właściciela i kontaktu dla tej samej nazwy domeny, nie ma preferowanego zamówienia. Jednak to kontakt administratora jest w stanie zainicjować te operacje. Te dwie zmiany są zatem wprowadzane w obszarze klienta.
+> Jeśli potrzebujesz dokonać zmiany właściciela i kontaktu dla tej samej nazwy domeny, nie ma preferencyjnej kolejności. Jednak to kontakt administratora jest w stanie zainicjować te operacje. Te dwie zmiany są zatem wprowadzane w obszarze klienta kontaktu administratora nazwy domeny.
 
 **Dowiedz się, jak zmienić właściciela domeny**
 

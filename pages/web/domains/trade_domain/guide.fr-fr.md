@@ -18,7 +18,7 @@ En dehors de la [gestion des contacts](../../customer/gestion-des-contacts/), l�
 >
 > Pour ce faire, vous devez [modifier les contacts](../../customer/gestion-des-contacts/) du nom de domaine.
 >
-> Si vous devez réaliser un changement de propriétaire et un changement de contact pour le même nom de domaine, il n'y a pas d'ordre préférenciel. Néanmoins, c'est le contact administrateur qui est en mesure de lancer ces opérations. Ces deux changements se font, par conséquent dans l'espace client.
+> Si vous devez réaliser un changement de propriétaire et un changement de contact pour le même nom de domaine, il n'y a pas d'ordre préférentiel. Néanmoins, c'est le contact administrateur qui est en mesure de lancer ces opérations. Ces deux changements se font, par conséquent, dans l'espace client du contact administrateur du nom de domaine.
 
 **Découvrez comment changer le propriétaire d'un nom de domaine**
 
