@@ -4,10 +4,10 @@ slug: transfert-sortant-dun-nom-de-domaine-generique-ou-geographique
 excerpt: Découvrez comment effectuer le transfert d’un nom de domaine OVHcloud vers le bureau d'enregistrement de votre choix
 section: Transfert
 order: 03
-updated: 2023-03-10
+updated: 2023-06-16
 ---
 
-**Dernière mise à jour le 10/03/2023**
+**Dernière mise à jour le 16/06/2023**
 
 ## Objectif
 
@@ -21,9 +21,9 @@ Afin d'empêcher les transferts de domaine non autorisés, les noms de domaine s
 >
 > Si le nom de domaine en question doit rester enregistré chez OVHcloud mais modifié dans ses modalités de gestion ou de propriété, un transfert sortant de domaine n'est pas la procédure appropriée.
 >
-> Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](https://docs.ovh.com/fr/customer/gestion-des-contacts/).
+> Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](/pages/account/customer/managing_contacts).
 >
-> Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](https://docs.ovh.com/fr/domains/changement-proprietaire-domaine/).
+> Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](/pages/web/domains/trade_domain).
 >
 
 ## Prérequis
@@ -64,6 +64,11 @@ Sous l'onglet `Informations générales`{.action}, vous trouverez le curseur `Pr
 
 Cliquez sur le curseur et confirmez, dans la fenêtre qui s'affiche, que vous souhaitez supprimer cette protection. Patientez quelques minutes pour que l'état passe à `Désactivée`{.action}.
 
+> [!primary]
+>
+> Si vous rencontrez le message "**Une erreur est survenue lors de la demande de désactivation de la protection du domaine (User not granted for this request)**", cela signifie que vous n'avez pas les droits suffisants pour deverrouillez le domaine. Vérifier que vous êtes bien le contact "administrateur" du domaine à l'aide de notre guide sur la [gestion des contacts](/pages/account/customer/managing_contacts) puis vérifiez que l'extension de votre domaine permet un deverrouillage depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+>
+
 ![désactivation protection](images/outgoing-transfer-step2.png){.thumbnail}
 
 > [!primary]
@@ -103,9 +108,9 @@ Pour plus d'informations, contactez votre nouveau bureau d'enregistrement.
 
 ## Aller plus loin
 
-[Transfert de nom de domaine .co.uk sortant](https://docs.ovh.com/fr/domains/transfert-sortant-dun-nom-de-domaine-couk/)
+[Transfert de nom de domaine .co.uk sortant](/pages/web/domains/transfer_outgoing_couk)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
