@@ -1,7 +1,6 @@
 ---
 title: 'Den Inhaber einer Domain ändern'
 slug: wechsel_des_domaininhabers
-legacy_guide_number: 1350
 excerpt: 'Erfahren Sie hier, wie Sie den Inhaber eines Domainnamens wechseln können'
 section: Inhaberwechsel
 updated: 2023-06-16
@@ -22,7 +21,7 @@ Neben der Angabe von [Kontakten](../../customer/verwaltung-der-kontakte/) erford
 >
 >Hierzu müssen Sie die [Kontaktverwaltung](../../customer/verwaltung-der-kontakte/) der Domain anpassen.
 >
-> Wenn Sie einen Inhaber- und Kontaktwechsel für denselben Domainnamen vornehmen müssen, gibt es keine bevorzugte Enciel-Reihenfolge. Es ist jedoch der Administratorkontakt, der diese Vorgänge einleiten kann. Diese beiden Änderungen werden daher im Kundenbereich vorgenommen.
+> Wenn Sie einen Inhaber- und Kontaktwechsel für denselben Domainnamen vornehmen müssen, gibt es dabei keine bevorzugte Reihenfolge. Es ist jedoch der Administratorkontakt, der diese Vorgänge einleiten kann. Diese beiden Änderungen werden daher im Kundencenter vorgenommen.
 
 **Diese Anleitung erklärt die notwendigen Schritte zum Inhaberwechsel eines Domainnamens.**
 
@@ -43,9 +42,9 @@ Neben der Angabe von [Kontakten](../../customer/verwaltung-der-kontakte/) erford
 >
 > Wir empfehlen, im Zweifelsfall folgende Ressourcen zu Rate zu ziehen:
 >
-> - die Webseite der zuständigen TLD-Registry
-> - die [Liste der bei OVHcloud verfügbaren TLDs](https://www.ovhcloud.com/de/domains/tld/)
-> - den Bereich `Laufende Operationen`{.action} im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), um laufende Updates des Domainnamens zu überprüfen.
+> - Die Webseite der zuständigen TLD-Registry
+> - Die [Liste der bei OVHcloud verfügbaren TLDs](https://www.ovhcloud.com/de/domains/tld/)
+> - Den Bereich `Laufende Vorgänge`{.action} im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), um noch nicht abgeschlossene Updates des Domainnamens zu überprüfen.
 >
 
 ### Schritt 1: Domain auswählen
@@ -69,14 +68,14 @@ Es öffnet sich ein neuer Browser-Tab mit allen in Frage kommenden Domains. Wäh
 
 ![Änderung des Inhabers](images/3657.PNG){.thumbnail}
 
-Achten Sie im Formular für die Angaben des Inhabers darauf, dass alle Pflichtfelder gültige Informationen enthalten. Achten Sie auf Eingabefehler und vermeiden Sie möglichst Zeichen außerhalb des *[ASCII printable](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm)*-Bereichs. Bitte beachten Sie auch, dass falsche oder ungenaue Angaben zu einem technischen Fehler und damit zu einer Verzögerung des gesamten Prozesses führen können. 
+Achten Sie im Formular für die Angaben des Inhabers darauf, dass alle Pflichtfelder gültige Informationen enthalten. Achten Sie auf Eingabefehler und vermeiden Sie möglichst Zeichen außerhalb des *[ASCII printable](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm)*-Bereichs. Bitte beachten Sie auch, dass falsche oder ungenaue Angaben zu einem technischen Fehler und damit zu einer Verzögerung des gesamten Prozesses führen können.
 
-Sobald Sie Ihre Anfrage für den Austausch bestätigt haben, werden Ihnen zwei E-Mails zur Bestätigung oder Stornierung der Anfrage zugesandt:
+Sobald Sie Ihre Anfrage für den Wechsel bestätigt haben, werden zwei E-Mails zur Bestätigung oder Stornierung der Anfrage versendet:
 
-- eine E-Mail, die an den aktuellen Inhaber gesendet wird;
-- eine E-Mail an den zukünftigen Inhaber.
+- Eine E-Mail an den aktuellen Inhaber
+- Eine E-Mail an den zukünftigen Inhaber
 
-Wenn die E-Mail-Adresse im Rahmen des Inhaberwechsels nicht geändert wird, werden der Referenz-E-Mail-Adresse beide E-Mails zugesandt, die aber trotzdem jeweils bestätigt werden müssen.
+Wenn die E-Mail-Adresse im Rahmen des Inhaberwechsels nicht geändert wird, werden beide E-Mails and die Referenz-E-Mail-Adresse gesendet. Beide müssen jeweils bestätigt werden.
 <br>Sobald beide Empfänger die Anfrage per E-Mail bestätigt haben, wird die Änderung des Inhabers des Domainnamens aktiv.
 
 > [!primary]
