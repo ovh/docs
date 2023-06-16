@@ -1,8 +1,7 @@
 ---
 title: 'Changer le propriétaire d’un nom de domaine'
 slug: changement-proprietaire-domaine
-legacy_guide_number: 1350
-excerpt: 'Vous trouverez dans ce guide différentes informations concernant le changement de propriétaire d’un nom de domaine.'
+excerpt: 'Retrouvez les différentes informations concernant le changement de propriétaire d’un nom de domaine.'
 section: 'Changement de propriétaire'
 updated: 2023-06-16
 ---
