@@ -14,12 +14,12 @@ updated: 2023-06-16
 
 ## Objetivo
 
-Además de [gestionar los contactos](../../customer/gestion-de-los-contactos/), para registrar un nombre de dominio, debe ingresar la información relacionada con su propietario. El **propietario** en este contexto se refiere a una persona o sociedad que posea los derechos sobre este dominio. **El cambio de propietario** hace referencia a la transferencia de derechos de propiedad de una persona o empresa a otra, la información del **propietario** tiene un valor jurídico. Por ejemplo, este proceso es obligatorio si una empresa cambia de nombre.
+Además de [gestionar los contactos](/pages/account/customer/managing_contacts), para registrar un nombre de dominio, debe ingresar la información relacionada con su propietario. El **propietario** en este contexto se refiere a una persona o sociedad que posea los derechos sobre este dominio. **El cambio de propietario** hace referencia a la transferencia de derechos de propiedad de una persona o empresa a otra, la información del **propietario** tiene un valor jurídico. Por ejemplo, este proceso es obligatorio si una empresa cambia de nombre.
 
 > [!primary]
 >Esta operación no migra el dominio a otra cuenta de cliente de OVHcloud.
 >
->Para ello, debe [modificar los contactos](../../customer/gestion-de-los-contactos/) del nombre de dominio.
+>Para ello, debe [modificar los contactos](/pages/account/customer/managing_contacts) del nombre de dominio.
 >
 > Si necesitas hacer un cambio de titular y un cambio de contacto para un mismo nombre de dominio, no hay orden preferente. Sin embargo, es el contacto del administrador quien puede iniciar estas operaciones. Por lo tanto, estos dos cambios se realizan en el área de clientes del contacto del administrador del nombre de dominio.
 
@@ -31,7 +31,7 @@ Además de [gestionar los contactos](../../customer/gestion-de-los-contactos/), 
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 - Tener un nombre de dominio registrado en OVHcloud.
-- Ser el [contacto administrador](../../customer/gestion-de-los-contactos/) del nombre de dominio en cuestión.
+- Ser el [contacto administrador](/pages/account/customer/managing_contacts) del nombre de dominio en cuestión.
 - Contar con el consentimiento del propietario actual del nombre de dominio para realizar el cambio de propietario.
 
 ## Procedimiento
@@ -103,6 +103,6 @@ No es necesario confirmar los cambios por correo electrónico.
 
 ## Más información
 
-[Gestionar los contactos de los servicios](../../customer/gestion-de-los-contactos/)
+[Gestionar los contactos de los servicios](/pages/account/customer/managing_contacts)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

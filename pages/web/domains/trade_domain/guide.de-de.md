@@ -14,12 +14,12 @@ updated: 2023-06-16
 
 ## Ziel
 
-Neben der Angabe von [Kontakten](../../customer/verwaltung-der-kontakte/) erfordert die Registrierung eines Domainnamens die Angabe von Informationen zu dessen Inhaber. **Inhaber** bedeutet in diesem Zusammenhang eine Person, die über die Nutzungsrechte an diesem Domainnamen verfügt. (Es kann sich dabei auch um ein Unternehmen handeln.) Unter einem **Inhaberwechsel** versteht man eine rechtsverbindliche Änderung dieser Daten. Zum Beispiel ist der Inhaberwechsel das obligatorische Verfahren bei einer Namensänderung eines Unternehmens.
+Neben der Angabe von [Kontakten](/pages/account/customer/managing_contacts) erfordert die Registrierung eines Domainnamens die Angabe von Informationen zu dessen Inhaber. **Inhaber** bedeutet in diesem Zusammenhang eine Person, die über die Nutzungsrechte an diesem Domainnamen verfügt. (Es kann sich dabei auch um ein Unternehmen handeln.) Unter einem **Inhaberwechsel** versteht man eine rechtsverbindliche Änderung dieser Daten. Zum Beispiel ist der Inhaberwechsel das obligatorische Verfahren bei einer Namensänderung eines Unternehmens.
 
 > [!primary]
 >Bei dieser Operation wird Ihre Domain nicht auf einen anderen OVHcloud-Kundenaccount umgezogen.
 >
->Hierzu müssen Sie die [Kontaktverwaltung](../../customer/verwaltung-der-kontakte/) der Domain anpassen.
+>Hierzu müssen Sie die [Kontaktverwaltung](/pages/account/customer/managing_contacts) der Domain anpassen.
 >
 > Wenn Sie einen Inhaber- und Kontaktwechsel für denselben Domainnamen vornehmen müssen, gibt es dabei keine bevorzugte Reihenfolge. Es ist jedoch der Administrator-Kontakt, der diese Vorgänge einleiten kann. Diese beiden Änderungen werden daher im Kundencenter des Administrator-Kontakts für den Domainnamen vorgenommen.
 
@@ -29,7 +29,7 @@ Neben der Angabe von [Kontakten](../../customer/verwaltung-der-kontakte/) erford
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
 - Ihr Domainname ist bei OVHcloud registriert.
-- Sie sind der [Administratorkontakt](../../customer/verwaltung-der-kontakte/) des entsprechenden Domainnamens.
+- Sie sind der [Administratorkontakt](/pages/account/customer/managing_contacts) des entsprechenden Domainnamens.
 - Sie haben die Zustimmung des aktuellen Inhabers des Domainnamens, den Inhaberwechsel durchzuführen.
 
 ## In der praktischen Anwendung
@@ -100,6 +100,6 @@ Für diese Aktion müssen die Änderungen nicht per E-Mail bestätigt werden.
 
 ## Weiterführende Informationen
 
-[Verwaltung der Kontakte Ihrer Dienstleistungen](../../customer/verwaltung-der-kontakte/)
+[Verwaltung der Kontakte Ihrer Dienstleistungen](/pages/account/customer/managing_contacts)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

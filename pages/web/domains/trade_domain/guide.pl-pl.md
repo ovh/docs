@@ -15,12 +15,12 @@ updated: 2023-06-16
 
 ## Wprowadzenie
 
-Oprócz [zarządzania kontaktami](../../customer/zarzadzanie_kontaktami/), zarejestrowanie domeny wymaga podania informacji dotyczących jej właściciela. Właściciel **domeny** w tym kontekście dotyczy osoby lub firmy posiadającej prawa do tej domeny. **Zmiana właściciela** odnosi się do przeniesienia praw własności z jednej osoby lub firmy na inną, informacje **właściciela** mają moc prawną. Na przykład proces ten jest obowiązkowy, jeśli firma zmienia nazwę.
+Oprócz [zarządzania kontaktami](/pages/account/customer/managing_contacts), zarejestrowanie domeny wymaga podania informacji dotyczących jej właściciela. Właściciel **domeny** w tym kontekście dotyczy osoby lub firmy posiadającej prawa do tej domeny. **Zmiana właściciela** odnosi się do przeniesienia praw własności z jednej osoby lub firmy na inną, informacje **właściciela** mają moc prawną. Na przykład proces ten jest obowiązkowy, jeśli firma zmienia nazwę.
 
 > [!primary]
 >Operacja ta nie przenosi Twojej domeny na inne konto klienta OVHcloud.
 >
->W tym celu należy [zmienić kontakty](../../customer/zarzadzanie_kontaktami/) domeny.
+>W tym celu należy [zmienić kontakty](/pages/account/customer/managing_contacts) domeny.
 >
 > Jeśli potrzebujesz dokonać zmiany właściciela i kontaktu dla tej samej nazwy domeny, nie ma preferencyjnej kolejności. Jednak to kontakt administratora jest w stanie zainicjować te operacje. Te dwie zmiany są zatem wprowadzane w obszarze klienta kontaktu administratora nazwy domeny.
 
@@ -30,7 +30,7 @@ Oprócz [zarządzania kontaktami](../../customer/zarzadzanie_kontaktami/), zarej
 
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - Posiadanie domeny zarejestrowanej w OVHcloud.
-- Posiadanie statusu [kontaktu administracyjnego](../../customer/zarzadzanie_kontaktami/) danej domeny.
+- Posiadanie statusu [kontaktu administracyjnego](/pages/account/customer/managing_contacts) danej domeny.
 - Zgoda aktualnego właściciela domeny na zmianę właściciela.
 
 ## W praktyce
@@ -102,6 +102,6 @@ W przypadku tej operacji nie musisz potwierdzać modyfikacji za pomocą e-maila.
 
 ## Sprawdź również
 
-[Zarządzanie kontaktami swoich usług](../../customer/zarzadzanie_kontaktami/)
+[Zarządzanie kontaktami swoich usług](/pages/account/customer/managing_contacts)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
