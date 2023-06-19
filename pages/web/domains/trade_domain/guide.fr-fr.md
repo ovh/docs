@@ -43,7 +43,7 @@ En dehors de la [gestion des contacts](/pages/account/customer/managing_contacts
 >
 > Nous vous recommandons de consulter les ressources suivantes en cas de doute :
 >
-> - le site Web du registre **TLD** correspondant;
+> - le site Web du registre **TLD** correspondant ;
 > - la [liste des TLD disponibles sur le site OVHcloud](https://www.ovhcloud.com/fr/domains/tld/);
 > - la section `Opérations en cours`{.action} de l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) pour vérifier les mises à jour d'état du nom de domaine.
 >
