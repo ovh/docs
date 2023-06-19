@@ -28,7 +28,7 @@ Per registrare un dominio, oltre alla [gestione dei contatti](/pages/account/cus
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
-- Disporre di un dominio registrato in OVHcloud
+- Disporre di un dominio registrato in OVHcloud e per il quale non sono in corso operazioni (modifica del proprietario, trasferimento, creazione). Se un'operazione è stata ultimata di recente sul tuo dominio, prima di eseguire una nuova operazione è necessario almeno 60 giorni di calendario.
 - Essere il [contatto amministratore](/pages/account/customer/managing_contacts) del dominio.
 - Disporre del consenso del proprietario attuale del dominio per effettuare il cambio di proprietario.
 
@@ -36,13 +36,18 @@ Per registrare un dominio, oltre alla [gestione dei contatti](/pages/account/cus
 
 > [!warning]
 >
-> Le istruzioni che seguono descrivono il modo più comune di modificare il proprietario del dominio, valido per la maggior parte dei domini di livello superiore (TLD). Tuttavia, le regole specifiche delle procedure relative ai domini TLD sono definite unicamente dall'autorità di assegnazione appropriata, vale a dire il **registro**. I Registrar come OVHcloud devono rispettare queste regole e non hanno alcuna influenza sulle decisioni di registrazione.
+> Le istruzioni che seguono descrivono il modo più comune di modificare il proprietario di un dominio. Esse sono valide per la maggior parte dei settori di livello superiore, comunemente denominati **T**op **L**evel **D**omain (**TLD**). 
+>I **TLD** designano la fine del tuo dominio, come ad esempio *.com*, *.net*, *.it*, ecc...
 >
-> La procedura esatta per il cambio di proprietà di un dominio può quindi variare, in particolare nel caso di alcune TLD di codice paese (ccTLD, quali .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, ecc.) e di alcune TLD speciali (.am, .fm, ecc.). Per alcuni di essi, un cambio di proprietà è considerato un'operazione a pagamento. Il cambio di proprietà può essere sospeso anche per diversi motivi, ad esempio per mancato pagamento, abuso o blocco del registro.
+> Le regole specifiche delle procedure relative ai nomi di dominio **TLD** sono definite unicamente dall'autorità di assegnazione competente, vale a dire **Registro**. Un Registrar come OVHcloud deve rispettare queste regole e non ha alcuna influenza sulle decisioni di registrazione.
+>
+> Esistono principalmente due tipi di **TLD**: I **ccTLD** e i **gTLD**. I **ccTLD** corrispondono a **TLD** relativi a una regione o a un paese (*.it*, *.be*, *.uk*, *.de*, *.paris*, ecc.). I **gTLD** corrispondono a **TLD** più generici (*.net*, *.com*, *.info*, *.org*, ecc.).
+>
+> La procedura esatta per il cambio di proprietà di un dominio può quindi variare, in particolare per alcuni **ccTLD**, quali *.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, ecc., e per alcuni **TLD* speciali (*.am*, *.fm*, ecc.). Per alcuni di essi, il cambio di assegnatario è un'operazione a pagamento. Il cambio di proprietà può anche essere sospeso per diversi motivi, ad esempio per mancato pagamento, abuso o blocco da parte del registro. 
 >
 > In caso di dubbi, consulta queste risorse:
 >
-> - il sito web del registro TLD corrispondente;
+> - il sito web del registro **TLD** corrispondente;
 > - la [lista dei TLD disponibili su OVHcloud](https://www.ovhcloud.com/it/domains/tld/);
 > - sezione `Operazioni in corso`{.action} dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) per verificare gli aggiornamenti dello stato del dominio.
 >

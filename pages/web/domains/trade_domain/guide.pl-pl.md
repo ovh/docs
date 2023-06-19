@@ -28,7 +28,7 @@ Oprócz [zarządzania kontaktami](/pages/account/customer/managing_contacts), za
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
-- Posiadanie domeny zarejestrowanej w OVHcloud.
+- Posiadanie domeny zarejestrowanej w OVHcloud dla której nie trwa żadna operacja (zmiana właściciela, transfer, utworzenie). Jeśli operacja została ostatnio zakończona w ramach Twojej domeny, przed wykonaniem nowej operacji musi upłynąć co najmniej 60 dni kalendarzowych.
 - Posiadanie statusu [kontaktu administracyjnego](/pages/account/customer/managing_contacts) danej domeny.
 - Zgoda aktualnego właściciela domeny na zmianę właściciela.
 
@@ -36,13 +36,18 @@ Oprócz [zarządzania kontaktami](/pages/account/customer/managing_contacts), za
 
 > [!warning]
 >
-> Poniższe instrukcje opisują najpopularniejszy sposób zmiany właściciela domeny, ważny dla większości domen najwyższego poziomu (TLD). Jednak szczegółowe zasady procesu rejestracji domen TLD są określane wyłącznie przez właściwy organ przydziału, tj. **rejestr**. Rejestratorzy (lub rejestratorzy), tacy jak OVHcloud, muszą przestrzegać tych zasad i nie mają wpływu na decyzje dotyczące rejestracji.
+> Poniższe instrukcje opisują najpopularniejszy sposób zmiany właściciela domeny. Są one ważne dla większości obszarów wyższego poziomu, powszechnie znanych jako **T**op **L**evel **D**omain (**TLD**). 
+>**TLD** oznacza koniec Twojej domeny, np. *.com*, *.net*, *.fr*, itp.
 >
-> Dokładna procedura zmiany właściciela domeny może się zatem różnić, w szczególności w przypadku niektórych TLD kodu kraju (np. ccTLD, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, itp.) oraz kilku specjalnych TLD (.am, .fm, itp.). W przypadku niektórych z nich zmiana właściciela jest uznawana za transakcję płatną. Zmiana właściciela może być również zawieszona z różnych powodów, na przykład z powodu nieopłacenia zamówienia, nadużycia lub zablokowania rejestru.
+> Szczegółowe zasady procesu rejestracji domen **TLD** są określone wyłącznie przez właściwy organ przydziału, tj. **registry**. Rejestrator (lub operator), taki jak OVHcloud, musi przestrzegać tych zasad i nie ma wpływu na decyzje dotyczące rejestracji.
+>
+> Istnieją głównie dwa rodzaje **TLD**: **ccTLD** oraz **gTLD**. **ccTLD** odnosi się do **TLD** dotyczących regionu lub kraju (*.fr*, *.be*, *.uk*, *.de*, *.paris*, itp.). **gTLD** odnosi się do **TLD** plus ogólne (*.net*, *.com*, *.info*, *.org*, itp.).
+>
+> Dokładna procedura zmiany właściciela domeny może się zatem różnić, w szczególności w przypadku niektórych **ccTLD**, takich jak *.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, itp.) oraz w przypadku niektórych **TLD** (*.am*,*,*, fm*, itp.) W przypadku niektórych z nich zmiana właściciela to operacja płatna. Zmiana właściciela może być również zawieszona z różnych powodów, na przykład z powodu nieopłacenia zamówienia, nadużycia lub zablokowania przez registry. 
 >
 > W przypadku wątpliwości zalecamy sprawdzenie następujących zasobów:
 >
-> - strona internetowa odpowiedniego rejestru TLD;
+> - strona internetowa rejestru **TLD**;
 > - Lista [TLD dostępnych na OVHcloud](https://www.ovhcloud.com/pl/domains/tld/);
 > - sekcja `Operacje w trakcie`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), aby sprawdzić aktualizacje statusu domeny.
 >

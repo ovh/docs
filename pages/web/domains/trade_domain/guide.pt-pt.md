@@ -28,7 +28,7 @@ Para além da [gestão dos contactos](/pages/account/customer/managing_contacts)
 ## Requisitos
 
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
-- Ter um nome de domínio registado na OVHcloud.
+- Ter um nome de domínio registado na OVHcloud e para o qual não está em curso nenhuma operação (mudança de proprietário, transferência, criação). Se uma operação foi finalizada recentemente no seu domínio, é necessário aguardar pelo menos 60 dias de calendário antes de realizar uma nova operação.
 - Ser o [contacto administrador](/pages/account/customer/managing_contacts) do respetivo nome de domínio.
 - Ter o consentimento do titular atual do nome de domínio para realizar a alteração de titular.
 
@@ -36,13 +36,18 @@ Para além da [gestão dos contactos](/pages/account/customer/managing_contacts)
 
 > [!warning]
 >
-> As instruções que se seguem descrevem a forma mais comum de modificar o proprietário do nome de domínio, válida para a maioria dos domínios de nível superior (TLD). No entanto, as regras específicas dos processos relativas aos nomes de domínio TLD são definidas apenas pela autoridade de atribuição adequada, ou seja, o **registo**. Os agentes de registo (ou registar), tais como a OVHcloud, devem respeitar estas regras e não têm qualquer influência sobre as decisões de registo.
+> As seguintes instruções descrevem a forma mais comum de modificar o proprietário de um nome de domínio. São válidas para a maior parte dos domínios de nível superior, vulgarmente designados **T**op **L**evel **D**omain (**TLD**). 
+>Os **TLD** designam o fim do seu nome de domínio, como por exemplo o *.com*, *.net*, *.fr*, etc.
 >
-> Assim, o procedimento exato para a mudança de proprietário de um nome de domínio pode variar, em especial no caso de certos TLD de código de país (ccTLD, tais como .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) e de alguns TLD especiais (.am, .fm, etc.). Para alguns deles, uma mudança de proprietário é considerada uma operação paga. A mudança de proprietário pode igualmente ser suspensa por diversas razões, por exemplo, por um não pago, por um abuso ou por um bloqueio do registo.
+> As regras específicas dos processos relativos aos nomes de domínio **TLD** são definidas unicamente pela autoridade de atribuição adequada, ou seja, o **registo**. Um agente de registo (ou registar) como a OVHcloud deve respeitar estas regras e não tem qualquer influência sobre as decisões de registo.
+>
+> Existem principalmente dois tipos de **TLD**: Os **ccTLD** e os **gTLD**. Os **ccTLD** correspondem a **TLD** relativos a uma região ou a um país (*.fr*, *.be*, *.uk*, *.de*, *.paris*, etc.). Os **gTLD** correspondentes a **TLD** mais genéricos (*.net*, *.com*, *.info*, *.org*, etc.).
+>
+> O procedimento exato para a mudança de proprietário de um nome de domínio pode assim variar, em particular para certos **ccTLD**, tais como *.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, etc.) e para alguns **TLD** especiais (*.am*, *.fm*, etc.). Para alguns deles, uma mudança de proprietário é uma operação paga. A mudança de proprietário pode igualmente ser suspensa por várias razões, por exemplo, por falta de pagamento, abuso ou bloqueio por parte do registo. 
 >
 > Em caso de dúvida, recomendamos que consulte os seguintes recursos:
 >
-> - O sítio Web do registo TLD correspondente;
+> - o sítio Web do registo **TLD** correspondente;
 > - a [lista dos TLD disponíveis na OVHcloud](https://www.ovhcloud.com/pt/domains/tld/);
 > - a secção `Operações em curso`{.action} na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) para verificar as atualizações do estado do domínio.
 >
