@@ -32,7 +32,10 @@ En dehors de la [gestion des contacts](/pages/account/customer/managing_contacts
 
 > [!warning]
 >
->Les instructions suivantes décrivent le moyen le plus courant de modifier le propriétaire d'un nom de domaine. Elles sont valides pour la plupart des domaines de niveau supérieur : **T**op **L**evel **D**omain (**TLD**). Les **TLD** représentent la fin de votre nom de domaine comme par exemple le *.com*, *.net*, *.fr*, etc. . Toutefois, les règles spécifiques des processus concernant les noms de domaine **TLD** sont uniquement définies par l'autorité d'allocation appropriée, c'est-à-dire le **registre**. Les bureaux d'enregistrement (ou registrar) tels qu'OVHcloud doivent respecter ces règles et n'ont aucune influence sur les décisions d'enregistrement.
+> Les instructions suivantes décrivent le moyen le plus courant de modifier le propriétaire d'un nom de domaine. Elles sont valides pour la plupart des domaines de niveau supérieur, communément appelés **T**op **L**evel **D**omain (**TLD**). 
+>Les **TLD** désignent la fin de votre nom de domaine, comme par exemple le *.com*, *.net*, *.fr*, etc.
+>
+> Les règles spécifiques des processus concernant les noms de domaine **TLD** sont uniquement définies par l'autorité d'allocation appropriée, c'est-à-dire le **registre**. Un bureau d'enregistrement (ou registrar) tel que OVHcloud doit respecter ces règles et n'a aucune influence sur les décisions d'enregistrement.
 >
 > Il existe principalement deux types de **TLD** : Les **ccTLD** et les **gTLD**. Les **ccTLD** correspondent à des **TLD** relatifs à une région ou un pays (*.fr*, *.be*, *.uk*, *.de*, *.paris*, etc.). Les **gTLD** correspondant à des **TLD** plus génériques (*.net*, *.com*, *.info*, *.org*, etc.).
 >
