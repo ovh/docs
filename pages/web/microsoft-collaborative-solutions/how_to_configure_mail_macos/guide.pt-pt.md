@@ -1,8 +1,5 @@
 ---
 title: Configurar uma conta Exchange no Mail do macOS
-slug: exchange-configuracao-mail-mac
-section: Configuração no computador
-order: 06
 updated: 2021-12-28
 ---
 
@@ -54,7 +51,7 @@ A OVHcloud também disponibiliza uma aplicação web que permite aceder ao seu e
 
 ### Recuperar um backup do seu endereço de e-mail
 
-Se tiver de efetuar uma operação suscetível de causar a perda dos dados da sua conta de e-mail, sugerimos que efetue uma cópia de segurança da conta de e-mail em questão. Para isso, consulte o parágrafo "**Exportar**" na secção "**Mail para Mac OS**" do nosso manual [Migrar manualmente o seu endereço de e-mail](https://docs.ovh.com/pt/emails/migrar-os-enderecos-email-manualmente/#exportar).
+Se tiver de efetuar uma operação suscetível de causar a perda dos dados da sua conta de e-mail, sugerimos que efetue uma cópia de segurança da conta de e-mail em questão. Para isso, consulte o parágrafo "**Exportar**" na secção "**Mail para Mac OS**" do nosso manual [Migrar manualmente o seu endereço de e-mail](/pages/web/emails/manual_email_migration#exportar).
 
 ### Modificar os parâmetros existentes
 

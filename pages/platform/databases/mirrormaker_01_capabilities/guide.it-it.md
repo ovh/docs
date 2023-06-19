@@ -1,11 +1,8 @@
 ---
 title: Kafka MirrorMaker - Capabilities and Limitations
-slug: mirrormaker/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka MirrorMaker
-section: Kafka MirrorMaker - Guides
-order: 1
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mirrormaker/capabilities/'
+    canonical: '/pages/platform/databases/mirrormaker_01_capabilities'
 updated: 2023-04-24
 ---
 

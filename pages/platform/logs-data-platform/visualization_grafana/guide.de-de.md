@@ -1,8 +1,5 @@
 ---
 title: Using Grafana with Logs Data Platform
-slug: logs-data-platform-using-grafana-with-logs
-order: 1
-section: Visualize your logs
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-using-grafana-with-logs?id=kb_article_view&sysparm_article=KB0050069'
 updated: 2022-06-15
@@ -91,6 +88,6 @@ If you want to know what you can do with Grafana and OpenSearch, read the [offic
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/de/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

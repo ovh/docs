@@ -1,8 +1,5 @@
 ---
 title: Custom Domains - Step by step guide
-slug: domains-steps
-section: Domains
-order: 7
 updated: 2021-06-02
 ---
 
@@ -34,9 +31,9 @@ If you have multiple domains you want to be served by the same application you w
 
 Note that depending on your registrar and the TTL you set, it could take anywhere from 15 minutes to 72 hours for the DNS change to fully propagate across the Internet.
 
-If you are using an apex domain (`example.com`), see the additional information about [Apex domains and CNAME records](dns).
+If you are using an apex domain (`example.com`), see the additional information about [Apex domains and CNAME records](/pages/web/web-paas/domains-steps/dns).
 
-If you are planning to host multiple subdomains on different projects, see the additional information about [Subdomains](subdomains) *before* you add your domain to Web PaaS.
+If you are planning to host multiple subdomains on different projects, see the additional information about [Subdomains](/pages/web/web-paas/domains-steps/subdomains) *before* you add your domain to Web PaaS.
 
 ## 3. (Non-CDN version) Set your domain in Web PaaS
 
@@ -44,7 +41,7 @@ If you are planning to host multiple subdomains on different projects, see the a
 > If using a CDN, skip this step. The CDN should already have been configured in advance to point to Web PaaS as its upstream.
 > 
 
-This step will tell the Web PaaS edge layer where to route requests for your web site. You can do this through the CLI with `webpaas domain:add example.com` or  [using the managment console](../administration-web/configure-project#domains).
+This step will tell the Web PaaS edge layer where to route requests for your web site. You can do this through the CLI with `webpaas domain:add example.com` or  [using the managment console](/pages/web/web-paas/administration-web/configure-project#domains).
 
 You can add multiple domains to point to your project. Each domain can have its own custom SSL certificate, or use the default one provided.
 
@@ -73,6 +70,6 @@ Sometimes it can take Let's Encrypt a couple of minutes to provision the certifi
 
 ### Configure health notifications
 
-While not required, it's strongly recommended that you set up [health notifications](../integrations-notifications) to advise you if your site is experiencing issues such as running low on disk space.  Notifications can be sent via email, Slack, or PagerDuty.
+While not required, it's strongly recommended that you set up [health notifications](/pages/web/web-paas/integrations-notifications) to advise you if your site is experiencing issues such as running low on disk space.  Notifications can be sent via email, Slack, or PagerDuty.
 
 

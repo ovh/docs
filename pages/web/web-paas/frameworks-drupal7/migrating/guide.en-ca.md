@@ -1,7 +1,5 @@
 ---
 title: Migrating an existing Drupal 7 site to Web PaaS
-slug: migrating
-section: Drupal7
 updated: 2021-06-03
 ---
 

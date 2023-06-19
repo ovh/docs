@@ -1,9 +1,6 @@
 ---
 title: 'Demarrez avec PostgreSQL'
-slug: demarrez-avec-postgresql
 excerpt: 'Utilisez vos bases de donnees'
-section: 'Premiers pas'
-order: 03
 updated: 2023-02-15
 ---
 
@@ -17,7 +14,7 @@ Vous désirez utiliser PostgreSQL ? Découvrez comment créer et gérer vos base
 ### Prérequis
 
 - Une instance Web Cloud Databases
-- Avoir consulté le [guide de démarrage de Web Cloud Databases](../debuter-avec-clouddb/)
+- Avoir consulté le [guide de démarrage de Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb)
 
 
 ### Qu'est-ce qu'une base de donnees PostgreSQL ?
@@ -42,7 +39,7 @@ Afin de vous connecter à votre base, assurez vous de ceci :
 
 Toutes ces informations sont disponibles dans votre [Espace Client Web](https://www.ovh.com/manager/web/){.external}.
 
-Un guide est également disponible : [Premiers pas avec le service Web Cloud Databases](../starting_with_clouddb/guide.fr-fr.md){.ref}
+Un guide est également disponible : [Premiers pas avec le service Web Cloud Databases](/fr/clouddb/starting_with_clouddb/guide.fr-fr.md){.ref}
 
 
 ### Connexion en ligne de commande
@@ -108,7 +105,7 @@ psql --host=serveur --port=port --user=utilisateur --password=password nom_de_la
 
 > [!primary]
 >
-> Dans certains cas, il se peut que la RAM disponible dans votre instance Web Cloud Databases ne permette pas de réaliser l'export ou l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. Reportez-vous à la documentation [« Premiers pas avec le service Web Cloud Databases »](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/#importation-dune-base-de-donnees){.external} si nécessaire.
+> Dans certains cas, il se peut que la RAM disponible dans votre instance Web Cloud Databases ne permette pas de réaliser l'export ou l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. Reportez-vous à la documentation [« Premiers pas avec le service Web Cloud Databases »](/pages/web/clouddb/starting_with_clouddb#importation-dune-base-de-donnees){.external} si nécessaire.
 >
 
 ## Aller plus loin

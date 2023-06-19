@@ -1,10 +1,8 @@
 ---
 title: 'Entender el mensaje de error “Controller VM deleted” (EN)'
-slug: error-controlador-nsx
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/error-controller-nsx/'
+    canonical: '/pages/cloud/private-cloud/nsx_controler_deleted_error'
 excerpt: 'Find out what the “Controller VM deleted” error message means'
-section: NSX-v
 updated: 2021-11-26
 ---
 
@@ -20,11 +18,11 @@ In your NSX interface, you may encounter the *Controller VM deleted* message.
 
 - being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/) to receive login credentials
 - a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws))
-- a deployed [NSX Edge Services Gateway](https://docs.ovh.com/us/es/private-cloud/how-to-deploy-an-nsx-edge-gateway/)
+- a deployed [NSX Edge Services Gateway](/pages/cloud/private-cloud/nsx_deploying_edge_gateway)
 
 ## Instructions
 
-In your [NSX interface](https://docs.ovh.com/us/es/private-cloud/acceder-a-la-interfaz-de-gestion-nsx/), under the `Installation and Upgrade`{.action} menu, in the `Management`{.action} tab and `NSX Controller Nodes`{.action} section, the *Controller VM deleted* error message may appear under the "Controller Node" summary.
+In your [NSX interface](/pages/cloud/private-cloud/nsx_access-interface), under the `Installation and Upgrade`{.action} menu, in the `Management`{.action} tab and `NSX Controller Nodes`{.action} section, the *Controller VM deleted* error message may appear under the "Controller Node" summary.
 
 ![Controller VM deleted error](images/en01control.png)
 

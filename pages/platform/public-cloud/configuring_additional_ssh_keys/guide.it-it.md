@@ -1,9 +1,6 @@
 ---
 title: Configura chiavi SSH aggiuntive
 excerpt: Come configurare chiavi SSH aggiuntive per la tua istanza Public Cloud
-slug: configura_chiavi_ssh_aggiuntive
-section: Tutorial
-order: 01
 updated: 2022-02-04
 ---
 
@@ -34,11 +31,11 @@ Per salvare una chiave SSH nello Spazio Cliente OVHcloud, ti consigliamo di util
 
 ### Crea la chiave SSH
 
-Per creare una nuova chiave SSH, consulta la [guida sui primi step con il Public Cloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/).
+Per creare una nuova chiave SSH, consulta la [guida sui primi step con il Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps).
 
 ### Configurazione del nuovo utente
 
-[Accedi alla tua istanza in SSH](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/#connect-to-instance) e crea un nuovo utente utilizzando questi comandi:
+[Accedi alla tua istanza in SSH](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) e crea un nuovo utente utilizzando questi comandi:
 
 ```bash
 ~$ sudo adduser user2
@@ -91,8 +88,8 @@ user2@server:~$
 
 ## Per saperne di più
 
-[Creare una prima istanza Public Cloud e connettersi](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/)
+[Creare una prima istanza Public Cloud e connettersi](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Modifica la chiave SSH in caso di perdita](https://docs.ovh.com/it/public-cloud/sostituisci_la_tua_chiave_ssh_in_caso_di_perdita/)
+[Modifica la chiave SSH in caso di perdita](/pages/platform/public-cloud/replacing_lost_ssh_key)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

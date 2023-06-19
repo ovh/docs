@@ -1,11 +1,8 @@
 ---
 title: Utilisation SDK vSphere
-slug: utilisation-sdk-vsphere
 routes:
-    canonical: 'https://docs.ovh.com/ca/fr/private-cloud/utilisation-sdk-vsphere/'
+    canonical: '/pages/cloud/private-cloud/vmware_installation_api'
 excerpt: Utilisation et mise en place du SDK vSphere
-section: Fonctionnalités VMware vSphere
-order: 10
 updated: 2020-11-18
 ---
 
@@ -25,7 +22,7 @@ Il est possible d'automatiser les actions au sein de votre infrastructure en uti
 
 ##### OS
 
-Ici nous utilisons une VM installée sur Debian 9, déployée depuis [les templates mis à disposition sur votre Managed Bare Metal](../deploiement-template-ovhcloud/).
+Ici nous utilisons une VM installée sur Debian 9, déployée depuis [les templates mis à disposition sur votre Managed Bare Metal](/pages/cloud/managed-bare-metal/ovf_template).
 
 ##### Prérequis
 
@@ -143,7 +140,7 @@ vconnect()
 
 ##### OS
 
-Ici nous utilisons une VM installée sur Ubuntu 18.04, déployée depuis [les templates mis à disposition sur votre Managed Bare Metal](../deploiement-template-ovhcloud/).
+Ici nous utilisons une VM installée sur Ubuntu 18.04, déployée depuis [les templates mis à disposition sur votre Managed Bare Metal](/pages/cloud/managed-bare-metal/ovf_template).
 
 
 ##### Prérequis

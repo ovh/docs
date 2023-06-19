@@ -1,7 +1,5 @@
 ---
 title: Headless Chrome
-slug: headless-chrome
-section: Services
 updated: 2021-06-03
 ---
 
@@ -24,7 +22,7 @@ Puppeteer can be used to generate PDFs and screenshots of web pages, automate fo
 
 ## Relationship
 
-The format exposed in the `$PLATFORM_RELATIONSHIPS` [environment variable](../../development-variables#platformsh-provided-variables):
+The format exposed in the `$PLATFORM_RELATIONSHIPS` [environment variable](/pages/web/web-paas/development-variables#platformsh-provided-variables):
 
 ```yaml
 {
@@ -48,7 +46,7 @@ Using the Web PaaS [Config Reader](https://github.com/platformsh/config-reader-n
 
 ### Other languages
 
-It will be necessary to upgrade the version of Node.js in other language containers before using Puppeteer. You can use [Node Version Manager](https://github.com/nvm-sh/nvm) or NVM to change or update the version available in your application container by following the instructions in the [Alternate Node.js install](../../languages-nodejs/nvm) documentation.
+It will be necessary to upgrade the version of Node.js in other language containers before using Puppeteer. You can use [Node Version Manager](https://github.com/nvm-sh/nvm) or NVM to change or update the version available in your application container by following the instructions in the [Alternate Node.js install](/pages/web/web-paas/languages-nodejs/nvm) documentation.
 
 ## Usage example
 

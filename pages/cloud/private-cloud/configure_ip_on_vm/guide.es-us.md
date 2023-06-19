@@ -1,9 +1,6 @@
 ---
 title: 'Configurar una IP en una máquina virtual'
-slug: configuracion-ip-maquina-virtual
 excerpt: 'Cómo configurar una IP en una máquina virtual'
-section: 'Gestión de las máquinas virtuales'
-order: 5
 updated: 2020-10-13
 ---
 
@@ -99,7 +96,7 @@ La configuración de una IP privada es similar a la de una IP pública. No obsta
 
 Al elegir la interfaz, puede editar los siguientes parámetros:
 
-- una interfaz de VLAN (10 a 20 por defecto y relacionados con el vRack, puede crear más VLAN consultando [esta guía](../crear-vlan-vxlan/)).
+- una interfaz de VLAN (10 a 20 por defecto y relacionados con el vRack, puede crear más VLAN consultando [esta guía](/pages/cloud/private-cloud/creation_vlan)).
 - una interfaz VxLAN interna del Hosted Private Cloud.
 
 En los parámetros de su máquina virtual, puede utilizar una VLAN o VXLAN :

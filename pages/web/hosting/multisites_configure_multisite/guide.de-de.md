@@ -1,9 +1,6 @@
 ---
 title: 'Mehrere Websites auf einem Webhosting einrichten'
-slug: multisites-mehrere-websites-konfigurieren
 excerpt: 'Erfahren Sie hier, wie Sie ein Webhosting für mehrere Websites verwenden'
-section: 'Erste Schritte'
-order: 03
 updated: 2023-06-08
 ---
 
@@ -23,7 +20,7 @@ Sie können mehrere Websites auf einem einzigen Webhosting-Angebot hosten, auch 
 
 - Sie haben ein kompatibles [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
 - Sie besitzen eine oder mehrere [Domainnamen](https://www.ovhcloud.com/de/domains/){.external}.
-- Sie sind berechtigt, die Konfiguration Ihrer Domainnamen (die [DNS-Zone](../../domains/webhosting_bearbeiten_der_dns_zone/#dns-konzept-verstehen)) zu ändern.
+- Sie sind berechtigt, die Konfiguration Ihrer Domainnamen (die [DNS-Zone](/pages/web/domains/dns_zone_edit#dns-konzept-verstehen)) zu ändern.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
@@ -49,7 +46,7 @@ Um eine neue Domain oder Subdomain zu Ihrem Webhosting hinzuzufügen, klicken Si
 
 - **Eine bei OVHcloud registrierte Domain hinzufügen**:
 
-Hier werden nur die Domainnamen bei OVHcloud angezeigt, für die Sie als [technischer Kontakt und/oder Administrator in Ihrem Kundencenter](../../customer/verwaltung-der-kontakte/) hinterlegt sind. Wählen Sie aus der Liste aus und klicken Sie auf `Weiter`{.action}. Gehen Sie dann zu [Schritt 2.1: Eine bei OVHcloud registrierte Domain hinzufügen](#add-ovhcloud-domain).
+Hier werden nur die Domainnamen bei OVHcloud angezeigt, für die Sie als [technischer Kontakt und/oder Administrator in Ihrem Kundencenter](/pages/account/customer/managing_contacts) hinterlegt sind. Wählen Sie aus der Liste aus und klicken Sie auf `Weiter`{.action}. Gehen Sie dann zu [Schritt 2.1: Eine bei OVHcloud registrierte Domain hinzufügen](#add-ovhcloud-domain).
 
 - **Eine externe Domain hinzufügen**:
 
@@ -91,7 +88,7 @@ Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Weiter`{.acti
 Wenn Sie eine bei OVHcloud registrierte Domain ausgewählt haben, können Sie deren DNS-Konfiguration automatisch oder manuell ändern.
 
 - **Automatische DNS-Konfiguration**: Setzen Sie einen Haken im Feld `Automatische Konfiguration (empfohlen)`{.action}.
-- **Manuelle DNS-Konfiguration**: Entfernen Sie den Haken im Feld `Automatische Konfiguration (empfohlen)`{.action} und notieren Sie sich die angezeigten Informationen. Wenn Sie diese Einstellung vornehmen möchten, lesen Sie unsere Anleitung ["Bearbeiten der OVHcloud DNS-Zone"](../../domains/webhosting_bearbeiten_der_dns_zone/){.external}.
+- **Manuelle DNS-Konfiguration**: Entfernen Sie den Haken im Feld `Automatische Konfiguration (empfohlen)`{.action} und notieren Sie sich die angezeigten Informationen. Wenn Sie diese Einstellung vornehmen möchten, lesen Sie unsere Anleitung ["Bearbeiten der OVHcloud DNS-Zone"](/pages/web/domains/dns_zone_edit){.external}.
 
 Klicken Sie auf `Bestätigen`{.action}, um die Domain hinzuzufügen. Dies kann bis zu einer Stunde dauern. Die Änderung der DNS-Konfiguration Ihrer Domain erfordert zusätzlich eine Propagationszeit von 4 bis 24 Stunden, bis sie voll wirksam ist.
 
@@ -105,13 +102,13 @@ Nachdem die Domain hinzugefügt wurde, gehen Sie zu [Schritt 3: Ihre Website onl
 
  > Bevor Sie fortfahren, bearbeiten Sie am besten die DNS-Zone der externen Domain, bevor Sie den Multisite-Eintrag hinzufügen.
  >
- > Die Änderung der Konfiguration der externen Domain (die zugehörige DNS-Zone) muss über das Interface des Anbieters vorgenommen werden, der die externe Domain verwaltet. Wenn es sich um OVHcloud handelt, lesen Sie unsere Anleitung ["Bearbeiten der OVHcloud DNS-Zone"](../../domains/webhosting_bearbeiten_der_dns_zone/){.external}. Nach der Änderung ist eine Propagationszeit von 1 bis 24 Stunden erforderlich, bis sie voll wirksam ist.
+ > Die Änderung der Konfiguration der externen Domain (die zugehörige DNS-Zone) muss über das Interface des Anbieters vorgenommen werden, der die externe Domain verwaltet. Wenn es sich um OVHcloud handelt, lesen Sie unsere Anleitung ["Bearbeiten der OVHcloud DNS-Zone"](/pages/web/domains/dns_zone_edit){.external}. Nach der Änderung ist eine Propagationszeit von 1 bis 24 Stunden erforderlich, bis sie voll wirksam ist.
 >
 > Im Folgenden finden Sie die 2 Elemente, die zur DNS-Konfiguration Ihrer externen Domain geändert werden müssen:
 >
 > |Feld|Wo finde ich die Information?|Durchzuführende Maßnahme|
 > |---|---|---|
-> |TXT|Tab `Multisite`{.action}, klicken Sie auf `Konfiguration des Tokens ovhcontrol`{.action}|OVHcloud stellt sicher, dass das Hinzufügen jeder externen Domain legitim ist. Achten Sie darauf, den TXT-Eintrag mit der Subdomain `ovhcontrol` (z.B. `ovhcontrol.mydomain.ovh`) in der DNS-Zone zu erstellen, die für die hinzuzufügende Domain zuständig ist.<br></br>Bitte beachten Sie, wenn Sie `blog.mydomain.ovh` hinzufügen möchten, dass der Eintrag für die Subdomain `ovhcontrol.mydomain.ovh` sein muss, und nicht `ovhcontrol.blog.mydomain.ovh`.<br></br> Um die relevante DNS-Zone zu bearbeiten, prüfen Sie, welche [DNS-Server](../../domains/webhosting_allgemeine_informationen_zu_den_dns_servern/#dns-konzept-verstehen) Ihre Domain verwendet. Sie müssen nur die Hauptdomain validieren, nicht alle Subdomains.|
+> |TXT|Tab `Multisite`{.action}, klicken Sie auf `Konfiguration des Tokens ovhcontrol`{.action}|OVHcloud stellt sicher, dass das Hinzufügen jeder externen Domain legitim ist. Achten Sie darauf, den TXT-Eintrag mit der Subdomain `ovhcontrol` (z.B. `ovhcontrol.mydomain.ovh`) in der DNS-Zone zu erstellen, die für die hinzuzufügende Domain zuständig ist.<br></br>Bitte beachten Sie, wenn Sie `blog.mydomain.ovh` hinzufügen möchten, dass der Eintrag für die Subdomain `ovhcontrol.mydomain.ovh` sein muss, und nicht `ovhcontrol.blog.mydomain.ovh`.<br></br> Um die relevante DNS-Zone zu bearbeiten, prüfen Sie, welche [DNS-Server](/pages/web/domains/dns_server_general_information#dns-konzept-verstehen) Ihre Domain verwendet. Sie müssen nur die Hauptdomain validieren, nicht alle Subdomains.|
 >
 > ![Multisite](images/add-multisite-external-step3.png){.thumbnail}
 >
@@ -151,9 +148,9 @@ Jedes Hinzufügen einer Domain außerhalb von OVHcloud erfordert eine zusätzlic
 
 Sobald die Domain hinzugefügt wurde, muss nur noch die zugehörige Website online gestellt werden. Zur Erinnerung: Nehmen Sie diese Änderung in dem Wurzelverzeichnis vor, das Sie im vorherigen Schritt festgelegt haben.
 
-Um Ihnen dabei zu helfen, können Sie mithilfe der 1-Klick-Module von OVHcloud eine gebrauchsfertige Websitestruktur nutzen. Die Website wird dann automatisch im zuvor konfigurierten Wurzelverzeichnis installiert. Weitere Informationen zu den 1-Klick-Modulen finden Sie in unserer Anleitung [„Installation Ihrer Website mit 1-Klick-Modulen“](../webhosting_installation_von_webhosting-modulen/){.external}. 
+Um Ihnen dabei zu helfen, können Sie mithilfe der 1-Klick-Module von OVHcloud eine gebrauchsfertige Websitestruktur nutzen. Die Website wird dann automatisch im zuvor konfigurierten Wurzelverzeichnis installiert. Weitere Informationen zu den 1-Klick-Modulen finden Sie in unserer Anleitung [„Installation Ihrer Website mit 1-Klick-Modulen“](/pages/web/hosting/cms_install_1_click_modules){.external}. 
 
-Möchten Sie Ihre Website hingegen manuell installieren, tragen Sie alle zugehörigen Dateien zusammen und stellen Sie diese im entsprechenden Wurzelverzeichnis auf Ihrem Speicherplatz online. Weitere Informationen zur manuellen Installation Ihrer Website finden Sie in unserer Anleitung [„Eine Website auf Ihrem Webhosting online stellen“](../webhosting_meine_seite_online_stellen/){.external}.
+Möchten Sie Ihre Website hingegen manuell installieren, tragen Sie alle zugehörigen Dateien zusammen und stellen Sie diese im entsprechenden Wurzelverzeichnis auf Ihrem Speicherplatz online. Weitere Informationen zur manuellen Installation Ihrer Website finden Sie in unserer Anleitung [„Eine Website auf Ihrem Webhosting online stellen“](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}.
 
 > [!primary]
 >
@@ -164,11 +161,11 @@ Möchten Sie Ihre Website hingegen manuell installieren, tragen Sie alle zugehö
 
 ## Weiterführende Informationen
 
-[Installation Ihrer Website mit 1-Klick-Modulen](../webhosting_installation_von_webhosting-modulen/){.external}
+[Installation Ihrer Website mit 1-Klick-Modulen](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Bearbeiten der DNS-Zone](../../domains/webhosting_bearbeiten_der_dns_zone/){.external}
+[Bearbeiten der DNS-Zone](/pages/web/domains/dns_zone_edit){.external}
 
-[Eine Website auf Ihrem Webhosting online stellen](../webhosting_meine_seite_online_stellen/){.external}
+[Eine Website auf Ihrem Webhosting online stellen](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie [hier unsere Support-Angebote einsehen](https://www.ovhcloud.com/de/support-levels/).
 

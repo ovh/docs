@@ -1,8 +1,6 @@
 ---
 title: Managing payment methods
-slug: manage-payment-methods
 excerpt: 'Find out how to add and manage payment methods within the OVHcloud Control Panel'
-section: Billing
 updated: 2022-05-18
 ---
 
@@ -89,7 +87,7 @@ If you no longer want to use one of your payment methods, you can delete it by c
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
-If you would like to delete all of your payment methods, all of your services must be set to [manual renewal](https://docs.ovh.com/us/en/billing/how-to-use-automatic-renewal-at-ovh/#manual-renewal).
+If you would like to delete all of your payment methods, all of your services must be set to [manual renewal](/pages/account/billing/how_to_use_automatic_renewal#manual-renewal).
 
 #### Delete a payment method via the OVHcloud API
 
@@ -111,7 +109,7 @@ Then delete the payment method using the ID you obtained in the previous step:
 
 > [!primary]
 >
-> For more information, please refer to our guide [Getting started with the OVHcloud API](https://docs.ovh.com/us/en/api/first-steps-with-ovh-api/).
+> For more information, please refer to our guide [Getting started with the OVHcloud API](/pages/account/api/first-steps).
 >
 > If you experience any difficulties finding your payment methods via the OVHcloud API, use the `Edit description`{.action} function by clicking on the button `...`{.action} next to your payment method in the [Payment method](#payment_methods) section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
 >
@@ -122,7 +120,7 @@ Then delete the payment method using the ID you obtained in the previous step:
 
 The *prepaid account* is added to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) as soon as it is created. It allows you to credit your customer account in advance and use these funds to pay for your orders and renewal invoices.
 
-By crediting your account regularly, you will ensure that your services will never be interrupted for default on their [automatic renewal](https://docs.ovh.com/us/en/billing/how-to-use-automatic-renewal-at-ovh/#automatic-renewal).
+By crediting your account regularly, you will ensure that your services will never be interrupted for default on their [automatic renewal](/pages/account/billing/how_to_use_automatic_renewal#automatic-renewal).
 
 To do this, simply go to the `Payment methods` section in your Control Panel:
 

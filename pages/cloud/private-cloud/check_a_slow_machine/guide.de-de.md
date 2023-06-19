@@ -1,10 +1,8 @@
 ---
 title: Eine Maschine bei auftretenden Verlangsamungen überprüfen (EN)
 excerpt: 'Troubleshoot performance issues on a VM'
-slug: eine_maschine_bei_auftretenden_verlangsamungen_uberprufen
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/check_a_slow_machine/'
-section: Verwaltung virtueller Maschinen
+    canonical: '/pages/cloud/private-cloud/check_a_slow_machine'
 legacy_guide_number: g601
 updated: 2022-01-17
 ---

@@ -1,8 +1,6 @@
 ---
 title: Aktualizacja hasła użytkownika
-slug: aktualizacja-hasla-uzytkownika
 excerpt: Dowiedz się, jak zmienić hasło użytkownika klienta vSphere w Panelu klienta OVHcloud
-section: Funkcjonalności OVHcloud
 updated: 2021-08-19
 ---
 
@@ -17,7 +15,7 @@ Uprawnieniami i hasłami użytkowników klienta vSphere zarządzasz w Panelu kli
 ## Wymagania początkowe
 
 - Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
-- Posiadanie aktywnego użytkownika utworzonego w Panelu klienta OVHcloud. Aby uzyskać więcej informacji, zapoznaj się z [przewodnikiem](../manager-ovh-private-cloud/#uzytkownicy).
+- Posiadanie aktywnego użytkownika utworzonego w Panelu klienta OVHcloud. Aby uzyskać więcej informacji, zapoznaj się z [przewodnikiem](/pages/cloud/private-cloud/manager_ovh_private_cloud#uzytkownicy).
 
 ## W praktyce
 
@@ -56,8 +54,8 @@ Wprowadź nowe hasło i potwierdź je.
 
 ## Sprawdź również
 
-[Prezentacja Panelu klienta Private Cloud](../manager-ovh-private-cloud/)
+[Prezentacja Panelu klienta Private Cloud](/pages/cloud/private-cloud/manager_ovh_private_cloud)
 
-[Tworzenie i zarządzanie hasłem do konta OVHcloud](../../customer/zarzadzanie-haslem/)
+[Tworzenie i zarządzanie hasłem do konta OVHcloud](/pages/account/customer/manage-ovh-password)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

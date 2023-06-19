@@ -1,11 +1,8 @@
 ---
 title: Secure a Nginx Ingress with cert-manager on OVHcloud Managed Kubernetes
-slug: securing-nginx-ingress-cert-manager
 excerpt: 'Find out how to secure a Nginx Ingress with cert-manager on OVHcloud Managed Kubernetes'
-section: Traffic management
-order: 02
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/securing-nginx-ingress-cert-manager/'
+    canonical: '/pages/platform/kubernetes-k8s/securing-nginx-ingress-cert-manager'
 updated: 2022-06-27
 ---
 
@@ -23,8 +20,7 @@ updated: 2022-06-27
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -43,11 +39,11 @@ In this tutorial you are going to:
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart guide](../deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart guide](/pages/platform/kubernetes-k8s/deploying-hello-world).
 
-You need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster. Please refer to our tutorial on [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/).
+You need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster. Please refer to our tutorial on [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/platform/kubernetes-k8s/installing-helm).
 
-You also need to install [cert-manager](../installing-cert-manager/) on your OVHcloud Managed Kubernetes.
+You also need to install [cert-manager](/pages/platform/kubernetes-k8s/installing-cert-manager) on your OVHcloud Managed Kubernetes.
 
 ## Instructions
 
@@ -234,7 +230,7 @@ You can then access your `nginx-ingress` at `http://[YOUR_LOAD_BALANCER_IP]` via
 
 ### Configuring the Nginx Ingress Controller to use SSL/TLS
 
-After installing [cert-manager](https://docs.ovh.com/ca/fr/kubernetes/installing-cert-manager/) on your OVHcloud Manager Kubernetes cluster, if you followed the guide, you should have two running ClusterIssuer, one for production and one for staging/dev usages:
+After installing [cert-manager](/pages/platform/kubernetes-k8s/installing-cert-manager) on your OVHcloud Manager Kubernetes cluster, if you followed the guide, you should have two running ClusterIssuer, one for production and one for staging/dev usages:
 
 <pre class="console"><code>$ kubectl get clusterissuer
 NAME                  READY   AGE

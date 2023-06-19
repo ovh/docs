@@ -1,11 +1,8 @@
 ---
 title: AI Deploy - Tutorial - Deploy and call a spam classifier with FastAPI
-slug: deploy/tuto-fastapi-spam-classifier
 excerpt: How to deploy and call an API for spam classification using FastAPI
-section: AI Deploy - Tutorials
-order: 08
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-fastapi-spam-classifier/'
+    canonical: '/pages/platform/ai/deploy_tuto_08_fastapi_spam_classifier'
 updated: 2023-04-04
 ---
 
@@ -32,10 +29,10 @@ In order to do this, we will use [FastAPI](https://streamlit.io/), a web framewo
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it);
 - An AI Deploy project created inside a [Public Cloud project](https://www.ovhcloud.com/it/public-cloud/) in your OVHcloud account;
-- A [user for AI Deploy](https://docs.ovh.com/it/publiccloud/ai/users/);
+- A [user for AI Deploy](/pages/platform/ai/gi_01_manage_users);
 - [Docker](https://www.docker.com/get-started) installed on your local computer;
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
-- You also should have followed the tutorial [AI Notebooks - Tutorial - Build your spam classifier](https://docs.ovh.com/it/publiccloud/ai/notebooks/tuto-spam-classifier/). Find the code on the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/natural-language-processing/text-classification/miniconda/spam-classifier/notebook-spam-classifier.ipynb). You will be able to understand the creation of the spam classification model.
+- You also should have followed the tutorial [AI Notebooks - Tutorial - Build your spam classifier](/pages/platform/ai/notebook_tuto_09_spam_classifier). Find the code on the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/natural-language-processing/text-classification/miniconda/spam-classifier/notebook-spam-classifier.ipynb). You will be able to understand the creation of the spam classification model.
 
 ## Instructions
 
@@ -300,7 +297,7 @@ Once started, your application should be available on `http://localhost:8000`.
 
 > [!warning]
 >
-> The shared registry of AI Deploy should only be used for testing purposes. Please consider attaching your own Docker registry. More information about this can be found [here](https://docs.ovh.com/it/publiccloud/ai/training/add-private-registry/).
+> The shared registry of AI Deploy should only be used for testing purposes. Please consider attaching your own Docker registry. More information about this can be found [here](/pages/platform/ai/training_guide_05_howto_add_registry).
 >
 
 Find the address of your shared registry by launching this command:
@@ -376,8 +373,8 @@ Congratulations! You have obtained the result of the prediction with the **label
 
 ## Go further
 
-- You can imagine deploying an AI model with an other tool: **Gradio**. Read this [tutorial](https://docs.ovh.com/it/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/).
-- Another way to create an AI Deploy app is to use **Streamlit**! [Follow this tutorial](https://docs.ovh.com/it/publiccloud/ai/deploy/tuto-streamlit-eda-iris/).
+- You can imagine deploying an AI model with an other tool: **Gradio**. Read this [tutorial](/pages/platform/ai/deploy_tuto_05_gradio_sketch_recognition).
+- Another way to create an AI Deploy app is to use **Streamlit**! [Follow this tutorial](/pages/platform/ai/deploy_tuto_07_streamlit_eda_iris).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/it/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

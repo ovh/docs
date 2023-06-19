@@ -1,8 +1,6 @@
 ---
 title: 'Enviar SMS desde una URL'
-slug: enviar-sms-desde-una-url
 excerpt: 'Cómo enviar SMS desde una dirección http'
-section: 'Enviar SMS'
 updated: 2020-05-20
 ---
 
@@ -16,7 +14,7 @@ Existen distintas formas de enviar SMS. Una de ellas es la herramienta Wget, que
 
 ## Requisitos
 
-- Haber creado un usuario de SMS desde el área de cliente de OVHcloud o a través de la API. Para ello, puede consultar la guía [Usuarios de SMS](https://docs.ovh.com/es/sms/usuarios-de-sms/).
+- Haber creado un usuario de SMS desde el área de cliente de OVHcloud o a través de la API. Para ello, puede consultar la guía [Usuarios de SMS](/pages/telecom/sms/tout_savoir_sur_les_utilisateurs_sms).
 - Disponer de una cuenta de SMS en OVHcloud con saldo de SMS.
 
 
@@ -89,7 +87,7 @@ Sustituya las «X» por los valores correspondientes:
 > 
 >Si utiliza la codificación Unicode, el tamaño máximo del SMS se reducirá a 70 caracteres, frente a los 160 de la codificación de 7 bits.
 >
->Para más información sobre los caracteres autorizados con codificación de 7 bits, consulte el [anexo](https://docs.ovh.com/es/sms/enviar-sms-desde-una-url/#anexo) que encontrará al final de esta guía.
+>Para más información sobre los caracteres autorizados con codificación de 7 bits, consulte el [anexo](/pages/telecom/sms/envoyer_des_sms_depuis_une_url_-_http2sms#anexo) que encontrará al final de esta guía.
 >
 
 

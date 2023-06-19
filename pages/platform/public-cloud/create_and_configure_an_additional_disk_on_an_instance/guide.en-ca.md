@@ -1,9 +1,6 @@
 ---
 title: 'Creating and configuring an additional disk on an instance'
-slug: create_and_configure_an_additional_disk_on_an_instance
 excerpt: 'Find out how to attach a new volume to your Public Cloud instance'
-section: Storage
-order: 1
 updated: 2023-02-09
 ---
 
@@ -68,7 +65,7 @@ The examples below presume you are logged in as a user with elevated permissions
 
 #### Using Linux
 
-Establish an [SSH connection to your instance](https://docs.ovh.com/ca/en/public-cloud/public-cloud-first-steps/#connect-to-instance), then use the command below to list the attached disks.
+Establish an [SSH connection to your instance](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance), then use the command below to list the attached disks.
 
 ```bash
 ~$ admin@server-1:~$ lsblk
@@ -320,7 +317,7 @@ If you wish to detach a volume from your instance, the best practice is to unmou
 
 #### On Linux
 
-Establish an [SSH connection to your instance](https://docs.ovh.com/ca/en/public-cloud/public-cloud-first-steps/#connect-to-instance), then use the command below to list the attached disks.
+Establish an [SSH connection to your instance](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance), then use the command below to list the attached disks.
 
 ```bash
 ~$ admin@server-1:~$ lsblk

@@ -1,9 +1,7 @@
 ---
 title: Uruchomienie skryptu podczas tworzenia instancji
 excerpt: Uruchomienie skryptu podczas tworzenia instancji
-slug: uruchomienie_skryptu_podczas_tworzenia_instancji
 legacy_guide_number: g1932
-section: Zarządzanie w OpenStack CLI
 updated: 2022-03-18
 ---
 
@@ -23,8 +21,8 @@ Na przykład w przypadku chęci skonfigurowania kilku kluczy SSH dla instancji l
 
 ## Wymagania początkowe
 
-- [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Pobranie zmiennych środowiskowych OpenStack](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/)
+- [Przygotowanie środowiska do korzystania z API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Pobranie zmiennych środowiskowych OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 
 ## Wymagania początkowe

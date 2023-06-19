@@ -1,8 +1,6 @@
 ---
 title: 'Modalità di ripartizione'
-slug: iplb-balancing
 excerpt: 'Scopri le diverse modalità di ripartizione del carico dell’OVH Load Balancer'
-section: Configurazione
 updated: 2018-01-17
 ---
 
@@ -26,7 +24,7 @@ La nuova soluzione OVH Load Balancer offre diverse tipologie di ripartizione del
 
 La ripartizione del carico si utilizza nelle server farm. Attraverso questo parametro si definisce il modo in cui le richieste vengono suddivise tra i server della farm.
 
-Per saperne di più sul servizio OVH Load Balancer, consulta la seguente guida: [Presentazione Load Balancer](https://docs.ovh.com/it/load-balancer/iplb-presentazione/){.external}.
+Per saperne di più sul servizio OVH Load Balancer, consulta la seguente guida: [Presentazione Load Balancer](/pages/cloud/load_balancer/use_presentation){.external}.
 
 |Algoritmo|Caratteristiche|
 |---|---|

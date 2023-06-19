@@ -19,7 +19,7 @@ Una vez creada, puede proteger el acceso a sus datos personales activando la dob
 
 Si no encuentra su país, puede cambiar el idioma de la web haciendo clic en la bandera que desee en la esquina superior derecha.
 
-Si desea más información sobre la cuenta de cliente de OVHcloud, consulte nuestra guía [«Todo sobre el ID de cliente de OVHcloud»](https://docs.ovh.com/es/customer/todo-sobre-el-id-de-cliente/).
+Si desea más información sobre la cuenta de cliente de OVHcloud, consulte nuestra guía [«Todo sobre el ID de cliente de OVHcloud»](/pages/account/customer/all_about_username).
 
 ### ¿Dónde encontrar mi identificador de cliente de OVHcloud?
 
@@ -35,7 +35,7 @@ Puede consultar su ID de cliente en cualquier momento desde el área de cliente,
 
 Existen diversos motivos por los que esto puede ocurrir: no recuerda su contraseña, no tiene acceso a su cuenta de correo electrónico o su teléfono móvil para identificarse por SMS, etc.
 
-Si no puede identificarse o conectarse a su área de cliente, consulte [la siguiente guía](https://docs.ovh.com/es/customer/conectarse-area-de-cliente-ovhcloud/#login-failure).
+Si no puede identificarse o conectarse a su área de cliente, consulte [la siguiente guía](/pages/account/customer/ovhcloud-account-login#login-failure).
 
 ### ¿Cómo modificar mis datos personales?
 
@@ -84,7 +84,7 @@ Si desea recuperar un dominio del que usted es el propietario registrado en un r
 
 #### Ideas y consejos
 
-Para más información sobre la gestión de contactos, consulte la siguiente guía: [docs.ovh.com/es/customer/gestion-de-los-contactos/#acceder-a-la-gestion-de-los-contactos](https://docs.ovh.com/es/customer/gestion-de-los-contactos/#acceder-a-la-gestion-de-los-contactos)
+Para más información sobre la gestión de contactos, consulte la siguiente guía: [/pages/account/customer/managing_contacts#acceder-a-la-gestion-de-los-contactos](/pages/account/customer/managing_contacts#acceder-a-la-gestion-de-los-contactos)
 
 ### ¿Cómo cambiar el contacto de facturación?
 
@@ -92,7 +92,7 @@ Conéctese al área de cliente con su ID de cliente y contraseña. Para modifica
 
 #### Ideas y consejos
 
-Si desea más información sobre la gestión de los contactos, consulte nuestra guía [«Gestionar los contactos de los servicios»](https://docs.ovh.com/es/customer/gestion-de-los-contactos/).
+Si desea más información sobre la gestión de los contactos, consulte nuestra guía [«Gestionar los contactos de los servicios»](/pages/account/customer/managing_contacts).
 
 ### ¿Cómo proteger mi cuenta?
 
@@ -116,7 +116,7 @@ Al activar la doble autenticación o 2FA, podrá elegir el método con el que de
 - desde una aplicación móvil compatible con Android, iPhone y Windows móvil;
 - con una llave de seguridad compatible con U2F.
 
-[Más información](https://docs.ovh.com/es/customer/proteger-su-cuenta-con-una-2FA/)
+[Más información](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
 ### ¿Cómo desactivar la doble autenticación/2FA de OVHcloud?
 
@@ -136,7 +136,7 @@ Finalmente, para recuperar su cuenta de cliente podremos solicitarle que cambie 
 
 ### He recibido un mensaje de correo electrónico que parece ser un mensaje de phishing usurpando la identidad de OVHcloud, ¿cómo puedo notificarlo para que se compruebe su legitimidad?
 
-Para identificar y denunciar un mensaje de correo electrónico o un SMS de phishing, consulte nuestra [guía dedicada](https://docs.ovh.com/es/customer/proteccion-ataque-phishing/).
+Para identificar y denunciar un mensaje de correo electrónico o un SMS de phishing, consulte nuestra [guía dedicada](/pages/account/customer/phishing_care).
 
 ### ¿Cómo puedo denunciar un comportamiento abusivo o un contenido ilícito procedente de servicios alojados en OVHcloud?
 
@@ -156,12 +156,12 @@ Teniendo en cuenta los elementos adicionales que se le indicarán en este mensaj
 
 Asimismo, deberá asegurarse de que sus servicios no están siendo controlados por un tercero (por ejemplo, debido a un ataque informático). Para ello, consulte nuestras guías:
 
-- [Proteger mi cuenta de OVHcloud y gestionar mis datos personales](https://docs.ovh.com/es/customer/todo-sobre-el-id-de-cliente/)
-- [Cambiar la contraseña de su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contrasena/)
-- [Proteger su cuenta de OVHcloud con la doble autenticación](https://docs.ovh.com/es/customer/proteger-su-cuenta-con-una-2FA/)
-- [¿Cómo proteger su sitio web?](https://docs.ovh.com/es/hosting/secure-website/)
-- [Proteger un VPS](https://docs.ovh.com/es/vps/consejos-proteccion-vps/)
-- [Proteger un servidor dedicado](https://docs.ovh.com/es/dedicated/seguridad-de-un-servidor-dedicado/)
+- [Proteger mi cuenta de OVHcloud y gestionar mis datos personales](/pages/account/customer/all_about_username)
+- [Cambiar la contraseña de su cuenta](/pages/account/customer/manage-ovh-password)
+- [Proteger su cuenta de OVHcloud con la doble autenticación](/pages/account/customer/secure-ovhcloud-account-with-2fa)
+- [¿Cómo proteger su sitio web?](/pages/web/hosting/secure_your_website)
+- [Proteger un VPS](/pages/cloud/vps/secure_your_vps)
+- [Proteger un servidor dedicado](/pages/cloud/dedicated/securing-a-dedicated-server)
 
 ### En caso de identificar una posible infracción en uno de mis servicios de OVHcloud, ¿cómo puedo evitar la suspensión del servicio?
 

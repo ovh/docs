@@ -1,9 +1,6 @@
 ---
 title: "Geolocalizar un sitio web en un país específico"
 excerpt: "Descubra cómo geolocalizar un sitio web con nuestras direcciones IP geolocalizadas"
-slug: geolocalizacion_en_alojamientos_compartidos
-section: Optimización del sitio web
-order: 05
 updated: 2022-12-22
 ---
 
@@ -52,9 +49,9 @@ Haga clic en `Siguiente`{.action} y, seguidamente, en `Aceptar`{.action} en la v
 
 >[!primary]
 >
-> Si la zona DNS activa de su dominio está íntegramente gestionada en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), el registro de tipo A en la zona DNS de su nombre de dominio se cambiará automáticamente. Puede comprobar que la dirección IP se ha actualizado correctamente con nuestra guía sobre [la edición de una zona DNS de OVHcloud](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/).
+> Si la zona DNS activa de su dominio está íntegramente gestionada en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), el registro de tipo A en la zona DNS de su nombre de dominio se cambiará automáticamente. Puede comprobar que la dirección IP se ha actualizado correctamente con nuestra guía sobre [la edición de una zona DNS de OVHcloud](/pages/web/domains/dns_zone_edit).
 >
-Si no, deberá editar el dominio manualmente al proveedor que gestione la zona DNS activa. Consulte [aquí](https://docs.ovh.com/es/hosting/lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web/) la documentación que recoge todas las direcciones IP de nuestra infraestructura de hosting de OVHcloud.
+Si no, deberá editar el dominio manualmente al proveedor que gestione la zona DNS activa. Consulte [aquí](/pages/web/hosting/clusters_and_shared_hosting_IP) la documentación que recoge todas las direcciones IP de nuestra infraestructura de hosting de OVHcloud.
 >
 > En todos los casos, será necesario un plazo de propagación de **4 a 24 horas** después de la modificación para que esta sea plenamente efectiva y visible en Internet.
 >

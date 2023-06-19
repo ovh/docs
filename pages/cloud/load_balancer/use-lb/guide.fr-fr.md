@@ -1,9 +1,6 @@
 ---
 title: "Gestion du service OVHcloud Load Balancer via l'espace client"
-slug: utilisation-iplb
 excerpt: "Résumé des principales fonctionnalités et prise en main du service Load Balancer via l'espace client OVHcloud"
-section: Premiers pas
-order: 02
 updated: 2022-04-04
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: 'Gerir a faturação das contas Exchange'
-slug: gestao-faturacao-exchange
 excerpt: 'Saiba como gerir a faturação do serviço Exchange.'
-section: 'Primeiros passos com Exchange'
-order: 03
 updated: 2020-04-20
 ---
 

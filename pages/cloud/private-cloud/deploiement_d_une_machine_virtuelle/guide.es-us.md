@@ -1,9 +1,6 @@
 ---
 title: Instrumentación de una máquina virtual
-slug: instrumentacion-de-una-maquina-virtual
 excerpt: Cómo instrumentar una máquina virtual desde la interfaz vSphere
-section: Gestión de las máquinas virtuales
-order: 0
 updated: 2020-06-29
 ---
 
@@ -18,7 +15,7 @@ La interfaz vSphere permite instrumentar máquinas virtuales de varios modos.
 ## Requisitos
 
 - Haber contratado una solución [Private Cloud de OVHcloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/){.external}.
-- Estar conectado a la [interfaz vSphere](../instalar_el_vsphere_client/).
+- Estar conectado a la [interfaz vSphere](/pages/cloud/private-cloud/vsphere_interface_connexion).
 
 ## Procedimiento
 
@@ -32,8 +29,8 @@ Haga clic con el botón derecho en el clúster de su elección y, seguidamente, 
 
 Para crear una máquina virtual, es posible elegir entre varias opciones:
 
-- A partir de un archivo ISO, disponible en su datastore y que para importarlo debe seguir las instrucciones en la [guía de conexión en SFTP](../conexion_en_sftp/)
-- También puede instrumentar una máquina virtual a partir de una plantilla existente o una [plantilla de OVHcloud](../desplegar-plantilla-ovf/)
+- A partir de un archivo ISO, disponible en su datastore y que para importarlo debe seguir las instrucciones en la [guía de conexión en SFTP](/pages/cloud/private-cloud/sftp_connexion)
+- También puede instrumentar una máquina virtual a partir de una plantilla existente o una [plantilla de OVHcloud](/pages/cloud/private-cloud/ovf_template)
 - Puede clonar una máquina virtual ya existente (hay que tener cuidado con los posibles conflictos de direcciones IP).
 - Puede clonar una máquina virtual en una plantilla para instrumentar más rápidamente sus próximas máquinas virtuales.
 - Puede clonar una plantilla en otra plantilla para, por ejemplo, tenerla en varios datastores y evitar así problemas de rendimiento durante una instrumentación masiva.

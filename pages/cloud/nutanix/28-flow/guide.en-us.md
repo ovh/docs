@@ -1,9 +1,6 @@
 ---
 title: Configure Nutanix Flow
-slug: nutanix-flow
 excerpt: Find out how to configure and use Nutanix Flow
-section: Network & Security
-order: 09
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
 category_l2: Networking and security
@@ -408,7 +405,7 @@ The rule you created is in the list of rules.
 
 ## Go further <a name="gofurther"></a>
 
-[Nutanix Hyper-Convergence](https://docs.ovh.com/us/en/nutanix/nutanix-hci/)
+[Nutanix Hyper-Convergence](/pages/cloud/nutanix/03-nutanix-hci)
 
 [Presentation of Nutanix FLOW](https://portal.nutanix.com/page/documents/solutions/details?targetId=TN-2094-Flow:TN-2094-Flow)
 

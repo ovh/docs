@@ -1,9 +1,6 @@
 ---
 title: 'Trasferire un dominio in OVHcloud'
-slug: trasferire-un-dominio-generico-in-ovh
 excerpt: 'Questa guida ti mostra come avviare la procedura di trasferimento di un dominio generico verso OVHcloud'
-section: Trasferimento
-order: 01
 updated: 2023-06-08
 ---
 
@@ -27,9 +24,9 @@ L’operazione di trasferimento consente di spostare un dominio da un Registrar 
 >
 > Se OVHcloud è già il *Registrar* del tuo dominio **prima** di avviare la procedura che seguirà, il *trasferimento in entrata del dominio* non è la procedura appropriata. La procedura *trasferimento in entrata da un dominio** si applica **solo** ai domini registrati in un altro *Registrar* di OVHcloud.
 >
-> Per trasferire la gestione del tuo dominio verso un altro account cliente OVHcloud, la modalità corretta è una *modifica dei contatti*. La procedura è descritta in [guida](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/).
+> Per trasferire la gestione del tuo dominio verso un altro account cliente OVHcloud, la modalità corretta è una *modifica dei contatti*. La procedura è descritta in [guida](/pages/account/customer/managing_contacts).
 >
-> Se è necessario modificare il **proprietario** del dominio, è necessario farlo **prima** di modificare i contatti del dominio. Segui le istruzioni descritte nella nostra guida sul [cambiamento di proprietario dei domini](https://docs.ovh.com/it/domains/cambiare_proprietario_dominio/).
+> Se è necessario modificare il **proprietario** del dominio, è necessario farlo **prima** di modificare i contatti del dominio. Segui le istruzioni descritte nella nostra guida sul [cambiamento di proprietario dei domini](/pages/web/domains/trade_domain).
 >
 
 ## Prerequisiti
@@ -101,7 +98,7 @@ Quando ti viene chiesto di fornire il codice di trasferimento, digitalo nella ca
 
 ![domain](images/step_authinfo_add.png){.thumbnail}
 
-È inoltre possibile completare l'ordine con un [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} e altre soluzioni OVHcloud. Per effettuare questa operazione è necessario migrare i servizi verso OVHcloud. Questa guida, intitolata "[Migrare un sito e un servizio di posta in OVHcloud](../../hosting/migrare-un-sito-in-ovh/)", fornisce alcune istruzioni su come procedere.
+È inoltre possibile completare l'ordine con un [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} e altre soluzioni OVHcloud. Per effettuare questa operazione è necessario migrare i servizi verso OVHcloud. Questa guida, intitolata "[Migrare un sito e un servizio di posta in OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh)", fornisce alcune istruzioni su come procedere.
 
 > [!warning]
 >
@@ -116,7 +113,7 @@ Quando ti viene chiesto di fornire il codice di trasferimento, digitalo nella ca
 
 - Cliccando su `Modifica la configurazione`{.action} in questo step, puoi inserire i nomi dei server DNS che il dominio sta utilizzando. In questo modo, il dominio sarà già associato a questi server DNS nella configurazione OVHcloud.
 
-- Se continui senza effettuare questa operazione, il dominio verrà fornito sui server DNS OVHcloud con una nuova zona DNS. Una [modifica manuale della zona DNS](../web_hosting_modifica_la_tua_zona_dns/) può rendersi necessaria.
+- Se continui senza effettuare questa operazione, il dominio verrà fornito sui server DNS OVHcloud con una nuova zona DNS. Una [modifica manuale della zona DNS](/pages/web/domains/dns_zone_edit) può rendersi necessaria.
 
 - In alcuni casi, la procedura di trasferimento può richiedere informazioni aggiuntive sul proprietario del dominio. Per aggiungere queste informazioni, clicca sull'opzione `Gestisci i contatti/il proprietario`{.action}.
 
@@ -160,6 +157,6 @@ Una volta completata la procedura, è possibile gestire il dominio dallo [Spazio
 
 ## Per saperne di più
 
-[Migrazione del tuo sito Web e delle tue email verso OVHcloud](../../hosting/migrare-un-sito-in-ovh/){.external}
+[Migrazione del tuo sito Web e delle tue email verso OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

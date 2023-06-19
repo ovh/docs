@@ -1,11 +1,8 @@
 ---
 title: Object Storage - Optimice el envío de sus ficheros a S3 Object Storage (EN)
-slug: s3/optimise-the-sending-of-your-files
 excerpt:
-section: Tutorials
-order: 040
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/s3/optimise-the-sending-of-your-files/'
+    canonical: '/pages/cloud/storage/object_storage/s3_optimise_the_sending_of_your_files'
 updated: 2021-12-08
 ---
 
@@ -17,7 +14,7 @@ Learn how to optimise the sending of your files to your bucket.
 
 ## Requirements
 
-- [awscli](https://docs.ovh.com/es/storage/object-storage/s3/getting-started-with-object-storage/) installed
+- [awscli](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) installed
 
 ## Instructions
 

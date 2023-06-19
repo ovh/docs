@@ -1,8 +1,6 @@
 ---
 title: "Installation OverTheBox Plus ou IT v2"
-slug: plus-itv2-installation
 excerpt: "Découvrez comment installer et configurer votre équipement OverTheBox Plus ou IT v2 afin de profiter de votre offre OverTheBox"
-section: "OverTheBox Plus et IT v2"
 updated: 2021-04-14
 ---
 
@@ -15,7 +13,7 @@ Découvrez comment installer et configurer votre équipement OverTheBox Plus ou 
 ## Prérequis
 
 - Au moins un modem ayant accès à Internet sur lequel vous devez être en capacité de modifier la configuration réseau (IP et DHCP). **Exemple** : Box fournie par un fournisseur d'accès Internet comme OVHcloud ou un opérateur national.
-- Une **OverTheBox** fournie par OVHcloud ou une installation depuis le projet Open Source ([installer l'image overthebox sur votre materiel](../installer-limage-overthebox-sur-votre-materiel/))
+- Une **OverTheBox** fournie par OVHcloud ou une installation depuis le projet Open Source ([installer l'image overthebox sur votre materiel](/pages/telecom/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel))
 
 > [!alert]
 >
@@ -164,7 +162,7 @@ Si vous utilisez la télévision par Internet via l'un de vos fournisseurs d'acc
 
 ### Réutiliser le WiFi de votre modem Zyxel
 
-Pour l'OverThebox Plus ou l'OverTheBox IT v2, les modems sont isolés dans leurs propre VLAN, le WiFi des modems est donc indisponible depuis le réseau LAN de l'OverTheBox. Il est possible de réutiliser le WiFi d'un modem Zyxel fourni avec l'une de nos offres Internet, voir [Comment réutiliser le wifi d'un modem Zyxel avec OverTheBox](../../xdsl/comment-reutiliser-wifi-zyxel-otb){.external}.
+Pour l'OverThebox Plus ou l'OverTheBox IT v2, les modems sont isolés dans leurs propre VLAN, le WiFi des modems est donc indisponible depuis le réseau LAN de l'OverTheBox. Il est possible de réutiliser le WiFi d'un modem Zyxel fourni avec l'une de nos offres Internet, voir [Comment réutiliser le wifi d'un modem Zyxel avec OverTheBox](/pages/telecom/xdsl/comment_reutiliser_wifi_zyxel_otb){.external}.
 Dans les autres cas de figure, il faudra utiliser un point d'accès WiFi dédié. Le WiFi de vos modems reste fonctionnel mais les équipements connectés ne profiteront pas de l'agrégation, ni du tunnel chiffré.
 
 N'hésitez pas à échanger avec notre communauté d'utilisateurs sur vos produits Télécom sur notre site [OVHcloud Community](https://community.ovh.com/c/telecom)

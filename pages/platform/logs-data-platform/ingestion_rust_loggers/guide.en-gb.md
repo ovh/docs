@@ -1,8 +1,5 @@
 ---
 title: Pushing logs with a SDK - Rust - gelf_logger and log4rs-gelf
-slug: logs-data-platform-rust-libs
-order: 30
-section: Logging libraries
 updated: 2023-01-16
 ---
 
@@ -151,6 +148,6 @@ You could also look at the [generated API documentation](https://docs.rs/log4rs-
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/gb/en/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

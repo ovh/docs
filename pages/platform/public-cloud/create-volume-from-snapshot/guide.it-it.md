@@ -1,9 +1,6 @@
 ---
 title: Creare un volume a partire da un backup
-slug: creare-volume-da-backup
 excerpt: Come creare dischi aggiuntivi a partire da un backup di un disco supplementare
-section: Storage
-order: 4
 updated: 2021-04-06
 ---
 
@@ -68,7 +65,7 @@ Il processo di associazione del disco all'istanza sta per iniziare e potrebbe ri
 Evitare la navigazione fuori dalla scheda in corso durante l'associazione del disco. Ciò può interrompere il processo.
 >
 
-Una volta effettuato l'associazione, puoi seguire gli step successivi [con Linux](../crea_e_configura_un_disco_aggiuntivo_sulla_tua_istanza/#da-linux) o [Windows](../crea_e_configura_un_disco_aggiuntivo_sulla_tua_istanza/#da-windows).
+Una volta effettuato l'associazione, puoi seguire gli step successivi [con Linux](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#da-linux) o [Windows](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#da-windows).
 
 ## Per saperne di più
 

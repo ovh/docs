@@ -1,8 +1,5 @@
 ---
 title: "Retrieving the backup of the FTP space on your Cloud Web hosting plan"
-slug: backup_ftp_cloud_web
-section: Backups
-order: 01
 updated: 2022-09-13
 ---
 
@@ -18,7 +15,7 @@ Your Cloud Web hosting plan has a storage space you can use to host your website
 > 
 > Backups offered by OVHcloud for Cloud Web hosting plans are non-contractual. They are available to supplement your own backup methods in urgent situations. We recommend regularly creating your own security backups, to avoid any potential data loss.
 > 
-> When you make a security backup for your site and use a database, also back up your database. Please refer to our guide on [retrieving a backup of your database](https://docs.ovh.com/ie/en/hosting/web_hosting_database_export_guide/).
+> When you make a security backup for your site and use a database, also back up your database. Please refer to our guide on [retrieving a backup of your database](/pages/web/hosting/sql_database_export).
 > 
 
 **Find out how to retrieve and restore an FTP backup of your Cloud Web hosting plan.**
@@ -81,7 +78,7 @@ The downloaded file is in the format *.tar.gz*.
 
 ### Restore your backup
 
-Once you have downloaded your files, you can [connect to your FTP space](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting/) using FTP software such as [Filezilla](https://docs.ovh.com/ie/en/hosting/web_hosting_filezilla_user_guide/), then replace the respective files on the hosting with the ones from the backup.
+Once you have downloaded your files, you can [connect to your FTP space](/pages/web/hosting/ftp_connection) using FTP software such as [Filezilla](/pages/web/hosting/ftp_filezilla_user_guide), then replace the respective files on the hosting with the ones from the backup.
 
 > [!primary]
 >
@@ -90,9 +87,9 @@ Once you have downloaded your files, you can [connect to your FTP space](https:/
 
 ## Go further 
 
-[Logging in to your Web Hosting plan’s storage space](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting/){.external}
+[Logging in to your Web Hosting plan’s storage space](/pages/web/hosting/ftp_connection){.external}
 
-[Logging in using the Filezilla software](https://docs.ovh.com/ie/en/hosting/web_hosting_filezilla_user_guide/)
+[Logging in using the Filezilla software](/pages/web/hosting/ftp_filezilla_user_guide)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
 

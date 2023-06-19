@@ -1,9 +1,6 @@
 ---
 title: Utilisation de la double authentification (2FA) sur votre infrastructure Private Cloud
-slug: utilisation-2FA
 excerpt: Apprenez à mettre en place la double authentification pour protéger votre infrastructure
-section: Fonctionnalités OVHcloud
-order: 05
 updated: 2022-06-10
 ---
 
@@ -86,7 +83,7 @@ La seule différence sera l'autonomie ou non de l'utilisateur pour la validation
 
 Il est possible d'utiliser plusieurs applications tierces nécessitant la connexion au vCenter.
 
-Ces applications doivent être préalablement autorisées au travers de la politique d'accès au vCenter qui est paramétrable dans votre [espace client](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/#securite)
+Ces applications doivent être préalablement autorisées au travers de la politique d'accès au vCenter qui est paramétrable dans votre [espace client](/pages/cloud/private-cloud/manager_ovh_private_cloud#securite)
 
 Ces applications vont alors pouvoir accéder à nos infrastructures, mais ne vont pas forcément gérer la double authentification.
 

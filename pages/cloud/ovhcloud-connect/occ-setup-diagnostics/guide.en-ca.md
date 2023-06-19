@@ -1,9 +1,6 @@
 ---
 title: Troubleshooting common errors setting up OVHcloud Connect
-slug: occ-diagnostics
 excerpt: Find out how to resolve the most common errors associated with setting up OVHcloud Connect
-section: Getting started
-order: 4
 updated: 2021-09-02
 ---
 

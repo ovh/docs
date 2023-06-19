@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - What do I do when my database is full?"
-slug: database-overquota
 excerpt: "Find out what to do when your database is saturated"
-section: Databases
-order: 06
 updated: 2023-02-16
 ---
 
@@ -35,7 +32,7 @@ This tutorial will show you the actions you can take when your OVHcloud shared d
 > If you experience any difficulties following the steps in this tutorial, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en/directory/) or reach out to the OVHcloud community. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
-When your OVHcloud shared database reaches a certain saturation level (**overquota**), our robots will send a notification to the email address of the database’s [administrator contact](https://docs.ovh.com/us/en/customer/managing-contacts/). 
+When your OVHcloud shared database reaches a certain saturation level (**overquota**), our robots will send a notification to the email address of the database’s [administrator contact](/pages/account/customer/managing_contacts). 
 
 The first email will be sent when your database has consumed more than **80%** of its storage capacity. A second email is sent when **90%** of this storage capacity is reached.
 
@@ -57,7 +54,7 @@ The first step is to identify the large table or tables in your database.
 
 #### 1.1 - Connect to the database via phpMyAdmin
 
-Retrieve the password for accessing your database directly from your website’s configuration file. Perform this action using **step 1** in our guide to [changing a database password](https://docs.ovh.com/us/en/hosting/change-password-database/).
+Retrieve the password for accessing your database directly from your website’s configuration file. Perform this action using **step 1** in our guide to [changing a database password](/pages/web/hosting/sql_change_password).
 
 Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the navigation bar at the top of the screen. Click on `Hosting plans`{.action} and choose the web hosting plan associated with your OVHcloud shared database. Next, go to the `Databases`{.action} tab.
 
@@ -127,9 +124,9 @@ We recommend this solution for large databases.
 
 Then follow our guides to move the content from your old database to the new one:
 
-- [Export your existing database](https://docs.ovh.com/us/en/hosting/web_hosting_database_export_guide/)
-- [First steps with Private SQL/Web Cloud Databases](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/)
-- [Import your old database into your Private SQL/Web Cloud Databases](https://docs.ovh.com/gb/en/clouddb/restore-import-database/)
+- [Export your existing database](/pages/web/hosting/sql_database_export)
+- [First steps with Private SQL/Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb)
+- [Import your old database into your Private SQL/Web Cloud Databases](/pages/web/clouddb/restore-import-on-database-server)
 
 #### Case 2 - Some or all of the contents of the large table are not necessary for your site to work
 

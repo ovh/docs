@@ -1,11 +1,8 @@
 ---
 title: VMware HA (High Availability)
-slug: vmware-ha-high-availability
 routes:
-    canonical: 'https://docs.ovh.com/fr/private-cloud/vmware-ha-high-availability/'
+    canonical: '/pages/cloud/private-cloud/vmware_ha_high_availability'
 excerpt: Maitriser la politique de redémarrage avec la fonction HA
-section: Fonctionnalités VMware vSphere
-order: 02
 updated: 2020-11-18
 ---
 
@@ -21,7 +18,7 @@ La fonction principale de **VMware HA** (High Availability) en cas de défaillan
 
 ## Prérequis
 
-- Être connecté à votre [interface vSphere](../connexion-interface-vsphere/).
+- Être connecté à votre [interface vSphere](/pages/cloud/managed-bare-metal/vsphere-interface).
 - Posséder un produit [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.external}.
 
 ## En pratique
@@ -92,7 +89,7 @@ En cas de défaillance d'une banque de données avec un état APD (all path down
 
 ##### Surveillance de VM
 
-La surveillance des machines virtuelles est disponible suite à l'installation des [VMware tools](../installation-des-vmware-tools/). 
+La surveillance des machines virtuelles est disponible suite à l'installation des [VMware tools](/pages/cloud/managed-bare-metal/vmware_tools_install). 
 En cas de non réponse via les **tools** (signaux de pulsation), la machine virtuelle sera automatiquement redémarrée. Une configuration avancée est possible par rapport à cette fonctionnalité (intervalles de redémarrage par exemple).
 
 ![Surveillande de VM](images/HAparam5.PNG){.thumbnail}

@@ -1,9 +1,6 @@
 ---
 title: Zarządzanie kontaktami swoich usług
-slug: zarzadzanie_kontaktami
 excerpt: 'Dowiedz się, jak zarządzać kontaktami dla Twoich usług OVHcloud'
-section: Pierwsze kroki
-order: 6
 updated: 2021-12-13
 ---
 
@@ -121,9 +118,9 @@ Właśnie zamówiłeś abonament OVHcloud umożliwiający utworzenie własnego [
 
 W takiej sytuacji daj swojemu dostawcy prawo do [kontaktu technicznego](#gestion_des_contacts) na Twoim hostingu OVHcloud. Dostęp do strony pozwoli mu na wykonanie operacji niezbędnych do uruchomienia strony (dodanie domeny lub subdomeny do strony podpiętej w opcji MultiSite, zainstalowanie modułu za 1 kliknięciem, zmiana hasła FTP lub bazy danych, utworzenie certyfikatu SSL, itp.).
 
-Jeśli Twoja domena nie jest powiązana z Twoim hostingiem i chcesz powierzyć niezbędne operacje webmasterowi, daj mu również prawo do "[kontaktu technicznego](#gestion_des_contacts)" w [strefie DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/) domeny.
+Jeśli Twoja domena nie jest powiązana z Twoim hostingiem i chcesz powierzyć niezbędne operacje webmasterowi, daj mu również prawo do "[kontaktu technicznego](#gestion_des_contacts)" w [strefie DNS](/pages/web/domains/dns_zone_edit) domeny.
 
-Prawo "[kontakt techniczny](#gestion_des_contacts)" nie pozwala na zmianę kontaktów administratora lub fakturowanie usługi. Dzięki niemu webmaster nie będzie miał dostępu do faktur lub zamówień, do odnowienia usług ani do sposobów płatności. Nie pozwoli mu również na [przeniesienie domeny](https://docs.ovh.com/pl/domains/transfer_wychodzacy_domeny_globalnej_lub_geograficznej/) z innego dostawcy lub na [zmianę właściciela](https://docs.ovh.com/pl/domains/zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz/).
+Prawo "[kontakt techniczny](#gestion_des_contacts)" nie pozwala na zmianę kontaktów administratora lub fakturowanie usługi. Dzięki niemu webmaster nie będzie miał dostępu do faktur lub zamówień, do odnowienia usług ani do sposobów płatności. Nie pozwoli mu również na [przeniesienie domeny](/pages/web/domains/transfer_outgoing_domain) z innego dostawcy lub na [zmianę właściciela](/pages/web/domains/trade_domain).
 
 Jako [kontakt administracyjny](#administrateur) będziesz mógł w każdym momencie pobrać "[kontakt techniczny](#technique)" Twojej usługi.
 

@@ -1,9 +1,6 @@
 ---
 title: Enterprise File Storage - Koncepcje wydajności
 excerpt: "Poznaj koncepcje związane z tworzeniem rezerw, monitoringiem oraz testowaniem wydajności rozwiązania Enterprise File Storage"
-slug: netapp/performances
-section: Enterprise File Storage
-order: 011
 updated: 2022-11-30
 ---
 
@@ -62,7 +59,7 @@ Aby przeprowadzić własne testy wydajności i zapoznać się z poziomami usług
 
 Ważne jest, aby przetestować wydajność Enterprise File Storage w tym samym centrum danych, co obciążenia robocze. Opóźnienia między centrami danych są zbyt duże, aby taka ocena była przydatna.
 
-Przed rozpoczęciem testu upewnij się, że klient używany w tym benchmarku ma dostęp do Twojej usługi Enterprise File Storage oraz do wolumenu testów. Jeśli jeszcze tego nie zrobiłeś, zapoznaj się z przewodnikiem [zarządzanie w Panelu klienta OVHcloud](https://docs.ovh.com/pl/storage/file-storage/netapp/control-panel/).
+Przed rozpoczęciem testu upewnij się, że klient używany w tym benchmarku ma dostęp do Twojej usługi Enterprise File Storage oraz do wolumenu testów. Jeśli jeszcze tego nie zrobiłeś, zapoznaj się z przewodnikiem [zarządzanie w Panelu klienta OVHcloud](/pages/cloud/storage/file_storage/netapp_control_panel).
 
 #### Błąd testowy
 

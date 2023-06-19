@@ -1,8 +1,6 @@
 ---
 title: 'Comment changer le backend ACS du modem'
-slug: comment-changer-backend-ACS
 excerpt: 'Comprendre l’ACS et modifier le backend ACS du modem'
-section: 'Configurations techniques avancées'
 updated: 2022-02-16
 ---
 
@@ -62,7 +60,7 @@ Cette méthode s'adresse aux utilisateurs expert uniquement. Nous ne serons pas 
 
 > [!primary]
 >
-> Pour en savoir plus sur l'utilisation des API, consultez le guide [Premiers pas avec les API OVHcloud](../../api/first-steps-with-ovh-api/).
+> Pour en savoir plus sur l'utilisation des API, consultez le guide [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps).
 >
 
 Rendez-vous sur le lien <https://api.ovh.com/console/> puis connectez-vous avec votre identifiant client OVHcloud. 

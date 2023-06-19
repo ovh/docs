@@ -1,9 +1,6 @@
 ---
 title: "Eliminar uma conta de e-mail"
-slug: delete-email-account
 excerpt: "Saiba como eliminar ou reinicializar um endereço de e-mail na sua oferta de e-mail"
-section: 'Funcionalidades dos endereços e-mail'
-order: 02
 updated: 2023-01-27
 ---
 
@@ -34,7 +31,7 @@ Deseja:
 A OVHcloud propõe 3 soluções de e-mail, a noção de eliminação de conta é diferente consoante a sua oferta.
 
 - **E-mail MXplan**: esta oferta é vendida sob a forma de um pack de várias contas de e-mail. Quando eliminar uma conta, liberta um espaço no seu pack. 
-- **Email Pro** e **Hosted Exchange**: estas duas ofertas estão 'à la carte', encomenda uma subscrição individual por conta de e-mail. Se deseja eliminar um endereço de e-mail, trata-se de efetuar uma **reinicialização**. Uma vez a conta de e-mail reinicializada, pode reutilizar esta conta para criar um novo endereço de e-mail. Também pode [cancelar a assinatura](https://docs.ovh.com/pt/microsoft-collaborative-solutions/gestao-faturacao-exchange/#eliminar-contas) desta conta se pretender eliminá-la definitivamente.
+- **Email Pro** e **Hosted Exchange**: estas duas ofertas estão 'à la carte', encomenda uma subscrição individual por conta de e-mail. Se deseja eliminar um endereço de e-mail, trata-se de efetuar uma **reinicialização**. Uma vez a conta de e-mail reinicializada, pode reutilizar esta conta para criar um novo endereço de e-mail. Também pode [cancelar a assinatura](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#eliminar-contas) desta conta se pretender eliminá-la definitivamente.
 
 ### Eliminar ou reinicializar uma conta de e-mail
 
@@ -58,13 +55,13 @@ Selecione o separador correspondente à sua oferta de e-mail:
 > **Email Pro**
 >>
 >> Clique em `E-mail Pro`{.action} e escolha o nome da plataforma em questão. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes. Clique no botão <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à direita da conta a modificar e, a seguir, em `Reinicializar esta conta`{.action}.<br><br>
->> Após a reinicialização da sua conta, se pretender eliminá-la definitivamente, deverá rescindir a sua conta. Para isso, consulte o nosso guia [Gerir a faturação das contas Email-Pro](https://docs.ovh.com/pt/emails-pro/gestao-faturacao-emailpro/).<br><br>
+>> Após a reinicialização da sua conta, se pretender eliminá-la definitivamente, deverá rescindir a sua conta. Para isso, consulte o nosso guia [Gerir a faturação das contas Email-Pro](/pages/web/emails-pro/manage_billing_emailpro).<br><br>
 >>![email](images/emailpro-reset.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
 >> Clique em `Microsoft`{.action}, depois `Exchange`{.action} e escolha o nome da plataforma em questão. Aceda ao separador `Contas de e-mail`{.action}. Clique no botão <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à direita da conta a modificar e, a seguir, em `Reinicializar`{.action}.<br><br>
->> Após a reinicialização da sua conta, se pretender eliminá-la definitivamente, deverá rescindir a sua conta. Para isso, consulte o nosso guia [Gerir a faturação das contas Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/gestao-faturacao-exchange/).<br><br>
+>> Após a reinicialização da sua conta, se pretender eliminá-la definitivamente, deverá rescindir a sua conta. Para isso, consulte o nosso guia [Gerir a faturação das contas Exchange](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange).<br><br>
 >>![email](images/exchange-reset.png){.thumbnail}<br>
 >>
 
@@ -80,15 +77,15 @@ Na tabela abaixo, encontrará as informações necessárias para identificar a s
 
 ## Saiba mais
 
-[Primeiros passos com a solução MXplan](https://docs.ovh.com/pt/emails/partilhado_generalidades_e-mail_partilhado_ovh/)
+[Primeiros passos com a solução MXplan](/pages/web/emails/email_generalities)
 
-[Primeiros passos com a solução E-mail Pro](https://docs.ovh.com/pt/emails-pro/configuracao-inicial/)
+[Primeiros passos com a solução E-mail Pro](/pages/web/emails-pro/first_config)
 
-[Primeiros passos com a solução Hosted Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_20132016_a_primeira_configuracao_do_servico/)
+[Primeiros passos com a solução Hosted Exchange](/pages/web/microsoft-collaborative-solutions/exchange_starting_hosted)
 
-[Gerir a faturação das contas Email Pro](https://docs.ovh.com/pt/emails-pro/gestao-faturacao-emailpro/)
+[Gerir a faturação das contas Email Pro](/pages/web/emails-pro/manage_billing_emailpro)
 
-[Gerir a faturação das suas contas Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/gestao-faturacao-exchange/)
+[Gerir a faturação das suas contas Exchange](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange)
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 

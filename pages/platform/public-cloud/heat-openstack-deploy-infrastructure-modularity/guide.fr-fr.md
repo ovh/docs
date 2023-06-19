@@ -1,8 +1,6 @@
 ---
 title: Déployer une infrastructure avec des variables et des sorties formatées avec Heat d'OpenStack
 excerpt: Découvrez comment exploiter les variables d'environnement en utilisant la modularité des gabarits Heat
-slug: deployer-infrastructure-avec-variables-et-sorties-formatees-heat-openstack
-section: Tutoriels
 updated: 2018-06-20
 ---
 
@@ -10,7 +8,7 @@ updated: 2018-06-20
 
 ## Objectif
 
-Nous avons vu dans le guide intitulé « [Déployer une infrastructure simple avec Heat d'OpenStack](https://docs.ovh.com/fr/public-cloud/deployer-infrastructure-avec-heat-openstack/){.external} » comment utiliser Heat pour créer des *stacks* simples et les manipuler. Nous allons à présent voir comment aller plus loin en utilisant des paramètres dans ces *stacks*.
+Nous avons vu dans le guide intitulé « [Déployer une infrastructure simple avec Heat d'OpenStack](/pages/platform/public-cloud/heat-openstack-deploy-infrastructure){.external} » comment utiliser Heat pour créer des *stacks* simples et les manipuler. Nous allons à présent voir comment aller plus loin en utilisant des paramètres dans ces *stacks*.
 
 **Apprenez comment formater la sortie pour utiliser les informations des ressources déployées.**
 

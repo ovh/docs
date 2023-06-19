@@ -1,9 +1,6 @@
 ---
 title: 'Configuring the network on Windows Server with Hyper-V on the High Grade & SCALE ranges'
-slug: hyperv-network-hg-scale
 excerpt: 'Find out how to configure the network on  Windows Server with Hyper-V on the High Grade & SCALE ranges'
-section: 'Advanced use'
-order: 5
 updated: 2021-11-15
 ---
 
@@ -176,7 +173,7 @@ Once done, click `OK`{.action} to close the Advanced Window, click `OK`{.action}
 
 > [!warning]
 >
-> This step can cause a connection loss. If it occurs, please connect using the [IPMI](../use-ipmi-dedicated-servers) and edit the configuration again. You will find that your default gateway is reverted back to blank. You would need to re-add the gateway of 100.64.0.1.
+> This step can cause a connection loss. If it occurs, please connect using the [IPMI](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers) and edit the configuration again. You will find that your default gateway is reverted back to blank. You would need to re-add the gateway of 100.64.0.1.
 >
 
 

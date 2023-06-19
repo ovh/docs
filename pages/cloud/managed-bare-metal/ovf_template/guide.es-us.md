@@ -1,10 +1,8 @@
 ---
 title: 'Desplegar una plantilla OVF Windows y SQL Server'
-slug: desplegar-plantilla-ovf
 routes:
-    canonical: 'https://docs.ovh.com/us/es/private-cloud/desplegar-plantilla-ovf/'
+    canonical: '/pages/cloud/private-cloud/ovf_template'
 excerpt: 'Cómo desplegar una plantilla OVF Windows y SQL Server'
-section: 'Servicios y opciones de OVHcloud'
 updated: 2020-11-18
 ---
 
@@ -28,7 +26,7 @@ Las MV Windows desplegadas a partir de una plantilla utilizan automáticamente l
 ## Requisitos
 
 - Tener acceso al cliente web (HTML5).
-- Haber activado las [licencias de Windows](../manager-ovhcloud/#licencia-windows) desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} (en la pestaña `Licencia Widows`{.action} de la plataforma). 
+- Haber activado las [licencias de Windows](/pages/cloud/managed-bare-metal/manager-ovhcloud#licencia-windows) desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} (en la pestaña `Licencia Widows`{.action} de la plataforma). 
 
 
 Desde un navegador de internet, vaya a la página de inicio de su Managed Bare Metal y haga clic en `OVH Templates`{.action}.

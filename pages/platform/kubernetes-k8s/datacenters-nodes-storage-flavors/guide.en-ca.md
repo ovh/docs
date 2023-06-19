@@ -1,8 +1,6 @@
 ---
 title: Available datacenters, worker nodes and persistent storage flavors
 excerpt: ''
-slug: datacenters-nodes-storage-flavors
-section: Technical resources
 updated: 2022-02-16
 ---
 
@@ -40,9 +38,9 @@ Note that we are both compatible with the standard and flex variations (Flex off
 Note however that Managed Kubernetes Service does not currently offer worker nodes resize.  
 
 Using our API, you shall use the flavor name such as `b2-7` as parameter of the POST `/cloud/project/{serviceName}/kube/{kubeId}/node` endpoint.  
-This is detailed in the [quickstart with OVH API](../deploying-hello-world-ovh-api/) guide.
+This is detailed in the [quickstart with OVH API](/pages/platform/kubernetes-k8s/deploying-hello-world-ovh-api) guide.
 
-GPU (`T1-*`) instances are now supported! If you want to know [how to deploy GPU applications on Kubernetes Managed Service](../deploying-gpu-application), please read our tutorial.
+GPU (`T1-*`) instances are now supported! If you want to know [how to deploy GPU applications on Kubernetes Managed Service](/pages/platform/kubernetes-k8s/deploying-gpu-application), please read our tutorial.
 
 ### Available persistent Storage Classes
 
@@ -51,6 +49,6 @@ When adding a persistent volume though Kubernetes API (or `kubectl`), it will ac
 * `csi-cinder-high-speed` compliant with Managed Kubernetes Service after `1.18.*` release
 * `csi-cinder-classic` compliant with Managed Kubernetes Service after `1.18.*` release
 
-All these `Storage Classes` are based on Cinder, the OpenStack block storage service. The difference between them is the associated physical storage device, and the fact that `csi-cinder-high-speed` uses SSD, while `csi-cinder-classic` uses traditional spinning disks. This is detailed in the [Persistent Volumes ](../ovh-kubernetes-persistent-volumes/) guide.
+All these `Storage Classes` are based on Cinder, the OpenStack block storage service. The difference between them is the associated physical storage device, and the fact that `csi-cinder-high-speed` uses SSD, while `csi-cinder-classic` uses traditional spinning disks. This is detailed in the [Persistent Volumes ](/pages/platform/kubernetes-k8s/persistent-volumes-on-ovh-managed-kubernetes) guide.
 
 We will support future classes as soon they are made available in OVHcloud Public Cloud.

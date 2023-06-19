@@ -1,9 +1,6 @@
 ---
 title: "Monitoring i zarządzanie automatycznymi wiadomościami e-mail na Twoim hostingu"
-slug: hosting_www_monitorowanie_automatycznych_e-maili
 excerpt: "Dowiedz się, jak monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z hostingu OVHcloud"
-section: Diagnostyka
-order: 10
 updated: 2022-10-12
 ---
 
@@ -21,7 +18,7 @@ Zautomatyzowane e-maile to wiadomości wysyłane za pomocą skryptów. Zazwyczaj
 >
 > Niniejszy przewodnik dotyczy przede wszystkim wiadomości e-mail wysyłanych ze skryptów znajdujących się na [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) za pomocą funkcji "mail()" PHP.
 >
-> Jeśli chcesz zarządzać adresami e-mail zawartymi w Twojej usłudze MX Plan lub usłudze[hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}, zapoznaj się z naszą dokumentacją dotyczącą [E-maili na hostingu - MX Plan](https://docs.ovh.com/pl/emails/).
+> Jeśli chcesz zarządzać adresami e-mail zawartymi w Twojej usłudze MX Plan lub usłudze[hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}, zapoznaj się z naszą dokumentacją dotyczącą [E-maili na hostingu - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -152,7 +149,7 @@ W tym przypadku obowiązkowe jest czyszczenie SPAM oczekujących na wysyłkę.
 
 W celu poprawienia tej sytuacji należy wykonać co najmniej następujące czynności:
 
-- Przeanalizuj [logi Twojego hostingu](https://docs.ovh.com/pl/hosting/hosting_statystyki_i_logi_strony/), aby zidentyfikować luki bezpieczeństwa i zainfekowane pliki.
+- Przeanalizuj [logi Twojego hostingu](/pages/web/hosting/logs_and_statistics), aby zidentyfikować luki bezpieczeństwa i zainfekowane pliki.
 - Usuń lub poprawij złośliwy plik/moduły.
 - W przypadku systemów CMS (Wordpress, Joomla, Prestashop, Drupal, ...) aktualizuj CMS, wtyczki (wtyczki) i powiązane tematy.
 - Zabezpiecz swoje formularze kontaktowe "captcha".
@@ -222,11 +219,11 @@ $mail->Password = "YourEmailPassword";
 
 ## Sprawdź również <a name="go-further"></a>
 
-[Sprawdź logi Twojego hostingu](https://docs.ovh.com/pl/hosting/hosting_statystyki_i_logi_strony/)
+[Sprawdź logi Twojego hostingu](/pages/web/hosting/logs_and_statistics)
 
-[Sprostowanie strony "403 Forbidden", która wyświetla się na Twojej stronie](https://docs.ovh.com/pl/hosting/diagnostyka-403-forbidden/)
+[Sprostowanie strony "403 Forbidden", która wyświetla się na Twojej stronie](/pages/web/hosting/diagnostic_403_forbidden)
 
-[Przywracanie przestrzeni dyskowej FTP Twojego hostingu](https://docs.ovh.com/pl/hosting/hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/)
+[Przywracanie przestrzeni dyskowej FTP Twojego hostingu](/pages/web/hosting/ftp_save_and_backup)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 

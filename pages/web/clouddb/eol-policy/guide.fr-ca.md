@@ -1,7 +1,5 @@
 ---
 title: 'Politique de fin de vie des bases de données managées'
-slug: managed-db-life-cycle-policy
-section: 'Ressources techniques'
 updated: 2023-03-07
 ---
 
@@ -27,9 +25,9 @@ Posséder au moins l'une des 3 offres suivantes:
 
 Les produits couverts par cette politique de fin de vie sont :
 
-- Les services Web Cloud Databases, instances SGBD dédiées joignables via le réseau public ou via le réseau Web Hosting ([voir les annonces](https://docs.ovh.com/ca/fr/clouddb/clouddb-eos-eol/)).
+- Les services Web Cloud Databases, instances SGBD dédiées joignables via le réseau public ou via le réseau Web Hosting ([voir les annonces](/pages/web/clouddb/clouddb-eos-eol)).
 
-- Les services SharedSQL Web Hosting, bases de données MySQL joignables via le réseau Web Hosting ([voir les annonces](https://docs.ovh.com/fr/hosting/sql_eos_eol/)).
+- Les services SharedSQL Web Hosting, bases de données MySQL joignables via le réseau Web Hosting ([voir les annonces](/pages/web/hosting/sql_eos_eol)).
 
 ### Définitions et lignes directrices de la politique de fin de vie
 

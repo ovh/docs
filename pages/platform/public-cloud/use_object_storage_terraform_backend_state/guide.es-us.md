@@ -1,11 +1,8 @@
 ---
 title: 'Using OVHcloud Object Storage as Terraform Backend to store your Terraform state (EN)'
-slug: use_object_storage_terraform_backend_state
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/public-cloud/use_object_storage_terraform_backend_state/'
+    canonical: '/pages/platform/public-cloud/use_object_storage_terraform_backend_state'
 excerpt: 'Find out how to use an OVHcloud Object Storage as a Terraform Backend to store your Terraform state'
-section: Tutorials
-order: 03
 updated: 2022-07-11
 ---
 
@@ -87,7 +84,7 @@ In order to do that you need to configure a `backend` in your Terraform HCL conf
 
 ### Creating an Object Storage container/bucket
 
-First, you need to have an Object Storage container. If you don't already had one, you can follow the [Creating an Object Storage container](https://docs.ovh.com/us/es/storage/object-storage/pcs/create-container/) tutorial.
+First, you need to have an Object Storage container. If you don't already had one, you can follow the [Creating an Object Storage container](/pages/cloud/storage/object_storage/pcs_create_container) tutorial.
 
 For this guide, our Object Storage container is named `terraform-state` and its region is `GRA`.
 

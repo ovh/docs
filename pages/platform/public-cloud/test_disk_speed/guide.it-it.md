@@ -1,9 +1,7 @@
 ---
 title: Esegui un test della velocità dei tuoi dischi
 excerpt: Esegui un test della velocità dei tuoi dischi
-slug: esegui_un_test_della_velocita_dei_tuoi_dischi
 legacy_guide_number: g1956
-section: Storage
 updated: 2022-01-04
 ---
 
@@ -113,6 +111,6 @@ Nel nostro esempio, le prestazioni del disco corrispondono a circa 891 IOPS.
 
 ## Per saperne di più
 
-[Crea e configura un disco aggiuntivo sulla tua istanza](https://docs.ovh.com/it/public-cloud/crea_e_configura_un_disco_aggiuntivo_sulla_tua_istanza/)
+[Crea e configura un disco aggiuntivo sulla tua istanza](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
   
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

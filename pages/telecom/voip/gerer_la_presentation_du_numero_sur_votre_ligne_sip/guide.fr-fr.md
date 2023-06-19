@@ -1,8 +1,6 @@
 ---
 title: 'Configurer la présentation de son numéro'
-slug: gerer-la-presentation-du-numero-sur-votre-ligne-sip
 excerpt: 'Découvrez comment configurer la présentation du numéro de votre ligne OVHcloud'
-section: 'Lignes téléphoniques'
 updated: 2022-06-21
 ---
 
@@ -43,7 +41,7 @@ La page qui s'affiche vous indique l'état actuel de la présentation du numéro
 
 |Configuration|Description|
 |---|---|  
-|Rester anonyme|Permet de masquer votre numéro lorsque vous émettez un appel. Pour valider ce choix, cochez la case `Rester anonyme`{.action}. Vous pouvez également activer cette configuration grâce à un code à taper sur votre combiné (voir la documentation [Activer ou désactiver des services depuis le téléphone](../activer-desactiver-services-depuis-telephone/)).|
+|Rester anonyme|Permet de masquer votre numéro lorsque vous émettez un appel. Pour valider ce choix, cochez la case `Rester anonyme`{.action}. Vous pouvez également activer cette configuration grâce à un code à taper sur votre combiné (voir la documentation [Activer ou désactiver des services depuis le téléphone](/pages/telecom/voip/activer_desactiver_fonctions)).|
 |Présenter un autre numéro|Permet de présenter un numéro différent de celui de la ligne sélectionnée lorsque vous émettez un appel (par exemple, pour masquer le numéro direct d'un de vos collaborateurs en affichant celui de votre standard téléphonique). Pour cela, cliquez sur `Choisir un autre numéro`{.action}, puis sélectionnez celui souhaité dans la liste. Seuls les numéros rattachés à vos groupes de facturation apparaissent dans la liste.|
 
 Une fois votre choix fait, cliquez sur le bouton `Appliquer les modifications`{.action}. Vous pouvez aussi cliquer sur `Appliquer à plusieurs lignes`{.action} pour dupliquer les paramètres sur d’autres lignes OVHcloud.
@@ -103,7 +101,7 @@ Une fois votre choix fait, cliquez sur le bouton `Appliquer les modifications`{.
 >
 > - le numéro que vous souhaitez présenter n'est pas associé à une ligne OVHcloud (SIP ou Trunk, par exemple). Seuls les numéros alias pourront être présentés ; 
 > 
-> - le numéro pour lequel vous souhaitez modifier la présentation dispose bien d'une redirection avec présentation. Si besoin, reportez-vous aux instructions décrites dans notre documentation [Créer une redirection avec présentation](../creer-redirection-avec-presentation/).
+> - le numéro pour lequel vous souhaitez modifier la présentation dispose bien d'une redirection avec présentation. Si besoin, reportez-vous aux instructions décrites dans notre documentation [Créer une redirection avec présentation](/pages/telecom/voip/redirection_avec_presentation).
 >
 
 **Le mode anonyme doit être désactivé sur la ligne Trunk depuis l'espace client OVHcloud, sinon il sera prioritaire sur la présentation de votre IPBX.**

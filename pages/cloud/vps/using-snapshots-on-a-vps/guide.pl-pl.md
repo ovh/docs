@@ -1,9 +1,6 @@
 ---
 title: 'Korzystanie z migawek na prywatnym serwerze wirtualnym'
 excerpt: 'Dowiedz się, jak włączyć opcję migawki w Panelu klienta OVHcloud i korzystać z niej'
-slug: uzywanie-migawki-vps
-section: 'Opcje kopii zapasowych'
-order: 1
 updated: 2023-04-28
 ---
 
@@ -173,7 +170,7 @@ Running  QEMU-GA            QEMU Guest Agent
 
 ## Sprawdź również
 
-[Korzystanie z automatycznych kopii zapasowych na prywatnym serwerze wirtualnym](../uzywanie-automatyczne-kopie-zapasowe-vps/)
+[Korzystanie z automatycznych kopii zapasowych na prywatnym serwerze wirtualnym](/pages/cloud/vps/using-automated-backups-on-a-vps)
 
 
 Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.

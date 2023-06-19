@@ -1,8 +1,5 @@
 ---
 title: "Recuperare il backup dello spazio FTP del tuo hosting Cloud Web"
-slug: backup_ftp_cloud_web
-section: Backup
-order: 01
 updated: 2022-09-13
 ---
 
@@ -23,7 +20,7 @@ Il tuo hosting Cloud Web dispone di uno spazio di storage in cui puoi ospitare s
 > 
 > I backup proposti da OVHcloud per gli hosting Cloud Web sono non contrattuali. disponibili per completare i tuoi servizi di backup in caso di emergenze. Per evitare eventuali perdite di dati, ti consigliamo di effettuare regolarmente i tuoi backup di sicurezza.
 > 
-> Quando effettui un backup di sicurezza per il tuo sito e utilizzi un database, fai anche un backup di quest'ultimo. Per [recuperare un backup del tuo database](https://docs.ovh.com/it/hosting/web_hosting_come_esportare_un_database/), consulta la nostra guida.
+> Quando effettui un backup di sicurezza per il tuo sito e utilizzi un database, fai anche un backup di quest'ultimo. Per [recuperare un backup del tuo database](/pages/web/hosting/sql_database_export), consulta la nostra guida.
 > 
 
 **Questa guida ti mostra come recuperare e ripristinare un backup FTP del tuo hosting Cloud Web.**
@@ -86,7 +83,7 @@ Il file caricato è in formato *.tar.gz*.
 
 ### Ripristina il backup
 
-Una volta scaricati i file, potrai [accedere al tuo spazio FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) utilizzando un software FTP come [Filezilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/) e sostituire i file che desideri con quelli recuperati.
+Una volta scaricati i file, potrai [accedere al tuo spazio FTP](/pages/web/hosting/ftp_connection) utilizzando un software FTP come [Filezilla](/pages/web/hosting/ftp_filezilla_user_guide) e sostituire i file che desideri con quelli recuperati.
 
 > [!primary]
 >
@@ -95,9 +92,9 @@ Una volta scaricati i file, potrai [accedere al tuo spazio FTP](https://docs.ovh
 
 ## Per saperne di più 
 
-[Connettersi allo spazio di storage di un hosting Web](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/){.external}
+[Connettersi allo spazio di storage di un hosting Web](/pages/web/hosting/ftp_connection){.external}
 
-[Accedi con il client Filezilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/)
+[Accedi con il client Filezilla](/pages/web/hosting/ftp_filezilla_user_guide)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 

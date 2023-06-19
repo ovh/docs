@@ -1,9 +1,6 @@
 ---
 title: Vérifier le système de fichiers sur un VPS
 excerpt: Découvrez comment rechercher des erreurs dans un système de fichiers en mode rescue
-slug: check-file-system-vps
-section: Diagnostic et mode Rescue
-order: 5
 updated: 2021-04-20
 ---
 
@@ -28,7 +25,7 @@ updated: 2021-04-20
 
 #### VPS GNU/Linux
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et lancez un redémarrage du serveur en mode rescue. Si nécessaire, consultez notre [guide du mode rescue](../mode-rescue-vps/).
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et lancez un redémarrage du serveur en mode rescue. Si nécessaire, consultez notre [guide du mode rescue](/pages/cloud/vps/rescue).
 
 Sur les anciennes gammes de VPS, vos partitions seront automatiquement montées en mode rescue. Vous pouvez le vérifier à l'aide de la commande suivante :
 
@@ -70,7 +67,7 @@ $ fsck /dev/sdb1 -f
 
 Les instructions ci-dessus ne s'appliquent généralement pas à un VPS sous Windows, car la vérification du système de fichiers ne prend pas en charge NTFS. Vous pouvez cependant effectuer une vérification de cohérence NTFS sur les partitions.
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et lancez un redémarrage du serveur en mode rescue. Si nécessaire, consultez notre [guide du mode rescue](../mode-rescue-vps/).
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et lancez un redémarrage du serveur en mode rescue. Si nécessaire, consultez notre [guide du mode rescue](/pages/cloud/vps/rescue).
 
 Sur les anciennes gammes de VPS, vos partitions seront automatiquement montées en mode rescue. Vous pouvez le vérifier à l'aide de la commande suivante :
 
@@ -103,6 +100,6 @@ $ ntfsfix /dev/sdb1
 
 ## Aller plus loin
 
-[Activer le mode rescue sur un VPS](../mode-rescue-vps/)
+[Activer le mode rescue sur un VPS](/pages/cloud/vps/rescue)
 
 Echangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

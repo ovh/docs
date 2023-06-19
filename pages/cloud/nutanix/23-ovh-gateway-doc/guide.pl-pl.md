@@ -1,11 +1,8 @@
 ---
 title: Dokumentacja OVHgateway (EN)
-slug: ovh-gateway-documentation
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/nutanix/ovh-gateway-documentation/'
+    canonical: '/pages/cloud/nutanix/23-ovh-gateway-doc'
 excerpt: Find out how the OVHGateway works
-section: Sieć i bezpieczeństwo
-order: 03
 updated: 2022-12-08
 ---
 
@@ -30,7 +27,7 @@ The VM is based on Ubuntu 20.04 LTS (“ The Focal Fossa ”).
 > The file used is downloaded directly from the Ubuntu servers: <https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img> then customised using cloud-init.
 
 > [!primary]
-> OVHcloud recommends that you replace this gateway with one of your choice. You can use this guide: [OVHgateway replacement](https://docs.ovh.com/pl/nutanix/software-gateway-replacement/).
+> OVHcloud recommends that you replace this gateway with one of your choice. You can use this guide: [OVHgateway replacement](/pages/cloud/nutanix/30-software-gateway-replacement).
 
 The OVHgateway has a lightweight design, with 2 NICs, 1 vCPU, 1 GB of memory and 20 GiB of disk space.
 

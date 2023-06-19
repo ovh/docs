@@ -1,7 +1,5 @@
 ---
 title: SimpleSAML
-slug: simplesaml
-section: Drupal7
 updated: 2021-05-11
 ---
 

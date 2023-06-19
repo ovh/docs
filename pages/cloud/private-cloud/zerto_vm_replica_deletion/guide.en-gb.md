@@ -1,8 +1,6 @@
 ---
 title: Delete VM replica from Zerto recovery site
-slug: zerto-vm-replica-deletion
 excerpt: Remove a VM replica from a recovery site after deletion on the source site
-section: OVHcloud services and options
 updated: 2021-12-09
 ---
 
@@ -20,7 +18,7 @@ This document shows how to get the VPG back to normal and delete the VM replica 
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to vSphere as well as Zerto (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
-- A deployed [Zerto Virtual Replication](https://docs.ovh.com/gb/en/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/)
+- A deployed [Zerto Virtual Replication](/pages/cloud/private-cloud/zerto_virtual_replication_as_a_service)
 
 ## Instructions
 

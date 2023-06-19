@@ -1,8 +1,6 @@
 ---
 title: Optimiser l'envoi d'e-mails
 excerpt: Découvrez comment envoyer des e-mails en limitant le risque de spam
-slug: optimiser-envoi-emails
-section: Utilisation avancée
 updated: 2022-12-20
 ---
 
@@ -49,7 +47,7 @@ Dans le cas d'une infrastructure dédiée (serveur dédié, VPS, instance Public
 
 Pour plus d'informations sur la syntaxe du champ SPF, référez-vous au lien suivant : <http://www.open-spf.org/>.
 
-Vous pouvez bien entendu aller plus loin, en configurant le champ SPF d'un domaine bien spécifique ou en spécifiant une IPv6. Pour savoir comment procéder, consultez notre guide sur comment [configurer un enregistrement SPF](https://docs.ovh.com/fr/domains/le-champ-spf/).
+Vous pouvez bien entendu aller plus loin, en configurant le champ SPF d'un domaine bien spécifique ou en spécifiant une IPv6. Pour savoir comment procéder, consultez notre guide sur comment [configurer un enregistrement SPF](/pages/web/domains/dns_zone_spf).
 
 ### Configurer le champ DKIM
 
@@ -63,7 +61,7 @@ Toujours dans le but d'optimiser l'envoi et de réduire les risques de blocage d
 
 Vous devez tout d'abord créer un enregistrement A dans la zone DNS de votre domaine avec l'adresse IP de votre serveur comme cible.
 
-Si vos serveurs DNS sont gérés par OVHcloud, veuillez consulter ce [guide](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/#acceder-a-la-gestion-dune-zone-dns-ovhcloud).
+Si vos serveurs DNS sont gérés par OVHcloud, veuillez consulter ce [guide](/pages/web/domains/dns_zone_edit#acceder-a-la-gestion-dune-zone-dns-ovhcloud).
 
 Une fois la zone DNS de votre nom de domaine modifiée, un temps de propagation de 24 heures maximum est nécessaire afin que les modifications soient effectives.
 

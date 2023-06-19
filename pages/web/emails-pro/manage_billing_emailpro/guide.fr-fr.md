@@ -1,9 +1,6 @@
 ---
 title: 'Gérer la facturation de vos comptes E-mail Pro'
-slug: gestion-facturation-emailpro
 excerpt: 'Découvrez comment gérer la facturation de votre service E-mail Pro'
-section: 'Premiers pas'
-order: 7
 updated: 2022-02-23
 ---
 

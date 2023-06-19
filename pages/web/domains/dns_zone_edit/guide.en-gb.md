@@ -1,9 +1,6 @@
 ---
 title: 'Editing an OVHcloud DNS zone'
-slug: web_hosting_how_to_edit_my_dns_zone
 excerpt: 'Find out how to edit an OVHcloud DNS zone via the OVHcloud Control Panel'
-section: 'DNS and DNS Zone'
-order: 03
 updated: 2022-07-07
 ---
 
@@ -19,7 +16,7 @@ For example, when you want to access the website *mydomain.ovh*, your request is
 
 Given the changes you will need to make in the OVHcloud Control Panel, it is important to differentiate between **DNS servers** and the **DNS zone**. A **DNS zone** is effectively configured on the **DNS server** on which it is stored.
 
-You can find information about **DNS servers** and how to change them in our guide on [Editing DNS servers for an OVHcloud](../web_hosting_general_information_about_dns_servers/) domain name.
+You can find information about **DNS servers** and how to change them in our guide on [Editing DNS servers for an OVHcloud](/pages/web/domains/dns_server_general_information) domain name.
 
 ![DNS](images/dnsserver.png){.thumbnail}
 
@@ -121,7 +118,7 @@ In other words, the DNAME record indicates that *dname.mydomain.ovh* and *xxx.my
 > The DNAME record is usually used for company name changes. It can also be set up when a user has several domain extensions (.fr, .net, .com, .info, ...) to redirect them easily.
 >
 
-- **NS** (**N**ame **S**erver): Define the DNS servers associated with your DNS zone. For example, if the NS records in your DNS zone display the servers *dns19.ovh.net* and *ns19.ovh.net*, you will need to use them in the `DNS servers`{.action} tab in your OVHcloud Control Pane. Please refer to our guide on [Editing DNS servers for an OVHcloud domain name](../web_hosting_general_information_about_dns_servers/) for more information.
+- **NS** (**N**ame **S**erver): Define the DNS servers associated with your DNS zone. For example, if the NS records in your DNS zone display the servers *dns19.ovh.net* and *ns19.ovh.net*, you will need to use them in the `DNS servers`{.action} tab in your OVHcloud Control Pane. Please refer to our guide on [Editing DNS servers for an OVHcloud domain name](/pages/web/domains/dns_server_general_information) for more information.
 
 > [!warning]
 >
@@ -130,7 +127,7 @@ In other words, the DNAME record indicates that *dname.mydomain.ovh* and *xxx.my
 
 #### Email records
 
-- **MX** (**M**ail e**X**changer): Links a domain name to an email server. For example, the address *10 mx1.mail.ovh.net* corresponds to one of the OVHcloud email servers when you have an OVHcloud email solution. Your email provider may have several email servers: Several MX fields must therefore be created. Please read our guide on [Adding an MX record to your domain name’s configuration](../web_hosting_configuring_mx_with_the_ovh_dns_zone/).
+- **MX** (**M**ail e**X**changer): Links a domain name to an email server. For example, the address *10 mx1.mail.ovh.net* corresponds to one of the OVHcloud email servers when you have an OVHcloud email solution. Your email provider may have several email servers: Several MX fields must therefore be created. Please read our guide on [Adding an MX record to your domain name’s configuration](/pages/web/domains/dns_zone_mx).
 
 > [!warning]
 >
@@ -138,7 +135,7 @@ In other words, the DNAME record indicates that *dname.mydomain.ovh* and *xxx.my
 > If you already have email services from another email provider and you are adding your new email provider’s servers in parallel (without replacing them), you risk randomly receiving your emails from either of your two email providers.
 > 
 
-- **SPF** (**S**ender **P**olicy **F**ramework): Avoids potential identity theft on email addresses using your domain name (spoofing). For example, the record `v=spf1 include:mx.ovh.com ~all` indicates that only outgoing servers linked to your OVHcloud mail service can be considered legitimate by the incoming server. You can enter this record as a TXT record, or via our automatic configuration system. For further information, please refer to our guide on [Adding an SPF record to your domain name’s configuration](../web_hosting_the_spf_record/).
+- **SPF** (**S**ender **P**olicy **F**ramework): Avoids potential identity theft on email addresses using your domain name (spoofing). For example, the record `v=spf1 include:mx.ovh.com ~all` indicates that only outgoing servers linked to your OVHcloud mail service can be considered legitimate by the incoming server. You can enter this record as a TXT record, or via our automatic configuration system. For further information, please refer to our guide on [Adding an SPF record to your domain name’s configuration](/pages/web/domains/dns_zone_spf).
 
 - **DKIM** (**D**omain**K**eys **I**dentified **M**ail): Checks the authenticity of the sender’s domain name, and ensures the integrity of the email sent. The DKIM record is a key that consists of several characters. The DKIM key is provided by your email service provider (if this feature is offered by them). You can enter it as a TXT record.
 
@@ -266,10 +263,10 @@ As a result, and in this specific case, you will not be able to create a CNAME r
 
 ## Go further
 
-[Editing the DNS servers for an OVHcloud domain name](../web_hosting_general_information_about_dns_servers/)
+[Editing the DNS servers for an OVHcloud domain name](/pages/web/domains/dns_server_general_information)
 
-[Adding a SPF record to your domain name’s configuration](../web_hosting_the_spf_record/)
+[Adding a SPF record to your domain name’s configuration](/pages/web/domains/dns_zone_spf)
 
-[Securing your domain name with DNSSEC](../secure_your_domain_with_dnssec/)
+[Securing your domain name with DNSSEC](/pages/web/domains/dns_dnssec)
 
 Join our community of users on <https://community.ovh.com/en/>.

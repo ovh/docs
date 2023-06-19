@@ -1,9 +1,6 @@
 ---
 title: "Modifier le mot de passe d'une adresse e-mail"
-slug: modifier-mot-de-passe-adresse-email
 excerpt: "Découvrez comment modifier le mot de passe d'une adresse e-mail OVHcloud"
-section: 'Premiers pas'
-order: 03
 updated: 2023-01-03
 ---
 
@@ -27,9 +24,9 @@ Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de pas
 >
 > Lorsque vous modifiez le mot de passe de votre adresse e-mail, vous devrez également répercuter ce changement sur tous les appareils où l’adresse e-mail a été configurée. N'hésitez pas à consulter nos guides de configurations pour votre logiciel de messagerie depuis la page d'accueil de votre offre e-mail:
 >
-> - [MXplan](https://docs.ovh.com/fr/emails/)
-> - [E-mail Pro](https://docs.ovh.com/fr/emails-pro/)
-> - [Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/)
+> - [MXplan](/products/web-cloud-email-collaborative-solutions-mx-plan)
+> - [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro)
+> - [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 >
 
 ## En pratique
@@ -115,11 +112,11 @@ Vous trouverez, dans le tableau ci-dessous, les informations nécessaires pour i
 
 ## Aller plus loin
 
-[Premiers pas avec la solution MXplan](https://docs.ovh.com/fr/emails/generalites-sur-les-emails-mutualises/)
+[Premiers pas avec la solution MXplan](/pages/web/emails/email_generalities)
 
-[Premiers pas avec la solution E-mail Pro](https://docs.ovh.com/fr/emails-pro/premiere-configuration/)
+[Premiers pas avec la solution E-mail Pro](/pages/web/emails-pro/first_config)
 
-[Premiers pas avec la solution Hosted Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/premiere-configuration-exchange/)
+[Premiers pas avec la solution Hosted Exchange](/pages/web/microsoft-collaborative-solutions/exchange_starting_hosted)
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 

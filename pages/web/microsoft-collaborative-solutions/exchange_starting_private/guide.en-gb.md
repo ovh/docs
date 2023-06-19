@@ -1,9 +1,6 @@
 ---
 title: 'Getting started with the Private Exchange service'
 excerpt: 'Find out how to configure your Private Exchange platform'
-slug: getting-started-with-private-exchange
-section: 'Getting started with Exchange'
-order: 02
 updated: 2020-04-17
 ---
 
@@ -66,7 +63,7 @@ Once you have confirmed this step, you will receive a message that the configura
 
 If your domain name is not managed on the same customer account, or is not hosted with OVHcloud, you will be sent a second email containing the information required to configure your DNS zone manually.
 
-This email will contain the IPv4 and IPv6 addresses of your Private Exchange server. Enter these IP addresses into the DNS zone for the sub-domain created in [step 2](./#step-2-starting-up-your-platform), as an A record and an AAAA record respectively. For an OVHcloud domain name, please read our guide on [Editing a DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/) to help you.
+This email will contain the IPv4 and IPv6 addresses of your Private Exchange server. Enter these IP addresses into the DNS zone for the sub-domain created in [step 2](./#step-2-starting-up-your-platform), as an A record and an AAAA record respectively. For an OVHcloud domain name, please read our guide on [Editing a DNS zone](/pages/web/domains/dns_zone_edit) to help you.
 
 
 ### Step 4: Validating your SSL certificate
@@ -93,12 +90,12 @@ Once your server is ready and available, you will receive a confirmation email w
 
 > **\[xx-11111-ovh] Your Private Exchange 20_xxx_ service is ready.**
 
-To add the first domain name to your platform and configure the accounts, please refer to our guide on [Adding a domain name to an Exchange service](../adding-domain-exchange/). 
+To add the first domain name to your platform and configure the accounts, please refer to our guide on [Adding a domain name to an Exchange service](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain). 
 
 ## Go further
 
-[Editing a DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/)
+[Editing a DNS zone](/pages/web/domains/dns_zone_edit)
 
-[Adding a domain name to your Exchange service](../adding-domain-exchange/) 
+[Adding a domain name to your Exchange service](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain) 
 
 Join our community of users on <https://community.ovh.com/en/>.

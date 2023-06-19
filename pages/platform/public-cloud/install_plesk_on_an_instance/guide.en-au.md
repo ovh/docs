@@ -1,8 +1,6 @@
 ---
 title: 'Installing Plesk on an instance'
-slug: install-plesk-on-an-instance
 excerpt: 'Find out how to install Plesk on an OVHcloud Public Cloud instance'
-section: Tutorials
 updated: 2018-03-26
 ---
 
@@ -23,8 +21,8 @@ Plesk is an easy-to-use hosting control panel. You can install and use it on OVH
 
 ## Requirements
 
-- [An instance created via the OVHcloud Control Panel](../create_an_instance_in_your_ovh_customer_account/)
-- [Root access to the instance](../become_the_root_user_and_select_a_password/)
+- [An instance created via the OVHcloud Control Panel](/pages/platform/public-cloud/public-cloud-first-steps#step-3-creating-an-instance/)
+- [Root access to the instance](/pages/platform/public-cloud/become_root_and_change_password)
 
 ## Instructions
 

@@ -1,9 +1,6 @@
 ---
 title: Die häufigsten Datenbankfehler beheben
 excerpt: Erfahren Sie hier, wie Sie Fehler in Zusammenhang mit Datenbanken beheben
-slug: datenbanken-fehler-beheben
-section: Diagnose
-order: 04
 updated: 2022-12-09
 ---
 
@@ -15,7 +12,7 @@ updated: 2022-12-09
 
 ## Ziel 
 
-Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler beim Datenbankzugriff werden entweder direkt auf Ihrer Website oder in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) sowie im [phpMyAdmin Interface](https://docs.ovh.com/de/hosting/datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen) angezeigt.
+Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler beim Datenbankzugriff werden entweder direkt auf Ihrer Website oder in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) sowie im [phpMyAdmin Interface](/pages/web/hosting/sql_create_database#auf-das-phpmyadmin-interface-zugreifen) angezeigt.
 
 **Diese Anleitung erklärt, wie Sie Fehler bei der Verwendung von Datenbanken mit OVHcloud Webhostings beheben können.**
 
@@ -50,22 +47,22 @@ Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler b
 
 #### Verbindungsdaten Ihrer Datenbank überprüfen <a name="config_file"></a>
 
-Verbinden Sie sich über [FTP](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) mit dem Hosting-Speicherplatz und bearbeiten Sie die Konfigurationsdatei Ihrer Website (bei einer WordPress-Seite wäre es beispielsweise die Datei **wp-config.php** in dem Verzeichnis Ihrer Website).
+Verbinden Sie sich über [FTP](/pages/web/hosting/ftp_connection) mit dem Hosting-Speicherplatz und bearbeiten Sie die Konfigurationsdatei Ihrer Website (bei einer WordPress-Seite wäre es beispielsweise die Datei **wp-config.php** in dem Verzeichnis Ihrer Website).
 
 > [!warning]
 >
 > Der Name und der Inhalt der für die Datenbankverbindungsinformationen relevanten Datei hängt von dem für die Website verwendeten CMS ab. Dies liegt nicht im Verantwortungsbereich von OVHcloud.
 >
-> Wir empfehlen Ihnen daher, die Ressourcen des [CMS-Anbieters](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/) heranzuziehen oder bei Bedarf einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/) zu kontaktieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
+> Wir empfehlen Ihnen daher, die Ressourcen des [CMS-Anbieters](/pages/web/hosting/cms_install_1_click_modules) heranzuziehen oder bei Bedarf einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/) zu kontaktieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
 
-Stellen Sie anschließend die **exakte** Übereinstimmung zwischen den Zugangsdaten zu [phpMyAdmin](https://docs.ovh.com/de/hosting/datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen) und denen der Konfigurationsdatei Ihrer Website sicher.
+Stellen Sie anschließend die **exakte** Übereinstimmung zwischen den Zugangsdaten zu [phpMyAdmin](/pages/web/hosting/sql_create_database#auf-das-phpmyadmin-interface-zugreifen) und denen der Konfigurationsdatei Ihrer Website sicher.
 
-Ändern Sie bei Bedarf das [Passwort Ihrer Datenbank](https://docs.ovh.com/de/hosting/datenbank-passwort-aendern/).
+Ändern Sie bei Bedarf das [Passwort Ihrer Datenbank](/pages/web/hosting/sql_change_password).
 
 #### Beispiel für WordPress
 
-Wenn Ihre Website einen Fehler des Typs **"Error establishing a database connection"** ausgibt und die zugehörige Infrastruktur nicht von einer [Störung](https://web-cloud.status-ovhcloud.com/) betroffen ist, loggen Sie sich mit [FTP](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) ein und öffnen Sie dann das Verzeichnis in dem sich die Website befindet ("www" im Standardfall).
+Wenn Ihre Website einen Fehler des Typs **"Error establishing a database connection"** ausgibt und die zugehörige Infrastruktur nicht von einer [Störung](https://web-cloud.status-ovhcloud.com/) betroffen ist, loggen Sie sich mit [FTP](/pages/web/hosting/ftp_connection) ein und öffnen Sie dann das Verzeichnis in dem sich die Website befindet ("www" im Standardfall).
 
 Wenn es sich um eine WordPress Website handelt, öffnen Sie die Datei `wp-config.php`.
 
@@ -86,12 +83,12 @@ In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&fr
 
 - **my_database** muss dem `Namen der Datenbank` entsprechen;
 - **my_user** muss dem `Benutzernamen` entsprechen;
-- **my_password** entspricht dem [Passwort Ihrer Datenbank](https://docs.ovh.com/de/hosting/datenbank-passwort-aendern/);
+- **my_password** entspricht dem [Passwort Ihrer Datenbank](/pages/web/hosting/sql_change_password);
 - **my_server.mysql.db** muss dem entsprechen, was unter `Server-Adresse` angegeben ist.
 
 > [!primary]
 >
-> Wenn Sie mit diesen Änderungen den Zugriff auf Ihre Website nicht wiederherstellen können, legen Sie ein [Datenbank-Backup an](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/) und setzen Sie dann in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) die Datenbank [auf einen früheren Zeitpunkt zurück](https://docs.ovh.com/de/hosting/datenbank-importieren/#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren).
+> Wenn Sie mit diesen Änderungen den Zugriff auf Ihre Website nicht wiederherstellen können, legen Sie ein [Datenbank-Backup an](/pages/web/hosting/sql_database_export) und setzen Sie dann in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) die Datenbank [auf einen früheren Zeitpunkt zurück](/pages/web/clouddb/restore-import-on-database-server#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren).
 >
 > Kontaktieren Sie gegebenenfalls einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >
@@ -125,18 +122,18 @@ Wenn Sie ein Webhosting **Performance** verwenden, gehen Sie zu [Methode 2](#met
 
 Sie können Ihre Daten auch auf eine neue Datenbank migrieren:
 
-- Wenn nötig, bestellen Sie einen [Datenbank-Dienst](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) mit höherer Kapazität und [erstellen Sie die neue Datenbank](https://docs.ovh.com/de/hosting/datenbank-erstellen/).
-- Führen Sie einen [Export Ihrer Daten](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/) durch und [importieren Sie diese](https://docs.ovh.com/de/hosting/webhosting_import_einer_mysql-datenbank/) in die neue Datenbank.
+- Wenn nötig, bestellen Sie einen [Datenbank-Dienst](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) mit höherer Kapazität und [erstellen Sie die neue Datenbank](/pages/web/hosting/sql_create_database).
+- Führen Sie einen [Export Ihrer Daten](/pages/web/hosting/sql_database_export) durch und [importieren Sie diese](/pages/web/hosting/sql_importing_mysql_database) in die neue Datenbank.
 - Integrieren Sie die Login-Daten der neuen Datenbank in die [Konfigurationsdatei](#config_file) Ihrer Website.
 
 > [!primary]
 >
-> Wenn Sie über ein **Performance** Hosting-Paket verfügen, können Sie auch [kostenlos einen Web Cloud Databases Server aktivieren](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/#aktivierung-des-in-ihrem-webhosting-angebot-enthaltenen-clouddb-servers).
+> Wenn Sie über ein **Performance** Hosting-Paket verfügen, können Sie auch [kostenlos einen Web Cloud Databases Server aktivieren](/pages/web/clouddb/starting_with_clouddb#aktivierung-des-in-ihrem-webhosting-angebot-enthaltenen-clouddb-servers).
 >
 
 #### Methode 3: Unnötige Daten löschen
 
-Loggen Sie sich nach einer [Sicherung Ihrer Datenbank](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/) über [phpMyAdmin](https://docs.ovh.com/de/hosting/datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen) ein, um unnötige Daten mithilfe der Befehle Drop, Delete und Truncate zu löschen.
+Loggen Sie sich nach einer [Sicherung Ihrer Datenbank](/pages/web/hosting/sql_database_export) über [phpMyAdmin](/pages/web/hosting/sql_create_database#auf-das-phpmyadmin-interface-zugreifen) ein, um unnötige Daten mithilfe der Befehle Drop, Delete und Truncate zu löschen.
 
 Lassen Sie dann die Quota im Tab `Datenbanken`{.action} des betreffenden Hostings neu berechnen: Klicken Sie auf `...`{.action} und dann auf `Das Quota neu berechnen`{.action}.
 
@@ -147,7 +144,7 @@ Lassen Sie dann die Quota im Tab `Datenbanken`{.action} des betreffenden Hosting
 
 #### Methode 4: Ihre Datenbank optimieren
 
-Um Ihre Datenbank zu optimieren, folgen Sie den Anweisungen in unserer Anleitung “[Konfigurieren Ihres Datenbankservers](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#ihre-datenbanken-optimieren)“. Lassen Sie dann die Quota im Tab `Datenbanken`{.action} des betreffenden Hostings neu berechnen: Klicken Sie auf `...`{.action} und dann auf `Das Quota neu berechnen`{.action}.
+Um Ihre Datenbank zu optimieren, folgen Sie den Anweisungen in unserer Anleitung “[Konfigurieren Ihres Datenbankservers](/pages/web/clouddb/configure-database-server#ihre-datenbanken-optimieren)“. Lassen Sie dann die Quota im Tab `Datenbanken`{.action} des betreffenden Hostings neu berechnen: Klicken Sie auf `...`{.action} und dann auf `Das Quota neu berechnen`{.action}.
 
 > [!warning]
 >
@@ -160,7 +157,7 @@ In der unten abgebildeten Nachricht im Bereich `Datenbanken`{.action} in Ihrem [
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
-In diesem Fall können Sie die [RAM-Kapazität](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#wechseln-des-datenbank-angebots) im Bereich `Datenbanken`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erhöhen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf die Schaltfläche `...`{.action} im Bereich `RAM`.
+In diesem Fall können Sie die [RAM-Kapazität](/pages/web/clouddb/configure-database-server#wechseln-des-datenbank-angebots) im Bereich `Datenbanken`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erhöhen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf die Schaltfläche `...`{.action} im Bereich `RAM`.
 
 > [!warning]
 >
@@ -171,7 +168,7 @@ In diesem Fall können Sie die [RAM-Kapazität](https://docs.ovh.com/de/hosting/
 > Klicken Sie im Bereich `Konfiguration` auf den Button `...`{.action} rechts neben `Private Datenbank`. Klicken Sie dann auf `Abtrennen`{.action}.
 >
 
-Sie können Ihre Datenbank auch weiter optimieren, indem Sie die Anweisungen in unserer Anleitung "[Ihren Datenbankserver konfigurieren](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#uberprufung-der-ram-nutzung)" befolgen.
+Sie können Ihre Datenbank auch weiter optimieren, indem Sie die Anweisungen in unserer Anleitung "[Ihren Datenbankserver konfigurieren](/pages/web/clouddb/configure-database-server#uberprufung-der-ram-nutzung)" befolgen.
 
 > [!primary]
 >
@@ -188,9 +185,9 @@ Sie können Ihre Datenbank auch weiter optimieren, indem Sie die Anweisungen in 
 
 Diese Fehlermeldung bedeutet, dass die Datenbank, die Sie zu importieren versuchen, Elemente enthält, die auf der Shared Hosting Infrastruktur von OVHcloud nicht zulässig sind. 
 
-Vergewissern Sie sich zunächst, dass Ihre Datenbank leer ist. Klicken Sie auf `...`{.action} und dann auf `Das Quota neu berechnen`{.action} im Tab `Datenbanken`{.action}. (Falls Sie zunächst die Daten sichern möchten, folgen Sie den Instruktionen zum [Datenbank-Backup](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/).)
+Vergewissern Sie sich zunächst, dass Ihre Datenbank leer ist. Klicken Sie auf `...`{.action} und dann auf `Das Quota neu berechnen`{.action} im Tab `Datenbanken`{.action}. (Falls Sie zunächst die Daten sichern möchten, folgen Sie den Instruktionen zum [Datenbank-Backup](/pages/web/hosting/sql_database_export).)
 
-Sie können beim [Datenbank-Import](https://docs.ovh.com/de/hosting/webhosting_import_einer_mysql-datenbank/#eigene-backup-datei-uber-das-kundencenter-importieren) auch die Option `Datenbank leeren`{.action} anhaken. 
+Sie können beim [Datenbank-Import](/pages/web/hosting/sql_importing_mysql_database#eigene-backup-datei-uber-das-kundencenter-importieren) auch die Option `Datenbank leeren`{.action} anhaken. 
 
 ![database-import](images/database-import-empty.png){.thumbnail}
 
@@ -222,15 +219,15 @@ Ersetzen Sie `Database-Name` mit dem Namen der Datenbank aus Ihrem [OVHcloud Kun
 >
 
 
-Diese Fehlermeldung wird beim [Import einer Datenbank](https://docs.ovh.com/de/hosting/datenbank-importieren/#eine-lokale-sicherung-importieren) auf [Web Cloud Databases](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) angezeigt. Dies hängt meist mit der Menge der zu importierenden Daten oder mit einer mangelnden Optimierung der SQL-Abfragen im Importskript zusammen.
+Diese Fehlermeldung wird beim [Import einer Datenbank](/pages/web/clouddb/restore-import-on-database-server#eine-lokale-sicherung-importieren) auf [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb) angezeigt. Dies hängt meist mit der Menge der zu importierenden Daten oder mit einer mangelnden Optimierung der SQL-Abfragen im Importskript zusammen.
 
 Um dieses Problem zu beheben können Sie Maßnahmen anwenden:
 
-- Erhöhung der [Arbeitsspeicherkapazität (RAM)](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#wechseln-des-datenbank-angebots). Gehen Sie hierzu zum [Web Cloud Databases](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) im Bereich `Datenbanken`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie dann auf die Schaltfläche `...`{.action} im Bereich `RAM` und wählen Sie `RAM-Menge ändern`{.action}.
+- Erhöhung der [Arbeitsspeicherkapazität (RAM)](/pages/web/clouddb/configure-database-server#wechseln-des-datenbank-angebots). Gehen Sie hierzu zum [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb) im Bereich `Datenbanken`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie dann auf die Schaltfläche `...`{.action} im Bereich `RAM` und wählen Sie `RAM-Menge ändern`{.action}.
 
 - Splitten Sie Ihre Datenbank, um sie dann über mehrere Operationen zu importieren. (Für Fragen zu den durchzuführenden Operationen kontaktieren Sie unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.)
 
-- [Optimieren](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#ihre-datenbanken-optimieren) Sie die Datenbank und wiederholen Sie die Export/Import-Operationen.
+- [Optimieren](/pages/web/clouddb/configure-database-server#ihre-datenbanken-optimieren) Sie die Datenbank und wiederholen Sie die Export/Import-Operationen.
 
 ### Kein Zugriff auf phpMyAdmin
 
@@ -240,11 +237,11 @@ Um dieses Problem zu beheben können Sie Maßnahmen anwenden:
 > **"mysqli::real_connect(): (HY000/1045): Access denied for user"**
 >
 
-Diese Fehlermeldung kann bei der Verbindung zu Ihrer Datenbank mit [phpMyAdmin](https://docs.ovh.com/de/hosting/datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen) angezeigt werden. Sie gibt an, dass die eingegebenen Login-Daten falsch sind.
+Diese Fehlermeldung kann bei der Verbindung zu Ihrer Datenbank mit [phpMyAdmin](/pages/web/hosting/sql_create_database#auf-das-phpmyadmin-interface-zugreifen) angezeigt werden. Sie gibt an, dass die eingegebenen Login-Daten falsch sind.
 
 ![access_denied_for_user](images/access_denied_for_user.png){.thumbnail}
 
-Überprüfen Sie in diesem Fall die [Login-Daten](https://docs.ovh.com/de/hosting/datenbank-verbindung-auf-bdd/#in-der-praktischen-anwendung) und ändern Sie bei Bedarf das [Passwort Ihrer Datenbank](https://docs.ovh.com/de/hosting/datenbank-passwort-aendern/).
+Überprüfen Sie in diesem Fall die [Login-Daten](/pages/web/clouddb/connecting-to-database-on-database-server#in-der-praktischen-anwendung) und ändern Sie bei Bedarf das [Passwort Ihrer Datenbank](/pages/web/hosting/sql_change_password).
 
 #### “Too many connections“
 
@@ -254,11 +251,11 @@ Diese Fehlermeldung kann bei der Verbindung zu Ihrer Datenbank mit [phpMyAdmin](
 
 Die maximale Anzahl an aktiven Verbindungen für die mit den Shared Hosting Angeboten gelieferten Datenbanken ([StartSQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/)) beträgt **30**.
 
-Diese Zahl erhöht sich auf **200** für Datenbanken auf [Web Cloud Databases](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/). (Diese Einstellung kann im Bereich `Konfiguration`{.action} Ihres Datenbankdienstes geändert werden).
+Diese Zahl erhöht sich auf **200** für Datenbanken auf [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb). (Diese Einstellung kann im Bereich `Konfiguration`{.action} Ihres Datenbankdienstes geändert werden).
 
-Diese Nachricht erscheint bei der [Verbindung über phpMyAdmin](https://docs.ovh.com/de/hosting/datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen), wenn diese maximale Anzahl an Verbindungen überschritten wird.
+Diese Nachricht erscheint bei der [Verbindung über phpMyAdmin](/pages/web/hosting/sql_create_database#auf-das-phpmyadmin-interface-zugreifen), wenn diese maximale Anzahl an Verbindungen überschritten wird.
 
-In dieser Situation müssen Sie [Ihre Datenbanken optimieren](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#ihre-datenbanken-optimieren), um die Anzahl der aktiven Verbindungen zu reduzieren.
+In dieser Situation müssen Sie [Ihre Datenbanken optimieren](/pages/web/clouddb/configure-database-server#ihre-datenbanken-optimieren), um die Anzahl der aktiven Verbindungen zu reduzieren.
 
 > [!warning]
 >
@@ -271,7 +268,7 @@ In dieser Situation müssen Sie [Ihre Datenbanken optimieren](https://docs.ovh.c
 > **"mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known"**
 >
 
-Diese Fehlermeldung wird bei der [Verbindung über phpMyAdmin](https://docs.ovh.com/de/hosting/datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen) angezeigt, wenn der angegebene Servername nicht korrekt ist.
+Diese Fehlermeldung wird bei der [Verbindung über phpMyAdmin](/pages/web/hosting/sql_create_database#auf-das-phpmyadmin-interface-zugreifen) angezeigt, wenn der angegebene Servername nicht korrekt ist.
 
 ![name_or_service_not_known](images/name_or_service_not_known.png){.thumbnail}
 
@@ -281,12 +278,12 @@ Diese Fehlermeldung wird bei der [Verbindung über phpMyAdmin](https://docs.ovh.
 >
 > Wenn sich die Datenbank, mit der Sie sich verbinden möchten, unter `Web Cloud`{.action} im Tab `Datenbanken`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) befindet, finden Sie den anzugebenen Namen in der Spalte `Server-Adresse`.
 >
-> Wenn Sie sich mit einer Datenbank auf [Web Cloud Databases](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) verbinden möchten, finden Sie den einzugebenden Servernamen im Tab `Allgemeine Informationen`{.action} im Bereich `Verbindungsinformationen`{.action} unter `SQL`{.action}, hier bezeichnet als `Hostname`{.action}.
+> Wenn Sie sich mit einer Datenbank auf [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb) verbinden möchten, finden Sie den einzugebenden Servernamen im Tab `Allgemeine Informationen`{.action} im Bereich `Verbindungsinformationen`{.action} unter `SQL`{.action}, hier bezeichnet als `Hostname`{.action}.
 >
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Erste Schritte mit Web Cloud Databases](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/)
+[Erste Schritte mit Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

@@ -1,9 +1,6 @@
 ---
 title: 'Korzystanie z automatycznych kopii zapasowych na prywatnym serwerze wirtualnym'
-slug: uzywanie-automatyczne-kopie-zapasowe-vps
 excerpt: 'Dowiedz się, jak włączyć opcję "Automatyczne kopie zapasowe" w Panelu klienta OVHcloud i korzystać z niej'
-section: 'Opcje kopii zapasowych'
-order: 2
 updated: 2022-11-15
 ---
 
@@ -228,6 +225,6 @@ Running  QEMU-GA            QEMU Guest Agent
 
 ## Sprawdź również
 
-[Korzystanie z migawek na prywatnym serwerze wirtualnym](../uzywanie-migawki-vps/)
+[Korzystanie z migawek na prywatnym serwerze wirtualnym](/pages/cloud/vps/using-snapshots-on-a-vps)
 
 Dołącz do naszej społeczności użytkowników <https://community.ovh.com/en/>.

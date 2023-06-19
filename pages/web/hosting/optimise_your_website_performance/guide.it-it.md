@@ -1,9 +1,6 @@
 ---
 title: 'Ottimizza le performance del tuo sito'
 excerpt: "Guida all'ottimizzazione delle performance del tuo sito"
-slug: web_hosting_ottimizza_le_performance_del_tuo_sito
-section: Ottimizza il tuo sito
-order: 06
 updated: 2022-02-03
 ---
 
@@ -69,9 +66,9 @@ Utilizzando PHP-FPM cambiano alcune variabili del server:
 |max_input_vars|2000|16000|
 |memory_limit|128M|512M|
 
-Per configurare una nuova versione di PHP, consulta [questa guida](https://docs.ovh.com/it/hosting/configura_php_sul_tuo_hosting_web_condiviso_2014_ovh/){.external}.
+Per configurare una nuova versione di PHP, consulta [questa guida](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014){.external}.
 
-Per passare all’uso di PHP-FPM nella versione _stabile_o per ottenere informazioni sulle opzioni più avanzate del tuo Web hosting, consulta [questa guida](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web/){.external}.
+Per passare all’uso di PHP-FPM nella versione _stabile_o per ottenere informazioni sulle opzioni più avanzate del tuo Web hosting, consulta [questa guida](/pages/web/hosting/ovhconfig_modify_system_runtime){.external}.
 
 Il file _.ovhconfig_ funziona nella root del tuo hosting o nella sottodirectory di livello 1 (es.:_/www/_), ma non nella directory di livello 2 o superiore (es.: _/www/test/_, _/www/test/test2/_)
 
@@ -233,10 +230,10 @@ Se, nonostante tutte le modifiche e le ottimizzazioni effettuate, il database è
 
 ## Per saperne di più 
 
-[Modificare la configurazione di un hosting Web](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web/){.external}
+[Modificare la configurazione di un hosting Web](/pages/web/hosting/ovhconfig_modify_system_runtime){.external}
 
-[Gestisci un database dal tuo hosting condiviso](https://docs.ovh.com/it/hosting/gestisci_un_database_dal_tuo_hosting_condiviso/){.external}
+[Gestisci un database dal tuo hosting condiviso](/pages/web/hosting/sql_create_database){.external}
 
-[Inziare a utilizzare Web Cloud Databases](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/){.external}
+[Inziare a utilizzare Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb){.external}
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: Troubleshooting recurring errors when using FTP software
 excerpt: Find out how to resolve the most common FTP software related issues
-slug: recurring_ftp_problems
-section: FTP and SSH
-order: 04
 updated: 2022-01-05
 ---
 
@@ -32,7 +29,7 @@ Using FTP software when logging in to your [Web Hosting plan](https://www.ovhclo
 
 ![filezilla_error](images/filezilla_error.png){.thumbnail}
 
-This message coming from [FileZilla](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/) indicates that you have not enabled the SFTP or SSH option from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). As a result, the information exchanged between your OVHcloud hosting server and your computer will not be encrypted.
+This message coming from [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide) indicates that you have not enabled the SFTP or SSH option from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). As a result, the information exchanged between your OVHcloud hosting server and your computer will not be encrypted.
 
 If the data you want to exchange via this link is not confidential, click `OK`{.action}.
 
@@ -46,18 +43,18 @@ Choose `SFTP`{.action} or `Enabled`{.action} (to enable SSH on your hosting), cl
 
 > [!primary]
 >
-> For any other error messages, see the `Troubleshooting` section of our [Web Hosting guides](../).
+> For any other error messages, see the `Troubleshooting` section of our [Web Hosting guides](/products/web-cloud-hosting).
 >
 
 ### I transferred my files with FTP software, but my website does not appear.
 
-First of all, check that your website’s files and folders are in the [root folder](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/#3-upload-the-files-to-the-storage-space) of your Web Hosting plan.
+First of all, check that your website’s files and folders are in the [root folder](/pages/web/hosting/hosting_how_to_get_my_website_online#3-upload-the-files-to-the-storage-space) of your Web Hosting plan.
 
-If you have modified your [DNS servers or DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns) less than 48 hours ago, please wait and restart your devices regularly in order to clear their cache.
+If you have modified your [DNS servers or DNS zone](/pages/web/domains/dns_zone_edit#understanding-dns) less than 48 hours ago, please wait and restart your devices regularly in order to clear their cache.
 
 ### My FTP credentials are not working.
 
-If you are unable to log in, change your FTP password as described in this [guide](https://docs.ovh.com/gb/en/hosting/modify-ftp-user-password/).
+If you are unable to log in, change your FTP password as described in this [guide](/pages/web/hosting/ftp_change_password).
 
 ### I encounter random errors on my website.
 
@@ -73,11 +70,11 @@ The amount of data storage used on your Web Hosting server (excluding databases)
 
 Check that your FTP software is connected in "Passive mode" (Configuration mode of an FTP server in which the server determines the connection port).
 
-For example, for [Filezilla](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/), click on `Edit`{.action}, then on `Settings`{.action} and open the `Connection`{.action} settings. Click on `FTP`{.action} and then choose `Passive (recommended)`{.action}.
+For example, for [Filezilla](/pages/web/hosting/ftp_filezilla_user_guide), click on `Edit`{.action}, then on `Settings`{.action} and open the `Connection`{.action} settings. Click on `FTP`{.action} and then choose `Passive (recommended)`{.action}.
 
 Also limit the size of your data transfers (you cannot send more than **5000 files and folders** on OVHcloud shared servers on a single transfer). Split your imports if necessary and use compressed folders.
 
-If you have a [Pro](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/) or [Performance](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/) Web Hosting plan, use the [SSH protocol](https://docs.ovh.com/gb/en/hosting/web_hosting_ssh_on_web_hosting_packages/) to import files on to your file storage space.
+If you have a [Pro](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/) or [Performance](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/) Web Hosting plan, use the [SSH protocol](/pages/web/hosting/ssh_on_webhosting) to import files on to your file storage space.
 
 ### I can't delete the symbolic link "index.html" on my FTP space.
 
@@ -85,11 +82,11 @@ This link is installed by default on OVHcloud Web Hosting plans. It displays thi
 
 ![site_under_construction](images/site_under_construction.png){.thumbnail}
 
-If you did not use the "[1-click module](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules/)" feature to create your website, you will need to use the [Net2FTP](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/#1-log-in-via-ftp-explorer) software accessible via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) in order to manually delete the "Website under construction" page.
+If you did not use the "[1-click module](/pages/web/hosting/cms_install_1_click_modules)" feature to create your website, you will need to use the [Net2FTP](/pages/web/hosting/ftp_connection#1-log-in-via-ftp-explorer) software accessible via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) in order to manually delete the "Website under construction" page.
 
 ## Go further <a name="gofurther"></a>
 
-[Using FileZilla software with your hosting](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/)
+[Using FileZilla software with your hosting](/pages/web/hosting/ftp_filezilla_user_guide)
 
 For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 

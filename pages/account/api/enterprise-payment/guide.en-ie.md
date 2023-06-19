@@ -1,8 +1,6 @@
 ---
 title: 'Manage payment and billing of OVHcloud services'
-slug: ovh-enterprise-payment
 excerpt: 'Discover how to add a payment mean, automate accounting and manage your corporate billing'
-section: 'APIv6'
 updated: 2020-01-02
 ---
 
@@ -15,9 +13,9 @@ We will describe part of your payment and billing cycle at OVHcloud.
 ## Requirements
 
 * Being connected on [OVHcloud API](https://api.ovh.com/){.external}.
-* Having [created your credentials for OVHcloud API](https://docs.ovh.com/ie/en/api/first-steps-with-ovh-api/){.external}.
+* Having [created your credentials for OVHcloud API](/pages/account/api/first-steps){.external}.
 * Having a customer account wih Reseller Tag (contact your sales representative for eligibility if applicable).
-* Having [created subaccounts for the OVHcloud API if necessary](https://docs.ovh.com/ie/en/api/ovh-api-sub-account/){.external}.
+* Having [created subaccounts for the OVHcloud API if necessary](/pages/account/api/account){.external}.
 * Having at least the Business or Enterprise Support level.
 
 ## Instructions

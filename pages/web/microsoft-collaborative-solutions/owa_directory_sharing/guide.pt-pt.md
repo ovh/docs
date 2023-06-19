@@ -1,9 +1,6 @@
 ---
 title: 'Partilhar uma pasta através do webmail OWA'
 excerpt: 'Saiba como partilhar pastas entre contas Exchange'
-slug: exchange_2016_partilhar_uma_pasta_atraves_do_webmail_owa
-section: 'Utilização do Outlook Web Application (OWA)'
-order: 04
 updated: 2020-04-07
 ---
 

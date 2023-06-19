@@ -1,8 +1,6 @@
 ---
 title: 'Créer des numéros abrégés'
-slug: gerer-numeros-abreges-ligne-sip
 excerpt: 'Apprenez à créer des numéros abrégés pour vos lignes SIP OVHcloud'
-section: 'Lignes téléphoniques'
 updated: 2022-05-18
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Réplication asynchrone ou NearSync au travers de Prism Element
-slug: prism-element-nutanix-replication
 excerpt: "Comment mettre en place la réplication asynchrone ou NearSync au travers de Prism Element"
-section: "Plan de Reprise d'Activité"
-order: 04
 updated: 2022-06-29
 ---
 
@@ -47,9 +44,9 @@ Nous allons utiliser deux clusters Nutanix se trouvant dans les datacenters OVHc
 - **192.168.0.0/24** pour le cluster se trouvant dans un datacenter en France.
 - **192.168.10.0/24** pour le cluster se trouvant dans un datacenter au Canada.
 
-Si vous souhaitez de l'aide concernant la mise en place d'un VPN IPsec, consulter notre guide sur l'[interconnexion de deux clusters Nutanix au travers d'un VPN IPsec](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/).
+Si vous souhaitez de l'aide concernant la mise en place d'un VPN IPsec, consulter notre guide sur l'[interconnexion de deux clusters Nutanix au travers d'un VPN IPsec](/pages/cloud/nutanix/44-ipsec-interconnection).
 
-Connectez-vous via **Prism Element** au cluster en France à partir de **Prism Central**, comme indiqué dans cette documentation : [Hyper-convergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/).
+Connectez-vous via **Prism Element** au cluster en France à partir de **Prism Central**, comme indiqué dans cette documentation : [Hyper-convergence Nutanix](/pages/cloud/nutanix/03-nutanix-hci).
 
 Cliquez sur `Data Protection`{.action} depuis le menu `Home`{.action}.
 
@@ -241,9 +238,9 @@ Les machines virtuelles apparaîtront dans la console de **Prism Element** dans 
 
 ## Aller plus loin
 
-[Plan de reprise d'activité sur Nutanix](https://docs.ovh.com/fr/nutanix/disaster-recovery-plan-overview/)
+[Plan de reprise d'activité sur Nutanix](/pages/cloud/nutanix/43-disaster-recovery-plan-overview)
 
-[Connexion IPsec](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/)
+[Connexion IPsec](/pages/cloud/nutanix/44-ipsec-interconnection)
 
 [Documentation Nutanix sur Data Protection and Disaster Recovery](https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2005-Data-Protection:top-backup-and-disaster-recovery-on-remote-sites.html)
 

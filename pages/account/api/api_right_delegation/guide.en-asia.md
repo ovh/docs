@@ -1,8 +1,6 @@
 ---
 title: 'How to manage a customer’s account via OVHcloud API'
-slug: api-rights-delegation
 excerpt: 'Find out how to create an application and manage services for your customers'
-section: APIv6
 updated: 2020-02-08
 ---
 

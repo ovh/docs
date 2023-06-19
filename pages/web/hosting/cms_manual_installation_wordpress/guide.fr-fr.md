@@ -1,9 +1,6 @@
 ---
 title: "Tutoriel - Installer manuellement WordPress"
-slug: installer-manuellement-wordpress
 excerpt: "Découvrez comment installer manuellement votre CMS WordPress"
-section: CMS
-order: 04
 updated: 2023-03-09
 ---
 
@@ -22,9 +19,9 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement le CMS (Cont
 
 > [!success]
 >
-> Pour installer WordPress **automatiquement** depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), consultez notre documentation sur l'[installation d'un module « en un clic »](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
+> Pour installer WordPress **automatiquement** depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), consultez notre documentation sur l'[installation d'un module « en un clic »](/pages/web/hosting/cms_install_1_click_modules).
 >
-> Pour installer **manuellement un autre CMS** (Joomla!, Drupal, PrestaShop), consultez notre documentation sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
+> Pour installer **manuellement un autre CMS** (Joomla!, Drupal, PrestaShop), consultez notre documentation sur l'[installation manuelle d'un CMS](/pages/web/hosting/cms_manual_installation).
 >
 
 **Découvrez comment installer manuellement votre CMS WordPress**
@@ -41,7 +38,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement le CMS (Cont
 
 Pour installer le CMS **WordPress** sur votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), quelques préparatifs sont nécessaires.
 
-Suivez l'**ensemble des étapes** décrites dans notre tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) avant de poursuivre à l'étape 2 ci-dessous.
+Suivez l'**ensemble des étapes** décrites dans notre tutoriel sur l'[installation manuelle d'un CMS](/pages/web/hosting/cms_manual_installation) avant de poursuivre à l'étape 2 ci-dessous.
 
 ### Etape 2 - finaliser l'installation manuelle <a name="step2"></a>
 
@@ -66,7 +63,7 @@ WordPress va vous demander de récupérer les identifiants de connexion à votre
 
 ![hosting](images/WPstart.png){.thumbnail}
 
-Munissez-vous des identifiants de votre base de données (au besoin, consultez **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/)) puis cliquez sur `C'est parti !`{.action} pour continuer.
+Munissez-vous des identifiants de votre base de données (au besoin, consultez **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](/pages/web/hosting/cms_manual_installation)) puis cliquez sur `C'est parti !`{.action} pour continuer.
 
 La page suivante apparaît :
 
@@ -77,7 +74,7 @@ Renseignez les informations demandées concernant la base de données :
 - *Nom de la base de données* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 - *Identifiant* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
-Pour les bases de données créées sur un Web Cloud Databases, référez-vous aux informations indiquées dans **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
+Pour les bases de données créées sur un Web Cloud Databases, référez-vous aux informations indiquées dans **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](/pages/web/hosting/cms_manual_installation).
 
 - *Mot de passe* : vous l'avez vous-même défini lors de la création de votre base de données. Il est possible que vous l'ayiez modifié entre temps.
 
@@ -90,7 +87,7 @@ Pour les bases de données créées sur un Web Cloud Databases, référez-vous a
 > - Le nom du serveur d'une base de données Web Cloud Databases commence par votre identifiant client OVHcloud et a la forme suivante : `OVHID(sans-ovh)-XXX.eu.clouddb.ovh.net` où les **« X »** sont à remplacer par la référence de votre service Web Cloud Databases.
 >
 
-- *Préfixe des tables* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
+- *Préfixe des tables* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](/pages/web/hosting/cms_manual_installation) pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
 
 Cliquez sur `Soumettre`{.action} pour valider les informations de connexion à la base de données.
 

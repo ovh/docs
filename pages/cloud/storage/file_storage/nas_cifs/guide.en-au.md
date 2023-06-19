@@ -1,9 +1,6 @@
 ---
 title: Mount your HA-NAS on Windows Server via CIFS
-slug: nas/cifs
 excerpt: This guide shows you how to mount your HA-NAS on Windows Server via CIFS.
-section: HA-NAS
-order: 04
 updated: 2021-11-22
 ---
 
@@ -46,7 +43,7 @@ net use z: \\10.16.101.8\zpool-000206_PARTITION_NAME_1
 
 ## Go further
 
-[NAS - Frequently Asked Questions](https://docs.ovh.com/au/en/storage/file-storage/nas/faq/)
+[NAS - Frequently Asked Questions](/pages/cloud/storage/file_storage/nas_faq)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

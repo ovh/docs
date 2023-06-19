@@ -1,8 +1,6 @@
 ---
 title: Configurar uma nova instalação do Windows Server
-slug: windows-first-config
 excerpt: Saiba como ativar a ligação à Área de Trabalho remota e a resposta ICMP
-section: Introdução
 updated: 2023-02-14
 ---
 
@@ -27,7 +25,7 @@ Após uma nova instalação de um sistema operativo Windows Server num servidor 
 
 ### Etapa 1: acesso ao KVM
 
-Para aceder à consola KVM, consulte o [guia KVM](https://docs.ovh.com/pt/dedicated/usar-ipmi-servidores-dedicados/#utilizar-o-kvm-atraves-do-seu-browser-apenas-para-os-servidores-mais-recentes).
+Para aceder à consola KVM, consulte o [guia KVM](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers#utilizar-o-kvm-atraves-do-seu-browser-apenas-para-os-servidores-mais-recentes).
 
 ### Etapa 2: terminar a instalação do Windows
 
@@ -62,14 +60,14 @@ Pode ativar aqui as regras "ICMP" e "Remote Desktop" (ambiente de trabalho remot
 O seu servidor deverá responder aos pedidos que utilizam estes protocolos.
 
 > [!primary]
-> Para proteger o seu sistema Windows com regras de firewall, consulte o nosso manual "[Configurar firewall em Windows](https://docs.ovh.com/pt/dedicated/firewall-windows/)".
+> Para proteger o seu sistema Windows com regras de firewall, consulte o nosso manual "[Configurar firewall em Windows](/pages/cloud/dedicated/activate-port-firewall-soft-win)".
 >
 
 ## Ativação dos logs de arranque (boot logs) Windows (facultativo)
 
 A ativação dos logs de arranque (*boot logs*) Windows pode ser útil para os diagnósticos de erros do servidor.
 
-Ligue-se ao seu servidor através de uma sessão "Remote Desktop" (ambiente de trabalho remoto) ou [KVM](https://docs.ovh.com/pt/dedicated/usar-ipmi-servidores-dedicados/#utilizar-o-kvm-atraves-do-seu-browser-apenas-para-os-servidores-mais-recentes). Abra o menu Iniciar o Windows e clique em `Executar`{.action}.
+Ligue-se ao seu servidor através de uma sessão "Remote Desktop" (ambiente de trabalho remoto) ou [KVM](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers#utilizar-o-kvm-atraves-do-seu-browser-apenas-para-os-servidores-mais-recentes). Abra o menu Iniciar o Windows e clique em `Executar`{.action}.
 
 ![Bootlog](images/windowsboot1.png){.thumbnail}
 
@@ -83,11 +81,11 @@ Na nova janela, selecione a caixa junto de `Boot log`. Clique em `OK`{.action}.
 
 Quando iniciar o seu servidor, os logs serão registados num ficheiro .txt. O caminho do ficheiro é `C:\Windows\ntbtlog.txt`.
 
-Para aceder ao conteúdo deste ficheiro em modo de rescue, queira seguir as instruções descritas [no guia do modo de rescue](https://docs.ovh.com/pt/dedicated/rescue_mode/).
+Para aceder ao conteúdo deste ficheiro em modo de rescue, queira seguir as instruções descritas [no guia do modo de rescue](/pages/cloud/dedicated/rescue_mode).
 
 ## Quer saber mais?
 
-[Configurar firewall em Windows](https://docs.ovh.com/pt/dedicated/firewall-windows/)
+[Configurar firewall em Windows](/pages/cloud/dedicated/activate-port-firewall-soft-win)
 
 Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 

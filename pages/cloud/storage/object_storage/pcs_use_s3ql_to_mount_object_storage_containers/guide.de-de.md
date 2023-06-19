@@ -1,8 +1,5 @@
 ---
 title: Object Storage Swift - Einen Object Container mit S3QL mounten
-slug: pcs/use-s3ql-to-mount-object-storage-containers
-section: OpenStack Swift Storage Class Specifics
-order: 160
 updated: 2021-10-27
 ---
 
@@ -21,7 +18,7 @@ In dieser Hilfe erfahren Sie, wie Sie einen Object Container als dateisystem mou
 
 ## Voraussetzungen
 
-- [Einen OpenStack User erstellen oder löschen](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/)
+- [Einen OpenStack User erstellen oder löschen](/pages/platform/public-cloud/create_and_delete_a_user)
 - [Hinzufügen von Storage-Bereichen](https://docs.ovh.com/de/public-cloud/hinzufugen_von_storage-bereichen/)
 
 ## In der praktischen Anwendung
@@ -47,7 +44,7 @@ fs-passphrase: PASSPHRASE
 ```
 
 Die Informationen wie TENANT_NAME und USERNAME finden Sie in Ihrer OpenRC-Datei.
-Mehr dazu erfahren Sie in dieser Hilfe: [Zugriffs- und Sicherheitseinstellungen in Horizon](https://docs.ovh.com/de/public-cloud/access_and_security_in_horizon/)
+Mehr dazu erfahren Sie in dieser Hilfe: [Zugriffs- und Sicherheitseinstellungen in Horizon](/pages/platform/public-cloud/access_and_security_in_horizon)
 
 Die Argumente REGION_NAME und CT_NAME müssen entsprechend dem Namen und Standort Ihres Object Containers angepasst werden.
 

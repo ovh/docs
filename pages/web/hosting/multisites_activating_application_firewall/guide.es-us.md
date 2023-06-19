@@ -1,9 +1,6 @@
 ---
 title: Activación del firewall de aplicación
-slug: web_hosting_activating_an_application_firewall
 excerpt: Cómo activar el firewall de aplicación en un plan de hosting.
-section: Configuración del alojamiento
-order: 04
 updated: 2021-04-26
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Einen dedizierten Server absichern
-slug: dedizierten-server-sichern
 excerpt: Erfahren Sie hier die Grundlagen zur Sicherheit Ihres Dedicated Server
-section: "Erste Schritte"
-order: 2
 updated: 2023-02-24
 ---
 
@@ -36,7 +33,7 @@ Wenn Sie Ihren Dedicated Server bestellen, können Sie eine Distribution oder ei
 >
 > Beachten Sie, dass dies eine allgemeine Anleitung ist, basierend auf einer Ubuntu Server Distribution. Einige Befehle müssen an die von Ihnen verwendete Distribution oder das Betriebssystem angepasst werden. Wir empfehlen Ihnen gelegentlich, externe Tools zu verwenden. Wenn Sie Hilfe benötigen, lesen Sie die offizielle Dokumentation dieser Anwendungen.
 >
-> Wenn Sie Ihren ersten OVHcloud Server konfigurieren, empfehlen wir, zum Einstieg unsere Anleitung zur [Ersteinrichtung eines Dedicated Server](https://docs.ovh.com/de/dedicated/erste-schritte-dedicated-server/) zu verwenden.
+> Wenn Sie Ihren ersten OVHcloud Server konfigurieren, empfehlen wir, zum Einstieg unsere Anleitung zur [Ersteinrichtung eines Dedicated Server](/pages/cloud/dedicated/getting-started-with-dedicated-server) zu verwenden.
 >
 
 Die folgenden Beispiele setzen voraus, dass Sie als Benutzer mit erhöhten Berechtigungen eingeloggt sind.
@@ -104,7 +101,7 @@ username@IPv4_des_servers -p PortNummer
 
 ### Passwort des Root-Benutzers ändern
 
-Es wird dringend empfohlen, das Passwort des Root-Benutzers abzuändern, damit es auf einem neuen System nicht im Defaultzustand verbleibt. Weitere Informationen finden Sie in [dieser Anleitung](https://docs.ovh.com/de/dedicated/root-passwort-aendern-linux-dedicated-server/).
+Es wird dringend empfohlen, das Passwort des Root-Benutzers abzuändern, damit es auf einem neuen System nicht im Defaultzustand verbleibt. Weitere Informationen finden Sie in [dieser Anleitung](/pages/cloud/dedicated/changing_root_password_linux_ds).
 
 ### Anlegen eines Benutzers mit eingeschränkten Rechten
 
@@ -165,7 +162,7 @@ GNU/Linux Distributionen werden mit einem Firewall-Dienst bereitgestellt, der al
 iptables -L
 ```
 
-Weitere Informationen zu Iptables finden Sie in unserer [Anleitung](https://docs.ovh.com/de/dedicated/firewall-iptables/).
+Weitere Informationen zu Iptables finden Sie in unserer [Anleitung](/pages/cloud/dedicated/firewall-Linux-iptable).
 
 Wir empfehlen Ihnen, Regeln für diese Firewall zu erstellen und an Ihre Nutzung anzupassen. Weitere Informationen zu den möglichen Einstellungen finden Sie in der offiziellen Dokumentation der verwendeten Distribution.
 
@@ -245,7 +242,7 @@ Weitere Informationen und Empfehlungen zu Fail2ban finden Sie in der [offizielle
 
 Bei OVHcloud Diensten besteht die Möglichkeit, am Eingangspunkt der Infrastruktur die so genannte Network Firewall zu aktivieren. Eine korrekte Konfiguration dieser Firewall ermöglicht es, Verbindungen zu blockieren, bevor diese überhaupt auf Ihrem Server ankommen.
 
-Wenn Sie die OVHcloud Network Firewall aktivieren möchten, folgen Sie [dieser Anleitung](https://docs.ovh.com/de/dedicated/firewall-network/).
+Wenn Sie die OVHcloud Network Firewall aktivieren möchten, folgen Sie [dieser Anleitung](/pages/cloud/dedicated/firewall_network).
 
 ### Ihr System und Ihre Daten sichern
 
@@ -258,14 +255,14 @@ Das Konzept der Sicherheit ist nicht auf den Schutz eines Systems vor Angriffen 
 
 Außerdem benötigen Sie eine zusätzliche Backup-Lösung, um Ihre Daten zu replizieren und auf Ihren Backup-Speicher zu übertragen.
 
-Für weitere Informationen zu unseren Storage-Angeboten lesen Sie [unsere Anleitung](https://docs.ovh.com/de/dedicated/dienste-storage-backup/) zum Thema.
+Für weitere Informationen zu unseren Storage-Angeboten lesen Sie [unsere Anleitung](/pages/cloud/dedicated/services_backup_storage) zum Thema.
 
 
 ## Weiterführende Informationen
 
-[Firewall auf einem Windows Server konfigurieren](https://docs.ovh.com/de/dedicated/firewall-windows/)
+[Firewall auf einem Windows Server konfigurieren](/pages/cloud/dedicated/activate-port-firewall-soft-win)
 
-[Network Firewall](https://docs.ovh.com/de/dedicated/firewall-network/)
+[Network Firewall](/pages/cloud/dedicated/firewall_network)
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 

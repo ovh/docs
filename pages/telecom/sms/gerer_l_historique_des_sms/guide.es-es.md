@@ -1,11 +1,9 @@
 ---
 title: 'Historial de envíos'
-slug: historial-de-envios
 excerpt: 'Cómo gestionar el historial de envíos de sus SMS desde una cuenta de OVHcloud'
 legacy_guide_number: '8650753'
 space_key: CRSMSFAX
 space_name: SMS
-section: 'Gestionar el servicio'
 updated: 2022-08-05
 ---
 
@@ -85,7 +83,7 @@ Detalles de la información incluida en el historial:
 |  tag |  Etiqueta que se atribuye manualmente a través de las API (a uno o varios SMS) o automáticamente a través de nuestros servidores a cada uno de los SMS (o a cada campaña de SMS) enviados |
 |  message |  Contenido del SMS |
 
-Para más información sobre los códigos ptt y los diferentes ID del DLR, consulte la última sección de la guía [Usuarios de la API](https://docs.ovh.com/es/sms/usuarios-de-sms/#5-especificar-una-url-de-callback).
+Para más información sobre los códigos ptt y los diferentes ID del DLR, consulte la última sección de la guía [Usuarios de la API](/pages/telecom/sms/tout_savoir_sur_les_utilisateurs_sms#5-especificar-una-url-de-callback).
  
 ## Más información
 

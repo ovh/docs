@@ -1,9 +1,6 @@
 ---
 title: Cosa fare in caso di pagina "403 forbidden"?
 excerpt: Questa guida ti mostra come caricare il tuo sito online su una pagina "403 forbidden"
-slug: diagnostic-403-forbidden
-section: Diagnostica
-order: 08
 updated: 2023-06-09
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: 'Instalacja kilku stron WWW na jednym hostingu'
-slug: konfiguracja-multisite-na-hostingu
 excerpt: 'Dowiedz się, jak zainstalować kilka stron WWW na hostingu'
-section: 'Pierwsze kroki'
-order: 03
 updated: 2023-06-08
 ---
 
@@ -23,7 +20,7 @@ Na jednym hostingu możesz zainstalować kilka stron WWW, nawet jeśli domeny ni
 
 - Posiadanie kompatybilnego [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
 - Zarejestrowana domena lub kilka [domen](https://www.ovhcloud.com/pl/domains/){.external}.
-- Możliwość modyfikacji konfiguracji Twoich domen ([strefy DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#zrozumienie-pojecia-dns))
+- Możliwość modyfikacji konfiguracji Twoich domen ([strefy DNS](/pages/web/domains/dns_zone_edit#zrozumienie-pojecia-dns))
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
@@ -49,7 +46,7 @@ Aby dodać nową domenę lub subdomenę do Twojego hostingu, kliknij przycisk `O
 
 - **Dodaj domenę zarejestrowaną w OVHcloud**:
 
-W tym miejscu wyświetlają się jedynie domeny OVHcloud, dla których jesteś [kontaktem technicznym i/lub administratorem w Panelu klienta](../../customer/zarzadzanie_kontaktami/). Wybierz jedną domenę z listy i kliknij `Dalej`{.action}. Przejdź następnie do [etapu 2.1: dodanie domeny zarejestrowanej w OVHcloud](#add-ovhcloud-domain).
+W tym miejscu wyświetlają się jedynie domeny OVHcloud, dla których jesteś [kontaktem technicznym i/lub administratorem w Panelu klienta](/pages/account/customer/managing_contacts). Wybierz jedną domenę z listy i kliknij `Dalej`{.action}. Przejdź następnie do [etapu 2.1: dodanie domeny zarejestrowanej w OVHcloud](#add-ovhcloud-domain).
 
 - **Dodaj domenę zewnętrzną**:
 
@@ -91,7 +88,7 @@ Po uzupełnieniu informacji, kliknij przycisk `Dalej`{.action}{.action}. Następ
 Po wybraniu domeny zarejestrowanej w OVHcloud możesz automatycznie lub ręcznie zmienić jej konfigurację DNS:
 
 - **w przypadku automatycznej konfiguracji DNS**: zaznacz kratkę `Konfiguracja automatyczna (zalecana)`{.action};
-- **w przypadku ręcznej konfiguracji DNS**: usuń zaznaczenie w kratce `Konfiguracja automatyczna (zalecana)`{.action}, następnie pobierz informacje odnośnie zmian, które się wyświetlają. Jeśli chcesz przeprowadzić tę konfigurację, skorzystaj z dokumentacji ["Modyfikacja strefy DNS OVHcloud"](../../domains/hosting_www_jak_edytowac_strefe_dns/){.external}.
+- **w przypadku ręcznej konfiguracji DNS**: usuń zaznaczenie w kratce `Konfiguracja automatyczna (zalecana)`{.action}, następnie pobierz informacje odnośnie zmian, które się wyświetlają. Jeśli chcesz przeprowadzić tę konfigurację, skorzystaj z dokumentacji ["Modyfikacja strefy DNS OVHcloud"](/pages/web/domains/dns_zone_edit){.external}.
 
 Kliknij przycisk `Zatwierdź`{.action}, aby rozpocząć dodawanie domeny. Może do potrwać do godziny. Efekty modyfikacji domeny staną się widoczne po upływie 4-24 godzin ze względu na niezbędny czas propagacji.
 
@@ -105,13 +102,13 @@ Po dodaniu domeny przejdź do [etapu 3: umieszczenie strony WWW online](#site-on
 
  > Przed dodaniem strony podpiętej w opcji MultiSite lepiej jest zmodyfikować strefę DNS domeny zewnętrznej.
  >
- > Modyfikacja konfiguracji domeny zewnętrznej (jej strefy DNS) powinna zostać przeprowadzona w interfejsie dostawcy zarządzającego domeną. Jeśli chodzi o OVHcloud, skorzystaj z naszej dokumentacji ["Modyfikacja strefy DNS OVHcloud"](../../domains/hosting_www_jak_edytowac_strefe_dns/){.external}. Efekty modyfikacji domeny staną się widoczne po upływie 1-24 godzin ze względu na niezbędny czas propagacji.
+ > Modyfikacja konfiguracji domeny zewnętrznej (jej strefy DNS) powinna zostać przeprowadzona w interfejsie dostawcy zarządzającego domeną. Jeśli chodzi o OVHcloud, skorzystaj z naszej dokumentacji ["Modyfikacja strefy DNS OVHcloud"](/pages/web/domains/dns_zone_edit){.external}. Efekty modyfikacji domeny staną się widoczne po upływie 1-24 godzin ze względu na niezbędny czas propagacji.
 >
 > Poniżej znajdziesz 2 elementów do zmiany konfiguracji DNS Twojej zewnętrznej domeny:
 >
 > |Pole|Gdzie znaleźć informację?|Działania|
 > |---|---|---|
-> |TXT|Zakładka `MultiSite`{.action}, następnie kliknij `Konfiguracja tokena ovhcontrol`{.action}|Pozwala OVHcloud upewnić się, że dodanie każdej domeny zewnętrznej jest uprawnione. Utwórz pole TXT z subdomeną ovhcontrol (na przykład ovhcontrol.mydomain.ovh) w strefie DNS, która ma uprawnienia do dodawania domeny.<br></br>Pamiętaj, że jeśli chcesz dodać `blog.mydomain.ovh`, powinieneś utworzyć rekord dla subdomeny `ovhcontrol.mydomain.ovh` i nie `ovhcontrol.blog.mydomain.ovh`.<br></br>Aby odnaleźć domenę, znajdziesz [serwery DNS](../../domains/hosting_www_informacje_na_temat_serwerow_dns/#zrozumienie-pojecia-dns), z którymi powiązana jest Twoja domena. Zatwierdź tylko domenę główną, nie wszystkie subdomeny.|
+> |TXT|Zakładka `MultiSite`{.action}, następnie kliknij `Konfiguracja tokena ovhcontrol`{.action}|Pozwala OVHcloud upewnić się, że dodanie każdej domeny zewnętrznej jest uprawnione. Utwórz pole TXT z subdomeną ovhcontrol (na przykład ovhcontrol.mydomain.ovh) w strefie DNS, która ma uprawnienia do dodawania domeny.<br></br>Pamiętaj, że jeśli chcesz dodać `blog.mydomain.ovh`, powinieneś utworzyć rekord dla subdomeny `ovhcontrol.mydomain.ovh` i nie `ovhcontrol.blog.mydomain.ovh`.<br></br>Aby odnaleźć domenę, znajdziesz [serwery DNS](/pages/web/domains/dns_server_general_information#zrozumienie-pojecia-dns), z którymi powiązana jest Twoja domena. Zatwierdź tylko domenę główną, nie wszystkie subdomeny.|
 >
 > ![MultiSite](images/add-multisite-external-step3.png){.thumbnail}
 >
@@ -151,9 +148,9 @@ Zanotuj elementy, które się wyświetlą, następnie kliknij przycisk `Zatwierd
 
 Po dodaniu domeny wystarczy umieścić w Internecie powiązaną z nią stronę WWW. Przeprowadź tę operację w katalogu głównym, który zdefiniowałeś na poprzednim etapie.
 
-Aby wesprzeć Cię w tym procesie, możesz skorzystać z gotowej do użycia struktury strony WWW, która jest dostępna za 1 kliknięciem od OVHcloud. Strona zostanie wówczas automatycznie zainstalowana w uprzednio skonfigurowanym katalogu głównym. O modułach dowiesz się więcej z przewodnika [„Automatyczna instalacja strony WWW za pomocą modułu CMS”](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/){.external}. 
+Aby wesprzeć Cię w tym procesie, możesz skorzystać z gotowej do użycia struktury strony WWW, która jest dostępna za 1 kliknięciem od OVHcloud. Strona zostanie wówczas automatycznie zainstalowana w uprzednio skonfigurowanym katalogu głównym. O modułach dowiesz się więcej z przewodnika [„Automatyczna instalacja strony WWW za pomocą modułu CMS”](/pages/web/hosting/cms_install_1_click_modules){.external}. 
 
-Jeśli chcesz zainstalować ręcznie Twoją stronę WWW, przygotuj pliki, a następnie umieść je online w odpowiednim katalogu głównym na przestrzeni dyskowej. Dowiesz się więcej z przewodnika [„Automatyczna instalacja strony WWW za pomocą modułu CMS”](../hosting_www_umieszczenie_strony_w_internecie/){.external}.
+Jeśli chcesz zainstalować ręcznie Twoją stronę WWW, przygotuj pliki, a następnie umieść je online w odpowiednim katalogu głównym na przestrzeni dyskowej. Dowiesz się więcej z przewodnika [„Automatyczna instalacja strony WWW za pomocą modułu CMS”](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}.
 
 > [!primary]
 >
@@ -164,11 +161,11 @@ Jeśli chcesz zainstalować ręcznie Twoją stronę WWW, przygotuj pliki, a nast
 
 ## Sprawdź również
 
-[Automatyczna instalacja strony WWW za pomocą modułu CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/){.external}
+[Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Modyfikacja strefy DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}
+[Modyfikacja strefy DNS](/pages/web/domains/dns_zone_edit){.external}
 
-[Uruchomienie strony WWW na Twoim hostingu](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/){.external}
+[Uruchomienie strony WWW na Twoim hostingu](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/pl/support-levels/).
 

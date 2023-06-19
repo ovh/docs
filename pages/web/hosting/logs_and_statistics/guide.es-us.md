@@ -1,9 +1,6 @@
 ---
 title: 'Web hosting: Consultar las estadísticas y logs de un sitio web'
 excerpt: Acceso a las estadísticas de su sitio
-slug: web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web
-section: Optimización del sitio web
-order: 04
 updated: 2021-01-05
 ---
 
@@ -46,7 +43,7 @@ Haga clic en el botón `Crear un nuevo usuario`{.action} en la sección `Adminis
 
 > [!warning] 
 >
-> Si ha activado los logs separados en una [entrada multisitio](../configurar-un-multisitio-en-un-alojamiento-web/#2-anadir-un-dominio-o-subdominio), los usuarios creados aquí no pueden acceder a las estadísticas de esta entrada multisitio.
+> Si ha activado los logs separados en una [entrada multisitio](/pages/web/hosting/multisites_configure_multisite#2-anadir-un-dominio-o-subdominio), los usuarios creados aquí no pueden acceder a las estadísticas de esta entrada multisitio.
 >
 
 ### Estadísticas de visitas
@@ -81,7 +78,7 @@ Hay diferentes tipos de logs a su disposición:
 - Logs CGI: las diferentes llamadas a los scripts cgi.bin realizadas.
 - Logs out : las estadísticas de su alojamiento sobre las diferentes llamadas externas realizadas.
 - Logs SSH: estos logs indican las distintas conexiones realizadas con el protocolo SSH.
-- Logs CRON: el resultado de la ejecución de las tareas planificadas ([tareas automatizadas (CRON) en el alojamiento](../web_hosting_tareas_automatizadas_cron/)).
+- Logs CRON: el resultado de la ejecución de las tareas planificadas ([tareas automatizadas (CRON) en el alojamiento](/pages/web/hosting/cron_tasks)).
 
 ### Actividades del alojamiento
 

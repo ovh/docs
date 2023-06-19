@@ -1,11 +1,8 @@
 ---
 title: Clonar una MV (EN)
-slug: clonar-una-mv
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/clone-a-vm/'
+    canonical: '/pages/cloud/private-cloud/clone_a_vm'
 excerpt: Learn two ways to clone an existing virtual machine in vSphere
-section: Gestión de las máquinas virtuales
-order: 07
 updated: 2022-01-12
 ---
 

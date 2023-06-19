@@ -1,9 +1,6 @@
 ---
 title: Umstellung der Festplatte Ihrer VM unter Linux auf ausschließliche Leseberechtigung verhindern
-slug: umstellung-der-festplatte-auf-nur-lesen-unter-linux-verhindern
 excerpt: Umstellung der Festplatte Ihrer VM unter Linux auf ausschließliche Leseberechtigung verhindern
-section: Verwaltung virtueller Maschinen
-order: 10
 updated: 2020-06-25
 ---
 

@@ -1,7 +1,5 @@
 ---
 title: Workers
-slug: workers
-section: App
 updated: 2021-05-11
 ---
 
@@ -93,11 +91,11 @@ The `commands` key defines the command to launch the worker application.  For no
 
 The `start` key specifies the command to use to launch your worker application.  It may be any valid shell command, although most often it will run a command in your application in the language of your application.  If the command specified by the `start` key terminates it will be restarted automatically.
 
-Note that [`deploy` and `post_deploy` hooks](../build), as well as [`cron` commands](../cron), will run only on the [`web`](../web) container, not on workers.
+Note that [`deploy` and `post_deploy` hooks](/pages/web/web-paas/configuration-app/build), as well as [`cron` commands](/pages/web/web-paas/configuration-app/cron), will run only on the [`web`](/pages/web/web-paas/configuration-app/web) container, not on workers.
 
 ## Inheritance
 
-Any top-level definitions for [`size`](../size), [`relationships`](../relationships), [`access`](../access), [`disk` and `mount`](../storage), and [`variables`](../variables) will be inherited by every worker, unless overridden explicitly.
+Any top-level definitions for [`size`](/pages/web/web-paas/configuration-app/size), [`relationships`](/pages/web/web-paas/configuration-app/relationships), [`access`](/pages/web/web-paas/configuration-app/access), [`disk` and `mount`](/pages/web/web-paas/configuration-app/storage), and [`variables`](/pages/web/web-paas/configuration-app/variables) will be inherited by every worker, unless overridden explicitly.
 
 That means, for example, that the following two `.platform.app.yaml` definitions produce identical workers.
 

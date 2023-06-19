@@ -1,9 +1,6 @@
 ---
 title: 'Transférer la sauvegarde d’une instance d’un datacenter à un autre'
-slug: transferer-la-sauvegarde-dune-instance-dun-datacentre-a-lautre
-section: 'Gestion via OpenStack'
 excerpt: 'Découvrez comment effectuer ce déplacement tout en préservant la configuration et l’état de l’instance.'
-order: 10
 updated: 2019-03-29
 ---
 
@@ -20,7 +17,7 @@ Vous pouvez avoir besoin de déplacer votre instance Public Cloud d’un datacen
 
 * Posséder une [instance Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/){.external} dans votre compte OVHcloud.
 * Disposer d’un accès administrateur (root) à votre instance/sur votre système d'exploitation via SSH.
-* Lire le guide « [Préparer l’environnement pour utiliser l’API OpenStack](../prepare_the_environment_for_using_the_openstack_api/){.external} » (recommandé).
+* Lire le guide « [Préparer l’environnement pour utiliser l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api){.external} » (recommandé).
 
 > [!primary]
 >
@@ -141,6 +138,6 @@ Utilisez l'ID de sauvegarde comme image avec la commande suivante :
 
 ## Aller plus loin
 
-[Transférer la sauvegarde d’un volume d’un datacentre a l’autre](../transferer-la-sauvegarde-dun-volume-dun-datacentre-a-lautre/){.external}.
+[Transférer la sauvegarde d’un volume d’un datacentre a l’autre](/pages/platform/public-cloud/transfer_volume_backup_from_one_datacentre_to_another){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

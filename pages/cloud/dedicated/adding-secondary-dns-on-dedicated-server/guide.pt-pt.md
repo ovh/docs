@@ -1,8 +1,6 @@
 ---
 title: 'Criar um DNS secundário num servidor dedicado'
-slug: criar-dns-secundario-servidor-dedicado
 excerpt: 'Saiba como criar um DNS secundário para o seu servidor dedicado OVHcloud'
-section: 'Utilização avançada'
 updated: 2021-01-08
 ---
 
@@ -74,7 +72,7 @@ Os domínios adicionados serão listados neste separador e podem ser eliminados 
 
 - Se o domínio for gerido por um agente de registo externo ou utilizar servidores DNS externos nesta fase, aceda à Área de Cliente do seu fornecedor DNS e adicione um registo TXT com o subdomínio "ownercheck" e o valor fornecido na etapa 2 da [Adicionar domínio"](#ajoutdomaine).
 
-- Se o domínio é gerido pela OVHcloud como servidor de registo e utiliza servidores DNS da OVHcloud, feche a janela ao clicar em `Anular`{.action}. De seguida, pode seguir as instruções [deste manual](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/) para adicionar o registo TXT à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Se o domínio é gerido pela OVHcloud como servidor de registo e utiliza servidores DNS da OVHcloud, feche a janela ao clicar em `Anular`{.action}. De seguida, pode seguir as instruções [deste manual](/pages/web/domains/dns_zone_edit) para adicionar o registo TXT à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ![DNS secundário](images/cp-04.png){.thumbnail}
 
@@ -82,6 +80,6 @@ Depois de adicionar corretamente o registo TXT à zona DNS do domínio, repita o
 
 ## Quer saber mais?
 
-[Editar uma zona DNS da OVHcloud](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}
+[Editar uma zona DNS da OVHcloud](/pages/web/domains/dns_zone_edit){.external}
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

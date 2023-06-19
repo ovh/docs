@@ -1,9 +1,6 @@
 ---
 title: Evitar os erros comuns de SSL no meu website
 excerpt: Evitar os erros comuns de SSL no meu website
-slug: evitar_os_erros_comuns_de_ssl_no_meu_website
-section: SSL
-order: 04
 updated: 2020-05-05
 ---
 

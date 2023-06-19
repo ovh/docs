@@ -1,11 +1,8 @@
 ---
 title: AI Deploy - Getting started
-slug: deploy/getting-started
 excerpt: Discover AI Deploy and unfold your first application
-section: AI Deploy - Guides
-order: 02
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/getting-started/'
+    canonical: '/pages/platform/ai/deploy_guide_02_getting_started'
 updated: 2023-04-04
 ---
 
@@ -45,7 +42,7 @@ Select where your AI Deploy app will be hosted, meaning the physical location.
 
 > [!primary]
 >
-> OVHcloud provides multiple datacenters. You can find the capabilities for AI Deploy in the guide [AI Deploy capabilities](https://docs.ovh.com/de/publiccloud/ai/deploy/capabilities/).
+> OVHcloud provides multiple datacenters. You can find the capabilities for AI Deploy in the guide [AI Deploy capabilities](/pages/platform/ai/deploy_guide_01_capabilities).
 >
 
 #### Step 2: Select the application to deploy
@@ -70,7 +67,7 @@ The objective is to deploy and call a simple **Flask API** for a kind of *Hello 
 
 > [!primary]
 >
-> If you want to deploy your own container, you need to comply with a few rules like adding a specific user. Follow our [Build and use custom images](https://docs.ovh.com/de/publiccloud/ai/training/build-use-custom-image/) guide.
+> If you want to deploy your own container, you need to comply with a few rules like adding a specific user. Follow our [Build and use custom images](/pages/platform/ai/training_tuto_02_build_custom_image) guide.
 >
 
 #### Step 3: Assign compute resources
@@ -223,8 +220,8 @@ Be sure to also delete your Object Storage data if you don't need it anymore.
 
 ## Go further
 
-- You can imagine deploying an AI model for sketch recognition thanks to **AI Deploy**. Refer to this [tutorial](https://docs.ovh.com/de/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/).
-- Do you want to use **Streamlit** in order to create an app? [Here it is](https://docs.ovh.com/de/publiccloud/ai/deploy/tuto-build-use-flask-image/).
+- You can imagine deploying an AI model for sketch recognition thanks to **AI Deploy**. Refer to this [tutorial](/pages/platform/ai/deploy_tuto_05_gradio_sketch_recognition).
+- Do you want to use **Streamlit** in order to create an app? [Here it is](/pages/platform/ai/deploy_tuto_02_flask).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

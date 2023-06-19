@@ -1,11 +1,8 @@
 ---
 title: Object Storage - Gestión de la inmutabilidad de los objetos con Object Lock (WORM) (EN)
-slug: s3/managing-object-lock
 excerpt:
-section: Tutorials
-order: 110
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/s3/managing-object-lock/'
+    canonical: '/pages/cloud/storage/object_storage/s3_managing_object_lock'
 updated: 2022-06-02
 ---
 
@@ -52,7 +49,7 @@ Legal hold provides the same protection as a retention period, but it has no exp
 - Your S3 credentials (access_key and secret_access_key)
 - Aws cli installed and configured
 
-See our [Getting started with S3 Object Storage](https://docs.ovh.com/us/es/storage/object-storage/s3/getting-started-with-object-storage/) guide for more information.
+See our [Getting started with S3 Object Storage](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) guide for more information.
 
 ## Instructions
 
@@ -60,7 +57,7 @@ See our [Getting started with S3 Object Storage](https://docs.ovh.com/us/es/stor
 >
 > All the following examples will use aws cli.
 >
-> To learn more about aws cli, please read this [guide](https://docs.ovh.com/us/es/storage/object-storage/s3/getting-started-with-object-storage/).
+> To learn more about aws cli, please read this [guide](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage).
 >
 
 ### Permissions

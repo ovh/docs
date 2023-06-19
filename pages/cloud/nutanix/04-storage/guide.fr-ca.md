@@ -1,9 +1,6 @@
 ---
 title: Présentation du stockage sur Nutanix
-slug: storage
 excerpt: 'Présentation de la gestion du stockage dans un Cluster Nutanix'
-section: Premiers pas
-order: 06
 updated: 2022-02-23
 ---
 
@@ -114,7 +111,7 @@ Le **Volume Group** apparait alors dans la liste.
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Présentation d'un cluster Nutanix](https://docs.ovh.com/ca/fr/nutanix/nutanix-hci/)
+[Présentation d'un cluster Nutanix](/pages/cloud/nutanix/03-nutanix-hci)
 
 [Documentation Nutanix sur le stockage](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v5_20:wc-storage-management-wc-c.html)
 

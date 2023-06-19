@@ -1,8 +1,6 @@
 ---
 title: Installa WordPress sulla tua istanza
 excerpt: Scopri come utilizzare un'istanza Public Cloud per ospitare siti WordPress
-slug: installa_wordpress_sulla_tua_istanza
-section: Tutorial
 updated: 2023-05-17
 ---
 
@@ -30,7 +28,7 @@ Questa guida ti mostra gli step fondamentali per l'installazione manuale di Word
 ## Prerequisiti
 
 - Un [progetto Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud.
-- Disporre di un'[istanza Public Cloud](../primi-passi-public-cloud/) con Debian o Ubuntu installato.
+- Disporre di un'[istanza Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps) con Debian o Ubuntu installato.
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 - Un accesso amministratore (root) alla tua istanza via SSH.
 
@@ -43,7 +41,7 @@ Questa guida ti mostra gli step fondamentali per l'installazione manuale di Word
 
 Per accedere alla tua installazione tramite un dominio, è necessario associarlo alla tua istanza. Per effettuare questa operazione è necessario modificare la zona DNS accessibile dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), a condizione che OVHcloud sia il tuo Registrar **e** che il dominio utilizzi i server DNS OVHcloud.
 
-Per saperne di più, consulta la guida [Modifica la zona DNS](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/). Se il dominio è utilizzato, configura i DNS solo dopo l'installazione del nuovo WordPress e l'avvio del tuo sito Web.
+Per saperne di più, consulta la guida [Modifica la zona DNS](/pages/web/domains/dns_zone_edit). Se il dominio è utilizzato, configura i DNS solo dopo l'installazione del nuovo WordPress e l'avvio del tuo sito Web.
 
 ### Step 1: installazione del server web (LAMP)
 
@@ -226,7 +224,7 @@ Il server Web è pronto per la configurazione iniziale di WordPress.
 
 ### Step 5: configurare WordPress
 
-Apri un browser Web e accedi al sito WordPress inserendo l'indirizzo IP della tua istanza (o il dominio se ne hai già [collegato uno all'istanza](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/)). Scegliete una lingua sulla prima pagina.
+Apri un browser Web e accedi al sito WordPress inserendo l'indirizzo IP della tua istanza (o il dominio se ne hai già [collegato uno all'istanza](/pages/web/domains/dns_zone_edit)). Scegliete una lingua sulla prima pagina.
 
 Utilizza la configurazione assistita WordPress per accedere al database. Inserisci le informazioni [configurate precedentemente](#sqlconf).
 

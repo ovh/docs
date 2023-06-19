@@ -1,8 +1,6 @@
 ---
 title: 'Configurar un DNS secundario de OVHcloud en un VPS'
-slug: dns-secundario-vps
 excerpt: Cómo añadir un servidor DNS secundario a un dominio
-section: Uso avanzado
 updated: 2022-01-12
 ---
 
@@ -56,7 +54,7 @@ La acción a realizar es diferente en función del lugar en el que se gestionen 
 
 - Si el dominio es gestionado por un agente registrador externo **o** utiliza en esta fase servidores DNS externos, conéctese al área de cliente de su proveedor DNS y añada, en la zona DNS, un registro de tipo TXT con el subdominio "ownercheck", así como el valor proporcionado ejecutando el [paso 1](#retrievecode).
 
-- Si el dominio es gestionado por OVHcloud como agente registrador **y** utiliza los servidores DNS de OVHcloud, añada el registro TXT en la sección `Web Cloud`{.action} de su [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Siga las indicaciones que le indicamos en la guía [Editar una zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/) si no está familiarizado con este proceso.
+- Si el dominio es gestionado por OVHcloud como agente registrador **y** utiliza los servidores DNS de OVHcloud, añada el registro TXT en la sección `Web Cloud`{.action} de su [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Siga las indicaciones que le indicamos en la guía [Editar una zona DNS](/pages/web/domains/dns_zone_edit) si no está familiarizado con este proceso.
 
 ![DNS secundario](images/sec-04.png){.thumbnail}
 

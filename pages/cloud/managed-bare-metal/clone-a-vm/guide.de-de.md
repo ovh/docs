@@ -1,11 +1,8 @@
 ---
 title: Eine VM klonen
-slug: eine-vm-klonen
 routes:
-    canonical: 'https://docs.ovh.com/de/private-cloud/eine-vm-klonen/'
+    canonical: '/pages/cloud/private-cloud/clone_a_vm'
 excerpt: Sehen Sie hier, wie Sie eine bestehende VM mit vSphere klonen können
-section: Verwaltung virtueller Maschinen
-order: 07
 updated: 2020-11-18
 ---
 
@@ -21,13 +18,13 @@ Mit dem Klonen einer VM können Sie eine Kopie der ursprünglichen VM herstellen
 
 - Sie verfügen über ein [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external} Produkt.
 - Sie haben mindestens eine VM in Ihrem Cluster.
-- Sie sind auf Ihrem [vSphere Interface](../den_vsphere_client_installieren/) angemeldet.
+- Sie sind auf Ihrem [vSphere Interface](/pages/cloud/managed-bare-metal/vsphere-interface) angemeldet.
 
 ## Praktische Anwendung
 
 ### Die VM klonen
 
-Gehen Sie in Ihrem [vSphere Interface ](../den_vsphere_client_installieren/) zu `Hosts and Clusters`.
+Gehen Sie in Ihrem [vSphere Interface ](/pages/cloud/managed-bare-metal/vsphere-interface) zu `Hosts and Clusters`.
 
 Klicken Sie mit der rechten Maustaste auf die VM, die Sie klonen möchten. Klicken Sie danach auf `Clone`{.action} und daraufhin auf `Clone to virtual machine...`{.action}. 
 
@@ -49,9 +46,9 @@ Legen Sie den Speicherort (Festplattenspeicherplatz) dieser VM fest.
 
 Das Format der virtuellen Festplatte ist “Thin Provision”. Das bedeutet, dass eine virtuelle Festplatte erstellt wird, diese aber den wirklich verwendeten Speicherplatz einnimmt, ungeachtet des Speicherplatzes, den vorher die ursprüngliche VM eingenommen hat. 
 
-Weitere Erklärungen zu Festplattenformaten finden Sie in [dieser Anleitung](../die-wahl-des-festplattenformats/).
+Weitere Erklärungen zu Festplattenformaten finden Sie in [dieser Anleitung](/pages/cloud/managed-bare-metal/choosing-disk-type).
 
-In der Reihe `VM Storage Policy` können Sie die Standardeinstellung für das Speichern wählen, wenn Sie Datastores haben. Wenn Sie die Option [VM encryption](../vm-encrypt/) verwenden, können Sie eine nutzerdefinierte Speicherweise wählen.
+In der Reihe `VM Storage Policy` können Sie die Standardeinstellung für das Speichern wählen, wenn Sie Datastores haben. Wenn Sie die Option [VM encryption](/pages/cloud/managed-bare-metal/vm_encrypt) verwenden, können Sie eine nutzerdefinierte Speicherweise wählen.
 
 ![VM Storage](images/clonevm04.png){.thumbnail}
 

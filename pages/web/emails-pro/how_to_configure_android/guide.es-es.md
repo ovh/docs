@@ -1,9 +1,6 @@
 ---
 title: 'Configurar una cuenta Email Pro en Android utilizando la aplicación Gmail'
-slug: configuracion-android
 excerpt: 'Cómo configurar una cuenta Email Pro en Android utilizando la aplicación Gmail'
-section: 'Configuración del cliente de correo'
-order: 5
 updated: 2020-03-18
 ---
 
@@ -98,8 +95,8 @@ OVHcloud ofrece una aplicación web que tiene [funciones colaborativas](https://
 
 ## Más información
 
-[Configurar una cuenta de correo electrónico en Android utilizando la aplicación Gmail](https://docs.ovh.com/es/emails/configuracion-android/){.external}
+[Configurar una cuenta de correo electrónico en Android utilizando la aplicación Gmail](/pages/web/emails/how_to_configure_android){.external}
 
-[Configurar una cuenta Exchange en Android utilizando la aplicación Gmail](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-android/){.external}
+[Configurar una cuenta Exchange en Android utilizando la aplicación Gmail](/pages/web/microsoft-collaborative-solutions/how_to_configure_android){.external}
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

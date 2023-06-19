@@ -1,7 +1,5 @@
 ---
 title: Instalacja CUDA na serwerze dedykowanym GPU
-slug: instalacja-platformy-cuda-serwer-gpu
-section: Inne
 updated: 2017-12-14
 ---
 

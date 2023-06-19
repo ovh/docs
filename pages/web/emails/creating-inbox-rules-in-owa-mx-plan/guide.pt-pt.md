@@ -1,9 +1,6 @@
 ---
 title: 'Criar regras inbox no OWA'
-slug: criar-regras-inbox-no-owa
 excerpt: 'Saiba como redirecionar e-mails e criar filtros através do OWA'
-section: Introdução
-order: 05
 updated: 2020-03-11
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: 'Gestire i contatti dei servizi OVHcloud'
-slug: gestisci_i_tuoi_contatti
 excerpt: 'Come gestire i contatti dei tuoi servizi dallo Spazio Cliente OVHcloud'
-section: 'Per iniziare'
-order: 6
 updated: 2021-12-13
 ---
 
@@ -122,9 +119,9 @@ Hai appena sottoscritto un abbonamento OVHcloud che permette di creare il tuo [n
 
 In questo caso, assegna al tuo provider il diritto di [contatto tecnico](#gestion_des_contacts) sul tuo hosting OVHcloud. Questo accesso permette di effettuare le operazioni necessarie alla pubblicazione online del tuo sito (aggiunta di un dominio o sottodominio nel multisito, installazione di un modulo in 1 click, modifica della password FTP o del database, creazione di un certificato SSL, ecc...).
 
-Se il tuo dominio non è associato al tuo hosting e vuoi affidare le operazioni necessarie al tuo webmaster, gli dia anche il diritto di "[contatto tecnico](#gestion_des_contacts)" sulla [zona DNS](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/) del tuo dominio.
+Se il tuo dominio non è associato al tuo hosting e vuoi affidare le operazioni necessarie al tuo webmaster, gli dia anche il diritto di "[contatto tecnico](#gestion_des_contacts)" sulla [zona DNS](/pages/web/domains/dns_zone_edit) del tuo dominio.
 
-Il diritto "[contatto tecnico](#gestion_des_contacts)" non permette di modificare i contatti amministratore o la fatturazione di un servizio. Il dominio non fornirà al tuo webmaster l'accesso alle fatture o agli ordini, al rinnovo dei servizi o ai metodi di pagamento. e non gli permetterà di effettuare il [trasferimento della gestione del tuo dominio](https://docs.ovh.com/it/domains/trasferisci_in_uscita_un_dominio_generico_o_geografico/) verso un altro hosting o di [cambiare il proprietario](https://docs.ovh.com/it/domains/cambiare_proprietario_dominio/).
+Il diritto "[contatto tecnico](#gestion_des_contacts)" non permette di modificare i contatti amministratore o la fatturazione di un servizio. Il dominio non fornirà al tuo webmaster l'accesso alle fatture o agli ordini, al rinnovo dei servizi o ai metodi di pagamento. e non gli permetterà di effettuare il [trasferimento della gestione del tuo dominio](/pages/web/domains/transfer_outgoing_domain) verso un altro hosting o di [cambiare il proprietario](/pages/web/domains/trade_domain).
 
 In quanto [contatto amministratore](#administrateur), potrai recuperare in qualsiasi momento il "[contatto tecnico](#technique)" del tuo servizio.
 

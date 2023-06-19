@@ -1,9 +1,6 @@
 ---
 title: "¿Qué hacer en caso de página 403 forbidden?"
 excerpt: Descubra cómo volver a publicar un sitio web cuando este muestre la página 403 forbidden
-slug: diagnostico-403-forbidden
-section: Diagnóstico
-order: 08
 updated: 2023-06-09
 ---
 

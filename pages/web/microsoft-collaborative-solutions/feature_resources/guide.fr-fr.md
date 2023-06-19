@@ -1,9 +1,6 @@
 ---
 title: Créer et utiliser des comptes de ressource
-slug: exchange-utilisation-des-comptes-de-ressource
 excerpt: Ajouter et utiliser les comptes de ressource avec l’offre Exchange
-section: Fonctionnalités des comptes Exchange
-order: 05
 updated: 2020-06-05
 ---
 
@@ -46,7 +43,7 @@ Cliquez sur `Suivant`{.action} pour passer au résumé, puis confirmez la tâche
 
 ### Étape 2 : utiliser des ressources
 
-Vos ressources peuvent être gérées à partir du tableau de l'onglet « Ressources ». Cliquez sur `...`{.action} pour modifier ou supprimer une ressource. L'option  `Configurer les délégations`{.action} s'affichera également. Avec cette option, vous pourrez déléguer l'accès de la même manière que pour un compte Exchange. Retrouvez les détails dans [ce guide](../exchange-donner-les-droits-full-access-sur-un-compte/).
+Vos ressources peuvent être gérées à partir du tableau de l'onglet « Ressources ». Cliquez sur `...`{.action} pour modifier ou supprimer une ressource. L'option  `Configurer les délégations`{.action} s'affichera également. Avec cette option, vous pourrez déléguer l'accès de la même manière que pour un compte Exchange. Retrouvez les détails dans [ce guide](/pages/web/microsoft-collaborative-solutions/feature_delegation).
 
 ![utiliser ressources](images/exchange-resources-step3.png){.thumbnail}
 

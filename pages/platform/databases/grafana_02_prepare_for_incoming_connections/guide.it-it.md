@@ -1,11 +1,8 @@
 ---
 title: Grafana - Configure your Grafana instance to accept incoming connections
 excerpt: Find out how to configure your Grafana instance to accept incoming connections
-slug: grafana/configure-grafana-instance
-section: Grafana - Guides
-order: 020
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/grafana/configure-grafana-instance/'
+    canonical: '/pages/platform/databases/grafana_02_prepare_for_incoming_connections'
 updated: 2022-05-12
 ---
 
@@ -21,7 +18,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 - A [Public Cloud project](https://www.ovhcloud.com/it/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- A Grafana database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/it/publiccloud/databases/getting-started/) can help you to meet this requirement)
+- A Grafana database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
 
 ## Instructions
 

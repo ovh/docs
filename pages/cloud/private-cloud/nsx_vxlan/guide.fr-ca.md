@@ -1,8 +1,6 @@
 ---
 title: Comment créer un VxLAN
-slug: nsx-creation-vxlan
 excerpt: Découvrez comment créer des VxLANs sur votre NSX Edge Gateway
-section: NSX-v
 updated: 2021-12-13
 ---
 
@@ -18,7 +16,7 @@ OVHcloud installe une base de 10 VxLANs sur la NSX Edge Gateway.
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/) afin de recevoir des identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
-- Avoir déployé une [NSX Edge Services Gateway](https://docs.ovh.com/ca/fr/private-cloud/comment-deployer-une-nsx-edge-gateway/)
+- Avoir déployé une [NSX Edge Services Gateway](/pages/cloud/private-cloud/nsx_deploying_edge_gateway)
 
 ## En pratique
 

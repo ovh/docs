@@ -1,10 +1,7 @@
 ---
 title: "Servizio Email: come recuperare gli header di un’email"
 excerpt: "In questa guida ti mostriamo come recuperare gli header di un'email"
-slug: servizio_email_come_recuperare_gli_header_di_unemail
 legacy_guide_number: g1365
-section: Diagnostica
-order: 03
 updated: 2021-11-19
 ---
 
@@ -93,7 +90,7 @@ Subject: Hello my friend
 Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
 </code></pre>
 
-- Il record `Received-SPF` mostra il risultato del controllo [SPF](https://docs.ovh.com/it/domains/hosting_condiviso_il_record_spf/) effettuato sul dominio del mittente. L'argomento `client-ip` permette in particolare di rilevare l'indirizzo IP del server che è server utilizzato per spedire l'email. 
+- Il record `Received-SPF` mostra il risultato del controllo [SPF](/pages/web/domains/dns_zone_spf) effettuato sul dominio del mittente. L'argomento `client-ip` permette in particolare di rilevare l'indirizzo IP del server che è server utilizzato per spedire l'email. 
 <pre class="console"><code>
 Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh 
 </code></pre>
@@ -195,6 +192,6 @@ Per visualizzare l'intestazione nell'interfaccia Web <Outlook.com>, consulta la 
 
 ## Per saperne di più
 
-[FAQ E-mail](https://docs.ovh.com/it/emails/faq-emails/)
+[FAQ E-mail](/pages/web/emails/faq-emails)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -1,11 +1,8 @@
 ---
 title: Object Storage Swift - Setting up CORS on Object Storage (EN)
-slug: pcs/cors
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/pcs/cors/'
+    canonical: '/pages/cloud/storage/object_storage/pcs_cors'
 excerpt: Find here the concepts to implement CORS
-section: OpenStack Swift Storage Class Specifics
-order: 050
 updated: 2022-01-03
 ---
 
@@ -23,8 +20,8 @@ CORS metadata is only present in the container. The values specified apply to th
 
 ## Requirements
 
-- [Preparing the environment to use the OpenStack API](https://docs.ovh.com/us/es/public-cloud/prepare_the_environment_for_using_the_openstack_api/) by installing python-swiftclient
-- [Loading the OpenStack environment variables](https://docs.ovh.com/us/es/public-cloud/set-openstack-environment-variables/)
+- [Preparing the environment to use the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) by installing python-swiftclient
+- [Loading the OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## Instructions
 

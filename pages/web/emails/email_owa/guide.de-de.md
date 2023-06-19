@@ -1,9 +1,6 @@
 ---
 title: "E-Mail-Accounts über Outlook Web App (OWA) verwenden"
-slug: verwendung-owa
 excerpt: 'So verwenden Sie Ihre E-Mail-Adressen über OWA Webmail'
-section: 'E-Mail Clients'
-order: 1
 updated: 2021-06-25
 ---
 
@@ -123,7 +120,7 @@ Geben Sie die erforderlichen Informationen in Abhängigkeit von der Aktion ein, 
 
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
-Ausführlichere Anweisungen zum Erstellen von Posteingangsregeln finden Sie in unserer Anleitung: [Posteingangsregeln in OWA erstellen](../posteingangsregeln-in-owa-erstellen/).
+Ausführlichere Anweisungen zum Erstellen von Posteingangsregeln finden Sie in unserer Anleitung: [Posteingangsregeln in OWA erstellen](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan).
 
 ##### Einen Absender blockieren
 

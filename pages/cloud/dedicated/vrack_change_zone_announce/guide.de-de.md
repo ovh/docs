@@ -1,8 +1,6 @@
 ---
 title: 'IP-Block-Ankündigung im vRack ändern'
-slug: ip-block-ankuendigung-im-vrack-aendern
 excerpt: 'So ändern Sie die IP-Block-Ankündigung im vRack'
-section: vRack
 updated: 2019-03-12
 ---
 
@@ -17,7 +15,7 @@ Das [vRack](https://www.ovh.de/loesungen/vrack/){.external} ist ein privates Net
 ## Voraussetzungen
 
 - Sie besitzen ein [vRack](https://www.ovh.de/loesungen/vrack/){.external}.
-- Sie haben [einen IP-Adressblock im vRack eingerichtet](../vrack-ip-block-hinzufuegen-oder-entfernen/).
+- Sie haben [einen IP-Adressblock im vRack eingerichtet](/pages/cloud/dedicated/configuring-an-ip-block-in-a-vrack).
 - Sie verfügen über fortgeschrittene Netzwerkkenntnisse.
 
 > [!warning]

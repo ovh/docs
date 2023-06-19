@@ -1,9 +1,6 @@
 ---
 title: Cold Archive - Premiers pas avec Cold Archive
-slug: cold-archive/getting-started
 excerpt: Ce guide vous montre comment gérer vos données avec Cold Archive
-section: Spécificités de la classe de stockage Cold Archive
-order: 020
 updated: 2023-05-17
 ---
 
@@ -19,7 +16,7 @@ La restauration peut prendre un certain temps car elle doit être lue sur des ba
 
 ## Prérequis
 
-- [Premiers pas avec Object Storage](https://docs.ovh.com/fr/storage/object-storage/s3/getting-started-with-object-storage/#utilisation-de-aws-cli)
+- [Premiers pas avec Object Storage](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage#utilisation-de-aws-cli)
 - `awscli` version >= 1.16.62
 
 ## En pratique

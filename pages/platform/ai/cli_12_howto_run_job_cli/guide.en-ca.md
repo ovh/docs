@@ -1,9 +1,6 @@
 ---
 title: CLI - Launch an AI Training job
-slug: cli/run-job-cli
 excerpt: Learn how to run an AI Training job using the CLI
-section: Command Line Interface
-order: 202
 updated: 2023-05-11
 ---
 
@@ -11,13 +8,13 @@ updated: 2023-05-11
 
 ## Objective
 
-This guide covers the submission of [**jobs**](https://docs.ovh.com/ca/en/publiccloud/ai/training/jobs) through the **ovhai** CLI.
+This guide covers the submission of [**jobs**](/pages/platform/ai/training_guide_03_concepts_jobs) through the **ovhai** CLI.
 To illustrate the submission we will iteratively build a command to run a notebook image `ovhcom/ai-training-transformers:3.1.0` with the Huggingface framework preinstalled.
 This Docker image is freely available.
 
 ## Requirements
 
--   a working `ovhai` CLI [how to install ovhai CLI](https://docs.ovh.com/ca/en/publiccloud/ai/cli/install-client)
+-   a working `ovhai` CLI [how to install ovhai CLI](/pages/platform/ai/cli_10_howto_install_cli)
 
 ## Instructions
 
@@ -95,7 +92,7 @@ For example if you are on a data exploration step or designing your neural netwo
 Once your experiment is ready switch over to using GPUs to train.
 
 Flags `--cpu` and `--gpu` are exclusive, if GPU resources are specified then the CPU flag is ignored and the standard GPU to CPU ratio is applied.
-You can find out more about these ratios in the [capabilities](https://docs.ovh.com/ca/en/publiccloud/ai/training/capabilities).
+You can find out more about these ratios in the [capabilities](/pages/platform/ai/training_guide_01_capabilities).
 
 If you provision GPUs for your run you can also select the model of GPU you wish to use with the `--gpu-model` flag.
 If this flag is not specified the default GPU model for the cluster on which you submit is used.
@@ -117,7 +114,7 @@ ovhai job run --gpu 1 ovhcom/ai-training-transformers:3.1.0
 ### Attaching volumes
 
 This step assumes that you either have data in your OVHCloud Object Storage that you wish to use during your experiment or that you need to save your job results into the Object Storage.
-To learn more about data, volumes and permission check out the [data](https://docs.ovh.com/ca/en/publiccloud/ai/data) page.
+To learn more about data, volumes and permission check out the [data](/pages/platform/ai/gi_02_concepts_data) page.
 
 You can attach as many volumes as you want to your job with various options.
 Let us go through those options and outline a few good practices with volume mounts.
@@ -183,9 +180,9 @@ However, if you are running an experiment and monitoring it with Tensorboard the
 A few other options are available for your jobs.
 
 -   `--timeout` timeout after which the job will stop even if the process in the job did not end, helps you control your consumption
--   `--label` free labels to help you organize your jobs, labels are also used to scope `app_token`, learn more about `app_token` and how to create them [here](https://docs.ovh.com/ca/en/publiccloud/ai/cli/app-token-cli)
+-   `--label` free labels to help you organize your jobs, labels are also used to scope `app_token`, learn more about `app_token` and how to create them [here](/pages/platform/ai/cli_13_howto_app_token_cli)
 -   `--read-user` you can add a `read-user` to a job, a read user will only have access to the service exposed behind the `job_url`. The read-user must match with the username of an Openstack user with an `AI Training read` role.
--   `--ssh-public-keys` allows you to access your job through SSH, it is particularly useful to [setup a VSCode Remote](https://docs.ovh.com/ca/en/publiccloud/ai/training/vscode-remote-code)
+-   `--ssh-public-keys` allows you to access your job through SSH, it is particularly useful to [setup a VSCode Remote](/pages/platform/ai/training_tuto_04_vscode_remote)
 -   `--from` run a job based on the specification of a previous one. All options will override the base job values. The `--image` is the flag used to override the image of the base job.
 
 ### Run a job
@@ -211,11 +208,11 @@ If you want to fetch the specific job you just selected, retrieve its `ID` and t
 ovhai job get <job-id>
 ```
 
-For more information about the job and its lifecycle refer to the [jobs page](https://docs.ovh.com/ca/en/publiccloud/ai/training/jobs).
+For more information about the job and its lifecycle refer to the [jobs page](/pages/platform/ai/training_guide_03_concepts_jobs).
 
 ## Going further
 
-To know more about the CLI and available commands to interact with your job check out the [overview of `ovhai`](https://docs.ovh.com/ca/en/publiccloud/ai/cli/overview-cli)
+To know more about the CLI and available commands to interact with your job check out the [overview of `ovhai`](/pages/platform/ai/cli_15_commands_reference)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

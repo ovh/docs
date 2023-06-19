@@ -1,11 +1,8 @@
 ---
 title: Comment utiliser Terraform sur le Public Cloud OVHcloud
-slug: utiliser-terraform
 description: Utilisation de Terraform
 keywords: infrastructure, instance, cloud, creation
 excerpt: Décrouvez comment utiliser l'outil Terraform pour abstraire le déploiement de votre infrastructure
-section: Tutoriels
-order: 02
 updated: 2022-05-27
 ---
 
@@ -47,11 +44,11 @@ L'outil Open Source Terraform a été développé pour faciliter la création d'
 
 ## Prérequis
 
-* [Configurer un accès utilisateur à Horizon](../horizon/)
-* [Préparer l’environnement pour utiliser l’API OpenStack](../prepare_the_environment_for_using_the_openstack_api/)
-* [Charger les variables d'environnement OpenStack](../set-openstack-environment-variables/)
-* [Disposer de vos identifiants API et de votre clé d'autorisation OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/)
-* [Une clé SSH](../premiers-pas-instance-public-cloud/)
+* [Configurer un accès utilisateur à Horizon](/pages/platform/public-cloud/introducing_horizon)
+* [Préparer l’environnement pour utiliser l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+* [Charger les variables d'environnement OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
+* [Disposer de vos identifiants API et de votre clé d'autorisation OVHcloud](/pages/account/api/first-steps)
+* [Une clé SSH](/pages/platform/public-cloud/public-cloud-first-steps)
 * [Le provider Terraform OpenStack](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs){.external}
 * [Le provider Terraform OVHcloud](https://registry.terraform.io/providers/ovh/ovh/latest/docs){.external}
 
@@ -129,7 +126,7 @@ provider "ovh" {
 
 Un « alias » est un identifiant unique pour un type de fournisseur. Par exemple, si vous avez deux fournisseurs OpenStack avec des informations d'identification différentes, vous devez spécifier chaque fournisseur dans la ressource.
 
-Il faut maintenant [créer un nouvel utilisateur OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/), puis [générer le fichier OpenRC ](https://docs.ovh.com/fr/public-cloud/set-openstack-environment-variables/#etape-1-recuperer-les-variables) contenant tous les identifiants que vous souhaitez exporter en tant qu'environnement variables.
+Il faut maintenant [créer un nouvel utilisateur OpenStack](/pages/platform/public-cloud/create_and_delete_a_user), puis [générer le fichier OpenRC ](/pages/platform/public-cloud/loading_openstack_environment_variables#etape-1-recuperer-les-variables) contenant tous les identifiants que vous souhaitez exporter en tant qu'environnement variables.
 
 Chargez ce fichier, puis entrez le mot de passe de l'utilisateur que vous avez créé précédemment :
 

@@ -1,7 +1,5 @@
 ---
 title: MariaDB/MySQL (Database service)
-slug: mysql
-section: Services
 updated: 2021-06-03
 ---
 
@@ -50,7 +48,7 @@ The following versions are available but are not receiving security updates from
 
 ## Relationship
 
-The format exposed in the ``$PLATFORM_RELATIONSHIPS`` [environment variable](../../development-variables#platformsh-provided-variables):
+The format exposed in the ``$PLATFORM_RELATIONSHIPS`` [environment variable](/pages/web/web-paas/development-variables#platformsh-provided-variables):
 
 ```json  
 {

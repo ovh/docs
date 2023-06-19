@@ -1,8 +1,6 @@
 ---
 title: Konfiguracja MegaRAID w trybie RAID 0
-slug: using-the-maximum-amount-of-disk-space
 excerpt: "Dowiedz się, jak skonfigurować dyski Twojego serwera w RAID 0, aby korzystać z jak największej przestrzeni dyskowej do wykorzystania"
-section: RAID & dyski
 updated: 2022-07-08
 ---
 
@@ -121,10 +119,10 @@ MegaCli -LDInfo -Lall -a0 | grep -i size
 
 ## Sprawdź również
 
-[Wymiana dysku bez wyłączania serwera w sprzętową macierz RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/)
+[Wymiana dysku bez wyłączania serwera w sprzętową macierz RAID](/pages/cloud/dedicated/hotswap_raid_hard)
 
-[Wymiana dysku bez wyłączania serwera w programowej macierzy RAID](https://docs.ovh.com/pl/dedicated/hotswap-raid-soft/)
+[Wymiana dysku bez wyłączania serwera w programowej macierzy RAID](/pages/cloud/dedicated/hotswap_raid_soft)
 
-[Zarządzanie sprzętową macierzą RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard/)
+[Zarządzanie sprzętową macierzą RAID](/pages/cloud/dedicated/raid_hard)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

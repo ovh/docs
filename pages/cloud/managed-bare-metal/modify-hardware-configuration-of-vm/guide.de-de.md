@@ -1,12 +1,9 @@
 ---
 title: Ressourcen einer virtuellen Maschine anpassen
 routes:
-    canonical: 'https://docs.ovh.com/de/private-cloud/nderung_der_hardware-konfiguration_einer_virtuellen_maschine/'
+    canonical: '/pages/cloud/private-cloud/modify_hardware_configuration_of_vm'
 excerpt: 'Erfahren Sie hier, wie Sie Ihre virtuelle Maschine skalieren'
-slug: nderung_der_hardware-konfiguration_einer_virtuellen_maschine
 legacy_guide_number: g587
-section: Verwaltung virtueller Maschinen
-order: 3
 updated: 2020-11-18
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: 'Utiliser le Cisco 7841'
-slug: utiliser-cisco-7841
 excerpt: 'Découvrez comment utiliser votre téléphone Cisco 7841'
-section: 'Cisco 7841'
 hidden: true
 updated: 2018-06-29
 ---

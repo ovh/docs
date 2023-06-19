@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Primeiros passos no WordPress"
-slug: wordpress-first-steps
 excerpt: "Descubra como criar um website com o CMS WordPress"
-section: Tutoriais
-order: 020
 updated: 2023-02-17
 ---
 
@@ -30,12 +27,12 @@ Este tutorial vai permitir-lhe criar os seus primeiros conteúdos, organizá-los
 
 - Ter um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que contenha, pelo menos, uma base de dados.
 - Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/)
-- Ter [instalado Wordpress](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/) no seu alojamento web.
+- Ter [instalado Wordpress](/pages/web/hosting/cms_install_1_click_modules) no seu alojamento web.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
 
 ## Instruções
 
-Se ainda não o fez, e antes de continuar, [adicione um certificado SSL](https://docs.ovh.com/pt/hosting/ativar-https-website-certificado-ssl/#1-ativar-o-certificado-ssl-no-alojamento) no domínio associado ao seu website.
+Se ainda não o fez, e antes de continuar, [adicione um certificado SSL](/pages/web/hosting/ssl-activate-https-website#1-ativar-o-certificado-ssl-no-alojamento) no domínio associado ao seu website.
 
 Aquando da instalação do seu CMS em 1 clique, recebeu um e-mail com os elementos necessários para a prossecução deste tutorial:
 

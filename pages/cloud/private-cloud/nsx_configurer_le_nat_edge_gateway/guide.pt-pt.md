@@ -1,11 +1,8 @@
 ---
 title: Configurar o NAT NSX-v Edge (EN)
-slug: nsx-edge-nat-configuration
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/nsx-edge-nat-configuration/'
+    canonical: '/pages/cloud/private-cloud/nsx_configurer_le_nat_edge_gateway'
 excerpt: Using NAT rules to redirect traffic
-section: NSX-v
-order: 06
 updated: 2021-11-26
 ---
 
@@ -25,7 +22,7 @@ There are two types of NAT:
 
 - being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/) to receive login credentials
 - a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt))
-- a deployed [NSX Edge Services Gateway](https://docs.ovh.com/pt/private-cloud/how-to-deploy-an-nsx-edge-gateway/)
+- a deployed [NSX Edge Services Gateway](/pages/cloud/private-cloud/nsx_deploying_edge_gateway)
 
 ## Instructions
 

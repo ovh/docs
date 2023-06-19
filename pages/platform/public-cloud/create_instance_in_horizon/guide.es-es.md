@@ -1,9 +1,6 @@
 ---
 title: 'Crear una instancia en Horizon'
-slug: crear_una_instancia_en_horizon
 excerpt: 'Cómo crear una instancia desde el panel Horizon'
-section: Gestión desde Horizon
-order: 5
 updated: 2022-08-01
 ---
 
@@ -22,11 +19,11 @@ Es posible crear instancias directamente en Horizon. Desde esta interfaz podrá,
 ## Requisitos
 
 - Tener un proyecto de [Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud.
-- [Estar conectado a Horizon](../horizon/). 
+- [Estar conectado a Horizon](/pages/platform/public-cloud/introducing_horizon). 
 
 ## Procedimiento
 
-En primer lugar, conéctese a Horizon. Si necesita ayuda, consulte nuestra [guía](../horizon/).
+En primer lugar, conéctese a Horizon. Si necesita ayuda, consulte nuestra [guía](/pages/platform/public-cloud/introducing_horizon).
 
 A continuación, haga clic en `Compute`{.action} en la columna izquierda y seleccione `Instances`{.action}.
 
@@ -58,7 +55,7 @@ Introduzca la información solicitada. Si necesita ayuda para completar los dist
 
 > [!warning]
 > 
-> Aunque el campo "Key Pair" no es obligatorio en la interfaz Horizon al crear una instancia, es absolutamente necesario registrar una llave SSH para poder conectarse a una instancia. Sin una llave SSH, deberá reiniciar la instancia en modo de rescate para poder crear una contraseña o añadir una llave SSH al archivo correspondiente (para más información, consulte la guía [Modificar su llave SSH en caso de pérdida](../modificar_su_llave_ssh_en_caso_de_perdida/#procedimiento)).
+> Aunque el campo "Key Pair" no es obligatorio en la interfaz Horizon al crear una instancia, es absolutamente necesario registrar una llave SSH para poder conectarse a una instancia. Sin una llave SSH, deberá reiniciar la instancia en modo de rescate para poder crear una contraseña o añadir una llave SSH al archivo correspondiente (para más información, consulte la guía [Modificar su llave SSH en caso de pérdida](/pages/platform/public-cloud/replacing_lost_ssh_key#procedimiento)).
 >
 
 Una vez que haya terminado de configurar la instancia o instancias, haga clic en el botón `Launch Instance`{.action} para lanzarlas.

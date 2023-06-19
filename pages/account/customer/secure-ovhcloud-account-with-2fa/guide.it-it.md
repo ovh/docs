@@ -1,8 +1,6 @@
 ---
 title: 'Rendere sicuro il tuo account OVHcloud con la doppia autenticazione'
-slug: proteggi_il_tuo_account_con_2FA
 excerpt: 'Come rendere più sicuro il tuo account OVHcloud attivando la doppia autenticazione'
-section: Sicurezza
 updated: 2022-07-20
 ---
 
@@ -23,7 +21,7 @@ Hai la possibilità di attivare un’autenticazione a due fattori (2FA) che si a
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Disporre di un cellulare (per il metodo SMS), uno smartphone o un tablet (per il metodo applicazione mobile) o una chiave di sicurezza Universal Second Factor (U2F).
-- Aver letto i [consigli su come gestire la password di accesso al tuo account](https://docs.ovh.com/it/customer/gestire-la-password/).
+- Aver letto i [consigli su come gestire la password di accesso al tuo account](/pages/account/customer/manage-ovh-password).
 
 ## Procedura
 
@@ -39,9 +37,9 @@ Dopo aver associato per la prima volta l’applicazione al tuo account, non sar�
 
 ### Step 1: attiva il tuo primo metodo di doppia autenticazione
 
-- [Attiva la doppia autenticazione via SMS](https://docs.ovh.com/it/customer/attiva_la_doppia_autenticazione_via_sms/)
-- [Attiva la doppia autenticazione tramite applicazione mobile](https://docs.ovh.com/it/customer/attiva_la_doppia_autenticazione_tramite_applicazione_mobile/).
-- [Attiva la doppia autenticazione tramite chiave di sicurezza](https://docs.ovh.com/it/customer/attiva_la_doppia_autenticazione_tramite_chiave_di_sicurezza/).
+- [Attiva la doppia autenticazione via SMS](/pages/account/customer/enable-2fa-with-sms)
+- [Attiva la doppia autenticazione tramite applicazione mobile](/pages/account/customer/enable-2fa-with-mobile-app).
+- [Attiva la doppia autenticazione tramite chiave di sicurezza](/pages/account/customer/enable-2fa-with-security-key).
 
 Una volta aggiunto il primo metodo, è possibile aggiungerne uno o due per avere più modi per accedere al tuo account.
 

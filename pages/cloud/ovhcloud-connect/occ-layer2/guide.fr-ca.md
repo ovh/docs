@@ -1,9 +1,6 @@
 ---
 title: Mode Layer 2 (L2)
-slug: layer2
 excerpt: Détails sur le mode Layer 2 (L2) pour OVHcloud Connect
-section: Concepts
-order: 2
 updated: 2020-09-14
 ---
 **Dernière mise à jour le 07/09/2020**

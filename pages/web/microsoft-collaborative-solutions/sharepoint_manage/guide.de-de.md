@@ -1,9 +1,6 @@
 ---
 title: 'OVHcloud SharePoint aktivieren und verwalten'
 excerpt: 'Erfahren Sie hier, wie Sie einen OVHcloud SharePoint Dienst bestellen und konfigurieren'
-slug: aktivierung_und_verwaltung_ihres_ovh_sharepoint
-section: SharePoint
-order: 01
 updated: 2023-06-19
 ---
 

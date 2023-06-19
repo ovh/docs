@@ -1,9 +1,6 @@
 ---
 title: "Skonfiguruj adres IPv6 dla swojej strony www"
-slug: konfiguracja-ipv6-dla-twojej-strony
 excerpt: "Dowiedz się, jak sprawdzić, czy Twoja strona WWW jest kompatybilna z adresem IPv6"
-section: 'Konfiguracja hostingu'
-order: 06
 updated: 2023-02-10
 ---
 
@@ -42,7 +39,7 @@ Nasze pakiety hostingowe są kompatybilne z IPv6 od 2011 roku. Aktywacja tego pr
 > Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) i/lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego tutoriala.
 > 
 
-Jeśli Twoja strona nie jest skonfigurowana tak, aby działała z adresem IPv6, możesz dodać [adres IPv6 Twojego hostingu OVHcloud](https://docs.ovh.com/pl/hosting/lista-adresow-ip-klastrow-i-hostingow-www/) do strefy DNS aktywnej domeny. Celem jest umożliwienie przeglądarkom internetowym znalezienia adresu IPv6 powiązanego z Twoją stroną WWW za pomocą Twojej domeny.
+Jeśli Twoja strona nie jest skonfigurowana tak, aby działała z adresem IPv6, możesz dodać [adres IPv6 Twojego hostingu OVHcloud](/pages/web/hosting/clusters_and_shared_hosting_IP) do strefy DNS aktywnej domeny. Celem jest umożliwienie przeglądarkom internetowym znalezienia adresu IPv6 powiązanego z Twoją stroną WWW za pomocą Twojej domeny.
 
 ### Sprawdź kompatybilność IPv6 ze stroną www
 
@@ -65,7 +62,7 @@ W ramce **IPv6** skopiuj wpis i przejdź do kolejnego etapu.
 > Dodanie, zmiana lub usunięcie wpisu DNS w strefie DNS domeny powoduje, że czas propagacji wynosi od **4 do 24 godzin**, aby stało się w pełni skuteczne.
 >
 
-Aby przeglądarka znalazła adres IPv6 z Twoją domeną, zmodyfikuj aktywną strefę DNS Twojej domeny. Skorzystaj z naszego przewodnika "[Edycja strefy DNS OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/#modyfikacja-strefy-dns-ovhcloud)", aby utworzyć wpis DNS typu **AAAA**.
+Aby przeglądarka znalazła adres IPv6 z Twoją domeną, zmodyfikuj aktywną strefę DNS Twojej domeny. Skorzystaj z naszego przewodnika "[Edycja strefy DNS OVHcloud](/pages/web/domains/dns_zone_edit#modyfikacja-strefy-dns-ovhcloud)", aby utworzyć wpis DNS typu **AAAA**.
 
 W części `Web Cloud`{.action} kliknij `Domeny`{.action}. Wybierz nazwę domeny i przejdź do zakładki `Strefa DNS`{.action}. Kliknij przycisk `Dodaj rekord`{.action} po prawej stronie tabeli. 
 
@@ -75,7 +72,7 @@ Wpisz wcześniej skopiowany adres IPv6, używając typu rekordu **AAAA**.
 
 ## Przejdź dalej <a name="go-further"></a>
 
-[Edycja strefy DNS OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/#modyfikacja-strefy-dns-ovhcloud)
+[Edycja strefy DNS OVHcloud](/pages/web/domains/dns_zone_edit#modyfikacja-strefy-dns-ovhcloud)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 

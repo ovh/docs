@@ -1,8 +1,6 @@
 ---
 title: 'Eseguire test di Storage Benchmarking'
-slug: ceph-io-benchmarking
 excerpt: 'Come verificare le reali prestazioni del servizio Cloud Disk Array'
-section: 'Cloud Disk Array'
 updated: 2019-05-25
 ---
 

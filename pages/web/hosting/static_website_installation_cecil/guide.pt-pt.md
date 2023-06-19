@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Instalação e configuração de Cecil, um gerador de sites estáticos (SSG) em PHP"
-slug: install-configure-cecil
 excerpt: "Descubra como Cecil lhe permite criar o seu site estático com a ajuda de um motor de template moderno (Jamstack)"
-section: 'Tutoriais'
-order: 030
 updated: 2023-01-17
 ---
 
@@ -25,15 +22,15 @@ Um website composto essencialmente por páginas web estáticas garante um melhor
 
 - Ter um [plano de alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) que inclui um acesso SSH. Este acesso permite instalar em linha de comandos uma ou várias soluções alternativas às que são propostas por predefinição nas nossas ofertas de alojamento web.
 - estar familiarizado com a introdução em linha de comandos.
-- Ter capacidade para transferir ficheiros em FTP com um cliente como [FileZilla](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/).
-- Parametrizar a sua zona DNS para apontar o seu nome de domínio (ou subdomínio) para o seu alojamento web partilhado. Isto é particularmente útil se deseja alojar vários sites em [multi-sites](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/) no seu alojamento web partilhado.
+- Ter capacidade para transferir ficheiros em FTP com um cliente como [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide).
+- Parametrizar a sua zona DNS para apontar o seu nome de domínio (ou subdomínio) para o seu alojamento web partilhado. Isto é particularmente útil se deseja alojar vários sites em [multi-sites](/pages/web/hosting/multisites_configure_multisite) no seu alojamento web partilhado.
 - Instalar previamente [Composer](https://getcomposer.org/){.external} com o ficheiro `composer.phar` na raiz do seu alojamento web partilhado ou na pasta alvo do seu domínio.
 
 ## Instruções
 
 Os [alojamentos web partilhados](https://www.ovhcloud.com/pt/web-hosting/) permitem declarar domínios ou subdomínios em multi-sites. Um domínio ou um subdomínio é necessário para implementar o seu website realizado com **Cecil**.
 
-Para o ajudar a declarar um domínio ou um subdomínio em multi-site no seu alojamento, consulte a nossa página "[Partilhar o alojamento entre vários sites](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/)".
+Para o ajudar a declarar um domínio ou um subdomínio em multi-site no seu alojamento, consulte a nossa página "[Partilhar o alojamento entre vários sites](/pages/web/hosting/multisites_configure_multisite)".
 
 ### Criar o diretório no qual serão os seus ficheiros
 
@@ -96,7 +93,7 @@ Agora pode ver o resultado ao aceder ao seu domínio:
 
 Para visualizar o resultado do seu website no seu browser, modifique o apontamento do seu nome de domínio ou de subdomínio no diretório `_site` criado anteriormente aquando da instalação de **Cecil**.
 
-Se o seu domínio ou subdomínio estiver alojado na OVHcloud, consulte os nossos guias relativos à [configuração DNS](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/) e à implementação de um [multisite no seu alojamento web](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/).
+Se o seu domínio ou subdomínio estiver alojado na OVHcloud, consulte os nossos guias relativos à [configuração DNS](/pages/web/domains/dns_zone_edit) e à implementação de um [multisite no seu alojamento web](/pages/web/hosting/multisites_configure_multisite).
 
 ### Configurar o seu site
 
@@ -156,7 +153,7 @@ Pode visualizá-lo no seu servidor introduzindo o URL do seu site, seguido de `/
 
 #### Modificação no servidor
 
-A edição dos ficheiros _Markdown_ pode ser feita diretamente no servidor de alojamento web. Na sua oferta de [alojamento Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), o seu acesso SSH permite utilizar indiferentemente [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} ou [vim](com){.external}.
+A edição dos ficheiros _Markdown_ pode ser feita diretamente no servidor de alojamento web. Na sua oferta de [alojamento Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), o seu acesso SSH permite utilizar indiferentemente [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} ou [vim](/pt/hosting/install-configure-cecil/com){.external}.
 As capturas de ecrã do presente tutorial foram realizadas sob **GNU nano**.
 
 Editar o ficheiro `mypage.md` situado no diretório `pages` o seguinte comando se estiver na raiz do seu site:
@@ -220,4 +217,4 @@ O [site oficial da aplicação Cecil](https://cecil.app/){.external}
 
 Um [guia sobre o formato Markdown](https://www.markdownguide.org/){.external}
 
-Nosso [guia sobre a utilização do FileZilla](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/)
+Nosso [guia sobre a utilização do FileZilla](/pages/web/hosting/ftp_filezilla_user_guide)

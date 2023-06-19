@@ -1,10 +1,8 @@
 ---
 title: Changer la politique d’accès au vCenter
-slug: changer-la-politique-d-acces-au-vcenter
 routes:
     canonical: 'https://docs.ovh.com/fr/private-cloud/changer-la-politique-d-acces-au-vcenter/'
 excerpt: Découvrez comment modifier la stratégie d'accès pour vCenter'
-section: Fonctionnalités OVHcloud
 updated: 2020-11-18
 ---
 
@@ -35,12 +33,12 @@ Dans la fenêtre qui s'affiche, choisissez  « Ouverte » ou « Restreinte » d
 
 > [!primary]
 >
-> Si vous avez défini la politique d'accès sur « Restreinte », consultez le guide [« Autoriser des IP à se connecter au vCenter »](../autoriser-des-ip-a-se-connecter-au-vcenter/).
+> Si vous avez défini la politique d'accès sur « Restreinte », consultez le guide [« Autoriser des IP à se connecter au vCenter »](/pages/cloud/managed-bare-metal/vcenter-authorise-ip-access).
 > 
 
 ## Aller plus loin
 
-[Autoriser des IP à se connecter au vCenter](../autoriser-des-ip-a-se-connecter-au-vcenter/)
+[Autoriser des IP à se connecter au vCenter](/pages/cloud/managed-bare-metal/vcenter-authorise-ip-access)
 
 Échangez avec notre communauté d’utilisateurs sur [https://community.ovh.com/](https://community.ovh.com/){.external}.
 

@@ -1,9 +1,6 @@
 ---
 title: Configuring the cluster autoscaler
-slug: configuring-cluster-autoscaler
 excerpt: ''
-section: User guides
-order: 7
 updated: 2022-05-17
 ---
 
@@ -19,8 +16,7 @@ updated: 2022-05-17
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -37,12 +33,12 @@ OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the
 
 During the day-to-day life of your cluster, you may want to dynamically adjust the size of your cluster to accommodate to your workloads. The cluster autoscaler simplifies the task by scaling up or down your OVHcloud Managed Kubernetes cluster to meet the demand of your workloads.
 
-This guide follows up the [Using the cluster autoscaler](../using-cluster-autoscaler) guide, and it will cover a description of the cluster autoscaler configuration.
+This guide follows up the [Using the cluster autoscaler](/pages/platform/kubernetes-k8s/using-cluster-autoscaler) guide, and it will cover a description of the cluster autoscaler configuration.
 
 ## Requirements
 
 - An OVHcloud Managed Kubernetes cluster
-- A basic understanding of [how the cluster autoscaler works and how to enable it](../using-cluster-autoscaler)
+- A basic understanding of [how the cluster autoscaler works and how to enable it](/pages/platform/kubernetes-k8s/using-cluster-autoscaler)
 
 ## Instructions
 
@@ -82,7 +78,7 @@ The easiest way to enable the autoscaler is using the Kubernetes API, for exampl
 
 #### Using Kubernetes API
 
-When the autoscaler is enabled on a node pool, it uses a [default configuration](https://docs.ovh.com/au/en/kubernetes/configuring-cluster-autoscaler/#cluster-autoscaler-configuration).
+When the autoscaler is enabled on a node pool, it uses a [default configuration](/pages/platform/kubernetes-k8s/configuring-cluster-autoscaler#cluster-autoscaler-configuration).
 
 To list node pools, you can use:
 
@@ -149,7 +145,7 @@ If you consider that we should prioritize the possible customization of other au
 
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
 
-Otherwise to skip it and learn more about using your Kubernetes cluster the practical way, we invite you to look at our  [tutorials](../) .
+Otherwise to skip it and learn more about using your Kubernetes cluster the practical way, we invite you to look at our  [tutorials](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s) .
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

@@ -1,9 +1,6 @@
 ---
 title: 'Activation de la mise en conformité Healthcare (HDS) ou Payment Services (PCI DSS)'
-slug: activer-l-option-hds-ou-pci-dss
 excerpt: "Découvrez comment activer l'option pour l’hébergement des données de santé ou des données bancaires sur votre offre Hosted Private Cloud"
-section: 'Services et options OVHcloud'
-order: 3
 updated: 2020-05-27
 ---
 
@@ -36,13 +33,13 @@ Plusieurs conditions sont essentielles :
 
 - **Les options [NSX](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/){.external} et [vROps](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/vrops/){.external} doivent être installées**: depuis l'onglet `Informations générales`{.action}, dans la section « Options et conformité », vous pouvez vérifier l'état d'activation de ces options. Si elles ne sont pas activées, activez-les en cliquant sur le bouton `...`{.action} puis sur `Activer`{.action}.
 
-- **La politique d'accès à vCenter doit être restreinte**: depuis l'onglet `Sécurité`{.action} , vous pouvez vérifier l'état de la politique de sécurité. S'il n'est pas restreint, effectuez la modification en cliquant sur `Modifier la politique d'accès à vCenter`{.action}, puis suivez les étapes. N'hésitez pas à consulter notre guide [Présentation de l’espace client Private Cloud OVHcloud](../manager-ovh-private-cloud/).
+- **La politique d'accès à vCenter doit être restreinte**: depuis l'onglet `Sécurité`{.action} , vous pouvez vérifier l'état de la politique de sécurité. S'il n'est pas restreint, effectuez la modification en cliquant sur `Modifier la politique d'accès à vCenter`{.action}, puis suivez les étapes. N'hésitez pas à consulter notre guide [Présentation de l’espace client Private Cloud OVHcloud](/pages/cloud/private-cloud/manager_ovh_private_cloud).
 
-- **Vous devez disposer d'au moins une adresse IP autorisée pour vous connecter à vCenter**: depuis l'onglet `Sécurité`{.action} , assurez-vous d'avoir autorisé au moins une adresse IP. Si nécessaire, cliquez sur `Ajouter une nouvelle plage d'adresses IP`{.action}. N'hésitez pas à consulter notre guide [Présentation de l’espace client Private Cloud OVHcloud](../manager-ovh-private-cloud/).
+- **Vous devez disposer d'au moins une adresse IP autorisée pour vous connecter à vCenter**: depuis l'onglet `Sécurité`{.action} , assurez-vous d'avoir autorisé au moins une adresse IP. Si nécessaire, cliquez sur `Ajouter une nouvelle plage d'adresses IP`{.action}. N'hésitez pas à consulter notre guide [Présentation de l’espace client Private Cloud OVHcloud](/pages/cloud/private-cloud/manager_ovh_private_cloud).
 
 Pour vous assurer que vous pouvez toujours vous connecter, nous vous recommandons d'avoir au moins deux adresses IP autorisées. Pour des raisons d'accessibilité, ces dernières doivent être fixes et non dynamiques.
 
-- **L'utilisateur « admin » doit avoir des informations à jour et disposer de l'autorisation nécessaire**: depuis l'onglet `Utilisateurs`{.action} , assurez-vous pour l'utilisateur "admin" que le numéro de téléphone et l'adresse e-mail sont correctement renseignés. L'utilisateur « admin » doit aussi disposer de l'autorisation "**token validator**". Si nécessaire, pour changer d'utilisateur, cliquez sur le bouton `...`{.action} , puis sur `Modifier`{.action}. N'hésitez pas à consulter notre guide [Présentation de l’espace client Private Cloud OVHcloud](../manager-ovh-private-cloud/).
+- **L'utilisateur « admin » doit avoir des informations à jour et disposer de l'autorisation nécessaire**: depuis l'onglet `Utilisateurs`{.action} , assurez-vous pour l'utilisateur "admin" que le numéro de téléphone et l'adresse e-mail sont correctement renseignés. L'utilisateur « admin » doit aussi disposer de l'autorisation "**token validator**". Si nécessaire, pour changer d'utilisateur, cliquez sur le bouton `...`{.action} , puis sur `Modifier`{.action}. N'hésitez pas à consulter notre guide [Présentation de l’espace client Private Cloud OVHcloud](/pages/cloud/private-cloud/manager_ovh_private_cloud).
 
 Pour vous assurer que vous pouvez toujours vous connecter à vCenter, nous vous recommandons d'avoir au moins deux utilisateurs disposant des informations et autorisations nécessaires (avec des adresses de messagerie et des numéros de téléphone différents).
 
@@ -84,11 +81,11 @@ Pour rappel, l'accès à l'interface sécurisée ne sera possible qu'une fois l'
  
 Connectez-vous ensuite à l'interface sécurisée via le lien fourni dans l'e-mail que vous avez reçu. Celui-ci sera similaire à `https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/password-lost`. Une fois connecté, vous pourrez changer le mot de passe de l'utilisateur « admin » puis les mot de passe des éventuels utilisateurs supplémentaires.
 
-Pour plus de détails, consultez [notre guide dédié au fonctionnement de l'interface sécurisée](../interface-secure/)
+Pour plus de détails, consultez [notre guide dédié au fonctionnement de l'interface sécurisée](/pages/cloud/private-cloud/interface-secure)
 
 ## Aller plus loin
 
-[Présentation de l’espace client Private Cloud OVHcloud](../manager-ovh-private-cloud/)
+[Présentation de l’espace client Private Cloud OVHcloud](/pages/cloud/private-cloud/manager_ovh_private_cloud)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
 

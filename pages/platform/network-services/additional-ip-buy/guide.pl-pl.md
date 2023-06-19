@@ -1,9 +1,6 @@
 ---
 title: Wykupienie adresu Additional IP
 excerpt: "Dowiedz się, jak zamawiać adresy Additional IP dla swoich instancji"
-slug: buy-additional-ip
-section: Additional IP
-order: 02
 updated: 2023-01-04
 ---
 
@@ -34,7 +31,7 @@ Te adresy Additional IP można migrować tylko do instancji tego samego projektu
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Posiadanie co najmniej jednej instancji. W tym celu zapoznaj się z [przewodnikiem dotyczącym tworzenia instancji w Panelu klienta](https://docs.ovh.com/pl/public-cloud/tworzenie_instancji_w_panelu_klienta_ovh/).
+- Posiadanie co najmniej jednej instancji. W tym celu zapoznaj się z [przewodnikiem dotyczącym tworzenia instancji w Panelu klienta](/pages/platform/public-cloud/public-cloud-first-steps#krok-3-tworzenie-instancji/).
 
 > [!warning]
 > Ta funkcja nie jest aktualnie dostępna dla instancji Metal.
@@ -87,15 +84,15 @@ Na ostatnim etapie wybierz instancję z rozwijanego menu. Następnie kliknij `Wy
 
 Zamówienie zostanie automatycznie otwarte, aby sfinalizować zamówienie.
 
-Więcej informacji znajdziesz w przewodniku dotyczącym [zarządzania zamówieniami OVHcloud](https://docs.ovh.com/pl/billing/zarzadzanie-zamowieniami-ovh/).
+Więcej informacji znajdziesz w przewodniku dotyczącym [zarządzania zamówieniami OVHcloud](/pages/account/billing/managing_ovh_orders).
 
 Możesz również wyświetlić zamówienie w Panelu klienta, sekcja `Dashboard`{.action}, klikając `Pokaż moje zamówienia`{.action}.
 
-Następnym krokiem jest konfiguracja IP w systemie operacyjnym. Zapoznaj się [z przewodnikiem dotyczącym tej konfiguracji](https://docs.ovh.com/pl/publiccloud/network-services/configure-additional-ip/).
+Następnym krokiem jest konfiguracja IP w systemie operacyjnym. Zapoznaj się [z przewodnikiem dotyczącym tej konfiguracji](/pages/platform/network-services/getting-started-04-configure-additional-ip-to-instance).
 
 ## Sprawdź również
 
-[Konfiguracja Additional IP](https://docs.ovh.com/pl/publiccloud/network-services/configure-additional-ip/)
+[Konfiguracja Additional IP](/pages/platform/network-services/getting-started-04-configure-additional-ip-to-instance)
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 

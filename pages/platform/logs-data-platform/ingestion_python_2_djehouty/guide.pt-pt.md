@@ -1,8 +1,5 @@
 ---
 title: Pushing logs with a SDK - Python 2.x - Djehouty
-slug: logs-data-platform-djehouty
-order: 10
-section: Logging libraries
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-djehouty?id=kb_article_view&sysparm_article=KB0050050'
 updated: 2023-01-16
@@ -152,6 +149,6 @@ ltsv_logger.info("Bonjour '%s'", 'John', extra={"lang": 'fr'})
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/pt/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

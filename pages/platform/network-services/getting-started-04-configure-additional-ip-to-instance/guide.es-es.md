@@ -1,9 +1,6 @@
 ---
 title: Configurar una Additional IP
-slug: configure-additional-ip
 excerpt: Cómo añadir direcciones Additional IP a la configuración de la instancia
-section: Additional IP
-order: 01
 updated: 2023-01-04
 ---
 
@@ -296,7 +293,7 @@ En la sección "Direcciones IP", compruebe que la dirección Additional IP se ha
 
 ### Diagnóstico
 
-En primer lugar, reinicie su instancia utilizando el sistema operativo de la instancia o el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Si todavía no consigue establecer una conexión entre la red pública y su Additional IP y si sospecha que existe algún problema de red, deberá reiniciar la instancia en [modo de rescate](https://docs.ovh.com/es/public-cloud/poner_una_instancia_en_modo_de_rescate/). A continuación, podrá configurar la dirección Additional IP directamente en la instancia.
+En primer lugar, reinicie su instancia utilizando el sistema operativo de la instancia o el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Si todavía no consigue establecer una conexión entre la red pública y su Additional IP y si sospecha que existe algún problema de red, deberá reiniciar la instancia en [modo de rescate](/pages/platform/public-cloud/put_an_instance_in_rescue_mode). A continuación, podrá configurar la dirección Additional IP directamente en la instancia.
 
 Una vez que se haya conectado al modo de rescate por SSH, introduzca el siguiente comando:
 
@@ -308,9 +305,9 @@ Para probar la conexión, solo tiene que enviar un ping a su dirección Addition
 
 ## Más información
 
-[Importar una Additional IP](https://docs.ovh.com/es/publiccloud/network-services/import-additional-ip/)
+[Importar una Additional IP](/pages/platform/network-services/additional-ip-import)
 
-[Migrar una Additional IP](https://docs.ovh.com/es/publiccloud/network-services/migrate-additional-ip/)
+[Migrar una Additional IP](/pages/platform/network-services/additional-ip-migrate)
 
 Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 

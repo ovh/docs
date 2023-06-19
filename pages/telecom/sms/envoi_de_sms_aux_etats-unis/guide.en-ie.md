@@ -1,8 +1,6 @@
 ---
 title: Sending SMS messages to the USA
-slug: sending-sms-to-usa
 excerpt: Find out how to send SMS messages to the USA
-section: Sending SMS messages
 updated: 2022-08-05
 ---
 
@@ -63,7 +61,7 @@ A pop-up will appear with fields to complete.
 #### 2.2 Via APIs
 
 > [!success]
-> If you are not familiar with using the OVHcloud API, please refer to our guide on [Getting started with the OVHcloud API](https://docs.ovh.com/ie/en/api/first-steps-with-ovh-api/).
+> If you are not familiar with using the OVHcloud API, please refer to our guide on [Getting started with the OVHcloud API](/pages/account/api/first-steps).
 
 Log in to [api.ovh.com/](https://api.ovh.com/), then use the following API:
 
@@ -99,7 +97,7 @@ Once your message template has been created and validated, the outgoing SMS auto
 
 If you send an SMS to the US without creating and validating a template, the SMS will be rejected and the Premium Tracking Transaction Code (PTT code) 1999 will be sent to you, which corresponds to the “No templates available” error message.
 
-You can view the other possible return codes in [this guide](../everything_you_need_to_know_about_sms_users/).
+You can view the other possible return codes in [this guide](/pages/telecom/sms/tout_savoir_sur_les_utilisateurs_sms).
 
 ## Go further
 

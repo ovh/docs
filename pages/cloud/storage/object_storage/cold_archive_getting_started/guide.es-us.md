@@ -1,11 +1,8 @@
 ---
 title: Cold Archive - Getting started with Cold Archive (EN)
-slug: cold-archive/getting-started
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/cold-archive/getting-started/'
+    canonical: '/pages/cloud/storage/object_storage/cold_archive_getting_started'
 excerpt: This guide shows you how to manage your data with Cold Archive
-section: Cold Archive Storage Class Specifics
-order: 020
 updated: 2023-05-17
 ---
 
@@ -21,7 +18,7 @@ Restoration can take some time as it needs to be read on tapes.
 
 ## Requirements
 
-- [Getting started with Object Storage](https://docs.ovh.com/us/es/storage/object-storage/s3/getting-started-with-object-storage/#using-aws-cli)
+- [Getting started with Object Storage](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage#using-aws-cli)
 - `awscli` version >= 1.16.62
 
 ## Instructions

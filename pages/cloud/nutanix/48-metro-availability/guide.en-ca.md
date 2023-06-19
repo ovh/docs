@@ -1,9 +1,6 @@
 ---
 title: "Configuring Disaster Recovery with Metro"
-slug: metro-availability
 excerpt: "Implementing Metro for a Disaster Recovery Plan"
-section: "Disaster Recovery Plan"
-order: 06
 updated: 2023-05-09
 ---
 
@@ -103,8 +100,8 @@ The cluster configuration information used in our guide is as follows:
 
 In addition to this guide, you can use these documents:
 
-- [Nutanix hyperconvergence](https://docs.ovh.com/ca/en/nutanix/nutanix-hci/) 
-- [advanced tools](https://docs.ovh.com/ca/en/nutanix/advanced-tools/)
+- [Nutanix hyperconvergence](/pages/cloud/nutanix/03-nutanix-hci) 
+- [advanced tools](/pages/cloud/nutanix/09-advanced-tools)
 
 <a name="configuration"></a>
 
@@ -116,7 +113,7 @@ In addition to this guide, you can use these documents:
 
 The first step is to interconnect the three clusters on the same OVHcloud vRack. 
 
-Use this guide to connect your clusters: [Interconnect clusters through the vRack](https://docs.ovh.com/ca/en/nutanix/nutanix-vrack-interconnection/). To connect the three clusters, use the instructions provided in the guide:
+Use this guide to connect your clusters: [Interconnect clusters through the vRack](/pages/cloud/nutanix/45-vrack-interconnection). To connect the three clusters, use the instructions provided in the guide:
 
 - Roubaix clusters in the vRack dedicated to Gravelines.
 - Erith clusters in the vRack dedicated to Gravelines.
@@ -599,7 +596,7 @@ We will therefore create 3 additional subnets on the Gravelines and Roubaix clus
 - **testinfra** on VLAN 101.
 - **production** on VLAN 102.
 
-Use this guide to create VLANs on your Nutanix clusters: [isolate production management machines](https://docs.ovh.com/ca/en/nutanix/nutanix-isolate-management-machines/).
+Use this guide to create VLANs on your Nutanix clusters: [isolate production management machines](/pages/cloud/nutanix/27-isolate-management-vm).
 
 In the Prism Central `Subnets` dashboard, you will see six new subnets.
 
@@ -1082,13 +1079,13 @@ The list of events appears, click `Close`{.action} to close.
 
 ## Go further
 
-[Interconnect clusters through the vRack](https://docs.ovh.com/ca/en/nutanix/nutanix-vrack-interconnection/)
+[Interconnect clusters through the vRack](/pages/cloud/nutanix/45-vrack-interconnection)
 
-[Disaster Recovery Plan for Nutanix](https://docs.ovh.com/ca/en/nutanix/disaster-recovery-plan-overview/)
+[Disaster Recovery Plan for Nutanix](/pages/cloud/nutanix/43-disaster-recovery-plan-overview)
 
-[Asynchronous or NearSync replication through Prism Element](https://docs.ovh.com/ca/en/nutanix/prism-element-nutanix-replication/)
+[Asynchronous or NearSync replication through Prism Element](/pages/cloud/nutanix/46-prism-element-replication)
 
-[Advanced replication with Leap](https://docs.ovh.com/ca/en/nutanix/leap-replication/)
+[Advanced replication with Leap](/pages/cloud/nutanix/47-nutanix-leap)
 
 [Introduction to vRacks](https://www.ovhcloud.com/en-ca/network/vrack/)
 

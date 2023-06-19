@@ -1,8 +1,5 @@
 ---
 title: "Récupérer la sauvegarde de l'espace FTP de son hébergement Cloud Web"
-slug: backup_ftp_cloud_web
-section: Sauvegardes
-order: 01
 updated: 2022-09-13
 ---
 
@@ -18,7 +15,7 @@ Votre hébergement Cloud Web dispose d'un espace de stockage dans lequel vous po
 > 
 > Les sauvegardes proposées par OVHcloud pour les hébergements Cloud Web sont non-contractuelles. Celles-ci sont mise à disposition pour compléter vos propres moyens de sauvegarde lors de situations urgentes. Nous vous recommandons donc de réaliser régulièrement vos propres sauvegardes de sécurité pour pallier à d'éventuelles pertes de données.
 > 
-> Lorsque vous effectuez une sauvegarde de sécurité pour votre site et que vous utilisez une base de données, faites également une sauvegarde de celle-ci. N'hésitez pas à consulter notre guide pour [récupérer une sauvegarde de votre base de données](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/).
+> Lorsque vous effectuez une sauvegarde de sécurité pour votre site et que vous utilisez une base de données, faites également une sauvegarde de celle-ci. N'hésitez pas à consulter notre guide pour [récupérer une sauvegarde de votre base de données](/pages/web/hosting/sql_database_export).
 > 
 
 **Découvrez comment récupérer et restaurer une sauvegarde FTP de votre hébergement Cloud Web.**
@@ -81,7 +78,7 @@ Le fichier ainsi téléchargé est au format *.tar.gz*.
 
 ### Restaurer votre sauvegarde
 
-Une fois vos fichiers téléchargés, vous pourrez vous [connecter à votre espace FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) à l'aide d'un logiciel FTP tel que [Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/) puis remplacer les fichiers que vous souhaitez par ceux récupérés.
+Une fois vos fichiers téléchargés, vous pourrez vous [connecter à votre espace FTP](/pages/web/hosting/ftp_connection) à l'aide d'un logiciel FTP tel que [Filezilla](/pages/web/hosting/ftp_filezilla_user_guide) puis remplacer les fichiers que vous souhaitez par ceux récupérés.
 
 > [!primary]
 >
@@ -90,9 +87,9 @@ Une fois vos fichiers téléchargés, vous pourrez vous [connecter à votre espa
 
 ## Aller plus loin 
 
-[Se connecter à l’espace de stockage de son hébergement Web](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/){.external}
+[Se connecter à l’espace de stockage de son hébergement Web](/pages/web/hosting/ftp_connection){.external}
 
-[Se connecter à l'aide du logiciel Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
+[Se connecter à l'aide du logiciel Filezilla](/pages/web/hosting/ftp_filezilla_user_guide)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 

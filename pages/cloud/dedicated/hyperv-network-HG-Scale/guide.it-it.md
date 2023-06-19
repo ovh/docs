@@ -1,9 +1,6 @@
 ---
 title: Configurare la rete su Windows Server con Hyper-V sulle gamme High Grade & SCALE
-slug: hyperv-network-hg-scale
 excerpt: Come configurare la rete su Windows Server con Hyper-V sulle gamme High Grade & SCALE
-section: Utilizzo avanzato
-order: 5
 updated: 2021-11-15
 ---
 
@@ -180,7 +177,7 @@ Una volta inseriti tutti gli indirizzi, clicca su `OK`{.action} per chiudere la 
 
 > [!warning]
 >
-> Questa fase può provocare la perdita di connessione. Se questo si verifica, accedi utilizzando l'[IPMI](https://docs.ovh.com/it/dedicated/utilizzo-ipmi-server-dedicati/) e modifica di nuovo la configurazione. Il tuo gateway di default è tornato vuoto. Aggiungi il gateway 100.64.0.1.
+> Questa fase può provocare la perdita di connessione. Se questo si verifica, accedi utilizzando l'[IPMI](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers) e modifica di nuovo la configurazione. Il tuo gateway di default è tornato vuoto. Aggiungi il gateway 100.64.0.1.
 >
 
 #### Aggiungi una rotta statica

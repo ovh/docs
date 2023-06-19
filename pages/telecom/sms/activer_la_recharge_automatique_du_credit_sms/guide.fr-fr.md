@@ -1,9 +1,7 @@
 ---
 title: 'Gérer les crédits SMS et activer la recharge automatique'
-slug: activer-la-recharge-automatique-du-credit-sms
 excerpt: 'Apprenez comment gérer vos crédits SMS OVHcloud'
 legacy_guide_number: '16254520'
-section: 'Gérer mon offre'
 updated: 2023-02-09
 ---
 
@@ -40,7 +38,7 @@ Le lien suivant vous permettra de retrouver le coût d'envoi, en crédits, de vo
 >
 > Un SMS ne peut contenir qu'une quantité limitée de caractères en fonction de son encodage. Le détail des encodages et caractères admis est disponible sur ce guide :
 > 
-> [Envoyer des SMS depuis mon espace client OVHcloud](../envoyer_des_sms_depuis_mon_espace_client/#etape-2-composer-votre-sms)
+> [Envoyer des SMS depuis mon espace client OVHcloud](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#etape-2-composer-votre-sms)
 >
 
 ### La recharge automatique

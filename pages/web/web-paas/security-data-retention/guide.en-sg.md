@@ -1,8 +1,5 @@
 ---
 title: Data retention
-slug: security-data-retention
-section: Security
-order: 8
 updated: 2021-05-11
 ---
 
@@ -25,7 +22,7 @@ System level access and security logs are maintained by Web PaaS for diagnostic 
 
 ## Application logs
 
-Application logs on each customer environment are retained with the environment.  Individual log files are truncated at 100 MB, regardless of their age.  See the [accessing logs](../development-logs) page for instructions on how to access them.
+Application logs on each customer environment are retained with the environment.  Individual log files are truncated at 100 MB, regardless of their age.  See the [accessing logs](/pages/web/web-paas/development-logs) page for instructions on how to access them.
 
 When an environment is deleted, its application logs are deleted as well.
 

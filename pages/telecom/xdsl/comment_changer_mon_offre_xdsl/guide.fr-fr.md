@@ -1,7 +1,5 @@
 ---
 title: Comment changer mon offre xDSL/FTTH
-slug: comment-changer-mon-offre-xdsl
-section: Gestion de mon offre
 updated: 2023-02-16
 ---
 

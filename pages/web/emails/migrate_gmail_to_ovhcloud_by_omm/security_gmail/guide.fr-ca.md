@@ -1,6 +1,5 @@
 ---
 title: 'Comment autoriser les connexions moins sécurisées sur Gmail'
-slug: securite-gmail
 hidden: true
 updated: 2022-04-06
 ---
@@ -14,7 +13,7 @@ Ce guide vous détaille comment activer l'option "autoriser les applications moi
 
 > [!primary]
 > 
-> Cette documentation est une étape liée au guide [«Migrer un compte Gmail vers une adresse e-mail OVHcloud via OVH Mail Migrator»](../../migration-de-gmail-via-ovh-mail-migrator){.external}
+> Cette documentation est une étape liée au guide [«Migrer un compte Gmail vers une adresse e-mail OVHcloud via OVH Mail Migrator»](/pages/web/emails/migrate_gmail_to_ovhcloud_by_omm){.external}
 > 
 
 ## En pratique
@@ -56,5 +55,5 @@ Après validation, le message ci-dessous indique que votre choix a bien été pr
 
 ## Aller plus loin
 
-[«Migrer une adresse Gmail vers une adresse e-mail OVHcloud via OVH Mail Migrator »](../../migration-de-gmail-via-ovh-mail-migrator){.external}
+[«Migrer une adresse Gmail vers une adresse e-mail OVHcloud via OVH Mail Migrator »](/pages/web/emails/migrate_gmail_to_ovhcloud_by_omm){.external}
 

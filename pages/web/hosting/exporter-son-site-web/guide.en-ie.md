@@ -1,9 +1,6 @@
 ---
 title: 'Exporting a website'
-slug: export-a-website
 excerpt: 'Find out how to export an OVHcloud website'
-section: 'Getting started'
-order: 04
 updated: 2022-02-03
 ---
 
@@ -37,13 +34,13 @@ This information was included in the email informing you that your web hosting p
 
 ![export-website](images/export-website-step1-1.png){.thumbnail}
 
-The information associated with your storage space will now appear. You should be able to find the information you need to log in to it. If you need help with this, please refer to our guide on [Logging in to your Web Hosting plan’s storage space](../log-in-to-storage-ftp-web-hosting/){.external}. If you are no longer in possession of the password, refer to the instructions set out in our documentation on [Modifying a FTP user password](../modify-ftp-user-password/){.external}.
+The information associated with your storage space will now appear. You should be able to find the information you need to log in to it. If you need help with this, please refer to our guide on [Logging in to your Web Hosting plan’s storage space](/pages/web/hosting/ftp_connection){.external}. If you are no longer in possession of the password, refer to the instructions set out in our documentation on [Modifying a FTP user password](/pages/web/hosting/ftp_change_password){.external}.
 
 Once you have everything you need, there are two different ways of retrieving your files from the storage space:
 
 - **Using FTP- or SFTP-compatible software.** You will need to install a compatible program on your computer (e.g. FileZilla). Since OVHcloud did not create the software package you have installed, please contact the software’s publisher if you are experiencing difficulties using it.
 
-- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVHcloud hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} are required to use this type of access. For further information on this, please refer to our guide on [Accessing your web hosting plan via SSH](../web_hosting_ssh_on_web_hosting_packages/){.external}. 
+- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVHcloud hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} are required to use this type of access. For further information on this, please refer to our guide on [Accessing your web hosting plan via SSH](/pages/web/hosting/ssh_on_webhosting){.external}. 
 
 #### 2.1 Upload the files from your storage space.
 
@@ -61,13 +58,13 @@ To identify the folder that the website is stored on, go to the `Multi-site`{.ac
 >
 
 To retrieve a backup of your database, please read our guide on
-[Retrieving the backup of a Web Hosting plan’s database](../web_hosting_database_export_guide/){.external}.
+[Retrieving the backup of a Web Hosting plan’s database](/pages/web/hosting/sql_database_export){.external}.
 
 If you are using a **Web Cloud Databases** for your website, you can go to the ‘Databases’ tab, click on the cogwheel next to the database, and click ‘Back up now’ in the drop-down menu.
 You can also download, import and restore backups in this section.
 
 If you are using a **Web Cloud Databases** database for your website, you can go to the ‘Databases’ tab, click the `...`{.action} button to the right of the database, and click ‘Back up now’ in the drop-down menu.
-You can also download, import and restore backups in this section. Please read our guide [Backing up and exporting a database of your database server](https://docs.ovh.com/ie/en/hosting/backup-export-database-server/)
+You can also download, import and restore backups in this section. Please read our guide [Backing up and exporting a database of your database server](/pages/web/clouddb/save-export-on-database-server)
 
 ### Step 3: Retrieve the logs for your OVHcloud web hosting plan.
 
@@ -97,16 +94,16 @@ When you have selected the log types and month you want to view, the logs are ar
 
 ## Go further
 
-[Logging in to your Web Hosting plan’s storage space](../log-in-to-storage-ftp-web-hosting/)
+[Logging in to your Web Hosting plan’s storage space](/pages/web/hosting/ftp_connection)
 
-[Modifying a FTP user password](../modify-ftp-user-password/)
+[Modifying a FTP user password](/pages/web/hosting/ftp_change_password)
 
-[FileZilla user guide](../web_hosting_filezilla_user_guide/)
+[FileZilla user guide](/pages/web/hosting/ftp_filezilla_user_guide)
 
-[Accessing a web hosting plan via SSH](../web_hosting_ssh_on_web_hosting_packages/)
+[Accessing a web hosting plan via SSH](/pages/web/hosting/ssh_on_webhosting)
 
-[Retrieving the backup of a Web Hosting plan’s database](../web_hosting_database_export_guide/)
+[Retrieving the backup of a Web Hosting plan’s database](/pages/web/hosting/sql_database_export)
 
-[Getting started with the Web Cloud Databases service](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/)
+[Getting started with the Web Cloud Databases service](/pages/web/clouddb/starting_with_clouddb)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: 'Guardar uma instância'
 excerpt: 'Saiba como efetuar o backup de uma instância Public Cloud a partir da Área de Cliente OVHcloud'
-slug: efetuar_backup_de_uma_instancia
-order: 1
-section: Gestão a partir da Área de Cliente OVHcloud
 updated: 2023-01-04
 ---
 
@@ -91,10 +88,10 @@ Os backups das suas instâncias são geridos na secção `Instance Backup`{.acti
 
 ![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
 
-Saiba como utilizar os backups para clonar ou restaurar instâncias neste [guia](https://docs.ovh.com/pt/public-cloud/criar_restaurar_um_servidor_virtual_a_partir_de_um_backup/).
+Saiba como utilizar os backups para clonar ou restaurar instâncias neste [guia](/pages/platform/public-cloud/create_restore_a_virtual_server_with_a_backup).
 
 ## Quer saber mais?
 
-[Criar/restaurar um servidor virtual a partir de um backup](https://docs.ovh.com/pt/public-cloud/criar_restaurar_um_servidor_virtual_a_partir_de_um_backup/)
+[Criar/restaurar um servidor virtual a partir de um backup](/pages/platform/public-cloud/create_restore_a_virtual_server_with_a_backup)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

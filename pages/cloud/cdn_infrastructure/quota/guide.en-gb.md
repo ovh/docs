@@ -1,9 +1,6 @@
 ---
 title: 'Understanding quota on the CDN'
-slug: quota-cdn
 excerpt: 'Find out how quota works on the CDN'
-section: 'Getting started'
-order: 3
 updated: 2018-02-22
 ---
 

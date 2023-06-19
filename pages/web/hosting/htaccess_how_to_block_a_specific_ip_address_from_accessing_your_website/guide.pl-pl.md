@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Jak zablokować dostęp do mojej strony dla niektórych adresów IP za pomocą pliku .htaccess?"
-slug: htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website
 excerpt: "Odkryj operacje możliwe przy użyciu pliku .htaccess, w celu zablokowania dostępu do Twojej strony WWW dla niektórych adresów IP"
-section: Przekierowania i uprawnienia dostępu
-order: 01
 updated: 2022-09-12
 ---
 
@@ -19,7 +16,7 @@ Tutorial ten pomoże Ci zabezpieczyć dostęp do Twoich stron WWW z sieci zewnę
 
 Możesz to zrobić, używając pliku ".htaccess", pliku tekstowego wykrywanego przez serwer www (Apache), który pozwala na zdefiniowanie specjalnych reguł w katalogu i wszystkich jego podkatalogach.
 
-Możesz utworzyć kilka plików ".htaccess" w [przestrzeni FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) Twojego hostingu, ale **jeden** na katalog lub subkatalog, aby uniknąć konfliktów między różnymi plikami ".htaccess".
+Możesz utworzyć kilka plików ".htaccess" w [przestrzeni FTP](/pages/web/hosting/ftp_connection) Twojego hostingu, ale **jeden** na katalog lub subkatalog, aby uniknąć konfliktów między różnymi plikami ".htaccess".
 
 **Dowiedz się, jak zablokować dostęp do Twojej strony WWW dla niektórych adresów IP poprzez plik ".htaccess".**
 
@@ -42,14 +39,14 @@ Możesz utworzyć kilka plików ".htaccess" w [przestrzeni FTP](https://docs.ovh
 >
 > Parametry określone przez plik ".htaccess" odnoszą się do katalogu, w którym jest zainstalowany, oraz do wszystkich jego podkatalogów.
 >
-> Aby edytować (lub utworzyć) te katalogi, zaloguj się do przestrzeni FTP Twojego hostingu. W razie potrzeby skorzystaj z przewodnika "[Dostęp do przestrzeni dyskowej](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/)".
+> Aby edytować (lub utworzyć) te katalogi, zaloguj się do przestrzeni FTP Twojego hostingu. W razie potrzeby skorzystaj z przewodnika "[Dostęp do przestrzeni dyskowej](/pages/web/hosting/ftp_connection)".
 >
 
 ### Blokuj IP, zakres adresów IP, domenę lub wszystkie adresy IP w danym kraju 
 
 Aby zablokować dostęp do Twojego hostingu za pomocą ".htaccess".<br>
 Zalecamy ostrożność podczas tworzenia składni oraz ustawień, które blokujesz, aby uniknąć blokady Twojej strony WWW podczas wyświetlania strony i/lub hostowanych skryptów.<br>
-W przypadku błędu możesz zawsze zalogować się do [przestrzeni FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) Twojego hostingu, aby poprawić tę sytuację. 
+W przypadku błędu możesz zawsze zalogować się do [przestrzeni FTP](/pages/web/hosting/ftp_connection) Twojego hostingu, aby poprawić tę sytuację. 
 
 > [!primary]
 >
@@ -368,9 +365,9 @@ Aby zezwolić na dostęp do Twojej usługi dla wszystkich adresów IP danego kra
 
 Niezależnie od bezpieczeństwa ogólnego dostępu do hostingu plik ".htaccess" pozwala na wykonywanie innych operacji. Poniżej znajdziesz trzy dodatkowe tutoriale OVHcloud dotyczące tego tematu:
 
-- [Chroń interfejs administracyjny swojej strony za pomocą ".htaccess"](https://docs.ovh.com/pl/hosting/hosting-htaccess-w-jaki-sposob-zabezpieczyc-dostep-dostepu-do-katalogu/).
-- [Zapisz adresy URL za pomocą mod_rewrite](https://docs.ovh.com/pl/hosting/hosting_www_htaccess_-_generowanie_adresow_za_pomoca_mod_rewrite/).
-- [Wykonywanie innych operacji przy użyciu pliku ".htaccess"](https://docs.ovh.com/pl/hosting/hosting_www_htaccess_-_inne_operacje/).
+- [Chroń interfejs administracyjny swojej strony za pomocą ".htaccess"](/pages/web/hosting/htaccess_protect_directory_by_password).
+- [Zapisz adresy URL za pomocą mod_rewrite](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite).
+- [Wykonywanie innych operacji przy użyciu pliku ".htaccess"](/pages/web/hosting/htaccess_what_else_can_you_do).
 
 ## Sprawdź również <a name="go-further"></a>
 

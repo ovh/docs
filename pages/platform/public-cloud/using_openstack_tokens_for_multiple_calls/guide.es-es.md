@@ -1,8 +1,6 @@
 ---
 title: "Uso de los tokens OpenStack"
-slug: using-openstack-tokens
 excerpt: "Cómo crear y utilizar tokens OpenStack para sus acciones"
-order: 01
 updated: 2023-05-05
 ---
 

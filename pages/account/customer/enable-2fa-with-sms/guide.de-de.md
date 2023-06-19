@@ -1,8 +1,6 @@
 ---
 title: 'Die Zwei-Faktor-Authentifizierung per SMS aktivieren'
-slug: die-zwei-Faktor-Authentifizierung-per-SMS-aktivieren
 excerpt: 'Erfahren Sie hier, wie Sie Ihr OVHcloud Kundencenter absichern können, indem Sie die Zwei-Faktor-Authentifizierung per SMS aktivieren'
-section: Sicherheit
 hidden: true
 updated: 2020-04-15
 ---
@@ -17,7 +15,7 @@ Neben weiteren Methoden stellt Ihnen OVHcloud die Zwei-Faktor-Authentifizierung 
 
 ## Voraussetzungen
 
-- Sie haben sich über die [verschiedenen Methoden der Zwei-Faktor-Authentifizierung bei OVHcloud](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern) informiert.
+- Sie haben sich über die [verschiedenen Methoden der Zwei-Faktor-Authentifizierung bei OVHcloud](/pages/account/customer/secure-ovhcloud-account-with-2fa) informiert.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben Ihr Mobiltelefon bei sich, um die SMS zu empfangen.
 

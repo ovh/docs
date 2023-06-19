@@ -1,9 +1,6 @@
 ---
 title: Archiving your logs - Cold-storage
-slug: logs-data-platform-cold-storage
-order: 4
 excerpt: This long-term storage feature keeps your logs safely and cost efficiently over several years.
-section: Features
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-cold-storage?id=kb_article_view&sysparm_article=KB0037652'
 updated: 2023-01-16
@@ -182,6 +179,6 @@ Remember, that you can also use a special field X-OVH-TO-FREEZE on your logs to 
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/fr/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

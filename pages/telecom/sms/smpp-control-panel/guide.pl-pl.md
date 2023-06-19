@@ -1,9 +1,6 @@
 ---
 title: Zarządzanie kontem SMS SMPP
 excerpt: "Dowiedz się, jak zarządzać ustawieniami konta SMPP w Panelu klienta OVHcloud"
-slug: smpp-control-panel
-section: SMPP
-order: 01
 updated: 2023-02-09
 ---
 
@@ -21,7 +18,7 @@ W Panelu klienta OVHcloud możesz odnaleźć dane do logowania SMPP, zmienić ha
 
 > [!primary]
 >
-> Zalecamy zapoznanie się z [specyfikacjami technicznymi oferty SMPP OVHcloud](https://docs.ovh.com/pl/sms/smpp-specifications/).
+> Zalecamy zapoznanie się z [specyfikacjami technicznymi oferty SMPP OVHcloud](/pages/telecom/sms/smpp-specification).
 
 ## Wymagania początkowe
 
@@ -60,12 +57,12 @@ Kliknij przycisk `Dodaj adres IP`{.action}, aby dodać adresy IP do tej listy.
 
 ### Zarządzanie nadawcami i zasileniami
 
-Zapoznaj się z naszymi przewodnikami na temat [zarządzanie nadawcami](https://docs.ovh.com/pl/sms/wysylanie-wiadomosci-sms-z-panelu-klienta/#etap-3-wybor-nadawcy-wiadomosci-sms) oraz na temat [zarządzanie zasileniami SMS i automatycznym doładowaniem](https://docs.ovh.com/pl/sms/aktywowanie-automatycznego-ladowania-zasilen-sms/).
+Zapoznaj się z naszymi przewodnikami na temat [zarządzanie nadawcami](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#etap-3-wybor-nadawcy-wiadomosci-sms) oraz na temat [zarządzanie zasileniami SMS i automatycznym doładowaniem](/pages/telecom/sms/activer_la_recharge_automatique_du_credit_sms).
 
 ## Sprawdź również
 
-Sprawdź [przewodnik dotyczący zarządzania historią wiadomości SMS](https://docs.ovh.com/pl/sms/zarzadzanie-historia-wiadomosci-sms/).
+Sprawdź [przewodnik dotyczący zarządzania historią wiadomości SMS](/pages/telecom/sms/gerer_l_historique_des_sms).
 
-[Specyfikacje techniczne oferty SMPP OVHcloud](https://docs.ovh.com/pl/sms/smpp-specifications/).
+[Specyfikacje techniczne oferty SMPP OVHcloud](/pages/telecom/sms/smpp-specification).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

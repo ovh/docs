@@ -1,11 +1,8 @@
 ---
 title: Die Wahl des Festplattenformats
-slug: die-wahl-des-festplattenformats
 routes:
-    canonical: 'https://docs.ovh.com/de/private-cloud/die-wahl-des-festplattenformats/'
+    canonical: '/pages/cloud/private-cloud/quel_format_de_disque_choisir'
 excerpt: Lernen Sie die verschiedenen Formate von Festplatten kennen
-section: Verwaltung virtueller Maschinen
-order: 04
 updated: 2020-11-18
 ---
 

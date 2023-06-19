@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Instalar manualmente un CMS en mi alojamiento"
-slug: web_hosting_instalar_un_cms_manualmente
 excerpt: "Descubra cómo instalar manualmente un CMS en un alojamiento"
-section: CMS
-order: 03
 updated: 2023-04-04
 ---
 
@@ -33,7 +30,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 > [!success]
 >
-> Para instalar su CMS **automáticamente** desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), consulte nuestra documentación sobre la instalación de un módulo en un clic](https://docs.ovh.com/es/hosting/modulos-en-un-clic/).
+> Para instalar su CMS **automáticamente** desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), consulte nuestra documentación sobre la instalación de un módulo en un clic](/pages/web/hosting/cms_install_1_click_modules).
 >
 
 **Descubra cómo configurar su sitio web instalando manualmente un CMS.**
@@ -97,7 +94,7 @@ Para instalar un CMS en su [plan de hosting](https://www.ovhcloud.com/es-es/web-
 
 La carpeta raíz corresponde al directorio en el que se instalará el futuro CMS en el alojamiento. Le recomendamos que elija un directorio vacío para evitar conflictos con otros posibles multisitios.
 
-Consulte nuestra guía sobre [cómo añadir un multisitio a un alojamiento web](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/) para determinar la carpeta raíz que debe utilizar con su CMS.
+Consulte nuestra guía sobre [cómo añadir un multisitio a un alojamiento web](/pages/web/hosting/multisites_configure_multisite) para determinar la carpeta raíz que debe utilizar con su CMS.
 
 > [!primary]
 >
@@ -110,11 +107,11 @@ Consulte nuestra guía sobre [cómo añadir un multisitio a un alojamiento web](
 Para obtener la dirección IP de su plan de hosting, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) en la sección `Web Cloud`{.action} y seleccione su plan de hosting en la sección `Alojamientos`{.action}.<br>
 En el recuadro `Información general`{.action}, a su derecha, encontrará la dirección IP de su alojamiento web en el formulario `IPv4`{.action}.
 
-Si la zona DNS activa de su dominio está gestionada en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), compare la dirección IP de su alojamiento con la presente en la zona DNS de su dominio, ayudándole a nuestra documentación sobre las [zonas DNS de OVHcloud](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/).
+Si la zona DNS activa de su dominio está gestionada en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), compare la dirección IP de su alojamiento con la presente en la zona DNS de su dominio, ayudándole a nuestra documentación sobre las [zonas DNS de OVHcloud](/pages/web/domains/dns_zone_edit).
 
 > [!warning]
 >
-> Si ha activado las opciones `CDN`{.action} o `IP del país`{.action} con su dominio, utilice la dirección IP adecuada con nuestra documentación que recoge [todas las direcciones IP de nuestros alojamientos compartidos](https://docs.ovh.com/es/hosting/lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web/).
+> Si ha activado las opciones `CDN`{.action} o `IP del país`{.action} con su dominio, utilice la dirección IP adecuada con nuestra documentación que recoge [todas las direcciones IP de nuestros alojamientos compartidos](/pages/web/hosting/clusters_and_shared_hosting_IP).
 
 Si no puede realizar estas comprobaciones, póngase en contacto con el proveedor de hosting de su zona DNS activa para actualizar el direccionamiento del dominio.
 
@@ -123,20 +120,20 @@ Si no puede realizar estas comprobaciones, póngase en contacto con el proveedor
 > Todos los cambios realizados en la zona DNS conllevan un plazo de propagación de entre 4 y 24 horas.
 >
 
-- Obtenga [la información necesaria para conectarse al espacio FTP de su alojamiento web](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/#1-obtener-los-datos-de-conexion).
-- Consulte los accesos a la base de datos de su plan de hosting, si ya existe, o cree una con ayuda de [documentación](https://docs.ovh.com/es/hosting/crear-base-de-datos/).
+- Obtenga [la información necesaria para conectarse al espacio FTP de su alojamiento web](/pages/web/hosting/ftp_connection#1-obtener-los-datos-de-conexion).
+- Consulte los accesos a la base de datos de su plan de hosting, si ya existe, o cree una con ayuda de [documentación](/pages/web/hosting/sql_create_database).
 
 #### 1.3 - Instalar el cliente FTP gratuito "FileZilla"
 
-Si todavía no utiliza un cliente FTP, puede utilizar Filezilla. Consulte la página de descarga gratuita y el tutorial sobre su uso en nuestra documentación sobre el [uso de FileZilla en el alojamiento de OVHcloud](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/).
+Si todavía no utiliza un cliente FTP, puede utilizar Filezilla. Consulte la página de descarga gratuita y el tutorial sobre su uso en nuestra documentación sobre el [uso de FileZilla en el alojamiento de OVHcloud](/pages/web/hosting/ftp_filezilla_user_guide).
 
 #### 1.4 - Preparar una base de datos <a name="step1-4"></a>
 
 Los CMS necesitan una base de datos para funcionar. Nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/) contienen, a excepción de [el alojamiento gratuito Start 10M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/).
 
-Utilice nuestra guía para [crear una base de datos desde su plan de hosting](https://docs.ovh.com/es/hosting/crear-base-de-datos/).
+Utilice nuestra guía para [crear una base de datos desde su plan de hosting](/pages/web/hosting/sql_create_database).
 
-Si tiene un plan Web Cloud Databases en MySQL o MariaDB y quiere utilizarlo para instalar manualmente su CMS, consulte nuestra documentación sobre la [creación de una base de datos en un servicio Web Cloud Databases](https://docs.ovh.com/es/clouddb/crear-bases-de-datos-y-usuarios/).
+Si tiene un plan Web Cloud Databases en MySQL o MariaDB y quiere utilizarlo para instalar manualmente su CMS, consulte nuestra documentación sobre la [creación de una base de datos en un servicio Web Cloud Databases](/pages/web/clouddb/create-db-and-user-on-db-server).
 
 Una vez que haya creado la base de datos, deberá descargar los parámetros de conexión (servidor, nombre de la base de datos, nombre de usuario y contraseña) y conservarlos para [el etapa 3](#step3) de esta guía.
 
@@ -144,12 +141,12 @@ Una vez que haya creado la base de datos, deberá descargar los parámetros de c
 >
 > Si desea instalar su CMS con una base de datos ya existente, recupere los parámetros de conexión a su base de datos directamente en los archivos del sitio web asociados a esta.
 >
-> Si también se trata de un CMS idéntico al que tiene que instalar, puede utilizar [esta guía](https://docs.ovh.com/es/hosting/cambiar-contrasena-base-de-datos/#etapa-3-cambiar-la-contrasena-de-la-base-de-datos-del-sitio-web-en-el-archivo-de-configuracion) para identificar los archivos de configuración en su [espacio de almacenamiento FTP](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/).
+> Si también se trata de un CMS idéntico al que tiene que instalar, puede utilizar [esta guía](/pages/web/hosting/sql_change_password#etapa-3-cambiar-la-contrasena-de-la-base-de-datos-del-sitio-web-en-el-archivo-de-configuracion) para identificar los archivos de configuración en su [espacio de almacenamiento FTP](/pages/web/hosting/ftp_connection).
 >
 > Conéctese a la base de datos para identificar los "prefijos" de las tablas que ya están en su interior. para no elegir un "prefijo" de tabla que ya utilice otro sitio web.
 >
-> - Para conectarse a la base de datos asociada a su plan de hosting, consulte [esta guía](https://docs.ovh.com/es/hosting/crear-base-de-datos/#acceder-a-la-interfaz-phpmyadmin).
-> - Para conectarse a una base de datos en un databases de Web Cloud, consulte [esta guía](https://docs.ovh.com/es/clouddb/coneccion-base-de-datos-servidor-bdd/).
+> - Para conectarse a la base de datos asociada a su plan de hosting, consulte [esta guía](/pages/web/hosting/sql_create_database#acceder-a-la-interfaz-phpmyadmin).
+> - Para conectarse a una base de datos en un databases de Web Cloud, consulte [esta guía](/pages/web/clouddb/connecting-to-database-on-database-server).
 >
 
 ### Etapa 2 - iniciar la instalación manual
@@ -178,7 +175,7 @@ A continuación se muestran los enlaces a las páginas de descarga de los CMS qu
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
 >
 >
-> Configure la versión de PHP en su alojamiento web con nuestra guía sobre [el cambio de versión PHP de un alojamiento web](https://docs.ovh.com/es/hosting/cambiar-version-php-en-alojamiento-web/).
+> Configure la versión de PHP en su alojamiento web con nuestra guía sobre [el cambio de versión PHP de un alojamiento web](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014).
 >
 Si ya utiliza una versión de PHP igual o superior a la necesaria, no es necesario realizar ningún cambio.
 >
@@ -205,7 +202,7 @@ Indique la carpeta "**CMS**" en la que quiera descargar los archivos desde esta 
 
 #### 2.3 - Mover los archivos fuente de la carpeta "CMS" al "directorio raíz" de su alojamiento web
 
-Una vez descomprimidos los archivos en su carpeta "**CMS**", [conéctese por FTP al espacio de almacenamiento](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) utilizando el [cliente FTP FileZilla](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/) y, a continuación, copie los archivos contenidos en la carpeta "**CMS**" en la "carpeta raíz" que haya establecido en su alojamiento durante el [etapa 1](#step1) de esta guía.
+Una vez descomprimidos los archivos en su carpeta "**CMS**", [conéctese por FTP al espacio de almacenamiento](/pages/web/hosting/ftp_connection) utilizando el [cliente FTP FileZilla](/pages/web/hosting/ftp_filezilla_user_guide) y, a continuación, copie los archivos contenidos en la carpeta "**CMS**" en la "carpeta raíz" que haya establecido en su alojamiento durante el [etapa 1](#step1) de esta guía.
 
 A continuación, un ejemplo con el CMS *WordPress*:
 
@@ -227,7 +224,7 @@ Si la "carpeta raíz" que ha definido no se ha creado automáticamente en las ac
 
 **Caso Particular**: Si tiene una velocidad de internet limitada y/o un plan de hosting **Pro** o superior, puede utilizar la conexión **SSH** para colocar los archivos de origen de su CMS en el espacio de almacenamiento de su alojamiento web.
 
-Para conectarse a su alojamiento por SSH, consulte nuestra guía sobre la [conexión por SSH desde un alojamiento compartido de OVHcloud](https://docs.ovh.com/es/hosting/web_hosting_ssh_en_alojamiento_compartido/).
+Para conectarse a su alojamiento por SSH, consulte nuestra guía sobre la [conexión por SSH desde un alojamiento compartido de OVHcloud](/pages/web/hosting/ssh_on_webhosting).
 
 Una vez que se haya conectado a **SSH**, ejecute los siguientes comandos:
 
@@ -351,18 +348,18 @@ A partir de esta etapa, el procedimiento será diferente en función del CMS que
 
 Para continuar con la instalación, siga uno de los siguientes enlaces haciendo clic en la guía correspondiente a su CMS:
 
-- [Finalizar la instalación de WordPress](https://docs.ovh.com/es/hosting/cms_instalar_manualmente_wordpress/)
-- [Finalizar la instalación de Joomla!](https://docs.ovh.com/es/hosting/instalar-manualmente-joomla/)
-- [Finalizar la instalación de Drupal](https://docs.ovh.com/es/hosting/cms_manually_install_drupal/)
-- [Finalizar la instalación de PrestaShop](https://docs.ovh.com/es/hosting/cms_manually_install_prestashop/)
+- [Finalizar la instalación de WordPress](/pages/web/hosting/cms_manual_installation_wordpress)
+- [Finalizar la instalación de Joomla!](/pages/web/hosting/cms_manual_installation_joomla)
+- [Finalizar la instalación de Drupal](/pages/web/hosting/cms_manual_installation_drupal)
+- [Finalizar la instalación de PrestaShop](/pages/web/hosting/cms_manual_installation_prestashop)
 
 ## Más información <a name="go-further"></a>
 
-[Migración de su sitio web y de su correo a OVHcloud](https://docs.ovh.com/es/hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/)
+[Migración de su sitio web y de su correo a OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh)
 
-[Publicar un sitio web en internet en un alojamiento web](https://docs.ovh.com/es/hosting/web_hosting_publicar_un_sitio_web_en_internet/)
+[Publicar un sitio web en internet en un alojamiento web](/pages/web/hosting/hosting_how_to_get_my_website_online)
 
-[Alojar varios sitios web en un mismo hosting](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/)
+[Alojar varios sitios web en un mismo hosting](/pages/web/hosting/multisites_configure_multisite)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 

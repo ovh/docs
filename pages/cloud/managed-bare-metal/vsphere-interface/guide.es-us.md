@@ -1,12 +1,9 @@
 ---
 title: Conectarse a la interfaz vSphere
 routes:
-    canonical: 'https://docs.ovh.com/us/es/private-cloud/instalar_el_vsphere_client/'
+    canonical: '/pages/cloud/private-cloud/vsphere_interface_connexion'
 excerpt: Cómo conectarse a la interfaz vSphere
-slug: instalar_el_vsphere_client
 legacy_guide_number: g600
-section: Primeros pasos
-order: 2
 updated: 2020-11-18
 ---
 

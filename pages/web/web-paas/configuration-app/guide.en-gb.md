@@ -1,8 +1,5 @@
 ---
 title: Your application
-slug: configuration-app
-section: Configuration
-order: 3
 updated: 2021-03-26
 ---
 
@@ -24,26 +21,26 @@ Different configuration properties can be applied to individual web and worker i
 
 The following properties apply only at the global level, and cannot be replicated inside an instance definition.
 
-* [`name`](name) *(required)* - Sets the unique name of the application container.
-* [`type`](type) *(required)* - Sets the container base image to use, including application language.
-* [`timezone`](timezone) - Sets the timezone of cron tasks in application container.
-* [`build`, `dependencies`, and `hooks`](build) - Control how the application gets compiled.  Note that this compilation happens before the application is copied into different instances, so any steps here will apply to all web and worker instances.
-* [`cron`](cron) - Defines scheduled tasks for the application.  Cron tasks will, technically, run as part of the web instance regardless of how many workers are defined.
-* [`source.root`](multi-app) - This nested value specifies the path where all code for the application lives.  It defaults to the directory where the `.platform.app.yaml` file is defined.  It is rarely needed except in advanced configurations.
+* [`name`](/pages/web/web-paas/configuration-app/name) *(required)* - Sets the unique name of the application container.
+* [`type`](/pages/web/web-paas/configuration-app/type) *(required)* - Sets the container base image to use, including application language.
+* [`timezone`](/pages/web/web-paas/configuration-app/timezone) - Sets the timezone of cron tasks in application container.
+* [`build`, `dependencies`, and `hooks`](/pages/web/web-paas/configuration-app/build) - Control how the application gets compiled.  Note that this compilation happens before the application is copied into different instances, so any steps here will apply to all web and worker instances.
+* [`cron`](/pages/web/web-paas/configuration-app/cron) - Defines scheduled tasks for the application.  Cron tasks will, technically, run as part of the web instance regardless of how many workers are defined.
+* [`source.root`](/pages/web/web-paas/configuration-app/multi-app) - This nested value specifies the path where all code for the application lives.  It defaults to the directory where the `.platform.app.yaml` file is defined.  It is rarely needed except in advanced configurations.
 
 The following properties can be set at the top level of the `.platform.app.yaml` file and apply to all application instances, or set within a given instance definition and apply just to that one.  If set in both places then the instance-specific one will take precedence, and completely replace the global one.  That is, if you want to make a change to just one sub-property of one of the following keys you need to replicate the entire block.
 
-* [`size`](size) - Sets an explicit sizing hint for the application.
-* [`relationships`](relationships) - Defines connections to other services and applications.
-* [`access`](access) - Restricts SSH access with more granularity than the management console.
-* [`disk` and `mounts`](storage) *(required)* - Defines writable file directories for the application.
-* [`variables`](variables) - Sets environment variables that control application behavior.
-* [`firewall`](firewall) - Defines outbound firewall rules for the application.
+* [`size`](/pages/web/web-paas/configuration-app/size) - Sets an explicit sizing hint for the application.
+* [`relationships`](/pages/web/web-paas/configuration-app/relationships) - Defines connections to other services and applications.
+* [`access`](/pages/web/web-paas/configuration-app/access) - Restricts SSH access with more granularity than the management console.
+* [`disk` and `mounts`](/pages/web/web-paas/configuration-app/storage) *(required)* - Defines writable file directories for the application.
+* [`variables`](/pages/web/web-paas/configuration-app/variables) - Sets environment variables that control application behavior.
+* [`firewall`](/pages/web/web-paas/configuration-app/firewall) - Defines outbound firewall rules for the application.
 
 The `.platform.app.yaml` file needs at least one of the following to define an instance, but may define both.
 
-* [`web`](web) - Controls how the web application is served.
-* [`worker`](workers) - Defines alternate copies of the application to run as background processes.
+* [`web`](/pages/web/web-paas/configuration-app/web) - Controls how the web application is served.
+* [`worker`](/pages/web/web-paas/configuration-app/workers) - Defines alternate copies of the application to run as background processes.
 
 ## Available resources
 
@@ -127,7 +124,7 @@ web:
 ```
 
 > [!primary]  
-> This configuration file is specific to one application. If you have multiple applications inside your Git repository (such as a RESTful web service and a front-end, or a main web site and a blog), you need `.platform.app.yaml` at the root of each application. See the [Multi-app](multi-app) documentation.
+> This configuration file is specific to one application. If you have multiple applications inside your Git repository (such as a RESTful web service and a front-end, or a main web site and a blog), you need `.platform.app.yaml` at the root of each application. See the [Multi-app](/pages/web/web-paas/configuration-app/multi-app) documentation.
 > 
 
 

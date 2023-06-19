@@ -1,10 +1,7 @@
 ---
 title: Parametri di accesso e sicurezza in Horizon
 excerpt: Come gestire e rendere sicuro l'accesso alle tue istanze
-slug: access_and_security_in_horizon
 legacy_guide_number: g1774
-section: Gestione da Horizon
-order: 4
 updated: 2021-05-26
 ---
 
@@ -23,7 +20,7 @@ Ad esempio, è possibile configurare gruppi di sicurezza per filtrare le conness
 
 ## Prerequisiti
 
-- [Accedere all’interfaccia Horizon](../horizon/)
+- [Accedere all’interfaccia Horizon](/pages/platform/public-cloud/introducing_horizon)
 
 ## Procedura
 
@@ -49,7 +46,7 @@ Questa sezione ti permette di archiviare e gestire le coppie di chiavi SSH. Per 
 
 Per aggiungere una chiave preesistente, clicca su `Import Public Key`{.action}. Nella nuova finestra, inserisci una chiave o seleziona un file di chiave.
 
-Questa sezione di interfaccia contiene le istruzioni di base. Per maggiori informazioni sulle chiavi SSH, consulta [questa guida](../creare-chiave-ssh/).
+Questa sezione di interfaccia contiene le istruzioni di base. Per maggiori informazioni sulle chiavi SSH, consulta [questa guida](/pages/platform/public-cloud/public-cloud-first-steps#step-1-crea-chiavi-ssh/).
 
 - **Security Groups** (sotto `Project`{.action} e poi `Network`{.action})
 

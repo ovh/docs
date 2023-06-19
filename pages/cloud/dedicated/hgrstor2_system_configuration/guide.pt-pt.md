@@ -1,11 +1,8 @@
 ---
 title: Configuring the storage on a HGR-STOR-2 server (EN)
-slug: hgrstor2-system-configuration 
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/dedicated/hgrstor2-system-configuration/'
+    canonical: '/pages/cloud/dedicated/hgrstor2_system_configuration'
 excerpt: Setting up and configuring the multipath as part of using an HGR-STOR-2 server
-section: 'Utilização avançada'
-order: 6
 updated: 2022-08-25
 ---
 

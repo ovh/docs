@@ -1,9 +1,6 @@
 ---
 title: Configure your Private Network
-slug: configure-vrack
 excerpt: Connect a Public Cloud Database to vRack
-section: General guides
-order: 035
 updated: 2022-10-26
 ---
 
@@ -54,13 +51,13 @@ Your vRack is ready!
 
 > [!primary]
 >
-> Learn more about vRack [here](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/)
+> Learn more about vRack [here](/pages/platform/network-services/getting-started-07-creating-vrack)
 >
 
 ### Step 2 - Creating a Public Cloud Database connected to the private network
 
 
-Follow this [guide](https://docs.ovh.com/gb/en/publiccloud/databases/getting-started/) to create a new Public Cloud Database.
+Follow this [guide](/pages/platform/databases/databases_01_order_control_panel) to create a new Public Cloud Database.
 
 > [!primary]
 >
@@ -83,7 +80,7 @@ Follow this [guide](https://docs.ovh.com/gb/en/publiccloud/databases/getting-sta
 
 ### Step 3 - Configure your Public Cloud database instance to accept incoming connections
 
-Follow the *Configure your \<database> instance to accept incoming connections* guide of your selected database type available [here](https://docs.ovh.com/gb/en/publiccloud/databases/) to configure your service after installation.
+Follow the *Configure your \<database> instance to accept incoming connections* guide of your selected database type available [here](/products/public-cloud-databases) to configure your service after installation.
 
 > [!primary]
 >
@@ -96,7 +93,7 @@ The database is now connected to the virtual network, we can use it from any com
 
 ### Step 4 - Adding a Public Cloud Instance to the vRack
 
-Follow this [guide](https://docs.ovh.com/gb/en/public-cloud/public-cloud-first-steps/#create-instance) to create a new Public Cloud Instance
+Follow this [guide](/pages/platform/public-cloud/public-cloud-first-steps#create-instance) to create a new Public Cloud Instance
 
 
 > [!primary]
@@ -108,12 +105,12 @@ Follow this [guide](https://docs.ovh.com/gb/en/public-cloud/public-cloud-first-s
 
 > [!primary]
 >
->If you want to test the access from an existing instance, read this tutorial to connect it to the vRack: [Configuring vRack for Public Cloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#in-case-of-an-existing-instance).
+>If you want to test the access from an existing instance, read this tutorial to connect it to the vRack: [Configuring vRack for Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack#in-case-of-an-existing-instance).
 >
 
 ### Step 5 - Example of verification with a Public Cloud Databases for Redis
 
-We assume that you have an already set SSH key on your project. For more details, read the [Creating and connecting to your first Public Cloud instance](https://docs.ovh.com/gb/en/public-cloud/public-cloud-first-steps/) page.
+We assume that you have an already set SSH key on your project. For more details, read the [Creating and connecting to your first Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps) page.
 
 Connect to the instance via SSH:
 

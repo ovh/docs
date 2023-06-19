@@ -1,9 +1,6 @@
 ---
 title: Changing project contacts
 excerpt: Find out how to change the contacts of a Public Cloud project
-slug: change_project_contacts
-section: Project management
-order: 6
 updated: 2022-04-04
 ---
 
@@ -42,14 +39,14 @@ In the new window, enter the desired NIC handle for each contact you wish to cha
 
 Once you have clicked `Confirm`{.action}, both OVHcloud accounts affected by the change will receive a confirmation email. This email contains a token with which the contact change can be accepted in the tab `My requests`{.action} of the **Contact management** section.
 
-For a more detailed explanation of this process, please consult our guide [Managing contacts for your services](../../customer/managing-contacts/).
+For a more detailed explanation of this process, please consult our guide [Managing contacts for your services](/pages/account/customer/managing_contacts).
 
 ## Go further
 
-[Information regarding Public Cloud billing options](../information-on-cloud-billing-options/)
+[Information regarding Public Cloud billing options](/pages/platform/public-cloud/analyze_billing)
 
-[Managing contacts for your services](../../customer/managing-contacts/)
+[Managing contacts for your services](/pages/account/customer/managing_contacts)
 
-[Delegating projects](../delegate-projects/)
+[Delegating projects](/pages/platform/public-cloud/delegate_projects)
 
 Join our community of users on <https://community.ovh.com/en/>.

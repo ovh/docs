@@ -1,9 +1,6 @@
 ---
 title: Activer les connexions Azure SSO avec votre compte OVHcloud
-slug: connect-saml-sso-azure-ad
 excerpt: "Découvrez comment associer votre Azure Active Directory à votre compte OVHcloud en utilisant SAML 2.0"
-section: Utilisation avancée
-order: 02
 updated: 2023-04-05
 ---
 
@@ -18,7 +15,7 @@ Vous pouvez utiliser l'authentification **SSO** (*Single Sign-On*) pour vous con
 ## Prérequis
 
 - Avoir accès aux rôles **Administrateur d'applications** et **Administrateur d'utilisateurs** d'un service Azure AD
-- Disposer d'un [compte OVHcloud](https://docs.ovh.com/fr/customer/creer-compte-ovhcloud/)
+- Disposer d'un [compte OVHcloud](/pages/account/customer/ovhcloud-account-creation)
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## En pratique
@@ -244,7 +241,7 @@ Le groupe créé doit apparaître sur la liste.
 
 ### Connexion via SSO
 
-Sur [la page de connexion OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), renseignez votre [identifiant](https://docs.ovh.com/fr/customer/creer-compte-ovhcloud/#quel-est-mon-identifiant-client) client suivi de **/idp** sans mot de passe puis cliquez sur le bouton `Login`{.action} .
+Sur [la page de connexion OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), renseignez votre [identifiant](/pages/account/customer/ovhcloud-account-creation#quel-est-mon-identifiant-client) client suivi de **/idp** sans mot de passe puis cliquez sur le bouton `Login`{.action} .
 
 ![Ovhcloud SSO Login step 1](images/ovhcloud_sso_login_1.png){.thumbnail}
 
@@ -260,7 +257,7 @@ Entrez le mot de passe de l'utilisateur de l'application Azure AD puis cliquez s
 
 ![Azure AD Login étape 3](images/azure_ad_login_3.png){.thumbnail}
 
-Vous êtes maintenant connecté avec le même [nichandle](https://docs.ovh.com/fr/customer/creer-compte-ovhcloud/#quel-est-mon-identifiant-client), mais via votre utilisateur Active Directory et en utilisant votre SSO d'application Azure AD.
+Vous êtes maintenant connecté avec le même [nichandle](/pages/account/customer/ovhcloud-account-creation#quel-est-mon-identifiant-client), mais via votre utilisateur Active Directory et en utilisant votre SSO d'application Azure AD.
 
 ![Ovhcloud SSO Login step 2](images/ovhcloud_sso_login_2.png){.thumbnail}
 

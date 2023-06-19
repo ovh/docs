@@ -1,8 +1,6 @@
 ---
 title: 'Creare un DNS secondario su un server dedicato'
-slug: creare-dns-secondario-server-dedicato
 excerpt: 'Come configurare un DNS secondario sul tuo server dedicato OVHcloud'
-section: 'Utilizzo avanzato'
 updated: 2021-01-08
 ---
 
@@ -73,7 +71,7 @@ Prima di poterlo aggiungere al DNS secondario OVHcloud, è necessario confermare
 
 - Se il dominio è gestito da un provider esterno o utilizza server DNS esterni allo stadio attuale, accedi allo Spazio Cliente del tuo provider DNS e aggiungi un record TXT con il sottodominio "ownercheck" e il valore fornito allo Step 2 dell'[Aggiungi un dominio"](#ajoutdomaine).
 
-- Se il dominio è gestito da OVHcloud come server di registrazione e utilizza server DNS OVHcloud, chiudi la finestra cliccando su `Annulla`{.action}. Segui le istruzioni di [questa guida](../../domains/web_hosting_modifica_la_tua_zona_dns/) per aggiungere il record TXT nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+- Se il dominio è gestito da OVHcloud come server di registrazione e utilizza server DNS OVHcloud, chiudi la finestra cliccando su `Annulla`{.action}. Segui le istruzioni di [questa guida](/pages/web/domains/dns_zone_edit) per aggiungere il record TXT nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 ![DNS secondario](images/cp-04.png){.thumbnail}
 
@@ -81,6 +79,6 @@ Dopo aver aggiunto correttamente il record TXT alla zona DNS del dominio, ripeti
 
 ## Per saperne di più
 
-[Modifica una zona DNS OVHcloud](../../domains/web_hosting_modifica_la_tua_zona_dns/){.external}
+[Modifica una zona DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external}
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

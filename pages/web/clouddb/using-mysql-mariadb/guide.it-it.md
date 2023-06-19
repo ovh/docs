@@ -1,9 +1,6 @@
 ---
 title: Come utilizzare MySQL e MariaDB
-slug: come-utilizzare-mysql-e-mariadb
 excerpt: Guida all'utilizzo dei tuoi database
-section: Per iniziare
-order: 02
 updated: 2023-02-15
 ---
 
@@ -35,7 +32,7 @@ Questo motore è compatibile al 100% ed è stato progettato per essere più "lib
 
 - Disporre di una [istanza Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di[hosting web performance](https://www.ovhcloud.com/fr/web-hosting/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Consulta la guida [all'avvio di Web Cloud Databases](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/)
+- Consulta la guida [all'avvio di Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb)
 
 ## Procedura
 
@@ -61,7 +58,7 @@ Per accedere al tuo database, sono necessarie queste informazioni:
 
 Questi dati sono disponibili nella sezione Web del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
-Se necessario, consulta la guida: [Inziare a utilizzare Web Cloud Databases](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/)
+Se necessario, consulta la guida: [Inziare a utilizzare Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb)
 
 #### Connessione da riga di comando
 
@@ -120,7 +117,7 @@ cat nome_database.sql | mysql --host=server --user=utente --port=porta --passwor
 
 > [!primary]
 >
-> In alcuni casi, è possibile che la RAM disponibile nella tua istanza Web Cloud Databases non permetta di realizzare l'esportazione o l'importazione desiderata. In questo caso, ti consigliamo di utilizzare il tool OVHcloud nello Spazio Cliente. Se necessario, consulta la documentazione ["Iniziare a utilizzare il servizio Web Cloud Databases"](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/).
+> In alcuni casi, è possibile che la RAM disponibile nella tua istanza Web Cloud Databases non permetta di realizzare l'esportazione o l'importazione desiderata. In questo caso, ti consigliamo di utilizzare il tool OVHcloud nello Spazio Cliente. Se necessario, consulta la documentazione ["Iniziare a utilizzare il servizio Web Cloud Databases"](/pages/web/clouddb/starting_with_clouddb).
 >
 
 ## Per saperne di più

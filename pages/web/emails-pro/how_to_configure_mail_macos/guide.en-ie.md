@@ -1,8 +1,5 @@
 ---
 title: 'Configuring your Email Pro account on the macOS Mail app'
-slug: configuring-email-pro-macos-mail
-section: 'Email client configuration'
-order: 4
 updated: 2022-06-13
 ---
 
@@ -56,7 +53,7 @@ OVHcloud also has a web application you can use to access your email address fro
 
 ### Retrieve a backup of your email address
 
-If you need to make any changes that could lead to the loss of your email account data, we advise backing up the email account concerned beforehand. To do this, please read the "**Export**" section in the "**Mail on macOS**" section of our guide on [Manually migrating your email address](https://docs.ovh.com/ie/en/emails/migrate-email-addresses-manually/#exporting).
+If you need to make any changes that could lead to the loss of your email account data, we advise backing up the email account concerned beforehand. To do this, please read the "**Export**" section in the "**Mail on macOS**" section of our guide on [Manually migrating your email address](/pages/web/emails/manual_email_migration#exporting).
 
 ### Modify existing settings
 

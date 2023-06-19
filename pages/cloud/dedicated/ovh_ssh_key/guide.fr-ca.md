@@ -1,8 +1,6 @@
 ---
 title: Installer la clé SSH OVHcloud
-slug: ovh-ssh-key
 excerpt: Ce guide vous décrit l'installation d'une clé SSH OVHcloud pour permettre l'intervention de nos administrateurs, puis sa désactivation
-section: SSH et clé SSH
 updated: 2018-02-12
 ---
 
@@ -16,7 +14,7 @@ Dans certains cas, l'intervention d'un administrateur OVHcloud peut être néces
 
 ## Prérequis
 
-- Être [connecté en SSH](../ssh-introduction/) (accès root).
+- Être [connecté en SSH](/pages/cloud/dedicated/ssh_introduction) (accès root).
 
 ## En pratique
 
@@ -118,6 +116,6 @@ cat /root/.ssh/authorized_keys2
 
 ## Aller plus loin
 
-[Introduction au SSH](../ssh-introduction/).
+[Introduction au SSH](/pages/cloud/dedicated/ssh_introduction).
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com>.

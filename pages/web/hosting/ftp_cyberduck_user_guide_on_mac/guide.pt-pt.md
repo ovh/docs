@@ -1,9 +1,6 @@
 ---
 title: 'Partilhado: guia de utilização do Cyberduck (MAC)'
 excerpt: 'Partilhado: guia de utilização do Cyberduck (MAC)'
-slug: partilhado_guia_de_utilizacao_do_cyberduck_mac
-section: FTP e SSH
-order: 05
 updated: 2020-05-05
 ---
 
@@ -23,7 +20,7 @@ Para beneficiar o mesmo deverá aceder ao website oficial da aplicação
 
 
 ![cyberduck macOS](images/2344.png){.thumbnail}
-Cyberduck é um software para os utilizadores que disponham de um MAC. Se possui uma máquina Windows deverá optar pela utilização do FileZilla: [](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/))
+Cyberduck é um software para os utilizadores que disponham de um MAC. Se possui uma máquina Windows deverá optar pela utilização do FileZilla: [](/pages/web/hosting/ftp_filezilla_user_guide))
 
 
 ## Interface

@@ -1,10 +1,7 @@
 ---
 title: Cómo editar la función HA de un NSX-v Edge (EN)
-slug: enable-disable-nsx-edge-after-update
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/enable-disable-nsx-edge-after-update/'
-section: NSX-v
-order: 10
+    canonical: '/pages/cloud/private-cloud/nsx_edge_enable_disable_after_update'
 updated: 2022-09-14
 ---
 
@@ -21,7 +18,7 @@ This article is meant to guide you through the process of disabling and enabling
 ## Requirements
 
 - a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)).
-- a deployed [NSX Edge Services Gateway](https://docs.ovh.com/es/private-cloud/how-to-deploy-an-nsx-edge-gateway/).
+- a deployed [NSX Edge Services Gateway](/pages/cloud/private-cloud/nsx_deploying_edge_gateway).
 
 ## Instructions
 

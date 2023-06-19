@@ -1,8 +1,6 @@
 ---
 title: Concepts overview
-slug: overview
 excerpt: 'Concepts overview - OVHcloud Connect'
-section: Concepts
 updated: 2020-09-14
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-network-ovhcloud-connect-overview?id=kb_article_view&sysparm_article=KB0045230'

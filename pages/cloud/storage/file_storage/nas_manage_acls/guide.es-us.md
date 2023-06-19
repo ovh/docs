@@ -1,9 +1,6 @@
 ---
 title: NAS-HA - Gestión de ACL a través de la API
-slug: nas/manage-acls
 excerpt: Cómo gestionar los accesos al NAS-HA a través de la API de OVHcloud
-section: NAS-HA
-order: 07
 updated: 2022-07-20
 ---
 
@@ -22,7 +19,7 @@ El servicio NAS-HA de OVHcloud le permite gestionar un almacenamiento de archivo
 ## Requisitos
 
 - Un servicio [NAS-HA de OVHcloud](https://www.ovh.com/world/es/nas/)
-- Consulte nuestra guía de [primeros pasos con la API de OVHcloud](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/) para familiarizarse con la APIv6 de OVHcloud.
+- Consulte nuestra guía de [primeros pasos con la API de OVHcloud](/pages/account/api/first-steps) para familiarizarse con la APIv6 de OVHcloud.
 
 ## Procedimiento
 
@@ -168,9 +165,9 @@ Para eliminar una dirección IP o un rango de direcciones de la ACL, utilice la 
 
 ## Más información
 
-[Montar un NAS mediante NFS](https://docs.ovh.com/us/es/storage/file-storage/nas/nfs/)
+[Montar un NAS mediante NFS](/pages/cloud/storage/file_storage/nas_nfs)
 
-[Montar un NAS en Windows Server a través de CIFS](https://docs.ovh.com/us/es/storage/file-storage/nas/cifs/)
+[Montar un NAS en Windows Server a través de CIFS](/pages/cloud/storage/file_storage/nas_cifs)
 
 Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 

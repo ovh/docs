@@ -1,10 +1,7 @@
 ---
 title: 'Déléguer la gestion de vos comptes e-mails à une autre personne'
 legacy_guide_number: 1933
-slug: deleguer-gestion-emails-autre-identifiant
 excerpt: 'Découvrez comment déléguer la gestion des comptes e-mail de votre offre MX Plan'
-section: 'Fonctionnalités des adresses e-mail'
-order: 05
 updated: 2021-10-08
 ---
 
@@ -82,6 +79,6 @@ Il est possible d'ajouter plusieurs identifiants OVHcloud pour gérer chaque adr
 
 ## Aller plus loin
 
-[Premiers pas avec l’offre MX Plan](https://docs.ovh.com/fr/emails/generalites-sur-les-emails-mutualises/)
+[Premiers pas avec l’offre MX Plan](/pages/web/emails/email_generalities)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

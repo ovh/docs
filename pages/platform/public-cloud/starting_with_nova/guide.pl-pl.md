@@ -1,9 +1,7 @@
 ---
 title: Pierwsze kroki z API OpenStack
 excerpt: Dowiedz się, jak zarządzać instancjami za pomocą klienta Python OpenStack
-slug: pierwsze_kroki_z_api_nova
 legacy_guide_number: g1935
-section: Zarządzanie w OpenStack CLI
 updated: 2022-10-13
 ---
 
@@ -29,8 +27,8 @@ Niniejszy przewodnik pomoże Ci w korzystaniu z API OpenStack w zarządzaniu ins
 
 ## Wymagania początkowe
 
-- [Przygotowanie środowiska do korzystania z API OpenStack](../prepare_the_environment_for_using_the_openstack_api/)
-- [Zmienne środowiskowe OpenStack](../set-openstack-environment-variables/)
+- [Przygotowanie środowiska do korzystania z API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Zmienne środowiskowe OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 
 ## W praktyce

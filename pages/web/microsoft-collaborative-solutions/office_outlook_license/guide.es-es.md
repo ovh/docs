@@ -1,9 +1,6 @@
 ---
 title: Obtener una licencia Outlook para Exchange
-slug: exchange_2013_uso_y_contratacion_de_las_licencias_outlook_exchange_2013
 excerpt: Cómo contratar una licencia Outlook desde una plataforma Exchange de OVHcloud e instalarla
-section: Office
-order: 01
 updated: 2022-10-05
 ---
 

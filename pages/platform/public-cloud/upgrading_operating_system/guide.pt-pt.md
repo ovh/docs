@@ -1,9 +1,6 @@
 ---
 title: "Atualizar o sistema operativo"
-slug: upgrade-os
 excerpt: "Saiba como atualizar um sistema operativo em fim de vida"
-section: 'Tutoriais'
-order: 14
 updated: 2022-02-07
 ---
 
@@ -19,7 +16,7 @@ Este tutorial descreve os passos a seguir para atualizar um sistema operativo em
 
 > [!alert]
 > Aviso: tal como para qualquer atualização importante de um sistema operativo, existe um risco de falha, de perda de dados ou de falha da configuração de software.
-> Assim, antes de seguir este tutorial, a OVHcloud recomenda-lhe vivamente que [guarde a sua instância](../efetuar_backup_de_uma_instancia/) e que efetue testes aprofundados das suas aplicações, de forma a garantir que estas funcionem na nova versão do sistema operativo.
+> Assim, antes de seguir este tutorial, a OVHcloud recomenda-lhe vivamente que [guarde a sua instância](/pages/platform/public-cloud/save_an_instance) e que efetue testes aprofundados das suas aplicações, de forma a garantir que estas funcionem na nova versão do sistema operativo.
 >
 
 > [!primary]
@@ -29,8 +26,8 @@ Este tutorial descreve os passos a seguir para atualizar um sistema operativo em
 
 ## Requisitos
 
-- Dispor de um [acesso root ao servidor](../tornar-se_root_e_definir_uma_palavra-passe/)
-- Ter efetuado [um backup da sua instância](../efetuar_backup_de_uma_instancia/)
+- Dispor de um [acesso root ao servidor](/pages/platform/public-cloud/become_root_and_change_password)
+- Ter efetuado [um backup da sua instância](/pages/platform/public-cloud/save_an_instance)
 
 ## Instruções
 
@@ -134,7 +131,7 @@ $ Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-147-generic x86_64)
 > Quando atualiza o sistema operativo em vez de o reinstalar, a nova versão do seu SO não está indicada na Área de Cliente, na API OVHcloud, nem na API Horizon / OpenStack.
 >
 
-Verifique que as suas aplicações funcionam como previsto. Em caso de problema, recomendamos que [restaure o backup](../criar_restaurar_um_servidor_virtual_a_partir_de_um_backup/) efetuado antes da atualização.
+Verifique que as suas aplicações funcionam como previsto. Em caso de problema, recomendamos que [restaure o backup](/pages/platform/public-cloud/create_restore_a_virtual_server_with_a_backup) efetuado antes da atualização.
 
 ### Fedora
 
@@ -167,7 +164,7 @@ $ sudo dnf system-upgrade reboot
 Uma vez a versão descarregada e o processo de atualização lançado, o servidor reinicia-se para terminar a atualização.
 <br>Pode demorar algum tempo até voltar a ligar-se ao servidor, pois a atualização leva tempo.
 
-Verifique que as suas aplicações funcionam como previsto. Em caso de problema, recomendamos que [restaure o backup](../criar_restaurar_um_servidor_virtual_a_partir_de_um_backup/) efetuado antes da atualização.
+Verifique que as suas aplicações funcionam como previsto. Em caso de problema, recomendamos que [restaure o backup](/pages/platform/public-cloud/create_restore_a_virtual_server_with_a_backup) efetuado antes da atualização.
 
 > [!primary]
 > Se encontrar dificuldades, encontrará respostas às suas questões no website [Fedora Docs](https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/){.external}.

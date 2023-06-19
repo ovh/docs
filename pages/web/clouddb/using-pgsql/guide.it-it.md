@@ -1,9 +1,6 @@
 ---
 title: Come utilizzare PostgreSQL
-slug: come-utilizzare-postgresql
 excerpt: Guida all'utilizzo dei tuoi database
-section: Per iniziare
-order: 03
 updated: 2023-02-15
 ---
 
@@ -17,7 +14,7 @@ Vuoi utilizzare PostgreSQL? Scopri come creare e gestire i tuoi database con la 
 ### Prerequisiti
 
 - Un'istanza Web Cloud Databases attiva
-- Aver consultato [la guida all’utilizzo di Web Cloud Databases](../iniziare-a-utilizzare-clouddb/)
+- Aver consultato [la guida all’utilizzo di Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb)
 
 ### Cose un database PostgreSQL?
 PostgreSQL è un modello di database relazionale a oggetti (ORDBMS). È un sistema solido ed estendibile, in grado di gestire con la massima affidabilità un grande volume di dati. Dispone anche di una Community open source molto attiva.
@@ -41,7 +38,7 @@ Per accedere al tuo database, sono necessarie queste informazioni:
 
 Questi dati sono disponibili nella sezione Web del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/manager/web/){.external}.
 
-Se necessario, consulta la guida: [Inziare a utilizzare Web Cloud Databases](../starting_with_clouddb/guide.it-it.md){.ref}
+Se necessario, consulta la guida: [Inziare a utilizzare Web Cloud Databases](/it/clouddb/starting_with_clouddb/guide.it-it.md){.ref}
 
 
 ### Connessione da riga di comando

@@ -1,8 +1,6 @@
 ---
 title: 'Rétablir son service suite à une coupure complète ou partielle'
-slug: interruption-de-service
 excerpt: 'Découvrez comment rétablir votre service suite à une coupure complète ou partielle'
-section: 'Diagnostic et dépannage'
 updated: 2018-09-18
 ---
 
@@ -27,8 +25,8 @@ Vous n'avez actuellement pas accès à Internet ou vous rencontrez des coupures 
 
 Avant de débuter, il est essentiel de pouvoir vérifier les voyants lumineux de votre modem afin d'identifier la nature de la coupure que vous rencontrez. Une fois les voyants sous vos yeux, poursuivez la lecture de cette documentation en fonction de l'état de ces derniers.
 
-- [Aucun voyant n'est allumé sur votre modem](https://docs.ovh.com/fr/xdsl/interruption-de-service/#si-aucun-voyant-nest-allume){.external}.
-- [Des voyants sont allumés (clignotant ou fixe)](https://docs.ovh.com/fr/xdsl/interruption-de-service/#si-des-voyants-sont-allumes-clignotant-ou-fixe){.external}.
+- [Aucun voyant n'est allumé sur votre modem](/pages/telecom/xdsl/interruption_de_service#si-aucun-voyant-nest-allume){.external}.
+- [Des voyants sont allumés (clignotant ou fixe)](/pages/telecom/xdsl/interruption_de_service#si-des-voyants-sont-allumes-clignotant-ou-fixe){.external}.
 
 ### Si aucun voyant n'est allumé
 
@@ -49,7 +47,7 @@ Vérifiez d'abord l'alimentation électrique de votre modem en réalisant les ma
 |Technicolor TG788vn|![modemelectrique](images/TG788v1_power.png){.thumbnail}|
 |Technicolor TG788vn v2|![modemelectrique](images/TG788v2_power.png){.thumbnail}|
 
-Si, malgré ces manipulations, votre modem ne s'allume toujours pas, effectuez une réinitialisation de ce dernier. Si besoin, reportez-vous aux instructions décrites dans notre documentation « [Redémarrer ou réinitialiser un modem ADSL OVH](https://docs.ovh.com/fr/xdsl/redemarrer-reinitialiser-modem-adsl-ovh/){.external} ».
+Si, malgré ces manipulations, votre modem ne s'allume toujours pas, effectuez une réinitialisation de ce dernier. Si besoin, reportez-vous aux instructions décrites dans notre documentation « [Redémarrer ou réinitialiser un modem ADSL OVH](/pages/telecom/xdsl/restart_reboot_modem){.external} ».
 
 ### Si des voyants sont allumés (clignotant ou fixe)
 
@@ -85,8 +83,8 @@ L'état des voyants de votre modem vous aidera à déterminer la cause de l'inci
 Dès lors, en fonction des voyants, vous avez plusieurs possibilités :
 
 - **le service jusqu'à votre modem est fonctionnel** : vérifiez les branchements de votre modem jusqu'à vos appareils (un ordinateur par exemple) ainsi que la configuration de ces derniers ;
-- **la coupure est liée à un défaut de connexion** : essayez de redémarrer ou de réinitialiser votre modem. Si besoin, reportez-vous aux instructions décrites dans notre documentation « [Redémarrer ou réinitialiser un modem ADSL OVH](https://docs.ovh.com/fr/xdsl/redemarrer-reinitialiser-modem-adsl-ovh/){.external} ».
-- **la coupure est liée à une perte de synchronisation** : reportez-vous aux instructions décrites dans notre documentation « [Rétablir la synchronisation d'une connexion suite à une coupure](https://docs.ovh.com/fr/xdsl/retablir-synchronisation-suite-coupure/){.external} ».
+- **la coupure est liée à un défaut de connexion** : essayez de redémarrer ou de réinitialiser votre modem. Si besoin, reportez-vous aux instructions décrites dans notre documentation « [Redémarrer ou réinitialiser un modem ADSL OVH](/pages/telecom/xdsl/restart_reboot_modem){.external} ».
+- **la coupure est liée à une perte de synchronisation** : reportez-vous aux instructions décrites dans notre documentation « [Rétablir la synchronisation d'une connexion suite à une coupure](/pages/telecom/xdsl/reestablish-synchronization){.external} ».
 
 ## Aller plus loin
 

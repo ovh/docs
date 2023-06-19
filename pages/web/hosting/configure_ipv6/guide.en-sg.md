@@ -1,9 +1,6 @@
 ---
 title: "Configure an IPv6 address for your website"
-slug: configure-ipv6-for-your-website
 excerpt: "Find out how to make your website compatible with an IPv6 address"
-section: Web Hosting configuration
-order: 06
 updated: 2023-02-10
 ---
 
@@ -38,7 +35,7 @@ Our web hosting plans have been compatible with IPv6 since 2011. However, enabli
 > This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-sg/directory/) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
-If your website is not configured to work with an IPv6 address, you can add [the IPv6 address of your OVHcloud web hosting](https://docs.ovh.com/sg/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/) in your domain name’s active DNS zone. The goal is for web browsers to find an IPv6 address associated with your website via your domain name.
+If your website is not configured to work with an IPv6 address, you can add [the IPv6 address of your OVHcloud web hosting](/pages/web/hosting/clusters_and_shared_hosting_IP) in your domain name’s active DNS zone. The goal is for web browsers to find an IPv6 address associated with your website via your domain name.
 
 ### Check your website's IPv6 availability
 
@@ -61,7 +58,7 @@ In the **IPv6** box, copy the address and proceed to the next step.
 > Bear in mind that adding, modifying or deleting a DNS record in a domain name’s active DNS zone will take between **4 and 24 hours** to propagate fully.
 >
 
-In order for your browser to find the IPv6 address with your domain name, edit your domain’s active DNS zone. Use our guide “[Editing an OVHcloud DNS zone](https://docs.ovh.com/sg/en/domains/web_hosting_how_to_edit_my_dns_zone/#edit-your-domain-names-ovhcloud-dns-zone)” to create a DNS record of the type **AAAA**.
+In order for your browser to find the IPv6 address with your domain name, edit your domain’s active DNS zone. Use our guide “[Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit#edit-your-domain-names-ovhcloud-dns-zone)” to create a DNS record of the type **AAAA**.
 
 In the `Web Cloud`{.action} section, click on `Domain names`{.action}. Select your domain name, then go to the `DNS zone`{.action} tab. Click the `Add an entry`{.action} button to the right of the table. 
 
@@ -71,7 +68,7 @@ Insert the previously copied IPv6 address using the **AAAA** record type.
 
 ## Go further <a name="go-further"></a>
 
-[Editing an OVHcloud DNS zone](https://docs.ovh.com/sg/en/domains/web_hosting_how_to_edit_my_dns_zone/#edit-your-domain-names-ovhcloud-dns-zone)
+[Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit#edit-your-domain-names-ovhcloud-dns-zone)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
 

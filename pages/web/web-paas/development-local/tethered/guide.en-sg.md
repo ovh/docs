@@ -1,7 +1,5 @@
 ---
 title: Tethered
-slug: tethered
-section: Local
 updated: 2021-05-11
 ---
 

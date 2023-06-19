@@ -1,9 +1,6 @@
 ---
 title: 'Configuring your Exchange account in Outlook for Windows'
-slug: configuration-outlook-2016
 excerpt: 'Find out how to configure your Exchange account in Outlook for Windows'
-section: Configuration on computer
-order: 01
 updated: 2021-07-05
 ---
  
@@ -26,11 +23,11 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 - an [OVHcloud Exchange account](https://www.ovhcloud.com/en/emails/hosted-exchange/){.external}
 - Microsoft Outlook 2016 or later installed on your device
 - login credentials for the email account to be configured
-- The OVHcloud SRV record must be correctly configured in the domain name’s DNS zone. Please refer to our guide on [Adding a domain name to an Exchange service](../adding-domain-exchange/).
+- The OVHcloud SRV record must be correctly configured in the domain name’s DNS zone. Please refer to our guide on [Adding a domain name to an Exchange service](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain).
 
 > [!primary]
 >
-> Are you using Outlook 2016 for Mac? Refer to our documentation: [Configuring your Exchange account in Outlook 2016 for Mac](../exchange-configuration-outlook-2016-mac/).
+> Are you using Outlook 2016 for Mac? Refer to our documentation: [Configuring your Exchange account in Outlook 2016 for Mac](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016_mac).
 >
 
 ## Instructions
@@ -73,10 +70,10 @@ Your Exchange email address and all of its collaborative features are also avail
 
 ### Retrieving a backup of your email address
 
-If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the "**Exporting from Windows**" section in our guide on [Migrating your email address manually](../../emails/migrate-email-addresses-manually/#exporting-from-windows).
+If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the "**Exporting from Windows**" section in our guide on [Migrating your email address manually](/pages/web/emails/manual_email_migration#exporting-from-windows).
 
 ## Go further <a name="gofurther"></a>
 
-[Configuring your MX Plan address in Outlook for Windows](../../emails/configuration-outlook-2016/)
+[Configuring your MX Plan address in Outlook for Windows](/pages/web/emails/how_to_configure_outlook_2016)
 
 Join our community of users on <https://community.ovh.com/en/>.

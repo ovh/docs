@@ -1,9 +1,6 @@
 ---
 title: Iniziare a utilizzare le API OVHcloud
-slug: first-steps-with-ovh-api
 excerpt: Come utilizzare le API OVHcloud
-section: 'Per iniziare'
-order: 01
 updated: 2022-05-30
 ---
 
@@ -50,7 +47,7 @@ Per utilizzare le API sui tuoi prodotti, accedi al sito utilizzando le credenzia
 
 > [!primary]
 >
-> Se il tuo account OVHcloud è protetto da una [doppia autenticazione](https://docs.ovh.com/it/customer/proteggi_il_tuo_account_con_2FA/), inserisci anche il codice generato tramite SMS o applicazione OTP o chiave U2F.
+> Se il tuo account OVHcloud è protetto da una [doppia autenticazione](/pages/account/customer/secure-ovhcloud-account-with-2fa), inserisci anche il codice generato tramite SMS o applicazione OTP o chiave U2F.
 >
 
 #### Esplora i prodotti disponibili sulle API
@@ -168,7 +165,7 @@ MtSwSrPpNjqfVSmJhLbPyr2i45lSwPU1
 
 In questo caso, la chiave **CK** è associata al tuo account.
 
-Il token **CK** può essere utilizzato per la delega dei diritti. Per saperne di più, consulta questa guida: [Come gestire l'account di un cliente OVHcloud tramite le API](https://docs.ovh.com/gb/en/api/api-rights-delegation/) (guida in inglese).
+Il token **CK** può essere utilizzato per la delega dei diritti. Per saperne di più, consulta questa guida: [Come gestire l'account di un cliente OVHcloud tramite le API](/pages/account/api/api_right_delegation) (guida in inglese).
 
 
 #### Primo utilizzo dell'API
@@ -209,8 +206,8 @@ print("Welcome", client.get('/me')['firstname'])
 
 ## Per saperne di più <a name="gofurther"></a>
 
-[Gestire un dominio tramite le API OVHcloud](https://docs.ovh.com/it/domains/api/) (guida in inglese)
+[Gestire un dominio tramite le API OVHcloud](/pages/web/domains/api_domain_intro) (guida in inglese)
 
-[Come gestire l'account di un cliente OVHcloud tramite le API](https://docs.ovh.com/gb/en/api/api-rights-delegation/) (guida in inglese)
+[Come gestire l'account di un cliente OVHcloud tramite le API](/pages/account/api/api_right_delegation) (guida in inglese)
 
 Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en](https://community.ovh.com/en/)

@@ -1,7 +1,5 @@
 ---
 title: Profiling
-slug: integrations-profiling
-section: Integrations
 updated: 2021-05-11
 ---
 

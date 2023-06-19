@@ -1,9 +1,6 @@
 ---
 title: Partager un dossier depuis l'interface OWA
-slug: exchange-2016-partager-un-dossier-via-le-webmail-owa
 excerpt: Retrouvez ici la procedure de partage d’un dossier depuis votre compte Exchange 
-section: Utilisation d'Outlook Web Application (OWA)
-order: 04
 updated: 2020-04-07
 ---
 
@@ -102,7 +99,7 @@ Connectez-vous à votre compte Exchange via le [webmail OVHcloud](https://www.ov
 
 [Consulter son compte Exchange depuis l’interface OWA](/pages/web/emails/email_owa)
 
-[Déléguer des droits sur un compte Exchange](../exchange-donner-les-droits-full-access-sur-un-compte/)
+[Déléguer des droits sur un compte Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
 [Partager un calendrier depuis l’interface OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 

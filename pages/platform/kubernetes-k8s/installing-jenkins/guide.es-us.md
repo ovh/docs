@@ -1,10 +1,8 @@
 ---
 title: Installing Jenkins on OVHcloud Managed Kubernetes
-slug: installing-jenkins
 excerpt: "Find out how to install Jenkins on OVHcloud Managed Kubernetes"
-section: Tutorials
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-jenkins/'
+    canonical: '/pages/platform/kubernetes-k8s/installing-jenkins'
 updated: 2021-12-20
 ---
 
@@ -38,9 +36,9 @@ We are going to install Jenkins master and slave cluster utilizing the [Jenkins 
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/platform/kubernetes-k8s/deploying-hello-world).
 
-You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/platform/kubernetes-k8s/installing-helm) tutorial.
 
 ## Pre-requisites
 

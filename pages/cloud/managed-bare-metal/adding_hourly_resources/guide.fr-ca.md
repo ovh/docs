@@ -1,10 +1,8 @@
 ---
 title: 'Ajouter une ressource à l’heure'
-slug: ajouter-une-ressource-a-l-heure
 routes:
     canonical: 'https://docs.ovh.com/ca/fr/private-cloud/ajouter-une-ressource-a-l-heure/'
 excerpt: 'Découvrez comment ajouter des ressources en facturation horaire'
-section: 'Fonctionnalités OVHcloud'
 updated: 2020-12-15
 ---
 
@@ -19,7 +17,7 @@ L'offre [Managed Bare Metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/)
 ## Prérequis
 
 * Posséder une offre [Managed Bare Metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/){.external}.
-* [Donner le droit "Ajout de ressources"](../changer-les-droits-d-un-utilisateur/) pour le datacenter concerné à l'utilisateur depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+* [Donner le droit "Ajout de ressources"](/pages/cloud/managed-bare-metal/change-user-rights) pour le datacenter concerné à l'utilisateur depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 * Être connecté au client vSphere.
 
 ## En pratique

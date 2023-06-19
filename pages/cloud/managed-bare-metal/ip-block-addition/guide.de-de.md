@@ -1,12 +1,9 @@
 ---
 title: IP-Block hinzufügen
-slug: ip-block-hinzufuegen
 routes:
-    canonical: 'https://docs.ovh.com/de/private-cloud/ip-block-hinzufuegen/'
+    canonical: '/pages/cloud/private-cloud/ajout_de_bloc_ip'
 excerpt: Erfahren Sie hier, wie Sie einen IP-Block für Ihr Managed Bare Metal Projekt bestellen
 legacy_guide_number: '7766457'
-section: OVHcloud Funktionen
-order: 1
 updated: 2020-11-18
 ---
 
@@ -49,7 +46,7 @@ Zur Erstellung Ihres IP-Blocks sind zunächst mehrere Felder auszufüllen:
 
 > [!primary]
 >
-> Welche IPs Ihres Blocks reserviert sind und wofür sie verwendet werden, können Sie in unserer Anleitung zum [OVHcloud Network Plugin](../ovhcloud-network-plugin/){.external-link} nachlesen.
+> Welche IPs Ihres Blocks reserviert sind und wofür sie verwendet werden, können Sie in unserer Anleitung zum [OVHcloud Network Plugin](/pages/cloud/managed-bare-metal/plugin_ovh_network){.external-link} nachlesen.
 >
 
 - Land des IP-Blocks. Dieses kann für das SEO-Ranking Ihrer Dienste von Bedeutung sein (zum Beispiel ist die Referenzierung einer deutschen Website in Deutschland besser, wenn auch ihre IP deutsch ist)

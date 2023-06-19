@@ -1,8 +1,6 @@
 ---
 title: Configuring a software mirror (RAID) on Windows
-slug: dedicated-servers-mirror-soft-raid-windows
 excerpt: "Find out how to rebuild your server’s drive configuration after a disk replacement"
-section: RAID and disks
 updated: 2023-03-28
 ---
 
@@ -66,7 +64,7 @@ DISKPART> list volume
 ```
 
 
-In this example, `Disk 1` is a replacement drive that has been installed in order to replace the defective `Disk M0` which had been [physically removed](https://docs.ovh.com/asia/en/dedicated/disk-replacement/) previously.
+In this example, `Disk 1` is a replacement drive that has been installed in order to replace the defective `Disk M0` which had been [physically removed](/pages/cloud/dedicated/disk_replacement) previously.
 
 
 > [!primary]
@@ -197,7 +195,7 @@ DISKPART> list volume
  
 ```
 
-In this example, `Disk 1` is a replacement drive that has been installed in order to replace the defective `Disk M0` which had been [physically removed](https://docs.ovh.com/asia/en/dedicated/disk-replacement/) previously.
+In this example, `Disk 1` is a replacement drive that has been installed in order to replace the defective `Disk M0` which had been [physically removed](/pages/cloud/dedicated/disk_replacement) previously.
 
 > [!primary]
 >

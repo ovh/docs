@@ -1,9 +1,6 @@
 ---
 title: 'Tworzenie i eksportowanie bazy danych na serwerze baz danych'
-slug: kopia-zapasowa-eksportowa-bazy-danych
 excerpt: 'Dowiedz się, jak tworzyć kopie zapasowe i eksportować bazę danych'
-section: 'Konfiguracja'
-order: 04
 updated: 2023-02-15
 ---
 
@@ -68,7 +65,7 @@ Pojawi się lista dostępnych kopii zapasowych, kliknij przycisk `...`{.action} 
 
 ##### 1\.1 Eksportowanie bazy MySQL lub MariaDB z poziomu phpMyAdmin OVHcloud 
 
-Aby zaimportować bazę danych bezpośrednio z phpMyAdmin, należy najpierw się do niej zalogować. Aby to zrobić, możesz zapoznać się z tym [przewodnikiem](../polaczenie-bazy-danych-serwer-bdd).
+Aby zaimportować bazę danych bezpośrednio z phpMyAdmin, należy najpierw się do niej zalogować. Aby to zrobić, możesz zapoznać się z tym [przewodnikiem](/pages/web/clouddb/connecting-to-database-on-database-server).
 
 Po zalogowaniu się do phpMyAdmin kliknij nazwę bazy danych, którą chcesz wyeksportować, a następnie zakładkę `Eksportuj`{.action} u góry.
 
@@ -94,7 +91,7 @@ mysqldump --host=serveur --user=utilisateur --port=port --password=password nom_
 
 > [!warning]
 >
-> - Aby zapobiec dostępowi strony trzeciej do tego pliku zawierającego dane wrażliwe, zapoznaj się z przewodnikiem dotyczącym bezpieczeństwa dostępu do tego pliku: ["Używanie .htaccess do ochrony hasła katalogu w serwisie WWW"](https://docs.ovh.com/pl/hosting/hosting-htaccess-w-jaki-sposob-zabezpieczyc-dostep-dostepu-do-katalogu/).
+> - Aby zapobiec dostępowi strony trzeciej do tego pliku zawierającego dane wrażliwe, zapoznaj się z przewodnikiem dotyczącym bezpieczeństwa dostępu do tego pliku: ["Używanie .htaccess do ochrony hasła katalogu w serwisie WWW"](/pages/web/hosting/htaccess_protect_directory_by_password).
 > - Operacja ta jest możliwa tylko z poziomu hostingu OVHcloud.
 >
 
@@ -120,13 +117,13 @@ pg_dump --host=serveur --port=port --user=utilisateur --password=password nom_de
 
 > [!warning]
 >
-> - Aby zapobiec dostępowi strony trzeciej do tego pliku zawierającego dane wrażliwe, zapoznaj się z przewodnikiem dotyczącym bezpieczeństwa dostępu do tego pliku: ["Używanie .htaccess do ochrony hasła katalogu w serwisie WWW"](https://docs.ovh.com/pl/hosting/hosting-htaccess-w-jaki-sposob-zabezpieczyc-dostep-dostepu-do-katalogu/).
+> - Aby zapobiec dostępowi strony trzeciej do tego pliku zawierającego dane wrażliwe, zapoznaj się z przewodnikiem dotyczącym bezpieczeństwa dostępu do tego pliku: ["Używanie .htaccess do ochrony hasła katalogu w serwisie WWW"](/pages/web/hosting/htaccess_protect_directory_by_password).
 > - Operacja ta jest możliwa tylko z poziomu hostingu OVHcloud.
 >
 
 ## Sprawdź również
 
-[Przywracanie i importowanie bazy danych na serwer baz danych](../przywracanie-importowanie-bazy-danych)
+[Przywracanie i importowanie bazy danych na serwer baz danych](/pages/web/clouddb/restore-import-on-database-server)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
 

@@ -1,9 +1,6 @@
 ---
 title: "Faire évoluer son offre d'hébergement web"
 excerpt: "Découvrez comment modifier la formule d'abonnement de votre offre d'hébergement OVHcloud"
-slug: how_to_change_web_hosting_offer
-section: Optimiser son site
-order: 02
 updated: 2023-04-19
 ---
 
@@ -11,7 +8,7 @@ updated: 2023-04-19
 
 ## Objectif
 
-Votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) vous permet d'augmenter les capacités de vos [offres d'hébergement Web](https://www.ovhcloud.com/fr-ca/web-hosting/), afin de disposer d'un hébergement plus puissant, de plus d'espace de stockage, de bases de données, d'adresses e-mails ou de fonctionnalités supplémentaires comme les [mailing-lists](https://docs.ovh.com/ca/fr/emails/guide-dutilisation-mailing-list/) (à partir de l'[offre Pro](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/)) ou le [service SQL privé](https://www.ovhcloud.com/fr-ca/web-hosting/options/private-sql/) (compris avec les offres de la [gamme Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/)).
+Votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) vous permet d'augmenter les capacités de vos [offres d'hébergement Web](https://www.ovhcloud.com/fr-ca/web-hosting/), afin de disposer d'un hébergement plus puissant, de plus d'espace de stockage, de bases de données, d'adresses e-mails ou de fonctionnalités supplémentaires comme les [mailing-lists](/pages/web/emails/feature_mailing_list) (à partir de l'[offre Pro](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/)) ou le [service SQL privé](https://www.ovhcloud.com/fr-ca/web-hosting/options/private-sql/) (compris avec les offres de la [gamme Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/)).
 
 **Découvrez comment faire évoluer votre offre d'hébergement OVHcloud sans interruption.**
 
@@ -36,7 +33,7 @@ Votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=
 > [!warning]
 > Le changement d'abonnement pour une offre inférieure est indisponible pour nos clients dont les services sont hébergés dans un datacenter en dehors de l'Europe.
 >
-> Si vous souhaitez modifier votre abonnement pour passer à une offre inférieure, veuillez suivre les étapes de notre guide « [Migrer son site et ses e-mails vers OVHcloud](https://docs.ovh.com/ca/fr/hosting/migrer-mon-site-chez-ovh/) ».
+> Si vous souhaitez modifier votre abonnement pour passer à une offre inférieure, veuillez suivre les étapes de notre guide « [Migrer son site et ses e-mails vers OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh) ».
 > 
 
 Pour modifier votre abonnement, rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et sélectionnez l'hébergement concerné.
@@ -89,9 +86,9 @@ Suivez [ces instructions](#modify) pour réaliser votre changement d'offre.
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](https://docs.ovh.com/ca/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/)
+[Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](/pages/web/hosting/logs_and_statistics)
 
-[Optimisation des performances de votre site](https://docs.ovh.com/ca/fr/hosting/optimisation-performances-site/)
+[Optimisation des performances de votre site](/pages/web/hosting/optimise_your_website_performance)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 

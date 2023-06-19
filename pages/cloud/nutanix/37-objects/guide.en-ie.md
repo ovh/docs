@@ -1,9 +1,6 @@
 ---
 title: Setting up Nutanix Objects
-slug: objects
 excerpt: "Learn how to enable Nutanix Objects in your cluster"
-section: Advanced use
-order: 07
 updated: 2023-03-02
 ---
 
@@ -109,7 +106,7 @@ Scroll down and enter the OVHcloud DNS address `213.186.33.99` in **Domain Name 
 
 ![03 Create Public VLAN 04](images/03-create-public-vlan04.png){.thumbnail}
 
-Your two VLANs are created, make sure they can connect to Prism Element and Prism Central through your gateway. You can use this guide to replace the default gateway and use your VLANs: [OVHgateway replacement](https://docs.ovh.com/ie/en/nutanix/software-gateway-replacement/).
+Your two VLANs are created, make sure they can connect to Prism Element and Prism Central through your gateway. You can use this guide to replace the default gateway and use your VLANs: [OVHgateway replacement](/pages/cloud/nutanix/30-software-gateway-replacement).
 
 ![03 Create Public VLAN 05](images/03-create-public-vlan05.png){.thumbnail}
 
@@ -210,7 +207,7 @@ Your user is created with its login details. You can regenerate Access Keys and 
 
 ### Validation and functional testing
 
-To confirm that our Object storage is working properly, we will use the AWS awscli command-line tool and create a bucket. You can use [this guide](https://docs.ovh.com/ie/en/storage/object-storage/s3/getting-started-with-object-storage/) for more information.
+To confirm that our Object storage is working properly, we will use the AWS awscli command-line tool and create a bucket. You can use [this guide](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) for more information.
 
 The awscli tool is available on Windows, Linux and macOS.
 

@@ -1,9 +1,6 @@
 ---
 title: 'Starting an instance on an attached volume'
 excerpt: 'Find out how to start an instance on an attached volume'
-slug: start-instance-on-a-volume
-section: Getting started
-order: 6
 updated: 2021-11-01
 ---
 
@@ -30,7 +27,7 @@ It is also possible to deploy an operating system to and from a volume. The clou
 ## Requirements
 
 - A volume with an installed image
-- [Setting OpenStack environment variables](../set-openstack-environment-variables/){.external}
+- [Setting OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables){.external}
 
 ### Configuring the volume
 

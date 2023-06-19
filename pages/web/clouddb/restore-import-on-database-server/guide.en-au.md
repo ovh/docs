@@ -1,9 +1,6 @@
 ---
 title: 'Restoring and importing a database to your database server'
-slug: restore-import-database
 excerpt: 'Find out how to restore and import your database'
-section: Configuration
-order: 05
 updated: 2023-02-15
 ---
 
@@ -86,7 +83,7 @@ In some cases, the RAM available in your database server may not be sufficient t
 
 #### Importing MySQL or MariaDB databases with phpMyAdmin
 
-To import your database directly from phpMyAdmin, you will need to log in to the interface first. To do this, you can refer to the [section in this guide](https://docs.ovh.com/au/en/clouddb/connecting-to-database-on-database-server/#logging-in-to-a-mysql-or-mariadb-database).
+To import your database directly from phpMyAdmin, you will need to log in to the interface first. To do this, you can refer to the [section in this guide](/pages/web/clouddb/connecting-to-database-on-database-server#logging-in-to-a-mysql-or-mariadb-database).
 
 Once you have logged in to phpMyAdmin, select your database by clicking on its name.
 
@@ -105,7 +102,7 @@ Keep the default options and click `Run`{.action} to start the import.
 
 #### Exporting a MySQL or MariaDB database from the command line
 
-This action is only possible via [SSH](https://docs.ovh.com/au/en/hosting/web_hosting_ssh_on_web_hosting_packages/) from an OVHcloud Web Hosting plan.
+This action is only possible via [SSH](/pages/web/hosting/ssh_on_webhosting) from an OVHcloud Web Hosting plan.
 
 ```bash
 cat database_name.sql | mysql --host=server --user=username --port=port --password=password database_name
@@ -123,7 +120,7 @@ cat database_name.sql | mysql --host=server --user=username --port=port --passwo
 
 > [!warning]
 >
-> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](https://docs.ovh.com/au/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](/pages/web/hosting/htaccess_protect_directory_by_password).
 > - This action is only possible on an OVHcloud Web Hosting plan.
 >
 
@@ -133,7 +130,7 @@ In some cases, the RAM available in your database server does not allow you to c
 
 #### Importing a PostgreSQL database from the command line
 
-This action is only possible via [SSH](https://docs.ovh.com/au/en/hosting/web_hosting_ssh_on_web_hosting_packages/) from an OVHcloud Web Hosting plan, in stable or higher versions.
+This action is only possible via [SSH](/pages/web/hosting/ssh_on_webhosting) from an OVHcloud Web Hosting plan, in stable or higher versions.
 
 ```bash
 psql --host=server --port=port --user=username --password=password database_name < database_name.sql
@@ -151,7 +148,7 @@ psql --host=server --port=port --user=username --password=password database_name
 
 > [!warning]
 >
-> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](https://docs.ovh.com/au/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](/pages/web/hosting/htaccess_protect_directory_by_password).
 > - This action is only possible on an OVHcloud Web Hosting plan.
 >
 

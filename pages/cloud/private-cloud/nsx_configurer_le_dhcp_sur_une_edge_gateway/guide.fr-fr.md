@@ -1,9 +1,6 @@
 ---
 title: Configurer le DHCP sur une Edge NSX-v
-slug: configurer-le-dhcp-sur-une-edge-nsx
 excerpt: "Découvrez comment attribuer des IPs à vos machines virtuelles à l'aide du service DHCP"
-section: NSX-v
-order: 03
 updated: 2021-11-22
 ---
 
@@ -19,7 +16,7 @@ Le DHCP permet une attribution automatique d'adresses IP aux machines virtuelles
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/) afin de recevoir des identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-- Avoir déployé une [NSX Edge Services Gateway](https://docs.ovh.com/fr/private-cloud/comment-deployer-une-nsx-edge-gateway/)
+- Avoir déployé une [NSX Edge Services Gateway](/pages/cloud/private-cloud/nsx_deploying_edge_gateway)
 
 ## En pratique
 

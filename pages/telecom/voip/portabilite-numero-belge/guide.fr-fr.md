@@ -1,9 +1,6 @@
 ---
 title: 'Demander et suivre une portabilité de numéro belge'
-slug: portabilite-numero-belge
 excerpt: 'Découvrez comment porter un ou plusieurs numéros belges chez OVHcloud'
-section: 'Numéros ou alias'
-order: 2
 updated: 2022-08-05
 ---
 
@@ -132,7 +129,7 @@ Vous trouverez ci-dessous un récapitulatif des différentes étapes du processu
 
 Vous avez la possibilité de préparer la configuration du ou des numéros portés 48 heures avant que celle-ci soit effective. Ceci peut vous permettre de limiter, voire d'éviter, une coupure de service lors de votre changement d'opérateur pour OVHcloud.
 
-Pour cela, et selon la configuration que vous souhaitez mettre en place sur vos numéros, reportez-vous aux instructions décrites dans notre documentation « [Choisir et appliquer une configuration pour un numéro alias](https://docs.ovh.com/fr/voip/quelle-configuration-est-adaptee-a-mes-besoins/){.external} ».
+Pour cela, et selon la configuration que vous souhaitez mettre en place sur vos numéros, reportez-vous aux instructions décrites dans notre documentation « [Choisir et appliquer une configuration pour un numéro alias](/pages/telecom/voip/quelle_configuration_est_adaptee_a_mes_besoins){.external} ».
 
 ## Aller plus loin
 

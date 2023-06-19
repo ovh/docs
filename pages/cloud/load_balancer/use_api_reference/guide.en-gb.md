@@ -1,8 +1,6 @@
 ---
 title: Load Balancer API Quick Reference
-slug: iplb-api-reference
 excerpt: Quick description of the different API functions used to manage the Load Balancer
-section: Getting started
 updated: 2022-04-04
 ---
 

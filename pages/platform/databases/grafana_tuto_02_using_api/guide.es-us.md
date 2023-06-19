@@ -1,11 +1,8 @@
 ---
 title: Grafana - Tutorial - How to use the Grafana API
-slug: grafana/tutorial-using-api
 excerpt: "Learn how to use the Grafana API"
-section: Grafana - Tutorials
-order: 011
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/grafana/tutorial-using-api/'
+    canonical: '/pages/platform/databases/grafana_tuto_02_using_api'
 updated: 2023-04-06
 ---
 
@@ -20,7 +17,7 @@ This tutorial explains how to configure Grafana to use the API and how make call
 
 - A [Public Cloud project](https://www.ovhcloud.com/es/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
-- A Grafana database running on your OVHcloud Public Cloud project (see [this guide](https://docs.ovh.com/us/es/publiccloud/databases/getting-started/) to create a managed Grafana)
+- A Grafana database running on your OVHcloud Public Cloud project (see [this guide](/pages/platform/databases/databases_01_order_control_panel) to create a managed Grafana)
 
 ## Instructions
 
@@ -64,7 +61,7 @@ You are ready to use this token with the Grafana API.
 
 > [!warning]
 > 
-> Don't forget to set the `Authorised IP addresses` in the Grafana configuration. See our guide on [Configuring your Grafana instance to accept incoming connections](https://docs.ovh.com/us/es/publiccloud/databases/grafana/configure-grafana-instance/) for more details.
+> Don't forget to set the `Authorised IP addresses` in the Grafana configuration. See our guide on [Configuring your Grafana instance to accept incoming connections](/pages/platform/databases/grafana_02_prepare_for_incoming_connections) for more details.
 
 To send a request to the API you must use the previously created token and set it in the request header as a "Bearer token":
 

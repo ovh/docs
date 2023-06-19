@@ -1,8 +1,6 @@
 ---
 title: Configurar el firewall de Linux con iptables
 excerpt: Cómo proteger un servidor con iptables
-slug: vps-firewall-iptables
-section: Primeros pasos
 updated: 2023-02-27
 ---
 
@@ -44,7 +42,7 @@ Los cortafuegos funcionan estableciendo reglas que regulan el tráfico autorizad
 
 Los desarrolladores de distribuciones y sistemas operativos ofrecen actualizaciones frecuentes de los paquetes, en muchas ocasiones por motivos de seguridad. **La actualización de la distribución o sistema operativo es, por lo tanto, un aspecto fundamental a la hora de proteger su servidor.**
 
-Para más información, consulte nuestra guía sobre la [seguridad de un VPS](https://docs.ovh.com/us/es/vps/consejos-proteccion-vps/).
+Para más información, consulte nuestra guía sobre la [seguridad de un VPS](/pages/cloud/vps/secure_your_vps).
 
 ### 2. Instalar el firewall iptables en Ubuntu
 
@@ -138,7 +136,7 @@ Las opciones funcionan de la siguiente forma:
 > [!warning]
 > En caso de perder el acceso a su servidor, puede seguir utilizando la herramienta KVM/IPMI para acceder a él de nuevo y modificar su configuración o eliminar las reglas.
 >
-> Para más información sobre el acceso a esta herramienta, consulte [esta guía](https://docs.ovh.com/us/en/vps/use-kvm-for-vps/).
+> Para más información sobre el acceso a esta herramienta, consulte [esta guía](/pages/cloud/vps/using_kvm_for_vps).
 > 
 
 ### 6. Controlar el tráfico por dirección IP

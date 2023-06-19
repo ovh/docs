@@ -1,8 +1,6 @@
 ---
 title: Launching your first SMS campaign
 excerpt: Find out how to launch an SMS campaign
-slug: launch_first_sms_campaign
-section: Getting started
 updated: 2022-08-05
 ---
 
@@ -37,7 +35,7 @@ To add a contact list, click the `Contacts`{.action} tab, and then click `Create
 
 ![firstsms](images/firstsms03.png){.thumbnail}
 
-With the following guide, you can find out how to [create a list of SMS recipients](../list_of_sms_recipients/).
+With the following guide, you can find out how to [create a list of SMS recipients](/pages/telecom/sms/liste_de_destinataire_sms).
 
 #### Add an address book
 
@@ -47,7 +45,7 @@ To add an address book, click the `Contacts`{.action} tab, then `Address book`{.
 
 ![firstsms](images/firstsms04.png){.thumbnail}
 
-Refer to our guide on [Managing SMS address books](../manage-sms-address-books/) to find out more.
+Refer to our guide on [Managing SMS address books](/pages/telecom/sms/gerer_mes_carnets_dadresses_sms) to find out more.
 
 ### Step 2: Create a sender
 
@@ -55,7 +53,7 @@ By default, SMS messages from an OVHcloud account in France are sent from a shor
 
 ![firstsms](images/firstsms05.png){.thumbnail}
 
-To do this, you can refer to the [section on choosing an SMS sender, in our guide on sending SMS messages via the OVHcloud Control Panel.](../send_sms_messages_via_control_panel/#step-3-choose-an-sms-sender)
+To do this, you can refer to the [section on choosing an SMS sender, in our guide on sending SMS messages via the OVHcloud Control Panel.](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#step-3-choose-an-sms-sender)
 
 ### Step 3: Sending an SMS campaign
 
@@ -63,7 +61,7 @@ In the `Message and Campaign`{.action} tab, you can access the sending options, 
 
 ![firstsms](images/firstsms02.png){.thumbnail}
 
-To send a unit SMS message via the OVHcloud Control Panel, you can refer to [this guide](../send_sms_messages_via_control_panel).
+To send a unit SMS message via the OVHcloud Control Panel, you can refer to [this guide](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client).
 
 To send an SMS campaign, click `Campaign Management`{.action}, then `Create a campaign`{.action}.
 
@@ -83,6 +81,6 @@ You just need to click the `Send`{.action} button to send or schedule your campa
 
 ## Go further
 
-See [our guide on managing your SMS history](../manage-sms-history/).
+See [our guide on managing your SMS history](/pages/telecom/sms/gerer_l_historique_des_sms).
 
 Join our community of users on <https://community.ovh.com/en/>.

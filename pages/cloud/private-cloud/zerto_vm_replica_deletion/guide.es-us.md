@@ -1,8 +1,6 @@
 ---
 title: "Eliminar la copia de una MV del sitio de recuperación Zerto"
-slug: zerto-vm-replica-deletion
 excerpt: Cómo eliminar una MV del sitio de recuperación cuando se elimina del sitio de origen
-section: Servicios y opciones de OVHcloud
 updated: 2021-12-09
 ---
 
@@ -24,7 +22,7 @@ Este documento muestra cómo borrar estos archivos y restaurar la VPG.
 
 - Ser contacto administrador de la [infraestructura Hosted Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/) para recibir las claves de conexión.
 - Tener un usuario activo con permisos específicos para Zerto (creado en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)).
-- Haber desplegado [Zerto Virtual Replication.](https://docs.ovh.com/us/es/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/)
+- Haber desplegado [Zerto Virtual Replication.](/pages/cloud/private-cloud/zerto_virtual_replication_as_a_service)
 
 ## Procedimiento
 

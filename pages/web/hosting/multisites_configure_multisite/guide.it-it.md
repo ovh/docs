@@ -1,9 +1,6 @@
 ---
 title: 'Ospitare più siti su uno stesso hosting'
-slug: configurare-un-multisito-su-un-hosting-web
 excerpt: 'Questa guida ti mostra come condividere il tuo hosting Web tra più siti Internet'
-section: Per iniziare
-order: 03
 updated: 2023-06-08
 ---
 
@@ -23,7 +20,7 @@ Su una stessa soluzione di hosting è possibile ospitare più siti Internet, anc
 
 - Disporre di una soluzione [di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} compatibile
 - Disporre di uno o più [domini](https://www.ovhcloud.com/it/domains/){.external}
-- Poter modificare la configurazione dei tuoi domini (la [zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#capire-il-concetto-di-dns))
+- Poter modificare la configurazione dei tuoi domini (la [zona DNS](/pages/web/domains/dns_zone_edit#capire-il-concetto-di-dns))
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
@@ -49,7 +46,7 @@ Per aggiungere un nuovo dominio o sottodominio al tuo hosting Web, clicca sul pu
 
 - **Aggiungi un dominio registrato in OVHcloud**:
 
-Nello Spazio Cliente OVHcloud vengono mostrati solo i domini per i quali sei [contatto tecnico o amministratore](../../customer/gestisci_i_tuoi_contatti/). Selezionane uno dalla lista e clicca su `Seguente`{.action}. Prosegui seguendo lo [Step 2.1: aggiungere un dominio registrato in OVHcloud](#add-ovhcloud-domain).
+Nello Spazio Cliente OVHcloud vengono mostrati solo i domini per i quali sei [contatto tecnico o amministratore](/pages/account/customer/managing_contacts). Selezionane uno dalla lista e clicca su `Seguente`{.action}. Prosegui seguendo lo [Step 2.1: aggiungere un dominio registrato in OVHcloud](#add-ovhcloud-domain).
 
 - **Aggiungi un dominio esterno**
 
@@ -91,7 +88,7 @@ Una volta inseriti tutti i dati, clicca su `Seguente`{.action} e verifica la cor
 Selezionando un dominio registrato in OVHcloud, hai la possibilità di modificarne automaticamente o manualmente la configurazione DNS:
 
 - **Per una configurazione DNS automatica**, spunta la casella `Configurazione automatica (consigliata)`{.action}
-- **Per una configurazione DNS manuale**, deseleziona la casella `Configurazione automatica (consigliata)`{.action} e recupera i parametri da modificare. Per eseguire questa operazione, consulta la guida [Modificare una zona DNS di OVHcloud](../../domains/web_hosting_modifica_la_tua_zona_dns/){.external}.
+- **Per una configurazione DNS manuale**, deseleziona la casella `Configurazione automatica (consigliata)`{.action} e recupera i parametri da modificare. Per eseguire questa operazione, consulta la guida [Modificare una zona DNS di OVHcloud](/pages/web/domains/dns_zone_edit){.external}.
 
 Clicca su `Conferma`{.action} per aggiungere il dominio. Questa operazione potrebbe richiedere circa un’ora per essere completata e la propagazione della nuova configurazione DNS da 1 a 24 ore per diventare effettiva.
 
@@ -105,13 +102,13 @@ Ora che il dominio è stato aggiunto, passa allo [Step 3: mettere online](#site-
 
  > Prima di proseguire, è preferibile modificare la zona DNS del dominio esterno.
  >
- > La modifica della configurazione del nome di dominio esterno (la sua zona DNS) deve essere effettuata dall'interfaccia del provider che la gestisce. Se il provider è OVHcloud, consulta la guida ["Modificare una zona DNS OVHcloud"](../../domains/web_hosting_modifica_la_tua_zona_dns/){.external}. La propagazione delle modifiche potrebbe richiedere da 1 a 24 ore.
+ > La modifica della configurazione del nome di dominio esterno (la sua zona DNS) deve essere effettuata dall'interfaccia del provider che la gestisce. Se il provider è OVHcloud, consulta la guida ["Modificare una zona DNS OVHcloud"](/pages/web/domains/dns_zone_edit){.external}. La propagazione delle modifiche potrebbe richiedere da 1 a 24 ore.
 >
 > Di seguito trovi i 2 elementi da modificare relativi alla configurazione DNS del tuo dominio esterno:
 >
 > |Campo|Dove trovare l’informazione|Azione da realizzare|
 > |---|---|---|
-> |TXT|Nella scheda `Multisito`{.action}, clicca sul pulsante `Configura il token ovhcontrol`{.action} in basso a sinistra.|Consente a OVHcloud di assicurarsi che l'aggiunta di ciascun dominio esterno sia legittima. Provvedi a creare il record TXT con il sottodominio ovhcontrol (ad esempio, ovhcontrol.mydomain.ovh) nella zona DNS che è l'autorità per il dominio da aggiungere.<br></br>Per aggiungere `blog.mydomain.ovh` è necessario creare il record per il sottodominio `ovhcontrol.mydomain.ovh` e non `ovhcontrol.blog.mydomain.ovh`.<br></br>Per recuperarla, consulta i [server DNS](../../domains/web_hosting_gestisci_il_tuo_server_dns/#capire-il-concetto-di-dns) a cui è associato il tuo dominio. Dovrai convalidare solo il dominio principale, non tutti i sottodomini.|
+> |TXT|Nella scheda `Multisito`{.action}, clicca sul pulsante `Configura il token ovhcontrol`{.action} in basso a sinistra.|Consente a OVHcloud di assicurarsi che l'aggiunta di ciascun dominio esterno sia legittima. Provvedi a creare il record TXT con il sottodominio ovhcontrol (ad esempio, ovhcontrol.mydomain.ovh) nella zona DNS che è l'autorità per il dominio da aggiungere.<br></br>Per aggiungere `blog.mydomain.ovh` è necessario creare il record per il sottodominio `ovhcontrol.mydomain.ovh` e non `ovhcontrol.blog.mydomain.ovh`.<br></br>Per recuperarla, consulta i [server DNS](/pages/web/domains/dns_server_general_information#capire-il-concetto-di-dns) a cui è associato il tuo dominio. Dovrai convalidare solo il dominio principale, non tutti i sottodomini.|
 >
 > ![multisito](images/add-multisite-external-step3.png){.thumbnail}
 >
@@ -151,9 +148,9 @@ annota i parametri indicati e clicca su `Conferma`{.action}. A questo punto, il 
 
 Una volta che il nome del dominio è stato aggiunto, non ti resta che pubblicare online il sito associato. Ti ricordiamo che questa operazione dovrà essere effettuata nella cartella root indicata nello step precedente.
 
-Per semplificare la procedura, OVHcloud mette a disposizione i moduli in 1 click, template pronti all'uso grazie ai quali il sito verrà installato automaticamente nella cartella root. Per maggiori informazioni, consulta la guida [Installare i moduli in 1 click OVHcloud](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/){.external}. 
+Per semplificare la procedura, OVHcloud mette a disposizione i moduli in 1 click, template pronti all'uso grazie ai quali il sito verrà installato automaticamente nella cartella root. Per maggiori informazioni, consulta la guida [Installare i moduli in 1 click OVHcloud](/pages/web/hosting/cms_install_1_click_modules){.external}. 
 
-Se invece vuoi effettuare un’installazione manuale, assicurati di avere a disposizione i file del sito e caricali nella corretta cartella root del tuo spazio di storage. Per maggiori informazioni, consulta la guida [Mettere online un sito Internet su un hosting Web](../hosting_condiviso_come_mettere_online_il_tuo_sito/){.external}.
+Se invece vuoi effettuare un’installazione manuale, assicurati di avere a disposizione i file del sito e caricali nella corretta cartella root del tuo spazio di storage. Per maggiori informazioni, consulta la guida [Mettere online un sito Internet su un hosting Web](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}.
 
 > [!primary]
 >
@@ -164,11 +161,11 @@ Se invece vuoi effettuare un’installazione manuale, assicurati di avere a disp
 
 ## Per saperne di più
 
-[Installare i moduli in 1 click OVHcloud](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/){.external}
+[Installare i moduli in 1 click OVHcloud](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Modificare una zona DNS OVHcloud](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/){.external}
+[Modificare una zona DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external}
 
-[Mettere online un sito Internet su un hosting Web](../hosting_condiviso_come_mettere_online_il_tuo_sito/){.external}
+[Mettere online un sito Internet su un hosting Web](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le diverse [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 

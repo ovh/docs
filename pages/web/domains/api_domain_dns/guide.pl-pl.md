@@ -1,11 +1,8 @@
 ---
 title: "Configure the DNS of your Domain Name"
-slug: api-dns
 excerpt: "Use the OVHcloud public API to configure the DNS of your domain name"
-section: "Domeny API"
-order: 8
 routes:
-  canonical: "https://docs.ovh.com/gb/en/domains/api-dns/"
+  canonical: "/pages/web/domains/api_domain_dns"
 updated: 2022-05-05
 ---
 
@@ -15,20 +12,20 @@ updated: 2022-05-05
 
 > [!primary]
 >
-> To follow this guide, make sure you are connected to OVHcloud API. You may find more information on the [API introduction](../api) page if needed.
+> To follow this guide, make sure you are connected to OVHcloud API. You may find more information on the [API introduction](/pages/web/domains/api_domain_intro) page if needed.
 
 <!-- Begin TOC -->
 
 ## Table of Contents
 
-- [Introduction](../api)
-- [Order a Domain Name](../api-order)
-- [Tasks Management](../api-tasks)
-- [Manage Contacts of a Domain Name](../api-contact)
-- [Managing Eligibility Rules](../api-rules)
-- [Configure the Display of Contact Data in the Whois](../api-whois)
+- [Introduction](/pages/web/domains/api_domain_intro)
+- [Order a Domain Name](/pages/web/domains/api_domain_order)
+- [Tasks Management](/pages/web/domains/api_domain_tasks)
+- [Manage Contacts of a Domain Name](/pages/web/domains/api_domain_contacts)
+- [Managing Eligibility Rules](/pages/web/domains/api_domain_rules)
+- [Configure the Display of Contact Data in the Whois](/pages/web/domains/api_domain_whois)
 - **Configure the DNS of your Domain Name**
-- [Transfer a Domain Name](../api-transfer)
+- [Transfer a Domain Name](/pages/web/domains/api_domain_transfer)
 <!-- End TOC -->
 
 ## Introduction
@@ -243,7 +240,7 @@ The following API allows you to add new name servers on your domain name:
 >> }
 >> ```
 
-This route will add the new name servers on the domain name and trigger a `DomainDnsUpdate` synchronisation task on the registry side. You will be able to track this task via the [dedicated APIs](../api-tasks/#view-pending-tasks).
+This route will add the new name servers on the domain name and trigger a `DomainDnsUpdate` synchronisation task on the registry side. You will be able to track this task via the [dedicated APIs](/pages/web/domains/api_domain_tasks#view-pending-tasks).
 
 It is also possible to completely replace the name servers declaration of a domain name through the following API:
 
@@ -284,7 +281,7 @@ It is also possible to completely replace the name servers declaration of a doma
 >> ```
 
 This route will replace the name servers declaration on the domain name and, as the previous route, trigger a `DomainDnsUpdate` synchronisation task with the registry.
-You will be able to track this task via the [dedicated APIs](../api-tasks/#view-pending-tasks).
+You will be able to track this task via the [dedicated APIs](/pages/web/domains/api_domain_tasks#view-pending-tasks).
 
 It is also possible to delete a name server declared on a domain name through the following API:
 
@@ -316,7 +313,7 @@ It is also possible to delete a name server declared on a domain name through th
 >> ```
 
 This route will delete the name server declared on your domain name and trigger a `DomainDnsUpdate` update task on the registry.
-You will be able to track this task via the [dedicated APIs](../api-tasks/#view-pending-tasks).
+You will be able to track this task via the [dedicated APIs](/pages/web/domains/api_domain_tasks#view-pending-tasks).
 
 ## Glue Records Declaration
 
@@ -439,7 +436,7 @@ The following API allows you to add a **glue record** on your domain name:
 >> ```
 
 This route will trigger a `DomainHostCreate` task to create the **host** on the domain name registry.
-You will be able to track this task via the [dedicated APIs](../api-tasks/#view-pending-tasks).
+You will be able to track this task via the [dedicated APIs](/pages/web/domains/api_domain_tasks#view-pending-tasks).
 
 > [!warning]
 >
@@ -488,7 +485,7 @@ It is also possible to update a **glue record** through the following API:
 >> ```
 
 This route will trigger a `DomainHostUpdate` task to modify the **host** on the domain name registry.
-You will be able to track this task via the [dedicated APIs](../api-tasks/#view-pending-tasks), and you will not have to re-declare the name server on the domain name.
+You will be able to track this task via the [dedicated APIs](/pages/web/domains/api_domain_tasks#view-pending-tasks), and you will not have to re-declare the name server on the domain name.
 
 #### Delete an Existing Glue Record
 
@@ -524,4 +521,4 @@ Then you can call the following API to delete the **glue record**:
 >> ```
 
 This route will trigger a `DomainHostDelete` task to delete the **host** on the domain name registry.
-You will be able to track this task via the [dedicated APIs](../api-tasks/#view-pending-tasks).
+You will be able to track this task via the [dedicated APIs](/pages/web/domains/api_domain_tasks#view-pending-tasks).

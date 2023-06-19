@@ -1,9 +1,6 @@
 ---
 title: "Utilizar un certificado SSL EV para su sitio web"
-slug: ssl-ev
 excerpt: "Cómo contratar e instalar un certificado SSL EV en un alojamiento web de OVHcloud"
-section: SSL
-order: 03
 updated: 2023-06-08
 ---
 
@@ -17,7 +14,7 @@ updated: 2023-06-08
 
 Los certificados Secure Socket Layer (SSL) permiten cifrar los intercambios realizados desde o hacia su sitio web. Esto evita que una persona o robot malintencionado venga a "escuchar" claramente las peticiones enviadas o enviadas a su sitio web.
 
-OVHcloud ofrece varios tipos de certificados SSL en nuestros [planes de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/). Estos datos se presentan en la guía [Gestionar un certificado SSL en un alojamiento web](https://docs.ovh.com/es/hosting/gestionar-un-certificado-ssl-en-un-alojamiento-web/). Los certificados SSL son imprescindibles para la seguridad de su sitio web.
+OVHcloud ofrece varios tipos de certificados SSL en nuestros [planes de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/). Estos datos se presentan en la guía [Gestionar un certificado SSL en un alojamiento web](/pages/web/hosting/ssl_on_webhosting). Los certificados SSL son imprescindibles para la seguridad de su sitio web.
 
 Existen tres tipos de certificados SSL:
 
@@ -66,7 +63,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 #### 1.1 - Para un dominio y un alojamiento ya existentes en OVHcloud
 
-Consulte nuestra guía sobre cómo [gestionar un certificado SSL en su alojamiento web](https://docs.ovh.com/es/hosting/gestionar-un-certificado-ssl-en-un-alojamiento-web/) y seleccione el **Certificado SSL EV** una vez haya llegado al túnel de pedido.
+Consulte nuestra guía sobre cómo [gestionar un certificado SSL en su alojamiento web](/pages/web/hosting/ssl_on_webhosting) y seleccione el **Certificado SSL EV** una vez haya llegado al túnel de pedido.
 
 Introduzca con exactitud la información solicitada por **Sectigo** antes de que se le emita el certificado SSL EV. 
 
@@ -172,7 +169,7 @@ Una vez realizadas las comprobaciones realizadas por Sectigo, sus servicios le c
 
 Una vez que Sectigo haya procedido a todas las verificaciones, sus servicios generan el certificado SSL EV y nos transmiten los elementos necesarios para su instalación en su alojamiento.
 
-Solo tendrá que [pasar su sitio web en HTTPS](https://docs.ovh.com/es/hosting/activar-https-en-un-sitio-web-con-ssl/) para utilizar plenamente su certificado SSL EV.
+Solo tendrá que [pasar su sitio web en HTTPS](/pages/web/hosting/ssl-activate-https-website) para utilizar plenamente su certificado SSL EV.
 
 ## Más información <a name="go-further"></a>
 
@@ -180,9 +177,9 @@ Solo tendrá que [pasar su sitio web en HTTPS](https://docs.ovh.com/es/hosting/a
 
 [Descripción de las verificaciones realizadas por Setigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}
 
-[Gestionar un certificado SSL en un alojamiento web](https://docs.ovh.com/es/hosting/gestionar-un-certificado-ssl-en-un-alojamiento-web/)
+[Gestionar un certificado SSL en un alojamiento web](/pages/web/hosting/ssl_on_webhosting)
 
-[Habilitar HTTPS en el sitio web](https://docs.ovh.com/es/hosting/activar-https-en-un-sitio-web-con-ssl/)
+[Habilitar HTTPS en el sitio web](/pages/web/hosting/ssl-activate-https-website)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 

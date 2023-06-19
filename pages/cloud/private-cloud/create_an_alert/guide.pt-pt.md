@@ -1,9 +1,6 @@
 ---
 title: Criar um Alerta
 excerpt: Configure alertas no seu cliente vSphere
-slug: criar_um_alerta
-section: Gestão das máquinas virtuais
-order: 09
 updated: 2020-07-08
 ---
 
@@ -18,7 +15,7 @@ updated: 2020-07-08
 ## Requisitos
 
 - Ter um produto [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}.
-- Estar ligado à [interface vSphere](../instalar_o_vsphere_client/).
+- Estar ligado à [interface vSphere](/pages/cloud/private-cloud/vsphere_interface_connexion).
 
 ## Instruções
 

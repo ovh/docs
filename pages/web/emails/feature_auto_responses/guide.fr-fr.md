@@ -1,9 +1,6 @@
 ---
 title: 'Créer un répondeur pour son adresse e-mail'
-slug: mise-en-place-repondeur-mail
 excerpt: 'Découvrez comment mettre en place un répondeur e-mail'
-section: 'Fonctionnalités des adresses e-mail'
-order: 02
 updated: 2021-04-20
 ---
 
@@ -24,7 +21,7 @@ En cas d'absence à votre bureau, vous pouvez mettre en place un répondeur e-ma
 
 > [!primary]
 >
-> Si votre adresse e-mail est sur une offre [**Exchange**](https://www.ovhcloud.com/fr/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/fr/emails/email-pro/) ou qu'il n'y a pas de section `Gestion des répondeurs`{.action} dans votre MXplan, vous devrez alors créer le répondeur depuis votre webmail en vous aidant de la documentation [« Mettre en place un répondeur automatique depuis l’interface OWA »](../../microsoft-collaborative-solutions/exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa/).
+> Si votre adresse e-mail est sur une offre [**Exchange**](https://www.ovhcloud.com/fr/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/fr/emails/email-pro/) ou qu'il n'y a pas de section `Gestion des répondeurs`{.action} dans votre MXplan, vous devrez alors créer le répondeur depuis votre webmail en vous aidant de la documentation [« Mettre en place un répondeur automatique depuis l’interface OWA »](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies).
 
 ### Création du répondeur
 

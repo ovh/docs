@@ -1,9 +1,6 @@
 ---
 title: Démarrer une instance sur un volume attaché
-slug: demarrer-une-instance-sur-un-volume-attache
 legacy_guide_number: 2064
-section: Gestion via OpenStack
-order: 9
 updated: 2019-05-20
 ---
 
@@ -31,7 +28,7 @@ Il est également possible de déployer un système d'exploitation sur un volume
 
 
 ### Prérequis
-- [Charger les variables d'environnement OpenStack](../set-openstack-environment-variables/)
+- [Charger les variables d'environnement OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 - Un volume avec un système d'exploitation
 
 

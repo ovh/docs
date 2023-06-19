@@ -1,9 +1,6 @@
 ---
 title: 'Transferring a domain name to OVHcloud'
-slug: transfer-generic-domain
 excerpt: 'Find out how to transfer a generic domain name to OVHcloud'
-section: Transfer
-order: 01
 updated: 2023-06-08
 ---
 
@@ -21,9 +18,9 @@ By transferring your domain name, you will change your domain name registrar. Yo
 >
 > If OVHcloud is already the *registrar* of your domain name, the *incoming domain transfer* procedure does not apply. The *incoming domain transfer* procedure described in this guide is **only** appropriate for domain names registered with a *registrar* other than OVHcloud.
 >
-> To transfer the domain name management to another OVHcloud customer account, a *change of contacts* must be made instead. The procedure is described in [our contact management guide](https://docs.ovh.com/sg/en/customer/managing-contacts/).
+> To transfer the domain name management to another OVHcloud customer account, a *change of contacts* must be made instead. The procedure is described in [our contact management guide](/pages/account/customer/managing_contacts).
 >
-> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names instructions](https://docs.ovh.com/sg/en/domains/how-to-change-domain-name-holder/).
+> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names instructions](/pages/web/domains/trade_domain).
 >
 
 ## Requirements
@@ -94,7 +91,7 @@ When you are asked to provide your transfer code, enter it into the field. If yo
 
 ![domain](images/step_authinfo_add.png){.thumbnail}
 
-Domains can also be ordered in addition to a [Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/). Our guide on [Migrating your website and emails to OVHcloud](../../hosting/migrating-website-to-ovh/){.external} provides useful information for an optimised approach.
+Domains can also be ordered in addition to a [Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/). Our guide on [Migrating your website and emails to OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external} provides useful information for an optimised approach.
 
 > [!warning]
 >
@@ -109,7 +106,7 @@ Domains can also be ordered in addition to a [Web Hosting plan](https://www.ovhc
 
 - Clicking on `Change the configuration`{.action} in this step allows you to enter the names of the DNS servers the domain name is currently using. This way, the domain name will be already associated with those DNS servers in the OVHcloud configuration. 
 
-- If you proceed without doing this, the domain name will provided with a new DNS zone on OVHcloud DNS servers. A manual [modification of the DNS zone](../web_hosting_how_to_edit_my_dns_zone/) might then become necessary.
+- If you proceed without doing this, the domain name will provided with a new DNS zone on OVHcloud DNS servers. A manual [modification of the DNS zone](/pages/web/domains/dns_zone_edit) might then become necessary.
 
 - In some cases, the transfer process may require additional information regarding the domain name owner. To add this information, click on the option `Manage contacts/owner`{.action}.
 
@@ -155,10 +152,10 @@ To do this, go to `Web Cloud`{.action} and open `Domain names`{.action} in the s
 
 ## Go further
 
-[Migrating your website and emails to OVHcloud](../../hosting/migrating-website-to-ovh/)
+[Migrating your website and emails to OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh)
 
-[Editing an OVHcloud DNS zone](../web_hosting_how_to_edit_my_dns_zone/)
+[Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit)
 
-[Editing the DNS servers for an OVHcloud domain name](../web_hosting_general_information_about_dns_servers/)
+[Editing the DNS servers for an OVHcloud domain name](/pages/web/domains/dns_server_general_information)
 
 Join our community of users on <https://community.ovh.com/en/>.

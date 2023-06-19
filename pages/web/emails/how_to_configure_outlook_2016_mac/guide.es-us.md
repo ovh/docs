@@ -1,9 +1,6 @@
 ---
 title: 'Configurar una cuenta de correo electrónico en Outlook para macOS'
-slug: configuracion-outlook-2016-mac
 excerpt: 'Cómo configurar una cuenta MX Plan en Outlook 2016 para macOS'
-section: Configuración en el ordenador
-order: 02
 updated: 2018-05-31
 ---
 
@@ -30,7 +27,7 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 
 > [!primary]
 >
-> Si utiliza Outlook 2016 para Windows, consulte nuestra guía [Configurar una cuenta de correo electrónico en Outlook 2016 para Windows](../configuracion-outlook-2016/){.external}.
+> Si utiliza Outlook 2016 para Windows, consulte nuestra guía [Configurar una cuenta de correo electrónico en Outlook 2016 para Windows](/pages/web/emails/how_to_configure_outlook_2016){.external}.
 >
 
 ## Procedimiento

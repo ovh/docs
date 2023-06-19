@@ -1,10 +1,7 @@
 ---
 title: Modificar su llave SSH en caso de pérdida
 excerpt: Modificar su llave SSH en caso de pérdida
-slug: modificar_su_llave_ssh_en_caso_de_perdida
 legacy_guide_number: g2069
-section: Gestión de las instancias desde el área de cliente
-order: 05
 updated: 2022-02-10
 ---
 
@@ -18,14 +15,14 @@ updated: 2022-02-10
 
 En caso de pérdida de llave SSH, ya sea como consecuencia de una reinstalación de correos o de otro tipo, es posible que no pueda conectarse a su instancia si no ha configurado ninguna forma alternativa de conectarse a su instancia.
 
-Para recuperar el acceso, hemos puesto a su disposición un [modo de rescate](https://docs.ovh.com/us/es/public-cloud/poner_una_instancia_en_modo_de_rescate/) que le permite conectarse con una contraseña y modificar sus archivos.
+Para recuperar el acceso, hemos puesto a su disposición un [modo de rescate](/pages/platform/public-cloud/put_an_instance_in_rescue_mode) que le permite conectarse con una contraseña y modificar sus archivos.
 
 **Esta guía explica cómo configurar el archivo *authorized_keys* del usuario *admin* para poder añadir una nueva llave SSH para recuperar el acceso a la instancia.**
 
 ## Requisitos
 
 - Tener una [Instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud
-- Tener acceso a su instancia a través de SSH en [modo de rescate](../poner_una_instancia_en_modo_de_rescate/)
+- Tener acceso a su instancia a través de SSH en [modo de rescate](/pages/platform/public-cloud/put_an_instance_in_rescue_mode)
 - Crear una llave SSH
 
 ## Procedimiento
@@ -35,7 +32,7 @@ Para recuperar el acceso, hemos puesto a su disposición un [modo de rescate](ht
 Si quiere registrar una llave SSH en el área de cliente de OVHcloud, le recomendamos que utilice el cifrado RSA o ECDSA. ED25519 no está soportado actualmente.
 >
 
-Una vez que haya montado el disco de su instancia en [modo de rescate](../poner_una_instancia_en_modo_de_rescate/#acceso-a-sus-datos), podrá acceder a todos sus archivos.
+Una vez que haya montado el disco de su instancia en [modo de rescate](/pages/platform/public-cloud/put_an_instance_in_rescue_mode#acceso-a-sus-datos), podrá acceder a todos sus archivos.
 
 El archivo que contiene las llaves SSH es el siguiente:
 
@@ -93,6 +90,6 @@ Una vez realizada la modificación y guardada, solo tiene que reiniciar su insta
 
 ## Más información
 
-[Convertirse en el usuario root y establecer una contraseña](https://docs.ovh.com/us/es/public-cloud/conectarse_como_usuario_root_y_establecer_una_contrasena/)
+[Convertirse en el usuario root y establecer una contraseña](/pages/platform/public-cloud/become_root_and_change_password)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

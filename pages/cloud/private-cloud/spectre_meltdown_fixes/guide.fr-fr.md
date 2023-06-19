@@ -1,9 +1,6 @@
 ---
 title: Vérifier et corriger les failles Spectre/Meltdown sur vos hôtes
-slug: verifier_corriger_failles_spectre_meltdown_hotes
 excerpt: Découvrez comment corriger les vulnérabilités Spectre et Meltdown
-section: Informations Meltdown et Spectre
-order: 02
 updated: 2018-03-26
 ---
 
@@ -11,7 +8,7 @@ updated: 2018-03-26
 
 ## Objectif
 
-Vous pouvez retrouver les informations générales concernant Spectre et Meltdown sur notre [guide détaillé](https://docs.ovh.com/fr/dedicated/information-about-meltdown-spectre-vulnerability-fixes/){.external} et notre [guide par OS](https://docs.ovh.com/fr/dedicated/meltdown-spectre-kernel-update-per-operating-system/){.external}.
+Vous pouvez retrouver les informations générales concernant Spectre et Meltdown sur notre [guide détaillé](/pages/cloud/dedicated/meltdown_spectre_fixes){.external} et notre [guide par OS](/pages/cloud/dedicated/meltdown_spectre_fixes_os){.external}.
 
 **Ce guide vous explique comment corriger les vulnérabilités Spectre et Meltdown**.
 
@@ -42,7 +39,7 @@ Concernant l'offre **Private Cloud**, une maintenance est prévue pour corriger 
 
 ### Vérifier la version d'un hôte
 
-Pour vérifier la version de votre hôte, vous pouvez vous connecter à l'[interface vSphere](https://docs.ovh.com/fr/private-cloud/connexion-interface-vsphere/){.external} et accéder au résumé de l'hôte, partie `Configuration`{.action} :
+Pour vérifier la version de votre hôte, vous pouvez vous connecter à l'[interface vSphere](/pages/cloud/private-cloud/vsphere_interface_connexion){.external} et accéder au résumé de l'hôte, partie `Configuration`{.action} :
 
 ![Partie configuration de l'hôte](images/spectre1.JPG)
 
@@ -56,7 +53,7 @@ Si vous possédez une version inférieure à ces *builds*, vous devez mettre à 
 
 ### Mettre à jour l'hôte avec le patch associé à la faille
 
-La mise à jour d'un hôte s'effectue en plaçant celui-ci en maintenance (un redémarrage sera effectué lors de la procédure) et en utilisant le [plugin Update Manager](https://docs.ovh.com/fr/private-cloud/vmware-update-manager/){.external}.
+La mise à jour d'un hôte s'effectue en plaçant celui-ci en maintenance (un redémarrage sera effectué lors de la procédure) et en utilisant le [plugin Update Manager](/pages/cloud/private-cloud/vmware_update_manager){.external}.
 
 
 Les patchs sont les suivants :

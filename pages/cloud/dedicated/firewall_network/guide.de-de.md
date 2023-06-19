@@ -1,8 +1,6 @@
 ---
 title: Konfiguration der Network Firewall
-slug: firewall-network
 excerpt: Erfahren Sie hier, wie Sie die Network Firewall konfigurieren
-section: 'Netzwerk & IP'
 updated: 2023-05-10
 ---
 
@@ -87,7 +85,7 @@ Sie können bis zu **20 Regeln für jede IP-Adresse** festlegen.
 
 > [!warning]
 > Bitte beachten Sie, dass die Network Firewall von OVHcloud nicht verwendet werden kann, um Ports auf einem Server zu öffnen. Um Ports auf einem Server zu öffnen müssen Sie die Firewall des auf dem Server installierten Betriebssystems einrichten.<br>
-> Weitere Informationen finden Sie in diesen Anleitungen: [Firewall auf einem Windows Server konfigurieren](https://docs.ovh.com/de/dedicated/firewall-windows/) und [Konfiguration der Linux Firewall mit iptables](https://docs.ovh.com/de/dedicated/firewall-iptables/).
+> Weitere Informationen finden Sie in diesen Anleitungen: [Firewall auf einem Windows Server konfigurieren](/pages/cloud/dedicated/activate-port-firewall-soft-win) und [Konfiguration der Linux Firewall mit iptables](/pages/cloud/dedicated/firewall-Linux-iptable).
 >
 
 Um eine Regel hinzuzufügen, klicken Sie rechts auf die Schaltfläche `Eine Regel hinzufügen`{.action}:

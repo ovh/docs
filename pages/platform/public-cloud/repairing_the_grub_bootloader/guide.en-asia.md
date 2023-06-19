@@ -1,8 +1,6 @@
 ---
 title: 'Repairing the GRUB bootloader'
-slug: repairing-the-grub-bootloader
 excerpt: 'Guide to repair the GRUB bootloader on an instance'
-section: Tutorials
 updated: 2020-11-23
 ---
 
@@ -14,7 +12,7 @@ In some cases you might need to repair the GRUB bootloader. This guide will show
 
 ## Requirements
 
-- The instance must be in rescue mode (see [Putting an instance in rescue mode](../put_an_instance_in_rescue_mode)).
+- The instance must be in rescue mode (see [Putting an instance in rescue mode](/pages/platform/public-cloud/put_an_instance_in_rescue_mode)).
 
 ## Instructions
 
@@ -46,7 +44,7 @@ grub2-install /dev/sdb
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
-You can now leave the rescue mode and boot normally (see [Putting an instance in rescue mode](../put_an_instance_in_rescue_mode)).
+You can now leave the rescue mode and boot normally (see [Putting an instance in rescue mode](/pages/platform/public-cloud/put_an_instance_in_rescue_mode)).
 
 ## Go further
 

@@ -1,8 +1,6 @@
 ---
 title: 'Substituir um disco com defeito'
-slug: substituicao-disco
 excerpt: 'Saiba como identificar um disco com defeito e pedir a sua substituição'
-section: 'RAID e discos'
 updated: 2018-06-21
 ---
 
@@ -46,7 +44,7 @@ Sempre que receber um alerta por e-mail ou que constate uma falha, é indispens�
 
 #### Servidor com recurso a um RAID por software
 
-Se possui um servidor que recorre a RAID por software, consulte o guia [«RAID por software»](https://docs.ovh.com/pt/dedicated/raid-soft/) para encontrar os discos instalados no seu servidor.
+Se possui um servidor que recorre a RAID por software, consulte o guia [«RAID por software»](/pages/cloud/dedicated/raid_soft) para encontrar os discos instalados no seu servidor.
 
 Quando tiver encontrado o caminho de acesso aos discos, pode testá-los da seguinte forma através do comando `smartctl`:
 
@@ -90,7 +88,7 @@ Portanto, a linha importante no nosso caso será a seguinte:
 
 #### Servidor com recurso a um RAID por hardware
 
-Se possui um servidor que recorre a RAID por hardware, consulte o guia [«RAID por hardware» - EN](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} e realize o procedimento adequado ao seu tipo de controlador RAID para encontrar os caminhos de acesso aos discos.
+Se possui um servidor que recorre a RAID por hardware, consulte o guia [«RAID por hardware» - EN](/pages/cloud/dedicated/raid_hard){.external} e realize o procedimento adequado ao seu tipo de controlador RAID para encontrar os caminhos de acesso aos discos.
 
 Quando tiver encontrado o caminho de acesso aos discos, pode testá-los da seguinte forma através do comando `smartctl`:
 
@@ -122,7 +120,7 @@ O número do RAID deve ser especificado (/dev/sg0 = 1.º RAID, /dev/sg1 = 2.º R
 
 #### Servidor com um disco NVMe
 
-No caso de um disco NVMe, será preciso pôr o servidor em modo [« Rescue-pro »](https://docs.ovh.com/pt/dedicated/rescue_mode/), no qual a ferramenta **nvme-cli** está instalada de forma padrão.
+No caso de um disco NVMe, será preciso pôr o servidor em modo [« Rescue-pro »](/pages/cloud/dedicated/rescue_mode), no qual a ferramenta **nvme-cli** está instalada de forma padrão.
 
 Então será necessário utilizar o comando `nvme list` para obter os números de série dos discos:
 
@@ -141,7 +139,7 @@ root@rescue:~# nvme list
 
 Para pedir a substituição de um disco, basta criar um ticket junto do serviço de apoio técnico, a partir da [Área de Cliente OVHcloud](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. De modo a acelerar o processo, é conveniente fornecer os elementos ligados aos testes. Aqui fica uma lista do que é preciso:
 
-- **O número de série do disco a substituir, bem como de todos os outros discos sem problemas**. Para obter o número de série do disco a substituir, consulte [este guia](https://docs.ovh.com/pt/dedicated/obter-numero-serie-disco/). Se por alguma razão não conseguir obter o número de série do disco, queira mencioná-lo no ticket e comunicar-nos o número de série do(s) disco(s) a não substituir. 
+- **O número de série do disco a substituir, bem como de todos os outros discos sem problemas**. Para obter o número de série do disco a substituir, consulte [este guia](/pages/cloud/dedicated/how_to_find_hdd_serial). Se por alguma razão não conseguir obter o número de série do disco, queira mencioná-lo no ticket e comunicar-nos o número de série do(s) disco(s) a não substituir. 
 
 Como já indicado, os números de todos os discos são importantes. Eles serão transmitidos ao técnico no datacenter e evitarão a ocorrência de erros durante a operação.
 
@@ -200,16 +198,16 @@ MegaCli -PdLocate -stop -physdrv[E0:S0] -a0
 
 Se possui um servidor em RAID por hardware, o RAID vai restabelecer-se de forma autónoma. Atenção: o *auto-rebuild*, ativado de forma padrão, não deve ter sido desativado por si. O processo de ressincronização pode levar alguns minutos e prejudicar o desempenho de leitura/escrita do RAID.
 
-Se possui um servidor em RAID por software, convém que execute manualmente a ressincronização dos discos. Para isso, consulte a documentação associada ao [«RAID por software»](https://docs.ovh.com/pt/dedicated/raid-soft/).
+Se possui um servidor em RAID por software, convém que execute manualmente a ressincronização dos discos. Para isso, consulte a documentação associada ao [«RAID por software»](/pages/cloud/dedicated/raid_soft).
 
 
 ## Quer saber mais?
 
-[«RAID por software»](https://docs.ovh.com/pt/dedicated/raid-soft/)
+[«RAID por software»](/pages/cloud/dedicated/raid_soft)
 
-[«RAID por hardware» - EN](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}
+[«RAID por hardware» - EN](/pages/cloud/dedicated/raid_hard){.external}
 
-[Modo rescue](https://docs.ovh.com/pt/dedicated/rescue_mode/)
+[Modo rescue](/pages/cloud/dedicated/rescue_mode)
 
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

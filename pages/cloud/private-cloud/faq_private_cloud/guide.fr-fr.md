@@ -1,9 +1,6 @@
 ---
 title: Questions fréquentes
-slug: questions-frequentes
 legacy_guide_number: '7766169'
-section: FAQ
-order: 020
 updated: 2018-03-26
 ---
 

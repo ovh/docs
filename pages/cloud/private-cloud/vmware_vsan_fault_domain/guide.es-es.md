@@ -1,8 +1,6 @@
 ---
 title: 'Gestión de dominios vSAN'
-slug: vmware-vsan-fault-domain
 excerpt: 'Cómo gestionar los dominios de fallo vSAN'
-section: 'Funcionalidades de VMware vSphere'
 updated: 2021-12-23
 ---
 
@@ -20,7 +18,7 @@ Esta guía explica el funcionamiento y la aplicación de los dominios de fallos 
 
 - Ser contacto administrador de la infraestructura [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/) para recibir las claves de conexión.
 - Tener un usuario activo con permisos específicos para NSX (creado en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Haber desplegado un [datastore vSan](https://docs.ovh.com/es/private-cloud/vmware-vsan/)
+- Haber desplegado un [datastore vSan](/pages/cloud/private-cloud/vmware_vsan)
 
 ## Procedimiento
 

@@ -1,9 +1,6 @@
 ---
 title: Trasferisci il tuo Additional IP
 excerpt: "Trasferisci il tuo Additional IP"
-slug: migrate-additional-ip
-section: Additional IP
-order: 04
 updated: 2023-01-04
 ---
 
@@ -69,9 +66,9 @@ L'Additional IP può essere configurato sul server di destinazione prima o dopo 
 
 ## Per saperne di più
 
-[Configura un Additional IP](https://docs.ovh.com/it/publiccloud/network-services/configure-additional-ip/)
+[Configura un Additional IP](/pages/platform/network-services/getting-started-04-configure-additional-ip-to-instance)
 
-[Importa un Additional IP](https://docs.ovh.com/it/publiccloud/network-services/import-additional-ip/)
+[Importa un Additional IP](/pages/platform/network-services/additional-ip-import)
 
 Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 

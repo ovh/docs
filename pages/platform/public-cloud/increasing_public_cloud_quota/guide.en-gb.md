@@ -1,10 +1,7 @@
 ---
 title: 'Increasing Public Cloud quotas'
 excerpt: 'Find out how to apply for a Public Cloud quota extension'
-slug: increase-public-cloud-quota
 legacy_guide_number: 1904
-section: Project management
-order: 5
 updated: 2023-05-03
 ---
 
@@ -20,7 +17,7 @@ To be able to use additional resources and projects, the quotas need to be incre
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- A [valid payment method](../../billing/manage-payment-methods/) registered in your OVHcloud account
+- A [valid payment method](/pages/account/billing/manage-payment-methods) registered in your OVHcloud account
 
 ## Instructions
 

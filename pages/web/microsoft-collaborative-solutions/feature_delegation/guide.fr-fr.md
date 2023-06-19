@@ -1,9 +1,6 @@
 ---
 title: 'Déléguer des droits sur un compte e-mail'
-slug: exchange-donner-les-droits-full-access-sur-un-compte
 excerpt: 'Découvrez comment déléguer des droits de votre compte e-mail à un autre'
-section: 'Fonctionnalités des comptes Exchange'
-order: 03
 updated: 2020-10-24
 ---
 
@@ -66,11 +63,11 @@ Maintenant que la délégation est en place, il ne reste plus qu'à l'utiliser. 
 
 La manière de faire est différente selon le ou les droits que vous avez délégués et le logiciel ou l'interface web que vous utilisez pour accéder à votre compte e-mail. Poursuivez la lecture de cette documentation en fonction du ou des droits que vous avez délégués.
 
-- [Utiliser son « droit d'accès »](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-donner-les-droits-full-access-sur-un-compte/#21-utiliser-son-droit-dacces){.external}
+- [Utiliser son « droit d'accès »](/pages/web/microsoft-collaborative-solutions/feature_delegation#21-utiliser-son-droit-dacces){.external}
 
-- [Utiliser son « droit d'envoi »](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-donner-les-droits-full-access-sur-un-compte/#22-utiliser-son-droit-denvoi){.external}
+- [Utiliser son « droit d'envoi »](/pages/web/microsoft-collaborative-solutions/feature_delegation#22-utiliser-son-droit-denvoi){.external}
 
-- [Utiliser son « droit d'envoyer de la part de »](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-donner-les-droits-full-access-sur-un-compte/#23-utiliser-son-droit-denvoyer-de-la-part-de){.external}
+- [Utiliser son « droit d'envoyer de la part de »](/pages/web/microsoft-collaborative-solutions/feature_delegation#23-utiliser-son-droit-denvoyer-de-la-part-de){.external}
 
 > [!warning]
 >

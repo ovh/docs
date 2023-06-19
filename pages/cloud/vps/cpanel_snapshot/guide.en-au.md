@@ -1,8 +1,6 @@
 ---
 title: 'Automated Backup - Kernel panic (cPanel)'
-slug: cpanel_auto_backup
 excerpt: 'Find out how to fix issues with cPanel servers getting stuck during OVHcloud automated backup'
-section: 'Advanced usage'
 updated: 2023-06-06
 ---
 

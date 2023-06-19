@@ -1,11 +1,8 @@
 ---
 title: Clonar una MV
-slug: clonar-una-mv
 routes:
-    canonical: 'https://docs.ovh.com/es/private-cloud/clonar-una-mv/'
+    canonical: '/pages/cloud/private-cloud/clone_a_vm'
 excerpt: Cómo clonar una MV existente en vSphere
-section: Gestión de las máquinas virtuales
-order: 07
 updated: 2020-11-18
 ---
 
@@ -21,13 +18,13 @@ Clonar una MV permite crear una copia de la máquina virtual original.
 
 - Tener contratado un servicio [Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-metal/){.external}.
 - Disponer de al menos una MV en su cluster.
-- Estar conectado a la [interfaz vSphere](../instalar_el_vsphere_client/).
+- Estar conectado a la [interfaz vSphere](/pages/cloud/managed-bare-metal/vsphere-interface).
 
 ## Procedimiento
 
 ### Clonar la MV
 
-Desde su [interfaz vSphere](../instalar_el_vsphere_client/), acceda a la sección `Hosts and Clusters`.
+Desde su [interfaz vSphere](/pages/cloud/managed-bare-metal/vsphere-interface), acceda a la sección `Hosts and Clusters`.
 
 Haga clic derecho en la MV que desea clonar y, a continuación, seleccione  `Clone`{.action} > `Clone to Virtual Machine...`{.action}. 
 
@@ -49,9 +46,9 @@ Indique la localización del almacenamiento (espacio en disco) de esta MV.
 
 El formato de disco virtual es de tipo «Thin Provision»: se creará un disco virtual, pero solo utilizará el espacio en disco usado realmente en el almacenamiento, independientemente del espacio en disco que se haya utilizado anteriormente en la MV de origen.
 
-Para más información, consulte esta [guía](../elegir-un-formato-de-disco/).
+Para más información, consulte esta [guía](/pages/cloud/managed-bare-metal/choosing-disk-type).
 
-A través de `VM Storage Policy`, podrá elegir la política de almacenamiento predefinida si dispone de datastores, o la opción [VM Encryption](../vm-encrypt/).
+A través de `VM Storage Policy`, podrá elegir la política de almacenamiento predefinida si dispone de datastores, o la opción [VM Encryption](/pages/cloud/managed-bare-metal/vm_encrypt).
 
 ![Almacenamiento MV](images/clonevm04.png){.thumbnail}
 

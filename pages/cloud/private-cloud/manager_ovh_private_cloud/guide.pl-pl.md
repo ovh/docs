@@ -1,9 +1,6 @@
 ---
 title: Prezentacja Panelu klienta Private Cloud OVHcloud
-slug: manager-ovh-private-cloud
 excerpt: Odkryj możliwości Panelu klienta Private Cloud
-section: Pierwsze kroki
-order: 1
 updated: 2021-12-15
 ---
 
@@ -166,7 +163,7 @@ Jeśli na przykład jest zalogowanych 50 użytkowników i zaloguje się 51, to r
 
 Druga tabela dotyczy opcji *VM encryption*.
 
-Więcej szczegółów na temat tej opcji znajdziesz w [tym przewodniku](../szyfrowanie-vm/).
+Więcej szczegółów na temat tej opcji znajdziesz w [tym przewodniku](/pages/cloud/private-cloud/vm_encrypt).
 
 #### Operacje
 
@@ -248,7 +245,7 @@ Karta Backup umożliwia aktywację rozwiązania `Veeam Backup`.
 
 ![Backup](images/controlpanel14.png){.thumbnail}
 
-Więcej informacji na temat tego rozwiązania znajdziesz w tym [przewodniku](https://docs.ovh.com/gb/en/private-cloud/veeam-backup-as-a-service/).
+Więcej informacji na temat tego rozwiązania znajdziesz w tym [przewodniku](/pages/cloud/private-cloud/veeam_backup_as_a_service).
 
 
 ## Sprawdź również

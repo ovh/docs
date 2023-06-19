@@ -1,8 +1,6 @@
 ---
 title: "OVHcloud API v2 - Principles of operation"
-slug: api-v2
 excerpt: "Discover the new principles of exposure and consumption linked to the OVHcloud API v2"
-section: APIv6
 updated: 2023-04-17
 ---
 

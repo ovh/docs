@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguration Ihres E-Mail Pro Accounts im Gmail-Webinterface'
-slug: konfiguration-gmail
 excerpt: 'Erfahren Sie hier, wie Sie einen E-Mail Pro Account im Webinterface von Gmail einrichten'
-section: 'Konfiguration des E-Mail-Clients'
-order: 6
 updated: 2020-03-18
 ---
 

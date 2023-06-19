@@ -1,9 +1,6 @@
 ---
 title: 'Automatische Tasks mit einem Webhosting verwenden'
 excerpt: 'Erfahren Sie hier, wie Sie automatisierte Tasks auf Ihrem Webhosting konfigurieren'
-slug: webhosting_automatisierte_aufgaben_cron
-section: 'Automatische Tasks (CRON)'
-order: 01
 updated: 2022-12-01
 ---
 
@@ -110,7 +107,7 @@ Achten Sie immer darauf, absolute Zugriffspfade zu den Dateien Ihrer Skripte zu 
 
 In den Logs Ihres Webhostings, einsehbar im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), finden Sie die Log-Kategorie "cron".
 
-Weitere Informationen finden Sie in unserer Anleitung zu [Statistiken und Logs](../webhosting_die_statistiken_und_logs_meiner_website_einsehen/).
+Weitere Informationen finden Sie in unserer Anleitung zu [Statistiken und Logs](/pages/web/hosting/logs_and_statistics).
 
 ##### **Beispiel-Logs**
 
@@ -151,8 +148,8 @@ Weitere Informationen finden Sie in unserer Anleitung zu [Statistiken und Logs](
 
 ## Weiterführende Informationen
 
-[.ovhconfig-Datei Ihres Webhostings konfigurieren](../ovhconfig-datei-konfigurieren/)
+[.ovhconfig-Datei Ihres Webhostings konfigurieren](/pages/web/hosting/ovhconfig_configuration)
 
-[SSH-Zugang Ihres Webhostings verwenden](../webhosting_ssh_auf_ihren_webhostings/)
+[SSH-Zugang Ihres Webhostings verwenden](/pages/web/hosting/ssh_on_webhosting)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

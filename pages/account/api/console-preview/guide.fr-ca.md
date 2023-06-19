@@ -1,9 +1,6 @@
 ---
 title: 'Exploration des API OVHcloud'
-slug: api-console-exploration
 excerpt: 'Découvrez comment explorer les API OVHcloud'
-section: 'Premiers pas'
-order: 02
 updated: 2023-03-27
 ---
 
@@ -44,7 +41,7 @@ Pour utiliser les API sur vos produits, vous devez vous connecter sur ce site gr
 
 > [!primary]
 >
-> Si votre compte OVHcloud est protégé par une [double authentification](https://docs.ovh.com/ca/fr/customer/securiser-son-compte-avec-une-2FA/), vous devrez également saisir le code généré par SMS ou application OTP ou clé U2F.
+> Si votre compte OVHcloud est protégé par une [double authentification](/pages/account/customer/secure-ovhcloud-account-with-2fa), vous devrez également saisir le code généré par SMS ou application OTP ou clé U2F.
 >
 
 ### Explorer les produits disponibles sur les API
@@ -174,8 +171,8 @@ Trois onglets sont disponibles dans cette vue :
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Gestion d'un nom de domaine via les API OVHcloud](https://docs.ovh.com/ca/fr/domains/api/)
+[Gestion d'un nom de domaine via les API OVHcloud](/pages/web/domains/api_domain_intro)
 
-[Comment gérer le compte d'un client OVHcloud via les API](https://docs.ovh.com/gb/en/api/api-rights-delegation/) (guide en anglais)
+[Comment gérer le compte d'un client OVHcloud via les API](/pages/account/api/api_right_delegation) (guide en anglais)
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).

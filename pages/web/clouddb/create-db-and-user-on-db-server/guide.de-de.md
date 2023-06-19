@@ -1,9 +1,6 @@
 ---
 title: 'Datenbanken und Benutzer auf Ihrem Datenbankserver erstellen'
-slug: datenbank-und-benutzer-erstellen
 excerpt: 'Erfahren Sie hier, wie Sie eine Datenbank auf Ihrem Datenbankserver erstellen'
-section: Konfiguration
-order: 02
 updated: 2023-02-15
 ---
 

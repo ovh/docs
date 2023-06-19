@@ -1,8 +1,6 @@
 ---
 title: 'Configurar quadros Jumbo no vRack'
-slug: 'network-jumbo'
 excerpt: 'Saiba como configurar quadros Jumbo no vRack'
-section: 'vRack'
 updated: 2020-08-17
 ---
 

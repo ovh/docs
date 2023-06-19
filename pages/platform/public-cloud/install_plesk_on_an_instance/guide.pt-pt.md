@@ -1,8 +1,6 @@
 ---
 title: 'Instalar Plesk numa instância'
-slug: instalar-plesk-numa-instancia
 excerpt: 'Saiba como instalar o Plesk na sua instância Public Cloud'
-section: Tutoriais
 updated: 2018-03-26
 ---
 
@@ -23,8 +21,8 @@ O Plesk é uma interface de gestão de servidores simples de utilizar. Pode inst
 
 ## Requisitos
 
-- [Ter criado uma instância a partir da Área de Cliente OVHcloud](https://docs.ovh.com/pt/public-cloud/criar_uma_instancia_a_partir_do_espaco_cliente_ovh/).
-- [Tornar-se o utilizador root e selecionar uma palavra-passe](https://docs.ovh.com/pt/public-cloud/tornar-se_root_e_definir_uma_palavra-passe/).
+- [Ter criado uma instância a partir da Área de Cliente OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia/).
+- [Tornar-se o utilizador root e selecionar uma palavra-passe](/pages/platform/public-cloud/become_root_and_change_password).
 
 ## Instruções
 

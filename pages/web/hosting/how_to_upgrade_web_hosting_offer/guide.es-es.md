@@ -1,9 +1,6 @@
 ---
 title: Mejorar la solución de alojamiento web
 excerpt: Cómo cambiar la fórmula de suscripción de un plan de hosting de OVHcloud
-slug: how_to_change_web_hosting_offer
-section: Optimización del sitio web
-order: 02
 updated: 2023-04-19
 ---
 
@@ -15,7 +12,7 @@ updated: 2023-04-19
 
 ## Objetivo
 
-Su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) le permite aumentar la capacidad de sus [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/) para disponer de un alojamiento más potente, más espacio de almacenamiento, bases de datos, direcciones de correo o funcionalidades adicionales como los [listas de correo](https://docs.ovh.com/es/emails/guia_de_utilizacion_de_listas_de_difusion/) (a partir del [plan Profesional](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/)) o el [servicio SQL privado](https://www.ovhcloud.com/es-es/web-hosting/options/private-sql/) (incluidos los productos de la [gama Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/)).
+Su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) le permite aumentar la capacidad de sus [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/) para disponer de un alojamiento más potente, más espacio de almacenamiento, bases de datos, direcciones de correo o funcionalidades adicionales como los [listas de correo](/pages/web/emails/feature_mailing_list) (a partir del [plan Profesional](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/)) o el [servicio SQL privado](https://www.ovhcloud.com/es-es/web-hosting/options/private-sql/) (incluidos los productos de la [gama Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/)).
 
 **Descubra cómo cambiar sin interrupción el plan de hosting de OVHcloud.**
 
@@ -59,7 +56,7 @@ Antes de realizar el cambio a una gama inferior, compruebe los siguientes 7 elem
 
 #### 1 - Número de sitios
 
-El producto [Kimsufi Web](https://www.ovhcloud.com/es-es/web-hosting/old-web-hosting-offers/) no permite tener más de un dominio en el [multisitio](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/) de su alojamiento.
+El producto [Kimsufi Web](https://www.ovhcloud.com/es-es/web-hosting/old-web-hosting-offers/) no permite tener más de un dominio en el [multisitio](/pages/web/hosting/multisites_configure_multisite) de su alojamiento.
 
 Antes de cambiar del plan [Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/) al plan [Kimsufi Web](https://www.ovhcloud.com/es-es/web-hosting/old-web-hosting-offers/), compruebe que el alojamiento solo tenga un sitio web.
 
@@ -75,7 +72,7 @@ Una vez que haya eliminado los datos de sus bases de datos, vuelva a calcular el
 
 #### 3 - Web Cloud Databases
 
-Si utiliza el producto [Web Cloud Databases](https://docs.ovh.com/es/hosting/empezar-con-clouddb/#activacion-de-su-servidor-clouddb-incluido-con-su-plan-de-hosting) incluido con su alojamiento [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) y desea cambiar su alojamiento a un plan [Profesional](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/), acceda al apartado `Alojamientos`{.action} del área de cliente.<br>
+Si utiliza el producto [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#activacion-de-su-servidor-clouddb-incluido-con-su-plan-de-hosting) incluido con su alojamiento [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) y desea cambiar su alojamiento a un plan [Profesional](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/), acceda al apartado `Alojamientos`{.action} del área de cliente.<br>
 Haga clic en el botón `...`{.action} en la sección `Bases de datos privadas`{.action} y, seguidamente, en `Desvincular`{.action}.
 
 ![Web Cloud Databases](images/clouddb.png){.thumbnail}
@@ -84,12 +81,12 @@ Esta acción le permitirá contratar una solución Cloud Databases independiente
 
 Si no desea conservar estos datos, puede también eliminar su SQL privado antes de pasar a la oferta *Profesional* : 
 
-1. Guarde sus datos siguiendo las instrucciones de este [guía](https://docs.ovh.com/es/hosting/guardar-exportar-una-base-de-datos/).<br>
+1. Guarde sus datos siguiendo las instrucciones de este [guía](/pages/web/clouddb/save-export-on-database-server).<br>
 2. Elimine su servidor Cloud Databases a través de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Para ello, haga clic en su nombre en la esquina superior derecha y seleccione `Gestión de servicios`{.action}. Haga clic en el botón `...`{.action} a la derecha de la línea correspondiente y luego en `Eliminar mi alojamiento SQL privado`{.action}.
 
 #### 4 - Espacio FTP
 
-Antes de cambiar al plan de hosting inferior, asegúrese de que el nuevo plan incluye suficiente [espacio de almacenamiento FTP](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) para poder importar los archivos de su alojamiento actual.
+Antes de cambiar al plan de hosting inferior, asegúrese de que el nuevo plan incluye suficiente [espacio de almacenamiento FTP](/pages/web/hosting/ftp_connection) para poder importar los archivos de su alojamiento actual.
 
 La cuota utilizada en su alojamiento FTP puede verse en la sección `Alojamientos`{.action} del área de cliente. Haga clic en la pestaña `Información general`{.action} y encontrará el límite en el `Espacio en disco`.
 
@@ -97,7 +94,7 @@ La cuota utilizada en su alojamiento FTP puede verse en la sección `Alojamiento
 
 #### 5 - Direcciones de correo
 
-Compruebe también que la nueva solución ofrezca un número suficiente de direcciones de correo electrónico disponibles. En caso contrario, elimine las direcciones superfluas después de haberlas [guardado](https://docs.ovh.com/es/emails/migrar-sus-direcciones-de-correo-manualmente/) si es necesario.
+Compruebe también que la nueva solución ofrezca un número suficiente de direcciones de correo electrónico disponibles. En caso contrario, elimine las direcciones superfluas después de haberlas [guardado](/pages/web/emails/manual_email_migration) si es necesario.
 
 Si quiere conservar el mismo número de cuentas de correo antes de pasar el alojamiento a una solución inferior, puede contratar una nueva solución de correo **MX Plan**. En la sección `Correo electrónico`{.action} del área de cliente, haga clic en el producto correspondiente y, seguidamente, en el botón `...`{.action} a la derecha del `Producto`{.action}. Haga clic en `Cambiar de plan`{.action}.
 
@@ -105,7 +102,7 @@ Si quiere conservar el mismo número de cuentas de correo antes de pasar el aloj
 
 #### 6 - Mailing lists
 
-La funcionalidad [Mailing lists](https://docs.ovh.com/es/emails/guia_de_utilizacion_de_listas_de_difusion/) está opcional en los alojamientos [Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/) y [Kimsufi Web](https://www.ovhcloud.com/es-es/web-hosting/old-web-hosting-offers/).
+La funcionalidad [Mailing lists](/pages/web/emails/feature_mailing_list) está opcional en los alojamientos [Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/) y [Kimsufi Web](https://www.ovhcloud.com/es-es/web-hosting/old-web-hosting-offers/).
 
 Para migrar a un plan de hosting [Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/), primero deberá eliminar las listas de correo o contratar un servicio de correo que incluya esta funcionalidad (**MX Plan 100** o **MX Plan Full**) desde su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
@@ -129,7 +126,7 @@ Una vez que haya comprobado estos 7 elementos, puede realizar el [cambio de prod
 
 #### Tiene un plan Start 10M <a name="start10m"></a>
 
-Si cambia de plan [Start10M](https://docs.ovh.com/es/hosting/activar-start10m/), solo podrá contratar [el plan Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/). Sin embargo, una vez haya cambiado el plan Personal, podrá migrarlo a todos nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
+Si cambia de plan [Start10M](/pages/web/hosting/activate_start10m), solo podrá contratar [el plan Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/). Sin embargo, una vez haya cambiado el plan Personal, podrá migrarlo a todos nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
 
 Siga [estas instrucciones](#modify) para cambiar de producto.
 
@@ -173,9 +170,9 @@ Siga [estas instrucciones](#modify) para cambiar de producto.
 
 ## Más información <a name="gofurther"></a>
 
-[Consultar las estadísticas y logs de mi sitio web alojado en un plan compartido](https://docs.ovh.com/es/hosting/web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/)
+[Consultar las estadísticas y logs de mi sitio web alojado en un plan compartido](/pages/web/hosting/logs_and_statistics)
 
-[Optimización del rendimiento de su sitio web](https://docs.ovh.com/es/hosting/web_hosting_guia_de_optimizacion_del_rendimiento_de_un_sitio_web/)
+[Optimización del rendimiento de su sitio web](/pages/web/hosting/optimise_your_website_performance)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 

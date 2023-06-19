@@ -1,10 +1,7 @@
 ---
 title: Choosing a disk type
-slug: choosing-disk-type
 excerpt: Find out how to choose between the VMware disk types
 legacy_guide_number: '1441955'
-section: Virtual machine management
-order: 4
 updated: 2022-02-02
 ---
 

@@ -1,11 +1,8 @@
 ---
 title: 'Activate Windows VMs installed on Nutanix by OVHcloud'
-slug: activate-ovhcloud-windows-licence
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/dedicated/windows-key/'
+    canonical: '/pages/cloud/dedicated/windows_key'
 excerpt: 'Find out how to activate a Windows Server virtual machine installed on a Nutanix by OVHcloud solution with an OVHcloud SPLA licence'
-section: Advanced use
-order: 04
 updated: 2022-12-21
 ---
 
@@ -27,7 +24,7 @@ updated: 2022-12-21
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 - You must be connected to the cluster via Prism Central
 - A Windows licence provided by OVHcloud
-- A virtual machine running Windows Server. You can use this guide to install a virtual machine on Windows: [Virtual Machine Management](https://docs.ovh.com/us/en/nutanix/virtual-machine-management/)
+- A virtual machine running Windows Server. You can use this guide to install a virtual machine on Windows: [Virtual Machine Management](/pages/cloud/nutanix/06-virtual-machine-management)
 - The virtual machine connects to the Internet through the rtVrack (e.g. via the default gateway)
 
 ## Instructions

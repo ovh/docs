@@ -1,9 +1,6 @@
 ---
 title: Freigegebenes Postfach erstellen und verwenden
-slug: exchange-verwendung-freigegebene-accounts
 excerpt: Erfahren Sie hier, wie Sie ein freigegebenes Postfach zu Ihrem Exchange-Dienst hinzufügen und verwenden
-section: Exchange Account-Funktionen
-order: 06
 updated: 2021-06-15
 ---
 

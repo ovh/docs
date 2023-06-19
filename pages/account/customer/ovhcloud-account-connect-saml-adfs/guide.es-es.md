@@ -1,9 +1,6 @@
 ---
 title: Activar las conexiones Active Directory Federation Services (AD FS) SSO con su cuenta OVHcloud
-slug: connect-saml-sso-adfs
 excerpt: "Cómo asociar el servicio Active Directory Federation Services (AD FS) a su cuenta de OVHcloud a través de SAML 2.0"
-section: Uso avanzado
-order: 02
 updated: 2022-10-13
 ---
 
@@ -22,7 +19,7 @@ Puede utilizar la autenticación SSO (*Single Sign-On*) **única** para conectar
 ## Requisitos
 
 - Los servicios AD FS (Active Directory Federation Services) deben ejecutarse en su servidor
-- Disponer de una [cuenta de OVHcloud](https://docs.ovh.com/es/customer/crear-cuenta-ovhcloud/)
+- Disponer de una [cuenta de OVHcloud](/pages/account/customer/ovhcloud-account-creation)
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
@@ -213,7 +210,7 @@ A continuación, podrá desconectarse de su cuenta y reconectarse con su AD FS c
 
 ### Conexión mediante SSO
 
-En [la página de identificación de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), introduzca su [ID de cliente](https://docs.ovh.com/es/customer/crear-cuenta-ovhcloud/#cual-es-mi-id-de-cliente) seguido de **/idp** sin contraseña y haga clic en el botón `Login`{.action} .
+En [la página de identificación de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), introduzca su [ID de cliente](/pages/account/customer/ovhcloud-account-creation#cual-es-mi-id-de-cliente) seguido de **/idp** sin contraseña y haga clic en el botón `Login`{.action} .
 
 ![Conexión a la federación OVHcloud](images/ovhcloud_federation_login_1.png){.thumbnail}
 
@@ -227,12 +224,12 @@ Ahora está conectado con el mismo ID de cliente, pero a través de su usuario A
 
 ## Más información
 
-[Crear una cuenta de OVHcloud](https://docs.ovh.com/es/customer/crear-cuenta-ovhcloud/)
+[Crear una cuenta de OVHcloud](/pages/account/customer/ovhcloud-account-creation)
 
-[Proteger mi cuenta de OVHcloud y gestionar mis datos personales](https://docs.ovh.com/es/customer/todo-sobre-el-id-de-cliente/)
+[Proteger mi cuenta de OVHcloud y gestionar mis datos personales](/pages/account/customer/all_about_username)
 
-[Definición y gestión de la contraseña de su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contrasena/)
+[Definición y gestión de la contraseña de su cuenta](/pages/account/customer/manage-ovh-password)
 
-[Proteger su cuenta de OVHcloud con la doble autenticación](https://docs.ovh.com/es/customer/proteger-su-cuenta-con-una-2FA/)
+[Proteger su cuenta de OVHcloud con la doble autenticación](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

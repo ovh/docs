@@ -1,9 +1,7 @@
 ---
 title: Using the SSL Gateway
-slug: use-ssl-gateway
 excerpt: Secure connections to your website
 section;: Getting Started
-order: 01
 updated: 2022-12-01
 ---
 

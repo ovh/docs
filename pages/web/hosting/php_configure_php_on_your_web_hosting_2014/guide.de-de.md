@@ -1,9 +1,6 @@
 ---
 title: "PHP-Version eines Webhostings ändern"
-slug: konfiguration_von_php_fur_ein_ovh_webhosting_2014
 excerpt: "Erfahren Sie hier, wie Sie die PHP-Version Ihres OVHcloud Webhostings ändern"
-section: PHP
-order: 01
 updated: 2022-09-19
 ---
 
@@ -22,7 +19,7 @@ Im Web gibt es viele verschiedene Arten an Webseiten. Mit Ihrem [OVHcloud Webhos
 ## Voraussetzungen
 
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external}, mit Ausnahme eines Cloud Web Hostings.
-- Sie haben Zugriff auf Ihr Webhosting über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder die erforderlichen Login-Daten für den [FTP Speicherplatz](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) Ihres Hostings.
+- Sie haben Zugriff auf Ihr Webhosting über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder die erforderlichen Login-Daten für den [FTP Speicherplatz](/pages/web/hosting/ftp_connection) Ihres Hostings.
 
 ## In der praktischen Anwendung
 
@@ -59,7 +56,7 @@ Nötigenfalls können Sie die aktuell von Ihrem Hosting verwendete PHP-Version a
 > Wird ein rundes blaues Symbol angezeigt, warten Sie einige Minuten, bis die Version aktualisiert ist.
 >
 
-- **Über ein Skript** Erstellen Sie eine Datei mit Endung **.php**, welche ausschließlich die Codezeile `<?php phpinfo(); ?>` enthält. Laden Sie die Datei auf Ihren [FTP Storage](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) hoch und rufen Sie das Skript unter Verwendung der vollständigen URL zur Datei auf.
+- **Über ein Skript** Erstellen Sie eine Datei mit Endung **.php**, welche ausschließlich die Codezeile `<?php phpinfo(); ?>` enthält. Laden Sie die Datei auf Ihren [FTP Storage](/pages/web/hosting/ftp_connection) hoch und rufen Sie das Skript unter Verwendung der vollständigen URL zur Datei auf.
 
 Wenn Sie die Kompatibilität Ihrer Website mit der neuen PHP-Version nicht überprüfen können und **Auch wenn wir von dieser Methode ausdrücklich abraten**, können Sie versuchen, die aktuelle Version zu ändern und die Version zurückzudrehen. Dabei riskieren Sie jedoch eine mögliche Fehlfunktion auf Ihrer Website. Selbst wenn die Änderung immer nach der Änderung angezeigt wird, kann es sein, dass eine ihrer spezifischen Funktionen davon betroffen ist und nicht mehr funktioniert. 
 
@@ -71,18 +68,18 @@ Wenn Sie bereit sind, die Änderung vorzunehmen, gehen Sie zu Schritt 2 über.
 
 Es gibt zwei Möglichkeiten, die PHP-Version Ihres Webhostings zu ändern:
 
-- **Konfigurationsassistent in Ihrem Kundencenter**: Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt sind, können Sie die gewünschte neue PHP-Version in den Einstellungen auswählen. Lesen Sie hierzu die Anleitung ["Konfiguration Ihres Webhostings bearbeiten"](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/){.external}.
+- **Konfigurationsassistent in Ihrem Kundencenter**: Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt sind, können Sie die gewünschte neue PHP-Version in den Einstellungen auswählen. Lesen Sie hierzu die Anleitung ["Konfiguration Ihres Webhostings bearbeiten"](/pages/web/hosting/ovhconfig_modify_system_runtime){.external}.
 
-- **Editieren der Konfigurationsdatei „.ovhconfig“**: Diese Lösung ist technisch anspruchsvoller. Sie müssen sich dazu auf Ihrem [FTP-Speicherplatz](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) einloggen und die Datei `.ovhconfig` bearbeiten, wie in unserer Anleitung [".ovhconfig-Datei Ihres Webhostings konfigurieren"](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/){.external} beschrieben.
+- **Editieren der Konfigurationsdatei „.ovhconfig“**: Diese Lösung ist technisch anspruchsvoller. Sie müssen sich dazu auf Ihrem [FTP-Speicherplatz](/pages/web/hosting/ftp_connection) einloggen und die Datei `.ovhconfig` bearbeiten, wie in unserer Anleitung [".ovhconfig-Datei Ihres Webhostings konfigurieren"](/pages/web/hosting/ovhconfig_configuration){.external} beschrieben.
 
 > [!primary]
 >
 > Die Änderung der PHP-Version über eine ".htaccess" Datei ist bei den neueren [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/){.external} nicht mehr möglich.<br>
 > Der Befehl, der die PHP-Version in der Datei ".htaccess" ändert, erlaubt nicht die Verwendung der aktuellen PHP Versionen auf unseren Infrastrukturen.<br>
-> Es muss hierzu die Datei `.ovhconfig` editiert werden, wie in unserer Anleitung [".ovhconfig-Datei Ihres Webhostings konfigurieren"](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/){.external} erklärt.
+> Es muss hierzu die Datei `.ovhconfig` editiert werden, wie in unserer Anleitung [".ovhconfig-Datei Ihres Webhostings konfigurieren"](/pages/web/hosting/ovhconfig_configuration){.external} erklärt.
 >
 
-Einige PHP Versionen funktionieren nur mit bestimmten Ausführungsumgebungen. Im Folgenden finden Sie die auf den Webhostings von OVHcloud verfügbaren PHP-Versionen und kompatiblen [Ausführungsumgebungen](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/):
+Einige PHP Versionen funktionieren nur mit bestimmten Ausführungsumgebungen. Im Folgenden finden Sie die auf den Webhostings von OVHcloud verfügbaren PHP-Versionen und kompatiblen [Ausführungsumgebungen](/pages/web/hosting/ovhconfig_modify_system_runtime):
 
 |PHP Versionen|Kompatible Ausführungsumgebungen|
 |---|---|
@@ -92,11 +89,11 @@ Einige PHP Versionen funktionieren nur mit bestimmten Ausführungsumgebungen. Im
 
 ## Weiterführende Informationen
 
-[Konfiguration Ihres Webhostings bearbeiten](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/){.external}
+[Konfiguration Ihres Webhostings bearbeiten](/pages/web/hosting/ovhconfig_modify_system_runtime){.external}
 
-[.ovhconfig-Datei Ihres Webhostings konfigurieren](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/){.external}
+[.ovhconfig-Datei Ihres Webhostings konfigurieren](/pages/web/hosting/ovhconfig_configuration){.external}
 
-[Mit dem Speicherplatz Ihres Webhostings verbinden](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/){.external}
+[Mit dem Speicherplatz Ihres Webhostings verbinden](/pages/web/hosting/ftp_connection){.external}
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

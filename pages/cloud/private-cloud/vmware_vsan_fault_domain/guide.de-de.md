@@ -1,8 +1,6 @@
 ---
 title: 'Verwaltung von vSAN Fault Domains'
-slug: vmware-vsan-fault-domain
 excerpt: 'Erfahren Sie hier, wie Sie die vSAN Fault Domains verwalten'
-section: 'VMware vSphere Funktionen'
 updated: 2021-12-23
 ---
 
@@ -20,7 +18,7 @@ Diese Anleitung erklärt Funktionsweise und Einsatz von vSAN Fault Domains.
 
 - Sie sind Administrator-Kontakt für die Infrastruktur [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/), um die Login-Daten zu erhalten.
 - Sie haben eine aktive Benutzerkennung mit spezifischen Rechten für NSX [erstellt im OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de))
-- Sie haben einen [vSAN Datastore](https://docs.ovh.com/de/private-cloud/vmware-vsan/)
+- Sie haben einen [vSAN Datastore](/pages/cloud/private-cloud/vmware_vsan)
 
 ## In der praktischen Anwendung
 

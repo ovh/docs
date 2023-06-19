@@ -1,9 +1,6 @@
 ---
 title: 'Using two-factor authentication (2FA) on your Private Cloud infrastructure'
-slug: use-2FA
 excerpt: 'Find out how to enable the two-factor authentication to protect your infrastructure'
-section: 'OVHcloud Features'
-order: 5
 updated: 2022-06-10
 ---
 
@@ -86,7 +83,7 @@ The only difference will be the user's autonomy in token validation.
 ### Application access permission
 
 Multiple third-party applications can be used that require connection to the vCenter.
-These applications must first be authorised through the vCenter access policy that is settable in your OVHcloud [Control Panel](../control-panel-ovh-private-cloud/#security).
+These applications must first be authorised through the vCenter access policy that is settable in your OVHcloud [Control Panel](/pages/cloud/private-cloud/manager_ovh_private_cloud#security).
 
 These applications will then be able to access our infrastructures, but they will not necessarily handle two-factor authentication.
 

@@ -1,8 +1,6 @@
 ---
 title: Zainstaluj moduł WordPress w instancji
 excerpt: Dowiedz się, jak korzystać z instancji Public Cloud do hostowania stron WordPress
-slug: instalacja_modulu_wordpress_na_instancji
-section: Tutoriale
 updated: 2023-05-17
 ---
 
@@ -30,7 +28,7 @@ Tutorial ten przedstawia podstawowe etapy ręcznej instalacji WordPressa na inst
 ## Wymagania początkowe
 
 - Projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud
-- Posiadanie zainstalowanej [instancji Public Cloud](../public-cloud-pierwsze-kroki/) z systemem Debian lub Ubuntu
+- Posiadanie zainstalowanej [instancji Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps) z systemem Debian lub Ubuntu
 - Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Dostęp administratora (root) do Twojej instancji przez SSH
 
@@ -43,7 +41,7 @@ Tutorial ten przedstawia podstawowe etapy ręcznej instalacji WordPressa na inst
 
 Aby uzyskać dostęp do Twojej instalacji za pomocą nazwy domeny, powiąż ją z Twoją instancją. W tym celu edytuj strefę DNS dostępną w [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), pod warunkiem, że OVHcloud jest Twoim operatorem, a nazwa domeny wykorzystuje serwery DNS OVHcloud.
 
-Aby dowiedzieć się więcej, zapoznaj się z przewodnikiem [Modyfikacja strefy DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/). Jeśli domena jest aktualnie używana, skonfiguruj DNS dopiero po zainstalowaniu nowego WordPress i uruchomieniu Twojej strony WWW.
+Aby dowiedzieć się więcej, zapoznaj się z przewodnikiem [Modyfikacja strefy DNS](/pages/web/domains/dns_zone_edit). Jeśli domena jest aktualnie używana, skonfiguruj DNS dopiero po zainstalowaniu nowego WordPress i uruchomieniu Twojej strony WWW.
 
 ### Etap 1: instalacja serwera www (LAMP)
 
@@ -225,7 +223,7 @@ Serwer www jest teraz gotowy do wstępnej konfiguracji WordPress.
 
 ### Etap 5: skonfiguruj WordPress
 
-Otwórz przeglądarkę internetową i zaloguj się do strony WordPress wprowadzając adres IP Twojej instancji (lub nazwę domeny, jeśli już [podłączyłeś ją do instancji](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/)). Wybierz język na pierwszej stronie.
+Otwórz przeglądarkę internetową i zaloguj się do strony WordPress wprowadzając adres IP Twojej instancji (lub nazwę domeny, jeśli już [podłączyłeś ją do instancji](/pages/web/domains/dns_zone_edit)). Wybierz język na pierwszej stronie.
 
 Skorzystaj z asystenta konfiguracji WordPress, aby uzyskać dostęp do bazy danych. Wpisz informacje, które [wcześniej](#sqlconf) skonfigurowałeś.
 

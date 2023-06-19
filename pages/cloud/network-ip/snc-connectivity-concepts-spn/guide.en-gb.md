@@ -1,9 +1,6 @@
 ---
 title: SPN Concept
-slug: secnumcloud-connectivity-spn-concept
 excerpt: 'SNC Connectivity - SPN Concept'
-section: SecNumCloud Connectivity
-order: 02
 updated: 2022-10-10
 ---
 

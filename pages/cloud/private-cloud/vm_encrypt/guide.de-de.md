@@ -1,9 +1,6 @@
 ---
 title: Virtual Machine Encryption (VM Encryption) einrichten
-slug: vm-encrypt
 excerpt: So aktivieren Sie die VMware-Funktion zur Verschlüsselung Ihrer virtuellen Maschinen
-section: VMware vSphere Funktionen
-order: 08
 updated: 2020-06-29
 ---
 

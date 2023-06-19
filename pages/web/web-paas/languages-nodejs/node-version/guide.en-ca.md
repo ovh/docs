@@ -1,7 +1,5 @@
 ---
 title: Manage Node.js versions
-slug: node-version
-section: Nodejs
 updated: 2022-06-02
 ---
 
@@ -23,7 +21,7 @@ You could use one of these:
 
 
 Both of the recommendations use a `.nvmrc` file to specify the desired Node.js version.
-You could also specify a different file or use [environment variables](../../development-variables).
+You could also specify a different file or use [environment variables](/pages/web/web-paas/development-variables).
 
 ### Use `n`
 
@@ -57,7 +55,7 @@ variables:
         N_PREFIX: /app/.global
 ```
 
-**Step 4: Install the specified version of Node.js in a [`build` hook](../../configuration-app/build/#build-hook).**
+**Step 4: Install the specified version of Node.js in a [`build` hook](/pages/web/web-paas/configuration-app/build#build-hook).**
 
 
 ```yaml 
@@ -113,7 +111,7 @@ hooks:
 You can:
 
 - Add it to the build hook to make that version available in the build.
-- Control the specific versions to be installed with [environment variables](../../development-variables), meaning you can also have different versions in different environments.
+- Control the specific versions to be installed with [environment variables](/pages/web/web-paas/development-variables), meaning you can also have different versions in different environments.
 - Cache `nvm` so you don't need to download it each time.
 
 
