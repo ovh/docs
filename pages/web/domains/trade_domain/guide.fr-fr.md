@@ -10,7 +10,7 @@ updated: 2023-06-16
 
 ## Objectif
 
-En dehors de la [gestion des contacts](/pages/account/customer/managing_contacts), l’enregistrement d’un nom de domaine nécessite de renseigner les informations relatives au propriétaire de celui-ci. Le **propriétaire** dans ce contexte concerne une personne, une société, une organisation ou encore une association détenant les droits sur ce nom de domaine. **Le changement de propriétaire** fait référence au transfert des droits de propriété d'une personne ou entreprise vers une autre, les informations du **propriétaire** ont une valeur juridique. Par exemple, ce processus est obligatoire si une société change de nom.
+En dehors de la [gestion des contacts](/pages/account/customer/managing_contacts), l’enregistrement d’un nom de domaine nécessite de renseigner les informations relatives au propriétaire de celui-ci. Dans ce contexte, le **propriétaire** désigne une personne, une société, une organisation ou encore une association détenant les droits sur ce nom de domaine. **Le changement de propriétaire** fait référence au transfert des droits de propriété d'une personne ou entreprise vers une autre. Les informations du **propriétaire** ont une valeur juridique. Ce processus est notamment obligatoire si une société change de nom.
 
 > [!primary]
 > Cette opération ne déplace pas votre nom de domaine vers un autre compte client OVHcloud.
