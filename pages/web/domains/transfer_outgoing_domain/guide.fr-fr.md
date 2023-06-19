@@ -66,7 +66,9 @@ Cliquez sur le curseur et confirmez, dans la fenêtre qui s'affiche, que vous so
 
 > [!primary]
 >
-> Si vous rencontrez le message "**Une erreur est survenue lors de la demande de désactivation de la protection du domaine (User not granted for this request)**", cela signifie que vous n'avez pas les droits suffisants pour deverrouillez le domaine. Vérifier que vous êtes bien le contact "administrateur" du domaine à l'aide de notre guide sur la [gestion des contacts](/pages/account/customer/managing_contacts) puis vérifiez que l'extension de votre domaine permet un deverrouillage depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+> Si vous rencontrez le message "**Une erreur est survenue lors de la demande de désactivation de la protection du domaine (User not granted for this request)**", cela signifie que vous n'avez pas les droits suffisants pour déverrouiller le domaine. 
+>
+> Vérifiez que vous êtes bien le contact **administrateur** du domaine à l'aide de notre guide sur la [gestion des contacts](/pages/account/customer/managing_contacts) puis vérifiez que l'extension de votre domaine permet un déverrouillage depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 >
 
 ![désactivation protection](images/outgoing-transfer-step2.png){.thumbnail}
