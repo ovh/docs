@@ -63,14 +63,14 @@ Der Assistent zeigt nun Informationen zur Konfiguration der gewünschten Nutzung
 - **Wenn Sie eine nicht von OVHcloud verwaltete Domain angegeben haben**: Der nicht-autoritative Modus wird automatisch ausgewählt.
 
 - **Wenn Sie in der Liste eine von OVHcloud verwaltete Domain ausgewählt haben**: Sie können einen Modus auswählen.
-     - **Autoritativ** : Empfiehlt sich, wenn Sie ausschließlich Ihre Exchange oder E-Mail Pro Lösung mit Ihrer Domain verwenden. Erlaubt nicht die Verwendung einer anderen E-Mail-Lösung mit Ihrem Dienst.|
-     - **Nicht-autoritativ** : Empfiehlt sich, wenn Sie die Domain Ihrer Exchange oder E-Mail Pro Lösung simultan mit einer anderen E-Mail-Lösung verwenden. Geben Sie dann Informationen zum Server Ihrer externen E-Mail-Lösung an.|
+    - **Autoritativ**: Auszuwählen, wenn Sie ausschließlich Exchange mit diesem Domainnamen verwenden. Erlaubt nicht die Verwendung einer anderen E-Mail-Lösung parallel mit Ihrem Dienst.
+    - **Nicht-autoritativ**: Auszuwählen, wenn der Domainname Ihres Exchange simultan mit einer anderen E-Mail-Lösung verwendet wird. Sie müssen dann die Serverdaten Ihrer externen E-Mail-Lösung eingeben.
 
 >
-> - Wenn eine E-Mail im **autoritativen** Modus an Ihre E-Mail-Plattform (*Server A*) übermittelt wird, bedeutet dies, dass alle E-Mail-Adressen Ihres Domainnamens nur auf dieser Plattform gehostet werden. <br> <br> Wenn wir beispielsweise eine E-Mail an die Adresse „*mary.johnson@mydomain.ovh*“ senden, sendet der „*Server A*“ eine Fehlermeldung an den Absender zurück, da dies bei dieser Adresse der Fall ist existiert nicht auf „*Server A*“.
-> - Wenn eine E-Mail im **nicht autorisierenden** Modus an Ihre E-Mail-Plattform (*Server A*) übertragen wird, bedeutet dies, dass die E-Mail-Adressen Ihres Domainnamens auf die Haupt-E-Mail-Adressen Ihrer Plattform verteilt werden (*Server A*) und ein anderer E-Mail-Dienst (*Server B*). <br> <br> Wenn wir beispielsweise eine E-Mail an die Adresse „*mary.johnson@mydomain.ovh*“ senden, leitet *Server A* die E-Mail an „*Server B*“ weiter er kann ihn befreien.
+> - Wenn eine E-Mail im **autoritativen** Modus an Ihre E-Mail-Plattform (*Server A*) übermittelt wird, befinden sich alle E-Mail-Adressen Ihres Domainnamens nur auf dieser Plattform. <br> <br> Wenn wir beispielsweise eine E-Mail an die Adresse *mary.johnson@mydomain.ovh* senden, sendet der *Server A* eine Fehlermeldung an den Absender zurück, da diese Adresse nicht auf *Server A* existiert.
+> - Wenn eine E-Mail im **nicht autorisierenden** Modus an Ihre E-Mail-Plattform (*Server A*) übertragen wird, bedeutet dies, dass die E-Mail-Adressen Ihres Domainnamens auf die Haupt-E-Mail-Adressen Ihrer Plattform verteilt werden (*Server A*) und ein anderer E-Mail-Dienst (*Server B*). <br> <br> Wenn wir beispielsweise eine E-Mail an die Adresse *mary.johnson@mydomain.ovh* senden, leitet *Server A* die E-Mail weiter an *Server B*, der sie zustellen kann.
 >
->![Domäne hinzufügen](images/add_domain_exchange_authoritative.png){.thumbnail}
+>![Domain hinzufügen](images/add_domain_exchange_authoritative.png){.thumbnail}
 >
 
 > [!warnung]
