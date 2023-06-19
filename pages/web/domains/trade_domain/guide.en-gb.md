@@ -1,7 +1,6 @@
 ---
 title: Changing the owner of a domain name
 slug: how-to-change-domain-name-holder
-legacy_guide_number: 1350
 excerpt: Find out how to change the owner of a a domain name in the OVHcloud Control Panel
 section: Trade
 updated: 2023-06-16
@@ -98,4 +97,8 @@ With this operation you do not need to confirm changes by email.
 
 [Managing contacts for your services](/pages/account/customer/managing_contacts)
 
-Join our community of users on https://community.ovh.com/en/.
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>. 
