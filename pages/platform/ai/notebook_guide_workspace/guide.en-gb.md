@@ -13,12 +13,6 @@ updated: 2023-06-19
 
 This tutorial explains how AI Notebooks' workspaces work, and what to do and what not to do.
 
-## Requirements
-
-- a notebook you would like to start with **AI Notebooks**
-- an [Object Storage Container](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/) in your OVHcloud account
-- a Public Cloud user with the **Administrator** or **AI Training Operator** role
-
 ## Instructions
 
 ### What is a notebook's workspace
@@ -57,11 +51,10 @@ If you run the `ls -a` command in your notebook's `/workspace` directory, you wi
 
 > [!warning]
 >
-> However, certain configuration files must not be removed under any circumstances, to prevent workspace initialization errors. This is the case of the `.workspace.initialized` file. Do not delete it !
+> However, certain configuration files must not be removed under any circumstances, to prevent workspace initialization errors. This is the case of the `.workspace.initialized` file. Never delete it and therefore never delete the entire contents of the `/workspace` directory.
 > 
 > If you delete this file and stop your notebook, you will not be able to restart it in the future, as it will reach the `Error` status.
 >
-
 
 ### Workspace billing
 
