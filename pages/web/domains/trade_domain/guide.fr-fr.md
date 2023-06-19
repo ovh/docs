@@ -39,7 +39,7 @@ En dehors de la [gestion des contacts](/pages/account/customer/managing_contacts
 >
 > Il existe principalement deux types de **TLD** : Les **ccTLD** et les **gTLD**. Les **ccTLD** correspondent à des **TLD** relatifs à une région ou un pays (*.fr*, *.be*, *.uk*, *.de*, *.paris*, etc.). Les **gTLD** correspondant à des **TLD** plus génériques (*.net*, *.com*, *.info*, *.org*, etc.).
 >
-> La procédure exacte pour le changement de propriétaire d'un nom de domaine peut donc varier, en particulier pour cetains **ccTLD**, tels que *.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, etc.) et de quelques **TLD** spéciaux (*.am*, *.fm*, etc.). Pour certains d'entre eux, un changement de propriétaire est considéré comme une opération payante. Le changement de propriétaire peut également être suspendu pour diverses raisons, par exemple pour un impayé, un abus ou un blocage du registre. 
+> La procédure exacte pour le changement de propriétaire d'un nom de domaine peut donc varier, en particulier pour cetains **ccTLD**, tels que *.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, etc.) et pour quelques **TLD** spéciaux (*.am*, *.fm*, etc.). Pour certains d'entre eux, un changement de propriétaire est une opération payante. Le changement de propriétaire peut également être suspendu pour diverses raisons, par exemple pour un impayé, un abus ou un blocage de la part du registre. 
 >
 > Nous vous recommandons de consulter les ressources suivantes en cas de doute :
 >
