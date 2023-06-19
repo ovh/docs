@@ -747,6 +747,7 @@
             + [Operators](public-cloud-containers-orchestration-managed-kubernetes-k8s-operators)
                 + [Deploying a Kubernetes Operator based on Helm on OVHcloud Managed Kubernetes](platform/kubernetes-k8s/installing-helm-operator)
                 + [Deploying a Kubernetes Operator written in Golang on OVHcloud Managed Kubernetes](platform/kubernetes-k8s/installing-go-operator)
+                + [Getting started with Kubernetes database operator](platform/databases/databases_12_operator)
             + [Troubleshooting](public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting)
                 + [ETCD Quotas error, troubleshooting](platform/kubernetes-k8s/etcd-quota-error)
                 + [Troubleshooting permission errors when enabling persistence](platform/kubernetes-k8s/fix-persistent-volumes-permissions)
