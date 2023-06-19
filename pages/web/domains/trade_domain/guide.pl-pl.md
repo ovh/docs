@@ -2,7 +2,6 @@
 title: 'Zmiana właściciela domeny'
 excerpt: 'W tym przewodniku znajdziesz różne informacje na temat zmiany właściciela domeny.'
 slug: zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz
-legacy_guide_number: g1350
 section: 'Zmiana właściciela'
 updated: 2023-06-19
 ---

@@ -10,7 +10,7 @@ updated: 2023-06-19
 
 ## Objective
 
-Besides the [three contacts](/pages/account/customer/managing_contacts), you need to provide information on the owner when registering a domain name. "**Owner**" in this context pertains to a person or company holding the usage rights to this domain name (sometimes also referred to as "domain name holder"). **Domain trade** refers to a change of ownership by modifying this information in a legally binding way. For example, this process is the mandatory procedure in case of a company changing its name.
+In addition to [contact management](/pages/account/customer/managing_contacts), registering a domain name requires you to enter information on the domain name owner. In this context, the **owner** refers to a person, company, organisation or association that owns the rights to this domain name. **Change of ownership** refers to the transfer of ownership rights from one person or company to another. **Owner** information has legal value. This process is particularly mandatory if a company changes its name.
 
 > [!primary]
 >This operation will not move your domain name to another OVHcloud customer account.
@@ -19,12 +19,12 @@ Besides the [three contacts](/pages/account/customer/managing_contacts), you nee
 >
 > If you need to make a change of owner and a change of contact for the same domain name, there is no preferential order. However, it is the administrator contact who is able to initiate these operations. These two changes are therefore made in the Control Panel of ​​the domain name administrator contact.
 
-**This guide will provide you with information on how to change the owner of a domain name.**
+**Find out how to provide you with information on how to change the owner of a domain name.**
 
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- a domain name registered with OVHcloud
+- a domain name registered with OVHcloud and for which no operation (owner change, transfer, creation) is in progress. If an operation has recently been finalised on your domain name, you will need to wait at least 60 calendar days before performing a new operation.
 - access as the [admin contact](/pages/account/customer/managing_contacts) for the domain name concerned
 - permission from the current domain name owner to change owners
 
@@ -33,13 +33,18 @@ Besides the [three contacts](/pages/account/customer/managing_contacts), you nee
 
 > [!warning]
 >
-> The following instructions describe the most common way to change domain name owner, valid for most Top Level Domains (TLD). However, the specific rules for processes regarding TLDs are solely defined by the appropriate allocation authority i.e. the **registry**. Registrars such as OVHcloud must adhere to these rules and have no influence over registry decisions.
+> The following instructions describe the most common way to change the owner of a domain name. They are valid for most top-level domains, commonly known as **T**op **L**evel **D**omain (**TLD**). 
+**TLDs** denote the end of your domain name, such as *.com*, *.net*, *.fr*, etc.
 >
-> The exact procedure for domain trade may therefore vary, especially in case of some country-code TLDs (ccTLD, such as .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) and a few special purpose TLDs (.am, .fm, etc.). For some of them a trade is considered a paid operation. Changing the owner might also be prohibited for various reasons, e.g. outstanding payment, abuse case or registry lock. 
+> The specific rules of the **TLD** domain name process are only defined by the appropriate allocation authority, i.e. the **registry**. A registrar such as OVHcloud must comply with these rules, and has no influence on registration decisions.
 >
-> We recommend to consult the following resources in case of any doubt:
+> There are mainly two types of **TLD**: **ccTLDs** and **gTLDs**. **ccTLDs** are **TLDs** for a region or country (*.fr*, *.be*, *.uk*, *.de*, *.paris*, etc.). **gTLDs** corresponding to more generic **TLDs** (*.net*, *.com*, *.info*, *.org*, etc.).
 >
-> - the website of the respective TLD registry
+> The exact procedure for changing the owner of a domain name may therefore vary, particularly for some **ccTLDs**, such as *.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, etc.) and for some special **TLDs** (*.am*, *.fm*, etc.). For some of them, a change of ownership is a paid operation. The change of owner can also be suspended for various reasons, for example for unpaid, abuse or blocking by the registry. 
+>
+> We recommend that you consult the following resources if in doubt:
+>
+> - the corresponding **TLD** registry website
 > - the [list of TLDs available at OVHcloud](https://www.ovhcloud.com/en-gb/domains/tld/)
 > - the `Ongoing operations`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) to check any pending status updates of the domain name
 
@@ -49,7 +54,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 ### Step 2: Inititate the owner change procedure
 
-In the `General information`{.action} tab, go to the **Plan** section in the bottom right corner. Click `...`{.action} next to the contacts, then click `Change domain name holder`{.action}.
+In the `General information`{.action} tab, go to the **Plan** section in the bottom right corner. Click `...`{.action} next to the **contacts**, then click `Change domain name holder`{.action}.
 
 ![changing owner](images/3652-2.png){.thumbnail}
 
@@ -87,7 +92,7 @@ If the email address is not changed as part of the domain trade, one recipient w
 
 If you need to update some secondary information such as phone number, address etc., you do not have to start a trade procedure. It can be edited directly in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
-In the **Plan** section of the `General information`{.action} tab, click on `...`{.action} next to the contacts, then click `Refresh owner information`{.action}.
+In the **Plan** section of the `General information`{.action} tab, click on `...`{.action} next to the **contacts**, then click `Refresh owner information`{.action}.
 
 ![changing owner](images/3658.png){.thumbnail}
 
