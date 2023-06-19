@@ -4,7 +4,7 @@ excerpt: 'Find out how to order and configure a SharePoint platform'
 slug: enable_and_manage_your_ovh_sharepoint
 section: SharePoint
 order: 01
-updated: 2020-08-11
+updated: 2023-06-19
 ---
 
 **Last updated 15th April 2020**

@@ -4,7 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie einen OVHcloud SharePoint Dienst bestellen 
 slug: aktivierung_und_verwaltung_ihres_ovh_sharepoint
 section: SharePoint
 order: 01
-updated: 2020-08-11
+updated: 2023-06-19
 ---
 
 **Letzte Aktualisierung am 15.04.2020**

@@ -4,7 +4,7 @@ slug: activacion_y_gestion_de_un_sharepoint_ovh
 excerpt: 'Cómo contratar y configurar una plataforma SharePoint'
 section: SharePoint
 order: 01
-updated: 2020-08-11
+updated: 2023-06-19
 ---
 
 **Última actualización: 15/4/2020**

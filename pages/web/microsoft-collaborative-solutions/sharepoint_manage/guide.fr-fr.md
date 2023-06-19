@@ -4,7 +4,7 @@ slug: activation-et-gestion-de-votre-sharepoint-ovh
 excerpt: 'Découvrez comment commander et configurer une plateforme SharePoint.'
 section: SharePoint
 order: 01
-updated: 2020-08-11
+updated: 2023-06-19
 ---
 
 **Dernière mise à jour le 11/08/2020**

@@ -4,7 +4,7 @@ slug: aktywacja-kont-email-zawartych-w-hostingu
 excerpt: Dowiedz się, jak zamówić i skonfigurować usługę SharePoint
 section: SharePoint
 order: 01
-updated: 2020-08-11
+updated: 2023-06-19
 ---
 
 **Ostatnia aktualizacja z dnia 11-08-2020**

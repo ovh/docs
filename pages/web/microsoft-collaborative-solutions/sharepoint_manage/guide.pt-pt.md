@@ -4,7 +4,7 @@ slug: ativacao_e_gestao_do_seu_sharepoint_ovh
 excerpt: 'Saiba como subscrever e configurar uma plataforma SharePoint.'
 section: SharePoint
 order: 01
-updated: 2020-08-11
+updated: 2023-06-19
 ---
 
 **Última atualização: 30/04/2020**
