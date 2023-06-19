@@ -66,7 +66,7 @@ Dans l'onglet `Informations générales`{.action}, accédez à la section **Abon
 > Si vous modifiez uniquement les détails de propriétaire autres que ceux mentionnés ci-dessus, passez à la section [Mise à jour des informations de propriétaire](#updateownerinformation) ci-dessous.
 > 
 
-Un nouvel onglet de votre navigateur s'ouvre avec tous les domaines éligibles au changement de propriétaire. Sélectionnez un nom de domaine dans la liste en cochant la case située à gauche. Cette étape peut également être utilisée pour lancer une opération groupée : il est possible d'initier un changement de propriétaire pour plusieurs noms de domaine à la fois, par exemple pour changer le propriétaire de tous les domaines *.ovh* si leurs propriétaires actuels sont identiques.. Une fois vos choix effectués, cliquez sur `Continuer`{.action}.
+Un nouvel onglet de votre navigateur s'ouvre avec tous les domaines éligibles au changement de propriétaire. Sélectionnez un nom de domaine dans la liste en cochant la case située à gauche. Cette étape peut également être utilisée pour lancer une opération groupée. Ainsi, il est possible d'initier un changement de propriétaire pour plusieurs noms de domaine à la fois, par exemple pour changer le propriétaire de tous les domaines *.ovh* si leurs propriétaires actuels sont identiques.. Une fois vos choix effectués, cliquez sur `Continuer`{.action}.
 
 ![changement de propriétaire](images/3657.PNG){.thumbnail}
 
