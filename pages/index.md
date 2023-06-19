@@ -106,6 +106,7 @@
             + [Configuring OVHcloud Secondary DNS on a dedicated server](cloud/dedicated/adding-secondary-dns-on-dedicated-server)
             + [Managing Intel SGX on an Infrastructure server](cloud/dedicated/sgx-enable-and-use)
             + [Uninstalling the RTM v2 monitoring system](cloud/dedicated/rtm-uninstall)
+            + [Configure a custom iPXE script to boot your server from the OVHcloud API](cloud/dedicated/ipxe-scripts)
         + [Troubleshooting](bare-metal-cloud-dedicated-servers-troubleshooting)
             + [Activating and using rescue mode](cloud/dedicated/rescue_mode)
             + [Replacing your lost SSH key pair](cloud/dedicated/replacing-lost-ssh-key)
