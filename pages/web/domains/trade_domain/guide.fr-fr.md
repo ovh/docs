@@ -24,7 +24,7 @@ En dehors de la [gestion des contacts](/pages/account/customer/managing_contacts
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
-- Disposer d'un nom de domaine enregistré chez OVHcloud. pour lequel aucune opération (changement de propriétaire, transfert, création) n'est en cours. Si toutefois une opération a été finalisée récemment sur votre nom de domaine, un délai d'au moins 60 jours calendaires est nécessaire avant de réaliser une nouvelle opération.
+- Disposer d'un nom de domaine enregistré chez OVHcloud et pour lequel aucune opération (changement de propriétaire, transfert, création) n'est en cours. Si une opération a été finalisée récemment sur votre nom de domaine, un délai d'au moins 60 jours calendaires est nécessaire avant de réaliser une nouvelle opération.
 - Être le [contact administrateur](/pages/account/customer/managing_contacts) du nom de domaine concerné.
 - Disposer de l'accord du propriétaire actuel du nom de domaine pour effectuer le changement de propriétaire.
 
