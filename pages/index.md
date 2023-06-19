@@ -173,6 +173,7 @@
             + [Configuring a new Windows Server installation](cloud/vps/windows_first_config)
             + [Configuring the firewall on Linux with iptables](cloud/vps/firewall-Linux-iptable)
             + [Configuring the firewall on Windows](cloud/vps/activate-port-firewall-soft-win)
+            + [Public Cloud & VPS - Image life cycle](platform/public-cloud/image-life-cycle)
         + [Backup options](bare-metal-cloud-virtual-private-servers-backups)
             + [Using snapshots on a VPS](cloud/vps/using-snapshots-on-a-vps)
             + [Using automatic backups on a VPS](cloud/vps/using-automated-backups-on-a-vps)
