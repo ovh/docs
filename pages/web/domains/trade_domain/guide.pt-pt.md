@@ -3,14 +3,14 @@ title: 'Alterar o titular de um nome de domínio'
 slug: alteracao-titular-dominio
 excerpt: 'Neste guia, encontrará várias informações sobre a alteração de titular de um nome de domínio.'
 section: 'Alteração de titular'
-updated: 2023-06-16
+updated: 2023-06-19
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 04/03/2021**
+**Última atualização: 19/06/2023**
 
 ## Objetivo
 

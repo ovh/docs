@@ -3,7 +3,7 @@ title: Changing the owner of a domain name
 slug: how-to-change-domain-name-holder
 excerpt: Find out how to change the owner of a a domain name in the OVHcloud Control Panel
 section: Trade
-updated: 2023-06-16
+updated: 2023-06-19
 ---
 
 **Last updated 4th March 2021**

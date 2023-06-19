@@ -4,14 +4,14 @@ excerpt: 'W tym przewodniku znajdziesz różne informacje na temat zmiany właś
 slug: zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz
 legacy_guide_number: g1350
 section: 'Zmiana właściciela'
-updated: 2023-06-16
+updated: 2023-06-19
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 04-03-2021**
+**Ostatnia aktualizacja z dnia 19-06-2023**
 
 ## Wprowadzenie
 

@@ -3,14 +3,14 @@ title: 'Cómo cambiar el propietario de un nombre de dominio'
 slug: cambio-propietario-dominio
 excerpt: 'En esta guía, encontrará diversas informaciones en relación con el cambio de propietario del nombre de un dominio.'
 section: 'Cambiar el propietario'
-updated: 2023-06-16
+updated: 2023-06-19
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 04/03/2021**
+**Última actualización: 19/06/2023**
 
 ## Objetivo
 

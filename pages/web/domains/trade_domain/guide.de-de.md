@@ -3,7 +3,7 @@ title: 'Den Inhaber einer Domain ändern'
 slug: wechsel_des_domaininhabers
 excerpt: 'Erfahren Sie hier, wie Sie den Inhaber eines Domainnamens wechseln können'
 section: Inhaberwechsel
-updated: 2023-06-16
+updated: 2023-06-19
 ---
 
 > [!primary]

@@ -3,7 +3,7 @@ title: 'Changer le propriétaire d’un nom de domaine'
 slug: changement-proprietaire-domaine
 excerpt: 'Vous trouverez dans ce guide différentes informations concernant le changement de propriétaire d’un nom de domaine.'
 section: 'Changement de propriétaire'
-updated: 2023-06-16
+updated: 2023-06-19
 ---
 
 **Dernière mise à jour le 19/06/2023**
