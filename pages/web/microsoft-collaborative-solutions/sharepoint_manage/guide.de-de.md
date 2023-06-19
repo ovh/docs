@@ -4,14 +4,16 @@ excerpt: 'Erfahren Sie hier, wie Sie einen OVHcloud SharePoint Dienst bestellen 
 slug: aktivierung_und_verwaltung_ihres_ovh_sharepoint
 section: SharePoint
 order: 01
-updated: 2020-08-11
+updated: 2023-06-19
 ---
 
 **Letzte Aktualisierung am 15.04.2020**
 
 ## Ziel
 
-Mit einer Microsoft SharePoint Lösung können Sie während Ihrer kollaborativen Arbeit von einem gemeinsam genutzten Speicherplatz profitieren.
+Mit den SharePoint-Angeboten profitieren Sie für Ihre gemeinsame Arbeit von einem Speicherplatz von 1 TB, der mit den anderen Konten Ihrer Sharepoint-Plattform geteilt wird.
+
+Außerdem stehen Ihnen für jedes Konto auf Ihrer SharePoint-Plattform 100 GB persönlicher Speicherplatz zur Verfügung.
 
 **In dieser Anleitung wird erklärt, wie Sie eine SharePoint Plattform bestellen und konfigurieren.**
 
