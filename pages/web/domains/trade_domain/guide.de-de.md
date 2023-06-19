@@ -10,11 +10,11 @@ updated: 2023-06-16
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 04.03.2021**
+**Letzte Aktualisierung am 19.06.2023**
 
 ## Ziel
 
-Neben der Angabe von [Kontakten](/pages/account/customer/managing_contacts) erfordert die Registrierung eines Domainnamens die Angabe von Informationen zu dessen Inhaber. **Inhaber** bedeutet in diesem Zusammenhang eine Person, die über die Nutzungsrechte an diesem Domainnamen verfügt. (Es kann sich dabei auch um ein Unternehmen handeln.) Unter einem **Inhaberwechsel** versteht man eine rechtsverbindliche Änderung dieser Daten. Zum Beispiel ist der Inhaberwechsel das obligatorische Verfahren bei einer Namensänderung eines Unternehmens.
+Neben der Angabe von [Kontakten](/pages/account/customer/managing_contacts) erfordert die Registrierung eines Domainnamens die Angabe von Informationen zu dessen Inhaber. In diesem Zusammenhang bezeichnet der **Inhaber** eine Person, ein Unternehmen, eine Organisation oder eine Vereinigung, die die Rechte an dieser Domain besitzt. **Die Änderung des Inhabers** bezieht sich auf die Übertragung von Eigentumsrechten von einer Person oder einem Unternehmen auf eine andere. Die Angaben des **Eigentümer** haben Rechtswirkung. Dieser Vorgang ist insbesondere dann zwingend, wenn ein Unternehmen seinen Namen ändert.
 
 > [!primary]
 >Bei dieser Operation wird Ihre Domain nicht auf einen anderen OVHcloud-Kundenaccount umgezogen.
@@ -28,7 +28,7 @@ Neben der Angabe von [Kontakten](/pages/account/customer/managing_contacts) erfo
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
-- Ihr Domainname ist bei OVHcloud registriert.
+- Sie besitzen eine bei OVHcloud registrierte Domain, für die keine Operation (Inhaberwechsel, Transfer, Erstellung) im Gange ist. Wenn vor kurzem eine Operation für Ihren Domainnamen abgeschlossen wurde, dauert es mindestens 60 Kalendertage, bis eine neue Operation durchgeführt wird.
 - Sie sind der [Administratorkontakt](/pages/account/customer/managing_contacts) des entsprechenden Domainnamens.
 - Sie haben die Zustimmung des aktuellen Inhabers des Domainnamens, den Inhaberwechsel durchzuführen.
 
@@ -36,13 +36,18 @@ Neben der Angabe von [Kontakten](/pages/account/customer/managing_contacts) erfo
 
 > [!warning]
 >
-> Die folgenden Anweisungen beschreiben die gängigste Methode, um den Inhaber der Domain zu ändern, der für die meisten Top Level Domains (TLD) gültig ist. Die besonderen Verfahrensregeln für TLDs werden jedoch nur von der zuständigen Vergabestelle, d. h. der **Registry**, festgelegt. Domain-Registrare wie OVHcloud müssen diese Regeln einhalten und haben keinen Einfluss auf Registry-Entscheidungen.
+> Die folgenden Anweisungen beschreiben die gängigste Vorgehensweise zur Änderung des Inhabers einer Domain. Sie sind für die meisten Bereiche der höheren Ebene gültig, gemeinhin als **T**op **L**evel **D**omain (**TLD**) bezeichnet. 
+>TLDs** bedeuten das Ende Ihrer Domain, wie zum Beispiel das *.com*, *.net*, *.de* usw.
 >
-> Das genaue Verfahren für die Änderung des Inhabers einer Domain kann daher variieren, insbesondere bei bestimmten Ländercode-TLDs (ccTLD, z.B. .lu, .hk, .ro, .be, .lt, .dk, .at, .fi usw.) und einigen Spezialbereich-TLDs (z.B. .am, .fm.). Bei manchen dieser Registrierungsstellen gilt ein Inhaberwechsel als kostenpflichtige Transaktion. Der Inhaberwechsel kann auch aus verschiedenen Gründen ausgesetzt werden, etwa wegen ausstehender Zahlungen, Missbrauchsfällen oder einer Sperrung seitens der Registry. 
+> Die besonderen Verfahrensvorschriften für Domainnamen **TLD** werden nur von der zuständigen Vergabebehörde, d. h. **register**, festgelegt. Ein Registrar (oder Registrar) wie OVHcloud muss diese Regeln einhalten und hat keinen Einfluss auf Registrierungsentscheidungen.
 >
-> Wir empfehlen, im Zweifelsfall folgende Ressourcen zu Rate zu ziehen:
+> Es gibt im Wesentlichen zwei Arten von **TLD**: **ccTLD** und **gTLD** Die **ccTLD** entsprechen **TLD** für eine Region oder ein Land (*.fr*, *.be*, *.uk*, *.de*, *.paris* usw.). **gTLD** entsprechend generischen **TLD** (*.net*, *.com*, *.info*, *.org* etc.).
 >
-> - Die Webseite der zuständigen TLD-Registry
+> Das genaue Verfahren für die Änderung des Inhabers einer Domain kann daher variieren, insbesondere für bestimmte Domainnamen **ccTLD**, wie *.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi* usw. und für einige wenige **TLD***, *.fm* usw.). Für einige von ihnen ist ein Inhaberwechsel eine kostenpflichtige Operation. Der Inhaberwechsel kann auch aus verschiedenen Gründen ausgesetzt werden, z. B. wegen Zahlungsunfähigkeit, Missbrauch oder Sperrung durch das Register. 
+>
+> Wir empfehlen Ihnen, im Zweifelsfall folgende Ressourcen einzusehen:
+>
+> - die Website des Registers **TLD**
 > - Die [Liste der bei OVHcloud verfügbaren TLDs](https://www.ovhcloud.com/de/domains/tld/)
 > - Den Bereich `Laufende Vorgänge`{.action} im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), um noch nicht abgeschlossene Updates des Domainnamens zu überprüfen.
 >
@@ -53,7 +58,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 ### Schritt 2: Vorgang für den Inhaberwechsel
 
-Klicken Sie im Tab `Allgemeine Informationen`{.action} im Rahmen **Abo** auf die Schaltfläche `...`{.action} neben den Kontakten und danach auf `Inhaber ändern`{.action}.
+Klicken Sie im Tab `Allgemeine Informationen`{.action} im Rahmen **Abo** auf die Schaltfläche `...`{.action} neben den **Kontakten** und danach auf `Inhaber ändern`{.action}.
 
 ![Änderung des Inhabers](images/3652-2.png){.thumbnail}
 
@@ -76,7 +81,8 @@ Sobald Sie Ihre Anfrage für den Wechsel bestätigt haben, werden zwei E-Mails z
 - Eine E-Mail an den zukünftigen Inhaber
 
 Wenn die E-Mail-Adresse im Rahmen des Inhaberwechsels nicht geändert wird, werden beide E-Mails and die Referenz-E-Mail-Adresse gesendet. Beide müssen jeweils bestätigt werden.
-<br>Sobald beide Empfänger die Anfrage per E-Mail bestätigt haben, wird die Änderung des Inhabers des Domainnamens aktiv.
+
+Sobald beide Empfänger die Anfrage per E-Mail bestätigt haben, wird die Änderung des Inhabers des Domainnamens aktiv.
 
 > [!primary]
 >
@@ -92,7 +98,7 @@ Wenn die E-Mail-Adresse im Rahmen des Inhaberwechsels nicht geändert wird, werd
 
 Wenn Sie nur bestimmte Sekundärinformationen wie Telefonnummer, Adresse usw. aktualisieren müssen, brauchen Sie kein Verfahren zum Inhaberwechsel einzuleiten. Diese Informationen können direkt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) geändert werden.
 
-Klicken Sie dazu im Rahmen **Abo** auf die Schaltfläche `...`{.action} neben den Kontakten und danach auf `Angaben des Inhabers aktualisieren`{.action}.
+Klicken Sie dazu im Rahmen **Abo** auf die Schaltfläche `...`{.action} neben den **Kontakten** und danach auf `Angaben des Inhabers aktualisieren`{.action}.
 
 ![Änderung des Inhabers](images/3658.png){.thumbnail}
 
@@ -101,5 +107,9 @@ Für diese Aktion müssen die Änderungen nicht per E-Mail bestätigt werden.
 ## Weiterführende Informationen
 
 [Verwaltung der Kontakte Ihrer Dienstleistungen](/pages/account/customer/managing_contacts)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
