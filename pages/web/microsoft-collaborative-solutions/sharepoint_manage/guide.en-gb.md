@@ -11,7 +11,9 @@ updated: 2020-08-11
 
 ## Objective
 
-The SharePoint solutions offer shared storage space for your collaborative work.
+The SharePoint offers allow you to benefit from a storage space of 1 TB shared with the other accounts of your SharePoint platform, for your collaborative work.
+
+You also have 100 GB of personal storage space for each account on your sharepoint platform.
 
 **This guide explains how to order and configure a SharePoint platform.**
 

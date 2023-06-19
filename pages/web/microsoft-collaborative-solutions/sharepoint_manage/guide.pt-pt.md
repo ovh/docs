@@ -11,7 +11,9 @@ updated: 2020-08-11
 
 ## Sumário
 
-As ofertas SharePoint disponibilizam um espaço de armazenamento partilhado ao seu trabalho colaborativo.
+As ofertas SharePoint permitem-lhe beneficiar de um espaço de armazenamento de 1 TB partilhado com as restantes contas da sua plataforma Sharepoint, para o seu trabalho colaborativo.
+
+Você também tem 100 GB de espaço de armazenamento pessoal para cada conta em sua plataforma sharepoint.
 
 **Saiba como encomendar e configurar uma plataforma SharePoint.**
 

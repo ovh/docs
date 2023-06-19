@@ -11,7 +11,9 @@ updated: 2020-08-11
 
 ## Wprowadzenie
 
-Oferty SharePoint pozwalają wykorzystać współdzieloną przestrzeń dyskową do wspólnej pracy.
+Oferty programu SharePoint umożliwiają korzystanie z przestrzeni dyskowej o pojemności 1 TB współdzielonej z innymi kontami platformy Sharepoint do pracy zespołowej.
+
+Masz również 100 GB osobistej przestrzeni dyskowej dla każdego konta na platformie Sharepoint.
 
 **Dowiedz się, jak zamówić i skonfigurować usługę SharePoint.**
 

@@ -11,7 +11,9 @@ updated: 2020-08-11
 
 ## Obiettivo
 
-Le offerte SharePoint ti consentono di usufruire di uno spazio di storage condiviso per il lavoro collaborativo.
+Le offerte SharePoint ti consentono di beneficiare di uno spazio di archiviazione di 1 TB condiviso con gli altri account della tua piattaforma Sharepoint, per il tuo lavoro collaborativo.
+
+Hai anche 100 GB di spazio di archiviazione personale per ogni account sulla tua piattaforma sharepoint.
 
 **Questa guida ti mostra come ordinare e configurare una piattaforma SharePoint.**
 
