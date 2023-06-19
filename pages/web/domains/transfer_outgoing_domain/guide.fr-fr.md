@@ -15,7 +15,7 @@ Un **transfert de domaine** fait référence au déplacement d'un nom de domaine
 
 Afin d'empêcher les transferts de domaine non autorisés, les noms de domaine sont généralement verrouillés par un statut *clientTransferProhibited*. Cette protection doit être levée dans l'espace client OVHcloud avant de commencer tout transfert.
 
-**Ce guide vous explique comment préparer votre nom de domaine pour un transfert sortant.**
+**Découvrez comment préparer votre nom de domaine pour un transfert sortant.**
 
 > [!warning]
 >
@@ -35,7 +35,7 @@ Afin d'empêcher les transferts de domaine non autorisés, les noms de domaine s
 
 > [!primary]
 >
-> Si vous êtes le **propriétaire** du domaine mais que sa gestion dans l'espace client OVHcloud est indisponible, que ce soit via votre propre accès ou via le contact administratif du domaine, veuillez consulter [ce guide](../../customer/gestion-des-contacts/#cas-particulier-dun-proprietaire-de-domaine) avant de continuer.
+> Si vous êtes le **propriétaire** du domaine mais que sa gestion dans l'espace client OVHcloud est indisponible, que ce soit via votre propre accès ou via le contact administratif du domaine, veuillez consulter [ce guide](/pages/account/customer/managing_contacts) avant de continuer.
 >
 
 ## En pratique
