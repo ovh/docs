@@ -6,7 +6,7 @@ section: 'Changement de propriétaire'
 updated: 2023-06-16
 ---
 
-**Dernière mise à jour le 04/03/2021**
+**Dernière mise à jour le 19/06/2023**
 
 ## Objectif
 
