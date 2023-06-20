@@ -338,3 +338,5 @@ You service is now configured. To go further,
 Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/opensearch) to find how to connect to your database with several languages.
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.

@@ -104,10 +104,10 @@ Ricordati che non è possibile segnalare i falsi positivi direttamente da Outloo
 
 ## Per saperne di più 
 
-[Exchange 2016: imposta una risposta automatica con OWA](../exchange_2016_imposta_una_risposta_automatica_con_owa)
+[Exchange 2016: imposta una risposta automatica con OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies)
 
-[Condividi un calendario con la Webmail OWA](../exchange_2016_condividi_un_calendario_con_la_webmail_owa//)
+[Condividi un calendario con la Webmail OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Utilizzare un account di posta da “Outlook on the web”](../exchange_2016_guida_allutilizzo_di_outlook_web_app/)
+[Utilizzare un account di posta da “Outlook on the web”](/pages/web/emails/email_owa)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -3,7 +3,7 @@ title: Installa WordPress sulla tua istanza
 excerpt: Scopri come utilizzare un'istanza Public Cloud per ospitare siti WordPress
 slug: installa_wordpress_sulla_tua_istanza
 section: Tutorial
-updated: 2021-10-15
+updated: 2023-05-17
 ---
 
 > [!primary]
@@ -94,26 +94,26 @@ Change the root password? [Y/n]
 
 Le seguenti richieste relative alle misure di sicurezza, confermale tutte con `y`{.action} fino al completamento dello script.
 
-Se hai configurato l'accesso MariaDB come consigliato (*unix_socket*), disponi di un accesso root automatico a quest'ultimo ogni volta che sei connesso all'istanza come utente con diritti elevati.
+Se hai configurato l'accesso MariaDB come consigliato (*unix_socket*), disponi di un accesso amministratore automatico (*root*) al server ogni volta che sei connesso al server come utente con diritti elevati (*sudo*).
 
 Apri lo shell MariaDB:
 
 ```bash
 debian@instance:~$ sudo mariadb
 ```
-```mysql
+```sql
 MariaDB [(none)]> 
 ```
 
 Crea il database per WordPress:
 
-```mysql
+```sql
 MariaDB [(none)]> CREATE DATABASE wordpress;
 ```
 
 Dopodiché assegna al nuovo utente "wordpress" tutti i diritti su questo database. Questo utente accederà al database ed effettuerà tutte le operazioni per il CMS WordPress. Sostituisci `your_password` con una password forte per questo utente.
 
-```mysql
+```sql
 MariaDB [(none)]> GRANT ALL ON wordpress.* TO 'wordpress'@'localhost' IDENTIFIED BY 'your_password' WITH GRANT OPTION;
 ```
 
@@ -124,11 +124,11 @@ MariaDB [(none)]> GRANT ALL ON wordpress.* TO 'wordpress'@'localhost' IDENTIFIED
 
 Il database è pronto per essere utilizzato con WordPress. Assicurati che le modifiche siano applicate per i prossimi step, poi chiudi la shell MariaDB:
 
-```mysql
+```sql
 MariaDB [(none)]> FLUSH PRIVILEGES;
 ```
 
-```mysql
+```sql
 MariaDB [(none)]> exit;
 ```
 
@@ -152,7 +152,7 @@ debian@instance:~$ sudo ufw app list | grep WWW
 
 Scegliendo "WWW Full", le connessioni protette (porta 443) e le richieste http non sicure (porta 80) al server web saranno autorizzate.
 
-Per visualizzare quali porti sono interessati da un profilo particolare, accedi ```sudo ufw app info "profilo"```.
+Per visualizzare quali porti sono interessati da un profilo particolare, accedi `sudo ufw app info "profilo"`.
 
 Inserendo il seguente comando, le porte definite dal profilo "WWW Full" saranno aperte:
 
@@ -160,20 +160,20 @@ Inserendo il seguente comando, le porte definite dal profilo "WWW Full" saranno 
 debian@instance:~$ sudo ufw allow 'WWW Full'
 ```
 
-Dato che tutte le porte non esplicitamente autorizzate saranno bloccate dopo l'attivazione del firewall, assicurati di autorizzare anche le connessioni SSH (porta 22):
+Dal momento che tutte le porte non esplicitamente autorizzate saranno **bloccate** dopo l'attivazione del firewall, assicurati di autorizzare anche le connessioni SSH (porta 22 con configurazione di default):
 
 ```bash
 debian@instance:~$ sudo ufw allow 'SSH'
 ```
 
-Verifica la configurazione e attiva le regole del firewall:
-
-```bash
-debian@instance:~$ sudo ufw status
-```
+Infine, attiva le regole del firewall e verifica la configurazione:
 
 ```bash
 debian@instance:~$ sudo ufw enable
+```
+
+```bash
+debian@instance:~$ sudo ufw status
 ```
 
 Con l'UFW, ad esempio, puoi fare di più se vuoi limitare gli attacchi per *denial of service* (DOS) o impedire le richieste tramite alcuni intervalli di indirizzi IP. Consulta la documentazione ufficiale dell'UFW.
@@ -241,11 +241,17 @@ Una volta convalidato, potrai accedere allo spazio di amministrazione del tuo si
 > [!primary]
 >
 > Per stabilire connessioni sicure (`https`), il server web deve essere protetto tramite un'autorità di certificazione come [Let's Encrypt](https://letsencrypt.org/){.external} che offre certificati gratuiti. Per configurare Apache è necessario installare uno strumento client (ad esempio "Cerbot"). Senza questo step, il tuo sito potrà accettare solo richieste `http`.
+> 
+> In alternativa, OVHcloud propone la soluzione [SSL Gateway](https://www.ovh.it/ssl-gateway/). Per maggiori informazioni, consulta la [nostra guida](/pages/web/ssl-gateway/order-ssl-gateway).
 >
 
 ### Step 6 (facoltativo): attivare connessioni sicure con Let's Encrypt
 
 Per prima cosa verifica che il tuo dominio disponga dei record validi nella zona DNS, cioè che punti verso l'indirizzo IP della tua istanza.
+
+> [!warning]
+> Il comando successivo installa una versione di Cerbot che funziona ma è obsoleta (*certbot 1.12.0*). Per installare l'ultima versione, utilizza il gestore di pacchetti aggiuntivo *snappy*. Le istruzioni per l'installazione sono disponibili sul [sito di Cerbot](https://certbot.eff.org/instructions?ws=apache&os=debianbuster).
+>
 
 Installate le scartoffie necessarie per il cliente Cerbot:
 
@@ -253,10 +259,10 @@ Installate le scartoffie necessarie per il cliente Cerbot:
 debian@instance:~$ sudo apt install certbot python3-certbot-apache
 ```
 
-Ottieni il certificato del tuo dominio. (Puoi includere il sottodominio "www" aggiungendo `-d www.yourdomainname.ovh`)
+Ottieni il certificato del tuo dominio e del sottodominio "www":
 
 ```bash
-debian@instance:~$ sudo certbot --apache -d yourdomainname.ovh
+debian@instance:~$ sudo certbot --apache -d domainname.ovh -d www.domainname.ovh
 ```
 
 Inserisci un indirizzo email valido e accetta le condizioni di utilizzo.

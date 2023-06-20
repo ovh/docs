@@ -6,10 +6,10 @@ section: AI Notebooks - Tutorials
 order: 04
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/yolov5-example/'
-updated: 2023-03-10
+updated: 2023-05-11
 ---
 
-**Last updated 10th March, 2023.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 
@@ -37,7 +37,7 @@ If you want to upload it from the [OVHcloud Control Panel](https://www.ovh.com/a
 If you want to run it with the CLI, just follow this [guide](https://docs.ovh.com/de/publiccloud/ai/cli/access-object-storage-data). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
 ```bash
-ovhai data upload <region> <container> <paths>
+ovhai bucket object upload <container>@<region> <paths>
 ```
 
 > [!primary]
@@ -109,6 +109,8 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 
 - Do you want to observe the evolution of your metrics during the training of your model? Click [here](https://docs.ovh.com/de/publiccloud/ai/notebooks/tuto-weights-and-biases/)!
 - Do you want to use your YOLOv5 model in an app? [Here it is](https://docs.ovh.com/de/publiccloud/ai/deploy/web-service-yolov5/).
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

@@ -104,10 +104,10 @@ Tenha em atenção que os falsos positivos de SPAM não podem ser declarados atr
 
 ## Vá mais longe
 
-[Criar respostas automáticas no OWA](../exchange_2016_how_to_set_up_automatic_replies_in_owa)
+[Criar respostas automáticas no OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies)
 
-[Partilhar calendários em OWA](../exchange_2016_partilhar_um_calendario_atraves_do_webmail_owa/)
+[Partilhar calendários em OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Utilizar o Outlook Web App com uma conta de e-mail](../exchange_2016_guia_de_utilizacao_do_outlook_web_app/)
+[Utilizar o Outlook Web App com uma conta de e-mail](/pages/web/emails/email_owa)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

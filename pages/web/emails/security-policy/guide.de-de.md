@@ -9,7 +9,7 @@ updated: 2021-08-31
 
 **Letzte Aktualisierung am 22.04.2022**
 
-## Einleitung
+## Ziel
 
 Mit den E-Mail-Diensten von OVHcloud können Sie professionelle E-Mail-Adressen erstellen. Um diese Umgebung zu sichern, können Sie die globalen Sicherheitseinstellungen für Ihre E-Mails-Accounts verwalten.
 
@@ -52,7 +52,7 @@ Befolgen Sie nun die Anleitung entsprechend den von Ihnen gewünschten Aktionen.
 
 Hier können Sie festlegen, ob E-Mail-Accounts nach einer bestimmten Anzahl fehlgeschlagener Login-Versuche gesperrt werden sollen.
 
-Geben Sie hierzu die Informationen aus der nachstehenden Tabelle ein:
+Geben Sie hierzu die folgenden Informationen ein:
 
 - **Schwelle für die Sperrung**: Geben Sie die Anzahl der fehlgeschlagenen Login-Versuche ein, nach denen der Account gesperrt werden soll. Geben Sie „0“ ein, wenn der Account nie gesperrt werden soll.
 - **Zeit bis zum Zurücksetzen**: Dieses Feld erscheint nur, wenn ein Schwellenwert für die Sperrung festgelegt wurde. Geben Sie den Zeitraum in Minuten an, bis der Zähler für fehlgeschlagene Login-Versuche auf Null zurückgesetzt wird.
@@ -64,13 +64,13 @@ Wenn Sie alle Informationen angegeben haben, bestätigen Sie die Änderungen fü
 
 Hier legen Sie Komplexitätsanforderungen und Regeln für die Passwortänderung fest.
 
-Geben Sie hierzu die Informationen aus der nachstehenden Tabelle ein:
+Füllen Sie dazu die unten genannten Informationen aus:
 
 - **Anforderungen an die Komplexität**: Hier können Sie Regeln für die Komplexität der Passwörter festlegen:<br> \- Der Benutzername darf weder ganz noch teilweise enthalten sein.<br> \- Das Passwort muss mindestens 6 Zeichen enthalten.<br> \- Das Passwort muss Großbuchstaben, Kleinbuchstaben, Sonderzeichen (zum Beispiel ! oder $) und Ziffern enthalten.
 - **Sperrzeit für Passwortänderung**: Hier können Sie eine minimale Gültigkeitsdauer der Passwörter Ihrer E-Mail-Accounts festlegen. Benutzer müssen eine bestimmte Anzahl an Tagen abwarten, bevor sie ihr Passwort ändern können.
 - **Maximale Gültigkeitsdauer des Passworts**: Hier können Sie eine maximale Gültigkeitsdauer der Passwörter Ihrer E-Mail-Accounts festlegen. Benutzer müssen ihr Passwort nach Ablauf dieser Zeit ändern.
 - **Passwort-Chronik behalten (nur Exchange)**: Dieses Feld erscheint nur, wenn eine maximale Gültigkeitsdauer festgelegt wurde. Legen Sie die Gültigkeitsdauer (in Tagen) früherer Passwörter fest, die wieder verwendet werden können.
-- **Mindestlänge des Passworts**: Hier können Sie eine Mindestgröße für die Länge des Passworts eingeben, die ein Benutzer bei der Passwortänderung einhalten muss.|
+- **Mindestlänge des Passworts**: Hier können Sie eine Mindestgröße für die Länge des Passworts eingeben, die ein Benutzer bei der Passwortänderung einhalten muss.
 
 Wenn Sie alle Informationen angegeben haben, bestätigen Sie die Änderungen für „E-Mail“- und „E-Mail Pro“-Lösungen, indem Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action} klicken. Klicken Sie für Exchange auf `Änderungen speichern`{.action}.
 
@@ -78,10 +78,8 @@ Wenn Sie alle Informationen angegeben haben, bestätigen Sie die Änderungen fü
 
 Sie können festlegen, ob auf Ihren E-Mail-Accounts eingehende Nachrichten auf einen legitimen Absender überprüft werden sollen (Überprüfung der DKIM- und/oder SPF-Signatur).
 
-Setzen Sie hierzu einen Haken in den entsprechenden Feldern aus der nachstehenden Tabelle:
+Haken Sie dazu die gewünschten Optionen an:
 
-|Information|Beschreibung| 
-|---|---| 
 - **Überprüfung der DKIM-Signatur aktivieren**: Setzen Sie hier einen Haken, wenn unsere Server die DKIM-Signatur der auf Ihren Exchange Accounts eingehenden Nachrichten überprüfen soll. So werden die Authentizität der Sender-Domain sowie die Vertrauenswürdigkeit der Nachricht sichergestellt. Nachrichten von nicht vertrauenswürdigen Absendern können identifiziert und mit Spam-Tags versehen werden.
 - **Überprüfung des SPF-Schutzes aktivieren**: Setzen Sie hier einen Haken, wenn unsere Server überprüfen sollen, dass die Quelle der eingegangenen Nachricht im SPF-Eintrag der Sender-Domain enthalten ist. So können Nachrichten von nicht vertrauenswürdigen Absendern identifiziert und mit Spam-Tags versehen werden.
 
@@ -91,10 +89,8 @@ Wenn Sie Ihre Auswahl getroffen haben, bestätigen Sie die Änderungen, indem Si
 
 Sie können festlegen, ob auf Ihren E-Mail-Accounts eingehende Spam-Mails einen Tag erhalten sollen, über den sie als solche identifiziert werden können, oder ob sie direkt in den Spam-Ordner verschoben werden.
 
-Setzen Sie hierzu einen Haken in den entsprechenden Feldern aus der nachstehenden Tabelle:
+Kreuzen Sie dazu die gewünschten Kästchen an :
 
-|Information|Beschreibung| 
-|---|---| 
 - **Spam-Mails identifizieren**: Setzen Sie hier einen Haken, wenn unsere Server einen Tag zu Nachrichten hinzufügen sollen, um diese als Spam-Mails zu markieren.
 - **Spam-Mails in den Spam-Ordner verschieben**: Setzen Sie hier einen Haken, wenn unsere Server eingegangene Spam-Mails automatisch in den Spam-Ordner verschieben sollen.
 

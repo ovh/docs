@@ -1,14 +1,14 @@
 ---
-title: FAQ AI Training (EN)
+title: FAQ - AI training (EN)
 slug: faq
 section: Informations générales
 order: 106
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/faq/'
-updated: 2021-04-20
+updated: 2023-05-12
 ---
 
-**Last updated 20th April, 2021.**
+**Last updated 12th May, 2023.**
 
 ## Objective
 
@@ -76,3 +76,5 @@ Here are the most frequently asked questions about AI Training.
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.

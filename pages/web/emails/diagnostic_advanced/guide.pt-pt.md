@@ -5,14 +5,12 @@ legacy_guide_number: 2117
 excerpt: "Saiba como reagir em caso de problemas de envio ou receção de e-mails na OVHcloud"
 section: 'Diagnóstico'
 order: 02
-updated: 2022-07-21
+updated: 2023-06-15
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
-
-**Última atualização: 21/07/2022**
 
 ## Objetivo
 
@@ -126,6 +124,7 @@ Encontrará abaixo a maioria dos códigos de respostas negativas SMTP utilizados
 |504|Parâmetro de comando não implementado|Os parâmetros ou as opções utilizadas aquando do envio do e-mail com o seu servidor SMTP são reconhecidos mas desativados na sua configuração. Contacte o seu fornecedor de serviço|
 |535|Falha durante a autenticação|As informações de utilizador/password foram descarregadas ou o envio está potencialmente bloqueado no seu endereço de e-mail. Verifique o estado do seu endereço de e-mail a partir da Área de Cliente OVHcloud. Uma alteração da password pode desbloquear o envio se a conta tiver sido bloqueada por spam, consulte o nosso guia [O que fazer no caso de uma conta bloqueada por spam?](https://docs.ovh.com/pt/microsoft-collaborative-solutions/bloqueado-por-spam/) para mais informações|
 |550|Ação solicitada não efetuada: caixa de correio indisponível|O servidor de e-mail de destino não pôde verificar o endereço de e-mail utilizado. Isto é causado, na maioria dos casos, por um endereço de e-mail de destino inválido, mas pode também significar que o servidor de e-mail de destino tem problemas com firewall ou com a conectividade. Verificar o endereço de e-mail do destinatário e/ou tente novamente|
+|550 5.7.26|This message does not have authentication information or fails to pass authentication checks| O e-mail foi rejeitado porque o serviço de e-mail do remetente não possui SPF ou DKIM configurado em seu nome de domínio.<br><br>É aconselhável configurar um registro SPF prioritário, compatível com todos os e-mails ofertas. Use nosso guia “[Configurar um registro SPF em seu nome de domínio](/pages/web/domains/dns_zone_spf)”.<br><br>Se sua oferta de e-mail tiver a opção DKIM, você pode colocá-la usando nosso guia “[Configurar um registro DKIM](/pages/web/domains/dns_zone_dkim)”.|
 |551|Utilizador não local|Esta é geralmente utilizada como uma estratégia de prevenção contra o spam. Indica-se que o envio de correio não é autorizado, por qualquer razão, a transmitir a sua mensagem para outro servidor que não o seu. Contacte o seu fornecedor de serviço|
 |552|Serviço de mensagens pedido interrompido: espaço de armazenamento ultrapassado|O utilizador que tentou contactar já não tem espaço disponível para receber mensagens. Infelizmente, a única solução é contactar o destinatário através de outro método|
 |553|Ação solicitada não efetuada: endereço de e-mail não autorizado|Esta situação é geralmente causada por um endereço de e-mail de destino incorreto. Verifique que o endereço de e-mail está correto|

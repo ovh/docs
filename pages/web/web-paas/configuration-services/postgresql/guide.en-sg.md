@@ -116,22 +116,17 @@ You can then use the service in a configuration file of your application with so
 
 > [!tabs]      
 > Go     
->> ``` go     
->> {!> web/web-paas/static/files/fetch/examples/golang/postgresql !}  
->> ```     
+>> [PostgreSQL - Go](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/golang/postgresql)  
+>>      
 > Java     
->> ``` java     
->> {!> web/web-paas/static/files/fetch/examples/java/postgresql !}  
->> ```     
+>> [PostgreSQL - Java](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/java/postgresql)  
+>>      
 > PHP     
->> ``` php     
->> {!> web/web-paas/static/files/fetch/examples/php/postgresql !}  
->> ```     
+>> [PostgreSQL - PHP](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/postgresql)  
+>>      
 > Python     
->> ``` python     
->> {!> web/web-paas/static/files/fetch/examples/python/postgresql !}  
->> ```     
-
+>> [PostgreSQL - Python](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/postgresql)  
+>>      
 ## Exporting data
 
 The easiest way to download all data in a PostgreSQL instance is with the WebPaas CLI.  If you have a single SQL database, the following command will export all data using the `pg_dump` command to a local file:

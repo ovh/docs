@@ -4,10 +4,8 @@ slug: public-cloud-vps-image-life-cycle
 excerpt: Find out about the life cycle of images provided for Public Cloud & VPS
 section: 'General information'
 order: 04
-updated: 2021-09-22
+updated: 2023-06-19
 ---
-
-**Last updated 22nd September 2021**
 
 ## Objective
 
@@ -17,28 +15,17 @@ This documentation will share the end of life (EOL) roadmap for OVHcloud images.
 
 | Distribution                  | URL                                                                                       |
 | ----------------------------- | ----------------------------------------------------------------------------------------- |
-| Debian 11                     | [Life Cycle](https://wiki.debian.org/DebianReleases)                                      |
-| Debian 10                     | [Life Cycle](https://wiki.debian.org/DebianReleases)                                      |
-| Debian 9                      | [Life Cycle](https://wiki.debian.org/DebianReleases)                                      |
-| Ubuntu 18.04                  | [Life Cycle](https://wiki.ubuntu.com/Releases)                                            |
-| Ubuntu 20.04                  | [Life Cycle](https://wiki.ubuntu.com/Releases)                                            |
-| Ubuntu 20.10                  | [Life Cycle](https://wiki.ubuntu.com/Releases)                                            |
-| Ubuntu 21.04                  | [Life Cycle](https://wiki.ubuntu.com/Releases)                                            |
-| Centos 7                      | [Life Cycle](https://wiki.centos.org/About/Product)                                       |
-| Centos 8                      | [Life Cycle](https://wiki.centos.org/About/Product)                                       |
-| Fedora 33                     | [Life Cycle](https://fedoraproject.org/wiki/Fedora_Release_Life_Cycle)                    |
-| Fedora 34                     | [Life Cycle](https://fedoraproject.org/wiki/Fedora_Release_Life_Cycle)                    |
-| Windows Server 2012 R2        | [Life Cycle](https://docs.microsoft.com/en-us/lifecycle/products/windows-server-2012-r2)  |
+| Debian                        | [Life Cycle](https://wiki.debian.org/DebianReleases)                                      |
+| Ubuntu                        | [Life Cycle](https://wiki.ubuntu.com/Releases)                                            |
+| Centos                        | [Life Cycle](https://wiki.centos.org/About/Product)                                       |
+| Fedora                        | [Life Cycle](https://fedoraproject.org/wiki/Fedora_Release_Life_Cycle)                    |
+| Almalinux                     | [Life Cycle](https://wiki.almalinux.org/release-notes/)                                   |
+| Rocky Linux                   | [Life Cycle](https://wiki.rockylinux.org/rocky/version/)                                  |
+| CloudLinux                    | [Life Cycle](https://docs.cloudlinux.com/introduction/#cloudlinux-os-life-cycle)          |
 | Windows Server 2016           | [Life Cycle](https://docs.microsoft.com/en-us/lifecycle/products/windows-server-2016)     |
 | Windows Server 2019           | [Life Cycle](https://docs.microsoft.com/en-us/lifecycle/products/windows-server-2019)     |
+| Windows Server 2022           | [Life Cycle](https://docs.microsoft.com/en-us/lifecycle/products/windows-server-2022)     |
 
-## EOLs in 2021
-
-- Ubuntu 16.04 - April 2021
-- Fedora 32 - May 2021
-- Ubuntu 20.10 - July 2021
-- Fedora 33 - ~ November 2021 (maintained for 4 weeks after Fedora 35 release)
-- Centos 8 - December 2021
 
 ## Go further
 

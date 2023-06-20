@@ -52,6 +52,7 @@ You also need to know how PVs are handled on OVHcloud Managed Kubernetes service
 > When a __Persistent Volumes__ resource is created inside a Managed Kubernetes cluster, an associated Public Cloud __Block Storage__ volume is automatically created with it.
 > This volume is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Volume Block Storage price](https://www.ovhcloud.com/fr/public-cloud/prices/#storage)
 > 
+
 ## Let's make a Persistent Volume Claim
 
 To test the PVs resizing, we will need a PV associated to the cluster, i.e. we need to deploy a service making a PVC. To keep thing simple, we choose to deploy a single instance of [MySQL](https://www.mysql.com/).
@@ -421,4 +422,6 @@ Now you can expand the Persistent Volumes on your OVHcloud Managed Kubernetes cl
 
 To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation site](../).
 
-Join our [community of users](https://community.ovh.com/en/).
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our [community of users](https://community.ovh.com/en/).

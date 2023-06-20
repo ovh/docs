@@ -6,10 +6,10 @@ section: Informations générales
 order: 107
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cheat-sheet/'
-updated: 2023-04-24
+updated: 2023-05-12
 ---
 
-**Last updated 24th April, 2023.**
+**Last updated 12th May, 2023.**
 
 ## Objective
 
@@ -26,3 +26,5 @@ The goal of this [cheat sheet](https://github.com/ovh/ovhai-cheat-sheet/blob/mai
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.

@@ -4,14 +4,14 @@ slug: ssl-ev
 excerpt: "Saiba como encomendar e instalar um certificado SSL EV no seu alojamento Web OVHcloud"
 section: SSL
 order: 03
-updated: 2022-12-13
+updated: 2023-06-08
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 13/12/2022**
+**Última atualização: 08/06/2023**
   
 ## Objetivo
 
@@ -59,7 +59,7 @@ Para verificar se é elegível para a subscrição de um certificado SSL EV, ace
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/). De facto, não poderemos prestar-lhe assistência **para todas as etapas de verificação diretamente realizadas com a autoridade de certificação Sectigo**. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). De facto, não poderemos prestar-lhe assistência **para todas as etapas de verificação diretamente realizadas com a autoridade de certificação Sectigo**. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
 >
 
 ### Etapa 1: encomendar o certificado SSL EV
@@ -136,7 +136,17 @@ Todas as ações descritas nesta etapa podem ser realizadas durante vários dias
 Depois de efetuar a encomenda, o Sectigo enviar-lhe-á um e-mail com um link de validação e um procedimento a seguir.
 Verifique as suas informações e valide o seu pedido seguindo as indicações presentes neste e-mail. 
 
-Para garantir que a troca de e-mail com Sectigo é efetuada corretamente, verifique também a validade do endereço de e-mail indicado no formulário aquando da encomenda do SSL EV, bem como o endereço de e-mail associado ao seu [Espaço Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+Para garantir que a troca de e-mail com Sectigo é efetuada corretamente, verifique também a validade do endereço de e-mail indicado no formulário aquando da encomenda do SSL EV, bem como o endereço de e-mail associado ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+
+> [!primary]
+>
+> Em paralelo e para certificar a propriedade do seu domínio junto do Sectigo, é automaticamente implementado um ficheiro em formato *.txt* no espaço FTP do seu alojamento web. Este será eliminado quando deixar de ser necessário para Sectigo.
+>
+> Tenha em conta que algumas restrições aplicadas pelo seu lado (como num ficheiro ".htaccess", por exemplo) podem impedir esta verificação.
+> Se as autorizações de acesso FTP "CHMOD" forem também limitadas ou insuficientes, a verificação pode igualmente ser bloqueada.
+>
+> Também recomendamos que **não** ative ou deixe ativo o [firewall](/pages/web/hosting/multisites_activating_application_firewall), disponível com os nossos alojamentos web, durante toda a duração da instalação do seu certificado SSL EV.
+>
 
 #### 2.2 - Verificações feitas pela Autoridade de Certificação Sectigo
 
@@ -174,7 +184,7 @@ Só precisa de [atualizar o seu website em HTTPS](https://docs.ovh.com/pt/hostin
 
 [Passar o seu website em HTTPS](https://docs.ovh.com/pt/hosting/ativar-https-website-certificado-ssl/)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 

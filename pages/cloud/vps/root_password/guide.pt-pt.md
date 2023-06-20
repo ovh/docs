@@ -43,15 +43,16 @@ Pode ser necessário alterar a palavra-passe root do sistema operativo Linux. Ex
 
 Ligue-se ao seu VPS através de SSH. Migre para o utilizador root, se necessário:
 
-```sh
-~$ sudo su -
-~#
+```bash
+sudo su -
+#
 ```
 
 Altere a palavra-passe do utilizador atual:
 
-```sh
-~# passwd
+```bash
+passwd
+
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -131,8 +132,9 @@ Pode efetuar uma verificação introduzindo o comando `ls -l`, que regista o con
 
 Na última etapa, altere a sua palavra-passe através do comando `passwd`.
 
-```sh
-~# passwd
+```bash
+passwd
+
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -142,8 +144,8 @@ Se o VPS for de última geração (o seu nome é: *vps-XXXXXXX.vps.ovh.net*), re
 
 É necessário introduzir o nome de utilizador que utiliza para se ligar após a `passwd`:
 
-```sh
-~# passwd <username>
+```bash
+~# passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -193,7 +195,7 @@ Registe o ficheiro e saia do editor.
 ~$ systemctl restart sshd
 ```
 
-Tal deverá ser suficiente para aplicar as alterações. Também pode reiniciar o VPS (```~$ reboot```).
+Tal deverá ser suficiente para aplicar as alterações. Também pode reiniciar o VPS (`~$ sudo reboot`).
 
 ### Falha
 
@@ -206,6 +208,6 @@ Se tiver problemas de arranque depois de alterar a sua palavra-passe e iniciar a
 
 [Consulte o manual Introdução ao SSH.](../../dedicated/ssh-introducao/)
 
-[Como proteger um VPS](../como-proteger-vps/)
+[Como proteger um VPS.](../como-proteger-vps/)
 
 Junte-se à nossa comunidade de utilizadores <https://community.ovh.com/en/>.

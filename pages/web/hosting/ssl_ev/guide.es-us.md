@@ -4,14 +4,14 @@ slug: ssl-ev
 excerpt: "Cómo contratar e instalar un certificado SSL EV en un alojamiento web de OVHcloud"
 section: SSL
 order: 03
-updated: 2022-12-13
+updated: 2023-06-08
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 13/12/2022**
+**Última actualización: 08/06/2023**
   
 ## Objetivo
 
@@ -59,7 +59,7 @@ Para comprobar si puede contratar un certificado SSL EV, acceda a [este enlace](
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/). En efecto, no podremos asistirle en **todas las etapas de verificación directamente efectuada con la autoridad de certificación Sectigo**. Más información en la sección [Más información](#go-further) de esta guía.
+> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). En efecto, no podremos asistirle en **todas las etapas de verificación directamente efectuada con la autoridad de certificación Sectigo**. Más información en la sección [Más información](#go-further) de esta guía.
 >
 
 ### Etapa 1: contratar el certificado SSL EV
@@ -138,6 +138,16 @@ Compruebe que la información y la solicitud son correctos siguiendo las indicac
 
 Para asegurarse de que la comunicación con Sectigo se realiza correctamente, compruebe también la validez de la dirección de correo electrónico que se indica en el formulario al contratar el SSL EV y la dirección de correo electrónico de contacto asociada a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
+> [!primary]
+>
+> Paralelamente y con el fin de certificar la propiedad de su dominio en Sectigo, un fichero en formato *.txt* se instala automáticamente en el espacio FTP de su alojamiento web. Este se eliminará cuando ya no sea necesario en Sectigo.
+>
+> Tenga en cuenta que algunas restricciones aplicadas por su parte (por ejemplo, en un archivo ".htaccess") pueden impedir esta verificación.
+Si los permisos de acceso FTP CHMOD también están restringidos o son insuficientes, la verificación también puede bloquearse.
+>
+> También le recomendamos que **no** active o deje activo el[firewall de aplicación](/pages/web/hosting/multisites_activating_application_firewall), disponible con nuestros alojamientos web durante toda la instalación de su certificado SSL EV.
+>
+
 #### 2.2 - Verificaciones realizadas por la Autoridad de Certificación Sectigo
 
 Sectigo comprobará que su organización existe y que está registrada en los registros oficiales.
@@ -174,7 +184,7 @@ Solo tendrá que [pasar su sitio web en HTTPS](https://docs.ovh.com/us/es/hostin
 
 [Habilitar HTTPS en el sitio web](https://docs.ovh.com/us/es/hosting/activar-https-en-un-sitio-web-con-ssl/)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
 

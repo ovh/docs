@@ -4,10 +4,10 @@ slug: metro-availability
 excerpt: "Implementing Metro for a Disaster Recovery Plan"
 section: "Disaster Recovery Plan"
 order: 06
-updated: 2022-11-15
+updated: 2023-05-09
 ---
 
-**Last updated 15th november 2022**
+**Last updated 9th May 2023**
 
 ## Objective
 
@@ -24,7 +24,7 @@ updated: 2022-11-15
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - Access to your clusters via Prism Central
 - You need to have 3 Nutanix clusters within the OVHcloud infrastructure with **Pack Advanced** licences, if you have a package offer on both clusters in the P.R.A. These 3 clusters will need to be at remote sites for maximum security.
-- You must have less than 5 ms of latency between the two replicated clusters.
+- You must have less than 5 ms of latency between the two replicated clusters. Please note that latency is not covered by SLAs.
 
 ## Introduction
 
@@ -1094,6 +1094,6 @@ The list of events appears, click `Close`{.action} to close.
 
 [Documentation Nutanix AHV Metro - Witness Option](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v2022_6:ecd-ecdr-witness-syncrep-pc-c.html)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

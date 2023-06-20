@@ -4,14 +4,16 @@ slug: activacion_y_gestion_de_un_sharepoint_ovh
 excerpt: 'Cómo contratar y configurar una plataforma SharePoint'
 section: SharePoint
 order: 01
-updated: 2020-08-11
+updated: 2023-06-19
 ---
 
 **Última actualización: 15/4/2020**
 
 ## Objetivo
 
-Los planes SharePoint permiten disfrutar de un espacio de almacenamiento compartido para el trabajo colaborativo.
+Las ofertas de SharePoint te permiten beneficiarte de un espacio de almacenamiento de 1 TB compartido con las demás cuentas de tu plataforma Sharepoint, para tu trabajo colaborativo.
+
+También tiene 100 GB de espacio de almacenamiento personal para cada cuenta en su plataforma de Sharepoint.
 
 **Esta guía explica cómo contratar y configurar una plataforma SharePoint.**
 

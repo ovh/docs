@@ -72,6 +72,8 @@ Clicca su `Connetti`{.action}. Una volta effettuato l'accesso, visualizzerai i d
 
 [Documentazione di Cyberduck](https://trac.cyberduck.io/wiki/help/en){.external}
 
-[Come utilizzare l'API Swift](https://docs.ovh.com/it/public-cloud/come_utilizzare_lapi_swift//)
+[Come utilizzare l'API Swift](https://docs.ovh.com/it/public-cloud/come_utilizzare_lapi_swift/)
+
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

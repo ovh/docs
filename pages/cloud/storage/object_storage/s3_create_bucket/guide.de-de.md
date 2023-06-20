@@ -1,5 +1,5 @@
 ---
-title: Object Storage - Erstellen eines Eimers (EN)
+title: Object Storage - Bucket erstellen (EN)
 slug: s3/create-bucket
 section: General guides to start
 order: 040
@@ -81,5 +81,7 @@ Click on the name of your bucket to view its details and content:
 ![Bucket details](images/highperf-create-container-20220928091433895.png)
 
 ## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

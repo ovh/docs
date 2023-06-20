@@ -28,7 +28,7 @@ updated: 2022-05-05
 Before reading this documentation, make sure you have read the following page.
 It describes the test environment setup and the OVHcloud API connection process, and also helps understanding requests signature.
 
-- [First Steps with the OVHcloud APIs](../../api/first-steps-with-ovh-api/)
+- [First Steps with the OVHcloud APIs](/pages/account/api/first-steps)
 
 ## Available SDKs
 

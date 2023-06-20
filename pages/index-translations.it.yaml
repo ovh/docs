@@ -167,6 +167,8 @@ public-cloud-compute-instance-management-horizon: Gestione via Horizon
 public-cloud-compute-instance-management-openstack: Gestione via API OpenStack
 public-cloud-compute-block-storage: Block Storage
 public-cloud-compute-tutorials: Tutorials
+public-cloud-integrations: Integrations
+public-cloud-integrations-prefect: Prefect
 public-cloud-network: Public Cloud Network Services
 public-cloud-network-concepts: Concetti
 public-cloud-network-getting-started: Per iniziare
@@ -209,7 +211,6 @@ web-cloud-domains-dns-security: Sicurezza
 web-cloud-domains-domain-names: Domini
 web-cloud-domains-domain-names-general-guides: Guide generali
 web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Modifica del proprietario di un dominio (trade)
-web-cloud-domains-domain-names-security: Sicurezza
 web-cloud-domains-domain-names-transferring-between-registrars: Trasferimento tra conservatori del registro
 web-cloud-domains-domain-names-troubleshooting: Diagnostica
 web-cloud-domains-domain-names-tutorials: Tutorial
@@ -337,7 +338,7 @@ network-load-balancer-setting-up: Avvio
 network-load-balancer-use-cases: Modalità di utilizzo
 network-load-balancer-viewing-statuses: Visualizzazione degli stati
 network-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastructure
-infrastructure-as-code-api: API
-infrastructure-as-code-api-apiv6: APIv6
-infrastructure-as-code-api-getting-started: Per iniziare
-infrastructure-as-code-terraform: Terraform
+manage-operate-api: API
+manage-operate-api-apiv6: APIv6
+manage-operate-api-getting-started: Per iniziare
+manage-operate-terraform: Terraform

@@ -55,7 +55,7 @@ Per maggiori informazioni sulle password, consulta la guida [Modificare la passw
 Se non l'hai ancora fatto, salva la password in un [gestore di password](https://docs.ovh.com/it/customer/gestire-la-password/#utilizza-un-software-per-la-gestione-di-password).
 
 > [!primary]
-> I software **Keepass** e **Bitwarden** sono gestioni di password gratuite e senza diritti.
+> I software **KeePass** e **Bitwarden** sono gestioni di password gratuite e senza diritti.
 >
 
 #### Aggiungi un indirizzo email di recupero <a name="backup-email"></a>

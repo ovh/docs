@@ -25,7 +25,7 @@ Podczas zmiany oferty serwera VPS może okazać się konieczna zmiana rozmiaru p
 ## Wymagania początkowe
 
 - Dostęp administratora do serwera VPS (Windows)
-- Ponowne uruchomienie serwera w [Trybie Rescue](https://docs.ovh.com/pl/vps/rescue/)(Linux)
+- Ponowne uruchomienie serwera w [Trybie Rescue](https://docs.ovh.com/pl/vps/rescue/) (Linux)
 
 ## W praktyce
 

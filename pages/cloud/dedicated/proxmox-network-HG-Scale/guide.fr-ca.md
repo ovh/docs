@@ -4,10 +4,10 @@ slug: proxmox-network-hg-scale
 excerpt: 'Découvrez comment configurer le réseau sur Proxmox VE sur les gammes High Grade & SCALE.'
 section: 'Utilisation avancée'
 order: 5
-updated: 2023-01-09
+updated: 2023-05-11
 ---
 
-**Dernière mise à jour le 09/01/2023**
+**Dernière mise à jour le 11/05/2023**
 
 > [!primary]
 >
@@ -78,8 +78,9 @@ vi /etc/network/interfaces
 auto lo
 iface lo inet loopback
   # Activation de l'ip_forward et du proxy_arp
-    up echo "1" > /proc/sys/net/ipv4/ip_forward
-  	up echo "1" > /proc/sys/net/ipv4/conf/all/proxy_arp
+  up echo "1" > /proc/sys/net/ipv4/ip_forward
+  # Activation du proxy_arp pour le bond public uniquement
+  up echo "1" > /proc/sys/net/ipv4/conf/bond0/proxy_arp
 
 # interface publique 1
 auto ens33f0
@@ -112,7 +113,7 @@ iface bond0 inet static
 	bond-downdelay 200
 	bond-updelay 200
 	bond-lacp-rate 1
-	bond-xmit-hash-policy layer2+3
+	bond-xmit-hash-policy layer3+4
 	# Ici il faut renseigner l'adresse MAC d'une des deux interface publiques
 	hwaddress AB:CD:EF:12:34:56
     
@@ -125,7 +126,7 @@ iface bond1 inet static
 	bond-downdelay 200
 	bond-updelay 200
 	bond-lacp-rate 1
-	bond-xmit-hash-policy layer2+3
+	bond-xmit-hash-policy layer3+4
 	# Ici il faut renseigner l'adresse MAC d'une des deux interface privées
 	hwaddress GH:IJ:KL:12:34:56
 
@@ -275,26 +276,25 @@ iface ens33f1 inet manual
 # interface privée 1
 auto ens35f0
 iface ens35f0 inet manual
-	bond-master bond1
 
 # interface privée 2
 auto ens35f1
 iface ens35f1 inet manual
-	bond-master bond1
 
 auto bond0
-iface bond0 inet static
+iface bond0 inet dhcp
 	bond-slaves ens33f0 ens33f1
-    bond-miimon 100
+        bond-miimon 100
 	bond-mode 802.3ad
-
+        post-up echo 1 > /proc/sys/net/ipv4/conf/bond0/proxy_arp
+        post-up echo 1 > /proc/sys/net/ipv4/ip_forward
 
 auto bond1
 # Agrégat LACP sur les interfaces privées
 # Pas d'IP dessus
 iface bond1 inet manual
 	bond-slaves ens35f0 ens35f1
-    bond-miimon 100
+        bond-miimon 100
 	bond-mode 802.3ad
 
 
@@ -307,8 +307,6 @@ iface vmbr1 inet manual
 	bridge-ports bond1
 	bridge-stp off
 	bridge-fd 0
-
-post-up echo 1 > /proc/sys/net/ipv4/ip_forward
 
 ```
 

@@ -64,7 +64,7 @@ $ ssh-keygen -t ecdsa -a 256
 
 El comando le pedirá que guarde la clave que acaba de crear en un archivo estándar:
 
-```bash
+```console
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
@@ -73,7 +73,7 @@ Puede aceptar el archivo por defecto haciendo clic en «↩». A continuación, 
 
 Las claves SSH deben almacenarse en la carpeta «.ssh». Se añadirá la extensión «.pub» al nombre del archivo («filename») de la clave pública.
 
-```ssh
+```console
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:
@@ -331,7 +331,7 @@ Si lo necesita, utilice el cuadro de búsqueda de Windows y abra la aplicación 
 
 ![windows remote](images/windows-connect-03.png){.thumbnail}
 
-Indique la dirección IPv4 de su instancia y el usuario administrador y, a continuación, introduzca su frase de contraseña. Al tratarse de un certificado desconocido, es probable que aparezca un mensaje de aviso pidiéndole que confirme la conexión. Confirme que quiere conectarse a la instancia.
+Indique la dirección IPv4 de su instancia y el usuario "Administrator" y, a continuación, introduzca su frase de contraseña. Al tratarse de un certificado desconocido, es probable que aparezca un mensaje de aviso pidiéndole que confirme la conexión. Confirme que quiere conectarse a la instancia.
 
 > [!primary]
 >

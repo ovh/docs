@@ -83,7 +83,7 @@ Zapoznaj się z przewodnikiem [utworzenie konta E-mail MX Plan](https://docs.ovh
 
 [Tworzenie konta e-mail w ramach usługi MX Plan](https://docs.ovh.com/pl/emails/przewodnik_na_temat_zakladania_adresu_e-mail/){.external}
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z [naszymi ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 

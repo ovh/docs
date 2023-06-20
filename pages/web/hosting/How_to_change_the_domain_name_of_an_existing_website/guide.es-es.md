@@ -26,7 +26,7 @@ Este tutorial explica los pasos que debe seguir para cambiar el dominio de su si
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
+> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
 >
 
 ## Requisitos
@@ -40,7 +40,7 @@ Este tutorial explica los pasos que debe seguir para cambiar el dominio de su si
 > [!warning]
 >
 > El cambio del dominio para acceder a su sitio puede tener consecuencias en su posicionamiento. 
-> Esté atento a las operaciones que vaya a realizar o contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) en el posicionamiento, si es necesario.
+> Esté atento a las operaciones que vaya a realizar o contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) en el posicionamiento, si es necesario.
 >
 
 Para cambiar el dominio de acceso al sitio web, deberá realizar diversas acciones en un orden adecuado.
@@ -93,7 +93,7 @@ La mayoría de los sitios web utilizan bases de datos para funcionar. El árbol 
 
 > [!warning]
 >
-> Atención, las operaciones descritas en el paso 2 son extremadamente sensibles y pueden tener consecuencias graves para su sitio web si no se efectúan con precaución. Si tiene alguna duda, no intente nada y contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/).
+> Atención, las operaciones descritas en el paso 2 son extremadamente sensibles y pueden tener consecuencias graves para su sitio web si no se efectúan con precaución. Si tiene alguna duda, no intente nada y contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/).
 >
 > Antes de realizar cualquier acción, le recomendamos que obtenga una [copia de seguridad de su espacio de almacenamiento FTP](https://docs.ovh.com/es/hosting/restaurar-espacio-almacenamiento-alojamiento-web/) y una [copia de seguridad de su base de datos](https://docs.ovh.com/es/hosting/web_hosting_exportacion_de_una_base_de_datos/). Para restaurar el sitio web en caso de manipulación incorrecta.
 >
@@ -153,7 +153,7 @@ Una vez que el antiguo dominio haya sido eliminado de la pestaña multisitio, y 
 
 [Redirigir un dominio](https://docs.ovh.com/es/domains/redireccion-dominio/)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 

@@ -181,7 +181,7 @@ kubectl get svc -n openfaas gateway-external -o wide
 > gateway-external   LoadBalancer   10.3.xxx.yyy  PENDING                           8080:30012/TCP   10s   
 > </code></pre>
 >
->The problem come from the the `LoadBalancer` creation, that is asynchronous, and the provisioning of the load balancer can take several minutes.
+>The problem come from the `LoadBalancer` creation, that is asynchronous, and the provisioning of the load balancer can take several minutes.
 > Please try again in a few minutes, and you will normally see the newly assigned URL.
 
 
@@ -402,3 +402,9 @@ In the UI Portal you will find the list of the deployed functions, and for each 
 So now you have a working OpenFaaS platform on your OVHcloud Managed Kubernetes cluster.
 
 To learn more about OpenFaaS, and how you can get a maximum profit from it, please refer to the [official OpenFaaS documentation](https://docs.openfaas.com/){.external}. You can also follow the [OpenFaaS workshops](https://github.com/openfaas/workshop){.external} to learn in a more practical way.  
+
+## Go further
+
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our [community of users](https://community.ovh.com/en/).

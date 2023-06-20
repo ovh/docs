@@ -4,14 +4,14 @@ slug: ssl-ev
 excerpt: "Come ordinare e installare un certificato SSL EV sul tuo hosting Web OVHcloud"
 section: SSL
 order: 03
-updated: 2022-12-13
+updated: 2023-06-08
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
-**Ultimo aggiornamento: 13/12/2022**
+**Ultimo aggiornamento: 08/06/2023**
   
 ## Obiettivo
 
@@ -59,7 +59,7 @@ Per verificare se hai diritto alla sottoscrizione di un certificato SSL EV, clic
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/). OVHcloud non sarà infatti in grado di fornirti assistenza **per tutte le fasi di verifica direttamente realizzata con l'autorità di certificazione Sectigo**. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/). OVHcloud non sarà infatti in grado di fornirti assistenza **per tutte le fasi di verifica direttamente realizzata con l'autorità di certificazione Sectigo**. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) di questa guida.
 >
 
 ### Step 1: ordina il certificato SSL EV
@@ -138,6 +138,16 @@ Verifica le tue informazioni e conferma la tua richiesta seguendo le indicazioni
 
 Per assicurarti che gli scambi via email con Sectigo avvengano correttamente, verifica anche la validità dell'indirizzo email inserito nel form al momento dell'ordine del certificato SSL EV e l'indirizzo email di contatto associato al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
+> [!primary]
+>
+> Allo stesso tempo e per certificare la proprietà del tuo dominio presso Sectigo, viene automaticamente creato un file in formato *.txt* nello spazio FTP del tuo hosting web. e verrà rimosso quando non sarà più necessario a Sectigo.
+>
+> Ti ricordiamo che alcune restrizioni applicate dalla tua parte (ad esempio in un file.htaccess) potrebbero impedire questa verifica.
+> Se i diritti di accesso FTP "CHMOD" sono anch'essi limitati o insufficienti, la verifica può anche essere bloccata.
+>
+> Ti consigliamo inoltre di **non** attivare o lasciare attivo il [firewall applicativo](/pages/web/hosting/multisites_activating_application_firewall), disponibile con i nostri hosting Web, per tutta la durata dell'installazione del tuo certificato SSL EV.
+>
+
 #### 2.2 - Verifiche effettuate dall'Autorità di Certificazione Sectigo
 
 Sectigo verificherà l'esistenza della tua organizzazione ed effettuerà la registrazione presso i registri ufficiali.
@@ -174,7 +184,7 @@ A questo punto non ti resterà che [inserire il tuo sito in HTTPS](https://docs.
 
 [Attiva il tuo sito in HTTPS](https://docs.ovh.com/it/hosting/attivare-https-su-sito-internet-tramite-certificato-ssl/)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 

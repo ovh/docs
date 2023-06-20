@@ -77,7 +77,7 @@ Aby uzyskać więcej informacji na temat tej funkcji, zapoznaj się z naszym [pr
 
 ### Logowanie do webmaila nie powiodło się. <a name="password"></a>
 
-Może to być spowodowane wpisaniem nieprawidłowego hasła do konta. Sprawdź najpierw, czy hasło jest poprawne. Zaloguj się do interfejsu [Webmail](../exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/), następnie zrestartuj diagnostykę.
+Może to być spowodowane wpisaniem nieprawidłowego hasła do konta. Sprawdź najpierw, czy hasło jest poprawne. Zaloguj się do interfejsu [Webmail](/pages/web/emails/email_owa), następnie zrestartuj diagnostykę.
 
 W razie potrzeby możesz zmienić hasło do wybranego konta w zakładce `Konta e-mail`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Jeśli problem się powtórzy, utwórz zgłoszenie.
 

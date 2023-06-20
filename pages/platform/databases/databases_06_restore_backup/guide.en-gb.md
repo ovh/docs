@@ -4,10 +4,10 @@ slug: restore-backup
 excerpt: Find out how to restore a backup
 section: General guides
 order: 060
-updated: 2023-03-27
+updated: 2023-05-11
 ---
 
-**Last updated March 27th, 2023**
+**Last updated May 11th, 2023**
 
 ## Objective
 
@@ -52,7 +52,7 @@ Click on the `...`{.action} button corresponding to the chosen backup. Then clic
 > [!warning]
 > The MongoDB service has the option to restore a backup in place, meaning restoring the backup on the same service. This option will rollback ALL data to the state it was in when the backup was done. This can induce data loss.
 
-![Backup tab](images/backup-tab-20230331.png){.thumbnail}
+![Backup tab](images/backup-tab-20230511.png){.thumbnail}
 
 ### Step 4: Configure the target service
 
@@ -133,5 +133,7 @@ This new service is now completly independent from the one you forked the backup
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

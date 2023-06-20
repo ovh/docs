@@ -15,7 +15,7 @@ routes:
 
 The following concept allows you to build an architecture with a SAP HANA database up to 1.5 TB, and takes advantage of all VMware on OVHcloud features (templates, Zerto, NSX, DRS, Fault Tolerance, High Availability) for your SAP Application Servers in a single OVHcloud location or multiple OVHcloud locations.
 
-![schema](images/ConceptH.png){.thumbnail}
+![schema](images/concept-hybrid.png){.thumbnail}
 
 | Objective | Description |
 | --- | --- |
@@ -144,5 +144,7 @@ To guarantee the connection continuity with the SAP Support, we recommend config
 - [Setting up Zerto Virtual Replication between two OVHcloud datacenters](https://docs.ovh.com/es/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/)
 - [Setting up Veeam Backup & Replication](https://docs.ovh.com/es/storage/backup/veeam/veeam-backup-replication/)
 - [Installing SAProuter](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

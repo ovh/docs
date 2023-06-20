@@ -64,10 +64,10 @@ Un message alternatif pour les expéditeurs externes peut être saisi dans la de
 
 ## Aller plus loin
 
-[ Consulter son compte Exchange depuis l’interface OWA](../exchange-2016-guide-utilisation-outlook-web-app/)
+[ Consulter son compte Exchange depuis l’interface OWA](/pages/web/emails/email_owa)
 
 [Déléguer des droits sur un compte Exchange](../exchange-donner-les-droits-full-access-sur-un-compte/)
 
-[Partager des calendriers via l’interface OWA](../exchange-2016-partager-un-calendrier-via-le-webmail-owa/)
+[Partager des calendriers via l’interface OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

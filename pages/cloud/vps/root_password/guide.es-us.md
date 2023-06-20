@@ -15,7 +15,7 @@ updated: 2021-04-20
 
 Si necesita cambiar la contraseña root en su sistema operativo Linux, Existen dos posibles escenarios:
 
-- Todavía puede conectarse por SSH
+- Todavía puede conectarse por SSH.
 - No puede conectarse por SSH porque ha perdido la contraseña.
 
 **Esta guía explica cómo cambiar la contraseña de administrador en función de estas dos situaciones.**
@@ -42,15 +42,16 @@ Si necesita cambiar la contraseña root en su sistema operativo Linux, Existen d
 
 Conéctese a su VPS por SSH. Cambie al usuario root si fuera necesario:
 
-```sh
-~$ sudo su -
-~#
+```bash
+sudo su -
+#
 ```
 
 Cambie la contraseña del usuario actual:
 
-```sh
-~# passwd
+```bash
+passwd
+
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -130,8 +131,9 @@ Puede realizar una comprobación introduciendo el comando `ls -l`, que muestra e
 
 En el último paso, cambie la contraseña utilizando el comando `passwd`.
 
-```sh
-~# passwd
+```bash
+passwd
+
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -141,8 +143,8 @@ Si su VPS es de última generación (su nombre es: *vps-XXXXXXX.vps.ovh.net*), h
 
 Introduzca el nombre de usuario que utilice para conectarse después de `passwd`:
 
-```sh
-~# passwd <username>
+```bash
+~# passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -192,7 +194,7 @@ Guarde el archivo y salga del editor.
 ~$ systemctl restart sshd
 ```
 
-Esto debería ser suficiente para aplicar los cambios. También puede reiniciar el VPS (```~$ reboot```).
+Esto debería ser suficiente para aplicar los cambios. También puede reiniciar el VPS (`~$ sudo reboot`).
 
 ### Disfuncionamiento
 

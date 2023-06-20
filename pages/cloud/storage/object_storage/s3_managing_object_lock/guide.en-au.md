@@ -73,7 +73,7 @@ See our [Getting started with S3 Object Storage](https://docs.ovh.com/au/en/stor
 | `s3:PutBucketObjectLockConfiguration` | Allows users to place an Object Lock configuration on the specified bucket  |
 | `s3:BypassGovernanceRetention` | Allows users to bypass the Governance mode |
 
-*Read this [guide](https://docs.ovh.com/au/en/storage/s3/identity-and-access-management/) to learn more about IAM.*
+*Read this [guide](/pages/cloud/storage/object_storage/s3_identity_and_access_management) to learn more about IAM.*
 
 ### Object Lock configuration
 
@@ -210,5 +210,7 @@ The result should look like this:
 ```
 
 ## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>

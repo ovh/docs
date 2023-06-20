@@ -27,7 +27,7 @@ Um VPS (Virtual Private Server) é um servidor dedicado virtual. Ao contrário d
 
 - Ter contratado um [VPS OVHcloud](https://www.ovhcloud.com/pt/vps/){.external}.
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
-- Dispor dos dados de acesso enviados por e-mail após a instalação
+- Dispor dos dados de acesso enviados por e-mail após a instalação.
 
 ## Instruções
 

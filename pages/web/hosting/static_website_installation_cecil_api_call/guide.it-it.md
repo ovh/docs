@@ -23,7 +23,7 @@ Questa guida ti mostra come utilizzare il generatore del sito [Cecil](https://ce
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 > 
-> Se hai difficoltà a seguire gli step di questo tutorial, ti consigliamo di rivolgerti a un [professionista specializzato](https://partner.ovhcloud.com/it/). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
+> Se hai difficoltà a seguire gli step di questo tutorial, ti consigliamo di rivolgerti a un [professionista specializzato](https://partner.ovhcloud.com/it/directory/). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
 >
 
 ## Prerequisiti
@@ -257,7 +257,7 @@ Questa guida ti mostra un esempio di integrazione di dati dinamici recuperati da
     - una lista di [API pubbliche](https://github.com/public-api-lists/public-api-lists){.external}
 - I [comandi Cecil](https://cecil.app/documentation/commands/){.external}.
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](https://www.ovhcloud.com/it/support-levels/).
 

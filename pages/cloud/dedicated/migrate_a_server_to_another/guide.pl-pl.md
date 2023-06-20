@@ -98,4 +98,6 @@ Więcej informacji znajdziesz w naszej dokumentacji dotyczącej [domeny i DNS](h
 
 Jeśli chcesz uzyskać pomoc w migracji serwera, skontaktuj się z [nasza sieć partnerów](https://partner.ovhcloud.com/pl/directory/).
 
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+
 Dołącz do społeczności naszych użytkowników na stronie: <https://community.ovh.com/en/>.

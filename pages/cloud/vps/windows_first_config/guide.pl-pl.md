@@ -23,7 +23,7 @@ Aktywacja logów startowych (*boot log*) Windows może być przydatna przy diagn
 ## Wymagania początkowe
 
 - Dystrybucja Windows zainstalowana na [serwerze VPS](https://www.ovhcloud.com/pl/vps/).
-- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 

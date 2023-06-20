@@ -289,3 +289,5 @@ ovhai app run <shared-registry-address>/yolov7-streamlit-asl-recognition:latest 
 
 - You can imagine deploying an app using YOLO models with another Python framework: **Flask**. Refer to this [tutorial](https://docs.ovh.com/ie/en/publiccloud/ai/deploy/web-service-yolov5/).
 - Feel free to use **Streamlit** for other AI tasks! Deploy a Speech-to-Text app [here](https://docs.ovh.com/ie/en/publiccloud/ai/deploy/tuto-streamlit-speech-to-text-app/).
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.

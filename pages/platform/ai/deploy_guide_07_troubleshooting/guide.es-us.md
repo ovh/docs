@@ -62,14 +62,14 @@ Main items to troubleshoot:
 - Your Docker image is in a private registry and you did not authorize OVHcloud to access it.
 - You have reached your quotas in terms of CPUs or GPUs. You can check them via the OVHcloud Control Panel (Project Management / Quotas) or via the `ovhai CLI` command `ovhai me`.
 
-If you are using `ovhai CLI`, you can get more more details about your command with the `ovhai debug` command, and `ovhai app logs <app_ID>` to download logs history.
+If you are using `ovhai CLI`, you can get more details about your command with the `ovhai debug` command, and `ovhai app logs <app_ID>` to download logs history.
 
 ### My deployment is in error
 
 While a deployment in `FAILED` state is due to a problem on the image, repository, etc., an app in `ERROR` state can occur when AI Deploy in encountering an issue.
 
 Try redeploying your app, and modify the targeted datacenter for example. 
-As in the previous answer, when using our CLI you can get more more details about your command with the `ovhai debug` command, and `ovhai app logs <app_ID>` to download logs history.
+As in the previous answer, when using our CLI you can get more details about your command with the `ovhai debug` command, and `ovhai app logs <app_ID>` to download logs history.
 
 If the issue persists, please contact our support teams.
 
@@ -170,3 +170,5 @@ So far, only a "pay per minute" model is available. We also share the ambition f
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.

@@ -152,7 +152,7 @@ Cree una copia de seguridad del archivo de configuración:
 ~$ cp /etc/default/grub /root/grub.backup
 ```
 
-Para acceder a los logs de arranque con la consola KVM, asegúrese de que dispone de los siguientes valores en el archivo `/etc/default/grub` :
+Para acceder a los logs de arranque con la consola KVM, asegúrese de que dispone de los siguientes valores en el archivo `/etc/default/grub`:
 
 ```sh
 GRUB_TERMINAL_OUTPUT="console"

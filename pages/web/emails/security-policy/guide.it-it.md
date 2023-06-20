@@ -53,7 +53,7 @@ Prosegui nella lettura di questa guida consultando la sezione corrispondente all
 
 Questa azione permette di definire se gli account di posta elettronica devono essere bloccati dopo un certo numero di tentativi di connessione non andati a buon fine.
 
-Per farlo, completa le informazioni indicate nella seguente tabella:  
+A tal fine, compilare le informazioni riportate di seguito:
 
 - **Limite di blocco**: Imposta il numero di tentativi di connessione non riusciti tollerati prima di bloccare l’account. Se il valore inserito è “0”, non viene applicato nessun limite di blocco.
 - **Termine per la reinizializzazione**: Questo campo compare solo se è stato definito un limite di blocco. Indica il tempo necessario in minuti affinché il contatore dei tentativi di connessione non riusciti si rimetta a zero.
@@ -65,7 +65,7 @@ Una volta completate le informazioni, clicca su `Seguente`{.action} > `Conferma`
 
 Questa azione stabilire i requisiti di complessità e le regole relative alla modifica della password.
 
-Per farlo, completa le informazioni indicate nella seguente tabella:  
+A tal fine, compilare le informazioni riportate di seguito:
 
 - **Requisiti di complessità**: Permette di impostare le regole relative alla complessità delle password:<br> - non deve contenere interamente o in parte il nome dell’account utente<br> - deve contenere almeno 6 caratteri<br> - deve contenere lettere maiuscole, minuscole, caratteri speciali (come “!” o “$”) e numeri.
 - **Impedisci la modifica della password**: Consente di definire la durata di vita minima delle password associate agli account di posta elettronica: gli utenti dovranno attendere un certo numero di giorni prima di poter modificare la password impostata.
@@ -79,7 +79,7 @@ Una volta completate le informazioni, clicca su `Seguente`{.action} > `Conferma`
 
 Questa azione permette di indicare se i server OVHcloud devono verificare che i messaggi ricevuti provengano da una sorgente legittima (verifiche DKIM e/o SPF).
 
-Per farlo, seleziona le caselle interessate nella tabella seguente:
+A tal fine, spuntare le caselle appropriate:
 
 - **Attiva la verifica della firma DKIM**: Indica se i server OVHcloud devono verificare la firma DKIM dei messaggi ricevuti sugli account Exchange. Questa azione garantisce l’autenticità del dominio del mittente e l’integrità del messaggio. Consente inoltre di identificare invii non legittimi, che verranno contrassegnati come Spam.
 - **Attiva la verifica della protezione SPF**: Indica se i server OVHcloud devono verificare che la sorgente dei messaggi ricevuti sia presente nel record SPF del dominio mittente. Questa verifica consente di identificare invii non legittimi, che verranno contrassegnati come Spam.
@@ -90,7 +90,7 @@ Una volta effettuata la scelta, clicca su `Salva le modifiche`{.action} per conf
 
 Questa azione permette di indicare se assegnare ai messaggi indesiderati un tag che consenta di identificarli o spostarli automaticamente nel cestino.
 
-Per farlo, seleziona le caselle interessate nella tabella seguente:
+A tal fine, spuntare le caselle appropriate:
 
 - **Identifica i messaggi indesiderati**: Indica se i server OVHcloud devono aggiungere un tag per identificare la posta indesiderata come Spam.
 - **Sposta la posta indesiderata nel cestino**: Indica se i server OVHcloud devono spostare automaticamente la posta indesiderata nel cestino.

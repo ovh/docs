@@ -6,10 +6,10 @@ section: General information
 order: 025
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/s3/limitations/'
-updated: 2022-03-31
+updated: 2023-06-01
 ---
 
-**Last updated 1st March 2023**
+**Last updated 1st June 2023**
 
 ## Objective
 
@@ -17,7 +17,8 @@ This page provides an overview of the technical limitations of the S3 Object Sto
 
 ### Maximum number of buckets per project
 
-100
+- 100 (default)
+- 1000 (requires a manual intervention, please contact the support teams)
 
 ### Maximum number of objects in a bucket
 
@@ -33,9 +34,16 @@ Unlimited
 
 ### Maximum size per object / mpu / part
 
-- Maximum 5 GB per object
+#### Via a single PUT
+
+Maximum 5 GB per object (for an object which size is above 5GB, use a multi-part upload).
+
+#### Via a multi-part upload (MPU)
+
+- The size for a single part must be between 5MB (minimum) and 5GB (maximum)
 - 10000 parts maximum in a mpu
-- 5MB is the minimum size for a part
+
+The theoretical maximum size of a single large object uploaded via MPU is thus 48TB.
 
 ### Maximum number of user accounts per project
 
@@ -51,5 +59,7 @@ Unlimited
 - Must not look like an IP address (192.168.1.1).
 
 ## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

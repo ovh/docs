@@ -4,10 +4,10 @@ slug: notebooks/yolov7-sign-language
 excerpt: How to train the YOLOv7 model on a custom dataset with AI Notebooks
 section: AI Notebooks - Tutorials
 order: 11
-updated: 2023-04-03
+updated: 2023-05-11
 ---
 
-**Last updated 3rd April, 2023.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 
@@ -51,13 +51,13 @@ If you want to run it with the CLI, just follow this [guide](https://docs.ovh.co
 - An object container `asl-volov7-data` dedicated to the dataset:
 
 ```bash
-ovhai data upload <region> asl-volov7-data
+ovhai bucket create <region> asl-volov7-data
 ```
 
 - An object container `asl-volov7-model` to save the model weights (for a future inference for example):
 
 ```bash
-ovhai data upload <region> asl-volov7-model
+ovhai bucket create <region> asl-volov7-model
 ```
 
 > [!warning]
@@ -86,7 +86,7 @@ Once the repository has been cloned, find the YOLOv7 notebook by following this 
 If you want to launch it with the CLI, choose the [volumes](https://docs.ovh.com/us/en/publiccloud/ai/cli/access-object-storage-data/) you want to attach and the number of GPUs (`<nb-gpus>`) to use on your notebook and use the following command:
 
 ```bash
-ovhai notebook run miniconda jupyterlab \
+ovhai notebook run conda jupyterlab \
 	--name <name> \
 	--gpu <nb-gpus> \
 	--volume asl-volov7-data@<region>/:/workspace/data:RW \
@@ -110,6 +110,8 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 
 - Do you want to observe the evolution of your metrics during the training of your model? Click [here](https://docs.ovh.com/us/en/publiccloud/ai/notebooks/tuto-weights-and-biases/)!
 - Do you want to use your YOLOv7 model in an app? [Here it is](https://docs.ovh.com/us/en/publiccloud/ai/deploy/tuto-streamlit-yolov7-sign-language/).
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

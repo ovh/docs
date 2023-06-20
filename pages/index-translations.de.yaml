@@ -167,6 +167,8 @@ public-cloud-compute-instance-management-horizon: Verwaltung über Horizon
 public-cloud-compute-instance-management-openstack: Verwaltung über OpenStack
 public-cloud-compute-block-storage: Block Storage
 public-cloud-compute-tutorials: Tutorials
+public-cloud-integrations: Integrations
+public-cloud-integrations-prefect: Prefect
 public-cloud-network: Public Cloud Network Services
 public-cloud-network-concepts: Konzepte
 public-cloud-network-getting-started: Erste Schritte
@@ -209,7 +211,6 @@ web-cloud-domains-dns-security: Sicherheit
 web-cloud-domains-domain-names: Domainnamen
 web-cloud-domains-domain-names-general-guides: Allgemeine Verwendung
 web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Änderung des Inhabers eines Domainnamens
-web-cloud-domains-domain-names-security: Sicherheit
 web-cloud-domains-domain-names-transferring-between-registrars: Transfer zwischen Registrars
 web-cloud-domains-domain-names-troubleshooting: Diagnose
 web-cloud-domains-domain-names-tutorials: Tutorials
@@ -255,7 +256,7 @@ web-cloud-hosting: Webhosting
 web-cloud-hosting-automating-tasks-cron: Automatisierung von Tasks (cron)
 web-cloud-hosting-cloud-web-configuration: Cloud Web Hosting konfigurieren
 web-cloud-hosting-cms: CMS
-web-cloud-hosting-configuring-web-hosting-plan: Konfiguration des Basic, Pro und Performance Webhostings
+web-cloud-hosting-configuring-web-hosting-plan: Konfiguration von Basic, Pro und Performance Webhostings
 web-cloud-hosting-databases: Datenbanken
 web-cloud-hosting-ftp-and-ssh: FTP und SSH
 web-cloud-hosting-getting-started: Erste Schritte
@@ -264,7 +265,7 @@ web-cloud-hosting-redirection-and-authentication: Weiterleitung und Authentifizi
 web-cloud-hosting-ssl: SSL
 web-cloud-hosting-troubleshooting: Störungsbehebung
 web-cloud-hosting-tutorials: Tutorials
-web-cloud-hosting-tutorials-cloud-web: Tutorials für Cloud Web hostings
+web-cloud-hosting-tutorials-cloud-web: Tutorials für Cloud Web Hostings
 web-cloud-hosting-website-optimisation: Optimierung Ihrer Seite
 web-cloud-ssl-gateway: SSL Gateway
 web-cloud-ssl-gateway-getting-started: Erste Schritte
@@ -336,7 +337,7 @@ network-load-balancer-setting-up: Aktivierung
 network-load-balancer-use-cases: Einsatzmöglichkeiten
 network-load-balancer-viewing-statuses: Status einsehen
 network-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastructure
-infrastructure-as-code-api: API
-infrastructure-as-code-api-getting-started: Erste Schritte
-infrastructure-as-code-api-apiv6: APIv6
-infrastructure-as-code-terraform: Terraform
+manage-operate-api: API
+manage-operate-api-getting-started: Erste Schritte
+manage-operate-api-apiv6: APIv6
+manage-operate-terraform: Terraform

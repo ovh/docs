@@ -221,7 +221,7 @@ Here we will mainly discuss how to write the `app.py` code, the `requirements.tx
 
 ### Write the Dockerfile for the application
 
-Your Dockerfile should start with the the `FROM` instruction indicating the parent image to use. In our case we choose to start from the `python:3.8` image:
+Your Dockerfile should start with the `FROM` instruction indicating the parent image to use. In our case we choose to start from the `python:3.8` image:
 
 ```console
 python:3.8
@@ -376,8 +376,11 @@ If you want your notebook to be accessible without the need to authenticate, spe
 - You can imagine deploying an AI model with an other tool: **Gradio**. Refer to this [tutorial](https://docs.ovh.com/us/es/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/).
 - Another way to create an AI Deploy app is to use **Flask**! [Here it is](https://docs.ovh.com/us/es/publiccloud/ai/deploy/web-service-yolov5/).
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
+

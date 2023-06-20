@@ -144,7 +144,7 @@ De este modo, podrá separar la configuración IPv6 y, en caso de error, restabl
 
 Añada las siguientes líneas al archivo. Sustituya los valores genéricos (es decir, *YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) y la interfaz de red (si el servidor no utiliza **eth0**) por sus valores personalizados.
 
-```
+```console
 auto eth0
 iface eth0 inet static
 mtu 1500
@@ -264,7 +264,7 @@ cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scrip
 
 A continuación, edite el archivo `ifcfg-eth0` añadiendo la configuración IPv6 del servidor. Sustituya los elementos genéricos (es decir, *YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) por sus valores personalizados.
 
-```
+```console
 IPV6INIT=yes
 IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
@@ -280,7 +280,7 @@ IPV6_DEFAULTGW=IPV6_GATEWAY
 
 - Modifique el archivo y añada las siguientes líneas. Sustituya los elementos genéricos (*IPV6_GATEWAY* y **eth0**, si fuera necesario) por sus valores personalizados.
 
-```
+```console
 IPV6_GATEWAY dev eth0
 default via IPV6_GATEWAY
 ```
@@ -367,7 +367,7 @@ Ethernet adapter Ethernet:
 
 Para probar la conexión, utilice el siguiente comando:
 
-```
+```powershell
 ping -6 proof.ovh.net
 ```
 

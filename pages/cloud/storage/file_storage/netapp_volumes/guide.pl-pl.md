@@ -190,4 +190,6 @@ Zamień `serviceName` na ID usługi i `shareId` na ID wolumenu do usunięcia.
 
 [Pierwsze kroki z API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/)
 
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
+
 Dołącz do społeczności naszych użytkowników na <https://community.ovh.com/en/>.

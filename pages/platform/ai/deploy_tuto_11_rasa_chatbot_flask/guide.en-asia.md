@@ -4,10 +4,10 @@ slug: deploy/rasa-chatbot
 excerpt: Understand how simple it is to deploy a chatbot with AI Deploy
 section: AI Deploy - Tutorials
 order: 11
-updated: 2023-04-04
+updated: 2023-05-11
 ---
 
-**Last updated 4th April, 2023.**
+**Last updated 11th May, 2023.**
 
 > [!primary]
 >
@@ -92,7 +92,7 @@ For the chatbot deployment, we will create one object storage bucket. It will co
 To create the volume in GRA (Gravelines data centre) in read-only, go into the folder `ai-training-examples/apps/flask/conversational-rasa-chatbot/back-end/models`. After, you will just have to type:
 
 ```bash
-ovhai data upload GRA <model-output-container> 20221220-094914-yellow-foley.tar.gz
+ovhai bucket object <model-output-container>@GRA 20221220-094914-yellow-foley.tar.gz
 ```
 
 The model `20221220-094914-yellow-foley.tar.gz` will be added in your container `<model-output-container>`. That's it, now you can deploy your chatbot.
@@ -266,3 +266,5 @@ If you want to know more about the Flask framework, please go to this link.
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.

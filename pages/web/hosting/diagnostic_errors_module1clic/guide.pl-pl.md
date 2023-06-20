@@ -110,7 +110,7 @@ W tej sytuacji [zaloguj się przez FTP](../logowanie-przestrzen-dyskowa-ftp-host
 
 > [!primary]
 >
-> W przypadku pytań dotyczących danych do usunięcia, w celu zmniejszenia ilości danych na hostingu, skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).<br>
+> W przypadku pytań dotyczących danych do usunięcia, w celu zmniejszenia ilości danych na hostingu, skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).<br>
 > Nie będziemy w stanie udzielić wsparcia w tym zakresie.
 
 ### "Nie można połączyć się z bazą danych" <a name="delete-module"></a>
@@ -141,7 +141,7 @@ Jeśli nie posiadasz innych baz danych i nie chcesz zamawiać dodatkowej oferty,
 >
 > **Usunięcie elementów z bazy danych może spowodować zablokowanie Twojej strony WWW.**
 >
-> W przypadku dodatkowych pytań skontaktuj się z naszym [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).<br>
+> W przypadku dodatkowych pytań skontaktuj się z naszym [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).<br>
 > Nie będziemy w stanie udzielić wsparcia w tym zakresie.
 >
 
@@ -198,7 +198,7 @@ W przypadku odrzucenia Twojego aktualnego hasła do interfejsu administracyjnego
 
 [Jak zdiagnozować białą stronę?](../hosting_www_jak_sprawdzic_przyczyne_wyswietlania_sie_bialej_strony/)
 
-Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli chcesz wykonać specjalistyczne operacje (pozycjonowanie, rozwój, itp.)
+Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/), jeśli chcesz wykonać specjalistyczne operacje (pozycjonowanie, rozwój, itp.)
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/pl/support-levels/).
 

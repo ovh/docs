@@ -4,10 +4,10 @@ slug: smpp-specifications
 excerpt: 'Découvrez les spécifications techniques du SMPP'
 section: SMPP
 order: 02
-updated: 2023-03-31
+updated: 2023-05-22
 ---
 
-**Dernière mise à jour le 31/03/2023**
+**Dernière mise à jour le 22/05/2023**
 
 ## Objectif
 
@@ -184,7 +184,7 @@ Le `submit_sm` est utilisée par un ESME pour soumettre un SMS au SMSC pour tran
 
 
 Le `submit_sm_resp` est la confirmation de la bonne réception du submit_sm par le SMSC.<br>
-Il contient un `message_id` qui est l'identifiant du message du SMSC permettant de faire le lien avec avec l'accusé de réception (DLR) envoyé plus tard lorsque le mobile a reçu le SMS (sous réserve que la demande d'un DLR est spécifiée dans le `submit_sm`).
+Il contient un `message_id` qui est l'identifiant du message du SMSC permettant de faire le lien avec l'accusé de réception (DLR) envoyé plus tard lorsque le mobile a reçu le SMS (sous réserve que la demande d'un DLR est spécifiée dans le `submit_sm`).
 
 ##### **deliver_sm et deliver_sm_resp**
 
@@ -269,6 +269,7 @@ Notre service essaie d'envoyer les `deliver_sm` au ESME pendant 7 jours maximum.
 |100 | Invalid Destination Numbering Plan |
 |101 | Invalid Content |
 |102 | Invalid GSM7 Coding (e.g. error with packed/unpacked GSM7) |
+|103 | Message too long for the number of allowed segments |
 |254 | Pending |
 |255 | Unknown Error |
 |800 | Undeliverable |

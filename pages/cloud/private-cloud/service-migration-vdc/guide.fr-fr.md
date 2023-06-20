@@ -7,13 +7,13 @@ slug: vdc-migration
 section: Premiers pas
 order: 6
 hidden: true
-updated: 2022-11-18
+updated: 2023-05-04
 ---
 <style>
 .ovh-api-main { background:#fff;}
 </style> 
 
-**Dernière mise à jour le 18/11/2022**
+**Dernière mise à jour le 04/05/2023**
 
 **Ce guide explique comment déplacer des machines virtuelles (VM) d'un virtual DataCenter (vDC) d'origine (DC ou SDDC) vers un nouveau vDC de destination (Essentials ou Premier).**
 
@@ -382,6 +382,7 @@ Pour plus d'informations, consultez le guide OVHcloud sur [comment créer un V(x
 > - Vous pouvez peut activer ce paramètre sur le vRack vDS du vDC de destination.
 > - Cependant, si le « *Promiscuous Mode* » doit être activé sur le portgroup « VM Network » du nouveau vDC, merci d’ouvrir un ticket auprès du support OVHcloud avant la migration, afin de maintenir la connectivité durant la migration.
 >
+
 <a name="inventory"></a>
 #### Etape 4.7 Vérifier l'organisation de votre inventaire (si pertinent)
 
@@ -498,6 +499,7 @@ Vous pouvez migrer un NSX Edge en suivant ces étapes :
 >
 > Si vous avez migré la Edge alors que HA était activé et que vous rencontrez des problèmes de connectivité, il est recommandé de basculer les edge HA et de tester à nouveau. Pour ce faire, accédez à `Configure`{.action}, `Appliance Settings`{.action} et sélectionnez la roue crantée de la edge active, puis sélectionnez `Set Admin State Down`{.action}. Testez à nouveau puis repassez le statut admin à « Up ».
 >
+
 <a name="dlr"></a>
 ##### Etape 4.8.3 NSX Distributed Logical Routing
 
@@ -600,6 +602,7 @@ Voici une liste des aspects à prendre en compte:
 > [!primary]
 > Il est recommandé de tester le chemin de migration avec des VMs à faible impact ou de tester les VMs avant la migration de production.
 >
+
 <a name="finalizemigration"></a>
 ### Etape 6 Finaliser votre migration
 <a name="reconveeam"></a>
@@ -641,6 +644,12 @@ Avant de continuer, vous pouvez vérifier visuellement, dans le plug-in graphiqu
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/disable
+
+> [!warning]
+>
+> Attention, ce dernier appel va supprimer l'option Veeam du vDC. Cela entraînera donc la destruction de tous les backup jobs / points de rétention qui seraient encore présents sur l'ancien vDC.<br>
+> N'hésitez donc pas à utiliser d'abord l'appel API « checkBackupJobs » (mentionné dans l'étape n°3 ci-dessus) à plusieurs reprises afin de vous assurer de disposer des backups sur le nouveau vDC.<br>
+> Si vous avez le moindre doute, contactez le support OVHcloud afin de contrôler les backup jobs.
 >
 
 <a name="reconzerto"></a>
@@ -727,6 +736,7 @@ Une tâche est créée pour chaque appel, vous pouvez suivre l'avancement avec :
 >
 > Attendez la fin complète des tâches avant de poursuivre.
 >
+
 <a name="removeoldhosts"></a>
 #### Etape 6.6 Supprimer les anciens hosts
 
@@ -755,13 +765,14 @@ Une tâche est créée pour chaque appel, vous pouvez suivre l'avancement avec :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{hostId}/task/{taskId}
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/task/{taskId}
 >
 
 > [!warning]
 >
 > Attendez la fin complète des tâches avant de poursuivre.
 >
+
 <a name="removeoldvdc"></a>
 #### Etape 6.7 Supprimer le vDC source
 
@@ -827,5 +838,7 @@ Retrouvez ci-dessous une liste de questions fréquemment posées au sujet de la 
 >> Une session est planifiée et comptabilisée en blocs de 1 heure. Par exemple, une session programmée sur 2 heures et durant 1,5 heure serait facturée sur 2 heures. Une session prévue pour 3 heures mais durant seulement 1,5 heure serait facturée à 2 heures.
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -28,7 +28,7 @@ Esta funcionalidade do Exchange permite que outras pessoas tenham acesso aos seu
 
 ### Passo 1: Selecionar o calendário a partilhar
 
-Aceda à sua conta Exchange através do [webmail OVHcloud](https://www.ovh.pt/mail//). Mude para a interface «Calendário». Para isso, clique no menu de aplicações (canto superior esquerdo) e selecione o ícone `Calendário`{.action}.
+Aceda à sua conta Exchange através do [webmail OVHcloud](https://www.ovh.pt/mail/). Mude para a interface «Calendário». Para isso, clique no menu de aplicações (canto superior esquerdo) e selecione o ícone `Calendário`{.action}.
 
 ![sharecalendar](images/exchange-calendars-step1.png){.thumbnail}
 
@@ -92,11 +92,11 @@ Se clicar num calendário da lista, pode exibi-los ou ocultá-los. Através do c
 
 ## Saiba mais
 
-[Guia de utilização do Outlook Web App](../exchange_2016_guia_de_utilizacao_do_outlook_web_app/)
+[Guia de utilização do Outlook Web App](/pages/web/emails/email_owa)
 
-[Partilhar uma pasta através do webmail OWA](../exchange_2016_partilhar_uma_pasta_atraves_do_webmail_owa/)
+[Partilhar uma pasta através do webmail OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
-[Utilização de grupos de difusão (mailing list)](../exchange_20132016_utilizacao_de_grupos_de_difusao_mailing_list/)
+[Utilização de grupos de difusão (mailing list)](/pages/web/microsoft-collaborative-solutions/feature_groups)
 
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

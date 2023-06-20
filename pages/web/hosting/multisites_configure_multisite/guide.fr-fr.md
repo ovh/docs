@@ -4,10 +4,10 @@ slug: multisites-configurer-un-multisite-sur-mon-hebergement-web
 excerpt: "Découvrez comment héberger différents sites Internet sur votre offre d'hébergement web"
 section: 'Premiers pas'
 order: 03
-updated: 2022-11-04
+updated: 2023-06-07
 ---
 
-**Dernière mise à jour le 22/08/2022**
+**Dernière mise à jour le 07/06/2023**
 
 ## Objectif
 
@@ -139,6 +139,8 @@ Notez les éléments qui s’affichent, puis cliquez sur le bouton `Valider`{.ac
 > [!warning]
 >
 > Vous devez **rapidement** effectuer ces modifications pour que votre domaine soit correctement ajouté. Dans le cas contraire, l'ajout de votre domaine sera annulé.
+>
+> Les entrées DNS de type **A** et **TXT** doivent obligatoirement être placées dans la zone DNS active de votre nom de domaine pour qu'il soit ajouté à votre hébergement web. Seuls les entrées DNS de type **AAAA** sont optionnelles. 
 >
 
 ### Étape 3 : mettre votre site web en ligne <a name="site-online"></a>

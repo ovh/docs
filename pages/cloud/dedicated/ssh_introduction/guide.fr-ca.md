@@ -173,4 +173,6 @@ Veuillez consulter la FAQ officielle et la documentation de PuTTY pour plus d'in
 
 [VPS mode rescue](https://docs.ovh.com/ca/fr/vps/mode-rescue-vps/)
 
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

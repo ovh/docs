@@ -2,46 +2,52 @@
 title: 'Zmiana właściciela domeny'
 excerpt: 'W tym przewodniku znajdziesz różne informacje na temat zmiany właściciela domeny.'
 slug: zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz
-legacy_guide_number: g1350
 section: 'Zmiana właściciela'
-updated: 2021-03-04
+updated: 2023-06-19
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 04-03-2021**
+**Ostatnia aktualizacja z dnia 19-06-2023**
 
 ## Wprowadzenie
 
-Oprócz [zarządzania kontaktami](../../customer/zarzadzanie_kontaktami/), zarejestrowanie domeny wymaga podania informacji dotyczących jej właściciela. Właściciel **domeny** w tym kontekście dotyczy osoby lub firmy posiadającej prawa do tej domeny. **Zmiana właściciela** odnosi się do przeniesienia praw własności z jednej osoby lub firmy na inną, informacje **właściciela** mają moc prawną. Na przykład proces ten jest obowiązkowy, jeśli firma zmienia nazwę.
+Oprócz [zarządzania kontaktami](/pages/account/customer/managing_contacts), zarejestrowanie domeny wymaga podania informacji dotyczących jej właściciela. Właściciel **domeny** w tym kontekście dotyczy osoby lub firmy posiadającej prawa do tej domeny. **Zmiana właściciela** odnosi się do przeniesienia praw własności z jednej osoby lub firmy na inną, informacje **właściciela** mają moc prawną. Na przykład proces ten jest obowiązkowy, jeśli firma zmienia nazwę.
 
 > [!primary]
 >Operacja ta nie przenosi Twojej domeny na inne konto klienta OVHcloud.
 >
->W tym celu należy [zmienić kontakty](../../customer/zarzadzanie_kontaktami/) domeny.
+>W tym celu należy [zmienić kontakty](/pages/account/customer/managing_contacts) domeny.
+>
+> Jeśli potrzebujesz dokonać zmiany właściciela i kontaktu dla tej samej nazwy domeny, nie ma preferencyjnej kolejności. Jednak to kontakt administratora jest w stanie zainicjować te operacje. Te dwie zmiany są zatem wprowadzane w obszarze klienta kontaktu administratora nazwy domeny.
 
 **Dowiedz się, jak zmienić właściciela domeny**
 
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
-- Posiadanie domeny zarejestrowanej w OVHcloud.
-- Posiadanie statusu [kontaktu administracyjnego](../../customer/zarzadzanie_kontaktami/) danej domeny.
+- Posiadanie domeny zarejestrowanej w OVHcloud dla której nie trwa żadna operacja (zmiana właściciela, transfer, utworzenie). Jeśli operacja została ostatnio zakończona w ramach Twojej domeny, przed wykonaniem nowej operacji musi upłynąć co najmniej 60 dni kalendarzowych.
+- Posiadanie statusu [kontaktu administracyjnego](/pages/account/customer/managing_contacts) danej domeny.
 - Zgoda aktualnego właściciela domeny na zmianę właściciela.
 
 ## W praktyce
 
 > [!warning]
 >
-> Poniższe instrukcje opisują najpopularniejszy sposób zmiany właściciela domeny, ważny dla większości domen najwyższego poziomu (TLD). Jednak szczegółowe zasady procesu rejestracji domen TLD są określane wyłącznie przez właściwy organ przydziału, tj. **rejestr**. Rejestratorzy (lub rejestratorzy), tacy jak OVHcloud, muszą przestrzegać tych zasad i nie mają wpływu na decyzje dotyczące rejestracji.
+> Poniższe instrukcje opisują najpopularniejszy sposób zmiany właściciela domeny. Są one ważne dla większości obszarów wyższego poziomu, powszechnie znanych jako **T**op **L**evel **D**omain (**TLD**). 
+>**TLD** oznacza koniec Twojej domeny, np. *.com*, *.net*, *.fr*, itp.
 >
-> Dokładna procedura zmiany właściciela domeny może się zatem różnić, w szczególności w przypadku niektórych TLD kodu kraju (np. ccTLD, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, itp.) oraz kilku specjalnych TLD (.am, .fm, itp.). W przypadku niektórych z nich zmiana właściciela jest uznawana za transakcję płatną. Zmiana właściciela może być również zawieszona z różnych powodów, na przykład z powodu nieopłacenia zamówienia, nadużycia lub zablokowania rejestru.
+> Szczegółowe zasady procesu rejestracji domen **TLD** są określone wyłącznie przez właściwy organ przydziału, tj. **registry**. Rejestrator (lub operator), taki jak OVHcloud, musi przestrzegać tych zasad i nie ma wpływu na decyzje dotyczące rejestracji.
+>
+> Istnieją głównie dwa rodzaje **TLD**: **ccTLD** oraz **gTLD**. **ccTLD** odnosi się do **TLD** dotyczących regionu lub kraju (*.fr*, *.be*, *.uk*, *.de*, *.paris*, itp.). **gTLD** odnosi się do **TLD** plus ogólne (*.net*, *.com*, *.info*, *.org*, itp.).
+>
+> Dokładna procedura zmiany właściciela domeny może się zatem różnić, w szczególności w przypadku niektórych **ccTLD**, takich jak *.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, itp.) oraz w przypadku niektórych **TLD** (*.am*,*,*, fm*, itp.) W przypadku niektórych z nich zmiana właściciela to operacja płatna. Zmiana właściciela może być również zawieszona z różnych powodów, na przykład z powodu nieopłacenia zamówienia, nadużycia lub zablokowania przez registry. 
 >
 > W przypadku wątpliwości zalecamy sprawdzenie następujących zasobów:
 >
-> - strona internetowa odpowiedniego rejestru TLD;
+> - strona internetowa rejestru **TLD**;
 > - Lista [TLD dostępnych na OVHcloud](https://www.ovhcloud.com/pl/domains/tld/);
 > - sekcja `Operacje w trakcie`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), aby sprawdzić aktualizacje statusu domeny.
 >
@@ -100,6 +106,10 @@ W przypadku tej operacji nie musisz potwierdzać modyfikacji za pomocą e-maila.
 
 ## Sprawdź również
 
-[Zarządzanie kontaktami swoich usług](../../customer/zarzadzanie_kontaktami/)
+[Zarządzanie kontaktami swoich usług](/pages/account/customer/managing_contacts)
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

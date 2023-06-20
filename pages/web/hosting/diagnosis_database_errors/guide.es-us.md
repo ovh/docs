@@ -177,13 +177,13 @@ Este mensaje de error significa que la base de datos que está intentando import
 Tener un **"trigger"** en el script de importación de su base de datos no está autorizado en los servidores de alojamiento compartido de OVHcloud. 
 Por otro lado, no está permitida la siguiente petición:
 
-```mysql
+```sql
 CREATE DATABASE IF NOT EXISTS `Database-Name` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
 ```
 
 Sustituya por:
 
-```mysql
+```sql
 USE `Database-Name`;
 ```
 

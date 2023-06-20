@@ -101,4 +101,6 @@ Here it is, you can now use all the power of the Grafana API.
 
 We would love to help answer questions and appreciate any feedback you may have.
 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our databases service!

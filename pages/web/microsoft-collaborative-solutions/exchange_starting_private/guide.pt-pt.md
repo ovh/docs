@@ -94,12 +94,12 @@ Assim que o servidor esteja pronto e disponível, ser-lhe-á enviado um e-mail d
 
 > **\[xx-11111-ovh] O seu serviço Private Exchange 20_xxx_ está pronto!**
 
-Para adicionar o primeiro nome de domínio à sua plataforma e configurar as contas, consulte o nosso guia ["Adicionar um domínio ao serviço Exchange"](../exchange_20132016_a_primeira_configuracao_do_servico/){.external}
+Para adicionar o primeiro nome de domínio à sua plataforma e configurar as contas, consulte o nosso guia ["Adicionar um domínio ao serviço Exchange"](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain){.external}
 
 ## Quer saber mais?
 
 [Editar uma zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}
 
-[Adicionar um nome de domínio ao serviço Exchange ](../exchange_20132016_a_primeira_configuracao_do_servico/){.external}
+[Adicionar um nome de domínio ao serviço Exchange](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain){.external}
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

@@ -71,15 +71,15 @@ sudo iptables [option] CHAIN_rule [-j target]
 
 Diese Liste enthält einige der üblichen Optionen:
 
-- -A -—append: Füge eine Regel zu einer Kette (*Chain*) hinzu (am Ende).
-- -C -—check: Suche nach einer Regel, die den Anforderungen der Kette entspricht.
-- -D —-delete: Die spezifizierten Regeln einer Kette löschen.
-- -F —-flush: Löscht alle Regeln.
-- -I —-insert: Füge eine Regel an einer bestimmten Position hinzu.
-- -L —-list: Zeigt alle Regeln einer Kette an.
-- -N -new-chain: Erstelle eine neue Kette.
-- -v —-verbose Zeigt bei der Verwendung einer Listenoption mehr Informationen an.
-- -X —-delete-chain: Die gegebene Kette löschen.
+- -A --append: Füge eine Regel zu einer Kette (*Chain*) hinzu (am Ende).
+- -C --check: Suche nach einer Regel, die den Anforderungen der Kette entspricht.
+- -D --delete: Die spezifizierten Regeln einer Kette löschen.
+- -F --flush: Löscht alle Regeln.
+- -I --insert: Füge eine Regel an einer bestimmten Position hinzu.
+- -L --list: Zeigt alle Regeln einer Kette an.
+- -N --new-chain: Erstelle eine neue Kette.
+- -v --verbose Zeigt bei der Verwendung einer Listenoption mehr Informationen an.
+- -X --delete-chain: Die gegebene Kette löschen.
 
 ### Schritt 3: Den aktuellen Zustand von iptables überprüfen
 
@@ -125,7 +125,7 @@ sudo iptables -A INPUT -p tcp -—dport 22 -j ACCEPT
 Um HTTPS-Web-Traffic zu erlauben geben Sie folgenden Befehl ein:
 
 ```bash
-sudo iptables -A INPUT -p tcp —-dport 443 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 ```
 
 Die Optionen funktionieren wie folgt:
@@ -161,14 +161,14 @@ Ersetzen Sie die IP_Adresse im Befehl mit der IP-Adresse, die Sie blockieren mö
 Sie können den Traffic aus einem IP-Adressbereich mit folgendem Befehl zurückweisen:
 
 ```bash
-sudo iptables -A INPUT -m iprange —-src-range Start_IP-End_IP -j REJECT
+sudo iptables -A INPUT -m iprange --src-range Start_IP-End_IP -j REJECT
 ```
 
 Die in den Beispielen verwendeten Optionen funktionieren wie folgt:
 
 - -m: Entspricht der angegebenen Option.
 - -iprange: Teilt dem System mit, einen IP-Adressbereich zu erwarten statt einer einzelnen IP-Adresse.
-- —-src-range: Identifiziert den IP-Adressbereich.
+- --src-range: Identifiziert den IP-Adressbereich.
 
 ### Schritt 7: Unerwünschten Traffic ablehnen
 

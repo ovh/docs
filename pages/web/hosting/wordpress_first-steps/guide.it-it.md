@@ -21,7 +21,7 @@ Questa guida ti mostra come creare i tuoi primi contenuti, organizzarli, metterl
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a [fornitore specializzato](https://partner.ovhcloud.com/it/) o [amministratore del CMS WordPress](https://wordpress.com/support/){.external}. OVH non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
+> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a [fornitore specializzato](https://partner.ovhcloud.com/it/directory/) o [amministratore del CMS WordPress](https://wordpress.com/support/){.external}. OVH non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
 >
 
 **Questa guida ti mostra come creare un sito Web con CMS WordPress.**
@@ -194,7 +194,7 @@ I tuoi link saranno costruiti utilizzando lo slug inserito precedentemente duran
     - [Elementor](https://elementor.com/){.external}, un altro editor di temi.
 - Il sito ufficiale [WordPress](https://wordpress.org/){.external}.
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 

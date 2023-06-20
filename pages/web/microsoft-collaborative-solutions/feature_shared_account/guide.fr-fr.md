@@ -99,11 +99,11 @@ Depuis votre logiciel Outlook, vous retrouverez votre compte partagé dans la co
 
 ## Aller plus loin
 
-[Consulter son compte Exchange depuis l’interface OWA](../exchange-2016-guide-utilisation-outlook-web-app/)
+[Consulter son compte Exchange depuis l’interface OWA](/pages/web/emails/email_owa)
 
 [Déléguer des permissions sur un compte Exchange](../exchange-donner-les-droits-full-access-sur-un-compte/)
 
-[Partager un calendrier via le webmail OWA](../exchange-2016-partager-un-calendrier-via-le-webmail-owa/)
+[Partager un calendrier via le webmail OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 [Ajouter un pied de page pour vos comptes Exchange](../exchange-signature-automatique-disclaimer/)
 

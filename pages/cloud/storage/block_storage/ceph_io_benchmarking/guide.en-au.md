@@ -39,7 +39,7 @@ If you can see output similar to above then you can start preparing image for te
 rbd -p rbd create --size 1024 --image-format 2 test-image
 ```
 
-You can can test performance in three different situations:
+You can test performance in three different situations:
 
 - directly use RBD
 - map image to */dev/rbd** device
@@ -118,5 +118,8 @@ To measure Cloud Disk Array performance we are running test on a 32 images, each
 ## Go further
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Storage and Backup services.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
 
 Join our community of users on <https://community.ovh.com/en/>.

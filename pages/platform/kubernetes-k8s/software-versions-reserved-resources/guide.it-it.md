@@ -5,10 +5,10 @@ slug: kubernetes-plugins-software-versions-reserved-resources
 section: Technical resources
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/kubernetes-plugins-software-versions-reserved-resources/'
-updated: 2023-03-24
+updated: 2023-05-09
 ---
 
-**Last updated March 24<sup>th</sup>, 2023.**
+**Last updated May 09<sup>th</sup>, 2023.**
 
 We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) & software versions we use and the resources we reserve on each Node.
 
@@ -16,12 +16,12 @@ We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) &
 
 Currently, we support the following Kubernetes releases:
 
-* `1.20` (deprecated)
 * `1.21` (deprecated)
 * `1.22` (deprecated)
-* `1.23`
+* `1.23` (deprecated)
 * `1.24`
 * `1.25`
+* `1.26`
 
 If you run a Managed Kubernetes Service using an older version we strongly encourage you to use the [version upgrade feature](../upgrading-kubernetes-version/) to receive official support for your cluster.
 
@@ -33,19 +33,19 @@ We will closely follow the Kubernetes releases, and new versions will be regular
 
 The OS and Docker demon version on your nodes will be regularly updated. Current versions are:
 
-* OS: Ubuntu 18.04 LTS
-* Docker: 19.03.15
+* OS: Ubuntu 22.04 LTS
+* Docker: 23.0.1
 
 ## CRI (Container Runtime Interface)
 
-Since `1.20`, we use `containerd` as the default CRI
+We use `containerd` as the default CRI
 
-* `1.20`: 1.5.11 (deprecated)
-* `1.21`: 1.5.11 (deprecated)
-* `1.22`: 1.5.11 (deprecated)
-* `1.23`: 1.6.10
-* `1.24`: 1.6.10
-* `1.25`: 1.6.10
+* `1.21`: 1.6.18 (deprecated)
+* `1.22`: 1.6.18 (deprecated)
+* `1.23`: 1.6.18 (deprecated)
+* `1.24`: 1.6.18
+* `1.25`: 1.6.18
+* `1.26`: 1.6.20
 
 ## CNI (Cluster Network Interface)
 
@@ -53,12 +53,12 @@ The CNI plugin installed is [canal](https://github.com/projectcalico/canal){.ext
 
 The versions installed depends on the Kubernetes version:
 
-* `1.20`: calico v3.10.3, flannel v0.11.0 (deprecated)
-* `1.21`: calico v3.22.5, flannel v0.17.0 (deprecated)
-* `1.22`: calico v3.22.5, flannel v0.17.0 (deprecated)
-* `1.23`: calico v3.22.5, flannel v0.17.0
-* `1.24`: calico v3.23.5, flannel v0.17.0
-* `1.25`: calico v3.24.5, flannel v0.17.0
+* `1.21`: calico v3.23.5, flannel v0.17.0 (deprecated)
+* `1.22`: calico v3.24.5, flannel v0.17.0 (deprecated)
+* `1.23`: calico v3.25.1, flannel v0.17.0 (deprecated)
+* `1.24`: calico v3.25.1, flannel v0.17.0
+* `1.25`: calico v3.25.1, flannel v0.17.0
+* `1.26`: calico v3.25.1, flannel v0.17.0
 
 ## CSI (Container Storage Interface)
 
@@ -66,23 +66,23 @@ The CSI plugin installed is [cinder](https://github.com/kubernetes/cloud-provide
 
 The versions depend on the Kubernetes cluster version:
 
-* `1.20`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0 (deprecated)
 * `1.21`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0 (deprecated)
 * `1.22`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0 (deprecated)
-* `1.23`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0
+* `1.23`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0 (deprecated)
 * `1.24`: csi-plugin v1.21.0, csi-attacher v3.5.0, csi-provisioner v3.2.1, csi-snapshotter v6.0.1, snapshot-controller: v6.0.1, csi-resizer v1.5.0
 * `1.25`: csi-plugin v1.21.0, csi-attacher v3.5.0, csi-provisioner v3.2.1, csi-snapshotter v6.0.1, snapshot-controller: v6.0.1, csi-resizer v1.5.0
+* `1.26`: csi-plugin v1.21.0, csi-attacher v3.5.0, csi-provisioner v3.2.1, csi-snapshotter v6.0.1, snapshot-controller: v6.0.1, csi-resizer v1.5.0
 
 ## Other components
 
 The versions are:
 
-* `1.20`: coredns v1.10.0, metrics-server v0.6.2 (deprecated)
-* `1.21`: coredns v1.10.0, metrics-server v0.6.2 (deprecated)
-* `1.22`: coredns v1.10.0, metrics-server v0.6.2 (deprecated)
-* `1.23`: coredns v1.10.0, metrics-server v0.6.2
-* `1.24`: coredns v1.10.0, metrics-server v0.6.2
-* `1.25`: coredns v1.10.0, metrics-server v0.6.2
+* `1.21`: coredns v1.10.1, metrics-server v0.6.3 (deprecated)
+* `1.22`: coredns v1.10.1, metrics-server v0.6.3 (deprecated)
+* `1.23`: coredns v1.10.1, metrics-server v0.6.3 (deprecated)
+* `1.24`: coredns v1.10.1, metrics-server v0.6.3
+* `1.25`: coredns v1.10.1, metrics-server v0.6.3
+* `1.26`: coredns v1.10.1, metrics-server v0.6.3
 
 ## Enabled policies
 
@@ -129,3 +129,9 @@ This table sums up the reserved resources on b2 flavors:
 | b2-30 | 8 | 190 | 30 | 3 | 200 | 43 |
 | b2-60 | 16 | 230 | 60 | 4,5 | 400 | 66 |
 | b2-120 | 32 | 310 | 120 | 7,5 | 400 | 66 |
+
+## Go further
+
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/it/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our [community of users](https://community.ovh.com/en/).

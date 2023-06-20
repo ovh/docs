@@ -2,18 +2,17 @@
 title: 'Web Cloud Databases EOS and EOL announcements'
 slug: clouddb-eos-eol
 section: 'Technical resources'
-updated: 2023-05-03
+updated: 2023-06-09
 ---
 
-**Last updated 3rd May 2023**
+**Last updated 9th June 2023**
 
 ## Objective
 
-The products covered by those End Of Sale (EOS) and End Of Life (EOL) announcements are the Web Cloud Databases public services, dedicated DBMS instances reachable on the public network. See also the [OVHcloud Managed databases EOL policy](../eol-policy/guide.en-gb.md) for more information.
+The products covered by those End Of Sale (EOS) and End Of Life (EOL) announcements are the Web Cloud Databases public services, dedicated DBMS instances reachable on the public network. See also the [OVHcloud Managed databases EOL policy](/pages/web/clouddb/eol-policy) for more information.
 
 |Version|EOL announcement|End-of-Sale|End-of-Support|
 |---|---|---|---|
-|MariaDB 10.2|2020-09-29|2021-11-21|2022-05-23|
 |MariaDB 10.3|2021-08-18|2022-11-23|2023-05-25|
 |MariaDB 10.4|2022-07-22|2023-12-18|2024-06-18|
 |MariaDB 10.5|To be defined|To be defined|To be defined|
@@ -32,7 +31,7 @@ The products covered by those End Of Sale (EOS) and End Of Life (EOL) announceme
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 

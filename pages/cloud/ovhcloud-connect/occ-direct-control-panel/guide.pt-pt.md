@@ -50,7 +50,7 @@ A message will confirm the vRack association.
 >
 
 > [!primary]
-> For more details on the differences between levels L2 and L3, see our [FAQ](../occdedicated-faq/#how-do-i-choose-between-a-layer-2-or-layer-3-cross-connection-for-the-osi-model).
+> For more details on the differences between levels L2 and L3, see our [FAQ](/pages/cloud/ovhcloud-connect/occdedicated-faq).
 >
 
 #### Configuration 
@@ -189,5 +189,7 @@ To delete a PoP configuration, click the `...`{.action} button on the PoP config
 >
 
 ## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

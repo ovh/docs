@@ -40,7 +40,7 @@ Lorsque vous téléchargez un objet, S3 Object Storage utilise la clé de chiffr
 - Avoir créé un utilisateur et avoir défini les droits d'accès requis sur le bucket
 - Avoir installé et configuré aws-cli
 
-Consultez notre guide « [Débuter avec S3 Object Storage](https://docs.ovh.com/ca/fr/storage/s3/debuter-avec-s3/) » pour plus de détails.
+Consultez notre guide « [Débuter avec S3 Object Storage](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) » pour plus de détails.
 
 ## En pratique
 
@@ -156,5 +156,7 @@ Les URL pré-signées, qui peuvent être utilisées pour des opérations telles 
 >
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.

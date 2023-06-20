@@ -8,8 +8,6 @@ order: 04
 updated: 2021-09-27
 ---
 
-**Last updated 12th August 2020**
-
 ## Objective
 
 With a filter you can configure conditions for your account's incoming emails and set actions based on them.
@@ -21,14 +19,22 @@ For example: you can automatically delete emails tagged as spam by our spam prot
 
 **This guide explains how to create and configure a filter on your email address.**
 
-
 ## Requirements
 
 - an MX Plan email solution or a [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
+> [!warning]
+>
+> The following instructions are only eligible for the legacy MX Plan solution. For our current solution, you can manage filters directly via OWA (**O**utlook **W**eb **A**pplication). You can identify which version you are using with the table below.
+>
 
-## Instructions
+MX Plan legacy version|MX Plan new version|
+|---|---|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Find the solution in the section "Plan".|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Locate the `Server model` in the section "Summary".|
+|Continue reading this guide in the [Instructions](#oldmxplan) section below.|Continue with our guide regarding [Inbox rules in OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan).|
+
+## Instructions <a name="oldmxplan"></a>
 
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action}.
 
@@ -46,15 +52,13 @@ A new window will open which contains the list of filters currently configured f
 
 ![emails](images/img_3241.jpg){.thumbnail}
 
-
 #### Information
 
 - **Filter name:** This is used to differentiate your filters inside the Control Panel.
 - **Priority:** This sets the order in which your filters will run for all emails received on this address. A Priority 1 filter will run before a Priority 5 filter.
 - **Enable filter:** This determines whether the filter will be applied to the inbox (for example, you can temporarily disable a filter without deleting it by unchecking this option).
 
-
-#### Rules
+#### <u>Rules:</u>
 
 In this section you can configure the filter conditions, also known as inbox rules.
 
@@ -83,7 +87,6 @@ Fourth choice (+):
 
 - Example: `If the message subject contains [SPAM]`
 
-
 #### Action
 
 This is where you decide how the filter handles an email if the above conditions are met.
@@ -95,7 +98,6 @@ You can choose between these types of actions:
 - **deletion**: deletes the email from your inbox without further notice.
 - **redirect to a remote address**: redirects the email to whichever email address you enter.
 
-
 ### Examples
 
 #### Deleting spam emails
@@ -105,14 +107,12 @@ You can choose between these types of actions:
 |Filter settings|Message subject|includes|[SPAM]|deletion|
 |What the filter will do|If the subject of the message|includes|the word `[SPAM]`|then delete the message.|
 
-
 #### Redirecting emails from a certain sender
 
 ||Header|Rule|Value|Action|
 |---|---|---|---|---|
 |Filter settings|From|includes|contact@domaintest.ovh|redirect to a remote address: jean@otherdomain.ovh|
 |What the filter will do|If the sender|is|contact@domaintest.ovh|then redirect the email to jean@otherdomain.ovh|
-
 
 #### Redirecting emails sent to a mailing list
 

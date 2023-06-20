@@ -38,7 +38,7 @@ La modification du mot de passe de la base de données de votre site se fait en 
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
 >
 
 ## Prérequis
@@ -79,7 +79,7 @@ Recherchez et ouvrez le fichier de configuration de votre site :
 Deux cas sont possibles :
 
 - Cas n°1 : la base de données de votre site fait partie de votre offre d'hébergement;
-- Cas n°2 : elle est est incluse dans une offre *Web Cloud Databases*, auquel cas vous devrez retrouver le **nom du serveur** et le **nom d'utilisateur** de votre base de données, afin d'identifier cette dernière sans risque d'erreur.
+- Cas n°2 : elle est incluse dans une offre *Web Cloud Databases*, auquel cas vous devrez retrouver le **nom du serveur** et le **nom d'utilisateur** de votre base de données, afin d'identifier cette dernière sans risque d'erreur.
 
 Afin de déterminer quel cas s'applique à votre site, dans le fichier de configuration identifié à [l'étape 1](#step1), commencez par noter le nom de sa base de données :
 
@@ -231,6 +231,6 @@ Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe de votre base
 
 [Résoudre les erreurs les plus fréquentes liées aux bases de données](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

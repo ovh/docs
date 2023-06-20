@@ -4,10 +4,10 @@ slug: le-champ-spf
 excerpt: Découvrez comment configurer un enregistrement SPF sur votre nom de domaine chez OVHcloud
 section: DNS et zone DNS
 order: 05
-updated: 2022-09-12
+updated: 2023-06-08
 ---
 
-**Dernière mise à jour le 12/09/2022**
+**Dernière mise à jour le 08/06/2023**
 
 ## Objectif
 
@@ -78,7 +78,7 @@ Dans le tableau, pour retrouver la ligne correspondante au SPF OVHcloud, un filt
 
 > [!primary]
 >
-> Un SPF se compose toujours de la forme suivante : "v=spf1 `sources` `qualifieur`". Par exemple, le SPF OVHcloud est : "v=spf1 include:mx.ovh.com ~all".
+> Un SPF se compose toujours de la forme suivante : "v=spf1 `sources` `qualifieur`". Par exemple, le SPF OVHcloud est : "v=spf1 include:mx.ovh.com ~all".
 >
 
 ![domain](images/spf_records_check_OVH_configuration.png){.thumbnail}
@@ -93,11 +93,29 @@ Pour ajouter un enregistrement SPF, cliquez sur `Ajouter une entrée`{.action}.
 
 Dans la fenêtre qui s’affiche, plusieurs enregistrements DNS vous sont proposés. Concernant l’ajout d’un SPF, deux possibilités s’offrent à vous :
 
-- [Ajouter un enregistrement TXT](#txtrecord) : pour les utilisateurs avertis ou disposant déjà de l'enregistrement complet. Par exemple, votre fournisseur de solution e-mail vous transmet la valeur.
-- [Ajouter un enregistrement SPF](#spfrecord) : pour les utilisateurs ne possédant pas l'intégralité de l'enregistrement. Par exemple, vous disposez uniquement d'une adresse IP ou du nom d'hôte du serveur e-mail.
 - [Ajouter un enregistrement SPF OVHcloud](#spfrecordovhcloud) **et utiliser la configuration OVHcloud**: pour les utilisateurs possédant uniquement les offres e-mail OVHcloud sur leur nom de domaine (Hors [Private Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/){.external} et Exchange Provider).
+- [Ajouter un enregistrement SPF](#spfrecord) : pour les utilisateurs ne possédant pas l'intégralité de l'enregistrement. Par exemple, vous disposez uniquement d'une adresse IP ou du nom d'hôte du serveur e-mail.
+- [Ajouter un enregistrement TXT](#txtrecord) : pour les utilisateurs avertis ou disposant déjà de l'enregistrement complet. Par exemple, votre fournisseur de solution e-mail vous transmet la valeur.
 
 ![domain](images/spf_records_add_entry.png){.thumbnail}
+
+#### Utiliser l'enregistrement SPF OVHcloud <a name="spfrecordovhcloud"></a>
+
+Vous avez choisi l'enregistrement `SPF`{.action} et souhaitez appliquer la configuration OVHcloud. Celle-ci permet d'inclure l'ensemble des serveurs e-mail sortants OVHcloud pour les offres e-mail suivantes :
+
+- MX Plan seul ou inclus dans une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} .
+- [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/).
+- [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/).
+
+Cliquez sur le bouton `Utiliser le SPF pour mutualisé OVHcloud`{.action} en haut de la fenêtre d'assistance. Les informations relatives au SPF OVHcloud s'afficheront. Cliquez sur le bouton `Valider`{.action} pour réaliser la modification.
+
+![domain](images/spf_records_add_entry_step2.png){.thumbnail}
+
+
+> [!primary]
+>
+> La modification nécessite un temps de propagation de 4 à 24 heures avant d’être pleinement effective.
+>
 
 
 #### Ajouter un enregistrement SPF <a name="spfrecord"></a>
@@ -145,24 +163,6 @@ Une fois les informations complétées, cliquez sur `Suivant`{.action}, assurez-
 > La modification nécessite un temps de propagation de 4 à 24 heures avant d’être pleinement effective.
 >
 
-#### Utiliser l'enregistrement SPF OVHcloud <a name="spfrecordovhcloud"></a>
-
-Vous avez choisi l'enregistrement `SPF`{.action} et souhaitez appliquer la configuration OVHcloud. Celle-ci permet d'inclure l'ensemble des serveurs e-mail sortants OVHcloud pour les offres e-mail suivantes :
-
-- MX Plan seul ou inclus dans une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} .
-- [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/).
-- [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/).
-
-Cliquez sur le bouton `Utiliser le SPF pour mutualisé OVHcloud`{.action} en haut de la fenêtre d'assistance. Les informations relatives au SPF OVHcloud s'afficheront. Cliquez sur le bouton `Valider`{.action} pour réaliser la modification.
-
-![domain](images/spf_records_add_entry_step2.png){.thumbnail}
-
-
-> [!primary]
->
-> La modification nécessite un temps de propagation de 4 à 24 heures avant d’être pleinement effective.
->
-
 #### Ajouter un enregistrement TXT <a name="txtrecord"></a>
 
 Parmi les enregistrements proposés, cliquez sur `TXT`{.action}, puis complétez les informations demandées. Dans la zone `Valeur`{.action}, renseignez le SPF que vous souhaitez utiliser.
@@ -201,7 +201,13 @@ mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 Pour l'offre Exchange Provider, la configuration est la suivante :
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw1.ex-mail.biz a:gw2.ex-mail.biz ~all"
+mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
+```
+
+En revanche, la configuration est la suivante si vous souhaitez aussi déclarer la *gateway* du service **Exchange Provider** :
+
+```bash
+mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw.ex-mail.biz ~all"
 ```
 
 ### Configuration SPF OVHcloud pour Private Exchange 

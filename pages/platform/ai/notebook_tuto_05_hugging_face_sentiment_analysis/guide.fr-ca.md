@@ -6,10 +6,10 @@ section: AI Notebooks - Tutoriels
 order: 05
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-hugging-face-sentiment-analysis/'
-updated: 2022-09-01
+updated: 2023-05-11
 ---
 
-**Last updated 1st September, 2022.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 
@@ -71,14 +71,14 @@ If you want to upload it from the [OVHcloud Control Panel](https://ca.ovh.com/au
 If you want to run it with the CLI, just follow [this guide](https://docs.ovh.com/ca/fr/publiccloud/ai/cli/access-object-storage-data/). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
 ```bash
-ovhai data upload <region> <container> <paths>
+ovhai bucket object upload <container>@<region> <paths>
 ```
 
 ### Launch and access a Jupyter notebook
 
 The first step will consist in creating a Jupyter Notebook with OVHcloud AI Notebooks.
 
-First, you have to install the OVHAI CLI then choose the name of the notebook (`<notebook-name>`), the Hugging Face image (`huggingface-transformers`) and the number of GPUs (`<nb-gpus>`) to use on your notebook. You can also attach your data, previously stored in the object storage (`<container@region/prefix:mount_path:permission>`) and use the following command:
+First, you have to install the `ovhai` CLI then choose the name of the notebook (`<notebook-name>`), the Hugging Face image (`huggingface-transformers`) and the number of GPUs (`<nb-gpus>`) to use on your notebook. You can also attach your data, previously stored in the object storage (`<container@region/prefix:mount_path:permission>`) and use the following command:
 
 ```bash
 ovhai notebook run huggingface-transformers jupyterlab \
@@ -168,6 +168,8 @@ A preview of the three notebooks can be found on GitHub [here](https://github.co
 
 - You can also deploy a **Flask** app to classify text sentiments with **Hugging Face** models. Check this [documentation](https://docs.ovh.com/ca/fr/publiccloud/ai/deploy/tuto-flask-hugging-face-sentiment-analysis/).
 - If you are interested in **NLP** (Natural Language Processing), familiarise yourself with speech to text by following this [tutorial](https://docs.ovh.com/ca/fr/publiccloud/ai/notebooks/tuto-speech-to-text-recognition/).
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

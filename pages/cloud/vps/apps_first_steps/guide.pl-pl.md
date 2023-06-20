@@ -67,7 +67,7 @@ Poniżej znajdziesz pierwsze kroki związane z uruchomieniem wstępnie zainstalo
 1. Otwórz otrzymany e-mail zawierający dane do logowania do aplikacji.
 2. W tym e-mailu kliknij link Pleska.
 3. Zaloguj się za pomocą nazwy użytkownika i hasła dostępnych w e-mailu.
-4. Po zalogowaniu Plesk poprosi:
+4. Po zalogowaniu Plesk poprosi:<br>
     a) Twoje dane kontaktowe.  
     b) Nowe hasło dla użytkownika "admin", którego będziesz używał do logowania się do interfejsu Plesk.  
     c) Informacje o licencji.*  

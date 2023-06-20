@@ -4,10 +4,10 @@ slug: s3/limitations
 excerpt: "Retrouvez ici les limites techniques de l'offre S3 Object Storage"
 section: Informations générales
 order: 025
-updated: 2023-03-01
+updated: 2023-06-01
 ---
 
-**Dernière mise à jour le 01/03/2023**
+**Dernière mise à jour le 01/06/2023**
 
 ## Objectif
 
@@ -15,7 +15,8 @@ Retrouvez ici les limites techniques relatives à l'offre S3 Object Storage.
 
 ### Nombre maximum de buckets par projet
 
-100
+- 100 (par défaut)
+- 1000 (nécessite une intervenion manuelle, veuillez contacter notre support à cet effet)
 
 ### Nombre maximum d'objets dans un bucket
 
@@ -31,9 +32,16 @@ Illimité
 
 ### Taille maximum par object / mpu / part
 
-- 5Go maximum par object
-- 10000 parts maximum dans un mpu
-- 5Mo est la taille minimum pour un part
+#### Via un seule requête PUT
+
+Maximum 5 Go par objet (pour un objet dont la taille est supérieure à 5 Go, procédez à un *multi-part upload*).
+
+#### Via un multi-part upload (MPU)
+
+- La taille pour une seule *part* doit être comprise entre 5 Mo (minimum) et 5 Go (maximum)
+- 10000 *parts* maximum en mpu
+
+La taille théorique maximale d’un seul *Large Object* uploadé via MPU est donc de 48To.
 
 ### Nombre maximum de comptes utilisateurs par projet
 
@@ -48,7 +56,8 @@ Illimité
 - Ne peut comporter plusieurs signes de ponctuation à la suite (« .. » ou « -. » ou « .- » ou « -- »).
 - Ne peut ressembler à une adresse IP (192.168.1.1).
 
-
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.

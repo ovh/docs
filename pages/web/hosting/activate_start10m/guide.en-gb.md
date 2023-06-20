@@ -78,7 +78,7 @@ Please refer to our guide on [Creating an MX Plan email account](https://docs.ov
 
 [Creating an email address with an MX Plan solution](https://docs.ovh.com/gb/en/emails/hosted_email_how_to_set_up_an_email_address/){.external}
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 

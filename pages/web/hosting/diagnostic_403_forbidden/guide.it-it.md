@@ -1,19 +1,41 @@
 ---
 title: Cosa fare in caso di pagina "403 forbidden"?
-excerpt: Come caricare il tuo sito online su una pagina "403 forbidden"
+excerpt: Questa guida ti mostra come caricare il tuo sito online su una pagina "403 forbidden"
 slug: diagnostic-403-forbidden
 section: Diagnostica
 order: 08
-updated: 2022-06-16
+updated: 2023-06-09
 ---
 
-**Ultimo aggiornamento: 16/06/2022**
+**Ultimo aggiornamento: 09/06/2023**
+
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+>
 
 ## Obiettivo
 
-Le modifiche ai diritti di accesso ai file del tuo sito, al file **.htaccess** o all'installazione di un plugin di sicurezza possono talvolta tradursi in una pagina **"403 forbidden"**.
+Una pagina **"403 forbidden"** può apparire quando:
 
-In caso di malfunzionamenti, i nostri sistemi di sicurezza hanno dovuto bloccare temporaneamente l'accesso ai file del tuo hosting. Questo tipo di blocco automatico ha lo scopo di impedire l'invio del codice malevolo verso altre entità e di proteggerti giuridicamente.
+- i diritti di accesso FTP (CHMOD) sono insufficienti o limitati. l'accesso al file/cartella/sito Web al quale vuoi accedere tramite il tuo browser viene rifiutato dal server web del tuo hosting Web;
+
+- il file **.htaccess** contiene una regola di restrizione di accesso;
+
+- un plugin di sicurezza protegge l'accesso ai tuoi file/cartella/sito web tramite il tuo browser
+
+- un firewall applicativo è attivo.
+
+In seguito al rilevamento di un funzionamento sospetto, i nostri sistemi di sicurezza possono bloccare temporaneamente l'accesso ai file del tuo hosting Web. Questo dispositivo permette di impedire:
+
+- lo stato di avanzamento di un'eventuale pirateria dei tuoi dati presenti sul tuo hosting Web;
+
+- l'invio del codice malevolo ad altri enti/siti web, che potrebbero dar luogo ad una pirateria;
+
+- la realizzazione di operazioni illegali.
+ 
+ Questo dispositivo ti protegge giuridicamente contro le azioni risultanti da un'eventuale pirateria del tuo hosting Web verso altre organizzazioni/siti Web. 
+ 
+ *Se utilizzi un blocco di questo tipo, invia una notifica all'indirizzo email del contatto "amministratore" del tuo hosting Web*
 
 ![403error](images/403error.png){.thumbnail}
 
@@ -21,66 +43,86 @@ In caso di malfunzionamenti, i nostri sistemi di sicurezza hanno dovuto bloccare
 
 > [!warning]
 >
-> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/) o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) su questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/) e/o di contattare la nostra [Community di utenti](https://community.ovh.com/en/). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#gofurther) di questa guida.
 >
 
 ## Prerequisiti
 
 - Disporre di una [soluzione di hosting Web](https://www.ovhcloud.com/it/web-hosting/) OVHcloud
-- Disporre delle [credenziali di accesso](../accedere-spazio-storage-ftp-hosting-web/#step-1-recupera-i-dati-necessari-a-effettuare-laccesso) allo spazio di storage dell'hosting
+- Disporre delle [credenziali di accesso](/pages/web/hosting/ftp_connection) allo spazio di storage FTP dell'hosting
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
 ### Step 1: analizzare la situazione
 
-Se la pagina **"403 forbidden"** è apparsa a seguito di una modifica errata del tuo sito, [ripristina in tutto o in parte lo spazio di storage del tuo hosting](../web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/) a una data precedente.
+Se la pagina **"403 forbidden"** è apparsa in seguito a una modifica del tuo sito Web, [ripristina totalmente o in parte lo spazio di storage FTP del tuo hosting](/pages/web/hosting/ftp_save_and_backup) a una data precedente.
 
-Se i backup disponibili non ti permettono di ripristinare l'accesso al tuo sito, contatta un [provider specializzato](https://partner.ovhcloud.com/it/).
+Se i backup disponibili non ti permettono di ripristinare l'accesso al tuo sito Web, contatta uno dei [provider specializzati](https://partner.ovhcloud.com/it/directory/).
 
-Se la pagina **"403 forbidden"** non è apparsa a seguito di una modifica del tuo sito, consulta la tua messaggeria. Se hai ricevuto un'email dai nostri servizi che indica la chiusura dell'hosting per motivi di sicurezza, passa allo [Step 2](#step2).
+Se la pagina **"403 forbidden"** non è apparsa a seguito di una modifica del tuo sito web, consulta il tuo servizio di posta elettronica. Se hai ricevuto un'email dai nostri servizi che indica la chiusura del tuo hosting Web per motivi di sicurezza, passa direttamente allo Step 2 della presente guida.
 
-Se la pagina **"403 forbidden"** è apparsa senza azione da parte tua e non hai ricevuto email dai nostri servizi a questo proposito, contatta un [provider specializzato](https://partner.ovhcloud.com/it/).
+Se la pagina **"403 forbidden"** è apparsa senza azione da parte tua e non hai ricevuto alcuna email dai nostri servizi a questo proposito, verifica i diritti di accesso FTP (CHMOD) dei tuoi file/cartelle e il codice contenuto nei tuoi file **.htaccess**. Verifica che questa situazione non sia causata da un plugin di sicurezza o da un firewall applicativo. In caso di necessità, contatta un [fornitore specializzato](https://partner.ovhcloud.com/it/directory/).
 
-### Step 2: rendere sicure le tue soluzioni <a name="step2"></a>
+### Step 2: rendere sicure le tue soluzioni <a name="step-2"></a>
 
-Verifica la sicurezza della tua postazione(e) informatica:
+Verifica la sicurezza della tua o delle tue postazioni/dispositivi informatici:
 
-- Effettua gli aggiornamenti di sicurezza;
-- Verifica anche che sia installato un antivirus, aggiorna e avvia una scansione completa. Se non ne hai uno, consulta un [provider specializzato](https://partner.ovhcloud.com/it/) prima di installare il tuo servizio;
-- Modificate l'insieme delle vostre password locali, in particolare quelle dei vostri indirizzi email, rispettando queste [buone pratiche](https://docs.ovh.com/it/customer/gestire-la-password/#genera-una-password-efficace);
-- Modifica le password di tutti i tuoi servizi OVHcloud, in particolare del tuo [database](../modificare-password-database/) e dell'accesso al tuo [spazio di storage FTP](../modificare-la-password-utente-ftp/).
+- Effettua gli aggiornamenti di sicurezza dei tuoi dispositivi.
+
+- Verifica che sia installato un antivirus, aggiornalo e esegui una scansione completa. Se non ne hai uno, consulta [uno specialista](https://partner.ovhcloud.com/it/directory/) prima di installare il tuo servizio.
+
+- Modificate l'insieme delle vostre password locali, in particolare quelle dei vostri indirizzi email, rispettando i **best practice** specificati in [questa guida](/pages/account/customer/manage-ovh-password).
+
+- Modifica le password di tutti i tuoi servizi OVHcloud, in particolare quelli del tuo [database](/pages/web/hosting/sql_change_password) e dell'accesso al tuo [spazio di storage FTP](/pages/web/hosting/ftp_change_password).
 
 > [!warning]
 >
-> Prima di modificare la password del database dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), aggiorna il file di configurazione del tuo sito per connettersi al database con la nuova password.
+> Prima di modificare la password del database del tuo sito Web dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), aggiorna il file di configurazione del tuo sito Web per connettersi al database con la nuova password.
 >
-> In caso contrario, la modifica della password del tuo database comporta l'interruzione del sito o dei servizi che lo utilizzano.
+> In caso contrario, la modifica della password del tuo database determinerà un blocco dell'accesso al tuo sito Web o ai tuoi servizi/clienti che lo utilizzano.
 >
-> In caso di dubbi sulle operazioni da effettuare, contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+> In caso di dubbi sulle operazioni da effettuare, contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 >
 
 ### Step 3: intervenire sul tuo hosting
 
-Annota innanzitutto la data di invio dell'email di OVHcloud che indica la disattivazione del tuo hosting, nonché la o le cartelle che contengono esempi di file illegittimi.
+Annota innanzitutto la data di invio dell'email di OVHcloud che indica la disattivazione del tuo hosting Web, nonché la o le cartelle che contengono esempi di file illegittimi.
+
+> [!primary]
+>
+> I nostri sistemi di sicurezza possono applicare due livelli di disattivazione sul tuo hosting Web: 
+>
+> - disattivazione applicando un "**CHMOD 700**" alla radice FTP del tuo hosting Web;
+> - disattivazione applicando un "**CHMOD 000**" alla radice FTP del tuo hosting Web.
+>
+> In caso di disattivazione tramite restrizione di accesso FTP in "**CHMOD 000**", contatta obbligatoriamente i nostri [team di supporto](https://www.ovhcloud.com/it/support-levels/) per fare il punto sulla situazione prima di proseguire gli step descritti in questa guida. 
+>
+> In base alla tua situazione, questi ultimi applicheranno una restrizione meno elevata trasformando il "**CHMOD 000**" in "**CHMOD 700**" affinché tu possa agire sullo spazio FTP del tuo hosting Web.
+>
 
 #### Caso 1: il tuo hosting è stato disattivato meno di due settimane fa
 
-Se il tuo hosting è stato chiuso meno di due settimane fa e contiene un solo sito, ripristina il tuo spazio di storage seguendo le istruzioni di questa [guida](../web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/#ripristina-i-dati-dello-storage-dallo-spazio-cliente-ovh).
+Se il tuo hosting è stato chiuso meno di due settimane fa e contiene un solo sito Web, ripristina il tuo spazio di storage FTP. Se contiene più siti Web, ripristina solo i file che contengono file illegittimi.
 
-Se il tuo hosting è stato chiuso meno di due settimane fa e contiene diversi siti, ripristina solo le cartelle contenenti i file illegittimi seguendo le istruzioni di questa [guida](../web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/#ripristina-un-file-da-un-software-o-uninterfaccia-web).
+Per ripristinare totalmente o in parte il tuo spazio di storage FTP, consulta la [nostra guida](/pages/web/hosting/ftp_save_and_backup) sull'argomento.
 
 > [!warning]
 >
-> Il solo ripristino del tuo spazio di storage non basterà a correggere eventuali falle di sicurezza presenti sul tuo sito.
-> Per identificare queste falle di sicurezza, puoi analizzare i ["logs web"](https://docs.ovh.com/it/hosting/hosting_condiviso_consulta_le_statistiche_e_i_log_del_tuo_sito/#logs) del tuo hosting o rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/) per effettuare un audit di sicurezza delle tue soluzioni.
+> Il solo ripristino dello spazio di storage FTP non è sufficiente a correggere eventuali falle di sicurezza presenti sul tuo sito Web.
+> Per identificare queste falle di sicurezza, analizza i ["log web"](/pages/web/hosting/logs_and_statistics) del tuo hosting web o rivolgiti a un [fornitore specializzato](https://partner.ovhcloud.com/it/directory/) per effettuare un audit di sicurezza dei tuoi siti Web.
 >
 
 #### Caso 2: il tuo hosting è stato disattivato più di due settimane fa
 
-Se il tuo hosting è stato chiuso più di due settimane fa, contatta un [provider specializzato](https://partner.ovhcloud.com/it/) per effettuare un audit di sicurezza delle tue soluzioni. 
+Se il tuo hosting è stato chiuso più di due settimane fa, contatta un [provider specializzato](https://partner.ovhcloud.com/it/directory/) per effettuare un audit di sicurezza dei tuoi siti Web. 
+
+> [!success]
+>
+> Per maggiori informazioni sui [step 2 e 3](#step-2), consulta la nostra guida su [le azioni da effettuare in caso di hacking del tuo sito Web](/pages/web/hosting/cms_what_to_do_if_your_site_is_hacked).
+>
 
 ### Step 4: riattivare il tuo hosting Web <a name="reactivate-web-hosting"></a>
 
@@ -93,10 +135,10 @@ Se il tuo hosting è stato chiuso più di due settimane fa, contatta un [provide
 
 > [!primary]
 >
-> Per installare il software **FileZilla** per gestire i file del tuo sito, segui questa [guida](../hosting_condiviso_guida_allutilizzo_di_filezilla/).
+> Per installare il software **FileZilla** per gestire i file del tuo sito Web, segui le istruzioni di questo [tutorial](/pages/web/hosting/ftp_filezilla_user_guide).
 >
 
-Apri il software FileZilla e accedi allo spazio di storage. Clicca sul `Server`{.action} nella barra del menu e poi su `Esegui comando personalizzato`{.action} (la denominazione può essere leggermente diversa a seconda della versione di FileZilla utilizzata):
+Apri il software FileZilla e poi [collegati al tuo spazio di storage FTP](/pages/web/hosting/ftp_connection). Clicca su `Server`{.action} nella barra del menu e poi su `Effettua un ordine FTP`{.action} (la denominazione può essere diversa in base alla versione di FileZilla utilizzata):
 
 ![command_filezilla1](images/command_filezilla1.png){.thumbnail}
 
@@ -110,30 +152,60 @@ SITE CHMOD 705 /
 
 Una risposta **"200 Permissions changed on /"** conferma che l'operazione è stata effettuata correttamente. Per verificarlo, prova di nuovo ad accedere al tuo sito.
 
+> [warning]
+>
+> Potrebbe essere necessario qualche minuto (massimo 20 minuti) per rendere visibile la modifica attraverso il browser.
+>
+> In base al tuo sito Web, potrebbe essere necessario svuotare la cache del tuo browser.
+>
+
+Se il comando qui sotto non funziona, prova utilizzando l'altro comando:
+
+```
+SITE CHMOD 705 .
+```
+
 #### Riattiva il tuo hosting con FTP Explorer "net2ftp"
 
 Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Web Cloud`{.action}, poi `Hosting`{.action} e clicca sulla scheda `FTP-SSH`{.action} dell'hosting in questione.
 
-Clicca sul pulsante `FTP Explorer`{.action} e accedi allo spazio di storage seguendo le indicazioni di questa [guida](../accedere-spazio-storage-ftp-hosting-web/#1-ftp-explorer). Clicca sul pulsante `Funzioni avanzate`{.action} e poi sul pulsante `Esegui`{.action} accanto a "Send arbitrary FTP commands to the FTP server".
+Clicca su `FTP Explorer`{.action} e accedi al tuo [spazio di storage FTP](/pages/web/hosting/ftp_connection).
+
+Clicca sul pulsante `Funzioni avanzate`{.action} e poi sul pulsante `Esegui`{.action} accanto a "Send arbitrary FTP commands to the FTP server".
 
 ![net2ftp](images/net2ftp.png){.thumbnail}
 
-Nella parte superiore della pagina, inserisci il comando qui sotto e clicca su "V" verde.
+Nella parte superiore della pagina, inserisci questo comando:
+
+```
+SITE CHMOD 705 /
+```
+
+Clicca su "V" verde.
+
 
 ![result_command_on_net2ftp](images/result_command_on_net2ftp.png){.thumbnail}
 
 Una risposta **"200 Permissions changed on /"** conferma che l'operazione è stata effettuata correttamente. Per verificarlo, prova di nuovo ad accedere al tuo sito.
 
-## Per saperne di più <a name="gofurther"></a>
+> [warning]
+>
+> Potrebbe essere necessario qualche minuto (massimo 20 minuti) per rendere visibile la modifica attraverso il browser.
+>
+> In base al tuo sito Web, potrebbe essere necessario svuotare la cache del tuo browser.
+>
 
-[Consigli in caso di hacking del tuo sito WordPress](../hacking_del_tuo_sito_wordpress_consigli_e_casi_pratici/)
+## Per saperne di più <a name="go-further"></a>
 
-[Attivazione del firewall applicativo](../hosting_condiviso_attiva_un_firewall_applicativo/)
+[Consigli in caso di hacking del tuo sito WordPress](/pages/web/hosting/cms_what_to_do_if_your_site_is_hacked)
 
-[Modificare la versione di PHP su un hosting Web](../configura_php_sul_tuo_hosting_web_condiviso_2014_ovh/)
+[Attivazione del firewall applicativo](/pages/web/hosting/multisites_activating_application_firewall)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+[Modificare la versione di PHP su un hosting Web](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014)
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](https://www.ovhcloud.com/it/support-levels/).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

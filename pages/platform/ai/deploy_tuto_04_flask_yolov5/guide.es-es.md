@@ -177,7 +177,7 @@ seaborn==0.12.2
 
 ### Write the Dockerfile for the application
 
-Your Dockerfile should start with the the `FROM` instruction indicating the parent image to use. In our case we choose to start from a python:3.8 image:
+Your Dockerfile should start with the `FROM` instruction indicating the parent image to use. In our case we choose to start from a python:3.8 image:
 
 ``` {.console}
 FROM python:3.8
@@ -296,11 +296,14 @@ ovhai app run --default-http-port 5000 --cpu 4 <shared-registry-address>/flask-y
 
 ## Go further
 
-- You can imagine deploying a **Flask** app in order to to classify the feelings in a text. Refer to this [tutorial](https://docs.ovh.com/es/publiccloud/ai/deploy/tuto-flask-hugging-face-sentiment-analysis/).
+- You can imagine deploying a **Flask** app in order to classify the feelings in a text. Refer to this [tutorial](https://docs.ovh.com/es/publiccloud/ai/deploy/tuto-flask-hugging-face-sentiment-analysis/).
 - Another way to create an AI Deploy app is to use **Streamlit**! [Here it is](https://docs.ovh.com/es/publiccloud/ai/deploy/build-use-streamlit-image/).
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
+

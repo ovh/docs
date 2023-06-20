@@ -91,13 +91,13 @@ Stellen Sie zunächst über SSH eine Verbindung zu Ihrem VPS her.
 
 Mit dem folgenden Befehl können Sie den Namen des neu angehängten Volumes überprüfen:
 
-```
+```bash
 $ lsblk
 ```
 
 Hier sehen Sie eine Beispielausgabe dieses Befehls:
 
-```
+```console
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda       8:0    0   25G  0 disk 
 ├─sda1    8:1    0 24.9G  0 part /
@@ -111,7 +111,7 @@ sdb       8:16   0   25G  0 disk
 In diesem Beispiel heißt die Partition, in der Ihr Backup-Dateisystem enthalten ist, “sdb1”.
 Erstellen Sie als Nächstes ein Verzeichnis für diese Partition und definieren Sie es als Mountpunkt:
 
-```
+```bash
 $ mkdir -p /mnt/restore
 $ mount /dev/sdb1 /mnt/restore
 ```
@@ -157,27 +157,27 @@ Der hierzu benötigte *qemu-guest-agent* ist bei den meisten Distributionen nich
 
 Überprüfen Sie mit folgendem Befehl, ob das System richtig für Snapshots konfiguriert ist.
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Erscheint ein anderes Ergebnis (“No such file or directory”), dann installieren Sie das aktuelle Paket:
 
-```
+```bash
 $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
 Starten Sie den VPS neu:
 
-```
+```bash
 $ sudo reboot
 ```
 
 Überprüfen Sie, ob der Dienst ausgeführt wird:
 
-```
+```bash
 $ sudo service qemu-guest-agent status
 ```
 
@@ -185,37 +185,37 @@ $ sudo service qemu-guest-agent status
 
 Überprüfen Sie mit folgendem Befehl, ob das System richtig für Snapshots konfiguriert ist.
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Erscheint ein anderes Ergebnis (“No such file or director”), dann installieren und aktivieren Sie den Agent:
 
-```
+```bash
 $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
 Starten Sie den VPS neu:
 
-```
+```bash
 $ sudo reboot
 ```
 
 Überprüfen Sie, ob der Dienst ausgeführt wird:
 
-```
+```bash
 $ sudo service qemu-guest-agent status
 ```
 
 ##### **Windows**
 
-Sie können den QEMU Guest Agent über eine MSI-Datei installieren. Diese ist auf der Webseite des *Fedora project* verfügbar: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
+Sie können den QEMU Guest Agent über eine MSI-Datei installieren. Diese ist auf der Webseite des *Fedora project* verfügbar: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>.
 
 Überprüfen Sie, ob der Dienst ausgeführt wird. Verwenden Sie dazu folgenden Powershell-Befehl:
 
-```
+```powershell
 PS C:\Users\Administrator> Get-Service QEMU-GA
 
 Status   Name               DisplayName

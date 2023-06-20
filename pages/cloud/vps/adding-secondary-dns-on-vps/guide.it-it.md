@@ -56,7 +56,7 @@ L'operazione da effettuare è diversa a seconda del luogo in cui i DNS del domin
 
 - Se il dominio è gestito da un provider esterno **o** se utilizza server DNS esterni in questa fase, accedi allo Spazio Cliente del tuo provider DNS e aggiungi, nella zona DNS, un record di tipo TXT con il sottodominio "ownercheck" e il valore fornito eseguendo lo [Step 1](#retrievecode).
 
-- Se il dominio è gestito da OVHcloud come registrar **e** utilizza i server DNS di OVHcloud, aggiungi il record TXT nella sezione `Web Cloud`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Segui le istruzioni descritte nella guida [Modificare la zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/)di un dominio.
+- Se il dominio è gestito da OVHcloud come registrar **e** utilizza i server DNS di OVHcloud, aggiungi il record TXT nella sezione `Web Cloud`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Segui le istruzioni descritte nella guida [Modificare la zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/) di un dominio.
 
 ![DNS secondario](images/sec-04.png){.thumbnail}
 

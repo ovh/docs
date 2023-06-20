@@ -50,7 +50,7 @@ Haga clic en `Siguiente`{.action} para ir al resumen y confirme la tarea haciend
 
 ### 2\. utilizar recursos
 
-Los recursos pueden gestionarse desde la pestaña "Recursos". Haga clic en `...`{.action} para editar o eliminar un recurso. También se mostrará la opción `Configurar delegaciones`{.action}. Con esta opción, podrá delegar el acceso del mismo modo que para una cuenta Exchange. Consulte los detalles en [esta guía](../exchange_2013_dar_permisos_full_access_a_una_cuenta/).
+Los recursos pueden gestionarse desde la pestaña "Recursos". Haga clic en `...`{.action} para editar o eliminar un recurso. También se mostrará la opción `Configurar delegaciones`{.action}. Con esta opción, podrá delegar el acceso del mismo modo que para una cuenta Exchange. Consulte los detalles en [esta guía](/pages/web/microsoft-collaborative-solutions/feature_delegation/).
 
 ![utilizar recursos](images/exchange-resources-step3.png){.thumbnail}
 
@@ -58,7 +58,7 @@ Los recursos pueden gestionarse desde la pestaña "Recursos". Haga clic en `...`
 
 > [!primary]
 >
-Consulte también nuestra guía [Compartir calendarios desde la interfaz OWA](../exchange_2016_compartir_un_calendario_con_el_webmail_owa/).
+Consulte también nuestra guía [Compartir calendarios desde la interfaz OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing).
 >
 
 Conéctese a su cuenta Exchange a través del [webmail OVHcloud](https://www.ovh.es/mail/). Vaya a la interfaz "Calendario" haciendo clic en el botón "Aplicación lanzada" en la esquina superior izquierda y seleccionando el icono "`Calendario`{.action}".
@@ -123,10 +123,10 @@ Después de crear el evento (haciendo clic en `Enviar`{.action} en la barra supe
 
 ## Más información
 
-[Consultar una cuenta Exchange desde la interfaz OWA](../exchange_2016_guia_de_uso_de_outlook_web_app/)
+[Consultar una cuenta Exchange desde la interfaz OWA](/pages/web/emails/email_owa)
 
-[Compartir un calendario desde la interfaz OWA](../exchange_2016_compartir_un_calendario_con_el_webmail_owa/)
+[Compartir un calendario desde la interfaz OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Compartir una carpeta desde la interfaz OWA](../exchange_2016_compartir_una_carpeta_con_el_webmail_owa/)
+[Compartir una carpeta desde la interfaz OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -207,13 +207,13 @@ Tener un **"trigger"** en el script de importación de su base de datos no está
 
 Por otro lado, no está permitida la siguiente petición:
 
-```mysql
+```sql
 CREATE DATABASE IF NOT EXISTS `Database-Name` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci; 
 ```
 
 Sustituya por:
 
-```mysql
+```sql
 USE `Database-Name`;
 ```
 

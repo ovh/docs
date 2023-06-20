@@ -1,309 +1,281 @@
 ---
-title: 'Comment installer un serveur LAMP sous Debian 9 et Ubuntu 18'
+title: 'Tutoriel - Installer un serveur web (LAMP) sur Debian ou Ubuntu'
 slug: installer-lamp-debian-ubuntu
-excerpt: 'Laissez-vous guider pour installer un serveur LAMP'
+excerpt: 'Découvrez comment configurer un serveur web LAMP'
 section: Tutoriel
-updated: 2020-08-06
+updated: 2023-05-10
 ---
 
-**Dernière mise à jour le 06/08/2020**
+## Objectif 
 
-## Introduction 
+La mise en place d'un serveur web et des logiciels associés permet à votre serveur cloud d'héberger des pages web ou des applications web dynamiques. L'installation d'une *LAMP stack* constitue une démarche éprouvée pour y parvenir avec les applications open source. LAMP signifie **L**inux (OS), **A**pache (serveur web), **M**ariaDB (système de gestion de base de données) et **P**HP (langage de programmation). 
 
-L'acronyme LAMP désigne un ensemble de quatre technologies open source : un système d'exploitation Linux, un serveur web Apache, un système de bases de données MySQL et le langage de programmation PHP.
-
-Ces technologies forment une pile (*stack*, en anglais) vous permettant d'héberger vos sites ou applications web dynamiques, comme WordPress ou Drupal. LAMP est aujourd'hui le *stack* le plus utilisé pour héberger un applicatif web.
-
-Dans ce tutoriel, nous allons apprendre à installer et configurer ces quatre briques, installer phpMyAdmin pour l'administration graphique de la base de données MySQL et tester le serveur LAMP avec le système de gestion de contenu (Content Management System ou CMS) WordPress. 
-
+**Ce tutoriel explique comment installer un serveur web LAMP sur votre service OVHcloud.**
 
 ## Prérequis
 
-### Ce que vous devez savoir
+- Un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/), un [VPS](https://www.ovhcloud.com/fr/vps/) ou une instance [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud (hors systèmes Windows)
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Un accès administratif à votre service via SSH
 
-- Avoir des notions d’administration Linux.
-- Se connecter en SSH. 
-- Éditer un fichier texte en ligne de commande (Vim, nano, Emacs par exemple).
-- Installer une distribution Linux (nous utilisons ici Debian 9.4, mais les étapes du tutoriel sont identiques sous Ubuntu 18.04).
-
-### Ce que vous devez avoir
-
-- Un serveur ou une machine virtuelle sous Linux (un [VPS](https://www.ovhcloud.com/fr/vps/){.external}, un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/){.external} ou une [instance Public Cloud OVHcloud](https://www.ovhcloud.com/fr/public-cloud/){.external}).
-- Les droits administrateur sur ce serveur (être « root »).
 
 > [!warning]
+> Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVHcloud avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Il vous faudra peut-être adapter les consignes à votre situation.
 >
-> OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
-> 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
+> Nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou de vous rapprocher de [notre communauté](https://community.ovh.com/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place de services sur un serveur.
 >
-
 
 ## En pratique
 
-### Étape 1 : mettez votre système à jour
+Si une distribution Debian ou Ubuntu n'est pas déjà installée sur votre serveur, effectuez d'abord une réinstallation depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). C'est la meilleure façon d'avoir un système propre pour votre serveur web et les applications qui s'y exécutent.
 
-Sur une distribution Debian ou Ubuntu récente, nous vous conseillons de réinstaller totalement votre serveur si cela est possible sur votre machine. Attention, cette action **effacera totalement vos données**.
+Suivez le guide correspondant pour installer une distribution sur votre service OVHcloud et vous y connecter en [SSH](/pages/cloud/dedicated/ssh_introduction) :
 
-Connectez-vous en SSH en tant qu'administrateur « root ». N'hésitez pas à vous reporter au [guide SSH](https://docs.ovh.com/fr/dedicated/ssh-introduction/){.external}.
-
-Une fois le système installé, il convient de le mettre à jour : 
-
-```sh
-apt-get update && apt-get upgrade -y
-```
-
-Vous partez ainsi sur une base saine et totalement à jour.
-
-
-### Étape 2 : créez un nouvel utilisateur avec les privilèges « sudo »
-
-Pour des raisons de sécurité et pour suivre les bonnes pratiques, il est préférable d'installer et gérer un serveur LAMP avec un utilisateur séparé, ne possédant pas les privilèges « root ». Si vous disposez déjà d'un utilisateur avec les privilèges « sudo », sans pour autant être « root », vous pouvez vous rendre directement à la deuxième étape. Ce type de fonctionnement est déjà en vigueur pour les dernières versions d'Ubuntu.
-
-Dans le cas où vous ne possédez que l'utilisateur « root », il convient de créer un nouvel utilisateur :
-
-```sh
-adduser mynewuser
-```
-
-Diverses informations seront obligatoires, comme un mot de passe. D'autres seront optionnelles : le nom ou le numéro de téléphone, par exemple.
-
-Il faut ensuite rajouter cet utilisateur au groupe « sudo » :
-```sh
-usermod -aG sudo mynewuser
-```
-
-Et enfin, connectez-vous sur ce nouveau compte utilisateur :
-
-```sh
-su - mynewuser
-```
-
-
-### Étape 3 : installation du serveur web Apache 2
-
-La première brique du *stack* LAMP, le système d'exploitation Linux, a été installée lors des étapes précédentes. 
-
-Nous allons installer ici la deuxième brique, le serveur web Apache 2, ainsi que sa documentation :
-
-```sh
-sudo apt-get install apache2 apache2-doc
-```
-
-Si l'installation s'est effectuée correctement, vous devriez pouvoir accéder à la page par défaut d'Apache en joignant l'adresse IP (ou le nom du service) de votre serveur dans le navigateur, comme suit : `http://IP_du_serveur`.
-N'essayez pas de vous connecter en HTTPS, car à ce stade aucun certificat SSL n'est encore installé.
-
-![Installation d'Apache](images/tuto_apache.png){.thumbnail}
-
-Cette page est très instructive, et vous donnera un aperçu des fichiers de configuration d'Apache 2 et leur spécificités. N'hésitez pas à la parcourir.
-
-
-Il est possible de vérifier que le service Apache fonctionne correctement en utilisant la commande suivante :
-
-```sh
-sudo service apache2 status
-```
-La mention `active (running)` doit apparaître.
-
-La procédure Apache peut se gérer comme suit : 
-```sh
-service apache2 start => permet de démarrer le service
-service apache2 stop => permet d’arrêter le service
-service apache2 restart => permet de relancer ou recharger le service
-```
-
-
-### Étape 4 : installez PHP
-
-Nous passons ensuite à l'installation de la troisième brique, le langage de programmation PHP.
-
-Pour installer le paquet PHP, tapez cette commande :
-
-```sh
-sudo apt-get install php5-common libapache2-mod-php5 php5-cli
-```
-
-Pour tester l'installation, dans le répertoire `/var/www/html`, créez le fichier `info.php` avec le contenu suivant :
-
-```sh
-cd /var/www/html
-sudo nano info.php
-```
-
-Insérez dedans :
-
-```php
-<?php
-phpinfo();
-?>
-```
-
-Accédez ensuite au fichier via le navigateur : `http://IP_du_serveur/info.php`.
-
-Vous devriez pouvoir visualiser une page détaillant toutes les spécificités de votre environnement PHP (version 7.0.30 dans notre cas) :
-
- 
-![Installation de PHP](images/tuto_php.png){.thumbnail}
-
-Une fois visualisé, nous vous recommandons vivement de **supprimer le fichier `index.php`**. En effet, il n'est jamais conseillé de donner publiquement des informations sur votre configuration.
+- [Serveur dédié](/pages/cloud/dedicated/getting-started-with-dedicated-server)
+- [VPS](/pages/cloud/vps/starting_with_a_vps)
+- [Instance Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps)
 
 
 > [!primary]
 >
-> Par défaut, le serveur web Apache ne priorise pas les fichiers PHP par rapport aux fichiers HTML.
-> Ici, dans le dossier racine, nous disposons de `index.html` et de `index.php`. Si vous retournez dans votre navigateur web, sur `http://IP_du_serveur`, Apache vous renverra la page `index.html` et non pas `index.php`. 
-> Cette priorisation n'a pas d'impact sur la majeure partie des CMS comme WordPress ou Drupal. Ces règles peuvent toutefois être modifiées si besoin.
->
+> Les instructions suivantes sont vérifiées pour Debian 11. Ubuntu étant basé sur Debian, ce tutoriel devrait également fonctionner sur une distribution Ubuntu actuelle.
 
 
+### Étape 1 : mise à jour du système
 
-### Étape 5 : installez le système de base de données MySQL/MariaDB
+Une fois connecté à votre serveur via SSH, assurez-vous que tous les paquets sont à jour :
 
-Nous arrivons à la quatrième et dernière brique du *stack* LAMP, le système de bases de données.
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+Vous pouvez maintenant installer les paquets LAMP actuels.
 
 > [!primary]
 >
-> Depuis le rachat de MySQL par Oracle, le fondateur de MySQL a créé en 2009 un dérivé (*fork* en anglais) plus communautaire et plus ouvert, appelé MariaDB en hommage à sa deuxième fille.
-> 100 % des commandes MySQL sont compatibles avec MariaDB, tout comme vos applicatifs web préférés.
-> La distribution Linux Debian propose MariaDB par défaut. Si vous utilisez ce système d'exploitation, vous pourrez lire « MariaDB » dans votre terminal lors de cette étape.
+> Comme les progiciels sont régulièrement mis à jour, vous devrez peut-être ajuster les instructions suivantes en fonction des dernières versions.
+
+### Étape 2 : installation d'Apache
+
+Installez les paquets Apache (y compris la documentation) :
+
+```bash
+sudo apt install -y apache2 apache2-doc
+```
+
+Vous pouvez vérifier l’installation avec la commande suivante :
+
+```bash
+sudo systemctl status apache2
+```
+
+Vous pouvez également ouvrir `http://server_IP` dans un navigateur Web. La page « Apache2 Debian Default Page » devrait s'afficher.
+
+
+### Étape 3 : installer le serveur de bases de données et PHP
+
+Installez les paquets de MariaDB et PHP :
+
+```bash
+sudo apt install -y php php-pdo php-mysql php-zip php-gd php-mbstring php-curl php-xml php-pear php-bcmath mariadb-server
+```
+
+### Étape 4 : configuration du serveur de base de données <a name="sqlconf"></a>
+
+MariaDB fournit un script pour vous aider dans la configuration initiale et pour appliquer certains paramètres liés à la sécurité.
+
+Pour l'exécuter, entrez la commande suivante :
+
+```bash
+sudo mysql_secure_installation
+```
+
+Confirmez la première invite en appuyant sur `Entrée`{.action}.
+
+Choisissez ensuite une méthode pour sécuriser les accès à votre serveur de bases de données. 
+
+```console
+Switch to unix_socket authentication [Y/n]
+```
+
+Il est recommandé d'utiliser la méthode d'authentification proposée (*unix_socket*) à la place de l'accès par mot de passe root. Appuyez sur `y`{.action} puis sur `Entrée`{.action}. Si vous décidez d'utiliser l'accès utilisateur root à la place, choisissez `n`{.action}, puis définissez un mot de passe root à l'invite suivante.
+
+Entrez `n`{.action} à l'invite suivante :
+
+```console
+Change the root password? [Y/n]
+```
+
+Les invites suivantes concernant les mesures de sécurité, confirmez-les toutes avec `y`{.action} jusqu'à la fin du script.
+
+```console
+Reloading the privilege tables will ensure that all changes made so far
+will take effect immediately.
+
+Reload privilege tables now? [Y/n] y
+ ... Success!
+
+Cleaning up...
+
+All done!  If you've completed all of the above steps, your MariaDB
+installation should now be secure.
+
+Thanks for using MariaDB!
+```
+
+Si vous avez configuré l'accès MariaDB de la manière recommandée (*unix_socket*), vous disposez désormais d'un accès administrateur automatique (*root*) à celui-ci chaque fois que vous êtes connecté au serveur en tant qu'utilisateur avec des droits élevés (*sudo*).
+
+> [!primary]
 >
+> Pour préparer une base de données à son utilisation via un logiciel, vous pouvez suivre la section ci-dessous. Vous devrez fournir les identifiants de la base de données (nom de la base de données, utilisateur, mot de passe) lors de l'installation d'une application telle qu'un CMS (comme WordPress, Drupal, etc...). En termes de bonnes pratiques, évitez d'utiliser la même base de données dans différentes applications.
+> 
+> Pour installer WordPress sur un serveur, vous pouvez suivre [ce tutoriel](/pages/platform/public-cloud/install_wordpress_on_an_instance).
 
+#### Créer votre première base de données et un utilisateur de base de données (facultatif)
 
-Voici la commande à utiliser (votre mot de passe de compte utilisateur Linux vous sera demandé) :
+Ouvrez le shell MariaDB :
 
-```sh
-sudo apt-get install mysql-server
+```bash
+sudo mariadb
 ```
 
-Par défaut, le mot de passe administrateur MySQL/MariaDB sera le même que celui de votre utilisateur système. Pour personnaliser la sécurisation de votre base de données, voici la commande à effectuer :
-
-```sh
-mysql_secure_installation
+```sql
+MariaDB [(none)]> 
 ```
 
-Entrez votre mot de passe « root », puis changez le mot de passe :
+Créez une base de données :
 
-```sh
-Change the root password? [Y/n] => y
-New password:
+```sql
+MariaDB [(none)]> CREATE DATABASE database_name;
 ```
 
-Désactivez ensuite les connexions anonymes :
+Créez un « utilisateur » portant le nom de votre choix et accordez-lui tous les droits sur cette base de données. Ce dernier peut alors accéder à la base de données et effectuer toutes les opérations pour l'application utilisant cette base de données. Remplacez `database_name` par le nom de votre base de données, `user_name` par le nom de votre choix et `password` par un mot de passe fort.
 
-```sh
-Remove anonymous users? [Y/n] => y
+```sql
+MariaDB [(none)]> GRANT ALL ON database_name.* TO 'user_name'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION;
 ```
 
-Désactivez la connexion en « root » depuis une connexion distante :
+Assurez-vous que les modifications apportées sont appliquées et quittez ensuite le shell MariaDB :
 
-```sh
-Disallow root login remotely? [Y/n] => y
-```
-
-Il faut maintenant effacer la base de données de test créée par défaut :
-
-```sh
-Remove test database and access to it? [Y/n] => y
-```
-
-Il reste à charger les nouveaux paramètres :
-
-```sh
-Reload privilege tables now? [Y/n] => y
-```
-
-Pour tester l’accès à votre base de données, voici la commande à utiliser dans votre terminal :
-
-```sh
-mysql -u root -p
-
-MariaDB [(none)]> show databases;
-MariaDB [(none)]> exit
-```
-
-Nous vous conseillons de créer un utilisateur spécifique et dédié à votre applicatif web. Si besoin, référez-vous à la documentation officielle [MySQL](https://dev.mysql.com/){.external} ou [MariaDB](https://mariadb.com/kb/en/library/user-account-management/){.external}.
-
-
-
-### Étape 6 : installez phpMyAdmin (optionnel)
-
-L'installation du serveur LAMP est terminée ! Cette étape est optionnelle.
-L'interface open source phpMyAdmin va vous permettre de gérer plus facilement vos bases de données via une interface web.
-
-Pour l'installer voici la commande à entrer :
-
-```sh
-sudo apt-get install phpmyadmin
-```
-
-Dans les choix proposés, sélectionnez un serveur web à reconfigurer automatiquement pour exécuter `phpMyAdmin` :
-
-- cochez `()apache2`{.action}, puis `Entrée`{.action} ;
-- acceptez l'aide à la configuration, puis rentrez un mot de passe administrateur MySQL.
-
-Afin d’accéder à l'interface de gestion de `phpMyAdmin`, vous devrez finaliser la configuration votre serveur Apache. Pour cela, éditez le fichier de configuration Apache :
-
-```sh
-sudo nano /etc/apache2/apache2.conf
-```
-
-À la fin du fichier, rajoutez :
-
-```sh
-# Include phpMyAdmin
-Include /etc/phpmyadmin/apache.conf
-```
-
-Le service Apache doit ensuite être relancé grâce à cette commande :
-
-```sh
-sudo service apache2 restart
-```
-
-Afin de vous connecter, vous devrez au préalable créer un utilisateur possédant les droits administrateur pour `phpMyAdmin` :
-
-```sh
-mysql -u root -p
-[mot de passe]
-MariaDB [(none)]> CREATE USER 'my_user'@'localhost' IDENTIFIED BY 'my_password';
-MariaDB [(none)]> GRANT ALL PRIVILEGES ON * . * TO 'my_user'@'localhost';
+```sql
 MariaDB [(none)]> FLUSH PRIVILEGES;
 ```
 
-Accédez ensuite à l'interface via `http://IP_du_serveur/phpmyadmin/` :
-
- 
-![Installation de PMA](images/tuto_pma.png){.thumbnail}
-
-### Étape 7 : installez WordPress (optionnel)
-
-Cette partie est elle aussi optionnelle. Voici brièvement les étapes pour installer ce CMS :
-
-Téléchargez, décompressez et copiez le contenu dans un nouveau dossier appelé `mywebsite`:
-
-```sh
-wget https://wordpress.org/latest.tar.gz
-tar xpf latest.tar.gz
-sudo cp -r wordpress /var/www/html/mywebsite
+```sql
+MariaDB [(none)]> exit;
 ```
 
-Ce dossier contenant WordPress est maintenant accessible sur `http://IP_du_serveur/mywebsite/`.
+### Étape 5 : configuration du firewall (facultatif)
 
-Créez une base nommée `wordpress` en ligne de commande ou via `phpMyAdmin`.
+[La configuration d’un pare-feu](https://docs.ovh.com/fr/dedicated/firewall-iptables/) (*iptables*) permettra d’améliorer la sécurité de votre serveur. Ce processus peut être simplifié en utilisant le frontend « Uncomplicated Firewall » (UFW) et son ensemble de profils prédéfinis. 
 
-Votre écran de configuration doit ressembler à celui ci-dessous :
+Installez UFW :
 
- 
-![Installation de WordPress](images/tuto_wp.png){.thumbnail}
+```bash
+sudo apt install ufw
+```
 
-Si vous avez un avertissement au niveau de la création du fichier `wp-config.php`, éditez les droits en exécution, lecture, écriture en fonction de vos besoins (communément appelés `CHMOD`).
+Les profils concernés portent la mention « WWW » dans la liste des applications :
 
+```bash
+sudo ufw app list | grep WWW
+  WWW
+  WWW Cache
+  WWW Full
+  WWW Secure
+```
 
-## Conclusion
+En choisissant « WWW Full », vous autorisez à la fois les connexions sécurisées (port 443) et les requêtes *http* non sécurisées (port 80) vers le serveur web.
 
-Voilà, le CMS WordPress est installé et est propulsé par votre stack LAMP installé dans ce tutoriel !
+Pour voir quels ports sont affectés par un profil particulier, entrez `sudo ufw app info "profile name"`.
 
-Nous venons d'installer un serveur LAMP en partant de zéro, vous permettant ainsi d'héberger vous-même vos sites et applications web. En réalisant cette installation par vos propres moyens, vous gardez une liberté de configuration totale. N'hésitez pas à lire la documentation officielle d'Apache pour en découvrir toutes les possibilités.
+En entrant la commande suivante, les ports définis par le profil « WWW Full » seront ouverts :
 
-Si vous désirez aller plus loin ou que vous êtes curieux, sachez qu'il existe des alternatives à Apache : la plus connue au succès grandissant étant NGNIX (prononcez « engine-x »). 
-Un *stack* incluant NGINX est appelé LEMP, et est souvent réputé pour être plus léger. Nous vous conseillons enfin de sécuriser votre site avec un certificat SSL.
+```bash
+sudo ufw allow 'WWW Full'
+```
+
+Comme tous les ports non explicitement autorisés seront **bloqués** après l'activation du firewall, assurez-vous d'autoriser également les connexions SSH (port 22 dans une configuration par défaut) :
+
+```bash
+sudo ufw allow 'SSH'
+```
+
+Enfin, activez les règles de pare-feu et vérifiez la configuration :
+
+```bash
+sudo ufw enable
+```
+
+```bash
+sudo ufw status
+```
+
+```console
+Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), disabled (routed)
+New profiles: skip
+
+To                         Action      From
+--                         ------      ----
+80,443/tcp (WWW Full)      ALLOW IN    Anywhere                  
+22/tcp (SSH)               ALLOW IN    Anywhere                  
+80,443/tcp (WWW Full (v6)) ALLOW IN    Anywhere (v6)             
+22/tcp (SSH (v6))          ALLOW IN    Anywhere (v6)       
+```
+
+Vous pouvez aller plus loin avec l’UFW, par exemple si vous souhaitez restreindre les attaques par *déni de service* (DOS) ou empêcher les requêtes par certaines plages d’adresses IP. Reportez-vous à la [documentation officielle de l'UFW](https://help.ubuntu.com/community/UFW).
+
+### Étape 6 : configuration DNS (facultatif)
+
+L'accès à l'installation de votre serveur web via un nom de domaine nécessite de l'attacher à votre service. Pour ce faire, vous devez éditer la zone DNS accessible depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), à condition qu’OVHcloud soit votre bureau d’enregistremente **et** que le nom de domaine utilise les serveurs DNS d’OVHcloud.
+
+Consultez le guide « [Éditer une zone DNS](/pages/web/domains/dns_zone_edit) » pour en savoir plus. Si le nom de domaine est actuellement utilisé, configurez les DNS uniquement après que votre site web ou votre application soit prêt.
+
+### Étape 7 : activer des connexions sécurisées avec Let’s Encrypt (facultatif)
+
+> [!primary]
+>
+> Pour établir des connexions sécurisées (`https`), le serveur web doit être sécurisé via une Autorité de Certification officielle comme « [Let’s Encrypt](https://letsencrypt.org/) » qui propose des certificats gratuits. Vous devrez installer un outil client (tel que Certbot) et configurer Apache en conséquence. Sans cette étape, votre site web ou votre application ne peut accepter que des requêtes `http` non chiffrées.
+> 
+> En alternative, OVHcloud vous propose la solution [SSL Gateway](https://www.ovh.com/fr/ssl-gateway/). Référez-vous à [notre documentation](/pages/web/ssl-gateway/order-ssl-gateway) pour plus d'informations.
+> 
+
+Assurez-vous d’abord que votre nom de domaine est correctement renseigné dans la zone DNS, c’est-à-dire mappé sur l’adresse IP de votre serveur.
+
+> [!warning]
+> La commande suivante installe une version de Certbot qui fonctionne mais est obsolète (*certbot 1.12.0*). Pour installer la dernière version, vous devez utiliser le gestionnaire de paquets supplémentaire *snappy*. Vous trouverez les instructions d'installation sur le [site de Certbot](https://certbot.eff.org/instructions?ws=apache&os=debianbuster).
+>
+
+Installez les paquets requis pour le client Certbot :
+
+```bash
+sudo apt install -y certbot python3-certbot-apache
+```
+
+Obtenez le certificat de votre nom de domaine et du sous-domaine « www » :
+
+```bash
+sudo certbot --apache -d domainname.ovh -d www.domainname.ovh
+```
+
+Vous devrez renseigner une adresse e-mail valide et accepter les conditions d'utilisation.
+
+Certbot renouvelle automatiquement les certificats. Aucune autre étape n'est nécessaire. Vous pouvez toutefois consulter les options disponibles pour en savoir plus sur les fonctionnalités de Certbot.
+
+## Aller plus loin
+
+[Documentation UFW](https://help.ubuntu.com/community/UFW)
+
+[Documentation Apache](https://httpd.apache.org/docs/)
+
+[Documentation MariaDB](https://mariadb.com/kb/en/documentation/)
+
+[Documentation Let's Encrypt](https://httpd.apache.org/docs/)
+
+[Documentation Certbot](https://eff-certbot.readthedocs.io/en/stable/)
+
+[Documentation NGINX](https://nginx.org/en/docs/) (alternative Apache)
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

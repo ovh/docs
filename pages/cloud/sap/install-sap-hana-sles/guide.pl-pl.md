@@ -100,7 +100,7 @@ sdc             8:32   0 447.1G  0 disk
 </ol>
 
 ```bash
-$ pvcreate /dev/sda
+pvcreate /dev/sda
 ```
 
 <ol start="3">
@@ -130,11 +130,11 @@ We advise you to follow this table to size your logical volumes.
 In each line, replace the character `<X>` by the size of your logical volume wanted in gigabytes, for example 32.
 
 ```bash
-$ lvcreate -L<X>G -n lv_usrsap vg_hana
-$ lvcreate -L<X>G -n lv_hanadata vg_hana
-$ lvcreate -L<X>G -n lv_hanalog vg_hana
-$ lvcreate -L<X>G -n lv_hanashared vg_hana
-$ lvcreate -L<X>G -n lv_hanabackup vg_hana
+lvcreate -L<X>G -n lv_usrsap vg_hana
+lvcreate -L<X>G -n lv_hanadata vg_hana
+lvcreate -L<X>G -n lv_hanalog vg_hana
+lvcreate -L<X>G -n lv_hanashared vg_hana
+lvcreate -L<X>G -n lv_hanabackup vg_hana
 ```
 
 <ol start="5">
@@ -144,11 +144,11 @@ $ lvcreate -L<X>G -n lv_hanabackup vg_hana
 In this guide, we use the XFS format. We recommend taking into consideration the [SAP Note 2972496 - SAP HANA Filesystem Types](https://launchpad.support.sap.com/#/notes/2972496) to discover all formats supported by SAP HANA.
 
 ```bash
-$ mkfs.xfs /dev/vg_hana/lv_usrsap
-$ mkfs.xfs /dev/vg_hana/lv_hanadata
-$ mkfs.xfs /dev/vg_hana/lv_hanalog
-$ mkfs.xfs /dev/vg_hana/lv_hanashared
-$ mkfs.xfs /dev/vg_hana/lv_hanabackup
+mkfs.xfs /dev/vg_hana/lv_usrsap
+mkfs.xfs /dev/vg_hana/lv_hanadata
+mkfs.xfs /dev/vg_hana/lv_hanalog
+mkfs.xfs /dev/vg_hana/lv_hanashared
+mkfs.xfs /dev/vg_hana/lv_hanabackup
 ```
 
 <ol start="6">
@@ -156,7 +156,7 @@ $ mkfs.xfs /dev/vg_hana/lv_hanabackup
 </ol>
 
 ```bash
-$ mkdir -p /hana/data /hana/log /hana/shared /usr/sap /hanabackup
+mkdir -p /hana/data /hana/log /hana/shared /usr/sap /hanabackup
 ```
 
 <ol start="7">
@@ -166,11 +166,11 @@ $ mkdir -p /hana/data /hana/log /hana/shared /usr/sap /hanabackup
 To get each UUID from logical volumes, you can use these commands:
 
 ```bash
-$ blkid /dev/vg_hana/lv_usrsap | awk '{print $2}'
-$ blkid /dev/vg_hana/lv_hanadata | awk '{print $2}'
-$ blkid /dev/vg_hana/lv_hanalog | awk '{print $2}'
-$ blkid /dev/vg_hana/lv_hanashared | awk '{print $2}'
-$ blkid /dev/vg_hana/lv_hanabackup | awk '{print $2}'
+blkid /dev/vg_hana/lv_usrsap | awk '{print $2}'
+blkid /dev/vg_hana/lv_hanadata | awk '{print $2}'
+blkid /dev/vg_hana/lv_hanalog | awk '{print $2}'
+blkid /dev/vg_hana/lv_hanashared | awk '{print $2}'
+blkid /dev/vg_hana/lv_hanabackup | awk '{print $2}'
 ```
 
 <ol start="8">
@@ -201,7 +201,7 @@ The SAPtune package is available on the SUSE operating system, and allows applyi
 1. Install the saptune package.
 
 ```bash
-$ zypper install -y saptune
+zypper install -y saptune
 ```
 
 <ol start="2">
@@ -213,7 +213,7 @@ $ zypper install -y saptune
 To set these parameters after choosing your solution, run this following command:
 
 ```bash
-$ saptune solution apply <HANA|S4HANA-DBSERVER>
+saptune solution apply <HANA|S4HANA-DBSERVER>
 ```
 
 <ol start="3">
@@ -221,7 +221,7 @@ $ saptune solution apply <HANA|S4HANA-DBSERVER>
 </ol>
 
 ```bash
-$ saptune service enablestart
+saptune service enablestart
 ```
 
 <ol start="4">
@@ -245,5 +245,7 @@ You can proceed to its installation following the [official SAP guide](https://h
 ## Go further
 
 [How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](https://docs.ovh.com/pl/dedicated/ola-sles15/)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

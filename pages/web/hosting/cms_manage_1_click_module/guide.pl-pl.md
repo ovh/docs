@@ -102,7 +102,7 @@ Następnie kliknij przycisk `...`{.action} znajdujący się po prawej stronie li
 > - PrestaShop : Producent tego oprogramowania nie udostępnia w terminie dokumentacji zmiany hasła dostępu do interfejsu administracyjnego PrestaShop. Prosimy o bezpośredni kontakt z wydawcą na ten temat. Aby uzyskać więcej informacji, kliknij [tutaj](https://www.prestashop.com){.external} i przejdź do oficjalnej strony.
 >
 Możesz również zmienić hasło dostępowe do interfejsu administracyjnego Twojego CMS bezpośrednio z Twojej bazy danych.<br>
-Zalecamy jednak, abyś przeprowadził operację w oparciu o dokumentację przygotowaną przez producenta systemu CMS lub skorzystał z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/), jeśli masz trudności. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź dalej](#go-further) niniejszego przewodnika.
+Zalecamy jednak, abyś przeprowadził operację w oparciu o dokumentację przygotowaną przez producenta systemu CMS lub skorzystał z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/), jeśli masz trudności. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź dalej](#go-further) niniejszego przewodnika.
 
 ### Usuń moduł
 
@@ -169,7 +169,7 @@ Nie instaluj na Twojej stronie wtyczek ani szablonów, które nie są zalecane p
 
 [Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia](https://docs.ovh.com/pl/hosting/bledy-frameworki-moduly-za-1-kliknieciem/).
 
-Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
+Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z [naszymi ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 

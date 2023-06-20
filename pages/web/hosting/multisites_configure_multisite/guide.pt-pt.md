@@ -4,14 +4,14 @@ slug: multisites-configurar-um-multisite-no-meu-alojamento-web
 excerpt: 'Saiba como alojar diferentes websites no seu alojamento web'
 section: Primeiros passos
 order: 03
-updated: 2022-11-04
+updated: 2023-06-08
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 22/08/2022**
+**Última atualização: 08/06/2023**
 
 ## Objetivo
 
@@ -143,6 +143,8 @@ Tenha em atenção os elementos apresentados e clique no botão `Validar`{.actio
 > [!warning]
 >
 > Para que o seu domínio seja adicionado corretamente, deverá **efetuar rapidamente** estas alterações. Caso contrário, a adição do seu domínio será anulada.
+>
+> As entradas DNS de tipo **A** e **TXT** devem obrigatoriamente ser colocadas na zona DNS ativa do seu nome de domínio para que este seja adicionado ao seu alojamento web. Apenas as entradas DNS de tipo **AAAA** são opcionais. 
 >
 
 ### Etapa 3: colocar o seu website online <a name="site-online"></a>

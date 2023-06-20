@@ -4,18 +4,21 @@ excerpt: Erfahren Sie hier, wie Sie Ihre Website wieder online bringen, wenn ein
 slug: diagnose-index-of
 section: Diagnose
 order: 07
-updated: 2022-05-10
+updated: 2023-05-04
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 10.05.2022**
+**Letzte Aktualisierung am 04.05.2022**
 
 ## Ziel 
 
-Eine Fehlkonfiguration der `Multisite`-Einstellungen kann dazu führen, dass Ihre Website eine Seite namens **"Index of"** anzeigt.
+Eine **Index of**-Seite erscheint in mindestens einem der folgenden Fälle:
+
+- Ihr Domainname ist in der [Multisite-Konfiguration](/pages/web/hosting/multisites_configure_multisite) nicht korrekt auf Ihr Zielverzeichnis eingestellt.
+- Das Zielverzeichnis, auf das Ihr Domainname verweist, enthält keine Datei namens **index.html** oder **index.php**.
 
 ![index_of](images/index_of.png){.thumbnail}
 
@@ -29,6 +32,7 @@ Eine Fehlkonfiguration der `Multisite`-Einstellungen kann dazu führen, dass Ihr
 
 ## Voraussetzungen
 
+- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
 - Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
@@ -36,17 +40,17 @@ Eine Fehlkonfiguration der `Multisite`-Einstellungen kann dazu führen, dass Ihr
 
 ### Den Ursprung der "Index of"-Seite verstehen
 
-Über die `Multisite`-Konfiguration Ihres Hostings wird Ihr Domainname mit einem Ordner (`Wurzelverzeichnis`) in Ihrem [FTP-Speicherplatz](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) verbunden.
+Über die `Multisite`-Konfiguration Ihres Hostings wird Ihr Domainname mit einem Zielverzeichnis im [FTP-Speicherplatz](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) Ihres Webhostings verknüpft. Dies geschieht über den Tab [Multisite](/pages/web/hosting/multisites_configure_multisite) Ihres Webhostings in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
-Die Seite **"Index of"** ist ein Anzeichen dafür, dass Ihr Verzeichnis keine Indexdatei, also **index.php** oder **index.html** enthält. Eine solche Datei ist der 'Einstiegspunkt' Ihrer Website. 
+Die Seite "**Index of**" ist ein Anzeichen dafür, dass Ihr Verzeichnis keine Indexdatei, also **index.php** oder **index.html** enthält. Eine solche Datei repräsentiert die Startseite bzw. den Einstiegspunkt Ihrer Website. Der Name dieser Datei ist standardisiert.
 
-Ihr Domainname muss daher im `Multisite`{.action}-Bereich Ihres Hostings mit einem `Wurzelverzeichnis` verknüpft werden, das eine **index.php** oder **index.html** Datei enthält.
+Ihr Domainname muss daher im Bereich `Multisite`{.action} Ihres Webhostings mit dem Wurzelverzeichnis verknüpft werden, das eine **index.php** oder **index.html** enthält.
 
 > [!primary]
 >
-> Wenn Sie Ihren Domainnamen temporär mit einem `Wurzelverzeichnis` verbinden möchten, das keine **index.php** oder **index.html** Datei enthält, können Sie verhindern, dass die Auflistung von Ordnern auf Ihrer Website angezeigt wird, indem Sie [dieser Anleitung](https://docs.ovh.com/de/hosting/webhosting_welche_anderen_operationen_sind_mit_htaccess-dateien_moglich/#verzeichnis-browsing-verhindern) folgen. Sie können auch den Zugang zu Ihren Ordnern mit einem [Passwort](https://docs.ovh.com/de/hosting/hosting-htaccess-authentifizierung/) schützen.
+> Wenn Sie Ihren Domainnamen temporär mit einem `Wurzelverzeichnis` verknüpfen möchten, das keine **index.php** oder **index.html** Datei enthält, können Sie verhindern, dass die Auflistung von Ordnern auf Ihrer Website angezeigt wird, indem Sie [diesem Tutorial](https://docs.ovh.com/de/hosting/webhosting_welche_anderen_operationen_sind_mit_htaccess-dateien_moglich/#verzeichnis-browsing-verhindern) folgen. Sie können auch den Zugang zu Ihren Ordnern [mit einem Passwort schützen](https://docs.ovh.com/de/hosting/hosting-htaccess-authentifizierung/).
 >
-> Wir empfehlen Ihnen, einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, falls Sie Schwierigkeiten haben, diese Konfiguration einzurichten. Unsere Support-Teams sind nicht in der Lage, Sie bei Änderungen an der internen Programmierung Ihrer Webseite zu unterstützen.
+> Wir empfehlen Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren, falls Sie Schwierigkeiten haben, diese Konfiguration einzurichten. Unsere Support-Teams sind nicht in der Lage, Sie bei Änderungen an der internen Programmierung Ihrer Webseite zu unterstützen.
 
 ### Die häufigste Ursache einer "Index of"-Seite beheben
 
@@ -60,8 +64,8 @@ Sie haben die Dateien Ihrer Website **mydomain.ovh** per [FTP](https://docs.ovh.
 
 Führen Sie im neuen Fenster die folgenden Aktionen aus:
 
-- Setzen Sie einen Haken bei `Auch die Subdomain www.mydomain.ovh ändern`{.action} (1);
-- Geben Sie den Ordnernamen Ihrer Webseite, der die **index.php** oder **index.html** enthält, als `Wurzelverzeichnis` (2) an;
+- Setzen Sie einen Haken bei `Auch die Subdomain www.mydomain.ovh ändern`{.action} (1).
+- Geben Sie den Ordnernamen Ihrer Webseite, der die **index.php** oder **index.html** enthält, als `Wurzelverzeichnis` (2) an.
 - Klicken Sie auf `Weiter`{.action} (3).
 
 ![change_root_folder](images/change_root_folder01.png){.thumbnail}
@@ -81,6 +85,8 @@ Sie erhalten das Ergebnis innerhalb weniger Minuten (denken Sie daran, Ihren Bro
 
 Überprüfen Sie, ob Ihre Webseite korrekt angezeigt wird. Wenn dies nicht der Fall ist, starten Sie Ihr Gerät neu und leeren Sie den Cache Ihres Browsers.
 
+Stellen Sie außerdem sicher, dass eine Datei namens **index.php** oder **index.html** in Ihrem Zielverzeichnis vorhanden ist.
+
 ## Weiterführende Informationen <a name=“gofurther“></a>
 
 [Die häufigsten Fehler bei 1-Klick-Modulen beheben](https://docs.ovh.com/de/hosting/fehler-bei-1-klick-modulen/)
@@ -89,6 +95,8 @@ Sie erhalten das Ergebnis innerhalb weniger Minuten (denken Sie daran, Ihren Bro
 
 [Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/)
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, lesen Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -25,7 +25,7 @@ Al realizar el upgrade de un VPS, es posible que tenga que reparticionar su espa
 ## Requisitos
 
 - Tener acceso de administrador al VPS (Windows).
-- Haber reiniciado el servidor en [modo de rescate](../rescue/)(Linux).
+- Haber reiniciado el servidor en [modo de rescate](../rescue/) (Linux).
 
 ## Procedimiento
 
@@ -238,7 +238,7 @@ fsck -b 32768 /dev/sdb1
 
 #### Acceder a File and Storage Services
 
-Puede encontrarlo en el servidor Manager :
+Puede encontrarlo en el servidor Manager:
 
 ![File and Storage Services](images/file-and-storage.png){.thumbnail}
 

@@ -128,17 +128,14 @@ You can then use the service in a configuration file of your application with so
 
 > [!tabs]      
 > Java     
->> ``` java     
->> {!> web/web-paas/static/files/fetch/examples/java/redis !}  
->> ```     
+>> [Redis - Java](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/java/redis)  
+>>      
 > PHP     
->> ``` php     
->> {!> web/web-paas/static/files/fetch/examples/php/redis !}  
->> ```     
+>> [Redis - PHP](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/redis)  
+>>      
 > Python     
->> ``` python     
->> {!> web/web-paas/static/files/fetch/examples/python/redis !}  
->> ```     
+>> [Redis - Python](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/redis)  
+>>      
 
 ## Multiple databases
 

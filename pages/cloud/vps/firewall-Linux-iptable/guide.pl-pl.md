@@ -21,7 +21,7 @@ Firewall działa poprzez określenie zasad regulujących dozwolony ruch i zablok
 
 > [!warning]
 >
-> OVHcloud oddaje do Twojej dyspozycji usługi, za które przejmujesz odpowiedzialność. Firma OVH nie ma dostępu do Twoich serwerów, nie pełni funkcji administratora i w związku z tym nie będzie mogła udzielić Ci wsparcia. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta.
+> OVHcloud oddaje do Twojej dyspozycji usługi, za które przejmujesz odpowiedzialność. Firma OVHcloud nie ma dostępu do Twoich serwerów, nie pełni funkcji administratora i w związku z tym nie będzie mogła udzielić Ci wsparcia. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta.
 >
 > Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub zabezpieczeniem serwera rekomendujemy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Więcej informacji znajduje się w sekcji “Sprawdź również”.
 >
@@ -72,15 +72,15 @@ sudo iptables [option] CHAIN_rule [-j target]
 
 Poniżej znajduje się lista kilku opcji Do wyboru:
 
-- -A -—append: Dodaj regułę do łańcucha (na końcu).
-- -C —-check: Wyszukiwanie reguły, która odpowiada wymaganiom łańcucha.
-- -D —-delete: Usuwa określone reguły łańcucha.
-- -F —-flush: Usuń wszystkie reguły.
-- -I —-insert: Dodaje regułę do danego łańcucha.
-- -L —-list: Wyświetl wszystkie reguły łańcucha.
-- -N -new-chain: Stwórz nowy kanał.
-- -v —-verbose: Wyświetla więcej informacji podczas korzystania z opcji listy.
-- -X —-delete-chain: Usuń ciąg.
+- -A --append: Dodaj regułę do łańcucha (na końcu).
+- -C --check: Wyszukiwanie reguły, która odpowiada wymaganiom łańcucha.
+- -D --delete: Usuwa określone reguły łańcucha.
+- -F --flush: Usuń wszystkie reguły.
+- -I --insert: Dodaje regułę do danego łańcucha.
+- -L --list: Wyświetl wszystkie reguły łańcucha.
+- -N --new-chain: Stwórz nowy kanał.
+- -v --verbose: Wyświetla więcej informacji podczas korzystania z opcji listy.
+- -X --delete-chain: Usuń ciąg.
 
 ### Etap 3: sprawdź obecny stan iptables
 
@@ -132,7 +132,7 @@ sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 Opcje działają następująco:
 
 - -p : Sprawdź określony protokół (tcp).
-- —-dport: Określa port docelowy.
+- --dport: Określa port docelowy.
 - -j jump: Wykonaj czynność 
 
 > [!warning]
@@ -167,9 +167,9 @@ sudo iptables -A INPUT -m iprange --src-range adres_IP_początku_adresu_IP_fin -
 
 Opcje iptables, których używaliśmy w przykładach działają następująco:
 
-- -m : Odpowiada określonej opcji.
+- -m: Odpowiada określonej opcji.
 - -iprange: Wskazuje, że system będzie czekać na określony zakres adresów IP zamiast na jeden.
-- —-src-range: Określa zakres adresów IP.
+- --src-range: Określa zakres adresów IP.
 
 ### Etap 7: usuń niepożądany ruch
 
@@ -228,4 +228,4 @@ Nie wahaj się doświadczyć, ponieważ zawsze możesz usunąć reguły, któryc
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie  <https://community.ovh.com/en/>.

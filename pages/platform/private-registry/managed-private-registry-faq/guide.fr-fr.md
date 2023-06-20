@@ -3,16 +3,16 @@ title: 'FAQ Managed Private Registry (Harbor)'
 slug: managed-private-registry-faq
 section: 'Getting started'
 order: 1
-updated: 2023-04-25
+updated: 2023-05-09
 ---
 
-**Last updated 25th April, 2023.**
+**Last updated 9th May, 2023.**
 
 ## Objective
 Here are the most frequently asked questions about Managed Private Registry (Harbor).
 
 ### In which regions is the Private Registry solution available?
-Private Registry is currently available in Western Europe (**GRA** region) and North America (**BHS** region).
+Private Registry is currently available in Western Europe (**GRA**/**DE** regions) and North America (**BHS** region).
 
 ### What are the Managed Private Registry service dependencies?
 
@@ -20,11 +20,12 @@ The MPR (Managed Private Registry) service is managed by our teams relying on co
 
 Find below the exact locations of the dependencies:
 
-| X              | Dependencies | Public Cloud<br>(Compute/Network) | Object Storage S3 standard  |
-|----------------|:------------:|:---------------------------------:|:---------------------------:|
-| **MPR region** |      X       |                 X                 |              X              |
-| GRA            |      X       |               GRA7                |             GRA             |
-| BHS            |      X       |               BHS5                |             BHS             |
+| X              | Dependencies | Public Cloud<br>(Compute/Network) | Object Storage S3 standard |
+|----------------|:------------:|:---------------------------------:|:--------------------------:|
+| **MPR region** |      X       |                 X                 |             X              |
+| GRA            |      X       |               GRA7                |            GRA             |
+| BHS            |      X       |               BHS5                |            BHS             |
+| DE             |      X       |                DE1                |             DE             |
 
 ### What version of Harbor is offered?
 All new Private Registry services expose Harbor 2.x. We regularly backport security and performance patches from the latest versions and will regularly propose new feature upgrades.

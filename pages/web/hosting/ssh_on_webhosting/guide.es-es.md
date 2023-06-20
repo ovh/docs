@@ -21,6 +21,10 @@ Los planes de hosting de OVHcloud permiten disponer de un espacio de almacenamie
 - Disponer de las claves necesarias para conectarse por SSH al espacio de almacenamiento.
 - Conectarse al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `WebCloud`{.action}.
 
+> [!warning]
+> 
+> Es posible acceder por SSH a un alojamiento web de OVHcloud desde [el plan Pro](https://www.ovhcloud.com/es-es/web-hosting/compare/).
+
 ## Procedimiento
 
 ### 1\. Comprobar que el acceso SSH está activo <a name="sshcheck"></a>
@@ -59,7 +63,7 @@ Existen dos formas de conectarse según el método que utilice:
 
 Una vez abierto el terminal, utilice el siguiente comando, sustituyendo los elementos "yurlogin", "ssh.cluster000.hosting.ovh.net" y "22" por los correspondientes a sus identificadores SSH. 
 
-```ssh
+```bash
 ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 ```
 

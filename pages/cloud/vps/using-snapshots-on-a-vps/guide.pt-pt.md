@@ -115,21 +115,21 @@ O *qemu-guest-agent* necessário não está instalado por predefinição na maio
 
 Utilize o seguinte comando para verificar se o sistema está corretamente configurado para as snapshots:
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Se o resultado for diferente (“No such file or directory”), instale a última versão do pacote:
 
-```
+```bash
 $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
 Inicie o serviço para garantir que está a ser executado:
 
-```
+```bash
 $ sudo service qemu-guest-agent start
 ```
 
@@ -137,21 +137,21 @@ $ sudo service qemu-guest-agent start
 
 Utilize o seguinte comando para verificar se o sistema está corretamente configurado para as snapshots:
 
-```
+```bash
 $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Se o resultado for diferente (“No such file or directory”), instale e ative o agente:
 
-```
+```bash
 $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
 Inicie o agente e verifique que está a ser executado:
 
-```
+```bash
 $ sudo service qemu-guest-agent start
 $ sudo service qemu-guest-agent status
 ```

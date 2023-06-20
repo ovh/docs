@@ -29,7 +29,7 @@ L’IPv6 è la versione più recente dell’*Internet Protocol*(IP). Ogni server
 - Disporre di un [server VPS OVHcloud](https://www.ovhcloud.com/it/vps/){.external}
 - Essere connesso al tuo VPS in SSH (accesso root) o tramite desktop remoto (Windows)
 - Possedere conoscenze base di rete
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o all'[API OVHcloud](https://api.ovh.com/).
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o all'[API OVHcloud](https://api.ovh.com/)
 
 ## Procedura
 
@@ -121,7 +121,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Esistono due metodi per configurare la tua rete in base al sistema operativo installato sul tuo server:
 
-- **per Debian 11 e inferiore, Ubuntu 16.04 e inferiore**: utilizza il [metodo basato sul file *interfaces*](#interfaces)
+- **per Debian 11 e inferiore, Ubuntu 16.04 e inferiore**: utilizza il [metodo basato sul file *interfaces*](#interfaces).
 
 - **per Ubuntu 17.04 e versioni successive**: utilizza il [metodo basato sulla funzione *Netplan*](#netplan).
 
@@ -144,7 +144,7 @@ In questo modo è possibile separare la configurazione IPv6 e ripristinare facil
 
 Aggiungi queste righe al file. Sostituisci i valori generici (cioè *YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) e l'interfaccia di rete (se il tuo server non utilizza **eth0**) con i valori personalizzati.
 
-```
+```console
 auto eth0
 iface eth0 inet6 static
 mtu 1500
@@ -264,7 +264,7 @@ cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scrip
 
 Modifica il file `ifcfg-eth0` aggiungendo la configurazione IPv6 del tuo server. Sostituisci i valori generici (*YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) con i valori personalizzati.
 
-```
+```console
 IPV6INIT=yes
 IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
@@ -280,7 +280,7 @@ IPV6_DEFAULTGW=IPV6_GATEWAY
 
 - Modifica il file e aggiungi le righe qui sotto. Sostituisci i valori generici (*IPV6_GATEWAY* e **eth0**, se necessario) con i valori personalizzati.
 
-```
+```console
 IPV6_GATEWAY dev eth0
 default via IPV6_GATEWAY
 ```
@@ -349,7 +349,7 @@ ping6 proof.ovh.net
 
 - **Per un sistema Windows**, utilizza il comando:
 
-```
+```powershell
 ipconfig
 
 Windows IP Configuration
@@ -367,7 +367,7 @@ Ethernet adapter Ethernet:
 
 Per verificare la connessione, utilizza il seguente comando:
 
-```
+```powershell
 ping -6 proof.ovh.net
 ```
 

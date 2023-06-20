@@ -236,6 +236,6 @@ W oknie, które się wyświetla wprowadź nowe hasło do Twojej bazy danych (zde
 
 [Rozwiąż najczęstsze błędy związane z bazami danych](https://docs.ovh.com/pl/hosting/blad-baz-danych/)
 
-Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
+Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

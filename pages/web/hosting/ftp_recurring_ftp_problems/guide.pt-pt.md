@@ -96,7 +96,7 @@ Se não utilizou a funcionalidade "[Módulo 1 clique](https://docs.ovh.com/pt/ho
 
 [Utilização do software FileZilla com o seu alojamento](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, convidamo-lo a consultar as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 

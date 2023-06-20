@@ -6,10 +6,10 @@ section: Command Line Interface
 order: 207
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data/'
-updated: 2022-04-13
+updated: 2023-05-11
 ---
 
-**Last updated 13th April, 2022.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 
@@ -27,7 +27,7 @@ Assuming a file named `my-dataset.zip` exists in your current working directory,
 to create a data container named `my-dataset` in the GRA region that will contain your `my-dataset.zip` file.
 
 ``` {.console}
-$ ovhai data upload GRA my-dataset my-dataset.zip
+$ ovhai bucket object upload my-dataset@GRA my-dataset.zip
 ```
 
 This file can now be accessed from your notebooks, either with read-only or read-write permissions.
@@ -135,6 +135,8 @@ $ ovhai notebook patch <notebook ID> -v my-dataset@GRA:/workspace/datasets:rw
 >
 > This is the same option as the `run` command above. You can choose to mount the volume in read-only or read & write mode and mount multiple volumes.
 >
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

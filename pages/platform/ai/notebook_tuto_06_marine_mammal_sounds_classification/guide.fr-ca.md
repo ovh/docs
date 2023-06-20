@@ -6,10 +6,10 @@ section: AI Notebooks - Tutoriels
 order: 06
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-marine-mammal-sounds-classification/'
-updated: 2023-03-31
+updated: 2023-05-11
 ---
 
-**Last updated 31st March, 2023.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 
@@ -42,7 +42,7 @@ If you want to upload it from the [OVHcloud Control Panel](https://ca.ovh.com/au
 If you want to run it with the CLI, just follow this [this guide](https://docs.ovh.com/ca/fr/publiccloud/ai/cli/access-object-storage-data/). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
 ```bash
-ovhai data upload <region> <container> <paths>
+ovhai bucket object upload <container>@<region> <paths>
 ```
 
 > [!primary]
@@ -100,6 +100,8 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 
 - If you want to deploy a **Streamlit** app in order to classify marine mammal sounds using your model, please check out this [notebook](https://docs.ovh.com/ca/fr/publiccloud/ai/deploy/tuto-streamlit-sounds-classification/).
 - You can also compare two methods for audio classification task by following this [tutorial](https://docs.ovh.com/ca/fr/publiccloud/ai/training/tuto-models-comparaison-weights-and-biases/).
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

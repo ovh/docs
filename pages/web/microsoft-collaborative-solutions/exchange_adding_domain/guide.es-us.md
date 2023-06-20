@@ -4,7 +4,7 @@ slug: anadir-dominio-exchange
 excerpt: 'Cómo añadir un dominio a un servicio Exchange'
 section: 'Primeros pasos con Exchange'
 order: 04
-updated: 2022-10-07
+updated: 2023-06-14
 ---
 
 > [!primary]
@@ -66,15 +66,20 @@ Se mostrará un mensaje informativo relativo al modo de configuración del domin
 
 - **Si ha seleccionado en la lista un dominio gestionado por OVHcloud**: deberá elegir entre dos modos.
 
-|Modo|Descripción|
-|---|---|
-|Autoritario|Es conveniente si solo utiliza su solución Exchange o Email Pro con su nombre de dominio. No permite utilizar otra solución de correo conjuntamente con el servicio.|
-|No autoritario|Es el modo adecuado cuando utiliza con su dominio la solución Exchange o Email Pro conjuntamente con otra solución de correo. Debe indicar el servidor de su otra solución de correo.|
+- **Si ha seleccionado en la lista un dominio gestionado por OVHcloud**: deberá elegir entre dos modos.
+    - **Autoritario** : Es conveniente si solo utiliza su solución Exchange o Email Pro con su nombre de dominio. No permite utilizar otra solución de correo conjuntamente con el servicio.|
+    - **No autoritario** : Es el modo adecuado cuando utiliza con su dominio la solución Exchange o Email Pro conjuntamente con otra solución de correo. Debe indicar el servidor de su otra solución de correo.|
 
-> [!primary]
 >
-> La elección de un modo no es definitiva y puede modificarse más adelante desde el área de cliente de OVHcloud.
+> - Cuando se transmite un correo electrónico a su plataforma de correo electrónico (*Server A*) en modo **autoritario**, esto significa que todas las direcciones de correo electrónico de su nombre de dominio solo están alojadas en esta plataforma. <br> <br> Por ejemplo, si enviamos un correo electrónico a la dirección "*mary.johnson@mydomain.ovh*", el "*Server A*" devuelve un mensaje de error al remitente, porque esta dirección no no existe en "*Server A*".
+> - Cuando se transmite un correo electrónico a su plataforma de correo electrónico (*Server A*) en modo **no autorizado**, esto significa que las direcciones de correo electrónico de su nombre de dominio se distribuyen entre el correo electrónico principal de su plataforma (*Server A*) y otro servicio de correo electrónico (*Server B*). <br> <br> Por ejemplo, si enviamos un correo electrónico a la dirección "*mary.johnson@mydomain.ovh*", el *Server A* reenviará el correo electrónico al "*Server B*" para que éste lo entregue.
 >
+>![Agregar dominio](images/add_domain_exchange_authoritative.png){.thumbnail}
+>
+
+> [!warning]
+>
+> Si recibe el mensaje "**dominio autorizado detectado**" al agregar su nombre de dominio a su plataforma de correo electrónico, esto significa que este nombre de dominio está declarado en modo **autorizado** en otra plataforma de correo electrónico. Deberá cambiarlo al modo **no autorizado** en ambas plataformas para que puedan coexistir.
 
 Haga clic en el botón `«Siguiente»`{.action} para continuar con la adición del dominio.
 

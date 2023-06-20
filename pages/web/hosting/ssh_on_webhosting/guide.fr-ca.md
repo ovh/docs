@@ -21,6 +21,10 @@ Les offres d'hébergement web d'OVHcloud vous donnent accès à un espace de sto
 - Être en possession des informations permettant de vous connecter en SSH à l'espace de stockage.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, partie `Web Cloud`{.action}.
 
+> [!warning]
+> 
+> L'accès SSH à un hébergement web OVHcloud est disponible à partir de [l'offre Pro](https://www.ovhcloud.com/fr/web-hosting/compare/).
+
 ## En pratique
 
 ### Étape 1 : s'assurer que l'accès SSH est actif <a name="sshcheck"></a>
@@ -57,7 +61,7 @@ Dès lors, il existe deux possibilités pour vous connecter selon la méthode qu
 
 Une fois le terminal ouvert, utilisez la commande suivante en remplaçant les éléments « yourlogin », « ssh.cluster000.hosting.ovh.net » et « 22 » par ceux correspondant à vos identifiants SSH. 
 
-```ssh
+```bash
 ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 ```
 

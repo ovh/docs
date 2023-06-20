@@ -5,7 +5,7 @@ excerpt: 'Find out how to add labels, annotations and taints on Nodes thanks to 
 section: Tutorials
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/automatically-label-taint-node-pool/'
-updated: 2022-07-28
+updated: 2023-06-06
 ---
 
 <style>
@@ -30,7 +30,7 @@ updated: 2022-07-28
  }
 </style>
 
-**Last updated 28th July 2022.**
+**Last updated 6th June 2023.**
 
 ## Objective
 
@@ -165,12 +165,12 @@ resource "ovh_cloud_project_kube_nodepool" "pool" {
         }
         spec {
             unschedulable = false
-            taints = [
-            {
-                effect = "PreferNoSchedule"
-                key    = "k1"
-                value  = "v1"
-            }
+taints = [
+                {
+                    effect = "PreferNoSchedule"
+                    key    = "k1"
+                    value  = "v1"
+                }
             ]
         }
     }
@@ -614,4 +614,6 @@ with the following information:
 
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/asia/public-cloud/kubernetes/).
 
-Join our community of users on <https://community.ovh.com/en/>.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our community of users on <https://community.ovh.com/en/>.

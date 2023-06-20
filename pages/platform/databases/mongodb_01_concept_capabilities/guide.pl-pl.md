@@ -6,10 +6,10 @@ section: MongoDB - Guides
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/capabilities/'
-updated: 2023-04-14
+updated: 2023-05-23
 ---
 
-**Last updated April 14th, 2023**
+**Last updated May 23rd, 2023**
 
 ## Objective
 
@@ -146,6 +146,8 @@ Once your service is up and running, you will be able to specify IP addresses (o
 
 *Enterprise* plan clusters are automatically backed up daily during their maintenance window, with [PITR](https://en.wikipedia.org/wiki/Point-in-time_recovery){.external} support. Backup retention is 30 days with PITR capability for the last 24 hours.
 
+See the [Automated Backups guide](/pages/platform/databases/databases_05_automated_backups) for more information.
+
 #### Logs and Metrics
 
 Logs and metrics are available via the OVHcloud Public Cloud Control Panel.
@@ -190,6 +192,8 @@ Furthermore, user creation from the MongoDB Shell is **not** supported: You need
 
 ## We want your feedback!
 
-We would love to help answer questions and appreciate any feedback you may have. Join our community of users on <https://community.ovh.com/en/>.
+We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. Join our community of users on <https://community.ovh.com/en/>.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

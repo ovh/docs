@@ -19,11 +19,6 @@ Swift supports CORS requests to containers and objects.
 
 CORS metadata is only present in the container. The values specified apply to the container itself and all objects contained within it.
 
-> [!primary]
->
-> CORS is not compatible with the S3 API.
->
-
 **The purpose of this guide is to familiarise you with the concept of CORS.**
 
 ## Requirements
@@ -275,5 +270,7 @@ swift stat <container>
 ```
 
 ## Go further
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -153,4 +153,6 @@ Si no está familiarizado con la solución Enterprise File Storage, puede seguir
 
 [Enterprise File Storage - Gestión de snapshots de volúmenes](https://docs.ovh.com/es/storage/file-storage/netapp/volume-snapshots/)
 
+Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
+
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

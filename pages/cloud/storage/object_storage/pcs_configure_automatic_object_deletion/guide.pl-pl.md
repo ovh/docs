@@ -52,5 +52,7 @@ root@server:~$ swift post --header "X-Delete-At: 1668877261000" container test.t
 Plik test.txt zostanie usunięty 19/11/2022 roku.
 
 ## Sprawdź również
+
+Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
  
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

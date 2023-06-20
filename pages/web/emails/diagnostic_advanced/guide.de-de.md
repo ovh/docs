@@ -4,16 +4,12 @@ excerpt: 'Erfahren Sie hier die Vorgehensweise, wenn Sende- oder Empfangsproblem
 slug: die_statuscodes_von_smtp-servern
 section: Diagnose
 order: 02
-legacy_guide_number: g2272
-updated: 2022-07-21
+updated: 2023-06-15
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
-
-
-**Letzte Aktualisierung am 21.07.2022**
 
 ## Ziel
 
@@ -118,7 +114,7 @@ Im Folgenden finden Sie von Servern häufig verwendete negative SMTP-Antwortcode
 |449|Routing error|Diese Fehlermeldung wird nur von Microsoft Exchange Servern zurückgegeben. Microsoft empfiehlt, eine Diagnose mit dem Tool WinRoute durchzuführen.|
 |450|Requested action not taken – The user’s mailbox is unavailable (z. B. Mailbox unerreichbar oder aus Sicherheitsgründen vorübergehend gesperrt)|Überprüfen Sie, ob die IP-Adresse des ausgehenden Mailservers geblockt ist ([SpamHaus](https://check.spamhaus.org/){.external}), und überprüfen Sie auch, ob Ihre E-Mail SPAM-relevante Wörter enthält.|
 |451|Requested action aborted – Local error in processing|Dies kann durch eine vorübergehende Überlastung oder eine negative SPF-Prüfung der Senderdomain verursacht werden. Lesen Sie die Zusatznachricht des Servers oder kontaktieren Sie dessen Administrator, falls dies weiterhin der Fall ist.|
-|452|The command has been aborted because the server has insufficient system storage|Der E-Mail-Server ist 'überladen'. Dies könnte von zu vielen ausgehenden Nachrichten gleichzeitig verursacht werden. Bitte überprüfen Sie Ihren Postausgang und versuchen Sie es erneut.|
+|452|The command has been aborted because the server has insufficient system storage|Der E-Mail-Server ist ausgelastet. Dies könnte von zu vielen ausgehenden Nachrichten gleichzeitig verursacht werden. Bitte überprüfen Sie Ihren Postausgang und versuchen Sie es erneut.|
 |455|Server unable to deal with the command at this time.|Warten Sie eine Weile und versuchen Sie es erneut. Im Falle eines Fehlschlags kontaktieren Sie den Administrator des Empfänger-Mailservers.|
 |250|Syntax error: the server could not recognise the command (Dies kann Fehler wie eine zu lange Befehlszeile einschließen)|Dies wird häufig von Antivirus- oder Firewalleinstellungen des Absenders verursacht. Überprüfen Sie das und versuchen Sie es erneut.|
 |501|Syntax error in parameters or arguments|Dies wird oft durch eine falsche Empfänger-E-Mail-Adresse oder ein absenderseitiges Antiviren- oder Firewall-Problem verursacht. Bitte überprüfen Sie die Zieladresse und sowie Ihre Antivirus- oder Firewalleinstellungen.|
@@ -127,10 +123,11 @@ Im Folgenden finden Sie von Servern häufig verwendete negative SMTP-Antwortcode
 |504|Command parameter not implemented|Die beim Versand der E-Mail mit Ihrem SMTP-Server verwendeten Einstellungen oder Optionen werden erkannt, sind in der Konfiguration jedoch deaktiviert. Bitte kontaktieren Sie Ihren Dienstleister.|
 |535|Authentication failed|Die Benutzer-/Passwort-Informationen sind falsch oder der Versand von dieser E-Mail-Adresse ist blockiert. Überprüfen Sie den Zustand Ihrer E-Mail-Adresse über Ihr OVHcloud Kundencenter. Wenn der Account wegen Spam gesperrt wurde, können Sie den Versand durch eine Passwortänderung wieder entsperren. Weitere Informationen finden Sie in unserer Anleitung [Was tun, wenn ein Account aufgrund Spamversands gesperrt wurde?](https://docs.ovh.com/de/microsoft-collaborative-solutions/blocked-wegen-spam/).
 |550|Requested action not performed: mailbox unavailable|Der Empfänger-Server konnte die verwendete E-Mail-Adresse nicht überprüfen. Dies wird meist durch eine ungültige Ziel-E-Mail-Adresse verursacht, kann aber auch bedeuten, dass der Server Probleme mit der Firewall oder der Konnektivität hat. Überprüfen Sie die E-Mail-Adresse des Empfängers, und/oder versuchen Sie es erneut.|
+|550 5.7.26|This message does not have authentication information or fails to pass authentication checks| Die Mail wurde abgelehnt, weil der E-Mail-Dienst des Absenders weder SPF noch DKIM für seinen Domainnamen konfiguriert hat.<br><br>Es wird empfohlen, einen SPF-Prioritätseintrag zu erstellen, der mit allen E-Mail-Diensten kompatibel ist. Nutzen Sie dazu unsere Anleitung „[Einen SPF-Eintrag zur Konfiguration Ihrer Domain hinzufügen](/pages/web/domains/dns_zone_spf)“.<br><br>Wenn Ihr E-Mail-Angebot über die DKIM-Option verfügt, können Sie diese mithilfe unserer Anleitung einrichten: „[DKIM-Eintrag konfigurieren](/pages/web/domains/dns_zone_dkim)“.|
 |551|User not local or invalid address – Relay denied|Dies wird typischerweise als Strategie zur Vermeidung von Spam verwendet. Es besagt, dass das Mail-Relay aus irgendeinem Grund nicht berechtigt ist, Ihre Nachricht an einen anderen Server als den Ihren weiterzuleiten. Bitte kontaktieren Sie Ihren Dienstleister.|
 |552|Requested mail actions aborted – Exceeded storage allocation|Der Empfängeraccount hat keinen Speicherplatz mehr für den Empfang von Nachrichten. Leider besteht die einzige Lösung darin, den Empfänger über eine andere Methode zu kontaktieren.|
 |553|Requested action not taken – Mailbox name invalid|Dies wird in der Regel durch eine falsche Empfänger-E-Mail-Adresse verursacht. Bitte überprüfen Sie, dass die betroffene E-Mail-Adresse korrekt ist.|
-|554|Transaction failed, "No SMTP service here")|Das ist üblicherweise ein Blacklist-Problem. Überprüfen Sie, ob die IP-Adresse des ausgehenden Mailservers nicht geblockt ist ([SpamHaus](https://check.spamhaus.org/){.external}).|
+|554|Transaction failed, "No SMTP service here")|Das ist üblicherweise ein Blacklist-Problem. Überprüfen Sie, ob die IP-Adresse des ausgehenden Mailservers geblockt ist ([SpamHaus](https://check.spamhaus.org/){.external}).|
 |555|MAIL FROM / RCPT TO, unrecognised or unimplemented arguments|Der ausgehende SMTP-Server kann die E-Mail-Adresse, die Sie in den Feldern "Von" oder "An" verwendet haben, nicht deuten. Bitte prüfen Sie, ob die eingegebenen E-Mail-Adressen korrekt sind, und überprüfen Sie, dass Sie die von OVHcloud festgelegte Grenze nicht überschritten haben: 200 Mails / Stunde / Account / 300 Mails / Stunde / IP.|
 
 ## Weiterführende Informationen

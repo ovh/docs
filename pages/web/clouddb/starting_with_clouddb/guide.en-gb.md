@@ -4,10 +4,8 @@ slug: getting-started-with-clouddb
 excerpt: 'Find out how to get started with the Web Cloud Databases service'
 section: 'Getting started'
 order: 01
-updated: 2023-02-15
+updated: 2023-05-31
 ---
-
-**Last updated 15rd February 2023**
 
 ## Objective
 
@@ -190,7 +188,8 @@ No matter which method you choose to follow, you must have the following five pi
 
 > [!warning]
 >
-> In some rare cases, the `port`{.action} field may not be available in your website’s configuration. If this is the case, you will need to add this field after your server’s host name, separating them with a *:*, i.e. `hostname:port`.
+> The field `Server port`{.action} may not be available in your site configuration. In this case, add this value after the hostname of your server, separated by a *:*. <br><br>
+> For example, for the hostname `zz1111111-002.eu.clouddb.ovh.net` with SQL port `34567`, you will need to enter `zz1111111-002.eu.clouddb.ovh.net:34567` as the host/hostname ("Server hostname").
 >
 
 ![Web Cloud Databases](images/web-cloud-databases-login-information.png){.thumbnail}

@@ -1,27 +1,16 @@
 # OVHcloud Documentation
 
-[![Build Status](https://travis-ci.org/ovh/docs.svg?branch=develop)](https://travis-ci.org/ovh/docs)
+This repository contains all the public documentation available about OVHcloud products, in all languages. A good way to find answers to some "how to" questions about OVHcloud products.
 
-Here is all public documentation available about OVHcloud products, in all languages. A good way to find answers to some "how to" questions about OVHcloud products.
-
-A web version also exists [here](https://docs.ovh.com); the website and this repo are synced.
+A web version also exists [here](https://help.ovhcloud.com/csm). This website and this repo are synced.
 
 This project is under active development, and new guides are added or updated on a daily basis.
-
-## Built With
-
-* [Grav CMS](https://getgrav.org/) - The editor used internally to produce and manage guides
-* [Algolia](https://www.algolia.com/) - The search engine used in docs.ovh.com
-
-## Test it
-
-* [docs-rendering-engine](https://github.com/ovh/docs-rendering) - Our HTML templating engine based on Pelican. ISO-rendering of docs.ovh.com
 
 ## Contributing
 
 We will be happy to take a look at your contributions. You can contribute to this project by updating some existing guides, completing them or creating new ones.
 
-A good way to easily get started with contributions is [to fork the ovh/docs repo](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo), write your changes on your fork then [create a pull request (PR)](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) from your fork to the ovh/docs repo. Your PR must be done on the "develop" branch.
+A good way to easily get started with contributions is [to fork the ovh/docs repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo), write your changes on your fork then [create a pull request (PR)](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) from your fork to the ovh/docs repo. Your PR must be done on the "develop" branch.
 
 Our guides editing team will then review your contribution and choose to edit, validate or reject it.
 

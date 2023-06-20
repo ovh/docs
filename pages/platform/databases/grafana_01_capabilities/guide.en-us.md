@@ -4,10 +4,10 @@ slug: grafana/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Grafana
 section: Grafana - Guides
 order: 010
-updated: 2023-04-22
+updated: 2023-05-23
 ---
 
-**Last updated April 22nd, 2023**
+**Last updated May 23rd, 2023**
 
 ## Objective
 
@@ -102,7 +102,9 @@ You can further customise your Grafana by using advanced parameters. See the [Ad
 
 #### Backups
 
-*Essential* plan clusters are automatically backed up daily during their backup window. Backup retention is 1 day.
+Your services are automatically backed up hourly with a one day retention.
+
+See the [Automated Backups guide](/pages/platform/databases/databases_05_automated_backups) for more information.
 
 #### Logs and metrics
 
@@ -122,5 +124,7 @@ Only one user is created by default and its name is `admin`. You must reset its 
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

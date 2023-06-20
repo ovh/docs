@@ -4,10 +4,10 @@ slug: nsx-first-steps
 excerpt: "Découvrez NSX, la solution de gestion de réseau logicielle Sofware Defined Networking (SDN) fournie par VMware"
 section: NSX
 order: 01
-updated: 2023-02-27
+updated: 2023-06-14
 ---
 
-**Dernière mise à jour le 27/02/2023**
+**Dernière mise à jour le 14/06/2023**
 
 ## Objectif
 
@@ -18,9 +18,15 @@ Lorsqu'un client souscrit à l'offre NSX et qu'elle est activée, une préconfig
 - **ovh-T0-gw** : cette passerelle est le point d'entrée réseau de votre cluster. Elle est préconfigurée avec deux interfaces et une adresse IP virtuelle. Elle est de type **Tier-0 Gateways** (nord-sud).
 - **ovh-T1-gw** : cette passerelle est dans la catégories des **Tier-1 Gateways** (est-ouest). Il est possible de créer des segments (VLAN ou Overlay) qui lui seront connectés. Elle est reliée à **ovh-T0-gw** pour les liaisons exterieures aux clusters (physique et Internet). 
 
-Il est possible de créer de nouvelles passerelles de type **Tier-1 Gateways** et de les relier à la passerelle **ovh-T0-gw**. 
+Il est possible de créer de nouvelles passerelles de type **Tier-1 Gateways** et de les relier à la passerelle **ovh-T0-gw**.
 
-OVHcloud fournit un bloc de 8 adresses IP publiques, certaines sont réservées. L'adresse **HA VIP** est préconfigurée, elle est utilisée pour le SNAT par défaut sur les futurs segments internes.
+OVHcloud fournit un bloc de 16 adresses IP publiques, toutes sont réservées à l'usage des produits OVHcloud. L'adresse **HA VIP** est préconfigurée, elle est utilisée pour le SNAT par défaut sur les futurs segments internes.
+
+> [!warning]
+>
+> Ce bloc d'IP est lié à l'environnement VMware, vous ne pouvez pas le déplacer ou le parquer.
+
+Pensez à [commander un nouveau bloc IP](/pages/cloud/private-cloud/ajout_de_bloc_ip) si vous souhaitez pouvoir ultérieurement migrer d’un environnement VMware on OVHcloud à un autre environnement, ou si votre plan de reprise d’activité nécessite le déplacement du bloc IP.
 
 Par défaut, les routes ne sont pas activées. Les segments créés derrière la passerelle **ovh-T1-gw** peuvent communiquer entre eux mais pas au-delà.
 
@@ -29,7 +35,7 @@ Par défaut, les routes ne sont pas activées. Les segments créés derrière la
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
-> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
 ## Prérequis
@@ -98,10 +104,6 @@ Nous allons voir comment afficher les adresses IP virtuelles attachées à la pa
 
 Une seule adresse IP virtuelle est affectée lors de la livraison de NSX, elle sert pour le SNAT sur les segments attachés à la passerelle **ovh-T0-gw**.
 
-> [!primary]
-> Il n'est pour le moment pas possible de créer de nouvelles adresses IP virtuelles sur la passerelle **ovh-T0-gw**, mais cette fonctionnalité devrait être bientôt disponible.
-> 
-
 Restez sur l'onglet `Networking`{.action} et cliquez à gauche sur `Tier-0 Gateways`{.action} dans la catégorie **Connectivity**.
 
 ![03 Display public vip 01](images/03-display-public-vip01.png){.thumbnail}
@@ -151,5 +153,7 @@ Vous venez de voir la configuration par défaut. Vous pouvez consulter les autre
 ## Aller plus loin
 
 [Gestion des segments dans NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-segment-management)
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

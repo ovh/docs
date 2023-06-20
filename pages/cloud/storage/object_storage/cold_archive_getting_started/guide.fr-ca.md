@@ -4,10 +4,10 @@ slug: cold-archive/getting-started
 excerpt: Ce guide vous montre comment gérer vos données avec Cold Archive
 section: Spécificités de la classe de stockage Cold Archive
 order: 020
-updated: 2022-10-19
+updated: 2023-05-17
 ---
 
-**Dernière mise à jour le 19/01/2023**
+**Dernière mise à jour le 17/05/2023**
 
 ## Objectif
 
@@ -61,10 +61,14 @@ delete-ovh-archive = s3api delete-bucket-intelligent-tiering-configuration --id 
 > Si vous avez défini plusieurs profils, ajoutez `--profile <profile>` à la ligne de commande.
 >
 
-### Bucket archiving
+### Archiver un bucket
 
-Après sa création, un bucket est en écriture seule.<br>
-Les actions autorisées sont l'ajout et la liste d'objets.
+Avant d'archiver un bucket, il est nécessaire de s'assurer qu'il n'y a pas de parts de MPU non complétées.
+Cela peut se faire avec la commande :
+
+```bash
+aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api list-multipart-uploads --bucket <bucket_name>
+```
 
 Archiver un bucket:
 
@@ -108,7 +112,7 @@ aws s3 rb s3://<bucket_name>
 Une fois qu'une configuration Intelligent-Tiering a été poussée (via une opération `put-bucket-intelligent-tiering-configuration`) et jusqu'à ce qu'elle soit retirée (via une opération `delete-bucket-intelligent-tiering-configuration`), l'état d'un bucket peut être lu via :
 
 ```bash
-aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net get-ovh-bucket-status <bucket_name> | jq '.IntelligentTieringConfiguration.Status'
+aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net s3api get-bucket-tagging --bucket <bucket_name>
 ```
 
 #### Liste des statuts d'un bucket
@@ -126,5 +130,7 @@ aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net get-ovh-bucket-status
 ## Aller plus loin
 
 Découvrez notre chaîne dédiée Discord : <https://discord.gg/ovhcloud>. Posez vos questions, faites vos commentaires et interagissez directement avec l’équipe qui conçoit nos services de stockage et de sauvegarde.
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

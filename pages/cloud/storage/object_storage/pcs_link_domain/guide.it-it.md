@@ -147,3 +147,8 @@ Il nome del tuo container non può contenere questi caratteri:
 - sostuituisci auth-ProjectID con auth_ProjectID
 
 
+## Per saperne di più
+
+Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

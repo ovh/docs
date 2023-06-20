@@ -5,14 +5,14 @@ slug: redimensionar_una_instancia
 legacy_guide_number: g1778
 section: Gestión desde Horizon
 order: 9
-updated: 2021-11-22
+updated: 2023-05-24
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 23/11/2021**
+**Última actualización: 24/05/2023**
 
 ## Objetivo
 
@@ -25,6 +25,11 @@ En algunos casos, bien debido a un aumento de la actividad o a sus nuevas necesi
 > Sólo es posible redimensionar a un modelo superior para los modelos clásicos.
 > Además, esta operación interrumpe la instancia durante la operación.
 > 
+
+> [!warning]
+>
+> Las instancias de Metal sólo pueden redimensionarse desde y hacia otras instancias de Metal.
+>
 
 > [!success]
 >

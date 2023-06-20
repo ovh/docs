@@ -4,14 +4,14 @@ slug: przeniesienie-domeny-globalnej
 excerpt: "Dowiedz się, jak wykonać transfer domeny do OVHcloud"
 section: Transfer
 order: 01
-updated: 2022-11-18
+updated: 2023-06-08
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 18-11-2022**
+**Ostatnia aktualizacja z dnia 08-06-2023**
 
 ## Wprowadzenie
 
@@ -23,7 +23,9 @@ Transfer domeny umożliwia jej przeniesienie do innego operatora.  Możesz przen
 
 > [!warning]
 >
-> Jeśli nazwa domeny w trakcie modyfikacji jest aktualnie zarejestrowana w OVHcloud, transfer przychodzący domeny nie jest właściwą procedurą. Procedura ta dotyczy wyłącznie zmiany zarejestrowanej domeny (OVHcloud).
+> *Rejestrator* domeny to zarejestrowana organizacja/dostawca, u której domena jest zarejestrowana/zarejestrowana przez osobę fizyczną, stowarzyszenie lub organizację. To od tego samego *Rejestrator* możesz odnowić subskrypcję Twojej domeny (zazwyczaj raz w roku).
+>
+> Jeśli OVHcloud jest już operatorem *rejestratora* Twojej domeny **przed*** uruchomieniem kolejnej procedury, transfer przychodzący domeny* nie jest właściwą procedurą. *Transfer przychodzący* ma zastosowanie **tylko** do domen zarejestrowanych w innym operatora* niż OVHcloud.
 >
 > Aby przenieść zarządzanie domeną na inne konto klienta OVHcloud, należy wykonać *zmianę kontaktów*. Procedura jest opisana w [tym przewodniku](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/).
 >

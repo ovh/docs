@@ -57,7 +57,7 @@ st.write(pd.DataFrame({
 
 ### Write the Dockerfile for your application
 
-Your Dockerfile should start with the the `FROM` instruction indicating the parent image to use. In our case we choose to start from a classic python image.
+Your Dockerfile should start with the `FROM` instruction indicating the parent image to use. In our case we choose to start from a classic python image.
 
 ``` {.console}
 FROM python:3.8
@@ -196,6 +196,8 @@ Once the AI Deploy app is running you can access your Streamlit application dire
 
 - Do you want to use **Streamlit** to deploy an AI model for audio classification task? [Here it is](https://docs.ovh.com/au/en/publiccloud/ai/deploy/tuto-streamlit-sounds-classification/).
 - You can imagine deploying an AI model with an other tool: **Flask**. Refer to this [tutorial](https://docs.ovh.com/au/en/publiccloud/ai/deploy/tuto-build-use-flask-image/).
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

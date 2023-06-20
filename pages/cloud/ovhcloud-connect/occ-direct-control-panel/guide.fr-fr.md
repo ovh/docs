@@ -48,7 +48,7 @@ Un message vous confirmera l'association du vRack.
 >
 
 > [!primary]
-> Pour plus de détails sur les différences entre les niveaux L2 et L3, consultez notre [FAQ](../occdedicated-faq/#3-comment-choisir-entre-une-interconnexion-de-niveau-2-ou-de-niveau-3-du-modele-osi).
+> Pour plus de détails sur les différences entre les niveaux L2 et L3, consultez notre [FAQ](/pages/cloud/ovhcloud-connect/occdedicated-faq).
 >
 
 #### Configuration L2 
@@ -161,13 +161,13 @@ La suppression récursive est plus lente que la suppression séquentielle de cha
 >
 #### Suppression d'une configuration de routage
 
-Pour supprimer une configuration de routage, cliquez sur le le bouton `(...)`{.action} sur la configuration de routage à supprimer puis sur `Supprimer`{.action}.
+Pour supprimer une configuration de routage, cliquez sur le bouton `(...)`{.action} sur la configuration de routage à supprimer puis sur `Supprimer`{.action}.
 
 ![suppression configuration routage](images/deleterouting.png){.thumbnail}
 
 #### Suppression d'une configuration DC
 
-Pour supprimer une configuration DC, cliquez sur le le bouton `(...)`{.action} sur la configuration DC à supprimer puis sur `Supprimer`{.action}.
+Pour supprimer une configuration DC, cliquez sur le bouton `(...)`{.action} sur la configuration DC à supprimer puis sur `Supprimer`{.action}.
 
 ![suppression configuration DC](images/deletedc.png){.thumbnail}
 
@@ -177,7 +177,7 @@ Pour supprimer une configuration DC, cliquez sur le le bouton `(...)`{.action} s
 
 #### Suppression d'une configuration PoP
 
-Pour supprimer une configuration PoP, cliquez sur le le bouton `(...)`{.action} sur la configuration PoP à supprimer puis sur `Supprimer la configuration`{.action}.
+Pour supprimer une configuration PoP, cliquez sur le bouton `(...)`{.action} sur la configuration PoP à supprimer puis sur `Supprimer la configuration`{.action}.
 
 ![suppression configuration PoP](images/deletepop.png){.thumbnail}
 
@@ -186,5 +186,7 @@ Pour supprimer une configuration PoP, cliquez sur le le bouton `(...)`{.action} 
 >
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

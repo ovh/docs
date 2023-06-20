@@ -4,10 +4,10 @@ slug: training/tuto-train-rasa-chatbot
 excerpt: Understand how simple it is to train a chatbot with AI Training
 section: AI Training - Tutorials
 order: 07
-updated: 2023-03-21
+updated: 2023-05-11
 ---
 
-**Last updated 21st March, 2023**
+**Last updated 11th May, 2023**
 
 ## Objective
 
@@ -64,10 +64,10 @@ To create the volume in GRA (Gravelines data centre), clone the [GitHub repo](ht
 After, you will just have to type:
 
 ```bash
-ovhai data upload GRA <data-to-train-container> data
+ovhai bucket object upload <data-to-train-container>@GRA data
 ```
 
-Your data will be uploaded and created in the container `<data-to-train>` and mounted with the prefix `data`. 3 files will be uploaded: The `nlu.yml` file, the `stories.yml` file and the `rules.yml` file.
+Your data will be uploaded and created in the container `<data-to-train-container>` and mounted with the prefix `data`. 3 files will be uploaded: The `nlu.yml` file, the `stories.yml` file and the `rules.yml` file.
 
 Let's train our model!
 
@@ -206,6 +206,8 @@ If you want to see how the model is created and trained with AI Notebooks, pleas
 If you want to deploy your model created with the chatbot, you can follow this tutorial. 
 
 [How to deploy a chatbot](https://docs.ovh.com/asia/en/publiccloud/ai/deploy/rasa-chatbot)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

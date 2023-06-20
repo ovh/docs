@@ -102,12 +102,12 @@ Im Outlook-Client finden Sie Ihr freigegebenes Postfach in der linken Spalte, ge
 
 ## Weiterführende Informationen
 
-[Verwendung der Outlook Web App](../exchange_2016_verwendung_der_outlook_web_app/)
+[Verwendung der Outlook Web App](/pages/web/emails/email_owa)
 
-[Berechtigungen für einen Exchange Account übertragen](../exchange_2013_send_as_versand_als/)
+[Berechtigungen für einen Exchange Account übertragen](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Kalender in OWA freigeben](../exchange_2016_einen_kalender_via_owa_webmail_freigeben/)
+[Kalender in OWA freigeben](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Automatische Signaturen erstellen](../exchange_20132016_automatische_signatur_-_disclaimer/)
+[Automatische Signaturen erstellen](/pages/web/microsoft-collaborative-solutions/feature_footers)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

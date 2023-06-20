@@ -1,13 +1,13 @@
 ---
 title: Managing nodes and node pools with OVHcloud API
 slug: managing-nodes-with-api
-excerpt: ''
+excerpt: 'Find out how to manage OVHcloud Managed Kubernetes node and node pools with OVHcloud API'
 section: User guides
 order: 1
-updated: 2023-02-14
+updated: 2023-06-06
 ---
 
-**Last updated 14th February 2023.**
+**Last updated 6th June 2023.**
 
 ## Objective
 
@@ -44,7 +44,9 @@ In this guide we explain how to do some basic operations with nodes and node poo
 
 Editing the `desiredNodes` property to a different value will trigger the node pool upsizing or downsizing.
 
-When downsizing, the last created nodes will be drained then deleted in parallel. You can also specify which nodes should be removed by filling the optional `nodesToRemove` property, which can be a list of node names, node IDs or openstack instance IDs.
+When downsizing, the last created nodes will be drained then deleted in parallel. You can specify which nodes should be removed by filling the optional `nodesToRemove` property, which can be a list of node names, node IDs or openstack instance IDs.
+
+We will try to gracefully drain the nodes by respecting [Pod Disruption Budgets](https://kubernetes.io/docs/tasks/run-application/configure-pdb/) for a maximum duration of 10 minutes. After this time period, the nodes will be forcefully drained to ensure the smooth progress of the operation. This graceful node draining process only applies when there is at least one other node in the cluster.
 
 When upsizing, all new nodes will be created in parallel.
 
@@ -359,6 +361,7 @@ To upsize or downsize your node pool, you can use the `PUT /cloud/project/{servi
 > @api {PUT} /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}
 > 
 
+```json
 {
   "antiAffinity": false,
   "autoscale": false,
@@ -367,6 +370,11 @@ To upsize or downsize your node pool, you can use the `PUT /cloud/project/{servi
   "monthlyBilled": false,
   "name": "my-node-pool"
 }
+```
+
+> [!primary]
+>
+> It is not possible to update/change the following parameters: `antiAffinity`, `flavorName` and `name`.
 
 ## Deleting a node pool
 
@@ -383,4 +391,6 @@ To have an overview of OVHcloud Managed Kubernetes service, you can go to the [O
 
 Otherwise to skip it and push to deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring-kubectl/) and [deploying an application](../deploying-an-application/).
 
-Join our [community of users](https://community.ovh.com/en/).
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+- Join our [community of users](https://community.ovh.com/en/).

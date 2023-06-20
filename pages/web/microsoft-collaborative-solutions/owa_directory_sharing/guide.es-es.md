@@ -101,10 +101,10 @@ Inicie sesión en su cuenta de Exchange a través del [webmail de OVHcloud](http
 
 ## Más información
 
-[Usar Outlook Web App con una cuenta Exchange](../exchange_2016_guia_de_uso_de_outlook_web_app)
+[Usar Outlook Web App con una cuenta Exchange](/pages/web/emails/email_owa)
 
-[Delegar permisos en una cuenta Exchange](../exchange_2013_dar_permisos_full_access_a_una_cuenta/)
+[Delegar permisos en una cuenta Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation/)
 
-[Compartir un calendario con el webmail OWA](../exchange_2016_compartir_un_calendario_con_el_webmail_owa)
+[Compartir un calendario con el webmail OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

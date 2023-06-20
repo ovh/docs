@@ -3,14 +3,13 @@ title: 'Konfiguration von IP-Aliasing'
 slug: network-ipaliasing
 excerpt: 'Erfahren Sie hier, wie Sie Additional IPs zu Ihrer Konfiguration hinzufügen'
 section: 'Netzwerk & IP'
-updated: 2022-12-07
+updated: 2023-06-15
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 20.02.2023**
 
 > [!primary]
 >
@@ -198,7 +197,7 @@ Im letzten Schritt starten Sie Ihr Interface neu:
 
 ### Debian 9+, Ubuntu 17.04+ und Arch Linux
 
-Bei diesen Distributionen wurde die Benennung von Interfaces in eth0, eth1... abgeschafft und es wird nun die generische Bezeichnung `systemd-network` verwendet.
+Bei diesen Distributionen wurde die Benennung von Interfaces in eth0, eth1 etc. abgeschafft und es wird nun die generische Bezeichnung `systemd-network` verwendet.
 
 #### Schritt 1: Die Quelldatei sichern
 
@@ -409,7 +408,7 @@ Bearbeiten Sie nun die Datei, um die Additional IP hinzuzufügen. In Gentoo wird
 
 > [!warning]
 >
-> Die Standard-IP des Servers muss in derselben Zeile wie config_eth0= stehen. So wird sichergestellt, dass bestimmte OVH spezifische Vorgänge ordnungsgemäß funktionieren.
+> Die Standard-IP des Servers muss in derselben Zeile wie `config_eth0=` stehen. So wird sichergestellt, dass spezifische Vorgänge ordnungsgemäß funktionieren.
 > 
 
 Setzen Sie hierzu einen Zeilenumbruch nach netmask **255.255.255.0** und fügen Sie Ihre Additional IP hinzu (SERVER_IP muss durch die Haupt-IP Ihres Servers ersetzt werden).
@@ -735,6 +734,22 @@ Im letzten Schritt starten Sie Ihr Interface neu:
 svcadm restart svc:/network/physical:default
 ```
 
+#### Fehlerbehebung
+
+Starten Sie den Server neu. Wenn keine Verbindung zwischen dem öffentlichen Netzwerk und Ihrer Alias IP hergestellt werden kann, und Sie ein Netzwerkproblem vermuten, versetzen Sie den Server in den [Rescue-Modus](/pages/cloud/dedicated/rescue_mode) und konfigurieren Sie den Alias direkt auf dem Server.
+
+Wenn Sie über SSH im Rescue-Modus auf dem Server eingeloggt sind, führen Sie folgenden Befehl aus:
+
+```bash
+ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP up
+```
+
+Ersetzen Sie "ADDITIONAL_IP" mit Ihrer Additional IP-Adresse.
+
+Um die Verbindung zu testen, senden Sie einen Ping an Ihre Additional IP. Wenn es im Rescue-Modus funktioniert, bedeutet dies wahrscheinlich, dass ein Konfigurationsfehler besteht.  Wenn die IP-Adresse immer noch nicht reagiert, erstellen Sie ein Ticket in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), um Ihre Testergebnisse an unsere Support-Teams weiterzuleiten.
+
 ## Weiterführende Informationen
+
+[Network Bridge einrichten](/pages/cloud/dedicated/network_bridging)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

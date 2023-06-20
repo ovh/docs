@@ -1,9 +1,10 @@
 ---
 title: Billing and payment FAQ
 excerpt: Find the most frequently asked questions about billing and payment
+updated: 2023-06-05
 ---
 
-**Last updated 23rd November 2022**
+**Last updated 5th June 2023**
 
 ## Objective
 
@@ -28,7 +29,7 @@ For legal reasons, you cannot change an invoice that has already been issued. If
 By default, your services are renewed automatically when they reach their renewal date, and your bill total will be debited at the beginning of the month from your default payment method. Please ensure that you save a payment method on your customer account to avoid any of your services being suspended. If you want to cancel your services, please ensure that you do so BEFORE the expiry date.
 For certain ranges (domains, web hosting plans, VPS and dedicated servers), you can choose a manual renewal method.
 If your services are set to be renewed manually, you will be sent notifications by email when your service reaches its expiry date, with a link to pay online.
-If you do not renew your service before this date, it will simply be suspended, then deleted after a few days.
+If you do not renew your service before this date, it will simply be suspended, then deleted after a few days (the delay varies depending on the service concerned).
 
 #### Tips and tricks
 
@@ -85,6 +86,8 @@ If you want to delete a payment method, you will need to set another one first.
 ### What is my default payment method?
 
 Once you have signed in to the OVHcloud Control Panel, your default payment method is listed in your dashboard.
+
+To change your default payment method, see our [payment methods management guide](/pages/account/billing/manage-payment-methods).
 
 #### Tips and tricks
 

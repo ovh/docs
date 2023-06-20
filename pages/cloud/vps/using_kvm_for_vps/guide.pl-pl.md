@@ -20,7 +20,7 @@ Konsola KVM pozwala na bezpośrednie połączenie z serwerem VPS bez koniecznoś
 
 ## Wymagania początkowe
 
-- Jeden [VPS](https://www.ovhcloud.com/pl/vps/) na Twoim koncie OVHcloud.
+- Jeden [VPS](https://www.ovhcloud.com/pl/vps/) na Twoim koncie OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce

@@ -5,10 +5,8 @@ legacy_guide_number: 2117
 excerpt: "Découvrez comment réagir en cas de dysfonctionnement à l'envoi ou la réception des e-mails chez OVHcloud"
 section: 'Diagnostic'
 order: 02
-updated: 2022-07-21
+updated: 2023-06-15
 ---
-
-**Dernière mise à jour le 21/07/2022**
 
 ## Objectif
 
@@ -117,6 +115,7 @@ Vous trouverez ci-dessous la majorité des codes de réponses négatives SMTP ut
 |504|Paramètre de commande non implémentée|Les paramètres ou les options utilisées lors de l'envoi de l'e-mail avec votre serveur SMTP sont reconnus mais désactivés dans sa configuration. Veuillez contacter votre fournisseur de service|
 |535|Echec lors de l'authentification|Les informations utilisateur/mot de passe sont erronées ou l'envoi est potentiellement bloqué sur votre adresse e-mail. Vérifiez l'état de votre adresse e-mail depuis votre espace client OVHcloud. Un changement de mot de passe peut débloquer l'envoi si le compte à été bloqué pour spam. Consultez notre guide [Que faire en cas de compte bloqué pour spam ?](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/bloque-pour-spam/) pour plus d'informations.|
 |550|Action demandée non effectuée : boîte aux lettres indisponible|Le serveur de messagerie de destination n'a pas pu vérifier l'adresse e-mail utilisée. Ceci est le plus souvent causé par une adresse e-mail de destination invalide, mais peut également signifier que le serveur de messagerie de destination a des problèmes de pare-feu ou de connectivité. Vérifier l'adresse e-mail du destinataire, et/ou réessayez à nouveau|
+|550 5.7.26|*This message does not have authentication information or fails to pass authentication checks*| L'e-mail a été rejeté car le service e-mail de l'expéditeur n'a pas de SPF ou de DKIM configuré sur son nom de domaine.<br><br>Il est conseillé de mettre en place en priorité un enregistrement SPF, celui-ci étant compatible avec l'ensemble des offres e-mail. Utilisez notre guide « [Configurer un enregistrement SPF sur son nom de domaine](/pages/web/domains/dns_zone_spf) ».<br><br>Si votre offre e-mail dispose de l'option DKIM, vous pouvez la mettre en place à l'aide de notre guide « [Configurer un enregistrement DKIM](/pages/web/domains/dns_zone_dkim) ».|
 |551|Utilisateur non local|Ceci est en général utilisé comme une stratégie de prévention contre le spam. Il est indiqué que le relais de courrier n'est pas autorisé pour une raison quelconque à relayer votre message vers un autre serveur que le vôtre. Veuillez contacter votre fournisseur de service|
 |552|Action de messagerie demandée interrompue : espace de stockage dépassé|L'utilisateur que vous avez essayé de contacter n'a plus d'espace disponible pour recevoir des messages. Malheureusement, la seule solution est de contacter le destinataire via une autre méthode|
 |553|Action demandée non effectuée : adresse e-mail non autorisée|Cela est en général causé par une adresse e-mail de destination incorrecte. Veuillez vérifier que l'adresse e-mail en question est bien correcte|

@@ -157,7 +157,7 @@ By default the admin user has access to all topics with admin privileges. You ca
 
 ![Enable ACLs](images/kafka_acl.png){.thumbnail}
 
-For a particular user, and one topic (or all with '*'), define the ACL with the the following permissions:
+For a particular user, and one topic (or all with '*'), define the ACL with the following permissions:
 
 - **admin**: full access to APIs and topic
 - **read**: allow only searching and retrieving data from a topic
@@ -270,3 +270,5 @@ Some UI tools for Kafka are also available:
 Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/kafka) to find how to connect to your database with several languages.
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.

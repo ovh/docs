@@ -6,10 +6,10 @@ section: AI Notebooks - Tutorials
 order: 12
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-notebooks-tuto-image-segmentation-unet-tumors?id=kb_article_view&sysparm_article=KB0057606'
-updated: 2023-04-13
+updated: 2023-05-11
 ---
 
-**Last updated 13th April, 2023.**
+**Last updated 11th May, 2023.**
 
 ## Objective
 
@@ -39,7 +39,9 @@ At the end of this tutorial, you will have learnt the principal methods to **seg
 
 You can launch the notebook from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) or via the ovhai [CLI](https://docs.ovh.com/de/publiccloud/ai/cli/getting-started-cli/).
 
-### Launching a Jupyter notebook with "Miniconda" via UI (Control Panel)
+Direct link to the full code can be found [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-segmentation/tensorflow/brain-tumor-segmentation-unet/notebook_image_segmentation_unet.ipynb).
+
+### Launching a Jupyter notebook with "Tensorflow" via UI (Control Panel)
 
 To launch your notebook from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), refer to the following steps.
 
@@ -60,7 +62,7 @@ Using GPUs is recommended because medical imaging is a training intensive task.
 > Here, using `1 GPU` is sufficient.
 >
 
-### Launching a Jupyter notebook with "Miniconda" via CLI
+### Launching a Jupyter notebook with "Tensorflow" via CLI
 
 *If you do not use our CLI yet, follow [this guide](https://docs.ovh.com/de/publiccloud/ai/cli/install-client/) to install it.*
 
@@ -108,6 +110,8 @@ There are many other tasks that exist in the computer vision field. Check our ot
 - [Use Transfer Learning with ResNet50 for image classification](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-classification/tensorflow/resnet50/notebook-resnet-transfer-learning-image-classification.ipynb)
 
 - [Train YOLOv7 for American Sign Language recognition](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/object-detection/miniconda/yolov7/notebook_object_detection_yolov7_asl.ipynb)
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

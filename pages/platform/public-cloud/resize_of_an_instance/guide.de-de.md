@@ -4,14 +4,14 @@ excerpt: Erfahren Sie hier, wie Sie die Größe einer Instanz in Horizon ändern
 slug: nderung_der_groe_einer_instanz
 section: 'Horizon'
 order: 08
-updated: 2021-11-22
+updated: 2023-05-24
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 23.11.2021**
+**Letzte Aktualisierung am 24.05.2023**
 
 ## Ziel
 
@@ -24,6 +24,11 @@ Durch einen Anstieg der Last oder aufgrund neuer Anforderungen kann es mit der Z
 > Bei klassischen Modellen ist nur die Umstellung auf ein größeres Modell möglich.
 > Beachten Sie weiterhin, dass der Betrieb der Instanz während der Operation unterbrochen wird.
 > 
+
+> [!warning]
+>
+> Metal-Instanzen können in ihrer Größe nur von und zu anderen Metal-Modellen (*Flavor*) verändert werden.
+>
 
 > [!success]
 >

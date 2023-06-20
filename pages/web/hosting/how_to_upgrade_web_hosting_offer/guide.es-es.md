@@ -67,7 +67,7 @@ Antes de cambiar del plan [Personal](https://www.ovhcloud.com/es-es/web-hosting/
 
 Antes de cambiar al plan de hosting inferior, asegúrese de que el nuevo plan incluya suficientes [bases de datos](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/). Compruebe también que sean de tamaño suficiente.
 
-En caso contrario, elimine las bases de datos no utilizadas y reduzca la cantidad de datos que contienen. Esta cantidad no deberá exceder del tamaño máximo de las bases de datos de la nueva oferta (para cualquier solicitud de soporte sobre las operaciones a realizar, contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/)).
+En caso contrario, elimine las bases de datos no utilizadas y reduzca la cantidad de datos que contienen. Esta cantidad no deberá exceder del tamaño máximo de las bases de datos de la nueva oferta (para cualquier solicitud de soporte sobre las operaciones a realizar, contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/)).
 
 Una vez que haya eliminado los datos de sus bases de datos, vuelva a calcular el espacio utilizado en la pestaña `Bases de datos`{.action} de la sección `Alojamientos`{.action} del área de cliente. Haga clic en el botón `...`{.action} a la derecha de la base de que se trate y, seguidamente, `Recalcular el espacio utilizado`{.action}.
 
@@ -177,7 +177,7 @@ Siga [estas instrucciones](#modify) para cambiar de producto.
 
 [Optimización del rendimiento de su sitio web](https://docs.ovh.com/es/hosting/web_hosting_guia_de_optimizacion_del_rendimiento_de_un_sitio_web/)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, consulte [nuestras distintas soluciones pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 

@@ -52,7 +52,7 @@ Retrouvez toutes nos recommandations sur les mots de passe sur notre guide « [M
 Si vous ne l'avez pas encore fait, sauvegardez votre mot de passe dans un [gestionnaire de mots de passe](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/#utiliser-un-gestionnaire-de-mots-de-passe).
 
 > [!primary]
-> Les logiciels **Keepass** et **Bitwarden** sont des gestionnaires de mots de passe gratuits et libres de droits.
+> Les logiciels **KeePass** et **Bitwarden** sont des gestionnaires de mots de passe gratuits et libres de droits.
 >
 
 #### Ajouter une adresse e-mail de secours <a name="backup-email"></a>

@@ -31,7 +31,7 @@ A pirataria pode manifestar - se de várias formas (lista não exaustiva):
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
+> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
 >
 
 ## Requisitos
@@ -100,7 +100,7 @@ Também recomendamos que utilize um [gestor de palavras-passe](https://docs.ovh.
 
 > [!warning]
 >
-> Se encontrar dificuldades para efetuar as ações descritas abaixo, recorra a um prestador de [serviços especializado](https://partner.ovhcloud.com/pt/) em cibersegurança.
+> Se encontrar dificuldades para efetuar as ações descritas abaixo, recorra a um prestador de [serviços especializado](https://partner.ovhcloud.com/pt/directory/) em cibersegurança.
 >
 
 Utilize o nosso manual sobre [estatísticas e logs do seu alojamento web](https://docs.ovh.com/pt/hosting/partilhado_consultar_as_estatisticas_e_os_logs_do_meu_site/) para pesquisar os elementos maliciosos injetados no seu website. As informações podem ser encontradas nos logs "web". 
@@ -218,13 +218,13 @@ Consulte também o nosso manual sobre [como proteger o seu website](https://docs
 
 [Aceder ao espaço de armazenamento do alojamento web](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/)
 
-[Alterar a configuração do alojamento web](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web//)
+[Alterar a configuração do alojamento web](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web/)
 
 [Ativar firewall da aplicação](https://docs.ovh.com/pt/hosting/partilhado_ativacao_da_firewall/)
 
 [Otimizar as performances do seu site](https://docs.ovh.com/pt/hosting/partilhado_guia_de_otimizacao_das_performances_do_seu_site/)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 

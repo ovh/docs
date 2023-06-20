@@ -4,10 +4,10 @@ slug: deploy/tuto-streamlit-image-segmentation-unet-brain-tumors
 excerpt: How to build and deploy a brain tumor segmentation application using streamlit
 section: AI Deploy - Tutorials
 order: 14
-updated: 2023-04-26
+updated: 2023-05-11
 ---
 
-**Last updated 26th April, 2023.**
+**Last updated 11th May, 2023.**
 
 > [!primary]
 >
@@ -113,7 +113,7 @@ ENV HOME=/workspace
 In order to use our trained model on the dataset images, we need to create two container objects, one for the model's weights, one for the BraTS2020 dataset. We can either:
 
 - upload the dataset as a `.zip` file (4GB) which will be unzipped by the app's python code when the Streamlit application is started.
-- upload the whole dataset. Though it is is much heavier to upload (40GB), it will not require an unzip step. 
+- upload the whole dataset. Though it is much heavier to upload (40GB), it will not require an unzip step. 
 
 In this tutorial, we will upload the `.zip` format.
 
@@ -147,7 +147,7 @@ To follow this part, make sure you have installed the [ovhai CLI](https://cli.bh
 As in the Control Panel, you will have to specify the `region`, the `name of your container` and the `path` where your data will be located. The creation of an object container can be done with the following command:
 
 ```console
-ovhai data upload <region> <container> <paths>
+ovhai bucket object upload <container>@<region> <paths>
 ```
 
 Here are the commands that we will enter:
@@ -155,14 +155,13 @@ Here are the commands that we will enter:
 - Upload the dataset (`.zip`):
 
 ```console
-ovhai data upload GRA BraTS2020_dataset_zip brats20-dataset-training-validation.zip 
+ovhai bucket object upload BraTS2020_dataset_zip@GRA brats20-dataset-training-validation.zip
 ```
 
 - Upload the model's weights:
 
 ```console
-ovhai data upload GRA BraTS2020_model_weights model_.26-0.025329.m5.index
-ovhai data upload GRA BraTS2020_model_weights model_.26-0.025329.m5.data-00000-of-00001
+ovhai bucket object upload BraTS2020_model_weights@GRA model_.26-0.025329.m5.index model_.26-0.025329.m5.data-00000-of-00001
 ```
 
 > [!warning]
@@ -272,6 +271,8 @@ ovhai app run <shared-registry-address>/tumor_seg_streamlit_app:latest \
 
 - Do you want to use Streamlit to create an audio classification app? [Learn how to do it](https://docs.ovh.com/asia/en/publiccloud/ai/deploy/tuto-streamlit-sounds-classification/).
 - Learn how to create & deploy a Speech-to-Text app [here](https://docs.ovh.com/asia/en/publiccloud/ai/deploy/tuto-streamlit-speech-to-text-app/).
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

@@ -220,7 +220,7 @@ Lesen Sie auch unsere Anleitung zur [Sicherung Ihrer Website](https://docs.ovh.c
 
 [Mit dem Speicherplatz Ihres Webhostings verbinden](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/)
 
-[Konfiguration Ihres Webhostings ändern](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern//)
+[Konfiguration Ihres Webhostings ändern](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/)
 
 [Application Firewall aktivieren](https://docs.ovh.com/de/hosting/webhosting_aktivieren_der_web_application_firewall/)
 
