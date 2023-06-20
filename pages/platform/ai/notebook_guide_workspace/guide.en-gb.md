@@ -20,7 +20,7 @@ Indeed, **every notebook has by default an internal object storage volume attach
 
 ### How do AI Notebooks' workspace work?
 
-When your **notebook is created**, a `/workspace` directory is automatically created. It **contains configuration information** such as **the machine learning framework** you have chosen to launch your notebook *(Miniconda, PyTorch, Tensorflow, ...)*, but also all **your installed python libraries**. This directory also allows you to store your data (datasets, codes, etc.).
+When your **notebook is created**, a `/workspace` directory is automatically created. It **contains configuration information** such as **the Machine Learning framework** you have chosen to launch your notebook *(Miniconda, PyTorch, TensorFlow, ...)*, but also all **your installed python libraries**. This directory also allows you to store your data (datasets, codes, etc.).
 
 When you **stop your notebook**, your workspace (`/workspace`) is pushed to your object storage. This means that all files contained in your `/workspace` directory will be saved for future use.
 
