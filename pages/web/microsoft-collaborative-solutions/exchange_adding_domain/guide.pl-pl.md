@@ -4,14 +4,12 @@ slug: dodanie-domeny-exchange
 excerpt: Dowiedz się, jak dodać domenę do platformy Exchange lub E-mail Pro
 section: Pierwsze kroki z Exchange
 order: 04
-updated: 2022-10-07
+updated: 2023-06-14
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
-
-**Ostatnia aktualizacja z dnia 07-10-2022**
 
 ## Wprowadzenie
 
@@ -65,16 +63,19 @@ Okno wyświetla teraz informacje dotyczące konfiguracji trybów.
 - **Jeśli podałeś nazwę domeny nieobsługiwanej przez OVHcloud**: tryb nieautorytatywny zostanie domyślnie skonfigurowany.
 
 - **Jeśli wybrałeś z listy nazwę domeny obsługiwanej przez OVHcloud**: wybierz jeden z trybów.
+    - **Autorytatywny** : Odpowiedni, jeśli do obsługi poczty w Twojej domenie używasz wyłącznie usługi Exchange lub E-mail Pro. Nie pozwala na korzystanie z innego rozwiązania poczty elektronicznej.
+    - **Nieautorytatywny** : Odpowiedni, jeśli do obsługi Twojej domeny używasz kont Exchange lub E-mail Pro oraz jednocześnie innego rozwiązania poczty elektronicznej. Wskaż serwer, na którym hostowane jest Twoje rozwiązanie poczty elektronicznej.
 
-|Tryb|Opis|
-|---|---|
-|Autorytatywny|Odpowiedni, jeśli do obsługi poczty w Twojej domenie używasz wyłącznie usługi Exchange lub E-mail Pro. Nie pozwala na korzystanie z innego rozwiązania poczty elektronicznej.|
-|Nieautorytatywny|Odpowiedni, jeśli do obsługi Twojej domeny używasz kont Exchange lub E-mail Pro oraz jednocześnie innego rozwiązania poczty elektronicznej. Wskaż serwer, na którym hostowane jest Twoje rozwiązanie poczty elektronicznej.|
+>
+> - Kiedy wiadomość e-mail jest przesyłana na Twoją platformę e-mail (*Server A*) w trybie **autorytatywnym**, oznacza to, że wszystkie adresy e-mail Twojej nazwy domeny są hostowane tylko na tej platformie. <br> <br> Na przykład, jeśli wyślemy e-mail na adres "*mary.johnson@mydomain.ovh*", "*Server A*" zwróci do nadawcy komunikat o błędzie, ponieważ ten adres nie nie istnieje na „*Server A*”.
+> - Gdy wiadomość e-mail jest przesyłana na Twoją platformę e-mail (*Server A*) w trybie **nieautorytatywnym**, oznacza to, że adresy e-mail Twojej nazwy domeny są rozdzielane między główny adres e-mail Twojej platformy (*Server A*) i inną usługę e-mail (*Server B*). <br> <br> Na przykład, jeśli wyślemy wiadomość e-mail na adres "*mary.johnson@mydomain.ovh*", *Server A* przekaże wiadomość e-mail na "*Server B*", aby ten mógł ją dostarczyć.
+>
+>![Dodaj domenę](images/add_domain_exchange_authoritative.png){.thumbnail}
+>
 
-> [!primary]
+> [!ostrzeżenie]
 >
-> Wybór trybu nie jest ostateczny i możesz zmienić go później w Panelu klienta OVHcloud.
->
+> Jeśli otrzymasz komunikat „**wykryto autorytatywną domenę**” podczas dodawania nazwy domeny do platformy poczty e-mail, oznacza to, że ta nazwa domeny jest zadeklarowana w trybie **autorytatywny** na innej platformie poczty e-mail. Będziesz musiał przełączyć go w tryb **nieautorytatywny** na obu platformach, aby mogły współistnieć.
 
 Kliknij przycisk `Dalej`{.action}, aby kontynuować proces dodawania domeny.
 

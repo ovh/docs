@@ -4,14 +4,12 @@ slug: adding-domain-exchange
 excerpt: Saiba como adicionar um domínio à sua plataforma Exchange ou E-mail Pro
 section: Primeiros passos com Exchange
 order: 04
-updated: 2022-10-07
+updated: 2023-06-14
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
-
-**Última atualização: 07/10/2022**
 
 ## Objetivo
 
@@ -65,16 +63,19 @@ A janela apresenta agora informações sobre a configuração dos modos.
 - **Se indicou um domínio não gerido pela OVHcloud**: o modo não autoritário será configurado por predefinição.
 
 - **Se selecionou na lista um domínio gerido pela OVHcloud**: deverá escolher entre dois modos.
+    - **Autorytatywny** : Para usar o seu domínio apenas com o Exchange ou o E-mail Pro. Não permite a utilização de outra solução de e-mail com o seu serviço.
+    - **Nieautorytatywny** : Para usar o serviço Exchange ou E-mail Pro juntamente com outra solução de e-mail, Deverá introduzir o servidor da sua outra solução de e-mail.|
 
-|Modo|Descrição|
-|---|---|
-|Autorytatywny|Para usar o seu domínio apenas com o Exchange ou o E-mail Pro. Não permite a utilização de outra solução de e-mail com o seu serviço.|
-|Nieautorytatywny|Para usar o serviço Exchange ou E-mail Pro juntamente com outra solução de e-mail, Deverá introduzir o servidor da sua outra solução de e-mail.|
+>
+> - Quando um e-mail é transmitido para sua plataforma de e-mail (*Server A*) no modo **autoritário**, isso significa que todos os endereços de e-mail do seu nome de domínio estão hospedados apenas nesta plataforma. <br> <br> Por exemplo, se enviarmos um e-mail para o endereço "*mary.johnson@mydomain.ovh*", o "*Server A*" devolve uma mensagem de falha ao remetente, porque este endereço não não existe no "*Server A*".
+> - Quando um e-mail é transmitido para sua plataforma de e-mail (*Server A*) no modo **não autoritativo**, isso significa que os endereços de e-mail do seu nome de domínio são distribuídos entre o e-mail principal da sua plataforma (*Server A*) e outro serviço de e-mail (*Server B*). <br> <br> Por exemplo, se enviarmos um e-mail para o endereço "*mary.johnson@mydomain.ovh*", *Server A* encaminhará o e-mail para "*Server B*" para que este a possa entregar.
+>
+>![Adicionar domínio](images/add_domain_exchange_authoritative.png){.thumbnail}
+>
 
-> [!primary]
+> [!aviso]
 >
-> A escolha do modo não é definitiva e pode ser alterada a partir da Área de Cliente OVHcloud.
->
+> Se você receber a mensagem "**domínio autorizado detectado**" ao adicionar seu nome de domínio à sua plataforma de e-mail, isso significa que esse nome de domínio está declarado no modo **autoritário** em outra plataforma de e-mail. Você terá que mudar para o modo **não autoritativo** em ambas as plataformas para que possam coexistir.
 
 Clique em `Seguinte`{.action} para adicionar o domínio.
 

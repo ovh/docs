@@ -4,10 +4,8 @@ slug: adding-domain-exchange
 excerpt: 'Find out how to add a domain name to your Exchange service'
 section: 'Getting started with Exchange'
 order: 04
-updated: 2022-10-07
+updated: 2023-06-14
 ---
-
-**Last updated 7th October 2022**
 
 ## Objective
 
@@ -61,16 +59,18 @@ The window will then show information on configuring modes.
 - **If you have entered a non-OVHcloud domain name**: Non-authoritative mode will be configured by default.
 
 - **If you have selected an OVHcloud domain name from the list**: You will have to choose between two modes.
-
-|Mode|Description|
-|---|---|
-|Authoritative|Choose this if you only use your Exchange or Email Pro solution with your domain name. This mode does not allow the use of another email solution with your service.|
-|Non-authoritative|Choose this if you use your Exchange or Email Pro solution domain name with another email solution. You must enter details of your other email solution’s server.|
-
-> [!primary]
+    - **Authoritative**: Choose this if you only use your Exchange solution with your domain name. This mode does not allow the use of another email solution with your service.
+    - **Non-authoritative**: Choose this if you use your Exchange solution domain name with another email solution. You must enter details of your other email solution’s server.
 >
-> The mode choice is not definitive, and can be modified from the OVHcloud Control Panel later on.
+> - When an email is transmitted to your email platform (*Server A*) in **authoritative** mode, this means that all the email addresses of your domain name are only hosted on this platform. <br> <br> For example, if we send an email to the address *mary.johnson@mydomain.ovh*, the *Server A* returns a failure message to the sender, because this address does not exist on *Server A*.
+> - When an email is transmitted to your email platform (*Server A*) in **non-authoritative** mode, this means that the email addresses of your domain name are distributed between your main email service (*Server A*) and another email service (*Serverg B*). <br> <br> For example, if we send an email to the address *mary.johnson@mydomain.ovh*, *Server A* will forward the email to *Server B* which can deliver it.
 >
+>![Add Domain](images/add_domain_exchange_authoritative.png){.thumbnail}
+>
+
+> [!warning]
+>
+> If you get the message "**authoritative domain detected**" when adding your domain name to your e-mail platform, this means that this domain name is declared in **authoritative** mode on a another email platform. You will have to switch it to **non-authoritative** mode on both platforms so that they can coexist.
 
 Click on the `Next`{.action} button to continue adding the domain.
 

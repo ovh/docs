@@ -4,14 +4,12 @@ slug: domain-zu-exchange-hinzufugen
 excerpt: "Erfahren Sie hier, wie Sie einen Domainnamen zu Ihrer Exchange Lösung hinzufügen"
 section: 'Erste Schritte mit Exchange'
 order: 04
-updated: 2022-10-07
+updated: 2023-06-14
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
-
-**Letzte Aktualisierung am 07.10.2022**
 
 ## Ziel
 
@@ -65,16 +63,19 @@ Der Assistent zeigt nun Informationen zur Konfiguration der gewünschten Nutzung
 - **Wenn Sie eine nicht von OVHcloud verwaltete Domain angegeben haben**: Der nicht-autoritative Modus wird automatisch ausgewählt.
 
 - **Wenn Sie in der Liste eine von OVHcloud verwaltete Domain ausgewählt haben**: Sie können einen Modus auswählen.
+    - **Autoritativ**: Auszuwählen, wenn Sie ausschließlich Exchange mit diesem Domainnamen verwenden. Erlaubt nicht die Verwendung einer anderen E-Mail-Lösung parallel mit Ihrem Dienst.
+    - **Nicht-autoritativ**: Auszuwählen, wenn der Domainname Ihres Exchange simultan mit einer anderen E-Mail-Lösung verwendet wird. Sie müssen dann die Serverdaten Ihrer externen E-Mail-Lösung eingeben.
 
-|Modus|Beschreibung|
-|---|---|
-|Autoritativ|Empfiehlt sich, wenn Sie ausschließlich Ihre Exchange oder E-Mail Pro Lösung mit Ihrer Domain verwenden. Erlaubt nicht die Verwendung einer anderen E-Mail-Lösung mit Ihrem Dienst.|
-|Nicht-autoritativ|Empfiehlt sich, wenn Sie die Domain Ihrer Exchange oder E-Mail Pro Lösung simultan mit einer anderen E-Mail-Lösung verwenden. Geben Sie dann Informationen zum Server Ihrer externen E-Mail-Lösung an.|
+>
+> - Wenn eine E-Mail im **autoritativen** Modus an Ihre E-Mail-Plattform (*Server A*) übermittelt wird, befinden sich alle E-Mail-Adressen Ihres Domainnamens nur auf dieser Plattform. <br> <br> Wenn wir beispielsweise eine E-Mail an die Adresse *mary.johnson@mydomain.ovh* senden, sendet der *Server A* eine Fehlermeldung an den Absender zurück, da diese Adresse nicht auf *Server A* existiert.
+> - Wenn eine E-Mail im **nicht autorisierenden** Modus an Ihre E-Mail-Plattform (*Server A*) übertragen wird, bedeutet dies, dass die E-Mail-Adressen Ihres Domainnamens auf die Haupt-E-Mail-Adressen Ihrer Plattform verteilt werden (*Server A*) und ein anderer E-Mail-Dienst (*Server B*). <br> <br> Wenn wir beispielsweise eine E-Mail an die Adresse *mary.johnson@mydomain.ovh* senden, leitet *Server A* die E-Mail weiter an *Server B*, der sie zustellen kann.
+>
+>![Domain hinzufügen](images/add_domain_exchange_authoritative.png){.thumbnail}
+>
 
-> [!primary]
+> [!warnung]
 >
-> Die Wahl des Modus ist nicht endgültig und kann im Nachhinein über das OVHcloud Kundencenter geändert werden.
->
+> Wenn Sie beim Hinzufügen Ihres Domainnamens zu Ihrer E-Mail-Plattform die Meldung „**autoritative Domain erkannt**“ erhalten, bedeutet dies, dass dieser Domainname auf einer anderen E-Mail-Plattform im **autoritativen** Modus deklariert ist. Sie müssen es auf beiden Plattformen in den **nicht autorisierenden** Modus schalten, damit sie koexistieren können.
 
 Klicken Sie auf `Weiter`{.action}, um die Domain hinzuzufügen.
 
