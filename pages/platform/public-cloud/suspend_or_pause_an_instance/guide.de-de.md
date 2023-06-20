@@ -4,10 +4,8 @@ slug: aussetzen_oder_pausieren_einer_instanz
 legacy_guide_number: g1781
 section: 'Projektverwaltung'
 order: 3
-updated: 2021-09-20
+updated: 2023-06-20
 ---
-
-**Letzte Aktualisierung am 22.09.2021**
 
 ## Ziel
 
@@ -41,6 +39,12 @@ In der folgenden Tabelle finden Sie die auf Ihren Instanzen verfügbaren Optione
 |[Pausieren (*pause*)](#pause-instance)|Speichert den Zustand der VM im RAM. Eine pausierte Instanz wird "eingefroren".|An der Abrechnung der Instanz ändert sich nichts.|
 
 ### Aussetzen einer Instanz (*shelve*) <a name="shelve-instance"></a>
+
+> [!alert]
+> Bitte beachten Sie, dass das Anhalten einer IOPS- oder T1/T2-180-Instanz zum Verlust von Daten auf den NVMe-Passthrough-Laufwerken führt.
+>
+> Das Suspendieren dieses Instanztyps führt zu seiner Außerbetriebnahme vom Host und damit von den Festplatten im Passthrough.
+>
 
 Diese Option erlaubt es Ihnen, die dedizierten Ressourcen Ihrer Public Cloud Instanz freizugeben, während die IP-Adresse bestehen bleibt. Die Daten der lokalen Disk werden in einem automatisch erstellten Snapshot gespeichert, sobald die Instanz den Status *shelved* hat. Die im Arbeitsspeicher und anderswo gespeicherten Daten werden nicht gesichert.
 

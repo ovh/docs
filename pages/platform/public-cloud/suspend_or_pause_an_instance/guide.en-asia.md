@@ -4,10 +4,9 @@ slug: shelve-or-pause-an-instance
 legacy_guide_number: 1781
 section: Project management
 order: 3
-updated: 2021-09-20
+updated: 2023-06-20
 ---
 
-**Last updated 20th September 2021**
 ## Objective
 
 As part of the configuration of a high-availability infrastructure, you may encounter the need to cut access to your instances in order to perform different tests. OpenStack allows you to suspend, pause or shelve your instance. In each case, your IP is maintained.
@@ -40,6 +39,12 @@ The table below allows you to differentiate the options available on your instan
 |[Pause](#pause-instance)|Stores the state of the VM in RAM, a paused instance becomes frozen.|You will still be billed the same price for your instance.|
 
 ### Shelve (suspend) an instance <a name="shelve-instance"></a>
+
+> [!alert]
+> Please note that suspending an IOPS or T1/T2-180 instance will result in the loss of data on the NVMe passthrough drives.
+>
+> Suspending this type of instance leads to its decommissioning from the host, and therefore from the disks in passthrough.
+>
 
 This option will allow you to release the resources dedicated to your Public Cloud instance, but the IP address will remain. The data on your local disk will be stored in a snapshot automatically created once the instance is shelved. Data stored in the memory and elsewhere will not be retained.
 

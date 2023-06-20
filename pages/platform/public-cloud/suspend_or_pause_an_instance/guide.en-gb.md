@@ -7,7 +7,6 @@ order: 3
 updated: 2023-06-20
 ---
 
-**Last updated 20th June 2023**
 ## Objective
 
 As part of the configuration of a high-availability infrastructure, you may encounter the need to cut access to your instances in order to perform different tests. OpenStack allows you to suspend, pause or shelve your instance. In each case, your IP is maintained.
@@ -22,7 +21,7 @@ As part of the configuration of a high-availability infrastructure, you may enco
 
 - An [OVHcloud Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/) on **hourly** billing
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} or [Horizon interface](https://docs.ovh.com/gb/en/public-cloud/horizon/)
-- knowledge of [Openstack API](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) and [Openstack variables](https://docs.ovh.com/gb/en/public-cloud/set-openstack-environment-variables/)
+- Knowledge of [Openstack API](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) and [Openstack variables](https://docs.ovh.com/gb/en/public-cloud/set-openstack-environment-variables/)
 
 ## Instructions
 
@@ -42,8 +41,9 @@ The table below allows you to differentiate the options available on your instan
 ### Shelve (suspend) an instance <a name="shelve-instance"></a>
 
 > [!alert]
-> Please note that suspending IOPS or T1/T2-180 type instances will result in data loss on NVMe passthrough drives
-Indeed, the suspension of this type of instance leads to its decommissioning from the host, and therefore from the disks in passthrough
+> Please note that suspending an IOPS or T1/T2-180 instance will result in the loss of data on the NVMe passthrough drives.
+>
+> Suspending this type of instance leads to its decommissioning from the host, and therefore from the disks in passthrough.
 >
 
 This option will allow you to release the resources dedicated to your Public Cloud instance, but the IP address will remain. The data on your local disk will be stored in a snapshot automatically created once the instance is shelved. Data stored in the memory and elsewhere will not be retained.

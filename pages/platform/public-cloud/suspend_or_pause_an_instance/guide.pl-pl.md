@@ -4,14 +4,12 @@ slug: wstrzymanie_lub_uspienie_instancji
 legacy_guide_number: g1781
 section: Zarządzanie projektami
 order: 3
-updated: 2021-09-20
+updated: 2023-06-20
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
-
-**Ostatnia aktualizacja dnia 01-10-2021**
 
 ## Wprowadzenie
 
@@ -45,6 +43,12 @@ Poniższa tabela pozwoli Ci odróżnić opcje dostępne dla Twoich instancji. Ko
 |[Wstrzymaj](#pause-instance)|Przechowuje stan wirtualnej maszyny w pamięci RAM. Wstrzymana instancja zostaje zablokowana.|W przypadku Twojej instancji opłata jest taka sama.|
 
 ### Zawieś (shelve) instancję <a name="shelve-instance"></a>
+
+> [!alert]
+> Należy pamiętać, że zawieszenie instancji IOPS lub T1/T2-180 spowoduje utratę danych na dyskach NVMe passthrough.
+>
+> Zawieszenie tego typu instancji prowadzi do jej wycofania z hosta, a tym samym z dysków w passthrough.
+>
 
 Ta opcja pozwoli Ci zwolnić zasoby dedykowane Twojej instancji Public Cloud, ale adres IP pozostanie. Dane z dysku lokalnego będą przechowywane w migawce utworzonej automatycznie po odłożeniu instancji na półkę. Dane przechowywane w pamięci i poza nią nie będą zachowywane.
 
