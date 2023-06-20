@@ -4,7 +4,7 @@ excerpt: 'Saiba como utilizar os token através da API Keystone'
 slug: gestao_dos_tokens
 legacy_guide_number: g1872
 section: Gestão via OpenStack
-updated: 2023-03-02
+updated: 2023-06-15
 ---
 
 > [!primary]
@@ -49,9 +49,12 @@ Para mais informações, consulte a documentação do [OpenStack da API](https:/
 
 
 ### Operações manuais
+
 As operações que se seguem podem ser efetuadas manualmente, sendo geralmente utilizadas para fins pedagógicos ou de arranque.
 
-É necessário carregar o ambiente com o ficheiro openrc (ver guia).
+É necessário carregar o ambiente com o ficheiro openRC. Para isso, recomendamos que descarrege e utilize o ficheiro openrc.sh que poderá encontrar na interface Horizon. Este último disporá do conjunto das variáveis de ambiente necessárias à construção dos comandos que se seguirão.
+
+Para aceder ao Horizon e descarregar o ficheiro, consulte [este guia](/pages/platform/public-cloud/introducing_horizon/).
 
 No nosso exemplo, desejamos obter as informações de metadata de um objeto armazenado graças à oferta Public Cloud Storage. As etapas são:
 
@@ -65,7 +68,7 @@ A ferramenta em linha de comandos cURL permite construir pedidos de todas as pe�
 #### Etapa 1: Pedido de criação de um token
 
 ```bash
-curl -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | python -mjson.tool
+curl -X POST ${OS_AUTH_URL}v${OS_IDENTITY_API_VERSION}/auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | python -mjson.tool
 ```
 
 A resposta do servidor é a seguinte:
@@ -145,7 +148,7 @@ $ export endpoint="https://storage.sbg.cloud.ovh.net/v1/AUTH_9ea...ff0"
 
 
 ```bash
-export token=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type" application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD' }, "scope": { "project": { "name": "'$OS_tenant_NAME'", "domain": { "id": "default" } } }' | grep -i '^X-Subject-Token' | cut -d" " -f2)
+export token=$(curl -is -X POST ${OS_AUTH_URL}v${OS_IDENTITY_API_VERSION}/auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | grep -i '^X-Subject-Token' | cut -d" " -f2)
 ```
 
 Este token é agora o elemento de autenticação que será utilizado para o pedido seguinte.

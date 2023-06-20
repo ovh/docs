@@ -4,7 +4,7 @@ excerpt: 'Cómo utilizar los token a través de la API Keystone'
 slug: gestion_de_los_tokens
 legacy_guide_number: g1872
 section: OpenStack
-updated: 2023-03-02
+updated: 2023-06-15
 ---
 
 > [!primary]
@@ -47,9 +47,12 @@ Para más información, consulte la documentación de [OpenStack de la API](http
 
 
 ### Operaciones manuales
+
 Las siguientes operaciones pueden realizarse manualmente, generalmente se utilizan con fines pedagógicos o de debuging.
 
-Para cargar el entorno, utilice el archivo openrc (ver la guía).
+Es necesario cargar el entorno utilizando el archivo openRC. Para ello, le recomendamos que descargue y utilice el archivo openrc.sh que encontrará en la interfaz Horizon. que le permitirá acceder a todas las variables de entorno necesarias para realizar los siguientes comandos.
+
+Para conectarse a Horizon y descargar el archivo, consulte [esta guía](/pages/platform/public-cloud/introducing_horizon/).
 
 En nuestro ejemplo, queremos obtener la información de metadata de un objeto almacenado gracias a la solución Public Cloud Storage. Los pasos son:
 
@@ -63,7 +66,7 @@ La herramienta en línea de comandos cURL permite construir peticiones de todas 
 #### Etapa 1: Solicitud de creación de un token
 
 ```bash
-curl -X POST ${OS_AUTH_URL} auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "‘OS_PASSWORD’" } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } } }` | python -mjson.tool
+curl -X POST ${OS_AUTH_URL}v${OS_IDENTITY_API_VERSION}/auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | python -mjson.tool
 ```
 
 La respuesta del servidor es:
@@ -129,6 +132,7 @@ La respuesta del servidor es:
 
 
 #### Etapa 2: Recopilación de las variables token ID y lugar públicoURL
+
 Ambas informaciones están disponibles en la salida del comando anterior.
 
 Para el dominio públicoURL, debe buscar en la sección "object-store" y la región adecuada, en este caso "SBG".
@@ -142,7 +146,7 @@ Es la dirección del punto del servicio de object storage que permite buscar inf
 
 
 ```bash
-export token=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "‘OS_PASSWORD’" } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } } }` | grep -i '^X-Subject-Token' | cut -d" " -f2)
+export token=$(curl -is -X POST ${OS_AUTH_URL}v${OS_IDENTITY_API_VERSION}/auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | grep -i '^X-Subject-Token' | cut -d" " -f2)
 ```
 
 Este token es ahora el elemento de autenticación que se utilizará para la siguiente petición.
