@@ -10,7 +10,7 @@ updated: 2023-06-19
 
 ## Objective
 
-In addition to [contact management](/pages/account/customer/managing_contacts), registering a domain name requires you to enter information on the domain name owner. In this context, the **owner** refers to a person, company, organisation or association that owns the rights to this domain name. **Change of ownership** refers to the transfer of ownership rights from one person or company to another. **Owner** information has legal value. This process is particularly mandatory if a company changes its name.
+In addition to providing [contacts](/pages/account/customer/managing_contacts), registering a domain name requires you to enter information on the domain name owner. In this context, **owner** pertains to either a natural person or a legal person (private or public organisation) holding the usage rights to this domain name. A **domain trade** refers to the act of modifying this information in a legally binding way i.e. the transfer of usage rights to a new **owner**. For example, this process is the mandatory procedure when a company changes its name.
 
 > [!primary]
 >This operation will not move your domain name to another OVHcloud customer account.
@@ -19,34 +19,33 @@ In addition to [contact management](/pages/account/customer/managing_contacts), 
 >
 > If you need to make a change of owner and a change of contact for the same domain name, there is no preferential order. However, it is the administrator contact who is able to initiate these operations. These two changes are therefore made in the Control Panel of ​​the domain name administrator contact.
 
-**Find out how to provide you with information on how to change the owner of a domain name.**
+**This guide explains how to change the owner of a domain name.**
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- a domain name registered with OVHcloud and for which no operation (owner change, transfer, creation) is in progress. If an operation has recently been finalised on your domain name, you will need to wait at least 60 calendar days before performing a new operation.
-- access as the [admin contact](/pages/account/customer/managing_contacts) for the domain name concerned
-- permission from the current domain name owner to change owners
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- A domain name registered with OVHcloud for which no operation (owner change, transfer, creation) is in progress. If an operation has recently been completed on this domain name, there is a mandatory waiting period of 60 calendar days before a new operation can be started.
+- You are the [admin contact](/pages/account/customer/managing_contacts) for the domain name concerned.
+- You have permission from the current domain name owner to initiate a domain trade.
 
 
 ## Instructions
 
 > [!warning]
 >
-> The following instructions describe the most common way to change the owner of a domain name. They are valid for most top-level domains, commonly known as **T**op **L**evel **D**omain (**TLD**). 
-**TLDs** denote the end of your domain name, such as *.com*, *.net*, *.fr*, etc.
+> The following instructions describe the most common way to change a domain name owner. They are valid for for most **T**op **L**evel **D**omains (**TLD**). The **TLD** is the domain name extension, i.e. the last part of a domain name, such as *.com*, *.net*, *.fr*, etc.
 >
-> The specific rules of the **TLD** domain name process are only defined by the appropriate allocation authority, i.e. the **registry**. A registrar such as OVHcloud must comply with these rules, and has no influence on registration decisions.
+> The specific rules for processes regarding **TLD**s are defined by the corresponding allocation authority i.e. the **registry**. Registrars such as OVHcloud must adhere to these rules and have no influence on registry decisions.
 >
-> There are mainly two types of **TLD**: **ccTLDs** and **gTLDs**. **ccTLDs** are **TLDs** for a region or country (*.fr*, *.be*, *.uk*, *.de*, *.paris*, etc.). **gTLDs** corresponding to more generic **TLDs** (*.net*, *.com*, *.info*, *.org*, etc.).
+> There are generally two types of **TLD**: **ccTLD** and **gTLD**. **ccTLD**s are **TLD**s for a region or country (*.fr*, *.be*, *.uk*, *.de*, *.paris*, etc.) and **gTLD**s are generic **TLD**s (*.net*, *.com*, *.info*, *.org*, etc.).
 >
-> The exact procedure for changing the owner of a domain name may therefore vary, particularly for some **ccTLDs**, such as *.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, etc.) and for some special **TLDs** (*.am*, *.fm*, etc.). For some of them, a change of ownership is a paid operation. The change of owner can also be suspended for various reasons, for example for unpaid, abuse or blocking by the registry. 
+> The exact procedure for domain trade may vary, particularly for some **ccTLDs**, such as *.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, etc. and a few special purpose **TLDs** (e.g. *.am*, *.fm.*). Changing the owner might also be prohibited for various reasons, for example outstanding payments, abuse cases or registry locks.
 >
-> We recommend that you consult the following resources if in doubt:
+> We recommend to consult the following resources in case of any doubt:
 >
-> - the corresponding **TLD** registry website
-> - the [list of TLDs available at OVHcloud](https://www.ovhcloud.com/en-gb/domains/tld/)
-> - the `Ongoing operations`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) to check any pending status updates of the domain name
+> - The website of the respective **TLD** registry
+> - The [list of **TLD**s available at OVHcloud](https://www.ovhcloud.com/en-gb/domains/tld/)
+> - The section `Ongoing operations`{.action} of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) to check any pending status updates of the domain name
 
 ### Step 1: Select the domain
 
