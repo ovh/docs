@@ -41,6 +41,11 @@ The table below allows you to differentiate the options available on your instan
 
 ### Shelve (suspend) an instance <a name="shelve-instance"></a>
 
+> [!alert]
+> Please note that suspending IOPS or T1/T2-180 type instances will result in data loss on NVMe passthrough drives
+Indeed, the suspension of this type of instance leads to its decommissioning from the host, and therefore from the disks in passthrough
+>
+
 This option will allow you to release the resources dedicated to your Public Cloud instance, but the IP address will remain. The data on your local disk will be stored in a snapshot automatically created once the instance is shelved. Data stored in the memory and elsewhere will not be retained.
 
 #### From the OVHcloud Control Panel

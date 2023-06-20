@@ -42,6 +42,11 @@ Le tableau ci-dessous vous permet de différencier les options disponibles sur v
 
 ### Suspendre (shelve) une instance <a name="shelve-instance"></a>
 
+> [!alert]
+> Veuillez notez que la suspension des instances de type IOPS ou T1/T2-180 entraînera la perte des données sur les disques NVMe en passthrough
+En effet, la suspension de ce type d'instance entraîne sa décomission de l'hôte, et donc des disques en passthrough
+>
+
 Cette option vous permettra de libérer les ressources dédiées à votre instance Public Cloud, mais l’adresse IP sera conservée. Les données sur votre disque local seront stockées dans un snapshot créé automatiquement une fois l’instance suspendue. Les données stockées en mémoire et ailleurs ne seront pas sauvegardées.
 
 #### Depuis l’espace client OVHcloud
