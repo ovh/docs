@@ -39,7 +39,7 @@ Pour diverses raisons, comme par exemple l'auto-hébergement (à votre domicile 
 >
 > Pour savoir si vous utilisez ou non les serveurs DNS d'OVHcloud, ces derniers ont la forme suivante : 
 >
-> - **dnsXX.ovh.net.** et **nsXX.ovh.net.** (ou les **X** sont des chiffres) si vous n'utilisez pas l'option *DNS Anycast*
+> - **dnsXX.ovh.net.** et **nsXX.ovh.net.** (où les "**X**" sont des chiffres à remplacer par ceux qui concernent les serveurs de votre nom de domaine) si vous n'utilisez pas l'option *DNS Anycast*
 > - **dns200.anycast.me.** et **ns200.anycast.me** si vous utilisez l'option *DNS Anycast*
 > 
 > Si besoin, consultez notre guide relatif aux [serveurs DNS](/pages/web/domains/dns_server_general_information) pour plus d'informations.
