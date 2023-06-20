@@ -2,7 +2,6 @@
 title: Token-Verwaltung
 excerpt: 'Erfahren Sie hier, wie Sie Token über die Keystone API verwenden'
 slug: token-verwaltung
-legacy_guide_number: g1872
 section: 'OpenStack'
 updated: 2023-06-15
 ---
@@ -51,11 +50,11 @@ Weitere Informationen finden Sie in der [Dokumentation der OpenStack API](https:
 
 Die folgenden Operationen können manuell durchgeführt werden und werden in der Regel zu Lehr- oder Debugzwecken verwendet.
 
-Die Umgebung muss mit der Datei openRC geladen werden. Daher empfehlen wir Ihnen, die openrc.sh-Datei herunterzuladen und zu verwenden, die Sie im Horizon-Interface finden. Der Server verfügt über alle Umgebungsvariablen, die für die Erstellung der nachfolgenden Befehle erforderlich sind.
+Die Umgebung muss mittels der openRC-Datei geladen werden. Laden Sie dazu die Datei "openrc.sh" herunter, die Sie im Horizon-Interface finden. Deren Verwendung stellt alle Umgebungsvariablen bereit, die für die Komposition der nachfolgenden Befehle erforderlich sind.
 
 Um sich mit Horizon zu verbinden und die Datei herunterzuladen, lesen Sie [diese Anleitung](/pages/platform/public-cloud/introducing_horizon/).
 
-In unserem Beispiel möchten wir die Metadaten eines Objekts erhalten, das mithilfe des Public Cloud Storage Angebots gespeichert wurde. Die Schritte sind:
+In unserem Beispiel möchten wir die Metadaten eines Objekts erhalten, das mithilfe von Public Cloud Storage gespeichert wurde. Die Schritte sind:
 
 - Anfrage zur Erstellung eines Tokens
 - Abruf der Token-ID-Variablen und der öffentlichen Endpoint-URL
