@@ -5,10 +5,8 @@ order: 1
 section: Features
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-logstash-input?id=kb_article_view&sysparm_article=KB0050060'
-updated: 2021-07-30
+updated: 2023-06-20
 ---
-
-**Last updated 30th July, 2021**
 
 ## Objective
 
@@ -127,6 +125,7 @@ To host this collector in the Logs Data Platform, you will need to configure it 
 - If you want to restrict the Logstash to specific IP Adresses, you can use the **Trusted Networks** field to firewall your instances. Add every IP Adress or subnet you want to allow, separated by comma. Leave it empty to allow any IP to contact it. Your collector will have a public IP Adress, you can use this feature to prevent people to send you false information in it.
 - Select one of the stream you have to attach this collector to the stream you have. That means that every message that goes out of this collector is automatically routed to the stream.
 - Finally, select the number of instances you would need to handle your load. We recommend to have at least two instances to ensure the high availabilty of your Logstash. However some uses cases need you to limit the number of instance at 1 (like the [Twitter use case](/pages/platform/logs-data-platform/usecase_twitter)).
+    - Note that you can also choose to *automatically scale the number of instances*. In this case, you need to select a minimum and maximum number of instances. Your input will then be started with the selected minimum number of instances. If these instances face a heavy load for a certain amount of time (more than 1 minute), your input will be automatically scaled up — one new instance at the time — until it reaches the selected maximum number of instances. On the other hand, if the load decreases, this number of instances will be scaled down until it reaches the minimum number of instances.
 
 ![logstash_creation](images/logstash_created.png){.thumbnail}
 
