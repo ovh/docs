@@ -1628,6 +1628,7 @@
             + [Storage Benchmarking](cloud/storage/block_storage/ceph_io_benchmarking)
             + [Using Ceph with Proxmox](cloud/storage/block_storage/ceph_use_ceph_with_proxmox)
             + [Access the cluster using rbd client](cloud/storage/block_storage/ceph_use_your_cluster_with_rbd)
+            + [Firewall settings for accessing a CDA cluster](cloud/storage/block_storage/ceph_firewall_settings_for_accessing_cda_cluster)
         + [Test disk speed](platform/public-cloud/test_disk_speed)
         + [Increasing the size of an additional disk](platform/public-cloud/increase_the_size_of_an_additional_disk)
         + [Creating a volume snapshot](platform/public-cloud/creating_a_volume_snapshot)
