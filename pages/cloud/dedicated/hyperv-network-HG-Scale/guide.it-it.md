@@ -4,14 +4,14 @@ slug: hyperv-network-hg-scale
 excerpt: Come configurare la rete su Windows Server con Hyper-V sulle gamme High Grade & SCALE
 section: Utilizzo avanzato
 order: 5
-updated: 2021-11-15
+updated: 2023-06-20
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
-**Ultimo aggiornamento: 15/11/2021**
+**Ultimo aggiornamento: 20/06/2023**
 
 ## Obiettivo
 
@@ -199,11 +199,11 @@ Interface List
 ```
 
 Nel nostro esempio, potete vedere che la nostra scheda Hyper-V ha l'ID 22.<br>
-Annota la tua scheda Hyper-V ed esegui il comando `route add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0 si 22` (sostituisci l'IP e l'ID dell'interfaccia con quello che hai ricevuto).<br>
+Annota la tua scheda Hyper-V ed esegui il comando `route add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0 if 22` (sostituisci l'IP e l'ID dell'interfaccia con quello che hai ricevuto).<br>
 Dovreste ottenere il risultato "OK! ".
 
 ```console
-PS C:\Users\admin> route add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0 if 22
+PS C:\Users\admin> route add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0 if 22i
  OK!
 ```
 
