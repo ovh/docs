@@ -56,12 +56,11 @@ The window will then show information on configuring modes.
 - **If you have selected an OVHcloud domain name from the list**: You will have to choose between two modes.
 
 - **If you have selected an OVHcloud domain name from the list**: You will have to choose between two modes.
-    - **Authoritative** : Choose this if you only use your Exchange solution with your domain name. This mode does not allow the use of another email solution with your service.
-    - **Non-authoritative** : Choose this if you use your Exchange solution domain name with another email solution. You must enter details of your other email solution’s server.
-
+    - **Authoritative**: Choose this if you only use your Exchange solution with your domain name. This mode does not allow the use of another email solution with your service.
+    - **Non-authoritative**: Choose this if you use your Exchange solution domain name with another email solution. You must enter details of your other email solution’s server.
 >
-> - When an e-mail is transmitted to your e-mail platform (*Server A*) in **authoritative** mode, this means that all the e-mail addresses of your domain name are only hosted on this platform . <br> <br> For example, if we send an e-mail to the address "*mary.johnson@mydomain.ovh*", the "*Server A*" returns a failure message to the sender, because this address does not exist on "*Server A*".
-> - When an e-mail is transmitted to your e-mail platform (*Server A*) in **non-authoritative** mode, this means that the e-mail addresses of your domain name are distributed between your platform main email (*Server A*) and another email service (*Server B*). <br> <br> For example, if we send an e-mail to the address "*mary.johnson@mydomain.ovh*", *Server A* will forward the e-mail to "*Server B*" so that he can free him.
+> - When an email is transmitted to your email platform (*Server A*) in **authoritative** mode, this means that all the email addresses of your domain name are only hosted on this platform. <br> <br> For example, if we send an email to the address *mary.johnson@mydomain.ovh*, the *Server A* returns a failure message to the sender, because this address does not exist on *Server A*.
+> - When an email is transmitted to your email platform (*Server A*) in **non-authoritative** mode, this means that the email addresses of your domain name are distributed between your main email service (*Server A*) and another email service (*Serverg B*). <br> <br> For example, if we send an email to the address *mary.johnson@mydomain.ovh*, *Server A* will forward the email to *Server B* which can deliver it.
 >
 >![Add Domain](images/add_domain_exchange_authoritative.png){.thumbnail}
 >

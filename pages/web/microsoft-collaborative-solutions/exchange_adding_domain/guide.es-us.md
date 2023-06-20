@@ -4,7 +4,7 @@ slug: anadir-dominio-exchange
 excerpt: 'Cómo añadir un dominio a un servicio Exchange'
 section: 'Primeros pasos con Exchange'
 order: 04
-updated: 2022-10-07
+updated: 2023-06-14
 ---
 
 > [!primary]
