@@ -4,14 +4,12 @@ slug: sospendi_o_metti_in_pausa_unistanza
 legacy_guide_number: g1781
 section: Gestione del progetto
 order: 3
-updated: 2021-10-01
+updated: 2023-06-20
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
-
-**Ultimo aggiornamento: 01/10/2021**
 
 ## Obiettivo
 
@@ -45,6 +43,12 @@ La tabella qui sotto ti permette di differenziare le opzioni disponibili sulle t
 |[Pausare](#pause-instance)|Salva lo stato della macchina virtuale nella RAM, un'istanza sospesa diventa «bloccata».|Riceverai sempre la stessa tariffa per la tua istanza.|
 
 ### Sospendere (shelve) un'istanza <a name="shelve-instance"></a>
+
+> [!alert]
+> Si noti che la sospensione di un'istanza IOPS o T1/T2-180 comporta la perdita di dati sulle unità NVMe passthrough.
+>
+> La sospensione di questo tipo di istanza comporta la sua disattivazione dall'host e quindi dai dischi in passthrough.
+>
 
 Questa opzione permette di liberare le risorse dedicate all'istanza Public Cloud, ma l'indirizzo IP resta. I dati del disco locale saranno salvati in un snapshot «istantanea» creata automaticamente una volta che l'istanza è sospesa. I dati archiviati nella memoria e altrove non saranno conservati.
 

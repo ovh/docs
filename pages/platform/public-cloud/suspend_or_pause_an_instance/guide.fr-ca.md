@@ -4,10 +4,8 @@ slug: suspendre-ou-mettre-en-pause-une-instance
 legacy_guide_number: 1781
 section: Gestion de projets
 order: 3
-updated: 2021-09-20
+updated: 2023-06-20
 ---
-
-**Dernière mise à jour le 10/09/2021**
 
 ## Objectif
 
@@ -41,6 +39,11 @@ Le tableau ci-dessous vous permet de différencier les options disponibles sur v
 |[Pause](#pause-instance)|Stocke l’état de la VM dans la mémoire RAM, une instance en pause reste « gelée ».|Vous serez toujours facturé au même prix pour votre instance.|
 
 ### Suspendre (shelve) une instance <a name="shelve-instance"></a>
+
+> [!alert]
+> Attention, la suspension d'une instance de type IOPS ou T1/T2-180 entraînera la perte des données sur les disques NVMe en passthrough.
+> En effet, la suspension de ce type d'instance entraîne la décommission de son hôte et donc des disques en passthrough.
+>
 
 Cette option vous permettra de libérer les ressources dédiées à votre instance Public Cloud, mais l’adresse IP sera conservée. Les données sur votre disque local seront stockées dans un snapshot créé automatiquement une fois l’instance suspendue. Les données stockées en mémoire et ailleurs ne seront pas sauvegardées.
 

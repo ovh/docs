@@ -4,14 +4,12 @@ slug: suspender_o_poner_en_pausa_una_instancia
 legacy_guide_number: g1781
 section: Gestión del proyecto
 order: 03
-updated: 2021-09-20
+updated: 2023-06-20
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
-
-**Última actualización: 01/10/2021**
 
 ## Objetivo
 
@@ -46,6 +44,12 @@ En la siguiente tabla podrá diferenciar las opciones disponibles en sus instanc
 |[Pausa](#pause-instance)|Almacena el estado de la máquina virtual en la RAM, una instancia en pausa se convierte en bloqueado.|La instancia se facturará al mismo precio.|
 
 ### Suspender (shelve) una instancia <a name="shelve-instance"></a>
+
+> [!alert]
+> Tenga en cuenta que la suspensión de una instancia IOPS o T1/T2-180 provocará la pérdida de datos en los discos NVMe passthrough.
+>
+> La suspensión de este tipo de instancia conlleva su desinstalación del host y, por tanto, de los discos en passthrough.
+>
 
 Esta opción le permitirá liberar los recursos dedicados a su instancia de Public Cloud, pero la dirección IP permanecerá. Los datos de su disco local se almacenarán en un snapshot creado automáticamente una vez que la instancia se ponga en reserva. Los datos almacenados en la memoria y en otros sitios no se conservarán.
 
