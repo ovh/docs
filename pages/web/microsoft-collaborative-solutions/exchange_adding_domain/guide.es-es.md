@@ -70,7 +70,7 @@ Se mostrará un mensaje informativo relativo al modo de configuración del domin
 
 >
 > - Cuando se transmite un correo electrónico a su plataforma de correo electrónico (*Server A*) en modo **autoritario**, esto significa que todas las direcciones de correo electrónico de su nombre de dominio solo están alojadas en esta plataforma. <br> <br> Por ejemplo, si enviamos un correo electrónico a la dirección "*mary.johnson@mydomain.ovh*", el "*Server A*" devuelve un mensaje de error al remitente, porque esta dirección no no existe en "*Server A*".
-> - Cuando se transmite un correo electrónico a su plataforma de correo electrónico (*Server A*) en modo **no autorizado**, esto significa que las direcciones de correo electrónico de su nombre de dominio se distribuyen entre el correo electrónico principal de su plataforma (*Server A*) y otro servicio de correo electrónico (*Server B*). <br> <br> Por ejemplo, si enviamos un correo electrónico a la dirección "*mary.johnson@mydomain.ovh*", el *Server A* reenviará el correo electrónico al "*Server B*" para que él puede liberarlo.
+> - Cuando se transmite un correo electrónico a su plataforma de correo electrónico (*Server A*) en modo **no autorizado**, esto significa que las direcciones de correo electrónico de su nombre de dominio se distribuyen entre el correo electrónico principal de su plataforma (*Server A*) y otro servicio de correo electrónico (*Server B*). <br> <br> Por ejemplo, si enviamos un correo electrónico a la dirección "*mary.johnson@mydomain.ovh*", el *Server A* reenviará el correo electrónico al "*Server B*" para que éste lo entregue.
 >
 >![Agregar dominio](images/add_domain_exchange_authoritative.png){.thumbnail}
 >
