@@ -4,10 +4,10 @@ slug: shelve-or-pause-an-instance
 legacy_guide_number: 1781
 section: Project management
 order: 3
-updated: 2021-09-20
+updated: 2023-06-20
 ---
 
-**Last updated 20th September 2021**
+**Last updated 20th June 2023**
 ## Objective
 
 As part of the configuration of a high-availability infrastructure, you may encounter the need to cut access to your instances in order to perform different tests. OpenStack allows you to suspend, pause or shelve your instance. In each case, your IP is maintained.
