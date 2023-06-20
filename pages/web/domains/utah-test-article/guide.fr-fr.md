@@ -1,7 +1,7 @@
 ---
 title: Utah tests - Sample article
 excerpt: Nunc ac maximus erat, eu ornare ipsum. In aliquet mi quis ipsum pulvinar dignissim.
-updated: 2023-06-16
+updated: 2023-06-20
 ---
 
 > [!alert]
@@ -14,18 +14,18 @@ Nulla vel ex accumsan, eleifend nisl ac, tincidunt dui. Duis congue, mi eu aliqu
 
 *Suspendisse rhoncus ac lorem elementum cursus. Morbi nibh est, ultrices in leo vel, interdum elementum nulla. Integer posuere nulla a quam malesuada pretium.*
 
-Vivamus eu erat ac neque iaculis imperdiet. Nam sit amet condimentum turpis. Mauris convallis ex libero, eget euismod orci ultricies nec. 
+**Vivamus eu erat ac neque iaculis imperdiet. Nam sit amet condimentum turpis. Mauris convallis ex libero, eget euismod orci ultricies nec.**
 
 
 ## En pratique
 
 ### Images insertion
 
-#### PNG
+#### PNG images
 
 ![png image alt text](images/dns-dkim-platform-emailpro.png){.thumbnail}
 
-#### GIF
+#### GIF images
 
 ![gif image alt text](images/puttygen_02.gif){.thumbnail}
 
