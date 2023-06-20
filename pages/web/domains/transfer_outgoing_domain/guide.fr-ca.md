@@ -4,10 +4,8 @@ slug: transfert-sortant-dun-nom-de-domaine-generique-ou-geographique
 excerpt: Découvrez comment effectuer le transfert d’un nom de domaine OVHcloud vers le bureau d'enregistrement de votre choix
 section: Transfert
 order: 04
-updated: 2023-06-19
+updated: 2023-06-20
 ---
-
-**Dernière mise à jour le 19/06/2023**
 
 ## Objectif
 
@@ -28,7 +26,7 @@ Afin d'empêcher les transferts de domaine non autorisés, les noms de domaine s
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/) enregistré chez OVHcloud
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/) enregistré chez OVHcloud
 - Être habilité à demander le transfert du nom de domaine : le propriétaire et/ou les personnes l'administrant doivent être informés de la demande du transfert.
 - Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 - Le nom de domaine doit avoir été créé il y a plus de 61 jours **et** ne doit pas avoir été transféré ou avoir changé de propriétaire durant cette période.
@@ -68,11 +66,11 @@ Cliquez sur le curseur et confirmez, dans la fenêtre qui s'affiche, que vous so
 >
 > Si vous rencontrez le message "**Une erreur est survenue lors de la demande de désactivation de la protection du domaine (User not granted for this request)**", cela signifie que vous n'avez pas les droits suffisants pour déverrouiller le domaine. 
 >
-> De plus, si vous rencontrez le message : "**AUTH/INFO code : Authcode is not managed by OVHcloud, contact the registry to claim it**", cela signifie que le code de transfert de votre nom de domaine n'est pas récupérable via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).  
+> De plus, si vous rencontrez le message : "**AUTH/INFO code : Authcode is not managed by OVHcloud, contact the registry to claim it**", cela signifie que le code de transfert de votre nom de domaine n'est pas récupérable via votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).  
 > 
-> Dans les deux cas, vérifiez que vous êtes bien le contact **administrateur** du domaine à l'aide de notre guide sur la [gestion des contacts](/pages/account/customer/managing_contacts) puis vérifiez que l'extension de votre domaine permet un déverrouillage depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+> Dans les deux cas, vérifiez que vous êtes bien le contact **administrateur** du domaine à l'aide de notre guide sur la [gestion des contacts](/pages/account/customer/managing_contacts) puis vérifiez que l'extension de votre domaine permet un déverrouillage depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 > 
-> En effet, certains *code de transfert* sont directement gérés par le *registre* de l'extension de votre nom de domaine. Un *registre* est une organisation qui gère l'ensemble des domaines pour une extension donnée. Par exemple, l'**AFNIC** gère l'ensemble des noms de domaine ayant pour extension "*.fr*". Si tel est le cas, vous devrez contactez directement le *registre* qui gère l'extension de votre nom de domaine pour récupérer le *code de transfert*.
+> En effet, certains *codes de transfert* sont directement gérés par le *registre* de l'extension de votre nom de domaine. Un *registre* est une organisation qui gère l'ensemble des domaines pour une extension donnée. Par exemple, l'**AFNIC** gère l'ensemble des noms de domaine ayant pour extension "*.fr*". Si tel est le cas, vous devez contactez directement le *registre* qui gère l'extension de votre nom de domaine afin de récupérer le *code de transfert*.
 >
 
 ![désactivation protection](images/outgoing-transfer-step2.png){.thumbnail}
@@ -114,7 +112,7 @@ Pour plus d'informations, contactez votre nouveau bureau d'enregistrement.
 
 ## Aller plus loin
 
-[Transfert de nom de domaine .co.uk sortant](/pages/web/domains/transfer_outgoing_couk)
+[Transférer un nom de domaine .co.uk](/pages/web/domains/transfer_outgoing_couk)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
