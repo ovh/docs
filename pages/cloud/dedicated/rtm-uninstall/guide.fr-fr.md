@@ -1,19 +1,18 @@
 ---
-title: Désinstallation du système de monitoring RTM v2
-excerpt: Découvrez comment désinstaller le system de monitoring RTM sur votre (vos) service(s)
-updated: 2023-06-14
+title: Désinstaller le système de monitoring RTM v2
+excerpt: Découvrez comment désinstaller le système de monitoring RTM sur vos services
+updated: 2023-06-20
 ---
-
 
 ## Objectif
 
-Le system de monitoring OVH RTM v2 est désormais déprécié et les dépôts de celui-ci ont été supprimés. Nous vous recommandons donc de désinstaller ce système de votre (vos) service(s) et de supprimer tous les paquets associés.
+Le système de monitoring OVHcloud RTM v2 est désormais déprécié et les dépôts de celui-ci ont été supprimés. Nous vous recommandons donc de désinstaller ce système de votre (vos) service(s) et de supprimer tous les paquets associés.
 
 **Ce guide a pour objectif de vous guider dans le nettoyage des packages utilisés par ce système.**
 
 ## Prérequis
 
-- Un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) avec RTM v2 installé
+- Un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) sur lequel RTM v2 a été installé
 - Avoir un accès administrateur (*root*) à votre serveur via SSH
 
 ## En pratique
@@ -47,11 +46,11 @@ Connectez-vous à votre serveur via SSH et supprimez les packages ci-dessous :
 # dnf remove beamium
 ```
 
-Ensuite, vous devez supprimer les dépôts.
+Vous devez ensuite supprimer les dépôts.
 
 ### Debian / Ubuntu
 
-**Vérifier si les packages sont installés**
+#### Vérifier si les packages sont installés :**
 
 ```bash
 dpkg --list | grep -E "noderig|beamium|ovh-rtm-binaries|ovh-rtm-metrics-toolkit"
@@ -63,7 +62,7 @@ Si la commande ne retourne aucune valeur, cela signifie que les packages ne sont
 sudo apt-get remove ovh-rtm-binaries ovh-rtm-metrics-toolkit noderig beamium
 ```
 
-**Vérifier si les dépôts existent**
+#### Vérifier si les dépôts existent
 
 ```bash
 ls /etc/apt/sources.list.d/
@@ -77,7 +76,7 @@ rm -f /etc/apt/sources.list.d/ovh-metrics.list /etc/apt/sources.list.d/ovh-rtm.l
 
 ### CentOS
 
-**Vérifier si les packages sont installés**
+#### Vérifiez si les packages sont installés
 
 ```bash
 yum list installed | grep -E "noderig|beamium|ovh-rtm-binaries|ovh-rtm-metrics-toolkit"
@@ -89,7 +88,7 @@ Si la commande ne retourne aucune valeur, cela signifie que les packages ne sont
 sudo yum remove ovh-rtm-binaries ovh-rtm-metrics-toolkit noderig beamium
 ```
 
-**Vérifier si les dépôts existent**
+#### Vérifier si les dépôts existent
 
 ```bash
 ls /etc/yum.repos.d/
@@ -106,4 +105,3 @@ rm -f /etc/yum.repos.d/OVH-metrics.repo /etc/yum.repos.d/OVH-rtm.repo
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
-

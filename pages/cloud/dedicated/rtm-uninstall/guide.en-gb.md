@@ -1,19 +1,18 @@
 ---
 title: Uninstalling the RTM v2 monitoring system
 excerpt: Find out how to uninstall the RTM monitoring system on your service(s)
-updated: 2023-06-14
+updated: 2023-06-20
 ---
-
 
 ## Objective
 
-The OVH RTM v2 monitoring system has now been deprecated and its repositories deleted. We therefore recommend that you uninstall this system from your service(s) and remove all related packages.
+The OVHcloud RTM v2 monitoring system has now been deprecated and its repositories deleted. We therefore recommend that you uninstall this system from your service(s) and remove all related packages.
 
 **The purpose of this guide is to show you how to clean up the packages used by this system.**
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/fr/bare-metal/) with RTM v2 installed
+- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) with RTM v2 installed
 - Administrative (*root*) access to your server via SSH
 
 ## Instructions
@@ -51,7 +50,7 @@ Next, you need to delete the repositories.
 
 ### Debian / Ubuntu
 
-**Verify if the packages are installed**
+#### Verify if the packages are installed
 
 ```bash
 dpkg --list | grep -E "noderig|beamium|ovh-rtm-binaries|ovh-rtm-metrics-toolkit"
@@ -63,7 +62,7 @@ If the command returns no value, this means that the packages are not installed,
 sudo apt-get remove ovh-rtm-binaries ovh-rtm-metrics-toolkit noderig beamium
 ```
 
-**Verify if the repositories exist**
+#### Verify if the repositories exist
 
 ```bash
 ls /etc/apt/sources.list.d/
@@ -77,7 +76,7 @@ rm -f /etc/apt/sources.list.d/ovh-metrics.list /etc/apt/sources.list.d/ovh-rtm.l
 
 ### CentOS
 
-**Verify if the packages are installed**
+#### Verify if the packages are installed
 
 ```bash
 yum list installed | grep -E "noderig|beamium|ovh-rtm-binaries|ovh-rtm-metrics-toolkit"
@@ -89,7 +88,7 @@ If the command returns no value, this means that the packages are not installed,
 sudo yum remove ovh-rtm-binaries ovh-rtm-metrics-toolkit noderig beamium
 ```
 
-**Verify if the repositories exist**
+#### Verify if the repositories exist
 
 ```bash
 ls /etc/yum.repos.d/
