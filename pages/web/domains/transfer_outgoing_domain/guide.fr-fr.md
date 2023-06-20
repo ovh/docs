@@ -4,10 +4,8 @@ slug: transfert-sortant-dun-nom-de-domaine-generique-ou-geographique
 excerpt: Découvrez comment effectuer le transfert d’un nom de domaine OVHcloud vers le bureau d'enregistrement de votre choix
 section: Transfert
 order: 03
-updated: 2023-06-16
+updated: 2023-06-20
 ---
-
-**Dernière mise à jour le 16/06/2023**
 
 ## Objectif
 
@@ -72,7 +70,7 @@ Cliquez sur le curseur et confirmez, dans la fenêtre qui s'affiche, que vous so
 > 
 > Dans les deux cas, vérifiez que vous êtes bien le contact **administrateur** du domaine à l'aide de notre guide sur la [gestion des contacts](/pages/account/customer/managing_contacts) puis vérifiez que l'extension de votre domaine permet un déverrouillage depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 > 
-> En effet, certains *code de transfert* sont directement gérés par le *registre* de l'extension de votre nom de domaine. Un *registre* est une organisation qui gère l'ensemble des domaines pour une extension donnée. Par exemple, l'**AFNIC** gère l'ensemble des noms de domaine ayant pour extension "*.fr*". Si tel est le cas, vous devrez contactez directement le *registre* qui gère l'extension de votre nom de domaine pour récupérer le *code de transfert*.
+> En effet, certains *codes de transfert* sont directement gérés par le *registre* de l'extension de votre nom de domaine. Un *registre* est une organisation qui gère l'ensemble des domaines pour une extension donnée. Par exemple, l'**AFNIC** gère l'ensemble des noms de domaine ayant pour extension "*.fr*". Si tel est le cas, vous devez contactez directement le *registre* qui gère l'extension de votre nom de domaine afin de récupérer le *code de transfert*.
 >
 
 ![désactivation protection](images/outgoing-transfer-step2.png){.thumbnail}
@@ -114,7 +112,7 @@ Pour plus d'informations, contactez votre nouveau bureau d'enregistrement.
 
 ## Aller plus loin
 
-[Transfert de nom de domaine .co.uk sortant](/pages/web/domains/transfer_outgoing_couk)
+[Transférer un nom de domaine .co.uk](/pages/web/domains/transfer_outgoing_couk)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
