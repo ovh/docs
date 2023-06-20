@@ -68,7 +68,7 @@ Compare un messaggio con le informazioni relative alla configurazione della moda
 
 >
 > - Quando una e-mail viene trasmessa alla tua piattaforma di posta elettronica (*Server A*) in modalità **autorevole**, significa che tutti gli indirizzi e-mail del tuo nome a dominio sono ospitati solo su questa piattaforma. <br> <br> Ad esempio, se inviamo una e-mail all'indirizzo "*mary.johnson@mydomain.ovh*", il "*Server A*" restituisce un messaggio di errore al mittente, perché questo indirizzo non non esiste su "*Server A*".
-> - Quando una e-mail viene trasmessa alla tua piattaforma di posta elettronica (*Server A*) in modalità **non autoritativa**, significa che gli indirizzi e-mail del tuo nome a dominio sono distribuiti tra le e-mail principali della tua piattaforma (*Server A*) e un altro servizio di posta elettronica (*Server B*). <br> <br> Ad esempio, se inviamo un'e-mail all'indirizzo "*mary.johnson@mydomain.ovh*", il *Server A* inoltrerà l'e-mail al "*Server B*" in modo che può liberarlo.
+> - Quando una e-mail viene trasmessa alla tua piattaforma di posta elettronica (*Server A*) in modalità **non autoritativa**, significa che gli indirizzi e-mail del tuo nome a dominio sono distribuiti tra le e-mail principali della tua piattaforma (*Server A*) e un altro servizio di posta elettronica (*Server B*). <br> <br> Ad esempio, se inviamo un'e-mail all'indirizzo "*mary.johnson@mydomain.ovh*", il *Server A* inoltrerà l'e-mail al "*Server B*" in modo che quest'ultimo possa consegnarla.
 >
 >![Aggiungi dominio](images/add_domain_exchange_authoritative.png){.thumbnail}
 >
