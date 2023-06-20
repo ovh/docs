@@ -1,5 +1,5 @@
 ---
-title: 'Den Inhaber einer Domain ändern'
+title: 'Inhaber eines Domainnamens ändern'
 slug: wechsel_des_domaininhabers
 excerpt: 'Erfahren Sie hier, wie Sie den Inhaber eines Domainnamens wechseln können'
 section: Inhaberwechsel
@@ -14,12 +14,12 @@ updated: 2023-06-19
 
 ## Ziel
 
-Neben der Angabe von [Kontakten](/pages/account/customer/managing_contacts) erfordert die Registrierung eines Domainnamens die Angabe von Informationen zu dessen Inhaber. In diesem Zusammenhang bezeichnet der **Inhaber** eine Person, ein Unternehmen, eine Organisation oder eine Vereinigung, die die Rechte an dieser Domain besitzt. **Die Änderung des Inhabers** bezieht sich auf die Übertragung von Eigentumsrechten von einer Person oder einem Unternehmen auf eine andere. Die Angaben des **Eigentümer** haben Rechtswirkung. Dieser Vorgang ist insbesondere dann zwingend, wenn ein Unternehmen seinen Namen ändert.
+Neben der Angabe von [Kontakten](/pages/account/customer/managing_contacts) erfordert die Registrierung eines Domainnamens die Angabe von Informationen zu dessen Inhaber. In diesem Zusammenhang bezeichnet der **Inhaber** entweder eine natürliche Person oder eine Organisation (Unternehmen, Verein, etc.), die über Nutzungsrechte an diesem Domainnamen verfügt. Unter einem **Inhaberwechsel** versteht man eine rechtsverbindliche Änderung dieser Daten bzw. die Übertragung von Nutzungsrechten an einen neuen Inhaber. Zum Beispiel ist der Inhaberwechsel das obligatorische Verfahren bei einer Namensänderung eines Unternehmens.
 
 > [!primary]
->Bei dieser Operation wird Ihre Domain nicht auf einen anderen OVHcloud-Kundenaccount umgezogen.
+>Bei dieser Operation wird Ihr Domainname nicht auf einen anderen OVHcloud Kunden-Account übertragen.
 >
->Hierzu müssen Sie die [Kontaktverwaltung](/pages/account/customer/managing_contacts) der Domain anpassen.
+>Hierzu müssen Sie die [Kontaktverwaltung](/pages/account/customer/managing_contacts) des Domainnamens anpassen.
 >
 > Wenn Sie einen Inhaber- und Kontaktwechsel für denselben Domainnamen vornehmen müssen, gibt es dabei keine bevorzugte Reihenfolge. Es ist jedoch der Administrator-Kontakt, der diese Vorgänge einleiten kann. Diese beiden Änderungen werden daher im Kundencenter des Administrator-Kontakts für den Domainnamen vorgenommen.
 
@@ -27,32 +27,31 @@ Neben der Angabe von [Kontakten](/pages/account/customer/managing_contacts) erfo
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
-- Sie besitzen eine bei OVHcloud registrierte Domain, für die keine Operation (Inhaberwechsel, Transfer, Erstellung) im Gange ist. Wenn vor kurzem eine Operation für Ihren Domainnamen abgeschlossen wurde, dauert es mindestens 60 Kalendertage, bis eine neue Operation durchgeführt wird.
-- Sie sind der [Administratorkontakt](/pages/account/customer/managing_contacts) des entsprechenden Domainnamens.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verwalten einen bei OVHcloud registrierten Domainnamen, für den keine Operation (Inhaberwechsel, Transfer, Erstellung) im Gange ist. Wenn vor kurzem ein solcher Vorgang für Ihren Domainnamen abgeschlossen wurde, gilt regulär eine Frist von 60 Kalendertagen, bevor eine neue Operation gestartet werden kann.
+- Sie sind der [Administrator-Kontakt](/pages/account/customer/managing_contacts) des entsprechenden Domainnamens.
 - Sie haben die Zustimmung des aktuellen Inhabers des Domainnamens, den Inhaberwechsel durchzuführen.
 
 ## In der praktischen Anwendung
 
 > [!warning]
 >
-> Die folgenden Anweisungen beschreiben die gängigste Vorgehensweise zur Änderung des Inhabers einer Domain. Sie sind für die meisten Bereiche der höheren Ebene gültig, gemeinhin als **T**op **L**evel **D**omain (**TLD**) bezeichnet. 
->TLDs** bedeuten das Ende Ihrer Domain, wie zum Beispiel das *.com*, *.net*, *.de* usw.
+> Die folgenden Anweisungen beschreiben die gängigste Methode um den Inhaber eines Domainnamens zu ändern und gelten für die meisten **T**op **L**evel **D**omains (**TLD**). Als **TLD** wird der letzte Teil des Domainamens bzw. dessen Endung bezeichnet, also *.com*, *.net*, *.de* etc.
 >
-> Die besonderen Verfahrensvorschriften für Domainnamen **TLD** werden nur von der zuständigen Vergabebehörde, d. h. **register**, festgelegt. Ein Registrar (oder Registrar) wie OVHcloud muss diese Regeln einhalten und hat keinen Einfluss auf Registrierungsentscheidungen.
+> Die besonderen Verfahrensvorschriften für **TLD**s werden von der zuständigen Vergabestelle, d.h. der **Registry**, festgelegt. Registrare wie OVHcloud müssen diese Regeln einhalten und haben keinen Einfluss auf Registry-Entscheidungen.
 >
-> Es gibt im Wesentlichen zwei Arten von **TLD**: **ccTLD** und **gTLD** Die **ccTLD** entsprechen **TLD** für eine Region oder ein Land (*.fr*, *.be*, *.uk*, *.de*, *.paris* usw.). **gTLD** entsprechend generischen **TLD** (*.net*, *.com*, *.info*, *.org* etc.).
+> Es gibt im Wesentlichen zwei Arten von **TLD**: **ccTLD** und **gTLD**. Die **ccTLD**s entsprechen einer Region oder einem Land (*.fr*, *.be*, *.uk*, *.de*, *.paris* etc.) und **gTLD** sind sog. generische **TLD**s (*.net*, *.com*, *.info*, *.org* etc.).
 >
-> Das genaue Verfahren für die Änderung des Inhabers einer Domain kann daher variieren, insbesondere für bestimmte Domainnamen **ccTLD**, wie *.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi* usw. und für einige wenige **TLD***, *.fm* usw.). Für einige von ihnen ist ein Inhaberwechsel eine kostenpflichtige Operation. Der Inhaberwechsel kann auch aus verschiedenen Gründen ausgesetzt werden, z. B. wegen Zahlungsunfähigkeit, Missbrauch oder Sperrung durch das Register. 
+> Das genaue Verfahren für die Änderung des Inhabers kann variieren, insbesondere bei bestimmten Ländercode-**TLD**s, wie *.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi* etc. sowie einigen Spezialbereich-**TLD**s (z.B. *.am*, *.fm.*). Bei manchen dieser Registrierungsstellen gilt ein Inhaberwechsel als kostenpflichtige Transaktion. Der Inhaberwechsel kann auch aus verschiedenen Gründen ausgesetzt werden, etwa wegen ausstehender Zahlungen, Missbrauchsfällen oder einer Sperrung seitens der Registry.
 >
-> Wir empfehlen Ihnen, im Zweifelsfall folgende Ressourcen einzusehen:
+> Wir empfehlen, im Zweifelsfall folgende Ressourcen zu Rate zu ziehen:
 >
-> - die Website des Registers **TLD**
-> - Die [Liste der bei OVHcloud verfügbaren TLDs](https://www.ovhcloud.com/de/domains/tld/)
-> - Den Bereich `Laufende Vorgänge`{.action} im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), um noch nicht abgeschlossene Updates des Domainnamens zu überprüfen.
+> - Die Webseite der zuständigen **TLD**-Registry
+> - Die [Beschreibungen der bei OVHcloud verfügbaren **TLD**s](https://www.ovhcloud.com/de/domains/tld/)
+> - Den Bereich `Laufende Vorgänge`{.action} im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), zur Prüfung noch laufender Updates für den Domainnamen
 >
 
-### Schritt 1: Domain auswählen
+### Schritt 1: Domainnamen auswählen
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im Bereich `Web Cloud`{.action} den Domainnamen, deren Inhaber Sie ändern möchten unter `Domainnamen`{.action} aus.
 
@@ -66,10 +65,10 @@ Klicken Sie im Tab `Allgemeine Informationen`{.action} im Rahmen **Abo** auf die
 >
 > Jede Änderung des Vornamens, des Namens, der Organisation, der Rechtsform oder der E-Mail-Adresse des Inhabers gilt als Inhaberwechsel.
 > 
-> Wenn Sie nur Angaben zum Inhaber bearbeiten, die nicht oben aufgeführt sind, fahren Sie stattdessen mit dem Abschnitt [Aktualisierung der Inhaberinformationen](#updateownerinformation) fort.
+> Wenn Sie nur Angaben zum Inhaber bearbeiten, die keine dieser Daten betreffen, fahren Sie stattdessen mit dem Abschnitt [Aktualisierung der Inhaberinformationen](#updateownerinformation) fort.
 > 
 
-Es öffnet sich ein neuer Browser-Tab mit allen in Frage kommenden Domains. Wählen Sie einen Domainnamen in der Liste aus, indem Sie das Feld links davon ankreuzen. Dieser Schritt kann auch verwendet werden, um eine Gruppenoperation zu starten: Es ist möglich, einen Inhaberwechsel für mehrere Domainnamen gleichzeitig durchzuführen, zum Beispiel um den Inhaber aller *.ovh* Domains zu ändern. Klicken Sie nach der Auswahl auf `Weiter`{.action}.
+Es öffnet sich ein neuer Browser-Tab mit allen in Frage kommenden Domains. Wählen Sie einen Domainnamen in der Liste aus, indem Sie das Feld links davon ankreuzen. Dieser Schritt kann auch verwendet werden, um eine Gruppenoperation zu starten: Es ist möglich, einen Inhaberwechsel für mehrere Domainnamen gleichzeitig durchzuführen, zum Beispiel um den Inhaber aller *.ovh*-Domainnamen zu ändern. Klicken Sie nach der Auswahl auf `Weiter`{.action}.
 
 ![Änderung des Inhabers](images/3657.PNG){.thumbnail}
 
@@ -88,7 +87,7 @@ Sobald beide Empfänger die Anfrage per E-Mail bestätigt haben, wird die Änder
 >
 > Das Verfahren kann von beiden Parteien innerhalb einer Frist von 14 Tagen validiert werden.
 > 
-> Wird die Änderung von einer der beiden Parteien abgelehnt, wird der Vorgang abgrbrochen.
+> Wird die Änderung von einer der beiden Parteien abgelehnt, wird der Vorgang abgebrochen.
 
 > [!warning]
 >
@@ -96,7 +95,7 @@ Sobald beide Empfänger die Anfrage per E-Mail bestätigt haben, wird die Änder
 
 ### Aktualisierung der Inhaberinformationen <a name="updateownerinformation"></a>
 
-Wenn Sie nur bestimmte Sekundärinformationen wie Telefonnummer, Adresse usw. aktualisieren müssen, brauchen Sie kein Verfahren zum Inhaberwechsel einzuleiten. Diese Informationen können direkt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) geändert werden.
+Wenn Sie nur bestimmte Sekundärinformationen wie Telefonnummer, Adresse usw. aktualisieren müssen, brauchen Sie kein Verfahren zum Inhaberwechsel einzuleiten. Diese Daten können direkt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) geändert werden.
 
 Klicken Sie dazu im Rahmen **Abo** auf die Schaltfläche `...`{.action} neben den **Kontakten** und danach auf `Angaben des Inhabers aktualisieren`{.action}.
 
