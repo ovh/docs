@@ -24,7 +24,7 @@ When your **notebook is created**, a `/workspace` directory is automatically cre
 
 When you **stop your notebook**, your workspace (`/workspace`) is pushed to your [Object Storage](/pages/platform/ai/gi_02_concepts_data). This means that all files contained in your `/workspace` directory will be saved for future use.
 
-Therefore, the next time you **restart your notebook**, your workspace will be pulled directly from your object storage into `/workspace`. You will not need **to reinstall your python libraries, re-import your data** or anything else you put in the `/workspace` directory.
+Therefore, the next time you **restart your notebook**, your workspace will be pulled directly from your Object Storage into `/workspace`. You will not need **to reinstall your python libraries, re-import your data** or anything else you put in the `/workspace` directory.
 
 > [!primary]
 >
