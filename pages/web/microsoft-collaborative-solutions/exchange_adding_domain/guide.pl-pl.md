@@ -68,7 +68,7 @@ Okno wyświetla teraz informacje dotyczące konfiguracji trybów.
 
 >
 > - Kiedy wiadomość e-mail jest przesyłana na Twoją platformę e-mail (*Server A*) w trybie **autorytatywnym**, oznacza to, że wszystkie adresy e-mail Twojej nazwy domeny są hostowane tylko na tej platformie. <br> <br> Na przykład, jeśli wyślemy e-mail na adres "*mary.johnson@mydomain.ovh*", "*Server A*" zwróci do nadawcy komunikat o błędzie, ponieważ ten adres nie nie istnieje na „*Server A*”.
-> - Gdy wiadomość e-mail jest przesyłana na Twoją platformę e-mail (*Server A*) w trybie **nieautorytatywnym**, oznacza to, że adresy e-mail Twojej nazwy domeny są rozdzielane między główny adres e-mail Twojej platformy (*Server A*) i inną usługę e-mail (*Server B*). <br> <br> Na przykład, jeśli wyślemy wiadomość e-mail na adres "*mary.johnson@mydomain.ovh*", *Server A* przekaże wiadomość e-mail na "*Server B*", aby może go uwolnić.
+> - Gdy wiadomość e-mail jest przesyłana na Twoją platformę e-mail (*Server A*) w trybie **nieautorytatywnym**, oznacza to, że adresy e-mail Twojej nazwy domeny są rozdzielane między główny adres e-mail Twojej platformy (*Server A*) i inną usługę e-mail (*Server B*). <br> <br> Na przykład, jeśli wyślemy wiadomość e-mail na adres "*mary.johnson@mydomain.ovh*", *Server A* przekaże wiadomość e-mail na "*Server B*", aby ten mógł ją dostarczyć.
 >
 >![Dodaj domenę](images/add_domain_exchange_authoritative.png){.thumbnail}
 >
