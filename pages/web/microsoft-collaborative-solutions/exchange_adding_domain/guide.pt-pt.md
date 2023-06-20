@@ -68,7 +68,7 @@ A janela apresenta agora informações sobre a configuração dos modos.
 
 >
 > - Quando um e-mail é transmitido para sua plataforma de e-mail (*Server A*) no modo **autoritário**, isso significa que todos os endereços de e-mail do seu nome de domínio estão hospedados apenas nesta plataforma. <br> <br> Por exemplo, se enviarmos um e-mail para o endereço "*mary.johnson@mydomain.ovh*", o "*Server A*" devolve uma mensagem de falha ao remetente, porque este endereço não não existe no "*Server A*".
-> - Quando um e-mail é transmitido para sua plataforma de e-mail (*Server A*) no modo **não autoritativo**, isso significa que os endereços de e-mail do seu nome de domínio são distribuídos entre o e-mail principal da sua plataforma (*Server A*) e outro serviço de e-mail (*Server B*). <br> <br> Por exemplo, se enviarmos um e-mail para o endereço "*mary.johnson@mydomain.ovh*", *Server A* encaminhará o e-mail para "*Server B*" para que ele pode libertá-lo.
+> - Quando um e-mail é transmitido para sua plataforma de e-mail (*Server A*) no modo **não autoritativo**, isso significa que os endereços de e-mail do seu nome de domínio são distribuídos entre o e-mail principal da sua plataforma (*Server A*) e outro serviço de e-mail (*Server B*). <br> <br> Por exemplo, se enviarmos um e-mail para o endereço "*mary.johnson@mydomain.ovh*", *Server A* encaminhará o e-mail para "*Server B*" para que este a possa entregar.
 >
 >![Adicionar domínio](images/add_domain_exchange_authoritative.png){.thumbnail}
 >
