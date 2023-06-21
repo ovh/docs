@@ -33,6 +33,10 @@ Therefore, the next time you **restart your notebook**, your workspace will be p
 
 *There is also a `/data` folder in which you can store your data. **This solution is more efficient but ephemeral**, meaning that it will not be persisted if you close your notebook or if it crashes. In other words, the data contained within this directory cannot be recovered if the notebook leaves the `RUNNING` state.*
 
+Here is a graph summarizing your notebook's workspace and ephemeral storage usage during its various states:
+
+![image](images/ai-notebooks_workspace.svg){.thumbnail}
+
 ### Deleting workspace files
 
 If you run the `ls -a` command in your notebook's `/workspace` directory, you will see all the files and directories that your workspace contains, including hidden ones (whose names begin with a dot (.)). 
@@ -53,7 +57,7 @@ If you run the `ls -a` command in your notebook's `/workspace` directory, you wi
 
 ### Workspace billing
 
-The first 10GB of the `/workspace` directory are free during 30 consecutive days. After this period, the [price of OVHcloud Object Storage](https://www.ovhcloud.com/en/public-cloud/prices/#439) is applied for each GB.
+The first 10GB of the `/workspace` directory are free during 30 consecutive days. After this period, the [price of OVHcloud Object Storage](https://www.ovhcloud.com/en/public-cloud/prices/#439) is applied for each GB. To learn how we bill AI Notebooks, refer to the [Billing and lifecycle documentation](/pages/platform/ai/notebook_guide_billing_concept).
 
 ## Feedback
 
