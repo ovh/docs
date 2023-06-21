@@ -30,7 +30,7 @@ updated: 2023-05-04
 
 Most requests sent to the OpenStack API must follow an authorization procedure, which involves generating a token and validating it.
 
-However, if you perform too many actions witin a short period of time, some OpenStack actions will fall in error due to too many API Calls. The current limit is 60 token creations per minutes and per OpenStack user. The authentication endpoint will return HTTP 429 errors beyond this limit.
+However, if you perform too many actions witin a short period of time, some OpenStack actions will fall in error due to too many API Calls. The current limit is 60 token creations per minutes and per OpenStack user. The authentication endpoint will return HTTP 429 errors beyond this limit. See the rate limit guide for more info on this: [Public Cloud API Rate Limits](/pages/platform/public-cloud/api_rate_limits)
 
 For more information, see the [OpenStack API](http://developer.openstack.org/api-guide/quick-start/) documentation.
 
