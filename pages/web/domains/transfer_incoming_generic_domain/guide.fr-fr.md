@@ -1,19 +1,19 @@
 ---
 title: 'Transférer son nom de domaine vers OVHcloud'
 slug: transferer-mon-domaine-generique
-excerpt: "Apprenez comment réaliser le transfert d'un nom de domaine vers OVHcloud"
+excerpt: "Découvrez comment réaliser le transfert d'un nom de domaine vers OVHcloud"
 section: Transfert
 order: 01
-updated: 2023-06-07
+updated: 2023-06-21
 ---
 
-**Dernière mise à jour le 07/06/2023**
+**Dernière mise à jour le 21/06/2023**
 
 ## Objectif
 
-Votre nom de domaine est actuellement déposé dans un bureau d’enregistrement et vous souhaitez le confier à OVHcloud ? C'est possible, via une procédure de transfert.
+Votre nom de domaine est actuellement déposé dans un *bureau d’enregistrement* et vous souhaitez le confier à OVHcloud ? C'est possible, via une procédure de transfert.
 
-En transférant votre nom de domaine, vous changerez de registre pour celui-ci. Vous pouvez transférer votre nom de domaine vers OVHcloud en créant une commande. Ce processus prend généralement entre un et dix jours.
+En transférant votre nom de domaine, vous changerez de *bureau d'enregistrement* pour celui-ci. Vous pouvez transférer votre nom de domaine vers OVHcloud en créant une commande. Ce processus prend généralement entre un et dix jours.
 
 **Découvrez comment transférer un nom de domaine générique vers OVHcloud.**
 
@@ -58,7 +58,7 @@ La procédure de transfert comporte plusieurs étapes, impliquant la prise de co
 
 > [!warning]
 >
-> La procédure exacte de transfert de domaine peut varier, en particulier dans le cas de certains TLD de code de pays (ccTLD, tels que .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) et de quelques TLD spéciaux (.am, .fm, etc.). Selon l'extension de votre nom de domaine, des prérequis supplémentaires peuvent être nécessaires. Nous vous recommandons de vérifier d'abord les informations affichées pour l'extension concernée, sur notre site Web: <https://www.ovhcloud.com/fr/domains/tld/>.
+> La procédure exacte de transfert de domaine peut varier, en particulier dans le cas de certains **TLD** de code de pays (**ccTLD**, tels que .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) et de quelques **TLD** spéciaux (.am, .fm, etc.). Selon l'extension de votre nom de domaine, des prérequis supplémentaires peuvent être nécessaires. Nous vous recommandons de vérifier d'abord les informations affichées pour l'extension concernée, sur notre site Web: <https://www.ovhcloud.com/fr/domains/tld/>.
 >
 
 ### Étape 1 : vérifier les informations associées au nom de domaine
@@ -153,6 +153,20 @@ Le processus de transfert peut être redémarré à partir de l'[espace client O
 ### Étape 5 : gérer son nom de domaine avec OVHcloud
 
 Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de domaine à partir de l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Pour ce faire, sélectionnez `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action}, puis cliquez sur le nom de domaine concerné.
+
+> [!warning]
+>
+> Pour les noms de domaine avec une extension *générique* (les **gTLD** comme les *.com*, *.net*, *.info*, *.org*, etc.), la date d'expiration initiale du nom de domaine est conservée. OVHcloud incrémente une année supplémentaire de souscription gratuitement en plus du transfert réalisé.
+> Par exemple, nous sommes le 04/06/2023 et votre nom de domaine avec une extension *générique* expire le 29/09/2023 **avant** le transfert. Une fois transféré chez OVHcloud, votre nom de domaine expirera désormais le 29/09/2024.
+>
+> Pour les noms de domaine avec une extension *locale* ou *régionnale* (les **ccTLD** comme les *.fr*, *.be*, *.de*, *.es*, etc.), cela dépend des extensions et des règles mises en place par le **registre** de l'extension en question.
+> Par précaution et une fois le transfert terminé, vérifiez la date d'expiration de votre nom de domaine directement depuis votre espace client OVHcloud.
+>
+> Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis sélectionnez le nom de domaine concerné. Sur la page qui s'affiche et juste en dessous de votre nom de domaine sur la partie haute de la page, vous retrouverez la date de renouvellement prévue avec le **mois** et **l'année** d'échéance.
+
+> En fonction de la situation et de la nouvelle date d'expiration de votre nom de domaine, un renouvellement du domaine sera peut être nécessaire juste après le transfert.
+>
+>
 
 ## Aller plus loin
 
