@@ -102,7 +102,7 @@ Quando for necessário indicar o código de transferência, introduza-o no campo
 
 ![domain](images/step_authinfo_add.png){.thumbnail}
 
-Também pode concluir a sua encomenda com um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} e outras soluções da OVHcloud. Isto pode interessar-lhe se deseja também migrar os seus serviços para a OVHcloud. O nosso manual intitulado "[Como migrar um site para a OVHcloud](../../hosting/migrar-site-para-ovh/){.external}?" irá fornecer-lhe instruções sobre como realizar este procedimento.
+Também pode concluir a sua encomenda com um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} e outras soluções da OVHcloud. Isto pode interessar-lhe se deseja também migrar os seus serviços para a OVHcloud. O nosso manual intitulado "[Como migrar um site para a OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}?" irá fornecer-lhe instruções sobre como realizar este procedimento.
 
 > [!warning]
 >
@@ -161,6 +161,11 @@ Uma vez terminado o processo de transferência, pode gerir o seu domínio a part
 
 ## Quer saber mais?
 
-[Migração do seu website e dos seus e-mails para a OVHcloud](../../hosting/migrar-site-para-ovh/){.external}
+[Migração do seu website e dos seus e-mails para a OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

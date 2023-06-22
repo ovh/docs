@@ -101,7 +101,7 @@ Quando ti viene chiesto di fornire il codice di trasferimento, digitalo nella ca
 
 ![domain](images/step_authinfo_add.png){.thumbnail}
 
-È inoltre possibile completare l'ordine con un [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} e altre soluzioni OVHcloud. Per effettuare questa operazione è necessario migrare i servizi verso OVHcloud. Questa guida, intitolata "[Migrare un sito e un servizio di posta in OVHcloud](../../hosting/migrare-un-sito-in-ovh/)", fornisce alcune istruzioni su come procedere.
+È inoltre possibile completare l'ordine con un [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} e altre soluzioni OVHcloud. Per effettuare questa operazione è necessario migrare i servizi verso OVHcloud. Questa guida, intitolata "[Migrare un sito e un servizio di posta in OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh)", fornisce alcune istruzioni su come procedere.
 
 > [!warning]
 >
@@ -160,6 +160,10 @@ Una volta completata la procedura, è possibile gestire il dominio dallo [Spazio
 
 ## Per saperne di più
 
-[Migrazione del tuo sito Web e delle tue email verso OVHcloud](../../hosting/migrare-un-sito-in-ovh/){.external}
+[Migrazione del tuo sito Web e delle tue email verso OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh)
+
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 
 Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

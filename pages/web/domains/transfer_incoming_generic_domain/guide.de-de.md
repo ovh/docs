@@ -98,7 +98,7 @@ Wenn Sie zur Eingabe des AUTH/INFO-Code eingeben werden, können Sie ihn in das 
 
 ![domain](images/step_authinfo_add.png){.thumbnail}
 
-Sie können Ihre Bestellung auch mit einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} kombinieren. Unsere Anleitung "[Migration Ihrer Website zu OVHcloud](../../hosting/migration-ihrer-website-zu-ovh/){.external}" beschreibt den optimalen Weg zum Migrieren Ihrer Dienste.
+Sie können Ihre Bestellung auch mit einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} kombinieren. Unsere Anleitung "[Migration Ihrer Website zu OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}" beschreibt den optimalen Weg zum Migrieren Ihrer Dienste.
 
 > [!warning]
 >
@@ -157,6 +157,10 @@ Sobald der Transfer abgeschlossen ist, können Sie Ihren Domainnamen über das [
 
 ## Weiterführende Informationen
 
-[Migration Ihrer Website und E-Mails zu OVHcloud](../../hosting/migration-ihrer-website-zu-ovh/)
+[Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

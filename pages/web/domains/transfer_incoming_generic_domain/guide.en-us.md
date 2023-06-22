@@ -94,7 +94,7 @@ When you are asked to provide your transfer code, enter it into the field. If yo
 
 ![domain](images/step_authinfo_add.png){.thumbnail}
 
-Domains can also be ordered in addition to a [Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/). Our guide on [Migrating your website and emails to OVHcloud](../../hosting/migrating-website-to-ovh/){.external} provides useful information for an optimised approach.
+Domains can also be ordered in addition to a [Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/). Our guide on [Migrating your website and emails to OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external} provides useful information for an optimised approach.
 
 > [!warning]
 >
@@ -155,10 +155,14 @@ To do this, go to `Web Cloud`{.action} and open `Domain names`{.action} in the s
 
 ## Go further
 
-[Migrating your website and emails to OVHcloud](../../hosting/migrating-website-to-ovh/)
+[Migrating your website and emails to OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh)
 
 [Editing an OVHcloud DNS zone](../web_hosting_how_to_edit_my_dns_zone/)
 
 [Editing the DNS servers for an OVHcloud domain name](../web_hosting_general_information_about_dns_servers/)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
