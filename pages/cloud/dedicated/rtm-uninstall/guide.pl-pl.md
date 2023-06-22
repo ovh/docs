@@ -1,6 +1,6 @@
 ---
 title: "Odinstaluj system monitoringu RTM v2"
-excerpt:"Dowiedz się, jak odinstalować system monitorowania RTM w odniesieniu do Twoich usług"
+excerpt: "Dowiedz się, jak odinstalować system monitorowania RTM w odniesieniu do Twoich usług"
 updated: 2023-06-20
 ---
 
