@@ -1,6 +1,6 @@
 ---
 title: "Das RTM v2 Monitoringsystem deinstallieren"
-excerpt: "Diese Anleitung erklärt, wie Sie das RTM Monitoring System für Ihre Dienstleistungen deinstallieren"
+excerpt: "Diese Anleitung erklärt, wie Sie das RTM Monitoring System von Ihren Diensten deinstallieren"
 updated: 2023-06-20
 ---
 
