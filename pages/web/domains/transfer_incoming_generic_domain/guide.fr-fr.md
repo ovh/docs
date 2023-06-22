@@ -21,9 +21,9 @@ En transférant votre nom de domaine, vous changerez de **bureau d'enregistremen
 >
 > Si OVHcloud est déjà le *bureau d'enregistrement* de votre nom de domaine **avant** de démarrer la procédure qui va suivre, le *transfert entrant de domaine* n'est pas la procédure appropriée. La procédure de *transfert entrant de domaine* s’applique **uniquement** aux noms de domaine enregistrés dans un autre *bureau d'enregistrement* qu'OVHcloud.
 >
-> Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](https://docs.ovh.com/fr/customer/gestion-des-contacts/).
+> Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](/pages/account/customer/managing_contacts).
 >
-> Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](https://docs.ovh.com/fr/domains/changement-proprietaire-domaine/).
+> Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](/pages/web/domains/trade_domain).
 >
 
 ## Prérequis
@@ -61,7 +61,7 @@ La procédure de transfert comporte plusieurs étapes, impliquant la prise de co
 
 ### Étape 1 : vérifier les informations associées au nom de domaine
 
-**Pour commencer, il est important de vous assurer que les informations associées au nom de domaine sont à jour.** Depuis la mise en place du RGPD, les données visibles dans le [« Whois »](https://www.ovh.com/fr/support/outils/check_whois.pl) sont devenues très limitées. Nous vous recommandons de vérifier les informations associées à votre nom de domaine via le bureau d'enregistrement actuel de votre nom de domaine.
+**Pour commencer, il est important de vous assurer que les informations associées au nom de domaine sont à jour.** Depuis la mise en place du RGPD, les données visibles dans le [« Whois »](https://www.ovhcloud.com/fr/domains/whois/) sont devenues très limitées. Nous vous recommandons de vérifier les informations associées à votre nom de domaine via le bureau d'enregistrement actuel de votre nom de domaine.
 
 - **Si les informations sont correctes :**
  passez à l'étape suivante de ce guide.
@@ -69,7 +69,7 @@ La procédure de transfert comporte plusieurs étapes, impliquant la prise de co
 
 > [!primary]
 >
-> Si vous ne savez pas quel bureau d'enregistrement est responsable de votre nom de domaine, les lignes « Registrar », qui apparaîtront dans le résultat de la recherche de l'[outil Whois](https://www.ovh.com/fr/cgi-bin/whois.pl){.external}, peuvent vous fournir des informations sur son identité.
+> Si vous ne savez pas quel bureau d'enregistrement est responsable de votre nom de domaine, les lignes « Registrar », qui apparaîtront dans le résultat de la recherche de l'[outil Whois](https://www.ovhcloud.com/fr/domains/whois/){.external}, peuvent vous fournir des informations sur son identité.
 >
 
 ### Étape 2 : déverrouiller son nom de domaine et récupérer le code de transfert
@@ -95,7 +95,7 @@ Lorsque vous êtes invité à fournir votre code de transfert, entrez-le dans la
 
 ![domain](images/step_authinfo_add.png){.thumbnail}
 
-Vous pouvez également terminer votre commande avec un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} et d'autres solutions OVHcloud. Cela peut vous intéresser si vous souhaitez également migrer vos services vers OVHcloud. Notre guide intitulé « [Migrer mon site chez OVHcloud](../../hosting/migrer-mon-site-chez-ovh/){.external} » vous fournira des instructions sur la façon de procéder.
+Vous pouvez également terminer votre commande avec un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} et d'autres solutions OVHcloud. Cela peut vous intéresser si vous souhaitez également migrer vos services vers OVHcloud. Notre guide intitulé « [Migrer mon site chez OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external} » vous fournira des instructions sur la façon de procéder.
 
 > [!warning]
 >
@@ -110,7 +110,7 @@ Vous pouvez également terminer votre commande avec un [hébergement web](https:
 
 - En cliquant sur `Modifier la configuration`{.action} dans cette étape, vous pouvez entrer les noms des serveurs DNS que le nom de domaine utilise actuellement. De cette manière, le nom de domaine sera déjà associé à ces serveurs DNS dans la configuration OVHcloud.
 
-- Si vous continuez sans effectuer cette opération, le nom de domaine sera fourni avec une nouvelle zone DNS sur les serveurs DNS OVHcloud. Une [modification manuelle de la zone DNS](../editer-ma-zone-dns/) peut alors devenir nécessaire.
+- Si vous continuez sans effectuer cette opération, le nom de domaine sera fourni avec une nouvelle zone DNS sur les serveurs DNS OVHcloud. Une [modification manuelle de la zone DNS](/pages/web/domains/dns_zone_edit) peut alors devenir nécessaire.
 
 - Dans certains cas, le processus de transfert peut nécessiter des informations supplémentaires concernant le propriétaire du nom de domaine. Pour ajouter ces informations, cliquez sur l'option `Gérer les contacts/le propriétaire`{.action}.
 
@@ -167,7 +167,7 @@ Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de d
 
 ## Aller plus loin
 
-[Migration de votre site Web et de vos e-mails vers OVHcloud](../../hosting/migrer-mon-site-chez-ovh/){.external}
+[Migration de votre site Web et de vos e-mails vers OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
