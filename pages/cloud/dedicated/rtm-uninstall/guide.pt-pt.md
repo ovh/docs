@@ -1,5 +1,5 @@
 ---
-título: "Desinstalar o sistema de monitorização RTM v2"
+title: "Desinstalar o sistema de monitorização RTM v2"
 excerpt: "Saiba como desinstalar o sistema de monitorização RTM nos seus serviços"
 updated: 2023-06-20
 ---
