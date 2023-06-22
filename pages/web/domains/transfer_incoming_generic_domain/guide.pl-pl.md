@@ -67,7 +67,7 @@ Procedura transferu składa się z kilku etapów, w które włączone są różn
 
 ### Etap 1: weryfikacja informacji związanych z domeną
 
-**W pierwszym kroku sprawdź, czy informacje związane z nazwą domeny są aktualne.** Od momentu wdrożenia RODO bardzo mało danych widocznych w bazie ["Whois"](https://www.ovh.pl/pomoc/narzedzia/check_whois.pl). Sugerujemy zatem sprawdzenie informacji dotyczących Twojej domeny u aktualnego operatora.
+**W pierwszym kroku sprawdź, czy informacje związane z nazwą domeny są aktualne.** Od momentu wdrożenia RODO bardzo mało danych widocznych w bazie ["Whois"](https://www.ovhcloud.com/pl/domains/whois/). Sugerujemy zatem sprawdzenie informacji dotyczących Twojej domeny u aktualnego operatora.
 
 - **Jeśli informacje są poprawne: przejdź do kolejnego etapu niniejszego przewodnika.**
 
@@ -75,7 +75,7 @@ Procedura transferu składa się z kilku etapów, w które włączone są różn
 
 > [!primary]
 >
-> Jeśli nie wiesz, który operator jest odpowiedzialny za Twoją domenę, możesz podać informacje dotyczące jej tożsamości w wierszach "Registrar", które pojawią się w wyniku wyszukiwania narzędzia [Whois](https://www.ovh.pl/pomoc/narzedzia/check_whois.pl){.external}.
+> Jeśli nie wiesz, który operator jest odpowiedzialny za Twoją domenę, możesz podać informacje dotyczące jej tożsamości w wierszach "Registrar", które pojawią się w wyniku wyszukiwania narzędzia [Whois](https://www.ovhcloud.com/pl/domains/whois/){.external}.
 >
 
 ### Etap 2: odblokowanie domeny i pobranie kodu transferu
@@ -116,7 +116,7 @@ Możesz również zakończyć zamówienie [hostingiem www](https://www.ovhcloud.
 
 - Po kliknięciu `Zmień konfigurację`{.action} w tym etapie możesz wprowadzić nazwy serwerów DNS, których nazwa domeny używa obecnie. W ten sposób domena będzie już powiązana z tymi serwerami DNS w konfiguracji OVHcloud.
 
-- Jeśli nie przeprowadzasz tej operacji, domena zostanie dostarczona wraz z nową strefą DNS na serwerach DNS OVHcloud. Może zaistnieć konieczność ręcznej [modyfikacji strefy DNS](../hosting_www_jak_edytowac_strefe_dns/).
+- Jeśli nie przeprowadzasz tej operacji, domena zostanie dostarczona wraz z nową strefą DNS na serwerach DNS OVHcloud. Może zaistnieć konieczność ręcznej [modyfikacji strefy DNS](/pages/web/domains/dns_zone_edit).
 
 - W niektórych przypadkach proces transferu może wymagać dodatkowych informacji o właścicielu domeny. Aby dodać te informacje, kliknij opcję `Zarządzanie kontaktami/właściciela`{.action}.
 

@@ -67,7 +67,7 @@ La procedura di trasferimento prevede diversi step, tra cui l'avvio di contatti 
 
 ### Step 1: verifica le informazioni del proprietario del dominio
 
-**Come prima cosa, è importante accertarsi che i dati associati al dominio siano aggiornati.** Dall'entrata in vigore del GDPR, i dati visibili nel ["Whois"](https://www.ovh.it/supporto/strumenti/check_whois.pl) sono diventati molto limitati. Puoi consultare le informazioni relative al tuo dominio presso il tuo attuale Registrar.
+**Come prima cosa, è importante accertarsi che i dati associati al dominio siano aggiornati.** Dall'entrata in vigore del GDPR, i dati visibili nel ["Whois"](https://www.ovhcloud.com/it/domains/whois/) sono diventati molto limitati. Puoi consultare le informazioni relative al tuo dominio presso il tuo attuale Registrar.
 
 - **Se le informazioni sono corrette: passa allo step successivo di questa guida.**
 
@@ -75,7 +75,7 @@ La procedura di trasferimento prevede diversi step, tra cui l'avvio di contatti 
 
 > [!primary]
 >
-> Se non sai quale Registrar è responsabile del tuo dominio, la riga "Registrar", che compare nel risultato della ricerca del [tool Whois](https://www.ovh.it/supporto/strumenti/check_whois.pl){.external}, può fornirti informazioni sulla sua identità.
+> Se non sai quale Registrar è responsabile del tuo dominio, la riga "Registrar", che compare nel risultato della ricerca del [tool Whois](https://www.ovhcloud.com/it/domains/whois/){.external}, può fornirti informazioni sulla sua identità.
 >
 
 ### Step 2: sblocca il dominio e recupera il codice di trasferimento
@@ -116,7 +116,7 @@ Quando ti viene chiesto di fornire il codice di trasferimento, digitalo nella ca
 
 - Cliccando su `Modifica la configurazione`{.action} in questo step, puoi inserire i nomi dei server DNS che il dominio sta utilizzando. In questo modo, il dominio sarà già associato a questi server DNS nella configurazione OVHcloud.
 
-- Se continui senza effettuare questa operazione, il dominio verrà fornito sui server DNS OVHcloud con una nuova zona DNS. Una [modifica manuale della zona DNS](../web_hosting_modifica_la_tua_zona_dns/) può rendersi necessaria.
+- Se continui senza effettuare questa operazione, il dominio verrà fornito sui server DNS OVHcloud con una nuova zona DNS. Una [modifica manuale della zona DNS](/pages/web/domains/dns_zone_edit) può rendersi necessaria.
 
 - In alcuni casi, la procedura di trasferimento può richiedere informazioni aggiuntive sul proprietario del dominio. Per aggiungere queste informazioni, clicca sull'opzione `Gestisci i contatti/il proprietario`{.action}.
 
