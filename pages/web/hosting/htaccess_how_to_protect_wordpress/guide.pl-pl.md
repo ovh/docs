@@ -4,10 +4,10 @@ slug: use-htaccess-with-wordpress
 excerpt: "Dowiedz się, jak zabezpieczyć blog WordPress jednym lub kilkoma plikami htaccess"
 section: 'Tutoriale'
 order: 022
-updated: 2023-03-08
+updated: 2023-06-22
 ---
 
-**Ostatnia aktualizacja z dnia 08-03-2023**
+**Ostatnia aktualizacja z dnia 22-06-2023**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
@@ -36,6 +36,17 @@ Pliki **.htaccess** mogą być tworzone i modyfikowane przy pomocy edytorów tek
 - [Notatnik](https://support.microsoft.com/pl-pl/windows/pomoc-w-aplikacji-notatnik-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} systemu Windows;
 - [TextEdit](https://support.apple.com/pl-pl/guide/textedit/welcome/mac){.external} na macOS; 
 - [Notepad++](https://notepad-plus-plus.org/){.external}.
+
+> [!primary]
+>
+> Zaproponowane poniżej rozwiązania w zakresie bezpieczeństwa nie są wyczerpujące.
+>
+> Na przykład, jeśli używasz innego **C**ontent **M**anagement **S**ystem (**CMS**) niż WordPress, dostępne są inne rozwiązania bezpieczeństwa.
+>
+> Jeśli nie korzystasz z CMS-a, OVHcloud udostępnia również tutorial dotyczący [ochrona katalogu lub interfejsu administracyjnego Twojej strony WWW za pomocą plików .htaccess](/pages/web/hosting/htaccess_protect_directory_by_password).
+>
+> W przypadku pytań dotyczących tworzenia, użytkowania lub programowania Twojej strony WWW, skontaktuj się z naszym [społecznością użytkowników](https://community.ovh.com/en/) lub naszymi [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/). Zespoły pomocy OVHcloud nie będą w stanie udzielić Ci wsparcia w tym zakresie.
+>
 
 ## FAQ
 
