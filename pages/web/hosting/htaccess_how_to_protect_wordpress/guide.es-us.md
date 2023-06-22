@@ -39,7 +39,7 @@ Los archivos **.htaccess** se pueden crear y modificar con editores de texto com
 
 > [!primary]
 >
-> Las siguientes soluciones de seguridad no son completas:
+> Las soluciones de seguridad propuestas a continuación no son exhaustivas.
 >
 > Por ejemplo, si utiliza otro **C**onent **M**anagement **S**ystem (**CMS**) que WordPress, existen otras soluciones de seguridad.
 >
