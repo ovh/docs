@@ -11,8 +11,6 @@ updated: 2023-06-15
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 02/03/2023**
-
 ## Objetivo
 
 **Descubra como configurar as ligações às API keystone no seu serviço com a ajuda dos tokens.**

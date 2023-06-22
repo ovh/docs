@@ -11,8 +11,6 @@ updated: 2023-06-15
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 02-03-2023**
-
 ## Wprowadzenie
 
 **Dowiedz się, jak skonfigurować połączenia z keystone API w Twojej usłudze za pomocą tokenów.**
