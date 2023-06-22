@@ -56,6 +56,6 @@ Templates that do not offer customisation will have the default credentials spec
 
 ## Go further
 
-If you need training or technical support to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and request a customised analysis of your project from our Professional Services team experts.
+If you need training or technical support to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and request a customised analysis of your project from our Professional Services team experts.
 
 Join our community of users on <https://community.ovh.com/en/>.
