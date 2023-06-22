@@ -4,10 +4,10 @@ slug: use-htaccess-with-wordpress
 excerpt: 'Découvrez comment sécuriser votre blog WordPress avec un ou plusieurs fichiers htaccess'
 section: 'Tutoriels'
 order: 022
-updated: 2023-03-08
+updated: 2023-06-22
 ---
 
-**Dernière mise à jour le 08/03/2023**
+**Dernière mise à jour le 22/06/2023**
 
 ## Objectif
 
@@ -32,6 +32,17 @@ Les fichiers **.htaccess** peuvent être créés et modifiés avec des éditeurs
 - [Bloc-notes](https://support.microsoft.com/fr-ca/windows/aide-de-bloc-notes-windows-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} de Windows ;
 - [TextEdit](https://support.apple.com/fr-ca/guide/textedit/welcome/mac){.external} sur macOS ; 
 - [Notepad++](https://notepad-plus-plus.org/){.external}.
+
+> [!primary]
+>
+> Les solutions de sécurité proposées ci-dessous ne sont pas exhaustives.
+>
+> Par exemple, si vous utilisez un autre **C**ontent **M**anagement **S**ystem (**CMS**) que WordPress, d'autres solutions de sécurité existent.
+>
+> Si vous n'utilisez pas un CMS, OVHcloud met également à votre disposition un tutoriel sur la [protection d'un répertoire ou de l'interface d'administration de votre site web via des fichiers .htaccess](/pages/web/hosting/htaccess_protect_directory_by_password).
+>
+> Pour toute question relative à la création, l'utilisation ou la programmation de votre site web, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou nos [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/). Les équipes du support OVHcloud ne seront pas en mesure de vous apporter une assistance sur ces sujets.
+>
 
 ## FAQ
 

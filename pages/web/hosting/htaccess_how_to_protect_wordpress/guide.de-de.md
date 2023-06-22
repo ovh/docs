@@ -4,14 +4,14 @@ slug: use-htaccess-with-wordpress
 excerpt: "Erfahren Sie hier, wie Sie Ihre WordPress Website mit einer oder mehreren htaccess-Dateien absichern"
 section: 'Tutorials'
 order: 022
-updated: 2023-03-08
+updated: 2023-06-22
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 08.03.2023**
+**Letzte Aktualisierung am 22.06.2023**
 
 ## Ziel
 
@@ -35,6 +35,17 @@ In dieser Anleitung erfahren Sie, wie Sie bestimmte Funktionen Ihres Webhostings
 - [Notizblock](https://support.microsoft.com/de-de/windows/hilfe-in-windows-editor-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} in Windows
 - [TextEdit](https://support.apple.com/de-de/guide/textedit/welcome/mac){.external} in macOS 
 - [Notepad++](https://notepad-plus-plus.org/){.external}
+
+> [!primary]
+>
+> Die unten aufgeführten Sicherheitslösungen sind nicht vollständig.
+>
+> Wenn Sie zum Beispiel ein anderes **C**ontent **M**anagement **S**ystem (**CMS**) als WordPress verwenden, gibt es andere Sicherheitslösungen.
+>
+> Wenn Sie kein CMS verwenden, stellt Ihnen OVHcloud auch ein Tutorial zum [Schutz eines Verzeichnisses oder des Verwaltungsinterface Ihrer Website über .htaccess Dateien](/pages/web/hosting/htaccess_protect_directory_by_password) zur Verfügung.
+>
+> Kontaktieren Sie unsere [User Community](https://community.ovh.com/en/) oder [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/). Die Support-Teams von OVHcloud werden Ihnen in diesen Fragen keine Hilfe bieten können.
+>
 
 ## FAQ
 
