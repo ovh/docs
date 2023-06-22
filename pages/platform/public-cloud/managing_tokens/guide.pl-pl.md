@@ -4,14 +4,12 @@ excerpt: 'Dowiedz się, jak używać tokenów za pomocą API Keystone'
 slug: zarzadzanie_tokenami
 legacy_guide_number: g1872
 section: 'Zarządzanie w OpenStack CLI'
-updated: 2023-03-02
+updated: 2023-06-15
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
-
-**Ostatnia aktualizacja z dnia 02-03-2023**
 
 ## Wprowadzenie
 
@@ -52,7 +50,9 @@ Więcej informacji znajdziesz w dokumentacji OpenStack [API](https://docs.openst
 
 Następujące czynności mogą być wykonywane ręcznie, są zazwyczaj wykorzystywane do celów edukacyjnych lub debugging.
 
-Konieczne jest załadowanie środowiska za pomocą pliku openrc (patrz przewodnik).
+Konieczne jest załadowanie środowiska za pomocą pliku openRC. W tym celu zalecamy pobranie i użycie pliku openrc.sh, który znajdziesz w interfejsie Horizon. Będzie on dysponował wszystkimi niezbędnymi zmiennymi środowiskowymi, takimi jak budowa kolejnych zamówień.
+
+Aby zalogować się do interfejsu Horizon i pobrać plik, zapoznaj się [z tym przewodnikiem](/pages/platform/public-cloud/introducing_horizon/).
 
 W poniższym przykładzie chcemy uzyskać informacje o metadata obiektu przechowywanego w ramach oferty Public Cloud Storage. Etapy są następujące:
 
@@ -66,7 +66,7 @@ Narzędzie wiersza poleceń cURL umożliwia tworzenie zapytań z każdego elemen
 #### Etap 1: Żądanie utworzenia tokena
 
 ```bash
-curl -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type" application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD' }, "scope": { "project": { "name": "'$OS_tenant_NAME'", "domain": { "id": "default" } } }' | python -mjson.tool
+curl -X POST ${OS_AUTH_URL}v${OS_IDENTITY_API_VERSION}/auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | python -mjson.tool
 ```
 
 Odpowiedź serwera wygląda następująco:
@@ -146,7 +146,7 @@ Adres docelowy usługi object storage pozwala na zapytanie informacji o obiekt.
 
 
 ```bash
-export token=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type" application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD' }, "scope": { "project": { "name": "'$OS_tenant_NAME'", "domain": { "id": "default" } } }' | grep -i '^X-Subject-Token' | cut -d" " -f2)
+export token=$(curl -is -X POST ${OS_AUTH_URL}v${OS_IDENTITY_API_VERSION}/auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | grep -i '^X-Subject-Token' | cut -d" " -f2)
 ```
 
 Ten token jest teraz elementem uwierzytelniającym, który będzie używany dla następnego zapytania.
