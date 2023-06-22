@@ -27,9 +27,9 @@ La transferencia de un dominio permite cambiar el agente registrador que lo gest
 >
 Si OVHcloud ya es el *registrar* de su dominio **antes** para iniciar el procedimiento que se va a seguir, la *transferencia entrante de dominio* no es el procedimiento adecuado. El procedimiento de *transferencia entrante de dominio* se aplica **únicamente** a los dominios registrados en otro *registrar* que no sea OVHcloud.
 >
-> Para transferir la gestión de su dominio a otra cuenta de cliente de OVHcloud, el método adecuado es un *cambio de contactos*. El procedimiento se describe en [esta guía](https://docs.ovh.com/es/customer/gestion-de-los-contactos/).
+> Para transferir la gestión de su dominio a otra cuenta de cliente de OVHcloud, el método adecuado es un *cambio de contactos*. El procedimiento se describe en [esta guía](/pages/account/customer/managing_contacts).
 >
-Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** de cambiar los contactos del dominio. Para ello, siga las indicaciones que le indicamos en la guía sobre el [cambio de propietario de los dominios](https://docs.ovh.com/es/domains/cambio-propietario-dominio/).
+Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** de cambiar los contactos del dominio. Para ello, siga las indicaciones que le indicamos en la guía sobre el [cambio de propietario de los dominios](/pages/web/domains/trade_domain).
 >
 
 ## Requisitos

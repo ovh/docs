@@ -21,9 +21,9 @@ By transferring your domain name, you will change your domain name registrar. Yo
 >
 > If OVHcloud is already the *registrar* of your domain name, the *incoming domain transfer* procedure does not apply. The *incoming domain transfer* procedure described in this guide is **only** appropriate for domain names registered with a *registrar* other than OVHcloud.
 >
-> To transfer the domain name management to another OVHcloud customer account, a *change of contacts* must be made instead. The procedure is described in [our contact management guide](https://docs.ovh.com/ca/en/customer/managing-contacts/).
+> To transfer the domain name management to another OVHcloud customer account, a *change of contacts* must be made instead. The procedure is described in [our contact management guide](/pages/account/customer/managing_contacts).
 >
-> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names instructions](https://docs.ovh.com/ca/en/domains/how-to-change-domain-name-holder/).
+> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names instructions](/pages/web/domains/trade_domain).
 >
 
 ## Requirements
@@ -60,7 +60,7 @@ The transfer procedure has several steps. These steps will involve various entit
 
 ### Step 1: Check the information associated with the domain
 
-**To start with, it is important to ensure that the information associated with the domain name is up-to-date.** Since the implementation of GDPR, the data visible in [WHOIS](https://www.ovh.co.uk/support/tools/check_whois.pl){.external} has become very limited. We recommend checking the information associated with your domain name via your current domain name registrar.
+**To start with, it is important to ensure that the information associated with the domain name is up-to-date.** Since the implementation of GDPR, the data visible in [WHOIS](https://www.ovhcloud.com/en-ca/domains/whois/){.external} has become very limited. We recommend checking the information associated with your domain name via your current domain name registrar.
 
 - **If the information is correct:** go to the next step of this guide.
 
@@ -68,7 +68,7 @@ The transfer procedure has several steps. These steps will involve various entit
 
 > [!primary]
 >
-> If you do not know which registrar is responsible for your domain name, the "Registrar" lines retrieved as part of the [WHOIS](https://www.ovh.co.uk/support/tools/check_whois.pl){.external} search result can help you identify it.
+> If you do not know which registrar is responsible for your domain name, the "Registrar" lines retrieved as part of the [WHOIS](https://www.ovhcloud.com/en-ca/domains/whois/){.external} search result can help you identify it.
 >
 
 ### Step 2: Unlock your domain and retrieve the transfer code
@@ -109,7 +109,7 @@ Domains can also be ordered in addition to a [Web Hosting plan](https://www.ovhc
 
 - Clicking on `Change the configuration`{.action} in this step allows you to enter the names of the DNS servers the domain name is currently using. This way, the domain name will be already associated with those DNS servers in the OVHcloud configuration. 
 
-- If you proceed without doing this, the domain name will provided with a new DNS zone on OVHcloud DNS servers. A manual [modification of the DNS zone](../web_hosting_how_to_edit_my_dns_zone/) might then become necessary.
+- If you proceed without doing this, the domain name will provided with a new DNS zone on OVHcloud DNS servers. A manual [modification of the DNS zone](/pages/web/domains/dns_zone_edit) might then become necessary.
 
 - In some cases, the transfer process may require additional information regarding the domain name owner. To add this information, click on the option `Manage contacts/owner`{.action}.
 
@@ -156,10 +156,6 @@ To do this, go to `Web Cloud`{.action} and open `Domain names`{.action} in the s
 ## Go further
 
 [Migrating your website and emails to OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh)
-
-[Editing an OVHcloud DNS zone](../web_hosting_how_to_edit_my_dns_zone/)
-
-[Editing the DNS servers for an OVHcloud domain name](../web_hosting_general_information_about_dns_servers/)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
 

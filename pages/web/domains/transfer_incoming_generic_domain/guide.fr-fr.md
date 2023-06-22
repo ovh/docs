@@ -9,7 +9,7 @@ updated: 2023-06-21
 
 ## Objectif
 
-Votre nom de domaine est actuellement déposé dans un *bureau d’enregistrement** et vous souhaitez le confier à OVHcloud ? C'est possible, via une procédure de transfert.
+Votre nom de domaine est actuellement déposé dans un **bureau d’enregistrement** et vous souhaitez le confier à OVHcloud ? C'est possible, via une procédure de transfert.
 
 En transférant votre nom de domaine, vous changerez de **bureau d'enregistrement** pour celui-ci. Vous pouvez transférer votre nom de domaine vers OVHcloud en créant une commande. Ce processus prend généralement entre un et dix jours.
 
