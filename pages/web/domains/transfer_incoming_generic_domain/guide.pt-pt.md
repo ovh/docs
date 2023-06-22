@@ -28,9 +28,9 @@ A transferência de um domínio permite alterar o agente registador que o gere. 
 >
 > Se a OVHcloud já é o agente de *registo* **antes** de iniciar o procedimento que se seguirá, a *transferência de domínio* não é o procedimento adequado. O procedimento de *transferência de domínio* aplica-se **unicamente** aos nomes de domínio registados noutro agente de registo* que não a OVHcloud.
 >
-> Para transferir a gestão do seu domínio para outra conta de cliente OVHcloud, o método adequado é *uma alteração de contactos*. O procedimento está descrito no [guia](https://docs.ovh.com/pt/customer/gestao_dos_contactos/).
+> Para transferir a gestão do seu domínio para outra conta de cliente OVHcloud, o método adequado é *uma alteração de contactos*. O procedimento está descrito no [guia](/pages/account/customer/managing_contacts).
 >
-> Se também tem de mudar o **proprietário** do nome de domínio, deve fazê-lo **antes** de alterar os contactos do nome de domínio. Para isso, siga as instruções descritas na nossa documentação sobre a [alteração de proprietário dos nomes de domínio](https://docs.ovh.com/pt/domains/alteracao-titular-dominio/).
+> Se também tem de mudar o **proprietário** do nome de domínio, deve fazê-lo **antes** de alterar os contactos do nome de domínio. Para isso, siga as instruções descritas na nossa documentação sobre a [alteração de proprietário dos nomes de domínio](/pages/web/domains/trade_domain).
 >
 
 ## Requisitos
@@ -68,7 +68,7 @@ O procedimento de transferência compreende várias etapas, implicando o contact
 
 ### 1 - Verificar a informação relativa ao domínio
 
-**Para começar, é importante verificar se as informações relativas ao nome de domínio estão atualizadas.** Desde a criação do RGPD, os dados visíveis no ["Whois"](https://www.ovh.pt/suporte/ferramentas/check_whois.pl) tornaram-se muito limitados. Assim, recomendamos que verifique as informações relativas ao seu nome de domínio no seu agente registador atual.
+**Para começar, é importante verificar se as informações relativas ao nome de domínio estão atualizadas.** Desde a criação do RGPD, os dados visíveis no ["Whois"](https://www.ovhcloud.com/pt/domains/whois/) tornaram-se muito limitados. Assim, recomendamos que verifique as informações relativas ao seu nome de domínio no seu agente registador atual.
 
 - **Se as informações estiverem corretas:** consulte o passo seguinte deste guia.
 
@@ -76,7 +76,7 @@ O procedimento de transferência compreende várias etapas, implicando o contact
 
 > [!primary]
 >
-> Se não sabe qual o agente de registo responsável pelo seu domínio, as linhas "Registar", que aparecerão no resultado da pesquisa da ferramenta [Whois](https://www.ovh.pt/suporte/ferramentas/check_whois.pl){.external}, podem fornecer-lhe informações sobre a sua identidade.
+> Se não sabe qual o agente de registo responsável pelo seu domínio, as linhas "Registar", que aparecerão no resultado da pesquisa da ferramenta [Whois](https://www.ovhcloud.com/pt/domains/whois/){.external}, podem fornecer-lhe informações sobre a sua identidade.
 >
 
 ### 2 - Desbloquear o domínio e obter o código de transferência
@@ -102,7 +102,7 @@ Quando for necessário indicar o código de transferência, introduza-o no campo
 
 ![domain](images/step_authinfo_add.png){.thumbnail}
 
-Também pode concluir a sua encomenda com um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} e outras soluções da OVHcloud. Isto pode interessar-lhe se deseja também migrar os seus serviços para a OVHcloud. O nosso manual intitulado "[Como migrar um site para a OVHcloud](../../hosting/migrar-site-para-ovh/){.external}?" irá fornecer-lhe instruções sobre como realizar este procedimento.
+Também pode concluir a sua encomenda com um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} e outras soluções da OVHcloud. Isto pode interessar-lhe se deseja também migrar os seus serviços para a OVHcloud. O nosso manual intitulado "[Como migrar um site para a OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}?" irá fornecer-lhe instruções sobre como realizar este procedimento.
 
 > [!warning]
 >
@@ -117,7 +117,7 @@ Também pode concluir a sua encomenda com um [alojamento web](https://www.ovhclo
 
 - Ao clicar em `Alterar a configuração`{.action} nesta etapa, pode introduzir os nomes dos servidores DNS que o domínio utiliza atualmente. Desta forma, o domínio ficará associado a estes servidores DNS na configuração da OVHcloud.
 
-- Se continuar sem efetuar esta operação, o domínio será fornecido com uma nova zona DNS nos servidores DNS da OVHcloud. A [alteração manual da zona DNS](../alojamento_partilhado_como_editar_a_minha_zona_dns/) pode ser necessária.
+- Se continuar sem efetuar esta operação, o domínio será fornecido com uma nova zona DNS nos servidores DNS da OVHcloud. A [alteração manual da zona DNS](/pages/web/domains/dns_zone_edit) pode ser necessária.
 
 - Em alguns casos, o processo de transferência pode requerer informações adicionais sobre o proprietário do domínio. Para adicionar estas informações, clique na opção `Gerir os contactos/o proprietário`{.action}.
 
@@ -161,6 +161,11 @@ Uma vez terminado o processo de transferência, pode gerir o seu domínio a part
 
 ## Quer saber mais?
 
-[Migração do seu website e dos seus e-mails para a OVHcloud](../../hosting/migrar-site-para-ovh/){.external}
+[Migração do seu website e dos seus e-mails para a OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

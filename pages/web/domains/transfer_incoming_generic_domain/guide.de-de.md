@@ -25,9 +25,9 @@ Mit einem Domaintransfer wechseln Sie Ihren Domainnamen-Registrar. Sie können I
 >
 > Wenn OVHcloud bereits der *Registrar* Ihres Domainnamens ist, ist der Prozess des *eingehenden Transfers* nicht für diesen Domainnamen anwendbar. Das in dieser Anleitung beschriebene Verfahren für *eingehende Domaintransfers* gilt **nur** für Domainnamen, die derzeit bei einem anderen *Registrar* als OVHcloud registriert sind.
 >
-> Um die Verwaltung des Domainnamens einem anderen OVHcloud Kunden-Account zu übertragen, muss stattdessen eine **Änderung der Kontakte** durchgeführt werden. Die Vorgehensweise wird in [unserer Anleitung zur Kontakteverwaltung](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/) beschrieben.
+> Um die Verwaltung des Domainnamens einem anderen OVHcloud Kunden-Account zu übertragen, muss stattdessen eine **Änderung der Kontakte** durchgeführt werden. Die Vorgehensweise wird in [unserer Anleitung zur Kontakteverwaltung](/pages/account/customer/managing_contacts) beschrieben.
 >
-> Wenn auch der **Inhaber des Domainnamens** geändert werden muss, sollte dies erfolgen, **bevor** Sie die Kontakte des Domainnamens ändern. Verwenden Sie dazu [unsere Anleitung zum Inhaberwechsel für Domainnamen](https://docs.ovh.com/de/domains/wechsel_des_domaininhabers/).
+> Wenn auch der **Inhaber des Domainnamens** geändert werden muss, sollte dies erfolgen, **bevor** Sie die Kontakte des Domainnamens ändern. Verwenden Sie dazu [unsere Anleitung zum Inhaberwechsel für Domainnamen](/pages/web/domains/trade_domain).
 >
 
 ## Voraussetzungen
@@ -64,7 +64,7 @@ Der Transferprozess umfasst mehrere Schritte. Diese erfordern die Kontaktaufnahm
 
 ### Schritt 1: Domaininformationen überprüfen
 
-**Bevor Sie den Transfer beantragen, ist es wichtig zu überprüfen, dass die Angaben zu Ihrem Domainnamen aktuell sind.** Seit Inkrafttreten der DSGVO sind die im [Whois-Eintrag](https://www.ovh.de/support/werkzeuge/check_whois.pl) sichtbaren Daten sehr begrenzt. Daher empfehlen wir Ihnen, die Informationen Ihres Domainnamens über Ihren aktuellen Registrar zu überprüfen.
+**Bevor Sie den Transfer beantragen, ist es wichtig zu überprüfen, dass die Angaben zu Ihrem Domainnamen aktuell sind.** Seit Inkrafttreten der DSGVO sind die im [Whois-Eintrag](https://www.ovhcloud.com/de/domains/whois/) sichtbaren Daten sehr begrenzt. Daher empfehlen wir Ihnen, die Informationen Ihres Domainnamens über Ihren aktuellen Registrar zu überprüfen.
 
 - **Wenn die Angaben korrekt sind: Gehen Sie zum nächsten Schritt dieser Anleitung.**
 
@@ -72,7 +72,7 @@ Der Transferprozess umfasst mehrere Schritte. Diese erfordern die Kontaktaufnahm
 
 > [!primary]
 >
-> Wenn Sie nicht wissen, welcher Registrar für Ihren Domainnamen verantwortlich ist, können Sie über die "Registrar"-Zeilen, die im Suchergebnis des [Whois](https://www.ovh.de/support/werkzeuge/check_whois.pl){.external}-Tools erscheinen, Informationen zu dessen Identität erhalten.
+> Wenn Sie nicht wissen, welcher Registrar für Ihren Domainnamen verantwortlich ist, können Sie über die "Registrar"-Zeilen, die im Suchergebnis des [Whois](https://www.ovhcloud.com/de/domains/whois/){.external}-Tools erscheinen, Informationen zu dessen Identität erhalten.
 >
 
 ### Schritt 2: Domainnamen entsperren und AUTH/INFO-Code beantragen
@@ -98,7 +98,7 @@ Wenn Sie zur Eingabe des AUTH/INFO-Code eingeben werden, können Sie ihn in das 
 
 ![domain](images/step_authinfo_add.png){.thumbnail}
 
-Sie können Ihre Bestellung auch mit einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} kombinieren. Unsere Anleitung "[Migration Ihrer Website zu OVHcloud](../../hosting/migration-ihrer-website-zu-ovh/){.external}" beschreibt den optimalen Weg zum Migrieren Ihrer Dienste.
+Sie können Ihre Bestellung auch mit einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} kombinieren. Unsere Anleitung "[Migration Ihrer Website zu OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}" beschreibt den optimalen Weg zum Migrieren Ihrer Dienste.
 
 > [!warning]
 >
@@ -113,7 +113,7 @@ Sie können Ihre Bestellung auch mit einem [Webhosting](https://www.ovhcloud.com
 
 - Wenn Sie in diesem Schritt auf `Konfiguration ändern`{.action} klicken, können Sie die Namen der DNS-Server eingeben, die der Domainname derzeit verwendet. Auf diese Weise wird der Domainname in der OVHcloud-Konfiguration unmittelbar diesen DNS-Servern zugewiesen.
 
-- Wenn Sie fortfahren, ohne diese Operation durchzuführen, wird der Domainname mit einer neuen DNS-Zone auf den OVHcloud DNS-Servern konfiguriert. In diesem Fall kann eine [manuelle Bearbeitung der DNS-Zone](../webhosting_bearbeiten_der_dns_zone/) erforderlich werden.
+- Wenn Sie fortfahren, ohne diese Operation durchzuführen, wird der Domainname mit einer neuen DNS-Zone auf den OVHcloud DNS-Servern konfiguriert. In diesem Fall kann eine [manuelle Bearbeitung der DNS-Zone](/pages/web/domains/dns_zone_edit) erforderlich werden.
 
 - In einigen Fällen kann der Transfer zusätzliche Informationen zum Inhaber des Domainnamens erfordern. Um diese Informationen hinzuzufügen, klicken Sie auf die Option `Kontakte/Inhaber verwalten`{.action}.
 
@@ -157,6 +157,10 @@ Sobald der Transfer abgeschlossen ist, können Sie Ihren Domainnamen über das [
 
 ## Weiterführende Informationen
 
-[Migration Ihrer Website und E-Mails zu OVHcloud](../../hosting/migration-ihrer-website-zu-ovh/)
+[Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

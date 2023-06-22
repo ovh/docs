@@ -27,9 +27,9 @@ Transfer domeny umożliwia jej przeniesienie do innego operatora.  Możesz przen
 >
 > Jeśli OVHcloud jest już operatorem *rejestratora* Twojej domeny **przed*** uruchomieniem kolejnej procedury, transfer przychodzący domeny* nie jest właściwą procedurą. *Transfer przychodzący* ma zastosowanie **tylko** do domen zarejestrowanych w innym operatora* niż OVHcloud.
 >
-> Aby przenieść zarządzanie domeną na inne konto klienta OVHcloud, należy wykonać *zmianę kontaktów*. Procedura jest opisana w [tym przewodniku](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/).
+> Aby przenieść zarządzanie domeną na inne konto klienta OVHcloud, należy wykonać *zmianę kontaktów*. Procedura jest opisana w [tym przewodniku](/pages/account/customer/managing_contacts).
 >
-> Jeśli chcesz zmienić również **właściciela** domeny, musisz to zrobić **przed** zmianą kontaktów domeny. W tym celu postępuj zgodnie z instrukcjami zawartymi w przewodniku OVHcloud dotyczącym [zmiany właściciela domen](https://docs.ovh.com/pl/domains/zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz/).
+> Jeśli chcesz zmienić również **właściciela** domeny, musisz to zrobić **przed** zmianą kontaktów domeny. W tym celu postępuj zgodnie z instrukcjami zawartymi w przewodniku OVHcloud dotyczącym [zmiany właściciela domen](/pages/web/domains/trade_domain).
 >
 
 ## Wymagania początkowe
@@ -67,7 +67,7 @@ Procedura transferu składa się z kilku etapów, w które włączone są różn
 
 ### Etap 1: weryfikacja informacji związanych z domeną
 
-**W pierwszym kroku sprawdź, czy informacje związane z nazwą domeny są aktualne.** Od momentu wdrożenia RODO bardzo mało danych widocznych w bazie ["Whois"](https://www.ovh.pl/pomoc/narzedzia/check_whois.pl). Sugerujemy zatem sprawdzenie informacji dotyczących Twojej domeny u aktualnego operatora.
+**W pierwszym kroku sprawdź, czy informacje związane z nazwą domeny są aktualne.** Od momentu wdrożenia RODO bardzo mało danych widocznych w bazie ["Whois"](https://www.ovhcloud.com/pl/domains/whois/). Sugerujemy zatem sprawdzenie informacji dotyczących Twojej domeny u aktualnego operatora.
 
 - **Jeśli informacje są poprawne: przejdź do kolejnego etapu niniejszego przewodnika.**
 
@@ -75,7 +75,7 @@ Procedura transferu składa się z kilku etapów, w które włączone są różn
 
 > [!primary]
 >
-> Jeśli nie wiesz, który operator jest odpowiedzialny za Twoją domenę, możesz podać informacje dotyczące jej tożsamości w wierszach "Registrar", które pojawią się w wyniku wyszukiwania narzędzia [Whois](https://www.ovh.pl/pomoc/narzedzia/check_whois.pl){.external}.
+> Jeśli nie wiesz, który operator jest odpowiedzialny za Twoją domenę, możesz podać informacje dotyczące jej tożsamości w wierszach "Registrar", które pojawią się w wyniku wyszukiwania narzędzia [Whois](https://www.ovhcloud.com/pl/domains/whois/){.external}.
 >
 
 ### Etap 2: odblokowanie domeny i pobranie kodu transferu
@@ -101,7 +101,7 @@ Wprowadź kod transferu w polu obok nazwy Twojej domeny. Jeśli nie posiadasz je
 
 ![domain](images/step_authinfo_add.png){.thumbnail}
 
-Możesz również zakończyć zamówienie [hostingiem www](https://www.ovhcloud.com/pl/web-hosting/){.external} i innymi rozwiązaniami OVHcloud. Może to być interesujące, jeśli chcesz przenieść Twoje usługi do OVHcloud. Przewodnik "[Przeniesienie strony WWW do OVHcloud](../../hosting/przeniesienie-strony-www-do-ovh/){.external}" zawiera instrukcje, jak to zrobić.
+Możesz również zakończyć zamówienie [hostingiem www](https://www.ovhcloud.com/pl/web-hosting/){.external} i innymi rozwiązaniami OVHcloud. Może to być interesujące, jeśli chcesz przenieść Twoje usługi do OVHcloud. Przewodnik "[Przeniesienie strony WWW do OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}" zawiera instrukcje, jak to zrobić.
 
 > [!warning]
 >
@@ -116,7 +116,7 @@ Możesz również zakończyć zamówienie [hostingiem www](https://www.ovhcloud.
 
 - Po kliknięciu `Zmień konfigurację`{.action} w tym etapie możesz wprowadzić nazwy serwerów DNS, których nazwa domeny używa obecnie. W ten sposób domena będzie już powiązana z tymi serwerami DNS w konfiguracji OVHcloud.
 
-- Jeśli nie przeprowadzasz tej operacji, domena zostanie dostarczona wraz z nową strefą DNS na serwerach DNS OVHcloud. Może zaistnieć konieczność ręcznej [modyfikacji strefy DNS](../hosting_www_jak_edytowac_strefe_dns/).
+- Jeśli nie przeprowadzasz tej operacji, domena zostanie dostarczona wraz z nową strefą DNS na serwerach DNS OVHcloud. Może zaistnieć konieczność ręcznej [modyfikacji strefy DNS](/pages/web/domains/dns_zone_edit).
 
 - W niektórych przypadkach proces transferu może wymagać dodatkowych informacji o właścicielu domeny. Aby dodać te informacje, kliknij opcję `Zarządzanie kontaktami/właściciela`{.action}.
 
@@ -160,6 +160,10 @@ Po zakończeniu operacji transferu możesz zarządzać domeną w [Panelu klienta
 
 ## Sprawdź również
 
-[Migracja strony WWW i kont e-mail do OVHcloud](../../hosting/przeniesienie-strony-www-do-ovh/){.external}
+[Migracja strony WWW i kont e-mail do OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh)
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
