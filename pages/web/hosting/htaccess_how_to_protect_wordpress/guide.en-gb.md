@@ -38,7 +38,7 @@ This tutorial will show you how to configure certain features of your web hostin
 >
 > The security solutions offered below are not exhaustive.
 >
-> For example, if you use a **C**ontent **M**anagement **S**system (**CMS**) other than WordPress, other security solutions exist.
+> For example, if you use a **C**ontent **M**anagement **S**ystem (**CMS**) other than WordPress, other security solutions exist.
 >
 > If you are not using a CMS, OVHcloud also provides a [tutorial on protecting a directory or the administration interface of your website via .htaccess files](/pages/web/hosting/htaccess_protect_directory_by_password).
 >
