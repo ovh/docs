@@ -91,7 +91,7 @@ Vous pouvez à tout moment basculer à nouveau sur le disque ou sur le mode resc
 > @api {PUT} /dedicated/server/{serviceName}
 >
 
-Spécifiez `1` dans l'attribut `bootid`.
+Spécifiez `1` dans l'attribut `bootId`.
 
 > [!api]
 >
