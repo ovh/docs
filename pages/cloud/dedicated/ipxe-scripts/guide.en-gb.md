@@ -11,7 +11,7 @@ updated: 2023-06-21
 > This article is intended for experimented users that have at least basic knowledge about [Preboot Execution Environment (PXE)](https://en.wikipedia.org/wiki/Preboot_Execution_Environment) and its implementation being used at OVHcloud: [iPXE](https://ipxe.org/).
 >
 
-In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), it is possible to specify a boot mode among a predefined list: mainly disk or rescue.<br>
+In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), it is possible to specify a boot mode among a predefined list: primary disk or rescue.<br>
 With the [OVHcloud API](https://api.ovh.com/), you can define custom scripts.
 
 Using a custom script can be interesting in the following use cases:
@@ -51,7 +51,7 @@ Specify your script within the `bootScript` attibute directly.
 
 You can see your script within the `bootScript` attibute.
 
-For example :
+For example:
 
 ```json
 {
@@ -80,7 +80,7 @@ For example :
 
 You can now reboot your server and it will use your [iPXE](https://ipxe.org/) to boot.
 
-### Other boot modes <a name="leaveIpxeScript"></a>
+### Changing boot modes <a name="leaveIpxeScript"></a>
 
 You can now switch back to disk or rescue boot from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (see our guide on [Activating and using rescue mode](/pages/cloud/dedicated/rescue_mode)), or the [OVHcloud API](https://api.ovh.com/).
 
@@ -91,7 +91,7 @@ You can now switch back to disk or rescue boot from the [OVHcloud Control Panel]
 > @api {PUT} /dedicated/server/{serviceName}
 >
 
-Specify `1` in the `bootid` attribute.
+Specify `1` in the `bootId` attribute.
 
 > [!api]
 >
@@ -106,6 +106,6 @@ You can now see that the attribute value `bootScript` is null.
 
 [Activating and using rescue mode](/pages/cloud/dedicated/rescue_mode)
 
-[iPXE - open source boot firmware [EN]](https://ipxe.org/)
+[iPXE - open source boot firmware](https://ipxe.org/)
 
 Join our community of users on <https://community.ovh.com/en/>.
