@@ -4,10 +4,8 @@ slug: iam-policies-api
 excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs d'un compte OVHcloud"
 section: 'Utilisation avancée'
 order: 03
-updated: 2023-05-16
+updated: 2023-06-23
 ---
-
-**Dernière mise à jour le 16/05/2023**
 
 > [!warning]
 >
@@ -113,6 +111,8 @@ Les éléments des politiques sont définis par des URNs. Ces URNs sont définie
 |**User group Example**|urn|:|v1|:|eu|:|identity|:|group|:|xx1111-ovh/admin@mycompany.com|
 |**VPS Example**|urn|:|v1|:|ca|:|resource|:|vps|:|vps-5b48d78b.vps.ovh.net|
 |**Resource Group Example**|urn|:|v1|:|us|:|resourceGroup|||:|aa0713ab-ed13-4f1a-89a5-32aa0cb936d8|
+
+L'URN peut débuter ou finir par un caractère *wildcard* `*`.
 
 #### Attributs d'une politique
 
