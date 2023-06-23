@@ -2,6 +2,8 @@
 title: AI Notebooks - Workspace
 excerpt: Learn how AI Notebooks workspaces work
 updated: 2023-06-23
+routes:
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-notebooks-workspace?id=kb_article_view&sysparm_article=KB0058558'
 ---
 
 ## Objective
@@ -57,7 +59,7 @@ If you run the `ls -a` command in your notebook's `/workspace` directory, you wi
 
 ### Workspace billing
 
-The first 10GB of the `/workspace` directory are free during 30 consecutive days. After this period, the [price of OVHcloud Object Storage](https://www.ovhcloud.com/en-gb/public-cloud/prices/#439) is applied for each GB. To learn how we bill AI Notebooks, refer to the [Billing and lifecycle documentation](/pages/platform/ai/notebook_guide_billing_concept).
+The first 10GB of the `/workspace` directory are free during 30 consecutive days. After this period, the [price of OVHcloud Object Storage](https://www.ovhcloud.com/es-es/public-cloud/prices/#439) is applied for each GB. To learn how we bill AI Notebooks, refer to the [Billing and lifecycle documentation](/pages/platform/ai/notebook_guide_billing_concept).
 
 ## Feedback
 
@@ -65,4 +67,4 @@ Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
