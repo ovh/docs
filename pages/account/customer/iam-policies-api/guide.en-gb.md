@@ -114,6 +114,8 @@ Items in policies are defined by URNs. These URNs are defined by the following p
 |**VPS Example**|urn|:|v1|:|ca|:|resource|:|vps|:|vps-5b48d78b.vps.ovh.net|
 |**Resource Group Example**|urn|:|v1|:|us|:|resourceGroup|||:|aa0713ab-ed13-4f1a-89a5-32aa0cb936d8|
 
+URN can use a wildcard "*" at the beginning or at the end of it
+
 #### Policy attributes
 
 - **id**: Unique identifier of the policy. It follows the UUID format.
