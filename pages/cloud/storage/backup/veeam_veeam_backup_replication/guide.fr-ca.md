@@ -3,10 +3,8 @@ title: 'Installer Veeam Backup & Replication'
 slug: veeam/veeam-backup-replication
 excerpt: 'Découvrez comment installer un serveur Veeam Backup & Replication avec Veeam Enterprise'
 section: 'Veeam'
-updated: 2023-04-28
+updated: 2023-06-23
 ---
-
-**Dernière mise à jour le 28/04/2023**
 
 ## Objectif
 
@@ -24,8 +22,9 @@ Veeam Backup & Replication est un logiciel de protection des données. Il offre 
 ### Installer Veeam Backup & Replication
 
 > [!primary]
-> La dernière version en date de Veeam Backup & Replication (version 12) n'est pas encore supportée par OVHcloud mais le sera [prochainement](https://github.com/ovh/private-cloud-provider/projects/4).
-> Nous vous invitons à télécharger la version 11.0.1.1261 (P20230227). Retrouvez les versions précédentes de Veeam sur [cette page](https://www.veeam.com/fr/download-version.html?ad=downloads&tab=previous).
+> La dernière version de Veeam Backup & Replication (version 12) est prise en charge par OVHcloud uniquement avec les **bases de données Microsoft SQL Server**.
+>
+> Veeam Backup & Replication v12 avec PostgreSQL sera disponible [prochainement](https://github.com/ovh/private-cloud-provider/issues/125).
 >
 
 Téléchargez la solution **Veeam Backup & Replication** depuis le site de [Veeam](https://www.veeam.com/downloads.html?ad=top-sub-menu){.external}. Si vous n'avez pas de compte, il sera nécessaire d'en créer un (celui-ci est gratuit).
@@ -76,7 +75,7 @@ Vous serez redirigé vers l'assistant d'installation, il vous suffit de fermer l
 
 ### Créer un compte de service Veeam Enterprise
 
-#### Lancer un compte de service
+#### Etape 1 - Lancer un compte de service
 
 Au préalable, il est nécessaire de générer un mot de passe **complexe**.
 
@@ -93,7 +92,7 @@ Notez que le nom du compte et le mot de passe correspondent à un exemple et doi
  * Nom du compte : OVHVeeamEnterprise
  * Mot de passe : P@ssword01
 
-#### Définir les autorisations du compte de service
+####  Etape 2 - Définir les autorisations du compte de service
 
 Lancez la console Veeam.
 
@@ -119,7 +118,7 @@ De retour dans la fenêtre **Security**, vous pouvez vérifier que le compte est
 
 ![](images/veeamBandR_conf_5.png){.thumbnail}
 
-#### Autorisations d'exécution et d'activation
+####  Etape 3 - Autorisations d'exécution et d'activation
 
 L'utilisateur OVHVeeamEntreprise est accessible uniquement en local, il faut donc ajouter les permissions dans l’interface graphique d’utilisateur Windows pour l'activation de la connexion à distance.
 
@@ -150,11 +149,18 @@ Via l’interface graphique d’utilisateur :
 
 Votre utilisateur OVHVeeamEntreprise est maintenant accessible en local et à distance.
 
-### Enregistrer le serveur Veeam Backup
+###  Etape 4 - Enregistrer le serveur Veeam Backup
 
 ## Depuis l'espace client OVHcloud
 
 Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, accédez à la section `Hosted Private Cloud`{.action} et sélectionnez `Plateformes et services`{.action}. Sélectionnez alors votre service **backupserverenterprise** puis cliquez sur `Activer la licence`{.action} dans la section `Raccourcis`.
+
+Pour configurer votre environnement, assurez-vous d'avoir ouvert les ports d'OVHcloud vers vos serveurs Veeam Backup and Replication :
+
+- `Port 9392/TCP`
+- `Port 9405/TCP`
+
+![installation Veeam](images/architecture.png){.thumbnail}
 
 ![espace client OVHcloud](images/veeam001.png){.thumbnail}
 
@@ -203,7 +209,10 @@ Vous pouvez obtenir l'adresse IP publique utilisée par Veeam Enterprise pour co
 > @api {GET} /veeam/veeamEnterprise/{serviceName}
 >
 
-### Vérifier l'enregistrement
+> [!primary]
+> L'activation de votre serveur Veeam Backup & Replication peut prendre plusieurs heures.
+
+###  Etape 5 - Vérifier l'enregistrement
 
 Lancez la console Veeam.
 
@@ -214,6 +223,11 @@ Allez dans le menu, puis cliquez sur `Licence`{.action}.
 ![Licence Veeam](images/veeamBandR_lic_1.png){.thumbnail}
 
 Dans les informations, vérifiez qu'il s'agit bien de votre licence OVHcloud.
+
+Si tout s'est bien passé, vous devriez voir "Edition : Entreprise Plus".
+
+> [!primary]
+> Vous pouvez maintenant désactiver l'utilisateur que vous avez créé pour créer l'enregistrement.
 
 ![licence OVHcloud](images/veeamBandR_lic_2.png){.thumbnail}
 

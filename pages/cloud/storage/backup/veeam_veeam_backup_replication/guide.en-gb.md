@@ -211,7 +211,7 @@ You can retrieve the public IP used by Veeam Enterprise to contact your **Veeam 
 > [!primary]
 > The activation of your Veeam Backup & Replication server can take several hours.
 
-#### Step 5: Verify the registration
+#### Step 5 - Verify the registration
 
 Launch the Veeam console.
 
@@ -225,8 +225,8 @@ Check that the information displayed is definitely for your OVHcloud licence.
 
 If everything went fine you should see "Edition: Enterprise Plus".
 
-> [!primary] You can now disable the user that you have created to create the registration.
-
+> [!primary]
+> You can now disable the user that you have created to create the registration.
 
 ![licence OVHcloud](images/veeamBandR_lic_2.png){.thumbnail}
 
