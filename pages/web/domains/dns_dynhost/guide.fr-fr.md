@@ -4,10 +4,8 @@ slug: utilisation-dynhost
 excerpt: "Découvrez comment paramétrer un enregistrement DNS dynamique pour votre nom de domaine OVHcloud"
 section: 'DNS et zone DNS'
 order: 06
-updated: 2023-06-20
+updated: 2023-06-23
 ---
-
-**Dernière mise à jour le 20/06/2023**
 
 ## Objectif
 
@@ -15,13 +13,13 @@ La zone **D**omain **N**ame **S**ystem (**DNS**) d’un nom de domaine constitue
 
 Vous pouvez, par exemple, y préciser :
 
-- l'adresse IP (enregistrements DNS de type *A* et *AAAA*) de votre hébergement web pour afficher votre site web avec votre nom de domaine
-- les serveurs e-mails (enregistrements DNS de type *MX*) vers lesquels votre nom de domaine doit rediriger les e-mails qu'il reçoit. Ceci afin que vous puissiez les consulter sur votre (vos) adresse(s) e-mail(s) personnalisée(s) avec votre nom de domaine.
-- des informations liés à la sécurité/authentification de vos services associés (Hébergement web, serveur web, serveur e-mail, etc.) à votre nom de domaine (enregistrements DNS de type *SPF*, *DKIM*, *DMARC*, etc.)
+- L'adresse IP (enregistrements DNS de type *A* et *AAAA*) de votre hébergement web pour afficher votre site web avec votre nom de domaine.
+- Les serveurs e-mail (enregistrements DNS de type *MX*) vers lesquels votre nom de domaine doit rediriger les e-mails qu'il reçoit. Cela vous permet de les consulter sur votre (vos) adresse(s) e-mail(s) personnalisée(s) avec votre nom de domaine.
+- Des informations liées à la sécurité / l'authentification de vos services associés (hébergement web, serveur web, serveur e-mail, etc.) à votre nom de domaine (enregistrements DNS de type *SPF*, *DKIM*, *DMARC*, etc.).
 
-Si besoin, retrouvez [ici](/pages/web/domains/dns_zone_edit) sur les enregistrements DNS et l'édition d'une zone DNS depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+Si besoin, consultez [notre documentation sur les enregistrements DNS et l'édition d'une zone DNS](/pages/web/domains/dns_zone_edit) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
-Pour diverses raisons, comme par exemple l'auto-hébergement (à votre domicile ou dans les locaux de votre entreprise en passant par la *box* de votre **F**ournisseur d'**A**ccès à **I**nternet (**FAI**)) d'un serveur de jeu vidéo sans bénéficier d'une adresse IP dite « fixe », la mise à jour « dynamique » d'un enregistrement DNS peut éviter une interruption prolongée de l'un de vos services. 
+La mise à jour « dynamique » d'un enregistrement DNS peut éviter une interruption prolongée de l'un de vos services dans des situations variées comme, par exemple, si vous auto-hébergez un serveur de jeu vidéo (dans les locaux de votre entreprise ou à votre domicile en passant par la *box* de votre **F**ournisseur d'**A**ccès à **I**nternet (**FAI**)) sans bénéficier d'une adresse IP dite « fixe ».
 
 **Découvrez comment paramétrer un enregistrement DNS dynamique (DynHost) pour votre nom de domaine OVHcloud.**
 
@@ -33,7 +31,7 @@ Pour diverses raisons, comme par exemple l'auto-hébergement (à votre domicile 
 
 > [!warning]
 >
-> - Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud, rapprochez-vous du prestataire/fournisseur gérant sa configuration DNS afin de connaître la marche à suivre à son niveau.
+> - Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud, rapprochez-vous du prestataire/fournisseur gérant sa configuration DNS afin de connaître la procédure à suivre à son niveau.
 > 
 > - Si votre nom de domaine est enregistré chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration. Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web cloud`{.action}. Dans la colonne de gauche, cliquez sur l'onglet `Noms de domaine`{.action} puis sélectionnez le nom de domaine concerné. Sur la page qui s'affiche, cliquez sur l'onglet `Serveurs DNS`{.action} pour afficher les serveurs DNS utilisés par votre nom de domaine. 
 >
@@ -53,12 +51,12 @@ Pour créer un utilisateur DynHost, connectez-vous à votre [espace client OVHcl
 
 ![dynhost](images/use-dynhost-step1.png){.thumbnail}
 
-Cliquez sur le bouton `Gérer les accès`{.action}, puis sur `Créer un identifiant`{.action}. Dans la fenêtre qui s'affiche, complétez les informations demandées :
+Cliquez sur le bouton `Gérer les accès`{.action} puis sur `Créer un identifiant`{.action}. Dans la fenêtre qui s'affiche, complétez les informations demandées :
 
 |Informations|Description|
 |---|---|
-|Suffixe de l'identifiant|Définissez un suffixe à l'identifiant DynHost que vous êtes en train de créer.|
-|Sous-domaine|Spécifiez le sous-domaine concerné par la création de l'enregistrement DNS dynamique. Si vous souhaitez gérer l'ensemble des sous-domaines avec un seul identifiant, précisez juste "*" dans le formulaire de saisie|
+|Suffixe de l'identifiant|Définissez un suffixe pour l'identifiant DynHost que vous êtes en train de créer.|
+|Sous-domaine|Spécifiez le sous-domaine concerné par la création de l'enregistrement DNS dynamique. Si vous souhaitez gérer l'ensemble des sous-domaines avec un seul identifiant, précisez juste `*` dans le formulaire de saisie|
 |Mot de passe|Définissez le mot de passe associé à l'identifiant DynHost puis confirmez-le.|
 
 Une fois les champs complétés, cliquez sur le bouton `Valider`{.action}. L'identifiant apparaît alors dans le tableau présent sur la page actuelle. Répétez cette étape autant de fois que nécessaire si vous avez besoin de créer plusieurs identifiants DynHost.
@@ -74,11 +72,11 @@ Dès que vous êtes prêt à créer l'enregistrement DynHost, repositionnez-vous
 |Informations|Description|
 |---|---|
 |Sous-domaine|Renseignez le sous-domaine dont l'enregistrement DNS devra être mis à jour dynamiquement. Ce sous-domaine doit correspondre à celui renseigné lors de la création de l'utilisateur DynHost.|
-|IP de destination|Renseignez l'adresse IP (IPv4 uniquement) qui doit être actuellement utilisée par l'enregistrement DNS. Il s'agit généralement de l'adresse IP publique de votre *box* Internet ou de votre serveur auto-hébergé. Selon le principe du DynHost, celle-ci sera mis à jour automatiquement par la suite.|
+|IP de destination|Renseignez l'adresse IP (IPv4 uniquement) qui doit être actuellement utilisée par l'enregistrement DNS. Il s'agit généralement de l'adresse IP publique de votre *box* Internet ou de votre serveur auto-hébergé. Selon le principe du DynHost, celle-ci sera mise à jour automatiquement par la suite.|
 
 > [!primary]
 >
-> Seuls une **IPv4** peut etre utilisée pour la mise en place d'un DynHost. Les **IPv6** sont indisponibles.
+> Seule une **IPv4** peut etre utilisée pour la mise en place d'un DynHost. Les **IPv6** sont indisponibles.
 >
 
 Une fois les champs complétés, cliquez sur le bouton `Valider`{.action}. L'enregistrement DynHost apparaît alors dans le tableau présent sur la page actuelle. Répétez cette étape autant de fois que nécessaire si vous avez besoin d'enregistrements DynHost supplémentaires.
@@ -87,11 +85,11 @@ Une fois les champs complétés, cliquez sur le bouton `Valider`{.action}. L'enr
 
 ### Étape 3 : automatiser le changement du DynHost
 
-Une fois l'[utilisateur](#step1) et l'[enregistrement DynHost](#step2) créés, il reste plus qu'à automatiser la mise à jour de l'enregistrement DNS afin qu'elle soit réalisée de manière dynamique. Pour cela, vous devrez utiliser un logiciel/client qui se chargera de vérifier régulièrement si l'adresse IP de destination a changé afin de la mettre à jour automatiquement.
+Une fois l'[utilisateur](#step1) et l'[enregistrement DynHost](#step2) créés, il vous faut automatiser la mise à jour de l'enregistrement DNS afin qu'elle soit réalisée de manière dynamique. Pour cela, vous devrez utiliser un logiciel/client qui se chargera de vérifier régulièrement si l'adresse IP de destination a changé afin de la mettre à jour automatiquement.
 
 > [!warning]
 >
-> L'installation et la configuration du logiciel/client doivent être réalisés selon vos propres connaissances. Quelques informations sur la manière de procéder sont présentes ci-dessous. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce sujet. 
+> L'installation et la configuration du logiciel/client doivent être réalisées selon vos propres connaissances. Quelques informations sur la manière de procéder sont présentes ci-dessous. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce sujet. 
 > Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
@@ -104,9 +102,9 @@ Une fois le client choisi et installé, vous devrez le configurer en utilisant l
 
 Selon le client utilisé, une adresse URL de mise à jour peut être requise en plus des éléments de l'utilisateur DynHost et du sous-domaine concerné. Si tel est le cas, utilisez l'adresse URL ci-dessous en prenant soin d'y remplacer les informations génériques :
 
-> https://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**
+`https://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**`
 
-|Informations|À remplacer par|
+|Information|À remplacer par|
 |---|---|
 |$HOSTNAME|Le sous-domaine concerné par la modification.|
 |$IP|La nouvelle adresse IPv4 de destination.|
