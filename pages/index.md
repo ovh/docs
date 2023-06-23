@@ -794,6 +794,7 @@
                 + [AI Notebooks - Features, Capabilities and Limitations](platform/ai/notebook_guide_capabilities)
                 + [AI Notebooks - Troubleshooting](platform/ai/notebook_guide_troubleshooting)
                 + [AI Notebooks - Billing and lifecycle](platform/ai/notebook_guide_billing_concept)
+                + [AI Notebooks - Workspace](platform/ai/notebook_guide_workspace)
             + [Tutorials](public-cloud-ai-and-machine-learning-ai-notebooks-tutorials)
                 + [AI Notebooks - Tutorial - Create your first Machine Learning model](platform/ai/notebook_tuto_01_first_ml_model_miniconda)
                 + [AI Notebooks - Tutorial - Use tensorboard inside notebooks](platform/ai/notebook_tuto_02_tensorboard)
