@@ -3,10 +3,8 @@ title: 'Setting up Veeam Backup & Replication'
 slug: veeam/veeam-backup-replication
 excerpt: 'Find out how to set up a Veeam Backup & Replication server with Veeam Enterprise'
 section: Veeam
-updated: 2023-04-28
+updated: 2023-06-23
 ---
-
-**Last updated 28th April 2023**
 
 ## Objective
 
@@ -24,9 +22,10 @@ Veeam Backup & Replication is a data protection software. It offers its users a 
 ### Setting up Veeam Backup & Replication
 
 > [!primary]
-> The latest version of Veeam Backup & Replication (version 12) is supported by OVHcloud only **Microsoft SQL Server database**.
-We will support Veeam Backup & Replication v12 with PostgreSQL soon (https://github.com/ovh/private-cloud-provider/issues/125).
-> >
+> The latest version of Veeam Backup & Replication (version 12) is supported by OVHcloud only with **Microsoft SQL Server databases**.
+>
+> We will support Veeam Backup & Replication v12 with PostgreSQL [soon](https://github.com/ovh/private-cloud-provider/issues/125).
+> 
 
 Download the **Veeam Backup & Replication** solution from the [Veeam website](https://www.veeam.com/downloads.html?ad=top-sub-menu){.external}. If you do not have an account, you will need to set one up (account setup is free).
 
@@ -76,7 +75,7 @@ You will be redirected to the launch wizard, simply close the window.
 
 ### Creating a Veeam Enterprise service account
 
-#### Step 1: Launch a service account
+#### Step 1 - Launch a service account
 
 You will need to generate a **complex** password.
 
@@ -93,7 +92,7 @@ Please note that the account name and password shown here are examples, and must
 - Account name: OVHVeeamEnterprise
 - Password: P@ssword01
 
-#### Step 2: Define the service account authorisations
+#### Step 2 - Define the service account authorisations
 
 Launch the Veeam console.
 
@@ -119,7 +118,7 @@ If you go back to the **Security** window, you can check that the account has be
 
 ![user added](images/veeamBandR_conf_5.png){.thumbnail}
 
-#### Step 3 Launch and Activation Permissions
+#### Step 3 - Launch and Activation Permissions
 
 The OVHVeeamEnterprise user is only accessible locally, so it is necessary to add permissions in the Windows graphical user interface to enable the remote connection.
 
@@ -150,15 +149,16 @@ Via the graphical user interface:
 
 Your OVHVeeamEnterprise user is now accessible locally and remotely.
 
-#### Step 4: Register the Veeam Backup & Replication server
+#### Step 4 - Register the Veeam Backup & Replication server
 
 ##### **Using the OVHcloud Control Panel**
 
 In your OVHcloud Control Panel, open the `Hosted Private Cloud`{.action} section and select your service labelled **backupserverenterprise** from `Platforms and services`{.action}. On this page, click on `Activate license`{.action} in the `Shortcuts` box.
 
-To setup your environnement please be sure you have open the ports from OVHcloud to your Veeam Backup and Replication Servers.
-`Port 9392/TCP`{.action} 
-`Port 9405/TCP`{.action} 
+To set up your environnement, make sure you have opened the ports from OVHcloud to your Veeam Backup and Replication servers:
+
+- `Port 9392/TCP`
+- `Port 9405/TCP`
 
 ![installation Veeam](images/architecture.png){.thumbnail}
 
@@ -208,8 +208,9 @@ You can retrieve the public IP used by Veeam Enterprise to contact your **Veeam 
 > @api {GET} /veeam/veeamEnterprise/{serviceName}
 >
 
-[!primary]
+> [!primary]
 > The activation of your Veeam Backup & Replication server can take several hours.
+
 #### Step 5: Verify the registration
 
 Launch the Veeam console.
@@ -221,7 +222,8 @@ Go to the menu, then click `License`{.action}.
 ![open menu](images/veeamBandR_lic_1.png){.thumbnail}
 
 Check that the information displayed is definitely for your OVHcloud licence.
-If everything is fine you should see Edition: Enterprise Plus.
+
+If everything went fine you should see "Edition: Enterprise Plus".
 
 > [!primary] You can now disable the user that you have created to create the registration.
 
