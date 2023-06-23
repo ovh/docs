@@ -52,7 +52,7 @@ A project can do **20 requests per second** before receiving an HTTP 429 respons
 
 ## How do rate limits work?
 
-If you request too many tokens from Keystone (the identity API) or send too many requests to an API endpoint such as Nova (the compute API), the endpoint will start answering with a **HTTP 429** response code containing a JSON object like this one:
+If you request too many tokens from Keystone (the identity API) or send too many requests to an API endpoint such as Nova (the compute API), the endpoint will start answering with an **HTTP 429** response code containing a JSON object like this one:
 
 ```json
 {
