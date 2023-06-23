@@ -7,13 +7,13 @@ order: 01
 updated: 2023-06-22
 ---
 
-**Last updated 22nd June 2023**
+**Last updated 22nd June 2023** 
 
 ## Objective
 
-Your domain name is currently filed with a **registrar** and you want to transfer it to OVHcloud? You can do this by following a transfer procedure.
+Your domain name is currently managed by another **registrar** and you want to move it to OVHcloud? You can do this by following a transfer procedure.
 
-By transferring your domain name, you will change your **registrar** for it. You can transfer your domain name to OVHcloud by creating an order. This process usually takes between one and ten days.
+By transferring your domain name, you will its **registrar**. You can transfer your domain name to OVHcloud by creating an order. The transfer process usually takes between one and ten days.
 
 **This guide explains how to transfer a generic domain name to OVHcloud.**
 
@@ -64,9 +64,9 @@ The transfer procedure has several steps. These steps will involve various entit
 
 **To start with, it is important to ensure that the information associated with the domain name is up-to-date.** Since the implementation of GDPR, the data visible in [WHOIS](https://www.ovhcloud.com/en-ca/domains/whois/){.external} has become very limited. We recommend checking the information associated with your domain name via your current domain name registrar.
 
-- **If the information is correct:** go to the next step of this guide.
+- **If the information is correct:** Go to the next step of this guide.
 
-- **If the information is incorrect or not visible:** contact your domain name registrar to check and/or modify it.
+- **If the information is incorrect or not visible:** Contact your domain name registrar to check and/or modify it.
 
 > [!primary]
 >
@@ -157,15 +157,15 @@ To do this, go to `Web Cloud`{.action} and open `Domain names`{.action} in the s
 
 > [!warning]
 >
-> For domain names with a *generic* extension (**gTLDs** such as *.com*, *.net*, *.info*, *.org*, etc.), the initial expiration date of the domain name is retained. OVHcloud shall increment for free an additional year’s subscription in addition to the transfer made.
-> For example, it is 04/06/2023 and your domain name with a *generic* extension expires on 29/09/2023 **before** the transfer. Once you have transferred your domain name to OVHcloud, it will expire on 29/09/2024.
+> For domain names with a *generic* extension (**gTLD**s such as *.com*, *.net*, *.info*, *.org*, etc.), the initial expiration date of the domain name is retained. After a successful transfer, OVHcloud extends the subscription for another year at no extra charge.
+> For example, your domain name with a *generic* extension expires on 29/09/2023 and is transferred on 04/06/2023. Once you have transferred your domain name to OVHcloud, the new expiration date is 29/09/2024.
 >
-> For domain names with a *local* or *regional* extension (**ccTLDs** such as *.fr*, *.be*, *.de*, *.es*, etc.), it depends on the extensions and rules put in place by the **registry* of the extension in question.
-> Once the transfer is complete, check the expiry date of your domain name directly from your OVHcloud Control Panel.
+> For domain names with a *country* or *regional* extension (**ccTLD**s such as *.fr*, *.be*, *.de*, *.es*, etc.), the transfer rules depend on the specifications put in place by the **registry* of the extension in question.
+> Once the transfer is complete, check the expiry date of your domain name in your OVHcloud Control Panel.
 >
-> To do this, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), then go to the `Web Cloud`{.action} section. In the left-hand column, click on `Domain names`{.action} then select the domain name concerned. On the page that appears, and just below your domain name, on the top of the page, you will see the renewal date, with the **month** and **year** expiry date.
+> To do this, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), then go to the `Web Cloud`{.action} section. In the left-hand column, click on `Domain names`{.action} then select the domain name concerned. The **month** and **year** of the next renewal are displayed below the domain name at the top of the page.
 >
-> Depending on the situation and the new expiry date of your domain name, a renewal of the domain may be necessary right after the transfer.
+> Depending on the situation and the new expiry date, a renewal of the domain name may be necessary right after the transfer.
 >
 
 ## Go further
