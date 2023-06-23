@@ -1,12 +1,12 @@
 ---
 title: AI Notebooks - Workspace
-excerpt: Tutorial about how to understand AI Notebooks workspace
-updated: 2023-06-20
+excerpt: Learn how AI Notebooks workspaces work
+updated: 2023-06-23
 ---
 
 ## Objective
 
-This guide details how AI Notebooks' workspaces work and best practices.
+This guide details how AI Notebooks workspaces work and the related best practices.
 
 ## Instructions
 
