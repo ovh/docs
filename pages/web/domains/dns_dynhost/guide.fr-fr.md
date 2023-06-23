@@ -19,7 +19,9 @@ Vous pouvez, par exemple, y préciser :
 
 Si besoin, consultez [notre documentation sur les enregistrements DNS et l'édition d'une zone DNS](/pages/web/domains/dns_zone_edit) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
-La mise à jour « dynamique » d'un enregistrement DNS peut éviter une interruption prolongée de l'un de vos services dans des situations variées comme, par exemple, si vous auto-hébergez un serveur de jeu vidéo (dans les locaux de votre entreprise ou à votre domicile en passant par la *box* de votre **F**ournisseur d'**A**ccès à **I**nternet (**FAI**)) sans bénéficier d'une adresse IP dite « fixe ».
+La mise à jour de manière « dynamique » d'un enregistrement DNS peut éviter une interruption prolongée de l'un de vos services si vous ne disposez pas d'une adresse IP dite « fixe » (qui ne change pas).
+
+Par exemple, le **DynHost** peut être utilisé si vous *auto-hébergez* (dans les locaux de votre entreprise ou à votre domicile en passant par la *box* de votre **F**ournisseur d'**A**ccès à **I**nternet (**FAI**)) un serveur de jeux vidéo sans bénéficier d'une adresse IP « fixe ».
 
 **Découvrez comment paramétrer un enregistrement DNS dynamique (DynHost) pour votre nom de domaine OVHcloud.**
 
