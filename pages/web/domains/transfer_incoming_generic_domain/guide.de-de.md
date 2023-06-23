@@ -1,7 +1,7 @@
 ---
 title: "Domainnamen zu OVHcloud transferieren"
 slug: transfer-einer-generischen-domain
-excerpt: "Diese Anleitung erklärt, wie Sie Ihren Domainnamen zu OVHcloud transferieren"
+excerpt: "Erfahren Sie hier, wie Sie Ihren Domainnamen zu OVHcloud transferieren"
 section: Transfer
 order: 01
 updated: 2023-06-21
@@ -13,9 +13,9 @@ updated: 2023-06-21
 
 ## Ziel
 
-Ihre Domain ist derzeit bei einem **Domainnamen-Registrar** angemeldet und Sie möchten diese an OVHcloud vergeben? Das ist möglich, durch einen Transferprozess.
+Ihr Domainname wird derzeit von einem anderen **Registrar** verwaltet und Sie möchten ihn zu OVHcloud umziehen? Sie können dazu einen Transfervorgang einleiten.
 
-Wenn Sie Ihre Domain transferieren, ändern Sie für diese um **Domainnamen-Registrar**. Sie können Ihre Domain durch Erstellung einer Bestellung zu OVHcloud transferieren. Dieser Vorgang dauert in der Regel zwischen einem und zehn Tagen.
+Wenn Sie Ihren Domainname transferieren, ändern Sie dessen **Registrar**. Sie können Ihren Domainnamen zu OVHcloud übertragen, indem Sie eine Bestellung erzeugen; der Transfervorgang dauert anschließend bis zu 10 Tage.
 
 **Diese Anleitung erklärt, wie Sie einen generischen Domainnamen zu OVHcloud transferieren.**
 
@@ -125,7 +125,7 @@ Sobald die Bestellung bestätigt wurde, erhalten Sie einen Bestellschein. Der Tr
 
 > [!primary]
 >
-> Wenn der Transfer-Code bei der Bestellung nicht eingegeben wurde, können Sie ihn im Bereich `Laufende Operationen`{.action} eingeben und damit den Transfer bestätigen.
+> Wenn der Transfer-Code bei der Bestellung nicht eingegeben wurde, können Sie ihn im Bereich `Laufende Vorgänge`{.action} eingeben und damit den Transfer bestätigen.
 
 ### Schritt 4: Validierung des Transfers durch den aktuellen Registrar
 
@@ -157,15 +157,15 @@ Sobald der Transfer abgeschlossen ist, können Sie Ihren Domainnamen über das [
 
 > [!warning]
 >
-> Für Domainnamen mit einer *generischen* Endung (die **gTLD** wie die *.com*, *.net*, *.info*, *.org* etc.) wird das ursprüngliche Ablaufdatum der Domain beibehalten. OVHcloud erhöht zusätzlich zum durchgeführten Transfer kostenlos ein weiteres Jahr der Bestellung.
-> Zum Beispiel: Es ist der 04.06.2023, und Ihr Domainname mit einer *generischen* Endung läuft am 29.09.2023 **vor** dem Transfer ab. Sobald Ihre Domain zu OVHcloud transferiert wurde läuft sie ab 29.09.2024 ab.
+> Für Domainnamen mit einer *generischen* Endung (**gTLD**, z.B. *.com*, *.net*, *.info*, *.org*, etc.) wird das ursprüngliche Ablaufdatum beibehalten. Nach einem erfolgreichen Transfer verlängert OVHcloud das Abonnement des Domainnamens um ein weiteres Jahr ohne Aufpreis.
+> Beispiel: Ihr Domainname mit einer *generischen* Endung läuft am 29.09.2023 ab und wird am 04.06.2023 transferiert. Nach dem Transfer des Domainnamens zu OVHcloud ist das neue Ablaufdatum: 29.09.2024.
 >
-> Für Domainnamen mit einer *lokalen* oder *regionalen* Endung (die **ccTLD** wie die *.de*, *.fr*, *.be*, *.es* usw.) hängt dies von den Erweiterungen und Regeln ab, die von dem **register** der betreffenden Endung festgelegt wurden.
-> Überprüfen Sie nach Abschluss des Transfers das Ablaufdatum Ihrer Domain direkt über Ihr OVHcloud Kundencenter.
+> Für Domainnamen mit einer *landesspezifischen* oder *regionalen* Endung (**ccTLD**, z.B. *.de*, *.fr*, *.be*, *.es*, etc.) sind die Bedingungen für den Transfer abhängig von den Vorgaben der **Registry** der jeweiligen Domainendung.
+> Sobald der Transfer abgeschlossen ist, überprüfen Sie das Ablaufdatum des Domainnamens in Ihrem OVHcloud Kundencenter.
 >
-> Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie die betreffende Domain aus. Auf der angezeigten Seite und direkt unter Ihrem Domainnamen auf der oberen Seite finden Sie das vorgesehene Verlängerungsdatum mit **Monat** und **Jahr** Ablaufdatum.
+> Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den Domainnamen aus. **Monat** und **Jahr** der nächsten Verlängerung werden oben auf der Seite unter dem Domainnamen angezeigt.
 >
-> Je nach Situation und dem neuen Ablaufdatum Ihrer Domain kann es sein, dass die Verlängerung der Domain unmittelbar nach dem Transfer notwendig ist.
+> Je nach Situation und dem neuen Ablaufdatum kann es notwendig sein, Ihren Domainnamen direkt nach dem Transfer zu verlängern.
 >
 
 ## Weiterführende Informationen
