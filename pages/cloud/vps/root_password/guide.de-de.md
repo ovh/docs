@@ -3,10 +3,8 @@ title: Root-Passwort auf einem VPS ändern
 slug: root-password
 excerpt: Erfahren Sie hier, wie Sie das Passwort des administrativen Zugangs zu Ihrem VPS ändern
 section: Diagnose & Rescue Modus
-updated: 2021-04-20
+updated: 2023-06-26
 ---
-
-**Letzte Aktualisierung am 27.04.2021**
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
@@ -64,7 +62,7 @@ passwd: password updated successfully
 > Bei einer Linux-Distribution wird das von Ihnen eingegebene Passwort **nicht angezeigt**.
 >
 
-Wenn Sie den Login als Root-Benutzer erlauben möchten, folgen Sie den Schritten in [diesem Abschnitt](#rooterlauben).
+Wenn Sie den Login als Root-Benutzer erlauben möchten, folgen Sie den Schritten in [diesem Abschnitt](#enableroot).
 
 ### Änderung des Passworts, wenn Sie es verloren haben
 
@@ -80,8 +78,11 @@ Bei den alten VPS Reihen werden Ihre Partitionen automatisch im Rescue-Modus ers
 
 ##### **df -h**
 
-```sh
-~$ df -h
+```bash
+df -h
+```
+
+```console
 Filesystem      Size  Used Avail Use% Mounted on
 udev            5.8G     0  5.8G   0% /dev
 tmpfs           1.2G   17M  1.2G   2% /run
@@ -95,8 +96,11 @@ tmpfs           5.8G     0  5.8G   0% /sys/fs/cgroup
 
 ##### **lsblk**
 
-```sh
-~$ lsblk
+```bash
+lsblk
+```
+
+```console
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda       8:0    0  2.5G  0 disk
 └─sda1    8:1    0  2.5G  0 part /
@@ -106,27 +110,27 @@ sdb       8:16   0   50G  0 disk
 └─sdb15   8:31   0  106M  0 part /mnt/sdb15
 ```
 
-Das vorstehende Beispiel zeigt, dass die Systempartition auf **/mnt/sdb1** gemountet ist.
+Die Beispielausgabe zeigt, dass die Systempartition auf **/mnt/sdb1** gemountet ist.
 
 Wenn es sich um einen VPS aus einer aktuellen Produktreihe handelt, sollte die Spalte `MOUNTPOINT` leer sein. Erstellen Sie in diesem Fall zuerst die Partition:
 
-```sh
-~$ mkdir -p /mnt/sdb1
-~$ mount /dev/sdb1 /mnt/sdb1
+```bash
+mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/sdb1
 ```
 
 #### Schritt 3: CHROOT-Genehmigungen
 
 Ändern Sie nun das Wurzelverzeichnis, um die Änderungen auf Ihr System anzuwenden. Verwenden Sie hierzu den `chroot` Befehl:
 
-```sh
-~$ chroot /mnt/sdb1/
+```bash
+chroot /mnt/sdb1/
 ```
 
 Sie können eine Überprüfung durchführen, indem Sie den Befehl `ls -l` eingeben, der den im aktuellen Verzeichnis Ihres Systems vorhandenen Inhalt auflistet:
 
-```sh
-~$ ls -l
+```bash
+ls -l
 ```
 
 #### Schritt 4: Das (Root-)Passwort ändern
@@ -146,7 +150,7 @@ Wenn Ihr VPS aus der neueren Generation ist (Namensschema: *vps-xxxxx.vps.ovh.ne
 Es ist daher erforderlich, dass Sie den tatsächlich verwendeten Login-Benutzernamen nach `passwd` eingeben:
 
 ```bash
-~# passwd username
+passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -157,7 +161,7 @@ Damit wird sichergestellt, dass Sie sich nach dem Neustart auch wieder mit diese
 Starten Sie Ihren VPS schließlich über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) neu vom Systemlaufwerk.
 
 
-### Root-Login aktivieren <a name="rooterlauben"></a>
+### Root-Login aktivieren <a name="enableroot"></a>
 
 Wenn Ihr VPS aus der neueren Generation ist (Namensschema: *vps-xxxxx.vps.ovh.net*), haben Sie, statt für den "Root"-Account, Login-Daten für einen Benutzer mit erhöhten Berechtigungen erhalten. Darüber hinaus akzeptiert der SSH-Dienst Verbindungsanfragen nicht als Root.
 
@@ -172,19 +176,19 @@ Wenn Ihr VPS aus der neueren Generation ist (Namensschema: *vps-xxxxx.vps.ovh.ne
 
 Verwenden Sie einen Texteditor wie vim oder nano, um die Konfigurationsdatei zu bearbeiten:
 
-```sh
-~$ nano /etc/ssh/sshd_config
+```bash
+sudo nano /etc/ssh/sshd_config
 ```
 
 Fügen Sie die folgende Zeile hinzu.
 
-```sh
+```text
 PermitRootLogin yes
 ```
 
-Suchen Sie diese Leitung und stellen Sie sicher, dass sie auskommentiert ist:
+Prüfen Sie, ob diese Zeile existiert und stellen Sie sicher, dass sie auskommentiert ist:
 
-```sh
+```text
 #PermitRootLogin prohibit-password
 ```
 
@@ -192,8 +196,14 @@ Speichern Sie die Datei und verlassen Sie den Editor.
 
 #### Schritt 2: SSH-Dienst neu starten
 
-```sh
-~$ systemctl restart sshd
+Starten Sie schließlich den SSH-Dienst mit einem der folgenden Befehle neu:
+
+```bash
+sudo systemctl restart ssh
+```
+
+```bash
+sudo systemctl restart sshd
 ```
 
 Dies sollte ausreichen, um die Änderungen anzuwenden. Sie können alternativ den VPS neu starten (`~$ sudo reboot`).

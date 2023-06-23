@@ -3,10 +3,8 @@ title: Changing your root password on a VPS
 slug: root-password
 excerpt: Find out how to change the root or admin password of a VPS
 section: Diagnostics and rescue mode
-updated: 2021-04-20
+updated: 2023-06-26
 ---
-
-**Last updated 20th April 2021**
 
 ## Objective
 
@@ -68,16 +66,19 @@ If you need to permit logging in as root, follow the steps in [this guide sectio
 
 #### Step 1: Restart the VPS into rescue mode
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and reboot the VPS in rescue mode. If you need further instructions about activating rescue mode with a VPS, you may consult the [rescue mode guide](../rescue/).
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and reboot the VPS in rescue mode. Find further instructions about activating rescue mode with a VPS in our [rescue mode guide](../rescue/).
 
 #### Step 2: Identify the mount point
 
-On older VPS ranges, your partitions will be automatically mounted in rescue mode. You can use the following commands to verify this and identify where your partition is mounted:
+On legacy VPS ranges, your partitions will be automatically mounted in rescue mode. You can use the following commands to verify this and identify where your partition is mounted:
 
 ##### **df -h**
 
-```sh
-~$ df -h
+```bash
+df -h
+```
+
+```console
 Filesystem      Size  Used Avail Use% Mounted on
 udev            5.8G     0  5.8G   0% /dev
 tmpfs           1.2G   17M  1.2G   2% /run
@@ -91,8 +92,11 @@ tmpfs           5.8G     0  5.8G   0% /sys/fs/cgroup
 
 ##### **lsblk**
 
-```sh
-~$ lsblk
+```bash
+lsblk
+```
+
+```console
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda       8:0    0  2.5G  0 disk
 └─sda1    8:1    0  2.5G  0 part /
@@ -106,23 +110,23 @@ The example output above shows that the system partition is mounted on **/mnt/sd
 
 If your VPS is of the current ranges, the `MOUNTPOINT` column should be empty. In that case, mount the partition first:
 
-```sh
-~$ mkdir -p /mnt/sdb1
-~$ mount /dev/sdb1 /mnt/sdb1
+```bash
+mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/sdb1
 ```
 
 #### Step 3: CHROOT permissions
 
 You now need to edit the root directory to apply the changes to your system. You can do this by using the `chroot` command:
 
-```sh
-~$ chroot /mnt/sdb1/
+```bash
+chroot /mnt/sdb1/
 ```
 
 You can check by typing the `ls -l` command, which will list the content stored in the current directory of your system:
 
-```sh
-~$ ls -l
+```bash
+ls -l
 ```
 
 #### Step 4: Change the (root) password
@@ -142,7 +146,7 @@ If your VPS is of the current ranges (naming scheme: *vps-XXXXXXX.vps.ovh.net*),
 It is therefore necessary to enter the username you actually use to log in after `passwd`:
 
 ```bash
-~# passwd username
+passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -153,7 +157,7 @@ This will ensure that you can log in again with this username after rebooting, i
 Finally, reboot your VPS in 'normal' mode in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
 
 
-### Enabling root login
+### Enabling root login <a name="enableroot"></a>
 
 If your VPS is of the current ranges (naming scheme: *vps-XXXXXXX.vps.ovh.net*), you have received login credentials for a user with elevated permissions instead of the default "root" account. Additionally, the SSH service is not accepting login requests as root.
 
@@ -168,19 +172,19 @@ If your VPS is of the current ranges (naming scheme: *vps-XXXXXXX.vps.ovh.net*),
 
 Use a text editor such as vim or nano to edit this configuration file:
 
-```sh
-~$ nano /etc/ssh/sshd_config
+```bash
+sudo nano /etc/ssh/sshd_config
 ```
 
 Add the following line.
 
-```sh
+```text
 PermitRootLogin yes
 ```
 
-Look for this line and make sure it is commented out:
+Look for this line and make sure it is still commented out:
 
-```sh
+```text
 #PermitRootLogin prohibit-password
 ```
 
@@ -188,8 +192,14 @@ Save the file and exit the editor.
 
 #### Step 2: Restart the SSH service
 
-```sh
-~$ systemctl restart sshd
+You should be able to restart the SSH service with one of the following commands:
+
+```bash
+sudo systemctl restart ssh
+```
+
+```bash
+sudo systemctl restart sshd
 ```
 
 This should be sufficient to apply the changes. Alternatively, reboot the VPS (`~$ sudo reboot`).
