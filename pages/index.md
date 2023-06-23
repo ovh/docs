@@ -450,6 +450,7 @@
             + [Public Cloud Glossary](platform/public-cloud/introduction_about_instances)
             + [Public Cloud & VPS - Image changelog](platform/public-cloud/image_changelog)
             + [Public Cloud & VPS - Image life cycle](platform/public-cloud/image-life-cycle)
+            + [Public Cloud API Rate Limits](platform/public-cloud/api_rate_limits)
         + [Project management](public-cloud-compute-project-management)
             + [Increasing Public Cloud quotas](platform/public-cloud/increasing_public_cloud_quota)
             + [Deleting a Public Cloud project](platform/public-cloud/delete_a_project)
