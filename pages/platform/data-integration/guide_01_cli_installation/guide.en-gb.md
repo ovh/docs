@@ -45,7 +45,7 @@ export PATH=$PATH:$HOME/bin/
 ```
 
 Optionally you could generate the CLI completion script and add it to your settings.
-Here is an example for `bash`but  other shells are supported:
+Here is an example for `bash` though other shells are supported:
 
 ``` {.console}
 ovhdata-cli completion bash > ~/ovhdata-cli-completion.sh
