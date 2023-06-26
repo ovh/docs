@@ -15,7 +15,7 @@ updated: 2023-06-22
 
 ## Objetivo
 
-Si tiene un dominio registrado en un **registrar** y quiere transferirlo a OVHcloud, Es posible transferirlo a OVHcloud.
+¿Su nombre de dominio está registrado actualmente en un registrador y desea transferirlo a OVHcloud? Es posible, mediante un procedimiento de transferencia.
 
 La transferencia de un dominio permite cambiar el **registrar** del dominio. Puede transferir su dominio a OVHcloud creando un pedido. Este proceso suele tardar entre uno y diez días.
 
