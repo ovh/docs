@@ -1,7 +1,7 @@
 ---
 title: Data Integration - CLI - Commands reference
 excerpt: Learn how to use the Data Integration CLI
-updated: 2023-06-14
+updated: 2023-06-26
 ---
 
 ## Objective
@@ -28,7 +28,7 @@ ovhdata-cli di source-connector list
 
 You should see a list of source connectors with their `name`, `identifier` and `version`.
 
-Let's create a PostgreSQL source. We could either provide all the required parameters on the command line or just the name of the source. If one or multiple parameters are missing the CLI will help us fill them in interactively:
+Let's create a PostgreSQL source. We can either provide all the required parameters on the command line or just the name of the source. If one or multiple parameters are missing,the CLI will help us fill them in interactively:
 
 ``` {.console}
 ovhdata-cli di source create MY_FIRST_SRC
@@ -69,7 +69,7 @@ ovhdata-cli di destination-connector list
 
 You should see a list of destination connectors with their `name`, `identifier` and `version`.
 
-Let's create an S3 destination. Like for the source, we could either provide all the required parameters on the command line or just the name of the destination. If one or multiple parameters are missing the CLI will help us fill them in interactively:
+Let's create an S3 destination. As for the source, we cab either provide all the required parameters on the command line or just the name of the destination. If one or multiple parameters are missing, the CLI will help us fill them in interactively:
 
 ``` {.console}
 ovhdata-cli di destination create MY_FIRST_DEST
@@ -100,9 +100,9 @@ The destination is then created and the connection tested. If all goes well you 
 
 ### Create a workflow
 
-Now that we have a source and a destination, we could create a workflow to wire them together.
+Now that we have a source and a destination, we can create a workflow to wire them together.
 
-As you may have guess, the workflow we want to create will backup the `foo` table of the PostgreSQL database instance to the `bar` S3 bucket.
+As you may have guessed, the workflow we want to create will backup the `foo` table of the PostgreSQL database instance to the `bar` S3 bucket.
 
 Let's start the workflow creation with the following command:
 
@@ -125,7 +125,7 @@ Enabled:        true
 ? Do you want to create the workflow MY_FIRST_WF ? (y/n) ›
 ```
 
-The workflow is then created and could now be runned.
+The workflow is then created and can now be run.
 
 ### Run a job
 
@@ -143,11 +143,11 @@ Started At: 15-06-23 10:07:04
 Ended At:   15-06-23 10:07:04
 ```
 
-Once the job is submitted its identifier and status will be displayed.
+Once the job is submitted, its identifier and status will be displayed.
 
 ### Check a job status
 
-A job was created by running the workflow and you could check its completion by executing the following command and selecting your workflow and your job:
+A job was created by running the workflow and you can check its completion by executing the following command and selecting your workflow and your job:
 
 ``` {.console}
 ovhdata-cli di job get
@@ -159,7 +159,7 @@ Started At: 15-06-23 10:07:24
 Ended At:   15-06-23 10:07:34
 ```
 
-Alternatively you could check that the `foo` table was successfully backed up in the `bar` bucket.
+Alternatively you can check that the `foo` table was successfully backed up in the `bar` bucket.
 
 ![image](images/01_bar.png){.thumbnail}
 
@@ -167,4 +167,4 @@ Alternatively you could check that the `foo` table was successfully backed up in
 
 Visit our [Discord server](https://discord.gg/ovhcloud). Ask questions, provide feedback and interact directly with the team that builds the Data Integration service.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
