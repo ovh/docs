@@ -1,7 +1,7 @@
 ---
 title: VMware NSX-v - End of Support
 excerpt: Analyse your use of the NSX-v features and choose between the different evolution scenarios, from disabling the NSX-v component to the migration to NSX
-updated: 2023-06-13
+updated: 2023-06-26
 ---
 
 ## Objective
