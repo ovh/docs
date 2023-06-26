@@ -27,7 +27,7 @@ Veeam Backup & Replication ist eine Software zur Datensicherung. Sie bietet zahl
 ### Veeam Backup & Replication installieren
 
 > [!primary]
-> Die neueste Version von Veeam Backup & Replication (Version 12) wird von OVHcloud nur mit **Microsoft SQL Server Datenbanken** unterstützt.
+> Die aktuellste Version von Veeam Backup & Replication (Version 12) wird derzeit bei OVHcloud nur mit **Microsoft SQL Server Datenbanken** unterstützt.
 >
 > Wir werden Veeam Backup & Replication v12 mit PostgreSQL [demnächst](https://github.com/ovh/private-cloud-provider/issues/125) unterstützen.
 >
@@ -52,7 +52,7 @@ Wenn Sie den Lizenzvertrag gelesen haben, akzeptieren Sie diesen mit `Next`{.act
 
 ![veeam](images/veeamBandR_inst_04.png){.thumbnail}
 
-Der Installationsassistent überprüft nun Ihre Systemvoraussetzungen. Bei einer reinen Windows-Installation werden einige fehlende Komponenten identifiziert. Der Installationsassistent wird diese automatisch herunterladen und installieren. Bestätigen Sie anschließend mit `Next`{.action}.
+Der Installationsassistent überprüft nun Ihre Systemvoraussetzungen. Bei einer Basis-Windows-Installation werden einige fehlende Komponenten identifiziert. Der Installationsassistent wird diese automatisch herunterladen und installieren. Bestätigen Sie anschließend mit `Next`{.action}.
 
 ![veeam](images/veeamBandR_inst_05.png){.thumbnail}
 
@@ -160,7 +160,7 @@ Ihr OVHVeeamEnterprise Benutzer ist jetzt lokal und über Fernzugriff verfügbar
 
 Gehen Sie im Kundencenter in den Bereich `Hosted Private Cloud`{.action} und wählen Sie unter `Plattformen und Dienstleistungen`{.action} den Dienst **backupserverenterprise**. Wählen Sie in der Sektion "Shortcuts" `Lizenz aktivieren`{.action} aus.
 
-Stellen Sie sicher, dass Sie die Ports von OVHcloud zu Ihren Veeam Backup and Replication Servern geöffnet haben, um Ihre Umgebung einzurichten:
+Stellen Sie sicher, dass Sie die Ports für OVHcloud zu Ihren Veeam Backup and Replication Servern geöffnet haben, um Ihre Umgebung einzurichten:
 
 - `Port 9392/TCP`
 - `Port 9405/TCP`
@@ -171,8 +171,8 @@ Stellen Sie sicher, dass Sie die Ports von OVHcloud zu Ihren Veeam Backup and Re
 
 Geben Sie im daraufhin geöffneten Fenster folgende Informationen ein:
 
-- die öffentliche IP-Adresse, über die mit Ihrem **Veeam Backup & Replication** Server kommuniziert werden kann
-- den Account-Namen des zuvor erstellten Veeam-Service-Accounts und das zugehörige Passwort
+- Die öffentliche IP-Adresse, über die mit Ihrem **Veeam Backup & Replication** Server kommuniziert werden kann
+- Den Account-Namen des zuvor erstellten Veeam Service-Accounts und das zugehörige Passwort
 
 Bestätigen Sie anschließend mit `OK`{.action}.
 
@@ -200,9 +200,9 @@ Nehmen Sie dann die Registrierung vor:
 
 Sie benötigen folgende Informationen:
 
-- die öffentliche IP-Adresse, über die mit Ihrem **Veeam Backup & Replication** Server kommuniziert werden kann
-- den Port Ihres **Veeam Backup & Replication** Servers (normalerweise **9392/TCP**)
-- den Account-Namen des zuvor erstellten Veeam-Service-Accounts und das zugehörige Passwort
+- Die öffentliche IP-Adresse, über die mit Ihrem **Veeam Backup & Replication** Server kommuniziert werden kann
+- Den Port Ihres **Veeam Backup & Replication** Servers (normalerweise **9392/TCP**)
+- Den Account-Namen des zuvor erstellten Veeam-Service-Accounts und das zugehörige Passwort
 
 Die öffentliche IP-Adresse, die Veeam Enterprise zur Kommunikation mit Ihrem **Veeam Backup & Replication** Server benötigt, erhalten Sie mit diesem Aufruf:
 
@@ -226,10 +226,10 @@ Klicken Sie links im Menü auf `License`{.action}.
 
 Überprüfen Sie, dass es sich bei den Angaben um Ihre OVHcloud Lizenz handelt.
 
-Wenn alles gut lief, sehen Sie "Edition: Enterprise Plus".
+Bei Erfolg sehen Sie in der entsprechenden Zeile "Edition: Enterprise Plus".
 
 > [!primary]
-> Sie können jetzt den Benutzer deaktivieren, den Sie zum Erstellen der Registrierung erstellt haben.
+> Sie können jetzt den Benutzer deaktivieren, den Sie zur Registrierung erstellt haben.
 
 ![veeam](images/veeamBandR_lic_2.png){.thumbnail}
 
