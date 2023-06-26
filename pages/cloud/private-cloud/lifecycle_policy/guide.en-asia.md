@@ -4,7 +4,7 @@ slug: lifecycle-policy
 excerpt: 'Lifecycle policy for Hosted Private Cloud powered by VMware'
 section: FAQ
 order: 3
-updated: 2023-06-13
+updated: 2023-06-26
 ---
 
 
