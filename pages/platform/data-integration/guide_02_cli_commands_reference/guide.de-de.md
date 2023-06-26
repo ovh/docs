@@ -1,6 +1,8 @@
 ---
 title: Data Integration - CLI - Commands reference
 excerpt: Learn how to use the Data Integration CLI
+routes:
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-data-integration-cli-commands-reference?id=kb_article_view&sysparm_article=KB0058615'
 updated: 2023-06-26
 ---
 
