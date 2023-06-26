@@ -1,7 +1,7 @@
 ---
 title: Data Integration - CLI - Installation
 excerpt: Learn how to install the Data Integration CLI
-updated: 2023-06-13
+updated: 2023-06-26
 ---
 
 ## Objective
@@ -44,8 +44,8 @@ mv ovhdata-cli-<os-build> $HOME/bin/ovhdata-cli
 export PATH=$PATH:$HOME/bin/
 ```
 
-Optionally you could generate the CLI completion script and it to your settings.
-Here is an example for `bash` but other shells are supported:
+Optionally you could generate the CLI completion script and add it to your settings.
+Here is an example for `bash`but  other shells are supported:
 
 ``` {.console}
 ovhdata-cli completion bash > ~/ovhdata-cli-completion.sh
@@ -67,7 +67,7 @@ ovhdata-cli login
 ```
 
 The above command will open your browser and ask you to login.
-Fill in your OCHcloud account credentials, submit and then click on continue:
+Fill in your OVHcloud account credentials, submit and then click on continue:
 
 ![image](images/01_login.png){.thumbnail}
 
@@ -75,10 +75,10 @@ Fill in your OCHcloud account credentials, submit and then click on continue:
 
 Once authenticated on your browser you will have to create API keys.
 
-- set the application name
-- set the application description
-- choose the validity period
-- pick the following rights: GET, PUT, POST and DELETE all four on `/*`
+- Set the application name.
+- Set the application description.
+- Choose the validity period.
+- Pick the following rights: GET, PUT, POST and DELETE, all four on `/*`.
 
 ![image](images/02_create_api_key.png){.thumbnail}
 
@@ -86,11 +86,11 @@ Once authenticated on your browser you will have to create API keys.
 
 Go back to your terminal and use your newly created API keys to complete the CLI authentication process:
 
-- first copy the `application key` from your browser and past it
-- then copy the `secret key` from your browser and past it (it will consider as a password and will not be displayed)
-- finally copy the `consumer key` from your browser and past it
+- First copy the `application key` from your browser and paste it.
+- Then copy the `secret key` from your browser and paste it (it will be considered as a password and will not be displayed).
+- Finally copy the `consumer key` from your browser and paste it.
 
-You should receive a feedback message telling that you are now logged in.
+You should receive a feedback message informing you that you are now logged in.
 
 ### Step 6: Using the command line CLI
 
