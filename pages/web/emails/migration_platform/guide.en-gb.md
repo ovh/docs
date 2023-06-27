@@ -17,7 +17,7 @@ You want to migrate your email addresses on an Exchange or Email Pro platform to
 
 > [!primary]
 >
-> To migrate an MX Plan solution to an Exchange or Email Pro platform, please follow our guide on [Migrating an MX Plan email address to an Email Pro or Exchange](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/migration-email-address-to-exchange/) account.
+> To migrate an MX Plan solution to an Exchange or Email Pro platform, please follow our guide on [Migrating an MX Plan email address to an Email Pro or Exchange](/pages/web/emails/migration_control_panel) account.
 >
 
 **This guide explains how to migrate email addresses from one Exchange or Email Pro platform to another Exchange or Email Pro platform.**

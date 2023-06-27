@@ -21,7 +21,7 @@ Chcesz przenieść Twoje konta e-mail obecne na platformę Exchange lub E-mail P
 
 > [!primary]
 >
-> Aby przenieść rozwiązanie MX Plan na platformę Exchange lub E-mail Pro, zapoznaj się z naszym przewodnikiem [Migracja konta e-mail MX Plan na konto E-mail Pro lub Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/migracja-adres-e-mail-na-hostingu-na-exchange/).
+> Aby przenieść rozwiązanie MX Plan na platformę Exchange lub E-mail Pro, zapoznaj się z naszym przewodnikiem [Migracja konta e-mail MX Plan na konto E-mail Pro lub Exchange](/pages/web/emails/migration_control_panel).
 >
 
 **Dowiedz się, jak przenieść konta e-mail z platformy Exchange lub E-mail Pro na inną platformę Exchange lub E-mail Pro.**

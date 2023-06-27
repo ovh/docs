@@ -166,7 +166,7 @@ Sélectionnez, dans le menu ci-dessous, l'offre actuelle de votre compte e-mail 
 > [!tabs]
 > **Emails (MXplan)**
 >>
->> Si la capacité de votre compte e-mail est déjà à son maximum de 5 Go, vous pouvez opter pour une migration vers une offre [**Hosted Exchange** de 50 Go](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/). Pour cela, nous vous invitons à commander l'offre qui vous convient et suivre notre documentation « [Migrer une adresse e-mail MX Plan vers un compte Exchange](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/migration-adresse-e-mail-mutualisee-vers-exchange/) ». 
+>> Si la capacité de votre compte e-mail est déjà à son maximum de 5 Go, vous pouvez opter pour une migration vers une offre [**Hosted Exchange** de 50 Go](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/). Pour cela, nous vous invitons à commander l'offre qui vous convient et suivre notre documentation « [Migrer une adresse e-mail MX Plan vers un compte Exchange](/pages/web/emails/migration_control_panel) ». 
 >>
 > **Exchange**
 >>
@@ -177,11 +177,11 @@ Sélectionnez, dans le menu ci-dessous, l'offre actuelle de votre compte e-mail 
 
 ## Aller plus loin
 
-[Migrer une adresse e-mail MX Plan vers un compte Exchange](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/migration-adresse-e-mail-mutualisee-vers-exchange/)
+[Migrer une adresse e-mail MX Plan vers un compte Exchange](/pages/web/emails/migration_control_panel)
 
 [Migrer manuellement votre adresse e-mail](/pages/web/emails/manual_email_migration)
 
-[Migrer vos adresses e-mail d’une plateforme e-mail OVHcloud vers une autre](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/migration-email-platform/)
+[Migrer vos adresses e-mail d’une plateforme e-mail OVHcloud vers une autre](/pages/web/emails/migration_platform)
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 

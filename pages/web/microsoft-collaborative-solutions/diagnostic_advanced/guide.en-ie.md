@@ -51,7 +51,7 @@ A blocked account still receives emails but sending has been disabled by the aut
 
 You can verify this in the `Email accounts`{.action} tab of your Exchange service. The account will have the `SPAM`{.action} status displayed in the table.
 
-Please follow the instructions in [this guide](/ie/en/microsoft-collaborative-solutions/blocked-for-spam/) to enable our security teams to re-enable the account.
+Please follow the instructions in [this guide](/pages/web/emails/locked_for_spam) to enable our security teams to re-enable the account.
 
 ### Subscription to the account has expired <a name="expired"></a>
 

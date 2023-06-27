@@ -41,7 +41,7 @@ For a rolling period of 3600 seconds (1 hour), your hosting plan will allow you 
 |Maximum number of emails sent per hour per service|100|200|2000|
 
 - Apart from suspected spamming or phishing, the sending of your emails may be delayed. Your emails will be kept in a queue until the number of emails sent in the last hour is less than the quota.
-- In the event of abuse or proven risk, your service will be suspended and you will be notified by email of its suspension. What to do if your account is blocked for spam? Read [our guide](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/blocked-for-spam/).
+- In the event of abuse or proven risk, your service will be suspended and you will be notified by email of its suspension. What to do if your account is blocked for spam? Read [our guide](/pages/web/emails/locked_for_spam).
 
 ### Databases / SQL
 
