@@ -1,7 +1,5 @@
 ---
 title: Zmiana polityki dostępu do vCenter
-routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/zmiana-polityki-dostepu-do-vcenter/'
 excerpt: Dowiedz się, jak zmienić strategię dostępu do vCenter
 updated: 2020-11-18
 ---

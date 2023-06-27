@@ -42,7 +42,7 @@ Si un changement de version d'OS ou de logiciel est nécessaire, assurez-vous qu
 La migration des données consiste généralement à copier les fichiers d'un serveur à un autre. Pour cela, plusieurs solutions existent :
 
 - La plus simple est d'utiliser un logiciel adapté tel que [SFTP](/pages/cloud/dedicated/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp).
-- L'autre option est de [synchroniser les deux serveurs entres-eux][(https://docs.ovh.com/fr/dedicated/copier-donnees-serveur-rsync/](/pages/cloud/dedicated/how-to-copy-data-from-one-dedicated-server-to-another-using-rsync)).
+- L'autre option est de [synchroniser les deux serveurs entres-eux](/pages/cloud/dedicated/how-to-copy-data-from-one-dedicated-server-to-another-using-rsync)).
 
 ### Utiliser le backup storage (disponible uniquement sur OVHcloud et So you Start)
 

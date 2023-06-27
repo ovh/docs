@@ -88,8 +88,6 @@ Além disso, apenas é permitido um subconjunto de opções no lado do cliente:
 
 ## Quer saber mais?
 
-[Particularidades da API OpenStack Swift no Cloud Archive](https://docs.ovh.com/gb/en/storage/pca/api/)
-
 [Página inicial do Rsync](https://linux.die.net/man/1/rsync)
 
 Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.

@@ -70,7 +70,7 @@ Your rule is active on the **ovh-T0-gw** gateway, it blocks all outgoing traffic
 
 [Segment management in NSX](/pages/cloud/private-cloud/nsx-02-segment-management)
 
-[Distributed Firewall management](https://docs.ovh.com/en/gb/private-cloud/nsx-manage-distributed-firewall/).
+[Distributed Firewall management](/pages/cloud/private-cloud/nsx-05-manage-distributed-firewall).
 
 [VMware Gateway Firewall in NSX Documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A52E1A6F-F27D-41D9-9493-E3A75EC35481.html)
 

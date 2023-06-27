@@ -70,8 +70,6 @@ Nach fertiger Aktivierung können Sie sich über den Link, den Sie per E-Mail er
 
 ## Weiterführende Informationen
 
-[Stündliche Ressourcen hinzufügen](https://docs.ovh.com/de/private-cloud/stuendliche-ressourcen-hinzufuegen/)
-
 [vSphere Web Client sichern](/pages/cloud/private-cloud/vsphere_access_security_advices)
 
 [VMware Tools installieren](/pages/cloud/private-cloud/vmware_tools_install)

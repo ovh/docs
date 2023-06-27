@@ -1,7 +1,5 @@
 ---
 title: 'Ajouter une ressource à l’heure'
-routes:
-    canonical: 'https://docs.ovh.com/fr/private-cloud/ajouter-une-ressource-a-l-heure/'
 excerpt: 'Découvrez comment ajouter des ressources en facturation horaire'
 updated: 2020-12-15
 ---
