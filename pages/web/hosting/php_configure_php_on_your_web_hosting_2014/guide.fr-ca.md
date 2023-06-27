@@ -12,6 +12,8 @@ Votre [hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.
 
 **Découvrez comment changer la version de PHP de votre hébergement web OVHcloud.**
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/X31MNMLw064" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Prérequis
 
 - Disposer d’une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}, à l'exception d'une offre d'hébergement Cloud Web.
