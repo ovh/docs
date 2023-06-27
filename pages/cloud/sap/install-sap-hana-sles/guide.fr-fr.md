@@ -1,9 +1,6 @@
 ---
 title: SAP HANA on Bare Metal - Installation de SAP HANA sur SLES 15 for SAP
-slug: sap-installation-sap-hana-sles
 excerpt: "Ce guide fournit des instructions pour le déploiement de l'image SLES 15 for SAP sur un serveur dédié OVHcloud et sa préparation pour SAP HANA"
-section: Premiers pas
-order: 01
 updated: 2023-03-20
 ---
 
@@ -45,7 +42,7 @@ Si vous le désirez, vous avez la possibilité de personnaliser la configuration
 
 Si vous ne personnalisez pas la configuration des partitions, vous accéderez directement à la dernière étape.
 
-Vous pouvez indiquer un nom de serveur qui sera visible via la commande `hostname`. Vous avez également la possibilité d'[ajouter votre clé SSH](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/#ajout-dune-cle-ssh-facultatif).
+Vous pouvez indiquer un nom de serveur qui sera visible via la commande `hostname`. Vous avez également la possibilité d'[ajouter votre clé SSH](/pages/cloud/dedicated/getting-started-with-dedicated-server#ajout-dune-cle-ssh-facultatif).
 
 > [!primary]
 > Par défaut, une partition swap de 4 GB est créée et respecte les recommandations SAP qui sont indiquées dans la [SAP Note 1999997 - FAQ: SAP HANA Memory](https://launchpad.support.sap.com/#/notes/1999997).
@@ -59,7 +56,7 @@ Une fois ces derniers paramètres configurés, cliquez sur `Valider`{.action} po
 >
 > `SUSEConnect -r <licence>`
 
-Une fois l'installation de l'image SLES 15 for SAP réalisée, vous pouvez [vous connecter à votre serveur dédié](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/#connexion-a-votre-serveur).
+Une fois l'installation de l'image SLES 15 for SAP réalisée, vous pouvez [vous connecter à votre serveur dédié](/pages/cloud/dedicated/getting-started-with-dedicated-server#connexion-a-votre-serveur).
 
 ### Préparation des systèmes de fichiers
 
@@ -243,7 +240,7 @@ Vous pouvez procéder à l'installation SAP HANA. Pour cela, nous vous recommand
 
 ## Aller plus loin
 
-[Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans SLES 15](https://docs.ovh.com/fr/dedicated/ola-sles15/)
+[Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans SLES 15](/pages/cloud/dedicated/ola-enable-sles15)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

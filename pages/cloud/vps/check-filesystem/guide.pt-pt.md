@@ -1,9 +1,6 @@
 ---
 title: Verificar o sistema de ficheiros num VPS
 excerpt: Saiba como encontrar erros num sistema de ficheiros em modo rescue
-slug: check-file-system-vps
-section: Diagnóstico e Modo Rescue
-order: 5
 updated: 2021-04-20
 ---
 
@@ -32,7 +29,7 @@ updated: 2021-04-20
 
 #### VPS GNU/Linux
 
-Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e lance um reboot ao servidor em modo rescue. Caso seja necessário, consulte o nosso [manual sobre o modo rescue](../rescue/).
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e lance um reboot ao servidor em modo rescue. Caso seja necessário, consulte o nosso [manual sobre o modo rescue](/pages/cloud/vps/rescue).
 
 Nas antigas gamas de VPS, as suas partições serão automaticamente montadas em modo de rescue. Para o verificar, utilize o seguinte comando:
 
@@ -74,7 +71,7 @@ $ fsck /dev/sdb1 -f
 
 As instruções acima não se aplicam normalmente a um VPS com Windows, pois a verificação do sistema de ficheiros não trata do NTFS. No entanto, pode efetuar uma verificação de coerência do NTFS nas partições.
 
-Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e lance um reboot ao servidor em modo rescue. Caso seja necessário, consulte o nosso [manual sobre o modo rescue](../rescue/).
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e lance um reboot ao servidor em modo rescue. Caso seja necessário, consulte o nosso [manual sobre o modo rescue](/pages/cloud/vps/rescue).
 
 Nas antigas gamas de VPS, as suas partições serão automaticamente montadas em modo de rescue. Para o verificar, utilize o seguinte comando:
 
@@ -107,6 +104,6 @@ $ ntfsfix /dev/sdb1
 
 ## Saiba mais
 
-[Ativar o modo rescue num VPS](../rescue/)
+[Ativar o modo rescue num VPS](/pages/cloud/vps/rescue)
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

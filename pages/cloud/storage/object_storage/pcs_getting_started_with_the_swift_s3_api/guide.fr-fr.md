@@ -1,9 +1,6 @@
 ---
 title: "Object Storage Swift - Premiers pas avec l'API Swift S3"
 excerpt: "Découvrez comment utiliser l'API Swift S3"
-slug: pcs/getting-started-with-the-swift-s3-api
-section: Spécificités de la classe de stockage OpenStack Swift
-order: 020
 updated: 2023-03-02
 ---
 
@@ -17,8 +14,8 @@ Le middleware Swift s3api qui assure la compatibilité de l'API S3 a été activ
 
 ## Prérequis
 
-- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Obtenir le fichier Openstack RC v3 d'Horizon](https://docs.ovh.com/fr/public-cloud/access_and_security_in_horizon/)
+- [Préparer l’environnement pour utiliser l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Obtenir le fichier Openstack RC v3 d'Horizon](/pages/platform/public-cloud/access_and_security_in_horizon)
 
 ## En pratique
 

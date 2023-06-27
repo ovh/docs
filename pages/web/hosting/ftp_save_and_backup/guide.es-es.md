@@ -1,9 +1,6 @@
 ---
 title: 'Restaurar el espacio de almacenamiento de un alojamiento web'
-slug: restaurar-espacio-almacenamiento-alojamiento-web
 excerpt: 'Cómo restaurar un archivo o el espacio de almacenamiento completo de un alojamiento web'
-section: 'FTP y SSH'
-order: 06
 updated: 2023-01-12
 ---
 
@@ -21,7 +18,7 @@ Los planes de hosting de OVHcloud incluyen un espacio de almacenamiento en el qu
 > 
 > Las copias de seguridad ofrecidas por OVHcloud para los alojamientos compartidos son extracontractuales. Ofrecemos estos servicios adicionales para ayudarle en situaciones urgentes. Le recomendamos que realice regularmente sus propias copias de seguridad para paliar las posibles pérdidas de datos.
 > 
-> Si realiza una copia de seguridad para su sitio web y utiliza una base de datos, realice una copia de seguridad de su base de datos. No dude en consultar nuestra guía para [exportar una copia de seguridad de la base de datos de un alojamiento web](https://docs.ovh.com/es/hosting/web_hosting_exportacion_de_una_base_de_datos/).
+> Si realiza una copia de seguridad para su sitio web y utiliza una base de datos, realice una copia de seguridad de su base de datos. No dude en consultar nuestra guía para [exportar una copia de seguridad de la base de datos de un alojamiento web](/pages/web/hosting/sql_database_export).
 >
 
 **Esta guía explica cómo restaurar un archivo o el espacio de almacenamiento de un alojamiento web.**
@@ -63,7 +60,7 @@ Asimismo, deberá decidir el método de restauración que quiera utilizar:
 >
 > ![ftp quota](images/check-ftp-quota.png){.thumbnail}
 >
-> Si el espacio de almacenamiento FTP utilizado es superior a la mitad del espacio de almacenamiento FTP total de su paquete de alojamiento, recupere localmente algunos de los elementos de gran tamaño de su sitio web (puede utilizar [Filezilla](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/)). A continuación, elimínelos de su almacenamiento FTP. Esto reducirá el tamaño del espacio de almacenamiento FTP que está utilizando y entonces podrá lanzar su restauración desde el área de cliente de OVHcloud.
+> Si el espacio de almacenamiento FTP utilizado es superior a la mitad del espacio de almacenamiento FTP total de su paquete de alojamiento, recupere localmente algunos de los elementos de gran tamaño de su sitio web (puede utilizar [Filezilla](/pages/web/hosting/ftp_filezilla_user_guide)). A continuación, elimínelos de su almacenamiento FTP. Esto reducirá el tamaño del espacio de almacenamiento FTP que está utilizando y entonces podrá lanzar su restauración desde el área de cliente de OVHcloud.
 >
 
 Una vez que haya elegido el método de restauración más adecuado en función de sus necesidades, continúe la lectura de esta guía en el apartado correspondiente:
@@ -83,11 +80,11 @@ Una vez que haya elegido el método de restauración más adecuado en función d
 > [!primary]
 > **Sitio en modo "mantenimiento"**
 > 
-> Para determinar si el sitio web está en modo de mantenimiento, consulte nuestra guía [¿Qué hacer en caso de página 403 forbidden?](https://docs.ovh.com/es/hosting/diagnostico-403-forbidden/). 
+> Para determinar si el sitio web está en modo de mantenimiento, consulte nuestra guía [¿Qué hacer en caso de página 403 forbidden?](/pages/web/hosting/diagnostic_403_forbidden). 
 > 
 > En este caso:
 >
-> - Nuestro equipo envía un mensaje de correo electrónico al [contacto administrador](https://docs.ovh.com/es/customer/gestion-de-los-contactos/#acceder-a-la-gestion-de-los-contactos) del alojamiento. 
+> - Nuestro equipo envía un mensaje de correo electrónico al [contacto administrador](/pages/account/customer/managing_contacts#acceder-a-la-gestion-de-los-contactos) del alojamiento. 
 > - El estado de mantenimiento aparecerá en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. En la sección `Web Cloud`{.action}, haga clic en su servicio en la sección `Alojamientos`{.action} y seleccione la pestaña `Información general`{.action}.
 > - Los sitios web alojados muestran una página "403 Forbidden".
 >
@@ -132,9 +129,9 @@ Esta operación se realiza en varios pasos. Asegúrese de tener la contraseña d
 
 En primer lugar, debe decidir qué programa o interfaz web va a utilizar para conectarse a la copia de seguridad de su espacio de almacenamiento. Si ya lo ha decidido, vaya al paso 2. En caso contrario, le recomendamos que utilice una de las siguientes soluciones:
 
-- **FileZilla**: Puede descargar este programa desde la web oficial. Para más información, consulte nuestra [guía de uso de FileZilla](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/){.external}. Esta guía no sustituye a la documentación oficial del editor.
+- **FileZilla**: Puede descargar este programa desde la web oficial. Para más información, consulte nuestra [guía de uso de FileZilla](/pages/web/hosting/ftp_filezilla_user_guide){.external}. Esta guía no sustituye a la documentación oficial del editor.
 
-- **Cyberduck**: Puede descargar este programa desde la web oficial. Para más información, consulte nuestra [guía de uso de Cyberduck (Mac)](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_cyberduck_mac/){.external}. Esta guía no sustituye a la documentación oficial del editor.
+- **Cyberduck**: Puede descargar este programa desde la web oficial. Para más información, consulte nuestra [guía de uso de Cyberduck (Mac)](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac){.external}. Esta guía no sustituye a la documentación oficial del editor.
 
 - **FTP Explorer**: Puede acceder desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Para ello, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Abra la pestaña `FTP - SSH`{.action} y haga clic en el botón `Explorador FTP`{.action}.
 
@@ -146,7 +143,7 @@ El explorador se abrirá en una nueva ventana. Introduzca sus claves de acceso y
 
 Una vez en la interfaz web o el programa elegido, deberá conectarse a su espacio de almacenamiento para acceder a los datos de la copia de seguridad que quiera recuperar. Para realizar esta operación, necesitará el nombre de usuario FTP, la contraseña y el nombre de host del servidor FTP.
 
-Puede consultar esta información en la pestaña `FTP - SSH`{.action} de su alojamiento. Si no tiene la contraseña FTP, siga las indicaciones de la guía [Cambiar la contraseña de un usuario FTP](https://docs.ovh.com/es/hosting/cambiar-contrasena-usuario-ftp/){.external}.
+Puede consultar esta información en la pestaña `FTP - SSH`{.action} de su alojamiento. Si no tiene la contraseña FTP, siga las indicaciones de la guía [Cambiar la contraseña de un usuario FTP](/pages/web/hosting/ftp_change_password){.external}.
 
 ![backup ftp](images/backupftp-step4.png){.thumbnail}
 
@@ -180,11 +177,11 @@ Una vez que se haya conectado, solo tiene que restaurar los archivos que desee. 
 
 ## Más información
 
-[Web hosting: guía de uso de FileZilla](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/){.external}
+[Web hosting: guía de uso de FileZilla](/pages/web/hosting/ftp_filezilla_user_guide){.external}
 
-[Web hosting: Guía de uso de Cyberduck (Mac)](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_cyberduck_mac/){.external}
+[Web hosting: Guía de uso de Cyberduck (Mac)](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac){.external}
 
-[Exportar una copia de seguridad de la base de datos de un alojamiento web](https://docs.ovh.com/es/hosting/web_hosting_exportacion_de_una_base_de_datos/)
+[Exportar una copia de seguridad de la base de datos de un alojamiento web](/pages/web/hosting/sql_database_export)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 

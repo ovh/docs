@@ -1,9 +1,6 @@
 ---
 title: 'Web hosting: Guía de uso de Cyberduck (Mac)'
 excerpt: Esta guía explica cómo utilizar la aplicación Cyberduck.
-slug: web_hosting_guia_de_uso_de_cyberduck_mac
-section: FTP y SSH
-order: 05
 updated: 2020-05-05
 ---
 
@@ -18,7 +15,7 @@ Para descargarla, visite la web oficial de la aplicación: [cyberduck.io](https:
 
 Cyberduck es una aplicación para usuarios de Mac. Si utiliza Windows en su máquina, recomendamos usar FileZilla: 
 
-- [](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/))
+- [](/pages/web/hosting/ftp_filezilla_user_guide))
 
 
 

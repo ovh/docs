@@ -1,8 +1,5 @@
 ---
 title: FAQ VPS OVHcloud
-slug: vps-faq
-section: 'Getting started'
-order: 2
 updated: 2022-05-05
 ---
 
@@ -65,7 +62,7 @@ If you would like to get guaranteed resources but don't know how to manage serve
 You will need to log in to your VPS via SSH, using the IP address, user name and password provided by email when you received your order.
 From a Windows desktop, we recommend that you log in using the Putty software. On a Linux desktop, you can connect directly via the terminal.
 
-All the details are set out in our guide on [Getting started with a VPS](../getting-started-vps/).
+All the details are set out in our guide on [Getting started with a VPS](/pages/cloud/vps/starting_with_a_vps).
 
 ### Can I host several websites on a VPS?
 
@@ -79,7 +76,7 @@ To take backups, you can use the following options: manual backup (snapshots), o
 ### How do I secure my VPS?
 
 By default, the VPS is provided “naked”, and there is no security configuration on it. For this reason, the first thing you need to do when you receive a VPS is configure security measures for it.
-To do this, please refer to our guide on [Securing a VPS](../tips-for-securing-a-vps/).
+To do this, please refer to our guide on [Securing a VPS](/pages/cloud/vps/secure_your_vps).
 
 ### What bandwidth is allocated to my VPS? Is it guaranteed?
 

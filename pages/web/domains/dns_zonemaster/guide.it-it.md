@@ -1,8 +1,5 @@
 ---
 title: Tutorial - Utilizzo di Zonemaster
-slug: ovhcloud-domain-zonemaster-tutorial
-section: DNS e zona DNS
-order: 08
 updated: 2023-06-06
 ---
 
@@ -24,7 +21,7 @@ updated: 2023-06-06
 
 > [!primary]
 >
-> Per una migliore comprensione del concetto di DNS, consulta l'introduzione della nostra guida sulla [configurazione di una zona DNS](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/).
+> Per una migliore comprensione del concetto di DNS, consulta l'introduzione della nostra guida sulla [configurazione di una zona DNS](/pages/web/domains/dns_zone_edit).
 
 ## Prerequisiti
 
@@ -80,11 +77,11 @@ Se hai altre domande su Zonemaster, consulta la sezione [FAQ](https://zonemaster
 
 ## Per saperne di più <a name="go-further"></a>
 
-[Modificare i server DNS di un dominio OVHcloud](https://docs.ovh.com/it/domains/web_hosting_gestisci_il_tuo_server_dns/){.external}
+[Modificare i server DNS di un dominio OVHcloud](/pages/web/domains/dns_server_general_information){.external}
 
-[Modifica di una zona DNS OVHcloud](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/){.external}.
+[Modifica di una zona DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external}.
 
-[Proteggere il dominio dal Cache Poisoning con DNSSEC](https://docs.ovh.com/it/domains/proteggi_il_tuo_dominio_con_dnssec/){.external}
+[Proteggere il dominio dal Cache Poisoning con DNSSEC](/pages/web/domains/dns_dnssec){.external}
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 

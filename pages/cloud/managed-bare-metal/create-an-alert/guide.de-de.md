@@ -1,11 +1,8 @@
 ---
 title: Einen Alarm erstellen
 routes:
-    canonical: 'https://docs.ovh.com/de/private-cloud/einen_alarm_erstellen/'
+    canonical: '/pages/cloud/private-cloud/create_an_alert'
 excerpt: Alarmmeldungen in Ihrem vSphere Client einstellen
-slug: einen-alarm-erstellen
-section: Verwaltung virtueller Maschinen
-order: 09
 updated: 2020-11-18
 ---
 
@@ -20,7 +17,7 @@ Alarmmeldungen können für alle Komponenten Ihrer Managed Bare Metal erstellt w
 ## Voraussetzungen
 
 - Sie nutzen ein Produkt der Art [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external}.
-- Sie sind in Ihrem [vSphere Interface](../den_vsphere_client_installieren/) angemeldet.
+- Sie sind in Ihrem [vSphere Interface](/pages/cloud/managed-bare-metal/vsphere-interface) angemeldet.
 
 ## Praktische Anwendung
 

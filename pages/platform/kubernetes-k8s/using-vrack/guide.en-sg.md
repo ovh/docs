@@ -1,9 +1,6 @@
 ---
 title: Using vRack Private Network
-slug: using_vrack
 excerpt: ''
-section: Network
-order: 00
 updated: 2021-09-30
 ---
 
@@ -47,7 +44,7 @@ OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private networking
 
 ## Instructions
 
-First of all, you will need to set up vRack private network for your Public Cloud. To do it, please follow the [Configuring vRack for Public Cloud](../../public-cloud/public-cloud-vrack/) guide. Once you have created a vRack and added it into a private network, you can continue. 
+First of all, you will need to set up vRack private network for your Public Cloud. To do it, please follow the [Configuring vRack for Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack) guide. Once you have created a vRack and added it into a private network, you can continue. 
 
 Integrating a cluster into a vRack private network must be done at the third step on cluster creation, when you can choose an existing private network for the cluster:
 
@@ -66,7 +63,7 @@ In the Managed Kubernetes service dashboard, you will see the cluster, with the 
 - To expose some workload on the Internet, you can use the External Load Balancers that are now compatible with nodes in vRack.
 - The OVHcloud Public Cloud does not support security groups on vRack. This is planned to be supported late 2021.
 - You will still see a public IPv4 address on your worker nodes. This IP won't be reachable from the Internet, and used exclusively for the administration of your nodes and its link to the Kubernetes control plane.
-- As explained in the [Known limits guide](../known-limits/), the following subnets are not compliant with the `vRack` feature and can generate some incoherent behaviours with our overlay networks:
+- As explained in the [Known limits guide](/pages/platform/kubernetes-k8s/known-limits), the following subnets are not compliant with the `vRack` feature and can generate some incoherent behaviours with our overlay networks:
 
 ```bash
 10.2.0.0/16 # Subnet used by pods

@@ -1,9 +1,6 @@
 ---
 title: CLI - Launch an AI notebook
-slug: cli/run-notebook-cli
 excerpt: Learn how to run an AI Notebook using the CLI
-section: Command Line Interface
-order: 201
 updated: 2023-05-11
 ---
 
@@ -11,11 +8,11 @@ updated: 2023-05-11
 
 ## Objective
 
-This guide covers the submission of [**notebooks**](https://docs.ovh.com/au/en/publiccloud/ai/notebooks/definition/) through the **ovhai** CLI.
+This guide covers the submission of [**notebooks**](/pages/platform/ai/notebook_guide_introduction_definition) through the **ovhai** CLI.
 
 ## Requirements
 
--   a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/au/en/publiccloud/ai/cli/install-client/))
+-   a working `ovhai` CLI ([how to install ovhai CLI](/pages/platform/ai/cli_10_howto_install_cli))
 
 ## Instructions
 
@@ -163,7 +160,7 @@ Stopping a notebook will make it unavailable from your browser, and start synchr
 
 Once the synchronisation is finished, and the notebook state is `STOPPED`, you can either start it again or delete it.
 
-Being able to restart a notebook is one of the main differences compared to using [jobs](https://docs.ovh.com/au/en/publiccloud/ai/training/jobs/). Restarting a notebook will restore your notebook code as it was when you stopped it. However, you will need to re-run your code to reload your variables because the program state is not saved.
+Being able to restart a notebook is one of the main differences compared to using [jobs](/pages/platform/ai/training_guide_03_concepts_jobs). Restarting a notebook will restore your notebook code as it was when you stopped it. However, you will need to re-run your code to reload your variables because the program state is not saved.
 To restart a notebook, run this command:
 
 ``` {.console}
@@ -188,9 +185,9 @@ Note that a notebook can be deleted even if it is not stopped, and that deleted 
 
 ## Going further
 
-Learn how to access your object storage data from your notebooks [here](https://docs.ovh.com/au/en/publiccloud/ai/cli/access-object-storage-data/).
+Learn how to access your object storage data from your notebooks [here](/pages/platform/ai/cli_17_how_to_cli_data_notebooks).
 
-Learn how to share your notebooks with other people [here](https://docs.ovh.com/au/en/publiccloud/ai/cli/sharing-notebooks/).
+Learn how to share your notebooks with other people [here](/pages/platform/ai/cli_14_howto_cli_sharing).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

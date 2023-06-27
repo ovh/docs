@@ -1,9 +1,6 @@
 ---
 title: "SSH-Schlüssel erstellen und verwenden"
-slug: ssh-schluessel-erzeugen
 excerpt: "Erfahren Sie hier, wie Sie SSH-Schlüssel für eine sichere Verbindung zu Ihrem Server verwenden"
-section: 'Sicherheit'
-order: 1
 updated: 2022-03-31
 ---
 
@@ -184,7 +181,7 @@ Wenn Sie die vollständige Ausgabe kopiert haben, sollte der “Identifier” hi
 
 > [!primary]
 >
-> Alle im Abschnitt “Dedicated” gespeicherten Schlüssel können auch für Ihre VPS Dienste verwendet werden. Informationen zum Hinterlegen von SSH-Schlüsseln für Public Cloud Dienste finden Sie in [dieser Anleitung](../../public-cloud/public-cloud-erste-schritte).
+> Alle im Abschnitt “Dedicated” gespeicherten Schlüssel können auch für Ihre VPS Dienste verwendet werden. Informationen zum Hinterlegen von SSH-Schlüsseln für Public Cloud Dienste finden Sie in [dieser Anleitung](/pages/platform/public-cloud/public-cloud-first-steps).
 >
 
 ### Einen Standardschlüssel festlegen (nur für den Bereich "Dedicated") <a name="cpsshkey"></a>

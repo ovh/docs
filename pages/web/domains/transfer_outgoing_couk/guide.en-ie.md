@@ -1,9 +1,6 @@
 ---
 title: Transferring a .uk domain name to another registrar
 excerpt: Find out how to move UK domain names from OVHcloud to a provider of your choice
-slug: outgoing_couk_domain_name_transfer
-section: Transfer
-order: 05
 updated: 2022-10-19
 ---
 
@@ -11,7 +8,7 @@ updated: 2022-10-19
 
 ## Objective
 
-The process of changing the registrar for Top Level Domains (TLD) of the **UK** country code (**.uk**) differs from the one explained in our [guide regarding generic TLDs](../outgoing-transfer-of-generic-or-geographical-domain-name/). The instructions below concern the following extensions:
+The process of changing the registrar for Top Level Domains (TLD) of the **UK** country code (**.uk**) differs from the one explained in our [guide regarding generic TLDs](/pages/web/domains/transfer_outgoing_domain). The instructions below concern the following extensions:
 
 - .uk
 - .co.uk
@@ -29,9 +26,9 @@ The process of changing the registrar for Top Level Domains (TLD) of the **UK** 
 >
 > If the domain name in question should stay registered at OVHcloud but modified in terms of its management or ownership, an outgoing domain transfer is not the appropriate procedure.
 >
-> To transfer the domain name management to another OVHcloud customer account, a **change of contacts** must be made instead. The procedure is described in [this guide](https://docs.ovh.com/ie/en/customer/managing-contacts/).
+> To transfer the domain name management to another OVHcloud customer account, a **change of contacts** must be made instead. The procedure is described in [this guide](/pages/account/customer/managing_contacts).
 >
-> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names](https://docs.ovh.com/ie/en/domains/how-to-change-domain-name-holder/) instructions.
+> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names](/pages/web/domains/trade_domain) instructions.
 >
 
 ## Requirements
@@ -45,7 +42,7 @@ The process of changing the registrar for Top Level Domains (TLD) of the **UK** 
 >
 > If the domain has been expired for **less than 90 days**, it can still be transferred. Please contact our support teams by creating a support request in your OVHcloud Control Panel to unlock the domain name for transfer.
 >
-> If you are the domain's **owner** but you are currently not able to manage it in the OVHcloud Control Panel, neither by using your own access nor via your domain's administrative contact, please consult [this guide](../../customer/managing-contacts/#special-case-of-a-domain-owner) first before proceeding.
+> If you are the domain's **owner** but you are currently not able to manage it in the OVHcloud Control Panel, neither by using your own access nor via your domain's administrative contact, please consult [this guide](/pages/account/customer/managing_contacts#special-case-of-a-domain-owner) first before proceeding.
 >
 
 ## Instructions
@@ -81,6 +78,6 @@ Successfully changing the TAG initiates the transfer process. Contact your new p
 
 ## Go further
 
-[Transferring a domain name to another registrar](../outgoing-transfer-of-generic-or-geographical-domain-name/)
+[Transferring a domain name to another registrar](/pages/web/domains/transfer_outgoing_domain)
 
 Join our community of users on <https://community.ovh.com/en/>. 

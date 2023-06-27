@@ -1,8 +1,6 @@
 ---
 title: Details of API functions
-slug: api-details
 excerpt: Details of API functionalities
-section: Getting started
 updated: 2022-04-04
 ---
 

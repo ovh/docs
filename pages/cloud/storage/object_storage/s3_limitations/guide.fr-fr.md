@@ -1,9 +1,6 @@
 ---
 title: Object Storage - Limites techniques
-slug: s3/limitations
 excerpt: "Retrouvez ici les limites techniques de l'offre S3 Object Storage"
-section: Informations générales
-order: 025
 updated: 2023-06-01
 ---
 

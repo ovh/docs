@@ -1,12 +1,9 @@
 ---
 title: Spare host delivery and return
-slug: spare-host-howto
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/spare-host-howto/'
+    canonical: '/pages/cloud/private-cloud/spare_hosts'
 excerpt: Find out how the replacement of a host works
 legacy_guide_number: '2883590'
-section: OVHcloud Features
-order: 04
 updated: 2020-11-18
 ---
 
@@ -26,7 +23,7 @@ If one of your hosts fails, OVHcloud will automatically deliver a free replaceme
 
 As soon as this host is delivered, you will receive an email providing information about this host and its IP address, allowing you to easily find it in your vSphere interface.
 
-By default, VMware's [High Availability (HA) service](../vmware-ha-high-availability/) is enabled on your cluster. If you have not disabled it, your virtual machines will automatically restart. If the Distributed Resources Scheduler (DRS) service is enabled and configured in "fully automated" mode, the load distribution on the hosts in your cluster will also be performed automatically.
+By default, VMware's [High Availability (HA) service](/pages/cloud/managed-bare-metal/vmware_ha_high_availability) is enabled on your cluster. If you have not disabled it, your virtual machines will automatically restart. If the Distributed Resources Scheduler (DRS) service is enabled and configured in "fully automated" mode, the load distribution on the hosts in your cluster will also be performed automatically.
 
 > [!warning]
 > 
@@ -37,7 +34,7 @@ By default, VMware's [High Availability (HA) service](../vmware-ha-high-availabi
 
 Once the original host is functional again, you can return one of the two hosts (the spare host or the original host).
 
-We recommend that you return the original host so that we can run a battery of tests on it (to avoid future failures). You can then keep the spare host. To do this, please follow the [Removing a host server](../remove-host-server/) guide.
+We recommend that you return the original host so that we can run a battery of tests on it (to avoid future failures). You can then keep the spare host. To do this, please follow the [Removing a host server](/pages/cloud/managed-bare-metal/delete_host) guide.
 
 OVHcloud can automatically retrieve the original host as soon as it is removed.
 

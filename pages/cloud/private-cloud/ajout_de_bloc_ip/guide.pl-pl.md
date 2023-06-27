@@ -1,10 +1,7 @@
 ---
 title: Dodawanie bloku IP
-slug: dodawanie-bloku-ip
 excerpt: Jak zamówić blok IP dla swojej usługi Private Cloud
 legacy_guide_number: '7766457'
-section: Funkcjonalności OVHcloud
-order: 01
 updated: 2022-04-06
 ---
 
@@ -47,7 +44,7 @@ Utworzenie bloku IP wymaga wypełnienia następujących pól
 
 > [!primary]
 >
-> Zapoznaj się z naszym przewodnikiem dotyczącym [wtyczki OVHcloud Network](https://docs.ovh.com/pl/private-cloud/wtyczka-ovh-network/){.external-link}, aby dowiedzieć się, jakie IP zarezerwowano dla Twojego bloku oraz jak są wykorzystywane.
+> Zapoznaj się z naszym przewodnikiem dotyczącym [wtyczki OVHcloud Network](/pages/cloud/private-cloud/plugin_ovh_network){.external-link}, aby dowiedzieć się, jakie IP zarezerwowano dla Twojego bloku oraz jak są wykorzystywane.
 >
 
 - Kraj bloku IP, ważny w niektórych przypadkach dla pozycjonowania Twoich witryn (strona internetowa skierowana do Polaków będzie lepiej pozycjonowana, jeśli ma polski adres IP).

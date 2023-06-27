@@ -1,9 +1,6 @@
 ---
 title: "Przekierowanie domeny zarządzanej w OVHcloud"
-slug: przekierowanie-domeny
 excerpt: "Poznaj rodzaje przekierowań i dowiedz się, jak utworzyć przekierowanie dla domeny zarządzanej w OVHcloud"
-section: Informacje ogólne
-order: 01
 updated: 2022-10-06
 ---
 
@@ -47,7 +44,7 @@ Działania te mogą być przeprowadzane na kilka sposobów:
 > Bądź czujny nad operacjami, które zamierzasz wykonać lub skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/) w celu pozycjonowania strony, jeśli to konieczne.
 >
 > Uwaga: przekierowanie utworzone w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) nie pozwala na przekierowanie adresu URL na `https://` na inną domenę lub adres URL. 
-> Aby utworzyć ten rodzaj przekierowania, należy obowiązkowo przejść przez [wpisanie adresu URL](https://docs.ovh.com/pl/hosting/hosting_www_htaccess_-_generowanie_adresow_za_pomoca_mod_rewrite/), na przykład przez plik ".htaccess".
+> Aby utworzyć ten rodzaj przekierowania, należy obowiązkowo przejść przez [wpisanie adresu URL](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite), na przykład przez plik ".htaccess".
 
 ### Przekieruj domenę w Panelu klienta
 
@@ -65,7 +62,7 @@ Trzy opcje przekierowania są dostępne w [Panelu klienta OVHcloud](https://www.
 > W zakładce `Przekierowanie`{.action} znajduje się czwarta opcja umożliwiająca szybkie przekierowanie domeny na rekordy DNS A, AAAA i CNAME.<br>
 > Ponieważ w tym przypadku nie chodzi o "przekierowanie", w tym przewodniku nie zostanie szczegółowo opisany ten wariant.
 >
-> Więcej informacji na temat wpisów DNS znajdziesz w dokumentacji dotyczącej [rekordy DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/).
+> Więcej informacji na temat wpisów DNS znajdziesz w dokumentacji dotyczącej [rekordy DNS](/pages/web/domains/dns_zone_edit).
 >
 
 Poniżej znajdziesz trzy rodzaje przekierowań opisanych krok po kroku.
@@ -392,15 +389,15 @@ Ta zmienna może być używana podczas tymczasowego przenoszenia plików na inn�
 
 <a name="go-further"></a>
 
-[Zablokować dostęp do mojej strony dla niektórych adresów IP przez plik ".htaccess" ](https://docs.ovh.com/pl/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+[Zablokować dostęp do mojej strony dla niektórych adresów IP przez plik ".htaccess" ](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
-[Chroń interfejs administracyjny swojej strony za pomocą ".htaccess" ](https://docs.ovh.com/pl/hosting/hosting-htaccess-w-jaki-sposob-zabezpieczyc-dostep-dostepu-do-katalogu/).
+[Chroń interfejs administracyjny swojej strony za pomocą ".htaccess" ](/pages/web/hosting/htaccess_protect_directory_by_password).
 
-[Stworzenie adresów URL za pomocą mod_rewrite](https://docs.ovh.com/pl/hosting/hosting_www_htaccess_-_generowanie_adresow_za_pomoca_mod_rewrite/)
+[Stworzenie adresów URL za pomocą mod_rewrite](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite)
 
-[Wykonywanie innych operacji za pomocą pliku ".htaccess" ](https://docs.ovh.com/pl/hosting/hosting_www_htaccess_-_inne_operacje/).
+[Wykonywanie innych operacji za pomocą pliku ".htaccess" ](/pages/web/hosting/htaccess_what_else_can_you_do).
 
-[Jak edytować strefę DNS?](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/)
+[Jak edytować strefę DNS?](/pages/web/domains/dns_zone_edit)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
 

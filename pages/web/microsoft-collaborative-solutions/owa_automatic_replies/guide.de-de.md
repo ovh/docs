@@ -1,9 +1,6 @@
 ---
 title: 'Einrichten einer automatischen Antwort in OWA'
 excerpt: 'Erfahren Sie hier, wie Sie automatische Antworten in OWA erstellen'
-slug: exchange_2016_einrichten_einer_automatischen_antwort_in_owa
-section: 'E-Mail Account Funktionen'
-order: 07
 updated: 2020-07-20
 ---
 

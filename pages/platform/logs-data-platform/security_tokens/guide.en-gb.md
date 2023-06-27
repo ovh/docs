@@ -1,9 +1,6 @@
 ---
 title: Securing Logs Data Platform's APIs with tokens
-slug: logs-data-platform-tokens
-order: 7
 excerpt: If you want to give access to your logs to a software or automatize some tasks depending on your logs. You will maybe need to access them through the API. The most secure way to do this is to use tokens.
-section: Features
 updated: 2023-06-02
 ---
 
@@ -171,7 +168,7 @@ The only place you cannot use your token is the Graylog Web Interface.
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/gb/en/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
 

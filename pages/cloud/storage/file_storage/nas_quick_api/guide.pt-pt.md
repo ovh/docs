@@ -1,9 +1,6 @@
 ---
 title: NAS-HA - Primeiros passos com as API
-slug: nas/quick-api
 excerpt: "Saiba como começar a usar e a gerir um serviço NAS-HA através da API OVHcloud"
-section: NAS-HA
-order: 06
 updated: 2022-07-20
 ---
 
@@ -22,7 +19,7 @@ O serviço NAS-HA da OVHcloud permite-lhe gerir ficheiros acessíveis a partir d
 ## Requisitos
 
 - Um serviço [NAS-HA OVHcloud](https://www.ovh.pt/nas/)
-- Consulte o nosso guia dos [primeiros passos com a API OVHcloud](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/) para se familiarizar com a APIv6 OVHcloud
+- Consulte o nosso guia dos [primeiros passos com a API OVHcloud](/pages/account/api/first-steps) para se familiarizar com a APIv6 OVHcloud
 
 ## Instruções
 
@@ -209,9 +206,9 @@ Utilize a seguinte rota para eliminar uma partição:
 
 ## Quer saber mais?
 
-[Montar um NAS através de NFS](https://docs.ovh.com/pt/storage/file-storage/nas/nfs/)
+[Montar um NAS através de NFS](/pages/cloud/storage/file_storage/nas_nfs)
 
-[Configure o seu NAS no Windows Server através do CIFS](https://docs.ovh.com/pt/storage/file-storage/nas/cifs/)
+[Configure o seu NAS no Windows Server através do CIFS](/pages/cloud/storage/file_storage/nas_cifs)
 
 Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 

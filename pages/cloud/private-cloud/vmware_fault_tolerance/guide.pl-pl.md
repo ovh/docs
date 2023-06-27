@@ -1,10 +1,7 @@
 ---
 title: VMware Fault Tolerance
-slug: vmware-fault-tolerance
 excerpt: Zapewnienie ciągłości działania wirtualnej maszyny przy użyciu Fault Tolerance
 legacy_guide_number: '2163251'
-section: Funkcjonalności VMware vSphere
-order: 06
 updated: 2020-07-07
 ---
 

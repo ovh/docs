@@ -1,9 +1,6 @@
 ---
 title: Controllare e proteggere il vostro server dedicato ESXi dal primo avvio
-slug: esxi-hardening
 excerpt: Scopri i diversi modi per proteggere efficacemente il tuo server dedicato ESXi
-section: 'Sicurezza'
-order: 5
 updated: 2023-03-22
 ---
 
@@ -28,7 +25,7 @@ Ci affideremo alle funzioni embedded offerte da VMware, ma anche a quelle offert
 > 
 > Di recente, i sistemi ESXi sono stati vittime di una falla che gruppi malevoli hanno sfruttato molto rapidamente attraverso le reti pubbliche.
 >
-> Per maggiori informazioni su questo attacco, consulta [le FAQ (EN)](https://docs.ovh.com/gb/en/dedicated/esxi-faq/).
+> Per maggiori informazioni su questo attacco, consulta [le FAQ (EN)](/pages/cloud/dedicated/faq-esxi).
 >
 
 ### Best practice di sicurezza:
@@ -48,7 +45,7 @@ Ci affideremo alle funzioni embedded offerte da VMware, ma anche a quelle offert
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Disporre di un server dedicato con ESXi attivo
-- Disporre di un'offerta compatibile con la funzionalità [Network Firewall](https://docs.ovh.com/it/dedicated/firewall-network/) per eseguire il filtraggio
+- Disporre di un'offerta compatibile con la funzionalità [Network Firewall](/pages/cloud/dedicated/firewall_network) per eseguire il filtraggio
 
 ## Procedura
 
@@ -66,7 +63,7 @@ Richiamo della sua definizione e del suo principio di funzionamento:
 > 
 > Se il sistema si attiva e desideri connetterti al tuo ESXi immediatamente, sarà necessario sbloccare manualmente l'account amministratore.
 >
-> Per effettuare questa operazione, è necessario [riavviare](https://docs.ovh.com/it/dedicated/iniziare-a-utilizzare-server-dedicato/#riavvio-del-tuo-server-dedicato) il server ESXi attraverso lo Spazio Cliente OVHcloud.
+> Per effettuare questa operazione, è necessario [riavviare](/pages/cloud/dedicated/getting-started-with-dedicated-server#riavvio-del-tuo-server-dedicato) il server ESXi attraverso lo Spazio Cliente OVHcloud.
 > 
 
 È possibile consultare lo storico dei log di accesso in questi file a partire da uno shell SSH:
@@ -99,7 +96,7 @@ Tutte queste informazioni sono disponibili anche attraverso l'interfaccia di amm
 > Ti ricordiamo che il Network Firewall non è incluso nella rete OVHcloud. Di conseguenza, le regole configurate non influiscono sulle connessioni provenienti da questa rete interna.
 >
 
-Ti proponiamo di attivare e utilizzare la nostra soluzione di filtraggio [Network Firewall](https://docs.ovh.com/it/dedicated/firewall-network/).
+Ti proponiamo di attivare e utilizzare la nostra soluzione di filtraggio [Network Firewall](/pages/cloud/dedicated/firewall_network).
 Questa soluzione permette di gestire facilmente gli accessi legittimi, in aggiunta a quelli impostati tramite il sistema ESXi.
 
 In caso di attacco, eviti anche di bloccare inaspettatamente il tuo account amministratore.

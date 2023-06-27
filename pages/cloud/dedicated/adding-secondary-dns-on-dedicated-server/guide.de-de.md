@@ -1,8 +1,6 @@
 ---
 title: 'OVHcloud DNS Server mit einem Dedicated Server verwenden'
-slug: sekundaeren-dns-erstellen-dedicated-server
 excerpt: 'Erfahren Sie hier, wie Sie einen sekundären DNS Server für Ihren Dedicated Server einrichten'
-section: 'Fortgeschrittene Nutzung'
 updated: 2021-01-08
 ---
 
@@ -73,7 +71,7 @@ Es ist erforderlich, Ihre Berechtigung zum Verwalten des Domainnamens zu überpr
 
 - Wenn der Domainname zu diesem Zeitpunkt von einem externen Registrar verwaltet wird **oder** externe DNS-Server verwendet, loggen Sie sich in die Verwaltungsoberfläche Ihres DNS-Anbieters ein und fügen Sie Ihrer Zone einen TXT-Eintrag mit der Subdomain "ownercheck" und dem Wert, den Sie in Schritt 2 des Dialogs ["Domain hinzufügen"](#addingdomain) erhalten haben, hinzu.
 
-- Wenn der Domainname von OVHcloud als Registrar verwaltet wird **und** OVHcloud DNS-Server verwendet, klicken Sie in Schritt 2 des Dialogs zunächst auf `Abbrechen`{.action}. Folgen Sie anschließend den Anweisungen in [dieser Anleitung](../../domains/webhosting_bearbeiten_der_dns_zone/), um den TXT-Eintrag über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) hinzuzufügen.
+- Wenn der Domainname von OVHcloud als Registrar verwaltet wird **und** OVHcloud DNS-Server verwendet, klicken Sie in Schritt 2 des Dialogs zunächst auf `Abbrechen`{.action}. Folgen Sie anschließend den Anweisungen in [dieser Anleitung](/pages/web/domains/dns_zone_edit), um den TXT-Eintrag über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) hinzuzufügen.
 
 ![Sekundärer DNS](images/cp-04.png){.thumbnail}
 
@@ -81,6 +79,6 @@ Nachdem Sie den TXT-Eintrag erfolgreich zur DNS-Zone des Domainnamens hinzugefü
 
 ## Weiterführende Informationen
 
-[OVHcloud DNS-Zone bearbeiten](../../domains/webhosting_bearbeiten_der_dns_zone/)
+[OVHcloud DNS-Zone bearbeiten](/pages/web/domains/dns_zone_edit)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

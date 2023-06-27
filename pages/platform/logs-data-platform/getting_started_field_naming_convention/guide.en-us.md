@@ -1,8 +1,5 @@
 ---
 title: Field naming convention
-slug: logs-data-platform-field-naming-conventions
-order: 2
-section: Get Started
 updated: 2023-01-16
 ---
 
@@ -127,6 +124,6 @@ Happy Logging
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/us/en/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)))

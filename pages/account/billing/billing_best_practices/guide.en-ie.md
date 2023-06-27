@@ -1,9 +1,6 @@
 ---
 title: Best practices for managing your OVHcloud services and account
-slug: billing-best-practices
 excerpt: Find out about the best ways to manage your invoices, orders, payment methods and account
-section: Managing the renewal of services
-order: 02
 updated: 2022-05-02
 ---
 
@@ -26,9 +23,9 @@ This guide contains the essential elements for managing your account and the bil
 
 #### Account security
 
-[Create a strong password](https://docs.ovh.com/ie/en/customer/manage-password/#generate-a-strong-password) which will ensure your OVHcloud account's privacy.
+[Create a strong password](/pages/account/customer/manage-ovh-password#generate-a-strong-password) which will ensure your OVHcloud account's privacy.
 
-[Enable two factor authentification](https://docs.ovh.com/ie/en/customer/secure-account-with-2FA/) to prevent any fraudulent access.
+[Enable two factor authentification](/pages/account/customer/secure-ovhcloud-account-with-2fa) to prevent any fraudulent access.
 
 For the security measures to be efficient, make sure your email addresses (main and backup) and your mobile number are **up-to-date and accessible**.
 
@@ -41,7 +38,7 @@ In the `My profile`{.action} section on the right of your screen (click on your 
 
 ![myprofile](images/myprofile.png){.thumbnail}
 
-For more information, read the guide [Securing my OVHcloud account and managing my personal information](https://docs.ovh.com/ie/en/customer/all-about-your-username/#how-to-manage-your-personal-details).
+For more information, read the guide [Securing my OVHcloud account and managing my personal information](/pages/account/customer/all_about_username#how-to-manage-your-personal-details).
 
 Ensure your email address is always **up to date, accessible and secured**. Email messages from our services will be sent to this address, including the ones meant to reset your Control Panel's password.
 
@@ -59,21 +56,21 @@ Click on your name at the top right of your screen, then on `Service emails`{.ac
 
 > [!primary]
 >
-> In order to prevent any service interruption and for the good functioning of the autorenewal, [register a payment method](https://docs.ovh.com/ie/en/billing/manage-payment-methods/) in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+> In order to prevent any service interruption and for the good functioning of the autorenewal, [register a payment method](/pages/account/billing/manage-payment-methods) in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 >
 > Check regularly that your payment method is **valid**.
 >
 
 For more information, please follow the instructions of these guides:
 
-- [Managing renewal for OVHcloud services](https://docs.ovh.com/ie/en/billing/how-to-use-automatic-renewal-at-ovh/)
-- [Managing payment methods](https://docs.ovh.com/ie/en/billing/manage-payment-methods/)
+- [Managing renewal for OVHcloud services](/pages/account/billing/how_to_use_automatic_renewal)
+- [Managing payment methods](/pages/account/billing/manage-payment-methods)
 
 If you decide not to activate the autorenewal on your services, you will receive notifications prompting you to make a **manual payment** to either renew your service in advance or pay your pending bill.
 
 ### Order follow-up
 
-Did you know that you can [track your orders](https://docs.ovh.com/gb/en/billing/managing-ovh-orders/) in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)? <br>
+Did you know that you can [track your orders](/pages/account/billing/managing_ovh_orders) in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)? <br>
 Just navigate to the `Dashboard`{.action} tab at the top menu of your screen, then click on `View my orders`{.action}.
 
 ![viewmyorders](images/viewmyorders.png){.thumbnail}
@@ -90,7 +87,7 @@ First click on your name at the top right of your screen, then on `Products and 
 - `Cancel`{.action}: On the following screen, specify the reasons for your cancellation request, then click on `Confirm`{.action}. On the expiration date of your service, it will be **permanently** deleted.
 - `Delete immediately`{.action}: On the following screen, click on `Confirm`{.action}. You will be sent a confirmation email. After your validation, your service will be **immediately and permanently** deleted.
 
-To get more information about the termination of your services, consult the [How to cancel your OVHcloud services](https://docs.ovh.com/ie/en/billing/how-to-cancel-your-services/) guide.
+To get more information about the termination of your services, consult the [How to cancel your OVHcloud services](/pages/account/billing/how_to_cancel_services) guide.
 
 ### Account closure
 
@@ -99,8 +96,8 @@ Then, use [this form](https://www.ovh.co.uk/personal-data-protection/exercise-yo
 
 ## Go further <a name="gofurther"></a>
 
-[Beware of scams – recognising fraudulent email and phishing](https://docs.ovh.com/ie/en/customer/scams-fraud-phishing/)
+[Beware of scams – recognising fraudulent email and phishing](/pages/account/customer/phishing_care)
 
-[Managing OVHcloud bills](https://docs.ovh.com/ie/en/billing/manage-ovh-bills/)
+[Managing OVHcloud bills](/pages/account/billing/invoice_management)
 
 Join our community of users on <https://community.ovh.com/en/>.

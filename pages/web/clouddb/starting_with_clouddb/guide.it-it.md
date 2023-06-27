@@ -1,10 +1,7 @@
 ---
 title: 'Inziare a utilizzare Web Cloud Databases'
-slug: iniziare-a-utilizzare-clouddb
 legacy_guide_number: 2216
 excerpt: 'Scopri come utilizzare la soluzione Web Cloud Databases'
-section: Per iniziare
-order: 01
 updated: 2023-05-31
 ---
 

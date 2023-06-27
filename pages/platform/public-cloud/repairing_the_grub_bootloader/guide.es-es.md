@@ -1,8 +1,6 @@
 ---
 title: 'Reparar el bootloader Grub'
-slug: reparar-el-bootloader-grub
 excerpt: 'Guía de reparación del bootloader GRUB en una instancia'
-section: Tutoriales
 updated: 2020-11-23
 ---
 
@@ -18,7 +16,7 @@ Es posible que tuviera que reparar el bootloader GRUB. Esta guía explica cómo 
 
 ## Requisitos
 
-- La instancia debe estar en modo de rescate (puede consultar la guía [Pasar una instancia en modo de rescate](../poner_una_instancia_en_modo_de_rescate/)).
+- La instancia debe estar en modo de rescate (puede consultar la guía [Pasar una instancia en modo de rescate](/pages/platform/public-cloud/put_an_instance_in_rescue_mode)).
 
 ## Procedimiento
 
@@ -50,7 +48,7 @@ grub2-install /dev/sdb
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
-Ya puede sacar la instancia del modo de rescate. (Ver la guía [Convertir una instancia en modo de rescate](../poner_una_instancia_en_modo_de_rescate/))
+Ya puede sacar la instancia del modo de rescate. (Ver la guía [Convertir una instancia en modo de rescate](/pages/platform/public-cloud/put_an_instance_in_rescue_mode))
 
 ## Más información
 

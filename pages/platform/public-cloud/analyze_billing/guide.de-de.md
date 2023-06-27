@@ -1,9 +1,6 @@
 ---
 title: 'Informationen zu den Abrechnungsoptionen der Public Cloud'
-slug: informationen-zu-cloud-abrechnungsoptionen
 excerpt: 'Erfahren Sie mehr über die verschiedenen Abrechnungsoptionen für Public Cloud-Produkte'
-section: 'Projektverwaltung'
-order: 2
 updated: 2022-08-29
 ---
 
@@ -22,7 +19,7 @@ Dieses System ähnelt dem einiger Telefonieanbieter, wobei am Monatsende die Anz
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud/){.external} in Ihrem Kunden-Account.
-- Sie haben eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/) erstellt.
+- Sie haben eine [Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps) erstellt.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## Grundsätzliche Funktionsweise
@@ -128,7 +125,7 @@ Es ist möglich, die stündlichen Instanzen temporär auszusetzen (*shelve*), um
 > Dieser Prozess ist nur für die stündlich abgerechneten Instanzen möglich. Er beendet nicht die Abrechnung einer Instanz, reduziert aber deren Kosten.
 >
 
-Weitere Informationen zur Vorgehensweise finden Sie in [dieser Anleitung](https://docs.ovh.com/de/public-cloud/aussetzen_oder_pausieren_einer_instanz/).
+Weitere Informationen zur Vorgehensweise finden Sie in [dieser Anleitung](/pages/platform/public-cloud/suspend_or_pause_an_instance).
 
 #### Monatliche Abrechnung
 

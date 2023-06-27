@@ -1,8 +1,6 @@
 ---
 title: 'Preparare l’ambiente per utilizzare l’API OpenStack'
-slug: prepare_the_environment_for_using_the_openstack_api
 excerpt: 'Come installare l’ambiente OpenStack per gestire le istanze via API'
-section: Gestione via OpenStack
 legacy_guide_number: g1851
 updated: 2022-03-30
 ---
@@ -172,6 +170,6 @@ nova help
 
 ## Per saperne di più
 
-[Impostare le variabili d’ambiente OpenStack](https://docs.ovh.com/it/public-cloud/set-openstack-environment-variables/).
+[Impostare le variabili d’ambiente OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

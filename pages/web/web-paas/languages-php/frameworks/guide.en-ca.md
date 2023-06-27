@@ -1,7 +1,5 @@
 ---
 title: Frameworks
-slug: frameworks
-section: Php
 updated: 2022-06-02
 ---
 

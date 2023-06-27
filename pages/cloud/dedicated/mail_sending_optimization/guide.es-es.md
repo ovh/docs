@@ -1,8 +1,6 @@
 ---
 title: 'Optimización del envío de correos electrónicos'
 excerpt: 'Averigüe cómo enviar correos electrónicos y limite el riesgo de que se marquen como spam'
-slug: optimizar-envio-correo-electronico
-section: Uso avanzado
 updated: 2022-12-20
 ---
 
@@ -50,7 +48,7 @@ Si usted está usando una infraestructura dedicada (ejem. Un servidor dedicado, 
 
 Para más información sobre el registro SPF, vaya a la siguiente página: <http://www.open-spf.org/>.
 
-Usted puede encontrar más información sobre como configurar el registro SPF para un dominio, o especificando directamente la dirección IPv6. Puede encontrar como hacerlo en la siguiente guía: [Añadir un registro SPF a la configuración del dominio](../../domains/web_hosting_el_registro_spf/).
+Usted puede encontrar más información sobre como configurar el registro SPF para un dominio, o especificando directamente la dirección IPv6. Puede encontrar como hacerlo en la siguiente guía: [Añadir un registro SPF a la configuración del dominio](/pages/web/domains/dns_zone_spf).
 
 ### Configurar el registro DKIM
 
@@ -62,7 +60,7 @@ La autenticación se lleva a cabo médiente una clave DKIM que debe de añadir a
 
 Para optimizar el envío de correos electrónicos y evitar que sus correos sean bloqueado, usted puede configurar il Registro inverso con su nombre de dominio.
 
-Si los servidores DNS son gestionados por OVHcloud, consulte esta [guía](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/#acceder-a-la-gestion-de-una-zona-dns-de-ovhcloud).
+Si los servidores DNS son gestionados por OVHcloud, consulte esta [guía](/pages/web/domains/dns_zone_edit#acceder-a-la-gestion-de-una-zona-dns-de-ovhcloud).
 
 Una vez que haya editado la zona DNS del dominio, los cambios tardarán un máximo de 24 horas en propagarse y ser efectivos.
 

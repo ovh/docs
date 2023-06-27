@@ -1,8 +1,6 @@
 ---
 title: Installing cert-manager on OVHcloud Managed Kubernetes
-slug: installing-cert-manager
 excerpt: 'Find out how to install cert-manager on OVHcloud Managed Kubernetes'
-section: Tutorials
 updated: 2022-06-27
 ---
 
@@ -20,8 +18,7 @@ updated: 2022-06-27
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -44,9 +41,9 @@ In this tutorial we are going to guide you with the setup of [cert-manager](http
 
 ## Requirements
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/platform/kubernetes-k8s/deploying-hello-world).
 
-You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/platform/kubernetes-k8s/installing-helm) tutorial.
 
 ## Installing cert-manager Helm chart
 
@@ -187,7 +184,7 @@ Now, any ingress resources will be able to be annotated with:
 "cert-manager.io/cluster-issuer": "letsencrypt-staging"
 </code></pre>
 
-Please refer to our tutorial on [How to secure a Nginx Ingress with cert-manager on OVHcloud Managed Kubernetes](../securing-nginx-ingress-cert-manager/) for ingresses configuration.
+Please refer to our tutorial on [How to secure a Nginx Ingress with cert-manager on OVHcloud Managed Kubernetes](/pages/platform/kubernetes-k8s/securing-nginx-ingress-cert-manager) for ingresses configuration.
 
 ## Go further
 

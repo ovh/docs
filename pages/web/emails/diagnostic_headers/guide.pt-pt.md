@@ -1,10 +1,7 @@
 ---
 title: "Obter o cabeçalho de um e-mail"
-slug: recuperacao-das-enteadas-e-mails
 legacy_guide_number: 1365
 excerpt: 'Saiba como obter um cabeçalho de e-mail no seu cliente de e-mail'
-section: Diagnóstico
-order: 03
 updated: 2021-11-19
 ---
 
@@ -93,7 +90,7 @@ Subject: Hello my friend
 Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
 </code></pre>
 
-- O campo `Received-SPF` apresenta o resultado do controlo [SPF](https://docs.ovh.com/pt/domains/partilhado_o_campo_spf/) efetuado no nome de domínio do remetente. O argumento `cliente-ip` permite consultar o endereço de IP do servidor que serviu para enviar o e-mail. 
+- O campo `Received-SPF` apresenta o resultado do controlo [SPF](/pages/web/domains/dns_zone_spf) efetuado no nome de domínio do remetente. O argumento `cliente-ip` permite consultar o endereço de IP do servidor que serviu para enviar o e-mail. 
 <pre class="console"><code>
 Received-SPF: Pass (mailfrom) identity=mailfrom; cliente-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh 
 
@@ -198,6 +195,6 @@ Para apresentar o cabeçalho na interface webmail <Outlook.com>, consulte a sec�
 
 ## Saiba mais
 
-[FAQ E-mail](https://docs.ovh.com/pt/emails/faq-emails/)
+[FAQ E-mail](/pages/web/emails/faq-emails)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

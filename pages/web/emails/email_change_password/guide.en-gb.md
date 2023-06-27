@@ -1,9 +1,6 @@
 ---
 title: "Changing the password of an email account"
-slug: changing-email-address-password
 excerpt: "Find out how to change the password for an OVHcloud email account"
-section: Getting started
-order: 03
 updated: 2023-01-03
 ---
 
@@ -28,9 +25,9 @@ You can access your OVHcloud email accounts using the password associated with t
 >
 > When you change the password for your email account, you will also need to apply this change to all email clients that access this account. You can find the configuration guides for your email software on the guide homepage of your email offer:
 >
-> - [MX Plan](https://docs.ovh.com/gb/en/emails/)
-> - [Email Pro](https://docs.ovh.com/gb/en/emails-pro/)
-> - [Exchange](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/)
+> - [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan)
+> - [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro)
+> - [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 >
 
 ## Instructions
@@ -116,11 +113,11 @@ In the table below, you will find the information you need to identify your MX P
 
 ## Go further
 
-[Getting started with the MX Plan solution](https://docs.ovh.com/gb/en/emails/web_hosting_an_overview_of_ovh_email/)
+[Getting started with the MX Plan solution](/pages/web/emails/email_generalities)
 
-[Getting started with the Email Pro solution](https://docs.ovh.com/gb/en/emails-pro/first-configuration-email-pro/)
+[Getting started with the Email Pro solution](/pages/web/emails-pro/first_config)
 
-[Getting started with the Hosted Exchange solution](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_configuring_the_solution_for_the_first_time/)
+[Getting started with the Hosted Exchange solution](/pages/web/microsoft-collaborative-solutions/exchange_starting_hosted)
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our support [offers](https://www.ovhcloud.com/en-gb/support-levels/).
 

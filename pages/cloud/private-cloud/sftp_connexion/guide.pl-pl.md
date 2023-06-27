@@ -1,9 +1,6 @@
 ---
 title: 'Połączenie za pomocą protokołu STFP'
-slug: polaczenie_przez_sftp
 excerpt: Dowiedz się, jak się połączyć z Private Cloud za pomocą SFTP
-section: Pierwsze kroki
-order: 3
 updated: 2021-12-28
 ---
 

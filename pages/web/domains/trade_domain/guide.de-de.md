@@ -1,8 +1,6 @@
 ---
 title: 'Inhaber eines Domainnamens ändern'
-slug: wechsel_des_domaininhabers
 excerpt: 'Erfahren Sie hier, wie Sie den Inhaber eines Domainnamens wechseln können'
-section: Inhaberwechsel
 updated: 2023-06-19
 ---
 
@@ -91,7 +89,7 @@ Sobald beide Empfänger die Anfrage per E-Mail bestätigt haben, wird die Änder
 
 > [!warning]
 >
-> Sobald der Inhaber geändert wurde, kann der Domainname für 60 Tage nicht [an einen anderen Registrar übertragen werden](../ausgehender-transfer-einer-generischen-oder-geografischen-domain/). 
+> Sobald der Inhaber geändert wurde, kann der Domainname für 60 Tage nicht [an einen anderen Registrar übertragen werden](/pages/web/domains/transfer_outgoing_domain). 
 
 ### Aktualisierung der Inhaberinformationen <a name="updateownerinformation"></a>
 

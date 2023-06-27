@@ -1,8 +1,6 @@
 ---
 title: 'Hot-swapping a disk on a server with a software RAID configuration'
-slug: hotswap-raid-soft
 excerpt: 'Find out the main steps to follow in order to hot-swap a disk on a server with a software RAID configuration'
-section: 'RAID and disks'
 updated: 2016-11-21
 ---
 
@@ -204,11 +202,11 @@ once you have made these changes, check the RAID status again.
 ```sh
 root@ns3054662:/home# cat /proc/mdstat
 >>> Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty]
->>> md2 : active raid1 sda2[0] sdb2[1](F)
+>>> md2 : active raid1 sda2[0] sdb2[1](/gb/en/dedicated/hotswap-raid-soft/F)
 >>>       3885385728 blocks super 1.2 [2/1] [U_]
 >>>       bitmap: 0/29 pages [0KB], 65536KB chunk
 
->>> md1 : active raid1 sdb1[2](F) sda1[0]
+>>> md1 : active raid1 sdb1[2](/gb/en/dedicated/hotswap-raid-soft/F) sda1[0]
 >>>       20971456 blocks [2/1] [U_]
 
 >>> unused devices: <none>
@@ -241,7 +239,7 @@ root@ns3054662:/home# cat /proc/mdstat
 >>> unused devices: <none>
 ```
 
-The defective disk is now ready to be replaced by a datacentre technician. Once the operation is complete, you just have to resync the RAID. To do this, you can use the following guide: [Configuring software RAID](../raid-soft/){.external}
+The defective disk is now ready to be replaced by a datacentre technician. Once the operation is complete, you just have to resync the RAID. To do this, you can use the following guide: [Configuring software RAID](/pages/cloud/dedicated/raid_soft){.external}
 
 ### On Windows
 
@@ -293,7 +291,7 @@ You can disable the disk flashing, by replacing "on" with "off" in the command.
 
 You can do this from the **Disk Management** interface of your Windows server.
 
-The defective disk is now ready to be replaced by a datacentre technician. Once the operation is complete, you just have to resync the RAID. To do this, you can use the following guide: [Configuring software RAID](../raid-soft/){.external}
+The defective disk is now ready to be replaced by a datacentre technician. Once the operation is complete, you just have to resync the RAID. To do this, you can use the following guide: [Configuring software RAID](/pages/cloud/dedicated/raid_soft){.external}
 
 ## Go further
 

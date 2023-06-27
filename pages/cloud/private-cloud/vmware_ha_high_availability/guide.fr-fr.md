@@ -1,12 +1,9 @@
 ---
 title: VMware HA (High Availability)
-slug: vmware-ha-high-availability
 excerpt: Maitriser la politique de redémarrage avec la fonction HA
 legacy_guide_number: '2163279'
 space_key: VS
 space_name: vSphere as a Service
-section: Fonctionnalités VMware vSphere
-order: 02
 updated: 2020-04-30
 ---
 
@@ -22,7 +19,7 @@ La fonction principale de **VMware HA** (High Availability) en cas de défaillan
 
 ## Prérequis
 
-- Être connecté à votre [interface vSphere](../connexion-interface-vsphere/).
+- Être connecté à votre [interface vSphere](/pages/cloud/private-cloud/vsphere_interface_connexion).
 - Posséder un produit [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
 
 ## En pratique
@@ -38,7 +35,7 @@ Si HA n'est pas activé dans votre cluster, rendez vous dans l'onglet `Configure
 Cliquez sur `Modifier`{.action} et cochez la case pour arctiver la fonctionnalité HA.
 
 Il est également important d'activer la surveillance de l'hôte. Ce paramètre permet l'envoi de signaux de pulsation entre les hôtes ESXi afin de détécter une éventuelle panne.
-La désactivation est nécessaire pour réaliser des opérations de mise à jour avec [l'update manager](../vmware-update-manager/) par exemple. Dans ce cas précis, l'hôte est isolé.
+La désactivation est nécessaire pour réaliser des opérations de mise à jour avec [l'update manager](/pages/cloud/private-cloud/vmware_update_manager) par exemple. Dans ce cas précis, l'hôte est isolé.
 
 ![activation HA](images/HA.png){.thumbnail}
 
@@ -94,7 +91,7 @@ En cas de défaillance d'une banque de données avec un état APD (all path down
 
 ##### Surveillance de VM
 
-La surveillance des machines virtuelles est disponible suite à l'installation des [VMware tools](../installation-des-vmware-tools/). 
+La surveillance des machines virtuelles est disponible suite à l'installation des [VMware tools](/pages/cloud/private-cloud/vmware_tools_install). 
 En cas de non réponse via les **tools** (signaux de pulsation), la machine virtuelle sera automatiquement redémarrée. Une configuration avancée est possible par rapport à cette fonctionnalité (intervalles de redémarrage par exemple).
 
 ![Surveillande de VM](images/HAparam5.PNG){.thumbnail}

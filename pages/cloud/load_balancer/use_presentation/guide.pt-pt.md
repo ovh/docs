@@ -1,9 +1,6 @@
 ---
 title: Apresentação do Load Balancer OVH
-slug: lb-presentation
 excerpt: Conheça o Load Balancer OVH
-section: Primeiros passos
-order: 1
 updated: 2018-01-17
 ---
 

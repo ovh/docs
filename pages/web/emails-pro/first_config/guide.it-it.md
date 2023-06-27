@@ -1,9 +1,6 @@
 ---
 title: 'Iniziare a utilizzare la soluzione Email Pro'
-slug: prima-configurazione
 excerpt: 'Come eseguire le prime operazioni sul servizio Email Pro'
-section: 'Per iniziare'
-order: 1
 updated: 2020-04-09
 ---
 
@@ -85,9 +82,9 @@ Nella colonna `Diagnostica`{.action} è possibile assicurarsi della corretta con
 - ** In caso di configurazione automatica**, l’aggiornamento nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} potrebbe richiedere qualche ora.
 
 - **Se il dominio inserito non è gestito da OVH**, clicca sulla casellina rossa per visualizzare le modifiche da apportare. <br>
-*Nel caso sia necessario intervenire su un record di tipo CNAME*, consulta la guida “[Creare un record CNAME per aggiungere un dominio associato](../../microsoft-collaborative-solutions/exchange_20132016_aggiungi_un_record_di_tipo_cname/)” <br>
-*Se invece è necessario modificare un record MX, consulta la guida “[Aggiungere un record MX alla configurazione di un dominio](../../domains/aggiungere-record-mx-configurazione-dominio/)” <br>
-*Nel caso di un record SRV*,completa la tua zona DNS con le informazioni fornite dopo aver cliccato sulla casellina rossa. Per aggiungere questo record, consulta la guida “[Modificare una zona DNS di OVHcloud](../../domains/web_hosting_modifica_la_tua_zona_dns/)”.
+*Nel caso sia necessario intervenire su un record di tipo CNAME*, consulta la guida “[Creare un record CNAME per aggiungere un dominio associato](/pages/web/microsoft-collaborative-solutions/exchange_dns_cname)” <br>
+*Se invece è necessario modificare un record MX, consulta la guida “[Aggiungere un record MX alla configurazione di un dominio](/pages/web/domains/dns_zone_mx)” <br>
+*Nel caso di un record SRV*,completa la tua zona DNS con le informazioni fornite dopo aver cliccato sulla casellina rossa. Per aggiungere questo record, consulta la guida “[Modificare una zona DNS di OVHcloud](/pages/web/domains/dns_zone_edit)”.
 
 ![emailpro](images/first_config_email_pro_configure_domain_update.png){.thumbnail}
 
@@ -122,7 +119,7 @@ Dopo aver completato tutti i campi clicca su `Continua`{.action}, verifica la co
 
 Una volta creati gli account non ti resta che utilizzarli. Per accedervi OVHcloud mette a disposizione un’applicazione online (*webapp*), accessibile all’indirizzo [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} usando le credenziali associate al tuo indirizzo di posta elettronica.
 
-Per configurare l’account su un altro client di posta o dispositivi come _smartphone_ e tablet, [è possibile trovare alcune informazioni utili nelle nostre guide disponibili online](../). Se non conosci i parametri necessari alla configurazione dell’account email, ecco i valori da utilizzare:
+Per configurare l’account su un altro client di posta o dispositivi come _smartphone_ e tablet, [è possibile trovare alcune informazioni utili nelle nostre guide disponibili online](/products/web-cloud-email-collaborative-solutions-email-pro). Se non conosci i parametri necessari alla configurazione dell’account email, ecco i valori da utilizzare:
 
 |Tipo di server|Nome del server|Tipo di sicurezza|Porta|
 |---|---|---|---|
@@ -144,9 +141,9 @@ Per configurare l’account su un altro client di posta o dispositivi come _smar
 
 [Aggiungi un alias al tuo account email](https://docs.ovh.com/it/microsoft-collaborative-solutions/email-alias/)
 
-[Creare firme automatiche](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2013_firma_automatica_-_disclaimer/)
+[Creare firme automatiche](/pages/web/microsoft-collaborative-solutions/feature_footers)
 
-[Gestire la fatturazione dei tuoi account Email Pro](https://docs.ovh.com/it/emails-pro/gestione-fatturazione-emailpro/)
+[Gestire la fatturazione dei tuoi account Email Pro](/pages/web/emails-pro/manage_billing_emailpro)
 
 [Gestire la politica di sicurezza di un servizio di posta elettronica](https://docs.ovh.com/it/microsoft-collaborative-solutions/gestire-politica-di-sicurezza-password/)
 

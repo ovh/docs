@@ -1,11 +1,8 @@
 ---
 title: Adicionar um endereço IP público a uma nova VM (EN)
-slug: nutanix-public-ip
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/nutanix/nutanix-public-ip/'
+    canonical: '/pages/cloud/nutanix/24-add-public-ip-on-vm'
 excerpt: Find out how to use a public IP on a Ubuntu VM, created via API
-section: Rede e segurança
-order: 04
 updated: 2022-01-11
 ---
 

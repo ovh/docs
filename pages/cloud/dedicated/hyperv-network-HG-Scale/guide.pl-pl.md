@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguracja sieci w systemie Windows Server z Hyper-V w ofercie High Grade & SCALE'
-slug: hyperv-network-hg-scale
 excerpt: 'Dowiedz się, jak skonfigurować sieć w systemie Windows Server z Hyper-V w ofercie High Grade & SCALE'
-section: 'Poziom zaawansowany'
-order: 5
 updated: 2023-06-20
 ---
 
@@ -180,7 +177,7 @@ Po wpisaniu wszystkich adresów kliknij `OK`{.action}, aby zamknąć zaawansowan
 
 > [!warning]
 >
-> Ten etap może spowodować utratę połączenia. Jeśli tak się stanie, zaloguj się za pomocą [IPMI](https://docs.ovh.com/pl/dedicated/uzywanie-ipmi-serwery-dedykowane/) i zmodyfikuj ponownie konfigurację. Zauważcie, że domyślny mostek powrócił do stanu pustego. Dodaj gateway 100.64.0.1.
+> Ten etap może spowodować utratę połączenia. Jeśli tak się stanie, zaloguj się za pomocą [IPMI](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers) i zmodyfikuj ponownie konfigurację. Zauważcie, że domyślny mostek powrócił do stanu pustego. Dodaj gateway 100.64.0.1.
 >
 
 #### Dodaj statyczną trasę

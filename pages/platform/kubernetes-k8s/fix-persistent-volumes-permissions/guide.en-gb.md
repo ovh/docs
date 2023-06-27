@@ -1,8 +1,6 @@
 ---
 title: Troubleshooting permission errors when enabling persistence
 excerpt: ''
-slug: persistentvolumes-permission-errors
-section: Diagnostics
 updated: 2021-12-17
 ---
 
@@ -107,7 +105,7 @@ my-first-k8s-wordpress-2-mariadb-0          1/1     Running            0        
 
 ## Go further
 
-To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation](../).
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

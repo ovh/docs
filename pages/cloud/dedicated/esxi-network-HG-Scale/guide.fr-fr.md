@@ -1,9 +1,6 @@
 ---
 title: 'Configurer le réseau sur ESXi sur les gammes High Grade & SCALE'
-slug: esxi-network-hg-scale
 excerpt: 'Découvrez comment configurer le réseau sur ESXi sur les gammes High Grade & SCALE.'
-section: 'Utilisation avancée'
-order: 6
 updated: 2022-05-09
 ---
 

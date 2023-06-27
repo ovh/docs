@@ -1,8 +1,6 @@
 ---
 title: Manage services
-slug: ovh-api-service
 excerpt: Manage the life cycle of your OVH Service after delivery
-section: APIv6
 updated: 2020-01-02
 ---
 
@@ -22,7 +20,7 @@ The **/service** API route consists of actions common to all types of services a
 ## Requirements
 
 * Being connected on [OVHcloud API](https://ca.api.ovh.com/){.external}.
-* Having [created your credentials for OVHcloud API](https://docs.ovh.com/sg/en/api/first-steps-with-ovh-api/){.external}.
+* Having [created your credentials for OVHcloud API](/pages/account/api/first-steps){.external}.
 * Having a customer account wih Reseller Tag (contact your sales representative for eligibility if applicable).
 
 

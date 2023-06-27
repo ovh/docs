@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Guardar una copia de seguridad de su sitio web WordPress"
-slug: realize-backup-wordpress
 excerpt: "Descubra cómo realizar el backup del contenido de su sitio web WordPress y de su base de datos"
-section: 'Tutoriales'
-order: 021
 updated: 2023-02-22
 ---
 
@@ -37,7 +34,7 @@ En un alojamiento web compartido, usted es responsable de las copias de segurida
 
 Puede realizar una copia de seguridad de dos formas: **manualmente** o a través de **mediante una extensión**.
 
-OVHcloud ofrece un [servicio (no contractual) de backup automático de los datos](https://docs.ovh.com/us/es/hosting/restaurar-espacio-almacenamiento-alojamiento-web/), así como la puesta a disposición de estas copias de seguridad. Sin embargo, es su responsabilidad establecer su propia política de restauración y determinar los puntos de restauración en los momentos que considere oportuno.
+OVHcloud ofrece un [servicio (no contractual) de backup automático de los datos](/pages/web/hosting/ftp_save_and_backup), así como la puesta a disposición de estas copias de seguridad. Sin embargo, es su responsabilidad establecer su propia política de restauración y determinar los puntos de restauración en los momentos que considere oportuno.
 
 ### Método n°1 - Realizar una copia de seguridad manual
 
@@ -45,7 +42,7 @@ El backup manual debe realizarse en dos pasos. En primer lugar, debe guardar cop
 
 #### 1.1 - Guarde los archivos de su sitio web
 
-La recuperación se realiza a través de un cliente FTP como FileZilla. Para más información, consulte nuestra guía "[Utilizar FileZilla con su alojamiento de OVHcloud](https://docs.ovh.com/us/es/hosting/web_hosting_guia_de_uso_de_filezilla/)".
+La recuperación se realiza a través de un cliente FTP como FileZilla. Para más información, consulte nuestra guía "[Utilizar FileZilla con su alojamiento de OVHcloud](/pages/web/hosting/ftp_filezilla_user_guide)".
 
 Al conectarse al servidor por FTP, deberá cargar (arrastrar/soltar) el contenido del directorio `www` en el panel de la derecha. Este directorio contiene todos los archivos y directorios de su sitio web WordPress (configuración, temas, multimedia, etc.).
 
@@ -61,7 +58,7 @@ Para exportar su base de datos, acceda a la interfaz _PHPMyAdmin_ a través de l
 
 > [!success]
 >
-> No dude en consultar nuestra guía sobre [la exportación de una base de datos](https://docs.ovh.com/us/es/hosting/web_hosting_exportacion_de_una_base_de_datos/).
+> No dude en consultar nuestra guía sobre [la exportación de una base de datos](/pages/web/hosting/sql_database_export).
 
 ![Acceso PHPMyAdmin - Inicio](images/how_to_backup_your_wordpress_2.png){.thumbnail}
 

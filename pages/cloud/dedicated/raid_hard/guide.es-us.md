@@ -1,8 +1,6 @@
 ---
 title: RAID por hardware
-slug: raid-hardware
 excerpt: Como comprobar el estado del RAID por hardware y de los discos con controladora RAID&#58; LSI, LSI MegaRaid y 3ware (obsoleto).
-section: RAID y discos
 updated: 2019-05-10
 ---
 

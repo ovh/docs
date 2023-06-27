@@ -1,9 +1,6 @@
 ---
 title: 'Configurar la doble autenticación en una cuenta Exchange'
-slug: configurar-2fa-exchange
 excerpt: 'Cómo configurar la doble autenticación en una cuenta Exchange'
-section: 'Funcionalidades de las cuentas Exchange'
-order: 04
 updated: 2020-03-11
 ---
 

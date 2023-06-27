@@ -1,8 +1,6 @@
 ---
 title: Mehrere VLANs im vRack erstellen
-slug: vrack-vlan-erstellen
 excerpt: 'Erfahren Sie hier, wie Sie mehrere VLANs im vRack erstellen'
-section: vRack
 updated: 2022-02-24
 ---
 
@@ -14,7 +12,7 @@ updated: 2022-02-24
 
 ## Ziel
 
-Bei der [Standardkonfiguration des vRack](https://docs.ovh.com/de/dedicated/mehrere-dedizierte-server-im-vrack-konfigurieren/) können Sie nur ein VLAN erstellen. Das bedeutet, Sie können jede IP-Adresse nur einmal verwenden. Seit Version 2.0 der vRack Konfiguration ist es jedoch möglich, bis zu 4000 lokale virtuelle Netzwerke in nur einem vRack einzurichten. Das bedeutet, Sie können jede IP-Adresse bis zu 4000 mal verwenden.
+Bei der [Standardkonfiguration des vRack](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server) können Sie nur ein VLAN erstellen. Das bedeutet, Sie können jede IP-Adresse nur einmal verwenden. Seit Version 2.0 der vRack Konfiguration ist es jedoch möglich, bis zu 4000 lokale virtuelle Netzwerke in nur einem vRack einzurichten. Das bedeutet, Sie können jede IP-Adresse bis zu 4000 mal verwenden.
 
 **Diese Anleitung erklärt, wie Sie mehrere VLANs im vRack erstellen.**
 
@@ -22,11 +20,11 @@ Bei der [Standardkonfiguration des vRack](https://docs.ovh.com/de/dedicated/mehr
 ## Voraussetzungen
 
 - Sie verfügen über einen oder mehrere mit dem vRack kompatible [Dedicated Server](https://www.ovh.de/dedicated_server/).
-- Sie haben ein [vRack](https://docs.ovh.com/de/dedicated/mehrere-dedizierte-server-im-vrack-konfigurieren/) in Ihrem Kunden-Account eingerichtet.
+- Sie haben ein [vRack](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server) in Ihrem Kunden-Account eingerichtet.
 - Sie haben einen privaten IP-Adressbereich für das vRack festgelegt.
 - Sie sind via SSH als Root-Benutzer eingeloggt (Linux).
 - Sie sind mit dem Administrator-Account eingeloggt (Windows).
-- Sie haben die [Konfiguration des vRack](https://docs.ovh.com/de/dedicated/mehrere-dedizierte-server-im-vrack-konfigurieren/) abgeschlossen.
+- Sie haben die [Konfiguration des vRack](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server) abgeschlossen.
 
 > [!warning]
 > Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
@@ -215,6 +213,6 @@ Klicken Sie abschließend auf den Button `OK`{.action}, um die Änderungen zu sp
 
 ## Weiterführende Informationen
 
-[Mehrere dedizierte Server im vRack konfigurieren](https://docs.ovh.com/de/dedicated/mehrere-dedizierte-server-im-vrack-konfigurieren/){.external}
+[Mehrere dedizierte Server im vRack konfigurieren](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server){.external}
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

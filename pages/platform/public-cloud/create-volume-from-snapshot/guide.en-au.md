@@ -1,9 +1,6 @@
 ---
 title: Creating a volume from a backup
-slug: create-volume-from-backup
 excerpt: 'Find out how to create additional disks from a snapshot of an additional disk'
-section: Storage
-order: 3
 updated: 2021-04-06
 ---
 
@@ -64,7 +61,7 @@ The process of attaching the disk to your instance will then begin, and this may
 Make sure to not leave the current page in your OVHcloud Control Panel while the disk is being attached. This may interrupt the process.
 >
 
-Once the attachment is complete, you can follow these steps on how to configure the additional disk [using Linux](../create_and_configure_an_additional_disk_on_an_instance/#using-linux) or [using Windows](../create_and_configure_an_additional_disk_on_an_instance/#using-windows).
+Once the attachment is complete, you can follow these steps on how to configure the additional disk [using Linux](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#using-linux) or [using Windows](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#using-windows).
 
 ## Go further
 

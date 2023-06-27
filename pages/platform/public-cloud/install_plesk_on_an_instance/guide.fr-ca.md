@@ -1,8 +1,6 @@
 ---
 title: 'Installer Plesk sur une instance'
-slug: installer-plesk-sur-une-instance
 excerpt: 'Apprenez à mettre en place Plesk sur votre instance Public Cloud'
-section: Tutoriels
 updated: 2018-03-26
 ---
 
@@ -23,8 +21,8 @@ Plesk est une interface de gestion de serveurs simple à prendre en main. Vous a
 
 ## Prérequis
 
-- [Avoir créé une instance depuis l'espace client OVHcloud](../create_an_instance_in_your_ovh_customer_account/).
-- [Passer root et définir un mot de passe](../passer-root-et-definir-un-mot-de-passe/).
+- [Avoir créé une instance depuis l'espace client OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#etape-3-creer-une-instance/).
+- [Passer root et définir un mot de passe](/pages/platform/public-cloud/become_root_and_change_password).
 
 ## En pratique
 

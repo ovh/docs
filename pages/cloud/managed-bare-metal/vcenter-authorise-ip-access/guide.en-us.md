@@ -1,13 +1,11 @@
 ---
 title: 'Authorising IP addresses for vCenter access'
-slug: authorise-ip-addresses-vcenter
 routes:
-    canonical: 'https://docs.ovh.com/us/en/private-cloud/authorise-ip-addresses-vcenter/'
+    canonical: '/pages/cloud/private-cloud/autoriser_des_ip_a_se_connecter_au_vcenter'
 excerpt: 'Find out how to manage IP address access restrictions for vCenter'
 legacy_guide_number: '1442255'
 space_key: VS
 space_name: vSphere as a Service
-section: 'OVHcloud services and options'
 updated: 2020-11-18
 ---
 
@@ -26,7 +24,7 @@ Access to your Managed Bare Metal can be restricted by allowing only certain IP 
 
 ## Instructions
 
-If you have set the [vCenter access policy](../modify-vcenter-access-policy) to "Restricted", you need to add the IP addresses that will be allowed to connect to the service.
+If you have set the [vCenter access policy](/pages/cloud/managed-bare-metal/vcenter-modify-access-policy) to "Restricted", you need to add the IP addresses that will be allowed to connect to the service.
 
 In your OVHcloud Control Panel, open the "Bare Metal Cloud" section, then select your service under `Managed Bare Metal`{.action} in the left-hand navigation bar.
 

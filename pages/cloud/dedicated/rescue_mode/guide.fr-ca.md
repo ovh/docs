@@ -1,8 +1,6 @@
 ---
 title: 'Activer et utiliser le mode rescue'
-slug: ovh-rescue
 excerpt: 'Comment activer et utiliser le mode rescue sur un serveur dédié'
-section: 'Diagnostic et mode Rescue'
 updated: 2023-02-07
 ---
 
@@ -33,7 +31,7 @@ Prenez soin d'effectuer une sauvegarde de vos données si vous ne disposez pas e
 ## En pratique
 
 > [!warning]
-> Veuillez noter que si vous avez défini une clé SSH par défaut dans votre espace pour les produits dédiés, vous ne recevrez pas de mot de passe root lors du redémarrage d'un serveur en mode rescue. Dans ce cas, vous devez d'abord désactiver la clé SSH par défaut avant de redémarrer le serveur en mode rescue. Pour ce faire, nous vous invitons à consulter cette [section](../creer-cle-ssh-serveur-dediees/#disablesshkey) du guide correspondant.
+> Veuillez noter que si vous avez défini une clé SSH par défaut dans votre espace pour les produits dédiés, vous ne recevrez pas de mot de passe root lors du redémarrage d'un serveur en mode rescue. Dans ce cas, vous devez d'abord désactiver la clé SSH par défaut avant de redémarrer le serveur en mode rescue. Pour ce faire, nous vous invitons à consulter cette [section](/pages/cloud/dedicated/creating-ssh-keys-dedicated#disablesshkey) du guide correspondant.
 >
 
 Le mode rescue ne peut être activé que depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. 
@@ -202,6 +200,6 @@ Les outils suivants sont déjà installés dans ce mode :
 
 ## Aller plus loin
 
-[Modifier le mot de passe administrateur sur un serveur dédié Windows](../changer-mot-passe-admin-windows/)
+[Modifier le mot de passe administrateur sur un serveur dédié Windows](/pages/cloud/dedicated/changing-admin-password-on-windows)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

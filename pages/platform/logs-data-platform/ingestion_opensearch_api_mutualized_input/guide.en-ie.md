@@ -1,9 +1,6 @@
 ---
 title: Mutualized input - OpenSearch API
-slug: logs-data-platform-ldp-index
-order: 9
 excerpt: Send your logs to the platform with the OpenSearch API.
-section: Features
 updated: 2022-06-13
 ---
 
@@ -122,6 +119,6 @@ The logs from journald arrived fully parsed and ready to be explored. Use differ
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/ie/en/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)))

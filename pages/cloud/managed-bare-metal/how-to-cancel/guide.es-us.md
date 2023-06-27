@@ -1,11 +1,8 @@
 ---
 title: Dar de baja la solución Managed Bare Metal
-slug: dar-de-baja-solucion-managed-bare-metal
 routes:
-    canonical: 'https://docs.ovh.com/us/es/private-cloud/dar-de-baja-solucion-hosted-private-cloud/'
+    canonical: '/pages/cloud/private-cloud/comment_resilier_le_private_cloud'
 excerpt: Cómo solicitar la baja de una infraestructura Managed Bare Metal
-section: Funcionalidades de OVHcloud
-order: 09
 updated: 2020-11-18
 ---
 

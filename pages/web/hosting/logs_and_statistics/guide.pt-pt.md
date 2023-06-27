@@ -1,9 +1,6 @@
 ---
 title: 'Partilhado: Consultar as estatísticas e os logs do meu site'
 excerpt: Acesso às estatísticas do seu site
-slug: partilhado_consultar_as_estatisticas_e_os_logs_do_meu_site
-section: Otimizar o seu site
-order: 04
 updated: 2021-01-05
 ---
 
@@ -46,7 +43,7 @@ Clique no botão `Criar um novo utilizador`{.action} na secção `Administraçã
 
 > [!warning] 
 >
-> Se ativou os logs separados numa [entrada multi-site](../multisites-configurar-um-multisite-no-meu-alojamento-web/#2-adicionar-um-dominio-ou-subdominio), os utilizadores criados aqui não podem aceder às estatísticas desta entrada multi-site.
+> Se ativou os logs separados numa [entrada multi-site](/pages/web/hosting/multisites_configure_multisite#2-adicionar-um-dominio-ou-subdominio), os utilizadores criados aqui não podem aceder às estatísticas desta entrada multi-site.
 >
 
 ### Estatísticas das visitas
@@ -81,7 +78,7 @@ Tem à sua disposição diferentes tipos de logs:
 - Logs CGI: as várias chamadas para os scripts cgi.bin que foram feitas.
 - Logs out: as estatísticas do seu alojamento sobre as diferentes chamadas externas efetuadas.
 - Logs SSH: estes logs indicam as diferentes ligações realizadas com o protocolo SSH.
-- Logs CRON: o resultado da execução das tarefas planeadas ([As tarefas automatizadas (CRON) no seu alojamento](../alojamento_partilhado_tarefas_agendadas_cron/)).
+- Logs CRON: o resultado da execução das tarefas planeadas ([As tarefas automatizadas (CRON) no seu alojamento](/pages/web/hosting/cron_tasks)).
 
 ### Atividades do alojamento
 

@@ -1,9 +1,6 @@
 ---
 title: Gestion des segments dans NSX
-slug: nsx-segment-management
 excerpt: "Découvrez la création et l'utilisation des segments dans l'interface NSX et vCenter"
-section: NSX
-order: 02
 updated: 2023-02-27
 ---
 
@@ -204,7 +201,7 @@ Revenez dans l'interface NSX, allez sur l'onglet `Networking`{.action} et clique
 
 ## Aller plus loin
 
-[Premiers pas avec NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-first-steps/)
+[Premiers pas avec NSX](/pages/cloud/private-cloud/nsx-01-first-steps)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

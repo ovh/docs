@@ -1,8 +1,5 @@
 ---
 title: Quick start for Logs Data Platform
-slug: logs-data-platform-quick-start
-order: 1
-section: Get Started
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-quick-start?id=kb_article_view&sysparm_article=KB0037679'
 updated: 2023-03-30
@@ -201,6 +198,6 @@ We have only scratched the surface of what Logs Data Platform can do for you. yo
 - [Using roles](/pages/platform/logs-data-platform/getting_started_roles_permission) to allow other users of the platform to let them see yours beautiful Dashboards or let them dig in your Streams instead of doing it for them.
 - [Using OpenSearch Dashboards and aliases to unleash the power of OpenSearch](/pages/platform/logs-data-platform/visualization_opensearch_dashboards)
 - If you want to master Graylog, this is the place to go: [Graylog documentation](https://docs.graylog.org/docs/queries){.external}
-- Documentation: [Guides](https://docs.ovh.com/us/es/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)))
 - Join our community of users on [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}

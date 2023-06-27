@@ -1,10 +1,7 @@
 ---
 title: Criar uma resposta automática para o seu endereço de e-mail
 excerpt: Saiba como configurar uma resposta automática de e-mail
-slug: guia_de_ajuda_a_implementacao_de_respostas_automaticas
 legacy_guide_number: g2052
-section: Funcionalidades dos endereços e-mail
-order: 02
 updated: 2021-04-20
 ---
 
@@ -29,7 +26,7 @@ Em caso de ausência no seu escritório, pode configurar um respondedor de e-mai
 
 > [!primary]
 >
-> Se o seu endereço de e-mail estiver numa oferta [**Exchange**](https://www.ovhcloud.com/pt/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/pt/emails/email-pro/) ou não existir nenhuma secção de `Gestão das respostas automáticas`{.action} no seu MXplan, deverá criar a resposta automática a partir do seu webmail, ajudando-o na documentação ["Criar uma resposta automática a partir da interface OWA"](../../microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa/).
+> Se o seu endereço de e-mail estiver numa oferta [**Exchange**](https://www.ovhcloud.com/pt/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/pt/emails/email-pro/) ou não existir nenhuma secção de `Gestão das respostas automáticas`{.action} no seu MXplan, deverá criar a resposta automática a partir do seu webmail, ajudando-o na documentação ["Criar uma resposta automática a partir da interface OWA"](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies).
 
 ### Criação da resposta automática
 

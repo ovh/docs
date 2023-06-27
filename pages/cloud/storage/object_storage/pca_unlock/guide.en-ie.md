@@ -1,9 +1,6 @@
 ---
 title: Cloud Archive Swift - Unfreezing your data stored in the Public Cloud Archive
-slug: pca/unlock
 excerpt: Find out how to unfreeze your archives
-section: OpenStack Swift Archive Storage Class Specifics
-order: 030
 updated: 2022-04-12
 ---
 
@@ -20,8 +17,8 @@ Since cold storage data is supposed to be rarely accessed, a retrieval request i
 - Unfreezing via the OVHcloud Control Panel:
     - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - Unfreezing via python-swiftclient:
-    - [Preparing an environment for using the OpenStack API](https://docs.ovh.com/ie/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) by installing python-swiftclient
-    - [Setting OpenStack environment variables](https://docs.ovh.com/ie/en/public-cloud/set-openstack-environment-variables/)
+    - [Preparing an environment for using the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) by installing python-swiftclient
+    - [Setting OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## Instructions
 
@@ -37,7 +34,7 @@ Once the process has started, the date and time your archive will be available i
 
 ![Unfreeze result](images/unfreeze_result.png){.thumbnail}
 
-Your file will be ready for download after this time period. You can then start the download directly in your browser or via a [Swift/SFTP/SCP client](https://docs.ovh.com/ie/en/storage/pca/sftp/).
+Your file will be ready for download after this time period. You can then start the download directly in your browser or via a [Swift/SFTP/SCP client](/pages/cloud/storage/object_storage/pca_sftp).
 
 
 ### Unfreezing your object via python-swiftclient

@@ -1,9 +1,6 @@
 ---
 title: O que fazer em caso de página "403 forbidden"?
 excerpt: Descubra como repor o seu site online quando apresenta uma página "403 forbidden"
-slug: diagnostico-403-forbidden
-section: Diagnóstico
-order: 08
 updated: 2023-06-09
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: Utilizar el KVM en un VPS
 excerpt: Cómo utilizar el KVM en un VPS
-slug: utilizar_el_kvm_para_los_vps
-section: Primeros pasos
 updated: 2022-08-30
 ---
 

@@ -1,11 +1,8 @@
 ---
 title: Aceder à interface de gestão NSX-v
-slug: aceder-a-interface-de-gestao-nsx
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/accessing-NSX-interface/'
+    canonical: '/pages/cloud/private-cloud/nsx_access-interface'
 excerpt: Find out how to use the NSX-v interface
-section: NSX-v
-order: 1
 updated: 2021-11-17
 ---
 

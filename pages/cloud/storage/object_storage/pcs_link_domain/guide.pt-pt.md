@@ -1,9 +1,6 @@
 ---
 title: Object Storage Swift - Associar um container a um nome de domínio
-slug: pcs/link-domain
 excerpt: Saiba como associar um domínio a um container.
-section: OpenStack Swift Storage Class Specifics
-order: 120
 updated: 2021-10-27
 ---
 
@@ -18,7 +15,7 @@ Este manual explica-lhe como configurar um domínio nos seus containers para fac
 
 ### Requisitos
 
-- Consulte o guia [Criação de container de armazenamento](https://docs.ovh.com/pt/storage/object-storage/pcs/create-container/)
+- Consulte o guia [Criação de container de armazenamento](/pages/cloud/storage/object_storage/pcs_create_container)
 - Um domínio
 
 ## Como funciona?

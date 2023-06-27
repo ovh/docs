@@ -1,9 +1,7 @@
 ---
 title: 'Gestión de los tokens'
 excerpt: 'Gestión de los tokens'
-slug: gestion_de_los_tokens
 legacy_guide_number: g1872
-section: OpenStack
 updated: 2023-06-15
 ---
 

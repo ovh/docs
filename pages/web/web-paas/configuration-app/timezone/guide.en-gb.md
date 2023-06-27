@@ -1,7 +1,5 @@
 ---
 title: Cron timezone
-slug: timezone
-section: App
 updated: 2021-03-26
 ---
 
@@ -17,7 +15,7 @@ That is generally fine but sometimes it's necessary to run cron tasks in a diffe
 
 ## Setting the system timezone for cron tasks
 
-The `timezone` property sets the timezone for which the `spec` property of any [cron tasks](../cron) defined by the application will be interpreted.
+The `timezone` property sets the timezone for which the `spec` property of any [cron tasks](/pages/web/web-paas/configuration-app/cron) defined by the application will be interpreted.
 
 It defines **relative to which timezone** your cron is being run (to avoid having to calculate to and from UTC).
 
@@ -43,7 +41,7 @@ crons:
 When differing from UTC, the runtime application requires the specific timezone to be set.
 The underlying mechanism on how to set that timezone however depends on the runtime used, for which you can find a non-exhaustive list below:
 
-* PHP runtime - You can change the timezone by providing a [custom php.ini](../../languages-php/ini) or by adding the following lines to your `.platform.app.yaml` file:
+* PHP runtime - You can change the timezone by providing a [custom php.ini](/pages/web/web-paas/languages-php/ini) or by adding the following lines to your `.platform.app.yaml` file:
 
 ```yaml
 variables:

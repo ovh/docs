@@ -1,9 +1,6 @@
 ---
 title: 'Cambiar la contraseña de una dirección de correo'
-slug: cambiar-contrasena-direccion-correo
 excerpt: 'Cómo cambiar la contraseña de una dirección de correo de OVHcloud'
-section: 'Primeros pasos'
-order: 03
 updated: 2023-01-03
 ---
 
@@ -27,9 +24,9 @@ Es posible acceder a las cuentas de correo de su solución de OVHcloud mediante 
 >
 > Al cambiar la contraseña de una dirección de correo, también deberá modificarla en todos los dispositivos en los que esté configurada la dirección de correo. No dude en consultar nuestras guías de configuración para su cliente de correo desde la página de inicio de su solución de correo:
 >
-> - [MXplan](https://docs.ovh.com/es/emails/)
-> - [Email Pro](https://docs.ovh.com/es/emails-pro/)
-> - [Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/)
+> - [MXplan](/products/web-cloud-email-collaborative-solutions-mx-plan)
+> - [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro)
+> - [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 >
 
 ## Procedimiento
@@ -115,11 +112,11 @@ En la siguiente tabla encontrará la información necesaria para identificar su 
 
 ## Más información
 
-[Primeros pasos con la solución MXplan](https://docs.ovh.com/es/emails/primeros-pasos-correo-compartido/)
+[Primeros pasos con la solución MXplan](/pages/web/emails/email_generalities)
 
-[Primeros pasos con la solución Email Pro](https://docs.ovh.com/es/emails-pro/primera-configuracion/)
+[Primeros pasos con la solución Email Pro](/pages/web/emails-pro/first_config)
 
-[Primeros pasos con la solución Hosted Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_20132016_primera_configuracion_del_servicio/)
+[Primeros pasos con la solución Hosted Exchange](/pages/web/microsoft-collaborative-solutions/exchange_starting_hosted)
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 

@@ -1,11 +1,8 @@
 ---
 title: Logging in to the vSphere interface
-slug: login-vsphere-interface
 routes:
-    canonical: 'https://docs.ovh.com/asia/en/private-cloud/login-vsphere-interface/'
+    canonical: '/pages/cloud/private-cloud/vsphere_interface_connexion'
 excerpt: Find out about the different ways you can log in to vSphere
-section: 'Getting started'
-order: 2
 updated: 2020-11-18
 ---
 

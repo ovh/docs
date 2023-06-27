@@ -1,11 +1,8 @@
 ---
 title: Formating NVMe disks on IOPS nodes
-slug: formating-nvme-disk-on-iops-nodes
 excerpt: 'Find out how to partition and format NVMe disks on OVHcloud Managed Kubernetes IOPS nodes'
-section: Storage
-order: 5
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/formating-nvme-disk-on-iops-nodes/'
+    canonical: '/pages/platform/kubernetes-k8s/formating-nvme-disks-on-iops-nodes'
 updated: 2020-05-04
 ---
 
@@ -21,8 +18,7 @@ updated: 2020-05-04
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -42,7 +38,7 @@ Kubernetes IOPS nodes are very useful to run applications that rely heavily on d
 
 ## Before you begin
 
-This tutorial assumes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial assumes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-hello-world) documentation.
 
 ## Let’s create a daemonset to partition and format our available NVMe disks
 

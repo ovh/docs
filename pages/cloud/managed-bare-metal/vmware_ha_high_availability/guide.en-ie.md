@@ -1,10 +1,8 @@
 ---
 title: VMware HA (High Availability)
-slug: vmware-ha-high-availability
 routes:
-    canonical: 'https://docs.ovh.com/ie/en/private-cloud/vmware-ha-high-availability/'
+    canonical: '/pages/cloud/private-cloud/vmware_ha_high_availability'
 excerpt: Manage restart policy with HA function
-section: VMware vSphere features
 updated: 2020-11-18
 ---
 
@@ -87,7 +85,7 @@ If a datastore fails with an all path down status, you can set the actions to ta
 
 ##### VM Monitoring
 
-VM monitoring is available after [VMware tools](../install_vmware_tools/){.external} is installed, in case of non-response via the **tools** (heartbeat signals) the virtual machine will be automatically restarted. Advanced configuration is possible for this feature (for example, reboot interval).
+VM monitoring is available after [VMware tools](/pages/cloud/managed-bare-metal/vmware_tools_install){.external} is installed, in case of non-response via the **tools** (heartbeat signals) the virtual machine will be automatically restarted. Advanced configuration is possible for this feature (for example, reboot interval).
 
 ![](images/HAparam5.PNG){.thumbnail}
 

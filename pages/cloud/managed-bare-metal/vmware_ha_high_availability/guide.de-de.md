@@ -1,11 +1,8 @@
 ---
 title: VMware HA (High Availability)
-slug: vmware-ha-high-availability
 routes:
-    canonical: 'https://docs.ovh.com/de/private-cloud/vmware-ha-high-availability/'
+    canonical: '/pages/cloud/private-cloud/vmware_ha_high_availability'
 excerpt: Neustarteinstellungen mit der HA-Funktion verwalten
-section: VMware vSphere Funktionen
-order: 02
 updated: 2020-11-18
 ---
 
@@ -21,7 +18,7 @@ Die Hauptfunktion von **VMware HA** (High Availability) ist, virtuelle Maschinen
 
 ## Voraussetzungen
 
-- Sie sind auf Ihrem [vSphere Interface](../den_vsphere_client_installieren/) eingeloggt.
+- Sie sind auf Ihrem [vSphere Interface](/pages/cloud/managed-bare-metal/vsphere-interface) eingeloggt.
 - Sie verfügen über ein [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external} Produkt.
 
 ## Beschreibung
@@ -93,7 +90,7 @@ Wenn ein Datenspeicher mit APD-Status (all paths down) ausfällt, können Sie hi
 
 ##### VM-Überwachung
 
-Das Monitoring für virtuelle Maschinen ist nach Installation der [VMware Tools](../wie_installiere_ich_die_vmware_tools/) verfügbar.
+Das Monitoring für virtuelle Maschinen ist nach Installation der [VMware Tools](/pages/cloud/managed-bare-metal/vmware_tools_install) verfügbar.
 Bei Nichtverfügbarkeit über die **Tools** (Taktsignale) wird die virtuelle Maschine automatisch neu gestartet. Was diese Funktion betrifft, sind auch erweiterte Einstellungen möglich (zum Beispiel Neustartintervalle).
 
 ![VM-Überwachung](images/HAparam5.PNG){.thumbnail}

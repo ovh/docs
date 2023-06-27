@@ -1,7 +1,5 @@
 ---
 title: Node.js
-slug: nodejs
-section: New-Relic
 updated: 2021-05-11
 ---
 

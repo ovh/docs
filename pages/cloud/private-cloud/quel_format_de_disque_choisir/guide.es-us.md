@@ -1,9 +1,6 @@
 ---
 title: Elegir un formato de disco
-slug: elegir-un-formato-de-disco
 excerpt: Descubra los diferentes formatos de disco
-section: Gestión de las máquinas virtuales
-order: 04
 updated: 2022-02-02
 ---
 

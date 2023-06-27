@@ -1,9 +1,6 @@
 ---
 title: 'Utilizzare l’interfaccia sicura'
-slug: interfaccia-sicura
 excerpt: 'Come confermare le operazioni sensibili tramite l’interfaccia sicura su infrastrutture HDS e PCI-DSS'
-section: 'Servizi e opzioni OVHcloud'
-order: 4
 updated: 2022-10-12
 ---
 
@@ -24,7 +21,7 @@ L’interfaccia sicura è un sistema che permette di confermare le operazioni se
 
 La conferma delle operazioni sensibili tramite l’interfaccia sicura è possibile esclusivamente per gli utenti che dispongono del permesso **token validator**. Questo privilegio, indispensabile all’attivazione dell’opzione **security advanced**,  
 
-viene attribuito di default all’utente “admin” e può essere assegnato direttamente dallo Spazio Cliente anche ad altri utilizzatori.  In caso di necessità, consulta la nostra guida [Introduzione allo Spazio Cliente Private Cloud OVHcloud](../manager-ovh-private-cloud/).
+viene attribuito di default all’utente “admin” e può essere assegnato direttamente dallo Spazio Cliente anche ad altri utilizzatori.  In caso di necessità, consulta la nostra guida [Introduzione allo Spazio Cliente Private Cloud OVHcloud](/pages/cloud/private-cloud/manager_ovh_private_cloud).
 
 Dall’interfaccia sicura è possibile eseguire tre diverse azioni. Prosegui nella lettura di questa guida in base all’operazione che vuoi effettuare: 
 
@@ -53,7 +50,7 @@ Questo messaggio contiene:
 - il nome dell’operazione che richiede la conferma
 - l’ID dell'operazione
 - il token
-- un link che consente di confermare l’operazione (attenzione: se l’indirizzo IP della rete a cui è connesso il telefono [non è autorizzato](../manager-ovh-private-cloud/#sicurezza), la pagina non verrà visualizzata).
+- un link che consente di confermare l’operazione (attenzione: se l’indirizzo IP della rete a cui è connesso il telefono [non è autorizzato](/pages/cloud/private-cloud/manager_ovh_private_cloud#sicurezza), la pagina non verrà visualizzata).
 
 Per confermare l’operazione, clicca sul link presente nell’SMS ricevuto  e seleziona `Operation Validation`{.action}.
 

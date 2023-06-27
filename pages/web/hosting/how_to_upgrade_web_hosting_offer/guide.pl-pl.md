@@ -1,9 +1,6 @@
 ---
 title: "Zmiana oferty hostingowej"
 excerpt: "Dowiedz się, jak zmienić formułę subskrypcji hostingu OVHcloud"
-slug: how_to_change_hosting_offer
-section: Optymalizacja strony WWW
-order: 02
 updated: 2023-04-19
 ---
 
@@ -15,7 +12,7 @@ updated: 2023-04-19
 
 ## Wprowadzenie 
 
-W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) pozwala na zwiększenie pojemności [ofert hostingu www](https://www.ovhcloud.com/pl/web-hosting/), aby uzyskać wydajniejszy hosting, więcej przestrzeni dyskowej, baz danych, adresów e-mail lub dodatkowych funkcji, takich jak [listy mailingowe](https://docs.ovh.com/pl/emails/hosting_www_listy_mailingowe/) (począwszy od [oferta Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/)) lub usługa [Prywatny SQL](https://www.ovhcloud.com/pl/web-hosting/options/private-sql/) (zawarty w ofertach [gama Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/)).
+W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) pozwala na zwiększenie pojemności [ofert hostingu www](https://www.ovhcloud.com/pl/web-hosting/), aby uzyskać wydajniejszy hosting, więcej przestrzeni dyskowej, baz danych, adresów e-mail lub dodatkowych funkcji, takich jak [listy mailingowe](/pages/web/emails/feature_mailing_list) (począwszy od [oferta Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/)) lub usługa [Prywatny SQL](https://www.ovhcloud.com/pl/web-hosting/options/private-sql/) (zawarty w ofertach [gama Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/)).
 
 **Dowiedz się, jak zmienić ofertę hostingu OVHcloud bez przerwy w działaniu.**
 
@@ -75,7 +72,7 @@ Przed przejściem na niższą ofertę, sprawdź 7 poniższe elementy:
 
 #### 1 - Liczba stron
 
-Oferta [Kimsufi Web](https://www.ovhcloud.com/pl/web-hosting/old-web-hosting-offers/) nie pozwala na posiadanie więcej niż jednej domeny na [MultiSite](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/) na Twoim hostingu.
+Oferta [Kimsufi Web](https://www.ovhcloud.com/pl/web-hosting/old-web-hosting-offers/) nie pozwala na posiadanie więcej niż jednej domeny na [MultiSite](/pages/web/hosting/multisites_configure_multisite) na Twoim hostingu.
 
 Przed przejściem z oferty [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/) na ofertę [Kimsufi Web](https://www.ovhcloud.com/pl/web-hosting/old-web-hosting-offers/) sprawdź, czy hosting zawiera tylko jedną stronę.
 
@@ -91,7 +88,7 @@ Po usunięciu danych z baz danych pamiętaj o przeliczeniu rozmiaru używanego w
 
 #### 3 - Web Cloud Databases
 
-Jeśli korzystasz z oferty [Web Cloud Databases](https://docs.ovh.com/pl/hosting/pierwsze-kroki-z-clouddb/#wlaczenie-prywatnego-clouddb-zawartego-w-ofercie-hostingu) zawartej w ofercie hostingu [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) i chcesz przejść na ofertę hostingu [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/), przejdź do części 'Hosting{.action} w Twoim panelu klienta.<br>
+Jeśli korzystasz z oferty [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#wlaczenie-prywatnego-clouddb-zawartego-w-ofercie-hostingu) zawartej w ofercie hostingu [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) i chcesz przejść na ofertę hostingu [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/), przejdź do części 'Hosting{.action} w Twoim panelu klienta.<br>
 Kliknij przycisk `...`{.action} w części `Prywatna baza danych`{.action} a następnie na `Odłącz`{.action}.
 
 ![Web Cloud Databases](images/clouddb.png){.thumbnail}
@@ -100,12 +97,12 @@ Czynność ta pozwoli Ci na zamówienie usługi Web Cloud Databases niezależnej
 
 Jeśli nie chcesz przechowywać tych danych, możesz również usunąć prywatny serwer SQL przed przejściem na ofertę *Pro*: 
 
-1. Przechowuj swoje dane zgodnie z instrukcjami zawartymi w tym [przewodniku](https://docs.ovh.com/pl/hosting/kopia-zapasowa-eksportowa-bazy-danych/).<br>
+1. Przechowuj swoje dane zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/clouddb/save-export-on-database-server).<br>
 2. Usuń serwer Web Cloud Databases z [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W tym celu w prawym górnym rogu kliknij Twoją nazwę, a następnie `Zarządzanie usługami`{.action}. Następnie kliknij przycisk `...`{.action} po prawej stronie odpowiedniej linii, po czym kliknij `Usuń serwer Private SQL`{.action}.
 
 #### 4 - Przestrzeni FTP
 
-Przed przejściem na niższą ofertę upewnij się, że nowa oferta jest wystarczająco dużo [przestrzeni dyskowej FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/), aby import plików z obecnego hostingu był możliwy.
+Przed przejściem na niższą ofertę upewnij się, że nowa oferta jest wystarczająco dużo [przestrzeni dyskowej FTP](/pages/web/hosting/ftp_connection), aby import plików z obecnego hostingu był możliwy.
 
 Limit używany na Twoim hostingu FTP jest widoczny w części `Hosting`{.action} w Twoim Panelu klienta. Kliknij kartę `Informacje ogólne`{.action}, otrzymasz limit `Przestrzeń dyskowa`.
 
@@ -113,7 +110,7 @@ Limit używany na Twoim hostingu FTP jest widoczny w części `Hosting`{.action}
 
 #### 5 - Adresy e-mail
 
-Sprawdź również, czy nowa oferta zawiera wystarczającą liczbę dostępnych adresów e-mail. W przeciwnym razie usuń zbędne adresy po ich wykonaniu [kopia zapasowa](https://docs.ovh.com/pl/emails/przenoszenie-kont-e-mail/).
+Sprawdź również, czy nowa oferta zawiera wystarczającą liczbę dostępnych adresów e-mail. W przeciwnym razie usuń zbędne adresy po ich wykonaniu [kopia zapasowa](/pages/web/emails/manual_email_migration).
 
 Jeśli chcesz zachować tę samą liczbę kont e-mail, zanim przejdziesz na niższą ofertę hostingu, możesz również zamówić nową usługę poczty elektronicznej **MX Plan**. W części `E-maile`{.action} w Panelu klienta kliknij odpowiednią ofertę, a następnie przycisk `...`{.action} po prawej stronie `Usługa`. Na koniec kliknij polecenie `Zmień ofertę`{.action}.
 
@@ -121,7 +118,7 @@ Jeśli chcesz zachować tę samą liczbę kont e-mail, zanim przejdziesz na niż
 
 #### 6 - Listów mailingowych
 
-Funkcja [Listy mailingowe](https://docs.ovh.com/pl/emails/hosting_www_listy_mailingowe/) jest opcjonalna dla hostingu [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/) i [Kimsufi Web](https://www.ovhcloud.com/pl/web-hosting/old-web-hosting-offers/).
+Funkcja [Listy mailingowe](/pages/web/emails/feature_mailing_list) jest opcjonalna dla hostingu [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/) i [Kimsufi Web](https://www.ovhcloud.com/pl/web-hosting/old-web-hosting-offers/).
 
 Aby zmienić dotychczasowy hosting na ofertę [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/), należy najpierw usunąć listy mailingowe lub zamówić ofertę pocztową zawierającą tę funkcję (**MX Plan 100** lub **MX Plan Full**) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
@@ -145,7 +142,7 @@ Po sprawdzeniu 7 elementów możesz wykonać [zmianę oferty](#modify).
 
 #### Posiadasz ofertę Start 10M <a name="start10m"></a>
 
-W związku ze zmianą oferty [Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/) zaproponowana zostanie tylko [oferta Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/). Niemniej jednak, po zmianie oferty Perso, będziesz mógł ją zmienić na wszystkie nasze [pakiety hostingowe](https://www.ovhcloud.com/fr/web-hosting/).
+W związku ze zmianą oferty [Start10M](/pages/web/hosting/activate_start10m) zaproponowana zostanie tylko [oferta Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/). Niemniej jednak, po zmianie oferty Perso, będziesz mógł ją zmienić na wszystkie nasze [pakiety hostingowe](https://www.ovhcloud.com/fr/web-hosting/).
 
 Postępuj zgodnie [z instrukcjami](#modify), aby zmienić ofertę.
 
@@ -189,9 +186,9 @@ Postępuj zgodnie [z instrukcjami](#modify), aby zmienić ofertę.
 
 ## Sprawdź również <a name="gofurther"></a>
 
-[Sprawdź statystyki i logi strony zainstalowanej na hostingu](https://docs.ovh.com/pl/hosting/hosting_statystyki_i_logi_strony/)
+[Sprawdź statystyki i logi strony zainstalowanej na hostingu](/pages/web/hosting/logs_and_statistics)
 
-[Optymalizacja wydajności strony](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_optymalizacji_wydajnosci_strony/)
+[Optymalizacja wydajności strony](/pages/web/hosting/optimise_your_website_performance)
 
 Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 

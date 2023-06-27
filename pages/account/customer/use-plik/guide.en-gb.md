@@ -1,8 +1,6 @@
 ---
 title: 'Sharing files with the Plik tool'
 excerpt: Find out how to use the Plik tool to send files to other people
-slug: plik
-section: Tools
 updated: 2022-02-14
 ---
 
@@ -16,7 +14,7 @@ The online [Plik](https://plik.ovhcloud.com) tool allows you to share files betw
 
 ## Requirements
 
-- An [OVHcloud account](https://docs.ovh.com/gb/en/customer/create-ovhcloud-account/)
+- An [OVHcloud account](/pages/account/customer/ovhcloud-account-creation)
 
 ## Instructions
 
@@ -35,7 +33,7 @@ Enter your credentials and click the `Log in`{.action} button to continue.
 
 > [!primary]
 >
-> If you have enabled [two-factor authentication](https://docs.ovh.com/gb/en/customer/secure-account-with-2FA/) on your OVHcloud account, you will then need to enter the code provided by the authentication method you have defined on your account. 
+> If you have enabled [two-factor authentication](/pages/account/customer/secure-ovhcloud-account-with-2fa) on your OVHcloud account, you will then need to enter the code provided by the authentication method you have defined on your account. 
 >
 
 ### Upload files

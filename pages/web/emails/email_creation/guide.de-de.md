@@ -1,9 +1,6 @@
 ---
 title: 'E-Mail-Accounts mit MX Plan erstellen'
-slug: e-mail-adresse-erstellen
 excerpt: 'Erfahren Sie hier, wie Sie einen MX Plan E-Mail-Account erstellen'
-section: 'Erste Schritte'
-order: 02
 updated: 2022-10-11
 ---
 
@@ -28,8 +25,8 @@ Sie haben gerade eine MX Plan E-Mail-Lösung erworben. Diese bietet Ihnen E-Mail
 >
 > **Sonderfälle**
 >
-> - Hinweis zum Start 10M Hosting: Es muss zuerst [aktiviert werden](https://docs.ovh.com/de/hosting/start10m-aktivieren/), um einen E-Mail-Account zu erstellen. Sie können diese Operation über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} durchführen, indem Sie die betreffende Domain auswählen.
-> - Bei einem Webhosting muss der [inkludierte MX Plan aktiviert werden](https://www.ovhcloud.com/de/web-hosting/){.external}, bevor Sie die übrigen Schritte dieser Anleitung durchführen. Lesen Sie hierzu unsere Anleitung zur [Aktivierung der im Webhosting enthaltenen E-Mail-Accounts](https://docs.ovh.com/de/hosting/webhosting-email-aktivieren/).
+> - Hinweis zum Start 10M Hosting: Es muss zuerst [aktiviert werden](/pages/web/hosting/activate_start10m), um einen E-Mail-Account zu erstellen. Sie können diese Operation über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} durchführen, indem Sie die betreffende Domain auswählen.
+> - Bei einem Webhosting muss der [inkludierte MX Plan aktiviert werden](https://www.ovhcloud.com/de/web-hosting/){.external}, bevor Sie die übrigen Schritte dieser Anleitung durchführen. Lesen Sie hierzu unsere Anleitung zur [Aktivierung der im Webhosting enthaltenen E-Mail-Accounts](/pages/web/hosting/activate-email-hosting).
 
 ## ## In der praktischen Anwendung <a name="instructions"></a>
 
@@ -76,7 +73,7 @@ Führen Sie diesen Schritt so oft wie nötig durch (je nach Anzahl Ihrer Account
 
 Gehen Sie auf die [Webmail Loginseite](https://www.ovhcloud.com/de/mail/){.external} und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
 
-Beim ersten Login werden Sie aufgefordert, die Sprache sowie Ihre Zeitzone festzulegen. Daraufhin wird Ihr Postfach angezeigt. Um herauszufinden, wie Sie Ihre E-Mail-Adresse mit Outlook Web App (OWA) nutzen, lesen Sie unsere Anleitung zur [Verwendung von E-Mail-Accounts über Outlook Web App (OWA)](https://docs.ovh.com/de/emails/verwendung-owa/).
+Beim ersten Login werden Sie aufgefordert, die Sprache sowie Ihre Zeitzone festzulegen. Daraufhin wird Ihr Postfach angezeigt. Um herauszufinden, wie Sie Ihre E-Mail-Adresse mit Outlook Web App (OWA) nutzen, lesen Sie unsere Anleitung zur [Verwendung von E-Mail-Accounts über Outlook Web App (OWA)](/pages/web/emails/email_owa).
 
 ![E-Mail](images/mxplan-creation-new-step5.png){.thumbnail}
 
@@ -88,7 +85,7 @@ In der neuen MX Plan Version wird das Löschen eines Accounts als *Zurücksetzen
 
 > [!warning]
 >
-> Bevor Sie E-Mail-Accounts löschen, überprüfen Sie, dass diese nicht verwendet werden. Eine Sicherung dieser Accounts kann notwendig sein. Wenn nötig lesen Sie die Anleitung ["Ihre E-Mail-Adresse manuell migrieren"](https://docs.ovh.com/de/emails/email-adressen-manuell-migrieren/), in der beschrieben wird, wie Sie Daten eines Accounts über Ihr Kundencenter oder ein E-Mail-Programm exportieren.
+> Bevor Sie E-Mail-Accounts löschen, überprüfen Sie, dass diese nicht verwendet werden. Eine Sicherung dieser Accounts kann notwendig sein. Wenn nötig lesen Sie die Anleitung ["Ihre E-Mail-Adresse manuell migrieren"](/pages/web/emails/manual_email_migration), in der beschrieben wird, wie Sie Daten eines Accounts über Ihr Kundencenter oder ein E-Mail-Programm exportieren.
 
 Klicken Sie im Tab `E-Mail-Accounts`{.action} auf den Button `...`{.action} rechts vom zu löschenden Account und danach auf `Diesen Account zurücksetzen`{.action}.
 
@@ -127,7 +124,7 @@ Führen Sie diesen Schritt so oft wie nötig durch (je nach Anzahl Ihrer Account
 
 Gehen Sie auf die [Webmail Loginseite](https://www.ovhcloud.com/de/mail/){.external} und geben Sie die betreffende E-Mail-Adresse sowie das zugehörige Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
 
-Daraufhin wird Ihr Postfach angezeigt. Weitere Informationen finden Sie in unserer Anleitung zur [Verwendung Ihres E-Mail-Accounts mit RoundCube Webmail](https://docs.ovh.com/de/emails/webmail_verwendung_von_roundcube/).
+Daraufhin wird Ihr Postfach angezeigt. Weitere Informationen finden Sie in unserer Anleitung zur [Verwendung Ihres E-Mail-Accounts mit RoundCube Webmail](/pages/web/emails/email_roundcube).
 
 ![E-Mail](images/mxplan-creation-legacy-step4.png){.thumbnail}
 
@@ -137,7 +134,7 @@ Um Ihre E-Mails über ein E-Mail-Programm einzusehen, finden Sie die entsprechen
 
 > [!warning]
 >
-> Bevor Sie E-Mail-Accounts löschen, überprüfen Sie, dass diese nicht verwendet werden. Eine Sicherung dieser Accounts kann notwendig sein. Wenn nötig lesen Sie die Anleitung [Ihre E-Mail-Adresse manuell migrieren](https://docs.ovh.com/de/emails/email-adressen-manuell-migrieren/), in der beschrieben wird, wie Sie Daten eines Accounts über Ihr Kundencenter oder ein E-Mail-Programm exportieren.
+> Bevor Sie E-Mail-Accounts löschen, überprüfen Sie, dass diese nicht verwendet werden. Eine Sicherung dieser Accounts kann notwendig sein. Wenn nötig lesen Sie die Anleitung [Ihre E-Mail-Adresse manuell migrieren](/pages/web/emails/manual_email_migration), in der beschrieben wird, wie Sie Daten eines Accounts über Ihr Kundencenter oder ein E-Mail-Programm exportieren.
 
 Klicken Sie im Tab `E-Mail-Accounts`{.action} rechts neben dem zu löschenden Account auf `...`{.action} und dann auf `Account löschen`{.action}.
 
@@ -150,24 +147,24 @@ Sie können Ihre E-Mail-Accounts auf Ihrem gewünschten Gerät konfigurieren (z.
 > [!tabs]
 > **Windows**
 >>
->> - [Mail auf Windows 10](https://docs.ovh.com/de/emails/mail-konfiguration-windows-10/)
->> - [Outlook](https://docs.ovh.com/de/emails/konfiguration-outlook-2016/)
->> - [Thunderbird](https://docs.ovh.com/de/emails/konfiguration-email-thunderbird-windows/)
+>> - [Mail auf Windows 10](/pages/web/emails/how_to_configure_windows_10)
+>> - [Outlook](/pages/web/emails/how_to_configure_outlook_2016)
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_windows)
 >>
 > **Apple**
 >>
->> - [macOS Mail](https://docs.ovh.com/de/emails/anleitung-mail-konfiguration-auf-macos/)
->> - [Mail für iPhone oder iPad](https://docs.ovh.com/de/emails/mail-konfiguration-iphone-ios-91/)
->> - [Outlook Mac OS](https://docs.ovh.com/de/emails/konfiguration-outlook-2016-mac/)
->> - [Thunderbird](https://docs.ovh.com/de/emails/konfiguration-email-thunderbird-mac/)
+>> - [macOS Mail](/pages/web/emails/how_to_configure_mail_macos)
+>> - [Mail für iPhone oder iPad](/pages/web/emails/how_to_configure_ios)
+>> - [Outlook Mac OS](/pages/web/emails/how_to_configure_outlook_2016_mac)
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_mac)
 >>
 > **Android**
 >>
->> - [Android](https://docs.ovh.com/de/emails/konfiguration-android/)
+>> - [Android](/pages/web/emails/how_to_configure_android)
 >>
 > **Andere**
 >>
->> - [Interface Gmail](https://docs.ovh.com/de/emails/konfiguration-einer-shared-e-mail-adresse-im-gmail-interface/)
+>> - [Interface Gmail](/pages/web/emails/how_to_configure_gmail)
 >>
 
 Wenn Sie nur die Informationen zur Konfiguration Ihres E-Mail-Accounts benötigen, verwenden Sie die folgenden Einstellungen:
@@ -190,7 +187,7 @@ Wenn Sie nur die Informationen zur Konfiguration Ihres E-Mail-Accounts benötige
 
 > [!warning]
 >
-> Sollten Sie Schwierigkeiten bei der Konfiguration des E-Mail-Accounts in Ihrem Client haben, [verwenden Sie unsere Konfigurationsanleitungen](../) oder wenden Sie sich an den Herausgeber der von Ihnen verwendeten Anwendung, falls die Einrichtung spezielle Anpassungen erfordert.
+> Sollten Sie Schwierigkeiten bei der Konfiguration des E-Mail-Accounts in Ihrem Client haben, [verwenden Sie unsere Konfigurationsanleitungen](/products/web-cloud-email-collaborative-solutions-mx-plan) oder wenden Sie sich an den Herausgeber der von Ihnen verwendeten Anwendung, falls die Einrichtung spezielle Anpassungen erfordert.
 >
 
 ## Weiterführende Informationen

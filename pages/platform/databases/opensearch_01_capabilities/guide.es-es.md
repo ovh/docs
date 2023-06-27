@@ -1,11 +1,8 @@
 ---
 title: OpenSearch - Capabilities and Limitations
-slug: opensearch/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for OpenSearch
-section: OpenSearch - Guides
-order: 010
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/opensearch/capabilities/'
+    canonical: '/pages/platform/databases/opensearch_01_capabilities'
 updated: 2023-05-23
 ---
 

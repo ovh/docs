@@ -1,11 +1,8 @@
 ---
 title: Migrer une infrastructure vers Managed Bare Metal
 routes:
-    canonical: 'https://docs.ovh.com/fr/private-cloud/sddc-migration/'
+    canonical: '/pages/cloud/private-cloud/service-migration'
 excerpt: Découvrez comment gérer tous les aspects liés à la migration d'une infrastructure vers la solution Managed Bare Metal
-slug: sddc-migration
-section: Premiers pas
-order: 5
 updated: 2020-11-23
 ---
 
@@ -22,7 +19,7 @@ La migration d'un service Managed Bare Metal comprend deux aspects :
 
 > [!primary]
 >
-> Si vous choisissez de migrer une infrastructure vers un nouveau vDC, veuillez suivre [ce guide dédié](../vdc-migration).
+> Si vous choisissez de migrer une infrastructure vers un nouveau vDC, veuillez suivre [ce guide dédié](/pages/cloud/managed-bare-metal/service-migration-vdc).
 >
 
 ## Prérequis
@@ -40,7 +37,7 @@ Nous aborderons dans ce guide les notions d'**infrastructure d'origine** et de *
 
 ##### **Contexte de connexion au Managed Bare Metal**
 
-Pour vous connecter à la plateforme VMware, vous pouvez choisir de bloquer l'accès au vSphere par défaut. Pour cela, consultez notre guide sur la [politique d'accès au vCenter](../changer-la-politique-d-acces-au-vcenter/).
+Pour vous connecter à la plateforme VMware, vous pouvez choisir de bloquer l'accès au vSphere par défaut. Pour cela, consultez notre guide sur la [politique d'accès au vCenter](/pages/cloud/managed-bare-metal/vcenter-modify-access-policy).
 
 Suite au changement de politique d'accès, si celle-ci est passée en « restreinte », il faut bien sûr appliquer les mêmes IPs de connexion sur le Managed Bare Metal de destination que sur l'infrastructure d'origine.
 
@@ -48,13 +45,13 @@ Suite au changement de politique d'accès, si celle-ci est passée en « restrei
 
 Dans le cycle de vie de l'infrastructure d'origine, une liste d'utilisateurs peut avoir été créée pour des besoins métiers, ou des besoins organisationnels. Vous devez donc les créer à nouveau sur le Managed Bare Metal de destination et leur attribuer les droits adéquats, en fonction de la configuration du Managed Bare Metal de destination.
 
-Consultez à cet effet nos guides pour [changer les droits d'un utilisateur](../changer-les-droits-d-un-utilisateur/), [modifier le mot de passe d'un utilisateur](../changement-du-mot-de-passe-utilisateur/) et [associer un e-mail à un utilisateur](../associer-email-a-un-utilisateur/).
+Consultez à cet effet nos guides pour [changer les droits d'un utilisateur](/pages/cloud/managed-bare-metal/change-user-rights), [modifier le mot de passe d'un utilisateur](/pages/cloud/managed-bare-metal/changer-user-password) et [associer un e-mail à un utilisateur](/pages/cloud/managed-bare-metal/vsphere-edit-user).
 
 ##### **KMS**
 
 Si des machines virtuelles sont protégées par un chiffrement et que cela constitue un prérequis pour le Managed Bare Metal de destination, il sera nécessaire de recréer le contexte de chiffrement sur ce dernier.
 
-Consultez donc notre guide sur l'[activation du chiffrement des machines virtuelles](../vm-encrypt/) afin d'activer le KMS sur le Managed Bare Metal de destination.
+Consultez donc notre guide sur l'[activation du chiffrement des machines virtuelles](/pages/cloud/managed-bare-metal/vm_encrypt) afin d'activer le KMS sur le Managed Bare Metal de destination.
 
 #### Réseau
 
@@ -65,7 +62,7 @@ Consultez donc notre guide sur l'[activation du chiffrement des machines virtuel
 > Des VMnetwork situés dans la même région ne pourront pas être inter-connectés dans un vRack.
 >
 
-Vous pouvez, dans le cadre d'une migration, lier vos services Managed Bare Metal au sein du même vRack. Consultez notre guide sur [l'utilisation du Private Cloud au sein d'un vRack](../managed-bare-metal-vrack/).
+Vous pouvez, dans le cadre d'une migration, lier vos services Managed Bare Metal au sein du même vRack. Consultez notre guide sur [l'utilisation du Private Cloud au sein d'un vRack](/pages/cloud/managed-bare-metal/using-vrack).
 
 ##### **Réseau public**
 
@@ -76,7 +73,7 @@ Vous pouvez, dans le cadre d'une migration, lier vos services Managed Bare Metal
 
 Si les adresses IP publiques attachées à l'infrastructure d'origine sont nécessaires sur le Managed Bare Metal de destination, il sera nécessaire d'en effectuer le transfert.
 
-Consultez notre guide pour [migrer des blocs IP entre deux services Managed Bare Metal](../ajout-de-bloc-ip/#migrer-un-bloc-ip-entre-deux-managed-bare-metal).
+Consultez notre guide pour [migrer des blocs IP entre deux services Managed Bare Metal](/pages/cloud/managed-bare-metal/ip-block-addition#migrer-un-bloc-ip-entre-deux-managed-bare-metal).
 
 La vidéo ci-dessous vous détaillera également comment déplacer un bloc d'adresses IP entre deux Hosted Private Cloud. Cette méthode est également applicable à une solution Managed Bare Metal.
 
@@ -88,7 +85,7 @@ La vidéo ci-dessous vous détaillera également comment déplacer un bloc d'adr
 
 ##### **Configuration de VMware HA**
 
-La migration implique de refaire la configuration du VMware High Availability (HA), notamment l'ordre et la priorité de boot. Consultez [notre guide sur sa configuration](../vmware-ha-high-availability/).
+La migration implique de refaire la configuration du VMware High Availability (HA), notamment l'ordre et la priorité de boot. Consultez [notre guide sur sa configuration](/pages/cloud/managed-bare-metal/vmware_ha_high_availability).
 
 Voici une liste d'éléments à prendre en compte :
 
@@ -103,7 +100,7 @@ L'applet de commande Powercli « Get-Cluster » renvoie des informations sur les
 
 ##### **Configuration de VMware DRS**
 
-La migration implique la reconfiguration de la fonction VMware DRS (Distributed Resource Scheduler), en particulier des règles d'affinité ou d'anti-affinité pour les groupes d'hôtes et de VMs. Consultez notre guide sur la [configuration de VMware DRS](../vmware-drs-distributed-ressource-scheduler-new/).
+La migration implique la reconfiguration de la fonction VMware DRS (Distributed Resource Scheduler), en particulier des règles d'affinité ou d'anti-affinité pour les groupes d'hôtes et de VMs. Consultez notre guide sur la [configuration de VMware DRS](/pages/cloud/managed-bare-metal/vmware_drs_distributed_ressource_scheduler).
 
 Voici une liste des éléments à prendre en compte:
 
@@ -142,7 +139,7 @@ Voici une liste des éléments à prendre en compte:
 
 ##### **Réseaux**
 
-La migration implique la recréation des groupes de ports virtuels de vRack sur le Managed Bare Metal de destination pour garantir la cohérence du réseau de VMs. Si des VLAN vRack sont en cours d'utilisation sur le vRack de l'infrastructure d'origine, ils peuvent être utilisés pour étendre le domaine L2 au Managed Bare Metal de destination afin de permettre un plan de migration plus échelonné. Pour plus d'informations, consultez notre guide sur l'[Utilisation du cloud privé dans un vRack](../managed-bare-metal-vrack/).
+La migration implique la recréation des groupes de ports virtuels de vRack sur le Managed Bare Metal de destination pour garantir la cohérence du réseau de VMs. Si des VLAN vRack sont en cours d'utilisation sur le vRack de l'infrastructure d'origine, ils peuvent être utilisés pour étendre le domaine L2 au Managed Bare Metal de destination afin de permettre un plan de migration plus échelonné. Pour plus d'informations, consultez notre guide sur l'[Utilisation du cloud privé dans un vRack](/pages/cloud/managed-bare-metal/using-vrack).
 
 Voici une liste des éléments à prendre en compte:
 
@@ -166,7 +163,7 @@ Voici une liste des éléments à prendre en compte:
 * Liste des VMs en cours de sauvegarde
 * Paramètres de sauvegarde
 
-Consultez notre guide pour [activer et utiliser Veeam Backup Managed](../veeam-backup-as-a-service/).
+Consultez notre guide pour [activer et utiliser Veeam Backup Managed](/pages/cloud/managed-bare-metal/veeam_backup_as_a_service).
 
 **Conseils d'automatisation :** L'API OVHcloud fournit des informations liées à chaque sauvegarde de VM via:
 
@@ -194,10 +191,10 @@ Les éléments suivants sont alors nécessaires :
 * des licences SPLA (sur l'infrastructure d'origine et le Managed Bare Metal de destination);
 * une licence Veeam;
 * une adresse IP disponible sur l'infrastructure d'origine et le Managed Bare Metal de destination;
-* une machine virtuelle [Veeam Backup & Replication](../../storage/veeam-backup-replication/) sur l'infrastructure d'origine;
-* [autoriser la machine virtuelle Veeam Backup & Replication à se connecter](../autoriser-des-ip-a-se-connecter-au-vcenter/) sur le vCenter d'origine et de destination.
+* une machine virtuelle [Veeam Backup & Replication](/pages/cloud/storage/backup/veeam_veeam_backup_replication) sur l'infrastructure d'origine;
+* [autoriser la machine virtuelle Veeam Backup & Replication à se connecter](/pages/cloud/managed-bare-metal/vcenter-authorise-ip-access) sur le vCenter d'origine et de destination.
 
-Consultez notre guide pour [mettre en place Veeam Backup & Replication](../../storage/veeam-backup-replication/).
+Consultez notre guide pour [mettre en place Veeam Backup & Replication](/pages/cloud/storage/backup/veeam_veeam_backup_replication).
 
 La vidéo ci-dessous vous détaille comment configurer un Hosted Private Cloud avec la solution Veeam Backup & Replication. Cette méthode est également applicable à une solution Managed Bare Metal.
 

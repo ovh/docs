@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - riscrivi l'URL di accesso al mio sito grazie al mod_rewrite tramite il file.htaccess"
 excerpt: "Questa tutorial ti mostra come riscrivere l'URL di accesso al tuo sito grazie al mod_rewrite tramite il file.htaccess"
-slug: htaccess_url_rewriting_using_mod_rewrite
-section: Scrittura e autenticazione
-order: 03
 updated: 2022-12-22
 ---
 
@@ -54,7 +51,7 @@ Il file ".htaccess" nel quale configura il "**mod_rewrite**" di Apache può esse
 
 I parametri definiti in un file ".htaccess" si applicano alla directory in cui è presente e a tutte le sue sottodirectory.
 
-Per modificare o creare directory, accedi allo spazio FTP del tuo hosting. Se necessario, consulta la guida "[Accedi al tuo spazio di storage](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/)".
+Per modificare o creare directory, accedi allo spazio FTP del tuo hosting. Se necessario, consulta la guida "[Accedi al tuo spazio di storage](/pages/web/hosting/ftp_connection)".
 
 Di seguito trovi alcuni esempi tra i più comuni di utilizzo del "**mod_rewrite**" di Apache. Alcuni di loro possono anche favorire l'SEO del tuo sito Web.
 
@@ -98,7 +95,7 @@ Questa riscrittura dell'URL può favorire l'indicizzazione SEO del tuo sito Web.
 
 Quando utilizzi un hosting condiviso OVHcloud, il tuo dominio (ad esempio **domain.tld**) è dichiarato in `Multisito` per visualizzare il contenuto di una cartella di destinazione conosciuta anche `Cartella di root`. È possibile personalizzare il nome di `Cartella di root`
 
-Per maggiori informazioni sull'argomento, consulta la nostra guida sulla [configurazione di un multisito su un hosting condiviso](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/).
+Per maggiori informazioni sull'argomento, consulta la nostra guida sulla [configurazione di un multisito su un hosting condiviso](/pages/web/hosting/multisites_configure_multisite).
 
 Alcuni utenti non caricano il loro sito direttamente alla base della `Cartella di root` e creano una sottocartella (ad esempio: **MyWebsite**) nella loro `Cartella di root` per creare il tuo sito Web.
 
@@ -121,7 +118,7 @@ Nel nostro esempio, questo costringe l'indirizzo del tuo sito ad essere di tipo 
 
 I certificati SSL consentono di cifrare gli scambi effettuati in HTTP con il tuo sito Web. Ciò impedisce a persone o robot malevoli di raccogliere i dati scambiati tra il sito e il visitatore, come ad esempio le coordinate bancarie.
 
-Se non disponi di un certificato SSL, consulta la nostra guida sulla [gestione di un certificato SSL su un hosting condiviso OVHcloud](https://docs.ovh.com/it/hosting/i_certificati_ssl_sugli_hosting_web_ovh/).
+Se non disponi di un certificato SSL, consulta la nostra guida sulla [gestione di un certificato SSL su un hosting condiviso OVHcloud](/pages/web/hosting/ssl_on_webhosting).
 
 Alcuni visitatori possono dimenticare di inserire l'URL di accesso al tuo sito in **https://** : questo rappresenta un rischio non trascurabile per i dati scambiati tra il tuo sito Web e i loro browser.
 
@@ -137,9 +134,9 @@ Nel nostro esempio, tutte le richieste effettuate con un URL in "**http://**" sa
   
 ## Per saperne di più <a name="go-further"></a>
 
-[Bloccare l'accesso al mio sito web per alcuni indirizzi IP tramite un file.htaccess](https://docs.ovh.com/it/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/)
+[Bloccare l'accesso al mio sito web per alcuni indirizzi IP tramite un file.htaccess](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website)
 
-[Proteggere l'interfaccia di gestione del tuo sito con un file.htaccess](https://docs.ovh.com/it/hosting/condividi-htaccess-come-proteggere-laccesso-a-una-cartella-tramite-autenticazione/)
+[Proteggere l'interfaccia di gestione del tuo sito con un file.htaccess](/pages/web/hosting/htaccess_protect_directory_by_password)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 

@@ -1,9 +1,6 @@
 ---
 title: Handling roles and permissions
-slug: logs-data-platform-roles
-order: 8
 excerpt: Manage who can have access to your data and what they can do with them.
-section: Features
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-roles?id=kb_article_view&sysparm_article=KB0037684'
 updated: 2022-07-28
@@ -145,6 +142,6 @@ Don't hesitate to [explore the API](https://api.ovh.com/console/#/dbaas/logs){.e
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/fr/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

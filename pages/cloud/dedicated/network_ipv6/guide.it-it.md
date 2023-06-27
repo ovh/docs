@@ -1,8 +1,6 @@
 ---
 title: 'Configurare IPv6 su server dedicati'
-slug: network-ipv6
 excerpt: 'Scopri come configurare indirizzi IPv6 sulla nostra infrastruttura'
-section: 'Rete e IP'
 updated: 2022-08-26
 ---
 
@@ -28,7 +26,7 @@ La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocol
 
 - Un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) nel tuo account OVHcloud.
 - Tutti i dati del tuo IPv6 (prefisso, gateway, etc.).
-- Una conoscenza basilare di reti e [SSH](../introduzione-ssh/).
+- Una conoscenza basilare di reti e [SSH](/pages/cloud/dedicated/ssh_introduction).
 
 > [!warning]
 > Ti ricordiamo che i server Kimsufi sono forniti con un solo blocco IPv6 (/128). L'IPv6 sarà configurato automaticamente al momento dell'installazione del sistema operativo.
@@ -51,7 +49,7 @@ Per configurare più indirizzi IPv6 sul tuo server (o per utilizzarlo su una VM)
 > - L'intervallo IPv6 del server è `2607:5300:60:62ac::/64` o `2607:5300:60:62ac:0000:000:000:0000/64`. L’IPv6_GATEWAY sarà perciò `2607:5300:60:62FF:FF:FF:FF:FF`.
 > - L'intervallo IPv6 del server è `2001:41D0:1:46e::/64` o `2001:41D0:0001:046e:0000:000:000:0000/64`. L’IPv6_GATEWAY sarà perciò `2001:41D0:1:4FF:FF:FF:FF:FF`.
 >
-> Il modo più sicuro per recuperare le informazioni di rete del tuo server è [utilizzare l'API OVHcloud](https://docs.ovh.com/it/api/first-steps-with-ovh-api/). Eseguite la chiamata API che segue, indicando il nome interno del server (esempio: `ns3956771.ip-169-254-10.eu`):
+> Il modo più sicuro per recuperare le informazioni di rete del tuo server è [utilizzare l'API OVHcloud](/pages/account/api/first-steps). Eseguite la chiamata API che segue, indicando il nome interno del server (esempio: `ns3956771.ip-169-254-10.eu`):
 >
 
 
@@ -79,7 +77,7 @@ Per configurare più indirizzi IPv6 sul tuo server (o per utilizzarlo su una VM)
 
 #### Step 1: Utilizza l’SSH per connetterti al tuo server
 
-Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server).
+Per ulteriori informazioni fai riferimento a [questa guida](/pages/cloud/dedicated/getting-started-with-dedicated-server#accedi-al-tuo-server).
 
 #### Step 2: Apri il file di configurazione di rete del tuo server
 
@@ -124,7 +122,7 @@ ping6 -c 4 2001:4860:4860::8888
 ```
 
 
-Se non sei in grado di testare (effettuare il ping di) questo indirizzo IPv6, verifica la tua configurazione e riprova. Accertati anche che la macchina da cui stai effettuando il test sia connessa all’IPv6. Se ancora non funziona, testa la tua configurazione in [Modalità rescue](../rescue_mode/).
+Se non sei in grado di testare (effettuare il ping di) questo indirizzo IPv6, verifica la tua configurazione e riprova. Accertati anche che la macchina da cui stai effettuando il test sia connessa all’IPv6. Se ancora non funziona, testa la tua configurazione in [Modalità rescue](/pages/cloud/dedicated/rescue_mode).
 
 ### Fedora 26 e successivi
 
@@ -135,7 +133,7 @@ Se non sei in grado di testare (effettuare il ping di) questo indirizzo IPv6, ve
 
 #### Step 1: Utilizza l’SSH per connetterti al tuo server
 
-Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server).
+Per ulteriori informazioni fai riferimento a [questa guida](/pages/cloud/dedicated/getting-started-with-dedicated-server#accedi-al-tuo-server).
 
 
 #### Step 2: Apri il file di configurazione di rete del tuo server
@@ -179,13 +177,13 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-Se non sei in grado di testare (effettuare il ping di) questo indirizzo IPv6, verifica la tua configurazione e riprova. Accertati anche che la macchina da cui stai effettuando il test sia connessa all’IPv6. Se ancora non funziona, testa la tua configurazione in [Modalità rescue](../rescue_mode/).
+Se non sei in grado di testare (effettuare il ping di) questo indirizzo IPv6, verifica la tua configurazione e riprova. Accertati anche che la macchina da cui stai effettuando il test sia connessa all’IPv6. Se ancora non funziona, testa la tua configurazione in [Modalità rescue](/pages/cloud/dedicated/rescue_mode).
 
 ### FreeBSD
 
 #### Step 1: Utilizza l’SSH per connetterti al tuo server
 
-Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server).
+Per ulteriori informazioni fai riferimento a [questa guida](/pages/cloud/dedicated/getting-started-with-dedicated-server#accedi-al-tuo-server).
 
 
 #### Step 2: Apri il file di configurazione di rete del tuo server
@@ -226,13 +224,13 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-Se non sei in grado di testare (effettuare il ping di) questo indirizzo IPv6, verifica la tua configurazione e riprova. Accertati anche che la macchina da cui stai effettuando il test sia connessa all’IPv6. Se ancora non funziona, testa la tua configurazione in [Modalità rescue](../rescue_mode/).
+Se non sei in grado di testare (effettuare il ping di) questo indirizzo IPv6, verifica la tua configurazione e riprova. Accertati anche che la macchina da cui stai effettuando il test sia connessa all’IPv6. Se ancora non funziona, testa la tua configurazione in [Modalità rescue](/pages/cloud/dedicated/rescue_mode).
 
 ### Ubuntu 18.04 e 20.04
 
 #### Step 1: Utilizza l’SSH per connetterti al tuo server
 
-Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server).
+Per ulteriori informazioni fai riferimento a [questa guida](/pages/cloud/dedicated/getting-started-with-dedicated-server#accedi-al-tuo-server).
 
 #### Step 2: Apri il file di configurazione di rete del tuo server
 
@@ -324,7 +322,7 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 
 #### Step 1: Utilizza l’RDP per connetterti al tuo server
 
-Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server).
+Per ulteriori informazioni fai riferimento a [questa guida](/pages/cloud/dedicated/getting-started-with-dedicated-server#accedi-al-tuo-server).
 
 
 #### Step 2: Apri la configurazione di rete del tuo server

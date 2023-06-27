@@ -1,9 +1,6 @@
 ---
 title: CLI - Use your data in a notebook
-slug: cli/access-object-storage-data
 excerpt: Learn how to access data from your Object Storage in your Notebook
-section: Command Line Interface
-order: 207
 updated: 2023-05-11
 ---
 
@@ -11,11 +8,11 @@ updated: 2023-05-11
 
 ## Objective
 
-This guide shows how to access Object Storage data from your [**notebooks**](https://docs.ovh.com/sg/en/publiccloud/ai/notebooks/definition/).
+This guide shows how to access Object Storage data from your [**notebooks**](/pages/platform/ai/notebook_guide_introduction_definition).
 
 ## Requirements
 
-- a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/sg/en/publiccloud/ai/cli/install-client/))
+- a working `ovhai` CLI ([how to install ovhai CLI](/pages/platform/ai/cli_10_howto_install_cli))
 
 ## Upload data to your Object Storage
 

@@ -1,10 +1,7 @@
 ---
 title: 'Créer / restaurer un serveur virtuel a partir d’une sauvegarde'
-slug: creer-restaurer-un-serveur-virtuel-a-partir-dune-sauvegarde
 excerpt: 'Découvrez comment créer ou restaurer la sauvegarde d’une instance'
 legacy_guide_number: 1882
-section: "Gestion depuis l'espace client"
-order: 03
 updated: 2021-03-19
 ---
 
@@ -12,7 +9,7 @@ updated: 2021-03-19
 
 ## Objectif
 
-L'espace client OVHcloud vous permet de créer des [sauvegardes de vos instances](../sauvegarder-une-instance/) en quelques clics et d'automatiser ce processus.
+L'espace client OVHcloud vous permet de créer des [sauvegardes de vos instances](/pages/platform/public-cloud/save_an_instance) en quelques clics et d'automatiser ce processus.
 Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauvegarde, par exemple en cas de mauvaise manipulation effectuée sur la configuration de votre instance. Vous pouvez utiliser ces sauvegardes d'instances pour deux raisons principales :
 
 - Créer une instance sur la base de la sauvegarde, afin de dupliquer l'instance d'origine. Par exemple si vous configurez une infrastructure de répartition de charge (load balancing).
@@ -22,7 +19,7 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 
 ## Prérequis
 
-- Disposer d'une sauvegarde d'une instance Public Cloud. À cet effet, consultez [le guide dédié à la création d'une sauvegarde](https://docs.ovh.com/fr/public-cloud/sauvegarder-une-instance/).
+- Disposer d'une sauvegarde d'une instance Public Cloud. À cet effet, consultez [le guide dédié à la création d'une sauvegarde](/pages/platform/public-cloud/save_an_instance).
 - Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
@@ -49,11 +46,11 @@ Certains éléments sont prédéfinis :
 
 Définissez le nom de la nouvelle instance, la clé SSH, le vRack et la période de facturation, puis cliquez sur le bouton `Créer l'instance`{.action}.
 
-Pour plus d'informations sur la création d'une instance, consultez [ce guide](https://docs.ovh.com/fr/public-cloud/creer-instance-espace-client/).
+Pour plus d'informations sur la création d'une instance, consultez [ce guide](/pages/platform/public-cloud/public-cloud-first-steps#etape-3-creer-une-instance/).
 
 > [!primary]
 >
-> Pour créer une instance dans un autre datacentre que celui de la sauvegarde, il faudra transférer celle-ci vers la zone correspondante. Référez-vous alors au [guide sur la sauvegarde d'une instance d'un datacentre à l'autre](https://docs.ovh.com/fr/public-cloud/transferer-la-sauvegarde-dune-instance-dun-datacentre-a-lautre/).
+> Pour créer une instance dans un autre datacentre que celui de la sauvegarde, il faudra transférer celle-ci vers la zone correspondante. Référez-vous alors au [guide sur la sauvegarde d'une instance d'un datacentre à l'autre](/pages/platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another).
 >
 
 ### Restaurer une instance à partir d’une sauvegarde
@@ -86,8 +83,8 @@ L'instance aura le statut `Réinstallation` jusqu'à ce que le processus soit te
 
 ## Aller plus loin
 
-[Création et connexion à une première instance Public Cloud](../premiers-pas-instance-public-cloud/)
+[Création et connexion à une première instance Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Sauvegarder une instance](../sauvegarder-une-instance/)
+[Sauvegarder une instance](/pages/platform/public-cloud/save_an_instance)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

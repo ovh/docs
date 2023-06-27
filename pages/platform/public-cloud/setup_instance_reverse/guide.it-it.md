@@ -1,9 +1,6 @@
 ---
 title: "Configura il reverse DNS di un'istanza Public Cloud"
 excerpt: Come impostare la risoluzione reverse DNS
-slug: configura_il_reverse_dns_della_tua_istanza
-section: Gestione dallo Spazio Cliente OVHcloud
-order: 7
 updated: 2021-11-12
 ---
 
@@ -45,11 +42,11 @@ Potrai anche modificare il reverse direttamente tramite l'icona della colonna **
 
 > [!primary]
 >
-Se la modifica non funziona come previsto, verifica che il record `A` sia configurato correttamente nella zona DNS del tuo dominio. Attenzione, la modifica della [zona DNS](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/) può richiedere fino a 24 ore se hai modificato solo recentemente il record `A`.
+Se la modifica non funziona come previsto, verifica che il record `A` sia configurato correttamente nella zona DNS del tuo dominio. Attenzione, la modifica della [zona DNS](/pages/web/domains/dns_zone_edit) può richiedere fino a 24 ore se hai modificato solo recentemente il record `A`.
 >
 
 ## Spingiti oltre <a name="gofurther"></a>
 
-[Creare una prima istanza Public Cloud e connettersi](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/)
+[Creare una prima istanza Public Cloud e connettersi](/pages/platform/public-cloud/public-cloud-first-steps)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

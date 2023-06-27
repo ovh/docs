@@ -1,10 +1,7 @@
 ---
 title: 'Zabezpieczenie konta OVHcloud i zarządzanie danymi osobowymi'
 excerpt: 'Dowiedz się, jak zoptymalizować bezpieczeństwo konta OVHcloud, zarządzać danymi osobowymi i delegować dostęp do konta.'
-slug: identyfikator_klienta
 legacy_guide_number: g2123
-section: 'Pierwsze kroki'
-order: 3
 updated: 2021-07-01
 ---
 
@@ -25,11 +22,11 @@ Panel klienta OVHcloud pozwala również na zarządzanie danymi osobowymi i na d
 
 ## Wymagania początkowe
 
-- Utworzenie [konta OVHcloud](https://docs.ovh.com/pl/customer/tworzenie-konta-ovhcloud/)
+- Utworzenie [konta OVHcloud](/pages/account/customer/ovhcloud-account-creation)
 - Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 > [!primary]
-> W przypadku problemów z logowaniem do konta, zapoznaj się z sekcją "[Nie mogę się zalogować](https://docs.ovh.com/pl/customer/logowanie-panelu-klienta-ovhcloud/#login-failure)" w przewodniku "[Logowanie do Panelu klienta OVHcloud](https://docs.ovh.com/pl/customer/logowanie-panelu-klienta-ovhcloud/)".
+> W przypadku problemów z logowaniem do konta, zapoznaj się z sekcją "[Nie mogę się zalogować](/pages/account/customer/ovhcloud-account-login#login-failure)" w przewodniku "[Logowanie do Panelu klienta OVHcloud](/pages/account/customer/ovhcloud-account-login)".
 >
 
 ## W praktyce
@@ -48,11 +45,11 @@ Wymienione poniżej sprawdzone rozwiązania zostaną wdrożone od momentu utworz
 
 Bezpieczeństwo Twoich usług i danych zależy od skuteczności Twojego hasła. Musi on być **złożony, unikalny i regularnie** odnawiany.
 
-Wszystkie nasze zalecenia dotyczące haseł znajdują się w przewodniku [Zmiana hasła do konta](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/).
+Wszystkie nasze zalecenia dotyczące haseł znajdują się w przewodniku [Zmiana hasła do konta](/pages/account/customer/manage-ovh-password).
 
 #### Zapisz hasło
 
-Jeśli jeszcze tego nie zrobiłeś, zapisz hasło w [menedżerze haseł](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/#uzycie-managera-hasel).
+Jeśli jeszcze tego nie zrobiłeś, zapisz hasło w [menedżerze haseł](/pages/account/customer/manage-ovh-password#uzycie-managera-hasel).
 
 > [!primary]
 > Oprogramowanie **KeePass** i **Bitwarden** to darmowe i wolne od praw menedżery haseł.
@@ -79,7 +76,7 @@ Następnie w ramce `Mój profil` kliknij przycisk `...`{.action} a następnie `E
 
 Weryfikacja dwuetapowa zwiększa bezpieczeństwo konta OVHcloud.
 
-Wszystkie informacje, które chcesz aktywować w przewodniku "[Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/)".
+Wszystkie informacje, które chcesz aktywować w przewodniku "[Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](/pages/account/customer/secure-ovhcloud-account-with-2fa)".
 
 > [!primary]
 > Aktywacja weryfikacji dwuetapowej na Twoim koncie OVHcloud jest niezbędnym warunkiem zachowania zgodności z [hostingiem danych medycznych we Francji (HDS)](https://www.ovhcloud.com/pl/enterprise/certification-conformity/hds/).
@@ -156,26 +153,26 @@ Dzięki temu nie tylko Twój własny dostęp do konta pozostanie zabezpieczony p
 
 Jako główny użytkownik konta, możesz zawsze zarządzać użytkownikami i ich prawami.
 
-Więcej informacji znajdziesz w [przewodniku dotyczącym zarządzania użytkownikami](https://docs.ovh.com/pl/customer/zarzadzanie_uzytkownikami/).
+Więcej informacji znajdziesz w [przewodniku dotyczącym zarządzania użytkownikami](/pages/account/customer/ovhcloud-users-management).
 
 #### Zarządzanie kontaktami
 
-Zarządzanie administracyjne **lub** techniczne **lub** księgowe jedną lub kilkoma usługami w ramach konta można przekazać innemu identyfikatorowi klienta. Aby dowiedzieć się więcej, zapoznaj się z [przewodnikiem dotyczącym zarządzania kontaktami](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/).
+Zarządzanie administracyjne **lub** techniczne **lub** księgowe jedną lub kilkoma usługami w ramach konta można przekazać innemu identyfikatorowi klienta. Aby dowiedzieć się więcej, zapoznaj się z [przewodnikiem dotyczącym zarządzania kontaktami](/pages/account/customer/managing_contacts).
 
 ### Co zrobić w przypadku podejrzenia kradzieży tożsamości?
 
-Jeśli otrzymasz e-mail informujący o nieznanym logowaniu do panelu klienta, zalecamy natychmiastową [zmianę hasła do konta](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/#zmiana-hasla) i [zabezpieczenie konta weryfikacją dwuetapową](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/).
+Jeśli otrzymasz e-mail informujący o nieznanym logowaniu do panelu klienta, zalecamy natychmiastową [zmianę hasła do konta](/pages/account/customer/manage-ovh-password#zmiana-hasla) i [zabezpieczenie konta weryfikacją dwuetapową](/pages/account/customer/secure-ovhcloud-account-with-2fa).
 
 Jeśli zauważysz podejrzaną aktywność na koncie, [skontaktuj się z zespołem OVHcloud](https://www.ovh.com/fr/support/nous-contacter/) na dzień 71 750 02 00, aby nasi pracownicy mogli Ci pomóc w podjęciu odpowiednich kroków.
 
 ## Sprawdź również
 
-[Zmiana hasła do konta](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/)
+[Zmiana hasła do konta](/pages/account/customer/manage-ovh-password)
 
-[Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/)
+[Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
-[Zaloguj się do Panelu klienta OVHcloud](https://docs.ovh.com/pl/customer/logowanie-panelu-klienta-ovhcloud/)
+[Zaloguj się do Panelu klienta OVHcloud](/pages/account/customer/ovhcloud-account-login)
 
-[W przypadku braku połączenia z Panelem klienta](https://docs.ovh.com/pl/customer/logowanie-panelu-klienta-ovhcloud/#login-failure)
+[W przypadku braku połączenia z Panelem klienta](/pages/account/customer/ovhcloud-account-login#login-failure)
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: 'Tutoriel - Créer sa page web personnelle chez OVHcloud'
-slug: create-your-own-web-page
 excerpt: 'Apprenez à créer votre première page web sur un hébergement gratuit Start 10M'
-section: "Tutoriels"
-order: 012
 updated: 2023-02-17
 ---
 
@@ -381,13 +378,13 @@ Pour afficher la cible du lien dans un nouvel onglet, il vous suffit de rajouter
 
 ### Comment stocker du contenu sur mon hébergement ?
 
-Pour que vos pages, et donc votre site, soient visibles pour tout le monde, vous devez les déposer sur votre hébergement (vous devez activer votre hébergement [comme indiqué dans ce guide](https://docs.ovh.com/fr/hosting/activer-start10m/)).
+Pour que vos pages, et donc votre site, soient visibles pour tout le monde, vous devez les déposer sur votre hébergement (vous devez activer votre hébergement [comme indiqué dans ce guide](/pages/web/hosting/activate_start10m)).
 
 Le transfert des fichiers se fait via un protocole dédié : le **FTP** (pour **F**ile **T**ransfert **P**rotocole). Utilisez un logiciel dédié pour cette opération, tel que [FileZilla](https://filezilla-project.org/download.php?type=client) ou encore [Cyberduck](https://cyberduck.io/download/).
 
 ### Déployer son site en FTP
 
-Pour déposer vos fichiers sur votre hébergement, reportez-vous au guide sur l'[utilisation de FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/#connexion-avec-filezilla-en-ftp).
+Pour déposer vos fichiers sur votre hébergement, reportez-vous au guide sur l'[utilisation de FileZilla](/pages/web/hosting/ftp_filezilla_user_guide#connexion-avec-filezilla-en-ftp).
 
 Une fois les fichiers totalement transférés sur votre hébergement, vous pouvez visualiser le résultat en tapant votre nom de domaine dans la barre d'adresse de votre navigateur ou en appuyant sur la touche `F5` de votre clavier pour recharger la page si vous êtes déjà sur votre site.
 

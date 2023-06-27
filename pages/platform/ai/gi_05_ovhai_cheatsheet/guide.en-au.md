@@ -1,9 +1,6 @@
 ---
 title: ovhai CLI - Cheat Sheet
-slug: cheat-sheet
 excerpt: Find all the useful commands for OVHcloud AI Training ovhai CLI
-section: General information
-order: 107
 updated: 2023-05-12
 ---
 

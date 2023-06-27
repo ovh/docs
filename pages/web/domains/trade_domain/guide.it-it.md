@@ -1,8 +1,6 @@
 ---
 title: 'Cambiare il proprietario di un dominio'
-slug: cambiare_proprietario_dominio
 excerpt: 'In questa guida troverai le informazioni necessarie per cambiare il proprietario di un dominio'
-section: 'Cambio di proprietario'
 updated: 2023-06-19
 ---
 
@@ -91,7 +89,7 @@ Se l'indirizzo email non viene modificato in seguito alla modifica del proprieta
 
 > [!warning]
 >
-> Se il proprietario del dominio è stato modificato, il dominio non potrà essere [trasferito verso un altro Registrar](../trasferisci_in_uscita_un_dominio_generico_o_geografico) per un periodo di 60 giorni.
+> Se il proprietario del dominio è stato modificato, il dominio non potrà essere [trasferito verso un altro Registrar](/pages/web/domains/transfer_outgoing_domain) per un periodo di 60 giorni.
 
 ### Aggiornamento delle informazioni del proprietario <a name="updateownerinformation"></a>
 

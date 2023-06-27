@@ -1,8 +1,6 @@
 ---
 title: Rescheduling a maintenance on your Hosted Private Cloud
 excerpt: Find out how to postpone a planned maintenance on your Hosted Private Cloud powered by VMware
-slug: maintenance-rescheduling
-section: OVHcloud Features
 updated: 2022-11-30
 ---
 
@@ -54,7 +52,7 @@ Finally, click the `Modify`{.action} button to confirm your changes.
 
 ### Using the OVHcloud API
 
-Log in to the [API service administration console](https://ca.api.ovh.com/). You can refer to our guide on [Getting started with the OVHcloud API](https://docs.ovh.com/us/en/api/first-steps-with-ovh-api/).
+Log in to the [API service administration console](https://ca.api.ovh.com/). You can refer to our guide on [Getting started with the OVHcloud API](/pages/account/api/first-steps).
 
 Run the following API call:
 

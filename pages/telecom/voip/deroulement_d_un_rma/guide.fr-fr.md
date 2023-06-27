@@ -1,11 +1,9 @@
 ---
 title: 'Déroulement d’un RMA'
-slug: deroulement-d-un-rma
 excerpt: 'Découvrez les étapes de restitution d’un téléphone fourni par OVHcloud'
 legacy_guide_number: '7536653'
 space_key: CRTEL
 space_name: Téléphonie
-section: Administratif
 updated: 2023-01-04
 ---
 
@@ -26,7 +24,7 @@ Lorsque vous changez de téléphone, vous restituez votre ancien matériel. Que 
 
 > [!primary]
 >
-> Pour plus d'informations sur l'échange de téléphones fournis par OVHcloud, consultez notre guide « [Gérer le téléphone Plug & Phone d’une ligne SIP](https://docs.ovh.com/fr/voip/commander-associer-ou-changer-un-telephone/) ».
+> Pour plus d'informations sur l'échange de téléphones fournis par OVHcloud, consultez notre guide « [Gérer le téléphone Plug & Phone d’une ligne SIP](/pages/telecom/voip/commander_associer_ou_changer_un_telephone) ».
 
 Ce guide décrit 2 exemples de RMA (échange de téléphone et résiliation) afin d'en comprendre le fonctionnement.
 D'autres typologies de RMA existent, leur déroulement étant similaire (envoi d'un e-mail puis rappel et enfin clôture du RMA).

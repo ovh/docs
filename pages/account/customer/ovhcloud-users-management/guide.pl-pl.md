@@ -1,9 +1,6 @@
 ---
 title: 'Zarządzanie użytkownikami'
-slug: zarzadzanie_uzytkownikami
 excerpt: 'Dowiedz się, jak dodawać użytkowników z poziomu konta OVHcloud'
-section: Poziom zaawansowany
-order: 01
 updated: 2020-05-20
 ---
 
@@ -17,7 +14,7 @@ OVHcloud umożliwia tworzenie użytkowników, którzy mogą działać w trybie o
 >
 > Zarządzanie użytkownikami różni się od zarządzania kontaktami. Użytkownik ma jako minimum dostęp w trybie odczytu do wszystkich sekcji w Panelu klienta.
 >
-> Zarządzanie kontaktami ma z kolei na celu całkowite oddelegowanie zarządzania aspektami administracyjnymi, technicznymi lub księgowymi jednej lub kilku usług na koncie OVHcloud. Więcej szczegółów dotyczących zarządzania kontaktami znajdziesz w [tym przewodniku](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/).
+> Zarządzanie kontaktami ma z kolei na celu całkowite oddelegowanie zarządzania aspektami administracyjnymi, technicznymi lub księgowymi jednej lub kilku usług na koncie OVHcloud. Więcej szczegółów dotyczących zarządzania kontaktami znajdziesz w [tym przewodniku](/pages/account/customer/managing_contacts).
 >
 
 **Ten przewodnik zawiera szczegółowe informacje na temat uprawnień, jakie może posiadać użytkownik, oraz na temat sposobów dodawania użytkowników i zarządzania nimi.**
@@ -65,7 +62,7 @@ Pojawi się okno, w którym należy uzupełnić wymagane pola. Kliknij przycisk 
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Identyfikator | Wpisz na przykład nazwę użytkownika lub jego funkcję. |
 | E-mail | Wpisz pełny adres e-mail użytkownika. |
-| Hasło | Określ hasło dla użytkownika. Użytkownik będzie mógł je zmienić po uzyskaniu uprawnień do dostępu. <br>W celu utworzenia hasła zalecamy zapoznanie się z [przewodnikiem dotyczącym zarządzania hasłami](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/){.external}. |
+| Hasło | Określ hasło dla użytkownika. Użytkownik będzie mógł je zmienić po uzyskaniu uprawnień do dostępu. <br>W celu utworzenia hasła zalecamy zapoznanie się z [przewodnikiem dotyczącym zarządzania hasłami](/pages/account/customer/manage-ovh-password){.external}. |
 | Uprawnienia | Wybierz poziom spośród następujących: Żaden/Użytkownik/Administrator. |
 | Opis | Tutaj możesz dodać opis użytkownika. Przykład: jego rola w firmie. |
 
@@ -77,7 +74,7 @@ Przykład: **1234-567-89/johnsmith**.
 
 Przy użyciu tego identyfikatora nowy użytkownik będzie mógł zalogować się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. 
 
-Będzie również mógł zmienić swoje hasło i zabezpieczyć swój własny dostęp do Twojego konta, włączając procedurę weryfikacji dwuetapowej (która dotyczy wyłącznie jego dostępu jako użytkownika). W tym celu zapoznaj się z [przewodnikiem dotyczącym wdrażania weryfikacji dwuetapowej](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/){.external}.
+Będzie również mógł zmienić swoje hasło i zabezpieczyć swój własny dostęp do Twojego konta, włączając procedurę weryfikacji dwuetapowej (która dotyczy wyłącznie jego dostępu jako użytkownika). W tym celu zapoznaj się z [przewodnikiem dotyczącym wdrażania weryfikacji dwuetapowej](/pages/account/customer/secure-ovhcloud-account-with-2fa){.external}.
 
 ### Etap 3: Zarządzanie użytkownikami
 

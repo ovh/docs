@@ -1,10 +1,7 @@
 ---
 title: OVHcloud Snapshots
-slug: ovhcloud-zeitpunkt-snapshots
 excerpt: Erfahren Sie hier die Funktionsweise der stündlichen Sicherungen
 legacy_guide_number: '2163263'
-section: OVHcloud Funktionen
-order: 06
 updated: 2022-03-15
 ---
 
@@ -89,7 +86,7 @@ OVHcloud bewahrt die 23 weiteren Snapshots (bis H-24) auf einem Datastore auf, z
 
 Beachten Sie, dass stündliche Snapshots als zusätzliche Sicherheitsmaßnahme für interne Zwecke dienen und nur als letztes Mittel eingesetzt werden sollten, um einen möglichen Datenverlust zu vermeiden.
 
-Wir empfehlen Ihnen die Verwendung einer vollständigen Backup-Lösung wie zum Beispiel unseres [Veeam Backup](https://docs.ovh.com/gb/en/private-cloud/veeam-backup-as-a-service/)-Dienstes oder eines anderen Systems, das ein vollständiges Backup Ihrer virtuellen Maschinen erstellt.
+Wir empfehlen Ihnen die Verwendung einer vollständigen Backup-Lösung wie zum Beispiel unseres [Veeam Backup](/pages/cloud/private-cloud/veeam_backup_as_a_service)-Dienstes oder eines anderen Systems, das ein vollständiges Backup Ihrer virtuellen Maschinen erstellt.
 
 ## Weiterführende Informationen
 

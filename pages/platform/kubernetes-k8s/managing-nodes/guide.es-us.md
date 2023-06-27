@@ -1,11 +1,8 @@
 ---
 title: Managing nodes and node pools
-slug: managing-nodes
 excerpt: ''
-section: User guides
-order: 0
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/managing-nodes/'
+    canonical: '/pages/platform/kubernetes-k8s/managing-nodes'
 updated: 2023-03-27
 ---
 
@@ -23,7 +20,7 @@ OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the
 
 In your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (group of nodes sharing the same configuration).
 
-When you order a new cluster, it is created with a default node pool. Refer to our guide on [creating a cluster](../creating-a-cluster/) for more information.
+When you order a new cluster, it is created with a default node pool. Refer to our guide on [creating a cluster](/pages/platform/kubernetes-k8s/creating-a-cluster) for more information.
 
 In this guide we explain how to do some basic operations with nodes and node pools using the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb).
 
@@ -78,7 +75,7 @@ Fill the fields to create a new node pool.
 > [!warning]
 > The **name of node pool** should be in lowercase. The “_” and “.” characters are not allowed. The node pool name cannot begin with a number.
 
-The subsequent node pool configuration steps are described in [Creating a cluster](../creating-a-cluster/).
+The subsequent node pool configuration steps are described in [Creating a cluster](/pages/platform/kubernetes-k8s/creating-a-cluster).
 
 > [!primary]
 > To learn more about the flavors of the current OVHcloud range, [refer to this page](https://www.ovhcloud.com/es/public-cloud/prices/).
@@ -99,7 +96,7 @@ Confirm the decision by typing `DELETE` into the field, then click on the `Delet
 
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/es/public-cloud/kubernetes/).
 
-To deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring-kubectl/) and [deploying a Hello World application](../deploying-hello-world/) .
+To deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](/pages/platform/kubernetes-k8s/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster) and [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-hello-world) .
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

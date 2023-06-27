@@ -1,11 +1,8 @@
 ---
 title: Prezentacja Panelu klienta Managed Bare Metal OVHcloud
-slug: manager-ovhcloud
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/manager-ovh-private-cloud/'
+    canonical: '/pages/cloud/private-cloud/manager_ovh_private_cloud'
 excerpt: Odkryj możliwości Panelu klienta Managed Bare Metal
-section: Pierwsze kroki
-order: 1
 updated: 2020-11-18
 ---
 
@@ -151,7 +148,7 @@ Jeśli na przykład jest zalogowanych 50 użytkowników i zaloguje się 51, to r
 
 Druga tabela dotyczy opcji *VM encryption*.
 
-Więcej szczegółów na temat tej opcji znajdziesz w [tym przewodniku](../szyfrowanie-vm/).
+Więcej szczegółów na temat tej opcji znajdziesz w [tym przewodniku](/pages/cloud/managed-bare-metal/vm_encrypt).
 
 #### Operacje
 
@@ -232,7 +229,7 @@ Karta Backup umożliwia aktywację rozwiązania `Veeam Backup`.
 
 ![Backup](images/controlpanel14-e.png){.thumbnail}
 
-Więcej informacji na temat tego rozwiązania znajdziesz w tym [przewodniku](https://docs.ovh.com/gb/en/managed-bare-metal/veeam-backup-as-a-service/).
+Więcej informacji na temat tego rozwiązania znajdziesz w tym [przewodniku](/pages/cloud/managed-bare-metal/veeam_backup_as_a_service).
 
 
 ## Sprawdź również

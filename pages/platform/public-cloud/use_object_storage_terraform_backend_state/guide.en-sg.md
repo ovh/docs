@@ -1,9 +1,6 @@
 ---
 title: 'Using OVHcloud Standard (Swift) Object Storage as Terraform Backend to store your Terraform state'
-slug: use_object_storage_terraform_backend_state
 excerpt: 'Find out how to use an OVHcloud Standard (Swift) Object Storage as a Terraform Backend to store your Terraform state'
-section: Tutorials
-order: 03
 updated: 2022-07-11
 ---
 
@@ -85,7 +82,7 @@ In order to do that you need to configure a `backend` in your Terraform HCL conf
 
 ### Creating a Standard Object Storage container/bucket
 
-First, you need to have a Standard Object Storage container. If you don't already had one, you can follow the [Creating an Object Storage container](../../storage/object-storage/pcs/create-container/) tutorial.
+First, you need to have a Standard Object Storage container. If you don't already had one, you can follow the [Creating an Object Storage container](/pages/cloud/storage/object_storage/pcs_create_container) tutorial.
 
 For this guide, our Object Storage container is named `terraform-state`, its solution is `Standard (Swift)` and its region is `GRA`.
 

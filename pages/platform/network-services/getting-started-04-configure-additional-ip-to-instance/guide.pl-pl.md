@@ -1,9 +1,6 @@
 ---
 title: Konfiguracja Additional IP
-slug: configure-additional-ip
 excerpt: Dowiedz się, jak dodawać adresy Additional IP do konfiguracji Twojej instancji
-section: Additional IP
-order: 01
 updated: 2023-01-04
 ---
 
@@ -296,7 +293,7 @@ W sekcji "IP Addresses" sprawdź, czy adres Additional IP został poprawnie doda
 
 ### Diagnostyka
 
-Po pierwsze, zrestartuj Twoją instancję za pomocą systemu operacyjnego instancji lub [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Jeśli nadal nie możesz utworzyć połączenia między siecią publiczną a Additional IP i podejrzewasz problem z siecią, zrestartuj instancję w [trybie rescue](https://docs.ovh.com/pl/public-cloud/przelaczenie_instancji_w_tryb_rescue/). Następnie możesz skonfigurować adres Additional IP bezpośrednio na instancji.
+Po pierwsze, zrestartuj Twoją instancję za pomocą systemu operacyjnego instancji lub [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Jeśli nadal nie możesz utworzyć połączenia między siecią publiczną a Additional IP i podejrzewasz problem z siecią, zrestartuj instancję w [trybie rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode). Następnie możesz skonfigurować adres Additional IP bezpośrednio na instancji.
 
 Po zalogowaniu się do trybu Rescue przez SSH wprowadź następującą komendę:
 
@@ -308,9 +305,9 @@ Aby przetestować połączenie, wystarczy wysłać ping na adres Additional IP z
 
 ## Sprawdź również
 
-[Importuj Additional IP](https://docs.ovh.com/pl/publiccloud/network-services/import-additional-ip/)
+[Importuj Additional IP](/pages/platform/network-services/additional-ip-import)
 
-[Przenieś Additional IP](https://docs.ovh.com/pl/publiccloud/network-services/migrate-additional-ip/)
+[Przenieś Additional IP](/pages/platform/network-services/additional-ip-migrate)
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 

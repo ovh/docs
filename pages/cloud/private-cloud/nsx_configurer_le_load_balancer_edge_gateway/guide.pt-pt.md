@@ -1,11 +1,8 @@
 ---
 title: Configurar o Load Balancer NSX-v Edge (EN)
-slug: nsx-edge-load-balancer-configuration
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/nsx-edge-load-balancer-configuration/'
+    canonical: '/pages/cloud/private-cloud/nsx_configurer_le_load_balancer_edge_gateway'
 excerpt: Simple steps to use the NSX-v Edge load balancing service
-section: NSX-v
-order: 05
 updated: 2021-11-29
 ---
 
@@ -21,7 +18,7 @@ The NSX Edge load balancing service spreads traffic from a specified public or p
 
 - being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/) to receive login credentials
 - a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt))
-- a deployed [NSX Edge Services Gateway](https://docs.ovh.com/pt/private-cloud/how-to-deploy-an-nsx-edge-gateway/)
+- a deployed [NSX Edge Services Gateway](/pages/cloud/private-cloud/nsx_deploying_edge_gateway)
 
 ## Instructions
 

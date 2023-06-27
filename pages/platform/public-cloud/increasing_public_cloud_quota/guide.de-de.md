@@ -1,10 +1,7 @@
 ---
 title: 'Public Cloud Quote erhöhen'
 excerpt: 'Erfahren Sie hier, wie Sie eine Erhöhung Ihrer Kontingente für Public Cloud beantragen'
-slug: increase-public-cloud-quota
 legacy_guide_number: 1904
-section: Projektverwaltung
-order: 6
 updated: 2023-05-03
 ---
 
@@ -25,7 +22,7 @@ Um zusätzliche Ressourcen und Instanzen nutzen zu können, müssen deren Quotas
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben eine [gültige Zahlungsart](../../billing/zahlungsarten-verwalten/) in Ihrem OVHcloud Kundencenter hinterlegt.
+- Sie haben eine [gültige Zahlungsart](/pages/account/billing/manage-payment-methods) in Ihrem OVHcloud Kundencenter hinterlegt.
 
 ## In der praktischen Anwendung
 

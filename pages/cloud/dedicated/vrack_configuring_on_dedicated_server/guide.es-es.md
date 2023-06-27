@@ -1,9 +1,6 @@
 ---
 title: 'Configurar varios servidores dedicados en el vRack'
-slug: configurar-vrack-en-servidor-dedicado
 excerpt: 'Cómo configurar varios servidores dedicados en el vRack'
-section: vRack
-order: 01
 updated: 2022-05-02
 ---
 
@@ -54,7 +51,7 @@ Seleccione el vRack en la lista para ver la lista de servicios compatibles. Haga
 
 ### Paso 3: configuración de las interfaces de red
 
-Las siguientes etapas contienen las configuraciones de las distribuciones/sistemas operativos recientes más comúnmente utilizadas. En primer lugar, debe [conectarse al servidor](https://docs.ovh.com/es/dedicated/primeros-pasos-servidor-dedicado/) por SSH o en sesión RDP (para Windows). Los siguientes ejemplos suponen que está conectado como usuario con permisos muy exigentes (administrador/sudo).
+Las siguientes etapas contienen las configuraciones de las distribuciones/sistemas operativos recientes más comúnmente utilizadas. En primer lugar, debe [conectarse al servidor](/pages/cloud/dedicated/getting-started-with-dedicated-server) por SSH o en sesión RDP (para Windows). Los siguientes ejemplos suponen que está conectado como usuario con permisos muy exigentes (administrador/sudo).
 
 > [!primary]
 >
@@ -218,6 +215,6 @@ Repita este procedimiento para los demás servidores y asígnele a cada uno de e
 
 ## Más información
 
-[Crear varias VLAN en el vRack](https://docs.ovh.com/es/dedicated/crear-vlan-vrack/).
+[Crear varias VLAN en el vRack](/pages/cloud/dedicated/creating-multiple-vlans-in-a-vrack).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

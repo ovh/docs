@@ -1,9 +1,6 @@
 ---
 title: 'Das kostenlose Start 10M Hosting aktivieren'
-slug: start10m-aktivieren
 excerpt: 'Erfahren Sie hier, wie Sie Ihr Start 10M Hosting aktivieren'
-section: 'Erste Schritte'
-order: 01
 updated: 2022-09-15
 ---
 
@@ -30,7 +27,7 @@ In dieser Anleitung erfahren Sie, wie Sie dieses Angebot für Ihren [Domainnamen
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/){.external} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, der nicht bereits mit einem Webhosting oder einem [MX Plan](https://docs.ovh.com/de/emails/allgemeines-zu-shared-e-mails/) verbunden ist. 
+- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/){.external} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, der nicht bereits mit einem Webhosting oder einem [MX Plan](/pages/web/emails/email_generalities) verbunden ist. 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
@@ -51,7 +48,7 @@ Daraufhin öffnet sich das Aktivierungsfenster. **Schritt 1** zeigt Ihnen Angebo
 >
 > Wenn Ihre DNS Zone nicht in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} verwaltet wird, müssen die Änderungen manuell in Ihrer externen DNS Zone durchgeführt werden.
 >
-> Weitere Informationen finden Sie in unserer Anleitung zumr [Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/).
+> Weitere Informationen finden Sie in unserer Anleitung zumr [Bearbeiten der OVHcloud DNS-Zone](/pages/web/domains/dns_zone_edit).
 >
 
 | Option                                       	| Beschreibung                                                                                                               								|
@@ -74,15 +71,15 @@ Daraufhin öffnet sich das Aktivierungsfenster. **Schritt 1** zeigt Ihnen Angebo
 
 In **Schritt 4** können Sie die Verträge einsehen und Ihre Bestellung bestätigen.
 
-Sobald Ihre Bestellung bestätigt wurde, erhalten Sie eine E-Mail mit den Informationen zur [FTP-Verbindung](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/){.external} für Ihr Start 10M Hosting.
+Sobald Ihre Bestellung bestätigt wurde, erhalten Sie eine E-Mail mit den Informationen zur [FTP-Verbindung](/pages/web/hosting/ftp_connection){.external} für Ihr Start 10M Hosting.
 
-Ziehen Sie die Anleitung zur [Erstellung eines MX Plan E-Mail-Accounts](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/){.external} zu Rate, um den Account zu nutzen, der bei Ihrem Start 10M Hosting inklusive ist.
+Ziehen Sie die Anleitung zur [Erstellung eines MX Plan E-Mail-Accounts](/pages/web/emails/email_creation){.external} zu Rate, um den Account zu nutzen, der bei Ihrem Start 10M Hosting inklusive ist.
 
 ## Weiterführende Informationen
 
-[Mit dem Speicherplatz Ihres Webhostings verbinden](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/){.external}
+[Mit dem Speicherplatz Ihres Webhostings verbinden](/pages/web/hosting/ftp_connection){.external}
 
-[E-Mail-Adresse mit MX Plan erstellen](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/){.external}
+[E-Mail-Adresse mit MX Plan erstellen](/pages/web/emails/email_creation){.external}
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

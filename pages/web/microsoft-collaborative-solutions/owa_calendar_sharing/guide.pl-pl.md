@@ -1,9 +1,6 @@
 ---
 title: 'Exchange : współdzielenie kalendarza w interfejsie OWA'
 excerpt: 'Dowiedz się, jak współdzielić kalendarze w programie Exchange'
-slug: exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa
-section: 'Korzystanie z Outlook Web Application (OWA)'
-order: 03
 updated: 2020-02-19
 ---
 
@@ -93,9 +90,9 @@ Kliknięcie kalendarza na liście powoduje jego dodanie do przeglądu widocznego
 
 [Przewodnik dotyczący korzystania z Outlook Web App (OWA)](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/)
 
-[Exchange : współdzielenie katalogu w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_wspoldzielenie_katalogu_poprzez_webmail_owa/)
+[Exchange : współdzielenie katalogu w interfejsie OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
-[Tworzenie grup kontaktów](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_20132016_korzystanie_z_grup_wewnetrzne_grupy_dyskusyjne/)
+[Tworzenie grup kontaktów](/pages/web/microsoft-collaborative-solutions/feature_groups)
 
 
 Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.

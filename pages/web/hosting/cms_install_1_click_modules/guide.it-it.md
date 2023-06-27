@@ -1,9 +1,6 @@
 ---
 title: "Installare il tuo sito Web con un 'CMS in 1 click'"
 excerpt: "Questa guida ti mostra come creare il tuo sito Web con i nostri 'moduli in 1 click'"
-slug: hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi
-section: CMS
-order: 01
 updated: 2023-03-30
 ---
 
@@ -25,10 +22,10 @@ I "moduli in 1 click" permettono l'installazione semplice e rapida di un sito We
 
 - Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) che includa almeno un database
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
-- Utilizzare [una versione di PHP compatibile](https://docs.ovh.com/it/hosting/configura_php_sul_tuo_hosting_web_condiviso_2014_ovh/) sul tuo hosting Web.
-- Aver [configurato correttamente il file.ovhconfig](https://docs.ovh.com/it/hosting/configurare-file-ovhconfig/)
+- Utilizzare [una versione di PHP compatibile](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014) sul tuo hosting Web.
+- Aver [configurato correttamente il file.ovhconfig](/pages/web/hosting/ovhconfig_configuration)
 - La directory (cartella di root) in cui sarà installato il tuo "modulo in 1 click" deve essere vuota o al momento inesistente.
-- Il dominio (con sottodominio se necessario) che verrà utilizzato per il tuo sito web deve essere dichiarato come [Multisito](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/) sul tuo hosting Web OVHcloud.
+- Il dominio (con sottodominio se necessario) che verrà utilizzato per il tuo sito web deve essere dichiarato come [Multisito](/pages/web/hosting/multisites_configure_multisite) sul tuo hosting Web OVHcloud.
 
 ## Procedura
 
@@ -60,7 +57,7 @@ Nella nuova finestra, scegli il CMS e seleziona il dominio con cui vuoi installa
 
 ![Scelta del modulo](images/add_a_module.png){.thumbnail}
 
-Se il tuo dominio non è nella lista, clicca sulla scheda `Multisito`{.action} per aggiungerlo. Consulta la nostra guida [Come condividere un hosting Web tra più siti](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/){.external} in caso di necessità.
+Se il tuo dominio non è nella lista, clicca sulla scheda `Multisito`{.action} per aggiungerlo. Consulta la nostra guida [Come condividere un hosting Web tra più siti](/pages/web/hosting/multisites_configure_multisite){.external} in caso di necessità.
 
 Una volta aggiunto correttamente il dominio, prova di nuovo ad aggiungere un "modulo in 1 click".
 
@@ -105,8 +102,8 @@ Inserisci le informazioni di connessione al tuo database.
 Esistono diverse possibilità:
 
 - Il database è già stato creato sul tuo hosting Web: selezionala nel menu a tendina `Seleziona il database`{.action} e inserisci le informazioni richieste.
-- Il database non è ancora stato creato sul tuo hosting Web: [Crea il tuo database incluso con il tuo hosting](https://docs.ovh.com/it/hosting/creare-database/), torna al menu a tendina `Seleziona il database`{.action} e inserisci le informazioni richieste.
-- Il database è [creato sulla tua istanza Web Cloud Databases](https://docs.ovh.com/it/clouddb/creare-database-e-utente/): nel menu a tendina `Seleziona il database`{.action}, seleziona `Database esterno al tuo hosting Web`{.action} e inserisci le informazioni richieste. L'istanza e l'hosting Web devono essere ospitati nello stesso datacenter.
+- Il database non è ancora stato creato sul tuo hosting Web: [Crea il tuo database incluso con il tuo hosting](/pages/web/hosting/sql_create_database), torna al menu a tendina `Seleziona il database`{.action} e inserisci le informazioni richieste.
+- Il database è [creato sulla tua istanza Web Cloud Databases](/pages/web/clouddb/create-db-and-user-on-db-server): nel menu a tendina `Seleziona il database`{.action}, seleziona `Database esterno al tuo hosting Web`{.action} e inserisci le informazioni richieste. L'istanza e l'hosting Web devono essere ospitati nello stesso datacenter.
 - Il database è stato creato su un altro hosting Web OVHcloud: nel menu a tendina `Seleziona il database`{.action}, seleziona `Database esterno al tuo hosting Web`{.action} e inserisci le informazioni richieste. Il database e l'hosting Web devono essere ospitati nello stesso datacenter.
 
 Per il database sono richieste le seguenti informazioni aggiuntive:
@@ -122,10 +119,10 @@ Per il database sono richieste le seguenti informazioni aggiuntive:
 
 - *Nome del database*: questo nome è stato definito durante la creazione del database nello[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
-- *Porta*: inserisci sistematicamente il numero **3306** (porta di default) per un database incluso con il tuo hosting Web. Per creare un database su un'istanza Web Cloud, consulta [questa guida](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/).
+- *Porta*: inserisci sistematicamente il numero **3306** (porta di default) per un database incluso con il tuo hosting Web. Per creare un database su un'istanza Web Cloud, consulta [questa guida](/pages/web/clouddb/starting_with_clouddb).
 
 - *Username*: è identico al nome del database se utilizzi un database incluso con il tuo hosting Web.
-Per i database creati su un'offerta Web Cloud Database, consulta le informazioni indicate in [questa guida](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/).
+Per i database creati su un'offerta Web Cloud Database, consulta le informazioni indicate in [questa guida](/pages/web/clouddb/starting_with_clouddb).
 
 - *Password*: ti è stato inviato via email durante la creazione del database. È possibile che tu l'abbia modificato nel frattempo.
 
@@ -135,9 +132,9 @@ Una volta inseriti tutti i dati, clicca su `Continua`{.action}.
 >
 > Se le informazioni fornite non sono corrette, l'installazione non verrà completata. Per evitare questo problema, ti consigliamo di testare la connessione al tuo database.
 > 
-> Per recuperare le credenziali di accesso al tuo database incluso nel tuo hosting Web, consulta [questa guida](https://docs.ovh.com/it/hosting/creare-database/).
+> Per recuperare le credenziali di accesso al tuo database incluso nel tuo hosting Web, consulta [questa guida](/pages/web/hosting/sql_create_database).
 >
-> Per recuperare le credenziali di accesso al database creato su un'istanza Web Cloud Databases, consulta [questa guida](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/).
+> Per recuperare le credenziali di accesso al database creato su un'istanza Web Cloud Databases, consulta [questa guida](/pages/web/clouddb/starting_with_clouddb).
 >
 
 ##### Configura il modulo
@@ -146,7 +143,7 @@ Per configurare il modulo, inserisci queste informazioni:
 
 - *Nome o email dell'amministratore:* identificativo che utilizzerai per accedere all'interfaccia di gestione del tuo CMS (Back Office).
 *password:* password per accedere all'interfaccia di gestione del tuo CMS.
-- *dominio:* dominio con cui vuoi installare il tuo CMS. Se necessario, consulta la guida su [Come condividere un hosting Web tra più siti](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/).
+- *dominio:* dominio con cui vuoi installare il tuo CMS. Se necessario, consulta la guida su [Come condividere un hosting Web tra più siti](/pages/web/hosting/multisites_configure_multisite).
 - *lingua:* lingua in cui sarà installato il CMS.
 - *percorso di installazione:* è inserito automaticamente nella selezione del dominio. completandolo con sottocartelle (per utenti esperti).
 
@@ -189,13 +186,13 @@ Per maggiori informazioni sulle funzionalità del tuo CMS, contatta il produttor
 
 [Scegli il CMS per il tuo sito Web](https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/){.external}
 
-[Ospitare più siti su uno stesso hosting](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/){.external}
+[Ospitare più siti su uno stesso hosting](/pages/web/hosting/multisites_configure_multisite){.external}
 
-[Gestire un database da un hosting condiviso](https://docs.ovh.com/it/hosting/gestisci_un_database_dal_tuo_hosting_condiviso/){.external}
+[Gestire un database da un hosting condiviso](/pages/web/hosting/sql_create_database){.external}
 
-[Gestire il vostro CMS](https://docs.ovh.com/it/hosting/1-click-module-management/)
+[Gestire il vostro CMS](/pages/web/hosting/cms_manage_1_click_module)
 
-[Disinstallare il tuo CMS](https://docs.ovh.com/it/hosting/1-click-module-management/#step-3-elimina-il-tuo-modulo)
+[Disinstallare il tuo CMS](/pages/web/hosting/cms_manage_1_click_module#step-3-elimina-il-tuo-modulo)
 
 Scopri la nostra soluzione [Web Cloud Database](https://www.ovh.it/cloud/cloud-databases/){.external}
 

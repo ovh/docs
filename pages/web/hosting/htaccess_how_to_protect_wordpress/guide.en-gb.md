@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Using the htaccess file with WordPress"
-slug: use-htaccess-with-wordpress
 excerpt: "Find out how to secure your WordPress blog with one or more htaccess files"
-section: 'Tutorials'
-order: 022
 updated: 2023-06-22
 ---
 
@@ -26,7 +23,7 @@ This tutorial will show you how to configure certain features of your web hostin
 ## Requirements
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) with WordPress installed
-- Using an FTP client such as [FileZilla](https://filezilla-project.org/), as explicated in our [FileZilla tutorial](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/)
+- Using an FTP client such as [FileZilla](https://filezilla-project.org/), as explicated in our [FileZilla tutorial](/pages/web/hosting/ftp_filezilla_user_guide)
 
 **.htaccess** files can be created and modified with text editors, for example:
 
@@ -116,7 +113,7 @@ There are several ways to modify the settings that will change the server's beha
 
 > [!warning]
 >
-> Before following the steps below, you must redirect HTTP requests to HTTPS. To do this, follow the instructions in our guide [“Activating HTTPS on your website with an SSL certificate”](https://docs.ovh.com/gb/en/hosting/activate-https-website-ssl/#step-1-activate-the-ssl-certificate-on-the-web-hosting-plan).
+> Before following the steps below, you must redirect HTTP requests to HTTPS. To do this, follow the instructions in our guide [“Activating HTTPS on your website with an SSL certificate”](/pages/web/hosting/ssl-activate-https-website#step-1-activate-the-ssl-certificate-on-the-web-hosting-plan).
 
 ### Prevent the display of directories and subdirectories
 
@@ -151,7 +148,7 @@ If you have identified a malicious IP address, enter the following line in your 
 
 Replace `xxx.xxx.xxx.xxx` with the IP address to block.
 
-For more information on this subject, please refer to our [guide on IP access restriction via the .htaccess file](https://docs.ovh.com/gb/en/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+For more information on this subject, please refer to our [guide on IP access restriction via the .htaccess file](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
 #### Block access to the wp-admin directory (or other directories) by IP
 

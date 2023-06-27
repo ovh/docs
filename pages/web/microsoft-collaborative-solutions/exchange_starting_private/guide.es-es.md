@@ -1,9 +1,6 @@
 ---
 title: 'Primeros pasos con el servidor Private Exchange'
-slug: exchange_primeros_pasos_con_un_servidor_private
 excerpt: 'Cómo configurar el servidor Private Exchange'
-section: 'Primeros pasos con Exchange'
-order: 02
 updated: 2020-04-17
 ---
 
@@ -66,7 +63,7 @@ Tras validar este paso, recibirá un mensaje indicándole que la configuración 
 
 Si su dominio no está gestionado con la misma cuenta de cliente o no está alojado en OVHcloud, recibirá un segundo mensaje de correo electrónico con toda la información necesaria para configurar manualmente la zona DNS.
 
-El mensaje de correo electrónico incluye las direcciones IPv4 e IPv6 de su plataforma. Introduzca estas direcciones en la zona DNS del subdominio que creó previamente en [el paso 2](./#paso-2-inicializacion-de-su-plataforma){.external}, con los formatos respectivos de un registro de tipo «A» y de un registro de tipo «AAAA». Para obtener más información en cuanto a un nombre de dominio de OVHcloud, consulte nuestra guía [«Editar una zona DNS de OVH»](../../domains/web_hosting_como_editar_mi_zona_dns/).
+El mensaje de correo electrónico incluye las direcciones IPv4 e IPv6 de su plataforma. Introduzca estas direcciones en la zona DNS del subdominio que creó previamente en [el paso 2](./#paso-2-inicializacion-de-su-plataforma){.external}, con los formatos respectivos de un registro de tipo «A» y de un registro de tipo «AAAA». Para obtener más información en cuanto a un nombre de dominio de OVHcloud, consulte nuestra guía [«Editar una zona DNS de OVH»](/pages/web/domains/dns_zone_edit).
 
 
 
@@ -94,12 +91,12 @@ Una vez que el servidor esté listo y disponible, recibirá un mensaje de correo
 
 > **\[xx-11111-ovh] ¡Su servicio Private Exchange 20_xxx_ está listo!**
 
-Para añadir su primer nombre de dominio a su plataforma y configurar las cuentas, consulte nuestra guía [«Añadir un dominio a un servicio Exchange»](../anadir-dominio-exchange/) 
+Para añadir su primer nombre de dominio a su plataforma y configurar las cuentas, consulte nuestra guía [«Añadir un dominio a un servicio Exchange»](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain) 
 
 ## Más información
 
-[Editar una zona DNS de OVHcloud](../../domains/web_hosting_como_editar_mi_zona_dns/)
+[Editar una zona DNS de OVHcloud](/pages/web/domains/dns_zone_edit)
 
-[Añadir un dominio a un servicio Exchange](../anadir-dominio-exchange/) 
+[Añadir un dominio a un servicio Exchange](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain) 
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

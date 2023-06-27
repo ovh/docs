@@ -1,8 +1,6 @@
 ---
 title: 'Rozpoznawanie e-maili typu phishing'
-slug: oszustwa-phishing
 excerpt: 'Jak rozpoznać e-mail typu phishing i jak postępować, jeśli kliknąłeś w link wyłudzający informacje?'
-section: Bezpieczeństwo
 updated: 2020-10-12
 ---
 

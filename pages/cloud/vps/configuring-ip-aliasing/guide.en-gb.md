@@ -1,8 +1,6 @@
 ---
 title: Configuring IP aliasing
-slug: network-ipaliasing-vps
 excerpt: Find out how to add Additional IP addresses to your VPS configuration
-section: 'Network management'
 updated: 2022-10-06
 ---
 
@@ -289,7 +287,7 @@ Back in the section "IP Addresses", verify that the Additional IP address was ad
 
 ### Troubleshooting
 
-First, restart your server from the command line or its GUI. If you are still unable to establish a connection from the public network to your alias IP and suspect a network problem, you need to reboot the server in [rescue mode](../rescue/). Then you can set up the Additional IP address directly on the server.
+First, restart your server from the command line or its GUI. If you are still unable to establish a connection from the public network to your alias IP and suspect a network problem, you need to reboot the server in [rescue mode](/pages/cloud/vps/rescue). Then you can set up the Additional IP address directly on the server.
 
 Once you are connected to your server via SSH, enter the following command:
 
@@ -301,6 +299,6 @@ To test the connection, simply ping your Additional IP from the outside. If it r
  
 ## Go further
 
-[Activating Rescue Mode on VPS](../rescue/)
+[Activating Rescue Mode on VPS](/pages/cloud/vps/rescue)
 
 Join our community of users on <https://community.ovh.com/en/>.

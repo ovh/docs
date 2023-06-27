@@ -1,8 +1,6 @@
 ---
 title: Gérer mes factures OVHcloud
-slug: gerer-factures-ovh
 excerpt: Découvrez comment gérer vos factures et les paiements liés à celles-ci
-section: Facturation
 updated: 2022-05-12
 ---
 
@@ -24,7 +22,7 @@ OVHcloud met à votre disposition un espace vous permettant de consulter, gérer
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) en tant que [contact facturation](https://docs.ovh.com/fr/customer/gestion-des-contacts/) de votre service.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) en tant que [contact facturation](/pages/account/customer/managing_contacts) de votre service.
 
 ## En pratique
 
@@ -114,21 +112,21 @@ Afin de procéder au règlement de vos factures en attente de paiement, il vous 
 
 ![Paiement de la dette](images/pay_debt.png){.thumbnail}
 
-Un [bon de commande de régularisation](https://docs.ovh.com/fr/billing/gerer-ses-commandes-ovh/#le-bon-de-commande) sera alors créé. Une fois le paiement effectué, la situation sera régularisée.
+Un [bon de commande de régularisation](/pages/account/billing/managing_ovh_orders#le-bon-de-commande) sera alors créé. Une fois le paiement effectué, la situation sera régularisée.
 
 > [!primary]
 >
-> Si vous souhaitez régler une facture pour le compte d'une administration publique, suivez les instructions de ce [guide](https://docs.ovh.com/fr/billing/reglement-par-mandat-administratif/).
+> Si vous souhaitez régler une facture pour le compte d'une administration publique, suivez les instructions de ce [guide](/pages/account/billing/mandat_administratif).
 >
 
 #### Demander l'annulation d'une facture
 
 > [!primary]
 >
-> Pour demander la résiliation de votre service à échéance, suivez les instructions de ce [guide](https://docs.ovh.com/fr/billing/how-to-cancel-your-services/).
+> Pour demander la résiliation de votre service à échéance, suivez les instructions de ce [guide](/pages/account/billing/how_to_cancel_services).
 >
 
-Si vous avez reçu une facture que vous ne considérez pas comme légitime et souhaitez en demander le remboursement, ou faire valoir votre [droit de rétractation](https://docs.ovh.com/fr/billing/gerer-ses-commandes-ovh/#appliquer-le-droit-de-retractation), vous pouvez effectuer une réclamation via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sous réserve de l'application de nos [Conditions Générales de Service](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-fr.pdf).
+Si vous avez reçu une facture que vous ne considérez pas comme légitime et souhaitez en demander le remboursement, ou faire valoir votre [droit de rétractation](/pages/account/billing/managing_ovh_orders#appliquer-le-droit-de-retractation), vous pouvez effectuer une réclamation via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sous réserve de l'application de nos [Conditions Générales de Service](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-fr.pdf).
 <br> Cliquez en haut à droite de votre écran sur votre nom, puis sur `Créer un ticket`{.action}.
 
 ### Suivre vos paiements
@@ -146,9 +144,9 @@ Depuis cet espace, vous pouvez également exporter vos justificatifs de paiement
 
 ## Aller plus loin
 
-[Gérer le renouvellement de mes services](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/)
+[Gérer le renouvellement de mes services](/pages/account/billing/how_to_use_automatic_renewal)
 
-[Gérer mes moyens de paiement](https://docs.ovh.com/fr/billing/manage-payment-methods/)
+[Gérer mes moyens de paiement](/pages/account/billing/manage-payment-methods)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 

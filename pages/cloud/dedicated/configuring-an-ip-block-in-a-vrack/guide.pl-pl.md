@@ -1,8 +1,6 @@
 ---
 title: 'Konfiguracja bloku IP w sieci vRack'
-slug: dodawanie-lub-usuwanie-bloku-ip-vrack
 excerpt: 'Dowiedz się, jak skonfigurować blok publicznych adresów IP w sieci vRack'
-section: vRack
 updated: 2022-07-26
 ---
 
@@ -148,10 +146,10 @@ Zrestartuj serwer, aby zastosować wprowadzone zmiany.
 
 ## Sprawdź również
 
-[Konfiguracja kilku serwerów dedykowanych w sieci vRack](https://docs.ovh.com/pl/dedicated/konfiguracja-kilku-serwerow-dedykowanych-vrack/){.external}
+[Konfiguracja kilku serwerów dedykowanych w sieci vRack](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server){.external}
 
-[Tworzenie kilku sieci VLAN w prywatnej sieci vRack](https://docs.ovh.com/pl/dedicated/tworzenie-vlan-vrack/){.external}
+[Tworzenie kilku sieci VLAN w prywatnej sieci vRack](/pages/cloud/dedicated/creating-multiple-vlans-in-a-vrack){.external}
 
-[Konfiguracja sieci vRack między Public Cloud a serwerem dedykowanym](https://docs.ovh.com/pl/dedicated/konfiguracja-vrack-pci-serwer-dedykowany/){.external}
+[Konfiguracja sieci vRack między Public Cloud a serwerem dedykowanym](/pages/cloud/dedicated/configuring-the-vrack-between-the-public-cloud-and-a-dedicated-server){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

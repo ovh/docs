@@ -1,9 +1,6 @@
 ---
 title: 'Transferir un dominio .uk a OVHcloud'
-slug: web_hosting_transferencia_de_un_dominio_couk
 excerpt: 'En esta guía encontrará información relativa a la transferencia de un dominio .uk o asociado a OVHcloud'
-section: Operaciones en los dominios
-order: 04
 updated: 2022-10-19
 ---
 
@@ -30,9 +27,9 @@ La transferencia de un dominio .uk (o asimilado) debe respetar un procedimiento 
 >
 > Si el dominio que está siendo modificado se encuentra registrado en OVHcloud, la transferencia entrante de dominio no es el procedimiento adecuado. Este procedimiento solo se aplica al cambio de dominio registrado (OVHcloud).
 >
-> Para transferir la gestión de su dominio a otra cuenta de cliente de OVHcloud, el método adecuado es un *cambio de contactos*. El procedimiento se describe en [esta guía](https://docs.ovh.com/es/customer/gestion-de-los-contactos/).
+> Para transferir la gestión de su dominio a otra cuenta de cliente de OVHcloud, el método adecuado es un *cambio de contactos*. El procedimiento se describe en [esta guía](/pages/account/customer/managing_contacts).
 >
-Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** de cambiar los contactos del dominio. Para ello, siga las indicaciones que le indicamos en la guía sobre el [cambio de propietario de los dominios](https://docs.ovh.com/es/domains/cambio-propietario-dominio/).
+Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** de cambiar los contactos del dominio. Para ello, siga las indicaciones que le indicamos en la guía sobre el [cambio de propietario de los dominios](/pages/web/domains/trade_domain).
 >
 
 ## Requisitos
@@ -101,6 +98,6 @@ La transferencia es gratuita, por lo que la fecha de expiración del dominio tra
 
 ## Más información <a name="gofurther"></a>
 
-[Transferir un dominio a OVHcloud](https://docs.ovh.com/es/domains/transferir-un-dominio-generico/)
+[Transferir un dominio a OVHcloud](/pages/web/domains/transfer_incoming_generic_domain)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

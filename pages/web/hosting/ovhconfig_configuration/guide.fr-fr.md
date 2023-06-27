@@ -1,9 +1,6 @@
 ---
 title: 'Configurer le fichier .ovhconfig de son hébergement web'
-slug: configurer-fichier-ovhconfig
 excerpt: 'Découvrez le fichier .ovhconfig et apprenez à le modifier'
-section: "Configuration de l'hébergement"
-order: 03
 updated: 2019-01-03
 ---
 
@@ -28,7 +25,7 @@ La modification du fichier .ovhconfig peut se réaliser de deux manières :
 
 - **en modifiant manuellement le fichier .ovhconfig** : cette solution est technique et nécessite d'être connecté à votre espace de stockage. Dans cette documentation, nous aborderons exclusivement cette méthode ;
 
-- **via un assistant de configuration depuis votre espace client OVHcloud** : cette solution est moins technique et nécessite d'être connecté à votre espace client, où vous pourrez choisir les changements à réaliser. Reportez-vous aux instructions décrites dans notre documentation [« Modifier la configuration de son hébergement web »](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/).
+- **via un assistant de configuration depuis votre espace client OVHcloud** : cette solution est moins technique et nécessite d'être connecté à votre espace client, où vous pourrez choisir les changements à réaliser. Reportez-vous aux instructions décrites dans notre documentation [« Modifier la configuration de son hébergement web »](/pages/web/hosting/ovhconfig_modify_system_runtime).
 
 Poursuivez la lecture de cette documentation si vous souhaitez modifier manuellement le fichier .ovhconfig. 
 
@@ -36,9 +33,9 @@ Poursuivez la lecture de cette documentation si vous souhaitez modifier manuelle
 
 #### Étape 1 : se connecter à l'espace de stockage
 
-Munissez-vous de votre identifiant FTP principal, de son mot de passe, ainsi que de l'adresse du serveur FTP. Une fois tous ces éléments en votre possession, connectez-vous à votre espace de stockage. Aidez-vous de la documentation intitulée « [Se connecter à l’espace de stockage](../mettre-mon-site-en-ligne/#2-se-connecter-a-lespace-de-stockage) » si cela est nécessaire.
+Munissez-vous de votre identifiant FTP principal, de son mot de passe, ainsi que de l'adresse du serveur FTP. Une fois tous ces éléments en votre possession, connectez-vous à votre espace de stockage. Aidez-vous de la documentation intitulée « [Se connecter à l’espace de stockage](/pages/web/hosting/hosting_how_to_get_my_website_online#2-se-connecter-a-lespace-de-stockage) » si cela est nécessaire.
 
-**Si vous n'êtes plus en possession de ces informations**, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, puis cliquez sur `Hébergements`{.action}. Choisissez le nom de l'hébergement concerné et positionnez-vous enfin sur l'onglet `FTP - SSH`{.action}. Vous y retrouverez les informations vous permettant de vous connecter. Concernant le mot de passe de l'utilisateur FTP, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](../modifier-mot-de-passe-utilisateur-ftp/) si cela est nécessaire.
+**Si vous n'êtes plus en possession de ces informations**, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, puis cliquez sur `Hébergements`{.action}. Choisissez le nom de l'hébergement concerné et positionnez-vous enfin sur l'onglet `FTP - SSH`{.action}. Vous y retrouverez les informations vous permettant de vous connecter. Concernant le mot de passe de l'utilisateur FTP, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](/pages/web/hosting/ftp_change_password) si cela est nécessaire.
 
 ![ovhconfig](images/ovhconfig-step1.png){.thumbnail}
 
@@ -75,7 +72,7 @@ Personnalisez les valeurs des variables selon la configuration que vous souhaite
 |app.engine.version|Permet de définir la version de PHP utilisée par l'hébergement parmi [celles qu'OVHcloud propose](https://www.ovhcloud.com/fr/web-hosting/uc-programming-language/){.external}. Renseignez la version de votre choix.|
 |http.firewall|Permet d'activer ou de désactiver le [firewall fourni avec les hébergements web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/options/){.external}. Renseignez « security » pour l'activer ou « none » pour le désactiver.|
 |environment|Permet de gérer le comportement du cache des fichiers statiques de votre site internet ainsi que le traitement des erreurs PHP. Renseignez « production » pour maximiser la mise en cache et masquer les erreurs PHP ou « development » pour qu'aucun cache ne soit appliqué et que les erreurs PHP s'affichent.|
-|container.image|Permet de modifier l'environnement d'exécution utilisé par l'hébergement. Renseignez le moteur de votre choix. Vous pouvez les retrouver depuis notre documentation : [« Découvrir les configurations disponibles »](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#decouvrir-les-configurations-disponibles){.external}.|
+|container.image|Permet de modifier l'environnement d'exécution utilisé par l'hébergement. Renseignez le moteur de votre choix. Vous pouvez les retrouver depuis notre documentation : [« Découvrir les configurations disponibles »](/pages/web/hosting/ovhconfig_modify_system_runtime#decouvrir-les-configurations-disponibles){.external}.|
 
 > [!warning]
 >

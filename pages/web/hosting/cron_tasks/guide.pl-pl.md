@@ -1,9 +1,6 @@
 ---
 title: Tworzenie automatycznych zadań (CRON) na Twoim hostingu
 excerpt: Dowiedz się, jak utworzyć zadania CRON do automatyzacji zaplanowanych zadań na hostingu
-slug: hosting_www_automatyczne_zadania_cron
-section: 'CRON -  automatyzacja zadań'
-order: 01
 updated: 2022-12-01
 ---
 
@@ -109,7 +106,7 @@ Zawsze korzystaj z bezwzględnych ścieżek dostępu do plików skryptów. Stał
 
 W \[logach] Twojego hostingu WWW, które są dostępne w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, zobaczysz kategorię logów zatytułowaną "CRON".
 
-Więcej informacji znajdziesz w przewodniku ["Sprawdź statystyki i logi strony zainstalowanej na hostingu"](../hosting_statystyki_i_logi_strony/).
+Więcej informacji znajdziesz w przewodniku ["Sprawdź statystyki i logi strony zainstalowanej na hostingu"](/pages/web/hosting/logs_and_statistics).
 
 ##### **Przykład logów**
 
@@ -150,8 +147,8 @@ Więcej informacji znajdziesz w przewodniku ["Sprawdź statystyki i logi strony 
 
 ## Sprawdź również
 
-[Konfiguracja pliku .ovhconfig w hostingu](../konfiguracja-pliku-ovhconfig/)
+[Konfiguracja pliku .ovhconfig w hostingu](/pages/web/hosting/ovhconfig_configuration)
 
-[Korzystanie z dostępu SSH do hostingu](../hosting_www_ssh_na_hostingu/)
+[Korzystanie z dostępu SSH do hostingu](/pages/web/hosting/ssh_on_webhosting)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

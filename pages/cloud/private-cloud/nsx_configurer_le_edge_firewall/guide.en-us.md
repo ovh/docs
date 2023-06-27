@@ -1,9 +1,6 @@
 ---
 title: NSX-v Edge Firewall Configuration
-slug: nsx-edge-firewall-configuration
 excerpt: creating firewall rules  
-section: NSX-v
-order: 04
 updated: 2021-11-25
 ---
 
@@ -19,7 +16,7 @@ The NSX firewall service restricts or allows network traffic based on rules appl
 
 - being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/) to receive login credentials
 - a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we))
-- a deployed [NSX Edge Services Gateway](https://docs.ovh.com/us/en/private-cloud/how-to-deploy-an-nsx-edge-gateway/)
+- a deployed [NSX Edge Services Gateway](/pages/cloud/private-cloud/nsx_deploying_edge_gateway)
 
 ## Instructions
 

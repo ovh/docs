@@ -1,9 +1,6 @@
 ---
 title: "Changing the password for a Web Hosting plan’s database"
-slug: change-password-database
 excerpt: Find out how to change the password for a database created as part of a Web Hosting plan
-section: Databases
-order: 02
 updated: 2022-01-26
 ---
 
@@ -13,15 +10,15 @@ updated: 2022-01-26
 
 Most websites use a **database** to store their articles, comments, or users' email addresses.
 
-You can connect to this database using a **configuration file** contained in the [file storage space](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting/) on your Web Hosting plan. It contains credentials that allows your website to access its **database server**.
+You can connect to this database using a **configuration file** contained in the [file storage space](/pages/web/hosting/ftp_connection) on your Web Hosting plan. It contains credentials that allows your website to access its **database server**.
 
 The password change for a database must therefore always be carried out in two places:
 
-- In your website’s [configuration file](https://docs.ovh.com/ie/en/hosting/1-click-module-management/#step-1-identify-the-database-linked-to-your-module) via the [FTP space on your Web Hosting plan](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting/).
+- In your website’s [configuration file](/pages/web/hosting/cms_manage_1_click_module#step-1-identify-the-database-linked-to-your-module) via the [FTP space on your Web Hosting plan](/pages/web/hosting/ftp_connection).
 
 - **And** on the server that contains their database, via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
-Until this change is made **in both locations**, your site will display a "[database connection error](https://docs.ovh.com/ie/en/hosting/database-frequent-errors/#error-establishing-a-database-connection)".
+Until this change is made **in both locations**, your site will display a "[database connection error](/pages/web/hosting/diagnosis_database_errors#error-establishing-a-database-connection)".
 
 For this reason, if you would like to change your database password, you will need to carry out  **all of the operations** listed in this guide. If you have any doubts about how to proceed, contact your webmaster or contact a [specialised service provider](https://partner.ovhcloud.com/en-ie/directory/).
 
@@ -45,7 +42,7 @@ There are four steps to changing your website’s database password:
 - An OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - A [database associated with your hosting](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) or a [Web Cloud Databases](https://www.ovh.ie/cloud/cloud-databases/)
-- FTP login details to log in to your [hosting’s storage space](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting/)
+- FTP login details to log in to your [hosting’s storage space](/pages/web/hosting/ftp_connection)
 
 ## Instructions
 
@@ -59,9 +56,9 @@ Then click on the `FTP-SSH`{.action} tab and go to the space containing your web
 
 > [!primary]
 >
-> If you would like to change the password on your FTP space, please refer to this [guide](https://docs.ovh.com/ie/en/hosting/modify-ftp-user-password/).
+> If you would like to change the password on your FTP space, please refer to this [guide](/pages/web/hosting/ftp_change_password).
 >
-> If you would like to use another method to log in, please refer to this [guide](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting/).
+> If you would like to use another method to log in, please refer to this [guide](/pages/web/hosting/ftp_connection).
 >
 
 Open the `Root folder` identified previously.
@@ -114,7 +111,7 @@ In this section of the OVHcloud Control Panel, go to the `Users and rights`{.act
 
 > [!primary]
 >
-> For more information on password management best practices, follow the instructions in [this guide](https://docs.ovh.com/ie/en/customer/manage-password/).
+> For more information on password management best practices, follow the instructions in [this guide](/pages/account/customer/manage-ovh-password).
 >
 
 Choose the new password for your database and save it. It must meet the following conditions:
@@ -225,11 +222,11 @@ In the window that pops up, enter your database’s new password (defined in [st
 
 ## Go further <a name="gofurther"></a>
 
-[FileZilla software usage with your hosting](https://docs.ovh.com/ie/en/hosting/web_hosting_filezilla_user_guide/)
+[FileZilla software usage with your hosting](/pages/web/hosting/ftp_filezilla_user_guide)
 
-[Change your account password](https://docs.ovh.com/ie/en/customer/manage-password/)
+[Change your account password](/pages/account/customer/manage-ovh-password)
 
-[Troubleshoot common database errors](https://docs.ovh.com/ie/en/hosting/database-frequent-errors/)
+[Troubleshoot common database errors](/pages/web/hosting/diagnosis_database_errors)
 
 For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
 

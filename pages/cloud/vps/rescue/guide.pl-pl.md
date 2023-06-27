@@ -1,8 +1,6 @@
 ---
 title: Uruchamianie i korzystanie z trybu Rescue na serwerze VPS
-slug: rescue
 excerpt: Jak włączyć i korzystać z trybu Rescue na serwerze VPS
-section: Diagnostyka i tryb Rescue
 updated: 2022-05-02
 ---
 
@@ -116,8 +114,8 @@ Po zakończeniu operacji w trybie Rescue uruchom ponownie serwer VPS w trybie "n
 
 ## Sprawdź również
 
-[Zmiana hasła root na serwerze VPS](../root-password/)
+[Zmiana hasła root na serwerze VPS](/pages/cloud/vps/root_password)
 
-[Wprowadzenie do protokołów SSH](../../dedicated/ssh-wprowadzenie/)
+[Wprowadzenie do protokołów SSH](/pages/cloud/dedicated/ssh_introduction)
 
 Dołącz do społeczności naszych użytkowników na <https://community.ovh.com/en/>.

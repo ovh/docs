@@ -1,9 +1,6 @@
 ---
 title: SVN
-slug: hosting_www_korzystanie_z_svn
 excerpt: Dowiedz się, jak korzystać z SVN przez SSH na Twoim hostingu
-section: FTP i SSH
-order: 09
 updated: 2021-01-06
 ---
 
@@ -29,13 +26,13 @@ SVN, który jest skrótem od "subwersji", jest systemem zarządzania wersjami.
 ## Wymagania
 
 - Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/) pozwalającego na połączenie SSH (**od oferty Pro**)
-- Logowanie przez SSH do hostingu (zapoznaj się z naszym przewodnikiem [Korzystanie z dostępu SSH do hostingu](../hosting_www_ssh_na_hostingu/)
+- Logowanie przez SSH do hostingu (zapoznaj się z naszym przewodnikiem [Korzystanie z dostępu SSH do hostingu](/pages/web/hosting/ssh_on_webhosting)
 
 ## W praktyce
 
 ### Tworzenie zgłoszenia
 
-Po zalogowaniu się przez [SSH na Twoim hostingu](../hosting_www_ssh_na_hostingu/){.external} utwórz katalog główny depozytów SVN, a następnie wpłata.
+Po zalogowaniu się przez [SSH na Twoim hostingu](/pages/web/hosting/ssh_on_webhosting){.external} utwórz katalog główny depozytów SVN, a następnie wpłata.
 
 W tym celu wystarczy wpisać polecenie:
 
@@ -63,7 +60,7 @@ Aby uzyskać katalogi, należy je uzyskać zgodnie z poniższym obrazkiem:
 
 Przed kontynuowaniem operacji utwórz parę kluczy SSH z poziomu komputera, którego będziesz używał do łączenia się z repozytorium SVN.
 
-Zapoznaj się z przewodnikiem [Tworzenie kluczy SSH](https://docs.ovh.com/pl/public-cloud/tworzenie-kluczy-ssh/). Nie musisz postępować zgodnie z instrukcjami etapu [Zaimportuj klucz SSH do Panelu klienta OVHcloud](https://docs.ovh.com/pl/public-cloud/tworzenie-kluczy-ssh/#importowanie-klucza-ssh-do-panelu-klienta-ovhcloud) w tym przewodniku.
+Zapoznaj się z przewodnikiem [Tworzenie kluczy SSH](/pages/platform/public-cloud/public-cloud-first-steps#krok-1-utworzenie-kluczy-ssh/). Nie musisz postępować zgodnie z instrukcjami etapu [Zaimportuj klucz SSH do Panelu klienta OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#krok-1-utworzenie-kluczy-ssh/#importowanie-klucza-ssh-do-panelu-klienta-ovhcloud) w tym przewodniku.
 
 ### Dodanie klucza publicznego do hostingu
 
@@ -88,7 +85,7 @@ Postępuj zgodnie z poprzednio utworzonym kluczem, wszystko w tej samej linii.
 > Zastąp "/home.XXX/loginFTP" i "john" Twoimi identyfikatorami SSH.
 > Aby dowiedzieć się, jakie liczby należy użyć do zastąpienia "/home.XXX/loginFTP", wpisz komendę "pwd" przez SSH.
 >
-> Informacje te znajdziesz również w przewodniku [Korzystanie z dostępu SSH do hostingu](../hosting_www_ssh_na_hostingu/){.external}.
+> Informacje te znajdziesz również w przewodniku [Korzystanie z dostępu SSH do hostingu](/pages/web/hosting/ssh_on_webhosting){.external}.
 > 
 
 ![hosting](images/3080.png){.thumbnail}
@@ -154,6 +151,6 @@ svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 
 ## Sprawdź również
 
-[Korzystanie z dostępu SSH do hostingu](../hosting_www_ssh_na_hostingu/){.external}
+[Korzystanie z dostępu SSH do hostingu](/pages/web/hosting/ssh_on_webhosting){.external}
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

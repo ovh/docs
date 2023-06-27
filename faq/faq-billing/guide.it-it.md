@@ -16,7 +16,7 @@ La lista dei contatti associati ai servizi sono indicati nella sezione `I tuoi c
 
 #### Consigli e suggerimenti
 
-Per maggiori informazione sulla gestione dei contatti, consulta la guida [Gestire i contatti dei servizi](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/).
+Per maggiori informazione sulla gestione dei contatti, consulta la guida [Gestire i contatti dei servizi](/pages/account/customer/managing_contacts).
 
 ### Come modificare i dati di fatturazione?
 
@@ -33,7 +33,7 @@ Per alcune soluzioni (come domini, hosting Web, VPS e server dedicati) è possib
 
 Per consultare lo stato dei servizi e gestire il loro rinnovo, accedi alla sezione `I tuoi servizi`{.action} dello Spazio Cliente.
 Per effettuare il rinnovo manuale, accedi alla pagina <https://www.ovh.it/cgi-bin/order/renew.cgi>
-Per maggiori informazioni, consulta la guida [Gestire il rinnovo dei servizi](https://docs.ovh.com/it/billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/).
+Per maggiori informazioni, consulta la guida [Gestire il rinnovo dei servizi](/pages/account/billing/how_to_use_automatic_renewal).
 
 ### Come attivare il rinnovo automatico?
 
@@ -42,7 +42,7 @@ Accedi allo Spazio Cliente e, nel menu di scelta rapida nella parte destra dell�
 #### Consigli e suggerimenti
 
 Prima di attivare il rinnovo automatico ricordati di impostare un metodo di pagamento predefinito: in caso di mancato pagamento i tuoi servizi verranno sospesi dopo 7 giorni.
-Per maggiori informazioni, consulta la guida [Gestire il rinnovo dei servizi](https://docs.ovh.com/it/billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/).
+Per maggiori informazioni, consulta la guida [Gestire il rinnovo dei servizi](/pages/account/billing/how_to_use_automatic_renewal).
 
 ### Come disattivare il rinnovo automatico?
 
@@ -129,7 +129,7 @@ Se invece i servizi risultano in rinnovo automatico ma non è stato salvato alcu
 #### Consigli e suggerimenti
 
 Se hai a disposizione l’identificativo OVHcloud e la password associata, puoi saldare la fattura direttamente dallo Spazio Cliente: nel menu di scelta rapida nella parte destra dell’interfaccia, clicca su `Fatture`{.action} e, nella nuova pagina, seleziona `Azioni`{.action} > `Salda subito l'importo dovuto`{.action}.
-Per maggiori informazioni su come eseguire questa operazione, consulta la guida [Gestire le fatture OVHcloud](https://docs.ovh.com/it/billing/gestire-fatture-ovhcloud/#salda-limporto-dovuto).
+Per maggiori informazioni su come eseguire questa operazione, consulta la guida [Gestire le fatture OVHcloud](/pages/account/billing/invoice_management#salda-limporto-dovuto).
 
 ### Come verificare lo stato dei pagamenti?
 
@@ -152,7 +152,7 @@ L’operazione diventerà effettiva al termine del periodo di validità o dell�
 #### Consigli e suggerimenti
 
 In caso di errore è possibile, a determinate condizioni, esercitare il diritto di recesso. Per maggiori informazioni consulta la domanda “Come annullare l’ordine?”.
-Per consultare la documentazione completa sulla disattivazione di tutti i nostri servizi, clicca [qui](https://docs.ovh.com/it/billing/how-to-cancel-your-services/).
+Per consultare la documentazione completa sulla disattivazione di tutti i nostri servizi, clicca [qui](/pages/account/billing/how_to_cancel_services).
 
 ### Come personalizzare il riferimento di un prodotto o servizio sulla fattura?
 
@@ -165,7 +165,7 @@ La fatturazione Public Cloud considera, da un lato, i servizi pagabili anticipat
 
 #### Consigli e suggerimenti
 
-Per maggiori informazioni, consulta la guida [Sistema di fatturazione dei servizi Cloud](https://docs.ovh.com/it/public-cloud/analizza_i_tuoi_consumi_e_gestisci_la_tua_fatturazione/).
+Per maggiori informazioni, consulta la guida [Sistema di fatturazione dei servizi Cloud](/pages/platform/public-cloud/analyze_billing).
 
 ### Come consultare il registro contabile?
 

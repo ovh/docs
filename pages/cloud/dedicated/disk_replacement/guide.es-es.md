@@ -1,8 +1,6 @@
 ---
 title: 'Sustituir un disco'
-slug: sustitucion-disco
 excerpt: 'Cómo saber si falla un disco y solicitar su sustitución'
-section: 'RAID y discos'
 updated: 2018-06-21
 ---
 
@@ -49,7 +47,7 @@ Ante cualquier notificación por correo electrónico o verificación por su part
 
 #### Servidor con RAID por software
 
-Si tiene un servidor con RAID por software, consulte la guía [RAID por software](https://docs.ovh.com/es/dedicated/raid-software/){.external} para identificar los discos instalados en su servidor.
+Si tiene un servidor con RAID por software, consulte la guía [RAID por software](/pages/cloud/dedicated/raid_soft){.external} para identificar los discos instalados en su servidor.
 
 Una vez que conozca la ruta de los discos, puede probarlos usando el comando `smartctl` del siguiente modo:
 
@@ -93,7 +91,7 @@ En este caso, el número de serie se indica en la siguiente línea:
 
 #### Servidor con RAID por hardware
 
-Si tiene un servidor con RAID por hardware, consulte la guía [RAID por hardware](https://docs.ovh.com/es/dedicated/raid-hardware/){.external} y siga el procedimiento correspondiente a su tipo de controlador RAID para conocer la ruta de acceso a los discos.
+Si tiene un servidor con RAID por hardware, consulte la guía [RAID por hardware](/pages/cloud/dedicated/raid_hard){.external} y siga el procedimiento correspondiente a su tipo de controlador RAID para conocer la ruta de acceso a los discos.
 
 Una vez que conozca la ruta de los discos, puede probarlos usando el comando `smartctl` del siguiente modo:
 
@@ -131,7 +129,7 @@ smartctl -a /dev/sgY
 
 #### Servidor con disco NVMe
 
-Si se trata de un disco NVMe, será necesario poner el servidor en modo [rescue-pro](https://docs.ovh.com/es/dedicated/modo_de_rescate/){.external}, que tiene la herramienta **nvme-cli** instalada por defecto.
+Si se trata de un disco NVMe, será necesario poner el servidor en modo [rescue-pro](/pages/cloud/dedicated/rescue_mode){.external}, que tiene la herramienta **nvme-cli** instalada por defecto.
 
 A continuación, utilice el comando `nvme list` para obtener el número de serie de los discos:
 
@@ -150,7 +148,7 @@ root@rescue:~# nvme list
 
 Si desea solicitar la sustitución de un disco, solo tiene que crear un tíquet a nuestro soporte desde el [área de cliente de OVHcloud](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. Para acelerar el proceso, deberá proporcionar la información obtenida en las pruebas anteriores. Son necesarios los siguientes datos:
 
-- **Número de serie del disco que quiera sustituir, así como de todos los demás discos**: Para obtener el número de serie del disco, consulte [esta guía](https://docs.ovh.com/es/dedicated/obtener-numero-de-serie-disco/){.external}. Si por alguna razón no fuera posible obtener el número de serie del disco, indíquelo en el tíquet y comunique el número de serie del disco o discos que no haya que sustituir. Como ya hemos dicho, es importante indicar el número de serie de todos los discos para evitar errores durante la operación.
+- **Número de serie del disco que quiera sustituir, así como de todos los demás discos**: Para obtener el número de serie del disco, consulte [esta guía](/pages/cloud/dedicated/how_to_find_hdd_serial){.external}. Si por alguna razón no fuera posible obtener el número de serie del disco, indíquelo en el tíquet y comunique el número de serie del disco o discos que no haya que sustituir. Como ya hemos dicho, es importante indicar el número de serie de todos los discos para evitar errores durante la operación.
 
 - **Fecha y hora de inicio de la intervención**: Deberá prever una breve interrupción del servicio, pero puede programar la intervención a cualquier hora del día o de la noche, los siete días de la semana.
 
@@ -207,16 +205,16 @@ MegaCli -PdLocate -stop -physdrv[E0:S0] -a0
 
 Si tiene un servidor con RAID por hardware, el RAID se reconstruirá por sí mismo si el **auto-rebuild** está activado (por defecto está activado). Tenga en cuenta que la resincronización puede tardar unos minutos y afectar al rendimiento de lectura-escritura del RAID.
 
-Si tiene un servidor con RAID por software, deberá reconstruir el RAID usted mismo. Para ello, no dude en consultar la guía [RAID por software](https://docs.ovh.com/es/dedicated/raid-software/){.external}.
+Si tiene un servidor con RAID por software, deberá reconstruir el RAID usted mismo. Para ello, no dude en consultar la guía [RAID por software](/pages/cloud/dedicated/raid_soft){.external}.
 
 
 ## Más información
 
-[RAID por software](https://docs.ovh.com/es/dedicated/raid-software/){.external}
+[RAID por software](/pages/cloud/dedicated/raid_soft){.external}
 
-[RAID por hardware](https://docs.ovh.com/es/dedicated/raid-hardware/){.external}
+[RAID por hardware](/pages/cloud/dedicated/raid_hard){.external}
 
-[Modo de rescate](https://docs.ovh.com/es/dedicated/modo_de_rescate/){.external}
+[Modo de rescate](/pages/cloud/dedicated/rescue_mode){.external}
 
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

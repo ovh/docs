@@ -1,9 +1,6 @@
 ---
 title: 'Utilização das contas de recurso'
 excerpt: Insert Here A Short Desc
-slug: exchange_20132016_utilizacao_das_contas_de_recurso
-section: Funcionalidades das contas Exchange
-order: 05
 updated: 2020-06-05
 ---
 

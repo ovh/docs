@@ -1,9 +1,6 @@
 ---
 title: 'Tworzenie odpowiedzi automatycznych w interfejsie OWA'
 excerpt: 'Dowiedz się, jak skonfigurować odpowiedzi automatyczne w interfejsie OWA'
-slug: exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa
-section: 'Funkcjonalności kont e-mail'
-order: 07
 updated: 2020-07-20
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Co zrobić w przypadku strony « Index of »?
 excerpt: Dowiedz się, jak przywrócić Twoją stronę WWW online, gdy wyświetla ona stronę « Index of »
-slug: diagnostyka-index-of
-section: Diagnostyka
-order: 07
 updated: 2023-05-04
 ---
 
@@ -42,7 +39,7 @@ Pojawi się strona **"Index of"** w przynajmniej jednym z następujących przypa
 
 ### Zrozumieć pochodzenie strony "Index of"
 
-Twoja domena jest zadeklarowana, aby uzyskać dostęp do katalogu docelowego ("`Katalog główny`") na serwerze [FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) na hostingu. Jest to w zakładce [MultiSite](/pages/web/hosting/multisites_configure_multisite) Twojego hostingu w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Twoja domena jest zadeklarowana, aby uzyskać dostęp do katalogu docelowego ("`Katalog główny`") na serwerze [FTP](/pages/web/hosting/ftp_connection) na hostingu. Jest to w zakładce [MultiSite](/pages/web/hosting/multisites_configure_multisite) Twojego hostingu w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 Strona **Index of** wskazuje, że dany katalog docelowy nie zawiera pliku **index.php** lub **index.html**. Plik ten stanowi "*punkt wejścia*" Twojej strony WWW. Nazwa tego pliku jest znormalizowana.
 
@@ -51,13 +48,13 @@ Aby wyświetlić Twoją stronę WWW, w części hostingu `Multisite`{.action} na
 
 > [!primary]
 >
-> Aby tymczasowo powiązać domenę z `Katalogiem głównym` niezawierającym pliku **index.php** lub **index.html**, możesz zablokować wyświetlanie listy katalogów na swojej stronie internetowej zgodnie z tym [tutorial](https://docs.ovh.com/pl/hosting/hosting_www_htaccess_-_inne_operacje/#blokada-listowania-zawartosci-katalogu). Możesz również chronić dostęp do Twoich katalogów za pomocą [hasła](https://docs.ovh.com/pl/hosting/hosting-htaccess-w-jaki-sposob-zabezpieczyc-dostep-dostepu-do-katalogu/).
+> Aby tymczasowo powiązać domenę z `Katalogiem głównym` niezawierającym pliku **index.php** lub **index.html**, możesz zablokować wyświetlanie listy katalogów na swojej stronie internetowej zgodnie z tym [tutorial](/pages/web/hosting/htaccess_what_else_can_you_do#blokada-listowania-zawartosci-katalogu). Możesz również chronić dostęp do Twoich katalogów za pomocą [hasła](/pages/web/hosting/htaccess_protect_directory_by_password).
 >
 > W przypadku trudności z wdrożeniem tej konfiguracji zalecamy skorzystanie z [pomocy specjalisty](https://partner.ovhcloud.com/pl/directory/). Zespół pomocy technicznej OVHcloud nie będzie w stanie udzielić wsparcia w przypadku jakichkolwiek zmian w wewnętrznym programowaniu Twojej strony WWW.
 
 ### Rozwiąż najczęstszy przypadek na stronie "Index of"
 
-Przeprowadziłeś pliki strony **mydomain.ovh** do katalogu `www` hostingu przez [FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/). Poza tym Twoja domena nie jest powiązana z tym folderem w kolumnie `Katalog główny` Twojej strony w opcji `MultiSite`{.action}.
+Przeprowadziłeś pliki strony **mydomain.ovh** do katalogu `www` hostingu przez [FTP](/pages/web/hosting/ftp_connection). Poza tym Twoja domena nie jest powiązana z tym folderem w kolumnie `Katalog główny` Twojej strony w opcji `MultiSite`{.action}.
 
 ![index_of_multisite](images/index_of_multisite.png){.thumbnail}
 
@@ -75,7 +72,7 @@ W oknie, które się wyświetla:
 
 > [!primary]
 >
-> Używanie katalogu `www` jako `Katalogu główny` nie jest w żadnym wypadku obowiązkowe. Możesz zainstalować Twoją stronę WWW w innym katalogu Twojego [serwera FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/).
+> Używanie katalogu `www` jako `Katalogu główny` nie jest w żadnym wypadku obowiązkowe. Możesz zainstalować Twoją stronę WWW w innym katalogu Twojego [serwera FTP](/pages/web/hosting/ftp_connection).
 >
 
 W następnym oknie kliknij `Zatwierdź`{.action}.
@@ -92,11 +89,11 @@ Upewnij się również, czy w Twoim katalogu docelowym znajduje się plik **inde
 
 ## Sprawdź również <a name="gofurther"></a>
 
-[Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia](https://docs.ovh.com/pl/hosting/bledy-frameworki-moduly-za-1-kliknieciem/)
+[Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia](/pages/web/hosting/diagnostic_errors_module1clic)
 
-[Usunięcie błędu "Strona nie została zainstalowana"](https://docs.ovh.com/pl/hosting/hosting_www_blad_dotyczacy_nie_zainstalowanej_strony/)
+[Usunięcie błędu "Strona nie została zainstalowana"](/pages/web/hosting/multisites_website_not_installed)
 
-[Instalacja kilku stron WWW na jednym hostingu](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/)
+[Instalacja kilku stron WWW na jednym hostingu](/pages/web/hosting/multisites_configure_multisite)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 

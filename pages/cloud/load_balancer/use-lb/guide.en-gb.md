@@ -1,8 +1,6 @@
 ---
 title: Managing your Load Balancer service via the Control Panel
-slug: using-iplb
 excerpt: An overview of the main features, and how to get started using the Load Balancer service from the Control Panel
-section: Getting started
 updated: 2017-12-01
 ---
 

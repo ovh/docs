@@ -1,9 +1,6 @@
 ---
 title: "Cosa fare in caso di errore « La connessione non è privata »?"
 excerpt: "Reagire in caso di messaggio di errore relativo alla sicurezza del tuo sito"
-slug: errore-sito-non-sicuro
-section: Diagnostica
-order: 03
 updated: 2021-07-08
 ---
 
@@ -15,7 +12,7 @@ updated: 2021-07-08
  
 ## Obiettivo <a name="objective"></a>
 
-In caso di inaccessibilità del sito, potrebbero comparire diversi messaggi di errore. Gli esempi che seguono indicano che il tuo hosting Web non contiene [certificato SSL](../i_certificati_ssl_sugli_hosting_web_ovh/) (se il tuo sito non mostra una delle anomalie descritte in questa guida, consulta la sezione [« Per saperne di più »](#gofurther)): 
+In caso di inaccessibilità del sito, potrebbero comparire diversi messaggi di errore. Gli esempi che seguono indicano che il tuo hosting Web non contiene [certificato SSL](/pages/web/hosting/ssl_on_webhosting) (se il tuo sito non mostra una delle anomalie descritte in questa guida, consulta la sezione [« Per saperne di più »](#gofurther)): 
 
 |Browser|Messaggio di errore interessato|
 |-|---|
@@ -35,7 +32,7 @@ In caso di inaccessibilità del sito, potrebbero comparire diversi messaggi di e
 
 ## Prerequisiti
 
-- Avere la gestione dei server e della [Zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#capire-il-concetto-di-dns) del tuo dominio
+- Avere la gestione dei server e della [Zona DNS](/pages/web/domains/dns_zone_edit#capire-il-concetto-di-dns) del tuo dominio
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
@@ -43,7 +40,7 @@ In caso di inaccessibilità del sito, potrebbero comparire diversi messaggi di e
 Per risolvere questa anomalia, è necessario:
 
 1. determinare l'hosting al quale è associato il tuo dominio, per intervenire sul server giusto;
-2. creare, attivare o rinnovare un [certificato SSL](../i_certificati_ssl_sugli_hosting_web_ovh/) per il tuo dominio sull'hosting in questione.
+2. creare, attivare o rinnovare un [certificato SSL](/pages/web/hosting/ssl_on_webhosting) per il tuo dominio sull'hosting in questione.
 
 ### Step 1: verifica l'hosting associato al tuo dominio
 
@@ -59,7 +56,7 @@ Nella scheda `Informazioni generali`{.action}, inserisci l'indirizzo IPV4 e/o IP
 
 #### Verifica l'indirizzo IP nella zona DNS
 
-A questo punto è necessario verificare che l'indirizzo IP indicato nella [Zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#capire-il-concetto-di-dns) corrisponda a quello del tuo [hosting Web Cloud](https://www.ovhcloud.com/it/web-hosting/).
+A questo punto è necessario verificare che l'indirizzo IP indicato nella [Zona DNS](/pages/web/domains/dns_zone_edit#capire-il-concetto-di-dns) corrisponda a quello del tuo [hosting Web Cloud](https://www.ovhcloud.com/it/web-hosting/).
 
 Clicca su `Nomi di dominio`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona il dominio del tuo sito.
 
@@ -71,11 +68,11 @@ Seleziona la scheda `Zona DNS`{.action} e annota la destinazione d'ingresso di t
 
 |Scenario|Messaggio di errore interessato|
 |-|---|
-|L'indirizzo IP indicato nella [Zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/) corrisponde a quello del tuo hosting condiviso.|Passate allo [step 2](#step2).|
-|L'indirizzo IP indicato nella zona non riguarda alcun hosting del tuo [account OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), ma appare nella [lista dei server Web Cloud](../lista-indirizzi-ip-di-cluster-e-hosting-web/).|Ti ricordiamo che non possiedi un hosting che dispone di questo indirizzo IP in uno dei tuoi altri [account OVHcloud cloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) se ne hai creati diversi. In caso di necessità, contatta il tuo webmaster o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/) a questo proposito|
-|L'indirizzo IP indicato nella zona non corrisponde a quello del tuo hosting e non compare nemmeno nella [lista dei server Web Cloud](../lista-indirizzi-ip-di-cluster-e-hosting-web/).|Contatta il tuo webmaster o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/) a questo proposito.|
-|Nella scheda `Zona DNS`{.action}, un messaggio indica che il tuo dominio utilizza altri server [DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#capire-il-concetto-di-dns) e questi compaiono nella forma « ns **?** .ovh.net » o « dns **?** .ovh.net » (sostituisci il « **?** » con il numero del server DNS interessato):<br><br>![warning_other_ovh_DNS_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}|Modifica i server DNS del tuo dominio in modo che corrispondano a quelli registrati nelle record di tipo `NS` della zona. Per effettuare questa operazione, segui le istruzioni di [questa guida](../../domains/web_hosting_gestisci_il_tuo_server_dns/#modifica-i-server-dns).|
-|Nella scheda `Zona DNS`{.action}, un messaggio indica che il tuo dominio utilizza altri server [DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#capire-il-concetto-di-dns) e questi non compaiono nella forma « ns **?** .ovh.net » o « dns **?** .net » :<br><br>![warning_external_DNS_srv](images/warning_external_dns_srv.png){.thumbnail}|Contatta il tuo webmaster o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/) a questo proposito.|
+|L'indirizzo IP indicato nella [Zona DNS](/pages/web/domains/dns_zone_edit) corrisponde a quello del tuo hosting condiviso.|Passate allo [step 2](#step2).|
+|L'indirizzo IP indicato nella zona non riguarda alcun hosting del tuo [account OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), ma appare nella [lista dei server Web Cloud](/pages/web/hosting/clusters_and_shared_hosting_IP).|Ti ricordiamo che non possiedi un hosting che dispone di questo indirizzo IP in uno dei tuoi altri [account OVHcloud cloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) se ne hai creati diversi. In caso di necessità, contatta il tuo webmaster o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/) a questo proposito|
+|L'indirizzo IP indicato nella zona non corrisponde a quello del tuo hosting e non compare nemmeno nella [lista dei server Web Cloud](/pages/web/hosting/clusters_and_shared_hosting_IP).|Contatta il tuo webmaster o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/) a questo proposito.|
+|Nella scheda `Zona DNS`{.action}, un messaggio indica che il tuo dominio utilizza altri server [DNS](/pages/web/domains/dns_zone_edit#capire-il-concetto-di-dns) e questi compaiono nella forma « ns **?** .ovh.net » o « dns **?** .ovh.net » (sostituisci il « **?** » con il numero del server DNS interessato):<br><br>![warning_other_ovh_DNS_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}|Modifica i server DNS del tuo dominio in modo che corrispondano a quelli registrati nelle record di tipo `NS` della zona. Per effettuare questa operazione, segui le istruzioni di [questa guida](/pages/web/domains/dns_server_general_information#modifica-i-server-dns).|
+|Nella scheda `Zona DNS`{.action}, un messaggio indica che il tuo dominio utilizza altri server [DNS](/pages/web/domains/dns_zone_edit#capire-il-concetto-di-dns) e questi non compaiono nella forma « ns **?** .ovh.net » o « dns **?** .net » :<br><br>![warning_external_DNS_srv](images/warning_external_dns_srv.png){.thumbnail}|Contatta il tuo webmaster o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/) a questo proposito.|
 |Il tuo dominio non compare nella sezione `Domini`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).<br><br>O la scheda `Zona DNS`{.action} del tuo dominio viene mostrata come segue:<br><br>![zonedns_ndd_pas_pas_sur_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Questo significa che il tuo dominio non è gestito dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).<br><br>Verifica che non sia gestito da uno degli altri [account OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), se ne hai creato diversi.<br><br>Potrai anche determinare il suo Registrar e i server DNS a cui è associato tramite il nostro tool [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl).<br><br>Se necessario, contatta il tuo webmaster o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/) a questo proposito.|
 
 ### Step 2: verifica il certificato SSL del tuo hosting <a name="step2"></a>
@@ -86,11 +83,11 @@ Nella scheda `Informazioni generali`{.action} dell'hosting OVHcloud, verifica la
 
 #### Scenario 1: il tuo hosting non contiene un certificato SSL
 
-Attiva un [certificato SSL](https://www.ovhcloud.com/it/web-hosting/options/ssl/) sul tuo hosting seguendo le istruzioni di questa [guida](../i_certificati_ssl_sugli_hosting_web_ovh/).
+Attiva un [certificato SSL](https://www.ovhcloud.com/it/web-hosting/options/ssl/) sul tuo hosting seguendo le istruzioni di questa [guida](/pages/web/hosting/ssl_on_webhosting).
 
 #### Scenario 2: il certificato SSL del tuo hosting non funziona
 
-Se hai generato un **certificato SSL "Let's Encrypt"**, attiva l'opzione SSL nella `Multisito`{.action} del tuo hosting seguendo le istruzioni di questa [guida](../i_certificati_ssl_sugli_hosting_web_ovh/#attiva-un-certificato-ssl-su-un-multisito).
+Se hai generato un **certificato SSL "Let's Encrypt"**, attiva l'opzione SSL nella `Multisito`{.action} del tuo hosting seguendo le istruzioni di questa [guida](/pages/web/hosting/ssl_on_webhosting#attiva-un-certificato-ssl-su-un-multisito).
 
 Se disponi di un **certificato SSL importato** e questo non funziona, contatta il suo provider.
 
@@ -106,17 +103,17 @@ Se hai ordinato uno dei **certificati SSL a pagamento** del nostro partner [SECT
 
 ## Per saperne di più <a name="gofurther"></a>
 
-[Gestire un certificato SSL su un hosting Web](../i_certificati_ssl_sugli_hosting_web_ovh/)
+[Gestire un certificato SSL su un hosting Web](/pages/web/hosting/ssl_on_webhosting)
 
-[Attivare HTTPS su un sito Internet tramite il certificato SSL](../attivare-https-su-sito-internet-tramite-certificato-ssl/)
+[Attivare HTTPS su un sito Internet tramite il certificato SSL](/pages/web/hosting/ssl-activate-https-website)
 
-[Risolvere l’errore «Sito non installato»](../errore-sito-non-installato/)
+[Risolvere l’errore «Sito non installato»](/pages/web/hosting/multisites_website_not_installed)
 
-[Web hosting come fai a diagnosticare una pagina bianca?](../web_hosting_come_fai_a_diagnosticare_una_pagina_bianca/)
+[Web hosting come fai a diagnosticare una pagina bianca?](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
 
-[Cosa fare in caso di errore 500 Internal Server Error?](../errore-500-internal-server-error/)
+[Cosa fare in caso di errore 500 Internal Server Error?](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
 
-[Risolvere gli errori più frequenti associati ai moduli in 1 click](../errori-frequenti-moduli-in-1-click/)
+[Risolvere gli errori più frequenti associati ai moduli in 1 click](/pages/web/hosting/diagnostic_errors_module1clic)
  
 Per prestazioni specializzate (referenziamento, sviluppo, ecc..), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 

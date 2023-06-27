@@ -1,9 +1,6 @@
 ---
 title: Utilização do SDK vSphere
-slug: utilizacao-sdk-vsphere
 excerpt: Utilização e implementação do SDK vSphere
-section: Funcionalidades VMware vSphere
-order: 12
 updated: 2020-07-13
 ---
 
@@ -23,7 +20,7 @@ updated: 2020-07-13
 
 ##### OS
 
-Aqui, iremos utilizar uma VM instalada em Debian 9, implementada através dos [templates disponibilizados no seu Hosted Private Cloud](../usar-template-ovh/).
+Aqui, iremos utilizar uma VM instalada em Debian 9, implementada através dos [templates disponibilizados no seu Hosted Private Cloud](/pages/cloud/private-cloud/ovf_template).
 
 ##### Requisitos
 
@@ -143,7 +140,7 @@ vconnect()
 
 ##### OS
 
-Aqui, iremos utilizar uma VM instalada em Ubuntu 18.04, implementada através dos [templates disponibilizados no seu Hosted Private Cloud](../usar-template-ovh/).
+Aqui, iremos utilizar uma VM instalada em Ubuntu 18.04, implementada através dos [templates disponibilizados no seu Hosted Private Cloud](/pages/cloud/private-cloud/ovf_template).
 
 
 ##### Requisitos

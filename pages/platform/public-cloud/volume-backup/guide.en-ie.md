@@ -1,9 +1,6 @@
 ---
 title: Creating a volume backup
-slug: volume-backup
 excerpt: Discover how to back up your Block Storage volume in the OVHcloud Control Panel
-section: Storage
-order: 3
 updated: 2023-03-29
 ---
 
@@ -29,14 +26,14 @@ Both volume snapshot and volume backup allow you to:
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- A [Block Storage volume](https://docs.ovh.com/ie/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/) created in your [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/)
+- A [Block Storage volume](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance) created in your [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/)
 
 ## Instructions
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then open `Block Storage`{.action} in the left-hand navigation bar under **Storage**.
 
 In the row of the volume concerned, click on the `...`{.action} button and select `Create a backup`{.action}.<br>
-It is not required to detach the volume from its instance first. However, if you wish to do so, please consult this [section](https://docs.ovh.com/ie/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/#on-linux) of the corresponding guide for Linux and this [section](https://docs.ovh.com/ie/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/#on-windows) for Windows.
+It is not required to detach the volume from its instance first. However, if you wish to do so, please consult this [section](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#on-linux) of the corresponding guide for Linux and this [section](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#on-windows) for Windows.
 
 ![Volume Backup creation](images/volumebackup01.png){.thumbnail}
 
@@ -71,16 +68,16 @@ You will find the list of your volume backups in the section `Volume Backup`{.ac
 ![Volume Backup list](images/volumebackup04.png){.thumbnail}
 
 Click the `...`{.action} button to `Delete`{.action} or to `Create a volume`{.action} based on the respective volume snapshot or volume backup.
-You can find further information in [this guide](https://docs.ovh.com/ie/en/public-cloud/create-volume-from-backup/).
+You can find further information in [this guide](/pages/platform/public-cloud/create-volume-from-snapshot).
 
 ![Create volume from backup](images/volumebackup05.png){.thumbnail}
 
 ## Go further
 
-[Creating a volume from a backup](https://docs.ovh.com/ie/en/public-cloud/create-volume-from-backup/)
+[Creating a volume from a backup](/pages/platform/public-cloud/create-volume-from-snapshot)
 
-[Creating and configuring an additional disk on an instance](https://docs.ovh.com/ie/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/)
+[Creating and configuring an additional disk on an instance](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
 
-[Increasing the size of an additional disk](https://docs.ovh.com/ie/en/public-cloud/increase_the_size_of_an_additional_disk/)
+[Increasing the size of an additional disk](/pages/platform/public-cloud/increase_the_size_of_an_additional_disk)
 
 Join our community of users on <https://community.ovh.com/en/>.

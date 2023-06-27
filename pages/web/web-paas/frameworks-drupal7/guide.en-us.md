@@ -1,8 +1,5 @@
 ---
 title: Drupal7
-slug: frameworks-drupal7
-section: Frameworks
-order: 6
 updated: 2021-05-11
 ---
 
@@ -30,7 +27,7 @@ This build mode supports having a `project.make` file for your contributed modul
 
 > [!primary]  
 > When building as a profile, you **need a make file for Drupal core** called: `project-core.make`. See
-> [drush make files](drush).
+> [drush make files](/pages/web/web-paas/frameworks-drupal7/drush).
 > 
 
 ```text

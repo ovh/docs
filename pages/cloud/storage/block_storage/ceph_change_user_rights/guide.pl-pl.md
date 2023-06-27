@@ -1,10 +1,8 @@
 ---
 title: Zmień prawa użytkownika (EN)
-slug: ceph/change-user-rights
 excerpt: This guide shows you how to change Ceph user rights using the web interface.
-section: Cloud Disk Array
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/block-storage/ceph/change-user-rights/'
+    canonical: '/pages/cloud/storage/block_storage/ceph_change_user_rights'
 updated: 2020-09-21
 ---
 

@@ -1,7 +1,5 @@
 ---
 title: 'Backup einer Instanz von einem Rechenzentrum in ein anderes übertragen'
-slug: instanz-backup-in-anderes-rechenzentrum-uebertragen
-section: 'OpenStack'
 excerpt: 'Erfahren Sie hier, wie Sie Backups transferieren und dabei Zustand und Status der Instanz beibehalten'
 updated: 2019-03-29
 ---
@@ -19,7 +17,7 @@ Es kann vorkommen, dass Sie Ihre Public Cloud Instanz von einem Rechenzentrum in
 
 * Sie haben eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/){.external} in Ihrem Account erstellt.
 * Sie haben Administrator-Zugriff (Root) zu Ihrer Instanz / Ihrem Betriebssystem via SSH.
-* Sie haben die Anleitung “[Vorbereitung der Umgebung für die Verwendung der OpenStack API](../prepare_the_environment_for_using_the_openstack_api/)“ gelesen (empfohlen).
+* Sie haben die Anleitung “[Vorbereitung der Umgebung für die Verwendung der OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)“ gelesen (empfohlen).
 
 > [!primary]
 >
@@ -140,6 +138,6 @@ Verwenden Sie die Backup-ID als Image mit folgendem Befehl:
 
 ## Weiterführende Informationen
 
-[Transfer a volume backup from one datacentre to another](https://docs.ovh.com/gb/en/public-cloud/transfer_volume_backup_from_one_datacentre_to_another/)
+[Transfer a volume backup from one datacentre to another](/pages/platform/public-cloud/transfer_volume_backup_from_one_datacentre_to_another)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

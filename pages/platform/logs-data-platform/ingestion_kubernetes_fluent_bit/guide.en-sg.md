@@ -1,9 +1,6 @@
 ---
 title: Pushing logs from software - Kubernetes and Fluent Bit
-slug: logs-data-platform-kubernetes-fluent-bit
-order: 09
 excerpt: All the logs of your pods in one place
-section: Use cases
 updated: 2022-11-15
 ---
 
@@ -172,7 +169,7 @@ data:
     [PARSER]
         Name   apache_error
         Format regex
-        Regex  ^\[[^ ]* (?<time>[^\]]*)\] \[(?<level>[^\]]*)\](?: \[pid (?<pid>[^\]]*)\])?( \[client (?<client>[^\]]*)\])? (?<message>.*)$
+        Regex  ^\[[^ ]* (?<time>[^\]]*)\] \[(?<level>[^\]]*)\](/sg/en/logs-data-platform/logs-data-platform-kubernetes-fluent-bit/?: \[pid (?<pid>[^\]]*)\])?( \[client (?<client>[^\]]*)\])? (?<message>.*)$
 
     [PARSER]
         Name   nginx
@@ -317,6 +314,6 @@ And that's it. Your kubernetes activity is now perfectly logged in one place. Ha
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/sg/en/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

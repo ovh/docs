@@ -1,7 +1,6 @@
 ---
 title: Information about Hosted Private Cloud billing
 excerpt: Details about the Hosted Private Cloud billing
-slug: information_about_dedicated_cloud_billing
 legacy_guide_number: g677
 updated: 2018-03-26
 ---

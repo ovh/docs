@@ -1,9 +1,6 @@
 ---
 title: Modificare la password del database di un hosting Web
-slug: modificare-password-database
 excerpt: Scopri come modificare la password di un database creata nell'ambito di un piano di hosting Web
-section: Database
-order: 02
 updated: 2022-01-26
 ---
 
@@ -17,15 +14,15 @@ updated: 2022-01-26
 
 La maggior parte dei siti Web utilizza un **database** per archiviare articoli, commenti e indirizzi email dei propri utenti.
 
-La connessione a questo database è possibile tramite un **file di configurazione** contenuto nello [spazio di archiviazione dei file](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) del tuo hosting. che contiene le informazioni che permettono al tuo sito di "identificarsi" presso il suo **server di database**.
+La connessione a questo database è possibile tramite un **file di configurazione** contenuto nello [spazio di archiviazione dei file](/pages/web/hosting/ftp_connection) del tuo hosting. che contiene le informazioni che permettono al tuo sito di "identificarsi" presso il suo **server di database**.
 
 La modifica della password di un database deve quindi essere sempre effettuata:
 
-- Nel [file di configurazione](https://docs.ovh.com/it/hosting/1-click-module-management/#step-1-identifica-il-database-associato-al-tuo-modulo) del tuo sito tramite lo [spazio FTP del tuo hosting](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/);
+- Nel [file di configurazione](/pages/web/hosting/cms_manage_1_click_module#step-1-identifica-il-database-associato-al-tuo-modulo) del tuo sito tramite lo [spazio FTP del tuo hosting](/pages/web/hosting/ftp_connection);
 
 - **E** nel server che contiene il suo database attraverso lo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
-Finché la modifica non sarà effettuata **in entrambi i punti**, il tuo sito mostrerà un "[errore di connessione al database](https://docs.ovh.com/it/hosting/errori-frequenti-database/#error-establishing-a-database-connection)".
+Finché la modifica non sarà effettuata **in entrambi i punti**, il tuo sito mostrerà un "[errore di connessione al database](/pages/web/hosting/diagnosis_database_errors#error-establishing-a-database-connection)".
 
 Per modificare la password del database è quindi necessario eseguire **tutte le operazioni** indicate in questa guida. In caso di dubbi sulle operazioni da effettuare, contatta il tuo webmaster o rivolgiti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/).
 
@@ -50,7 +47,7 @@ La modifica della password del database del tuo sito avviene in quattro step:
 - Disporre di una [soluzione di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Utilizza un [database associato alla tua offerta di hosting condiviso](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) o [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/).
-- Disporre delle credenziali FTP per accedere allo [spazio di storage dell'hosting](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) 
+- Disporre delle credenziali FTP per accedere allo [spazio di storage dell'hosting](/pages/web/hosting/ftp_connection) 
 
 ## Procedura
 
@@ -64,9 +61,9 @@ Clicca sulla scheda `FTP-SSH`{.action} e poi clicca sul pulsante `FTP Explorer`{
 
 > [!primary]
 >
-> Per modificare la password del tuo spazio FTP, consulta questa [guida](https://docs.ovh.com/it/hosting/modificare-la-password-utente-ftp/).
+> Per modificare la password del tuo spazio FTP, consulta questa [guida](/pages/web/hosting/ftp_change_password).
 >
-> Per connetterti con un altro metodo, consulta questa [guida](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/).
+> Per connetterti con un altro metodo, consulta questa [guida](/pages/web/hosting/ftp_connection).
 >
 
 Apri la `Cartella di root` identificata sopra.
@@ -119,7 +116,7 @@ Sempre in questa sezione del tuo Spazio Cliente OVHcloud, clicca sulla scheda `U
 
 > [!primary]
 >
-> Per maggiori informazioni sulle best practice di gestione delle password, segui le indicazioni di questa [guida](https://docs.ovh.com/it/customer/gestire-la-password/).
+> Per maggiori informazioni sulle best practice di gestione delle password, segui le indicazioni di questa [guida](/pages/account/customer/manage-ovh-password).
 >
 
 Scegli la nuova password del tuo database e annotiamolo. Esso dovrà rispettare le seguenti condizioni:
@@ -198,7 +195,7 @@ Di nuovo, sono possibili due casi:
 
 - Se il database si trova nella sezione dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dedicata al tuo [hosting Web](https://www.ovhcloud.com/it/web-hosting/), segui queste [istruzioni](#case1).
 
-- Se il tuo database si trova nella sezione dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dedicata alle tue offerte [Web Cloud Databases](https://docs.ovh.com/it/clouddb/), segui queste [istruzioni](#case2).
+- Se il tuo database si trova nella sezione dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dedicata alle tue offerte [Web Cloud Databases](/products/web-cloud-clouddb), segui queste [istruzioni](#case2).
 
 #### Caso 1: il database del tuo sito fa parte della tua offerta di hosting <a name="case1"></a>
 
@@ -230,11 +227,11 @@ Nella nuova finestra, inserisci la nuova password del tuo database (definita all
 
 ## Per saperne di più <a name="gofurther"></a>
 
-[Hosting Condiviso: guida all’utilizzo di FileZilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/)
+[Hosting Condiviso: guida all’utilizzo di FileZilla](/pages/web/hosting/ftp_filezilla_user_guide)
 
-[Impostare e gestire la password di un account OVHcloud](https://docs.ovh.com/it/customer/gestire-la-password/)
+[Impostare e gestire la password di un account OVHcloud](/pages/account/customer/manage-ovh-password)
 
-[Risolvi gli errori più frequenti associati ai database](https://docs.ovh.com/it/hosting/errori-frequenti-database/)
+[Risolvi gli errori più frequenti associati ai database](/pages/web/hosting/diagnosis_database_errors)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 

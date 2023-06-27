@@ -1,9 +1,6 @@
 ---
 title: Primeros pasos con las aplicaciones preinstaladas
-slug: aplicaciones-preinstalables
 excerpt: Cómo desplegar aplicaciones preinstaladas en las instancias de Public Cloud
-section: Primeros pasos
-order: 07
 updated: 2021-09-07
 ---
 
@@ -21,7 +18,7 @@ OVHcloud ofrece a los clientes de Public Cloud imágenes de aplicaciones preinst
 
 ## Requisitos
 
-- Una [instancia de Public Cloud](../crear_una_instancia_desde_el_area_de_cliente_de_ovh/) en su cuenta de OVHcloud.
+- Una [instancia de Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#3-crear-una-instancia/) en su cuenta de OVHcloud.
 
 ## Procedimiento
 
@@ -61,7 +58,7 @@ Esta sección solo se aplica a las instalaciones de WordPress, Drupal, Joomla! y
      personaldomain.ovh <br>
      www.personaldomain.ovh <br>  
 
-Si su dominio está registrado en OVHcloud, puede seguir [esta guía](../../domains/web_hosting_como_editar_mi_zona_dns/).
+Si su dominio está registrado en OVHcloud, puede seguir [esta guía](/pages/web/domains/dns_zone_edit).
 <br>Si su dominio está registrado con otra empresa, deberá contactar con ella para solicitar ayuda sobre la configuración de sus registros `A`.
 
 <ol start="2">
@@ -139,7 +136,7 @@ No es necesario realizar ningún otro paso para finalizar la primera configuraci
 > [!faq]
 >
 > ¿Puedo utilizar mis propios servidores DNS?
->> Sí, puede. Asegúrese de crear los registros Glue con su agente registrador de dominios. Por ejemplo, si quiere "ns1.mydomain.com" y "ns2.mydomain.com", debe configurar los registros Glue para que ambos apunten a la dirección IP de su servidor. Si tiene su dominio registrado con OVHcloud, puede seguir [esta guía.](../../domains/glue_record/#1-anadir-los-registros-glue) La creación puede tardar 24 horas.
+>> Sí, puede. Asegúrese de crear los registros Glue con su agente registrador de dominios. Por ejemplo, si quiere "ns1.mydomain.com" y "ns2.mydomain.com", debe configurar los registros Glue para que ambos apunten a la dirección IP de su servidor. Si tiene su dominio registrado con OVHcloud, puede seguir [esta guía.](/pages/web/domains/glue_registry#1-anadir-los-registros-glue) La creación puede tardar 24 horas.
 > ¿Por qué establecer la contraseña root?
 >> WHM utiliza por defecto el usuario root para la autenticación. La URL de un solo uso permite acceder a la primera configuración y cambiar la contraseña root. La próxima vez que se conecte a WHM, deberá utilizar el usuario root y la contraseña que haya establecido.
 > ¿Dónde está mi licencia para cPanel?

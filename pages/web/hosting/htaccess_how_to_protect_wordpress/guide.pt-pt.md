@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Utilizar o ficheiro htaccess com WordPress"
-slug: use-htaccess-with-wordpress
 excerpt: "Descubra como proteger o seu blogue WordPress com um ou vários ficheiros htaccess"
-section: 'Tutoriais'
-order: 022
 updated: 2023-06-22
 ---
 
@@ -29,7 +26,7 @@ Este tutorial explica-lhe como configurar certas funcionalidades do seu alojamen
 ## Requisitos
 
 - Ter um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) e ter instalado o WordPress.
-- Ter capacidade para utilizar um cliente FTP como [FileZilla](https://filezilla-project.org/). Pode consultar o nosso guia "[Utilizar o FileZilla](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/)".
+- Ter capacidade para utilizar um cliente FTP como [FileZilla](https://filezilla-project.org/). Pode consultar o nosso guia "[Utilizar o FileZilla](/pages/web/hosting/ftp_filezilla_user_guide)".
 
 Os ficheiros **.htaccess** podem ser criados e modificados com editores de texto como:
 
@@ -119,7 +116,7 @@ Existem várias formas de definir e modificar os parâmetros que irão modificar
 
 > [!warning]
 >
-> Antes de seguir os passos abaixo, é necessário reencaminhar o protocolo HTTP para HTTPS. Para isso, siga as instruções do nosso manual ["Ativar o HTTPS num website com certificado SSL"](https://docs.ovh.com/pt/hosting/ativar-https-website-certificado-ssl/#1-ativar-o-certificado-ssl-no-alojamento).
+> Antes de seguir os passos abaixo, é necessário reencaminhar o protocolo HTTP para HTTPS. Para isso, siga as instruções do nosso manual ["Ativar o HTTPS num website com certificado SSL"](/pages/web/hosting/ssl-activate-https-website#1-ativar-o-certificado-ssl-no-alojamento).
 
 ### Impedir a apresentação dos diretórios e sub-diretórios
 
@@ -154,7 +151,7 @@ Se identificou um endereço de IP malicioso, eis a linha a inserir no ficheiro *
 
 Neste exemplo, `xxx.xxx.xxx.xxx`, refere-se ao endereço de IP a bloquear.
 
-Para mais informações, consulte o nosso guia sobre a [restrição do acesso por IP através do ficheiro .htaccess](https://docs.ovh.com/pt/hosting/partilhado_htacess_como_impedir_que_certos_ips_acedam_ao_meu_website/).
+Para mais informações, consulte o nosso guia sobre a [restrição do acesso por IP através do ficheiro .htaccess](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
 #### Bloquear um endereço IP a partir do diretório wp-admin (ou nos outros diretórios)
 

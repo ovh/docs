@@ -1,9 +1,6 @@
 ---
 title: Premiers pas avec NSX
-slug: nsx-first-steps
 excerpt: "Découvrez NSX, la solution de gestion de réseau logicielle Sofware Defined Networking (SDN) fournie par VMware"
-section: NSX
-order: 01
 updated: 2023-06-14
 ---
 
@@ -85,7 +82,7 @@ Le schéma ci-dessous représente la topologie réseau avec ces informations :
 - La passerelle nord-sud (**ovh-T0-gw**) qui assure la liaison entre le réseau physique (Internet et VLAN sur vRack) et les réseaux internes (Overlays) de votre cluster.
 - La liaison entre les passerelles **ovh-T0-gw** et **ovh-T1-gw** qui se fait au travers d'adresses IP réservées à cet usage.
 - La passerelle est-ouest (**ovh-T1-gw**) qui gère les communications entre les réseaux internes (segments de type overlay) du cluster. Il est aussi possible d'effectuer des connexions avec des VLAN sur des vRacks.
-- **ovh-segment-nsxpublic** qui est un segment réseau connecté au réseau public OVHcloud sur un VLAN. Il contient le réseau des adresses publiques utilisables pour les configurations clients. Cliquez sur l'icône en dessous pour afficher ce segment. Vous trouverez plus d'informations concernant les segments dans le guide « [Gestion des segments dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-segment-management) ».
+- **ovh-segment-nsxpublic** qui est un segment réseau connecté au réseau public OVHcloud sur un VLAN. Il contient le réseau des adresses publiques utilisables pour les configurations clients. Cliquez sur l'icône en dessous pour afficher ce segment. Vous trouverez plus d'informations concernant les segments dans le guide « [Gestion des segments dans NSX](/pages/cloud/private-cloud/nsx-02-segment-management) ».
 
 ![02 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
 
@@ -152,7 +149,7 @@ Vous venez de voir la configuration par défaut. Vous pouvez consulter les autre
 
 ## Aller plus loin
 
-[Gestion des segments dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-segment-management)
+[Gestion des segments dans NSX](/pages/cloud/private-cloud/nsx-02-segment-management)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

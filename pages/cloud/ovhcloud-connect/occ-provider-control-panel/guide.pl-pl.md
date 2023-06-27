@@ -1,9 +1,6 @@
 ---
 title: Installation of OVHcloud Connect Provider from the OVHcloud Control Panel
 excerpt: Find out how to set up your OVHcloud Connect Provider solution via the OVHcloud Control Panel
-slug: occ-provider-manager-setup
-section: Getting started
-order: 3
 updated: 2020-09-28
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-network-ovhcloud-connect-provider-control-panel-setup?id=kb_article_view&sysparm_article=KB0032439'

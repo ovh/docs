@@ -1,7 +1,6 @@
 ---
 title: Otimizar a repartição das VMs pelos Hosts
 excerpt: Como fazer repartição das VMs pelos Hosts de forma a otimizar o uso dos recursos?
-slug: otimizar_a_reparticao_das_vms_pelos_hosts
 updated: 2018-03-26
 ---
 

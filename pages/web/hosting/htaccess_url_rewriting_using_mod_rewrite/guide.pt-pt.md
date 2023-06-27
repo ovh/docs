@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Reescrever o URL de acesso ao meu site graças ao mod_rewrite através do ficheiro .htaccess"
 excerpt: "Descubra como reescrever o URL de acesso ao seu site graças ao mod_rewrite através do ficheiro .htaccess"
-slug: partilhado_htaccess_rescrita_de_urls_gracas_ao_mod_write
-section: Reescrita e autenticação
-order: 03
 updated: 2022-12-22
 ---
 
@@ -53,7 +50,7 @@ O ficheiro ".htaccess" no qual vai configurar o "**mod_rewrite**" do Apache pode
 
 Os parâmetros definidos num ficheiro ".htaccess" aplicam-se ao diretório onde está presente, bem como a todos os seus sub-diretórios.
 
-Para editar (ou criar) diretórios, aceda ao espaço FTP do seu alojamento. Caso seja necessário, consulte o guia "[Aceder ao meu espaço de armazenamento](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/)".
+Para editar (ou criar) diretórios, aceda ao espaço FTP do seu alojamento. Caso seja necessário, consulte o guia "[Aceder ao meu espaço de armazenamento](/pages/web/hosting/ftp_connection)".
 
 Encontre aqui alguns exemplos entre os mais comuns de utilização do "**mod_rewrite**" do Apache. Alguns deles também podem favorecer o referenciamento SEO do seu website.
 
@@ -97,7 +94,7 @@ Esta re-escritura de URL pode favorecer o referenciamento SEO do seu website.
 
 Quando utiliza um alojamento partilhado OVHcloud, o seu nome de domínio (por exemplo **domain.tld**) é declarado em `Multisites` para apresentar o conteúdo de uma pasta alvo que também se chama `Pasta raiz`. Pode personalizar o nome deste `Pasta raiz`.
 
-Para mais informações, consulte o nosso manual sobre a [configuração de um multi-site num alojamento partilhado](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/).
+Para mais informações, consulte o nosso manual sobre a [configuração de um multi-site num alojamento partilhado](/pages/web/hosting/multisites_configure_multisite).
 
 Alguns utilizadores não colocam os seus websites diretamente na base do `Pasta raiz`. Eles criam uma sub-pasta (por exemplo: **MyWebsite**) no seu `Pasta raiz` para colocar o seu website.
 
@@ -120,7 +117,7 @@ No nosso exemplo, isto obriga o endereço do seu site a ser do tipo **http://dom
 
 Os certificados SSL permitem encriptar as trocas efetuadas em HTTP com o seu website. Isto impede que pessoas ou robôs maliciosos recolham os dados trocados entre o site e o visitante, como por exemplo dados bancários.
 
-Se não dispõe de um certificado SSL, consulte o nosso guia sobre a [gestão de um certificado SSL num alojamento partilhado OVHcloud](https://docs.ovh.com/pt/hosting/os-certificados-ssl-nos-alojamentos-web/).
+Se não dispõe de um certificado SSL, consulte o nosso guia sobre a [gestão de um certificado SSL num alojamento partilhado OVHcloud](/pages/web/hosting/ssl_on_webhosting).
 
 Alguns dos seus visitantes podem esquecer-se de introduzir o URL de acesso ao seu site em **https://** : isto representa um risco não negligenciável para os dados trocados entre o seu website e os seus browsers.
 
@@ -136,9 +133,9 @@ No nosso exemplo, todos os pedidos efetuados com um URL em "**http://**" serão 
   
 ## Quer saber mais? <a name="go-further"></a>
 
-[Bloquear o acesso ao meu website para determinados endereços IP através de um ficheiro .htaccess](https://docs.ovh.com/pt/hosting/partilhado_htacess_como_impedir_que_certos_ips_acedam_ao_meu_website/)
+[Bloquear o acesso ao meu website para determinados endereços IP através de um ficheiro .htaccess](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website)
 
-[Proteger a interface de administração do seu site por um ficheiro .htaccess](https://docs.ovh.com/pt/hosting/partilhado-htaccess-como-protecao-acesso-a-um-diretorio-por-autenticacao/)
+[Proteger a interface de administração do seu site por um ficheiro .htaccess](/pages/web/hosting/htaccess_protect_directory_by_password)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 

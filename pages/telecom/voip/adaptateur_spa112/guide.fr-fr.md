@@ -1,7 +1,5 @@
 ---
 title: Adaptateur SPA112
-slug: adaptateur-spa112
-section: Cisco SPA112
 hidden: true
 updated: 2018-03-26
 ---

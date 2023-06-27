@@ -1,9 +1,6 @@
 ---
 title: Configurare un account Exchange su Thunderbird per Windows
-slug: exchange_20132016_configurazione_di_thunderbird
 excerpt: Come configurare il tuo indirizzo Exchange su Thunderbird per Windows
-section: 'Configurazione al computer'
-order: 04
 updated: 2021-08-26
 ---
 
@@ -70,7 +67,7 @@ OVHcloud propone anche un'applicazione Web che permette di accedere al tuo indir
 
 ### Recuperare un backup del tuo indirizzo email
 
-Se è necessario effettuare un'operazione che potrebbe comportare la perdita dei dati del tuo account email, ti consigliamo di effettuare un backup preliminare dell'account email in questione. Per effettuare questa operazione consulta il paragrafo "**Esporta**" nella sezione "**Thunderbird**" della nostra guida [Migrare manualmente il tuo indirizzo email](https://docs.ovh.com/it/emails/migrare-i-indirizzi-email-manualmente/#esportare).
+Se è necessario effettuare un'operazione che potrebbe comportare la perdita dei dati del tuo account email, ti consigliamo di effettuare un backup preliminare dell'account email in questione. Per effettuare questa operazione consulta il paragrafo "**Esporta**" nella sezione "**Thunderbird**" della nostra guida [Migrare manualmente il tuo indirizzo email](/pages/web/emails/manual_email_migration#esportare).
 
 ### Modifica i parametri esistenti
 

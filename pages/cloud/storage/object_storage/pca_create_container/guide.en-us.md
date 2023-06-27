@@ -1,9 +1,6 @@
 ---
 title: Cloud Archive Swift - Creating a Public Cloud Archive container
-slug: pca/create-container
 excerpt: Find out how to create your Public Cloud Archive containers in the OVHcloud Control Panel
-section: OpenStack Swift Archive Storage Class Specifics
-order: 020
 updated: 2021-10-27
 ---
 
@@ -54,7 +51,7 @@ Name your container, then click `Create the container`{.action} :
 > - [ _ ]
 > - And you must not use capital letters.
 >  
-> Refer to our guide on [linking a container to a domain name](https://docs.ovh.com/us/en/storage/pcs/link-domain/) if necessary.
+> Refer to our guide on [linking a container to a domain name](/pages/cloud/storage/object_storage/pcs_link_domain) if necessary.
 >
 
 ![container name](images/create-container-20211006094550334.png)

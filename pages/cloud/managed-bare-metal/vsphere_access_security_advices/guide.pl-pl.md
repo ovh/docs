@@ -1,10 +1,8 @@
 ---
 title: 'Dobre praktyki bezpieczeństwa dotyczące klienta vSphere'
-slug: bezpieczny-dostep-vsphere
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/zabezpieczenie-dostepu-vsphere/'
+    canonical: '/pages/cloud/private-cloud/vsphere_access_security_advices'
 excerpt: 'Dowiedz się, jak zabezpieczyć dostęp do klienta vSphere'
-section: 'Pierwsze kroki'
 updated: 2020-11-18
 ---
 

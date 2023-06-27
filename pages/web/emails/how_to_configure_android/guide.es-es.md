@@ -1,9 +1,6 @@
 ---
 title: 'Configurar una cuenta de correo electrónico en Android utilizando la aplicación Gmail'
-slug: configuracion-android
 excerpt: 'Cómo configurar una cuenta MX Plan en Android utilizando la aplicación Gmail'
-section: Configuración en el smartphone
-order: 02
 updated: 2018-03-12
 ---
 
@@ -95,8 +92,8 @@ OVHcloud ofrece una aplicación web con la que podrá acceder a su cuenta de cor
 
 ## Más información
 
-[Configurar una cuenta Email Pro en Android utilizando la aplicación Gmail](https://docs.ovh.com/es/emails-pro/configuracion-android/){.external}
+[Configurar una cuenta Email Pro en Android utilizando la aplicación Gmail](/pages/web/emails-pro/how_to_configure_android){.external}
 
-[Configurar una cuenta Exchange en Android utilizando la aplicación Gmail](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-android/){.external}
+[Configurar una cuenta Exchange en Android utilizando la aplicación Gmail](/pages/web/microsoft-collaborative-solutions/how_to_configure_android){.external}
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

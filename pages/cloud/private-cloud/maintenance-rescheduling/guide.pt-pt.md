@@ -1,8 +1,6 @@
 ---
 title: "Desativar uma manutenção programada no seu Hosted Private Cloud"
 excerpt: "Saiba como transferir uma manutenção programada para o seu serviço Hosted Private Cloud powered by VMware"
-slug: maintenance-rescheduling
-section: Funcionalidades da OVHcloud
 updated: 2022-11-30
 ---
 
@@ -58,7 +56,7 @@ Finalmente, clique no botão `Alterar`{.action} para validar as suas modificaç�
 
 ### A partir da API OVHcloud
 
-Ligue-se à [interface de administração dos seus serviços através da API](https://eu.api.ovh.com/). Pode consultar o nosso manual "[Primeiros passos com as API OVHcloud](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/)".
+Ligue-se à [interface de administração dos seus serviços através da API](https://eu.api.ovh.com/). Pode consultar o nosso manual "[Primeiros passos com as API OVHcloud](/pages/account/api/first-steps)".
 
 Execute a seguinte chamada API:
 

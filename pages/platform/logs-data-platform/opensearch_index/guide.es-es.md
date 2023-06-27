@@ -1,9 +1,6 @@
 ---
 title: OpenSearch Index as a Service
-slug: logs-data-platform-index-as-a-service
-order: 2
 excerpt: Use the power of OpenSearch without managing a cluster.
-section: Features
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-index-as-a-service?id=kb_article_view&sysparm_article=KB0037663'
 updated: 2022-10-13
@@ -530,6 +527,6 @@ Index as a service has some specificities on our platforms. This additional and 
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/es/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

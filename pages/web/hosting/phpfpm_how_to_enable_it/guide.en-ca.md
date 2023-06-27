@@ -1,9 +1,6 @@
 ---
 title: Enable PHP optimisation with OVHcloud Web Hosting
 excerpt: This guide will show you how to enable PHP-FPM on your hosting package with OVHcloud in order to improve the PHP response time
-slug: enable_php_optimisation_with_ovh_web_hosting
-section: PHP
-order: 03
 updated: 2020-05-05
 ---
 
@@ -17,7 +14,7 @@ It is compiled by caching the opcode which minimises slow disk reads and speeds 
 Tests have shown that performance is up to 7 times faster compared with the older mechanism.
 
 ## In your customer account
-This guide will explain how to enable PHP FPM and select the PHP version by using the .ovhconfig file. Alternatively you can do this straight from your customer account by following [this guide](../how_to_configure_php_on_your_ovh_web_hosting_package_2014/).
+This guide will explain how to enable PHP FPM and select the PHP version by using the .ovhconfig file. Alternatively you can do this straight from your customer account by following [this guide](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014).
 
 Warning: the following options are disabled for safety reasons when using PHP-FPM
 
@@ -54,7 +51,7 @@ Just save the .ovhcongig file at the root of your disk space, via your FTP clien
 PLEASE NOTE: The .ovhconfig file exists by default on 2014 Web Hosting packages. On older packages you have to create it and save it at the root of your disk space. 
 It is not automatically added to the older plans or when changing your plan, some settings may not be compatible depending on the version of PHP that you are using.
 
-NB: the .ovhconfig file can only be placed at the root or in a top-level directory. It is not possible to have multiple files with different versions of PHP on the same hosting package (except [Multisites](../multisites-configuring-multiple-websites/)).
+NB: the .ovhconfig file can only be placed at the root or in a top-level directory. It is not possible to have multiple files with different versions of PHP on the same hosting package (except [Multisites](/pages/web/hosting/multisites_configure_multisite)).
 
 This .ovhconfig should contain the following code:
 

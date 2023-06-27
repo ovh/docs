@@ -1,9 +1,6 @@
 ---
 title: Troubleshooting common database errors
 excerpt: Find out how to diagnose the most common cases of database errors
-slug: database-frequent-errors
-section: Troubleshooting
-order: 04
 updated: 2022-12-09
 ---
 
@@ -11,7 +8,7 @@ updated: 2022-12-09
 
 ## Objective
 
-Your database usage may result in anomalies on your website or error messages in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), as well as on the [phpMyAdmin interface](https://docs.ovh.com/sg/en/hosting/creating-database/#accessing-the-phpmyadmin-interface).
+Your database usage may result in anomalies on your website or error messages in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), as well as on the [phpMyAdmin interface](/pages/web/hosting/sql_create_database#accessing-the-phpmyadmin-interface).
 
 **Find out how to troubleshoot database errors with OVHcloud Web Hosting plans.**
 
@@ -45,22 +42,22 @@ First, check on [https://web-cloud.status-ovhcloud.com/](https://web-cloud.statu
 
 #### Verify login credentials for your database <a name="config_file"></a>
 
-Log in to the file storage space of your Web Hosting plan by [FTP](https://docs.ovh.com/sg/en/hosting/log-in-to-storage-ftp-web-hosting/) and find your website’s configuration file (for example, a WordPress website will have a **wp-config.php** file located in the folder containing your website).
+Log in to the file storage space of your Web Hosting plan by [FTP](/pages/web/hosting/ftp_connection) and find your website’s configuration file (for example, a WordPress website will have a **wp-config.php** file located in the folder containing your website).
 
 > [!warning]
 >
 > The name and content of the file relevant for database connection information depends on the CMS used for the website. This does not lie in the scope of responsibility of OVHcloud.
 >
-> We recommend that you contact the publisher of the [CMS](https://docs.ovh.com/sg/en/hosting/web_hosting_web_hosting_modules/) concerned or a [specialised service provider](https://partner.ovhcloud.com/en-sg/directory/) if necessary. We will not be able to assist you with this.
+> We recommend that you contact the publisher of the [CMS](/pages/web/hosting/cms_install_1_click_modules) concerned or a [specialised service provider](https://partner.ovhcloud.com/en-sg/directory/) if necessary. We will not be able to assist you with this.
 >
 
-Then check the **exact** match between the login details for [phpMyAdmin](https://docs.ovh.com/sg/en/hosting/creating-database/#accessing-the-phpmyadmin-interface) and the login details for your website’s configuration file.
+Then check the **exact** match between the login details for [phpMyAdmin](/pages/web/hosting/sql_create_database#accessing-the-phpmyadmin-interface) and the login details for your website’s configuration file.
 
-If necessary, change your [database password](https://docs.ovh.com/sg/en/hosting/change-password-database/).
+If necessary, change your [database password](/pages/web/hosting/sql_change_password).
 
 #### Example for WordPress
 
-If your website displays an **"Error establishing a database connection"** message and your hosting cluster is not affected by an [incident](https://web-cloud.status-ovhcloud.com/), log in to the [FTP storage space](https://docs.ovh.com/sg/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting and open the directory containing your website (by default, this is the "www" folder).
+If your website displays an **"Error establishing a database connection"** message and your hosting cluster is not affected by an [incident](https://web-cloud.status-ovhcloud.com/), log in to the [FTP storage space](/pages/web/hosting/ftp_connection) of your hosting and open the directory containing your website (by default, this is the "www" folder).
 
 If this is a WordPress site, open the file "wp-config.php".
 
@@ -81,12 +78,12 @@ In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&fro
 
 - **my_database** must match what is noted as `Database name`;
 - **my_user** must match what is noted as `User name`;
-- **my_password** corresponds to your [database password](https://docs.ovh.com/sg/en/hosting/change-password-database/);
+- **my_password** corresponds to your [database password](/pages/web/hosting/sql_change_password);
 - **my_server.mysql.db** must match the `Server address`.
 
 > [!primary]
 >
-> If you are unable to restore access to your website as a result of these changes, [back up your database](https://docs.ovh.com/sg/en/hosting/web_hosting_database_export_guide/) then [restore it to an earlier date](https://docs.ovh.com/sg/en/hosting/restore-import-database/#restoring-a-specific-backup) from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
+> If you are unable to restore access to your website as a result of these changes, [back up your database](/pages/web/hosting/sql_database_export) then [restore it to an earlier date](https://docs.ovh.com/sg/en/hosting/restore-import-database/#restoring-a-specific-backup) from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
 >
 > Contact a [specialised service provider](https://partner.ovhcloud.com/en-sg/directory/) if necessary. We will not be able to assist you with this.
 >
@@ -120,14 +117,14 @@ If you are already subscribing to a **Performance** offer, refer to [method 2](#
 
 You can also migrate your data to a new database:
 
-- Order a larger [database service](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) if necessary, then [create the new database](https://docs.ovh.com/sg/en/hosting/creating-database/);
-- Perform an [export of your data](https://docs.ovh.com/sg/en/hosting/web_hosting_database_export_guide/), then [import your data](https://docs.ovh.com/sg/en/hosting/web_hosting_guide_to_importing_a_mysql_database/) in the new database;
+- Order a larger [database service](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) if necessary, then [create the new database](/pages/web/hosting/sql_create_database);
+- Perform an [export of your data](/pages/web/hosting/sql_database_export), then [import your data](/pages/web/hosting/sql_importing_mysql_database) in the new database;
 - Integrate the credentials of the new database into the [configuration file](#config_file) of your site.
 
 
 #### Method 3: Delete unnecessary data
 
-Once you have made a [database backup](https://docs.ovh.com/sg/en/hosting/web_hosting_database_export_guide/), log in to your [phpMyAdmin interface](https://docs.ovh.com/sg/en/hosting/creating-database/#accessing-the-phpmyadmin-interface) to delete any unnecessary data using the Drop, Delete and Truncate commands.
+Once you have made a [database backup](/pages/web/hosting/sql_database_export), log in to your [phpMyAdmin interface](/pages/web/hosting/sql_create_database#accessing-the-phpmyadmin-interface) to delete any unnecessary data using the Drop, Delete and Truncate commands.
 
 Then update the data usage from the `Databases`{.action} tab of the relevant service. Click on the `...`{.action} button next to the database concerned, then select `Recalculate the quota`{.action}.
 
@@ -156,9 +153,9 @@ To optimise your database, follow the instructions in our guide "[Configuring yo
 
 This error message means that the database you are trying to import contains elements that are not authorised on the OVHcloud shared infrastructure.
 
-First make sure that your database is empty from the `Databases`{.action} tab of the relevant service. Click on the `...`{.action} button next to the database concerned, then select `Recalculate the quota`{.action}. (If you need to save the existing data first, follow the [backup instructions](https://docs.ovh.com/sg/en/hosting/web_hosting_database_export_guide/), then delete the data and relaunch the import operation.)
+First make sure that your database is empty from the `Databases`{.action} tab of the relevant service. Click on the `...`{.action} button next to the database concerned, then select `Recalculate the quota`{.action}. (If you need to save the existing data first, follow the [backup instructions](/pages/web/hosting/sql_database_export), then delete the data and relaunch the import operation.)
 
-You can also tick the `Empty the current database`{.action} box just before [launching the import](https://docs.ovh.com/sg/en/hosting/web_hosting_guide_to_importing_a_mysql_database/#import-your-own-backup-via-your-control-panel):
+You can also tick the `Empty the current database`{.action} box just before [launching the import](/pages/web/hosting/sql_importing_mysql_database#import-your-own-backup-via-your-control-panel):
 
 ![database-import-empty](images/database-import-empty.png){.thumbnail}
 
@@ -191,11 +188,11 @@ Replace `Database-Name` with the name of the database as displayed in your [OVHc
 > **"mysqli::real_connect(): (HY000/1045): Access denied for user"**
 >
 
-This error message may appear when connecting to your database by [phpMyAdmin](https://docs.ovh.com/sg/en/hosting/creating-database/#accessing-the-phpmyadmin-interface). It indicates that the credentials entered are incorrect.
+This error message may appear when connecting to your database by [phpMyAdmin](/pages/web/hosting/sql_create_database#accessing-the-phpmyadmin-interface). It indicates that the credentials entered are incorrect.
 
 ![access_denied_for_user](images/access_denied_for_user.png){.thumbnail}
 
-In this situation, [check the credentials entered](https://docs.ovh.com/sg/en/hosting/connecting-to-database-on-database-server/#instructions) and change your [database password](https://docs.ovh.com/sg/en/hosting/change-password-database/) if necessary.
+In this situation, [check the credentials entered](https://docs.ovh.com/sg/en/hosting/connecting-to-database-on-database-server/#instructions) and change your [database password](/pages/web/hosting/sql_change_password) if necessary.
 
 #### "Too many connections"
 
@@ -205,7 +202,7 @@ In this situation, [check the credentials entered](https://docs.ovh.com/sg/en/ho
 
 The maximum number of active connections for databases delivered with a shared hosting ([Start SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/)) is **30**.
 
-A "Too many connections" error when [connecting to phpMyAdmin](https://docs.ovh.com/sg/en/hosting/creating-database/#accessing-the-phpmyadmin-interface) appears, if this maximum number of connections is exceeded.
+A "Too many connections" error when [connecting to phpMyAdmin](/pages/web/hosting/sql_create_database#accessing-the-phpmyadmin-interface) appears, if this maximum number of connections is exceeded.
 
 In this situation, you will need to [optimise your databases](https://docs.ovh.com/sg/en/hosting/configure-optimise-database-server/#managing-your-databases) in order to reduce the number of active connections.
 
@@ -234,7 +231,7 @@ Check the server name for the relevant database service in your [OVHcloud Contro
 ## Go further <a name="gofurther"></a>
 
 
-[Resolving the most common 1-click module errors](https://docs.ovh.com/sg/en/hosting/error-frequently-1-click-modules/)
+[Resolving the most common 1-click module errors](/pages/web/hosting/diagnostic_errors_module1clic)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
 

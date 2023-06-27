@@ -1,9 +1,6 @@
 ---
 title: "Tutorial: Reescribir la URL de acceso a mi sitio web con el mod_rewrite a través del archivo .htaccess"
 excerpt: "Descubra cómo reescribir la URL de acceso a su sitio web utilizando el mod_rewrite a través del archivo .htaccess"
-slug: web_hosting_htaccess_reescritura_de_url_con_mod_rewrite
-section: Reescritura y autenticación
-order: 03
 updated: 2022-12-22
 ---
 
@@ -53,7 +50,7 @@ El archivo ".htaccess" en el que va a configurar el "**mod_rewrite**" de Apache 
 
 La configuración de un archivo ".htaccess" se aplica al directorio en el que está y a todos sus subdirectorios.
 
-Para editar o crear directorios, conéctese al espacio FTP de su alojamiento. Si lo necesita, consulte la guía "[Acceder a mi espacio de almacenamiento](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/)".
+Para editar o crear directorios, conéctese al espacio FTP de su alojamiento. Si lo necesita, consulte la guía "[Acceder a mi espacio de almacenamiento](/pages/web/hosting/ftp_connection)".
 
 A continuación se muestran algunos de los ejemplos más comunes de uso del "**mod_rewrite**" de Apache. Algunos de ellos también pueden favorecer el posicionamiento SEO de su sitio web.
 
@@ -97,7 +94,7 @@ Esta reescritura de URL puede favorecer el posicionamiento SEO de su sitio web.
 
 Cuando se utiliza un alojamiento compartido de OVHcloud, el dominio (por ejemplo **domain.tld**) se declara en `Multisitios` para mostrar el contenido de una carpeta de destino llamada también `carpeta raíz`. Puede personalizar el nombre de la `carpeta raíz`.
 
-Si desea más información sobre el asunto, consulte nuestra guía sobre la [configuración de un multisitio en un alojamiento compartido](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/).
+Si desea más información sobre el asunto, consulte nuestra guía sobre la [configuración de un multisitio en un alojamiento compartido](/pages/web/hosting/multisites_configure_multisite).
 
 Algunos usuarios no ubican su sitio web directamente en la base de la `carpeta raíz`. Crean una subcarpeta (por ejemplo: **MyWebsite**) en su `carpeta raíz` para poner su sitio web en ella.
 
@@ -120,7 +117,7 @@ En nuestro ejemplo, fuerza la dirección del sitio web a ser de tipo **http://do
 
 Los certificados SSL permiten cifrar los intercambios efectuados en HTTP con su sitio web. Esto impide que personas o robots maliciosos recojan los datos intercambiados entre el sitio y el visitante, como por ejemplo coordenadas bancarias.
 
-Si no tiene certificado SSL, consulte nuestra guía sobre la [gestión de un certificado SSL en un alojamiento compartido de OVHcloud](https://docs.ovh.com/es/hosting/gestionar-un-certificado-ssl-en-un-alojamiento-web/).
+Si no tiene certificado SSL, consulte nuestra guía sobre la [gestión de un certificado SSL en un alojamiento compartido de OVHcloud](/pages/web/hosting/ssl_on_webhosting).
 
 Algunos de sus visitantes pueden olvidar introducir la URL de acceso a su sitio en **https://** : esto representa un riesgo nada desdeñable para los datos intercambiados entre su sitio web y sus navegadores de internet.
 
@@ -136,9 +133,9 @@ En nuestro ejemplo, todas las consultas realizadas con una URL en "**http://**" 
   
 ## Más información <a name="go-further"></a>
 
-[Bloquear el acceso a mi sitio web para algunas direcciones IP a través de un archivo .htaccess](https://docs.ovh.com/es/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/)
+[Bloquear el acceso a mi sitio web para algunas direcciones IP a través de un archivo .htaccess](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website)
 
-[Proteger la interfaz de administración de su sitio web mediante un archivo .htaccess](https://docs.ovh.com/es/hosting/compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion/)
+[Proteger la interfaz de administración de su sitio web mediante un archivo .htaccess](/pages/web/hosting/htaccess_protect_directory_by_password)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 

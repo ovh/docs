@@ -1,8 +1,5 @@
 ---
 title: Going Live - Troubleshooting
-slug: domains-troubleshoot
-section: Domains
-order: 7
 updated: 2021-05-11
 ---
 

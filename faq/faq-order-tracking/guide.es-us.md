@@ -33,7 +33,7 @@ Puede consultar el estado de sus últimos pedidos directamente desde el panel de
 
 #### Ideas y consejos
 
-Para ayudarle a gestionar sus pedidos, ponemos a su disposición una [guía detallada](https://docs.ovh.com/us/es/billing/gestionar-los-pedidos-en-ovh/).
+Para ayudarle a gestionar sus pedidos, ponemos a su disposición una [guía detallada](/pages/account/billing/managing_ovh_orders).
 
 ### ¿Cómo modificar un pedido?
 
@@ -47,7 +47,7 @@ Si ya ha abonado el pedido, puede contactar con nuestro [servicio de atención a
 
 Si no realiza el pago, el pedido se cancelará automáticamente al cabo de un período que puede oscilar entre 24 horas y una semana (en función del servicio) sin que usted tenga que hacer nada.
 
-Si es un usuario particular y ya ha abonado el pedido, dispone de un plazo de 14 días para desistir del mismo siempre que este no se refiera a un servicio personalizado (como un nombre de dominio o un certificado SSL) o una licencia (como Exchange, Office 365 o SharePoint). En [esta guía](https://docs.ovh.com/us/es/billing/gestionar-los-pedidos-en-ovh/#ejercer-el-derecho-de-desistimiento) ofrecemos información detallada al respecto.
+Si es un usuario particular y ya ha abonado el pedido, dispone de un plazo de 14 días para desistir del mismo siempre que este no se refiera a un servicio personalizado (como un nombre de dominio o un certificado SSL) o una licencia (como Exchange, Office 365 o SharePoint). En [esta guía](/pages/account/billing/managing_ovh_orders#ejercer-el-derecho-de-desistimiento) ofrecemos información detallada al respecto.
 
 #### Ideas y consejos
 

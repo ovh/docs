@@ -1,9 +1,6 @@
 ---
 title: 'Maîtriser et sécuriser votre serveur dédié ESXi dès son premier démarrage'
-slug: esxi-hardening
 excerpt: 'Découvrez les différents moyens vous permettant de sécuriser efficacement votre serveur dédié ESXi'
-section: 'Sécurité'
-order: 5
 updated: 2023-03-07
 ---
 
@@ -24,7 +21,7 @@ Nous nous appuierons pour cela sur les fonctions embarquées que propose VMware,
 > 
 > Récemment, les systèmes ESXi ont été victimes d'une faille que des groupes malveillants ont exploitée très rapidement à travers les réseaux publics.
 >
-> Vous trouverez plus d'informations sur cette attaque dans [une FAQ complémentaire](https://docs.ovh.com/fr/dedicated/esxi-faq/).
+> Vous trouverez plus d'informations sur cette attaque dans [une FAQ complémentaire](/pages/cloud/dedicated/faq-esxi).
 >
 
 ### Rappel des bonnes pratiques de sécurité :
@@ -44,7 +41,7 @@ Nous nous appuierons pour cela sur les fonctions embarquées que propose VMware,
 
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 - Posséder un serveur dédié avec la solution ESXi déployée.
-- Avoir souscrit à une offre compatible avec notre fonctionnalité [Network Firewall](https://docs.ovh.com/fr/dedicated/firewall-network/) si vous souhaitez l'utiliser pour effectuer le filtrage.
+- Avoir souscrit à une offre compatible avec notre fonctionnalité [Network Firewall](/pages/cloud/dedicated/firewall_network) si vous souhaitez l'utiliser pour effectuer le filtrage.
 
 ## En pratique
 
@@ -62,7 +59,7 @@ Rappel de sa définition et son principe de fonctionnement :
 > 
 > Si ce système se déclenche et que vous souhaitez vous connecter à votre ESXi immédiatement, il vous faudra déverrouiller manuellement le compte administrateur.
 >
-> Pour cela, il vous sera nécessaire de [redémarrer](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/#redemarrage-de-votre-serveur-dedie) votre serveur ESXi à travers l'espace client OVHcloud.
+> Pour cela, il vous sera nécessaire de [redémarrer](/pages/cloud/dedicated/getting-started-with-dedicated-server#redemarrage-de-votre-serveur-dedie) votre serveur ESXi à travers l'espace client OVHcloud.
 > 
 
 Vous pouvez consulter l'historique des logs d'accès dans les fichiers suivants à partir d'un shell SSH :
@@ -95,7 +92,7 @@ Toutes ces informations sont également disponibles à travers l'interface d'adm
 > Pour rappel, le Network Firewall n’est pas pris en compte au sein du réseau OVHcloud. Par conséquent, les règles configurées n’affectent pas les connexions provenant de ce réseau interne.
 >
 
-Nous vous proposons d'activer et d'utiliser notre solution de filtrage [Network Firewall](https://docs.ovh.com/fr/dedicated/firewall-network/).
+Nous vous proposons d'activer et d'utiliser notre solution de filtrage [Network Firewall](/pages/cloud/dedicated/firewall_network).
 Cette solution vous permettra de gérer facilement les accès légitimes, en complément de ceux que vous aurez mis en place à travers votre système ESXi.
 
 Elle vous évitera aussi de verrouiller inopinément votre compte administrateur en cas d'attaque.

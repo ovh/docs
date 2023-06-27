@@ -1,8 +1,6 @@
 ---
 title: Deploy di cPanel su un VPS
-slug: cpanel
 excerpt: Come installare un VPS con l'applicazione cPanel preinstallata.
-section: Utilizzo avanzato
 updated: 2021-10-14
 ---
 
@@ -76,7 +74,7 @@ A questo punto dovresti essere in grado di connetterti a WHM e in SSH utilizzand
 
 Ti consigliamo di adottare tutte le misure necessarie a proteggere il tuo WHM e il tuo VPS. Per effettuare questa operazione, ti consigliamo di consultare [qui](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external} le raccomandazioni di cPanel.
 
-Ti consigliamo inoltre di consultare la nostra guida per [proteggere un VPS](../consigli-sicurezza-vps/), utilizzare [le nostre soluzioni di backup](../) e configurare il [Network Firewall](../../dedicated/firewall-network/).
+Ti consigliamo inoltre di consultare la nostra guida per [proteggere un VPS](/pages/cloud/vps/secure_your_vps), utilizzare [le nostre soluzioni di backup](/products/bare-metal-cloud-virtual-private-servers) e configurare il [Network Firewall](/pages/cloud/dedicated/firewall_network).
 
 ## Per saperne di più
 

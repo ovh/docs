@@ -1,9 +1,6 @@
 ---
 title: MySQL - Connect with Python
 excerpt: Connect to your Public Cloud Databases for MySQL using the Python programming language
-slug: mysql/connect-python
-section: MySQL - Guides
-order: 050
 updated: 2022-03-08
 ---
 
@@ -21,14 +18,14 @@ You can find an example on the [Github examples repository](https://github.com/o
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 - A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
-- A MySQL database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/us/en/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your MySQL instance](https://docs.ovh.com/us/en/publiccloud/databases/mysql/configure-mysql-instance/) to accept incoming connections
+- A MySQL database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your MySQL instance](/pages/platform/databases/mysql_07_prepare_for_incoming_connections) to accept incoming connections
 - A Python environment with a stable version and public network connectivity (Internet). This guide was made using Python 3.9.7.
 
 ## Concept
 
 A MySQL instance can be managed through multiple ways.
-One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to MySQL with CLI](https://docs.ovh.com/us/en/publiccloud/databases/mysql/connect-cli).
+One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to MySQL with CLI](/pages/platform/databases/mysql_03_connect_cli).
 
 Another way is to interact directly using a programming language, such as Python.
 Python is one of the major programming languages in the world, especially in the Data ecosystem.

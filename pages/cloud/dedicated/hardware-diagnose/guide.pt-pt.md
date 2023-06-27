@@ -1,8 +1,6 @@
 ---
 title: 'Diagnosticar avarias materiais num servidor dedicado'
-slug: diagnostico-avarias-materiais-servidor-dedicado
 excerpt: 'Saiba como utilizar as ferramentas de diagnóstico para identificar avarias materiais no seu servidor'
-section: Diagnóstico e Modo Rescue
 updated: 2022-12-15
 ---
 
@@ -21,7 +19,7 @@ O desgaste de um servidor ao longo do tempo pode causar avarias materiais, origi
 ## Requisitos
 
 - Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/).
-- Reiniciar o servidor em [Modo Rescue](https://docs.ovh.com/pt/dedicated/rescue_mode/).
+- Reiniciar o servidor em [Modo Rescue](/pages/cloud/dedicated/rescue_mode).
 
 ## Instruções
 

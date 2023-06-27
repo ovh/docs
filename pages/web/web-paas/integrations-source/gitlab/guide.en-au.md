@@ -1,7 +1,5 @@
 ---
 title: GitLab
-slug: gitlab
-section: Source
 updated: 2021-05-11
 ---
 
@@ -91,7 +89,7 @@ You can now start pushing code, creating new branches or opening merge requests 
 
 ### 4. Validate the integration
 
-You can then verify that your integration is functioning properly [using the CLI](../../integrations-overview#validating-integrations) command
+You can then verify that your integration is functioning properly [using the CLI](/pages/web/web-paas/integrations-overview#validating-integrations) command
 
 ```bash
 webpaas integration:validate
@@ -105,6 +103,6 @@ However, environments based on (non-merge-request) **branches** cannot have pare
 
 ## Clones and commits
 
-When you run `webpaas get <projectID>` or use the clone command shown in the "Git" dropdown in the management console to clone the project, you will actually be cloning from your remote integrated repository, so long as you have the [appropriate access to do so](../../administration-users#user-access-and-integrations). 
+When you run `webpaas get <projectID>` or use the clone command shown in the "Git" dropdown in the management console to clone the project, you will actually be cloning from your remote integrated repository, so long as you have the [appropriate access to do so](/pages/web/web-paas/administration-users#user-access-and-integrations). 
 
 Your GitLab repository is considered by Web PaaS to be the "source of truth" for the project. The project is only a mirror of that repository, and all commits should be pushed only to GitLab.

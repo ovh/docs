@@ -1,10 +1,8 @@
 ---
 title: IP-ACL-Erstellung (EN)
-slug: ceph/create-an-ip-acl
 excerpt: This guide shows you how to create an IP ACL to allow access to your ceph cluster.
-section: Cloud Disk Array
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/block-storage/ceph/create-an-ip-acl/'
+    canonical: '/pages/cloud/storage/block_storage/ceph_create_an_ip_acl'
 updated: 2018-03-26
 ---
 

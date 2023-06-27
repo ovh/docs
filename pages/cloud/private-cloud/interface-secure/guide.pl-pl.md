@@ -1,9 +1,6 @@
 ---
 title: 'Bezpieczny interfejs'
-slug: bezpieczny-interfejs
 excerpt: 'Dowiedz się, jak korzystać z bezpiecznego interfejsu w infrastrukturach HDS lub PCI-DSS'
-section: 'Usługi i opcje OVHcloud'
-order: 04
 updated: 2022-10-12
 ---
 
@@ -24,7 +21,7 @@ OVHcloud zapewnia bezpieczny interfejs umożliwiający potwierdzanie wrażliwych
 
 Zatwierdzanie operacji „wrażliwych” w bezpiecznym interfejsie jest możliwe wyłącznie dla użytkowników posiadających uprawnienie **token validator**. Administrator ma już to uprawnienie, ponieważ jest ono niezbędne do włączenia opcji **advanced security**. 
 
-Pamiętaj, że uprawnienie to można przyznać także innym użytkownikom za pośrednictwem Panelu klienta OVHcloud. W razie takiej potrzeby skorzystaj z dokumentacji [Prezentacja Panelu klienta Private Cloud OVHcloud](../manager-ovh-private-cloud/).
+Pamiętaj, że uprawnienie to można przyznać także innym użytkownikom za pośrednictwem Panelu klienta OVHcloud. W razie takiej potrzeby skorzystaj z dokumentacji [Prezentacja Panelu klienta Private Cloud OVHcloud](/pages/cloud/private-cloud/manager_ovh_private_cloud).
 
 Za pośrednictwem bezpiecznego interfejsu możesz wykonać trzy rodzaje operacji. W zależności od wykonywanej operacji, zapoznaj się z odpowiednim rozdziałem niniejszego przewodnika:
 
@@ -53,7 +50,7 @@ Wiadomość ta zawiera następujące informacje:
 - nazwa operacji wymagająca zatwierdzenia;
 - ID operacji;
 - token do zatwierdzenia operacji;
-- link umożliwiający zatwierdzenie operacji (pamiętaj, że jeśli Twój telefon nie jest podłączony do sieci z [autoryzowanym IP](../manager-ovh-private-cloud/#bezpieczenstwo), strona się nie wyświetli).
+- link umożliwiający zatwierdzenie operacji (pamiętaj, że jeśli Twój telefon nie jest podłączony do sieci z [autoryzowanym IP](/pages/cloud/private-cloud/manager_ovh_private_cloud#bezpieczenstwo), strona się nie wyświetli).
 
 Aby zatwierdzić operację, kliknij link otrzymany w wiadomości. Następnie przejdź do sekcji `Operation validation`{.action}.
 

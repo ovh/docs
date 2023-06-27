@@ -1,8 +1,6 @@
 ---
 title: Überprüfen ob Ihr Dedicated Server virtuelle MAC-Adressen unterstützt
-slug: network-support-virtual-mac
 excerpt: Erfahren Sie hier, wie Sie mit der OVHcloud API feststellen, ob virtuelle MAC-Adressen auf einem dedizierten Server unterstützt werden
-section: Netzwerk & IP
 updated: 2021-12-09
 ---
 
@@ -26,7 +24,7 @@ Die Unterstützung der vMAC-Funktionalität ist eine Voraussetzung für alle Akt
 - Sie können sich in der [OVHcloud API-Konsole](https://api.ovh.com/) einloggen.
 
 > [!primary]
-> Wenn Sie mit der Verwendung der OVHcloud API nicht vertraut sind, lesen Sie unsere Anleitung zu den [ersten Schritten mit der OVHcloud API](https://docs.ovh.com/de/api/first-steps-with-ovh-api/).
+> Wenn Sie mit der Verwendung der OVHcloud API nicht vertraut sind, lesen Sie unsere Anleitung zu den [ersten Schritten mit der OVHcloud API](/pages/account/api/first-steps).
 
 ## In der praktischen Anwendung
 
@@ -55,6 +53,6 @@ Das Ergebnis zeigt einen Eintrag mit "vmac / supported" an, der "true" oder "fal
 
 ## Weiterführende Informationen
 
-[First Steps with the OVHcloud API](https://docs.ovh.com/de/api/first-steps-with-ovh-api/)
+[First Steps with the OVHcloud API](/pages/account/api/first-steps)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/>.

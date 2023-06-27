@@ -1,9 +1,6 @@
 ---
 title: Interface securisée
-slug: interface-secure
 excerpt: Utilisation de l'interface securisée sur des infrastructure HDS ou PCI-DSS
-section: Services et options OVHcloud
-order: 04
 updated: 2022-10-12
 ---
 
@@ -24,7 +21,7 @@ OVHcloud vous met à disposition une interface sécurisée pour valider les opé
 
 La validation des opérations « sensibles » à partir de l'interface sécurisée n'est possible que pour les utilisateurs disposant de l'autorisation **token validator**. L'administrateur dispose déjà de ce privilège, car il est nécessaire d'activer l'option **advanced security**. 
 
-Notez qu'il est également possible d'accorder cette autorisation à d'autres utilisateurs via l'espace client OVHcloud. Reportez-vous si nécessaire à notre [Présentation de l’espace client Private Cloud OVHcloud](../manager-ovh-private-cloud/).
+Notez qu'il est également possible d'accorder cette autorisation à d'autres utilisateurs via l'espace client OVHcloud. Reportez-vous si nécessaire à notre [Présentation de l’espace client Private Cloud OVHcloud](/pages/cloud/private-cloud/manager_ovh_private_cloud).
 
 A partir de l'interface sécurisée, vous pouvez effectuer trois opérations. Reportez-vous à la section appropriée de ce guide, selon l'opération à effectuer :
 
@@ -53,7 +50,7 @@ Ce message contient:
 - le nom de l'opération qui nécessite une validation
 - l'ID de l'opération
 - le token de validation
-- un lien permettant de valider l'opération (notez que si votre téléphone n'est pas connecté à un réseau dont [l'adresse IP est autorisée](../manager-ovh-private-cloud/#securite), la page n'apparaîtra pas).
+- un lien permettant de valider l'opération (notez que si votre téléphone n'est pas connecté à un réseau dont [l'adresse IP est autorisée](/pages/cloud/private-cloud/manager_ovh_private_cloud#securite), la page n'apparaîtra pas).
 
 Pour valider l'opération, connectez-vous via le lien affiché dans le message. Accédez ensuite à la section `Operation validation`{.action}.
 

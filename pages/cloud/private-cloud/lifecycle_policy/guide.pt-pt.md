@@ -1,11 +1,8 @@
 ---
 title: Hosted Private Cloud VMware Lifecycle Policy (EN)
-slug: lifecycle-policy
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/lifecycle-policy/'
+    canonical: '/pages/cloud/private-cloud/lifecycle_policy'
 excerpt: 'Lifecycle policy for Hosted Private Cloud powered by VMware'
-section: FAQ
-order: 3
 updated: 2023-06-26
 ---
 

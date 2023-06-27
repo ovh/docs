@@ -1,9 +1,6 @@
 ---
 title: "Premiers pas avec l'offre MX Plan"
-slug: generalites-sur-les-emails-mutualises
 excerpt: 'Découvrez comment bien débuter avec votre offre MX Plan'
-section: 'Premiers pas'
-order: 01
 updated: 2021-07-19
 ---
 
@@ -53,7 +50,7 @@ Dans la fenêtre qui s'affiche, renseignez les informations demandées :
 |Prénom|Renseignez un prénom.|
 |Nom|Renseignez un nom.|
 |Nom à afficher|Indiquez le nom qui s'affichera en tant qu'expéditeur lorsque des e-mails seront envoyés avec cette adresse.|
-|Mot de passe|[Définissez un mot de passe](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#en-pratique) et confirmez-le. Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions à vos nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.|
+|Mot de passe|[Définissez un mot de passe](/pages/account/customer/manage-ovh-password#en-pratique) et confirmez-le. Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions à vos nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.|
 
 Une fois les champs complétés, cliquez sur `Suivant`{.action} puis vérifiez les informations qui s'affichent dans le récapitulatif. Si celles-ci sont correctes, cliquez sur `Valider`{.action}. Réalisez cette étape autant de fois que nécessaire, selon le nombre de comptes à votre disposition.
 
@@ -67,7 +64,7 @@ Une fois vos adresses e-mail créées, il ne vous reste plus qu’à les utilise
 
 Accédez à la page « [Connexion au webmail](https://www.ovh.com/fr/mail/) », puis renseignez l'adresse e-mail concernée ainsi que son mot de passe. Cliquez ensuite sur le bouton `Connexion`{.action}.
 
-Lors d'une première connexion au webmail, vous êtes invité à définir la langue de l'interface ainsi que le fuseau horaire sur lequel vous vous trouvez. Votre boîte de réception s'affiche ensuite. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail OWA, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail Outlook Web Access (OWA)](../utilisation-owa/) ».
+Lors d'une première connexion au webmail, vous êtes invité à définir la langue de l'interface ainsi que le fuseau horaire sur lequel vous vous trouvez. Votre boîte de réception s'affiche ensuite. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail OWA, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail Outlook Web Access (OWA)](/pages/web/emails/email_owa) ».
 
 ![email](images/mxplan-starter-new-step4.png){.thumbnail}
 
@@ -77,9 +74,9 @@ Pour utiliser votre adresse e-mail sur un logiciel tiers, vous devez configurer 
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
-|[Windows 10](https://docs.ovh.com/fr/emails/configuration-courrier-sur-windows-10/)|[Outlook Windows](https://docs.ovh.com/fr/emails/configuration-outlook-2016/)|[Mail de macOS (dernière version)](https://docs.ovh.com/fr/emails/guide-configuration-mail-de-mac-el-capitan/)|[Android (dernière version)](https://docs.ovh.com/fr/emails/configuration-android-6/)|
-|[Thunderbird sur Windows](https://docs.ovh.com/fr/emails/configuration-email-configuration-pour-thunderbird/)|[Outlook Mac OS](https://docs.ovh.com/fr/emails/configuration-outlook-2016-mac/)|[Mail pour iPhone ou iPad](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-iphone-ios-91/)|
-|||[Thunderbird sur Mac](https://docs.ovh.com/fr/emails/guide-de-configuration-email-pour-thunderbird-mac/)|
+|[Windows 10](/pages/web/emails/how_to_configure_windows_10)|[Outlook Windows](/pages/web/emails/how_to_configure_outlook_2016)|[Mail de macOS (dernière version)](/pages/web/emails/how_to_configure_mail_macos)|[Android (dernière version)](/pages/web/emails/how_to_configure_android)|
+|[Thunderbird sur Windows](/pages/web/emails/how_to_configure_thunderbird_windows)|[Outlook Mac OS](/pages/web/emails/how_to_configure_outlook_2016_mac)|[Mail pour iPhone ou iPad](/pages/web/emails/how_to_configure_ios)|
+|||[Thunderbird sur Mac](/pages/web/emails/how_to_configure_thunderbird_mac)|
 
 Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre adresse e-mail, retrouvez ci-dessous les paramètres à utiliser :
 
@@ -99,7 +96,7 @@ Si vous désirez simplement obtenir les éléments nécessaires pour configurer 
 
 > [!warning]
 >
-> Si vous éprouvez des difficultés dans la configuration de votre adresse e-mail sur votre appareil, [aidez-vous de nos guides de configuration](../) ou rapprochez-vous de l'éditeur de l'application que vous utilisez, la manipulation étant inhérente à cette dernière.
+> Si vous éprouvez des difficultés dans la configuration de votre adresse e-mail sur votre appareil, [aidez-vous de nos guides de configuration](/products/web-cloud-email-collaborative-solutions-mx-plan) ou rapprochez-vous de l'éditeur de l'application que vous utilisez, la manipulation étant inhérente à cette dernière.
 >
 
 #### Fonctionnalités avancées
@@ -122,31 +119,31 @@ Vous pouvez procéder de deux manières :
 
 - créer votre redirection depuis le webmail, via les règles de boite de réception. Pour cela, nous vous invitons à suivre notre guide « [Règles de boîte de réception depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/regles-boite-de-reception-owa/#exemple-1-rediriger-des-e-mails-vers-une-autre-adresse) ».
 
-- créer votre redirection depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cette méthode vous permet par exemple de créer un alias, c'est à dire rediriger une adresse e-mail qui n'existe pas vers une adresse e-mail existante. Pour cela, nous vous invitons à suivre notre guide « [Utiliser les redirections e-mail](https://docs.ovh.com/fr/emails/guide-des-redirections-emails/#nouvelle-version-de-loffre-mx-plan) ».
+- créer votre redirection depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cette méthode vous permet par exemple de créer un alias, c'est à dire rediriger une adresse e-mail qui n'existe pas vers une adresse e-mail existante. Pour cela, nous vous invitons à suivre notre guide « [Utiliser les redirections e-mail](/pages/web/emails/feature_redirections#nouvelle-version-de-loffre-mx-plan) ».
 
 ##### **Répondeur**
 
 Vous devez partir en congé ou vous n'aurez pas accès à votre adresse e-mail durant une certaine période.
 
-Vous pouvez alors créer un répondeur automatique. Nous vous invitons à suivre notre guide « [Mettre en place un répondeur automatique depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa/) ».
+Vous pouvez alors créer un répondeur automatique. Nous vous invitons à suivre notre guide « [Mettre en place un répondeur automatique depuis l’interface OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies) ».
 
 ##### **Délégations**
 
 Vous souhaitez envoyer un e-mail depuis votre adresse e-mail personnelle, **à la place** ou **de la part** d'une autre adresse e-mail de votre nom de domaine.
 
-Pour cela, vous devez configurer la délégation de l'adresse e-mail concernée. Nous vous invitons à suivre notre guide « [Déléguer des droits sur un compte](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-donner-les-droits-full-access-sur-un-compte/) ».
+Pour cela, vous devez configurer la délégation de l'adresse e-mail concernée. Nous vous invitons à suivre notre guide « [Déléguer des droits sur un compte](/pages/web/microsoft-collaborative-solutions/feature_delegation) ».
 
 ##### **Mailing-lists**
 
 Vous souhaitez envoyer régulièrement une newsletter à vos contacts.
 
-Pour cela, vous pouvez créer une mailing list. Nous vous invitons à suivre notre guide « [Gérer et utiliser les mailing lists](https://docs.ovh.com/fr/emails/guide-dutilisation-mailing-list/) ».
+Pour cela, vous pouvez créer une mailing list. Nous vous invitons à suivre notre guide « [Gérer et utiliser les mailing lists](/pages/web/emails/feature_mailing_list) ».
 
 ##### **Pied de page**
 
 Vous souhaitez appliquer une signature globale à l'ensemble des adresses e-mail de votre nom de domaine.
 
-Le « pied de page » vous le permet, il est configurable depuis votre espace client. Nous vous invitons à suivre notre guide « [Ajouter un pied de page sur vos e-mails](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-signature-automatique-disclaimer/) ».
+Le « pied de page » vous le permet, il est configurable depuis votre espace client. Nous vous invitons à suivre notre guide « [Ajouter un pied de page sur vos e-mails](/pages/web/microsoft-collaborative-solutions/feature_footers) ».
 
 ### Version historique de l'offre MX Plan <a name="oldmxplan"></a>
 
@@ -183,7 +180,7 @@ Une fois vos adresses e-mail créées, il ne vous reste plus qu’à les utilise
 
 Accédez à la page « [Connexion au webmail](https://www.ovh.com/fr/mail/) », puis renseignez l'adresse e-mail concernée ainsi que son mot de passe. Cliquez ensuite sur le bouton `Connexion`{.action}.
 
-Votre boîte de réception s'affiche alors. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail RoundCube, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail RoundCube](../utilisation-roundcube/) ».
+Votre boîte de réception s'affiche alors. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail RoundCube, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail RoundCube](/pages/web/emails/email_roundcube) ».
 
 ![email](images/mxplan-starter-legacy-step4.png){.thumbnail}
 
@@ -193,9 +190,9 @@ Pour utiliser votre adresse e-mail sur un logiciel tiers, vous devez configurer 
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
-|[Windows 10](https://docs.ovh.com/fr/emails/configuration-courrier-sur-windows-10/)|[Outlook Windows](https://docs.ovh.com/fr/emails/configuration-outlook-2016/)|[Mail de macOS (dernière version)](https://docs.ovh.com/fr/emails/guide-configuration-mail-de-mac-el-capitan/)|[Android (dernière version)](https://docs.ovh.com/fr/emails/configuration-android-6/)|
-|[Thunderbird sur Windows](https://docs.ovh.com/fr/emails/configuration-email-configuration-pour-thunderbird/)|[Outlook Mac OS](https://docs.ovh.com/fr/emails/configuration-outlook-2016-mac/)|[Mail pour iPhone ou iPad](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-iphone-ios-91/)||
-|||[Thunderbird sur Mac](https://docs.ovh.com/fr/emails/guide-de-configuration-email-pour-thunderbird-mac/)|| |
+|[Windows 10](/pages/web/emails/how_to_configure_windows_10)|[Outlook Windows](/pages/web/emails/how_to_configure_outlook_2016)|[Mail de macOS (dernière version)](/pages/web/emails/how_to_configure_mail_macos)|[Android (dernière version)](/pages/web/emails/how_to_configure_android)|
+|[Thunderbird sur Windows](/pages/web/emails/how_to_configure_thunderbird_windows)|[Outlook Mac OS](/pages/web/emails/how_to_configure_outlook_2016_mac)|[Mail pour iPhone ou iPad](/pages/web/emails/how_to_configure_ios)||
+|||[Thunderbird sur Mac](/pages/web/emails/how_to_configure_thunderbird_mac)|| |
 
 Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre adresse e-mail, retrouvez ci-dessous les paramètres à utiliser :
 
@@ -215,7 +212,7 @@ Si vous désirez simplement obtenir les éléments nécessaires pour configurer 
 
 > [!warning]
 >
-> Si vous éprouvez des difficultés dans la configuration de votre adresse e-mail sur votre appareil, [aidez-vous de nos guides de configuration](../) ou rapprochez-vous de l'éditeur de l'application que vous utilisez, la manipulation étant inhérente à cette dernière.
+> Si vous éprouvez des difficultés dans la configuration de votre adresse e-mail sur votre appareil, [aidez-vous de nos guides de configuration](/products/web-cloud-email-collaborative-solutions-mx-plan) ou rapprochez-vous de l'éditeur de l'application que vous utilisez, la manipulation étant inhérente à cette dernière.
 
 #### Fonctionnalités avancées
 
@@ -223,25 +220,25 @@ Si vous désirez simplement obtenir les éléments nécessaires pour configurer 
 
 Vous souhaitez rediriger vos e-mails vers un autre destinataire, créer un alias ou encore mettre systématiquement en copie une autre adresse e-mail.
 
-Pour cela il vous faut créer une redirection. Nous vous invitons à suivre notre guide « [Utiliser les redirections e-mail](https://docs.ovh.com/fr/emails/guide-des-redirections-emails/#version-historique-de-loffre-mx-plan) ».
+Pour cela il vous faut créer une redirection. Nous vous invitons à suivre notre guide « [Utiliser les redirections e-mail](/pages/web/emails/feature_redirections#version-historique-de-loffre-mx-plan) ».
 
 ##### **Répondeur**
 
 Vous devez partir en congé ou vous n'aurez pas accès à votre adresse e-mail durant une certaine période.
 
-Vous pouvez alors utiliser le répondeur automatique sur votre adresse e-mail. Nous vous invitons à suivre notre guide « [Créer un répondeur pour son adresse e-mail](https://docs.ovh.com/fr/emails/mise-en-place-repondeur-mail/) ».
+Vous pouvez alors utiliser le répondeur automatique sur votre adresse e-mail. Nous vous invitons à suivre notre guide « [Créer un répondeur pour son adresse e-mail](/pages/web/emails/feature_auto_responses) ».
 
 ##### **Délégations**
 
 Vous souhaitez **déléguer tout le service email d’un nom de domaine à un autre compte OVHcloud** ou **déléguer un ou plusieurs comptes emails à un autre compte OVHcloud**, pour, par exemple, permettre au titulaire de cet autre compte OVHcloud de modifier le mot de passe d'une adresse e-mail.
 
-Nous vous invitons à suivre notre guide « [Déléguer la gestion de vos e-mails à une autre personne](https://docs.ovh.com/fr/emails/deleguer-gestion-emails-autre-identifiant/) ».
+Nous vous invitons à suivre notre guide « [Déléguer la gestion de vos e-mails à une autre personne](/pages/web/emails/feature_delegation) ».
 
 ##### **Mailing-lists**
 
 Vous souhaitez envoyer régulièrement une newsletter à vos contacts.
 
-Pour cela, vous pouvez créer une mailing list. Nous vous invitons à suivre notre guide « [Gérer et utiliser les mailing lists](https://docs.ovh.com/fr/emails/guide-dutilisation-mailing-list/) ».
+Pour cela, vous pouvez créer une mailing list. Nous vous invitons à suivre notre guide « [Gérer et utiliser les mailing lists](/pages/web/emails/feature_mailing_list) ».
 
 ## Aller plus loin
 

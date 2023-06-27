@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Utilizar o FileZilla com o seu alojamento OVHcloud"
-slug: partilhado_guia_de_utilizacao_do_filezilla
 excerpt: "Encontre aqui um tutorial para a utilização do software Filezilla no seu alojamento partilhado"
-section: FTP e SSH
-order: 01
 updated: 2022-09-13
 ---
 
@@ -17,7 +14,7 @@ updated: 2022-09-13
 ## Objetivo
 
 O FileZilla é um software disponível gratuitamente em vários sistemas operativos (Windows, macOS, etc.).
-Permite publicar ficheiros ou o seu website [acedendo ao espaço FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) do seu alojamento.
+Permite publicar ficheiros ou o seu website [acedendo ao espaço FTP](/pages/web/hosting/ftp_connection) do seu alojamento.
 
 **Saiba como utilizar o software Filezilla com o seu alojamento partilhado.**
 
@@ -135,7 +132,7 @@ Este tipo de mensagem é gerada por um erro no binário Login/Palavra-passe.
 Verifique os seus dados de acesso para garantir que não há erros. Se necessário, pode alterar a palavra-passe do acesso FTP do seu alojamento diretamente na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 > [!success]
-> Está disponível um guia sobre a [alteração da palavra-passe FTP](https://docs.ovh.com/pt/hosting/alterar-palavra-passe-utilizador-ftp/) nas ofertas partilhadas.
+> Está disponível um guia sobre a [alteração da palavra-passe FTP](/pages/web/hosting/ftp_change_password) nas ofertas partilhadas.
 
 No caso abaixo, o erro é gerado por um nome de host incorreto:
 
@@ -220,7 +217,7 @@ Esta situação terá por efeito alterar os direitos do processo em questão, be
 >
 > Independentemente de uma ação da sua parte, o seu alojamento pode ser desativado após a deteção de ficheiros maliciosos ou não autorizados no seu alojamento pelos nossos sistemas de segurança.
 >
-> Deverá [proteger as suas soluções](https://docs.ovh.com/pt/hosting/diagnostico-403-forbidden/) corrigindo as falhas de segurança evocadas na notificação de bloqueio recebida por e-mail.
+> Deverá [proteger as suas soluções](/pages/web/hosting/diagnostic_403_forbidden) corrigindo as falhas de segurança evocadas na notificação de bloqueio recebida por e-mail.
 >
 
 A seguir, clique em `Servidor`{.action} e selecione `Introduza um comando personalizado`{.action} (esta opção pode também chamar-se `Introduza um comando FTP`{.action}).
@@ -286,9 +283,9 @@ Ao clicar direito no ícone, pode alterar o método de comparação. Ser-lhe-á 
 
 ## Quer saber mais? <a name="go-further"></a>
 
-A seguir, encontrará o link para o nosso manual para [corrigir erros recorrentes durante a utilização de um programa FTP](https://docs.ovh.com/pt/hosting/partilhando-os-problemas-ftp-recrutamento/).
+A seguir, encontrará o link para o nosso manual para [corrigir erros recorrentes durante a utilização de um programa FTP](/pages/web/hosting/ftp_recurring_ftp_problems).
 
-De forma mais geral, consulte [o conjunto dos nossos guias relativos aos alojamentos partilhados](https://docs.ovh.com/pt/hosting/).
+De forma mais geral, consulte [o conjunto dos nossos guias relativos aos alojamentos partilhados](/products/web-cloud-hosting).
 
 Não hesite em consultar a [página oficial do Filezilla](https://filezilla-project.org/).
 

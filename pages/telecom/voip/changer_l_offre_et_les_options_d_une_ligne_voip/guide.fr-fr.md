@@ -1,12 +1,9 @@
 ---
 title: 'Gérer vos services VoIP'
-slug: changer-l-offre-et-les-options-d-une-ligne-voip
 excerpt: "Découvrez comment gérer vos services VoIP depuis l'espace client OVHcloud"
 legacy_guide_number: '7536704'
 space_key: CRTEL
 space_name: Téléphonie
-section: Administratif
-order: 1
 updated: 2022-02-15
 ---
 
@@ -60,7 +57,7 @@ Vous pouvez adapter le nombre d'appels simultanés sur une ligne VoIP Entreprise
 > [!primary]
 >
 > Une ligne VoIP découverte est limitée à 1 seul appel simultané. 
->Si vous souhaitez augmenter le nombre d'appels simultanés sur une ligne VoIP Découverte, il sera nécessaire de la [convertir en ligne VoIP Entreprise](https://docs.ovh.com/fr/voip/changer-l-offre-et-les-options-d-une-ligne-voip/#changer-doffre-voip).
+>Si vous souhaitez augmenter le nombre d'appels simultanés sur une ligne VoIP Découverte, il sera nécessaire de la [convertir en ligne VoIP Entreprise](/pages/telecom/voip/changer_l_offre_et_les_options_d_une_ligne_voip#changer-doffre-voip).
 >
 
 Sélectionnez votre ligne VoIP puis l'onglet `Gestion des appels`{.action} (1). Cliquez alors sur `Appels simultanés`{.action} (2).
@@ -83,14 +80,14 @@ Si vous souhaitez diminuer le nombre d'appels simultanés sur une ligne, ce chan
 ### Convertir une ligne SIP en numéro alias
 
 Les besoins en téléphonie d'une entreprise peuvent évoluer fréquemment. Il est donc possible de convertir une ligne SIP en numéro alias. Cela permet notamment, une fois la conversion faite, de faire sonner plusieurs lignes lorsque le numéro est appelé.<br>
-Pour plus d'informations sur les différences entre une ligne SIP et un numéro alias, consultez [notre FAQ](https://docs.ovh.com/fr/voip/faq-voip/)
+Pour plus d'informations sur les différences entre une ligne SIP et un numéro alias, consultez [notre FAQ](/pages/telecom/voip/faq-voip)
 
 > [!success]
 >
 > **Cas d'usage :**
 >
 > Une entreprise a commandé une ligne SIP afin d'être contactée par sa clientèle.
-> L'entreprise évoluant, le standard doit au final être assuré par plusieurs personnes. Une ligne SIP ne pouvant être partagée sur plusieurs postes, la solution est alors de convertir cette ligne SIP en numéro alias, afin d'y configurer une [file d'appels](https://docs.ovh.com/fr/voip/les-files-d-appels/) ou un [serveur vocal interactif](https://docs.ovh.com/fr/voip/svi-serveur-vocal-interactif/) ou un « [contact center solution](https://docs.ovh.com/fr/voip/contact-center-solution/) ».
+> L'entreprise évoluant, le standard doit au final être assuré par plusieurs personnes. Une ligne SIP ne pouvant être partagée sur plusieurs postes, la solution est alors de convertir cette ligne SIP en numéro alias, afin d'y configurer une [file d'appels](/pages/telecom/voip/les_files_d_appels) ou un [serveur vocal interactif](/pages/telecom/voip/svi_serveur_vocal_interactif) ou un « [contact center solution](/pages/telecom/voip/contact-center-solution) ».
 > Ainsi, le numéro connu par la clientèle de l'entreprise restera le même et permettra de faire sonner plusieurs nouvelles lignes (celles-ci devant être également commandées).
 >
 
@@ -102,7 +99,7 @@ Prenez connaissance des informations liées à cette conversion et confirmez-la.
 
 Toute demande de conversion sera prise en compte lors de votre prochaine facturation. Jusqu'à cette date, l'annulation d'une conversion restera possible.
 
-Une fois la conversion réalisée, votre ligne ne sera plus opérationnelle et vous ne pourrez plus faire d'appels sortants, car le numéro sera transformé en alias. Prenez connaissances des [configurations possibles sur un numéro alias](https://docs.ovh.com/fr/voip/quelle-configuration-est-adaptee-a-mes-besoins/).
+Une fois la conversion réalisée, votre ligne ne sera plus opérationnelle et vous ne pourrez plus faire d'appels sortants, car le numéro sera transformé en alias. Prenez connaissances des [configurations possibles sur un numéro alias](/pages/telecom/voip/quelle_configuration_est_adaptee_a_mes_besoins).
 
 > [!warning]
 > 
@@ -126,8 +123,8 @@ Vous devez alors:
 
 Toute demande de conversion sera prise en compte lors de votre prochaine facturation. Jusqu'à cette date, l'annulation d'une conversion restera possible.
 
-Une fois la conversion effectuée, vous disposerez d'une ligne SIP seule, sans matériel associé. Vous pourrez lui [associer un téléphone Plug & Phone OVHcloud](https://docs.ovh.com/fr/voip/commander-associer-ou-changer-un-telephone/#obtenir-un-telephone-plug-phone-ovhcloud) ou enregistrer la ligne sur votre propre matériel ou logiciel.<br>
-Dans ce dernier cas de figure, nous vous invitons de sécuriser votre ligne en suivant les instructions de [ce guide](https://docs.ovh.com/fr/voip/securiser-ligne-sip/).
+Une fois la conversion effectuée, vous disposerez d'une ligne SIP seule, sans matériel associé. Vous pourrez lui [associer un téléphone Plug & Phone OVHcloud](/pages/telecom/voip/commander_associer_ou_changer_un_telephone#obtenir-un-telephone-plug-phone-ovhcloud) ou enregistrer la ligne sur votre propre matériel ou logiciel.<br>
+Dans ce dernier cas de figure, nous vous invitons de sécuriser votre ligne en suivant les instructions de [ce guide](/pages/telecom/voip/secure-sip-line).
 
 ### Résilier une ligne SIP / Trunk <a name="resilier-sip-trunk"></a>
 

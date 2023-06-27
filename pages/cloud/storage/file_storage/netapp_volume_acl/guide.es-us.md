@@ -1,9 +1,6 @@
 ---
 title: Enterprise File Storage - Gestionar las ACL de un volumen
-slug: netapp/volume-acl
 excerpt: Cómo gestionar las ACL de un volumen Enterprise File Storage utilizando las API de OVHcloud
-section: Enterprise File Storage
-order: 041
 updated: 2021-10-27
 ---
 

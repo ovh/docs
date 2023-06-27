@@ -1,8 +1,6 @@
 ---
 title: 'Enregistrer une ligne SIP OVHcloud sur Zoiper'
-slug: enregistrer-ligne-sip-zoiper
 excerpt: 'Découvrez comment enregistrer une ligne SIP OVHcloud sur le softphone Zoiper'
-section: Tutoriels
 hidden: true
 kb: Web Cloud
 category_l1: Phone and Fax
@@ -29,7 +27,7 @@ Le logiciel [Zoiper](https://www.zoiper.com/){.external} est un softphone (logic
 ## Prérequis
 
 - Disposer d'une [ligne SIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/){.external}
-- [Disposer des identifiants de votre ligne SIP OVHcloud](../enregistrer-ligne-sip-softphone)
+- [Disposer des identifiants de votre ligne SIP OVHcloud](/pages/telecom/voip/register-sip-softphone)
 - Disposer du logiciel [Zoiper](https://www.zoiper.com/en/voip-softphone/download/current){.external} sur un smartphone ou un ordinateur
 
 ## En pratique
@@ -70,16 +68,16 @@ Vous pouvez dès lors être joint et composer des appels depuis votre ligne SIP 
 
 ### Dépannage
 
-Si l'enregistrement a échoué, vérifiez que vous avez bien saisi les identifiants SIP OVHcloud, notamment le mot de passe SIP. En cas d'échecs répétés, [modifiez votre mot de passe SIP depuis l'espace client OVHcloud](https://docs.ovh.com/fr/voip/modifier-mot-de-passe-ligne-sip/) et refaites un essai d'enregistrement avec un nouveau mot de passe SIP.
+Si l'enregistrement a échoué, vérifiez que vous avez bien saisi les identifiants SIP OVHcloud, notamment le mot de passe SIP. En cas d'échecs répétés, [modifiez votre mot de passe SIP depuis l'espace client OVHcloud](/pages/telecom/voip/modifier-mot-de-passe-ligne-sip) et refaites un essai d'enregistrement avec un nouveau mot de passe SIP.
 
-Vérifiez également que l'adresse IP depuis laquelle vous utilisez Zoiper fait partie des adresses IP autorisées à utiliser votre ligne SIP. Pour plus de détails, consultez le guide [Restreindre sa ligne SIP OVHcloud par IP](https://docs.ovh.com/fr/voip/restreindre-ligne-sip-par-ip/).
+Vérifiez également que l'adresse IP depuis laquelle vous utilisez Zoiper fait partie des adresses IP autorisées à utiliser votre ligne SIP. Pour plus de détails, consultez le guide [Restreindre sa ligne SIP OVHcloud par IP](/pages/telecom/voip/secure-sip-line-ovh).
 
-Vous pouvez aussi tester l'enregistrement de votre ligne [sur un autre softphone](../enregistrer-ligne-sip-linphone).
+Vous pouvez aussi tester l'enregistrement de votre ligne [sur un autre softphone](/pages/telecom/voip/register-sip-softphone-linphone).
 
 ## Aller plus loin
 
-[Utiliser une ligne SIP OVHcloud sur un softphone](../enregistrer-ligne-sip-softphone)
+[Utiliser une ligne SIP OVHcloud sur un softphone](/pages/telecom/voip/register-sip-softphone)
 
-[Utiliser une ligne SIP OVHcloud sur Linphone](../enregistrer-ligne-sip-linphone)
+[Utiliser une ligne SIP OVHcloud sur Linphone](/pages/telecom/voip/register-sip-softphone-linphone)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

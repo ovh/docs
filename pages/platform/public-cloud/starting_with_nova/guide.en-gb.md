@@ -1,9 +1,6 @@
 ---
 title: Getting started with the OpenStack API
 excerpt: Find out how to manage your instances using the Python OpenStack client
-slug: starting-with-nova-api
-section: OpenStack
-order: 3
 updated: 2022-10-13
 ---
 
@@ -26,8 +23,8 @@ For example, you can start creating an additional instance when your monitoring 
 
 Please refer to the following guides:
 
-- [Preparing an environment for using the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/)
-- [Setting OpenStack environment variables](../set-openstack-environment-variables/)
+- [Preparing an environment for using the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Setting OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## Instructions
 

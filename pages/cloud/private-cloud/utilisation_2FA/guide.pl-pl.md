@@ -1,9 +1,6 @@
 ---
 title: Używanie weryfikacji dwuetapowej (2FA) w infrastrukturze Private Cloud
-slug: uzywanie-2FA
 excerpt: Dowiedz się, jak wdrożyć weryfikację dwuetapową, aby chronić Twoją infrastrukturę
-section: Funkcjonalności OVHcloud
-order: 05
 updated: 2022-06-10
 ---
 
@@ -86,7 +83,7 @@ Jedyna różnica będzie polegała na tym, czy użytkownik będzie mógł samodz
 
 Możliwe jest korzystanie z kilku aplikacji innych firm, które wymagają zalogowania do vCenter.
 
-Aplikacje te muszą wcześniej uzyskać autoryzację poprzez politykę dostępu do vCenter, którą możesz skonfigurować w [Panelu klienta](https://docs.ovh.com/pl/private-cloud/manager-ovh-private-cloud/#bezpieczenstwo).
+Aplikacje te muszą wcześniej uzyskać autoryzację poprzez politykę dostępu do vCenter, którą możesz skonfigurować w [Panelu klienta](/pages/cloud/private-cloud/manager_ovh_private_cloud#bezpieczenstwo).
 
 Aplikacje te będą mogły uzyskać dostęp do infrastruktur OVH, ale nie będą zarządzać bezpośrednio weryfikacją dwuetapową.
 

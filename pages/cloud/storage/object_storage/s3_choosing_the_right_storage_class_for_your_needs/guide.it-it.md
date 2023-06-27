@@ -1,10 +1,7 @@
 ---
 title: Object Storage - Scegliere la classe di archiviazione giusta per le tue esigenze (EN)
-slug: s3/choosing-the-right-storage-class-for-your-needs
-section: General information
-order: 005
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/s3/choosing-the-right-storage-class-for-your-needs/'
+    canonical: '/pages/cloud/storage/object_storage/s3_choosing_the_right_storage_class_for_your_needs'
 updated: 2022-09-27
 ---
 

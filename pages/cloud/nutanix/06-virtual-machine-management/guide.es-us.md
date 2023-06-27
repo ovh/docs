@@ -1,11 +1,8 @@
 ---
 title: Gestión de las máquinas virtuales (EN)
-slug: virtual-machine-management
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/nutanix/virtual-machine-management/'
+    canonical: '/pages/cloud/nutanix/06-virtual-machine-management'
 excerpt: Discover virtual machine management in Prism Central
-section: Primeros pasos
-order: 09
 updated: 2022-05-10
 ---
 
@@ -281,9 +278,9 @@ The name of the new node will appear in front of **Host** if the migration is co
 
 ## Go further <a name="gofurther"></a>
 
-[Presentation of a Nutanix cluster](https://docs.ovh.com/us/es/nutanix/nutanix-hci/)
+[Presentation of a Nutanix cluster](/pages/cloud/nutanix/03-nutanix-hci)
 
-[Importing images into Nutanix](https://docs.ovh.com/us/es/nutanix/image-import/)
+[Importing images into Nutanix](/pages/cloud/nutanix/05-image-import)
 
 [Nutanix documentation on AHV](https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v5_20:AHV-Admin-Guide-v5_20)
 

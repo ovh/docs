@@ -1,8 +1,6 @@
 ---
 title: 'Von der stündlichen auf monatliche Abrechnung umstellen'
 excerpt: 'Erfahren Sie hier, wie Sie die Abrechnungsart Ihrer Public Cloud Instanz ändern'
-slug: abrechnungsart-aendern-public-cloud
-section: Projektverwaltung
 updated: 2023-01-23
 ---
 
@@ -59,7 +57,7 @@ Ersetzen Sie "InstanceID" mit der ID der entsprechenden Instanz. Diese Kennung k
 
 ### Über die OVHcloud API
 
-Loggen Sie sich gemäß der [entsprechenden Anleitung](https://docs.ovh.com/de/api/first-steps-with-ovh-api/) in das [OVHcloud API Interface](https://eu.api.ovh.com/) ein und folgen Sie den nachstehenden Schritten.
+Loggen Sie sich gemäß der [entsprechenden Anleitung](/pages/account/api/first-steps) in das [OVHcloud API Interface](https://eu.api.ovh.com/) ein und folgen Sie den nachstehenden Schritten.
 
 Verwenden Sie folgenden Aufruf:
 

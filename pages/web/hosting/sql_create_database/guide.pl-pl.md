@@ -1,9 +1,6 @@
 ---
 title: 'Tworzenie bazy danych i zarządzanie nią w hostingu WWW'
-slug: tworzenie-bazy-danych
 excerpt: 'Dowiedz się, jak korzystać z baz danych zawartych w usłudze hostingu WWW OVHcloud'
-section: 'Bazy danych'
-order: 01
 updated: 2022-02-03
 ---
 
@@ -101,7 +98,7 @@ Dane logowania będą już wypełnione w nowym oknie, więc wpisz tylko hasło d
 
 W przypadku każdej bazy danych w ramach hostingu WWW codziennie będą automatycznie tworzone migawki (maksymalnie 32). To oznacza, że można łatwo przywrócić wcześniejszą wersję bazy danych z poziomu Panelu klienta OVHcloud. 
 
-Aby sprawdzić, czy są dostępne migawki oraz ich sygnaturę czasową utworzenia, kliknij symbol obok zielonego kółka w tabeli baz danych. Z tego miejsca można też pobrać kopię zapasową bazy danych. Szczegółowe informacje na ten temat zawiera przewodnik [Pobieranie kopii zapasowej bazy danych w ramach hostingu WWW](../eksport-bazy-danych/).
+Aby sprawdzić, czy są dostępne migawki oraz ich sygnaturę czasową utworzenia, kliknij symbol obok zielonego kółka w tabeli baz danych. Z tego miejsca można też pobrać kopię zapasową bazy danych. Szczegółowe informacje na ten temat zawiera przewodnik [Pobieranie kopii zapasowej bazy danych w ramach hostingu WWW](/pages/web/hosting/sql_database_export).
 
 #### Typowe problemy
 
@@ -117,17 +114,17 @@ Najlepszą praktyką jest używanie rzeczywistej nazwy bazy danych w skryptach i
 
 Jeśli baza danych w ramach hostingu WWW przekroczy zalecane miejsce w przestrzeni dyskowej, zostanie automatycznie przełączona na tryb „tylko do odczytu” / „tylko wybór”. Administrator dostanie powiadomienie e-mail.
 
-Po optymalizacji bazy danych (oczyszczeniu) można ponownie obliczyć limit w Panelu klienta OVHcloud, aby ją odblokować. Najlepszą praktyką jest pobranie bazy danych, wprowadzenie zmian lokalnie, a następnie zastąpienie bazy przez import. Więcej informacji zawiera [ten przewodnik](../hosting_www_przewodnik_dotyczacy_optymalizacji_wydajnosci_strony/).
+Po optymalizacji bazy danych (oczyszczeniu) można ponownie obliczyć limit w Panelu klienta OVHcloud, aby ją odblokować. Najlepszą praktyką jest pobranie bazy danych, wprowadzenie zmian lokalnie, a następnie zastąpienie bazy przez import. Więcej informacji zawiera [ten przewodnik](/pages/web/hosting/optimise_your_website_performance).
 
 
 ## Sprawdź również
 
-[Zmiana hasła do bazy danych w ramach hostingu WWW](../zmiana-hasla-do-bazy-danych/)
+[Zmiana hasła do bazy danych w ramach hostingu WWW](/pages/web/hosting/sql_change_password)
 
-[Pobieranie kopii zapasowej bazy danych w ramach hostingu WWW](../eksport-bazy-danych/)
+[Pobieranie kopii zapasowej bazy danych w ramach hostingu WWW](/pages/web/hosting/sql_database_export)
 
-[Import kopii zapasowej do bazy danych hostingu WWW](../hosting_www_importowanie_bazy_danych_mysql/)
+[Import kopii zapasowej do bazy danych hostingu WWW](/pages/web/hosting/sql_importing_mysql_database)
 
-[Optymalizacja wydajności witryny internetowej](../hosting_www_przewodnik_dotyczacy_optymalizacji_wydajnosci_strony/)
+[Optymalizacja wydajności witryny internetowej](/pages/web/hosting/optimise_your_website_performance)
 
 Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.

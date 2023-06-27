@@ -1,8 +1,6 @@
 ---
 title: "Récupération des bases de données en mode rescue"
-slug: dedicated-servers-retrieve-database
 excerpt: "Découvrez comment accéder à vos bases de données et les enregistrer en mode rescue"
-section: Tutoriel
 updated: 2023-04-13
 ---
 

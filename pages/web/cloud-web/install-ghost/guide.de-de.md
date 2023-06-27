@@ -1,9 +1,6 @@
 ---
 title: 'Ghost auf einem Cloud Web Hosting installieren'
-slug: ghost-auf-cloud-web-installieren
 excerpt: 'Hier erfahren Sie, wie Sie mit der Ghost-Engine einen Blog auf Cloud Web einrichten.'
-section: Tutorials
-order: 01
 updated: 2022-05-04
 ---
 
@@ -59,7 +56,7 @@ Geben Sie im angezeigten Fenster die folgenden Werte aus unserem Beispiel ein od
 |Anwendungsumgebung|Produktion|
 |Startskript der Anwendung|server.js|
 
-Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{.action}. Für weitere Informationen zur Verwaltung der Runtime Engines lesen Sie unsere Anleitung „[Cloud Web Runtime Engines verwalten](https://docs.ovh.com/de/cloud-web/cloud-web-runtime-engines-verwalten){.external}“.
+Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{.action}. Für weitere Informationen zur Verwaltung der Runtime Engines lesen Sie unsere Anleitung „[Cloud Web Runtime Engines verwalten](/pages/web/cloud-web/manage-runtime){.external}“.
 
 ![ghost cloud web](images/ghost-cloud-web-step2.png){.thumbnail}
 
@@ -89,7 +86,7 @@ Geben Sie im angezeigten Fenster die für Ihre Situation notwendigen Information
 |Wurzelverzeichnis|ghost|
 |Runtime Engine|NodeJS 8|
 
-Wählen Sie aus den zusätzlichen Optionen diejenigen aus, die Sie aktivieren möchten. Wenn Sie alle Informationen eingegeben haben, klicken Sie auf `Weiter`{.action} und schließen Sie den Vorgang ab. Das Hinzufügen der Multisite kann bis zu einer Stunde dauern. Die Änderung der DNS-Konfiguration kann jedoch bis zu 24 Stunden in Anspruch nehmen, bis sie effektiv ist. Weitere Informationen zur Verwaltung von Multisites finden Sie in der Anleitung „[Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}“.
+Wählen Sie aus den zusätzlichen Optionen diejenigen aus, die Sie aktivieren möchten. Wenn Sie alle Informationen eingegeben haben, klicken Sie auf `Weiter`{.action} und schließen Sie den Vorgang ab. Das Hinzufügen der Multisite kann bis zu einer Stunde dauern. Die Änderung der DNS-Konfiguration kann jedoch bis zu 24 Stunden in Anspruch nehmen, bis sie effektiv ist. Weitere Informationen zur Verwaltung von Multisites finden Sie in der Anleitung „[Mehrere Websites auf einem Webhosting einrichten](/pages/web/hosting/multisites_configure_multisite){.external}“.
 
 ![ghost cloud web](images/ghost-cloud-web-step4.png){.thumbnail}
 
@@ -273,13 +270,13 @@ Wir haben gesehen, wie man anhand der verschiedenen Schritte eine Node.js-Anwend
 
 ## Weiterführende Informationen
 
-[Migration Ihrer Website und E-Mails zu OVHcloud](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/){.external}
+[Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-[Meine Seite online stellen](https://docs.ovh.com/de/hosting/webhosting_meine_seite_online_stellen/){.external}
+[Meine Seite online stellen](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
-[Installation Ihrer Website mit 1-Klick-Modulen](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/){.external}
+[Installation Ihrer Website mit 1-Klick-Modulen](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}
+[Mehrere Websites auf einem Webhosting einrichten](/pages/web/hosting/multisites_configure_multisite){.external}
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

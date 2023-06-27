@@ -1,9 +1,6 @@
 ---
 title: 'Funktionsweise des SSL-Zertifikats auf dem CDN'
-slug: certificat-ssl-cdn
 excerpt: 'So fügen Sie ein SSL-Zertifikat auf dem CDN hinzu'
-section: 'Erste Schritte'
-order: 4
 updated: 2018-02-22
 ---
 
@@ -29,7 +26,7 @@ Sie können Ihrem Content Delivery Network (CDN) ein [SSL-Zertifikat](https://ww
 - Wenn Sie dem CDN eine weitere Subdomain hinzufügen, wird das Zertifikat automatisch erneuert, damit es auch für die neu eingerichtete Subdomain gilt.
 
 
-Damit die Zertifikatserstellung erfolgreich ist, muss die neu hinzugefügte Subdomain korrekt auf das CDN zeigen. Hierfür empfehlen wir Ihnen die Anleitung zum Thema „[Erste Konfiguration einer Domain](../erste-domain-konfiguration-im-cdn/){.external}“.
+Damit die Zertifikatserstellung erfolgreich ist, muss die neu hinzugefügte Subdomain korrekt auf das CDN zeigen. Hierfür empfehlen wir Ihnen die Anleitung zum Thema „[Erste Konfiguration einer Domain](/pages/cloud/cdn_infrastructure/first_domain_name_configuration){.external}“.
 
 Die Erneuerung des Zertifikats erfolgt automatisch innerhalb von 20 Tagen vor dessen Ablauf.
 
@@ -71,6 +68,6 @@ Wenn das Zertifikat aktiviert ist, erkennen Sie dies am neuen Status:
 
 ## Weiterführende Informationen
 
-[Erste Konfiguration einer Domain](../erste-domain-konfiguration-im-cdn/){.external}
+[Erste Konfiguration einer Domain](/pages/cloud/cdn_infrastructure/first_domain_name_configuration){.external}
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

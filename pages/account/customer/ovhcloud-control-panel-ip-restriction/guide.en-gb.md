@@ -1,9 +1,6 @@
 ---
 title: "Restrict IP access to the OVHcloud Control Panel"
-slug: ovhcloud-control-panel-ip-restriction
 excerpt: "Find out how to secure your OVHcloud account by limiting the IP addresses authorised to access it"
-section: Security
-order: 03
 updated: 2022-12-12
 ---
 
@@ -14,7 +11,7 @@ updated: 2022-12-12
 OVHcloud provides you with options to enhance the security of your OVHcloud Control Panel and your services.
 
 You can restrict access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) to certain IP addresses.
-By setting this option and securing your account with [two-factor authentication](https://docs.ovh.com/gb/en/customer/secure-account-with-2FA/), you can optimally secure your OVHcloud Control Panel against intrusion attempts.
+By setting this option and securing your account with [two-factor authentication](/pages/account/customer/secure-ovhcloud-account-with-2fa), you can optimally secure your OVHcloud Control Panel against intrusion attempts.
 
 **This guide explains how to secure your OVHcloud account by limiting the IP addresses authorised to access it.**
 
@@ -26,7 +23,7 @@ By setting this option and securing your account with [two-factor authentication
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- Knowledge of the [password management recommendations for accessing your account](https://docs.ovh.com/gb/en/customer/manage-password/)
+- Knowledge of the [password management recommendations for accessing your account](/pages/account/customer/manage-ovh-password)
 
 ## Instructions
 
@@ -151,7 +148,7 @@ Once you have entered all of the public IP addresses in the `Configured IPs` sec
 
 ## Go further
 
-[Set up two-factor authentication on your OVHcloud Control Panel](https://docs.ovh.com/gb/en/customer/secure-account-with-2FA/)
+[Set up two-factor authentication on your OVHcloud Control Panel](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 

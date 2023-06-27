@@ -1,9 +1,6 @@
 ---
 title: 'Using the Outlook Web App with an email account'
-slug: using-owa
 excerpt: 'Find out how to manage an email address using OWA webmail'
-section: 'Getting started'
-order: 04
 updated: 2021-06-25
 ---
 
@@ -122,7 +119,7 @@ Fill in the requested information depending on the action you want the rule to c
 
 ![useowa](images/use-owa-step14.png){.thumbnail}
 
-For more detailed instructions about creating inbox rules, please refer to our guide: [Creating inbox rules in OWA](../creating-inbox-rules-in-owa/).
+For more detailed instructions about creating inbox rules, please refer to our guide: [Creating inbox rules in OWA](/us/en/emails/creating-inbox-rules-in-owa/).
 
 #### Block a sender
 

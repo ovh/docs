@@ -1,8 +1,6 @@
 ---
 title: 'Włączenie weryfikacji dwuetapowej przez OTP'
-slug: wlacz-weryfikacje-dwuetapowa-przez-aplikacje-mobilna
 excerpt: 'Dowiedz się, jak zabezpieczyć swój panel klienta OVHcloud dzięki weryfikacji dwuetapowej przez aplikację mobilną OTP'
-section: Bezpieczeństwo
 hidden: true
 updated: 2020-04-16
 ---
@@ -17,7 +15,7 @@ Weryfikacja dwuetapowa za pomocą systemu *one-time password* (OTP) dostępna za
 
 ## Wymagania początkowe
 
-- Zapoznanie się z [różnymi metodami weryfikacji dwuetapowej przez OVHcloud](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/).
+- Zapoznanie się z [różnymi metodami weryfikacji dwuetapowej przez OVHcloud](/pages/account/customer/secure-ovhcloud-account-with-2fa).
 - Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - Zainstalowanie aplikacji OTP na smartfonie lub tablecie z systemem Android lub iOS.
 

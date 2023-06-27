@@ -1,8 +1,6 @@
 ---
 title: 'Obter o número de série de um disco rígido'
-slug: obter-numero-serie-disco
 excerpt: 'Saiba como obter o número de série de um disco rígido para proceder à sua substituição'
-section: 'RAID e discos'
 updated: 2018-08-21
 ---
 
@@ -73,7 +71,7 @@ O periférico é detetado pelo sistema operativo e indicado como se segue: `/dev
 
 ### Obter o número de série de um disco (RAID de hardware)
 
-Para informações pormenorizadas sobre estes comandos e a forma de testar os discos rígidos, consulte este [manual](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} (versão em inglês).
+Para informações pormenorizadas sobre estes comandos e a forma de testar os discos rígidos, consulte este [manual](/pages/cloud/dedicated/raid_hard){.external} (versão em inglês).
 
 
 #### Controlador MegaRaid
@@ -163,7 +161,7 @@ O ID do periférico RAID será apresentado como se segue: `/dev/sda` = 1º RAID,
 
 O controlador RAID LSI utiliza um módulo chamado `sg-map` que associa os periféricos a `/dev/sgX`, sendo “X” o número que define o periférico.
 
-Pode recorrer a [este manual](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} (versão em inglês) para determinar que disco rígido corresponde a que periférico “sg”.
+Pode recorrer a [este manual](/pages/cloud/dedicated/raid_hard){.external} (versão em inglês) para determinar que disco rígido corresponde a que periférico “sg”.
 
 Quando tiver encontrado este periférico associado ao disco rígido que pretende analisar, utilize o seguinte comando:
 

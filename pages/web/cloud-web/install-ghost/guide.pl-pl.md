@@ -1,9 +1,6 @@
 ---
 title: 'Instalacja platformy Ghost na hostingu Cloud Web'
-slug: instalacja-ghost-cloud-web
 excerpt: 'Dowiedz się, jak zainstalować blog na Cloud Web za pomocą platformy Ghost'
-section: Tutoriale
-order: 01
 updated: 2022-05-04
 ---
 
@@ -59,7 +56,7 @@ W oknie, które się wyświetla uzupełnij pola informacjami z poniższego przy
 |Środowisko aplikacji|produkcja|
 |Skrypt uruchamiania aplikacji|server.js|
 
-Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Jeśli potrzebujesz więcej informacji o zarządzaniu frameworkami, skorzystaj z naszego przewodnika [Zarządzanie frameworkami Cloud Web](../zarzadzanie-framework-runtime-cloud-web/){.external}.
+Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Jeśli potrzebujesz więcej informacji o zarządzaniu frameworkami, skorzystaj z naszego przewodnika [Zarządzanie frameworkami Cloud Web](/pages/web/cloud-web/manage-runtime){.external}.
 
 ![ghostcloudweb](images/ghost-cloud-web-step2.png){.thumbnail}
 
@@ -89,7 +86,7 @@ W oknie, które się wyświetla, wprowadź wymagane informacje: Poniższa tabela
 |Katalog główny|ghost|
 |Framework|NodeJS 8|
 
-Wybierz opcje dodatkowe, które chcesz aktywować. Po wpisaniu informacji kliknij `Dalej`{.action} i zakończ operację. Może to potrwać do godziny. Zmiana konfiguracji DNS może potrwać do 24 godzin, zanim stanie się w pełni aktywna. Jeśli potrzebujesz więcej informacji o zarządzaniu stronami podpiętymi w opcji MultiSite, skorzystaj z naszego przewodnika [Instalacja kilku stron WWW na jednym hostingu](../../hosting/konfiguracja-multisite-na-hostingu/){.external}.
+Wybierz opcje dodatkowe, które chcesz aktywować. Po wpisaniu informacji kliknij `Dalej`{.action} i zakończ operację. Może to potrwać do godziny. Zmiana konfiguracji DNS może potrwać do 24 godzin, zanim stanie się w pełni aktywna. Jeśli potrzebujesz więcej informacji o zarządzaniu stronami podpiętymi w opcji MultiSite, skorzystaj z naszego przewodnika [Instalacja kilku stron WWW na jednym hostingu](/pages/web/hosting/multisites_configure_multisite){.external}.
 
 ![ghostcloudweb](images/ghost-cloud-web-step4.png){.thumbnail}
 
@@ -273,13 +270,13 @@ W tym tutorialu przedstawiliśmy poszczególne etapy instalacji aplikacji Node.j
 
 ## Sprawdź również
 
-[Przeniesienie strony WWW do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}
+[Przeniesienie strony WWW do OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-[Umieszczenie strony w Internecie](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/){.external}
+[Umieszczenie strony w Internecie](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
-[Automatyczna instalacja strony WWW za pomocą modułu CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/){.external}
+[Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Instalacja kilku stron WWW na jednym hostingu](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/){.external}
+[Instalacja kilku stron WWW na jednym hostingu](/pages/web/hosting/multisites_configure_multisite){.external}
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
 

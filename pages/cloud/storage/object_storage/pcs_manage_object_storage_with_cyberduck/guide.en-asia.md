@@ -1,12 +1,9 @@
 ---
 title: Object Storage Swift - Managing Object Storage with CyberDuck
 routes:
-    canonical: 'https://docs.ovh.com/asia/en/storage/pca/cyberduck/'
+    canonical: '/pages/cloud/storage/object_storage/pca_cyberduck'
 excerpt: 'Managing Object Storage with CyberDuck'
-slug: pcs/manage-object-storage-with-cyberduck
-section: OpenStack Swift Storage Class Specifics
 legacy_guide_number: g1868
-order: 180
 updated: 2021-06-18
 ---
 
@@ -30,10 +27,10 @@ If you're not familiar with managing storage through command lines, there are so
 ## Requirements
 
 - [Cyberduck](https://cyberduck.io/) installed on your computer.
-- your username (*OS_USERNAME*) and project credentials (*OS_PROJECT_NAME* or *OS_TENANT_NAME*). Retrieve them by downloading the OpenRC file from the [Users and Roles](https://docs.ovh.com/asia/en/public-cloud/set-openstack-environment-variables/#step-1-retrieve-the-variables) menu in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
+- your username (*OS_USERNAME*) and project credentials (*OS_PROJECT_NAME* or *OS_TENANT_NAME*). Retrieve them by downloading the OpenRC file from the [Users and Roles](/pages/platform/public-cloud/loading_openstack_environment_variables#step-1-retrieve-the-variables) menu in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
 - your OpenStack user password.
 
-In case you have forgotten your OpenStack user password, you can change it by following [this guide](https://docs.ovh.com/asia/en/public-cloud/change-openstack-user-password/).
+In case you have forgotten your OpenStack user password, you can change it by following [this guide](/pages/platform/public-cloud/change_openstack_user_password_in_horizon).
 
 ## Instructions
 
@@ -68,7 +65,7 @@ Then click `Connect`{.action}. Once you're logged in, you will have access to th
 
 [Cyberduck documentation](https://trac.cyberduck.io/wiki/help/en){.external}
 
-[Getting started with the Swift API](https://docs.ovh.com/asia/en/public-cloud/getting_started_with_the_swift_api/)
+[Getting started with the Swift API](/pages/cloud/storage/object_storage/pcs_getting_started_with_the_swift_api)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

@@ -1,10 +1,7 @@
 ---
 title: 'Managing tokens'
 excerpt: 'Find out how to use tokens with the Keystone API'
-slug: managing_tokens
 legacy_guide_number: g1872
-section: OpenStack
-order: 6
 updated: 2023-06-15
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: 'Sauvegarder une instance'
-slug: sauvegarder-une-instance
 excerpt: 'Découvrez comment sauvegarder une instance Public Cloud depuis votre espace client OVHcloud'
-section: "Gestion depuis l'espace client"
-order: 01
 updated: 2023-01-04
 ---
 
@@ -87,10 +84,10 @@ Les sauvegardes de vos instances sont gérées dans la section `Instance Backup`
 
 ![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
 
-Découvrez comment utiliser les sauvegardes pour cloner ou restaurer des instances dans [ce guide](https://docs.ovh.com/fr/public-cloud/creer-restaurer-un-serveur-virtuel-a-partir-dune-sauvegarde/).
+Découvrez comment utiliser les sauvegardes pour cloner ou restaurer des instances dans [ce guide](/pages/platform/public-cloud/create_restore_a_virtual_server_with_a_backup).
 
 ## Aller plus loin
 
-[Créer / restaurer un serveur virtuel a partir d’une sauvegarde](https://docs.ovh.com/fr/public-cloud/creer-restaurer-un-serveur-virtuel-a-partir-dune-sauvegarde/)
+[Créer / restaurer un serveur virtuel a partir d’une sauvegarde](/pages/platform/public-cloud/create_restore_a_virtual_server_with_a_backup)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

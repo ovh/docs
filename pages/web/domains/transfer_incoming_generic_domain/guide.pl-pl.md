@@ -1,9 +1,6 @@
 ---
 title: 'Transfer domeny do OVHcloud'
-slug: przeniesienie-domeny-globalnej
 excerpt: "Dowiedz się, jak wykonać transfer domeny do OVHcloud"
-section: Transfer
-order: 01
 updated: 2023-06-22
 ---
 

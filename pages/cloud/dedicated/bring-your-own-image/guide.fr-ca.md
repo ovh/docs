@@ -1,8 +1,6 @@
 ---
 title: Utiliser la fonctionnalité Bring Your Own Image
 excerpt: Apprenez à déployer vos images grâce à Bring Your Own Image
-slug: bringyourownimage
-section: Utilisation avancée
 updated: 2022-11-25
 ---
 
@@ -23,7 +21,7 @@ Outre les prérequis et limitations citées plus bas, il faut s'assurer que l'im
 - Posséder un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr-ca/bare-metal/).
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) pour la partie [« Déploiement via espace client »](#viacontrolpanel) de ce guide.
 - Être connecté aux [API OVHcloud](https://ca.api.ovh.com/){.external} pour la partie [« Déploiement via API »](#viaapi) de ce guide.
-- Avoir généré les [credentials pour utiliser l'APIv6](../../api/first-steps-with-ovh-api/) pour la partie [« Déploiement via API »](#viaapi) de ce guide.
+- Avoir généré les [credentials pour utiliser l'APIv6](/pages/account/api/first-steps) pour la partie [« Déploiement via API »](#viaapi) de ce guide.
 - La taille de votre image doit être inférieure à la quantité de la mémoire vive de votre serveur moins 3GiB.
 
 > [!warning]
@@ -110,7 +108,7 @@ Une fois les champs complétés, lancez le déploiement en cliquant sur `Execute
 
 ### Vérifier le déploiement
 
-Vous pouvez suivre le déploiement de votre image via l'appel API ci-dessous ou par le biais du KVM / [IPMI](../utilisation-ipmi-serveurs-dedies/).
+Vous pouvez suivre le déploiement de votre image via l'appel API ci-dessous ou par le biais du KVM / [IPMI](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers).
 
 > [!api]
 >

@@ -1,9 +1,6 @@
 ---
 title: Logowanie do interfejsu vSphere
-slug: polaczenie-interfejs-vsphere
 excerpt:  Poznaj różne sposoby logowania do vSphere
-section: Pierwsze kroki
-order: 2
 updated: 2022-06-24
 ---
 
@@ -20,7 +17,7 @@ updated: 2022-06-24
 ## Wymagania początkowe
 
 - Posiadanie statusu kontaktu administratora infrastruktury [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), aby otrzymywać dane do logowania.
-- Dodanie adresów IP do sekcji `Bezpieczeństwo`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem [Autoryzacja IP, które mogą łączyć się z vCenter](https://docs.ovh.com/pl/private-cloud/autoryzacja-IP-ktore-moga-laczyc-sie-z-vCenter/).
+- Dodanie adresów IP do sekcji `Bezpieczeństwo`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem [Autoryzacja IP, które mogą łączyć się z vCenter](/pages/cloud/private-cloud/autoriser_des_ip_a_se_connecter_au_vcenter).
 
 ## W praktyce
 

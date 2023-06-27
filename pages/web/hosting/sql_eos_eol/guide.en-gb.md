@@ -1,15 +1,12 @@
 ---
 title: 'SQL Database EOS and EOL announcements'
-slug: sql_eos_eol
 excerpt: 'SQL Database EOS and EOL announcements'
-section: Databases
-order: 05
 updated: 2021-12-07
 ---
 
 **Last updated 07th December 2021**
 
-The products covered by those End Of Sale (EOS) and End Of Life (EOL) announcements are the SQL Database Web Hosting services, MySQL databases reachable on the Web Hosting network. See also the [OVHcloud Managed databases EOL policy](https://docs.ovh.com/gb/en/clouddb/managed-db-life-cycle-policy/){.external} for more information.
+The products covered by those End Of Sale (EOS) and End Of Life (EOL) announcements are the SQL Database Web Hosting services, MySQL databases reachable on the Web Hosting network. See also the [OVHcloud Managed databases EOL policy](/pages/web/clouddb/eol-policy){.external} for more information.
 
 |Version|EOL announcement|End-of-Sale|End-of-Support|
 |---|---|---|---|

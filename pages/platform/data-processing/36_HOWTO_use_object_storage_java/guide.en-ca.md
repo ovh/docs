@@ -1,9 +1,6 @@
 ---
 title: Java - How to use OVHcloud Object Storage with Apache Spark on the Data Processing platform
-slug: object-storage-java
 excerpt: OpenStack Swift and its S3 compatible API is a common way to store the data you want to use for your Apache Spark jobs. Let's find out how to do it in Java!
-section: How to
-order: 6
 updated: 2021-01-20
 ---
 
@@ -19,11 +16,11 @@ Samples are based on the well-known WordCount. We will first read data from a te
 ## Requirements
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
 - An OVHcloud account.
-- A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/create_a_public_cloud_project/){.external} for details).
-- Data Processing activated (see [How to activate the Data Processing service](../activation){.external} for details).
+- A cloud project in your OVHcloud account (see [How to create a cloud project](/pages/platform/public-cloud/create_a_public_cloud_project){.external} for details).
+- Data Processing activated (see [How to activate the Data Processing service](/pages/platform/data-processing/30_HOWTO_activate_project){.external} for details).
 - The input file 'novel.txt' used by the following samples is available [here](https://github.com/ovh/data-processing-samples/tree/master/java_S3WordCount/novel.txt){.external} [[1]](#notes).
-You have to upload it in an Object Storage container. (see [Getting started with the Swift API](https://docs.ovh.com/ca/en/storage/object-storage/pcs/getting-started-with-the-swift-api/){.external} to read more about how to create an OVHcloud Object Storage container). In this example, we created a container named 'textfile" and uploaded the novel.txt object into that container. 
-- OVHcloud Object Storage "secret key" and "access key" for the container that you have uploaded the 'novel.txt' text file (textfile container in this example). (See [How to create EC2 credentials](https://docs.ovh.com/ca/en/storage/object-storage/pcs/getting-started-with-the-swift-s3-api/){.external} for more details).
+You have to upload it in an Object Storage container. (see [Getting started with the Swift API](/pages/cloud/storage/object_storage/pcs_getting_started_with_the_swift_api){.external} to read more about how to create an OVHcloud Object Storage container). In this example, we created a container named 'textfile" and uploaded the novel.txt object into that container. 
+- OVHcloud Object Storage "secret key" and "access key" for the container that you have uploaded the 'novel.txt' text file (textfile container in this example). (See [How to create EC2 credentials](/pages/cloud/storage/object_storage/pcs_getting_started_with_the_swift_s3_api){.external} for more details).
 
 ## Read/Write data with Apache Spark using OpenStack Swift S3 API in Java
 
@@ -193,7 +190,7 @@ You can find the source code of this project in OVHcloud github repository in th
 
 These samples are quite basic. They provide the first step to interact with object storage from within your code and, then, go further.
 
-Concerning the 'WordCount' use case, here is a link to a more advanced tutorial about [Wordcount](../wordcount-spark){.external}.
+Concerning the 'WordCount' use case, here is a link to a more advanced tutorial about [Wordcount](/pages/platform/data-processing/41_TUTORIAL_wordcount){.external}.
 
 If you are not familiar with Apache Spark, we recommend you to visit [Apache Spark's official website](https://spark.apache.org/){.external}
 

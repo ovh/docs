@@ -1,9 +1,6 @@
 ---
 title: 'Posteingangsregeln in OWA erstellen'
-slug: posteingangsregeln-in-owa-erstellen
 excerpt: 'Erfahren Sie hier, wie Sie E-Mail-Weiterleitungen und Eingangsfilter in OWA verwenden'
-section: Erste Schritte
-order: 05
 updated: 2020-03-11
 ---
 

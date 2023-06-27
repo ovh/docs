@@ -1,8 +1,6 @@
 ---
 title: Como configurar um IP alias
-slug: network-ipaliasing
 excerpt: Descubra como adicionar endereços Additional IP à configuração de rede
-section: Redes & IP
 updated: 2023-06-15
 ---
 

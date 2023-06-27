@@ -1,9 +1,6 @@
 ---
 title: 'Zostań użytkownikiem root i wybierz hasło'
-slug: dostep_root_i_zdefiniowanie_hasla
 excerpt: 'Dowiedz się, jak się zalogować jako użytkownik root i ustawić dla niego hasło'
-section: Tutoriale
-order: 08
 updated: 2022-03-24
 ---
 
@@ -21,14 +18,14 @@ Aby wykonywać niektóre działania administracyjne na Twoim serwerze (np. insta
 
 ## Wymagania początkowe
 
-- [Instancja Public Cloud](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud
+- [Instancja Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud
 - Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
 ### Ustawianie hasła root <a name="settingtherootpassword"></a>
 
-Po pierwsze nawiąż [połączenie SSH](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/#krok-4-polaczenie-z-instancja) z serwerem przy użyciu domyślnego użytkownika.
+Po pierwsze nawiąż [połączenie SSH](/pages/platform/public-cloud/public-cloud-first-steps#krok-4-polaczenie-z-instancja) z serwerem przy użyciu domyślnego użytkownika.
 
 W wierszu polecenia ustaw hasło dla użytkownika "root" (ze względów bezpieczeństwa hasło to nie będzie się wyświetlało podczas jego wprowadzania):
 

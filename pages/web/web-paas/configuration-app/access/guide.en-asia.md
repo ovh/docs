@@ -1,7 +1,5 @@
 ---
 title: Access
-slug: access
-section: App
 updated: 2021-03-26
 ---
 

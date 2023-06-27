@@ -1,8 +1,6 @@
 ---
 title: 'Gerir os motores de execução de um alojamento Cloud Web'
-slug: gerir-motores-execucao-alojamento-cloud-web
 excerpt: 'Saiba como gerir os motores de execução do seu alojamento para concretizar os seus projetos'
-section: 'Configuração do alojamento'
 hidden: true
 updated: 2022-07-27
 ---

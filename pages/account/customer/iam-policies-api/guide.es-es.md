@@ -1,12 +1,9 @@
 ---
 title: "Cómo utilizar las políticas de IAM con la API de OVHcloud (EN)"
-slug: iam-policies-api
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-section: 'Uso avanzado'
-order: 03
 updated: 2023-06-23
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/customer/iam-policies-api/'
+    canonical: '/pages/account/customer/iam-policies-api'
 ---
 
 > [!warning]
@@ -23,7 +20,7 @@ The access management of OVHcloud is based on a "policy" management system. It i
 In details, a policy contains:
 
 - One or more **identities** targeted by this policy. 
-    - It can be account IDs, users or user groups (like the ones used in [federation](https://docs.ovh.com/es/customer/connect-saml-sso/)). 
+    - It can be account IDs, users or user groups (like the ones used in [federation](/products/customer-connect-saml-sso)). 
 - One or more **resources** impacted by this policy. 
     - A resource is an OVHcloud product that will be impacted by this policy (a domain name, a Nutanix server, a Load Balancer, etc.).
 - One or more **actions** allowed or excepted by this policy. 
@@ -39,8 +36,8 @@ For instance, we can create a policy to give to a user called John, for a VPS, a
 
 To set up a policy, you will require:
 
-- An [OVHcloud account](https://docs.ovh.com/es/customer/crear-cuenta-ovhcloud/).
-- To know [how to manage account users](https://docs.ovh.com/es/customer/gestion-de-usuarios/).
+- An [OVHcloud account](/pages/account/customer/ovhcloud-account-creation).
+- To know [how to manage account users](/pages/account/customer/ovhcloud-users-management).
 - Some OVHcloud products linked to this OVHcloud account (Load Balancer, domain name, VPS, etc.).
 
 ## Instructions
@@ -312,11 +309,11 @@ To create a new user group, call the API route with the following body:
 }
 ```
 
-For more information, refer to the [documentation for user management](https://docs.ovh.com/es/customer/gestion-de-usuarios/).
+For more information, refer to the [documentation for user management](/pages/account/customer/ovhcloud-users-management).
 
 #### With SSO connection enabled
 
-If the federation is enabled through the [SSO connection](https://docs.ovh.com/es/customer/connect-saml-sso/), policies only apply to user groups as described in the previous section.
+If the federation is enabled through the [SSO connection](/products/customer-connect-saml-sso), policies only apply to user groups as described in the previous section.
 
 ### Resources
 

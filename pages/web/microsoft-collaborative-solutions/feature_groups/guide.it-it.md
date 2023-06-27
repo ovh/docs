@@ -1,9 +1,6 @@
 ---
 title: 'Utilizzo dei gruppi (mailing list)'
 excerpt: 'Come gestire la mailing list di Exchange'
-slug: exchange_2013_utilizzo_dei_gruppi_mailing_list
-section: 'Funzionalità degli account Exchange'
-order: 02
 updated: 2020-02-26
 ---
 

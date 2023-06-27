@@ -1,9 +1,6 @@
 ---
 title: 'Configurar una cuenta de correo electrónico en la aplicación Correo de Windows 10'
-slug: configuracion-correo-windows-10
 excerpt: 'Cómo configurar una cuenta de correo electrónico en la aplicación Correo de Windows'
-section: Configuración en el ordenador
-order: 06
 updated: 2018-04-04
 ---
 
@@ -23,7 +20,7 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 
 > [!primary]
 >
-> Si utiliza una versión anterior de Windows, consulte nuestra guía [Correo: Guía de configuración en Windows 8](../correo_guia_de_configuracion_en_windows_8/){.external}.
+> Si utiliza una versión anterior de Windows, consulte nuestra guía [Correo: Guía de configuración en Windows 8](/pages/web/emails/how_to_configure_windows_10){.external}.
 >
 
 ## Procedimiento

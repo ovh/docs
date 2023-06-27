@@ -1,9 +1,6 @@
 ---
 title: 'Erste Schritte mit Cloud Web Hosting'
-slug: erste-schritte-mit-cloud-web
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie richtig mit Ihrem Cloud Web Hosting starten'
-section: 'Erste Schritte'
-order: 01
 updated: 2022-05-04
 ---
 
@@ -112,7 +109,7 @@ Füllen Sie die folgenden Informationen sorgfältig aus:
 > Wenn Sie eine externe Domain hinzugefügt haben, muss zusätzlich ein TXT-Feld mit dem Namen **ovhcontrol** in der DNS-Konfiguration der Domain erstellt werden. Über dieses Feld kann OVHcloud überprüfen, dass die Domain tatsächlich hinzugefügt werden darf. Wurde kein TXT-Feld erstellt, wird der Vorgang abgebrochen.
 >
 
-Wiederholen Sie diesen Schritt, falls Sie mehrere Domains zu Ihrem Cloud Web Hosting hinzufügen möchten. Weitere Informationen zum Hinzufügen einer Domain als Multisite finden Sie in unserer Anleitung: [„Mehrere Websites auf einem Webhosting einrichten“](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}.
+Wiederholen Sie diesen Schritt, falls Sie mehrere Domains zu Ihrem Cloud Web Hosting hinzufügen möchten. Weitere Informationen zum Hinzufügen einer Domain als Multisite finden Sie in unserer Anleitung: [„Mehrere Websites auf einem Webhosting einrichten“](/pages/web/hosting/multisites_configure_multisite){.external}.
 
 ![Cloud Web](images/cloud-web-first-steps-step3.png){.thumbnail}
 
@@ -126,7 +123,7 @@ Mit dieser Lösung können Sie auf einer gebrauchsfertigen Websitestruktur aufba
 
 Wenn Sie sich für die Verwendung eines unserer 1-Klick-Module entscheiden, klicken Sie bei dem entsprechenden Cloud Web Hosting auf den Tab `1 Klick Module`{.action} und anschließend auf `Ein Modul hinzufügen`{.action}. Nun können Sie auswählen, ob Sie eine „einfache“ (nicht personalisierbare) Installation oder die Installation „im Experten-Modus“ (mit anpassbaren Optionen) durchführen möchten.
 
-Wenn Sie mehr über die 1-Klick-Module von OVHcloud wissen möchten, werfen Sie einen Blick in unsere Dokumentation: ["Installation Ihrer Website mit 1-Klick-Modulen"](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/){.external}.
+Wenn Sie mehr über die 1-Klick-Module von OVHcloud wissen möchten, werfen Sie einen Blick in unsere Dokumentation: ["Installation Ihrer Website mit 1-Klick-Modulen"](/pages/web/hosting/cms_install_1_click_modules){.external}.
 
 > [!primary]
 >
@@ -141,13 +138,13 @@ Die manuelle Einrichtung Ihres Projekts ist um einiges technischer und erfordert
 
 Wenn Sie sich für die manuelle Installation entschieden haben, benötigen Sie alle Dateien der Website oder Anwendung, die Sie einrichten möchten. Falls Sie zuvor eine Datenbank auf Ihrem Cloud Web Hosting angelegt haben, brauchen Sie außerdem die zugehörigen Angaben und Login-Daten. Wenn Sie eine Website migrieren, erstellen Sie zunächst ein komplettes Backup aller zugehörigen Daten.
 
-Da nicht alle Projekte gleich sind, gibt es auch keine universelle Vorgehensweise. Unsere Anleitungen [„Webhosting: Meine Seite online stellen“](https://docs.ovh.com/de/hosting/webhosting_meine_seite_online_stellen/){.external} und [„Migration Ihrer Website und E-Mails zu OVH“](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/){.external} enthalten jedoch einige hilfreiche Informationen zum weiteren Vorgehen.
+Da nicht alle Projekte gleich sind, gibt es auch keine universelle Vorgehensweise. Unsere Anleitungen [„Webhosting: Meine Seite online stellen“](/pages/web/hosting/hosting_how_to_get_my_website_online){.external} und [„Migration Ihrer Website und E-Mails zu OVH“](/pages/web/hosting/hosting_migrating_to_ovh){.external} enthalten jedoch einige hilfreiche Informationen zum weiteren Vorgehen.
 
 ### Schritt 6: Konfiguration Ihrer Domain bearbeiten
 
 Wenn Sie bei diesem Schritt angelangt sind, ist Ihr Projekt auf Ihrem Cloud Web Hosting installiert und Ihre E-Mail-Adressen sind eingerichtet. Sollten die E-Mail-Adressen noch nicht funktionieren, ist Ihre Domain möglicherweise nicht richtig konfiguriert. Ist das der Fall, oder sind Sie sich nicht sicher, ob Änderungen vorgenommen wurden, befolgen Sie den aktuellen Schritt.
 
-Wenn Sie dabei sind, Ihre Dienste zu OVHcloud zu migrieren, beachten Sie bitte, dass diese möglicherweise nicht verfügbar sind, falls die Änderungen der DNS-Zone nicht im richtigen Moment durchgeführt wurden. Folgen Sie den entsprechenden Schritten unserer Anleitung [Migration Ihrer Website und E-Mails zu OVHcloud](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/){.external} und bearbeiten Sie die DNS-Server Ihrer Domain erst am Ende des Prozesses.
+Wenn Sie dabei sind, Ihre Dienste zu OVHcloud zu migrieren, beachten Sie bitte, dass diese möglicherweise nicht verfügbar sind, falls die Änderungen der DNS-Zone nicht im richtigen Moment durchgeführt wurden. Folgen Sie den entsprechenden Schritten unserer Anleitung [Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external} und bearbeiten Sie die DNS-Server Ihrer Domain erst am Ende des Prozesses.
 
 #### 1. OVHcloud DNS-Einträge verstehen 
 
@@ -173,7 +170,7 @@ Lesen Sie in der folgenden Tabelle, wo Sie die entsprechenden Änderungen vorneh
 
 |Verwendete DNS-Konfiguration|Wo nehme ich die Änderungen vor?|
 |---|---|
-|OVHcloud|Begeben Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich `Domains`{.action} zur betreffenden Domain. In dem Tab `DNS Zone`{.action} überprüfen Sie dann die Informationen und ändern diese gegebenenfalls ab. Wenn Sie weitere Hilfe benötigen, lesen Sie unsere Anleitung [„Bearbeiten der OVHcloud DNS-Zone“](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}|
+|OVHcloud|Begeben Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich `Domains`{.action} zur betreffenden Domain. In dem Tab `DNS Zone`{.action} überprüfen Sie dann die Informationen und ändern diese gegebenenfalls ab. Wenn Sie weitere Hilfe benötigen, lesen Sie unsere Anleitung [„Bearbeiten der OVHcloud DNS-Zone“](/pages/web/domains/dns_zone_edit){.external}|
 |Andere|Verwenden Sie das Interface des Anbieters, der die DNS-Konfiguration Ihrer Domain verwaltet. Bei Problemen wenden Sie sich bitte an Ihren Anbieter.|
 
 Die Änderung der DNS-Konfiguration Ihrer Domain erfordert eine Propagationszeit von bis zu 24 Stunden, bis sie voll wirksam ist. Falls Sie mehrere Domains als Multisite mit Ihrem Cloud Web Hosting verbunden haben, müssen die notwendigen Änderungen für jede Domain einzeln durchgeführt werden. 
@@ -188,17 +185,17 @@ Wenn Sie Hilfe bei der Nutzung spezieller Funktionen Ihrer Website benötigen, g
 
 Sie können nun auch Ihre E-Mail-Adressen verwenden. Dafür stellt OVHcloud Ihnen eine Webanwendung (Webmail) zur Verfügung: RoundCube. Diese App ist über die Adresse <https://www.ovh.de/mail/> erreichbar, auf der Sie die Login-Daten für Ihre von OVHcloud angelegte E-Mail-Adresse eingeben.
 
-Wenn Sie mehr Informationen über die Verwendung von RoundCube benötigen, werfen Sie bitte einen Blick in unsere Anleitung: [Verwendung von RoundCube](https://docs.ovh.com/de/emails/webmail_verwendung_von_roundcube/){.external} Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispielsweise einem Smartphone oder einem Tablet) einrichten möchten, werfen Sie bitte einen Blick in die jeweilige Anleitung unter <https://docs.ovh.com/de/emails/>.
+Wenn Sie mehr Informationen über die Verwendung von RoundCube benötigen, werfen Sie bitte einen Blick in unsere Anleitung: [Verwendung von RoundCube](/pages/web/emails/email_roundcube){.external} Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispielsweise einem Smartphone oder einem Tablet) einrichten möchten, werfen Sie bitte einen Blick in die jeweilige Anleitung unter </products/web-cloud-email-collaborative-solutions-mx-plan>.
 
 ## Weiterführende Informationen
 
-[Migration Ihrer Website und E-Mails zu OVHcloud](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/){.external}
+[Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-[Meine Seite online stellen](https://docs.ovh.com/de/hosting/webhosting_meine_seite_online_stellen/){.external}
+[Meine Seite online stellen](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
-[Installation Ihrer Website mit 1-Klick-Modulen](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/){.external}
+[Installation Ihrer Website mit 1-Klick-Modulen](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}
+[Mehrere Websites auf einem Webhosting einrichten](/pages/web/hosting/multisites_configure_multisite){.external}
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

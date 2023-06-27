@@ -1,9 +1,6 @@
 ---
 title: Gestión de una cuenta SMS SMPP
 excerpt: Cómo gestionar los parámetros de una cuenta SMPP desde el área de cliente de OVHcloud
-slug: smpp-control-panel
-section: SMPP
-order: 01
 updated: 2023-02-09
 ---
 
@@ -21,7 +18,7 @@ Desde el área de cliente de OVHcloud podrá encontrar las claves SMPP, cambiar 
 
 > [!primary]
 >
-> Le recomendamos que se familiarice con las [especificaciones técnicas de la solución SMPP de OVHcloud](https://docs.ovh.com/es/sms/smpp-specifications/).
+> Le recomendamos que se familiarice con las [especificaciones técnicas de la solución SMPP de OVHcloud](/pages/telecom/sms/smpp-specification).
 
 ## Requisitos
 
@@ -60,12 +57,12 @@ Haga clic en el botón `Añadir una IP`{.action} para añadir direcciones IP a e
 
 ### Gestión de remitentes y créditos
 
-Consulte nuestras guías sobre [gestión de remitentes](https://docs.ovh.com/es/sms/enviar-sms-desde-el-area-de-cliente/#3-elegir-el-remitente-del-sms) y [gestión de créditos de SMS y recarga automática](https://docs.ovh.com/es/sms/activar-la-recarga-automatica-de-credito-sms/).
+Consulte nuestras guías sobre [gestión de remitentes](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#3-elegir-el-remitente-del-sms) y [gestión de créditos de SMS y recarga automática](/pages/telecom/sms/activer_la_recharge_automatique_du_credit_sms).
 
 ## Más información
 
-Consulte [nuestra guía relativa a la gestión del historial de envíos de SMS](https://docs.ovh.com/es/sms/historial-de-envios/).
+Consulte [nuestra guía relativa a la gestión del historial de envíos de SMS](/pages/telecom/sms/gerer_l_historique_des_sms).
 
-[Las especificaciones técnicas del producto SMPP OVHcloud](https://docs.ovh.com/es/sms/smpp-specifications/).
+[Las especificaciones técnicas del producto SMPP OVHcloud](/pages/telecom/sms/smpp-specification).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>

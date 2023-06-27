@@ -1,9 +1,6 @@
 ---
 title: 'Utiliser la sauvegarde automatique'
 excerpt: 'Découvrez comment activer et utiliser l’option de sauvegarde automatique depuis l’espace client OVHcloud'
-slug: autobackup-vps
-section: Sauvegarde
-order: 2
 updated: 2022-11-15
 ---
 
@@ -227,6 +224,6 @@ Running  QEMU-GA            QEMU Guest Agent
 
 ## Aller plus loin
 
-[Utiliser les snapshots sur un VPS](../snapshot-vps/)
+[Utiliser les snapshots sur un VPS](/pages/cloud/vps/using-snapshots-on-a-vps)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

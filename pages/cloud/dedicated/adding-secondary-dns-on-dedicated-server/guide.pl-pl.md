@@ -1,8 +1,6 @@
 ---
 title: 'Tworzenie DNS secondary na serwerze dedykowanym'
-slug: dodawanie-domeny-secondary-dns
 excerpt: 'Dowiedz się, jak utworzyć DNS secondary dla Twojego serwera dedykowanego OVHcloud'
-section: 'Poziom zaawansowany'
 updated: 2021-01-08
 ---
 
@@ -73,7 +71,7 @@ Zanim dodasz domenę do DNS secondary OVHcloud, musisz potwierdzić, że zezwala
 
 - Jeśli domena jest zarządzana przez zewnętrznego operatora domeny lub na tym etapie korzysta z zewnętrznych serwerów DNS, zaloguj się do panelu klienta dostawcy DNS i dodaj rekord TXT z subdomeną "ownercheck" oraz wartością przedstawioną w etapie 2 [Dodania domeny"](#ajoutdomaine).
 
-- Jeśli domena jest zarządzana przez OVHcloud jako serwer do rejestracji i korzysta z serwerów DNS OVHcloud, zamknij okno klikając wcześniej na `Anuluj`{.action}. Następnie postępuj zgodnie z instrukcjami zawartymi w [tym przewodniku](../../domains/hosting_www_jak_edytowac_strefe_dns/), aby dodać rekord TXT do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Jeśli domena jest zarządzana przez OVHcloud jako serwer do rejestracji i korzysta z serwerów DNS OVHcloud, zamknij okno klikając wcześniej na `Anuluj`{.action}. Następnie postępuj zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web/domains/dns_zone_edit), aby dodać rekord TXT do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ![DNS secondary](images/cp-04.png){.thumbnail}
 
@@ -81,6 +79,6 @@ Po poprawnym dodaniu rekordu TXT do strefy DNS domeny powtórzyć [powyższe](#a
 
 ## Sprawdź również
 
-[Modyfikacja strefy DNS OVHcloud](../../domains/hosting_www_jak_edytowac_strefe_dns/){.external}
+[Modyfikacja strefy DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -1,11 +1,8 @@
 ---
 title: AI Notebooks - Dépannage (EN)
-slug: notebooks/debug-notebooks
 excerpt: Principales erreurs et comment dépanner votre AI Notebooks
-section: AI Notebooks - Guides
-order: 05
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/debug-notebooks/'
+    canonical: '/pages/platform/ai/notebook_guide_troubleshooting'
 updated: 2022-04-14
 ---
 
@@ -18,7 +15,7 @@ This tutorial gives you some hints on how to debug your notebooks if things go w
 ## Requirements
 
 - a notebook you would like to start with **AI Notebooks**
-- an [Object Storage Container](https://docs.ovh.com/fr/storage/object-storage/pcs/create-container/) in your OVHcloud account
+- an [Object Storage Container](/pages/cloud/storage/object_storage/pcs_create_container) in your OVHcloud account
 - a Public Cloud user with the **Administrator** or **AI Training Operator** role
 
 ## Instructions
@@ -30,9 +27,9 @@ If you are unable to connect to AI Notebooks, please ensure the following:
 - **Your notebook is up and running:** To connect to your notebook, it must be in running or in service status (green colored). If your notebook is starting up, wait a few moments until your data synchronizes and you will be able to connect. Starting time may vary due to some parameters. The more data you synchronize, the more time it will take.
 
 - **You have an autorized user or an authorized token:** To be able to connect to your notebook, you must have created a user or token. To create a new user, log into the OVHcloud Control Panel and open your Public Cloud project. Click on `Users & Roles` in the left menu under `Project Management`. In the roles assignment, don't forget to select `Administrator` and/or `AI Training Operator` for your user.
-To follow all the steps in detail, please refer to this [documentation](https://docs.ovh.com/fr/publiccloud/ai/users/).
+To follow all the steps in detail, please refer to this [documentation](/pages/platform/ai/gi_01_manage_users).
 
-As an alternative, you can generate an authorized token directly via our [CLI](https://docs.ovh.com/fr/publiccloud/ai/cli/app-token-cli/).
+As an alternative, you can generate an authorized token directly via our [CLI](/pages/platform/ai/cli_13_howto_app_token_cli).
 
 ### I can't install packets via an APT command
 
@@ -132,7 +129,7 @@ Once the ovhai CLI is installed, you need to authenticate with a Public Cloud us
 ovhai login
 ```
 
-If you want to find this information, check the [documentation](https://docs.ovh.com/fr/publiccloud/ai/cli/install-client/#instructions).
+If you want to find this information, check the [documentation](/pages/platform/ai/cli_10_howto_install_cli#instructions).
 
 ### I have compatibility issues between my installed packages
 
@@ -150,7 +147,7 @@ Each AI Notebooks service comes with a monitoring dashboard, allowing you to clo
 
 To verify your usage metrics, go to the Public Cloud Control Panel and select AI Notebooks. All your notebooks will be listed. Click on your notebook to check its information. In `Resources`, you can then access the monitoring of your resources via the `Graph Dashboard`.
 
-Please note that each AI Notebook is limited to a maximum amount of CPUs and GPUs. You can refer to the AI Notebooks [Capabilities and Limitations](https://docs.ovh.com/fr/publiccloud/ai/notebooks/capabilities/) guide.
+Please note that each AI Notebook is limited to a maximum amount of CPUs and GPUs. You can refer to the AI Notebooks [Capabilities and Limitations](/pages/platform/ai/notebook_guide_capabilities) guide.
 
 ### I am experiencing slowness
 
@@ -172,7 +169,7 @@ While it's not possible with AI Notebooks, you can bring your custom ones with *
 
 AI Training allows you to benefit from the same technology and pricing, but you can create notebooks directly with your **own Docker images**.
 
-If you want to build and use a custom Docker image, you can do it with AI Training by following this [tutorial](https://docs.ovh.com/fr/publiccloud/ai/training/build-use-custom-image/).
+If you want to build and use a custom Docker image, you can do it with AI Training by following this [tutorial](/pages/platform/ai/training_tuto_02_build_custom_image).
 
 ### CLI: my notebook is in "failed" status
 

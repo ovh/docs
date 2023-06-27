@@ -1,9 +1,6 @@
 ---
 title: Come disattivare i tuoi servizi OVHcloud
 excerpt: Come interrompere i vostri abbonamenti OVHcloud
-slug: how-to-cancel-your-services
-section: Gestione di ordini, fatture e servizi
-order: 03
 updated: 2022-03-22
 ---
 
@@ -46,7 +43,7 @@ Questo implica che, prima di disattivarsi, devi essere **certo**:
 >
 > La rescissione può essere applicata solo se sono soddisfatte le seguenti condizioni:
 >
-> * sei il "contatto amministratore" del servizio (per maggiori informazioni, consulta [questa guida](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/#definizione));
+> * sei il "contatto amministratore" del servizio (per maggiori informazioni, consulta [questa guida](/pages/account/customer/managing_contacts#definizione));
 > * il servizio non è in rinnovo manuale;
 > * il servizio non è sospeso, in particolare a causa di una mancata regolarizzazione di una fattura.
 >
@@ -104,7 +101,7 @@ Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action
 
 #### Managed Bare Metal <a name="managedbaremetal"></a>
 
-Per disattivare la soluzione [Managed bare metal](https://www.ovhcloud.com/it/managed-bare-metal/), segui le indicazioni di questa [guida](https://docs.ovh.com/it/managed-bare-metal/disattivare-una-soluzione-managed-bare-metal/).
+Per disattivare la soluzione [Managed bare metal](https://www.ovhcloud.com/it/managed-bare-metal/), segui le indicazioni di questa [guida](/pages/cloud/managed-bare-metal/how-to-cancel).
 
 #### Server NAS-HA <a name="nas"></a>
 
@@ -134,7 +131,7 @@ Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action
 
 #### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
 
-Per disattivare la soluzione [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/), segui le istruzioni di questa [guida](https://docs.ovh.com/it/private-cloud/disattivare-una-soluzione-private-cloud/).
+Per disattivare la soluzione [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/), segui le istruzioni di questa [guida](/pages/cloud/private-cloud/comment_resilier_le_private_cloud).
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
@@ -150,9 +147,9 @@ Ogni servizio [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) può ess
 
 ![public cloud instance deletion](images/pci-deletion.png){.thumbnail}
 
-Il Public Cloud OVHcloud si basa sul principio del *Pay as you go* (per maggiori informazioni, consulta la pagina [relativa alla fatturazione Public Cloud](https://docs.ovh.com/it/public-cloud/analizza_i_tuoi_consumi_e_gestisci_la_tua_fatturazione/)). Alla fine del mese viene fatturato solo il tempo di utilizzo effettivo delle risorse.
+Il Public Cloud OVHcloud si basa sul principio del *Pay as you go* (per maggiori informazioni, consulta la pagina [relativa alla fatturazione Public Cloud](/pages/platform/public-cloud/analyze_billing)). Alla fine del mese viene fatturato solo il tempo di utilizzo effettivo delle risorse.
 
-Accedi allo Spazio Cliente OVHcloud per [consultare i tuoi consumi correnti](https://docs.ovh.com/it/public-cloud/analizza_i_tuoi_consumi_e_gestisci_la_tua_fatturazione/#consulta-lo-stato-dei-tuoi-consumi) e vieni avvisato via email quando la proiezione dei tuoi consumi supera una determinata soglia.
+Accedi allo Spazio Cliente OVHcloud per [consultare i tuoi consumi correnti](/pages/platform/public-cloud/analyze_billing#consulta-lo-stato-dei-tuoi-consumi) e vieni avvisato via email quando la proiezione dei tuoi consumi supera una determinata soglia.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -201,7 +198,7 @@ Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action
 
 Un'offerta MX Plan non è soggetta a sottoscrizione periodica. e non è possibile disattivarla ma, se lo desideri, puoi eliminare la tua offerta.
 
-Per eliminare la soluzione [MX Plan](https://docs.ovh.com/it/emails/), accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Prodotti e servizi`{.action}.
+Per eliminare la soluzione [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan), accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Prodotti e servizi`{.action}.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del servizio da disattivare e seleziona `Elimina subito MX Plan`{.action}.
 
@@ -216,23 +213,23 @@ Riceverai un'email con la procedura da seguire per la disattivazione del tuo MX 
 
 #### E-mail Pro <a name="emailpro"></a>
 
-Per disattivare la tua offerta [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/), segui le indicazioni di questa [guida](https://docs.ovh.com/it/emails-pro/gestione-fatturazione-emailpro/#elimina-account).
+Per disattivare la tua offerta [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/), segui le indicazioni di questa [guida](/pages/web/emails-pro/manage_billing_emailpro#elimina-account).
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Per disattivare la soluzione [Hosted Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/), segui le indicazioni di questa [guida](https://docs.ovh.com/it/microsoft-collaborative-solutions/gestisci-fatturazione-exchange/#elimina-account).
+Per disattivare la soluzione [Hosted Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/), segui le indicazioni di questa [guida](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#elimina-account).
 
 #### Private Exchange <a name="private"></a>
 
-Per disattivare la tua offerta [Private Exchange](https://www.ovhcloud.com/it/emails/private-exchange/), segui le indicazioni di questa [guida](https://docs.ovh.com/it/microsoft-collaborative-solutions/gestisci-fatturazione-exchange/#elimina-account).
+Per disattivare la tua offerta [Private Exchange](https://www.ovhcloud.com/it/emails/private-exchange/), segui le indicazioni di questa [guida](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#elimina-account).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 
-Per disattivare la tua offerta [Office 365 csp 1](https://www.ovhcloud.com/it/collaborative-tools/microsoft-365/), segui questa [guida](https://docs.ovh.com/it/microsoft-collaborative-solutions/ordina_e_gestisci_un_gruppo_di_licenze_office_365_ovh/#gestisci-i-tuoi-abbonamenti).
+Per disattivare la tua offerta [Office 365 csp 1](https://www.ovhcloud.com/it/collaborative-tools/microsoft-365/), segui questa [guida](/pages/web/microsoft-collaborative-solutions/office_csp1#gestisci-i-tuoi-abbonamenti).
 
 #### Office 365 csp 2 <a name="office-csp2"></a>
 
-Per disattivare la tua offerta [Office 365 csp 2](https://www.ovhcloud.com/it/collaborative-tools/microsoft-365/reseller/), segui questa [guida](https://docs.ovh.com/it/microsoft-collaborative-solutions/ordina_e_gestisci_un_gruppo_di_licenze_office_365_reseller_ovh_csp2/#gestisci-i-tuoi-abbonamenti).
+Per disattivare la tua offerta [Office 365 csp 2](https://www.ovhcloud.com/it/collaborative-tools/microsoft-365/reseller/), segui questa [guida](/pages/web/microsoft-collaborative-solutions/office_csp2#gestisci-i-tuoi-abbonamenti).
 
 #### Sharepoint <a name="sharepoint"></a>
 
@@ -275,6 +272,6 @@ Infine clicca su `Conferma l'annullamento`{.action}.
 
 ## Per saperne di più <a name="gofurther"></a>
 
-[Gestire il rinnovo dei servizi OVHcloud](https://docs.ovh.com/it/billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/)
+[Gestire il rinnovo dei servizi OVHcloud](/pages/account/billing/how_to_use_automatic_renewal)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -1,10 +1,7 @@
 ---
 title: 'Web Cloud Databases - primeira utilização'
-slug: comecar-com-clouddb
 excerpt: 'Saiba como começar a usar e a gerir o serviço Web Cloud Databases'
 legacy_guide_number: 2216
-section: 'Primeiros passos'
-order: 01
 updated: 2023-05-31
 ---
 

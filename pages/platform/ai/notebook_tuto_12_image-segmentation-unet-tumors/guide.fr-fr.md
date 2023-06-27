@@ -1,9 +1,6 @@
 ---
 title: AI Notebooks - Tutoriel - Segmenter des tumeurs avec U-Net (EN)
-slug: notebooks/tuto-image-segmentation-unet-tumors
 excerpt: Découvrez comment entraîner un modèle capable de détecter et de segmenter des tumeurs dans des scans IRM
-section: AI Notebooks - Tutoriels
-order: 12
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-notebooks-tuto-image-segmentation-unet-tumors?id=kb_article_view&sysparm_article=KB0057606'
 updated: 2023-05-11
@@ -64,7 +61,7 @@ Using GPUs is recommended because medical imaging is a training intensive task.
 
 ### Launching a Jupyter notebook with "Tensorflow" via CLI
 
-*If you do not use our CLI yet, follow [this guide](https://docs.ovh.com/fr/publiccloud/ai/cli/install-client/) to install it.*
+*If you do not use our CLI yet, follow [this guide](/pages/platform/ai/cli_10_howto_install_cli) to install it.*
 
 If you want to launch your notebook with the OVHcloud AI CLI, choose the `jupyterlab` editor and the `tensorflow` framework.
 

@@ -1,8 +1,6 @@
 ---
 title: "Déconnecter l'image ISO d'une VM"
 excerpt: "Comment déconnecter une image ISO d'une machine virtuelle ?"
-slug: disconnect_iso_from_vm
-section: Premiers pas
 updated: 2022-04-27
 ---
 

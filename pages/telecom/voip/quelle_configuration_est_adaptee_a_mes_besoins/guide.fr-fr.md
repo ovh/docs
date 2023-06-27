@@ -1,9 +1,6 @@
 ---
 title: 'Choisir et appliquer une configuration pour un numéro'
-slug: quelle-configuration-est-adaptee-a-mes-besoins
 excerpt: 'Découvrez comment choisir et appliquer une configuration sur votre numéro'
-section: 'Numéros ou alias'
-order: 3
 updated: 2022-07-07
 ---
 
@@ -17,12 +14,12 @@ Lorsque vous disposez d'un numéro alias chez OVHcloud, qu'il soit nouvellement 
 
 > [!primary]
 >
-> Pour obtenir plus de détails sur la différence entre un **numéro alias** et une **ligne SIP**, consultez notre [FAQ](https://docs.ovh.com/fr/voip/faq-voip/#ligne-ou-numero).
+> Pour obtenir plus de détails sur la différence entre un **numéro alias** et une **ligne SIP**, consultez notre [FAQ](/pages/telecom/voip/faq-voip#ligne-ou-numero).
 >
 
 ## Prérequis
 
-- Disposer d'un [numéro alias fourni par OVHcloud](https://www.ovhtelecom.fr/telephonie/numeros/){.external} ou d'un [numéro porté](../demander-la-portabilite-de-mon-numero) depuis un autre opérateur.
+- Disposer d'un [numéro alias fourni par OVHcloud](https://www.ovhtelecom.fr/telephonie/numeros/){.external} ou d'un [numéro porté](/pages/telecom/voip/demander_la_portabilite_de_mon_numero) depuis un autre opérateur.
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
 
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
@@ -62,25 +59,25 @@ Vous trouverez ci-dessous un récapitulatif des différentes configurations. Pou
 
 La redirection permet de rediriger les appels reçus sur un numéro OVHcloud vers une seule ligne SIP OVHcloud.
 
-Cette configuration est accessible en mode simple uniquement. Reportez-vous aux instructions décrites dans notre documentation « [Configurer une redirection d’appels](../creer-redirection-avec-presentation/){.external} » si vous désirez en apprendre plus.
+Cette configuration est accessible en mode simple uniquement. Reportez-vous aux instructions décrites dans notre documentation « [Configurer une redirection d’appels](/pages/telecom/voip/redirection_avec_presentation){.external} » si vous désirez en apprendre plus.
 
 #### 2.2 File d'appels <a name="file-d-appels"></a>
 
 La file d'appels vous permet de gérer le flux de vos appels entrants. Elle vous permet de créer une file d'attente, avant de mettre en relation avec vos collaborateurs les interlocuteurs qui vous contactent. Cette solution s’adapte à vos besoins et à votre propre organisation en fonction de ce que vous souhaitez paramétrer.
 
-Cette configuration n'est accessible qu'en mode simple. Reportez-vous aux instructions décrites dans notre documentation « [Configurer une file d’appels](../les-files-d-appels/) » si vous désirez en apprendre plus.
+Cette configuration n'est accessible qu'en mode simple. Reportez-vous aux instructions décrites dans notre documentation « [Configurer une file d’appels](/pages/telecom/voip/les_files_d_appels) » si vous désirez en apprendre plus.
 
 #### 2.3 Conférence <a name="conference"></a>
 
 La conférence permet à toutes les personnes composant un numéro donné d’être en communication simultanément. Différentes fonctionnalités sont alors disponibles : protéger la conférence par un code, définir une annonce personnalisée, enregistrer les participants et recevoir un rapport par e-mail à la fin de celle-ci. Une interface spécifique vous propose également de suivre en temps réel les discussions des participants, mais aussi de gérer leur audio et leur micro.
 
-Cette configuration n'est accessible qu'en mode simple uniquement. Reportez-vous aux instructions décrites dans notre documentation « [Créer et gérer des conférences téléphoniques](../conference/) » si vous désirez en apprendre plus.
+Cette configuration n'est accessible qu'en mode simple uniquement. Reportez-vous aux instructions décrites dans notre documentation « [Créer et gérer des conférences téléphoniques](/pages/telecom/voip/conference) » si vous désirez en apprendre plus.
 
 #### 2.4 Serveur vocal interactif <a name="svi"></a>
 
 Le serveur vocal interactif (SVI) vous propose une interface simple pour créer un menu interactif. L’appelant est invité, via des messages pré-enregistrés, à interagir avec le serveur grâce aux touches de son téléphone. Selon la configuration, il est alors possible de transférer votre interlocuteur vers un autre numéro, de le renvoyer vers une messagerie OVHcloud, de raccrocher ou de lire des sons.
 
-Cette configuration n'est accessible qu'en mode simple. Consultez notre guide « [Configurer un serveur vocal interactif (SVI)](../svi-serveur-vocal-interactif/) » si vous en désirez en apprendre plus.
+Cette configuration n'est accessible qu'en mode simple. Consultez notre guide « [Configurer un serveur vocal interactif (SVI)](/pages/telecom/voip/svi_serveur_vocal_interactif) » si vous en désirez en apprendre plus.
 
 #### 2.5 SVI VXML <a name="svi-vxml"></a>
 
@@ -96,7 +93,7 @@ Via une interface unique, vous avez la possibilité de gérer une file d'appels,
 
 Des options supplémentaires sont également disponibles telles que l'enregistrement des appels entrants.
 
-Cette configuration n'est accessible qu'en mode expert. Consultez notre guide « [Configurer un Contact Center Solution](../contact-center-solution/) » si vous en désirez en apprendre plus.
+Cette configuration n'est accessible qu'en mode expert. Consultez notre guide « [Configurer un Contact Center Solution](/pages/telecom/voip/contact-center-solution) » si vous en désirez en apprendre plus.
 
 ### Étape 3 : appliquer la configuration souhaitée
 

@@ -1,10 +1,7 @@
 ---
 title: 'Aggiungere un record MX alla configurazione di un dominio'
 excerpt: 'Come creare un nuovo record MX per il tuo dominio OVHcloud'
-slug: aggiungere-record-mx-configurazione-dominio
 legacy_guide_number: g2012
-section: 'DNS e zona DNS'
-order: 04
 updated: 2018-05-30
 ---
 
@@ -80,9 +77,9 @@ Una volta inserite le informazioni, prosegui con gli step successivi e clicca su
 
 ## Per saperne di più
 
-[Modificare i server DNS di un dominio OVHcloud](https://docs.ovh.com/it/domains/web_hosting_gestisci_il_tuo_server_dns/){.external}
+[Modificare i server DNS di un dominio OVHcloud](/pages/web/domains/dns_server_general_information){.external}
 
-[Modificare una zona DNS OVHcloud](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/){.external}
+[Modificare una zona DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external}
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 

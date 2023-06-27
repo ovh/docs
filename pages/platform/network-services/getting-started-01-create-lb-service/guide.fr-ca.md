@@ -1,9 +1,6 @@
 ---
 title: Premiers pas avec le service Load Balancer pour Public Cloud
-slug: getting-started-with-load-balancer-public-cloud
 excerpt: Découvrez comment débuter avec un Load Balancer Public Cloud
-section: Premiers pas
-order: 01
 updated: 2022-11-02
 ---
 
@@ -18,7 +15,7 @@ Notre nouvelle solution Load Balancer as a Service (LBaaS) est basée sur le ser
 ## Prérequis
 
 - Un [projet Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/)
-- Utiliser [l'environnement de commande Openstack](https://docs.ovh.com/ca/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/))
+- Utiliser [l'environnement de commande Openstack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api))
 - Avoir installé le client Openstack Octavia
 
 ## En pratique
@@ -39,7 +36,7 @@ openstack router add subnet my_router my_subnet
 openstack router set --external-gateway Ext-Net my_router
 ```
 
-Vous pouvez maintenant attacher vos instances à ce nouveau réseau. Nous vous recommandons de suivre la documentation pour [attacher vos instances au vRack](https://docs.ovh.com/ca/fr/publiccloud/network-services/public-cloud-vrack/#instance-integration). 
+Vous pouvez maintenant attacher vos instances à ce nouveau réseau. Nous vous recommandons de suivre la documentation pour [attacher vos instances au vRack](/pages/platform/network-services/getting-started-07-creating-vrack#instance-integration). 
 
 Prenez note des adresses de vos instances dans votre réseau avec la commande suivante :
 

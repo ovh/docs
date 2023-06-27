@@ -1,8 +1,6 @@
 ---
 title: Load balancing methods
-slug: balancing
 excerpt: Find out about the various load balancing methods used by the OVH Load Balancer
-section: Configuration
 updated: 2018-01-17
 ---
 
@@ -26,7 +24,7 @@ The new OVH Load Balancer service offers a variety of load balancing methods for
 
 Load balancing is used in server farms. This setting defines the way that requests are distributed between the servers within the farm.
 
-To understand the basics of the OVH Load Balancer service, please refer to the [Load Balancer Introduction](https://docs.ovh.com/au/en/load-balancer/loadbalancer-introduction/){.external}.
+To understand the basics of the OVH Load Balancer service, please refer to the [Load Balancer Introduction](/pages/cloud/load_balancer/use_presentation){.external}.
 
 |Algorithm|Features|
 |---|---|

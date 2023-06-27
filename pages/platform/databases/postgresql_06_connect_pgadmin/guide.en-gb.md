@@ -1,9 +1,6 @@
 ---
 title: PostgreSQL - Connect with pgAdmin
 excerpt: Connect to your Public Cloud Databases for PostgreSQL using pgAdmin
-slug: postgresql/connect-pgadmin
-section: PostgreSQL - Guides
-order: 070
 updated: 2022-04-04
 ---
 
@@ -19,14 +16,14 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 - A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account.
-- A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/gb/en/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your PostgreSQL instance](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/configure-postgresql-instance/) to accept incoming connections
+- A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your PostgreSQL instance](/pages/platform/databases/postgresql_07_prepare_for_incoming_connections) to accept incoming connections
 - A pgAdmin stable version installed and public network connectivity (Internet). This guide was made in pgAdmin 4 version 6.4.
 
 ## Concept
 
 A PostgreSQL instance can be managed through multiple ways.
-One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide: [Connect to PostgreSQL with CLI](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/connect-cli/) or by using programming languages, such as [PHP](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/connect-php/) or [Python](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/connect-python/).
+One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide: [Connect to PostgreSQL with CLI](/pages/platform/databases/postgresql_03_connect_cli) or by using programming languages, such as [PHP](/pages/platform/databases/postgresql_04_connect_php) or [Python](/pages/platform/databases/postgresql_05_connect_python).
 
 Another way is to interact directly using a management tool for PostgreSQL: pgAdmin.
 

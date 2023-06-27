@@ -1,9 +1,6 @@
 ---
 title: "Logowanie do przestrzeni dyskowej FTP hostingu"
-slug: logowanie-przestrzen-dyskowa-ftp-hosting-web
 excerpt: "Dowiedz się, jak się zalogować do przestrzeni dyskowej FTP Twojego hostingu WWW OVHcloud"
-section: 'FTP i SSH'
-order: 02
 updated: 2023-06-01
 ---
 

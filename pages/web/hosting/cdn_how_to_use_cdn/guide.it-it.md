@@ -1,9 +1,6 @@
 ---
 title: 'Aumentare la velocità di un sito Web con la CDN'
 excerpt: 'Come ottimizzare il tuo sito accelerando la velocità di caricamento dell’hosting Web con la CDN'
-slug: guida_allutilizzo_dellacceleratore_geocache_su_un_hosting_web
-section: Ottimizza il tuo sito
-order: 03
 updated: 2021-12-23
 ---
 
@@ -63,7 +60,7 @@ A questo punto, seleziona la voce "Attiva la CDN", clicca su `Seguente`{.action}
 > [!warning]
 > 
 > Sa hai aggiunto un dominio esterno (non OVHcloud) al multisito dell’hosting Web, è necessario indicare l’indirizzo IP della CDN del tuo hosting nella zona DNS del dominio.<br>
-> Consulta la [lista degli indirizzi IP di cluster e hosting Web](https://docs.ovh.com/it/hosting/lista-indirizzi-ip-di-cluster-e-hosting-web/) per recuperare l’indirizzo IP specifico per la CDN del tuo cluster.
+> Consulta la [lista degli indirizzi IP di cluster e hosting Web](/pages/web/hosting/clusters_and_shared_hosting_IP) per recuperare l’indirizzo IP specifico per la CDN del tuo cluster.
  
 **Perché non puoi utilizzare l'IP geolocalizzato con l'opzione CDN?** <br>
 <br>
@@ -179,7 +176,7 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 
 > [!warning]
 >
-> Per l'installazione di un [modulo in 1 click OVHcloud](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/), il WAF deve essere disattivato per evitare che l'installazione del modulo sia bloccata.
+> Per l'installazione di un [modulo in 1 click OVHcloud](/pages/web/hosting/cms_install_1_click_modules), il WAF deve essere disattivato per evitare che l'installazione del modulo sia bloccata.
 
 > [!primary]
 >  

@@ -1,9 +1,6 @@
 ---
 title: Configurer son adresse e-mail sur Android via l'application Gmail
-slug: configuration-android-6
 excerpt: Apprenez à configurer une adresse e-mail MX Plan sur Android, via l'application Gmail
-section: Configuration sur smartphone
-order: 02
 updated: 2018-03-12
 ---
 
@@ -103,8 +100,8 @@ OVHcloud propose une application web permettant d'accéder à votre adresse e-ma
 
 ## Aller plus loin
 
-[Configurer son compte E-mail Pro sur Android via l'application Gmail](https://docs.ovh.com/fr/emails-pro/configuration-android/){.external}.
+[Configurer son compte E-mail Pro sur Android via l'application Gmail](/pages/web/emails-pro/how_to_configure_android){.external}.
 
-[Configurer son compte Exchange sur Android via l'application Gmail](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-sous-android/){.external}.
+[Configurer son compte Exchange sur Android via l'application Gmail](/pages/web/microsoft-collaborative-solutions/how_to_configure_android){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.

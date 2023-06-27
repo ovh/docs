@@ -1,8 +1,6 @@
 ---
 title: Managed Kubernetes objects (services, deployments, pods...)
 excerpt: ''
-slug: managed-kubernetes-objects
-section: Technical resources
 updated: 2022-02-24
 ---
 

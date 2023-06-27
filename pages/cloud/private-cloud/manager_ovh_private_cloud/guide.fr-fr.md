@@ -1,9 +1,6 @@
 ---
 title: Présentation de l'espace client Hosted Private Cloud OVHcloud
-slug: manager-ovh-private-cloud
 excerpt: Découvrez les possibilités de votre espace client Hosted Private Cloud
-section: Premiers pas
-order: 1
 updated: 2021-12-15
 ---
 
@@ -118,7 +115,7 @@ Vous pouvez paramétrer les options à l'aide des boutons sur la droite de l'éc
 >
 
 En bas de la page, vous pouvez aussi ajouter un Key Management Servers.<br>
-Consultez le guide « [Activation du chiffrement des machines virtuelles](https://docs.ovh.com/fr/private-cloud/vm-encrypt/) » pour plus de details.
+Consultez le guide « [Activation du chiffrement des machines virtuelles](/pages/cloud/private-cloud/vm_encrypt) » pour plus de details.
 
 ![KMS](images/en09kms.png){.thumbnail}
 
@@ -181,7 +178,7 @@ Vous pouvez également ajouter un nouveau datastore via le bouton `Commander un 
 #### Backup
 
 L'onglet Backup vous permet d'activer une solution de sauvegarde Veeam.<br>
-Consultez le guide « [Activer et utiliser Veeam Managed Backup](https://docs.ovh.com/fr/private-cloud/veeam-backup-as-a-service/) » pour plus de détails.
+Consultez le guide « [Activer et utiliser Veeam Managed Backup](/pages/cloud/private-cloud/veeam_backup_as_a_service) » pour plus de détails.
 
 ![BACKUP](images/en16backup.png){.thumbnail}
 
@@ -192,7 +189,7 @@ Une fois le service activé, la page Backup vous permet également de planifier 
 #### Plan de reprise d’activité (PRA)
 
 L'onglet Plan de reprise d’activité (PRA) vous permet de construire une solution de PRA avec Zerto.<br>
-Consultez le guide « [Mise en oeuvre de Zerto Virtual Replication pour votre PRA](https://docs.ovh.com/fr/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/) » pour plus de détails.
+Consultez le guide « [Mise en oeuvre de Zerto Virtual Replication pour votre PRA](/pages/cloud/private-cloud/zerto_virtual_replication_as_a_service) » pour plus de détails.
 
 ![DRP](images/en18drp.png){.thumbnail}
 

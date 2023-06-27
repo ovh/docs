@@ -1,7 +1,5 @@
 ---
 title: DNS management and Apex domains
-slug: dns
-section: Steps
 updated: 2021-05-11
 ---
 

@@ -1,7 +1,5 @@
 ---
 title: 'Transferir el backup de una instancia entre datacenters'
-slug: transferir-backup-de-instancia-entre-datacenters
-section: 'Almacenamiento'
 excerpt: 'Cómo transferir un backup de un datacenter a otro conservando la configuración y el estado de la instancia'
 updated: 2019-03-29
 ---
@@ -23,7 +21,7 @@ Es posible que necesite transferir una instancia de Public Cloud de un datacente
 
 * Haber creado una [instancia de Public Cloud](https://www.ovhcloud.com/en/public-cloud/){.external} desde su cuenta de cliente.
 * Tener acceso de administrador (root) a su instancia o sistema operativo a través de SSH.
-* Haber leído la guía [Preparar el entorno para utilizar la API de OpenStack](../prepare_the_environment_for_using_the_openstack_api/){.external} (recomendado).
+* Haber leído la guía [Preparar el entorno para utilizar la API de OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api){.external} (recomendado).
 
 > [!primary]
 >
@@ -145,6 +143,6 @@ Para crear la instancia a partir del backup, ejecute el siguiente comando utiliz
 
 ## Más información
 
-[Transferir el backup de un volumen entre datacenters](https://docs.ovh.com/gb/en/public-cloud/transfer_volume_backup_from_one_datacentre_to_another/){.external} (en inglés)
+[Transferir el backup de un volumen entre datacenters](/pages/platform/public-cloud/transfer_volume_backup_from_one_datacentre_to_another){.external} (en inglés)
 
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

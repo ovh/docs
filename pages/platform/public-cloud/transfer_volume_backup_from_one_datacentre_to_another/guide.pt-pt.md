@@ -1,9 +1,7 @@
 ---
 title: Transferir o backup de um volume de um datacenter para outro
 excerpt: Transferir o backup de um volume de um datacenter para outro
-slug: transferir_o_backup_de_um_volume_de_um_datacenter_para_outro
 legacy_guide_number: g1941
-section: Armazenamento
 updated: 2021-01-19
 ---
 
@@ -24,7 +22,7 @@ Poderá necessitar de migrar os seus volumes adicionais de um datacenter para ou
 
 * Dispor de uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVHcloud.
 * Dispor de um acesso administrador (root) ao datacenter através de SSH.
-* Ler o manual [Preparar o ambiente para utilizar a API OpenStack](../prepare_the_environment_for_using_the_openstack_api/){.external}. (Recomendado)
+* Ler o manual [Preparar o ambiente para utilizar a API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api){.external}. (Recomendado)
 
 > [!primary]
 >
@@ -195,6 +193,6 @@ root@server:~$ volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c
 
 ## Quer saber mais?
 
-[Transferir a cópia de segurança de uma instância de um datacenter para outro](../transferir-a-copia-de-seguranca-de-uma-instancia-de-um-datacenter-para-outro/){.external}.
+[Transferir a cópia de segurança de uma instância de um datacenter para outro](/pages/platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another){.external}.
  
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

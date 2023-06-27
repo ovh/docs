@@ -1,8 +1,6 @@
 ---
 title: 'Konfigurowanie adresu IPv6 na serwerach dedykowanych'
-slug: siec-ipv6
 excerpt: 'Dowiedz się, jak skonfigurować adresy IPv6 w infrastrukturze OVHcloud'
-section: 'Sieć & IP'
 updated: 2022-08-26
 ---
 
@@ -28,7 +26,7 @@ IPv6 (Internet Protocol version 6) jest najnowszą wersją protokołu internetow
 
 - [Serwer dedykowany](https://www.ovhcloud.com/pl/bare-metal/) w ramach konta OVHcloud.
 - Wszystkie informacje o protokole IPv6 (prefiks, brama itd.).
-- Podstawowa wiedza z zakresu [protokołu SSH](../ssh-wprowadzenie/) i sieci.
+- Podstawowa wiedza z zakresu [protokołu SSH](/pages/cloud/dedicated/ssh_introduction) i sieci.
 
 > [!warning]
 > Serwery Kimsufi są dostarczane z jednym blokiem IPv6 (/128). IPv6 zostanie automatycznie skonfigurowane podczas instalacji systemu operacyjnego.
@@ -51,7 +49,7 @@ Jeśli chcesz skonfigurować kilka adresów IPv6 na Twoim serwerze (lub jeśli c
 > - Zakres IPv6 serwera to `2607:5300:60:62ac::/64` lub `2607:5300:60:62ac:0000:0000:0000:0000/64`. Dlatego bramą IPv6_GATEWAY jest `2607:5300:60:62FF:FF:FF:FF:FF`.
 > - Zakres IPv6 serwera to `2001:41D0:1:46e::/64` lub `2001:41D0:0001:046e:0000:0000:0000:0000/64`. Dlatego bramą IPv6_GATEWAY jest `2001:41D0:1:4FF:FF:FF:FF:FF`.
 >
-> Najbezpieczniejszym sposobem pobierania informacji o sieci na Twoim serwerze jest korzystanie z [API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/). Wykonaj następujące wywołanie API, wskazując wewnętrzną nazwę serwera (przykład: `ns3956771.ip-169-254-10.eu`):
+> Najbezpieczniejszym sposobem pobierania informacji o sieci na Twoim serwerze jest korzystanie z [API OVHcloud](/pages/account/api/first-steps). Wykonaj następujące wywołanie API, wskazując wewnętrzną nazwę serwera (przykład: `ns3956771.ip-169-254-10.eu`):
 >
 
 
@@ -79,7 +77,7 @@ Jeśli chcesz skonfigurować kilka adresów IPv6 na Twoim serwerze (lub jeśli c
 
 #### Krok 1: połączenie z serwerem przy użyciu protokołu SSH
 
-[Więcej informacji zawiera ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/).
+[Więcej informacji zawiera ten przewodnik](/pages/cloud/dedicated/getting-started-with-dedicated-server).
 
 #### Krok 2: otwarcie pliku konfiguracji sieci dla serwera
 
@@ -124,7 +122,7 @@ ping6 -c 4 2001:4860:4860::8888
 ```
 
 
-Jeśli nie możesz wysłać polecenia ping na ten adres IPv6, sprawdź konfigurację i spróbuj ponownie. Upewnij się też, że komputer, z którego przeprowadzasz test, jest połączony za pośrednictwem protokołu IPv6. Jeśli połączenie wciąż nie działa, sprawdź konfigurację w [trybie ratunkowym (rescue)](../ovh-rescue/).
+Jeśli nie możesz wysłać polecenia ping na ten adres IPv6, sprawdź konfigurację i spróbuj ponownie. Upewnij się też, że komputer, z którego przeprowadzasz test, jest połączony za pośrednictwem protokołu IPv6. Jeśli połączenie wciąż nie działa, sprawdź konfigurację w [trybie ratunkowym (rescue)](/pages/cloud/dedicated/rescue_mode).
 
 ### System Fedora 26 i nowszy
 
@@ -135,7 +133,7 @@ Jeśli nie możesz wysłać polecenia ping na ten adres IPv6, sprawdź konfigura
 
 #### Krok 1: połączenie z serwerem przy użyciu protokołu SSH
 
-Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/).
+Więcej informacji zawiera [ten przewodnik](/pages/cloud/dedicated/getting-started-with-dedicated-server).
 
 
 #### Krok 2: otwarcie pliku konfiguracji sieci dla serwera
@@ -179,13 +177,13 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-Jeśli nie możesz wysłać polecenia ping na ten adres IPv6, sprawdź konfigurację i spróbuj ponownie. Upewnij się też, że komputer, z którego przeprowadzasz test, jest połączony za pośrednictwem protokołu IPv6. Jeśli połączenie wciąż nie działa, sprawdź konfigurację w [trybie ratunkowym (rescue)](../ovh-rescue/).
+Jeśli nie możesz wysłać polecenia ping na ten adres IPv6, sprawdź konfigurację i spróbuj ponownie. Upewnij się też, że komputer, z którego przeprowadzasz test, jest połączony za pośrednictwem protokołu IPv6. Jeśli połączenie wciąż nie działa, sprawdź konfigurację w [trybie ratunkowym (rescue)](/pages/cloud/dedicated/rescue_mode).
 
 ### FreeBSD
 
 #### Krok 1: połączenie z serwerem przy użyciu protokołu SSH
 
-Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/).
+Więcej informacji zawiera [ten przewodnik](/pages/cloud/dedicated/getting-started-with-dedicated-server).
 
 
 #### Krok 2: otwarcie pliku konfiguracji sieci dla serwera
@@ -226,13 +224,13 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-Jeśli nie możesz wysłać polecenia ping na ten adres IPv6, sprawdź konfigurację i spróbuj ponownie. Upewnij się też, że komputer, z którego przeprowadzasz test, jest połączony za pośrednictwem protokołu IPv6. Jeśli połączenie wciąż nie działa, sprawdź konfigurację w [trybie ratunkowym (rescue)](../ovh-rescue/).
+Jeśli nie możesz wysłać polecenia ping na ten adres IPv6, sprawdź konfigurację i spróbuj ponownie. Upewnij się też, że komputer, z którego przeprowadzasz test, jest połączony za pośrednictwem protokołu IPv6. Jeśli połączenie wciąż nie działa, sprawdź konfigurację w [trybie ratunkowym (rescue)](/pages/cloud/dedicated/rescue_mode).
 
 ### Ubuntu 18.04 i 20.04
 
 #### Krok 1: połączenie z serwerem przy użyciu protokołu SSH
 
-Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/).
+Więcej informacji zawiera [ten przewodnik](/pages/cloud/dedicated/getting-started-with-dedicated-server).
 
 #### Krok 2: otwarcie pliku konfiguracji sieci dla serwera
 
@@ -324,7 +322,7 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 
 #### Krok 1: połączenie z serwerem przy użyciu protokołu RDP
 
-Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/).
+Więcej informacji zawiera [ten przewodnik](/pages/cloud/dedicated/getting-started-with-dedicated-server).
 
 
 #### Krok 2: otwarcie konfiguracji sieci dla serwera

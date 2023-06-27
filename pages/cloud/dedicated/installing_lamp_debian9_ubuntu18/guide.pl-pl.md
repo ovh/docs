@@ -1,8 +1,6 @@
 ---
 title: Tutorial - Instalacja serwera www (LAMP) na Debian lub Ubuntu
-slug: setup-lamp-debian-ubuntu
 excerpt: "Dowiedz się, jak skonfigurować serwer WWW LAMP"
-section: Tutorial
 updated: 2023-05-10
 ---
 
@@ -171,7 +169,7 @@ MariaDB [(none)]> exit;
 
 ### Etap 5: konfiguracja firewalla (opcjonalnie)
 
-[Konfiguracja zapory ogniowej](https://docs.ovh.com/pl/dedicated/firewall-iptables/) (*iptables*) poprawi bezpieczeństwo Twojego serwera. Proces ten można uprościć, korzystając z front-endu "Uncomplicated Firewall" (UFW) oraz zestawu wstępnie zdefiniowanych profili. 
+[Konfiguracja zapory ogniowej](/pages/cloud/dedicated/firewall-Linux-iptable) (*iptables*) poprawi bezpieczeństwo Twojego serwera. Proces ten można uprościć, korzystając z front-endu "Uncomplicated Firewall" (UFW) oraz zestawu wstępnie zdefiniowanych profili. 
 
 Zainstaluj UFW:
 

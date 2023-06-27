@@ -1,8 +1,6 @@
 ---
 title: 'Zmiana właściciela domeny'
 excerpt: 'W tym przewodniku znajdziesz różne informacje na temat zmiany właściciela domeny.'
-slug: zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz
-section: 'Zmiana właściciela'
 updated: 2023-06-19
 ---
 
@@ -92,7 +90,7 @@ Jeśli adres e-mail nie został zmieniony w związku ze zmianą właściciela, r
 
 > [!warning]
 >
-> Jeśli właściciel domeny został zmieniony, domena nie będzie mogła zostać [przeniesiona do innego operatora](../transfer_wychodzacy_domeny_globalnej_lub_geograficznej/) przez 60 dni.
+> Jeśli właściciel domeny został zmieniony, domena nie będzie mogła zostać [przeniesiona do innego operatora](/pages/web/domains/transfer_outgoing_domain) przez 60 dni.
 
 ### Aktualizacja danych właściciela <a name="updateownerinformation"></a>
 

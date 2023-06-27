@@ -1,9 +1,6 @@
 ---
 title: '3CX - Configuration et utilisation'
 excerpt: "Découvrez comment configurer un SIP Trunk OVHcloud avec l'IPBX 3CX et deux DDI"
-slug: configuration_basique_dun_sip_trunk_ovh_sur_3cx_phone_system
-section: IPBX
-order: O3
 updated: 2022-10-25
 ---
 
@@ -29,8 +26,8 @@ Pour configurer le 3CX Phone System avec un SIP Trunk et deux DDI (**D**irect **
 ## Prérequis
 
 - Un [SIP Trunk OVHcloud](https://www.ovhtelecom.fr/telephonie/sip-trunk/)
-- Deux [alias configurés](https://docs.ovh.com/fr/voip/creer-redirection-avec-presentation/) en DDI (Redirection avec présentation du numéro)
-- Un [softphone](https://docs.ovh.com/fr/voip/enregistrer-ligne-sip-softphone/) ou un téléphone SIP
+- Deux [alias configurés](/pages/telecom/voip/redirection_avec_presentation) en DDI (Redirection avec présentation du numéro)
+- Un [softphone](/pages/telecom/voip/register-sip-softphone) ou un téléphone SIP
 - [3CX](https://www.3cx.fr/) installé, activé et à jour. 
 
 Obtenez gratuitement 3CX [en cliquant ici](https://www.3cx.fr/pabx/download-pabx-ip/).

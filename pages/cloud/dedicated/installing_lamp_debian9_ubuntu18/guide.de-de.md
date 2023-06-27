@@ -1,8 +1,6 @@
 ---
 title: Webserver (LAMP) auf Debian oder Ubuntu installieren
-slug: setup-lamp-debian-ubuntu
 excerpt: Erfahren Sie hier, wie Sie einen LAMP-basierten Webserver einrichten
-section: Tutorials
 updated: 2023-05-10
 ---
 
@@ -173,7 +171,7 @@ MariaDB [(none)]> exit;
 
 ### Schritt 5: Konfiguration der Firewall (optional)
 
-[Die Konfiguration einer Firewall](https://docs.ovh.com/de/dedicated/firewall-iptables/) (*iptables*) verbessert die Sicherheit Ihres Servers. Dieser Prozess kann vereinfacht werden, indem das Frontend “Uncomplicated Firewall” (UFW) und dessen vordefinierte Profile verwendet werden.
+[Die Konfiguration einer Firewall](/pages/cloud/dedicated/firewall-Linux-iptable) (*iptables*) verbessert die Sicherheit Ihres Servers. Dieser Prozess kann vereinfacht werden, indem das Frontend “Uncomplicated Firewall” (UFW) und dessen vordefinierte Profile verwendet werden.
 
 Installieren Sie UFW:
 

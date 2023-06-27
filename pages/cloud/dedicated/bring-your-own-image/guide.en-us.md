@@ -1,8 +1,6 @@
 ---
 title: How to use the Bring Your Own Image feature
 excerpt: Find out how to easily deploy your own images on dedicated servers
-slug: bringyourownimage
-section: Advanced use
 updated: 2022-11-25
 ---
 
@@ -25,7 +23,7 @@ The image must be able to boot correctly, whatever the server type. It must also
 
 - A [dedicated server](https://us.ovhcloud.com/bare-metal/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) (for the method "[Deployment via Control Panel](#viacontrolpanel)")
-- Access to the [OVHcloud API](../../api/first-steps-with-ovh-api/) (for the section "[Deployment via API](#viaapi)" of this guide)
+- Access to the [OVHcloud API](/pages/account/api/first-steps) (for the section "[Deployment via API](#viaapi)" of this guide)
 - Your image must be smaller than the Server RAM minus 3GiB
 
 > [!warning]
@@ -111,7 +109,7 @@ After you have completed the fields, start the deployment by clicking `Execute`{
 
 ### Checking a deployment
 
-You can track the deployment of your image through the API call below or through the KVM / [IPMI](../use-ipmi-dedicated-servers/).
+You can track the deployment of your image through the API call below or through the KVM / [IPMI](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers).
 
 > [!api]
 >

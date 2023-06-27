@@ -1,11 +1,8 @@
 ---
 title: Connessione all’interfaccia vSphere
-slug: connessione-interfaccia-vsphere
 routes:
-    canonical: 'https://docs.ovh.com/it/private-cloud/connessione-interfaccia-vsphere/'
+    canonical: '/pages/cloud/private-cloud/vsphere_interface_connexion'
 excerpt: Come accedere a vSphere con diverse modalità
-section: Per iniziare
-order: 2
 updated: 2020-11-18
 ---
 

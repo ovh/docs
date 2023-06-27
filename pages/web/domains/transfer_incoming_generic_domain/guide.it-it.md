@@ -1,9 +1,6 @@
 ---
 title: 'Trasferire un dominio in OVHcloud'
-slug: trasferire-un-dominio-generico-in-ovh
 excerpt: 'Questa guida ti mostra come avviare la procedura di trasferimento di un dominio generico verso OVHcloud'
-section: Trasferimento
-order: 01
 updated: 2023-06-22
 ---
 
