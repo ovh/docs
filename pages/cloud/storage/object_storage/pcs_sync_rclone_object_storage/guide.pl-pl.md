@@ -1,8 +1,5 @@
 ---
 title: Object Storage Swift - Wykorzystanie Object Storage z rClone
-slug: pcs/sync-rclone-object-storage
-section: OpenStack Swift Storage Class Specifics
-order: 140
 updated: 2021-10-27
 ---
 
@@ -18,7 +15,7 @@ rClone to zewnętrzne oprogramowanie do synchronizacji, szczegółowe informacje
 ## Wymagania początkowe
 
 - Utworzony kontener *Object Storage* (z poziomu Panelu klienta lub z poziomu [Horizon](https://docs.ovh.com/pl/storage/tworzenie_kontenera_obiektow/){.external}).
-- Utworzony [użytkownik OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/){.external}.
+- Utworzony [użytkownik OpenStack](/pages/platform/public-cloud/create_and_delete_a_user){.external}.
 
 ## W praktyce
 
@@ -26,7 +23,7 @@ Po utworzeniu kontenera oraz użytkownika OpenStack do wykonania pozostają dwie
 
 ### Uzyskanie pliku konfiguracyjnego do rClone:
 
-Po utworzeniu [użytkownika OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/){.external} w Panelu klienta możesz uzyskać plik konfiguracyjny rClone.
+Po utworzeniu [użytkownika OpenStack](/pages/platform/public-cloud/create_and_delete_a_user){.external} w Panelu klienta możesz uzyskać plik konfiguracyjny rClone.
 
 W tym celu, na stronie użytkowników OpenStack w Panelu klienta, należy kliknąć ikonę klucza francuskiego, znajdującą się z prawej strony identyfikatora użytkownika, a następnie kliknąć `Pobierz plik konfiguracyjny rClone`{.external}.
 ![Pobierz plik konfiguracyjny rClone](images/download_file.png){.thumbnail}

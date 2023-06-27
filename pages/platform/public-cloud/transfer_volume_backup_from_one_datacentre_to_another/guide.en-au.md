@@ -1,10 +1,7 @@
 ---
 title: 'Transfer volume backup from one datacentre to another'
 excerpt: 'This guide will show you how to transfer a volume backup from one datacentre to another'
-slug: transfer_volume_backup_from_one_datacentre_to_another
 legacy_guide_number: g1941
-section: Storage
-order: 7
 updated: 2021-01-19
 ---
 
@@ -20,7 +17,7 @@ It may become necessary to move additional volumes from one datacentre to anothe
 
 Before following these steps, it’s recommended that you first complete this guide:
 
-* [Prepare the environment to use the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/){.external}
+* [Prepare the environment to use the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api){.external}
 
 You will also need the following:
 
@@ -188,6 +185,6 @@ root@server:~$ volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c
 
 ## Go further
 
-[Transfer an instance backup from one datacentre to another](../transfer_instance_backup_from_one_datacentre_to_another/){.external}
+[Transfer an instance backup from one datacentre to another](/pages/platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

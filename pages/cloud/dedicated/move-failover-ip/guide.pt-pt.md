@@ -1,9 +1,6 @@
 ---
 title:  Migrar um Additional IP
 excerpt: Saiba como migrar um Additional IP a partir da Área de Cliente ou através das API OVHcloud
-slug: ip-fo-move
-section: Redes & IP
-order: 7
 updated: 2022-12-20
 ---
 
@@ -45,7 +42,7 @@ Esta tecnologia permite-lhe trocar os endereços IP de uma solução para outra 
 
 > [!warning]
 > Se o endereço Additional IP, ou um dos endereços IP do bloco, tem um MAC virtual afetado, o servidor alvo deve suportar a funcionalidade dos MAC virtuais.
-> Consulte [este guia](https://docs.ovh.com/pt/dedicated/network-support-virtual-mac/) para saber mais.
+> Consulte [este guia](/pages/cloud/dedicated/network_support_virtual_mac) para saber mais.
 >
 > Caso contrário, os MAC virtuais devem ser eliminados dos Additional IP antes da deslocação.
 

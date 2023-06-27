@@ -1,11 +1,8 @@
 ---
 title: Redis - Connect with Python
 excerpt: Connect to your Public Cloud Databases for Redis using the Python programming language
-slug: redis/connect-python
-section: Redis - Guides
-order: 050
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/redis/connect-python/'
+    canonical: '/pages/platform/databases/redis_05_connect_python'
 updated: 2022-03-24
 ---
 
@@ -23,14 +20,14 @@ You can find an example on the [Github examples repository](https://github.com/o
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - A [Public Cloud project](https://www.ovhcloud.com/pl/public-cloud/) in your OVHcloud account
-- A Redis database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/pl/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your Redis instance](https://docs.ovh.com/pl/publiccloud/databases/redis/configure-redis-instance/) to accept incoming connections
+- A Redis database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your Redis instance](/pages/platform/databases/redis_08_prepare_for_incoming_connections) to accept incoming connections
 - A PHP environment with a stable version and public network connectivity (Internet). This guide was made in PHP 7.4.
 
 ## Concept
 
 A Redis instance can be managed through multiple ways.
-One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to Redis with CLI](https://docs.ovh.com/pl/publiccloud/databases/redis/connect-cli).
+One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to Redis with CLI](/pages/platform/databases/redis_03_connect_cli).
 
 Another way is to interact directly using programming languages, such as Python.
 

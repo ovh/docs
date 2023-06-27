@@ -1,9 +1,6 @@
 ---
 title: Using vRack - Communicating between different private networks
-slug: using-vrack-between-private-networks
 excerpt: ''
-section: Network
-order: 01
 updated: 2022-07-25
 ---
 
@@ -44,9 +41,9 @@ When your Managed Kubernetes and your other services are both in the vRack, but 
 
 
 > [!warning]
-> You can now [create and use a custom gateway on an OVHcloud Managed Kubernetes cluster](../vrack-k8s-custom-gateway) but if you don't want to, the content of this guide is still relevant.
+> You can now [create and use a custom gateway on an OVHcloud Managed Kubernetes cluster](/pages/platform/kubernetes-k8s/vrack-k8s-custom-gateway) but if you don't want to, the content of this guide is still relevant.
 
-In this document we suppose that you have some understanding of how to use OVHcloud Managed Kubernetes in the vRack. To get more information on this topic you can look at the [Using vRack Private Network](../using_vrack/) guide and [Working with vRack example - Managed Kubernetes and Public Cloud instances](../vrack-example-k8s-and-pci/) tutorial.
+In this document we suppose that you have some understanding of how to use OVHcloud Managed Kubernetes in the vRack. To get more information on this topic you can look at the [Using vRack Private Network](/pages/platform/kubernetes-k8s/using-vrack) guide and [Working with vRack example - Managed Kubernetes and Public Cloud instances](/pages/platform/kubernetes-k8s/vrack-example-k8s-and-pci) tutorial.
 
 ## Networking in Managed Kubernetes inside the vRack
 
@@ -76,7 +73,7 @@ In order to allow this routing, the default gateway for each node is in the exte
 
 ![OVHcloud Managed Kubernetes inside vRack](images/using-vrack-04.jpg){.thumbnail}
 
-For this use case, no additional configuration is needed, you simply have to choose the private network at the creation of your Managed Kubernetes cluster, as explained in the [Using vRack Private Network](../using_vrack/) guide and [Working with vRack example - Managed Kubernetes and Public Cloud instances](../vrack-example-k8s-and-pci/) tutorial.
+For this use case, no additional configuration is needed, you simply have to choose the private network at the creation of your Managed Kubernetes cluster, as explained in the [Using vRack Private Network](/pages/platform/kubernetes-k8s/using-vrack) guide and [Working with vRack example - Managed Kubernetes and Public Cloud instances](/pages/platform/kubernetes-k8s/vrack-example-k8s-and-pci) tutorial.
 
 
 ### Communication between different private networks

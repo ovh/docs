@@ -1,9 +1,6 @@
 ---
 title: 'Como configurar a NIC para o OVHcloud Link Aggregation na Área de Cliente OVHcloud'
-slug: ola-manager
 excerpt: 'Ative o OVHcloud Link Aggregation na sua Área de Cliente'
-section: 'Utilização avançada'
-order: 1
 updated: 2022-05-18
 ---
 
@@ -49,11 +46,11 @@ Verifique que as suas duas interfaces, ou grupos de interfaces, são bem selecio
 
 A operação pode demorar alguns minutos até ficar concluída. O próximo passo consistirá em configurar as interfaces do seu sistema operativo como NIC bond ou NIC team. Para ficar a conhecer o procedimento, consulte os nossos manuais relativos aos sistemas operativos mais populares:
 
-[Como configurar a NIC para o OVHcloud Link Aggregation em Debian 9](../ola-debian9/)
+[Como configurar a NIC para o OVHcloud Link Aggregation em Debian 9](/pages/cloud/dedicated/ola-enable-debian9)
 
-[Como configurar a NIC para o OVHcloud Link Aggregation em CentOS 7](../ola-centos7/)
+[Como configurar a NIC para o OVHcloud Link Aggregation em CentOS 7](/pages/cloud/dedicated/ola-enable-centos7)
 
-[Como configurar a NIC para o OVHcloud Link Aggregation em Windows Server 2019](../ola-w2k19/)
+[Como configurar a NIC para o OVHcloud Link Aggregation em Windows Server 2019](/pages/cloud/dedicated/ola-enable-w2k19)
 
 ### Restaurar OLA aos valores predefinidos
 
@@ -65,10 +62,10 @@ A operação pode demorar alguns minutos.
 
 ## Saiba mais
 
-[Como configurar a NIC para o OVHcloud Link Aggregation em Debian 9](../ola-debian9/)
+[Como configurar a NIC para o OVHcloud Link Aggregation em Debian 9](/pages/cloud/dedicated/ola-enable-debian9)
 
-[Como configurar a NIC para o OVHcloud Link Aggregation em CentOS 7](../ola-centos7/)
+[Como configurar a NIC para o OVHcloud Link Aggregation em CentOS 7](/pages/cloud/dedicated/ola-enable-centos7)
 
-[Como configurar a NIC para o OVHcloud Link Aggregation em Windows Server 2019](../ola-w2k19/)
+[Como configurar a NIC para o OVHcloud Link Aggregation em Windows Server 2019](/pages/cloud/dedicated/ola-enable-w2k19)
 
 Junte-se à nossa comunidade de utilizadores <https://community.ovh.com/en/>.

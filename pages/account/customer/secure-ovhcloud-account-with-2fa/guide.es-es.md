@@ -1,8 +1,6 @@
 ---
 title: 'Proteger su cuenta de OVHcloud con la doble autenticación'
-slug: proteger-su-cuenta-con-una-2FA
 excerpt: 'Cómo mejorar la seguridad de su cuenta de OVHcloud activando la doble autenticación'
-section: Seguridad
 updated: 2022-07-20
 ---
 
@@ -23,7 +21,7 @@ Puede activar la autentificación de dos factores (2FA). Esta se agrega a su nom
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 - Disponer de un móvil (para el método por SMS), un teléfono inteligente o una tableta (para el método a través de la aplicación móvil) o una llave de seguridad U2F (Universal Second Factor).
-- Haber consultado las [recomendaciones sobre la gestión de la contraseña de acceso a su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contrasena/).
+- Haber consultado las [recomendaciones sobre la gestión de la contraseña de acceso a su cuenta](/pages/account/customer/manage-ovh-password).
 
 ## Procedimiento
 
@@ -40,9 +38,9 @@ Tras asociar por primera vez la aplicación a su cuenta, ya no será necesario q
 
 ### Etapa 1: activar su primer método de doble autenticación
 
-- [Activar el método de doble autenticación por SMS](https://docs.ovh.com/es/customer/activar-la-doble-autenticacion-por-sms/).
-- [Activar el método de doble autenticación por aplicación móvil](https://docs.ovh.com/es/customer/activar-la-doble-autenticacion-por-aplicacion-movil/).
-- [Activar el método de doble autenticación por llave de seguridad](https://docs.ovh.com/es/customer/activar-la-doble-autenticacion-por-llave-de-seguridad/).
+- [Activar el método de doble autenticación por SMS](/pages/account/customer/enable-2fa-with-sms).
+- [Activar el método de doble autenticación por aplicación móvil](/pages/account/customer/enable-2fa-with-mobile-app).
+- [Activar el método de doble autenticación por llave de seguridad](/pages/account/customer/enable-2fa-with-security-key).
 
 Tras añadir el primer método, puede agregar uno o dos más a fin de disponer de múltiples medios para iniciar sesión en su cuenta.
 

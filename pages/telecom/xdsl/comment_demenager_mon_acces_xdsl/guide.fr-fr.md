@@ -1,8 +1,6 @@
 ---
 title: Comment déménager mon accès xDSL/FTTH
 excerpt: "Découvrez comment demander le déménagement de votre offre d'accès à Internet OVHcloud depuis votre espace client"
-slug: comment-demenager-mon-acces-xdsl
-section: Gestion de mon offre
 odrder: 1
 updated: 2022-10-10
 ---

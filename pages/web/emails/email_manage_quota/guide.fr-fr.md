@@ -1,9 +1,6 @@
 ---
 title: "Gérer l'espace de stockage d'un compte e-mail"
-slug: manage-email-quota
 excerpt: "Découvrez comment gérer et optimiser l'espace de stockage d'une adresse e-mail "
-section: 'Diagnostic'
-order: 02
 updated: 2022-11-17
 ---
 
@@ -26,7 +23,7 @@ Chaque compte e-mail OVHcloud dispose d'un espace de stockage dédié. Bien gér
 > **Cas particuliers**
 >
 > - Concernant l’hébergement gratuit Start 10M : il est impératif de l’activer au préalable afin de pouvoir créer une adresse e-mail. Vous pouvez effectuer cette opération depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), en vous positionnant sur le nom de domaine concerné.
-> - Dans le cadre d'un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/), il est nécessaire d'activer votre offre MX Plan incluse avant de poursuivre la lecture de cette documentation. Pour cela, consultez notre guide « [Activer les adresses e-mail incluses dans votre hébergement web](https://docs.ovh.com/fr/hosting/activer-email-hebergement-web/) ».
+> - Dans le cadre d'un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/), il est nécessaire d'activer votre offre MX Plan incluse avant de poursuivre la lecture de cette documentation. Pour cela, consultez notre guide « [Activer les adresses e-mail incluses dans votre hébergement web](/pages/web/hosting/activate-email-hosting) ».
 
 ## En pratique <a name="instructions"></a>
 
@@ -146,35 +143,35 @@ Vous trouverez ci-dessous une liste non-exhaustive des guides de configuration p
 > **Emails (MXplan)**
 >>
 >> Configuration d'un compte MXplan sur **Windows** :<br><br>
->> - [Courrier sur Windows 10](https://docs.ovh.com/fr/emails/configuration-courrier-sur-windows-10/) (inclus avec Windows)<br>
->> - [Outlook pour Mxplan](https://docs.ovh.com/fr/emails/configuration-outlook-2016/)
->> - [Thunderbird](https://docs.ovh.com/fr/emails/configuration-email-configuration-pour-thunderbird/) (gratuit)<br><br>
+>> - [Courrier sur Windows 10](/pages/web/emails/how_to_configure_windows_10) (inclus avec Windows)<br>
+>> - [Outlook pour Mxplan](/pages/web/emails/how_to_configure_outlook_2016)
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_windows) (gratuit)<br><br>
 >> Configuration d'un compte MXplan sur **macOS** :<br><br>
->> - [Mail](https://docs.ovh.com/fr/emails/guide-configuration-mail-de-mac-el-capitan/) (inclus avec macOS)<br>
->> - [Outlook](https://docs.ovh.com/fr/emails/configuration-outlook-2016-mac/)<br>
->> - [Thunderbird](https://docs.ovh.com/fr/emails/guide-de-configuration-email-pour-thunderbird-mac/) (gratuit)<br>
+>> - [Mail](/pages/web/emails/how_to_configure_mail_macos) (inclus avec macOS)<br>
+>> - [Outlook](/pages/web/emails/how_to_configure_outlook_2016_mac)<br>
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_mac) (gratuit)<br>
 >>
 > **E-mail Pro**
 >>
 >> Configuration d'un compte E-mail Pro sur **Windows** :<br><br>
->> - [Courrier sur Windows 10](https://docs.ovh.com/fr/emails-pro/configuration-courrier-windows-10/) (inclus avec Windows)<br>
->> - [Outlook](https://docs.ovh.com/fr/emails-pro/configuration-outlook-2016/)<br>
->> - [Thunderbird](https://docs.ovh.com/fr/emails-pro/configuration-thunderbird-45-8-0/) (gratuit)<br><br>
+>> - [Courrier sur Windows 10](/pages/web/emails-pro/how_to_configure_windows_10) (inclus avec Windows)<br>
+>> - [Outlook](/pages/web/emails-pro/how_to_configure_outlook_2016)<br>
+>> - [Thunderbird](/pages/web/emails-pro/how_to_configure_thunderbird) (gratuit)<br><br>
 >> Configuration d'un compte E-mail Pro sur **macOS** :<br><br>
->> - [Mail](https://docs.ovh.com/fr/emails-pro/configurer-email-pro-mail-macos/) (inclus avec macOS)<br>
->> - [Outlook](https://docs.ovh.com/fr/emails-pro/configuration-outlook-2016-mac/)<br>
->> - [Thunderbird](https://docs.ovh.com/fr/emails-pro/configuration-thunderbird-macos/) (gratuit)<br>
+>> - [Mail](/pages/web/emails-pro/how_to_configure_mail_macos) (inclus avec macOS)<br>
+>> - [Outlook](/pages/web/emails-pro/how_to_configure_outlook_2016_mac)<br>
+>> - [Thunderbird](/pages/web/emails-pro/how_to_configure_thunderbird_mac) (gratuit)<br>
 >>
 > **Exchange**
 >>
 >> Configuration d'un compte Exchange sur **Windows** :<br><br>
->> - [Courrier sur Windows 10](https://docs.ovh.com/fr/microsoft-collaborative-solutions/configuration-courrier-windows-10/) (inclus avec Windows)<br>
->> - [Outlook](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-outlook-2016/)<br>
->> - [Thunderbird](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-de-thunderbird/) (gratuit)<br><br>
+>> - [Courrier sur Windows 10](/pages/web/microsoft-collaborative-solutions/how_to_configure_windows_10) (inclus avec Windows)<br>
+>> - [Outlook](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016)<br>
+>> - [Thunderbird](/pages/web/microsoft-collaborative-solutions/how_to_configure_thunderbird) (gratuit)<br><br>
 >> Configuration d'un compte Exchange sur **macOS** :<br><br>
->> - [Mail](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-mail-mac/) (inclus avec macOS)<br>
->> - [Outlook](https://docs.ovh.com/fr/microsoft-collaborative-solutions/configuration-outlook-2016-mac/)<br>
->> - [Thunderbird](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-de-thunderbird-mac/) (gratuit)<br>
+>> - [Mail](/pages/web/microsoft-collaborative-solutions/how_to_configure_mail_macos) (inclus avec macOS)<br>
+>> - [Outlook](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016_mac)<br>
+>> - [Thunderbird](/pages/web/microsoft-collaborative-solutions/how_to_configure_thunderbird_mac) (gratuit)<br>
 >>
 
 Une fois votre logiciel de messagerie installé, suivez les instructions ci-dessous pour préparer le dossier d'archive sur votre logiciel de messagerie.
@@ -221,7 +218,7 @@ Sélectionnez, dans le menu ci-dessous, l'offre actuelle de votre compte e-mail 
 
 [Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/migration-adresse-e-mail-mutualisee-vers-exchange/)
 
-[Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/)
+[Migrer manuellement votre adresse e-mail](/pages/web/emails/manual_email_migration)
 
 [Migrer vos adresses e-mail d’une plateforme e-mail OVHcloud vers une autre](https://docs.ovh.com/fr/microsoft-collaborative-solutions/migration-email-platform/)
 

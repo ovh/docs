@@ -1,9 +1,6 @@
 ---
 title: 'Añadir un registro MX a la configuración del dominio'
-slug: anadir-registro-mx-configuracion-dominio
 excerpt: 'Cómo añadir un registro MX a la configuración de un dominio en OVHcloud'
-section: 'DNS (servidor y zona)'
-order: 03
 updated: 2018-05-30
 ---
 
@@ -66,7 +63,7 @@ Para comprobar más rápidamente si ya existen registros MX, seleccione, utiliza
 
 Para crear un nuevo registro MX, haga clic en el botón `Añadir un registro`{.action} a la derecha de la tabla y seleccione `MX`{.action}. Complete la información solicitada (en función de la solución de correo de que disponga):
 
-- **Si tiene contratada una solución de correo de OVHcloud**, consulte la información del paso [2. Conocer la configuración MX de OVHcloud](https://docs.ovh.com/es/domains/anadir-registro-mx-configuracion-dominio/#2-conocer-la-configuracion-mx-de-ovh){.external}.
+- **Si tiene contratada una solución de correo de OVHcloud**, consulte la información del paso [2. Conocer la configuración MX de OVHcloud](/pages/web/domains/dns_zone_mx#2-conocer-la-configuracion-mx-de-ovh){.external}.
 
 - **Si tiene contratada una solución de correo externa**, consulte la información que le haya proporcionado el proveedor de su servicio de correo.
 
@@ -79,9 +76,9 @@ Una vez que haya completado la información, siga los pasos que se indican y hag
 
 ## Más información
 
-[Información general sobre los servidores DNS](https://docs.ovh.com/es/domains/web_hosting_informacion_general_sobre_los_servidores_dns/){.external}
+[Información general sobre los servidores DNS](/pages/web/domains/dns_server_general_information){.external}
 
-[Editar una zona DNS de OVHcloud](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}
+[Editar una zona DNS de OVHcloud](/pages/web/domains/dns_zone_edit){.external}
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
 

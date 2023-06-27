@@ -1,10 +1,8 @@
 ---
 title: 'Adicionar um recurso faturado à hora'
-slug: adicionar-um-recurso-faturado-a-hora
 routes:
     canonical: 'https://docs.ovh.com/pt/private-cloud/adicionar-um-recurso-faturado-a-hora/'
 excerpt: 'Saiba como adicionar recursos com faturação à hora'
-section: 'Funcionalidades da OVHcloud'
 updated: 2020-12-15
 ---
 
@@ -19,7 +17,7 @@ A solução [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/
 ## Requisitos
 
 * Dispor do serviço [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
-* Dar ao utilizador a autorização [“Adição de recursos”](../alterar-os-direitos-de-um-utilizador/){.external} quanto ao datacenter em causa a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+* Dar ao utilizador a autorização [“Adição de recursos”](/pages/cloud/managed-bare-metal/change-user-rights){.external} quanto ao datacenter em causa a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 * Estabelecer uma ligação ao cliente vSphere.
 
 ## Instruções

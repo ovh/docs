@@ -1,9 +1,6 @@
 ---
 title: Technical capabilities and limitations
-slug: occ-limits
 excerpt: 'Learn the technical capabilities and limitations of the OVHcloud Connect solution'
-section: Technical resources
-order: 1
 updated: 2022-08-25
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-network-ovhcloud-connect-limits?id=kb_article_view&sysparm_article=KB0045259'

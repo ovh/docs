@@ -1,11 +1,8 @@
 ---
 title: "Object Storage Swift - Utiliser l'Object Storage avec CyberDuck"
 routes:
-    canonical: 'https://docs.ovh.com/fr/storage/pca/cyberduck/'
+    canonical: '/pages/cloud/storage/object_storage/pca_cyberduck'
 excerpt: 'Découvrez comment utiliser votre Object Storage avec Cyberduck'
-slug: pcs/manage-object-storage-with-cyberduck
-section: Spécificités de la classe de stockage OpenStack Swift
-order: 180
 updated: 2021-06-18
 ---
 
@@ -29,10 +26,10 @@ Si vous n'êtes pas familiarisé avec la gestion du stockage en ligne de command
 ## Prérequis
 
 - Télécharger et installer [Cyberduck](https://cyberduck.io/).
-- Disposer de vos identifiants utilisateur (*OS_USERNAME*) et de projet (*OS_PROJECT_NAME* ou *OS_TENANT_NAME*), que vous pouvez obtenir en téléchargeant le fichier « OpenRC » dans le menu [Users and Roles](https://docs.ovh.com/fr/public-cloud/set-openstack-environment-variables/#etape-1-recuperer-les-variables) de votre [espace client Public Cloud OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Disposer de vos identifiants utilisateur (*OS_USERNAME*) et de projet (*OS_PROJECT_NAME* ou *OS_TENANT_NAME*), que vous pouvez obtenir en téléchargeant le fichier « OpenRC » dans le menu [Users and Roles](/pages/platform/public-cloud/loading_openstack_environment_variables#etape-1-recuperer-les-variables) de votre [espace client Public Cloud OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Disposer de votre mot de passe d'utilisateur OpenStack.
 
-Si vous ne connaissez plus votre mot de passe d'utilisateur OpenStack, vous pouvez le modifier en suivant [ce guide](https://docs.ovh.com/fr/public-cloud/modification-du-mot-de-passe-dun-utilisateur-openstack/).
+Si vous ne connaissez plus votre mot de passe d'utilisateur OpenStack, vous pouvez le modifier en suivant [ce guide](/pages/platform/public-cloud/change_openstack_user_password_in_horizon).
 
 ## En pratique
 
@@ -67,7 +64,7 @@ Cliquez alors sur `Connecter`{.action}. Une fois connecté, vous aurez accès à
 
 [Documentation de Cyberduck](https://trac.cyberduck.io/wiki/help/en){.external}
 
-[Débuter avec l'API Swift](https://docs.ovh.com/fr/public-cloud/debuter-avec-lapi-swift/)
+[Débuter avec l'API Swift](/pages/cloud/storage/object_storage/pcs_getting_started_with_the_swift_api)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services. 
 

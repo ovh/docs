@@ -1,9 +1,6 @@
 ---
 title: 'Configuring your database server'
-slug: configure-optimise-database-server
 excerpt: 'Find out how to configure and optimise your database server'
-section: Configuration
-order: 06
 updated: 2023-04-24
 ---
 
@@ -234,7 +231,7 @@ In the `General information` tab, you will find the **SFTP** section in the **Co
 
 ![Web Cloud Databases](images/web-cloud-databases-SFTP01.png){.thumbnail}
 
-To log in via **SFTP**, you can do so via the FileZilla software, using [this guide](https://docs.ovh.com/ca/en/hosting/web_hosting_filezilla_user_guide/).
+To log in via **SFTP**, you can do so via the FileZilla software, using [this guide](/pages/web/hosting/ftp_filezilla_user_guide).
 
 If this file is empty, you do not have any slow queries.
 
@@ -312,7 +309,7 @@ Avoid using **"HAVING"** for example. It increases your requests. Similarly, avo
 
 ## Go further
 
-[IP address list for Web Hosting clusters](https://docs.ovh.com/ca/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/)
+[IP address list for Web Hosting clusters](/pages/web/hosting/clusters_and_shared_hosting_IP)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
 

@@ -1,9 +1,6 @@
 ---
 title: Delegowanie projektów
 excerpt: "Dowiedz się, jak delegować uprawnienia dostępu do projektu Public Cloud innym kontom OVHcloud"
-slug: delegowanie_projektow
-order: 7
-section: 'Zarządzanie projektami'
 updated: 2022-04-04
 ---
 
@@ -33,7 +30,7 @@ Na tej stronie możesz sprawdzić kontakty przypisane do Twojego projektu.
 
 ![public-cloud-delegate-projects](images/delegatingproject01.png){.thumbnail}
 
-Możesz kliknąć przycisk `Zmień`{.action}, aby zmienić aktualne kontakty. Postępuj zgodnie z instrukcjami zawartymi w przewodniku Zarządzanie [Zmiana kontaktów projektu](../zmiana_kontaktow_projektu/), aby zakończyć operację.
+Możesz kliknąć przycisk `Zmień`{.action}, aby zmienić aktualne kontakty. Postępuj zgodnie z instrukcjami zawartymi w przewodniku Zarządzanie [Zmiana kontaktów projektu](/pages/platform/public-cloud/change_project_contacts), aby zakończyć operację.
 
 ### Dodaj kontakty i uprawnienia
 
@@ -56,11 +53,11 @@ Aby cofnąć dostęp, kliknij przycisk `...`{.action} i wybierz `Usuń`{.action}
 
 ## Sprawdź również
 
-[Uruchom instancję Public Cloud](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/)
+[Uruchom instancję Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Informacje o sposobie rozliczania usługi Public Cloud](https://docs.ovh.com/pl/public-cloud/analizowanie_platnosci_i_zarzadzanie_nimi/)
+[Informacje o sposobie rozliczania usługi Public Cloud](/pages/platform/public-cloud/analyze_billing)
 
-[Parametry dostępu i bezpieczeństwa w Horizon](https://docs.ovh.com/pl/public-cloud/access_and_security_in_horizon/)
+[Parametry dostępu i bezpieczeństwa w Horizon](/pages/platform/public-cloud/access_and_security_in_horizon)
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 

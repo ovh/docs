@@ -1,9 +1,6 @@
 ---
 title: "Mettre en oeuvre l'hyperconvergence VMware avec vSAN"
-slug: vmware-vsan
 excerpt: "Utiliser la puissance de l'hyperconvergence avec vSAN"
-section: Fonctionnalités VMware vSphere
-order: 10
 updated: 2022-09-07
 ---
 
@@ -25,7 +22,7 @@ Découvrez comment mettre en oeuvre la puissance de l'hyperconvergence pour vos 
 >
 > Les options de chiffrements **vSAN Data-At-Rest Encryption** et **vSAN Data-In-Transit Encryption** ne sont pas supportées par défaut sur les clusters vSAN. Si toutefois vous souhaitez mettre en œuvre ces solutions veuillez contacter votre **Technical Account Manager**.
 > 
-> Le chiffrement reste possible au niveau de la machine virtuelle et de ses données, comme indiqué dans le guide « [Activation du chiffrement des machines virtuelles avec vSphere Native Key Provider](https://docs.ovh.com/fr/private-cloud/vm-encrypt-vnkp/) ».
+> Le chiffrement reste possible au niveau de la machine virtuelle et de ses données, comme indiqué dans le guide « [Activation du chiffrement des machines virtuelles avec vSphere Native Key Provider](/pages/cloud/private-cloud/vm_encrypt-vnkp) ».
 >
 
 ## En pratique
@@ -136,6 +133,6 @@ vSan est désormais désactivé.
 
 ## Aller plus loin
 
-[Activation du chiffrement des machines virtuelles avec vSphere Native Key Provider](https://docs.ovh.com/fr/private-cloud/vm-encrypt-vnkp/).
+[Activation du chiffrement des machines virtuelles avec vSphere Native Key Provider](/pages/cloud/private-cloud/vm_encrypt-vnkp).
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.

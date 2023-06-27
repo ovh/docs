@@ -1,8 +1,6 @@
 ---
 title: Mise en route du KMS CipherTrust Manager
-slug: kms-cipher-trust
 excerpt: Découvrez comment déployer et les premières étapes de configuration du KMS CipherTrust Manager sur un environnement vSphere
-section: Services et options OVHcloud
 hidden: true
 updated: 2021-11-04
 ---
@@ -18,7 +16,7 @@ Vous trouverez dans ce guide les différentes étapes permettant la configuratio
 ## Prérequis
 
 * Disposer d'un service [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}
-* Être connecté à l'[interface vSphere](../connexion-interface-vsphere/) de votre service Hosted Private Cloud
+* Être connecté à l'[interface vSphere](/pages/cloud/private-cloud/vsphere_interface_connexion) de votre service Hosted Private Cloud
 * Avoir une adresse IP par instance de KMS
 * Avoir les fichiers du modèle OVF présents sur votre poste de travail
 * Avoir une clé publique SSH

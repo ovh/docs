@@ -1,8 +1,6 @@
 ---
 title: 'Filtrer et renvoyer ses appels'
-slug: comment-configurer-les-renvois-d-appels
 excerpt: 'Découvrez comment filtrer et renvoyer les appels entrants et sortants de votre ligne SIP OVHcloud'
-section: 'Lignes téléphoniques'
 updated: 2022-06-21
 ---
 
@@ -58,7 +56,7 @@ Vous avez la possibilité d'appliquer ce verrouillage à plusieurs lignes grâce
 
 > [!primary]
 >
-> Si vous souhaitez renvoyer les appels **en fonction de plages horaires**, consultez notre guide « [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](../configurer-plages-horaires-fermetures-exceptionnelles-ligne/)».
+> Si vous souhaitez renvoyer les appels **en fonction de plages horaires**, consultez notre guide « [Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](/pages/telecom/voip/configure-time-slot-and-closing-time)».
 >
 
 Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne SIP concernée.
@@ -148,6 +146,6 @@ Enfin, dans la partie « Configuration actuelle », vous pouvez visualiser les f
 
 ## Aller plus loin
 
-[Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](../configurer-plages-horaires-fermetures-exceptionnelles-ligne/)
+[Configurer des plages horaires et des fermetures exceptionnelles sur une ligne](/pages/telecom/voip/configure-time-slot-and-closing-time)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

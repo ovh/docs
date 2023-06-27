@@ -1,6 +1,5 @@
 ---
 title: Preguntas frecuentes sobre los NAS-HA
-slug: nas/faq
 excerpt: ¿Tiene alguna duda sobre los NAS-HA? A continuación le ofrecemos la respuesta a las preguntas más frecuentes.
 updated: 2023-06-07
 ---

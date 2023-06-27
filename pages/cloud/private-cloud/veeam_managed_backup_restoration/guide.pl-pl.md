@@ -1,9 +1,6 @@
 ---
 title: Przywracanie kopii zapasowych poprzez API OVHcloud
-slug: veeam-backup-restoration
 excerpt: Dowiedz się, jak przywrócić kopie zapasowe Veeam Managed Backup za pośrednictwem API OVHcloud
-section: Usługi i opcje OVHcloud
-order: 06
 updated: 2021-03-29
 ---
 
@@ -20,11 +17,11 @@ updated: 2021-03-29
 ## Wymagania początkowe
 
 - Dostęp do [API OVHcloud](https://api.ovh.com/)
-- [Veeam Managed Backup włączony](https://docs.ovh.com/gb/en/private-cloud/veeam-backup-as-a-service/) w ramach usługi Hosted Private Cloud
+- [Veeam Managed Backup włączony](/pages/cloud/private-cloud/veeam_backup_as_a_service) w ramach usługi Hosted Private Cloud
 
 ## W praktyce
 
-Jeśli nie jesteś przyzwyczajony do działania API OVHcloud, zapoznaj się z naszym przewodnikiem Pierwsze kroki [z API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/).
+Jeśli nie jesteś przyzwyczajony do działania API OVHcloud, zapoznaj się z naszym przewodnikiem Pierwsze kroki [z API OVHcloud](/pages/account/api/first-steps).
 
 ### Etap 1: wygeneruj raport z kopii zapasowych
 

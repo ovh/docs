@@ -1,9 +1,6 @@
 ---
 title: Using the vSphere SDK
-slug: using-sdk-vsphere
 excerpt: Find out how to implement and use the vSphere SDK
-section: VMware vSphere features
-order: 12
 updated: 2020-07-13
 ---
 
@@ -23,7 +20,7 @@ Actions within your infrastructure can be automated using the vSphere SDK.
 
 ##### OS
 
-This example uses a VM installed with Debian 9, deployed from [templates available for your Hosted Private Cloud infrastructure](../applying-ovh-template/).
+This example uses a VM installed with Debian 9, deployed from [templates available for your Hosted Private Cloud infrastructure](/pages/cloud/private-cloud/ovf_template).
 
 ##### Requirements
 
@@ -143,7 +140,7 @@ vconnect()
 
 ##### OS
 
-This example uses a VM installed with Ubuntu 18.04, deployed from [templates available for your Hosted Private Cloud infrastructure](../applying-ovh-template/).
+This example uses a VM installed with Ubuntu 18.04, deployed from [templates available for your Hosted Private Cloud infrastructure](/pages/cloud/private-cloud/ovf_template).
 
 
 ##### Requirements

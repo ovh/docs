@@ -1,11 +1,8 @@
 ---
 title: Sticky sessions/Session Affinity based on Nginx Ingress on OVHcloud Managed Kubernetes
-slug: sticky-session-nginx-ingress
 excerpt: 'Find out how to set-up and configure sticky sessions/session Affinity based on Nginx Ingress on OVHcloud Managed Kubernetes'
-section: Traffic management
-order: 01
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/sticky-session-nginx-ingress/'
+    canonical: '/pages/platform/kubernetes-k8s/sticky-session-nginx-ingress'
 updated: 2022-06-27
 ---
 
@@ -47,9 +44,9 @@ In this tutorial we are going to:
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/platform/kubernetes-k8s/deploying-hello-world).
 
-You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/platform/kubernetes-k8s/installing-helm) tutorial.
 
 ## Instructions
 

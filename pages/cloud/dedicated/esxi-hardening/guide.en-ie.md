@@ -1,9 +1,6 @@
 ---
 title: 'Manage and secure your ESXi dedicated server from the outset'
-slug: esxi-hardening
 excerpt: 'Discover the various ways you can effectively secure your ESXi dedicated server'
-section: 'Security'
-order: 5
 updated: 2023-03-07
 ---
 
@@ -24,7 +21,7 @@ We will do this using the on-board features offered by VMware, as well as those 
 > 
 > Recently, ESXi systems fell victim to a security flaw that malicious groups exploited very quickly across public networks.
 >
-> You can find more information on this attack in [an additional FAQ](https://docs.ovh.com/gb/en/dedicated/esxi-faq/).
+> You can find more information on this attack in [an additional FAQ](/pages/cloud/dedicated/faq-esxi).
 >
 
 ### Security best practices reminder
@@ -44,7 +41,7 @@ We will do this using the on-board features offered by VMware, as well as those 
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 - A dedicated server with the ESXi solution deployed
-- An offer compatible with our [Network Firewall](https://docs.ovh.com/ie/en/dedicated/firewall-network/) feature, if you would like to use it for filtering
+- An offer compatible with our [Network Firewall](/pages/cloud/dedicated/firewall_network) feature, if you would like to use it for filtering
 
 ## Instructions
 
@@ -62,7 +59,7 @@ Reminder of its definition and operating principle:
 > 
 > If this system triggers and you want to log into your ESXi immediately, you will need to manually unlock the administrator account.
 >
-> To do this, you will need to [reboot](https://docs.ovh.com/ie/en/dedicated/getting-started-dedicated-server/#restarting-your-dedicated-server) your ESXi server via the OVHcloud Control Panel.
+> To do this, you will need to [reboot](/pages/cloud/dedicated/getting-started-with-dedicated-server#restarting-your-dedicated-server) your ESXi server via the OVHcloud Control Panel.
 > 
 
 You can view the access log history in the following files via SSH:
@@ -95,7 +92,7 @@ All this information is also available through the web administration interface.
 > As a reminder, the Network Firewall is not taken into account within the OVHcloud network. As a result, the configured rules do not affect connections from this internal network.
 >
 
-You can enable and use our [Network Firewall](https://docs.ovh.com/ie/en/dedicated/firewall-network/) filtering solution.
+You can enable and use our [Network Firewall](/pages/cloud/dedicated/firewall_network) filtering solution.
 This solution will allow you to easily manage legitimate access, in addition to the access you have set up through your ESXi system.
 
 It will also prevent you from unexpectedly locking your administrator account in the event of an attack.

@@ -1,7 +1,5 @@
 ---
 title: Changer les droits d’un utilisateur
-slug: changer-les-droits-d-un-utilisateur
-section: Fonctionnalités OVHcloud
 updated: 2020-06-29
 ---
 

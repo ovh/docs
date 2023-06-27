@@ -1,9 +1,6 @@
 ---
 title: 'Configurare un account di posta su Gmail'
-slug: mail-condivisa-guida-configurazione-diuna-email-condivisa-ovh-sull-interfaccia-di-gmail
 excerpt: 'Come configurare un account MX Plan dall’interfaccia Web di Gmail'
-section: "Configurazione su un'interfaccia online"
-order: 01
 updated: 2021-01-08
 ---
 

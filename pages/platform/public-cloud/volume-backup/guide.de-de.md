@@ -1,9 +1,6 @@
 ---
 title: "Volume Backup erstellen"
-slug: volume-backup
 excerpt: "Erfahren Sie hier, wie Sie über Ihr Kundencenter ein Backup Ihres Block Storage Volumes erstellen"
-section: Storage
-order: 3
 updated: 2023-03-29
 ---
 
@@ -35,7 +32,7 @@ Volume Snapshot und Volume Backup ermöglichen:
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben ein [Block Storage Volume](https://docs.ovh.com/de/public-cloud/erstellen_zustzliche_festplatte_public_cloud/) in Ihrem [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud/) erstellt.
+- Sie haben ein [Block Storage Volume](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance) in Ihrem [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud/) erstellt.
 
 ## In der praktischen Anwendung
 
@@ -43,7 +40,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 Öffnen Sie anschließend das Menü `Block Storage`{.action} im linken Menü unter **Storage**.
 
-Klicken Sie rechts neben dem betreffenden Volume auf den Button `...`{.action} und dann auf `Backup erstellen`{.action}. Es ist nicht notwendig, zuerst das Volume von seiner Instanz zu trennen. Wenn Sie Ihr Volume jedoch von Ihrer Instanz trennen möchten, lesen Sie [diesen Abschnitt für Linux](https://docs.ovh.com/de/public-cloud/erstellen_zustzliche_festplatte_public_cloud/#unter-linux) und [diesen Abschnitt für Windows](https://docs.ovh.com/de/public-cloud/erstellen_zustzliche_festplatte_public_cloud/#unter-windows).
+Klicken Sie rechts neben dem betreffenden Volume auf den Button `...`{.action} und dann auf `Backup erstellen`{.action}. Es ist nicht notwendig, zuerst das Volume von seiner Instanz zu trennen. Wenn Sie Ihr Volume jedoch von Ihrer Instanz trennen möchten, lesen Sie [diesen Abschnitt für Linux](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#unter-linux) und [diesen Abschnitt für Windows](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#unter-windows).
 
 ![Volume Backup - Erstellung](images/volumebackup01.png){.thumbnail}
 
@@ -83,16 +80,16 @@ Sobald die Erstellung angefordert wurde, wird das Backup zur Liste hinzugefügt.
 
 Klicken Sie auf den Button `...`{.action}, und dann auf `Löschen`{.action} um ein Volume Backup zu entfernen. Wählen Sie `Volume erstellen`{.action} aus, um ein Volume basierend auf der gewünschten Volume-Sicherung neu zu erstellen.
 
-Weitere Informationen zu diesem Thema finden Sie in unserer [Anleitung zur Erstellung eines Volumes aus einem Backup](https://docs.ovh.com/de/public-cloud/create-volume-from-backup/).
+Weitere Informationen zu diesem Thema finden Sie in unserer [Anleitung zur Erstellung eines Volumes aus einem Backup](/pages/platform/public-cloud/create-volume-from-snapshot).
 
 ![Volume über ein Backup erstellen](images/volumebackup05.png){.thumbnail}
 
 ## Weiterführende Informationen
 
-[Volume von einem Backup aus erstellen](https://docs.ovh.com/de/public-cloud/create-volume-from-backup/)
+[Volume von einem Backup aus erstellen](/pages/platform/public-cloud/create-volume-from-snapshot)
 
-[Zusätzliches Volume auf einer Instanz erstellen und konfigurieren](https://docs.ovh.com/de/public-cloud/erstellen_zustzliche_festplatte_public_cloud/)
+[Zusätzliches Volume auf einer Instanz erstellen und konfigurieren](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
 
-[Die Größe einer zusätzlichen Disk erweitern](https://docs.ovh.com/de/public-cloud/ihre_zusatzliche_festplatte_vergroern/)
+[Die Größe einer zusätzlichen Disk erweitern](/pages/platform/public-cloud/increase_the_size_of_an_additional_disk)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

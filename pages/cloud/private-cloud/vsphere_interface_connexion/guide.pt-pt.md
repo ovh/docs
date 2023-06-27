@@ -1,9 +1,6 @@
 ---
 title: Ligar-se à interface vSphere
 excerpt: Descubra as diferentes formas de se ligar ao vSphere
-slug: instalar_o_vsphere_client
-section: Introdução
-order: 2
 updated: 2022-06-24
 ---
 
@@ -20,7 +17,7 @@ updated: 2022-06-24
 ## Requisitos
 
 - Ter contacto com o administrador da infraestrutura [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), para receber dados de acesso.
-- Ter adicionado endereços IP à secção `Segurança`{.action} do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para mais informações, consulte o nosso guia [Autorizar IP a ligar-se ao vCenter](https://docs.ovh.com/pt/private-cloud/autorizar-ip-a-ligar-se-ao-vcenter/).
+- Ter adicionado endereços IP à secção `Segurança`{.action} do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para mais informações, consulte o nosso guia [Autorizar IP a ligar-se ao vCenter](/pages/cloud/private-cloud/autoriser_des_ip_a_se_connecter_au_vcenter).
 
 ## Instruções
 

@@ -1,11 +1,8 @@
 ---
 title: Creating an alert
-slug: create-an-alert
 routes:
-    canonical: 'https://docs.ovh.com/us/en/private-cloud/create_an_alert/'
+    canonical: '/pages/cloud/private-cloud/create_an_alert'
 excerpt: Find out how to set up alerts on your vSphere client
-section: Maintenance and monitoring
-order: 09
 updated: 2020-11-18
 ---
 
@@ -20,7 +17,7 @@ You can create an alert on all items in your Managed Bare Metal: the datacentre 
 ## Requirements
 
 - a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en/managed-bare-metal/)
-- a user account with access to [vSphere](../login-vsphere-interface/) (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we))
+- a user account with access to [vSphere](/pages/cloud/managed-bare-metal/vsphere-interface) (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we))
 
 ## Instructions
 

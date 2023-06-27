@@ -1,11 +1,8 @@
 ---
 title: Utilizzare Managed Bare Metal all'interno di una vRack
 routes:
-    canonical: 'https://docs.ovh.com/it/private-cloud/aggiungere_un_dedicated_cloud_alla_vrack_15_e_configurare_una_vm/'
+    canonical: '/pages/cloud/private-cloud/using_private_cloud_in_vrack'
 excerpt:  Scopri come utilizzare la vRack con la tua soluzione Managed Bare Metal
-slug: vrack-essentials
-section: Servizi e opzioni OVHcloud
-order: 02
 updated: 2020-11-23
 ---
 

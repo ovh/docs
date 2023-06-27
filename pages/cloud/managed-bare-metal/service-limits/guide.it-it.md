@@ -1,11 +1,8 @@
 ---
 title: Capacità tecniche
-slug: capacità tecniche
 routes:
-    canonical: 'https://docs.ovh.com/it/private-cloud/capacita-tecniche/'
+    canonical: '/pages/cloud/private-cloud/hpc_limits'
 excerpt: Ritrova le capacità e i limiti tecnici delle soluzioni Managed Bare Metal fornite da OVHcloud
-section: FAQ
-order: 2
 updated: 2020-10-27
 ---
 

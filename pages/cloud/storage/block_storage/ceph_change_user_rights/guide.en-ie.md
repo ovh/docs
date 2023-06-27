@@ -1,8 +1,6 @@
 ---
 title: Change user rights
-slug: ceph/change-user-rights
 excerpt: This guide shows you how to change Ceph user rights using the web interface.
-section: Cloud Disk Array
 updated: 2020-09-21
 ---
 

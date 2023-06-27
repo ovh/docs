@@ -1,8 +1,5 @@
 ---
 title: Go
-slug: languages-go
-section: Languages
-order: 4
 updated: 2022-06-02
 ---
 

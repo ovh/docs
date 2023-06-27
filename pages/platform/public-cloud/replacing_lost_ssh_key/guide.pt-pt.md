@@ -1,9 +1,7 @@
 ---
 title: Alterar a chave SSH em caso de perda
 excerpt: Alterar a chave SSH em caso de perda
-slug: alterar_a_chave_ssh_em_caso_de_perda
 legacy_guide_number: g2069
-section: Gestão a partir da Área de Cliente OVHcloud
 updated: 2022-02-10
 ---
 
@@ -17,14 +15,14 @@ updated: 2022-02-10
 
 Em caso de perda de chaves SSH, seja na sequência de uma reinstalação de correio, é possível que não esteja em condições de se ligar à sua instância se não tiver configurado nenhum meio alternativo de se ligar à sua instância.
 
-Para recuperar o acesso, disponibilizámos-lhe um [modo de rescue](https://docs.ovh.com/pt/public-cloud/passar_uma_instancia_em_modo_de_rescue/) que lhe permite ligar-se através de uma palavra-passe e depois modificar os seus ficheiros.
+Para recuperar o acesso, disponibilizámos-lhe um [modo de rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode) que lhe permite ligar-se através de uma palavra-passe e depois modificar os seus ficheiros.
 
 **Este manual explica-lhe como configurar o ficheiro *authorized_keys* do utilizador *admin* para poder adicionar uma nova chave SSH para recuperar o acesso à sua instância.**
 
 ## Requisitos
 
 - Ter uma [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud
-- Ter acesso à sua instância via SSH em [modo rescue](../passar_uma_instancia_em_modo_de_rescue/)
+- Ter acesso à sua instância via SSH em [modo rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode)
 - Criar uma chave SSH
 
 ## Instruções
@@ -34,7 +32,7 @@ Para recuperar o acesso, disponibilizámos-lhe um [modo de rescue](https://docs.
 Se pretender guardar uma chave SSH na Área de Cliente OVHcloud, recomendamos que utilize a encriptação RSA ou ECDSA. ED25519 não está atualmente a ser utilizado.
 >
 
-Depois de montar o disco da sua instância em [modo rescue](../passar_uma_instancia_em_modo_de_rescue/#aceder-a-sua-informacao), poderá aceder ao conjunto dos seus ficheiros.
+Depois de montar o disco da sua instância em [modo rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode#aceder-a-sua-informacao), poderá aceder ao conjunto dos seus ficheiros.
 
 O ficheiro que contém as suas chaves SSH é o seguinte:
 
@@ -92,6 +90,6 @@ Depois de efetuar esta modificação e de efetuar o backup, basta que reinicie a
 
 ## Saiba mais
 
-[Tornar-se o utilizador root e selecionar uma palavra-passe](https://docs.ovh.com/pt/public-cloud/tornar-se_root_e_definir_uma_palavra-passe/)
+[Tornar-se o utilizador root e selecionar uma palavra-passe](/pages/platform/public-cloud/become_root_and_change_password)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

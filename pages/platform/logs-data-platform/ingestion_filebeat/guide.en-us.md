@@ -1,8 +1,5 @@
 ---
 title: Pushing logs with a forwarder - Filebeat (Linux)
-slug: logs-data-platform-filebeat-logs
-order: 01
-section: Use cases
 updated: 2022-06-13
 ---
 
@@ -321,6 +318,6 @@ Filebeat is a handy tool to send the content of your current log files to Logs D
 ## Going further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/us/en/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

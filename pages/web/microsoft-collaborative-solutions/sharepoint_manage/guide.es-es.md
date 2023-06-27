@@ -1,9 +1,6 @@
 ---
 title: 'Activación y gestión de un SharePoint OVH'
-slug: activacion_y_gestion_de_un_sharepoint_ovh
 excerpt: 'Cómo contratar y configurar una plataforma SharePoint'
-section: SharePoint
-order: 01
 updated: 2023-06-19
 ---
 

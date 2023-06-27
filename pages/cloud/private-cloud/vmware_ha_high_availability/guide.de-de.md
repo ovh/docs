@@ -1,9 +1,6 @@
 ---
 title: VMware HA (High Availability)
-slug: vmware-ha-high-availability
 excerpt: Neustarteinstellungen mit der HA-Funktion verwalten
-section: VMware vSphere Funktionen
-order: 02
 updated: 2020-04-30
 ---
 
@@ -19,7 +16,7 @@ Die Hauptfunktion von **VMware HA** (High Availability) ist, virtuelle Maschinen
 
 ## Voraussetzungen
 
-- Sie sind auf Ihrem [vSphere Interface](../den_vsphere_client_installieren/) eingeloggt.
+- Sie sind auf Ihrem [vSphere Interface](/pages/cloud/private-cloud/vsphere_interface_connexion) eingeloggt.
 - Sie verfügen über ein [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external} Produkt.
 
 ## Beschreibung
@@ -35,7 +32,7 @@ Wenn HA in Ihrem Cluster nicht aktiviert ist, gehen Sie in den Tab `Konfiguriere
 Klicken Sie auf `Bearbeiten`{.action} und setzen Sie einen Haken, um die HA-Funktion zu aktivieren.
 
 Außerdem ist wichtig, dass Sie das Monitoring des Hosts aktivieren. Mit dieser Einstellung können Taktsignale zwischen den ESXi-Hosts gesendet werden, um eine mögliche Störung zu ermitteln.
-Diese Funktion muss wieder deaktiviert werden, um zum Beispiel Aktualisierungen über den [Update Manager](../verwendung_des_vmware_update_manager/) durchzuführen. In diesem Fall wird der Host isoliert.
+Diese Funktion muss wieder deaktiviert werden, um zum Beispiel Aktualisierungen über den [Update Manager](/pages/cloud/private-cloud/vmware_update_manager) durchzuführen. In diesem Fall wird der Host isoliert.
 
 ![Aktivierung von HA](images/HA.png){.thumbnail}
 
@@ -91,7 +88,7 @@ Wenn ein Datenspeicher mit APD-Status (all paths down) ausfällt, können Sie hi
 
 ##### VM-Überwachung
 
-Das Monitoring für virtuelle Maschinen ist nach Installation der [VMware Tools](../wie_installiere_ich_die_vmware_tools/) verfügbar.
+Das Monitoring für virtuelle Maschinen ist nach Installation der [VMware Tools](/pages/cloud/private-cloud/vmware_tools_install) verfügbar.
 Bei Nichtverfügbarkeit über die **Tools** (Taktsignale) wird die virtuelle Maschine automatisch neu gestartet. Was diese Funktion betrifft, sind auch erweiterte Einstellungen möglich (zum Beispiel Neustartintervalle).
 
 ![VM-Überwachung](images/HAparam5.PNG){.thumbnail}

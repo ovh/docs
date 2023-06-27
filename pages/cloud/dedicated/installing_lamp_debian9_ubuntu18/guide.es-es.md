@@ -1,8 +1,6 @@
 ---
 title: Tutorial - Instalar un servidor web (LAMP) en Debian o Ubuntu
-slug: setup-lamp-debian-ubuntu
 excerpt: "Cómo configurar un servidor web LAMP"
-section: Tutoriales
 updated: 2023-05-10
 ---
 
@@ -171,7 +169,7 @@ MariaDB [(none)]> exit;
 
 ### Paso 5: configuración del firewall (opcional)
 
-[La configuración de un cortafuegos](https://docs.ovh.com/es/dedicated/firewall-iptables/) (*iptables*) mejorará la seguridad del servidor. Este proceso puede simplificarse utilizando el frontend "Uncomplicated Firewall" (UFW) y su conjunto de perfiles predefinidos. 
+[La configuración de un cortafuegos](/pages/cloud/dedicated/firewall-Linux-iptable) (*iptables*) mejorará la seguridad del servidor. Este proceso puede simplificarse utilizando el frontend "Uncomplicated Firewall" (UFW) y su conjunto de perfiles predefinidos. 
 
 Instale UFW:
 

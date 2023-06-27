@@ -1,8 +1,6 @@
 ---
 title: Modo Bridge IP
-slug: network-bridging
 excerpt: El modo bridge IP se utiliza para configurar las maquinas virtuales. Es necesario realizar diversas modificaciones en las MV para que la configuracion de red este operativa.
-section: Red e IP
 updated: 2022-12-20
 ---
 
@@ -38,7 +36,7 @@ La puesta en red en modo bridge puede utilizarse para configurar sus máquinas v
 >
 > La presente guía no es aplicable a los servidores de las gamas [Scale](https://www.ovhcloud.com/es-es/bare-metal/scale/) y [High Grade](https://www.ovhcloud.com/es-es/bare-metal/high-grade/).
 >
-> Vaya a la [página de configuración dedicada](https://docs.ovh.com/es/dedicated/proxmox-network-hg-scale/).
+> Vaya a la [página de configuración dedicada](/pages/cloud/dedicated/proxmox-network-HG-Scale).
 
 
 ## Procedimiento

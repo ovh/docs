@@ -1,7 +1,5 @@
 ---
 title: Custom sizing
-slug: size
-section: App
 updated: 2021-05-18
 ---
 

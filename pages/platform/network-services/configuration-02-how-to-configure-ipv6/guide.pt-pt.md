@@ -1,9 +1,6 @@
 ---
 title: 'Configurar o IPv6 numa instância Public Cloud'
-slug: ipv6-configuration
 excerpt: 'Tutorial de configuração do protocolo IPv6 numa instância Public Cloud'
-section: Configuração
-order: 02
 updated: 2022-11-15
 ---
 
@@ -25,7 +22,7 @@ Por predefinição, apenas o endereço IPv4 é configurado.
 
 > [!primary]
 > 
-> Atualmente, as ofertas Floating IP e Gateway não tomam a cargo o IPv6. O IPv6 só pode ser utilizado com as instâncias em [modo público](https://docs.ovh.com/pt/publiccloud/network-services/networking-concepts/#publicmode).
+> Atualmente, as ofertas Floating IP e Gateway não tomam a cargo o IPv6. O IPv6 só pode ser utilizado com as instâncias em [modo público](/pages/platform/network-services/concepts-01-public-cloud-networking-concepts#publicmode).
 >
 
 ## Requisitos
@@ -202,7 +199,7 @@ Configurou o IPv6 mas nada mudou?
 
 Existe uma operação simples para determinar se a falha está relacionada com a configuração realizada ou a rede da OVHcloud.
 
-Primeiro, [passe a sua instância para o modo Rescue](https://docs.ovh.com/pt/public-cloud/passar_uma_instancia_em_modo_de_rescue/).
+Primeiro, [passe a sua instância para o modo Rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode).
 
 De seguida, utilize os comandos abaixo para configurar o seu IP de forma não persistente:
 

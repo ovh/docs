@@ -1,8 +1,6 @@
 ---
 title: 'Passare dalla fatturazione oraria a quella mensile'
 excerpt: 'Scopri come modificare il tipo di fatturazione delle tua istanza Public Cloud'
-slug: cambiare-tipo-fatturazione-public-cloud
-section: 'Gestione del progetto'
 updated: 2023-01-23
 ---
 
@@ -58,7 +56,7 @@ Sostituisci "InstanceID" con l'ID dell'istanza corrispondente. L'identificativo 
 
 ### Dall'API OVHcloud
 
-Accedi alla [interfaccia API OVHcloud](https://eu.api.ovh.com/) in base alla [guida appropriata](https://docs.ovh.com/it/api/first-steps-with-ovh-api/) e segui gli step seguenti.
+Accedi alla [interfaccia API OVHcloud](https://eu.api.ovh.com/) in base alla [guida appropriata](/pages/account/api/first-steps) e segui gli step seguenti.
 
 Utilizza questa chiamata:
 

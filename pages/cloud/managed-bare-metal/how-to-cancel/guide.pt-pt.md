@@ -1,11 +1,8 @@
 ---
 title: Como rescindir o seu Managed Bare Metal
-slug: como-rescindir-o-managed-bare-metal
 routes:
-    canonical: 'https://docs.ovh.com/pt/private-cloud/como-rescindir-o-hosted-private-cloud/'
+    canonical: '/pages/cloud/private-cloud/comment_resilier_le_private_cloud'
 excerpt: Saiba como solicitar a rescisão de uma infraestrutura Managed Bare Metal
-section: Funcionalidades da OVHcloud
-order: 09
 updated: 2020-11-18
 ---
 

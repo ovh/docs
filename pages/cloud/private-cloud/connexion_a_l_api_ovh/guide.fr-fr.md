@@ -1,10 +1,7 @@
 ---
 title: Connexion à l’API OVH
-slug: connexion-a-l-api-ovh
 excerpt: 
 legacy_guide_number: '7766879'
-section: Premiers pas
-order: 5
 updated: 2019-02-14
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Installing a CMS manually on your Web Hosting plan"
 excerpt: "Find out more about some of the compatible CMS for Web Hostings"
-slug: hosting_install_your_cms_manually
-section: CMS
-order: 03
 updated: 2023-03-24
 ---
 
@@ -29,7 +26,7 @@ This tutorial will help you install a CMS (Content Management System) like WordP
 
 > [!success]
 >
-> To install your CMS **automatically** from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), please refer to our documentation on [installing a 1-click module](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules/).
+> To install your CMS **automatically** from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), please refer to our documentation on [installing a 1-click module](/pages/web/hosting/cms_install_1_click_modules).
 >
 
 **This tutorial explains how to configure your website by manually installing a CMS.**
@@ -93,7 +90,7 @@ To install a CMS on your [web hosting plan](https://www.ovhcloud.com/en-gb/web-h
 
 The “root folder” refers to the directory your future CMS will be installed in on your hosting plan. We recommend choosing an empty directory to avoid conflicts with your other multisite potentials.
 
-Please refer to our documentation, which describes [how to add a multisite on your web hosting plan](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/), in order to define the root directory to use with your CMS.
+Please refer to our documentation, which describes [how to add a multisite on your web hosting plan](/pages/web/hosting/multisites_configure_multisite), in order to define the root directory to use with your CMS.
 
 > [!primary]
 >
@@ -107,11 +104,11 @@ Please refer to our documentation, which describes [how to add a multisite on yo
 To retrieve the IP address of your Web Hosting plan, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) in the `Web Cloud`{.action} section, then select your Web Hosting plan in the `Hosting`{.action} section.<br>
 In the `General information`{.action} box on your right, you will find the IP address of your web hosting plan in the `IPv4`{.action} form.
 
-If your domain’s active DNS zone is managed in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), compare your hosting plan’s IP address with the one in your domain’s DNS zone, using our [OVHcloud DNS zones](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/) documentation .
+If your domain’s active DNS zone is managed in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), compare your hosting plan’s IP address with the one in your domain’s DNS zone, using our [OVHcloud DNS zones](/pages/web/domains/dns_zone_edit) documentation .
 
 > [!warning]
 >
-> If you have activated the `CDN`{.action} or `Country IP`{.action} options with your domain, use the appropriate IP address by referring to our documentation listing [all shared hosting IP addresses](https://docs.ovh.com/gb/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/).
+> If you have activated the `CDN`{.action} or `Country IP`{.action} options with your domain, use the appropriate IP address by referring to our documentation listing [all shared hosting IP addresses](/pages/web/hosting/clusters_and_shared_hosting_IP).
 >
 
 If you are unable to perform these checks, contact the hosting provider for your active DNS zone to update the pointing of your domain name.
@@ -121,20 +118,20 @@ If you are unable to perform these checks, contact the hosting provider for your
 > Any changes you make to your DNS zone can take between 4 and 24 hours to propagate.
 >
 
-- Get [the information you need to log in to your Web Hosting plan’s FTP space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/#step-1-retrieve-your-login-information).
-- Retrieve access to your Web Hosting plan’s database if it already exists, or create one using our [documentation](https://docs.ovh.com/gb/en/hosting/creating-database/).
+- Get [the information you need to log in to your Web Hosting plan’s FTP space](/pages/web/hosting/ftp_connection#step-1-retrieve-your-login-information).
+- Retrieve access to your Web Hosting plan’s database if it already exists, or create one using our [documentation](/pages/web/hosting/sql_create_database).
 
 #### 1.3 Install the free FTP client FileZilla
 
-If you are not already using an FTP client, you can use Filezilla. You can find the free download link and a tutorial on how to use it in our documentation on [using FileZilla with your OVHcloud hosting plan](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/).
+If you are not already using an FTP client, you can use Filezilla. You can find the free download link and a tutorial on how to use it in our documentation on [using FileZilla with your OVHcloud hosting plan](/pages/web/hosting/ftp_filezilla_user_guide).
 
 #### 1.4 Prepare a database <a name="step1-4"></a>
 
 CMSs need a database to work. Our [Web Hosting](https://www.ovhcloud.com/en-gb/web-hosting/) solutions  include these, with the exception of [the free Start 10M hosting plan](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/).
 
-Use our documentation to [create a database from your web hosting plan](https://docs.ovh.com/gb/en/hosting/creating-database/).
+Use our documentation to [create a database from your web hosting plan](/pages/web/hosting/sql_create_database).
 
-If you have a Cloud Databases web hosting plan in MySQL or MariaDB and you would like to use it to manually install your CMS, please refer to our guide on [creating a database on a Cloud Databases web service](https://docs.ovh.com/gb/en/clouddb/create-databases-and-users/#creating-a-database).
+If you have a Cloud Databases web hosting plan in MySQL or MariaDB and you would like to use it to manually install your CMS, please refer to our guide on [creating a database on a Cloud Databases web service](/pages/web/clouddb/create-db-and-user-on-db-server#creating-a-database).
 
 Once you have created the database, retrieve the connection settings (server, database name, user name, and password) and save them for [step 3](#step3) in this guide.
 
@@ -142,12 +139,12 @@ Once you have created the database, retrieve the connection settings (server, da
 >
 > If you would like to install your CMS with an existing database, you can retrieve the connection settings for your database directly from the website files linked to it.
 >
-> If this is also the same CMS you need to install, you can use [this guide](https://docs.ovh.com/gb/en/hosting/change-password-database/#step-3-change-the-password-for-your-websites-database-in-its-configuration-file) to identify the configuration files in your [FTP storage space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/).
+> If this is also the same CMS you need to install, you can use [this guide](/pages/web/hosting/sql_change_password#step-3-change-the-password-for-your-websites-database-in-its-configuration-file) to identify the configuration files in your [FTP storage space](/pages/web/hosting/ftp_connection).
 >
 > Then log in to your database to list the prefixes of the tables already inside. This is to avoid choosing a table "prefix" already used by another of your sites.
 >
-> - To connect to your database linked to your Web Hosting plan, see [this guide](https://docs.ovh.com/gb/en/hosting/creating-database/#accessing-the-phpmyadmin-interface).
-> - To connect to a database on a Web Cloud Databases solution, see [this guide](https://docs.ovh.com/gb/en/clouddb/connecting-to-database-on-database-server/).
+> - To connect to your database linked to your Web Hosting plan, see [this guide](/pages/web/hosting/sql_create_database#accessing-the-phpmyadmin-interface).
+> - To connect to a database on a Web Cloud Databases solution, see [this guide](/pages/web/clouddb/connecting-to-database-on-database-server).
 >
 
 ### Step 2: Start the installation
@@ -174,7 +171,7 @@ Below are links to the CMS download pages mentioned in this tutorial:
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
 >
-> Then configure the PHP version on your web hosting plan by referring to our guide on [Changing a Web Hosting plan’s PHP version](https://docs.ovh.com/gb/en/hosting/how_to_configure_php_on_your_ovh_web_hosting_package_2014/).
+> Then configure the PHP version on your web hosting plan by referring to our guide on [Changing a Web Hosting plan’s PHP version](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014).
 >
 > If you are already using a PHP version that is equal to or higher than the required PHP version, no changes are required.
 >
@@ -201,7 +198,7 @@ Enter the destination **CMS** folder to extract your files to that folder.
 
 #### 2.3 Move the source files from the CMS folder to the root folder of your web hosting plan
 
-Once you have unpacked the files in your **CMS** folder, [log in to your storage space via FTP](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/) using [FTP FileZilla client](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/) and copy the files from the **CMS** folder to the root folder you defined on your hosting in [step 1](#step1) of this guide.
+Once you have unpacked the files in your **CMS** folder, [log in to your storage space via FTP](/pages/web/hosting/ftp_connection) using [FTP FileZilla client](/pages/web/hosting/ftp_filezilla_user_guide) and copy the files from the **CMS** folder to the root folder you defined on your hosting in [step 1](#step1) of this guide.
 
 Below is an example with the CMS *WordPress*:
 
@@ -223,7 +220,7 @@ Below is an example with the CMS *WordPress*:
 
 **Special Case**: If you have a limited internet speed and/or a hosting plan **Pro** or higher, you can use **SSH** connection to put your CMS source files in your Web Hosting plan’s storage space. 
 
-To log in to your hosting plan via SSH, please refer to our guide on [Accessing a web hosting plan via SSH](https://docs.ovh.com/gb/en/hosting/web_hosting_ssh_on_web_hosting_packages/).
+To log in to your hosting plan via SSH, please refer to our guide on [Accessing a web hosting plan via SSH](/pages/web/hosting/ssh_on_webhosting).
 
 Once you have logged in via **SSH**, run the following commands:
 
@@ -346,18 +343,18 @@ From this stage onwards, the procedure will differ depending on which CMS you ha
 
 To continue with the installation, follow the guide corresponding to your CMS:
 
-- [Finalise a WordPress installation](https://docs.ovh.com/gb/en/hosting/cms_manually_install_wordpress/)
-- [Finalise a Joomla! installation](https://docs.ovh.com/gb/en/hosting/cms_manually_install_joomla/)
-- [Finalise a Drupal installation](https://docs.ovh.com/gb/en/hosting/cms_manually_install_drupal/)
-- [Finalise a PrestaShop installation](https://docs.ovh.com/gb/en/hosting/cms_manually_install_prestashop/)
+- [Finalise a WordPress installation](/pages/web/hosting/cms_manual_installation_wordpress)
+- [Finalise a Joomla! installation](/pages/web/hosting/cms_manual_installation_joomla)
+- [Finalise a Drupal installation](/pages/web/hosting/cms_manual_installation_drupal)
+- [Finalise a PrestaShop installation](/pages/web/hosting/cms_manual_installation_prestashop)
 
 ## Go further <a name="go-further"></a>
 
-[Migrating your website and emails to OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/)
+[Migrating your website and emails to OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh)
 
-[Publishing a website on your Web Hosting space](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/)
+[Publishing a website on your Web Hosting space](/pages/web/hosting/hosting_how_to_get_my_website_online)
 
-[Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/)
+[Hosting multiple websites on your Web Hosting plan](/pages/web/hosting/multisites_configure_multisite)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 

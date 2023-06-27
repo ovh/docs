@@ -1,10 +1,7 @@
 ---
 title: 'Changing the DNS servers of Public Cloud instances'
-slug: change-instance-dns-servers
 excerpt: 'Find out how to change the default DNS servers on a Public Cloud instance'
 legacy_guide_number: 1985
-section: Networking
-order: 4
 updated: 2021-10-29
 ---
 
@@ -30,9 +27,9 @@ The default DNS server configured on instances you create will be the OVHcloud s
 
 ## Instructions
 
-Log in to your instance via SSH. Refer to our guide on [Connecting to a Public Cloud instance](../public-cloud-first-steps/#connect-to-instance) if necessary.
+Log in to your instance via SSH. Refer to our guide on [Connecting to a Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) if necessary.
 
-Switch to the root user. Refer to our guide on [Becoming the root user and selecting a password](../become_the_root_user_and_select_a_password/) if necessary.
+Switch to the root user. Refer to our guide on [Becoming the root user and selecting a password](/pages/platform/public-cloud/become_root_and_change_password) if necessary.
 
 ### Debian/Ubuntu
 
@@ -133,7 +130,7 @@ DNS configuration:
 
 ### On Windows
 
-Connect to the instance via remote desktop session or with the VNC console. Refer to our guide on [Connecting to a Public Cloud instance](../public-cloud-first-steps/#connect-to-instance) if necessary.
+Connect to the instance via remote desktop session or with the VNC console. Refer to our guide on [Connecting to a Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) if necessary.
 
 Open the `Network settings`{.action}.
 
@@ -154,10 +151,10 @@ In PowerShell, you can use the command `nslookup` to check which DNS server is u
 
 ## Go further <a name="gofurther"></a>
 
-[First steps with Public Cloud instances](../public-cloud-first-steps/)
+[First steps with Public Cloud instances](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Becoming the root user and selecting a password](../become_the_root_user_and_select_a_password/)
+[Becoming the root user and selecting a password](/pages/platform/public-cloud/become_root_and_change_password)
 
-[Changing the hostname of a Public Cloud instance](../changing_the_hostname_of_an_instance/)
+[Changing the hostname of a Public Cloud instance](/pages/platform/public-cloud/changing_the_hostname_of_an_instance)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,8 +1,6 @@
 ---
 title: 'Enviar SMS desde el correo electrónico'
-slug: enviar-sms-desde-correo-electronico
 excerpt: 'Cómo enviar SMS desde una dirección de correo electrónico'
-section: 'Enviar SMS'
 updated: 2020-06-04
 ---
 
@@ -42,7 +40,7 @@ Tenga en cuenta que, si el texto contiene 2 saltos de línea (doble /n) o si esc
 Si quiere enviar un SMS con estos elementos, deberá hacerlo desde el área de cliente o a través de las API.
 >
 
-Para más información sobre los caracteres autorizados con codificación de 7 bits, consulte el [anexo](https://docs.ovh.com/es/sms/enviar-sms-desde-correo-electronico/#anexo) que encontrará al final de esta guía.
+Para más información sobre los caracteres autorizados con codificación de 7 bits, consulte el [anexo](/pages/telecom/sms/envoyer_des_sms_depuis_une_adresse_email#anexo) que encontrará al final de esta guía.
 
 > [!warning]
 >
@@ -87,7 +85,7 @@ Deberá obtener un resultado similar al de la imagen siguiente. Por defecto, una
 Si quiere utilizar un número corto que permita la respuesta, indique «senderForResponse=1» como remitente.
 >
 
-Para más información sobre los usuarios de SMS, consulte la siguiente guía: [Usuarios de SMS](https://docs.ovh.com/es/sms/usuarios-de-sms/)
+Para más información sobre los usuarios de SMS, consulte la siguiente guía: [Usuarios de SMS](/pages/telecom/sms/tout_savoir_sur_les_utilisateurs_sms)
 
 
 ### 2\. Campos adicionales

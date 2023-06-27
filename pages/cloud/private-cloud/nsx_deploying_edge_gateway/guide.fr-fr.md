@@ -1,10 +1,7 @@
 ---
 title: Comment déployer une NSX-v Edge Gateway
-slug: comment-deployer-une-nsx-edge-gateway
 excerpt: "Découvrez comment déployer une edge gateway NSX via l'interface vSphere"
 legacy_guide_number: '7766362'
-section: NSX-v
-order: 02
 updated: 2021-11-19
 ---
 

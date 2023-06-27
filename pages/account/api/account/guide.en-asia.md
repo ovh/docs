@@ -1,8 +1,6 @@
 ---
 title: Create a OVH sub-account and a user account with OVH API
 excerpt: Create a sub-account and a user account with OVH API to access to OVH Manager
-slug: ovh-api-sub-account
-section: APIv6
 updated: 2020-01-02
 ---
 
@@ -16,7 +14,7 @@ This guide will also show you how to add one or more logins to this sub-account 
 ## Requirements
 
 * Being connected on [OVHcloud API](https://ca.api.ovh.com/){.external}.
-* Having [created your credentials for OVHcloud API](https://docs.ovh.com/asia/en/api/first-steps-with-ovh-api/){.external}.
+* Having [created your credentials for OVHcloud API](/pages/account/api/first-steps){.external}.
 
 * Having a customer account wih Reseller Tag (contact your sales representative for eligibility if applicable).
 

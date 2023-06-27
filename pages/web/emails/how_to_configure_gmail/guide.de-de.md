@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguration Ihrer E-Mail-Adresse im Gmail-Webinterface'
-slug: konfiguration-einer-shared-e-mail-adresse-im-gmail-interface
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie eine MX Plan Adresse im Webinterface von Gmail einrichten.'
-section: 'E-Mail Clients'
-order: 8
 updated: 2021-01-08
 ---
 

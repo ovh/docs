@@ -1,8 +1,5 @@
 ---
 title: Vulnerability Scanning and Penetration Testing
-slug: security-pen-test
-section: Security
-order: 8
 updated: 2021-05-11
 ---
 

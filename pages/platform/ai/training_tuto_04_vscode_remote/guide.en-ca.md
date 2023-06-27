@@ -1,9 +1,6 @@
 ---
 title: AI Training - Tutorial -  Connect to VSCode via remote
-slug: training/vscode-remote-code
 excerpt: Tutorial to configure Remote Visual Studio with AI Training
-section: AI Training - Tutorials
-order: 04
 updated: 2022-09-01
 ---
 
@@ -16,8 +13,8 @@ This tutorial covers the process of starting a job using a Visual Studio Code Re
 ## Requirements
 
 -   an **AI Training project** created inside a **Public Cloud** project
--   a [user for AI Training](https://docs.ovh.com/ca/en/publiccloud/ai/users)
--   installing the [OVHcloud AI CLI](https://docs.ovh.com/ca/en/publiccloud/ai/cli/install-client)
+-   a [user for AI Training](/pages/platform/ai/gi_01_manage_users)
+-   installing the [OVHcloud AI CLI](/pages/platform/ai/cli_10_howto_install_cli)
 
 > [!warning]
 > The deployed image needs to contain the `bash` binary and a glibc-based Linux (Ubuntu / Debian)
@@ -71,8 +68,8 @@ Enjoy.
 
 ## Go further
 
-- Check how to run Tensorflow code with GPUs [here](https://docs.ovh.com/ca/en/publiccloud/ai/training/tensorflow-gpu-examples/).
-- You can compare AI models based on resource consumption, accuracy and training time. Refer to this [tutorial](https://docs.ovh.com/ca/en/publiccloud/ai/training/tuto-models-comparaison-weights-and-biases/).
+- Check how to run Tensorflow code with GPUs [here](/pages/platform/ai/training_tuto_03_tensorflow_gpu).
+- You can compare AI models based on resource consumption, accuracy and training time. Refer to this [tutorial](/pages/platform/ai/training_tuto_06_models_comparaison_weights_and_biases).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

@@ -1,9 +1,6 @@
 ---
 title: "Mettre en place un répondeur depuis l'interface OWA"
 excerpt: guide mise en place d'un répondeur sous owa
-slug: exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa
-section: "Fonctionnalités des adresses e-mail"
-order: 07
 updated: 2020-07-20
 ---
 

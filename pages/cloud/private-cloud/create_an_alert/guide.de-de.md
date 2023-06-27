@@ -1,9 +1,6 @@
 ---
 title: Einen Alarm erstellen
 excerpt: Alarmmeldungen in Ihrem vSphere Client einstellen
-slug: einen_alarm_erstellen
-section: Verwaltung virtueller Maschinen
-order: 09
 updated: 2020-07-08
 ---
 
@@ -18,7 +15,7 @@ Alarmmeldungen können für alle Komponenten Ihrer Private Cloud erstellt werden
 ## Voraussetzungen
 
 - Sie nutzen ein Produkt der Art [Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external}.
-- Sie sind in Ihrem [vSphere Interface](../den_vsphere_client_installieren/) angemeldet.
+- Sie sind in Ihrem [vSphere Interface](/pages/cloud/private-cloud/vsphere_interface_connexion) angemeldet.
 
 ## Praktische Anwendung
 

@@ -1,9 +1,7 @@
 ---
 title: 'Attivare e utilizzare il Rescue mode'
 excerpt: 'Come riavviare il tuo server dedicato in modalità Rescue'
-slug: rescue_mode
 legacy_guide_number: g920
-section: 'Diagnostica e modalità Rescue'
 updated: 2023-02-07
 ---
 
@@ -38,7 +36,7 @@ Se non disponi ancora di backup recenti, effettua un backup dei tuoi dati.
 ## Procedura
 
 > [!warning]
-> Ti ricordiamo che se hai impostato una chiave SSH di default nel tuo spazio per i prodotti dedicati, non riceverai una password di root durante il riavvio di un server in modalità Rescue. In questo caso, è necessario disattivare di default la chiave SSH prima di riavviare il server in modalità Rescue. Per effettuare questa operazione, consulta questa [sezione](../creare-chiave-ssh-dedicata/#disablesshkey) della guida corrispondente.
+> Ti ricordiamo che se hai impostato una chiave SSH di default nel tuo spazio per i prodotti dedicati, non riceverai una password di root durante il riavvio di un server in modalità Rescue. In questo caso, è necessario disattivare di default la chiave SSH prima di riavviare il server in modalità Rescue. Per effettuare questa operazione, consulta questa [sezione](/pages/cloud/dedicated/creating-ssh-keys-dedicated#disablesshkey) della guida corrispondente.
 >
 
 La modalità Rescue può essere attivata solo dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}.
@@ -215,6 +213,6 @@ Questi strumenti sono già installati in questa modalità:
 
 ## Per saperne di più
 
-[Modifica la password amministratore su un server dedicato Windows](../modificare-password-admin-su-server-windows/)
+[Modifica la password amministratore su un server dedicato Windows](/pages/cloud/dedicated/changing-admin-password-on-windows)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

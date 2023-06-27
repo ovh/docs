@@ -1,9 +1,6 @@
 ---
 title: 'Sichere Verwaltung eines ESXi Dedicated Server'
-slug: esxi-hardening
 excerpt: 'Erfahren Sie hier, wie Sie Ihren ESXi Server wirksam absichern'
-section: 'Sicherheit'
-order: 5
 updated: 2023-03-22
 ---
 
@@ -29,7 +26,7 @@ Wir behelfen uns dabei der nativen Funktionen von VMware, als auch der Optionen 
 > 
 > Kürzlich wurden ESXi Systeme Opfer von Angriffen über eine Sicherheitslücke, die über öffentliche Netzwerke ausgenutzt wurde.
 >
-> Weitere Informationen zu diesem Angriff finden Sie in dieser [zusätzlichen FAQ (EN)](https://docs.ovh.com/gb/en/dedicated/esxi-faq/).
+> Weitere Informationen zu diesem Angriff finden Sie in dieser [zusätzlichen FAQ (EN)](/pages/cloud/dedicated/faq-esxi).
 >
 
 ### Bewährte Sicherheitspraktiken:
@@ -49,7 +46,7 @@ Wir behelfen uns dabei der nativen Funktionen von VMware, als auch der Optionen 
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verfügen über einen dedizierten Server mit ESXi installiert.
-- Sie haben einen separaten Dienst, der mit unserer [Network Firewall](https://docs.ovh.com/de/dedicated/firewall-network/) kompatibel ist, sofern Sie diese Option zur Filterung verwenden möchten.
+- Sie haben einen separaten Dienst, der mit unserer [Network Firewall](/pages/cloud/dedicated/firewall_network) kompatibel ist, sofern Sie diese Option zur Filterung verwenden möchten.
 
 ## In der praktischen Anwendung
 
@@ -67,7 +64,7 @@ Hinweis zu Definition und Funktionsprinzip:
 > 
 > Wenn dieser Schutz ausgelöst wurde und Sie sich sofort mit Ihrem ESXi verbinden möchten, müssen Sie das Administratorkonto manuell entsperren.
 >
-> Dazu muss der ESXi Server über das OVHcloud Kundencenter [neu gestartet werden](https://docs.ovh.com/de/dedicated/erste-schritte-dedicated-server/#neustart-ihres-dedicated-servers).
+> Dazu muss der ESXi Server über das OVHcloud Kundencenter [neu gestartet werden](/pages/cloud/dedicated/getting-started-with-dedicated-server#neustart-ihres-dedicated-servers).
 > 
 
 Sie können die Zugrifflogs über eine SSH-Verbindung in folgenden Dateien einsehen:
@@ -100,7 +97,7 @@ Alle Informationen sind auch über das Web-Interface verfügbar. Klicken Sie auf
 > Zur Erinnerung: Regeln der Network Firewall werden innerhalb des OVHcloud Netzwerks nicht berücksichtigt. Die konfigurierten Regeln haben daher keine Auswirkungen auf die Verbindungen aus dem internen Netzwerk.
 >
 
-Wir empfehlen, unsere Network Firewall Filterlösung zu [aktivieren und zu verwenden](https://docs.ovh.com/de/dedicated/firewall-network/).
+Wir empfehlen, unsere Network Firewall Filterlösung zu [aktivieren und zu verwenden](/pages/cloud/dedicated/firewall_network).
 Mit dieser Lösung können Sie die legitimen Zugänge, die Sie über Ihr ESXi System eingerichtet haben, problemlos verwalten.
 
 Sie vermeiden es auch, Ihren Administrator-Account im Falle eines Angriffs unbeabsichtigt zu sperren.

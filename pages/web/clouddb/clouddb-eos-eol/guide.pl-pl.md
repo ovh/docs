@@ -1,7 +1,5 @@
 ---
 title: 'Ogłoszenia dotyczące końca umowy sprzedaży/usługi Web Cloud Databases'
-slug: clouddb-eos-eol
-section: 'Zasoby techniczne'
 updated: 2023-06-09
 ---
 

@@ -1,11 +1,8 @@
 ---
 title: Configurare un IP su una macchina virtuale
-slug: configurazione-ip-macchina-virtuale
 routes:
-    canonical: 'https://docs.ovh.com/it/private-cloud/configurazione-ip-macchina-virtuale/'
+    canonical: '/pages/cloud/private-cloud/configure_ip_on_vm'
 excerpt: Come configurare un IP su una macchina virtuale
-section: Gestione delle macchine virtuali
-order: 5
 updated: 2020-11-18
 ---
 
@@ -101,7 +98,7 @@ La configurazione di un IP privato è simile a quella di un IP pubblico. È tutt
 
 Nella scelta dell'interfaccia, potrai modificare questi parametri:
 
-- un'interfaccia VLAN (da 10 a 20 di default e legate alla vRack, potete crearne di più consultando [questa guida](../creazione-vlan/)).
+- un'interfaccia VLAN (da 10 a 20 di default e legate alla vRack, potete crearne di più consultando [questa guida](/pages/cloud/managed-bare-metal/vlan-creation)).
 
 Nelle impostazioni della tua macchina virtuale, puoi utilizzare una VLAN :
 

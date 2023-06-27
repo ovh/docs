@@ -1,9 +1,6 @@
 ---
 title: Remote Desktop mit Microsoft 365 Apps verwenden
-slug: office365-proplus-remotedesktopdienste
 excerpt: Erfahren Sie hier, wie Sie Microsoft 365 Apps auf einem Remote- (RDS) oder einem gemeinsam genutzten Desktop verwenden
-section: Office
-order: 04
 updated: 2021-09-06
 ---
 

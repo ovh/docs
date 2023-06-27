@@ -1,9 +1,6 @@
 ---
 title: Dobre praktyki bezpieczeństwa dotyczące klienta vSphere
-slug: zabezpieczenie-dostepu-vsphere
 excerpt: Dowiedz się, jak zabezpieczyć dostęp do klienta vSphere
-section: Informacje Meltdown i Spectre
-order: 1
 updated: 2020-06-30
 ---
 

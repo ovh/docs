@@ -1,9 +1,6 @@
 ---
 title: 'Tutorial - Eigene Webseite bei OVHcloud erstellen'
-slug: create-your-own-web-page
 excerpt: 'Erfahren Sie hier, wie Sie Ihre erste Webseite auf einem kostenlosen Start 10M Webhosting erstellen'
-section: "Tutorials"
-order: 012
 updated: 2023-02-17
 ---
 
@@ -384,13 +381,13 @@ Um das Ziel des Links in einem neuen Tab anzuzeigen genügt es, das Attribut `ta
 
 ### Wie speichere ich Inhalte auf meinem Hosting?
 
-Damit Ihre Seiten im Web sichtbar werden, müssen Sie sie auf Ihrem Hosting ablegen (wie in [dieser Anleitung](https://docs.ovh.com/de/hosting/start10m-aktivieren/) beschrieben).
+Damit Ihre Seiten im Web sichtbar werden, müssen Sie sie auf Ihrem Hosting ablegen (wie in [dieser Anleitung](/pages/web/hosting/activate_start10m) beschrieben).
 
 Der Dateitransfer erfolgt über ein dediziertes Protokoll: **FTP** (**F**ile **T**ransfer **P**rotocol). Verwenden Sie für diese Operation einen kompatiblen Client, wie [FileZilla](https://filezilla-project.org/download.php?type=client) oder [Cyberduck](https://cyberduck.io/download/).
 
 ### Website per FTP hochladen
 
-Um Ihre Dateien auf Ihrem Hosting zu speichern, lesen Sie die Anleitung zur [Verwendung von FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/).
+Um Ihre Dateien auf Ihrem Hosting zu speichern, lesen Sie die Anleitung zur [Verwendung von FileZilla](/pages/web/hosting/ftp_filezilla_user_guide).
 
 Sobald die Dateien vollständig auf Ihr Hosting übertragen wurden, können Sie das Ergebnis anzeigen lassen, indem Sie Ihren Domainnamen in die Adresszeile Ihres Browsers eingeben oder indem Sie die Taste `F5` Ihrer Tastatur drücken, um die Seite neu zu laden, wenn Sie bereits auf Ihrer Seite sind.
 

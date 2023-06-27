@@ -1,8 +1,6 @@
 ---
 title: OVF Tool
-slug: ovf-tool
 excerpt: Find out how to export or import virtual machines using the OVF Tool
-section: Virtual machine management
 updated: 2022-01-31
 ---
 

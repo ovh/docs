@@ -1,9 +1,6 @@
 ---
 title: Criar uma zona DNS para um domínio externo
-slug: criar_uma_zona_dns_para_um_dominio_externo
 excerpt: 'Saiba como criar uma zona DNS na OVHcloud para o seu domínio através da Área de Cliente'
-section: 'DNS e zona DNS'
-order: 02
 updated: 2018-08-06
 ---
 
@@ -57,7 +54,7 @@ Se pretender editar esta zona DNS, aceda à [Área de Cliente OVHcloud](https://
 > Se acabou de criar a zona DNS e o domínio ainda não aparecer na lista dos seus serviços `Nomes de domínio`{.action}, aguarde alguns instantes e recarregue a página.
 >
 
-Faça as ações necessárias. Para obter mais informações, consulte a secção "[Editar uma zona DNS da OVHcloud](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}" (versão em inglês). Depois de alterar a zona DNS da OVHcloud do seu domínio, é necessário um tempo máximo de propagação de 4 a 24 horas para que as alterações sejam efetivas.
+Faça as ações necessárias. Para obter mais informações, consulte a secção "[Editar uma zona DNS da OVHcloud](/pages/web/domains/dns_zone_edit){.external}" (versão em inglês). Depois de alterar a zona DNS da OVHcloud do seu domínio, é necessário um tempo máximo de propagação de 4 a 24 horas para que as alterações sejam efetivas.
 
 ### Etapa 3: alterar os servidores DNS do domínio
 
@@ -69,6 +66,6 @@ Quando estiver na sua posse, **modifique os servidores DNS do seu nome de domín
 
 ## Quer saber mais?
 
-[Como editar a minha zona DNS?](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}.
+[Como editar a minha zona DNS?](/pages/web/domains/dns_zone_edit){.external}.
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>

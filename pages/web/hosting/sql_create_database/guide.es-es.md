@@ -1,9 +1,6 @@
 ---
 title: 'Crear una base de datos en un alojamiento web'
-slug: crear-base-de-datos
 excerpt: 'Cómo utilizar las bases de datos incluidas en los planes de hosting de OVHcloud'
-section: 'Bases de datos'
-order: 01
 updated: 2022-02-03
 ---
 
@@ -101,7 +98,7 @@ Los datos de conexión aparecerán precargados en la nueva ventana, por lo que s
 
 Para cada base de datos de su alojamiento web, todos los días se crearán copias de seguridad de forma automática (hasta 32 entidades). De este modo, podrá restaurar fácilmente una versión previa de su base de datos directamente desde el área de cliente. 
 
-Para consultar las copias de seguridad disponibles y su fecha de creación, haga clic en el icono con forma de lápiz que aparece junto al círculo verde en la columna [Copias de seguridad](../web_hosting_exportacion_de_una_base_de_datos). También es posible descargar las copias de seguridad. Para más información, consulte nuestra guía [Exportar una copia de seguridad de la base de datos de un alojamiento web](../web_hosting_exportacion_de_una_base_de_datos).
+Para consultar las copias de seguridad disponibles y su fecha de creación, haga clic en el icono con forma de lápiz que aparece junto al círculo verde en la columna [Copias de seguridad](/pages/web/hosting/sql_database_export). También es posible descargar las copias de seguridad. Para más información, consulte nuestra guía [Exportar una copia de seguridad de la base de datos de un alojamiento web](/pages/web/hosting/sql_database_export).
 
 #### Problemas frecuentes
 
@@ -117,17 +114,17 @@ Le recomendamos que utilice siempre el nombre de la base de datos en los scripts
 
 Si la base de datos de un alojamiento web supera el espacio de almacenamiento asignado, pasará automáticamente al modo «read only»/«select only». El administrador recibirá una notificación por correo electrónico.
 
-Una vez que la base de datos haya sido optimizada, podrá recalcular su espacio desde el área de cliente de OVHcloud para desbloquear este modo. Le recomendamos que descargue la base de datos, realice una revisión localmente y después vuelva a importarla. Para más información, consulte el paso 7 de nuestra guía [Optimizar el rendimiento de su sitio web](../web_hosting_guia_de_optimizacion_del_rendimiento_de_un_sitio_web/#paso-7-optimizar-su-base-de-datos).
+Una vez que la base de datos haya sido optimizada, podrá recalcular su espacio desde el área de cliente de OVHcloud para desbloquear este modo. Le recomendamos que descargue la base de datos, realice una revisión localmente y después vuelva a importarla. Para más información, consulte el paso 7 de nuestra guía [Optimizar el rendimiento de su sitio web](/pages/web/hosting/optimise_your_website_performance#paso-7-optimizar-su-base-de-datos).
 
 
 ## Más información
 
-[Cambiar la contraseña de la base de datos de un alojamiento web](../cambiar-contrasena-base-de-datos)
+[Cambiar la contraseña de la base de datos de un alojamiento web](/pages/web/hosting/sql_change_password)
 
-[Exportar una copia de seguridad de la base de datos de un alojamiento web](../web_hosting_exportacion_de_una_base_de_datos)
+[Exportar una copia de seguridad de la base de datos de un alojamiento web](/pages/web/hosting/sql_database_export)
 
-[Importar una copia de seguridad en la base de datos de un alojamiento web](../web_hosting_importacion_de_una_base_de_datos_mysql)
+[Importar una copia de seguridad en la base de datos de un alojamiento web](/pages/web/hosting/sql_importing_mysql_database)
 
-[Optimizar el rendimiento de su sitio web](../web_hosting_guia_de_optimizacion_del_rendimiento_de_un_sitio_web)
+[Optimizar el rendimiento de su sitio web](/pages/web/hosting/optimise_your_website_performance)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

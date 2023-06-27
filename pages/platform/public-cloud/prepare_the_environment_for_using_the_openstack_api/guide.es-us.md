@@ -1,8 +1,6 @@
 ---
 title: 'Preparar el entorno para utilizar la API de OpenStack'
-slug: prepare_the_environment_for_using_the_openstack_api
 excerpt: 'Cómo instalar el entorno OpenStack para controlar las instancias a través de la API'
-section: OpenStack
 updated: 2022-03-30
 ---
 
@@ -172,6 +170,6 @@ nova help
 
 ## Más información
 
-[Cargar las variables de entorno necesarias para OpenStack](https://docs.ovh.com/us/es/public-cloud/set-openstack-environment-variables/).
+[Cargar las variables de entorno necesarias para OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 Únase a nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com/en/){.external}.

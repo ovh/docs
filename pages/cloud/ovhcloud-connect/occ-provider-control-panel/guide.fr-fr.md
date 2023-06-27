@@ -1,9 +1,6 @@
 ---
 title: Mise en service de OVHcloud Connect Provider depuis l’espace client OVHcloud
 excerpt: Découvrez comment mettre en service votre offre OVHcloud Connect Provider depuis votre espace client OVHcloud
-slug: occ-provider-manager-setup
-section: Premiers pas
-order: 3
 updated: 2020-09-28
 ---
 

@@ -1,8 +1,5 @@
 ---
 title: Object Storage Swift - Compatibilité des API REST S3/Swift
-slug: pcs/object-storage-standard-s3-and-swift-rest-api-compatibility
-section: Spécificités de la classe de stockage OpenStack Swift
-order: 030
 updated: 2022-03-23
 ---
 

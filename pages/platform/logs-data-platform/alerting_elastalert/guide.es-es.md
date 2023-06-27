@@ -1,9 +1,6 @@
 ---
 title: Alerting - Using ElastAlert 2 with Logs Data Platform
-slug: logs-data-platform-elastalert
-order: 11
 excerpt: Deploy in a few minutes one of the most complete alert system.
-section: Use cases
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-elastalert?id=kb_article_view&sysparm_article=KB0050052'
 updated: 2023-06-05
@@ -227,6 +224,6 @@ ElastAlert has a lot of integrations for alerting including Email, JIRA, OpsGeni
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/es/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

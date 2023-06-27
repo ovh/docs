@@ -1,7 +1,5 @@
 ---
 title: Find your patch for Meltdown and Spectre
-slug: meltdown-spectre-kernel-update-per-operating-system
-section: Meltdown and Spectre informations
 updated: 2020-07-15
 ---
 
@@ -23,7 +21,7 @@ updated: 2020-07-15
    <p>&nbsp;</p>
    <p>As a reminder, <span class="caps">OVH</span> provides self-managed machines which are the customer’s responsibility. Since we have no access to these machines we are not the administrators. It is your responsibility to manage software and install this patch against Meltdown or Spectre when available. Consequently, you will be responsible for potential<span class="widont">&nbsp;</span>instabilities.</p>
    <p><span style="color: rgb(51,102,255);">&nbsp;</span></p>
-   <p style="text-align: left;"><em>Please note that you can also see the status of <a class="external-link" href="https://docs.ovh.com/fr/dedicated/information-about-meltdown-spectre-vulnerability-fixes/" rel="nofollow">each <span class="caps">OVH</span> product in this </a><a class="external-link" href="https://docs.ovh.com/fr/dedicated/information-about-meltdown-spectre-vulnerability-fixes" rel="nofollow">page</a>.</em></p>
+   <p style="text-align: left;"><em>Please note that you can also see the status of <a class="external-link" href="/pages/cloud/dedicated/meltdown_spectre_fixes" rel="nofollow">each <span class="caps">OVH</span> product in this </a><a class="external-link" href="/pages/cloud/dedicated/meltdown_spectre_fixes" rel="nofollow">page</a>.</em></p>
    <p style="text-align: left;"><em>Moreover, <a class="external-link" href="https://docs.ovh.com/gb/en/dedicated/updating-kernel-dedicated-server/" rel="nofollow">here is a guide</a>&nbsp;explaining how to update and patch your kernel to protect your system against Meltdown and Spectre if you're using an OVH image of your distribution.</em></p>
    <p style="text-align: left;">&nbsp;</p>
    <h2 style="text-align: left;" id="ExternalDocumentation/Proceduresforcustomers-MeltdownandSpectrepatchesavailabilityperOS"><span style="color: rgb(51,102,255);">&nbsp;</span>Meltdown and Spectre patches availability&nbsp; per <span class="caps">OS</span></h2>

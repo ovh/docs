@@ -1,9 +1,6 @@
 ---
 title: "Configurar el registro DNS inverso de un VPS"
 excerpt: Cómo activar la resolución inversa DNS
-slug: configurar-el-inverso-dns-vps
-section: "Red e IP"
-order: 3
 updated: 2023-01-05
 ---
 
@@ -45,11 +42,11 @@ También puede editar el registro inverso directamente a través del icono de la
 
 > [!primary]
 >
-Si la modificación no funciona como se esperaba, compruebe que el registro `A` esté bien configurado en la zona DNS del dominio. Atención: La modificación de la [zona DNS](https://docs.ovh.com/es/public-cloud/configurar-el-inverso-dns-de-una-instancia/) puede tardar hasta 24 horas si solo ha cambiado recientemente el registro `A`.
+Si la modificación no funciona como se esperaba, compruebe que el registro `A` esté bien configurado en la zona DNS del dominio. Atención: La modificación de la [zona DNS](/pages/platform/public-cloud/setup_instance_reverse) puede tardar hasta 24 horas si solo ha cambiado recientemente el registro `A`.
 >
 
 ## Más información <a name="gofurther"></a>
 
-[Primeros pasos con un VPS](https://docs.ovh.com/es/vps/primeros-pasos-con-vps/)
+[Primeros pasos con un VPS](/pages/cloud/vps/starting_with_a_vps)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

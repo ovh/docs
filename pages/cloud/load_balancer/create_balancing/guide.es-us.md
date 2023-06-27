@@ -1,8 +1,6 @@
 ---
 title: 'Modos de balanceo'
-slug: modos-de-balanceo
 excerpt: 'Modos de balanceo de la carga del Load Balancer de OVH'
-section: Configuración
 updated: 2018-01-17
 ---
 
@@ -26,7 +24,7 @@ El nuevo Load Balancer de OVH ofrece distintos tipos de balanceo de la carga de 
 
 En las granjas de servidores, el balanceo de carga determina la forma en la que las peticiones se distribuirán entre los distintos servidores de la granja.
 
-Para conocer las principales características del Load Balancer de OVH, consulte la [guía de presentación del servicio](https://docs.ovh.com/us/es/load-balancer/presentacion-load-balancer/){.external}.
+Para conocer las principales características del Load Balancer de OVH, consulte la [guía de presentación del servicio](/pages/cloud/load_balancer/use_presentation){.external}.
 
 |Algoritmo|Funcionalidades|
 |---|---|

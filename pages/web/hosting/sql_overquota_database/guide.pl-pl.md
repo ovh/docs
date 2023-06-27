@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Co robić, gdy moja baza danych jest nasycona?"
-slug: database-overquota
 excerpt: "Dowiedz się, jak działać, gdy baza danych jest przeciążona"
-section: 'Bazy danych'
-order: 06
 updated: 2023-02-16
 ---
 
@@ -39,7 +36,7 @@ Tutorial ten wyjaśnia, jakie działania należy podjąć, gdy wirtualna baza da
 > Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
-Gdy baza danych współdzielona OVHcloud zostanie przeciążona (**overquota**), nasze roboty prześlą do Ciebie e-mail na adres e-mail [kontaktu administratora](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/) bazy danych. 
+Gdy baza danych współdzielona OVHcloud zostanie przeciążona (**overquota**), nasze roboty prześlą do Ciebie e-mail na adres e-mail [kontaktu administratora](/pages/account/customer/managing_contacts) bazy danych. 
 
 Pierwszy e-mail jest wysyłany, gdy baza danych zużywa ponad **80%** swojej przestrzeni dyskowej. Druga wiadomość e-mail jest wysyłana po osiągnięciu **90%** tej pojemności pamięci masowej.
 
@@ -61,7 +58,7 @@ Pierwszy etap polega na zidentyfikowaniu obszernej(-ych) tabeli(-ych) w Twojej b
 
 #### 1.1 - Logowanie do bazy danych przez phpMyAdmin
 
-Pobierz hasło dostępowe do bazy danych bezpośrednio w pliku konfiguracyjnym Twojej strony WWW. Wykonaj tę operację za pomocą **etapu 1** w naszym przewodniku dotyczącym [zmiany hasła do bazy danych] (https://docs.ovh.com/pl/hosting/zmiana-hasla-do-bazy-danych/).
+Pobierz hasło dostępowe do bazy danych bezpośrednio w pliku konfiguracyjnym Twojej strony WWW. Wykonaj tę operację za pomocą **etapu 1** w naszym przewodniku dotyczącym [zmiany hasła do bazy danych] (/pages/web/hosting/sql_change_password).
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Web Cloud`{.action} na pasku nawigacyjnym na górze ekranu. Kliknij przycisk `Hosting`{.action}, następnie wybierz hosting powiązany z Twoją bazą danych na hostingu OVHcloud. Teraz przejdź do zakładki `Bazy danych`{.action}.
 
@@ -131,9 +128,9 @@ Zalecamy tę ofertę dla dużych baz danych.
 
 Następnie postępuj zgodnie z naszymi przewodnikami, aby przenieść zawartość Twojej starej bazy danych do nowej:
 
-- [Eksport istniejącej bazy danych](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/)
-- [Pierwsze kroki z usługą Web Cloud Databasess](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/)
-- [Import Twojej starej bazy danych do Twojej oferty Web Cloud Databasess](https://docs.ovh.com/pl/clouddb/przywracanie-importowanie-bazy-danych/)
+- [Eksport istniejącej bazy danych](/pages/web/hosting/sql_database_export)
+- [Pierwsze kroki z usługą Web Cloud Databasess](/pages/web/clouddb/starting_with_clouddb)
+- [Import Twojej starej bazy danych do Twojej oferty Web Cloud Databasess](/pages/web/clouddb/restore-import-on-database-server)
 
 #### Przypadki nr 2 - Część lub całość zawartości tabeli nie jest konieczna do działania strony
 

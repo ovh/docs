@@ -1,9 +1,6 @@
 ---
 title: PostgreSQL - Connect with PHP
 excerpt: Connect to your Public Cloud Databases for PostgreSQL using the PHP programming language
-slug: postgresql/connect-php
-section: PostgreSQL - Guides
-order: 050
 updated: 2022-04-04
 ---
 
@@ -21,14 +18,14 @@ You can find an example on the [Github examples repository](https://github.com/o
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg);
 - A [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account;
-- A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/sg/en/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your PostgreSQL instance](https://docs.ovh.com/sg/en/publiccloud/databases/postgresql/configure-postgresql-instance/) to accept incoming connections
+- A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your PostgreSQL instance](/pages/platform/databases/postgresql_07_prepare_for_incoming_connections) to accept incoming connections
 - A PHP environment with a stable version and public network connectivity (Internet). This guide was made in PHP 8.0.8.
 
 ## Concept
 
 A PostgreSQL instance can be managed through multiple ways.
-One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide: [Connect to PostgreSQL with CLI](https://docs.ovh.com/sg/en/publiccloud/databases/postgresql/connect-cli/).
+One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide: [Connect to PostgreSQL with CLI](/pages/platform/databases/postgresql_03_connect_cli).
 
 Another way is to interact directly using programming languages, such as PHP.
 PHP is used in almost 80% of the websites in the world, such as Facebook, Wikipedia or WordPress.
@@ -49,7 +46,7 @@ Please follow the official [PostgreSQL](https://www.php.net/manual/en/book.pgsql
 
 If you can edit your PHP environment on your own, install extensions and libraries as detailed in the documentation page linked above.
 
-On the contrary, if you benefit from a managed web hosting solution, such as **OVHcloud Web Hosting offers**, you need to activate the right PHP version on your web hosting plan. You can find [a guide about modifying your PHP version for OVHcloud Web Hosting here](https://docs.ovh.com/sg/en/hosting/how_to_configure_php_on_your_ovh_web_hosting_package_2014/).
+On the contrary, if you benefit from a managed web hosting solution, such as **OVHcloud Web Hosting offers**, you need to activate the right PHP version on your web hosting plan. You can find [a guide about modifying your PHP version for OVHcloud Web Hosting here](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014).
 
 We are now ready to learn how to connect to our PostgreSQL instance.
 

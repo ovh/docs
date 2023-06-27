@@ -1,9 +1,7 @@
 ---
 title: Creare e configurare un gruppo di sicurezza su Horizon
 excerpt: Come creare un gruppo di sicurezza e configurarlo su un'istanza Public Cloud
-slug: configure-security-group-horizon
 legacy_guide_number: g1925
-section: Gestione da Horizon
 updated: 2021-08-24
 ---
 
@@ -22,13 +20,13 @@ Per motivi di sicurezza, è possibile configurare e utilizzare regole di filtrag
 ## Prerequisiti
 
 - Un [progetto Public Cloud](https://www.ovhcloud.com/it/public-cloud/)
-- [Essere connesso all'interfaccia Horizon](https://docs.ovh.com/it/public-cloud/creation-and-deletion-of-openstack-user/)
+- [Essere connesso all'interfaccia Horizon](/pages/platform/public-cloud/create_and_delete_a_user)
 
 ## Procedura
 
 ### Step 1: creare un gruppo di sicurezza
 
-Accedi all'interfaccia [Horizon](https://docs.ovh.com/it/public-cloud/creation-and-deletion-of-openstack-user/). Scegli la Region in cui vuoi creare un gruppo di sicurezza, cliccando sul pulsante in alto a sinistra.
+Accedi all'interfaccia [Horizon](/pages/platform/public-cloud/create_and_delete_a_user). Scegli la Region in cui vuoi creare un gruppo di sicurezza, cliccando sul pulsante in alto a sinistra.
 
 ![definire la regione](images/security-group0.png){.thumbnail}
 

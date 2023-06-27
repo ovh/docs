@@ -1,11 +1,9 @@
 ---
 title: 'Korzystanie z wtyczki OVH Network'
-slug: wtyczka-ovh-network
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/wtyczka-ovh-network/'
+    canonical: '/pages/cloud/private-cloud/plugin_ovh_network'
 excerpt: 'Dowiedz się, jak korzystać z wtyczki OVH Network w usłudze Managed Bare Metal'
 legacy_guide_number: '7766560'
-section: 'Funkcjonalności OVHcloud'
 updated: 2020-11-18
 ---
 

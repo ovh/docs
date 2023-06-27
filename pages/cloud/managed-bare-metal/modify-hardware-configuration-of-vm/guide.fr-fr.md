@@ -1,11 +1,8 @@
 ---
 title: Modifier les ressources d’une machine virtuelle
-slug: modification-des-ressources-d-une-machine-virtuelle
 routes:
-    canonical: 'https://docs.ovh.com/fr/private-cloud/modification-des-ressources-d-une-machine-virtuelle/'
+    canonical: '/pages/cloud/private-cloud/modify_hardware_configuration_of_vm'
 excerpt: Découvrez comment faire évoluer votre machine virtuelle
-section: Gestion des machines virtuelles
-order: 03
 updated: 2020-11-18
 ---
 

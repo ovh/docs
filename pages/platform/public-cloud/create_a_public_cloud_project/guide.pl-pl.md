@@ -1,9 +1,6 @@
 ---
 title: 'Utworzenie pierwszego projekt Public Cloud'
-slug: create_a_public_cloud_project
 excerpt: 'Dowiedz się, jak utworzyć pierwszy projekt Public Cloud w Panelu klienta OVHcloud'
-section: Pierwsze kroki
-order: 1
 updated: 2021-10-06
 ---
 

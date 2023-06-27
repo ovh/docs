@@ -1,8 +1,5 @@
 ---
 title: SSH
-slug: development-ssh
-section: Development
-order: 5
 updated: 2021-05-11
 ---
 
@@ -20,7 +17,7 @@ Secure Shell Protocol, SSH, supports certificate-based and keypair-based authent
 
 ## Certificate-based authentication
 
-To connect using certificate-based authentication, install the [Web PaaS CLI](../development-cli).
+To connect using certificate-based authentication, install the [Web PaaS CLI](/pages/web/web-paas/development-cli).
 
 Once installed, you may run `webpaas login` or any CLI command that would require authentication.  In either case, a browser window will open and ask you to login with your Web PaaS account credentials.  This web page is already encrypted with TLS over HTTP, making it secure.
 

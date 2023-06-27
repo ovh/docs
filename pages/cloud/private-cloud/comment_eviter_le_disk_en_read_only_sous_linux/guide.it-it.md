@@ -1,9 +1,6 @@
 ---
 title: Evitare la modalità di sola lettura sui dischi delle VM Linux
-slug: evitare-modalita-sola-lettura-sui-dischi-vm-linux
 excerpt: Come evitare l’attivazione della modalità di sola lettura sui dischi delle VM Linux
-section: Gestione delle macchine virtuali
-order: 10
 updated: 2020-06-25
 ---
 

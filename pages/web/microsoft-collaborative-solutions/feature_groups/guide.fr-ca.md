@@ -1,9 +1,6 @@
 ---
 title: 'Créer un groupe de contacts'
-slug: exchange-utilisation-des-groupes-mailing-list
 excerpt: 'Retrouvez ici la mise en place et l’utilisation de groupe via votre compte Exchange'
-section: 'Fonctionnalités des comptes Exchange'
-order: 02
 updated: 2020-02-26
 ---
 
@@ -63,7 +60,7 @@ Votre groupe nouvellement créé sera opérationnel en quelques minutes. Vous po
 
 ![contactgroups](images/exchange-groups-step4.png){.thumbnail}
 
-De plus, l’option `Gérer les délégations`{.action} du menu s’affichera. Cette option vous permet de déléguer l’accès de la même manière qu’on le fait pour un compte Exchange. Veuillez retrouver tous les détails dans [ce guide](../exchange-donner-les-droits-full-access-sur-un-compte/).
+De plus, l’option `Gérer les délégations`{.action} du menu s’affichera. Cette option vous permet de déléguer l’accès de la même manière qu’on le fait pour un compte Exchange. Veuillez retrouver tous les détails dans [ce guide](/pages/web/microsoft-collaborative-solutions/feature_delegation).
 
 ![contactgroups](images/exchange-groups-step5.png){.thumbnail}
 
@@ -82,7 +79,7 @@ Vous pouvez déjà  tester votre liste de diffusion via [la messagerie Web d ’
 
 ## Aller plus loin
 
-[Déléguer des permissions sur un compte Exchange](../exchange-donner-les-droits-full-access-sur-un-compte/)
+[Déléguer des permissions sur un compte Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
 [Consulter son compte Exchange depuis l’interface OWA ](/pages/web/emails/email_owa)
 

@@ -1,9 +1,6 @@
 ---
 title: NAS-HA - Gestion des snapshots via API
-slug: nas/snapshots-api
 excerpt: "Apprenez à gérer les snapshots du NAS-HA via l'API OVHcloud"
-section: NAS-HA
-order: 09
 updated: 2022-07-20
 ---
 
@@ -18,12 +15,12 @@ Les NAS-HA OVHcloud vous permettent de créer et de gérer des volumes de fichie
 ## Prérequis
 
 - Un service [NAS-HA OVHcloud](https://www.ovh.com/ca/fr/nas/)
-- Consultez notre guide des [premiers pas avec l'API OVHcloud](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/) afin de vous familiariser avec l'APIv6 OVHcloud
+- Consultez notre guide des [premiers pas avec l'API OVHcloud](/pages/account/api/first-steps) afin de vous familiariser avec l'APIv6 OVHcloud
 
 ## En pratique
 
 > [!primary]
-> N’hésitez pas à vous rendre sur [la page FAQ NAS-HA](https://docs.ovh.com/ca/fr/storage/file-storage/nas/faq/) pour retrouver toutes les informations détaillées concernant la fonction snapshot.
+> N’hésitez pas à vous rendre sur [la page FAQ NAS-HA](/pages/cloud/storage/file_storage/nas_faq) pour retrouver toutes les informations détaillées concernant la fonction snapshot.
 >
 
 Toutes les routes API de ce guide sont disponibles dans la section */dedicated/nasha* : <https://ca.api.ovh.com/console/#/dedicated/nasha>.
@@ -292,9 +289,9 @@ Plus d’informations dans la section [Aller plus loin](#gofurther) de ce guide.
 
 ## Aller plus loin
 
-[Montez votre NAS via un partage NFS](https://docs.ovh.com/ca/fr/storage/file-storage/nas/nfs/)
+[Montez votre NAS via un partage NFS](/pages/cloud/storage/file_storage/nas_nfs)
 
-[Montez votre NAS sur Windows Server via CIFS](https://docs.ovh.com/ca/fr/storage/file-storage/nas/cifs/)
+[Montez votre NAS sur Windows Server via CIFS](/pages/cloud/storage/file_storage/nas_cifs)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

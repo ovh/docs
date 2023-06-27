@@ -1,10 +1,7 @@
 ---
 title: Conectarse a la interfaz vSphere
 excerpt: Cómo conectarse a la interfaz vSphere
-slug: instalar_el_vsphere_client
 legacy_guide_number: g600
-section: Primeros pasos
-order: 2
 updated: 2022-06-24
 ---
 
@@ -21,7 +18,7 @@ updated: 2022-06-24
 ## Requisitos
 
 - Ser contacto administrador de la infraestructura [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/), para recibir claves de conexión.
-- Haber añadido direcciones IP a la sección `Seguridad`{.action} de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Para más información, consulte nuestra guía [Autorizar a las IP a conectarse al vCenter](https://docs.ovh.com/es/private-cloud/autorizar-direcciones-ip-a-conectarse-al-vcenter/).
+- Haber añadido direcciones IP a la sección `Seguridad`{.action} de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Para más información, consulte nuestra guía [Autorizar a las IP a conectarse al vCenter](/pages/cloud/private-cloud/autoriser_des_ip_a_se_connecter_au_vcenter).
 
 ## Procedimiento
 

@@ -1,8 +1,5 @@
 ---
 title: 'Tutorial - Uso de Zonemaster'
-slug: ovhcloud-domain-zonemaster-tutorial
-section: DNS (servidor y zona)
-order: 08
 updated: 2023-06-06
 ---
 
@@ -24,7 +21,7 @@ updated: 2023-06-06
 
 > [!primary]
 >
-> Para entender mejor el concepto de DNS, consulte la introducción de nuestra guía sobre la [configuración de una zona DNS](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/).
+> Para entender mejor el concepto de DNS, consulte la introducción de nuestra guía sobre la [configuración de una zona DNS](/pages/web/domains/dns_zone_edit).
 
 ## Requisitos
 
@@ -79,11 +76,11 @@ Si tiene más preguntas sobre Zonemaster, consulte las [FAQ](https://zonemaster.
 
 ## Más información <a name="go-further"></a>
 
-[Cambiar los servidores DNS de un dominio en OVHcloud](https://docs.ovh.com/es/domains/web_hosting_informacion_general_sobre_los_servidores_dns/){.external}
+[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web/domains/dns_server_general_information){.external}
 
-[Modificación de una zona DNS de OVHcloud](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}.
+[Modificación de una zona DNS de OVHcloud](/pages/web/domains/dns_zone_edit){.external}.
 
-[Proteja su dominio contra el «cache poisoning» con el servicio DNSSEC](https://docs.ovh.com/es/domains/proteja_su_dominio_con_dnssec/){.external}
+[Proteja su dominio contra el «cache poisoning» con el servicio DNSSEC](/pages/web/domains/dns_dnssec){.external}
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
 

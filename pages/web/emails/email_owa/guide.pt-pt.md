@@ -1,9 +1,6 @@
 ---
 title: 'Utilizar o endereço de e-mail a partir do webmail Outlook Web App (OWA)'
-slug: utilizacao-owa
 excerpt: 'Saiba como utilizar o seu endereço de e-mail a partir do webmail OWA'
-section: Introdução
-order: 04
 updated: 2021-06-25
 ---
 
@@ -122,7 +119,7 @@ Preencha a informação solicitada consoante a regra que pretende que seja execu
 
 ![useowa](images/use-owa-step14.png){.thumbnail}
 
-Para instruções mais detalhadas sobre como criar regras inbox, consulte o nosso guia: [Criar regras inbox no OWA](../criar-regras-inbox-no-owa/).
+Para instruções mais detalhadas sobre como criar regras inbox, consulte o nosso guia: [Criar regras inbox no OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan).
 
 #### Bloquear um remetente
 

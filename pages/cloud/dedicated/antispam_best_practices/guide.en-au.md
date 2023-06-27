@@ -1,9 +1,6 @@
 ---
 title: OVHcloud AntiSpam - Best Practices and Unblocking an IP
-slug: antispam-best-practices
 excerpt: Find out about our antispam best practices and how to unblock an IP blocked for SPAM
-section: Server Management
-order: 5
 updated: 2022-10-17
 ---
 
@@ -89,7 +86,7 @@ Once done, your IP will be unblocked.
 
 #### Unblocking your IP from the OVHcloud API
 
-Log in to the [OVHcloud API interface](https://ca.api.ovh.com/) according to the [relevant guide](https://docs.ovh.com/au/en/api/first-steps-with-ovh-api/) and follow the steps below.
+Log in to the [OVHcloud API interface](https://ca.api.ovh.com/) according to the [relevant guide](/pages/account/api/first-steps) and follow the steps below.
 
 First, retrieve the list of IPs for each OVHcloud service (Dedicated Server/Hosted Private Cloud/VPS/Public Cloud):
 
@@ -236,7 +233,7 @@ If your outgoing email volume is very high, you are advised to:
 
 - reserve an IP block dedicated solely to email usage.
 - provide an 'abuse' address on this block in order to receive complaints.
-- configure [Reverses](https://docs.ovh.com/au/en/dedicated/optimise-email-sending/#configure-the-reverse-ip) on all IPs correctly.
+- configure [Reverses](/pages/cloud/dedicated/mail_sending_optimization#configure-the-reverse-ip) on all IPs correctly.
 
 This operation will enable you to simultaneously isolate the IP and domain reputation if you send emails from various domains, to receive the complaints, and thus do what is necessary to get unblocked by various organisations. It also enables you to locate a problem more quickly on a form that uses domain X or Y, as the emails are not sent out from the same IP and don't have the same reverse.
 
@@ -264,13 +261,13 @@ Some authentication services allow you to protect your reputation:
 - **Reverse DNS**: Reverse enables your IP to be "translated” into your domain. That allows the domain associated with the IP address to be found.
 - **DKIM**: This standard is described in [RFC4871](https://datatracker.ietf.org/doc/html/rfc4871). AOL and Google (Gmail) work on this basis. 
 
-For more information on the above services, please consult our guide on [Optimising the sending of emails](https://docs.ovh.com/au/en/dedicated/optimise-email-sending/).
+For more information on the above services, please consult our guide on [Optimising the sending of emails](/pages/cloud/dedicated/mail_sending_optimization).
 
 #### Specific types of email sending
 
 - **To a Microsoft server (Outlook, etc.)**
 
-Microsoft uses a whitelist policy. This means that initially, everything starts off on a blacklist, and a specific procedure is required to validate your email server. For more information, please consult [this section](https://docs.ovh.com/au/en/dedicated/optimise-email-sending/#to-a-microsoft-server-outlook-etc) of the corresponding guide.
+Microsoft uses a whitelist policy. This means that initially, everything starts off on a blacklist, and a specific procedure is required to validate your email server. For more information, please consult [this section](/pages/cloud/dedicated/mail_sending_optimization#to-a-microsoft-server-outlook-etc) of the corresponding guide.
 
 - **To a Gmail server**
 
@@ -284,7 +281,7 @@ If your emails do comply, you can inform us by sending a sample of your email (i
 
 - The IP of the service blocked for SPAM.
 - An original copy of the email(s) flagged as SPAM (you should be able to identify that with the **message ID** included in the ANTISPAM email). If no **message ID** is provided, simply send us a copy of the emails sent before receiving the alert. Please only provide the copy of the email flagged as SPAM.
-- The .EML file of the email provided, this should include the **header** and **footer** of the email. If you are not familiar with how to extract an .EML file, please consult the following guide: [Retrieving email headers](https://docs.ovh.com/au/en/emails/shared_mail_guide_to_view_email_headers/).
+- The .EML file of the email provided, this should include the **header** and **footer** of the email. If you are not familiar with how to extract an .EML file, please consult the following guide: [Retrieving email headers](/pages/web/emails/diagnostic_headers).
 
 Once the information is sent, our support team will communicate with Vade Secure for further analysis of the case.
 

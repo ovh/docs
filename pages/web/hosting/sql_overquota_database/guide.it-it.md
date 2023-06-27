@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Cosa fare quando il tuo database è saturo?"
-slug: database-overquota
 excerpt: "Come agire in caso di saturazione del database"
-section: Database
-order: 06
 updated: 2023-02-16
 ---
 
@@ -39,7 +36,7 @@ Questa guida ti mostra le operazioni da effettuare quando il tuo database condiv
 > Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/). OVH non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
 >
 
-Quando il database condiviso OVHcloud raggiunge la saturazione (**overquota**), i nostri robot ti avvertono via email all'indirizzo del [contatto "amministratore"](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/) del database. 
+Quando il database condiviso OVHcloud raggiunge la saturazione (**overquota**), i nostri robot ti avvertono via email all'indirizzo del [contatto "amministratore"](/pages/account/customer/managing_contacts) del database. 
 
 Una prima email viene inviata quando il tuo database ha consumato più di **80%** della sua capacità di storage. Una seconda email viene inviata quando **90%** di questa capacità di storage viene raggiunto.
 
@@ -61,7 +58,7 @@ Il primo step consiste nell'identificare le tavole voluminose presenti nel tuo d
 
 #### 1.1 - Connettersi al database tramite phpMyAdmin
 
-Recupera la password di accesso al tuo database direttamente nel file di configurazione del tuo sito Web. Esegui questa operazione utilizzando lo **step 1** della nostra guida su [modifica della password di un database](https://docs.ovh.com/it/hosting/modificare-password-database/).
+Recupera la password di accesso al tuo database direttamente nel file di configurazione del tuo sito Web. Esegui questa operazione utilizzando lo **step 1** della nostra guida su [modifica della password di un database](/pages/web/hosting/sql_change_password).
 
 Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action} nella barra di navigazione in alto nello schermo. Clicca su `Hosting`{.action} e seleziona l'hosting Web associato al tuo database condiviso OVHcloud. e clicca sulla scheda `Database`{.action}.
 
@@ -131,9 +128,9 @@ Consigliamo questa offerta per database voluminosi.
 
 Segui le nostre guide per spostare il contenuto del tuo database precedente verso la nuova:
 
-- [Esporta il tuo database esistente](https://docs.ovh.com/it/hosting/web_hosting_come_esportare_un_database/)
-- [Iniziare a utilizzare l'offerta Web Cloud Databasess](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/)
-- [Importare il tuo database precedente nella tua offerta Web Cloud Databases](https://docs.ovh.com/it/clouddb/ripristinare-importare-database/)
+- [Esporta il tuo database esistente](/pages/web/hosting/sql_database_export)
+- [Iniziare a utilizzare l'offerta Web Cloud Databasess](/pages/web/clouddb/starting_with_clouddb)
+- [Importare il tuo database precedente nella tua offerta Web Cloud Databases](/pages/web/clouddb/restore-import-on-database-server)
 
 #### Caso n. 2 - Una parte o l'insieme del contenuto della tavola voluminosa non è necessaria al funzionamento del tuo sito
 

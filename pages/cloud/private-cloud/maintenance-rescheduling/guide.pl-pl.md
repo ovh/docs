@@ -1,8 +1,6 @@
 ---
 title: "Przeniesienie zaplanowanej konserwacji do Hosted Private Cloud"
 excerpt: "Dowiedz się, jak przenieść zaplanowaną konserwację na usługę Hosted Private Cloud powered by VMware"
-slug: maintenance-rescheduling
-section: Funkcjonalności OVHcloud
 updated: 2022-11-30
 ---
 
@@ -58,7 +56,7 @@ Następnie kliknij przycisk `Zmień`{.action}, aby zatwierdzić zmiany.
 
 ### Za pośrednictwem API OVHcloud
 
-Zaloguj się do [interfejsu administracyjnego Twoich usług przez API](https://eu.api.ovh.com/). Zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/)".
+Zaloguj się do [interfejsu administracyjnego Twoich usług przez API](https://eu.api.ovh.com/). Zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z API OVHcloud](/pages/account/api/first-steps)".
 
 Wykonaj następujące wywołanie API:
 

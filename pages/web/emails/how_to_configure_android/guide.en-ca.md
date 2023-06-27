@@ -1,9 +1,6 @@
 ---
 title: Configuring an email address on Android via the Gmail app
-slug: configuration-android
 excerpt: Find out how to configure an email address on Android, via the Gmail app
-section: Configure on smartphone
-order: 02
 updated: 2018-03-12
 ---
 
@@ -97,6 +94,6 @@ OVHcloud also has a web application you can use to access your email account fro
 
 
 
-[Configuring an Exchange account on Android via the Gmail app](../../microsoft-collaborative-solutions/exchange-configure-android/){.external}.  
+[Configuring an Exchange account on Android via the Gmail app](/pages/web/microsoft-collaborative-solutions/how_to_configure_android){.external}.  
 
 Join our community of users on <https://community.ovh.com/en/>.

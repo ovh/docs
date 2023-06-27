@@ -1,9 +1,6 @@
 ---
 title: Getting started with managing volumes in the OpenStack API
-slug: get-started-with-openstack-api-volumes
 legacy_guide_number: 2071
-section: OpenStack
-order: 7
 updated: 2021-05-19
 ---
 
@@ -18,8 +15,8 @@ You can use the OpenStack API to generate various scripts in order to automate y
 
 ## Requirements
 
-- Preparing the environment to [use the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/) by installing *python-cinderclient* and *python-novaclient*
-- Setting the [OpenStack environment variables](../set-openstack-environment-variables/)
+- Preparing the environment to [use the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) by installing *python-cinderclient* and *python-novaclient*
+- Setting the [OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## Instructions
 

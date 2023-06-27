@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguracja konta Exchange w aplikacji Poczta na systemie Windows 10'
-slug: konfiguracja-poczta-windows-10
 excerpt: 'Dowiedz się, jak skonfigurować konto Exchange w aplikacji Poczta na urządzeniu z systemem Windows 10'
-section: 'Konfiguracja komputerowa'
-order: 03
 updated: 2018-04-04
 ---
 
@@ -63,6 +60,6 @@ OVHcloud oferuje również aplikację internetową [funkcje do pracy zespołowej
 
 ## Sprawdź również
 
-[Konfiguracja konta e-mail, zawartego w usłudze MX Plan lub usłudze hostingu, na urządzeniu w aplikacji Poczta na urządzeniu z systemem Windows 10](https://docs.ovh.com/pl/emails/konfiguracja-poczta-windows-10/){.external}
+[Konfiguracja konta e-mail, zawartego w usłudze MX Plan lub usłudze hostingu, na urządzeniu w aplikacji Poczta na urządzeniu z systemem Windows 10](/pages/web/emails/how_to_configure_windows_10){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguration von E-Mail Pro auf der Windows 10 Mail App'
-slug: mail-konfiguration-windows-10
 excerpt: 'Erfahren Sie hier, wie Sie Ihren E-Mail Pro Account auf der Mail App von Windows 10 einrichten'
-section: 'Konfiguration des E-Mail-Clients'
-order: 7
 updated: 2020-03-18
 ---
 
@@ -89,8 +86,8 @@ OVHcloud bietet Ihnen außerdem eine Webanwendung mit [kollaborativen Funktionen
 
 ## Weiterführende Informationen
 
-[Konfiguration Ihrer E-Mail-Adresse aus dem MX Plan Angebot oder einem Webhosting Angebot auf der Windows 10 Mail App](https://docs.ovh.com/de/emails/mail-konfiguration-windows-10/){.external}
+[Konfiguration Ihrer E-Mail-Adresse aus dem MX Plan Angebot oder einem Webhosting Angebot auf der Windows 10 Mail App](/pages/web/emails/how_to_configure_windows_10){.external}
 
-[Konfiguration von Exchange auf der Windows 10 Mail App](https://docs.ovh.com/de/microsoft-collaborative-solutions/mail-konfiguration-windows-10/){.external}
+[Konfiguration von Exchange auf der Windows 10 Mail App](/pages/web/microsoft-collaborative-solutions/how_to_configure_windows_10){.external}
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

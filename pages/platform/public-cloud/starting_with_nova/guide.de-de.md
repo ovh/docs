@@ -1,9 +1,6 @@
 ---
 title: Erste Schritte mit der OpenStack API
-slug: getting-started-openstack-api
 excerpt: Erfahren Sie hier, wie Sie Ihre Instanzen mithilfe des OpenStack Python Clients verwalten
-section: OpenStack
-order: 3
 updated: 2022-10-13
 ---
 
@@ -28,8 +25,8 @@ Sie können zum Beispiel die Erstellung zusätzlicher Instanzen starten, wenn Ih
 
 ## Voraussetzungen
 
-- [Umgebung für die Verwendung der OpenStack-API vorbereiten](../prepare_the_environment_for_using_the_openstack_api/)
-- [OpenStack Umgebungsvariablen einrichten](../set-openstack-environment-variables/)
+- [Umgebung für die Verwendung der OpenStack-API vorbereiten](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [OpenStack Umgebungsvariablen einrichten](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 
 ## In der praktischen Anwendung

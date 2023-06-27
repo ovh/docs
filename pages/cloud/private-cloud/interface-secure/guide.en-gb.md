@@ -1,8 +1,6 @@
 ---
 title: 'Using the secure interface'
-slug: secure-interface
 excerpt: 'Find out how to use the secure interface to confirm sensitive operations'
-section: 'OVHcloud services and options'
 updated: 2022-10-12
 ---
 
@@ -21,7 +19,7 @@ Through the secure interface, you can validate sensitive operations (such as cha
 
 ## Instructions
 
-The validation of "sensitive" operations from the secure interface is only possible for users with the **token validator** permission. The admin already has this privilege, since it is required to activate the **advanced security** option. Note that it is also possible to grant this permission to other users via the OVHcloud Control Panel. Refer to our [Introduction to the OVHcloud Private Cloud Control Panel](../control-panel-ovh-private-cloud/) documentation, if necessary.
+The validation of "sensitive" operations from the secure interface is only possible for users with the **token validator** permission. The admin already has this privilege, since it is required to activate the **advanced security** option. Note that it is also possible to grant this permission to other users via the OVHcloud Control Panel. Refer to our [Introduction to the OVHcloud Private Cloud Control Panel](/pages/cloud/private-cloud/manager_ovh_private_cloud) documentation, if necessary.
 
 From the secure interface, you can perform three operations. Please refer to the relevant section of this guide, depending on how you wish to proceed: 
 
@@ -50,7 +48,7 @@ This message contains:
 - the name of the operation that requires validation
 - the operation ID
 - validation token
-- a link to validate the operation (please note, if your phone is not connected to a network whose [IP is authorised](../control-panel-ovh-private-cloud/#security-tab), the page will not appear).
+- a link to validate the operation (please note, if your phone is not connected to a network whose [IP is authorised](/pages/cloud/private-cloud/manager_ovh_private_cloud#security-tab), the page will not appear).
 
 To validate the operation, log in via the link shown in the message. Then go to the `Operation Validation`{.action} section.
 

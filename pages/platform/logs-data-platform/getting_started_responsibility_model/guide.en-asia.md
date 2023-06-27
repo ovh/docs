@@ -1,9 +1,6 @@
 ---
 title: Logs Data Platform - Responsibility model
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
-slug: responsibility-model
-section: Get Started
-order: 3
 updated: 2023-01-26
 ---
 
@@ -190,6 +187,6 @@ For your information, a **Log forwarder agent** is considered as a tool (full so
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/asia/en/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

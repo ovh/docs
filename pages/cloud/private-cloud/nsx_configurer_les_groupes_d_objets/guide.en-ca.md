@@ -1,9 +1,6 @@
 ---
 title: How to set up NSX-v groups
-slug: setup-nsx-groups
 excerpt: Create groups to simplify rules management
-section: NSX-v
-order: 09
 updated: 2021-11-24
 ---
 
@@ -22,7 +19,7 @@ Leveraging object groups limits the number of necessary rules and simplifies man
 
 - being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ca/enterprise/products/hosted-private-cloud/) to receive login credentials
 - a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca))
-- a deployed [NSX Edge Services Gateway](https://docs.ovh.com/ca/en/private-cloud/how-to-deploy-an-nsx-edge-gateway/)
+- a deployed [NSX Edge Services Gateway](/pages/cloud/private-cloud/nsx_deploying_edge_gateway)
 
 ## Instructions
 

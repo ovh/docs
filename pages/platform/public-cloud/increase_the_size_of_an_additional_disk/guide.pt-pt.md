@@ -1,9 +1,6 @@
 ---
 title: "Aumentar o tamanho de um disco adicional"
 excerpt: "Saiba como aumentar o tamanho de um volume adicional e aumentar a sua partição principal"
-slug: aumentar_o_tamanho_de_um_disco_suplementar
-order: 6
-section: Armazenamento
 updated: 2022-03-29
 ---
 
@@ -22,13 +19,13 @@ Se atingiu a capacidade máxima do seu disco suplementar, pode adicionar armazen
 ## Requisitos
 
 - Uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) no seu projeto Public Cloud
-- Um [disco adicional](../criar_e_configurar_um_disco_suplementar_numa_instancia/) criado no seu projeto
+- Um [disco adicional](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance) criado no seu projeto
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 - Ter acesso administrativo (root) à sua instância através de SSH (Linux) ou RDP (Windows)
 
 ## Instruções
 
-Os passos seguintes pressupõem que já configurou um disco suplementar de acordo com as intrusões do [nosso guia](../criar_e_configurar_um_disco_suplementar_numa_instancia/).
+Os passos seguintes pressupõem que já configurou um disco suplementar de acordo com as intrusões do [nosso guia](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance).
 
 ### Modificar o tamanho do disco
 
@@ -166,6 +163,6 @@ O volume redimensionado inclui agora o espaço de disco suplementar.
 
 ## Quer saber mais?
 
-[Criar e configurar um disco suplementar numa instância](../criar_e_configurar_um_disco_suplementar_numa_instancia/)
+[Criar e configurar um disco suplementar numa instância](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

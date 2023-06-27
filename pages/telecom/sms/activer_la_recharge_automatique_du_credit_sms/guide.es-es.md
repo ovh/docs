@@ -1,8 +1,6 @@
 ---
 title: 'Crédito de SMS y recarga automática'
-slug: activar-la-recarga-automatica-de-credito-sms
 excerpt: 'Cómo gestionar el crédito de SMS en OVHcloud'
-section: 'Gestionar el servicio'
 updated: 2023-02-09
 ---
 
@@ -43,7 +41,7 @@ Para más información sobre el coste de envío en créditos de sus SMS en funci
 >
 > Un SMS solo puede contener una cantidad limitada de caracteres en función de la codificación. Para más información sobre la codificación y los caracteres admitidos, consulte la siguiente guía:
 > 
-> [Enviar SMS desde el área de cliente](https://docs.ovh.com/es/sms/enviar-sms-desde-el-area-de-cliente/)
+> [Enviar SMS desde el área de cliente](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client)
 >
 
 ### Recarga automática

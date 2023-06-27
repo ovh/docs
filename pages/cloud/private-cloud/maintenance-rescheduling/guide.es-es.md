@@ -1,8 +1,6 @@
 ---
 title: Desplazar un mantenimiento programado en su Hosted Private Cloud
 excerpt: "Esta guía explica cómo descubrir un mantenimiento programado en un servicio Hosted Private Cloud powered by VMware"
-slug: maintenance-rescheduling
-section: Funcionalidades de OVHcloud
 updated: 2022-11-30
 ---
 
@@ -58,7 +56,7 @@ Por último, haga clic en el botón `Editar`{.action} para aceptar los cambios.
 
 ### Desde la API de OVHcloud
 
-Conéctese al [panel de administración de sus servicios a través de la API](https://eu.api.ovh.com/). Para más información, consulte nuestra guía [Primeros pasos con las API de OVHcloud](https://docs.ovh.com/es/api/first-steps-with-ovh-api/).
+Conéctese al [panel de administración de sus servicios a través de la API](https://eu.api.ovh.com/). Para más información, consulte nuestra guía [Primeros pasos con las API de OVHcloud](/pages/account/api/first-steps).
 
 Ejecute la siguiente llamada a la API:
 

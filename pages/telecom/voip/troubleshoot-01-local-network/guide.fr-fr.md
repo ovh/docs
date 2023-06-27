@@ -1,9 +1,6 @@
 ---
 title: "Tutoriel - Diagnostic du réseau local"
-slug: diagnostic-reseau-local
 excerpt: "Découvrez comment effectuer des vérifications basiques sur votre réseau local pour favoriser le fonctionnement de la téléphonie VoIP OVHcloud"
-section: 'Diagnostic et dépannage'
-order: 01
 updated: 2022-05-04
 ---
 
@@ -113,14 +110,14 @@ Le défaut est alors probablement issu de la connexion à Internet. Contactez vo
 ##### **Si OVHcloud est votre fournisseur d'accès à Internet**
 
 Commencez par consulter la [carte des incidents](https://status.isp.ovh.net/) pour vérifier si un incident générique est en cours.<br>
-Si aucun incident générique n'est en cours dans votre zone géographique, consultez la section « Diagnostic et dépannage » de [nos guides xDSL / FTTH](https://docs.ovh.com/fr/xdsl/) pour effectuer un premier diagnostic de votre accès à Internet.<br>
+Si aucun incident générique n'est en cours dans votre zone géographique, consultez la section « Diagnostic et dépannage » de [nos guides xDSL / FTTH](/products/web-cloud-internet-internet-access) pour effectuer un premier diagnostic de votre accès à Internet.<br>
 Les guides suivants vous seront utiles :
 
-- [Dépanner son accès Internet fibre](https://docs.ovh.com/fr/xdsl/depanner-diagnostic-acces-internet-fibre/)
-- [Rétablir son service suite à une coupure complète ou partielle](https://docs.ovh.com/fr/xdsl/interruption-de-service/)
-- [Rétablir la synchronisation d’une connexion suite à une coupure](https://docs.ovh.com/fr/xdsl/retablir-synchronisation-suite-coupure/)
-- [Résoudre une interruption ou des lenteurs de navigation](https://docs.ovh.com/fr/xdsl/resoudre-interruption-lenteurs-navigation/)
-- [Redémarrer ou réinitialiser une box OVHcloud](https://docs.ovh.com/fr/xdsl/redemarrer-reinitialiser-modem-adsl-ovh/)
+- [Dépanner son accès Internet fibre](/pages/telecom/xdsl/ftth_fix_access)
+- [Rétablir son service suite à une coupure complète ou partielle](/pages/telecom/xdsl/interruption_de_service)
+- [Rétablir la synchronisation d’une connexion suite à une coupure](/pages/telecom/xdsl/reestablish-synchronization)
+- [Résoudre une interruption ou des lenteurs de navigation](/pages/telecom/xdsl/resoudre-interruption-lenteurs-navigation)
+- [Redémarrer ou réinitialiser une box OVHcloud](/pages/telecom/xdsl/restart_reboot_modem)
 
 #### L'attribution d'une adresse IP
 
@@ -140,7 +137,7 @@ Contactez votre prestataire informatique pour effectuer un diagnostic ou vérifi
 
 Si votre téléphone reste inopérant malgré les vérifications précédentes, vous devez alors effectuer un dépannage par le biais de votre espace client OVHcloud. 
 
-Suivez les instructions de [ce guide](https://docs.ovh.com/fr/voip/depannage-telephone-plug-and-phone/) pour effectuer ce dépannage.
+Suivez les instructions de [ce guide](/pages/telecom/voip/troubleshoot-02-fix-control-panel) pour effectuer ce dépannage.
 
 ## Aller plus loin <a name="gofurther"></a>
  

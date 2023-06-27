@@ -1,9 +1,6 @@
 ---
 title: "Comment utiliser les politiques IAM via l’API OVHcloud"
-slug: iam-policies-api
 excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs d'un compte OVHcloud"
-section: 'Utilisation avancée'
-order: 03
 updated: 2023-06-23
 ---
 
@@ -21,7 +18,7 @@ La gestion des accès d'OVHcloud est basée sur un système de gestion de « pol
 Dans le détail, une politique contient :
 
 - Une ou plusieurs **identités** ciblées par cette politique. 
-    - Il peut s'agir d'identifiants de compte, d'utilisateurs ou de groupes d'utilisateurs (comme ceux utilisés avec la [fédération d'identité](https://docs.ovh.com/ca/fr/customer/connect-saml-sso/)). 
+    - Il peut s'agir d'identifiants de compte, d'utilisateurs ou de groupes d'utilisateurs (comme ceux utilisés avec la [fédération d'identité](/products/customer-connect-saml-sso)). 
 - Une ou plusieurs **ressources** concernées par cette politique. 
     - Une ressource est un produit OVHcloud qui sera concerné par cette politique (un nom de domaine, un serveur Nutanix, un Load Balancer, etc.)
 - Une ou plusieurs **actions** autorisées ou exclues par cette politique. 
@@ -37,8 +34,8 @@ Par exemple, nous pouvons créer une politique pour donner à un utilisateur app
 
 Pour mettre en place une politique, vous aurez besoin des éléments suivants :
 
-- Un [compte client OVHcloud](https://docs.ovh.com/ca/fr/customer/creer-compte-ovhcloud/)
-- Savoir [gérer des comptes utilisateurs](https://docs.ovh.com/ca/fr/customer/gestion-utilisateurs/)
+- Un [compte client OVHcloud](/pages/account/customer/ovhcloud-account-creation)
+- Savoir [gérer des comptes utilisateurs](/pages/account/customer/ovhcloud-users-management)
 - Disposer de produits liés à votre compte OVHcloud (Load Balancer, nom de domaine, VPS, etc.)
 
 ## En pratique
@@ -310,11 +307,11 @@ Pour créer un nouveau groupe d'utilisateurs, appelez l'API avec le body suivant
 }
 ```
 
-Pour plus d'informations, consultez notre [documentation sur la gestion des utilisateurs](https://docs.ovh.com/ca/fr/customer/gestion-utilisateurs/).
+Pour plus d'informations, consultez notre [documentation sur la gestion des utilisateurs](/pages/account/customer/ovhcloud-users-management).
 
 #### Avec une connexion SSO active
 
-Si la fédération d'identité est activée via la [connexion SSO](https://docs.ovh.com/ca/fr/customer/connect-saml-sso/), les politiques s'appliquent uniquement aux groupes d'utilisateurs, comme décrit dans la section précédente.
+Si la fédération d'identité est activée via la [connexion SSO](/products/customer-connect-saml-sso), les politiques s'appliquent uniquement aux groupes d'utilisateurs, comme décrit dans la section précédente.
 
 ### Ressources
 

@@ -1,7 +1,5 @@
 ---
 title: Authenticated Composer repositories
-slug: composer-auth
-section: Php
 updated: 2022-06-02
 ---
 
@@ -13,7 +11,7 @@ updated: 2022-06-02
 Some PHP projects may need to use a private, third party Composer repository in addition to the public Packagist.org repository. Often, such third party repositories require authentication in order to download packages. These credentials shouldn't be located in the Git repository source code for security reasons.
 
 
-To handle that situation, you can define a `env:COMPOSER_AUTH` [project variable](../../development-variables/#create-project-variables) which allows you to set up authentication as an environment variable. The contents of the variable should be a JSON formatted object containing an `http-basic` object (see [composer-auth specifications](https://getcomposer.org/doc/03-cli.md#composer-auth)).
+To handle that situation, you can define a `env:COMPOSER_AUTH` [project variable](/pages/web/web-paas/development-variables#create-project-variables) which allows you to set up authentication as an environment variable. The contents of the variable should be a JSON formatted object containing an `http-basic` object (see [composer-auth specifications](https://getcomposer.org/doc/03-cli.md#composer-auth)).
 
 The advantage is that you can control who in your team has access to those variables.
 
@@ -36,7 +34,7 @@ For this example, consider that there are several packages we want to install fr
 
 Set the Composer authentication by adding a project level variable called `env:COMPOSER_AUTH` as JSON and available only during build time.
 
-That can be done through the [management console](../../administration-web) or via the command line, like so:
+That can be done through the [management console](/pages/web/web-paas/administration-web) or via the command line, like so:
 
 ```bash
 webpaas variable:create --level project --name env:COMPOSER_AUTH \
@@ -61,6 +59,6 @@ In that case, Composer will be able to authenticate and download dependencies fr
 
 ## Private repository hosting
 
-Typically, a private dependency will be hosted in a private Git repository.  While Web PaaS supports [private repositories](../../development-private-repository) for the site itself, that doesn't help for pulling in third party dependencies from private repositories unless they have the same SSH keys associated with them.
+Typically, a private dependency will be hosted in a private Git repository.  While Web PaaS supports [private repositories](/pages/web/web-paas/development-private-repository) for the site itself, that doesn't help for pulling in third party dependencies from private repositories unless they have the same SSH keys associated with them.
 
 Fortunately, most private Composer tools (including Satis, Toran Proxy, and [Private Packagist](https://packagist.com/)) mirror tagged releases of dependencies and serve them directly rather than hitting the Git repository.  Therefore as long as your dependencies specify tagged releases there should be no need to authenticate against a remote Git repository and there should be no authentication issue.

@@ -1,11 +1,8 @@
 ---
 title: Python - Analyzing most used words in lyrics with Apache Spark
-slug: wordcount-spark
 excerpt: Couting occurences of words in a file is a basic example about how using Apache Spark. Let's find out how !
-section: Tutorials
-order: 2
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/data-processing/wordcount-spark/'
+    canonical: '/pages/platform/data-processing/41_TUTORIAL_wordcount'
 updated: 2021-01-20
 ---
 
@@ -26,8 +23,8 @@ At the end of the tutorial, you will succeed to read CSV file from OVHcloud Obje
 ## Requirements
 - Access to the [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - An OVHcloud account
-- A cloud project in your OVHcloud account (see [How to create a cloud project](https://docs.ovh.com/pl/public-cloud/create_a_public_cloud_project/) for details.)
-- Data Processing activated (see [How to activate the Data Processing](../activation){.external} for details.)
+- A cloud project in your OVHcloud account (see [How to create a cloud project](/pages/platform/public-cloud/create_a_public_cloud_project) for details.)
+- Data Processing activated (see [How to activate the Data Processing](/pages/platform/data-processing/30_HOWTO_activate_project){.external} for details.)
 
 
 ## Step 1: Download dataset
@@ -235,7 +232,7 @@ Our code is now complete, let's now use OVHcloud Data Processing to benefit from
 ## Step 3 : Create an environment.yml file
 
 All Python jobs launched via Data Processing require a conda environment.yml file in order to manage libraries used and versions.
-You can find how to generate them here: [How to submit a Python job on the Data Processing platform using the OVHcloud manager](../job-submit-form){.external}
+You can find how to generate them here: [How to submit a Python job on the Data Processing platform using the OVHcloud manager](/pages/platform/data-processing/32_HOWTO_fill-job-submit-form){.external}
 
 Both files must be placed in the same object container.
 
@@ -255,7 +252,7 @@ dependencies:
 
 You are now ready to submit this job.
 
-A detailed version about how to deploy a job in Python is explained on the guide [How to submit a job in Python](../submit-python){.external}.
+A detailed version about how to deploy a job in Python is explained on the guide [How to submit a job in Python](/pages/platform/data-processing/31_HOWTO_submit-python-ui){.external}.
 
 Briefly, inside OVHcloud Data Processing control panel, click on "start a new job" then:
 

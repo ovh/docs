@@ -1,8 +1,6 @@
 ---
 title: Configura un software mirror (RAID) su Windows
-slug: dedicated-servers-mirror-soft-raid-windows
 excerpt: "Scopri come ricostruire la configurazione dei dischi del tuo server dopo la sostituzione del disco"
-section: RAID e dischi
 updated: 2023-03-28
 ---
 
@@ -70,7 +68,7 @@ DISKPART> list volume
 
 ```
 
-In questo esempio, il `Disk 1` è un disco sostitutivo installato per sostituire il `Disk M0` difettoso che era stato precedentemente [fisicamente rimosso](https://docs.ovh.com/it/dedicated/sostituzione-disco/).
+In questo esempio, il `Disk 1` è un disco sostitutivo installato per sostituire il `Disk M0` difettoso che era stato precedentemente [fisicamente rimosso](/pages/cloud/dedicated/disk_replacement).
 
 
 > [!primary]
@@ -200,7 +198,7 @@ DISKPART> list volume
  
 ```
 
-In questo esempio, il `Disk 1` è un disco sostitutivo installato per sostituire il `Disk M0` difettoso che era stato precedentemente [fisicamente rimosso](https://docs.ovh.com/it/dedicated/sostituzione-disco/).
+In questo esempio, il `Disk 1` è un disco sostitutivo installato per sostituire il `Disk M0` difettoso che era stato precedentemente [fisicamente rimosso](/pages/cloud/dedicated/disk_replacement).
 
 > [!primary]
 >

@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguration Ihrer E-Mail-Adresse in Android über die Gmail-App'
-slug: konfiguration-android
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie Ihre MX Plan Adresse in Android über die Gmail-App einrichten.'
-section: 'E-Mail Clients'
-order: 9
 updated: 2018-03-12
 ---
 
@@ -96,8 +93,8 @@ Eine OVHcloud Webanwendung, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-A
 
 ## Weiterführende Informationen
 
-[Konfiguration Ihres E-Mail Pro Accounts in Android über die Gmail-App](https://docs.ovh.com/de/emails-pro/konfiguration-android){.external}
+[Konfiguration Ihres E-Mail Pro Accounts in Android über die Gmail-App](/pages/web/emails-pro/how_to_configure_android){.external}
 
-[Konfiguration Ihres Exchange Accounts in Android über die Gmail-App](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_konfiguration_in_android/){.external}
+[Konfiguration Ihres Exchange Accounts in Android über die Gmail-App](/pages/web/microsoft-collaborative-solutions/how_to_configure_android){.external}
 
 Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

@@ -1,9 +1,6 @@
 ---
 title: Replacing OVHgateway
-slug: software-gateway-replacement
 excerpt: Find out how to replace the OVHgateway with another manageable virtual machine
-section: Network & Security
-order: 11
 updated: 2022-12-05
 ---
 
@@ -43,7 +40,7 @@ In our guide, we will replace this gateway with the network operating system **p
 
 Download an ISO image for the **pfSense** installation from this link: [Downloading pfSense](https://www.pfsense.org/download/){.external}.
 
-Using [this documentation](https://docs.ovh.com/gb/en/nutanix/image-import/), add the **pfSense ISO** image to your Nutanix cluster.
+Using [this documentation](/pages/cloud/nutanix/05-image-import), add the **pfSense ISO** image to your Nutanix cluster.
 
 <a name="createvmpfsense"></a>
 
@@ -58,7 +55,7 @@ Create a virtual machine with these settings:
 - **CPU**: `2 vCPU`
 - **Network**: `2 network cards, one on VLAN 0 (base) and the other on VLAN 1 (infra)`
 
-You can use [our guide on virtual machine management](https://docs.ovh.com/gb/en/nutanix/virtual-machine-management/) to create this virtual machine.
+You can use [our guide on virtual machine management](/pages/cloud/nutanix/06-virtual-machine-management) to create this virtual machine.
 
 ![Create VM 01](images/00-createvm01.png){.thumbnail}
 
@@ -387,7 +384,7 @@ We will create a new subnet in VLAN 2 with an address range in 192.168.2.0/24 an
 
 Log in to Prism Central to make these changes:
 
-Use the [Isolating management machines from production](https://docs.ovh.com/gb/en/nutanix/nutanix-isolate-management-machines/) guide to create a new VLAN on your Nutanix cluster with these settings:
+Use the [Isolating management machines from production](/pages/cloud/nutanix/27-isolate-management-vm) guide to create a new VLAN on your Nutanix cluster with these settings:
 
 - **VLAN name**: `Production`
 - **VLAN number**: `2`

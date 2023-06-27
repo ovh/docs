@@ -1,12 +1,9 @@
 ---
 title: Supprimer un serveur hôte
-slug: suppression-serveur-hote
 routes:
-    canonical: 'https://docs.ovh.com/ca/fr/private-cloud/suppression-serveur-hote/'
+    canonical: '/pages/cloud/private-cloud/delete_host'
 excerpt: "Découvrez comment supprimer un serveur hôte d'une infrastructure Managed Bare Metal"
 legacy_guide_number: '1442308'
-section: Fonctionnalités OVHcloud
-order: 08
 updated: 2021-03-19
 ---
 

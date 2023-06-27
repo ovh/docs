@@ -1,9 +1,6 @@
 ---
 title: 'Installing Ghost on a Cloud Web hosting plan'
-slug: install-ghost-cloud-web
 excerpt: 'Find out how to set up a blog with the Ghost platform on Cloud Web'
-section: Tutorials
-order: 01
 updated: 2022-05-04
 ---
 
@@ -53,7 +50,7 @@ In the window that pops up, enter the information requested with the values show
 |Application environment|production|
 |Application launch script|server.js|
 
-Once you have entered this information, click `Confirm`{.action}. If you would like further information on managing runtime environments, please refer to our guide on [Managing Cloud Web runtime software applications](https://docs.ovh.com/gb/en/cloud-web/manage-cloud-web-runtime-software-applications/){.external}.
+Once you have entered this information, click `Confirm`{.action}. If you would like further information on managing runtime environments, please refer to our guide on [Managing Cloud Web runtime software applications](/pages/web/cloud-web/manage-runtime){.external}.
 
 ![ghostcloudweb](images/ghost-cloud-web-step2.png){.thumbnail}
 
@@ -83,7 +80,7 @@ Enter the information requested in the pop-up window, and adapt the information 
 |Root folder|ghost|
 |Runtime environment|NodeJS 8|
 
-From the additional options, select the ones you would like to enable. Once you have entered the information, click `Next`{.action}, then finish the operation. This addition may take up to an hour. However, modifying the DNS configuration may require up to 24 hours to take full effect. If you would would like further information on managing multisites, read our guide to [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external}.
+From the additional options, select the ones you would like to enable. Once you have entered the information, click `Next`{.action}, then finish the operation. This addition may take up to an hour. However, modifying the DNS configuration may require up to 24 hours to take full effect. If you would would like further information on managing multisites, read our guide to [Hosting multiple websites on your Web Hosting plan](/pages/web/hosting/multisites_configure_multisite){.external}.
 
 ![ghostcloudweb](images/ghost-cloud-web-step4.png){.thumbnail}
 
@@ -267,13 +264,13 @@ Step by step, we have covered how to install a Node.js application on a Cloud We
 
 ## Go further
 
-[Migrating your website and emails to OVHcloud](https://docs.ovh.com/ie/en/hosting/migrating-website-to-ovh/){.external}
+[Migrating your website and emails to OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-[Publishing a website on your Web Hosting space](https://docs.ovh.com/ie/en/hosting/web_hosting_how_to_get_my_website_online/){.external}
+[Publishing a website on your Web Hosting space](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
-[Setting up your website with 1-click modules](https://docs.ovh.com/ie/en/hosting/web_hosting_web_hosting_modules/){.external}
+[Setting up your website with 1-click modules](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/ie/en/hosting/multisites-configuring-multiple-websites/){.external}
+[Hosting multiple websites on your Web Hosting plan](/pages/web/hosting/multisites_configure_multisite){.external}
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
 

@@ -1,8 +1,6 @@
 ---
 title: 'Udostępnianie plików za pomocą narzędzia Plik'
 excerpt: 'Dowiedz się, jak używać narzędzia Plik do wysyłania plików innym osobom'
-slug: plik
-section: Narzędzia
 updated: 2022-02-14
 ---
 
@@ -20,7 +18,7 @@ Internetowe narzędzie [Plik](https://plik.ovhcloud.com) umożliwia współdziel
 
 ## Wymagania początkowe
 
-- Posiadanie [konta OVHcloud](https://docs.ovh.com/pl/customer/tworzenie-konta-ovhcloud/)
+- Posiadanie [konta OVHcloud](/pages/account/customer/ovhcloud-account-creation)
 
 ## W praktyce
 
@@ -39,7 +37,7 @@ Wpisz dane do logowania i kliknij przycisk `Log in`{.action}, aby kontynuować.
 
 > [!primary]
 >
-> Jeśli aktywowałeś [weryfikację dwuetapową](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/) na Twoim koncie, wpisz kod dostarczony w metodzie uwierzytelniania, którą określiłeś na Twoim koncie. 
+> Jeśli aktywowałeś [weryfikację dwuetapową](/pages/account/customer/secure-ovhcloud-account-with-2fa) na Twoim koncie, wpisz kod dostarczony w metodzie uwierzytelniania, którą określiłeś na Twoim koncie. 
 
 ### Pobierz pliki
 

@@ -1,8 +1,6 @@
 ---
 title: 'Checking and blocking the L1TF vulnerability'
-slug: check-block-l1tf-vulnerability
 excerpt: 'Find out how to block the L1TF (L1 Terminal Fault) vulnerability'
-section: Security
 updated: 2019-02-26
 ---
 
@@ -58,7 +56,7 @@ This procedure is divided into three distinct steps.
 
 ### Step 1: Update.
 
-The vCenter update is managed by OVHcloud, however, it is your responsibility to install the patch for ESXi hosts. This is available in the [the Update Manager](https://docs.ovh.com/gb/en/private-cloud/use_vmware_update_manager/){.external-link}.
+The vCenter update is managed by OVHcloud, however, it is your responsibility to install the patch for ESXi hosts. This is available in the [the Update Manager](/pages/cloud/private-cloud/vmware_update_manager){.external-link}.
 
 You will find the list of patches for ESXi hosts in [this document](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
 

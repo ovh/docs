@@ -1,8 +1,5 @@
 ---
 title: Set up your local development environment
-slug: development-local
-section: Development
-order: 5
 updated: 2021-05-11
 ---
 
@@ -14,7 +11,7 @@ updated: 2021-05-11
 While Web PaaS is great as a tool for hosting an application during both development and production, it's naturally not the ideal place to edit code.  You can't, in fact, as the file system is read-only (as it should be). The proper place to edit your code is on your computer.
 
 
-You must have an [SSH key](../development-tools#ssh) already configured on your account, and have both [Git](../development-tools#git) and the [Web PaaS CLI](../development-cli) installed before continuing.
+You must have an [SSH key](/pages/web/web-paas/development-tools#ssh) already configured on your account, and have both [Git](/pages/web/web-paas/development-tools#git) and the [Web PaaS CLI](/pages/web/web-paas/development-cli) installed before continuing.
 
 ## Download the code
 
@@ -73,8 +70,8 @@ If that is undesireable, a local virtual machine will let you create an enclosed
 
 ## Running the code
 
-Web PaaS supports whatever local development environment you wish to use.  There is no dependency on any particular tool so if you already have a local development workflow you're comfortable with you can keep using it without changes.  That's the "[untethered](untethered)" option.
+Web PaaS supports whatever local development environment you wish to use.  There is no dependency on any particular tool so if you already have a local development workflow you're comfortable with you can keep using it without changes.  That's the "[untethered](/pages/web/web-paas/development-local/untethered)" option.
 
-For quick changes, you can also run your code locally but use the services hosted on Web PaaS.  That is, your site is "[tethered](tethered)" to Web PaaS.  While this approach requires installing less on your system it can be quite slow as all communication with the database or cache server will need to travel from your computer to Web PaaS's servers.
+For quick changes, you can also run your code locally but use the services hosted on Web PaaS.  That is, your site is "[tethered](/pages/web/web-paas/development-local/tethered)" to Web PaaS.  While this approach requires installing less on your system it can be quite slow as all communication with the database or cache server will need to travel from your computer to Web PaaS's servers.
 
 

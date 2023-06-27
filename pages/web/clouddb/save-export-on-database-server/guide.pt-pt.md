@@ -1,9 +1,6 @@
 ---
 title: 'Backup e exportação de uma base de dados no servidor de bases de dados'
-slug: backup-exportacao-base-de-dados
 excerpt: 'Saiba como fazer o backup e a exportação de uma base de dados'
-section: 'Configuração'
-order: 04
 updated: 2023-02-15
 ---
 
@@ -68,7 +65,7 @@ Salvaguardar e exportar uma base de dados fora da Área de Cliente
 
 ##### 1.1\. Exportar uma base MySQL ou MariaDB a partir do phpMyAdmin OVHcloud 
 
-Para exportar uma base de dados diretamente a partir do phpMyAdmin, antes de mais tem de se conectar a ela. Se necessário, consulte o guia [«Conexão a uma base de dados do servidor de bases de dados»](../conexao-base-de-dados-servidor-bdd/){.external}.
+Para exportar uma base de dados diretamente a partir do phpMyAdmin, antes de mais tem de se conectar a ela. Se necessário, consulte o guia [«Conexão a uma base de dados do servidor de bases de dados»](/pages/web/clouddb/connecting-to-database-on-database-server){.external}.
 
 Depois de se conectar ao phpMyAdmin, clique no nome da base de dados que deseja exportar e, de seguida, clique no separador `Exportar`{.action} ao alto.
 
@@ -93,7 +90,7 @@ mysqldump --host=servidor --user=utilizador --port=port --password=password nome
 
 > [!warning]
 >
-> - De modo a evitar acessos indesejados a este ficheiro com dados sensíveis, proteja-o recorrendo ao guia [Using .htaccess to password protect a directory on your website](https://docs.ovh.com/pt/hosting/partilhado-htaccess-como-protecao-acesso-a-um-diretorio-por-autenticacao/){.external}.
+> - De modo a evitar acessos indesejados a este ficheiro com dados sensíveis, proteja-o recorrendo ao guia [Using .htaccess to password protect a directory on your website](/pages/web/hosting/htaccess_protect_directory_by_password){.external}.
 > - Esta operação só é possível a partir de um alojamento partilhado OVHcloud.
 >
 
@@ -118,7 +115,7 @@ pg_dump --host=servidor --port=port --user=utilizador --password=password nome_d
 
 > [!warning]
 >
-> - De modo a evitar acessos indesejados a este ficheiro com dados sensíveis, proteja-o recorrendo ao guia [Using .htaccess to password protect a directory on your website](https://docs.ovh.com/pt/hosting/partilhado-htaccess-como-protecao-acesso-a-um-diretorio-por-autenticacao/){.external}.
+> - De modo a evitar acessos indesejados a este ficheiro com dados sensíveis, proteja-o recorrendo ao guia [Using .htaccess to password protect a directory on your website](/pages/web/hosting/htaccess_protect_directory_by_password){.external}.
 > - Esta operação só é possível a partir de um alojamento partilhado OVHcloud.
 >
 

@@ -1,9 +1,6 @@
 ---
 title: "Domainnamen zu Ihrem Exchange Dienst hinzufügen"
-slug: domain-zu-exchange-hinzufugen
 excerpt: "Erfahren Sie hier, wie Sie einen Domainnamen zu Ihrer Exchange Lösung hinzufügen"
-section: 'Erste Schritte mit Exchange'
-order: 04
 updated: 2023-06-14
 ---
 
@@ -21,7 +18,7 @@ Um die in Ihrer Exchange Lösung enthaltenen Accounts nutzen zu können, benöti
 
 - Sie verfügen über einen [Exchange Dienst](https://www.ovhcloud.com/de/emails/hosted-exchange/) oder [E-Mail Pro Dienst](https://www.ovhcloud.com/de/emails/email-pro/).
 - Sie verfügen über einen oder mehrere Domainnamen.
-- Sie haben administrativen Zugang zur Verwaltung der Domainkonfiguration (zum [Bearbeiten der DNS Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/)).
+- Sie haben administrativen Zugang zur Verwaltung der Domainkonfiguration (zum [Bearbeiten der DNS Zone](/pages/web/domains/dns_zone_edit)).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
@@ -95,7 +92,7 @@ Sobald die Domain als assoziierte Domain hinzugefügt ist, können Sie in der an
 
 - **Wenn Sie beim Hinzufügen der Domain eine automatische Konfiguration gewählt haben**: Warten Sie einige Minuten, bis die Änderungen im OVHcloud Kundencenter übernommen sind.
 
-- **Wenn Sie eine nicht von OVHcloud verwaltete Domain angegeben haben**: Klicken Sie auf das rote Diagnosefeld, um die notwendigen Änderungen anzuzeigen. Verwendet die Domain nicht die OVHcloud Konfiguration (die DNS-Server von OVHcloud), nehmen Sie die notwendigen Änderungen in dem Verwaltungsinterface vor, dass Sie für die Konfiguration Ihrer Domain verwenden. Zur Bearbeitung eines CNAME-Eintrags finden Sie weitere Informationen in [dieser Dokumentation](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_einen_cname_eintrag_hinzufugen/){.external}.
+- **Wenn Sie eine nicht von OVHcloud verwaltete Domain angegeben haben**: Klicken Sie auf das rote Diagnosefeld, um die notwendigen Änderungen anzuzeigen. Verwendet die Domain nicht die OVHcloud Konfiguration (die DNS-Server von OVHcloud), nehmen Sie die notwendigen Änderungen in dem Verwaltungsinterface vor, dass Sie für die Konfiguration Ihrer Domain verwenden. Zur Bearbeitung eines CNAME-Eintrags finden Sie weitere Informationen in [dieser Dokumentation](/pages/web/microsoft-collaborative-solutions/exchange_dns_cname){.external}.
 
 > [!primary]
 >
@@ -114,7 +111,7 @@ Zur Erinnerung: Alle für Ihren Dienst erstellten Adressen können alle Adressen
 
 Nachdem Sie Ihre Accounts fertig eingerichtet haben, können Sie diese nun verwenden. OVHcloud stellt Ihnen hierfür **Webmail** zur Verfügung, das über die Adresse <https://www.ovh.com/de/mail/> erreichbar ist. Wenn Sie einen Drittanbieter-Client für Ihre E-Mail-Accounts verwenden, stellen Sie sicher, dass die Software mit dem Dienst kompatibel ist.
 
-Falls Sie Hilfe bei der Einrichtung Ihres E-Mail-Accounts in einem E-Mail-Client oder auf einem Gerät (Smartphone, Tablet) benötigen oder Fragen zu den Funktionen Ihres E-Mail-Dienstes haben, lesen Sie unsere Anleitungen zu [Exchange](https://docs.ovh.com/de/microsoft-collaborative-solutions/) oder [E-Mail Pro](https://docs.ovh.com/de/emails-pro/).
+Falls Sie Hilfe bei der Einrichtung Ihres E-Mail-Accounts in einem E-Mail-Client oder auf einem Gerät (Smartphone, Tablet) benötigen oder Fragen zu den Funktionen Ihres E-Mail-Dienstes haben, lesen Sie unsere Anleitungen zu [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) oder [E-Mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
 Sie können Outlook Lizenzen über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und Office 365 Lizenzen auf der Webseite <https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/> erwerben. Wir empfehlen Ihnen, eine dieser Lösungen zu verwenden, falls Sie den Outlook E-Mail-Client oder andere Software der MS Office Suite nutzen möchten.
 
@@ -124,7 +121,7 @@ Wenn Sie eine Domain aus Ihrem Exchange oder E-Mail Pro Dienst entfernen möchte
 
 > [!warning]
 >
-> Bevor Sie E-Mail-Accounts löschen, überprüfen Sie, dass diese nicht verwendet werden. Eine Sicherung dieser Accounts kann notwendig sein. Wenn nötig lesen Sie die Anleitung ["Ihre E-Mail-Adresse manuell migrieren"](https://docs.ovh.com/de/emails/email-adressen-manuell-migrieren/), in der beschrieben wird, wie Sie Daten eines Accounts über Ihr Kundencenter oder ein E-Mail-Programm exportieren.
+> Bevor Sie E-Mail-Accounts löschen, überprüfen Sie, dass diese nicht verwendet werden. Eine Sicherung dieser Accounts kann notwendig sein. Wenn nötig lesen Sie die Anleitung ["Ihre E-Mail-Adresse manuell migrieren"](/pages/web/emails/manual_email_migration), in der beschrieben wird, wie Sie Daten eines Accounts über Ihr Kundencenter oder ein E-Mail-Programm exportieren.
 
 Gehen Sie zum Tab `Assoziierte Domains`{.action} Ihres Dienstes. In der Tabelle gibt die `Spalte` Accounts die Anzahl der Accounts an, die Ihren Domainnamen zugewiesen sind.
 
@@ -150,7 +147,7 @@ Klicken Sie im Tab `Assoziierte Domains`{.action} Ihres Dienstes auf `...`{.acti
 
 [CNAME-Eintrag zu einer assoziierten Domain hinzufügen](/pages/web/microsoft-collaborative-solutions/exchange_dns_cname)
 
-[OVHcloud DNS-Zone bearbeiten](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/)
+[OVHcloud DNS-Zone bearbeiten](/pages/web/domains/dns_zone_edit)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

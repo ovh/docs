@@ -1,8 +1,6 @@
 ---
 title: "API v2 OVHcloud - Principes de fonctionnement"
-slug: api-v2
 excerpt: "Découvrez les nouveaux principes d'exposition et de consommation liés à l'API v2 OVHcloud"
-section: APIv6 OVHcloud
 updated: 2023-04-17
 ---
 

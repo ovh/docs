@@ -1,11 +1,8 @@
 ---
 title: MySQL - Configurez votre instance MySQL pour accepter les connexions entrantes (EN)
 excerpt: Find out how to configure your MySQL instance to accept incoming connections
-slug: mysql/configure-mysql-instance
-section: MySQL - Guides
-order: 020
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mysql/configure-mysql-instance/'
+    canonical: '/pages/platform/databases/mysql_07_prepare_for_incoming_connections'
 updated: 2022-03-08
 ---
 
@@ -21,7 +18,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 - A [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- A MySQL database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/fr/publiccloud/databases/getting-started/) can help you to meet this requirement)
+- A MySQL database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
 
 ## Instructions
 

@@ -1,9 +1,6 @@
 ---
 title: Utilizar VMware Update Manager
 excerpt: Utilice la herramienta de VMware para mantener actualizados sus hosts.
-slug: utilizar_vmware_update_manager
-section: Funcionalidades de VMware vSphere
-order: 11
 updated: 2021-12-09
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Getting started with Public Cloud Databases via Terraform
 excerpt: Find out how to order and manage your Public Cloud managed database service using Terraform
-slug: order-terraform
-section: General guides
-order: 020
 updated: 2022-10-19
 ---
 
@@ -18,7 +15,7 @@ Public Cloud managed databases allow you to focus on building and deploying clou
 ## Requirements
 
 - [Terraform >= 0.17.1](https://www.terraform.io/) installed
-- Access to the [OVHcloud API](https://ca.api.ovh.com/) (create your credentials by consulting [this guide](https://docs.ovh.com/sg/en/api/first-steps-with-ovh-api/))
+- Access to the [OVHcloud API](https://ca.api.ovh.com/) (create your credentials by consulting [this guide](/pages/account/api/first-steps))
 - A [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account
 
 ## Instructions
@@ -37,7 +34,7 @@ The "OVH provider" needs to be configured with a set of credentials:
 
 Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs. 
 
-In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](https://docs.ovh.com/sg/en/api/first-steps-with-ovh-api/) tutorial.
+In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](/pages/account/api/first-steps) tutorial.
 
 Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://ca.api.ovh.com/createToken?GET=/cloud/project/*/database/*&POST=/cloud/project/*/database/*&PUT=/cloud/project/*/database/*&DELETE=/cloud/project/*/database/*) with the following rights:
 
@@ -258,11 +255,11 @@ In this guide, we explained how to deploy a MongoDB service but you can find exa
 
 ## Go further
 
-[MongoDB capabilities](https://docs.ovh.com/sg/en/publiccloud/databases/mongodb/capabilities/)
+[MongoDB capabilities](/pages/platform/databases/mongodb_01_concept_capabilities)
 
-[Managing a MongoDB service from the OVHcloud Control Panel](https://docs.ovh.com/sg/en/publiccloud/databases/mongodb/managing-service/)
+[Managing a MongoDB service from the OVHcloud Control Panel](/pages/platform/databases/mongodb_02_manage_control_panel)
 
-[Configuring vRack for Public Cloud](https://docs.ovh.com/sg/en/public-cloud/public-cloud-vrack/)
+[Configuring vRack for Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack)
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 

@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguracja OVHcloud Link Aggregation w Panelu klienta'
-slug: ola-manager
 excerpt: 'Dowiedz się, jak włączyć OVHcloud Link Aggregation w Panelu klienta'
-section: 'Poziom zaawansowany'
-order: 1
 updated: 2022-05-18
 ---
 
@@ -49,11 +46,11 @@ Upewnij się, czy Twoje dwa interfejsy, czyli grupy interfejsów, są właściwi
 
 Zakończenie operacji może potrwać kilka minut. Kolejny krok to powiązanie interfejsów w systemie operacyjnym. Szczegółowe informacje na temat konfiguracji znajdziesz w przewodnikach:
 
-[Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Debianie 9](../ola-debian9/)
+[Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Debianie 9](/pages/cloud/dedicated/ola-enable-debian9)
 
-[Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation CentOS 7](../ola-centos7/)
+[Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation CentOS 7](/pages/cloud/dedicated/ola-enable-centos7)
 
-[Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Windows Server 2019](../ola-w2k19/)
+[Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Windows Server 2019](/pages/cloud/dedicated/ola-enable-w2k19)
 
 ### Przywróć OLA do wartości domyślnych
 
@@ -65,10 +62,10 @@ Operacja może zająć kilka minut.
 
 ## Sprawdź również
 
-[Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Debianie 9](../ola-debian9/)
+[Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Debianie 9](/pages/cloud/dedicated/ola-enable-debian9)
 
-[Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation CentOS 7](../ola-centos7/)
+[Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation CentOS 7](/pages/cloud/dedicated/ola-enable-centos7)
 
-[Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Windows Server 2019](../ola-w2k19/)
+[Konfiguracja karty sieciowej (NIC) dla OVHcloud Link Aggregation w Windows Server 2019](/pages/cloud/dedicated/ola-enable-w2k19)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

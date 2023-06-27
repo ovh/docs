@@ -1,9 +1,6 @@
 ---
 title: Increasing the size of an additional disk
 excerpt: 'Find out how to increase the size of an additional volume and enlarge its main partition'
-slug: increase_the_size_of_an_additional_disk
-section: Storage
-order: 2
 updated: 2022-03-29
 ---
 
@@ -18,13 +15,13 @@ If you have reached the maximum capacity on your additional disk, you can add mo
 ## Requirements
 
 - A [Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/) in your Public Cloud project
-- An [additional disk](../create_and_configure_an_additional_disk_on_an_instance/) created in your project
+- An [additional disk](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance) created in your project
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 - Administrative (root) access to your instance via SSH (Linux) or RDP (Windows)
 
 ## Instructions
 
-The following steps presume that you have configured an additional disk according to [our guide](../create_and_configure_an_additional_disk_on_an_instance/).
+The following steps presume that you have configured an additional disk according to [our guide](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance).
 
 ### Modifying the size of the disk
 
@@ -160,6 +157,6 @@ The resized volume now includes the additional disk space.
 
 ## Go further
 
-[Creating and configuring an additional disk on an instance](../create_and_configure_an_additional_disk_on_an_instance)
+[Creating and configuring an additional disk on an instance](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: "Configuring a secure Load Balancer with Let's Encrypt"
-slug: load-balancer-with-letsencrypt
 excerpt: "Discover how to configure a secure Public Cloud Load Balancer with Let's Encrypt"
-section: Tutorials
-order: 01
 updated: 2022-11-02
 ---
 
@@ -20,17 +17,17 @@ After setting up your Load Balancer, you can configure it with a certificate in 
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account
-- [Preparing your environment for using the OpenStack API](https://docs.ovh.com/sg/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/))
+- [Preparing your environment for using the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api))
 - [OpenStack Octavia client](https://docs.openstack.org/python-octaviaclient/latest/install/index.html) and [OpenStack Barbican](https://docs.openstack.org/python-barbicanclient/latest/install/index.html) set up
 - A Load Balancer running in your project
 
-If you are not yet familiar with creating a Load Balancer, please follow our guide on [Getting started with Load Balancer on Public Cloud](https://docs.ovh.com/sg/en/publiccloud/network-services/getting-started-with-load-balancer-public-cloud/) before you continue with this tutorial.
+If you are not yet familiar with creating a Load Balancer, please follow our guide on [Getting started with Load Balancer on Public Cloud](/pages/platform/network-services/getting-started-01-create-lb-service) before you continue with this tutorial.
 
 ## Instructions
 
 ### Creating an instance for Let's Encrypt
 
-You can create an instance in your project in the region where your Load Balancer is located. Read about the details in our [guide](https://docs.ovh.com/sg/en/public-cloud/public-cloud-first-steps/) if necessary. The d2-2 instance type will be sufficient for this operation. We recommend that you use Ubuntu as your operating system. 
+You can create an instance in your project in the region where your Load Balancer is located. Read about the details in our [guide](/pages/platform/public-cloud/public-cloud-first-steps) if necessary. The d2-2 instance type will be sufficient for this operation. We recommend that you use Ubuntu as your operating system. 
 
 Once you have created your instance, you can refer to the [Let's Encrypt documentation](https://certbot.eff.org/instructions?ws=other&os=ubuntufocal) to install *Certbot*.
 
@@ -49,7 +46,7 @@ openstack floating ip set --port <my_load_balancer_vip_port_id> <floating_ip>
 
 Please note that you must add an A record in the DNS Zone of your domain name that points to the Floating IP. 
 
-If you are using DNS servers managed by OVHcloud, please consult this [guide](https://docs.ovh.com/sg/en/domains/web_hosting_how_to_edit_my_dns_zone/).
+If you are using DNS servers managed by OVHcloud, please consult this [guide](/pages/web/domains/dns_zone_edit).
 
 ### Configuring your Load Balancer
 
@@ -119,7 +116,7 @@ You can now securely access your Load Balancer with Let's Encrypt.
 
 [Cookbook OpenStack Octavia](https://docs.openstack.org/octavia/latest/user/guides/basic-cookbook.html)
 
-[Getting started with Load Balancer on Public Cloud](https://docs.ovh.com/sg/en/publiccloud/network-services/getting-started-with-load-balancer-public-cloud/)
+[Getting started with Load Balancer on Public Cloud](/pages/platform/network-services/getting-started-01-create-lb-service)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

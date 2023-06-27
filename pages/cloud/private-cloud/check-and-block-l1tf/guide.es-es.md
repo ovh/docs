@@ -1,8 +1,6 @@
 ---
 title: 'Verificar y mitigar el fallo L1TF'
-slug: verificar-mitigar-fallo-l1tf
 excerpt: 'Cómo protegerse de la vulnerabilidad L1TF'
-section: Seguridad
 updated: 2019-02-26
 ---
 
@@ -58,7 +56,7 @@ Consta de tres fases, que se explican a continuación.
 
 ### 1. Actualización
 
-Aunque OVHcloud actualiza el vCenter, usted deberá encargarse de actualizar los hosts ESXi. El parche está disponible en el [Update Manager](https://docs.ovh.com/es/private-cloud/utilizar_vmware_update_manager/){.external-link}.
+Aunque OVHcloud actualiza el vCenter, usted deberá encargarse de actualizar los hosts ESXi. El parche está disponible en el [Update Manager](/pages/cloud/private-cloud/vmware_update_manager){.external-link}.
 
 Puede consultar la lista de parches para los hosts ESXi en las [recomendaciones de seguridad de VMware](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
 

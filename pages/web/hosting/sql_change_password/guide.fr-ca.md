@@ -1,9 +1,6 @@
 ---
 title: Modifier le mot de passe de la base de données d'un hébergement web
-slug: modifier-mot-de-passe-base-de-donnees
 excerpt: Découvrez comment changer le mot de passe d'une base de données créée dans le cadre d'une offre d'hébergement web
-section: Bases de données
-order: 02
 updated: 2022-01-26
 ---
 
@@ -13,15 +10,15 @@ updated: 2022-01-26
 
 La majeure partie des sites Web utilisent une **base de données** pour y stocker leurs articles, les commentaires ou encore les adresses e-mail de leurs utilisateurs.
 
-La connexion à cette base de données est rendue possible par un **fichier de configuration** contenu dans [l'espace de stockage de fichiers](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement. Il contient les informations permettant à votre site de « s'identifier » auprès de son **serveur de base de données**.
+La connexion à cette base de données est rendue possible par un **fichier de configuration** contenu dans [l'espace de stockage de fichiers](/pages/web/hosting/ftp_connection) de votre hébergement. Il contient les informations permettant à votre site de « s'identifier » auprès de son **serveur de base de données**.
 
 Le changement de mot de passe d'une base de données doit donc toujours être effectué :
 
-- Dans le [fichier de configuration](https://docs.ovh.com/ca/fr/hosting/1-click-module-management/#etape-1-identifier-la-base-de-donnees-liee-a-votre-module) de votre site via [l'espace FTP de votre hébergement](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/);
+- Dans le [fichier de configuration](/pages/web/hosting/cms_manage_1_click_module#etape-1-identifier-la-base-de-donnees-liee-a-votre-module) de votre site via [l'espace FTP de votre hébergement](/pages/web/hosting/ftp_connection);
 
 - **Et** dans le serveur contenant sa base de données via votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
-Tant que ce changement n'aura pas été effectué **dans ces deux endroits**, votre site affichera une « [erreur de connexion à la base de données](https://docs.ovh.com/ca/fr/hosting/erreurs-frequentes-bases-de-donnees/#erreur-lors-de-la-connexion-a-la-base-de-donnees) ».
+Tant que ce changement n'aura pas été effectué **dans ces deux endroits**, votre site affichera une « [erreur de connexion à la base de données](/pages/web/hosting/diagnosis_database_errors#erreur-lors-de-la-connexion-a-la-base-de-donnees) ».
 
 Il est donc impératif, si vous souhaitez changer le mot de passe de votre base de données, que vous réalisiez **l'ensemble des opérations** indiquées dans ce guide. En cas de doutes sur les manipulations à réaliser, contactez votre webmaster ou faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/).
 
@@ -46,7 +43,7 @@ La modification du mot de passe de la base de données de votre site se fait en 
 - Disposer d'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/).
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Utiliser une [base de données associée à votre offre d'hébergement mutualisé](https://www.ovhcloud.com/fr-ca/web-hosting/options/start-sql/).
-- Être en possession des identifiants FTP permettant de se connecter à l'[espace de stockage de votre hébergement](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+- Être en possession des identifiants FTP permettant de se connecter à l'[espace de stockage de votre hébergement](/pages/web/hosting/ftp_connection).
 
 ## En pratique
 
@@ -60,9 +57,9 @@ Cliquez ensuite sur l'onglet `FTP-SSH`{.action} puis accédez à l'espace conten
 
 > [!primary]
 >
-> Si vous souhaitez modifier le mot de passe de votre espace FTP, consultez ce [guide](https://docs.ovh.com/ca/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/).
+> Si vous souhaitez modifier le mot de passe de votre espace FTP, consultez ce [guide](/pages/web/hosting/ftp_change_password).
 >
-> Si vous souhaitez vous y connecter par une autre méthode, consultez ce [guide](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+> Si vous souhaitez vous y connecter par une autre méthode, consultez ce [guide](/pages/web/hosting/ftp_connection).
 >
 
 Ouvrez le `Dossier racine` identifié plus haut.
@@ -93,7 +90,7 @@ Retournez ensuite dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?a
 
 > [!primary]
 >
-> Pour plus d'informations sur les bonnes pratiques en matière de gestion de mots de passe, suivez les instructions de ce [guide](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/).
+> Pour plus d'informations sur les bonnes pratiques en matière de gestion de mots de passe, suivez les instructions de ce [guide](/pages/account/customer/manage-ovh-password).
 >
 
 Choisissez le nouveau mot de passe de votre base de données et notez-le. Il devra respecter les conditions suivantes :
@@ -182,11 +179,11 @@ Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe de votre base
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
-[Utilisation logiciel FileZilla avec votre hébergement](https://docs.ovh.com/ca/fr/hosting/mutualise-guide-utilisation-filezilla/)
+[Utilisation logiciel FileZilla avec votre hébergement](/pages/web/hosting/ftp_filezilla_user_guide)
 
-[Modifier le mot de passe de votre compte](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/)
+[Modifier le mot de passe de votre compte](/pages/account/customer/manage-ovh-password)
 
-[Résoudre les erreurs les plus fréquentes liées aux bases de données](https://docs.ovh.com/ca/fr/hosting/erreurs-frequentes-bases-de-donnees/)
+[Résoudre les erreurs les plus fréquentes liées aux bases de données](/pages/web/hosting/diagnosis_database_errors)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 

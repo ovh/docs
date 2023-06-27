@@ -1,9 +1,6 @@
 ---
 title: 'Configurare un account Email Pro sull’applicazione Posta per Windows 10'
-slug: configurazione-posta-windows-10
 excerpt: 'Scopri come configurare un account Email Pro sull’applicazione Posta per Windows 10'
-section: 'Configurazione di un client di posta'
-order: 7
 updated: 2020-03-18
 ---
 
@@ -90,8 +87,8 @@ OVHcloud propone anche un’applicazione Web con [funzionalità collaborative](h
 
 ## Per saperne di più
 
-[Configurare un account MX Plan sull’applicazione Posta per Windows 10](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_dellapp_posta_di_windows_10/){.external}
+[Configurare un account MX Plan sull’applicazione Posta per Windows 10](/pages/web/emails/how_to_configure_windows_10){.external}
 
-[Configurare un account Exchange sull’applicazione Posta per Windows 10](https://docs.ovh.com/it/microsoft-collaborative-solutions/configurazione-posta-windows-10/){.external}
+[Configurare un account Exchange sull’applicazione Posta per Windows 10](/pages/web/microsoft-collaborative-solutions/how_to_configure_windows_10){.external}
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

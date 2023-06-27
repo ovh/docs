@@ -1,7 +1,5 @@
 ---
 title: External Integrations
-slug: integrations-overview
-section: Integrations
 updated: 2021-06-02
 ---
 
@@ -14,7 +12,7 @@ Web PaaS can be integrated with external services.
 
 Web PaaS supports native integrations with multiple services, first and foremost Git hosting services such as GitHub, GitLab, or Bitbucket.  You can continue to use those tools for your development workflow, and have Web PaaS environments created automatically for your pull requests and branches.
 
-You can also add our native integrations with performance monitoring tools such as [Blackfire](../integrations-profiling/blackfire), [New Relic](../integrations-profiling/new-relic), or [Tideways](../integrations-profiling/tideways), as well as setting up [health notifications](../integrations-notifications).  Or create your [own integration using our webhooks](../integrations-activity/webhooks).
+You can also add our native integrations with performance monitoring tools such as [Blackfire](/pages/web/web-paas/integrations-profiling/blackfire), [New Relic](/pages/web/web-paas/integrations-profiling/new-relic), or [Tideways](/pages/web/web-paas/integrations-profiling/tideways), as well as setting up [health notifications](/pages/web/web-paas/integrations-notifications).  Or create your [own integration using our webhooks](/pages/web/web-paas/integrations-activity/webhooks).
 Be aware that only a project administrator (someone with `admin` level access to the project) can add or remove integrations. 
 
 ## Listing active integrations

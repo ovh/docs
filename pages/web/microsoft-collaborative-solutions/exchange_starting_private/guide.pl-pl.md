@@ -1,9 +1,6 @@
 ---
 title: 'Exchange: Pierwsze kroki z serwerem Private Exchange'
 excerpt: 'Pierwsza konfiguracja serwera Private Exchange'
-slug: exchange_pierwsze_kroki_na_serwerze_private
-section: 'Pierwsze kroki z Exchange'
-order: 02
 updated: 2020-04-17
 ---
 
@@ -65,7 +62,7 @@ Po zatwierdzeniu tego etapu otrzymasz wiadomość z informacją o ukończeniu ko
 
 Jeśli Twoja nazwa domeny nie jest zarządzana z poziomu tego samego konta klienta lub też jest utrzymywana poza OVHcloud, otrzymasz drugi e-mail zawierający informacje niezbędne do ręcznej konfiguracji strefy DNS.
 
-E-mail zawiera adresy IPv4 i IPv6 Twojej platformy. Podaj te adresy w strefie DNS subdomeny prawdopodobnie utworzonej uprzednio w [etapu 2 ](./#etap-2-uruchomienie-platformy){.external} w formie wpisu typu „A” lub „AAAA”. W przypadku nazwy domeny w OVHCloud  zapoznaj się z naszym przewodnikiem [„Modyfikowanie strefy DNS”](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/).
+E-mail zawiera adresy IPv4 i IPv6 Twojej platformy. Podaj te adresy w strefie DNS subdomeny prawdopodobnie utworzonej uprzednio w [etapu 2 ](./#etap-2-uruchomienie-platformy){.external} w formie wpisu typu „A” lub „AAAA”. W przypadku nazwy domeny w OVHCloud  zapoznaj się z naszym przewodnikiem [„Modyfikowanie strefy DNS”](/pages/web/domains/dns_zone_edit).
 
 
 
@@ -93,12 +90,12 @@ Kiedy tylko Twój serwer będzie gotowy i dostępny, otrzymasz wiadomość e-mai
 
 > **[xx-11111-ovh] Twoja usługa Private Exchange 20_xxx_ jest gotowa!**
 
-Aby dodać pierwszą nazwę domeny do platformy i rozpocząć konfigurowanie kont, zapoznaj się z naszym przewodnikiem [„Dodanie domeny do usługi Exchange”](https://docs.ovh.com/pl/microsoft-collaborative-solutions/dodanie-domeny-exchange/) 
+Aby dodać pierwszą nazwę domeny do platformy i rozpocząć konfigurowanie kont, zapoznaj się z naszym przewodnikiem [„Dodanie domeny do usługi Exchange”](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain) 
 
 ## Sprawdź również
 
-[Edycja strefy DNS OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/).
+[Edycja strefy DNS OVHcloud](/pages/web/domains/dns_zone_edit).
 
-[Dodanie domeny do usługi Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/dodanie-domeny-exchange/) 
+[Dodanie domeny do usługi Exchange](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain) 
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

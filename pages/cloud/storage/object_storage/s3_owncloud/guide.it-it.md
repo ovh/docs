@@ -1,11 +1,8 @@
 ---
 title: Object Storage - Utilizza S3 Object Storage con Owncloud (EN)
-slug: s3/owncloud
 excerpt: Learn how to set up storage in Owncloud to use a S3 Object Storage bucket
-section: Configure Object Storage with your solutions
-order: 170
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/s3/owncloud/'
+    canonical: '/pages/cloud/storage/object_storage/s3_owncloud'
 updated: 2022-01-03
 ---
 
@@ -30,7 +27,7 @@ Owncloud is a suite of client-server software for creating and using file hostin
 - A user with the required access rights on the bucket
 - Your S3 credentials (access_key and secret_access_key)
 
-See our [Getting started with S3 Object Storage](https://docs.ovh.com/it/storage/object-storage/s3/getting-started-with-object-storage/) guide.
+See our [Getting started with S3 Object Storage](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) guide.
 
 ## Instructions
 

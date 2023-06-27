@@ -1,9 +1,6 @@
 ---
 title: 'Configurare un NIC per il servizio OVHcloud Link Aggregation in Debian 9'
-slug: ola-debian9
 excerpt: "Attivare l'opzione OVHcloud Link Aggregation sul tuo server Debian 9"
-section: 'Utilizzo avanzato'
-order: 3
 updated: 2022-01-07
 ---
 
@@ -21,7 +18,7 @@ La tecnologia OVHcloud Link Aggregation (OLA) è stata progettata dai team OVHcl
 
 ## Prerequisiti
 
-- [Configurare un NIC per il servizio OVHcloud Link Aggregation nello Spazio Cliente](../ola-manager)
+- [Configurare un NIC per il servizio OVHcloud Link Aggregation nello Spazio Cliente](/pages/cloud/dedicated/ola-enable-manager)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 > [!warning]
@@ -92,10 +89,10 @@ Questa operazione potrebbe richiedere alcuni minuti per costruire l’interfacci
 
 ## Per saperne di più
 
-[Configurare un NIC per il servizio OVHcloud Link Aggregation nello Spazio Cliente](../ola-manager/).
+[Configurare un NIC per il servizio OVHcloud Link Aggregation nello Spazio Cliente](/pages/cloud/dedicated/ola-enable-manager).
 
-[Configurare un NIC per il servizio OVHcloud Link Aggregation in CentOS 7](../ola-centos7/).
+[Configurare un NIC per il servizio OVHcloud Link Aggregation in CentOS 7](/pages/cloud/dedicated/ola-enable-centos7).
 
-[Configurare un NIC per il servizio OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/).
+[Configurare un NIC per il servizio OVHcloud Link Aggregation in Windows Server 2019](/pages/cloud/dedicated/ola-enable-w2k19).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

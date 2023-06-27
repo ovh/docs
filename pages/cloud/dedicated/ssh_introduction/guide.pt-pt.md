@@ -1,8 +1,6 @@
 ---
 title: Introdução ao SSH
-slug: ssh-introducao
 excerpt: "Saiba como utilizar as ligações SSH para aceder ao servidor"
-section: Introdução
 updated: 2022-06-08
 ---
 
@@ -39,7 +37,7 @@ O protocolo de comunicação SSH (Secure Shell) é a ferramenta principal para e
 
 Existem vários métodos para autenticar uma ligação a um periférico distante através de SSH.<br>
 As instruções seguintes dizem respeito ao método de autenticação através de um nome de utilizador e de uma palavra-passe.<br>
-Também pode configurar chaves SSH para ativar as ligações seguras sem password. Para mais informações, consulte o nosso [guia sobre chaves SSH](https://docs.ovh.com/pt/dedicated/criar-chaves-ssh-dedicadas/).
+Também pode configurar chaves SSH para ativar as ligações seguras sem password. Para mais informações, consulte o nosso [guia sobre chaves SSH](/pages/cloud/dedicated/creating-ssh-keys-dedicated).
 
 Os dados de acesso (ID de utilizador e password) são-lhe enviados por e-mail após uma instalação ou reinstalação do servidor efetuada a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 O nome de utilizador corresponde ao sistema operativo, por exemplo, `ubuntu` ou `debian`.<br>
@@ -47,9 +45,9 @@ Para se conectar, também deve especificar o endereço IPv4 ou o nome do host do
 
 Não se esqueça de consultar também os nossos guias "Primeiros passos":
 
-- Para um [servidor dedicado](https://docs.ovh.com/pt/dedicated/primeiros-passos-servidor-dedicado/)
-- Para um [servidor dedicado da gama de produtos **Eco**](https://docs.ovh.com/pt/dedicated/getting-started-dedicated-server-eco/)
-- Para um [VPS](https://docs.ovh.com/pt/vps/instalar-gerir-vps/)
+- Para um [servidor dedicado](/pages/cloud/dedicated/getting-started-with-dedicated-server)
+- Para um [servidor dedicado da gama de produtos **Eco**](/pages/cloud/dedicated/getting-started-with-dedicated-server-eco)
+- Para um [VPS](/pages/cloud/vps/starting_with_a_vps)
 
 ### Ligação a partir de uma distribuição GNU/Linux ou macOS
 
@@ -171,11 +169,11 @@ Para mais informações, consulte a FAQ oficial e a documentação do PuTTY.
 
 ## Quer saber mais? <a name="gofurther"></a>
 
-[Criação de chaves SSH](https://docs.ovh.com/pt/dedicated/criar-chaves-ssh-dedicadas/)
+[Criação de chaves SSH](/pages/cloud/dedicated/creating-ssh-keys-dedicated)
 
-[Modo rescue servidor dedicado](https://docs.ovh.com/pt/dedicated/rescue_mode/)
+[Modo rescue servidor dedicado](/pages/cloud/dedicated/rescue_mode)
 
-[VPS em modo de rescue](https://docs.ovh.com/pt/vps/rescue/)
+[VPS em modo de rescue](/pages/cloud/vps/rescue)
 
 Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 

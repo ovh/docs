@@ -1,11 +1,8 @@
 ---
 title: DBMS lifecycle policy
 excerpt: Lifecycle policy for Public Cloud Databases engines
-slug: lifecycle-policy
-section: General information
-order: 020
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/lifecycle-policy/'
+    canonical: '/pages/platform/databases/information_02_lifecycle_policy'
 updated: 2021-09-15
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: Configure an IP address on a virtual machine
-slug: configure-ip-on-virtual-machine
 excerpt: Learn how to configure an IP address on a virtual machine
-section: Getting started
 updated: 2020-10-13
 ---
 
@@ -94,7 +92,7 @@ The process for configuring a private IP address is similar to that of a public 
 
 In your interface options, you can edit the following settings:
 
-- A VLAN interface (10 to 20 by default and linked to the vRack, you can create more by consulting [this guide](../creation-vlan-vxlan/)).
+- A VLAN interface (10 to 20 by default and linked to the vRack, you can create more by consulting [this guide](/pages/cloud/private-cloud/creation_vlan)).
 
 - A VxLAN interface (vxw-dvs, etc.).
 

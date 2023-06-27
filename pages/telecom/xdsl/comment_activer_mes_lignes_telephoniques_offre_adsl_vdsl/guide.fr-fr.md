@@ -1,7 +1,5 @@
 ---
 title: Comment activer mes lignes téléphoniques ? (Offres ADSL/VDSL/FTTH)
-slug: comment-activer-mes-lignes-telephoniques-offre-adsl-vdsl
-section: Premiers pas
 updated: 2020-11-02
 ---
 
@@ -91,7 +89,7 @@ Pour activer une ligne Fax, cliquez sur `Activer un service`{.action} dans le ca
 
 Cette ligne sera alors disponible dans un délai moyen d'une heure.
 
-Veuillez consulter [nos guides Fax](https://docs.ovh.com/fr/fax/) afin d'avoir plus de détails sur l'utilisation de ce service.
+Veuillez consulter [nos guides Fax](/products/web-cloud-phone-and-fax-fax) afin d'avoir plus de détails sur l'utilisation de ce service.
 
 
 ### Comment utiliser les lignes activées sans téléphone
@@ -118,6 +116,6 @@ Votre téléphone analogique doit être branché sur le port **phone 1** du mode
 
 ## Aller plus loin
 
-Consultez [nos guides dédiés à la configuration de vos lignes](https://docs.ovh.com/fr/voip/).
+Consultez [nos guides dédiés à la configuration de vos lignes](/products/web-cloud-phone-and-fax-voip).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>

@@ -1,9 +1,6 @@
 ---
 title: 'Configuring your Exchange account in Thunderbird for macOS'
-slug: exchange-configuration-thunderbird-mac
 excerpt: 'Find out how to configure your Exchange account in Thunderbird for macOS'
-section: 'Configuration on computer'
-order: 05
 updated: 2021-08-26
 ---
 
@@ -65,7 +62,7 @@ Your Exchange email address and all of its collaborative features are also avail
 
 ### Retrieving a backup of your email address
 
-If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the “**Exporting**” part of the “**Thunderbird**” section in our guide on [Manually migrating an email address](https://docs.ovh.com/ie/en/emails/migrate-email-addresses-manually/#exporting).
+If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the “**Exporting**” part of the “**Thunderbird**” section in our guide on [Manually migrating an email address](/pages/web/emails/manual_email_migration#exporting).
 
 ### Modifying existing settings
 

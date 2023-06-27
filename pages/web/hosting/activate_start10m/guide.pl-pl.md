@@ -1,9 +1,6 @@
 ---
 title: 'Włączanie darmowego hostingu Start 10M'
-slug: wlaczanie_start10m
 excerpt: 'Dowiedz się, jak włączyć hosting Start 10M'
-section: 'Pierwsze kroki'
-order: 01
 updated: 2022-09-15
 ---
 
@@ -29,7 +26,7 @@ Dzięki [Start10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/){.exter
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/){.external} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, odłączone od hostingu www i bez żadnego [MX Plan](https://docs.ovh.com/pl/emails/hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/).
+- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/){.external} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, odłączone od hostingu www i bez żadnego [MX Plan](/pages/web/emails/email_generalities).
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
@@ -50,7 +47,7 @@ Pojawi się okno aktywacyjne. W **etapie 1** wyświetla się przypomnienie ofert
 >
 > Jeśli Twoja strefa DNS nie jest zarządzana w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, wprowadź ręcznie zmiany w zewnętrznej strefie DNS.
 >
-> Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem dotyczącym [edycji strefy DNS OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/).
+> Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem dotyczącym [edycji strefy DNS OVHcloud](/pages/web/domains/dns_zone_edit).
 >
 
 | Wybór                                       	| Opis                                                                                                               								|
@@ -73,15 +70,15 @@ Pojawi się okno aktywacyjne. W **etapie 1** wyświetla się przypomnienie ofert
 
 Podczas **etapu 4** zapoznaj się z regulaminami i zatwierdź zamówienie.
 
-Po zatwierdzeniu zamówienia otrzymasz wiadomość e-mail z danymi do [logowania FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/){.external} do hostingu Start 10M.
+Po zatwierdzeniu zamówienia otrzymasz wiadomość e-mail z danymi do [logowania FTP](/pages/web/hosting/ftp_connection){.external} do hostingu Start 10M.
 
-Zapoznaj się z przewodnikiem [utworzenie konta E-mail MX Plan](https://docs.ovh.com/pl/emails/przewodnik_na_temat_zakladania_adresu_e-mail/){.external}, aby korzystać z adresu e-mail zawartego w pakiecie hostingowym Start 10M.
+Zapoznaj się z przewodnikiem [utworzenie konta E-mail MX Plan](/pages/web/emails/email_creation){.external}, aby korzystać z adresu e-mail zawartego w pakiecie hostingowym Start 10M.
 
 ## Sprawdź również
 
-[Logowanie do przestrzeni dyskowej hostingu www](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/){.external}
+[Logowanie do przestrzeni dyskowej hostingu www](/pages/web/hosting/ftp_connection){.external}
 
-[Tworzenie konta e-mail w ramach usługi MX Plan](https://docs.ovh.com/pl/emails/przewodnik_na_temat_zakladania_adresu_e-mail/){.external}
+[Tworzenie konta e-mail w ramach usługi MX Plan](/pages/web/emails/email_creation){.external}
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 

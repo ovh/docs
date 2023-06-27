@@ -1,7 +1,5 @@
 ---
 title: Web PaaS environments
-slug: environments
-section: Web
 updated: 2021-06-02
 ---
 
@@ -14,7 +12,7 @@ An environment on Web PaaS is a logically separate instance of an application, c
 
 Each project includes multiple environments--typically the production environment and three or more additional environments which can be used for development, testing, staging, review, etc. 
 
-New environments can be created in moments through a Git clone, via the [Web PaaS Command Line Interface](../../development-cli), or via the [Web PaaS web console](../), and will be an exact replica of their parent environments. This means new environments will have all of the data, as well as the services (like databases, network storage, queues, routing, etc.) instantly cloned. 
+New environments can be created in moments through a Git clone, via the [Web PaaS Command Line Interface](/pages/web/web-paas/development-cli), or via the [Web PaaS web console](/pages/web/web-paas/administration-web), and will be an exact replica of their parent environments. This means new environments will have all of the data, as well as the services (like databases, network storage, queues, routing, etc.) instantly cloned. 
 
 The relationships between environments is hierarchical, and can be organized in any way that suits your organization, rather than mandating a strict development → staging → production workflow. An environment is tied to a Git branch and can be created on demand. With Bitbucket and GitHub integrations you can even get a "development server" automatically for each and every pull request.
 

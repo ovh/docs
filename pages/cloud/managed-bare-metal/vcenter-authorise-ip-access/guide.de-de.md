@@ -1,9 +1,7 @@
 ---
 title: Die Verbindung von IPs mit dem vCenter erlauben
-slug: verbindung-von-ip-zum-vcenter-erlauben
 routes:
-    canonical: 'https://docs.ovh.com/de/private-cloud/verbindung-von-ip-zum-vcenter-erlauben/'
-section: OVHcloud Funktionen
+    canonical: '/pages/cloud/private-cloud/autoriser_des_ip_a_se_connecter_au_vcenter'
 updated: 2020-11-18
 ---
 
@@ -22,7 +20,7 @@ Der Zugang zum vCenter kann eingeschränkt werden. Dazu wird nur bestimmten IP A
 
 ## Praktische Anwendung
 
-Wenn die [ Regeln für den Zugang zum vCenter Einschränkungen vorsehen](../zugriffsregeln-fuer-vcenter-aendern/), müssen die IPs hinzugefügt werden, die sich mit dem Dienst verbinden dürfen.
+Wenn die [ Regeln für den Zugang zum vCenter Einschränkungen vorsehen](/pages/cloud/managed-bare-metal/vcenter-modify-access-policy), müssen die IPs hinzugefügt werden, die sich mit dem Dienst verbinden dürfen.
 
 Dies erfolgt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external-link}. Klicken Sie im Abschnitt `Bare Metal Cloud` auf die Rubrik `Managed Bare Metal`. Wählen Sie die Infrastruktur aus. Klicken Sie dann auf den Tab `Sicherheit` und danach auf `Neuen IP-Bereich hinzufügen`{.action}.
 

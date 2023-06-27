@@ -1,9 +1,6 @@
 ---
 title: 'Creating automatic signatures'
 excerpt: 'Find out how to add automatic signatures to your email accounts'
-slug: exchange_20132016_how_to_create_an_automatic_signature
-section: 'Exchange account features'
-order: 07
 updated: 2020-03-26
 ---
 

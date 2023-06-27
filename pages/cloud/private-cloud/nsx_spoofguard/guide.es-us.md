@@ -1,11 +1,8 @@
 ---
 title: Evitar la usurpación de IP con el servicio SpoofGuard (EN)
-slug: spoofguard
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/spoofguard/'
+    canonical: '/pages/cloud/private-cloud/nsx_spoofguard'
 excerpt: Set up policies to detect IP spoofing
-section: NSX-v
-order: 10
 updated: 2021-02-12
 ---
 
@@ -21,7 +18,7 @@ SpoofGuard protects against IP spoofing by maintaining a reference table of VM n
 
 - being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/) to receive login credentials
 - a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws))
-- an enabled [Distributed Firewall](https://docs.ovh.com/us/es/private-cloud/nsx-distributed-firewall-configuration/)
+- an enabled [Distributed Firewall](/pages/cloud/private-cloud/nsx_configurer_le_firewall_distribue)
 
 ## Instructions
 

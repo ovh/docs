@@ -1,9 +1,6 @@
 ---
 title: 'Tworzenie konta OVHcloud'
-slug: tworzenie-konta-ovhcloud
 excerpt: 'Dowiedz się, jak założyć konto OVHcloud'
-Section: 'Pierwsze kroki'
-order: 1
 updated: 2023-05-23
 ---
 
@@ -34,7 +31,7 @@ Aby utworzyć konto OVHcloud, wystarczy przejść na [tę stronę](https://www.o
 |---|---|
 |Imię - Nazwisko|Wpisz **tutaj zwyczajowe** imię i nazwisko.|
 |Konto e-mail|Wpisz **prawidłowy adres e-mail, do którego aktualnie masz dostęp**.<br><br>Unikaj korzystania z konta e-mail powiązanego z domeną, którą zarządzasz w Panelu klienta. W przypadku awarii tej domeny nie otrzymasz już naszych powiadomień.|
-|Hasło|Hasło musi być unikalne (utworzone i używane tylko dla Twojego konta OVHcloud) i wystarczająco złożone.<br><br>Aby utworzyć skuteczne hasło, zapoznaj się z [przewodnikiem dotyczącym zarządzania hasłem](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/#w-praktyce).|
+|Hasło|Hasło musi być unikalne (utworzone i używane tylko dla Twojego konta OVHcloud) i wystarczająco złożone.<br><br>Aby utworzyć skuteczne hasło, zapoznaj się z [przewodnikiem dotyczącym zarządzania hasłem](/pages/account/customer/manage-ovh-password#w-praktyce).|
 
 Po wypełnieniu pierwszego formularza otrzymasz kod jednorazowy na podany adres e-mail. Ten kod pozwoli na potwierdzenie Twojego konta e-mail. Wprowadź go w polach przewidzianych do tego celu.
 
@@ -75,14 +72,14 @@ Identyfikator klienta jest wyświetlany w prawym górnym rogu pod Twoją nazwą 
 
 ## Sprawdź również
 
-Po utworzeniu konta OVHcloud zalecamy zastosowanie się do naszych [zaleceń dotyczących bezpieczeństwa konta i zarządzania danymi osobowymi](https://docs.ovh.com/pl/customer/identyfikator_klienta/).
+Po utworzeniu konta OVHcloud zalecamy zastosowanie się do naszych [zaleceń dotyczących bezpieczeństwa konta i zarządzania danymi osobowymi](/pages/account/customer/all_about_username).
 
 Sprawdź nasze przewodniki:
 
-[Zaloguj się do Panelu klienta OVHcloud](https://docs.ovh.com/pl/customer/logowanie-panelu-klienta-ovhcloud/)
+[Zaloguj się do Panelu klienta OVHcloud](/pages/account/customer/ovhcloud-account-login)
 
-[Zmiana hasła do konta OVHcloud](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/)
+[Zmiana hasła do konta OVHcloud](/pages/account/customer/manage-ovh-password)
 
-[Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/)
+[Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

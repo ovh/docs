@@ -1,8 +1,6 @@
 ---
 title: Gestionar las formas de pago
-slug: gestionar-formas-de-pago
 excerpt: Cómo añadir y gestionar las formas de pago en el área de cliente de OVHcloud
-section: Pedidos, facturas y servicios
 updated: 2023-05-09
 ---
 
@@ -104,7 +102,7 @@ Si ya no desea utilizar alguna de sus formas de pago, puede eliminarla haciendo 
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
-Si quiere eliminar todas sus formas de pago, todos sus servicios deben estar [renovados manualmente](https://docs.ovh.com/es/billing/renovacion-automatica-ovh/#renovacion-manual).
+Si quiere eliminar todas sus formas de pago, todos sus servicios deben estar [renovados manualmente](/pages/account/billing/how_to_use_automatic_renewal#renovacion-manual).
 
 #### Eliminar una forma de pago a través de las API OVHcloud
 
@@ -126,7 +124,7 @@ A continuación, elimine la forma de pago utilizando el ID obtenido en el paso a
 
 > [!primary]
 >
-> Para más información, consulte la guía [Primeros pasos con la API OVHcloud](https://docs.ovh.com/es/api/first-steps-with-ovh-api/).
+> Para más información, consulte la guía [Primeros pasos con la API OVHcloud](/pages/account/api/first-steps).
 >
 > Si necesita ayuda para identificar sus formas de pago a través de las API de OVHcloud, utilice la función `Modificar la descripción`{.action} (botón `...`{.action} a la derecha de su pantalla) en la sección [Formas de pago](#payment_methods) del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 >
@@ -137,7 +135,7 @@ A continuación, elimine la forma de pago utilizando el ID obtenido en el paso a
 
 Una vez que haya creado, la *cuenta de prepago* aparecerá en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Le permite recargar con antelación su cuenta de cliente y utilizar estos fondos para abonar sus pedidos y sus facturas de renovación.
 
-Recargando su cuenta con regularidad, se asegurará de que la [renovación automática](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/) de sus servicios no se interrumpa nunca por defecto de pago.
+Recargando su cuenta con regularidad, se asegurará de que la [renovación automática](/pages/account/billing/how_to_use_automatic_renewal) de sus servicios no se interrumpa nunca por defecto de pago.
 
 Para ello, acceda a la sección `Formas de pago` del área de cliente:
 

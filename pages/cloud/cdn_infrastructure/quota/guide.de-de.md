@@ -1,9 +1,6 @@
 ---
 title: 'Quota im CDN verwalten'
-slug: quota-cdn
 excerpt: 'So funktionieren Traffic-Limits in Ihrem CDN'
-section: 'Erste Schritte'
-order: 3
 updated: 2018-02-22
 ---
 

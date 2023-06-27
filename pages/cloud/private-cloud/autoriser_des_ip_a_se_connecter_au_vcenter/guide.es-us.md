@@ -1,7 +1,5 @@
 ---
 title: Autorizar direcciones IP a conectarse al vCenter
-slug: autorizar-direcciones-ip-a-conectarse-al-vcenter
-section: Funcionalidades de OVHcloud
 updated: 2023-01-25
 ---
 

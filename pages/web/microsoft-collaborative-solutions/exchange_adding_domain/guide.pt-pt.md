@@ -1,9 +1,6 @@
 ---
 title: Adicionar um domínio a uma plataforma de e-mail
-slug: adding-domain-exchange
 excerpt: Saiba como adicionar um domínio à sua plataforma Exchange ou E-mail Pro
-section: Primeiros passos com Exchange
-order: 04
 updated: 2023-06-14
 ---
 
@@ -21,7 +18,7 @@ Adicionar um domínio a um serviço Exchange é indispensável para poder utiliz
 
 - Dispor de uma solução [Exchange](https://www.ovhcloud.com/pt/emails/) ou [Email Pro](https://www.ovhcloud.com/pt/emails/email-pro/).
 - Dispor de um ou vários domínios.
-- Ter a possibilidade de alterar a configuração do domínio [zona DNS](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).
+- Ter a possibilidade de alterar a configuração do domínio [zona DNS](/pages/web/domains/dns_zone_edit).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
@@ -95,7 +92,7 @@ Quando o domínio for adicionado como domínio associado, certifique-se de que a
 
 - **se escolheu uma configuração automática ao adicionar o domínio**: a visualização na Área de Cliente OVHcloud pode demorar alguns instantes para se atualizar;
 
-- **se indicou um domínio não gerido pela OVHcloud**: clique na etiqueta vermelha para apresentar as alterações que deve realizar. Se este domínio não utilizar a configuração da OVHcloud (os seus servidores DNS), deverá realizar as modificações a partir da interface que lhe permite gerir a configuração do seu domínio. No quadro de uma configuração CNAME, pode obter mais informações a partir da documentação intitulada [Criar um registo CNAME para adicionar um domínio associado](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_20132016_adicionar_um_campo_do_tipo_cname/).
+- **se indicou um domínio não gerido pela OVHcloud**: clique na etiqueta vermelha para apresentar as alterações que deve realizar. Se este domínio não utilizar a configuração da OVHcloud (os seus servidores DNS), deverá realizar as modificações a partir da interface que lhe permite gerir a configuração do seu domínio. No quadro de uma configuração CNAME, pode obter mais informações a partir da documentação intitulada [Criar um registo CNAME para adicionar um domínio associado](/pages/web/microsoft-collaborative-solutions/exchange_dns_cname).
 
 > [!primary]
 >
@@ -114,7 +111,7 @@ Relembramos que todos os endereços criados no seu serviço poderão visualizar 
 
 Depois de configurar as contas, só precisa de as utilizar. Para isso, a OVHcloud coloca à sua disposição o **webmail** acessível no endereço <https://www.ovh.com/pt/mail/>. Para otimizar a utilização do seu endereço num software, certifique-se de que este é compatível com o serviço. 
 
-Se pretender configurar o seu endereço de e-mail num software de correio eletrónico ou periférico, como um smartphone ou um tablet, ou obter ajuda relativamente às funcionalidades do seu serviço de e-mail, consulte os nossos documentos acessíveis a partir das páginas [Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/) e [E-mail Pro](https://docs.ovh.com/pt/emails-pro/).
+Se pretender configurar o seu endereço de e-mail num software de correio eletrónico ou periférico, como um smartphone ou um tablet, ou obter ajuda relativamente às funcionalidades do seu serviço de e-mail, consulte os nossos documentos acessíveis a partir das páginas [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) e [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
 Pode adquirir licenças Outlook na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e licenças Office 365 na página <https://www.ovhcloud.com/pt/collaborative-tools/microsoft-365/>. Caso pretenda usufruir do software de correio eletrónico Outlook ou de outros programas da suite Office, recomendamos uma destas soluções.
 
@@ -124,7 +121,7 @@ Se pretender retirar um domínio associado ao seu serviço Exchange ou E-mail Pr
 
 > [!warning]
 >
-> Antes de eliminar as contas de e-mail, certifique-se de que estas não são utilizadas. Pode ser necessário um backup destas contas. Se necessário, consulte o guia [Migrar manualmente o seu endereço de e-mail](https://docs.ovh.com/pt/emails/migrar-os-enderecos-email-manualmente/), que lhe descreverá como exportar os dados de uma conta a partir da Área de Cliente ou a partir de um software de correio eletrónico.
+> Antes de eliminar as contas de e-mail, certifique-se de que estas não são utilizadas. Pode ser necessário um backup destas contas. Se necessário, consulte o guia [Migrar manualmente o seu endereço de e-mail](/pages/web/emails/manual_email_migration), que lhe descreverá como exportar os dados de uma conta a partir da Área de Cliente ou a partir de um software de correio eletrónico.
 
 Dirija-se ao separador `Domínios associados`{.action} da sua plataforma. Na tabela, a coluna `Contas` indica o número de contas associadas aos domínios da sua lista.
 
@@ -148,9 +145,9 @@ No separador `Domínio associados`{.action} da sua plataforma, clique no botão 
 
 ## Quer saber mais?
 
-[Criar um registo CNAME para adicionar um domínio associado](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_20132016_adicionar_um_campo_do_tipo_cname/)
+[Criar um registo CNAME para adicionar um domínio associado](/pages/web/microsoft-collaborative-solutions/exchange_dns_cname)
 
-[Editar uma zona DNS da OVHcloud](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/)
+[Editar uma zona DNS da OVHcloud](/pages/web/domains/dns_zone_edit)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/)

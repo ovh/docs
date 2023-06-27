@@ -1,8 +1,6 @@
 ---
 title: Das sichere Interface verwenden
-slug: sicheres-interface
 excerpt: Erfahren Sie hier, wie Sie das sichere Interface verwenden, um kritische Operationen zu bestätigen
-section: OVHcloud Dienste und Optionen
 updated: 2022-10-12
 ---
 
@@ -23,7 +21,7 @@ OVHcloud stellt Ihnen ein sicheres Interface zur Verfügung, über welches Sie s
 
 Die Bestätigung von als „sensibel“ eingestuften Operationen über das sichere Interface ist nur für Benutzer mit **token validator**-Berechtigung möglich. Administratoren verfügen automatisch über diese Berechtigung, da dies für die Aktivierung der Option **Advanced Security** notwendig ist. 
 
-Hinweis: Über Ihr OVHcloud Kundencenter können Sie diese Berechtigung auch anderen Benutzern erteilen. Wenn Sie hierbei Hilfe benötigen, lesen Sie die Anleitung [Einführung in das Kundencenter der OVHcloud Private Cloud](../manager-ovh-private-cloud/).
+Hinweis: Über Ihr OVHcloud Kundencenter können Sie diese Berechtigung auch anderen Benutzern erteilen. Wenn Sie hierbei Hilfe benötigen, lesen Sie die Anleitung [Einführung in das Kundencenter der OVHcloud Private Cloud](/pages/cloud/private-cloud/manager_ovh_private_cloud).
 
 Über das sichere Interface können Sie drei Operationen ausführen. Befolgen Sie den Abschnitt dieser Anleitung, der der auszuführenden Operation entspricht:
 
@@ -52,7 +50,7 @@ Diese Nachricht enthält:
 - den Namen der zu bestätigenden Operation
 - die ID der Operation
 - den Token für die Bestätigung
-- einen Link zur Bestätigung der Operation (Achtung: Wenn Ihr Telefon nicht mit einem Netzwerk verbunden ist, dessen [IP zugelassen](../manager-ovh-private-cloud/#sicherheit) ist, wird die Seite nicht angezeigt.)
+- einen Link zur Bestätigung der Operation (Achtung: Wenn Ihr Telefon nicht mit einem Netzwerk verbunden ist, dessen [IP zugelassen](/pages/cloud/private-cloud/manager_ovh_private_cloud#sicherheit) ist, wird die Seite nicht angezeigt.)
 
 Um die Operation zu bestätigen, loggen Sie sich über den in der Nachricht enthaltenen Link ein. Gehen Sie dann in den Bereich `Operation validation`{.action}.
 

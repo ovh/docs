@@ -1,9 +1,6 @@
 ---
 title: Utilizar SVN
-slug: utilizar-svn
 excerpt: Cómo utilizar SVN por SSH en un alojamiento web
-section: FTP y SSH
-order: 09
 updated: 2021-01-06
 ---
 
@@ -29,13 +26,13 @@ SVN, abreviación de "subversion", es un sistema de gestión de versiones.
 ## Requisitos
 
 - Tener contratado un plan de [hosting](https://www.ovhcloud.com/es-es/web-hosting/) que permita conectarse por SSH (**a partir del plan Profesional**).
-- Conectarse a su alojamiento web por SSH (consulte nuestra guía [Utilizar el acceso SSH de su alojamiento web](../web_hosting_ssh_en_alojamiento_compartido/)).
+- Conectarse a su alojamiento web por SSH (consulte nuestra guía [Utilizar el acceso SSH de su alojamiento web](/pages/web/hosting/ssh_on_webhosting)).
 
 ## Procedimiento
 
 ### Creación del repositorio
 
-Una vez conectado en [SSH al alojamiento](../web_hosting_ssh_en_alojamiento_compartido/){.external}, cree el directorio raíz de los repositorios SVN y el repositorio.
+Una vez conectado en [SSH al alojamiento](/pages/web/hosting/ssh_on_webhosting){.external}, cree el directorio raíz de los repositorios SVN y el repositorio.
 
 Para ello, introduzca el siguiente comando:
 
@@ -63,7 +60,7 @@ Es necesario que los directorios se muestren en la siguiente imagen:
 
 Antes de continuar, deberá crear un par de llaves SSH desde el equipo que utilizará para conectarse al repositorio SVN.
 
-Para más información, consulte la guía [Crear llaves SSH](https://docs.ovh.com/es/public-cloud/crear-llave-ssh/). No es necesario seguir el progreso de la operación [Importar la llave SSH al área de cliente de OVHcloud](https://docs.ovh.com/es/public-cloud/crear-llave-ssh/#importacion-de-una-clave-ssh-en-el-area-de-cliente-de-ovhcloud) en esta guía.
+Para más información, consulte la guía [Crear llaves SSH](/pages/platform/public-cloud/public-cloud-first-steps#1-crear-claves-ssh/). No es necesario seguir el progreso de la operación [Importar la llave SSH al área de cliente de OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#1-crear-claves-ssh/#importacion-de-una-clave-ssh-en-el-area-de-cliente-de-ovhcloud) en esta guía.
 
 ### Adición de la clave pública al alojamiento
 
@@ -88,7 +85,7 @@ A continuación de la clave creada anteriormente, todo ello en la misma línea.
 > Sustituya "/home.XXX/loginFTP" y "john" por sus claves SSH.
 > Para consultar los símbolos utilizados para sustituir "/home.XXX/loginFTP", introduzca el comando "pwd" en SSH.
 >
-> Consulte nuestra guía [Utilizar el acceso SSH de un alojamiento web](../web_hosting_ssh_en_alojamiento_compartido/){.external}.
+> Consulte nuestra guía [Utilizar el acceso SSH de un alojamiento web](/pages/web/hosting/ssh_on_webhosting){.external}.
 > 
 
 ![hosting](images/3080.png){.thumbnail}
@@ -154,6 +151,6 @@ svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 
 ## Más información
 
-[Utilizar el acceso SSH de un alojamiento web](../web_hosting_ssh_en_alojamiento_compartido/){.external}
+[Utilizar el acceso SSH de un alojamiento web](/pages/web/hosting/ssh_on_webhosting){.external}
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

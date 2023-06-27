@@ -1,11 +1,8 @@
 ---
 title: AI Training - Caractéristiques, capacités et limites (EN)
-slug: training/capabilities
 excerpt: "Découvrez les principales caractéristiques, capacités et limites de AI Training"
-section: AI Training - Guides
-order: 01
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/training/capabilities/'
+    canonical: '/pages/platform/ai/training_guide_01_capabilities'
 updated: 2023-04-04
 ---
 
@@ -74,7 +71,7 @@ You are also able to check it from the OVHcloud Control Panel in your job inform
 
 #### Command line interface (CLI)
 
-AI Training is compliant with the OVHcloud AI CLI. Discover how to [install the OVHcloud AI CLI](https://docs.ovh.com/ca/fr/publiccloud/ai/cli/install-client/).
+AI Training is compliant with the OVHcloud AI CLI. Discover how to [install the OVHcloud AI CLI](/pages/platform/ai/cli_10_howto_install_cli).
 
 ### Planned features
 We continuously improve our offers. You can follow, vote and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/4>.
@@ -130,7 +127,7 @@ Each AI Training job comes with a local storage space, which is ephemeral. When 
 This storage space depends on the selected instances during your AI Training job creation. Please refer to the compute resources section for more information.
 
 > [!primary]
-> **Local storage** is limited and not the recommended way to handle data, see the [OVHcloud documentation on data](https://docs.ovh.com/ca/fr/publiccloud/ai/data) for more information.
+> **Local storage** is limited and not the recommended way to handle data, see the [OVHcloud documentation on data](/pages/platform/ai/gi_02_concepts_data) for more information.
 >
 
 ##### **Attached storage**
@@ -170,7 +167,7 @@ The use of `docker-compose` is not possible.
 
 Please be aware that images need to be built with an **AMD architecture**.
 
-Learn how to build and use your custom Docker image in this [tutorial](https://docs.ovh.com/ca/fr/publiccloud/ai/training/build-use-custom-image/).
+Learn how to build and use your custom Docker image in this [tutorial](/pages/platform/ai/training_tuto_02_build_custom_image).
 
 ### Network
 
@@ -200,7 +197,7 @@ Each Public Cloud project grants a customer by default a maximum of 4 GPUs used 
 
 ## Go further
 
-Browse the full [AI Training documentation](https://docs.ovh.com/ca/fr/publiccloud/ai/) to further understand the main concepts and get started.
+Browse the full [AI Training documentation](/products/public-cloud-ai-and-machine-learning) to further understand the main concepts and get started.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

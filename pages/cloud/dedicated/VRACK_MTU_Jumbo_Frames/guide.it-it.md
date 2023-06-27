@@ -1,8 +1,6 @@
 ---
 title: 'Configurare frame Jumbo nella vRack'
-slug: 'network-jumbo'
 excerpt: 'Come configurare i Jumbo frame nella vRack'
-section: 'vRack'
 updated: 2020-08-17
 ---
 

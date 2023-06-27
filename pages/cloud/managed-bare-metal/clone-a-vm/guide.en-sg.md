@@ -1,11 +1,8 @@
 ---
 title: Cloning a VM
-slug: clone-a-vm
 routes:
-    canonical: 'https://docs.ovh.com/sg/en/private-cloud/clone-a-vm/'
+    canonical: '/pages/cloud/private-cloud/clone_a_vm'
 excerpt: Learn how to clone an existing virtual machine in vSphere
-section: Maintenance and monitoring
-order: 07
 updated: 2020-11-18
 ---
 
@@ -20,12 +17,12 @@ Cloning a VM creates a copy of the source VM.
 ## Requirements
 
 - a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-sg/managed-bare-metal/)
-- a user account with access to [vSphere](../login-vsphere-interface/) (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg))
+- a user account with access to [vSphere](/pages/cloud/managed-bare-metal/vsphere-interface) (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg))
 - a VM in your cluster
 
 ## Instructions
 
-In your [vSphere interface](../login-vsphere-interface/), navigate to the `Hosts and Clusters` tab of your Managed Bare Metal.
+In your [vSphere interface](/pages/cloud/managed-bare-metal/vsphere-interface), navigate to the `Hosts and Clusters` tab of your Managed Bare Metal.
 
 Right-click on the VM to be cloned and click on `Clone`{.action}, then `Clone to virtual machine...`{.action}.
 
@@ -49,9 +46,9 @@ Set the storage location (disk space) for this VM.
 
 The virtual disk type is on "Thin Provision", which means that a virtual disk will be created but will only use the actual disk space used on the storage, regardless of the disk space previously used on the source VM.
 
-More information about disk types can be found in [this guide](../choosing-disk-type/){.external-link}.
+More information about disk types can be found in [this guide](/pages/cloud/managed-bare-metal/choosing-disk-type){.external-link}.
 
-You will be able to choose, via the `VM Storage Policy` row, the default storage policy if you have datastores, or the [VM encryption](../vm-encrypt/){.external-link} option.
+You will be able to choose, via the `VM Storage Policy` row, the default storage policy if you have datastores, or the [VM encryption](/pages/cloud/managed-bare-metal/vm_encrypt){.external-link} option.
 
 ![clone a VM](images/clonevm04.png){.thumbnail}
 

@@ -1,9 +1,7 @@
 ---
 title: 'Modificare l’hostname di un’istanza Public Cloud'
 excerpt: "Modifica l'hostname della tua istanza"
-slug: modifica_lhostname_della_tua_istanza
 legacy_guide_number: g1928
-section: Tutorial
 updated: 2018-09-18
 ---
 
@@ -30,7 +28,7 @@ Nel momento in cui crei un’[istanza Public Cloud](https://www.ovh.it/public-cl
 ## Prerequisiti
 
 - Aver creato un’[istanza Public Cloud](https://www.ovh.it/public-cloud/istanze/){.external}
-- [Essere connessi in SSH](https://docs.ovh.com/it/public-cloud/prima-connessione/){.external} (root) all’istanza
+- [Essere connessi in SSH](/pages/platform/public-cloud/public-cloud-first-steps#step-4-accedi-alla-tua-istanza/){.external} (root) all’istanza
 
 
 ## Procedura

@@ -1,8 +1,6 @@
 ---
 title: 'Attiva Intel SGX sul tuo server dedicato'
-slug: enable-and-use-intel-sgx
 excerpt: 'Come attivare SGX sul tuo server Infrastructure o Advance e installare lo stack software Linux SGX'
-section: 'Utilizzo avanzato'
 updated: 2022-08-31
 ---
 

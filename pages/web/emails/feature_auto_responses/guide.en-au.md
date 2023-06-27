@@ -1,9 +1,6 @@
 ---
 title: 'Creating an autoresponder for your email addresses'
-slug: set-up-email-responder
 excerpt: 'Find out how to set up automatic email replies'
-section: 'Email address features'
-order: 02
 hidden: true
 updated: 2021-04-20
 ---

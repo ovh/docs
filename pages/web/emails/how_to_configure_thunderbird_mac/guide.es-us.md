@@ -1,10 +1,7 @@
 ---
 title: 'Configurar una cuenta de correo electrónico en Thunderbird para macOS'
-slug: correo_guia_de_configuracion_para_thunderbird_en_mac
 legacy_guide_number: g1297 
 excerpt: 'Aquí encontrará la información necesaria para configurar su dirección de correo electrónico en Thunderbird'
-section: Configuración en el ordenador
-order: 05
 updated: 2021-08-26
 ---
 
@@ -64,7 +61,7 @@ OVHcloud también ofrece una aplicación web que permite acceder a su dirección
 
 ### Obtener una copia de seguridad de su dirección de correo
 
-Si necesita realizar alguna operación que pueda provocar la pérdida de los datos de su cuenta de correo, le recomendamos que realice una copia de seguridad previa de la cuenta de correo. Para ello, consulte el apartado "**Exportar**" de la sección "**Thunderbird**" de nuestra guía [Migrar manualmente su dirección de correo electrónico](https://docs.ovh.com/us/es/emails/migrar-sus-direcciones-de-correo-manualmente/#exportar).
+Si necesita realizar alguna operación que pueda provocar la pérdida de los datos de su cuenta de correo, le recomendamos que realice una copia de seguridad previa de la cuenta de correo. Para ello, consulte el apartado "**Exportar**" de la sección "**Thunderbird**" de nuestra guía [Migrar manualmente su dirección de correo electrónico](/pages/web/emails/manual_email_migration#exportar).
 
 ### Modificar los parámetros existentes
 

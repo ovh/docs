@@ -1,9 +1,6 @@
 ---
 title: 'Switching from hourly to monthly billing'
 excerpt: 'Find out how to change the billing rate for your Public Cloud instance'
-slug: change-public-cloud-billing-rate
-section: Project management
-order: 4
 updated: 2023-01-23
 ---
 
@@ -59,7 +56,7 @@ Replace "InstanceID" with the ID of the corresponding instance. This ID can be r
 
 ### From the OVHcloud API
 
-Log in to the [OVHcloud API interface](https://eu.api.ovh.com/) according to the [relevant guide](../../api/first-steps-with-ovh-api/) and follow the steps below.
+Log in to the [OVHcloud API interface](https://eu.api.ovh.com/) according to the [relevant guide](/pages/account/api/first-steps) and follow the steps below.
 
 Use the following call:
 

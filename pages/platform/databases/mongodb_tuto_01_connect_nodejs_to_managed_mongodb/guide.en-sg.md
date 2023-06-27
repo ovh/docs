@@ -1,9 +1,6 @@
 ---
 title: MongoDB - Tutorial - Build a NodeJS application connected to OVHcloud Managed MongoDB service
-slug: mongodb/tutorial-build-nodejs-app-connected-to-managed-mongodb
 excerpt: "Find out how to build a NodeJS application connected to an OVHcloud Managed MongoDB service"
-section: MongoDB - Tutorials
-order: 010
 updated: 2022-07-27
 ---
 
@@ -24,8 +21,8 @@ In this tutorial, we will use the Node.js platform to build a **real-time chat a
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
-- A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/sg/en/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your MongoDB instance](https://docs.ovh.com/sg/en/publiccloud/databases/mongodb/managing-service/) to accept incoming connections
+- A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your MongoDB instance](/pages/platform/databases/mongodb_02_manage_control_panel) to accept incoming connections
 - A [NodeJS working environment](https://nodejs.dev/en/learn/how-to-install-nodejs/) and public network connectivity (Internet). This tutorial was made using NodeJS LTS 16.14.0.
 
 ## Instructions

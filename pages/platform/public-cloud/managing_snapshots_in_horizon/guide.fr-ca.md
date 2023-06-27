@@ -1,8 +1,5 @@
 ---
 title: "Gestion des snapshots d’une instance dans horizon"
-slug: gestion-des-snapshots-dune-instance-dans-horizon
-section: Gestion depuis Horizon
-order: 05
 updated: 2022-01-31
 ---
 
@@ -17,7 +14,7 @@ Lors de votre activité, vous serez probablement amené à effectuer une sauvega
 ## Prérequis
 
 - Avoir [créé une instance Public Cloud](https://docs.ovh./ca/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-3-creer-une-instance) dans votre compte OVHcloud
-- [Accéder à l'interface Horizon](../horizon/)
+- [Accéder à l'interface Horizon](/pages/platform/public-cloud/introducing_horizon)
 
 ## En pratique
 

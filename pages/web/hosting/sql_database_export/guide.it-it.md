@@ -1,9 +1,6 @@
 ---
 title: 'Recuperare il backup del database di un hosting Web'
 excerpt: 'Come ripristinare il backup di un database di un hosting Web OVH'
-slug: web_hosting_come_esportare_un_database
-section: Database
-order: 03
 updated: 2018-05-19
 ---
 
@@ -132,7 +129,7 @@ Sostituisci le informazioni generiche dello script con i dati del database in qu
 
 #### 2\. Caricare lo script sullo spazio di storage 
 
-Una volta creato lo script è necessario caricarlo sullo spazio di storage dell’hosting Web. Per effettuare questa operazione, è necessario collegarsi all’hosting (se hai bisogno di aiuto, consulta lo step 2 di [questa guida](https://docs.ovh.com/it/hosting/hosting_condiviso_come_mettere_online_il_tuo_sito/#step-2-carica-i-file-del-sito-nello-spazio-di-storage){.external}).
+Una volta creato lo script è necessario caricarlo sullo spazio di storage dell’hosting Web. Per effettuare questa operazione, è necessario collegarsi all’hosting (se hai bisogno di aiuto, consulta lo step 2 di [questa guida](/pages/web/hosting/hosting_how_to_get_my_website_online#step-2-carica-i-file-del-sito-nello-spazio-di-storage){.external}).
 
 Per realizzare correttamente gli step successivi, carica lo script nella cartella “www”. **Ti consigliamo di prestare la massima attenzione al nome assegnato al file dello script di backup**: quando effettui l’upload nello spazio di storage assicurati di non sovrascriverlo a un file già esistente con lo stesso nome. Nel caso, modifica il nome dello script appena creato e prova a caricarlo di nuovo.
 
@@ -150,7 +147,7 @@ Una volta terminata questa procedura ti consigliamo di eliminare il file di back
 
 > [!primary]
 >
-> Utilizzare uno script di backup e task pianificati (detti CRON) ti permette di automatizzare i backup con la frequenza che preferisci. Per maggiori informazioni sui task pianificati, consulta [questa guida](https://docs.ovh.com/it/hosting/hosting_web_task_automatizzaticron/){.external}.
+> Utilizzare uno script di backup e task pianificati (detti CRON) ti permette di automatizzare i backup con la frequenza che preferisci. Per maggiori informazioni sui task pianificati, consulta [questa guida](/pages/web/hosting/cron_tasks){.external}.
 >
 
 ### Comando SSH

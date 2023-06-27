@@ -1,10 +1,7 @@
 ---
 title: Object Storage Swift - Colocar un contenedor de Object Storage detrás de un nombre de dominio
 excerpt: Colocar un contenedor de Object Storage detrás de un nombre de dominio
-slug: pcs/link-domain
-section: OpenStack Swift Storage Class Specifics
 legacy_guide_number: g2006
-order: 120
 updated: 2021-10-27
 ---
 
@@ -20,7 +17,7 @@ Esta guía explica cómo configurar un dominio en sus contenedores para facilita
 
 Para seguir todos los pasos de esta guía, es necesario:
 
-- [Añadir espacios de almacenamiento](https://docs.ovh.com/es/storage/object-storage/pcs/create-container/) (EN)
+- [Añadir espacios de almacenamiento](/pages/cloud/storage/object_storage/pcs_create_container) (EN)
 - Tener un dominio registrado
 
 ## La teoría

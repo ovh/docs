@@ -1,11 +1,8 @@
 ---
 title: Jak zapobiec sytuacji, w której dysk maszyny wirtualnej z systemem Linux przechodzi w tryb tylko do odczytu
-slug: jak-zapobiec-trybowi-tylko-do-odczytu-na-dysku-z-systemem-linux
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/jak-zapobiec-trybowi-tylko-do-odczytu-na-dysku-z-systemem-linux/'
+    canonical: '/pages/cloud/private-cloud/comment_eviter_le_disk_en_read_only_sous_linux'
 excerpt: Jak zapobiec sytuacji, w której dysk maszyny wirtualnej z systemem Linux przechodzi w tryb tylko do odczytu
-section: Zarządzanie wirtualnymi maszynami
-order: 10
 updated: 2020-11-18
 ---
 

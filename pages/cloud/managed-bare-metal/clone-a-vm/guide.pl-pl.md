@@ -1,11 +1,8 @@
 ---
 title: Klonowanie wirtualnej maszyny
-slug: klonowanie-wiertualnej-maszyny
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/klonowanie-wiertualnej-maszyny/'
+    canonical: '/pages/cloud/private-cloud/clone_a_vm'
 excerpt: Dowiedz się, jak sklonować wirtualną maszynę przy użyciu vSphere
-section: Zarządzanie wirtualnymi maszynami
-order: 07
 updated: 2020-11-18
 ---
 
@@ -21,13 +18,13 @@ Klonowanie wirtualnej maszyny umożliwia utworzenie kopii maszyny źródłowej.
 
 - Posiadanie usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external}.
 - Posiadanie co najmniej jednej wirtualnej maszyny w klastrze.
-- Dostęp do [interfejsu vSphere](../polaczenie-interfejs-vsphere/)
+- Dostęp do [interfejsu vSphere](/pages/cloud/managed-bare-metal/vsphere-interface)
 
 ## W praktyce
 
 ### Klonowanie wirtualnej maszyny
 
-Przejdź do [interfejsu vSphere](../polaczenie-interfejs-vsphere/), a następnie do widoku `Hosty i klastry`.
+Przejdź do [interfejsu vSphere](/pages/cloud/managed-bare-metal/vsphere-interface), a następnie do widoku `Hosty i klastry`.
 
 Kliknij prawym przyciskiem myszy wirtualną maszynę, którą chcesz sklonować, a następnie kliknij `Klonuj`{.action} i `Klonuj wirtualną maszynę...`{.action}. 
 
@@ -49,9 +46,9 @@ Określ lokalizację przestrzeni dyskowej dla tej wirtualnej maszyny.
 
 Format dysku wirtualnego w tym przypadku to "Thin Provision", co oznacza, że wirtualny dysk zostanie utworzony, ale będzie wykorzystywał tylko rzeczywistą przestrzeń dyskową, niezależnie od przestrzeni dyskowej wcześniej wykorzystywanej na źródłowej wirtualnej maszynie.
 
-Więcej informacji o rodzajach formatów dysków znajdziesz w [tym przewodniku](../jaki-format-dysku-wybrac/).
+Więcej informacji o rodzajach formatów dysków znajdziesz w [tym przewodniku](/pages/cloud/managed-bare-metal/choosing-disk-type).
 
-Za pomocą linii `VM Storage Policy` będziesz mógł wybrać domyślną politykę przechowywania danych w przypadku datastore lub opcji [VM encryption](../szyfrowanie-vm/).
+Za pomocą linii `VM Storage Policy` będziesz mógł wybrać domyślną politykę przechowywania danych w przypadku datastore lub opcji [VM encryption](/pages/cloud/managed-bare-metal/vm_encrypt).
 
 ![Storage wirtualnej maszyny](images/clonevm04.png){.thumbnail}
 

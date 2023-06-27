@@ -1,9 +1,6 @@
 ---
 title: 'Recuperar a cópia de segurança da base de dados de um alojamento web'
 excerpt: 'Saiba como recuperar a cópia de segurança de uma base de dados de um alojamento web da OVH'
-slug: partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql
-section: Bases de dados
-order: 03
 updated: 2018-05-19
 ---
 
@@ -131,7 +128,7 @@ Substitua a informação genérica do script pela informação da base de dados 
 
 #### 2 - Carregar o script no espaço de armazenamento
 
-Depois de criar o script de backup, deverá carregá-lo para o espaço de armazenamento do alojamento web. Para isso, ligue-se ao seu espaço de armazenamento. Se precisar de ajuda, consulte o passo 2.2 do manual “[Aceder ao espaço de armazenamento](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/#22-aceder-ao-espaco-de-armazenamento){.external}”.
+Depois de criar o script de backup, deverá carregá-lo para o espaço de armazenamento do alojamento web. Para isso, ligue-se ao seu espaço de armazenamento. Se precisar de ajuda, consulte o passo 2.2 do manual “[Aceder ao espaço de armazenamento](/pages/web/hosting/hosting_how_to_get_my_website_online#22-aceder-ao-espaco-de-armazenamento){.external}”.
 
 Para poder realizar as seguintes ações, descarregue o script para a pasta “www”. **Preste especial atenção ao nome do ficheiro do script de backup.** Certifique-se de que não apaga um ficheiro já existente com o mesmo nome no espaço de armazenamento quando carregar o script. Se aparecer uma mensagem de aviso deste tipo, altere o nome do script que acabou de criar e tente carregá-lo novamente.
 
@@ -149,7 +146,7 @@ Antes de terminar, recomendamos vivamente que elimine o ficheiro de backup e o s
 
 > [!primary]
 >
-> A utilização de um script de backup e das tarefas planificadas (chamadas “CRON”) permitir-lhe-á automatizar as cópias de segurança segundo a frequência que desejar. Saiba mais sobre as tarefas planificadas no manual: "[Alojamento Partilhado: Tarefas Agendadas / CRON](https://docs.ovh.com/pt/hosting/alojamento_partilhado_tarefas_agendadas_cron/){.external}".
+> A utilização de um script de backup e das tarefas planificadas (chamadas “CRON”) permitir-lhe-á automatizar as cópias de segurança segundo a frequência que desejar. Saiba mais sobre as tarefas planificadas no manual: "[Alojamento Partilhado: Tarefas Agendadas / CRON](/pages/web/hosting/cron_tasks){.external}".
 >
 
 ### Recuperar um backup através de um comando SSH

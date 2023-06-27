@@ -1,9 +1,6 @@
 ---
 title: 'Conexão à base de dados do servidor de bases de dados'
-slug: conexao-base-de-dados-servidor-bdd
 excerpt: 'Saiba como se conectar a uma base de dados'
-section: Configuração
-order: 03
 updated: 2023-02-15
 ---
 
@@ -72,7 +69,7 @@ Se a conexão for bem-sucedida, acederá à página seguinte do phpMyAdmin.
 
 > [!warning]
 >
-> Se utiliza uma oferta "Web Cloud Databases"/"SQL Privado", não se esqueça de autorizar o seu IP com a ajuda do guia sobre a [configuração do seu servidor de base de dados](https://docs.ovh.com/pt/clouddb/configurar-otimizar-servidor-de-bases-de-dados/).
+> Se utiliza uma oferta "Web Cloud Databases"/"SQL Privado", não se esqueça de autorizar o seu IP com a ajuda do guia sobre a [configuração do seu servidor de base de dados](/pages/web/clouddb/configure-database-server).
 >
 
 Para se conectar à base de dados, certifique-se de que tem à mão as seguintes informações:

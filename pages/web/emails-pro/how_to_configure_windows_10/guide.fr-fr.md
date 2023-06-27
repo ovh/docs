@@ -1,9 +1,6 @@
 ---
 title: 'Configurer son compte E-mail Pro sur Courrier pour Windows 10'
-slug: configuration-courrier-windows-10
 excerpt: "Apprenez à configurer un compte E-mail Pro sur l'application Courrier pour Windows 10"
-section: 'Configuration sur ordinateur'
-order: 4
 updated: 2020-03-18
 ---
 
@@ -90,8 +87,8 @@ OVHcloud propose également une application web disposant de [fonctions collabor
 
 ## Aller plus loin
 
-[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur l'application Courrier pour Windows 10](https://docs.ovh.com/fr/emails/configuration-courrier-sur-windows-10/){.external}
+[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur l'application Courrier pour Windows 10](/pages/web/emails/how_to_configure_windows_10){.external}
 
-[Configurer son compte Exchange sur l'application Courrier pour Windows 10](https://docs.ovh.com/fr/microsoft-collaborative-solutions/configuration-courrier-windows-10/){.external}
+[Configurer son compte Exchange sur l'application Courrier pour Windows 10](/pages/web/microsoft-collaborative-solutions/how_to_configure_windows_10){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

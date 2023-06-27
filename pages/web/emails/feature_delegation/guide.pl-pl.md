@@ -1,10 +1,7 @@
 ---
 title: 'Delegowanie zarządzania kontami e-mail innej osobie'
 legacy_guide_number: 1933
-slug: delegowanie-zarzadzanie-mailami
 excerpt: 'Dowiedz się, jak delegować uprawnienia do zarządzania kontami e-mail w ramach usługi MX Plan'
-section: 'Funkcjonalności kont e-mail'
-order: 05
 updated: 2021-10-08
 ---
 
@@ -84,6 +81,6 @@ Można dodać kilka identyfikatorów OVHcloud, aby zarządzać każdym adresem e
 
 ## Sprawdź również
 
-[Pierwsze kroki z usługą MX Plan](https://docs.ovh.com/pl/emails/hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/)
+[Pierwsze kroki z usługą MX Plan](/pages/web/emails/email_generalities)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

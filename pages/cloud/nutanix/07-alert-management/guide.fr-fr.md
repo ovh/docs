@@ -1,9 +1,6 @@
 ---
 title: Gestion des alertes et des évènements
-slug: alerts-events
 excerpt: 'Analyser et modifier les alertes et les évènements dans un cluster Nutanix'
-section: Premiers pas
-order: 10
 updated: 2022-03-17
 ---
 

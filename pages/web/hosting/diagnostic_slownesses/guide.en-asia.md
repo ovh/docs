@@ -1,9 +1,6 @@
 ---
 title: "My website is slow. What to do?"
 excerpt: "Identify the cause of your website's slowdowns and find out how to resolve this situation"
-slug: slow-website-fix
-section: Troubleshooting
-order: 09
 updated: 2022-11-17
 ---
 
@@ -124,7 +121,7 @@ Test your website from another device/computer, then from another Internet acces
 
 #### 1.3 - Test the hosting with a file independent from your website
 
-Place a file called **phpinfo.php** at the root of your website in the [FTP storage space on your shared hosting](https://docs.ovh.com/asia/en/hosting/log-in-to-storage-ftp-web-hosting/).
+Place a file called **phpinfo.php** at the root of your website in the [FTP storage space on your shared hosting](/pages/web/hosting/ftp_connection).
 
 In this file, insert the following code:
 
@@ -154,7 +151,7 @@ phpinfo();
 
 #### 1.4 - Test your database connectivity:
 
-Log in to your database by following **step 3** in our guide on [web hosting databases](https://docs.ovh.com/asia/en/hosting/creating-database/).
+Log in to your database by following **step 3** in our guide on [web hosting databases](/pages/web/hosting/sql_create_database).
 
 If the connection is successful, you will land on the following interface:
 
@@ -162,7 +159,7 @@ If the connection is successful, you will land on the following interface:
 
 > [!warning]
 >
-> If you encounter an error, please refer to our documentation on [common errors encountered with a database](https://docs.ovh.com/asia/en/hosting/database-frequent-errors/). Then use the guide above to resolve the issue, and try connecting to your database again.
+> If you encounter an error, please refer to our documentation on [common errors encountered with a database](/pages/web/hosting/diagnosis_database_errors). Then use the guide above to resolve the issue, and try connecting to your database again.
 >
 
 #### 1.5 - Interpretation of diagnostics performed
@@ -198,11 +195,11 @@ Below, you will find the actions you need to take to identify the source(s) of t
 
 #### 2.1 - Check your web hosting plan’s configuration
 
-Check the PHP engine, PHP version and runtime environment used on your Web Hosting plan, using our guide to [configuring your Web Hosting plan](https://docs.ovh.com/asia/en/hosting/modify_your_web_hosting_systems_runtime_environment/).
+Check the PHP engine, PHP version and runtime environment used on your Web Hosting plan, using our guide to [configuring your Web Hosting plan](/pages/web/hosting/ovhconfig_modify_system_runtime).
 
 If you are using an outdated PHP version on your web hosting plan, the "**PHP CGI**" engine and/or the "**legacy**" environment, and **if your website is compatible**, you should use the "**PHP**" engine (PHP FPM), the "**stable**" environment, or "**stable64**" with the most recent PHP version possible.
 
-To compare the available PHP versions depending on the runtime environment you are using, see **Step 2** in the guide on [configuring the PHP version on your hosting system](https://docs.ovh.com/asia/en/hosting/how_to_configure_php_on_your_ovh_web_hosting_package_2014/).
+To compare the available PHP versions depending on the runtime environment you are using, see **Step 2** in the guide on [configuring the PHP version on your hosting system](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014).
 
 Using a recent PHP version, the "**stable**" or "**stable64**" runtime environment with the "**PHP**" engine (PHP FPM) makes your website much smoother and faster. As a guide, the "**PHP**" engine (PHP FPM) can be up to 50 times more efficient than the "**PHP CGI**" engine to perform its tasks.
 
@@ -212,7 +209,7 @@ Outgoing connections are very resource intensive. When these connections are num
 
 This results in slowdowns or even **504 Gateway Timeout** codes.
 
-To analyse outgoing connections to your hosting plan, please read its **OUT** logs. You can use our documentation on [web hosting logs](https://docs.ovh.com/asia/en/hosting/shared_view_my_websites_logs_and_statistics/).
+To analyse outgoing connections to your hosting plan, please read its **OUT** logs. You can use our documentation on [web hosting logs](/pages/web/hosting/logs_and_statistics).
 
 If you notice that there are a lot of outgoing connections on your hosting, compare your **OUT** logs with your **WEB** logs by using their timestamps. This will help you identify the script(s) responsible for this situation.
 
@@ -222,7 +219,7 @@ If you are using a Content Management System (CMS) such as WordPress, Joomla!, P
 
 #### 2.3 - Analyse the flow of HTTP requests made to your web hosting plan
 
-To do this, please refer to your web hosting plan’s **WEB** logs using our guide on [how to view your hosting plan’s logs](https://docs.ovh.com/asia/en/hosting/shared_view_my_websites_logs_and_statistics/).
+To do this, please refer to your web hosting plan’s **WEB** logs using our guide on [how to view your hosting plan’s logs](/pages/web/hosting/logs_and_statistics).
 
 The most resource intensive requests are HTTP requests like **POST**, then HTTP requests like **PUT**. These files make changes and inserts, respectively.
 
@@ -250,7 +247,7 @@ To reduce the flow of requests each time your pages load, you can also set up a 
 
 > [!primary]
 >
-> OVHcloud offers several [CDN options](https://www.ovhcloud.com/asia/web-hosting/options/). If you would like to use or activate one for your web hosting plan, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) then read our guide on [Using the OVHcloud CDN](https://docs.ovh.com/asia/en/hosting/guide_to_using_the_geocache_accelerator_on_a_web_hosting_package/).
+> OVHcloud offers several [CDN options](https://www.ovhcloud.com/asia/web-hosting/options/). If you would like to use or activate one for your web hosting plan, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) then read our guide on [Using the OVHcloud CDN](/pages/web/hosting/cdn_how_to_use_cdn).
 >
 
 #### 2.4 - optimise your database
@@ -283,7 +280,7 @@ Resize all of your images to minimise resource consumption.
 
 #### 2.6 - Optimise the rest of your website
 
-See our guide on [optimising performance for your website](https://docs.ovh.com/asia/en/hosting/web_hosting_optimise_your_website_performance/).
+See our guide on [optimising performance for your website](/pages/web/hosting/optimise_your_website_performance).
 
 You can find optimisation suggestions for your site by analysing it at [gtmetrix.com](https://gtmetrix.com){.external} (not affiliated with OVHcloud).
 

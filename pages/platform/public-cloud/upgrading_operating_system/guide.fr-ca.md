@@ -1,9 +1,6 @@
 ---
 title: "Mettre à jour votre système d'exploitation"
-slug: upgrade-os
 excerpt: "Découvrez comment mettre à jour un système d'exploitation en fin de vie"
-section: 'Tutoriels'
-order: 14
 updated: 2022-02-07
 ---
 
@@ -15,7 +12,7 @@ Ce tutoriel décrit les étapes à suivre pour mettre à jour un système d'expl
 
 > [!alert]
 > Avertissement : comme pour toute mise à niveau majeure d'un système d'exploitation, il existe un risque de panne, de perte de données ou de défaillance de la configuration logicielle.
-> Par conséquent, avant de suivre ce tutoriel, OVHcloud vous recommande vivement de [sauvegarder votre instance](../sauvegarder-une-instance/) et d'effectuer des tests approfondis sur vos applications, pour s'assurer qu'elles fonctionnent sur la nouvelle version du système d'exploitation.
+> Par conséquent, avant de suivre ce tutoriel, OVHcloud vous recommande vivement de [sauvegarder votre instance](/pages/platform/public-cloud/save_an_instance) et d'effectuer des tests approfondis sur vos applications, pour s'assurer qu'elles fonctionnent sur la nouvelle version du système d'exploitation.
 >
 
 > [!primary]
@@ -25,8 +22,8 @@ Ce tutoriel décrit les étapes à suivre pour mettre à jour un système d'expl
 
 ## Prérequis
 
-- Disposer d'un [accès root au serveur](../passer-root-et-definir-un-mot-de-passe/)
-- Avoir effectué [une sauvegarde de votre instance](../sauvegarder-une-instance/)
+- Disposer d'un [accès root au serveur](/pages/platform/public-cloud/become_root_and_change_password)
+- Avoir effectué [une sauvegarde de votre instance](/pages/platform/public-cloud/save_an_instance)
 
 ## En pratique
 
@@ -130,7 +127,7 @@ $ Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-147-generic x86_64)
 > Lorsque vous mettez à jour le système d'exploitation au lieu de le réinstaller, la nouvelle version de votre OS n'est pas indiquée sur l'espace client / l'API OVHcloud, ni sur l'API Horizon / OpenStack.
 >
 
-Vérifiez alors que vos applications fonctionnent comme prévu. En cas de problème, nous vous recommandons de [restaurer la sauvegarde](../creer-restaurer-un-serveur-virtuel-a-partir-dune-sauvegarde/) effectuée avant la mise à jour.
+Vérifiez alors que vos applications fonctionnent comme prévu. En cas de problème, nous vous recommandons de [restaurer la sauvegarde](/pages/platform/public-cloud/create_restore_a_virtual_server_with_a_backup) effectuée avant la mise à jour.
 
 ### Fedora
 
@@ -163,7 +160,7 @@ $ sudo dnf system-upgrade reboot
 Une fois la version téléchargée et le processus de mise à jour lancé, le serveur redémarre pour terminer la mise à jour.
 <br>Il peut s'écouler un certain temps avant que vous ne puissiez vous reconnecter au serveur, car la mise à jour prend du temps.
 
-Vérifiez que vos applications fonctionnent comme prévu. En cas de problème, nous vous recommandons de [restaurer la sauvegarde](../creer-restaurer-un-serveur-virtuel-a-partir-dune-sauvegarde/) effectuée avant la mise à jour.
+Vérifiez que vos applications fonctionnent comme prévu. En cas de problème, nous vous recommandons de [restaurer la sauvegarde](/pages/platform/public-cloud/create_restore_a_virtual_server_with_a_backup) effectuée avant la mise à jour.
 
 > [!primary]
 > Si vous rencontrez des difficultés, vous trouverez des réponses à vos questions sur le site Web [Fedora Docs](https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/){.external}.

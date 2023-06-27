@@ -1,9 +1,6 @@
 ---
 title: Contratar un proyecto de Public Cloud a través de la API de OVHcloud
 excerpt: Cómo contratar su proyecto de Public Cloud con la API de OVHcloud
-slug: contratar-proyecto-public-cloud-api
-section: Primeros pasos
-order: 08
 updated: 2020-12-09
 ---
 
@@ -22,8 +19,8 @@ La creación de un proyecto es la primera etapa del despliegue de [instancias Pu
 ## Requisitos
 
 - Disponer de las claves de OVHcloud válidas.
-- Disponer de una [forma de pago](https://docs.ovh.com/us/es/billing/gestionar-formas-de-pago/) válida y registrada en su cuenta de OVHcloud.
-- Estar familiarizado con el [funcionamiento de la APIv6 de OVHcloud](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/).
+- Disponer de una [forma de pago](/pages/account/billing/manage-payment-methods) válida y registrada en su cuenta de OVHcloud.
+- Estar familiarizado con el [funcionamiento de la APIv6 de OVHcloud](/pages/account/api/first-steps).
 
 ## Procedimiento
 

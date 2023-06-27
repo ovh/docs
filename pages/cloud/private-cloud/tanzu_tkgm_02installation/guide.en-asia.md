@@ -1,9 +1,6 @@
 ---
 title: Installing Tanzu Kubernetes Grid
-slug: tanzu-tkgm-installation
 excerpt: Learn how to integrate Tanzu Kubernetes Grid into your Hosted Private Cloud powered by VMware infrastructure 
-section: Tanzu
-order: 03
 updated: 2022-11-10
 ---
 
@@ -219,7 +216,7 @@ The graphical interface for the Linux virtual machine is then available.
 
 The configuration and administration tools for **Tanzu Kubernetes Grid** are installed on the **Bootstrap** virtual machine. This virtual machine must be able to connect to the Internet and to the vSphere cluster.
 
-Write down **the public IP address** you use on this virtual machine and use this guide [Authorise IP addresses to connect to vCenter](https://docs.ovh.com/asia/en/private-cloud/authorise-ip-addresses-vcenter/) to grant access to the vSphere cluster to the new virtual machine.
+Write down **the public IP address** you use on this virtual machine and use this guide [Authorise IP addresses to connect to vCenter](/pages/cloud/private-cloud/autoriser_des_ip_a_se_connecter_au_vcenter) to grant access to the vSphere cluster to the new virtual machine.
 
 ### Deploying the **Tanzu Kubernetes Grid** cluster on your infrastructure 
 
@@ -358,7 +355,7 @@ Go to the vCenter interface to see the seven virtual machines created.
 
 ## Go further
 
-[Administrating a TKG cluster](https://docs.ovh.com/asia/en/private-cloud/tanzu-tkgm-management)
+[Administrating a TKG cluster](/pages/cloud/private-cloud/tanzu_tkgm_03manage)
 
 [Introducing VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid)
 

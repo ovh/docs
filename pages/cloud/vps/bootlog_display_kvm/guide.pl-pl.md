@@ -1,8 +1,6 @@
 ---
 title: Wyświetl logi bootu w KVM
-slug: wyswietlanie-bootlog-w-kvm
 excerpt: 'Dowiedz się, jak zdiagnozować serwer VPS, sprawdzając logi startowe (boot logs)'
-section: Diagnostyka i tryb Rescue
 updated: 2021-07-05
 ---
 
@@ -14,7 +12,7 @@ updated: 2021-07-05
 
 ## Wprowadzenie
 
-Jeśli Twój serwer VPS nie odpowiada, powinieneś mieć dostęp do niego za pośrednictwem [KVM](../kvm_na_serwerach_vps/) w Panelu klienta. Najszybszym sposobem, aby zdiagnozować problem jest sprawdzenie logów startowych serwera (boot logi). Jednak konfiguracja GRUB musi zostać zmieniona, aby wyświetliły się te logi. 
+Jeśli Twój serwer VPS nie odpowiada, powinieneś mieć dostęp do niego za pośrednictwem [KVM](/pages/cloud/vps/using_kvm_for_vps) w Panelu klienta. Najszybszym sposobem, aby zdiagnozować problem jest sprawdzenie logów startowych serwera (boot logi). Jednak konfiguracja GRUB musi zostać zmieniona, aby wyświetliły się te logi. 
 
 > [!primary]
 >
@@ -45,7 +43,7 @@ Jeśli nadal masz dostęp do serwera VPS przez SSH, możesz przejść [do etapu 
 
 ### Etap 1: zrestartuj serwer VPS w trybie Rescue
 
-Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i uruchom restart serwera w trybie rescue. W razie potrzeby zapoznaj się z naszym [przewodnikiem dotyczącym trybu Rescue](../rescue/).
+Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i uruchom restart serwera w trybie rescue. W razie potrzeby zapoznaj się z naszym [przewodnikiem dotyczącym trybu Rescue](/pages/cloud/vps/rescue).
 
 ### Etap 2: przeprowadzić wstępną weryfikację
 
@@ -168,12 +166,12 @@ Następnie użyj następującego polecenia, aby ponownie wygenerować plik konfi
 ~$ grub2-mkconfig -o "$(readlink /etc/grub.cfg)"
 ```
 
-Po przeprowadzeniu modyfikacji uruchom ponownie Twój VPS w trybie "normalnym" w [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Logi boot muszą się teraz pojawić podczas korzystania z [konsoli KVM](../kvm_na_serwerach_vps/).
+Po przeprowadzeniu modyfikacji uruchom ponownie Twój VPS w trybie "normalnym" w [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Logi boot muszą się teraz pojawić podczas korzystania z [konsoli KVM](/pages/cloud/vps/using_kvm_for_vps).
 
 ## Sprawdź również
 
-[Używanie konsoli KVM z VPS](../kvm_na_serwerach_vps/)
+[Używanie konsoli KVM z VPS](/pages/cloud/vps/using_kvm_for_vps)
 
-[Włącz tryb Rescue na serwerze VPS](../rescue/)
+[Włącz tryb Rescue na serwerze VPS](/pages/cloud/vps/rescue)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

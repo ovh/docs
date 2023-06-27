@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguracja konta E-mail Pro'
-slug: pierwsza-konfiguracja-email-pro
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro'
-section: 'Pierwsze kroki'
-order: 1
 updated: 2020-04-09
 ---
 
@@ -84,7 +81,7 @@ W kolumnie `Diagnostyka`{.action} możesz sprawdzić konfigurację DNS domeny. J
 
 - **Automatyczna konfiguracja podczas dodawania domeny OVHcloud**: wprowadzona zmiana może pojawić się w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} dopiero za kilka godzin.
 
-- **Ręczna konfiguracja domeny nieobsługiwanej przez OVHcloud**: kliknij czerwony przycisk, aby wyświetlić listę modyfikacji do wprowadzania. <br>*Instrukcje dotyczące rekordu CNAME* znajdziesz w naszym przewodniku <br>*Instrukcje dotyczące rekordu MX* znajdziesz w naszym przewodniku <br>*W przypadku rekordu SRV* wypełnij pole DNS z wykorzystaniem informacji, które wyświetlane zostaną po kliknięciu czerwonego przycisku. Możesz zapoznać się z przewodnikiem „[Edycja strefy DNS OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}”, aby dodać ten rekord.
+- **Ręczna konfiguracja domeny nieobsługiwanej przez OVHcloud**: kliknij czerwony przycisk, aby wyświetlić listę modyfikacji do wprowadzania. <br>*Instrukcje dotyczące rekordu CNAME* znajdziesz w naszym przewodniku <br>*Instrukcje dotyczące rekordu MX* znajdziesz w naszym przewodniku <br>*W przypadku rekordu SRV* wypełnij pole DNS z wykorzystaniem informacji, które wyświetlane zostaną po kliknięciu czerwonego przycisku. Możesz zapoznać się z przewodnikiem „[Edycja strefy DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external}”, aby dodać ten rekord.
 
 ![emailpro](images/first_config_email_pro_configure_domain_update.png){.thumbnail}
 
@@ -119,7 +116,7 @@ Po wprowadzeniu informacji, kliknij przycisk `Dalej`{.action}, sprawdź dane, kt
 
 Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu możesz użyć udostępnionej przez OVHcloud aplikacji online (*webapp*). Aplikacja dostępna jest pod adresem [webmail](https://www.ovh.pl/mail/){.external}. Zaloguj się, wprowadzając dane identyfikacyjne dla Twojego adresu e-mail.
 
-Aby skonfigurować Twoje konto e-mail w programie pocztowym lub na urządzeniu typu _smartfon_ lub tablet, [skorzystaj z przewodników dotyczących konfiguracji](../). Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta E-mail Pro:
+Aby skonfigurować Twoje konto e-mail w programie pocztowym lub na urządzeniu typu _smartfon_ lub tablet, [skorzystaj z przewodników dotyczących konfiguracji](/products/web-cloud-email-collaborative-solutions-email-pro). Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta E-mail Pro:
 
 |Typ serwera|Nazwa serwera|Typ zabezpieczenia|Port|
 |---|---|---|---|
@@ -141,9 +138,9 @@ Aby skonfigurować Twoje konto e-mail w programie pocztowym lub na urządzeniu t
 
 [Dodaj alias do konta e-mail](https://docs.ovh.com/pl/microsoft-collaborative-solutions/email-alias/)
 
-[Tworzenie automatycznych podpisów](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_20132016_automatyczny_podpis_-_disclaimer/)
+[Tworzenie automatycznych podpisów](/pages/web/microsoft-collaborative-solutions/feature_footers)
 
-[Zarządzanie płatnościami za Twoje konta E-mail Pro](https://docs.ovh.com/pl/emails-pro/zarzadzanie-platnosciami-emailpro/)
+[Zarządzanie płatnościami za Twoje konta E-mail Pro](/pages/web/emails-pro/manage_billing_emailpro)
 
 [Zarządzanie polityką bezpieczeństwa usługi e-mail](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-polityka-bezpieczenstwa-exchange/)
 

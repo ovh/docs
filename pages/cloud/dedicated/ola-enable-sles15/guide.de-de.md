@@ -1,9 +1,6 @@
 ---
 title: "Konfigurieren der OVHcloud Link Aggregation in SLES 15"
-slug: ola-sles15
 excerpt: "Erfahren Sie hier, wie Sie OLA für Ihren SLES 15 Server aktivieren"
-section: "Fortgeschrittene Nutzung"
-order: 4
 updated: 2023-03-07
 ---
 
@@ -22,7 +19,7 @@ Die OVHcloud Link Aggregation (OLA) wurde von unseren Teams entwickelt, um die V
 
 ## Voraussetzungen
 
-- Sie haben Ihre [Netzwerkkarte für die OVHcloud Link Aggregation im OVHcloud Kundencenter konfiguriert](https://docs.ovh.com/de/dedicated/ola-manager/).
+- Sie haben Ihre [Netzwerkkarte für die OVHcloud Link Aggregation im OVHcloud Kundencenter konfiguriert](/pages/cloud/dedicated/ola-enable-manager).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
@@ -141,12 +138,12 @@ Sie können die über das Interface `ifcfg-bond0` verwendeten Einstellungen auch
 
 ## Weiterführende Informationen
 
-[Konfiguration der OVHcloud Link Aggregation in Ihrem Kundencenter](https://docs.ovh.com/de/dedicated/ola-manager/)
+[Konfiguration der OVHcloud Link Aggregation in Ihrem Kundencenter](/pages/cloud/dedicated/ola-enable-manager)
 
-[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9](https://docs.ovh.com/de/dedicated/ola-debian9/)
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9](/pages/cloud/dedicated/ola-enable-debian9)
 
-[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in CentOS 7](https://docs.ovh.com/de/dedicated/ola-centos7/)
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in CentOS 7](/pages/cloud/dedicated/ola-enable-centos7)
 
-[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Windows Server 2019](https://docs.ovh.com/de/dedicated/ola-w2k19/)
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Windows Server 2019](/pages/cloud/dedicated/ola-enable-w2k19)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

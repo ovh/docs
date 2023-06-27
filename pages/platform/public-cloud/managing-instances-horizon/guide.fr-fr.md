@@ -1,9 +1,6 @@
 ---
 title: Gérer vos instances Public Cloud via Horizon
-slug: gerer-instances-public-cloud
 excerpt: "Découvrez comment gérer vos instances à travers l'interface Horizon"
-section: Gestion depuis Horizon
-order: 04
 updated: 2022-01-25
 ---
 
@@ -17,8 +14,8 @@ Outre l'espace client OVHcloud, vous pouvez également gérer vos projets Public
 
 ## Prérequis
 
-- Avoir créé une instance Public Cloud depuis votre [espace client OVHcloud](../premiers-pas-instance-public-cloud/) ou à travers l'[interface Horizon](https://docs.ovh.com/fr/public-cloud/creer-une-instance-dans-horizon/).
-- [Avoir créé une clé SSH](../creation-des-cles-ssh/).
+- Avoir créé une instance Public Cloud depuis votre [espace client OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps) ou à travers l'[interface Horizon](/pages/platform/public-cloud/create_instance_in_horizon).
+- [Avoir créé une clé SSH](/pages/platform/public-cloud/public-cloud-first-steps#etape-1-creer-des-cles-ssh/).
 
 ## En pratique
 
@@ -43,7 +40,7 @@ Cliquez sur le menu `Compute`{.action} à gauche puis sélectionnez `Instances`{
 
 **Launch Instance** 
 
-Cette option vous permet de créer une instance. Consultez [ce guide](https://docs.ovh.com/fr/public-cloud/creer-une-instance-dans-horizon/) pour plus d'informations.
+Cette option vous permet de créer une instance. Consultez [ce guide](/pages/platform/public-cloud/create_instance_in_horizon) pour plus d'informations.
 
 **Delete Instances**
 
@@ -57,7 +54,7 @@ Ce menu vous permet d'exécuter les actions suivantes sur une ou plusieurs insta
 - Shut Off Instances : cette option permet de suspendre une ou plusieurs instances.
 - Soft Reboot Instances : cette option vous permet de faire un rédemarrage logiciel sur une ou plusieurs instances.
 
-**Create Snapshot** : Cette option permet de créé un snapshot (instantané) de votre instance. Consultez [ce guide](https://docs.ovh.com/fr/public-cloud/gestion-des-snapshots-dune-instance-dans-horizon/#creation-du-snapshot) pour plus d'informations.
+**Create Snapshot** : Cette option permet de créé un snapshot (instantané) de votre instance. Consultez [ce guide](/pages/platform/public-cloud/managing_snapshots_in_horizon#creation-du-snapshot) pour plus d'informations.
 
 ### Modifier une instance
 
@@ -65,9 +62,9 @@ Dans l’interface de gestion de l’instance, sélectionnez l'option souhaitée
 
 ![public-cloud](images/list2022.png){.thumbnail}
 
-- Attach Interface : cette option permet d'ajouter une ou plusieurs interfaces privées à votre instance via le VLAN. Pour plus d'informations, consultez [cette partie](https://docs.ovh.com/fr/public-cloud/public-cloud-vrack/#ajout-dune-interface-privee) du guide correspondant.
-- Detach Interface : cette option permet de supprimer une interface liée à une instance. Pour plus d'informations, consultez [cette partie](https://docs.ovh.com/fr/public-cloud/public-cloud-vrack/#suppression-dune-interface-privee) du guide correspondant.
-- Edit Instance : cette option permet de changer le nom de l'instance et les [groupes de sécurité](https://docs.ovh.com/fr/public-cloud/configure-security-group-horizon/).
+- Attach Interface : cette option permet d'ajouter une ou plusieurs interfaces privées à votre instance via le VLAN. Pour plus d'informations, consultez [cette partie](/pages/platform/network-services/getting-started-07-creating-vrack#ajout-dune-interface-privee) du guide correspondant.
+- Detach Interface : cette option permet de supprimer une interface liée à une instance. Pour plus d'informations, consultez [cette partie](/pages/platform/network-services/getting-started-07-creating-vrack#suppression-dune-interface-privee) du guide correspondant.
+- Edit Instance : cette option permet de changer le nom de l'instance et les [groupes de sécurité](/pages/platform/public-cloud/setup_security_group).
 
 > [!warning]
 > Les options en rouge indiquent la possibilité de perte de données pendant le processus. Assurez-vous de toujours disposer d'une sauvegarde de vos données avant de faire des changements sur votre instance.
@@ -151,7 +148,7 @@ Pour finir, cliquez sur `Rebuild Instance`{.action}. Cette operation peut prendr
 
 ### Suspendre ou mettre en pause une instance (Shelve or pause an instance)
 
-Pour savoir comment suspendre ou mettre en pause une instance, cliquez [ici](https://docs.ovh.com/fr/public-cloud/suspendre-ou-mettre-en-pause-une-instance/) pour consulter le guide spécifique à cette méthode.
+Pour savoir comment suspendre ou mettre en pause une instance, cliquez [ici](/pages/platform/public-cloud/suspend_or_pause_an_instance) pour consulter le guide spécifique à cette méthode.
 
 ### Accéder à la console de l'instance <a name="console"></a>
 
@@ -160,7 +157,7 @@ En cas de perte d’accès à votre instance, que cela soit suite à une mauvais
 > [!primary]
 >
 > Vous pouvez accéder directement à votre instance via la console VNC. Par contre, il vous faudra au préalable configurer un mot de passe pour l’utilisateur root.
-> Consultez [ce guide](https://docs.ovh.com/fr/public-cloud/passer-root-et-definir-un-mot-de-passe/) pour plus d'informations.
+> Consultez [ce guide](/pages/platform/public-cloud/become_root_and_change_password) pour plus d'informations.
 > La console VNC peut aussi servir de première approche lors d'un dysfonctionnement, afin d'établir un diagnostic grâce à l'analyse de la phase de démarrage de votre instance.
 > 
 

@@ -1,10 +1,7 @@
 ---
 title: 'Crear, lanzar y eliminar imágenes en Horizon'
 excerpt: 'Crear, lanzar y eliminar imágenes en Horizon'
-slug: crear_lanzar_y_eliminar_imagenes_en_horizon
 legacy_guide_number: g1784
-section: Gestión desde Horizon
-order: 7
 updated: 2021-12-30
 ---
 
@@ -22,7 +19,7 @@ Es posible añadir imágenes personalizadas en OpenStack Horizon. Esto le permit
 
 ## Requisitos
 
-- [Crear un acceso a Horizon](../horizon/)
+- [Crear un acceso a Horizon](/pages/platform/public-cloud/introducing_horizon)
 - Diríjase al menú «Imágenes» de OpenStack Horizon.
 
 ![](images/horizon_menu.png){.thumbnail}

@@ -1,8 +1,5 @@
 ---
 title: Configurar una cuenta Exchange en Mail de macOS
-slug: configuracion-mail-macos
-section: Configuración en el ordenador
-order: 06
 updated: 2021-12-28
 ---
 
@@ -54,7 +51,7 @@ OVHcloud también ofrece una aplicación web que permite acceder a su dirección
 
 ### Obtener una copia de seguridad de su dirección de correo
 
-Si necesita realizar alguna operación que pueda provocar la pérdida de los datos de su cuenta de correo, le recomendamos que realice una copia de seguridad previa de la cuenta de correo. Para ello, consulte el apartado "**Exportar**" de la sección "**Correo electrónico en Mac OS**" de nuestra guía [Migrar manualmente su dirección de correo electrónico](https://docs.ovh.com/es/emails/migrar-sus-direcciones-de-correo-manualmente/#exportar).
+Si necesita realizar alguna operación que pueda provocar la pérdida de los datos de su cuenta de correo, le recomendamos que realice una copia de seguridad previa de la cuenta de correo. Para ello, consulte el apartado "**Exportar**" de la sección "**Correo electrónico en Mac OS**" de nuestra guía [Migrar manualmente su dirección de correo electrónico](/pages/web/emails/manual_email_migration#exportar).
 
 ### Modificar los parámetros existentes
 
@@ -67,8 +64,8 @@ Si su cuenta de correo ya está configurada y debe acceder a los parámetros de 
 
 ## Más información
 
-[Configurar una dirección de correo electrónico incluida con un plan de hosting o un MX Plan en Mail de macOS](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/){.external}
+[Configurar una dirección de correo electrónico incluida con un plan de hosting o un MX Plan en Mail de macOS](/pages/web/emails/how_to_configure_mail_macos){.external}
 
-[Configurar una cuenta Email Pro en Mail de macOS](https://docs.ovh.com/es/emails-pro/configurar-email-pro-mail-macos/){.external}
+[Configurar una cuenta Email Pro en Mail de macOS](/pages/web/emails-pro/how_to_configure_mail_macos){.external}
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

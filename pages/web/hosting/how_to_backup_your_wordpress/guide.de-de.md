@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Backup Ihrer WordPress Installation"
-slug: realize-backup-wordpress
 excerpt: "Erfahren Sie hier, wie Sie Dateien und Datenbank Ihrer WordPress Website sichern"
-section: 'Tutorials'
-order: 021
 updated: 2023-02-22
 ---
 
@@ -30,13 +27,13 @@ Sie sind für Backups von auf Webhostings gehosteten Websites alleine verantwort
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit einer [WordPress Installation](https://docs.ovh.com/de/hosting/wordpress-first-steps/).
+- Sie verfügen über ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit einer [WordPress Installation](/pages/web/hosting/wordpress_first-steps).
 
 ## In der praktischen Anwendung
 
 Sie können ein Backup auf zwei Arten durchführen: **Manuell** oder über ein **Plugin**.
 
-OVHcloud Webhostings beinhalten [automatische Sicherungen](https://docs.ovh.com/de/hosting/webhosting-speicherplatz-wiederherstellen/) (außervertraglich) und stellen einen Zugang zu diesen Backups zur Verfügung. Es liegt jedoch in Ihrer Verantwortung, eine sinnvolle Sicherungsplanung mit Ihren eigenen Wiederherstellungspunkten einzurichten.
+OVHcloud Webhostings beinhalten [automatische Sicherungen](/pages/web/hosting/ftp_save_and_backup) (außervertraglich) und stellen einen Zugang zu diesen Backups zur Verfügung. Es liegt jedoch in Ihrer Verantwortung, eine sinnvolle Sicherungsplanung mit Ihren eigenen Wiederherstellungspunkten einzurichten.
 
 ### Methode 1: Manuelle Sicherung durchführen
 
@@ -44,7 +41,7 @@ Das manuelle Backup muss in zwei Schritten erfolgen. Speichern Sie zuerst die PH
 
 #### 1.1 Dateien Ihrer Website sichern
 
-Der Datentransfer erfolgt über einen FTP-Client, z.B. FileZilla. Weitere Informationen finden Sie in unserem Tutorial "[FileZilla mit Ihrem OVHcloud Hosting verwenden](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/)".
+Der Datentransfer erfolgt über einen FTP-Client, z.B. FileZilla. Weitere Informationen finden Sie in unserem Tutorial "[FileZilla mit Ihrem OVHcloud Hosting verwenden](/pages/web/hosting/ftp_filezilla_user_guide)".
 
 Wenn Sie mit Ihrem Server über FTP verbunden sind, kopieren Sie den Inhalt des Verzeichnisses `www` (per Drag & Drop) zu einem lokalen Ordner. Dieses Verzeichnis enthält alle Dateien und Verzeichnisse Ihrer WordPress Installation (Einstellungen, Themes, Medien, etc.).
 
@@ -60,7 +57,7 @@ Um Ihre Datenbank zu exportieren, loggen Sie sich Sie sich über die URL, die Si
 
 > [!success]
 >
-> Folgen Sie unserer Anleitung zum [Export einer Datenbank](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/).
+> Folgen Sie unserer Anleitung zum [Export einer Datenbank](/pages/web/hosting/sql_database_export).
 
 ![PHPMyAdmin Zugang - Empfang](images/how_to_backup_your_wordpress_2.png){.thumbnail}
 
@@ -152,7 +149,7 @@ Wenn Sie diese bewährten Verfahren anwenden, können Sie Ihre Website stets zu 
 ## Weiterführende Informationen <a name="go-further"></a>
 
 - [Offizielle Website von WordPress](https://wordpress.org){.external}
-- [Mehr Informationen zu den Sicherungen Ihres Webhostings](https://docs.ovh.com/de/hosting/technische-eigenschaften-web-hosting/#informationen-zu-den-automatischen-backups)
+- [Mehr Informationen zu den Sicherungen Ihres Webhostings](/pages/web/hosting/hosting_technical_specificities#informationen-zu-den-automatischen-backups)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

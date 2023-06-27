@@ -1,9 +1,6 @@
 ---
 title: 'Utiliser son adresse e-mail depuis le webmail Outlook Web Access (OWA)'
-slug: utilisation-owa
 excerpt: 'Découvrez comment utiliser votre adresse e-mail depuis le webmail OWA'
-section: 'Premiers pas'
-order: 04
 updated: 2020-02-25
 ---
 
@@ -124,7 +121,7 @@ Renseignez les informations demandées en fonction de la tâche que vous voudrez
 
 ![useowa](images/use-owa-step14.png){.thumbnail}
 
-Pour des instructions plus détaillées sur la création des règles de gestion de messagerie, veuillez vous référer à notre guide : [Création de règles de gestion de messagerie sous OWA](../regles-boite-de-reception-owa/).
+Pour des instructions plus détaillées sur la création des règles de gestion de messagerie, veuillez vous référer à notre guide : [Création de règles de gestion de messagerie sous OWA](/fr/emails/regles-boite-de-reception-owa/).
 
 #### Bloquer un expéditeur
 

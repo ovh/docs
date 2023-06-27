@@ -1,9 +1,6 @@
 ---
 title: 'Utilizzare un account di posta da "Outlook on the web"'
-slug: utilizzo-owa
 excerpt: 'Come gestire il tuo indirizzo email dalla Webmail "Outlook on the web"'
-section: 'Per iniziare'
-order: 04
 updated: 2021-06-25
 ---
 
@@ -122,7 +119,7 @@ Compila con le informazioni richieste a seconda dell’azione che desideri venga
 
 ![useowa](images/use-owa-step14.png){.thumbnail}
 
-Per istruzioni più dettagliate sulla creazione di regole di posta in arrivo, fai riferimento alla nostra guida: [Creare regole di posta in arrivo in OWA](../creare-regole-posta-in-arrivo-in-owa/).
+Per istruzioni più dettagliate sulla creazione di regole di posta in arrivo, fai riferimento alla nostra guida: [Creare regole di posta in arrivo in OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan).
 
 #### Blocca un mittente
 

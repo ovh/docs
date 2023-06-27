@@ -1,9 +1,6 @@
 ---
 title: "Zwiększ rozmiar dodatkowego dysku"
 excerpt: "Dowiedz się, jak zwiększyć rozmiar dodatkowego wolumenu i powiększyć jego partycję główną"
-slug: zwiekszenie_rozmiaru_dodatkowego_dysku
-order: 6
-section: 'Zarządzanie w Panelu klienta OVH'
 updated: 2022-03-29
 ---
 
@@ -22,13 +19,13 @@ Jeśli osiągniesz maksymalną pojemność dodatkowego dysku, możesz dodać prz
 ## Wymagania początkowe
 
 - Instancja [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) w Twoim projekcie Public Cloud
-- [Dodatkowy dysk](../utworzenie_i_konfiguracja_dodatkowego_dysku_dla_instancji/) utworzony w Twoim projekcie
+- [Dodatkowy dysk](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance) utworzony w Twoim projekcie
 - Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Dostęp administracyjny (root) do Twojej instancji przez SSH (Linux) lub RDP (Windows)
 
 ## W praktyce
 
-Kolejne etapy zakładają, że skonfigurowałeś już dodatkowy dysk zgodnie z instrukcjami zawartymi w [naszym przewodniku](../utworzenie_i_konfiguracja_dodatkowego_dysku_dla_instancji/).
+Kolejne etapy zakładają, że skonfigurowałeś już dodatkowy dysk zgodnie z instrukcjami zawartymi w [naszym przewodniku](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance).
 
 ### Zmień rozmiar dysku
 
@@ -166,6 +163,6 @@ Zmieniony rozmiar przestrzeni dyskowej zawiera teraz dodatkową przestrzeń dysk
 
 ## Sprawdź również
 
-[Zarządzanie wolumenem instancji Public Cloud](../utworzenie_i_konfiguracja_dodatkowego_dysku_dla_instancji/)
+[Zarządzanie wolumenem instancji Public Cloud](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

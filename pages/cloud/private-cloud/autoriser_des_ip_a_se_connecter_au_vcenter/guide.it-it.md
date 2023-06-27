@@ -1,7 +1,5 @@
 ---
 title: Autorizzare IP ad accedere al vCenter
-slug: autorizzare-ip-ad-accedere-al-vcenter
-section: Funzionalità OVHcloud
 updated: 2023-01-25
 ---
 

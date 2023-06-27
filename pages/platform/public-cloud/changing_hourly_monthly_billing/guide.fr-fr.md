@@ -1,9 +1,6 @@
 ---
 title: "Passer d'une facturation à l'heure à mensuelle"
 excerpt: 'Découvrez comment modifier le type de facturation de votre instance Public Cloud'
-slug: changer-type-facturation-public-cloud
-section: 'Gestion de projets'
-order: 5
 updated: 2023-01-23
 ---
 
@@ -66,7 +63,7 @@ Connectez-vous à l’[interface API OVHcloud](https://eu.api.ovh.com/) et utili
 > @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/activeMonthlyBilling
 >
 
-Vous trouverez plus d'informations sur l'utilisation de l'API OVHcloud sur notre guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/) ».
+Vous trouverez plus d'informations sur l'utilisation de l'API OVHcloud sur notre guide « [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps) ».
 
 ### Depuis un script Terraform
 

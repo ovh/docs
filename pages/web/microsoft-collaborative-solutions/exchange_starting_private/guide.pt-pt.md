@@ -1,9 +1,6 @@
 ---
 title: 'Primeiros passos com um servidor Private'
-slug: exchange_primeiros_passos_com_um_servidor_private
 excerpt: 'Descubra como configurar o seu servidor Private Exchange.'
-section: 'Primeiros passos com Exchange'
-order: 02
 updated: 2020-04-17
 ---
 
@@ -98,7 +95,7 @@ Para adicionar o primeiro nome de domínio à sua plataforma e configurar as con
 
 ## Quer saber mais?
 
-[Editar uma zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}
+[Editar uma zona DNS](/pages/web/domains/dns_zone_edit){.external}
 
 [Adicionar um nome de domínio ao serviço Exchange](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain){.external}
 

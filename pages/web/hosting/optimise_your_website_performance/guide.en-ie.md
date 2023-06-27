@@ -1,10 +1,7 @@
 ---
 title: 'Optimising your website’s performance'
 excerpt: 'Find out how to analyse latency on your website and how to improve it'
-slug: web_hosting_optimise_your_website_performance
 legacy_guide_number: g1396
-section: Optimise your website
-order: 06
 updated: 2022-02-03
 ---
 
@@ -67,9 +64,9 @@ Some server variables are changed via PHP-FPM usage:
 |max_input_vars|2000|16000|
 |memory_limit|128M|512M|
 
-You can find out how to update PHP in [this guide](../how_to_configure_php_on_your_ovh_web_hosting_package_2014/){.external}.
+You can find out how to update PHP in [this guide](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014){.external}.
 
-To switch to use PHP-FPM in the _stable_ version or to get details on more advanced options of your webhosting, please consult [this guide](../modify_your_web_hosting_systems_runtime_environment/){.external}.
+To switch to use PHP-FPM in the _stable_ version or to get details on more advanced options of your webhosting, please consult [this guide](/pages/web/hosting/ovhconfig_modify_system_runtime){.external}.
 
 The _.ovhconfig_ file works at the root of the hosting package or in a level 1 sub-directory (ex.: _/www/_) but not in level two or higher directories (ex.: _/www/test/_ , _/www/test/test2/_)
 
@@ -227,10 +224,10 @@ If despite all the changes and optimisations you did undertake the database is s
 
 ## Go further
 
-[Modifying the configuration of a Web Hosting plan](../modify_your_web_hosting_systems_runtime_environment)
+[Modifying the configuration of a Web Hosting plan](/pages/web/hosting/ovhconfig_modify_system_runtime)
 
-[Creating and managing a database in your Web Hosting plan](../creating-database)
+[Creating and managing a database in your Web Hosting plan](/pages/web/hosting/sql_create_database)
 
-[Getting started with the Web Cloud Databases service](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/)
+[Getting started with the Web Cloud Databases service](/pages/web/clouddb/starting_with_clouddb)
 
 Join our community of users on <https://community.ovh.com/en/>.

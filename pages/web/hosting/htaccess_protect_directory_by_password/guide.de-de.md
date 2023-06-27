@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Ordner und Verwaltungsinterface Ihrer Website mit den Dateien .htaccess und .htpasswd schützen"
-slug: hosting-htaccess-authentifizierung
 excerpt: "Erfahren Sie hier, wie Sie Verzeichnisse oder den Adminbereich Ihrer Website durch Authentifizierung mittels .htaccess und .htpasswd schützen"
-section: Weiterleitung und Authentifizierung
-order: 02
 updated: 2023-06-01
 ---
 

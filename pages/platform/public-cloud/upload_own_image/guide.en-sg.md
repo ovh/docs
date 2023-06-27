@@ -1,9 +1,6 @@
 ---
 title: 'Uploading your own image'
-slug: uploading-your-own-image
 excerpt: Find out how to upload your own image to Public Cloud
-section: 'OpenStack'
-order: 10
 updated: 2020-10-27
 ---
 
@@ -17,16 +14,16 @@ OVHcloud offers ready-to-go images for Public Cloud instances, however we also e
 
 ## Requirements
 
-- A [Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/) in your OVHcloud account
+- A [Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps#step-3-creating-an-instance/) in your OVHcloud account
 - Your own RAW/QCOW2 (recommended formats) image 
-- An [OpenStack user](../creation-and-deletion-of-openstack-user) 
-- An [OpenStack CLI ready environment](../prepare_the_environment_for_using_the_openstack_api) (if using CLI)
+- An [OpenStack user](/pages/platform/public-cloud/create_and_delete_a_user) 
+- An [OpenStack CLI ready environment](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) (if using CLI)
 
 ## Instructions
 
 ### Before starting
 
-It is advisable to either use cloud-ready images already provided by the distribution vendor or build your own image using solutions such as [Packer OpenStack builder](../packer-openstack-builder).
+It is advisable to either use cloud-ready images already provided by the distribution vendor or build your own image using solutions such as [Packer OpenStack builder](/pages/platform/public-cloud/create_image_from_existing_image_with_packer).
 
 Cloud-ready images can be found here:
 

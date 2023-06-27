@@ -1,9 +1,6 @@
 ---
 title: "Tutoriel - Installer manuellement Drupal"
-slug: installer-manuellement-drupal
 excerpt: "Découvrez comment installer manuellement votre CMS Drupal"
-section: CMS
-order: 06
 updated: 2023-03-17
 ---
 
@@ -22,9 +19,9 @@ Vous trouverez ici tous les éléments pour installer manuellement le CMS (Conte
 
 > [!success]
 >
-> Pour installer Drupal **automatiquement** depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), consultez notre documentation sur l'[installation d'un module « en un clic »](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
+> Pour installer Drupal **automatiquement** depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), consultez notre documentation sur l'[installation d'un module « en un clic »](/pages/web/hosting/cms_install_1_click_modules).
 >
-> Pour installer **manuellement un autre CMS** (WordPress, Joomla!, PrestaShop), consultez notre documentation sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
+> Pour installer **manuellement un autre CMS** (WordPress, Joomla!, PrestaShop), consultez notre documentation sur l'[installation manuelle d'un CMS](/pages/web/hosting/cms_manual_installation).
 >
 
 **Découvrez comment installer manuellement votre CMS Drupal**
@@ -41,7 +38,7 @@ Vous trouverez ici tous les éléments pour installer manuellement le CMS (Conte
 
 Pour installer le CMS **Drupal** sur votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), quelques préparatifs sont nécessaires.
 
-Suivez l'**ensemble des étapes** décrites dans notre tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) avant de poursuivre à l'étape 2 ci-dessous.
+Suivez l'**ensemble des étapes** décrites dans notre tutoriel sur l'[installation manuelle d'un CMS](/pages/web/hosting/cms_manual_installation) avant de poursuivre à l'étape 2 ci-dessous.
 
 ### Etape 2 - finaliser l'installation manuelle <a name="step2"></a>
 
@@ -78,13 +75,13 @@ Renseignez les informations demandées concernant la base de données :
 
 ![Drupal installation step 3](images/Drupal-install-db-config-3.png){.thumbnail}
 
-Munissez-vous des identifiants de votre base de données (au besoin, consultez **l'étape 1.4** du guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/)).
+Munissez-vous des identifiants de votre base de données (au besoin, consultez **l'étape 1.4** du guide sur l'[installation manuelle d'un CMS](/pages/web/hosting/cms_manual_installation)).
 
 - *Type de base de données* : sélectionnez, parmi les choix proposés, le type de votre base de données.
 
 - *Nom de la base de données* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
-- *Utilisateur de la base de données* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web. Pour les bases de données créées sur un service Web Cloud Databases, référez-vous aux informations indiquées dans **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
+- *Utilisateur de la base de données* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web. Pour les bases de données créées sur un service Web Cloud Databases, référez-vous aux informations indiquées dans **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](/pages/web/hosting/cms_manual_installation).
 
 - *Mot de passe de la base de données* : vous l'avez vous-même défini lors de la création de votre base de données. Il est possible que vous l'ayez modifié entre temps.
 
@@ -99,9 +96,9 @@ Cliquez sur `Options avancées`{.action} pour découvrir le reste du menu.
 > - Le nom du serveur d'une base de données Web Cloud Databases commence par votre identifiant client OVHcloud et a la forme suivante : `aa00000-XXX.eu.clouddb.ovh.net`, **«aa00000»** correspond à votre identifiant OVHcloud sans le **« -ovh »** et les **« X »** sont à remplacer par le reste de la référence de votre service Web Cloud Databases.
 >
 
-- *Numéro de port* : si vous utilisez une base de données incluse avec votre hébergement OVHcloud, laissez par défaut **3306**. Si vous utilisez un service *Web Cloud Databases*, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour récupérer le bon numéro de port.
+- *Numéro de port* : si vous utilisez une base de données incluse avec votre hébergement OVHcloud, laissez par défaut **3306**. Si vous utilisez un service *Web Cloud Databases*, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](/pages/web/hosting/cms_manual_installation) pour récupérer le bon numéro de port.
 
-- *Préfixe du nom des tables* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
+- *Préfixe du nom des tables* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](/pages/web/hosting/cms_manual_installation) pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
 
 Cliquez sur `Enregistrer et continuer`{.action}.
 

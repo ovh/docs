@@ -1,11 +1,8 @@
 ---
 title: AI Deploy - Tutoriel - Construire & utiliser une image Streamlit (EN)
-slug: deploy/build-use-streamlit-image
 excerpt: Comment construire et utiliser votre propre image Docker contenant une application Streamlit
-section: AI Deploy - Tutoriels
-order: 01
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/build-use-streamlit-image/'
+    canonical: '/pages/platform/ai/deploy_tuto_01_streamlit'
 updated: 2023-04-04
 ---
 
@@ -26,7 +23,7 @@ The purpose of this tutorial is to provide a concrete example on how to build an
 
 -   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 -   an **AI Deploy project** created inside a **Public Cloud** project
--   a [user for AI Deploy](https://docs.ovh.com/ca/fr/publiccloud/ai/users)
+-   a [user for AI Deploy](/pages/platform/ai/gi_01_manage_users)
 -   [Docker](https://www.docker.com/get-started) installed on your local computer
 -   some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 
@@ -149,7 +146,7 @@ Once started, your application should be available on `http://localhost:8501`.
 
 > [!warning]
 >
-> The shared registry of AI Deploy should only be use for testing purposes. Please consider attaching your own docker registry. More information about this can be found [here](https://docs.ovh.com/ca/fr/publiccloud/ai/training/add-private-registry).
+> The shared registry of AI Deploy should only be use for testing purposes. Please consider attaching your own docker registry. More information about this can be found [here](/pages/platform/ai/training_guide_05_howto_add_registry).
 
 Find the address of your shared registry by launching this command:
 
@@ -196,8 +193,8 @@ Once the AI Deploy app is running you can access your Streamlit application dire
 
 ## Go further
 
-- Do you want to use **Streamlit** to deploy an AI model for audio classification task? [Here it is](https://docs.ovh.com/ca/fr/publiccloud/ai/deploy/tuto-streamlit-sounds-classification/).
-- You can imagine deploying an AI model with an other tool: **Flask**. Refer to this [tutorial](https://docs.ovh.com/ca/fr/publiccloud/ai/deploy/tuto-build-use-flask-image/).
+- Do you want to use **Streamlit** to deploy an AI model for audio classification task? [Here it is](/pages/platform/ai/deploy_tuto_03_streamlit_sounds_classification).
+- You can imagine deploying an AI model with an other tool: **Flask**. Refer to this [tutorial](/pages/platform/ai/deploy_tuto_02_flask).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

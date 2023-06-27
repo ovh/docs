@@ -1,9 +1,6 @@
 ---
 title: 'Uso de instantáneas Snapshots en un servidor virtual privado (VPS)'
-slug: usar-instantaneas-en-un-vps
 excerpt: 'Cómo activar y usar la opción Instantáneas  en el panel de control de OVHcloud'
-section: 'Opciones de copia de seguridad'
-order: 1
 updated: 2023-04-28
 ---
 
@@ -182,7 +179,7 @@ Running  QEMU-GA            QEMU Guest Agent
 
 ## Más información
 
-[Usar copias de seguridad automatizadas en un servidor virtual privado (VPS)](../usar-copias-de-seguridad-automatizadas-en-un-vps/)
+[Usar copias de seguridad automatizadas en un servidor virtual privado (VPS)](/pages/cloud/vps/using-automated-backups-on-a-vps)
 
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

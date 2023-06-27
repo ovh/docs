@@ -1,10 +1,7 @@
 ---
 title: Utilizzare Hosted Private Cloud all'interno di una vRack
 excerpt:  Scopri come utilizzare la vRack con la tua soluzione Hosted Private Cloud
-slug: aggiungere_un_dedicated_cloud_alla_vrack_15_e_configurare_una_vm
 legacy_guide_number: g1257
-section: Servizi e opzioni OVHcloud
-order: 02
 updated: 2022-03-28
 ---
 

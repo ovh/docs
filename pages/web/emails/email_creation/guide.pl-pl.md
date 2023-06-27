@@ -1,9 +1,6 @@
 ---
 title: 'Tworzenie konta e-mail w ramach usługi MX Plan'
-slug: przewodnik_na_temat_zakladania_adresu_e-mail
 excerpt: 'Dowiedz się, jak utworzyć konto e-mail w ramach pakietu MX Plan'
-section: 'Pierwsze kroki'
-order: 02
 updated: 2022-10-11
 ---
 
@@ -29,11 +26,11 @@ Właśnie zakupiłeś usługę e-mail MX Plan. Umożliwia ona korzystanie z kont
 > **Szczególne przypadki**
 >
 > - Jeśli chodzi o bezpłatny hosting Start 10M, konieczne jest wcześniejsze aktywowanie go przed utworzeniem konta e-mail. Operację tę możesz przeprowadzić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przechodząc do odpowiedniej domeny.
-> - Zanim przejdziesz do niniejszego przewodnika, należy aktywować Twój pakiet MX Plan zawarty w [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external}. W tym celu zapoznaj się z naszym przewodnikiem "[Aktywuj konta e-mail zawarte w Twoim hostingu](https://docs.ovh.com/pl/hosting/aktywacja-kont-email-zawartych-w-hostingu/)".
+> - Zanim przejdziesz do niniejszego przewodnika, należy aktywować Twój pakiet MX Plan zawarty w [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external}. W tym celu zapoznaj się z naszym przewodnikiem "[Aktywuj konta e-mail zawarte w Twoim hostingu](/pages/web/hosting/activate-email-hosting)".
 
 ## W praktyce <a name="instructions"></a>
 
-W zależności od daty aktywacji usługi lub jeśli [usługa została niedawno przeniesiona](https://docs.ovh.com/pl/emails/przenoszenie-kont-e-mail/){.external}, możliwe, że dysponujesz jej starszą lub nową wersją. Zanim przejdziesz dalej, zidentyfikuj tą opcję.
+W zależności od daty aktywacji usługi lub jeśli [usługa została niedawno przeniesiona](/pages/web/emails/manual_email_migration){.external}, możliwe, że dysponujesz jej starszą lub nową wersją. Zanim przejdziesz dalej, zidentyfikuj tą opcję.
 
 W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, część `Web Cloud`{.action}. Kliknij `E-maile`{.action}, po czym wybierz odpowiednią usługę MX Plan. Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
 
@@ -76,7 +73,7 @@ Wykonaj czynności tego etapu tyle razy, ile to konieczne, w zależności od lic
 
 Zaloguj się na stronie [Logowanie do interfejsu Webmail](https://www.ovhcloud.com/pl/mail/){.external}, po czym wprowadź odpowiedni adres e-mail oraz hasło. Kliknij następnie przycisk `Logowanie`{.action}.
 
-Podczas pierwszego logowania do interfejsu Webmail zostaniesz poproszony o określenie języka interfejsu oraz Twojej strefy czasowej. Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail Outlook Web App (OWA), zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)](https://docs.ovh.com/pl/emails/korzystanie-owa/){.external}.
+Podczas pierwszego logowania do interfejsu Webmail zostaniesz poproszony o określenie języka interfejsu oraz Twojej strefy czasowej. Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail Outlook Web App (OWA), zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)](/pages/web/emails/email_owa){.external}.
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail}
 
@@ -88,7 +85,7 @@ Od nowej wersji MXplan mówimy o *resecie konta*, kiedy musisz go usunąć.
 
 > [!warning]
 >
-> Przed usunięciem kont e-mail upewnij się, że nie są one używane. Może zaistnieć konieczność zabezpieczenia tych kont. W razie potrzeby zapoznaj się z przewodnikiem [Ręczna migracja Twojego konta e-mail](https://docs.ovh.com/pl/emails/przenoszenie-kont-e-mail/), który opisze, jak wyeksportować dane z konta z Panelu klienta lub programu pocztowego.
+> Przed usunięciem kont e-mail upewnij się, że nie są one używane. Może zaistnieć konieczność zabezpieczenia tych kont. W razie potrzeby zapoznaj się z przewodnikiem [Ręczna migracja Twojego konta e-mail](/pages/web/emails/manual_email_migration), który opisze, jak wyeksportować dane z konta z Panelu klienta lub programu pocztowego.
 
 W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} po prawej stronie konta, które chcesz usunąć, a następnie kliknij `Zresetuj to konto`{.action}.
 
@@ -127,7 +124,7 @@ Wykonaj czynności tego etapu tyle razy, ile to konieczne, w zależności od lic
 
 Zaloguj się na stronie [Logowanie do interfejsu Webmail](https://www.ovhcloud.com/pl/mail/){.external}, po czym wprowadź odpowiedni adres e-mail oraz hasło. Kliknij następnie przycisk `Logowanie`{.action}.
 
-Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail OWA, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail RoundCube](https://docs.ovh.com/pl/emails/webmail_przewodnik_dotyczacy_interfejsu_roundcube/){.external}.
+Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail OWA, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail RoundCube](/pages/web/emails/email_roundcube){.external}.
 
 ![email](images/mxplan-creation-legacy-step4.png){.thumbnail}
 
@@ -137,7 +134,7 @@ Aby sprawdzić wiadomości e-mail przy użyciu programu pocztowego, zapoznaj si�
 
 > [!warning]
 >
-> Przed usunięciem kont e-mail upewnij się, że nie są one używane. Może zaistnieć konieczność zabezpieczenia tych kont. W razie potrzeby zapoznaj się z przewodnikiem [Ręczna migracja Twojego konta e-mail](https://docs.ovh.com/pl/emails/przenoszenie-kont-e-mail/), który opisze, jak wyeksportować dane z konta z Panelu klienta lub programu pocztowego.
+> Przed usunięciem kont e-mail upewnij się, że nie są one używane. Może zaistnieć konieczność zabezpieczenia tych kont. W razie potrzeby zapoznaj się z przewodnikiem [Ręczna migracja Twojego konta e-mail](/pages/web/emails/manual_email_migration), który opisze, jak wyeksportować dane z konta z Panelu klienta lub programu pocztowego.
 
 W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} po prawej stronie konta, które chcesz usunąć, a następnie kliknij `Usuń konto`{.action}
 
@@ -150,24 +147,24 @@ Skonfiguruj Twoje konto e-mail na wybranym urządzeniu (typu smartfon lub tablet
 > [!tabs]
 > **Windows**
 >>
->> - [Poczta na systemie Windows 10](https://docs.ovh.com/pl/emails/konfiguracja-poczta-windows-10/)
->> - [Outlook](https://docs.ovh.com/pl/emails/konfiguracja-outlook-2016/)
->> - [Thunderbird](https://docs.ovh.com/pl/emails/konfiguracja_konta_e-mail_w_programie_thunderbird/)
+>> - [Poczta na systemie Windows 10](/pages/web/emails/how_to_configure_windows_10)
+>> - [Outlook](/pages/web/emails/how_to_configure_outlook_2016)
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_windows)
 >>
 > **Apple**
 >>
->> - [Mail macOS](https://docs.ovh.com/pl/emails/konfiguracja-mail-macos/)
->> - [E-mail na iPhone lub iPad](https://docs.ovh.com/pl/emails/hosting_www_konfiguracja_na_iphone_ios_91/)
->> - [Outlook Mac OS](https://docs.ovh.com/pl/emails/konfiguracja-outlook-2016-mac/)
->> - [Thunderbird](https://docs.ovh.com/pl/emails/hosting_www_konfiguracja_konta_e-mail_w_programie_thunderbird_mac/)
+>> - [Mail macOS](/pages/web/emails/how_to_configure_mail_macos)
+>> - [E-mail na iPhone lub iPad](/pages/web/emails/how_to_configure_ios)
+>> - [Outlook Mac OS](/pages/web/emails/how_to_configure_outlook_2016_mac)
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_mac)
 >>
 > **Android**
 >>
->> - [Android](https://docs.ovh.com/pl/emails/konfiguracja-android/)
+>> - [Android](/pages/web/emails/how_to_configure_android)
 >>
 > **Inne**
 >>
->> - [Interfejs Gmail](https://docs.ovh.com/pl/emails/przewodnik-konfiguracja-konta-e-mail-ovh-w-interfejsie-gmail/)
+>> - [Interfejs Gmail](/pages/web/emails/how_to_configure_gmail)
 >>
 
 Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta e-mail:
@@ -190,7 +187,7 @@ Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta e-mail:
 
 > [!warning]
 >
-> Jeśli masz trudności z konfiguracją konta e-mail na Twoim urządzeniu, [skorzystaj z naszych przewodników dotyczących konfiguracji](../) lub skontaktuj się z producentem aplikacji, której używasz, aby uzyskać informację o sposobie postępowania.
+> Jeśli masz trudności z konfiguracją konta e-mail na Twoim urządzeniu, [skorzystaj z naszych przewodników dotyczących konfiguracji](/products/web-cloud-email-collaborative-solutions-mx-plan) lub skontaktuj się z producentem aplikacji, której używasz, aby uzyskać informację o sposobie postępowania.
 >
 
 ## Sprawdź również

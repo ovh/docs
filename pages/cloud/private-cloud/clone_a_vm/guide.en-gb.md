@@ -1,9 +1,6 @@
 ---
 title: Cloning a VM
-slug: clone-a-vm
 excerpt: Learn two ways to clone an existing virtual machine in vSphere
-section: Maintenance and monitoring
-order: 07
 updated: 2022-01-12
 ---
 

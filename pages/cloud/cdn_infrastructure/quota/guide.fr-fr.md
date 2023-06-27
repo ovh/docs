@@ -1,9 +1,6 @@
 ---
 title: Fonctionnement du quota sur le CDN
-slug: quota-cdn
 excerpt: Découvrez comment fonctionne le quota sur votre CDN
-section: Premiers pas
-order: 3
 updated: 2018-02-22
 ---
 

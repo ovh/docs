@@ -1,11 +1,8 @@
 ---
 title: SMPP Technical Specifications (EN)
-slug: smpp-specifications
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/sms/smpp-specifications/'
+    canonical: '/pages/telecom/sms/smpp-specification'
 excerpt: 'Discover the technical specifications of the OVHcloud SMPP solution'
-section: SMPP
-order: 02
 updated: 2023-05-22
 ---
 
@@ -385,4 +382,4 @@ The protocol version is 3.4.
 
 [SMPP Technical Documentation](https://smpp.org/SMPP_v3_4_Issue1_2.pdf)
 
-[Managing an SMS SMPP account](https://docs.ovh.com/it/sms/smpp-control-panel/)
+[Managing an SMS SMPP account](/pages/telecom/sms/smpp-control-panel)

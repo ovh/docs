@@ -1,9 +1,6 @@
 ---
 title: "Récupérer la sauvegarde de la base de données d'un hébergement web"
-slug: exportation-bases-donnees
 excerpt: "Découvrez comment récupérer la sauvegarde d'une base de données de votre hébergement web OVHcloud"
-section: 'Bases de données'
-order: 03
 updated: 2018-05-19
 ---
 
@@ -131,7 +128,7 @@ Prenez soin de remplacer les informations génériques dans ce script par les in
 
 #### Étape 2 : télécharger le script sur l'espace de stockage
 
-Une fois le script de sauvegarde correctement créé, vous devez le télécharger sur l'espace de stockage de votre hébergement web. Pour cela, vous devrez vous connecter à ce dernier. Si vous ne savez pas comment faire, reportez-vous aux informations décrites dans l'étape 2 de la documentation intitulée « [Se connecter à l’espace de stockage](../mettre-mon-site-en-ligne/#2-se-connecter-a-lespace-de-stockage){.external} ».
+Une fois le script de sauvegarde correctement créé, vous devez le télécharger sur l'espace de stockage de votre hébergement web. Pour cela, vous devrez vous connecter à ce dernier. Si vous ne savez pas comment faire, reportez-vous aux informations décrites dans l'étape 2 de la documentation intitulée « [Se connecter à l’espace de stockage](/pages/web/hosting/hosting_how_to_get_my_website_online#2-se-connecter-a-lespace-de-stockage){.external} ».
 
 Afin de pouvoir mener à bien les étapes suivantes, téléchargez le script dans le dossier « www ». **Nous vous invitons à être particulièrement attentif quant au nom du fichier du script de sauvegarde.** Assurez-vous de ne pas écraser un fichier déjà existant portant le même nom sur l'espace de stockage lorsque vous allez télécharger le script. Si un message d'avertissement de ce type apparaît, modifiez le nom du script nouvellement créé pour un autre puis tentez de nouveau de le télécharger.
 
@@ -149,7 +146,7 @@ Avant de terminer, nous vous conseillons vivement de supprimer le fichier de sau
 
 > [!primary]
 >
-> L'utilisation d'un script de sauvegarde et des tâches planifiées (dites « CRON ») peuvent vous permettre d'automatiser des sauvegardes à une fréquence de votre choix. Apprenez-en plus sur les tâches planifiées via notre documentation : « [Mettre en place une tâche planifiée (CRON) sur son hébergement web](../mutualise-taches-automatisees-cron/){.external} ».
+> L'utilisation d'un script de sauvegarde et des tâches planifiées (dites « CRON ») peuvent vous permettre d'automatiser des sauvegardes à une fréquence de votre choix. Apprenez-en plus sur les tâches planifiées via notre documentation : « [Mettre en place une tâche planifiée (CRON) sur son hébergement web](/pages/web/hosting/cron_tasks){.external} ».
 >
 
 ### Récupérer une sauvegarde via une commande SSH

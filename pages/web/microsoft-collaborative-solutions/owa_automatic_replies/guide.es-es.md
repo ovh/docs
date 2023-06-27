@@ -1,9 +1,6 @@
 ---
 title: 'Crear respuestas automáticas en OWA'
 excerpt: 'Cómo configurar respuestas automáticas en OWA'
-slug: exchange_2016_crear_un_contestador_con_el_webmail_owa
-section: 'Gestión de la cuenta de correo'
-order: 07
 updated: 2020-07-20
 ---
 

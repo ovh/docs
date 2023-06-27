@@ -1,8 +1,6 @@
 ---
 title: 'Ativar a dupla autenticação via OTP'
-slug: ativar-a-dupla-autenticacao-com-aplicacao-movel
 excerpt: 'Descubra como proteger a sua área de cliente OVHcloud, permitindo a autenticação dupla com aplicação móvel OTP'
-section: Segurança
 hidden: true
 updated: 2020-04-16
 ---
@@ -17,7 +15,7 @@ A autenticação dupla com o sistema de *password única* (OTP) disponível atra
 
 ## Requisitos
 
-- Estar familiarizado com os [diferentes métodos de autenticação dupla oferecidos pela OVHcloud](https://docs.ovh.com/pt/customer/proteger-a-sua-conta-com-uma-2FA/).
+- Estar familiarizado com os [diferentes métodos de autenticação dupla oferecidos pela OVHcloud](/pages/account/customer/secure-ovhcloud-account-with-2fa).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 - Ter instalado uma aplicação OTP num smartphone ou num tablet Android ou iOS.
 

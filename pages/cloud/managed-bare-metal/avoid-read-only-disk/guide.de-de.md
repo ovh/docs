@@ -1,11 +1,8 @@
 ---
 title: Umstellung der Festplatte Ihrer VM unter Linux auf ausschließliche Leseberechtigung verhindern
-slug: umstellung-der-festplatte-auf-nur-lesen-unter-linux-verhindern
 routes:
-    canonical: 'https://docs.ovh.com/de/private-cloud/umstellung-der-festplatte-auf-nur-lesen-unter-linux-verhindern/'
+    canonical: '/pages/cloud/private-cloud/comment_eviter_le_disk_en_read_only_sous_linux'
 excerpt: Umstellung der Festplatte Ihrer VM unter Linux auf ausschließliche Leseberechtigung verhindern
-section: Verwaltung virtueller Maschinen
-order: 10
 updated: 2020-11-18
 ---
 

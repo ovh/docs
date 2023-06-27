@@ -1,9 +1,6 @@
 ---
 title: Object Storage Swift - Mémo de commandes Swift
-slug: pcs/swift-commands-memo
 excerpt: Retrouvez ici les principales commandes swift pour gérer vos conteneurs d'objets
-section: Spécificités de la classe de stockage OpenStack Swift
-order: 100
 updated: 2022-11-16
 ---
 
@@ -19,8 +16,8 @@ Le swiftclient OpenStack vous permet d’interagir avec vos conteneurs et objets
 
 ## Prérequis
 
-- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/ca/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/) en installant python-swiftclient.
-- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/ca/fr/public-cloud/set-openstack-environment-variables/).
+- [Préparer l’environnement pour utiliser l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) en installant python-swiftclient.
+- [Charger les variables d’environnement OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 ## En pratique
 
@@ -193,7 +190,7 @@ swift copy -d /<conteneur_de_destination> <conteneur> <objet>
 > [!primary]
 >
 > Dans cet exemple, le LargeObject à été uploadé en mode SLO.
-> Consultez la documentation [Mémo de commandes curl](https://docs.ovh.com/ca/fr/storage/pcs/curl-commands-memo/) pour l'upload du manifest.
+> Consultez la documentation [Mémo de commandes curl](/pages/cloud/storage/object_storage/pcs_curl_commands_memo) pour l'upload du manifest.
 >
 
 Sur un LargeObject, la commande `swift copy` renvoie une **erreur 413** :
@@ -299,7 +296,7 @@ sys	0m0,091s
 > [!primary]
 >
 > Dans cet exemple, le LargeObject à été uploader en mode SLO.
-> Consultez la documentation [Mémo de commandes Curl](https://docs.ovh.com/ca/fr/storage/pcs/curl-commands-memo/) pour l'upload du manifest.
+> Consultez la documentation [Mémo de commandes Curl](/pages/cloud/storage/object_storage/pcs_curl_commands_memo) pour l'upload du manifest.
 >
 
 ```bash

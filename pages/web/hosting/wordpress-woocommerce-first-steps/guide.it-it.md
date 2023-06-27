@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Utilizza WooCommerce con CMS WordPress"
-slug: wordpress-woocommerce-first-steps
 excerpt: "Questa guida ti mostra come utilizzare la soluzione WooCommerce con CMS WordPress"
-section: "Tutorial"
-order: 023
 updated: 2023-02-23
 ---
 
@@ -28,9 +25,9 @@ Scopri come creare un negozio online con l'estensione open source **WooCommerce*
 
 - Disporre di un'offerta di [hosting web](https://www.ovhcloud.com/it/web-hosting/) che contiene almeno un database.
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
-- Aver precedentemente [installato WordPress](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/) sul tuo hosting Web
+- Aver precedentemente [installato WordPress](/pages/web/hosting/cms_install_1_click_modules) sul tuo hosting Web
 
-Se non lo hai già fatto, ti consigliamo di utilizzare il protocollo HTTPS prima di continuare con questa guida: "[Attivare HTTPS su un sito Internet tramite il certificato SSL](https://docs.ovh.com/it/hosting/attivare-https-su-sito-internet-tramite-certificato-ssl/)".
+Se non lo hai già fatto, ti consigliamo di utilizzare il protocollo HTTPS prima di continuare con questa guida: "[Attivare HTTPS su un sito Internet tramite il certificato SSL](/pages/web/hosting/ssl-activate-https-website)".
   
 ## Procedura
   

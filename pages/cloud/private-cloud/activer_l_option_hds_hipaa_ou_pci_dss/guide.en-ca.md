@@ -1,8 +1,6 @@
 ---
 title: 'Adapting your Private Cloud for PCI DSS certifications'
-slug: activate-pci-dss-option
 excerpt: 'Find out how to adapt your Private Cloud for PCI DSS certifications'
-section: 'OVHcloud services and options'
 updated: 2020-05-27
 ---
 
@@ -40,9 +38,9 @@ If the desired security option is not enabled, activate it by clicking on the `.
 
 - **[NSX](https://www.ovh.co.uk/private-cloud/options/nsx.xml){.external} and [vROps](https://www.ovh.co.uk/private-cloud/options/vrops.xml){.external} options must be installed**: from the `General Information`{.action} tab in the "Private Cloud Options" section, you can check the activation status of these options. If they are not enabled, activate them by clicking on the `...`{.action} button and then on `Activate`{.action}.
 
-- **The vCenter access policy must be restricted**: from the "Security" tab, you can check the status of the access policy. If it is not restricted, make the change by clicking on the `vCenter Access Policy`{.action} button, then following the steps. Our documentation “[Introduction to the OVH Private Cloud Control Panel](https://docs.ovh.com/gb/en/private-cloud/control-panel-ovh-private-cloud/)” can assist you in this process.
+- **The vCenter access policy must be restricted**: from the "Security" tab, you can check the status of the access policy. If it is not restricted, make the change by clicking on the `vCenter Access Policy`{.action} button, then following the steps. Our documentation “[Introduction to the OVH Private Cloud Control Panel](/pages/cloud/private-cloud/manager_ovh_private_cloud)” can assist you in this process.
 
-- **You must have at least one IP address authorised to log in to vCenter**: from the "Security" tab, make sure you have at least one authorised IP address. If necessary, use the `Add IPs`{.action} button. Our documentation “[Introduction to the OVH Private Cloud Control Panel](https://docs.ovh.com/gb/en/private-cloud/control-panel-ovh-private-cloud/)” can assist you in this process.
+- **You must have at least one IP address authorised to log in to vCenter**: from the "Security" tab, make sure you have at least one authorised IP address. If necessary, use the `Add IPs`{.action} button. Our documentation “[Introduction to the OVH Private Cloud Control Panel](/pages/cloud/private-cloud/manager_ovh_private_cloud)” can assist you in this process.
 
 To make sure you can always log in, we recommend that you have at least two authorised IP addresses. For reasons of accessibility, the latter must be fixed and not dynamic.
 

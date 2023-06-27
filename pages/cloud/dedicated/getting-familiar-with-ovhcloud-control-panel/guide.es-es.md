@@ -1,9 +1,6 @@
 ---
 title: "Clientes Kimsufi y So you Start: familiarizarse con el área de cliente de OVHcloud"
 excerpt: Esta guía explica cómo navegar por el área de cliente de OVHcloud.
-slug: get-familiar-with-ovhcloud-control-panel
-section: Clientes So you Start & Kimsufi
-order: 1
 updated: 2023-01-05
 ---
 
@@ -58,24 +55,24 @@ En la columna izquierda, haga clic en `Servidores dedicados`{.action} y seleccio
 **Estado de los servicios**
 
 - Estado: haga clic en los `...`{.action} junto a esta esta opción para reiniciar o eliminar su servidor.
-- Monitorización: haga clic en `Configurar`{.action} para cambiar la [configuración de supervisión de su servidor](https://docs.ovh.com/es/dedicated/primeros-pasos-servidor-dedicado#monitoring-server).
+- Monitorización: haga clic en `Configurar`{.action} para cambiar la [configuración de supervisión de su servidor](/pages/cloud/dedicated/getting-started-with-dedicated-server#monitoring-server).
 
 **Red**
 
 - IPV4: haga clic en los `...`{.action} junto a esta opción para gestionar su IP.
 - Registro inverso: haga clic en los `...`{.action} al lado de esta sección para entrar o modificar su registro DNS inverso.
 
-**DNS secundario**: configure su DNS secundario aquí. Para más información, consulte [esta guía](https://docs.ovh.com/es/dedicated/crear-dns-secundario-servidor-dedicado/).
+**DNS secundario**: configure su DNS secundario aquí. Para más información, consulte [esta guía](/pages/cloud/dedicated/adding-secondary-dns-on-dedicated-server).
 
-**Backup Storage** (disponible únicamente en los servidores de OVHcloud y los servidores So you Start, incluidos los de la línea Eco): contrate y configure su backup storage aquí. Para más información, consulte [esta guía](https://docs.ovh.com/es/dedicated/servicio-backup-storage/).
+**Backup Storage** (disponible únicamente en los servidores de OVHcloud y los servidores So you Start, incluidos los de la línea Eco): contrate y configure su backup storage aquí. Para más información, consulte [esta guía](/pages/cloud/dedicated/services_backup_storage).
 
 **Intervenciones**: consulte las intervenciones en curso y pasadas al servidor.
 
-**IPMI** (solo disponible en los servidores de OVHcloud y en algunos servidores So you Start, incluidos los de la línea Eco): acceda aquí a la herramienta IPMI o al KVM IP de su servidor. Para más información sobre el uso de esta herramienta, consulte [esta guía](https://docs.ovh.com/es/dedicated/utilizar-ipmi-servidor-dedicado/).
+**IPMI** (solo disponible en los servidores de OVHcloud y en algunos servidores So you Start, incluidos los de la línea Eco): acceda aquí a la herramienta IPMI o al KVM IP de su servidor. Para más información sobre el uso de esta herramienta, consulte [esta guía](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers).
 
 **Tareas**: vea aquí las tareas realizadas recientemente en su servidor.
 
-Para más información sobre la gestión de su servidor dedicado desde el área de cliente de OVHcloud, consulte [esta guía](https://docs.ovh.com/es/dedicated/primeros-pasos-servidor-dedicado/).
+Para más información sobre la gestión de su servidor dedicado desde el área de cliente de OVHcloud, consulte [esta guía](/pages/cloud/dedicated/getting-started-with-dedicated-server).
 
 ### Sección IP
 
@@ -97,27 +94,27 @@ Estas opciones se agrupan en un área de cliente de OVHcloud. Haga clic en su no
 ![factu](images/accountOVHcloud.png){.thumbnail}
 
 - **Información general**: en esta sección puede consultar la información de su cuenta, su última factura y acceder a distintos accesos rápidos.
-- **Seguridad**: desde esta sección podrá administrar los parámetros de seguridad de su cuenta. Para más información, consulte [esta guía](https://docs.ovh.com/es/customer/todo-sobre-el-id-de-cliente/).
+- **Seguridad**: desde esta sección podrá administrar los parámetros de seguridad de su cuenta. Para más información, consulte [esta guía](/pages/account/customer/all_about_username).
 - **Mensajes recibidos**: en esta sección encontrará todos los mensajes de correo que OVHcloud le ha enviado, excepto las solicitudes de asistencia.
 - **Mi nivel de soporte** (solo disponible para los servicios de OVHcloud): para más información sobre el nivel de soporte de OVHcloud, consulte esta sección.
-- **Gestión de los usuarios**: esta sección le permite gestionar sus usuarios. Para más información, consulte [esta guía](https://docs.ovh.com/es/customer/gestion-de-usuarios/).
-- **Mis facturas**: desde esta sección podrá consultar sus facturas, seguir los pagos realizados con su forma de pago por defecto y consultar sus activos. Más información sobre [esta guía](https://docs.ovh.com/es/billing/gestionar-facturas-ovh/).
+- **Gestión de los usuarios**: esta sección le permite gestionar sus usuarios. Para más información, consulte [esta guía](/pages/account/customer/ovhcloud-users-management).
+- **Mis facturas**: desde esta sección podrá consultar sus facturas, seguir los pagos realizados con su forma de pago por defecto y consultar sus activos. Más información sobre [esta guía](/pages/account/billing/invoice_management).
 - **Mis servicios**: desde esta sección podrá ver todos sus servicios, contratos y llaves SSH.
-- **Formas de pago**: en esta sección, tiene acceso a su forma de pago actual, a su cuenta de prepago y a sus códigos promocionales de OVHcloud. También incluye la opción de añadir o eliminar una forma de pago. Para más información sobre la gestión de sus formas de pago, consulte [esta guía](https://docs.ovh.com/es/billing/gestionar-formas-de-pago/).
-- **Mis contactos** : en esta sección puede visualizar y gestionar los contactos asociados a sus servicios. En la pestaña **Mis solicitudes**, puede acceder a las solicitudes realizadas por su cuenta de cliente para modificar los contactos, así como a las solicitudes de gestión de los servicios recibidos. Para más información sobre la gestión de sus contactos de servicios, consulte [esta guía](https://docs.ovh.com/es/customer/gestion-de-los-contactos/).
-- **Mis pedidos**: consulte sus pedidos desde esta página. Más información sobre [esta guía](https://docs.ovh.com/es/billing/gestionar-los-pedidos-en-ovh/).
+- **Formas de pago**: en esta sección, tiene acceso a su forma de pago actual, a su cuenta de prepago y a sus códigos promocionales de OVHcloud. También incluye la opción de añadir o eliminar una forma de pago. Para más información sobre la gestión de sus formas de pago, consulte [esta guía](/pages/account/billing/manage-payment-methods).
+- **Mis contactos** : en esta sección puede visualizar y gestionar los contactos asociados a sus servicios. En la pestaña **Mis solicitudes**, puede acceder a las solicitudes realizadas por su cuenta de cliente para modificar los contactos, así como a las solicitudes de gestión de los servicios recibidos. Para más información sobre la gestión de sus contactos de servicios, consulte [esta guía](/pages/account/customer/managing_contacts).
+- **Mis pedidos**: consulte sus pedidos desde esta página. Más información sobre [esta guía](/pages/account/billing/managing_ovh_orders).
 - **Mis solicitudes de asistencia**: en esta sección podrá abrir/visualizar todas sus solicitudes de asistencia.
 
 ## Más información
 
 A continuación le ofrecemos algunas guías adicionales que le ayudarán en sus primeros pasos:
 
-[Conectarse al área de cliente de OVHcloud](https://docs.ovh.com/es/customer/conectarse-area-de-cliente-ovhcloud/).<br>
-[Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contrasena/).<br>
-[Proteger mi cuenta de OVHcloud y gestionar mis datos personales](https://docs.ovh.com/es/customer/todo-sobre-el-id-de-cliente/).<br>
-[Gestionar los contactos de los servicios](https://docs.ovh.com/es/customer/gestion-de-los-contactos/).<br>
-[Crear claves SSH](https://docs.ovh.com/es/dedicated/crear-claves-ssh-dedicadas/).<br>
-[¿Cuáles son las direcciones IP del monitoring de OVHcloud?](https://docs.ovh.com/es/dedicated/monitoring-ip-ovh/).
+[Conectarse al área de cliente de OVHcloud](/pages/account/customer/ovhcloud-account-login).<br>
+[Establecer y gestionar la contraseña de su cuenta](/pages/account/customer/manage-ovh-password).<br>
+[Proteger mi cuenta de OVHcloud y gestionar mis datos personales](/pages/account/customer/all_about_username).<br>
+[Gestionar los contactos de los servicios](/pages/account/customer/managing_contacts).<br>
+[Crear claves SSH](/pages/cloud/dedicated/creating-ssh-keys-dedicated).<br>
+[¿Cuáles son las direcciones IP del monitoring de OVHcloud?](/pages/cloud/dedicated/network_ip_monitoring).
 
 Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es-es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 

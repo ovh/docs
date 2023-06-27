@@ -1,9 +1,6 @@
 ---
 title: Ligar-se em SFTP
 excerpt: Saiba como se ligar ao seu Hosted Private Cloud em SFTP
-slug: ligacao_por_sftp
-section: Introdução
-order: 3
 updated: 2021-12-28
 ---
 

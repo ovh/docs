@@ -1,11 +1,8 @@
 ---
 title: MongoDB - Connect with PHP
 excerpt: Connect to your Public Cloud Databases for MongoDB using the PHP programming language
-slug: mongodb/connect-php
-section: MongoDB - Guides
-order: 040
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/connect-php/'
+    canonical: '/pages/platform/databases/mongodb_04_connect_php'
 updated: 2022-07-27
 ---
 
@@ -23,14 +20,14 @@ You can find an example on the [Github examples repository](https://github.com/o
 
 - A [Public Cloud project](https://www.ovhcloud.com/pt/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
-- A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/pt/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your MongoDB instance](https://docs.ovh.com/pt/publiccloud/databases/mongodb/managing-service/) to accept incoming connections
+- A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your MongoDB instance](/pages/platform/databases/mongodb_02_manage_control_panel) to accept incoming connections
 - A PHP environment with a stable version and public network connectivity (Internet). This guide was made in PHP 7.4.
 
 ## Concept
 
 A MongoDB instance can be managed through multiple ways.
-One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to MongoDB with CLI](https://docs.ovh.com/pt/publiccloud/databases/mongodb/connect-cli).
+One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to MongoDB with CLI](/pages/platform/databases/mongodb_03_connect_cli).
 
 Another way is to interact directly using programming languages, such as PHP.
 PHP is used in almost 80% of the websites in the world, such as Facebook, Wikipedia or WordPress.
@@ -55,7 +52,7 @@ Follow this accordingly.
 
 If you can edit your PHP environment on your own, install extensions and libraries as detailed in this documentation page linked above.
 
-On the contrary, if you benefit from a managed web hosting solution, such as **OVHcloud Web Hosting offers**, you need to activate the right PHP version on your web hosting plan. You can find [a guide about modifying your PHP version for OVHcloud Web Hosting here](https://docs.ovh.com/pt/hosting/configurar_o_php_num_alojamento_web_alojamentos_2014_ovh/).
+On the contrary, if you benefit from a managed web hosting solution, such as **OVHcloud Web Hosting offers**, you need to activate the right PHP version on your web hosting plan. You can find [a guide about modifying your PHP version for OVHcloud Web Hosting here](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014).
 
 In both cases, when executing a **phpinfo()** in your PHP environment, you should see information about the MongoDB driver as shown below :
 
@@ -175,9 +172,9 @@ They can really help your work with PHP.
 
 ## Go further
 
-[MongoDB capabilities](https://docs.ovh.com/pt/publiccloud/databases/mongodb/capabilities/)
+[MongoDB capabilities](/pages/platform/databases/mongodb_01_concept_capabilities)
 
-[Configuring vRack for Public Cloud](https://docs.ovh.com/pt/public-cloud/public-cloud-vrack/)
+[Configuring vRack for Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack)
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 

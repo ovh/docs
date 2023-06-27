@@ -1,10 +1,8 @@
 ---
 title: Deploying an application
-slug: deploying-an-application
 excerpt: 'Find out how to deploy a "Hello World" application on an OVHcloud Managed Kubernetes cluster'
-section: Getting started
 routes:
-    canonical: https://docs.ovh.com/gb/en/kubernetes/deploying-an-application/
+    canonical: /pages/platform/kubernetes-k8s/deploying-an-application
 updated: 2023-06-06
 ---
 
@@ -20,8 +18,7 @@ updated: 2023-06-06
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -39,8 +36,8 @@ OVHcloud Managed Kubernetes service provides you with Kubernetes clusters withou
 ## Requirements
 
 - an OVHcloud Managed Kubernetes cluster
-- at least one node on the cluster (see the [ordering a node](../managing-nodes/) guide for details) 
-- a well configured  `kubectl` (see the [configuring kubectl](../configuring-kubectl/) guide for details) 
+- at least one node on the cluster (see the [ordering a node](/pages/platform/kubernetes-k8s/managing-nodes) guide for details) 
+- a well configured  `kubectl` (see the [configuring kubectl](/pages/platform/kubernetes-k8s/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster) guide for details) 
 
 > [!warning]
 > When a __LoadBalancer__ Service resource is created inside a Managed Kubernetes cluster, an associated Public Cloud Load Balancer is automatically created, allowing public access to your K8S application.
@@ -247,7 +244,7 @@ No resources found in hello-app namespace.
 
 ## Go further
 
-To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes doc site](../).
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes doc site](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

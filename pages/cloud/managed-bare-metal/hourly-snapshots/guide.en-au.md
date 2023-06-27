@@ -1,11 +1,8 @@
 ---
 title: OVHcloud hourly snapshots
-slug: hourly-snapshots-ovhcloud
 routes:
-    canonical: 'https://docs.ovh.com/au/en/private-cloud/hourly-snapshots-ovhcloud/'
+    canonical: '/pages/cloud/private-cloud/snapshots_horaires_ovh'
 excerpt: Find out how OVHcloud hourly snapshots work
-section: OVHcloud Features
-order: 06
 updated: 2020-11-30
 ---
 
@@ -81,7 +78,7 @@ OVHcloud retains the other 23 hourly snapshots (up to H-24) on a datastore to wh
 
 Keep in mind that hourly snapshots are an additional security measure for internal purposes, and should only be used as a last resort in order to prevent any potential data loss.
 
-We recommend using a full backup solution, such as our [Veeam Managed Backup](../veeam-backup-as-a-service/) service, or any other system that performs a full backup of your virtual machines.
+We recommend using a full backup solution, such as our [Veeam Managed Backup](/pages/cloud/managed-bare-metal/veeam_backup_as_a_service) service, or any other system that performs a full backup of your virtual machines.
 
 ## Go further
 

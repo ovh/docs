@@ -1,9 +1,6 @@
 ---
 title: Analyzing Twitter with Logs Data Platform
-slug: logs-data-platform-twitter
-order: 07
 excerpt: Logs Data Platform can be used in multiple ways. Twitter feed and keyword analysis is one of them.
-section: Use cases
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-twitter?id=kb_article_view&sysparm_article=KB0050063'
 updated: 2019-04-10
@@ -268,6 +265,6 @@ That's all for now. If you have any proposition or trouble with this tutorial, d
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/it/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

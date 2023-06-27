@@ -1,9 +1,6 @@
 ---
 title: "Use cases - How to change the domain of an existing website"
-slug: how_to_change_the_domain_name_for_an_existing_website
 excerpt: "Find out how to change the domain name of an existing website"
-section: "Tutorials"
-order: 011
 updated: 2022-10-25
 ---
 
@@ -42,7 +39,7 @@ To change the access domain name for your website, there are several steps to fo
 
 ### Step 1: Declare the new domain on your hosting <a name="step1"></a>
 
-Declare your new domain name using our guide on [adding a multisite on your web hosting](https://docs.ovh.com/au/en/hosting/multisites-configuring-multiple-websites/). Also declare the sub-domain as `www` if, for example, you want to have `www.NewDomain.tld` also display your website in addition to `NewDomain.tld`.
+Declare your new domain name using our guide on [adding a multisite on your web hosting](/pages/web/hosting/multisites_configure_multisite). Also declare the sub-domain as `www` if, for example, you want to have `www.NewDomain.tld` also display your website in addition to `NewDomain.tld`.
 
 There are several conditions to meet for this part:
 
@@ -51,7 +48,7 @@ There are several conditions to meet for this part:
 
 > [!warning]
 >
-> If you enable the **country IP** or **CDN** options with your new domain, be sure to use the appropriate IP address listed in our documentation [IP address list for Web Hosting clusters](https://docs.ovh.com/au/en/hosting/multisites-configuring-multiple-websites/).
+> If you enable the **country IP** or **CDN** options with your new domain, be sure to use the appropriate IP address listed in our documentation [IP address list for Web Hosting clusters](/pages/web/hosting/multisites_configure_multisite).
 >
 > To find the cluster number where your hosting is located, go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action}, select your hosting, then the `FTP-SSH`{.action} tab. You will see the cluster number in the form **FTP server and SFTP**: `ftp.cluster0XX.ovh.net` (where `X` is the cluster number).
 >
@@ -59,8 +56,8 @@ There are several conditions to meet for this part:
 > **SSL certificates**
 >
 > If the domain name originally used to access your website has an SSL certificate, please refer to our two guides to perform or check the actions described below these two links:
-> - [Managing an SSL certificate on a Web Hosting plan](https://docs.ovh.com/au/en/hosting/ssl-certificates-on-web-hosting-plans/)
-> - [Activating HTTPS on your website with an SSL certificate](https://docs.ovh.com/au/en/hosting/activate-https-website-ssl/)
+> - [Managing an SSL certificate on a Web Hosting plan](/pages/web/hosting/ssl_on_webhosting)
+> - [Activating HTTPS on your website with an SSL certificate](/pages/web/hosting/ssl-activate-https-website)
 >
 > For the free *Let's Encrypt* SSL certificate, simply activate the `SSL` **option now** for your new domain via the `Multisites`{.action} tab on your hosting plan. Then click on the `Actions`{.action} button above the table indicating your nodes, then on `Regenerate SSL certificate`{.action}. Regeneration will take at least 2 hours to complete.
 >
@@ -90,7 +87,7 @@ Most sites use databases to operate. The tree structure for these nodes is gener
 >
 > Warning, the operations described in step 2 are extremely sensitive and can have serious consequences for your website if they are not carried out with caution. If you have any doubts, do not try anything and contact a [specialist provider](https://partner.ovhcloud.com/en-au/directory/).
 >
-> Before you take any action, we advise retrieving a [backup of your FTP storage space](https://docs.ovh.com/gb/en/hosting/restoring-ftp-filezilla-control-panel/) and a [backup of your database](https://docs.ovh.com/au/en/hosting/web_hosting_database_export_guide/). This will allow you to restore your website in the event of an error.
+> Before you take any action, we advise retrieving a [backup of your FTP storage space](/pages/web/hosting/ftp_save_and_backup) and a [backup of your database](/pages/web/hosting/sql_database_export). This will allow you to restore your website in the event of an error.
 >
 
 We will distinguish two types of website: 
@@ -110,13 +107,13 @@ Since CMSs are developed by third-party organisations and are not managed by OVH
 - Drupal: The publisher of this software does not offer any documentation to date for changing the access domain for your website. Please contact the publisher directly on this subject. For more information, see the official pages [drupal.org](https://drupal.org){.external} or [drupal.fr](https://drupal.fr){.external}.
 - PrestaShop: The publisher of this software does not offer any documentation to date for changing the access domain for your website. Please contact the publisher directly on this subject. For more information, click [here](https://help-center.prestashop.com){.external} to go to their official page.
 
-Please note that for these CMSs, you can also edit the domain names directly [in the corresponding database](https://docs.ovh.com/au/en/hosting/creating-database/). You will need to change the URL for accessing your website in the table used for your CMS.
+Please note that for these CMSs, you can also edit the domain names directly [in the corresponding database](/pages/web/hosting/sql_create_database). You will need to change the URL for accessing your website in the table used for your CMS.
 
 For other CMSs that are not offered for automatic installation by OVHcloud, please also contact their respective customer support to carry out this rewrite in a secure manner.
 
 #### Case 2: You have a custom built website
 
-To rewrite your URLs with your new domain, [log in to your website database](https://docs.ovh.com/au/en/hosting/creating-database/) then replace your old domain with the new one in the corresponding table. 
+To rewrite your URLs with your new domain, [log in to your website database](/pages/web/hosting/sql_create_database) then replace your old domain with the new one in the corresponding table. 
 
 Don't forget to check your `.htaccess` file to see if you need to update URL rewrites with your new domain.
 
@@ -129,26 +126,26 @@ If you used a service provider to create your website, contact them so that they
 
 ### Step 3 - Remove the old domain name <a name="step3"></a>
 
-To avoid duplicate content, you will need to delete the multisite entry for your old domain name. Once your new domain name is fully operational with your site, use our guide on [managing multisites on your hosting](https://docs.ovh.com/au/en/hosting/multisites-configuring-multiple-websites/) to remove it.
+To avoid duplicate content, you will need to delete the multisite entry for your old domain name. Once your new domain name is fully operational with your site, use our guide on [managing multisites on your hosting](/pages/web/hosting/multisites_configure_multisite) to remove it.
 
 > [!warning]
 >
 > Don't forget to take care of your SSL certificate *Sectigo EV*, *Sectigo DV* or *Custom* as specified in [step 1](#step1).
 >
 
-Once your old domain has been removed from the multisites tab, and if it is registered with OVHcloud, you can redirect it using a [permanent visible redirection 301](https://docs.ovh.com/au/en/domains/redirect-domain-name/). This will allow your visitors to be automatically redirected to your site when accessing your old domain name/URL in the address bar of their browser.
+Once your old domain has been removed from the multisites tab, and if it is registered with OVHcloud, you can redirect it using a [permanent visible redirection 301](/pages/web/domains/redirect_domain_name). This will allow your visitors to be automatically redirected to your site when accessing your old domain name/URL in the address bar of their browser.
 
 ## Go further <a name="go-further"></a>
 
-[Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/au/en/hosting/multisites-configuring-multiple-websites/)
+[Hosting multiple websites on your Web Hosting plan](/pages/web/hosting/multisites_configure_multisite)
 
-[Managing an SSL certificate on a Web Hosting plan](https://docs.ovh.com/au/en/hosting/ssl-certificates-on-web-hosting-plans/)
+[Managing an SSL certificate on a Web Hosting plan](/pages/web/hosting/ssl_on_webhosting)
 
-[Activating HTTPS on your website with an SSL certificate](https://docs.ovh.com/au/en/hosting/activate-https-website-ssl/)
+[Activating HTTPS on your website with an SSL certificate](/pages/web/hosting/ssl-activate-https-website)
 
-[Redirecting a domain name](https://docs.ovh.com/au/en/domains/redirect-domain-name/)
+[Redirecting a domain name](/pages/web/domains/redirect_domain_name)
 
-[IP address list for Web Hosting clusters](https://docs.ovh.com/au/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/)
+[IP address list for Web Hosting clusters](/pages/web/hosting/clusters_and_shared_hosting_IP)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
 

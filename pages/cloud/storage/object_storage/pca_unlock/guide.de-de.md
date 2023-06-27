@@ -1,9 +1,6 @@
 ---
 title: Cloud Archive Swift - Auf Public Cloud Archive gespeicherte Daten freigeben
-slug: pca/unlock
 excerpt: Erfahren Sie hier, wie Sie Ihre Archive freigeben
-section: OpenStack Swift Archive Storage Class Specifics
-order: 030
 updated: 2022-04-12
 ---
 
@@ -24,8 +21,8 @@ Da Cold Storage Daten nur selten Zugriff benötigen, ist eine Freigabeanforderun
 - *Unfreeze* im OVHcloud Kundencenter:
     - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - *Unfreeze* über python-swiftclient:
-    - [Umgebung für die Verwendung der OpenStack-API vorbereiten](https://docs.ovh.com/de/public-cloud/prepare_the_environment_for_using_the_openstack_api/) indem python-swiftclient installiert wird.
-    - [OpenStack Umgebungsvariablen einrichten](https://docs.ovh.com/de/public-cloud/set-openstack-environment-variables/).
+    - [Umgebung für die Verwendung der OpenStack-API vorbereiten](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) indem python-swiftclient installiert wird.
+    - [OpenStack Umgebungsvariablen einrichten](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 ## In der praktischen Anwendung
 
@@ -41,7 +38,7 @@ Sobald der Prozess läuft, werden Datum und Uhrzeit der Verfügbarkeit Ihres Arc
 
 ![Frist](images/unfreeze_result.png){.thumbnail}
 
-Ihre Datei wird nach Ablauf dieser Frist zum Download verfügbar sein. Sie können dann den Download direkt im Browser oder über einen [Swift/SFTP/SCP Client](https://docs.ovh.com/gb/en/storage/pca/sftp/) ausführen.
+Ihre Datei wird nach Ablauf dieser Frist zum Download verfügbar sein. Sie können dann den Download direkt im Browser oder über einen [Swift/SFTP/SCP Client](/pages/cloud/storage/object_storage/pca_sftp) ausführen.
 
 ### Objekte über python-swiftclient abrufen
 

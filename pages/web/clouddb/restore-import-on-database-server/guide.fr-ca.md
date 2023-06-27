@@ -1,9 +1,6 @@
 ---
 title: 'Restaurer et importer une base de données sur votre serveur de bases de données'
-slug: restaurer-importer-base-de-donnees
 excerpt: 'Découvrez comment restaurer et importer votre base de données'
-section: 'Configuration'
-order: 05
 updated: 2023-02-15
 ---
 

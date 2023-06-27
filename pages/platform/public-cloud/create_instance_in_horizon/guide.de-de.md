@@ -1,8 +1,6 @@
 ---
 title: 'Eine Instanz über das Horizon-Interface erstellen'
 excerpt: 'Erfahren Sie hier, wie Sie eine Instanz über das Horizon-Interface erstellen'
-slug: erstellung_einer_instanz_in_horizon
-section: 'Horizon'
 updated: 2022-08-01
 ---
 
@@ -21,11 +19,11 @@ Sie haben die Möglichkeit, Instanzen direkt über das Horizon-Interface zu erst
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud](https://www.ovhcloud.com/de/public-cloud/){.external} Projekt in Ihrem OVHcloud Kunden-Account erstellt.
-- Sie haben Zugang zum [Horizon-Interface](../horizon/). 
+- Sie haben Zugang zum [Horizon-Interface](/pages/platform/public-cloud/introducing_horizon). 
 
 ## In der praktischen Anwendung
 
-Um eine Instanz zu erstellen, loggen Sie sich zunächst im Horizon-Interface ein. Wenn Sie hierbei Hilfe brauchen, lesen Sie unsere [Anleitung](../horizon/).
+Um eine Instanz zu erstellen, loggen Sie sich zunächst im Horizon-Interface ein. Wenn Sie hierbei Hilfe brauchen, lesen Sie unsere [Anleitung](/pages/platform/public-cloud/introducing_horizon).
 
 Klicken Sie dann im linken Menü auf `Compute`{.action} und anschließend auf `Instances`{.action}.
 
@@ -57,7 +55,7 @@ Geben Sie dann die angeforderten Informationen ein. Falls Sie beim Ausfüllen de
 
 > [!warning] 
 >
-> Obwohl das Feld "Key Pair" bei der Erstellung einer Instanz im Horizon-Interface nicht obligatorisch ist, ist die Speicherung eines SSH-Schlüssels notwendig, um sich mit einer Instanz verbinden zu können. Ohne SSH-Schlüssel müssen Sie die Instanz im Rescue-Modus neu starten, um ein Passwort zu erstellen oder einen SSH-Schlüssel in der entsprechenden Datei hinzuzufügen (Für weitere Informationen lesen Sie die Anleitung [Änderung des SSH-Schlüssels bei Verlust](../nderung_des_ssh_schlussels_bei_verlust/#in-der-praktischen-anwendung)).
+> Obwohl das Feld "Key Pair" bei der Erstellung einer Instanz im Horizon-Interface nicht obligatorisch ist, ist die Speicherung eines SSH-Schlüssels notwendig, um sich mit einer Instanz verbinden zu können. Ohne SSH-Schlüssel müssen Sie die Instanz im Rescue-Modus neu starten, um ein Passwort zu erstellen oder einen SSH-Schlüssel in der entsprechenden Datei hinzuzufügen (Für weitere Informationen lesen Sie die Anleitung [Änderung des SSH-Schlüssels bei Verlust](/pages/platform/public-cloud/replacing_lost_ssh_key#in-der-praktischen-anwendung)).
 >
 
 Um die gewünschten Instanzen zu starten, klicken Sie auf den Button `Launch Instance`{.action}.

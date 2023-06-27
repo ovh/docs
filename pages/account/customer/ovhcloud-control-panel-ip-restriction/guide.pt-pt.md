@@ -1,9 +1,6 @@
 ---
 title: "Limitar o acesso por IP à Área de Cliente OVHcloud"
-slug: ovhcloud-control-panel-ip-restriction
 excerpt: "Saiba como proteger a sua conta OVHcloud limitando os endereços IP autorizados a aceder à mesma"
-section: Segurança
-order: 03
 updated: 2022-12-12
 ---
 
@@ -18,7 +15,7 @@ updated: 2022-12-12
 A OVHcloud oferece-lhe opções para reforçar a segurança da sua Área de Cliente OVHcloud e dos seus serviços.
 
 Em particular, pode restringir o acesso ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) a determinados endereços IP.
-A implementação desta opção, associada à proteção da sua conta com uma [dupla autenticação](https://docs.ovh.com/pt/customer/proteger-a-sua-conta-com-uma-2FA/), permite proteger de forma ótima a sua Área de Cliente OVHcloud contra eventuais tentativas de intrusão.
+A implementação desta opção, associada à proteção da sua conta com uma [dupla autenticação](/pages/account/customer/secure-ovhcloud-account-with-2fa), permite proteger de forma ótima a sua Área de Cliente OVHcloud contra eventuais tentativas de intrusão.
 
 **Descubra como proteger a sua conta OVHcloud limitando os endereços IP autorizados a aceder à mesma**
 
@@ -30,7 +27,7 @@ A implementação desta opção, associada à proteção da sua conta com uma [d
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Ter tomado conhecimento das [recomendações sobre a gestão da palavra-passe de acesso à sua conta](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/).
+- Ter tomado conhecimento das [recomendações sobre a gestão da palavra-passe de acesso à sua conta](/pages/account/customer/manage-ovh-password).
   
 ## Instruções
 
@@ -155,7 +152,7 @@ Depois de inserir todos os endereços IP públicos na secção `IP configurados`
 
 ## Quer saber mais?
 
-[Implementar uma dupla autenticação na sua Área de Cliente OVHcloud](https://docs.ovh.com/pt/customer/proteger-a-sua-conta-com-uma-2FA/)
+[Implementar uma dupla autenticação na sua Área de Cliente OVHcloud](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 

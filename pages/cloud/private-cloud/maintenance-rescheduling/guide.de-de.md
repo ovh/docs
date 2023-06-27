@@ -1,8 +1,6 @@
 ---
 title: "Wartungsarbeiten auf Ihrer Hosted Private Cloud verschieben"
 excerpt: "Erfahren Sie hier, wie Sie geplante Wartungsarbeiten auf Ihrer Hosted Private Cloud Powered by VMware "
-slug: wartungsarbeiten
-section: OVHcloud Funktionen
 updated: 2022-11-30
 ---
 
@@ -58,7 +56,7 @@ Klicken Sie anschließend auf den Button `Ändern`{.action}, um Ihre Planung zu 
 
 ### Mit der OVHcloud API
 
-Loggen Sie sich in der [OVHcloud API-Konsole](https://eu.api.ovh.com/) ein. Folgen Sie falls nötig unserer Anleitung "[Erste Schritte mit der OVHcloud API](https://docs.ovh.com/de/api/first-steps-with-ovh-api/)".
+Loggen Sie sich in der [OVHcloud API-Konsole](https://eu.api.ovh.com/) ein. Folgen Sie falls nötig unserer Anleitung "[Erste Schritte mit der OVHcloud API](/pages/account/api/first-steps)".
 
 Führen Sie folgenden Aufruf aus:
 

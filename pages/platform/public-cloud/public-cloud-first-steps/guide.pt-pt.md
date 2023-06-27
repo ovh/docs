@@ -1,9 +1,6 @@
 ---
 title: 'Criação e conexão a uma primeira instância Public Cloud'
-slug: public-cloud-primeiros-passos
 excerpt: 'Saiba como dar os primeiros passos com o serviço Public Cloud depois da criação de um projeto'
-section: Introdução
-order: 1
 updated: 2023-01-26
 ---
 
@@ -146,7 +143,7 @@ Independentemente do método usado para criar chaves SSH, agora já dispõe de u
 
 > [!primary]
 >
-As chaves SSH armazenadas propiciam uma criação de instâncias mais rápida. Se desejar alterar pares de chaves e adicionar utilizadores ulteriormente, consulte o guia [Configurar as chaves SSH suplementares](../configurar_as_chaves_ssh_suplementares/).
+As chaves SSH armazenadas propiciam uma criação de instâncias mais rápida. Se desejar alterar pares de chaves e adicionar utilizadores ulteriormente, consulte o guia [Configurar as chaves SSH suplementares](/pages/platform/public-cloud/configuring_additional_ssh_keys).
 >
 
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), secção `Public Cloud`{.action}, e selecione o serviço Public Cloud em questão. A seguir, clique em `Chaves SSH`{.action}, na barra de navegação à esquerda, sob «Gestão de projetos».
@@ -218,7 +215,7 @@ Em função da utilização prevista das suas instâncias, pode selecionar o **M
 
 O modo Public é o modelo de rede clássico, permite que as suas instâncias tenham uma porta de rede pública ligada. Associada ao vrack, cada instância possui um IP público e um IP privado.
 
-O modo privado oferece-lhe a possibilidade de afetar as suas instâncias apenas a uma rede privada. As instâncias deste modo só podem ser expostas à rede pública através de um serviço Gateway ou Load Balancer com Floating IP. Para mais informações, consulte o nosso manual sobre as [soluções de rede para o Public Cloud da OVHcloud](https://docs.ovh.com/pt/publiccloud/network-services/).
+O modo privado oferece-lhe a possibilidade de afetar as suas instâncias apenas a uma rede privada. As instâncias deste modo só podem ser expostas à rede pública através de um serviço Gateway ou Load Balancer com Floating IP. Para mais informações, consulte o nosso manual sobre as [soluções de rede para o Public Cloud da OVHcloud](/products/public-cloud-network).
 
 Depois de escolher o modo escolhido, selecione uma rede privada para associar a sua instância ou clique em `Criar uma nova rede privada`{.action} para criar uma nova.
 
@@ -245,12 +242,12 @@ De forma automática, é criado na instância um utilizador com um leque alargad
 
 > [!primary]
 >
-Se encontrar problemas durante a conexão, nomeadamente erros relativos às chaves SSH, consulte o guia [Alterar a chave SSH em caso de perda](../alterar_a_chave_ssh_em_caso_de_perda/).
+Se encontrar problemas durante a conexão, nomeadamente erros relativos às chaves SSH, consulte o guia [Alterar a chave SSH em caso de perda](/pages/platform/public-cloud/replacing_lost_ssh_key).
 >
 
 > [!primary]
 >
-Se criou uma instância sem chave SSH, através da API OVHcloud ou da interface Openstack Horizon, só poderá adicionar uma chave SSH à sua instância através do [modo de rescue](https://docs.ovh.com/pt/public-cloud/passar_uma_instancia_em_modo_de_rescue/), seguindo as instruções descritas em [esta secção do guia apropriado](../alterar_a_chave_ssh_em_caso_de_perda/#instrucoes).
+Se criou uma instância sem chave SSH, através da API OVHcloud ou da interface Openstack Horizon, só poderá adicionar uma chave SSH à sua instância através do [modo de rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode), seguindo as instruções descritas em [esta secção do guia apropriado](/pages/platform/public-cloud/replacing_lost_ssh_key#instrucoes).
 >
 
 #### Conexão a uma instância Linux a partir de Linux/Mac
@@ -356,12 +353,12 @@ Se surgir uma mensagem relativa a certificados, clique em `Sim`{.action}. De seg
 
 ## Quer saber mais?
 
-[Criar uma cópia de segurança de uma instância](../efetuar_backup_de_uma_instancia/)
+[Criar uma cópia de segurança de uma instância](/pages/platform/public-cloud/save_an_instance)
 
-[Aumentar a quota Public Cloud](../increase-public-cloud-quota/)
+[Aumentar a quota Public Cloud](/pages/platform/public-cloud/increasing_public_cloud_quota)
 
-[Passar de uma faturação à hora para uma faturação ao mês](../mudar-tipo-faturacao-public-cloud/)
+[Passar de uma faturação à hora para uma faturação ao mês](/pages/platform/public-cloud/changing_hourly_monthly_billing)
 
-[Configurar as chaves SSH suplementares](../configurar_as_chaves_ssh_suplementares/)
+[Configurar as chaves SSH suplementares](/pages/platform/public-cloud/configuring_additional_ssh_keys)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

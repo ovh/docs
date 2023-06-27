@@ -1,8 +1,6 @@
 ---
 title: Zarządzanie zamówieniami w OVHcloud
-slug: zarzadzanie-zamowieniami-ovh
 excerpt: Dowiedz się, jak zarządzać zamówieniami na usługi w OVHcloud
-section: Zamówienia, faktury i usługi
 updated: 2022-05-06
 ---
 
@@ -40,7 +38,7 @@ Zamówienie zostało utworzone w momencie składania zamówienia. Zawiera listę
 |---|---|
 |1|Numer, data utworzenia i data wygaśnięcia zamówienia. Jeśli wygasł, należy złożyć zamówienie.|
 |2|Twoje dane do faktury. Aby wyświetlić i opłacić zamówienie, należy go zidentyfikować.|
-|3|Sposoby płatności zapisane na Twoim koncie klienta Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem [Zarządzanie sposobami płatności](https://docs.ovh.com/pl/billing/zarzadzanie-sposobami-platnosci/).|
+|3|Sposoby płatności zapisane na Twoim koncie klienta Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem [Zarządzanie sposobami płatności](/pages/account/billing/manage-payment-methods).|
 |4|Dostępne metody płatności Zaproponowane są wyłącznie metody płatności akceptowane w kraju, w którym znajduje się konto, lub metody związane z typem zarejestrowanego konta.|
 
 Możesz w każdym momencie odnaleźć Twoje zamówienie w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), jak wyjaśniono poniżej.
@@ -99,7 +97,7 @@ Opcję skorzystania z prawa do odstąpienia od umowy znajdziesz w dalszym ciągu
 > Prawo do wycofania dotyczy wyłącznie osób fizycznych i ma zastosowanie jedynie do nowych zamówień. Nie można więc twierdzić, że:
 >
 > - w przypadku odnowienia;
-> - jeśli Twoje konto klienta OVHcloud jest [innego typu niż](https://docs.ovh.com/pl/customer/identyfikator_klienta/#zmien-typ-konta) OVHcloud.
+> - jeśli Twoje konto klienta OVHcloud jest [innego typu niż](/pages/account/customer/all_about_username#zmien-typ-konta) OVHcloud.
 >
 > Ponadto prawo do odstąpienia od umowy nie ma zastosowania do zamówień nieopłaconych, ponieważ zamówienia są automatycznie anulowane po wygaśnięciu zamówienia.
 >

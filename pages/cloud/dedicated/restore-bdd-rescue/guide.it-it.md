@@ -1,8 +1,6 @@
 ---
 title: "Recupero dei database in modalità Rescue"
-slug: dedicated-servers-retrieve-database
 excerpt: "Scopri come accedere ai tuoi database e registrarli in modalità Rescue"
-section: Diagnostica e modalità Rescue
 updated: 2023-04-13
 ---
 

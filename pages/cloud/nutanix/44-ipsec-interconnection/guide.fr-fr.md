@@ -1,9 +1,6 @@
 ---
 title: Interconnexion IPsec entre deux sites
-slug: ipsec-interconnection
 excerpt: "Mise en place d'un VPN IPsec entre deux clusters Nutanix distants"
-section: "Plan de Reprise d'Activité"
-order: 02
 updated: 2022-06-29
 ---
 
@@ -21,7 +18,7 @@ Ce guide vous présente comment interconnecter deux clusters Nutanix Fournis par
 
 ## Prérequis
 
-- Avoir pris connaissance des cas d'usages d'un VPN IPsec à l'aide du guide « [Plan de reprise d'activité sur Nutanix](https://docs.ovh.com/fr/nutanix/disaster-recovery-plan-overview/) ».
+- Avoir pris connaissance des cas d'usages d'un VPN IPsec à l'aide du guide « [Plan de reprise d'activité sur Nutanix](/pages/cloud/nutanix/43-disaster-recovery-plan-overview) ».
 - Disposer de deux clusters Nutanix fournis par OVHcloud, sur des sites différents.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur vos clusters via Prism Central.
@@ -83,7 +80,7 @@ Pour permettre cette configuration, nous allons remplacer sur chacun des sites l
 
 Téléchargez l'image ISO de l'installation de **pfSense** à partir de ce lien : [Téléchargement de pfSense](https://www.pfsense.org/download/){.external}.
 
-A l'aide de [cette documentation](https://docs.ovh.com/fr/nutanix/image-import/), ajoutez l'image **ISO pfSense** dans votre cluster Nutanix.
+A l'aide de [cette documentation](/pages/cloud/nutanix/05-image-import), ajoutez l'image **ISO pfSense** dans votre cluster Nutanix.
 
 <a name="createvmpfsense"></a>
 #### Etape 2.2 Création de la machine virtuelle **GW-PFSENSE**
@@ -97,7 +94,7 @@ Créez une machine virtuelle avec ces paramètres :
 - **CPU** : `2 vCPU`
 - **Réseau** : `deux cartes réseau sur le réseau de AHV: **Base**`
 
-Vous pouvez vous aider de [notre guide sur la gestion des machines virtuelles](https://docs.ovh.com/fr/nutanix/virtual-machine-management/) pour créer cette machine virtuelle.
+Vous pouvez vous aider de [notre guide sur la gestion des machines virtuelles](/pages/cloud/nutanix/06-virtual-machine-management) pour créer cette machine virtuelle.
 
 ![Create VM 01](images/00-createvm01.png){.thumbnail}
 
@@ -419,7 +416,7 @@ Nous allons effectuer l'installation de la passerelle **GW-PFSENSE** en France s
 
 Téléchargez l'image ISO de l'installation de **pfSense** à partir de ce lien : [Téléchargement de pfSense](https://www.pfsense.org/download/){.external}.
 
-A l'aide de [cette documentation](https://docs.ovh.com/fr/nutanix/image-import/), ajoutez l'image **ISO pfSense** dans votre cluster Nutanix.
+A l'aide de [cette documentation](/pages/cloud/nutanix/05-image-import), ajoutez l'image **ISO pfSense** dans votre cluster Nutanix.
 
 <a name="createvmpfsensefr"></a>
 #### Etape 3.2 Création de la machine virtuelle **GW-PFSENSE**
@@ -433,7 +430,7 @@ Créez une machine virtuelle avec ces paramètres :
 - **CPU** : `2 vCPU`
 - **Réseau** : `deux cartes réseau sur le réseau de AHV: **Base**`
 
-Vous pouvez vous aider de [notre guide sur la gestion des machines virtuelles](https://docs.ovh.com/fr/nutanix/virtual-machine-management/) pour créer cette machine virtuelle.
+Vous pouvez vous aider de [notre guide sur la gestion des machines virtuelles](/pages/cloud/nutanix/06-virtual-machine-management) pour créer cette machine virtuelle.
 
 ![Create VM 01](images/00-createvm01.png){.thumbnail}
 
@@ -976,9 +973,9 @@ Le paramétrage du VPN est terminé sur les deux clusters. Il est maintenant pos
 <a name="gofurther"></a>
 ## Aller plus loin
 
-[Plan de reprise d'activité sur Nutanix](https://docs.ovh.com/fr/nutanix/disaster-recovery-plan-overview/)
+[Plan de reprise d'activité sur Nutanix](/pages/cloud/nutanix/43-disaster-recovery-plan-overview)
 
-[Réplication asynchrone ou **NearSync** au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
+[Réplication asynchrone ou **NearSync** au travers de Prism Element](/pages/cloud/nutanix/46-prism-element-replication)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

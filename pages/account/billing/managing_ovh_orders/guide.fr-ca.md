@@ -1,8 +1,6 @@
 ---
 title: Gérer mes commandes OVHcloud
-slug: gerer-ses-commandes-ovh
 excerpt: Découvrez comment gérer vos commandes chez OVHcloud
-section: Facturation
 updated: 2022-05-06
 ---
 
@@ -36,7 +34,7 @@ Le bon de commande est créé au moment du passage de votre commande. Il liste l
 |---|---|
 |1|Numéro, date de création et date d'expiration du bon de commande. S'il est expiré, vous devrez repasser commande.|
 |2|Vos coordonnées de facturation. Vous devez être identifié pour afficher et payer votre bon de commande.|
-|3|Moyens de paiement enregistrés sur votre compte client. Pour plus d'informations, consultez le guide [Gérer mes moyens de paiement](https://docs.ovh.com/fr/billing/manage-payment-methods/).|
+|3|Moyens de paiement enregistrés sur votre compte client. Pour plus d'informations, consultez le guide [Gérer mes moyens de paiement](/pages/account/billing/manage-payment-methods).|
 |4|Méthodes de paiement disponibles. Seules les méthodes de paiement autorisés dans le pays d'origine du compte ou ceux liés au type de compte enregistré vous seront proposées.|
 
 Vous pouvez à tout moment retrouver votre bon de commande dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), comme expliqué ci-dessous.

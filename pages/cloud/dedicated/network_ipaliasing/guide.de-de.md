@@ -1,8 +1,6 @@
 ---
 title: 'Konfiguration von IP-Aliasing'
-slug: network-ipaliasing
 excerpt: 'Erfahren Sie hier, wie Sie Additional IPs zu Ihrer Konfiguration hinzufügen'
-section: 'Netzwerk & IP'
 updated: 2023-06-15
 ---
 

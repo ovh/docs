@@ -1,9 +1,6 @@
 ---
 title: "Mit dem FTP-Speicherplatz eines Webhostings verbinden"
-slug: verbindung-ftp-speicher-webhosting
 excerpt: "Erfahren Sie hier, wie Sie sich im FTP-Speicherplatz Ihres OVHcloud Webhostings einloggen"
-section: 'FTP und SSH'
-order: 02
 updated: 2023-05-31
 ---
 

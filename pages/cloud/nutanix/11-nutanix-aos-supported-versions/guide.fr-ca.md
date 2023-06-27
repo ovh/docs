@@ -1,9 +1,6 @@
 ---
 title: Versions de Nutanix AOS supportées par OVHcloud
-slug: nutanix-aos-supported-versions
 excerpt: "Vérifiez les versions de Nutanix AOS supportées par OVHcloud"
-section: Premiers pas
-order: 11
 updated: 2022-11-25
 ---
 
@@ -74,7 +71,7 @@ Le résultat de la requête apparaît en dessous de `availableVersions` avec les
 
 [Plan de mise à jours Nutanix AOS](https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LIi9CAG)
 
-[Utilisation de l'API OVHcloud](https://docs.ovh.com/ca/fr/api/)
+[Utilisation de l'API OVHcloud](/products/infrastructure-as-code-api-apiv6)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

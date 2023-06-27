@@ -1,9 +1,6 @@
 ---
 title: Creare un account OVHcloud
-slug: creare-account-ovhcloud
 excerpt: Come creare un account OVHcloud
-section: 'Per iniziare'
-order: 1
 updated: 2023-05-23
 ---
 
@@ -34,7 +31,7 @@ Per creare un account OVHcloud, clicca su [questa pagina](https://www.ovh.com/au
 |---|---|
 |Nome - Cognome|Inserisci **qui un nome e un cognome** comuni.|
 |Indirizzo email|Inserisci un indirizzo email **valido al quale hai accesso**.<br><br>Evita di utilizzare un indirizzo email associato a un dominio che gestisci dal tuo Spazio Cliente. In caso di interruzione di questo dominio, non riceverai più le nostre notifiche.|
-|Password|La password deve essere unica (creata e utilizzata solo per il tuo account OVHcloud) e sufficientemente complessa.<br><br>Per creare una password efficace, consulta [la nostra guida sulla gestione della password](https://docs.ovh.com/it/customer/gestire-la-password/#procedura).|
+|Password|La password deve essere unica (creata e utilizzata solo per il tuo account OVHcloud) e sufficientemente complessa.<br><br>Per creare una password efficace, consulta [la nostra guida sulla gestione della password](/pages/account/customer/manage-ovh-password#procedura).|
 
 Una volta completato il primo form, ricevi un codice monouso all'indirizzo email inserito. Questo codice permette di convalidare il tuo indirizzo email. Inseriscilo nelle caselle previste.
 
@@ -75,14 +72,14 @@ Il tuo identificativo cliente è visualizzato in alto a destra con il tuo nome e
 
 ## Per saperne di più
 
-Una volta creato l'account OVHcloud, ti consigliamo di seguire le nostre [raccomandazioni sulla sicurezza del tuo account e sulla gestione dei tuoi dati personali](https://docs.ovh.com/it/customer/tutto_sullidentificativo_cliente_ovh/).
+Una volta creato l'account OVHcloud, ti consigliamo di seguire le nostre [raccomandazioni sulla sicurezza del tuo account e sulla gestione dei tuoi dati personali](/pages/account/customer/all_about_username).
 
 Consulta le nostre guide per:
 
-[Accedi allo Spazio Cliente OVHcloud](https://docs.ovh.com/it/customer/accedere-spazio-cliente-ovhcloud/)
+[Accedi allo Spazio Cliente OVHcloud](/pages/account/customer/ovhcloud-account-login)
 
-[Modifica la password del tuo account OVHcloud](https://docs.ovh.com/it/customer/gestire-la-password/)
+[Modifica la password del tuo account OVHcloud](/pages/account/customer/manage-ovh-password)
 
-[Rendere sicuro il tuo account OVHcloud con la doppia autenticazione](https://docs.ovh.com/it/customer/proteggi_il_tuo_account_con_2FA/)
+[Rendere sicuro il tuo account OVHcloud con la doppia autenticazione](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

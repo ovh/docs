@@ -1,8 +1,6 @@
 ---
 title: Managing OVHcloud bills
-slug: manage-ovh-bills
 excerpt: Find out how to manage your bills and the payments associated with them
-section: Billing
 updated: 2022-05-12
 ---
 
@@ -23,7 +21,7 @@ OVHcloud provides a space for you to view, manage and pay your various bills.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) as the [Billing contact](https://docs.ovh.com/ca/en/customer/managing-contacts/) of your service
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) as the [Billing contact](/pages/account/customer/managing_contacts) of your service
 
 
 ## Instructions
@@ -114,13 +112,13 @@ To pay bills that are awaiting payment, simply click on the `Batch actions`{.act
 
 ![Pay a due amount](images/pay_debt.png){.thumbnail}
 
-A [settlement purchase order](https://docs.ovh.com/ca/en/billing/managing-ovh-orders/#purchase-order) will then be created. Once the payment has been made, your account will be balanced again.
+A [settlement purchase order](/pages/account/billing/managing_ovh_orders#purchase-order) will then be created. Once the payment has been made, your account will be balanced again.
 
 #### Request invoice cancellation
 
 > [!primary]
 >
-> To request that your service be cancelled on the expiry date, follow the instructions in [this guide](https://docs.ovh.com/ca/en/billing/how-to-cancel-your-services/).
+> To request that your service be cancelled on the expiry date, follow the instructions in [this guide](/pages/account/billing/how_to_cancel_services).
 >
 
 If you have received an invoice that you do not consider to be legitimate and you wish to request a refund, or submit your claim click on your name in the top right-hand corner of your screen, then on `Create a ticket`{.action}.
@@ -140,8 +138,8 @@ In this section, you can also export your payment receipts in *.csv* format, by 
 
 ## Go further
 
-[Managing renewal for your services](https://docs.ovh.com/ca/en/billing/how-to-use-automatic-renewal-at-ovh/)
+[Managing renewal for your services](/pages/account/billing/how_to_use_automatic_renewal)
 
-[Managing payment methods](https://docs.ovh.com/ca/en/billing/manage-payment-methods/)
+[Managing payment methods](/pages/account/billing/manage-payment-methods)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: "Limitare l'accesso via IP al tuo Spazio Cliente OVHcloud"
-slug: ovhcloud-control-panel-ip-restriction
 excerpt: "Come proteggere un account OVHcloud limitando gli indirizzi IP autorizzati ad accedervi"
-section: Sicurezza
-order: 03
 updated: 2022-12-12
 ---
 
@@ -18,7 +15,7 @@ updated: 2022-12-12
 OVHcloud mette a tua disposizione opzioni per rafforzare la sicurezza del tuo Spazio Cliente OVHcloud e dei tuoi servizi.
 
 In particolare, è possibile limitare l'accesso al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
-L'attivazione di questa opzione, associata alla protezione del tuo account con una [doppia autenticazione](https://docs.ovh.com/it/customer/proteggi_il_tuo_account_con_2FA/), permette di proteggere in modo ottimale il tuo Spazio Cliente OVHcloud contro eventuali tentativi di intrusione.
+L'attivazione di questa opzione, associata alla protezione del tuo account con una [doppia autenticazione](/pages/account/customer/secure-ovhcloud-account-with-2fa), permette di proteggere in modo ottimale il tuo Spazio Cliente OVHcloud contro eventuali tentativi di intrusione.
 
 **Questa guida ti mostra come proteggere il tuo account OVHcloud limitando gli indirizzi IP autorizzati ad accedervi**
 
@@ -30,7 +27,7 @@ L'attivazione di questa opzione, associata alla protezione del tuo account con u
 ## Prerequisiti
   
 - Avere accesso allo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Aver letto le [raccomandazioni sulla gestione della password di accesso al tuo account](https://docs.ovh.com/it/customer/gestire-la-password/)
+- Aver letto le [raccomandazioni sulla gestione della password di accesso al tuo account](/pages/account/customer/manage-ovh-password)
 
 ## Procedura
 
@@ -155,7 +152,7 @@ Una volta inseriti tutti gli indirizzi IP pubblici nella sezione `IP configurati
 
 ## Per saperne di più
 
-[Configura la doppia autenticazione sul tuo Spazio Cliente OVHcloud](https://docs.ovh.com/it/customer/proteggi_il_tuo_account_con_2FA/)
+[Configura la doppia autenticazione sul tuo Spazio Cliente OVHcloud](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 

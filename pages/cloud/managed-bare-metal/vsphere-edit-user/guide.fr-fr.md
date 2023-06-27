@@ -1,10 +1,8 @@
 ---
 title: Associer un email à un utilisateur vSphere
 routes:
-    canonical: 'https://docs.ovh.com/fr/private-cloud/associer-email-a-un-utilisateur/'
+    canonical: '/pages/cloud/private-cloud/vsphere_edit_user'
 excerpt: Découvrez comment associer une adresse e-mail à votre utilisateur vSphere
-slug: associer-email-a-un-utilisateur
-section: Fonctionnalités OVHcloud
 updated: 2020-11-18
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Shelve or pause an instance
-slug: shelve-or-pause-an-instance
 legacy_guide_number: 1781
-section: Project management
-order: 3
 updated: 2023-06-20
 ---
 
@@ -19,9 +16,9 @@ As part of the configuration of a high-availability infrastructure, you may enco
 
 ## Requirements
 
-- An [OVHcloud Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/) on **hourly** billing
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} or [Horizon interface](https://docs.ovh.com/gb/en/public-cloud/horizon/)
-- Knowledge of [Openstack API](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) and [Openstack variables](https://docs.ovh.com/gb/en/public-cloud/set-openstack-environment-variables/)
+- An [OVHcloud Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps#step-3-creating-an-instance/) on **hourly** billing
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} or [Horizon interface](/pages/platform/public-cloud/introducing_horizon)
+- Knowledge of [Openstack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) and [Openstack variables](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## Instructions
 
@@ -70,7 +67,7 @@ To view the snapshot, go to the left side menu and click on `Instance Backup`{.a
 
 #### From the Horizon Interface
 
-To proceed, you need to [configure user access to Horizon](../horizon/) and [log in to the Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
+To proceed, you need to [configure user access to Horizon](/pages/platform/public-cloud/introducing_horizon) and [log in to the Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
 
 If you have deployed instances in different regions, make sure you are in the correct region. You can verify this on the top left corner in the Horizon interface.
 
@@ -92,8 +89,8 @@ To view the snapshot, in the `Compute`{.action} menu, click on `Images`{.action}
 
 Before proceeding, it is recommended that you consult these guides:
 
-- [Prepare the environment to use the OpenStack API](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Set OpenStack environment variables](https://docs.ovh.com/gb/en/public-cloud/set-openstack-environment-variables/)
+- [Prepare the environment to use the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Set OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 Once your environment is ready, type the following at the command line:
 

@@ -1,8 +1,6 @@
 ---
 title: Utilizar la funcionalidad Bring Your Own Image
 excerpt: Cómo desplegar las imágenes con Bring Your Own Image
-slug: bringyourownimage
-section: Uso avanzado
 updated: 2022-11-25
 ---
 
@@ -27,7 +25,7 @@ Además de los requisitos y limitaciones indicados más abajo, debe asegurarse d
 - Tener un [servidor dedicado de OVHcloud](https://www.ovhcloud.com/es-es/bare-metal/).
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) para la sección ["Despliegue desde el área de cliente"](#viacontrolpanel) de esta guía.
 - Estar conectado a la [API de OVHcloud](https://api.ovh.com/){.external} para la sección ["Despliegue a través de la API"](#viaapi) de esta guía.
-- Haber generado los [credenciales para utilizar la APIv6](https://docs.ovh.com/es/api/first-steps-with-ovh-api/) en la sección ["Despliegue a través de la API"](#viaapi) de esta guía.
+- Haber generado los [credenciales para utilizar la APIv6](/pages/account/api/first-steps) en la sección ["Despliegue a través de la API"](#viaapi) de esta guía.
 - El tamaño de la imagen debe ser inferior a la cantidad de memoria RAM del servidor menos 3 GiB.
 
 > [!warning]
@@ -113,7 +111,7 @@ Una vez que haya completado todos los campos, ejecute el despliegue haciendo cli
 
 ### Comprobar el despliegue
 
-Puede seguir el despliegue de su imagen a través de la siguiente llamada a la API o a través del KVM/[IPMI](../utilizar-ipmi-servidor-dedicado/).
+Puede seguir el despliegue de su imagen a través de la siguiente llamada a la API o a través del KVM/[IPMI](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers).
 
 > [!api]
 >

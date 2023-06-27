@@ -1,9 +1,6 @@
 ---
 title: 'Importare un backup nel database di un hosting Web'
-slug: web_hosting_come_importare_un_database_mysql
 excerpt: 'Come importare un backup in un database di un hosting Web OVH'
-section: Database
-order: 04
 updated: 2018-09-25
 ---
 
@@ -140,7 +137,7 @@ Sostituisci le informazioni generiche dello script con i dati del database in qu
 
 #### 2. Caricare lo script e il backup sullo spazio di storage
 
-Una volta creato lo script è necessario caricarlo insieme al file di backup da importare sullo spazio di storage dell’hosting Web. Per effettuare questa operazione, è necessario collegarsi all’hosting (se hai bisogno di aiuto, consulta lo step 2 di [questa guida](https://docs.ovh.com/it/hosting/hosting_condiviso_come_mettere_online_il_tuo_sito/#step-2-carica-i-file-del-sito-nello-spazio-di-storage){.external}).
+Una volta creato lo script è necessario caricarlo insieme al file di backup da importare sullo spazio di storage dell’hosting Web. Per effettuare questa operazione, è necessario collegarsi all’hosting (se hai bisogno di aiuto, consulta lo step 2 di [questa guida](/pages/web/hosting/hosting_how_to_get_my_website_online#step-2-carica-i-file-del-sito-nello-spazio-di-storage){.external}).
 
 Per realizzare correttamente gli step successivi, carica lo script e il file di backup nella cartella “www”. **Ti consigliamo di prestare la massima attenzione al nome assegnato al file dello script di importazione**: quando effettui l’upload nello spazio di storage assicurati di non sovrascriverlo a un file già esistente con lo stesso nome. Nel caso, modifica il nome dello script appena creato e prova a caricarlo di nuovo.
 

@@ -1,9 +1,7 @@
 ---
 title: 'Everything you need to know about SMS users'
 excerpt: 'Explore the features for API users to send SMS messages'
-slug: everything_you_need_to_know_about_sms_users
 legacy_guide_number: g2144
-section: 'Managing your solution'
 updated: 2022-08-05
 ---
 
@@ -98,7 +96,7 @@ You can enter up to 5 different IP addresses for sending HTTPS requests.
 
 ![sms-users](images/smsusers06-2021.png){.thumbnail}
 
-For further details on the http2sms feature, please refer to our guide on [Sending SMS messages via a URL](../send_sms_messages_via_url_-_http2sms/).
+For further details on the http2sms feature, please refer to our guide on [Sending SMS messages via a URL](/pages/telecom/sms/envoyer_des_sms_depuis_une_url_-_http2sms).
 
 ### Step 5: Specify a callback URL
 
@@ -123,7 +121,7 @@ To get a description of a specific ptt code, you can use the following API:
 > @api {GET} /sms/ptts
 >
 
-For more information on using OVHcloud APIs, please refer to our guide [Getting started with OVHcloud APIs](https://docs.ovh.com/ie/en/api/first-steps-with-ovh-api/).
+For more information on using OVHcloud APIs, please refer to our guide [Getting started with OVHcloud APIs](/pages/account/api/first-steps).
 
 The table below provides a **non-exhaustive** list of the main ptt codes.
 

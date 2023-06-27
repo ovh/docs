@@ -1,10 +1,8 @@
 ---
 title: Configuring the API server flags on an OVHcloud Managed Kubernetes cluster
-slug: apiserver-flags-configuration
 excerpt: 'Find out how to configure the managed components of your Kubernetes: CoreDNS, IPVS, and even API server admission plugins on an OVHcloud Managed Kubernetes cluster'
-section: User guides
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/apiserver-flags-configuration/'
+    canonical: '/pages/platform/kubernetes-k8s/apiserver-flags-configuration'
 updated: 2023-05-22
 ---
 
@@ -165,7 +163,7 @@ The "OVH provider" needs to be configured with a set of credentials:
 
 Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs. 
 
-In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](https://docs.ovh.com/de/api/first-steps-with-ovh-api/) tutorial.
+In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](/pages/account/api/first-steps) tutorial.
 
 Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
 
@@ -492,7 +490,7 @@ Destroy complete! Resources: 1 destroyed.
 
 To have an overview of the OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
 
-To learn more about how to use your Kubernetes cluster the practical way, we invite you to look at our [tutorials](../).
+To learn more about how to use your Kubernetes cluster the practical way, we invite you to look at our [tutorials](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

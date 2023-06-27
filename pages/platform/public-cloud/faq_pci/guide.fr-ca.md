@@ -1,8 +1,5 @@
 ---
 title: FAQ Public Cloud OVHcloud
-slug: public-cloud-faq
-section: 'Informations générales'
-order: 01
 updated: 2022-12-01
 ---
 
@@ -14,25 +11,25 @@ updated: 2022-12-01
 
 La connexion se fait grâce à un couple de clés SSH à configurer lors de la création de votre instance Public cloud.
 
-Nous vous invitons à consulter le guide [Création et connexion à une première instance Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/).
+Nous vous invitons à consulter le guide [Création et connexion à une première instance Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps).
 
 ### J'ai perdu ou je souhaite changer ma clé SSH, comment faire ?
 
 Si vous ne pouvez plus vous connecter suite à la perte de votre clé privée, vous devez alors changer la clé publique de votre instance en passant cette dernière en mode « Rescue ».
 
-Nous vous invitons à consulter le guide [Changer sa clé SSH en cas de perte](https://docs.ovh.com/ca/fr/public-cloud/changer-sa-cle-ssh-en-cas-de-perte/).
+Nous vous invitons à consulter le guide [Changer sa clé SSH en cas de perte](/pages/platform/public-cloud/replacing_lost_ssh_key).
 
 ### Quels sont les possibilités de backup de mon instance ?
 
 Vous avez la possibilité de créer à tout moment la sauvegarde d’une instance depuis votre espace client OVHcloud. Cette dernière vous permet de restaurer votre instance sur une ancienne configuration, ou de pouvoir la recréer.
 
-Nous vous invitons à consulter le guide [Sauvegarder une instance](https://docs.ovh.com/ca/fr/public-cloud/sauvegarder-une-instance/).
+Nous vous invitons à consulter le guide [Sauvegarder une instance](/pages/platform/public-cloud/save_an_instance).
 
 ### Comment créer et gérer des utilisateurs OpenStack?  
 
 Afin de pouvoir utiliser les API Horizon ou OpenStack, vous devrez au préalable créer un utilisateur OpenStack. Vous pouvez en créer un nombre illimité.
 
-Nous vous invitons à consulter le guide [Création et suppression d’un utilisateur OpenStack](https://docs.ovh.com/ca/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/).
+Nous vous invitons à consulter le guide [Création et suppression d’un utilisateur OpenStack](/pages/platform/public-cloud/create_and_delete_a_user).
 
 ### Comment la facturation de Public Cloud fonctionne-t-elle ?
 
@@ -40,7 +37,7 @@ La facturation intervient entre le 1er et le 5e jour de chaque mois et porte sur
 Notez que toute instance est facturée tant qu’elle n’est pas supprimée de votre espace client OVHcloud.
 Vous pouvez suivre votre consommation grâce à des projections obtenues depuis l’historique de vos usages. Vous avez également la possibilité de choisir une facturation dissociée pour chaque projet Public Cloud, ce qui permet une éventuelle refacturation au sein de votre entreprise.
 
-Pour passer d’un mode de facturation à l’autre, consultez notre guide [Passer d’une facturation à l’heure à une facturation mensuelle](https://docs.ovh.com/ca/fr/public-cloud/changer-type-facturation-public-cloud/).
+Pour passer d’un mode de facturation à l’autre, consultez notre guide [Passer d’une facturation à l’heure à une facturation mensuelle](/pages/platform/public-cloud/changing_hourly_monthly_billing).
 
 ### Comment puis-je faire évoluer mes instances si j’ai besoin de plus ou moins de ressources ?
 
@@ -55,7 +52,7 @@ Oui, les images cloud fournies par OVHcloud intègrent les scripts cloud-init qu
 
 Vous pouvez créer des instances Backup de vos serveurs à tout moment, sans aucune limite. Ces sauvegardes sont stockées et facturées au même titre que les images dans « Private Image ». Au travers des API OpenStack, vous aurez la possibilité de les télécharger hors de l'infrastructure OVHcloud ou sur d'autres projets.
 
-Nous vous invitons à consulter le guide [Sauvegarder une instance](https://docs.ovh.com/ca/fr/public-cloud/sauvegarder-une-instance/).
+Nous vous invitons à consulter le guide [Sauvegarder une instance](/pages/platform/public-cloud/save_an_instance).
 
 ### Puis-je augmenter dynamiquement la taille d'un volume, tout en continuant à écrire sur le disque ?
 
@@ -69,7 +66,7 @@ Vous pouvez attacher jusqu'à 25 volumes additionnels par instance.
 
 OVHcloud protège l'ensemble de son infrastructure grâce à sa solution anti-DDoS exclusive. De plus, vous avez la possibilité d'ajouter les groupes de sécurité OpenStack : cet équivalent d'un pare-feu est géré directement au niveau de l'infrastructure d'OpenStack, en amont de vos instances.
 
-Nous vous invitons à consulter le guide [Configurer un groupe de sécurité](https://docs.ovh.com/ca/fr/public-cloud/configure-security-group-horizon/).
+Nous vous invitons à consulter le guide [Configurer un groupe de sécurité](/pages/platform/public-cloud/setup_security_group).
 
 Ces protections, associées à celles que vous pouvez mettre en place sur vos serveurs, vous permettront d'optimiser la fiabilité de votre déploiement.
 
@@ -78,13 +75,13 @@ Ces protections, associées à celles que vous pouvez mettre en place sur vos se
 Public Cloud intègre une solution SDN (software-defined network). Celle-ci permet de créer des réseaux privés dynamiquement, puis de les raccorder aux instances depuis votre espace client ou via l'API.
 Ces réseaux privés sont portés par la technologie vRack d'OVHcloud commune aux autres services de l'entreprise, tels que Private Cloud ou les serveurs dédiés. Elle offre ainsi la possibilité de faire communiquer l'ensemble de vos éléments d'infrastructure chez OVHcloud, de manière isolée et sécurisée.
 
-Nous vous invitons à consulter le guide [Configuration du vRack Public Cloud](https://docs.ovh.com/ca/fr/publiccloud/network-services/public-cloud-vrack/).
+Nous vous invitons à consulter le guide [Configuration du vRack Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack).
 
 Le réseau privé dispose par défaut des protections réseau natives d'Openstack. Celles-ci intègrent différents mécanismes comme la protection contre le spoofing d'IP.<br>
 Du côté des instances, cela peut se traduire par des blocages de paquets réseau selon votre usage (pfSense, routeur, protocole CARP, etc...).
 
 Selon votre besoin, vous aurez besoin de désactiver la fonction de `Port Security` sur le port ou le réseau privé.
-Nous vous invitons à consulter le guide de [gestion des règles de firewall et port security sur les réseaux utilisant OpenStack CLI](https://docs.ovh.com/ca/fr/public-cloud/firewall_security_pci/).
+Nous vous invitons à consulter le guide de [gestion des règles de firewall et port security sur les réseaux utilisant OpenStack CLI](/pages/platform/public-cloud/security_group_private_network).
 
 Vous trouverez aussi tous les détails sur la [documentation OpenStack](https://docs.openstack.org/developer/dragonflow/specs/mac_spoofing.html) ou sur [superuser.openstack.org](https://superuser.openstack.org/articles/managing-port-level-security-openstack/).
 
@@ -92,7 +89,7 @@ Vous trouverez aussi tous les détails sur la [documentation OpenStack](https://
 
 Les IP publiques sont attribuées automatiquement aux instances et ne sont donc pas modifiables. Pour avoir la main sur l'IP publique d'une instance, nous vous conseillons d'utiliser une Additional IP. De cette manière, quelle que soit l'adresse IP publique attribuée automatiquement à l'instance, vous avez la possibilité d'ajouter une ou plusieurs Additional IP à votre instance.
 
-Pour plus d'informations, nous vous invitons à consulter le guide : [Acheter une Additional IP](https://docs.ovh.com/ca/fr/publiccloud/network-services/buy-additional-ip/).
+Pour plus d'informations, nous vous invitons à consulter le guide : [Acheter une Additional IP](/pages/platform/network-services/additional-ip-buy).
 
 ### Comment vérifier si mon instance est vulnérable a la faille MDS ?
 
@@ -104,7 +101,7 @@ cat /sys/devices/system/cpu/vulnerabilities/mds
 
 Si le résultat est `Vulnerable`, n'ayez aucune crainte, l'hyperviseur sous-jacent vous protège.
 
-Cependant, il est possible de mitiger cette faille directement dans votre instance en faisant un hard reboot de votre instance, soit [par le biais de l'espace client OVHcloud](https://docs.ovh.com/ca/fr/public-cloud/debuter-avec-une-instance-public-cloud/#redemarrer-une-instance), soit avec une commande comme celle-ci :
+Cependant, il est possible de mitiger cette faille directement dans votre instance en faisant un hard reboot de votre instance, soit [par le biais de l'espace client OVHcloud](/pages/platform/public-cloud/first_steps_with_public_cloud_instance#redemarrer-une-instance), soit avec une commande comme celle-ci :
 
 ```bash
 openstack server reboot --hard $serverID

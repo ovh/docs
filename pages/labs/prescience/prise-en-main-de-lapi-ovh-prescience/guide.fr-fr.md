@@ -1,8 +1,6 @@
 ---
 title: 'Découvrir les API OVH Prescience'
-slug: premiers-pas-avec-ovh-prescience-api
 excerpt: 'Découvrez comment gérer les API OVH Prescience'
-section: 'Premiers pas'
 updated: 2018-09-26
 ---
 

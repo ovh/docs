@@ -1,8 +1,6 @@
 ---
 title: Ativar e utilizar o modo rescue no seu VPS
-slug: rescue
 excerpt: Saiba como ativar e utilizar o modo rescue no seu VPS
-section: Diagnóstico e Modo Rescue
 updated: 2022-05-02
 ---
 
@@ -116,8 +114,8 @@ Uma vez terminadas as ações em modo de rescue, reinicie o VPS em modo "normal"
 
 ## Quer saber mais?
 
-[Alterar a palavra-passe root de um VPS](../root-password/)
+[Alterar a palavra-passe root de um VPS](/pages/cloud/vps/root_password)
 
-[Consulte o manual Introdução ao SSH](../../dedicated/ssh-introducao/)
+[Consulte o manual Introdução ao SSH](/pages/cloud/dedicated/ssh_introduction)
 
 Junte-se à nossa comunidade de utilizadores <https://community.ovh.com/en/>.

@@ -1,7 +1,5 @@
 ---
 title: PHP
-slug: php
-section: New-Relic
 updated: 2021-05-11
 ---
 

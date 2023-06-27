@@ -1,10 +1,8 @@
 ---
 title: Uso de Active Directory como fuente de autenticación (Federation) (EN)
-slug: federation
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/federation/'
+    canonical: '/pages/cloud/private-cloud/federation'
 excerpt: Learn how to use you Active Directory server as an authentication source for your vSphere users.
-section: 'Funcionalidades de VMware vSphere'
 updated: 2022-12-05
 ---
 

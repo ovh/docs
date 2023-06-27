@@ -1,9 +1,6 @@
 ---
 title: 'Particularidades técnicas de los alojamientos compartidos'
-slug: web_hosting_particularidades_tecnicas_de_los_alojamientos_compartidos
 excerpt: 'Esta guía ofrece toda la información relativa a las particularidades técnicas de los alojamientos compartidos'
-section: 'Configuración del alojamiento'
-order: 05
 updated: 2022-11-18
 ---
 
@@ -33,7 +30,7 @@ updated: 2022-11-18
 
 ### FTP
 
-- Error de acceso ("Fallo de autenticación de conexión 530"): Puede comprobar que los datos de acceso a su espacio FTP son correctos verificándolos en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} en la pestaña `FTP - SSH`. Las contraseñas nunca se muestran, pero pueden modificarse. Consulte nuestras [guías FTP](../conexion-espacio-almacenamiento-ftp-alojamiento-web/).
+- Error de acceso ("Fallo de autenticación de conexión 530"): Puede comprobar que los datos de acceso a su espacio FTP son correctos verificándolos en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} en la pestaña `FTP - SSH`. Las contraseñas nunca se muestran, pero pueden modificarse. Consulte nuestras [guías FTP](/pages/web/hosting/ftp_connection).
 
 - Las conexiones FTP deben utilizar el **modo pasivo**. Asegúrese de que su script o su cliente FTP estén configurados correctamente.
 
@@ -71,7 +68,7 @@ Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to conn
 
 - La versión MySQL no puede modificarse para las bases de datos integradas en el alojamiento web.
 
-Para saber más sobre la gestión de las bases de datos, consulte la guía [Crear una base de datos en un alojamiento web](../crear-base-de-datos/).
+Para saber más sobre la gestión de las bases de datos, consulte la guía [Crear una base de datos en un alojamiento web](/pages/web/hosting/sql_create_database).
 
 ### PHP
 
@@ -86,8 +83,8 @@ Para saber más sobre la gestión de las bases de datos, consulte la guía [Crea
 
 - Podrá modificar la versión PHP de su alojamiento web, o bien en [el área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) ("**Configuración**"), o bien modificando el archivo .ovhconfig. También se pueden llevar a cabo configuraciones mixtas en estas últimas. Tiene a su disposición instrucciones detalladas en nuestras guías:
 
-[Configurar el archivo .ovhconfig de un alojamiento web](../configurar-archivo-ovhconfig/)  
-[Modificar la configuración de un alojamiento web](../cambiar_el_entorno_de_ejecucion_de_un_alojamiento/)
+[Configurar el archivo .ovhconfig de un alojamiento web](/pages/web/hosting/ovhconfig_configuration)  
+[Modificar la configuración de un alojamiento web](/pages/web/hosting/ovhconfig_modify_system_runtime)
 
 
 > [!primary]
@@ -110,7 +107,7 @@ PHP-FPM está activo por defecto en la infraestructura de alojamiento web con el
 
 #### Scripts PHP
 
-Una vez conectado a su alojamiento web por SSH, el tráfico saliente se bloqueará por razones de seguridad. Le recomendamos que utilice scripts PHP. Para más información, consulte nuestra [guía SSH](../web_hosting_ssh_en_alojamiento_compartido/). Puede consultar el manual oficial [PHP manual](https://www.php.net/manual/es/function.system.php) para la ejecución de comandos.
+Una vez conectado a su alojamiento web por SSH, el tráfico saliente se bloqueará por razones de seguridad. Le recomendamos que utilice scripts PHP. Para más información, consulte nuestra [guía SSH](/pages/web/hosting/ssh_on_webhosting). Puede consultar el manual oficial [PHP manual](https://www.php.net/manual/es/function.system.php) para la ejecución de comandos.
 
 Por ejemplo, puede utilizar la función *gethostbyaddr()* para recuperar el nombre del host:
 
@@ -160,10 +157,10 @@ Para ser utilizados por OVHcloud Web Statistics, los datos mencionados anteriorm
 
 ## Más información
 
-[Conectarse al espacio de almacenamiento de su alojamiento web](../conexion-espacio-almacenamiento-ftp-alojamiento-web/)
+[Conectarse al espacio de almacenamiento de su alojamiento web](/pages/web/hosting/ftp_connection)
 
-[Habilitar HTTPS en un sitio web con certificado SSL](../activar-https-en-un-sitio-web-con-ssl/)
+[Habilitar HTTPS en un sitio web con certificado SSL](/pages/web/hosting/ssl-activate-https-website)
 
-[Optimización del rendimiento de un sitio web](../web_hosting_guia_de_optimizacion_del_rendimiento_de_un_sitio_web/)
+[Optimización del rendimiento de un sitio web](/pages/web/hosting/optimise_your_website_performance)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

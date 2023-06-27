@@ -1,8 +1,6 @@
 ---
 title: 'Diagnosticar fallos de hardware en un servidor dedicado'
-slug: diagnostico-fallos-hardware-servidor-dedicado
 excerpt: 'Cómo utilizar las herramientas de diagnóstico para identificar fallos de hardware en el servidor'
-section: 'Diagnóstico y modo de rescate'
 updated: 2022-12-15
 ---
 
@@ -21,7 +19,7 @@ Es posible que, con el tiempo, se produzcan fallos de hardware en el servidor qu
 ## Requisitos
 
 - Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/).
-- Haber reiniciado el servidor en [modo de rescate](https://docs.ovh.com/es/dedicated/modo_de_rescate/).
+- Haber reiniciado el servidor en [modo de rescate](/pages/cloud/dedicated/rescue_mode).
 
 ## Procedimiento
 

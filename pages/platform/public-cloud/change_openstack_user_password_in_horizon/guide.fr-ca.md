@@ -1,9 +1,6 @@
 ---
 title: Changer le mot de passe d’un utilisateur OpenStack dans Horizon
 excerpt: Découvrez comment modifier un mot de passe utilisateur dans l'interface Horizon.
-slug: modification-du-mot-de-passe-dun-utilisateur-openstack
-section: Gestion depuis Horizon
-order: 06
 updated: 2018-03-07
 ---
 
@@ -12,7 +9,7 @@ updated: 2018-03-07
 
 ## Objectif
 
-Dans le guide [créer un accès à Horizon](../horizon/){.external}, il vous a été expliqué comment créer et supprimer un utilisateur OpenStack et générer un mot de passe d’accès.
+Dans le guide [créer un accès à Horizon](/pages/platform/public-cloud/introducing_horizon){.external}, il vous a été expliqué comment créer et supprimer un utilisateur OpenStack et générer un mot de passe d’accès.
 
 À l’aide du panneau Horizon, il est possible de définir un mot de passe pour chaque utilisateur. Attention, le changement de mot de passe d’un compte utilisateur entraîne l’annulation des identifiants actifs au moment du changement.
 

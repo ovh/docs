@@ -1,9 +1,6 @@
 ---
 title: NAS-HA - Zarządzanie snapshotami przez API
-slug: nas/snapshots-api
 excerpt: "Dowiedz się, jak zarządzać snapshotami NAS-HA przy użyciu API OVHcloud"
-section: NAS-HA
-order: 09
 updated: 2022-07-20
 ---
 
@@ -22,12 +19,12 @@ NAS-HA OVHcloud umożliwia tworzenie i zarządzanie wolumenami plików dostępny
 ## Wymagania początkowe
 
 - Usługa [NAS-HA OVHcloud](https://www.ovh.pl/nas/)
-- Zapoznaj się z naszym przewodnikiem Pierwsze kroki z [API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/), aby zapoznać się z APIv6 OVHcloud
+- Zapoznaj się z naszym przewodnikiem Pierwsze kroki z [API OVHcloud](/pages/account/api/first-steps), aby zapoznać się z APIv6 OVHcloud
 
 ## W praktyce
 
 > [!primary]
-> Przejdź na [stronę FAQ NAS-HA](https://docs.ovh.com/pl/storage/file-storage/nas/faq/), aby uzyskać szczegółowe informacje dotyczące funkcji snapshot.
+> Przejdź na [stronę FAQ NAS-HA](/pages/cloud/storage/file_storage/nas_faq), aby uzyskać szczegółowe informacje dotyczące funkcji snapshot.
 >
 
 Wszystkie drogi API w tym przewodniku są dostępne w sekcji */dedicated/nasha*: <https://api.ovh.com/console/#/dedicated/nasha>.
@@ -297,9 +294,9 @@ Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten p
 
 ## Sprawdź również
 
-[Montowanie przestrzeni dyskowej NAS przy użyciu protokołu NFS](https://docs.ovh.com/pl/storage/file-storage/nas/nfs/)
+[Montowanie przestrzeni dyskowej NAS przy użyciu protokołu NFS](/pages/cloud/storage/file_storage/nas_nfs)
 
-[Skonfigurować NAS na serwerze Windows poprzez CIFS](https://docs.ovh.com/pl/storage/file-storage/nas/cifs/)
+[Skonfigurować NAS na serwerze Windows poprzez CIFS](/pages/cloud/storage/file_storage/nas_cifs)
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 

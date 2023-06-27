@@ -1,9 +1,6 @@
 ---
 title: "Ajout d'un nœud dans un cluster Nutanix"
-slug: add-node
 excerpt: 'Ajouter un nœud et valider son bon fonctionnement'
-section: "Utilisation avancée"
-order: 03
 hidden: true
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
@@ -116,7 +113,7 @@ Cliquez sur `Close`{.action} pour revenir au tableau de bord.
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Hyper-convergence Nutanix](https://docs.ovh.com/ca/fr/nutanix/nutanix-hci/)
+[Hyper-convergence Nutanix](/pages/cloud/nutanix/03-nutanix-hci)
 
 [Guide Nutanix d'ajout de nœuds](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v5_20:wc-cluster-expand-wc-t.html)
 

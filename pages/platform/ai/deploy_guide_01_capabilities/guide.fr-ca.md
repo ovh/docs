@@ -1,11 +1,8 @@
 ---
 title: AI Deploy - Caractéristiques, capacités et limites (EN)
-slug: deploy/capabilities
 excerpt: "Découvrez les principales caractéristiques, capacités et limites de AI Deploy"
-section: AI Deploy - Guides
-order: 01
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/capabilities/'
+    canonical: '/pages/platform/ai/deploy_guide_01_capabilities'
 updated: 2023-04-04
 ---
 
@@ -81,7 +78,7 @@ API endpoints to manage your AI Deploy apps can be found here:
 
 #### Command line interface (CLI)
 
-AI Deploy is compliant with the OVHcloud AI CLI. Discover how to [install the OVHcloud AI CLI](https://docs.ovh.com/ca/fr/publiccloud/ai/cli/install-client/).
+AI Deploy is compliant with the OVHcloud AI CLI. Discover how to [install the OVHcloud AI CLI](/pages/platform/ai/cli_10_howto_install_cli).
 
 ### Planned features
 We continuously improve our offers. You can follow, vote and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/4>.
@@ -137,7 +134,7 @@ Currently, we provide:
 
 ##### **Scaling**
 
-AI Deploy offers the possibility to choose between two [scaling strategies](https://docs.ovh.com/ca/fr/publiccloud/ai/deploy/apps-deployments/): **static** or **automatic**.
+AI Deploy offers the possibility to choose between two [scaling strategies](/pages/platform/ai/deploy_guide_04_scaling_strategies): **static** or **automatic**.
 
 If you choose `static scaling`:
 
@@ -157,7 +154,7 @@ Each AI Deploy app comes with a local storage space, which is ephemeral. When yo
 This storage space depends on the selected instances during AI Deploy app deployment. Please refer to the compute resources section for more information.
 
 > [!primary]
-> **Local storage** is limited and not the recommended way to handle data, see the [OVHcloud documentation on data](https://docs.ovh.com/ca/fr/publiccloud/ai/data) for more information.
+> **Local storage** is limited and not the recommended way to handle data, see the [OVHcloud documentation on data](/pages/platform/ai/gi_02_concepts_data) for more information.
 >
 
 ##### **Attached storage**
@@ -173,7 +170,7 @@ There is no duration limitation on AI Deploy apps execution.
 
 Each environment can be customized directly with PIP or CONDA (we support almost any package and library).
 
-AI Deploy authorizes the deployment of your own Docker images, and of applications from the [OVHcloud portfolio](https://docs.ovh.com/ca/fr/publiccloud/ai/deploy/apps-portfolio/).
+AI Deploy authorizes the deployment of your own Docker images, and of applications from the [OVHcloud portfolio](/pages/platform/ai/deploy_guide_05_app_portfolio).
 
 Docker images can be hosted in a public or private registry.
 
@@ -207,7 +204,7 @@ Each Public Cloud project grants a customer by default a maximum of 4 GPUs used 
 
 ## Go further
 
-Browse the full [AI Deploy documentation](https://docs.ovh.com/ca/fr/publiccloud/ai/) to further understand the main concepts and get started.
+Browse the full [AI Deploy documentation](/products/public-cloud-ai-and-machine-learning) to further understand the main concepts and get started.
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.                                                                                                                                      
 ## Feedback

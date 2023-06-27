@@ -1,8 +1,6 @@
 ---
 title: 'Utiliser le Cisco 8851'
-slug: utiliser-cisco-8851
 excerpt: 'Découvrez comment utiliser votre téléphone Cisco 8851'
-section: 'Cisco 8851'
 hidden: true
 updated: 2018-06-28
 ---

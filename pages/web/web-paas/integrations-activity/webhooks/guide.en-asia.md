@@ -1,7 +1,5 @@
 ---
 title: Webhooks
-slug: webhooks
-section: Activity
 updated: 2021-05-11
 ---
 
@@ -25,11 +23,11 @@ It's also possible to set the integration to only send certain activity types, o
 
 ## Webhook schema
 
-See the [activity script](../reference) reference for a description of the webhook payload.
+See the [activity script](/pages/web/web-paas/integrations-activity/reference) reference for a description of the webhook payload.
 
 ## Validate the integration
 
-You can then verify that your integration is functioning properly [using the CLI](../../integrations-overview#validating-integrations) command
+You can then verify that your integration is functioning properly [using the CLI](/pages/web/web-paas/integrations-overview#validating-integrations) command
 
 ```bash
 webpaas integration:validate

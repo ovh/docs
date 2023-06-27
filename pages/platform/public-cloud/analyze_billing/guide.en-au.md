@@ -1,9 +1,6 @@
 ---
 title: 'Information regarding Public Cloud billing options'
-slug: information-on-cloud-billing-options
 excerpt: 'Find out more about the different billing options for Public Cloud products'
-section: 'Project management'
-order: 2
 updated: 2022-08-29
 ---
 
@@ -22,7 +19,7 @@ This system is similar to the one used by certain telephone operators, where the
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/){.external} in your OVHcloud account
-- A [Public Cloud instance](https://docs.ovh.com/au/en/public-cloud/public-cloud-first-steps/){.external}
+- A [Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps){.external}
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
 
 ## General design
@@ -133,7 +130,7 @@ For hourly instances, it is possible to shelve (suspend) an instance in order to
 >This process is only functional for hourly billed instances, it will not stop the billing of your instance but it will reduce your cost.
 >
 
-For more information on how to proceed, consult this [guide](../shelve-or-pause-an-instance).
+For more information on how to proceed, consult this [guide](/pages/platform/public-cloud/suspend_or_pause_an_instance).
 
 #### Monthly price
 

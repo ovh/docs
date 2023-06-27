@@ -1,11 +1,8 @@
 ---
 title: Cloud Archive Swift - Mettre en place une Access Control List sur Public Cloud Archive
-slug: pca/acl
 routes:
-    canonical: 'https://docs.ovh.com/fr/storage/pcs/acl/'
+    canonical: '/pages/cloud/storage/object_storage/pcs_acl'
 excerpt: Retrouvez ici les concepts permettant de mettre en oeuvre les ACL dans Object Storage
-section: Spécificités de la classe de stockage d'archive OpenStack Swift
-order: 040
 updated: 2021-12-15
 ---
 
@@ -38,9 +35,9 @@ Les éléments peuvent être séparés par des espaces, comme dans l'exemple sui
 ## Prérequis
 
 - Avoir créé un container Object Storage.
-- [Avoir créé des utilisateurs OpenStack](https://docs.ovh.com/ca/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/).
-- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/ca/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/) en installant python-swiftclient.
-- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/ca/fr/public-cloud/set-openstack-environment-variables/).
+- [Avoir créé des utilisateurs OpenStack](/pages/platform/public-cloud/create_and_delete_a_user).
+- [Préparer l’environnement pour utiliser l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) en installant python-swiftclient.
+- [Charger les variables d’environnement OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 ## En pratique
 

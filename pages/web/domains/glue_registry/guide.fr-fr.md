@@ -1,9 +1,6 @@
 ---
 title: "Personnaliser les serveurs DNS d'un nom de domaine"
-slug: glue-registry
 excerpt: 'Apprenez à personnaliser les serveurs DNS de votre nom de domaine OVHcloud'
-section: 'DNS et zone DNS'
-order: 07
 updated: 2018-10-26
 ---
 
@@ -53,7 +50,7 @@ Cette manipulation doit être réalisée depuis l’interface du prestataire gé
 
 - **votre nom de domaine n'utilise pas la configuration DNS d'OVHcloud** : rapprochez-vous du prestataire gérant cette dernière. Une fois la manipulation effectuée, poursuivez vers l'étape suivante ;
 
-- **votre nom de domaine utilise la configuration DNS d'OVHcloud** : positionnez-vous sur l'onglet `Zone DNS`{.action} puis ajoutez une nouvelle entrée A en débutant par cliquer sur `Ajouter une entrée`{.action}. Sélectionnez alors d'ajouter une entrée de type A, puis suivez les étapes jusqu'à finalisation. Si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Éditer une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external} ».
+- **votre nom de domaine utilise la configuration DNS d'OVHcloud** : positionnez-vous sur l'onglet `Zone DNS`{.action} puis ajoutez une nouvelle entrée A en débutant par cliquer sur `Ajouter une entrée`{.action}. Sélectionnez alors d'ajouter une entrée de type A, puis suivez les étapes jusqu'à finalisation. Si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Éditer une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external} ».
 
 ![glueregistry](images/customize-dns-servers-step3.png){.thumbnail}
 
@@ -61,7 +58,7 @@ Cette manipulation doit être réalisée depuis l’interface du prestataire gé
 
 Il ne vous reste plus qu'à modifier les serveurs DNS de votre nom de domaine. Pour cela, positionnez-vous sur l'onglet `Serveurs DNS`{.action} puis cliquez sur `Modifier les serveurs DNS`{.action}. Remplacez alors vos serveurs DNS actuels par ceux que vous souhaitez utiliser. 
 
-Finalisez les étapes et, si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/){.external} ».
+Finalisez les étapes et, si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](/pages/web/domains/dns_server_general_information){.external} ».
 
 Une fois les serveurs DNS modifiés, patientez le temps que cette action soit prise en compte. Un temps de propagation de 48 heures maximum est en effet nécessaire.
 

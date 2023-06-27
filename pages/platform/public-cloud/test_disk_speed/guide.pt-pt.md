@@ -1,9 +1,7 @@
 ---
 title: Testar a velocidade dos discos
 excerpt: Testar a velocidade dos discos
-slug: testar_a_velocidade_dos_discos
 legacy_guide_number: g1956
-section: Armazenamento
 updated: 2022-01-04
 ---
 
@@ -111,6 +109,6 @@ write: io=428032KB, bw=3566.2KB/s, iops=891, runt=120031msec
 
 ## Quer saber mais?
 
-[Criar e configurar um disco suplementar numa instância](https://docs.ovh.com/pt/public-cloud/criar_e_configurar_um_disco_suplementar_numa_instancia/)
+[Criar e configurar um disco suplementar numa instância](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
  
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

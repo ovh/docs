@@ -1,9 +1,6 @@
 ---
 title: 'Vérifier la stabilité de son accès OVHcloud via les logs radius'
-slug: verifier-stabilite-acces-logs-radius
 excerpt: 'Découvrez comment vérifier la stabilité de votre accès xDSL ou FTTH en utilisant les API OVHcloud'
-section: 'Diagnostic et dépannage'
-order: 9
 updated: 2022-02-16
 ---
 
@@ -20,7 +17,7 @@ Les *logs radius* disponibles via les API OVHcloud permettent de vérifier la st
 - Disposer d'une [offre xDSL ou FTTH OVHcloud](https://www.ovhtelecom.fr/offre-internet/) active.
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr).
 - Être connecté aux [API OVHcloud](https://api.ovh.com/){.external}.
-- Consulter le guide [Premiers pas avec les API OVHcloud](../../api/first-steps-with-ovh-api/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+- Consulter le guide [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
 ## En pratique
 
@@ -34,7 +31,7 @@ Une reconnexion peut avoir l'une des causes suivantes :
 * un redémarrage de votre modem,
 * une perte de sychronisation,
 * un incident générique,
-* l'envoi manuel de [nouveaux identifiants de connexion](../obtenir-identifiants-ppoe).
+* l'envoi manuel de [nouveaux identifiants de connexion](/pages/telecom/xdsl/obtenir_id_ppp).
 
 > [!primary]
 >
@@ -84,7 +81,7 @@ Il n'y donc pas eu de coupure sur l'accès concerné pendant cet intervalle. En 
 
 Si un accès remonte plus de cinq reconnexions sur une même tranche de 24h, sans que celles-ci ne soient consécutives à des actions intentionnelles sur le modem (rédémarrage ou réinitialisation), il est alors légitime de considérer cet accès comme instable. 
 
-Si vous constatez des reconnexions fréquentes sur l'un de vos accès xDSL ou FTTH, nous vous conseillons de faire le point sur votre [desserte interne](../la-desserte-interne/) et de consulter nos guides de [diagnostic et dépannage](../).
+Si vous constatez des reconnexions fréquentes sur l'un de vos accès xDSL ou FTTH, nous vous conseillons de faire le point sur votre [desserte interne](/pages/telecom/xdsl/la_desserte_interne) et de consulter nos guides de [diagnostic et dépannage](/products/web-cloud-internet-internet-access).
 
 > [!primary]
 >

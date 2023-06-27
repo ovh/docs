@@ -1,8 +1,6 @@
 ---
 title: 'Le RAID logiciel'
-slug: raid-soft
 excerpt: 'Apprenez à configurer la baie RAID de votre serveur en cas de panne ou de corruption de disque'
-section: 'RAID & disques'
 updated: 2022-10-11
 ---
 
@@ -382,10 +380,10 @@ mount /dev/md4 /home
 
 ## Aller plus loin
 
-[Hot Swap – RAID Matériel](https://docs.ovh.com/ca/fr/dedicated/hotswap-raid-hard/){.external}
+[Hot Swap – RAID Matériel](/pages/cloud/dedicated/hotswap_raid_hard){.external}
 
-[Hot Swap – RAID Logiciel](https://docs.ovh.com/ca/fr/dedicated/hotswap-raid-soft/){.external}
+[Hot Swap – RAID Logiciel](/pages/cloud/dedicated/hotswap_raid_soft){.external}
 
-[RAID Matériel](https://docs.ovh.com/ca/fr/dedicated/raid-hard/){.external}
+[RAID Matériel](/pages/cloud/dedicated/raid_hard){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
