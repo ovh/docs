@@ -93,10 +93,10 @@ This approach has many benefits:
 
 Note that unsuccessful requests do not contribute to your rate limit, so continuously resending a request could work but we may change this behavior in the future. We recommend to not rely on this mechanism.
 
-Some examples of well know libraries to implement retry backoff in python are:
+Some examples of well-known libraries to implement retry backoff in Python are:
 
-- tenacity: <https://pypi.org/project/tenacity/>
-- backoff: <https://pypi.org/project/backoff/>
+- Tenacity: <https://pypi.org/project/tenacity/>
+- Backoff: <https://pypi.org/project/backoff/>
 
 ## Go further
 
