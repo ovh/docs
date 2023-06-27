@@ -1,8 +1,5 @@
 ---
 title: 'Tutorial - Korzystanie z opcji Zonemaster'
-slug: ovhcloud-domain-zonemaster-tutorial
-section: DNS i strefa DNS
-order: 08
 updated: 2023-06-06
 ---
 
@@ -24,7 +21,7 @@ updated: 2023-06-06
 
 > [!primary]
 >
-> Aby lepiej zrozumieć pojęcie DNS, zapoznaj się z wprowadzeniem naszego przewodnika dotyczącego [konfiguracji strefy DNS](https://docs.ovh.com/pl/domains/hosting_www_informacje_na_temat_serwerow_dns/).
+> Aby lepiej zrozumieć pojęcie DNS, zapoznaj się z wprowadzeniem naszego przewodnika dotyczącego [konfiguracji strefy DNS](/pages/web/domains/dns_server_general_information).
 
 ## Wymagania początkowe
 
@@ -78,11 +75,11 @@ Jeśli masz dodatkowe pytania dotyczące Zonemaster, sprawdź sekcję [FAQ](http
 
 ## Sprawdź również <a name="go-further"></a>
 
-[Informacje na temat serwerów DNS](https://docs.ovh.com/pl/domains/hosting_www_informacje_na_temat_serwerow_dns/){.external}.
+[Informacje na temat serwerów DNS](/pages/web/domains/dns_server_general_information){.external}.
 
-[Zmiana strefy DNS OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external} .
+[Zmiana strefy DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external} .
 
-[Zabezpieczenie domeny przed Cache Poisoning za pomocą DNSSEC](https://docs.ovh.com/pl/domains/jak_skonfigurowac_strefe_dnssec_dla_domeny/){.external}.
+[Zabezpieczenie domeny przed Cache Poisoning za pomocą DNSSEC](/pages/web/domains/dns_dnssec){.external}.
 
 Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 

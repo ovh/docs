@@ -1,9 +1,7 @@
 ---
 title: 'Alterar os servidores DNS de um nome de domínio OVHcloud'
-slug: partilhado_generalidades_sobre_os_servidores_dns
 excerpt: 'Saiba como alterar os servidores DNS do seu nome de domínio OVHcloud'
 legacy_guide_number: g2015
-section: DNS e zona DNS
 updated: 2021-02-18
 ---
 
@@ -18,7 +16,7 @@ updated: 2021-02-18
 
 A sigla DNS, que significa **D**omain **N**ame **S**ystem, é um conjunto de elementos que permitem fazer corresponder um nome de domínio com um endereço IP.
 
-Encontre a explicação completa no guia "[Editar uma zona DNS da OVHcloud](../alojamento_partilhado_como_editar_a_minha_zona_dns/#understanddns)".
+Encontre a explicação completa no guia "[Editar uma zona DNS da OVHcloud](/pages/web/domains/dns_zone_edit#understanddns)".
 
 ### Os servidores DNS
 
@@ -35,7 +33,7 @@ Os servidores DNS são geralmente utilizados por grupos de dois (primário e sec
 ## Requisitos
 
 - Dispor de um [domínio](https://www.ovhcloud.com/pt/domains/) registado na OVHcloud.
-- Ter as autorizações [adequadas para gerir](https://docs.ovh.com/pt/customer/gestao_dos_contactos/){.external} o domínio a partir da Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter as autorizações [adequadas para gerir](/pages/account/customer/managing_contacts){.external} o domínio a partir da Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 > [!primary]
@@ -54,7 +52,7 @@ No entanto, é importante notar que:
 
 - Aquando da alteração do servidor DNS (e.g. DNS externo por DNS OVHcloud), o conteúdo da antiga configuração DNS não é automaticamente replicado na nova. Certifique-se de que a nova zona DNS inclui todos os registos DNS necessários para que os serviços associados ao seu nome de domínio funcionem corretamente (por exemplo, o seu website e os seus endereços de e-mail).
 
-- Se pretender alterar um único elemento da sua configuração DNS atual (por exemplo, um registo DNS), recomendamos que siga as instruções para alterar a zona DNS: "[Editar uma zona DNS da OVHcloud](../alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}".
+- Se pretender alterar um único elemento da sua configuração DNS atual (por exemplo, um registo DNS), recomendamos que siga as instruções para alterar a zona DNS: "[Editar uma zona DNS da OVHcloud](/pages/web/domains/dns_zone_edit){.external}".
 
 - Certas organizações, os registos, que gerem as extensões de nomes de domínio, têm exigências particulares relativamente aos servidores DNS (quantidade de servidores de nomes, valor dos registos..). Em caso de dúvida, verifique junto do registo responsável pelo domínio.
 
@@ -102,6 +100,6 @@ Depois de realizar as alterações necessárias, deverá esperar que as alteraç
 
 ## Saiba mais
 
-[ Modificação de uma zona](../alojamento_partilhado_como_editar_a_minha_zona_dns/){.external} DNS da OVHcloud.
+[ Modificação de uma zona](/pages/web/domains/dns_zone_edit){.external} DNS da OVHcloud.
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: 'Pierwsze kroki z preinstalowanymi aplikacjami'
-slug: aplikacje-preinstalowane
 excerpt: Dowiedz się, jak wdrożyć aplikacje zainstalowane na serwerze VPS
-section: 'Pierwsze kroki'
-order: 8
 updated: 2022-08-25
 ---
 
@@ -27,7 +24,7 @@ OVHcloud udostępnia klientom VPS obrazy wstępnie zainstalowanych aplikacji, kt
 
 ### Zainstaluj wybraną wstępnie zainstalowaną aplikację
 
-W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) lub w API OVHcloud zainstaluj wybraną aplikację. Zapoznaj się również z naszym przewodnikiem Pierwsze kroki [z serwerem VPS](../pierwsze-kroki-vps/).
+W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) lub w API OVHcloud zainstaluj wybraną aplikację. Zapoznaj się również z naszym przewodnikiem Pierwsze kroki [z serwerem VPS](/pages/cloud/vps/starting_with_a_vps).
 
 #### cPanel
 
@@ -54,7 +51,7 @@ Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigu
 > [!faq]
 >
 > Czy mogę korzystać z własnych serwerów DNS?
->> Tak, możesz. Upewnij się, że tworzysz rekordy GLUE z Twoim operatorem domeny. Na przykład, jeśli chcesz "ns1.mydomain.com" i "ns2.mydomain.com", musisz skonfigurować rekordy "GLUE", aby oba wskazywały na adres IP Twojego serwera. Jeśli Twoja domena jest zarejestrowana w OVHcloud, zapoznaj się [z tym przewodnikiem](../../domains/glue_registry/#etap-1-dodanie-rekordow-glue). Tworzenie może trwać 24 godziny.
+>> Tak, możesz. Upewnij się, że tworzysz rekordy GLUE z Twoim operatorem domeny. Na przykład, jeśli chcesz "ns1.mydomain.com" i "ns2.mydomain.com", musisz skonfigurować rekordy "GLUE", aby oba wskazywały na adres IP Twojego serwera. Jeśli Twoja domena jest zarejestrowana w OVHcloud, zapoznaj się [z tym przewodnikiem](/pages/web/domains/glue_registry#etap-1-dodanie-rekordow-glue). Tworzenie może trwać 24 godziny.
 > Dlaczego warto zdefiniować hasło root?
 >> WHM używa domyślnie użytkownika root do uwierzytelniania. Unikalny adres URL umożliwia dostęp do pierwszej konfiguracji i zmianę hasła root. Następnym razem, gdy zalogujesz się do WHM, będziesz musiał użyć użytkownika root i hasła, które ustaliłeś.
 > Gdzie moja licencja na cPanel?
@@ -98,7 +95,7 @@ Ta sekcja ma zastosowanie wyłącznie do instalacji WordPress, Drupal, Joomla! i
      personaldomain.ovh <br>
      www.personaldomain.ovh <br>  
 
-Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz postępować zgodnie z [tym przewodnikiem.](../../domains/hosting_www_jak_edytowac_strefe_dns/)
+Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz postępować zgodnie z [tym przewodnikiem.](/pages/web/domains/dns_zone_edit)
 <br>Jeśli Twoja domena jest zarejestrowana w innej firmie, skontaktuj się z nią, aby uzyskać pomoc w konfiguracji rekordów `A`.
 
 <ol start="2">

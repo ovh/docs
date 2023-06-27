@@ -1,9 +1,6 @@
 ---
 title: Cloud Archive Swift - Gestionar los archivos desde un cliente SFTP/SCP
-slug: pca/sftp
 excerpt: Cómo gestionar y administrar los archivos de Public Cloud de OVH
-section: OpenStack Swift Archive Storage Class Specifics
-order: 100
 updated: 2022-05-13
 ---
 
@@ -33,7 +30,7 @@ En este ejemplo utilizamos WinSCP como cliente SFTP. Existen otras soluciones, c
 
 ### Identificador OpenStack
 
-Puede generar su login y password OpenStack siguiendo esta [guía](https://docs.ovh.com/us/es/public-cloud/crear-y-eliminar-un-usuario-de-openstack/).
+Puede generar su login y password OpenStack siguiendo esta [guía](/pages/platform/public-cloud/create_and_delete_a_user).
 
 
 ### El tenantName
@@ -90,7 +87,7 @@ En esta sección vamos a desactivar dos opciones de WinSCP:
 
 
 ### Obtención de datos
-La recuperación de datos está sujeta a la deslocalización previa del objeto. Es necesaria una consulta GET sobre el objeto en cuestión. Si esta operación no se realiza previamente, el cliente SFTP devolverá un mensaje de error al intentar descargar un archivo. Consulte nuestra guía sobre el desbloqueo de sus objetos [aquí](https://docs.ovh.com/us/es/storage/pca/unlock/).
+La recuperación de datos está sujeta a la deslocalización previa del objeto. Es necesaria una consulta GET sobre el objeto en cuestión. Si esta operación no se realiza previamente, el cliente SFTP devolverá un mensaje de error al intentar descargar un archivo. Consulte nuestra guía sobre el desbloqueo de sus objetos [aquí](/pages/cloud/storage/object_storage/pca_unlock).
 
 ## Más información
 

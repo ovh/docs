@@ -1,8 +1,5 @@
 ---
 title: Services
-slug: configuration-services
-section: Configuration
-order: 3
 updated: 2021-06-02
 ---
 
@@ -58,18 +55,18 @@ Service types and their supported versions include:
 
 | **Service** | **`type`** | **Supported `version`** |
 |----------------------------------|---------------|-------------------------|
-| [Headless Chrome](headless-chrome) | `chrome-headless` | 73 |
-| [InfluxDB](influxdb) | `influxdb` | 1.2, 1.3, 1.7, 1.8 |
-| [Kafka](kafka) | `kafka` | 2.1, 2.2, 2.3, 2.4, 2.5 |
-| [MariaDB](mysql) | `mariadb` | 10.0, 10.1, 10.2, 10.3, 10.4, 10.5 |
-| [Memcached](memcached) | `memcached` | 1.4, 1.5, 1.6 |
-| [Network Storage](network-storage) | `network-storage` | 1.0 |
-| [Oracle MySQL](mysql) | `oracle-mysql` | 5.7, 8.0 |
-| [PostgreSQL](postgresql) | `postgresql` | 9.6, 10, 11, 12, 13 |
-| [RabbitMQ](rabbitmq) | `rabbitmq` | 3.5, 3.6, 3.7, 3.8 |
-| [Redis](redis) | `redis` | 3.2, 4.0, 5.0, 6.0 |
-| [Solr](solr) | `solr` | 7.7, 8.0, 8.4, 8.6 |
-| [Varnish](varnish) | `varnish` | 5.6, 6.0 |
+| [Headless Chrome](/pages/web/web-paas/configuration-services/headless-chrome) | `chrome-headless` | 73 |
+| [InfluxDB](/pages/web/web-paas/configuration-services/influxdb) | `influxdb` | 1.2, 1.3, 1.7, 1.8 |
+| [Kafka](/pages/web/web-paas/configuration-services/kafka) | `kafka` | 2.1, 2.2, 2.3, 2.4, 2.5 |
+| [MariaDB](/pages/web/web-paas/configuration-services/mysql) | `mariadb` | 10.0, 10.1, 10.2, 10.3, 10.4, 10.5 |
+| [Memcached](/pages/web/web-paas/configuration-services/memcached) | `memcached` | 1.4, 1.5, 1.6 |
+| [Network Storage](/pages/web/web-paas/configuration-services/network-storage) | `network-storage` | 1.0 |
+| [Oracle MySQL](/pages/web/web-paas/configuration-services/mysql) | `oracle-mysql` | 5.7, 8.0 |
+| [PostgreSQL](/pages/web/web-paas/configuration-services/postgresql) | `postgresql` | 9.6, 10, 11, 12, 13 |
+| [RabbitMQ](/pages/web/web-paas/configuration-services/rabbitmq) | `rabbitmq` | 3.5, 3.6, 3.7, 3.8 |
+| [Redis](/pages/web/web-paas/configuration-services/redis) | `redis` | 3.2, 4.0, 5.0, 6.0 |
+| [Solr](/pages/web/web-paas/configuration-services/solr) | `solr` | 7.7, 8.0, 8.4, 8.6 |
+| [Varnish](/pages/web/web-paas/configuration-services/varnish) | `varnish` | 5.6, 6.0 |
 
 ### Disk
 
@@ -94,11 +91,11 @@ All services have their system timezone set to UTC by default.  In most cases th
 
 ## Using the services
 
-In order for a service to be available to an application in your project (Web PaaS supports not only multiple backends but also multiple applications in each project) you will need to refer to it in the [.platform.app.yaml](../configuration-app) file which configures the *relationships* between applications and services.
+In order for a service to be available to an application in your project (Web PaaS supports not only multiple backends but also multiple applications in each project) you will need to refer to it in the [.platform.app.yaml](/pages/web/web-paas/configuration-app) file which configures the *relationships* between applications and services.
 
 ## Endpoints
 
-All services offer one or more `endpoints`.  An endpoint is simply a named set of credentials that can be used to give access to other applications and services in your project to that service.  Only some services support multiple user-defined endpoints.  If you do not specify one then one will be created with a standard defined name, generally the name of the service type (e.g., `mysql` or `solr`).  An application container, defined by a `.platform.app.yaml` file, always exposes an endpoint named `http` to allow the [router](../configuration-routes) to forward requests to it.
+All services offer one or more `endpoints`.  An endpoint is simply a named set of credentials that can be used to give access to other applications and services in your project to that service.  Only some services support multiple user-defined endpoints.  If you do not specify one then one will be created with a standard defined name, generally the name of the service type (e.g., `mysql` or `solr`).  An application container, defined by a `.platform.app.yaml` file, always exposes an endpoint named `http` to allow the [router](/pages/web/web-paas/configuration-routes) to forward requests to it.
 
 When defining relationships in a configuration file you will always address a service as `<servicename>`:`<endpoint>`.  See the appropriate service page for details on how to configure multiple endpoints for each service that supports it.
 

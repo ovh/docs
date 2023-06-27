@@ -1,9 +1,6 @@
 ---
 title: Load Balancing configuration in NSX
-slug: nsx-configure-loadbalancing
 excerpt: Learn how to configure Load Balancing
-section: NSX
-order: 09
 updated: 2023-02-27
 ---
 
@@ -25,7 +22,7 @@ NSX allows load balancing on a level 4 (TCP or UDP) layer or level 7 (HTTP or HT
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/) to receive login credentials.
 - A user account with access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
-- Having **NSX** deployed with two segments configured in your NSX configuration, you can use this guide [Segment management in NSX](https://docs.ovh.com/us/en/private-cloud/nsx-segment-management).
+- Having **NSX** deployed with two segments configured in your NSX configuration, you can use this guide [Segment management in NSX](/pages/cloud/private-cloud/nsx-02-segment-management).
 - Two virtual machines with NGINX enabled on one segment.
 
 ## Instructions
@@ -206,11 +203,11 @@ Your rule is active. If you click on `http://virtual-ip-address-on-T0` you will 
 
 ## Go further <a name="gofurther"></a>
 
-[Getting started with NSX](https://docs.ovh.com/us/en/private-cloud/nsx-first-steps/)
+[Getting started with NSX](/pages/cloud/private-cloud/nsx-01-first-steps)
 
-[Segment management in NSX](https://docs.ovh.com/us/en/private-cloud/nsx-segment-management/)
+[Segment management in NSX](/pages/cloud/private-cloud/nsx-02-segment-management)
 
-[Implementing NAT for port redirections in NSX](https://docs.ovh.com/us/en/private-cloud/nsx-configure-nat-redirection)
+[Implementing NAT for port redirections in NSX](/pages/cloud/private-cloud/nsx-07-configure-nat-redirection)
 
 [VMware NSX Load Balancer documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-D39660D9-278B-4D08-89DF-B42C5400FEB2.html)
 

@@ -1,8 +1,6 @@
 ---
 title: 'Renewing your services via the OVHcloud API'
-slug: renewing-service-ia-api
 excerpt: 'Find out how to renew your services via the OVHcloud API'
-section: 'Managing the renewal of services'
 updated: 2020-05-05
 ---
 
@@ -18,7 +16,7 @@ Natively, OVHcloud offers you the option of renewing your solution automatically
 ## Requirements
 
 - You need to be connected to the [OVHcloud API](https://api.ovh.com/){.external}.
-- You need to have [created your login details for the OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+- You need to have [created your login details for the OVHcloud API](/pages/account/api/first-steps).
 
 ## Instructions
 

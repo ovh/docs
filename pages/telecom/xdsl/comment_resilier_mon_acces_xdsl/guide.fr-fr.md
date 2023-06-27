@@ -1,8 +1,6 @@
 ---
 title: Comment résilier un accès xDSL/FTTH
-slug: comment-resilier-mon-acces-xdsl
 excerpt: Découvrez comment demander la résiliation de votre accès Internet
-section: Gestion de mon offre
 updated: 2022-10-10
 ---
 

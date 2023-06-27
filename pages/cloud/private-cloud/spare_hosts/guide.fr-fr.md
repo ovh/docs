@@ -1,10 +1,7 @@
 ---
 title: Hôte de spare
-slug: hote-de-spare
 excerpt: Comprendre le mécanisme de remplacement d'hôte
 legacy_guide_number: '2883590'
-section: Fonctionnalités OVHcloud
-order: 04
 updated: 2020-06-29
 ---
 
@@ -26,7 +23,7 @@ Si l’un de vos hôtes est victime d’une panne, afin d’assurer la continuit
 
 Dès que cet hôte est livré, vous recevez un email vous indiquant toutes les informations concernant cet hôte ainsi que son adresse IP vous permettant de le retrouver facilement dans votre interface vSphere.
 
-Par défaut, le service HA ([High Availability)](../vmware-ha-high-availability) de VMware est activé sur votre cluster. Si vous l’avez laissé activé, vos machines virtuelles vont redémarrer automatiquement. Si le service DRS (Distributed Ressources Scheduler) est activé et configuré en mode « Entièrement Automatisé », la répartition de charge sur les hôtes de votre cluster sera également effectuée automatiquement.
+Par défaut, le service HA ([High Availability)](/pages/cloud/private-cloud/vmware_ha_high_availability) de VMware est activé sur votre cluster. Si vous l’avez laissé activé, vos machines virtuelles vont redémarrer automatiquement. Si le service DRS (Distributed Ressources Scheduler) est activé et configuré en mode « Entièrement Automatisé », la répartition de charge sur les hôtes de votre cluster sera également effectuée automatiquement.
 
 > [!warning]
 > 
@@ -37,7 +34,7 @@ Par défaut, le service HA ([High Availability)](../vmware-ha-high-availability)
 
 Une fois que l'hôte original est de nouveau fonctionnel (une fois réparé), vous pouvez nous rendre l’un des deux hôtes (l'hôte de spare ou l'hôte original).
 
-Nous vous recommandons de nous rendre l'hôte original afin que nous puissions lui faire subir une batterie de tests suite à cet incident (pour éviter d’éventuelles futures pannes). Vous pourrez alors conserver l'hôte de spare. Pour cela vous pouvez suivre le guide [suppression d’un hôte](../suppression-serveur-hote/)
+Nous vous recommandons de nous rendre l'hôte original afin que nous puissions lui faire subir une batterie de tests suite à cet incident (pour éviter d’éventuelles futures pannes). Vous pourrez alors conserver l'hôte de spare. Pour cela vous pouvez suivre le guide [suppression d’un hôte](/pages/cloud/private-cloud/delete_host)
 
 OVHcloud pourra récupérer automatiquement l'hôte original dès que celui-ci est retiré.
 

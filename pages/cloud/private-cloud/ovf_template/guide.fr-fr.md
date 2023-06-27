@@ -1,9 +1,6 @@
 ---
 title: Déployer un template OVF Linux, Windows Server et Windows SQL Server
-slug: deploiement-template-ovh
 excerpt: Découvrez comment déployer un template Linux, Windows Server ou Windows SQL Server
-section: Gestion des machines virtuelles
-order: 02
 updated: 2020-10-12
 ---
 
@@ -25,7 +22,7 @@ Les VM Windows déployées à partir d'un template utilisent automatiquement les
 ## Prérequis
 
 - Avoir accès au client Web (HTML5)
-- [Avoir activé les licences Windows](../manager-ovh-private-cloud/#licence-windows){.external} depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+- [Avoir activé les licences Windows](/pages/cloud/private-cloud/manager_ovh_private_cloud#licence-windows){.external} depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
 
 
 ## En pratique

@@ -50,7 +50,7 @@ Vous devez ensuite supprimer les dépôts.
 
 ### Debian / Ubuntu
 
-#### Vérifier si les packages sont installés :**
+#### Vérifier si les packages sont installés :
 
 ```bash
 dpkg --list | grep -E "noderig|beamium|ovh-rtm-binaries|ovh-rtm-metrics-toolkit"
@@ -66,7 +66,7 @@ sudo apt-get remove ovh-rtm-binaries ovh-rtm-metrics-toolkit noderig beamium
 
 ```bash
 ls /etc/apt/sources.list.d/
-``` 
+```
 
 Si les fichiers `ovh-metrics.list` et `ovh-rtm.list` ne sont pas listés, alors vous n'avez rien à faire. Dans le cas contraire, vous pouvez les supprimer via la commande ci-dessous :
 

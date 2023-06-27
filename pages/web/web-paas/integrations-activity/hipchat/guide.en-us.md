@@ -1,7 +1,5 @@
 ---
 title: HipChat
-slug: hipchat
-section: Activity
 updated: 2021-05-11
 ---
 
@@ -44,7 +42,7 @@ You're given a chance to customize these parameters in an interactive shell prom
 
 ## Validate the integration
 
-You can then verify that your integration is functioning properly [using the CLI](../../integrations-overview#validating-integrations) command
+You can then verify that your integration is functioning properly [using the CLI](/pages/web/web-paas/integrations-overview#validating-integrations) command
 
 ```bash
 webpaas integration:validate

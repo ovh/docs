@@ -1,8 +1,6 @@
 ---
 title: Replacing a defective disk
-slug: disk-replacement
 excerpt: Find out how to identify a defective disk, and request a replacement
-section: Server Management
 updated: 2018-06-21
 ---
 
@@ -47,7 +45,7 @@ If you receive an email alert, or notice any signs that you might have a faulty 
 
 #### Servers using soft RAID
 
-If you have a server that uses soft RAID, please refer to the [software RAID](../raid-soft/){.external} guide to find the disks installed on your server.
+If you have a server that uses soft RAID, please refer to the [software RAID](/pages/cloud/dedicated/raid_soft){.external} guide to find the disks installed on your server.
 
 Once you have found the access path for your disks, you can test them using the `smartctl` command, as follows:
 
@@ -91,7 +89,7 @@ In this case, the line to look out for is as follows:
 
 #### Servers using hard RAID
 
-If you have a server that uses hard RAID, please refer to the [hardware RAID](../raid-hard/){.external} guide, and use the appropriate procedure for your RAID controller type to find the access paths to your disks.
+If you have a server that uses hard RAID, please refer to the [hardware RAID](/pages/cloud/dedicated/raid_hard){.external} guide, and use the appropriate procedure for your RAID controller type to find the access paths to your disks.
 
 Once you have found the access path for your disks, you can test them using the `smartctl` command, as follows:
 
@@ -123,7 +121,7 @@ You will need to specify the RAID number (/dev/sg0 = 1er RAID, /dev/sg1 = 2e RAI
 
 #### Servers with NVMe disks
 
-If you have an NVMe disk, you will need to put the server into [rescue mode](../rescue-mode/){.external}, on which the **nvme-cli** tool is installed by default.
+If you have an NVMe disk, you will need to put the server into [rescue mode](/pages/cloud/dedicated/rescue_mode){.external}, on which the **nvme-cli** tool is installed by default.
 
 You will then need to use the `nvme list` command, and retrieve your disks’ serial numbers:
 
@@ -142,7 +140,7 @@ root@rescue:~# nvme list
 
 To request a disk replacement, you simply need to create a ticket through your [OVHcloud control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}. You can speed up the process by providing the information required for the tests. Below is a list of what you will need to provide:
 
-- **The serial number of the disk that needs to be replaced, as well as the serial numbers for all other disks that are working properly**. To retrieve the serial number of the disk that needs to be replaced, please follow [this guide](../find-disk-serial-number/){.external}. If, for any reason, you are unable to retrieve the disk’s serial number, please let us know in the ticket, and list the serial numbers of the disks that don’t need to be replaced. 
+- **The serial number of the disk that needs to be replaced, as well as the serial numbers for all other disks that are working properly**. To retrieve the serial number of the disk that needs to be replaced, please follow [this guide](/pages/cloud/dedicated/how_to_find_hdd_serial){.external}. If, for any reason, you are unable to retrieve the disk’s serial number, please let us know in the ticket, and list the serial numbers of the disks that don’t need to be replaced. 
 
 As a reminder, it’s important to include the serial numbers of all the disks. They will be sent to the datacentre technician, and this will avoid any mistakes being made as the replacement operation is carried out.
 
@@ -201,16 +199,16 @@ MegaCli -PdLocate -stop -physdrv[E0:S0] -a0
 
 If you have a server that uses hard RAID, then the RAID will rebuild itself. Please note that *auto-rebuild* is enabled by default. For it to work, please ensure that you have not disabled it. The resync process will take a few minutes, and may decrease your RAID’s read/write performance.
 
-If you have a server that uses soft RAID, we recommend that you resync your disks manually. To do this, you can refer to our [software RAID](../raid-soft/){.external} guide.
+If you have a server that uses soft RAID, we recommend that you resync your disks manually. To do this, you can refer to our [software RAID](/pages/cloud/dedicated/raid_soft){.external} guide.
 
 
 ## Go further
 
-[Software RAID](../raid-soft/){.external}
+[Software RAID](/pages/cloud/dedicated/raid_soft){.external}
 
-[Hardware RAID](../raid-hard/){.external}
+[Hardware RAID](/pages/cloud/dedicated/raid_hard){.external}
 
-[Rescue Mode](../rescue-mode){.external}
+[Rescue Mode](/pages/cloud/dedicated/rescue_mode){.external}
 
 
 Join our community of users on <https://community.ovh.com/en/>.

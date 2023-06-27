@@ -1,9 +1,7 @@
 ---
 title: Primeiros passos com a API OpenStack
 excerpt: Descubra como gerir as suas instâncias com a ajuda do cliente Python OpenStack
-slug: dar_os_primeiros_passos_com_a_api_nova
 legacy_guide_number: g1935
-section: Gestão via OpenStack
 updated: 2022-10-13
 ---
 
@@ -30,8 +28,8 @@ Este guia ajudá-lo-á a gerir as suas instâncias com a ajuda do cliente Python
 
 ## Requisitos
 
-- [Preparar o ambiente para utilizar a API OpenStack](../prepare_the_environment_for_using_the_openstack_api/)
-- [Carregar as variáveis de ambiente OpenStack](../set-openstack-environment-variables/)
+- [Preparar o ambiente para utilizar a API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Carregar as variáveis de ambiente OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 
 ## Instruções

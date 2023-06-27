@@ -1,8 +1,5 @@
 ---
 title: Jakarta EE/Eclipse MicroProfile
-slug: frameworks-jakarta
-section: Frameworks
-order: 6
 updated: 2021-05-11
 ---
 
@@ -18,11 +15,11 @@ Java Enterprise Edition (Java EE) is an umbrella that holds specifications and A
 
 ## Services
 
-The [configuration reader library](https://github.com/platformsh/config-reader-java) for Java is used in these examples, so be sure to check out the [documentation](../languages-java#support-libraries) for installation instructions and the latest version.
+The [configuration reader library](https://github.com/platformsh/config-reader-java) for Java is used in these examples, so be sure to check out the [documentation](/pages/web/web-paas/languages-java#support-libraries) for installation instructions and the latest version.
 
 ### Apache Solr
 
-You can use [Jakarta NoSQL](https://projects.eclipse.org/projects/ee4j.nosql)/[JNoSQL](http://www.jnosql.org/) to use [Solr](../configuration-services/solr) with your application by first determining the Solr client programmatically.
+You can use [Jakarta NoSQL](https://projects.eclipse.org/projects/ee4j.nosql)/[JNoSQL](http://www.jnosql.org/) to use [Solr](/pages/web/web-paas/configuration-services/solr) with your application by first determining the Solr client programmatically.
 
 ```java
 import jakarta.nosql.document.DocumentCollectionManager;
@@ -65,7 +62,7 @@ class DocumentManagerProducer {
 
 ### Redis
 
-You can use [Jakarta NoSQL](https://projects.eclipse.org/projects/ee4j.nosql)/[JNoSQL](http://www.jnosql.org/) to use [Redis](../configuration-services/redis) with your application by first determining the Redis client programmatically.
+You can use [Jakarta NoSQL](https://projects.eclipse.org/projects/ee4j.nosql)/[JNoSQL](http://www.jnosql.org/) to use [Redis](/pages/web/web-paas/configuration-services/redis) with your application by first determining the Redis client programmatically.
 
 ```java
 import jakarta.nosql.keyvalue.BucketManager;
@@ -110,7 +107,7 @@ class BucketManagerProducer {
 
 ### MySQL
 
-[MySQL](../configuration-services/mysql) is an open-source relational database technology, and Jakarta EE supports a robust integration with it: [JPA](https://projects.eclipse.org/projects/ee4j.jpa).
+[MySQL](/pages/web/web-paas/configuration-services/mysql) is an open-source relational database technology, and Jakarta EE supports a robust integration with it: [JPA](https://projects.eclipse.org/projects/ee4j.jpa).
 
 The first step is to choose the database that you would like to use in your project. Define the driver for [MySQL](https://mvnrepository.com/artifact/mysql/mysql-connector-java) and the Java dependencies. Then determine the DataSource client programmatically:
 
@@ -170,7 +167,7 @@ class EntityManagerConfiguration {
 
 ### MariaDB
 
-[MariaDB](../configuration-services/mysql) is an open-source relational database technology, and Jakarta EE supports a robust integration with it: [JPA](https://projects.eclipse.org/projects/ee4j.jpa).
+[MariaDB](/pages/web/web-paas/configuration-services/mysql) is an open-source relational database technology, and Jakarta EE supports a robust integration with it: [JPA](https://projects.eclipse.org/projects/ee4j.jpa).
 
 The first step is to choose the database that you would like to use in your project. Define the driver for [MariaDB](https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client) and the Java dependencies. Then determine the DataSource client programmatically:
 
@@ -226,7 +223,7 @@ class EntityManagerConfiguration {
 
 ### PostgreSQL
 
-[PostgreSQL](../configuration-services/postgresql) is an open-source relational database technology, and Jakarta EE supports a robust integration with it: [JPA](https://projects.eclipse.org/projects/ee4j.jpa).
+[PostgreSQL](/pages/web/web-paas/configuration-services/postgresql) is an open-source relational database technology, and Jakarta EE supports a robust integration with it: [JPA](https://projects.eclipse.org/projects/ee4j.jpa).
 
 The first step is to choose the database that you would like to use in your project. Define the driver for [PostgreSQL](https://mvnrepository.com/artifact/postgresql/postgresql) and the Java dependencies. Then determine the DataSource client programmatically:
 

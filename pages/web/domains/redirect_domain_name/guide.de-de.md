@@ -1,9 +1,6 @@
 ---
 title: "Weiterleitung von bei OVHcloud verwalteten Domainnamen"
-slug: domainweiterleitung
 excerpt: "Erfahren Sie hier, wie Sie verschiedene Weiterleitungsarten für einen von OVHcloud verwalteten Domainnamen erstellen"
-section: Allgemeine Verwendung
-order: 01
 updated: 2022-10-06
 ---
 
@@ -65,7 +62,7 @@ Klicken Sie auf den Button `Weiterleitung hinzufügen`{.action}.
 > Der Tab `Weiterleitung`{.action} zeigt eine vierte Option, die Ihre Domain auf DNS-Einträge vom Typ A, AAAA und CNAME zeigen lassen kann.<br>
 > Da es sich hierbei nicht um eine "Weiterleitung" im engeren Sinn handelt, wird diese Option hier nicht näher erläutert.
 >
-> Mehr Informationen zu DNS-Einträgen finden Sie in unserer Dokumentation zum [Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/).
+> Mehr Informationen zu DNS-Einträgen finden Sie in unserer Dokumentation zum [Bearbeiten der OVHcloud DNS-Zone](/pages/web/domains/dns_zone_edit).
 >
 
 Nachfolgend finden Sie die drei Arten der Weiterleitung Schritt für Schritt erläutert.
@@ -389,13 +386,13 @@ Diese Variable kann verwendet werden, wenn Sie Dateien vorübergehend auf eine a
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-[Tutorial - Wie kann ich den Zugang zu meiner Website für bestimmte IP-Adressen über eine .htaccess Datei sperren?](https://docs.ovh.com/de/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+[Tutorial - Wie kann ich den Zugang zu meiner Website für bestimmte IP-Adressen über eine .htaccess Datei sperren?](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
-[Den Adminbereich Ihrer Website mit einer .htaccess Datei schützen](https://docs.ovh.com/de/hosting/hosting-htaccess-authentifizierung/).
+[Den Adminbereich Ihrer Website mit einer .htaccess Datei schützen](/pages/web/hosting/htaccess_protect_directory_by_password).
 
-[Fortgeschrittene Operationen mit .htaccess Dateien](https://docs.ovh.com/de/hosting/webhosting_welche_anderen_operationen_sind_mit_htaccess-dateien_moglich/).
+[Fortgeschrittene Operationen mit .htaccess Dateien](/pages/web/hosting/htaccess_what_else_can_you_do).
 
-[Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/)
+[Bearbeiten der OVHcloud DNS-Zone](/pages/web/domains/dns_zone_edit)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

@@ -32,7 +32,7 @@ When you are logged into the OVHcloud Control Panel, you will find your username
 ### What do I do if I can't log in to my customer account?
 
 For various reasons — such as forgetting your password, losing access to your email address, or to your mobile phone for an SMS identification — you may not be able to log in to the OVHcloud Control Panel.
-If this happens to you, please follow [this guide](https://docs.ovh.com/ie/en/customer/#login-failure), which is designed for resolving situations like this.
+If this happens to you, please follow [this guide](/products/account-and-service-management-account-information#login-failure), which is designed for resolving situations like this.
 
 ### How do I change my personal information?
 
@@ -76,7 +76,7 @@ If you would like to retrieve a domain name that you are the registered owner of
 
 #### Tips and tricks
 
-A full contact management guide is available here: [docs.ovh.com/ie/en/customer/managing-contacts/#access-contact-management](https://docs.ovh.com/au/en/customer/managing-contacts/#access-contact-management)
+A full contact management guide is available here: [/pages/account/customer/managing_contacts#access-contact-management](/pages/account/customer/managing_contacts#access-contact-management)
 
 ### How do I set and change a billing contact?
 
@@ -84,7 +84,7 @@ Log in to the OVHcloud Control Panel with your login credentials. Go to the dash
 
 #### Tips and tricks
 
-For further information about contact management, please read this detailed guide: [Managing contacts for your services](https://docs.ovh.com/ie/en/customer/managing-contacts/).
+For further information about contact management, please read this detailed guide: [Managing contacts for your services](/pages/account/customer/managing_contacts).
 
 ### How do I secure my account?
 
@@ -106,7 +106,7 @@ After you have created your OVHcloud customer account, we recommend securing you
 - From a mobile application compatible with Android, iPhone and Windows mobile
 - Using a U2F-compatible security key
 
-For further information, please refer to our [guide](https://docs.ovh.com/ie/en/customer/secure-account-with-2FA/).
+For further information, please refer to our [guide](/pages/account/customer/secure-ovhcloud-account-with-2fa).
 
 ### How do I disable two-factor authentication/2FA on my OVHcloud account?
 
@@ -126,7 +126,7 @@ Finally, in order to regain control of your customer account, we may ask you to 
 
 ### I have received an email that appears to be a phishing scam impersonating OVHcloud, how do I report it for verification?
 
-To identify and report a phishing email or SMS, please refer to our [dedicated guide](https://docs.ovh.com/ie/en/customer/scams-fraud-phishing/)
+To identify and report a phishing email or SMS, please refer to our [dedicated guide](/pages/account/customer/phishing_care)
 
 ### How do I report abusive behaviour or illegal content from services hosted by OVHcloud that I am a victim of?
 
@@ -146,12 +146,12 @@ In view of the additional information provided to you in this email, we will ask
 
 To ensure that your services are not being controlled by a third party (e.g. following a hacking incident), we recommend checking that your services are secure:
 
-- [Secure your OVHcloud account and manage your personal information](https://docs.ovh.com/ie/en/customer/all-about-your-username/)
-- [Change your account password](https://docs.ovh.com/ie/en/customer/manage-password/)
-- [Secure your OVHcloud account with two-factor authentication](https://docs.ovh.com/ie/en/customer/secure-account-with-2FA/)
-- [How to secure your website](https://docs.ovh.com/ie/en/hosting/secure-website/)
-- [Secure a VPS](https://docs.ovh.com/ie/en/vps/tips-for-securing-a-vps/)
-- [Secure a dedicated server](https://docs.ovh.com/ie/en/dedicated/securing-a-dedicated-server/)
+- [Secure your OVHcloud account and manage your personal information](/pages/account/customer/all_about_username)
+- [Change your account password](/pages/account/customer/manage-ovh-password)
+- [Secure your OVHcloud account with two-factor authentication](/pages/account/customer/secure-ovhcloud-account-with-2fa)
+- [How to secure your website](/pages/web/hosting/secure_your_website)
+- [Secure a VPS](/pages/cloud/vps/secure_your_vps)
+- [Secure a dedicated server](/pages/cloud/dedicated/securing-a-dedicated-server)
 
 ### If abuse is detected on one of my OVHcloud services, how can I avoid a suspension?
 

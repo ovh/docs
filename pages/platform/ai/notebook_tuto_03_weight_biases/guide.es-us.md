@@ -1,11 +1,8 @@
 ---
 title: AI Notebooks - Tutorial - Weights & Biases integration
-slug: notebooks/tuto-weights-and-biases
 excerpt: How to use wandb in notebooks  
-section: AI Notebooks - Tutorials
-order: 03
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-weights-and-biases/'
+    canonical: '/pages/platform/ai/notebook_tuto_03_weight_biases'
 updated: 2022-09-01
 ---
 
@@ -34,7 +31,7 @@ This tutorial presents two examples of using Weights & Biases. The first noteboo
 
 The first step consists in creating a Jupyter Notebook with OVHcloud AI Notebooks.
 
-First, you have to [install the OVHAI CLI](https://docs.ovh.com/us/es/publiccloud/ai/cli/install-client/) then just choose the name of the notebook (`<notebook-name>`) and the number of GPUs (`<nb-gpus>`) to use on your job and use the following command:
+First, you have to [install the OVHAI CLI](/pages/platform/ai/cli_10_howto_install_cli) then just choose the name of the notebook (`<notebook-name>`) and the number of GPUs (`<nb-gpus>`) to use on your job and use the following command:
 
 - TensorFlow image docker:
 
@@ -109,8 +106,8 @@ You can use it directly on OVHcloud AI Notebooks in few minutes.
 
 ## Go further
 
-- You can also use the **Weights & Biases** tool in an AI Training job by following this [tutorial](https://docs.ovh.com/us/es/publiccloud/ai/training/tuto-models-comparaison-weights-and-biases/).
-- It is possible to integrate **Weights and Biases** to compare the performance of pre-trained models like ResNet50 for image classification. Take a look at this [notebook](https://docs.ovh.com/us/es/publiccloud/ai/notebooks/tuto-transfer-learning-resnet/).
+- You can also use the **Weights & Biases** tool in an AI Training job by following this [tutorial](/pages/platform/ai/training_tuto_06_models_comparaison_weights_and_biases).
+- It is possible to integrate **Weights and Biases** to compare the performance of pre-trained models like ResNet50 for image classification. Take a look at this [notebook](/pages/platform/ai/notebook_tuto_07_transfer_learning_resnet50_image_classification).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

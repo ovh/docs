@@ -1,10 +1,7 @@
 ---
 title: Object Storage Swift - S3/Swift REST API compatibility (EN)
-slug: pcs/object-storage-standard-s3-and-swift-rest-api-compatibility
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/object-storage-standard-s3-and-swift-rest-api-compatibility/'
-section: OpenStack Swift Storage Class Specifics
-order: 030
+    canonical: '/pages/cloud/storage/object_storage/pcs_object_storage_standard_s3_and_swift_rest_api_compatibility'
 updated: 2022-03-23
 ---
 **Last updated 23rd March 2022**

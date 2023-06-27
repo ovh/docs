@@ -1,9 +1,6 @@
 ---
 title: Enterprise File Storage - Premiers pas avec les API
-slug: netapp/quick-start
 excerpt: Débuter sur votre offre Enterprise File Storage à l’aide des API OVHcloud
-section: Enterprise File Storage
-order: 030
 updated: 2021-10-27
 ---
 
@@ -19,7 +16,7 @@ Dans ce guide de démarrage rapide, découvrez comment débuter sur votre offre 
 
 - Disposer d'une offre OVHcloud Enterprise File Storage
 - Être connecté sur la page des [API OVHcloud](https://api.ovh.com/)
-- Savoir [monter un partage NFS](https://docs.ovh.com/fr/storage/file-storage/nas/nfs/)
+- Savoir [monter un partage NFS](/pages/cloud/storage/file_storage/nas_nfs)
 
 ## L'essentiel
 

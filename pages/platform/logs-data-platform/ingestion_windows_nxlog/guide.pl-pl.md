@@ -1,8 +1,5 @@
 ---
 title: Pushing logs with a forwarder - NXLog (Windows)
-slug: logs-data-platform-windows-nxlog
-order: 06
-section: Use cases
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-windows-nxlog?id=kb_article_view&sysparm_article=KB0050067'
 updated: 2023-01-16
@@ -121,6 +118,6 @@ If you want to go further, don't hesitate to fly to the [NXlog documentation](ht
 ## Getting Help
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/pl/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

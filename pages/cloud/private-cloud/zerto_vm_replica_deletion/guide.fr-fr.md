@@ -1,8 +1,6 @@
 ---
 title: "Supprimer la copie d'une VM du site de récupération Zerto"
-slug: supprimer-copie-vm-zerto
 excerpt: Découvez comment supprimer une VM du site de récupération quand elle est effacée du site source
-section: Services et options OVHcloud
 updated: 2021-12-09
 ---
 
@@ -20,7 +18,7 @@ Ce document montre comment effacer ces fichiers et remettre la VPG en fonction.
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir des identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour Zerto (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-- Avoir déployé [Zerto Virtual Replication](https://docs.ovh.com/fr/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/)
+- Avoir déployé [Zerto Virtual Replication](/pages/cloud/private-cloud/zerto_virtual_replication_as_a_service)
 
 ## En pratique
 

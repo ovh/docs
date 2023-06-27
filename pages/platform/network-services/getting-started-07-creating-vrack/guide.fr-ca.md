@@ -1,9 +1,6 @@
 ---
 title: 'Configuration du vRack Public Cloud'
 excerpt: 'Découvrez comment configurer un vRack Public Cloud'
-slug: public-cloud-vrack
-section: Premiers pas
-order: 07
 updated: 2023-03-03
 ---
 
@@ -17,9 +14,9 @@ Le [vRack](https://www.ovh.com/ca/fr/solutions/vrack/) est un réseau privé qui
 
 ## Prérequis
 
-- Posséder un [projet Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/create_a_public_cloud_project/)
+- Posséder un [projet Public Cloud](/pages/platform/public-cloud/create_a_public_cloud_project)
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
-- Avoir [créé un utilisateur OpenStack](https://docs.ovh.com/ca/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/) (facultatif)
+- Avoir [créé un utilisateur OpenStack](/pages/platform/public-cloud/create_and_delete_a_user) (facultatif)
 - Connaissances réseaux élémentaires
 
 ## Présentation des interfaces
@@ -44,7 +41,7 @@ Interface visuelle indépendante d'OVHcloud, [Horizon](https://horizon.cloud.ovh
 
 Cette interface complète et technique vous permet de gérer la quasi totalité des actions OpenStack. Ce sera une des interfaces nécessaires si vous souhaitez gérer plus de deux VLAN, ajouter des interfaces réseau privées à vos instances, gérer des images personnalisées, etc...
 
-Consultez le guide [Accéder à l'interface Horizon](https://docs.ovh.com/ca/fr/public-cloud/horizon/) pour vous familiariser à Horizon.
+Consultez le guide [Accéder à l'interface Horizon](/pages/platform/public-cloud/introducing_horizon) pour vous familiariser à Horizon.
 
 > [!primary]
 > Horizon fonctionnant par zone, pensez bien à choisir votre zone géographique de travail tout en haut à gauche de votre interface (GRA5, SBG3, BHS1, etc...)
@@ -63,7 +60,7 @@ Vous pouvez simplement accéder aux API depuis [notre page web](https://ca.api.o
 
 Ainsi, il vous sera possible de librement automatiser les tâches de base au moyen de scripts, optimiser vos propres fonctions, etc...
 
-Consultez le guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+Consultez le guide [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
 ### API OpenStack
 
@@ -77,8 +74,8 @@ Grâce à l’API OpenStack, vous pouvez aussi facilement automatiser cette gest
 
 Afin de vous familariser avec l'API OpenStack, consultez tout d'abord les guides suivants :
 
-- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/ca/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/ca/fr/public-cloud/set-openstack-environment-variables/)
+- [Préparer l’environnement pour utiliser l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Charger les variables d’environnement OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 Vous pourrez alors, suivant votre besoin, utiliser les API dédiées à OpenStack :
 
@@ -99,7 +96,7 @@ Vous pourrez alors, suivant votre besoin, utiliser les API dédiées à OpenStac
 
 Terraform permet aussi de gérer les infrastructures d’OVHcloud.
 
-Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform. Retrouvez plus d’informations dans notre [guide d’utilisation de Terraform](https://docs.ovh.com/ca/fr/api/terraform-at-ovhcloud/).
+Pour cela, vous devez choisir le bon fournisseur et la bonne ressource Terraform. Retrouvez plus d’informations dans notre [guide d’utilisation de Terraform](/pages/account/api/terraform-at-ovhcloud).
 
 ## En pratique
 
@@ -129,7 +126,7 @@ Pour continuer la configuration du vRack depuis l'espace client OVHcloud, poursu
 
 #### Depuis les APIv6 OVHcloud
 
-Pour activer et gérer un vRack depuis les APIv6 OVHcloud, cliquez [ici](https://docs.ovh.com/ca/fr/publiccloud/network-services/public-cloud-vrack-apiv6/#etape-1-activer-et-gerer-un-vrack) pour consulter le guide spécifique à cette méthode.
+Pour activer et gérer un vRack depuis les APIv6 OVHcloud, cliquez [ici](/pages/platform/network-services/getting-started-08-creating-vrack-with-api#etape-1-activer-et-gerer-un-vrack) pour consulter le guide spécifique à cette méthode.
 
 ### Étape 2 : Créer un réseau privé dans le vRack
 
@@ -149,7 +146,7 @@ Depuis les APIv6 OVHcloud, vous pourrez personnaliser l'ensemble des paramètres
 >
 > Contrairement aux serveurs dédiés, il n’est pas nécessaire de « tagguer » le VLAN directement sur une instance Public Cloud. 
 >
-> Pour plus d'informations sur la gestion des VLAN du vRack des serveurs dédiés, vous pouvez consulter ce guide : [Créer plusieurs VLAN dans le vRack](https://docs.ovh.com/ca/fr/dedicated/creer-vlan-vrack/).
+> Pour plus d'informations sur la gestion des VLAN du vRack des serveurs dédiés, vous pouvez consulter ce guide : [Créer plusieurs VLAN dans le vRack](/pages/cloud/dedicated/creating-multiple-vlans-in-a-vrack).
 
 > [!warning]
 > Le vRack étant une infrastructure gérée au niveau d'OVHcloud, vous ne pourrez l'administrer qu'au travers de l'espace client OVHcloud et des APIv6 OVHcloud.
@@ -175,7 +172,7 @@ Cliquez à présent sur `Créer un réseau privé`{.action}. La page suivante vo
 
 **Créez une Gateway et connectez-vous au réseau privé**
 
-Sélectionnez cette option si vous avez l'intention de créer des instances avec un réseau privé uniquement. Pour plus d’informations, nous vous invitons à consulter les guides suivants : [Créer un réseau privé avec une Gateway](https://docs.ovh.com/ca/fr/publiccloud/network-services/creating-private-network-with-gateway/) et [Créer une première instance Public Cloud et s’y connecter](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-3-creer-une-instance).
+Sélectionnez cette option si vous avez l'intention de créer des instances avec un réseau privé uniquement. Pour plus d’informations, nous vous invitons à consulter les guides suivants : [Créer un réseau privé avec une Gateway](/pages/platform/network-services/getting-started-02-create-private-network-gateway) et [Créer une première instance Public Cloud et s’y connecter](/pages/platform/public-cloud/public-cloud-first-steps#etape-3-creer-une-instance).
 
 > [!warning]
 > Si l'option est grisée, cela signifie qu'elle est incompatible avec la région sélectionnée. Pour plus d’informations, veuillez vous référer à notre page sur la [disponibilité des produits Public Cloud pour chaque région](https://www.ovhcloud.com/fr-ca/public-cloud/regions-availability/).
@@ -191,7 +188,7 @@ Si vous souhaitez définir le numéro du VLAN à 0, vous devez passer par l'[API
 
 Veuillez noter que si vous avez un réseau privé existant avec un VLAN ID 0, cette option sera cochée par défaut et grisée.
 
-Dans le cas où vous devez faire communiquer des serveurs dédiés OVHcloud avec du VLAN taggué, consultez le guide suivant : [Créer plusieurs VLAN dans le vRack](https://docs.ovh.com/ca/fr/dedicated/creer-vlan-vrack/).
+Dans le cas où vous devez faire communiquer des serveurs dédiés OVHcloud avec du VLAN taggué, consultez le guide suivant : [Créer plusieurs VLAN dans le vRack](/pages/cloud/dedicated/creating-multiple-vlans-in-a-vrack).
 
 **Options de distribution des adresses DHCP**
 
@@ -205,7 +202,7 @@ Une fois vos choix faits, cliquez sur `Créer`{.action} pour lancer le processus
 
 #### Créer un réseau privé depuis les APIv6 OVHcloud <a name="vlansetup"></a>
 
-Pour créer un réseau privé depuis les APIv6 OVHcloud, cliquez [ici](https://docs.ovh.com/ca/fr/publiccloud/network-services/public-cloud-vrack-apiv6/#etape-3-creer-un-vlan-dans-le-vrack) pour consulter le guide spécifique à cette méthode.
+Pour créer un réseau privé depuis les APIv6 OVHcloud, cliquez [ici](/pages/platform/network-services/getting-started-08-creating-vrack-with-api#etape-3-creer-un-vlan-dans-le-vrack) pour consulter le guide spécifique à cette méthode.
 
 #### Créer un réseau privé via le CLI OpenStack
 
@@ -254,7 +251,7 @@ Deux situations peuvent se présenter à vous :
 
 ##### **Depuis l'espace client OVHcloud**
 
-Consultez le guide [Créer une instance depuis l’espace client](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/#create-instance). Lors de la création d'une instance, vous pouvez choisir, à l'étape 5, un mode réseau, puis un réseau privé dans lequel intégrer votre instance.
+Consultez le guide [Créer une instance depuis l’espace client](/pages/platform/public-cloud/public-cloud-first-steps#create-instance). Lors de la création d'une instance, vous pouvez choisir, à l'étape 5, un mode réseau, puis un réseau privé dans lequel intégrer votre instance.
 
 ![attach new instance](images/network-selection.png){.thumbnail}
 
@@ -265,7 +262,7 @@ Consultez le guide [Créer une instance depuis l’espace client](https://docs.o
 
 ##### **Depuis les APIv6 OVHcloud**
 
-Cliquez [ici](https://docs.ovh.com/ca/fr/publiccloud/network-services/public-cloud-vrack-apiv6/#etape-4-integrer-une-instance-dans-le-vrack) pour consulter le guide spécifique à cette méthode.
+Cliquez [ici](/pages/platform/network-services/getting-started-08-creating-vrack-with-api#etape-4-integrer-une-instance-dans-le-vrack) pour consulter le guide spécifique à cette méthode.
 
 ##### **Depuis les API OpenStack**
 
@@ -308,7 +305,7 @@ nova net-list
 ><br> - Celui du ou des VLAN nécessaires à votre configuration
 >
 
-Pensez également à noter les informations suivantes, comme indiqueé dans le [guide d'utilisation de l'API Nova](https://docs.ovh.com/ca/fr/public-cloud/debuter-avec-lapi-nova/) :
+Pensez également à noter les informations suivantes, comme indiqueé dans le [guide d'utilisation de l'API Nova](/pages/platform/public-cloud/starting_with_nova) :
 
 - ID ou nom de la clé SSH OpenStack
 - ID du type d'instance (flavor)
@@ -462,7 +459,7 @@ Dans la pop-up qui apparaît, sélectionnez le ou les réseaux privés à attach
 
 ##### **Gestion des interfaces réseaux depuis les APIv6 OVHcloud**
 
-Cliquez [ici](https://docs.ovh.com/ca/fr/publiccloud/network-services/public-cloud-vrack-apiv6/#cas-dune-instance-deja-existante) pour consulter le guide spécifique à cette méthode.
+Cliquez [ici](/pages/platform/network-services/getting-started-08-creating-vrack-with-api#cas-dune-instance-deja-existante) pour consulter le guide spécifique à cette méthode.
 
 ##### **Gestion des interfaces réseaux depuis OpenStack Horizon**
 
@@ -665,9 +662,9 @@ nova interface-detach 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx 12345678-abcd-ef01-23
 
 ## Aller plus loin
 
-[Configuration du vRack Public Cloud depuis les APIv6 OVHcloud](https://docs.ovh.com/ca/fr/publiccloud/network-services/public-cloud-vrack-apiv6/)
+[Configuration du vRack Public Cloud depuis les APIv6 OVHcloud](/pages/platform/network-services/getting-started-08-creating-vrack-with-api)
 
-[Serveurs Dédiés - Créer plusieurs VLAN dans le vRack](https://docs.ovh.com/ca/fr/dedicated/creer-vlan-vrack/)
+[Serveurs Dédiés - Créer plusieurs VLAN dans le vRack](/pages/cloud/dedicated/creating-multiple-vlans-in-a-vrack)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

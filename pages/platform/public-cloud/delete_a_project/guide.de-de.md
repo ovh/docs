@@ -1,8 +1,6 @@
 ---
 title: 'Ein Public Cloud Projekt löschen'
 excerpt: 'Erfahren Sie hier, wie Sie Ihr Public Cloud Projekt löschen'
-slug: delete_a_project
-section: 'Projektverwaltung'
 updated: 2022-10-14
 ---
 
@@ -51,6 +49,6 @@ Nach Klick auf den Button wird eine E-Mail an Sie gesendet, in der Sie aufgeford
 
 ## Weiterführende Informationen
 
-[Die ersten Schritte mit Ihrer Public Cloud Instanz](../public-cloud-erste-schritte/)
+[Die ersten Schritte mit Ihrer Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps)
 
 Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en](https://community.ovh.com/en/).

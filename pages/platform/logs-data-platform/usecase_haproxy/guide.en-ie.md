@@ -1,8 +1,5 @@
 ---
 title: Supervising your HAProxy deployment with Logs Data Platform
-slug: logs-data-platform-haproxy
-order: 05
-section: Use cases
 excerpt: Monitor and analyze your web applications with HAProxy and Logs Data Platform.
 updated: 2020-07-27
 ---
@@ -356,6 +353,6 @@ Here is an example of a dashboard that you can craft from the HAProxy logs. HAPr
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/ie/en/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

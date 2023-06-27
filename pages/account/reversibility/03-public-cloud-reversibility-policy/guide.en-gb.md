@@ -1,8 +1,5 @@
 ---
 title: Public Cloud Reversibility Policy
-slug: public-cloud-reversibility-policy
-section: Reversibility policies
-order: 4
 updated: 2021-05-05
 ---
 
@@ -26,10 +23,10 @@ Public cloud features are divided into three categories:
 
 |Feature|Description|Available formats|Migration model|Available documentation|
 |---|---|---|---|---|
-|Compute|Start and run instances based on multiple system images and flavors available.|qcow2|Snapshot instances, convert them to images, export the images.|[Create and use OpenStack snapshots](https://www.ovh.com/blog/create-and-use-openstack-snapshots/)<br><br>[Transfer an Instance backup from one datacentre to another](https://docs.ovh.com/gb/en/public-cloud/transfer_instance_backup_from_one_datacentre_to_another/)<br><br>[Gestion des snapshots d’une instance dans horizon](https://docs.ovh.com/fr/public-cloud/gestion-des-snapshots-dune-instance-dans-horizon/) (FR)|
-|Swift - Public cloud storage|Store files accessible through openstack swift API or S3 API. Enable the use of metadata for objects.|**Every format** - customers may upload any file on the object storage|Use any synchronisation tool compatible with either S3 or swift API. As an example, we recommend rclone.|[Getting started with the Swift S3 API](https://docs.ovh.com/gb/en/public-cloud/getting_started_with_the_swift_S3_API/)<br><br>[Getting started with the Swift API](https://docs.ovh.com/gb/en/public-cloud/getting_started_with_the_swift_api/)|
-|Swift - Public cloud archive|Long-term file storage|**Every format** - customers may upload any file on the object storage|Use any synchronisation tool compatible with either S3 or swift API. As an example, we recommend rclone.|[Getting started with the Swift S3 API](https://docs.ovh.com/gb/en/public-cloud/getting_started_with_the_swift_S3_API/)<br><br>[Getting started with the Swift API](https://docs.ovh.com/gb/en/public-cloud/getting_started_with_the_swift_api/)|
-|Ceph - Block storage|Attach volumes for additional storage to public cloud instances|**Every format** - customers may upload any file on the object storage|Convert the volume to an image, export images|[Transfer a volume backup from one datacentre to another](https://docs.ovh.com/gb/en/public-cloud/transfer_volume_backup_from_one_datacentre_to_another/)|
+|Compute|Start and run instances based on multiple system images and flavors available.|qcow2|Snapshot instances, convert them to images, export the images.|[Create and use OpenStack snapshots](https://www.ovh.com/blog/create-and-use-openstack-snapshots/)<br><br>[Transfer an Instance backup from one datacentre to another](/pages/platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another)<br><br>[Gestion des snapshots d’une instance dans horizon](/pages/platform/public-cloud/managing_snapshots_in_horizon) (FR)|
+|Swift - Public cloud storage|Store files accessible through openstack swift API or S3 API. Enable the use of metadata for objects.|**Every format** - customers may upload any file on the object storage|Use any synchronisation tool compatible with either S3 or swift API. As an example, we recommend rclone.|[Getting started with the Swift S3 API](/pages/cloud/storage/object_storage/pcs_getting_started_with_the_swift_s3_api)<br><br>[Getting started with the Swift API](/pages/cloud/storage/object_storage/pcs_getting_started_with_the_swift_api)|
+|Swift - Public cloud archive|Long-term file storage|**Every format** - customers may upload any file on the object storage|Use any synchronisation tool compatible with either S3 or swift API. As an example, we recommend rclone.|[Getting started with the Swift S3 API](/pages/cloud/storage/object_storage/pcs_getting_started_with_the_swift_s3_api)<br><br>[Getting started with the Swift API](/pages/cloud/storage/object_storage/pcs_getting_started_with_the_swift_api)|
+|Ceph - Block storage|Attach volumes for additional storage to public cloud instances|**Every format** - customers may upload any file on the object storage|Convert the volume to an image, export images|[Transfer a volume backup from one datacentre to another](/pages/platform/public-cloud/transfer_volume_backup_from_one_datacentre_to_another)|
 |Horizon - WebUI Service|Web control panel and management interface|N/A|No migration per se, this is just an interface above resources|N/A|
 |Mistral - Workflow management|Describe and execute processes as a set of tasks and their transitions.|Yaml|Export workflows files and run them in the new environment|N/A|
 

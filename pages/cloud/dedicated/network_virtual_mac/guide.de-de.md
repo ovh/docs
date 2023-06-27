@@ -1,8 +1,6 @@
 ---
 title: 'Virtuelle MAC-Adresse einer Additional IP zuweisen'
-slug: network-virtual-mac
 excerpt: 'Erfahren Sie hier, wie Sie eine virtuelle MAC-Adresse erstellen und mit einer Additional IP verbinden'
-section: 'Netzwerk & IP'
 updated: 2022-12-20
 ---
 
@@ -20,10 +18,10 @@ Bei OVHcloud können Sie eine virtuelle MAC-Adresse mit einer IP-Adresse verbind
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account, der [virtuelle MACs unterstützt](https://docs.ovh.com/de/dedicated/network-support-virtual-mac/).
+- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account, der [virtuelle MACs unterstützt](/pages/cloud/dedicated/network_support_virtual_mac).
 - Sie verfügen über eine [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder [OVHcloud API](https://api.ovh.com/) eingeloggt.
-- Ihr Server muss virtuelle MAC-Adressen unterstützen. Ziehen Sie [unsere Anleitung](https://docs.ovh.com/de/dedicated/network-support-virtual-mac/) zu Rate, um dies zu bestimmen.
+- Ihr Server muss virtuelle MAC-Adressen unterstützen. Ziehen Sie [unsere Anleitung](/pages/cloud/dedicated/network_support_virtual_mac) zu Rate, um dies zu bestimmen.
 
 > [!warning]
 > Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
@@ -31,7 +29,7 @@ Bei OVHcloud können Sie eine virtuelle MAC-Adresse mit einer IP-Adresse verbind
 > Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
 
 > [!primary]
-> Wenn Sie mit der Verwendung der OVHcloud API nicht vertraut sind, lesen Sie unsere Einführung zur [Verwendung der OVHcloud API](https://docs.ovh.com/de/api/first-steps-with-ovh-api/).
+> Wenn Sie mit der Verwendung der OVHcloud API nicht vertraut sind, lesen Sie unsere Einführung zur [Verwendung der OVHcloud API](/pages/account/api/first-steps).
 
 ## In der praktischen Anwendung
 

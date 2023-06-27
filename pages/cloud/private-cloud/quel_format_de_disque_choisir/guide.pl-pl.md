@@ -1,9 +1,6 @@
 ---
 title: Jaki format dysku wybrać
-slug: jaki-format-dysku-wybrac
 excerpt: Poznaj różne rodzaje formatów dysku
-section: Zarządzanie wirtualnymi maszynami
-order: 04
 updated: 2022-02-02
 ---
 

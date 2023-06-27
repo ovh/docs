@@ -1,9 +1,6 @@
 ---
 title: Comecar com MySQL e MariaDB
-slug: comecar-com-mysql-e-mariadb
 excerpt: Utilize as suas bases de dados
-section: 'Primeiros passos'
-order: 02
 updated: 2023-02-15
 ---
 
@@ -35,7 +32,7 @@ Este motor é 100% compatível, e é mais "livre" que o seu irmão mais velho My
 
 - Dispor de uma [instância Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/){.external} (incluída numa oferta de [alojamento web performance](https://www.ovhcloud.com/pt/web-hosting/)
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
-- Consultar o [guia de arranque do Web Cloud Databases](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/)
+- Consultar o [guia de arranque do Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb)
 
 ## Instruções
 
@@ -61,7 +58,7 @@ De forma a poder ligar-se à base de dados, assegure-se que:
 
 Todas estas informações estão disponíveis no seu [Espaço Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
-Temos á sua disposição um guia que será útil: [Web Cloud Databases - primeira utilização](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/).
+Temos á sua disposição um guia que será útil: [Web Cloud Databases - primeira utilização](/pages/web/clouddb/starting_with_clouddb).
 
 #### Ligacao atraves de linha de comandos
 
@@ -120,7 +117,7 @@ cat nome_da_base.sql | mysql --host=servidor --user=utilizador --port=port --pas
 
 > [!primary]
 >
-> Em certos casos, é possível que a RAM disponível na instância Web Cloud Databases não permita realizar a exportação ou a importação desejadas. Se for o caso, recomendamos que utilize a ferramenta OVHcloud na Área de Cliente. Consulte a documentação ["Primeiros passos com o serviço Web Cloud Databases"](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/) se necessário.
+> Em certos casos, é possível que a RAM disponível na instância Web Cloud Databases não permita realizar a exportação ou a importação desejadas. Se for o caso, recomendamos que utilize a ferramenta OVHcloud na Área de Cliente. Consulte a documentação ["Primeiros passos com o serviço Web Cloud Databases"](/pages/web/clouddb/starting_with_clouddb) se necessário.
 >
 
 ## Quer saber mais?

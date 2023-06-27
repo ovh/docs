@@ -1,11 +1,8 @@
 ---
 title: AI Deploy - Scaling strategies
-slug: deploy/apps-deployments
 excerpt: Understand the scaling strategies (static scaling vs autoscaling) of AI Deploy
-section: AI Deploy - Guides
-order: 04
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/apps-deployments/'
+    canonical: '/pages/platform/ai/deploy_guide_04_scaling_strategies'
 updated: 2023-04-04
 ---
 

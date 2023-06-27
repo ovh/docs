@@ -1,9 +1,6 @@
 ---
 title: 'Funzionamento del certificato SSL sulla CDN'
-slug: certificato-ssl-cdn
 excerpt: 'Come aggiungere un certificato SSL sulla CDN'
-section: 'Per iniziare'
-order: 4
 updated: 2018-02-22
 ---
 
@@ -29,7 +26,7 @@ updated: 2018-02-22
 - Se stai integrando un altro sottodominio sulla CDN, verrà generato automaticamente un nuovo certificato al fine di includere anche il nuovo sottodominio.
 
 
-Per poter creare correttamente il certificato, è necessario che il sottodominio che stai aggiungendo punti correttamente verso l’IP della CDN. Per maggiori informazioni, consulta la guida su come [configurare per la prima volta un dominio sulla CDN](../prima-configurazione-dominio-su-cdn/).
+Per poter creare correttamente il certificato, è necessario che il sottodominio che stai aggiungendo punti correttamente verso l’IP della CDN. Per maggiori informazioni, consulta la guida su come [configurare per la prima volta un dominio sulla CDN](/pages/cloud/cdn_infrastructure/first_domain_name_configuration).
 
 Il certificato si rinnova automaticamente nei 20 giorni precedenti la scadenza del certificato.
 
@@ -71,6 +68,6 @@ Una volta attivato il certificato otterrai questo risultato:
 
 ## Per saperne di più
 
-[Prima configurazione di un dominio](../prima-configurazione-dominio-su-cdn/)
+[Prima configurazione di un dominio](/pages/cloud/cdn_infrastructure/first_domain_name_configuration)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

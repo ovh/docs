@@ -1,9 +1,7 @@
 ---
 title: 'Udostępnianie obiektu za pomocą tymczasowego adresu'
 excerpt: 'Dowiedz się, jak udostępnić obiekt bez ujawniania danych osobowych'
-slug: udostepnianie_obiektu_za_pomoca_tymczasowego_adresu
 legacy_guide_number: g2007
-section: 'Object Storage'
 updated: 2021-01-11
 ---
 
@@ -19,8 +17,8 @@ Jeśli chcesz współdzielić plik z innym użytkownikiem, ze zrozumiałych wzgl
 
 ## Wymagania początkowe
 
-- [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/){.ref}
-- [Pobranie zmiennych środowiskowych OpenStack](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/){.ref}
+- [Przygotowanie środowiska do korzystania z API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api){.ref}
+- [Pobranie zmiennych środowiskowych OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables){.ref}
 - Python zainstalowany na stacji roboczej
 
 ## W praktyce

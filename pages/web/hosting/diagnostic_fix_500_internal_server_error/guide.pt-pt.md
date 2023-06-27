@@ -1,9 +1,6 @@
 ---
 title: O que fazer em caso de erro 500 Internal Server Error?
-slug: erreur-500-internal-server-error
 excerpt: Diagnosticar os casos mais comuns de erros 500
-section: Diagnóstico
-order: 06
 updated: 2023-05-16
 ---
 
@@ -32,33 +29,33 @@ Por vezes, provêm também de uma atualização efetuada **automaticamente** por
 
 - Dispor de uma [oferta de alojamento partilhado](https://www.ovhcloud.com/pt/web-hosting/)
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
-- Estar atualizado em [pagamentos](https://docs.ovh.com/pt/billing/gerir-faturas-ovhcloud/#pay-bills) e [renovações](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/#renewal-management) dos serviços associados (nome de domínio e alojamento web)
+- Estar atualizado em [pagamentos](/pages/account/billing/invoice_management#pay-bills) e [renovações](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) dos serviços associados (nome de domínio e alojamento web)
 
 ## Instruções
 
 Antes de prosseguir, verifique o seu site em vários dispositivos e browsers. Se o erro 500 não aparece em certos casos (por exemplo, num browser diferente do seu), é porque não está relacionado com os seus serviços OVHcloud. Reinicie os seus dispositivos e contacte um técnico informático próximo da sua casa.
 
-Um site é constituído por um **código fonte** (os ficheiros em .php, por exemplo, visíveis durante uma ligação ao seu alojamento em [FTP](../aceder-espaco-de-armazenamento-ftp-alojamento-web/), ao qual se junta frequentemente uma **base de dados**.
+Um site é constituído por um **código fonte** (os ficheiros em .php, por exemplo, visíveis durante uma ligação ao seu alojamento em [FTP](/pages/web/hosting/ftp_connection), ao qual se junta frequentemente uma **base de dados**.
 <br>Apesar do erro 500, é fortemente aconselhado efetuar um backup local do conjunto dos seus dados antes de qualquer outra manipulação :
 
-- Siga este [guia](../partilhado_guia_de_utilizacao_do_filezilla/) para obter uma cópia do código fonte.
-- Se o seu site utiliza uma base de dados, consulte também este [documento](../partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/) para obter uma cópia.
+- Siga este [guia](/pages/web/hosting/ftp_filezilla_user_guide) para obter uma cópia do código fonte.
+- Se o seu site utiliza uma base de dados, consulte também este [documento](/pages/web/hosting/sql_database_export) para obter uma cópia.
 
 No caso de um erro 500, é perfeitamente possível efetuar um [restauro](#restore) do seu site. No entanto, é preferível efetuar um diagnóstico aprofundado para determinar a origem exata do erro.
 
 ### Verificar os logs do seu alojamento
 
-Consulte primeiro este [guia](../partilhado_consultar_as_estatisticas_e_os_logs_do_meu_site/) para procurar a causa do erro 500 nos logs do seu alojamento.
+Consulte primeiro este [guia](/pages/web/hosting/logs_and_statistics) para procurar a causa do erro 500 nos logs do seu alojamento.
 
 ### Passar o seu site em modo de desenvolvimento
 
-Para que apareçam eventuais erros PHP, passe o seu alojamento em modo de `desenvolvimento` graças a estas [indicações](../modificar_o_ambiente_de_execucao_do_meu_alojamento_web/#2-alterar-a-configuracao-do-alojamento-web).
+Para que apareçam eventuais erros PHP, passe o seu alojamento em modo de `desenvolvimento` graças a estas [indicações](/pages/web/hosting/ovhconfig_modify_system_runtime#2-alterar-a-configuracao-do-alojamento-web).
 
 ### Testar o ficheiro.htaccess
 
 Um erro 500 pode estar associado a uma anomalia num ficheiro `.htaccess`. Este ficheiro está geralmente localizado no primeiro nível da pasta que contém o seu site no seu FTP.
 
-Para o verificar, [ligue-se FTP](../aceder-espaco-de-armazenamento-ftp-alojamento-web/) ao seu alojamento.
+Para o verificar, [ligue-se FTP](/pages/web/hosting/ftp_connection) ao seu alojamento.
 
 De seguida, renomeie este ficheiro em `.htaccess.old` e volte a testar o seu site.
 
@@ -70,9 +67,9 @@ Os ficheiros e os dossiers que constituem o seu site possuem um certo nível de 
 
 Um erro 500 pode estar associado a um nível de direitos de acesso incorreto em alguns dos dossieres ou ficheiros do seu site.
 
-Para aceder a estes ficheiros, ligue-se ao seu alojamento através de FTP, seguindo a nossa [documentação](../aceder-espaco-de-armazenamento-ftp-alojamento-web/).
+Para aceder a estes ficheiros, ligue-se ao seu alojamento através de FTP, seguindo a nossa [documentação](/pages/web/hosting/ftp_connection).
 
-O guia "[Partilhado : Guia de utilização do FileZilla](../partilhado_guia_de_utilizacao_do_filezilla/#permissoes-de-pastas-e-ficheiros)" ajudá-lo-á a verificar os seguintes elementos :
+O guia "[Partilhado : Guia de utilização do FileZilla](/pages/web/hosting/ftp_filezilla_user_guide#permissoes-de-pastas-e-ficheiros)" ajudá-lo-á a verificar os seguintes elementos :
 
 - A **raiz** do seu alojamento (Trata-se do diretório notado `/` ou `.` no seu software FTP) deve ter obrigatoriamente permissões 705 (são permissões padrão). Aconselhamos que não altere este nível de direitos.
 - Os dossiers devem estar em permissões 705.
@@ -82,7 +79,7 @@ O guia "[Partilhado : Guia de utilização do FileZilla](../partilhado_guia_de_u
 
 Por razões de segurança, o seu website oculta eventuais detalhes sobre a origem do erro 500 a qualquer pessoa que se lhe ligue por um browser.
 
-Se pretender ter acesso a estes detalhes, poderá aceder ao seu site através de uma [ligação ssh](../partilhado_o_ssh_nos_alojamentos_partilhados/) a partir da fórmula de alojamento [pro2014](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou superior.
+Se pretender ter acesso a estes detalhes, poderá aceder ao seu site através de uma [ligação ssh](/pages/web/hosting/ssh_on_webhosting) a partir da fórmula de alojamento [pro2014](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou superior.
 
 ### Verificar o estado da base de dados
 
@@ -97,11 +94,11 @@ Para qualquer erro 500 que possa estar relacionado com a base de dados do seu we
 > Durante o restauro, o conteúdo do seu espaço FTP ou da sua base de dados é substituído por um backup. Assim, não poderá recuperar os dados presentes no servidor imediatamente antes do restauro.
 >
 
-Para restaurar o código fonte do seu site, consulte o nosso manual "[Restaurar o espaço de armazenamento do alojamento web](../restauracao-ftp-filezilla-area-de-cliente/)".
+Para restaurar o código fonte do seu site, consulte o nosso manual "[Restaurar o espaço de armazenamento do alojamento web](/pages/web/hosting/ftp_save_and_backup)".
 
-Se o seu site tiver uma base de dados, consulte o nosso manual "[Importar um backup para a base de dados de um alojamento web](../partilhado_guia_de_importacao_de_uma_base_de_dados_mysql/#restaurar-um-backup-a-partir-da-area-de-cliente)" para a restaurar para um estado anterior.
+Se o seu site tiver uma base de dados, consulte o nosso manual "[Importar um backup para a base de dados de um alojamento web](/pages/web/hosting/sql_importing_mysql_database#restaurar-um-backup-a-partir-da-area-de-cliente)" para a restaurar para um estado anterior.
 
-Por fim, se o erro 500 aparecer após uma atualização da versão PHP do seu alojamento, consulte o nosso guia "[Mudar a versão de PHP do alojamento web](../configurar_o_php_num_alojamento_web_alojamentos_2014_ovh/)" para voltar à configuração anterior.
+Por fim, se o erro 500 aparecer após uma atualização da versão PHP do seu alojamento, consulte o nosso guia "[Mudar a versão de PHP do alojamento web](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014)" para voltar à configuração anterior.
 
 ## Saiba mais <a name="gofurther"></a>
 

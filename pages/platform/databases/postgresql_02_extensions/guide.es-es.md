@@ -1,15 +1,10 @@
 ---
 title: PostgreSQL - Available extensions
-slug: postgresql/extensions
 excerpt: List of available PostgreSQL extensions
-section: PostgreSQL - Guides
-order: 020
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/extensions/'
-updated: 2023-04-11
+    canonical: '/pages/platform/databases/postgresql_02_extensions'
+updated: 2023-06-22
 ---
-
-**Last updated April 11<sup>th</sup>, 2023**
 
 ## List of available extensions
 
@@ -53,6 +48,7 @@ Also some extensions may require disconnecting the client and reconnecting befor
 | `pgrouting`                    | <https://github.com/pgRouting/pgrouting>                               |                                                                                                                                                 |
 | `pgrowlocks`                   | <https://www.postgresql.org/docs/current/pgrowlocks.html>              |                                                                                                                                                 |
 | `pgstattuple`                  | <https://www.postgresql.org/docs/current/pgstattuple.html>             | PostgreSQL 11 and later                                                                                                                         |
+| `pgvector`                     | <https://github.com/pgvector/pgvector>                                 | PostgreSQL 13 and later                                                                                                                         |
 | `plcoffee`                     | <https://pgxn.org/dist/plv8/>                                          | Available up to PostgreSQL v10                                                                                                                  |
 | `plls`                         | <https://pgxn.org/dist/plv8/>                                          | Available up to PostgreSQL v10                                                                                                                  |
 | `plperl`                       | <https://www.postgresql.org/docs/current/plperl.html>                  |                                                                                                                                                 |

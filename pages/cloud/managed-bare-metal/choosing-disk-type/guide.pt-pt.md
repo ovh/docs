@@ -1,11 +1,8 @@
 ---
 title: Escolher o formato do disco
-slug: escolher-o-formato-do-disco
 routes:
-    canonical: 'https://docs.ovh.com/pt/private-cloud/escolher-o-formato-do-disco/'
+    canonical: '/pages/cloud/private-cloud/quel_format_de_disque_choisir'
 excerpt: Descubra os diferentes tipos de formatos de disco
-section: Gestão das máquinas virtuais
-order: 04
 updated: 2020-11-18
 ---
 

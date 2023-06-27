@@ -1,10 +1,7 @@
 ---
 title: Configurer le Load Balancer NSX-v Edge
-slug: configurer-le-load-balancer-nsx-edge
 excerpt: Utiliser le service d'équilibrage de charge du NSX-v Edge
 legacy_guide_number: '7766591'
-section: NSX-v
-order: 05
 updated: 2021-11-29
 ---
 
@@ -18,7 +15,7 @@ La fonctionnalité d'équilibrage de charge NSX permet de répartir la charge du
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir des identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-- Avoir déployé une [NSX Edge Services Gateway](https://docs.ovh.com/fr/private-cloud/comment-deployer-une-nsx-edge-gateway/)
+- Avoir déployé une [NSX Edge Services Gateway](/pages/cloud/private-cloud/nsx_deploying_edge_gateway)
 
 ## En pratique
 

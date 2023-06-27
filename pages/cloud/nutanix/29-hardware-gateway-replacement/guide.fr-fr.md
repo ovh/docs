@@ -1,9 +1,6 @@
 ---
 title: Remplacer la passerelle OVHgateway par un serveur dédié 
-slug: hardware-gateway-replacement
 excerpt: "Comment remplacer votre passerelle intégrée à Nutanix par un serveur dédié pour augmenter la bande passante"
-section: Réseau et sécurité
-order: 10
 updated: 2022-12-05
 ---
 

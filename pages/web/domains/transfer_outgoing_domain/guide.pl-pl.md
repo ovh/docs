@@ -1,9 +1,6 @@
 ---
 title: Transfer domeny do innego operatora
-slug: transfer_wychodzacy_domeny_globalnej_lub_geograficznej
 excerpt: Dowiedz się, jak wykonać transfer domeny z OVHcloud do wybranego operatora
-section: Transfer
-order: 04
 updated: 2023-03-10
 ---
 
@@ -25,9 +22,9 @@ Aby zapobiec przenoszeniu domeny bez zezwolenia, domeny są zazwyczaj blokowane 
 >
 > Jeśli domena ma pozostać zarejestrowana w OVHcloud, ale została zmieniona w sposób umożliwiający zarządzanie domeną lub jej własność, transfer wychodzący z domeny nie jest właściwą procedurą.
 >
-> Aby przenieść zarządzanie domeną na inne konto klienta OVHcloud, należy zmienić kontakt. Procedurę opisano w [tym przewodniku](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/).
+> Aby przenieść zarządzanie domeną na inne konto klienta OVHcloud, należy zmienić kontakt. Procedurę opisano w [tym przewodniku](/pages/account/customer/managing_contacts).
 >
-> Jeśli chcesz zmienić również **właściciela** domeny, musisz to zrobić **przed** zmianą kontaktów domeny. W tym celu postępuj zgodnie z instrukcjami zawartymi w przewodniku OVHcloud dotyczącym [zmiany właściciela domen](https://docs.ovh.com/pl/domains/zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz/).
+> Jeśli chcesz zmienić również **właściciela** domeny, musisz to zrobić **przed** zmianą kontaktów domeny. W tym celu postępuj zgodnie z instrukcjami zawartymi w przewodniku OVHcloud dotyczącym [zmiany właściciela domen](/pages/web/domains/trade_domain).
 >
 
 ## Wymagania początkowe
@@ -39,7 +36,7 @@ Aby zapobiec przenoszeniu domeny bez zezwolenia, domeny są zazwyczaj blokowane 
 
 > [!primary]
 >
-> Jeśli jesteś **właścicielem** domeny, ale zarządzanie nią w Panelu klienta OVHcloud jest niedostępne, zarówno poprzez własny dostęp, jak i poprzez kontakt administracyjny domeny, zapoznaj się z [tym przewodnikiem](../../customer/zarzadzanie_kontaktami/#przypadek-wlasciciela-domeny).
+> Jeśli jesteś **właścicielem** domeny, ale zarządzanie nią w Panelu klienta OVHcloud jest niedostępne, zarówno poprzez własny dostęp, jak i poprzez kontakt administracyjny domeny, zapoznaj się z [tym przewodnikiem](/pages/account/customer/managing_contacts#przypadek-wlasciciela-domeny).
 >
 
 ## W praktyce
@@ -107,7 +104,7 @@ Aby uzyskać więcej informacji, skontaktuj się z nowym operatorem.
 
 ## Sprawdź również
 
-[Transfer domeny.co.uk wychodzący](https://docs.ovh.com/pl/domains/transfer_wychodzacy_domeny_couk/)
+[Transfer domeny.co.uk wychodzący](/pages/web/domains/transfer_outgoing_couk)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
 

@@ -1,10 +1,7 @@
 ---
 title: Hosted Private Cloud VMware Lifecycle Policy
-slug: lifecycle-policy
 excerpt: 'Lifecycle policy for Hosted Private Cloud powered by VMware'
-section: FAQ
-order: 3
-updated: 2023-06-13
+updated: 2023-06-26
 ---
 
 
@@ -120,7 +117,7 @@ To know the lifecycle policy of VMware products, please refer to the editor's pu
 You can check your version of NSX-v in the "Networking and security" section of vSphere, in the "about NSX" tab.<br>
 If your version is earlier than 6.4.12, please reach out to the support teams to plan an upgrade.
 
-VMware extended the support of NSX Datacenter for vSphere on OVHcloud infrastructures until 15/01/2023. If you are using NSX, you have to plan your migration to NSX Transformers before this date (15/01/2023).
+VMware extended the support of NSX Datacenter for vSphere on OVHcloud infrastructures until 15/01/2024. If you are using NSX, you have to plan your migration to NSX (NSX-T) before this date (15/01/2024).
 
 ### Veeam Backup & Replication lifecycle policy
 

@@ -1,9 +1,7 @@
 ---
 title: Informationen zur Hosted Private Cloud Abrechnung
 excerpt: Details zur Funktionsweise der Hosted Private Cloud Abrechnung.
-slug: informationen_zur_dedicated_cloud_abrechnung
 legacy_guide_number: g677
-section: FAQ
 updated: 2018-03-26
 ---
 

@@ -1,11 +1,8 @@
 ---
 title: Możliwości techniczne
-slug:  mozliwosci-techniczne
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/mozliwosci-techniczne/'
+    canonical: '/pages/cloud/private-cloud/hpc_limits'
 excerpt: 'Poznaj możliwości i ograniczenia techniczne rozwiązań Managed Bare Metal dostarczanych przez OVHcloud'
-section: FAQ
-order: 2
 updated: 2020-10-27
 ---
 

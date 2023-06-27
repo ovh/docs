@@ -1,9 +1,6 @@
 ---
 title: Gestisci le tue istanze Public Cloud tramite Horizon
-slug: gestire-istanze-public-cloud
 excerpt: Come gestire le tue istanze attraverso l'interfaccia Horizon
-section: Gestione da Horizon
-order: 04
 updated: 2022-01-25
 ---
 
@@ -21,8 +18,8 @@ Oltre allo Spazio Cliente OVHcloud, è possibile gestire anche i progetti Public
 
 ## Prerequisiti
 
-- Aver creato un'istanza Public Cloud dallo [Spazio Cliente OVHcloud](../primi-passi-public-cloud/) o tramite l'[interfaccia Horizon](https://docs.ovh.com/it/public-cloud/crea_unistanza_con_horizon/).
-- [Aver creato una chiave SSH](../creare-chiave-ssh/).
+- Aver creato un'istanza Public Cloud dallo [Spazio Cliente OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps) o tramite l'[interfaccia Horizon](/pages/platform/public-cloud/create_instance_in_horizon).
+- [Aver creato una chiave SSH](/pages/platform/public-cloud/public-cloud-first-steps#step-1-crea-chiavi-ssh/).
 
 ## Procedura
 
@@ -49,7 +46,7 @@ L’interfaccia mostra la tua infrastruttura e diverse informazioni relative all
 
 **Launch Instance** 
 
-Questa opzione permette di creare un'istanza. Per maggiori informazioni, consulta [questa guida](https://docs.ovh.com/it/public-cloud/crea_unistanza_con_horizon/).
+Questa opzione permette di creare un'istanza. Per maggiori informazioni, consulta [questa guida](/pages/platform/public-cloud/create_instance_in_horizon).
 
 **Delete Instances**
 
@@ -63,7 +60,7 @@ Questo menu ti permette di eseguire queste operazioni su una o più istanze. Per
 - Shut Off Instances: questa opzione permette di sospendere una o più istanze.
 - Soft Reboot Instance: questa opzione ti permette di eseguire un reavvio software su una o più istanze.
 
-**Create Snapshot**: Questa opzione permette di creare uno Snapshot (istantaneo) dell'istanza. Per maggiori informazioni, consulta [questa guida](https://docs.ovh.com/it/public-cloud/gestisci_gli_snapshot_di_unistanza_con_horizon/).
+**Create Snapshot**: Questa opzione permette di creare uno Snapshot (istantaneo) dell'istanza. Per maggiori informazioni, consulta [questa guida](/pages/platform/public-cloud/managing_snapshots_in_horizon).
 
 ### Modifica un'istanza
 
@@ -71,9 +68,9 @@ Nell'interfaccia di gestione dell'istanza, seleziona l'opzione che preferisci ne
 
 ![public-cloud](images/list2022.png){.thumbnail}
 
-- Attach Interface: questa opzione permette di aggiungere una o più interfacce private alla tua istanza tramite la VLAN. Per maggiori informazioni, consulta [questa sezione](https://docs.ovh.com/it/public-cloud/public-cloud-vrack/#aggiunta-di-uninterfaccia-privata) della guida.
-- Detach Interface: questa opzione permette di eliminare un'interfaccia associata a un'istanza. Per maggiori informazioni, consulta [questa sezione](https://docs.ovh.com/it/public-cloud/public-cloud-vrack/#elimina-uninterfaccia-privata) della guida.
-- Edit Instance: questa opzione permette di modificare il nome dell'istanza e i [gruppi di sicurezza](https://docs.ovh.com/it/public-cloud/configure-security-group-horizon/).
+- Attach Interface: questa opzione permette di aggiungere una o più interfacce private alla tua istanza tramite la VLAN. Per maggiori informazioni, consulta [questa sezione](/pages/platform/network-services/getting-started-07-creating-vrack#aggiunta-di-uninterfaccia-privata) della guida.
+- Detach Interface: questa opzione permette di eliminare un'interfaccia associata a un'istanza. Per maggiori informazioni, consulta [questa sezione](/pages/platform/network-services/getting-started-07-creating-vrack#elimina-uninterfaccia-privata) della guida.
+- Edit Instance: questa opzione permette di modificare il nome dell'istanza e i [gruppi di sicurezza](/pages/platform/public-cloud/setup_security_group).
 
 > [!warning]
 > Le opzioni in rosso indicano la possibilità di perdita di dati durante il processo. Prima di apportare modifiche all'istanza, assicurati di disporre sempre di un backup dei dati.
@@ -157,7 +154,7 @@ Infine clicca su `Rebuild Instance`{.action}. Questa operazione potrebbe richied
 
 ### Sospendi o metti in pausa un'istanza (Shelve or pause an instance)
 
-Per sapere come sospendere o mettere in pausa un'istanza, clicca [qui](https://docs.ovh.com/it/public-cloud/sospendi_o_metti_in_pausa_unistanza/) per consultare la guida specifica a questo metodo.
+Per sapere come sospendere o mettere in pausa un'istanza, clicca [qui](/pages/platform/public-cloud/suspend_or_pause_an_instance) per consultare la guida specifica a questo metodo.
 
 ### Accedi alla console dell'istanza <a name="console"></a>
 
@@ -166,7 +163,7 @@ In caso di perdita dell'accesso all'istanza a causa di una configurazione scorre
 > [!primary]
 >
 > Puoi accedere direttamente alla tua istanza tramite la console VNC. Per contro, è necessario configurare una password per l'utente root.
-> Per maggiori informazioni, consulta [questa guida](https://docs.ovh.com/it/public-cloud/imposta_una_password_amministratore/).
+> Per maggiori informazioni, consulta [questa guida](/pages/platform/public-cloud/become_root_and_change_password).
 > La console VNC può essere utilizzata anche come primo approccio in caso di malfunzionamento, per diagnosticare grazie all'analisi della fase di avvio dell'istanza.
 > 
 

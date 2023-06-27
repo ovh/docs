@@ -1,8 +1,6 @@
 ---
 title: Enviar SMS desde el área de cliente
-slug: enviar-sms-desde-el-area-de-cliente
 excerpt: Cómo enviar SMS fácilmente desde el área de cliente de OVHcloud
-section: Enviar SMS
 updated: 2022-08-05
 ---
 
@@ -40,10 +38,10 @@ En el desplegable `Remitente`{.action} (1), seleccione un número corto que perm
 Introduzca a continuación el número del destinatario (2) en formato internacional (+346XXXXXXXX). También es posible enviar SMS a varios destinatarios. Puede hacerlo de dos formas diferentes:
 
 - Mediante una lista de destinatarios en formato .CSV con el botón `Lista de destinatarios`{.action}.
-Para más información, puede consultar nuestra guía relativa a las [listas de destinatarios de SMS](../lista-de-destinatarios-sms).
+Para más información, puede consultar nuestra guía relativa a las [listas de destinatarios de SMS](/pages/telecom/sms/liste_de_destinataire_sms).
 
 - Mediante una agenda de contactos (3). Puede crearla directamente en el área de cliente o importarla a través de un archivo .CSV o .TXT.
-Para más información, puede consultar nuestra guía relativa a las [agendas de contactos de SMS](../agenda-de-contactos-de-sms/).
+Para más información, puede consultar nuestra guía relativa a las [agendas de contactos de SMS](/pages/telecom/sms/gerer_mes_carnets_dadresses_sms).
 
 ### 2. Escribir un SMS
 

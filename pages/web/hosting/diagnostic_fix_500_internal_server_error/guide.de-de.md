@@ -1,9 +1,6 @@
 ---
 title: 'Beheben des Fehlers “500 Internal Server Error”'
 excerpt: Erfahren Sie hier, welche Maßnahmen Sie bei einem Fehlercode 500 anwenden können
-slug: webhosting_bei_einem_fehler_500_internal_server_error
-section: 'Diagnose'
-order: 06
 updated: 2023-05-16
 ---
 
@@ -33,7 +30,7 @@ Diese Fehler können auch durch Updates entstehen, die **automatisch** von Kompo
 
 - Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
-- Sie haben keine ausstehenden [Zahlungen](https://docs.ovh.com/de/billing/ovh-rechnungen-verwalten/#pay-bills) und [Verlängerungen](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
+- Sie haben keine ausstehenden [Zahlungen](/pages/account/billing/invoice_management#pay-bills) und [Verlängerungen](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
 
 
 ## In der praktischen Anwendung
@@ -42,24 +39,24 @@ Bevor Sie fortfahren, überprüfen Sie Ihre Website auf verschiedenen Geräten u
 
 Vereinfacht ausgedrückt besteht eine Webseite aus **Quellcode** (zum Beispiel .php-Dateien, verbunden mit einer Datenbank) und zusätzlichen Daten. Wir raten Ihnen dringend, Backups Ihrer Daten zu erstellen, bevor Sie weitere Maßnahmen ergreifen:
 
-- Folgen Sie [dieser Anleitung](../verbindung-ftp-speicher-webhosting/), um eine Kopie aller Dateien Ihrer Website abzurufen.
-- Wenn Ihre Website eine Datenbank verwendet, können Sie zusätzlich [diese Anleitung](../webhosting_hilfe_zum_export_von_datenbanken/) zum Abruf einer Kopie konsultieren.
+- Folgen Sie [dieser Anleitung](/pages/web/hosting/ftp_connection), um eine Kopie aller Dateien Ihrer Website abzurufen.
+- Wenn Ihre Website eine Datenbank verwendet, können Sie zusätzlich [diese Anleitung](/pages/web/hosting/sql_database_export) zum Abruf einer Kopie konsultieren.
 
 Um einen "Fehler 500" zu beheben, können Sie Ihre Website aus einem Backup [wiederherstellen](#restore). Es ist jedoch vorzuziehen, eine eingehende Diagnose durchzuführen, um den genauen Ursprung des Fehlers zu ermitteln.
 
 ### Die Logs Ihres Hostings überprüfen
 
-Lesen Sie zuerst [diese Anleitung](../webhosting_die_statistiken_und_logs_meiner_website_einsehen/), um die Ursache des Fehlercodes 500 in den Logs Ihres Hostings zu ermitteln.
+Lesen Sie zuerst [diese Anleitung](/pages/web/hosting/logs_and_statistics), um die Ursache des Fehlercodes 500 in den Logs Ihres Hostings zu ermitteln.
 
 ### Ihre Website in den Entwicklermodus versetzen
 
-Um mögliche PHP-Fehler anzuzeigen, versetzen Sie Ihr Hosting anschließend mithilfe [dieser Instruktionen](../die_laufzeitumgebung_meines_webhostings_andern/#schritt-2-webhosting-konfiguration-bearbeiten) in den Entwicklermodus (`development`).
+Um mögliche PHP-Fehler anzuzeigen, versetzen Sie Ihr Hosting anschließend mithilfe [dieser Instruktionen](/pages/web/hosting/ovhconfig_modify_system_runtime#schritt-2-webhosting-konfiguration-bearbeiten) in den Entwicklermodus (`development`).
 
 ### Die .htaccess Datei testen
 
 Ein "Fehler 500" kann auf eine Anomalie in einer `.htaccess` Datei zurückzuführen sein. Diese Datei befindet sich in der Regel auf der ersten Ebene des Wurzelverzeichnisses im FTP-Speicherplatz Ihres Hostings.
 
-Um dies zu überprüfen, [verbinden Sie sich via FTP mit Ihrem Hosting](../verbindung-ftp-speicher-webhosting/).
+Um dies zu überprüfen, [verbinden Sie sich via FTP mit Ihrem Hosting](/pages/web/hosting/ftp_connection).
 
 Benennen Sie diese Datei dann in `.htaccess.old` um und aktualisieren Sie Ihre Website im Browser.
 
@@ -71,9 +68,9 @@ Jede Datei und jeder Ordner Ihres Quellcodes hat eine bestimmte Stufe von Lese-,
 
 Ein "Fehler 500" kann mit einem falschen Level an Zugriffsrechten auf Ordner oder Dateien Ihrer Seite zusammenhängen.
 
-Um auf diese Dateien zuzugreifen, [verbinden Sie sich via FTP mit Ihrem Hosting](../verbindung-ftp-speicher-webhosting/).
+Um auf diese Dateien zuzugreifen, [verbinden Sie sich via FTP mit Ihrem Hosting](/pages/web/hosting/ftp_connection).
 
-Die Anleitung "[Verwendung von FileZilla](../webhosting_hilfe_zur_verwendung_von_filezilla/#datei-und-ordnerrechte)" hilft Ihnen anschließend, folgende Elemente zu überprüfen:
+Die Anleitung "[Verwendung von FileZilla](/pages/web/hosting/ftp_filezilla_user_guide#datei-und-ordnerrechte)" hilft Ihnen anschließend, folgende Elemente zu überprüfen:
 
 - Das **Root**-Verzeichnis Ihres Hostings (es handelt sich um das als `/` oder `.` angezeigte Verzeichnis in Ihrem FTP-Programm) müssen die Berechtigungen auf `705` gesetzt sein (Standardberechtigungen). Wir empfehlen Ihnen, diese Berechtigungen nicht zu ändern.
 - Verzeichnisse müssen `705` haben.
@@ -83,7 +80,7 @@ Die Anleitung "[Verwendung von FileZilla](../webhosting_hilfe_zur_verwendung_von
 
 Aus Sicherheitsgründen verschleiert Ihre Website alle technischen Details über einen Fehler vom Typ "500".
 
-Wenn Sie oder Ihr Entwickler Zugang zu diesen Informationen haben möchten, können Sie sich [über SSH mit Ihrer Website verbinden](../webhosting_ssh_auf_ihren_webhostings/) (nur verfügbar mit einem [Webhosting der Reihe Pro, Performance oder Cloud Web](https://www.ovhcloud.com/de/web-hosting/)).
+Wenn Sie oder Ihr Entwickler Zugang zu diesen Informationen haben möchten, können Sie sich [über SSH mit Ihrer Website verbinden](/pages/web/hosting/ssh_on_webhosting) (nur verfügbar mit einem [Webhosting der Reihe Pro, Performance oder Cloud Web](https://www.ovhcloud.com/de/web-hosting/)).
 
 ### Den Zustand der Datenbank überprüfen
 
@@ -91,7 +88,7 @@ Für alle "Fehler 500", die mit der Datenbank Ihrer Website in Zusammenhang steh
 
 ### Ihre Website auf einen vorherigen Zustand zurücksetzen <a name="restore"></a>
 
-Wenn der "Fehler 500" nach dem Ändern der PHP-Konfiguration Ihres Webhostings aufgetreten ist, kehren Sie zur vorherigen Einstellung zurück, indem Sie [unserer Anleitung folgen](../konfiguration_von_php_fur_ein_ovh_webhosting_2014/).
+Wenn der "Fehler 500" nach dem Ändern der PHP-Konfiguration Ihres Webhostings aufgetreten ist, kehren Sie zur vorherigen Einstellung zurück, indem Sie [unserer Anleitung folgen](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014).
 
 > [!warning]
 >
@@ -100,9 +97,9 @@ Wenn der "Fehler 500" nach dem Ändern der PHP-Konfiguration Ihres Webhostings a
 > Die Wiederherstellung des Quellcodes Ihrer Website wirkt sich auf alle Websites auf Ihrem OVHcloud Webhosting aus.
 >
 
-Um den Quellcode Ihrer Website wiederherzustellen, lesen Sie unsere Anleitung "[Den Speicherplatz Ihres Webhostings wiederherstellen](../webhosting-speicherplatz-wiederherstellen/)". Beachten Sie, dass diese Operation allein keine dauerhafte Lösung darstellt.
+Um den Quellcode Ihrer Website wiederherzustellen, lesen Sie unsere Anleitung "[Den Speicherplatz Ihres Webhostings wiederherstellen](/pages/web/hosting/ftp_save_and_backup)". Beachten Sie, dass diese Operation allein keine dauerhafte Lösung darstellt.
 
-Wenn Ihre Website eine Datenbank nutzt, lesen Sie unsere Anleitung "[Backup in eine Webhosting-Datenbank importieren](../webhosting_import_einer_mysql-datenbank/#backup-uber-das-kundencenter-wiederherstellen)", um diese auf einen früheren Zustand zurückzusetzen.
+Wenn Ihre Website eine Datenbank nutzt, lesen Sie unsere Anleitung "[Backup in eine Webhosting-Datenbank importieren](/pages/web/hosting/sql_importing_mysql_database#backup-uber-das-kundencenter-wiederherstellen)", um diese auf einen früheren Zustand zurückzusetzen.
 
 
 ## Weiterführende Informationen <a name="gofurther"></a>

@@ -1,9 +1,6 @@
 ---
 title: Gérer mes moyens de paiement
-slug: manage-payment-methods
 excerpt: Apprenez à ajouter et gérer vos moyens de paiement au sein de l’espace client OVHcloud
-section: Facturation
-order: 02
 updated: 2022-05-18
 ---
 
@@ -92,7 +89,7 @@ Si vous ne souhaitez plus utiliser l'un de vos moyens de paiement, vous pouvez l
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
-Si vous souhaitez supprimer l'intégralité de vos moyens de paiement, l'ensemble de vos services doit être en [renouvellement manuel](https://docs.ovh.com/ca/fr/billing/renouvellement-automatique-ovh/#le-renouvellement-manuel).
+Si vous souhaitez supprimer l'intégralité de vos moyens de paiement, l'ensemble de vos services doit être en [renouvellement manuel](/pages/account/billing/how_to_use_automatic_renewal#le-renouvellement-manuel).
 
 #### Supprimer un moyen de paiement via les API OVHcloud
 
@@ -114,7 +111,7 @@ Supprimez ensuite le moyen de paiement en utilisant l’ID que vous avez obtenu 
 
 > [!primary]
 >
-> Pour plus d'informations, consultez le guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/).
+> Pour plus d'informations, consultez le guide [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps).
 >
 > En cas de difficultés pour identifier vos moyens de paiement via les API OVHcloud, utilisez la fonction `Modifier la description`{.action} (bouton `...`{.action} à droite de votre écran) dans la partie [Moyens de paiement](#payment_methods) de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 >
@@ -125,7 +122,7 @@ Supprimez ensuite le moyen de paiement en utilisant l’ID que vous avez obtenu 
 
 Le *compte prépayé* est présent sur votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) dès sa création. Il vous permet de créditer à l'avance votre compte client et d'utiliser ces fonds pour le règlement de vos commandes et de vos factures de renouvellement.
 
-En créditant régulièrement votre compte, vous vous assurerez ainsi que le [renouvellement automatique](https://docs.ovh.com/ca/fr/billing/renouvellement-automatique-ovh/) de vos services ne sera jamais interrompu pour défaut de paiement.
+En créditant régulièrement votre compte, vous vous assurerez ainsi que le [renouvellement automatique](/pages/account/billing/how_to_use_automatic_renewal) de vos services ne sera jamais interrompu pour défaut de paiement.
 
 Pour cela, il vous suffit de vous rendre dans la section `Moyens de paiement` de votre espace client :
 

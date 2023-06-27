@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Adicionar conteúdo dinâmico a uma página web estática gerada com Cecil"
-slug: static-site-generator-cecil-use-api
 excerpt: "Saiba como adicionar uma chamada a uma API externa a partir da sua página web estática"
-section: 'Tutoriais'
-order: 031
 updated: 2023-01-16
 ---
 
@@ -30,7 +27,7 @@ Este tutorial explica como utilizar o gerador de site [Cecil](https://cecil.app)
 
 - Ter um [serviço de alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) com acesso SSH. Este acesso permite instalar, em linha de comandos, uma ou várias soluções alternativas às propostas por defeito nas nossas ofertas de alojamento web.
 - Estar familiarizado com a introdução em linha de comandos.
-- Ter instalado e configurado a aplicação **Cecil** no seu alojamento (consulte o nosso tutorial sobre [a instalação e a configuração do Cecil](https://docs.ovh.com/pt/hosting/install-configure-cecil/)).
+- Ter instalado e configurado a aplicação **Cecil** no seu alojamento (consulte o nosso tutorial sobre [a instalação e a configuração do Cecil](/pages/web/hosting/static_website_installation_cecil)).
 
 ## Instruções
 
@@ -46,7 +43,7 @@ As etapas são as seguintes:
 
 ### Criar uma nova página
 
-Prepare o seu ambiente ligando-se através de SSH ao seu alojamento web e adira ao tutorial "[Instalar e configurar Cecil](https://docs.ovh.com/pt/hosting/install-configure-cecil/)" para instalar a sua aplicação **Cecil** num diretório dedicado.
+Prepare o seu ambiente ligando-se através de SSH ao seu alojamento web e adira ao tutorial "[Instalar e configurar Cecil](/pages/web/hosting/static_website_installation_cecil)" para instalar a sua aplicação **Cecil** num diretório dedicado.
 
 Crie um diretório e coloque-se dentro:
 

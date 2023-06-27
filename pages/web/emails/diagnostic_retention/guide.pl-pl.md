@@ -1,9 +1,6 @@
 ---
 title: Przywróć usunięte elementy konta e-mail
-slug: email-retention
 excerpt: Dowiedz się, jak przywrócić usunięte elementy z konta e-mail poprzez Webmail (OWA)
-section: 'Diagnostyka'
-order: 02
 updated: 2022-02-08
 ---
 
@@ -22,7 +19,7 @@ Wykreśliłeś przez przypadek jeden lub kilka elementów (e-mail, kontakt, spot
 ## Wymagania początkowe
  
 - Posiadanie rozwiązania poczty elektronicznej OVHcloud:
-    - **MX Plan** ([tylko nowa wersja](https://docs.ovh.com/pl/emails/hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/)) proponowany w naszej [ofercie hostingu www](https://www.ovhcloud.com/pl/web-hosting/) zawartej w darmowym [hostingu Start10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/)
+    - **MX Plan** ([tylko nowa wersja](/pages/web/emails/email_generalities)) proponowany w naszej [ofercie hostingu www](https://www.ovhcloud.com/pl/web-hosting/) zawartej w darmowym [hostingu Start10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/)
     - lub [**Hosted Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
     - lub [**E-mail Pro**](https://www.ovhcloud.com/pl/emails/email-pro/)
 - Dane do logowania do odpowiedniego konta e-mail

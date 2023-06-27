@@ -1,9 +1,6 @@
 ---
 title: 'Berechtigungen für einen E-Mail Account übertragen'
 excerpt: 'Hier erfahren Sie, wie Sie einem anderen Account Berechtigungen für Ihren E-Mail Account zuweisen.'
-slug: exchange_2013_send_as_versand_als
-section: Exchange Account-Funktionen
-order: 03
 updated: 2020-10-24
 ---
 
@@ -66,11 +63,11 @@ Nun, da die Delegation eingerichtet ist, können Sie die vergebenen Berechtigung
 
 Die Vorgehensweise für die Nutzung variiert je nach den vergebenen Rechten und der Software bzw. dem Webinterface, das Sie für den Zugang zu Ihrem E-Mail Account verwenden. Folgen Sie dieser Anleitung deshalb entsprechend der Berechtigungen, die Sie vergeben haben.
 
-- [Zugangsrechte nutzen](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2013_send_as_versand_als/#21-zugangsrechte-nutzen){.external}
+- [Zugangsrechte nutzen](/pages/web/microsoft-collaborative-solutions/feature_delegation#21-zugangsrechte-nutzen){.external}
 
-- [„Senden als“-Berechtigung nutzen](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2013_send_as_versand_als/#22-senden-als-berechtigung-nutzen){.external}
+- [„Senden als“-Berechtigung nutzen](/pages/web/microsoft-collaborative-solutions/feature_delegation#22-senden-als-berechtigung-nutzen){.external}
 
-- [„Senden im Auftrag von“-Berechtigung nutzen](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2013_send_as_versand_als/#23-senden-im-auftrag-von-berechtigung-nutzen){.external}
+- [„Senden im Auftrag von“-Berechtigung nutzen](/pages/web/microsoft-collaborative-solutions/feature_delegation#23-senden-im-auftrag-von-berechtigung-nutzen){.external}
 
 > [!warning]
 >

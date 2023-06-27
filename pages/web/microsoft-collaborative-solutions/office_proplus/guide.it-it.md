@@ -1,9 +1,6 @@
 ---
 title: Utilizza il desktop remoto con Microsoft 365 aps
-slug: office365-proplus-desktop-remoto
 excerpt: Come installare e utilizzare Microsoft 365 aps su un desktop remoto (RDS) o un computer condiviso
-section: Office
-order: 04
 updated: 2021-09-06
 ---
 

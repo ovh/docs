@@ -1,9 +1,6 @@
 ---
 title: Ajouter une nouvelle passerelle Tier-1 Gateway dans NSX
-slug: nsx-add-new-tier1-gateway
 excerpt: Découvrez comment ajouter une passerelle de type Tier-1 Gateway dans votre configuration NSX
-section: NSX
-order: 10
 updated: 2023-02-27
 ---
 
@@ -32,7 +29,7 @@ OVHcloud vous fournit NSX avec deux passerelles, une passerelle de type nord-sud
 >
 > Ne le faites pas car certaines options ne sont pas disponibles et vous ne pourrez pas faire fonctionner ces passerelles correctement. 
 
-Pour plus d'informations sur NSX chez OVHcloud, consultez le guide « [Premiers pas avec NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-first-steps/) ».
+Pour plus d'informations sur NSX chez OVHcloud, consultez le guide « [Premiers pas avec NSX](/pages/cloud/private-cloud/nsx-01-first-steps) ».
 
 ## En pratique
 
@@ -103,7 +100,7 @@ Votre nouveau segment est créé et il est relié à votre nouvelle passerelle *
 
 Le segment créé est de type Overlay mais il est possible d'ajouter un segment de type VLAN et de le connecter à votre nouvelle passerelle.
 
-Aidez-vous du guide sur la [gestion des segments dans NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-segment-management/) pour ajouter une nouvelle machine virtuelle à votre nouveau segment. 
+Aidez-vous du guide sur la [gestion des segments dans NSX](/pages/cloud/private-cloud/nsx-02-segment-management) pour ajouter une nouvelle machine virtuelle à votre nouveau segment. 
 
 Cliquez ensuite sur `Network Topology`{.action}.
 
@@ -111,9 +108,9 @@ Cliquez ensuite sur `Network Topology`{.action}.
 
 ## Aller plus loin
 
-[Premiers pas avec NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-first-steps/)
+[Premiers pas avec NSX](/pages/cloud/private-cloud/nsx-01-first-steps)
 
-[Gestion des segments dans NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-segment-management/)
+[Gestion des segments dans NSX](/pages/cloud/private-cloud/nsx-02-segment-management)
 
 [Documentation VMware pour le rajout d'une passerelle Tier-1 Gateway](https://docs.vmware.com/fr/VMware-NSX-T-Data-Center/3.2/administration/GUID-EEBA627A-0860-477A-95A7-7645BA562D62.html)
 

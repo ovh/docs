@@ -1,10 +1,8 @@
 ---
 title: 'Aggiungere una risorsa oraria'
-slug: aggiungere-risorsa-oraria
 routes:
     canonical: 'https://docs.ovh.com/it/private-cloud/aggiungere-risorsa-oraria/'
 excerpt: 'Come aggiungere risorse con fatturazione oraria'
-section: 'Funzionalità OVHcloud'
 updated: 2020-12-15
 ---
 
@@ -19,7 +17,7 @@ Il servizio [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/
 ## Prerequisiti
 
 * Disporre di una soluzione [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external}
-* [Attribuire il permesso "Aggiunta di risorse"](../modificare-permessi-di-un-utente/) per il datacenter in questione all'utente dallo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
+* [Attribuire il permesso "Aggiunta di risorse"](/pages/cloud/managed-bare-metal/change-user-rights) per il datacenter in questione all'utente dallo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 * Essere connesso al client vSphere
 
 

@@ -1,9 +1,6 @@
 ---
 title: "Object Storage - Partage des responsabilités"
-slug: s3/raci-object-storage-public-cloud
-section: Informations générales
 excerpt: "RACI entre OVHcloud et le client pour l'utilisation du Object Storage Public Cloud"
-order: 030
 updated: 2023-03-20
 ---
 

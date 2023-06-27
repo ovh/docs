@@ -1,10 +1,7 @@
 ---
 title: Ressourcen einer virtuellen Maschine anpassen
 excerpt: 'Erfahren Sie hier, wie Sie Ihre virtuelle Maschine skalieren'
-slug: nderung_der_hardware-konfiguration_einer_virtuellen_maschine
 legacy_guide_number: g587
-section: Verwaltung virtueller Maschinen
-order: 3
 updated: 2020-06-25
 ---
 

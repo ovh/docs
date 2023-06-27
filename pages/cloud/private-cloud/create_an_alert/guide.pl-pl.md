@@ -1,10 +1,7 @@
 ---
 title: 'Tworzenie alertu'
 excerpt: 'Konfiguracja alertów na kliencie vSphere'
-slug: skonfiguruj_alert
-section: 'Zarządzanie wirtualnymi maszynami'
 legacy_guide_number: g599
-order: 9
 updated: 2020-07-08
 ---
 
@@ -19,7 +16,7 @@ Możliwe jest tworzenie alertów dotyczących wszystkich elementów usługi Priv
 ## Wymagania początkowe
 
 - Wykupienie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/)
-- Dostęp do [interfejsu vSphere](../polaczenie-interfejs-vsphere/)
+- Dostęp do [interfejsu vSphere](/pages/cloud/private-cloud/vsphere_interface_connexion)
 
 ## W praktyce
 

@@ -1,11 +1,8 @@
 ---
 title: Deploy di una macchina virtuale
-slug: deploy-di-una-macchina-virtuale
 routes:
-    canonical: 'https://docs.ovh.com/it/private-cloud/deploy-di-una-macchina-virtuale/'
+    canonical: '/pages/cloud/private-cloud/deploiement_d_une_machine_virtuelle'
 excerpt: Come attivare una macchina virtuale dall’interfaccia vSphere
-section: Gestione delle macchine virtuali
-order: 0
 updated: 2020-11-18
 ---
 
@@ -20,7 +17,7 @@ L’interfaccia vSphere permette di eseguire il deploy di macchine virtuali in d
 ## Prerequisiti
 
 - Disporre di un servizio [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external} attivo
-- Avere accesso all’[interfaccia vSphere](../connessione-interfaccia-vsphere/)
+- Avere accesso all’[interfaccia vSphere](/pages/cloud/managed-bare-metal/vsphere-interface)
 
 ## Procedura
 
@@ -34,8 +31,8 @@ Per effettuare l’operazione clicca con il tasto destro sul cluster in question
 
 Per creare una macchina virtuale è possibile scegliere tra diverse opzioni:
 
-- Da un file ISO, disponibile nel datastore (per importarlo, consulta la [guida di connessione in SFTP](../connessione-in-sftp/)).
-- Da un template personale o [fornito da OVHcloud](../installazione-template-ovhcloud/).
+- Da un file ISO, disponibile nel datastore (per importarlo, consulta la [guida di connessione in SFTP](/pages/cloud/managed-bare-metal/sftp-connexion)).
+- Da un template personale o [fornito da OVHcloud](/pages/cloud/managed-bare-metal/ovf_template).
 - Clonare una VM già esistente, prestando particolare attenzione agli eventuali conflitti di indirizzi IP.
 - Clonare una VM in un template per un’implementazione più rapida delle future macchine virtuali.
 - Clonare un template in un altro template, ad esempio per averlo a disposizione su diversi datastore e prevenire cali di performance durante i deploy massivi.

@@ -1,12 +1,9 @@
 ---
 title: 'Transferring a .pl domain name to OVHcloud'
-slug: transfer-my-domain-pl
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/domains/transfer-generic-domain/'
+    canonical: '/pages/web/domains/transfer_incoming_generic_domain'
 hidden: true
 excerpt: 'Find out how to transfer a .pl domain name to OVHcloud'
-section: Transfer
-order: 09
 updated: 2022-10-19
 ---
 
@@ -24,9 +21,9 @@ By transferring your domain name, you will change your registry. You can transfe
 >
 > If the domain name in question should stay registered at OVHcloud but modified in terms of its management or ownership, an outgoing domain transfer is not the appropriate procedure.
 >
-> To transfer the domain name management to another OVHcloud customer account, a **change of contacts** must be made instead. The procedure is described in [this guide](https://docs.ovh.com/gb/en/customer/managing-contacts/).
+> To transfer the domain name management to another OVHcloud customer account, a **change of contacts** must be made instead. The procedure is described in [this guide](/pages/account/customer/managing_contacts).
 >
-> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names](https://docs.ovh.com/gb/en/domains/how-to-change-domain-name-holder/) instructions.
+> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names](/pages/web/domains/trade_domain) instructions.
 >
 
 ## Requirements
@@ -82,7 +79,7 @@ Once you have unlocked your domain name and obtained your code, you can order th
 
 When you are asked to provide your transfer code, enter it in the box next to your domain name. If you do not yet have the transfer code, you can tick the box labelled `Enter transfer code at a later stage`{.action}. However, we strongly advise ensuring that you have the code to hand before you continue. Remember that the transfer will not start until a valid code has been provided.
 
-You can also complete your order with a [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}  and other OVHcloud solutions. This may be of interest to you, if you would also like to migrate your services to OVHcloud. Our guide to [Migrating your website to OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/) provides instructions on how to do this.
+You can also complete your order with a [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}  and other OVHcloud solutions. This may be of interest to you, if you would also like to migrate your services to OVHcloud. Our guide to [Migrating your website to OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh) provides instructions on how to do this.
 
 > [!warning]
 >
@@ -97,7 +94,7 @@ You can also complete your order with a [web hosting plan](https://www.ovhcloud.
 
 - By clicking `Modify configuration`{.action} in this step, you can enter the names of the DNS servers that the domain name currently uses. This way, the domain name will already be associated with these DNS servers in the OVHcloud configuration.
 
-- If you continue without performing this operation, the domain name will be provided with a new DNS zone on OVHcloud DNS servers. You may then need to [modify the DNS](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/) zone manually.
+- If you continue without performing this operation, the domain name will be provided with a new DNS zone on OVHcloud DNS servers. You may then need to [modify the DNS](/pages/web/domains/dns_zone_edit) zone manually.
 
 - In some cases, the transfer process may require additional information about the domain name owner. To add this information, click `Manage Contacts/Owner`{.action}.
 
@@ -133,6 +130,6 @@ Once the transfer procedure is complete, you can manage your domain name from th
 
 ## Go further
 
-[Migrating your website and emails to OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/)
+[Migrating your website and emails to OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh)
 
 Join our community of users on <https://community.ovh.com/en/>.

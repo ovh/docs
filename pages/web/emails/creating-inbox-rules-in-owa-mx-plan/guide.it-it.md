@@ -1,9 +1,6 @@
 ---
 title: 'Creare regole di posta in arrivo in Outlook Web App (OWA)'
-slug: creare-regole-posta-in-arrivo-in-owa
 excerpt: 'Come impostare l’inoltro delle email e creare filtri in OWA'
-section: 'Per iniziare'
-order: 05
 updated: 2020-03-11
 ---
 

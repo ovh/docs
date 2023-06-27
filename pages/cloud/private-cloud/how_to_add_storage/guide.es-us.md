@@ -1,10 +1,8 @@
 ---
 title: ¿Cómo añadir un almacenamiento? (EN)
 excerpt: Learn how to add storage to your infrastructure
-slug: como_anadir_un_almacenamiento
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/how_to_add_a_storage/'
-section: Primeros pasos
+    canonical: '/pages/cloud/private-cloud/how_to_add_storage'
 updated: 2022-02-01
 ---
 
@@ -26,7 +24,7 @@ Within your OVHcloud environment, you can add a new dedicated datastore in just 
 > [!warning]
 >
 > Adding resources through vSphere adds them as hourly resources for billing purposes. If you wish to switch them to monthly resources, it can be changed in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
-> For more info on this, check out our [Introduction to the Hosted Private Cloud Control Panel](https://docs.ovh.com/us/es/private-cloud/manager-ovh-private-cloud/)
+> For more info on this, check out our [Introduction to the Hosted Private Cloud Control Panel](/pages/cloud/private-cloud/manager_ovh_private_cloud)
 > 
 
 In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.

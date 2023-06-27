@@ -1,9 +1,6 @@
 ---
 title: Alojamento partilhado Seguimento dos emails automatizados
 excerpt: Seguimento dos seus emails enviados a partir de um website num alojamento partilhado OVHcloud
-slug: alojamento_partilhado_seguimento_dos_emails_automatizados
-section: Diagnóstico
-order: 10
 updated: 2022-10-12
 ---
 
@@ -21,7 +18,7 @@ Os e-mails automatizados são mensagens enviadas através de scripts. Geralmente
 >
 > Este guia trata principalmente dos e-mails enviados a partir de scripts situados no seu [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) com a ajuda da função "mail()" de PHP.
 >
-> Se pretender gerir os endereços de e-mail incluídos na sua oferta MX Plan ou na sua oferta de[alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}, consulte a nossa documentação sobre os [E-mails partilhados - MX Plan](https://docs.ovh.com/pt/emails/).
+> Se pretender gerir os endereços de e-mail incluídos na sua oferta MX Plan ou na sua oferta de[alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}, consulte a nossa documentação sobre os [E-mails partilhados - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -152,7 +149,7 @@ Neste caso, é obrigatória uma purga para eliminar os SPAM que aguardam envio.
 
 Para corrigir esta situação, deve realizar pelo menos as seguintes ações:
 
-- Analise os [logs do seu alojamento](https://docs.ovh.com/pt/hosting/partilhado_consultar_as_estatisticas_e_os_logs_do_meu_site/) para identificar as falhas de segurança e os ficheiros infetados.
+- Analise os [logs do seu alojamento](/pages/web/hosting/logs_and_statistics) para identificar as falhas de segurança e os ficheiros infetados.
 - Elimine ou corrija o(s) ficheiro(s)/módulo(s) malicioso(s).
 - Para os CMS (Wordpress, Joomla, Prestashop, Drupal, ...), atualize o CMS, o(s) plugin(s) e o tema associados.
 - Proteja os seus formulários de contacto com um "captcha".
@@ -222,11 +219,11 @@ $mail->Password = "YourEmailPassword";
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Consultar os logs do seu alojamento](https://docs.ovh.com/pt/hosting/partilhado_consultar_as_estatisticas_e_os_logs_do_meu_site/)
+[Consultar os logs do seu alojamento](/pages/web/hosting/logs_and_statistics)
 
-[Corrigir a página 403 Forbidden que aparece no seu site](https://docs.ovh.com/pt/hosting/diagnostico-403-forbidden/)
+[Corrigir a página 403 Forbidden que aparece no seu site](/pages/web/hosting/diagnostic_403_forbidden)
 
-[Restaurar o espaço de armazenamento FTP do seu alojamento](https://docs.ovh.com/pt/hosting/restauracao-ftp-filezilla-area-de-cliente/)
+[Restaurar o espaço de armazenamento FTP do seu alojamento](/pages/web/hosting/ftp_save_and_backup)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 

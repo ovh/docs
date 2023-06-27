@@ -1,12 +1,9 @@
 ---
 title: VMware HA (High Availability)
-slug: vmware-ha-high-availability
 excerpt: Gerir a política de reinício com a função HA
 legacy_guide_number: '2163279'
 space_key: VS
 space_name: vSphere as a Service
-section: Funcionalidades VMware vSphere
-order: 02
 updated: 2020-04-30
 ---
 
@@ -22,7 +19,7 @@ A principal função do **VMware HA** (High Availability), no caso de falha mate
 
 ## Requisitos
 
-- Estar ligado à [interface vSphere](https://docs.ovh.com/pt/private-cloud/instalar_o_vsphere_client/).
+- Estar ligado à [interface vSphere](/pages/cloud/private-cloud/vsphere_interface_connexion).
 - Ter um produto [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}.
 
 ## Instruções
@@ -38,7 +35,7 @@ Se a HA não se encontrar ativada no seu cluster, aceda ao separador `Configurar
 Clique em `Modificar`{.action} e selecione a opção para ativar a funcionalidade HA.
 
 É igualmente importante ativar o monitoramento do host. Este parâmetro permite o envio de sinais de pulsação entre os hosts ESXi, de modo a detetar uma eventual falha.
-A desativação é necessária para a realização de operações de atualização com o [Update Manager](https://docs.ovh.com/pt/private-cloud/utilizar_o_vmware_update_manager/), por exemplo. Neste caso específico, o host é isolado.
+A desativação é necessária para a realização de operações de atualização com o [Update Manager](/pages/cloud/private-cloud/vmware_update_manager), por exemplo. Neste caso específico, o host é isolado.
 
 ![Ativação HA](images/HA.png){.thumbnail}
 
@@ -94,7 +91,7 @@ Em caso de falha de um datastore devido a um estado APD (All Path Down), pode de
 
 ##### Monitorização das máquinas virtuais
 
-A monitorização das MV passa a estar disponível após a instalação das [VMware Tools](https://docs.ovh.com/pt/private-cloud/instalar_o_pacote_vmware_tools/).
+A monitorização das MV passa a estar disponível após a instalação das [VMware Tools](/pages/cloud/private-cloud/vmware_tools_install).
 Em caso de ausência de resposta através das **tools** (sinais de pulsação), a MV será automaticamente reiniciada. Esta funcionalidade dispõe de uma configuração avançada (intervalos de reinício, por exemplo).
 
 ![Monitorização das MV](images/HAparam5.PNG){.thumbnail}

@@ -1,9 +1,6 @@
 ---
 title: Gerir um grupo de licenças Microsoft 365 OVHcloud
-slug: encomendar-et-gerir-um-grupo-de-licenças-office-365-ovh
 excerpt: Saiba como subscrever uma licença Microsoft 365 e geri-la na sua Área de Cliente OVHcloud.
-section: Office
-order: 02
 updated: 2021-09-09
 ---
 

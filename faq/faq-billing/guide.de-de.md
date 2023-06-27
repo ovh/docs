@@ -36,7 +36,7 @@ Verlängern Sie Ihren Dienst nicht vor dem Ablaufdatum, wird er gesperrt und nac
 
 Den Status Ihrer Dienste überprüfen und ihre Verlängerung verwalten können Sie im Bereich `Meine Dienstleistungen`{.action} des Kundencenters.
 Nach Anmeldung auf der Seite <https://www.ovh.de/cgi-bin/order/renew.cgi> lassen sich hier Ihre Dienste manuell verlängern.
-Diese Anleitung beschreibt die Verlängerung ausführlich: [Verlängerung Ihrer OVHcloud Dienste verwalten](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/)
+Diese Anleitung beschreibt die Verlängerung ausführlich: [Verlängerung Ihrer OVHcloud Dienste verwalten](/pages/account/billing/how_to_use_automatic_renewal)
 
 ### Wie kann ich die automatische Verlängerung aktivieren?
 
@@ -45,7 +45,7 @@ Gehen Sie in den Bereich `Produkte und Dienstleistungen`{.action}, direkt zugän
 #### Tipps und Tricks
 
 Denken Sie daran, vor der Aktivierung der automatischen Verlängerung ein Zahlungsmittel anzugeben. Sollten Sie Ihre Dienste nicht bezahlen, werden diese nach 7 Tagen abgeschaltet.
-Wenn Sie detaillierte Erläuterungen wünschen, empfehlen wir Ihnen dazu die folgende Anleitung: [Verlängerung meiner Dienste verwalten](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/)
+Wenn Sie detaillierte Erläuterungen wünschen, empfehlen wir Ihnen dazu die folgende Anleitung: [Verlängerung meiner Dienste verwalten](/pages/account/billing/how_to_use_automatic_renewal)
 
 ### Wie kann ich die automatische Verlängerung deaktivieren?
 
@@ -56,7 +56,7 @@ Um einen Dienst zu kündigen, informieren Sie sich bitte hier [Wie kann ich ein
 #### Tipps und Tricks
 
 Mit der automatischen Verlängerung kann es zu keiner Unterbrechung Ihres Dienstes kommen. Sie werden bei jeder anstehenden Verlängerung jeweils 40 Tage und 15 Tage zuvor per E-Mail benachrichtigt.
-Wenn Sie detaillierte Erläuterungen wünschen, empfehlen wir Ihnen dazu die folgende Anleitung: [Verlängerung meiner Dienste verwalten](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/)
+Wenn Sie detaillierte Erläuterungen wünschen, empfehlen wir Ihnen dazu die folgende Anleitung: [Verlängerung meiner Dienste verwalten](/pages/account/billing/how_to_use_automatic_renewal)
 
 ### Wie kann ich ein Zahlungsmittel hinzufügen?
 
@@ -103,7 +103,7 @@ Bei Diensten mit automatischer Verlängerung wird der Rechnungsbetrag am Ersten 
 #### Tipps und Tricks
 
 Sie können das Zahlungsintervall Ihrer Dienstleistungen im Bereich `Meine Dienste`{.action} in Ihrem Kundencenter ändern.
-Wenn Sie detaillierte Erläuterungen wünschen, empfehlen wir Ihnen dazu die folgende Anleitung: [Verlängerung meiner Dienste verwalten](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/)
+Wenn Sie detaillierte Erläuterungen wünschen, empfehlen wir Ihnen dazu die folgende Anleitung: [Verlängerung meiner Dienste verwalten](/pages/account/billing/how_to_use_automatic_renewal)
 
 ### Welches meiner Zahlungsmittel wird belastet?
 
@@ -132,7 +132,7 @@ Wenn Sie kein Zahlungsmittel hinterlegt, aber Dienste mit automatischer Verläng
 #### Tipps und Tricks
 
 Liegen Ihnen Ihre OVHcloud Kundenkennung und Ihr Passwort vor? Sie können Ihre Rechnung begleichen.
-Weitere Informationen finden Sie ebenfalls in der folgenden Anleitung: [OVHcloud Rechnungsverwaltung - Meine Rechnungen begleichen](https://docs.ovh.com/de/billing/ovh-rechnungen-verwalten/).
+Weitere Informationen finden Sie ebenfalls in der folgenden Anleitung: [OVHcloud Rechnungsverwaltung - Meine Rechnungen begleichen](/pages/account/billing/invoice_management).
 
 ### Wie kann ich meinen Zahlungsstatus überprüfen?
 
@@ -155,7 +155,7 @@ Die Kündigung wird mit dem Ablauf der Geltungsdauer oder der Vertragslaufzeit d
 #### Gut zu wissen:
 
 Im Falle einer fehlerhaften Bestellung können Sie unter bestimmten Bedingungen von Ihrem Widerrufsrecht Gebrauch machen. Weitere Informationen finden Sie unter: Wie kann ich meine Bestellung stornieren?
-Die vollständige Dokumentation zur Kündigung aller unserer Produkte und Dienstleistungen finden Sie [hier](https://docs.ovh.com/de/billing/how-to-cancel-your-services/)
+Die vollständige Dokumentation zur Kündigung aller unserer Produkte und Dienstleistungen finden Sie [hier](/pages/account/billing/how_to_cancel_services)
 
 ### Wie kann ich die Produkt- oder Servicereferenz auf meiner Rechnung bearbeiten?
 
@@ -168,7 +168,7 @@ Für die Abrechnung der Public Cloud werden sowohl die im Voraus zu bezahlenden 
 
 #### Tipps und Tricks
 
-Lesen Sie dazu die folgende Anleitung: [Informationen zur Cloud-Abrechnung](https://docs.ovh.com/de/public-cloud/informationen-zu-cloud-abrechnungsoptionen/)
+Lesen Sie dazu die folgende Anleitung: [Informationen zur Cloud-Abrechnung](/pages/platform/public-cloud/analyze_billing)
 
 ### Wo kann ich einen Gesamtüberblick über meine Rechnungen erhalten?
 

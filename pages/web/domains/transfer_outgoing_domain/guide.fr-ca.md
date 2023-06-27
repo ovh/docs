@@ -1,9 +1,6 @@
 ---
 title: Transférer son nom de domaine OVHcloud vers un autre bureau d'enregistrement
-slug: transfert-sortant-dun-nom-de-domaine-generique-ou-geographique
 excerpt: Découvrez comment effectuer le transfert d’un nom de domaine OVHcloud vers le bureau d'enregistrement de votre choix
-section: Transfert
-order: 04
 updated: 2023-03-10
 ---
 
@@ -19,9 +16,9 @@ Le transfert d’un nom de domaine permet de changer le bureau d’enregistremen
 >
 > Si le nom de domaine en question doit rester enregistré chez OVHcloud mais modifié dans ses modalités de gestion ou de propriété, un transfert sortant de domaine n'est pas la procédure appropriée.
 >
-> Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un changement de contacts. La procédure est décrite dans [ce guide](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/).
+> Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un changement de contacts. La procédure est décrite dans [ce guide](/pages/account/customer/managing_contacts).
 >
-> Si vous devez également changer le propriétaire du nom de domaine, vous devez le faire avant de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](https://docs.ovh.com/ca/fr/domains/changement-proprietaire-domaine/).
+> Si vous devez également changer le propriétaire du nom de domaine, vous devez le faire avant de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](/pages/web/domains/trade_domain).
 >
 
 ## Prérequis
@@ -79,7 +76,7 @@ Reportez-vous aux informations communiquées par votre nouveau bureau d'enregist
 
 ## Aller plus loin
 
-[Transfert de nom de domaine .co.uk sortant](https://docs.ovh.com/ca/fr/domains/transfert-sortant-dun-nom-de-domaine-couk/)
+[Transfert de nom de domaine .co.uk sortant](/pages/web/domains/transfer_outgoing_couk)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 

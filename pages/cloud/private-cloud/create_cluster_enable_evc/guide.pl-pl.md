@@ -1,11 +1,8 @@
 ---
 title: Tworzenie klastra i aktywacja usługi EVC (EN)
-slug: create-cluster-enable-evc
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/create-cluster-enable-evc/'
+    canonical: '/pages/cloud/private-cloud/create_cluster_enable_evc'
 excerpt: Learn how to create a cluster and activate EVC mode
-section: Funkcjonalności VMware vSphere
-order: 01
 updated: 2022-02-08
 ---
 
@@ -43,7 +40,7 @@ Click `OK`{.action} when done.
 
 > [!warning]
 >
-> vSAN requires vSAN compatible hosts. Find more details [here](https://docs.ovh.com/pl/private-cloud/manager-ovh-private-cloud/) on how to order them if needed.
+> vSAN requires vSAN compatible hosts. Find more details [here](/pages/cloud/private-cloud/manager_ovh_private_cloud) on how to order them if needed.
 > 
 
 ### DRS

@@ -1,8 +1,6 @@
 ---
 title: 'Zmiana strefy rozgłaszania bloku IP w sieci vRack'
-slug: zmiana-rozglaszania-bloku-ip-vrack
 excerpt: 'Dowiedz się, jak zmienić strefę rozgłaszania bloku IP w sieci vRack'
-section: vRack
 updated: 2019-03-12
 ---
 
@@ -17,7 +15,7 @@ Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwi
 ## Wymagania początkowe
 
 - Posiadanie usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
-- [Konfiguracja bloku adresów IP w sieci vRack](../dodawanie-lub-usuwanie-bloku-ip-vrack/)
+- [Konfiguracja bloku adresów IP w sieci vRack](/pages/cloud/dedicated/configuring-an-ip-block-in-a-vrack)
 - Posiadanie zaawansowanej wiedzy w zakresie sieci
 
 > [!warning]

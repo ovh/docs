@@ -1,9 +1,6 @@
 ---
 title: Instalacja Composer na hostingu
-slug: instalacja_oprogramowania_composer_na_hostingu_www
 excerpt: Dowiedz się, jak zainstalować i zrobić pierwsze kroki w Composer.
-section: PHP
-order: 02
 updated: 2023-02-24
 ---
 
@@ -33,7 +30,7 @@ updated: 2023-02-24
 
 ## W praktyce
 
-Połącz się z hostingiem za pomocą SSH, korzystając z naszego przewodnika na temat [korzystanie z SSH przy pomocy hostingu www OVHcloud](https://docs.ovh.com/pl/hosting/hosting_www_ssh_na_hostingu/).
+Połącz się z hostingiem za pomocą SSH, korzystając z naszego przewodnika na temat [korzystanie z SSH przy pomocy hostingu www OVHcloud](/pages/web/hosting/ssh_on_webhosting).
 
 Sprawdź, czy używasz kompatybilnej wersji PHP w wierszu poleceń:
 

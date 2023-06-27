@@ -1,7 +1,5 @@
 ---
 title: Dépannage LG 8820
-slug: depannage-lg-8820
-section: LG8820
 hidden: true
 updated: 2018-03-26
 ---
@@ -73,7 +71,7 @@ Assurez vous que le câble Ethernet connecté au dos du téléphone est branché
 
 ### Mon téléphone affiche "Connexion ..." ou "Erreur de téléchargement XML" {#mon-téléphone-affiche-connexion-...-ou-erreur-de-téléchargement-xml}
 
-Si le téléphone vous affiche ce message, c'est qu'il ne parvient pas à récupérer sa configuration sur nos serveurs. Vérifiez que votre accès Internet fonctionne et que votre téléphone est bien branché sur votre réseau local. N'hésitez pas à consulter le guide sur[**les branchements**]({originalUrl}/display/CRTEL/Branchements+LG+8820)pour vous en assurer.
+Si le téléphone vous affiche ce message, c'est qu'il ne parvient pas à récupérer sa configuration sur nos serveurs. Vérifiez que votre accès Internet fonctionne et que votre téléphone est bien branché sur votre réseau local. N'hésitez pas à consulter le guide sur[**les branchements**](/fr/voip/depannage-lg-8820/%7BoriginalUrl%7D/display/CRTEL/Branchements+LG+8820)pour vous en assurer.
 
 ------------------------------------------------------------------------
 

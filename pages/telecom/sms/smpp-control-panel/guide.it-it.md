@@ -1,9 +1,7 @@
 ---
 title: Gestione di un account SMS SMPP
 excerpt: Come gestire le impostazioni di un account SMPP dallo Spazio Cliente OVHcloud
-slug: smpp-control-panel
 sezione: SMPP
-order: 01
 updated: 2023-02-09
 ---
 
@@ -21,7 +19,7 @@ Lo Spazio Cliente OVHcloud permette di recuperare le credenziali SMPP, modificar
 
 > [!primary]
 >
-> Ti consigliamo di prendere visione delle [specifiche tecniche dell'offerta SMPP OVHcloud](https://docs.ovh.com/it/sms/smpp-specifications/).
+> Ti consigliamo di prendere visione delle [specifiche tecniche dell'offerta SMPP OVHcloud](/pages/telecom/sms/smpp-specification).
 
 ## Prerequisiti
 
@@ -60,12 +58,12 @@ Clicca su `Aggiungi un IP`{.action} per aggiungere indirizzi IP a questa lista.
 
 ### Gestione mittenti e crediti
 
-Consulta le nostre guide sulla [gestione mittenti](https://docs.ovh.com/it/sms/inviare_sms_dallo_spazio_cliente/#step-3-scegli-il-mittente-del-tuo-sms) e sulla [gestione dei crediti SMS e ricarica automatica](https://docs.ovh.com/it/sms/attivare-la-ricarica-automatica-del-credito-sms/).
+Consulta le nostre guide sulla [gestione mittenti](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#step-3-scegli-il-mittente-del-tuo-sms) e sulla [gestione dei crediti SMS e ricarica automatica](/pages/telecom/sms/activer_la_recharge_automatique_du_credit_sms).
 
 ## Per saperne di più
 
-Consulta la nostra guida dedicata alla [gestione dello storico degli SMS](https://docs.ovh.com/it/sms/gestire-la-cronologia-degli-sms/).
+Consulta la nostra guida dedicata alla [gestione dello storico degli SMS](/pages/telecom/sms/gerer_l_historique_des_sms).
 
-[Specifiche tecniche dell'offerta SMPP OVHcloud](https://docs.ovh.com/it/sms/smpp-specifications/).
+[Specifiche tecniche dell'offerta SMPP OVHcloud](/pages/telecom/sms/smpp-specification).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>

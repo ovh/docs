@@ -1,10 +1,8 @@
 ---
 title: Modificare la password utente
-slug: modificare-password-utente
 routes:
-    canonical: 'https://docs.ovh.com/it/private-cloud/modificare-password-utente/'
+    canonical: '/pages/cloud/private-cloud/changement_du_mot_de_passe_utilisateur'
 excerpt: Come impostare una nuova password per un utente del client vSphere dallo Spazio Cliente OVHcloud
-section: Funzionalità OVHcloud
 updated: 2020-11-18
 ---
 
@@ -19,7 +17,7 @@ Le autorizzazioni e le password associate agli utenti del client vSphere possono
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
-- Disporre di un account utente creato dallo Spazio Cliente OVHcloud. Per maggiori informazioni, consulta [questa guida](../manager-ovhcloud/#utenti)
+- Disporre di un account utente creato dallo Spazio Cliente OVHcloud. Per maggiori informazioni, consulta [questa guida](/pages/cloud/managed-bare-metal/manager-ovhcloud#utenti)
   
 ## Procedura
 
@@ -58,8 +56,8 @@ Nella nuova finestra, inserisci la password e confermala.
 
 ## Per saperne di più
 
-[Modificare i diritti di un utente](../modificare-permessi-di-un-utente/)
+[Modificare i diritti di un utente](/pages/cloud/managed-bare-metal/change-user-rights)
 
-[Impostare e gestire la password di un account OVHcloud](https://docs.ovh.com/it/customer/gestire-la-password/)
+[Impostare e gestire la password di un account OVHcloud](/pages/account/customer/manage-ovh-password)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

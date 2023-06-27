@@ -1,9 +1,6 @@
 ---
 title: Configuring an email address on Android via the Gmail app
-slug: configuration-android
 excerpt: Find out how to configure an email address on Android, via the Gmail app
-section: Configure on smartphone
-order: 02
 updated: 2018-03-12
 ---
 

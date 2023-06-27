@@ -1,8 +1,6 @@
 ---
 title: What are the IP addresses of the OVHcloud monitoring?
-slug: monitoring-ip-ovh
 excerpt: Find here the IP addresses to fill in when setting up a firewall so that OVHcloud monitoring will continue to work on your server
-section: Network management
 updated: 2022-12-13
 ---
 
@@ -94,6 +92,6 @@ You will be redirected to the page below. Click `Monitor a service`{.action}, th
 
 ## Go further
 
-[Configure the Network Firewall.](../firewall-network/)
+[Configure the Network Firewall.](/pages/cloud/dedicated/firewall_network)
 
 Join our community of users on <https://community.ovh.com/en/>.

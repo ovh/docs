@@ -1,9 +1,6 @@
 ---
 title: 'Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW'
 excerpt: 'Dowiedz się, jak pobrać kopię zapasową bazy danych Twojego hostingu WWW OVH'
-slug: eksport-bazy-danych
-section: 'Bazy danych'
-order: 03
 updated: 2018-05-19
 ---
 
@@ -131,7 +128,7 @@ Pamiętaj, aby zastąpić informacje ogólne występujące w skrypcie informacja
 
 #### Etap 2: pobierz skrypt i wykonaj import do przestrzeni dyskowej
 
-Po poprawnym utworzeniu skryptu, pobierz go do przestrzeni dyskowej Twojego hostingu. W tym celu zaloguj się do przestrzeni dyskowej. Jeśli nie potrafisz tego zrobić, zapoznaj się z informacjami zawartymi w opisie etapu 2 przewodnika [Logowanie do przestrzeni dyskowej](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/){.external}.
+Po poprawnym utworzeniu skryptu, pobierz go do przestrzeni dyskowej Twojego hostingu. W tym celu zaloguj się do przestrzeni dyskowej. Jeśli nie potrafisz tego zrobić, zapoznaj się z informacjami zawartymi w opisie etapu 2 przewodnika [Logowanie do przestrzeni dyskowej](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}.
 
 Aby móc przejść od kolejnych etapów, zapisz skrypt do katalogu „WWW”. **Zalecamy szczególną ostrożność podczas nadawania nazwy plikowi skryptu kopii zapasowej.** Sprawdź, czy zapisując skrypt, nie nadpisujesz istniejącego wcześniej na przestrzeni dyskowej pliku noszącego tę samą nazwę. Jeśli pojawi się tego typu komunikat ostrzegawczy, zmień nazwę nowo utworzonego skryptu, a następnie spróbuj ponownie go zapisać.
 
@@ -149,7 +146,7 @@ Zalecamy, abyś po pobieraniu pliku z kopią zapasową usunął z katalogu „WW
 
 > [!primary]
 >
-> Używając skryptu kopii zapasowej oraz narzędzia do planowania zadań („CRON”), będziesz mógł zautomatyzować tworzenie kopii zapasowych i wybrać częstotliwość ich tworzenia. Dowiedz się więcej o planowaniu zadań z dokumentacji: [Narzędzie do planowania zadań (CRON) na hostingu](https://docs.ovh.com/pl/hosting/hosting_www_automatyczne_zadania_cron/){.external}.
+> Używając skryptu kopii zapasowej oraz narzędzia do planowania zadań („CRON”), będziesz mógł zautomatyzować tworzenie kopii zapasowych i wybrać częstotliwość ich tworzenia. Dowiedz się więcej o planowaniu zadań z dokumentacji: [Narzędzie do planowania zadań (CRON) na hostingu](/pages/web/hosting/cron_tasks){.external}.
 >
 
 ### Pobieranie kopii zapasowej przy użyciu komendy SSH

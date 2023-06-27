@@ -1,9 +1,6 @@
 ---
 title: Gestisci un gruppo di licenze Microsoft 365 OVHcloud
-slug: ordina_e_gestisci_un_gruppo_di_licenze_office_365_ovh
 excerpt: Questa guida ti mostra come attivare una licenza Microsoft 365 e come gestirlo nello Spazio Cliente OVHcloud.
-section: Office
-order: 02
 updated: 2021-09-09
 ---
 
@@ -108,6 +105,6 @@ Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action
 
 ## Per saperne di più
 
-[Utilizza il desktop remoto con Microsoft 365 aps](https://docs.ovh.com/it/microsoft-collaborative-solutions/office365-proplus-desktop-remoto/)
+[Utilizza il desktop remoto con Microsoft 365 aps](/pages/web/microsoft-collaborative-solutions/office_proplus)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

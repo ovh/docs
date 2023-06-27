@@ -1,9 +1,6 @@
 ---
 title: 'Primera configuración de un dominio en la CDN'
-slug: primera-configuracion-dominio-en-cdn
 excerpt: 'Cómo configurar un dominio por primera vez en el servicio CDN de OVH'
-section: 'Primeros pasos'
-order: 2
 updated: 2018-02-21
 ---
 

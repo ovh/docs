@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Chroń katalog lub interfejs administracyjny Twojej strony internetowej za pomocą plików .htaccess i .htpasswd"
-slug: hosting-htaccess-w-jaki-sposob-zabezpieczyc-dostep-dostepu-do-katalogu
 excerpt: "Dowiedz się, jak zabezpieczyć katalog lub dostęp do administrowania stroną WWW za pomocą uwierzytelnienia za pomocą plików .htaccess i .htpasswd"
-section: Przekierowania i uprawnienia dostępu
-order: 02
 updated: 2023-06-01
 ---
 

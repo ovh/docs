@@ -1,11 +1,8 @@
 ---
 title: Data Processing Overview
-slug: overview
 excerpt: Introduction to OVHcloud Data Processing Platform
-section: Concepts
-order: 0
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/data-processing/overview/'
+    canonical: '/pages/platform/data-processing/00_CONCEPTS_Overview'
 updated: 2020-03-06
 ---
 

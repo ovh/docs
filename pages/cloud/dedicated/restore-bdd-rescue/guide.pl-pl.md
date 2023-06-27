@@ -1,8 +1,6 @@
 ---
 title: "Odzyskiwanie baz danych w trybie Rescue"
-slug: dedicated-servers-retrieve-database
 excerpt: "Dowiedz się, jak uzyskać dostęp do baz danych i zapisać je w trybie rescue"
-section: Diagnostyka i tryb Rescue
 updated: 2023-04-13
 ---
 

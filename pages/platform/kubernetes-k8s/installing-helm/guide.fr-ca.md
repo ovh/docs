@@ -1,11 +1,8 @@
 ---
 title: Installing Helm on OVHcloud Managed Kubernetes
-slug: installing-helm
 excerpt: 'Find out how to install Helm on OVHcloud Managed Kubernetes'
-section: Tutorials
-order: 4
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-helm/'
+    canonical: '/pages/platform/kubernetes-k8s/installing-helm'
 updated: 2023-01-11
 ---
 
@@ -40,7 +37,7 @@ With Helm you can:
 
 ## Before you begin
 
-This tutorial assumes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial assumes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/platform/kubernetes-k8s/deploying-hello-world).
 
 We are assuming that you have the `KUBECONFIG` environment variable pointing to your kubectl configuration file, as described in the Quickstarter. If that's not the case, you can use the `--kubeconfig [LOCATION_OF_CONFIG_FILE]` option in both `kubectl` and `helm` commands. 
 

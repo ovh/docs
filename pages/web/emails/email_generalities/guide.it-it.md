@@ -1,9 +1,6 @@
 ---
 title: 'Iniziare a utilizzare la soluzione MX Plan'
-slug: informazioni-generali-email-condivise
 excerpt: 'Come eseguire le prime operazioni sul servizio MX Plan'
-section: 'Per iniziare'
-order: 01
 legacy_guide_number: g1474
 updated: 2021-07-19
 ---
@@ -58,7 +55,7 @@ Nella nuova finestra inserisci le informazioni richieste:
 |Nome|Inserisci un nome.|
 |Cognome|Inserisci un cognome.|
 |Nome da visualizzare|Indica il nome che vuoi che venga visualizzato come mittente per i messaggi inviati da questo indirizzo.|
-|Password|[Inserisci una password](https://docs.ovh.com/it/customer/gestire-la-password/) e confermala. Per motivi di sicurezza ti consigliamo di non utilizzare due volte la stessa password, scegliere una password che non contenga informazioni personali (ad esempio nome, cognome o data di nascita) e di modificarla regolarmente.
+|Password|[Inserisci una password](/pages/account/customer/manage-ovh-password) e confermala. Per motivi di sicurezza ti consigliamo di non utilizzare due volte la stessa password, scegliere una password che non contenga informazioni personali (ad esempio nome, cognome o data di nascita) e di modificarla regolarmente.
 |
 
 Dopo aver completato tutti i campi clicca su `Continua`{.action}, verifica la correttezza delle informazioni inserite e poi clicca su `Conferma`{.action}. Ripeti questa operazione per tutti gli account che vuoi creare, in base al numero a tua disposizione.
@@ -73,7 +70,7 @@ Una volta creati gli account non ti resta che utilizzarli utilizzando la Webmail
 
 Accedi alla [pagina di connessione](https://www.ovh.it/mail/), inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
 
-Se è la prima volta che esegui l’accesso da questo indirizzo email, ti verrà chiesto di selezionare la lingua dell’interfaccia utente e definire il fuso orario della tua area geografica. Quando effettui il login, si apre di default la casella della posta in arrivo. Per maggiori informazioni consulta la guida all’[utilizzo di un account di posta da "Outlook on the web"](https://docs.ovh.com/it/emails/utilizzo-owa/).
+Se è la prima volta che esegui l’accesso da questo indirizzo email, ti verrà chiesto di selezionare la lingua dell’interfaccia utente e definire il fuso orario della tua area geografica. Quando effettui il login, si apre di default la casella della posta in arrivo. Per maggiori informazioni consulta la guida all’[utilizzo di un account di posta da "Outlook on the web"](/pages/web/emails/email_owa).
 
 ![email](images/mxplan-starter-new-step4.png){.thumbnail}
 
@@ -83,9 +80,9 @@ Per utilizzare il tuo indirizzo email su un software di terze parti, devi config
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
-|[Windows 10](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_dellapp_posta_di_windows_10/)|[Outlook Windows](https://docs.ovh.com/it/emails/configurazione-outlook-2016/)|[ Mail di macOS (ultima versione) ](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_mail_di_mac_-_el_capitan/)|[Android (ultima versione)](https://docs.ovh.com/es/emails/configuracion-android/)|
-|[Thunderbird su Windows](https://docs.ovh.com/it/emails/email_condivisa_guida_alla_configurazione_di_thundebird/)|[Outlook Mac OS](https://docs.ovh.com/it/emails/configurazione-outlook-2016-mac/)|[Mail per iPhone o iPad](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_iphone_ios_91/)|
-|||[Thunderbird su Mac](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_di_thunderbird_su_mac/)|
+|[Windows 10](/pages/web/emails/how_to_configure_windows_10)|[Outlook Windows](/pages/web/emails/how_to_configure_outlook_2016)|[ Mail di macOS (ultima versione) ](/pages/web/emails/how_to_configure_mail_macos)|[Android (ultima versione)](/pages/web/emails/how_to_configure_android)|
+|[Thunderbird su Windows](/pages/web/emails/how_to_configure_thunderbird_windows)|[Outlook Mac OS](/pages/web/emails/how_to_configure_outlook_2016_mac)|[Mail per iPhone o iPad](/pages/web/emails/how_to_configure_ios)|
+|||[Thunderbird su Mac](/pages/web/emails/how_to_configure_thunderbird_mac)|
 
 Se non conosci i parametri necessari alla configurazione dell’account email, ecco i valori da utilizzare:
 
@@ -105,7 +102,7 @@ Se non conosci i parametri necessari alla configurazione dell’account email, e
 
 > [!warning]
 >
-> In caso di difficoltà durante la configurazione dell’account email sul dispositivo, [consulta le nostre guide](../) o rivolgiti al fornitore del servizio.
+> In caso di difficoltà durante la configurazione dell’account email sul dispositivo, [consulta le nostre guide](/products/web-cloud-email-collaborative-solutions-mx-plan) o rivolgiti al fornitore del servizio.
 >
 
 #### Funzionalità avanzate
@@ -128,31 +125,31 @@ Puoi procedere in due modi:
 
 - creare il reindirizzamento dalla Webmail, tramite le regole della casella di ricezione. Per effettuare questa operazione, consulta la guida "[Regole di Posta in arrivo dall'interfaccia OWA](https://docs.ovh.com/it/microsoft-collaborative-solutions/creare-regole-posta-in-arrivo-in-owa/#esempio-1-inoltrare-unemail-a-un-altro-indirizzo)".
 
-- creare il reindirizzamento dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Questo metodo permette, ad esempio, di creare un alias, cioè di reindirizzare un indirizzo email che non esiste verso un indirizzo email esistente. Per effettuare questa operazione, consulta la guida [Utilizzare i reindirizzamenti email](https://docs.ovh.com/it/emails/servizio_email_configura_il_reindirizzamento_delle_tue_email/#nuova-versione-della-soluzione-mx-plan).
+- creare il reindirizzamento dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Questo metodo permette, ad esempio, di creare un alias, cioè di reindirizzare un indirizzo email che non esiste verso un indirizzo email esistente. Per effettuare questa operazione, consulta la guida [Utilizzare i reindirizzamenti email](/pages/web/emails/feature_redirections#nuova-versione-della-soluzione-mx-plan).
 
 ##### **Segreteria**
 
 Dovete partire in congedo o non avrete accesso al vostro indirizzo email per un certo periodo di tempo.
 
-A questo punto puoi creare una risposta automatica. Segui la nostra guida [Installare una risposta automatica tramite l'interfaccia OWA](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_imposta_una_risposta_automatica_con_owa/).
+A questo punto puoi creare una risposta automatica. Segui la nostra guida [Installare una risposta automatica tramite l'interfaccia OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies).
 
 ##### **Delegazioni**
 
 Invia un'email dal tuo indirizzo email personale, **al posto** o **da parte** di un altro indirizzo email del tuo dominio.
 
-Per farlo, è necessario configurare la delega dell'indirizzo email in questione. Segui la guida [Delegare i diritti su un account](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2013_assegna_i_diritti_full_access_a_un_account/).
+Per farlo, è necessario configurare la delega dell'indirizzo email in questione. Segui la guida [Delegare i diritti su un account](/pages/web/microsoft-collaborative-solutions/feature_delegation).
 
 ##### **Mailing-lists**
 
 Invia regolarmente una newsletter ai tuoi contatti
 
-Per creare una mailing list. Per maggiori informazioni, consulta la guida [Gestire e utilizzare le mailing list](https://docs.ovh.com/it/emails/gestire_e_utilizzare_una_mailing_list/).
+Per creare una mailing list. Per maggiori informazioni, consulta la guida [Gestire e utilizzare le mailing list](/pages/web/emails/feature_mailing_list).
 
 ##### **Firma**
 
 Vuoi applicare una firma globale a tutti gli indirizzi email del tuo dominio.
 
-Il "piede pagina" ti permette di configurarlo dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Segui la nostra guida ["Aggiungere un piede di pagina sulle tue email](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2013_firma_automatica_-_disclaimer/)".
+Il "piede pagina" ti permette di configurarlo dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Segui la nostra guida ["Aggiungere un piede di pagina sulle tue email](/pages/web/microsoft-collaborative-solutions/feature_footers)".
 
 ### Vecchia versione della soluzione MX Plan <a name="oldmxplan"></a>
 
@@ -189,7 +186,7 @@ Una volta creati gli account non ti resta che utilizzarli utilizzando la Webmail
 
 Accedi alla [pagina di connessione](https://www.ovh.it/mail/), inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
 
-Si apre di default la casella della posta in arrivo. Per maggiori informazioni sull’utilizzo della Webmail RoundCube, consulta [questa guida](https://docs.ovh.com/it/emails/webmail_guida_allutilizzo_di_roundcube/).
+Si apre di default la casella della posta in arrivo. Per maggiori informazioni sull’utilizzo della Webmail RoundCube, consulta [questa guida](/pages/web/emails/email_roundcube).
 
 ![email](images/mxplan-starter-legacy-step4.png){.thumbnail}
 
@@ -199,9 +196,9 @@ Per utilizzare il tuo indirizzo email su un software di terze parti, devi config
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
-|[Windows 10](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_dellapp_posta_di_windows_10/)|[Outlook Windows](https://docs.ovh.com/it/emails/configurazione-outlook-2016/)|[ Mail di macOS (ultima versione) ](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_mail_di_mac_-_el_capitan/)|[Android (ultima versione)](https://docs.ovh.com/es/emails/configuracion-android/)|
-|[Thunderbird su Windows](https://docs.ovh.com/it/emails/email_condivisa_guida_alla_configurazione_di_thundebird/)|[Outlook Mac OS](https://docs.ovh.com/it/emails/configurazione-outlook-2016-mac/)|[Mail per iPhone o iPad](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_iphone_ios_91/)|
-|||[Thunderbird su Mac](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_di_thunderbird_su_mac/)|
+|[Windows 10](/pages/web/emails/how_to_configure_windows_10)|[Outlook Windows](/pages/web/emails/how_to_configure_outlook_2016)|[ Mail di macOS (ultima versione) ](/pages/web/emails/how_to_configure_mail_macos)|[Android (ultima versione)](/pages/web/emails/how_to_configure_android)|
+|[Thunderbird su Windows](/pages/web/emails/how_to_configure_thunderbird_windows)|[Outlook Mac OS](/pages/web/emails/how_to_configure_outlook_2016_mac)|[Mail per iPhone o iPad](/pages/web/emails/how_to_configure_ios)|
+|||[Thunderbird su Mac](/pages/web/emails/how_to_configure_thunderbird_mac)|
 
 Se non conosci i parametri necessari alla configurazione dell’account email, ecco i valori da utilizzare:
 
@@ -221,7 +218,7 @@ Se non conosci i parametri necessari alla configurazione dell’account email, e
 
 > [!warning]
 >
-> In caso di difficoltà durante la configurazione dell’account email sul dispositivo, [consulta le nostre guide](../) o rivolgiti al fornitore del servizio.
+> In caso di difficoltà durante la configurazione dell’account email sul dispositivo, [consulta le nostre guide](/products/web-cloud-email-collaborative-solutions-mx-plan) o rivolgiti al fornitore del servizio.
 
 #### Funzionalità avanzate
 
@@ -229,25 +226,25 @@ Se non conosci i parametri necessari alla configurazione dell’account email, e
 
 Vuoi reindirizzare le tue email verso un altro destinatario, creare un alias o inviare sistematicamente in copia un altro indirizzo email.
 
-Per effettuare questa operazione è necessario creare un reindirizzamento. Segui la guida [Utilizzare i reindirizzamenti email](https://docs.ovh.com/it/emails/servizio_email_configura_il_reindirizzamento_delle_tue_email/#vecchia-versione-della-soluzione-mx-plan).
+Per effettuare questa operazione è necessario creare un reindirizzamento. Segui la guida [Utilizzare i reindirizzamenti email](/pages/web/emails/feature_redirections#vecchia-versione-della-soluzione-mx-plan).
 
 ##### **Segreteria**
 
 Dovete partire in congedo o non avrete accesso al vostro indirizzo email per un certo periodo di tempo.
 
-E utilizzare la risposta automatica sul proprio indirizzo email. Per effettuare questa operazione, consulta la guida Creare [una risposta automatica per il proprio indirizzo email](https://docs.ovh.com/it/emails/servizio_email_configura_una_risposta_automatica/).
+E utilizzare la risposta automatica sul proprio indirizzo email. Per effettuare questa operazione, consulta la guida Creare [una risposta automatica per il proprio indirizzo email](/pages/web/emails/feature_auto_responses).
 
 ##### **Delegazioni**
 
 Vuoi **delegare tutto il servizio email di un dominio a un altro account OVHcloud** o **delegare uno o più account email a un altro account OVHcloud**, per consentire al titolare di quest'altro account di modificare la password di un indirizzo email.
 
-Segui la nostra guida [Delegare la gestione delle tue email a un'altra persona](https://docs.ovh.com/fr/emails/deleguer-gestion-emails-autre-identifiant/).
+Segui la nostra guida [Delegare la gestione delle tue email a un'altra persona](/pages/web/emails/feature_delegation).
 
 ##### **Mailing-lists**
 
 Invia regolarmente una newsletter ai tuoi contatti
 
-Per creare una mailing list. Per maggiori informazioni, consulta la guida [Gestire e utilizzare le mailing list](https://docs.ovh.com/it/emails/gestire_e_utilizzare_una_mailing_list/).
+Per creare una mailing list. Per maggiori informazioni, consulta la guida [Gestire e utilizzare le mailing list](/pages/web/emails/feature_mailing_list).
 
 ## Per saperne di più
 

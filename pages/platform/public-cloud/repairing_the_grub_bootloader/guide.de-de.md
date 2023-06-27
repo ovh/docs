@@ -1,8 +1,6 @@
 ---
 title: 'GRUB Bootloader reparieren'
-slug: grub-bootloader-reparieren
 excerpt: 'Anleitung zur Reparatur des GRUB Bootloaders einer Instanz'
-section: Tutorials
 updated: 2020-11-23
 ---
 
@@ -14,7 +12,7 @@ Es kann sein, dass Sie den GRUB Bootloader reparieren müssen. In dieser Anleitu
 
 ## Voraussetzungen
 
-- Die Instanz muss sich im Rescue-Modus befinden (siehe Anleitung zum [Rescue-Modus](../umstellung_einer_instanz_auf_den_rescue-modus/)).
+- Die Instanz muss sich im Rescue-Modus befinden (siehe Anleitung zum [Rescue-Modus](/pages/platform/public-cloud/put_an_instance_in_rescue_mode)).
 
 ## In der praktischen Anwendung
 
@@ -46,7 +44,7 @@ grub2-install /dev/sdb
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
-Sie können die Instanz nun aus dem Rescue-Modus entfernen (siehe Anleitung zum [Rescue-Modus](../umstellung_einer_instanz_auf_den_rescue-modus/)).
+Sie können die Instanz nun aus dem Rescue-Modus entfernen (siehe Anleitung zum [Rescue-Modus](/pages/platform/public-cloud/put_an_instance_in_rescue_mode)).
 
 ## Weiterführende Informationen
 

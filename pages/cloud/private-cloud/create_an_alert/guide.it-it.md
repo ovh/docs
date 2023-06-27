@@ -1,9 +1,6 @@
 ---
 title: Creare un alert
-slug: creare-un-alert
 excerpt: Come impostare un allarme sul tuo client vSphere
-section: Gestione delle macchine virtuali
-order: 09
 updated: 2020-07-08
 ---
 
@@ -18,7 +15,7 @@ Tutti gli elementi di un Private Cloud consentono la creazione di alert: datacen
 ## Prerequisiti
 
 - Disporre di un servizio [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external} attivo
-- Avere accesso all’[interfaccia vSphere](../connessione-interfaccia-vsphere/)
+- Avere accesso all’[interfaccia vSphere](/pages/cloud/private-cloud/vsphere_interface_connexion)
 
 ## Procedura
 

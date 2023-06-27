@@ -1,9 +1,6 @@
 ---
 title: 'Deleting a Public Cloud project'
 excerpt: 'Find out how to delete a Public Cloud project'
-slug: delete_a_project
-section: Project management
-order: 1
 updated: 2022-10-14
 ---
 
@@ -51,6 +48,6 @@ When you click on the button, an email will be sent to your contact email addres
 
 ## Go further
 
-[Getting started with Public Cloud](../public-cloud-first-steps/)
+[Getting started with Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps)
 
 Join our community of users on <https://community.ovh.com/en/>.

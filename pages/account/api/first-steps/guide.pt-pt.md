@@ -1,9 +1,6 @@
 ---
 title: 'Primeiros passos com as API OVHcloud'
-slug: first-steps-with-ovh-api
 excerpt: 'Saiba como utilizar as API da OVHcloud'
-section: Introdução
-order: 01
 updated: 2022-05-30
 ---
 
@@ -50,7 +47,7 @@ Para utilizar as API nos seus produtos, deve ligar-se a este site graças aos se
 
 > [!primary]
 >
-> Se a sua conta OVHcloud estiver protegida por uma [dupla autenticação](https://docs.ovh.com/pt/customer/proteger-a-sua-conta-com-uma-2FA/), deverá também introduzir o código gerado por SMS ou aplicação OTP ou chave U2F.
+> Se a sua conta OVHcloud estiver protegida por uma [dupla autenticação](/pages/account/customer/secure-ovhcloud-account-with-2fa), deverá também introduzir o código gerado por SMS ou aplicação OTP ou chave U2F.
 >
 
 #### Explorar os produtos disponíveis nas API
@@ -168,7 +165,7 @@ MtSwSrPpNjqfVSmJhLbPyr2i45lSwPU1
 
 Neste caso, a chave **CK** está associada à sua conta.
 
-O token **CK** pode ser utilizado para a delegação de direitos. Para saber mais, consulte o seguinte guia: [Como gerir a conta de um cliente OVHcloud através das API](https://docs.ovh.com/gb/en/api/api-rights-delegation/) (guia em inglês).
+O token **CK** pode ser utilizado para a delegação de direitos. Para saber mais, consulte o seguinte guia: [Como gerir a conta de um cliente OVHcloud através das API](/pages/account/api/api_right_delegation) (guia em inglês).
 
 
 #### Primeira utilização da API
@@ -209,8 +206,8 @@ print("Welcome", client.get('/me')['firstname'])
 
 ## Saiba mais <a name="gofurther"></a>
 
-[Gerir um domínio através das API OVHcloud](https://docs.ovh.com/pt/domains/api/) (guia em inglês)
+[Gerir um domínio através das API OVHcloud](/pages/web/domains/api_domain_intro) (guia em inglês)
 
-[Como gerir a conta de um cliente OVHcloud através das API](https://docs.ovh.com/gb/en/api/api-rights-delegation/) (guia em inglês)
+[Como gerir a conta de um cliente OVHcloud através das API](/pages/account/api/api_right_delegation) (guia em inglês)
 
 Fale com a nossa comunidade de utilizadores: [https://community.ovh.com/en/](https://community.ovh.com/en/).

@@ -1,9 +1,7 @@
 ---
 title: 'Effectuer un changement de contacts pour les services VoIP'
-slug: effectuer-un-changement-de-contact-pour-les-services-voip
 excerpt: "Découvrez comment déléguer la gestion d'un service VoIP à un autre compte OVHcloud."
 legacy_guide_number: '7536701'
-section: Administratif
 updated: 2020-02-26
 ---
 
@@ -11,7 +9,7 @@ updated: 2020-02-26
 
 ## Objectif
 
-OVHcloud vous permet de différencier la gestion administrative, technique et de facturation d'un service pour la confier à plusieurs contacts, chacun d'eux associé à un identifiant client. Cette gestion de contacts pour les services VoIP est partiellement différente de la [gestion de contacts des autres services OVHcloud](https://docs.ovh.com/fr/customer/gestion-des-contacts/). En effet, la gestion de contacts VoIP peut être réalisée soit sur un groupe de téléphonie (le conteneur dans lequel sont stockés les lignes téléphoniques et numéros alias), soit directement sur un service VoIP (ligne téléphonique ou numéro alias).
+OVHcloud vous permet de différencier la gestion administrative, technique et de facturation d'un service pour la confier à plusieurs contacts, chacun d'eux associé à un identifiant client. Cette gestion de contacts pour les services VoIP est partiellement différente de la [gestion de contacts des autres services OVHcloud](/pages/account/customer/managing_contacts). En effet, la gestion de contacts VoIP peut être réalisée soit sur un groupe de téléphonie (le conteneur dans lequel sont stockés les lignes téléphoniques et numéros alias), soit directement sur un service VoIP (ligne téléphonique ou numéro alias).
 
 **Découvrez comment modifier les contacts d'un service VoIP.**
 
@@ -43,7 +41,7 @@ Les lignes téléphoniques VoIP et numéros alias peuvent appartenir à un ou pl
 - Disposer d’un accès à l’adresse e-mail renseignée dans votre profil.
 - Posséder l’identifiant client du nouveau contact (destinataire de la modification).
 - Le nouveau contact doit quant à lui disposer d’un accès à l’adresse e-mail renseignée dans son profil.
-- En cas de modification du contact facturation, l’ancien et le nouveau contacts facturation doivent avoir validé leurs comptes via [la procédure de validation VoIP](https://docs.ovh.com/fr/voip/la-procedure-de-validation-voip/) et être à jour de leurs règlements.
+- En cas de modification du contact facturation, l’ancien et le nouveau contacts facturation doivent avoir validé leurs comptes via [la procédure de validation VoIP](/pages/telecom/voip/la_procedure_de_validation_voip) et être à jour de leurs règlements.
 
 ## En pratique
 
@@ -76,7 +74,7 @@ Un e-mail va être envoyé aux deux contacts impliqués dans ce processus de mod
 
 > [!primary]
 >
-> Cette étape est identique à celle décrite dans le [guide de changement de contacts](https://docs.ovh.com/fr/customer/gestion-des-contacts/#valider-refuser-ou-suivre-un-changement-de-contact) pour tous les services OVHcloud.
+> Cette étape est identique à celle décrite dans le [guide de changement de contacts](/pages/account/customer/managing_contacts#valider-refuser-ou-suivre-un-changement-de-contact) pour tous les services OVHcloud.
 >
 
 Pour suivre et gérer les demandes en cours, cliquez sur le nom rattaché à votre identifiant client dans la barre de menu en haut à droite, puis sur `Mes contacts`{.action} et enfin sur `Mes demandes`{.action}. C’est ici que vous pourrez accepter ou refuser une demande.

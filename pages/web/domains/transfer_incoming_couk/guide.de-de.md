@@ -1,9 +1,6 @@
 ---
 title: Transfer einer .uk-Domain zu OVHcloud
-slug: webhosting_anleitung_zum_transfer_einer_couk_domain
 excerpt: Erfahren Sie hier, wie Sie Domainnamen mit UK-Ländercode zu OVHcloud transferieren
-section: Transfer
-order: 04
 updated: 2022-10-19
 ---
 
@@ -29,9 +26,9 @@ Für den Transfer einer .uk-Domain (oder einer ähnlichen Domain) ist ein spezif
 >
 > Wenn der zu ändernde Domainname aktuell bei OVHcloud registriert ist, ist ein eingehender Domaintransfer nicht der passende Vorgang. Die vorliegende Anleitung betrifft lediglich den Wechsel des Registrars (OVHcloud) des Domainnamens.
 >
-> Um die Verwaltung des Domainnamens einem anderen OVHcloud Kunden-Account zu übertragen, muss stattdessen eine **Änderung der Kontakte** durchgeführt werden. Die Vorgehensweise wird in [dieser Anleitung](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/) beschrieben.
+> Um die Verwaltung des Domainnamens einem anderen OVHcloud Kunden-Account zu übertragen, muss stattdessen eine **Änderung der Kontakte** durchgeführt werden. Die Vorgehensweise wird in [dieser Anleitung](/pages/account/customer/managing_contacts) beschrieben.
 >
-> Wenn auch der **Inhaber des Domainnamens** geändert werden muss, sollte dies erfolgen, **bevor** Sie die Kontakte des Domainnamens ändern. Verwenden Sie dazu unsere Anleitung zum [Inhaberwechsel für Domainnamen](https://docs.ovh.com/de/domains/wechsel_des_domaininhabers/).
+> Wenn auch der **Inhaber des Domainnamens** geändert werden muss, sollte dies erfolgen, **bevor** Sie die Kontakte des Domainnamens ändern. Verwenden Sie dazu unsere Anleitung zum [Inhaberwechsel für Domainnamen](/pages/web/domains/trade_domain).
 >
 
 ## Voraussetzungen
@@ -98,6 +95,6 @@ Da der Transfer kostenlos ist, ändert sich nichts am Ablaufdatum. Um die Domain
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Domainnamen zu OVHcloud transferieren](https://docs.ovh.com/de/domains/transfer-einer-generischen-domain/)
+[Domainnamen zu OVHcloud transferieren](/pages/web/domains/transfer_incoming_generic_domain)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

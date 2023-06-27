@@ -1,8 +1,6 @@
 ---
 title: 'Ihre Dienste über die OVHcloud API verlängern'
-slug: dienst-via-api-verlaengern
 excerpt: 'So verlängern Sie Ihre Dienste über die OVHcloud API'
-section: 'Verlängerung der Dienste verwalten'
 updated: 2020-05-05
 ---
 
@@ -18,7 +16,7 @@ OVHcloud bietet Ihnen standardmäßig die Möglichkeit, Ihre Dienste automatisch
 ## Voraussetzungen
 
 - Sie sind in der [OVHcloud API](https://api.ovh.com/){.external} eingeloggt.
-- Sie haben Ihre [Zugangsdaten für die OVHcloud API eingerichtet - EN](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+- Sie haben Ihre [Zugangsdaten für die OVHcloud API eingerichtet - EN](/pages/account/api/first-steps).
 
 ## In der praktischen Anwendung
 

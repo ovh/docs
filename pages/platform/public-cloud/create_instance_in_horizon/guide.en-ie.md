@@ -1,9 +1,6 @@
 ---
 title: 'Creating an Instance via the Horizon interface'
-slug: create-an-instance-in-horizon
 excerpt: 'Find out how to create an Instance via the Horizon interface'
-section: Horizon
-order: 03
 updated: 2022-08-01
 ---
 
@@ -18,11 +15,11 @@ You can create multiple Instances directly in the Horizon interface, and also co
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
-- [Access to the Horizon interface](../horizon/) 
+- [Access to the Horizon interface](/pages/platform/public-cloud/introducing_horizon) 
 
 ## Instructions
 
-To start creating an Instance, log in to the Horizon interface. If you are unsure about how to do this, please refer to our [guide](../horizon/).
+To start creating an Instance, log in to the Horizon interface. If you are unsure about how to do this, please refer to our [guide](/pages/platform/public-cloud/introducing_horizon).
 
 Next, click `Compute`{.action} in the left-hand menu, then `Instances`{.action}.
 
@@ -54,7 +51,7 @@ You will then need to fill in the information requested. If you need to do so, y
 
 > [!warning] 
 >
-> Although the "Key Pair" field is not mandatory in the Horizon interface when creating an instance, registering an SSH key is absolutely necessary to be able to connect to an instance. Without an SSH key, you will be required to reboot the instance in rescue mode to either create a password or add an SSH key to the appropriate file (for more information, please refer to the guide on [Replacing your lost SSH key pair](../replacing_your_lost_ssh_key_pair/#instructions)).
+> Although the "Key Pair" field is not mandatory in the Horizon interface when creating an instance, registering an SSH key is absolutely necessary to be able to connect to an instance. Without an SSH key, you will be required to reboot the instance in rescue mode to either create a password or add an SSH key to the appropriate file (for more information, please refer to the guide on [Replacing your lost SSH key pair](/pages/platform/public-cloud/replacing_lost_ssh_key#instructions)).
 >
 
 Once you are ready to launch the Instances, click the `Launch Instance`{.action} button.

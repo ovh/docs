@@ -1,46 +1,51 @@
 ---
 title: 'Alterar o titular de um nome de domínio'
-slug: alteracao-titular-dominio
 excerpt: 'Neste guia, encontrará várias informações sobre a alteração de titular de um nome de domínio.'
-section: 'Alteração de titular'
-updated: 2021-03-04
+updated: 2023-06-19
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 04/03/2021**
+**Última atualização: 19/06/2023**
 
 ## Objetivo
 
-Para além da [gestão dos contactos](../../customer/gestao_dos_contactos/), o registo de um nome de domínio precisa da indicação das informações relativas ao titular do mesmo. O **proprietário** neste contexto diz respeito a uma pessoa ou empresa que detenha os direitos sobre esse nome de domínio. **A mudança de proprietário** refere - se à transferência de direitos de propriedade de uma pessoa ou empresa para outra, as informações do **proprietário** têm valor jurídico. Por exemplo, este processo é obrigatório se uma sociedade mudar de nome.
+Para além da [gestão dos contactos](/pages/account/customer/managing_contacts), o registo de um nome de domínio precisa da indicação das informações relativas ao titular do mesmo. O **proprietário** neste contexto diz respeito a uma pessoa ou empresa que detenha os direitos sobre esse nome de domínio. **A mudança de proprietário** refere - se à transferência de direitos de propriedade de uma pessoa ou empresa para outra, as informações do **proprietário** têm valor jurídico. Por exemplo, este processo é obrigatório se uma sociedade mudar de nome.
 
 > [!primary]
 >Esta operação não transfere o seu domínio para outra conta de cliente OVHcloud.
 >
->Para isso, deve [modificar os contactos](../../customer/gestao_dos_contactos/) do nome de domínio.
+>Para isso, deve [modificar os contactos](/pages/account/customer/managing_contacts) do nome de domínio.
+>
+> Se necessitar de fazer uma mudança de titular e uma mudança de contacto para o mesmo nome de domínio, não existe ordem de preferência. No entanto, é o contato do administrador quem pode iniciar essas operações. Essas duas alterações são, portanto, feitas na área do cliente do contato do administrador do nome de domínio.
 
 **Fique a saber como alterar o titular de um nome de domínio**
 
 ## Requisitos
 
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
-- Ter um nome de domínio registado na OVHcloud.
-- Ser o [contacto administrador](../../customer/gestao_dos_contactos/) do respetivo nome de domínio.
+- Ter um nome de domínio registado na OVHcloud e para o qual não está em curso nenhuma operação (mudança de proprietário, transferência, criação). Se uma operação foi finalizada recentemente no seu domínio, é necessário aguardar pelo menos 60 dias de calendário antes de realizar uma nova operação.
+- Ser o [contacto administrador](/pages/account/customer/managing_contacts) do respetivo nome de domínio.
 - Ter o consentimento do titular atual do nome de domínio para realizar a alteração de titular.
 
 ## Instruções
 
 > [!warning]
 >
-> As instruções que se seguem descrevem a forma mais comum de modificar o proprietário do nome de domínio, válida para a maioria dos domínios de nível superior (TLD). No entanto, as regras específicas dos processos relativas aos nomes de domínio TLD são definidas apenas pela autoridade de atribuição adequada, ou seja, o **registo**. Os agentes de registo (ou registar), tais como a OVHcloud, devem respeitar estas regras e não têm qualquer influência sobre as decisões de registo.
+> As seguintes instruções descrevem a forma mais comum de modificar o proprietário de um nome de domínio. São válidas para a maior parte dos domínios de nível superior, vulgarmente designados **T**op **L**evel **D**omain (**TLD**). 
+>Os **TLD** designam o fim do seu nome de domínio, como por exemplo o *.com*, *.net*, *.fr*, etc.
 >
-> Assim, o procedimento exato para a mudança de proprietário de um nome de domínio pode variar, em especial no caso de certos TLD de código de país (ccTLD, tais como .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) e de alguns TLD especiais (.am, .fm, etc.). Para alguns deles, uma mudança de proprietário é considerada uma operação paga. A mudança de proprietário pode igualmente ser suspensa por diversas razões, por exemplo, por um não pago, por um abuso ou por um bloqueio do registo.
+> As regras específicas dos processos relativos aos nomes de domínio **TLD** são definidas unicamente pela autoridade de atribuição adequada, ou seja, o **registo**. Um agente de registo (ou registar) como a OVHcloud deve respeitar estas regras e não tem qualquer influência sobre as decisões de registo.
+>
+> Existem principalmente dois tipos de **TLD**: Os **ccTLD** e os **gTLD**. Os **ccTLD** correspondem a **TLD** relativos a uma região ou a um país (*.fr*, *.be*, *.uk*, *.de*, *.paris*, etc.). Os **gTLD** correspondentes a **TLD** mais genéricos (*.net*, *.com*, *.info*, *.org*, etc.).
+>
+> O procedimento exato para a mudança de proprietário de um nome de domínio pode assim variar, em particular para certos **ccTLD**, tais como *.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, etc.) e para alguns **TLD** especiais (*.am*, *.fm*, etc.). Para alguns deles, uma mudança de proprietário é uma operação paga. A mudança de proprietário pode igualmente ser suspensa por várias razões, por exemplo, por falta de pagamento, abuso ou bloqueio por parte do registo. 
 >
 > Em caso de dúvida, recomendamos que consulte os seguintes recursos:
 >
-> - O sítio Web do registo TLD correspondente;
+> - o sítio Web do registo **TLD** correspondente;
 > - a [lista dos TLD disponíveis na OVHcloud](https://www.ovhcloud.com/pt/domains/tld/);
 > - a secção `Operações em curso`{.action} na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) para verificar as atualizações do estado do domínio.
 >
@@ -84,7 +89,7 @@ Se o endereço de e-mail não for alterado devido à mudança de proprietário, 
 
 > [!warning]
 >
-> Se o proprietário do nome de domínio tiver sido modificado, o nome de domínio não poderá ser [transferido para outro agente de registo](../transferencia_de_saida_de_um_nome_de_dominio_generico_ou_geografico/) durante um período de 60 dias.
+> Se o proprietário do nome de domínio tiver sido modificado, o nome de domínio não poderá ser [transferido para outro agente de registo](/pages/web/domains/transfer_outgoing_domain) durante um período de 60 dias.
 
 ### Atualização das informações do proprietário <a name="updateownerinformation"></a>
 
@@ -98,6 +103,10 @@ Para esta operação, não precisa de confirmar as modificações por e-mail.
 
 ## Saiba mais
 
-[Como gerir os contactos (gestores) dos serviços OVHcloud](../../customer/gestao_dos_contactos/)
+[Como gerir os contactos (gestores) dos serviços OVHcloud](/pages/account/customer/managing_contacts)
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

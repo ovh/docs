@@ -1,9 +1,6 @@
 ---
 title: 'Accélérer mon site web en utilisant le CDN'
-slug: accelerer-mon-site-web-en-utilisant-le-cdn
 excerpt: 'Améliorez votre site en accélérant son chargement sur votre hébergement Web grâce au CDN'
-section: 'Optimiser son site'
-order: 03
 updated: 2021-12-23
 ---
 
@@ -59,7 +56,7 @@ Cochez la mention « Activer le CDN », cliquez sur `Suivant`{.action} puis sur 
 > [!warning]
 > 
 > Dans le cas d'un nom de domaine externe à OVHcloud ajouté en multisite sur l'hébergement web, vous devez mentionner l'adresse IP du CDN de votre hébergement dans la zone DNS du nom de domaine.<br>
-> Consultez la [liste des adresses IP des clusters et hébergement web](https://docs.ovh.com/ca/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/) pour retrouver l'adresse IP spécifique du CDN de votre cluster.
+> Consultez la [liste des adresses IP des clusters et hébergement web](/pages/web/hosting/clusters_and_shared_hosting_IP) pour retrouver l'adresse IP spécifique du CDN de votre cluster.
 
  
 **Pourquoi ne puis-je pas bénéficier de l'IP géolocalisée avec l'option CDN ?** <br>
@@ -176,7 +173,7 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 > [!warning]
 >
-> Pour l'installation d'un [module en 1 clic OVHcloud](https://docs.ovh.com/ca/fr/hosting/modules-en-1-clic/), le WAF doit être désactivé afin d’éviter que l'installation du module ne soit bloquée.
+> Pour l'installation d'un [module en 1 clic OVHcloud](/pages/web/hosting/cms_install_1_click_modules), le WAF doit être désactivé afin d’éviter que l'installation du module ne soit bloquée.
 
 > [!primary]
 >

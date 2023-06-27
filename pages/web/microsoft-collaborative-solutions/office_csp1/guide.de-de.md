@@ -1,9 +1,6 @@
 ---
 title: Eine Microsoft 365 Lizenzgruppe von OVHcloud verwalten
-slug: bestellung_und_verwaltung_einer_office_365_lizenzgruppe_bei_ovh
 excerpt: Erfahren Sie hier, wie Sie eine Microsoft 365 Lizenz bestellen und in Ihrem OVHcloud Kundencenter verwalten
-section: Office
-order: 02
 updated: 2021-09-09
 ---
 
@@ -108,6 +105,6 @@ Geben Sie die Gr체nde f체r Ihre K체ndigungsanfrage an und klicken Sie auf `Best�
 
 ## Weiterf체hrende Informationen
 
-[Remote Desktop mit Microsoft 365 Apps verwenden](https://docs.ovh.com/de/microsoft-collaborative-solutions/office365-proplus-remotedesktopdienste/)
+[Remote Desktop mit Microsoft 365 Apps verwenden](/pages/web/microsoft-collaborative-solutions/office_proplus)
 
 F체r den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

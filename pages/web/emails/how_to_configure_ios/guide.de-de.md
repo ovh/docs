@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguration Ihrer E-Mail-Adresse auf iPhone oder iPad'
-slug: mail-konfiguration-iphone-ios-91
 excerpt: 'Erfahren Sie hier, wie Sie eine MX Plan Adresse auf iPhone oder iPad einrichten'
-section: 'E-Mail Clients'
-order: 7
 updated: 2022-07-20
 ---
 
@@ -28,7 +25,7 @@ E-Mail-Adressen aus dem MX Plan Angebot können auf verschiedenen, kompatiblen E
 ## Voraussetzungen
 
 - Sie verfügen über eine MX Plan E-Mail-Adresse (als MX Plan Dienst oder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten).
-- Sie haben keine ausstehenden [Zahlungen](https://docs.ovh.com/de/billing/ovh-rechnungen-verwalten/#pay-bills) und [Verlängerungen](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
+- Sie haben keine ausstehenden [Zahlungen](/pages/account/billing/invoice_management#pay-bills) und [Verlängerungen](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
 - Die Mail App ist auf Ihrem iOS Gerät installiert.
 - Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
 
@@ -78,15 +75,15 @@ OVHcloud bietet auch eine Webanwendung an, mit der Sie über Ihren Webbrowser au
 
 > [!primary]
 >
-> Bei Schwierigkeiten beim Empfang oder beim Versand von E-Mails konsultieren Sie bitte unsere [FAQ zu den OVHcloud E-Mail-Diensten](../e-mails-faq/).
+> Bei Schwierigkeiten beim Empfang oder beim Versand von E-Mails konsultieren Sie bitte unsere [FAQ zu den OVHcloud E-Mail-Diensten](/pages/web/emails/faq-emails).
 >
 
 ## Weiterführende Informationen
 
-[Konfiguration von Exchange auf iPhone oder iPad](../../microsoft-collaborative-solutions/exchange_20132016_automatische_konfiguration_in_ios_iphone_-_ipad/)
+[Konfiguration von Exchange auf iPhone oder iPad](/pages/web/microsoft-collaborative-solutions/how_to_configure_ios)
 
-[Konfiguration von E-Mail Pro auf iPhone oder iPad](../../emails-pro/iphone-konfiguration/)
+[Konfiguration von E-Mail Pro auf iPhone oder iPad](/pages/web/emails-pro/how_to_configure_ios)
 
-[E-Mails FAQ](../e-mails-faq/)
+[E-Mails FAQ](/pages/web/emails/faq-emails)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -1,7 +1,5 @@
 ---
 title: Moving a Java application to Web PaaS
-slug: migration
-section: Java
 updated: 2022-06-02
 ---
 
@@ -17,31 +15,31 @@ It is common to have a Java application that you want to migrate to Web PaaS.  W
 
 To run a Java application at Web PaaS you will need:
 
-* [A supported Java version](../#supported-versions)
-* [A build management tool](../#support-build-automation)
+* [A supported Java version](/pages/web/web-paas/languages-java#supported-versions)
+* [A build management tool](/pages/web/web-paas/languages-java#support-build-automation)
   * [Gradle](https://docs.gradle.org/current/userguide/gradle_wrapper.html)
   * [Maven](https://maven.apache.org/)
   * [Maven Wrapper](https://www.baeldung.com/maven-wrapper)
   * [Ant](https://ant.apache.org/)
 * A Git Repository:
-  * [GitHub](../../integrations-source/github)
-  * [BitBucket](../../integrations-source/bitbucket)
-  * [GitLab](../../integrations-source/gitlab)
+  * [GitHub](/pages/web/web-paas/integrations-source/github)
+  * [BitBucket](/pages/web/web-paas/integrations-source/bitbucket)
+  * [GitLab](/pages/web/web-paas/integrations-source/gitlab)
   * The default Git repository provided by Web PaaS
 
 > [!primary]  
 > A container application can't be bigger than **8 GB** of memory.
-> For more details, see [tuning](../tuning).
+> For more details, see [tuning](/pages/web/web-paas/languages-java/tuning).
 > 
 
 ## Monolith/Single Application
 
-To start a Java application, you need to understand the [Web PaaS structure](../../overview-structure).
-At minimum, you to configure your [application](../../configuration-app)
-and have two [YAML files](../../configuration-yaml) (though they can be blank if you don't need them):
+To start a Java application, you need to understand the [Web PaaS structure](/pages/web/web-paas/overview-structure).
+At minimum, you to configure your [application](/pages/web/web-paas/configuration-app)
+and have two [YAML files](/pages/web/web-paas/configuration-yaml) (though they can be blank if you don't need them):
 
-* [Routes](../../configuration-routes)
-* [Services](../../configuration-services)
+* [Routes](/pages/web/web-paas/configuration-routes)
+* [Services](/pages/web/web-paas/configuration-services)
 
 ### Application
 
@@ -58,18 +56,18 @@ web:
         start: [3]
 ```
 
-1\. [A Java version](../#supported-versions), e,g.: `java:11`
+1\. [A Java version](/pages/web/web-paas/languages-java#supported-versions), e,g.: `java:11`
 
-2\. [Hooks define what happens when building the application](../../configuration-app/build#build). This build process typically generates an executable file such as a uber-jar e.g.: `mvn clean package`
+2\. [Hooks define what happens when building the application](/pages/web/web-paas/configuration-app/build#build). This build process typically generates an executable file such as a uber-jar e.g.: `mvn clean package`
 
-3\. [The commands key defines the command to launch the application](../../configuration-app/web#commands). E.g.:  `java -jar file.jar`
+3\. [The commands key defines the command to launch the application](/pages/web/web-paas/configuration-app/web#commands). E.g.:  `java -jar file.jar`
 
 4\. In the start's command needs to receive the port where the application will execute thought the `PORT` environment. That's best when your app follows the port bind principle. E.g.: `java -jar jar --port=$PORT`
 
 
 > [!primary]  
 > 
-> Be aware that after the build, it creates a read-only system. You have the [mount option to create a writable folder](../../configuration-app/storage#mounts).
+> Be aware that after the build, it creates a read-only system. You have the [mount option to create a writable folder](/pages/web/web-paas/configuration-app/storage#mounts).
 > 
 > 
 
@@ -99,9 +97,9 @@ You have the option to use several languages in microservices. If you're using J
 
 * [Maven Modules](https://maven.apache.org/guides/mini/guide-multiple-modules.html)
 * [Gradle Multi-project](https://guides.gradle.org/creating-multi-project-builds/)
-* [Git submodules](../../development-submodules)
+* [Git submodules](/pages/web/web-paas/development-submodules)
 
-[Web PaaS supports multiple applications](../../configuration-app/multi-app) and there are two options:
+[Web PaaS supports multiple applications](/pages/web/web-paas/configuration-app/multi-app) and there are two options:
 
 * One application YAML file to each application
 * Aggregate all applications in a single file with an `applications.yaml` file
@@ -121,9 +119,9 @@ You have the option to use several languages in microservices. If you're using J
 
 ## Access to services included at Web PaaS
 
-[Web PaaS has services managed by Web PaaS itself such as database, cache and search engine](../../configuration-services). However, you can use a database or any services such as a transition process, just be aware of the [firewall](../../configuration-app/firewall).
+[Web PaaS has services managed by Web PaaS itself such as database, cache and search engine](/pages/web/web-paas/configuration-services). However, you can use a database or any services such as a transition process, just be aware of the [firewall](/pages/web/web-paas/configuration-app/firewall).
 
-When applications need to access a service, it is important to include the [Relationships key](../../configuration-app/relationships), because. by default an application may not talk to any other container within a project it includes others projects as a microservices architecture.
+When applications need to access a service, it is important to include the [Relationships key](/pages/web/web-paas/configuration-app/relationships), because. by default an application may not talk to any other container within a project it includes others projects as a microservices architecture.
 
 To connect to a service from your deployed application, you will need to pass the relationships information into your application's configuration.  The way to do so varies with the application.  The most common mechanisms are listed below.
 
@@ -131,7 +129,7 @@ To connect to a service from your deployed application, you will need to pass th
 
 If you are using a framework that follows the [Twelve-Factor App](https://12factor.net/) methodology, particularly the [third point](https://12factor.net/config), you will be able to configure the application directly from environment variables.  Examples of such frameworks include Spring, Eclipse MicroProfile Config, Quarkus, and Micronauts.
 
-The services information is available in the [**PLATFORM_RELATIONSHIPS** environment variable](../../development-variables).
+The services information is available in the [**PLATFORM_RELATIONSHIPS** environment variable](/pages/web/web-paas/development-variables).
 This variable is a base64-encoded JSON object with keys of the relationship name and values of arrays of relationship endpoint definitions.
 
 Web PaaS supports the [`jq` tool](https://stedolan.github.io/jq/), which allows to extract information from this JSON.
@@ -148,7 +146,7 @@ export DB_HOST=`echo $PLATFORM_RELATIONSHIPS | base64 --decode | jq -r ".databas
 | [Payara JPA](https://community.platform.sh/t/how-to-overwrite-variables-to-payara-jpa-access-platform-sh-sql-services/519) | [Source](https://github.com/platformsh-examples/java-overwrite-configuration/blob/master/payara/README.md) |
 
 To reduce the number of lines in the application file and to make it cleaner,
-you have the option to move the variable environment to another file: a [`.environment` file](../../development-variables#shell-variables).
+you have the option to move the variable environment to another file: a [`.environment` file](/pages/web/web-paas/development-variables#shell-variables).
 
 E.g.:
 

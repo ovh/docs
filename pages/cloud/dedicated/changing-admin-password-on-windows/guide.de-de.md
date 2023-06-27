@@ -1,9 +1,6 @@
 ---
 title: 'Administrator-Passwort eines Windows Servers ändern'
-slug: windows-admin-passwort-aendern
 excerpt: 'Erfahren Sie hier, wie Sie das Administrator-Passwort auf einem Windows Dedicated Server ändern'
-section: 'Server Management'
-order: 2
 updated: 2021-01-12
 ---
 
@@ -11,7 +8,7 @@ updated: 2021-01-12
 
 ## Ziel
 
-Bei der Installation oder Neuinstallation eines Windows-Betriebssystems wird Ihnen ein Passwort für den Root-Zugriff zugeteilt. Wir empfehlen dringend, dass Sie dieses ursprüngliche Passwort ändern, wie in unserer Anleitung zum [Absichern eines Servers](../dedizierten-server-sichern/) beschrieben. Wenn Sie Ihr Administrator-Passwort verloren haben, müssen Sie es im Rescue-Modus zurücksetzen.
+Bei der Installation oder Neuinstallation eines Windows-Betriebssystems wird Ihnen ein Passwort für den Root-Zugriff zugeteilt. Wir empfehlen dringend, dass Sie dieses ursprüngliche Passwort ändern, wie in unserer Anleitung zum [Absichern eines Servers](/pages/cloud/dedicated/securing-a-dedicated-server) beschrieben. Wenn Sie Ihr Administrator-Passwort verloren haben, müssen Sie es im Rescue-Modus zurücksetzen.
 
 **Diese Anleitung führt Sie durch die notwendigen Schritte zur Änderung des Admin-Passworts Ihres Servers mittels der für ein Windows-Betriebssystem verfügbaren Rescue-Modus-Optionen.**
 
@@ -42,11 +39,11 @@ Die Durchführung dieser Operation kann einige Minuten dauern. Sie können den F
 
 ![rescuereboot](images/adminpw_win_02.png){.thumbnail}
 
-Weitere Informationen zum Rescue-Modus finden Sie in [dieser Anleitung](../ovh-rescue/).
+Weitere Informationen zum Rescue-Modus finden Sie in [dieser Anleitung](/pages/cloud/dedicated/rescue_mode).
 
 ### Schritt 2: Systempartition mounten
 
-Verbinden Sie sich via SSH mit Ihrem Server. (Wenn nötig, lesen Sie die Anleitung [zu SSH](../ssh-einfuehrung/).) Bei Windows-Servern finden Sie Partitionen vom Typ "Microsoft LDM Data" vor:
+Verbinden Sie sich via SSH mit Ihrem Server. (Wenn nötig, lesen Sie die Anleitung [zu SSH](/pages/cloud/dedicated/ssh_introduction).) Bei Windows-Servern finden Sie Partitionen vom Typ "Microsoft LDM Data" vor:
 
 ```
 # fdisk -l
@@ -300,7 +297,7 @@ Die Durchführung dieser Operation kann einige Minuten dauern. Sie können den F
 
 ![rescuereboot](images/adminpw_win_02.png){.thumbnail}
 
-Weitere Informationen zum Rescue-Modus finden Sie in [dieser Anleitung](../ovh-rescue/).
+Weitere Informationen zum Rescue-Modus finden Sie in [dieser Anleitung](/pages/cloud/dedicated/rescue_mode).
 
 #### Schritt 2: Derzeitiges Passwort löschen
 
@@ -334,8 +331,8 @@ Fahren Sie anschließend fort mit [Schritt 5: Ein neues Passwort festlegen (IPMI
 
 ## Weiterführende Informationen
 
-[Rescue-Modus aktivieren und verwenden](../ovh-rescue/)
+[Rescue-Modus aktivieren und verwenden](/pages/cloud/dedicated/rescue_mode)
 
-[Verwendung der IPMI-Konsole für Dedicated Server](../verwendung-ipmi-dedicated-server/)
+[Verwendung der IPMI-Konsole für Dedicated Server](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

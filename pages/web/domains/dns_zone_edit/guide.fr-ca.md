@@ -1,9 +1,6 @@
 ---
 title: 'Éditer une zone DNS OVHcloud'
-slug: editer-ma-zone-dns
 excerpt: 'Découvrez comment éditer une zone DNS OVHcloud via votre espace client'
-section: 'DNS et zone DNS'
-order: 03
 updated: 2022-07-07
 ---
 
@@ -19,7 +16,7 @@ Par exemple, lorsque vous souhaitez accéder au site *mydomain.ovh*, votre requ�
 
 Au vu des manipulations que vous serez amenés à effectuer dans l'espace client, il est important de différencier les **serveurs DNS** et la **zone DNS**. En effet, c'est au niveau du **serveur DNS** qu'est configurée la **zone DNS**. 
 
-Vous trouvez les informations relatives aux **serveurs DNS** et leur modification sur notre guide « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](../generalites-serveurs-dns/) » .
+Vous trouvez les informations relatives aux **serveurs DNS** et leur modification sur notre guide « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](/pages/web/domains/dns_server_general_information) » .
 
 ![DNS](images/dnsserver.png){.thumbnail}
 
@@ -79,7 +76,7 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 > Un enregistrement TXT utilisant le même domaine ou sous-domaine qu'un enregistrement CNAME perturbe le fonctionnement de ce dernier. Votre enregistrement CNAME ne fonctionnera alors que partiellement ou pas du tout.
 >
 
-**Champ NS** : Définit les serveurs DNS associés à votre zone DNS. Par exemple, si les enregistrements NS de votre zone DNS affichent les serveurs *dns19.ovh.net* et *ns19.ovh.net*, vous devrez alors utiliser ces derniers dans l'onglet `Serveurs DNS`{.action} de votre espace client. Consultez notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](../generalites-serveurs-dns/) » pour plus d'informations.
+**Champ NS** : Définit les serveurs DNS associés à votre zone DNS. Par exemple, si les enregistrements NS de votre zone DNS affichent les serveurs *dns19.ovh.net* et *ns19.ovh.net*, vous devrez alors utiliser ces derniers dans l'onglet `Serveurs DNS`{.action} de votre espace client. Consultez notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](/pages/web/domains/dns_server_general_information) » pour plus d'informations.
 
 > [!warning]
 >
@@ -88,9 +85,9 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 
 #### Enregistrements e-mail
 
-**MX** : Relie un nom de domaine à un serveur e-mail. Par exemple, l'adresse *10 mx1.mail.ovh.ca* correspond à l'un des serveurs e-mail OVHcloud lorsque vous possédez une offre e-mail OVHcloud. Il est probable que votre fournisseur e-mail dispose de plusieurs serveurs e-mail : plusieurs champs MX doivent donc être créés. Consultez notre documentation « [Ajouter un champ MX à la configuration de son nom de domaine](../mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/) ».
+**MX** : Relie un nom de domaine à un serveur e-mail. Par exemple, l'adresse *10 mx1.mail.ovh.ca* correspond à l'un des serveurs e-mail OVHcloud lorsque vous possédez une offre e-mail OVHcloud. Il est probable que votre fournisseur e-mail dispose de plusieurs serveurs e-mail : plusieurs champs MX doivent donc être créés. Consultez notre documentation « [Ajouter un champ MX à la configuration de son nom de domaine](/pages/web/domains/dns_zone_mx) ».
 
-**SPF** : Permet d'éviter les potentielles usurpations d’identité sur les adresses e-mail utilisant votre nom de domaine (spoofing). Par exemple, l'enregistrement `v=spf1 include:mx.ovh.ca ~all` indique que seuls les serveurs d'envoi liés à votre offre mail OVHCloud peuvent être considérés par le serveur de réception comme légitimes. Il est possible de renseigner cet enregistrement sous la forme d'un champ TXT ou via notre système de configuration automatique. Consultez notre documentation « [Ajouter un champ SPF à la configuration de son nom de domaine](../le-champ-spf/) » pour en savoir plus.
+**SPF** : Permet d'éviter les potentielles usurpations d’identité sur les adresses e-mail utilisant votre nom de domaine (spoofing). Par exemple, l'enregistrement `v=spf1 include:mx.ovh.ca ~all` indique que seuls les serveurs d'envoi liés à votre offre mail OVHCloud peuvent être considérés par le serveur de réception comme légitimes. Il est possible de renseigner cet enregistrement sous la forme d'un champ TXT ou via notre système de configuration automatique. Consultez notre documentation « [Ajouter un champ SPF à la configuration de son nom de domaine](/pages/web/domains/dns_zone_spf) » pour en savoir plus.
 
 **DKIM** : Permet de vérifier l'authenticité du nom de domaine de l'expéditeur et assurer l'intégrité de l'e-mail envoyé. L'enregistrement DKIM se présente sous la forme d'une clé composée de plusieurs caractères. La clé DKIM est fournie par votre prestataire e-mail, il est possible de la renseigner sous la forme d'un champ TXT.
 
@@ -199,9 +196,9 @@ Vous pouvez aussi modifier le TTL d'un enregistrement DNS. Cependant, cette mani
 
 ## Aller plus loin
 
-[Généralités sur les serveurs DNS](../generalites-serveurs-dns/){.external}.
+[Généralités sur les serveurs DNS](/pages/web/domains/dns_server_general_information){.external}.
 
-[Ajouter un champ SPF à la configuration de son nom de domaine](../le-champ-spf/){.external}.
+[Ajouter un champ SPF à la configuration de son nom de domaine](/pages/web/domains/dns_zone_spf){.external}.
 
 [Protégez votre domaine contre le Cache Poisoning avec le DNSSEC](https://www.ovhcloud.com/fr/domains/dnssec/){.external}.
 

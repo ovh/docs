@@ -1,17 +1,14 @@
 ---
 title: 'Configurar a rede em Windows Server com Hyper-V nas gamas High Grade & SCALE'
-slug: hyperv-network-hg-scale
 excerpt: 'Descubra como configurar a rede no Windows Server com Hyper-V nas gamas High Grade & SCALE'
-section: 'Utilização avançada'
-order: 5
-updated: 2021-11-15
+updated: 2023-06-20
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 15/11/2021**
+**Última atualização: 20/06/2023**
 
 ## Objetivo
 
@@ -180,7 +177,7 @@ Depois de introduzir todos os endereços, clique em `OK`{.action} para fechar a 
 
 > [!warning]
 >
-> Esta etapa pode provocar uma perda de ligação. Se isso acontecer, ligue-se através do [IPMI](https://docs.ovh.com/pt/dedicated/usar-ipmi-servidores-dedicados/) e altere novamente a configuração. Poderá verificar que a gateway predefinida voltou ao estado vazio. Adicione a gateway 100.64.0.1.
+> Esta etapa pode provocar uma perda de ligação. Se isso acontecer, ligue-se através do [IPMI](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers) e altere novamente a configuração. Poderá verificar que a gateway predefinida voltou ao estado vazio. Adicione a gateway 100.64.0.1.
 >
 
 #### Adicionar uma estrada estática
@@ -199,7 +196,7 @@ Interface List
 ```
 
 No nosso exemplo, pode ver que o nosso cartão Hyper-V tem o ID 22.<br>
-Tome nota do seu cartão Hyper-V e execute o comando `route add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0 si 22` (substitua o IP e o ID de interface pelo que recebeu).<br>
+Tome nota do seu cartão Hyper-V e execute o comando `route add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0 if 22` (substitua o IP e o ID de interface pelo que recebeu).<br>
 Deveriam obter o resultado "OK!".
 
 ```console

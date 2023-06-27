@@ -1,9 +1,6 @@
 ---
 title: 'Partilha de calendários em OWA'
 excerpt: 'Saiba como partilhar calendários no Exchange'
-slug: exchange_2016_partilhar_um_calendario_atraves_do_webmail_owa
-section: 'Utilização do Outlook Web Application (OWA)'
-order: 03
 updated: 2020-02-19
 ---
 

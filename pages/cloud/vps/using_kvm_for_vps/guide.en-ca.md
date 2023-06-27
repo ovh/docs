@@ -1,8 +1,6 @@
 ---
 title: Using the KVM for a VPS
 excerpt: Find out how to access your VPS using the KVM functionality
-slug: use-kvm-for-vps
-section: 'Getting started'
 updated: 2022-08-30
 ---
 

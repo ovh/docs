@@ -1,9 +1,6 @@
 ---
 title: "Créer une instance depuis l'interface Horizon"
-slug: creer-une-instance-dans-horizon
 excerpt: "Apprenez à créer une instance depuis l'interface Horizon"
-section: Gestion depuis Horizon
-order: 03
 updated: 2022-08-01
 ---
 
@@ -18,11 +15,11 @@ Vous avez la possibilité de créer des instances directement depuis l'interface
 ## Prérequis
 
 - Posséder un projet [Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external} créé depuis votre compte OVHcloud.
-- [Être connecté à l'interface Horizon](https://docs.ovh.com/fr/public-cloud/horizon/){.external}. 
+- [Être connecté à l'interface Horizon](/pages/platform/public-cloud/introducing_horizon){.external}. 
 
 ## En pratique
 
-Pour lancer la création d'une instance, connectez-vous à l'interface Horizon. Si vous avez besoin d'aide pour réaliser cette manipulation, reportez-vous à [notre documentation](https://docs.ovh.com/fr/public-cloud/horizon/).
+Pour lancer la création d'une instance, connectez-vous à l'interface Horizon. Si vous avez besoin d'aide pour réaliser cette manipulation, reportez-vous à [notre documentation](/pages/platform/public-cloud/introducing_horizon).
 
 Cliquez ensuite sur `Compute`{.action} dans le menu de gauche, puis sur `Instances`{.action}.
 
@@ -54,7 +51,7 @@ Vous devez alors compléter différentes informations. Si nécessaire, aidez-vou
 
 > [!warning] 
 > 
-> Bien que le champ "Key Pair" ne soit pas obligatoire dans l'interface Horizon lors de la création d'une instance, l'enregistrement d'une clé SSH est absolument nécessaire pour pouvoir se connecter à une instance. Sans clé SSH, vous serez amené à redémarrer l'instance en mode rescue pour pourvoir créer un mot de passe ou ajouter une clé SSH dans le fichier approprié (pour plus d'informations, consultez le guide [Changer sa clé SSH en cas de perte](../changer-sa-cle-ssh-en-cas-de-perte/#en-pratique)).
+> Bien que le champ "Key Pair" ne soit pas obligatoire dans l'interface Horizon lors de la création d'une instance, l'enregistrement d'une clé SSH est absolument nécessaire pour pouvoir se connecter à une instance. Sans clé SSH, vous serez amené à redémarrer l'instance en mode rescue pour pourvoir créer un mot de passe ou ajouter une clé SSH dans le fichier approprié (pour plus d'informations, consultez le guide [Changer sa clé SSH en cas de perte](/pages/platform/public-cloud/replacing_lost_ssh_key#en-pratique)).
 >
 
 Dès que vous êtes prêt à lancer la ou les instances souhaitées, cliquez sur le bouton `Launch Instance`{.action}.

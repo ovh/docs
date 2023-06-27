@@ -1,9 +1,6 @@
 ---
 title: 'Tworzenie automatycznych podpisów'
 excerpt: 'Dowiedz się, jak dodać automatyczne podpisy do swoich kont e-mail'
-slug: exchange_20132016_automatyczny_podpis_-_disclaimer
-section: 'Funkcje kont Exchange'
-order: 07
 updated: 2020-03-26
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: 'Crear una dirección de correo electrónico en un MX Plan'
-slug: correo_guia_de_creacion_de_una_direccion_de_correo_electronico
 excerpt: 'Cómo crear una dirección de correo electrónico en la solución MX Plan'
-section: 'Primeros pasos'
-order: 02
 updated: 2022-10-11
 ---
 
@@ -60,7 +57,7 @@ Repita el procedimiento descrito en este apartado para crear las cuentas que des
 
 Vaya a la [página de conexión al webmail](https://www.ovhcloud.com/es/mail/){.external} e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
-La primera vez que se conecte al webmail, deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía "[Utilizar una dirección de correo desde Outlook Web App (OWA)"](https://docs.ovh.com/us/es/emails/uso-outlook-en-la-web/){.external}.
+La primera vez que se conecte al webmail, deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía "[Utilizar una dirección de correo desde Outlook Web App (OWA)"](/pages/web/emails/email_owa){.external}.
 
 ![Correo electrónico](images/mxplan-creation-new-step5.png){.thumbnail}
 
@@ -72,7 +69,7 @@ Desde la nueva versión MXplan, cuando debe eliminarla, se habla de *reinicializ
 
 > [!warning]
 >
-> Antes de eliminar las cuentas de correo, asegúrese de que no se utilizan. Es posible que necesite guardar estas cuentas. Si lo necesita, consulte la guía [Migrar manualmente su dirección de correo electrónico](https://docs.ovh.com/us/es/emails/migrar-sus-direcciones-de-correo-manualmente/), en la que se explica cómo exportar los datos de una cuenta desde el área de cliente o desde un cliente de correo.
+> Antes de eliminar las cuentas de correo, asegúrese de que no se utilizan. Es posible que necesite guardar estas cuentas. Si lo necesita, consulte la guía [Migrar manualmente su dirección de correo electrónico](/pages/web/emails/manual_email_migration), en la que se explica cómo exportar los datos de una cuenta desde el área de cliente o desde un cliente de correo.
 
 En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} a la derecha de la cuenta que desea eliminar y luego en `Restaurar la cuenta`{.action}.
 
@@ -85,24 +82,24 @@ Puede configurar su dirección de correo en el dispositivo que desee (smartphone
 > [!tabs]
 > **Windows**
 >>
->> - [Correo en Windows 10](https://docs.ovh.com/us/es/emails/configuracion-correo-windows-10/)
->> - [Outlook](https://docs.ovh.com/us/es/emails/configuracion-outlook-2016/)
->> - [Thunderbird](https://docs.ovh.com/us/es/emails/correo_guia_de_configuracion_en_thunderbird/)
+>> - [Correo en Windows 10](/pages/web/emails/how_to_configure_windows_10)
+>> - [Outlook](/pages/web/emails/how_to_configure_outlook_2016)
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_windows)
 >>
 > **Apple**
 >>
->> - [Mail de macOS](https://docs.ovh.com/us/es/emails/correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/)
->> - [Correo electrónico para iPhone o iPad](https://docs.ovh.com/us/es/emails/correo_guia_de_configuracion_en_iphone_ios_91/)
->> - [Outlook Mac OS](https://docs.ovh.com/us/es/emails/configuracion-outlook-2016-mac/)
->> - [Thunderbird](https://docs.ovh.com/us/es/emails/correo_guia_de_configuracion_para_thunderbird_en_mac/)
+>> - [Mail de macOS](/pages/web/emails/how_to_configure_mail_macos)
+>> - [Correo electrónico para iPhone o iPad](/pages/web/emails/how_to_configure_ios)
+>> - [Outlook Mac OS](/pages/web/emails/how_to_configure_outlook_2016_mac)
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_mac)
 >>
 > **Android**
 >>
->> - [Android](https://docs.ovh.com/us/es/emails/configuracion-android/)
+>> - [Android](/pages/web/emails/how_to_configure_android)
 >>
 > **Otros**
 >>
->> - [Interfaz Gmail](https://docs.ovh.com/us/es/emails/configurar-direccion-de-correo-electronico-en-interfaz-web-gmail/)
+>> - [Interfaz Gmail](/pages/web/emails/how_to_configure_gmail)
 >>
 
 A continuación se indican los parámetros necesarios para configurar una cuenta MX Plan:
@@ -125,7 +122,7 @@ A continuación se indican los parámetros necesarios para configurar una cuenta
 
 > [!warning]
 >
-> Si necesita ayuda para configurar la dirección de correo en su dispositivo, consulte nuestras [guías de configuración](../) o contacte con el editor de la aplicación que utilice.
+> Si necesita ayuda para configurar la dirección de correo en su dispositivo, consulte nuestras [guías de configuración](/products/web-cloud-email-collaborative-solutions-mx-plan) o contacte con el editor de la aplicación que utilice.
 >
 
 ## Más información

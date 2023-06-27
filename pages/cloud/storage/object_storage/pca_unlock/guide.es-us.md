@@ -1,9 +1,6 @@
 ---
 title: Cloud Archive Swift - Descongelar los datos almacenados en Public Cloud Archive
-slug: pca/unlock
 excerpt: Cómo desbloquear los archivos
-section: OpenStack Swift Archive Storage Class Specifics
-order: 030
 updated: 2022-04-12
 ---
 
@@ -24,8 +21,8 @@ Para los datos que no se consulten con frecuencia, es necesaria una solicitud de
 - Deshielo desde el Panel de configuración de OVHcloud:
     - Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 - Deshielo en python-swiftclient:
-    - [Preparar el entorno para utilizar la API OpenStack](https://docs.ovh.com/us/es/public-cloud/prepare_the_environment_for_using_the_openstack_api/) instalando python-swiftclient.
-    - [Cargar las variables de entorno OpenStack](https://docs.ovh.com/us/es/public-cloud/set-openstack-environment-variables/).
+    - [Preparar el entorno para utilizar la API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) instalando python-swiftclient.
+    - [Cargar las variables de entorno OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 ## Procedimiento
 
@@ -41,7 +38,7 @@ Una vez iniciado el proceso, la fecha y la hora de disponibilidad del archivo co
 
 ![plazo antes de desvincular](images/unfreeze_result.png){.thumbnail}
 
-El archivo estará disponible para descarga una vez transcurrido ese plazo. A continuación, podrá realizar la descarga directamente desde el navegador o a través de [un cliente Swift/SFTP/SCP](https://docs.ovh.com/gb/en/storage/pca/sftp/).
+El archivo estará disponible para descarga una vez transcurrido ese plazo. A continuación, podrá realizar la descarga directamente desde el navegador o a través de [un cliente Swift/SFTP/SCP](/pages/cloud/storage/object_storage/pca_sftp).
 
 ### Descongelar los objetos a través de python-swiftclient
 

@@ -1,9 +1,6 @@
 ---
 title: "Scopri l’interfaccia Public Cloud"
 excerpt: "Visita guidata dell'interfaccia Public Cloud per scoprire le diverse sezioni"
-slug: interfaccia-public-cloud
-section: Per iniziare
-order: 03
 updated: 2021-12-06
 ---
 
@@ -22,7 +19,7 @@ Hai appena creato il tuo progetto Public Cloud e vuoi saperne di più sull'inter
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
-- Aver creato un [primo progetto Public Cloud](https://docs.ovh.com/it/public-cloud/create_a_public_cloud_project/).
+- Aver creato un [primo progetto Public Cloud](/pages/platform/public-cloud/create_a_public_cloud_project).
 
 ## Procedura
 
@@ -82,18 +79,18 @@ Nel tuo progetto Public Cloud sono disponibili diversi tool di gestione, in fond
 
 |Ingresso del menu|Descrizione|
 |---|---|
-|**Horizon**|È l'[interfaccia grafica](https://docs.ovh.com/it/public-cloud/horizon/) generalmente disponibile su OpenStack. e non viene modificata, permettendo agli utenti abituati a questa interfaccia di navigare facilmente.|
-|**Users and Roles**|Permette di [creare utenti](https://docs.ovh.com/it/public-cloud/creation-and-deletion-of-openstack-user/) e attribuire loro un ruolo. Questi utenti permettono di accedere direttamente alle API o all'interfaccia Horizon. Ad esempio, puoi creare un utente per le tue operazioni di manutenzione classiche e un utente per i tuoi strumenti di automazione, come ad esempio Terraform.|
-|**Quota and Regions**|Questo strumento ti permette di gestire le localizzazioni e i limiti di risorse disponibili sul tuo progetto.<br><br>**Quota**: In base a determinati criteri (numero di fatture già pagate, utilizzo di altri prodotti OVHcloud), il nostro sistema applica delle quote (limiti) al numero di risorse che puoi creare, per evitare problemi di mancato pagamento. Di default, il sistema aumenta automaticamente le proprie quote quando vengono soddisfatti determinati criteri. Tuttavia, è possibile [aumentare manualmente una quota](https://docs.ovh.com/it/public-cloud/increase-public-cloud-quota/#aumentare-la-quota-di-risorse-manualmente) tramite questo strumento.<br><br>**Localizzazioni**: Il Public Cloud è disponibile in diverse localizzazioni nel mondo. Inoltre, ogni localizzazione può includere diverse "regioni" (concetto specifico di OpenStack). Ad esempio, per un cliente europeo, la zona APAC (Asia Pacifica) è disattivata di default. Se questo è il tuo caso, puoi attivare altre regione da questo menu.|
-|**SSH Keys**|Uno strumento che ti permette di [gestire le tue chiavi SSH](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/#step-1-crea-chiavi-ssh) in modo centralizzato.|
-|**Billing Control**|Public Cloud che funziona in *pay as you go*, cioè il pagamento a consumo, le fatture vengono saldate alla fine del mese. In [questo menu](https://docs.ovh.com/it/public-cloud/analizza_i_tuoi_consumi_e_gestisci_la_tua_fatturazione/) è possibile monitorare i consumi correnti, consultare la previsione della prossima fattura e, ovviamente, consultare le fatture precedenti.|
-|**Credit and Vouchers**|Questo menu ti permette di consultare il consumo di un *voucher*, aggiungerne una o [aggiungere credito](https://docs.ovh.com/it/public-cloud/aggiungi_credito_cloud_al_tuo_progetto/) direttamente al tuo progetto Public Cloud.|
-|**Contacts and Rights**|Oltre a modificare il contatto tecnico o di fatturazione del tuo progetto, puoi [aggiungere altri contatti](https://docs.ovh.com/it/public-cloud/change_project_contacts/) (account OVHcloud) per gestire tecnicamente il tuo progetto. È inoltre possibile aggiungere utenti in consultazione solo *read-only*.|
-|**Project settings**|Questo tool ti permette di configurare i parametri generali del progetto come nome, configurazione come "progetto predefinito dell'account", compatibilità HDS o [eliminare il tuo progetto Public Cloud](https://docs.ovh.com/it/public-cloud/delete_a_project/).|
+|**Horizon**|È l'[interfaccia grafica](/pages/platform/public-cloud/introducing_horizon) generalmente disponibile su OpenStack. e non viene modificata, permettendo agli utenti abituati a questa interfaccia di navigare facilmente.|
+|**Users and Roles**|Permette di [creare utenti](/pages/platform/public-cloud/create_and_delete_a_user) e attribuire loro un ruolo. Questi utenti permettono di accedere direttamente alle API o all'interfaccia Horizon. Ad esempio, puoi creare un utente per le tue operazioni di manutenzione classiche e un utente per i tuoi strumenti di automazione, come ad esempio Terraform.|
+|**Quota and Regions**|Questo strumento ti permette di gestire le localizzazioni e i limiti di risorse disponibili sul tuo progetto.<br><br>**Quota**: In base a determinati criteri (numero di fatture già pagate, utilizzo di altri prodotti OVHcloud), il nostro sistema applica delle quote (limiti) al numero di risorse che puoi creare, per evitare problemi di mancato pagamento. Di default, il sistema aumenta automaticamente le proprie quote quando vengono soddisfatti determinati criteri. Tuttavia, è possibile [aumentare manualmente una quota](/pages/platform/public-cloud/increasing_public_cloud_quota#aumentare-la-quota-di-risorse-manualmente) tramite questo strumento.<br><br>**Localizzazioni**: Il Public Cloud è disponibile in diverse localizzazioni nel mondo. Inoltre, ogni localizzazione può includere diverse "regioni" (concetto specifico di OpenStack). Ad esempio, per un cliente europeo, la zona APAC (Asia Pacifica) è disattivata di default. Se questo è il tuo caso, puoi attivare altre regione da questo menu.|
+|**SSH Keys**|Uno strumento che ti permette di [gestire le tue chiavi SSH](/pages/platform/public-cloud/public-cloud-first-steps#step-1-crea-chiavi-ssh) in modo centralizzato.|
+|**Billing Control**|Public Cloud che funziona in *pay as you go*, cioè il pagamento a consumo, le fatture vengono saldate alla fine del mese. In [questo menu](/pages/platform/public-cloud/analyze_billing) è possibile monitorare i consumi correnti, consultare la previsione della prossima fattura e, ovviamente, consultare le fatture precedenti.|
+|**Credit and Vouchers**|Questo menu ti permette di consultare il consumo di un *voucher*, aggiungerne una o [aggiungere credito](/pages/platform/public-cloud/add_cloud_credit_to_project) direttamente al tuo progetto Public Cloud.|
+|**Contacts and Rights**|Oltre a modificare il contatto tecnico o di fatturazione del tuo progetto, puoi [aggiungere altri contatti](/pages/platform/public-cloud/change_project_contacts) (account OVHcloud) per gestire tecnicamente il tuo progetto. È inoltre possibile aggiungere utenti in consultazione solo *read-only*.|
+|**Project settings**|Questo tool ti permette di configurare i parametri generali del progetto come nome, configurazione come "progetto predefinito dell'account", compatibilità HDS o [eliminare il tuo progetto Public Cloud](/pages/platform/public-cloud/delete_a_project).|
 
 ## Per saperne di più
 
-[Creare e connettersi a un’istanza Public Cloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/)
+[Creare e connettersi a un’istanza Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps)
 
 Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 

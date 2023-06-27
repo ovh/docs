@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Zainstaluj ręcznie Joomla!"
 excerpt: "Dowiedz się, jak ręcznie zainstalować CMS Joomla!"
-slug: cms_-_reczna_instalacja_modulu_joomla
-section: CMS
-order: 05
 updated: 2023-04-07
 ---
 
@@ -26,9 +23,9 @@ Znajdziesz tutaj wszystkie elementy do ręcznego zainstalowania systemu CMS (Con
 
 > [!success]
 >
-> Do zainstalowania Joomla! **automatycznie** w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) sprawdź naszą dokumentację dotyczącą [instalacji modułu "jednym kliknięciem"](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/).
+> Do zainstalowania Joomla! **automatycznie** w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) sprawdź naszą dokumentację dotyczącą [instalacji modułu "jednym kliknięciem"](/pages/web/hosting/cms_install_1_click_modules).
 >
-> Aby zainstalować **ręcznie inny CMS** (WordPress, Drupal, PrestaShop), zapoznaj się z naszą dokumentacją dotyczącą [ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/).
+> Aby zainstalować **ręcznie inny CMS** (WordPress, Drupal, PrestaShop), zapoznaj się z naszą dokumentacją dotyczącą [ręczna instalacja CMS](/pages/web/hosting/cms_manual_installation).
 >
 
 **Dowiedz się, jak ręcznie zainstalować CMS Joomla!**
@@ -45,7 +42,7 @@ Znajdziesz tutaj wszystkie elementy do ręcznego zainstalowania systemu CMS (Con
 
 Instalacja CMS **Joomla!** na Twoim [hostingu](https://www.ovhcloud.com/pl/web-hosting/) wymaga przygotowania.
 
-Postępuj zgodnie z **wszystkie etapy** opisane w tutorialu dotyczącym [Ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/) i przejdź do etapu 2 poniżej.
+Postępuj zgodnie z **wszystkie etapy** opisane w tutorialu dotyczącym [Ręczna instalacja CMS](/pages/web/hosting/cms_manual_installation) i przejdź do etapu 2 poniżej.
 
 ### Etap 2 - zakończenie ręcznej instalacji <a name="step2"></a>
 
@@ -87,7 +84,7 @@ Wpisz wymagane informacje dotyczące bazy danych:
 
 ![Joomla instalacja step 3](images/Joomla-install-db-connect-3.png){.thumbnail}
 
-W celu uzupełnienia poniższych pól należy zapoznać się z informacjami podanymi w **przewodniku nr 1.4** w przewodniku dotyczącym [ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/):
+W celu uzupełnienia poniższych pól należy zapoznać się z informacjami podanymi w **przewodniku nr 1.4** w przewodniku dotyczącym [ręczna instalacja CMS](/pages/web/hosting/cms_manual_installation):
 
 - *Select the database type*: wybierz rodzaj bazy danych spośród dostępnych typów dla systemu Joomla! Jeśli korzystasz ze współdzielonej bazy danych OVHcloud, możesz zostawić domyślną wartość **MySQLi**.
 
@@ -101,13 +98,13 @@ W celu uzupełnienia poniższych pól należy zapoznać się z informacjami poda
 >
 
 - *Either a username you created or a username provided by your host*: nazwa bazy danych jest identyczna, jeśli korzystasz z bazy danych zawartej w Twoim hostingu.
-W przypadku baz danych utworzonych w ramach usługi WWW Cloud Databases, zapoznaj się z informacjami podanymi w przewodniku [Ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/) **etap 1.4** .
+W przypadku baz danych utworzonych w ramach usługi WWW Cloud Databases, zapoznaj się z informacjami podanymi w przewodniku [Ręczna instalacja CMS](/pages/web/hosting/cms_manual_installation) **etap 1.4** .
 
 - *Either a password you created or a password provided by your host*: zdefiniowałeś ją podczas tworzenia bazy danych. Możliwe jest również, że w międzyczasie zmieniłeś hasło. Prosimy o jego sprawdzenie.
 
 - *Enter the database name*: nazwa ta została zdefiniowana podczas tworzenia bazy danych w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Jest on identyczny z nazwą użytkownika bazy danych, jeśli korzystasz z bazy danych zawartej w Twoim hostingu.
 
-- *Enter a table prefix or use the randomly generated one*: jeśli instalacja jest wykonywana z nową bazą danych, wprowadź odpowiedni prefiks. Jeśli korzystasz z bazy danych wykorzystywanej już przez inną stronę WWW, zapoznaj się z **krokiem 1.4** w przewodniku dotyczącym [ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/), aby nie wprowadzić prefiksu tabeli już używanego w Twojej bazie danych.
+- *Enter a table prefix or use the randomly generated one*: jeśli instalacja jest wykonywana z nową bazą danych, wprowadź odpowiedni prefiks. Jeśli korzystasz z bazy danych wykorzystywanej już przez inną stronę WWW, zapoznaj się z **krokiem 1.4** w przewodniku dotyczącym [ręczna instalacja CMS](/pages/web/hosting/cms_manual_installation), aby nie wprowadzić prefiksu tabeli już używanego w Twojej bazie danych.
 
 - **Connection Encryption**: pozostaw wartość **Default**.
 
@@ -119,7 +116,7 @@ Pojawi się następujący komunikat:
 
 Jeśli używasz bazy danych poza hostingiem lokalnym, usuń losowo wygenerowany token* podczas instalacji modułu Joomla!.
 
-Plik ten znajduje się w [przestrzeni dyskowej FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/).
+Plik ten znajduje się w [przestrzeni dyskowej FTP](/pages/web/hosting/ftp_connection).
 
 Po zalogowaniu się do katalogu **instalacja** Twojego Joomla! następnie usuń tylko *token* wskazany w wiadomości alertu. Jest on obecny w formie pliku **.txt**.
 

@@ -1,7 +1,5 @@
 ---
 title: RabbitMQ (Message queue service)
-slug: rabbitmq
-section: Services
 updated: 2021-06-03
 ---
 
@@ -28,7 +26,7 @@ See the [RabbitMQ documentation](http://www.rabbitmq.com/documentation.html) for
 
 ## Relationship
 
-The format exposed in the `$PLATFORM_RELATIONSHIPS` [environment variable](../../development-variables#platformsh-provided-variables):
+The format exposed in the `$PLATFORM_RELATIONSHIPS` [environment variable](/pages/web/web-paas/development-variables#platformsh-provided-variables):
 
 ```json  
 {

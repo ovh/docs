@@ -1,8 +1,6 @@
 ---
 title: 'Ajouter un lien LTE'
-slug: plus-itv2-lte
 excerpt: 'Découvrez comment ajouter un lien LTE à votre OverTheBox'
-section: "OverTheBox Plus et IT v2"
 updated: 2021-04-29
 ---
 
@@ -17,7 +15,7 @@ Toutefois, les liens LTE souffrent d'une plus grande latence, ce qui peut avoir 
 
 ## Prérequis
 
-- Une **OverTheBox** fournie par OVHcloud ou une installation depuis le projet Open Source (plus d'informations sur notre guide « [Installer l'image OverTheBox sur votre materiel](../installer-limage-overthebox-sur-votre-materiel/) »).
+- Une **OverTheBox** fournie par OVHcloud ou une installation depuis le projet Open Source (plus d'informations sur notre guide « [Installer l'image OverTheBox sur votre materiel](/pages/telecom/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel) »).
 - Disposer d'une clé LTE Huawei E3372 ainsi qu'une carte SIM permettant l'accès au réseau mobile de données.
 - Alternativement, vous pouvez également utiliser un téléphone sous Android ou iOS avec une carte SIM permettant l'accès au réseau mobile de données.
 

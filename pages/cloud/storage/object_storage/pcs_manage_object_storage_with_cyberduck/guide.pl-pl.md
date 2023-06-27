@@ -1,12 +1,9 @@
 ---
 title: Object Storage Swift - Zarządzanie Object Storage za pomocą oprogramowania CyberDuck
 routes:
-    canonical: 'https://docs.ovh.com/pl/storage/pca/cyberduck/'
+    canonical: '/pages/cloud/storage/object_storage/pca_cyberduck'
 excerpt: 'Zarządzanie Object Storage za pomocą oprogramowania CyberDuck'
-slug: pcs/manage-object-storage-with-cyberduck
-section: OpenStack Swift Storage Class Specifics
 legacy_guide_number: g1868
-order: 180
 updated: 2021-06-18
 ---
 
@@ -37,10 +34,10 @@ Przewodnik ten wyjaśnia, jak skonfigurować oprogramowanie Cyberduck, aby móc 
 ## Wymagania początkowe
 
 - Pobierz i zainstaluj [Cyberduck](https://cyberduck.io/).
-- Posiadanie identyfikatorów użytkowników (*OS_USERNAME*) i projektów (*OS_PROJECT_NAME* lub *OS_ANT_NAME*), które można uzyskać, pobierając plik "OpenRC" z menu [Users and Roles](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/#etap-1-zgromadzenie-zmiennych) w Twoim [Panelu klienta Public Cloud OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Posiadanie identyfikatorów użytkowników (*OS_USERNAME*) i projektów (*OS_PROJECT_NAME* lub *OS_ANT_NAME*), które można uzyskać, pobierając plik "OpenRC" z menu [Users and Roles](/pages/platform/public-cloud/loading_openstack_environment_variables#etap-1-zgromadzenie-zmiennych) w Twoim [Panelu klienta Public Cloud OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 - Posiadanie hasła użytkownika OpenStack
 
-Jeśli nie znasz hasła użytkownika OpenStack, możesz je zmienić zgodnie z [tym przewodnikiem](https://docs.ovh.com/pl/public-cloud/zmiana-hasla-horizon/).
+Jeśli nie znasz hasła użytkownika OpenStack, możesz je zmienić zgodnie z [tym przewodnikiem](/pages/platform/public-cloud/change_openstack_user_password_in_horizon).
 
 ## W praktyce
 
@@ -75,7 +72,7 @@ Kliknij `Połącz`{.action}. Po zalogowaniu będziesz miał dostęp do drzewa sw
 
 [Dokumentacja Cyberduck](https://trac.cyberduck.io/wiki/help/en){.external}
 
-[Pierwsze kroki z API Swift](https://docs.ovh.com/pl/public-cloud/pierwsze_kroki_z_api_swift/)
+[Pierwsze kroki z API Swift](/pages/cloud/storage/object_storage/pcs_getting_started_with_the_swift_api)
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 

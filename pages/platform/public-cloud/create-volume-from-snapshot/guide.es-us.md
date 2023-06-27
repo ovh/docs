@@ -1,9 +1,6 @@
 ---
 title: Crear un volumen a partir de un snapshot
-slug: create-volume-from-backup
 excerpt: Cómo crear discos adicionales a partir de una copia de seguridad de un disco adicional
-section: Almacenamiento
-order: 4
 updated: 2021-04-06
 ---
 
@@ -68,7 +65,7 @@ El proceso de vinculación del disco a la instancia comenzará en ese momento y 
 Debe evitar la navegación fuera de la pestaña en curso al asociar el disco. Esto puede interrumpir el proceso.
 >
 
-Una vez realizado el apego, puede seguir los siguientes pasos [en Linux](../crear_y_configurar_un_disco_adicional_en_una_instancia/#con-linux) o [Windows](../crear_y_configurar_un_disco_adicional_en_una_instancia/#con-windows).
+Una vez realizado el apego, puede seguir los siguientes pasos [en Linux](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#con-linux) o [Windows](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#con-windows).
 
 ## Más información
 

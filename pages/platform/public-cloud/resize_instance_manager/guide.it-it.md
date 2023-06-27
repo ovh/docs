@@ -1,9 +1,6 @@
 ---
 title: Ridimensiona un’istanza
 excerpt: Ridimensiona un'istanza dallo Spazio Cliente OVHcloud
-slug: resize-an-instance-manager
-section: Gestione dallo Spazio Cliente OVHcloud
-order: 6
 updated: 2022-08-24
 ---
 
@@ -57,7 +54,7 @@ Nella nuova scheda, fai scorrere la pagina fino alla sezione **Modello** per sel
 Se il tuo disco è uguale o inferiore a 50 GB, puoi passare a un'`istanza flessibile`{.action} se vuoi.
 
 > [!warning]
-> Attenzione: nel caso di un'istanza di tipo *flex*, non è possibile passare verso un'istanza classica attraverso lo Spazio Cliente. Per maggiori informazioni, consulta la nostra guida [Passare da un’istanza flex a un’istanza classica](https://docs.ovh.com/it/public-cloud/modificare-un-istanza-flex/).
+> Attenzione: nel caso di un'istanza di tipo *flex*, non è possibile passare verso un'istanza classica attraverso lo Spazio Cliente. Per maggiori informazioni, consulta la nostra guida [Passare da un’istanza flex a un’istanza classica](/pages/platform/public-cloud/revert_a_flex_instance).
 >
 
 Una volta effettuata la selezione, clicca su `Modifica il modello`{.action} per confermare la tua scelta.

@@ -1,9 +1,6 @@
 ---
 title: Configuration du DHCP dans NSX
-slug: nsx-dhcp-configuration
 excerpt: Découvrez comment ajouter un serveur DHCP à un segment
-section: NSX
-order: 03
 updated: 2023-02-27
 ---
 
@@ -23,7 +20,7 @@ updated: 2023-02-27
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-- Avoir **NSX** déployé avec deux segments de type overlay et VLAN configurés dans votre configuration NSX, vous pouvez vous aider de notre guide sur la [gestion des segments dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-segment-management).
+- Avoir **NSX** déployé avec deux segments de type overlay et VLAN configurés dans votre configuration NSX, vous pouvez vous aider de notre guide sur la [gestion des segments dans NSX](/pages/cloud/private-cloud/nsx-02-segment-management).
 
 ## En pratique
 
@@ -112,7 +109,7 @@ Sur un segment de type VLAN il n'est pas possible d'utiliser le profil créé po
 
 Pour pouvoir avoir un serveur DHCP sur ce segment, nous allons créer une configuration DHCP avec un nouveau profil directement attaché au segment.
 
-Si vous n'avez pas de segment de type de VLAN, aidez-vous du guide sur la [gestion des segments dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-segment-management/) pour le créer avec ces paramètres :
+Si vous n'avez pas de segment de type de VLAN, aidez-vous du guide sur la [gestion des segments dans NSX](/pages/cloud/private-cloud/nsx-02-segment-management) pour le créer avec ces paramètres :
 
 - **sous-réseau du VLAN** : 192.168.100.0/24 ;
 - **adresse IP de la passerelle et de l'interface** : 192.168.100.254/24.
@@ -160,9 +157,9 @@ Le serveur DHCP est actif sur ce segment de type VLAN.
 
 ## Aller plus loin
 
-[Premiers pas avec NSX](https://docs.ovh.com/fr/private-cloud/nsx-first-steps/)
+[Premiers pas avec NSX](/pages/cloud/private-cloud/nsx-01-first-steps)
 
-[Gestion des segments dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-segment-management/)
+[Gestion des segments dans NSX](/pages/cloud/private-cloud/nsx-02-segment-management)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

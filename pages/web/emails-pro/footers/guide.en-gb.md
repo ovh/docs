@@ -1,8 +1,5 @@
 ---
 title: 'Creating automatic signatures'
-slug: email-automatic-signature-disclaimer
-section: 'Getting started'
-order: 6
 updated: 2020-03-26
 ---
 
@@ -23,4 +20,4 @@ In the OVHcloud Control Panel, you can create universal signatures (footers) for
 
 ## Instructions
 
-Follow our guide [Creating automatic signatures](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_how_to_create_an_automatic_signature/){.external} in the “Microsoft collaborative solutions” section.
+Follow our guide [Creating automatic signatures](/pages/web/microsoft-collaborative-solutions/feature_footers){.external} in the “Microsoft collaborative solutions” section.

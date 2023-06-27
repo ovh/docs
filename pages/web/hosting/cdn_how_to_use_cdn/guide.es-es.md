@@ -1,9 +1,6 @@
 ---
 title: 'Acelerar un sitio web utilizando la CDN'
 excerpt: 'Cómo acelerar la carga de un sitio web en el alojamiento utilizando el servicio CDN'
-slug: guia_de_uso_del_acelerador_geocache_en_un_alojamiento_web
-section: 'Optimización del sitio web'
-order: 03
 updated: 2021-12-23
 ---
 
@@ -63,7 +60,7 @@ Marque la opción "Activar la CDN", haga clic en `Siguiente`{.action} y, seguida
 > [!warning]
 > 
 > Si añade un nombre de dominio externo a OVHcloud en multisitio al alojamiento web, debe indicar la dirección IP de la CDN de su alojamiento en la zona DNS del nombre de dominio.<br>
-> Consulte la [lista de direcciones IP de los clústeres y alojamientos web](https://docs.ovh.com/es/hosting/lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web/) para saber qué dirección IP corresponde a la CDN de su clúster.
+> Consulte la [lista de direcciones IP de los clústeres y alojamientos web](/pages/web/hosting/clusters_and_shared_hosting_IP) para saber qué dirección IP corresponde a la CDN de su clúster.
 
 **¿Por qué no puedo disfrutar de la IP geolocalizada con la opción CDN?** <br>
 <br>
@@ -178,7 +175,7 @@ Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`
 
 > [!warning]
 >
-> Para instalar un [módulo en 1 clic OVHcloud](https://docs.ovh.com/es/hosting/modulos-en-un-clic/), el WAF debe desactivarse para evitar que se bloquee la instalación del módulo.
+> Para instalar un [módulo en 1 clic OVHcloud](/pages/web/hosting/cms_install_1_click_modules), el WAF debe desactivarse para evitar que se bloquee la instalación del módulo.
 
 > [!primary]
 >

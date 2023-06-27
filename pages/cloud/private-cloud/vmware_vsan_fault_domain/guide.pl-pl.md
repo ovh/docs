@@ -1,8 +1,6 @@
 ---
 title: 'Zarządzanie domenami awarii vSAN'
-slug: vmware-vsan-fault-domain
 excerpt: 'Dowiedz się, jak zarządzać domenami awarii vSAN'
-section: 'Funkcje VMware vSphere'
 updated: 2021-12-23
 ---
 
@@ -20,7 +18,7 @@ Niniejszy przewodnik wyjaśnia, jak działają i jak wdrażać obszary awarii vS
 
 - Posiadanie kontaktu administracyjnego infrastruktury [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), aby otrzymać dane do logowania.
 - Posiadanie aktywnego identyfikatora użytkownika z uprawnieniami dla NSX [utworzonego w Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- Wdrożenie [datastore vSan](https://docs.ovh.com/pl/private-cloud/vmware-vsan/)
+- Wdrożenie [datastore vSan](/pages/cloud/private-cloud/vmware_vsan)
 
 ## W praktyce
 

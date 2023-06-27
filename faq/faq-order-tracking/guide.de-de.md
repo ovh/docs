@@ -32,7 +32,7 @@ Melden Sie sich in Ihrem Kundencenter an. Auf Ihrem Dashboard können Sie in der
 ![Bestellung nachverfolgen](images/order_final-min.gif){.thumbnail}
 
 #### Tipps und Tricks
-Hilfe zur Verwaltung Ihrer Bestellungen finden Sie in unserer Anleitung: [OVHcloud Bestellungen verwalten](https://docs.ovh.com/de/billing/bestellungen-verwalten-ovh/).
+Hilfe zur Verwaltung Ihrer Bestellungen finden Sie in unserer Anleitung: [OVHcloud Bestellungen verwalten](/pages/account/billing/managing_ovh_orders).
 
 ### Wie kann ich meine Bestellung ändern?
 
@@ -46,7 +46,7 @@ Sollten Sie Ihre Bestellung bereits bezahlt haben, wenden Sie sich bitte an unse
 ### Wie kann ich meine Bestellung stornieren?
 
 Ohne Bezahlung Ihrerseits wird Ihre Bestellung nach einer Frist von 24 Stunden automatisch storniert.
-Als Verbraucher können Sie Ihre Bestellung auch nach Zahlung innerhalb von 14 Tagen widerrufen, wenn diese nicht mit einem personalisierten Dienst (wie zum Beispiel eine Domain) oder einer Lizenz (wie Office 365 oder SharePoint) verbunden ist. Informieren Sie sich über die folgende Anleitung : [OVHcloud Bestellungen verwalten - Widerrufsrecht ausüben](https://docs.ovh.com/de/billing/bestellungen-verwalten-ovh/#widerrufsrechts-ausuben).
+Als Verbraucher können Sie Ihre Bestellung auch nach Zahlung innerhalb von 14 Tagen widerrufen, wenn diese nicht mit einem personalisierten Dienst (wie zum Beispiel eine Domain) oder einer Lizenz (wie Office 365 oder SharePoint) verbunden ist. Informieren Sie sich über die folgende Anleitung : [OVHcloud Bestellungen verwalten - Widerrufsrecht ausüben](/pages/account/billing/managing_ovh_orders#widerrufsrechts-ausuben).
 
 #### Tipps und Tricks
 

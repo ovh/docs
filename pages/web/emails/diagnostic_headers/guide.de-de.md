@@ -1,9 +1,6 @@
 ---
 title: 'E-Mail-Header extrahieren'
 excerpt: 'Erfahren Sie hier, wie Sie die Header von E-Mails einsehen können'
-slug: webhosting_e-mail_anleitung_zum_abruf_der_e-mail-header
-section: Diagnose
-order: 03
 legacy_guide_number: g1365
 updated: 2021-11-19
 ---
@@ -94,7 +91,7 @@ Subject: Hello my friend
 Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
 </code></pre>
 
-- Im Feld `Received-SPF` wird das Ergebnis der [SPF](https://docs.ovh.com/de/domains/webhosting_spf-eintrag/) Überprüfung des Domainnamens des Absenders angezeigt. Mit dem `client-ip`-Argument wird unter anderem die IP-Adresse des Servers ermittelt, der für den Versand der E-Mail verwendet wurde. 
+- Im Feld `Received-SPF` wird das Ergebnis der [SPF](/pages/web/domains/dns_zone_spf) Überprüfung des Domainnamens des Absenders angezeigt. Mit dem `client-ip`-Argument wird unter anderem die IP-Adresse des Servers ermittelt, der für den Versand der E-Mail verwendet wurde. 
 <pre class="console"><code>
 Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh
 </code></pre>
@@ -196,6 +193,6 @@ Um den Header im Webmail-Interface von <Outlook.com> anzuzeigen, folgen Sie dem 
 
 ## Weiterführende Informationen
 
-[E-Mail FAQ](https://docs.ovh.com/de/emails/e-mails-faq/)
+[E-Mail FAQ](/pages/web/emails/faq-emails)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

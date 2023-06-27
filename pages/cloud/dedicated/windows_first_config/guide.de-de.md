@@ -1,8 +1,6 @@
 ---
 title: Eine neue Windows Server Installation konfigurieren
-slug: windows-first-config
 excerpt: Erfahren Sie hier, wie Sie die Remotedesktop-Verbindung und die ICMP Antwort aktivieren
-section: Erste Schritte
 updated: 2023-02-14
 ---
 
@@ -27,7 +25,7 @@ Nach der Neuinstallation eines Windows Server Betriebssystems auf einem Dedicate
 
 ### Schritt 1: KVM Zugang
 
-Um auf die KVM-Konsole Ihres Servers zuzugreifen, folgen Sie dieser [Anleitung](https://docs.ovh.com/de/dedicated/verwendung-ipmi-dedicated-server/#kvm-uber-ihren-webbrowser-verwenden-nur-fur-neuere-server).
+Um auf die KVM-Konsole Ihres Servers zuzugreifen, folgen Sie dieser [Anleitung](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers#kvm-uber-ihren-webbrowser-verwenden-nur-fur-neuere-server).
 
 ### Schritt 2: Die Installation von Windows abschließen
 
@@ -62,14 +60,14 @@ Hier können Sie jeweils die Eingangsregeln für `ICMP` und `Remote Desktop` akt
 Ihr Server sollte nun auf Anfragen antworten, die diese Protokolle verwenden.
 
 > [!primary]
-> Um Ihr Windows-System mithilfe von Firewall-Regeln abzusichern, verwenden Sie unsere Anleitung "[Firewall auf einem Windows Server konfigurieren](https://docs.ovh.com/de/dedicated/firewall-windows/)".
+> Um Ihr Windows-System mithilfe von Firewall-Regeln abzusichern, verwenden Sie unsere Anleitung "[Firewall auf einem Windows Server konfigurieren](/pages/cloud/dedicated/activate-port-firewall-soft-win)".
 >
 
 ### Windows Bootlogs aktivieren (optional)
 
 Die Aktivierung von Windows-Startprotokollen kann bei der Serverfehlerdiagnose hilfreich sein.
 
-Loggen Sie sich via Remote-Desktop-Verbindung oder [KVM](https://docs.ovh.com/de/dedicated/verwendung-ipmi-dedicated-server/#kvm-uber-ihren-webbrowser-verwenden-nur-fur-neuere-server) auf dem Server ein. Öffnen Sie das Windows Startmenü und klicken Sie auf `Run`{.action}.
+Loggen Sie sich via Remote-Desktop-Verbindung oder [KVM](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers#kvm-uber-ihren-webbrowser-verwenden-nur-fur-neuere-server) auf dem Server ein. Öffnen Sie das Windows Startmenü und klicken Sie auf `Run`{.action}.
 
 ![Bootlog](images/windowsboot1.png){.thumbnail}
 
@@ -83,11 +81,11 @@ Aktivieren Sie im neuen Fenster die Option `Boot log`. Klicken Sie auf `OK`{.act
 
 Bein nächsten Hochfahren des Servers werden die Logs in eine TXT-Datei geschrieben. Der Dateipfad lautet ```C:\Windows\ntbtlog.txt```.
 
-Um die in der Datei gespeicherten Protokolle im Rescue-Modus einzusehen, folgen Sie der [Anleitung zum Rescue-Modus](https://docs.ovh.com/de/dedicated/ovh-rescue/). 
+Um die in der Datei gespeicherten Protokolle im Rescue-Modus einzusehen, folgen Sie der [Anleitung zum Rescue-Modus](/pages/cloud/dedicated/rescue_mode). 
 
 ## Weiterführende Informationen
 
-[Firewall auf einem Windows Server konfigurieren](https://docs.ovh.com/de/dedicated/firewall-windows/)
+[Firewall auf einem Windows Server konfigurieren](/pages/cloud/dedicated/activate-port-firewall-soft-win)
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 

@@ -1,10 +1,8 @@
 ---
 title: Die Zugriffsregeln für das vCenter ändern
-slug: zugriffsregeln-fuer-vcenter-aendern
 routes:
     canonical: 'https://docs.ovh.com/de/private-cloud/zugriffsregeln-fuer-vcenter-aendern/'
 excerpt: Sehen Sie hier, wie Sie die Zugriffsregeln für das vCenter ändern können
-section: OVHcloud Funktionen
 updated: 2020-11-18
 ---
 
@@ -35,11 +33,11 @@ Es öffnet sich ein Fenster. Wählen Sie in seinem Drop-down-Menü zwischen “O
 
 > [!primary]
 >
-> Wenn Sie “Eingeschränkt” gewählt haben, ziehen Sie die Anleitung [“Die Verbindung von IPs mit dem vCenter erlauben“](../verbindung-von-ip-zum-vcenter-erlauben/) zu Rate.
+> Wenn Sie “Eingeschränkt” gewählt haben, ziehen Sie die Anleitung [“Die Verbindung von IPs mit dem vCenter erlauben“](/pages/cloud/managed-bare-metal/vcenter-authorise-ip-access) zu Rate.
 > 
 
 ## Weiterführende Informationen
 
-[Die Verbindung von IPs mit dem vCenter erlauben](../verbindung-von-ip-zum-vcenter-erlauben/)
+[Die Verbindung von IPs mit dem vCenter erlauben](/pages/cloud/managed-bare-metal/vcenter-authorise-ip-access)
 
 Für den Austausch mit unserer User-Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

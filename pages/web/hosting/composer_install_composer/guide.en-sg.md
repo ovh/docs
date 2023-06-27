@@ -1,9 +1,6 @@
 ---
 title: Install "Composer" on web hosting packages
 excerpt: How to install "Composer" on web hosting packages
-slug: install_composer_on_web_hosting_packages
-section: PHP
-order: 02
 updated: 2023-03-07
 ---
 
@@ -29,7 +26,7 @@ updated: 2023-03-07
 
 ## Instructions
 
-Access your hosting plan via SSH using our guide to [using SSH with your OVHcloud web hosting plan](https://docs.ovh.com/sg/en/hosting/web_hosting_ssh_on_web_hosting_packages/).
+Access your hosting plan via SSH using our guide to [using SSH with your OVHcloud web hosting plan](/pages/web/hosting/ssh_on_webhosting).
 
 Use the command line to check if the PHP version is compatible:
 

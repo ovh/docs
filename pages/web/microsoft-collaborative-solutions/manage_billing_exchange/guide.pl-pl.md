@@ -1,9 +1,6 @@
 ---
 title: 'Zarządzanie fakturowaniem kont Exchange'
-slug: zarzadzanie-fakturowanie-exchange
 excerpt: 'Dowiedz się, jak zarządzać fakturowaniem usługi Exchange'
-section: 'Pierwsze kroki z Exchange'
-order: 03
 updated: 2020-04-20
 ---
 

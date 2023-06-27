@@ -1,8 +1,5 @@
 ---
 title: 'Automatische Signaturen erstellen'
-slug: email-automatic-signature-disclaimer
-section: 'Erste Schritte'
-order: 6
 updated: 2020-03-26
 ---
 
@@ -23,4 +20,4 @@ updated: 2020-03-26
 
 ## In der praktischen Anwendung
 
-Folgen Sie unserer Anleitung [Automatische Signaturen erstellen](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_automatische_signatur_-_disclaimer/){.external} im Bereich "Microsoft Collaboration Lösungen".
+Folgen Sie unserer Anleitung [Automatische Signaturen erstellen](/pages/web/microsoft-collaborative-solutions/feature_footers){.external} im Bereich "Microsoft Collaboration Lösungen".

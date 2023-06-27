@@ -1,9 +1,6 @@
 ---
 title: 'Eine Datenbank auf Ihrem Webhosting erstellen und verwalten'
-slug: datenbank-erstellen
 excerpt: 'Erfahren Sie hier, wie Sie in OVHcloud Webhostings enthaltene Datenbanken verwenden'
-section: 'Datenbanken'
-order: 01
 updated: 2022-02-03
 ---
 
@@ -100,7 +97,7 @@ Die Login-Daten sind im neuen Fenster bereits vorausgefüllt; nur das Datenbankp
 
 Für jede Webhosting-Datenbank werden täglich automatische Snapshots erstellt (bis zu 32 Einheiten). Sie können daher problemlos eine frühere Version einer Datenbank über Ihr OVHcloud Kundencenter wiederherstellen. 
 
-Um die verfügbaren Snapshots zu überprüfen und deren Erstellungszeitpunkt einzusehen, klicken Sie auf das Symbol rechts neben dem grünen Kreis in Ihrer Datenbanktabelle. Von dort können Sie auch jedes Backup einer Datenbank herunterladen. Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung „[Backup einer Webhosting-Datenbank exportieren](../webhosting_hilfe_zum_export_von_datenbanken/)“.
+Um die verfügbaren Snapshots zu überprüfen und deren Erstellungszeitpunkt einzusehen, klicken Sie auf das Symbol rechts neben dem grünen Kreis in Ihrer Datenbanktabelle. Von dort können Sie auch jedes Backup einer Datenbank herunterladen. Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung „[Backup einer Webhosting-Datenbank exportieren](/pages/web/hosting/sql_database_export)“.
 
 #### Häufige Probleme verstehen
 
@@ -116,17 +113,17 @@ Es wird empfohlen, für Skripte und Konfigurationsdateien immer den tatsächlich
 
 Übersteigt eine Webhosting-Datenbank den empfohlenen Speicherplatz, wird diese automatisch in den Modus "read only" / "select only" versetzt. Der Administrator erhält eine Benachrichtigung per E-Mail.
 
-Nachdem die Datenbank optimiert (bereinigt) wurde, können Sie Ihre Quota über Ihr OVHcloud Kundencenter neu berechnen, damit die Datenbank entsperrt wird. Es wird empfohlen, die Datenbank herunterzuladen, den Inhalt lokal zu überarbeiten und die Datenbank anschließend per Import zu ersetzen. Weitere Informationen hierzu finden Sie in [dieser Anleitung](../webhosting_optimierung_der_performance_ihrer_webseite/#schritt-7-ihre-datenbank-optimieren).
+Nachdem die Datenbank optimiert (bereinigt) wurde, können Sie Ihre Quota über Ihr OVHcloud Kundencenter neu berechnen, damit die Datenbank entsperrt wird. Es wird empfohlen, die Datenbank herunterzuladen, den Inhalt lokal zu überarbeiten und die Datenbank anschließend per Import zu ersetzen. Weitere Informationen hierzu finden Sie in [dieser Anleitung](/pages/web/hosting/optimise_your_website_performance#schritt-7-ihre-datenbank-optimieren).
 
 
 ## Weiterführende Informationen
 
-[Passwort einer Webhosting-Datenbank ändern](../datenbank-passwort-aendern/)
+[Passwort einer Webhosting-Datenbank ändern](/pages/web/hosting/sql_change_password)
 
-[Backup einer Webhosting-Datenbank exportieren](../webhosting_hilfe_zum_export_von_datenbanken/)
+[Backup einer Webhosting-Datenbank exportieren](/pages/web/hosting/sql_database_export)
 
-[Backup in eine Webhosting-Datenbank importieren](../webhosting_import_einer_mysql-datenbank/)
+[Backup in eine Webhosting-Datenbank importieren](/pages/web/hosting/sql_importing_mysql_database)
 
-[Optimierung der Performance Ihrer Webseite](../webhosting_optimierung_der_performance_ihrer_webseite/)
+[Optimierung der Performance Ihrer Webseite](/pages/web/hosting/optimise_your_website_performance)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

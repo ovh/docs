@@ -1,9 +1,6 @@
 ---
 title: CLI - ldp-tail, a tool to follow your logs in real-time
-slug: logs-data-platform-ldp-tail
-order: 3
 excerpt: This super-powered tail will follow and format your logs with flying colors.
-section: Features
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-ldp-tail?id=kb_article_view&sysparm_article=KB0050062'
 updated: 2023-01-16
@@ -168,6 +165,6 @@ To make the magic happens, replace begin and end values with timestamps that hav
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/pt/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

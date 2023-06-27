@@ -1,11 +1,8 @@
 ---
 title: Grafana - Advanced parameters references
-slug: grafana/advanced-parameters-references
 excerpt:
-section: Grafana - Guides
-order: 030
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/grafana/advanced-parameters-references/'
+    canonical: '/pages/platform/databases/grafana_03_advanced_parameters_references'
 updated: 2023-02-06
 ---
 
@@ -41,7 +38,7 @@ This guide lists all the supported advanced parameters that allow you to configu
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/de/public-cloud/) in your OVHcloud account   
-- A database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/de/publiccloud/databases/getting-started/) can help you to meet this requirement)   
+- A database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)   
 - Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) or to the [OVHcloud API](https://api.ovh.com/console/)   
 
 
@@ -54,7 +51,7 @@ This guide lists all the supported advanced parameters that allow you to configu
 
 ### Using API
 
-Please refer to this [guide](https://docs.ovh.com/de/publiccloud/databases/advanced-configuration/#using-api) to find out how to change your advanced parameters from the OVHcloud API.
+Please refer to this [guide](/pages/platform/databases/databases_03_advanced_configuration#using-api) to find out how to change your advanced parameters from the OVHcloud API.
 
 
 ### Advanced parameters for Grafana

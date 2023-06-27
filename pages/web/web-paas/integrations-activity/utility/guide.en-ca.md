@@ -1,7 +1,5 @@
 ---
 title: Utility routines
-slug: utility
-section: Activity
 updated: 2021-05-11
 ---
 

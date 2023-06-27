@@ -1,9 +1,6 @@
 ---
 title: Activation du chiffrement des machines virtuelles avec vSphere Native Key Provider
-slug: vm-encrypt-vnkp
 excerpt: Découvrez comment mettre en œuvre le chiffrement de vos machines virtuelles avec vSphere Native Key Provider
-section: Fonctionnalités VMware vSphere
-order: 09
 updated: 2023-01-26
 ---
 
@@ -72,7 +69,7 @@ Les droits de gestion du chiffrement ont été modifiés, comme on peut le const
 
 Nous allons créer la clé de chiffrement **vSphere Native Key Provider**. Cette clé pourra être utilisée pour chiffrer les fichiers d'une machine virtuelle. Si vous souhaitez ajouter un périphérique virtuel **vTPM**, il est obligatoire de chiffrer la VM.
 
-Connectez-vous à l'interface **vSphere**. Au besoin, aidez-vous du guide « [Se connecter à l'interface vSphere](https://docs.ovh.com/fr/private-cloud/connexion-interface-vsphere/) ».
+Connectez-vous à l'interface **vSphere**. Au besoin, aidez-vous du guide « [Se connecter à l'interface vSphere](/pages/cloud/private-cloud/vsphere_interface_connexion) ».
 
 Cliquez en haut à gauche sur la racine du `cluster`{.action} puis cliquez sur l'onglet `Configurer`{.action} et choisissez `Fournisseurs de clés`{.action}.
 

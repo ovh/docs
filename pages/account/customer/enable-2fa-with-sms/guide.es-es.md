@@ -1,8 +1,6 @@
 ---
 title: 'Activar la doble autenticación mediante SMS'
-slug: activar-la-doble-autenticacion-por-sms
 excerpt: 'Cómo proteger su área de cliente de OVHcloud activando la doble autenticación mediante SMS'
-section: Seguridad
 hidden: true
 updated: 2020-04-15
 ---
@@ -17,7 +15,7 @@ La doble autenticación mediante SMS es uno de los métodos que propone OVHcloud
 
 ## Requisitos
 
-- Haber consultado los [diferentes métodos de doble autenticación que ofrece OVHcloud](https://docs.ovh.com/es/customer/proteger-su-cuenta-con-una-2FA/).
+- Haber consultado los [diferentes métodos de doble autenticación que ofrece OVHcloud](/pages/account/customer/secure-ovhcloud-account-with-2fa).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 - Disponer de un móvil para recibir mensajes SMS.
 

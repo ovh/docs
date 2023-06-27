@@ -1,9 +1,6 @@
 ---
 title: 'Speeding up your website with CDN'
 excerpt: 'Find out how to improve your website by reducing loading times on a Web Hosting plan using the CDN'
-slug: guide_to_using_the_geocache_accelerator_on_a_web_hosting_package
-section: Optimise your website
-order: 03
 updated: 2021-12-23
 ---
 
@@ -59,7 +56,7 @@ Select the "Activate the CDN" option, click `Next`{.action} and then `Confirm`{.
 > [!warning]
 >
 > If  an external (not registered with OVHcloud) domain name has been added to the Web Hosting as Multisite, you must enter the CDN’s IP address in the domain name’s DNS zone.<br>
-> Check the [IP address list for Web Hosting clusters](https://docs.ovh.com/sg/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/) to find the specific IP address for your cluster’s CDN.
+> Check the [IP address list for Web Hosting clusters](/pages/web/hosting/clusters_and_shared_hosting_IP) to find the specific IP address for your cluster’s CDN.
 
 **Why is it not possible to use a geolocated IP with the CDN option?** <br>
 <br>
@@ -175,7 +172,7 @@ Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.ac
 
 > [!warning]
 >
-> For the installation of an [OVHcloud 1-click module](https://docs.ovh.com/sg/en/hosting/web_hosting_web_hosting_modules/), the WAF must be disabled in order to prevent the installation of the module from being blocked.
+> For the installation of an [OVHcloud 1-click module](/pages/web/hosting/cms_install_1_click_modules), the WAF must be disabled in order to prevent the installation of the module from being blocked.
 
 > [!primary]
 >

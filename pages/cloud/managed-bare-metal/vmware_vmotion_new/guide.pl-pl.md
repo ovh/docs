@@ -1,11 +1,8 @@
 ---
 title: VMware vMotion
-slug: vmware-vmotion-new
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/vmware-vmotion-new/'
+    canonical: '/pages/cloud/private-cloud/vmware_vmotion_new'
 excerpt: Przeniesienie wirtualnej maszyny na inny host bez jej wyłączania
-section: Funkcjonalności VMware vSphere
-order: 04
 updated: 2020-11-18
 ---
 
@@ -32,7 +29,7 @@ Aby przenieść wirtualną maszynę na inny zasób, kliknij prawym przyciskiem m
 
 W menu znajdziesz kilka opcji vMotion. W naszym przykładzie opisujemy jedynie przypadek przeniesienia wirtualnej maszyny na innego hosta, dlatego wybieramy opcję "Zmień tylko zasób obliczeniowy".
 
-Opcja “Zmień  tylko zasób obliczeniowy” pozwala przenieść wirtualną maszynę do innej bazy danych. Operacja ta, o nazwie**Storage vMotion**, opisana jest w [tym przewodniku](https://docs.ovh.com/gb/en/managed-bare-metal/vmware_storage_vmotion/).
+Opcja “Zmień  tylko zasób obliczeniowy” pozwala przenieść wirtualną maszynę do innej bazy danych. Operacja ta, o nazwie**Storage vMotion**, opisana jest w [tym przewodniku](/pages/cloud/managed-bare-metal/vmware_storage_vmotion).
 
 ![wybór rodzaju vMotion](images/Vmotion2.png){.thumbnail}
 

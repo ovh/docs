@@ -1,9 +1,6 @@
 ---
 title: "Remplacer une paire de clés SSH perdue"
-slug: dedicated-servers-replacing-lost-ssh-key-pair
 excerpt: "Découvrez comment récupérer l’accès SSH à votre serveur dédié"
-section: Diagnostic et mode Rescue
-order: 2
 updated: 2023-02-06
 ---
 
@@ -11,9 +8,9 @@ updated: 2023-02-06
 
 ## Objectif
 
-Si vous [utilisez des clés SSH](https://docs.ovh.com/fr/dedicated/creer-cle-ssh-serveur-dediees/) pour vous connecter à votre serveur dédié, la perte de votre clé SSH privée pourrait signifier la perte totale d'accès à votre serveur.
+Si vous [utilisez des clés SSH](/pages/cloud/dedicated/creating-ssh-keys-dedicated) pour vous connecter à votre serveur dédié, la perte de votre clé SSH privée pourrait signifier la perte totale d'accès à votre serveur.
 
-Vous pouvez cependant vous connecter à votre serveur via le [mode rescue OVHcloud](https://docs.ovh.com/fr/dedicated/ovh-rescue/), grâce à un mot de passe provisoire qui vous permettra de modifier vos fichiers.
+Vous pouvez cependant vous connecter à votre serveur via le [mode rescue OVHcloud](/pages/cloud/dedicated/rescue_mode), grâce à un mot de passe provisoire qui vous permettra de modifier vos fichiers.
 
 **Découvrez comment remplacer vos clés SSH en cas de perte d'accès à votre serveur.**
 
@@ -35,7 +32,7 @@ Vous pouvez cependant vous connecter à votre serveur via le [mode rescue OVHclo
 
 Afin d'accéder à votre serveur en mode rescue, la clé SSH active doit d'abord être désactivée.
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et naviguez jusqu'à la section `Clés SSH`{.action}. Aidez-vous de notre guide [« Créer une clé SSH »](https://docs.ovh.com/fr/dedicated/creer-cle-ssh-serveur-dediees/#cpsshkey) si nécessaire.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et naviguez jusqu'à la section `Clés SSH`{.action}. Aidez-vous de notre guide [« Créer une clé SSH »](/pages/cloud/dedicated/creating-ssh-keys-dedicated#cpsshkey) si nécessaire.
 
 La clé publique stockée dans l'espace client est inutile sans la clé privée correspondante, vous pouvez donc la supprimer. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite de la clé et sélectionnez `Supprimer la clé`{.action}.
 
@@ -45,11 +42,11 @@ Dans la fenêtre qui apparaît, cliquez sur `Confirmer`{.action}.
 
 ### Étape 2 - Créer une nouvelle paire de clés
 
-Créez une nouvelle paire de clés SSH sur votre poste de travail, tel que décrit dans la première partie du guide [« Créer une clé SSH »](https://docs.ovh.com/fr/dedicated/creer-cle-ssh-serveur-dediees/)
+Créez une nouvelle paire de clés SSH sur votre poste de travail, tel que décrit dans la première partie du guide [« Créer une clé SSH »](/pages/cloud/dedicated/creating-ssh-keys-dedicated)
 
 ### Étape 3 - Accéder à votre serveur en mode rescue et remplacer la clé
 
-Suivez les étapes du guide sur le [mode rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/) pour vous connecter à votre serveur et monter vos partitions.
+Suivez les étapes du guide sur le [mode rescue](/pages/cloud/dedicated/rescue_mode) pour vous connecter à votre serveur et monter vos partitions.
 
 Lorsque vous avez accès à vos fichiers, ouvrez le fichier « authorized_keys » concerné dans un éditeur de texte. Ce fichier stocke les clés SSH et se trouve dans le dossier `home` de l'utilisateur connecté à votre serveur. (Remplacez « USER_NAME » par votre nom d'utilisateur.)
 
@@ -68,12 +65,12 @@ EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 
 Vous pouvez supprimer la chaîne de clé « old » (désormais obsolète) du fichier. Enregistrez et quittez l'éditeur.
 
-Revenez au mode de démarrage « normal » et redémarrez le serveur dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Consultez le guide [« Activer et utiliser le mode rescue »](https://docs.ovh.com/fr/dedicated/ovh-rescue/) si nécessaire.
+Revenez au mode de démarrage « normal » et redémarrez le serveur dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Consultez le guide [« Activer et utiliser le mode rescue »](/pages/cloud/dedicated/rescue_mode) si nécessaire.
 
 Vous avez maintenant accès au serveur avec votre nouvelle paire de clés SSH.
 
 ## Aller plus loin
 
-[Changer le mot de passe root sur un serveur dédié](https://docs.ovh.com/fr/dedicated/changer-mot-passe-root-linux-sur-serveur-dedie/)
+[Changer le mot de passe root sur un serveur dédié](/pages/cloud/dedicated/changing_root_password_linux_ds)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

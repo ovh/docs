@@ -1,8 +1,6 @@
 ---
 title: 'Sécuriser sa ligne SIP OVHcloud'
-slug: securiser-ligne-sip
 excerpt: 'Apprenez à sécuriser votre ligne SIP OVHcloud'
-section: Sécurité
 updated: 2022-06-22
 ---
 
@@ -41,7 +39,7 @@ Si vous disposez d'un équipement OVHcloud avec votre ligne SIP, le mot de passe
 
 Ce mot de passe configuré par OVHcloud est différent pour chaque téléphone et peut être modifié lorsque l'équipement est réinitialisé.
 
-Si cela est nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Dépanner son téléphone Plug & Phone](https://docs.ovh.com/fr/voip/depannage-telephone-plug-and-phone/){.external} » si vous souhaitez le réinitialiser.
+Si cela est nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Dépanner son téléphone Plug & Phone](/pages/telecom/voip/troubleshoot-02-fix-control-panel){.external} » si vous souhaitez le réinitialiser.
 
 - **La limitation du montant hors forfait** 
 
@@ -61,19 +59,19 @@ Notre système détecte automatiquement une activité suspecte, comme des appels
 
 Si vous disposez d'une ligne SIP que vous utilisez avec votre propre équipement, le mot de passe de la ligne peut être modifié à votre convenance. 
 
-Pour cela, vous devrez le modifier par le biais d'une manipulation à réaliser depuis votre espace client OVHcloud. Reportez-vous aux instructions décrites dans notre documentation « [Modifier le mot de passe d’une ligne SIP](https://docs.ovh.com/fr/voip/modifier-mot-de-passe-ligne-sip/){.external} » si nécessaire.
+Pour cela, vous devrez le modifier par le biais d'une manipulation à réaliser depuis votre espace client OVHcloud. Reportez-vous aux instructions décrites dans notre documentation « [Modifier le mot de passe d’une ligne SIP](/pages/telecom/voip/modifier-mot-de-passe-ligne-sip){.external} » si nécessaire.
 
 - **La restriction par IP de l'accès à votre ligne**
 
 Vous avez la possibilité de sécuriser l'accès à votre ligne SIP grâce à une restriction par IP et de pouvoir vérifier les tentatives d'authentification à celle-ci qui ont échoué. 
 
-Pour cela, vous devrez activer la restriction et consulter les logs d'authentification depuis votre espace client. Reportez-vous aux instructions décrites dans notre documentation « [Restreindre sa ligne SIP OVHcloud par IP](https://docs.ovh.com/fr/voip/restreindre-ligne-sip-par-ip/){.external} » si nécessaire.
+Pour cela, vous devrez activer la restriction et consulter les logs d'authentification depuis votre espace client. Reportez-vous aux instructions décrites dans notre documentation « [Restreindre sa ligne SIP OVHcloud par IP](/pages/telecom/voip/secure-sip-line-ovh){.external} » si nécessaire.
 
 - **Le filtrage des appels reçus et/ou émis**
 
 Vous avez la possibilité de définir des listes blanches ou noires, afin d'autoriser uniquement certains correspondants à vous joindre ou, au contraire, de rejeter automatiquement les appels en provenance de certains numéros.
 
-Pour cela, vous devrez gérer le filtrage d'appels depuis votre espace client OVHcloud. Reportez-vous aux instructions décrites dans notre documentation « [Filtrer et renvoyer ses appels](https://docs.ovh.com/fr/voip/comment-configurer-les-renvois-d-appels/){.external} » si nécessaire.
+Pour cela, vous devrez gérer le filtrage d'appels depuis votre espace client OVHcloud. Reportez-vous aux instructions décrites dans notre documentation « [Filtrer et renvoyer ses appels](/pages/telecom/voip/comment_configurer_les_renvois_d_appels){.external} » si nécessaire.
 
 ### Étape 3 : suivre vos consommations
 

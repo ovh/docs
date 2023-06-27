@@ -1,8 +1,6 @@
 ---
 title: 'Sustituir un disco en caliente en un servidor con RAID por software'
-slug: hotswap-raid-soft
 excerpt: 'Cómo sustituir un disco sin interrupción del servicio en un servidor con RAID por software'
-section: 'RAID y discos'
 updated: 2016-11-21
 ---
 
@@ -208,11 +206,11 @@ Una vez completada esta operación, vuelva a comprobar el estado del RAID.
 ```sh
 root@ns3054662:/home# cat /proc/mdstat
 >>> Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty]
->>> md2 : active raid1 sda2[0] sdb2[1](F)
+>>> md2 : active raid1 sda2[0] sdb2[1](/us/es/dedicated/hotswap-raid-soft/F)
 >>>       3885385728 blocks super 1.2 [2/1] [U_]
 >>>       bitmap: 0/29 pages [0KB], 65536KB chunk
 
->>> md1 : active raid1 sdb1[2](F) sda1[0]
+>>> md1 : active raid1 sdb1[2](/us/es/dedicated/hotswap-raid-soft/F) sda1[0]
 >>>       20971456 blocks [2/1] [U_]
 
 >>> unused devices: <none>
@@ -245,7 +243,7 @@ root@ns3054662:/home# cat /proc/mdstat
 >>> unused devices: <none>
 ```
 
-El disco dañado ya puede ser sustituido por un técnico del datacenter. Una vez realizada la intervención, solo tendrá que resincronizar el RAID. Para ello, consulte la guía [RAID por software](https://docs.ovh.com/es/dedicated/raid-software/){.external}.
+El disco dañado ya puede ser sustituido por un técnico del datacenter. Una vez realizada la intervención, solo tendrá que resincronizar el RAID. Para ello, consulte la guía [RAID por software](/pages/cloud/dedicated/raid_soft){.external}.
 
 ### En Windows
 
@@ -297,7 +295,7 @@ Puede desactivar el parpadeo del disco sustituyendo `on` por `off` en el comando
 
 Esta operación puede realizarse desde la utilidad **Administración de discos** del servidor Windows.
 
-A continuación, el disco dañado ya podrá ser sustituido por un técnico del datacenter. Una vez realizada la intervención, solo tendrá que resincronizar el RAID. Para ello, consulte la guía [RAID por software](https://docs.ovh.com/es/dedicated/raid-software/){.external}.
+A continuación, el disco dañado ya podrá ser sustituido por un técnico del datacenter. Una vez realizada la intervención, solo tendrá que resincronizar el RAID. Para ello, consulte la guía [RAID por software](/pages/cloud/dedicated/raid_soft){.external}.
 
 ## Más información
 

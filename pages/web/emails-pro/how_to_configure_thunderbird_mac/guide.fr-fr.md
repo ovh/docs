@@ -1,9 +1,6 @@
 ---
 title: 'Configurer son compte E-mail Pro sur Thunderbird pour Mac OS'
-slug: configuration-thunderbird-macos
 excerpt: 'Retrouvez ici comment configurer votre adresse E-mail Pro sur Thunderbird pour Mac OS '
-section: 'Configuration sur ordinateur'
-order: 6
 updated: 2021-08-26
 ---
 
@@ -66,7 +63,7 @@ OVHcloud propose aussi une application web permettant d'accéder à votre adress
 
 ### Récupérer une sauvegarde de votre adresse e-mail
 
-Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consultez le paragraphe « **Exporter** » dans la partie « **Thunderbird** » de notre guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#exporter).
+Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consultez le paragraphe « **Exporter** » dans la partie « **Thunderbird** » de notre guide [Migrer manuellement votre adresse e-mail](/pages/web/emails/manual_email_migration#exporter).
 
 ### Modifier les paramètres existants
 

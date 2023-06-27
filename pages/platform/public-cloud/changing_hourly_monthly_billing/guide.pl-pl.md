@@ -1,8 +1,6 @@
 ---
 title: 'Zmiana typu rozliczenia z godzinowego na miesięczne dla instancji Public Cloud'
 excerpt: 'Dowiedz się, jak zmienić typ rozliczenia za instancję Public Cloud'
-slug: zmiana-typu-rozliczenia
-section: 'Zarządzanie projektami'
 updated: 2023-01-23
 ---
 
@@ -60,7 +58,7 @@ Zastąp "InstanceID" identyfikatorem odpowiedniej instancji. Identyfikator może
 
 ### Z poziomu API OVHcloud
 
-Zaloguj się do [interfejsu API OVHcloud](https://eu.api.ovh.com/) zgodnie z [odpowiednim przewodnikiem](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/) i postępuj zgodnie z poniższymi krokami.
+Zaloguj się do [interfejsu API OVHcloud](https://eu.api.ovh.com/) zgodnie z [odpowiednim przewodnikiem](/pages/account/api/first-steps) i postępuj zgodnie z poniższymi krokami.
 
 Skorzystaj z następującego połączenia:
 

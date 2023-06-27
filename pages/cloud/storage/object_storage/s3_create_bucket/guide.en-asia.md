@@ -1,8 +1,5 @@
 ---
 title: Object Storage - Creating a bucket
-slug: s3/create-bucket
-section: General guides to start
-order: 040
 updated: 2022-09-27
 ---
 
@@ -14,8 +11,8 @@ updated: 2022-09-27
 
 > [!primary]
 >
-> - If you are interested in storage class ***Standard object storage - SWIFT API***, please follow this [guide](https://docs.ovh.com/asia/en/storage/object-storage/pcs/create-container/)
-> - If you are interested in storage class ***Cloud Archive - SWIFT API***, please follow this [guide](https://docs.ovh.com/asia/en/storage/pca/create-container/).
+> - If you are interested in storage class ***Standard object storage - SWIFT API***, please follow this [guide](/pages/cloud/storage/object_storage/pcs_create_container)
+> - If you are interested in storage class ***Cloud Archive - SWIFT API***, please follow this [guide](/pages/cloud/storage/object_storage/pca_create_container).
 >
 
 ## Requirements

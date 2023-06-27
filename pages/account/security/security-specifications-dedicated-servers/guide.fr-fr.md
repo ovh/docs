@@ -1,7 +1,5 @@
 ---
 title: "Spécifications de sécurité du service Serveurs Dédiés"
-slug: security-specs-dedicated-servers
-section: Spécifications de sécurité des services
 updated: 2023-02-16
 ---
 
@@ -9,7 +7,7 @@ updated: 2023-02-16
 
 ## Objectif
 
-En complément au [modèle de responsabilité entre OVHcloud et le client sur le service Serveurs Dédiés](https://docs.ovh.com/fr/partage-responsabilite/raci-serveurs-dedies/), cette fiche a pour objectif de présenter les particularités et fonctions de sécurité propres à ce service. Elle met aussi en avant des bonnes pratiques qui permettront au client de l'exploiter au mieux.
+En complément au [modèle de responsabilité entre OVHcloud et le client sur le service Serveurs Dédiés](/pages/account/responsibility-sharing/dedicated-servers), cette fiche a pour objectif de présenter les particularités et fonctions de sécurité propres à ce service. Elle met aussi en avant des bonnes pratiques qui permettront au client de l'exploiter au mieux.
 
 ## 1 - Certifications
 
@@ -31,7 +29,7 @@ En complément au [modèle de responsabilité entre OVHcloud et le client sur le
 Une fois le service délivré et après réception des identifiants de connexion à son Serveur Dédié, OVHcloud recommande au client de changer ses identifiants 
 et de procéder au durcissement de son système d'exploitation. Des références et guides de durcissement sont présentés dans la section [9.1 Fourniture d'image OS 
 et durcissement](#os-images) de cette page.<br>
-D'autres guides sont disponibles dans [le corpus documentaire sur les Serveurs Dédiés](https://docs.ovh.com/fr/dedicated/) pour assister le client à la prise 
+D'autres guides sont disponibles dans [le corpus documentaire sur les Serveurs Dédiés](/products/bare-metal-cloud-dedicated-servers) pour assister le client à la prise 
 en main et l'exploitation du service.
 
 ### 2.2 - Scan de vulnérabilités
@@ -73,13 +71,13 @@ Liste des fonctionnalités et options de backups adaptées au service :
 
 | **Nom de l'option** | **Granularité** | **RTO** | **RPO** | **Documentation et tutoriels**|
 | --- | --- | --- | --- | --- |
-| - FTP backup ou Backup Storage est un espace de stockage de 500Go mis à disposition du client suite à la souscription au service.<br> - Le service doit être activé par le client.<br> - Aucune routine de backup n'est configurée par OVHcloud. | Au choix du client | Dépend du choix du client | N/A | [Utiliser Backup Storage sur un serveur dédié](https://docs.ovh.com/fr/dedicated/services-backup-storage/) |
-| - Backup Storage est une option de stockage supplémentaire qui permet d'avoir un espace disque supplémentaire pouvant atteindre 10To pour déposer des sauvegardes. | Au choix du client | Dépend du choix du client |  N/A | [Utiliser Backup Storage sur un serveur dédié](https://docs.ovh.com/fr/dedicated/services-backup-storage/) |
+| - FTP backup ou Backup Storage est un espace de stockage de 500Go mis à disposition du client suite à la souscription au service.<br> - Le service doit être activé par le client.<br> - Aucune routine de backup n'est configurée par OVHcloud. | Au choix du client | Dépend du choix du client | N/A | [Utiliser Backup Storage sur un serveur dédié](/pages/cloud/dedicated/services_backup_storage) |
+| - Backup Storage est une option de stockage supplémentaire qui permet d'avoir un espace disque supplémentaire pouvant atteindre 10To pour déposer des sauvegardes. | Au choix du client | Dépend du choix du client |  N/A | [Utiliser Backup Storage sur un serveur dédié](/pages/cloud/dedicated/services_backup_storage) |
 
 ## 5 - Logs
 
 > [!primary]
-> Consultez le guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+> Consultez le guide [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
 | **Source** | **Contenu** | **Liens** |
 | --- | --- | --- |
@@ -101,15 +99,15 @@ Les interventions sont des actions réalisées par les équipes OVHcloud dans le
 
 ### 7.1 - Control Plane
 
-A travers son espace client OVHcloud, le client a la possibilité de gérer le service à l'aide de [trois contacts types](https://docs.ovh.com/fr/customer/gestion-des-contacts/#definition).
+A travers son espace client OVHcloud, le client a la possibilité de gérer le service à l'aide de [trois contacts types](/pages/account/customer/managing_contacts#definition).
 
 Afin de référencer chaque client ayant souscrit à un ou plusieurs services, OVHcloud utilise un compte propriétaire avec un NIC interne. 
 
-Pour renforcer l'accès au compte client, le client a la possibilité d'activer [une authentification à double facteur (2FA)](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/) ou [l'authentification SSO (Single Sign-On)](https://docs.ovh.com/fr/customer/connect-saml-sso/) en associant son compte à un Active Directory externe.
+Pour renforcer l'accès au compte client, le client a la possibilité d'activer [une authentification à double facteur (2FA)](/pages/account/customer/secure-ovhcloud-account-with-2fa) ou [l'authentification SSO (Single Sign-On)](/products/customer-connect-saml-sso) en associant son compte à un Active Directory externe.
 
 ### 7.2 - Data Plane
 
-Une fois le service livré, à l'étape d'installation de l'OS, le client a le choix entre l'[utilisation d'une clé SSH](https://docs.ovh.com/fr/dedicated/creer-cle-ssh-serveur-dediees/) (pour les distributions Linux) pour accéder à son serveur où d'un mot de passe unique, généré automatiquement par OVHcloud s'il n'a pas configuré de clé SSH.
+Une fois le service livré, à l'étape d'installation de l'OS, le client a le choix entre l'[utilisation d'une clé SSH](/pages/cloud/dedicated/creating-ssh-keys-dedicated) (pour les distributions Linux) pour accéder à son serveur où d'un mot de passe unique, généré automatiquement par OVHcloud s'il n'a pas configuré de clé SSH.
 
 Le client est autonome pour créer les comptes utilisateurs sur son OS, une fois qu'il a les droits d'administration sur son serveur.
 
@@ -123,7 +121,7 @@ Le client est responsable du déploiement des mesures de sécurité sur les serv
 ### 9.1 - Fourniture d'images d'OS et durcissement <a name="os-images"></a>
 
 > [!primary]
-> Consultez le guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+> Consultez le guide [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
 OVHcloud met à disposition un catalogue de systèmes d'exploitation et s'engage à fournir des systèmes d'exploitation dont la dernière mise à jour date de moins de 30 jours.
 
@@ -143,7 +141,7 @@ Le durcissement des systèmes d'exploitation fournis est celui d'une installatio
 ### 9.2 - Bring Your Own Image
 
 Bring Your Own Image est une fonctionnalité qui permet au client d'importer une image de son choix sur un serveur en dehors du catalogue proposé par OVHcloud. 
-Les prérequis et modes d'emploi sont disponibles sur [ce lien](https://docs.ovh.com/fr/dedicated/bringyourownimage/).
+Les prérequis et modes d'emploi sont disponibles sur [ce lien](/pages/cloud/dedicated/bring-your-own-image).
 
 ### 9.3 - Monitoring OVHcloud
 
@@ -153,16 +151,16 @@ Le client a également la possibilité d'activer la supervision d'autres service
 
 Il appartient au client de suivre les guides de durcissement des éditeurs d'OS et de restreindre les flux ICMP au strict nécessaire.
 
-Afin de continuer à bénéficier du service de monitoring OVHcloud, le client doit configurer [des règles de filtrage](https://docs.ovh.com/fr/dedicated/monitoring-ip-ovh/) sur le pare-feu interne de ses serveurs et sélectionner les autres services dont il souhaite suivre l'état.
+Afin de continuer à bénéficier du service de monitoring OVHcloud, le client doit configurer [des règles de filtrage](/pages/cloud/dedicated/network_ip_monitoring) sur le pare-feu interne de ses serveurs et sélectionner les autres services dont il souhaite suivre l'état.
 
-OVHcloud propose une fonctionnalité appelée [OVHcloud Link Aggrégation](https://docs.ovh.com/fr/dedicated/ola-manager/) qui peut être activée par le client et qui lui permet de bénéficier d'un réseau privé à haut débit et redondé pour ses Serveurs Dédiés.
+OVHcloud propose une fonctionnalité appelée [OVHcloud Link Aggrégation](/pages/cloud/dedicated/ola-enable-manager) qui peut être activée par le client et qui lui permet de bénéficier d'un réseau privé à haut débit et redondé pour ses Serveurs Dédiés.
 
 Si le client active cette fonctionnalité, le monitoring réalisé par OVHcloud sera désactivé.
 
 ## 10 - Réversibilité
 
 Afin d'assurer la portabilité et la réversibilité des données sur le service, OVHcloud permet au client d'exporter et importer ses données en toute autonomie.
-Les principe de portabilité d'OVHcloud sont décrits dans sa propre [politique de portabilité](https://docs.ovh.com/fr/reversibilite/politique-generale-de-reversibilite/) et ceux spécifiques au service Serveurs Dédiés sont indiqués dans sa [politique spécifique](https://docs.ovh.com/fr/reversibilite/politique-reversibilite-serveurs-dedies/).
+Les principe de portabilité d'OVHcloud sont décrits dans sa propre [politique de portabilité](/pages/account/reversibility/00-global-reversibility-policy) et ceux spécifiques au service Serveurs Dédiés sont indiqués dans sa [politique spécifique](/pages/account/reversibility/01-dedicated-servers-reversibility-policy).
 
 ### 10.1 - Effacement des données métier
 

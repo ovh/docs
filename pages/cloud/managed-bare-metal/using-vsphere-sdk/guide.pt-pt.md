@@ -1,11 +1,8 @@
 ---
 title: Utilização do SDK vSphere
-slug: utilizacao-sdk-vsphere
 routes:
-    canonical: 'https://docs.ovh.com/pt/private-cloud/utilizacao-sdk-vsphere/'
+    canonical: '/pages/cloud/private-cloud/vmware_installation_api'
 excerpt: Utilização e implementação do SDK vSphere
-section: Funcionalidades VMware vSphere
-order: 10
 updated: 2020-11-18
 ---
 
@@ -25,7 +22,7 @@ updated: 2020-11-18
 
 ##### OS
 
-Aqui, iremos utilizar uma VM instalada em Debian 9, implementada através dos [templates disponibilizados no seu Managed Bare Metal](../usar-template-ovhcloud/).
+Aqui, iremos utilizar uma VM instalada em Debian 9, implementada através dos [templates disponibilizados no seu Managed Bare Metal](/pages/cloud/managed-bare-metal/ovf_template).
 
 ##### Requisitos
 
@@ -145,7 +142,7 @@ vconnect()
 
 ##### OS
 
-Aqui, iremos utilizar uma VM instalada em Ubuntu 18.04, implementada através dos [templates disponibilizados no seu Managed Bare Metal](../usar-template-ovhcloud/).
+Aqui, iremos utilizar uma VM instalada em Ubuntu 18.04, implementada através dos [templates disponibilizados no seu Managed Bare Metal](/pages/cloud/managed-bare-metal/ovf_template).
 
 
 ##### Requisitos

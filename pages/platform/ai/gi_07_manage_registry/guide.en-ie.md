@@ -1,9 +1,6 @@
 ---
 title: Registries - Use & manage your registries
-slug: use-manage-registries
 excerpt: Learn how to use and manage your public and private registries
-section: General information
-order: 109
 updated: 2023-05-12
 ---
 
@@ -303,7 +300,7 @@ You can also use the Control Panel to deploy a job or an app from a GitHub regis
 
 - You can check the official documentation about [how to submit a **job**](/pages/platform/ai/training_guide_02_howto_submit_job).
 - Learn [how to deploy an **app**](/pages/platform/ai/deploy_guide_02_getting_started).
-- You can check out the documentation about the [ovhai CLI](https://docs.ovh.com/ie/en/publiccloud/ai/cli/overview-cli).
+- You can check out the documentation about the [ovhai CLI](/pages/platform/ai/cli_15_commands_reference).
 
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.

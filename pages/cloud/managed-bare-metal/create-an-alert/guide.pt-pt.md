@@ -1,11 +1,8 @@
 ---
 title: Criar um Alerta
 routes:
-    canonical: 'https://docs.ovh.com/pt/private-cloud/criar_um_alerta/'
+    canonical: '/pages/cloud/private-cloud/create_an_alert'
 excerpt: Configure alertas no seu cliente vSphere
-slug: criar-um-alerta
-section: Gestão das máquinas virtuais
-order: 09
 updated: 2020-11-18
 ---
 
@@ -20,7 +17,7 @@ updated: 2020-11-18
 ## Requisitos
 
 - Ter um produto [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
-- Estar ligado à [interface vSphere](../instalar_o_vsphere_client/).
+- Estar ligado à [interface vSphere](/pages/cloud/managed-bare-metal/vsphere-interface).
 
 ## Instruções
 

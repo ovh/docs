@@ -1,9 +1,6 @@
 ---
 title: Configurer son compte Exchange sur Outlook 2016 pour Windows
-slug: exchange-configuration-outlook-2016-windows
 excerpt: Apprenez à configurer un compte Exchange sur Outlook 2016 pour Windows
-section: Configuration sur ordinateur
-order: 01
 updated: 2021-07-05
 ---
 
@@ -24,7 +21,7 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 > [!primary]
 >
-> Vous utilisez Outlook 2016 pour Mac ? Consultez notre documentation : [Configurer son compte Exchange sur Outlook 2016 pour Mac](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-configuration-outlook-2016-mac/){.external}.
+> Vous utilisez Outlook 2016 pour Mac ? Consultez notre documentation : [Configurer son compte Exchange sur Outlook 2016 pour Mac](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016_mac){.external}.
 >
 
 ## En pratique

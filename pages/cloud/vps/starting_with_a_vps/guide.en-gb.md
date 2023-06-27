@@ -1,9 +1,6 @@
 ---
 title: 'Getting started with a VPS'
 excerpt: 'Find out the first steps of using a VPS'
-slug: getting-started-vps
-section: 'Getting started'
-order: 1
 updated: 2022-03-25
 ---
 
@@ -43,7 +40,7 @@ For the current VPS range, please continue with the next section, **First steps 
 
 At the first installation or when reinstalling from the Control Panel, a user with elevated permissions will be created and you will be sent an email containing the login credentials. The username will be chosen according to the operating system, for example "ubuntu" or "debian".
 
-You can now connect to your VPS via SSH with username and password. (SSH is a secure communication protocol. Find out more in [this guide about SSH on dedicated servers](https://docs.ovh.com/gb/en/dedicated/ssh-introduction/)). You can access your server through a command terminal (Linux or MAC) or through third-party software on Windows (we can recommend PuTTY).
+You can now connect to your VPS via SSH with username and password. (SSH is a secure communication protocol. Find out more in [this guide about SSH on dedicated servers](/pages/cloud/dedicated/ssh_introduction)). You can access your server through a command terminal (Linux or MAC) or through third-party software on Windows (we can recommend PuTTY).
 
 Using PuTTY for example, simply open the application and enter the servername or the IPv4 address to establish a connection. You will be prompted for username and password and then you can proceed with the command line interface (CLI).
 
@@ -75,7 +72,7 @@ passwd: password updated successfully
 
 #### Enabling root logins
 
-Connecting with the "root" user is disabled by default as a security measure. If you need to permit these connections, refer to the instructions in [this guide](https://docs.ovh.com/gb/en/vps/root-password/#enabling-root-login).
+Connecting with the "root" user is disabled by default as a security measure. If you need to permit these connections, refer to the instructions in [this guide](/pages/cloud/vps/root_password#enabling-root-login).
 
 #### Restarting your VPS (current VPS range) <a name="reboot-current-range"></a>
 
@@ -98,7 +95,7 @@ You can carry out any reinstallations directly in your Control Panel. From the `
 In the popup window, you will be asked to choose:
 
 - An operating system from the drop-down list
-- [An SSH Key](https://docs.ovh.com/gb/en/dedicated/creating-ssh-keys-dedicated/) (optional)
+- [An SSH Key](/pages/cloud/dedicated/creating-ssh-keys-dedicated) (optional)
 
 ![VPSnewreinstallation](images/2020panel_01.png){.thumbnail}
 
@@ -155,7 +152,7 @@ A window will open, and you will be asked to choose:
 
 - An operating system from the drop-down list
 - The language
-- An [SSH Key](https://docs.ovh.com/gb/en/dedicated/creating-ssh-keys-dedicated/) (optional)
+- An [SSH Key](/pages/cloud/dedicated/creating-ssh-keys-dedicated) (optional)
 
 
 ![Reinstallation menu](images/reinstall_menu.png){.thumbnail}
@@ -173,11 +170,11 @@ A progress bar for the reinstallation will appear in your Control Panel - please
 
 As explained in the "Objective" section of this guide, you are the administrator of your VPS. As such, you are responsible for your data and its security.
 
-Please refer to the guide on [Securing a VPS](https://docs.ovh.com/gb/en/vps/tips-for-securing-a-vps/) for some basic advice.
+Please refer to the guide on [Securing a VPS](/pages/cloud/vps/secure_your_vps) for some basic advice.
 
 ### Attaching a domain
 
-Making your VPS available on the web usually includes attaching a domain name to it via DNS. If you manage your domain at OVHcloud, you can refer to our guide on [Editing your DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/) for instructions.
+Making your VPS available on the web usually includes attaching a domain name to it via DNS. If you manage your domain at OVHcloud, you can refer to our guide on [Editing your DNS zone](/pages/web/domains/dns_zone_edit) for instructions.
 
 ### Securing a domain with an SSL certificate
 
@@ -185,14 +182,14 @@ Once you have configured your VPS, you may want to secure your domain name and y
 
 You can install this SSL certificate manually, directly on the VPS. Please refer to the official documentation of your VPS distribution.
 
-For a more automated process, OVHcloud also offers the SSL Gateway solution. Please refer to the [product page](https://www.ovh.co.uk/ssl-gateway/){.external} or our [guide documents](https://docs.ovh.com/gb/en/ssl-gateway/) for further information.
+For a more automated process, OVHcloud also offers the SSL Gateway solution. Please refer to the [product page](https://www.ovh.co.uk/ssl-gateway/){.external} or our [guide documents](/products/web-cloud-ssl-gateway) for further information.
 
 ## Go further
 
-[Introduction to SSH](https://docs.ovh.com/gb/en/dedicated/ssh-introduction/)
+[Introduction to SSH](/pages/cloud/dedicated/ssh_introduction)
 
-[Securing a VPS](https://docs.ovh.com/gb/en/vps/tips-for-securing-a-vps/)
+[Securing a VPS](/pages/cloud/vps/secure_your_vps)
 
-[Configuring a new Windows Server installation](https://docs.ovh.com/gb/en/vps/windows-first-config/)
+[Configuring a new Windows Server installation](/pages/cloud/vps/windows_first_config)
 
 Join our community of users on <https://community.ovh.com/en/>.

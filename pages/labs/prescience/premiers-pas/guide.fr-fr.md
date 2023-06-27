@@ -1,8 +1,6 @@
 ---
 title: 'Premiers pas avec OVH Prescience'
-slug: premiers-pas-avec-ovh-prescience
 excerpt: 'Découvrez comment prendre en main la plateforme OVH Prescience'
-section: 'Premiers pas'
 updated: 2018-10-08
 ---
 

@@ -1,17 +1,12 @@
 ---
 title: Wstrzymanie lub uśpienie instancji
-slug: wstrzymanie_lub_uspienie_instancji
 legacy_guide_number: g1781
-section: Zarządzanie projektami
-order: 3
-updated: 2021-09-20
+updated: 2023-06-20
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
-
-**Ostatnia aktualizacja dnia 01-10-2021**
 
 ## Wprowadzenie
 
@@ -25,9 +20,9 @@ updated: 2021-09-20
 
 ## Wymagania początkowe
 
-- Utworzenie [instancji Public Cloud OVHcloud](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/) w abonamencie **godzina**
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub [interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/horizon/)
-- Znajomość [API OpenStack](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/) i [Zmienne OpenStack](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/)
+- Utworzenie [instancji Public Cloud OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps) w abonamencie **godzina**
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub [interfejsu Horizon](/pages/platform/public-cloud/introducing_horizon)
+- Znajomość [API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) i [Zmienne OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## W praktyce
 
@@ -45,6 +40,12 @@ Poniższa tabela pozwoli Ci odróżnić opcje dostępne dla Twoich instancji. Ko
 |[Wstrzymaj](#pause-instance)|Przechowuje stan wirtualnej maszyny w pamięci RAM. Wstrzymana instancja zostaje zablokowana.|W przypadku Twojej instancji opłata jest taka sama.|
 
 ### Zawieś (shelve) instancję <a name="shelve-instance"></a>
+
+> [!alert]
+> Należy pamiętać, że zawieszenie instancji IOPS lub T1/T2-180 spowoduje utratę danych na dyskach NVMe passthrough.
+>
+> Zawieszenie tego typu instancji prowadzi do jej wycofania z hosta, a tym samym z dysków w passthrough.
+>
 
 Ta opcja pozwoli Ci zwolnić zasoby dedykowane Twojej instancji Public Cloud, ale adres IP pozostanie. Dane z dysku lokalnego będą przechowywane w migawce utworzonej automatycznie po odłożeniu instancji na półkę. Dane przechowywane w pamięci i poza nią nie będą zachowywane.
 
@@ -70,7 +71,7 @@ Aby wyświetlić migawkę, przejdź do menu po lewej stronie i kliknij pozycję 
 
 #### Z poziomu interfejsu Horizon
 
-Aby kontynuować, należy [tworzenie dostepu do interfejsu Horizon](../horizon/) i [zalogować się do interfejsu Horizon](https://horizon.cloud.ovh.net/auth/login/).
+Aby kontynuować, należy [tworzenie dostepu do interfejsu Horizon](/pages/platform/public-cloud/introducing_horizon) i [zalogować się do interfejsu Horizon](https://horizon.cloud.ovh.net/auth/login/).
 
 Jeśli wdrożyłeś instancje w różnych regionach, upewnij się, że jesteś we właściwym regionie. Weryfikacji dokonujesz w lewym górnym rogu w interfejsie Horizon.
 
@@ -92,8 +93,8 @@ Aby wyświetlić migawkę, w menu `Compute`{.action} kliknij pozycję `Images`{.
 
 Przed kontynuowaniem zalecamy zapoznanie się z następującymi przewodnikami:
 
-- [Przygotowanie środowiska dla API OpenStack](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Ustawianie zmiennych środowiskowych OpenStack](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/)
+- [Przygotowanie środowiska dla API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Ustawianie zmiennych środowiskowych OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 Kiedy Twoje środowisko jest gotowe, wpisz w wierszu poleceń:
 

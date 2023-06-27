@@ -1,11 +1,8 @@
 ---
 title: Tableaux comparatifs - AI Notebooks, AI Training, AI Deploy (EN)
-slug: ai-comparative-tables
 excerpt: "Découvrir les principales différences entre chaque AI Tools d'OVHcloud"
-section: Informations générales
-order: 100
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/ai-comparative-tables/'
+    canonical: '/pages/platform/ai/gi_00_ai_comparative-table'
 updated: 2023-05-12
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: 'Restoring your Web Hosting plan’s storage space'
-slug: restoring-ftp-filezilla-control-panel
 excerpt: 'Find out how to restore a file or an entire storage space from your Web Hosting plan'
-section: 'FTP and SSH'
-order: 06
 updated: 2023-01-12
 ---
 
@@ -17,7 +14,7 @@ With an OVHcloud Web Hosting plan, you get a storage space to host your websites
 > 
 > Backups offered by OVHcloud for shared hosting are non-contractual. We offer them in addition to your services to help you in urgent situations. We recommend that you regularly perform your own security backups to avoid any data loss.
 > 
-> When you do a security backup for your site and you are using a database, also create a backup of your database. Please refer to our guide on [retrieving the backup of a Web Hosting plan’s database](https://docs.ovh.com/asia/en/hosting/web_hosting_database_export_guide/).
+> When you do a security backup for your site and you are using a database, also create a backup of your database. Please refer to our guide on [retrieving the backup of a Web Hosting plan’s database](/pages/web/hosting/sql_database_export).
 > 
 
 **Find out how to restore a file or an entire storage space from your Web Hosting plan.**
@@ -61,7 +58,7 @@ Once you are ready to do so, carry on reading the section of this guide that is 
 >
 > ![ftp quota](images/check-ftp-quota.png){.thumbnail}
 >
-> If the FTP storage space used is more than half of the total FTP storage space of your hosting package, retrieve locally some of the large items from your website (you can use [Filezilla](https://docs.ovh.com/asia/en/hosting/web_hosting_filezilla_user_guide/)). Then remove them from your FTP storage. This will reduce the size of the FTP storage space you are using and you will then be able to launch your restoration from the OVHcloud Control Panel.
+> If the FTP storage space used is more than half of the total FTP storage space of your hosting package, retrieve locally some of the large items from your website (you can use [Filezilla](/pages/web/hosting/ftp_filezilla_user_guide)). Then remove them from your FTP storage. This will reduce the size of the FTP storage space you are using and you will then be able to launch your restoration from the OVHcloud Control Panel.
 >
 
 - [Restore the storage space via the OVHcloud Control Panel](#viacontrolpanel)
@@ -80,11 +77,11 @@ Once you are ready to do so, carry on reading the section of this guide that is 
 > [!primary]
 > **Website in maintenance mode**
 > 
-> To determine whether your website has been placed in "maintenance" mode, please refer to our guide [What do I do if I have a 403 forbidden page?](https://docs.ovh.com/asia/en/hosting/diagnostic-403-forbidden/). 
+> To determine whether your website has been placed in "maintenance" mode, please refer to our guide [What do I do if I have a 403 forbidden page?](/pages/web/hosting/diagnostic_403_forbidden). 
 > 
 > In this case:
 >
-> - Our teams send an email to the hosting [administrator contact](https://docs.ovh.com/asia/en/customer/managing-contacts/#access-contact-management).
+> - Our teams send an email to the hosting [administrator contact](/pages/account/customer/managing_contacts#access-contact-management).
 > - The “maintenance” status will appear in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. In the `Web Cloud`{.action} section, click on your service in the `Hosting plans`{.action} section, then on the `General information`{.action} tab.
 > - The hosted site(s) will display a "403 Forbidden" page.
 >
@@ -129,9 +126,9 @@ There are several stages to this procedure. Ensure that you have your FTP user p
 
 First of all, decide which software or interface you would like to use in order to connect to your storage space backup.  If you have already decided on one, you can move straight to step 2. Otherwise, we recommend using one of the following three solutions:
 
-- **Using FileZilla software.** You will need to download the software in advance, from the publisher’s website. You can learn how to use it by reading our guide on [Using FileZilla](https://docs.ovh.com/asia/en/hosting/web_hosting_filezilla_user_guide/){.external}. Please note that our guides cannot be used as a substitute for the publisher’s official documentation.
+- **Using FileZilla software.** You will need to download the software in advance, from the publisher’s website. You can learn how to use it by reading our guide on [Using FileZilla](/pages/web/hosting/ftp_filezilla_user_guide){.external}. Please note that our guides cannot be used as a substitute for the publisher’s official documentation.
 
-- **Using Cyberduck software.** You will need to download the software in advance, from the publisher’s website. You can learn how to use it by reading our guide on [Using Cyberduck](https://docs.ovh.com/asia/en/hosting/web_hosting_cyberduck_user_guide_on_mac/){.external}. Please note that our guides cannot be used as a substitute for the publisher’s official documentation.
+- **Using Cyberduck software.** You will need to download the software in advance, from the publisher’s website. You can learn how to use it by reading our guide on [Using Cyberduck](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac){.external}. Please note that our guides cannot be used as a substitute for the publisher’s official documentation.
 
 - **Using the FTP Explorer interface.** To use this method, you will need to log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Once you have logged in, click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Go to the `FTP - SSH`{.action} tab, and click `FTP Explorer`{.action}.
 
@@ -143,7 +140,7 @@ Once you are ready to start making changes, continue to the next step.
 
 To access the backup data you would like to restore, you will need to log in to your storage space via the interface or software you have selected. To do this, you will need to have the FTP username, its password and your FTP server’s host name.
 
-You can find this information in the `FTP - SSH`{.action} tab of your Web Hosting plan. If you no longer have the FTP user password, please refer to our guide on instructions set out in our documentation on [Modifying a FTP user password](https://docs.ovh.com/asia/en/hosting/modify-ftp-user-password/){.external}.
+You can find this information in the `FTP - SSH`{.action} tab of your Web Hosting plan. If you no longer have the FTP user password, please refer to our guide on instructions set out in our documentation on [Modifying a FTP user password](/pages/web/hosting/ftp_change_password){.external}.
 
 ![backupftp](images/backupftp-step4.png){.thumbnail}
 
@@ -177,9 +174,9 @@ Once you have connected, you can now restore the files you want. To do this, exp
 
 ## Go further
 
-[Using FileZilla software with your Web Hosting plan](https://docs.ovh.com/asia/en/hosting/web_hosting_filezilla_user_guide/){.external}
+[Using FileZilla software with your Web Hosting plan](/pages/web/hosting/ftp_filezilla_user_guide){.external}
 
-[Retrieving the backup of a Web Hosting plan’s database](https://docs.ovh.com/asia/en/hosting/web_hosting_database_export_guide/)
+[Retrieving the backup of a Web Hosting plan’s database](/pages/web/hosting/sql_database_export)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 

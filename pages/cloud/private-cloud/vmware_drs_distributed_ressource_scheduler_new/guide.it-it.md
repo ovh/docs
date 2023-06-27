@@ -1,9 +1,6 @@
 ---
 title: VMware DRS (Distributed Ressource Scheduler)
-slug: vmware-drs-distributed-ressource-scheduler-new
 excerpt: Gestire la ripartizione del carico con la funzione DRS
-section: Funzionalità VMware vSphere
-order: 03
 updated: 2020-07-07
 ---
 
@@ -110,7 +107,7 @@ Per la gestione delle regole VM/host clicca sulla scheda `Configura`.
 - Separare le macchine virtuali: Separazione delle VM su host separati all'interno dello stesso cluster.
 - Macchine virtuali degli host: Le macchine virtuali che appartengono al gruppo specificato devono essere eseguite nel gruppo di host indicato. È necessario creare gruppi di VM e di host nella scheda `Gruppi di VM/Host`.
 
-La quarta regola, “Da macchine virtuali a macchine virtuali” è spiegata nella nostra guida sulla funzione [funzione HA](../vmware-ha-high-availability/).
+La quarta regola, “Da macchine virtuali a macchine virtuali” è spiegata nella nostra guida sulla funzione [funzione HA](/pages/cloud/private-cloud/vmware_ha_high_availability).
 
 ![creazione regole drs](images/drs07.png){.thumbnail}
 

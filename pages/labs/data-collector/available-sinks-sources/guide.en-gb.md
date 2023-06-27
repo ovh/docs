@@ -1,7 +1,5 @@
 ---
 title: Available sources and sinks
-section: Getting started
-order: 3
 updated: 2018-10-09
 ---
 

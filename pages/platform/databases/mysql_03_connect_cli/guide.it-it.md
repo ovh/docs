@@ -1,11 +1,8 @@
 ---
 title: MySQL - Connect with CLI
 excerpt: Connect to your Public Cloud Databases for MySQL using the Command Line Interface (CLI)
-slug: mysql/connect-cli
-section: MySQL - Guides
-order: 030
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mysql/connect-cli/'
+    canonical: '/pages/platform/databases/mysql_03_connect_cli'
 updated: 2022-03-08
 ---
 
@@ -21,8 +18,8 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - A [Public Cloud project](https://www.ovhcloud.com/it/public-cloud/) in your OVHcloud account
-- A MySQL database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/it/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your MySQL instance](https://docs.ovh.com/it/publiccloud/databases/mysql/configure-mysql-instance/) to accept incoming connections
+- A MySQL database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your MySQL instance](/pages/platform/databases/mysql_07_prepare_for_incoming_connections) to accept incoming connections
 
 ## Concept
 
@@ -150,9 +147,9 @@ URL: https://www.mysql.org/docs/13/sql-createdatabase.html
 
 ## Go further
 
-[MySQL capabilities](https://docs.ovh.com/it/publiccloud/databases/mysql/capabilities/)
+[MySQL capabilities](/pages/platform/databases/mysql_01_capabilities)
 
-[Getting started with Public Cloud Databases](https://docs.ovh.com/it/publiccloud/databases/getting-started/)
+[Getting started with Public Cloud Databases](/pages/platform/databases/databases_01_order_control_panel)
 
 Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mysql) to find how to connect to your database with several languages.
 

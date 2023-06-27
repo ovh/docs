@@ -1,9 +1,6 @@
 ---
 title: Data - S3 compliance with AI Tools
-slug: s3-compliance
 excerpt: Learn how to use S3 buckets with AI Tools
-section: General information
-order: 110
 updated: 2023-05-10
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-s3-compliance?id=kb_article_view&sysparm_article=KB0058011'
@@ -19,7 +16,7 @@ This guide is intended to help you to use `S3 buckets` with **AI Tools** via the
 
 - A **Public Cloud project**.
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
-- A working `ovhai` CLI. See our guide on [how to install ovhai CLI](https://docs.ovh.com/it/publiccloud/ai/cli/install-client).
+- A working `ovhai` CLI. See our guide on [how to install ovhai CLI](/pages/platform/ai/cli_10_howto_install_cli).
 
 ## Instructions
 

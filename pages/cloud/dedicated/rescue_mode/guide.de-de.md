@@ -1,8 +1,6 @@
 ---
 title: 'Rescue-Modus aktivieren und verwenden'
-slug: ovh-rescue
 excerpt: 'Erfahren Sie hier, wie Sie den Rescue-Modus für einen Dedicated Server aktivieren und verwenden'
-section: 'Diagnose & Rescue Modus'
 updated: 2023-02-07
 ---
 
@@ -37,7 +35,7 @@ Falls Sie nicht schon über aktuelle Backups verfügen sollte der erste Schritt 
 ## In der praktischen Anwendung
 
 > [!warning]
-> Bitte beachten Sie, dass Sie beim Neustart eines Servers im Rescue-Modus kein Root-Passwort erhalten, wenn Sie in Ihrer Dienstverwaltung im Kundencenter einen SSH-Standard-Schlüssel festgelegt haben. In diesem Fall müssen Sie zuerst den SSH-Schlüssel deaktivieren, bevor Sie den Server im Rescue-Modus neu starten. Lesen Sie dazu [diesen Abschnitt](../ssh-schluessel-erzeugen/#disablesshkey) in der zugehörigen Anleitung.
+> Bitte beachten Sie, dass Sie beim Neustart eines Servers im Rescue-Modus kein Root-Passwort erhalten, wenn Sie in Ihrer Dienstverwaltung im Kundencenter einen SSH-Standard-Schlüssel festgelegt haben. In diesem Fall müssen Sie zuerst den SSH-Schlüssel deaktivieren, bevor Sie den Server im Rescue-Modus neu starten. Lesen Sie dazu [diesen Abschnitt](/pages/cloud/dedicated/creating-ssh-keys-dedicated#disablesshkey) in der zugehörigen Anleitung.
 >
 
 Der Rescue-Modus kann nur über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} aktiviert werden. Wählen Sie Ihren Server aus, indem Sie in den Bereich `Bare Metal Cloud`{.action} wechseln und ihn dann unter `Dedicated Server`{.action} anklicken.
@@ -212,6 +210,6 @@ Folgende Anwendungen sind bereits in diesem Modus installiert:
 
 ## Weiterführende Informationen
 
-[Administratorpasswort auf einem Windows Dedicated Server ändern](../windows-admin-passwort-aendern/)
+[Administratorpasswort auf einem Windows Dedicated Server ändern](/pages/cloud/dedicated/changing-admin-password-on-windows)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

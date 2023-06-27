@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguracja konta Exchange na urządzeniach Android poprzez aplikację Gmail'
-slug: exchange_20132016_konfiguracja_w_systemie_android
 excerpt: 'Dowiedz się, jak skonfigurować konto Exchange na urządzeniach z systemem Android poprzez aplikację Gmail'
-section: 'Konfiguracja na smartfonie/tablecie'
-order: 02
 updated: 2018-03-12
 ---
 
@@ -71,6 +68,6 @@ OVHcloud oferuje również aplikację internetową posiadającą [funkcje do pra
 
 ## Sprawdź również
 
-[Konfiguracja konta e-mail, włączonego do usługi MX Plan lub do usługi hostingu, na urządzeniu z systemem Android przy użyciu aplikacji Gmail](https://docs.ovh.com/pl/emails/konfiguracja-android/){.external}
+[Konfiguracja konta e-mail, włączonego do usługi MX Plan lub do usługi hostingu, na urządzeniu z systemem Android przy użyciu aplikacji Gmail](/pages/web/emails/how_to_configure_android){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>

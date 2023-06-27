@@ -1,9 +1,6 @@
 ---
 title: Présentation de le Load Balancer OVHcloud
-slug: iplb-presentation
 excerpt: Découvrez la nouvelle offre OVHcloud Load Balancer
-section: Premiers pas
-order: 1
 updated: 2018-01-17
 ---
 

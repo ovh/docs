@@ -1,9 +1,6 @@
 ---
 title: "Gestão de contactos de um projeto"
 excerpt: "Saiba como gerir os contactos de um projeto Public Cloud"
-slug: alterar_os_contactos_de_um_projeto
-section: 'Gestão do projeto'
-order: 6
 updated: 2022-04-04
 ---
 
@@ -48,14 +45,14 @@ Na nova janela, indique o identificador de cliente desejado para cada contacto q
 
 Depois de clicar no botão `Validar`{.action}, as duas contas OVHcloud afetadas pela alteração receberão um e-mail de confirmação. Este e-mail contém um código(token) que permite validar a alteração de contacto no separador `Os meus pedidos`{.action} na secção **Gestão dos contactos**.
 
-Para uma explicação mais detalhada deste procedimento, consulte o nosso guia "[Como gerir os contactos dos serviços OVHcloud](../../customer/gestao_dos_contactos/)".
+Para uma explicação mais detalhada deste procedimento, consulte o nosso guia "[Como gerir os contactos dos serviços OVHcloud](/pages/account/customer/managing_contacts)".
 
 ## Quer saber mais?
 
-[Informações sobre o método de faturação cloud](../informacoes-sobre-o-metodo-de-faturacao-cloud/)
+[Informações sobre o método de faturação cloud](/pages/platform/public-cloud/analyze_billing)
 
-[Como gerir os contactos dos serviços OVHcloud](../../customer/gestao_dos_contactos/)
+[Como gerir os contactos dos serviços OVHcloud](/pages/account/customer/managing_contacts)
 
-[Delegar projetos](../delegar_os_seus_projetos/)
+[Delegar projetos](/pages/platform/public-cloud/delegate_projects)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

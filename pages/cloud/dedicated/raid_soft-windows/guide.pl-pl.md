@@ -1,8 +1,6 @@
 ---
 title: Konfiguracja programowego lustra (RAID) w systemie Windows
-slug: dedicated-servers-mirror-soft-raid-windows
 excerpt: "Dowiedz się, jak odbudować konfigurację dysków Twojego serwera po wymianie dysku"
-section: RAID & dyski
 updated: 2023-03-28
 ---
 
@@ -69,7 +67,7 @@ DISKPART> list volume
 
 ```
 
-W tym przykładzie `Disk 1` to dysk zapasowy, który został zainstalowany w celu zastąpienia wadliwego `Disk M0`, który wcześniej został [fizycznie usunięty](https://docs.ovh.com/pl/dedicated/wymiana-dysku/).
+W tym przykładzie `Disk 1` to dysk zapasowy, który został zainstalowany w celu zastąpienia wadliwego `Disk M0`, który wcześniej został [fizycznie usunięty](/pages/cloud/dedicated/disk_replacement).
 
 
 > [!primary]
@@ -199,7 +197,7 @@ DISKPART> list volume
  
 ```
 
-W tym przykładzie `Disk 1` to dysk zapasowy, który został zainstalowany w celu zastąpienia wadliwego `Disk M0`, który wcześniej został [fizycznie usunięty](https://docs.ovh.com/pl/dedicated/wymiana-dysku/).
+W tym przykładzie `Disk 1` to dysk zapasowy, który został zainstalowany w celu zastąpienia wadliwego `Disk M0`, który wcześniej został [fizycznie usunięty](/pages/cloud/dedicated/disk_replacement).
 
 > [!primary]
 >

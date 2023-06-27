@@ -1,8 +1,6 @@
 ---
 title: 'Configuring a network bridge'
-slug: network-bridging
 excerpt: 'Find out how to configure your virtual machines for access to the public internet'
-section: 'Network Management'
 updated: 2022-12-20
 ---
 
@@ -34,7 +32,7 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 >
 > This guide is not applicable to servers of the ranges [Scale](https://www.ovhcloud.com/en-au/bare-metal/scale/) and [High Grade](https://www.ovhcloud.com/en-au/bare-metal/high-grade/).
 > 
-> Please visit the dedicated [configuration page](https://docs.ovh.com/au/en/dedicated/proxmox-network-hg-scale/).
+> Please visit the dedicated [configuration page](/pages/cloud/dedicated/proxmox-network-HG-Scale).
 
 
 ## Instructions

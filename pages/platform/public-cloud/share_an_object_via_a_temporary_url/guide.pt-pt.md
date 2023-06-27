@@ -1,8 +1,6 @@
 ---
 title: 'Partilhar um objeto com um endereço temporário'
-slug: partilhar-um-objeto-com-um-endereco-temporario
 excerpt: 'Saiba como partilhar um objeto sem fornecer dados pessoais'
-section: Gestão via OpenStack
 updated: 2021-01-11
 ---
 
@@ -18,8 +16,8 @@ Quando pretende partilhar um ficheiro com alguém, não quer transmitir informa�
 
 ## Requisitos
 
-- [Ter preparado o ambiente para usar a API OpenStack](https://docs.ovh.com/pt/public-cloud/prepare_the_environment_for_using_the_openstack_api/){.ref}.
-- [Carregar as variáveis do ambiente OpenStack](https://docs.ovh.com/fr/public-cloud/set-openstack-environment-variables/){.ref} (versão em francês).
+- [Ter preparado o ambiente para usar a API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api){.ref}.
+- [Carregar as variáveis do ambiente OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables){.ref} (versão em francês).
 - Ter instalado o Python no seu ambiente de trabalho.
 
 ## Instruções

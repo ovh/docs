@@ -1,9 +1,6 @@
 ---
 title: Configura un Additional IP
-slug: configure-additional-ip
 excerpt: Come aggiungere indirizzi Additional IP alla configurazione della tua istanza
-section: Additional IP
-order: 01
 updated: 2023-01-04
 ---
 
@@ -296,7 +293,7 @@ Per verificare che l'indirizzo Additional IP sia stato aggiunto correttamente, a
 
 ### Diagnostica
 
-Riavvia l'istanza utilizzando il sistema operativo installato nell'istanza o dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Se non riesci ancora a stabilire una connessione tra la rete pubblica e il tuo Additional IP e sospetti un problema di rete, riavvia l'istanza in [modalità Rescue](https://docs.ovh.com/it/public-cloud/riavvia_la_tua_istanza_in_modalita_di_ripristino_rescue_mode/). A questo punto puoi configurare l'indirizzo Additional IP direttamente sull'istanza.
+Riavvia l'istanza utilizzando il sistema operativo installato nell'istanza o dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Se non riesci ancora a stabilire una connessione tra la rete pubblica e il tuo Additional IP e sospetti un problema di rete, riavvia l'istanza in [modalità Rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode). A questo punto puoi configurare l'indirizzo Additional IP direttamente sull'istanza.
 
 
 Una volta effettuato l'accesso in Rescue mode via SSH, esegui questo comando:
@@ -309,9 +306,9 @@ Per testare la connessione, ti basta inviare un ping al tuo indirizzo Additional
 
 ## Per saperne di più
 
-[Importa un Additional IP](https://docs.ovh.com/it/publiccloud/network-services/import-additional-ip/)
+[Importa un Additional IP](/pages/platform/network-services/additional-ip-import)
 
-[Trasferisci un Additional IP](https://docs.ovh.com/it/publiccloud/network-services/migrate-additional-ip/)
+[Trasferisci un Additional IP](/pages/platform/network-services/additional-ip-migrate)
 
 Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 

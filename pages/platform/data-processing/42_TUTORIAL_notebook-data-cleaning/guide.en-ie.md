@@ -1,9 +1,6 @@
 ---
 title: Notebooks for Apache Spark - Data cleaning
-slug: notebook-spark-data-cleaning
 excerpt: Data cleaning of 2 CSV datasets with aggregation into a single clean Parquet file
-section: Tutorials
-order: 3
 updated: 2023-03-14
 ---
 
@@ -69,7 +66,7 @@ A preview of this notebook can be found on [GitHub](https://github.com/ovh/data-
 
 ### Go further
 
-- Do you want to create a data cleaning job you could replay based on your notebook? [Please refer to this guide](https://docs.ovh.com/ie/en/data-processing/submit-python/).
+- Do you want to create a data cleaning job you could replay based on your notebook? [Please refer to this guide](/pages/platform/data-processing/31_HOWTO_submit-python-ui).
 
 ## Feedback
 

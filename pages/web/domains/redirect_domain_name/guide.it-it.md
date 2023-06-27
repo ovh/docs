@@ -1,9 +1,6 @@
 ---
 title: "Reindirizzare un dominio gestito da OVHcloud"
-slug: reindirizzamento-dominio
 excerpt: "I diversi tipi di redirect e come creare un reindirizzamento per un dominio gestito da OVHcloud"
-section: Generale
-order: 01
 updated: 2022-10-06
 ---
 
@@ -64,7 +61,7 @@ Sono disponibili tre opzioni di reindirizzamento dallo[Spazio Cliente OVHcloud](
 > La scheda `Reindirizzamento`{.action} presenta una quarta opzione che permette di far puntare rapidamente il tuo dominio verso i record DNS A, AAAA e CNAME.<br>
 > Dato che non si tratta di un "reindirizzamento", questa opzione non sarà precisata in questa guida.
 >
-> Per maggiori informazioni sui record DNS, consulta la nostra documentazione sui [record DNS](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/).
+> Per maggiori informazioni sui record DNS, consulta la nostra documentazione sui [record DNS](/pages/web/domains/dns_zone_edit).
 >
 
 Di seguito trovi i tre tipi di reindirizzamenti dettagliati passo per passo.
@@ -389,13 +386,13 @@ Questa variabile può essere utilizzata quando trasferisci temporaneamente file 
 
 ## Per saperne di più <a name="go-further"></a>
 
-[Bloccare l'accesso al mio sito per alcuni indirizzi IP tramite un file ".htaccess" ](https://docs.ovh.com/it/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+[Bloccare l'accesso al mio sito per alcuni indirizzi IP tramite un file ".htaccess" ](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
-[Proteggi l'interfaccia di gestione del tuo sito tramite il ".htaccess" ](https://docs.ovh.com/it/hosting/condividi-htaccess-come-proteggere-laccesso-a-una-cartella-tramite-autenticazione/).
+[Proteggi l'interfaccia di gestione del tuo sito tramite il ".htaccess" ](/pages/web/hosting/htaccess_protect_directory_by_password).
 
-[Effettuare altre operazioni con il file ".htaccess" ](https://docs.ovh.com/it/hosting/hosting_condiviso_altre_operazioni_possibili_con_il_file_htaccess/).
+[Effettuare altre operazioni con il file ".htaccess" ](/pages/web/hosting/htaccess_what_else_can_you_do).
 
-[Come modificare la mia zona DNS?](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/)
+[Come modificare la mia zona DNS?](/pages/web/domains/dns_zone_edit)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 

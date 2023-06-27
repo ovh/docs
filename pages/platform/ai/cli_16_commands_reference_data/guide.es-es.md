@@ -1,11 +1,8 @@
 ---
 title: CLI - Commands reference for data
-slug: cli/data-cli
 excerpt: Learn how to manage your object storage data with the ovhai CLI
-section: Command Line Interface
-order: 206
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/data-cli/'
+    canonical: '/pages/platform/ai/cli_16_commands_reference_data'
 updated: 2023-05-11
 ---
 

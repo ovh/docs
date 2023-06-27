@@ -1,8 +1,5 @@
 ---
 title: User administration
-slug: administration-users
-section: Administration
-order: 11
 updated: 2022-06-24
 ---
 
@@ -57,7 +54,7 @@ The following table shows the available roles for environment types.
 | Contributor | Yes | Yes | Yes | Yes | No | No |
 | Admin| Yes | Yes | Yes | Yes | Yes | Yes |
 
-To customize who can use SSH, [set the access key](../configuration-app/access) in your `platform.app.yaml` file.
+To customize who can use SSH, [set the access key](/pages/web/web-paas/configuration-app/access) in your `platform.app.yaml` file.
 
 ## Manage users
 
@@ -126,7 +123,7 @@ To delete a user from a project, follow these steps:
 
 Once you delete a user, they can no longer access the project.
 After you delete a user from a project or an environment type,
-you must [trigger a redeploy](../development-redeploy/) to propagate SSH access changes to each environment.
+you must [trigger a redeploy](/pages/web/web-paas/development-redeploy) to propagate SSH access changes to each environment.
 
 ### Change existing permissions for environment types
 

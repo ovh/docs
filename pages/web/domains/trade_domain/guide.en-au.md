@@ -1,44 +1,49 @@
 ---
 title: Changing the owner of a domain name
-slug: how-to-change-domain-name-holder
-legacy_guide_number: 1350
 excerpt: Find out how to change the owner of a a domain name in the OVHcloud Control Panel
-section: Trade
-updated: 2021-03-04
+updated: 2023-06-19
 ---
 
-**Last updated 4th March 2021**
+**Last updated 19th June 2023**
 
 ## Objective
 
-Besides the domain contacts, you need to provide information on the owner when registering a domain name. "**Owner**" in this context pertains to a person or company holding the usage rights to this domain name (sometimes also referred to as "domain name holder"). **Domain trade** refers to a change of ownership by modifying this information in a legally binding way. For example, this process is the mandatory procedure in case of a company changing its name.
+In addition to providing [contacts](/pages/account/customer/managing_contacts), registering a domain name requires you to enter information on the domain name owner. In this context, **owner** pertains to either a natural person or a legal person (private or public organisation) holding the usage rights to this domain name. A **domain trade** refers to the act of modifying this information in a legally binding way i.e. the transfer of usage rights to a new **owner**. For example, this process is the mandatory procedure when a company changes its name.
 
 > [!primary]
 >This operation will not move your domain name to another OVHcloud customer account.
 >
+>To do this you need to change the domain name's [contacts](/pages/account/customer/managing_contacts).
+>
+> If you need to make a change of owner and a change of contact for the same domain name, there is no preferential order. However, it is the administrator contact who is able to initiate these operations. These two changes are therefore made in the Control Panel of ​​the domain name administrator contact.
 
-**This guide will provide you with information on how to change the owner of a domain name.**
+**This guide explains how to change the owner of a domain name.**
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
-- a domain name registered with OVHcloud
-- permission from the current domain name owner to change owners
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+- A domain name registered with OVHcloud for which no operation (owner change, transfer, creation) is in progress. If an operation has recently been completed on this domain name, there is a mandatory waiting period of 60 calendar days before a new operation can be started.
+- You are the [admin contact](/pages/account/customer/managing_contacts) for the domain name concerned.
+- You have permission from the current domain name owner to initiate a domain trade.
 
 
 ## Instructions
 
 > [!warning]
 >
-> The following instructions describe the most common way to change domain name owner, valid for most Top Level Domains (TLD). However, the specific rules for processes regarding TLDs are solely defined by the appropriate allocation authority i.e. the **registry**. Registrars such as OVHcloud must adhere to these rules and have no influence over registry decisions.
+> The following instructions describe the most common way to change a domain name owner. They are valid for for most **T**op **L**evel **D**omains (**TLD**). The **TLD** is the domain name extension, i.e. the last part of a domain name, such as *.com*, *.net*, *.fr*, etc.
 >
-> The exact procedure for domain trade may therefore vary, especially in case of some country-code TLDs (ccTLD, such as .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) and a few special purpose TLDs (.am, .fm, etc.). For some of them a trade is considered a paid operation. Changing the owner might also be prohibited for various reasons, e.g. outstanding payment, abuse case or registry lock. 
+> The specific rules for processes regarding **TLD**s are defined by the corresponding allocation authority i.e. the **registry**. Registrars such as OVHcloud must adhere to these rules and have no influence on registry decisions.
+>
+> There are generally two types of **TLD**: **ccTLD** and **gTLD**. **ccTLD**s are **TLD**s for a region or country (*.fr*, *.be*, *.uk*, *.de*, *.paris*, etc.) and **gTLD**s are generic **TLD**s (*.net*, *.com*, *.info*, *.org*, etc.).
+>
+> The exact procedure for domain trade may vary, particularly for some **ccTLDs**, such as *.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, etc. and a few special purpose **TLDs** (e.g. *.am*, *.fm.*). Changing the owner might also be prohibited for various reasons, for example outstanding payments, abuse cases or registry locks.
 >
 > We recommend to consult the following resources in case of any doubt:
 >
-> - the website of the respective TLD registry
-> - the [list of TLDs available at OVHcloud](https://www.ovhcloud.com/en-au/domains/tld/)
-> - the `Ongoing operations`{.action} section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) to check any pending status updates of the domain name
+> - The website of the respective **TLD** registry
+> - The [list of **TLD**s available at OVHcloud](https://www.ovhcloud.com/en-au/domains/tld/)
+> - The section `Ongoing operations`{.action} of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) to check any pending status updates of the domain name
 
 ### Step 1: Select the domain
 
@@ -46,7 +51,7 @@ Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomana
 
 ### Step 2: Inititate the owner change procedure
 
-In the `General information`{.action} tab, go to the **Plan** section in the bottom right corner. Click `...`{.action} next to the contacts, then click `Change domain name holder`{.action}.
+In the `General information`{.action} tab, go to the **Plan** section in the bottom right corner. Click `...`{.action} next to the **contacts**, then click `Change domain name holder`{.action}.
 
 ![changing owner](images/3652-2.png){.thumbnail}
 
@@ -78,13 +83,13 @@ If the email address is not changed as part of the domain trade, one recipient w
 
 > [!warning]
 >
-> If the domain name owner has been successfully changed, the domain name will be blocked from being [transferred to another registrar](../outgoing-transfer-of-generic-or-geographical-domain-name/) for a period of 60 days. 
+> If the domain name owner has been successfully changed, the domain name will be blocked from being [transferred to another registrar](/pages/web/domains/transfer_outgoing_domain) for a period of 60 days. 
 
 ### Updating the owner information <a name="updateownerinformation"></a>
 
 If you need to update some secondary information such as phone number, address etc., you do not have to start a trade procedure. It can be edited directly in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
 
-In the **Plan** section of the `General information`{.action} tab, click on `...`{.action} next to the contacts, then click `Refresh owner information`{.action}.
+In the **Plan** section of the `General information`{.action} tab, click on `...`{.action} next to the **contacts**, then click `Refresh owner information`{.action}.
 
 ![changing owner](images/3658.png){.thumbnail}
 
@@ -92,4 +97,10 @@ With this operation you do not need to confirm changes by email.
 
 ## Go further
 
-Join our community of users on https://community.ovh.com/en/.
+[Managing contacts for your services](/pages/account/customer/managing_contacts)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>. 

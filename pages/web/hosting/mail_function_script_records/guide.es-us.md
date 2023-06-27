@@ -1,9 +1,6 @@
 ---
 title: "Gestionar los mensajes de correo automatizados"
-slug: web_hosting_seguimiento_de_los_mensajes_de_correo_automatizados
 excerpt: "Cómo realizar el seguimiento y la gestión de los emails automatizados enviados desde un alojamiento web de OVHcloud"
-section: Diagnóstico
-order: 10
 updated: 2022-10-12
 ---
 
@@ -21,7 +18,7 @@ Los emails automatizados son mensajes enviados a través de scripts. Generalment
 >
 > Esta guía se refiere principalmente a los mensajes de correo enviados desde scripts situados en su [alojamiento web de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) mediante la función "mail()" de PHP.
 >
-> Si quiere gestionar las direcciones de correo electrónico incluidas en su MX Plan o en su plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}, consulte nuestra documentación sobre los [MX Plan](https://docs.ovh.com/us/es/emails/).
+> Si quiere gestionar las direcciones de correo electrónico incluidas en su MX Plan o en su plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}, consulte nuestra documentación sobre los [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -152,7 +149,7 @@ En este caso, es obligatorio realizar una purga para eliminar los spam pendiente
 
 Para corregir esta situación, debe realizar al menos las siguientes acciones:
 
-- Analice los [logs de su alojamiento](https://docs.ovh.com/us/es/hosting/web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/) para identificar los fallos de seguridad y los archivos infectados.
+- Analice los [logs de su alojamiento](/pages/web/hosting/logs_and_statistics) para identificar los fallos de seguridad y los archivos infectados.
 - Elimine o corrija los archivos o módulos maliciosos.
 - Para los CMS (WordPress, Joomla, PrestaShop, Drupal...), actualice el CMS, los plugin y el tema asociados.
 - Proteja sus formularios de contacto con un captcha.
@@ -222,11 +219,11 @@ $mail->Password = "YourEmailPassword";
 
 ## Más información <a name="go-further"></a>
 
-[Consultar los logs de su alojamiento](https://docs.ovh.com/us/es/hosting/web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/)
+[Consultar los logs de su alojamiento](/pages/web/hosting/logs_and_statistics)
 
-[Corregir la página "403 Forbidden" que aparece en su sitio web](https://docs.ovh.com/us/es/hosting/diagnostico-403-forbidden/)
+[Corregir la página "403 Forbidden" que aparece en su sitio web](/pages/web/hosting/diagnostic_403_forbidden)
 
-[Restaurar el espacio de almacenamiento FTP de su alojamiento](https://docs.ovh.com/es/hosting/restaurar-espacio-almacenamiento-alojamiento-web/)
+[Restaurar el espacio de almacenamiento FTP de su alojamiento](/pages/web/hosting/ftp_save_and_backup)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 

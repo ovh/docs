@@ -1,8 +1,6 @@
 ---
 title: Infrastructure Blue-Green
-slug: blue-green
 excerpt: Cas pratique
-section: Cas d'usage
 updated: 2022-04-26
 ---
 
@@ -50,7 +48,7 @@ Le schéma suivant détail l'architecture générale :
 
 
 ### Infrastructure A
-Cette infrastructure est composée d'une ferme de serveurs qui sera ultérieurement associée à un frontend de votre IPLB. Cette ferme expose au frontend un service de type HTTP, TCP ou UDP. Elle se charge également de la répartition de charge en transmettant aux serveurs le trafic reçu par le frontend. Pour plus de précision sur le rôle des différents éléments du service OVHcloud Load Balancer, vous pouvez vous réferer à cette documentation : [Présentation de l'OVH Load Balancer](../iplb-presentation/).
+Cette infrastructure est composée d'une ferme de serveurs qui sera ultérieurement associée à un frontend de votre IPLB. Cette ferme expose au frontend un service de type HTTP, TCP ou UDP. Elle se charge également de la répartition de charge en transmettant aux serveurs le trafic reçu par le frontend. Pour plus de précision sur le rôle des différents éléments du service OVHcloud Load Balancer, vous pouvez vous réferer à cette documentation : [Présentation de l'OVH Load Balancer](/pages/cloud/load_balancer/use_presentation).
 
 Dans le cadre de notre scénario, nous déclarons une ferme de serveurs pour le service HTTP. A noter que vous pouvez créer autant de fermes que de services TCP et / ou UDP nécessaires au bon fonctionnement du service final exposé à vos clients.
 

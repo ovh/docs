@@ -1,8 +1,6 @@
 ---
 title: 'Connectivity API'
 excerpt: 'Develop using connectivity API'
-slug: connectivity-api
-section: 'Advanced technical configurations'
 updated: 2023-04-03
 ---
 
@@ -16,7 +14,7 @@ This guide is designed to help developers use our APIs to create their own appli
 
 - an active OVHcloud account, and your login details
 - access to the [OVHcloud API webpage](https://api.ovh.com/){.external}
-- Read our [Getting started with OVHcloud APIs guide](../../api/first-steps-with-ovh-api/) to get started using OVHcloud APIv6.
+- Read our [Getting started with OVHcloud APIs guide](/pages/account/api/first-steps) to get started using OVHcloud APIv6.
 
 ## Instructions
 

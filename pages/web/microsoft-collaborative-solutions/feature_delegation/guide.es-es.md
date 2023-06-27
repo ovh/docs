@@ -1,9 +1,6 @@
 ---
 title: 'Delegar permisos en una cuenta de correo'
-slug: exchange_2013_dar_permisos_full_access_a_una_cuenta
 excerpt: 'Cómo delegar permisos de su cuenta de correo en otra cuenta'
-section: 'Funcionalidades de las cuentas Exchange'
-order: 03
 updated: 2020-10-24
 ---
 
@@ -66,9 +63,9 @@ Una vez configurada la delegación, ya puede empezar a utilizarla. Compruebe que
 
 El procedimiento es distinto según el permiso, y depende también de la aplicación (cliente de correo local o web) que utilice para conectarse a su cuenta de correo. Continúe leyendo esta guía en el apartado correspondiente al permiso o permisos que haya delegado.
 
-- [Utilizar el permiso de acceso completo](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2013_dar_permisos_full_access_a_una_cuenta/#21-utilizar-el-permiso-de-acceso-completo){.external}
-- [Utilizar el permiso de «enviar como»](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2013_dar_permisos_full_access_a_una_cuenta/#22-utilizar-el-permiso-de-enviar-como){.external}
-- [Utilizar el permiso de «enviar en nombre de»](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2013_dar_permisos_full_access_a_una_cuenta/#23-utilizar-el-permiso-de-enviar-en-nombre-de){.external}
+- [Utilizar el permiso de acceso completo](/pages/web/microsoft-collaborative-solutions/feature_delegation#21-utilizar-el-permiso-de-acceso-completo){.external}
+- [Utilizar el permiso de «enviar como»](/pages/web/microsoft-collaborative-solutions/feature_delegation#22-utilizar-el-permiso-de-enviar-como){.external}
+- [Utilizar el permiso de «enviar en nombre de»](/pages/web/microsoft-collaborative-solutions/feature_delegation#23-utilizar-el-permiso-de-enviar-en-nombre-de){.external}
 
 > [!warning]
 >

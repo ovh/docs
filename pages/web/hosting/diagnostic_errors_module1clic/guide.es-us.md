@@ -1,9 +1,6 @@
 ---
 title: Resolver los errores más frecuentes asociados a los módulos en 1 clic
-slug: errores-frecuentes-modulos-en-1-clic
 excerpt: Diagnóstico de los errores más comunes relacionados con la creación de módulos en 1 clic
-section: Diagnóstico
-order: 02
 updated: 2022-11-08
 ---
 
@@ -15,7 +12,7 @@ updated: 2022-11-08
 
 ## Objetivo
 
-La creación de un [Módulo en 1 clic](../modulos-en-un-clic/) en modo simple o avanzado puede provocar diferentes anomalías.
+La creación de un [Módulo en 1 clic](/pages/web/hosting/cms_install_1_click_modules) en modo simple o avanzado puede provocar diferentes anomalías.
 
 **Cómo diagnosticar los casos más comunes de errores asociados a la creación de módulos en 1 clic**
 
@@ -30,7 +27,7 @@ La creación de un [Módulo en 1 clic](../modulos-en-un-clic/) en modo simple o 
 
 - Tener contratado un plan de [hosting](https://www.ovhcloud.com/es/web-hosting/) compatible.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
-- Haber utilizado la funcionalidad [Módulo en 1 clic](../modulos-en-un-clic/) para crear un nuevo sitio web.
+- Haber utilizado la funcionalidad [Módulo en 1 clic](/pages/web/hosting/cms_install_1_click_modules) para crear un nuevo sitio web.
 
 ## Procedimiento
 
@@ -82,9 +79,9 @@ En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager
 
 #### Solución nº4: instalar el módulo en una base de datos ya utilizada
 
-Para instalar su módulo en una base de datos ya utilizada, deberá utilizar el [modo avanzado](../modulos-en-un-clic/#instalacion-avanzada-de-un-modulo) de instalación de un nuevo **módulo en 1 clic**.
+Para instalar su módulo en una base de datos ya utilizada, deberá utilizar el [modo avanzado](/pages/web/hosting/cms_install_1_click_modules#instalacion-avanzada-de-un-modulo) de instalación de un nuevo **módulo en 1 clic**.
 
-Para encontrar los detalles de inicio de sesión de la base de datos, por favor, compruebe esta [guía](../modulos-en-un-clic/#configurar-el-modulo).
+Para encontrar los detalles de inicio de sesión de la base de datos, por favor, compruebe esta [guía](/pages/web/hosting/cms_install_1_click_modules#configurar-el-modulo).
 
 ### "El directorio de instalación no está vacío"
 
@@ -98,15 +95,15 @@ Para asociar su dominio a otro directorio, haga clic en `Cambiar el dominio`{.ac
 
 ![modify_root_folder](images/modify_root_folder.png){.thumbnail}
 
-También puede conectarse al alojamiento por [FTP](../conexion-espacio-almacenamiento-ftp-alojamiento-web/) y después eliminar o mover el contenido de la carpeta después de guardarlo.
+También puede conectarse al alojamiento por [FTP](/pages/web/hosting/ftp_connection) y después eliminar o mover el contenido de la carpeta después de guardarlo.
 
 ### "Si è verificato un errore durante il caricamento delle informazioni (There is not enough space on your hosting (you need at least xxx MB))"
 
 ![not_enough_space](images/not_enough_space.png){.thumbnail}
 
-Este mensaje indica que el[espacio de almacenamiento](../modulos-en-un-clic/#instalacion-avanzada-de-un-modulo) de su alojamiento tiene un volumen de datos demasiado grande. Es necesario eliminar o mover uno antes de poder instalar un nuevo [módulo en 1 clic](../modulos-en-un-clic/).
+Este mensaje indica que el[espacio de almacenamiento](/pages/web/hosting/cms_install_1_click_modules#instalacion-avanzada-de-un-modulo) de su alojamiento tiene un volumen de datos demasiado grande. Es necesario eliminar o mover uno antes de poder instalar un nuevo [módulo en 1 clic](/pages/web/hosting/cms_install_1_click_modules).
 
-En ese caso, [conéctese por FTP](../conexion-espacio-almacenamiento-ftp-alojamiento-web/) a su alojamiento, [guarde localmente sus datos](../web_hosting_guia_de_uso_de_filezilla/#transferencia-de-los-archivos) y luego elimine los archivos que no sean necesarios para el funcionamiento de su sitio web.
+En ese caso, [conéctese por FTP](/pages/web/hosting/ftp_connection) a su alojamiento, [guarde localmente sus datos](/pages/web/hosting/ftp_filezilla_user_guide#transferencia-de-los-archivos) y luego elimine los archivos que no sean necesarios para el funcionamiento de su sitio web.
 
 > [!primary]
 >
@@ -119,7 +116,7 @@ En ese caso, [conéctese por FTP](../conexion-espacio-almacenamiento-ftp-alojami
 
 Una vez que haya iniciado la instalación del módulo en modo avanzado, recibirá un mensaje de correo electrónico indicándole que el módulo no puede conectarse a la base de datos indicada. 
 
-Primero compruebe sus [credenciales de base de datos](../modulos-en-un-clic/#configurar-el-modulo).
+Primero compruebe sus [credenciales de base de datos](/pages/web/hosting/cms_install_1_click_modules#configurar-el-modulo).
 
 A continuación, elimine el módulo en la pestaña `Módulos en 1 clic`{.action}:
 
@@ -131,11 +128,11 @@ A continuación, vuelva a instalar un nuevo módulo.
 
 ![insufficient_rights](images/insufficient_rights.png){.thumbnail}
 
-Su base de datos no puede modificarse porque la cantidad de datos que contiene supera el límite autorizado. Este mensaje aparece al instalar un módulo en [modo avanzado](../modulos-en-un-clic/#instalacion-avanzada-de-un-modulo).
+Su base de datos no puede modificarse porque la cantidad de datos que contiene supera el límite autorizado. Este mensaje aparece al instalar un módulo en [modo avanzado](/pages/web/hosting/cms_install_1_click_modules#instalacion-avanzada-de-un-modulo).
 
-En ese caso, instale el módulo pasando por el [modo "simple"](../modulos-en-un-clic/#instalacion-simple-de-un-modulo) o seleccione otra base de datos cuando se instale en modo avanzado. Si lo necesita, contrate una [oferta de bases de datos](https://www.ovh.es/hosting/opciones-sql.xml) adicional.
+En ese caso, instale el módulo pasando por el [modo "simple"](/pages/web/hosting/cms_install_1_click_modules#instalacion-simple-de-un-modulo) o seleccione otra base de datos cuando se instale en modo avanzado. Si lo necesita, contrate una [oferta de bases de datos](https://www.ovh.es/hosting/opciones-sql.xml) adicional.
 
-Si no tiene bases de datos adicionales y no desea contratar una solución adicional, [importe una copia de la base de datos](../web_hosting_exportacion_de_una_base_de_datos/#procedimiento) y elimine los datos innecesarios.
+Si no tiene bases de datos adicionales y no desea contratar una solución adicional, [importe una copia de la base de datos](/pages/web/hosting/sql_database_export#procedimiento) y elimine los datos innecesarios.
 
 > [!warning]
 >
@@ -154,8 +151,8 @@ Abra la pestaña `Multisitio`{.action} y realice las siguientes comprobaciones:
 
 |Escenario|Medidas que deberá adoptar|
 |---|---|
-|El dominio o subdominio asociado al sitio que quiere crear no aparece en el `multisitio`{.action}.|Añada su dominio siguiendo [estas indicaciones](../configurar-un-multisitio-en-un-alojamiento-web/#2-anadir-un-dominio-o-subdominio).|
-|El nombre de dominio se ha eliminado del multisitio sin que usted haga nada al respecto.|Si su dominio o su [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/) no están gestionados desde su cuenta de OVHcloud, añada su dominio al `multisitio`{.action} siguiendo [esta guía](../configurar-un-multisitio-en-un-alojamiento-web/#22-anadir-un-dominio-externo).|
+|El dominio o subdominio asociado al sitio que quiere crear no aparece en el `multisitio`{.action}.|Añada su dominio siguiendo [estas indicaciones](/pages/web/hosting/multisites_configure_multisite#2-anadir-un-dominio-o-subdominio).|
+|El nombre de dominio se ha eliminado del multisitio sin que usted haga nada al respecto.|Si su dominio o su [zona DNS](/pages/web/domains/dns_zone_edit) no están gestionados desde su cuenta de OVHcloud, añada su dominio al `multisitio`{.action} siguiendo [esta guía](/pages/web/hosting/multisites_configure_multisite#22-anadir-un-dominio-externo).|
 
 ### Su módulo se muestra en una dirección web de tipo "xxxxx.cluster0xx.hosting.ovh.net"
 
@@ -167,13 +164,13 @@ Una vez que haya realizado todas las copias de seguridad necesarias, [elimine el
 
 Esta anomalía puede tener varias causas:
 
-- Recientemente ha realizado un cambio en la zona o servidores [DNS](https://docs.ovh.com/us/es/domains/web_hosting_como_editar_mi_zona_dns/) o una [transferencia de dominio](../../domains/transferir-un-dominio-generico/). Espere a que estas operaciones se completen (48 horas para realizar cambios en sus DNS). También puede reiniciar los dispositivos (PC, smartphone, box, etc.) y vaciar la caché de su navegador.
+- Recientemente ha realizado un cambio en la zona o servidores [DNS](/pages/web/domains/dns_zone_edit) o una [transferencia de dominio](/pages/web/domains/transfer_incoming_generic_domain). Espere a que estas operaciones se completen (48 horas para realizar cambios en sus DNS). También puede reiniciar los dispositivos (PC, smartphone, box, etc.) y vaciar la caché de su navegador.
 
-- Su dominio siempre está asociado a su antiguo alojamiento. Cambie en este caso su [Zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#editar-la-zona-dns-de-ovhcloud-de-su-dominio) o sus [Servidores DNS](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/#2-editar-los-servidores-dns-de-un-dominio) o contacte con su antiguo proveedor de hosting.
+- Su dominio siempre está asociado a su antiguo alojamiento. Cambie en este caso su [Zona DNS](/pages/web/domains/dns_zone_edit#editar-la-zona-dns-de-ovhcloud-de-su-dominio) o sus [Servidores DNS](/pages/web/domains/dns_server_general_information#2-editar-los-servidores-dns-de-un-dominio) o contacte con su antiguo proveedor de hosting.
 
 ### La contraseña "Administrador" de acceso al "back-office" de su módulo en 1 clic ya no funciona <a name="adminpassword"></a>
 
-En caso de que se rechace la contraseña actual de acceso al panel de administración de su CMS, consulte el apartado "Cambiar la contraseña de su módulo" de nuestra documentación sobre la [gestión de su módulo en 1 clic](https://docs.ovh.com/us/es/hosting/1-click-module-management/#password-change).
+En caso de que se rechace la contraseña actual de acceso al panel de administración de su CMS, consulte el apartado "Cambiar la contraseña de su módulo" de nuestra documentación sobre la [gestión de su módulo en 1 clic](/pages/web/hosting/cms_manage_1_click_module#password-change).
 
 ## Más información <a name="gofurther"></a>
 

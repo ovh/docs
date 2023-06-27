@@ -1,9 +1,6 @@
 ---
 title: Configuring the firewall on Linux with iptables
 excerpt: Find out how to secure a server with iptables
-slug: firewall-iptables
-section: Security
-order: 02
 updated: 2022-10-18
 ---
 
@@ -40,7 +37,7 @@ Firewalls work by defining rules that govern both authorised and blocked traffic
 
 Distribution and operating system developers offer frequent software package updates, very often for security reasons. **Keeping your distribution or operating system up-to-date is essential for securing your server.**
 
-Please refer to our guide on [securing a dedicated server](https://docs.ovh.com/ie/en/dedicated/securing-a-dedicated-server/) for more information.
+Please refer to our guide on [securing a dedicated server](/pages/cloud/dedicated/securing-a-dedicated-server) for more information.
 
 ### Step 2: Install the iptables firewall in Ubuntu
 
@@ -134,7 +131,7 @@ The options work this way:
 > [!warning]
 > If you lose access to your server, you can always use the KVM/IPMI tool to access it again and modify your configuration or delete your rules.
 >
-> For more information on accessing this tool, please refer to [this guide](https://docs.ovh.com/ie/en/dedicated/use-ipmi-dedicated-servers/).  
+> For more information on accessing this tool, please refer to [this guide](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers).  
 > 
 
 ### Step 6: Control traffic by IP address

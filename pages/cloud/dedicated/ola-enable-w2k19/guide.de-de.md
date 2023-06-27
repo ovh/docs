@@ -1,9 +1,6 @@
 ---
 title: 'Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Windows Server 2019'
-slug: ola-w2k19
 excerpt: 'Erfahren Sie hier, wie Sie OLA auf Ihrem Windows Server 2019 Server aktivieren'
-section: 'Fortgeschrittene Nutzung'
-order: 4
 updated: 2021-03-25
 ---
 
@@ -17,7 +14,7 @@ Die OVHcloud Link Aggregation (OLA) wurde von unseren Teams entwickelt, um die V
 
 ## Voraussetzungen
 
-- [Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation im OVHcloud Kundencenter](../ola-manager).
+- [Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation im OVHcloud Kundencenter](/pages/cloud/dedicated/ola-enable-manager).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
@@ -71,10 +68,10 @@ Um zu testen, ob unser NIC Team funktioniert, senden Sie einen Ping-Befehl an ei
 
 ## Weiterführende Informationen
 
-[Konfigurieren der OVHcloud Link Aggregation im OVHcloud Kundencenter](../ola-manager/)
+[Konfigurieren der OVHcloud Link Aggregation im OVHcloud Kundencenter](/pages/cloud/dedicated/ola-enable-manager)
 
-[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9](../ola-debian9/)
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9](/pages/cloud/dedicated/ola-enable-debian9)
 
-[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in CentOS 7](../ola-centos7/)
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in CentOS 7](/pages/cloud/dedicated/ola-enable-centos7)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

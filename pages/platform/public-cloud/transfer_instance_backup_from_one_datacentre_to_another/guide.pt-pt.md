@@ -1,7 +1,5 @@
 ---
 title: 'Transferir a cópia de segurança de uma instância de um datacenter para outro'
-slug: transferir-a-copia-de-seguranca-de-uma-instancia-de-um-datacenter-para-outro
-section: Gestão via OpenStack
 excerpt: 'Saiba como realizar esta operação mantendo a configuração e o estado da instância'
 updated: 2019-03-29
 ---
@@ -23,7 +21,7 @@ Poderá ter de mover a sua instância Public Cloud de um datacenter para outro, 
 
 * Ter criado uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} a partir da sua conta.
 * Dispor de um acesso administrador (root) à sua instância/ao seu sistema operativo através de SSH.
-* Ler o manual "[Preparar o ambiente para utilizar a API OpenStack](https://docs.ovh.com/pt/public-cloud/prepare_the_environment_for_using_the_openstack_api/){.external}". (Recomendado)
+* Ler o manual "[Preparar o ambiente para utilizar a API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api){.external}". (Recomendado)
 
 > [!primary]
 >
@@ -144,6 +142,6 @@ Utilize o ID da cópia de segurança como imagem com o seguinte comando:
 
 ## Quer saber mais?
 
-[Transferir o backup de um volume de um datacenter para outro](https://docs.ovh.com/pt/public-cloud/transferir_o_backup_de_um_volume_de_um_datacenter_para_outro/){.external}.
+[Transferir o backup de um volume de um datacenter para outro](/pages/platform/public-cloud/transfer_volume_backup_from_one_datacentre_to_another){.external}.
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

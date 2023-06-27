@@ -1,9 +1,6 @@
 ---
 title: 'Utilização do diagnóstico de erros Exchange'
 excerpt: 'Saiba como realizar um diagnóstico automatizado dos erros nas contas Exchange'
-slug: diagnostico_exchange_o_que_fazer_em_caso_de_erro
-section: Diagnóstico Exchange
-order: 01
 updated: 2022-10-19
 ---
 
@@ -24,7 +21,7 @@ Os erros nas contas de e-mail Exchange podem ter várias causas. Um diagnóstico
 - Dispor de uma [solução Exchange OVHcloud](https://www.ovhcloud.com/pt/emails/hosted-exchange/) já instalada
 - Dispor das informações de identificação para a conta Exchange a verificar
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
-- Estar atualizado nos [pagamentos](https://docs.ovh.com/pt/billing/gerir-faturas-ovhcloud/#pay-bills) deste serviço e do domínio associado.
+- Estar atualizado nos [pagamentos](/pages/account/billing/invoice_management#pay-bills) deste serviço e do domínio associado.
 
 ## Instruções
 
@@ -58,12 +55,12 @@ Uma conta bloqueada recebe sempre e-mails mas o envio foi desativado pelo sistem
 
 Pode verificá-lo no separador `Contas de e-mail`{.action} do seu serviço Exchange. A conta terá uma menção `SPAM` na coluna "Estado" do quadro.
 
-Consulte o nosso guia [O que fazer em caso de conta bloqueada por spam?](../bloqueado-por-spam/) para permitir às nossas equipas de segurança reativar a conta.
+Consulte o nosso guia [O que fazer em caso de conta bloqueada por spam?](/pt/microsoft-collaborative-solutions/bloqueado-por-spam/) para permitir às nossas equipas de segurança reativar a conta.
 
 ### A subscrição à conta expirou <a name="expired"></a>
 
 Uma vez que a sua assinatura deixou de estar ativa, o envio e a receção foram desativados.<br>
-Para reativar a subscrição, basta reconfigurar a [periodicidade de faturação](https://docs.ovh.com/pt/microsoft-collaborative-solutions/gestao-faturacao-exchange/#periodicity) na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+Para reativar a subscrição, basta reconfigurar a [periodicidade de faturação](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#periodicity) na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ### A conta está bloqueada pela política de segurança
 
@@ -73,7 +70,7 @@ Pode, por exemplo, decidir que a conta será bloqueada após várias tentativas 
 
 Neste caso, pode aguardar que a conta esteja de novo disponível ou contactar as nossas equipas Exchange criando um pedido de assistência.
 
-Para mais informações sobre esta funcionalidade, consulte o nosso [guia sobre a política de segurança](../gerir-politica-de-seguranca-palavra-passe/).
+Para mais informações sobre esta funcionalidade, consulte o nosso [guia sobre a política de segurança](/pt/microsoft-collaborative-solutions/gerir-politica-de-seguranca-palavra-passe/).
 
 ### A autenticação ao webmail falhou <a name="password"></a>
 
@@ -107,7 +104,7 @@ Em função da utilização do seu serviço Exchange, os seguintes servidores MX
 
 O registo SRV serve para a configuração automática da sua conta Exchange com um software de mensagens compatível como o Microsoft Outlook.
 
-Pode verificar estes parâmetros na [zona DNS do seu domínio](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).
+Pode verificar estes parâmetros na [zona DNS do seu domínio](/pages/web/domains/dns_zone_edit).
 
 Eis os valores para um serviço Exchange:
 

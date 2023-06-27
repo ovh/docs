@@ -1,10 +1,7 @@
 ---
 title: Pobierz nagłówek wiadomości e-mail
-slug: pobieranie-wiadomosci-e-mail
 legacy_guide_number: 1365
 excerpt: Dowiedz się, jak pobrać nagłówek e-mail do klienta poczty elektronicznej
-section: Diagnostyka
-order: 03
 updated: 2021-11-19
 ---
 
@@ -94,7 +91,7 @@ Subject: Hello my friend
 Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
 </code></pre>
 
-- Pole `Received-SPF` wyświetla wynik kontroli [SPF](https://docs.ovh.com/pl/domains/uslugi_www_pole_spf/) przeprowadzonej na domenie nadawcy. Argument `client-ip` pozwala na wskazanie adresu IP serwera, który użył do wysyłki wiadomości e-mail. 
+- Pole `Received-SPF` wyświetla wynik kontroli [SPF](/pages/web/domains/dns_zone_spf) przeprowadzonej na domenie nadawcy. Argument `client-ip` pozwala na wskazanie adresu IP serwera, który użył do wysyłki wiadomości e-mail. 
 <pre class="console"><code>
 Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh 
 </code></pre>
@@ -196,6 +193,6 @@ Aby wyświetlić nagłówek w interfejsie webmail <Outlook.com>, zapoznaj się z
 
 ## Sprawdź również
 
-[FAQ E-mail](https://docs.ovh.com/pl/emails/faq-konta-email/)
+[FAQ E-mail](/pages/web/emails/faq-emails)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

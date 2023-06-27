@@ -1,8 +1,6 @@
 ---
 title: 'Change the announcement of an IP block in vRack'
-slug: change-anouncement-ip-block-vrack
 excerpt: 'Learn how to change the announcement of an IP block in vRack'
-section: vRack
 updated: 2019-03-12
 ---
 
@@ -17,7 +15,7 @@ The [vRack](https://www.ovh.com/asia/solutions/vrack/){.external} is a private n
 ## Requirements:
 
 - A [vRack](https://www.ovh.com/asia/solutions/vrack/){.external}
-- A [configured block of IP addresses in the vRack](../ip-block-vrack/)
+- A [configured block of IP addresses in the vRack](/pages/cloud/dedicated/configuring-an-ip-block-in-a-vrack)
 - Basic network knowledge
 
 > [!warning]

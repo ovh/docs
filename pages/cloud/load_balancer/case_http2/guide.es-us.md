@@ -1,8 +1,6 @@
 ---
 title: Configurar HTTP/2 en un Load Balancer de OVHcloud
-slug: load-balancer-http2
 excerpt: Cómo configurar el protocolo HTTP/2 en un Load Balancer de OVHcloud
-section: Casos particulares
 updated: 2018-01-15
 ---
 

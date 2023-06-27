@@ -1,9 +1,6 @@
 ---
 title: "Logging in to your web hosting plan’s FTP storage space"
-slug: log-in-to-storage-ftp-web-hosting
 excerpt: "Find out how to log in to your OVHcloud web hosting plan’s FTP storage space"
-section: FTP and SSH
-order: 02
 updated: 2023-06-01
 ---
 

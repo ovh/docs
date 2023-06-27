@@ -1,9 +1,6 @@
 ---
 title: 'Managing contacts for your services'
-slug: managing-contacts
 excerpt: 'Find out how to manage contacts for your OVHcloud services'
-section: 'Getting started'
-order: 6
 updated: 2021-12-13
 ---
 
@@ -121,9 +118,9 @@ You have just subscribed to an OVHcloud service with the purpose of hosting your
 
 In this situation, you can grant your service provider the role "[technical contact](#gestion_des_contacts)" on your OVHcloud Web Hosting plan. With this access, they can carry out the operations required to put your website online (adding a domain or subdomain to the multisite, installing a 1-click module, changing the FTP and database passwords, creating SSL certificates, etc.).
 
-If your domain name is not linked to your hosting plan, and you wish to entrust the necessary operations to your webmaster, give them the role "[technical contact](#gestion_des_contacts)" on your [domain name’s DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/).
+If your domain name is not linked to your hosting plan, and you wish to entrust the necessary operations to your webmaster, give them the role "[technical contact](#gestion_des_contacts)" on your [domain name’s DNS zone](/pages/web/domains/dns_zone_edit).
 
-You cannot change a service’s admin or billing contacts when logged in as "[technical contact](#gestion_des_contacts)". This access right will not give your webmaster access to your invoices, orders, service renewals or payment methods. They will not be able to [transfer the management of your domain name](https://docs.ovh.com/gb/en/domains/outgoing-transfer-of-generic-or-geographical-domain-name/) to another hosting provider or [change its owner](https://docs.ovh.com/gb/en/domains/how-to-change-domain-name-holder/). Finally, as the [administrative contact](#administrateur) of your services, you can change the "[technical contact](#technique)" at any time.
+You cannot change a service’s admin or billing contacts when logged in as "[technical contact](#gestion_des_contacts)". This access right will not give your webmaster access to your invoices, orders, service renewals or payment methods. They will not be able to [transfer the management of your domain name](/pages/web/domains/transfer_outgoing_domain) to another hosting provider or [change its owner](/pages/web/domains/trade_domain). Finally, as the [administrative contact](#administrateur) of your services, you can change the "[technical contact](#technique)" at any time.
 
 ### Special case of a domain owner
 

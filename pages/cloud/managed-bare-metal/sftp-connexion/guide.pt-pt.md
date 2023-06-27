@@ -1,11 +1,8 @@
 ---
 title: Ligar-se em SFTP
 routes:
-    canonical: 'https://docs.ovh.com/pt/private-cloud/ligacao_por_sftp/'
+    canonical: '/pages/cloud/private-cloud/sftp_connexion'
 excerpt: Saiba como se ligar ao seu Managed Bare Metal em SFTP
-slug: ligacao_por_sftp
-section: Introdução
-order: 3
 updated: 2020-11-18
 ---
 

@@ -1,13 +1,10 @@
 ---
 title: "Tutorial - Utilizar o ficheiro htaccess com WordPress"
-slug: use-htaccess-with-wordpress
 excerpt: "Descubra como proteger o seu blogue WordPress com um ou vários ficheiros htaccess"
-section: 'Tutoriais'
-order: 022
-updated: 2023-03-08
+updated: 2023-06-22
 ---
 
-**Última atualização: 08/03/2023**
+**Última atualização: 22/06/2023**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -29,13 +26,24 @@ Este tutorial explica-lhe como configurar certas funcionalidades do seu alojamen
 ## Requisitos
 
 - Ter um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) e ter instalado o WordPress.
-- Ter capacidade para utilizar um cliente FTP como [FileZilla](https://filezilla-project.org/). Pode consultar o nosso guia "[Utilizar o FileZilla](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/)".
+- Ter capacidade para utilizar um cliente FTP como [FileZilla](https://filezilla-project.org/). Pode consultar o nosso guia "[Utilizar o FileZilla](/pages/web/hosting/ftp_filezilla_user_guide)".
 
 Os ficheiros **.htaccess** podem ser criados e modificados com editores de texto como:
 
 - [Bloco de notas](https://support.microsoft.com/pt-pt/windows/ajuda-no-bloco-de-notas-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} do Windows;
 - [Text Edit](https://support.apple.com/pt-pt/guide/textedit/welcome/mac){.external} em macOS; 
 - [Notepad+](https://notepad-plus-plus.org/){.external}.
+
+> [!primary]
+>
+> As soluções de segurança abaixo propostas não são exaustivas.
+>
+> Por exemplo, se utilizar outro **C**ontent **M**anagement **S**ystem (**CMS**) que o WordPress, existem outras soluções de segurança.
+>
+> Se não utiliza um CMS, a OVHcloud disponibiliza também um tutorial para a [proteção de um diretório ou da interface de administração do seu website através de ficheiros .htaccess](/pages/web/hosting/htaccess_protect_directory_by_password).
+>
+> Para qualquer questão relativa à criação, utilização ou programação do seu website, contacte a nossa [comunidade de utilizadores](https://community.ovh.com/en/) ou os nossos [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/). As equipas de suporte da OVHcloud não poderão ajudá-lo nestas questões.
+>
 
 ## FAQ
 
@@ -108,7 +116,7 @@ Existem várias formas de definir e modificar os parâmetros que irão modificar
 
 > [!warning]
 >
-> Antes de seguir os passos abaixo, é necessário reencaminhar o protocolo HTTP para HTTPS. Para isso, siga as instruções do nosso manual ["Ativar o HTTPS num website com certificado SSL"](https://docs.ovh.com/pt/hosting/ativar-https-website-certificado-ssl/#1-ativar-o-certificado-ssl-no-alojamento).
+> Antes de seguir os passos abaixo, é necessário reencaminhar o protocolo HTTP para HTTPS. Para isso, siga as instruções do nosso manual ["Ativar o HTTPS num website com certificado SSL"](/pages/web/hosting/ssl-activate-https-website#1-ativar-o-certificado-ssl-no-alojamento).
 
 ### Impedir a apresentação dos diretórios e sub-diretórios
 
@@ -143,7 +151,7 @@ Se identificou um endereço de IP malicioso, eis a linha a inserir no ficheiro *
 
 Neste exemplo, `xxx.xxx.xxx.xxx`, refere-se ao endereço de IP a bloquear.
 
-Para mais informações, consulte o nosso guia sobre a [restrição do acesso por IP através do ficheiro .htaccess](https://docs.ovh.com/pt/hosting/partilhado_htacess_como_impedir_que_certos_ips_acedam_ao_meu_website/).
+Para mais informações, consulte o nosso guia sobre a [restrição do acesso por IP através do ficheiro .htaccess](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
 #### Bloquear um endereço IP a partir do diretório wp-admin (ou nos outros diretórios)
 

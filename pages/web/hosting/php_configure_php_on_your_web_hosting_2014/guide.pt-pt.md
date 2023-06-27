@@ -1,9 +1,6 @@
 ---
 title: "Mudar a versão de PHP do alojamento web"
-slug: configurar_o_php_num_alojamento_web_alojamentos_2014_ovh
 excerpt: "Saiba como mudar a versão de PHP do seu alojamento web da OVHcloud"
-section: PHP
-order: 01
 updated: 2022-09-19
 ---
 
@@ -22,7 +19,7 @@ O seu [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.exter
 ## Requisitos
 
 - Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}, com exceção de um serviço de alojamento Cloud Web.
-- Ter acesso ao alojamento web a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) ou conhecer as informações que lhe permitem aceder ao [espaço de armazenamento FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/). 
+- Ter acesso ao alojamento web a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) ou conhecer as informações que lhe permitem aceder ao [espaço de armazenamento FTP](/pages/web/hosting/ftp_connection). 
 
 ## Instruções
 
@@ -59,7 +56,7 @@ Se necessário, pode conhecer a versão de PHP atualmente utilizada pelo seu alo
 > Se estiver presente um símbolo redondo azul, aguarde alguns minutos para que a versão seja atualizada.
 >
 
-- **através de um script** : Crie um script **.php** contendo apenas o código `<?php phpinfo(); ?>` A seguir, coloque-o online no seu [espaço de armazenamento FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) e clique em aceder ao seu endereço/URL completo.
+- **através de um script** : Crie um script **.php** contendo apenas o código `<?php phpinfo(); ?>` A seguir, coloque-o online no seu [espaço de armazenamento FTP](/pages/web/hosting/ftp_connection) e clique em aceder ao seu endereço/URL completo.
 
 Se não conseguir assegurar-se da compatibilidade do seu website com a nova versão de PHP e **embora desaconselhemos vivamente este método**, pode tentar alterar a versão atual e voltar atrás. No entanto, corre o risco de gerar um potencial problema de funcionamento no seu website. De resto, mesmo que o website continue a aparecer após a mudança, é possível que uma das suas funcionalidades específicas seja afetada e se torne inoperante. 
 
@@ -69,18 +66,18 @@ Assim que estiver pronto para realizar a alteração, consulte o passo 2.
 
 Existem duas formas de alterar a versão de PHP do seu alojamento web:
 
-- **através de um assistente de configuração a partir da sua Área de Cliente**: uma vez ligado ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), poderá escolher a nova versão de PHP pretendida entre outros parâmetros. Consulte o nosso manual ["Alterar a configuração do alojamento web"](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web/){.external} para realizar esta operação.
+- **através de um assistente de configuração a partir da sua Área de Cliente**: uma vez ligado ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), poderá escolher a nova versão de PHP pretendida entre outros parâmetros. Consulte o nosso manual ["Alterar a configuração do alojamento web"](/pages/web/hosting/ovhconfig_modify_system_runtime){.external} para realizar esta operação.
 
-- **alterando manualmente um ficheiro no seu espaço de armazenamento**: esta solução é mais técnica e precisa de aceder ao seu [espaço de armazenamento FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) onde deverá modificar o ficheiro `.ovhconfig`. Consulte o nosso manual [Configurar o ficheiro .ovhconfig do alojamento web](https://docs.ovh.com/pt/hosting/configurar-ficheiro-ovhconfig/){.external} para o fazer.
+- **alterando manualmente um ficheiro no seu espaço de armazenamento**: esta solução é mais técnica e precisa de aceder ao seu [espaço de armazenamento FTP](/pages/web/hosting/ftp_connection) onde deverá modificar o ficheiro `.ovhconfig`. Consulte o nosso manual [Configurar o ficheiro .ovhconfig do alojamento web](/pages/web/hosting/ovhconfig_configuration){.external} para o fazer.
 
 > [!primary]
 >
 > A modificação da versão de PHP através de um ficheiro ".htaccess" já não é possível nas últimas ofertas de[alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.<br>
 > O comando que permite alterar a versão de PHP no ficheiro ".htaccess" não permite utilizar as versões recentes de PHP nas nossas infraestruturas.<br>
-> Para isso, deverá obrigatoriamente utilizar o ficheiro `.ovhconfig` de dados, o que significa que o utilizador pode utilizar através da nossa documentação ["Configurar o ficheiro .ovhconfig do meu alojamento web"](https://docs.ovh.com/pt/hosting/configurar-ficheiro-ovhconfig/){.external}.
+> Para isso, deverá obrigatoriamente utilizar o ficheiro `.ovhconfig` de dados, o que significa que o utilizador pode utilizar através da nossa documentação ["Configurar o ficheiro .ovhconfig do meu alojamento web"](/pages/web/hosting/ovhconfig_configuration){.external}.
 >
 
-Algumas versões de PHP só funcionam com certos ambientes de execução. Encontrará abaixo as versões de PHP disponíveis nos alojamentos partilhados OVHcloud e [os ambientes de execução](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web/) compatíveis:
+Algumas versões de PHP só funcionam com certos ambientes de execução. Encontrará abaixo as versões de PHP disponíveis nos alojamentos partilhados OVHcloud e [os ambientes de execução](/pages/web/hosting/ovhconfig_modify_system_runtime) compatíveis:
 
 | Versões PHP | Ambientes de execução|
 |---|---|
@@ -90,11 +87,11 @@ Algumas versões de PHP só funcionam com certos ambientes de execução. Encont
 
 ## Quer saber mais?
 
-[Modificar a configuração do alojamento web](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web/){.external}
+[Modificar a configuração do alojamento web](/pages/web/hosting/ovhconfig_modify_system_runtime){.external}
 
-[Configurar o ficheiro .ovhconfig do alojamento web](https://docs.ovh.com/pt/hosting/configurar-ficheiro-ovhconfig/){.external}
+[Configurar o ficheiro .ovhconfig do alojamento web](/pages/web/hosting/ovhconfig_configuration){.external}
 
-[Aceder ao espaço de armazenamento do alojamento web](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/){.external}
+[Aceder ao espaço de armazenamento do alojamento web](/pages/web/hosting/ftp_connection){.external}
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 

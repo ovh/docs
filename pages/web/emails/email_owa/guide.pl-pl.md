@@ -1,9 +1,6 @@
 ---
 title: 'Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)'
-slug: korzystanie-owa
 excerpt: 'Dowiedz się, jak korzystać z konta e-mail przy użyciu Webmail OWA'
-section: 'Pierwsze kroki'
-order: 04
 updated: 2021-06-25
 ---
 
@@ -126,7 +123,7 @@ Podaj wymagane informacje w zależności od działania, które ma wykonywać reg
 
 ![useowa](images/use-owa-step14.png){.thumbnail}
 
-Szczegółowe instrukcje tworzenia reguł skrzynki odbiorczej zawiera przewodnik: [Tworzenie reguł skrzynki odbiorczej w aplikacji OWA](../tworzenie-regul-skrzynki-odbiorczej-w-owa/).
+Szczegółowe instrukcje tworzenia reguł skrzynki odbiorczej zawiera przewodnik: [Tworzenie reguł skrzynki odbiorczej w aplikacji OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan).
 
 #### Zablokuj nadawcę
 

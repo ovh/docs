@@ -1,7 +1,5 @@
 ---
 title: Responsibility sharing for the Hosted Private Cloud powered by VMware service
-slug: vmware-raci
-section: Getting started
 excerpt: "Shared responsibility between OVHcloud and the customer for the use of the VMware on OVHcloud product"
 updated: 2023-03-07
 ---

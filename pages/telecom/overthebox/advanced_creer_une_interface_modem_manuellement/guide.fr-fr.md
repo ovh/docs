@@ -1,9 +1,7 @@
 ---
 title: 'Créer une interface modem manuellement'
 description: 'Créer une interface modem manuellement'
-slug: creer-une-interface-modem-manuellement
 excerpt: "Découvrez comment ajouter une interface modem manuellement depuis l'interface OverTheBox"
-section: "Configurations techniques avancées"
 updated: 2021-04-16
 ---
 
@@ -16,7 +14,7 @@ Découvrez comment ajouter une interface modem manuellement depuis l'interface O
 ## Prérequis
 
 - Au moins un modem ayant accès à Internet sur lequel vous devez être en capacité de modifier la configuration réseau (IP et DHCP). **Exemple** : Box fournie par un fournisseur d'accès Internet comme OVHcloud ou un opérateur national.
-- Une **OverTheBox** fournie par OVHcloud ou une installation depuis le projet Open Source (voir notre guide : [Installer l'image overthebox sur votre materiel](../installer-limage-overthebox-sur-votre-materiel/)).
+- Une **OverTheBox** fournie par OVHcloud ou une installation depuis le projet Open Source (voir notre guide : [Installer l'image overthebox sur votre materiel](/pages/telecom/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel)).
 
 ## En pratique
 

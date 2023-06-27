@@ -1,11 +1,8 @@
 ---
 title: Données - Concepts et bonnes pratiques (EN)
-slug: data
 excerpt: Comprendre les bonnes pratiques sur les données avec les AI Tools
-section: Informations générales
-order: 105
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/data/'
+    canonical: '/pages/platform/ai/gi_02_concepts_data'
 updated: 2022-04-11
 ---
 
@@ -23,8 +20,8 @@ updated: 2022-04-11
 
 There are two ways to manage your data:
 
-- You can upload and download data from your local environment using the CLI, see [how to install `ovhai` CLI](https://docs.ovh.com/fr/publiccloud/ai/cli/install-client). Next, find out how to [manage your data with the CLI](https://docs.ovh.com/fr/publiccloud/ai/cli/data-cli/).
-- You can use the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), see [create data container](https://docs.ovh.com/fr/storage/object-storage/pcs/create-container/).
+- You can upload and download data from your local environment using the CLI, see [how to install `ovhai` CLI](/pages/platform/ai/cli_10_howto_install_cli). Next, find out how to [manage your data with the CLI](/pages/platform/ai/cli_16_commands_reference_data).
+- You can use the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), see [create data container](/pages/cloud/storage/object_storage/pcs_create_container).
 
 ## How it works
 
@@ -108,11 +105,11 @@ Users can enable a `cache` feature that allow jobs and notebooks to re-use avail
 
 ## Going further
 
-- You can check the [OVHcloud documentation on how to create a data container](https://docs.ovh.com/fr/storage/object-storage/pcs/create-container/).
+- You can check the [OVHcloud documentation on how to create a data container](/pages/cloud/storage/object_storage/pcs_create_container).
 
-- You can check how to [use your data in an AI Notebook](https://docs.ovh.com/fr/publiccloud/ai/cli/access-object-storage-data/).
+- You can check how to [use your data in an AI Notebook](/pages/platform/ai/cli_17_how_to_cli_data_notebooks).
 
-- You can check how to [launch an AI Training job with attached volumes](https://docs.ovh.com/fr/publiccloud/ai/cli/run-job-cli/).
+- You can check how to [launch an AI Training job with attached volumes](/pages/platform/ai/cli_12_howto_run_job_cli).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

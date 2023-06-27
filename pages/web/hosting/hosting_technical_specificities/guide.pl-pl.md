@@ -1,9 +1,6 @@
 ---
 title: 'Informacje techniczne związane z hostingiem współdzielonym'
-slug: hosting_www_informacje_techniczne_zwiazane_z_hostingiem_www
 excerpt: 'Zapoznaj się z różnego rodzaju informacjami technicznymi dotyczącymi hostingu współdzielonego'
-section: 'Konfiguracja hostingu'
-order: 05
 updated: 2022-11-18
 ---
 
@@ -33,7 +30,7 @@ updated: 2022-11-18
 
 ### FTP
 
-- Błąd dostępu („Uwierzytelnienie połączenia 530 zakończyło się niepowodzeniem”): Upewnij się, że informacje dotyczące dostępu do Twojej przestrzeni FTP są poprawne, sprawdzając je w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w karcie `FTP - SSH`. Hasła nigdy nie są wyświetlane, ale można je zmieniać. Zapoznaj się z [przewodnikami dotyczącymi FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web/).
+- Błąd dostępu („Uwierzytelnienie połączenia 530 zakończyło się niepowodzeniem”): Upewnij się, że informacje dotyczące dostępu do Twojej przestrzeni FTP są poprawne, sprawdzając je w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w karcie `FTP - SSH`. Hasła nigdy nie są wyświetlane, ale można je zmieniać. Zapoznaj się z [przewodnikami dotyczącymi FTP](/pages/web/hosting/ftp_connection).
 
 - Połączenia FTP muszą korzystać z **trybu pasywnego**. Upewnij się, że Twój skrypt lub klient FTP jest odpowiednio skonfigurowany.
 
@@ -62,7 +59,7 @@ W ciągu 3600 sekund (czyli 1 godzina) Twoja oferta hostingowa pozwoli Ci na wys
 
     - *max_user_connections*: domyślnie 50, z możliwością zwiększenia do 200
 
-Aby uzyskać więcej informacji, zapoznaj się ze szczegółami naszych [ofert hostingu](https://www.ovhcloud.com/pl/web-hosting/) i [przewodnikiem](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/).
+Aby uzyskać więcej informacji, zapoznaj się ze szczegółami naszych [ofert hostingu](https://www.ovhcloud.com/pl/web-hosting/) i [przewodnikiem](/pages/web/clouddb/starting_with_clouddb).
 
 #### Połączenia z serwera zewnętrznego
 
@@ -79,7 +76,7 @@ Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to conn
 
 - Wersji MySQL nie można modyfikować w przypadku baz danych zintegrowanych z hostingiem WWW.
 
-Aby uzyskać więcej informacji na temat zarządzania bazami danych, zapoznaj się z przewodnikiem [Tworzenie bazy danych w hostingu OVHcloud](../tworzenie-bazy-danych/).
+Aby uzyskać więcej informacji na temat zarządzania bazami danych, zapoznaj się z przewodnikiem [Tworzenie bazy danych w hostingu OVHcloud](/pages/web/hosting/sql_create_database).
 
 ### PHP
 
@@ -94,8 +91,8 @@ Aby uzyskać więcej informacji na temat zarządzania bazami danych, zapoznaj si
 
 - Wersję PHP hostingu możesz zmienić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) („**Konfiguracja**”) lub modyfikując plik .ovhconfig. W przypadku tego drugiego rozwiązania możliwe są również konfiguracje mieszane. Szczegółowe instrukcje znajdują się w przewodnikach:
 
-[Konfiguracja pliku .ovhconfig w hostingu](../konfiguracja-pliku-ovhconfig/)  
-[Zmiana konfiguracji hostingu](../zmiana_srodowiska_uruchomieniowego_dla_hostingu_www/)
+[Konfiguracja pliku .ovhconfig w hostingu](/pages/web/hosting/ovhconfig_configuration)  
+[Zmiana konfiguracji hostingu](/pages/web/hosting/ovhconfig_modify_system_runtime)
 
 
 > [!primary]
@@ -118,7 +115,7 @@ PHP-FPM jest aktywowany domyślnie w infrastrukturze hostingu, aby przyspieszyć
 
 #### Skrypty PHP
 
-Po zalogowaniu się do hostingu przez SSH ruch wychodzący zostanie zablokowany ze względów bezpieczeństwa. Zalecamy więc korzystanie ze skryptów PHP. Aby uzyskać więcej informacji, zapoznaj się z naszym [przewodnikiem dotyczącym SSH](../hosting_www_ssh_na_hostingu/). Zapoznaj się z oficjalnym [podręcznikiem PHP](https://www.php.net/manual/en/function.system.php) dotyczącym wykonywania poleceń.
+Po zalogowaniu się do hostingu przez SSH ruch wychodzący zostanie zablokowany ze względów bezpieczeństwa. Zalecamy więc korzystanie ze skryptów PHP. Aby uzyskać więcej informacji, zapoznaj się z naszym [przewodnikiem dotyczącym SSH](/pages/web/hosting/ssh_on_webhosting). Zapoznaj się z oficjalnym [podręcznikiem PHP](https://www.php.net/manual/en/function.system.php) dotyczącym wykonywania poleceń.
 
 Możesz na przykład użyć funkcji *gethostbyaddr()*, aby pobrać nazwę hosta:
 
@@ -158,13 +155,13 @@ Wszystkie nasze pakiety hostingowe są zainstalowane:
 
 - w Beauharnois (BHS) w Kanadzie, dysponują automatycznymi kopiami zapasowymi w dniu 1 / D-2 / D-3 / D-7 / D-14. Kopie te są również przechowywane w centrum danych w Beauharnois (BHS) w Kanadzie.
 
-Dowiedz się, jak [zalogować się do przestrzeni dyskowej](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) lub [przywrócić przestrzeń dyskową hostingu](https://docs.ovh.com/pl/hosting/hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/) w dokumentacji OVHcloud.
+Dowiedz się, jak [zalogować się do przestrzeni dyskowej](/pages/web/hosting/ftp_connection) lub [przywrócić przestrzeń dyskową hostingu](/pages/web/hosting/ftp_save_and_backup) w dokumentacji OVHcloud.
 
 #### Baza danych / SQL
 
 W przypadku baz danych na hostingu (zawartych w ofercie hostingu www) lub serwerów baz danych (Web Cloud Databases) dostępnych w Gravelines (GRA), we Francji i Beauharnois (BHS) w Kanadzie kopia zapasowa baz danych jest wykonywana codziennie. Kopie te są dostępne (poprzez [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub poprzez [API OVHcloud](https://api.ovh.com/). Kopie zapasowe są również przechowywane na innej infrastrukturze. Dane te są kopiowane w 3 różnych miejscach we Francji: Roubaix (RBX), Strasburg (SBG) i Gravelines (GRA). Polityka przechowywania kopii zapasowych wynosi 30 dni.
 
-Dowiedz się, jak [Pobierz kopię zapasową bazy danych hostingu WWW](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/) w naszej dokumentacji.
+Dowiedz się, jak [Pobierz kopię zapasową bazy danych hostingu WWW](/pages/web/hosting/sql_database_export) w naszej dokumentacji.
 
 #### E-mail
 
@@ -194,10 +191,10 @@ Aby wspomniane wyżej dane mogły być wykorzystywane w ramach narzędzia OVHclo
 
 ## Sprawdź również
 
-[Logowanie do przestrzeni dyskowej hostingu](../logowanie-przestrzen-dyskowa-ftp-hosting-web/)
+[Logowanie do przestrzeni dyskowej hostingu](/pages/web/hosting/ftp_connection)
 
-[Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL](../aktywacja-https-ssl-na-stronie-WWW)
+[Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL](/pages/web/hosting/ssl-activate-https-website)
 
-[Optymalizacja wydajności strony](../hosting_www_przewodnik_dotyczacy_optymalizacji_wydajnosci_strony/)
+[Optymalizacja wydajności strony](/pages/web/hosting/optimise_your_website_performance)
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

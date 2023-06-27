@@ -1,9 +1,6 @@
 ---
 title: Détails des fonctionnalités API
-slug: api-details
 excerpt: "Détails des fonctionnalités de l’API OVHcloud pour l’offre OVHcloud Load Balancer"
-section: Premiers pas
-order: 03
 updated: 2022-04-04
 ---
 
@@ -15,7 +12,7 @@ Retrouvez ici la description des différents points d'entrées dans l'API pour l
 
 ## Prérequis
 
-- Consulter le guide [Premiers pas avec les API OVHcloud](../../api/first-steps-with-ovh-api/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+- Consulter le guide [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
 ## En pratique
 
@@ -3074,7 +3071,7 @@ Accéder aux éléments relatifs au protocole UDP (frontend, ferme, etc.).
 
 > [!primary]
 >
-> Pour plus d'informations sur la gestion des contacts OVHcloud, consultez le guide « [Gérer les contacts de ses services](https://docs.ovh.com/fr/customer/gestion-des-contacts/) ».
+> Pour plus d'informations sur la gestion des contacts OVHcloud, consultez le guide « [Gérer les contacts de ses services](/pages/account/customer/managing_contacts) ».
 >
 
 ### Vrack

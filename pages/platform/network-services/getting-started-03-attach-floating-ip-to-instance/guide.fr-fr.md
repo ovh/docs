@@ -1,9 +1,6 @@
 ---
 title: Attacher une adresse Floating IP à une instance Public Cloud
 excerpt: Comprendre qu'est-ce qu’une Floating IP des services L3 et comment la configurer
-slug: attaching-pci-floating-ip-to-instance
-section: Premiers pas
-order: 02
 updated: 2022-11-14
 ---
 
@@ -11,14 +8,14 @@ updated: 2022-11-14
 
 ## Objectif
 
-Les Floating IP sont des adresses IP publiques sur [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/), utilisées pour exposer une instance privée ou un service de réseau privé sur le réseau public. Retrouvez plus d'informations sur [notre page concepts](https://docs.ovh.com/fr/publiccloud/network-services/additional-ip-vs-floating-ip/) dédiée.
+Les Floating IP sont des adresses IP publiques sur [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/), utilisées pour exposer une instance privée ou un service de réseau privé sur le réseau public. Retrouvez plus d'informations sur [notre page concepts](/pages/platform/network-services/concepts-02-additional-ip-vs-floating-ip) dédiée.
 
 **Découvrez comment attacher des adresses Floating IP à vos instances.**
 
 ## Prérequis
 
 - Un projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) existant sur votre compte OVHcloud
-- Avoir accès à [l’API OVHcloud](https://eu.api.ovh.com/) ou à [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou à l’environnement OpenStack en ligne de commande (si besoin, consultez notre [tutoriel](https://docs.ovh.com/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/))
+- Avoir accès à [l’API OVHcloud](https://eu.api.ovh.com/) ou à [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou à l’environnement OpenStack en ligne de commande (si besoin, consultez notre [tutoriel](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api))
 - L’outil [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} installé sur votre environnement de travail (facultatif)
 
 ## Comprendre le service Floating IP
@@ -55,9 +52,9 @@ Ensuite, nous utiliserons cette Floating IP pour nous connecter à l'instance (V
 >>
 >> Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.
 >> 
->> Avant de créer votre instance, assurez-vous d'avoir créé un [réseau privé avec Gateway](https://docs.ovh.com/fr/publiccloud/network-services/creating-private-network-with-gateway/).
+>> Avant de créer votre instance, assurez-vous d'avoir créé un [réseau privé avec Gateway](/pages/platform/network-services/getting-started-02-create-private-network-gateway).
 >>
->> Si vous avez besoin d'assistance pour créer une nouvelle instance, consultez d'abord notre guide pour [créer une instance depuis l'espace client OVHcloud](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#create-instance). 
+>> Si vous avez besoin d'assistance pour créer une nouvelle instance, consultez d'abord notre guide pour [créer une instance depuis l'espace client OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#create-instance). 
 >>
 >>
 >> > [!warning]
@@ -91,7 +88,7 @@ Ensuite, nous utiliserons cette Floating IP pour nous connecter à l'instance (V
 >>
 >> **Cas d’une instance existante (créée uniquement avec un réseau privé)**
 >>
->> Veuillez noter que le réseau privé doit être relié à une Gateway. Pour plus d'informations, consultez ce guide : [Créer un réseau privé avec une Gateway](https://docs.ovh.com/fr/publiccloud/network-services/creating-private-network-with-gateway/).
+>> Veuillez noter que le réseau privé doit être relié à une Gateway. Pour plus d'informations, consultez ce guide : [Créer un réseau privé avec une Gateway](/pages/platform/network-services/getting-started-02-create-private-network-gateway).
 >>
 >> Depuis l'onglet `Public Cloud`{.action}, cliquez sur `Public IPs`{.action} dans le menu de gauche sous **Network**.
 >>

@@ -1,9 +1,6 @@
 ---
 title: 'Exportar o seu website'
-slug: exportar-o-seu-website
 excerpt: 'Descubra como exportar o seu website OVHcloud'
-section: Primeiros passos
-order: 04
 updated: 2022-02-03
 ---
 
@@ -37,13 +34,13 @@ Estes elementos foram-lhe enviados no e-mail enviado após a instalação do seu
 
 ![export-website](images/export-website-step1-1.png){.thumbnail}
 
-Aparecerá a informação relativa ao seu espaço de armazenamento e terá a possibilidade de encontrar os elementos necessários para aceder mesmo. Caso seja necessário, consulte o nosso manual: [“Aceder ao espaço de armazenamento do alojamento web”](../aceder-espaco-de-armazenamento-ftp-alojamento-web/){.external}. Caso tenha perdido a palavra-passe, consulte o manual ["Modificar a palavra-passe de um utilizador FTP"](../alterar-palavra-passe-utilizador-ftp/){.external}.
+Aparecerá a informação relativa ao seu espaço de armazenamento e terá a possibilidade de encontrar os elementos necessários para aceder mesmo. Caso seja necessário, consulte o nosso manual: [“Aceder ao espaço de armazenamento do alojamento web”](/pages/web/hosting/ftp_connection){.external}. Caso tenha perdido a palavra-passe, consulte o manual ["Modificar a palavra-passe de um utilizador FTP"](/pages/web/hosting/ftp_change_password){.external}.
 
 Quando tiver obtido todos os elementos, a recuperação dos seus ficheiros no espaço de armazenamento pode ser realizado de duas formas:
 
-- **Utilizar um programa compatível com o protocolo FTP ou SFTP**: terá de instalar no seu computador um programa compatível, como o [ FileZilla ](../partilhado_guia_de_utilizacao_do_filezilla/). Sugerimos que contacte o editor do programa instalado caso deseje obter ajuda na sua utilização, OVHcloud não criou esse programa;
+- **Utilizar um programa compatível com o protocolo FTP ou SFTP**: terá de instalar no seu computador um programa compatível, como o [ FileZilla ](/pages/web/hosting/ftp_filezilla_user_guide). Sugerimos que contacte o editor do programa instalado caso deseje obter ajuda na sua utilização, OVHcloud não criou esse programa;
 
-- **Utilizar um acesso SSH**: terá de utilizar comandos a partir de um terminal para interagir com o seu espaço de armazenamento. Este tipo de acesso requer conhecimentos mais avançados, bem como um [plano de alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} específica. Para mais informações, pode consultar o nosso guia  ["Utilizar o acesso SSH do seu alojamento web"](../partilhado_o_ssh_nos_alojamentos_partilhados/){.external}. 
+- **Utilizar um acesso SSH**: terá de utilizar comandos a partir de um terminal para interagir com o seu espaço de armazenamento. Este tipo de acesso requer conhecimentos mais avançados, bem como um [plano de alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} específica. Para mais informações, pode consultar o nosso guia  ["Utilizar o acesso SSH do seu alojamento web"](/pages/web/hosting/ssh_on_webhosting){.external}. 
 
 #### 1.2 Transferir os ficheiros a partir do seu espaço de armazenamento
 
@@ -61,10 +58,10 @@ Para verificar a pasta onde deve colocar o site, clique no separador `Multi-site
 >
 
 Para recuperar um backup da sua base de dados, consulte o nosso guia:
-["Recuperar o backup da base de dados de um alojamento web"](../partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/){.external}.
+["Recuperar o backup da base de dados de um alojamento web"](/pages/web/hosting/sql_database_export){.external}.
 
 Se utiliza uma base de dados **Web Cloud Databases** para o seu website, consulte a secção dedicada ao backup no nosso guia:
-[Backup e exportação de uma base de dados no servidor de bases de dados](https://docs.ovh.com/pt/hosting/backup-exportacao-base-de-dados/).
+[Backup e exportação de uma base de dados no servidor de bases de dados](/pages/web/clouddb/save-export-on-database-server).
 
 ### Etapa 3: recuperar os logs do seu alojamento OVHcloud
 
@@ -94,16 +91,16 @@ Quando seleciona o tipo de logs para o mês que mais lhe interessa, estes são a
 
 ## Quer saber mais?
 
-[Aceder ao espaço de armazenamento do alojamento web](../aceder-espaco-de-armazenamento-ftp-alojamento-web/)
+[Aceder ao espaço de armazenamento do alojamento web](/pages/web/hosting/ftp_connection)
 
-[Alterar a palavra-passe de um utilizador FTP](../alterar-palavra-passe-utilizador-ftp/)
+[Alterar a palavra-passe de um utilizador FTP](/pages/web/hosting/ftp_change_password)
 
-[Utilização do programa FileZilla com o seu alojamento](../partilhado_guia_de_utilizacao_do_filezilla/)
+[Utilização do programa FileZilla com o seu alojamento](/pages/web/hosting/ftp_filezilla_user_guide)
 
-[Utilizar o acesso SSH do seu alojamento web](../partilhado_o_ssh_nos_alojamentos_partilhados/)
+[Utilizar o acesso SSH do seu alojamento web](/pages/web/hosting/ssh_on_webhosting)
 
-[Recuperar o backup da base de dados de um alojamento web](../partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/)
+[Recuperar o backup da base de dados de um alojamento web](/pages/web/hosting/sql_database_export)
 
-[Web Cloud Databases - primeira utilização](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/)
+[Web Cloud Databases - primeira utilização](/pages/web/clouddb/starting_with_clouddb)
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

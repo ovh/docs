@@ -1,10 +1,8 @@
 ---
 title: 'Installare un template OVF Windows e SQL Server'
-slug: installazione-template-ovhcloud
 routes:
-    canonical: 'https://docs.ovh.com/it/private-cloud/installazione-template-ovh/'
+    canonical: '/pages/cloud/private-cloud/ovf_template'
 excerpt: 'Scopri come installare un template OVF Windows e SQL Server'
-section: 'Servizi e opzioni OVHcloud'
 updated: 2020-11-18
 ---
 
@@ -30,7 +28,7 @@ Le VM Windows implementate a partire da un template utilizzano automaticamente l
 ## Prerequisiti
 
 - Avere accesso al client Web (HTML5)
-- [Avere attivato le licenze di Windows](../manager-ovhcloud/#licenze-windows){.external} dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} (scheda `Licenza Windows`{.action} del datacenter) 
+- [Avere attivato le licenze di Windows](/pages/cloud/managed-bare-metal/manager-ovhcloud#licenze-windows){.external} dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} (scheda `Licenza Windows`{.action} del datacenter) 
 
 
 ## Procedura

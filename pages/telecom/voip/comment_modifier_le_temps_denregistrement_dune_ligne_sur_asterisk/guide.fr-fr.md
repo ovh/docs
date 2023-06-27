@@ -1,9 +1,7 @@
 ---
 title: Comment modifier le temps d’enregistrement d’une ligne sur Asterisk
 excerpt: Comment modifier le temps d’enregistrement (Register expire) sur Asterisk
-slug: comment_modifier_le_temps_denregistrement_dune_ligne_sur_asterisk
 legacy_guide_number: g1709
-section: IPBX
 updated: 2018-03-26
 ---
 

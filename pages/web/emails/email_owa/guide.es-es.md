@@ -1,9 +1,6 @@
 ---
 title: 'Utilizar una dirección de correo desde Outlook en la Web'
-slug: uso-outlook-en-la-web
 excerpt: 'Cómo utilizar una dirección de correo electrónico desde el webmail Outlook en la Web'
-section: 'Primeros pasos'
-order: 04
 updated: 2021-06-25
 ---
 
@@ -122,7 +119,7 @@ Rellene la información solicitada según la acción que quiere que lleve a cabo
 
 ![useowa](images/use-owa-step14.png){.thumbnail}
 
-Para obtener instrucciones más detalladas sobre la creación de reglas de la bandeja de entrada, consulte nuestra guía: [Crear reglas de la bandeja de entrada en OWA](../crear-reglas-de-bandeja-de-entrada-en-owa/).
+Para obtener instrucciones más detalladas sobre la creación de reglas de la bandeja de entrada, consulte nuestra guía: [Crear reglas de la bandeja de entrada en OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan).
 
 #### Bloquear un remitente
 

@@ -1,13 +1,10 @@
 ---
 title: 'Connecting to a database on your database server'
-slug: connecting-to-database-on-database-server
 excerpt: 'Find out how to log in to your database'
-section: Configuration
-order: 03
-updated: 2023-02-15
+updated: 2023-06-22
 ---
 
-**Last updated 15rd February 2023**
+**Last updated 22nd June 2023**
 
 ## Objective
 
@@ -48,10 +45,9 @@ You will land on the phpMyAdmin login page.
 
 ![private-sql](images/private-sql-phpma02.png){.thumbnail}
 
-- **Server**: Enter the host name of your server, which you can view in the `General information` tab, in the **Database administration** box, under “Host name” in the **SQL** section.
+- **Server and port**: Enter the host name and port of your server, which you can view in the `General information` tab, in the **Database administration** box, under “Host name” and ”Port” in the **SQL** section. The host name and port must be separated by a space.
 - **User**: Enter the username you created in the `Users and rights` tab of your database server.
 - **Password**: Enter the password for the user concerned.
-- **Port**: Enter the port listed in the `General information` tab, in the **Database administration** box, under “Port” in the **SQL** section.
 
 If the connection succeeds, the next page of phpMyAdmin will appear.
 
@@ -68,7 +64,7 @@ If the connection succeeds, the next page of phpMyAdmin will appear.
 
 > [!warning]
 >
-> If you use a `Web Cloud Databases` or `Private SQL` service, do not forget to authorise your IP address using the guide on [Configuring your database server](https://docs.ovh.com/au/en/clouddb/configure-optimise-database-server/).
+> If you use a `Web Cloud Databases` or `Private SQL` service, do not forget to authorise your IP address using the guide on [Configuring your database server](/pages/web/clouddb/configure-database-server).
 >
 
 To connect to your database, please ensure that you have the following information:

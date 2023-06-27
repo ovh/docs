@@ -1,9 +1,6 @@
 ---
 title: Notebooks for Apache Spark - Getting started
-slug: apache-spark-notebooks
 excerpt: Learn how to create Notebooks for Apache Spark
-section: Getting started
-order: 03
 updated: 2023-04-26
 ---
 
@@ -27,13 +24,13 @@ For the OVHcloud Control Panel:
 - A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 - A Public Cloud user with the `administrator` role
-- Data Processing activated (see [How to activate the Data Processing service](https://docs.ovh.com/asia/en/data-processing/activation/) for details)
+- Data Processing activated (see [How to activate the Data Processing service](/pages/platform/data-processing/30_HOWTO_activate_project) for details)
 
 For the OVHcloud APIv6:
 
-- [OVHcloud API credentials](https://docs.ovh.com/asia/en/data-processing/use-api/)
+- [OVHcloud API credentials](/pages/platform/data-processing/38_HOWTO_use-with-ovh-api)
 - An OVHcloud account
-- An activated Public Cloud project in your OVHcloud account (see [How to create a project](https://docs.ovh.com/asia/en/public-cloud/create_a_public_cloud_project/) and [How to activate the Data Processing service](https://docs.ovh.com/asia/en/data-processing/activation/) for details)
+- An activated Public Cloud project in your OVHcloud account (see [How to create a project](/pages/platform/public-cloud/create_a_public_cloud_project) and [How to activate the Data Processing service](/pages/platform/data-processing/30_HOWTO_activate_project) for details)
 
 ## Definition
 
@@ -184,8 +181,8 @@ During the lifetime of an Apache Spark notebook it will transition between the f
 
 To go further and use the Apache Spark notebook, you can follow our tutorials:
 
-- [wordcount-spark](https://docs.ovh.com/asia/en/data-processing/wordcount-spark/#objective)
-- [Calculating π number with Apache Spark](https://docs.ovh.com/asia/en/data-processing/pi-spark/#objective)
+- [wordcount-spark](/pages/platform/data-processing/41_TUTORIAL_wordcount#objective)
+- [Calculating π number with Apache Spark](/pages/platform/data-processing/40_TUTORIAL_calculate_pi#objective)
 
 Join our community of users on <https://community.ovh.com/en/>.
 

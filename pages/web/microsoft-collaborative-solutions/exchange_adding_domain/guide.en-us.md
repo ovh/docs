@@ -1,13 +1,8 @@
 ---
 title: 'Adding a domain name to your Exchange service'
-slug: adding-domain-exchange
 excerpt: 'Find out how to add a domain name to your Exchange service'
-section: 'Getting started with Exchange'
-order: 04
-updated: 2022-10-07
+updated: 2023-06-14
 ---
-
-**Last updated 7th October 2022**
 
 ## Objective
 
@@ -19,7 +14,7 @@ To use the accounts included with an Exchange service, you will need to add a do
 
 - An [Exchange](https://www.ovhcloud.com/en/emails/) solution
 - One or more domain names
-- Administrative access to your domain name’s configuration (in order to [modify the DNS zone](https://docs.ovh.com/us/en/domains/web_hosting_how_to_edit_my_dns_zone/))
+- Administrative access to your domain name’s configuration (in order to [modify the DNS zone](/pages/web/domains/dns_zone_edit))
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 ## Instructions
@@ -57,15 +52,19 @@ The window will then show information on configuring modes.
 
 - **If you have selected an OVHcloud domain name from the list**: You will have to choose between two modes.
 
-|Mode|Description|
-|---|---|
-|Authoritative|Choose this if you only use your Exchange solution with your domain name. This mode does not allow the use of another email solution with your service.|
-|Non-authoritative|Choose this if you use your Exchange solution domain name with another email solution. You must enter details of your other email solution’s server.|
+- **If you have selected an OVHcloud domain name from the list**: You will have to choose between two modes.
+    - **Authoritative**: Choose this if you only use your Exchange solution with your domain name. This mode does not allow the use of another email solution with your service.
+    - **Non-authoritative**: Choose this if you use your Exchange solution domain name with another email solution. You must enter details of your other email solution’s server.
+>
+> - When an email is transmitted to your email platform (*Server A*) in **authoritative** mode, this means that all the email addresses of your domain name are only hosted on this platform. <br> <br> For example, if we send an email to the address *mary.johnson@mydomain.ovh*, the *Server A* returns a failure message to the sender, because this address does not exist on *Server A*.
+> - When an email is transmitted to your email platform (*Server A*) in **non-authoritative** mode, this means that the email addresses of your domain name are distributed between your main email service (*Server A*) and another email service (*Serverg B*). <br> <br> For example, if we send an email to the address *mary.johnson@mydomain.ovh*, *Server A* will forward the email to *Server B* which can deliver it.
+>
+>![Add Domain](images/add_domain_exchange_authoritative.png){.thumbnail}
+>
 
-> [!primary]
+> [!warning]
 >
-> The mode choice is not definitive, and can be modified from the OVHcloud Control Panel later on.
->
+> If you get the message "**authoritative domain detected**" when adding your domain name to your e-mail platform, this means that this domain name is declared in **authoritative** mode on a another email platform. You will have to switch it to **non-authoritative** mode on both platforms so that they can coexist.
 
 Click on the `Next`{.action} button to continue adding the domain.
 
@@ -85,7 +84,7 @@ Once the domain name has been added as an associated domain, make sure that its 
 
 - **If you chose automatic configuration when adding the domain**: Wait a few minutes until the changes are applied in the OVHcloud Control Panel.
 
-- **If you have entered a non-OVHcloud domain name**: Click the red box to view the changes you need to make. If this domain name does not use the OVHcloud configuration (its DNS servers), you must carry out the modifications in the interface you use to manage your domain name’s configuration. If you need to modify the CNAME record, you can find out more by referring to [this documentation](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_20132016_how_to_add_a_cname_record/).
+- **If you have entered a non-OVHcloud domain name**: Click the red box to view the changes you need to make. If this domain name does not use the OVHcloud configuration (its DNS servers), you must carry out the modifications in the interface you use to manage your domain name’s configuration. If you need to modify the CNAME record, you can find out more by referring to [this documentation](/pages/web/microsoft-collaborative-solutions/exchange_dns_cname).
 
 > [!primary]
 >
@@ -104,7 +103,7 @@ As a reminder, all of the addresses created on your service can view all of the 
 
 Once you have finished configuring your accounts, you can now start using them. To do this, OVHcloud offers **webmail**, accessible via <https://www.ovhcloud.com/en/mail/>. I If you are using a third-party client with your email accounts, ensure that the software is compatible with the service. 
 
-If you need help with configuring your email account on an email client or a device (e.g. a smartphone or tablet) or have questions about email service features, please refer to our documentation which you can access from the [Exchange](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/) pages.
+If you need help with configuring your email account on an email client or a device (e.g. a smartphone or tablet) or have questions about email service features, please refer to our documentation which you can access from the [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) pages.
 
 You can purchase Outlook licences in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), and Office 365 licences on the following page: <https://www.ovhcloud.com/en/collaborative-tools/microsoft-365/>.
 
@@ -116,7 +115,7 @@ If you would like to remove a domain name from your Exchange service, you will n
 
 > [!warning]
 >
-> Before deleting email accounts, make sure they are not used. You may need to back up these accounts. If required, please refer to our guide on [Migrating your email accounts manually](https://docs.ovh.com/us/en/emails/migrate-email-addresses-manually/) which explains how to export account data from your Control Panel or email software.
+> Before deleting email accounts, make sure they are not used. You may need to back up these accounts. If required, please refer to our guide on [Migrating your email accounts manually](/pages/web/emails/manual_email_migration) which explains how to export account data from your Control Panel or email software.
 
 Go to the `Associated domains`{.action} tab for your platform. In the `Accounts` column of the table, you will see the number of accounts associated with the domain names in your list.
 
@@ -140,9 +139,9 @@ In the `Associated domains`{.action} tab for your platform, click on the `...`{.
 
 ## Go further
 
-[Creating a CNAME record to add an associated domain](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_how_to_add_a_cname_record/)
+[Creating a CNAME record to add an associated domain](/pages/web/microsoft-collaborative-solutions/exchange_dns_cname)
 
-[Editing an OVHcloud DNS zone](https://docs.ovh.com/us/en/domains/web_hosting_how_to_edit_my_dns_zone/)
+[Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/).
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).

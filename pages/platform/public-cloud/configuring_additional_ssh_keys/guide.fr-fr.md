@@ -1,9 +1,6 @@
 ---
 title: 'Configurer des clés SSH supplémentaires'
-slug: configurer-des-cles-ssh-supplementaires
 excerpt: 'Découvrez comment configurer des clés SSH supplémentaires pour votre instance Public Cloud'
-section: 'Tutoriels'
-order: 01
 updated: 2022-02-04
 ---
 
@@ -30,11 +27,11 @@ Si vous souhaitez enregistrer une clé SSH dans l'espace client OVHcloud, nous v
 
 ### Création de la clé SSH
 
-Pour créer une nouvelle clé SSH, consultez le [guide des premières étapes avec Public Cloud](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/).
+Pour créer une nouvelle clé SSH, consultez le [guide des premières étapes avec Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps).
 
 ### Configuration du nouvel utilisateur
 
-[Connectez-vous à votre instance en SSH](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-4-connexion-a-votre-instance) et créez un nouvel utilisateur à l'aide de commande ci-dessous :
+[Connectez-vous à votre instance en SSH](/pages/platform/public-cloud/public-cloud-first-steps#etape-4-connexion-a-votre-instance) et créez un nouvel utilisateur à l'aide de commande ci-dessous :
 
 ```bash
 ~$ sudo adduser user2
@@ -87,8 +84,8 @@ user2@server:~$
 
 ## Aller plus loin
 
-[Créer une première instance Public Cloud et s’y connecter](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/)
+[Créer une première instance Public Cloud et s’y connecter](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Changer sa clé SSH en cas de perte](https://docs.ovh.com/fr/public-cloud/changer-sa-cle-ssh-en-cas-de-perte/)
+[Changer sa clé SSH en cas de perte](/pages/platform/public-cloud/replacing_lost_ssh_key)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

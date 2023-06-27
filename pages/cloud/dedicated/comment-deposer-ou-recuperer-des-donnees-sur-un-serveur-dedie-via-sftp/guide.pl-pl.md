@@ -1,8 +1,6 @@
 ---
 title: 'Przesyłanie i pobieranie danych z serwera dedykowanego za pośrednictwem SFTP'
-slug: przesylanie-i-pobieranie-danych-sftp
 excerpt: 'Dowiedz się, jak przesłać dane z serwera dedykowanego na komputer lokalny i na odwrót'
-section: Tutorial
 updated: 2021-05-18
 ---
 
@@ -32,9 +30,9 @@ W procesie migracji może być konieczne pobranie danych z serwera dedykowanego,
 
 ### Użyj programu FileZilla do pobierania i upuszczania danych
 
-Protokół SFTP może być używany do przesyłania plików za pomocą bezpiecznego połączenia (SSH). W przypadku tego scenariusza istnieją dwie możliwości: lub masz normalny dostęp do serwera, lub możesz łączyć się z nim w [trybie rescue](../ovh-rescue/).
+Protokół SFTP może być używany do przesyłania plików za pomocą bezpiecznego połączenia (SSH). W przypadku tego scenariusza istnieją dwie możliwości: lub masz normalny dostęp do serwera, lub możesz łączyć się z nim w [trybie rescue](/pages/cloud/dedicated/rescue_mode).
 
-Domyślnie serwer z systemem operacyjnym GNU/Linux będzie miał dostęp SSH przez port 22. Być może zmodyfikowałeś już ten port (na przykład postępując zgodnie z [naszym przewodnikiem dotyczącym bezpieczeństwa serwera dedykowanego](../porady-zabezpieczanie-serwera-dedykowanego/)).
+Domyślnie serwer z systemem operacyjnym GNU/Linux będzie miał dostęp SSH przez port 22. Być może zmodyfikowałeś już ten port (na przykład postępując zgodnie z [naszym przewodnikiem dotyczącym bezpieczeństwa serwera dedykowanego](/pages/cloud/dedicated/securing-a-dedicated-server)).
 
 #### **Jeśli masz dostęp do serwera**
 
@@ -54,7 +52,7 @@ Postępy transferu danych wyświetlają się wówczas na dole interfejsu FileZil
 
 #### **Jeśli Twój serwer znajduje się w trybie Rescue**
 
-W trybie rescue najpierw zamontuj partycję. W tym celu postępuj zgodnie z instrukcjami zawartymi w [tym przewodniku](../ovh-rescue/).
+W trybie rescue najpierw zamontuj partycję. W tym celu postępuj zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/cloud/dedicated/rescue_mode).
 
 Po zamontowaniu partycji kliknij klienta FileZilla w sposób opisany powyżej, korzystając z portu 22 do połączenia z serwerem.
 
@@ -69,8 +67,8 @@ Jeśli poprawnie utworzyłeś punkt montowania, dane znajdują się w katalogu "
 
 ## Sprawdź również
 
-[Uruchamianie i korzystanie z trybu Rescue](../ovh-rescue/)
+[Uruchamianie i korzystanie z trybu Rescue](/pages/cloud/dedicated/rescue_mode)
 
-[Zabezpieczanie serwera dedykowanego](../porady-zabezpieczanie-serwera-dedykowanego/)
+[Zabezpieczanie serwera dedykowanego](/pages/cloud/dedicated/securing-a-dedicated-server)
 
 Dołącz do społeczności naszych użytkowników na <https://community.ovh.com/en/>.

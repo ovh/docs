@@ -1,12 +1,9 @@
 ---
 title: Ajout de bloc IP
-slug: ajout-de-bloc-ip
 routes:
-    canonical: 'https://docs.ovh.com/ca/fr/private-cloud/ajout-de-bloc-ip/'
+    canonical: '/pages/cloud/private-cloud/ajout_de_bloc_ip'
 excerpt: Commander un bloc IP sur votre Managed Bare Metal
 legacy_guide_number: '7766457'
-section: Fonctionnalités OVHcloud
-order: 01
 updated: 2020-11-18
 ---
 
@@ -49,7 +46,7 @@ Plusieurs champs seront à remplir pour la création de votre bloc IP
 
 > [!primary]
 >
-> N'hésitez pas à consulter notre guide sur le [plugin OVHcloud Network](../plugin-ovhcloud-network/){.external-link} afin de savoir quelles sont les IPs réservées de votre bloc ainsi que leur utilisation.
+> N'hésitez pas à consulter notre guide sur le [plugin OVHcloud Network](/pages/cloud/managed-bare-metal/plugin_ovh_network){.external-link} afin de savoir quelles sont les IPs réservées de votre bloc ainsi que leur utilisation.
 >
 
 - Pays du bloc IP, important dans certains cas pour le référencement de vos services (un site à affluence française aura un meilleur référencement en France si l'IP est française également)

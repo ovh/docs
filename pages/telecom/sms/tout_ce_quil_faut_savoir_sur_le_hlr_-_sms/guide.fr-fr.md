@@ -1,9 +1,7 @@
 ---
 title: Tout ce qu’il faut savoir sur le HLR - SMS
 excerpt: Tout ce qu’il faut savoir sur le HLR - SMS
-slug: tout_ce_quil_faut_savoir_sur_le_hlr_-_sms
 legacy_guide_number: g2179
-section: Utilisation avancée
 updated: 2018-03-26
 ---
 

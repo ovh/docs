@@ -1,8 +1,6 @@
 ---
 title: 'Getting started with OVH Prescience'
-slug: getting-started-with-ovh-prescience
 excerpt: 'This guide will show how to create an automated learning model in order to perform a classification.'
-section: 'Getting started'
 updated: 2018-10-08
 ---
 

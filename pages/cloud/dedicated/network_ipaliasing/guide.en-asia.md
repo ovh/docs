@@ -1,8 +1,6 @@
 ---
 title: 'Configuring IP aliasing'
-slug: network-ipaliasing
 excerpt: 'Find out how to add Additional IP addresses to your server configuration'
-section: 'Network Management'
 updated: 2023-06-15
 ---
 

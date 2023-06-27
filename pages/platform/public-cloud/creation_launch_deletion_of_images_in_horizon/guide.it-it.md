@@ -1,9 +1,7 @@
 ---
 title: 'Crea, carica ed elimina immagini con Horizon'
 excerpt: 'Crea, carica ed elimina immagini con Horizon'
-slug: crea_carica_ed_elimina_immagini_con_horizon
 legacy_guide_number: g1784
-section: Gestione da Horizon
 updated: 2021-12-30
 ---
 
@@ -23,7 +21,7 @@ In questo modo è possibile, ad esempio, importare le immagini delle macchine vi
 
 ## Prerequisiti
 
-- [Crea un utente per accedere a Horizon](https://docs.ovh.com/it/public-cloud/horizon/)
+- [Crea un utente per accedere a Horizon](/pages/platform/public-cloud/introducing_horizon)
 - Accedi al menu Immagini dell'interfaccia OpenStack Horizon
 
 ![public-cloud](images/horizon_menu.png){.thumbnail}

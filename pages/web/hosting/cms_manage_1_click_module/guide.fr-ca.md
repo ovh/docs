@@ -1,9 +1,6 @@
 ---
 title: Comment gérer votre module en 1 clic ?
 excerpt: Découvrez comment gérer votre module en 1 clic depuis votre espace client OVHcloud
-slug: 1-click-module-management
-section: CMS
-order: 02
 updated: 2022-09-05
 ---
 
@@ -25,7 +22,7 @@ Les modules en 1 clic permettent l’installation facile et rapide d’un logici
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement Web Cloud](https://www.ovhcloud.com/fr-ca/web-hosting/) permettant l'installation d'un module en 1 clic.
-- Avoir créé un module en 1 clic sur votre hébergement (Si vous n'avez pas encore effectué cette installation, suivez les instructions de ce [guide](https://docs.ovh.com/ca/fr/hosting/modules-en-1-clic/)).
+- Avoir créé un module en 1 clic sur votre hébergement (Si vous n'avez pas encore effectué cette installation, suivez les instructions de ce [guide](/pages/web/hosting/cms_install_1_click_modules)).
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 ## En pratique
@@ -38,7 +35,7 @@ Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernant vo
 
 > [!primary]
 >
-> Si votre site ne s'affiche pas correctement suite à cette manipulation, consultez les guides OVHcloud liés aux hébergements mutualisés dans la section [Diagnostic](https://docs.ovh.com/fr/hosting/).
+> Si votre site ne s'affiche pas correctement suite à cette manipulation, consultez les guides OVHcloud liés aux hébergements mutualisés dans la section [Diagnostic](/products/web-cloud-hosting).
 >
 
 ### Accéder à l'interface administrateur
@@ -105,7 +102,7 @@ Toutefois, nous vous recommandons vivement d’effectuer l’opération à l’a
 
 > [!warning]
 >
-> La sauvegarde de vos données fait partie des opérations essentielles à la [sécurisation de vos sites](https://docs.ovh.com/ca/fr/hosting/secure-website/). Nous vous conseillons d'importer régulièrement et **avant toute suppression** la sauvegarde de vos données sur un support local, tel qu'une clé USB ou un disque dur externe, en suivant les instructions de ce [guide](https://docs.ovh.com/ca/fr/hosting/exporter-son-site-web/).
+> La sauvegarde de vos données fait partie des opérations essentielles à la [sécurisation de vos sites](/pages/web/hosting/secure_your_website). Nous vous conseillons d'importer régulièrement et **avant toute suppression** la sauvegarde de vos données sur un support local, tel qu'une clé USB ou un disque dur externe, en suivant les instructions de ce [guide](/pages/web/hosting/exporter-son-site-web).
 >
 
 #### Étape 1 : identifier la base de données liée à votre module <a name="step1"></a>
@@ -114,7 +111,7 @@ Pour supprimer votre module en 1 clic, vous devez commencer par identifier sa ba
 
 Dans le cas contraire, rendez-vous dans l'onglet `Multisite`{.action}. Notez le nom du `Dossier racine` : il s'agit du répertoire dans lequel se trouvent les fichiers qui constituent votre module en 1 clic sur le serveur FTP.
 
-Connectez-vous ensuite à [l'espace FTP de votre hébergement](https://docs.ovh.com/ca/en/hosting/log-in-to-storage-ftp-web-hosting/). Ouvrez le `Dossier racine` trouvé précédemment dans l'onglet `Multisite`{.action} et recherchez le fichier de configuration de votre module :
+Connectez-vous ensuite à [l'espace FTP de votre hébergement](/pages/web/hosting/ftp_connection). Ouvrez le `Dossier racine` trouvé précédemment dans l'onglet `Multisite`{.action} et recherchez le fichier de configuration de votre module :
 
 - Pour WordPress : **« wp-config.php »** (le nom de la base de données apparaît sous la mention **« DB_NAME »**).
 - Pour Joomla! : **« configuration.php »** (le nom de la base de données apparaît sous la mention **« public $db »**).
@@ -123,7 +120,7 @@ Connectez-vous ensuite à [l'espace FTP de votre hébergement](https://docs.ovh.
 
 #### Étape 2 : sauvegarder votre module
 
-Pour sauvegarder votre site, suivez les instructions de ce [guide](https://docs.ovh.com/ca/fr/hosting/exporter-son-site-web/), afin de récupérer à la fois ses fichiers sur l'espace FTP de votre hébergement et sa base de données.
+Pour sauvegarder votre site, suivez les instructions de ce [guide](/pages/web/hosting/exporter-son-site-web), afin de récupérer à la fois ses fichiers sur l'espace FTP de votre hébergement et sa base de données.
 
 #### Étape 3 : supprimer votre module
 
@@ -138,7 +135,7 @@ Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne désignant vo
 
 > [!warning]
 >
-> La suppression de votre module 1 clic **n'entraînera pas automatiquement celle de sa base de données**. Si vous lancez l'installation d'un nouveau CMS sans avoir supprimé préalablement la base de données du précédent (et que votre hébergement ne permet pas la création automatique d'une nouvelle base), le message « [Une erreur s’est produite lors du chargement des informations (You need at least one free database)](https://docs.ovh.com/ca/fr/hosting/erreurs-frequentes-modules-en-1-clic/#une-erreur-sest-produite-lors-du-chargement-des-informations-you-need-at-least-one-free-database) » s'affichera sur votre espace client.
+> La suppression de votre module 1 clic **n'entraînera pas automatiquement celle de sa base de données**. Si vous lancez l'installation d'un nouveau CMS sans avoir supprimé préalablement la base de données du précédent (et que votre hébergement ne permet pas la création automatique d'une nouvelle base), le message « [Une erreur s’est produite lors du chargement des informations (You need at least one free database)](/pages/web/hosting/diagnostic_errors_module1clic#une-erreur-sest-produite-lors-du-chargement-des-informations-you-need-at-least-one-free-database) » s'affichera sur votre espace client.
 >
 > Si vous disposez d'un hébergement [Perso](https://www.ovhcloud.com/fr-ca/web-hosting/personal-offer/) ou si vous avez déjà créé quatre bases de données sur votre hébergement [Pro](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/), vous devrez donc supprimer la base de données identifiée à [l'étape 1](#step1) **AVANT** de pouvoir créer un nouveau module en 1 clic.
 >
@@ -149,7 +146,7 @@ Avant de relancer l'installation d'un nouveau module, vérifiez que les tâches 
 
 ### Bonnes pratiques
 
-Sécurisez votre site en suivant les instructions de ce [guide](https://docs.ovh.com/ca/fr/hosting/secure-website/).
+Sécurisez votre site en suivant les instructions de ce [guide](/pages/web/hosting/secure_your_website).
 
 Ajoutez des outils de test de type CAPTCHA sur les formulaires de votre site.
 
@@ -162,7 +159,7 @@ N'installez pas sur votre site de plugins ou de templates qui n'ont pas été re
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic](https://docs.ovh.com/ca/fr/hosting/erreurs-frequentes-modules-en-1-clic/).
+[Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic](/pages/web/hosting/diagnostic_errors_module1clic).
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 

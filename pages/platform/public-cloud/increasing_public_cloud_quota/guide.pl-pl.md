@@ -1,10 +1,7 @@
 ---
 title: 'Zwiększenie limitów Public Cloud'
 excerpt: 'Dowiedz się, jak zwiększyć limity Public Cloud'
-slug: increase-public-cloud-quota
 legacy_guide_number: g1904
-section: 'Zarządzanie projektami'
-order: 6
 updated: 2023-05-03
 ---
 
@@ -25,7 +22,7 @@ Jeśli chcesz utworzyć więcej zasobów, musisz zwiększyć limit.
 ## Wymagania początkowe
 
 - Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
-- [Posiadanie ważnego](../../billing/zarzadzanie-sposobami-platnosci/) sposobu płatności w Panelu klienta OVHcloud.
+- [Posiadanie ważnego](/pages/account/billing/manage-payment-methods) sposobu płatności w Panelu klienta OVHcloud.
 
 
 ## Wskazówki

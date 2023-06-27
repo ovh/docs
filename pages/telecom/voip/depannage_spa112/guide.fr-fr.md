@@ -1,7 +1,5 @@
 ---
 title: Dépannage SPA112
-slug: depannage-spa112
-section: Cisco SPA112
 hidden: true
 updated: 2018-03-26
 ---

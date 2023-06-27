@@ -1,8 +1,6 @@
 ---
 title: 'Logging in via SFTP'
-slug: sftp_connection
 excerpt: 'Find out how to log in to your Private Cloud via SFTP'
-section: 'Getting started'
 updated: 2021-12-28
 ---
 

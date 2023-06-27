@@ -1,16 +1,10 @@
 ---
 title: 'Configuring an email address on the macOS Mail app'
-slug: guide-configuring-mail-on-macos
-section: 'Configure on computer'
-order: 03
 updated: 2022-06-13
 ---
 
 ---
 title: 'Configuring an email address on the macOS Mail app'
-slug: guide-configuring-mail-on-macos
-section: 'Configure on computer'
-order: 03
 ---
 **Last updated 13th June 2022**
 
@@ -55,7 +49,7 @@ OVHcloud also has a web application you can use to access your email address fro
 
 ### Retrieve a backup of your email address
 
-If you need to make any changes that could lead to the loss of your email account data, we advise backing up the email account concerned beforehand. To do this, please read the "**Export**" section in the "**Mail on macOS**" chapter of our guide on [Manually migrate your email address](https://docs.ovh.com/ca/en/emails/migrate-email-addresses-manually/#exporting).
+If you need to make any changes that could lead to the loss of your email account data, we advise backing up the email account concerned beforehand. To do this, please read the "**Export**" section in the "**Mail on macOS**" chapter of our guide on [Manually migrate your email address](/pages/web/emails/manual_email_migration#exporting).
 
 ### Modify existing settings
 

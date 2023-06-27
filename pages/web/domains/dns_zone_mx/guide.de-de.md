@@ -1,9 +1,6 @@
 ---
 title: "MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen"
 excerpt: "Erfahren Sie hier, wie Sie bei OVHcloud einen MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen"
-slug: webhosting_e-mail_mx-konfiguration_mit_dns_zone_von_ovh
-section: DNS und DNS-Zone
-order: 04
 updated: 2018-05-30
 ---
 
@@ -65,7 +62,7 @@ Um zu überprüfen, ob bereits MX-Einträge vorhanden sind, wählen Sie mithilfe
 
 Um Einträge hinzuzufügen, klicken Sie rechts auf `Eintrag hinzufügen`{.action} und wählen Sie dann `MX`{.action} aus. Tragen Sie die angeforderten Informationen für die ausgewählte E-Mail-Lösung ein:
 
-- **OVHcloud E-Mail-Lösung**: Lesen Sie in dieser Anleitung „[Schritt 2: OVHcloud MX-Konfiguration kennenlernen](https://docs.ovh.com/de/domains/webhosting_e-mail_mx-konfiguration_mit_dns_zone_von_ovh/#schritt-2-ovh-mx-konfiguration-kennenlernen){.external}“.
+- **OVHcloud E-Mail-Lösung**: Lesen Sie in dieser Anleitung „[Schritt 2: OVHcloud MX-Konfiguration kennenlernen](/pages/web/domains/dns_zone_mx#schritt-2-ovh-mx-konfiguration-kennenlernen){.external}“.
 
 - **E-Mail-Lösung eines anderen Anbieters**: Informieren Sie sich über die MX-Konfiguration beim Anbieter Ihres E-Mail-Dienstes.
 
@@ -78,9 +75,9 @@ Wenn Sie alle Informationen eingegeben haben, folgen Sie den nächsten Schritten
 
 ## Weiterführende Informationen
 
-[Webhosting − Allgemeine Informationen zu den DNS Servern](https://docs.ovh.com/de/domains/webhosting_allgemeine_informationen_zu_den_dns_servern/){.external}
+[Webhosting − Allgemeine Informationen zu den DNS Servern](/pages/web/domains/dns_server_general_information){.external}
 
-[Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}
+[Bearbeiten der OVHcloud DNS-Zone](/pages/web/domains/dns_zone_edit){.external}
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

@@ -1,11 +1,8 @@
 ---
 title: AI Deploy - Billing and lifecycle
-slug: deploy/billing
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/billing/'
+    canonical: '/pages/platform/ai/deploy_guide_06_billing_concept'
 excerpt: Learn how we bill AI Deploy
-section: AI Deploy - Guides
-order: 06
 updated: 2023-04-04
 ---
 
@@ -32,7 +29,7 @@ OVHcloud AI deploy allows deployment of Docker images, and each deployment is ca
 During its lifetime, the app will go through the following status:
 
 - `QUEUED`: the app deployment request is about to be processed. First arrived, first deployed.
-- `INITIALIZING`: the app is being started and, if any, the remote data is synchronized. To learn more about data synchronization, please check out the [Data - How it works](https://docs.ovh.com/pl/publiccloud/ai/data/#how-it-works) documentation.
+- `INITIALIZING`: the app is being started and, if any, the remote data is synchronized. To learn more about data synchronization, please check out the [Data - How it works](/pages/platform/ai/gi_02_concepts_data#how-it-works) documentation.
 - `RUNNING`: the app is running, you can connect to it and use it. Compute resources (GPUs/CPUs) are allocated to your specific app and an HTTP endpoint is available.
 - `SCALING`: the app deployment is scaling up or down, depending of the scaling configuration. While scaling, the app is still available if it was running before.
 - `STOPPING`: the app is stopping, your compute resources are freed. Ephemeral data is deleted.

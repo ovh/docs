@@ -1,10 +1,7 @@
 ---
 title: Modifica i server DNS di un'istanza Public Cloud
 excerpt: Come modificare i server DNS di default di un'istanza Public Cloud
-slug: modifica_i_server_dns_della_tua_istanza
 legacy_guide_number: g1985
-section: Rete
-order: 4
 updated: 2021-10-29
 ---
 
@@ -35,9 +32,9 @@ Di default, il server DNS configurato sulle istanze Public Cloud è quello di OV
 
 ## Procedura
 
-Accedi alla tua istanza via SSH Per maggiori informazioni, consulta la guida [Connettersi a un'istanza Public Cloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/#connect-to-instance).
+Accedi alla tua istanza via SSH Per maggiori informazioni, consulta la guida [Connettersi a un'istanza Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance).
 
-Passare all'utente root. Se hai bisogno di aiuto, consulta la guida per [passare da root e impostare una password](https://docs.ovh.com/it/public-cloud/imposta_una_password_amministratore/).
+Passare all'utente root. Se hai bisogno di aiuto, consulta la guida per [passare da root e impostare una password](/pages/platform/public-cloud/become_root_and_change_password).
 
 ### Debian / Ubuntu
 
@@ -138,7 +135,7 @@ DNS configuration:
 
 ### Windows
 
-Accedi all'istanza tramite una sessione desktop remoto o con la console VNC. Per maggiori informazioni, consulta la guida [Connettersi a un'istanza Public Cloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/#connect-to-instance).
+Accedi all'istanza tramite una sessione desktop remoto o con la console VNC. Per maggiori informazioni, consulta la guida [Connettersi a un'istanza Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance).
 
 Apri le `Impostazioni di rete`{.action}.
 
@@ -159,10 +156,10 @@ In un PowerShell, il comando `nslookup` permette di verificare quale server DNS 
 
 ## Per saperne di più <a name="gofurther"></a>
 
-[Creare una prima istanza Public Cloud e connettersi](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/)
+[Creare una prima istanza Public Cloud e connettersi](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Accedere come utente root e impostare una password](https://docs.ovh.com/it/public-cloud/imposta_una_password_amministratore/)
+[Accedere come utente root e impostare una password](/pages/platform/public-cloud/become_root_and_change_password)
 
-[Modificare l’hostname di un’istanza Public Cloud](https://docs.ovh.com/it/public-cloud/modifica_lhostname_della_tua_istanza/)
+[Modificare l’hostname di un’istanza Public Cloud](/pages/platform/public-cloud/changing_the_hostname_of_an_instance)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

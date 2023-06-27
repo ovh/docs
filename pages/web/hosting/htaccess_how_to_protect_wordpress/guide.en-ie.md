@@ -1,13 +1,10 @@
 ---
 title: "Tutorial - Using the htaccess file with WordPress"
-slug: use-htaccess-with-wordpress
 excerpt: "Find out how to secure your WordPress blog with one or more htaccess files"
-section: 'Tutorials'
-order: 022
-updated: 2023-03-08
+updated: 2023-06-22
 ---
 
-**Last updated 8th March 2023**
+**Last updated 22nd June 2023**
 
 ## Objective
 
@@ -26,13 +23,24 @@ This tutorial will show you how to configure certain features of your web hostin
 ## Requirements
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) with WordPress installed.
-- Using an FTP client such as [FileZilla](https://filezilla-project.org/), as explicated in our [FileZilla tutorial](https://docs.ovh.com/ie/en/hosting/web_hosting_filezilla_user_guide/)”.
+- Using an FTP client such as [FileZilla](https://filezilla-project.org/), as explicated in our [FileZilla tutorial](/pages/web/hosting/ftp_filezilla_user_guide)”.
 
 **.htaccess** files can be created and modified with text editors, for example:
 
 - [Notepad](https://support.microsoft.com/en-us/windows/help-in-notepad-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} on Windows
 - [TextEdit](https://support.apple.com/en-ie/guide/textedit/welcome/mac){.external} on macOS 
 - [Notepad++](https://notepad-plus-plus.org/){.external}.
+
+> [!primary]
+>
+> The security solutions offered below are not exhaustive.
+>
+> For example, if you use a **C**ontent **M**anagement **S**ystem (**CMS**) other than WordPress, other security solutions exist.
+>
+> If you are not using a CMS, OVHcloud also provides a [tutorial on protecting a directory or the administration interface of your website via .htaccess files](/pages/web/hosting/htaccess_protect_directory_by_password).
+>
+> If you have any questions about creating, using or programming your website, please contact our [user community](https://community.ovh.com/en/) or our [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/). OVHcloud support teams will not be able to assist you with these issues.
+>
 
 ## FAQ
 
@@ -105,7 +113,7 @@ There are several ways to modify the settings that will change the server's beha
 
 > [!warning]
 >
-> Before following the steps below, you must redirect HTTP requests to HTTPS. To do this, follow the instructions in our guide [“Activating HTTPS on your website with an SSL certificate”](https://docs.ovh.com/ie/en/hosting/activate-https-website-ssl/#step-1-activate-the-ssl-certificate-on-the-web-hosting-plan).
+> Before following the steps below, you must redirect HTTP requests to HTTPS. To do this, follow the instructions in our guide [“Activating HTTPS on your website with an SSL certificate”](/pages/web/hosting/ssl-activate-https-website#step-1-activate-the-ssl-certificate-on-the-web-hosting-plan).
 
 ### Prevent the display of directories and subdirectories
 
@@ -140,7 +148,7 @@ If you have identified a malicious IP address, enter the following line in your 
 
 Replace `xxx.xxx.xxx.xxx` with the IP address to block.
 
-For more information on this subject, please refer to our [guide on IP access restriction via the .htaccess file](https://docs.ovh.com/ie/en/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+For more information on this subject, please refer to our [guide on IP access restriction via the .htaccess file](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
 #### Block access to the wp-admin directory (or other directories) by IP
 

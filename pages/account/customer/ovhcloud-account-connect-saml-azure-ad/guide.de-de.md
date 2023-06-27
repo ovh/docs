@@ -1,9 +1,6 @@
 ---
 title: SSO-Verbindungen zu Ihrem OVHcloud Account über Azure AD aktivieren
-slug: connect-saml-sso-azure-ad
 excerpt: "Erfahren Sie hier, wie Sie Azure Active Directory über SAML 2.0 mit Ihrem OVHcloud Account verbinden"
-section: Fortgeschrittene Nutzung
-order: 02
 updated: 2023-04-05
 ---
 
@@ -22,7 +19,7 @@ Sie können die Authentifizierungsmethode **Single Sign-On** (SSO) verwenden, um
 ## Voraussetzungen
 
 - Sie haben Zugriff auf die Rollen **Application Administrator** und **User Administrator** eines Azure AD Dienstes.
-- Sie verfügen über einen [OVHcloud Kunden-Account](https://docs.ovh.com/de/customer/ovhcloud-account-erstellen/).
+- Sie verfügen über einen [OVHcloud Kunden-Account](/pages/account/customer/ovhcloud-account-creation).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
@@ -248,7 +245,7 @@ Die erstellte Gruppe sollte in der Liste erscheinen.
 
 ### Verbindung via SSO
 
-Geben Sie auf der [OVHcloud Login-Seite](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) Ihre [Kundenkennung](https://docs.ovh.com/de/customer/ovhcloud-account-erstellen/#was-ist-meine-kundenkennung) ein, gefolgt von **/idp***. Klicken Sie ohne ein Passwort einzugeben auf `Login`{.action}.
+Geben Sie auf der [OVHcloud Login-Seite](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) Ihre [Kundenkennung](/pages/account/customer/ovhcloud-account-creation#was-ist-meine-kundenkennung) ein, gefolgt von **/idp***. Klicken Sie ohne ein Passwort einzugeben auf `Login`{.action}.
 
 ![SSO Login step 1](images/ovhcloud_sso_login_1.png){.thumbnail}
 

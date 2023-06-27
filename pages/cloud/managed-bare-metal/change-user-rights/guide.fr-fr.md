@@ -1,9 +1,7 @@
 ---
 title: Changer les droits d’un utilisateur
-slug: changer-les-droits-d-un-utilisateur
 routes:
-    canonical: 'https://docs.ovh.com/fr/private-cloud/changer-les-droits-d-un-utilisateur/'
-section: Fonctionnalités OVHcloud
+    canonical: '/pages/cloud/private-cloud/change_users_rights'
 updated: 2020-11-18
 ---
 

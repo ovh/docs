@@ -1,11 +1,8 @@
 ---
 title: Clonare una VM
-slug: clonare-una-vm
 routes:
-    canonical: 'https://docs.ovh.com/it/private-cloud/clonare-una-vm/'
+    canonical: '/pages/cloud/private-cloud/clone_a_vm'
 excerpt: Come copiare una macchina virtuale esistente via vSphere
-section: Gestione delle macchine virtuali
-order: 07
 updated: 2020-11-18
 ---
 
@@ -21,13 +18,13 @@ La clonazione di una macchina virtuale permette di creare una copia della VM sor
 
 - Disporre di una soluzione [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external}
 - Disporre di almeno una VM nel cluster
-- Avere accesso all’[interfaccia vSphere](../connessione-interfaccia-vsphere/)
+- Avere accesso all’[interfaccia vSphere](/pages/cloud/managed-bare-metal/vsphere-interface)
 
 ## Procedura
 
 ### Clona la VM
 
-Accedi all’[interfaccia vSphere](../connessione-interfaccia-vsphere/) e, nella sezione `Hosts and Clusters`, clicca con il tasto destro sulla VM da clonare e seleziona l’opzione `Clone`{.action} > `Clone to virtual machine...`{.action}. 
+Accedi all’[interfaccia vSphere](/pages/cloud/managed-bare-metal/vsphere-interface) e, nella sezione `Hosts and Clusters`, clicca con il tasto destro sulla VM da clonare e seleziona l’opzione `Clone`{.action} > `Clone to virtual machine...`{.action}. 
 
 ![Clonare una VM](images/clonevm01.png){.thumbnail}
 
@@ -47,9 +44,9 @@ Definisci la localizzazione dello storage (spazio disco) della VM.
 
 Il formato del disco virtuale è di tipo “Thin Provision”: il disco virtuale sarà quindi creato ma non utilizzerà lo spazio disco realmente impiegato sullo storage, indipendentemente dallo spazio disco precedentemente utilizzato sulla macchina virtuale sorgente.
 
-Per maggiori informazioni sui formati dei dischi VMware, consulta [questa guida](../scegliere-formato-del-disco/).
+Per maggiori informazioni sui formati dei dischi VMware, consulta [questa guida](/pages/cloud/managed-bare-metal/choosing-disk-type).
 
-Nella riga `VM Storage Policy` è possibile scegliere la politica di storage predefinita se disponi di datastore, o dell’opzione [VM Encryption](../vm-encrypt/).
+Nella riga `VM Storage Policy` è possibile scegliere la politica di storage predefinita se disponi di datastore, o dell’opzione [VM Encryption](/pages/cloud/managed-bare-metal/vm_encrypt).
 
 ![Storage VM](images/clonevm04.png){.thumbnail}
 

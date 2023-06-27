@@ -1,9 +1,6 @@
 ---
 title: Como rescindir o seu Hosted Private Cloud
-slug: como-rescindir-o-hosted-private-cloud
 excerpt: Saiba como solicitar a rescisão de uma infraestrutura Hosted Private Cloud
-section: Funcionalidades da OVHcloud
-order: 09
 updated: 2020-07-08
 ---
 

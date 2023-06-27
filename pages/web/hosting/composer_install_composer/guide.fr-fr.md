@@ -1,9 +1,6 @@
 ---
 title: Installer Composer sur un hebergement web
-slug: installation-de-composer-sur-les-hebergements-mutualises
 excerpt: Découvrez comment installer et faire vos premiers pas sur Composer.
-section: PHP
-order: 02
 updated: 2023-02-24
 ---
 
@@ -29,7 +26,7 @@ updated: 2023-02-24
 
 ## En pratique
 
-Connectez-vous en SSH à votre hébergement mutualisé à l'aide de notre guide sur [l'utilisation du SSH avec votre hébergement web mutualisé OVHcloud](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/).
+Connectez-vous en SSH à votre hébergement mutualisé à l'aide de notre guide sur [l'utilisation du SSH avec votre hébergement web mutualisé OVHcloud](/pages/web/hosting/ssh_on_webhosting).
 
 Vérifiez que vous utilisez bien une version de PHP compatible en ligne de commande :
 

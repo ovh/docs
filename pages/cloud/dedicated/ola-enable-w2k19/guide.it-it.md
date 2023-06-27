@@ -1,9 +1,6 @@
 ---
 title: 'Configurare un NIC per il servizio OVHcloud Link Aggregation in Windows Server 2019'
-slug: ola-w2k19
 excerpt: "Attivare l'opzione OVHcloud Link Aggregation sul tuo server Windows Server 2019"
-section: 'Utilizzo avanzato'
-order: 4
 updated: 2021-03-25
 ---
 
@@ -21,7 +18,7 @@ La tecnologia OVHcloud Link Aggregation (OLA) è stata progettata dai team OVHcl
 
 ## Prerequisiti
 
-- [Configurare un NIC per il servizio OVHcloud Link Aggregation nello Spazio Cliente](../ola-manager)
+- [Configurare un NIC per il servizio OVHcloud Link Aggregation nello Spazio Cliente](/pages/cloud/dedicated/ola-enable-manager)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
@@ -75,10 +72,10 @@ Per testare il corretto funzionamento del nuovo NIC team creato, effettua il pin
 
 ## Per saperne di più
 
-[Configurare un NIC per il servizio OVHcloud Link Aggregation nello Spazio Cliente](../ola-manager/).
+[Configurare un NIC per il servizio OVHcloud Link Aggregation nello Spazio Cliente](/pages/cloud/dedicated/ola-enable-manager).
 
-[Configurare un NIC per il servizio OVHcloud Link Aggregation in Debian 9](../ola-debian9/).
+[Configurare un NIC per il servizio OVHcloud Link Aggregation in Debian 9](/pages/cloud/dedicated/ola-enable-debian9).
 
-[Configurare un NIC per il servizio OVHcloud Link Aggregation in CentOS 7](../ola-centos7/).
+[Configurare un NIC per il servizio OVHcloud Link Aggregation in CentOS 7](/pages/cloud/dedicated/ola-enable-centos7).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

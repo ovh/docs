@@ -1,9 +1,6 @@
 ---
 title: Object Storage - Server Access Logging
-slug: s3/server-access-logging
 excerpt: Learn how to configure and use Server Access Logging
-section: Tutorials
-order: 130
 updated: 2023-02-16
 ---
 
@@ -21,7 +18,7 @@ Server Access Logging provides detailed records for the requests that are made t
 - A user with the required access rights on the bucket
 - Have installed and configured aws-cli
 
-See our [Getting started with S3 Object Storage](https://docs.ovh.com/au/en/storage/object-storage/s3/getting-started-with-object-storage/) guide.
+See our [Getting started with S3 Object Storage](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) guide.
 
 ## Instruction
 

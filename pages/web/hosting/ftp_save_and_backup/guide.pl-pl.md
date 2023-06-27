@@ -1,9 +1,6 @@
 ---
 title: 'Przywracanie plików z kopii zapasowej OVHcloud'
-slug: hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla
 excerpt: 'Dowiedz się, jak przywrócić plik lub całą przestrzeń dyskową Twojego hostingu'
-section: 'FTP i SSH'
-order: 06
 updated: 2023-01-12
 ---
 
@@ -21,7 +18,7 @@ W ramach usługi hostingu OVHcloud otrzymujesz dostęp do przestrzeni dyskowej, 
 > 
 > Kopie zapasowe proponowane przez OVHcloud dla hostingu współdzielonego są niezamówione. Oferujemy je jako uzupełnienie Twoich usług, które pomogą Ci w nagłych wypadkach. Zalecamy regularne wykonywanie Twoich własnych kopii zapasowych, aby zapobiec ewentualnej utracie danych.
 > 
-> Wykonując kopię zapasową bezpieczeństwa Twojej strony WWW i używając bazy danych, wykonaj również kopię zapasową bazy danych. Zapoznaj się z naszym przewodnikiem, aby [tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/).
+> Wykonując kopię zapasową bezpieczeństwa Twojej strony WWW i używając bazy danych, wykonaj również kopię zapasową bazy danych. Zapoznaj się z naszym przewodnikiem, aby [tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](/pages/web/hosting/sql_database_export).
 > 
 
 **Dowiedz się, jak przywrócić plik lub całą przestrzeń dyskową Twojego hostingu.**
@@ -63,7 +60,7 @@ Określ również metodę przywracania, której użyjesz.
 >
 >![ftp quota](images/check-ftp-quota.png){.thumbnail}
 >
-> Jeśli używana przestrzeń dyskowa FTP jest większa niż połowa całkowitej przestrzeni dyskowej FTP w Twojej ofercie hostingu, możesz lokalnie pobrać duże elementy Twojej strony WWW (w tym celu możesz użyć [Filezilla](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/)). Usuń je z przestrzeni FTP. Zmniejszy to rozmiar przestrzeni dyskowej FTP, której używasz i będziesz mógł przywrócić dane z Panelu klienta OVHcloud.
+> Jeśli używana przestrzeń dyskowa FTP jest większa niż połowa całkowitej przestrzeni dyskowej FTP w Twojej ofercie hostingu, możesz lokalnie pobrać duże elementy Twojej strony WWW (w tym celu możesz użyć [Filezilla](/pages/web/hosting/ftp_filezilla_user_guide)). Usuń je z przestrzeni FTP. Zmniejszy to rozmiar przestrzeni dyskowej FTP, której używasz i będziesz mógł przywrócić dane z Panelu klienta OVHcloud.
 >
 
 Przejdź do sekcji dotyczącej wybranej przez Ciebie metody przywracania przestrzeni dyskowej. 
@@ -83,11 +80,11 @@ Przejdź do sekcji dotyczącej wybranej przez Ciebie metody przywracania przestr
 > [!primary]
 > **Strona w trybie konserwacji**
 > 
-> Aby dowiedzieć się, czy Twoja strona została umieszczona w trybie konserwacji, zapoznaj się z naszym przewodnikiem [Co zrobić w przypadku strony “403 forbidden”?](https://docs.ovh.com/pl/hosting/diagnostyka-403-forbidden/). 
+> Aby dowiedzieć się, czy Twoja strona została umieszczona w trybie konserwacji, zapoznaj się z naszym przewodnikiem [Co zrobić w przypadku strony “403 forbidden”?](/pages/web/hosting/diagnostic_403_forbidden). 
 > 
 > W tym przypadku:
 >
-> - Do [kontaktu administratora](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/#dostep-do-zarzadzania-kontaktami) hostingu wysyłamy e-mail z naszymi zespołami. 
+> - Do [kontaktu administratora](/pages/account/customer/managing_contacts#dostep-do-zarzadzania-kontaktami) hostingu wysyłamy e-mail z naszymi zespołami. 
 > - Status "konserwacji" pojawia się w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W sekcji `Web Cloud`{.action} kliknij Twoją usługę w sekcji `Hosting`{.action}, a następnie zakładkę `Informacje ogólne`{.action}.
 > - Strona (-y), na której (-ych) hostowane są strony "403 Forbidden".
 >
@@ -132,9 +129,9 @@ Operacja składa się z kilku etapów. Upewnij się, że posiadasz hasło użytk
 
 Na wstępie określ program lub interfejs, którego będziesz używał do łączenia się z kopią zapasową Twojej przestrzeni dyskowej. Jeśli już wybrałeś program lub interfejs, przejdź od razu do etapu 2. W przeciwnym razie zalecamy użycie jednego z trzech rozwiązań:
 
-- **program FileZilla**: pobierz program ze strony producenta. OVHcloud udostępnia przewodnik [Korzystanie z programu FileZilla na Twoim hostingu](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/){.external}, w którym znajdziesz instrukcje obsługi programu. Pamiętaj, że przewodnik OVHcloud nie zastępuje oficjalnej dokumentacji producenta programu Filezilla.
+- **program FileZilla**: pobierz program ze strony producenta. OVHcloud udostępnia przewodnik [Korzystanie z programu FileZilla na Twoim hostingu](/pages/web/hosting/ftp_filezilla_user_guide){.external}, w którym znajdziesz instrukcje obsługi programu. Pamiętaj, że przewodnik OVHcloud nie zastępuje oficjalnej dokumentacji producenta programu Filezilla.
 
-- **program Cyberduck**: pobierz program ze strony producenta. OVHcloud udostępnia przewodnik [Korzystanie z programu Cyberduck na Twoim hostingu](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_cyberduck_mac/){.external}, w którym znajdziesz instrukcje obsługi programu. Pamiętaj, że przewodnik OVHcloud nie zastępuje oficjalnej dokumentacji producenta programu Filezilla.
+- **program Cyberduck**: pobierz program ze strony producenta. OVHcloud udostępnia przewodnik [Korzystanie z programu Cyberduck na Twoim hostingu](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac){.external}, w którym znajdziesz instrukcje obsługi programu. Pamiętaj, że przewodnik OVHcloud nie zastępuje oficjalnej dokumentacji producenta programu Filezilla.
 
 - **interfejs FTP Explorer**: zaloguj się do interfejsu w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Po zalogowaniu, kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting. Przejdź do zakładki `FTP - SSH`{.action} i kliknij przycisk `FTP Explorer`{.action}.
 
@@ -146,7 +143,7 @@ Kiedy jesteś gotowy do rozpoczęcia operacji, przejdź do następnego etapu.
 
 W wybranym interfejsie lub programie zaloguj się do przestrzeni dyskowej, aby uzyskać dostęp do zawartości kopii zapasowej, którą chcesz przywrócić. Potrzebna Ci do tego będzie nazwa użytkownika FTP, hasło oraz nazwa hosta Twojego serwera. 
 
-Możesz odnaleźć te informacje w zakładce `FTP - SSH`{.action} na Twoim hostingu. Jeśli nie posiadasz hasła dla użytkownika FTP, zapoznaj się z instrukcjami zawartymi w przewodniku [Zmiana hasła do konta FTP](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/){.external}.
+Możesz odnaleźć te informacje w zakładce `FTP - SSH`{.action} na Twoim hostingu. Jeśli nie posiadasz hasła dla użytkownika FTP, zapoznaj się z instrukcjami zawartymi w przewodniku [Zmiana hasła do konta FTP](/pages/web/hosting/ftp_change_password){.external}.
 
 ![kopia zapasowa](images/backupftp-step4.png){.thumbnail}
 
@@ -180,11 +177,11 @@ Po zalogowaniu wgraj wybrany plik lub pliki. W tym celu przejrzyj zawartość Tw
 
 ## Sprawdź również
 
-[Korzystanie z programu FileZilla na Twoim hostingu](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/){.external}
+[Korzystanie z programu FileZilla na Twoim hostingu](/pages/web/hosting/ftp_filezilla_user_guide){.external}
 
-[Korzystanie z programu Cyberduck na Twoim hostingu](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_cyberduck_mac/){.external}
+[Korzystanie z programu Cyberduck na Twoim hostingu](/pages/web/hosting/ftp_cyberduck_user_guide_on_mac){.external}
 
-[Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/)
+[Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](/pages/web/hosting/sql_database_export)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 

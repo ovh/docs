@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - How do I block access to my website for certain IP addresses via a .htaccess file?"
-slug: htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website
 excerpt: "Find out about the actions you can take via a .htaccess file to block access to your website for certain IP addresses"
-section: Rewriting and authentication
-order: 01
 updated: 2022-09-12
 ---
 
@@ -15,7 +12,7 @@ The aim of this tutorial is to help you secure access to your websites from exte
 
 You can do this with a ".htaccess" file, a particular text file, that the web server (Apache) detects, and that allows you to define special rules for a directory and all of its subdirectories.
 
-You can create multiple ".htaccess" files in [the FTP space](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting but **only one** per directory or subdirectory to avoid conflicts between different .htaccess files.
+You can create multiple ".htaccess" files in [the FTP space](/pages/web/hosting/ftp_connection) of your hosting but **only one** per directory or subdirectory to avoid conflicts between different .htaccess files.
 
 **Find out how to block access to your website for certain IP addresses via a ".htaccess" file.**
 
@@ -38,14 +35,14 @@ You can create multiple ".htaccess" files in [the FTP space](https://docs.ovh.co
 >
 > The settings defined by a ".htaccess" file apply to the directory where it is installed and to all subdirectories.
 >
-> To edit (or create) these directories, log in to your hosting plan’s FTP space. If you need help with this, please refer to our guide on [Logging in to your Web Hosting plan’s storage space](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting/).
+> To edit (or create) these directories, log in to your hosting plan’s FTP space. If you need help with this, please refer to our guide on [Logging in to your Web Hosting plan’s storage space](/pages/web/hosting/ftp_connection).
 >
 
 ### Block an IP, a range of IPs, a domain or all the IPs of a country
 
 Several rules are available to block access to your hosting plan via ".htaccess".<br>
 Be careful with the syntax and block settings to prevent blocking yourself from viewing your hosted sites and/or scripts.<br>
-In the event of an error, you can always log in to [the FTP space](https://docs.ovh.com/ie/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting to correct mistakes.
+In the event of an error, you can always log in to [the FTP space](/pages/web/hosting/ftp_connection) of your hosting to correct mistakes.
 
 > [!primary]
 >
@@ -364,9 +361,9 @@ To authorise all IPs in a country to access your service, insert one of the foll
 
 Besides general access security to the hosting, the ".htaccess" file allows you to perform other actions. Below are more OVHcloud tutorials on the subject:
 
-- [Protect your website’s administration interface via ".htaccess"](https://docs.ovh.com/ie/en/hosting/how_to_password_protect_a_directory_on_your_website/).
-- [Rewrite your URLs using mod_rewrite](https://docs.ovh.com/ie/en/hosting/htaccess_url_rewriting_using_mod_rewrite/)
-- [Perform other operations with the ".htaccess" file](https://docs.ovh.com/ie/en/hosting/what_else_can_you_do_with_the_htaccess_file/)
+- [Protect your website’s administration interface via ".htaccess"](/pages/web/hosting/htaccess_protect_directory_by_password).
+- [Rewrite your URLs using mod_rewrite](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite)
+- [Perform other operations with the ".htaccess" file](/pages/web/hosting/htaccess_what_else_can_you_do)
 
 ## Go further <a name=go-further></a>
 

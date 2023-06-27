@@ -1,8 +1,6 @@
 ---
 title: 'Implementar o cPanel num VPS'
-slug: cpanel
 excerpt: 'Saiba como instanciar um VPS com a aplicação cPanel pré-instalada.'
-section: 'Utilização avançada'
 updated: 2021-10-14
 ---
 
@@ -76,7 +74,7 @@ Já deve poder ligar-se ao WHM e ao SSH através do utilizador root com a palavr
 
 Recomendamos que tome todas as medidas necessárias para proteger a sua WHM e o seu VPS. Para isso, recomendamos que leia as recomendações do cPanel [aqui](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external}.
 
-Também recomendamos que consulte o nosso manual para [proteger um VPS](../como-proteger-vps/), que utilize as [nossas soluções de backup](../) e que configure a [Network Firewall](../../dedicated/firewall-network/).
+Também recomendamos que consulte o nosso manual para [proteger um VPS](/pages/cloud/vps/secure_your_vps), que utilize as [nossas soluções de backup](/products/bare-metal-cloud-virtual-private-servers) e que configure a [Network Firewall](/pages/cloud/dedicated/firewall_network).
 
 ## Quer saber mais?
 

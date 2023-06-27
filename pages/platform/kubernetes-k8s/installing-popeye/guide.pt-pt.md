@@ -1,11 +1,8 @@
 ---
 title: Sanitize your OVHcloud Managed Kubernetes with Popeye
-slug: installing-popeye
 excerpt: Find out how to sanitize your OVHcloud Managed Kubernetes with Popeye and export the generated report on an OVHcloud Object Storage container
-section: Security
-order: 1
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-popeye/'
+    canonical: '/pages/platform/kubernetes-k8s/installing-popeye'
 updated: 2022-04-15
 ---
 
@@ -23,8 +20,7 @@ updated: 2022-04-15
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -64,7 +60,7 @@ You can use the *Reset cluster* function in the Public Cloud section of the [OVH
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it.
 
-Moreover, follow the [deploying a Hello World application](../deploying-an-application/) documentation in order to have an example application running on your cluster.
+Moreover, follow the [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-an-application) documentation in order to have an example application running on your cluster.
 
 At this time you should have a running Kubernetes cluster with hello-world deployment and pod like below:
 
@@ -195,7 +191,7 @@ In this report, you can see that the best practices to follow are:
 There are 3 simple best practices to follow.
 Let's fix them.
 
-Copy the original `hello.yml` file (that you can find in the [deploying a Hello World application](../deploying-an-application/) guide) into a new one:
+Copy the original `hello.yml` file (that you can find in the [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-an-application) guide) into a new one:
 
 ```bash
 cp hello.yml hello-fixed.yml
@@ -316,7 +312,7 @@ This will save the report in your working directory:
 
 You can also export the generated report to an OVHcloud Object Storage container, as they are compatible with S3 API. It's like a AWS S3 bucket but on the OVHcloud infrastructure.
 
-First, you need to have an Object Storage container, if you don't already had one, you can follow the [Creating an Object Storage container](https://docs.ovh.com/pt/storage/object-storage/pcs/create-container/) guide.
+First, you need to have an Object Storage container, if you don't already had one, you can follow the [Creating an Object Storage container](/pages/cloud/storage/object_storage/pcs_create_container) guide.
 
 For this guide, our Object Storage container is named `popeye` and its region is `GRA`.
 

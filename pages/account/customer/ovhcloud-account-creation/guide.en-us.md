@@ -1,9 +1,6 @@
 ---
 title: 'Creating an OVHcloud account'
-slug: create-ovhcloud-account
 excerpt: 'Find out how to create your OVHcloud account'
-Section: 'Getting started'
-order: 1
 updated: 2023-05-23
 ---
 
@@ -30,7 +27,7 @@ To create an OVHcloud account, simply go to [this page](https://ca.ovh.com/auth/
 |---|---|
 |First name - Surname|Enter first name and last name here.|
 |Email address|Enter a **valid email address that you currently have access to**.<br><br>Avoid using an email address linked to a domain name that you manage from your Control Panel. If your domain is blocked, you will no longer receive our notifications.|
-|Password|Your password must be unique (created and used only for your OVHcloud account) and sufficiently complex.<br><br>Please refer to [our guide on password management](https://docs.ovh.com/us/en/customer/manage-password/) for tips on creating an effective password.|
+|Password|Your password must be unique (created and used only for your OVHcloud account) and sufficiently complex.<br><br>Please refer to [our guide on password management](/pages/account/customer/manage-ovh-password) for tips on creating an effective password.|
 
 Once you have completed this first form, a one-time code will be sent to the email address you have entered. This code will validate your email address. Enter it in the boxes provided.
 
@@ -71,14 +68,14 @@ Your NIC handle is displayed in the top right-hand corner under your name and em
 
 ## Go further
 
-Now that you have created your OVHcloud account, we recommend following our [recommendations on account security and managing your personal data](https://docs.ovh.com/us/en/customer/all-about-your-username/).
+Now that you have created your OVHcloud account, we recommend following our [recommendations on account security and managing your personal data](/pages/account/customer/all_about_username).
 
 See also our guides for:
 
-[Logging in to the OVHcloud Control Panel](https://docs.ovh.com/us/en/customer/log-in-to-ovhcloud-control-panel)
+[Logging in to the OVHcloud Control Panel](/pages/account/customer/ovhcloud-account-login)
 
-[Changing the password for your OVHcloud account](https://docs.ovh.com/us/en/customer/manage-password/)
+[Changing the password for your OVHcloud account](/pages/account/customer/manage-ovh-password)
 
-[Securing your OVHcloud account with two-factor authentication](https://docs.ovh.com/us/en/customer/secure-account-with-2FA/)
+[Securing your OVHcloud account with two-factor authentication](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: Backing-up an OVHcloud Managed Kubernetes cluster using Velero
 excerpt: Find out how to back-up an OVHcloud Managed Kubernetes cluster using Velero, including Persistent Volumes
-slug: backing-up-cluster-with-velero
-section: 'Backup and Restore'
-order: 04
 updated: 2023-01-11
 ---
 
@@ -19,8 +16,7 @@ updated: 2023-01-11
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -43,7 +39,7 @@ For Persistent Volumes backup, we are using the [CSI snapshot support for Velero
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-hello-world) documentation.
 
 ## Instructions
 
@@ -55,9 +51,9 @@ Velero needs a S3 bucket as storage backend to store the data from your cluster.
 
 Before creating your S3 bucket you need to:
 
-- [Prepare your environment to use the OpenStack API](../../public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- [Prepare your environment to use the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
 
-- [Get Openstack RC File v3 from Horizon](../../public-cloud/access_and_security_in_horizon/)
+- [Get Openstack RC File v3 from Horizon](/pages/platform/public-cloud/access_and_security_in_horizon)
 
 #### Setting the OpenStack environment variables
 

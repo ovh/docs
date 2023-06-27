@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Manuelle Installation von Drupal"
 excerpt: "Erfahren Sie hier, wie Sie Ihr Drupal CMS eigenständig installieren"
-slug: cms_manuelle_installation_von_drupal
-section: CMS
-order: 06
 updated: 2023-04-03
 ---
 
@@ -26,9 +23,9 @@ Dieses Tutorial hilft Ihnen Schritt für Schritt bei der manuellen Installation 
 
 > [!success]
 >
-> Um Drupal **automatisch** in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu installieren, lesen Sie unsere Anleitung zur [Installation Ihrer Website mit 1-Klick-Modulen](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/).
+> Um Drupal **automatisch** in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu installieren, lesen Sie unsere Anleitung zur [Installation Ihrer Website mit 1-Klick-Modulen](/pages/web/hosting/cms_install_1_click_modules).
 >
-> Um ein **anderes CMS manuell** zu installieren (Joomla!, WordPress, PrestaShop), lesen Sie unsere Anleitung zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/).
+> Um ein **anderes CMS manuell** zu installieren (Joomla!, WordPress, PrestaShop), lesen Sie unsere Anleitung zur [manuellen Installation eines CMS](/pages/web/hosting/cms_manual_installation).
 >
 
 
@@ -46,7 +43,7 @@ Dieses Tutorial hilft Ihnen Schritt für Schritt bei der manuellen Installation 
 
 Um das CMS **Drupal** auf Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) zu installieren sind einige Vorbereitungen erforderlich.
 
-Führen Sie zunächst **alle Schritte** in unserer Anleitung zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/) aus, bevor Sie mit Schritt 2 fortfahren.
+Führen Sie zunächst **alle Schritte** in unserer Anleitung zur [manuellen Installation eines CMS](/pages/web/hosting/cms_manual_installation) aus, bevor Sie mit Schritt 2 fortfahren.
 
 ### Schritt 2: Manuelle Installation abschließen <a name="step2"></a>
 
@@ -83,13 +80,13 @@ Geben Sie die angeforderten Informationen zur Datenbank ein:
 
 ![Drupal installation step 3](images/Drupal-install-db-config-3.png){.thumbnail}
 
-Halten Sie die Zugangsdaten für Ihre Datenbank bereit. (Sie können bei Bedarf **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/) verwenden).
+Halten Sie die Zugangsdaten für Ihre Datenbank bereit. (Sie können bei Bedarf **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](/pages/web/hosting/cms_manual_installation) verwenden).
 
 - *Database type*: Wählen Sie aus den angebotenen Optionen den Typ Ihrer Datenbank aus.
 
 - *Database name*: Dieser Name wurde bei der Erstellung der Datenbank im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) definiert.
 
-- *Database username*: Dieser ist identisch mit dem Datenbanknamen, wenn Sie eine im Webhosting inkludierte Datenbank verwenden. Für Datenbanken, die mit Web Cloud Databases erstellt wurden, lesen Sie die Informationen in **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/).
+- *Database username*: Dieser ist identisch mit dem Datenbanknamen, wenn Sie eine im Webhosting inkludierte Datenbank verwenden. Für Datenbanken, die mit Web Cloud Databases erstellt wurden, lesen Sie die Informationen in **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](/pages/web/hosting/cms_manual_installation).
 
 - *Database password*: Es wurde Ihnen bei der Erstellung der Datenbank per E-Mail gesendet. Möglicherweise haben Sie es inzwischen geändert.
 
@@ -104,9 +101,9 @@ Klicken Sie auf `Advanced Options`{.action}, um den Rest des Menüs zu finden.
 > - Der Servername einer Web Cloud Databases Datenbank leitet sich von Ihrer OVHcloud Kundenkennung ab und hat folgendes Format: `aa00000-XXX.eu.clouddb.ovh.net` wobei **"aa00000"** für Ihre OVHcloud Kundenkennung (ohne **"-ovh"**) und **XXX** für die Referenz Ihrer Web Cloud Databases Instanz steht.
 >
 
-- *Port number*: Wenn Sie eine Datenbank verwenden, die in einem Webhosting inklusive ist, belassen Sie den Port bei **3306**. Wenn Sie Web Cloud Databases verwenden, lesen Sie die Informationen in **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/), um die richtige Port-Nummer abzurufen.
+- *Port number*: Wenn Sie eine Datenbank verwenden, die in einem Webhosting inklusive ist, belassen Sie den Port bei **3306**. Wenn Sie Web Cloud Databases verwenden, lesen Sie die Informationen in **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](/pages/web/hosting/cms_manual_installation), um die richtige Port-Nummer abzurufen.
 
-- *Table name prefix*: Wenn die Installation mit einer neuen Datenbank erfolgt, geben Sie ein Präfix Ihrer Wahl ein. Wenn Sie eine Datenbank eingeben, die bereits von einer anderen Website verwendet wird, lesen Sie die Informationen in **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/), um kein in Ihrer Datenbank bereits verwendetes Tabellenpräfix einzugeben.
+- *Table name prefix*: Wenn die Installation mit einer neuen Datenbank erfolgt, geben Sie ein Präfix Ihrer Wahl ein. Wenn Sie eine Datenbank eingeben, die bereits von einer anderen Website verwendet wird, lesen Sie die Informationen in **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](/pages/web/hosting/cms_manual_installation), um kein in Ihrer Datenbank bereits verwendetes Tabellenpräfix einzugeben.
 
 Klicken Sie auf `Save and Continue`{.action}.
 
