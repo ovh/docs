@@ -45,7 +45,7 @@ Durante um período de 3600 segundos (ou seja, 1 hora), a sua oferta de alojamen
 |Quantidade máxima de envio de e-mails por hora e por serviço|10|100|200|2000|
 
 - Para além das suspeitas de spamming ou phishing, a expedição dos seus e-mails poderá ser diferida. Os seus e-mails serão guardados numa fila de espera até que o número de e-mails enviados na hora anterior seja inferior ao limite.
-- Em caso de abuso ou de risco comprovado, o seu serviço será suspenso e ser-lhe-á enviado um e-mail a informá-lo da suspensão do serviço. O que fazer em caso de conta bloqueada por spam? Consulte [nosso guia](https://docs.ovh.com/pt/microsoft-collaborative-solutions/bloqueado-por-spam/).
+- Em caso de abuso ou de risco comprovado, o seu serviço será suspenso e ser-lhe-á enviado um e-mail a informá-lo da suspensão do serviço. O que fazer em caso de conta bloqueada por spam? Consulte [nosso guia](/pages/web/emails/locked_for_spam).
 
 ### Base de dados / SQL
 

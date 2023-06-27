@@ -45,7 +45,7 @@ Per un periodo di 3600 secondi (1 ora), la tua offerta di hosting ti permetterà
 |Quantità massima di invio di email per ora e per servizio|10|100|200|2000|
 
 - A parte spamming o phishing, la spedizione delle tue email può essere differita. Le tue email saranno conservate in coda fino a che il numero di email inviate nell'arco dell'ora è inferiore alla quota.
-- In caso di abuso o rischio accertato, il tuo servizio verrà sospeso e riceverai un'email di notifica della sospensione. Cosa fare in caso di account bloccato per Spam? [Consulta la nostra guida](https://docs.ovh.com/it/microsoft-collaborative-solutions/blocco-per-spam/).
+- In caso di abuso o rischio accertato, il tuo servizio verrà sospeso e riceverai un'email di notifica della sospensione. Cosa fare in caso di account bloccato per Spam? [Consulta la nostra guida](/pages/web/emails/locked_for_spam).
 
 ### Database/SQL
 

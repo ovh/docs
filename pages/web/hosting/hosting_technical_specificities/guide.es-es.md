@@ -45,7 +45,7 @@ En un período de 3600 segundos (es decir, 1 hora), su plan de hosting le permit
 |Cantidad máxima de envío de correo por hora y servicio|10|100|200|2000|
 
 - Aparte de las sospechas de spamming o phishing, el envío de los mensajes de correo podría aplazarse. Su correo se conservará en una cola de espera hasta que el número de mensajes enviados durante la hora anterior sea inferior al de tráfico.
-- En caso de abuso o riesgo comprobado, el servicio se suspenderá y usted recibirá una notificación por correo electrónico de la suspensión del servicio. ¿Qué hacer en caso de cuenta bloqueada por spam? Consulte [nuestra guía](https://docs.ovh.com/es/microsoft-collaborative-solutions/bloqueo-por-correo-no-deseado/).
+- En caso de abuso o riesgo comprobado, el servicio se suspenderá y usted recibirá una notificación por correo electrónico de la suspensión del servicio. ¿Qué hacer en caso de cuenta bloqueada por spam? Consulte [nuestra guía](/pages/web/emails/locked_for_spam).
 
 ### Bases de datos/SQL
 
