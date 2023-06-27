@@ -225,7 +225,7 @@ Para rescindir a sua oferta [Private Exchange](https://www.ovhcloud.com/pt/email
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 
-Para rescindir a sua oferta [Office 365 csp 1](https://www.ovhcloud.com/pt/collaborative-tools/microsoft-365/), siga as instruções deste [guia](https://docs.ovh.com/pt/microsoft-collaborative-solutions/encomendar-et-gerir-um-grupo-de-licen%C3%A7as-office-365-ovh/#gerir-as-suas-assinaturas).
+Para rescindir a sua oferta [Office 365 csp 1](https://www.ovhcloud.com/pt/collaborative-tools/microsoft-365/), siga as instruções deste [guia](/pages/web/microsoft-collaborative-solutions/office_csp1/#gerir-as-suas-assinaturas).
 
 #### Office 365 csp 2 <a name="office-csp2"></a>
 

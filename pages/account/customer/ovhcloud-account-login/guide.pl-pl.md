@@ -70,7 +70,7 @@ W tym przypadku nie można przeprowadzić resetu hasła ze strony logowania.
 
 Możesz skontaktować się z zespołem obsługi klienta OVHcloud 71 750 02 00, aby adres zapasowy stał się głównym adresem e-mail.
 
-Po przeprowadzeniu tego kroku należy [wpisać do Twojego konta **nowy** adres zapasowy](https://docs.ovh.com/pl/customer/identyfikator_klienta//#backup-email).
+Po przeprowadzeniu tego kroku należy [wpisać do Twojego konta **nowy** adres zapasowy](/pages/account/customer/all_about_username#backup-email).
 
 #### Jeśli nie masz zapasowego adresu e-mail lub adres ten jest również nieprawidłowy
 

@@ -39,7 +39,7 @@ Ist die Applikation Ihrem Account einmal zugewiesen, benötigen Sie keine Intern
 
 - [Zwei-Faktor-Authentifizierung per SMS aktivieren](/pages/account/customer/enable-2fa-with-sms).
 - [Zwei-Faktor-Authentifizierung per mobiler Applikation aktivieren](/pages/account/customer/enable-2fa-with-mobile-app).
-- [Zwei-Faktor-Authentifizierung per Sicherheitsschlüssel aktivieren](https://docs.ovh.com/de/customer/die-Zwei-Faktor-Authentifizierung-mit-Sicherheitsschl%C3%BCssel-aktivieren).
+- [Zwei-Faktor-Authentifizierung per Sicherheitsschlüssel aktivieren](/pages/account/customer/enable-2fa-with-security-key).
 
 Nach Hinzufügen der ersten Methode können Sie weitere Methoden hinzufügen, um mehrere Möglichkeiten zu haben, sich mit ihrem Konto zu verbinden.
 
