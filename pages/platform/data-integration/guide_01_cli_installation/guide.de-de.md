@@ -3,7 +3,7 @@ title: Data Integration - CLI - Installation
 excerpt: Learn how to install the Data Integration CLI
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-data-analytics-data-integration-cli-installation?id=kb_article_view&sysparm_article=KB0058598'
-updated: 2023-06-26
+updated: 2023-06-27
 ---
 
 ## Objective
@@ -23,17 +23,17 @@ Download the CLI corresponding to your operating system.
 
 ``` {.console}
 # Linux
-curl -s https://github.com/ovh/ovhdata-cli/releases/latest/download/ovhdata-cli-linux-amd64
+curl -s https://github.com/ovh/ovhdata-cli/releases/latest/download/ovhdata-cli_linux_amd64
 ```
 
 ``` {.console}
 # Mac
-curl -s https://github.com/ovh/ovhdata-cli/releases/latest/download/ovhdata-cli-darwin-amd64
+curl -s https://github.com/ovh/ovhdata-cli/releases/latest/download/ovhdata-cli_darwin_amd64
 ```
 
 ``` {.console}
 # Windows
-curl -s https://github.com/ovh/ovhdata-cli/releases/latest/download/ovhdata-cli-windows.exe
+curl -s https://github.com/ovh/ovhdata-cli/releases/latest/download/ovhdata-cli_windows_amd64.exe
 ```
 
 ### Step 2: Installing the CLI
