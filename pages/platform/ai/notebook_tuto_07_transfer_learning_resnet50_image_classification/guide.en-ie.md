@@ -61,7 +61,7 @@ First, you have to create 2 object containers in your OVHcloud **Object Storage*
 > To know more about how to **push your data to Object Storage**, please refer to the dedicated [documentation](/pages/platform/ai/cli_16_commands_reference_data).
 >
 
-Then, you can launch your notebook from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) or via the ovhai [CLI](https://docs.ovh.com/ie/en/publiccloud/ai/cli/getting-started-cli/).
+Then, you can launch your notebook from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) or via the ovhai [CLI](/pages/platform/ai/cli_11_howto_run_notebook_cli).
 
 ### Launching a Jupyter notebook with "Miniconda" via UI
 

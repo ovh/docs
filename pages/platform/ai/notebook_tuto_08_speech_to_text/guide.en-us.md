@@ -33,7 +33,7 @@ This documentation allows you to test and launch **3 AI Notebooks** allowing you
 
 ## Instructions
 
-You can launch your notebook from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) or via the ovhai [CLI](https://docs.ovh.com/us/en/publiccloud/ai/cli/getting-started-cli/).
+You can launch your notebook from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) or via the ovhai [CLI](/pages/platform/ai/cli_11_howto_run_notebook_cli).
 
 Direct link to the full code can be found [here](https://github.com/ovh/ai-training-examples/tree/main/notebooks/natural-language-processing/speech-to-text/miniconda).
 

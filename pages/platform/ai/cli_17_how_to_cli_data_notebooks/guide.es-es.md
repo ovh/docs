@@ -41,7 +41,7 @@ This command can be read as "Load the container `my-dataset` from the GRA region
 with `ro` (read-only) permissions".
 
 Wait a few seconds for the notebook to start, then you should see its URL in the output that you can access from your browser.
-You can read the [Getting started](https://docs.ovh.com/es/publiccloud/ai/cli/getting-started-cli/) page to know how to find this URL.
+You can read the [Getting started](/pages/platform/ai/cli_11_howto_run_notebook_cli) page to know how to find this URL.
 
 You should get a page like this, showing your dataset in the file explorer:
 

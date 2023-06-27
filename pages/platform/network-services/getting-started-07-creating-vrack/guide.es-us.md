@@ -18,7 +18,7 @@ El [vRack](https://www.ovh.com/world/es/soluciones/vrack/) OVHcloud es una soluc
 
 ## Requisitos
 
-- Tener un [proyecto de Public Cloud.](https://docs.ovh.com/us/es/public-cloud/crear_su_primer_proyecto_de_public_cloud/)
+- Tener un [proyecto de Public Cloud.](/pages/platform/public-cloud/create_a_public_cloud_project)
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 - Haber [creado un usuario de OpenStack](/pages/platform/public-cloud/create_and_delete_a_user) (opcional).
 - Conocimientos básicos de redes.

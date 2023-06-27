@@ -32,7 +32,7 @@ At the end of this tutorial, you will have learnt the principal methods to **seg
 
 ## Instructions
 
-You can launch the notebook from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) or via the ovhai [CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/getting-started-cli/).
+You can launch the notebook from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) or via the ovhai [CLI](/pages/platform/ai/cli_11_howto_run_notebook_cli).
 
 Direct link to the full code can be found [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-segmentation/tensorflow/brain-tumor-segmentation-unet/notebook_image_segmentation_unet.ipynb).
 

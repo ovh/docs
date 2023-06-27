@@ -2,7 +2,7 @@
 title: Logs Data Platform - Responsibility model
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/responsibility-model/'
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-responsibility-model?id=kb_article_view&sysparm_article=KB0050057'
 updated: 2023-01-26
 ---
 

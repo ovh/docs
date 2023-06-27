@@ -25,7 +25,7 @@ At the end of this tutorial, you will have learned to master **OVHcloud AI Noteb
 
 ## Instructions
 
-You can launch your notebook from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) or via the ovhai [CLI](https://docs.ovh.com/us/en/publiccloud/ai/cli/getting-started-cli/).
+You can launch your notebook from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) or via the ovhai [CLI](/pages/platform/ai/cli_11_howto_run_notebook_cli).
 
 ### Launching a Jupyter notebook with "Miniconda" via UI
 

@@ -31,7 +31,7 @@ Before following this tutorial, please refer to these guides:
 
 * [Guide for creating a Public Cloud Instance](/pages/platform/public-cloud/public-cloud-first-steps)
 * [Guide for creating Object Storage on the Public Cloud platform](/pages/cloud/storage/object_storage/pcs_create_container)
-* [Guide for creating and configuring an addition disk on a Public Cloud Instance](https://docs.ovh.com/ie/en/public-cloud/configure-an-additional-volume/)
+* [Guide for creating and configuring an addition disk on a Public Cloud Instance](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
 
 
 ## Requirements
