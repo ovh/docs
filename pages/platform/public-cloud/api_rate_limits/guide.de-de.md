@@ -1,59 +1,63 @@
 ---
-title: 'Durchsatzlimits der Public Cloud APIs'
-excerpt: Entdecken Sie die Grenzen und Einschränkungen der Public Cloud API
+title: 'Durchsatzlimits der Public Cloud API'
+excerpt: Erfahren Sie hier Details zu Rate Limits und Nutzungsbeschränkungen der Public Cloud API
 updated: 2023-06-23
 ---
 
-## Was ist ein Durchsatzlimit?
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
+
+## Was sind Rate Limits?
 
 Ein Durchsatzlimit ist eine Einschränkung, die von der API auf die Anzahl der Anforderungen angewendet wird, die ein Client über einen bestimmten Zeitraum an die API stellen kann.
 
-## Warum Beschränkungen?
+## Warum Nuzungsbeschränkungen?
 
 Durchsatzlimits sind gängige Praxis für APIs. Sie werden aus verschiedenen Gründen eingerichtet:
 
-- Sie helfen uns, das API-Backend vor Missbrauch oder Missbrauch der API zu schützen.
-- Sie garantieren eine höhere Dienstqualität auf der API durch einen fairen Zugang zur API.
+- Sie helfen, das API-Backend vor Missbrauch sowie Fehlnutzung der API zu schützen.
+- Sie garantieren eine höhere Dienstqualität bei der API-Nutzung, indem der faire Zugang zur API erhalten wird.
 
-Beispielsweise kann ein fehlerhaftes oder falsch optimiertes Skript versuchen, die API übermäßig zu verwenden, was zu Leistungsproblemen beim API-Backend führen kann. 
+Beispielsweise kann ein fehlerhaftes oder schlecht optimiertes Skript versuchen, die API übermäßig zu beanspruchen, was zu Leistungsproblemen beim API-Backend führen kann. 
 
-Durch die Festlegung von Durchsatzlimits stellen wir sicher, dass die API eine reibungslose und konsistente Erfahrung für alle Kunden gewährleistet.
+Durch die Festlegung von Durchsatzlimits stellen wir sicher, dass die API einen reibungslosen und konsistenten Betrieb für alle Nutzer beibehalten kann.
 
 ## Was sind die Durchsatzlimits für unsere API?
 
 ### Keystone (OpenStack Identity API)
 
-Wir setzen Durchsatzlimits auf Benutzerebene ein**OpenStack**.
+Wir setzen Durchsatzlimits auf der Ebene von OpenStack-**Benutzern** ein.
 
-Ein Benutzer kann **60 Anfragen pro Minute** stellen, bevor er eine HTTP 429 Antwort erhält.
+Ein User kann **60 Anfragen pro Minute** stellen, bevor er eine *HTTP 429* Antwort erhält.
 
-### Nova (OpenStack Computing-API)
+### Nova (OpenStack Compute API)
 
-Wir setzen Durchsatzlimits auf **Projekt** OpenStack-Ebene.
+Wir setzen Durchsatzlimits auf der Ebene von OpenStack-**Projekten** ein.
 
-Ein Projekt kann **20 Anfragen pro Sekunde** durchführen, bevor es eine HTTP 429 Antwort erhält.
+Ein Projekt kann **20 Anfragen pro Sekunde** stellen, bevor es eine *HTTP 429* Antwort erhält.
 
-### Neutron (OpenStack Netzwerk-API)
+### Neutron (OpenStack Network API)
 
-Wir setzen Durchsatzlimits auf **Projekt** OpenStack-Ebene.
+Wir setzen Durchsatzlimits auf der Ebene von OpenStack-**Projekten** ein.
 
-Ein Projekt kann **20 Anfragen pro Sekunde** durchführen, bevor es eine HTTP 429 Antwort erhält.
+Ein Projekt kann **20 Anfragen pro Sekunde** stellen, bevor es eine *HTTP 429* Antwort erhält.
 
-### Glance (OpenStack Image-API)
+### Glance (OpenStack Image API)
 
-Wir setzen Durchsatzlimits auf **Projekt** OpenStack-Ebene.
+Wir setzen Durchsatzlimits auf der Ebene von OpenStack-**Projekten** ein.
 
-Ein Projekt kann **20 Anfragen pro Sekunde** durchführen, bevor es eine HTTP 429 Antwort erhält.
+Ein Projekt kann **20 Anfragen pro Sekunde** stellen, bevor es eine *HTTP 429* Antwort erhält.
 
-### Cinder (API für OpenStack-Berechnungen)
+### Cinder (OpenStack Compute API)
 
-Wir setzen Durchsatzlimits auf **Projekt** OpenStack-Ebene.
+Wir setzen Durchsatzlimits auf der Ebene von OpenStack-**Projekten** ein.
 
-Ein Projekt kann **20 Anfragen pro Sekunde** durchführen, bevor es eine HTTP 429 Antwort erhält.
+Ein Projekt kann **20 Anfragen pro Sekunde** stellen, bevor es eine *HTTP 429* Antwort erhält.
 
 ## Wie funktionieren Durchsatzlimits?
 
-Wenn Sie zu viele Tokenanforderungen an Keystone (die Identitäts-API) stellen oder zu viele Anforderungen an einen API-Endpunkt wie Nova (die Berechnungs-API) senden, beginnt der Endpunkt mit einem **HTTP 429** Antwortcode, der ein JSON-Objekt wie dieses enthält:
+Wenn Sie zu viele Token bei Keystone (der Identity API) anfordern oder zu viele Anfragen an einen API-Endpunkt, etwa Nova (Compute API) senden, wird der Endpunkt mit einem Antwortcode vom Typ **HTTP 429** antworten, der ein JSON-Objekt wie dieses enthält:
 
 ```json
 {
@@ -64,37 +68,37 @@ Wenn Sie zu viele Tokenanforderungen an Keystone (die Identitäts-API) stellen o
 }
 ```
 
-## Wie stelle ich sicher, dass du nicht zu viele Anfragen durchführst?
+## Wie kann man verhindern, zu viele Anfragen durchzuführen?
 
-Es wird empfohlen, die Anzahl der API-Aufrufe durch die Automatisierung zu reduzieren, um das Durchsatzlimit des Endpunkts zu unterschreiten.
+Es wird empfohlen, die Anzahl der API-Aufrufe Ihrer Automatisierung zu reduzieren, um unter dem Durchsatzlimit des Endpunkts zu bleiben.
 
 In der Regel kann diese Situation auftreten, wenn Sie mehrere Abfragen parallel ausführen (mit mehreren Prozessen oder Threads).
 
-Es gibt mehrere Möglichkeiten, die Effizienz der Automatisierung zu verbessern, z. B. das Zwischenspeichern oder die Verwendung von Mechanismen zum Abbrechen von Versuchen (*retry backoffs*).
+Es gibt mehrere Möglichkeiten, die Effizienz der Automatisierung zu verbessern, etwa mit Caching oder der Verwendung von Mechanismen zum Abbrechen wiederholter Aufruf-Versuche (*Retry Backoff*).
 
 ### Cache verwenden
 
-Eine Möglichkeit, die Anzahl der Aufrufe zu reduzieren, ist die Verwendung des Caches.
+Eine Möglichkeit, die Anzahl der Aufrufe zu reduzieren, ist die Verwendung des Cache.
 
-Ein Keystone-Token ist beispielsweise 24 Stunden nach seiner Ausstellung gültig. Sie können einen einzelnen Token anfordern, im Cache speichern und diesen den ganzen Tag lang wiederverwenden!
+Beispiel: Ein Keystone-Token ist 24 Stunden nach seiner Ausstellung gültig. Sie können einen Token anfordern, im Cache speichern und ihn für den gesamten Tag einsetzen.
 
-### *retry backoff* implementieren
+### *Retry Backoff* implementieren
 
-Wenn Sie wirklich regelmäßig Informationen von der API abrufen möchten, können Sie eine Automatisierung der Abfragewiederholung in Verbindung mit einer zufälligen exponentiellen Deaktivierung implementieren.
+Wenn es notwendig ist, regelmäßig Informationen über die API zu beziehen, können Sie eine automatische Abfragewiederholung in Verbindung mit *Exponential Backoff*  implementieren.
 
-Wenn Sie den Vorgang mit einer exponentiellen Deaktivierungsfunktion wiederholen, wird bei einem Ratenlimitfehler ein kurzer Standbymodus ausgeführt, und die fehlgeschlagene Anforderung wird wiederholt.<br>
-Wenn die Anforderung erneut fehlschlägt, wird die Standbydauer erhöht und der Vorgang wiederholt.<br>
-Dieser Vorgang wird so lange fortgesetzt, bis die Anforderung abgeschlossen ist oder die maximale Anzahl von Wiederholungen erreicht wurde.
+*Retry*-Abfragen mit *Exponential Backoff* einzusetzen, bedeutet, bei Erreichen eines *Rate Limits* wird zunächst eine kurzer *Sleep*-Zeitraum abgewartet, bevor der gescheiterte Anfrageversuch wiederholt wird.<br>
+Wenn die Anfrage erneut fehlschlägt, wird die *Sleep*-Dauer verlängert und der Vorgang wiederholt.<br>
+Dieser Prozess wird so lange fortgesetzt, bis die Anfrage erfolgreich ist oder die maximale Anzahl von Wiederholungsanfragen erreicht wird.
 
 Dieser Ansatz hat viele Vorteile:
 
-- Automatische Wiederholungsversuche ermöglichen die Wiederherstellung von Durchsatzlimitfehlern ohne Blockierung oder Datenverlust;
-- Die exponentielle Deaktivierung ermöglicht es Ihnen, Ihre ersten Versuche schnell durchzuführen und dabei von längeren Verzögerungen zu profitieren, falls Ihre ersten Versuche fehlschlagen;
-- Durch das Hinzufügen einer zufälligen Verzögerung wird verhindert, dass alle Versuche gleichzeitig ausgeführt werden.
+- Automatische Wiederholungsversuch ermöglichen es, den Betrieb bei Durchsatzlimitfehlern fortzuführen, ohne Abstürze oder Datenverlust.
+- *Exponential Backoff* ermöglicht es, die ersten Wiederholungsversuche schnell durchzuführen und falls diese fehlschlagen, weitere Anfrageversuche zu späteren Zeitpunkten auszuführen.
+- Das Hinzufügen von randomisiertem *Jitter* zur Verzögerung verhindert, dass alle Versuche gleichzeitig Anfragen senden.
 
-Bitte beachten Sie, dass nicht erfolgreiche Anfragen nicht in die Berechnung Ihres Durchsatzlimits einfließen. Daher könnte die fortgesetzte Weiterleitung einer Anfrage funktionieren, aber wir könnten dieses Verhalten in Zukunft ändern. Wir empfehlen Ihnen, diesem Mechanismus nicht zu vertrauen.
+Beachten Sie, dass erfolglose Anfragen nicht in die Berechnung Ihres Durchsatzlimits einfließen, weshalb das wiederholte Senden einer Anfrage derzeit funktioniert. Jedoch ist dieses Verhalten nicht für die Zukunft garantiert. Wir empfehlen deshalb, nicht auf diese Vorgehensweise zu vertrauen.
 
-Im Folgenden finden Sie einige Beispiele für bekannte Bibliotheken zum Implementieren der *retry backoff*-Funktion in Python:
+Im Folgenden finden Sie Beispiele für etablierte Bibliotheken zur Implementierung von *Retry Backoff* in Python:
 
 - Tenacity: <https://pypi.org/project/tenacity/>
 - Backoff: <https://pypi.org/project/backoff/>
