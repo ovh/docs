@@ -1,8 +1,6 @@
 ---
 title: 'Dostosuj swoją chmurę prywatną (Private Cloud) do certyfikacji HDS lub PCI DSS'
-slug: aktywuj-opcje-hds-hipp-lub-pci-dss
 excerpt: 'Odkryj, jak dostosować swoją chmurę prywatną do certyfikacji HDS lub PCI DSS'
-section: 'Usługi i opcje OVHcloud'
 updated: 2020-05-27
 ---
 
@@ -33,13 +31,13 @@ Jeśli pożądana opcja nie jest aktywna, włącz ją, klikając przycisk `...`{
 
 - **Opcje [NSX](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/){.external} i [vROps](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/){.external} muszą być zainstalowane**\: z poziomu karty `Informacje ogólne`{.action} w sekcji „Opcje chmury prywatnej” możesz sprawdzić stan aktywacji tych opcji. Jeśli nie są aktywne, naciśnij przycisk `...`{.action}, a następnie `Aktywuj`{.action}, aby je włączyć.
 
-- **Dostęp do vCenter musi być ograniczony**: w karcie „Bezpieczeństwo”  możesz sprawdzić politykę dostępu. Jeśli nie wyświetla się ona jako ograniczona („Restricted”), włącz ograniczenia dostępu, klikając przycisk `Polityka dostępu do vCenter`{.action}, a następnie przechodząc przez kolejne etapy procedury. Więcej informacji na jej temat znajdziesz w dokumentacji „[Prezentacja Panelu klienta Private Cloud](../manager-ovh-private-cloud/)”.
+- **Dostęp do vCenter musi być ograniczony**: w karcie „Bezpieczeństwo”  możesz sprawdzić politykę dostępu. Jeśli nie wyświetla się ona jako ograniczona („Restricted”), włącz ograniczenia dostępu, klikając przycisk `Polityka dostępu do vCenter`{.action}, a następnie przechodząc przez kolejne etapy procedury. Więcej informacji na jej temat znajdziesz w dokumentacji „[Prezentacja Panelu klienta Private Cloud](/pages/cloud/private-cloud/manager_ovh_private_cloud)”.
 
-- **Musisz dysponować co najmniej jednym adresem IP uprawnionym do dostępu do vCenter**: przejdź do karty „Bezpieczeństwo” i upewnij się, że masz co najmniej jeden uprawniony adres IP. W razie konieczności użyj przycisku `Dodaj adresy IP`{.action}. Więcej informacji na jej temat znajdziesz w dokumentacji „[Prezentacja Panelu klienta Private Cloud](../manager-ovh-private-cloud/)”.
+- **Musisz dysponować co najmniej jednym adresem IP uprawnionym do dostępu do vCenter**: przejdź do karty „Bezpieczeństwo” i upewnij się, że masz co najmniej jeden uprawniony adres IP. W razie konieczności użyj przycisku `Dodaj adresy IP`{.action}. Więcej informacji na jej temat znajdziesz w dokumentacji „[Prezentacja Panelu klienta Private Cloud](/pages/cloud/private-cloud/manager_ovh_private_cloud)”.
 
 Zalecamy posiadanie co najmniej dwóch uprawnionych adresów IP, aby zawsze móc się połączyć. Z oczywistych względów związanych z dostępnością, muszą one być stałe, a nie dynamiczne.
 
-- **Dane użytkownika „admin” są kompletne, a on sam ma dysponuje niezbędnym uprawnieniem**\: w karcie „Użytkownicy”  upewnij się, że w przypadku użytkownika „admin” podano numer telefonu i adres e-mail, a dodatkowo posiada on uprawnienie „**token validator**”. W razie potrzeby można dostosować właściwości użytkownika – wystarczy kliknąć przycisk `...`{.action}, a następnie `Edytuj`{.action}. Nasza dokumentacja „[Prezentacja panelu klienta Private Cloud OVH](../manager-ovh-private-cloud/#uzytkownicy)” zawiera więcej informacji na ten temat.
+- **Dane użytkownika „admin” są kompletne, a on sam ma dysponuje niezbędnym uprawnieniem**\: w karcie „Użytkownicy”  upewnij się, że w przypadku użytkownika „admin” podano numer telefonu i adres e-mail, a dodatkowo posiada on uprawnienie „**token validator**”. W razie potrzeby można dostosować właściwości użytkownika – wystarczy kliknąć przycisk `...`{.action}, a następnie `Edytuj`{.action}. Nasza dokumentacja „[Prezentacja panelu klienta Private Cloud OVH](/pages/cloud/private-cloud/manager_ovh_private_cloud#uzytkownicy)” zawiera więcej informacji na ten temat.
 
 Zalecamy posiadanie co najmniej dwóch kont użytkownika z wymaganymi danymi i uprawnieniami (z różnymi adresami e-mail i numerami telefonu), aby zawsze móc połączyć się z vCenter.
 
@@ -67,7 +65,7 @@ Jak wspomniano powyżej, jako zabezpieczenie po aktywacji opcji bezpieczeństwa:
 
 Przypominamy, że dostęp do interfejsu będzie możliwy dopiero po aktywacji opcji bezpieczeństwa.
 
-Należy kliknąć link zawarty w przesłanym e-mailu i zalogować się do bezpiecznego interfejsu. Link ten powinien wyglądać mniej więcej tak: „https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/password-lost” Po zalogowaniu się możesz zmienić hasło użytkownika „admin”, a następnie dodatkowych użytkowników. Zapoznaj się z dokumentacją „[Korzystanie z bezpiecznego interfejsu](../bezpieczny-interfejs/)”, aby uzyskać szczegółowe instrukcje.
+Należy kliknąć link zawarty w przesłanym e-mailu i zalogować się do bezpiecznego interfejsu. Link ten powinien wyglądać mniej więcej tak: „https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/password-lost” Po zalogowaniu się możesz zmienić hasło użytkownika „admin”, a następnie dodatkowych użytkowników. Zapoznaj się z dokumentacją „[Korzystanie z bezpiecznego interfejsu](/pages/cloud/private-cloud/interface-secure)”, aby uzyskać szczegółowe instrukcje.
 
 ## Sprawdź również
 

@@ -1,8 +1,6 @@
 ---
 title: 'Zarządzanie książkami adresowymi SMS'
-slug: zarzadzanie-ksiazkami-adresowymi-sms
 excerpt: 'Dowiedz się, jak utworzyć książkę adresową SMS na Twoim koncie OVHcloud'
-section: 'Zarządzanie ofertą'
 updated: 2022-08-05
 ---
 

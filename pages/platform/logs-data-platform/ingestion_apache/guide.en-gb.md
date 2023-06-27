@@ -1,9 +1,6 @@
 ---
 title: Pushing logs from software - Apache
-slug: logs-data-platform-apache-logs
-order: 03
 excerpt: Get to know what is happening on your websites in real time.
-section: Use cases
 updated: 2020-07-27
 ---
 
@@ -179,6 +176,6 @@ The complete procedure of its installation is described [on this page](/pages/pl
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/gb/en/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

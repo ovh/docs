@@ -1,10 +1,7 @@
 ---
 title: 'Delegue a gestão das suas contas de e-mail a outra pessoa'
 legacy_guide_number: 1933
-slug: delegar-gestao-emails
 excerpt: 'Saiba como delegar a gestão das contas de e-mail da sua oferta MX Plan'
-section: 'Funcionalidades dos endereços e-mail'
-order: 05
 updated: 2021-10-08
 ---
 
@@ -84,6 +81,6 @@ Introduza o identificador OVHcloud que beneficiará desta delegação e valide a
 
 ## Saiba mais
 
-[Primeiros passos com a oferta MX Plan](https://docs.ovh.com/pt/emails/partilhado_generalidades_e-mail_partilhado_ovh/)
+[Primeiros passos com a oferta MX Plan](/pages/web/emails/email_generalities)
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

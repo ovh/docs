@@ -1,9 +1,6 @@
 ---
 title: 'Configurer un serveur vocal interactif (SVI)'
-slug: svi-serveur-vocal-interactif
 excerpt: "Découvrez comment configurer un serveur vocal interactif depuis l'espace client OVHcloud"
-section: 'Numéros ou alias'
-order: 6
 updated: 2022-08-04
 ---
 
@@ -25,7 +22,7 @@ L'exemple le plus courant consiste à orienter un appelant entre plusieurs servi
 
 > [!primary]
 >
-> Consultez notre guide « [Choisir et appliquer une configuration pour un numéro](../quelle-configuration-est-adaptee-a-mes-besoins/) » pour plus de détails sur les différentes configurations applicables à un numéro alias.
+> Consultez notre guide « [Choisir et appliquer une configuration pour un numéro](/pages/telecom/voip/quelle_configuration_est_adaptee_a_mes_besoins) » pour plus de détails sur les différentes configurations applicables à un numéro alias.
 >
 
 ## En pratique
@@ -38,7 +35,7 @@ Assurez-vous que celui-ci est bien configuré en tant que « Serveur Vocal Inte
 
 - **le numéro est configuré en tant que « Serveur Vocal Interactif »** : cliquez alors sur `Paramétrer la configuration`{.action} et poursuivez la lecture de cette documentation ;
 
-- **le numéro n'est pas configuré en tant que « Serveur Vocal Interactif »** : vous devez au préalable le configurer correctement avant de poursuivre cette documentation. Reportez-vous à notre guide « [Choisir et appliquer une configuration pour un numéro](../quelle-configuration-est-adaptee-a-mes-besoins/) » si nécessaire.
+- **le numéro n'est pas configuré en tant que « Serveur Vocal Interactif »** : vous devez au préalable le configurer correctement avant de poursuivre cette documentation. Reportez-vous à notre guide « [Choisir et appliquer une configuration pour un numéro](/pages/telecom/voip/quelle_configuration_est_adaptee_a_mes_besoins) » si nécessaire.
 
 ![sviconfiguration](images/svi-1.png){.thumbnail}
 
@@ -163,7 +160,7 @@ Lorsqu'une ou plusieurs conditions sont ajoutées à une étape, celles-ci doive
 
 > [!success]
 >
-> Vous pouvez ainsi faire en sorte que votre SVI se déclenche uniquement lors de vos horaires d'ouverture. En dehors de ces horaires, vous pouvez, par exemple, diffuser un son rappelant les horaires d'ouverture de votre entreprise ou déclencher le [répondeur d'une ligne SIP OVHcloud](../configurer-consulter-repondeur-ligne-ovh/).
+> Vous pouvez ainsi faire en sorte que votre SVI se déclenche uniquement lors de vos horaires d'ouverture. En dehors de ces horaires, vous pouvez, par exemple, diffuser un son rappelant les horaires d'ouverture de votre entreprise ou déclencher le [répondeur d'une ligne SIP OVHcloud](/pages/telecom/voip/configurer-consulter-repondeur-ligne-ovh).
 >
 
 Pour ajouter une condition à une étape, ouvrez le menu de l'étape via le bouton `...`{.action}, puis choisissez `Configuration avancée`{.action}.

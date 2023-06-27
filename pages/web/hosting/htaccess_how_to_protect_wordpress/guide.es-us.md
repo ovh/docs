@@ -1,13 +1,10 @@
 ---
 title: "Tutorial - Utilizar el archivo htaccess con WordPress"
-slug: use-htaccess-with-wordpress
 excerpt: "Descubra cómo proteger su blog WordPress con uno o más archivos htaccess"
-section: 'Tutoriales'
-order: 022
-updated: 2023-03-08
+updated: 2023-06-22
 ---
 
-**Última actualización: 08/03/2023**
+**Última actualización: 22/06/2023**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -29,13 +26,24 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 ## Requisitos
 
 - Tener un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/) y haber instalado WordPress.
-- Estar en condiciones de utilizar un cliente FTP como [FileZilla](https://filezilla-project.org/). Puede consultar nuestra guía "[Utilizar FileZilla](https://docs.ovh.com/us/es/hosting/web_hosting_guia_de_uso_de_filezilla/)".
+- Estar en condiciones de utilizar un cliente FTP como [FileZilla](https://filezilla-project.org/). Puede consultar nuestra guía "[Utilizar FileZilla](/pages/web/hosting/ftp_filezilla_user_guide)".
 
 Los archivos **.htaccess** se pueden crear y modificar con editores de texto como:
 
 - [Bloc de notas](https://support.microsoft.com/es-es/windows/ayuda-en-el-bloc-de-notas-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} de Windows;
 - [TextEdit](https://support.apple.com/es-us/guide/textedit/welcome/mac){.external} en macOS 
 - [Notepad++](https://notepad-plus-plus.org/){.external}.
+
+> [!primary]
+>
+> Las soluciones de seguridad propuestas a continuación no son exhaustivas.
+>
+> Por ejemplo, si utiliza otro **C**onent **M**anagement **S**ystem (**CMS**) que WordPress, existen otras soluciones de seguridad.
+>
+Si no utiliza un CMS, OVHcloud pone a su disposición un tutorial sobre la [protección de un directorio o de la interfaz de administración de su sitio web a través de ficheros .htaccess](/pages/web/hosting/htaccess_protect_directory_by_password).
+>
+> Para cualquier duda relativa a la creación, el uso o la programación de su sitio web, contacte con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o nuestros [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/). El equipo de soporte de OVHcloud no podrá ayudarle en estos asuntos.
+>
 
 ## FAQ
 
@@ -108,7 +116,7 @@ Añadir o modificar directrices en el archivo de configuración **wp-config.php*
 
 > [!warning]
 >
-> Antes de seguir los pasos que se indican a continuación, deberá redirigir el protocolo HTTP a HTTPS. Para ello, siga las indicaciones de nuestra guía ["Habilitar HTTPS en un sitio web con certificado SSL"](https://docs.ovh.com/us/es/hosting/activar-https-en-un-sitio-web-con-ssl/#1-activar-el-certificado-ssl-en-el-alojamiento-web).
+> Antes de seguir los pasos que se indican a continuación, deberá redirigir el protocolo HTTP a HTTPS. Para ello, siga las indicaciones de nuestra guía ["Habilitar HTTPS en un sitio web con certificado SSL"](/pages/web/hosting/ssl-activate-https-website#1-activar-el-certificado-ssl-en-el-alojamiento-web).
 
 ### Impedir la visualización de directorios y subdirectorios
 
@@ -143,7 +151,7 @@ Si ha identificado una dirección IP maliciosa, introduzca la siguiente línea e
 
 En este ejemplo, `xxx.xxx.xxx.xxx` designa la dirección IP que desea bloquear.
 
-Para más información, consulte nuestra guía sobre la [restricción de acceso por IP a través del archivo .htaccess](https://docs.ovh.com/us/es/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+Para más información, consulte nuestra guía sobre la [restricción de acceso por IP a través del archivo .htaccess](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
 #### Bloquear una dirección IP desde el directorio wp-admin (o en los demás directorios)
 

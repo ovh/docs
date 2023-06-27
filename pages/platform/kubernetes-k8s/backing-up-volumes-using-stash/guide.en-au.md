@@ -1,9 +1,6 @@
 ---
 title: Backing-up Persistent Volumes using Stash
 excerpt: Backing-up Persistent Volumes using Stash
-slug: backing-up-volumes-using-stash
-section: 'Backup and Restore'
-order: 05
 updated: 2022-09-26
 ---
 
@@ -19,8 +16,7 @@ updated: 2022-09-26
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -41,9 +37,9 @@ We are using our Public Cloud's Swift Object Storage with the Swift S3 API as st
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/platform/kubernetes-k8s/deploying-hello-world).
 
-You also need to have [Helm](https://docs.helm.sh/) installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/) installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/platform/kubernetes-k8s/installing-helm) tutorial.
 
 ---
 
@@ -56,9 +52,9 @@ In this section you will create your S3 bucket on Swift.
 
 Before creating your S3 bucket you need to:
 
-- [Prepare your environement to use the OpenStack API](../../public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- [Prepare your environement to use the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
 
-- [Get Openstack RC File v3 from Horizon](../../public-cloud/access_and_security_in_horizon/)
+- [Get Openstack RC File v3 from Horizon](/pages/platform/public-cloud/access_and_security_in_horizon)
 
 You should now have access to your OpenStack RC file, with a filename like `<user_name>-openrc.sh`, and the username and password for your OpenStack account.
 

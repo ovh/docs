@@ -1,8 +1,6 @@
 ---
 title: 'Zmiana hasła administratora na serwerze dedykowanym z systemem Windows'
-slug: "zmiana-hasla-admin-windows"
 excerpt: 'Dowiedz się, jak zmienić hasło administratora na serwerze dedykowanym z systemem Windows'
-section: 'Diagnostyka i tryb Rescue'
 updated: 2021-01-12
 ---
 
@@ -14,7 +12,7 @@ updated: 2021-01-12
 
 ## Wprowadzenie
 
-Podczas instalacji lub reinstalacji systemu operacyjnego Windows otrzymujesz hasło administratora. Rekomendujemy jego zmianę zgodnie z instrukcją zawartą w przewodniku o bezpieczeństwie [serwera dedykowanego](../porady-zabezpieczanie-serwera-dedykowanego/). Jeśli utraciłeś hasło administratora, zresetuj je w trybie Rescue.
+Podczas instalacji lub reinstalacji systemu operacyjnego Windows otrzymujesz hasło administratora. Rekomendujemy jego zmianę zgodnie z instrukcją zawartą w przewodniku o bezpieczeństwie [serwera dedykowanego](/pages/cloud/dedicated/securing-a-dedicated-server). Jeśli utraciłeś hasło administratora, zresetuj je w trybie Rescue.
 
 **Niniejszy przewodnik ułatwi Ci przeprowadzenie przez cały proces zmiany hasła administratora Twojego serwera poprzez konfiguracje trybu Rescue dostępne dla systemu operacyjnego Windows.**
 
@@ -45,7 +43,7 @@ Po zakończeniu modyfikacji kliknij `...`{.action} po prawej stronie "Status" w 
 
 ![rescuereboot](images/adminpw_win_02.png){.thumbnail}
 
-Więcej informacji o trybie Rescue znajdziesz w [tym przewodniku](../ovh-rescue/).
+Więcej informacji o trybie Rescue znajdziesz w [tym przewodniku](/pages/cloud/dedicated/rescue_mode).
 
 ### Etap 2: montowanie partycji systemu
 
@@ -302,7 +300,7 @@ Po zakończeniu modyfikacji kliknij `...`{.action} po prawej stronie "Status" w 
 
 ![rescuereboot](images/adminpw_win_02.png){.thumbnail}
 
-Więcej informacji o trybie Rescue znajdziesz w [tym przewodniku](../ovh-rescue/).
+Więcej informacji o trybie Rescue znajdziesz w [tym przewodniku](/pages/cloud/dedicated/rescue_mode).
 
 #### Etap 2: usuń aktualne hasło
 
@@ -336,8 +334,8 @@ Przejdź do opisu operacji [5: zdefiniować nowe hasło (IPMI)](./#etap-5-zdefin
 
 ## Sprawdź również
 
-[Uruchamianie i korzystanie z trybu Rescue](../ovh-rescue/)
+[Uruchamianie i korzystanie z trybu Rescue](/pages/cloud/dedicated/rescue_mode)
 
-[Korzystanie z IPMI dla serwerów dedykowanych](../uzywanie-ipmi-serwery-dedykowane/)
+[Korzystanie z IPMI dla serwerów dedykowanych](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -1,8 +1,6 @@
 ---
 title: Pool creation
-slug: ceph/create-a-pool
 excerpt: Ce qui vous présente comment créer un pool en utilisant l'interface Web.
-section: Cloud Disk Array
 updated: 2018-03-26
 ---
 

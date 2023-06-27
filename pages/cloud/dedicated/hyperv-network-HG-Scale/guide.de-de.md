@@ -1,17 +1,14 @@
 ---
 title: 'Netzwerk auf Windows Server mit Hyper-V für die High Grade & SCALE Reihen konfigurieren'
-slug: hyperv-network-hg-scale
 excerpt: 'Erfahren Sie, wie Sie das Netzwerk auf Windows Server mit Hyper-V für die High Grade & SCALE Reihen konfigurieren'
-section: 'Fortgeschrittene Nutzung'
-order: 5
-updated: 2021-11-15
+updated: 2023-06-20
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 15.11.2021**
+**Letzte Aktualisierung am 20.06.2023**
 
 ## Ziel
 
@@ -180,7 +177,7 @@ Wenn Sie alle Adressen angegeben haben, klicken Sie auf `OK`{.action}, um das Ei
 
 > [!warning]
 >
-> Dieser Schritt kann zu einem Verbindungsabbruch führen. Sollte dies der Fall sein, loggen Sie sich via [IPMI](https://docs.ovh.com/de/dedicated/verwendung-ipmi-dedicated-server/) ein und ändern Sie die Konfiguration erneut. Sie werden feststellen, dass der Eintrag zum Standardgateway fehlt. Fügen Sie das Gateway 100.64.0.1 wieder hinzu.
+> Dieser Schritt kann zu einem Verbindungsabbruch führen. Sollte dies der Fall sein, loggen Sie sich via [IPMI](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers) ein und ändern Sie die Konfiguration erneut. Sie werden feststellen, dass der Eintrag zum Standardgateway fehlt. Fügen Sie das Gateway 100.64.0.1 wieder hinzu.
 >
 
 #### Statische Route hinzufügen
@@ -199,7 +196,7 @@ Interface List
 ```
 
 In diesem Beispiel hat der Hyper-V-Adapter die ID "22".<br>
-Merken Sie sich diese ID und führen Sie dann den Befehl `route add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0 si 22` aus. (Verwenden Sie hierbei jeweils Ihre IP-Adresse und die zuvor abgerufene ID statt der Beispielwerte).<br>
+Merken Sie sich diese ID und führen Sie dann den Befehl `route add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0 if 22` aus. (Verwenden Sie hierbei jeweils Ihre IP-Adresse und die zuvor abgerufene ID statt der Beispielwerte).<br>
 Sie sollten dann als Antwortausgabe bekommen: "OK!"
 
 ```powershell

@@ -1,9 +1,6 @@
 ---
 title: Installation of OVHcloud Connect Direct from the OVHcloud Control Panel
 excerpt: Find out how to set up your OVHcloud Connect Direct solution via the OVHcloud Control Panel
-slug: occ-direct-manager-setup
-section: Getting started
-order: 2
 updated: 2020-09-28
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-network-ovhcloud-connect-occ-direct-control-panel-setup?id=kb_article_view&sysparm_article=KB0045226'

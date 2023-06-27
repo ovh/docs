@@ -1,11 +1,8 @@
 ---
 title: Configure your advanced configuration
 excerpt: Advanced configuration for Public Cloud Databases engines
-slug: advanced-configuration
-section: General guides
-order: 030
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/advanced-configuration/'
+    canonical: '/pages/platform/databases/databases_03_advanced_configuration'
 updated: 2022-04-01
 ---
 
@@ -31,7 +28,7 @@ Public cloud database engines are managed services, which means that they are no
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/de/public-cloud/) in your OVHcloud account   
-- A database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/de/publiccloud/databases/getting-started/) can help you to meet this requirement)   
+- A database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)   
 - Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) or to the [OVHcloud API](https://api.ovh.com/)   
 
 
@@ -71,7 +68,7 @@ When ready, click on `Update advanced configuration`{.action}.
 
 > [!primary]
 >
-> If you are not familiar with using the OVHcloud API, please refer to our guide on [First Steps with the OVHcloud APIs](https://docs.ovh.com/de/api/first-steps-with-ovh-api/).
+> If you are not familiar with using the OVHcloud API, please refer to our guide on [First Steps with the OVHcloud APIs](/pages/account/api/first-steps).
 >
 
 #### Get your service and cluster IDs
@@ -282,7 +279,7 @@ You can check the changes in different ways such as:
 
 ![pgAmin check advanced configuration](images/04_advanced_configuration-20220405153051913.png){.thumbnail}
 
-*Follow this [guide](https://docs.ovh.com/de/publiccloud/databases/postgresql/connect-pgadmin/) to learn more about pgAdmin*
+*Follow this [guide](/pages/platform/databases/postgresql_06_connect_pgadmin) to learn more about pgAdmin*
 
 
 ## We want your feedback!

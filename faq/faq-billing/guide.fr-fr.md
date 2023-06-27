@@ -16,7 +16,7 @@ La liste des contacts de vos services est disponible dans la rubrique `Mes conta
 
 #### Trucs et astuces
 
-Si vous souhaitez en savoir plus sur la gestion des contacts, vous pouvez consulter ce guide détaillé : [Gérer les contacts de ses services](https://docs.ovh.com/fr/customer/gestion-des-contacts/).
+Si vous souhaitez en savoir plus sur la gestion des contacts, vous pouvez consulter ce guide détaillé : [Gérer les contacts de ses services](/pages/account/customer/managing_contacts).
 
 ### Comment modifier mes coordonnées de facturation ?
 
@@ -44,7 +44,7 @@ Si vous ne renouvelez pas votre service avant cette date, il sera simplement sus
 
 Consultez l'état de vos services, et administrez leur renouvellement dans la rubrique `Mes Services`{.action} de votre espace client.
 Identifiez-vous et renouvelez manuellement vos services sur la page <https://eu.ovh.com/fr/cgi-bin/order/renew.cgi>
-Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide détaillé : [Gérer le renouvellement de mes services](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/).
+Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide détaillé : [Gérer le renouvellement de mes services](/pages/account/billing/how_to_use_automatic_renewal).
 
 ### Comment activer le renouvellement automatique ?
 
@@ -53,7 +53,7 @@ Rendez-vous dans la rubrique `Produits et Services`{.action} accessible directem
 #### Trucs et astuces
 
 Avant toute activation du renouvellement automatique, pensez à renseigner un moyen de paiement. En effet, en cas d'impayé, vos services seront suspendus après 7 jours.
-Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide détaillé : [Gérer le renouvellement de mes services](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/).
+Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide détaillé : [Gérer le renouvellement de mes services](/pages/account/billing/how_to_use_automatic_renewal).
 
 ### Comment désactiver le renouvellement automatique ?
 
@@ -64,7 +64,7 @@ Pour résilier un service, consultez [Comment résilier un service](#cancelserv
 #### Trucs et astuces
 
 Le renouvellement automatique vous permet de ne pas subir de coupure de service. De plus, deux notifications par e-mail vous sont envoyées, 40 et 15 jours avant chaque renouvellement.
-Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide détaillé : [Gérer le renouvellement de mes services](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/).
+Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide détaillé : [Gérer le renouvellement de mes services](/pages/account/billing/how_to_use_automatic_renewal).
 
 ### Comment ajouter un moyen de paiement ?
 
@@ -111,7 +111,7 @@ Retrouvez toutes vos dates de renouvellement dans la rubrique « Produits et ser
 #### Trucs et astuces
 
 Vous pouvez modifier la fréquence de renouvellement de vos solutions depuis la rubrique `Mes services`{.action} de votre espace client.
-Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide détaillé : [Gérer le renouvellement de mes services](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/).
+Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide détaillé : [Gérer le renouvellement de mes services](/pages/account/billing/how_to_use_automatic_renewal).
 
 
 ### Lequel de mes moyens de paiement sera débité ?
@@ -141,7 +141,7 @@ Si vous n'avez pas enregistré de moyen de paiement, mais que vous possédez des
 #### Trucs et astuces
 
 Vous êtes en possession de votre identifiant et de votre mot de passe OVHcloud ? Vous pouvez régler votre facture.
-Vous pouvez également consulter ce guide détaillé : [Gérer ses factures OVHcloud - Régler mon solde](https://docs.ovh.com/fr/billing/gerer-factures-ovh/#regler-mon-solde).
+Vous pouvez également consulter ce guide détaillé : [Gérer ses factures OVHcloud - Régler mon solde](/pages/account/billing/invoice_management#regler-mon-solde).
 
 ### Comment vérifier l'état de mon paiement ?
 
@@ -172,7 +172,7 @@ La résiliation sera effective lorsque la période de validité ou d'engagement 
 #### Trucs et astuces
 
 En cas d'erreur de commande, vous avez la possibilité, sous conditions, d'exercer votre droit de rétractation. Pour plus d'infos, nous vous invitons à consulter la question suivante Comment annuler ma commande?
-Une documentation complète sur la résiliation de l'ensemble de nos produits et services est disponible [ici](https://docs.ovh.com/fr/billing/how-to-cancel-your-services/).
+Une documentation complète sur la résiliation de l'ensemble de nos produits et services est disponible [ici](/pages/account/billing/how_to_cancel_services).
 
 ### Comment personnaliser la référence de mon produit/service sur ma facture?
 
@@ -185,7 +185,7 @@ Celle-ci prend en compte, d’une part, les ressources payables à l’avance et
 
 #### Trucs et astuces
 
-Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide détaillé : [Information concernant le mode de facturation cloud](https://docs.ovh.com/fr/public-cloud/information-concernant-le-mode-de-facturation-cloud/).
+Si vous souhaitez en savoir plus, nous vous invitons à consulter ce guide détaillé : [Information concernant le mode de facturation cloud](/pages/platform/public-cloud/analyze_billing).
 
 
 ### Comment consulter le grand livre des comptes ?

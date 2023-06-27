@@ -1,9 +1,6 @@
 ---
 title: Disattivare una soluzione Private Cloud
-slug: disattivare-una-soluzione-private-cloud
 excerpt: Come richiedere l’eliminazione di un’infrastruttura Private Cloud
-section: Funzionalità OVHcloud
-order: 09
 updated: 2020-07-08
 ---
 

@@ -1,8 +1,5 @@
 ---
 title: Git submodules
-slug: development-submodules
-section: Development
-order: 5
 updated: 2021-03-31
 ---
 
@@ -82,7 +79,7 @@ To fix this, you need to:
     url=git@bitbucket.org:myusername/mymodule.git
 ```
 
-2\. Add the SSH public key in the Web PaaS project settings "Deploy Key" tab in the Web UI as per the [Private Repository](../development-private-repository) documentation page, which will allow our Git service to pull the module from the remote git service. This assumes you have configured the remote git repository to allow this by generating a private/public key pair. For example, see the [Bitbucket documentation](https://confluence.atlassian.com/bitbucket/use-ssh-keys-in-bitbucket-pipelines-847452940.html).
+2\. Add the SSH public key in the Web PaaS project settings "Deploy Key" tab in the Web UI as per the [Private Repository](/pages/web/web-paas/development-private-repository) documentation page, which will allow our Git service to pull the module from the remote git service. This assumes you have configured the remote git repository to allow this by generating a private/public key pair. For example, see the [Bitbucket documentation](https://confluence.atlassian.com/bitbucket/use-ssh-keys-in-bitbucket-pipelines-847452940.html).
 
 
 

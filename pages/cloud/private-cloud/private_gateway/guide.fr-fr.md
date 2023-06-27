@@ -1,8 +1,6 @@
 ---
 title: Activer la Private Gateway
-slug: private-gateway
 excerpt: Découvrez comment activer la Private Gateway sur une infrastructure Hosted Private Cloud
-section: Fonctionnalités OVHcloud
 hidden: true
 updated: 2023-01-06
 ---
@@ -33,7 +31,7 @@ L'interface vSphere est accessible par défaut via Internet. Pour les infrastruc
 * Posséder une offre [Hosted Private Cloud](https://www.ovh.com/fr/private-cloud/){.external}.
 * Accéder à l’interface de gestion vSphere.
 * Être connecté aux [API OVHCloud](https://api.ovh.com/){.external}.
-* Avoir [créé ses identifiants pour l'API OVHCloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/){.external}.
+* Avoir [créé ses identifiants pour l'API OVHCloud](/pages/account/api/first-steps){.external}.
 
 ## En pratique
 
@@ -50,7 +48,7 @@ L'interface vSphere est accessible par défaut via Internet. Pour les infrastruc
 ### Prérequis
 
 * Avoir créé un Portgroup sur le vRack pour connecter la private gateway. Il doit etre sous le datacenter prévu.
-* Avoir ajouté le réseau de la private gateway dans [les autorisations par IP source](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/).
+* Avoir ajouté le réseau de la private gateway dans [les autorisations par IP source](/pages/cloud/private-cloud/manager_ovh_private_cloud).
 * Avoir ajouté une entrée dans le fichier /etc/hosts ou C:\Windows\system32\drivers\etc\hosts pour faire correspondre l'adresse pcc-X-X-X-X.ovh.com avec l'adresse IP privée (outre éviter des messages d'erreurs de certificat, cela est nécessaire pour un bon fonctionnement des différentes consoles VMRC ou autre).
 
 ### Activer la private gateway

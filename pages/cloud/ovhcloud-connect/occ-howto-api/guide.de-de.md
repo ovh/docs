@@ -1,9 +1,6 @@
 ---
 title: Configuration of OVHcloud Connect using OVHcloud APIv6
-slug: api
 excerpt: 'Find out how to set up OVHcloud Connect using OVHcloud APIv6'
-section: Configuration
-order: 2
 updated: 2020-09-14
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-network-ovhcloud-connect-api?id=kb_article_view&sysparm_article=KB0045232'

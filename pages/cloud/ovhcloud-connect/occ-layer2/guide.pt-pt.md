@@ -1,9 +1,6 @@
 ---
 title: Layer 2 mode
-slug: layer2
 excerpt: 'Details about using Layer 2 (L2) with OVHcloud Connect'
-section: Concepts
-order: 2
 updated: 2020-09-14
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-network-ovhcloud-connect-layer2?id=kb_article_view&sysparm_article=KB0045241'

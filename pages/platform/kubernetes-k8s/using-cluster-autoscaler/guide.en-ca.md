@@ -1,9 +1,6 @@
 ---
 title: Dynamically resizing a cluster with the cluster autoscaler
-slug: using-cluster-autoscaler
 excerpt: ''
-section: User guides
-order: 6
 updated: 2022-05-17
 ---
 
@@ -42,8 +39,8 @@ This guide will cover how to enable and manage the cluster autoscaler on your OV
 ## Requirements
 
 - An OVHcloud Managed Kubernetes cluster.
-- Some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
-- Some basic understanding of [how nodes and node pools work](../managing-nodes/) on OVHcloud Managed Kubernetes.
+- Some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/platform/kubernetes-k8s/deploying-hello-world).
+- Some basic understanding of [how nodes and node pools work](/pages/platform/kubernetes-k8s/managing-nodes) on OVHcloud Managed Kubernetes.
 
 ## Instructions
 
@@ -69,7 +66,7 @@ The cluster and horizontal pod autoscalers can work together, and are often both
 
 #### Scaling up and down
 
-To scale-up a cluster, the cluster autoscale watches the load on your nodes and detects when your cluster has resource constraints (e.g. it cannot schedule nodes because of lack of resources). When such a situation arise, the cluster autoscaler adds nodes to your [node pools](../managing-nodes/) to match the demand.
+To scale-up a cluster, the cluster autoscale watches the load on your nodes and detects when your cluster has resource constraints (e.g. it cannot schedule nodes because of lack of resources). When such a situation arise, the cluster autoscaler adds nodes to your [node pools](/pages/platform/kubernetes-k8s/managing-nodes) to match the demand.
 
 The cluster autoscaler also works the other way around, monitoring underutilized nodes and decreasing the number of nodes, helping to reduce your costs.
 
@@ -81,7 +78,7 @@ The cluster autoscaler also works the other way around, monitoring underutilized
 >
 > For more information on this factors disrupting the scaling down of the cluster, please see the [What types of pods can prevent CA from removing a node?](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md#what-types-of-pods-can-prevent-ca-from-removing-a-node) page.
 
-In order to scale up and down the cluster, the autoscaler uses user-defined parameters for things like limits (*what are the upper and lower number of nodes limits in your cluster?*), nodes resource thresholds (*at what load level should it add or remove a node?*) or time intervals (*how often should it scale the cluster?*). These parameters are described in the [Configuring the cluster autoscaler](../configuring-cluster-autoscaler/) guide.
+In order to scale up and down the cluster, the autoscaler uses user-defined parameters for things like limits (*what are the upper and lower number of nodes limits in your cluster?*), nodes resource thresholds (*at what load level should it add or remove a node?*) or time intervals (*how often should it scale the cluster?*). These parameters are described in the [Configuring the cluster autoscaler](/pages/platform/kubernetes-k8s/configuring-cluster-autoscaler) guide.
 
 ### Enabling the autoscaler
 
@@ -89,7 +86,7 @@ In order to scale up and down the cluster, the autoscaler uses user-defined para
 
 The easiest way to enable the autoscaler is using the Kubernetes API, for example using `kubectl`.
 
-As explained in the [How nodes and node pools work](../managing-nodes/) guide, in your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (groups of nodes sharing the same configuration).
+As explained in the [How nodes and node pools work](/pages/platform/kubernetes-k8s/managing-nodes) guide, in your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (groups of nodes sharing the same configuration).
 
 ![Node pool](images/node-pool.png){.thumbnail}
 
@@ -103,7 +100,7 @@ You can activate the autoscaler on several node pools, each of which can have a 
 >
 > A common configuration is to use non-autoscaled, monthly-billed node pools as base for your static workload, and autoscaled, hourly-billed node pools with smaller flavors for your dynamic workload.
 
-When you create your cluster, you can bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) or directly [using the Kubernetes API](../managing-nodes/).
+When you create your cluster, you can bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) or directly [using the Kubernetes API](/pages/platform/kubernetes-k8s/managing-nodes).
 
 To list node pools, you can use:
 
@@ -174,13 +171,13 @@ NAME            FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED 
 nodepool-b2-7   b2-7     true          false            false           3         3         3            3           [...]   
 </code></pre>
 
-When the autoscaler is enabled on a node pool, it uses a by-default configuration. To better understand the by-default configuration and its parameters, see the [Configuring the cluster autoscaler](../configuring-cluster-autoscaler/) guide.
+When the autoscaler is enabled on a node pool, it uses a by-default configuration. To better understand the by-default configuration and its parameters, see the [Configuring the cluster autoscaler](/pages/platform/kubernetes-k8s/configuring-cluster-autoscaler) guide.
 
 ### Configuring the autoscaler
 
 #### Using Kubernetes API
 
-When the autoscaler is enabled on a node pool, it uses a [default configuration](https://docs.ovh.com/ca/en/kubernetes/configuring-cluster-autoscaler/#cluster-autoscaler-configuration).
+When the autoscaler is enabled on a node pool, it uses a [default configuration](/pages/platform/kubernetes-k8s/configuring-cluster-autoscaler#cluster-autoscaler-configuration).
 
 You can change several parameters values through kubectl command:
 
@@ -241,7 +238,7 @@ If you consider that we should prioritize the possible customization of other au
 
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
 
-Otherwise to skip it and learn more about using your Kubernetes cluster the practical way, we invite you to look at our  [tutorials](../) .
+Otherwise to skip it and learn more about using your Kubernetes cluster the practical way, we invite you to look at our  [tutorials](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s) .
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

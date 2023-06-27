@@ -1,9 +1,6 @@
 ---
 title: Deploy di una macchina virtuale
-slug: deploy-di-una-macchina-virtuale
 excerpt: Come attivare una macchina virtuale dall’interfaccia vSphere
-section: Gestione delle macchine virtuali
-order: 0
 updated: 2020-06-29
 ---
 
@@ -18,7 +15,7 @@ L’interfaccia vSphere permette di eseguire il deploy di macchine virtuali in d
 ## Prerequisiti
 
 - Disporre di un servizio [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external} attivo
-- Avere accesso all’[interfaccia vSphere](../connessione-interfaccia-vsphere/)
+- Avere accesso all’[interfaccia vSphere](/pages/cloud/private-cloud/vsphere_interface_connexion)
 
 ## Procedura
 
@@ -32,8 +29,8 @@ Per effettuare l’operazione clicca con il tasto destro sul cluster in question
 
 Per creare una macchina virtuale è possibile scegliere tra diverse opzioni:
 
-- da un file ISO, disponibile nel datastore (per importarlo, consulta la [guida di connessione in SFTP](../connessione-in-sftp/))
-- da un template personale o [fornito da OVHcloud](../installazione-template-ovh/)
+- da un file ISO, disponibile nel datastore (per importarlo, consulta la [guida di connessione in SFTP](/pages/cloud/private-cloud/sftp_connexion))
+- da un template personale o [fornito da OVHcloud](/pages/cloud/private-cloud/ovf_template)
 - clonare una VM già esistente, prestando particolare attenzione agli eventuali conflitti di indirizzi IP
 - clonare una VM in un template per un’implementazione più rapida delle future macchine virtuali
 - clonare un template in un altro template, ad esempio per averlo a disposizione su diversi datastore e prevenire cali di performance durante i deploy massivi

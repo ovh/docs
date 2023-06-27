@@ -1,9 +1,6 @@
 ---
 title: 'Changelogs der Images für Public Cloud & VPS '
-slug: changelog-images
 excerpt: Erfahren Sie hier die Änderungen, die an den Images für Public Cloud Instanzen und VPS Reihen vorgenommen wurden
-section: 'Allgemeine Informationen'
-order: 03
 updated: 2021-02-09
 ---
 
@@ -53,7 +50,7 @@ Product: Public Cloud / VPS
 Task: <https://bare-metal-servers.status-ovhcloud.com/incidents/58k8v7rm4crk>
 Changelog:
 1. All images contain new package / security updates from vendors since our last image updates
-2. Centos 7 - cPanel image: we disabled QEMU Guest Agent on this image due to issues caused by creation of a virtfs when allowing Jailed Shell access. This virtfs cannot be frozen by QEMU Guest Agent and therefore causes a kernel panic. Customers with previous release of this image should check [this guide for fix](https://docs.ovh.com/gb/en/vps/cpanel_auto_backup/)
+2. Centos 7 - cPanel image: we disabled QEMU Guest Agent on this image due to issues caused by creation of a virtfs when allowing Jailed Shell access. This virtfs cannot be frozen by QEMU Guest Agent and therefore causes a kernel panic. Customers with previous release of this image should check [this guide for fix](/pages/cloud/vps/cpanel_snapshot)
 
 ```
 

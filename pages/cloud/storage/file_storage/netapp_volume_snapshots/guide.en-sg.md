@@ -1,9 +1,6 @@
 ---
 title: Enterprise File Storage - Managing volume snapshots
-slug: netapp/volume-snapshots
 excerpt: Manage Enterprise File Storage volume snapshots using the OVHcloud API
-section: Enterprise File Storage
-order: 042
 updated: 2021-10-27
 ---
 

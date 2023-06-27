@@ -1,9 +1,6 @@
 ---
 title: Configuring an email address on iPhone and iPad
-slug: email_hosting_iphone_ios_91_configuration
 excerpt: Find out how to configure an MX Plan email address on iPhone and iPad
-section: Configure on smartphone
-order: 01
 updated: 2022-07-20
 ---
 
@@ -25,7 +22,7 @@ You can configure MX Plan email addresses on email clients and applications, if 
 ## Requirements
 
 - an MX Plan email address included in [OVHcloud Web Hosting plans](https://www.ovhcloud.com/en-sg/web-hosting/){.external}
-- being up-to-date in the [payments](https://docs.ovh.com/sg/en/billing/manage-ovh-bills/#pay-bills) and [renewals](https://docs.ovh.com/sg/en/billing/how-to-use-automatic-renewal-at-ovh/#renewal-management) of related services (domain name and web hosting plan)
+- being up-to-date in the [payments](/pages/account/billing/invoice_management#pay-bills) and [renewals](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
 - the Mail app installed on your iOS device
 - login credentials for the email account to be configured
 
@@ -75,11 +72,11 @@ OVHcloud also offers a web application you can use to access your email account 
 
 > [!primary]
 >
-> If you experience any difficulties receiving or sending emails, please read our [FAQ about OVHcloud email services](../emails-faq/).
+> If you experience any difficulties receiving or sending emails, please read our [FAQ about OVHcloud email services](/pages/web/emails/faq-emails).
 >
 
 ## Go further
 
-[Email FAQ](../emails-faq/)
+[Email FAQ](/pages/web/emails/faq-emails)
 
 Join our community of users on <https://community.ovh.com/en/>.

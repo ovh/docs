@@ -1,9 +1,6 @@
 ---
 title: "Migrer vos adresses e-mail d'une plateforme e-mail OVHcloud vers une autre"
-slug: migration-email-platform
 excerpt: "Découvrez comment migrer les adresses e-mail d'une plateforme Exchange vers une autre plateforme Exchange ou MX Plan"
-section: Migration
-order: 04
 updated: 2021-10-21
 ---
 
@@ -77,10 +74,10 @@ Dans l'onglet `Comptes e-mail`{.action} de votre plateforme, cliquez sur le bout
 > Seules les données de vos comptes e-mail seront migrées (e-mails, contacts, calendriers, règles de boîte de réception, etc.). Les fonctionnalités liées à votre plateforme devront être recréées sur la nouvelle plateforme :
 >
 > - [Alias](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-ajouter-un-alias-sur-un-e-mail-depuis-le-manager/) 
-> - [Délégations de droits](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-donner-les-droits-full-access-sur-un-compte/) 
-> - [Groupes](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-utilisation-des-groupes-mailing-list/)
+> - [Délégations de droits](/pages/web/microsoft-collaborative-solutions/feature_delegation) 
+> - [Groupes](/pages/web/microsoft-collaborative-solutions/feature_groups)
 > - Contacts externes
-> - [Pied de page](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-signature-automatique-disclaimer/)
+> - [Pied de page](/pages/web/microsoft-collaborative-solutions/feature_footers)
 
 Migrez le compte e-mail « source » vers le compte de votre nouvelle plateforme à l'aide de notre outil [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
 
@@ -118,7 +115,7 @@ Pour modifier la configuration, cliquez sur la pastille rouge et réalisez la ma
 Il ne vous reste plus qu’à utiliser vos adresses e-mail migrées. Pour cela, OVHcloud met à disposition un applicatif en ligne (_web app_) accessible à l’adresse <https://www.ovh.com/ca/fr/mail/>. Vous devez y renseigner les identifiants relatifs à votre adresse e-mail.
 
 Si vous avez configuré l'un des comptes migrés sur un client de messagerie (exemple: Outlook, Thunderbird), vous devez de nouveau le paramétrer. Les informations de connexion au serveur OVHcloud ont changé suite à la migration.
-<br>Pour vous aider dans vos manipulations, consultez notre documentation depuis les sections des guides consacrées à [Hosted Exchange](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/){.external}. Si vous n'êtes pas en mesure de reconfigurer le compte dans l'immédiat, l'accès via l'applicatif en ligne est toujours possible.
+<br>Pour vous aider dans vos manipulations, consultez notre documentation depuis les sections des guides consacrées à [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}. Si vous n'êtes pas en mesure de reconfigurer le compte dans l'immédiat, l'accès via l'applicatif en ligne est toujours possible.
 
 > [!primary]
 >
@@ -127,8 +124,8 @@ Si vous avez configuré l'un des comptes migrés sur un client de messagerie (ex
 
 ## Aller plus loin
 
-[Gérer les contacts de ses services](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/){.external}.
+[Gérer les contacts de ses services](/pages/account/customer/managing_contacts){.external}.
 
-[Guides Exchange](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/){.external}.
+[Guides Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.

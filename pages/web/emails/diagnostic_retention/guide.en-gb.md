@@ -1,9 +1,6 @@
 ---
 title: Restoring deleted items from your email account
-slug: email-retention
 excerpt: Find out how to restore deleted items from your email account via webmail (OWA)
-section: Troubleshooting
-order: 02
 updated: 2022-02-08
 ---
 
@@ -18,7 +15,7 @@ You have mistakenly deleted one or more items (email, contact, calendar appointm
 ## Requirements
  
 - An OVHcloud email solution:
-    - **MX Plan** ([new version only](https://docs.ovh.com/gb/en/emails/web_hosting_an_overview_of_ovh_email/)), available as part of our [web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/) or included in a [free Start10M hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/)
+    - **MX Plan** ([new version only](/pages/web/emails/email_generalities)), available as part of our [web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/) or included in a [free Start10M hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/)
     - [**Hosted Exchange**](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/)
     - [**Email Pro**](https://www.ovhcloud.com/en-gb/emails/email-pro/)
 - Login details for the email account concerned

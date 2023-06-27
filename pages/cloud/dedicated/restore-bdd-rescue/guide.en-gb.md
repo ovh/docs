@@ -1,8 +1,6 @@
 ---
 title: "Retrieving databases in rescue mode"
-slug: dedicated-servers-retrieve-database
 excerpt: "Find out how to access and save your databases using rescue mode"
-section: Tutorial
 updated: 2023-04-13
 ---
 

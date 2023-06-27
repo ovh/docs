@@ -1,8 +1,6 @@
 ---
 title: Configurer le pare-feu sous Linux avec Iptables
 excerpt: Découvrez comment sécuriser un serveur avec Iptables
-slug: vps-firewall-iptables
-section: Premiers pas
 updated: 2023-02-27
 ---
 
@@ -40,7 +38,7 @@ Les pare-feux fonctionnent en définissant des règles qui régissent le trafic 
 
 Les développeurs de systèmes de distribution et d'exploitation proposent des mises à jour fréquentes de progiciels, très souvent pour des raisons de sécurité. **Garder votre distribution ou votre système d'exploitation à jour est primordial pour la sécurisation de votre serveur.**
 
-Consultez notre guide sur la [sécurisation d'un VPS](https://docs.ovh.com/fr/vps/conseils-securisation-vps/) pour plus d'informations.
+Consultez notre guide sur la [sécurisation d'un VPS](/pages/cloud/vps/secure_your_vps) pour plus d'informations.
 
 ### Etape 2 : installer le pare-feu Iptables sous Ubuntu
 
@@ -133,7 +131,7 @@ Les options fonctionnent ainsi :
 > [!warning]
 > En cas de perte d'accès à votre serveur, vous pouvez toujours utiliser l'outil KVM/IPMI pour y accéder à nouveau et modifier votre configuration ou supprimer vos règles.
 >
-> Pour plus d'informations sur l'accès à cet outil, veuillez consulter [ce guide](https://docs.ovh.com/fr/vps/utilisation-kvm-sur-vps/).  
+> Pour plus d'informations sur l'accès à cet outil, veuillez consulter [ce guide](/pages/cloud/vps/using_kvm_for_vps).  
 > 
 
 ### Etape 6 : contrôler le trafic par adresse IP

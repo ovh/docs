@@ -1,9 +1,6 @@
 ---
 title: "Zugriff auf Ihr OVHcloud Kundencenter nach IP beschränken"
-slug: ovhcloud-control-panel-ip-restriction
 excerpt: "Erfahren Sie hier, wie Sie Ihren OVHcloud Kunden-Account absichern, indem Sie Zugriffsberechtigungen für IP-Adressen einrichten"
-section: Sicherheit
-order: 03
 updated: 2022-12-12
 ---
 
@@ -18,7 +15,7 @@ updated: 2022-12-12
 OVHcloud stellt Ihnen Optionen zur Verfügung, um die Sicherheit Ihres OVHcloud Kundencenters und Ihrer Dienste zu erhöhen.
 
 Sie können den Zugang zu Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf bestimmte IP-Adressen beschränken.
-Die Einrichtung dieser Option, kombiniert mit der [Zwei-Faktor-Authentifizierung](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/), ermöglicht die optimale Absicherung Ihres OVHcloud Kundencenters gegen unbefugte Zugriffe.
+Die Einrichtung dieser Option, kombiniert mit der [Zwei-Faktor-Authentifizierung](/pages/account/customer/secure-ovhcloud-account-with-2fa), ermöglicht die optimale Absicherung Ihres OVHcloud Kundencenters gegen unbefugte Zugriffe.
 
 **Diese Anleitung erklärt, wie Sie Ihren OVHcloud Kunden-Account absichern, indem Sie den Zugang über IP-Adressen einschränken.**
 
@@ -30,7 +27,7 @@ Die Einrichtung dieser Option, kombiniert mit der [Zwei-Faktor-Authentifizierung
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben die [Empfehlungen zur Verwaltung des Account-Passworts](https://docs.ovh.com/de/customer/Passwort-verwalten/) zur Kenntnis genommen.
+- Sie haben die [Empfehlungen zur Verwaltung des Account-Passworts](/pages/account/customer/manage-ovh-password) zur Kenntnis genommen.
 
 ## In der praktischen Anwendung
 
@@ -155,7 +152,7 @@ Nachdem Sie **alle** abzulehnenden IP-Adressen in der Rubrik `Konfigurierte IP`{
 
 ## Weiterführende Informationen
 
-[Zwei-Faktor-Authentifizierung in Ihrem OVHcloud Kundencenter einrichten](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/)
+[Zwei-Faktor-Authentifizierung in Ihrem OVHcloud Kundencenter einrichten](/pages/account/customer/secure-ovhcloud-account-with-2fa)
  
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

@@ -1,7 +1,5 @@
 ---
 title: Web
-slug: web
-section: App
 updated: 2021-03-31
 ---
 

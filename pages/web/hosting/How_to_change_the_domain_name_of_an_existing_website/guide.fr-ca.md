@@ -1,9 +1,6 @@
 ---
 title: "Cas d'usage - Comment changer le domaine d'un site existant"
-slug: how_to_change_the_domain_name_for_an_existing_website
 excerpt: "Découvrez comment changer le nom de domaine d'un site existant"
-section: "Tutoriels"
-order: 011
 updated: 2022-10-25
 ---
 
@@ -42,7 +39,7 @@ Pour changer le nom de domaine d'accès à votre site web, plusieurs étapes son
 
 ### Etape 1 - déclarer le nouveau domaine sur votre hébergement mutualisé <a name="step1"></a>
 
-Déclarez votre nouveau nom de domaine à l'aide de notre documentation sur l'[ajout d'un multisite sur votre hébergement mutualisé](https://docs.ovh.com/ca/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/). Déclarez également son sous-domaine en `www` si vous souhaitez, par exemple, que `www.NewDomain.tld` affiche aussi votre site en plus de `NewDomain.tld`.
+Déclarez votre nouveau nom de domaine à l'aide de notre documentation sur l'[ajout d'un multisite sur votre hébergement mutualisé](/pages/web/hosting/multisites_configure_multisite). Déclarez également son sous-domaine en `www` si vous souhaitez, par exemple, que `www.NewDomain.tld` affiche aussi votre site en plus de `NewDomain.tld`.
 
 Plusieurs conditions sont à remplir pour réussir l'étape 1 :
 
@@ -51,7 +48,7 @@ Plusieurs conditions sont à remplir pour réussir l'étape 1 :
 
 > [!warning]
 >
-> Si vous activez les options **IP du pays** ou **CDN** avec votre nouveau domaine, utilisez bien la bonne adresse IP à l'aide de notre documentation recensant [l'ensemble des adresses IP de nos hébergements mutualisés](https://docs.ovh.com/ca/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/).
+> Si vous activez les options **IP du pays** ou **CDN** avec votre nouveau domaine, utilisez bien la bonne adresse IP à l'aide de notre documentation recensant [l'ensemble des adresses IP de nos hébergements mutualisés](/pages/web/hosting/multisites_configure_multisite).
 >
 > Pour retrouver le numéro du cluster où se trouve votre hébergement, rendez-vous dans la partie `Web cloud`{.action}, cliquez sur `Hébergements`{.action}, sélectionnez votre hébergement puis l'onglet `FTP-SSH`{.action}. Vous visualiserez le numéro du cluster dans le formulaire **Serveur FTP et SFTP** : `ftp.cluster0XX.ovh.net` (où les `X` représentent le numéro de cluster).
 >
@@ -59,8 +56,8 @@ Plusieurs conditions sont à remplir pour réussir l'étape 1 :
 > **Certificats SSL**
 >
 > Si le domaine initialement utilisé pour accéder à votre site dispose d'un certificat SSL, consultez nos deux guides afin d'effectuer ou de vérifier les actions décrites juste en dessous de ces deux liens :
-> - [Gérer un certificat SSL sur son hébergement web](https://docs.ovh.com/ca/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/)
-> - [Passer son site internet en HTTPS grâce au SSL](https://docs.ovh.com/ca/fr/hosting/passer-site-internet-https-ssl/)
+> - [Gérer un certificat SSL sur son hébergement web](/pages/web/hosting/ssl_on_webhosting)
+> - [Passer son site internet en HTTPS grâce au SSL](/pages/web/hosting/ssl-activate-https-website)
 >
 > Pour le certificat SSL *Let's Encrypt* gratuit, il vous suffit d'activer l'option `SSL` **dès à présent** pour votre nouveau domaine via l'onglet `Multisites`{.action} de votre hébergement. Cliquez ensuite sur le bouton `Actions`{.action} au dessus du tableau indiquant vos multistes puis sur `Régénérer le certificat SSL`{.action}. La régénération prendra au minimum 2 heures pour être réalisée.
 >
@@ -90,7 +87,7 @@ La plupart des sites utilisent des bases de données pour fonctionner. L'arbores
 >
 > Attention, les opérations décrites dans l'étape 2 sont extrêmement sensibles et peuvent avoir des conséquences graves pour votre site web si elle ne sont pas effectuées avec précaution. Si vous avez le moindre doute, ne tentez rien et faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/).
 >
-> Avant d'effectuer toute action, nous vous conseillons de récupérer une [sauvegarde de votre espace de stockage FTP](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/) ainsi qu'une [sauvegarde de votre base de données](https://docs.ovh.com/ca/fr/hosting/exportation-bases-donnees/). Cela vous permettra de restaurer votre site en cas de mauvaise manipulation.
+> Avant d'effectuer toute action, nous vous conseillons de récupérer une [sauvegarde de votre espace de stockage FTP](/pages/web/hosting/ftp_save_and_backup) ainsi qu'une [sauvegarde de votre base de données](/pages/web/hosting/sql_database_export). Cela vous permettra de restaurer votre site en cas de mauvaise manipulation.
 >
 
 Nous allons distinguer deux types de site web : 
@@ -110,13 +107,13 @@ Les CMS étant développés par des organismes tiers non gérés par OVHcloud, v
 - Drupal : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le domaine d'accès à votre site web. Nous vous invitons à contacter directement l’éditeur sur ce sujet. Pour plus d’informations, consultez les pages officielles [drupal.org](https://drupal.org){.external} ou [drupal.fr](https://drupal.fr){.external}.
 - PrestaShop : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le domaine d'accès à votre site web. Nous vous invitons à contacter directement l’éditeur sur ce sujet. Pour plus d’informations, cliquez [ici](https://help-center.prestashop.com){.external} pour vous rendre sur leur page officielle.
 
-Notez que pour ces CMS, il est également possible d'effectuer ses modifications directement [en base de données](https://docs.ovh.com/ca/fr/hosting/creer-base-de-donnees/). Vous devrez changer l'URL d'accès à votre site dans la table prévue à cet effet.
+Notez que pour ces CMS, il est également possible d'effectuer ses modifications directement [en base de données](/pages/web/hosting/sql_create_database). Vous devrez changer l'URL d'accès à votre site dans la table prévue à cet effet.
 
 Pour les autres CMS non proposés en installation automatique par OVHcloud, nous vous invitons également à vous rapprocher de leurs supports respectifs pour effectuer cette réécriture en toute sécurité. 
 
 #### Cas n°2 : votre site web est un site « fait maison »
 
-Pour réécrire vos URLs avec votre nouveau domaine, [connectez-vous à la base de données de votre site](https://docs.ovh.com/ca/fr/hosting/creer-base-de-donnees/) puis remplacez votre ancien domaine par le nouveau dans la table correspondante. 
+Pour réécrire vos URLs avec votre nouveau domaine, [connectez-vous à la base de données de votre site](/pages/web/hosting/sql_create_database) puis remplacez votre ancien domaine par le nouveau dans la table correspondante. 
 
 N'oubliez pas de vérifier dans votre fichier `.htaccess` si des réécritures d'URL ne sont pas à mettre à jour avec votre nouveau domaine.
 
@@ -129,24 +126,24 @@ Si vous avez fait appel à un prestataire pour la création de votre site, conta
 
 ### Etape 3 - retirer l'ancien nom de domaine <a name="step3"></a>
 
-Pour éviter le  « *Duplicate-content* » et lorsque votre nouveau domaine est pleinement opérationnel avec votre site, vous devrez supprimer la déclaration en multisites pour votre ancien domaine à l'aide du guide sur la gestion des [multisites sur votre hébergement mutualisé](https://docs.ovh.com/ca/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/).
+Pour éviter le  « *Duplicate-content* » et lorsque votre nouveau domaine est pleinement opérationnel avec votre site, vous devrez supprimer la déclaration en multisites pour votre ancien domaine à l'aide du guide sur la gestion des [multisites sur votre hébergement mutualisé](/pages/web/hosting/multisites_configure_multisite).
 
 > [!warning]
 >
 > N'oubliez pas de vous occuper de votre certificat SSL *Sectigo EV*, *Sectigo DV* ou *Custom* comme précisé dans [l'étape 1](#step1).
 >
 
-Une fois votre ancien domaine retiré de l'onglet multisites et s'il est enregistré chez OVHcloud, vous pourrez rediriger ce dernier à l'aide d'une [redirection visible permanente 301](https://docs.ovh.com/ca/fr/domains/redirection-nom-de-domaine/). Cela permettra à vos visiteurs d'être automatiquement redirigé vers votre site en visualisant votre nouveau domaine dans la barre d'adresse/URL de leur navigateur.
+Une fois votre ancien domaine retiré de l'onglet multisites et s'il est enregistré chez OVHcloud, vous pourrez rediriger ce dernier à l'aide d'une [redirection visible permanente 301](/pages/web/domains/redirect_domain_name). Cela permettra à vos visiteurs d'être automatiquement redirigé vers votre site en visualisant votre nouveau domaine dans la barre d'adresse/URL de leur navigateur.
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Liste des IPs de nos hébergements mutualisés](https://docs.ovh.com/ca/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/)
+[Liste des IPs de nos hébergements mutualisés](/pages/web/hosting/multisites_configure_multisite)
 
-[Gérer un certificat SSL sur son hébergement web](https://docs.ovh.com/ca/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/)
+[Gérer un certificat SSL sur son hébergement web](/pages/web/hosting/ssl_on_webhosting)
 
-[Passer son site internet en HTTPS grâce au SSL](https://docs.ovh.com/ca/fr/hosting/passer-site-internet-https-ssl/)
+[Passer son site internet en HTTPS grâce au SSL](/pages/web/hosting/ssl-activate-https-website)
 
-[Rediriger un domaine](https://docs.ovh.com/ca/fr/domains/redirection-nom-de-domaine/)
+[Rediriger un domaine](/pages/web/domains/redirect_domain_name)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 

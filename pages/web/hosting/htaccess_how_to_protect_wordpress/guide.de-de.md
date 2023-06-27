@@ -1,17 +1,14 @@
 ---
 title: "Tutorial - htaccess-Dateien mit WordPress verwenden"
-slug: use-htaccess-with-wordpress
 excerpt: "Erfahren Sie hier, wie Sie Ihre WordPress Website mit einer oder mehreren htaccess-Dateien absichern"
-section: 'Tutorials'
-order: 022
-updated: 2023-03-08
+updated: 2023-06-22
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 08.03.2023**
+**Letzte Aktualisierung am 22.06.2023**
 
 ## Ziel
 
@@ -28,13 +25,24 @@ In dieser Anleitung erfahren Sie, wie Sie bestimmte Funktionen Ihres Webhostings
 ## Voraussetzungen
 
 - Sie verfügen über ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/) und haben WordPress installiert.
-- Sie haben einen FTP-Client, z.B. [FileZilla](https://filezilla-project.org/) installiert, wie in unserem [Tutorial zu FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/) erläutert.
+- Sie haben einen FTP-Client, z.B. [FileZilla](https://filezilla-project.org/) installiert, wie in unserem [Tutorial zu FileZilla](/pages/web/hosting/ftp_filezilla_user_guide) erläutert.
 
 **.htaccess**-Dateien können mit Texteditoren erstellt und bearbeitet werden, zum Beispiel:
 
-- [Notizblock](https://support.microsoft.com/de-de/windows/hilfe-in-windows-editor-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} in Windows
+- [Notepad](https://support.microsoft.com/de-de/windows/hilfe-in-windows-editor-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} in Windows
 - [TextEdit](https://support.apple.com/de-de/guide/textedit/welcome/mac){.external} in macOS 
 - [Notepad++](https://notepad-plus-plus.org/){.external}
+
+> [!primary]
+>
+> Die unten aufgeführten Sicherheitslösungen sind nicht umfassend.
+>
+> Wenn Sie zum Beispiel ein anderes **C**ontent **M**anagement **S**ystem (**CMS**) als WordPress verwenden, gibt es andere Sicherheitslösungen.
+>
+> Wenn Sie kein CMS verwenden, stellt Ihnen OVHcloud auch ein [Tutorial zum Schützen von Verzeichnissen oder des Verwaltungsinterface Ihrer Website über .htaccess Dateien](/pages/web/hosting/htaccess_protect_directory_by_password) zur Verfügung.
+>
+> Kontaktieren Sie bei Fragen unsere [User Community](https://community.ovh.com/en/) oder [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/). Die Support-Teams von OVHcloud werden Ihnen zu diesen Themen keine Hilfe bieten können.
+>
 
 ## FAQ
 
@@ -44,16 +52,16 @@ Mit einer **.htaccess**-Datei können Sie einen Webserver konfigurieren. Bei Web
 
 Unsere Webhosting-Angebote erlauben keine Serverkonfigurationsdateien. Die **.htaccess**-Dateien ermöglichen es jedoch, bestimmte Eigenschaften und Verhaltensweisen zu ändern. Darüber hinaus ist es nicht notwendig, **Apache** neu zu starten, damit die Inhalte und Änderungen in der **.htaccess**-Datei berücksichtigt werden. Mit unseren [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/) können **.htaccess**-Dateien konfiguriert werden.
 
-Der Punkt vor dem Dateinamen in **.htaccess** (der selbst keine Endung hat) kennzeichnet eine versteckte Datei. Außerdem sind diese Dateien für externe Benutzer, die Ihre Website aufrufen, nicht verfügbar.
+Der Punkt vor dem Dateinamen **.htaccess** (der selbst keine Endung hat) kennzeichnet eine versteckte Datei. Außerdem sind diese Dateien für externe Benutzer, die Ihre Website aufrufen, nicht verfügbar.
 
 ### Was ist ein Webserver?
 
 Ein Webserver ist eine Software, mit der Informationen über ein Netzwerk über das *Hypertext Transfer Protocol (HTTP)* ausgetauscht werden können.
-Es gibt mehrere davon, darunter *Apache*, *Nginx*, *Tomcat* oder das HTTP-Modul in *NodeJS*.
+Es gibt mehrere davon, zum Beispiel *Apache*, *Nginx*, *Tomcat* oder das HTTP-Modul in *NodeJS*.
 
 ### Welche Vorsichtsmaßnahmen sind zu treffen?
 
-Eine fehlerhafte Konfiguration Ihrer **.htaccess**-Datei kann Fehler auf Ihrem Server verursachen (zum Beispiel ein Fehler 500: *Internal Server Error*) oder Ihren Dienst unzugänglich machen. Denken Sie daran, systematische Backups der Versionen Ihrer funktionalen Dateien durchzuführen, um bei Fehlfunktionen nach einer Änderung zu einem früheren Zustand zurückkehren zu können.
+Eine fehlerhafte Konfiguration Ihrer **.htaccess**-Datei kann Fehler auf Ihrem Server verursachen (zum Beispiel einen Fehler 500: *Internal Server Error*) oder Ihren Dienst unzugänglich machen. Denken Sie daran, systematisch Backups der Versionen Ihrer funktionalen Dateien durchzuführen, um bei Fehlfunktionen nach einer Änderung zu einem früheren Zustand zurückkehren zu können.
 
 Wenn Sie diese Art von Datei nicht regelmäßig bearbeiten, testen Sie jedes Element, das Sie ändern. So vermeiden Sie Zeitverlust, da Sie nicht erst die Zeilen identifizieren müssen, welche Fehlfunktionen Ihres Webservers verursachen. Konfigurationsfehler oder falsche Syntax können den Betrieb Ihres Webservers beeinträchtigen.
 
@@ -107,7 +115,7 @@ Es gibt mehrere Möglichkeiten, die Einstellungen zu konfigurieren, die das Verh
 
 > [!warning]
 >
-> Bevor Sie den folgenden Schritten folgen, leiten Sie HTTP-Anfragen nach HTTPS um. Folgen Sie hierzu den Anweisungen in unserer Anleitung: [Website mit SSL-Zertifikat auf HTTPS umstellen](https://docs.ovh.com/de/hosting/website-umstellen-https-ssl/#schritt-1-ssl-zertifikat-fur-das-hosting-aktivieren)
+> Bevor Sie den folgenden Schritten folgen, leiten Sie HTTP-Anfragen nach HTTPS um. Folgen Sie hierzu den Anweisungen in unserer Anleitung: [Website mit SSL-Zertifikat auf HTTPS umstellen](/pages/web/hosting/ssl-activate-https-website#schritt-1-ssl-zertifikat-fur-das-hosting-aktivieren)
 
 ### Die Anzeige von Verzeichnissen und Unterverzeichnissen verhindern
 
@@ -142,7 +150,7 @@ Wenn Sie eine zu sperrende IP-Adresse identifiziert haben, geben Sie diese Zeile
 
 Ersetzen Sie `xxx.xxx.xxx.xxx` mit der zu blockierenden IP-Adresse.
 
-Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung zur [IP-basierten Zugriffsbeschränkung über die .htaccess-Datei](https://docs.ovh.com/de/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung zur [IP-basierten Zugriffsbeschränkung über die .htaccess-Datei](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
 #### Zugang zum Verzeichnis wp-admin (oder anderen Verzeichnissen) nach IP blockieren
 

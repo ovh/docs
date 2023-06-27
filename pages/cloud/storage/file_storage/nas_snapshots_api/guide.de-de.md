@@ -1,9 +1,6 @@
 ---
 title: HA-NAS - Snapshot-Verwaltung via API
-slug: nas/snapshots-api
 excerpt: Erfahren Sie hier, wie Sie Snapshots auf Ihrem HA-NAS über die OVHcloud API verwalten
-section: HA-NAS
-order: 09
 updated: 2022-07-20
 ---
 
@@ -22,12 +19,12 @@ OVHcloud HA-NAS Dienste ermöglichen Ihnen die Verwaltung zentral gespeicherter 
 ## Voraussetzungen
 
 - Sie haben ein [OVHcloud HA-NAS](https://www.ovh.com/de/nas/) in Ihrem Kunden-Account.
-- Sie haben sich anhand der [Anleitung zu den ersten Schritten mit der OVHcloud API](https://docs.ovh.com/de/api/first-steps-with-ovh-api/) mit der Verwendung der OVHcloud APIv6 vertraut gemacht.
+- Sie haben sich anhand der [Anleitung zu den ersten Schritten mit der OVHcloud API](/pages/account/api/first-steps) mit der Verwendung der OVHcloud APIv6 vertraut gemacht.
 
 ## In der praktischen Anwendung
 
 > [!primary]
-> Detaillierte technische Informationen zur Snapshot-Funktion finden Sie auf der [HA-NAS FAQ-Seite](https://docs.ovh.com/de/storage/file-storage/nas/faq/).
+> Detaillierte technische Informationen zur Snapshot-Funktion finden Sie auf der [HA-NAS FAQ-Seite](/pages/cloud/storage/file_storage/nas_faq).
 >
 
 
@@ -298,9 +295,9 @@ Zusätzliche Hilfe finden Sie unter "[Weiterführende Informationen](#gofurther)
 
 ## Weiterführende Informationen
 
-[NAS via NFS-Freigabe mounten](https://docs.ovh.com/de/storage/file-storage/nas/nfs/)
+[NAS via NFS-Freigabe mounten](/pages/cloud/storage/file_storage/nas_nfs)
 
-[NAS auf Windows Server über CIFS mounten](https://docs.ovh.com/de/storage/file-storage/nas/cifs/)
+[NAS auf Windows Server über CIFS mounten](/pages/cloud/storage/file_storage/nas_cifs)
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 

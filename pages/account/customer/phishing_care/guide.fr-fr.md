@@ -1,8 +1,6 @@
 ---
 title: 'Phishing - Comment reconnaître des e-mails ou SMS frauduleux ?'
-slug: arnaques-fraude-phishing
 excerpt: 'Comment reconnaître un e-mail de phishing et que faire si vous avez cliqué sur un lien frauduleux ?'
-section: Sécurité
 updated: 2020-10-12
 ---
 
@@ -42,7 +40,7 @@ Cliquez sur l'image pour l'agrandir. Retrouvez les détails et explications dans
 
 #### Identifier un SMS de phishing
 
-OVHcloud ne vous transmettra **jamais** de lien par SMS. Les SMS que nous envoyons sont généralement liés à la [double authentification dans votre espace client](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/). 
+OVHcloud ne vous transmettra **jamais** de lien par SMS. Les SMS que nous envoyons sont généralement liés à la [double authentification dans votre espace client](/pages/account/customer/secure-ovhcloud-account-with-2fa). 
 
 Vous trouverez ci-dessous 2 exemples de SMS, le premier est légitime et correspond à la double authentification. Le second SMS est frauduleux.
 
@@ -69,9 +67,9 @@ La seule chose à faire est de contacter rapidement votre banque afin de faire o
 
 Connectez-vous sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et modifiez immédiatement votre mot de passe.<br>
 
-Vous trouverez, sur notre guide « [Modifier le mot de passe de votre compte](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/) », la méthode pour modifier votre mot de passe depuis votre espace client, ainsi que nos recommandations pour générer un mot de passe efficace et le sauvegarder dans un gestionnaire de mots de passe. 
+Vous trouverez, sur notre guide « [Modifier le mot de passe de votre compte](/pages/account/customer/manage-ovh-password) », la méthode pour modifier votre mot de passe depuis votre espace client, ainsi que nos recommandations pour générer un mot de passe efficace et le sauvegarder dans un gestionnaire de mots de passe. 
 
-Nous vous conseillons fortement d’activer également la [double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/) pour sécuriser durablement votre compte.
+Nous vous conseillons fortement d’activer également la [double authentification](/pages/account/customer/secure-ovhcloud-account-with-2fa) pour sécuriser durablement votre compte.
 
 > [!primary]
 >
@@ -90,10 +88,10 @@ Nous vous conseillons fortement d’activer également la [double authentificati
 
 ## Aller plus loin
 
-[Définir et gérer le mot de passe de votre compte](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/)
+[Définir et gérer le mot de passe de votre compte](/pages/account/customer/manage-ovh-password)
 
-[Sécuriser son compte OVHcloud avec la double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/)
+[Sécuriser son compte OVHcloud avec la double authentification](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
-[Sécuriser mon compte OVHcloud et gérer mes informations personnelles](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/)
+[Sécuriser mon compte OVHcloud et gérer mes informations personnelles](/pages/account/customer/all_about_username)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

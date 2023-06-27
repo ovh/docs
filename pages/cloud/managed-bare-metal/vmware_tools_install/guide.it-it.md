@@ -1,11 +1,8 @@
 ---
 title: 'Installare VMware Tools'
-slug: installare-vmware-tools
 routes:
-    canonical: 'https://docs.ovh.com/it/private-cloud/installare-vmware-tools/'
+    canonical: '/pages/cloud/private-cloud/vmware_tools_install'
 excerpt: 'Come installare VMware Tools su Linux e Windows'
-section: 'Gestione delle macchine virtuali'
-order: 6
 updated: 2020-11-18
 ---
 

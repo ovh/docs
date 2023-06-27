@@ -1,9 +1,6 @@
 ---
 title: 'Configuration du vRack Public Cloud depuis les APIv6 OVHcloud'
 excerpt: 'Découvrez comment activer et gérer un vRack Public Cloud depuis les APIv6 OVHcloud'
-slug: public-cloud-vrack-apiv6
-section: Premiers pas
-order: 08
 updated: 2022-11-02
 ---
 
@@ -18,17 +15,17 @@ Le [vRack](https://www.ovh.com/ca/fr/solutions/vrack/) est un réseau privé qui
 ## Prérequis
 
 - Posséder un [projet Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud.
-- [Avoir créer un utilisateur OpenStack](https://docs.ovh.com/ca/fr/public-cloud/horizon/#creer-un-compte-utilisateur-openstack).
-- [Avoir créer un utilisateur OpenStack](https://docs.ovh.com/ca/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/).
+- [Avoir créer un utilisateur OpenStack](/pages/platform/public-cloud/introducing_horizon#creer-un-compte-utilisateur-openstack).
+- [Avoir créer un utilisateur OpenStack](/pages/platform/public-cloud/create_and_delete_a_user).
 - Connaissances réseaux élémentaires.
-- Consulter le guide [Configuration du vRack Public Cloud](https://docs.ovh.com/ca/fr/publiccloud/network-services/public-cloud-vrack/) pour connaître les différentes méthodes proposées pour gérer le vRack Public Cloud OVHcloud.
-- Consulter le guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+- Consulter le guide [Configuration du vRack Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack) pour connaître les différentes méthodes proposées pour gérer le vRack Public Cloud OVHcloud.
+- Consulter le guide [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
 ## En pratique
 
 ### Étape 1 : Activer et gérer un vRack
 
-Connectez-vous aux APIv6 OVHcloud en suivant le guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/).
+Connectez-vous aux APIv6 OVHcloud en suivant le guide [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps).
 
 Une fois identifié, suivez les étapes décrites ci-dessous :
 
@@ -119,7 +116,7 @@ Une fois le bon de commande gratuit validé, un délai de quelques minutes peut 
 
 Une fois le vRack actif, il vous faudra intégrer votre ou vos projets Public Cloud dans le vRack.
 
-Connectez-vous aux APIv6 OVHcloud en suivant le guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/).
+Connectez-vous aux APIv6 OVHcloud en suivant le guide [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps).
 
 Dans le cas ou l’identifiant du projet Public Cloud n’est pas connu, les appels suivants vous permettront de le connaître.
 
@@ -190,7 +187,7 @@ Depuis les APIv6 OVHcloud, vous pourrez personnaliser l'ensemble des paramètres
 >
 > Contrairement aux serveurs dédiés, il n'est pas nécessaire de faire du vLan taggé directement sur l'instance.
 >
-> Pour plus d'informations sur la gestion des vLan du vRack des serveurs dédiés, vous pouvez consulter ce guide : [Créer plusieurs VLAN dans le vRack](https://docs.ovh.com/ca/fr/dedicated/creer-vlan-vrack/)
+> Pour plus d'informations sur la gestion des vLan du vRack des serveurs dédiés, vous pouvez consulter ce guide : [Créer plusieurs VLAN dans le vRack](/pages/cloud/dedicated/creating-multiple-vlans-in-a-vrack)
 
 > [!warning]
 > Le vRack étant une infrastructure gérée au niveau d'OVHcloud, vous ne pourrez l'administrer qu'au travers de l'espace client OVHcloud et des APIv6 OVHcloud.
@@ -513,9 +510,9 @@ Vous devrez renseigner a minima les champs suivants :
 
 ## Aller plus loin
 
-[Configuration du vRack Public Cloud](https://docs.ovh.com/ca/fr/publiccloud/network-services/public-cloud-vrack/)
+[Configuration du vRack Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack)
 
-[Premiers pas avec les API OVHcloud](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/)
+[Premiers pas avec les API OVHcloud](/pages/account/api/first-steps)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

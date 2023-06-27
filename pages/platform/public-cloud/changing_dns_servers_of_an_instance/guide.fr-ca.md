@@ -1,10 +1,7 @@
 ---
 title: "Modifier les serveurs DNS d'une instance Public Cloud"
-slug: modifier-les-serveurs-dns-dune-instance
 excerpt: "Découvrez comment modifier les serveurs DNS par défaut d’une instance Public Cloud"
 legacy_guide_number: 1985
-section: 'Réseau'
-order: 4
 updated: 2021-10-29
 ---
 
@@ -31,9 +28,9 @@ Vous pouvez ajouter un serveur secondaire ou remplacer cette configuration par l
 
 ## En pratique
 
-Connectez-vous sur votre instance en SSH. Reportez-vous au guide « [Se connecter à une instance Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-4-connexion-a-votre-instance) » pour plus d'informations à ce sujet.
+Connectez-vous sur votre instance en SSH. Reportez-vous au guide « [Se connecter à une instance Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#etape-4-connexion-a-votre-instance) » pour plus d'informations à ce sujet.
 
-Passer à l'utilisateur root. Si besoin, consultez notre guide pour [passer root et définir un mot de passe](https://docs.ovh.com/ca/fr/public-cloud/passer-root-et-definir-un-mot-de-passe/).
+Passer à l'utilisateur root. Si besoin, consultez notre guide pour [passer root et définir un mot de passe](/pages/platform/public-cloud/become_root_and_change_password).
 
 ### Debian / Ubuntu
 
@@ -134,7 +131,7 @@ DNS configuration:
 
 ### Sous Windows
 
-Connectez-vous à l'instance via une session bureau à distance ou avec la console VNC. Consultez le guide  « [Se connecter à une instance Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-4-connexion-a-votre-instance) » pour plus d'informations à ce sujet.
+Connectez-vous à l'instance via une session bureau à distance ou avec la console VNC. Consultez le guide  « [Se connecter à une instance Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#etape-4-connexion-a-votre-instance) » pour plus d'informations à ce sujet.
 
 Ouvrez les `Paramètres réseau`{.action}.
 
@@ -155,10 +152,10 @@ Dans un PowerShell, la commande `nslookup` permet de vérifier quel est le serve
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Créer une première instance Public Cloud et s’y connecter](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/)
+[Créer une première instance Public Cloud et s’y connecter](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Passer root et définir un mot de passe](https://docs.ovh.com/ca/fr/public-cloud/passer-root-et-definir-un-mot-de-passe/)
+[Passer root et définir un mot de passe](/pages/platform/public-cloud/become_root_and_change_password)
 
-[Modifier le hostname d’une instance Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/modifier-le-hostname-dune-instance/)
+[Modifier le hostname d’une instance Public Cloud](/pages/platform/public-cloud/changing_the_hostname_of_an_instance)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

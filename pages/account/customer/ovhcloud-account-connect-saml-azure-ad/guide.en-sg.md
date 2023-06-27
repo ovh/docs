@@ -1,9 +1,6 @@
 ---
 title: Enabling Azure AD SSO connections with your OVHcloud account
-slug: connect-saml-sso-azure-ad
 excerpt: "Find out how to associate your Azure Active Directory to your OVHcloud account using SAML 2.0"
-section: 'Advanced use'
-order: 02
 updated: 2023-04-05
 ---
 
@@ -18,7 +15,7 @@ You can use **Single Sign-On** (SSO) to connect to your OVHcloud account. To ena
 ## Requirements
 
 - Belong to the **Application Administrator** and **User Administrator** roles of an Azure AD service
-- An [OVHcloud account](https://docs.ovh.com/sg/en/customer/create-ovhcloud-account/)
+- An [OVHcloud account](/pages/account/customer/ovhcloud-account-creation)
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 ## Instructions
@@ -244,7 +241,7 @@ The created group should appear on the list.
 
 ### Connect via SSO
 
-On the [OVHcloud login page](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), enter your [NIC handle](https://docs.ovh.com/sg/en/customer/create-ovhcloud-account/#what-is-my-nic-handle) followed by **/idp** without entering a password, and click the `Login`{.action} button.
+On the [OVHcloud login page](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), enter your [NIC handle](/pages/account/customer/ovhcloud-account-creation#what-is-my-nic-handle) followed by **/idp** without entering a password, and click the `Login`{.action} button.
 
 ![Ovhcloud SSO Login step 1](images/ovhcloud_sso_login_1.png){.thumbnail}
 
@@ -260,7 +257,7 @@ Enter the Azure AD application user password and click on the `Sign In`{.action}
 
 ![Azure AD Login step 3](images/azure_ad_login_3.png){.thumbnail}
 
-You are now logged in with the same [NIC handle](https://docs.ovh.com/sg/en/customer/create-ovhcloud-account/#what-is-my-nic-handle), but via your Active Directory user and using your Azure AD application SSO.
+You are now logged in with the same [NIC handle](/pages/account/customer/ovhcloud-account-creation#what-is-my-nic-handle), but via your Active Directory user and using your Azure AD application SSO.
 
 ![Ovhcloud SSO Login step 2](images/ovhcloud_sso_login_2.png){.thumbnail}
 

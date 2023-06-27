@@ -1,9 +1,6 @@
 ---
 title: Gestionar un grupo de licencias Office 365 Reseller (CSP2) de OVHcloud
-slug: contratar-y-gestionar-un-grupo-de-licencias-office-365-revendedor-csp2-ovh
 excerpt: Cómo contratar y administrar un servicio Office 365 Reseller (CSP2) de OVHcloud
-section: Office
-order: 03
 updated: 2023-01-17
 ---
 

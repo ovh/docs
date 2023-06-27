@@ -1,9 +1,6 @@
 ---
 title: 'Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel'
-slug: ola-manager
 excerpt: 'Find out how to enable OVHcloud Link Aggregation in the OVHcloud Control Panel'
-section: 'Advanced use'
-order: 1
 updated: 2023-03-07
 ---
 
@@ -45,10 +42,10 @@ Make sure that both your interfaces, or interface groups, are selected and give 
 
 This may take a few minutes. Once it is complete, the next step is to configure the interfaces in your operating system via a NIC link or NIC team. For the method to use, refer to the following guides for the most popular operating systems:
 
-- [How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9](../ola-debian9/).
-- [How to Configure Your NIC for OVHcloud Link Aggregation in CentOS 7](../ola-centos7/).
-- [How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/).
-- [How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](https://docs.ovh.com/au/en/dedicated/ola-sles15/).
+- [How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9](/pages/cloud/dedicated/ola-enable-debian9).
+- [How to Configure Your NIC for OVHcloud Link Aggregation in CentOS 7](/pages/cloud/dedicated/ola-enable-centos7).
+- [How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019](/pages/cloud/dedicated/ola-enable-w2k19).
+- [How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](/pages/cloud/dedicated/ola-enable-sles15).
 
 ### Restoring OLA to default values
 
@@ -60,12 +57,12 @@ This may take a few minutes.
 
 ## Go further
 
-[How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9](../ola-debian9/)
+[How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9](/pages/cloud/dedicated/ola-enable-debian9)
 
-[How to Configure Your NIC for OVHcloud Link Aggregation in CentOS 7](../ola-centos7/)
+[How to Configure Your NIC for OVHcloud Link Aggregation in CentOS 7](/pages/cloud/dedicated/ola-enable-centos7)
 
-[How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/)
+[How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019](/pages/cloud/dedicated/ola-enable-w2k19)
 
-[How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](https://docs.ovh.com/au/en/dedicated/ola-sles15/)
+[How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](/pages/cloud/dedicated/ola-enable-sles15)
 
 Join our community of users on <https://community.ovh.com/en/>.

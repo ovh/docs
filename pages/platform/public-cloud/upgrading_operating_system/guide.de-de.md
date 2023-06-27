@@ -1,8 +1,6 @@
 ---
 title: "Betriebssystem aktualisieren"
-slug: upgrade-os
 excerpt: 'Erfahren Sie hier, wie Sie ein End-of-Life-Betriebssystem aktualisieren'
-section: 'Tutorials'
 updated: 2022-02-07
 ---
 
@@ -19,7 +17,7 @@ In diesem Tutorial werden die notwendigen Schritte beschrieben, um eine nicht me
 > [!alert]
 > Warnung: wie bei allen größeren Upgrades eines Betriebssystems besteht die Gefahr von Ausfall, Datenverlust oder Fehlschlagen der Softwarekonfiguration.
 >
-> OVHcloud empfiehlt Ihnen daher dringend, bevor Sie diesem Tutorial folgen, [Ihre Instanz zu sichern](../ein_backup_einer_instanz_erstellen/) und entsprechende Tests an Ihren Anwendungen durchzuführen, um sicherzustellen, dass diese auf der neuen Version des Betriebssystems funktionieren.
+> OVHcloud empfiehlt Ihnen daher dringend, bevor Sie diesem Tutorial folgen, [Ihre Instanz zu sichern](/pages/platform/public-cloud/save_an_instance) und entsprechende Tests an Ihren Anwendungen durchzuführen, um sicherzustellen, dass diese auf der neuen Version des Betriebssystems funktionieren.
 >
 
 > [!primary]
@@ -30,8 +28,8 @@ In diesem Tutorial werden die notwendigen Schritte beschrieben, um eine nicht me
 
 ## Voraussetzungen
 
-- Sie haben [Root-Zugriff auf den Server](../root-rechte_erlangen_und_passwort_festlegen/)
-- Sie haben [ein Backup Ihrer Instanz durchgeführt](../ein_backup_einer_instanz_erstellen/)
+- Sie haben [Root-Zugriff auf den Server](/pages/platform/public-cloud/become_root_and_change_password)
+- Sie haben [ein Backup Ihrer Instanz durchgeführt](/pages/platform/public-cloud/save_an_instance)
 
 ## In der praktischen Anwendung
 
@@ -135,7 +133,7 @@ $ Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-147-generic x86_64)
 > Wenn Sie das Betriebssystem wie beschrieben aktualisieren, anstatt es neu zu installieren, wird die neue Version Ihres Betriebssystems weder im Kundencenter / der OVHcloud API, noch in der Horizon / OpenStack API angezeigt werden.
 >
 
-Überprüfen Sie, ob Ihre Anwendungen wie gewohnt funktionieren. Im Falle eines Problems empfehlen wir Ihnen, das vor dem Update [durchgeführte Backup](../einen-virtuellen-server-aus-einem-backup-erstellen-wiederherstellen/) wiederherzustellen.
+Überprüfen Sie, ob Ihre Anwendungen wie gewohnt funktionieren. Im Falle eines Problems empfehlen wir Ihnen, das vor dem Update [durchgeführte Backup](/pages/platform/public-cloud/create_restore_a_virtual_server_with_a_backup) wiederherzustellen.
 
 ### Fedora
 
@@ -169,7 +167,7 @@ $ sudo dnf system-upgrade reboot
 Sobald die Version heruntergeladen wurde und der Update-Prozess gestartet wurde, startet der Server neu, um das Update abzuschließen.
 <br>Es kann einige Zeit dauern, bis Sie sich wieder mit dem Server verbinden können, da das Update einige Zeit in Anspruch nimmt.
 
-Überprüfen Sie, dass Ihre Anwendungen wie gewohnt funktionieren. Im Falle eines Problems empfehlen wir Ihnen, das vor dem Update [durchgeführte Backup](../einen-virtuellen-server-aus-einem-backup-erstellen-wiederherstellen/) wiederherzustellen.
+Überprüfen Sie, dass Ihre Anwendungen wie gewohnt funktionieren. Im Falle eines Problems empfehlen wir Ihnen, das vor dem Update [durchgeführte Backup](/pages/platform/public-cloud/create_restore_a_virtual_server_with_a_backup) wiederherzustellen.
 
 > [!primary]
 > Bei Schwierigkeiten finden Sie möglicherweise Antworten auf Ihre Fragen in der [Fedora Dokumentation](https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/){.external}.

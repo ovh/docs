@@ -1,9 +1,6 @@
 ---
 title: 'Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9'
-slug: ola-debian9
 excerpt: 'Erfahren Sie hier, wie Sie OLA auf Ihrem Debian 9 Server aktivieren'
-section: 'Fortgeschrittene Nutzung'
-order: 2
 updated: 2022-01-07
 ---
 
@@ -17,7 +14,7 @@ Die OVHcloud Link Aggregation (OLA) wurde von unseren Teams entwickelt, um die V
 
 ## Voraussetzungen
 
-- [Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation im OVHcloud Kundencenter](../ola-manager).
+- [Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation im OVHcloud Kundencenter](/pages/cloud/dedicated/ola-enable-manager).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 > [!warning]
@@ -88,10 +85,10 @@ Dieser Neustart kann einige Minuten dauern, da die Bond-Schnittstelle erstellt w
 
 ## Weiterführende Informationen
 
-[Konfigurieren der OVHcloud Link Aggregation im OVHcloud Kundencenter](../ola-manager/)
+[Konfigurieren der OVHcloud Link Aggregation im OVHcloud Kundencenter](/pages/cloud/dedicated/ola-enable-manager)
 
-[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in CentOS 7](../ola-centos7/)
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in CentOS 7](/pages/cloud/dedicated/ola-enable-centos7)
 
-[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/)
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Windows Server 2019](/pages/cloud/dedicated/ola-enable-w2k19)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

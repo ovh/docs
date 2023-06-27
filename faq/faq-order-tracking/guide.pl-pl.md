@@ -34,7 +34,7 @@ Zaloguj się do Panelu klienta, na dashboardzie (na środku strony) zobaczysz st
 
 #### Wskazówki i porady
 
-Aby ułatwić Ci zarządzanie zamówieniami, oddajemy w do Twojej dyspozycji [szczegółowy przewodnik](https://docs.ovh.com/pl/billing/zarzadzanie-zamowieniami-ovh/).
+Aby ułatwić Ci zarządzanie zamówieniami, oddajemy w do Twojej dyspozycji [szczegółowy przewodnik](/pages/account/billing/managing_ovh_orders).
 
 ### Jak mogę zmienić zamówienie?
 
@@ -47,7 +47,7 @@ Jeśli zapłaciłaś/eś już za Twoje zamówienie, zapraszamy do skontaktowania
 ### Jak anulować zamówienie?
 
 W przypadku nieuregulowania płatności, Twoje zamówienie zostanie automatycznie anulowane po upływie jego ważności.
-Jako osoba prywatna, jeżeli zapłaciłaś/eś już za Twoje zamówienie, ale zamówienie to nie łączy się ze spersonalizowaną usługą (jak nazwa domeny) lub z daną licencją (jak Office 365, SharePoint lub licencje systemów operacyjnych, paneli administracyjnych i dystrubycji), masz możliwość rezygnacji w ciągu 14 dni. Oddajemy do Twojej dyspozycji [szczegółowy przewodnik](https://docs.ovh.com/pl/billing/zarzadzanie-zamowieniami-ovh/#korzystanie-z-prawa-do-odstapienia-od-umowy), gdzie znajdziesz wszystkie niezbędne informacje na ten temat.
+Jako osoba prywatna, jeżeli zapłaciłaś/eś już za Twoje zamówienie, ale zamówienie to nie łączy się ze spersonalizowaną usługą (jak nazwa domeny) lub z daną licencją (jak Office 365, SharePoint lub licencje systemów operacyjnych, paneli administracyjnych i dystrubycji), masz możliwość rezygnacji w ciągu 14 dni. Oddajemy do Twojej dyspozycji [szczegółowy przewodnik](/pages/account/billing/managing_ovh_orders#korzystanie-z-prawa-do-odstapienia-od-umowy), gdzie znajdziesz wszystkie niezbędne informacje na ten temat.
 
 #### Wskazówki i porady
 

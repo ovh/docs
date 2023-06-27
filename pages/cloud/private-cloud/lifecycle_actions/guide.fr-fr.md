@@ -1,9 +1,6 @@
 ---
 title: "Cycle de vie du Hosted Private Cloud powered by VMware - Déterminer les actions à entreprendre"
-slug: lifecycle-actions
 excerpt: Découvrez les actions à mener sur votre offre Hosted Private Cloud powered by VMware, en fonction de ses caractéristiques
-section: FAQ
-order: 011
 updated: 2022-12-27
 ---
 
@@ -27,14 +24,14 @@ Dans ce guide, nous détaillons les actions à mener pour les sujets en cours :
 
 - Posséder une offre [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
 - Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Être connecté aux [API OVHCloud](https://api.ovh.com/){.external}. Au besoin, consultez le guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/) ».
-- Avoir [créé ses identifiants pour l'API OVHCloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/){.external}.
+- Être connecté aux [API OVHCloud](https://api.ovh.com/){.external}. Au besoin, consultez le guide « [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps) ».
+- Avoir [créé ses identifiants pour l'API OVHCloud](/pages/account/api/first-steps){.external}.
 
 ## En pratique
 
 ### Etape 1 - Récupérer les informations de votre service Hosted Private Cloud
 
-Connectez-vous aux APIv6 OVHcloud en suivant le guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/) ».
+Connectez-vous aux APIv6 OVHcloud en suivant le guide « [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps) ».
 
 Une fois identifié, suivez les quatres étapes décrites ci-dessous.
 
@@ -124,11 +121,11 @@ Renseignez les champs de l'appel avec les informations suivantes :
 
 Si votre datastore est située en salle 29 de notre datacentre de Roubaix, il est alors nécéssaire de changer d'espace de stockage. En effet, cette salle ne répond plus à nos critères de sécurité.
 
-Commencez par ajouter de nouveaux datastores en suivant le guide « [Ajouter des espaces de stockage](https://docs.ovh.com/fr/private-cloud/additional-storage/) ».
+Commencez par ajouter de nouveaux datastores en suivant le guide « [Ajouter des espaces de stockage](/pages/cloud/private-cloud/how_to_add_storage) ».
 
 Utilisez ensuite la fonctionalité *Storage vMotion* de VMware pour déplacer vos VMs vers vos nouveaux datastores. Vous pouvez consulter la documentation VMware « [Storage vMotion](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenterhost.doc/GUID-A15EE2F6-AAF5-40DC-98B7-0DF72E166888.html) ».
 
-Enfin, supprimez vos anciens datastores en suivant le guide « [Supprimer un datastore](https://docs.ovh.com/fr/private-cloud/suppression-data-store/) ».
+Enfin, supprimez vos anciens datastores en suivant le guide « [Supprimer un datastore](/pages/cloud/private-cloud/delete_datastore) ».
 
 #### Récupérer votre type de datastore
 
@@ -147,11 +144,11 @@ Renseignez les champs de l'appel avec les informations suivantes :
 
 Si la réponse au champ **fullprofile** ne commence pas par `2020-`, il est alors nécéssaire de passer aux nouvelles gammes de stockage. Ces dernières, en plus d'une meilleure qualité de service, bénéficient de meilleures performances liées notamment à une technologie full-SSD.
 
-Commencez par ajouter de nouveaux datastores en suivant le guide « [Ajouter des espaces de stockage](https://docs.ovh.com/fr/private-cloud/additional-storage/) ».
+Commencez par ajouter de nouveaux datastores en suivant le guide « [Ajouter des espaces de stockage](/pages/cloud/private-cloud/how_to_add_storage) ».
 
 Utilisez ensuite la fonctionalité *Storage vMotion* de VMware pour déplacer vos VMs vers vos nouveaux datastores. Vous pouvez consulter la documentation VMware « [Storage vMotion](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenterhost.doc/GUID-A15EE2F6-AAF5-40DC-98B7-0DF72E166888.html) ».
 
-Enfin, supprimez vos anciens datastores en suivant le guide « [Supprimer un datastore](https://docs.ovh.com/fr/private-cloud/suppression-data-store/) ».
+Enfin, supprimez vos anciens datastores en suivant le guide « [Supprimer un datastore](/pages/cloud/private-cloud/delete_datastore) ».
 
 ### Cycle de vie des hosts 
 
@@ -174,7 +171,7 @@ Renseignez les champs de l'appel avec les informations suivantes :
 
 Si la réponse au champ **profile** est `Dedicated Cloud`, il est alors nécéssaire de passer aux nouvelles gammes. En effet, ces hosts ne sont plus compatibles avec les dernières versions d'ESXi et ne peuvent donc plus être supportés par VMware ou OVHcloud.
 
-Pour réaliser votre migration, vous pouvez suivre ce guide : [Migrer vers une nouvelle infrastructure](https://docs.ovh.com/fr/private-cloud/vdc-migration/).
+Pour réaliser votre migration, vous pouvez suivre ce guide : [Migrer vers une nouvelle infrastructure](/pages/cloud/private-cloud/service-migration-vdc).
 
 ### Cycle de vie des composants software
 

@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - ¿Cómo bloquear el acceso a mi sitio web para determinadas direcciones IP a través de un archivo .htaccess?"
-slug: htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website
 excerpt: "Descubra las posibles acciones a través de un archivo .htaccess para bloquear el acceso a su sitio web a determinadas direcciones IP."
-section: Reescritura y autenticación
-order: 01
 updated: 2022-09-12
 ---
 
@@ -20,7 +17,7 @@ Este tutorial le ayudará a proteger el acceso a sus sitios web de la red exteri
 
 Esto se puede lograr a través de un archivo ".htaccess", un archivo de texto en particular detectado por el servidor web (Apache), que permite establecer reglas especiales para un directorio y todos sus subdirectorios.
 
-Puede crear varios archivos ".htaccess" en [el espacio FTP](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) de su alojamiento, pero **un solo** por directorio o subdirectorio para evitar conflictos entre diferentes ficheros ".htaccess".
+Puede crear varios archivos ".htaccess" en [el espacio FTP](/pages/web/hosting/ftp_connection) de su alojamiento, pero **un solo** por directorio o subdirectorio para evitar conflictos entre diferentes ficheros ".htaccess".
 
 **Descubra cómo bloquear el acceso a su sitio web para algunas direcciones IP a través de un archivo ".htaccess".**
 
@@ -43,14 +40,14 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 >
 > La configuración de un archivo ".htaccess" se aplica al directorio en el que está instalado y a todos sus subdirectorios.
 >
-> Para editar (o crear) estos directorios, conéctese al espacio FTP de su alojamiento. Si lo necesita, consulte la guía "Acceder a mi espacio de almacenamiento" (https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/).
+> Para editar (o crear) estos directorios, conéctese al espacio FTP de su alojamiento. Si lo necesita, consulte la guía "Acceder a mi espacio de almacenamiento" (/pages/web/hosting/ftp_connection).
 >
 
 ### Bloquear una IP, un rango de IP, un dominio o todas las IP de un país 
 
 Hay varias reglas disponibles para bloquear los accesos al alojamiento a través del ".htaccess".<br>
 Preste especial atención a la sintaxis y a los parámetros que bloquee para evitar que se bloquee usted mismo durante la consulta de sus sitios web y/o scripts alojados.<br>
-En caso de error, puede conectarse a [el espacio FTP](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) de su alojamiento para corregir la situación. 
+En caso de error, puede conectarse a [el espacio FTP](/pages/web/hosting/ftp_connection) de su alojamiento para corregir la situación. 
 
 > [!primary]
 >
@@ -369,8 +366,8 @@ Para autorizar a todas las IP de un país a acceder al servicio, introduzca uno 
 
 Independientemente de la seguridad en el acceso general al alojamiento, el archivo ".htaccess" permite realizar otras acciones. A continuación encontrará otros tres tutoriales de OVHcloud sobre el tema:
 
-- [Proteger la interfaz de administración de su sitio web a través del ".htaccess"](https://docs.ovh.com/us/es/hosting/compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion/).
-- [Reescribir sus URLs gracias al "mod_rewrite"](https://docs.ovh.com/us/es/hosting/web_hosting_htaccess_reescritura_de_url_con_mod_rewrite/).
+- [Proteger la interfaz de administración de su sitio web a través del ".htaccess"](/pages/web/hosting/htaccess_protect_directory_by_password).
+- [Reescribir sus URLs gracias al "mod_rewrite"](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite).
 
 ## Más información <a name="go-further"></a>
 

@@ -1,9 +1,6 @@
 ---
 title: 'Creating and managing a database in your Web Hosting plan'
-slug: creating-database
 excerpt: 'Find out how to use databases included in an OVHcloud Web Hosting plan'
-section: Databases
-order: 01
 updated: 2022-02-03
 ---
 
@@ -101,7 +98,7 @@ The login details will be pre-filled in the new window; you will only have to en
 
 For every Web Hosting database, snapshots will be automatically created daily (up to 32 entities). This means you can simply restore an earlier version of a database from your OVHcloud Control Panel. 
 
-To verify the available snapshots and their creation timestamp, click on the symbol right next to the green circle in your database table. You can also download each backup of a database from here. For detailed information about this topic, please refer to our guide on [Retrieving the backup of a Web Hosting plan’s database](../web_hosting_database_export_guide).
+To verify the available snapshots and their creation timestamp, click on the symbol right next to the green circle in your database table. You can also download each backup of a database from here. For detailed information about this topic, please refer to our guide on [Retrieving the backup of a Web Hosting plan’s database](/pages/web/hosting/sql_database_export).
 
 #### Understanding common issues
 
@@ -117,17 +114,17 @@ It is best practice to always use the actual database name for scripts and confi
 
 If a Web Hosting database exceeds the recommended storage space, it will be automatically switched to "read only" / "select only". The administrator will receive a notification by email.
 
-After the database has been optimised (purged), you can recalculate its quota in your OVHcloud Control Panel to have it unlocked again. It is best practice to download the database, manage the revision locally and then replace it via import. Please refer to [this guide](../web_hosting_optimise_your_website_performance/#step-7-optimise-your-database) for further information.
+After the database has been optimised (purged), you can recalculate its quota in your OVHcloud Control Panel to have it unlocked again. It is best practice to download the database, manage the revision locally and then replace it via import. Please refer to [this guide](/pages/web/hosting/optimise_your_website_performance#step-7-optimise-your-database) for further information.
 
 
 ## Go further
 
-[Changing the password for a Web Hosting plan database](../change-password-database)
+[Changing the password for a Web Hosting plan database](/pages/web/hosting/sql_change_password)
 
-[Retrieving the backup of a Web Hosting plan’s database](../web_hosting_database_export_guide)
+[Retrieving the backup of a Web Hosting plan’s database](/pages/web/hosting/sql_database_export)
 
-[Importing a backup into a Web Hosting plan database](../web_hosting_guide_to_importing_a_mysql_database)
+[Importing a backup into a Web Hosting plan database](/pages/web/hosting/sql_importing_mysql_database)
 
-[Optimise your website’s performance](../web_hosting_optimise_your_website_performance)
+[Optimise your website’s performance](/pages/web/hosting/optimise_your_website_performance)
 
 Join our community of users on <https://community.ovh.com/en/>.

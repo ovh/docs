@@ -1,9 +1,6 @@
 ---
 title: 'Partilhado: Utilização do Putty em Windows'
 excerpt: 'Partilhado: Utilização do Putty em Windows'
-slug: partilhado_utilizacao_do_putty_em_windows
-section: FTP e SSH
-order: 08
 updated: 2020-05-05
 ---
 
@@ -21,7 +18,7 @@ Será então necessário ter consigo os seus identificadores FTP
 - Password FTP.
 
 Encontrará estas informações no Painel de configuração. Aceda à secção FTP ou siga as instruções abaixo
-[este guia](../aceder-espaco-de-armazenamento-ftp-alojamento-web/).
+[este guia](/pages/web/hosting/ftp_connection).
 
 
 ## Inicio do Putty

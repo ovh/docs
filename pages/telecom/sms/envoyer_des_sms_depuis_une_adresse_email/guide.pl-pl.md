@@ -1,8 +1,6 @@
 ---
 title: 'Wysyłanie wiadomości SMS z adresu e-mail'
-slug: wysylanie-wiadomosci-sms-z-adresu-e-mail
 excerpt: 'Dowiedz się, jak wysyłać wiadomości SMS z adresu e-mail'
-section: 'Wysyłanie wiadomości SMS'
 updated: 2020-06-04
 ---
 
@@ -88,7 +86,7 @@ Otrzymany rezultat powinien wyglądać jak poniżej. Domyślnie wiadomość SMS 
 Jeśli chcesz użyć numeru skróconego umożliwiającego otrzymanie odpowiedzi, jako nadawcę wprowadź senderForResponse=1.
 >
 
-Aby uzyskać szczegółowe informacje na temat użytkowników SMS, zapoznaj się z następującym przewodnikiem: [Informacje o użytkownikach wiadomości SMS](../informacje-o-uzytkownikach-sms/)
+Aby uzyskać szczegółowe informacje na temat użytkowników SMS, zapoznaj się z następującym przewodnikiem: [Informacje o użytkownikach wiadomości SMS](/pages/telecom/sms/tout_savoir_sur_les_utilisateurs_sms)
 
 
 ### Etap 2: dodawanie pól opcjonalnych

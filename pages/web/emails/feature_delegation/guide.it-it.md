@@ -1,10 +1,7 @@
 ---
 title: delegare la gestione dei tuoi account email a un'altra persona
 legacy_guide_number: 1933
-slug: deleguer-gestione-email-altro-identificativo
 excerpt: Come delegare la gestione degli account email della tua soluzione MX Plan
-section: Funzionalità degli indirizzi email
-order: 05
 updated: 2021-10-08
 ---
 
@@ -84,6 +81,6 @@ Per gestire ogni account email è possibile aggiungere diverse credenziali OVHcl
 
 ## Per saperne di più
 
-[Iniziare a utilizzare la soluzione MX Plan](https://docs.ovh.com/it/emails/informazioni-generali-email-condivise/)
+[Iniziare a utilizzare la soluzione MX Plan](/pages/web/emails/email_generalities)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

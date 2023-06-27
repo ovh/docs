@@ -1,8 +1,6 @@
 ---
 title: Enable the Private Gateway
-slug: private-gateway
 excerpt: Learn how to enable Private Gateway on a Hosted Private Cloud infrastructure
-section: OVHcloud Features
 hidden: true
 updated: 2023-01-06
 ---
@@ -31,7 +29,7 @@ The vSphere interface is accessible by default over the Internet. For infrastruc
 * An [OVHcloud Private Cloud](https://www.ovh.co.uk/private-cloud/){.external} solution
 * Access to the vSphere interface
 * Being connected to [OVHcloud API](https://api.ovh.com/){.external}.
-* Creating [OVHcloud API credentials](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/){.external}.
+* Creating [OVHcloud API credentials](/pages/account/api/first-steps){.external}.
 
 ## Instructions
 
@@ -48,7 +46,7 @@ The vSphere interface is accessible by default over the Internet. For infrastruc
 ### Prerequisites
 
 * Creating a Portgroup on the vRack to connect the private gateway. It must be under the right datacenter.
-* Having added the private gateway network to [restrictions per source IP](https://docs.ovh.com/gb/en/private-cloud/control-panel-ovh-private-cloud/).
+* Having added the private gateway network to [restrictions per source IP](/pages/cloud/private-cloud/manager_ovh_private_cloud).
 * Adding a entry in file /etc/hosts or C:\Windows\system32\etc\hosts for pcc-X-X-X-X.ovh.com with the private IP
 
 ### Enable the Private Gateway

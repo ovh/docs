@@ -1,9 +1,6 @@
 ---
 title: 'Cambiar de facturación por horas a mensual'
 excerpt: 'Cómo cambiar la modalidad de facturación de una instancia de Public Cloud'
-slug: cambiar-modalidad-facturacion-public-cloud
-section: 'Gestión del proyecto'
-order: 07
 updated: 2023-01-23
 ---
 
@@ -62,7 +59,7 @@ Sustituya "InstanceID" por el ID de la instancia correspondiente. Puede obtener 
 
 ### Desde la API OVHcloud
 
-Conéctese a la [interfaz API OVHcloud](https://eu.api.ovh.com/) según la [guía adecuada](https://docs.ovh.com/es/api/first-steps-with-ovh-api/) y siga los pasos que se indican a continuación.
+Conéctese a la [interfaz API OVHcloud](https://eu.api.ovh.com/) según la [guía adecuada](/pages/account/api/first-steps) y siga los pasos que se indican a continuación.
 
 Utilice la siguiente llamada:
 

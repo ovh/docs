@@ -1,9 +1,6 @@
 ---
 title: 'Web hosting: PuTTY en Windows'
 excerpt: 'Web hosting: PuTTY en Windows'
-slug: web_hosting_putty_en_windows
-section: FTP y SSH
-order: 08
 updated: 2020-05-05
 ---
 
@@ -21,7 +18,7 @@ También necesitará sus usuarios FTP:
 - Contraseña FTP 
 
 Puede consultar esta información en el Panel de control. Acceda a la sección FTP o siga las instrucciones que se indican a continuación 
-[esta guía](../conexion-espacio-almacenamiento-ftp-alojamiento-web/).
+[esta guía](/pages/web/hosting/ftp_connection).
 
 
 ## Ejecutar PuTTY

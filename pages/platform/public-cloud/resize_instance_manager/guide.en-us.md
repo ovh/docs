@@ -1,9 +1,6 @@
 ---
 title: Resize an instance
-slug: resize-an-instance-manager
 excerpt: "Find out how to resize an instance in the OVHcloud Manager"
-section: Management via Control Panel
-order: 6
 updated: 2022-08-24
 ---
 
@@ -51,7 +48,7 @@ In the new tab, scroll down to the **Template** section to select the model of y
 If your disk is equal or smaller to 50GB, you can switch to a `Flexible instance`{.action} if desired.
 
 > [!warning]
-> Note that in case you are editing a flex instance, it is not possible to revert to a classic instance via the control panel. For more information, please consult our guide on [Revert a flex instance](https://docs.ovh.com/us/en/public-cloud/revert-a-flex-instance/).
+> Note that in case you are editing a flex instance, it is not possible to revert to a classic instance via the control panel. For more information, please consult our guide on [Revert a flex instance](/pages/platform/public-cloud/revert_a_flex_instance).
 >
 
 Once the selection has been made, click on `Modify template`{.action} to confirm your choice.

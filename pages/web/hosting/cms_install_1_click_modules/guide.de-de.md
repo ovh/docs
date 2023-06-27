@@ -1,9 +1,6 @@
 ---
 title: "Installation Ihrer Website mit 1-Klick-Modulen (CMS)"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Website mithilfe unserer 1-Klick-Module installieren"
-slug: webhosting_installation_von_webhosting-modulen
-section: CMS
-order: 01
 updated: 2023-03-28
 ---
 
@@ -26,10 +23,10 @@ updated: 2023-03-28
 
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit mindestens einer Datenbank.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie verwenden eine [kompatible PHP-Version](https://docs.ovh.com/de/hosting/konfiguration_von_php_fur_ein_ovh_webhosting_2014/) auf Ihrem Webhosting. 
-- Ihre [.ovhconfig-Datei ist korrekt konfiguriert](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/).
+- Sie verwenden eine [kompatible PHP-Version](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014) auf Ihrem Webhosting. 
+- Ihre [.ovhconfig-Datei ist korrekt konfiguriert](/pages/web/hosting/ovhconfig_configuration).
 - Das Verzeichnis (Wurzelverzeichnis), in dem Ihr 1-Klick-Modul installiert wird, muss leer sein oder noch nicht vorhanden.
-- Der Domainname (und gegebenenfalls die Subdomain) Ihrer Website ist auf Ihrem OVHcloud Webhosting als [Multisite](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/) deklariert.
+- Der Domainname (und gegebenenfalls die Subdomain) Ihrer Website ist auf Ihrem OVHcloud Webhosting als [Multisite](/pages/web/hosting/multisites_configure_multisite) deklariert.
 
 ## In der praktischen Anwendung
 
@@ -61,7 +58,7 @@ Wählen Sie im neu angezeigten Fenster das gewünschte CMS aus und dann den Doma
 
 ![Modulauswahl](images/add_a_module.png){.thumbnail}
 
-Wenn der Domainname nicht in der Liste steht, gehen Sie in zum Tab `Multisite`{.action}, um ihn hinzuzufügen. Wenn nötig lesen Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/)".
+Wenn der Domainname nicht in der Liste steht, gehen Sie in zum Tab `Multisite`{.action}, um ihn hinzuzufügen. Wenn nötig lesen Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web/hosting/multisites_configure_multisite)".
 
 Anschließend versuchen Sie erneut, ein Modul zu installieren.
 
@@ -104,8 +101,8 @@ Geben Sie die Verbindungsdaten zu Ihrer Datenbank ein.
 Es gibt mehrere Möglichkeiten:
 
 - Die Datenbank ist bereits auf Ihrem Webhosting erstellt: Wählen Sie Ihre Datenbank unter `Wählen Sie die Datenbank aus`{.action} und geben Sie die erforderlichen Informationen ein.
-- Die Datenbank ist noch nicht auf Ihrem Webhosting erstellt: [Erstellen Sie Ihre Datenbank auf dem Hosting](https://docs.ovh.com/de/hosting/datenbank-erstellen/), w0,ählen Sie Ihre Datenbank unter `Wählen Sie die Datenbank aus`{.action} und geben Sie die erforderlichen Informationen ein.
-- Die Datenbank befindet sich auf einer [Instanz von Web Cloud Databases](https://docs.ovh.com/de/clouddb/datenbank-und-benutzer-erstellen/): Wählen Sie unter `Wählen Sie die Datenbank aus`{.action} die Option `Datenbank außerhalb Ihres Webhostings`{.action} und tragen Sie die Verbindungsdaten Ihrer Datenbank ein. Die Instanz und das Webhosting müssen im gleichen Rechenzentrum gehostet werden.
+- Die Datenbank ist noch nicht auf Ihrem Webhosting erstellt: [Erstellen Sie Ihre Datenbank auf dem Hosting](/pages/web/hosting/sql_create_database), w0,ählen Sie Ihre Datenbank unter `Wählen Sie die Datenbank aus`{.action} und geben Sie die erforderlichen Informationen ein.
+- Die Datenbank befindet sich auf einer [Instanz von Web Cloud Databases](/pages/web/clouddb/create-db-and-user-on-db-server): Wählen Sie unter `Wählen Sie die Datenbank aus`{.action} die Option `Datenbank außerhalb Ihres Webhostings`{.action} und tragen Sie die Verbindungsdaten Ihrer Datenbank ein. Die Instanz und das Webhosting müssen im gleichen Rechenzentrum gehostet werden.
 - Die Datenbank wurde auf einem anderen OVHcloud Webhosting eingerichtet: Wählen Sie unter `Wählen Sie die Datenbank aus`{.action} die Option `Datenbank außerhalb Ihres Webhostings`{.action} und tragen Sie die Verbindungsdaten Ihrer Datenbank ein. Die Datenbank und das Webhosting mit dem neuen Modul müssen im gleichen Rechenzentrum gehostet werden.
 
 Für die Datenbank sind folgende Angaben erforderlich:
@@ -121,9 +118,9 @@ Für die Datenbank sind folgende Angaben erforderlich:
 
 - *Name der Datenbank*: Dieser Name wurde bei der Erstellung der Datenbank im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) festgelegt.
 
-- *Port*: Geben Sie die Nummer **3306** (Standard-Port) für eine Webhosting-Datenbank ein. Für Datenbanken auf einer Web Cloud Databases Instanz folgen Sie [dieser Anleitung](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/).
+- *Port*: Geben Sie die Nummer **3306** (Standard-Port) für eine Webhosting-Datenbank ein. Für Datenbanken auf einer Web Cloud Databases Instanz folgen Sie [dieser Anleitung](/pages/web/clouddb/starting_with_clouddb).
 
-- *Benutzername*: Er ist identisch für Datenbanken, die in einem Webhosting inklusive sind. Für Datenbanken, die mit Web Cloud Databases erstellt wurden, folgen Sie [dieser Anleitung](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/).
+- *Benutzername*: Er ist identisch für Datenbanken, die in einem Webhosting inklusive sind. Für Datenbanken, die mit Web Cloud Databases erstellt wurden, folgen Sie [dieser Anleitung](/pages/web/clouddb/starting_with_clouddb).
 
 - *Passwort*: Das Passwort wurde Ihnen bei der Erstellung der Datenbank per E-Mail gesendet. Möglicherweise haben Sie es inzwischen geändert.
 
@@ -133,9 +130,9 @@ Wenn Sie alle Informationen eingegeben haben, klicken Sie auf den Button `Weiter
 >
 > Wenn die von Ihnen angegebenen Informationen nicht korrekt sind, wird die Installation abgebrochen. Um dies zu vermeiden, testen Sie zunächst die Verbindung zu Ihrer Datenbank.
 > 
-> Um die Login-Daten zu Ihrer Webhosting-Datenbank zu erfahren, lesen Sie [diese Anleitung](https://docs.ovh.com/de/hosting/datenbank-erstellen/).
+> Um die Login-Daten zu Ihrer Webhosting-Datenbank zu erfahren, lesen Sie [diese Anleitung](/pages/web/hosting/sql_create_database).
 >
-> Um die Login-Daten zu einer auf Web Cloud Databases erstellten Datenbank zu erfahren, lesen Sie [diese Anleitung](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/).
+> Um die Login-Daten zu einer auf Web Cloud Databases erstellten Datenbank zu erfahren, lesen Sie [diese Anleitung](/pages/web/clouddb/starting_with_clouddb).
 >
 
 ##### Konfiguration des Moduls
@@ -144,7 +141,7 @@ Geben Sie die folgenden Informationenein, um das Modul zu konfigurieren:
 
 - *Name oder E-Mail-Adresse des Administrators:* Kennung, die Sie verwenden, um sich mit der Verwaltungsoberfläche Ihres CMS zu verbinden (Backend).
 - *Passwort:* Passwort, das Sie verwenden, um sich mit der Verwaltungsoberfläche Ihres CMS zu verbinden.
-- *Domain:* Domainname, mit dem Sie Ihr CMS installieren möchten. Lesen Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/)" um mehr zu erfahren.
+- *Domain:* Domainname, mit dem Sie Ihr CMS installieren möchten. Lesen Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web/hosting/multisites_configure_multisite)" um mehr zu erfahren.
 - *Sprache:* Sprache, in der das CMS installiert wird.
 - *Installationspfad:* Wird bei der Auswahl des Domainnamens automatisch ausgewählt. Ergänzen Sie ihn mit Unterverzeichnissen, falls gewünscht (für fortgeschrittene Benutzer).
 
@@ -187,15 +184,15 @@ Wenn Sie Hilfe zu den Funktionen Ihrer Website benötigen, gehen Sie auf die off
 
 [Finden Sie das richtige CMS für Ihre Website](https://www.ovhcloud.com/de/web-hosting/uc-cms-comparison/){.external}
 
-[Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}
+[Mehrere Websites auf einem Webhosting einrichten](/pages/web/hosting/multisites_configure_multisite){.external}
 
-[Verwaltung einer Datenbank in Ihrem Webhosting](https://docs.ovh.com/de/hosting/verwaltung-einer-datenbank-in-ihrem-webhosting/){.external}
+[Verwaltung einer Datenbank in Ihrem Webhosting](/pages/web/hosting/sql_create_database){.external}
 
 Entdecken Sie unsere [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/){.external}
 
-[CMS verwalten](https://docs.ovh.com/de/hosting/1-click-module-management/)
+[CMS verwalten](/pages/web/hosting/cms_manage_1_click_module)
 
-[Ihr CMS deinstallieren](https://docs.ovh.com/de/hosting/1-click-module-management/#schritt-3-ihr-modul-loschen)
+[Ihr CMS deinstallieren](/pages/web/hosting/cms_manage_1_click_module#schritt-3-ihr-modul-loschen)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

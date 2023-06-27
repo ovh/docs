@@ -1,8 +1,6 @@
 ---
 title: FAQ
-slug: ceph/faq
 excerpt: 'Frequently asked questions'
-section: Cloud Disk Array
 updated: 2020-11-05
 ---
 

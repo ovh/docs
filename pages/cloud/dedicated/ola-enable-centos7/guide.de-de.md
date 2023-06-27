@@ -1,9 +1,6 @@
 ---
 title: 'Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in CentOS 7'
-slug: ola-centos7
 excerpt: 'Die OVHcloud Link Aggregation auf Ihrem CentOS 7-Server aktivieren'
-section: 'Fortgeschrittene Nutzung'
-order: 3
 updated: 2021-03-25
 ---
 
@@ -17,7 +14,7 @@ Die OVHcloud Link Aggregation (OLA) wurde von unseren Teams entwickelt, um die V
 
 ## Voraussetzungen
 
-- [Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation im OVHcloud Kundencenter](../ola-manager).
+- [Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation im OVHcloud Kundencenter](/pages/cloud/dedicated/ola-enable-manager).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
@@ -143,10 +140,10 @@ Um zu testen, ob die Verbindung funktioniert, senden Sie einen Ping-Befehl an ei
 
 ## Weiterführende Informationen
 
-[Konfigurieren der OVHcloud Link Aggregation im OVHcloud Kundencenter](../ola-manager/)
+[Konfigurieren der OVHcloud Link Aggregation im OVHcloud Kundencenter](/pages/cloud/dedicated/ola-enable-manager)
 
-[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9](../ola-debian9/)
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9](/pages/cloud/dedicated/ola-enable-debian9)
 
-[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/)
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Windows Server 2019](/pages/cloud/dedicated/ola-enable-w2k19)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

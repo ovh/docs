@@ -1,11 +1,8 @@
 ---
 title: Wprowadzenie do vRealize Operations - vROPS (EN)
-slug: vrops-introduction
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/vrops-introduction/'
+    canonical: '/pages/cloud/private-cloud/vrops_introduction'
 excerpt: Connect to vROPS and check the basics of your infrastructure
-section: vRops
-order: 01
 updated: 2022-02-23
 ---
 

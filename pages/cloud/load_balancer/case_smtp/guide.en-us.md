@@ -1,8 +1,6 @@
 ---
 title: 'Configuring SMTP on a Load Balancer service'
-slug: case-smtp
 excerpt: 'Find out how to use SMTP with the OVH Load Balancer'
-section: 'Use case'
 updated: 2018-12-28
 ---
 
@@ -50,7 +48,7 @@ Via the OVH API, in the section:
 > @api {GET} /ipLoadbalancing
 > 
 
-For more information on the API’s features, you can refer to the following guide: [Load Balancer API Quick Reference](https://docs.ovh.com/us/en/load-balancer/iplb-api-reference/){.ref}
+For more information on the API’s features, you can refer to the following guide: [Load Balancer API Quick Reference](/pages/cloud/load_balancer/use_api_reference){.ref}
 
 
 ## Add a server farm.

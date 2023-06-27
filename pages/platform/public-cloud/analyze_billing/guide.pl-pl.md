@@ -1,9 +1,6 @@
 ---
 title: 'Rozliczanie należności za usługę Public Cloud'
-slug: analizowanie_platnosci_i_zarzadzanie_nimi
 excerpt: 'Zasady i modele naliczania opłat'
-section: 'Pierwsze kroki'
-order: 2
 updated: 2022-08-29
 ---
 
@@ -26,7 +23,7 @@ Przypomina to model rozliczenia stosowany przez niektórych operatorów telefoni
 ## Wymagania początkowe
 
 * [projekt Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na koncie OVHcloud
-* [instancja Public Cloud](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/#krok-3-tworzenie-instancji){.external}
+* [instancja Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#krok-3-tworzenie-instancji){.external}
 * dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## Ogólna zasada
@@ -140,7 +137,7 @@ W przypadku instancji typu godzinowego można zawieś  na półkę (*shelve*) in
 > Proces ten działa tylko w przypadku instancji rozliczanych w modelu godzinowym. Nie powoduje on zatrzymania rozliczania instancji, ale zmniejsza koszty.
 >
 
-Aby uzyskać więcej informacji, zapoznaj się z tym [przewodnikiem](https://docs.ovh.com/pl/public-cloud/wstrzymanie_lub_uspienie_instancji/)
+Aby uzyskać więcej informacji, zapoznaj się z tym [przewodnikiem](/pages/platform/public-cloud/suspend_or_pause_an_instance)
 
 #### Rozliczenie miesięczne
 

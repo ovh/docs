@@ -1,9 +1,6 @@
 ---
 title: "Mettere in sicurezza un server dedicato"
-slug: mettere-in-sicurezza-un-server-dedicato
 excerpt: "Scopri come proteggere un server dedicato grazie ad alcuni suggerimenti"
-section: "Per iniziare"
-order: 2
 updated: 2023-02-24
 ---
 
@@ -36,7 +33,7 @@ Al momento dell'ordine del tuo server dedicato, puoi scegliere una distribuzione
 >
 > Ricordate che questa guida generale si basa su un sistema operativo Ubuntu Server. Alcuni comandi devono essere adattati alla distribuzione utilizzata e alcuni trucchi ti invitano a utilizzare strumenti di terze parti. In caso di necessità, consulta la documentazione ufficiale relativa a queste applicazioni.
 >
-> Per configurare il tuo primo server dedicato OVHcloud, consulta la nostra guida [Iniziare a utilizzare un server dedicato](https://docs.ovh.com/it/dedicated/iniziare-a-utilizzare-server-dedicato/).
+> Per configurare il tuo primo server dedicato OVHcloud, consulta la nostra guida [Iniziare a utilizzare un server dedicato](/pages/cloud/dedicated/getting-started-with-dedicated-server).
 >
 
 Questi esempi presuppongono la connessione come utente con elevate autorizzazioni.
@@ -108,7 +105,7 @@ ssh username@IPv4_of_your_server -p NewPortNumber
 
 ### Modifca la password associata all’utente “root”
 
-Ti consigliamo vivamente di modificare la password dell'utente root per non lasciarla al valore predefinito su un nuovo sistema. Per maggiori informazioni, consulta [questa guida](https://docs.ovh.com/it/dedicated/modificare-password-root-server-linux/).
+Ti consigliamo vivamente di modificare la password dell'utente root per non lasciarla al valore predefinito su un nuovo sistema. Per maggiori informazioni, consulta [questa guida](/pages/cloud/dedicated/changing_root_password_linux_ds).
 
 ### Crea un account con diritti utente limitati
 
@@ -171,7 +168,7 @@ Le distribuzioni GNU/Linux correnti sono fornite con un servizio di firewall chi
 iptables -L
 ```
 
-Per maggiori informazioni su iptables, consulta la nostra [guida dedicata](https://docs.ovh.com/it/dedicated/firewall-iptables/).
+Per maggiori informazioni su iptables, consulta la nostra [guida dedicata](/pages/cloud/dedicated/firewall-Linux-iptable).
 
 Ti consigliamo di creare e adattare le regole del firewall in base alle tue necessità. Per maggiori informazioni sulle diverse operazioni, consulta la documentazione ufficiale della distribuzione utilizzata.
 
@@ -251,7 +248,7 @@ Per maggiori informazioni e raccomandazioni su Fail2ban, consulta [la documentaz
 
 Le soluzioni OVHcloud includono la possibilità di attivare un firewall al punto di ingresso dell'infrastruttura, il Network Firewall. La corretta configurazione di questo firewall permette di bloccare le connessioni prima che arrivino sul tuo server.
 
-Per attivare il Network Firewall, consulta la guida [Configurare il Network Firewall](https://docs.ovh.com/it/dedicated/firewall-network/).
+Per attivare il Network Firewall, consulta la guida [Configurare il Network Firewall](/pages/cloud/dedicated/firewall_network).
 
 
 ### Proteggi il tuo sistema e i tuoi dati
@@ -265,13 +262,13 @@ Il concetto di sicurezza non si limita esclusivamente alla protezione di un sist
 
 Per copiare i tuoi dati e trasferirli nel tuo spazio di backup, avrai bisogno di una soluzione di backup esterna.
 
-Per ulteriori informazioni sulle nostre soluzioni di backup, consulta la guida [Backup storage](https://docs.ovh.com/it/dedicated/servizio-backup-storage/).
+Per ulteriori informazioni sulle nostre soluzioni di backup, consulta la guida [Backup storage](/pages/cloud/dedicated/services_backup_storage).
 
 ## Per saperne di più
 
-[Configura il firewall su Windows](https://docs.ovh.com/it/dedicated/firewall-windows/)
+[Configura il firewall su Windows](/pages/cloud/dedicated/activate-port-firewall-soft-win)
 
-[Network Firewall](https://docs.ovh.com/it/dedicated/firewall-network/)
+[Network Firewall](/pages/cloud/dedicated/firewall_network)
 
 Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 

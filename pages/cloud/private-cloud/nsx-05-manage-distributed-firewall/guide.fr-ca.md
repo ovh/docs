@@ -1,9 +1,6 @@
 ---
 title: Gestion du pare-feu distribué dans NSX
-slug: nsx-manage-distributed-firewall
 excerpt: "Découvrez la gestion du pare-feu distribué au travers de la création d'une règle qui bloque le trafic entre une machine virtuelle et l'ensemble des machines virtuelles d'un autre segment"
-section: NSX
-order: 05
 updated: 2023-02-27
 ---
 
@@ -27,7 +24,7 @@ Pour simplifier l'administration de NSX, il est possible de positionner des marq
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)).
-- Avoir **NSX** déployé avec deux segments configurés dans votre configuration NSX. Vous pouvez vous aider de notre guide sur la [gestion des segments dans NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-segment-management).
+- Avoir **NSX** déployé avec deux segments configurés dans votre configuration NSX. Vous pouvez vous aider de notre guide sur la [gestion des segments dans NSX](/pages/cloud/private-cloud/nsx-02-segment-management).
 
 ## En pratique
 
@@ -237,7 +234,7 @@ Votre règle est active, le trafic n'est plus possible dans les deux sens entre 
 
 ## Aller plus loin
 
-[Premiers pas avec NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-first-steps/)
+[Premiers pas avec NSX](/pages/cloud/private-cloud/nsx-01-first-steps)
 
 [Gestion des segments dans NSX](https://docs.ovh.com/ca/private-cloud/fr/private-cloud/nsx-segment-management/)
 

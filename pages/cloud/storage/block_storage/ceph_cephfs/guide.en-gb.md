@@ -1,8 +1,6 @@
 ---
 title: CephFS distributed filesystem
-slug: ceph/cephfs
 excerpt: 'This guide will show how to enable and manage CephFS on your CDA'
-section: Cloud Disk Array
 updated: 2021-05-31
 ---
 

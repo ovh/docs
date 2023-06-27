@@ -1,7 +1,5 @@
 ---
 title: Performance tuning
-slug: tuning
-section: Php
 updated: 2022-06-02
 ---
 
@@ -54,7 +52,7 @@ If more simultaneous requests are received than the number of workers,
 then some requests wait.
 The default worker count is deliberately set rather conservative
 but can be improved in many cases.
-See the [PHP-FPM sizing](../fpm/) page
+See the [PHP-FPM sizing](/pages/web/web-paas/languages-php/fpm) page
 for how to determine and set a more optimal value.
 
 ## Enable preloading

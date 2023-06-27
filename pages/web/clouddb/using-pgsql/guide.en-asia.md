@@ -1,9 +1,6 @@
 ---
 title: Getting started with PostgreSQL
-slug: getting-started-with-postgresql
 excerpt: Using Your Databases
-section: Getting started
-order: 03
 updated: 2023-02-15
 ---
 
@@ -17,7 +14,7 @@ Do you want to use PostgreSQL? Learn how to easily manage your databases!
 ### Prerequisites
 
 - A Web Cloud Databases instance
-- To have viewed [the Web Cloud Databases guide](../getting-started-with-clouddb/)
+- To have viewed [the Web Cloud Databases guide](/pages/web/clouddb/starting_with_clouddb)
 
 
 ### What is a PostgreSQL database?
@@ -42,7 +39,7 @@ To log in to your database, make sure that you have:
 
 All this information is available in the [Web Control Panel](https://www.ovh.com/manager/web/){.external}.
 
-There is also a guide here: [Getting started with the Web Cloud Databases service](../starting_with_clouddb/guide.en-gb.md){.ref}
+There is also a guide here: [Getting started with the Web Cloud Databases service](/asia/en/clouddb/starting_with_clouddb/guide.en-gb.md){.ref}
 
 
 ### Connect via the command line

@@ -1,9 +1,6 @@
 ---
 title: 'Déléguer des droits sur un compte Exchange'
-slug: exchange-donner-les-droits-full-access-sur-un-compte
 excerpt: 'Découvrez comment déléguer des droits de votre compte Exchange à un autre'
-section: 'Fonctionnalités des comptes Exchange'
-order: 03
 updated: 2020-10-24
 ---
 

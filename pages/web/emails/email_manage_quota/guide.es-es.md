@@ -1,9 +1,6 @@
 ---
 title: Gestionar el espacio de almacenamiento de una cuenta de correo
-slug: manage-email-quota
 excerpt: "Cómo gestionar y optimizar el espacio de almacenamiento de una dirección de correo"
-section: 'Diagnóstico'
-order: 02
 updated: 2022-11-17
 ---
 
@@ -30,7 +27,7 @@ Cada cuenta de correo de OVHcloud dispone de un espacio de almacenamiento dedica
 > **Casos particulares**
 >
 > - En el caso del hosting gratuito Start 10M, es necesario activar previamente el alojamiento para poder crear una dirección de correo. Puede realizar esta operación desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), accediendo al dominio correspondiente.
-> - Si tiene un [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/), deberá activar su solución MX Plan incluida antes de continuar la lectura de esta guía. Para ello, consulte nuestra guía [Activar las direcciones de correo incluidas en su alojamiento web](https://docs.ovh.com/es/hosting/activar-correo-hosting-web/).
+> - Si tiene un [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/), deberá activar su solución MX Plan incluida antes de continuar la lectura de esta guía. Para ello, consulte nuestra guía [Activar las direcciones de correo incluidas en su alojamiento web](/pages/web/hosting/activate-email-hosting).
 
 ## Procedimiento  <a name="instructions"></a>
 
@@ -141,24 +138,24 @@ A continuación ofrecemos una lista no exhaustiva de las guías de configuració
 > **Emails (MXplan)**
 >>
 >> Configuración de una cuenta MXplan en **Windows**:<br><br>
->> - [Correo en Windows 10](https://docs.ovh.com/es/emails/configuracion-correo-windows-10/) (incluido con Windows)<br>
->> - [Outlook para Mxplan](https://docs.ovh.com/es/emails/configuracion-outlook-2016/)
->> - [Thunderbird](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_thunderbird/) (gratuito)<br>>
+>> - [Correo en Windows 10](/pages/web/emails/how_to_configure_windows_10) (incluido con Windows)<br>
+>> - [Outlook para Mxplan](/pages/web/emails/how_to_configure_outlook_2016)
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_windows) (gratuito)<br>>
 >> Configuración de una cuenta MXplan en **macOS**:<br><br>
->> - [Mail](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/) (incluido con macOS)<br>
->> - [Outlook](https://docs.ovh.com/es/emails/configuracion-outlook-2016-mac/)<br>
->> - [Thunderbird](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_para_thunderbird_en_mac/) (gratuito)<br>
+>> - [Mail](/pages/web/emails/how_to_configure_mail_macos) (incluido con macOS)<br>
+>> - [Outlook](/pages/web/emails/how_to_configure_outlook_2016_mac)<br>
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_mac) (gratuito)<br>
 >>
 > **Exchange**
 >>
 >> Configuración de una cuenta Exchange en **Windows** :<br><br>
->> - [Correo en Windows 10](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-correo-windows-10/) (incluido con Windows)<br>
->> - [Outlook](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-outlook-2016/)<br>
->> - [Thunderbird](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange-configuracion-de-thunderbird/) (gratuito)<br>>
+>> - [Correo en Windows 10](/pages/web/microsoft-collaborative-solutions/how_to_configure_windows_10) (incluido con Windows)<br>
+>> - [Outlook](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016)<br>
+>> - [Thunderbird](/pages/web/microsoft-collaborative-solutions/how_to_configure_thunderbird) (gratuito)<br>>
 >> Configuración de una cuenta Exchange en **macOS**:<br><br>
->> - [Mail](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-mail-macos/) (incluido con macOS)<br>
->> - [Outlook](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-outlook-2016-mac/)<br>
->> - [Thunderbird](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange-configuracion-de-thunderbird-mac/) (gratuito)<br>
+>> - [Mail](/pages/web/microsoft-collaborative-solutions/how_to_configure_mail_macos) (incluido con macOS)<br>
+>> - [Outlook](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016_mac)<br>
+>> - [Thunderbird](/pages/web/microsoft-collaborative-solutions/how_to_configure_thunderbird_mac) (gratuito)<br>
 >>
 
 Una vez instalado el cliente de correo, siga las instrucciones que se indican a continuación para preparar el archivo comprimido en su cliente de correo.
@@ -201,7 +198,7 @@ En el siguiente menú, seleccione la solución actual de su cuenta de correo:
 
 [Migrar una cuenta MX Plan a una cuenta o Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/migrar-direccion-correo-en-alojamiento-correo-a-exchange/)
 
-[Migrar manualmente una dirección de correo electrónico](https://docs.ovh.com/es/emails/migrar-sus-direcciones-de-correo-manualmente/)
+[Migrar manualmente una dirección de correo electrónico](/pages/web/emails/manual_email_migration)
 
 [Migrar sus direcciones de correo de una plataforma de correo de OVHcloud a otra](https://docs.ovh.com/es/microsoft-collaborative-solutions/migration-email-platform/)
 

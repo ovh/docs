@@ -1,11 +1,8 @@
 ---
 title: L3 services SNAT configuration (EN)
 excerpt: Find out how to configure the SNAT service on Public CLoud
-slug: l3-services-snat-configuration
-section: Configuração
-order: 01
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/network-services/l3-services-snat-configuration/'
+    canonical: '/pages/platform/network-services/configuration-01-snat-configuration'
 updated: 2022-11-02
 ---
 
@@ -21,7 +18,7 @@ The purpose of this guide is to describe the Secure Network Address Translation 
 
 - A [Public Cloud project](https://www.ovhcloud.com/pt/public-cloud/) in your OVHcloud account
 - The [Openstack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} tool installed on your working environment
-- A [Public Cloud Floating IP](https://docs.ovh.com/pt/publiccloud/network-services/attaching-pci-floating-ip-to-instance/)
+- A [Public Cloud Floating IP](/pages/platform/network-services/getting-started-03-attach-floating-ip-to-instance)
 
 ## Concepts
 
@@ -47,7 +44,7 @@ To enable the SNAT service, you need to:
 
 This allows any VM created within this private network to access the Internet.
 
-This scenario is covered by the guide [Attaching a Floating IP to an instance](https://docs.ovh.com/pt/publiccloud/network-services/attaching-pci-floating-ip-to-instance/).
+This scenario is covered by the guide [Attaching a Floating IP to an instance](/pages/platform/network-services/getting-started-03-attach-floating-ip-to-instance).
 
 #### Target configuration architecture
 
@@ -65,7 +62,7 @@ To test the configuration, we will access the VM **vm4fip** from an external net
 
 ### Step 1
 
-Create a VM with a Floating IP as explained in [this guide](https://docs.ovh.com/pt/publiccloud/network-services/attaching-pci-floating-ip-to-instance/).
+Create a VM with a Floating IP as explained in [this guide](/pages/platform/network-services/getting-started-03-attach-floating-ip-to-instance).
 
 ### Step 2
 

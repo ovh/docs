@@ -1,8 +1,5 @@
 ---
 title: 'Delegar permisos en una cuenta de correo'
-slug: emailpro-delegation
-section: 'Primeros pasos'
-order: 5
 updated: 2020-10-24
 ---
 
@@ -23,4 +20,4 @@ Los servicios Exchange y Email Pro permiten disfrutar de direcciones de correo p
 
 ## Procedimiento
 
-Consulte aquí nuestra guía [Delegar permisos en una cuenta de correo](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2013_dar_permisos_full_access_a_una_cuenta/) en la sección "Soluciones colaborativas de Microsoft".
+Consulte aquí nuestra guía [Delegar permisos en una cuenta de correo](/pages/web/microsoft-collaborative-solutions/feature_delegation) en la sección "Soluciones colaborativas de Microsoft".

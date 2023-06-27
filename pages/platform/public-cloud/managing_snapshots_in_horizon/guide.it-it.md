@@ -1,9 +1,7 @@
 ---
 title: Gestisci gli snapshot di un’istanza con Horizon
 excerpt: Gestisci gli snapshot di un'istanza con Horizon
-slug: gestisci_gli_snapshot_di_unistanza_con_horizon
 legacy_guide_number: g1770
-section: Gestione da Horizon
 updated: 2022-01-31
 ---
 
@@ -23,8 +21,8 @@ Creando degli snapshot, puoi effettuare una copia della tua istanza o ripristina
 
 ## Prerequisiti
 
-- Aver [creato un'istanza Public Cloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/#step-3-crea-unistanza) nel tuo account OVHcloud
-- [Accedere all’interfaccia Horizon](https://docs.ovh.com/it/public-cloud/horizon/)
+- Aver [creato un'istanza Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#step-3-crea-unistanza) nel tuo account OVHcloud
+- [Accedere all’interfaccia Horizon](/pages/platform/public-cloud/introducing_horizon)
 
 ## Procedura
 

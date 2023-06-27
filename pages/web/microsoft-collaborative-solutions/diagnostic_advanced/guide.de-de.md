@@ -1,9 +1,6 @@
 ---
 title: Verwendung der Exchange Fehlerdiagnose
 excerpt: 'Erfahren Sie hier, wie Sie eine automatische Fehlerdiagnose für Exchange Accounts durchführen'
-slug: exchange_diagnose_was_tun_bei_fehlern
-section: Troubleshooting
-order: 01
 updated: 2022-10-19
 ---
 
@@ -24,7 +21,7 @@ Da es eine Vielzahl von Gründen für mögliche Fehler bei Exchange-Accounts gib
 - Sie haben einen [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) Dienst eingerichtet.
 - Sie verfügen über die Login-Daten für den zu überprüfenden Exchange Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben keine ausstehenden [Zahlungen](https://docs.ovh.com/de/billing/ovh-rechnungen-verwalten/#pay-bills) zu dieser Dienstleistung und der dazugehörigen Domain.
+- Sie haben keine ausstehenden [Zahlungen](/pages/account/billing/invoice_management#pay-bills) zu dieser Dienstleistung und der dazugehörigen Domain.
 
 
 ## In der praktischen Anwendung
@@ -59,12 +56,12 @@ Ein blockiertes Konto empfängt weiterhin E-Mails, aber der Versand wurde vom au
 
 Sie können dies im Tab `E-Mail-Accounts`{.action} Ihres Exchange-Dienstes überprüfen. Für den Account wird dann der Status `SPAM` in der Tabelle angezeigt.
 
-Bitte folgen Sie den Anweisungen in [dieser Anleitung](../blocked-wegen-spam/), damit unsere Sicherheitsteams das Konto wieder freischalten können.
+Bitte folgen Sie den Anweisungen in [dieser Anleitung](/de/microsoft-collaborative-solutions/blocked-wegen-spam/), damit unsere Sicherheitsteams das Konto wieder freischalten können.
 
 ### Das Abonnement des Accounts ist abgelaufen <a name="expired"></a>
 
 Da Ihr Abonnement nicht mehr aktiv ist, wurden Versand und Empfang deaktiviert.<br>
-Um Ihr Abonnement wieder zu aktivieren genügt es, die [Abrechnungsfrequenz](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange-abrechnung-verwalten/#periodicity) im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) neu zu konfigurieren.
+Um Ihr Abonnement wieder zu aktivieren genügt es, die [Abrechnungsfrequenz](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#periodicity) im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) neu zu konfigurieren.
 
 ### Account aufgrund der Sicherheitsrichtlinien gesperrt
 
@@ -74,7 +71,7 @@ Sie können zum Beispiel festlegen, dass das Konto nach mehreren fehlgeschlagene
 
 In diesem Fall können Sie entweder warten, bis das Konto wieder verfügbar ist, oder Sie können unsere Exchange-Teams kontaktieren, indem Sie eine Support-Anfrage erstellen.
 
-Weitere Informationen zu dieser Funktion finden Sie in unserer [Anleitung zu Sicherheitsrichtlinien](../passwort-sicherheitseinstellungen-verwalten/).
+Weitere Informationen zu dieser Funktion finden Sie in unserer [Anleitung zu Sicherheitsrichtlinien](/de/microsoft-collaborative-solutions/passwort-sicherheitseinstellungen-verwalten/).
 
 ### Webmail-Authentifizierung ist fehlgeschlagen <a name="password"></a>
 
@@ -106,7 +103,7 @@ Je nach Verwendung Ihres Exchange Dienstes sind die folgenden MX Server gültig:
 
 Der SRV-Eintrag dient der automatischen Konfiguration Ihres Exchange Accounts mit einem kompatiblen E-Mail-Programm wie Microsoft Outlook.
 
-Sie können diese Einstellungen in der [DNS Zone Ihrer Domain überprüfen](../../domains/webhosting_bearbeiten_der_dns_zone/).
+Sie können diese Einstellungen in der [DNS Zone Ihrer Domain überprüfen](/pages/web/domains/dns_zone_edit).
 
 Die folgende Tabelle enthält die Werte für einen Exchange Dienst:
 

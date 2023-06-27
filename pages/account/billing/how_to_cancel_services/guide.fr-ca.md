@@ -1,9 +1,6 @@
 ---
 title: Comment résilier vos services OVHcloud
 excerpt: Découvrez comment interrompre vos abonnements OVHcloud
-slug: how-to-cancel-your-services
-section: Gérer mes services et leur renouvellement
-order: 03
 updated: 2022-03-22
 ---
 
@@ -42,7 +39,7 @@ Ceci implique que, avant toute résiliation, vous devez être **certain** :
 >
 > La résiliation ne peut être appliquée que si les conditions suivantes sont remplies :
 >
-> * vous êtes le « contact administrateur » du service (pour plus d'informations, consultez [ce guide](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/#definition));
+> * vous êtes le « contact administrateur » du service (pour plus d'informations, consultez [ce guide](/pages/account/customer/managing_contacts#definition));
 > * le service n'est pas en renouvellement manuel;
 > * le service n'est pas suspendu, notamment en raison d'un défaut de régularisation d'une facture.
 >
@@ -90,7 +87,7 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 
 #### Managed Bare Metal <a name="managedbaremetal"></a>
 
-Pour résilier votre offre [Managed bare metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/), suivez les instructions de ce [guide](https://docs.ovh.com/ca/fr/managed-bare-metal/comment-resilier-le-managed-bare-metal/).
+Pour résilier votre offre [Managed bare metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/), suivez les instructions de ce [guide](/pages/cloud/managed-bare-metal/how-to-cancel).
 
 #### Serveur NAS-HA <a name="nas"></a>
 
@@ -120,7 +117,7 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 
 #### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
 
-Pour résilier votre offre [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), suivez les instructions de ce [guide](https://docs.ovh.com/ca/fr/private-cloud/comment-resilier-le-private-cloud/).
+Pour résilier votre offre [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), suivez les instructions de ce [guide](/pages/cloud/private-cloud/comment_resilier_le_private_cloud).
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
@@ -136,9 +133,9 @@ Chaque service [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) peut
 
 ![public cloud instance deletion](images/pci-deletion.png){.thumbnail}
 
-Le Public Cloud OVHcloud repose sur le principe du *Pay as you go* (plus de détails sur notre page d'[informations concernant le mode de facturation Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/information-concernant-le-mode-de-facturation-cloud/)). Vous ne payez en fin de mois que pour le temps d'utilisation effectif des ressources.
+Le Public Cloud OVHcloud repose sur le principe du *Pay as you go* (plus de détails sur notre page d'[informations concernant le mode de facturation Public Cloud](/pages/platform/public-cloud/analyze_billing)). Vous ne payez en fin de mois que pour le temps d'utilisation effectif des ressources.
 
-Vous pouvez également [consulter votre consommation actuelle](https://docs.ovh.com/ca/fr/public-cloud/information-concernant-le-mode-de-facturation-cloud/#consulter-sa-consommation-actuelle) depuis l'espace client OVHcloud et être alerté par e-mail lorsque la projection de votre consommation dépasse un certain seuil.
+Vous pouvez également [consulter votre consommation actuelle](/pages/platform/public-cloud/analyze_billing#consulter-sa-consommation-actuelle) depuis l'espace client OVHcloud et être alerté par e-mail lorsque la projection de votre consommation dépasse un certain seuil.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -171,7 +168,7 @@ Il n'y a pas de résiliation possible avant échéance sur les offres [SSL secti
 
 Une offre MX Plan n'est pas soumise à un abonnement périodique. Elle ne peut donc pas faire l'objet d'une résiliation mais, si tel est votre souhait, vous pouvez supprimer votre offre.
 
-Pour supprimer votre offre [MX Plan](https://docs.ovh.com/ca/fr/emails/), connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
+Pour supprimer votre offre [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan), connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
 
 Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Supprimer immédiatement le MX Plan`{.action}.
 
@@ -186,7 +183,7 @@ Un e-mail contenant la procédure de fermeture de votre MX Plan vous sera alors 
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Pour résilier votre offre [Hosted Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/), suivez les instructions de ce [guide](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/gestion-facturation-exchange/#supprimer-des-comptes).
+Pour résilier votre offre [Hosted Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/), suivez les instructions de ce [guide](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#supprimer-des-comptes).
 
 ### Solutions transverses <a name="transversal"></a>
 
@@ -215,6 +212,6 @@ Enfin, cliquez sur `Confirmer l'annulation`{.action}.
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Gérer le renouvellement de mes services](https://docs.ovh.com/ca/fr/billing/renouvellement-automatique-ovh/)
+[Gérer le renouvellement de mes services](/pages/account/billing/how_to_use_automatic_renewal)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

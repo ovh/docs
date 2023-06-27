@@ -1,9 +1,6 @@
 ---
 title: Ajouter un pied de page pour vos comptes E-mail 
-slug: exchange-signature-automatique-disclaimer
 excerpt: Découvrez comment créer une signature automatique depuis l’espace client OVHcloud
-section: Fonctionnalités des comptes Exchange
-order: 07
 updated: 2020-03-26
 ---
 
@@ -62,7 +59,7 @@ Veillez à prendre en considération les spécificités suivantes avant de crée
 
 [Consulter son compte e-mail depuis l’interface OWA](/pages/web/emails/email_owa)
 
-[Déléguer des permissions sur un compte ](../exchange-donner-les-droits-full-access-sur-un-compte/)
+[Déléguer des permissions sur un compte ](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
 [Partager un calendrier via le webmail OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 

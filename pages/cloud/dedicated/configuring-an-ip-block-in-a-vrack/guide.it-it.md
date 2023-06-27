@@ -1,8 +1,6 @@
 ---
 title: 'Configurare un blocco di indirizzi IP nella vRack'
-slug: configurare-blocco-ip-nella-vRack
 excerpt: 'Scopri come configurare un blocco di indirizzi IP nella vRack'
-section: vRack
 updated: 2022-07-26
 ---
 
@@ -152,10 +150,10 @@ Riavvia il server per applicare tutte le modifiche.
 
 ## Per saperne di più
 
-[Configurare due o più server dedicati nella vRack](https://docs.ovh.com/it/dedicated/configurare-server-dedicati-vrack/){.external}
+[Configurare due o più server dedicati nella vRack](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server){.external}
 
-[Creare due o più VLAN nella vRack](https://docs.ovh.com/it/dedicated/creare-vlan-vrack/){.external}
+[Creare due o più VLAN nella vRack](/pages/cloud/dedicated/creating-multiple-vlans-in-a-vrack){.external}
 
-[Configurare la vRack tra un’istanza Public Cloud e un server dedicato](https://docs.ovh.com/it/dedicated/configurare-vrack-tra-pci-e-server-dedicato/){.external}
+[Configurare la vRack tra un’istanza Public Cloud e un server dedicato](/pages/cloud/dedicated/configuring-the-vrack-between-the-public-cloud-and-a-dedicated-server){.external}
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

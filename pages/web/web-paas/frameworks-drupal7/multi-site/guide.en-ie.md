@@ -1,7 +1,5 @@
 ---
 title: Multiple Drupal  sites in a single Project
-slug: multi-site
-section: Drupal7
 updated: 2021-05-11
 ---
 
@@ -11,7 +9,7 @@ updated: 2021-05-11
 
 ## Objective  
 
-Web PaaS supports running [multiple applications in the same project](../../bestpractices-oneormany)
+Web PaaS supports running [multiple applications in the same project](/pages/web/web-paas/bestpractices-oneormany)
 and these can be two or more Drupal site. But, they would be separate Drupal
 instances , they will have their assets separate and live their lives apart and
 it would be much better for them not to share the same database (though they
@@ -19,7 +17,7 @@ could).
 
 Note, that the same Drupal instance can also use multiple databases (just add
 multiple instances to services.yaml and use  db_select) you will need to
-override settings.php [as described here](../customizing-settings-php) and
+override settings.php [as described here](/pages/web/web-paas/frameworks-drupal7/customizing-settings-php) and
 add the other databases you could then use `db_select` to switch between those.
 
 # Old Style "Multisite" and Web PaaS

@@ -1,8 +1,5 @@
 ---
 title: Protective block
-slug: security-protective-block
-section: Security
-order: 8
 updated: 2021-05-11
 ---
 

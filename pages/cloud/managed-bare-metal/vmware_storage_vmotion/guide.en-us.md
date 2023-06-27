@@ -1,12 +1,9 @@
 ---
 title: VMware Storage vMotion
-slug: vmware_storage_vmotion
 routes:
-    canonical: 'https://docs.ovh.com/us/en/private-cloud/vmware_storage_vmotion/'
+    canonical: '/pages/cloud/private-cloud/vmware_storage_vmotion'
 excerpt: Find out how to move your virtual machine to a different datastore (hot migration)
 legacy_guide_number: '7767010'
-section: VMware vSphere features
-order: 5
 updated: 2020-11-18
 ---
 
@@ -30,7 +27,7 @@ To move a virtual machine's files to another datastore, right-click on the virtu
 
 The menu offers several options for vMotion. In this example, the VM storage is to be migrated to another datastore. Therefore, select "Change storage only".
 
-The option "Change compute resource only" allows to migrate the VM to another host. It is explained in [this guide](../vmotion-new/).
+The option "Change compute resource only" allows to migrate the VM to another host. It is explained in [this guide](/pages/cloud/managed-bare-metal/vmware_vmotion_new).
 
 ![choose vMotion](images/VmotionStorage2.png){.thumbnail}
 
@@ -40,7 +37,7 @@ Choose which storage to migrate the data to.
 
 You can also change the storage policy during this operation.
 
-For example, you can apply the storage policies created if you have the [VMencryption](../vm-encrypt/) option.
+For example, you can apply the storage policies created if you have the [VMencryption](/pages/cloud/managed-bare-metal/vm_encrypt) option.
 
 ![choose datastore](images/VmotionStorage3.png){.thumbnail}
 

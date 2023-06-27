@@ -1,9 +1,6 @@
 ---
 title: "Instalacja strony WWW za pomocą 'modułu za 1 kliknięciem' (CMS)"
-slug: hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www
 excerpt: "Dowiedz się, jak zainstalować Twoją stronę WWW za pomocą 'modułów za 1 kliknięciem'"
-section: CMS
-order: 01
 updated: 2023-03-30
 ---
 
@@ -25,10 +22,10 @@ Moduły za pomocą 1 kliknięcia umożliwiają łatwą i szybką instalację str
 
 - Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) zawierającej co najmniej jedną bazę danych..
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Korzystanie z [kompatybilnej wersji PHP](https://docs.ovh.com/pl/hosting/konfiguracja_php_na_hostingu_www_ovh_2014/) na Twoim hostingu.
-- Posiadanie [poprawnie skonfigurowany plik .ovhconfig](https://docs.ovh.com/pl/hosting/konfiguracja-pliku-ovhconfig/)
+- Korzystanie z [kompatybilnej wersji PHP](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014) na Twoim hostingu.
+- Posiadanie [poprawnie skonfigurowany plik .ovhconfig](/pages/web/hosting/ovhconfig_configuration)
 - Katalog (katalog główny), w którym zostanie zainstalowany "moduł za 1 kliknięciem", musi być pusty lub w chwili obecnej nie istnieje.
-- Domena (wraz z subdomeną, jeśli jest potrzebna), która zostanie użyta na Twojej stronie WWW powinna zostać zadeklarowana jako [MultiSite](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/) na Twoim hostingu OVHcloud.
+- Domena (wraz z subdomeną, jeśli jest potrzebna), która zostanie użyta na Twojej stronie WWW powinna zostać zadeklarowana jako [MultiSite](/pages/web/hosting/multisites_configure_multisite) na Twoim hostingu OVHcloud.
 
 ## W praktyce
 
@@ -60,7 +57,7 @@ W oknie, które się wyświetla wybierz odpowiedni CMS, a następnie wybierz dom
 
 ![Wybór modułu](images/add_a_module.png){.thumbnail}
 
-Jeśli Twoja domena nie jest na liście, przejdź do zakładki `MultiSite`{.action}, aby ją dodać. Zapoznaj się z naszym przewodnikiem [Jak rozdzielić hosting WWW na kilka stron](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/), jeśli potrzebujesz.
+Jeśli Twoja domena nie jest na liście, przejdź do zakładki `MultiSite`{.action}, aby ją dodać. Zapoznaj się z naszym przewodnikiem [Jak rozdzielić hosting WWW na kilka stron](/pages/web/hosting/multisites_configure_multisite), jeśli potrzebujesz.
 
 Po poprawnym dodaniu domeny spróbuj ponownie dodać "moduł za 1 kliknięciem".
 
@@ -105,8 +102,8 @@ Wpisz dane do logowania do bazy danych.
 Istnieje kilka możliwości:
 
 - Baza danych jest już utworzona na Twoim hostingu: wybierz ją z rozwijanego menu `Wybierz bazę danych`{.action} i uzupełnij wymagane informacje.
-- Baza danych nie została jeszcze utworzona na Twoim hostingu: [utwórz bazę danych zawartą na hostingu](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/), następnie powróć do rozwijanego menu `Wybierz bazę danych`{.action} i uzupełnij wymagane informacje.
-- Baza danych jest [utworzona na instancji Web Cloud Databases](https://docs.ovh.com/pl/clouddb/tworzenie-baz-danych-i-uzytkownikow/): w rozwijanym menu `Wybierz bazę danych`{.action}, wybierz opcję `Baza danych poza hostingiem`{.action} i uzupełnij wymagane informacje. Instancja i hosting muszą być hostowane w tym samym centrum danych (datacenter).
+- Baza danych nie została jeszcze utworzona na Twoim hostingu: [utwórz bazę danych zawartą na hostingu](/pages/web/hosting/sql_create_database), następnie powróć do rozwijanego menu `Wybierz bazę danych`{.action} i uzupełnij wymagane informacje.
+- Baza danych jest [utworzona na instancji Web Cloud Databases](/pages/web/clouddb/create-db-and-user-on-db-server): w rozwijanym menu `Wybierz bazę danych`{.action}, wybierz opcję `Baza danych poza hostingiem`{.action} i uzupełnij wymagane informacje. Instancja i hosting muszą być hostowane w tym samym centrum danych (datacenter).
 - Baza danych jest utworzona na innym hostingu OVHcloud: w rozwijanym menu `Wybierz bazę danych`{.action}, wybierz opcję `Baza danych poza hostingiem`{.action} i uzupełnij wymagane informacje. Baza danych i hosting muszą być hostowane w tym samym centrum danych.
 
 Pozostałe informacje wymagane dla bazy danych są następujące:
@@ -122,10 +119,10 @@ Pozostałe informacje wymagane dla bazy danych są następujące:
 
 - *Nazwa bazy*: nazwa ta została zdefiniowana podczas tworzenia bazy danych w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
-- *Port*: systematycznie wpisz numer **3306** (port domyślny) dla bazy danych zawartej w Twoim hostingu. W przypadku bazy danych na instancji Cloud Databases, zapoznaj się z [tym przewodnikiem](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/).
+- *Port*: systematycznie wpisz numer **3306** (port domyślny) dla bazy danych zawartej w Twoim hostingu. W przypadku bazy danych na instancji Cloud Databases, zapoznaj się z [tym przewodnikiem](/pages/web/clouddb/starting_with_clouddb).
 
 - *Nazwa użytkownika*: nazwa bazy danych jest identyczna, jeśli korzystasz z bazy danych zawartej w Twoim hostingu.
-W przypadku baz danych utworzonych w ramach usługi Web Cloud Databases, zapoznaj się z informacjami podanymi w [tym przewodniku](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/).
+W przypadku baz danych utworzonych w ramach usługi Web Cloud Databases, zapoznaj się z informacjami podanymi w [tym przewodniku](/pages/web/clouddb/starting_with_clouddb).
 
 - *Hasło*: otrzymasz e-mail podczas tworzenia bazy danych. Możliwe, że zmieniłeś ją w międzyczasie.
 
@@ -135,9 +132,9 @@ Po uzupełnieniu informacji kliknij przycisk `Dalej`{.action}.
 >
 > Jeśli podane informacje są nieprawidłowe, instalacja nie zostanie zakończona. Aby tego uniknąć, zachęcamy najpierw do przetestowania logowania się do bazy danych.
 > 
-> Dane do logowania do bazy danych zawartej w pakiecie hostingowym znajdziesz w [przewodniku](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/).
+> Dane do logowania do bazy danych zawartej w pakiecie hostingowym znajdziesz w [przewodniku](/pages/web/hosting/sql_create_database).
 >
-> Dane do logowania do bazy danych utworzonej na instancji Web Cloud Databases znajdują się w [przewodniku](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/).
+> Dane do logowania do bazy danych utworzonej na instancji Web Cloud Databases znajdują się w [przewodniku](/pages/web/clouddb/starting_with_clouddb).
 >
 
 ##### Konfiguracja modułu
@@ -146,7 +143,7 @@ Wprowadź następujące informacje dotyczące konfiguracji modułu:
 
 - *nazwa lub e-mail administratora:* identyfikator, którego będziesz używał do logowania się do interfejsu administracyjnego Twojego CMS-a (Back Office).
 - *hasło:* hasło, którego będziesz używał do logowania się do interfejsu administracyjnego Twojego CMS-a.
-- *domena:* domena, z którą chcesz zainstalować CMS-a. Jeśli potrzebujesz pomocy, zapoznaj się z naszym przewodnikiem [Jak rozdzielić swój hosting na kilka stron](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/).
+- *domena:* domena, z którą chcesz zainstalować CMS-a. Jeśli potrzebujesz pomocy, zapoznaj się z naszym przewodnikiem [Jak rozdzielić swój hosting na kilka stron](/pages/web/hosting/multisites_configure_multisite).
 - *język:* język instalacji CMS.
 - *Ścieżka instalacji:* domena jest wprowadzana automatycznie podczas wyboru domeny. Możesz go uzupełnić, wprowadzając podkatalogi (dla zaawansowanych użytkowników).
 
@@ -189,13 +186,13 @@ Jeśli chcesz uzyskać pomoc w zakresie funkcji Twojego CMS-a, skontaktuj się z
 
 [Porównanie rozwiązań CMS](https://www.ovhcloud.com/pl/web-hosting/uc-cms-comparison/){.external}
 
-[Jak rozdzielić hosting WWW na wiele stron](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/){.external}
+[Jak rozdzielić hosting WWW na wiele stron](/pages/web/hosting/multisites_configure_multisite){.external}
 
-[Zarządzanie bazą danych na hostingu](https://docs.ovh.com/pl/hosting/zarzadzanie-baza-danych-na-hostingu-www/){.external}
+[Zarządzanie bazą danych na hostingu](/pages/web/hosting/sql_create_database){.external}
 
-[Zarządzanie CMS](https://docs.ovh.com/pl/hosting/1-click-module-management/)
+[Zarządzanie CMS](/pages/web/hosting/cms_manage_1_click_module)
 
-[Odinstaluj CMS](https://docs.ovh.com/pl/hosting/1-click-module-management/#etap-3-usun-modul)
+[Odinstaluj CMS](/pages/web/hosting/cms_manage_1_click_module#etap-3-usun-modul)
 
 Poznaj ofertę [Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external}
 

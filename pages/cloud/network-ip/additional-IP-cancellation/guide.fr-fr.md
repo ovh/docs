@@ -1,9 +1,6 @@
 ---
 title:  Résilier un service Additional IP
 excerpt: "Découvrez comment résilier un service Additional IP via les API OVHcloud"
-slug: cancel-additional-ip
-section: Additional IP
-order: 01
 updated: 2022-12-22
 ---
 
@@ -28,7 +25,7 @@ Comme tous les services OVHcloud, les services Additional IP peuvent être rési
 
 - Disposer d'un [service Additional IP](https://www.ovhcloud.com/fr/network/additional-ip/).
 - Être connecté à la [console API OVHcloud](https://eu.api.ovh.com/).
-- Consulter le guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+- Consulter le guide [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
 ## En pratique
 

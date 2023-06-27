@@ -1,9 +1,6 @@
 ---
 title: 'Configuring your Exchange account in Outlook 2016 for Mac'
-slug: configuration-outlook-2016-mac
 excerpt: 'Find out how to configure your Exchange account in Outlook 2016 for Mac.'
-section: Configuration on computer
-order: 02
 updated: 2018-06-01
 ---
 
@@ -23,7 +20,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 > [!primary]
 >
-> Are you using Outlook 2016 for Windows? Read our guide: [Configuring your Exchange account in Outlook 2016 for Windows](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/configuration-outlook-2016/){.external}.
+> Are you using Outlook 2016 for Windows? Read our guide: [Configuring your Exchange account in Outlook 2016 for Windows](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016){.external}.
 >
 
 ## Instructions
@@ -62,8 +59,8 @@ OVHcloud offers a web application that includes various [collaborative features]
 
 ## Go further
 
-[Configuring an email address included in an MX Plan package or in a web hosting solution in Outlook 2016 for Mac](https://docs.ovh.com/ie/en/emails/configuration-outlook-2016-mac/){.external}.
+[Configuring an email address included in an MX Plan package or in a web hosting solution in Outlook 2016 for Mac](/pages/web/emails/how_to_configure_outlook_2016_mac){.external}.
 
-[Configuring your Email Pro account on Outlook 2016 for Mac](https://docs.ovh.com/ie/en/emails-pro/configuration-outlook-2016-mac/){.external}.
+[Configuring your Email Pro account on Outlook 2016 for Mac](/pages/web/emails-pro/how_to_configure_outlook_2016_mac){.external}.
 
 Join our community of users on <https://community.ovh.com/en/>.

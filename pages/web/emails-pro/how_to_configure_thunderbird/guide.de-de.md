@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguration Ihrer E-Mail Pro Adresse mit Thunderbird für Windows'
-slug: konfiguration-emailpro-thunderbird-windows
 excerpt: 'Erfahren Sie hier, wie Sie Ihren E-Mail Pro Account in Thunderbird für Windows einrichten'
-section: 'Konfiguration des E-Mail-Clients'
-order: 5
 updated: 2021-08-26
 ---
 
@@ -63,11 +60,11 @@ Für eine **POP** Konfiguration verwenden Sie die folgenden Werte:
 
 Sobald Ihre E-Mail-Adresse eingerichtet ist, können Sie sie verwenden. Sie können ab sofort E-Mails versenden und empfangen.
 
-OVHcloud bietet auch eine Webanwendung an, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-Adresse zugreifen können: <https://www.ovh.de/mail/>. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden. Bei Fragen zu dessen Verwendung können Sie unsere Anleitung zur [Outlook Web App](../../microsoft-collaborative-solutions/exchange_2016_verwendung_der_outlook_web_app/) heranziehen.
+OVHcloud bietet auch eine Webanwendung an, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-Adresse zugreifen können: <https://www.ovh.de/mail/>. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden. Bei Fragen zu dessen Verwendung können Sie unsere Anleitung zur [Outlook Web App](/de/microsoft-collaborative-solutions/exchange_2016_verwendung_der_outlook_web_app/) heranziehen.
 
 ### Backup Ihrer E-Mail-Adresse abrufen
 
-Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Folgen Sie hierzu dem Abschnitt "**Exportieren**" im Bereich "**Thunderbird**" der Anleitung zur [manuellen Migration eines Accounts](https://docs.ovh.com/de/emails/email-adressen-manuell-migrieren/#exportieren).
+Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Folgen Sie hierzu dem Abschnitt "**Exportieren**" im Bereich "**Thunderbird**" der Anleitung zur [manuellen Migration eines Accounts](/pages/web/emails/manual_email_migration#exportieren).
 
 ### Bestehende Einstellungen ändern
 

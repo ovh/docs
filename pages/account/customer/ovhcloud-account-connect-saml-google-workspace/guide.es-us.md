@@ -1,9 +1,6 @@
 ---
 title: Activar las conexiones SSO de Google Workspace con su cuenta OVHcloud
-slug: connect-saml-sso-googleworkspace
 excerpt: "Cómo asociar el servicio Google Workspace a su cuenta de OVHcloud a través de SAML 2.0"
-section: Uso avanzado
-order: 02
 updated: 2023-06-01
 ---
 
@@ -22,7 +19,7 @@ Puede utilizar la autenticación **SSO** (*Single Sign-On*) para conectarse a su
 ## Requisitos
 
 - Ser administrador de un servicio Google Workspace
-- Disponer de una [cuenta de OVHcloud](https://docs.ovh.com/us/es/customer/crear-cuenta-ovhcloud/)
+- Disponer de una [cuenta de OVHcloud](/pages/account/customer/ovhcloud-account-creation)
 - Haber iniciado sesión en el [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ## Procedimiento
@@ -171,7 +168,7 @@ A continuación, podrá desconectarse de su cuenta y reconectarse con su Google 
 
 ### Conexión mediante SSO
 
-En [la página de identificación de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), introduzca su [ID de cliente](https://docs.ovh.com/us/es/customer/crear-cuenta-ovhcloud/#cual-es-mi-id-de-cliente) seguido de **/idp** sin contraseña y haga clic en el botón `Login`{.action} .
+En [la página de identificación de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), introduzca su [ID de cliente](/pages/account/customer/ovhcloud-account-creation#cual-es-mi-id-de-cliente) seguido de **/idp** sin contraseña y haga clic en el botón `Login`{.action} .
 
 ![Conexión a la federación OVHcloud](images/ovhcloud_federation_login_1.png){.thumbnail}
 
@@ -185,12 +182,12 @@ Ahora está conectado con el mismo ID de cliente, pero a través de su usuario d
 
 ## Más información
 
-[Crear una cuenta de OVHcloud](https://docs.ovh.com/us/es/customer/crear-cuenta-ovhcloud/)
+[Crear una cuenta de OVHcloud](/pages/account/customer/ovhcloud-account-creation)
 
-[Proteger mi cuenta de OVHcloud y gestionar mis datos personales](https://docs.ovh.com/us/es/customer/todo-sobre-el-id-de-cliente/)
+[Proteger mi cuenta de OVHcloud y gestionar mis datos personales](/pages/account/customer/all_about_username)
 
-[Definición y gestión de la contraseña de su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contrasena/)
+[Definición y gestión de la contraseña de su cuenta](/pages/account/customer/manage-ovh-password)
 
-[Proteger su cuenta de OVHcloud con la doble autenticación](https://docs.ovh.com/us/es/customer/proteger-su-cuenta-con-una-2FA/)
+[Proteger su cuenta de OVHcloud con la doble autenticación](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

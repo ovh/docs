@@ -1,9 +1,6 @@
 ---
 title: 'Conectarse a la base de datos de su servidor de bases de datos'
-slug: coneccion-base-de-datos-servidor-bdd
 excerpt: 'Cómo conectarse a la base de datos'
-section: Configuración
-order: 03
 updated: 2023-02-15
 ---
 

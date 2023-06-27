@@ -1,8 +1,6 @@
 ---
 title: "OVHcloud API v2 - Principles of operation"
-slug: api-v2
 excerpt: "Discover the new principles of exposure and consumption linked to the OVHcloud API v2"
-section: APIv6
 updated: 2023-04-17
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-api-v2-principles?id=kb_article_view&sysparm_article=KB0057683'

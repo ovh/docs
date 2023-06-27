@@ -1,9 +1,6 @@
 ---
 title: "Attivare l'hosting gratuito Start 10M"
-slug: attivare_start10m
 excerpt: 'Come attivare il piano di hosting Start 10M'
-section: Per iniziare
-order: 01
 updated: 2022-09-15
 ---
 
@@ -28,7 +25,7 @@ Con [Start10M](https://www.ovhcloud.com/it/domains/free-web-hosting/){.external}
 
 ## Prerequisiti
 
-- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/){.external} nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, scollegato da un hosting Web e senza [MX Plan](https://docs.ovh.com/it/emails/informazioni-generali-email-condivise/) associato.
+- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/){.external} nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, scollegato da un hosting Web e senza [MX Plan](/pages/web/emails/email_generalities) associato.
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 
 ## Procedura
@@ -49,7 +46,7 @@ Si apre la pagina di attivazione. **Lo step 1** mostra i dettagli del piano e la
 >
 > Se la tua zona DNS non è gestita dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, è necessario effettuare manualmente le modifiche nella tua zona DNS esterna.
 >
-> Per maggiori informazioni, consulta la nostra guida su [modificare una zona DNS OVHcloud](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/).
+> Per maggiori informazioni, consulta la nostra guida su [modificare una zona DNS OVHcloud](/pages/web/domains/dns_zone_edit).
 >
 
 | Opzione                                       	| Descrizione                                                                                                               								|
@@ -72,15 +69,15 @@ Si apre la pagina di attivazione. **Lo step 1** mostra i dettagli del piano e la
 
 Durante **lo step 4**, è necessario prendere visione dei contratti e confermare il tuo ordine.
 
-Una volta confermato l'ordine, riceverai un'email con le informazioni di [connessione FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/){.external} al tuo hosting Start 10M.
+Una volta confermato l'ordine, riceverai un'email con le informazioni di [connessione FTP](/pages/web/hosting/ftp_connection){.external} al tuo hosting Start 10M.
 
-Consulta la guida di [creazione di un account MX Plan](https://docs.ovh.com/it/emails/servizio_email_guida_alla_creazione_di_un_indirizzo_email/){.external} per usufruire dell'indirizzo email incluso con il tuo hosting Start 10M.
+Consulta la guida di [creazione di un account MX Plan](/pages/web/emails/email_creation){.external} per usufruire dell'indirizzo email incluso con il tuo hosting Start 10M.
 
 ## Per saperne di più
 
-[Accedere allo spazio di storage di un hosting Web](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/){.external}
+[Accedere allo spazio di storage di un hosting Web](/pages/web/hosting/ftp_connection){.external}
 
-[Creare un indirizzo email con la soluzione MX Plan](https://docs.ovh.com/it/emails/servizio_email_guida_alla_creazione_di_un_indirizzo_email/){.external}
+[Creare un indirizzo email con la soluzione MX Plan](/pages/web/emails/email_creation){.external}
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 

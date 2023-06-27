@@ -1,7 +1,5 @@
 ---
 title: Configure a project
-slug: configure-project
-section: Web
 updated: 2022-06-24
 ---
 
@@ -25,7 +23,7 @@ The **General** section shows you the project's region and allows you to update 
 
 ## Access
 
-The *Access* section allows you to [manage user access to the project](../../administration-users/#manage-users).
+The *Access* section allows you to [manage user access to the project](/pages/web/web-paas/administration-users#manage-users).
 
 ![Project configure icon](images/settings-project-access.png "0.7")
 
@@ -60,6 +58,6 @@ The **Integrations** section allows you to manage all of your integrations.
 
 ## Variables
 
-The **Variables** section allows you to manage all project-wide [variables](../../development-variables).
+The **Variables** section allows you to manage all project-wide [variables](/pages/web/web-paas/development-variables).
 
 ![Project variables](images/settings-variables-project.png "0.7")

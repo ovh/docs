@@ -1,9 +1,6 @@
 ---
 title: 'Démarrez avec MySQL et MariaDB'
-slug: demarrez-avec-mysql-et-mariadb
 excerpt: 'Utilisez vos bases de données'
-section: 'Premiers pas'
-order: 02
 updated: 2023-02-15
 ---
 

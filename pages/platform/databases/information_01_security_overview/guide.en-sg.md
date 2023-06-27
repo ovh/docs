@@ -1,9 +1,6 @@
 ---
 title: Concepts - Security overview
 excerpt: Public Cloud Databases security overview
-slug: concepts-security-overview
-section: General information
-order: 010
 updated: 2023-05-23
 ---
 
@@ -109,7 +106,7 @@ All database services are IPv4 restricted. By default, services are not accessib
 
 ## Go further
 
-[Public Cloud Databases documentation](https://docs.ovh.com/sg/en/publiccloud/databases/)
+[Public Cloud Databases documentation](/products/public-cloud-databases)
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 

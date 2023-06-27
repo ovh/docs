@@ -1,8 +1,5 @@
 ---
 title: 'Delegowanie uprawnień do konta e-mail'
-slug: emailpro-delegation
-section: 'Pierwsze kroki'
-order: 5
 updated: 2020-10-24
 ---
 
@@ -24,4 +21,4 @@ Usługi Exchange i Email Pro umożliwiają korzystanie z profesjonalnych kont e-
 
 ## W praktyce
 
-Zapoznaj się z naszym przewodnikiem [Delegowanie uprawnień do konta e-mail](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2013_przyznanie_uprawnien_full_access/) w sekcji "Microsoft collaborative solutions".
+Zapoznaj się z naszym przewodnikiem [Delegowanie uprawnień do konta e-mail](/pages/web/microsoft-collaborative-solutions/feature_delegation) w sekcji "Microsoft collaborative solutions".

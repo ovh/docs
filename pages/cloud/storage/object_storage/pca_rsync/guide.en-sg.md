@@ -1,9 +1,6 @@
 ---
 title: Cloud Archive Swift - Managing your archives with Rsync
-slug: pca/rsync
 excerpt: Find out how to access your Public Cloud Archives using Rsync
-section: OpenStack Swift Archive Storage Class Specifics
-order: 090
 updated: 2020-12-08
 ---
 
@@ -24,7 +21,7 @@ Precompiled binaries are available in most modern OS distributions, so you shoul
 
 ### OpenStack ID
 
-You can generate your OpenStack login and password using this [guide](https://docs.ovh.com/sg/en/public-cloud/horizon/).
+You can generate your OpenStack login and password using this [guide](/pages/platform/public-cloud/introducing_horizon).
 
 ### TenantName
 

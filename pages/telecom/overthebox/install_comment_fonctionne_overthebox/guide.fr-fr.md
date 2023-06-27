@@ -3,9 +3,7 @@ title: 'Comment fonctionne OverTheBox Intel ou ITv1?'
 keywords: 'Fonctionnement, Principe'
 legacy_guide_number: 2237
 description: 'Comment fonctionne OverTheBox Intel ou ITv1?'
-slug: comment-fonctionne-overthebox
 excerpt: 'Le boitier OverTheBox ne possède qu’un seul port Ethernet. Pourtant, c’est grâce à ce boitier que vos différentes connexions sont agrégées pour n’en former qu’une. Comment cela fonctionne-t-il ?'
-section: "OverTheBox Intel et IT v1"
 updated: 2021-04-14
 ---
 
@@ -22,7 +20,7 @@ updated: 2021-04-14
 >
 > La photo suivante illustre les branchements finaux pour une OverTheBox Intel.
 > Avant d'en arriver là sur votre installation, il est impératif de suivre le  processus d'installation :
-> [Installation OverTheBox Intel ou IT v1](../intel-itv1-installation/)
+> [Installation OverTheBox Intel ou IT v1](/pages/telecom/overthebox/intel_itv1_installation)
 >
 
 ![overthebox](images/4316.png){.thumbnail}

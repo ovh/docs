@@ -1,9 +1,6 @@
 ---
 title: Alerting - Configuring alerts on your streams
-slug: logs-data-platform-alerting
-order: 6
 excerpt: With the alerting feature you don't even need to watch your logs, our platform does it for you.
-section: Features
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-alerting?id=kb_article_view&sysparm_article=KB0050044'
 updated: 2022-07-28
@@ -208,6 +205,6 @@ You will then receive an email with the messages included. You can then directly
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/fr/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

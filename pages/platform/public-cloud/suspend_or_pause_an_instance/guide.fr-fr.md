@@ -1,13 +1,8 @@
 ---
 title: Suspendre ou mettre en pause une instance
-slug: suspendre-ou-mettre-en-pause-une-instance
 legacy_guide_number: 1781
-section: Gestion de projets
-order: 3
-updated: 2021-09-20
+updated: 2023-06-20
 ---
-
-**Dernière mise à jour le 10/09/2021**
 
 ## Objectif
 
@@ -21,9 +16,9 @@ updated: 2021-09-20
 
 ## Prérequis
 
-- Avoir créé une [instance Public Cloud OVHcloud](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/) au forfait **horaire**.
-- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} ou à l’interface [Horizon.](https://docs.ovh.com/fr/public-cloud/horizon/)
-- Avoir des connaissances de l’[API Openstack](https://docs.ovh.com/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/) et des [variables Openstack](https://docs.ovh.com/fr/public-cloud/set-openstack-environment-variables/)
+- Avoir créé une [instance Public Cloud OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps) au forfait **horaire**.
+- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} ou à l’interface [Horizon.](/pages/platform/public-cloud/introducing_horizon)
+- Avoir des connaissances de l’[API Openstack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) et des [variables Openstack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## En pratique
 
@@ -41,6 +36,11 @@ Le tableau ci-dessous vous permet de différencier les options disponibles sur v
 |[Pause](#pause-instance)|Stocke l’état de la VM dans la mémoire RAM, une instance en pause reste « gelée ».|Vous serez toujours facturé au même prix pour votre instance.|
 
 ### Suspendre (shelve) une instance <a name="shelve-instance"></a>
+
+> [!alert]
+> Attention, la suspension d'une instance de type IOPS ou T1/T2-180 entraînera la perte des données sur les disques NVMe en passthrough.
+> En effet, la suspension de ce type d'instance entraîne la décommission de son hôte et donc des disques en passthrough.
+>
 
 Cette option vous permettra de libérer les ressources dédiées à votre instance Public Cloud, mais l’adresse IP sera conservée. Les données sur votre disque local seront stockées dans un snapshot créé automatiquement une fois l’instance suspendue. Les données stockées en mémoire et ailleurs ne seront pas sauvegardées.
 
@@ -66,7 +66,7 @@ Le snapshot sera ensuite disponible dans la rubrique `Instance Backup`{.action}.
 
 #### Depuis l’interface Horizon
 
-Pour utiliser cette méthode, il vous faut [créer un utilisateur OpenStack](../horizon/) et vous [connecter à l’interface Horizon](https://horizon.cloud.ovh.net/auth/login/).
+Pour utiliser cette méthode, il vous faut [créer un utilisateur OpenStack](/pages/platform/public-cloud/introducing_horizon) et vous [connecter à l’interface Horizon](https://horizon.cloud.ovh.net/auth/login/).
 
 Si vous avez déployé des instances dans différentes régions, assurez-vous d’être dans la bonne région. Vous pouvez le vérifier en haut à gauche dans l’interface Horizon.
 
@@ -88,8 +88,8 @@ Pour visualiser le snapshot, dans le menu `Compute`{.action}, cliquez sur `Image
 
 Avant de poursuivre, Il est recommandé de consulter ces guides :
 
-- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/fr/public-cloud/set-openstack-environment-variables/)
+- [Préparer l’environnement pour utiliser l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Charger les variables d’environnement OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 Une fois votre environnement prêt, saisissez ce qui suit dans la ligne de commande :
 

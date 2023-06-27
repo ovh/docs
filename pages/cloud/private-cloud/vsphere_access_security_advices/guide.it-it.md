@@ -1,9 +1,6 @@
 ---
 title: Best practice di sicurezza per il client vSphere Web
-slug: sicurezza-accesso-vsphere-web
 excerpt: Come proteggere l’accesso al client vSphere Web
-section: Informazioni Meltdown e Spectre
-order: 01
 updated: 2020-06-30
 ---
 

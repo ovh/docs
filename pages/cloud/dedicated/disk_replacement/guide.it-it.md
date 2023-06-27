@@ -1,8 +1,6 @@
 ---
 title: 'Sostituire un disco difettoso'
-slug: sostituzione-disco
 excerpt: 'Scopri come individuare un disco difettoso e chiederne la sostituzione'
-section: 'RAID e dischi'
 updated: 2018-06-21
 ---
 
@@ -47,7 +45,7 @@ Se ricevi un alert via email o noti qualsiasi segno di malfunzionamento, è fond
 
 #### Server con RAID software
 
-Se possiedi un server che dispone di un RAID software, fai riferimento alla guida [Software RAID](https://docs.ovh.com/it/dedicated/raid-software/){.external} per trovare i dischi installati sul tuo server.
+Se possiedi un server che dispone di un RAID software, fai riferimento alla guida [Software RAID](/pages/cloud/dedicated/raid_soft){.external} per trovare i dischi installati sul tuo server.
 
 Una volta individuato il percorso per accedere ai dischi, puoi testarli utilizzando il comando `smartctl` come segue:
 
@@ -91,7 +89,7 @@ Nel nostro caso, la riga importante è la seguente:
 
 #### Server con RAID hardware
 
-Se il tuo server dispone di un RAID hardware, fai riferimento alla guida (in inglese) [Hardware RAID - EN](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} e segui la procedura relativa al tuo tipo di controller RAID per trovare i percorsi di accesso ai tuoi dischi.
+Se il tuo server dispone di un RAID hardware, fai riferimento alla guida (in inglese) [Hardware RAID - EN](/pages/cloud/dedicated/raid_hard){.external} e segui la procedura relativa al tuo tipo di controller RAID per trovare i percorsi di accesso ai tuoi dischi.
 
 Una volta individuato il percorso per accedere ai dischi, puoi testarli utilizzando il comando `smartctl` come segue:
 
@@ -123,7 +121,7 @@ smartctl -a /dev/sgY
 
 #### Server con un disco NVMe
 
-Nel caso di un disco NVME, è necessario mettere il server in modalità [Rescue mode](https://docs.ovh.com/it/dedicated/rescue_mode/){.external} dove il tool **nvme-cli** è installato di default.
+Nel caso di un disco NVME, è necessario mettere il server in modalità [Rescue mode](/pages/cloud/dedicated/rescue_mode){.external} dove il tool **nvme-cli** è installato di default.
 
 Sarà quindi necessario utilizzare il comando `nvme list` per recuperare i numeri di serie dei dischi:
 
@@ -142,7 +140,7 @@ root@rescue:~# nvme list
 
 Per richiedere la sostituzione di un disco, basta creare un ticket presso il nostro team di assistenza direttamente dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. Al fine di accelerare il processo, fornisci gli elementi collegati ai test. Di seguito, un riepilogo delle informazioni che dovrai fornire.
 
-- **Il numero di serie del disco da sostituire e di tutti gli altri dischi funzionanti**. Per recuperare il numero di serie del disco da sostituire consulta [questa guida](https://docs.ovh.com/it/dedicated/recuperare-numero-di-serie-disco/){.external}. Se non è possibile recuperare il numero di serie del disco, è necessario farlo presente nel ticket e comunicarci il numero di serie del o dei dischi da non sostituire. 
+- **Il numero di serie del disco da sostituire e di tutti gli altri dischi funzionanti**. Per recuperare il numero di serie del disco da sostituire consulta [questa guida](/pages/cloud/dedicated/how_to_find_hdd_serial){.external}. Se non è possibile recuperare il numero di serie del disco, è necessario farlo presente nel ticket e comunicarci il numero di serie del o dei dischi da non sostituire. 
 
 Come anticipato, sono importanti i numeri di tutti i dischi in quanto verranno poi trasmessi al tecnico nel datacenter ed eviteranno un possibile errore durante l’operazione.
 
@@ -201,16 +199,16 @@ MegaCli -PdLocate -start -physdrv[E0:S0] -a0
 
 Se possiedi un server con RAID hardware, il RAID si ricostruisce da sé. Poiché l’*auto-rebuild* è attiva di default, assicurati di non averla disattivata manualmente. Il processo di risincronizzazione può richiedere alcuni minuti e ridurre le performance di lettura/scrittura sul RAID.
 
-Se possiedi un server con RAID software, ti consigliamo di risincronizzare i dischi manualmente. Per maggiori informazioni, consulta la documentazione in inglese sul [RAID software ](https://docs.ovh.com/it/dedicated/raid-software/).
+Se possiedi un server con RAID software, ti consigliamo di risincronizzare i dischi manualmente. Per maggiori informazioni, consulta la documentazione in inglese sul [RAID software ](/pages/cloud/dedicated/raid_soft).
 
 
 ## Per saperne di più
 
-[RAID software](https://docs.ovh.com/it/dedicated/raid-software/)
+[RAID software](/pages/cloud/dedicated/raid_soft)
 
-[RAID hardware - EN](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}
+[RAID hardware - EN](/pages/cloud/dedicated/raid_hard){.external}
 
-[Rescue Mode](https://docs.ovh.com/it/dedicated/rescue_mode/){.external}
+[Rescue Mode](/pages/cloud/dedicated/rescue_mode){.external}
 
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

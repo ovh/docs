@@ -1,10 +1,7 @@
 ---
 title: 'Transferir la gestión de sus cuentas de correo a otra persona'
 legacy_guide_number: 1933
-slug: delegar-gestion-correo
 excerpt: 'Cómo delegar la gestión de las cuentas de correo de su solución MX Plan'
-section: 'Gestión de la cuenta de correo'
-order: 05
 updated: 2021-10-08
 ---
 
@@ -84,6 +81,6 @@ Es posible añadir varias claves de OVHcloud para gestionar cada dirección de c
 
 ## Más información
 
-[Primeros pasos con la solución MX Plan](https://docs.ovh.com/es/emails/primeros-pasos-correo-compartido/)
+[Primeros pasos con la solución MX Plan](/pages/web/emails/email_generalities)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

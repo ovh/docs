@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguration Ihrer Exchange Adresse mit Thunderbird für Windows'
-slug: exchange_20132016_konfiguration_in_thunderbird
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Exchange Account in Thunderbird für Windows einrichten'
-section: Konfiguration auf computer
-order: 04
 updated: 2021-08-26
 ---
 
@@ -69,7 +66,7 @@ Ihre Exchange Accounts sind auch über das [OWA Interface](https://www.ovh.de/ma
 
 ### Backup Ihrer E-Mail-Adresse abrufen
 
-Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Folgen Sie hierzu dem Abschnitt "**Exportieren**" im Bereich "**Thunderbird**" der Anleitung zur [manuellen Migration eines Accounts](https://docs.ovh.com/de/emails/email-adressen-manuell-migrieren/#exportieren).
+Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Folgen Sie hierzu dem Abschnitt "**Exportieren**" im Bereich "**Thunderbird**" der Anleitung zur [manuellen Migration eines Accounts](/pages/web/emails/manual_email_migration#exportieren).
 
 ### Bestehende Einstellungen ändern
 

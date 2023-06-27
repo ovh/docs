@@ -1,18 +1,13 @@
 ---
 title: 'Managing tokens'
 excerpt: 'Find out how to use tokens with the Keystone API'
-slug: managing_tokens
 legacy_guide_number: g1872
-section: OpenStack
-order: 6
-updated: 2023-03-02
+updated: 2023-06-15
 ---
-
-**Last updated 2nd March 2023**
 
 ## Objective
 
-**This guide provides instructions about API connections to your service using tokens.**
+**Find out how to configure Keystone API connections on your service using tokens.**
 
 > [!primary]
 >
@@ -31,6 +26,7 @@ The information in this guide applies to version 3.0 of the Keystone API.
 
 
 ### Outline of a request
+
 Most requests sent to the OpenStack API must follow an authorisation procedure, which involves generating a token and validating it.
 
 Here is an outline of how a request works from authentication to completion.
@@ -52,7 +48,9 @@ For more information, see the [OpenStack API](http://developer.openstack.org/api
 
 Manual operations are typically used for educational or debugging purposes.
 
-To run them, you must set your environment using the OpenStack RC file. 
+You need to load the environment using the openRC file. To do this, we recommend downloading and using the openrc.sh file, which you will find in the Horizon interface. This way, you will have all of the environment variables you need to build the commands that follow.
+
+To log in to Horizon and download the file, read [this guide](/pages/platform/public-cloud/introducing_horizon/). 
 
 In our example we will retrieve the meta-data information for an object that is stored using your Public Cloud Storage solution:
 
@@ -68,7 +66,7 @@ Any request can be built using the cURL command line tool.
 #### Step 1: Request token creation
 
 ```bash
-curl -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | python -mjson.tool
+curl -X POST ${OS_AUTH_URL}v${OS_IDENTITY_API_VERSION}/auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | python -mjson.tool
 ```
 
 
@@ -150,7 +148,7 @@ It is the endpoint address of the Object Storage service that lets you to retrie
 
 
 ```bash
-export token=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | grep -i '^X-Subject-Token' | cut -d" " -f2)
+export token=$(curl -is -X POST ${OS_AUTH_URL}v${OS_IDENTITY_API_VERSION}/auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | grep -i '^X-Subject-Token' | cut -d" " -f2)
 ```
 
 This token is the authentication element to use for the next request

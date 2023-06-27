@@ -1,9 +1,6 @@
 ---
 title: "Migrating your email addresses from one OVHcloud email platform to another"
-slug: migration-email-platform
 excerpt: "Find out how to migrate email addresses from one Exchange or Email Pro platform to another Exchange, Email Pro or MX Plan platform"
-section: Migration
-order: 04
 updated: 2021-10-21
 ---
 
@@ -35,13 +32,13 @@ You want to migrate your email addresses on an Exchange platform to another Exch
 
 ### Configuring the destination platform
 
-Before you begin your migration, if you have just ordered your new email solution, first add the domain name to your [Exchange](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/adding-domain-exchange/) platform. If you are migrating to an MX Plan platform, where the attached domain name is fixed, you can proceed directly to [the next step](#accountsmigration).
+Before you begin your migration, if you have just ordered your new email solution, first add the domain name to your [Exchange](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain) platform. If you are migrating to an MX Plan platform, where the attached domain name is fixed, you can proceed directly to [the next step](#accountsmigration).
 
 > Select the `Associated domains`{.action} tab for your platform, then click on the button `Add a domain`{.action}. Configure your domain name as **non-authoritative**. Once you have added your domain name, ensure that `OK` appears in the `Status` column.
 >
 > ![email-migration](images/migration_platform02.png){.thumbnail}
 >
-> For more details on adding a domain name, follow the [Exchange guide](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/adding-domain-exchange/).
+> For more details on adding a domain name, follow the [Exchange guide](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain).
 
 ### Migrate email accounts <a name="accountsmigration"></a>
 
@@ -78,10 +75,10 @@ In the `Email accounts`{.action} tab for your platform, click on the `...`{.acti
 > Only the data of your email accounts will be migrated (emails, contacts, calendars, inbox rules, etc.). The features linked to your platform will need to be recreated on the new platform:
 >
 > - [Alias](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/email-alias/)
-> - [Delegated rights](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/exchange_2013_how_to_grant_full_access_permissions_for_an_account/)
-> - [Groups](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/exchange_20132016_how_to_use_the_groups_feature_mailing_lists/)
+> - [Delegated rights](/pages/web/microsoft-collaborative-solutions/feature_delegation)
+> - [Groups](/pages/web/microsoft-collaborative-solutions/feature_groups)
 > - External contacts
-> - [Footer](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/exchange_20132016_how_to_create_an_automatic_signature/)
+> - [Footer](/pages/web/microsoft-collaborative-solutions/feature_footers)
 
 Migrate the source email account to your new platform account using our [OMM](https://omm.ovh.net/) tool (OVH Mail Migrator).
 
@@ -119,7 +116,7 @@ To modify the configuration, click on the red box and carry out the requested op
 Now, you can start using your migrated email addresses. To do this, OVHcloud offers a web client (_web app_), available here <https://www.ovhcloud.com/en/mail/>. You will need to enter your email credentials.
 
 If you have configured one of the migrated accounts on a local email client (e.g. Outlook, Thunderbird), you will need to configure it again. The login details for the OVHcloud server have changed following the migration.
-<br>To help you with these modifications, please refer to the respective guide via the [Hosted Exchange](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/) guide sections. If you are unable to reconfigure the account immediately, you can always use the web application to access your emails.
+<br>To help you with these modifications, please refer to the respective guide via the [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) guide sections. If you are unable to reconfigure the account immediately, you can always use the web application to access your emails.
 
 > [!primary]
 >
@@ -128,8 +125,8 @@ If you have configured one of the migrated accounts on a local email client (e.g
 
 ## Go further
 
-[Managing contacts for your services](https://docs.ovh.com/us/en/customer/managing-contacts/)
+[Managing contacts for your services](/pages/account/customer/managing_contacts)
 
-[Exchange guides](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/)
+[Exchange guides](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 
 Join our community of users on <https://community.ovh.com/en/>

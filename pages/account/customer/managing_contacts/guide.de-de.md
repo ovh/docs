@@ -1,9 +1,6 @@
 ---
 title: 'Die Kontakte Ihrer Dienste verwalten'
-slug: verwaltung-der-kontakte
 excerpt: 'Erfahren Sie hier, wie Sie die Kontakte Ihrer OVHcloud Dienste verwalten'
-section: 'Erste Schritte'
-order: 6
 updated: 2021-12-13
 ---
 
@@ -122,9 +119,9 @@ Sie haben gerade einen OVHcloud Dienst abonniert, um Ihren eigenen [Onlineshop z
 
 Geben Sie in diesem Fall Ihrem Dienstleister die Rolle ["technischer Kontakt"](#gestion_des_contacts) für Ihr OVHcloud Webhosting. Dieser Zugang ermöglicht es, die für das Bereitstellen Ihrer Website notwendigen Änderungen vorzunehmen (Hinzufügen von Domain oder Subdomain zur Multisite, Installation eines 1-Klick-Moduls, Änderung von FTP- und Datenbank-Passwörtern, Erstellung von SSL-Zertifikaten, etc.).
 
-Wenn Ihre Domain noch nicht mit Ihrem Webhosting verbunden ist und Sie die notwendigen Schritte hierzu Ihrem Webmaster anvertrauen möchten, vergeben Sie ebenfalls die Berechtigung ["technischer Kontakt"](#gestion_des_contacts) für die [DNS Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/) Ihres Domainnamens.
+Wenn Ihre Domain noch nicht mit Ihrem Webhosting verbunden ist und Sie die notwendigen Schritte hierzu Ihrem Webmaster anvertrauen möchten, vergeben Sie ebenfalls die Berechtigung ["technischer Kontakt"](#gestion_des_contacts) für die [DNS Zone](/pages/web/domains/dns_zone_edit) Ihres Domainnamens.
 
-Die Zugangsberechtigung eines ["technischen Kontakts"](#gestion_des_contacts) ermöglicht keine Änderung der Administrator- oder Rechnungskontakte einer Dienstleistung. Er gewährt Ihrem Webmaster keinen Zugriff auf Ihre Rechnungen oder Bestellungen, die Verlängerung Ihrer Dienstleistungen oder Zahlungsmittel. Ebenfalls nicht möglich ist es, die [Verwaltung Ihres Domainnamens auf einen anderen Hosting-Provider zu übertragen](https://docs.ovh.com/de/domains/ausgehender-transfer-einer-generischen-oder-geografischen-domain/) oder den [Inhaber zu ändern](https://docs.ovh.com/de/domains/wechsel_des_domaininhabers/). 
+Die Zugangsberechtigung eines ["technischen Kontakts"](#gestion_des_contacts) ermöglicht keine Änderung der Administrator- oder Rechnungskontakte einer Dienstleistung. Er gewährt Ihrem Webmaster keinen Zugriff auf Ihre Rechnungen oder Bestellungen, die Verlängerung Ihrer Dienstleistungen oder Zahlungsmittel. Ebenfalls nicht möglich ist es, die [Verwaltung Ihres Domainnamens auf einen anderen Hosting-Provider zu übertragen](/pages/web/domains/transfer_outgoing_domain) oder den [Inhaber zu ändern](/pages/web/domains/trade_domain). 
 
 Weiterhin können Sie als [Administrator-Kontakt](#administrateur) Ihrer Dienste jederzeit den ["technischen Kontakt"](#technique)" Ihrer Dienstleistung ändern.
 

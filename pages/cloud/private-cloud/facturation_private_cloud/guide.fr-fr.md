@@ -1,9 +1,6 @@
 ---
 title: Facturation Hosted Private Cloud
-slug: facturation-private-cloud
 excerpt: Explication des différents types de facturation (horaire et mensuelle) sur l'offre Hosted Private Cloud
-section: Premiers pas
-order: 4
 updated: 2020-11-24
 ---
 

@@ -1,17 +1,16 @@
 ---
 title: 'Activer et gérer votre SharePoint OVHcloud'
-slug: activation-et-gestion-de-votre-sharepoint-ovh
 excerpt: 'Découvrez comment commander et configurer une plateforme SharePoint.'
-section: SharePoint
-order: 01
-updated: 2020-08-11
+updated: 2023-06-19
 ---
 
 **Dernière mise à jour le 11/08/2020**
 
 ## Objectif
 
-Les offres SharePoint permettent de bénéficier d'un espace de stockage partagé pour votre travail collaboratif.
+Les offres SharePoint permettent de bénéficier d'un espace de stockage de 1 To partagé avec les autres comptes de votre plateforme Sharepoint, pour votre travail collaboratif.
+
+Vous disposez également de 100 Go d'espace de stockage personnel, pour chacun des comptes de votre plateforme sharepoint.
 
 **Découvrez comment commander et configurer une plateforme SharePoint.**
 

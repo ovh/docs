@@ -1,9 +1,6 @@
 ---
 title: "Ein Public Cloud Projekt über die OVHcloud API bestellen"
 excerpt: "Hier erfahren Sie, wie Sie Ihr Public Cloud Projekt mit der OVHcloud API bestellen."
-slug: public-cloud-api
-section: Erste Schritte
-order: 9
 updated: 2020-12-09
 ---
 
@@ -23,8 +20,8 @@ Die Erstellung eines Projekts ist der erste Schritt zum Deployment von [Public C
 ## Voraussetzungen
 
 - Sie verfügen über gültige OVHcloud-Kennungen
-- Sie haben einen [gültigen](https://docs.ovh.com/de/billing/zahlungsarten-verwalten/) und in Ihrem OVHcloud Account gespeicherten Zahlungsmodus
-- Sie müssen mit der [Funktionsweise der OVHcloud APIv6 vertraut sein](https://docs.ovh.com/de/api/first-steps-with-ovh-api/).
+- Sie haben einen [gültigen](/pages/account/billing/manage-payment-methods) und in Ihrem OVHcloud Account gespeicherten Zahlungsmodus
+- Sie müssen mit der [Funktionsweise der OVHcloud APIv6 vertraut sein](/pages/account/api/first-steps).
 
 ## In der praktischen Anwendung
 

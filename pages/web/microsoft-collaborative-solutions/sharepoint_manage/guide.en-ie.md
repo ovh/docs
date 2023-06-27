@@ -1,17 +1,16 @@
 ---
 title: 'Enabling and managing your OVHcloud SharePoint'
 excerpt: 'Find out how to order and configure a SharePoint platform'
-slug: enable_and_manage_your_ovh_sharepoint
-section: SharePoint
-order: 01
-updated: 2020-08-11
+updated: 2023-06-19
 ---
 
 **Last updated 15th April 2020**
 
 ## Objective
 
-The SharePoint solutions offer shared storage space for your collaborative work.
+The SharePoint offers allow you to benefit from a storage space of 1 TB shared with the other accounts of your SharePoint platform, for your collaborative work.
+
+You also have 100 GB of personal storage space for each account on your SharePoint platform.
 
 **This guide explains how to order and configure a SharePoint platform.**
 

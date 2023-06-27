@@ -1,9 +1,6 @@
 ---
 title: Customised redeployment of your Cluster
-slug: cluster-custom-redeployment
 excerpt: Customised redeployment of a Nutanix Cluster using OVHcloud tools
-section: Getting started
-order: 05
 updated: 2022-12-13
 ---
 
@@ -26,7 +23,7 @@ updated: 2022-12-13
 - access to the [OVHcloud API page](https://ca.api.ovh.com/)
 
 > [!warning]
-> If you have signed up to the **Nutanix on OVHcloud BYOL offer** and have activated licences on your cluster, you will need to uninstall your licences before you launch the redeployment. You can use this guide to manage your licences: [Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](https://docs.ovh.com/us/en/nutanix/activate-licence-on-nutanix-byol/).
+> If you have signed up to the **Nutanix on OVHcloud BYOL offer** and have activated licences on your cluster, you will need to uninstall your licences before you launch the redeployment. You can use this guide to manage your licences: [Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](/pages/cloud/nutanix/12-activate-licenses-on-byol).
 >
 
 ## Introduction to using the private network for a Nutanix Cluster at OVHcloud
@@ -86,7 +83,7 @@ In the OVHcloud Control Panel, click on the `Hosted Private Cloud`{.action} tab,
 
 ![00 Redeploy cluster from OVHcloud control panel 01](images/00-cluster-redeployment-through-manager01.png)
 
-If you have subscribed to the Nutanix BYOL offer, a reminder will tell you not to forget to uninstall your licences. You can use this guide to manage your licences: [Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](https://docs.ovh.com/us/en/nutanix/activate-licence-on-nutanix-byol/). When your licences are uninstalled, click `Continue`{.action}.
+If you have subscribed to the Nutanix BYOL offer, a reminder will tell you not to forget to uninstall your licences. You can use this guide to manage your licences: [Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](/pages/cloud/nutanix/12-activate-licenses-on-byol). When your licences are uninstalled, click `Continue`{.action}.
 
 ![00 Redeploy cluster from OVHcloud control panel 02](images/00-cluster-redeployment-through-manager02.png)
 
@@ -134,10 +131,10 @@ Enter `REDEPLOY` and click `Confirm`{.action}.
 
 ### Redeploy the cluster through the OVHcloud API
 
-Log in to the [OVHcloud API](https://api.ovh.com). For more details on how the OVHcloud API works, please refer to our guide on [Getting started with the OVHcloud APIs](https://docs.ovh.com/us/en/api/first-steps-with-ovh-api/)
+Log in to the [OVHcloud API](https://api.ovh.com). For more details on how the OVHcloud API works, please refer to our guide on [Getting started with the OVHcloud APIs](/pages/account/api/first-steps)
 
 > [!warning]
-> If you use the OVHcloud API to repackage your cluster with a Nutanix BYOL offer, you will not receive a message to notify you to uninstall your licences. Don't forget to do so. You can use this guide to manage your licences: [Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](https://docs.ovh.com/us/en/nutanix/activate-licence-on-nutanix-byol/). After uninstalling your licences, you can redeploy your cluster with the OVHcloud API.
+> If you use the OVHcloud API to repackage your cluster with a Nutanix BYOL offer, you will not receive a message to notify you to uninstall your licences. Don't forget to do so. You can use this guide to manage your licences: [Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](/pages/cloud/nutanix/12-activate-licenses-on-byol). After uninstalling your licences, you can redeploy your cluster with the OVHcloud API.
 >
 
 Use the following API call:
@@ -201,9 +198,9 @@ Click `Execute`{.action} to start the cluster redeployment.
 
 ## Go further
 
-[Using the OVHcloud API](https://docs.ovh.com/us/en/api/)
+[Using the OVHcloud API](/products/infrastructure-as-code-api-apiv6)
 
-[Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](https://docs.ovh.com/us/en/nutanix/activate-licence-on-nutanix-byol/)
+[Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](/pages/cloud/nutanix/12-activate-licenses-on-byol)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

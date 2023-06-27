@@ -1,17 +1,16 @@
 ---
 title: Aktywacja i zarządzanie usługą SharePoint OVHcloud
-slug: aktywacja-kont-email-zawartych-w-hostingu
 excerpt: Dowiedz się, jak zamówić i skonfigurować usługę SharePoint
-section: SharePoint
-order: 01
-updated: 2020-08-11
+updated: 2023-06-19
 ---
 
 **Ostatnia aktualizacja z dnia 11-08-2020**
 
 ## Wprowadzenie
 
-Oferty SharePoint pozwalają wykorzystać współdzieloną przestrzeń dyskową do wspólnej pracy.
+Oferty programu SharePoint umożliwiają korzystanie z przestrzeni dyskowej o pojemności 1 TB współdzielonej z innymi kontami platformy Sharepoint do pracy zespołowej.
+
+Masz również 100 GB osobistej przestrzeni dyskowej dla każdego konta na platformie Sharepoint.
 
 **Dowiedz się, jak zamówić i skonfigurować usługę SharePoint.**
 

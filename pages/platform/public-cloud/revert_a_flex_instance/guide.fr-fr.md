@@ -1,8 +1,6 @@
 ---
 title: "Basculer d'une instance flex à une instance classique"
-slug: modifier-une-instance-flex
 excerpt: Apprenez à modifier une instance flex depuis l'interface OpenStack Horizon
-section: Gestion depuis Horizon
 order : 10
 updated: 2021-11-15
 ---
@@ -17,8 +15,8 @@ Une instance *flex* est une instance à disque unique (50 Go) offrant un process
 
 ## Prérequis
 
-- Posséder une [instance Public Cloud OVHcloud](../premiers-pas-instance-public-cloud/#etape-3-creer-une-instance) de type *flex*.
-- [Créer un accès à l'interface Horizon](https://docs.ovh.com/fr/public-cloud/horizon/)
+- Posséder une [instance Public Cloud OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#etape-3-creer-une-instance) de type *flex*.
+- [Créer un accès à l'interface Horizon](/pages/platform/public-cloud/introducing_horizon)
 
 ## En pratique
 
@@ -58,7 +56,7 @@ Une fois le processus terminé, votre instance sera basculée vers un modèle cl
 
 Dans le cas où vous souhaitez rebasculer à un modèle *flex*, vous pouvez le faire en effectuant les mêmes étapes mentionnées [ci-dessus](#flavorchoice) en sélectionnant un gabarit *flex* au lieu d'un gabarit classique. 
 
-Vous pouvez également [modifier la configuration de l'instance](https://docs.ovh.com/fr/public-cloud/debuter-avec-une-instance-public-cloud/#modifier-la-configuration-dune-instance) depuis votre espace client.
+Vous pouvez également [modifier la configuration de l'instance](/pages/platform/public-cloud/first_steps_with_public_cloud_instance#modifier-la-configuration-dune-instance) depuis votre espace client.
 
 ## Aller plus loin
 

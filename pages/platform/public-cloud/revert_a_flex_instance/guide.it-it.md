@@ -1,8 +1,6 @@
 ---
 title: Passare da un'istanza flex a un'istanza classica
-slug: modificare-un-istanza-flex
 excerpt: Come modificare un'istanza flex dall'interfaccia OpenStack Horizon
-section: Gestione da Horizon
 updated: 2021-11-15
 ---
 
@@ -20,8 +18,8 @@ Un'istanza *flex* è un'istanza a disco unico (50 GB) che offre un processo più
 
 ## Prerequisiti
 
-- Disporre di un'[istanza Public Cloud OVHcloud](../primi-passi-public-cloud/#step-3-crea-unistanza) di tipo *flex*
-- [Crea un accesso all'interfaccia Horizon](https://docs.ovh.com/it/public-cloud/horizon/)
+- Disporre di un'[istanza Public Cloud OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#step-3-crea-unistanza) di tipo *flex*
+- [Crea un accesso all'interfaccia Horizon](/pages/platform/public-cloud/introducing_horizon)
 
 ## Procedura
 
@@ -61,7 +59,7 @@ Una volta terminato il processo, la nostra istanza sarà migrata verso un modell
 
 Se vuoi passare a un modello *flex*, puoi farlo eseguendo gli stessi passaggi menzionati [sopra](#flavorchoice) selezionando un template *flex* invece di un template classico. 
 
-È inoltre possibile [modificare la configurazione dell'istanza](https://docs.ovh.com/it/public-cloud/come_utilizzare_la_tua_istanza_public_cloud/#modifica-la-configurazione-dellistanza) dallo Spazio Cliente.
+È inoltre possibile [modificare la configurazione dell'istanza](/pages/platform/public-cloud/first_steps_with_public_cloud_instance#modifica-la-configurazione-dellistanza) dallo Spazio Cliente.
 
 ## Per saperne di più
 

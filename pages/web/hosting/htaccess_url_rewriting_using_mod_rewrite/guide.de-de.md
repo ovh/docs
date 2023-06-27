@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Die URL einer Website mit mod_rewrite über die .htaccess Datei umschreiben"
 excerpt: "Diese Anleitung erklärt, wie Sie die Zugriffs-URL mithilfe des mod_rewrite über die .htaccess Datei neu schreiben."
-slug: htaccess_url_rewriting_using_mod_rewrite
-section: Weiterleitung und Authentifizierung
-order: 03
 updated: 2022-12-22
 ---
 
@@ -53,7 +50,7 @@ Die Datei ".htaccess", in der Apache "**mod_rewrite**" konfiguriert wird, kann i
 
 Die in einer ".htaccess"-Datei vorgenommenen Einstellungen gelten für das Verzeichnis, in dem sie sich befindet, sowie für alle Unterverzeichnisse.
 
-Um Verzeichnisse zu bearbeiten (oder zu erstellen), loggen Sie sich in den FTP-Bereich Ihres Hostings ein. Bei Bedarf können Sie die Anleitung "[Mit dem Speicherplatz eines Webhostings verbinden](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/)" zu Hilfe nehmen.
+Um Verzeichnisse zu bearbeiten (oder zu erstellen), loggen Sie sich in den FTP-Bereich Ihres Hostings ein. Bei Bedarf können Sie die Anleitung "[Mit dem Speicherplatz eines Webhostings verbinden](/pages/web/hosting/ftp_connection)" zu Hilfe nehmen.
 
 Im Folgenden finden Sie Beispiele für häufig verwendete Anwendungen von Apache "**mod_rewrite**". Einige davon können auch das SEO-Ranking Ihrer Website fördern.
 
@@ -97,7 +94,7 @@ Dieses Umschreiben der URL kann das SEO-Ranking Ihrer Website fördern.
 
 Wenn Sie ein OVHcloud Webhosting nutzen, wird Ihr Domainname (z.B. **domain.tld**) als `Multisite` deklariert, um den Inhalt eines bestimmten Zielordners anzuzeigen, der auch als Wurzelverzeichnis bzw. `root folder` der Website bezeichnet wird. Sie können den Namen dieses Wurzelverzeichnisses anpassen.
 
-Lesen Sie unsere Anleitung zur [Einrichtung einer Multisite auf einem Webhosting](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/), wenn Sie weitere Informationen zu diesem Thema wünschen.
+Lesen Sie unsere Anleitung zur [Einrichtung einer Multisite auf einem Webhosting](/pages/web/hosting/multisites_configure_multisite), wenn Sie weitere Informationen zu diesem Thema wünschen.
 
 Eine Website muss nicht im obersten Wurzelverzeichnis abgelegt werden. Sie können auch einen Unterordner darin erstellen (z. B. **MyWebsite**), und darin die Dateien der Website platzieren.
 
@@ -120,7 +117,7 @@ In unserem Beispiel wird die Adresse Ihrer Website dann als **http://domain.tld*
 
 Mithilfe von SSL-Zertifikaten können Sie den Austausch, der über das Protokoll HTTP mit Ihrer Website erfolgt, verschlüsseln. Dadurch wird verhindert, dass unbefugte Personen oder Robots Daten sammeln, die zwischen der Website und dem Besucher ausgetauscht werden, wie z.B. Bankdaten.
 
-Wenn Sie nicht über ein SSL-Zertifikat verfügen, lesen Sie unsere Anleitung zur [Verwaltung eines SSL-Zertifikats auf einem Webhosting](https://docs.ovh.com/de/hosting/ssl-zertifikate-auf-webhostings-verwalten/).
+Wenn Sie nicht über ein SSL-Zertifikat verfügen, lesen Sie unsere Anleitung zur [Verwaltung eines SSL-Zertifikats auf einem Webhosting](/pages/web/hosting/ssl_on_webhosting).
 
 Manche von Ihren Seitenbesuchern verwendete Browser werden Ihre Website möglicherweise nicht automatisch über **https://** aufrufen. Dies stellt ein nicht zu unterschätzendes Risiko für die Daten dar, die zwischen Ihrer Website und Webbrowsern ausgetauscht werden.
 
@@ -136,9 +133,9 @@ In unserem Beispiel werden alle Anfragen, die mit einer URL in "**http://**" ges
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-[Tutorial - Wie kann ich den Zugang zu meiner Website für bestimmte IP-Adressen über eine .htaccess Datei sperren?](https://docs.ovh.com/de/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/)
+[Tutorial - Wie kann ich den Zugang zu meiner Website für bestimmte IP-Adressen über eine .htaccess Datei sperren?](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website)
 
-[Den Adminbereich Ihrer Website mit einer .htaccess Datei schützen](https://docs.ovh.com/de/hosting/hosting-htaccess-authentifizierung/)
+[Den Adminbereich Ihrer Website mit einer .htaccess Datei schützen](/pages/web/hosting/htaccess_protect_directory_by_password)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

@@ -1,9 +1,7 @@
 ---
 title: Utilizar el Hosted Private Cloud en un vRack
 excerpt: Cómo utilizar el vRack con la solución Hosted Private Cloud
-slug: anadir_un_dedicated_cloud_al_vrack_15_y_configurar_una_mv
 legacy_guide_number: g1257
-section: Servicios y opciones de OVHcloud
 updated: 2022-03-28
 ---
 
@@ -46,7 +44,7 @@ En el cliente vSphere, puede consultar las *VLAN* compatibles con el vRack en el
 
 ![vlan](images/vRackVsphere.png){.thumbnail}
 
-Es posible modificar sus parámetros o volver a crearlos siguiendo la guía de [creación de VxLAN](../crear-vlan-vxlan/).
+Es posible modificar sus parámetros o volver a crearlos siguiendo la guía de [creación de VxLAN](/pages/cloud/private-cloud/creation_vlan).
 
 A continuación, podrá asignar estos *portgroup* a las interfaces de red de sus máquinas virtuales.
 

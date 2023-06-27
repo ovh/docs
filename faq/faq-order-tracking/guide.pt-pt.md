@@ -33,7 +33,7 @@ Aceda à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&fro
 
 ### Truques e dicas
 
-Para o ajudar a gerir as suas encomendas, disponibilizamos-lhe [um manual pormenorizado](https://docs.ovh.com/pt/billing/gerir-as-encomendas-ovh/).
+Para o ajudar a gerir as suas encomendas, disponibilizamos-lhe [um manual pormenorizado](/pages/account/billing/managing_ovh_orders).
 
 ### Como alterar a encomenda?
 
@@ -46,7 +46,7 @@ Se já fez o pagamento, sugerimos que contacte o [nosso Apoio ao Cliente](https:
 ### Como anular a minha encomenda?
 
 Se não realizar o pagamento, a sua encomenda será anulada automaticamente dentro de um prazo que poderá variar dependendo do tipo de serviço.
-Enquanto particular, se já pagou a encomenda e esta não estiver associada a um serviço personalizado (como um domínio) ou a uma licença (Office 365 ou SharePoint, por exemplo), pode retratar-se num período de 14 dias. A este respeito, disponibilizamos-lhe [um manual pormenorizado](https://docs.ovh.com/pt/billing/gerir-as-encomendas-ovh/#direito-de-retratacao).
+Enquanto particular, se já pagou a encomenda e esta não estiver associada a um serviço personalizado (como um domínio) ou a uma licença (Office 365 ou SharePoint, por exemplo), pode retratar-se num período de 14 dias. A este respeito, disponibilizamos-lhe [um manual pormenorizado](/pages/account/billing/managing_ovh_orders#direito-de-retratacao).
 
 #### Truques e dicas:
 

@@ -1,13 +1,10 @@
 ---
 title: 'Configurer le réseau sur Windows Server avec Hyper-V sur les gammes High Grade & SCALE'
-slug: hyperv-network-hg-scale
 excerpt: 'Découvrez comment configurer le réseau sur Windows Server avec Hyper-V sur les gammes High Grade & SCALE'
-section: 'Utilisation avancée'
-order: 5
-updated: 2021-11-15
+updated: 2023-06-20
 ---
 
-**Dernière mise à jour le 15/11/2021**
+**Dernière mise à jour le 20/06/2023**
 
 ## Objectif
 
@@ -176,7 +173,7 @@ Une fois toutes les adresses renseignées, cliquez sur `OK`{.action} pour fermer
 
 > [!warning]
 >
-> Cette étape peut provoquer une perte de connexion. Si cela se produit, connectez-vous en utilisant l'[IPMI](https://docs.ovh.com/fr/dedicated/utilisation-ipmi-serveurs-dedies/) et modifiez de nouveau la configuration. Vous constaterez alors que votre passerelle par défaut est revenue à l'état vide. Rajoutez la gateway 100.64.0.1.
+> Cette étape peut provoquer une perte de connexion. Si cela se produit, connectez-vous en utilisant l'[IPMI](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers) et modifiez de nouveau la configuration. Vous constaterez alors que votre passerelle par défaut est revenue à l'état vide. Rajoutez la gateway 100.64.0.1.
 >
 
 #### Ajouter une route statique
@@ -195,7 +192,7 @@ Interface List
 ```
 
 Dans notre exemple, vous constatez que notre carte Hyper-V a l'ID 22.<br>
-Prenez note de votre carte Hyper-V puis exécutez la commande `route add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0 si 22` (remplacez l'IP et l'ID d'interface par celui que vous avez reçu).<br>
+Prenez note de votre carte Hyper-V puis exécutez la commande `route add -p 192.xxx.xxx.16 mask 255.255.255.255 0.0.0.0 if 22` (remplacez l'IP et l'ID d'interface par celui que vous avez reçu).<br>
 Vous devriez obtenir le résultat « OK ! ».
 
 ```console

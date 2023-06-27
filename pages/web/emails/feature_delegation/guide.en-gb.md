@@ -1,10 +1,7 @@
 ---
 title: 'Delegating the management of your email accounts to another person'
 legacy_guide_number: 1933
-slug: delegate-managing-emails
 excerpt: 'Find out how to delegate the management of email accounts for your MX Plan solution'
-section: 'Email address features'
-order: 05
 updated: 2021-10-08
 ---
 
@@ -80,6 +77,6 @@ You can add multiple OVHcloud customer accounts to manage each email address.
 
 ## Go further
 
-[Getting started with the MX Plan solution](https://docs.ovh.com/gb/en/emails/web_hosting_an_overview_of_ovh_email/)
+[Getting started with the MX Plan solution](/pages/web/emails/email_generalities)
 
 Join our community of users on <https://community.ovh.com/en/>.

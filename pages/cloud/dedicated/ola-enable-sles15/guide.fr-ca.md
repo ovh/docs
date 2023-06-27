@@ -1,9 +1,6 @@
 ---
 title: "Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans SLES 15"
-slug: ola-sles15
 excerpt: 'Activer OVHcloud Link Aggregation sur votre serveur SLES 15'
-section: 'Utilisation avancée'
-order: 4
 updated: 2023-03-07
 ---
 
@@ -17,7 +14,7 @@ La technologie OVHcloud Link Aggregation (OLA) est conçue par nos équipes pour
 
 ## Prérequis
 
-- [Avoir configuré votre NIC pour la fonctionnalité OVHcloud Link Aggregation depuis l’espace client OVHcloud](https://docs.ovh.com/ca/fr/dedicated/ola-manager/)
+- [Avoir configuré votre NIC pour la fonctionnalité OVHcloud Link Aggregation depuis l’espace client OVHcloud](/pages/cloud/dedicated/ola-enable-manager)
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 ## En pratique
@@ -135,12 +132,12 @@ Vous pouvez également vérifier les paramètres utilisés par votre interface i
 
 ## Aller plus loin
 
-[Configurer l’agrégation de liens OLA dans votre espace client](https://docs.ovh.com/ca/fr/dedicated/ola-manager/).
+[Configurer l’agrégation de liens OLA dans votre espace client](/pages/cloud/dedicated/ola-enable-manager).
 
-[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Debian 9](https://docs.ovh.com/ca/fr/dedicated/ola-debian9/).
+[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Debian 9](/pages/cloud/dedicated/ola-enable-debian9).
 
-[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous CentOS 7](https://docs.ovh.com/ca/fr/dedicated/ola-centos7/).
+[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous CentOS 7](/pages/cloud/dedicated/ola-enable-centos7).
 
-[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Windows Server 2019](https://docs.ovh.com/ca/fr/dedicated/ola-w2k19/).
+[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Windows Server 2019](/pages/cloud/dedicated/ola-enable-w2k19).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

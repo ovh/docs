@@ -1,10 +1,7 @@
 ---
 title: 'Cambiar los servidores DNS de una instancia'
-slug: cambiar-los-servidores-dns-de-una-instancia
 excerpt: 'Cambiar los servidores DNS por defecto de una instancia Public Cloud'
 legacy_guide_number: 1985
-section: 'Red e IP'
-order: 4
 updated: 2021-10-29
 ---
 
@@ -35,9 +32,9 @@ Puede añadir un servidor secundario o sustituir esta configuración por la suya
 
 ## Procedimiento
 
-Conéctese a su instancia por SSH. Para más información, consulte la guía [Conectarse a una instancia de Public Cloud](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/#connect-to-instance).
+Conéctese a su instancia por SSH. Para más información, consulte la guía [Conectarse a una instancia de Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance).
 
-Cambiar al usuario root. Si lo necesita, consulte nuestra guía para [cambiar a root y establecer una contraseña](https://docs.ovh.com/us/es/public-cloud/conectarse_como_usuario_root_y_establecer_una_contrasena/).
+Cambiar al usuario root. Si lo necesita, consulte nuestra guía para [cambiar a root y establecer una contraseña](/pages/platform/public-cloud/become_root_and_change_password).
 
 ### Debian / Ubuntu
 
@@ -138,7 +135,7 @@ DNS configuration:
 
 ### Windows
 
-Conéctese a la instancia a través de una sesión de escritorio remoto o con la consola VNC. Para más información, consulte la guía [Conectarse a una instancia de Public Cloud](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/#connect-to-instance).
+Conéctese a la instancia a través de una sesión de escritorio remoto o con la consola VNC. Para más información, consulte la guía [Conectarse a una instancia de Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance).
 
 Abra los `Parámetros de red`{.action}.
 
@@ -159,10 +156,10 @@ En un PowerShell, el comando `nslookup` permite comprobar cuál es el servidor D
 
 ## Más información <a name="gofurther"></a>
 
-[Crear una primera instancia de Public Cloud y conectarse a ella](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/)
+[Crear una primera instancia de Public Cloud y conectarse a ella](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Ejecutar comandos como root](https://docs.ovh.com/us/es/public-cloud/conectarse_como_usuario_root_y_establecer_una_contrasena/)
+[Ejecutar comandos como root](/pages/platform/public-cloud/become_root_and_change_password)
 
-[Cambiar el hostname de una instancia de Public Cloud](https://docs.ovh.com/us/es/public-cloud/cambiar-el-hostname-de-una-instancia/)
+[Cambiar el hostname de una instancia de Public Cloud](/pages/platform/public-cloud/changing_the_hostname_of_an_instance)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

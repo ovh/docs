@@ -1,9 +1,6 @@
 ---
 title: Technical capabilities
-slug: technical-capabilities
 excerpt: 'Learn the technical capabilities and limitations of the OVHcloud Hosted Private Cloud'
-section: FAQ
-order: 1
 updated: 2023-03-23
 ---
 

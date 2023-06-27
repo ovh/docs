@@ -1,8 +1,6 @@
 ---
 title: 'Przypisanie wirtualnego adresu MAC do Additional IP'
-slug: network-virtual-mac
 excerpt: 'Dowiedz się, jak utworzyć wirtualny adres MAC i jak powiązać go z Additional IP'
-section: 'Sieć & IP'
 updated: 2022-12-20
 ---
 
@@ -24,7 +22,7 @@ OVHcloud umożliwia Ci powiązanie wirtualnego adresu MAC z adresem IP, abyś m�
 - Posiadanie [serwera dedykowanego](https://www.ovh.pl/serwery_dedykowane/){.external}
 - Posiadanie [adresu Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/){.external} lub bloku Additional IP (RIPE)
 - Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub do [API OVHcloud](https://api.ovh.com/)
-- Twój serwer musi obsługiwać wirtualne adresy MAC. Zapoznaj się [z tym przewodnikiem](https://docs.ovh.com/pl/dedicated/network-support-virtual-mac/).
+- Twój serwer musi obsługiwać wirtualne adresy MAC. Zapoznaj się [z tym przewodnikiem](/pages/cloud/dedicated/network_support_virtual_mac).
 
 > [!warning]
 > Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
@@ -32,7 +30,7 @@ OVHcloud umożliwia Ci powiązanie wirtualnego adresu MAC z adresem IP, abyś m�
 > Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](https://eco.ovhcloud.com/pl/compare/).
 
 > [!primary]
-> Jeśli nie jesteś zaznajomiony z korzystaniem z API OVHcloud, zapoznaj się z naszym przewodnikiem [Pierwsze kroki z API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/).
+> Jeśli nie jesteś zaznajomiony z korzystaniem z API OVHcloud, zapoznaj się z naszym przewodnikiem [Pierwsze kroki z API OVHcloud](/pages/account/api/first-steps).
 
 ## W praktyce
 

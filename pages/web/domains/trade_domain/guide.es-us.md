@@ -1,53 +1,59 @@
 ---
 title: 'Cómo cambiar el propietario de un nombre de dominio'
-slug: cambio-propietario-dominio
 excerpt: 'En esta guía, encontrará diversas informaciones en relación con el cambio de propietario del nombre de un dominio.'
-section: 'Cambiar el propietario'
-updated: 2021-03-04
+updated: 2023-06-19
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 04/03/2021**
+**Última actualización: 19/06/2023**
 
 ## Objetivo
 
-Además de [gestionar los contactos](../../customer/gestion-de-los-contactos/), para registrar un nombre de dominio, debe ingresar la información relacionada con su propietario. El **propietario** en este contexto se refiere a una persona o sociedad que posea los derechos sobre este dominio. **El cambio de propietario** hace referencia a la transferencia de derechos de propiedad de una persona o empresa a otra, la información del **propietario** tiene un valor jurídico. Por ejemplo, este proceso es obligatorio si una empresa cambia de nombre.
+Además de [gestionar los contactos](/pages/account/customer/managing_contactos), para registrar un dominio es necesario introducir la información relativa al propietario del mismo. En este contexto, el **propietario** designa a una persona, empresa, organización o asociación que posea los derechos sobre este dominio. **El cambio de propietario** hace referencia a la transferencia de los derechos de propiedad de una persona o empresa a otra. La información del **propietario** tiene valor jurídico. Este proceso es especialmente obligatorio si una empresa cambia de nombre.
 
 > [!primary]
 >Esta operación no migra el dominio a otra cuenta de cliente de OVHcloud.
 >
->Para ello, debe [modificar los contactos](../../customer/gestion-de-los-contactos/) del nombre de dominio.
+>Para ello, debe [modificar los contactos](/pages/account/customer/managing_contacts) del nombre de dominio.
+>
+> Si necesitas hacer un cambio de titular y un cambio de contacto para un mismo nombre de dominio, no hay orden preferente. Sin embargo, es el contacto del administrador quien puede iniciar estas operaciones. Por lo tanto, estos dos cambios se realizan en el área de clientes del contacto del administrador del nombre de dominio.
 
-**Cómo cambiar el propietario de un dominio**
+**Descubra cómo cambiar el propietario de un dominio**
 
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
-- Tener un nombre de dominio registrado en OVHcloud.
-- Ser el [contacto administrador](../../customer/gestion-de-los-contactos/) del nombre de dominio en cuestión.
+- Tener un nombre de dominio registrado en OVHcloud y para el que no se está realizando ninguna operación (cambio de propietario, transferencia, creación). Si una operación ha finalizado recientemente en su dominio, es necesario un plazo mínimo de 60 días naturales antes de realizar una nueva operación.
+- Ser el [contacto administrador](/pages/account/customer/managing_contacts) del nombre de dominio en cuestión.
 - Contar con el consentimiento del propietario actual del nombre de dominio para realizar el cambio de propietario.
 
 ## Procedimiento
 
 > [!warning]
 >
-> Las instrucciones siguientes describen la forma más común de modificar el propietario del dominio, válido para la mayoría de los dominios de nivel superior (TLD). No obstante, las reglas específicas de los procesos relativas a los dominios TLD son definidas únicamente por la autoridad de asignación correspondiente, es decir, el **registro**. Los agentes registradores (o registradores), como OVHcloud, deben respetar estas reglas y no tienen ninguna influencia en las decisiones de registro.
+> Las instrucciones siguientes describen la forma más común de modificar el propietario de un dominio. Son válidas para la mayoría de los dominios de nivel superior, comúnmente llamados **T**op **L**evel **D**omain (**TLD**). 
+>Los **TLD** designan el fin de su nombre de dominio, como por ejemplo el *.com*, *.net*, *.fr*, etc.
 >
-> El procedimiento exacto para el cambio de propietario de un dominio puede variar, en particular en el caso de determinados TLD de código de país (ccTLD, como .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) y de algunos TLD especiales (.am, .fm, etc.). Para algunos de ellos, un cambio de propietario se considera una operación de pago. El cambio de propietario también puede ser suspendido por varias razones, por ejemplo por impago, abuso o bloqueo del registro.
+> Las reglas específicas de los procesos relativas a los dominios **TLD** son definidas únicamente por la autoridad de asignación correspondiente, es decir, el **registro**. Un agente registrador (o registrador) como OVHcloud debe respetar estas reglas y no influye en las decisiones de registro.
 >
-> En caso de duda, le recomendamos que consulte los siguientes recursos:
+> Existen principalmente dos tipos de **TLD** : **ccTLD** y **gTLD**. Los **ccTLD** corresponden a **TLD** relativos a una región o un país (*.es*, *.be*, *.uk*, *.de*, *.paris*, etc.). **gTLD** correspondientes a **TLD** más genéricos (*.net*, *.com*, *.info*, *.org*, etc.).
 >
-> - el sitio web del registro TLD correspondiente;
-> - la [lista de TLD disponibles en OVHcloud](https://www.ovhcloud.com/es-es/domains/tld/);
+> El procedimiento exacto para el cambio de propietario de un dominio puede variar, en particular para determinados dominios **ccTLD**, como *.lu*, *.hk*, *.ro*, *.be*, *.lt*, *.dk*, *.at*, *.fi*, etc.) y para algunos **TLD** especiales (*.am* , *.fm*, etc.). Para algunos de ellos, un cambio de propietario es una operación de pago. El cambio de propietario también puede ser suspendido por varias razones, por ejemplo por impago, abuso o bloqueo por parte del registro. 
+>
+Si tiene alguna duda, le recomendamos que consulte los siguientes recursos:
+>
+> - el sitio web del registro **TLD** correspondiente;
+> - la [lista de TLD disponibles en OVHcloud](https://www.ovhcloud.com/es/domains/tld/);
 > - la sección `Operaciones en curso`{.action} del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) para comprobar las actualizaciones del estado del dominio.
 >
 
 ### 1. seleccionar el dominio
 
 Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), en la sección `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el dominio genérico (gTLD) del que quiera cambiar el propietario.
+
 
 ### 2. iniciar el procedimiento de cambio de propietario
 
@@ -84,7 +90,7 @@ Si la dirección de correo electrónico no se modifica como parte del cambio de 
 
 > [!warning]
 >
-> Si el propietario del dominio ha sido modificado, el dominio no podrá ser [transferido a otro agente registrador](../transferencia_saliente_de_un_dominio_generico_o_geografico/) durante un período de 60 días.
+> Si el propietario del dominio ha sido modificado, el dominio no podrá ser [transferido a otro agente registrador](/pages/web/domains/transfer_outgoing_domain) durante un período de 60 días.
 
 ### Actualización de la información del propietario <a name="updateownerinformation"></a>
 
@@ -98,6 +104,10 @@ No es necesario confirmar los cambios por correo electrónico.
 
 ## Más información
 
-[Gestionar los contactos de los servicios](../../customer/gestion-de-los-contactos/)
+[Gestionar los contactos de los servicios](/pages/account/customer/managing_contacts)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -1,7 +1,5 @@
 ---
 title: Health notifications
-slug: integrations-notifications
-section: Integrations
 updated: 2021-05-25
 ---
 
@@ -30,7 +28,7 @@ Notifications are generated every 5 minutes, so there may be a brief delay betwe
 
 ## Configuring notifications
 
-Health notifications can be set up via the [Web PaaS CLI](../development-cli), through a number of different channels.
+Health notifications can be set up via the [Web PaaS CLI](/pages/web/web-paas/development-cli), through a number of different channels.
 
 ### Slack notifications
 
@@ -116,7 +114,7 @@ Please refer to the [JOSE Cookbook](https://github.com/ietf-jose/cookbook) for e
 
 ## Validate the integration
 
-You can then verify that your integration is functioning properly [using the CLI](../integrations-overview#validating-integrations) command
+You can then verify that your integration is functioning properly [using the CLI](/pages/web/web-paas/integrations-overview#validating-integrations) command
 
 ```bash
 $ webpaas integration:validate

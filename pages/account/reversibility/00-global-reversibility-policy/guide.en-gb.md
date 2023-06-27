@@ -1,8 +1,5 @@
 ---
 title: Global Reversibility Policy
-slug: global-reversibility-policy
-section: Reversibility policies
-order: 1
 updated: 2021-05-05
 ---
 

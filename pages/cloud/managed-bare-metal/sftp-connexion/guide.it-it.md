@@ -1,11 +1,8 @@
 ---
 title: Connessione in SFTP
-slug: connessione-in-sftp
 routes:
-    canonical: 'https://docs.ovh.com/it/private-cloud/connessione-in-sftp/'
+    canonical: '/pages/cloud/private-cloud/sftp_connexion'
 excerpt: Come accedere al servizio Managed Bare Metal in SFTP
-section: Per iniziare
-order: 3
 updated: 2020-11-18
 ---
 

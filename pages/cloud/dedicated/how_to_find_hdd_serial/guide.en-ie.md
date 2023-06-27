@@ -1,8 +1,6 @@
 ---
 title: Finding the serial number of a hard disk
-slug: find-disk-serial-number
 excerpt: This guide will show you how to retrieve the serial number of a disk in order to proceed with its replacement.
-section: Server Management
 updated: 2018-08-21
 ---
 
@@ -73,7 +71,7 @@ The device will be detected by the OS, and displayed as follows: /dev/sda, /dev/
 
 ### Retrieve a disk's serial number (Hardware RAID)
 
-For an in-depth look of these commands and how to test your hard disks, refer to [this guide (LSI raid controller)](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}.
+For an in-depth look of these commands and how to test your hard disks, refer to [this guide (LSI raid controller)](/pages/cloud/dedicated/raid_hard){.external}.
 
 
 #### MegaRaid Controller
@@ -163,7 +161,7 @@ The RAID Device ID will be displayed as follows: /dev/sda = 1st RAID, /dev/sdb =
 
 LSI RAID controller uses a module called sg-map which maps devices in /dev/sgX (**X** being the number defining the device).
 
-You can refer to [this guide (LSI raid controller)](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} to find which hard drive relates to a designated sg device.
+You can refer to [this guide (LSI raid controller)](/pages/cloud/dedicated/raid_hard){.external} to find which hard drive relates to a designated sg device.
 
 Once you have found the sg device related to the hard disk you want to query, use the following command:
 

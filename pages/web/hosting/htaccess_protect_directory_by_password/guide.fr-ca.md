@@ -1,9 +1,6 @@
 ---
 title: "Tutoriel - Protéger un répertoire ou l'interface d'administration de votre site web par des fichiers « .htaccess » et « .htpasswd »"
-slug: mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification
 excerpt: "Decouvrez comment protéger un répertoire ou l'accès à l'administration de votre site web via une authentification avec les fichiers « .htaccess » et « .htpasswd »"
-section: Réécriture et authentification
-order: 02
 updated: 2023-05-31
 ---
 

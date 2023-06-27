@@ -1,9 +1,6 @@
 ---
 title: Comprar una Additional IP
-slug: buy-additional-ip
 excerpt: "Cómo contratar direcciones Additional IP para sus instancias"
-section: Additional IP
-order: 02
 updated: 2023-01-04
 ---
 
@@ -35,7 +32,7 @@ Estas direcciones Additional IP solo pueden migrar a las instancias de un mismo 
 ## Requisitos
 
 - Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
-- Disponer al menos de una instancia. A tal efecto, consulte [la guía para crear una instancia desde el área de cliente](https://docs.ovh.com/us/es/public-cloud/crear_una_instancia_desde_el_area_de_cliente_de_ovh/).
+- Disponer al menos de una instancia. A tal efecto, consulte [la guía para crear una instancia desde el área de cliente](/pages/platform/public-cloud/public-cloud-first-steps#3-crear-una-instancia/).
 
 > [!warning]
 > Esta funcionalidad no está actualmente disponible para instancias Metal.
@@ -88,15 +85,15 @@ En la última etapa, seleccione su instancia en el menú desplegable. Haga clic 
 
 La orden de pedido se abrirá automáticamente para finalizar la compra.
 
-Para más información, consulte nuestra guía sobre la [gestión de los pedidos en OVHcloud](https://docs.ovh.com/us/es/billing/gestionar-los-pedidos-en-ovh/).
+Para más información, consulte nuestra guía sobre la [gestión de los pedidos en OVHcloud](/pages/account/billing/managing_ovh_orders).
 
 También puede consultar la orden de pedido en el área de cliente, en la sección `Dashboard`{.action}, haciendo clic en `Ver mis pedidos`{.action}.
 
-El siguiente paso es configurar la IP en el sistema operativo. Consulte [nuestra guía sobre cómo configurar](https://docs.ovh.com/us/es/publiccloud/network-services/configure-additional-ip/) el alojamiento web.
+El siguiente paso es configurar la IP en el sistema operativo. Consulte [nuestra guía sobre cómo configurar](/pages/platform/network-services/getting-started-04-configure-additional-ip-to-instance) el alojamiento web.
 
 ## Más información
 
-[Configurar una Additional IP](https://docs.ovh.com/us/es/publiccloud/network-services/configure-additional-ip/)
+[Configurar una Additional IP](/pages/platform/network-services/getting-started-04-configure-additional-ip-to-instance)
 
 Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 

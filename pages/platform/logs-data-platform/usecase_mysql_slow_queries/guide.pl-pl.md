@@ -1,9 +1,6 @@
 ---
 title: Tracking slow MySQL queries with Logs Data Platform
-slug: logs-data-platform-mysql-slow-queries
-order: 04
 excerpt: Keep your MySQL database at high speed with Logs Data Platform!
-section: Use cases
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-mysql-slow-queries?id=kb_article_view&sysparm_article=KB0050059'
 updated: 2019-04-11
@@ -175,6 +172,6 @@ All this information can help you to analyse the most difficult queries for your
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/pl/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

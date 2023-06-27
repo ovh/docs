@@ -1,17 +1,16 @@
 ---
 title: 'Ativação e gestão do seu SharePoint OVHcloud'
-slug: ativacao_e_gestao_do_seu_sharepoint_ovh
 excerpt: 'Saiba como subscrever e configurar uma plataforma SharePoint.'
-section: SharePoint
-order: 01
-updated: 2020-08-11
+updated: 2023-06-19
 ---
 
 **Última atualização: 30/04/2020**
 
 ## Sumário
 
-As ofertas SharePoint disponibilizam um espaço de armazenamento partilhado ao seu trabalho colaborativo.
+As ofertas SharePoint permitem-lhe beneficiar de um espaço de armazenamento de 1 TB partilhado com as restantes contas da sua plataforma Sharepoint, para o seu trabalho colaborativo.
+
+Você também tem 100 GB de espaço de armazenamento pessoal para cada conta em sua plataforma sharepoint.
 
 **Saiba como encomendar e configurar uma plataforma SharePoint.**
 

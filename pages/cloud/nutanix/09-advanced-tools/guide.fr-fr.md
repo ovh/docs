@@ -1,9 +1,6 @@
 ---
 title: Outils avancés
-slug: advanced-tools
 excerpt: "Présentation de divers outils avancés disponibles pour l'offre Nutanix on OVHcloud"
-section: Utilisation avancée
-order: 01
 updated: 2022-03-28
 ---
 
@@ -455,7 +452,7 @@ Nous allons voir comment créer deux machines virtuelles d'une manière automati
 
 ##### **Création d'une machine virtuelle sous Linux**
 
-Il est possible d'installer Linux à partir d'images préinstallées et de personnaliser la configuration avec cloud-init qui utilise le format de fichiers yaml. Pour importer des images dans un cluster Nutanix, vous pouvez vous aider de notre guide sur l'[importation d'images ISO](https://docs.ovh.com/fr/nutanix/image-import/).
+Il est possible d'installer Linux à partir d'images préinstallées et de personnaliser la configuration avec cloud-init qui utilise le format de fichiers yaml. Pour importer des images dans un cluster Nutanix, vous pouvez vous aider de notre guide sur l'[importation d'images ISO](/pages/cloud/nutanix/05-image-import).
 
 Suivez ces instructions pour créer une machine virtuelle à partir d'une image personnalisable avec cloud-init d'Ubuntu.
 

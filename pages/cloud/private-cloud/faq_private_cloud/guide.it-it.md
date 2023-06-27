@@ -1,7 +1,6 @@
 ---
 title: FAQ Hosted Private Cloud
 excerpt: ''
-slug: faq_dedicated_cloud
 legacy_guide_number: g598
 updated: 2018-03-26
 ---

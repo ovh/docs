@@ -1,9 +1,6 @@
 ---
 title: "Que faire en cas de page « 403 forbidden » ?"
 excerpt: "Découvrez comment remettre votre site web en ligne s'il affiche une page « 403 forbidden »"
-slug: diagnostic-403-forbidden
-section: Diagnostic
-order: 08
 updated: 2023-06-08
 ---
 

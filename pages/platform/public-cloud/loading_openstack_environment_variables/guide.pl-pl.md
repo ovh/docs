@@ -1,8 +1,6 @@
 ---
 title: 'Zmienne środowiskowe OpenStack'
 excerpt: 'Zarządzaj środowiskiem OpenStack z linii komend'
-slug: set-openstack-environment-variables
-section: 'Zarządzanie w OpenStack CLI'
 updated: 2021-08-18
 ---
 
@@ -19,8 +17,8 @@ Pobranie zmiennych środowiskowych OpenStack na Twoje stanowisko umożliwi Ci ko
 ## Wymagania początkowe
 
 - Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
-- Utworzenie użytkownika OpenStack. Informacje na ten temat znajdziesz [w tym przewodniku](https://docs.ovh.com/pl/public-cloud/tworzenie-i-usuwanie-uzytkownika-openstack/).
-- Przygotowanie środowiska do korzystania z OpenStack. Informacje na ten temat znajdziesz w tym przewodniku: [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/).
+- Utworzenie użytkownika OpenStack. Informacje na ten temat znajdziesz [w tym przewodniku](/pages/platform/public-cloud/create_and_delete_a_user).
+- Przygotowanie środowiska do korzystania z OpenStack. Informacje na ten temat znajdziesz w tym przewodniku: [Przygotowanie środowiska do korzystania z API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api).
 
 ## W praktyce
 
@@ -47,7 +45,7 @@ admin@vpsxxxxxx:~$ source openrc.sh
 Please enter your OpenStack Password:
 ```
 
-Jak wskazano w [tym przewodniku](https://docs.ovh.com/pl/public-cloud/tworzenie-i-usuwanie-uzytkownika-openstack/), hasło jest widoczne tylko raz, podczas jego tworzenia.
+Jak wskazano w [tym przewodniku](/pages/platform/public-cloud/create_and_delete_a_user), hasło jest widoczne tylko raz, podczas jego tworzenia.
 
 Jeśli zapomnisz hasła, konieczne będzie jego ponowne utworzenie.
 

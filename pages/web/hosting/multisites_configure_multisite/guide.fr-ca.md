@@ -1,9 +1,6 @@
 ---
 title: 'Partager son hébergement entre plusieurs sites'
-slug: multisites-configurer-un-multisite-sur-mon-hebergement-web
 excerpt: "Découvrez comment héberger différents sites Internet sur votre offre d'hébergement web"
-section: 'Premiers pas'
-order: 03
 updated: 2023-06-08
 ---
 
@@ -19,7 +16,7 @@ Vous pouvez héberger plusieurs sites Internet sur une même offre d'hébergemen
 
 - Disposer d'une offre [d'hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} compatible.
 - Disposer d'un ou plusieurs [noms de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external}.
-- Pouvoir modifier la configuration de vos noms de domaine (la [zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns)).
+- Pouvoir modifier la configuration de vos noms de domaine (la [zone DNS](/pages/web/domains/dns_zone_edit#comprendre-la-notion-de-dns)).
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
@@ -87,7 +84,7 @@ Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}
 En ayant sélectionné un nom de domaine enregistré chez OVHcloud, vous avez la possibilité de modifier automatiquement ou manuellement sa configuration DNS :
 
 - **pour une configuration DNS automatique** : cochez la case `Configuration automatique (recommandée)`{.action} ;
-- **pour une configuration DNS manuelle** : décochez la case `Configuration automatique (recommandée)`{.action} puis notez les informations qui s'affichent. Lorsque vous souhaiterez réaliser ce paramétrage, aidez-vous de notre documentation [« Éditer une zone DNS OVHcloud »](../../domains/editer-ma-zone-dns/){.external}.
+- **pour une configuration DNS manuelle** : décochez la case `Configuration automatique (recommandée)`{.action} puis notez les informations qui s'affichent. Lorsque vous souhaiterez réaliser ce paramétrage, aidez-vous de notre documentation [« Éditer une zone DNS OVHcloud »](/pages/web/domains/dns_zone_edit){.external}.
 
 Cliquez alors sur `Valider`{.action} pour lancer l’ajout du domaine. Cela peut prendre jusqu'à une heure. Cependant, la modification de la configuration DNS de votre domaine nécessite un temps de propagation de 1 à 24 heures avant d’être pleinement effective.
 
@@ -101,13 +98,13 @@ Maintenant que le domaine est ajouté, rendez-vous à l’[étape 3 : mettre vot
 
  > Avant de poursuivre, il est préférable de modifier la zone DNS du nom de domaine externe avant l'ajout de l'entrée multisite.
  >
- > La modification de la configuration du nom de domaine externe (sa zone DNS) doit être réalisée depuis l’interface du prestataire gérant celle-ci. S’il s’agit d’OVHcloud, aidez-vous de notre documentation [« Éditer une zone DNS OVHcloud »](../../domains/editer-ma-zone-dns/){.external}. Une fois la modification effectuée, un temps de propagation de 1 à 24 heures est requis avant qu’elle ne soit pleinement effective.
+ > La modification de la configuration du nom de domaine externe (sa zone DNS) doit être réalisée depuis l’interface du prestataire gérant celle-ci. S’il s’agit d’OVHcloud, aidez-vous de notre documentation [« Éditer une zone DNS OVHcloud »](/pages/web/domains/dns_zone_edit){.external}. Une fois la modification effectuée, un temps de propagation de 1 à 24 heures est requis avant qu’elle ne soit pleinement effective.
 >
 > Retrouvez ci-dessous les 2 éléments à modifier concernant la configuration DNS de votre nom de domaine externe :
 >
 > |Champ|Où trouver l'information ?|Action à réaliser|
 > |---|---|---|
-> |TXT|Onglet `Multisite`{.action} puis cliquez sur `Configuration du token ovhcontrol`{.action}|Permet à OVHcloud de s'assurer que l'ajout de chaque nom de domaine externe est légitime. Veillez à créer le champ TXT avec le sous-domaine ovhcontrol (par exemple, ovhcontrol.mydomain.ovh) dans la zone DNS faisant autorité pour le nom de domaine à ajouter.<br></br>Il est important de noter que si vous souhaitez ajouter `blog.mydomain.ovh`, vous devrez créer l'entrée TXT `ovhcontrol.mydomain.ovh` et non l'entrée `ovhcontrol.blog.mydomain.ovh`.<br></br>Pour retrouver cette dernière, retrouvez les [serveurs DNS](../../domains/generalites-serveurs-dns/#comprendre-la-notion-de-dns) auxquels votre domaine est lié. Vous devrez valider uniquement le domaine principal, pas tous les sous-domaines.|
+> |TXT|Onglet `Multisite`{.action} puis cliquez sur `Configuration du token ovhcontrol`{.action}|Permet à OVHcloud de s'assurer que l'ajout de chaque nom de domaine externe est légitime. Veillez à créer le champ TXT avec le sous-domaine ovhcontrol (par exemple, ovhcontrol.mydomain.ovh) dans la zone DNS faisant autorité pour le nom de domaine à ajouter.<br></br>Il est important de noter que si vous souhaitez ajouter `blog.mydomain.ovh`, vous devrez créer l'entrée TXT `ovhcontrol.mydomain.ovh` et non l'entrée `ovhcontrol.blog.mydomain.ovh`.<br></br>Pour retrouver cette dernière, retrouvez les [serveurs DNS](/pages/web/domains/dns_server_general_information#comprendre-la-notion-de-dns) auxquels votre domaine est lié. Vous devrez valider uniquement le domaine principal, pas tous les sous-domaines.|
 >
 > ![multisite](images/add-multisite-external-step3.png){.thumbnail}
 >
@@ -147,9 +144,9 @@ Notez les éléments qui s’affichent, puis cliquez sur le bouton `Valider`{.ac
 
 Une fois le nom de domaine ajouté, il ne vous reste plus qu’à mettre en ligne le site associé à ce dernier. Pour rappel, vous devez réaliser cette manipulation dans le dossier racine que vous avez défini lors de l’étape précédente.
 
-Pour vous aider dans cette démarche, vous pouvez bénéficier d’une structure de site prête à l’emploi grâce aux modules en 1 clic d’OVHcloud. Le site sera alors installé automatiquement dans le dossier racine configuré précédemment. Vous pouvez en apprendre plus sur cette possibilité depuis notre documentation intitulée [« Installer son site avec les modules en 1 clic »](../modules-en-1-clic/){.external}.
+Pour vous aider dans cette démarche, vous pouvez bénéficier d’une structure de site prête à l’emploi grâce aux modules en 1 clic d’OVHcloud. Le site sera alors installé automatiquement dans le dossier racine configuré précédemment. Vous pouvez en apprendre plus sur cette possibilité depuis notre documentation intitulée [« Installer son site avec les modules en 1 clic »](/pages/web/hosting/cms_install_1_click_modules){.external}.
 
-A contrario, si vous souhaitez installer manuellement votre site, munissez-vous de ses fichiers puis mettez-les en ligne dans le bon dossier racine sur votre espace de stockage. Vous pouvez en apprendre plus sur cette possibilité depuis notre documentation intitulée [« Mettre en ligne un site Internet sur son hébergement web »](../mettre-mon-site-en-ligne/){.external}.
+A contrario, si vous souhaitez installer manuellement votre site, munissez-vous de ses fichiers puis mettez-les en ligne dans le bon dossier racine sur votre espace de stockage. Vous pouvez en apprendre plus sur cette possibilité depuis notre documentation intitulée [« Mettre en ligne un site Internet sur son hébergement web »](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}.
 
 > [!primary]
 >
@@ -160,11 +157,11 @@ A contrario, si vous souhaitez installer manuellement votre site, munissez-vous 
 
 ## Aller plus loin
 
-[Installer son site avec les modules en 1 clic.](../modules-en-1-clic/){.external}
+[Installer son site avec les modules en 1 clic.](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Éditer une zone DNS OVHcloud.](../../domains/editer-ma-zone-dns/){.external}
+[Éditer une zone DNS OVHcloud.](/pages/web/domains/dns_zone_edit){.external}
 
-[Mettre en ligne un site Internet sur son hébergement web.](../mettre-mon-site-en-ligne/){.external}
+[Mettre en ligne un site Internet sur son hébergement web.](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 

@@ -1,11 +1,8 @@
 ---
 title: Jak zrezygnować z usługi Managed Bare Metal
-slug: jak-zrezygnowac-z-managed-bare-metal
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/jak-zrezygnowac-z-private-cloud/'
+    canonical: '/pages/cloud/private-cloud/comment_resilier_le_private_cloud'
 excerpt: Dowiedz się, jak zrezygnować z infrastruktury Managed Bare Metal
-section: Funkcjonalności OVHcloud
-order: 09
 updated: 2020-11-18
 ---
 

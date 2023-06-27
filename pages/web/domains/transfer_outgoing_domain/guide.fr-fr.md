@@ -1,6 +1,5 @@
 ---
 title: Transférer un nom de domaine vers un autre bureau d'enregistrement
-slug: transfert-sortant-dun-nom-de-domaine-generique-ou-geographique
 excerpt: Découvrez comment effectuer le transfert d’un nom de domaine OVHcloud vers le bureau d'enregistrement de votre choix
 section: Transfert
 order: 03

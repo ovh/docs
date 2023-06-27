@@ -1,9 +1,6 @@
 ---
 title: 'Zmiana serwerów DNS domeny w OVHcloud'
-slug: hosting_www_informacje_na_temat_serwerow_dns
 excerpt: 'Dowiedz się, jak zmodyfikować serwery DNS Twojej domeny w OVHcloud'
-section: 'DNS i strefa DNS'
-order: 01
 updated: 2021-02-18
 ---
 
@@ -19,7 +16,7 @@ updated: 2021-02-18
 
 Symbol DNS, oznaczający **D**omain **D**ame **S**ystem, to zbiór elementów pozwalających na powiązanie domeny z adresem IP.
 
-Pełne wyjaśnienie znajduje się w przewodniku "[Modyfikacja strefy DNS OVHcloud](../hosting_www_jak_edytowac_strefe_dns/#understanddns)".
+Pełne wyjaśnienie znajduje się w przewodniku "[Modyfikacja strefy DNS OVHcloud](/pages/web/domains/dns_zone_edit#understanddns)".
 
 ### Serwery DNS 
 
@@ -36,7 +33,7 @@ Serwery DNS są zwykle używane w grupach po dwa (podstawowy i wtórny), w celu 
 ## Wymagania początkowe
 
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/) zarejestrowanej w OVHcloud
-- Posiadanie [odpowiednich uprawnień do zarządzania](../../customer/zarzadzanie_kontaktami/){.external} domeną w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Posiadanie [odpowiednich uprawnień do zarządzania](/pages/account/customer/managing_contacts){.external} domeną w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 > [!primary]
@@ -57,7 +54,7 @@ Pamiętaj, że:
 
 - Podczas zmiany serwera DNS (e.g) DNS zewnętrzny przez DNS OVHCloud), zawartość poprzedniej konfiguracji DNS nie jest automatycznie kopiowana do nowej konfiguracji. Upewnij się, czy nowa strefa DNS zawiera wszystkie rekordy DNS wymagane do prawidłowego działania usług powiązanych z Twoją domeną (np. strona WWW i konta e-mail).
 
-- Jeśli chcesz zmienić tylko jeden element aktualnej konfiguracji DNS (np. rekord DNS), zalecamy edycję strefy DNS zgodnie z instrukcją: "[Edycja strefy DNS OVHcloud](../hosting_www_jak_edytowac_strefe_dns/){.external}".
+- Jeśli chcesz zmienić tylko jeden element aktualnej konfiguracji DNS (np. rekord DNS), zalecamy edycję strefy DNS zgodnie z instrukcją: "[Edycja strefy DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external}".
 
 - Niektóre organizacje, rejestry zarządzające rozszerzeniami domen, mają specjalne wymagania dotyczące serwerów DNS (liczba serwerów nazw, wartość rekordów, etc.). W przypadku wątpliwości sprawdź w rejestrze odpowiedzialnym za domenę.
 
@@ -105,6 +102,6 @@ Po zakończeniu operacji należy odczekać określony czas, zanim zmiany staną 
 
 ## Sprawdź również
 
-[ Zmiana strefy](../hosting_www_jak_edytowac_strefe_dns/){.external} DNS OVHcloud.
+[ Zmiana strefy](/pages/web/domains/dns_zone_edit){.external} DNS OVHcloud.
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

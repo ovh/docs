@@ -1,10 +1,8 @@
 ---
 title: 'Logging in via SFTP'
-slug: sftp_connection
 routes:
-    canonical: 'https://docs.ovh.com/asia/en/private-cloud/sftp_connection/'
+    canonical: '/pages/cloud/private-cloud/sftp_connexion'
 excerpt: 'Find out how to log in to your Managed Bare Metal via SFTP'
-section: 'Getting started'
 updated: 2020-11-18
 ---
 

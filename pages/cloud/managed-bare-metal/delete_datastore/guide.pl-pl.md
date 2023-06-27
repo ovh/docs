@@ -1,10 +1,8 @@
 ---
 title: 'Usuwanie przestrzeni datastore'
-slug: usuwanie-datastore
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/usuwanie-datastore/'
+    canonical: '/pages/cloud/private-cloud/delete_datastore'
 excerpt: 'Dowiedz się, jak usunąć przestrzeń datastore z Twojej infrastruktury Managed Bare Metal'
-section: 'Funkcjonalności OVHcloud'
 updated: 2020-11-18
 ---
 

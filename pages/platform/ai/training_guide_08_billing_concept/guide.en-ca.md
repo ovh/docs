@@ -1,9 +1,6 @@
 ---
 title: AI Training - Billing and lifecycle
-slug: training/billing
 excerpt: Learn how we bill AI Training
-section: AI Training - Guides
-order: 8
 updated: 2023-02-14
 ---
 
@@ -19,18 +16,18 @@ AI Training jobs are linked to a Public Cloud project. The whole project is bill
 
 ## AI Training job lifecycle
 
-During its lifetime, the [AI Training job](https://docs.ovh.com/ca/en/publiccloud/ai/training/jobs/) will go through the following statuses:
+During its lifetime, the [AI Training job](/pages/platform/ai/training_guide_03_concepts_jobs) will go through the following statuses:
 
 - `QUEUED`: The job run request is about to be processed.
-- `INITIALIZING`: The job instance is created and the data is synchronized from the Object Storage. To know more about the data synchronisation check out the [Data How it works](https://docs.ovh.com/ca/en/publiccloud/ai/data/#how-it-works) section.
+- `INITIALIZING`: The job instance is created and the data is synchronized from the Object Storage. To know more about the data synchronisation check out the [Data How it works](/pages/platform/ai/gi_02_concepts_data#how-it-works) section.
 - `PENDING`: The job is being started.
 - `RUNNING`: The job is running, you can connect to it. Compute resources (GPUs/CPUs) are allocated to your specific job and data are available.
 - `INTERRUPTING`: The job is still running but an interruption order was received and is about to be processed.
-- `FINALIZING`: The job instance is deleted and the data is synchronized back to the Object Storage. To know more about the data synchronisation check out the [Data How it works](https://docs.ovh.com/ca/en/publiccloud/ai/data/#how-it-works) section.
+- `FINALIZING`: The job instance is deleted and the data is synchronized back to the Object Storage. To know more about the data synchronisation check out the [Data How it works](/pages/platform/ai/gi_02_concepts_data#how-it-works) section.
 - `DONE`: The job ended normally.
 - `TIMEOUT`: The job is still running but is about to be interrupted because the timeout was reached.
 - `INTERRUPTED`: The job is ended and was interrupted.
-- `FAILED`: The job ended with an error, e.g. the process in the job finished with a non 0 exit code, Docker image could not be pulled. For more information, refer to [this section](https://docs.ovh.com/ca/en/publiccloud/ai/training/debug-jobs/#why-has-my-job-failed) of our [Troubleshooting documentation](https://docs.ovh.com/ca/en/publiccloud/ai/training/debug-jobs/).
+- `FAILED`: The job ended with an error, e.g. the process in the job finished with a non 0 exit code, Docker image could not be pulled. For more information, refer to [this section](/pages/platform/ai/training_guide_07_troubleshooting#why-has-my-job-failed) of our [Troubleshooting documentation](/pages/platform/ai/training_guide_07_troubleshooting).
 - `ERROR`: The job ended due to a backend error. You may contact our support.
 
 ![lifecycle](images/ai.training.lifecycle.png){.thumbnail}

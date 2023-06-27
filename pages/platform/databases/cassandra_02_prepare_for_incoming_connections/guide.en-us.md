@@ -1,9 +1,6 @@
 ---
 title: Cassandra - Configure your Cassandra instance to accept incoming connections
 excerpt: Find out how to configure your Cassandra instance to accept incoming connections
-slug: cassandra/configure-cassandra-instance
-section: Cassandra - Guides
-order: 020
 updated: 2022-05-12
 ---
 
@@ -19,7 +16,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 - A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-- A Cassandra database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/us/en/publiccloud/databases/getting-started/) can help you to meet this requirement)
+- A Cassandra database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
 
 ## Instructions
 

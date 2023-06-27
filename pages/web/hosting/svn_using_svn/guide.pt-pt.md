@@ -1,9 +1,6 @@
 ---
 title: Utilizar SVN
-slug: alojamento_partilhado_utilizar_svn
 excerpt: Saiba como utilizar o SVN em SSH no seu alojamento web
-section: FTP e SSH
-order: 09
 updated: 2021-01-06
 ---
 
@@ -29,13 +26,13 @@ SVN, que é a abreviação de "subversion", é um sistema de gestão de versões
 ## Pré-requisitos
 
 - Ter um [plano de alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que permite uma ligação SSH (**a partir da oferta Pro**)
-- Aceder via SSH ao seu alojamento Web (pode consultar o nosso guia [Utilizar o acesso SSH do alojamento web](../partilhado_o_ssh_nos_alojamentos_partilhados/))
+- Aceder via SSH ao seu alojamento Web (pode consultar o nosso guia [Utilizar o acesso SSH do alojamento web](/pages/web/hosting/ssh_on_webhosting))
 
 ## Instruções
 
 ### Criação do depósito
 
-Depois de aceder ao [SSH no seu alojamento](../partilhado_o_ssh_nos_alojamentos_partilhados/){.external}, crie a pasta raiz dos depósitos SVN e, a seguir, o depósito.
+Depois de aceder ao [SSH no seu alojamento](/pages/web/hosting/ssh_on_webhosting){.external}, crie a pasta raiz dos depósitos SVN e, a seguir, o depósito.
 
 Para isso, basta introduzir o comando:
 
@@ -63,7 +60,7 @@ Deve obter os diretórios conforme indicado na seguinte imagem:
 
 Antes de prosseguir, terá de criar um par de chaves SSH a partir do posto que utiliza para se ligar ao depósito SVN.
 
-Sugerimos que siga o guia [Criar chaves SSH](https://docs.ovh.com/pt/public-cloud/criacao-de-chaves-ssh/). Neste guia, não é necessário seguir o passo [Importar a chave SSH para a Área de Cliente OVHcloud](https://docs.ovh.com/pt/public-cloud/criacao-de-chaves-ssh/#como-importar-a-sua-chave-ssh-para-a-area-de-cliente-ovh).
+Sugerimos que siga o guia [Criar chaves SSH](/pages/platform/public-cloud/public-cloud-first-steps#1o-passo-criacao-de-chaves-ssh/). Neste guia, não é necessário seguir o passo [Importar a chave SSH para a Área de Cliente OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#1o-passo-criacao-de-chaves-ssh/#como-importar-a-sua-chave-ssh-para-a-area-de-cliente-ovh).
 
 ### Adicionar chave pública ao alojamento
 
@@ -88,7 +85,7 @@ Seguir a chave criada anteriormente, tudo na mesma linha.
 > Substitua "/home.XXX/loginFTP" e "john" pelos seus ID SSH.
 > Para conhecer os números a utilizar para substituir "/home.XXX/loginFTP" introduza o comando "pwd" em SSH.
 >
-> Também poderá consultar estas informações consultando o nosso guia [Utilizar o acesso SSH do seu alojamento web](../partilhado_o_ssh_nos_alojamentos_partilhados/){.external}.
+> Também poderá consultar estas informações consultando o nosso guia [Utilizar o acesso SSH do seu alojamento web](/pages/web/hosting/ssh_on_webhosting){.external}.
 > 
 
 ![alojamento](images/3080.png){.thumbnail}
@@ -154,6 +151,6 @@ svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 
 ## Quer saber mais?
 
-[Utilizar o acesso SSH do seu alojamento web](../partilhado_o_ssh_nos_alojamentos_partilhados/){.external}
+[Utilizar o acesso SSH do seu alojamento web](/pages/web/hosting/ssh_on_webhosting){.external}
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

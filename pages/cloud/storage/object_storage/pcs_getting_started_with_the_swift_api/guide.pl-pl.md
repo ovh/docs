@@ -1,10 +1,7 @@
 ---
 title: Object Storage Swift - Pierwsze kroki z API Swift
 excerpt: Pierwsze kroki z API Swift
-slug: pcs/getting-started-with-the-swift-api
 legacy_guide_number: g1916
-section: OpenStack Swift Storage Class Specifics
-order: 010
 updated: 2021-05-25
 ---
 
@@ -24,8 +21,8 @@ API OpenStack umożliwia wygenerowanie skryptów do automatyzacji Twoich działa
 
 ## Wymagania początkowe
 
-- [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/) poprzez instalację python-swiftclient
-- [Pobranie zmiennych środowiskowych OpenStack](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/)
+- [Przygotowanie środowiska do korzystania z API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) poprzez instalację python-swiftclient
+- [Pobranie zmiennych środowiskowych OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## W praktyce
 
@@ -148,7 +145,7 @@ Jeśli kontener jest skonfigurowany jako publiczny, możesz uzyskać dostęp do 
 https://storage.gra1.cloud.ovh.net/v1/AUTH_b3e26xxxxxxxxxxxxxxxxxxxb0ba29/container1/images/OVHlogo.png
 ```
 
-Ten adres URL składa się z punktu zakończenia dostępnego w [interfejsie Horizon](https://docs.ovh.com/pl/public-cloud/dostęp-i-bezpieczenstwo-w-horizon/), nazwy kontenera i nazwy obiektu (w tym prefiksu).
+Ten adres URL składa się z punktu zakończenia dostępnego w [interfejsie Horizon](/pages/platform/public-cloud/access_and_security_in_horizon), nazwy kontenera i nazwy obiektu (w tym prefiksu).
 
 ### Pobieranie plików
 

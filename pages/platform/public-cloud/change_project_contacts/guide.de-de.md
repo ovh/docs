@@ -1,9 +1,6 @@
 ---
 title: "Kontakte eines Projekts ändern"
 excerpt: Erfahren Sie hier, wie Sie die Kontakte eines Public Cloud Projekts verwalten
-slug: die_kontakte_eines_projekts_andern
-section: 'Projektverwaltung'
-order: 6
 updated: 2022-04-04
 ---
 
@@ -48,14 +45,14 @@ Geben Sie im neuen Fenster die gewünschte Kundenkennung für jeden Kontakt ein,
 
 Nachdem Sie auf `Bestätigen`{.action} geklickt haben, erhalten die beiden von der Änderung betroffenen OVHcloud Kunden-Accounts eine Bestätigungsmail. Diese E-Mail enthält einen Code (Token), mit dem die Kontaktänderung im Tab `Meine Anfragen`{.action} des Bereichs **Verwaltung der Kontakte** bestätigt werden kann.
 
-Genauere Informationen zur Vorgehensweise finden Sie in unserer Anleitung "[Die Kontakte Ihrer Dienste verwalten](../../customer/verwaltung-der-kontakte/)".
+Genauere Informationen zur Vorgehensweise finden Sie in unserer Anleitung "[Die Kontakte Ihrer Dienste verwalten](/pages/account/customer/managing_contacts)".
 
 ## Weiterführende Informationen
 
-[Informationen zu den Abrechnungsoptionen der Public Cloud](../informationen-zu-cloud-abrechnungsoptionen/)
+[Informationen zu den Abrechnungsoptionen der Public Cloud](/pages/platform/public-cloud/analyze_billing)
 
-[Die Kontakte Ihrer Dienste verwalten](../../customer/verwaltung-der-kontakte/)
+[Die Kontakte Ihrer Dienste verwalten](/pages/account/customer/managing_contacts)
 
-[Projekte delegieren](../seine-Projekte-delegieren/)
+[Projekte delegieren](/pages/platform/public-cloud/delegate_projects)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

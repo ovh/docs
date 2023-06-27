@@ -1,8 +1,6 @@
 ---
 title: 'OVHcloud DNS-Zone für eine Domain erstellen'
 excerpt: 'Hier erfahren Sie, wie Sie über Ihr Kundencenter eine OVHcloud DNS-Zone für Ihre Domain erstellen.'
-slug: erstellung_einer_dns_zone_fur_eine_externe_domain
-section: 'DNS und DNS-Zone'
 updated: 2018-08-06
 ---
 
@@ -57,7 +55,7 @@ Loggen Sie sich für die Bearbeitung der DNS-Zone im [OVHcloud Kundencenter](htt
 > Wenn Sie die DNS-Zone gerade erst erstellt haben und diese in der Liste der Dienste im Bereich `Domainnamen`{.action} nicht angezeigt wird, warten Sie einen Moment und laden Sie die Seite erneut.
 >
 
-Sobald die Domain angezeigt wird, können Sie die nötigen Änderungen vornehmen. Weitere Informationen hierzu finden Sie in unserer Anleitung [Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}. Die Änderung der DNS-Konfiguration Ihrer Domain erfordert eine Propagationszeit von 4 bis maximal 24 Stunden, bis sie voll wirksam ist.
+Sobald die Domain angezeigt wird, können Sie die nötigen Änderungen vornehmen. Weitere Informationen hierzu finden Sie in unserer Anleitung [Bearbeiten der OVHcloud DNS-Zone](/pages/web/domains/dns_zone_edit){.external}. Die Änderung der DNS-Konfiguration Ihrer Domain erfordert eine Propagationszeit von 4 bis maximal 24 Stunden, bis sie voll wirksam ist.
 
 ### Schritt 3: DNS-Server einer Domain ändern
 
@@ -69,6 +67,6 @@ Wenn Sie die Angaben haben, **ändern Sie die DNS-Server Ihrer Domain im Interfa
 
 ## Weiterführende Informationen
 
-[Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}
+[Bearbeiten der OVHcloud DNS-Zone](/pages/web/domains/dns_zone_edit){.external}
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

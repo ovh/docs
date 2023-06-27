@@ -1,9 +1,6 @@
 ---
 title: "Tutoriel - Comment bloquer l'accès à mon site pour certaines adresses IP via un fichier .htaccess ?"
-slug: mutualise-htaccess-comment-bloquer-certaines-ip-au-niveau-de-mon-site
 excerpt: "Découvrez les actions possibles via un fichier .htaccess afin de bloquer l'accès à votre site à certaines adresses IP"
-section: Réécriture et authentification
-order: 01
 updated: 2022-09-12
 ---
 
@@ -15,7 +12,7 @@ Ce tutoriel a pour objectif de vous aider à sécuriser l'accès à vos sites du
 
 Vous pouvez réaliser ceci grâce à un fichier « .htaccess », un fichier texte particulier, détecté par le serveur web (Apache), et qui permet de définir des règles spéciales sur un répertoire et l'ensemble de ses sous-répertoires.
 
-Vous pouvez créer plusieurs fichiers « .htaccess » dans [l'espace FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement mais **un seul** par répertoire ou sous-répertoire afin d'éviter les conflits entre différents fichiers « .htaccess ».
+Vous pouvez créer plusieurs fichiers « .htaccess » dans [l'espace FTP](/pages/web/hosting/ftp_connection) de votre hébergement mais **un seul** par répertoire ou sous-répertoire afin d'éviter les conflits entre différents fichiers « .htaccess ».
 
 **Découvrez comment bloquer l'accès à votre site pour certaines adresses IP via un fichier « .htaccess ».**
 
@@ -38,14 +35,14 @@ Vous pouvez créer plusieurs fichiers « .htaccess » dans [l'espace FTP](https:
 >
 > Les paramètres définis par un fichier « .htaccess » s'appliquent au répertoire où il est installé ainsi qu'à tous ses sous-répertoires.
 >
-> Pour éditer (ou créer) ces répertoires, connectez-vous à l'espace FTP de votre hébergement. Au besoin, aidez-vous du guide « [Accéder à mon espace de stockage](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) ».
+> Pour éditer (ou créer) ces répertoires, connectez-vous à l'espace FTP de votre hébergement. Au besoin, aidez-vous du guide « [Accéder à mon espace de stockage](/pages/web/hosting/ftp_connection) ».
 >
 
 ### Bloquer une IP, une plage d'IPs, un domaine ou toutes les IPs d'un Pays 
 
 Plusieurs règles sont disponibles afin de bloquer les accès à votre hébergement via le « .htaccess ».<br>
 Soyez vigilant sur la syntaxe et sur les paramètres que vous bloquez afin de ne pas vous retrouver vous-même bloqué lors de la consultation de vos sites et/ou scripts hébergés.<br>
-En cas d'erreur, vous pouvez toujours vous connecter à [l'espace FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement pour corriger la situation. 
+En cas d'erreur, vous pouvez toujours vous connecter à [l'espace FTP](/pages/web/hosting/ftp_connection) de votre hébergement pour corriger la situation. 
 
 > [!primary]
 >
@@ -364,9 +361,9 @@ Pour autoriser l'ensemble des IPs d'un pays à accéder à votre service, insér
 
 Indépendamment de la sécurité sur l'accès général à l'hébergement, le fichier « .htaccess » permet de réaliser d'autres actions. Vous trouverez ci-après trois autres tutoriels OVHcloud sur le sujet :
 
-- [Protéger l'interface d'administration de votre site via le « .htaccess »](https://docs.ovh.com/fr/hosting/mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification/).
-- [Réécrire vos URLs grâce au « mod_rewrite »](https://docs.ovh.com/fr/hosting/htaccess-reecriture-url-mod-rewrite/).
-- [Effectuer d'autres opérations avec le fichier « .htaccess »](https://docs.ovh.com/fr/hosting/mutualise-htaccess-les-autres-operations-realisables-avec-des-fichiers-htaccess/).
+- [Protéger l'interface d'administration de votre site via le « .htaccess »](/pages/web/hosting/htaccess_protect_directory_by_password).
+- [Réécrire vos URLs grâce au « mod_rewrite »](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite).
+- [Effectuer d'autres opérations avec le fichier « .htaccess »](/pages/web/hosting/htaccess_what_else_can_you_do).
 
 ## Aller plus loin <a name="go-further"></a>
 

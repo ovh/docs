@@ -1,10 +1,8 @@
 ---
 title: 'Añadir recursos por horas'
-slug: anadir-recursos-por-horas
 routes:
     canonical: 'https://docs.ovh.com/us/es/private-cloud/anadir-recursos-por-horas/'
 excerpt: 'Cómo añadir recursos con facturación por horas'
-section: 'Funcionalidades de OVHcloud'
 updated: 2020-12-15
 ---
 
@@ -19,7 +17,7 @@ La solución [Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal
 ## Requisitos
 
 * Tener contratado un servicio [Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/){.external}.
-* [Conceder al usuario el permiso "Adición de recursos"](../cambiar-los-permisos-de-un-usuario/) para el datacenter correspondiente desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+* [Conceder al usuario el permiso "Adición de recursos"](/pages/cloud/managed-bare-metal/change-user-rights) para el datacenter correspondiente desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 * Estar conectado al cliente vSphere.
 
 ## Procedimiento

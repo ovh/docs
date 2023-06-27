@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Instalar Joomla! manualmente"
-slug: cms_manually_install_joomla
 excerpt: "Descubra cómo instalar manualmente un CMS Joomla!"
-section: CMS
-order: 05
 updated: 2023-04-07
 ---
 
@@ -26,9 +23,9 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 > [!success]
 >
-> Para instalar Joomla! **automáticamente** desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), consulte nuestra documentación sobre la [instalación de un módulo en un clic](https://docs.ovh.com/us/es/hosting/modulos-en-un-clic/).
+> Para instalar Joomla! **automáticamente** desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), consulte nuestra documentación sobre la [instalación de un módulo en un clic](/pages/web/hosting/cms_install_1_click_modules).
 >
-> Para **instalar otro CMS** (WordPress, Drupal, PrestaShop), consulte nuestra documentación sobre la instalación manual de un CMS (https://docs.ovh.com/us/es/hosting/web_hosting_instalar_un_cms_manualmente/).
+> Para **instalar otro CMS** (WordPress, Drupal, PrestaShop), consulte nuestra documentación sobre la instalación manual de un CMS (/pages/web/hosting/cms_manual_installation).
 >
 
 **Descubra cómo instalar manualmente su CMS Joomla!**
@@ -45,7 +42,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 Para instalar el CMS **Joomla!** en su [plan de hosting](https://www.ovhcloud.com/es/web-hosting/), es necesario realizar algunos preparativos.
 
-Siga el **conjunto de etapas** descritos en nuestro tutorial sobre la [instalación manual de un CMS](https://docs.ovh.com/us/es/hosting/web_hosting_instalar_un_cms_manualmente/) antes de continuar en el siguiente etapa 2.
+Siga el **conjunto de etapas** descritos en nuestro tutorial sobre la [instalación manual de un CMS](/pages/web/hosting/cms_manual_installation) antes de continuar en el siguiente etapa 2.
 
 ### Etapa 2 - Finalizar la instalación manual <a name="step2"></a>
 
@@ -87,7 +84,7 @@ Introduzca la información solicitada para la base de datos:
 
 ![Joomla instalando step 3](images/Joomla-install-db-connect-3.png){.thumbnail}
 
-Para completar los siguientes campos, consulte la información indicada en el **etapa 1.4** del tutorial sobre la [instalación manual de un CMS](https://docs.ovh.com/us/es/hosting/web_hosting_instalar_un_cms_manualmente/):
+Para completar los siguientes campos, consulte la información indicada en el **etapa 1.4** del tutorial sobre la [instalación manual de un CMS](/pages/web/hosting/cms_manual_installation):
 
 - *Select the database type*: seleccione el tipo de la base de datos entre los tipos disponibles para Joomla!. Si utiliza una base de datos en alojamiento compartido de OVHcloud, puede dejar por defecto el valor **MySQLi**.
 
@@ -101,13 +98,13 @@ Para completar los siguientes campos, consulte la información indicada en el **
 >
 
 -*Either a username you created or a username provided by your host* : es idéntico al nombre de la base de datos si utiliza una base de datos incluida con su alojamiento web.
-Para las bases de datos creadas en una Web Cloud Databases, consulte la información indicada en **el etapa 1.4** de la guía sobre la [instalación manual de un CMS](https://docs.ovh.com/us/es/hosting/web_hosting_instalar_un_cms_manualmente/).
+Para las bases de datos creadas en una Web Cloud Databases, consulte la información indicada en **el etapa 1.4** de la guía sobre la [instalación manual de un CMS](/pages/web/hosting/cms_manual_installation).
 
 -*Either a password you created or a password provided by your host* : se ha establecido usted mismo al crear la base de datos. También es posible que la haya modificado. Por favor, compruebe que la haya modificado.
 
 -*Enter the database name*: este nombre se ha establecido al crear la base de datos en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Es idéntico al nombre de usuario de la base de datos si utiliza una base de datos incluida con su alojamiento web.
 
--*Enter a table prefix or use the randomly generated one*: si la instalación se realiza con una nueva base de datos, introduzca el prefijo que prefiera. Si utiliza una base de datos ya utilizada en otro sitio web, puede consultar el **etapa 1.4** de la guía sobre la [instalación manual de un CMS](https://docs.ovh.com/us/es/hosting/web_hosting_instalar_un_cms_manualmente/) para evitar que se introduzca un "prefijo" de tabla que ya utiliza su base de datos.
+-*Enter a table prefix or use the randomly generated one*: si la instalación se realiza con una nueva base de datos, introduzca el prefijo que prefiera. Si utiliza una base de datos ya utilizada en otro sitio web, puede consultar el **etapa 1.4** de la guía sobre la [instalación manual de un CMS](/pages/web/hosting/cms_manual_installation) para evitar que se introduzca un "prefijo" de tabla que ya utiliza su base de datos.
 
 - **Connection Encryption**: deje el valor **Default**.
 
@@ -119,7 +116,7 @@ Aparecerá el siguiente mensaje:
 
 Si utiliza una base de datos externa al alojamiento local, deberá eliminar el *token* generado aleatoriamente al instalar el Joomla.
 
-El archivo que desea eliminar se encuentra en su [espacio de almacenamiento FTP](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/).
+El archivo que desea eliminar se encuentra en su [espacio de almacenamiento FTP](/pages/web/hosting/ftp_connection).
 
 Una vez conectado, acceda a la carpeta **instalación** de su Joomla! y elimine únicamente el *token* indicado por el mensaje de alerta. Está presente como archivo **.txt**.
 

@@ -1,10 +1,7 @@
 ---
 title: Cycle de vie du Hosted Private Cloud powered by VMware
-slug: lifecycle-policy
 excerpt: Hosted Private Cloud Powered by VMware
-section: FAQ
-order: 010
-updated: 2023-06-13
+updated: 2023-06-26
 ---
 
 
@@ -119,7 +116,7 @@ Pour connaître la politique de cycle de vie des produits VMware, merci de vous 
 Vous pouvez connaître votre version de NSX-v dans la section « Networking and security » de vSphere, puis dans l'onglet « about NSX ».<br>
 Si la version est antérieure à 6.4.12, nous vous invitons à contacter nos équipes du support afin de procéder à la mise à jour de ce composant.
 
-VMware a étendu le support de NSX Datacenter for vSphere sur les infrastructures OVHcloud jusqu'au 15/01/2023. Vous devrez migrer depuis NSX Datacenter for vSphere vers NSX Transformers avant cette date (15/01/2023).
+VMware a étendu le support de NSX Datacenter for vSphere sur les infrastructures OVHcloud jusqu'au 15/01/2024. Vous devrez migrer depuis NSX Datacenter for vSphere vers NSX (NSX-T) avant cette date (15/01/2024).
 
 ### Cycle de vie Veeam Backup & Replication
 

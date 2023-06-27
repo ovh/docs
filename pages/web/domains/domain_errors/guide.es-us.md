@@ -1,8 +1,5 @@
 ---
 title: 'Resolver un error en un dominio'
-slug: domain-errors
-section: Tareas habituales
-order: 02
 updated: 2022-09-01
 ---
 
@@ -22,7 +19,7 @@ La creación de un nombre de dominio, su transferencia, su cambio de propietario
 
 - Tener uno o más dominios.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
-- Estar actualizado en los [pagos](https://docs.ovh.com/us/es/billing/gestionar-facturas-ovh/#pay-bills) y [renovaciones](https://docs.ovh.com/us/es/billing/renovacion-automatica-ovh/#renewal-management) de los servicios asociados (dominio y alojamiento web).
+- Estar actualizado en los [pagos](/pages/account/billing/invoice_management#pay-bills) y [renovaciones](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
 
 ## Procedimiento
 
@@ -51,7 +48,7 @@ En esta guía explicamos las operaciones **en error** con ejemplos recurrentes.
 >
 > La siguiente lista de ejemplos es incompleta. Si se produce un error que no se explica en la siguiente guía:
 >
-> - Compruebe que está actualizado en los [pagos](https://docs.ovh.com/us/es/billing/gestionar-facturas-ovh/#pay-bills) y [renovaciones](https://docs.ovh.com/us/es/billing/renovacion-automatica-ovh/#renewal-management) de sus dominios.
+> - Compruebe que está actualizado en los [pagos](/pages/account/billing/invoice_management#pay-bills) y [renovaciones](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) de sus dominios.
 > - Compruebe si puede hacer algo haciendo clic en el botón `...`{.action} situado al final de la línea correspondiente a la operación.
 > - Lea el mensaje descriptivo y compruebe si le permite resolver el error.
 >
@@ -98,7 +95,7 @@ En el ejemplo a continuación, la dirección IP del servidor DNS no responde.
 
 ![Dominio](images/domain-error07.png){.thumbnail}
 
-En la sección `Dominios`{.action}, seleccione el dominio correspondiente y abra la pestaña `Servidores DNS`{.action}. Desde esta pestaña, [modifique sus servidores DNS](https://docs.ovh.com/us/es/domains/web_hosting_informacion_general_sobre_los_servidores_dns/). 
+En la sección `Dominios`{.action}, seleccione el dominio correspondiente y abra la pestaña `Servidores DNS`{.action}. Desde esta pestaña, [modifique sus servidores DNS](/pages/web/domains/dns_server_general_information). 
 
 #### Error en un dominio **.ie**, **.de** o **.it** después de una actualización de DNS
 
@@ -138,10 +135,10 @@ Si detecta una anomalía que no está relacionada con la configuración de los s
 
 ## Más información
 
-[Transferir un dominio a OVHcloud](https://docs.ovh.com/us/es/domains/transferir-un-dominio-generico/)
+[Transferir un dominio a OVHcloud](/pages/web/domains/transfer_incoming_generic_domain)
 
-[Transferir un dominio a otro agente registrador](https://docs.ovh.com/us/es/domains/transferencia_saliente_de_un_dominio_generico_o_geografico/)
+[Transferir un dominio a otro agente registrador](/pages/web/domains/transfer_outgoing_domain)
 
-[Cambiar los servidores DNS de un dominio de OVHcloud](https://docs.ovh.com/us/es/domains/web_hosting_informacion_general_sobre_los_servidores_dns/)
+[Cambiar los servidores DNS de un dominio de OVHcloud](/pages/web/domains/dns_server_general_information)
  
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

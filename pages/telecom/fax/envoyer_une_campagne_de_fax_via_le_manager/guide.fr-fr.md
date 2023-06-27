@@ -1,10 +1,7 @@
 ---
 title: "Envoyer une campagne de fax depuis l'espace client OVHcloud"
-slug: envoyer-une-campagne-de-fax-via-le-manager
 excerpt: 'Découvrez comment préparer et envoyer une campagne de fax depuis votre espace client OVHcloud'
 legacy_guide_number: '8355856'
-section: Envoi/Réception de fax
-order: 2
 updated: 2022-02-16
 ---
 

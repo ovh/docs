@@ -1,9 +1,7 @@
 ---
 title: 'FAQ OverTheBox'
-slug: faq-overthebox
 keywords: 'FAQ OverTheBox'
 description: 'FAQ OverTheBox'
-section: FAQ
 updated: 2021-05-17
 ---
 
@@ -13,7 +11,7 @@ updated: 2021-05-17
 
 ### Où puis-trouver des documentations techniques à propos d'OverTheBox ?
 
-Vous pouvez trouver des guides sur [https://docs.ovh.com/fr/overthebox/](https://docs.ovh.com/fr/overthebox/){.external}
+Vous pouvez trouver des guides sur [https://docs.ovh.com/fr/overthebox/](/products/web-cloud-internet-overthebox){.external}
 
 ### Quels sont les opérateurs compatibles avec OverTheBox ?
 
@@ -25,7 +23,7 @@ L'OverTheBox est un équipement réseau qui se branche sur votre réseau local c
 
 ### Dois-je avoir un réseau spécifique pour utiliser OverTheBox ?
 
-Tous les réseaux informatiques (même les plus basiques) sont compatibles avec le système OverTheBox. Il est donc possible d'utiliser vos propres réseaux WiFi (suivant votre type d'OverTheBox) ou encore vos boitiers CPL en fonction de la qualité du réseau électrique. Il sera cependant nécessaire de modifier certains paramètres de vos Box comme l'adresse IP ou le DHCP. Ces manipulations sont expliquées dans le guide d'installation suivant : [Installation OverTheBox Plus ou IT v2](../plus-itv2-installation/)
+Tous les réseaux informatiques (même les plus basiques) sont compatibles avec le système OverTheBox. Il est donc possible d'utiliser vos propres réseaux WiFi (suivant votre type d'OverTheBox) ou encore vos boitiers CPL en fonction de la qualité du réseau électrique. Il sera cependant nécessaire de modifier certains paramètres de vos Box comme l'adresse IP ou le DHCP. Ces manipulations sont expliquées dans le guide d'installation suivant : [Installation OverTheBox Plus ou IT v2](/pages/telecom/overthebox/plus_itv2_installation)
 
 ### Quel débit maximum pourrai-je avoir ?
 
@@ -42,7 +40,7 @@ Votre adresse IP publique va en effet changer pour une IP fournie par OVHcloud q
 
 Les boitiers OverTheBox ne supportent pas le WiFi.
 Pour les OverTheBox Intel et IT v1, vous pouvez sans problème utiliser le WiFi de vos modems ou un point d'accès WiFi dédié.
-Pour l'OverThebox Plus ou l'OverTheBox IT v2, les modems sont isolés dans leurs propres VLAN, le WiFi des modems est donc indisponible depuis le réseau LAN de l'OverTheBox. Il est possible de réutiliser le WiFi d'un modem Zyxel fourni avec l'une de nos offres Internet. Consultez à cet effet notre guide [Comment réutiliser le wifi d'un modem Zyxel avec OverTheBox](https://docs.ovh.com/fr/xdsl/comment-reutiliser-wifi-zyxel-otb){.external}. Dans les autres cas de figure, il faudra utiliser un point d'accès WiFi dédié. Le WiFi de vos modems reste fonctionnel mais les équipements connectés ne profiteront pas de l'agrégation, ni du tunnel chiffré.
+Pour l'OverThebox Plus ou l'OverTheBox IT v2, les modems sont isolés dans leurs propres VLAN, le WiFi des modems est donc indisponible depuis le réseau LAN de l'OverTheBox. Il est possible de réutiliser le WiFi d'un modem Zyxel fourni avec l'une de nos offres Internet. Consultez à cet effet notre guide [Comment réutiliser le wifi d'un modem Zyxel avec OverTheBox](/pages/telecom/xdsl/comment_reutiliser_wifi_zyxel_otb){.external}. Dans les autres cas de figure, il faudra utiliser un point d'accès WiFi dédié. Le WiFi de vos modems reste fonctionnel mais les équipements connectés ne profiteront pas de l'agrégation, ni du tunnel chiffré.
 
 ### Est-il possible de choisir le data-centre hébergeant mon service d’agrégation ?
 
@@ -66,7 +64,7 @@ Nous ne fournissons pour l'instant qu'une IPv4 de sortie avec l'agrégation. Nou
 
 ### Est-il possible d'installer OverTheBox sur son propre matériel ?
 
-L'image installée sur le boitier OverTheBox est open-source et nous fournissons des images précompilées prêtes à être installées, n'hésitez pas à consulter le guide suivant : [Installer l’image OverTheBox sur votre matériel](../installer-limage-overthebox-sur-votre-materiel/){.external}.
+L'image installée sur le boitier OverTheBox est open-source et nous fournissons des images précompilées prêtes à être installées, n'hésitez pas à consulter le guide suivant : [Installer l’image OverTheBox sur votre matériel](/pages/telecom/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel){.external}.
 
 ### Quel est le délai de livraison de l'OverTheBox ?
 
@@ -78,11 +76,11 @@ Suivant l'offre souscrite, l'abonnement sera au prix mensuel de 19,99€ jusqu'�
 
 ### Est-il possible de virtualiser OverTheBox ?
 
-Oui, il est possible de virtualiser OverTheBox. Nous ne proposons pas de support pour cet usage. Il vous faudra pour ceci, suivre la même procédure que l'installation sur un materiel personnel, depuis une machine virtuelle compatible Linux : [Installer l’image OverTheBox sur votre matériel](../installer-limage-overthebox-sur-votre-materiel/){.external}
+Oui, il est possible de virtualiser OverTheBox. Nous ne proposons pas de support pour cet usage. Il vous faudra pour ceci, suivre la même procédure que l'installation sur un materiel personnel, depuis une machine virtuelle compatible Linux : [Installer l’image OverTheBox sur votre matériel](/pages/telecom/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel){.external}
 
 ### Est-il possible de réinitialiser son OverTheBox ?
 
-Oui, c'est possible via différentes méthodes expliquées dans ce guide : [Réinitialiser la configuration d'une OverTheBox](../config-reset)
+Oui, c'est possible via différentes méthodes expliquées dans ce guide : [Réinitialiser la configuration d'une OverTheBox](/pages/telecom/overthebox/config_reset)
 
 ## Aller plus loin
 

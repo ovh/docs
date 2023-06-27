@@ -1,9 +1,6 @@
 ---
 title: Lancer un script lors de la creation d’une instance
-slug: lancer-un-script-lors-de-la-creation-dun-instance
 legacy_guide_number: 1932
-section: Gestion via OpenStack
-order: 13
 updated: 2022-03-18
 ---
 
@@ -19,8 +16,8 @@ Dans certaines situations, il vous sera nécessaire de lancer un script lors de 
 
 ## Prérequis
 
-- [Préparer l'environnement pour utiliser l'API OpenStack](../prepare_the_environment_for_using_the_openstack_api/)
-- [Charger les variables d'environnement OpenStack](../set-openstack-environment-variables/)
+- [Préparer l'environnement pour utiliser l'API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Charger les variables d'environnement OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 
 ## En pratique

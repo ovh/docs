@@ -1,8 +1,6 @@
 ---
 title: Firewall auf einem Windows VPS konfigurieren
 excerpt: Erfahren Sie hier, wie Sie Ihre Windows Firewall konfigurieren
-slug: vps-firewall-windows
-section: Erste Schritte
 updated: 2023-02-17
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Comprobar el sistema de archivos en un VPS
 excerpt: Cómo buscar errores en un sistema de archivos en modo de rescate
-slug: check-file-system-vps
-section: Diagnóstico y modo de rescate
-order: 5
 updated: 2021-04-20
 ---
 
@@ -32,7 +29,7 @@ updated: 2021-04-20
 
 #### VPS GNU/Linux
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y reinicie el servidor en modo de rescate. Si lo necesita, consulte nuestra [guía sobre el modo de rescate](../rescue/).
+Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y reinicie el servidor en modo de rescate. Si lo necesita, consulte nuestra [guía sobre el modo de rescate](/pages/cloud/vps/rescue).
 
 En las antiguas gamas de VPS, las particiones se montarán automáticamente en modo de rescate. Para comprobarlo, utilice el siguiente comando:
 
@@ -74,7 +71,7 @@ $ fsck /dev/sdb1 -f
 
 Las instrucciones anteriores no suelen aplicarse a un VPS con Windows, ya que la verificación del sistema de archivos no admite NTFS. No obstante, puede comprobar la coherencia NTFS en las particiones.
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y reinicie el servidor en modo de rescate. Si lo necesita, consulte nuestra [guía sobre el modo de rescate](../rescue/).
+Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y reinicie el servidor en modo de rescate. Si lo necesita, consulte nuestra [guía sobre el modo de rescate](/pages/cloud/vps/rescue).
 
 En las antiguas gamas de VPS, las particiones se montarán automáticamente en modo de rescate. Puede comprobarlo utilizando el siguiente comando:
 
@@ -107,6 +104,6 @@ $ ntfsfix /dev/sdb1
 
 ## Más información
 
-[Activar el modo de rescate en un VPS](../rescue/)
+[Activar el modo de rescate en un VPS](/pages/cloud/vps/rescue)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

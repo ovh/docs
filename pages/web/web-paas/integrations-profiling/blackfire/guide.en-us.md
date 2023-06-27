@@ -1,7 +1,5 @@
 ---
 title: Blackfire
-slug: blackfire
-section: Profiling
 updated: 2021-05-11
 ---
 

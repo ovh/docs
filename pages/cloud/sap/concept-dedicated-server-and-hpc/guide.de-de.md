@@ -1,12 +1,9 @@
 ---
 title: "SAP HANA on Bare Metal and SAP Application Servers on VMware on OVHcloud"
-slug: sap-hana-dedicated-server-sap-as-hpc
 excerpt: "This concept page demonstrates a hybrid architecture using a HGR-SAP dedicated server and VMware on OVHcloud"
-section: "Concepts"
-order: 01
 updated: 2023-03-15
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/sap/sap-hana-dedicated-server-sap-as-hpc/'
+    canonical: '/pages/cloud/sap/concept-dedicated-server-and-hpc'
 ---
 
 **Last updated 15th March 2023**
@@ -30,13 +27,13 @@ The following concept allows you to build an architecture with a SAP HANA databa
 
 To guarantee the quality of communication between your local site and your SAP infrastructure hosted at OVHcloud, we recommend using OVHcloud Connect. This solution provides you with a secure and high-performance link between your offices and OVHcloud. To get more information, please refer to the [OVHcloud Connect documentation](https://www.ovhcloud.com/de/network/ovhcloud-connect/).
 
-Instead of using OVHcloud Connect, a point-to-point VPN can also be deployed with NSX Edge. To learn how to configure an NSX Edge Gateway VPN with OVHcloud, please refer to [our documentation](https://docs.ovh.com/ie/en/private-cloud/nsx-edge-gateway-vpn-configuration/).
+Instead of using OVHcloud Connect, a point-to-point VPN can also be deployed with NSX Edge. To learn how to configure an NSX Edge Gateway VPN with OVHcloud, please refer to [our documentation](/pages/cloud/private-cloud/nsx_configurer_un_vpn_via_une_gateway_edge).
 
-A prerequisite for updating your servers and for SAP Support access is to configure an Additional IP. A public IP subnet will be used as outbound link on your NSX Edge. Find more information in the [Additional IP documentation](https://docs.ovh.com/de/publiccloud/network-services/buy-additional-ip/).
+A prerequisite for updating your servers and for SAP Support access is to configure an Additional IP. A public IP subnet will be used as outbound link on your NSX Edge. Find more information in the [Additional IP documentation](/pages/platform/network-services/additional-ip-buy).
 
 ### SAP HANA database
 
-The SAP HANA database is hosted on a dedicated server of the SAP HANA on Bare Metal server range (references HGR-SAP-1/2/3). To know how to deploy a SAP HANA database on an OVHcloud dedicated server, please refer to [our documentation](https://docs.ovh.com/de/sap/sap-installation-sap-hana-sles/).
+The SAP HANA database is hosted on a dedicated server of the SAP HANA on Bare Metal server range (references HGR-SAP-1/2/3). To know how to deploy a SAP HANA database on an OVHcloud dedicated server, please refer to [our documentation](/pages/cloud/sap/install-sap-hana-sles).
 
 To ensure the recovery of the SAP HANA configuration (INI files), we suggest to set the value `true` for the parameter `include_configuration_backup`. This parameter enables the backup of all settings stored in INI files during the data backup of the SAP HANA database.
 
@@ -77,7 +74,7 @@ Another solution to accelerate the recovery of your virtual machine is to deploy
 
 Veeam Enterprise Plus allows you to back up and restore snapshots of your virtual machines. It ensures a quick recovery in case of an issue with your VMware on OVHcloud solution.
 
-To learn how to install a Veeam Enterprise Plus server in your VMware on OVHcloud solution, please refer to the [OVHcloud documentation](https://docs.ovh.com/de/storage/backup/veeam/veeam-backup-replication/).
+To learn how to install a Veeam Enterprise Plus server in your VMware on OVHcloud solution, please refer to the [OVHcloud documentation](/pages/cloud/storage/backup/veeam_veeam_backup_replication).
 
 ### Long-term and archive storage
 
@@ -122,7 +119,7 @@ To learn how to configure this replication, please refer to the [SAP Help Portal
 
 To secure your infrastructure in the event of a major incident in your primary OVHcloud location, we advise you to enable the feature named Zerto for your VMware on OVHcloud solution, allowing you to replicate your virtual machines to another OVHcloud location of another VMware on OVHcloud service. With this feature, you secure your SAP Application Servers in another OVHcloud location with a synchronous replication, and you reduce the RTO and the RPO if you have to switch to your secondary OVHcloud location.
 
-To know how to enable this feature, please refer to the [OVHcloud documentation](https://docs.ovh.com/de/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/).
+To know how to enable this feature, please refer to the [OVHcloud documentation](/pages/cloud/private-cloud/zerto_virtual_replication_as_a_service).
 
 > [!warning]
 > If you trigger a switch to the secondary OVHcloud location through Zerto, the SAP HANA database has to be switched too, to ensure the performance between the SAP Application Servers and the SAP HANA database.
@@ -141,8 +138,8 @@ To guarantee the connection continuity with the SAP Support, we recommend config
 - [Add flexibility to your applications with Additional IP](https://www.ovhcloud.com/de/network/additional-ip/)
 - [2161991 - VMware vSphere configuration guideline](https://launchpad.support.sap.com/#/notes/2161991)
 - [2015392 - VMware recommendations for latency-sensitive SAP applications](https://launchpad.support.sap.com/#/notes/2015392)
-- [Setting up Zerto Virtual Replication between two OVHcloud datacenters](https://docs.ovh.com/de/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/)
-- [Setting up Veeam Backup & Replication](https://docs.ovh.com/de/storage/backup/veeam/veeam-backup-replication/)
+- [Setting up Zerto Virtual Replication between two OVHcloud datacenters](/pages/cloud/private-cloud/zerto_virtual_replication_as_a_service)
+- [Setting up Veeam Backup & Replication](/pages/cloud/storage/backup/veeam_veeam_backup_replication)
 - [Installing SAProuter](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.

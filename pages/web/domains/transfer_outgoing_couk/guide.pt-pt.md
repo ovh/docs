@@ -1,9 +1,6 @@
 ---
 title: "Transferir um domínio .uk para outro agente de registo"
-slug: transferencia_de_saida_de_um_dominio_couk
 excerpt: "Saiba como transferir um domínio UK para outro registar"
-section: Transferência
-order: 05
 updated: 2022-10-19
 ---
 
@@ -15,7 +12,7 @@ updated: 2022-10-19
 
 ## Objetivo
 
-O processo de mudança de agente de registo (*registar*) para os domínios de primeiro nível (*top-level domain*, ou **TLD**) do indicativo de país **UK** (**.uk**) difere do que é detalhado no nosso [guia de transferência dos TLD genéricos](../transferencia_de_saida_de_um_nome_de_dominio_generico_ou_geografico/). As seguintes instruções dizem respeito às seguintes extensões:
+O processo de mudança de agente de registo (*registar*) para os domínios de primeiro nível (*top-level domain*, ou **TLD**) do indicativo de país **UK** (**.uk**) difere do que é detalhado no nosso [guia de transferência dos TLD genéricos](/pages/web/domains/transfer_outgoing_domain). As seguintes instruções dizem respeito às seguintes extensões:
 
 - .uk
 - .co.uk
@@ -33,9 +30,9 @@ O processo de mudança de agente de registo (*registar*) para os domínios de pr
 >
 > Se o domínio em questão deve permanecer registado na OVHcloud mas alterado nas suas modalidades de gestão ou de propriedade, uma transferência de domínio não é o procedimento adequado.
 >
-> Para transferir a gestão do seu domínio para outra conta de cliente OVHcloud, o método adequado é uma alteração de contactos. O procedimento está descrito no [presente guia](https://docs.ovh.com/pt/customer/gestao_dos_contactos/).
+> Para transferir a gestão do seu domínio para outra conta de cliente OVHcloud, o método adequado é uma alteração de contactos. O procedimento está descrito no [presente guia](/pages/account/customer/managing_contacts).
 >
-> Se também tem de mudar o **proprietário** do nome de domínio, deve fazê-lo **antes** de alterar os contactos do nome de domínio. Para isso, siga as instruções descritas na nossa documentação sobre a [alteração de proprietário dos nomes de domínio](https://docs.ovh.com/pt/domains/alteracao-titular-dominio/).
+> Se também tem de mudar o **proprietário** do nome de domínio, deve fazê-lo **antes** de alterar os contactos do nome de domínio. Para isso, siga as instruções descritas na nossa documentação sobre a [alteração de proprietário dos nomes de domínio](/pages/web/domains/trade_domain).
 >
 
 ## Requisitos
@@ -47,7 +44,7 @@ O processo de mudança de agente de registo (*registar*) para os domínios de pr
 
 > [!primary]
 >
-> Se é o **proprietário** do domínio mas a sua gestão na Área de Cliente OVHcloud está indisponível, seja através do seu próprio acesso ou através do contacto administrativo do domínio, consulte [este guia](../../customer/gestao_dos_contactos/#caso-especifico-de-um-proprietario-de-dominio) antes de continuar.
+> Se é o **proprietário** do domínio mas a sua gestão na Área de Cliente OVHcloud está indisponível, seja através do seu próprio acesso ou através do contacto administrativo do domínio, consulte [este guia](/pages/account/customer/managing_contacts#caso-especifico-de-um-proprietario-de-dominio) antes de continuar.
 >
 > Se o domínio expirou há **menos de 90 dias**, pode ainda ser transferido. Contacte as nossas equipas de suporte técnico criando um pedido de suporte no seu Área de Cliente OVHcloud para desbloquear o domínio para a transferência.
 >
@@ -87,6 +84,6 @@ Contacte o seu novo fornecedor para obter mais informações sobre a transferên
 
 ## Quer saber mais?
 
-[Transferir um domínio para outro agente de registo](../transferencia_de_saida_de_um_nome_de_dominio_generico_ou_geografico/)
+[Transferir um domínio para outro agente de registo](/pages/web/domains/transfer_outgoing_domain)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

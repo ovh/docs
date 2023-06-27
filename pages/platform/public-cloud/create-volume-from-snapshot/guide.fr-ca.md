@@ -1,9 +1,6 @@
 ---
 title: "Créer un volume à partir d'une sauvegarde"
-slug: creer-volume-depuis-sauvegarde
 excerpt: "Découvrez comment créer des disques supplémentaires à partir d'une sauvegarde d'un disque supplémentaire"
-section: 'Stockage'
-order: 4
 updated: 2021-04-06
 ---
 
@@ -64,7 +61,7 @@ Le processus d’attachement du disque à votre instance va alors commencer et p
 Vous devez éviter la navigation en dehors de l’onglet en cours pendant l’attachement du disque. Cela peut interrompre le processus.
 >
 
-Une fois l'attachement effectué, vous pouvez suivre les étapes suivantes pour configurer votre disque supplémentaire [sous Linux](../creer-et-configurer-un-disque-supplementaire-sur-une-instance/#sous-linux) ou [sous Windows](../creer-et-configurer-un-disque-supplementaire-sur-une-instance/#sous-windows).
+Une fois l'attachement effectué, vous pouvez suivre les étapes suivantes pour configurer votre disque supplémentaire [sous Linux](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#sous-linux) ou [sous Windows](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#sous-windows).
 
 ## Aller plus loin
 

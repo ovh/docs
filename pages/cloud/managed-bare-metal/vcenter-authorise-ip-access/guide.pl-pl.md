@@ -1,9 +1,7 @@
 ---
 title: Autoryzacja IP, które mogą łączyć się z vCenter
-slug: autoryzacja-IP-ktore-moga-laczyc-sie-z-vCenter
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/autoryzacja-IP-ktore-moga-laczyc-sie-z-vCenter/'
-section: Funkcjonalności OVHcloud
+    canonical: '/pages/cloud/private-cloud/autoriser_des_ip_a_se_connecter_au_vcenter'
 updated: 2020-11-18
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: 'Configurar IPv6 em servidores dedicados'
-slug: rede-ipv6
 excerpt: 'Saiba como configurar endereços IPv6 na nossa infraestrutura'
-section: 'Redes & IP'
 updated: 2022-08-26
 ---
 
@@ -28,7 +26,7 @@ O IPv6 é a versão mais recente do Internet Protocol (IP). Foi concebido para s
 
 - Um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) na sua conta OVHcloud.
 - Todos os seus dados IPv6 (prefixo, gateway, etc.).
-- Ter conhecimentos básicos de [SSH](../ssh-introducao/) e redes.
+- Ter conhecimentos básicos de [SSH](/pages/cloud/dedicated/ssh_introduction) e redes.
 
 > [!warning]
 > Tenha em conta que os servidores Kimsufi são fornecidos com um único bloco IPv6 (/128). O IPv6 será configurado automaticamente aquando da instalação do sistema operativo.
@@ -51,7 +49,7 @@ Se deseja configurar vários endereços IPv6 no seu servidor (ou se deseja utili
 > - O intervalo IPv6 do servidor é `2607:5300:60:62ac::/64` ou `2607:5300:60:62ac:0000:0000:0000:0000/64`. Logo, o IPv6_GATEWAY vai ser `2607:5300:60:62FF:FF:FF:FF:FF`.
 > - O intervalo IPv6 do servidor é `2001:41D0:1:46e::/64` ou `2001:41D0:0001:046e:0000:0000:0000:0000/64`. Logo, o IPv6_GATEWAY vai ser `2001:41D0:1:4FF:FF:FF:FF:FF`.
 >
-> A forma mais segura de recuperar as informações de rede do seu servidor é [utilizar a API OVHcloud](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/)(EN). Execute a seguinte chamada API, indicando o nome interno do servidor (exemplo: `ns3956771.ip-169-254-10.eu`):
+> A forma mais segura de recuperar as informações de rede do seu servidor é [utilizar a API OVHcloud](/pages/account/api/first-steps)(EN). Execute a seguinte chamada API, indicando o nome interno do servidor (exemplo: `ns3956771.ip-169-254-10.eu`):
 >
 
 
@@ -80,7 +78,7 @@ Se deseja configurar vários endereços IPv6 no seu servidor (ou se deseja utili
 
 #### Passo 1: Usar o SSH para se conectar ao servidor
 
-[Encontre mais informações neste guia.](../primeiros-passos-servidor-dedicado/#ligar-se-ao-servidor/)
+[Encontre mais informações neste guia.](/pages/cloud/dedicated/getting-started-with-dedicated-server#ligar-se-ao-servidor/)
 
 #### Passo 2: Abrir o ficheiro de configuração da rede do servidor
 
@@ -125,7 +123,7 @@ ping6 -c 4 2001:4860:4860::8888
 ```
 
 
-Se não conseguir que este endereço IPv6 faça ping, verifique a configuração e tente novamente. Além disso, assegure-se de que a máquina a partir da qual está a fazer o teste está conectada por IPv6. Se mesmo assim não for bem-sucedido, teste a configuração em [modo Rescue](../rescue_mode/).
+Se não conseguir que este endereço IPv6 faça ping, verifique a configuração e tente novamente. Além disso, assegure-se de que a máquina a partir da qual está a fazer o teste está conectada por IPv6. Se mesmo assim não for bem-sucedido, teste a configuração em [modo Rescue](/pages/cloud/dedicated/rescue_mode).
 
 ### Fedora 26 e superiores
 
@@ -136,7 +134,7 @@ Se não conseguir que este endereço IPv6 faça ping, verifique a configuração
 
 #### Passo 1: Usar o SSH para se conectar ao servidor
 
-[Encontre mais informações neste guia.](../primeiros-passos-servidor-dedicado/#ligar-se-ao-servidor)
+[Encontre mais informações neste guia.](/pages/cloud/dedicated/getting-started-with-dedicated-server#ligar-se-ao-servidor)
 
 
 #### Passo 2: Abrir o ficheiro de configuração da rede do servidor
@@ -180,13 +178,13 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-Se não conseguir que este endereço IPv6 faça ping, verifique a configuração e tente novamente. Além disso, assegure-se de que a máquina a partir da qual está a fazer o teste está conectada por IPv6. Se mesmo assim não for bem-sucedido, teste a configuração em [modo Rescue](../rescue_mode/).
+Se não conseguir que este endereço IPv6 faça ping, verifique a configuração e tente novamente. Além disso, assegure-se de que a máquina a partir da qual está a fazer o teste está conectada por IPv6. Se mesmo assim não for bem-sucedido, teste a configuração em [modo Rescue](/pages/cloud/dedicated/rescue_mode).
 
 ### FreeBSD
 
 #### Passo 1: Usar o SSH para se conectar ao servidor
 
-[Encontre mais informações neste guia.](../primeiros-passos-servidor-dedicado/#ligar-se-ao-servidor)
+[Encontre mais informações neste guia.](/pages/cloud/dedicated/getting-started-with-dedicated-server#ligar-se-ao-servidor)
 
 
 #### Passo 2: Abrir o ficheiro de configuração da rede do servidor
@@ -227,13 +225,13 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-Se não conseguir que este endereço IPv6 faça ping, verifique a configuração e tente novamente. Além disso, assegure-se de que a máquina a partir da qual está a fazer o teste está conectada por IPv6. Se mesmo assim não for bem-sucedido, teste a configuração em [modo Rescue](../rescue_mode/).
+Se não conseguir que este endereço IPv6 faça ping, verifique a configuração e tente novamente. Além disso, assegure-se de que a máquina a partir da qual está a fazer o teste está conectada por IPv6. Se mesmo assim não for bem-sucedido, teste a configuração em [modo Rescue](/pages/cloud/dedicated/rescue_mode).
 
 ### Ubuntu 18.04 e 20.04
 
 #### Passo 1: Usar o SSH para se conectar ao servidor
 
-[Encontre mais informações neste guia.](../primeiros-passos-servidor-dedicado/#ligar-se-ao-servidor)
+[Encontre mais informações neste guia.](/pages/cloud/dedicated/getting-started-with-dedicated-server#ligar-se-ao-servidor)
 
 #### Passo 2: Abrir o ficheiro de configuração da rede do servidor
 
@@ -325,7 +323,7 @@ PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
 
 #### Passo 1: Usar o RDP para se conectar ao servidor
 
-[Encontre mais informações neste guia.](../primeiros-passos-servidor-dedicado/#ligar-se-ao-servidor)
+[Encontre mais informações neste guia.](/pages/cloud/dedicated/getting-started-with-dedicated-server#ligar-se-ao-servidor)
 
 
 #### Passo 2: Abrir a configuração da rede do servidor

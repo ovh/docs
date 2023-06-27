@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Installare manualmente Joomla!"
 excerpt: "Questa guida ti mostra come installare manualmente il tuo CMS Joomla!"
-slug: cms_installa_manualmente_joomla
-section: CMS
-order: 05
 updated: 2023-04-07
 ---
 
@@ -26,9 +23,9 @@ Qui trovi tutti gli elementi per installare manualmente il CMS (Content Manageme
 
 > [!success]
 >
-Per installare Joomla! **automaticamente** dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), consulta la nostra guida sull'[installazione di un modulo in un click](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/).
+Per installare Joomla! **automaticamente** dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), consulta la nostra guida sull'[installazione di un modulo in un click](/pages/web/hosting/cms_install_1_click_modules).
 >
-> Per installare **manualmente un altro CMS** (WordPress, Drupal, PrestaShop), consulta la nostra guida sull'[installazione manuale di un CMS](https://docs.ovh.com/it/hosting/web_hosting_installa_manualmente_il_tuo_cms/).
+> Per installare **manualmente un altro CMS** (WordPress, Drupal, PrestaShop), consulta la nostra guida sull'[installazione manuale di un CMS](/pages/web/hosting/cms_manual_installation).
 >
 
 **Questa guida ti mostra come installare manualmente il tuo CMS Joomla!**
@@ -45,7 +42,7 @@ Per installare Joomla! **automaticamente** dal tuo [Spazio Cliente OVHcloud](htt
 
 Per installare il CMS **Joomla!** sulla tua offerta di [hosting web](https://www.ovhcloud.com/it/web-hosting/), sono necessari alcuni preparativi.
 
-Segui **gli step** descritti nel nostro tutorial sull'[installazione manuale di un CMS](https://docs.ovh.com/it/hosting/web_hosting_installa_manualmente_il_tuo_cms/) prima di proseguire allo Step 2.
+Segui **gli step** descritti nel nostro tutorial sull'[installazione manuale di un CMS](/pages/web/hosting/cms_manual_installation) prima di proseguire allo Step 2.
 
 ### Step 2 - finalizzare l'installazione manuale <a name="step2"></a>
 
@@ -87,7 +84,7 @@ Inserisci le informazioni richieste relative al database:
 
 ![Joomla Installstep 3](images/Joomla-install-db-connect-3.png){.thumbnail}
 
-Per completare i campi seguenti, consulta le informazioni indicate nello **Step 1.4** del tutorial sull'[installazione manuale di un CMS](https://docs.ovh.com/it/hosting/web_hosting_installa_manualmente_il_tuo_cms/).
+Per completare i campi seguenti, consulta le informazioni indicate nello **Step 1.4** del tutorial sull'[installazione manuale di un CMS](/pages/web/hosting/cms_manual_installation).
 
 - *Select the database type*: scegli il tipo del tuo database tra i tipi disponibili per Joomla! Se utilizzi un database condiviso OVHcloud, puoi lasciare di default il valore **MySQLi**.
 
@@ -101,13 +98,13 @@ Per completare i campi seguenti, consulta le informazioni indicate nello **Step 
 >
 
 - *Either a username you created or a username provided by your host*: è identico al nome del database se utilizzi un database incluso con il tuo hosting Web.
-Per i database creati su un Web Cloud Databases, consulta le informazioni indicate nello **Step 1.4** della guida sull'[installazione manuale di un CMS](https://docs.ovh.com/it/hosting/web_hosting_installa_manualmente_il_tuo_cms/).
+Per i database creati su un Web Cloud Databases, consulta le informazioni indicate nello **Step 1.4** della guida sull'[installazione manuale di un CMS](/pages/web/hosting/cms_manual_installation).
 
 - *Either a password you created or a password provided by your host*: l'hai definito tu stesso durante la creazione del tuo database. Se nel frattempo è possibile che tu l'abbia modificato, ti consigliamo di verificarlo.
 
 - *Enter the database name*: questo nome è stato definito durante la creazione del database nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Se utilizzi un database incluso con il tuo hosting Web, è lo stesso nome utente del database.
 
-- *Enter a table prefix or use the randomly generated one*: se l'installazione avviene con un nuovo database, inserisci il "prefisso" che preferisci. Se utilizzi un database già utilizzato da un altro sito, consulta **lo Step 1.4** della guida sull'[installazione manuale di un CMS](https://docs.ovh.com/it/hosting/web_hosting_installa_manualmente_il_tuo_cms/) per non inserire un "prefisso" di tavolo già utilizzato nel tuo database.
+- *Enter a table prefix or use the randomly generated one*: se l'installazione avviene con un nuovo database, inserisci il "prefisso" che preferisci. Se utilizzi un database già utilizzato da un altro sito, consulta **lo Step 1.4** della guida sull'[installazione manuale di un CMS](/pages/web/hosting/cms_manual_installation) per non inserire un "prefisso" di tavolo già utilizzato nel tuo database.
 
 - **Connection Encryption**: lascia il valore **Default**
 
@@ -119,7 +116,7 @@ Visualizzi questo messaggio:
 
 Se utilizzi un database presente al di fuori di un hosting locale, dovrai eliminare il *token* generato casualmente durante l'installazione del tuo Joomla!.
 
-Questo file da eliminare si trova nel tuo [spazio di archiviazione FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/).
+Questo file da eliminare si trova nel tuo [spazio di archiviazione FTP](/pages/web/hosting/ftp_connection).
 
 Una volta connesso, accedi alla cartella **installazione** del tuo Joomla! poi elimina solo il *token* indicato dal messaggio di alert. è presente come file*.txt**.
 

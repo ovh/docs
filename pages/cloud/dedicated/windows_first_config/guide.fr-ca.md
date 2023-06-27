@@ -1,8 +1,6 @@
 ---
 title: Première configuration Windows Server (Pare-feu)
-slug: windows-first-config
 excerpt: Decouvrez ici comment activer la connexion au Bureau a distance via KVM si celle-ci est desactivee.
-section: Premiers pas
 updated: 2023-02-14
 ---
 
@@ -23,7 +21,7 @@ Après une nouvelle installation d'un système d'exploitation Windows Server sur
 
 ### Étape 1 : accès au KVM
 
-Pour accéder à la console KVM de votre serveur dédié, consultez le [guide KVM](https://docs.ovh.com/ca/fr/dedicated/utilisation-ipmi-serveurs-dedies/#utiliser-le-kvm-via-votre-navigateur-web-uniquement-pour-les-serveurs-les-plus-recents).
+Pour accéder à la console KVM de votre serveur dédié, consultez le [guide KVM](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers#utiliser-le-kvm-via-votre-navigateur-web-uniquement-pour-les-serveurs-les-plus-recents).
 
 ### Étape 2 : terminer l'installation de Windows
 
@@ -57,13 +55,13 @@ Vous pouvez activer ici les règles « ICMP » et « Remote Desktop » (bureau �
 
 Votre serveur devrait maintenant répondre aux demandes utilisant ces protocoles.
 
-Pour sécuriser votre système Windows avec des règles de pare-feu, consultez notre guide « [Configurer le pare-feu sous Windows](https://docs.ovh.com/ca/fr/dedicated/firewall-windows/) ».
+Pour sécuriser votre système Windows avec des règles de pare-feu, consultez notre guide « [Configurer le pare-feu sous Windows](/pages/cloud/dedicated/activate-port-firewall-soft-win) ».
 
 ### Activation des logs de démarrage (boot logs) Windows (facultatif)
 
 L'activation des logs de démarrage (*boot logs*) Windows peut être utile pour les diagnostics d'erreurs du serveur.
 
-Connectez-vous à votre serveur via une session « Remote Desktop » (bureau à distance) ou [KVM](https://docs.ovh.com/ca/fr/dedicated/utilisation-ipmi-serveurs-dedies/#utiliser-le-kvm-via-votre-navigateur-web-uniquement-pour-les-serveurs-les-plus-recents). Ouvrez le menu Démarrer de Windows et cliquez sur `Exécuter`{.action}.
+Connectez-vous à votre serveur via une session « Remote Desktop » (bureau à distance) ou [KVM](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers#utiliser-le-kvm-via-votre-navigateur-web-uniquement-pour-les-serveurs-les-plus-recents). Ouvrez le menu Démarrer de Windows et cliquez sur `Exécuter`{.action}.
 
 ![Bootlog](images/windowsboot1.png){.thumbnail}
 
@@ -77,11 +75,11 @@ Dans la nouvelle fenêtre, cochez la case à côté de `Boot log`. Cliquez sur `
 
 Au prochain démarrage de votre serveur, les logs seront enregistrés dans un fichier .txt. Le chemin du fichier est `C:\Windows\ntbtlog.txt`.
 
-Pour accéder au contenu de ce fichier en mode rescue, veuillez suivre les instructions décrites dans [le guide du mode rescue](https://docs.ovh.com/ca/fr/dedicated/ovh-rescue/).
+Pour accéder au contenu de ce fichier en mode rescue, veuillez suivre les instructions décrites dans [le guide du mode rescue](/pages/cloud/dedicated/rescue_mode).
 
 ## Aller plus loin
 
-[Configurer le pare-feu sous Windows](https://docs.ovh.com/ca/fr/dedicated/firewall-windows/)
+[Configurer le pare-feu sous Windows](/pages/cloud/dedicated/activate-port-firewall-soft-win)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

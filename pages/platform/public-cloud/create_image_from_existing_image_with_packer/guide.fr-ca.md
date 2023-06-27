@@ -1,8 +1,6 @@
 ---
 title: 'Créer une image OpenStack personnalisée avec Packer'
 excerpt: "Créer et personnaliser une image OpenStack à partir d'une image existante avec Packer"
-slug: packer-openstack-builder
-section: Tutoriels
 updated: 2018-10-24
 ---
 
@@ -46,7 +44,7 @@ apt-get install jq
 
 Vous pouvez le retrouver via le menu OpenStack dans le panneau latéral gauche puis sous le bouton `...`{.action} sur la droite, vous trouverez le bouton `Télécharger un fichier de configuration OpenStack`{.action} 
 
-La [création d'un utilisateur OpenStack](../creation-et-suppression-dun-utilisateur-openstack/) peut s'avérer nécessaire au préalable.
+La [création d'un utilisateur OpenStack](/pages/platform/public-cloud/create_and_delete_a_user) peut s'avérer nécessaire au préalable.
 
 ### Installer le client de ligne de commande OpenStack
 

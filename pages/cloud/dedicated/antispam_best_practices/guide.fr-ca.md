@@ -1,9 +1,6 @@
 ---
 title: OVHcloud AntiSpam - Bonnes pratiques et déblocage d'une adresse IP
-slug: antispam-best-practices
 excerpt: Découvrez nos bonnes pratiques antispam et comment débloquer une adresse IP bloquée pour SPAM
-section: Diagnostic et mode Rescue
-order: 04
 updated: 2022-10-17
 ---
 
@@ -89,7 +86,7 @@ Une fois le traitement effectué, votre IP sera débloquée.
 
 #### Débloquer votre adresse IP depuis l'API OVHcloud
 
-Connectez-vous à l'interface [API d'OVHcloud](https://ca.api.ovh.com/) et suivez les étapes ci-dessous. Pour plus d'informations sur l'utilisation des API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/) ».
+Connectez-vous à l'interface [API d'OVHcloud](https://ca.api.ovh.com/) et suivez les étapes ci-dessous. Pour plus d'informations sur l'utilisation des API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps) ».
 
 Récupérez tout d'abord la liste des IPs de chaque service OVHcloud (Hosted Private Cloud / VPS / Public Cloud / Serveur Dédié) :
 
@@ -233,7 +230,7 @@ Si le volume de vos e-mails sortants est très important, il est conseillé de :
 
 - réserver un bloc d'adresses IP dédié uniquement à l'utilisation des e-mails.
 - fournir une adresse *abuse* sur ce bloc afin de recevoir les plaintes.
-- configurer correctement les [Reverses](https://docs.ovh.com/ca/fr/dedicated/optimiser-envoi-emails/#configurer-le-reverse-ip) sur toutes les adresses IP. 
+- configurer correctement les [Reverses](/pages/cloud/dedicated/mail_sending_optimization#configurer-le-reverse-ip) sur toutes les adresses IP. 
 
 Cette dernière opération vous permettra d’isoler simultanément l’IP et la réputation du domaine si vous envoyez des e-mails de différents domaines, de recevoir les plaintes et ainsi de faire le nécessaire pour être débloqué par les différentes organisations. Le *reverse* permet également de localiser plus rapidement un problème sur un formulaire utilisant le domaine X ou Y, car les e-mails ne sont pas envoyés depuis la même IP et n'ont pas le même *reverse*.
 
@@ -261,13 +258,13 @@ Certains services d'authentification vous permettent de protéger votre réputat
 - **Reverse DNS ou Reverse IP** : Le *reverse* permet de « traduire » une IP en un domaine. Cela permet de retrouver le domaine associé à l'adresse IP.
 - ****DKIM**** : Cette norme est décrite dans la [RFC4871](https://datatracker.ietf.org/doc/html/rfc4871). AOL et Google (Gmail) fonctionnent sur cette base. 
 
-Pour plus d'informations sur les services ci-dessus, consultez notre guide « [Optimiser l’envoi d’e-mails](https://docs.ovh.com/ca/fr/dedicated/optimiser-envoi-emails/) ».
+Pour plus d'informations sur les services ci-dessus, consultez notre guide « [Optimiser l’envoi d’e-mails](/pages/cloud/dedicated/mail_sending_optimization) ».
 
 #### Cas spécifiques d'envois d'e-mails
 
 - **Vers un serveur Microsoft (Outlook, etc.)**
 
-Microsoft utilise une politique de liste blanche. Cela signifie que tout serveur se trouve initialement sur une liste noire. Une procédure spécifique est alors nécessaire pour faire valider votre serveur e-mail. Pour plus d’informations, nous vous invitons à consulter [cette section](https://docs.ovh.com/ca/fr/dedicated/optimiser-envoi-emails/#vers-un-serveur-microsoft-outlook-etc) du guide correspondant.
+Microsoft utilise une politique de liste blanche. Cela signifie que tout serveur se trouve initialement sur une liste noire. Une procédure spécifique est alors nécessaire pour faire valider votre serveur e-mail. Pour plus d’informations, nous vous invitons à consulter [cette section](/pages/cloud/dedicated/mail_sending_optimization#vers-un-serveur-microsoft-outlook-etc) du guide correspondant.
 
 - **Vers un serveur Gmail**
 
@@ -281,7 +278,7 @@ Si vos e-mails sont conformes, vous pouvez nous en informer en envoyant un exemp
 
 - L'IP du service bloquée pour SPAM.
 - Une copie originale du ou des e-mails marqués comme SPAM (vous devriez pouvoir l'identifier grâce au **Message-ID** inclus dans l'alerte de blocage). Si aucun **Message-ID** n'est fourni, Il suffit de nous envoyer une copie des e-mails envoyés avant la réception de l'alerte. Veuillez ne fournir que la copie de l'e-mail signalé comme SPAM.
-- Le fichier .EML de l'e-mail fourni. Celui-ci doit inclure **l'en-tête** et **le pied de page** de l'e-mail. Si vous ne savez pas comment extraire un fichier .EML, nous vous invitons à consulter le guide suivant : [Récupérer l’en-tête d’un e-mail](https://docs.ovh.com/ca/fr/emails/recuperation-des-entetes-e-mails/).
+- Le fichier .EML de l'e-mail fourni. Celui-ci doit inclure **l'en-tête** et **le pied de page** de l'e-mail. Si vous ne savez pas comment extraire un fichier .EML, nous vous invitons à consulter le guide suivant : [Récupérer l’en-tête d’un e-mail](/pages/web/emails/diagnostic_headers).
 
 Une fois les informations envoyées, notre service d'assistance communiquera avec Vade Secure pour une analyse plus approfondie de la situation.
 

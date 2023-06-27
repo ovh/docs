@@ -1,9 +1,6 @@
 ---
 title: Reregistar VM num novo PCC
-slug: vsphere-register-vm-vmx
 excerpt: Saiba como voltar a registar VM num novo serviço a partir de datastores antigos
-section: Funcionalidades VMware vSphere
-order: 07
 updated: 2021-03-24
 ---
 
@@ -27,7 +24,7 @@ No seguimento de um incidente, máquinas virtuais já não aparecem no seu inven
 
 ## Instruções
 
-Na sua [interface vSphere](../instalar_o_vsphere_client/), coloque-se na vista `Storage`{.action}.
+Na sua [interface vSphere](/pages/cloud/private-cloud/vsphere_interface_connexion), coloque-se na vista `Storage`{.action}.
 
 ![para armazenamento](images/register-vmx-01.png){.thumbnail}
 
@@ -45,7 +42,7 @@ Introduza as informações necessárias e clique em `Finish`{.action}.
 
 Estas operações devem ser repetidas em cada datastore e em cada VM a re-registar.
 
-Verifique os parâmetros das suas VM (nome, [portgroup](../criacao-vlan-vxlan/), etc...) ao clicar com o botão direito do rato sobre cada uma delas e ao selecionar o `Edit Settings`{.action}.
+Verifique os parâmetros das suas VM (nome, [portgroup](/pages/cloud/private-cloud/creation_vlan), etc...) ao clicar com o botão direito do rato sobre cada uma delas e ao selecionar o `Edit Settings`{.action}.
 
 ![modificar parâmetros](images/register-vmx-06.png){.thumbnail}
 

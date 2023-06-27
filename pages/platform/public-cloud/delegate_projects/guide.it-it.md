@@ -1,9 +1,6 @@
 ---
 title: Delega progetti
 excerpt: Come delegare i diritti di accesso a un progetto Public Cloud ad altri account OVHcloud
-slug: delega_i_diritti_per_gestire_i_tuoi_progetti
-section: Gestione del progetto
-order: 7
 updated: 2022-04-04
 ---
 
@@ -33,7 +30,7 @@ Questa pagina ti permette di visualizzare i contatti associati al tuo progetto.
 
 ![public-cloud-delegate-projects](images/delegatingproject01.png){.thumbnail}
 
-Clicca sui pulsanti `Modifica`{.action} per modificare i contatti correnti. Per completare l'operazione, segui la procedura descritta nella guida [Modificare i contatti di un progetto](../change_project_contacts/).
+Clicca sui pulsanti `Modifica`{.action} per modificare i contatti correnti. Per completare l'operazione, segui la procedura descritta nella guida [Modificare i contatti di un progetto](/pages/platform/public-cloud/change_project_contacts).
 
 ### Aggiungi contatti e diritti
 
@@ -56,11 +53,11 @@ Per rimuovere un accesso, clicca sul pulsante `...`{.action} poi seleziona `Elim
 
 ## Per saperne di più
 
-[Iniziare a utilizzare un'istanza Public Cloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/)
+[Iniziare a utilizzare un'istanza Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Informazioni sulle modalità di fatturazione Public Cloud](https://docs.ovh.com/it/public-cloud/analizza_i_tuoi_consumi_e_gestisci_la_tua_fatturazione/)
+[Informazioni sulle modalità di fatturazione Public Cloud](/pages/platform/public-cloud/analyze_billing)
 
-[Impostazioni di accesso e sicurezza in Horizon](https://docs.ovh.com/it/public-cloud/access_and_security_in_horizon/)
+[Impostazioni di accesso e sicurezza in Horizon](/pages/platform/public-cloud/access_and_security_in_horizon)
 
 Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 

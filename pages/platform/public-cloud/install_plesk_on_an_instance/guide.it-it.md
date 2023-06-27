@@ -1,8 +1,6 @@
 ---
 title: 'Installare Plesk su un’istanza'
-slug: installare-plesk-su-un-istanza
 excerpt: 'Come installare e configurare Plesk su un’istanza Public Cloud OVH'
-section: Tutorial
 legacy_guide_number: g1998
 updated: 2018-03-26
 ---
@@ -24,8 +22,8 @@ Plesk è un’interfaccia di gestione server di semplice utilizzo, disponibile a
 
 ## Prerequisiti
 
-- [Aver creato un’istanza dallo Spazio Cliente OVHcloud](../crea_unistanza_dallo_spazio_cliente_ovh/)
-- [Poter accedere come utente root e impostare la password associata](https://docs.ovh.com/it/public-cloud/imposta_una_password_amministratore/)
+- [Aver creato un’istanza dallo Spazio Cliente OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#step-3-crea-unistanza/)
+- [Poter accedere come utente root e impostare la password associata](/pages/platform/public-cloud/become_root_and_change_password)
 
 ## Procedura
 

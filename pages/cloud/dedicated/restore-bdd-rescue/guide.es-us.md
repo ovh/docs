@@ -1,8 +1,6 @@
 ---
 title: "Obtención de las bases de datos en modo de rescate"
-slug: dedicated-servers-retrieve-database
 excerpt: "Cómo acceder a las bases de datos y guardarlas en modo de rescate"
-section: Diagnóstico y modo de rescate
 updated: 2023-04-13
 ---
 

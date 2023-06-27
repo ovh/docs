@@ -1,8 +1,6 @@
 ---
 title: MegaRAID mit RAID 0 konfigurieren
-slug: using-the-maximum-amount-of-disk-space
 excerpt: "Erfahren Sie hier, wie Sie RAID 0 einrichten, um den gesamten Speicherplatz Ihres Servers zu verwenden"
-section: RAID & Festplatten
 updated: 2022-07-08
 ---
 
@@ -121,10 +119,10 @@ MegaCli -LDInfo -Lall -a0 | grep -i size
 
 ## Weiterführende Informationen
 
-[Hot Swap - RAID Hard](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/)
+[Hot Swap - RAID Hard](/pages/cloud/dedicated/hotswap_raid_hard)
 
-[Hot Swap - RAID Soft](https://docs.ovh.com/de/dedicated/hotswap-software-raid/)
+[Hot Swap - RAID Soft](/pages/cloud/dedicated/hotswap_raid_soft)
 
-[Hardware-RAID verwalten](https://docs.ovh.com/gb/en/dedicated/raid-hard/)
+[Hardware-RAID verwalten](/pages/cloud/dedicated/raid_hard)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

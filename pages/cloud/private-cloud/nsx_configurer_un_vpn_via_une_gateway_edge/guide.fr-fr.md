@@ -1,10 +1,7 @@
 ---
 title: Configurer un VPN via une Gateway Edge
-slug: configurer-un-vpn-via-une-gateway-edge
 excerpt: Utilisez le service VPN de la NSX-v Edge Gateway pour interconnecter des sites distants
 legacy_guide_number: '7766647'
-section: NSX-v
-order: 07
 updated: 2021-11-30
 ---
 
@@ -20,7 +17,7 @@ Le VPN crée un tunnel securisé pour connecter des clients ou sites distants au
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-- Avoir déployé une [NSX Edge Services Gateway](https://docs.ovh.com/fr/private-cloud/comment-deployer-une-nsx-edge-gateway/)
+- Avoir déployé une [NSX Edge Services Gateway](/pages/cloud/private-cloud/nsx_deploying_edge_gateway)
 
 ## En pratique
 

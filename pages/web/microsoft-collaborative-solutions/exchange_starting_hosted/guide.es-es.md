@@ -1,9 +1,6 @@
 ---
 title: 'Primeros pasos con el servicio Hosted Exchange'
 excerpt: 'Cómo configurar por primera vez el servicio Hosted Exchange'
-slug: exchange_20132016_primera_configuracion_del_servicio
-section: 'Primeros pasos con Exchange'
-order: 01
 updated: 2023-03-06
 ---
 
@@ -94,7 +91,7 @@ Esta ventana le invita a añadir un **registro CNAME** en la zona DNS del domini
 ![Correo electrónico](images/exchange-wizard06.png){.thumbnail .w-640}<br>
 Aquí encontrará los valores que deberá introducir en su zona DNS. Los **registros MX** corresponden a la recepción del correo. El **registro SRV** se corresponde con la configuración automática de las direcciones de correo.
 
-Consulte la configuración de su zona DNS relativa a su servicio de correo en nuestra página "[Añadir un registro MX a la configuración del dominio](https://docs.ovh.com/es/domains/anadir-registro-mx-configuracion-dominio/)".
+Consulte la configuración de su zona DNS relativa a su servicio de correo en nuestra página "[Añadir un registro MX a la configuración del dominio](/pages/web/domains/dns_zone_mx)".
 
 ### Añadir dominios adicionales (opcional)
 
@@ -107,7 +104,7 @@ Una vez que haya configurado por primera vez el dominio, también puede configur
 
 Para añadir un nuevo dominio, seleccione el servicio Hosted Exchange correspondiente en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y abra la pestaña `Dominios asociados`{.action}. Se mostrará una tabla con los dominios ya configurados o que estén siendo configurados en el servicio. Haga clic en el botón `Añadir un dominio`{.action} y siga los pasos que se le indican para añadir el dominio.
 
-Para más información, consulte la guía [Añadir un dominio a un servicio Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/anadir-dominio-exchange/).
+Para más información, consulte la guía [Añadir un dominio a un servicio Exchange](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain).
 
 > [!primary]
 >
@@ -133,13 +130,13 @@ La tabla mostrará las cuentas pendientes de configurar con el formato *@configu
 
 ### Utilizar las direcciones de correo
 
-Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el webmail **Outlook Web Application** (OWA). Puede acceder a ella en la dirección <https://www.ovhcloud.com/es-es/mail/>. Para acceder, introduzca las claves de su dirección de correo electrónico. Para más información, consulte las guías de OVHcloud sobre las [Soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/), en el apartado relativo a Outlook Web Application (OWA).
+Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el webmail **Outlook Web Application** (OWA). Puede acceder a ella en la dirección <https://www.ovhcloud.com/es-es/mail/>. Para acceder, introduzca las claves de su dirección de correo electrónico. Para más información, consulte las guías de OVHcloud sobre las [Soluciones colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange), en el apartado relativo a Outlook Web Application (OWA).
 
-Si desea configurar su cuenta de correo electrónico en un cliente de correo o un dispositivo externo (smartphone o tablet), consulte las guías de OVHcloud sobre las [soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/). Para un uso óptimo de su cuenta Exchange en un cliente de correo de escritorio, asegúrese de que este sea compatible con el servicio.
+Si desea configurar su cuenta de correo electrónico en un cliente de correo o un dispositivo externo (smartphone o tablet), consulte las guías de OVHcloud sobre las [soluciones colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Para un uso óptimo de su cuenta Exchange en un cliente de correo de escritorio, asegúrese de que este sea compatible con el servicio.
 
 OVHcloud ofrece, desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), licencias Outlook opcionales con su cuenta de correo Exchange.
 
-Para suscribirse, consulte nuestra página "[Obtener una licencia Outlook para Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2013_uso_y_contratacion_de_las_licencias_outlook_exchange_2013/)". 
+Para suscribirse, consulte nuestra página "[Obtener una licencia Outlook para Exchange](/pages/web/microsoft-collaborative-solutions/office_outlook_license)". 
 
 También puede consultar [las licencias Office 365](https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/). Si desea disfrutar del cliente de correo Outlook o de otros programas de la suite Office, le recomendamos una de estas soluciones.
 
@@ -155,20 +152,20 @@ Una vez que el servicio Hosted Exchange haya sido configurado y esté operativo,
 
 Para activar las distintas funciones, seleccione el servicio Hosted Exchange correspondiente en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y abra la pestaña correspondiente a la acción que quiera realizar.
 
-Para más información sobre estas funciones, consulte las guías de OVH sobre las [soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/).
+Para más información sobre estas funciones, consulte las guías de OVH sobre las [soluciones colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
 ## Más información
 
-[Crear un grupo de contactos](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_20132016_uso_de_los_grupos_listas_de_correo/)
+[Crear un grupo de contactos](/pages/web/microsoft-collaborative-solutions/feature_groups)
 
-[Crear y utilizar una cuenta compartida](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange-uso-de-las-cuentas-compartidas/)
+[Crear y utilizar una cuenta compartida](/pages/web/microsoft-collaborative-solutions/feature_shared_account)
 
-[Crear y utilizar cuentas de recursos](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_20132016_uso_de_las_cuentas_de_recursos/)
+[Crear y utilizar cuentas de recursos](/pages/web/microsoft-collaborative-solutions/feature_resources)
 
-[Establecer permisos sobre una cuenta de correo](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2013_dar_permisos_full_access_a_una_cuenta/)
+[Establecer permisos sobre una cuenta de correo](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Compartir una carpeta desde la interfaz OWA](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2016_compartir_una_carpeta_con_el_webmail_owa/)
+[Compartir una carpeta desde la interfaz OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
-[Gestionar la facturación de las cuentas Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/gestion-de-la-facturacion-exchange/)
+[Gestionar la facturación de las cuentas Exchange](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

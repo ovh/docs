@@ -1,9 +1,6 @@
 ---
 title: 'Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée'
-slug: mutualise-consulter-les-statistiques-et-les-logs-de-mon-site
 excerpt: 'Découvrez comment consulter les statistiques et logs de votre site internet'
-section: 'Optimiser son site'
-order: 04
 updated: 2021-01-05
 ---
 **Dernière mise à jour le 05/01/2021**
@@ -41,7 +38,7 @@ Cliquez sur le bouton `Créer un nouvel utilisateur`{.action} dans la section `A
 
 > [!warning] 
 >
-> Si vous avez activé les logs séparés sur une [entrée multisite](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine), les utilisateurs créés ici ne peuvent pas accéder aux statistiques de cette entrée multisite.
+> Si vous avez activé les logs séparés sur une [entrée multisite](/pages/web/hosting/multisites_configure_multisite#etape-2-ajouter-un-domaine-ou-un-sous-domaine), les utilisateurs créés ici ne peuvent pas accéder aux statistiques de cette entrée multisite.
 >
 
 ### Statistiques des visites
@@ -76,7 +73,7 @@ Différents type de logs sont à votre disposition :
 - Logs CGI : les différents appels aux scripts cgi.bin qui ont été réalisés.
 - Logs out : les statistiques de votre hébergement sur les différents appels externes réalisés.
 - Logs SSH : ces logs indiquent les différentes connexions réalisées avec le protocole SSH.
-- Logs CRON : le résultat de l'exécution de vos tâches planifiées ([Les tâches automatisées (CRON) sur votre hébergement](../mutualise-taches-automatisees-cron/)).
+- Logs CRON : le résultat de l'exécution de vos tâches planifiées ([Les tâches automatisées (CRON) sur votre hébergement](/pages/web/hosting/cron_tasks)).
 
 ### Activités de l’hébergement
 

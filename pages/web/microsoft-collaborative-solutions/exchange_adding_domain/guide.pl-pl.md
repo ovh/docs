@@ -1,17 +1,12 @@
 ---
 title: Dodaj domenę do platformy e-mail
-slug: dodanie-domeny-exchange
 excerpt: Dowiedz się, jak dodać domenę do platformy Exchange lub E-mail Pro
-section: Pierwsze kroki z Exchange
-order: 04
-updated: 2022-10-07
+updated: 2023-06-14
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
-
-**Ostatnia aktualizacja z dnia 07-10-2022**
 
 ## Wprowadzenie
 
@@ -23,7 +18,7 @@ Dodanie domeny do usługi Exchange jest niezbędne, abyś mógł korzystać z ko
 
 - Posiadanie rozwiązania [Exchange](https://www.ovhcloud.com/pl/emails/) lub [Email Pro](https://www.ovhcloud.com/pl/emails/email-pro/)
 - Zarejestrowana domena lub kilka domen.
-- Możliwość modyfikacji konfiguracji Twojej domeny [strefy DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/)
+- Możliwość modyfikacji konfiguracji Twojej domeny [strefy DNS](/pages/web/domains/dns_zone_edit)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
@@ -65,16 +60,19 @@ Okno wyświetla teraz informacje dotyczące konfiguracji trybów.
 - **Jeśli podałeś nazwę domeny nieobsługiwanej przez OVHcloud**: tryb nieautorytatywny zostanie domyślnie skonfigurowany.
 
 - **Jeśli wybrałeś z listy nazwę domeny obsługiwanej przez OVHcloud**: wybierz jeden z trybów.
+    - **Autorytatywny** : Odpowiedni, jeśli do obsługi poczty w Twojej domenie używasz wyłącznie usługi Exchange lub E-mail Pro. Nie pozwala na korzystanie z innego rozwiązania poczty elektronicznej.
+    - **Nieautorytatywny** : Odpowiedni, jeśli do obsługi Twojej domeny używasz kont Exchange lub E-mail Pro oraz jednocześnie innego rozwiązania poczty elektronicznej. Wskaż serwer, na którym hostowane jest Twoje rozwiązanie poczty elektronicznej.
 
-|Tryb|Opis|
-|---|---|
-|Autorytatywny|Odpowiedni, jeśli do obsługi poczty w Twojej domenie używasz wyłącznie usługi Exchange lub E-mail Pro. Nie pozwala na korzystanie z innego rozwiązania poczty elektronicznej.|
-|Nieautorytatywny|Odpowiedni, jeśli do obsługi Twojej domeny używasz kont Exchange lub E-mail Pro oraz jednocześnie innego rozwiązania poczty elektronicznej. Wskaż serwer, na którym hostowane jest Twoje rozwiązanie poczty elektronicznej.|
+>
+> - Kiedy wiadomość e-mail jest przesyłana na Twoją platformę e-mail (*Server A*) w trybie **autorytatywnym**, oznacza to, że wszystkie adresy e-mail Twojej nazwy domeny są hostowane tylko na tej platformie. <br> <br> Na przykład, jeśli wyślemy e-mail na adres "*mary.johnson@mydomain.ovh*", "*Server A*" zwróci do nadawcy komunikat o błędzie, ponieważ ten adres nie nie istnieje na „*Server A*”.
+> - Gdy wiadomość e-mail jest przesyłana na Twoją platformę e-mail (*Server A*) w trybie **nieautorytatywnym**, oznacza to, że adresy e-mail Twojej nazwy domeny są rozdzielane między główny adres e-mail Twojej platformy (*Server A*) i inną usługę e-mail (*Server B*). <br> <br> Na przykład, jeśli wyślemy wiadomość e-mail na adres "*mary.johnson@mydomain.ovh*", *Server A* przekaże wiadomość e-mail na "*Server B*", aby ten mógł ją dostarczyć.
+>
+>![Dodaj domenę](images/add_domain_exchange_authoritative.png){.thumbnail}
+>
 
-> [!primary]
+> [!ostrzeżenie]
 >
-> Wybór trybu nie jest ostateczny i możesz zmienić go później w Panelu klienta OVHcloud.
->
+> Jeśli otrzymasz komunikat „**wykryto autorytatywną domenę**” podczas dodawania nazwy domeny do platformy poczty e-mail, oznacza to, że ta nazwa domeny jest zadeklarowana w trybie **autorytatywny** na innej platformie poczty e-mail. Będziesz musiał przełączyć go w tryb **nieautorytatywny** na obu platformach, aby mogły współistnieć.
 
 Kliknij przycisk `Dalej`{.action}, aby kontynuować proces dodawania domeny.
 
@@ -94,7 +92,7 @@ Po dodaniu przypisanej domeny upewnij się, że konfiguracja jest poprawna, korz
 
 - **jeśli podczas dodawania domeny** wybrałeś automatyczną konfigurację: wyświetlanie się w Panelu klienta OVHcloud może zająć kilka minut, aby się zaktualizować;
 
-- **jeśli podałeś nazwę domeny nieobsługiwanej przez OVHcloud**: kliknij czerwony przycisk, aby wyświetlić listę modyfikacji do wprowadzania. Jeśli Twoja domena nie korzysta z serwerów DNS, wprowadź odpowiednie modyfikacje, korzystając interfejsu do zarządzania konfiguracją Twojej domeny. Jeśli chcesz się dowiedzieć więcej o konfiguracji CNAME, skorzystaj z dokumentacji [Tworzenie pola CNAME po dodaniu przypisanej domeny](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_20132016_dodanie_pola_cname/).
+- **jeśli podałeś nazwę domeny nieobsługiwanej przez OVHcloud**: kliknij czerwony przycisk, aby wyświetlić listę modyfikacji do wprowadzania. Jeśli Twoja domena nie korzysta z serwerów DNS, wprowadź odpowiednie modyfikacje, korzystając interfejsu do zarządzania konfiguracją Twojej domeny. Jeśli chcesz się dowiedzieć więcej o konfiguracji CNAME, skorzystaj z dokumentacji [Tworzenie pola CNAME po dodaniu przypisanej domeny](/pages/web/microsoft-collaborative-solutions/exchange_dns_cname).
 
 > [!primary]
 >
@@ -113,7 +111,7 @@ Wszystkie konta e-mail utworzone w ramach Twojej usługi będą mogły wyświetl
 
 Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu OVHcloud udostępnia **webmail** dostępny pod adresem <https://www.ovh.com/pl/mail/>. W celu jak najlepszego wykorzystania adresu w programie upewnij się, czy jest on kompatybilny z usługą. 
 
-Jeśli chcesz skonfigurować Twoje konto e-mail w programie pocztowym lub urządzeniu typu smartfon lub tablet lub uzyskać pomoc w zakresie funkcji usługi e-mail, skorzystaj z naszej dokumentacji dostępnej na stronach [Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/) i [E-mail Pro](https://docs.ovh.com/pl/emails-pro/).
+Jeśli chcesz skonfigurować Twoje konto e-mail w programie pocztowym lub urządzeniu typu smartfon lub tablet lub uzyskać pomoc w zakresie funkcji usługi e-mail, skorzystaj z naszej dokumentacji dostępnej na stronach [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) i [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
 Licencje Outlook możesz uzyskać w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i licencje Office 365 na stronie <https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/>. Zalecamy skorzystanie z jednego z tych rozwiązań, jeśli chcesz używać programu pocztowego Outlook lub innych programów Office.
 
@@ -123,7 +121,7 @@ Jeśli chcesz usunąć domenę przypisaną do Twojej usługi Exchange lub E-mail
 
 > [!warning]
 >
-> Przed usunięciem kont e-mail upewnij się, że nie są one używane. Może zaistnieć konieczność zabezpieczenia tych kont. W razie potrzeby zapoznaj się z przewodnikiem [Ręczna migracja Twojego konta e-mail](https://docs.ovh.com/pl/emails/przenoszenie-kont-e-mail/), który opisze, jak wyeksportować dane z konta z Panelu klienta lub programu pocztowego.
+> Przed usunięciem kont e-mail upewnij się, że nie są one używane. Może zaistnieć konieczność zabezpieczenia tych kont. W razie potrzeby zapoznaj się z przewodnikiem [Ręczna migracja Twojego konta e-mail](/pages/web/emails/manual_email_migration), który opisze, jak wyeksportować dane z konta z Panelu klienta lub programu pocztowego.
 
 Przejdź do karty `Powiązane domeny`{.action} Twojej platformy. W kolumnie `Konta` w tabeli możesz wskazać liczbę kont przypisanych do domen na Twojej liście.
 
@@ -147,9 +145,9 @@ W zakładce `Przypisane domeny`{.action} na Twojej platformie kliknij przycisk `
 
 ## Sprawdź również
 
-[Tworzenie pola CNAME po dodaniu przypisanej domeny](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_20132016_dodanie_pola_cname/)
+[Tworzenie pola CNAME po dodaniu przypisanej domeny](/pages/web/microsoft-collaborative-solutions/exchange_dns_cname)
 
-[Modyfikacja strefy DNS OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/)
+[Modyfikacja strefy DNS OVHcloud](/pages/web/domains/dns_zone_edit)
 
 Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę pomocy](https://www.ovhcloud.com/pl/support-levels/)

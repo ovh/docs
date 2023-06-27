@@ -1,9 +1,6 @@
 ---
 title: Concepts overview
-slug: secnumcloud-connectivity-overview-concept
 excerpt: 'SecNumCloud Connectivity - Concepts overview'
-section: SecNumCloud Connectivity
-order: 01
 updated: 2021-11-18
 ---
 

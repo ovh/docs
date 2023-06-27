@@ -1,9 +1,6 @@
 ---
 title: Criar tarefas automatizadas (CRON) no seu alojamento Web
 excerpt: Saiba como criar tarefas CRON para automatizar as tarefas programadas num alojamento web
-slug: alojamento_partilhado_tarefas_agendadas_cron
-section: Tarefas automatizadas (CRON)
-order: 01
 updated: 2022-12-01
 ---
 
@@ -109,7 +106,7 @@ Tenha o cuidado de utilizar caminhos de acesso absolutos aos ficheiros dos seus 
 
 No \[logs] do seu alojamento Web, acessível a partir da sua Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, poderá ver a categoria de log intitulada "CRON".
 
-Para mais informações, consulte o nosso guia ["Consultar as estatísticas e os logs do meu site alojado numa oferta partilhada"](../partilhado_consultar_as_estatisticas_e_os_logs_do_meu_site/).
+Para mais informações, consulte o nosso guia ["Consultar as estatísticas e os logs do meu site alojado numa oferta partilhada"](/pages/web/hosting/logs_and_statistics).
 
 ##### **Exemplo de logs**
 
@@ -150,8 +147,8 @@ Para mais informações, consulte o nosso guia ["Consultar as estatísticas e os
 
 ## Saiba mais
 
-[Configurar o ficheiro .ovhconfig do alojamento web](../configurar-ficheiro-ovhconfig/)
+[Configurar o ficheiro .ovhconfig do alojamento web](/pages/web/hosting/ovhconfig_configuration)
 
-[Utilizar o acesso SSH do seu alojamento web](../partilhado_o_ssh_nos_alojamentos_partilhados/)
+[Utilizar o acesso SSH do seu alojamento web](/pages/web/hosting/ssh_on_webhosting)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

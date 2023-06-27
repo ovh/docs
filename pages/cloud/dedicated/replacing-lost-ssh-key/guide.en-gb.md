@@ -1,9 +1,6 @@
 ---
 title: "Replacing your lost SSH key pair"
-slug: dedicated-servers-replacing-lost-ssh-key-pair
 excerpt: "Find out how to regain SSH access to your dedicated server"
-section: Diagnostics and rescue mode
-order: 2
 updated: 2023-02-06
 ---
 
@@ -11,9 +8,9 @@ updated: 2023-02-06
 
 ## Objective
 
-If you are [using SSH keys](https://docs.ovh.com/gb/en/dedicated/creating-ssh-keys-dedicated/) to connect to your dedicated server, losing your private SSH key could mean losing access to your server altogether.
+If you are [using SSH keys](/pages/cloud/dedicated/creating-ssh-keys-dedicated) to connect to your dedicated server, losing your private SSH key could mean losing access to your server altogether.
 
-However, you can still connect to your server via the OVHcloud [rescue mode](https://docs.ovh.com/gb/en/dedicated/ovh-rescue/), which allows you to log in with a provisional password and modify your files.
+However, you can still connect to your server via the OVHcloud [rescue mode](/pages/cloud/dedicated/rescue_mode), which allows you to log in with a provisional password and modify your files.
 
 **This guide explains how to replace your SSH keys if you have lost access to your server.**
 
@@ -34,7 +31,7 @@ However, you can still connect to your server via the OVHcloud [rescue mode](htt
 
 In order to access your server in rescue mode, the currently active SSH key has to be disabled first.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and navigate to the `SSH keys`{.action} section. Use our [SSH key guide](https://docs.ovh.com/gb/en/dedicated/creating-ssh-keys-dedicated/#cpsshkey) if necessary.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and navigate to the `SSH keys`{.action} section. Use our [SSH key guide](/pages/cloud/dedicated/creating-ssh-keys-dedicated#cpsshkey) if necessary.
 
 Since the public key stored in the Control Panel is useless without the corresponding private key, you can simply remove it. Click on the <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> button in the row of the key and select `Delete key`{.action}.
 
@@ -44,11 +41,11 @@ In the popup window, click on `Confirm`{.action}.
 
 ### Step 2: Create a new key pair
 
-Create a new SSH key pair on your device, as described in the first part of the [SSH key guide](https://docs.ovh.com/gb/en/dedicated/creating-ssh-keys-dedicated/).
+Create a new SSH key pair on your device, as described in the first part of the [SSH key guide](/pages/cloud/dedicated/creating-ssh-keys-dedicated).
 
 ### Step 3: Access your server in rescue mode and replace the key
 
-Follow the steps in the [rescue mode guide](https://docs.ovh.com/gb/en/dedicated/ovh-rescue/) to connect to your server and mount your partitions.
+Follow the steps in the [rescue mode guide](/pages/cloud/dedicated/rescue_mode) to connect to your server and mount your partitions.
 
 When you have access to your files, open the "authorized_keys" file concerned with a text editor. This file stores SSH keys and is located in the `home` folder of the user with which you connect to your server. (Replace "USER_NAME" with your actual user name.)
 
@@ -67,12 +64,12 @@ EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 
 You can delete the now obsolete "old" key string from the file. Save your changes and exit the editor.
 
-Switch the boot mode back to "normal" and restart the server in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Refer to the [rescue mode guide](https://docs.ovh.com/gb/en/dedicated/ovh-rescue/) if necessary.
+Switch the boot mode back to "normal" and restart the server in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Refer to the [rescue mode guide](/pages/cloud/dedicated/rescue_mode) if necessary.
 
 You have now access to the server with your new SSH key pair.
 
 ## Go further
 
-[Changing the root password on a dedicated server](https://docs.ovh.com/gb/en/dedicated/root-password/)
+[Changing the root password on a dedicated server](/pages/cloud/dedicated/changing_root_password_linux_ds)
 
 Join our community of users on <https://community.ovh.com/en/>.

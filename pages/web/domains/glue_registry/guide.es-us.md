@@ -1,9 +1,6 @@
 ---
 title: 'Personalizar los servidores DNS de un dominio'
-slug: glue_record
 excerpt: 'Cómo personalizar los servidores DNS de un dominio en OVHcloud'
-section: 'DNS (servidor y zona)'
-order: 07
 updated: 2018-10-26
 ---
 
@@ -53,7 +50,7 @@ Para ello, utilice el panel que le ofrezca el proveedor que gestione la configur
 
 - **Si el dominio no utiliza la configuración DNS de OVHcloud**, deberá ponerse en contacto con el proveedor que gestione dicha configuración. Una vez realizada esta operación, vaya al siguiente paso.
 
-- **Si el dominio utiliza la configuración DNS de OVHcloud**, abra la pestaña `Zona DNS`{.action} y añada un nuevo registro A haciendo clic en `Añadir un registro`{.action}. Seleccione el tipo de registro `A`{.action} y siga los pasos que se indican. Si necesita ayuda, consulte la guía [Editar una zona DNS de OVHcloud](../web_hosting_como_editar_mi_zona_dns/){.external}.
+- **Si el dominio utiliza la configuración DNS de OVHcloud**, abra la pestaña `Zona DNS`{.action} y añada un nuevo registro A haciendo clic en `Añadir un registro`{.action}. Seleccione el tipo de registro `A`{.action} y siga los pasos que se indican. Si necesita ayuda, consulte la guía [Editar una zona DNS de OVHcloud](/pages/web/domains/dns_zone_edit){.external}.
 
 ![Registro Glue](images/customize-dns-servers-step3.png){.thumbnail}
 
@@ -61,7 +58,7 @@ Para ello, utilice el panel que le ofrezca el proveedor que gestione la configur
 
 Por último, solo queda cambiar los servidores DNS del dominio. Para ello, abra la pestaña `Servidores DNS`{.action} y haga clic en `Cambiar los servidores DNS`{.action}. Sustituya los servidores DNS actuales por los que quiera utilizar. 
 
-Siga los pasos que se indican y, si necesita ayuda, consulte la guía [Cambiar los servidores DNS de un dominio en OVHcloud](../web_hosting_informacion_general_sobre_los_servidores_dns/){.external}.
+Siga los pasos que se indican y, si necesita ayuda, consulte la guía [Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web/domains/dns_server_general_information){.external}.
 
 Una vez que haya editado los servidores DNS, espere a que se apliquen los cambios. Tenga en cuenta que es necesario un tiempo máximo de propagación de 48 horas.
 

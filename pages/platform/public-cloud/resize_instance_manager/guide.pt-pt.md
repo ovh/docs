@@ -1,9 +1,6 @@
 ---
 title: Redimensionar uma instância
 excerpt: Como redimensionar uma instância a partir da Área de Cliente OVHcloud
-slug: resize-an-instance-manager
-section: Gestão a partir da Área de Cliente OVHcloud
-order: 6
 updated: 2022-08-24
 ---
 
@@ -58,7 +55,7 @@ No novo separador, expanda a página até à secção **Modelo** para selecionar
 Se o seu disco for igual ou inferior a 50GB, pode passar para uma `Instância flexível`{.action} se assim o desejar.
 
 > [!warning]
-> Atenção, no caso em que edita uma instância do tipo *Flex*, não é possível migrar para uma instância clássica através à Área de Cliente. Para mais informações, consulte o nosso guia sobre [Migrar de uma instância Flex para uma instância clássica](https://docs.ovh.com/pt/public-cloud/modificar-uma-instancia-flex/).
+> Atenção, no caso em que edita uma instância do tipo *Flex*, não é possível migrar para uma instância clássica através à Área de Cliente. Para mais informações, consulte o nosso guia sobre [Migrar de uma instância Flex para uma instância clássica](/pages/platform/public-cloud/revert_a_flex_instance).
 >
 
 Depois de fazer a seleção, clique em `Alterar o modelo`{.action} para confirmar a sua escolha.

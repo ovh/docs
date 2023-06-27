@@ -1,11 +1,8 @@
 ---
 title:  Managing nodes with the NodePools CRD
-slug: node-pools-crd
 excerpt: 'Find out how to manage nodes with the NodePools CRD'
-section: User guides
 routes:
-    canonical: https://docs.ovh.com/gb/en/kubernetes/node-pools-crd/
-order: 2
+    canonical: /pages/platform/kubernetes-k8s/node-pools-crd
 updated: 2023-05-11
 ---
 
@@ -37,7 +34,7 @@ updated: 2023-05-11
 
 OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. This guide will cover one of the first steps after ordering a cluster: managing nodes and node pools, using the NodePools CRD.
 
-In this guide, we are assuming you're using the `NodePools` CRD via `kubectl` to manage your Kubernetes cluster. If you are using a different method, like the [OVHcloud Cloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), please refer to the relevant documentation: [Managing nodes and node pools](../managing-nodes/) guide.
+In this guide, we are assuming you're using the `NodePools` CRD via `kubectl` to manage your Kubernetes cluster. If you are using a different method, like the [OVHcloud Cloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), please refer to the relevant documentation: [Managing nodes and node pools](/pages/platform/kubernetes-k8s/managing-nodes) guide.
 
 ## Requirements
 
@@ -172,7 +169,7 @@ After creation:
 
 Be aware that `maxNodes` is set by default to 5 when `antiAffinity` is enabled.
 
-To configure cluster autoscaling based on node pools, follow documentations [Configuring the cluster autoscaler](../configuring-cluster-autoscaler) and [Cluster autoscaler example](../cluster-autoscaler-example).
+To configure cluster autoscaling based on node pools, follow documentations [Configuring the cluster autoscaler](/pages/platform/kubernetes-k8s/configuring-cluster-autoscaler) and [Cluster autoscaler example](/pages/platform/kubernetes-k8s/cluster-autoscaler-example).
 To customers developing they own autoscaling scripts, we strongly encourage you to define `minNodes` and `maxNodes`.
 
 ## Listing node pools
@@ -317,7 +314,7 @@ After executing this command, Kubernetes will change the state of the nodes to `
 
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
 
-Otherwise to skip it and push to deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [deploying an application](../deploying-an-application/).
+Otherwise to skip it and push to deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [deploying an application](/pages/platform/kubernetes-k8s/deploying-an-application).
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Zapisz stronę WWW z modułem WordPress"
-slug: realize-backup-wordpress
 excerpt: "Dowiedz się, jak zapisać zawartość strony WordPress i bazę danych"
-section: 'Tutoriale'
-order: 021
 updated: 2023-02-22
 ---
 
@@ -37,7 +34,7 @@ Na hostingu możesz zarządzać kopiami zapasowymi Twojej strony WWW. Nawet jeś
 
 Możesz wykonać kopię zapasową na dwa sposoby: **ręcznie** lub przez **poprzez rozszerzenie**.
 
-OVHcloud dostarcza [usługę (nieokreśloną w umowie) umożliwiającą automatyczne tworzenie kopii zapasowych danych](https://docs.ovh.com/pl/hosting/hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/) oraz udostępnia te kopie zapasowe. Twoja odpowiedzialność spoczywa jednak na wdrożeniu własnej polityki przywracania i określaniu punktów przywracania usług w momentach, które uważasz za stosowne.
+OVHcloud dostarcza [usługę (nieokreśloną w umowie) umożliwiającą automatyczne tworzenie kopii zapasowych danych](/pages/web/hosting/ftp_save_and_backup) oraz udostępnia te kopie zapasowe. Twoja odpowiedzialność spoczywa jednak na wdrożeniu własnej polityki przywracania i określaniu punktów przywracania usług w momentach, które uważasz za stosowne.
 
 ### Metoda 1 - ręczna kopia zapasowa
 
@@ -45,7 +42,7 @@ Ręczna kopia zapasowa musi być wykonana w dwóch etapach. Najpierw należy wyk
 
 #### 1.1 - Zapisz pliki strony www
 
-Odzyskanie informacji odbywa się za pośrednictwem klienta FTP, takiego jak FileZilla. Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Użyj FileZilla na Twoim hostingu OVHcloud](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/)".
+Odzyskanie informacji odbywa się za pośrednictwem klienta FTP, takiego jak FileZilla. Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Użyj FileZilla na Twoim hostingu OVHcloud](/pages/web/hosting/ftp_filezilla_user_guide)".
 
 Po zalogowaniu się do serwera przez FTP, pobierz (przeciągnij/upuść) zawartość katalogu `www` na prawym boku. Katalog ten zawiera wszystkie pliki i katalogi Twojej strony WordPress (konfiguracja, szablony, media, itp.).
 
@@ -61,7 +58,7 @@ Aby wyeksportować Twoją bazę danych, przejdź do interfejsu _PHPMyAdmin_ popr
 
 > [!success]
 >
-> Zapoznaj się z naszym przewodnikiem dotyczącym [eksportu bazy danych](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/).
+> Zapoznaj się z naszym przewodnikiem dotyczącym [eksportu bazy danych](/pages/web/hosting/sql_database_export).
 
 ![Dostęp PHPMyAdmin - Strona główna](images/how_to_backup_your_wordpress_2.png){.thumbnail}
 
@@ -153,7 +150,7 @@ Stosując te dobre praktyki będziesz miał możliwość powrotu do zdrowej wers
 ## Sprawdź również <a name="go-further"></a>
 
 - [Oficjalna strona WordPress](https://wordpress.org){.external}
-- [Więcej informacji na temat kopii zapasowych Twojego hostingu](https://docs.ovh.com/pl/hosting/hosting_www_informacje_techniczne_zwiazane_z_hostingiem_www/#informacje-o-automatycznych-kopiach-zapasowych)
+- [Więcej informacji na temat kopii zapasowych Twojego hostingu](/pages/web/hosting/hosting_technical_specificities#informacje-o-automatycznych-kopiach-zapasowych)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 

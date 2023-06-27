@@ -1,9 +1,6 @@
 ---
 title: "Proteger um servidor dedicado"
-slug: proteger-um-servidor-dedicado
 excerpt: "Saiba como proteger o seu servidor dedicado graças a estas dicas"
-section: Introdução
-order: 2
 updated: 2023-02-24
 ---
 
@@ -37,7 +34,7 @@ Quando encomendar o seu servidor dedicado, pode escolher uma distribuição ou u
 >
 > Tenha em conta que se trata de um guia geral baseado num sistema operativo Ubuntu Server. Algumas encomendas precisam de ser adaptadas à distribuição que utiliza e certos truques convidam-no a utilizar ferramentas de terceiros. Consulte a documentação oficial destas aplicações caso necessite de ajuda.
 >
-> Se configurar o primeiro servidor dedicado da OVHcloud, recomendamos que consulte primeiro o nosso manual sobre [a implementação de um servidor dedicado](https://docs.ovh.com/pt/dedicated/primeiros-passos-servidor-dedicado/).
+> Se configurar o primeiro servidor dedicado da OVHcloud, recomendamos que consulte primeiro o nosso manual sobre [a implementação de um servidor dedicado](/pages/cloud/dedicated/getting-started-with-dedicated-server).
 >
 
 Os exemplos abaixo pressupõem que está ligado enquanto utilizador com autorizações elevadas.
@@ -110,7 +107,7 @@ ssh username@IPv4_servidor -p NewPortNumber
 
 ### Alterar a palavra-passe do utilizador root
 
-Recomenda-se vivamente que altere a palavra-passe do utilizador root para não a deixar ao valor predefinido num novo sistema. Para mais informações consulte [este guia](https://docs.ovh.com/pt/dedicated/alterar-palavra-passe-root-linux-num-servidor-dedicado/).
+Recomenda-se vivamente que altere a palavra-passe do utilizador root para não a deixar ao valor predefinido num novo sistema. Para mais informações consulte [este guia](/pages/cloud/dedicated/changing_root_password_linux_ds).
 
 
 ### Criar um utilizador com direitos restritos
@@ -174,7 +171,7 @@ As distribuições GNU/Linux comuns são fornecidas com um serviço de firewall 
 iptables -L
 ```
 
-Para mais informações sobre iptables, consulte o nosso [guia dedicado](https://docs.ovh.com/pt/dedicated/firewall-iptables/).
+Para mais informações sobre iptables, consulte o nosso [guia dedicado](/pages/cloud/dedicated/firewall-Linux-iptable).
 
 Recomendamos que crie e adapte regras de firewall à sua utilização. Para mais informações sobre as várias operações, consulte a documentação oficial da distribuição utilizada.
 
@@ -254,7 +251,7 @@ Para mais informações e recomendações sobre o Fail2ban, não hesite em consu
 
 As soluções da OVHcloud incluem a possibilidade de ativar uma firewall no ponto de entrada da infraestrutura, designada Network Firewall. Uma configuração correta desta firewall permite bloquear as ligações antes mesmo que estas cheguem ao seu servidor.
 
-Consulte o guia "[Configurar a Network Firewall](https://docs.ovh.com/pt/dedicated/firewall-network/)" se desejar ativá-la.
+Consulte o guia "[Configurar a Network Firewall](/pages/cloud/dedicated/firewall_network)" se desejar ativá-la.
 
 ### Proteger o sistema e os dados
 
@@ -267,14 +264,14 @@ A segurança de um sistema também inclui a proteção dos dados. A proteção d
 
 Será necessária uma solução de armazenamento de terceiros para replicar os seus dados e transferi-los para o seu armazenamento.
 
-Para saber mais sobre as nossas soluções de armazenamento, consulte o nosso [manual](https://docs.ovh.com/pt/dedicated/servicos-backup-storage/){.external} sobre armazenamento.
+Para saber mais sobre as nossas soluções de armazenamento, consulte o nosso [manual](/pages/cloud/dedicated/services_backup_storage){.external} sobre armazenamento.
 
 
 ## Quer saber mais?
 
-[Configurar a firewall em Windows](https://docs.ovh.com/pt/dedicated/firewall-windows/)
+[Configurar a firewall em Windows](/pages/cloud/dedicated/activate-port-firewall-soft-win)
 
-[Network Firewall](https://docs.ovh.com/pt/dedicated/firewall-network/)
+[Network Firewall](/pages/cloud/dedicated/firewall_network)
 
 Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 

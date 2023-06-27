@@ -1,11 +1,8 @@
 ---
 title: How to generate environment file for Python jobs
-slug: generate-environment
 excerpt: Find out how to create your Python environment and export it as an environment file.
-section: How to
-order: 4
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/data-processing/generate-environment/'
+    canonical: '/pages/platform/data-processing/34_HOWTO_handle-python-environment'
 updated: 2020-05-04
 ---
 
@@ -14,7 +11,7 @@ updated: 2020-05-04
 ## Objective
 This guide helps you create your python environment with Conda. Then we will see how to export it so you can use it to submit your Python job on OVHcloud Data Processing platform.
 
-To read an introduction about the Data Processing service you can visit [Data Processing Overview](../overview){.external}.
+To read an introduction about the Data Processing service you can visit [Data Processing Overview](/pages/platform/data-processing/00_CONCEPTS_Overview){.external}.
 
 ## Requirements
 - Your application code as Python files.
@@ -43,7 +40,7 @@ $ conda env export --from-history -f environment.yml
 
 It's going to generate a portable environment file. You will need this file to run your code on OVHcloud Data Processing. To learn more about environment file, have a look [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment).
 
-You can now move on to the next step and [submit a Python job](../submit-python).
+You can now move on to the next step and [submit a Python job](/pages/platform/data-processing/31_HOWTO_submit-python-ui).
 
 ## Generic environment file
 If you want to quickly test OVHcloud Data Processing with a basic job, you can use this environment file it includes commonly used packages:
@@ -68,7 +65,7 @@ Do not hesitate to reuse this environment file. Also, feel free to add or remove
 
 ## Go further
 
-To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at [Data Processing documentations page](../).
+To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at [Data Processing documentations page](/products/public-cloud-data-analytics-data-processing).
 
 You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
 

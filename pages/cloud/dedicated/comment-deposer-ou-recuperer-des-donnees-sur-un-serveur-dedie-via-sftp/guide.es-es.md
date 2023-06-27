@@ -1,8 +1,6 @@
 ---
 title: 'Subir o descargar datos en un servidor dedicado por SFTP'
-slug: subir-y-descargar-datos-por-sftp
 excerpt: 'Cómo transferir datos desde un servidor dedicado hacia un ordenador personal y viceversa'
-section: Tutoriales
 updated: 2021-05-18
 ---
 
@@ -33,9 +31,9 @@ En este tutorial explicamos cómo utilizar una o más soluciones de OVHcloud con
 
 ### Utilizar FileZilla para recuperar y subir los datos
 
-El protocolo SFTP puede utilizarse para transferir archivos a través de una conexión segura (SSH). Existen dos posibilidades para este escenario: o dispone de un acceso normal al servidor o se conecta a él en [modo de rescate](../modo_de_rescate/).
+El protocolo SFTP puede utilizarse para transferir archivos a través de una conexión segura (SSH). Existen dos posibilidades para este escenario: o dispone de un acceso normal al servidor o se conecta a él en [modo de rescate](/pages/cloud/dedicated/rescue_mode).
 
-Por defecto, un servidor que utilice un sistema operativo GNU/Linux tendrá acceso SSH a través del puerto 22. Sin embargo, puede que ya haya cambiado el puerto (por ejemplo, siguiendo [nuestra guía para proteger un servidor dedicado](../seguridad-de-un-servidor-dedicado/)).
+Por defecto, un servidor que utilice un sistema operativo GNU/Linux tendrá acceso SSH a través del puerto 22. Sin embargo, puede que ya haya cambiado el puerto (por ejemplo, siguiendo [nuestra guía para proteger un servidor dedicado](/pages/cloud/dedicated/securing-a-dedicated-server)).
 
 #### **Si tiene acceso al servidor**
 
@@ -55,7 +53,7 @@ El progreso de la transferencia de datos se muestra en la parte inferior de la i
 
 #### **Si el servidor está en modo de rescate**
 
-En modo de rescate, es necesario montar primero la partición. Para ello, siga las indicaciones de [esta guía](../modo_de_rescate/).
+En modo de rescate, es necesario montar primero la partición. Para ello, siga las indicaciones de [esta guía](/pages/cloud/dedicated/rescue_mode).
 
 Una vez montada la partición, utilice el cliente FileZilla como se explica más arriba, utilizando el puerto 22 para conectarse al servidor.
 
@@ -70,8 +68,8 @@ Si ha creado correctamente el punto de montaje, los datos se encuentran en el di
 
 ## Más información
 
-[Activar y utilizar el modo de rescate](../modo_de_rescate/)
+[Activar y utilizar el modo de rescate](/pages/cloud/dedicated/rescue_mode)
 
-[Proteger un servidor dedicado](../seguridad-de-un-servidor-dedicado/)
+[Proteger un servidor dedicado](/pages/cloud/dedicated/securing-a-dedicated-server)
 
 Para más información, interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

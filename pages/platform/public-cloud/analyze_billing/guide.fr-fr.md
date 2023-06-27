@@ -1,9 +1,6 @@
 ---
 title: 'Informations concernant le mode de facturation Public Cloud'
-slug: information-concernant-le-mode-de-facturation-cloud
-section: 'Gestion de projets'
 excerpt: 'Comprenez le mode de facturation des produits Public Cloud'
-order: 3
 updated: 2022-08-29
 ---
 
@@ -22,7 +19,7 @@ Ce fonctionnement ressemble à celui de certains opérateurs téléphoniques qui
 ## Prérequis
 
 * Un [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external} dans votre compte OVHcloud
-* Une [instance Public Cloud](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/){.external}
+* Une [instance Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps){.external}
 * Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
 
 ## Principe général
@@ -131,7 +128,7 @@ Dans le cas d'une instance à l'heure, il est possible de suspendre (*shelve*) u
 > Ce processus n'est fonctionnel que pour les instances à l'heure, il n'arrêtera pas la facturation de votre instance mais réduira son coût.
 >
 
-Pour plus d'informations sur la façon de procéder, consultez ce [guide](https://docs.ovh.com/fr/public-cloud/suspendre-ou-mettre-en-pause-une-instance/).
+Pour plus d'informations sur la façon de procéder, consultez ce [guide](/pages/platform/public-cloud/suspend_or_pause_an_instance).
 
 #### Tarif mensuel
 

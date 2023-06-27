@@ -1,9 +1,6 @@
 ---
 title: 'Premiers pas avec les applications préinstallées'
-slug: applications-preinstallees
 excerpt: Découvrez comment déployer des applications préinstallées sur votre VPS
-section: 'Premiers pas'
-order: 8
 updated: 2022-08-25
 ---
 
@@ -23,7 +20,7 @@ OVHcloud offre aux clients VPS des images d'applications préinstallées pour un
 
 ### Installer l'application préinstallée de votre choix
 
-Depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou les API OVHcloud, installez l'application de votre choix. Vous pouvez également consulter notre guide [Débuter avec un VPS](../debuter-avec-vps/).
+Depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou les API OVHcloud, installez l'application de votre choix. Vous pouvez également consulter notre guide [Débuter avec un VPS](/pages/cloud/vps/starting_with_a_vps).
 
 #### cPanel
 
@@ -50,7 +47,7 @@ Aucune autre étape n'est nécessaire pour terminer la première configuration d
 > [!faq]
 >
 > Puis-je utiliser mes propres serveurs DNS ?
->> Oui, vous le pouvez. Assurez-vous de créer des enregistrements « GLUE » avec votre bureau d'enregistrement de domaine. Par exemple, si vous voulez « ns1.mydomain.com » et « ns2.mydomain.com », vous devez configurer des enregistrements « GLUE » pour que les deux pointent sur l'adresse IP de votre serveur. Si votre domaine est enregistré avec OVHcloud, vous pouvez suivre [ce guide](../../domains/glue-registry/#etape-1-ajouter-les-enregistrements-glue). Notez que la création peut prendre 24 heures.
+>> Oui, vous le pouvez. Assurez-vous de créer des enregistrements « GLUE » avec votre bureau d'enregistrement de domaine. Par exemple, si vous voulez « ns1.mydomain.com » et « ns2.mydomain.com », vous devez configurer des enregistrements « GLUE » pour que les deux pointent sur l'adresse IP de votre serveur. Si votre domaine est enregistré avec OVHcloud, vous pouvez suivre [ce guide](/pages/web/domains/glue_registry#etape-1-ajouter-les-enregistrements-glue). Notez que la création peut prendre 24 heures.
 > Pourquoi définir le mot de passe root?
 >> WHM utilise par défaut l'utilisateur root pour l'authentification. L'URL à usage unique permet d'accéder à la première configuration et de modifier le mot de passe root. La prochaine fois que vous vous connecterez à WHM, vous devrez utiliser l'utilisateur root et le mot de passe que vous avez défini.
 > Où est ma licence pour cPanel?
@@ -94,7 +91,7 @@ Cette section s'applique uniquement aux installations de WordPress, Drupal, Joom
    - personaldomain.ovh <br>
    - www.personaldomain.ovh <br>  
 
-Si votre domaine est enregistré chez OVHcloud, vous pouvez suivre [ce guide](../../domains/editer-ma-zone-dns/).
+Si votre domaine est enregistré chez OVHcloud, vous pouvez suivre [ce guide](/pages/web/domains/dns_zone_edit).
 <br>Si votre domaine est enregistré auprès d'une autre société, vous devrez contacter celle-ci pour obtenir de l'aide sur la configuration de vos enregistrements `A`.
 
 <ol start="2">

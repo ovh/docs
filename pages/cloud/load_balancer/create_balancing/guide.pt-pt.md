@@ -1,8 +1,6 @@
 ---
 title: 'Método de repartição'
-slug: iplb-balancing
 excerpt: 'Conheça os diferentes métodos de repartição de carga do Load Balancer OVH'
-section: Configuração
 updated: 2018-01-17
 ---
 
@@ -26,7 +24,7 @@ O novo Load Balancer OVH oferece diferentes tipos de repartição de carga para 
 
 A repartição de carga é utilizada nas Farms de servidores. É este parâmetro que define a forma como os pedidos são distribuídos entre os servidores da Farm.
 
-Para conhecer os principais elementos do Load Balancer OVH, consulte [Apresentação do Load Balancer](https://docs.ovh.com/pt/load-balancer/lb-presentation/){.external}. 
+Para conhecer os principais elementos do Load Balancer OVH, consulte [Apresentação do Load Balancer](/pages/cloud/load_balancer/use_presentation){.external}. 
 
 |Algoritmo|Funcionalidades|
 |---|---|

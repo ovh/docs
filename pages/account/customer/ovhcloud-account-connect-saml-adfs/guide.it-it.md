@@ -1,9 +1,6 @@
 ---
 title: Attiva le connessioni Active Directory Federation Services (AD FS) SSO con il tuo account OVHcloud
-slug: connect-saml-sso-adfs
 excerpt: "Scopri come associare il tuo servizio Active Directory Federation Services (AD FS) al tuo account OVHcloud tramite SAML 2.0"
-section: Utilizzo avanzato
-order: 02
 updated: 2022-10-13
 ---
 
@@ -22,7 +19,7 @@ L'autenticazione SSO (*Single Sign-On*) è **unica** per accedere al tuo account
 ## Prerequisiti
 
 - I servizi AD FS (Active Directory Federation Services) devono essere eseguiti sul tuo server
-- Disporre di un [account OVHcloud attivo](https://docs.ovh.com/it/customer/creare-account-ovhcloud/)
+- Disporre di un [account OVHcloud attivo](/pages/account/customer/ovhcloud-account-creation)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
@@ -213,7 +210,7 @@ In seguito, potrai disconnetterti dal tuo account e collegarti con il tuo AD FS 
 
 ### Connessione via SSO
 
-Nella [pagina di identificazione OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), inserisci il tuo [identificativo cliente](https://docs.ovh.com/it/customer/creare-account-ovhcloud/#qual-e-il-mio-identificativo-cliente) seguito da **/idp** senza password e clicca sul pulsante `Login`{.action}.
+Nella [pagina di identificazione OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), inserisci il tuo [identificativo cliente](/pages/account/customer/ovhcloud-account-creation#qual-e-il-mio-identificativo-cliente) seguito da **/idp** senza password e clicca sul pulsante `Login`{.action}.
 
 ![Connessione alla federazione OVHcloud](images/ovhcloud_federation_login_1.png){.thumbnail}
 
@@ -227,12 +224,12 @@ Adesso sei connesso con lo stesso identificativo cliente, ma tramite l'utente Ac
 
 ## Per saperne di più
 
-[Crea un account OVHcloud](https://docs.ovh.com/it/customer/creare-account-ovhcloud/)
+[Crea un account OVHcloud](/pages/account/customer/ovhcloud-account-creation)
 
-[Rendere sicuro il tuo account OVHcloud e gestire le tue informazioni personali](https://docs.ovh.com/it/customer/tutto_sullidentificativo_cliente_ovh/)
+[Rendere sicuro il tuo account OVHcloud e gestire le tue informazioni personali](/pages/account/customer/all_about_username)
 
-[Definizione e gestione della password del tuo account](https://docs.ovh.com/it/customer/gestire-la-password/)
+[Definizione e gestione della password del tuo account](/pages/account/customer/manage-ovh-password)
 
-[Rendere sicuro il tuo account OVHcloud con la doppia autenticazione](https://docs.ovh.com/it/customer/proteggi_il_tuo_account_con_2FA/)
+[Rendere sicuro il tuo account OVHcloud con la doppia autenticazione](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

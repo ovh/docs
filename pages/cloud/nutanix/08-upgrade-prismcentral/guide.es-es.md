@@ -1,11 +1,8 @@
 ---
 title: Mejora del cluster Nutanix (EN)
-slug: nutanix-upgrade-prismcentral
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/nutanix/nutanix-upgrade-prismcentral/'
+    canonical: '/pages/cloud/nutanix/08-upgrade-prismcentral'
 excerpt: Find out how to upgrade your Nutanix Cluster
-section: Upgrade
-order: 01
 updated: 2022-05-16
 ---
 
@@ -197,7 +194,7 @@ Click `Apply N Updates`{.action}.
 
 ## Go further
 
-[OVHcloud documentation](https://docs.ovh.com/es/nutanix/)
+[OVHcloud documentation](/products/hosted-private-cloud-nutanix-on-ovhcloud)
 
 [Nutanix official documentation](https://www.nutanix.com/){.external}
 

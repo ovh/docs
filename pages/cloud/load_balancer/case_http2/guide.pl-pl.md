@@ -1,8 +1,6 @@
 ---
 title: Konfiguracja HTTP/2 w usłudze Load Balancer
-slug: lb-http2
 excerpt: Dowiedz się, jak skonfigurować HTTP/2 w usłudze Load Balancer
-section: Use case
 updated: 2018-01-15
 ---
 

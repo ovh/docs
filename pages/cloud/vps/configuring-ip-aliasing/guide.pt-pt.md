@@ -1,8 +1,6 @@
 ---
 title: 'Configurar um endereço de IP alias'
-slug: ip-aliasing-vps
 excerpt: 'Saiba como adicionar endereços Additional IP à sua configuração VPS'
-section: 'Rede e IP'
 updated: 2022-10-06
 ---
 
@@ -294,7 +292,7 @@ Na secção "Endereços IP", verifique se o endereço Additional IP foi adiciona
 
 ### Diagnóstico
 
-Em primeiro lugar, reinicie o seu servidor através da linha de comando ou da interface de utilizador. Se ainda não consegue estabelecer uma ligação entre a rede pública e o seu endereço IP de alias e suspeitar de um problema de rede, deve reiniciar o servidor em [modo rescue](../rescue/). De seguida, pode configurar o endereço Additional IP diretamente no servidor.
+Em primeiro lugar, reinicie o seu servidor através da linha de comando ou da interface de utilizador. Se ainda não consegue estabelecer uma ligação entre a rede pública e o seu endereço IP de alias e suspeitar de um problema de rede, deve reiniciar o servidor em [modo rescue](/pages/cloud/vps/rescue). De seguida, pode configurar o endereço Additional IP diretamente no servidor.
 
 Uma vez ligado ao servidor por SSH, insira o seguinte comando:
 
@@ -306,6 +304,6 @@ Para testar a ligação, basta enviar um ping ao seu endereço Additional IP a p
  
 ## Quer saber mais?
 
-[Ativar o modo rescue num VPS](../rescue/)
+[Ativar o modo rescue num VPS](/pages/cloud/vps/rescue)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

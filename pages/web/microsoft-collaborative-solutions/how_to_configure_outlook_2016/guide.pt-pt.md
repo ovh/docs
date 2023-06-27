@@ -1,9 +1,6 @@
 ---
 title: 'Configurar uma conta Exchange no Outlook para Windows'
-slug: configuracao-outlook-2016
 excerpt: 'Saiba como configurar uma conta Exchange no Outlook para Windows'
-section: 'Configuração no computador'
-order: 01
 updated: 2021-07-05
 ---
  
@@ -31,11 +28,11 @@ As contas Exchange podem ser usadas com vários softwares de e-mail (desde que s
 - Ter o serviço [E-mail Pro](https://www.ovhcloud.com/pt/emails/){.external}.
 - Dispor do programa Microsoft Outlook 2016 ou posterior, instalado no seu computador.
 - Dispor das credenciais do endereço de e-mail que pretende configurar.
-- O campo SRV da OVHcloud deve estar corretamente configurado na zona DNS do domínio. Por favor, consulte o nosso guia [Adicionar um domínio ao serviço Exchange](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/adding-domain-exchange/).
+- O campo SRV da OVHcloud deve estar corretamente configurado na zona DNS do domínio. Por favor, consulte o nosso guia [Adicionar um domínio ao serviço Exchange](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain).
 
 > [!primary]
 >
-> Utiliza o Outlook 2016 e posterior para Mac? consulte o nosso manual [Configurar uma conta Exchange no Outlook 2016 para Mac](https://docs.ovh.com/pt/microsoft-collaborative-solutions/configuracao-outlook-2016-mac/){.external} (versão em inglês).
+> Utiliza o Outlook 2016 e posterior para Mac? consulte o nosso manual [Configurar uma conta Exchange no Outlook 2016 para Mac](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016_mac){.external} (versão em inglês).
 >
 
 ## Instruções
@@ -79,13 +76,13 @@ O seu endereço de e-mail Exchange, bem como todas as suas funções de colabora
 
 ### Recuperar um backup do seu endereço de e-mail
 
-Se tiver de efetuar uma operação suscetível de causar a perda dos dados da sua conta de e-mail, sugerimos que efetue uma cópia de segurança da conta de e-mail em questão. Para isso, consulte o manual "**Exportar do Windows**" no manual [Migrar o seu endereço de e-mail](https://docs.ovh.com/pt/emails/migrar-os-enderecos-email-manualmente/#exportar-a-partir-do-windows).
+Se tiver de efetuar uma operação suscetível de causar a perda dos dados da sua conta de e-mail, sugerimos que efetue uma cópia de segurança da conta de e-mail em questão. Para isso, consulte o manual "**Exportar do Windows**" no manual [Migrar o seu endereço de e-mail](/pages/web/emails/manual_email_migration#exportar-a-partir-do-windows).
 
 
 ## Quer saber mais?
 
-[Configurar um endereço de e-mail no Outlook 2016 para Windows](https://docs.ovh.com/pt/emails/configuracao-outlook-2016/){.external}
+[Configurar um endereço de e-mail no Outlook 2016 para Windows](/pages/web/emails/how_to_configure_outlook_2016){.external}
 
-[Configurar uma conta Email Pro no Outlook 2016 para Windows](https://docs.ovh.com/pt/emails-pro/configuracao-outlook-2016/){.external}
+[Configurar uma conta Email Pro no Outlook 2016 para Windows](/pages/web/emails-pro/how_to_configure_outlook_2016){.external}
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

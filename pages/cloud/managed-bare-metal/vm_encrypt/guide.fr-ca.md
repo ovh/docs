@@ -1,11 +1,8 @@
 ---
 title: Activation du chiffrement des machines virtuelles (VM Encryption)
-slug: vm-encrypt
 routes:
-    canonical: 'https://docs.ovh.com/ca/fr/private-cloud/vm-encrypt/'
+    canonical: '/pages/cloud/private-cloud/vm_encrypt'
 excerpt: Découvrez comment mettre en oeuvre le chiffrement de vos machines virtuelles
-section: Fonctionnalités VMware vSphere
-order: 07
 updated: 2020-11-18
 ---
 

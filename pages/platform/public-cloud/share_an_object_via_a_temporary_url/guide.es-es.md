@@ -1,8 +1,6 @@
 ---
 title: 'Compartir un objeto con una URL temporal'
-slug: compartir_un_objeto_con_una_direccion_temporal
 excerpt: 'Cómo compartir un objeto sin comunicar información personal'
-section: OpenStack
 updated: 2021-01-11
 ---
 
@@ -18,7 +16,7 @@ Si quiere enviar un archivo a otra persona, pero no desea facilitarle sus claves
 
 ## Requisitos
 
-- [Preparar el entorno para utilizar la API de OpenStack](https://docs.ovh.com/es/public-cloud/prepare_the_environment_for_using_the_openstack_api/){.ref}.
+- [Preparar el entorno para utilizar la API de OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api){.ref}.
 - Cargar las variables de entorno de OpenStack.
 - Tener Python instalado en su equipo.
 

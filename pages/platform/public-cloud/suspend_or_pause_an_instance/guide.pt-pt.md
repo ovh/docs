@@ -1,17 +1,12 @@
 ---
 title: Suspender ou colocar em pausa uma instância
-slug: suspender_ou_colocar_em_pausa_uma_instancia
 legacy_guide_number: g1781
-section: Gestão do projeto
-order: 3
-updated: 2021-09-20
+updated: 2023-06-20
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
-
-**Última atualização: 01/10/2021**
 
 ## Objetivo
 
@@ -25,9 +20,9 @@ updated: 2021-09-20
 
 ## Requisitos
 
-- uma [instância Public Cloud](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#3o-passo-criacao-de-uma-instancia) sobre faturação à **hora**
-- acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} o à [interface Horizon](https://docs.ovh.com/pt/public-cloud/horizon/)
-- Conhecimento da [API OpenStack](https://docs.ovh.com/pt/public-cloud/prepare_the_environment_for_using_the_openstack_api/) e das [variáveis OpenStack](https://docs.ovh.com/pt/public-cloud/set-openstack-environment-variables/)
+- uma [instância Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia) sobre faturação à **hora**
+- acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} o à [interface Horizon](/pages/platform/public-cloud/introducing_horizon)
+- Conhecimento da [API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) e das [variáveis OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## Instruções
 
@@ -45,6 +40,12 @@ A tabela abaixo permite-lhe diferenciar as opções disponíveis nas suas instâ
 |[Pausa](#pause-instance)|Armazena o estado da máquina virtual na memória RAM, uma instância suspensa torna se « gelada ».|Será sempre faturado ao mesmo preço para a sua instância.|
 
 ### Suspender (shelve) uma instância <a name="shelve-instance"></a>
+
+> [!alert]
+> Tenha em atenção que a suspensão de uma instância IOPS ou T1/T2-180 resultará na perda de dados nas discos NVMe em passthrough.
+>
+> Suspender este tipo de instância leva à sua desativação do anfitrião e, por conseguinte, dos discos em passthrough.
+>
 
 Esta opção permite libertar os recursos dedicados à sua instância de Public Cloud, mas o endereço IP fica. Os dados do seu disco local serão armazenados numa imagem instantânea criada automaticamente após a instância estar reservada. Os dados armazenados na memória e noutros locais não serão conservados.
 
@@ -70,7 +71,7 @@ Para apresentar a snapshot, aceda ao menu à esquerda e clique em `Instance Back
 
 #### Da interface Horizon
 
-Para continuar, deve [criar um acesso à interface Horizon](../horizon/) e se [ligar à interface Horizon](https://horizon.cloud.ovh.net/auth/login/).
+Para continuar, deve [criar um acesso à interface Horizon](/pages/platform/public-cloud/introducing_horizon) e se [ligar à interface Horizon](https://horizon.cloud.ovh.net/auth/login/).
 
 Se criou instâncias em regiões diferentes, certifique-se de que se encontra na região apropriada. Pode verificá-lo no canto superior esquerdo da interface Horizon.
 
@@ -92,8 +93,8 @@ Para ver o snapshot, no menu `Compute`{.action}, clique em `Images`{.action}.
 
 Antes de continuar, recomendamos que consulte os seguintes guias:
 
-- [Preparar o ambiente para utilizar a API OpenStack](https://docs.ovh.com/pt/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Carregar as variáveis de ambiente OpenStack](https://docs.ovh.com/pt/public-cloud/set-openstack-environment-variables/)
+- [Preparar o ambiente para utilizar a API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Carregar as variáveis de ambiente OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 Quando o ambiente estiver pronto, utilize o seguinte comando:
 

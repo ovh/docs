@@ -1,8 +1,6 @@
 ---
 title: Zarządzanie sposobami płatności
-slug: zarzadzanie-sposobami-platnosci
 excerpt: Dowiedz się, jak dodawać sposoby płatności do Panelu klienta OVHcloud i zarządzać nimi
-section: Płatności
 updated: 2022-05-18
 ---
 
@@ -93,7 +91,7 @@ Jeśli nie chcesz już korzystać ze swoich sposobów płatności, możesz je us
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
-Jeśli chcesz usunąć wszystkie Twoje sposoby płatności, wszystkie Twoje usługi muszą być [odnawiane ręcznie](https://docs.ovh.com/pl/billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/#odnowienie-reczne).
+Jeśli chcesz usunąć wszystkie Twoje sposoby płatności, wszystkie Twoje usługi muszą być [odnawiane ręcznie](/pages/account/billing/how_to_use_automatic_renewal#odnowienie-reczne).
 
 #### Usuwanie sposobu płatności przez API OVHcloud
 
@@ -115,7 +113,7 @@ Następnie usuń sposób płatności, używając identyfikatora uzyskanego na po
 
 > [!primary]
 >
-> Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem Pierwsze kroki z [API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/).
+> Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem Pierwsze kroki z [API OVHcloud](/pages/account/api/first-steps).
 >
 > W przypadku trudności w identyfikacji sposobów płatności przy użyciu interfejsu API OVHcloud, skorzystaj z funkcji `Zmień opis`{.action} (przycisk `...`{.action} po prawej stronie ekranu) w części [Sposoby płatności](#payment_methods) w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 >
@@ -126,7 +124,7 @@ Następnie usuń sposób płatności, używając identyfikatora uzyskanego na po
 
 *Konto prepaid* jest widoczne w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) od chwili jego utworzenia. Umożliwia zasilenie konta klienta z wyprzedzeniem i wykorzystanie tych środków do opłacania zamówień oraz faktur za odnowienie.
 
-Tworząc regularnie konto, będziesz mógł sprawdzić, czy [automatyczne odnawianie](https://docs.ovh.com/pl/billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/#odnowienie-automatyczne) usług nie zostanie przerwane z powodu braku płatności.
+Tworząc regularnie konto, będziesz mógł sprawdzić, czy [automatyczne odnawianie](/pages/account/billing/how_to_use_automatic_renewal#odnowienie-automatyczne) usług nie zostanie przerwane z powodu braku płatności.
 
 W tym celu przejdź do sekcji `Sposoby płatności` w Panelu klienta:
 

@@ -1,16 +1,12 @@
 ---
 title: 'Instalar o Veeam Backup & Replication'
-slug: veeam/veeam-backup-replication
 excerpt: 'Saiba como instalar um servidor Veeam Backup & Replication com Veeam Enterprise'
-section: Veeam
-updated: 2023-04-28
+updated: 2023-06-23
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
-
-**Última atualização: 28/04/2023**
 
 ## Sumário
 
@@ -18,19 +14,19 @@ O Veeam Backup & Replication é um programa de proteção de dados, que oferece 
 
 **Aprenda a instalar um servidor Veeam Backup & Replication e a registá-lo no nosso servidor de licenças Veeam Enterprise.**
 
-
 ## Requisitos
 
-* Dispor de um [serviço Veeam Enterprise](https://www.ovhcloud.com/pt/storage-solutions/veeam-enterprise/){.external}.
-* Dispor de máquina Windows Server 2012 ou uma versão mais recente.
+- Dispor de um [serviço Veeam Enterprise](https://www.ovhcloud.com/pt/storage-solutions/veeam-enterprise/){.external}.
+- Dispor de máquina Windows Server 2012 ou uma versão mais recente.
 
 ## Instruções
 
 ### Instalar o Veeam Backup & Replication
 
 > [!primary]
-> A versão mais recente do Veeam Backup & Replication (versão 12) não é ainda suportada pela OVHcloud, mas sê-lo-á em [breve](https://github.com/ovh/private-cloud-provider/projects/4).
-> Sugerimos que transfira a versão 11.0.1.1261 (P20230227). Encontre as versões anteriores do Veeam em [esta página](https://www.veeam.com/br/download-version.html?ad=downloads&tab=previous).
+> A última versão de Veeam Backup & Replication (versão 12) é suportada pela OVHcloud apenas com **bases de dados Microsoft SQL Server**.
+>
+> Iremos suportar o Veeam Backup & Replication v12 com PostgreSQL [em breve](https://github.com/ovh/private-cloud-provider/issues/125).
 >
 
 Descarregue o programa **Veeam Backup & Replication** a partir do [site da Veeam](https://www.veeam.com/downloads.html?ad=top-sub-menu){.external}. Se não possui contas, será necessário criar uma (esta é gratuita).
@@ -81,7 +77,7 @@ Será redirecionado para o assistente de instalação. Basta fechar a janela.
 
 ### Criar uma conta de serviço Veeam Enterprise
 
-#### Criar a conta de serviço
+#### Etapa 1 -  Criar a conta de serviço
 
 Em primeiro lugar, é necessário gerar uma palavra-passe **complexa**. Para isso, pode utilizar um gerador de palavras-passe.
 
@@ -94,10 +90,11 @@ New-LocalUser "OVHVeeamEnterprise" -Password (ConvertTo-SecureString -AsPlainTex
 ```
 
 Tenha em atenção que o nome da conta e a palavra-passe correspondem a um exemplo, pelo que devem ser substituídos:
- * Nome da conta: OVHVeeamEnterprise
- * Palavra-passe: P@ssword01
 
-#### Definir as autorizações da conta de serviço
+- Nome da conta: OVHVeeamEnterprise
+- Palavra-passe: P@ssword01
+
+#### Etapa 2 - Definir as autorizações da conta de serviço
 
 Abra a consola Veeam e conecte-se.
 
@@ -123,7 +120,7 @@ Ao voltar à janela **Security**, pode verificar se a conta aparece.
 
 ![Veeam Backup & Replication](images/veeamBandR_conf_5.png){.thumbnail}
 
-#### Autorizações de execução e de ativação
+#### Etapa 3 - Autorizações de execução e de ativação
 
 O utilizador OVHVeeamEnterprise só está acessível localmente. É necessário adicionar autorizações na interface gráfica Windows para ativar a ligação à distância.
 
@@ -156,20 +153,26 @@ Através da interface gráfica de utilizador:
 
 O seu utilizador OVHVeeamEnterprise está agora acessível local e à distância.
 
-### Registar o servidor Veeam Backup & Replication
+#### Etapa 4 - Registar o servidor Veeam Backup & Replication
 
-## Através da Área de Cliente OVHcloud
-
+##### Através da Área de Cliente OVHcloud
 
 Ligue-se ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda à secção Hosted Private Cloud {.ação} e selecione `Plataformas e serviços` {.ação}. De seguida, selecione o seu serviço **backupserverenterprise** e clique em `Ativar a licença`{.action} na secção `Atalho`.
+
+Para configurar o seu ambiente, certifique-se de que abriu as portas da OVHcloud para os seus servidores Veeam Backup e Replication:
+
+- `Porta 9392/TCP`
+- `Porta 9405/TCP`
+
+![installation Veeam](images/architecture.png){.thumbnail}
 
 ![Veeam Backup & Replication](images/veeam001.png){.thumbnail}
 
 Na nova janela, introduza as seguintes informações:
- * o endereço de IP público através do qual pode comunicar com o servidor **Veeam Backup & Replication**;
- * a porta do servidor **Veeam Backup & Replication** (normalmente, **9392/TCP**);
- * o nome de utilizador da conta criada anteriormente;
- * a palavra-passe da conta.
+
+- o endereço de IP público através do qual pode comunicar com o servidor **Veeam Backup & Replication**;
+- o nome de utilizador da conta criada anteriormente;
+- a palavra-passe da conta.
 
 Em seguida, confirme clicando em `OK`{.action}.
 
@@ -179,7 +182,7 @@ Quando a ativação estiver concluída, poderá encontrar as informações princ
 
 ![Veeam Backup & Replication](images/veeam02.png){.thumbnail}
 
-## Com a API da OVHcloud
+##### Com a API da OVHcloud
 
 Para começar, obtenha o serviceName:
 
@@ -197,10 +200,10 @@ De seguida, faça o registo:
 
 Necessitará das seguintes informações:
 
- * o endereço de IP público através do qual pode comunicar com o servidor **Veeam Backup & Replication**;
- * a porta do servidor **Veeam Backup & Replication** (normalmente, **9392/TCP**);
- * o nome de utilizador da conta criada anteriormente;
- * a palavra-passe da conta.
+- o endereço de IP público através do qual pode comunicar com o servidor **Veeam Backup & Replication**;
+- a porta do servidor **Veeam Backup & Replication** (normalmente, **9392/TCP**);
+- o nome de utilizador da conta criada anteriormente;
+- a palavra-passe da conta.
 
 Pode obter da seguinte forma o endereço de IP público utilizado pelo Veeam Enterprise para comunicar com o servidor **Veeam Backup & Replication**:
 
@@ -209,7 +212,10 @@ Pode obter da seguinte forma o endereço de IP público utilizado pelo Veeam Ent
 > @api {GET} /veeam/veeamEnterprise/{serviceName}
 >
 
-#### Verificar o registo
+> [!primary]
+> A ativação do seu servidor Veeam Backup & Replication pode levar algumas horas.
+
+#### Etapa 5 - Verificar o registo
 
 Abra a consola Veeam e conecte-se.
 
@@ -220,6 +226,11 @@ No menu, clique em `License`{.action}.
 ![Veeam Backup & Replication](images/veeamBandR_lic_1.png){.thumbnail}
 
 Verifique que a informação apresentada corresponde à sua licença da OVHcloud.
+
+Se correu tudo bem deve ver "Edition: Enterprise Plus".
+
+> [!primary]
+> Agora pode desativar o utilizador que criou para criar o registo.
 
 ![Veeam Backup & Replication](images/veeamBandR_lic_2.png){.thumbnail}
 

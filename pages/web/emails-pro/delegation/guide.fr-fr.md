@@ -1,8 +1,5 @@
 ---
 title: 'Déléguer des droits sur un compte e-mail'
-slug: emailpro-delegation
-section: 'Premiers pas'
-order: 5
 updated: 2020-10-24
 ---
 
@@ -23,4 +20,4 @@ Les services Exchange et Email Pro permettent de bénéficier d’adresses e-mai
 
 ## En pratique
 
-Suivez ici notre guide [Déléguer des droits sur un compte e-mail](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-donner-les-droits-full-access-sur-un-compte/) dans la rubrique « Solutions collaboratives Microsoft ».
+Suivez ici notre guide [Déléguer des droits sur un compte e-mail](/pages/web/microsoft-collaborative-solutions/feature_delegation) dans la rubrique « Solutions collaboratives Microsoft ».

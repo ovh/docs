@@ -1,7 +1,5 @@
 ---
 title: Bitbucket
-slug: bitbucket
-section: Source
 updated: 2021-06-21
 ---
 
@@ -12,7 +10,7 @@ updated: 2021-06-21
 
 The Bitbucket integration allows you to manage your Web PaaS environments directly from your Bitbucket repository.
 
-It is possible to integrate a Web PaaS project with either the freely available Bitbucket Cloud product, or with the self-hosted [Bitbucket Server](https://confluence.atlassian.com/bitbucketserver/). In both cases, you will need to [install the Web PaaS CLI](../../development-cli#installation) if you have not already done so to set up the integration.
+It is possible to integrate a Web PaaS project with either the freely available Bitbucket Cloud product, or with the self-hosted [Bitbucket Server](https://confluence.atlassian.com/bitbucketserver/). In both cases, you will need to [install the Web PaaS CLI](/pages/web/web-paas/development-cli#installation) if you have not already done so to set up the integration.
 
 > [!primary]  
 > If the repository you are trying to integrate with a Web PaaS project has a default branch that is not `master` (e.g. `main`), there are a few additional steps you will need to perform to setup the integration.
@@ -94,7 +92,7 @@ Where
 
 ## Validate the integration
 
-In both cases, you can verify that your integration is functioning properly [using the CLI](../../integrations-overview#validating-integrations) command:
+In both cases, you can verify that your integration is functioning properly [using the CLI](/pages/web/web-paas/integrations-overview#validating-integrations) command:
 
 ```bash
 webpaas integration:validate

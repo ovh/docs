@@ -1,9 +1,6 @@
 ---
 title: 'Información sobre el tipo de facturación cloud'
-slug: informacion-sobre-el-tipo-de-facturacion-cloud
-section: 'Gestión del proyecto'
 excerpt: 'Cómo interpretar la facturación de las soluciones Public Cloud'
-order: 02
 updated: 2022-08-29
 ---
 
@@ -26,7 +23,7 @@ Este mecanismo es similar al de algunos operadores telefónicos que facturan a f
 ## Requisitos
 
 * Tener un proyecto de [Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud.
-* Una [instancia Public Cloud](https://docs.ovh.com/es/public-cloud/public-cloud-primeros-pasos/){.external}.
+* Una [instancia Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps){.external}.
 * Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Principio general
@@ -139,7 +136,7 @@ En las instancias horarias, es posible suspender (*shelve*) una instancia para l
 > Este proceso sólo es funcional para las instancias facturadas por hora, no detendrá la facturación de su instancia pero reducirá su coste. 
 >
 
-Para más información sobre cómo proceder, consulte esta [guía](https://docs.ovh.com/es/public-cloud/suspender_o_poner_en_pausa_una_instancia).
+Para más información sobre cómo proceder, consulte esta [guía](/pages/platform/public-cloud/suspend_or_pause_an_instance).
 
 #### Precio mensual
 

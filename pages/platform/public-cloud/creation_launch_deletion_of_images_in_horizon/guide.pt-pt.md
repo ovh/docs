@@ -1,9 +1,7 @@
 ---
 title: 'Criação, dar inicio e eliminar imagens no Horizon'
 excerpt: 'Criação, dar inicio e eliminar imagens no Horizon'
-slug: criacao_dar_inicio_e_eliminar_imagens_no_horizon
 legacy_guide_number: g1784
-section: Gestão a partir do Horizon
 updated: 2021-12-30
 ---
 
@@ -23,7 +21,7 @@ Esta operação permite-lhe, por exemplo, importar as suas imagens das antigas m
 
 ## Requisitos
 
-- [Criar um acesso ao Horizon](https://docs.ovh.com/pt/public-cloud/horizon/)
+- [Criar um acesso ao Horizon](/pages/platform/public-cloud/introducing_horizon)
 - Aceder ao menu Imagens da interface OpenStack Horizon
 
 ![public-cloud](images/horizon_menu.png){.thumbnail}

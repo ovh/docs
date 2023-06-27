@@ -1,10 +1,7 @@
 ---
 title: 'Utilizzare il plugin OVHcloud Network'
-slug: plugin-ovh-network
 excerpt: 'Scopri come utilizzare il plugin OVHcloud Network con la soluzione Private Cloud'
 legacy_guide_number: '7766560'
-section: 'Funzionalità OVHcloud'
-order: 03
 updated: 2020-07-01
 ---
 

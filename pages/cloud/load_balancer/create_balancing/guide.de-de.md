@@ -1,8 +1,6 @@
 ---
 title: Lastverteilungstyp
-slug: lastverteilungstyp-lb
 excerpt: Diese Anleitung beschreibt die verschiedenen Lastverteilungsmethoden des OVH Loadbalancers
-section: Konfiguration
 updated: 2018-01-17
 ---
 
@@ -26,7 +24,7 @@ Der neue OVH Loadbalancer bietet Ihnen mehrere Lastverteilungstypen für Ihre Di
 
 Lastverteilung (engl. „Load Balancing“) wird in Serverfarmen verwendet. Diese Einstellung bestimmt, wie Anfragen zwischen den verschiedenen Servern einer Farm aufgeteilt werden.
 
-Weitere Informationen zu den Grundbestandteilen des OVH Loadbalancers finden Sie in der [Einführung zum OVH Loadbalancer](https://docs.ovh.com/de/load-balancer/einfuehrung-lb/){.external}.
+Weitere Informationen zu den Grundbestandteilen des OVH Loadbalancers finden Sie in der [Einführung zum OVH Loadbalancer](/pages/cloud/load_balancer/use_presentation){.external}.
 
 |Algorithmus|Funktion|
 |---|---|

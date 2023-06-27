@@ -1,8 +1,5 @@
 ---
 title: Lexique Public Cloud
-slug: introduction-aux-instances-et-autres-notions-cloud
-section: Informations générales
-order: 02
 updated: 2021-12-10
 ---
 
@@ -92,8 +89,8 @@ Une application *Cloud Native* est une application entièrement automatisée dan
 
 ## Allez plus loin
 
-[Créer une première instance Public Cloud et s'y connecter](../premiers-pas-instance-public-cloud/)
+[Créer une première instance Public Cloud et s'y connecter](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[FAQ Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/public-cloud-faq/)
+[FAQ Public Cloud](/pages/platform/public-cloud/faq_pci)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

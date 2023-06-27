@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Operacje możliwe do wykonania z plikiem .htaccess"
 excerpt: "Poznaj przykłady operacji, które można wykonać przy użyciu pliku .htaccess"
-slug: hosting_www_htaccess_-_inne_operacje
-section: 'Przekierowania i uprawnienia dostępu'
-order: 04
 updated: 2023-05-23
 ---
 

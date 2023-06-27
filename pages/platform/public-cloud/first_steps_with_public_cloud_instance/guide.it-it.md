@@ -1,9 +1,6 @@
 ---
 title: Gestire le istanze Public Cloud
-slug: come_utilizzare_la_tua_istanza_public_cloud
 excerpt: Come gestire le istanze Public Cloud dallo Spazio Cliente OVHcloud
-section: 'Per iniziare'
-order: 05
 updated: 2023-01-04
 ---
 
@@ -22,7 +19,7 @@ Le istanze Public Cloud possono essere gestite direttamente dallo [Spazio Client
 ## Prerequisiti
 
 - Un [progetto Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
-- Un'[istanza Public Cloud](../primi-passi-public-cloud/) nel tuo progetto
+- Un'[istanza Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps) nel tuo progetto
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
@@ -59,30 +56,30 @@ Queste azioni sono disponibili anche sulla pagina di gestione delle istanze se c
 
 Clicca su `Modifica`{.action}.
 
-Visualizzi una nuova pagina con una versione modificata delle opzioni [di creazione dell'istanza](../primi-passi-public-cloud/), in cui puoi modificare questi elementi:
+Visualizzi una nuova pagina con una versione modificata delle opzioni [di creazione dell'istanza](/pages/platform/public-cloud/public-cloud-first-steps), in cui puoi modificare questi elementi:
 
 - **Modifica il nome**: per facilitare l'identificazione, assegna un nome all'istanza.
 - **Modifica l'immagine**: è possibile scegliere un altro sistema operativo per l'istanza (ricordati che la reinstallazione di un'istanza comporta la cancellazione di tutti i dati).
-- **Modifica il modello**: è possibile modificare il modello di istanza Per maggiori informazioni sulle opzioni, consulta [questa guida](../primi-passi-public-cloud/#step-3-crea-unistanza).
-- **Modifica il periodo di fatturazione**: è possibile modificare il periodo di fatturazione dell'istanza da una fatturazione oraria a mensile. Per maggiori informazioni, consulta [questa guida](../cambiare-tipo-fatturazione-public-cloud/).
+- **Modifica il modello**: è possibile modificare il modello di istanza Per maggiori informazioni sulle opzioni, consulta [questa guida](/pages/platform/public-cloud/public-cloud-first-steps#step-3-crea-unistanza).
+- **Modifica il periodo di fatturazione**: è possibile modificare il periodo di fatturazione dell'istanza da una fatturazione oraria a mensile. Per maggiori informazioni, consulta [questa guida](/pages/platform/public-cloud/changing_hourly_monthly_billing).
 
 #### Crea un backup di un'istanza
 
 Clicca su `Crea un backup`{.action}.
 
-Per maggiori informazioni, consulta la guida [Salva un'istanza](../effettuare-snapshot-di-un-istanza/). 
+Per maggiori informazioni, consulta la guida [Salva un'istanza](/pages/platform/public-cloud/save_an_instance). 
 
 #### Crea un backup automatico di un'istanza
 
 Clicca su `Crea un backup automatizzato`{.action}.
 
-Per maggiori informazioni, consulta la guida [Salva un'istanza](../effettuare-snapshot-di-un-istanza/#creare-un-backup-automatizzato-di-unistanza).
+Per maggiori informazioni, consulta la guida [Salva un'istanza](/pages/platform/public-cloud/save_an_instance#creare-un-backup-automatizzato-di-unistanza).
 
 #### Sospendi un'istanza
 
 Clicca su `Arrestare`{.action}.
 
-L'azione sospenderà l'istanza. Per maggiori informazioni, consulta la nostra guida [Sospendi o metti in pausa un’istanza](../sospendi_o_metti_in_pausa_unistanza/#nello-spazio-cliente-ovhcloud).
+L'azione sospenderà l'istanza. Per maggiori informazioni, consulta la nostra guida [Sospendi o metti in pausa un’istanza](/pages/platform/public-cloud/suspend_or_pause_an_instance#nello-spazio-cliente-ovhcloud).
 
 Clicca su `Avvia`{.action} per riattivare l'istanza.
 
@@ -90,7 +87,7 @@ Clicca su `Avvia`{.action} per riattivare l'istanza.
 
 Clicca su `Riavvia in modalità Rescue`{.action}.
 
-Questa operazione attiverà la modalità Rescue dell'istanza. Per maggiori informazioni, consulta la guida [Riavvia la tua istanza in Rescue mode](../riavvia_la_tua_istanza_in_modalita_di_ripristino_rescue_mode/).
+Questa operazione attiverà la modalità Rescue dell'istanza. Per maggiori informazioni, consulta la guida [Riavvia la tua istanza in Rescue mode](/pages/platform/public-cloud/put_an_instance_in_rescue_mode).
 
 #### Riavvia l’istanza
 
@@ -107,7 +104,7 @@ Conferma la richiesta di riavvio nella nuova finestra.
 
 Clicca su `Sospendere`{.action}.
 
-Questa azione posizionerà l'istanza nello stato "*shelved*", visualizzato come `Suspended`. Per maggiori informazioni sui diversi stati di sospensione dell'istanza, consulta la guida [Sospendi o metti in pausa un’istanza](../sospendi_o_metti_in_pausa_unistanza/#sospendere-shelve-unistanza).
+Questa azione posizionerà l'istanza nello stato "*shelved*", visualizzato come `Suspended`. Per maggiori informazioni sui diversi stati di sospensione dell'istanza, consulta la guida [Sospendi o metti in pausa un’istanza](/pages/platform/public-cloud/suspend_or_pause_an_instance#sospendere-shelve-unistanza).
 
 Clicca su `Riattiva`{.action} per ripristinare lo stato `Attivato` dell'istanza.
 
@@ -137,13 +134,13 @@ Clicca sulla scheda `Console VNC`{.action}.
 
 La console VNC fornisce un accesso diretto all'istanza. Per il corretto funzionamento dell'accesso, è necessario configurare un nome utente e una password sull'istanza. 
 
-Per maggiori informazioni, consulta la nostra guida [Creare e connettersi a un’istanza Public Cloud](../primi-passi-public-cloud/#connect-to-instance) a essa.
+Per maggiori informazioni, consulta la nostra guida [Creare e connettersi a un’istanza Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) a essa.
 
 ## Per saperne di più
 
-[Creare e connettersi a un’istanza Public Cloud](../primi-passi-public-cloud/)
+[Creare e connettersi a un’istanza Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Presentazione di Horizon](../horizon/)
+[Presentazione di Horizon](/pages/platform/public-cloud/introducing_horizon)
 
 Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 

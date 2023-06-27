@@ -1,8 +1,6 @@
 ---
 title: 'Mise à jour du format des disques vSAN'
-slug: vsan-disk-format-upgrade
 excerpt: "Découvrez comment mettre à jour le format des disques vSAN"
-section: 'Fonctionnalités VMware vSphere'
 updated: 2023-01-19
 ---
 
@@ -16,13 +14,13 @@ Le format des disques vSAN est régulièrement amélioré avec de nouvelles vers
 
 ## Prérequis
 
-- Être contact [« Administrateur »](https://docs.ovh.com/fr/customer/gestion-des-contacts/) de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
+- Être contact [« Administrateur »](/pages/account/customer/managing_contacts) de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-- Avoir déployé un [cluster vSan](https://docs.ovh.com/fr/private-cloud/vmware-vsan/)
+- Avoir déployé un [cluster vSan](/pages/cloud/private-cloud/vmware_vsan)
 
 ## En pratique
 
-Connectez-vous à votre interface vSphere à l'aide de ce [guide](https://docs.ovh.com/fr/private-cloud/connexion-interface-vsphere/).
+Connectez-vous à votre interface vSphere à l'aide de ce [guide](/pages/cloud/private-cloud/vsphere_interface_connexion).
 
 Au travers de l'interface vSphere, cliquez à gauche sur votre `Cluster`{.action} puis positionnez-vous à droite sur l'onglet `Configurer`{.action}. Choisissez `Services`{.action} dans la rubrique **vSAN** et cliquez sur `PRÉVERIFIER LA MISE A NIVEAU`{.action}.
 

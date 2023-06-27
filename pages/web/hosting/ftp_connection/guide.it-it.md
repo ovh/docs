@@ -1,9 +1,6 @@
 ---
 title: "Accedi allo spazio di storage FTP del tuo hosting Web"
-slug: accedere-spazio-storage-ftp-hosting-web
 excerpt: "Questa guida ti mostra come connettersi allo spazio di storage FTP del tuo hosting Web OVHcloud"
-section: FTP e SSH
-order: 02
 updated: 2023-06-01
 ---
 

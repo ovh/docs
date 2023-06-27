@@ -1,10 +1,7 @@
 ---
 title: 'Die Verwaltung Ihrer E-Mail-Accounts einer anderen Person übertragen'
 legacy_guide_number: 1933
-slug: delegation-emails
 excerpt: Erfahren Sie hier, wie Sie die Verwaltung der E-Mail-Accounts Ihres MX Plan Angebots delegieren
-section: E-Mail Account Funktionen
-order: 05
 updated: 2021-10-08
 ---
 
@@ -84,6 +81,6 @@ Sie können mehrere Kundenkennung angeben, um einen E-Mail-Account zu verwalten.
 
 ## Weiterführende Informationen
 
-[Erste Schritte mit MX Plan](https://docs.ovh.com/de/emails/allgemeines-zu-shared-e-mails/)
+[Erste Schritte mit MX Plan](/pages/web/emails/email_generalities)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

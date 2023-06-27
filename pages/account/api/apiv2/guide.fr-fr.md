@@ -1,8 +1,6 @@
 ---
 title: "API v2 OVHcloud - Principes de fonctionnement"
-slug: api-v2
 excerpt: "Découvrez les nouveaux principes d'exposition et de consommation liés à l'API v2 OVHcloud"
-section: APIv6 OVHcloud
 updated: 2023-04-17
 ---
 
@@ -117,7 +115,7 @@ Dans certains cas, un évènement peut aussi contenir un lien vers la ressource 
 
 > [!primary]
 >
-> Les exemples d'évènement et de tâche présentés ci-dessus peuvent varier selon la section d'API. Veuillez vous référer à la [console](https://docs.ovh.com/fr/api/api-console-exploration/) pour visualiser la définition exacte relative à chaque section.
+> Les exemples d'évènement et de tâche présentés ci-dessus peuvent varier selon la section d'API. Veuillez vous référer à la [console](/pages/account/api/console-preview) pour visualiser la définition exacte relative à chaque section.
 >
 
 ### Pagination
@@ -164,7 +162,7 @@ Plusieurs bibliothèques sont disponibles pour utiliser les API OVHcloud :
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Exploration des API OVHcloud](https://docs.ovh.com/fr/api/api-console-exploration/)
+[Exploration des API OVHcloud](/pages/account/api/console-preview)
 
 [Using Terraform with OVHcloud](/pages/account/api/terraform-at-ovhcloud) (guide en anglais)
 

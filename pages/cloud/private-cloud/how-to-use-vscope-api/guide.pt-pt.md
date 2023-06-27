@@ -1,9 +1,6 @@
 ---
 title: 'Como utilizar a API de vScope'
-slug: vscopeapi
 excerpt: 'A API vScope permite-lhe utilizar os dados de monitorização nas suas aplicações'
-section: 'Serviços e opções OVHcloud'
-order: 1
 updated: 2020-06-29
 ---
 

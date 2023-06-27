@@ -1,10 +1,7 @@
 ---
 title: Adding an IP block
-slug: add-ip-block
 excerpt: Find out how to order an IP block for a Hosted Private Cloud project
 legacy_guide_number: '7766457'
-section: OVHcloud Features
-order: 01
 updated: 2022-04-06
 ---
 
@@ -47,7 +44,7 @@ You will need to fill in several fields in order to create your IP block.
 
 > [!primary]
 >
-> Please feel free to refer to our guide on the [OVHcloud Network plugin](../plugin-ovh-network/){.external-link} to find out which IPs are reserved for your block, as well as how they are used.
+> Please feel free to refer to our guide on the [OVHcloud Network plugin](/pages/cloud/private-cloud/plugin_ovh_network){.external-link} to find out which IPs are reserved for your block, as well as how they are used.
 >
 
 - The country an IP block is hosted in is important in some cases, for your services’ SEO ranking (a website based in France will have a higher SEO ranking in France if the IP address is French, too).

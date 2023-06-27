@@ -1,9 +1,6 @@
 ---
 title: "Gestion des contacts d'un nom de domaine"
-slug: api-contact
 excerpt: "Utilisez l'API publique OVHcloud pour gérer les contacts de vos noms de domaines"
-section: "API domaines"
-order: 05
 updated: 2022-05-05
 ---
 
@@ -13,20 +10,20 @@ updated: 2022-05-05
 
 > [!primary]
 >
-> Pour suivre ce guide, vous devez déjà vous connecter à l'API OVHcloud. Vous trouverez plus de détails sur la page d'[introduction à l'API](../api).
+> Pour suivre ce guide, vous devez déjà vous connecter à l'API OVHcloud. Vous trouverez plus de détails sur la page d'[introduction à l'API](/pages/web/domains/api_domain_intro).
 
 <!-- Begin TOC -->
 
 ## Sommaire
 
-- [Introduction](../api)
-- [Commander un nom de domaine](../api-order)
-- [Gestion des tâches](../api-tasks)
+- [Introduction](/pages/web/domains/api_domain_intro)
+- [Commander un nom de domaine](/pages/web/domains/api_domain_order)
+- [Gestion des tâches](/pages/web/domains/api_domain_tasks)
 - **Gestion des contacts d'un nom de domaine**
-- [Gestion des règles d'éligibilité](../api-rules)
-- [Configurer l'affichage de ses données dans le Whois](../api-whois)
-- [Configurer les DNS de son nom de domaine](../api-dns)
-- [Transférer un nom de domaine](../api-transfer)
+- [Gestion des règles d'éligibilité](/pages/web/domains/api_domain_rules)
+- [Configurer l'affichage de ses données dans le Whois](/pages/web/domains/api_domain_whois)
+- [Configurer les DNS de son nom de domaine](/pages/web/domains/api_domain_dns)
+- [Transférer un nom de domaine](/pages/web/domains/api_domain_transfer)
 <!-- End TOC -->
 
 <!-- Rappel à mettre au début de chaque page CA/US/AU/ASIA/SG (API CA) -->
@@ -45,7 +42,7 @@ Pour la majorité des extensions, il y a 3 contacts différents configurables ch
 
 - **Administrateur** : contact qui gère le domaine dans sa globalité (gestion du contact propriétaire, contact technique). Il est le principal interlocuteur du registrar.
 - **Technique** : contact qui gère la partie technique du domaine (gestion de la zone notamment).
-- **Propriétaire** : personne physique ou morale détentrice du nom de domaine. Ce contact est contraint par des [règles d'éligibilité](../api-rules). Il est celui qui est légalement responsable du domaine.
+- **Propriétaire** : personne physique ou morale détentrice du nom de domaine. Ce contact est contraint par des [règles d'éligibilité](/pages/web/domains/api_domain_rules). Il est celui qui est légalement responsable du domaine.
 
 Par exemple, John contacte une agence web afin de créer son site web vitrine pour sa petite entreprise. Dans ce cas-là, l'agence web organisera les contacts de cette manière :
 
@@ -117,7 +114,7 @@ Vous pouvez récupérer et modifier les informations d'un Nic via ces APIs.
 ### Changement de nichandle sur le service domaine
 
 Dans cette section, nous allons voir comment changer le Nic (admin, tech et facturation) sur un nom de domaine.
-Cela fonctionne de la même manière pour tous les services OVHcloud. Plus de détails concernant le workflow, ainsi que la façon de le faire via l'espace client OVHcloud peuvent être trouvés [sur cette page](../../customer/gestion-des-contacts/).
+Cela fonctionne de la même manière pour tous les services OVHcloud. Plus de détails concernant le workflow, ainsi que la façon de le faire via l'espace client OVHcloud peuvent être trouvés [sur cette page](/pages/account/customer/managing_contacts).
 
 Avec l'API suivante, nous allons initier une "tâche" qui permettra à l'ancien et au nouveau Nic d'accepter ou de refuser le changement.
 
@@ -173,7 +170,7 @@ Les APIs suivantes vous permettent de gérer vos contacts.
 
 > [!primary]
 >
-> Le payload de modification d'un contact (PUT) doit toujours respecter les [règles d'éligibilité](../api-rules).
+> Le payload de modification d'un contact (PUT) doit toujours respecter les [règles d'éligibilité](/pages/web/domains/api_domain_rules).
 
 > [!primary]
 >
@@ -193,7 +190,7 @@ La situation la plus simple est celle des extensions régies par l'ICANN. Cette 
 
 Ces champs sont en conséquence en lecture seule si le contact est attaché à au moins un nom de domaine. Le changement de propriétaire est gratuit sur ce type d'extensions.
 
-Pour le reste des extensions, l'API des [règles d'éligibilité](../api-rules) vous permet de connaître le statut de chaque champ. Pour des raisons d'homogénéité, nous considérons un changement d'adresse e-mail comme un changement de propriétaire.
+Pour le reste des extensions, l'API des [règles d'éligibilité](/pages/web/domains/api_domain_rules) vous permet de connaître le statut de chaque champ. Pour des raisons d'homogénéité, nous considérons un changement d'adresse e-mail comme un changement de propriétaire.
 
 > [!primary]
 >
@@ -220,7 +217,7 @@ Ce processus se matérialise par deux étapes principales.
 
 #### Commande du changement de propriétaire
 
-Les étapes suivantes sont décrites plus en détails dans la documentation portant sur la [commande de nom de domaine](../api-order).
+Les étapes suivantes sont décrites plus en détails dans la documentation portant sur la [commande de nom de domaine](/pages/web/domains/api_domain_order).
 
 ##### Étape 1 : Récupération des informations du changement de propriétaire
 
@@ -389,7 +386,7 @@ Celle-ci peut alors être retrouvée via l'API suivante :
 >
 > @api {POST} /domain/{serviceName}/task
 
-Plus de détails sur la gestion des tâches peuvent être trouvés [sur cette page](../api-tasks).
+Plus de détails sur la gestion des tâches peuvent être trouvés [sur cette page](/pages/web/domains/api_domain_tasks).
 
 La tâche de `DomainTrade` se charge d'envoyer un e-mail à l'ancien et au nouveau propriétaire pour valider la suite de la procédure.
 Ces e-mails contiennent un lien de validation (sécurisé via un token privé).

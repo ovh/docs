@@ -1,9 +1,6 @@
 ---
 title: "Configurar a reverse DNS de uma instância Public Cloud"
 excerpt: Saiba como implementar a resolução reverse DNS
-slug: configurar_a_reverse_dns_de_uma_instancia
-section: Gestão a partir da Área de Cliente OVHcloud
-order: 7
 updated: 2021-11-12
 ---
 
@@ -45,11 +42,11 @@ Também pode editar a reverse diretamente através do ícone da coluna **Reverse
 
 > [!primary]
 >
-Se a alteração não funcionar como previsto, verifique se o campo `A` está corretamente configurado na zona DNS do seu domínio. Atenção, a modificação da [zona DNS](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/) pode demorar até 24 horas se apenas alterou recentemente o campo `A`.
+Se a alteração não funcionar como previsto, verifique se o campo `A` está corretamente configurado na zona DNS do seu domínio. Atenção, a modificação da [zona DNS](/pages/web/domains/dns_zone_edit) pode demorar até 24 horas se apenas alterou recentemente o campo `A`.
 >
 
 ## Quer saber mais? <a name="gofurther"></a>
 
-[Criar uma primeira instância Public Cloud e ligar-se a ela](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/)
+[Criar uma primeira instância Public Cloud e ligar-se a ela](/pages/platform/public-cloud/public-cloud-first-steps)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

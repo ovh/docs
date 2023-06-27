@@ -1,8 +1,5 @@
 ---
 title: 'Konfiguration von E-Mail Pro auf macOS Mail'
-slug: email-pro-auf-macos-konfigurieren
-section: 'Konfiguration des E-Mail-Clients'
-order: 4
 updated: 2022-06-13
 ---
 
@@ -60,7 +57,7 @@ OVHcloud bietet auch eine Webanwendung, mit der Sie über einen Webbrowser auf I
 
 ### Backup Ihrer E-Mail-Adresse abrufen
 
-Wenn Sie eine Änderung vornehmen müssen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Lesen Sie hierzu den Abschnitt “**Exportieren**“ im Abschnitt “**Mail auf Mac OS**“ unserer Anleitung [E-Mail-Adresse manuell migrieren](https://docs.ovh.com/de/emails/email-adressen-manuell-migrieren/#exportieren).
+Wenn Sie eine Änderung vornehmen müssen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Lesen Sie hierzu den Abschnitt “**Exportieren**“ im Abschnitt “**Mail auf Mac OS**“ unserer Anleitung [E-Mail-Adresse manuell migrieren](/pages/web/emails/manual_email_migration#exportieren).
 
 ### Bestehende Einstellungen ändern
 

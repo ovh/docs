@@ -1,9 +1,6 @@
 ---
 title: "Enterprise File Storage - Gestão a partir da Área de Cliente OVHcloud"
 excerpt: Saiba como gerir o serviço Enterprise File Storage a partir da Área de Cliente OVHcloud
-slug: netapp/control-panel
-section: Enterprise File Storage
-order: 020
 updated: 2022-04-14
 ---
 
@@ -15,7 +12,7 @@ updated: 2022-04-14
 
 ## Objetivo
 
-Os serviços Enterprise File Storage podem ser geridos [através das API OVHcloud](https://docs.ovh.com/pt/storage/file-storage/netapp/quick-start/) ou a partir da Área de Cliente OVHcloud.
+Os serviços Enterprise File Storage podem ser geridos [através das API OVHcloud](/pages/cloud/storage/file_storage/netapp_quick_start) ou a partir da Área de Cliente OVHcloud.
 
 **Saiba como gerir os volumes e as snapshots de Enterprise File Storage na sua Área de Cliente.**
 
@@ -33,7 +30,7 @@ Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=got
 O separador `Informações gerais`{.action} apresenta informações técnicas sobre o seu serviço, informações gerais sobre a subscrição e um atalho para [criar um volume](#create_volume).
 
 > [!primary]
-> Consulte a página [Conceitos](https://docs.ovh.com/pt/storage/file-storage/netapp/concepts/) para obter informações detalhadas sobre as propriedades técnicas da solução Enterprise File Storage.
+> Consulte a página [Conceitos](/pages/cloud/storage/file_storage/netapp_concepts) para obter informações detalhadas sobre as propriedades técnicas da solução Enterprise File Storage.
 >
 
 ### Gestão dos volumes <a name="manage_volume"></a>
@@ -145,13 +142,13 @@ Se não está familiarizado com a utilização da solução Enterprise File Stor
 
 ## Quer saber mais? <a name="gofurther"></a>
 
-[Enterprise File Storage - API Quickstart](https://docs.ovh.com/pt/storage/file-storage/netapp/quick-start/)
+[Enterprise File Storage - API Quickstart](/pages/cloud/storage/file_storage/netapp_quick_start)
 
-[Enterprise File Storage - Gestão de volumes](https://docs.ovh.com/pt/storage/file-storage/netapp/volumes/)
+[Enterprise File Storage - Gestão de volumes](/pages/cloud/storage/file_storage/netapp_volumes)
 
-[Enterprise File Storage - Gestão dos ACL de volume](https://docs.ovh.com/pt/storage/file-storage/netapp/volume-acl/)
+[Enterprise File Storage - Gestão dos ACL de volume](/pages/cloud/storage/file_storage/netapp_volume_acl)
 
-[Enterprise File Storage - Gestão das snapshots de volumes](https://docs.ovh.com/pt/storage/file-storage/netapp/volume-snapshots/)
+[Enterprise File Storage - Gestão das snapshots de volumes](/pages/cloud/storage/file_storage/netapp_volume_snapshots)
 
 Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 

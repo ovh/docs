@@ -1,9 +1,6 @@
 ---
 title: Jak zrezygnować z usług OVHcloud
 excerpt: Dowiedz się, jak przerwać subskrypcję OVHcloud
-slug: how-to-cancel-your-services
-section: Zamówienia, faktury i usługi
-order: 03
 updated: 2022-03-22
 ---
 
@@ -46,7 +43,7 @@ Oznacza to, że przed rozwiązaniem umowy musisz być **pewny**:
 >
 > Rozwiązanie umowy może być stosowane tylko wówczas, gdy spełnione są następujące warunki:
 >
-> * jesteś "kontaktem administracyjnym" usługi (więcej informacji znajdziesz w [tym przewodniku](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/#definicja));
+> * jesteś "kontaktem administracyjnym" usługi (więcej informacji znajdziesz w [tym przewodniku](/pages/account/customer/managing_contacts#definicja));
 > * usługa nie jest odnawiana ręcznie;
 > * usługa nie zostaje zawieszona, w szczególności z powodu nieuregulowania faktury.
 >
@@ -104,7 +101,7 @@ Podaj przyczynę rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
 
 #### Managed Bare Metal <a name="managedbaremetal"></a>
 
-Aby zrezygnować z usługi [Managed bare metal](https://www.ovhcloud.com/pl/managed-bare-metal/), zapoznaj się z instrukcjami zawartymi w tym [przewodniku](https://docs.ovh.com/pl/managed-bare-metal/jak-zrezygnowac-z-managed-bare-metal/).
+Aby zrezygnować z usługi [Managed bare metal](https://www.ovhcloud.com/pl/managed-bare-metal/), zapoznaj się z instrukcjami zawartymi w tym [przewodniku](/pages/cloud/managed-bare-metal/how-to-cancel).
 
 #### Serwer NAS-HA <a name="nas"></a>
 
@@ -134,7 +131,7 @@ Podaj przyczynę rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
 
 #### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
 
-Aby zrezygnować z usługi [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](https://docs.ovh.com/pl/private-cloud/jak-zrezygnowac-z-private-cloud/).
+Aby zrezygnować z usługi [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/cloud/private-cloud/comment_resilier_le_private_cloud).
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
@@ -150,9 +147,9 @@ Każda usługa [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) może z
 
 ![public cloud instance deletion](images/pci-deletion.png){.thumbnail}
 
-Public Cloud OVHcloud opiera się na zasadzie *Pay as you go* (więcej szczegółów na naszej stronie [informacyjnej o sposobie rozliczania usługi Public Cloud](https://docs.ovh.com/pl/public-cloud/analizowanie_platnosci_i_zarzadzanie_nimi/)). Płacisz pod koniec miesiąca tylko za czas rzeczywistego wykorzystania zasobów.
+Public Cloud OVHcloud opiera się na zasadzie *Pay as you go* (więcej szczegółów na naszej stronie [informacyjnej o sposobie rozliczania usługi Public Cloud](/pages/platform/public-cloud/analyze_billing)). Płacisz pod koniec miesiąca tylko za czas rzeczywistego wykorzystania zasobów.
 
-Możesz również [sprawdzić aktualne](https://docs.ovh.com/pl/public-cloud/analizowanie_platnosci_i_zarzadzanie_nimi/#sprawdzic-obecne-zuzycie) zużycie zasobów w Panelu klienta OVHcloud i otrzymywać powiadomienie e-mailem, jeśli prognoza zużycia zasobów przekroczy określony próg.
+Możesz również [sprawdzić aktualne](/pages/platform/public-cloud/analyze_billing#sprawdzic-obecne-zuzycie) zużycie zasobów w Panelu klienta OVHcloud i otrzymywać powiadomienie e-mailem, jeśli prognoza zużycia zasobów przekroczy określony próg.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -201,7 +198,7 @@ Podaj przyczynę rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
 
 Oferta MX Plan nie jest objęta abonamentem okresowym. Nie może ona zatem zostać rozwiązana, ale jeśli tak jest Twoje życzenie, możesz usunąć swoją ofertę.
 
-Aby usunąć ofertę [MX Plan](https://docs.ovh.com/pl/emails/), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
+Aby usunąć ofertę [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
 
 Następnie kliknij przycisk `...`{.action} po prawej stronie usługi, którą chcesz zrezygnować, a następnie `Usuń natychmiast MX Plan`{.action}.
 
@@ -216,23 +213,23 @@ Otrzymasz e-mail z opisem procedury zamknięcia usługi MX Plan.
 
 #### E-mail Pro <a name="emailpro"></a>
 
-Aby zrezygnować z usługi [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](https://docs.ovh.com/pl/emails-pro/zarzadzanie-platnosciami-emailpro/#usuwanie-kont).
+Aby zrezygnować z usługi [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/emails-pro/manage_billing_emailpro#usuwanie-kont).
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Aby zrezygnować z usługi [Hosted Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-fakturowanie-exchange/#usuwanie-kont).
+Aby zrezygnować z usługi [Hosted Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#usuwanie-kont).
 
 #### Private Exchange <a name="private"></a>
 
-Aby zrezygnować z usługi [Private Exchange](https://www.ovhcloud.com/pl/emails/private-exchange/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-fakturowanie-exchange/#usuwanie-kont).
+Aby zrezygnować z usługi [Private Exchange](https://www.ovhcloud.com/pl/emails/private-exchange/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#usuwanie-kont).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 
-Aby zrezygnować z usługi [Office 365](https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/) csp 11, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zamowienie_grupy_licencji_office_365_ovh/#zarzadzaj-subskrypcjami).
+Aby zrezygnować z usługi [Office 365](https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/) csp 11, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/microsoft-collaborative-solutions/office_csp1#zarzadzaj-subskrypcjami).
 
 #### Office 365 csp 2 <a name="office-csp2"></a>
 
-Aby zrezygnować z usługi [Office 365 csp](https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/) 22, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-licencje-office-365-reseller-csp2/#zarzadzanie-subskrypcjami).
+Aby zrezygnować z usługi [Office 365 csp](https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/) 22, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/microsoft-collaborative-solutions/office_csp2#zarzadzanie-subskrypcjami).
 
 #### Sharepoint <a name="sharepoint"></a>
 
@@ -275,6 +272,6 @@ Na koniec kliknij `Potwierdź anulowanie`{.action}.
 
 ## Sprawdź również <a name="gofurther"></a>
 
-[Zarządzanie odnawianiem usług](https://docs.ovh.com/pl/billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/)
+[Zarządzanie odnawianiem usług](/pages/account/billing/how_to_use_automatic_renewal)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

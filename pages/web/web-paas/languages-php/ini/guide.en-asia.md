@@ -1,7 +1,5 @@
 ---
 title: PHP.ini settings
-slug: ini
-section: Php
 updated: 2022-06-02
 ---
 

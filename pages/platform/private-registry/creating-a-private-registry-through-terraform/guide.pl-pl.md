@@ -1,15 +1,12 @@
 ---
 title: Creating a private registry (Harbor) through Terraform
-slug: creating-a-private-registry-through-terraform
 excerpt: 'Creates an OVHcloud Managed Private Registry (Harbor) through Terraform'
-section: 'Getting started'
-order: 02
 kb: Public Cloud
 category_l1: Containers & Orchestration
 category_l2: Managed Private Registry
 category_l3: Getting started
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-registry/creating-a-private-registry-through-terraform/'
+    canonical: '/pages/platform/private-registry/creating-a-private-registry-through-terraform'
 updated: 2023-03-14
 ---
 
@@ -50,7 +47,7 @@ If you are interested in leveraging your knowledge about Terraform CLI, a [Cheat
 
 ## Requirements
 
-- A [Public Cloud project](https://docs.ovh.com/pl/public-cloud/create_a_public_cloud_project/) in your OVHcloud account
+- A [Public Cloud project](/pages/platform/public-cloud/create_a_public_cloud_project) in your OVHcloud account
 - Installing [Terraform CLI](https://www.terraform.io/downloads.html){.external}
 
 ## Before you begin
@@ -86,7 +83,7 @@ Why?
 
 Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs.
 
-In order to retrieve this necessary information, please follow the [First steps with the OVHcloud APIs](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/) tutorial.
+In order to retrieve this necessary information, please follow the [First steps with the OVHcloud APIs](/pages/account/api/first-steps) tutorial.
 
 When you have successfully generated your OVH tokens, please keep them. You'll have to define them in the coming minutes ;-).
 

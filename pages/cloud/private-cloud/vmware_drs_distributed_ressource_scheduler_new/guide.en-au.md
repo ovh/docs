@@ -1,9 +1,6 @@
 ---
 title: VMware DRS (Distributed Resource Scheduler)
-slug: vmware-drs-distributed-ressource-scheduler
 excerpt: Find out how to manage load balancing with DRS
-section: VMware vSphere features
-order: 03
 updated: 2020-07-07
 ---
 
@@ -105,7 +102,7 @@ In the `Configure`{.action} tab you can find the management of `VM/Host Rules`.
 - **Separate Virtual Machines**: Separate VMs on different hosts within a single cluster
 - **Virtual Machines to Hosts**: VMs that are members of the VM group of the specified cluster must run on the specified host group. It is necessary to create VM and host groups in the `VM/Host Groups` menu.
 
-The fourth rule, **Virtual Machines to Virtual Machines** is explained in our guide on [VMware HA](../vmware-ha-high-availability/).
+The fourth rule, **Virtual Machines to Virtual Machines** is explained in our guide on [VMware HA](/pages/cloud/private-cloud/vmware_ha_high_availability).
 
 ![DRS rules](images/drs07.png){.thumbnail}
 

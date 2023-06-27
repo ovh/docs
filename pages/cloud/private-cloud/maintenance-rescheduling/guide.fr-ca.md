@@ -1,8 +1,6 @@
 ---
 title: "Décaler une maintenance programmée sur votre Hosted Private Cloud"
 excerpt: "Découvrez comment décaler une maintenance programmée sur votre service Hosted Private Cloud powered by VMware"
-slug: maintenance-rescheduling
-section: Fonctionnalités OVHcloud
 updated: 2022-11-30
 ---
 
@@ -54,7 +52,7 @@ Enfin, cliquez sur le bouton `Modifier`{.action} pour valider vos modifications.
 
 ### Depuis l'API OVHcloud
 
-Connectez-vous à l'[interface d'administration de vos services par API](https://ca.api.ovh.com/). Vous pouvez vous aider de notre guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/) ».
+Connectez-vous à l'[interface d'administration de vos services par API](https://ca.api.ovh.com/). Vous pouvez vous aider de notre guide « [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps) ».
 
 Exécutez l'appel API suivant :
 

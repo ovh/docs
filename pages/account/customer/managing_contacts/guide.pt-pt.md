@@ -1,9 +1,6 @@
 ---
 title: 'Como gerir os contactos (gestores) dos serviços OVHcloud'
-slug: gestao_dos_contactos
 excerpt: 'Saiba como definir ou alterar os contactos (gestores) dos serviços OVHcloud'
-section: Introdução
-order: 6
 updated: 2021-12-13
 ---
 
@@ -121,9 +118,9 @@ Acaba de subscrever uma subscrição da OVHcloud que permite criar a sua própri
 
 Neste caso, dê ao seu fornecedor o direito de "[contacto técnico](#gestion_des_contacts)" no seu alojamento OVHcloud. Este acesso permitir-lhe-á efetuar as operações necessárias para que o seu site seja colocado online (adição de um domínio ou subdomínio no multi-site, instalação de um módulo 1 clique, modificação da palavra-passe FTP ou da base de dados, criação de um certificado SSL, etc).
 
-Se o seu domínio não estiver associado ao seu alojamento e pretender confiar as operações necessárias ao webmaster, também deverá ter o direito de "[contacto técnico](#gestion_des_contacts)" na [zona DNS](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/) do seu domínio.
+Se o seu domínio não estiver associado ao seu alojamento e pretender confiar as operações necessárias ao webmaster, também deverá ter o direito de "[contacto técnico](#gestion_des_contacts)" na [zona DNS](/pages/web/domains/dns_zone_edit) do seu domínio.
 
-O direito "[contacto técnico](#gestion_des_contacts)" não permite modificar os contactos de administrador ou faturação de um serviço. Ele não dará ao seu webmaster os acessos às suas faturas ou encomendas, à renovação dos seus serviços ou aos seus métodos de pagamento. Também não lhe permitirá efetuar a [transferência da gestão do seu nome de domínio](https://docs.ovh.com/pt/domains/transferencia_de_saida_de_um_nome_de_dominio_generico_ou_geografico/) para outro alojador ou [mudar o seu proprietário](https://docs.ovh.com/pt/domains/alteracao-titular-dominio/).
+O direito "[contacto técnico](#gestion_des_contacts)" não permite modificar os contactos de administrador ou faturação de um serviço. Ele não dará ao seu webmaster os acessos às suas faturas ou encomendas, à renovação dos seus serviços ou aos seus métodos de pagamento. Também não lhe permitirá efetuar a [transferência da gestão do seu nome de domínio](/pages/web/domains/transfer_outgoing_domain) para outro alojador ou [mudar o seu proprietário](/pages/web/domains/trade_domain).
 
 Enquanto [contacto administrador](#administrateur), poderá finalmente recuperar o "[contacto técnico](#technique)" do seu serviço a qualquer momento.
 

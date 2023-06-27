@@ -1,9 +1,6 @@
 ---
 title: AI Training - Job concept
-slug: training/jobs
 excerpt: Learn the concept behind AI Training jobs
-section: AI Training - Guides
-order: 03
 updated: 2021-05-18
 ---
 
@@ -13,17 +10,17 @@ updated: 2021-05-18
 
 A **job** in **AI Training** is the workload unit submitted to the cluster. A **job** runs as a Docker container within OVHcloud infrastructure.
 
-Each job is linked to a **Public Cloud** project and specifies an amount of resources to use to run the training task along with a Docker image either publicly available, in the **AI Training** shared registry scoped to your project or the private registry of your choosing that you added. For the latter, see the [OVHcloud documentation on how to add a private registry](https://docs.ovh.com/us/en/publiccloud/ai/training/add-private-registry).
+Each job is linked to a **Public Cloud** project and specifies an amount of resources to use to run the training task along with a Docker image either publicly available, in the **AI Training** shared registry scoped to your project or the private registry of your choosing that you added. For the latter, see the [OVHcloud documentation on how to add a private registry](/pages/platform/ai/training_guide_05_howto_add_registry).
 
 ## Considerations
 
 > [!warning]
 > * A job will run indefinitely until completion or manual interruption.
 
--   [Data](https://docs.ovh.com/us/en/publiccloud/ai/data) can be attached to a job to serve either/both as input for your training workload or output (e.g. model weights).
+-   [Data](/pages/platform/ai/gi_02_concepts_data) can be attached to a job to serve either/both as input for your training workload or output (e.g. model weights).
 -   If you do not customise you resource request, the default requested is 1 GPU. Memory is not customisable.
 -   Billing for **jobs** is minute-based and starts at job initialisation until completion. Each commenced minute is billed completely.
--   You can read further on job limitations [here](https://docs.ovh.com/us/en/publiccloud/ai/training/capabilities).
+-   You can read further on job limitations [here](/pages/platform/ai/training_guide_01_capabilities).
 
 ## Under the hood
 
@@ -38,11 +35,11 @@ During its lifetime the job will transition between the following statuses:
 > * Only jobs in states `QUEUED`, `INITIALIZING`, `PENDING` and `RUNNING` are included in the quota computation.
 
 -   `QUEUED` the job run request is about to be processed
--   `INITIALIZING` the job instance is created and the data is synchronised from the Object Storage. To know more about the data synchronisation check out the [Data How it works](https://docs.ovh.com/us/en/publiccloud/ai/data/#how-it-works) section.
+-   `INITIALIZING` the job instance is created and the data is synchronised from the Object Storage. To know more about the data synchronisation check out the [Data How it works](/pages/platform/ai/gi_02_concepts_data#how-it-works) section.
 -   `PENDING` job is being started
 -   `RUNNING` the job is running
 -   `INTERRUPTING` the job is still running but an interruption order was received and is about to be processed
--   `FINALIZING` the job instance is deleted and the data is synchronised back to the Object Storage. To know more about the data synchronisation check out the [Data How it works](https://docs.ovh.com/us/en/publiccloud/ai/data/#how-it-works) section.
+-   `FINALIZING` the job instance is deleted and the data is synchronised back to the Object Storage. To know more about the data synchronisation check out the [Data How it works](/pages/platform/ai/gi_02_concepts_data#how-it-works) section.
 -   `DONE` the job ended normally
 -   `TIMEOUT` the job is still running but is about to be interrupted because the timeout was reached
 -   `INTERRUPTED` the job is ended and was interrupted
@@ -53,8 +50,8 @@ During its lifetime the job will transition between the following statuses:
 
 ## Going further
 
--   You can check the [OVHcloud documentation on how to create a data container](https://docs.ovh.com/us/en/storage/object-storage/pcs/create-container/).
--   You can check the [OVHcloud documentation on how to submit a job](https://docs.ovh.com/us/en/publiccloud/ai/training/submit-job)
+-   You can check the [OVHcloud documentation on how to create a data container](/pages/cloud/storage/object_storage/pcs_create_container).
+-   You can check the [OVHcloud documentation on how to submit a job](/pages/platform/ai/training_guide_02_howto_submit_job)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

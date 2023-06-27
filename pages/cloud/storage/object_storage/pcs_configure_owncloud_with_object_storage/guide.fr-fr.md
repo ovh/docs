@@ -1,9 +1,6 @@
 ---
 title: Object Storage Swift - Configure ownCloud with Object Storage
 excerpt: Configure ownCloud with Object Storage
-slug: pcs/configure-owncloud-with-object-storage
-section: Spécificités de la classe de stockage OpenStack Swift
-order: 170
 updated: 2022-05-20
 ---
 **Dernière mise à jour le 20 mai 2022**
@@ -18,8 +15,8 @@ Cette solution offre plusieurs fonctionnalités, dont la synchronisation entre p
 
 ## Requirements
 
-- Le fichier OpenRC, obtenu depuis l'[espace client OVHcloud](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/) ou [Horizon](https://docs.ovh.com/fr/public-cloud/horizon/)
-- [Espace de stockage](https://docs.ovh.com/fr/storage/object-storage/pcs/create-container/) dédié à ownCloud
+- Le fichier OpenRC, obtenu depuis l'[espace client OVHcloud](/pages/platform/public-cloud/create_and_delete_a_user) ou [Horizon](/pages/platform/public-cloud/introducing_horizon)
+- [Espace de stockage](/pages/cloud/storage/object_storage/pcs_create_container) dédié à ownCloud
 
 
 ## Instructions

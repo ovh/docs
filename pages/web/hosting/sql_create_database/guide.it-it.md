@@ -1,9 +1,6 @@
 ---
 title: 'Creare e gestire un database su un hosting Web'
-slug: creare-database
 excerpt: 'Come creare un database sul tuo hosting Web OVHcloud'
-section: Database
-order: 01
 updated: 2022-02-03
 ---
 
@@ -101,7 +98,7 @@ Le credenziali di accesso sono pre-compilate, quindi basta soltanto inserire la 
 
 Per ogni database di hosting Web, gli Snapshots verranno creati ogni giorno in modo automatico (massimo 32 entità). Il che significa che puoi semplicemente ripristinare una versione precedente dal tuo Spazio Cliente OVHcloud. 
 
-Per verificare gli Snapshot disponibili e la relativa data di creazione, clicca sul simbolo situato accanto al cerchio verde nella tabella del tuo database  Inoltre, da qui è possibile scaricare i backup dei database. Per maggiori dettagli su questo argomenti, consulta la nostra guida [Recuperare il backup del database di un hosting Web](../web_hosting_come_esportare_un_database).
+Per verificare gli Snapshot disponibili e la relativa data di creazione, clicca sul simbolo situato accanto al cerchio verde nella tabella del tuo database  Inoltre, da qui è possibile scaricare i backup dei database. Per maggiori dettagli su questo argomenti, consulta la nostra guida [Recuperare il backup del database di un hosting Web](/pages/web/hosting/sql_database_export).
 
 #### Problemi frequenti
 
@@ -117,17 +114,17 @@ I database di Web Hosting hanno un limite di 30 connessioni simultanee (variabil
 
 Se il database di un Hosting Web supera lo spazio di storage consigliato, passerà automaticamente in modalità “read only” / ”select only”. L’amministratore riceverà una notifica via email.
 
-Una volta ottimizzato il database, è possibile ricalcolarne le dimensioni dallo Spazio Cliente OVHcloud per sbloccarlo di nuovo. Ti consigliamo di scaricare il database, effettuarne la revisione localmente e poi sostituirlo tramite importazione. Per maggiori informazioni, consulta [questa guida](../web_hosting_ottimizza_le_performance_del_tuo_sito/#step-7-ottimizza-il-tuo-database).
+Una volta ottimizzato il database, è possibile ricalcolarne le dimensioni dallo Spazio Cliente OVHcloud per sbloccarlo di nuovo. Ti consigliamo di scaricare il database, effettuarne la revisione localmente e poi sostituirlo tramite importazione. Per maggiori informazioni, consulta [questa guida](/pages/web/hosting/optimise_your_website_performance#step-7-ottimizza-il-tuo-database).
 
 
 ## Per saperne di più
 
-[Modificare la password del database di un hosting Web](../modificare-password-database)
+[Modificare la password del database di un hosting Web](/pages/web/hosting/sql_change_password)
 
-[Recuperare il backup del database di un hosting Web](../web_hosting_come_esportare_un_database)
+[Recuperare il backup del database di un hosting Web](/pages/web/hosting/sql_database_export)
 
-[Importare un backup nel database di un hosting Web](../web_hosting_come_importare_un_database_mysql)
+[Importare un backup nel database di un hosting Web](/pages/web/hosting/sql_importing_mysql_database)
 
-[Web Hosting: ottimizza le performance del tuo sito](../web_hosting_ottimizza_le_performance_del_tuo_sito)
+[Web Hosting: ottimizza le performance del tuo sito](/pages/web/hosting/optimise_your_website_performance)
 
 Partecipa alla nostra community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: 'OVHcloud Kunden-Account absichern und persönliche Informationen verwalten'
-slug: alles_uber_ihre_ovh_kundenkennung
 excerpt: 'Erfahren Sie hier, wie Sie die Account-Sicherheit optimieren, Ihre persönlichen Informationen verwalten und den Zugriff auf Ihren Account delegieren'
-section: 'Erste Schritte'
-order: 3
 updated: 2021-07-01
 ---
 
@@ -24,11 +21,11 @@ Das OVHcloud Kundencenter erlaubt es Ihnen auch, Ihre persönlichen Daten zu ver
 
 ## Voraussetzungen
 
-- Sie haben [Ihren OVHcloud Kunden-Account erstellt](https://docs.ovh.com/de/customer/ovhcloud-account-erstellen/)
+- Sie haben [Ihren OVHcloud Kunden-Account erstellt](/pages/account/customer/ovhcloud-account-creation)
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angemeldet.
 
 > [!primary]
-> Bei Verbindungsschwierigkeiten zu Ihrem Account lesen Sie den [entsprechenden Abschnitt in unserer Anleitung "In das OVHcloud Kundencenter einloggen"](https://docs.ovh.com/de/customer/sich-mit-ovhcloud-kundencenter-verbinden/#login-failure).
+> Bei Verbindungsschwierigkeiten zu Ihrem Account lesen Sie den [entsprechenden Abschnitt in unserer Anleitung "In das OVHcloud Kundencenter einloggen"](/pages/account/customer/ovhcloud-account-login#login-failure).
 >
 
 ## In der praktischen Anwendung
@@ -47,11 +44,11 @@ Die unten aufgeführten bewährten Verfahren sollten bei der Erstellung Ihres Ac
 
 Die Sicherheit Ihrer Dienste und Daten hängt von der Effektivität Ihres Passworts ab. Es muss komplex und einzigartig sein und sollte **regelmäßig erneuert werden**.
 
-Alle Empfehlungen zu Passwörtern finden Sie in unserer [Anleitung zur Passwortänderung](https://docs.ovh.com/de/customer/Passwort-verwalten/).
+Alle Empfehlungen zu Passwörtern finden Sie in unserer [Anleitung zur Passwortänderung](/pages/account/customer/manage-ovh-password).
 
 #### Passwort speichern
 
-Wenn Sie das noch nicht getan haben, speichern Sie Ihr Passwort in einem [Passwort-Manager](https://docs.ovh.com/de/customer/Passwort-verwalten/#einen-passwort-manager-verwenden).
+Wenn Sie das noch nicht getan haben, speichern Sie Ihr Passwort in einem [Passwort-Manager](/pages/account/customer/manage-ovh-password#einen-passwort-manager-verwenden).
 
 > [!primary]
 > **KeePass** und **Bitwarden** sind kostenlose Open-Source-Passwortmanager.
@@ -78,7 +75,7 @@ Klicken Sie dann im Rahmen `Mein Profil` auf den Button `...`{.action} und dann 
 
 Die Zwei-Faktor-Authentifizierung erhöht die Sicherheit Ihres OVHcloud Kunden-Accounts.
 
-Weitere Informationen zur Aktivierung finden Sie in unserer Anleitung "[Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/)" sichern.
+Weitere Informationen zur Aktivierung finden Sie in unserer Anleitung "[Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](/pages/account/customer/secure-ovhcloud-account-with-2fa)" sichern.
 
 > [!primary]
 > Die Aktivierung der Zwei-Faktor-Authentifizierung für Ihren OVHcloud Kunden-Account ist eine obligatorische Voraussetzung für das [Hosting von Gesundheitsdaten (HDS Zertifizierung)](https://www.ovhcloud.com/de/enterprise/certification-conformity/hds/).
@@ -155,26 +152,26 @@ So bleibt nicht nur Ihr eigener Zugang zum Account durch die Zwei-Faktor-Authent
 
 Als Inhaber des OVHcloud Kunden-Accounts verwalten Sie weiterhin die Benutzer und deren Rechte.
 
-Weitere Informationen finden Sie in der [Anleitung zur Benutzerverwaltung](https://docs.ovh.com/de/customer/benutzer-verwalten/).
+Weitere Informationen finden Sie in der [Anleitung zur Benutzerverwaltung](/pages/account/customer/ovhcloud-users-management).
 
 #### Kontakte verwalten
 
-Sie können die administrative **oder** technische Verwaltung **oder** die Rechnungsverwaltung eines oder mehrerer Dienste Ihres Accounts an eine andere Kundenkennung übertragen. Um mehr zu erfahren, lesen Sie die [Anleitung zur Verwaltung der Kontakte](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/).
+Sie können die administrative **oder** technische Verwaltung **oder** die Rechnungsverwaltung eines oder mehrerer Dienste Ihres Accounts an eine andere Kundenkennung übertragen. Um mehr zu erfahren, lesen Sie die [Anleitung zur Verwaltung der Kontakte](/pages/account/customer/managing_contacts).
 
 ### Was sollte ich bei Verdacht auf Identitätsbetrug tun?
 
-Wenn Sie per E-Mail über eine unbekannte Verbindung mit Ihrem Kundencenter informiert werden, empfehlen wir Ihnen, sofort [Ihr Passwort zu ändern](https://docs.ovh.com/de/customer/Passwort-verwalten/#passwort-andern) und Ihren Account zusätzlich [mit Zwei-Faktor-Authentifizierung zu schützen](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/).
+Wenn Sie per E-Mail über eine unbekannte Verbindung mit Ihrem Kundencenter informiert werden, empfehlen wir Ihnen, sofort [Ihr Passwort zu ändern](/pages/account/customer/manage-ovh-password#passwort-andern) und Ihren Account zusätzlich [mit Zwei-Faktor-Authentifizierung zu schützen](/pages/account/customer/secure-ovhcloud-account-with-2fa).
 
 Wenn Sie eine verdächtige Aktivität auf Ihrem Account feststellen, [kontaktieren Sie den OVHcloud Support](https://www.ovh.com/manager/dedicated/#/support/tickets/new) unter +49 681 906730, damit unsere Teams Sie bei den notwendigen Schritten unterstützen können.
 
 ## Weiterführende Informationen
 
-[Das Passwort Ihres Kunden-Accounts anlegen und verwalten](https://docs.ovh.com/de/customer/Passwort-verwalten/)
+[Das Passwort Ihres Kunden-Accounts anlegen und verwalten](/pages/account/customer/manage-ovh-password)
 
-[Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/)
+[Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
-[In das OVHcloud Kundencenter einloggen](https://docs.ovh.com/de/customer/sich-mit-ovhcloud-kundencenter-verbinden/)
+[In das OVHcloud Kundencenter einloggen](/pages/account/customer/ovhcloud-account-login)
 
-[Bei fehlschlagendem Login ins Kundencenter](https://docs.ovh.com/de/customer/sich-mit-ovhcloud-kundencenter-verbinden/#login-failure)
+[Bei fehlschlagendem Login ins Kundencenter](/pages/account/customer/ovhcloud-account-login#login-failure)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -1,12 +1,9 @@
 ---
 title: Creating a snapshot
-slug: create-a-snapshot
 routes:
-    canonical: 'https://docs.ovh.com/us/en/private-cloud/create-a-snapshot/'
+    canonical: '/pages/cloud/private-cloud/creer_un_snapshot'
 excerpt: Find out how to return to a previous status of your VM using snapshots
 legacy_guide_number: '7766547'
-section: Maintenance and monitoring
-order: 08
 updated: 2020-11-18
 ---
 
@@ -21,7 +18,7 @@ You can take a snapshot of a virtual machine. Once you have taken the snapshot, 
 ## Requirements
 
 - a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en/managed-bare-metal/)
-- a user account with access to [vSphere](../login-vsphere-interface/) (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we))
+- a user account with access to [vSphere](/pages/cloud/managed-bare-metal/vsphere-interface) (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we))
 
 ## Instructions
 

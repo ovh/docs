@@ -1,9 +1,6 @@
 ---
 title: Fonctionnement de la passerelle OVHgateway
-slug: ovh-gateway-documentation
 excerpt: Découvrez comment fonctionne la passerelle OVHgateway
-section: Réseau et sécurité
-order: 03
 updated: 2022-12-08
 ---
 
@@ -28,7 +25,7 @@ La VM est basée sur Ubuntu 20.04 LTS (« The Focal Fossa »).
 > Le fichier utilisé est téléchargé directement depuis les serveurs Ubuntu : <https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img> puis personnalisé à l'aide de cloud-init.
 
 > [!primary]
-> OVHcloud vous recommande de remplacer cette passerelle par une de votre choix. Vous pouvez-vous aider de ce guide : [Remplacement de l'OVHgateway](https://docs.ovh.com/ca/fr/nutanix/software-gateway-replacement/).
+> OVHcloud vous recommande de remplacer cette passerelle par une de votre choix. Vous pouvez-vous aider de ce guide : [Remplacement de l'OVHgateway](/pages/cloud/nutanix/30-software-gateway-replacement).
 
 La passerelle OVHgateway a un design léger, avec 2 NICs, 1 vCPU, 1 GB de mémoire et 20 GiB d'espace-disque.
 

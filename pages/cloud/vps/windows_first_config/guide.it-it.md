@@ -1,8 +1,6 @@
 ---
 title: Configura una nuova installazione di Windows Server
-slug: windows-first-config
 excerpt: Come attivare la connessione a desktop remoto, ICMP e log di avvio
-section: Per iniziare
 updated: 2023-02-15
 ---
 
@@ -29,7 +27,7 @@ L'attivazione dei log di avvio (*boot log*) Windows può essere utile per la dia
 
 ### Step 1: accesso al KVM
 
-Per accedere alla console KVM del tuo VPS, consulta la [guida KVM VPS](https://docs.ovh.com/it/vps/utilizza_il_kvm_sul_tuo_vps/).
+Per accedere alla console KVM del tuo VPS, consulta la [guida KVM VPS](/pages/cloud/vps/using_kvm_for_vps).
 
 ### Step 2: completare l'installazione di Windows
 
@@ -64,12 +62,12 @@ Puoi attivare qui le regole "ICMP" e "Remote Desktop" (desktop remoto) rispettiv
 A questo punto il tuo server dovrebbe rispondere alle richieste che utilizzano questi protocolli.
 
 > [!primary]
-> Per rendere sicuro il tuo sistema Windows con le regole del firewall, consulta la nostra guida [Configura il firewall su Windows](https://docs.ovh.com/it/vps/vps-firewall-windows/).
+> Per rendere sicuro il tuo sistema Windows con le regole del firewall, consulta la nostra guida [Configura il firewall su Windows](/pages/cloud/vps/activate-port-firewall-soft-win).
 >
 
 ### Attivazione dei log di avvio (boot log) Windows (facoltativo)
 
-Accedi al tuo server tramite una sessione "Remote Desktop" (desktop remoto) o [KVM](https://docs.ovh.com/it/vps/utilizza_il_kvm_sul_tuo_vps/). Apri il menu Start di Windows e clicca su `Esegui`{.action}.
+Accedi al tuo server tramite una sessione "Remote Desktop" (desktop remoto) o [KVM](/pages/cloud/vps/using_kvm_for_vps). Apri il menu Start di Windows e clicca su `Esegui`{.action}.
 
 ![Bootlog](images/windowsboot1.png){.thumbnail}
 
@@ -83,7 +81,7 @@ Nella nuova finestra, spunta la casella accanto a `Boot log`. Clicca su `OK`{.ac
 
 Al prossimo avvio del tuo server, i log saranno registrati in un file .txt. La via del file è `C:\Windows\ntbtlog.txt`.
 
-Per accedere al contenuto di questo file in modalità Rescue, segui le indicazioni descritte nella [guida sulla modalità Rescue del VPS](https://docs.ovh.com/it/vps/rescue/).
+Per accedere al contenuto di questo file in modalità Rescue, segui le indicazioni descritte nella [guida sulla modalità Rescue del VPS](/pages/cloud/vps/rescue).
 
 ## Per saperne di più
 

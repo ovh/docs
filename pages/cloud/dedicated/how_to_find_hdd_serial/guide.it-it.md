@@ -1,8 +1,6 @@
 ---
 title: 'Recuperare il numero di serie di un hard disk'
-slug: recuperare-numero-di-serie-disco
 excerpt: 'Come conoscere il numero di serie di un disco per effettuarne la sostituzione'
-section: 'RAID e dischi'
 updated: 2018-08-21
 ---
 
@@ -26,7 +24,7 @@ Per ridurre al minimo il rischio di errore durante la sostituzione di un hard di
 
 > [!primary]
 >
-> Per i dischi NVMe è necessario attivare sul server la modalità [Rescue64-pro](https://docs.ovh.com/it/dedicated/rescue_mode/){.external} e utilizzare il tool preinstallato **nvme-cli**.
+> Per i dischi NVMe è necessario attivare sul server la modalità [Rescue64-pro](/pages/cloud/dedicated/rescue_mode){.external} e utilizzare il tool preinstallato **nvme-cli**.
 > 
 
 ### Recupera il numero di serie di un disco con RAID software
@@ -78,7 +76,7 @@ La periferica viene rilevata dal sistema operativo e mostrata in questo modo: `/
 
 ### Recupera il numero di serie di un disco con RAID hardware
 
-Per maggiori informazioni relativamente ai comandi da utilizzare e a come eseguire test sugli hard disk, consulta [questa guida](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} (in inglese).
+Per maggiori informazioni relativamente ai comandi da utilizzare e a come eseguire test sugli hard disk, consulta [questa guida](/pages/cloud/dedicated/raid_hard){.external} (in inglese).
 
 
 #### Controller MegaRaid
@@ -168,7 +166,7 @@ L’ID della periferica RAID verrà mostrato in questo modo: `/dev/sda` = 1° RA
 
 Il controller RAID LSI utilizza un modulo chiamato `sg-map`, che associa le periferiche in `/dev/sgX` (dove "X" corrisponde al numero della periferica).
 
-Per identificare quale hard disk corrisponde alle diverse periferiche _sg_, consulta [questa guida](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} (in inglese).
+Per identificare quale hard disk corrisponde alle diverse periferiche _sg_, consulta [questa guida](/pages/cloud/dedicated/raid_hard){.external} (in inglese).
 
 Una volta individuato quale dispositivo _sg_ è associato all’hard disk che intendi analizzare, utilizza il comando:
 
@@ -181,10 +179,10 @@ Il numero del dispositivo _sg_ verrà mostrato in questo modo: `/dev/sg0`, `/dev
 
 ## Per saperne di più
 
-[Sostituire un disco difettoso](https://docs.ovh.com/it/dedicated/sostituzione-disco/){.external}
+[Sostituire un disco difettoso](/pages/cloud/dedicated/disk_replacement){.external}
 
-[Configurare un RAID software](https://docs.ovh.com/it/dedicated/raid-software){.external}
+[Configurare un RAID software](/pages/cloud/dedicated/raid_soft){.external}
 
-[Configurare un RAID hardware](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} (in inglese)
+[Configurare un RAID hardware](/pages/cloud/dedicated/raid_hard){.external} (in inglese)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: Modificare le risorse di una macchina virtuale
-slug: modificare_la_configurazione_hardware_di_una_macchina_virtuale
 excerpt: Come apportare modifiche alla configurazione della tua macchina virtuale
-section: Gestione delle macchine virtuali
-order: 03
 updated: 2020-06-25
 ---
 

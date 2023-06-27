@@ -1,13 +1,10 @@
 ---
 title: "Tutorial - Użyj pliku htaccess w systemie WordPress"
-slug: use-htaccess-with-wordpress
 excerpt: "Dowiedz się, jak zabezpieczyć blog WordPress jednym lub kilkoma plikami htaccess"
-section: 'Tutoriale'
-order: 022
-updated: 2023-03-08
+updated: 2023-06-22
 ---
 
-**Ostatnia aktualizacja z dnia 08-03-2023**
+**Ostatnia aktualizacja z dnia 22-06-2023**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
@@ -29,13 +26,24 @@ Tutorial wyjaśnia, jak skonfigurować niektóre funkcjonalności hostingu za po
 ## Wymagania początkowe
 
 - Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/) i zainstalowanie modułu WordPress
-- Możliwość korzystania z klienta FTP takiego jak [FileZilla](https://filezilla-project.org/). Zapoznaj się z naszym przewodnikiem "[Użyj FileZilla](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/)".
+- Możliwość korzystania z klienta FTP takiego jak [FileZilla](https://filezilla-project.org/). Zapoznaj się z naszym przewodnikiem "[Użyj FileZilla](/pages/web/hosting/ftp_filezilla_user_guide)".
 
 Pliki **.htaccess** mogą być tworzone i modyfikowane przy pomocy edytorów tekstu, takich jak:
 
 - [Notatnik](https://support.microsoft.com/pl-pl/windows/pomoc-w-aplikacji-notatnik-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} systemu Windows;
 - [TextEdit](https://support.apple.com/pl-pl/guide/textedit/welcome/mac){.external} na macOS; 
 - [Notepad++](https://notepad-plus-plus.org/){.external}.
+
+> [!primary]
+>
+> Zaproponowane poniżej rozwiązania w zakresie bezpieczeństwa nie są wyczerpujące.
+>
+> Na przykład, jeśli używasz innego **C**ontent **M**anagement **S**ystem (**CMS**) niż WordPress, dostępne są inne rozwiązania bezpieczeństwa.
+>
+> Jeśli nie korzystasz z CMS-a, OVHcloud udostępnia również tutorial dotyczący [ochrona katalogu lub interfejsu administracyjnego Twojej strony WWW za pomocą plików .htaccess](/pages/web/hosting/htaccess_protect_directory_by_password).
+>
+> W przypadku pytań dotyczących tworzenia, użytkowania lub programowania Twojej strony WWW, skontaktuj się z naszym [społecznością użytkowników](https://community.ovh.com/en/) lub naszymi [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/). Zespoły pomocy OVHcloud nie będą w stanie udzielić Ci wsparcia w tym zakresie.
+>
 
 ## FAQ
 
@@ -108,7 +116,7 @@ Istnieje kilka sposobów definiowania i modyfikowania parametrów, które zmieni
 
 > [!warning]
 >
-> Przed przejściem przez kolejne etapy, należy przekierować protokół HTTP na HTTPS. W tym celu postępuj zgodnie z instrukcjami zawartymi w naszym przewodniku ["Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL"](https://docs.ovh.com/pl/hosting/aktywacja-https-ssl-na-stronie-WWW/#etap-1-aktywacja-certyfikatu-ssl-na-hostingu).
+> Przed przejściem przez kolejne etapy, należy przekierować protokół HTTP na HTTPS. W tym celu postępuj zgodnie z instrukcjami zawartymi w naszym przewodniku ["Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL"](/pages/web/hosting/ssl-activate-https-website#etap-1-aktywacja-certyfikatu-ssl-na-hostingu).
 
 ### Nie wyświetlaj katalogów i podkatalogów
 
@@ -143,7 +151,7 @@ Jeśli zidentyfikowałeś złośliwy adres IP, w pliku **.htaccess**wpisz poniż
 
 W tym przykładzie `xxx.xxx.xxx.xxx` oznacza adres IP, który ma zostać zablokowany.
 
-Aby uzyskać więcej informacji na ten temat, zapoznaj się z naszym przewodnikiem dotyczącym ["ograniczenia dostępu przez IP poprzez plik .htaccess"](https://docs.ovh.com/pl/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+Aby uzyskać więcej informacji na ten temat, zapoznaj się z naszym przewodnikiem dotyczącym ["ograniczenia dostępu przez IP poprzez plik .htaccess"](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
 #### Zablokuj adres IP z katalogu wp-admin (lub z innych katalogów)
 

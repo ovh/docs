@@ -1,8 +1,6 @@
 ---
 title: Managing OVHcloud orders
-slug: managing-ovh-orders
 excerpt: Find out how to manage your OVHcloud orders
-section: Billing
 updated: 2022-05-06
 ---
 
@@ -36,7 +34,7 @@ The purchase order is created when you place your order. It lists the products o
 |---|---|
 |1|Purchase order number, creation date and expiration date. If it has expired, you will have to reorder.|
 |2|Your billing details. You must be logged in to view and pay your purchase order.|
-|3|Payment methods saved to your customer account. For more information, please refer to our guide [Managing payment methods](https://docs.ovh.com/sg/en/billing/manage-payment-methods/).|
+|3|Payment methods saved to your customer account. For more information, please refer to our guide [Managing payment methods](/pages/account/billing/manage-payment-methods).|
 |4|Payment methods available. You will only be offered payment methods that are authorised in the account’s country of origin, or those linked to the account type you have registered.|
 
 You can view your purchase order at any time in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), as explained below.

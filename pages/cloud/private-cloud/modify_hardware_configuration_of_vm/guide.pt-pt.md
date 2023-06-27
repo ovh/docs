@@ -1,9 +1,6 @@
 ---
 title: Modificar os recursos de uma máquina virtual
-slug: modificar_a_configuracao_hardware_de_uma_maquina_virtual
 excerpt: Saiba como fazer evoluir a sua máquina virtual
-section: Gestão das máquinas virtuais
-order: 03
 updated: 2020-06-25
 ---
 

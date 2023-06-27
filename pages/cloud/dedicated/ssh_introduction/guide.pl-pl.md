@@ -1,8 +1,6 @@
 ---
 title: Wprowadzenie do SSH
-slug: ssh-wprowadzenie
 excerpt: "Dowiedz się, jak korzystać z połączeń SSH, aby uzyskać dostęp do serwera"
-section: Pierwsze kroki
 updated: 2022-06-08
 ---
 
@@ -39,7 +37,7 @@ Protokół komunikacji SSH (Secure Shell) jest głównym narzędziem do tworzeni
 
 Istnieje kilka metod autoryzacji połączenia z zdalnym urządzeniem przez SSH.<br>
 Poniższe instrukcje dotyczą metody uwierzytelniania za pomocą nazwy użytkownika i hasła.<br>
-Możesz również skonfigurować klucze SSH, aby aktywować bezpieczne połączenia bez hasła. Więcej informacji znajdziesz w naszym [przewodniku po kluczach SSH](https://docs.ovh.com/pl/dedicated/tworzenie-klucze-ssh-dedykowane/).
+Możesz również skonfigurować klucze SSH, aby aktywować bezpieczne połączenia bez hasła. Więcej informacji znajdziesz w naszym [przewodniku po kluczach SSH](/pages/cloud/dedicated/creating-ssh-keys-dedicated).
 
 Dane do logowania (identyfikator klienta i hasło) są wysyłane e-mailem po zainstalowaniu lub zainstalowaniu serwera z poziomu [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 Nazwa użytkownika odpowiada systemowi operacyjnemu, na przykład `ubuntu` lub `debian`.<br>
@@ -47,9 +45,9 @@ Aby się zalogować, podaj również adres IPv4 lub nazwę hosta serwera. Inform
 
 Zapoznaj się również z naszymi przewodnikami "Pierwsze kroki":
 
-- Dla [serwera dedykowanego](https://docs.ovh.com/pl/dedicated/pierwsze-kroki-z-serwerem-dedykowanym/)
-- Dla [serwera dedykowanego z gamy produktów **Eco**](https://docs.ovh.com/pl/dedicated/getting-started-dedicated-server-eco/)
-- Dla [VPS](https://docs.ovh.com/pl/vps/pierwsze-kroki-vps/)
+- Dla [serwera dedykowanego](/pages/cloud/dedicated/getting-started-with-dedicated-server)
+- Dla [serwera dedykowanego z gamy produktów **Eco**](/pages/cloud/dedicated/getting-started-with-dedicated-server-eco)
+- Dla [VPS](/pages/cloud/vps/starting_with_a_vps)
 
 ### Połączenie z dystrybucją GNU/Linux lub macOS
 
@@ -171,11 +169,11 @@ Więcej informacji znajdziesz w oficjalnej dokumentacji FAQ oraz w dokumentacji 
 
 ## Sprawdź również <a name="gofurther"></a>
 
-[Tworzenie kluczy SSH](https://docs.ovh.com/pl/dedicated/tworzenie-klucze-ssh-dedykowane/)
+[Tworzenie kluczy SSH](/pages/cloud/dedicated/creating-ssh-keys-dedicated)
 
-[Tryb Rescue dla serwera dedykowanego](https://docs.ovh.com/pl/dedicated/ovh-rescue/)
+[Tryb Rescue dla serwera dedykowanego](/pages/cloud/dedicated/rescue_mode)
 
-[VPS w trybie rescue](https://docs.ovh.com/pl/vps/rescue/)
+[VPS w trybie rescue](/pages/cloud/vps/rescue)
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
