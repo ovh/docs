@@ -1,6 +1,6 @@
 ---
 title: "Managing a legacy VPS"
-excerpt: "Find out how to manage a VPS of an old range in the OVHcloud Control Panel"
+excerpt: "Find out how to manage a VPS of a discontinued range in the OVHcloud Control Panel"
 updated: 2023-06-27
 ---
 
