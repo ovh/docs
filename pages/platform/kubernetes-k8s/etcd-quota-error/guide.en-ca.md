@@ -154,7 +154,7 @@ Then you should delete the resources in excess and fix the process responsible f
 
 ## Counting all resources
 
-If you still need to check all resources as you do not know what consumes etcd quotas, you can run this snippet. You will need the `count` plugin for `kubectl`:
+If you still need to check all resources as you do not know what consumes etcd quotas, you can run this snippet. You will need the `count` plugin for `kubectl`. See [installation](https://github.com/chenjiandongx/kubectl-count#-installation) instructions.
 ```bash
 kubectl count -A $(kubectl api-resources --verbs=list -o name | paste -s -d,)
 +-----------+--------------------------------------+--------------------------------+-------+
