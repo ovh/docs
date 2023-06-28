@@ -16,7 +16,7 @@ Tenga en cuenta que Rclone es un software de sincronización externo. Para más 
 
 ## Requisitos
 
-- Haber creado un contenedor de Object Storage desde el área de cliente o desde [Horizon](https://docs.ovh.com/es/storage/horizon_crear_un_contenedor_de_objetos/){.external}.
+- Haber creado un contenedor de Object Storage desde el área de cliente o desde [Horizon](/pages/cloud/storage/object_storage/pcs_create_container){.external}.
 - Haber creado un [usuario de OpenStack](/pages/platform/public-cloud/introducing_horizon){.external}.
 
 ## Procedimiento

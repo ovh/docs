@@ -21,7 +21,7 @@ Si quiere migrar sus direcciones de correo electrónico a una plataforma Exchang
 
 > [!primary]
 >
-> Para migrar una solución MX Plan a una plataforma Exchange, consulte nuestra guía [Migrar una dirección MX Plan a una cuenta Exchange](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/migrar-direccion-correo-en-alojamiento-correo-a-exchange/).
+> Para migrar una solución MX Plan a una plataforma Exchange, consulte nuestra guía [Migrar una dirección MX Plan a una cuenta Exchange](/pages/web/emails/migration_control_panel).
 >
 
 **Esta guía explica cómo migrar las direcciones de correo de una plataforma Exchange  a otra plataforma Exchange.**

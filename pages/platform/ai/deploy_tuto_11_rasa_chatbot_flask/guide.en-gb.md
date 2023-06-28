@@ -248,7 +248,7 @@ If you want to see how the model is created and trained with AI Notebooks, pleas
   
 If you want to train a Rasa chatbot with the tool AI Training, please refer to this tutorial.
 
-[How to train a chatbot with Docker and AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/training/train-rasa-chatbot)
+[How to train a chatbot with Docker and AI Training](/pages/platform/ai/training_tuto_07_train_rasa_chatbot)
   
 If you want to use more functionalities of Rasa, please follow this link. We use Rasa Open Source and not Rasa X.  
 

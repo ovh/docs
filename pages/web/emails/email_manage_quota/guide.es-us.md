@@ -172,7 +172,7 @@ En el siguiente menú, seleccione la solución actual de su cuenta de correo:
 > [!tabs]
 > **Emails (MXplan)**
 >>
->> Si su cuenta de correo ya tiene una capacidad máxima de 5 GB, puede optar por migrar a una solución [**Hosted Exchange** de 50 GB](https://www.ovhcloud.com/es/emails/hosted-exchange/). Para ello, puede contratar el servicio más adecuado y consultar nuestra guía [Migrar una dirección de correo MX Plan a una cuenta Exchange](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/migrar-direccion-correo-en-alojamiento-correo-a-exchange/).
+>> Si su cuenta de correo ya tiene una capacidad máxima de 5 GB, puede optar por migrar a una solución [**Hosted Exchange** de 50 GB](https://www.ovhcloud.com/es/emails/hosted-exchange/). Para ello, puede contratar el servicio más adecuado y consultar nuestra guía [Migrar una dirección de correo MX Plan a una cuenta Exchange](/pages/web/emails/migration_control_panel).
 >>
 > **Exchange**
 >>
@@ -183,11 +183,11 @@ En el siguiente menú, seleccione la solución actual de su cuenta de correo:
 
 ## Más información
 
-[Migrar una cuenta MX Plan a una cuenta Exchange](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/migrar-direccion-correo-en-alojamiento-correo-a-exchange/)
+[Migrar una cuenta MX Plan a una cuenta Exchange](/pages/web/emails/migration_control_panel)
 
 [Migrar manualmente una dirección de correo electrónico](/pages/web/emails/manual_email_migration)
 
-[Migrar sus direcciones de correo de una plataforma de correo de OVHcloud a otra](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/migration-email-platform/)
+[Migrar sus direcciones de correo de una plataforma de correo de OVHcloud a otra](/pages/web/emails/migration_platform)
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es/support-levels/).
 

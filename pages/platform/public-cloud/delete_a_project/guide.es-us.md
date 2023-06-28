@@ -57,7 +57,7 @@ Una vez introducida y confirmada su contraseña, su proyecto entrará en la fase
 
 ## Más información
 
-[Cree su primer proyecto de Public Cloud](https://docs.ovh.com/us/es/public-cloud/crear_su_primer_proyecto_de_public_cloud/)
+[Cree su primer proyecto de Public Cloud](/pages/platform/public-cloud/create_a_public_cloud_project)
 
 [Crear una primera instancia de Public Cloud y conectarse a ella](/pages/platform/public-cloud/public-cloud-first-steps)
 

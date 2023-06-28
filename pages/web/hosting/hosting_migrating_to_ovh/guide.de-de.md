@@ -180,7 +180,7 @@ Nach der Propagation der DNS-Einstellungen werden Ihre neuen E-Mails nun alle in
 
 Um den Inhalt Ihrer alten Accounts zu migrieren, haben Sie zwei Optionen.
 
-**Option 1**: Verwenden Sie unser Tool [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external}, um die Inhalte der bei Ihrem bisherigen Anbieter registrierten E-Mail-Accounts auf die bei OVHcloud erstellten Accounts zu kopieren. Weitere Informationen finden Sie in unserer Anleitung "[E-Mail-Accounts über OVH Mail Migrator migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_migration_von_e-mail-accounts_-_ovh_mail_migrator/)".
+**Option 1**: Verwenden Sie unser Tool [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external}, um die Inhalte der bei Ihrem bisherigen Anbieter registrierten E-Mail-Accounts auf die bei OVHcloud erstellten Accounts zu kopieren. Weitere Informationen finden Sie in unserer Anleitung "[E-Mail-Accounts über OVH Mail Migrator migrieren](/pages/web/emails/migration_omm)".
 
 Wir empfehlen Ihnen, als `Server type`{.action} unter `Source account`{.action} nicht **POP** zu verwenden. Dieses Protokoll löscht E-Mails auf dem Quell-Server, und sendet sie an den Ziel-Server bei OVHcloud. Sie können dann die Inhalte von beiden Accounts nicht mehr vergleichen.
 

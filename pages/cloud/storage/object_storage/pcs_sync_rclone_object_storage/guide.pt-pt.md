@@ -15,7 +15,7 @@ O rClone é um software de sincronização externa. Desta forma, os detalhes de 
 
 ## Requisitos
 
-- Ter criado o seu container *Object Storage* (na Área de Cliente ou no [Horizon - FR](https://docs.ovh.com/fr/public-cloud/creer-un-conteneur-dobjets/){.external}).
+- Ter criado o seu container *Object Storage* (na Área de Cliente ou no [Horizon - FR](/pages/cloud/storage/object_storage/pcs_create_container){.external}).
 - Ter criado um [utilizador OpenStack - FR](/pages/platform/public-cloud/create_and_delete_a_user).
 
 ## Instruções

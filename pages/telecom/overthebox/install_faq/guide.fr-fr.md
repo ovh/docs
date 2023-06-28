@@ -11,7 +11,7 @@ updated: 2021-05-17
 
 ### Où puis-trouver des documentations techniques à propos d'OverTheBox ?
 
-Vous pouvez trouver des guides sur [https://docs.ovh.com/fr/overthebox/](/products/web-cloud-internet-overthebox){.external}
+Vous pouvez trouver des guides sur [ce lien](/products/web-cloud-internet-overthebox){.external}
 
 ### Quels sont les opérateurs compatibles avec OverTheBox ?
 

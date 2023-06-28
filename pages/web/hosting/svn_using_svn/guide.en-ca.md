@@ -76,7 +76,7 @@ command="/usr/bin/svnserve --root=/homez.XXX/loginFTP/svn --tunnel --tunnel-user
 > Replace "/home.XXX/loginFTP" and "john" with your SSH credentials.
 > To find out the correct numbers to use inside "/home.XXX/loginFTP", type the command "pwd" at the command line.
 >
-> You can also find this information in our guide on [Accessing a Web Hosting plan via SSH](../web_hosting_ssh_on_web_hosting_packages/}.
+> You can also find this information in our guide on [Accessing a Web Hosting plan via SSH](/pages/web/hosting/ssh_on_webhosting).
 > 
 
 ![hosting](images/3080.png){.thumbnail}

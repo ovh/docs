@@ -206,11 +206,11 @@ Folgen Sie der passenden Dokumentation für Ihren E-Mail-Dienst:
 > [!tabs]
 > **E-Mails (MX Plan)**
 >>
->> Wenn die Kapazität Ihres E-Mail-Accounts bereits bei 5 GB beträgt, können Sie sich für eine Migration auf [**E-Mail Pro** mit 10 GB](https://www.ovhcloud.com/de/emails/email-pro/) oder [**Hosted Exchange** mit 50 GB](https://www.ovhcloud.com/de/emails/hosted-exchange/) entscheiden. Bestellen Sie hierzu das gewünschte Angebot und folgen Sie unserer Anleitung "[E-Mail-Accounts von MX Plan zu E-Mail Pro oder Exchange migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-e-mail-adresse-auf-exchange/)". 
+>> Wenn die Kapazität Ihres E-Mail-Accounts bereits bei 5 GB beträgt, können Sie sich für eine Migration auf [**E-Mail Pro** mit 10 GB](https://www.ovhcloud.com/de/emails/email-pro/) oder [**Hosted Exchange** mit 50 GB](https://www.ovhcloud.com/de/emails/hosted-exchange/) entscheiden. Bestellen Sie hierzu das gewünschte Angebot und folgen Sie unserer Anleitung "[E-Mail-Accounts von MX Plan zu E-Mail Pro oder Exchange migrieren](/pages/web/emails/migration_control_panel)". 
 >>
 > **E-Mail Pro**
 >>
->> Das Angebot E-Mail Pro verfügt über eine feste Account-Kapazität von 10 GB. Sie können auf [**Hosted Exchange** mit 50 GB](https://www.ovhcloud.com/de/emails/hosted-exchange/) wechseln. Bestellen Sie hierzu Hosted Exchange und folgen Sie unserer Anleitung "[E-Mail-Accounts von einer OVHcloud E-Mail-Plattform auf eine andere migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-email-platform/)".
+>> Das Angebot E-Mail Pro verfügt über eine feste Account-Kapazität von 10 GB. Sie können auf [**Hosted Exchange** mit 50 GB](https://www.ovhcloud.com/de/emails/hosted-exchange/) wechseln. Bestellen Sie hierzu Hosted Exchange und folgen Sie unserer Anleitung "[E-Mail-Accounts von einer OVHcloud E-Mail-Plattform auf eine andere migrieren](/pages/web/emails/migration_platform)".
 >>
 > **Exchange**
 >>
@@ -221,11 +221,11 @@ Folgen Sie der passenden Dokumentation für Ihren E-Mail-Dienst:
 
 ## Weiterführende Informationen
 
-[E-Mail-Accounts von MX Plan zu E-Mail Pro oder Exchange migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-e-mail-adresse-auf-exchange/)
+[E-Mail-Accounts von MX Plan zu E-Mail Pro oder Exchange migrieren](/pages/web/emails/migration_control_panel)
 
 [Ihre E-Mail-Account manuell migrieren](/pages/web/emails/manual_email_migration)
 
-[E-Mail-Accounts von einer OVHcloud E-Mail-Plattform auf eine andere migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-email-platform/)
+[E-Mail-Accounts von einer OVHcloud E-Mail-Plattform auf eine andere migrieren](/pages/web/emails/migration_platform)
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 

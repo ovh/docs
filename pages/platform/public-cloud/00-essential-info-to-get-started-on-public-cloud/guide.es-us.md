@@ -23,7 +23,7 @@ Esta guía explica los aspectos esenciales para una buena explotación de los pr
 Si ya está familiarizado con estos conceptos, puede seguir descubriendo el Public Cloud de OVHcloud en las siguientes guías:
 
 - [Abrir una cuenta de OVHcloud](/pages/account/customer/ovhcloud-account-creation)
-- [Cree su primer proyecto de Public Cloud](https://docs.ovh.com/us/es/public-cloud/crear_su_primer_proyecto_de_public_cloud/)
+- [Cree su primer proyecto de Public Cloud](/pages/platform/public-cloud/create_a_public_cloud_project)
 - [Conocer la interfaz de Public Cloud](/pages/platform/public-cloud/03-public-cloud-interface-walk-me)
 - [Crear la primera instancia](/pages/platform/public-cloud/public-cloud-first-steps)
 - [Gestionar los límites](/pages/platform/public-cloud/increasing_public_cloud_quota)
@@ -86,7 +86,7 @@ Existen diversas formas de gestionar los recursos de Public Cloud. Tanto si desc
 
 Para empezar, necesitará una [cuenta de cliente de OVHcloud](/pages/account/customer/ovhcloud-account-creation).
 
-A continuación, deberá [crear un proyecto de Public Cloud](https://docs.ovh.com/us/es/public-cloud/crear_su_primer_proyecto_de_public_cloud/). Un proyecto es un entorno que va a dedicar a un contexto.
+A continuación, deberá [crear un proyecto de Public Cloud](/pages/platform/public-cloud/create_a_public_cloud_project). Un proyecto es un entorno que va a dedicar a un contexto.
 
 Por ejemplo, puede separar los entornos de prueba y producción de dos proyectos.
 <br>O puede utilizar diferentes proyectos para sus distintas aplicaciones (sitio web público, tienda online, aplicación empresarial, gestión de documentos, etc.).

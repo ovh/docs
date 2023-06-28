@@ -179,6 +179,6 @@ Running  QEMU-GA            QEMU Guest Agent
 
 ## Go further
 
-[Using automated backups on a VPS](https://docs.ovh.com/us/en/using-automated-backups-on-a-vps)
+[Using automated backups on a VPS](/pages/cloud/vps/using-automated-backups-on-a-vps)
 
 Join our community of users on <https://community.ovh.com/en/>.

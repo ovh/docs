@@ -4,7 +4,7 @@ excerpt: Find out how to diagnose the most common cases of database errors
 updated: 2022-12-09
 ---
 
-**Last updated 8th October 2021**
+**Last updated 15rd February 2023**
 
 ## Objective
 
@@ -20,9 +20,9 @@ Your database usage may result in anomalies on your website or error messages in
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)
+- an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
-- an OVHcloud database service: [Web Cloud](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/)
+- an OVHcloud database service: [Start SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) or [Web Cloud Databases](https://www.ovhcloud.com/en-sg/web-cloud/databases/)
 
 ## Instructions
 
@@ -30,7 +30,7 @@ Your database usage may result in anomalies on your website or error messages in
 
 #### Check ongoing incidents
 
-First, check on [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) whether your data centre, hosting cluster or server is affected by an incident on the OVHcloud infrastructure.
+First, check on [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) whether your data centre, hosting cluster or Web Cloud Databases server is affected by an incident on the OVHcloud infrastructure.
 
 > [!primary]
 >
@@ -38,6 +38,7 @@ First, check on [https://web-cloud.status-ovhcloud.com/](https://web-cloud.statu
 >
 > - To find your Web Hosting plan's data centre and filer (file server), open `Hosting plans`{.action} and select the plan concerned. The information is available in the `General information`{.action} tab.
 > - To find the **cluster** of servers on which your hosting is located, click on the `FTP-SSH`{.action} tab. The cluster identifier is part of the name of your `FTP server`.
+> - To retrieve the name of your **Web Cloud Databases** server, click on `Databases`{.action} in the left-hand menu, then on the relevant service. You can find the information concerned under the heading `Host name` in the `SQL` part of the `General information`{.action} tab.
 >
 
 #### Verify login credentials for your database <a name="config_file"></a>
@@ -83,7 +84,7 @@ In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&fro
 
 > [!primary]
 >
-> If you are unable to restore access to your website as a result of these changes, [back up your database](/pages/web/hosting/sql_database_export) then [restore it to an earlier date](https://docs.ovh.com/sg/en/hosting/restore-import-database/#restoring-a-specific-backup) from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
+> If you are unable to restore access to your website as a result of these changes, [back up your database](/pages/web/hosting/sql_database_export) then [restore it to an earlier date](/pages/web/clouddb/restore-import-on-database-server#restoring-a-specific-backup) from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
 >
 > Contact a [specialised service provider](https://partner.ovhcloud.com/en-sg/directory/) if necessary. We will not be able to assist you with this.
 >
@@ -98,7 +99,7 @@ There are three ways you can unblock your database in this situation.
 
 #### Method 1: Upgrade your subscription
 
-If you have a **Personal** or **Professional** Web Hosting plan, we recommend that you switch to the [high-performance offer](https://www.ovhcloud.com/en-sg/web-hosting/). This subscription change will increase the size of your database which will automatically reopen it. This method is the simplest and does not require any particular technical expertise.
+If you have a **Personal** or **Professional** Web Hosting plan, we recommend that you switch to the [high-performance offer](https://www.ovh.co.uk/web-hosting/). This subscription change will increase the size of your database which will automatically reopen it. This method is the simplest and does not require any particular technical expertise.
 
 > [!warning]
 >
@@ -117,10 +118,14 @@ If you are already subscribing to a **Performance** offer, refer to [method 2](#
 
 You can also migrate your data to a new database:
 
-- Order a larger [database service](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) if necessary, then [create the new database](/pages/web/hosting/sql_create_database);
+- Order a larger [database service](https://www.ovh.co.uk/cloud/cloud-databases/) if necessary, then [create the new database](/pages/web/hosting/sql_create_database);
 - Perform an [export of your data](/pages/web/hosting/sql_database_export), then [import your data](/pages/web/hosting/sql_importing_mysql_database) in the new database;
 - Integrate the credentials of the new database into the [configuration file](#config_file) of your site.
 
+> [!primary]
+>
+> If you have a **Performance** Web Hosting plan, you can also [activate a free Web Cloud Databases service](/pages/web/clouddb/starting_with_clouddb#clouddb-server-activation-included-with-your-web-hosting-plan).
+>
 
 #### Method 3: Delete unnecessary data
 
@@ -135,13 +140,36 @@ Then update the data usage from the `Databases`{.action} tab of the relevant ser
 
 #### Method 4: Optimise your database
 
-To optimise your database, follow the instructions in our guide "[Configuring your database server](https://docs.ovh.com/sg/en/hosting/configure-optimise-database-server/#managing-your-databases)". Then update the data usage from the `Databases`{.action} tab of the relevant service. Click on the `...`{.action} button next to the database concerned, then select `Recalculate the quota`{.action}.
+To optimise your database, follow the instructions in our guide "[Configuring your database server](/pages/web/clouddb/configure-database-server#managing-your-databases)". Then update the data usage from the `Databases`{.action} tab of the relevant service. Click on the `...`{.action} button next to the database concerned, then select `Recalculate the quota`{.action}.
 
 > [!warning]
 >
 > If the advice on how to optimise your database is not sufficient to unblock the access to your website, we recommend you to contact our [community](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/). We will not be able to assist you in this regard.
 >
 
+### RAM overflows
+
+The following message in the `Databases`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) indicates that your [Web Cloud Databases](https://www.ovh.co.uk/cloud/cloud-databases/) server has consumed too much resources on the OVHcloud infrastructure:
+
+![quota_exceeding](images/quota_exceeding.png){.thumbnail}
+
+In this situation, you can increase the [amount of RAM](/pages/web/clouddb/configure-database-server#modifying-the-database-server-solution) available from the `Databases`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). In the `General information`{.action} tab, click on the `...`{.action} in the `RAM` section.
+
+> [!warning]
+>
+> To increase the amount of RAM, the database needs to be a standalone service and not one of those included with a Performance web hosting plan. If you want to increase the amount of RAM of a database included in the [Performance offers](https://www.ovhcloud.com/en-sg/web-hosting/performance-offer/){.external}, you first need to detach it.
+> 
+> To detach the database, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and select `Web Cloud`{.action}. Click `Hosting plans`{.action}, then choose the web hosting plan that has the database activated.
+>
+> In the `Configuration` box, click the `...`{.action} button to the right of the `Private database` entry, then click the `Detach`{.action} button.
+> 
+
+You can also optimise your database by following the instructions of our guide "[Configuring your database server](/pages/web/clouddb/configure-database-server#managing-your-databases)".
+
+> [!primary]
+>
+> If you experience any difficulties in decreasing the use of resources on your database server, please contact our [community of users](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/). We will not be able to assist you with this.
+>
 
 ### Database import errors
 
@@ -163,7 +191,7 @@ If necessary, contact our [user community](https://community.ovh.com/en/) or [OV
 
 > [!success]
 >
-> You cannot have a "**trigger**" in your database’s import script on OVHcloud shared hosting servers.
+> You cannot have a "**trigger**" in your database’s import script on OVHcloud shared hosting servers. In this situation, import your database to a [Web Cloud Databases server](https://www.ovh.co.uk/cloud/cloud-databases/).
 >
 
 The following query is also not allowed:
@@ -180,6 +208,22 @@ USE `Database-Name`;
 
 Replace `Database-Name` with the name of the database as displayed in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
 
+#### "MySQL server has gone away"
+
+>
+> **"404 ERROR MySQL server has gone away"**
+>
+
+This error message appears when [importing a database](/pages/web/clouddb/restore-import-on-database-server#importing-a-local-backup) on a [Web Cloud Databases server](/pages/web/clouddb/starting_with_clouddb). I most cases, it is caused by the quantity of data to be imported being too large or by non-optimised SQL queries in the import script.
+
+To resolve this issue, you can use the following methods:
+
+- Increase the [amount of RAM](/pages/web/clouddb/configure-database-server#modifying-the-database-server-solution): go to the [Web Cloud Databases server](/pages/web/clouddb/starting_with_clouddb) concerned in the `Databases` section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). Then click on the `...`{.action} button in the `RAM` section and select `Change the amount of RAM`{.action}.
+
+- Split your database in order to import it through multiple operations instead of one. (For any questions on the necessary steps, contact our [community](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/). We will not be able to assist you with this.)
+
+- [Optimise your database](/pages/web/clouddb/configure-database-server#managing-your-databases), then repeat the export/import operations.
+
 ### Unable to access phpMyAdmin
 
 #### "Access denied for user"
@@ -192,7 +236,7 @@ This error message may appear when connecting to your database by [phpMyAdmin](/
 
 ![access_denied_for_user](images/access_denied_for_user.png){.thumbnail}
 
-In this situation, [check the credentials entered](https://docs.ovh.com/sg/en/hosting/connecting-to-database-on-database-server/#instructions) and change your [database password](/pages/web/hosting/sql_change_password) if necessary.
+In this situation, [check the credentials entered](/pages/web/clouddb/connecting-to-database-on-database-server#instructions) and change your [database password](/pages/web/hosting/sql_change_password) if necessary.
 
 #### "Too many connections"
 
@@ -200,11 +244,13 @@ In this situation, [check the credentials entered](https://docs.ovh.com/sg/en/ho
 > **"mysqli_real_connect(): (HY000/1040): Too many connections"**
 >
 
-The maximum number of active connections for databases delivered with a shared hosting ([Start SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/)) is **30**.
+The maximum number of active connections for databases delivered with a shared hosting ([Start SQL](https://www.ovh.co.uk/cloud/cloud-databases/)) is **30**.
+
+This number increases to **200** for the [Web Cloud Databases service](/pages/web/clouddb/starting_with_clouddb). (This setting can be modified in the `Configuration`{.action} section of your database service.)
 
 A "Too many connections" error when [connecting to phpMyAdmin](/pages/web/hosting/sql_create_database#accessing-the-phpmyadmin-interface) appears, if this maximum number of connections is exceeded.
 
-In this situation, you will need to [optimise your databases](https://docs.ovh.com/sg/en/hosting/configure-optimise-database-server/#managing-your-databases) in order to reduce the number of active connections.
+In this situation, you will need to [optimise your databases](/pages/web/clouddb/configure-database-server#managing-your-databases) in order to reduce the number of active connections.
 
 > [!warning]
 >
@@ -217,7 +263,7 @@ In this situation, you will need to [optimise your databases](https://docs.ovh.c
 > **"mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known"**
 >
 
-This error message appears when connecting to phpMyAdmin if the server name entered is incorrect.
+This error message appears when [connecting to phpMyAdmin](/pages/web/clouddb/connecting-to-database-on-database-server) if the server name entered is incorrect.
 
 ![name_or_service_not_known](images/name_or_service_not_known.png){.thumbnail}
 
@@ -227,9 +273,12 @@ Check the server name for the relevant database service in your [OVHcloud Contro
 >
 > If the database you would like to connect to appears in the `Databases`{.action} tab of the `Hosting plans`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), the name to enter is in the `Server address` column.
 >
+> If you want to connect to a database on a [Web Cloud Databases server](/pages/web/clouddb/starting_with_clouddb), the server name can be retrieved from the tab `General information`{.action}, in the box `Login information`{.action} under `SQL`{.action} and labelled as `Host name`{.action}.
+>
 
 ## Go further <a name="gofurther"></a>
 
+[Getting started with Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb)
 
 [Resolving the most common 1-click module errors](/pages/web/hosting/diagnostic_errors_module1clic)
 

@@ -8,9 +8,9 @@ updated: 2023-05-11
 
 ## Objective
 
-Over the past few years, the field of **computer vision** has experienced a significant growth. It encompasses a wide range of methods for acquiring, processing, analyzing and understanding digital images.
+Over the past few years, the field of **computer vision** has experienced a significant growth. It encompasses a wide range of methods for acquiring, processing, analyzing and understanding digital images. 
 
-Among these methods, one is called **image segmentation**.
+Among these methods, one is called **image segmentation**. 
 
 The purpose of this tutorial is to show you how it is possible to build and train a brain tumor segmentation model with **OVHcloud AI Notebooks**. You will be able to learn the concepts of medical imaging, image segmentation, model evaluation, and much more. We will use a popular convolutional neural network named **U-Net**.
 
@@ -25,20 +25,20 @@ At the end of this tutorial, you will have learnt the principal methods to **seg
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 - An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
 - A user for AI Notebooks
 - A [Kaggle](https://www.kaggle.com/) account to download the dataset
 
 ## Instructions
 
-You can launch the notebook from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) or via the ovhai [CLI](https://docs.ovh.com/ca/en/publiccloud/ai/cli/getting-started-cli/).
+You can launch the notebook from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) or via the ovhai [CLI](/pages/platform/ai/cli_11_howto_run_notebook_cli).
 
 Direct link to the full code can be found [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-segmentation/tensorflow/brain-tumor-segmentation-unet/notebook_image_segmentation_unet.ipynb).
 
 ### Launching a Jupyter notebook with "Tensorflow" via UI (Control Panel)
 
-To launch your notebook from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), refer to the following steps.
+To launch your notebook from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), refer to the following steps.
 
 #### Code editor
 
@@ -46,7 +46,7 @@ Choose the `Jupyterlab` code editor.
 
 #### Framework
 
-In this tutorial, the `tensorflow` framework is used. If you use another environment, there may be some compatibility problems such as missing libraries.
+In this tutorial, the `tensorflow` framework is used. If you use another environment, there may be some compatibility problems such as missing libraries. 
 
 #### Resources
 
@@ -74,14 +74,14 @@ ovhai capabilities framework list -o yaml
 > If you do not specify a version, your notebook starts with the default version of `tensorflow`.
 >
 
-You will also need to choose the number of CPUs/GPUs (`<nb-cpus>` or `<nb-gpus>`) to use in your notebook.
+You will also need to choose the number of CPUs/GPUs (`<nb-cpus>` or `<nb-gpus>`) to use in your notebook. 
 
 > [!primary]
 >
 > Here we recommend using `1 GPU`.
 >
 
-To launch your notebook, run the following command:
+To launch your notebook, run the following command: 
 
 ```console
 ovhai notebook run tensorflow jupyterlab \

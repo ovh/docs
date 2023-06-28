@@ -56,6 +56,6 @@ Enter a new password and confirm it.
 
 [Introduction to the Private Cloud Control Panel](/pages/cloud/private-cloud/manager_ovh_private_cloud)
 
-[Setting and managing an account password(../../customer/manage-password/)
+[Setting and managing an account password](/pages/account/customer/manage-ovh-password)
 
 Join our community of users on <https://community.ovh.com/en/>.

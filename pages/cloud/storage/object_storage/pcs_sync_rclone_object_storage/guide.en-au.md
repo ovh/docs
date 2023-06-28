@@ -17,7 +17,7 @@ Rclone is an external synchronisation program - you can find further details for
 
 ## Requirements
 
-- You need to have created an *Object Storage* container (you can create one from the [Control Panel])(https://docs.ovh.com/au/en/storage/create_an_object_container/){.external})
+- You need to have created an *Object Storage* container (you can create one from the [Control Panel](/pages/cloud/storage/object_storage/pcs_create_container){.external})
 - You need to have created an OpenStack user account
 
 

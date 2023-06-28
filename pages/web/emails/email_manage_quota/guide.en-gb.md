@@ -203,11 +203,11 @@ Select the current solution for your email account from the menu below:
 > [!tabs]
 > **Emails (MX Plan)**
 >>
->> If your email account already has a maximum capacity of 5 GB, you can opt for a migration to a [10 GB **Email Pro** solution](https://www.ovhcloud.com/en-gb/emails/email-pro/) or a 50 GB [**Hosted Exchange** offer](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/). To do this, please order the solution that suits your needs, and follow our guide on [Migrating an MX Plan email account to Email Pro or Exchange](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/migration-email-address-to-exchange/). 
+>> If your email account already has a maximum capacity of 5 GB, you can opt for a migration to a [10 GB **Email Pro** solution](https://www.ovhcloud.com/en-gb/emails/email-pro/) or a 50 GB [**Hosted Exchange** offer](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/). To do this, please order the solution that suits your needs, and follow our guide on [Migrating an MX Plan email account to Email Pro or Exchange](/pages/web/emails/migration_control_panel). 
 >>
 > **Email Pro**
 >>
->> The Email Pro offer has a unique capacity of 10GB. You can choose to migrate to a [50 GB **Hosted Exchange** solution](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/). To do this, order Hosted Exchange and follow our guide on [Migrating your email account from one OVHcloud email platform to another](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/migration-email-platform/).
+>> The Email Pro offer has a unique capacity of 10GB. You can choose to migrate to a [50 GB **Hosted Exchange** solution](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/). To do this, order Hosted Exchange and follow our guide on [Migrating your email account from one OVHcloud email platform to another](/pages/web/emails/migration_platform).
 >>
 > **Exchange**
 >>
@@ -218,11 +218,11 @@ Select the current solution for your email account from the menu below:
 
 ## Go further
 
-[Migrating an MX Plan email account to Email Pro or Exchange](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/migration-email-address-to-exchange/)
+[Migrating an MX Plan email account to Email Pro or Exchange](/pages/web/emails/migration_control_panel)
 
 [Manually migrate your email account](/pages/web/emails/manual_email_migration)
 
-[Migrating your email account from one OVHcloud email platform to another](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/migration-email-platform/)
+[Migrating your email account from one OVHcloud email platform to another](/pages/web/emails/migration_platform)
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 

@@ -39,7 +39,7 @@ Nel client vSphere, le *VLANs* compatibili con la vRack sono disponibili nello s
 
 ![VLAN](images/vRackVsphere.png){.thumbnail}
 
-È possibile modificare le impostazioni o crearne di nuove seguendo la guida alla [creazione di VLAN](../creazione-vlan/.
+È possibile modificare le impostazioni o crearne di nuove seguendo la guida alla [creazione di VLAN](/pages/cloud/managed-bare-metal/vlan-creation).
 
 Questi *portgroup* possono essere assegnati alle interfacce di rete delle macchine virtuali.
 

@@ -22,7 +22,7 @@ Per migrare i tuoi indirizzi email presenti su una piattaforma Exchange o Email 
 
 > [!primary]
 >
-> Per migrare una soluzione MX Plan verso una piattaforma Exchange o Email Pro, consulta la guida [Migrare un indirizzo email MX Plan verso un account Email Pro o Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/migrazione-indirizzo-email-condiviso-verso-exchange/).
+> Per migrare una soluzione MX Plan verso una piattaforma Exchange o Email Pro, consulta la guida [Migrare un indirizzo email MX Plan verso un account Email Pro o Exchange](/pages/web/emails/migration_control_panel).
 >
 
 **Questa guida ti mostra come migrare gli indirizzi email da una piattaforma Exchange o Email Pro verso un'altra piattaforma Exchange o Email Pro.**

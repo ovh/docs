@@ -168,7 +168,7 @@ Select the current solution for your email account from the menu below:
 > [!tabs]
 > **Emails (MXplan)**
 >>
->> If your email account already has a maximum capacity of 5 GB, you can opt for a migration to a 50 GB [**Hosted Exchange** offer](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/). To do this, please order the solution that suits you, and follow our guide on [Migrating an MX Plan email address to an Exchange account](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/migration-email-address-to-exchange/).
+>> If your email account already has a maximum capacity of 5 GB, you can opt for a migration to a 50 GB [**Hosted Exchange** offer](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/). To do this, please order the solution that suits you, and follow our guide on [Migrating an MX Plan email address to an Exchange account](/pages/web/emails/migration_control_panel).
 >>
 > **Exchange**
 >>
@@ -179,11 +179,11 @@ Select the current solution for your email account from the menu below:
 
 ## Go further
 
-[Migrate an MX Plan email address to an Exchange account](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/migration-email-address-to-exchange/)
+[Migrate an MX Plan email address to an Exchange account](/pages/web/emails/migration_control_panel)
 
 [Manually migrate your email address](/pages/web/emails/manual_email_migration)
 
-[Migrate your email addresses from one OVHcloud email platform to another](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/migration-email-platform/)
+[Migrate your email addresses from one OVHcloud email platform to another](/pages/web/emails/migration_platform)
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
 

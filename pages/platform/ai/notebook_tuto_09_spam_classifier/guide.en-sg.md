@@ -27,7 +27,7 @@ At the end of this tutorial, you will have learnt the principal methods to build
 
 ## Instructions
 
-You can launch your notebook from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) or via the ovhai [CLI](https://docs.ovh.com/sg/en/publiccloud/ai/cli/getting-started-cli/).
+You can launch your notebook from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) or via the ovhai [CLI](/pages/platform/ai/cli_11_howto_run_notebook_cli).
 
 ### Launching a Jupyter notebook with "Miniconda" via UI
 

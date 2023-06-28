@@ -1,7 +1,5 @@
 ---
 title: Modificare la politica di accesso al vCenter
-routes:
-    canonical: 'https://docs.ovh.com/it/private-cloud/modificare-la-politica-di-accesso-al-vcenter/'
 excerpt: Come cambiare le regole di accesso al vCenter
 updated: 2020-11-18
 ---

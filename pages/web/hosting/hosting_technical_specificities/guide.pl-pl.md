@@ -45,7 +45,7 @@ W ciągu 3600 sekund (czyli 1 godzina) Twoja oferta hostingowa pozwoli Ci na wys
 |Maksymalna ilość wysyłki e-maili na godzinę i na usługę|10|100|200|2000|
 
 - Poza podejrzeniem spamu lub phishingu, wysyłka e-maili może zostać odroczona. Twoje e-maile będą przechowywane w kolejce do momentu, aż liczba e-maili wysłanych w ciągu ostatniej godziny nie przekroczy limitu.
-- W przypadku stwierdzonego nadużycia lub ryzyka Twoja usługa zostanie zawieszona i otrzymasz e-mail z powiadomieniem o zawieszeniu usługi. Co zrobić w przypadku konta zablokowanego z powodu spamu? Sprawdź [nasz przewodnik](https://docs.ovh.com/pl/microsoft-collaborative-solutions/blokada-za-spam/).
+- W przypadku stwierdzonego nadużycia lub ryzyka Twoja usługa zostanie zawieszona i otrzymasz e-mail z powiadomieniem o zawieszeniu usługi. Co zrobić w przypadku konta zablokowanego z powodu spamu? Sprawdź [nasz przewodnik](/pages/web/emails/locked_for_spam).
 
 ### Baza danych / SQL
 

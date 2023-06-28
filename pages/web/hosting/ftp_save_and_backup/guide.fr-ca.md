@@ -21,7 +21,7 @@ Votre offre d'hébergement web OVHcloud vous donne accès à un espace de stocka
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](https://www.docs.ovh.com/fr-ca/web-hosting/){.external} (ne fonctionne pas avec un [hébergement Cloud Web](https://www.docs.ovh.com/fr-ca/web-hosting/cloud-web-offer/)).
+- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} (ne fonctionne pas avec un [hébergement Cloud Web](https://www.ovhcloud.com/fr-ca/web-hosting/cloud-web-offer/)).
 - Selon la méthode utilisée, disposer d’un accès à la gestion de l’offre d’hébergement web depuis l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} ou du mot de passe de l'utilisateur FTP vous permettant d'accéder à votre espace de stockage. 
 
 ## En pratique
@@ -109,7 +109,7 @@ Dès que vous êtes prêt à initier la sauvegarde, cliquez sur le bouton `Valid
 
 > [!primary]
 >
-> La restauration automatique peut prendre de quelques minutes à quelques heures. Si elle dure **plus de 24 heures**, contactez [le support d'OVHcloud](https://www.docs.ovh.com/fr-ca/support-levels/).
+> La restauration automatique peut prendre de quelques minutes à quelques heures. Si elle dure **plus de 24 heures**, contactez [le support d'OVHcloud](https://www.ovhcloud.com/fr-ca/support-levels/).
 >
 
 ### Restaurer un fichier depuis un logiciel ou une interface <a name="viainterface"></a>
@@ -118,7 +118,7 @@ La manipulation s’effectue en plusieurs étapes. Assurez-vous d'être en posse
 
 > [!warning]
 >
-> Cette solution requiert des connaissances à propos du logiciel ou de l'interface que vous allez utiliser. Nous vous proposons quelques informations sur la manière de procéder ci-dessous. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.docs.ovh.com/fr-ca/) et/ou de vous rapprocher de l’éditeur du logiciel ou de l’interface si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance.
+> Cette solution requiert des connaissances à propos du logiciel ou de l'interface que vous allez utiliser. Nous vous proposons quelques informations sur la manière de procéder ci-dessous. Cependant, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) et/ou de vous rapprocher de l’éditeur du logiciel ou de l’interface si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance.
 >
 
 #### Étape 1 : définir le logiciel ou l'interface à utiliser

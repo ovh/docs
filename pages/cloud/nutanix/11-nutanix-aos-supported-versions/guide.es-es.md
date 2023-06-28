@@ -48,7 +48,7 @@ Qualified versions can be viewed through the OVHcloud API.
 
 We will check the versions supported through the OVHcloud API.
 
-Log in to the OVHcloud [API](https://api.ovh.com). For more details on how the OVHcloud API works, please refer to our guide on [Getting started with the OVHcloud APIs](https://docs.ovh.com/es/api/first-steps-with-ovh-api/.)
+Log in to the OVHcloud [API](https://api.ovh.com). For more details on how the OVHcloud API works, please refer to our guide on [Getting started with the OVHcloud APIs](/pages/account/api/first-steps)
 
 Use the following API call:
 

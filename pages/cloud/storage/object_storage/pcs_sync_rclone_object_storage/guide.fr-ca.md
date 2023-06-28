@@ -15,7 +15,7 @@ rClone étant un logiciel de synchronisation externe, les détails d'utilisation
 
 ## Prérequis
 
-- Avoir créé son container *Stockage d’objet* (depuis [l'espace client])(https://docs.ovh.com/fr/public-cloud/creer-un-conteneur-dobjets/){.external}.
+- Avoir créé son container *Stockage d’objet* (depuis [l'espace client](/pages/cloud/storage/object_storage/pcs_create_container){.external}.
 - Avoir créé un [utilisateur OpenStack](/pages/platform/public-cloud/create_and_delete_a_user){.external}.
 
 ## En pratique

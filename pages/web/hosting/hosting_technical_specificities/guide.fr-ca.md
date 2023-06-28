@@ -41,7 +41,7 @@ Sur une période glissante de 3600 secondes (soit 1 heure), votre offre d'héber
 |Quantité maximale d'envoi d'e-mails par heure et par service|100|200|2000|
 
 - En dehors de suspicions de spamming ou de phishing, l'expédition de vos e-mails pourra être différée. Vos e-mails seront conservés dans une file d'attente jusqu'à ce que le nombre d'e-mails envoyés au cours de l'heure écoulée soit inférieur au quota.
-- En cas d'abus ou de risque avéré, votre service sera suspendu et vous serez notifié par e-mail de la suspension de celui-ci. Que faire en cas de compte bloqué pour spam ? Consultez [notre guide](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/bloque-pour-spam/).
+- En cas d'abus ou de risque avéré, votre service sera suspendu et vous serez notifié par e-mail de la suspension de celui-ci. Que faire en cas de compte bloqué pour spam ? Consultez [notre guide](/pages/web/emails/locked_for_spam).
 
 ### Base de données / SQL
 

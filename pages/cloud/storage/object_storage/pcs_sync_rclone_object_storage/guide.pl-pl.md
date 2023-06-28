@@ -14,7 +14,7 @@ rClone to zewnętrzne oprogramowanie do synchronizacji, szczegółowe informacje
 
 ## Wymagania początkowe
 
-- Utworzony kontener *Object Storage* (z poziomu Panelu klienta lub z poziomu [Horizon](https://docs.ovh.com/pl/storage/tworzenie_kontenera_obiektow/){.external}).
+- Utworzony kontener *Object Storage* (z poziomu Panelu klienta lub z poziomu [Horizon](/pages/cloud/storage/object_storage/pcs_create_container){.external}).
 - Utworzony [użytkownik OpenStack](/pages/platform/public-cloud/create_and_delete_a_user){.external}.
 
 ## W praktyce

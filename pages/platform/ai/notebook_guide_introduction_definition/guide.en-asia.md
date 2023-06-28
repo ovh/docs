@@ -27,7 +27,7 @@ The advantage compared to doing your own setup is that everything is already ins
 
 Each notebook is linked to a **Public Cloud** project and specifies hardware resources along with a machine learning framework and an editor among those available.
 
-You can create notebooks with the OVHcloud Control Panel (see below in this tutorial) or use the [ovhai CLI](https://docs.ovh.com/asia/en/publiccloud/ai/cli/getting-started-cli/).
+You can create notebooks with the OVHcloud Control Panel (see below in this tutorial) or use the [ovhai CLI](/pages/platform/ai/cli_11_howto_run_notebook_cli).
 
 AI Notebooks also provide an easy way to access data from your Object Storage, you can read more about it [here](/pages/platform/ai/notebook_guide_data_ui).
 
@@ -54,6 +54,7 @@ Select _JupyterLab_, then click on the `Next`{.action} button.
 ![Create a Notebook 03](images/creating-a-notebook03.png){.thumbnail}
 
 > [!primary]
+>
 > Note the _Edit this step_ link on the right up corner to edit the previous step of the wizard.
 >
 

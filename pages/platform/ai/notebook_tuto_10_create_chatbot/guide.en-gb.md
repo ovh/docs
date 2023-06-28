@@ -9,7 +9,7 @@ updated: 2023-03-20
 
 ## Objective
 
-The aim of the tutorial is to understand how to create and train a chatbot model with AI Notebooks. We will create and train the chatbot with a Visual Studio Code notebook. At the end of the tutorial, we will have a model and we can speak to our chatbot. There is an another tutorial with which you can train your chatbot with the tool `AI Training`: [How to train a chatbot with AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/training/train-rasa-chatbot/).
+The aim of the tutorial is to understand how to create and train a chatbot model with AI Notebooks. We will create and train the chatbot with a Visual Studio Code notebook. At the end of the tutorial, we will have a model and we can speak to our chatbot. There is an another tutorial with which you can train your chatbot with the tool `AI Training`: [How to train a chatbot with AI Training](/pages/platform/ai/training_tuto_07_train_rasa_chatbot).
 
 We will use the famous open source framework [Rasa](https://rasa.community/) to build the chatbot.
 
@@ -36,7 +36,7 @@ Here is the reference to install the CLI: [CLI Installation](/pages/platform/ai/
 
 The token is now created. Don't forget to save the token to use it later.
 
-Now, if you already have trained some Rasa models with AI Training by following [our tutorial](https://docs.ovh.com/gb/en/publiccloud/ai/training/train-rasa-chatbot/), you already have created a container with your trained models. You can skip the next part and go directly [here](#visualstudiocode).
+Now, if you already have trained some Rasa models with AI Training by following [our tutorial](/pages/platform/ai/training_tuto_07_train_rasa_chatbot), you already have created a container with your trained models. You can skip the next part and go directly [here](#visualstudiocode).
 
 ### Understand storage concepts
 
@@ -114,7 +114,7 @@ If you want to deploy your created model with the chatbot, you can follow this t
 
 If you want to train a Rasa chatbot with the tool AI Training, please refer to this tutorial:
 
-[How to train a chatbot with docker and AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/training/train-rasa-chatbot/)
+[How to train a chatbot with docker and AI Training](/pages/platform/ai/training_tuto_07_train_rasa_chatbot)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

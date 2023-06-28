@@ -151,7 +151,7 @@ Si necesita ayuda con las opciones de configuración del sitio, le invitamos a c
 
 Para utilizar sus direcciones de correo electrónico, OVHcloud pone a su disposición el cliente de correo web (webmail) Roundcube. Puede acceder desde <https://www.ovh.es/mail/>, donde tendrá que indicar las claves de la dirección de correo electrónico creada con OVHcloud.
 
-Si desea configurar su dirección de correo electrónico en un cliente de correo o un dispositivo externo (smartphone o tablet), consulte la siguiente documentación: <../../emails/>.
+Para más información sobre el uso de Roundcube, consulte nuestra [Guía de uso de Roundcube](/pages/web/emails/email_roundcube). Si desea configurar su dirección de correo electrónico en un cliente de correo o un dispositivo externo (smartphone o tablet), consulte [nuestra documentación](/products/web-cloud-email-collaborative-solutions-mx-plan).
 
 ## Más información
 

@@ -48,7 +48,7 @@ Sprawdź bezpieczeństwo komputera Windows, Mac lub Linux:
 
 ### Etap 2: zabezpiecz swój panel klienta OVHcloud
 
-Aby zabezpieczyć Twoje konto klienta, [włącz weryfikację dwuetapową](/pages/account/customer/secure-ovhcloud-account-with-2fa) i postępuj zgodnie z instrukcjami zawartymi w tym przewodniku](../../customer/identyfikator_klienta/).
+Aby zabezpieczyć Twoje konto klienta, [włącz weryfikację dwuetapową](/pages/account/customer/secure-ovhcloud-account-with-2fa) i postępuj zgodnie z [instrukcjami zawartymi w tym przewodniku](/pages/account/customer/all_about_username).
 
 Pamiętaj, aby zaktualizować [dane przypisane do Twojego konta klienta](/pages/account/customer/all_about_username#jak-zarzadzac-danymi-osobowymi) i dodać do niego zapasowy **e-mail**.<br>
 W przypadku utraty danych do logowania i/lub niedostępności głównego adresu e-mail przypisanego do Twojego konta klienta OVHcloud, potrzebujemy wiadomości e-mail zapasowej lub aktualnych danych osobowych, które pomogą Ci w znalezieniu dostępu do Twoich rozwiązań.
@@ -87,7 +87,7 @@ Pamiętaj, aby na Twoim hostingu zainstalować najnowszą wersję [języka PHP](
 
 ### Etap 7: włącz https
 
-Uruchom szyfrowane połączenie ze stroną WWW za pomocą protokołu **HTTPS**, postępując zgodnie z instrukcjami zawartymi w tym przewodniku(../aktywacja-https-ssl-na-stronie-WWW/). Uruchomienie protokołu pozwoli Ci zaszyfrować wszystkie informacje przesyłane przez Twoją stronę WWW (w tym zapytania przesyłane przez Twoich użytkowników na formularzach).
+Uruchom szyfrowane połączenie ze stroną WWW za pomocą protokołu **HTTPS**, postępując zgodnie z [instrukcjami zawartymi w tym przewodniku](/pages/account/customer/all_about_username). Uruchomienie protokołu pozwoli Ci zaszyfrować wszystkie informacje przesyłane przez Twoją stronę WWW (w tym zapytania przesyłane przez Twoich użytkowników na formularzach).
 
 ### Etap 8: chroń swoje formularze
 

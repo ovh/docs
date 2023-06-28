@@ -19,7 +19,7 @@ You can find more information directly on their [website](http://www.rath.org/s3
 
 ## Prerequisites
 
-- [Configure user](https://docs.ovh.com/pl/public-cloud/creation-and-deletion-of-openstack-user/)
+- [Configure user](/pages/platform/public-cloud/create_and_delete_a_user)
 - [Add storage space](/pages/cloud/storage/object_storage/pcs_create_container)
 
 ## Instructions
