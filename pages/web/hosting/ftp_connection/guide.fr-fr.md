@@ -1,14 +1,14 @@
 ---
 title: 'Se connecter à l’espace de stockage FTP de son hébergement web'
 excerpt: "Découvrez comment vous connecter à l'espace de stockage FTP de votre hébergement web OVHcloud"
-updated: 2023-05-30
+updated: 2023-06-28
 ---
-
-**Dernière mise à jour le 30/05/2023**
 
 ## Objectif
 
 Les offres d'hébergement web OVHcloud donnent accès à un espace de stockage FTP permettant de mettre en ligne les fichiers de vos sites internet ou de vos applications. L'accès à cet espace est possible via un utilisateur FTP ou SSH avec les mots de passe qui leurs sont associés.
+
+<iframe width="877" height="493" src="https://www.youtube.com/embed/wwPx8ORF1kc" title="Comprendre et utiliser un client FTP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 **Découvrez comment vous connecter à l'espace de stockage FTP de votre hébergement web OVHcloud.**
 
