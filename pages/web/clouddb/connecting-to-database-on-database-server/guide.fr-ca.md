@@ -65,7 +65,7 @@ Si la connexion aboutit, la page suivante de phpMyAdmin apparaîtra.
 
 > [!warning]
 >
-> Si vous utilisez une offre "Web Cloud Databases"/"SQL Privé", n'oubliez pas d'autoriser votre IP à l'aide du guide sur la [configuration de votre serveur de base de données](https://docs.ovh.com/ca/fr/configurer-optimiser-son-serveur-de-base-de-donnees/#gerer-vos-acces).
+> Si vous utilisez une offre "Web Cloud Databases"/"SQL Privé", n'oubliez pas d'autoriser votre IP à l'aide du guide sur la [configuration de votre serveur de base de données](/pages/web/clouddb/configure-database-server).
 >
 
 Afin de vous connecter à votre base de données, assurez-vous de récupérer les informations suivantes :

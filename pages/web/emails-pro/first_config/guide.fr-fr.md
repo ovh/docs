@@ -134,16 +134,16 @@ Pour configurer votre adresse e-mail sur un logiciel de messagerie ou un apparei
 
 ## Aller plus loin
 
-[Consulter son compte depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/)
+[Consulter son compte depuis l’interface OWA](/pages/web/emails/email_owa)
 
-[Règles de boîte de réception depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/regles-boite-de-reception-owa/)
+[Règles de boîte de réception depuis l’interface OWA]( /pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
 
-[Ajouter un alias sur son compte e-mail](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-ajouter-un-alias-sur-un-e-mail-depuis-le-manager/)
+[Ajouter un alias sur son compte e-mail](/pages/web/emails/feature_redirections)
 
 [Ajouter un pied de page pour vos comptes e-mail](/pages/web/microsoft-collaborative-solutions/feature_footers)
 
 [Gérer la facturation de vos comptes E-mail Pro](/pages/web/emails-pro/manage_billing_emailpro)
 
-[Gérer la politique de sécurité d’un service e-mail](https://docs.ovh.com/fr/microsoft-collaborative-solutions/gerer-politique-de-securite-mot-de-passe/)
+[Gérer la politique de sécurité d’un service e-mail](/pages/web/emails/security-policy)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

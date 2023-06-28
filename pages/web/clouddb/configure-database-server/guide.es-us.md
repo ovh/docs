@@ -312,7 +312,7 @@ Evite usar **"HAVING"**, por ejemplo. Está consulta incrementará el número de
 
 ## Más información
 
-[Lista de direcciones IP de los clusters y alojamientos web](https://docs.ovh.com/us/es/lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web/)
+[Lista de direcciones IP de los clusters y alojamientos web](/pages/web/hosting/clusters_and_shared_hosting_IP)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
 

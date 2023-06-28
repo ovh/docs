@@ -80,7 +80,7 @@ Nella scheda `Account email`{.action} della tua piattaforma, clicca sui tre punt
 >
 > Verranno migrati solo i dati dei tuoi account email (email, contatti, calendari, regole della posta in arrivo, ecc...). Le funzionalità legate alla tua piattaforma dovranno essere ripristinate sulla nuova piattaforma:
 >
-> - [Alias](https://docs.ovh.com/it/microsoft-collaborative-solutions/email-alias/)
+> - [Alias](/pages/web/emails/feature_redirections)
 > - [Delega dei diritti](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 > - [Gruppi](/pages/web/microsoft-collaborative-solutions/feature_groups)
 > - Contatti esterni
@@ -88,9 +88,9 @@ Nella scheda `Account email`{.action} della tua piattaforma, clicca sui tre punt
 
 Migra l'account email "sorgente" verso l'account della tua nuova piattaforma con l'aiuto del nostro tool [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
 
-> Se vuoi migrare più account email, ti consigliamo di utilizzare la modalità [Project](https://docs.ovh.com/it/microsoft-collaborative-solutions/migrazione-account-email-con-ovh-mail-migrator/#project) via [OMM](https://omm.ovh.net/Project/Create), per importare una tabella in formato CSV contenente le informazioni degli account email da migrare.
+> Se vuoi migrare più account email, ti consigliamo di utilizzare la modalità [Project](/pages/web/emails/migration_omm#project) via [OMM](https://omm.ovh.net/Project/Create), per importare una tabella in formato CSV contenente le informazioni degli account email da migrare.
 
-Per maggiori informazioni su OMM, consulta la guida [Migrare account email via OVH Mail Migrator](https://docs.ovh.com/it/microsoft-collaborative-solutions/migrazione-account-email-con-ovh-mail-migrator/).
+Per maggiori informazioni su OMM, consulta la guida [Migrare account email via OVH Mail Migrator](/pages/web/emails/migration_omm).
 
 ![email-migrazione](images/migration_platform06.png){.thumbnail}
 

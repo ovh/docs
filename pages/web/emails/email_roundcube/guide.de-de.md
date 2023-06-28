@@ -36,7 +36,7 @@ Sie werden dann zum RoundCube Interface weitergeleitet.
 > 
 > Wenn Sie auf ein **O**utlook **W**eb **A**pp Interface (OWA) weitergeleitet werden, verwenden Sie die neueste Version des MX Plan Dienstes. Weitere Informationen zu Ihrem MX Plan finden Sie auf unserer Seite "[Erste Schritte mit MX Plan](/pages/web/emails/email_generalities)".
 >
-> Um sich mit dem **OWA** Interface vertraut zu machen, lesen Sie unsere [OWA Anleitung](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2016_verwendung_der_outlook_web_app/).
+> Um sich mit dem **OWA** Interface vertraut zu machen, lesen Sie unsere [OWA Anleitung](/pages/web/emails/email_owa).
 
 ### RoundCube Interface Hauptseite <a name="general-interface"></a>
 

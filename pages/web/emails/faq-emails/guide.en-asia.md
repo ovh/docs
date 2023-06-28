@@ -43,7 +43,7 @@ Please note that an OVHcloud customer ID (NIC handle) is required for both optio
 
 To limit the amount of spam emails you receive, you can set up inbox rules on your account (called "Filters" in the old MX Plan solution). Their purpose is to move emails to the spam folder ot delete them as soon as they are received. To do this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, then in the `Emails` section, select the domain concerned. Next, go to the `Emails`{.action} tab and click on the filter symbol in the "Filter" column. 
 
-If you don't see this column, spam filters can only be created by setting up inbox rules on your email account via [webmail](https://www.ovh.com/asia/mail/). Please refer to [this guide](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/creating-inbox-rules-in-owa/) for detailed instructions.
+If you don't see this column, spam filters can only be created by setting up inbox rules on your email account via [webmail](https://www.ovh.com/asia/mail/). Please refer to [this guide]( /pages/web/emails/creating-inbox-rules-in-owa-mx-plan) for detailed instructions.
 
 **Tips and tricks**: If you set up a spam filter, legitimate emails may be marked as spam. These are called "false positives". If this happens, please submit a support ticket via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external} and let us know. We can then take the necessary steps to ensure that they are no longer labelled as spam in the future.
 

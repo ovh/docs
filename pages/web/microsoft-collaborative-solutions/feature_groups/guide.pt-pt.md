@@ -82,7 +82,7 @@ Já pode testar a sua lista de difusão (mailing list) através do [webmail OVHc
 
 [Atribuir permissões a uma conta Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Guia de utilização do Outlook Web App](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2016_guia_de_utilizacao_do_outlook_web_app/)
+[Guia de utilização do Outlook Web App](/pages/web/emails/email_owa)
 
 [Partilhar calendários em OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 

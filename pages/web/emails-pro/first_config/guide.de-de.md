@@ -114,7 +114,7 @@ Wenn alle Angaben vollständig sind, klicken Sie auf `Weiter`{.action}. Überpr�
 
 Nach Abschluss der Konfiguration können Sie Ihre E-Mail-Adressen verwenden. Dazu stellt Ihnen OVHcloud eine Online-Anwendung (eine *Webapp*) zur Verfügung. Diese App ist über die Adresse <https://www.ovh.de/mail> erreichbar, auf der Sie die Login-Daten für Ihre E-Mail-Adresse eingeben.
 
-Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispielsweise einem Smartphone oder einem Tablet) einrichten möchten, werfen Sie bitte einen Blick in die passende [E-Mail Pro Anleitung](https://docs.ovh.com/de/emails-pro). Wenn Sie nur die erforderlichen Informationen zur Konfiguration Ihres E-Mail Pro Accounts benötigen, verwenden Sie die folgenden Einstellungen:
+Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispielsweise einem Smartphone oder einem Tablet) einrichten möchten, werfen Sie bitte einen Blick in die passende [E-Mail Pro Anleitung](/products/web-cloud-email-collaborative-solutions-email-pro). Wenn Sie nur die erforderlichen Informationen zur Konfiguration Ihres E-Mail Pro Accounts benötigen, verwenden Sie die folgenden Einstellungen:
 
 |Servertyp|Servername|Sicherheitstyp|Port|
 |---|---|---|---|
@@ -130,17 +130,17 @@ Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispiel
 
 ## Weiterführende Informationen
 
-[Verwendung der Outlook Web App](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2016_verwendung_der_outlook_web_app/)
+[Verwendung der Outlook Web App](/pages/web/emails/email_owa)
 
-[Posteingangsregeln in OWA erstellen](https://docs.ovh.com/de/microsoft-collaborative-solutions/email-alias/)
+[Posteingangsregeln in OWA erstellen](/pages/web/emails/feature_redirections)
 
-[Einen Alias zu einem E-Mail-Account hinzufügen](https://docs.ovh.com/de/microsoft-collaborative-solutions/email-alias/)
+[Einen Alias zu einem E-Mail-Account hinzufügen](/pages/web/emails/feature_redirections)
 
 [Einrichten einer automatischen Antwort in OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies)
 
 
 [Die Abrechnung Ihrer E-Mail Pro Accounts verwalten](/pages/web/emails-pro/manage_billing_emailpro)
 
-[Sicherheitseinstellungen eines E-Mail-Dienstes verwalten](https://docs.ovh.com/de/microsoft-collaborative-solutions/passwort-sicherheitseinstellungen-verwalten/)
+[Sicherheitseinstellungen eines E-Mail-Dienstes verwalten](/pages/web/emails/security-policy)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

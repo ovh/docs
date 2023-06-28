@@ -88,7 +88,7 @@ Cliccando su un calendario della lista, è possibile visualizzarlo o nasconderlo
 
 ## Per saperne di più 
 
-[Guida all’utilizzo di Outlook Web App](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_guida_allutilizzo_di_outlook_web_app/)
+[Guida all’utilizzo di Outlook Web App](/pages/web/emails/email_owa)
 
 [Condividi una cartella con la Webmail OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 

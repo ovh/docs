@@ -82,7 +82,7 @@ Listę wysyłkową można przetestować za pośrednictwem interfejsu [OVHcloud w
 
 [Delegowanie uprawnień do konta Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Przewodnik dotyczący korzystania z Outlook Web App (OWA)](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/)
+[Przewodnik dotyczący korzystania z Outlook Web App (OWA)](/pages/web/emails/email_owa)
 
 [Exchange 2016: współdzielenie kalendarza w interfejsie OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 

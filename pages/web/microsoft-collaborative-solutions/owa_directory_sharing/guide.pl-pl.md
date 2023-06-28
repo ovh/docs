@@ -97,7 +97,7 @@ Zaloguj się na konto Exchange przy użyciu interfejsu [OVHcloud webmail](https:
 
 ## Sprawdź również
 
-[Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/)
+[Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](/pages/web/emails/email_owa)
 
 [Delegowanie uprawnień do konta Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 

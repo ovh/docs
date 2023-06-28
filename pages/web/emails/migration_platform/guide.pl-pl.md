@@ -79,7 +79,7 @@ W karcie `Konta e-mail`{.action} Twojej platformy kliknij przycisk `...`{.action
 > 
 > Migracja zostanie przeprowadzona wyłącznie w przypadku danych przypisanych do konta e-mail (e-maile, kontakty, kalendarze, reguły skrzynki odbiorczej, etc.). Funkcje powiązane z Twoją platformą będą musiały zostać odtworzone na nowej platformie:
 >
-> - [Alias](https://docs.ovh.com/pl/microsoft-collaborative-solutions/email-alias/) 
+> - [Alias](/pages/web/emails/feature_redirections) 
 > - [Uprawnienia](/pages/web/microsoft-collaborative-solutions/feature_delegation) 
 > - [Grupy](/pages/web/microsoft-collaborative-solutions/feature_groups)
 > - Kontakty zewnętrzne
@@ -87,9 +87,9 @@ W karcie `Konta e-mail`{.action} Twojej platformy kliknij przycisk `...`{.action
 
 Przenieś konto e-mail "source" na konto Twojej nowej platformy, korzystając z naszego narzędzia [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
 
-> Jeśli chcesz migrować kilka kont e-mail, zalecamy użycie trybu [Project](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange-migracja-kont-e-mail-ovh-mail-migrator/#project) przez [OMM](https://omm.ovh.net/Project/Create), pozwoli Ci zaimportować tabelę w formacie CSV zawierającą informacje o kontach e-mail, które mają zostać migrowane.
+> Jeśli chcesz migrować kilka kont e-mail, zalecamy użycie trybu [Project](/pages/web/emails/migration_omm#project) przez [OMM](https://omm.ovh.net/Project/Create), pozwoli Ci zaimportować tabelę w formacie CSV zawierającą informacje o kontach e-mail, które mają zostać migrowane.
 
-Aby uzyskać więcej informacji na temat narzędzia OMM, zapoznaj się z naszym przewodnikiem [Migracja kont e-mail przez OVH Mail Migrator](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange-migracja-kont-e-mail-ovh-mail-migrator/).
+Aby uzyskać więcej informacji na temat narzędzia OMM, zapoznaj się z naszym przewodnikiem [Migracja kont e-mail przez OVH Mail Migrator](/pages/web/emails/migration_omm).
 
 ![e-mail-migracja](images/migration_platform06.png){.thumbnail}
 

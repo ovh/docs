@@ -132,7 +132,7 @@ Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie 
 
 OVHcloud propose, depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), des licences Outlook en option avec votre compte e-mail Exchange.
 
-Pour y souscrire, consultez notre page « [Obtenir une licence Outlook pour Exchange](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-licence-outlook-exchange-2013/) ». 
+Pour y souscrire, consultez notre page « [Obtenir une licence Outlook pour Exchange](/pages/web/microsoft-collaborative-solutions/office_outlook_license) ». 
 
 Vous pouvez également obtenir des [licences Office 365 sur notre site](https://www.ovhcloud.com/fr-ca/collaborative-tools/microsoft-365/). Nous vous recommandons l'une de ces solutions si vous souhaitez bénéficier du logiciel de messagerie Outlook ou de plus de logiciels de la suite Office, selon vos besoins.
 

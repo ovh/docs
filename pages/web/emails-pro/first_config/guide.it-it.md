@@ -135,16 +135,16 @@ Per configurare l’account su un altro client di posta o dispositivi come _smar
 
 ## Per saperne di più
 
-[Guida all’utilizzo di Outlook Web App con un account email](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_guida_allutilizzo_di_outlook_web_app/)
+[Guida all’utilizzo di Outlook Web App con un account email](/pages/web/emails/email_owa)
 
-[Creare regole di posta in arrivo in Outlook Web App (OWA)](https://docs.ovh.com/it/microsoft-collaborative-solutions/creare-regole-posta-in-arrivo-in-owa/)
+[Creare regole di posta in arrivo in Outlook Web App (OWA)]( /pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
 
-[Aggiungi un alias al tuo account email](https://docs.ovh.com/it/microsoft-collaborative-solutions/email-alias/)
+[Aggiungi un alias al tuo account email](/pages/web/emails/feature_redirections)
 
 [Creare firme automatiche](/pages/web/microsoft-collaborative-solutions/feature_footers)
 
 [Gestire la fatturazione dei tuoi account Email Pro](/pages/web/emails-pro/manage_billing_emailpro)
 
-[Gestire la politica di sicurezza di un servizio di posta elettronica](https://docs.ovh.com/it/microsoft-collaborative-solutions/gestire-politica-di-sicurezza-password/)
+[Gestire la politica di sicurezza di un servizio di posta elettronica](/pages/web/emails/security-policy)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

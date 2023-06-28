@@ -53,7 +53,7 @@ No âmbito de uma configuração em **POP**, os valores são os seguintes:
 
 Após a configuração, a conta de e-mail está pronta a usar e pode começar a enviar e receber mensagens no seu dispositivo.
 
-A OVHcloud também disponibiliza uma aplicação web que permite aceder ao seu endereço de e-mail a partir de um browser. disponível no endereço <https://www.ovh.pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail. Para qualquer questão relativa à sua utilização, consulte o nosso manual [Consultar a sua conta Exchange a partir da interface OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2016_guia_de_utilizacao_do_outlook_web_app/) ou [Utilizar o seu endereço de e-mail a partir do webmail RoundCube](/pages/web/emails/email_roundcube).
+A OVHcloud também disponibiliza uma aplicação web que permite aceder ao seu endereço de e-mail a partir de um browser. disponível no endereço <https://www.ovh.pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail. Para qualquer questão relativa à sua utilização, consulte o nosso manual [Consultar a sua conta Exchange a partir da interface OWA](/pages/web/emails/email_owa) ou [Utilizar o seu endereço de e-mail a partir do webmail RoundCube](/pages/web/emails/email_roundcube).
 
 ### Recuperar um backup do seu endereço de e-mail
 

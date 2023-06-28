@@ -81,7 +81,7 @@ Vous pouvez déjà  tester votre liste de diffusion via [la messagerie Web d ’
 
 [Déléguer des permissions sur un compte Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Consulter son compte Exchange depuis l’interface OWA ](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/)
+[Consulter son compte Exchange depuis l’interface OWA ](/pages/web/emails/email_owa)
 
 [Partager des calendriers via l’interface OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 

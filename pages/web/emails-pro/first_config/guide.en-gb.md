@@ -134,17 +134,17 @@ If you would like to configure your email address on an email client or device (
 
 ## Go further
 
-[Using the Outlook Web App with an Exchange account](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/)
+[Using the Outlook Web App with an Exchange account](/pages/web/emails/email_owa)
 
-[Creating inbox rules in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/creating-inbox-rules-in-owa/)
+[Creating inbox rules in OWA]( /pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
 
-[Adding an alias to your email account](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/email-alias/)
+[Adding an alias to your email account](/pages/web/emails/feature_redirections)
 
 [Creating automatic replies in OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies)
 
 
 [Managing the billing for your Email Pro accounts](/pages/web/emails-pro/manage_billing_emailpro)
 
-[Managing the security policy of an email service](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/manage-security-policy-password/)
+[Managing the security policy of an email service](/pages/web/emails/security-policy)
 
 Join our community of users on <https://community.ovh.com/en/>.

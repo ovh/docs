@@ -20,4 +20,4 @@ W Panelu klienta OVHcloud można utworzyć uniwersalne podpisy (stopki) dla adre
 
 ## W praktyce
 
-Zapoznaj się z naszym przewodnikiem [Co zrobić w przypadku konta zablokowanego ze względu na spam?](https://docs.ovh.com/pt/microsoft-collaborative-solutions/blokada-za-spam){.external} w sekcji "Rozwiązania do pracy zespołowej Microsoft".
+Zapoznaj się z naszym przewodnikiem [Co zrobić w przypadku konta zablokowanego ze względu na spam?](/pages/web/emails/locked_for_spam){.external} w sekcji "Rozwiązania do pracy zespołowej Microsoft".

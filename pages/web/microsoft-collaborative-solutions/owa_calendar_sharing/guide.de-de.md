@@ -88,7 +88,7 @@ Durch Klicken auf einen Kalender in der Liste wird dieser hinzugefügt oder aus 
 
 ## Weiterführende Informationen
 
-[OWA mit einem Exchange Account verwenden](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2016_verwendung_der_outlook_web_app/)
+[OWA mit einem Exchange Account verwenden](/pages/web/emails/email_owa)
 
 [Ordner in OWA freigeben](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 

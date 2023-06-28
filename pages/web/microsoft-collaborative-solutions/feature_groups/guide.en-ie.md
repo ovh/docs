@@ -82,7 +82,7 @@ You can now test your mailing list via [OVHcloud webmail](https://www.ovh.ie/mai
 
 [Delegating permissions on an Exchange account](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Using the Outlook Web App with an Exchange account](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide)
+[Using the Outlook Web App with an Exchange account]( /pages/web/emails/email_owa)
 
 [Sharing calendars in OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 

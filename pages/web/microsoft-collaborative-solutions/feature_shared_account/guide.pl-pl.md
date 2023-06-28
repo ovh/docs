@@ -100,7 +100,7 @@ W programie Outlook możesz odnaleźć konto współdzielone w kolumnie po lewej
 
 ## Sprawdź również
 
-[Sprawdź konto Exchange w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/)
+[Sprawdź konto Exchange w interfejsie OWA](/pages/web/emails/email_owa)
 
 [Delegowanie uprawnień na konto Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 

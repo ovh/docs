@@ -158,7 +158,7 @@ Jeśli potrzebujesz pomocy odnośnie którejś z funkcji, skorzystaj z [naszej d
 
 [Utwórz grupę kontaktów](/pages/web/microsoft-collaborative-solutions/feature_groups)
 
-[Tworzenie i korzystanie z konta współdzielonego](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange-korzystanie-z-kont-wsp%C3%B3%C5%82dzielonych/)
+[Tworzenie i korzystanie z konta współdzielonego](/pages/web/microsoft-collaborative-solutions/feature_shared_account)
 
 [Tworzenie i korzystanie z kont zasobów](/pages/web/microsoft-collaborative-solutions/feature_resources)
 

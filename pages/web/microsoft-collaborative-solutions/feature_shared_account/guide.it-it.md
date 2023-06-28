@@ -99,7 +99,7 @@ Dal tuo software Outlook, troverai il tuo account condiviso nella colonna di sin
 
 ## Per saperne di più
 
-[Consulta il tuo account Exchange dall'interfaccia OWA](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_guida_allutilizzo_di_outlook_web_app/)
+[Consulta il tuo account Exchange dall'interfaccia OWA](/pages/web/emails/email_owa)
 
 [Delegare permessi su un account Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 

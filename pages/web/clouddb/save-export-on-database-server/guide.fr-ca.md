@@ -87,7 +87,7 @@ mysqldump --host=serveur --user=utilisateur --port=port --password=password nom_
 
 > [!warning]
 >
-> - Afin d'éviter qu'un tiers n'accède à ce fichier comportant des données sensibles, pensez à sécuriser l'accès à celui-ci en vous aidant du guide : [Comment protéger l’accès a un répertoire par une authentification ?](https://docs.ovh.com/ca/fr/mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}
+> - Afin d'éviter qu'un tiers n'accède à ce fichier comportant des données sensibles, pensez à sécuriser l'accès à celui-ci en vous aidant du guide : [Comment protéger l’accès a un répertoire par une authentification ?](/pages/web/hosting/ssh_on_webhosting){.external}
 > - Cette action est possible uniquement depuis un hébergement OVHcloud mutualisé.
 >
 
@@ -114,7 +114,7 @@ pg_dump --host=serveur --port=port --user=utilisateur --password=password nom_de
 
 > [!warning]
 >
-> - Afin d'éviter qu'un tiers n'accède à ce fichier comportant des données sensibles, pensez à sécuriser l'accès à celui-ci en vous aidant du guide : [Comment protéger l’accès a un répertoire par une authentification ?](https://docs.ovh.com/ca/fr/mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}
+> - Afin d'éviter qu'un tiers n'accède à ce fichier comportant des données sensibles, pensez à sécuriser l'accès à celui-ci en vous aidant du guide : [Comment protéger l’accès a un répertoire par une authentification ?](/pages/web/hosting/ssh_on_webhosting){.external}
 > - Cette action est possible uniquement depuis un hébergement OVHcloud mutualisé.
 >
 

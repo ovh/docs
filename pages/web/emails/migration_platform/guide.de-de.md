@@ -79,7 +79,7 @@ Klicken Sie im Tab `E-Mail-Accounts`{.action} Ihrer betreffenden Plattform auf `
 >
 > Nur die Daten Ihrer E-Mail Accounts werden migriert (E-Mails, Kontakte, Kalender, Posteingangsregeln usw.). Die Funktionen Ihrer Plattform müssen auf der neuen Plattform neu aufgebaut werden:
 >
-> - [Alias](https://docs.ovh.com/de/microsoft-collaborative-solutions/email-alias/)
+> - [Alias](/pages/web/emails/feature_redirections)
 > - [Übertragung von Rechten](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 > - [Gruppen](/pages/web/microsoft-collaborative-solutions/feature_groups)
 > - Externe Kontakte
@@ -87,9 +87,9 @@ Klicken Sie im Tab `E-Mail-Accounts`{.action} Ihrer betreffenden Plattform auf `
 
 Migrieren Sie den Quell-E-Mail-Account mithilfe unseres Tools [OMM](https://omm.ovh.net/) (OVH Mail Migrator) auf das Konto Ihrer neuen Plattform.
 
-> Wenn Sie mehrere E-Mail-Accounts migrieren müssen, empfehlen wir Ihnen, den Modus [Projekt](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_migration_von_e-mail-accounts_-_ovh_mail_migrator/#project) über [OMM](https://omm.ovh.net/Project/Create) zu verwenden, damit Sie eine Tabelle im CSV-Format importieren können, die die Informationen der zu migrierenden E-Mail-Accounts enthält.
+> Wenn Sie mehrere E-Mail-Accounts migrieren müssen, empfehlen wir Ihnen, den Modus [Projekt](/pages/web/emails/migration_omm#project) über [OMM](https://omm.ovh.net/Project/Create) zu verwenden, damit Sie eine Tabelle im CSV-Format importieren können, die die Informationen der zu migrierenden E-Mail-Accounts enthält.
 
-Weitere Informationen zu OMM finden Sie in unserer Anleitung "[E-Mail-Accounts über den OVH Mail Migrator migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_migration_von_e-mail-accounts_-_ovh_mail_migrator/)".
+Weitere Informationen zu OMM finden Sie in unserer Anleitung "[E-Mail-Accounts über den OVH Mail Migrator migrieren](/pages/web/emails/migration_omm)".
 
 ![email-migration](images/migration_platform06.png){.thumbnail}
 

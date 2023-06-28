@@ -112,7 +112,7 @@ Deseja reforçar a segurança de acesso aos seus endereços de e-mail.
 
 Para isso, basta configurar a política de segurança da sua solução MX Plan.
 
-Sugerimos que siga o nosso manual [Gerir a política de segurança de um serviço de e-mail](https://docs.ovh.com/pt/microsoft-collaborative-solutions/gerir-politica-de-seguranca-palavra-passe/).
+Sugerimos que siga o nosso manual [Gerir a política de segurança de um serviço de e-mail](/pages/web/emails/security-policy).
 
 ##### **Reencaminhamentos**
 
@@ -122,7 +122,7 @@ Para isso, é preciso criar um reencaminhamento.
 
 Pode realizar de duas formas:
 
-- criar o seu reencaminhamento a partir do webmail, através das regras de caixa de entrada. Para isso, siga o manual [Regras da caixa de entrada na interface OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/criar-regras-inbox-no-owa/#exemplo-1-redirecionar-e-mails-para-outro-endereco).
+- criar o seu reencaminhamento a partir do webmail, através das regras de caixa de entrada. Para isso, siga o manual [Regras da caixa de entrada na interface OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan#exemplo-1-redirecionar-e-mails-para-outro-endereco).
 
 - criar o seu reencaminhamento a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Este método permite-lhe, por exemplo, criar um alias, ou seja, reencaminhar um endereço de e-mail que não existe para um endereço de e-mail existente. Para isso, siga o nosso manual [Utilizar os reencaminhamentos de e-mail](/pages/web/emails/feature_redirections#nova-versao-da-oferta-mx-plan).
 
@@ -249,6 +249,6 @@ Para isso, pode criar uma mailing list. Sugerimos que siga o nosso manual [Gerir
 
 A migração das ofertas históricas MX Plan para as novas ofertas MX Plan está em curso. Se deseja solicitar a migração da sua oferta prioritariamente, pode seguir as indicações [desta página](https://www.ovh.pt/mxplan-migration/#accordion_6001-4).
 
-Se as suas necessidades evoluírem e pretender usufruir de funcionalidades suplementares, pode igualmente [migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/migracao-endereco-email-partilhado-vers-exchange/).
+Se as suas necessidades evoluírem e pretender usufruir de funcionalidades suplementares, pode igualmente [migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange](/pages/web/emails/migration_control_panel).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
