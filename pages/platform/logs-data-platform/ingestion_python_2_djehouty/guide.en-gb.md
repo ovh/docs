@@ -1,5 +1,5 @@
 ---
-title: Pushing logs with a SDK - Python 2.x - Djehouty
+title: Pushing logs with a logging library - Python 2.x - Djehouty
 updated: 2023-01-16
 ---
 

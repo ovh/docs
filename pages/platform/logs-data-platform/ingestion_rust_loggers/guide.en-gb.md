@@ -1,5 +1,5 @@
 ---
-title: Pushing logs with a SDK - Rust - gelf_logger and log4rs-gelf
+title: Pushing logs with a logging library - Rust - gelf_logger and log4rs-gelf
 updated: 2023-01-16
 ---
 
