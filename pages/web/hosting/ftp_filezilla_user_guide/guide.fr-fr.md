@@ -11,7 +11,7 @@ Il permet de mettre en ligne des fichiers ou votre site internet en vous [connec
 
 **Découvrez comment utiliser le logiciel Filezilla avec votre hébergement mutualisé.**
 
-<iframe width="877" height="493" src="https://www.youtube.com/embed/wwPx8ORF1kc" title="Comprendre et utiliser un client FTP" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wwPx8ORF1kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
 
 > [!warning]
 >
