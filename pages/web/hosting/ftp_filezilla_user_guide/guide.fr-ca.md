@@ -1,10 +1,8 @@
 ---
 title: "Tutoriel - Utiliser FileZilla avec votre hébergement OVHcloud"
 excerpt: "Retrouvez ici un tutoriel pour l'utilisation du logiciel Filezilla sur votre hébergement mutualisé"
-updated: 2022-09-13
+updated: 2023-06-28
 ---
-
-**Dernière mise à jour le 13/09/2022**
 
 ## Objectif
 
@@ -12,6 +10,8 @@ FileZilla est un logiciel disponible gratuitement sur plusieurs systèmes d'expl
 Il permet de mettre en ligne des fichiers ou votre site internet en vous [connectant à l'espace FTP](/pages/web/hosting/ftp_connection) de votre hébergement.
 
 **Découvrez comment utiliser le logiciel Filezilla avec votre hébergement mutualisé.**
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wwPx8ORF1kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
 
 > [!warning]
 >
