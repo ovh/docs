@@ -102,7 +102,7 @@ ssh username@IPv4_of_your_VPS -p NewPortNumber
 
 Le recomendamos encarecidamente que cambie la contraseña del usuario root para evitar que se quede en el valor predeterminado de un nuevo sistema. Para más información, consulte [esta guía](https://docs.ovh.com/es/vps/root-password/).
 
-### Crear un usuario con permisos restringidos
+### Crear un usuario con permisos restringidos <a name="createuser"></a>
 
 Por lo general, las tareas que no requieran privilegios root deben realizarse a través de un usuario estándar. Para crear un nuevo usuario introduzca el siguiente comando:
 

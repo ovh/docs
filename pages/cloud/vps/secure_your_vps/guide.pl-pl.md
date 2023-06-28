@@ -102,7 +102,7 @@ ssh username@IPv4_of_your_VPS -p NewPortNumber
 
 Zdecydowanie zaleca się zmianę hasła użytkownika root, aby nie pozostawiać go w pozycji domyślnej w nowym systemie. Więcej informacji znajdziesz w [tym przewodniku](https://docs.ovh.com/pl/vps/root-password/).
 
-### Utworzenie użytkownika z ograniczonymi prawami
+### Utworzenie użytkownika z ograniczonymi prawami <a name="createuser"></a>
 
 Zadania, które nie wymagają uprawnień root, powinny być wykonywane za pomocą standardowego użytkownika. Możesz utworzyć nowego użytkownika za pomocą następującego polecenia:
 

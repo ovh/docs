@@ -99,7 +99,7 @@ ssh nomdutilisateur@IPv4_de_votre_VPS -p NouveauPort
 
 Il est fortement recommandé de modifier le mot de passe de l'utilisateur root afin de ne pas le laisser à sa valeur par défaut sur un nouveau système. Pour plus d'informations, consultez [ce guide](https://docs.ovh.com/fr/vps/root-password/).
 
-### Créer un utilisateur avec des droits restreints
+### Créer un utilisateur avec des droits restreints <a name="createuser"></a>
 
 En général, les tâches qui ne requièrent pas de privilèges root doivent être effectuées via un utilisateur standard. Vous pouvez créer un nouvel utilisateur avec la commande suivante :
 
