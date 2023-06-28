@@ -1,18 +1,16 @@
 ---
-title: Transferring a domain name to another registrar
-excerpt: Find out how to move a domain name from OVHcloud to a provider of your choice
-updated: 2023-03-10
+title: "Transferring a domain name to another registrar"
+excerpt: "Find out how to move a domain name from OVHcloud to a provider of your choice"
+updated: 2023-06-28
 ---
-
-**Last updated 10th March 2023**
 
 ## Objective
 
-**Domain transfer** refers to the process of moving a registered domain name from one registrar to another. For example, if you have ordered a domain name on our website, OVHcloud is its current registrar. An outgoing domain transfer needs to be initiated by the new registrar. 
+A **domain transfer** refers to moving a domain name from one registrar to another. For example, if you have ordered a domain name on our website, OVHcloud is its current registrar. An outgoing domain transfer must be initiated by the new registrar.
 
-In order to prevent unauthorised domain transfers, domain names are usually locked by having the status *clientTransferProhibited* set. This protection must be lifted in the OVHcloud Control Panel before starting a transfer.
+In order to prevent unauthorised domain transfers, domain names are usually locked with a *clientTransferProhibited* status. This protection must be removed from the OVHcloud Control Panel before you begin any transfers.
 
-**This guide explains how to prepare your domain name for an outgoing transfer.**
+**Find out how to prepare your domain name for an outgoing transfer.**
 
 > [!warning]
 >
@@ -60,13 +58,22 @@ On the `General information`{.action} tab you can find the "Protection against d
 
 Click on the slider and confirm in the popup window that you want to remove this protection. Allow a few minutes for the status to change to `Disabled`{.action}.
 
-![outgoingtransfer](images/outgoing-transfer-step2.png){.thumbnail}
+> [!primary]
+>
+> If you encounter the message "**An error occurred when requesting to disable the domain protection (User not granted for this request)**", this means that you do not have sufficient rights to unlock the domain. 
+>
+> Also, if you encounter the message: "**AUTH/INFO code : Authcode is not managed by OVHcloud, contact the registry to claim it**", this means that the transfer code for your domain name cannot be retrieved via your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).  
+> 
+> In both cases, check that you are the contact **administrator** of the domain using our guide on [contact management](/pages/account/customer/managing_contacts) then check that the domain extension can be unlocked from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+> 
+> Indeed, some *transfer codes* are directly managed by the *registry* of your domain name extension. A *registry* is an organisation that manages all domains for a given extension. For example, the**AFNIC** manages all domain names with the extension "*.fr*". If this is the case, you must contact the *registry* managing your domain name extension directly to retrieve the *transfer code*.
+>
 
-You can also refresh the page if it seems to take longer.
+![outgoingtransfer](images/outgoing-transfer-step2.png){.thumbnail}
 
 > [!primary]
 >
-> Once the status has changed, the domain name will remain unlocked for seven days. After this period, the protection will automatically turn back on. If you do not request a domain transfer at your new registrar during this time, it will be necessary to unlock the domain again.
+> Once the protection is lifted, the domain name remains unlocked for seven days. After this period, protection will be automatically reactivated. If you do not request a domain transfer to your new registrar during this time, it will be necessary to lift the protection on the domain again.
 >
 
 ### Step 2: Retrieve the transfer code
@@ -76,7 +83,9 @@ You can also refresh the page if it seems to take longer.
 > Note that it is still possible to unlock and retrieve the transfer code of your domain name after its expiration. According to registry rules, a domain in the [redemption period](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) may need to be restored so that it can be transferred. Contact your new registrar for transfer details.
 >
 
-Once the status is set to `Disabled`{.action}, a link labelled `AUTH/INFO`{.action} will appear. Clicking on this link will open a window that contains your AUTH/INFO code (also known as transfer key, domain password, AUTH-CODE or EPP-Code).
+Once you have removed the transfer protection, you can retrieve your domain name’s transfer code. To do this, in the `General information`{.action} tab, click `AUTH/INFO`{.action} next to `Transfer protection`{.action}. Please refresh the page if necessary.
+
+A window will then open, containing your AUTH/INFO code (also known as transfer code, domain password, AUTH-CODE or EPP-Code).
 
 ![outgoingtransfer](images/outgoing-transfer-step3.png){.thumbnail}
 
