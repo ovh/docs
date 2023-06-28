@@ -1,18 +1,18 @@
 ---
 title: 'Configurare IPv6 su server dedicati'
 excerpt: 'Scopri come configurare indirizzi IPv6 sulla nostra infrastruttura'
-updated: 2022-08-26
+updated: 2023-06-21
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
-**Ultimo aggiornamento: 29/08/2022**
+**Ultimo aggiornamento: 21/06/2028**
 
 ## Obiettivo
 
-La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocollo Internet (IP). È stata studiata per sopperire alla prevista saturazione degli indirizzi del suo predecessore, IPv4, utilizzando indirizzi a 128-bit invece che a 32-bit. Ogni server OVHcloud dedicato presenta un blocco IPv6 di 64 bit. Ciò equivale a oltre 18 quintilioni di indirizzi IP che puoi utilizzare a tuo piacimento.
+La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocollo Internet (IP). È stata studiata per sopperire alla prevista saturazione degli indirizzi del suo predecessore, IPv4, utilizzando indirizzi a 128-bit invece che a 32-bit. La maggior parte dei server dedicati OVHcloud vengono consegnati con un blocco /64 IPv6, ad eccezione dei server High Grade e Scale che vengono consegnati con un blocco /56 IPv6. Si tratta di più di 18 quintiplici di indirizzi IP di cui puoi disporre a tua scelta. Ciò equivale a oltre 18 quintilioni di indirizzi IP che puoi utilizzare a tuo piacimento.
 
 **Questa guida spiega con vari esempi come configurare indirizzi IPv6 sul tuo server.**
 
@@ -38,19 +38,18 @@ Se per installare il tuo server utilizzi un template per il sistema operativo Li
 
 Ad esempio, se abbiamo assegnato al tuo server l'intervallo IPv6: `2607:5300:xxxx:xxxx::/64` è possibile utilizzare come IPv6 principale del tuo server l'IPv6: `2607:5300:xxxx:xxx::1/64`.
 
-Per configurare più indirizzi IPv6 sul tuo server (o per utilizzarlo su una VM), è necessario disporre di un Additional IP configurato con una vMAC. In caso contrario, l'IPv6 non potrà essere utilizzato dai nostri router/switch.
+Per configurare più indirizzi IPv6 sul tuo server (o per utilizzarlo su una VM), è necessario disporre di un Additional IP configurato con una vMAC. In caso contrario, l'IPv6 non potrà essere utilizzato dai nostri router/switch. Ti ricordiamo che questa restrizione non si applica ai server High Grade e Scale. Per le macchine virtuali create su questi server, gli indirizzi IPv6 possono essere utilizzati senza l'utilizzo di vMAC.
 
-> [!primary]
->
-> Il gateway predefinito per il tuo blocco IPv6 (IPv6_GATEWAY) è sempre xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Ti ricordiamo che gli "0" di testa possono essere eliminati in un IPv6 per evitare errori nella determinazione del gateway.
->
-> Ad esempio:
-> 
-> - L'intervallo IPv6 del server è `2607:5300:60:62ac::/64` o `2607:5300:60:62ac:0000:000:000:0000/64`. L’IPv6_GATEWAY sarà perciò `2607:5300:60:62FF:FF:FF:FF:FF`.
-> - L'intervallo IPv6 del server è `2001:41D0:1:46e::/64` o `2001:41D0:0001:046e:0000:000:000:0000/64`. L’IPv6_GATEWAY sarà perciò `2001:41D0:1:4FF:FF:FF:FF:FF`.
->
-> Il modo più sicuro per recuperare le informazioni di rete del tuo server è [utilizzare l'API OVHcloud](/pages/account/api/first-steps). Eseguite la chiamata API che segue, indicando il nome interno del server (esempio: `ns3956771.ip-169-254-10.eu`):
->
+### Gateway predefinito (esclusi i server High Grade e Scale)
+
+Il gateway predefinito per il tuo blocco IPv6 (IPv6_GATEWAY) è sempre xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Ti ricordiamo che gli "0" di testa possono essere eliminati in un IPv6 per evitare errori nella determinazione del gateway.
+
+- L'intervallo IPv6 del server è `2607:5300:60:62ac::/64` o `2607:5300:60:62ac:0000:000:000:0000/64`. L’IPv6_GATEWAY sarà perciò `2607:5300:60:62FF:FF:FF:FF:FF`.
+- L'intervallo IPv6 del server è `2001:41D0:1:46e::/64` o `2001:41D0:0001:046e:0000:000:000:0000/64`. L’IPv6_GATEWAY sarà perciò `2001:41D0:1:4FF:FF:FF:FF:FF`.
+
+Il modo più sicuro per recuperare le informazioni di rete del tuo server è [utilizzare l'API OVHcloud](/pages/account/api/first-steps). 
+
+Eseguite la chiamata API che segue, indicando il nome interno del server (esempio: `ns3956771.ip-169-254-10.eu`):
 
 
 > [!api]
@@ -61,6 +60,12 @@ Per configurare più indirizzi IPv6 sul tuo server (o per utilizzarlo su una VM)
 > 
 > Prima di modificare un file di configurazione, crea sempre un backup dell'originale per poterlo ripristinare in caso di problemi. 
 > 
+
+## Gateway predefinito per i server High Grade e Scale
+
+Il gateway predefinito del blocco IPv6 (IPv6_GATEWAY) resta `fe80:0000:0000:0000:000:000:0000:0001`. Ti ricordiamo che gli "0" di testa possono essere eliminati in un IPv6 per evitare errori.
+
+In questo caso, il gateway IPv6 predefinito può essere scritto come segue: `fe80::1`.
 
 ### Sistemi operativi Debian e basati su Debian
 

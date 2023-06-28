@@ -1,18 +1,18 @@
 ---
 title: 'Konfigurowanie adresu IPv6 na serwerach dedykowanych'
 excerpt: 'Dowiedz się, jak skonfigurować adresy IPv6 w infrastrukturze OVHcloud'
-updated: 2022-08-26
+updated: 2023-06-21
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
-**Ostatnia aktualizacja: 29-08-2022**
+**Ostatnia aktualizacja: 21-06-2023**
 
 ## Wprowadzenie
 
-IPv6 (Internet Protocol version 6) jest najnowszą wersją protokołu internetowego (IP, ang. Internet Protocol). Umożliwia rozwiązanie problemów z wyczerpywaniem się dostępnych adresów swojego poprzednika, protokołu IPv4, ponieważ korzysta z adresów 128-bitowych zamiast 32-bitowych. Każdy serwer dedykowany OVHcloud ma blok adresów IPv6 /64. Oznacza to, że użytkownik ma do dyspozycji 18 trylionów adresów IP.
+IPv6 (Internet Protocol version 6) jest najnowszą wersją protokołu internetowego (IP, ang. Internet Protocol). Umożliwia rozwiązanie problemów z wyczerpywaniem się dostępnych adresów swojego poprzednika, protokołu IPv4, ponieważ korzysta z adresów 128-bitowych zamiast 32-bitowych. Większość serwerów dedykowanych OVHcloud jest dostarczana z blokiem /64 IPv6, z wyjątkiem serwerów High Grade i Scale, które są dostarczane z blokiem /56 IPv6. Oznacza to, że użytkownik ma do dyspozycji 18 trylionów adresów IP.
 
 **Dowiedz się, jak skonfigurować adresy IPv6 na serwerze na podstawie różnych przykładów.**
 
@@ -38,19 +38,18 @@ Jeśli instalujesz serwer przy użyciu udostępnionego przez OVHcloud szablonu s
 
 Przykładowo, jeśli przypisaliśmy do Twojego serwera zakres IPv6: `2607:5300:xxxx:xxxx::/64` możesz używać jako głównego adresu IPv6 Twojego serwera IPv6: `2607:5300:xxxx:xxxx::1/64`.
 
-Jeśli chcesz skonfigurować kilka adresów IPv6 na Twoim serwerze (lub jeśli chcesz z niego korzystać na wirtualnej maszynie), musisz mieć skonfigurowany adres Additional IP z vMAC. W przeciwnym razie nie będziemy mogli przekierować adresu IPv6 przez routery/switche.
+Jeśli chcesz skonfigurować kilka adresów IPv6 na Twoim serwerze (lub jeśli chcesz z niego korzystać na wirtualnej maszynie), musisz mieć skonfigurowany adres Additional IP z vMAC. W przeciwnym razie nie będziemy mogli przekierować adresu IPv6 przez routery/switche. Ograniczenie to nie dotyczy serwerów High Grade i Scale. W przypadku wirtualnych maszyn utworzonych na tych serwerach adresy IPv6 mogą być używane bez potrzeby korzystania z vMAC.
 
-> [!primary]
->
-> Domyślną bramą Twojego bloku adresów IPv6 (IPv6_GATEWAY) jest zawsze xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Pamiętaj, że w IPv6 możesz usunąć "0" głowy, aby uniknąć błędów podczas określania mostka.
->
-> Na przykład:
-> 
-> - Zakres IPv6 serwera to `2607:5300:60:62ac::/64` lub `2607:5300:60:62ac:0000:0000:0000:0000/64`. Dlatego bramą IPv6_GATEWAY jest `2607:5300:60:62FF:FF:FF:FF:FF`.
-> - Zakres IPv6 serwera to `2001:41D0:1:46e::/64` lub `2001:41D0:0001:046e:0000:0000:0000:0000/64`. Dlatego bramą IPv6_GATEWAY jest `2001:41D0:1:4FF:FF:FF:FF:FF`.
->
-> Najbezpieczniejszym sposobem pobierania informacji o sieci na Twoim serwerze jest korzystanie z [API OVHcloud](/pages/account/api/first-steps). Wykonaj następujące wywołanie API, wskazując wewnętrzną nazwę serwera (przykład: `ns3956771.ip-169-254-10.eu`):
->
+### Domyślna brama (z wyjątkiem serwerów High Grade i Scale)
+
+Domyślną bramą Twojego bloku adresów IPv6 (IPv6_GATEWAY) jest zawsze xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Pamiętaj, że w IPv6 możesz usunąć "0" głowy, aby uniknąć błędów podczas określania mostka.
+
+Na przykład:
+
+- Zakres IPv6 serwera to `2607:5300:60:62ac::/64` lub `2607:5300:60:62ac:0000:0000:0000:0000/64`. Dlatego bramą IPv6_GATEWAY jest `2607:5300:60:62FF:FF:FF:FF:FF`.
+- Zakres IPv6 serwera to `2001:41D0:1:46e::/64` lub `2001:41D0:0001:046e:0000:0000:0000:0000/64`. Dlatego bramą IPv6_GATEWAY jest `2001:41D0:1:4FF:FF:FF:FF:FF`.
+
+Najbezpieczniejszym sposobem pobierania informacji o sieci na Twoim serwerze jest korzystanie z [API OVHcloud](/pages/account/api/first-steps). Wykonaj następujące wywołanie API, wskazując wewnętrzną nazwę serwera (przykład: `ns3956771.ip-169-254-10.eu`):
 
 
 > [!api]
@@ -61,6 +60,12 @@ Jeśli chcesz skonfigurować kilka adresów IPv6 na Twoim serwerze (lub jeśli c
 > 
 > Zanim zmodyfikujesz plik konfiguracyjny, zawsze utwórz kopię zapasową oryginału, aby móc powrócić w przypadku problemu. 
 > 
+
+### Domyślna brama dla serwerów High Grade i Scale
+
+Domyślna brama bloku IPv6 (IPv6_GATEWAY) pozostaje `fe80:0000:0000:0000:0000:0000:0000:0001`. Pamiętaj, że w IPv6 możesz usunąć "0" głowy, aby uniknąć błędów.
+
+W tym przypadku domyślny brama IPv6 może być napisana następująco: `fe80::1`.
 
 ### Systemy operacyjne Debian i oparte na dystrybucji Debian
 

@@ -1,18 +1,18 @@
 ---
 title: 'Configurar IPv6 em servidores dedicados'
 excerpt: 'Saiba como configurar endereços IPv6 na nossa infraestrutura'
-updated: 2022-08-26
+updated: 2023-06-21
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 29/08/2022**
+**Última atualização: 21/06/2023**
 
 ## Objetivo
 
-O IPv6 é a versão mais recente do Internet Protocol (IP). Foi concebido para solucionar a já esperada exaustão do seu antecessor, o IPv4, através do recurso a endereços de 128 bits em vez de endereços de 32 bits. Cada servidor dedicado da OVHcloud inclui um bloco IPv6 /64. Isto representa mais de 18 quintiliões de endereços IP ao seu dispor.
+O IPv6 é a versão mais recente do Internet Protocol (IP). Foi concebido para solucionar a já esperada exaustão do seu antecessor, o IPv4, através do recurso a endereços de 128 bits em vez de endereços de 32 bits. A maior parte dos servidores dedicados OVHcloud são entregues com um bloco IPv6 /64, à exceção dos servidores High Grade e Scale que são entregues com um bloco IPv6 /56. Isto representa mais de 18 quintiliões de endereços IP ao seu dispor.
 
 **Este guia explica como configurar endereços IPv6 no seu servidor por meio de vários exemplos.**
 
@@ -38,18 +38,19 @@ Se está a usar um template Linux fornecido pela OVHcloud para instalar o servid
 
 Por exemplo, se atribuimos ao seu servidor o intervalo IPv6: `2607:5300:xxxx:xxxx:/64` pode utilizar o IPv6 principal do seu servidor como IPv6: `2607:5300:xxxx:xxxx::1/64`.
 
-Se deseja configurar vários endereços IPv6 no seu servidor (ou se deseja utilizá-lo numa VM) deve dispor de um Additional IP configurado com um vMAC. Caso contrário, o IPv6 não poderá ser roteado pelos nossos routers/switchs.
+Se deseja configurar vários endereços IPv6 no seu servidor (ou se deseja utilizá-lo numa VM) deve dispor de um Additional IP configurado com um vMAC. Caso contrário, o IPv6 não poderá ser roteado pelos nossos routers/switchs. Tenha em conta que esta restrição não se aplica aos servidores High Grade e Scale. Para as máquinas virtuais criadas nestes servidores, os endereços IPv6 podem ser utilizados sem que seja necessário utilizar vMAC.
 
-> [!primary]
->
-> O gateway pré-definido para o seu bloco IPv6 (IPV6_GATEWAY) é xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Tenha em conta que os "0" de cabeça podem ser eliminados num IPv6 para evitar erros aquando da determinação da gateway.
->
-> por exemplo,
-> 
-> - O intervalo IPv6 do servidor é `2607:5300:60:62ac::/64` ou `2607:5300:60:62ac:0000:0000:0000:0000/64`. Logo, o IPv6_GATEWAY vai ser `2607:5300:60:62FF:FF:FF:FF:FF`.
-> - O intervalo IPv6 do servidor é `2001:41D0:1:46e::/64` ou `2001:41D0:0001:046e:0000:0000:0000:0000/64`. Logo, o IPv6_GATEWAY vai ser `2001:41D0:1:4FF:FF:FF:FF:FF`.
->
-> A forma mais segura de recuperar as informações de rede do seu servidor é [utilizar a API OVHcloud](/pages/account/api/first-steps)(EN). Execute a seguinte chamada API, indicando o nome interno do servidor (exemplo: `ns3956771.ip-169-254-10.eu`):
+### Gateway predefinido (exceto os servidores High Grade e Scale)
+
+O gateway pré-definido para o seu bloco IPv6 (IPV6_GATEWAY) é xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Tenha em conta que os "0" de cabeça podem ser eliminados num IPv6 para evitar erros aquando da determinação da gateway.
+
+por exemplo,
+
+- O intervalo IPv6 do servidor é `2607:5300:60:62ac::/64` ou `2607:5300:60:62ac:0000:0000:0000:0000/64`. Logo, o IPv6_GATEWAY vai ser `2607:5300:60:62FF:FF:FF:FF:FF`.
+- O intervalo IPv6 do servidor é `2001:41D0:1:46e::/64` ou `2001:41D0:0001:046e:0000:0000:0000:0000/64`. Logo, o IPv6_GATEWAY vai ser `2001:41D0:1:4FF:FF:FF:FF:FF`.
+
+
+A forma mais segura de recuperar as informações de rede do seu servidor é [utilizar a API OVHcloud](/pages/account/api/first-steps)(EN). Execute a seguinte chamada API, indicando o nome interno do servidor (exemplo: `ns3956771.ip-169-254-10.eu`):
 >
 
 
@@ -62,6 +63,11 @@ Se deseja configurar vários endereços IPv6 no seu servidor (ou se deseja utili
 > Antes de alterar um ficheiro de configuração, crie sempre uma cópia de segurança do original para que possa voltar a ela em caso de problema. 
 > 
 
+### Gateway predefinido para os servidores High Grade e Scale
+
+A gateway predefinida do bloco IPv6 (IPv6_GATEWAY) permanece `fe80:0000:0000:0000:0000:0000:0000:0001`. Tenha em conta que os "0" de cabeça podem ser eliminados num IPv6 para evitar erros.
+
+Neste caso, a gateway IPv6 predefinida pode ser escrita do seguinte modo: `fe80::1`.
 
 ### Distribuições Debian e baseadas em Debian
 
