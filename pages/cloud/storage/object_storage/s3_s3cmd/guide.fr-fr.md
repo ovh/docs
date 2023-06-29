@@ -1,10 +1,8 @@
 ---
 title: Object Storage - Utiliser S3 Object Storage avec S3cmd
 excerpt: Découvrez comment configurer S3cmd afin de gérer vos buckets et objets
-updated: 2022-01-03
+updated: 2023-06-29
 ---
-
-**Dernière mise à jour le 03/01/2022**
 
 ## Objectif
 
@@ -43,7 +41,7 @@ Secret Key: `<secret_key>`
 Default Region [US]: `<region_in_lowercase>`
 
 Use "s3.amazonaws.com" for S3 Endpoint and not modify it to the target Amazon S3.
-S3 Endpoint [s3.amazonaws.com]: `s3.<region_in_lowercase>.perf.cloud.ovh.net`
+S3 Endpoint [s3.amazonaws.com]: `s3.<region_in_lowercase>.io.cloud.ovh.net`
 
 Use "%(bucket)s.s3.amazonaws.com" to the target Amazon S3. "%(bucket)s" and "%(location)s" vars can be used
 if the target S3 system supports dns based buckets.

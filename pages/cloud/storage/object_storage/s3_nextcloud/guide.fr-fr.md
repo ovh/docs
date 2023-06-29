@@ -1,10 +1,8 @@
 ---
 title: Object Storage - Utiliser S3 Object Storage avec Nextcloud
 excerpt: Découvrez comment configurer le stockage dans Nextcloud pour utiliser un bucket S3 Object Storage
-updated: 2022-01-03
+updated: 2023-06-29
 ---
-
-**Dernière mise à jour le 03/01/2022**
 
 ## Objectif
 
@@ -53,7 +51,7 @@ Cliquez sur votre avatar en haut à droite puis sur `Settings`{.action}.
 2. Créez un stockage de type *Amazon S3*
 3. Nommez votre dossier de destination
 4. Indiquez le nom de votre bucket
-5. Définissez l'hôte comme tel : `s3.<region_in_lowercase>.perf.cloud.ovh.net`
+5. Définissez l'hôte comme tel : `s3.<region_in_lowercase>.io.cloud.ovh.net`
 6. Définissez le port : 443
 7. Indiquez la région
 8. Activez SSL

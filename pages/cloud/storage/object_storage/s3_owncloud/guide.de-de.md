@@ -3,10 +3,9 @@ title: Object Storage - S3 Object Storage mit Owncloud nutzen (EN)
 excerpt: Learn how to set up storage in Owncloud to use a S3 Object Storage bucket
 routes:
     canonical: '/pages/cloud/storage/object_storage/s3_owncloud'
-updated: 2022-01-03
+updated: 2023-06-29
 ---
 
-**Last updated on 3rd January 2022**
 
 ## Objective
 
@@ -59,7 +58,7 @@ Then :
 Fill in the following information:
 
 1. Enter the name of your bucket
-2. Set the host as: `s3.<region_in_lowercase>.perf.cloud.ovh.net`
+2. Set the host as: `s3.<region_in_lowercase>.io.cloud.ovh.net`
 3. Set the port to 443
 4. Specify the region
 5. Activate SSL

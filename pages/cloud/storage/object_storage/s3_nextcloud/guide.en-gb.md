@@ -1,10 +1,9 @@
 ---
 title: Object Storage - Use S3 Object Storage with Nextcloud
 excerpt: Learn how to set up storage in Nextcloud to use a S3 Object Storage bucket
-updated: 2022-01-03
+updated: 2023-06-29
 ---
 
-**Last updated on 3rd January 2022**
 
 ## Objective
 
@@ -53,7 +52,7 @@ Click on your avatar at the top right then on `Settings`{.action}.
 2. Create an *Amazon S3* storage type.
 3. Name your destination folder
 4. Specify the name of your bucket
-5. Set the host as: `s3.<region_in_lowercase>.perf.cloud.ovh.net`
+5. Set the host as: `s3.<region_in_lowercase>.io.cloud.ovh.net`
 6. Set the port to 443
 7. Specify the region
 8. Activate SSL
