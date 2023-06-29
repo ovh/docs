@@ -1,16 +1,30 @@
 ---
-title: 'Configurare un DNS dinamico per un dominio'
-excerpt: 'Come impostare un record DNS dinamico (DynHost) sul tuo dominio OVHcloud'
-updated: 2018-07-19
+title: "Impostare un DNS dinamico (DynHost/DynDNS) per il tuo dominio"
+excerpt: "Questa guida ti mostra come configurare un record DNS dinamico per il tuo dominio OVHcloud"
+updated: 2023-06-29
 ---
 
-**Ultimo aggiornamento: 08/03/2019**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+>
 
 ## Obiettivo
 
-La zona Domain Name System (DNS) contiene la configurazione di un dominio ed è composta da informazioni tecniche chiamate <i>record</i>. Per diversi motivi, ad esempio nel caso si ospiti un server di gioco su una rete domestica che non usufruisce di indirizzi IP statici, aggiornare in modo dinamico un record DNS potrebbe rivelarsi fondamentale per evitare lunghe interruzioni di servizio. 
+La zona **D**omain **N**ame **S**ystem (**DNS**) di un dominio costituisce il file di configurazione di quest'ultimo. È composta da informazioni tecniche chiamate *record DNS*. La zona DNS è, in un certo senso, come un centro di deviazioni. 
 
-**Questa guida ti mostra la procedura da seguire per impostare un record DNS dinamico (DynHost) per il tuo dominio OVHcloud.**
+Puoi, ad esempio, precisare:
+
+- L'indirizzo IP (record DNS di tipo *A* e *AAAA*) del tuo hosting web per visualizzare il tuo sito web con il tuo dominio.
+- I server di posta (record DNS di tipo *MX*) verso cui il tuo dominio deve reindirizzare le email che riceve. Per consultare i tuoi indirizzi email personalizzati con il tuo dominio.
+- Informazioni relative alla sicurezza/autenticazione dei servizi associati (hosting Web, server Web, server di posta, ecc...) al tuo dominio (record DNS di tipo *SPF*, *DKIM*, *DMARC*, ecc...).
+
+Se necessario, consulta [la nostra documentazione sui record DNS e sulla modifica di una zona DNS](/pages/web/domains/dns_zone_edit) dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+
+L'aggiornamento "dinamico" di un record DNS può evitare un'interruzione prolungata di uno dei tuoi servizi se non disponi di un indirizzo IP detto "fisso" (che non cambia).
+
+Ad esempio, il **DynHost** può essere utilizzato se *auto-hosting* (nei locali della tua azienda o a casa, passando per la *box* del tuo **F**ourneur d'**A**ccesso a **I**nternet (**FAI**)) un server di videogiochi senza beneficiare di un indirizzo IP "fisso".
+
+**Questa guida ti mostra come configurare un record DNS dinamico (DynHost) per il tuo dominio OVHcloud.**
 
 ## Prerequisiti
 
@@ -20,14 +34,21 @@ La zona Domain Name System (DNS) contiene la configurazione di un dominio ed è 
 
 > [!warning]
 >
-> - Se il dominio non utilizza i server DNS di OVHcloud, è necessario rivolgersi al provider che ne gestisce la configurazione per conoscere la procedura da seguire.
+> - Se il dominio non utilizza i server DNS di OVHcloud, contatta il provider che ne gestisce la configurazione per conoscere la procedura da seguire al suo livello.
 > 
-> - Se il dominio è registrato in OVHcloud, verifica che utilizzi la nostra configurazione accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} > `Server DNS`{.action} e selezionando il dominio interessato.
+> - Se il tuo dominio è registrato in OVHcloud, verifica che utilizzi la nostra configurazione. accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e cliccando sulla sezione `Web cloud`{.action}. Nella colonna di sinistra, clicca sulla scheda `Domini`{.action} e seleziona il dominio interessato. Nella nuova pagina clicca sulla scheda `Server DNS`{.action} per visualizzare i server DNS utilizzati dal tuo dominio. 
+>
+> Per sapere se utilizzi o meno i server DNS di OVHcloud, questi ultimi hanno la forma seguente: 
+>
+> - **dnsXX.ovh.net** e **nsXX.ovh.net** (dove i "**X**" sono cifre da sostituire con quelli che riguardano i server del tuo dominio) se non utilizzi l'opzione *DNS Anycast*
+> - **ns200.anycast.me.** e **ns200.anycast.me** se utilizzi l'opzione *DNS Anycast*
+> 
+> Se necessario, consulta la guida relativa ai [server DNS](/pages/web/domains/dns_server_general_information) per maggiori informazioni.
 >
 
 ## Procedura
 
-### Step 1: crea un utente DynHost
+### Step 1: crea un utente DynHost <a name="step1"></a>
 
 Il primo step consiste nel creare un utente Dynhost: questa operazione permetterà infatti di effettuare l’aggiornamento del record DNS dinamico. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Domini`{.action}. e clicca sulla scheda `DynHost`{.action}.
 
