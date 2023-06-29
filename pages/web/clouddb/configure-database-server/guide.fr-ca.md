@@ -308,7 +308,7 @@ Exemple :
 
 ## Aller plus loin
 
-[Liste des adresses IP des clusters et hebergements web](pages/web/hosting/clusters_and_shared_hosting_IP)
+[Liste des adresses IP des clusters et hebergements web](/pages/web/hosting/clusters_and_shared_hosting_IP)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 
