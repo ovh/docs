@@ -35,7 +35,7 @@ Die Delegation gibt dem Benutzer eines E-Mail-Accounts die Möglichkeit, verschi
 |MX Plan Legacy|MX Plan neuere Version|
 |---|---|
 |![E-Mail](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Die Angebotsbezeichnung steht in der Box "Abo".|![E-Mail](images/mxplan-starter-new-step1.png){.thumbnail}<br>Die `Server-Referenz` befindet sich in der Box "Zusammenfassung".|
-|Lesen Sie weiter in dieser `[Anleitung](#oldmxplan)`.|Fahren Sie fort mit unserer Anleitung zur [Verwendung der Outlook Web App](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2016_verwendung_der_outlook_web_app/#passwort-andern).|
+|Lesen Sie weiter in dieser `[Anleitung](#oldmxplan)`.|Fahren Sie fort mit unserer Anleitung zur [Verwendung der Outlook Web App](/pages/web/emails/email_owa#passwort-andern).|
 
 
 ## In der praktischen Anwendung <a name="oldmxplan"></a>

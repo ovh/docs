@@ -88,7 +88,7 @@ mysqldump —host=servidor —user=usuario —port=puerto —contraseña=contras
 
 > [!warning]
 >
-> - Si desea evitar que un tercero acceda a este archivo de datos sensibles, consulte la guía Proteger el acceso a él: [Proteger el panel de administración del sitio web con un archivo .htaccess](https://docs.ovh.com/us/es/compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion/).
+> - Si desea evitar que un tercero acceda a este archivo de datos sensibles, consulte la guía Proteger el acceso a él: [Proteger el panel de administración del sitio web con un archivo .htaccess](/pages/web/hosting/htaccess_protect_directory_by_password).
 > - Esta acción solo es posible desde un alojamiento de OVHcloud compartido.
 >
 
@@ -114,7 +114,7 @@ pg_dump —host=servidor —port=puerto —user=usuario —password=contraseña 
 
 > [!warning]
 >
-> - Si desea evitar que un tercero acceda a este archivo de datos sensibles, consulte la guía Proteger el acceso a él: [Proteger el panel de administración del sitio web con un archivo .htaccess](https://docs.ovh.com/us/es/compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion/).
+> - Si desea evitar que un tercero acceda a este archivo de datos sensibles, consulte la guía Proteger el acceso a él: [Proteger el panel de administración del sitio web con un archivo .htaccess](/pages/web/hosting/htaccess_protect_directory_by_password).
 > - Esta acción solo es posible desde un alojamiento de OVHcloud compartido.
 >
 

@@ -134,16 +134,16 @@ Para configurar su dirección de correo electrónico en un cliente de correo o e
 
 ## Más información
 
-[Usar Outlook Web App con una cuenta de correo](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2016_guia_de_uso_de_outlook_web_app/)
+[Usar Outlook Web App con una cuenta de correo](/pages/web/emails/email_owa)
 
-[Crear reglas de la bandeja de entrada en OWA](https://docs.ovh.com/es/microsoft-collaborative-solutions/crear-reglas-de-bandeja-de-entrada-en-owa/)
+[Crear reglas de la bandeja de entrada en OWA]( /pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
 
-[Añadir un alias a una cuenta de correo](https://docs.ovh.com/es/microsoft-collaborative-solutions/email-alias/)
+[Añadir un alias a una cuenta de correo](/pages/web/emails/feature_redirections)
 
 [Crear firmas automáticas](/pages/web/microsoft-collaborative-solutions/feature_footers)
 
 [Gestionar la facturación de sus cuentas Email Pro](/pages/web/emails-pro/manage_billing_emailpro)
 
-[Configurar la política de seguridad de un servicio de correo](https://docs.ovh.com/es/microsoft-collaborative-solutions/configurar-politica-seguridad-exchange/)
+[Configurar la política de seguridad de un servicio de correo](/pages/web/emails/security-policy)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

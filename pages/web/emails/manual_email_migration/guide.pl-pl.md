@@ -12,7 +12,7 @@ updated: 2021-01-05
 
 ## Wprowadzenie
 
-[Automatyczna](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange-migracja-kont-e-mail-ovh-mail-migrator/){.external} migracja konta e-mail jest możliwa przy użyciu narzędzia [OVH Mail Migrator](https://omm.ovh.net/){.external}. Możesz również ręcznie przenieść Twoje konto e-mail za pomocą programu pocztowego.
+[Automatyczna](/pages/web/emails/migration_omm){.external} migracja konta e-mail jest możliwa przy użyciu narzędzia [OVH Mail Migrator](https://omm.ovh.net/){.external}. Możesz również ręcznie przenieść Twoje konto e-mail za pomocą programu pocztowego.
 
 **Dowiedz się, jak przenieść ręcznie Twoje konto e-mail.**
 
@@ -32,7 +32,7 @@ updated: 2021-01-05
 ## W praktyce
 
 > [!primary]
-> Sprawdź najpierw, czy automatyczna migracja jest możliwa przy użyciu narzędzia [OVH Mail Migrator](https://omm.ovh.net/){.external}. W tym celu skorzystaj z przewodnika [Migracja kont e-mail przez OVH Mail Migrator](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange-migracja-kont-e-mail-ovh-mail-migrator/){.external}.
+> Sprawdź najpierw, czy automatyczna migracja jest możliwa przy użyciu narzędzia [OVH Mail Migrator](https://omm.ovh.net/){.external}. W tym celu skorzystaj z przewodnika [Migracja kont e-mail przez OVH Mail Migrator](/pages/web/emails/migration_omm){.external}.
 
 W tym przewodniku przeprowadziliśmy operacje na 3 najczęściej używanych programach pocztowych, **Outlook**, **Mail** na Mac OS i **Thunderbird**.
 
@@ -236,6 +236,6 @@ foldery i e-maile zapisane adresu e-mail znajdziesz w skrzynce odbiorczej oraz w
 
 ## Sprawdź również
 
-[Przeniesienie kont e-mail za pomocą OVH Mail Migrator](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange-migracja-kont-e-mail-ovh-mail-migrator/){.external}
+[Przeniesienie kont e-mail za pomocą OVH Mail Migrator](/pages/web/emails/migration_omm){.external}
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

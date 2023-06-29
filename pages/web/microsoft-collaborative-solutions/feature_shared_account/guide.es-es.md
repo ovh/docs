@@ -98,7 +98,7 @@ Desde Outlook, encontrará su cuenta compartida en la columna de la izquierda, d
 
 ## Más información
 
-[Consultar una cuenta Exchange desde la interfaz OWA](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2016_guia_de_uso_de_outlook_web_app/)
+[Consultar una cuenta Exchange desde la interfaz OWA](/pages/web/emails/email_owa)
 
 [Desplegar permisos en una cuenta Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 

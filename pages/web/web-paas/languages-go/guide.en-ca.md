@@ -66,7 +66,7 @@ web:
         /:
             # Route all requests to the Go app, unconditionally.
             # If you want some files served directly by the web server without hitting Go, see
-            # https://docs.ovh.com/gb/en/web-paas/configuration-app/web/
+            #  [Configuration app](/pages/web/web-paas/configuration-app)
             allow: false
             passthru: true
 

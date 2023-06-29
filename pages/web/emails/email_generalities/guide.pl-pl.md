@@ -112,7 +112,7 @@ Chcesz zwiększyć bezpieczeństwo dostępu do Twoich kont e-mail.
 
 Możesz to zrobić, ustawiając politykę bezpieczeństwa Twojego rozwiązania MX Plan.
 
-Zapraszamy do zapoznania się z naszym przewodnikiem [Zarządzanie polityką bezpieczeństwa usługi e-mail](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-polityka-bezpieczenstwa-exchange/).
+Zapraszamy do zapoznania się z naszym przewodnikiem [Zarządzanie polityką bezpieczeństwa usługi e-mail](/pages/web/emails/security-policy).
 
 ##### **Przekierowania**
 
@@ -122,7 +122,7 @@ W tym celu należy utworzyć przekierowanie.
 
 Możesz to zrobić na dwa sposoby:
 
-- utworzyć przekierowanie w interfejsie webmail zgodnie z regułami skrzynki odbiorczej. W tym celu zapoznaj się z naszym przewodnikiem [Reguły skrzynki odbiorczej w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/tworzenie-regul-skrzynki-odbiorczej-w-owa/#przyklad-1-przekierowanie-e-maili-na-inny-adres).
+- utworzyć przekierowanie w interfejsie webmail zgodnie z regułami skrzynki odbiorczej. W tym celu zapoznaj się z naszym przewodnikiem [Reguły skrzynki odbiorczej w interfejsie OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan#przyklad-1-przekierowanie-e-maili-na-inny-adres).
 
 - utworzyć przekierowanie w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Metoda ta pozwala na przykład na utworzenie aliasu, czyli przekierowanie nieistniejącego konta e-mail na istniejący adres e-mail. W tym celu zapoznaj się z naszym przewodnikiem [Korzystanie z przekierowań e-mail](/pages/web/emails/feature_redirections#nowa-wersja-uslugi-mx-plan).
 
@@ -249,6 +249,6 @@ W tym celu możesz utworzyć listę mailingową. Zapraszamy do zapoznania się z
 
 Trwa migracja historycznych ofert MX Plan do nowych ofert MX Plan. Jeśli chcesz najpierw poprosić o migrację Twojej oferty, zapoznaj się z informacjami na [tej stronie](https://www.ovh.pl/mxplan-migration/#accordion_6001-4).
 
-Jeśli Twoje potrzeby się zmienią i chcesz korzystać z dodatkowych funkcji, możesz również [przenieść adres e-mail MX Plan na konto E-mail Pro lub Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/migracja-adres-e-mail-na-hostingu-na-exchange/).
+Jeśli Twoje potrzeby się zmienią i chcesz korzystać z dodatkowych funkcji, możesz również [przenieść adres e-mail MX Plan na konto E-mail Pro lub Exchange](/pages/web/emails/migration_control_panel).
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

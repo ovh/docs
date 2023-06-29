@@ -143,7 +143,7 @@ You will need to configure your email address on the device you want to use (e.g
 > [!tabs]
 > **Windows**
 >>
->> - [Mail on Windows 10](https://docs.ovh.com/ie/en/emails/mail-configuration-windows-10/)
+>> - [Mail on Windows 10](/pages/web/emails/how_to_configure_windows_10)
 >> - [Outlook](/pages/web/emails/how_to_configure_outlook_2016)
 >> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_windows)
 >>

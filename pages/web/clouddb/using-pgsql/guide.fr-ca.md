@@ -105,7 +105,7 @@ psql --host=serveur --port=port --user=utilisateur --password=password nom_de_la
 
 > [!primary]
 >
-> Dans certains cas, il se peut que la RAM disponible dans votre instance Web Cloud Databases ne permette pas de réaliser l'export ou l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. Reportez-vous à la documentation [« Premiers pas avec le service Web Cloud Databases »](https://docs.ovh.com/ca/fr/debuter-avec-clouddb/#importation-dune-base-de-donnees){.external} si nécessaire.
+> Dans certains cas, il se peut que la RAM disponible dans votre instance Web Cloud Databases ne permette pas de réaliser l'export ou l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. Reportez-vous à la documentation [« Premiers pas avec le service Web Cloud Databases »](/pages/web/clouddb/starting_with_clouddb#importation-dune-base-de-donnees){.external} si nécessaire.
 >
 
 ## Aller plus loin

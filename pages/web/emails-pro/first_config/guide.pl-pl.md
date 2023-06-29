@@ -132,16 +132,16 @@ Aby skonfigurować Twoje konto e-mail w programie pocztowym lub na urządzeniu t
 
 ## Sprawdź również
 
-[Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/)
+[Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](/pages/web/emails/email_owa)
 
-[Tworzenie reguł skrzynki odbiorczej w aplikacji OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/tworzenie-regul-skrzynki-odbiorczej-w-owa/)
+[Tworzenie reguł skrzynki odbiorczej w aplikacji OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
 
-[Dodaj alias do konta e-mail](https://docs.ovh.com/pl/microsoft-collaborative-solutions/email-alias/)
+[Dodaj alias do konta e-mail](/pages/web/emails/feature_redirections)
 
 [Tworzenie automatycznych podpisów](/pages/web/microsoft-collaborative-solutions/feature_footers)
 
 [Zarządzanie płatnościami za Twoje konta E-mail Pro](/pages/web/emails-pro/manage_billing_emailpro)
 
-[Zarządzanie polityką bezpieczeństwa usługi e-mail](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-polityka-bezpieczenstwa-exchange/)
+[Zarządzanie polityką bezpieczeństwa usługi e-mail](/pages/web/emails/security-policy)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

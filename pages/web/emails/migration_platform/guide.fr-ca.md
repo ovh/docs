@@ -73,7 +73,7 @@ Dans l'onglet `Comptes e-mail`{.action} de votre plateforme, cliquez sur le bout
 > 
 > Seules les données de vos comptes e-mail seront migrées (e-mails, contacts, calendriers, règles de boîte de réception, etc.). Les fonctionnalités liées à votre plateforme devront être recréées sur la nouvelle plateforme :
 >
-> - [Alias](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-ajouter-un-alias-sur-un-e-mail-depuis-le-manager/) 
+> - [Alias](/pages/web/emails/feature_redirections) 
 > - [Délégations de droits](/pages/web/microsoft-collaborative-solutions/feature_delegation) 
 > - [Groupes](/pages/web/microsoft-collaborative-solutions/feature_groups)
 > - Contacts externes
@@ -81,9 +81,9 @@ Dans l'onglet `Comptes e-mail`{.action} de votre plateforme, cliquez sur le bout
 
 Migrez le compte e-mail « source » vers le compte de votre nouvelle plateforme à l'aide de notre outil [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
 
-> Si vous devez migrer plusieurs comptes e-mail, nous vous conseillons d'utiliser le mode [Project](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/migration-comptes-e-mail-ovh-mail-migrator/#realiser-et-suivre-une-migration-multiple-mode-projet) via [OMM](https://omm.ovh.net/Project/Create), il vous permettra d'importer un tableau au format CSV contenant les informations des comptes e-mail à migrer.
+> Si vous devez migrer plusieurs comptes e-mail, nous vous conseillons d'utiliser le mode [Project](/pages/web/emails/migration_omm#realiser-et-suivre-une-migration-multiple-mode-projet) via [OMM](https://omm.ovh.net/Project/Create), il vous permettra d'importer un tableau au format CSV contenant les informations des comptes e-mail à migrer.
 
-Pour plus d'information sur OMM, consultez notre guide [Migrer des comptes e-mail via OVH Mail Migrator](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/migration-comptes-e-mail-ovh-mail-migrator/).
+Pour plus d'information sur OMM, consultez notre guide [Migrer des comptes e-mail via OVH Mail Migrator](/pages/web/emails/migration_omm).
 
 ![email-migration](images/migration_platform06.png){.thumbnail}
 

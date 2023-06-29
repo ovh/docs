@@ -12,7 +12,7 @@ updated: 2021-01-05
 
 ## Objetivo
 
-[A migração automática](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange-migracao-de-contas-email-ovh-mail-migrator/){.external} de um endereço de e-mail é possível através da nossa ferramenta [OVH Mail Migrator](https://omm.ovh.net/){.external}. Também pode migrar manualmente o seu endereço de e-mail através dos softwares de e-mail.
+[A migração automática](/pages/web/emails/migration_omm){.external} de um endereço de e-mail é possível através da nossa ferramenta [OVH Mail Migrator](https://omm.ovh.net/){.external}. Também pode migrar manualmente o seu endereço de e-mail através dos softwares de e-mail.
 
 **Saiba como migrar manualmente o seu endereço de e-mail.**
 
@@ -32,7 +32,7 @@ updated: 2021-01-05
 ## Instruções
 
 > [!primary]
-> Em primeiro lugar, verifique se a migração automática é possível através da nossa ferramenta [OVH Mail Migrator](https://omm.ovh.net/){.external}. Para isso, consulte o guia [Migrar contas de e-mail através do OVH Mail Migrator](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange-migracao-de-contas-email-ovh-mail-migrator/){.external}.
+> Em primeiro lugar, verifique se a migração automática é possível através da nossa ferramenta [OVH Mail Migrator](https://omm.ovh.net/){.external}. Para isso, consulte o guia [Migrar contas de e-mail através do OVH Mail Migrator](/pages/web/emails/migration_omm){.external}.
 
 Neste manual, realizámos as operações nos 3 softwares de e-mail mais utilizados, **Outlook**, **Mail** para Mac OS e **Thunderbird**.
 
@@ -236,6 +236,6 @@ Na caixa de entrada e na coluna da esquerda, irá encontrar as pastas e os e-mai
 
 ## Quer saber mais?
 
-[Migrar contas de e-mail através do OVH Mail Migrator](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange-migracao-de-contas-email-ovh-mail-migrator/){.external}
+[Migrar contas de e-mail através do OVH Mail Migrator](/pages/web/emails/migration_omm){.external}
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

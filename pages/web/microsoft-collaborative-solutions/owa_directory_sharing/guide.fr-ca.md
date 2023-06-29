@@ -96,7 +96,7 @@ Connectez-vous à votre compte Exchange via le [webmail OVHcloud](https://www.ov
 
 ## Aller plus loin
 
-[Consulter son compte Exchange depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/)
+[Consulter son compte Exchange depuis l’interface OWA](/pages/web/emails/email_owa)
 
 [Déléguer des droits sur un compte Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 

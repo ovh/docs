@@ -72,7 +72,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-Su dirección de correo Exchange y todas sus funciones colaborativas también están disponibles en la interfaz [OWA](https://www.ovh.es/mail/). Si tiene cualquier duda sobre su uso, no dude en consultar nuestra guía [Consultar su cuenta Exchange desde la interfaz OWA](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2016_guia_de_uso_de_outlook_web_app/).
+Su dirección de correo Exchange y todas sus funciones colaborativas también están disponibles en la interfaz [OWA](https://www.ovh.es/mail/). Si tiene cualquier duda sobre su uso, no dude en consultar nuestra guía [Consultar su cuenta Exchange desde la interfaz OWA](/pages/web/emails/email_owa).
 
 ### Obtener una copia de seguridad de su dirección de correo
 

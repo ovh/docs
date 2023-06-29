@@ -36,7 +36,7 @@ Para seguir los pasos de esta guía, es necesario:
 
 - Tener una [instancia Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) (incluida en un plan de [hosting Performance](https://www.ovhcloud.com/es/web-hosting/))
 - Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
-- Haber consultado la [guía de inicio de Web Cloud Databases](https://docs.ovh.com/us/es/empezar-con-clouddb/).
+- Haber consultado la [guía de inicio de Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb).
 
 ## Procedimiento
 
@@ -62,7 +62,7 @@ Para conectarse a ella, es necesario disponer de la siguiente información relat
 
 Puede encontrar todos estos datos en el [área de cliente OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
-Para más información, puede consultar la guía [Primeros pasos con el servicio Cloud Databases](https://docs.ovh.com/us/es/empezar-con-clouddb/).
+Para más información, puede consultar la guía [Primeros pasos con el servicio Cloud Databases](/pages/web/clouddb/starting_with_clouddb).
 
 #### Conexion en linea de comandos
 
@@ -121,7 +121,7 @@ cat nombre_de_la_BD.sql | mysql --host=servidor --user=usuario --port=puerto --c
 
 > [!primary]
 >
-> En algunos casos, la RAM disponible en la instancia Cloud Databases puede no permitir la exportación o importación deseadas. En ese caso, le recomendamos que utilice la herramienta OVHcloud en el área de cliente. Si lo necesita, consulte la guía ["Primeros pasos con el servicio Cloud Databases"](https://docs.ovh.com/us/es/empezar-con-clouddb/).
+> En algunos casos, la RAM disponible en la instancia Cloud Databases puede no permitir la exportación o importación deseadas. En ese caso, le recomendamos que utilice la herramienta OVHcloud en el área de cliente. Si lo necesita, consulte la guía ["Primeros pasos con el servicio Cloud Databases"](/pages/web/clouddb/starting_with_clouddb).
 >
 
 ## Más información

@@ -74,7 +74,7 @@ To use your email address with a third-party software, you will need to configur
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
-|[Windows 10](https://docs.ovh.com/ie/en/emails/mail-configuration-windows-10/)|[Outlook Windows](/pages/web/emails/how_to_configure_outlook_2016)|[MacOS Mail (latest version)](/pages/web/emails/how_to_configure_mail_macos)|[Android (latest version)](/pages/web/emails/how_to_configure_android)|
+|[Windows 10]( /pages/web/emails/how_to_configure_windows_10)|[Outlook Windows](/pages/web/emails/how_to_configure_outlook_2016)|[MacOS Mail (latest version)](/pages/web/emails/how_to_configure_mail_macos)|[Android (latest version)](/pages/web/emails/how_to_configure_android)|
 |[Thunderbird](/pages/web/emails/how_to_configure_thunderbird_windows)|[Outlook Mac OS](/pages/web/emails/how_to_configure_outlook_2016_mac)|[Mail for iPhone or iPad](/pages/web/emails/how_to_configure_ios)|
 |||[Thunderbird Mac OS](/pages/web/emails/how_to_configure_thunderbird_mac)|
 
@@ -107,7 +107,7 @@ You may want to increase the security of access to your email addresses.
 
 You can do this by setting the security policy for your MX Plan solution.
 
-Please follow our guide on [Managing the security policy of an email service](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/manage-security-policy-password/).
+Please follow our guide on [Managing the security policy of an email service](/pages/web/emails/security-policy).
 
 ##### **Redirections**
 
@@ -117,7 +117,7 @@ To do this, you will need to create a redirection.
 
 You can do this in two ways:
 
-- Creating a redirection in the webmail interface, via inbox rules. To do this, please follow our guide on [Inbox rules in OWA](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/creating-inbox-rules-in-owa/#example-1-redirecting-emails-to-another-address).
+- Creating a redirection in the webmail interface, via inbox rules. To do this, please follow our guide on [Inbox rules in OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan#example-1-redirecting-emails-to-another-address).
 
 - Creating a redirection from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). For example, you can use this method to create an alias, i.e. redirect an email address that does not exist to an existing email address. To do this, please follow our guide on [Using email](/pages/web/emails/feature_redirections#mx-plan-new-version) redirections.
 
@@ -190,7 +190,7 @@ To use your email accounts with a third-party software, you will need to configu
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
-|[Windows 10](https://docs.ovh.com/ie/en/emails/mail-configuration-windows-10/)|[Outlook Windows](/pages/web/emails/how_to_configure_outlook_2016)|[MacOS Mail (latest version)](/pages/web/emails/how_to_configure_mail_macos)|[Android (latest version)](/pages/web/emails/how_to_configure_android)|
+|[Windows 10]( /pages/web/emails/how_to_configure_windows_10)|[Outlook Windows](/pages/web/emails/how_to_configure_outlook_2016)|[MacOS Mail (latest version)](/pages/web/emails/how_to_configure_mail_macos)|[Android (latest version)](/pages/web/emails/how_to_configure_android)|
 |[Thunderbird](/pages/web/emails/how_to_configure_thunderbird_windows)|[Outlook Mac OS](/pages/web/emails/how_to_configure_outlook_2016_mac)|[Mail for iPhone or iPad](/pages/web/emails/how_to_configure_ios)|
 |||[Thunderbird Mac OS](/pages/web/emails/how_to_configure_thunderbird_mac)|
 
@@ -232,7 +232,7 @@ You can then use the automatic reply function of your email accounts. Please fol
 
 You may want to **delegate all the email services for a domain name to another OVHcloud account** , or **delegate one or more email accounts to another OVHcloud account**. For example, you can allow the holder of this other OVHcloud account to change the password for an email account.
 
-Please follow our guide on [Delegating email management to another person](https://docs.ovh.com/ie/en/emails/delegate-managing-emails/).
+Please follow our guide on [Delegating email management to another person]( /pages/web/microsoft-collaborative-solutions/feature_delegation).
 
 ##### **Mailing lists**
 
@@ -244,6 +244,6 @@ To do this, you can create a mailing list. Please follow our guide on [Managing 
 
 The legacy MX Plan solutions are being migrated to the new MX Plan solutions. If you would like to migrate your solution as a priority, you can follow the instructions on [this page](https://www.ovh.co.uk/mxplan-migration/#accordion_6001-4).
 
-If your needs change and you want additional features, you can also [migrate an MX Plan email address to an Email Pro or Exchange account](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/migration-email-address-to-exchange/).
+If your needs change and you want additional features, you can also [migrate an MX Plan email address to an Email Pro or Exchange account](/pages/web/emails/migration_control_panel).
 
 Join our community of users on <https://community.ovh.com/en/>.

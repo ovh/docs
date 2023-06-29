@@ -107,7 +107,7 @@ You may want to increase the security of access to your email addresses.
 
 You can do this by setting the security policy for your MX Plan solution.
 
-Please follow our guide on [Managing the security policy of an email service](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/manage-security-policy-password/).
+Please follow our guide on [Managing the security policy of an email service](/pages/web/emails/security-policy).
 
 ##### **Redirections**
 
@@ -117,7 +117,7 @@ To do this, you will need to create a redirection.
 
 You can do this in two ways:
 
-- Creating a redirection in the webmail interface, via inbox rules. To do this, please follow our guide on [Inbox rules in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/creating-inbox-rules-in-owa/#example-1-redirecting-emails-to-another-address).
+- Creating a redirection in the webmail interface, via inbox rules. To do this, please follow our guide on [Inbox rules in OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan#example-1-redirecting-emails-to-another-address).
 
 - Creating a redirection from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). For example, you can use this method to create an alias, i.e. redirect an email address that does not exist to an existing email address. To do this, please follow our guide on [Using email](/pages/web/emails/feature_redirections#mx-plan-new-version) redirections.
 
@@ -244,6 +244,6 @@ To do this, you can create a mailing list. Please follow our guide on [Managing 
 
 The legacy MX Plan solutions are being migrated to the new MX Plan solutions. If you would like to migrate your solution as a priority, you can follow the instructions on [this page](https://www.ovh.co.uk/mxplan-migration/#accordion_6001-4).
 
-If your needs change and you want additional features, you can also [migrate an MX Plan email address to an Email Pro or Exchange account](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/migration-email-address-to-exchange/).
+If your needs change and you want additional features, you can also [migrate an MX Plan email address to an Email Pro or Exchange account](/pages/web/emails/migration_control_panel).
 
 Join our community of users on <https://community.ovh.com/en/>.

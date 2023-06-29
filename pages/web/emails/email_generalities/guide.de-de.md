@@ -109,7 +109,7 @@ Wenn Sie nur die Einstellungsdetails zur Konfiguration Ihres E-Mail-Accounts ben
 
 Um die Zugriffssicherheit auf Ihre E-Mail-Accounts zu erhöhen, können Sie Sicherheitseinstellungen für Ihre MX Plan Lösung vornehmen.
 
-Folgen Sie dazu unserer Anleitung "[Sicherheitseinstellungen eines E-Mail-Dienstes verwalten](https://docs.ovh.com/de/microsoft-collaborative-solutions/passwort-sicherheitseinstellungen-verwalten/)".
+Folgen Sie dazu unserer Anleitung "[Sicherheitseinstellungen eines E-Mail-Dienstes verwalten](/pages/web/emails/security-policy)".
 
 ##### **Weiterleitungen**
 
@@ -117,7 +117,7 @@ Sie können Ihre E-Mails an einen anderen Empfänger weiterleiten oder einen Ali
 
 Dazu können Sie Weiterleitungen erstellen. Sie können dies auf zwei Arten tun:
 
-- Ihre Weiterleitung über das Webmail-Interface mithilfe der Posteingangsregeln erstellen. Folgen Sie hierzu unserer Anleitung "[Posteingangsregeln in OWA erstellen](https://docs.ovh.com/de/microsoft-collaborative-solutions/posteingangsregeln-in-owa-erstellen/#beispiel-1-e-mails-an-eine-andere-adresse-umleiten)".
+- Ihre Weiterleitung über das Webmail-Interface mithilfe der Posteingangsregeln erstellen. Folgen Sie hierzu unserer Anleitung "[Posteingangsregeln in OWA erstellen](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan#beispiel-1-e-mails-an-eine-andere-adresse-umleiten)".
 
 - Ihre Weiterleitung über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) anlegen. Mit dieser Methode können Sie zum Beispiel einen Alias erstellen, d.h. eine E-Mail-Adresse, die nicht existiert, auf eine bestehende E-Mail Adresse weiterleiten. Folgen Sie hierzu unserer Anleitung "[E-Mail-Weiterleitungen verwenden](/pages/web/emails/feature_redirections#neue-mx-plan-version)".
 
@@ -245,6 +245,6 @@ Hierzu können Sie eine Mailingliste erstellen, mithilfe unserer Anleitung "[Mai
 
 Die Migration eines alten MX Plan Dienstes (*Legacy*) auf das neuere MX Plan Angebot kann angefordert werden, wenn Sie nach Beachtung der Hinweise auf [dieser Seite](https://www.ovh.de/mxplan-migration/#accordion_6001-4) die dort angegebene Mailingliste anschreiben (EN/FR).
 
-Wenn Ihre Bedürfnisse sich ändern und Sie zusätzliche Funktionen benötigen, können Sie auch [eine MX Plan E-Mail-Adresse auf einen E-Mail Pro oder Exchange Account migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-e-mail-adresse-auf-exchange/).
+Wenn Ihre Bedürfnisse sich ändern und Sie zusätzliche Funktionen benötigen, können Sie auch [eine MX Plan E-Mail-Adresse auf einen E-Mail Pro oder Exchange Account migrieren](/pages/web/emails/migration_control_panel).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

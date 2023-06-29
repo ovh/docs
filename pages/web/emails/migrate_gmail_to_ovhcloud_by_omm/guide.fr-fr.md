@@ -76,7 +76,7 @@ La fenêtre de suivi de migration (ci-dessous) s'affiche alors. Vous pouvez la l
 
 ![omm](images/OMM-gmail-step01-05.png){.thumbnail}
 
-Dans ce cas de figure, rendez-vous dans la boite de réception de votre compte Gmail et vérifiez si vous avez reçu l'e-mail avec l'objet **«Alerte de sécurité critique»**. Il s'agit d'une mesure de sécurité mise en place par Gmail. Afin de résoudre cette situation, suivez le guide : [Comment autoriser les connexions moins sécurisées sur Gmail](https://docs.ovh.com/fr/microsoft-collaborative-solutions/migration-de-gmail-via-ovh-mail-migrator/securite-gmail){.external}
+Dans ce cas de figure, rendez-vous dans la boite de réception de votre compte Gmail et vérifiez si vous avez reçu l'e-mail avec l'objet **«Alerte de sécurité critique»**. Il s'agit d'une mesure de sécurité mise en place par Gmail. Afin de résoudre cette situation, suivez le guide : [Comment autoriser les connexions moins sécurisées sur Gmail](/pages/web/emails/migrate_gmail_to_ovhcloud_by_omm/security_gmail){.external}
 
 Après avoir **autorisé les «connexions moins sécurisées»** sur Gmail, vous pourrez relancer la migration.
 
@@ -163,6 +163,6 @@ La fenêtre de suivi de migration s'affiche, vous pouvez laisser celle-ci ouvert
 
 ## Aller plus loin
 
-[Comment autoriser les connexions moins sécurisées sur Gmail](https://docs.ovh.com/fr/microsoft-collaborative-solutions/migration-de-gmail-via-ovh-mail-migrator/securite-gmail){.external}.
+[Comment autoriser les connexions moins sécurisées sur Gmail](/pages/web/emails/migrate_gmail_to_ovhcloud_by_omm/security_gmail){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.

@@ -32,7 +32,7 @@ By creating a delegation, you can enable an email account user to manage their o
 |MX Plan legacy version|MX Plan new version|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Find the solution in the section "Plan".|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Locate the `Server model` in the section "Summary".|
-|Continue reading this guide in the `[Instructions](#oldmxplan)` section below.|Continue with our guide on [Accessing your email account with OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/#changing-the-password).|
+|Continue reading this guide in the `[Instructions](#oldmxplan)` section below.|Continue with our guide on [Accessing your email account with OWA](/pages/web/emails/email_owa#changing-the-password).|
 
 ## Instructions <a name="oldmxplan"></a>
 

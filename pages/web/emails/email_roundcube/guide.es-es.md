@@ -36,7 +36,7 @@ El sistema le redirigirá a la interfaz Roundcube.
 > 
 > Si es redirigido a una interfaz **O**utlook **W**eb **A**ccess (OWA), significa que está en la última versión de la solución MX Plan. Para más información sobre la solución MX Plan, consulte nuestra página [Primeros pasos con la solución MX Plan](/pages/web/emails/email_generalities).
 >
-> Para familiarizarse con la interfaz **OWA**, consulte nuestra guía [Consultar su cuenta de correo desde la interfaz OWA](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2016_guia_de_uso_de_outlook_web_app/).
+> Para familiarizarse con la interfaz **OWA**, consulte nuestra guía [Consultar su cuenta de correo desde la interfaz OWA](/pages/web/emails/email_owa).
 
 ### Interfaz general del webmail Roundcube <a name="general-interface"></a>
 

@@ -76,7 +76,7 @@ Das Migrationsverfolgungsfenster wird angezeigt. Sie können es offen lassen, um
 
 ![omm](images/OMM-gmail-step01-05.png){.thumbnail}
 
-In diesem Fall rufen Sie den Posteingang Ihres Google Mail-Accounts auf und überprüfen Sie, ob Sie eine E-Mail mit Betreff in einer Variante von **„Kritische Sicherheitswarnung“** erhalten haben. Hier greift eine von Google Mail durchgeführte Sicherheitsmaßnahme. Um diesen Zustand zu beheben, folgen Sie unserer Anleitung [Weniger sichere Verbindungen in Google Mail zulassen](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-gmail-mit-ovh-mail-migrator/gmail-sicherheit).
+In diesem Fall rufen Sie den Posteingang Ihres Google Mail-Accounts auf und überprüfen Sie, ob Sie eine E-Mail mit Betreff in einer Variante von **„Kritische Sicherheitswarnung“** erhalten haben. Hier greift eine von Google Mail durchgeführte Sicherheitsmaßnahme. Um diesen Zustand zu beheben, folgen Sie unserer Anleitung [Weniger sichere Verbindungen in Google Mail zulassen](/pages/web/emails/migrate_gmail_to_ovhcloud_by_omm).
 
 Nachdem Sie in Google Mail **„weniger sichere Apps“ zugelassen** haben, können Sie die Migration neu starten.
 
@@ -163,6 +163,6 @@ Das Migrationsüberwachungsfenster wird angezeigt. Sie können es geöffnet lass
 
 ## Weiterführende Informationen
 
-[Weniger sichere Verbindungen in Google Mail zulassen](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-gmail-mit-ovh-mail-migrator/gmail-sicherheit).
+[Weniger sichere Verbindungen in Google Mail zulassen](/pages/web/emails/migrate_gmail_to_ovhcloud_by_omm).
 
 Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/).

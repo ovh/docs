@@ -79,7 +79,7 @@ En la pestaña `Cuentas de correo`{.action} de su plataforma, haga clic en el bo
 >
 > Solo se migrarán los datos de sus cuentas de correo (correo electrónico, contactos, calendarios, reglas de la bandeja de entrada, etc.). Las funcionalidades asociadas a su plataforma deberán crearse en la nueva plataforma:
 >
-> - [Alias](https://docs.ovh.com/es/microsoft-collaborative-solutions/email-alias/)
+> - [Alias](/pages/web/emails/feature_redirections)
 > - [Delegación de derechos](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 > - [Grupos](/pages/web/microsoft-collaborative-solutions/feature_groups)
 > - Contactos externos
@@ -87,9 +87,9 @@ En la pestaña `Cuentas de correo`{.action} de su plataforma, haga clic en el bo
 
 Migre la cuenta de correo de origen a la cuenta de su nueva plataforma utilizando nuestra herramienta [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
 
-> Si debe migrar varias cuentas de correo, le recomendamos que utilice el modo [Proyecto](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange-migracion-de-cuentas-correo-ovh-mail-migrator/#project) a través de [OMM](https://omm.ovh.net/Project/Create), para importar una tabla en formato CSV con la información de las cuentas de correo que vaya a migrar.
+> Si debe migrar varias cuentas de correo, le recomendamos que utilice el modo [Proyecto](/pages/web/emails/migration_omm#project) a través de [OMM](https://omm.ovh.net/Project/Create), para importar una tabla en formato CSV con la información de las cuentas de correo que vaya a migrar.
 
-Para más información sobre OMM, consulte nuestra guía [Migrar cuentas de correo a través de OVH Mail Migrator](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange-migracion-de-cuentas-correo-ovh-mail-migrator/).
+Para más información sobre OMM, consulte nuestra guía [Migrar cuentas de correo a través de OVH Mail Migrator](/pages/web/emails/migration_omm).
 
 ![email-migración](images/migration_platform06.png){.thumbnail}
 
