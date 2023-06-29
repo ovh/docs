@@ -1,9 +1,6 @@
 ---
 title: Getting started with a POWER web hosting plan
-slug: getting-started-with-power-web-hosting
 excerpt: Find out how to get started with a POWER Web Hosting plan
-section: Getting started
-order: 1
 updated: 2021-02-04
 ---
 
@@ -58,7 +55,7 @@ At the activation of your POWER web hosting plan, we have sent you an email with
 
 ![FTP - SSH access](images/getting-started-02.png){.thumbnail}
 
-You will find detailed information on this topic in our [SSH guide](../../hosting/web_hosting_ssh_on_web_hosting_packages/).
+You will find detailed information on this topic in our [SSH guide](/pages/web/hosting/ssh_on_webhosting).
 
 
 #### Adding a domain name
@@ -67,7 +64,7 @@ For default, your POWER web hosting plan is attached to a generated URL. In orde
 
 ![Adding a domain name](images/getting-started-03.png){.thumbnail}
 
-You will find detailed information on this topic in our [Hosting multiple websites on your Web Hosting plan](../../hosting/multisites-configuring-multiple-websites/) guide.
+You will find detailed information on this topic in our [Hosting multiple websites on your Web Hosting plan](/pages/web/hosting/multisites_configure_multisite) guide.
 
 
 #### Using a database
@@ -76,7 +73,7 @@ Your POWER web hosting plan includes databases. They can be accessed from the `D
 
 ![Using a database](images/getting-started-04.png){.thumbnail}
 
-You will find detailed information on this topic in our [Creating and managing a database in your Web Hosting plan](../../hosting/creating-database/) guide.
+You will find detailed information on this topic in our [Creating and managing a database in your Web Hosting plan](/pages/web/hosting/sql_create_database) guide.
 
 
 #### Accessing logs and statistics
@@ -85,7 +82,7 @@ Web server logs and website statistics are included in your POWER web hosting pl
 
 ![Accessing logs and statistics](images/getting-started-05.png){.thumbnail}
 
-You will find detailed information on this topic in our [Accessing a website’s logs and statistics on a Web Hosting](../../hosting/shared_view_my_websites_logs_and_statistics/) guide.
+You will find detailed information on this topic in our [Accessing a website’s logs and statistics on a Web Hosting](/pages/web/hosting/logs_and_statistics) guide.
 
 ### Node.js
 
@@ -208,7 +205,7 @@ Then [restart your instance](#restart).
 
 ### From the API
 
-This tutorial presupposes that you already have some familiarity with the [OVHcloud APIs](https://api.ovh.com/). If you want to know more on this topic, please look at the [First Steps with the OVHcloud APIs](../../api/first-steps-with-ovh-api/) guide.
+This tutorial presupposes that you already have some familiarity with the [OVHcloud APIs](https://api.ovh.com/). If you want to know more on this topic, please look at the [First Steps with the OVHcloud APIs](/pages/account/api/first-steps) guide.
 
 The [OVHcloud APIs](https://api.ovh.com/) currently available for POWER hosting plans are:
 
@@ -274,13 +271,13 @@ In your document root you should `touch` the file `tmp/restart.txt`.
 
 ## Go further
 
-[Accessing a web hosting plan via SSH](../../hosting/web_hosting_ssh_on_web_hosting_packages/) 
+[Accessing a web hosting plan via SSH](/pages/web/hosting/ssh_on_webhosting) 
 
-[Hosting multiple websites on your Web Hosting plan](../../hosting/multisites-configuring-multiple-websites/)
+[Hosting multiple websites on your Web Hosting plan](/pages/web/hosting/multisites_configure_multisite)
 
-[Creating and managing a database in your Web Hosting plan](../../hosting/creating-database/)
+[Creating and managing a database in your Web Hosting plan](/pages/web/hosting/sql_create_database)
 
-[Accessing a website’s logs and statistics on a Web Hosting](../../hosting/shared_view_my_websites_logs_and_statistics/)
+[Accessing a website’s logs and statistics on a Web Hosting](/pages/web/hosting/logs_and_statistics)
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
 

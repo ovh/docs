@@ -1,9 +1,6 @@
 ---
 title: Advanced replication with Leap
-slug: leap-replication
 excerpt: Implementing advanced replication with Leap
-section: Disaster Recovery Plan
-order: 05
 updated: 2022-07-18
 ---
 
@@ -34,7 +31,7 @@ Nutanix Leap allows:
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 - Access to your clusters via **Prism Central**
 - An interconnection between two clusters, for example using these technologies:
-    - via an IPsec VPN as detailed in the guide [Interconnecting IPsec between two sites](https://docs.ovh.com/us/en/nutanix/ipsec-interconnection/)
+    - via an IPsec VPN as detailed in the guide [Interconnecting IPsec between two sites](/pages/cloud/nutanix/44-ipsec-interconnection)
     - or via a [vRack](https://www.ovh.com/world/solutions/vrack/) connection.
 - **Prism Central** needs more resources depending on the mode:
     - Single Mode: 4GB additional RAM.
@@ -56,7 +53,7 @@ Our Disaster Recovery Plan via **Nutanix Leap** will be set up between two clust
 
 Before you enable **Nutanix Leap**, you must add an IP address for iSCSI connections on each cluster.
 
-Using **Prism Central**, connect to **Prism Element** on the cluster in France. You can use the [Nutanix Hyperconvergence guide](https://docs.ovh.com/us/en/nutanix/nutanix-hci/) for more information.
+Using **Prism Central**, connect to **Prism Element** on the cluster in France. You can use the [Nutanix Hyperconvergence guide](/pages/cloud/nutanix/03-nutanix-hci) for more information.
 
 In the top left-hand corner of the **Prism Element** dashboard, click `the cluster name`{.action}.
 
@@ -506,9 +503,9 @@ The virtual machine that is a member of the disaster recovery plan will boot to 
 
 ## Go further
 
-[Disaster Recovery Plan on Nutanix](https://docs.ovh.com/us/en/nutanix/disaster-recovery-plan-overview/)
+[Disaster Recovery Plan on Nutanix](/pages/cloud/nutanix/43-disaster-recovery-plan-overview)
 
-[IPsec interconnect between two sites](https://docs.ovh.com/us/en/nutanix/ipsec-interconnection/)
+[IPsec interconnect between two sites](/pages/cloud/nutanix/44-ipsec-interconnection)
 
 [OVHcloud vRack](https://www.ovh.com/world/solutions/vrack/)
 

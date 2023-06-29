@@ -1,10 +1,6 @@
 ---
 title: 'Modifying the vCenter access policy'
-slug: modify-vcenter-access-policy
-routes:
-    canonical: 'https://docs.ovh.com/ie/en/private-cloud/modify-vcenter-access-policy/'
 excerpt: 'Find out how to change the access policy for vCenter'
-section: 'OVHcloud services and options'
 updated: 2020-11-18
 ---
 
@@ -35,12 +31,12 @@ In the new Window, choose "Open" or "Restricted" from the drop-down list and cli
 
 > [!primary]
 >
-> If you have set the access policy to "Restricted", follow up by consulting the guide on [Authorising IP addresses for vCenter access](../authorise-ip-addresses-vcenter).
+> If you have set the access policy to "Restricted", follow up by consulting the guide on [Authorising IP addresses for vCenter access](/pages/cloud/managed-bare-metal/vcenter-authorise-ip-access).
 > 
 
 
 ## Go further
 
-[Authorising IP addresses for vCenter access](../authorise-ip-addresses-vcenter)
+[Authorising IP addresses for vCenter access](/pages/cloud/managed-bare-metal/vcenter-authorise-ip-access)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: Reverse DNS eines VPS konfigurieren
 excerpt: Erfahren Sie hier, wie Sie die Reverse DNS-Auflösung bearbeiten
-slug: reverse-dns-konfigurieren-vps
-section: Netzwerk & IP
-order: 3
 updated: 2023-01-05
 ---
 
@@ -43,13 +40,13 @@ Sie können den Reverse-Pfad auch direkt mithilfe des Icons in der Spalte "**Rev
 >
 Wenn die Änderung nicht wie erwartet funktioniert, überprüfen Sie, ob der Eintrag vom Typ `A` in der DNS-Zone Ihres Domainnamens korrekt konfiguriert ist. Beachten Sie, dass es bis zu 24 Stunden dauern kann, bis DNS-Zonenänderungen wirksam sind, falls Sie den `A`-Eintrag erst kürzlich bearbeitet haben.
 >
-Wenn der Domainname von OVHcloud als Registrar verwaltet wird und OVHcloud DNS-Server verwendet, können Sie den Anweisungen in [unserer Anleitung zu DNS](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/) folgen.
+Wenn der Domainname von OVHcloud als Registrar verwaltet wird und OVHcloud DNS-Server verwendet, können Sie den Anweisungen in [unserer Anleitung zu DNS](/pages/web/domains/dns_zone_edit) folgen.
 >
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Erste Schritte mit einem VPS](https://docs.ovh.com/de/vps/erste-schritte-mit-einem-vps/)
+[Erste Schritte mit einem VPS](/pages/cloud/vps/starting_with_a_vps)
 
-[Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/)
+[Bearbeiten der OVHcloud DNS-Zone](/pages/web/domains/dns_zone_edit)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: 'Importar una copia de seguridad en la base de datos de un alojamiento web'
-slug: web_hosting_importacion_de_una_base_de_datos_mysql
 excerpt: 'Cómo importar una copia de seguridad en la base de datos de un alojamiento web de OVH'
-section: 'Bases de datos'
-order: 04
 updated: 2018-09-25
 ---
 
@@ -140,7 +137,7 @@ No olvide sustituir la información genérica del script por los datos correspon
 
 #### 2. Cargar el script y la copia de seguridad en el espacio de almacenamiento
 
-Una vez que haya creado el script de importación, deberá cargarlo, junto con el archivo de backup que quiera importar, en el espacio de almacenamiento de su alojamiento web. Para ello, conéctese al espacio de almacenamiento. Si necesita ayuda, consulte el paso «2. Conectarse al espacio de almacenamiento» de la guía [Publicar un sitio web en internet](https://docs.ovh.com/es/hosting/web_hosting_publicar_un_sitio_web_en_internet/#2-conectarse-al-espacio-de-almacenamiento){.external}.
+Una vez que haya creado el script de importación, deberá cargarlo, junto con el archivo de backup que quiera importar, en el espacio de almacenamiento de su alojamiento web. Para ello, conéctese al espacio de almacenamiento. Si necesita ayuda, consulte el paso «2. Conectarse al espacio de almacenamiento» de la guía [Publicar un sitio web en internet](/pages/web/hosting/hosting_how_to_get_my_website_online#2-conectarse-al-espacio-de-almacenamiento){.external}.
 
 Para poder realizar las siguientes acciones, cargue el script de importación y el archivo de backup en la carpeta «www». **Preste especial atención al nombre del archivo del script de importación**: cuando cargue el script, asegúrese de no sobrescribir un archivo presente en su espacio de almacenamiento que pueda tener el mismo nombre. Si aparece un mensaje de aviso que indique lo anterior, cambie el nombre del script que acaba de crear por otro diferente y vuelva a intentar cargarlo.
 

@@ -1,9 +1,6 @@
 ---
 title: 'Launching a script when an instance is created'
-slug: launch-a-script-when-instance-is-created
 legacy_guide_number: 1932
-section: OpenStack
-order: 9
 updated: 2022-03-18
 ---
 
@@ -18,8 +15,8 @@ In some situations, you will need to launch a script when you create an instance
 
 ## Requirements
 
-- [An environment that is ready to use the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/)
-- [OpenStack environment variables set](../set-openstack-environment-variables/)
+- [An environment that is ready to use the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [OpenStack environment variables set](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## Instructions
 

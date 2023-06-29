@@ -1,9 +1,6 @@
 ---
 title: 'Utilizar SSH en un web hosting'
 excerpt: 'Cómo conectarse y utilizar el acceso SSH en un alojamiento web de OVHcloud'
-slug: web_hosting_ssh_en_alojamiento_compartido
-section: FTP y SSH
-order: 07
 updated: 2022-01-19
 ---
 
@@ -110,8 +107,8 @@ Según la versión de PHP que utilice, es posible que tenga que modificar el ent
 
 ## Más información
 
-[Modificar la configuración de un alojamiento web](https://docs.ovh.com/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento/)
+[Modificar la configuración de un alojamiento web](/pages/web/hosting/ovhconfig_modify_system_runtime)
 
-[Configurar el archivo .ovhconfig de un alojamiento web](https://docs.ovh.com/es/hosting/configurar-archivo-ovhconfig/)
+[Configurar el archivo .ovhconfig de un alojamiento web](/pages/web/hosting/ovhconfig_configuration)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

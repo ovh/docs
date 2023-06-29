@@ -1,9 +1,6 @@
 ---
 title: Enterprise File Storage - API verwenden
-slug: netapp/quick-start
 excerpt: Erfahren Sie hier die ersten Schritte mit Ihrem Enterprise File Storage und der OVHcloud API
-section: Enterprise File Storage
-order: 030
 updated: 2021-10-27
 ---
 
@@ -23,7 +20,7 @@ In dieser Schnellstart-Anleitung geben wir einen Überblick über die Verwendung
 
 - Sie verfügen über einen OVHcloud Enterprise File Storage
 - Sie sind zur Verwendung der [OVHcloud API](https://api.ovh.com/) eingeloggt
-- Grundlegendes Verständnis der [NFS-Freigabe](https://docs.ovh.com/de/storage/file-storage/nas/nfs/)
+- Grundlegendes Verständnis der [NFS-Freigabe](/pages/cloud/storage/file_storage/nas_nfs)
 
 ## Grundlagen
 

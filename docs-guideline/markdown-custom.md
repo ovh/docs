@@ -198,14 +198,14 @@
 > Tab title 1
 >> Some *content*
 > Tab title 2
->> {!> path/to/file.md !}
+>> Some *content*
 > Tab title 3
 >> ```
->> {!> path/to/file.md !}
+>> Some content
 >> ```
 ```
 
-An example can be found here : [guide source](https://github.com/ovh/docs/blob/master/pages/web/web-paas/languages-python/guide.en-gb.md) & [rendered version](https://docs.ovh.com/gb/en/web-paas/languages-python/).
+An example can be found here : [guide source](https://github.com/ovh/docs/blob/develop/pages/platform/databases/databases_07_cross_service_integration/guide.en-gb.md) & [rendered version](https://help.ovhcloud.com/csm/en-gb-databases-cross-service-integration?id=kb_article_view&sysparm_article=KB0048804#get-the-desired-cluster-id).
 
 ## Advanced
 

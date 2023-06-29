@@ -1,9 +1,6 @@
 ---
 title: "Geolokalisierung Ihrer Website in einem bestimmten Land"
 excerpt: "Diese Anleitung erklärt, wie Sie Ihre Website mithilfe unserer geolokalisierten IP-Adressen geolokalisieren"
-slug: geolokalisierung_auf_webhostings
-section: 'Webseitenoptimierung'
-order: 05
 updated: 2022-12-22
 ---
 
@@ -52,9 +49,9 @@ Klicken Sie auf `Weiter`{.action} und im nächsten Fenster auf `Bestätigen`{.ac
 
 >[!primary]
 >
-> Wenn die aktive DNS-Zone Ihres Domainnamens in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwaltet wird, ändert sich der A-Eintrag in der DNS-Zone Ihres Domainnamens automatisch. Um zu überprüfen, ob die IP-Adresse korrekt aktualisiert wurde, lesen Sie unsere Anleitung zur [Bearbeitung der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/).
+> Wenn die aktive DNS-Zone Ihres Domainnamens in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwaltet wird, ändert sich der A-Eintrag in der DNS-Zone Ihres Domainnamens automatisch. Um zu überprüfen, ob die IP-Adresse korrekt aktualisiert wurde, lesen Sie unsere Anleitung zur [Bearbeitung der OVHcloud DNS-Zone](/pages/web/domains/dns_zone_edit).
 >
-> Ist das nicht der Fall, müssen Sie die Änderung manuell beim Anbieter vornehmen, der die aktive DNS Zone Ihres Domainnamens verwaltet. [Hier](https://docs.ovh.com/de/hosting/verzeichnis-der-ip-adressen-web-hosting-cluster/) finden Sie die Dokumentation, in der alle IP-Adressen der OVHcloud Shared Hosting Infrastruktur aufgeführt sind.
+> Ist das nicht der Fall, müssen Sie die Änderung manuell beim Anbieter vornehmen, der die aktive DNS Zone Ihres Domainnamens verwaltet. [Hier](/pages/web/hosting/clusters_and_shared_hosting_IP) finden Sie die Dokumentation, in der alle IP-Adressen der OVHcloud Shared Hosting Infrastruktur aufgeführt sind.
 >
 > In jedem Fall ist eine Propagationszeit von **4 bis 24 Stunden** nach der Änderung erforderlich, damit die Änderung im Internet voll wirksam und sichtbar ist.
 >

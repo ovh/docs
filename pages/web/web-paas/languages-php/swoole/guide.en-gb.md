@@ -1,7 +1,5 @@
 ---
 title: Swoole
-slug: swoole
-section: Php
 updated: 2022-06-02
 ---
 

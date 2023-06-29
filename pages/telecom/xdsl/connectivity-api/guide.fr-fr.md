@@ -1,14 +1,11 @@
 ---
 title: "Utiliser l'API Connectivity"
-slug: connectivity-api
 excerpt: 'Développez en utilisant notre API connectivity'
-section: 'Configurations techniques avancées'
-order: 5
 updated: 2023-04-03
 ---
 
 > [!primary]
-> Une version en langue anglaise de ce guide est disponible [ici](https://docs.ovh.com/gb/en/xdsl/connectivity-api/)
+> Une version en langue anglaise de ce guide est disponible [ici](/pages/telecom/xdsl/connectivity-api)
 >
 
 **Dernière mise à jour le 03/04/2023**
@@ -21,7 +18,7 @@ Cette documentation a pour objectif d'aider les développeurs à utiliser nos AP
 
 - Disposer d'un compte OVHcloud actif et connaître ses identifiants.
 - Être sur la page web des [API OVHcloud](https://api.ovh.com/){.external}.
-- Consulter le guide [Premiers pas avec les API OVHcloud](../../api/first-steps-with-ovh-api/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+- Consulter le guide [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
 ## En pratique
 

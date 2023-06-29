@@ -1,8 +1,5 @@
 ---
 title: 'Configuring your Email Pro account on the macOS Mail app'
-slug: configuring-email-pro-macos-mail
-section: 'Email client configuration'
-order: 4
 updated: 2022-06-13
 ---
 
@@ -52,11 +49,11 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovhcloud.com/en-ie/>. You can log in using your email credentials. If you have any questions about how to use it, you can refer to our guide on [Using an account in the OWA](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/) interface.
+OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovhcloud.com/en-ie/>. You can log in using your email credentials. If you have any questions about how to use it, you can refer to our guide on [Using an account in the OWA](/pages/web/emails/email_owa) interface.
 
 ### Retrieve a backup of your email address
 
-If you need to make any changes that could lead to the loss of your email account data, we advise backing up the email account concerned beforehand. To do this, please read the "**Export**" section in the "**Mail on macOS**" section of our guide on [Manually migrating your email address](https://docs.ovh.com/ie/en/emails/migrate-email-addresses-manually/#exporting).
+If you need to make any changes that could lead to the loss of your email account data, we advise backing up the email account concerned beforehand. To do this, please read the "**Export**" section in the "**Mail on macOS**" section of our guide on [Manually migrating your email address](/pages/web/emails/manual_email_migration#exporting).
 
 ### Modify existing settings
 

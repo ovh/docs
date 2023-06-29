@@ -1,9 +1,6 @@
 ---
 title: Créer une base de données sur son hébergement web
-slug: creer-base-de-donnees
 excerpt: Apprenez à créer une base de données sur votre hébergement web OVHcloud
-section: Bases de données
-order: 01
 updated: 2022-02-03
 ---
 
@@ -101,7 +98,7 @@ Les informations de connexion seront pré-remplies dans la nouvelle fenêtre ; 
 
 Pour chaque base de données d'hébergement web, des snapshots sont créés automatiquement chaque jour (jusqu'à 32 maximum). Vous pouvez donc restaurer simplement une version antérieure d'une base de données à partir de votre espace client OVHcloud. 
 
-Pour vérifier les snapshots disponibles ainsi que leur date et heure de création, cliquez sur le symbole juste à côté du cercle vert dans votre tableau de base de données. Vous pouvez également télécharger chaque sauvegarde d'une base de données depuis le même endroit. Pour des informations détaillées sur ce sujet, vous pouvez consulter notre guide sur [Récupérer la sauvegarde de la base de données d’un hébergement web](../exportation-bases-donnees/).
+Pour vérifier les snapshots disponibles ainsi que leur date et heure de création, cliquez sur le symbole juste à côté du cercle vert dans votre tableau de base de données. Vous pouvez également télécharger chaque sauvegarde d'une base de données depuis le même endroit. Pour des informations détaillées sur ce sujet, vous pouvez consulter notre guide sur [Récupérer la sauvegarde de la base de données d’un hébergement web](/pages/web/hosting/sql_database_export).
 
 #### Comprendre les problèmes fréquents
 
@@ -117,17 +114,17 @@ La meilleure pratique consiste à toujours utiliser le nom réel de la base de d
 
 Si une base de données d'hébergement web dépasse l'espace de stockage recommandé, elle basculera automatiquement en « Lecture seule » / « Sélection seule ». L’administrateur recevra une notification par e-mail.
 
-Une fois que la base de données a été optimisée (purgée), vous pouvez recalculer son quota dans votre espace client OVHcloud pour le débloquer à nouveau. La meilleure pratique consiste à télécharger la base de données, à gérer la révision localement et à la remplacer ensuite par importation. Vous pouvez consulter notre guide [Optimisation des performances de votre site](../optimisation-performances-site/#etape-7-optimisation-de-votre-base-de-donnees) pour de plus amples informations.
+Une fois que la base de données a été optimisée (purgée), vous pouvez recalculer son quota dans votre espace client OVHcloud pour le débloquer à nouveau. La meilleure pratique consiste à télécharger la base de données, à gérer la révision localement et à la remplacer ensuite par importation. Vous pouvez consulter notre guide [Optimisation des performances de votre site](/pages/web/hosting/optimise_your_website_performance#etape-7-optimisation-de-votre-base-de-donnees) pour de plus amples informations.
 
 
 ## Aller plus loin
 
-[Modifier le mot de passe de la base de données d'un hébergement web](../modifier-mot-de-passe-base-de-donnees/)
+[Modifier le mot de passe de la base de données d'un hébergement web](/pages/web/hosting/sql_change_password)
 
-[Récupérer la sauvegarde de la base de données d'un hébergement web](../exportation-bases-donnees/)
+[Récupérer la sauvegarde de la base de données d'un hébergement web](/pages/web/hosting/sql_database_export)
 
-[Importer une sauvegarde dans la base de données d'un hébergement web](../mutualise-guide-importation-dune-base-de-donnees-mysql/)
+[Importer une sauvegarde dans la base de données d'un hébergement web](/pages/web/hosting/sql_importing_mysql_database)
 
-[Optimiser les performances de votre site web](../optimisation-performances-site/)
+[Optimiser les performances de votre site web](/pages/web/hosting/optimise_your_website_performance)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -1,9 +1,6 @@
 ---
 title: 'Tornar-se o utilizador root e selecionar uma palavra-passe'
-slug: tornar-se_root_e_definir_uma_palavra-passe
 excerpt: 'Saiba como tornar-se o utilizador root e criar uma palavra-passe para a conta root'
-section: Introdução
-order: 08
 updated: 2022-03-24
 ---
 
@@ -21,14 +18,14 @@ Para realizar determinadas tarefas num servidor (como a instalação de pacotes,
 
 ## Requisitos
 
-- Uma [instância Public Cloud ](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#3o-passo-criacao-de-uma-instancia) na sua conta OVHcloud
+- Uma [instância Public Cloud ](/pages/platform/public-cloud/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia) na sua conta OVHcloud
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 ## Instruções
 
 ### Definição da password "root" <a name="settingtherootpassword"></a>
 
-Em primeiro lugar, estabelecer uma [ligação SSH](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#4o-passo-conexao-a-instancia) ao seu servidor com o seu utilizador predefinido.
+Em primeiro lugar, estabelecer uma [ligação SSH](/pages/platform/public-cloud/public-cloud-first-steps#4o-passo-conexao-a-instancia) ao seu servidor com o seu utilizador predefinido.
 
 Para isso, utilize o comando indicado abaixo e defina uma palavra-passe para o utilizador “root” (por motivos de segurança, a palavra-passe não é mostrada):
 

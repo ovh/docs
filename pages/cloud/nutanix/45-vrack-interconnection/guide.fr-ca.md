@@ -1,9 +1,6 @@
 ---
 title: Interconnexion de clusters au travers du vRack
-slug: nutanix-vrack-interconnection
 excerpt: "Mise en place d'une interconnexion de deux clusters au travers d'un vRack OVHcloud"
-section: Plan de Reprise d'Activité
-order: 03
 updated: 2022-09-28
 ---
 
@@ -54,7 +51,7 @@ Le cluster de Roubaix utilise ces adresses :
 - Passerelle : `192.168.2.254`.
 - Version du cluster : `6.1`.
 
-Aidez-vous de notre guide dédié au [redéploiement personnalisé de votre Cluster](https://docs.ovh.com/ca/fr/nutanix/cluster-custom-redeployment/).
+Aidez-vous de notre guide dédié au [redéploiement personnalisé de votre Cluster](/pages/cloud/nutanix/00-cluster-custom-redeployment).
 
 > [!primary]
 > Le guide mentionné ci-dessus vous propose de redéployer les deux clusters. Néanmoins, vous pouvez n'en redéployer qu'un, le plus important est de ne pas avoir les mêmes adresses IP identiques sur l'ensemble du réseau, sauf pour la passerelle OVHGateway.
@@ -203,11 +200,11 @@ Le Load Balancer est relié au vRack commun aux deux sites et l'accès à Prism 
 
 ## Aller plus loin
 
-[Plan de reprise d'activité sous Nutanix](https://docs.ovh.com/ca/fr/nutanix/disaster-recovery-plan-overview/)
+[Plan de reprise d'activité sous Nutanix](/pages/cloud/nutanix/43-disaster-recovery-plan-overview)
 
-[Réplication asynchrone ou NearSync au travers de Prism Element](https://docs.ovh.com/ca/fr/nutanix/prism-element-nutanix-replication/)
+[Réplication asynchrone ou NearSync au travers de Prism Element](/pages/cloud/nutanix/46-prism-element-replication)
 
-[Réplication avancée avec Leap](https://docs.ovh.com/ca/fr/nutanix/leap-replication/)
+[Réplication avancée avec Leap](/pages/cloud/nutanix/47-nutanix-leap)
 
 [Présentation des vRack](https://www.ovh.com/ca/fr/solutions/vrack/)
 

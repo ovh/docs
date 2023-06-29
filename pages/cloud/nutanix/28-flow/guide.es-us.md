@@ -1,11 +1,8 @@
 ---
 title: Configurar El Flujo De Nutanix (EN)
-slug: nutanix-flow
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/nutanix/nutanix-flow/'
+    canonical: '/pages/cloud/nutanix/28-flow'
 excerpt: Find out how to configure and use Nutanix Flow
-section: Red y seguridad
-order: 09
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
 category_l2: Networking and security
@@ -410,7 +407,7 @@ The rule you created is in the list of rules.
 
 ## Go further <a name="gofurther"></a>
 
-[Hyperconvergencia Nutanix (EN)](https://docs.ovh.com/us/es/nutanix/nutanix-hci/)
+[Hyperconvergencia Nutanix (EN)](/pages/cloud/nutanix/03-nutanix-hci)
 
 [Presentation of Nutanix FLOW](https://portal.nutanix.com/page/documents/solutions/details?targetId=TN-2094-Flow:TN-2094-Flow)
 

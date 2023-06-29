@@ -1,11 +1,8 @@
 ---
 title: 'Creating and using a Docker image stored in an OVHcloud Managed Private Registry'
-slug: creating-and-using-a-private-image
 excerpt: 'Find out how to create and use an image stored in an OVHcloud Managed Private Registry.'
-section: Tutorials
-order: 01
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-registry/creating-and-using-a-private-image/'
+    canonical: '/pages/platform/private-registry/creating-and-using-a-private-image'
 updated: 2022-04-13
 ---
 
@@ -23,8 +20,7 @@ updated: 2022-04-13
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   color: #ccc;
+   b   color: #ccc;
    font-family: monospace !important;
    font-size: 0.75em;
  }
@@ -41,9 +37,9 @@ OVHcloud Managed Private Registry service provides you a managed, authenticated 
 
 ## Requirements
 
-- An OVHcloud Managed Private Registry (see the [creating a private registry](../creating-a-private-registry/) guide for more information)
-- An access to the Harbor UI to operate the private registry (see the [connecting to the UI](../connecting-to-the-ui/) guide for more information)
-- A private project and an user with the right to read and write on the project (see the [managing users and projects](../managing-users-and-projects/) guide for more information)
+- An OVHcloud Managed Private Registry (see the [creating a private registry](/pages/platform/private-registry/creating-a-private-registry) guide for more information)
+- An access to the Harbor UI to operate the private registry (see the [connecting to the UI](/pages/platform/private-registry/connecting-to-the-ui) guide for more information)
+- A private project and an user with the right to read and write on the project (see the [managing users and projects](/pages/platform/private-registry/managing-users-and-projects) guide for more information)
 
 
 ## Instructions
@@ -112,7 +108,7 @@ You should have these files in your `hello-ovh` directory:
 └── ovh.svg
 ```
 
-- Go into the `hello-ovh` folder, containing the three files, and do a `docker build`. You will need to tag your build using your private registry URL, the project within the registry (*private* if you followed the [managing users and projects](../managing-users-and-projects/) guide), and the image name (*hello-ovh*):
+- Go into the `hello-ovh` folder, containing the three files, and do a `docker build`. You will need to tag your build using your private registry URL, the project within the registry (*private* if you followed the [managing users and projects](/pages/platform/private-registry/managing-users-and-projects) guide), and the image name (*hello-ovh*):
 
 ```bash
 docker build --tag [YOUR_PRIVATE_REGISTRY_URL]/[YOUR_PROJECT]/hello-ovh:1.0.0 .
@@ -139,7 +135,7 @@ Successfully built 3f803b45da18
 Successfully tagged 8093ff7x.gra5.container-registry.ovh.net/private/hello-ovh:1.0.0
 </code></pre>
 
-- Login to your private registry, using a user with write rights to the project (*private-user* if you followed the [managing users and projects](../managing-users-and-projects/) guide)
+- Login to your private registry, using a user with write rights to the project (*private-user* if you followed the [managing users and projects](/pages/platform/private-registry/managing-users-and-projects) guide)
 
 ```bash
 docker login [YOUR_PRIVATE_REGISTRY_URL]
@@ -248,4 +244,4 @@ Or in your browser:
 
 ### Go further
 
-To go further you can look at our guide on [Using your private registry with Kubernetes](../using-private-registry-with-kubernetes/).
+To go further you can look at our guide on [Using your private registry with Kubernetes](/pages/platform/private-registry/using-private-registry-with-kubernetes).

@@ -1,11 +1,8 @@
 ---
 title: Object Storage - Limiti tecnici (EN)
-slug: s3/limitations
 excerpt: Find here the technical limits of the S3 Object Storage offer
-section: General information
-order: 025
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/s3/limitations/'
+    canonical: '/pages/cloud/storage/object_storage/s3_limitations'
 updated: 2023-06-01
 ---
 

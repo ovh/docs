@@ -1,11 +1,8 @@
 ---
 title: Como evitar a passagem para o modo leitura apenas do disco da sua VM em Linux
-slug: como-evitar-a-passagem-para-o-modo-leitura-apenas-do-disco-da-sua-VM-em-Linux
 routes:
-    canonical: 'https://docs.ovh.com/pt/private-cloud/como-evitar-a-passagem-para-o-modo-leitura-apenas-do-disco-da-sua-VM-em-Linux/'
+    canonical: '/pages/cloud/private-cloud/comment_eviter_le_disk_en_read_only_sous_linux'
 excerpt: Evitar a passagem em apenas leitura do disco da sua VM em Linux
-section: Gestão das máquinas virtuais
-order: 10
 updated: 2020-11-18
 ---
 

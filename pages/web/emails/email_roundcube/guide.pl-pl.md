@@ -1,8 +1,5 @@
 ---
 title: 'Korzystanie z konta e-mail w interfejsie Webmail RoundCube'
-slug: webmail_przewodnik_dotyczacy_interfejsu_roundcube
-section: 'Pierwsze kroki'
-order: 05
 updated: 2022-05-31
 ---
 
@@ -22,7 +19,7 @@ Dzięki usłudze MX Plan OVHcloud możesz wysyłać i odbierać e-maile za pośr
 ## Wymagania początkowe
 
 - Posiadanie rozwiązania poczty elektronicznej OVHcloud **MX Plan**, zaproponowanego w naszej [ofercie hostingu www](https://www.ovhcloud.com/pl/web-hosting/), zawartego w darmowym [hostingu Start10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub zamówionego oddzielnie jako rozwiązanie autonomiczne.
-- Dane do logowania do konta e-mail MX Plan, które chcesz sprawdzić Więcej informacji znajdziesz w przewodniku [Pierwsze kroki z usługą MX Plan](https://docs.ovh.com/pl/emails/hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/).
+- Dane do logowania do konta e-mail MX Plan, które chcesz sprawdzić Więcej informacji znajdziesz w przewodniku [Pierwsze kroki z usługą MX Plan](/pages/web/emails/email_generalities).
 
 ## W praktyce
 
@@ -38,9 +35,9 @@ Zostaniesz wówczas przekierowany do interfejsu RoundCube.
 
 > [!warning]
 > 
-> Jeśli zostaniesz przekierowany do interfejsu **O**utlook **W**eb **A**ccess (OWA), oznacza to, że jesteś na najnowszej wersji usługi MX Plan. Aby uzyskać więcej informacji na temat oferty MX Plan, sprawdź naszą stronę [Pierwsze kroki z ofertą MX Plan](https://docs.ovh.com/pl/emails/hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/).
+> Jeśli zostaniesz przekierowany do interfejsu **O**utlook **W**eb **A**ccess (OWA), oznacza to, że jesteś na najnowszej wersji usługi MX Plan. Aby uzyskać więcej informacji na temat oferty MX Plan, sprawdź naszą stronę [Pierwsze kroki z ofertą MX Plan](/pages/web/emails/email_generalities).
 >
-> Aby zapoznać się z interfejsem **OWA**, zapoznaj się z naszym przewodnikiem [Sprawdź jego konto e-mail w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/).
+> Aby zapoznać się z interfejsem **OWA**, zapoznaj się z naszym przewodnikiem [Sprawdź jego konto e-mail w interfejsie OWA](/pages/web/emails/email_owa).
 
 ### Ogólny interfejs webmail RoundCube <a name="general-interface"></a>
 
@@ -335,12 +332,12 @@ Na górnym pasku dostępne są następujące operacje:
 
 ## Sprawdź również
 
-[Pierwsze kroki z usługą MX Plan](https://docs.ovh.com/pl/emails/hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/)
+[Pierwsze kroki z usługą MX Plan](/pages/web/emails/email_generalities)
 
-[Zmiana hasła do konta e-mail MX Plan](https://docs.ovh.com/pl/emails/zmiana-hasla-do-konta-email/)
+[Zmiana hasła do konta e-mail MX Plan](/pages/web/emails/email_change_password)
 
-[Tworzenie filtrów dla Twoich kont e-mail](https://docs.ovh.com/pl/emails/hosting_www_konfiguracja_filtrow_e-mail_w_panelu_klienta/)
+[Tworzenie filtrów dla Twoich kont e-mail](/pages/web/emails/feature_filters)
 
-[Korzystanie z przekierowań e-mail](https://docs.ovh.com/pl/emails/hosting_www_przekierowania_e-mail/)
+[Korzystanie z przekierowań e-mail](/pages/web/emails/feature_redirections)
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

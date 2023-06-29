@@ -1,20 +1,17 @@
 ---
 title: "Tutoriel - Utiliser FileZilla avec votre hébergement OVHcloud"
-slug: mutualise-guide-utilisation-filezilla
 excerpt: "Retrouvez ici un tutoriel pour l'utilisation du logiciel Filezilla sur votre hébergement mutualisé"
-section: FTP et SSH
-order: 01
-updated: 2022-09-13
+updated: 2023-06-28
 ---
-
-**Dernière mise à jour le 13/09/2022**
 
 ## Objectif
 
 FileZilla est un logiciel disponible gratuitement sur plusieurs systèmes d'exploitations (Windows, macOS, etc).
-Il permet de mettre en ligne des fichiers ou votre site internet en vous [connectant à l'espace FTP](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement.
+Il permet de mettre en ligne des fichiers ou votre site internet en vous [connectant à l'espace FTP](/pages/web/hosting/ftp_connection) de votre hébergement.
 
 **Découvrez comment utiliser le logiciel Filezilla avec votre hébergement mutualisé.**
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wwPx8ORF1kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
 
 > [!warning]
 >
@@ -130,7 +127,7 @@ Ce type de message est généré par une erreur dans le couple Login/Mot de pass
 Vérifiez vos identifiants afin de vous assurer qu'aucune erreur ne soit renseignée. Le cas échéant, vous pouvez modifier le mot de passe de l'accès FTP de votre hébergement directement dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 > [!success]
-> Un guide est disponible concernant la [modification du mot de passe FTP](https://docs.ovh.com/ca/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/) sur les offres mutualisées.
+> Un guide est disponible concernant la [modification du mot de passe FTP](/pages/web/hosting/ftp_change_password) sur les offres mutualisées.
 
 Dans le cas ci-dessous, l'erreur est générée par un nom d'hôte incorrect :
 
@@ -215,7 +212,7 @@ Cela aura pour effet de modifier les droits du dossier en question, ainsi que de
 >
 > Indépendamment d'une action de votre part, votre hébergement peut être désactivé suite à la détection de fichiers malveillants ou non autorisés sur votre hébergement par nos systèmes de sécurité.
 >
-> Vous devez alors [sécuriser vos solutions](https://docs.ovh.com/ca/fr/hosting/diagnostic-403-forbidden/) tout en corrigeant les failles de sécurité évoquées dans la notification de blocage reçue par e-mail.
+> Vous devez alors [sécuriser vos solutions](/pages/web/hosting/diagnostic_403_forbidden) tout en corrigeant les failles de sécurité évoquées dans la notification de blocage reçue par e-mail.
 >
 
 Cliquez ensuite sur `Serveur`{.action} puis sélectionnez `Saisir une commande personnalisée`{.action} (cette option peut aussi s'appeler `Entrez une commande FTP`{.action}).
@@ -281,9 +278,9 @@ En effectuant un clic-droit sur l'icône, vous pouvez changer le mode de compara
 
 ## Aller plus loin <a name="go-further"></a>
 
-Vous trouverez ci-après le lien vers notre documentation pour [résoudre les erreurs récurrentes lors de l'utilisation d'un logiciel FTP](https://docs.ovh.com/ca/fr/hosting/mutualise-les-problemes-ftp-recurrents/).
+Vous trouverez ci-après le lien vers notre documentation pour [résoudre les erreurs récurrentes lors de l'utilisation d'un logiciel FTP](/pages/web/hosting/ftp_recurring_ftp_problems).
 
-Plus généralement, retrouvez [l'ensemble de nos guides relatifs aux hébergements mutualisés](https://docs.ovh.com/ca/fr/hosting/).
+Plus généralement, retrouvez [l'ensemble de nos guides relatifs aux hébergements mutualisés](/products/web-cloud-hosting).
 
 N'hésitez pas à consulter la [page officielle de Filezilla](https://filezilla-project.org/).
 

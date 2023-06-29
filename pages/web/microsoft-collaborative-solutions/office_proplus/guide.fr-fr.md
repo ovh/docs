@@ -1,9 +1,6 @@
 ---
 title: Utiliser le bureau à distance avec Microsoft 365 apps
-slug: office365-proplus-bureau-a-distance
 excerpt: Découvrez comment installer et utiliser Microsoft 365 apps sur un bureau distant (RDS) ou un ordinateur partagé
-section: Office
-order: 04
 updated: 2021-09-06
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Gestionar un grupo de licencias Microsoft 365 OVHcloud
-slug: contratar_y_gestionar_un_grupo_de_licencias_de_office_365_ovh
 excerpt: Esta guía explica cómo contratar una licencia Microsoft 365 y administrarla desde el área de cliente de OVHcloud.
-section: Office
-order: 02
 updated: 2021-09-09
 ---
 
@@ -108,6 +105,6 @@ Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
 
 ## Más información
 
-[Utilizar el escritorio remoto con Microsoft 365 apps](https://docs.ovh.com/es/microsoft-collaborative-solutions/office365-proplus-escritorio-remoto/)
+[Utilizar el escritorio remoto con Microsoft 365 apps](/pages/web/microsoft-collaborative-solutions/office_proplus)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

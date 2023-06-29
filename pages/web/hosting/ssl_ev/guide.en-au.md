@@ -1,9 +1,6 @@
 ---
 title: "Using an EV SSL certificate for your website"
-slug: ssl-ev
 excerpt: "Find out how to order and install an EV SSL certificate for an OVHcloud web hosting plan"
-section: SSL
-order: 03
 updated: 2023-06-12
 ---
 
@@ -13,7 +10,7 @@ updated: 2023-06-12
 
 You can use Secure Socket Layer (SSL) certificates to encrypt any exchange of data on your website. This prevents unauthorised persons and malicious robots from viewing requests to or from your website.
 
-OVHcloud offers several types of SSL certificates for [OVHcloud web hosting solutions](https://www.ovhcloud.com/en-au/web-hosting/). They are set out in our guide on [Managing an SSL certificate on a web hosting plan](https://docs.ovh.com/au/en/hosting/ssl-certificates-on-web-hosting-plans/). SSL certificates are essential for the security of your website.
+OVHcloud offers several types of SSL certificates for [OVHcloud web hosting solutions](https://www.ovhcloud.com/en-au/web-hosting/). They are set out in our guide on [Managing an SSL certificate on a web hosting plan](/pages/web/hosting/ssl_on_webhosting). SSL certificates are essential for the security of your website.
 
 There are three types of SSL certificates:
 
@@ -62,7 +59,7 @@ To check if you are eligible to subscribe to an EV SSL certificate, go to [this 
 
 #### 1.1 - For a domain name and a hosting already existing at OVHcloud
 
-Read our guide on how to [manage an SSL certificate on your web hosting plan](https://docs.ovh.com/au/en/hosting/ssl-certificates-on-web-hosting-plans/) and select the **EV SSL Certificate** once you have reached the order process.
+Read our guide on how to [manage an SSL certificate on your web hosting plan](/pages/web/hosting/ssl_on_webhosting) and select the **EV SSL Certificate** once you have reached the order process.
 
 Fill in the information requested by **Sectigo** before you receive the EV SSL certificate.
 
@@ -168,7 +165,7 @@ Once the checks have been done by Sectigo, you will be contacted by their servic
 
 Once Sectigo has carried out all the checks, their services generate the EV SSL certificate and send us the elements required for its installation on your hosting.
 
-You will only need to [activate HTTPS on your website](https://docs.ovh.com/au/en/hosting/activate-https-website-ssl/) to fully use your EV SSL certificate.
+You will only need to [activate HTTPS on your website](/pages/web/hosting/ssl-activate-https-website) to fully use your EV SSL certificate.
 
 ## Go further <a name="go-further"></a>
 
@@ -176,9 +173,9 @@ You will only need to [activate HTTPS on your website](https://docs.ovh.com/au/e
 
 [Description of checks made by Setigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}
 
-[Managing an SSL certificate on a web hosting plan](https://docs.ovh.com/au/en/hosting/ssl-certificates-on-web-hosting-plans/)
+[Managing an SSL certificate on a web hosting plan](/pages/web/hosting/ssl_on_webhosting)
 
-[Activate HTTPS on your website](https://docs.ovh.com/au/en/hosting/activate-https-website-ssl/)
+[Activate HTTPS on your website](/pages/web/hosting/ssl-activate-https-website)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
 

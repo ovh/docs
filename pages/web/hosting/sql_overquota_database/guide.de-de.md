@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Was tun, wenn meine Datenbank voll ist?"
-slug: database-overquota
 excerpt: "Erfahren Sie hier, wie Sie vorgehen, wenn Ihre Datenbank voll ist"
-section: Datenbanken
-order: 06
 updated: 2023-02-16
 ---
 
@@ -38,7 +35,7 @@ Dieses Tutorial zeigt anhand von Beispielen die möglichen Aktionen, wenn eine O
 > Wenn Sie Schwierigkeiten haben, die Schritte in diesem Tutorial durchzuführen, empfehlen wir, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
-Wenn Ihre OVHcloud Webhosting-Datenbank (*shared database*) eine bestimmte Sättigung (**overquota**) erreicht, senden unsere Bots eine Benachrichtigung an die E-Mail-Adresse des [Administratorkontakts](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/) der Datenbank. 
+Wenn Ihre OVHcloud Webhosting-Datenbank (*shared database*) eine bestimmte Sättigung (**overquota**) erreicht, senden unsere Bots eine Benachrichtigung an die E-Mail-Adresse des [Administratorkontakts](/pages/account/customer/managing_contacts) der Datenbank. 
 
 Die erste E-Mail wird versandt, wenn Ihre Datenbank mehr als **80%** der Speicherkapazität belegt hat. Eine zweite E-Mail wird gesendet, wenn **90%** der Kapazität erreicht sind.
 
@@ -60,7 +57,7 @@ Im ersten Schritt werden die großen Tabellen in der Datenbank identifiziert.
 
 #### 1.1 - Verbindung zur Datenbank über phpMyAdmin
 
-Das Passwort für den Zugriff auf Ihre Datenbank erhalten Sie direkt aus der Konfigurationsdatei Ihrer Seite. Führen Sie diese Aktion mithilfe von **Schritt 1** in unserer Anleitung zur [Änderung des Datenbankpassworts](https://docs.ovh.com/de/hosting/datenbank-passwort-aendern/) durch.
+Das Passwort für den Zugriff auf Ihre Datenbank erhalten Sie direkt aus der Konfigurationsdatei Ihrer Seite. Führen Sie diese Aktion mithilfe von **Schritt 1** in unserer Anleitung zur [Änderung des Datenbankpassworts](/pages/web/hosting/sql_change_password) durch.
 
 Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie in der Navigationsleiste oben `Web Cloud`{.action} aus. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie den relevanten Dienst aus. Gehen Sie anschließend zum Tab `Datenbanken`{.action}.
 
@@ -130,9 +127,9 @@ Wir empfehlen diese Lösung für große Datenbanken.
 
 Folgen Sie dann unseren Anleitungen, um den Inhalt Ihrer alten Datenbank auf die neue zu verschieben:
 
-- [Exportieren Sie Ihre bestehende Datenbank](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/)
-- [Erste Schritte mit Web Cloud Databasess](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/)
-- [Importieren Sie Ihre alte Datenbank nach Web Cloud Databasess](https://docs.ovh.com/de/clouddb/datenbank-importieren/)
+- [Exportieren Sie Ihre bestehende Datenbank](/pages/web/hosting/sql_database_export)
+- [Erste Schritte mit Web Cloud Databasess](/pages/web/clouddb/starting_with_clouddb)
+- [Importieren Sie Ihre alte Datenbank nach Web Cloud Databasess](/pages/web/clouddb/restore-import-on-database-server)
 
 #### Fall 2 - Der Inhalt der großen Tabelle ist nicht oder nur teilweise für das Funktionieren Ihrer Website erforderlich
 

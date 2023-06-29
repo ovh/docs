@@ -1,9 +1,6 @@
 ---
 title: 'Particularidades técnicas de los alojamientos compartidos'
-slug: web_hosting_particularidades_tecnicas_de_los_alojamientos_compartidos
 excerpt: 'Esta guía ofrece toda la información relativa a las particularidades técnicas de los alojamientos compartidos'
-section: 'Configuración del alojamiento'
-order: 05
 updated: 2022-11-18
 ---
 
@@ -33,7 +30,7 @@ updated: 2022-11-18
 
 ### FTP
 
-- Error de acceso ("Fallo de autenticación de conexión 530"): Puede comprobar que los datos de acceso a su espacio FTP son correctos verificándolos en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la pestaña `FTP - SSH`. Las contraseñas nunca se muestran, pero pueden modificarse. Consulte nuestras [guías FTP](../conexion-espacio-almacenamiento-ftp-alojamiento-web/).
+- Error de acceso ("Fallo de autenticación de conexión 530"): Puede comprobar que los datos de acceso a su espacio FTP son correctos verificándolos en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la pestaña `FTP - SSH`. Las contraseñas nunca se muestran, pero pueden modificarse. Consulte nuestras [guías FTP](/pages/web/hosting/ftp_connection).
 
 - Las conexiones FTP deben utilizar el **modo pasivo**. Asegúrese de que su script o su cliente FTP estén configurados correctamente.
 
@@ -48,7 +45,7 @@ En un período de 3600 segundos (es decir, 1 hora), su plan de hosting le permit
 |Cantidad máxima de envío de correo por hora y servicio|10|100|200|2000|
 
 - Aparte de las sospechas de spamming o phishing, el envío de los mensajes de correo podría aplazarse. Su correo se conservará en una cola de espera hasta que el número de mensajes enviados durante la hora anterior sea inferior al de tráfico.
-- En caso de abuso o riesgo comprobado, el servicio se suspenderá y usted recibirá una notificación por correo electrónico de la suspensión del servicio. ¿Qué hacer en caso de cuenta bloqueada por spam? Consulte [nuestra guía](https://docs.ovh.com/es/microsoft-collaborative-solutions/bloqueo-por-correo-no-deseado/).
+- En caso de abuso o riesgo comprobado, el servicio se suspenderá y usted recibirá una notificación por correo electrónico de la suspensión del servicio. ¿Qué hacer en caso de cuenta bloqueada por spam? Consulte [nuestra guía](/pages/web/emails/locked_for_spam).
 
 ### Bases de datos/SQL
 
@@ -62,7 +59,7 @@ En un período de 3600 segundos (es decir, 1 hora), su plan de hosting le permit
 
     - *max_user_connections*: 50 por defecto, con posibilidad de pasar a 200
 
-Para saber más, consulte los detalles de nuestros [Planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/) y [nuestra guía](../primeros-pasos-con-sql-privado/).
+Para saber más, consulte los detalles de nuestros [Planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/) y [nuestra guía](/pages/web/clouddb/starting_with_clouddb).
 
 #### Conexiones desde un servidor externo
 
@@ -79,7 +76,7 @@ Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to conn
 
 - La versión MySQL no puede modificarse para las bases de datos integradas en el alojamiento web.
 
-Para saber más sobre la gestión de las bases de datos, consulte la guía [Crear una base de datos en un alojamiento web](../crear-base-de-datos/).
+Para saber más sobre la gestión de las bases de datos, consulte la guía [Crear una base de datos en un alojamiento web](/pages/web/hosting/sql_create_database).
 
 ### PHP
 
@@ -94,8 +91,8 @@ Para saber más sobre la gestión de las bases de datos, consulte la guía [Crea
 
 - Podrá modificar la versión PHP de su alojamiento web, o bien en [el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) ("**Configuración**"), o bien modificando el archivo .ovhconfig. También se pueden llevar a cabo configuraciones mixtas en estas últimas. Tiene a su disposición instrucciones detalladas en nuestras guías:
 
-[Configurar el archivo .ovhconfig de un alojamiento web](../configurar-archivo-ovhconfig/)  
-[Modificar la configuración de un alojamiento web](../cambiar_el_entorno_de_ejecucion_de_un_alojamiento/)
+[Configurar el archivo .ovhconfig de un alojamiento web](/pages/web/hosting/ovhconfig_configuration)  
+[Modificar la configuración de un alojamiento web](/pages/web/hosting/ovhconfig_modify_system_runtime)
 
 
 > [!primary]
@@ -118,7 +115,7 @@ PHP-FPM está activo por defecto en la infraestructura de alojamiento web con el
 
 #### Scripts PHP
 
-Una vez conectado a su alojamiento web por SSH, el tráfico saliente se bloqueará por razones de seguridad. Le recomendamos que utilice scripts PHP. Para más información, consulte nuestra [guía SSH](../web_hosting_ssh_en_alojamiento_compartido/). Puede consultar el manual oficial [PHP manual](https://www.php.net/manual/es/function.system.php) para la ejecución de comandos.
+Una vez conectado a su alojamiento web por SSH, el tráfico saliente se bloqueará por razones de seguridad. Le recomendamos que utilice scripts PHP. Para más información, consulte nuestra [guía SSH](/pages/web/hosting/ssh_on_webhosting). Puede consultar el manual oficial [PHP manual](https://www.php.net/manual/es/function.system.php) para la ejecución de comandos.
 
 Por ejemplo, puede utilizar la función *gethostbyaddr()* para recuperar el nombre del host:
 
@@ -158,13 +155,13 @@ Todos nuestros planes de hosting situados en:
 
 - en Beauharnois (BHS), Canadá, disponen de copias de seguridad automáticas en D-1, D-2, D-3, D-7 y D-14. Estas copias de seguridad también se almacenan en el datacenter de Beauharnois (BHS), en Canadá.
 
-Esta guía explica cómo [conectarse al espacio de almacenamiento](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) o [restaurar el espacio de almacenamiento de un alojamiento web](https://docs.ovh.com/es/hosting/restaurar-espacio-almacenamiento-alojamiento-web/).
+Esta guía explica cómo [conectarse al espacio de almacenamiento](/pages/web/hosting/ftp_connection) o [restaurar el espacio de almacenamiento de un alojamiento web](/pages/web/hosting/ftp_save_and_backup).
 
 #### Base de datos / SQL
 
 Para las bases de datos compartidas (incluidas en su plan de hosting) o los servidores de bases de datos (Web Cloud Databases) de Gravelines (GRA), Francia y Beauharnois (BHS), Canadá, la copia de seguridad de las bases de datos se realiza diariamente. Estas copias de seguridad están disponibles (a través de [el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} o a través de [la API de OVHcloud](https://api.ovh.com/)). Las copias de seguridad también se almacenan en otra infraestructura. Estos datos se replican en 3 lugares distintos en Francia : Roubaix (RBX), Estrasburgo (SBG) y Gravelines (GRA). La política de retención de las copias de seguridad es de 30 días.
 
-Esta guía explica cómo [Descargar la copia de seguridad de la base de datos de un alojamiento web](https://docs.ovh.com/es/hosting/web_hosting_exportacion_de_una_base_de_datos/) en nuestra guía.
+Esta guía explica cómo [Descargar la copia de seguridad de la base de datos de un alojamiento web](/pages/web/hosting/sql_database_export) en nuestra guía.
 
 #### Email
 
@@ -194,10 +191,10 @@ Para ser utilizados por OVHcloud Web Statistics, los datos mencionados anteriorm
 
 ## Más información
 
-[Conectarse al espacio de almacenamiento de su alojamiento web](../conexion-espacio-almacenamiento-ftp-alojamiento-web/)
+[Conectarse al espacio de almacenamiento de su alojamiento web](/pages/web/hosting/ftp_connection)
 
-[Habilitar HTTPS en un sitio web con certificado SSL](../activar-https-en-un-sitio-web-con-ssl/)
+[Habilitar HTTPS en un sitio web con certificado SSL](/pages/web/hosting/ssl-activate-https-website)
 
-[Optimización del rendimiento de un sitio web](../web_hosting_guia_de_optimizacion_del_rendimiento_de_un_sitio_web/)
+[Optimización del rendimiento de un sitio web](/pages/web/hosting/optimise_your_website_performance)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com>.

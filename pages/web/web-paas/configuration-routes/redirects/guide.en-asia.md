@@ -1,7 +1,5 @@
 ---
 title: Redirects
-slug: redirects
-section: Routes
 updated: 2021-03-26
 ---
 
@@ -16,7 +14,7 @@ You can manage redirection rules on your Web PaaS projects in two different ways
 
 ## Whole-route redirects
 
-Using whole-route redirects, you can define very basic routes in your [`.platform/routes.yaml`](../) file whose sole purpose is to redirect. A typical use case for this type of route is adding or removing a `www.` prefix to your domain, as the following example shows:
+Using whole-route redirects, you can define very basic routes in your [`.platform/routes.yaml`](/pages/web/web-paas/configuration-routes) file whose sole purpose is to redirect. A typical use case for this type of route is adding or removing a `www.` prefix to your domain, as the following example shows:
 
 ```yaml
 https://{default}/:
@@ -26,7 +24,7 @@ https://{default}/:
 
 ## Partial redirects
 
-In the [`.platform/routes.yaml`](../) file you can also add partial redirect rules to existing routes:
+In the [`.platform/routes.yaml`](/pages/web/web-paas/configuration-routes) file you can also add partial redirect rules to existing routes:
 
 ```yaml
 https://{default}/:

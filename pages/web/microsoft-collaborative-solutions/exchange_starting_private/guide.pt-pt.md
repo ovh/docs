@@ -1,9 +1,6 @@
 ---
 title: 'Primeiros passos com um servidor Private'
-slug: exchange_primeiros_passos_com_um_servidor_private
 excerpt: 'Descubra como configurar o seu servidor Private Exchange.'
-section: 'Primeiros passos com Exchange'
-order: 02
 updated: 2020-04-17
 ---
 
@@ -66,7 +63,7 @@ Após a validação desta etapa surgirá uma mensagem a indicar que a configura�
 
 Se o nome de domínio não for gerado na mesma conta de cliente ou não estiver alojado na OVHcloud, ser-lhe-á enviado um segundo e-mail contendo as informações necessárias para configurar manualmente a sua zona DNS.
 
-O e-mail contém os endereços IPv4 e IPv6 da sua plataforma. Indique estes endereços na zona DNS do subdomínio previamente criada na [etapa 2](./#etapa-2-inicializacao-da-sua-plataforma){.external}, sob as formas respetivas de um registo de tipo "A" e de um registo de tipo "AAAA". Para o orientar na criação de um nome de domínio OVHcloud, consulte o nosso guia ["Editar uma zona DNS"(]../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).
+O e-mail contém os endereços IPv4 e IPv6 da sua plataforma. Indique estes endereços na zona DNS do subdomínio previamente criada na [etapa 2](./#etapa-2-inicializacao-da-sua-plataforma){.external}, sob as formas respetivas de um registo de tipo "A" e de um registo de tipo "AAAA". Para o orientar na criação de um nome de domínio OVHcloud, consulte o nosso guia ["Editar uma zona DNS"](/pages/web/domains/dns_zone_edit).
 
 
 
@@ -98,7 +95,7 @@ Para adicionar o primeiro nome de domínio à sua plataforma e configurar as con
 
 ## Quer saber mais?
 
-[Editar uma zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}
+[Editar uma zona DNS](/pages/web/domains/dns_zone_edit){.external}
 
 [Adicionar um nome de domínio ao serviço Exchange](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain){.external}
 

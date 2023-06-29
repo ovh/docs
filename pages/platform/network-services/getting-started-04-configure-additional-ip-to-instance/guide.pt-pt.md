@@ -1,9 +1,6 @@
 ---
 title: Configurar um Additional IP
-slug: configure-additional-ip
 excerpt: "Saiba como adicionar endereços Additional IP à configuração da sua instância"
-section: Additional IP
-order: 01
 updated: 2023-01-04
 ---
 
@@ -296,7 +293,7 @@ Na secção "Endereços IP", verifique se o endereço Additional IP foi adiciona
 
 ### Diagnóstico
 
-Em primeiro lugar, reinicie a sua instância com a ajuda do sistema operativo da instância ou da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Se ainda não consegue estabelecer uma ligação entre a rede pública e o seu Additional IP e suspeitar de um problema de rede, deve reiniciar a instância em [modo rescue](https://docs.ovh.com/pt/public-cloud/passar_uma_instancia_em_modo_de_rescue/). De seguida, pode configurar o endereço Additional IP diretamente na instância.
+Em primeiro lugar, reinicie a sua instância com a ajuda do sistema operativo da instância ou da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Se ainda não consegue estabelecer uma ligação entre a rede pública e o seu Additional IP e suspeitar de um problema de rede, deve reiniciar a instância em [modo rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode). De seguida, pode configurar o endereço Additional IP diretamente na instância.
 
 Uma vez ligado em modo rescue através de SSH, insira o seguinte comando:
 
@@ -308,9 +305,9 @@ Para testar a ligação, basta enviar um ping ao seu endereço Additional IP a p
 
 ## Quer saber mais?
 
-[Importar um Additional IP](https://docs.ovh.com/pt/publiccloud/network-services/import-additional-ip/)
+[Importar um Additional IP](/pages/platform/network-services/additional-ip-import)
 
-[Migrar um Additional IP](https://docs.ovh.com/pt/publiccloud/network-services/migrate-additional-ip/)
+[Migrar um Additional IP](/pages/platform/network-services/additional-ip-migrate)
 
 Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
 

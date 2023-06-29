@@ -1,8 +1,6 @@
 ---
 title: 'Configurare il Network Firewall'
-slug: firewall-network
 excerpt: 'Scopri come configurare un Network Firewall'
-section: 'Rete e IP'
 updated: 2023-05-10
 ---
 
@@ -85,7 +83,7 @@ A questo punto è possibile attivare e configurare il firewall cliccando di nuov
 
 > [!warning]
 > Ti ricordiamo che il Network Firewall di OVHcloud non può essere utilizzato per aprire porte a un server. Per aprire le porte a un server, devi passare attraverso il firewall del sistema operativo installato sul server.<br>
-> Per maggiori informazioni, consulta queste guide: [Configurare il firewall su Windows](https://docs.ovh.com/it/dedicated/firewall-windows/) e [Configurare il firewall su Linux con Iptable](https://docs.ovh.com/it/dedicated/firewall-iptables/).
+> Per maggiori informazioni, consulta queste guide: [Configurare il firewall su Windows](/pages/cloud/dedicated/activate-port-firewall-soft-win) e [Configurare il firewall su Linux con Iptable](/pages/cloud/dedicated/firewall-Linux-iptable).
 >
 
 Per aggiungere una regola, clicca sul pulsante `Aggiungi una regola`{.action}:

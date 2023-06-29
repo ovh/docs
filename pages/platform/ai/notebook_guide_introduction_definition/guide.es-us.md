@@ -1,11 +1,8 @@
 ---
 title: AI Notebooks - Getting started
-slug: notebooks/definition
 excerpt: Learn how to simply bootstrap an AI Notebook
-section: AI Notebooks - Guides
-order: 02
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/definition/'
+    canonical: '/pages/platform/ai/notebook_guide_introduction_definition'
 updated: 2022-11-24
 ---
 
@@ -19,7 +16,7 @@ The OVHcloud AI Notebooks service provides you Jupyter or VSCode notebooks, link
 
 - a [Public Cloud project](https://www.ovhcloud.com/es/public-cloud/) in your OVHcloud account
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
-- a Public Cloud user with `administrator` or `AI Training admin` role, see [here](https://docs.ovh.com/us/es/publiccloud/ai/users/) for more information
+- a Public Cloud user with `administrator` or `AI Training admin` role, see [here](/pages/platform/ai/gi_01_manage_users) for more information
 
 ## Definition
 
@@ -32,9 +29,9 @@ The advantage compared to doing your own setup is that everything is already ins
 
 Each notebook is linked to a **Public Cloud** project and specifies hardware resources along with a machine learning framework and an editor among those available.
 
-You can create notebooks with the OVHcloud Control Panel (see below in this tutorial) or use the [ovhai CLI](https://docs.ovh.com/us/es/publiccloud/ai/cli/getting-started-cli/).
+You can create notebooks with the OVHcloud Control Panel (see below in this tutorial) or use the [ovhai CLI](/pages/platform/ai/cli_11_howto_run_notebook_cli).
 
-AI Notebooks also provide an easy way to access data from your Object Storage, you can read more about it [here](https://docs.ovh.com/us/es/publiccloud/ai/notebooks/manage-data-ui/).
+AI Notebooks also provide an easy way to access data from your Object Storage, you can read more about it [here](/pages/platform/ai/notebook_guide_data_ui).
 
 ## Launch your first AI Notebook
 
@@ -126,7 +123,7 @@ Click on the `JupyterLab`{.action} link in the `Access` column in the array that
 
 ![Create a Notebook 12](images/creating-a-notebook12.png){.thumbnail}
 
-If you have not already created a Public Cloud user account, follow this [guide](https://docs.ovh.com/us/es/publiccloud/ai/users/) and then log in with your Public Cloud user account.
+If you have not already created a Public Cloud user account, follow this [guide](/pages/platform/ai/gi_01_manage_users) and then log in with your Public Cloud user account.
 
 Click on the `Connect`{.action} button.
 

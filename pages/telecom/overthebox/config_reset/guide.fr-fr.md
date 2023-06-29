@@ -1,8 +1,6 @@
 ---
 title: "Réinitialiser la configuration d'une OverTheBox"
-slug: config-reset
 excerpt: "Découvrez comment réinitialiser votre équipement OverTheBox afin de revenir à la configuration par défaut"
-section: "Configurations de l'OverTheBox"
 updated: 2022-11-14
 ---
 
@@ -48,9 +46,9 @@ Attendez quelques minutes afin qu'**OverTheBox** soit de nouveau opérationnelle
 >
 > Votre OvertheBox est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure décrite dans les guides suivants :
 >
-> [Installation OverTheBox Intel ou IT v1](../intel-itv1-installation/)
+> [Installation OverTheBox Intel ou IT v1](/pages/telecom/overthebox/intel_itv1_installation)
 >
-> [Installation OverTheBox Plus ou IT v2](../plus-itv2-installation/)
+> [Installation OverTheBox Plus ou IT v2](/pages/telecom/overthebox/plus_itv2_installation)
 >
 
 ### Méthode 2 : réinitialisation par l'interface
@@ -73,9 +71,9 @@ Attendez quelques minutes afin qu'**OverTheBox** soit de nouveau opérationnelle
 >
 > Votre  OvertheBox  est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure décrite dans les guides suivants :
 >
-> [Installation OverTheBox Intel ou IT v1](../intel-itv1-installation/)
+> [Installation OverTheBox Intel ou IT v1](/pages/telecom/overthebox/intel_itv1_installation)
 >
-> [Installation OverTheBox Plus ou IT v2](../plus-itv2-installation/)
+> [Installation OverTheBox Plus ou IT v2](/pages/telecom/overthebox/plus_itv2_installation)
 >
 
 ### Méthode 3 : réinitialisation par le CLI
@@ -105,9 +103,9 @@ firstboot -y
 >
 > Votre OvertheBox est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure décrite dans les guides suivants :
 >
-> [Installation OverTheBox Intel ou IT v1](../intel-itv1-installation/)
+> [Installation OverTheBox Intel ou IT v1](/pages/telecom/overthebox/intel_itv1_installation)
 >
-> [Installation OverTheBox Plus ou IT v2](../plus-itv2-installation/)
+> [Installation OverTheBox Plus ou IT v2](/pages/telecom/overthebox/plus_itv2_installation)
 >
 
 ### Méthode n°4 : réinitialisation par clé USB
@@ -117,7 +115,7 @@ firstboot -y
 > Cette méthode n'est pas recommandée et n'est utile uniquement que pour certains usages avancés.
 >
 
-Vous pouvez suivre le guide « [Installer l’image OverTheBox sur votre matériel](../installer-limage-overthebox-sur-votre-materiel/) » pour installer manuellement la dernière image du système OverTheBox.
+Vous pouvez suivre le guide « [Installer l’image OverTheBox sur votre matériel](/pages/telecom/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel) » pour installer manuellement la dernière image du système OverTheBox.
 
 ## Aller plus loin
 

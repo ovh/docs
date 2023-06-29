@@ -1,9 +1,6 @@
 ---
 title: What else can you do with the .htaccess file?
 excerpt: This guide explains how else you can use the .htaccess file
-slug: what_else_can_you_do_with_the_htaccess_file
-section: Rewriting and authentication
-order: 04
 updated: 2023-05-23
 ---
 

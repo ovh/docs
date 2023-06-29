@@ -1,10 +1,7 @@
 ---
 title: Access and security settings in Horizon
 excerpt: Find out how to manage secure access to your instances
-slug: access_and_security_in_horizon
 legacy_guide_number: g1774
-section: Horizon
-order: 07
 updated: 2021-05-26
 ---
 
@@ -17,7 +14,7 @@ For example, you can define security groups to filter incoming and outgoing conn
 
 ## Requirements
 
-- [Configuring user access to Horizon](../horizon/)
+- [Configuring user access to Horizon](/pages/platform/public-cloud/introducing_horizon)
 
 
 ## Instructions
@@ -44,7 +41,7 @@ This section allows you to store and manage SSH key pairs. You can simply create
 
 If you have an existing key to add, click on `Import Public Key`{.action}. In the popup window, you can enter a key string or select a key file.
 
-This interface section includes some basic instructions; for more information about SSH keys please refer to [this guide](../create-ssh-keys/).
+This interface section includes some basic instructions; for more information about SSH keys please refer to [this guide](/pages/platform/public-cloud/public-cloud-first-steps#step-1-creating-ssh-keys/).
 
 - **Security Groups** (under `Project`{.action} / `Network`{.action})
 

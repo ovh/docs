@@ -1,8 +1,6 @@
 ---
 title: 'Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern'
-slug: Account-mit-2FA-absichern
 excerpt: 'Erfahren Sie hier, wie Sie die Sicherheit Ihres Accounts bei OVHcloud steigern können, indem Sie die Zwei-Faktor-Authentifizierung aktivieren'
-section: Sicherheit
 updated: 2022-07-20
 ---
 
@@ -23,7 +21,7 @@ Sie können eine Zwei-Faktor-Authentifizierung aktivieren (2FA). Diese ergänzt 
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben ein Mobiltelefon (für die Methode per SMS), ein Smartphone oder Tablet (für die Methode über mobile Applikation) oder einen “Universal Second Factor (U2F)” Sicherheitsschlüssel.
-- Sie haben die [Empfehlungen zur Verwaltung des Zugangspassworts für Ihren Kunden-Account](https://docs.ovh.com/de/customer/Passwort-verwalten) zur Kenntnis genommen.
+- Sie haben die [Empfehlungen zur Verwaltung des Zugangspassworts für Ihren Kunden-Account](/pages/account/customer/manage-ovh-password) zur Kenntnis genommen.
 
 ## In der praktischen Anwendung
 
@@ -39,9 +37,9 @@ Ist die Applikation Ihrem Account einmal zugewiesen, benötigen Sie keine Intern
 
 ### Schritt 1: Aktivieren Sie Ihre erste Methode der Zwei-Faktor-Authentifizierung
 
-- [Zwei-Faktor-Authentifizierung per SMS aktivieren](https://docs.ovh.com/de/customer/die-zwei-Faktor-Authentifizierung-per-SMS-aktivieren).
-- [Zwei-Faktor-Authentifizierung per mobiler Applikation aktivieren](https://docs.ovh.com/de/customer/die-Zwei-Faktor-Authentifizierung-per-mobiler-Applikation-aktivieren).
-- [Zwei-Faktor-Authentifizierung per Sicherheitsschlüssel aktivieren](https://docs.ovh.com/de/customer/die-Zwei-Faktor-Authentifizierung-mit-Sicherheitsschl%C3%BCssel-aktivieren).
+- [Zwei-Faktor-Authentifizierung per SMS aktivieren](/pages/account/customer/enable-2fa-with-sms).
+- [Zwei-Faktor-Authentifizierung per mobiler Applikation aktivieren](/pages/account/customer/enable-2fa-with-mobile-app).
+- [Zwei-Faktor-Authentifizierung per Sicherheitsschlüssel aktivieren](/pages/account/customer/enable-2fa-with-security-key).
 
 Nach Hinzufügen der ersten Methode können Sie weitere Methoden hinzufügen, um mehrere Möglichkeiten zu haben, sich mit ihrem Konto zu verbinden.
 

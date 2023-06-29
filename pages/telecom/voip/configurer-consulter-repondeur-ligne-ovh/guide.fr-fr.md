@@ -1,8 +1,6 @@
 ---
 title: 'Configurer et consulter le répondeur de sa ligne'
-slug: configurer-consulter-repondeur-ligne-ovh
 excerpt: 'Apprenez à configurer et utiliser le répondeur de votre ligne téléphonique OVHcloud'
-section: 'Lignes téléphoniques'
 updated: 2022-08-23
 ---
 
@@ -135,7 +133,7 @@ Retournez vers la gestion du répondeur et positionnez-vous maintenant sur l'ong
 
 ![repondeur](images/voicemail-step9.png){.thumbnail}
 
-Sélectionnez, pour les renvois vers le répondeur, le même numéro de ligne sélectionné précédemment. Assurez-vous de faire correspondre les numéros. Si besoin, aidez-vous de notre documentation intitulée « [Filtrer et renvoyer ses appels](https://docs.ovh.com/fr/voip/comment-configurer-les-renvois-d-appels/){.external} ».
+Sélectionnez, pour les renvois vers le répondeur, le même numéro de ligne sélectionné précédemment. Assurez-vous de faire correspondre les numéros. Si besoin, aidez-vous de notre documentation intitulée « [Filtrer et renvoyer ses appels](/pages/telecom/voip/comment_configurer_les_renvois_d_appels){.external} ».
 
 Vous avez la possibilité d’appliquer vos choix de configuration à plusieurs lignes, grâce au bouton `Appliquer à plusieurs lignes`{.action}. Cliquez sur le bouton `Valider`{.action} pour terminer l'opération.
 

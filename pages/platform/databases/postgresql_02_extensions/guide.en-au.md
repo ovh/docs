@@ -1,9 +1,6 @@
 ---
 title: PostgreSQL - Available extensions
-slug: postgresql/extensions
 excerpt: List of available PostgreSQL extensions
-section: PostgreSQL - Guides
-order: 020
 updated: 2023-06-22
 ---
 

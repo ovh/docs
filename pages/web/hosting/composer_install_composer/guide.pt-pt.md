@@ -1,9 +1,6 @@
 ---
 title: Instalar Composer num alojamento web
-slug: instalacao_do_composer_nos_alojamentos_partilhados
 excerpt: Saiba como instalar e dar os primeiros passos em Composer
-section: PHP
-order: 02
 updated: 2023-02-24
 ---
 
@@ -33,7 +30,7 @@ updated: 2023-02-24
 
 ## Instruções
 
-Ligue-se ao seu alojamento partilhado através de SSH através do nosso manual sobre [a utilização do SSH com o seu alojamento web partilhado OVHcloud](https://docs.ovh.com/pt/hosting/partilhado_o_ssh_nos_alojamentos_partilhados/).
+Ligue-se ao seu alojamento partilhado através de SSH através do nosso manual sobre [a utilização do SSH com o seu alojamento web partilhado OVHcloud](/pages/web/hosting/ssh_on_webhosting).
 
 Verifique se utiliza uma versão de PHP compatível em linha de comandos:
 

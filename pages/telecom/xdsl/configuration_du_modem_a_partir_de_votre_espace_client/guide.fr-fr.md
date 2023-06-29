@@ -1,8 +1,6 @@
 ---
 title: "Configurer sa box à partir de l'espace client OVHcloud"
-slug: configuration_du_modem_a_partir_de_votre_espace_client
 excerpt: "Découvrez comment paramétrer à distance votre box OVHcloud depuis l'espace client"
-section: 'Configuration de mon offre'
 updated: 2023-03-29
 ---
 
@@ -173,7 +171,7 @@ Depuis cette partie, plusieurs possibilités s'offrent à vous.
 > [!primary]
 >
 > À utiliser uniquement dans le cas où vous disposez d'un équipement pouvant agir en tant que routeur sur votre réseau local. Il gérera alors intégralement votre connexion locale, OVHcloud ne pouvant pas intervenir sur celui-ci.
-Si votre modem est de marque Zyxel, veuillez suivre le guide [Comment activer le bridge sur un modem zyxel](../comment-activer-bridge-zyxel/).
+Si votre modem est de marque Zyxel, veuillez suivre le guide [Comment activer le bridge sur un modem zyxel](/pages/telecom/xdsl/comment_activer_bridge_zyxel).
 >
 
 - **Configurer le MTU** : lors d'une transmission de données informatiques, le Maximum Transmission Unit (MTU) est la taille maximale d'un paquet pouvant être échangé en une seule fois (c'est-à-dire sans fragmentation) sur une interface. Le MTU par défaut d'un accès OVHcloud en PPPoe est de 1 492.
@@ -201,7 +199,7 @@ Vous avez la possibilité dans cette partie d'activer ou de désactiver des serv
 
 |Services|Description|
 |---|---|
-|Bloc IP|Si vous [disposez d'un bloc IP](../comment-commander-et-gerer-un-bloc-ip-29/), vous pouvez activer ou désactiver celui-ci. Toute la configuration de votre box va alors s'adapter automatiquement (par exemple : désactivation pare-feu + NAT).|
+|Bloc IP|Si vous [disposez d'un bloc IP](/pages/telecom/xdsl/comment_commander_et_gerer_un_bloc_ip_29), vous pouvez activer ou désactiver celui-ci. Toute la configuration de votre box va alors s'adapter automatiquement (par exemple : désactivation pare-feu + NAT).|
 |Partage de contenu|**Concerne uniquement les box Thomson (TG7XX).** Par défaut, le partage de contenu est activé pour ces dernières, ce qui utilise une adresse IP supplémentaire. <br><br>Depuis l’espace client, il n’est pas possible de configurer ce partage mais vous pouvez le désactiver via l’accès à distance afin de libérer l’IP utilisée par défaut. La configuration du partage de contenu s'effectue uniquement en local.|
 |FTP|Active où désactive le serveur FTP de votre box.|
 |UPnP|Active où désactive la fonction UPnP de votre box (ouverture automatique des ports).|

@@ -1,9 +1,6 @@
 ---
 title: 'Proteger un dominio con DNSSEC'
-slug: proteja_su_dominio_con_dnssec
 excerpt: 'Cómo proteger un dominio contra el «cache poisoning» activando DNSSEC'
-section: 'Protección y seguridad'
-order: 01
 updated: 2023-04-26
 ---
 

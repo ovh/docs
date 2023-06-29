@@ -1,9 +1,6 @@
 ---
 title: 'Configuring your email address in the Mail application for Windows 10'
-slug: mail-configuration-windows-10
 excerpt: 'Find out how to configure your MX Plan email address in the Mail app for Windows 10.'
-section: 'Configure on computer'
-order: 06
 updated: 2018-04-04
 ---
 
@@ -85,8 +82,8 @@ OVHcloud also has a web application you can use to access your email account fro
  
 ## Go further
 
-[Configuring your Email Pro account in the Mail app for Windows](https://docs.ovh.com/gb/en/emails-pro/mail-configuration-windows-10/){.external}
+[Configuring your Email Pro account in the Mail app for Windows](/pages/web/emails-pro/how_to_configure_windows_10){.external}
 
-[Configuring your Exchange account in the Mail app for Windows](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/mail-configuration-windows-10/){.external}
+[Configuring your Exchange account in the Mail app for Windows](/pages/web/microsoft-collaborative-solutions/how_to_configure_windows_10){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

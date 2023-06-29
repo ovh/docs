@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguracja konta Exchange w programie Outlook 2016 na urządzeniach Mac'
-slug: konfiguracja-outlook-2016-mac
 excerpt: 'Dowiedz się, jak skonfigurować konto Exchange w programie Outlook 2016 na urządzeniu Mac'
-section: 'Konfiguracja komputerowa'
-order: 02
 updated: 2018-06-01
 ---
 
@@ -23,7 +20,7 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 
 > [!primary]
 >
-> Używasz programu Outlook 2016 na urządzeniu z systemem Windows? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta Exchange w programie Outlook 2016 na urządzeniu z systemem Windows](https://docs.ovh.com/pl/microsoft-collaborative-solutions/konfiguracja-outlook-2016/){.external}.
+> Używasz programu Outlook 2016 na urządzeniu z systemem Windows? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta Exchange w programie Outlook 2016 na urządzeniu z systemem Windows](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016){.external}.
 >
 
 ## W praktyce
@@ -62,6 +59,6 @@ OVHcloud oferuje aplikację internetową wyposażoną w [funkcje do pracy zespo�
 
 ## Sprawdź również
 
-[Konfiguracja konta e-mail, włączonego do usługi MX Plan lub do usługi hostingu, w programie Outlook na urządzeniu Mac](https://docs.ovh.com/pl/emails/konfiguracja-outlook-2016-mac/){.external}.
+[Konfiguracja konta e-mail, włączonego do usługi MX Plan lub do usługi hostingu, w programie Outlook na urządzeniu Mac](/pages/web/emails/how_to_configure_outlook_2016_mac){.external}.
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

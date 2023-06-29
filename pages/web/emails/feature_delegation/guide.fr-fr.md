@@ -1,10 +1,7 @@
 ---
 title: 'Déléguer la gestion de vos comptes e-mails à une autre personne'
 legacy_guide_number: 1933
-slug: deleguer-gestion-emails-autre-identifiant
 excerpt: 'Découvrez comment déléguer la gestion des comptes e-mail de votre offre MX Plan'
-section: 'Fonctionnalités des adresses e-mail'
-order: 05
 updated: 2021-10-08
 ---
 
@@ -33,7 +30,7 @@ La délégation donne la possibilité à l'utilisateur d'un compte e-mail de gé
 |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé »|
-|Poursuivez la lecture de ce guide à partir de la section « [En pratique](#oldmxplan) »|Consultez notre guide « [Consulter son compte Exchange depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/#modifier-le-mot-de-passe) »|
+|Poursuivez la lecture de ce guide à partir de la section « [En pratique](#oldmxplan) »|Consultez notre guide « [Consulter son compte Exchange depuis l’interface OWA](/pages/web/emails/email_owa#modifier-le-mot-de-passe) »|
 
 ## En pratique <a name="oldmxplan"></a>
 
@@ -82,6 +79,6 @@ Il est possible d'ajouter plusieurs identifiants OVHcloud pour gérer chaque adr
 
 ## Aller plus loin
 
-[Premiers pas avec l’offre MX Plan](https://docs.ovh.com/fr/emails/generalites-sur-les-emails-mutualises/)
+[Premiers pas avec l’offre MX Plan](/pages/web/emails/email_generalities)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

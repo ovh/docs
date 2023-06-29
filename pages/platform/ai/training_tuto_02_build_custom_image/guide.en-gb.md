@@ -1,9 +1,6 @@
 ---
 title: AI Training - Tutorial -  Build & use custom Docker image
-slug: training/build-use-custom-image
 excerpt: Explanations on how to build and use your own custom image
-section: AI Training - Tutorials
-order: 02
 updated: 2023-05-04
 ---
 
@@ -17,7 +14,7 @@ This tutorial covers the process of **building your own job image** for specific
 
 -   Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 -   A **Public Cloud** project
--   A [user for AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/users)
+-   A [user for AI Training](/pages/platform/ai/gi_01_manage_users)
 -   [Docker](https://www.docker.com/get-started) installed on your local computer or a virtual machine
 -   Knowledge about building an image and a [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 
@@ -373,8 +370,8 @@ If you want more concrete examples, feel free to look at the different `Dockerfi
 ## Go further
 
 - Check the [best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) official documentation.
-- Discover [how to build a custom Docker image to deploy a **Streamlit** app](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/build-use-streamlit-image/).
-- You can imagine deploying a Docker image for data processing and training tasks. Refer to this [tutorial](https://docs.ovh.com/gb/en/publiccloud/ai/training/tuto-models-comparaison-weights-and-biases/).
+- Discover [how to build a custom Docker image to deploy a **Streamlit** app](/pages/platform/ai/deploy_tuto_01_streamlit).
+- You can imagine deploying a Docker image for data processing and training tasks. Refer to this [tutorial](/pages/platform/ai/training_tuto_06_models_comparaison_weights_and_biases).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

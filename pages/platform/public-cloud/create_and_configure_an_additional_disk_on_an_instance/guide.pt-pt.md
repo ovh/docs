@@ -1,10 +1,7 @@
 ---
 title: 'Criar e configurar um disco suplementar numa instância'
 excerpt: 'Saiba como associar um novo volume à sua instância Public Cloud'
-slug: criar_e_configurar_um_disco_suplementar_numa_instancia
 legacy_guide_number: g1863
-section: Armazenamento
-order: 1
 updated: 2023-03-03
 ---
 
@@ -73,7 +70,7 @@ Os exemplos abaixo pressupõem que está ligado enquanto utilizador com autoriza
 
 #### Em Linux
 
-Abra uma [ligação SSH à sua instância](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#connect-to-instance) e utilize o comando abaixo para listar os discos ligados.
+Abra uma [ligação SSH à sua instância](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) e utilize o comando abaixo para listar os discos ligados.
 
 ```bash
 ~$ admin@server-1:~$ lsblk
@@ -325,7 +322,7 @@ Se deseja desassociar um volume da sua instância, a melhor prática é desmonta
 
 #### Em Linux
 
-Abra uma [ligação SSH à sua instância](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#etapa-3-criacao-de-uma-instancia) e utilize o comando abaixo para listar os discos ligados.
+Abra uma [ligação SSH à sua instância](/pages/platform/public-cloud/public-cloud-first-steps#etapa-3-criacao-de-uma-instancia) e utilize o comando abaixo para listar os discos ligados.
 
 ```bash
 admin@server-1:~$ lsblk

@@ -1,9 +1,6 @@
 ---
 title: 'Configurar un DNS dinámico en un dominio'
-slug: web_hosting_dynhost
 excerpt: 'Cómo configurar un registro DNS dinámico (DynHost) en un dominio de OVHcloud'
-section: 'DNS (servidor y zona)'
-order: 06
 updated: 2018-07-19
 ---
 
@@ -51,7 +48,7 @@ Una vez que haya completado todos los campos, haga clic en `Aceptar`{.action}. E
 
 ### 2. Crear un registro DNS dinámico (DynHost)
 
-En segundo lugar, debe crear el registro DNS que se actualizará automáticamente. Le recordamos que el registro DynHost no debe existir en la zona DNS de OVHcloud del dominio como registro A. Para comprobarlo y, en su caso, eliminar dicho registro, consulte nuestra guía [Editar una zona DNS de OVHcloud](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}.
+En segundo lugar, debe crear el registro DNS que se actualizará automáticamente. Le recordamos que el registro DynHost no debe existir en la zona DNS de OVHcloud del dominio como registro A. Para comprobarlo y, en su caso, eliminar dicho registro, consulte nuestra guía [Editar una zona DNS de OVHcloud](/pages/web/domains/dns_zone_edit){.external}.
 
 Para crear el registro DynHost, vuelva a la página principal de la pestaña `DynHost`{.action} y haga clic en el botón `Añadir un DynHost`{.action}. Introduzca la información solicitada:
 

@@ -1,9 +1,6 @@
 ---
 title: 'Conectarse a la base de datos de su servidor de bases de datos'
-slug: coneccion-base-de-datos-servidor-bdd
 excerpt: 'Cómo conectarse a la base de datos'
-section: Configuración
-order: 03
 updated: 2023-02-15
 ---
 
@@ -72,7 +69,7 @@ Si la conexión se ha completado, se mostrará la siguiente página de phpMyAdmi
 
 > [!warning]
 >
-> Si utiliza una solución Web Cloud Databases/ SQL Privado, no olvide autorizar su IP utilizando la guía sobre la [configuración de su servidor de bases de datos](https://docs.ovh.com/us/es/configurar-optimizar-su-servidor-de-base-de-datos/).
+> Si utiliza una solución Web Cloud Databases/ SQL Privado, no olvide autorizar su IP utilizando la guía sobre la [configuración de su servidor de bases de datos](/pages/web/clouddb/configure-database-server).
 >
 
 Para conectarse a la base de datos, asegúrese de que dispone de la siguiente información:
@@ -146,7 +143,7 @@ Para conectarse a la base de datos, asegúrese de que dispone de la siguiente in
 
 > [!primary]
 >
-> Para un servidor SQL privado, esta acción solo es posible por [SSH](https://docs.ovh.com/us/es/web_hosting_ssh_en_alojamiento_compartido/){.external} desde un alojamiento compartido de OVHcloud.
+> Para un servidor SQL privado, esta acción solo es posible por [SSH](/pages/web/hosting/ssh_on_webhosting){.external} desde un alojamiento compartido de OVHcloud.
 
 mysql --host=servidor --user=nombre_de_usuario --port=puerto --password=contraseña nombre_base_de_datos
 

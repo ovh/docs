@@ -16,8 +16,6 @@ account-and-service-management-managing-billing-payments-and-services-terminatin
 account-and-service-management-reversibility: Réversibilité
 account-and-service-management-reversibility-reversibility-policies: Politiques de réversibilité
 account-and-service-management-responsibility-sharing: Partage de responsabilité
-bare-metal-cloud-data-platforms: Data Platforms
-bare-metal-cloud-data-platforms-metrics-data-platform-visualisation: Visualisation
 bare-metal-cloud-dedicated-servers: Serveurs dédiés
 bare-metal-cloud-dedicated-servers-advanced-usage: Utilisation avancée
 bare-metal-cloud-dedicated-servers-getting-started: Premiers pas
@@ -112,18 +110,14 @@ public-cloud-containers-orchestration-managed-private-registry: Managed Private 
 public-cloud-containers-orchestration-managed-private-registry-getting-started: Getting started
 public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutorials
 public-cloud-data-analytics: Data Analytics
+public-cloud-data-analytics-data-integration: Data Integration
+public-cloud-data-analytics-data-integration-guides: Guides
 public-cloud-data-analytics-data-processing: Data Processing
 public-cloud-data-analytics-data-processing-concepts: Concepts
 public-cloud-data-analytics-data-processing-getting-started: Premiers pas
 public-cloud-data-analytics-data-processing-how-to: Guides d'utilisation
 public-cloud-data-analytics-data-processing-supported-computing-engines: Moteurs de calcul compatibles
 public-cloud-data-analytics-data-processing-tutorials: Tutoriels
-public-cloud-data-platforms-logs-data-platform: Logs Data Platform
-public-cloud-data-platforms-logs-data-platform-features: Fonctionnalités
-public-cloud-data-platforms-logs-data-platform-getting-started: Premiers pas
-public-cloud-data-platforms-logs-data-platform-logging-libraries: Librairies de logs
-public-cloud-data-platforms-logs-data-platform-use-cases: Cas d'utilisation
-public-cloud-data-platforms-logs-data-platform-visualising-logs: Consulter les logs
 public-cloud-databases: Bases de données Public Cloud
 public-cloud-databases-general-information: Informations générales
 public-cloud-databases-general-guides: Guides généraux
@@ -341,3 +335,11 @@ manage-operate-api: API
 manage-operate-api-apiv6: APIv6
 manage-operate-api-getting-started: Premiers pas
 manage-operate-terraform: Terraform
+manage-operate-observability: Observabilité
+observability-logs-data-platform: Logs Data Platform
+observability-logs-data-platform-getting-started: Premiers pas
+observability-logs-data-platform-ingestion: Ingestion de vos logs 
+observability-logs-data-platform-visualizing-querying-exploiting: Visualisation, requête et exploitation de vos logs
+observability-logs-data-platform-opensearch-index: Index OpenSearch as-a-service 
+observability-logs-data-platform-security-conformity: Sécurité et conformité
+observability-logs-data-platform-usecases: Cas d'usage

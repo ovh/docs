@@ -1,7 +1,5 @@
 ---
 title: Branchements IP5000
-slug: branchements-ip5000
-section: Polycom IP5000
 hidden: true
 updated: 2018-03-26
 ---

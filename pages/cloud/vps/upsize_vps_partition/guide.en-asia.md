@@ -1,9 +1,6 @@
 ---
 title: Repartitioning a VPS after an upgrade
-slug: repartitioning-vps-after-upgrade
 excerpt: 'Find out how to increase your storage space following an upgrade'
-section: 'Getting started'
-order: 3
 updated: 2021-05-18
 ---
 
@@ -22,7 +19,7 @@ When you upgrade your VPS, you might need to repartition your storage space. Her
 ## Requirements
 
 - Administrative access to your VPS (Windows)
-- Rebooting the server in [rescue mode](../rescue/) (Linux)
+- Rebooting the server in [rescue mode](/pages/cloud/vps/rescue) (Linux)
 
 ## Instructions
 
@@ -79,7 +76,7 @@ Pass 5: Checking group summary information
 
 If you see any errors, take note of them and resolve them as required. Below is a (non-exhaustive) list of the most common errors you might see:
 
-- `bad magic number in superblock`: Do not continue. Please read and follow our instructions on [How to fix a **bad magic number in superblock** error](../repartitioning-vps-after-upgrade/#how-to-fix-a-bad-magic-number-in-superblock-error).
+- `bad magic number in superblock`: Do not continue. Please read and follow our instructions on [How to fix a **bad magic number in superblock** error](/pages/cloud/vps/upsize_vps_partition#how-to-fix-a-bad-magic-number-in-superblock-error).
 
 - `/dev/vdb1 has unsupported feature(s): metadata_csum` followed by `e2fsck: Get a newer version of e2fsck!`: Update e2fsck. If the latest version is not available via `apt` (or another manager package), you will need to compile it from the sources.
 

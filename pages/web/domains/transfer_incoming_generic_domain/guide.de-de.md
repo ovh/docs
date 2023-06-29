@@ -1,21 +1,18 @@
 ---
-title: Domainnamen zu OVHcloud transferieren
-slug: transfer-einer-generischen-domain
-excerpt: Erfahren Sie hier, wie Sie Ihren Domainnamen zu OVHcloud transferieren
-section: Transfer
-order: 01
-updated: 2023-06-08
+title: "Domainnamen zu OVHcloud transferieren"
+excerpt: "Erfahren Sie hier, wie Sie Ihren Domainnamen zu OVHcloud transferieren"
+updated: 2023-06-21
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 08.06.2023**
-
 ## Ziel
 
-Mit einem Domaintransfer wechseln Sie Ihren Domainnamen-Registrar. Sie können Ihren Domainnamen zu OVHcloud übertragen, indem Sie eine Bestellung erzeugen; der Vorgang dauert anschließend bis zu 10 Tage.
+Ihr Domainname wird derzeit von einem anderen **Registrar** verwaltet und Sie möchten ihn zu OVHcloud umziehen? Sie können dazu einen Transfervorgang einleiten.
+
+Wenn Sie Ihren Domainname transferieren, ändern Sie dessen **Registrar**. Sie können Ihren Domainnamen zu OVHcloud übertragen, indem Sie eine Bestellung erzeugen; der Transfervorgang dauert anschließend bis zu 10 Tage.
 
 **Diese Anleitung erklärt, wie Sie einen generischen Domainnamen zu OVHcloud transferieren.**
 
@@ -59,7 +56,7 @@ Der Transferprozess umfasst mehrere Schritte. Diese erfordern die Kontaktaufnahm
 
 > [!warning]
 >
-> Das genaue Verfahren für den Domaintransfer kann variieren, insbesondere bei bestimmten Ländercode-TLDs (ccTLD, z.B. .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi) und einigen speziellen TLDs (.am, .fm. etc.). Je nach Endung Ihres Domainnamens können zusätzliche Voraussetzungen notwendig sein. Wir empfehlen Ihnen, zunächst die für die betreffende Endung verfügbaren Informationen auf unserer Website zu überprüfen: <https://www.ovhcloud.com/de/domains/tld/>.
+> Das genaue Verfahren für den Domaintransfer kann variieren, insbesondere bei bestimmten Ländercode-**TLD**s (**ccTLD**, z.B. .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi) und einigen speziellen **TLD**s (.am, .fm. etc.). Je nach Endung Ihres Domainnamens können zusätzliche Voraussetzungen notwendig sein. Wir empfehlen Ihnen, zunächst die für die betreffende Endung verfügbaren Informationen auf unserer Website zu überprüfen: <https://www.ovhcloud.com/de/domains/tld/>.
 >
 
 ### Schritt 1: Domaininformationen überprüfen
@@ -125,7 +122,7 @@ Sobald die Bestellung bestätigt wurde, erhalten Sie einen Bestellschein. Der Tr
 
 > [!primary]
 >
-> Wenn der Transfer-Code bei der Bestellung nicht eingegeben wurde, können Sie ihn im Bereich `Laufende Operationen`{.action} eingeben und damit den Transfer bestätigen.
+> Wenn der Transfer-Code bei der Bestellung nicht eingegeben wurde, können Sie ihn im Bereich `Laufende Vorgänge`{.action} eingeben und damit den Transfer bestätigen.
 
 ### Schritt 4: Validierung des Transfers durch den aktuellen Registrar
 
@@ -154,6 +151,19 @@ Der Transferprozess kann über das [OVHcloud Kundencenter](https://www.ovh.com/a
 ### Schritt 5: Domainnamen bei OVHcloud verwalten
 
 Sobald der Transfer abgeschlossen ist, können Sie Ihren Domainnamen über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwalten. Gehen Sie im Bereich `Web Cloud`{.action} zu `Domainnamen`{.action} und wählen Sie den Domainnamen aus.
+
+> [!warning]
+>
+> Für Domainnamen mit einer *generischen* Endung (**gTLD**, z.B. *.com*, *.net*, *.info*, *.org*, etc.) wird das ursprüngliche Ablaufdatum beibehalten. Nach einem erfolgreichen Transfer verlängert OVHcloud das Abonnement des Domainnamens um ein weiteres Jahr ohne Aufpreis.
+> Beispiel: Ihr Domainname mit einer *generischen* Endung läuft am 29.09.2023 ab und wird am 04.06.2023 transferiert. Nach dem Transfer des Domainnamens zu OVHcloud ist das neue Ablaufdatum: 29.09.2024.
+>
+> Für Domainnamen mit einer *landesspezifischen* oder *regionalen* Endung (**ccTLD**, z.B. *.de*, *.fr*, *.be*, *.es*, etc.) sind die Bedingungen für den Transfer abhängig von den Vorgaben der **Registry** der jeweiligen Domainendung.
+> Sobald der Transfer abgeschlossen ist, überprüfen Sie das Ablaufdatum des Domainnamens in Ihrem OVHcloud Kundencenter.
+>
+> Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den Domainnamen aus. **Monat** und **Jahr** der nächsten Verlängerung werden oben auf der Seite unter dem Domainnamen angezeigt.
+>
+> Je nach Situation und dem neuen Ablaufdatum kann es notwendig sein, Ihren Domainnamen direkt nach dem Transfer zu verlängern.
+>
 
 ## Weiterführende Informationen
 

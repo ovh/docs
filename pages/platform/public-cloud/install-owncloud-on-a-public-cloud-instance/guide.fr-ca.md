@@ -1,8 +1,6 @@
 ---
 title: 'Comment installer ownCloud sur une instance de Public Cloud?'
-slug: intaller-owncloud-sur-public-cloud-ubuntu-1804
 excerpt: 'Ce tutoriel vous montrera comment installer ownCloud sur une Instance de Public Cloud exécutant Ubuntu 18.04'
-section: Tutoriels
 updated: 2019-04-10
 ---
 
@@ -31,9 +29,9 @@ Dans ce tutoriel, nous allons installer ownCloud sur une nouvelle installation d
 
 Avant de suivre ce tutoriel, veuillez vous référer à ces guides :
 
-* [Guide pour la création d'une Instance de Public Cloud](../premiers-pas-instance-public-cloud/)
-* [Guide de création du stockage d'objets sur la plate-forme de Public Cloud](https://docs.ovh.com/ca/fr/storage/object-storage/pcs/create-container/)
-* [Guide de création et de configuration d'un disque supplémentaire sur une Instance de Public Cloud ](../configurer-un-volume-additionnel/)
+* [Guide pour la création d'une Instance de Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps)
+* [Guide de création du stockage d'objets sur la plate-forme de Public Cloud](/pages/cloud/storage/object_storage/pcs_create_container)
+* [Guide de création et de configuration d'un disque supplémentaire sur une Instance de Public Cloud ](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
 
 
 ## Prérequis
@@ -207,7 +205,7 @@ Il y a des avantages et des inconvénients à utiliser le stockage sur disque lo
 En utilisant l’Object Storage OpenStack d’OVH, vous pouvez stocker vos fichiers en externe, sans limite sur le volume total des données ou la durée de stockage. De plus, OVH garantit une durabilité des données à 100 % et réplique vos données sur trois sites différents, pour un rapport qualité/prix exceptionnel.
 
 En savoir plus sur [l’Object Storage d’OVH](https://www.ovhcloud.com/fr-ca/public-cloud/object-storage/){.external}.
-Lire le guide d'utilisation de l’Object Storage pour ownCloud : [Object Storage pour ownCloud](https://docs.ovh.com/ca/en/storage/configure_owncloud_with_object_storage/){.external}.
+Lire le guide d'utilisation de l’Object Storage pour ownCloud : [Object Storage pour ownCloud](/pages/cloud/storage/object_storage/pcs_configure_owncloud_with_object_storage){.external}.
 
 ### Utilisation d'un disque supplémentaire comme stockage (facultatif)
 Comme pour l'Object storage, l'avantage d'utiliser un disque supplémentaire est que vous êtes moins limité par les problèmes de stockage. Vous pouvez également augmenter la taille d'un disque supplémentaire après sa création, jusqu'à 10 To.
@@ -222,10 +220,10 @@ En savoir plus sur [les disques supplémentaires du Public Cloud](https://www.ov
 >
 
 #### Étape 1: Créer et connecter le disque à votre instance Public Cloud
-Pour ce faire, il vous suffit de suivre les étapes de ce guide : [Créez un disque supplémentaire sur Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/creer-et-configurer-un-disque-supplementaire-sur-une-instance/){.external}.
+Pour ce faire, il vous suffit de suivre les étapes de ce guide : [Créez un disque supplémentaire sur Public Cloud](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance){.external}.
 
 #### Étape 2: Configurer le disque supplémentaire
-Pour ce faire, il vous suffit de suivre les étapes de ce guide : [Configurez un disque supplémentaire sur Public Cloud](../configurer-un-volume-additionnel/#depuis-une-instance-sous-linux){.external}.
+Pour ce faire, il vous suffit de suivre les étapes de ce guide : [Configurez un disque supplémentaire sur Public Cloud](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#depuis-une-instance-sous-linux){.external}.
 
 > [!primary]
 >
@@ -243,7 +241,7 @@ Pour sauvegarder les fichiers, il y a deux options avec Public Cloud. La premiè
 Option 1 - créer un snapshot de l'Instance :
 Utilisez le guide suivant pour faire un snapshot de votre Instance :
 
-[Sauvegarde d'une instance](../sauvegarder-une-instance/){.external}
+[Sauvegarde d'une instance](/pages/platform/public-cloud/save_an_instance){.external}
 
 Option 2 - créer une copie du dossier en utilisant la commande ci-dessous :
 ```sh

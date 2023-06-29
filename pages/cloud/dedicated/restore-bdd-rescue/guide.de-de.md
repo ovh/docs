@@ -1,8 +1,6 @@
 ---
 title: "Sicherung Ihrer Datenbanken im Rescue-Modus"
-slug: dedicated-servers-retrieve-database
 excerpt: "Erfahren Sie hier, wie Sie im Rescue-Modus Ihre Datenbanken abrufen und sichern"
-section: Tutorials
 updated: 2023-04-13
 ---
 

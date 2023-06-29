@@ -1,9 +1,6 @@
 ---
 title: Encrypting your logs archives
-slug: cold-storage-encryption
-order: 5
 excerpt: Secure your Cold Stored logs by encrypting them with your PGP public key
-section: Features
 updated: 2023-03-10
 ---
 
@@ -288,6 +285,6 @@ The Logs Data Platform team will then take care of your request.
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/sg/en/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/en/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

@@ -1,8 +1,6 @@
 ---
 title: Scegli la manutenzione pianificata su Hosted Private Cloud
 excerpt: "Questa guida ti mostra come impostare una manutenzione programmata sul tuo servizio Hosted Private Cloud powered by VMware"
-slug: maintenance-rescheduling
-section: Funzionalità OVHcloud
 updated: 2022-11-30
 ---
 
@@ -58,7 +56,7 @@ Clicca sul pulsante `Modifica`{.action} per confermare le modifiche.
 
 ### Via API OVHcloud
 
-Accedi all'[interfaccia di gestione dei tuoi servizi via API](https://eu.api.ovh.com/). Per maggiori informazioni, consulta la guida Iniziare a [utilizzare le API OVHcloud](https://docs.ovh.com/it/api/first-steps-with-ovh-api/).
+Accedi all'[interfaccia di gestione dei tuoi servizi via API](https://eu.api.ovh.com/). Per maggiori informazioni, consulta la guida Iniziare a [utilizzare le API OVHcloud](/pages/account/api/first-steps).
 
 Esegui questa chiamata API:
 

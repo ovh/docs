@@ -1,7 +1,5 @@
 ---
 title: Memcached (Object cache)
-slug: memcached
-section: Services
 updated: 2021-06-03
 ---
 
@@ -27,7 +25,7 @@ Both Memcached and Redis can be used for application caching.  As a general rule
 
 ## Relationship
 
-The format exposed in the ``$PLATFORM_RELATIONSHIPS`` [environment variable](../../development-variables#platformsh-provided-variables):
+The format exposed in the ``$PLATFORM_RELATIONSHIPS`` [environment variable](/pages/web/web-paas/development-variables#platformsh-provided-variables):
 
 ```json  
 {
@@ -82,7 +80,7 @@ relationships:
 >
 
 
-If you are using PHP, configure the relationship and enable the [PHP memcached extension](../../languages-php/extensions) in your `.platform.app.yaml`.  (Note that the `memcached` extension requires `igbinary` and `msgpack` as well, but those will be enabled automatically.)
+If you are using PHP, configure the relationship and enable the [PHP memcached extension](/pages/web/web-paas/languages-php/extensions) in your `.platform.app.yaml`.  (Note that the `memcached` extension requires `igbinary` and `msgpack` as well, but those will be enabled automatically.)
 
 ```yaml
 runtime:

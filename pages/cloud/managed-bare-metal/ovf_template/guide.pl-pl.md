@@ -1,10 +1,8 @@
 ---
 title: 'Instalacja VM z szablonów OVF Windows i SQL Server'
-slug: instalacja-z-szablonow-ovhcloud
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/instalacja-z-szablonow-ovh/'
+    canonical: '/pages/cloud/private-cloud/ovf_template'
 excerpt: 'Dowiedz się, jak zainstalować VM z szablonu Windows i SQL Server'
-section: 'Usługi i opcje OVHcloud'
 updated: 2020-11-18
 ---
 
@@ -24,7 +22,7 @@ OVH oferuje szablony Windows i SQL Server (w formacie OVF), które możesz wdro�
 ## Wymagania początkowe
 
 - Dostęp do klienta sieciowego lub do grubego klienta w zależności od używanej wersji
-- [Aktywowanie licencji Windows](../manager-ovhcloud/#licencja-windows) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} (zakładka `Licencje Windows`{.action} w odpowiednim centrum danych) 
+- [Aktywowanie licencji Windows](/pages/cloud/managed-bare-metal/manager-ovhcloud#licencja-windows) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} (zakładka `Licencje Windows`{.action} w odpowiednim centrum danych) 
 
 
 ## W praktyce

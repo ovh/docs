@@ -1,11 +1,8 @@
 ---
 title: VMware vMotion
-slug: vmware-vmotion-new
 routes:
-    canonical: 'https://docs.ovh.com/it/private-cloud/vmware-vmotion-new/'
+    canonical: '/pages/cloud/private-cloud/vmware_vmotion_new'
 excerpt: Come trasferire a caldo una macchina virtuale su un host differente
-section: Funzionalità VMware vSphere
-order: 04
 updated: 2020-11-18
 ---
 
@@ -29,7 +26,7 @@ Per migrare i file di una macchina virtuale verso un’altra risorsa, è suffici
 
 Il menu propone diverse opzioni di vMotion. Nel nostro esempio, migreremo semplicemente la macchina virtuale su un altro host. Per eseguire questa operazione è necessario selezionare “Change compute resource only”.
 
-L’opzione “Change storage only” permette invece di migrare la VM su un altro datastore. Questa operazione, chiamata **Storage vMotion**, è descritta in [questa guida](../vmware_storage_vmotion/).
+L’opzione “Change storage only” permette invece di migrare la VM su un altro datastore. Questa operazione, chiamata **Storage vMotion**, è descritta in [questa guida](/pages/cloud/managed-bare-metal/vmware_storage_vmotion).
 
 ![Scelta del tipo di vMotion](images/Vmotion2.png){.thumbnail}
 

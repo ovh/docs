@@ -1,9 +1,6 @@
 ---
 title: Mejorar la solución de alojamiento web
 excerpt: Cómo cambiar la fórmula de suscripción de un plan de hosting de OVHcloud
-slug: how_to_change_web_hosting_offer
-section: Optimización del sitio web
-order: 02
 updated: 2023-04-19
 ---
 
@@ -15,7 +12,7 @@ updated: 2023-04-19
 
 ## Objetivo
 
-Su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) le permite aumentar la capacidad de sus [planes de hosting](https://www.ovhcloud.com/es/web-hosting/) para disponer de un alojamiento más potente, más espacio de almacenamiento, bases de datos, direcciones de correo o funcionalidades adicionales como los [listas de correo](https://docs.ovh.com/us/es/emails/guia_de_utilizacion_de_listas_de_difusion/) (a partir del [plan Profesional](https://www.ovhcloud.com/es/web-hosting/professional-offer/)) o el [servicio SQL privado](https://www.ovhcloud.com/es/web-hosting/options/private-sql/) (incluidos los productos de la [gama Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer/)).
+Su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) le permite aumentar la capacidad de sus [planes de hosting](https://www.ovhcloud.com/es/web-hosting/) para disponer de un alojamiento más potente, más espacio de almacenamiento, bases de datos, direcciones de correo o funcionalidades adicionales como los [listas de correo](/pages/web/emails/feature_mailing_list) (a partir del [plan Profesional](https://www.ovhcloud.com/es/web-hosting/professional-offer/)) o el [servicio SQL privado](https://www.ovhcloud.com/es/web-hosting/options/private-sql/) (incluidos los productos de la [gama Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer/)).
 
 **Descubra cómo cambiar sin interrupción el plan de hosting de OVHcloud.**
 
@@ -39,7 +36,7 @@ Su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&fr
 > [!warning]
 > La modificación de la suscripción para una oferta inferior no está disponible para nuestros clientes, ya que sus servicios están alojados en un datacenter situado fuera de Europa.
 >
-> Si desea cambiar la suscripción a un plan inferior, siga los pasos de nuestra guía "[Migrar un sitio web y el correo a OVHcloud](https://docs.ovh.com/us/es/hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/)".
+> Si desea cambiar la suscripción a un plan inferior, siga los pasos de nuestra guía "[Migrar un sitio web y el correo a OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh)".
 >
 
 Para modificar su suscripción, vaya a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) en la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
@@ -92,9 +89,9 @@ Siga [estas instrucciones](#modify) para cambiar de producto.
 
 ## Más información <a name="gofurther"></a>
 
-[Consultar las estadísticas y logs de mi sitio web alojado en un plan compartido](https://docs.ovh.com/us/es/hosting/web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/)
+[Consultar las estadísticas y logs de mi sitio web alojado en un plan compartido](/pages/web/hosting/logs_and_statistics)
 
-[Optimización del rendimiento de su sitio web](https://docs.ovh.com/us/es/hosting/web_hosting_guia_de_optimizacion_del_rendimiento_de_un_sitio_web/)
+[Optimización del rendimiento de su sitio web](/pages/web/hosting/optimise_your_website_performance)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 

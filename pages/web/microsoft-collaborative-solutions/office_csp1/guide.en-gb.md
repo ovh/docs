@@ -1,9 +1,6 @@
 ---
 title: Managing a group of Microsoft 365 OVHcloud licences
-slug: manage-office-365-csp1
 excerpt: Find out how to subscribe to a Microsoft 365 licence and manage it in the OVHcloud Control Panel
-section: Office
-order: 02
 updated: 2021-09-09
 ---
 
@@ -104,6 +101,6 @@ Enter the reasons for your cancellation request, then click `Confirm`{.action}.
 
 ## Go further
 
-[Using Remote Desktop with Microsoft 365 apps](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/office365-proplus-remote-desktop/)
+[Using Remote Desktop with Microsoft 365 apps](/pages/web/microsoft-collaborative-solutions/office_proplus)
 
 Join our community of users on <https://community.ovh.com/en/>.

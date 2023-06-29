@@ -1,9 +1,6 @@
 ---
 title: 'Managing users and projects'
 excerpt: 'Find out how to manage users and projects in your OVHcloud Managed private registry (Harbor).'
-slug: managing-users-and-projects
-section: 'Getting started'
-order: 04
 updated: 2022-04-13
 ---
 
@@ -39,8 +36,8 @@ OVHcloud Managed Private Registry service provides you a managed Harbor, an auth
 
 ## Requirements
 
-- An OVHcloud Managed Private Registry (see the [creating a private registry](../creating-a-private-registry/) guide for more information)
-- An access to the Harbor UI to operate the private registry (see the [connecting to the UI](../connecting-to-the-ui/) guide for more information)
+- An OVHcloud Managed Private Registry (see the [creating a private registry](/pages/platform/private-registry/creating-a-private-registry) guide for more information)
+- An access to the Harbor UI to operate the private registry (see the [connecting to the UI](/pages/platform/private-registry/connecting-to-the-ui) guide for more information)
 
 
 ## Instructions
@@ -111,4 +108,4 @@ The *private-user* is now a member of the *private* project.
 
 ### Go further
 
-To go further you can look at our guide on [Creating and using a private image](../creating-and-using-a-private-image/).
+To go further you can look at our guide on [Creating and using a private image](/pages/platform/private-registry/creating-and-using-a-private-image).

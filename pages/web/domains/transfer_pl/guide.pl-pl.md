@@ -1,11 +1,8 @@
 ---
 title: 'Transfer domeny .pl do OVHcloud'
-slug: przeniesienie-domeny-pl
 routes:
-    canonical: 'https://docs.ovh.com/pl/domains/przeniesienie-domeny-globalnej/'
+    canonical: '/pages/web/domains/transfer_incoming_generic_domain'
 excerpt: "Dowiedz się, jak wykonać transfer domeny .pl do OVHcloud"
-section: Transfer
-order: 09
 updated: 2022-10-19
 ---
 
@@ -27,9 +24,9 @@ Transfer domeny umożliwia jej przeniesienie do innego operatora. Możesz przeni
 >
 > Jeśli domena ma pozostać zarejestrowana w OVHcloud, ale została zmieniona w sposób umożliwiający zarządzanie domeną lub jej własność, transfer wychodzący z domeny nie jest właściwą procedurą.
 >
-> Aby przenieść zarządzanie domeną na inne konto klienta OVHcloud, należy zmienić kontakt. Procedurę opisano w [tym przewodniku](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/).
+> Aby przenieść zarządzanie domeną na inne konto klienta OVHcloud, należy zmienić kontakt. Procedurę opisano w [tym przewodniku](/pages/account/customer/managing_contacts).
 >
-> Jeśli chcesz zmienić również **właściciela** domeny, musisz to zrobić **przed** zmianą kontaktów domeny. W tym celu postępuj zgodnie z instrukcjami zawartymi w przewodniku OVHcloud dotyczącym [zmiany właściciela domen](https://docs.ovh.com/pl/domains/zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz/).
+> Jeśli chcesz zmienić również **właściciela** domeny, musisz to zrobić **przed** zmianą kontaktów domeny. W tym celu postępuj zgodnie z instrukcjami zawartymi w przewodniku OVHcloud dotyczącym [zmiany właściciela domen](/pages/web/domains/trade_domain).
 >
 
 ## Wymagania początkowe
@@ -86,7 +83,7 @@ Po odblokowaniu Twojej domeny i uzyskanym kodzie możesz zamówić jej transfer 
 
 Wprowadź kod transferu w polu obok nazwy Twojej domeny. Jeśli nie posiadasz jeszcze kodu transferu, możesz zaznaczyć pole `Podaj kod transferu później`{.action}. Zalecamy jednak, abyś przed kolejnymi krokami upewnił się, że jesteś w stanie ten kod uzyskać. Pamiętaj, że transfer nie rozpocznie się, dopóki nie zostanie podany prawidłowy kod.
 
-Możesz również zakończyć zamówienie [hostingiem www](https://www.ovhcloud.com/pl/web-hosting/){.external} i innymi rozwiązaniami OVHcloud. Może to być interesujące, jeśli chcesz przenieść Twoje usługi do OVHcloud. Przewodnik [Przeniesienie strony WWW do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/) zawiera instrukcje, jak to zrobić.
+Możesz również zakończyć zamówienie [hostingiem www](https://www.ovhcloud.com/pl/web-hosting/){.external} i innymi rozwiązaniami OVHcloud. Może to być interesujące, jeśli chcesz przenieść Twoje usługi do OVHcloud. Przewodnik [Przeniesienie strony WWW do OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh) zawiera instrukcje, jak to zrobić.
 
 > [!warning]
 >
@@ -101,7 +98,7 @@ Możesz również zakończyć zamówienie [hostingiem www](https://www.ovhcloud.
 
 - Po kliknięciu `Zmień konfigurację`{.action} w tym etapie możesz wprowadzić nazwy serwerów DNS, których nazwa domeny używa obecnie. W ten sposób domena będzie już powiązana z tymi serwerami DNS w konfiguracji OVHcloud.
 
-- Jeśli nie przeprowadzasz tej operacji, domena zostanie dostarczona wraz z nową strefą DNS na serwerach DNS OVHcloud. Może zaistnieć konieczność ręcznej [modyfikacji strefy DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/).
+- Jeśli nie przeprowadzasz tej operacji, domena zostanie dostarczona wraz z nową strefą DNS na serwerach DNS OVHcloud. Może zaistnieć konieczność ręcznej [modyfikacji strefy DNS](/pages/web/domains/dns_zone_edit).
 
 - W niektórych przypadkach proces transferu może wymagać dodatkowych informacji o właścicielu domeny. Aby dodać te informacje, kliknij opcję `Zarządzanie kontaktami/właściciela`{.action}.
 
@@ -137,6 +134,6 @@ Po zakończeniu operacji transferu możesz zarządzać domeną w [Panelu klienta
 
 ## Sprawdź również
 
-[Migracja strony WWW i kont e-mail do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/)
+[Migracja strony WWW i kont e-mail do OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

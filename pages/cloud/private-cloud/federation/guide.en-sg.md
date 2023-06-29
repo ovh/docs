@@ -1,8 +1,6 @@
 ---
 title: Using Active Directory server as an authentication source (Federation)
-slug: federation
 excerpt: Learn how to use you Active Directory server as an authentication source for your vSphere users.
-section: 'VMware vSphere features'
 updated: 2022-12-05
 ---
 

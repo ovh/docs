@@ -1,8 +1,6 @@
 ---
 title: Gestire le rubriche indirizzi SMS
-slug: gestire_rubriche_sms
 excerpt: Come creare una rubrica SMS nel tuo account OVHcloud
-section: Gestisci la tua offerta
 updated: 2022-08-05
 ---
 

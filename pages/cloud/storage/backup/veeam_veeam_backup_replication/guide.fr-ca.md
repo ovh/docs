@@ -1,8 +1,6 @@
 ---
 title: 'Installer Veeam Backup & Replication'
-slug: veeam/veeam-backup-replication
 excerpt: 'Découvrez comment installer un serveur Veeam Backup & Replication avec Veeam Enterprise'
-section: 'Veeam'
 updated: 2023-06-23
 ---
 
@@ -167,7 +165,6 @@ Pour configurer votre environnement, assurez-vous d'avoir ouvert les ports d'OVH
 Dans la nouvelle fenêtre, saisissez les informations suivantes :
 
 * L'adresse IP publique par laquelle votre serveur **Veeam Backup & Replication** peut être contacté.
-* Le port de votre serveur **Veeam Backup & Replication** (usuellement **9392/TCP**).
 * le login du compte de service précédemment créé.
 * le mot de passe du compte de service.
 

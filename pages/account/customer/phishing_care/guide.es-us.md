@@ -1,8 +1,6 @@
 ---
 title: 'Protéjase contra el fraude: cómo detectar los mensajes de correo fraudulento y el phishing'
-slug: proteccion-ataque-phishing
 excerpt: 'Cómo reconocer un email de phishing y qué hacer si ha hecho clic en un enlace fraudulento'
-section: Seguridad
 updated: 2020-10-12
 ---
 

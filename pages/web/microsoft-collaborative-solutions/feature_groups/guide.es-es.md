@@ -1,9 +1,6 @@
 ---
 title: 'Crear grupos de contactos'
 excerpt: 'Aprenda a gestionar listas de correo en Exchange'
-slug: exchange_20132016_uso_de_los_grupos_listas_de_correo
-section: 'Funcionalidades de las cuentas Exchange'
-order: 02
 updated: 2020-02-26
 ---
 

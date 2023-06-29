@@ -1,9 +1,6 @@
 ---
 title: Como migrar um site e e-mails para a OVHcloud?
-slug: migrar-site-para-ovh
 excerpt: "Saiba como migrar o seu website, e-mails e o seu domínio para a OVHcloud sem interromper os serviços"
-section: Primeiros passos
-order: 08
 updated: 2022-11-24
 ---
 
@@ -81,14 +78,14 @@ Depois de validar o pagamento, a instalação do alojamento vai iniciar. Um e-ma
 
 ### Etapa 2 : criar e pré-configurar uma zona DNS para o seu domínio na OVHcloud <a name="step2"></a>
 
-Quando o alojamento estiver criado, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e crie uma zona DNS para o seu domínio **sem "www"**. Para mais informações, consulte o nosso manual sobre a [criação de uma zona DNS na OVHcloud](https://docs.ovh.com/pt/domains/criar_uma_zona_dns_para_um_dominio_externo/).
+Quando o alojamento estiver criado, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e crie uma zona DNS para o seu domínio **sem "www"**. Para mais informações, consulte o nosso manual sobre a [criação de uma zona DNS na OVHcloud](/pages/web/domains/dns_zone_create).
 
-Depois de criar a zona DNS, aceda à secção de gestão usando o nosso manual "[Editar uma zona DNS da OVHcloud](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/)". Se não estiverem presentes, introduza as seguintes entradas:
+Depois de criar a zona DNS, aceda à secção de gestão usando o nosso manual "[Editar uma zona DNS da OVHcloud](/pages/web/domains/dns_zone_edit)". Se não estiverem presentes, introduza as seguintes entradas:
 
 - O seu domínio sem os "www", para o destino do tipo "MX": mx1.mail.ovh.net ".
 - O seu domínio sem os "www", para o destino do tipo "MX": mx2.mail.ovh.net ".
 - O seu domínio sem os "www", para o destino do tipo "MX": mx3.mail.ovh.net ".
-- O seu nome de domínio sem "www", para o endereço IP de destino do tipo "A" do seu alojamento OVHcloud. Para obter o endereço IP correto, consulte o nosso guia que lista os [endereços IP dos diferentes clusters de alojamento partilhado](https://docs.ovh.com/pt/hosting/lista-dos-enderecos-ip-dos-clusters-e-alojamentos-web/).
+- O seu nome de domínio sem "www", para o endereço IP de destino do tipo "A" do seu alojamento OVHcloud. Para obter o endereço IP correto, consulte o nosso guia que lista os [endereços IP dos diferentes clusters de alojamento partilhado](/pages/web/hosting/clusters_and_shared_hosting_IP).
 - O seu domínio **com** os "www", para o seu domínio sem os "www", com um registo do tipo "CNAME".
 
 **Exemplo**: Para o nome de domínio "domain.tld", o resultado deve ser o seguinte:
@@ -110,17 +107,17 @@ Estas operações são realizadas exclusivamente junto do seu alojador atual. Co
 
 #### Etapa 4 : importar o backup do seu website para a sua oferta de alojamento OVHcloud <a name="step4"></a>
 
-Para importar o backup do espaço de armazenamento FTP do antigo fornecedor, [aceda ao espaço de armazenamento FTP do seu alojamento OVHcloud](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) e elimine o backup da pasta raiz "www" (ou de outra pasta raiz que tenha criado).
+Para importar o backup do espaço de armazenamento FTP do antigo fornecedor, [aceda ao espaço de armazenamento FTP do seu alojamento OVHcloud](/pages/web/hosting/ftp_connection) e elimine o backup da pasta raiz "www" (ou de outra pasta raiz que tenha criado).
 
-Recomendamos que utilize o software [FileZilla](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/) para transferir o seu backup FTP para o seu alojamento.
+Recomendamos que utilize o software [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide) para transferir o seu backup FTP para o seu alojamento.
 
 Se o seu ficheiro de backup estiver comprimido (zipado), descomprima-o numa pasta vazia no seu computador antes de transferir os seus ficheiros para o alojamento OVHcloud.
 
-Para o backup da sua base de dados, [crie uma nova base de dados](https://docs.ovh.com/pt/hosting/criar-base-de-dados/) e depois [importe o seu backup para a sua nova base de dados](https://docs.ovh.com/pt/hosting/partilhado_guia_de_importacao_de_uma_base_de_dados_mysql/).
+Para o backup da sua base de dados, [crie uma nova base de dados](/pages/web/hosting/sql_create_database) e depois [importe o seu backup para a sua nova base de dados](/pages/web/hosting/sql_importing_mysql_database).
 
 > [!primary]
 >
-> A OVHcloud oferece servidores de base de dados Web Cloud Databases. Se pretender utilizar esta oferta com o seu website, consulte toda a nossa documentação sobre este produto na [nossa página dedicada](https://docs.ovh.com/pt/clouddb/).
+> A OVHcloud oferece servidores de base de dados Web Cloud Databases. Se pretender utilizar esta oferta com o seu website, consulte toda a nossa documentação sobre este produto na [nossa página dedicada](/products/web-cloud-clouddb).
 >
 
 De seguida, associe a sua base de dados OVHcloud ao ficheiro de configuração do seu site presente no espaço de armazenamento FTP do seu alojamento OVHcloud.
@@ -128,10 +125,10 @@ Para isso, substitua as informações de ligação da sua antiga base de dados p
 
 > [!success]
 >
-> Para ligar a sua nova base de dados se utiliza um Content Management System (CMS) como WordPress, Joomla!, Drupal ou PrestaShop, encontre as informações sobre os seus ficheiros de configuração a partir do **etapa 2** do guia "[modificação da palavra-passe de uma base de dados](https://docs.ovh.com/pt/hosting/alterar-palavra-passe-base-de-dados/)".
+> Para ligar a sua nova base de dados se utiliza um Content Management System (CMS) como WordPress, Joomla!, Drupal ou PrestaShop, encontre as informações sobre os seus ficheiros de configuração a partir do **etapa 2** do guia "[modificação da palavra-passe de uma base de dados](/pages/web/hosting/sql_change_password)".
 >
 
-Declare/autorize o seu domínio externo no seu alojamento web da OVHcloud através do nosso guia "[gestão dos multi-sites de um alojamento web da OVHcloud](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/)". Declare o "nome" da pasta raiz que escolheu no início da [etapa 4](#step4). Relembramos que esta é a pasta na qual colocou os seus ficheiros no seu espaço de armazenamento FTP.
+Declare/autorize o seu domínio externo no seu alojamento web da OVHcloud através do nosso guia "[gestão dos multi-sites de um alojamento web da OVHcloud](/pages/web/hosting/multisites_configure_multisite)". Declare o "nome" da pasta raiz que escolheu no início da [etapa 4](#step4). Relembramos que esta é a pasta na qual colocou os seus ficheiros no seu espaço de armazenamento FTP.
 
 > [!warning]
 >
@@ -154,12 +151,12 @@ Após a propagação DNS, o site que irá aparecer com o seu domínio será o al
 
 ### Etapa 5 : recriar os seus endereços de e-mail para os mesmos na OVHcloud <a name="step5"></a>
 
-Recrie de forma idêntica os endereços de e-mail presentes no seu fornecedor de e-mail através do nosso guia sobre a [criação de endereços de e-mail "MX Plan"](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/).
+Recrie de forma idêntica os endereços de e-mail presentes no seu fornecedor de e-mail através do nosso guia sobre a [criação de endereços de e-mail "MX Plan"](/pages/web/emails/email_creation).
 
 Se optou por uma solução "Email Pro" ou "Exchange", consulte o nosso manual para criar os seus endereços de e-mail:
 
-- Para "Email-Pro": <https://docs.ovh.com/pt/emails-pro/configuracao-inicial/>
-- Para "Exchange": <https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_20132016_a_primeira_configuracao_do_servico/>
+- Para "Email-Pro": </pages/web/emails-pro/first_config>
+- Para "Exchange": </pages/web/microsoft-collaborative-solutions/exchange_starting_hosted>
 
 ### Etapa 6 : declarar os servidores de e-mail OVHcloud na zona DNS ativa do seu nome de domínio <a name="step6"></a>
 
@@ -185,7 +182,7 @@ Após a propagação DNS, os seus novos e-mails foram todos recebidos nos seus n
 
 Para migrar o conteúdo dos endereços antigos, existem duas opções.
 
-**Opção 1**: utilize a nossa ferramenta [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external} que permite copiar o conteúdo dos endereços de e-mail registados no seu antigo fornecedor para os criados na OVHcloud. Para mais informações, consulte o nosso manual "[Migrar contas de e-mail via OVH Mail Migrator](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange-migracao-de-contas-email-ovh-mail-migrator/)".
+**Opção 1**: utilize a nossa ferramenta [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external} que permite copiar o conteúdo dos endereços de e-mail registados no seu antigo fornecedor para os criados na OVHcloud. Para mais informações, consulte o nosso manual "[Migrar contas de e-mail via OVH Mail Migrator](/pages/web/emails/migration_omm)".
 
 Sugerimos que não utilize o `Tipo de servidor`{.action} **POP** na parte `Conta source`{.action}. Este protocolo apaga os e-mails do seu antigo servidor para os enviar para o servidor OVHcloud de destino. Neste caso, já não poderá comparar o conteúdo do antigo e do novo endereço de e-mail.
 
@@ -210,15 +207,15 @@ Depois de migrar os seus antigos endereços de e-mail para a OVHcloud, reconfigu
 
 #### Para as contas de e-mail "MX Plan": 
 
-- Encontre os parâmetros de configuração no nosso guia "[Generalidades sobre os e-mails MX Plan](https://docs.ovh.com/pt/emails/partilhado_generalidades_e-mail_partilhado_ovh/#2-utilizar-o-software-a-sua-escolha)". Além disso, poderá encontrar links para os guias de configuração personalizados para os principais softwares de e-mail.
+- Encontre os parâmetros de configuração no nosso guia "[Generalidades sobre os e-mails MX Plan](/pages/web/emails/email_generalities#2-utilizar-o-software-a-sua-escolha)". Além disso, poderá encontrar links para os guias de configuração personalizados para os principais softwares de e-mail.
 
 #### Para as contas "Email-Pro"
 
-- Encontre os nossos guias de ajuda à configuração nas secções `Configuration on computador` e `Configuration no smartphone` de [o nosso manual na oferta Email-Pro](https://docs.ovh.com/pt/emails-pro/).
+- Encontre os nossos guias de ajuda à configuração nas secções `Configuration on computador` e `Configuration no smartphone` de [o nosso manual na oferta Email-Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
 #### Para as contas de e-mail "Exchange" :
 
-- Encontre os nossos guias de ajuda à configuração nas secções `Configuration Exchange no computador` e `Configuration Exchange no smartphone` de [a nossa documentação sobre a oferta Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/).
+- Encontre os nossos guias de ajuda à configuração nas secções `Configuration Exchange no computador` e `Configuration Exchange no smartphone` de [a nossa documentação sobre a oferta Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
 ### Etapa 9: substituir os servidores DNS ativos do seu domínio pelos da OVHcloud <a name="step9"></a>
 
@@ -236,21 +233,21 @@ Substitua os servidores DNS atuais do seu domínio pelos dois servidores DNS dec
 Depois de finalizar a propagação DNS, teste o seu site e verifique o envio e a receção dos e-mails a partir dos seus endereços de e-mail.
 Se tudo estiver em ordem, desbloqueie o seu nome de domínio e recupere o seu "código de transferência", "EPP" ou "AuthCode" a partir do seu agente de registo atual.
 
-De seguida, transfira o domínio para a OVHcloud através do nosso manual sobre a [transferência de um domínio](https://docs.ovh.com/pt/domains/transferir-o-dominio-generico/).
+De seguida, transfira o domínio para a OVHcloud através do nosso manual sobre a [transferência de um domínio](/pages/web/domains/transfer_incoming_generic_domain).
 
 Uma vez concluída a transferência dos seus dados e serviços, só precisa de rescindir os seus antigos serviços no(s) seu(s) antigo(s) fornecedor(es).
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Generalidades sobre os e-mails partilhados](https://docs.ovh.com/pt/emails/partilhado_generalidades_e-mail_partilhado_ovh/).
+[Generalidades sobre os e-mails partilhados](/pages/web/emails/email_generalities).
 
-[Generalidades sobre os servidores DNS](https://docs.ovh.com/pt/domains/partilhado_generalidades_sobre_os_servidores_dns/).
+[Generalidades sobre os servidores DNS](/pages/web/domains/dns_server_general_information).
 
-[Criar um endereço de e-mail partilhado](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/).
+[Criar um endereço de e-mail partilhado](/pages/web/emails/email_creation).
 
-[Importação de uma base de dados MySQL](https://docs.ovh.com/pt/hosting/partilhado_guia_de_importacao_de_uma_base_de_dados_mysql/).
+[Importação de uma base de dados MySQL](/pages/web/hosting/sql_importing_mysql_database).
 
-[Gestão de uma base de dados a partir de um alojamento partilhado](https://docs.ovh.com/pt/hosting/criar-base-de-dados/).
+[Gestão de uma base de dados a partir de um alojamento partilhado](/pages/web/hosting/sql_create_database).
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 

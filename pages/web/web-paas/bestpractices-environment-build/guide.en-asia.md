@@ -1,8 +1,5 @@
 ---
 title: Environment variables
-slug: bestpractices-environment-build
-section: Best practices
-order: 10
 updated: 2021-05-11
 ---
 
@@ -34,7 +31,7 @@ Similarly, while it is possible to download arbitrary additional files during th
 
 ## Environment-specific configuration
 
-Once an application has been deployed, it has access to more environment variables.  That includes Web PaaS variables such as `PLATFORM_RELATIONSHIPS` and `PLATFORM_ROUTES` as well as any [variables](../development-variables) you define.  These variables can and will vary between environments, and your application is welcome to leverage them as appropriate.  You can access them directly or via the Web PaaS Configuration Reader libraries, which are available for a number of languages.
+Once an application has been deployed, it has access to more environment variables.  That includes Web PaaS variables such as `PLATFORM_RELATIONSHIPS` and `PLATFORM_ROUTES` as well as any [variables](/pages/web/web-paas/development-variables) you define.  These variables can and will vary between environments, and your application is welcome to leverage them as appropriate.  You can access them directly or via the Web PaaS Configuration Reader libraries, which are available for a number of languages.
 
 Many applications have some configuration that should vary between different environment types.  They generally break down into three categories.
 
@@ -63,7 +60,7 @@ The `env:` prefix will expose `MY_ENV_VAR` as a Unix environment variable.  It w
 
 ### Dev/Prod environment variables
 
-For variables that should vary between production and "other" environments, such as API gateway credentials, the most convenient approach is to set the "other" version as a [project-level variable](../development-variables#project-variables) (shared by all environments, and optionally accessible during build) and then override it just on the production branch (`master`).
+For variables that should vary between production and "other" environments, such as API gateway credentials, the most convenient approach is to set the "other" version as a [project-level variable](/pages/web/web-paas/development-variables#project-variables) (shared by all environments, and optionally accessible during build) and then override it just on the production branch (`master`).
 
 1\. Set the project-level "dev mode" variable
 

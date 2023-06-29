@@ -1,9 +1,6 @@
 ---
 title: Wykorzystanie diagnostyki błędów Exchange
 excerpt: 'Dowiedz się, jak przeprowadzić automatyczną diagnostykę błędów na kontach Exchange'
-slug: diagnostyka_exchange_co_zrobic_w_przypadku_bledu
-section: Diagnostyka Exchange
-order: 01
 updated: 2022-10-19
 ---
 
@@ -24,7 +21,7 @@ Błędy na kontach e-mail Exchange mogą mieć wiele przyczyn. Automatyczna diag
 - Posiadanie [rozwiązania Exchange OVHcloud](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
 - Posiadanie danych identyfikacyjnych konta Exchange do sprawdzenia
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- Aktualizacja w [płatności](https://docs.ovh.com/pl/billing/zarzadzanie-fakturami-ovhcloud/#pay-bills) tej usługi i powiązanej domeny
+- Aktualizacja w [płatności](/pages/account/billing/invoice_management#pay-bills) tej usługi i powiązanej domeny
 
 ## W praktyce
 
@@ -58,12 +55,12 @@ Zablokowane konto zawsze otrzymuje e-maile, ale wysyłka została wyłączona pr
 
 Możesz to sprawdzić w zakładce `Konta e-mail`{.action} w Twojej usłudze Exchange. Konto będzie zawierać oznaczenie `SPAM` w kolumnie "Status" tabeli.
 
-Zapoznaj się z naszym przewodnikiem [Co zrobić w przypadku blokady konta ze względu na spam?](../blokada-za-spam/) aby umożliwić naszym zespołom bezpieczeństwa ponowne uruchomienie konta.
+Zapoznaj się z naszym przewodnikiem [Co zrobić w przypadku blokady konta ze względu na spam?](/pl/microsoft-collaborative-solutions/blokada-za-spam/) aby umożliwić naszym zespołom bezpieczeństwa ponowne uruchomienie konta.
 
 ### Abonament dotyczący konta wygasł <a name="expired"></a>
 
 Ponieważ abonament nie jest już aktywny, wysyłka i odbiór zostały wyłączone.<br>
-Aby ponownie włączyć abonament, wystarczy zmienić jego konfigurację [częstotliwość płatności](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-fakturowanie-exchange/#periodicity) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Aby ponownie włączyć abonament, wystarczy zmienić jego konfigurację [częstotliwość płatności](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#periodicity) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ### Konto zostało zablokowane z powodu polityki bezpieczeństwa
 
@@ -73,7 +70,7 @@ Możesz na przykład zdecydować, że konto zostanie zablokowane po kilku nieuda
 
 W takim przypadku możesz poczekać, aż konto będzie ponownie dostępne lub skontaktować się z zespołem Exchange dodając zgłoszenie z poziomu panelu klienta.
 
-Aby uzyskać więcej informacji na temat tej funkcji, zapoznaj się z naszym [przewodnikiem dotyczącym polityki bezpieczeństwa](../zarzadzanie-polityka-bezpieczenstwa-exchange/).
+Aby uzyskać więcej informacji na temat tej funkcji, zapoznaj się z naszym [przewodnikiem dotyczącym polityki bezpieczeństwa](/pl/microsoft-collaborative-solutions/zarzadzanie-polityka-bezpieczenstwa-exchange/).
 
 ### Logowanie do webmaila nie powiodło się. <a name="password"></a>
 
@@ -107,7 +104,7 @@ Następujące serwery MX są ważne w zależności od korzystania z usługi Exch
 
 Wpis SRV służy do automatycznej konfiguracji konta Exchange przy użyciu kompatybilnego programu pocztowego, takiego jak Microsoft Outlook.
 
-Możesz sprawdzić te parametry w [strefie DNS Twojej domeny](../../domains/hosting_www_jak_edytowac_strefe_dns/).
+Możesz sprawdzić te parametry w [strefie DNS Twojej domeny](/pages/web/domains/dns_zone_edit).
 
 Oto wartości dla usługi Exchange:
 

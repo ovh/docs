@@ -1,9 +1,6 @@
 ---
 title: Exchange Uso de las cuentas de recursos
 excerpt: Esta guía describe cómo añadir y utilizar las cuentas de recursos con el servicio Exchange
-slug: exchange_20132016_uso_de_las_cuentas_de_recursos
-section: Funcionalidades de las cuentas Exchange
-order: 05
 updated: 2020-06-05
 ---
 

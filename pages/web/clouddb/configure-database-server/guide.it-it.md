@@ -1,9 +1,6 @@
 ---
 title: Configura il tuo database server 
-slug: configurare-ottimizzare-il-tuo-database-server
 excerpt: Come configurare e ottimizzare il tuo database server
-section: Configurazione
-order: 06
 updated: 2023-04-24
 ---
 
@@ -237,7 +234,7 @@ Nella scheda `informazioni generali`, consulta la sezione **"SFTP"** nel riquadr
 
 ![Web Cloud Databases](images/web-cloud-databases-SFTP01.png){.thumbnail}
 
-Per effettuare l'accesso via **SFTP**, è possibile utilizzare Filezilla utilizzando la guida: [Utilizzo del software FileZilla con il tuo hosting](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/).
+Per effettuare l'accesso via **SFTP**, è possibile utilizzare Filezilla utilizzando la guida: [Utilizzo del software FileZilla con il tuo hosting](/pages/web/hosting/ftp_filezilla_user_guide).
 
 Se questo file è vuoto, significa che non hai richieste lente.
 
@@ -315,7 +312,7 @@ Evita di utilizzare **"HAVING"**, ad esempio. Aumenta le tue richieste. Allo ste
 
 ## Per saperne di più
 
-[Elenco degli indirizzi IP di cluster e hosting Web](https://docs.ovh.com/it/hosting/lista-indirizzi-ip-di-cluster-e-hosting-web/)
+[Elenco degli indirizzi IP di cluster e hosting Web](/pages/web/hosting/clusters_and_shared_hosting_IP)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 

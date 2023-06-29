@@ -1,9 +1,6 @@
 ---
 title: 'Ativar o HTTPS num website com certificado SSL'
-slug: ativar-https-website-certificado-ssl
 excerpt: 'Saiba como ativar o HTTPS num website que dispõe de um certificado SSL'
-section: SSL
-order: 02
 updated: 2022-10-04
 ---
 
@@ -50,7 +47,7 @@ A ativação do certificado SSL no alojamento web é feita a partir da [Área de
 |Ativar o certificado SSL no alojamento|Permite que a OVHcloud ative o certificado SSL no alojamento. Tem de escolher entre vários tipos de certificados. Certifique-se de que seleciona o que melhor se adapta à sua situação.|
 |Ativar o SSL no multi-site correspondente|O website no qual pretende utilizar o HTTPS deve ser configurado enquanto “multi-site” no alojamento. Certifique-se de que o SSL foi ativado para este último.|
 
-Para mais informações sobre estas ações, consulte o manual [Gerir um certificado SSL no alojamento web](https://docs.ovh.com/pt/hosting/os-certificados-ssl-nos-alojamentos-web/){.external}. Se acabou de contratar o seu alojamento web com a OVHcloud, é possível que já tenha um certificado SSL instalado e que a ligação SSL para o multi-site já esteja ativa.
+Para mais informações sobre estas ações, consulte o manual [Gerir um certificado SSL no alojamento web](/pages/web/hosting/ssl_on_webhosting){.external}. Se acabou de contratar o seu alojamento web com a OVHcloud, é possível que já tenha um certificado SSL instalado e que a ligação SSL para o multi-site já esteja ativa.
 
 Para o verificar, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique em `Alojamentos`{.action} e escolha o alojamento correspondente. Certifique-se de que está no separador `Informações gerais`{.action}. Na secção “Certificado SSL”, deve estar indicado “Sim”, o que significa que já está instalado no alojamento web um certificado SSL. 
 
@@ -60,7 +57,7 @@ Por fim, clique no separador `Multi-site`{.action}. Aparecerá uma tabela com to
 
 ![httpswebsite](images/activate-https-website-ssl-step3.png){.thumbnail}
 
-Se tiver dificuldades em verificar se o certificado SSL está instalado no seu alojamento e/ou ativado no multi-site correspondente, consulte o manual [Gerir um certificado SSL no alojamento web](https://docs.ovh.com/gb/en/hosting/ssl-certificates-on-web-hosting-plans/){.external} (versão em inglês).
+Se tiver dificuldades em verificar se o certificado SSL está instalado no seu alojamento e/ou ativado no multi-site correspondente, consulte o manual [Gerir um certificado SSL no alojamento web](/pages/web/hosting/ssl_on_webhosting){.external} (versão em inglês).
 
 ### 2 - Verificar o ambiente técnico
 

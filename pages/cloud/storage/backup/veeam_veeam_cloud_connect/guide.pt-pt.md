@@ -1,8 +1,6 @@
 ---
 title: Veeam Cloud Connect
-slug: veeam/veeam-cloud-connect
 excerpt: Apresentação da oferta Veeam Cloud Connect
-section: Veeam
 updated: 2021-12-07
 ---
 

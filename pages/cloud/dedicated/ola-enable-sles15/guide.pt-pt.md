@@ -1,9 +1,6 @@
 ---
 title: "Como configurar o seu NIC para a agregação de ligações OVHcloud no SLES 15"
-slug: ola-sles15
 excerpt: 'Ativar o OVHcloud Link Aggregation no seu servidor SLES 15'
-section: 'Utilização avançada'
-order: 4
 updated: 2023-03-07
 ---
 
@@ -21,7 +18,7 @@ A tecnologia OVHcloud Link Aggregation (OLA) foi concebida pelas nossas equipas 
 
 ## Requisitos
 
-- [Ter configurado o seu NIC para a funcionalidade OVHcloud Link Aggregation a partir da Área de Cliente OVHcloud](https://docs.ovh.com/pt/dedicated/ola-manager/)
+- [Ter configurado o seu NIC para a funcionalidade OVHcloud Link Aggregation a partir da Área de Cliente OVHcloud](/pages/cloud/dedicated/ola-enable-manager)
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 ## Instruções
@@ -139,12 +136,12 @@ Também pode verificar os parâmetros utilizados pela sua interface ifcfg-bond0 
 
 ## Saiba mais
 
-[Configurar a agregação das ligações OLA na sua Área de Cliente](https://docs.ovh.com/pt/dedicated/ola-manager/).
+[Configurar a agregação das ligações OLA na sua Área de Cliente](/pages/cloud/dedicated/ola-enable-manager).
 
-[Como configurar o seu NIC para a agregação de ligações OVHcloud em Debian 9](https://docs.ovh.com/pt/dedicated/ola-debian9/).
+[Como configurar o seu NIC para a agregação de ligações OVHcloud em Debian 9](/pages/cloud/dedicated/ola-enable-debian9).
 
-[Como configurar o seu NIC para agregar as ligações OVHcloud em CentOS 7](https://docs.ovh.com/pt/dedicated/ola-centos7/).
+[Como configurar o seu NIC para agregar as ligações OVHcloud em CentOS 7](/pages/cloud/dedicated/ola-enable-centos7).
 
-[Como configurar o seu NIC para a agregação de ligações OVHcloud em Windows Server 2019](https://docs.ovh.com/pt/dedicated/ola-w2k19/).
+[Como configurar o seu NIC para a agregação de ligações OVHcloud em Windows Server 2019](/pages/cloud/dedicated/ola-enable-w2k19).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

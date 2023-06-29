@@ -1,9 +1,6 @@
 ---
 title: Configuring an Exchange account on Android via the Gmail app
 excerpt: Find out how to configure an Exchange account on Android, via the Gmail app
-slug: exchange_2013_android_configuration
-section: Configuration on smartphone/tablet
-order: 02
 updated: 2018-03-12
 ---
 
@@ -71,8 +68,8 @@ OVHcloud also offers a web application that has [collaborative features](https:/
 
 ## Go further
 
-[Configuring an email address included in an MX Plan or web hosting plan on Android, via the Gmail app](https://docs.ovh.com/ie/en/emails/configuration-android/){.external}.
+[Configuring an email address included in an MX Plan or web hosting plan on Android, via the Gmail app](/pages/web/emails/how_to_configure_android){.external}.
 
-[Configuring an Email Pro account on Android via the Gmail app](https://docs.ovh.com/ie/en/emails-pro/configuration-android/){.external}.
+[Configuring an Email Pro account on Android via the Gmail app](/pages/web/emails-pro/how_to_configure_android){.external}.
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

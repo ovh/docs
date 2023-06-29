@@ -1,9 +1,6 @@
 ---
 title: Logowanie do Panelu klienta OVHcloud
-slug: logowanie-panelu-klienta-ovhcloud
 excerpt: 'Dowiedz się, jak zalogować się do Twojego konta OVHcloud'
-Section: 'Pierwsze kroki'
-order: 2
 updated: 2021-07-01
 ---
 
@@ -21,8 +18,8 @@ Zarządzanie usługami odbywa się głównie w Panelu klienta OVHcloud.
 
 ## Wymagania początkowe
 
-- Utworzenie [konta OVHcloud](https://docs.ovh.com/pl/customer/tworzenie-konta-ovhcloud/)
-- Informacje o [dobrych praktykach w zakresie zabezpieczenia konta OVHcloud](https://docs.ovh.com/pl/customer/identyfikator_klienta/)
+- Utworzenie [konta OVHcloud](/pages/account/customer/ovhcloud-account-creation)
+- Informacje o [dobrych praktykach w zakresie zabezpieczenia konta OVHcloud](/pages/account/customer/all_about_username)
 
 ## W praktyce
 
@@ -32,7 +29,7 @@ Przejdź [do strony uwierzytelniania OVHcloud](https://www.ovh.com/auth/?action=
 
 ![identyfikator klienta](images/log-in.png){.thumbnail}
 
-Jeśli aktywowałeś weryfikację [dwuetapową](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/), wpisz unikalny kod logowania wygenerowany przez Twoje urządzenie (telefon, tablet lub klucz U2F).
+Jeśli aktywowałeś weryfikację [dwuetapową](/pages/account/customer/secure-ovhcloud-account-with-2fa), wpisz unikalny kod logowania wygenerowany przez Twoje urządzenie (telefon, tablet lub klucz U2F).
 
 ### Co zrobić, jeśli nie mogę się połączyć? <a name="login-failure"></a>
 
@@ -63,7 +60,7 @@ Po zalogowaniu się, w prawym górnym rogu kliknij nazwę użytkownika, która j
 
 ### Zgubiłem hasło
 
-Jeśli utracisz hasło lub je zapomnisz, zapoznaj się z [przewodnikiem dotyczącym sposobu zmiany hasła](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/#jesli-nie-znasz-swojego-aktualnego-hasla).
+Jeśli utracisz hasło lub je zapomnisz, zapoznaj się z [przewodnikiem dotyczącym sposobu zmiany hasła](/pages/account/customer/manage-ovh-password#jesli-nie-znasz-swojego-aktualnego-hasla).
 
 ### Straciłem hasło, a główny adres e-mail przestał być ważny
 
@@ -73,7 +70,7 @@ W tym przypadku nie można przeprowadzić resetu hasła ze strony logowania.
 
 Możesz skontaktować się z zespołem obsługi klienta OVHcloud 71 750 02 00, aby adres zapasowy stał się głównym adresem e-mail.
 
-Po przeprowadzeniu tego kroku należy [wpisać do Twojego konta **nowy** adres zapasowy](https://docs.ovh.com/pl/customer/identyfikator_klienta//#backup-email).
+Po przeprowadzeniu tego kroku należy [wpisać do Twojego konta **nowy** adres zapasowy](/pages/account/customer/all_about_username#backup-email).
 
 #### Jeśli nie masz zapasowego adresu e-mail lub adres ten jest również nieprawidłowy
 
@@ -87,7 +84,7 @@ Należy postępować zgodnie z tą [procedurą](https://www.ovh.pl/cgi-bin/pl/pr
 
 W tym przypadku możesz użyć kodów zapasowych weryfikacji dwuetapowej, użyć innego urządzenia lub wyłączyć weryfikację dwuetapową.
 
-Zapoznaj się z przewodnikiem dotyczącym [Zabezpieczenia konta OVHcloud za pomocą weryfikacji dwuetapowej](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/#co-moge-zrobic-jesli-zgubie-jedno-z-moich-urzadzen-lub-tez-przestanie-ono-dzialac).
+Zapoznaj się z przewodnikiem dotyczącym [Zabezpieczenia konta OVHcloud za pomocą weryfikacji dwuetapowej](/pages/account/customer/secure-ovhcloud-account-with-2fa#co-moge-zrobic-jesli-zgubie-jedno-z-moich-urzadzen-lub-tez-przestanie-ono-dzialac).
 
 ### Nie włączyłem weryfikacji dwuetapowej na moim koncie, ale ktoś mnie pyta o kod
 
@@ -103,12 +100,12 @@ Jeśli nie odnajdziesz tego kodu, sprawdź foldery "spam" / "niechciane wiadomo�
 
 ## Sprawdź również
 
-[Załóż konto OVHcloud](https://docs.ovh.com/pl/customer/tworzenie-konta-ovhcloud/)
+[Załóż konto OVHcloud](/pages/account/customer/ovhcloud-account-creation)
 
-[Zabezpieczenie konta OVHcloud i zarządzanie danymi osobowymi](https://docs.ovh.com/pl/customer/identyfikator_klienta/)
+[Zabezpieczenie konta OVHcloud i zarządzanie danymi osobowymi](/pages/account/customer/all_about_username)
 
-[Zmiana hasła do konta](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/)
+[Zmiana hasła do konta](/pages/account/customer/manage-ovh-password)
 
-[Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/)
+[Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

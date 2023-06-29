@@ -1,12 +1,9 @@
 ---
 title: Host sostitutivo
-slug: host-sostitutivo
 routes:
-    canonical: 'https://docs.ovh.com/it/private-cloud/host-sostitutivo/'
+    canonical: '/pages/cloud/private-cloud/spare_hosts'
 excerpt: Come avviene la sostituzione di un host malfunzionante
 legacy_guide_number: '2883590'
-section: Funzionalità OVHcloud
-order: 04
 updated: 2020-11-18
 ---
 
@@ -28,7 +25,7 @@ Per garantire la continuità di servizio anche in caso di malfunzionamento di un
 
 Al momento della consegna di questa macchina, viene inviata un’email con tutte le informazioni associate e l’indirizzo IP che permette di individuarla facilmente nell’interfaccia vSphere.
 
-Il servizio [High Availability (HA)](https://docs.ovh.com/gb/en/managed-bare-metal/vmware-ha-high-availability/) di VMware è abilitato di default sul cluster. Nel caso in cui sia stato lasciato attivo, le macchine virtuali si riavvieranno automaticamente. Se il servizio DRS (Distributed Ressources Scheduler) è attivo e configurato in modalità “fully automated”, anche la distribuzione del carico sugli host del cluster verrà eseguita in modo automatico.
+Il servizio [High Availability (HA)](/pages/cloud/managed-bare-metal/vmware_ha_high_availability) di VMware è abilitato di default sul cluster. Nel caso in cui sia stato lasciato attivo, le macchine virtuali si riavvieranno automaticamente. Se il servizio DRS (Distributed Ressources Scheduler) è attivo e configurato in modalità “fully automated”, anche la distribuzione del carico sugli host del cluster verrà eseguita in modo automatico.
 
 > [!warning]
 > 
@@ -39,7 +36,7 @@ Il servizio [High Availability (HA)](https://docs.ovh.com/gb/en/managed-bare-met
 
 Una volta che l’host originale è nuovamente operativo, è possibile restituire uno degli host (la macchina sostitutiva o quella originale).
 
-Consigliamo di rendere il server originale, per permetterci di eseguire una serie di test in seguito all’incidente ed evitare eventuali malfunzionamenti futuri. In questo caso è possibile quindi conservare l’host sostitutivo. Per eseguire questa operazione, consulta la guida sulla [rimozione di un server host](../rimuovere-server-host/): una volta eliminato l’host originale, OVHcloud potrà recuperarlo automaticamente.
+Consigliamo di rendere il server originale, per permetterci di eseguire una serie di test in seguito all’incidente ed evitare eventuali malfunzionamenti futuri. In questo caso è possibile quindi conservare l’host sostitutivo. Per eseguire questa operazione, consulta la guida sulla [rimozione di un server host](/pages/cloud/managed-bare-metal/delete_host): una volta eliminato l’host originale, OVHcloud potrà recuperarlo automaticamente.
 
 ## Per saperne di più
 

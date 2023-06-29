@@ -1,10 +1,8 @@
 ---
 title: 'Usar um template OVF Windows e SQL Server'
-slug: usar-template-ovhcloud
 routes:
-    canonical: 'https://docs.ovh.com/pt/private-cloud/usar-template-ovh/'
+    canonical: '/pages/cloud/private-cloud/ovf_template'
 excerpt: 'Saiba como usar um template Windows e SQL Server'
-section: 'Serviços e opções OVHcloud'
 updated: 2020-11-18
 ---
 
@@ -24,7 +22,7 @@ A OVH disponibiliza templates Windows e SQL server (em formato OVF) que pode usa
 ## Requisitos
 
 - Ter acesso ao web client ou ao thick client, consoante a versão utilizada.
-- [Ter ativado as licenças Windows](../manager-ovhcloud/#licence-windows){.external} na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} (separador `Licença Windows`{.action} do datacenter). 
+- [Ter ativado as licenças Windows](/pages/cloud/managed-bare-metal/manager-ovhcloud#licence-windows){.external} na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} (separador `Licença Windows`{.action} do datacenter). 
 
 ## Instruções
 

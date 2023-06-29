@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Korzystanie z FileZilla na Twoim hostingu OVHcloud"
-slug: hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla
 excerpt: "Zapoznaj się z przewodnikiem dotyczącym korzystania z oprogramowania Filezilla na hostingu"
-section: "FTP i SSH"
-order: 01
 updated: 2022-09-13
 ---
 
@@ -17,7 +14,7 @@ updated: 2022-09-13
 ## Wprowadzenie 
 
 FileZilla to oprogramowanie dostępne bezpłatnie w wielu systemach operacyjnych (Windows, macOS, etc).
-Umożliwia on umieszczanie w Internecie plików lub Twojej strony WWW, [zalogując się do przestrzeni FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) Twojego hostingu.
+Umożliwia on umieszczanie w Internecie plików lub Twojej strony WWW, [zalogując się do przestrzeni FTP](/pages/web/hosting/ftp_connection) Twojego hostingu.
 
 **Dowiedz się, jak korzystać z oprogramowania Filezilla na hostingu.**
 
@@ -135,7 +132,7 @@ Ten rodzaj wiadomości jest generowany przez błąd w momencie połączenia Logi
 Sprawdź dane do logowania, aby upewnić się, że nie został wyświetlony żaden błąd. Możesz zmienić hasło do FTP Twojego hostingu bezpośrednio w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 > [!success]
-> Zapoznaj się z przewodnikiem dotyczącym [zmiany hasła FTP](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/) na hostingu.
+> Zapoznaj się z przewodnikiem dotyczącym [zmiany hasła FTP](/pages/web/hosting/ftp_change_password) na hostingu.
 
 W poniższym przypadku błąd jest generowany przez nieprawidłową nazwę hosta:
 
@@ -220,7 +217,7 @@ W ten sposób prawa do akt sprawy oraz katalogi i pliki, które mogą być w nim
 >
 > Niezależnie od podjętych przez Ciebie działań, Twój hosting może zostać wyłączony po wykryciu przez nasze systemy bezpieczeństwa złośliwych lub nieautoryzowanych plików na Twoim hostingu.
 >
-> Następnie należy [zabezpieczyć Twoje rozwiązania](https://docs.ovh.com/pl/hosting/diagnostyka-403-forbidden/), usuwając luki bezpieczeństwa wskazane w powiadomieniu o blokadzie otrzymanym na e-mail.
+> Następnie należy [zabezpieczyć Twoje rozwiązania](/pages/web/hosting/diagnostic_403_forbidden), usuwając luki bezpieczeństwa wskazane w powiadomieniu o blokadzie otrzymanym na e-mail.
 >
 
 Następnie kliknij `Serwer`{.action}, a następnie wybierz `Wpisz spersonalizowane`{.action} polecenie (ta opcja może się również nazywać `Wprowadź polecenie FTP`{.action}).
@@ -286,9 +283,9 @@ Po kliknięciu prawym przyciskiem myszy na ikonę, możesz zmienić sposób por�
 
 ## Sprawdź również <a name="go-further"></a>
 
-Poniżej znajdziesz link do naszej dokumentacji, aby [usunąć powtarzające się błędy podczas korzystania z programu FTP](https://docs.ovh.com/pl/hosting/rozdzielenie-problemow-ftp-recents/).
+Poniżej znajdziesz link do naszej dokumentacji, aby [usunąć powtarzające się błędy podczas korzystania z programu FTP](/pages/web/hosting/ftp_recurring_ftp_problems).
 
-Zapoznaj się [z przewodnikami dotyczącymi hostingu współdzielonego](https://docs.ovh.com/pl/hosting/).
+Zapoznaj się [z przewodnikami dotyczącymi hostingu współdzielonego](/products/web-cloud-hosting).
 
 Zapoznaj się z oficjalną [stroną Filezilli](https://filezilla-project.org/).
 

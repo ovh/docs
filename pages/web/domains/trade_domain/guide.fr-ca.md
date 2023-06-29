@@ -1,8 +1,6 @@
 ---
 title: 'Changer le propriétaire d’un nom de domaine'
-slug: changement-proprietaire-domaine
 excerpt: 'Vous trouverez dans ce guide différentes informations concernant le changement de propriétaire d’un nom de domaine.'
-section: 'Changement de propriétaire'
 updated: 2023-06-19
 ---
 
@@ -88,7 +86,7 @@ Si l'adresse e-mail n'est pas modifiée dans le cadre du changement de propriét
 
 > [!warning]
 >
-> Si le propriétaire du nom de domaine a été modifié, le nom de domaine ne pourra pas être [transféré vers un autre bureau d'enregistrement](../transfert-sortant-dun-nom-de-domaine-generique-ou-geographique/) pendant une période de 60 jours. 
+> Si le propriétaire du nom de domaine a été modifié, le nom de domaine ne pourra pas être [transféré vers un autre bureau d'enregistrement](/pages/web/domains/transfer_outgoing_domain) pendant une période de 60 jours. 
 
 ### Mise à jour des informations de propriétaire <a name="updateownerinformation"></a>
 

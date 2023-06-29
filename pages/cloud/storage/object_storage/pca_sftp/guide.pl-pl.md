@@ -1,9 +1,6 @@
 ---
 title: Cloud Archive Swift - Zarzadzaj swoimi archiwami za pomoca programu SFTP/SCP
-slug: pca/sftp
 excerpt: Przewodnik ten wyjasnia, jak zarzadzac usuga Public Cloud Archive.
-section: OpenStack Swift Archive Storage Class Specifics
-order: 100
 updated: 2022-05-13
 ---
 
@@ -26,7 +23,7 @@ W tym przewodniku korzystamy z programu WinSCP, ale możesz używać wybranego p
 
 
 ## ID OpenStack
-Login i hasło OpenStack możesz wygenerować postępując zgodnie z informacjami zawartymi w tym [przewodniku](https://docs.ovh.com/pl/public-cloud/tworzenie-i-usuwanie-uzytkownika-openstack/).
+Login i hasło OpenStack możesz wygenerować postępując zgodnie z informacjami zawartymi w tym [przewodniku](/pages/platform/public-cloud/create_and_delete_a_user).
 
 
 ## TenantName
@@ -80,7 +77,7 @@ W tej części wyłączymy dwie opcje w programie WinSCP:
 
 
 ## Odzyskiwanie danych
-Odyskiwanie danych wymaga odblokowania obiektu. Dla wybranego obiektu należy wykonać zapytanie GET. Jeśli polecenie to nie zostanie wcześniej wykonane, program SFTP zgłosi błąd podczas próby pobrania pliku. Zapoznaj się z naszym przewodnikiem dotyczącym odblokowania obiektu: [tutaj](https://docs.ovh.com/pl/storage/pca/unlock/).
+Odyskiwanie danych wymaga odblokowania obiektu. Dla wybranego obiektu należy wykonać zapytanie GET. Jeśli polecenie to nie zostanie wcześniej wykonane, program SFTP zgłosi błąd podczas próby pobrania pliku. Zapoznaj się z naszym przewodnikiem dotyczącym odblokowania obiektu: [tutaj](/pages/cloud/storage/object_storage/pca_unlock).
 
 ## Sprawdź również
 

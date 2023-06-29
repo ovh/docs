@@ -1,10 +1,7 @@
 ---
 title: 'Delegowanie zarządzania kontami e-mail innej osobie'
 legacy_guide_number: 1933
-slug: delegowanie-zarzadzanie-mailami
 excerpt: 'Dowiedz się, jak delegować uprawnienia do zarządzania kontami e-mail w ramach usługi MX Plan'
-section: 'Funkcjonalności kont e-mail'
-order: 05
 updated: 2021-10-08
 ---
 
@@ -37,7 +34,7 @@ Delegacja uprawnień daje użytkownikowi konta e-mail możliwość samodzielnego
 |Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Znajdź nazwę oferty w polu „Abonament”|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Znajdź Oznaczenie serwera w polu "Podsumowanie"|
-|Przejdź do sekcji "[W praktyce](#oldmxplan)"|Zapoznaj się z naszym przewodnikiem "[Sprawdź konto Exchange w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/#zmiana-hasla)"|
+|Przejdź do sekcji "[W praktyce](#oldmxplan)"|Zapoznaj się z naszym przewodnikiem "[Sprawdź konto Exchange w interfejsie OWA](/pages/web/emails/email_owa#zmiana-hasla)"|
 
 ## W praktyce <a name="oldmxplan"></a>
 
@@ -84,6 +81,6 @@ Można dodać kilka identyfikatorów OVHcloud, aby zarządzać każdym adresem e
 
 ## Sprawdź również
 
-[Pierwsze kroki z usługą MX Plan](https://docs.ovh.com/pl/emails/hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/)
+[Pierwsze kroki z usługą MX Plan](/pages/web/emails/email_generalities)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

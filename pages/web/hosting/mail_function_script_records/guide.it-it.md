@@ -1,9 +1,6 @@
 ---
 title: "Gestire l’invio delle email automatiche"
 excerpt: "Come monitorare e gestire le email automatiche inviate da un hosting Web OVHcloud"
-slug: hosting_web_gestisci_linvio_delle_tue_email_automatiche
-section: Diagnostica
-order: 10
 updated: 2022-10-12
 ---
 
@@ -21,7 +18,7 @@ Le email automatiche sono messaggi inviati tramite script. Generalmente utilizza
 >
 > Questa guida ti mostra come utilizzare la funzione "mail()" di PHP per inviare messaggi da script siti sul tuo [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/).
 >
-> Per gestire gli indirizzi email inclusi nella soluzione MX Plan o nella soluzione di [hosting web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}, consulta la nostra guida sugli [email condivisi - MX Plan](https://docs.ovh.com/it/emails/).
+> Per gestire gli indirizzi email inclusi nella soluzione MX Plan o nella soluzione di [hosting web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}, consulta la nostra guida sugli [email condivisi - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]
@@ -152,7 +149,7 @@ In questo caso è necessario effettuare un spurgo per cancellare gli SPAM in att
 
 Per correggere questa situazione, è necessario effettuare almeno le seguenti azioni:
 
-- Analizza i [log del tuo hosting](https://docs.ovh.com/it/hosting/hosting_condiviso_consulta_le_statistiche_e_i_log_del_tuo_sito/) per identificare le falle di sicurezza e i file infetti.
+- Analizza i [log del tuo hosting](/pages/web/hosting/logs_and_statistics) per identificare le falle di sicurezza e i file infetti.
 - Elimina o correggi i file/moduli malevoli
 - Per i CMS (Wordpress, Joomla, Prestashop, Drupal, ecc...), aggiorna il CMS, il plugin e il tema associati.
 - Proteggi i tuoi form di contatto con un "captcha".
@@ -222,11 +219,11 @@ $mail->Password = "YourEmailPassword";
 
 ## Per saperne di più <a name="go-further"></a>
 
-[Consultare i log del vostro hosting](https://docs.ovh.com/it/hosting/hosting_condiviso_consulta_le_statistiche_e_i_log_del_tuo_sito/)
+[Consultare i log del vostro hosting](/pages/web/hosting/logs_and_statistics)
 
-[Correggere la pagina "403 Forbidden" che compare sul tuo sito](https://docs.ovh.com/it/hosting/diagnostic-403-forbidden/)
+[Correggere la pagina "403 Forbidden" che compare sul tuo sito](/pages/web/hosting/diagnostic_403_forbidden)
 
-[Ripristina lo spazio di storage FTP del tuo hosting](https://docs.ovh.com/it/hosting/web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/)
+[Ripristina lo spazio di storage FTP del tuo hosting](/pages/web/hosting/ftp_save_and_backup)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 

@@ -1,10 +1,8 @@
 ---
 title: Activating and using Veeam Managed Backup
-slug: veeam-backup-as-a-service
 routes:
-    canonical: 'https://docs.ovh.com/au/en/private-cloud/veeam-backup-as-a-service/'
+    canonical: '/pages/cloud/private-cloud/veeam_backup_as_a_service'
 excerpt: Find out how to enable and use the Veeam Managed Backup option to secure your VMs
-section: 'OVHcloud services and options'
 updated: 2020-11-18
 ---
 
@@ -22,9 +20,9 @@ Backups are performed using a virtual machine (VM) within your [Managed Bare Met
 
 - a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-au/managed-bare-metal/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
-- a user account with access to vSphere and the permission ["Add resources"](../change-users-rights/) for the pertinent data centre
-- [vSphere High Availability (HA)](../vmware-ha-high-availability/) enabled
-- [Distributed Resource Scheduler (DRS)](../vmware-drs-distributed-ressource-scheduler) enabled
+- a user account with access to vSphere and the permission ["Add resources"](/pages/cloud/managed-bare-metal/change-user-rights) for the pertinent data centre
+- [vSphere High Availability (HA)](/pages/cloud/managed-bare-metal/vmware_ha_high_availability) enabled
+- [Distributed Resource Scheduler (DRS)](/pages/cloud/managed-bare-metal/vmware_drs_distributed_ressource_scheduler) enabled
 - Windows SPLA Licensing enabled
 
 > [!primary]

@@ -1,8 +1,6 @@
 ---
 title: Wysyłanie wiadomości SMS za pomocą interfejsu API OVHcloud w Node.js
 excerpt: Dowiedz się, jak wysyłać wiadomości SMS za pomocą interfejsu API OVHcloud RESTful w Node.js
-slug: wysylanie-wiadomosci-sms-api-ovh-nodejs
-section: 'Wysyłanie wiadomości SMS'
 updated: 2020-06-18
 ---
 

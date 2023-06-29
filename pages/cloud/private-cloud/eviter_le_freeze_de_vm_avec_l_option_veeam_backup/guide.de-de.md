@@ -1,9 +1,6 @@
 ---
 title: 'Einfrieren virtueller Maschinen mit Veeam Managed Backup Option vermeiden'
-slug: vm-freeze-mit-veeam-backup-option-vermeiden
 excerpt: 'Hier erfahren Sie, wie Sie eine Workaround-Lösung mithilfe von VMware-DRS-Regeln einrichten, um VM-Freeze zu vermeiden.'
-section: 'Verwaltung virtueller Maschinen'
-order: 7
 updated: 2022-02-22
 ---
 

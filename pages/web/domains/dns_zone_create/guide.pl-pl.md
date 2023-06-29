@@ -1,9 +1,6 @@
 ---
 title: 'Utworzenie strefy DNS dla domeny'
 excerpt: 'Dowiedz się, jak utworzyć strefę DNS w OVHcloud dla Twojej domeny, korzystając z Panelu klienta'
-slug: utworzenie_strefy_dns_dla_zewnetrznej_domeny
-section: 'DNS i strefa DNS'
-order: 2
 legacy_guide_number: g2229
 updated: 2018-08-06
 ---
@@ -56,7 +53,7 @@ Aby edytować strefę DNS, pozostań zalogowany do [Panelu klienta](https://www.
 > Jeśli właśnie utworzyłeś strefę DNS i nazwa domeny jeszcze się nie wyświetla na liście Twoich usług `Domeny`{.action}, odczekaj chwilę, po czym odśwież stronę.
 >
 
-Następnie, przeprowadź niezbędne operacje. Więcej informacji o edycji strefy DNS znajdziesz w przewodniku [Modyfikacja strefy DNS OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}. Czas propagacji wprowadzonych w strefie DNS zmian wynosi od 4 do 24 godzin.
+Następnie, przeprowadź niezbędne operacje. Więcej informacji o edycji strefy DNS znajdziesz w przewodniku [Modyfikacja strefy DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external}. Czas propagacji wprowadzonych w strefie DNS zmian wynosi od 4 do 24 godzin.
 
 ### Etap 3: zmiana serwerów DNS domeny
 
@@ -68,6 +65,6 @@ Następnie **zmodyfikuj serwery DNS domeny za pośrednictwem interfejsu administ
 
 ## Sprawdź również
 
-[Modyfikacja strefy DNS OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}.
+[Modyfikacja strefy DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external}.
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

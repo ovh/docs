@@ -1,9 +1,6 @@
 ---
 title: 'Creating, launching and deleting images in Horizon'
-slug: create-launch-and-delete-images-in-horizon
 legacy_guide_number: 1784
-section: Horizon
-order: 09
 updated: 2021-12-30
 ---
 
@@ -18,7 +15,7 @@ You can add custom images via the OpenStack Horizon interface. For example, you 
 
 ## Requirements
 
-- [Access to the Horizon interface](https://docs.ovh.com/ie/en/public-cloud/horizon/)
+- [Access to the Horizon interface](/pages/platform/public-cloud/introducing_horizon)
 - Access to the Images menu in the OpenStack Horizon interface 
 
 

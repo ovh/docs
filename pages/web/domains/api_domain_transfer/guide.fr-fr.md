@@ -1,9 +1,6 @@
 ---
 title: "Transférer un nom de domaine"
-slug: api-transfer
 excerpt: "Utilisez l'API publique OVHcloud pour transférer vos noms de domaines"
-section: "API domaines"
-order: 09
 updated: 2022-07-21
 ---
 
@@ -13,19 +10,19 @@ updated: 2022-07-21
 
 > [!primary]
 >
-> Pour suivre ce guide, vous devez déjà vous connecter à l'API OVHcloud. Vous trouverez plus de détails sur la page d'[introduction à l'API](../api).
+> Pour suivre ce guide, vous devez déjà vous connecter à l'API OVHcloud. Vous trouverez plus de détails sur la page d'[introduction à l'API](/pages/web/domains/api_domain_intro).
 
 <!-- Begin TOC -->
 
 ## Sommaire
 
-- [Introduction](../api)
-- [Commander un nom de domaine](../api-order)
-- [Gestion des tâches](../api-tasks)
-- [Gestion des contacts d'un nom de domaine](../api-contact)
-- [Gestion des règles d'éligibilité](../api-rules)
-- [Configurer l'affichage de ses données dans le Whois](../api-whois)
-- [Configurer les DNS de son nom de domaine](../api-dns)
+- [Introduction](/pages/web/domains/api_domain_intro)
+- [Commander un nom de domaine](/pages/web/domains/api_domain_order)
+- [Gestion des tâches](/pages/web/domains/api_domain_tasks)
+- [Gestion des contacts d'un nom de domaine](/pages/web/domains/api_domain_contacts)
+- [Gestion des règles d'éligibilité](/pages/web/domains/api_domain_rules)
+- [Configurer l'affichage de ses données dans le Whois](/pages/web/domains/api_domain_whois)
+- [Configurer les DNS de son nom de domaine](/pages/web/domains/api_domain_dns)
 - **Transférer un nom de domaine**
 <!-- End TOC -->
 
@@ -38,19 +35,19 @@ Si vous êtes le propriétaire du domaine, vous pouvez déléguer sa gestion à 
 
 1. **Récupérer le code d'autorisation confidentiel** (parfois appelé "_auth code_" ou "_auth info_") associé à votre nom de domaine depuis le tableau de bord du registrar actuel.
 
-2. **Commander un transfert** : cela consiste en les mêmes étapes que la [commande d'un nouveau nom de domaine](../api-order).
+2. **Commander un transfert** : cela consiste en les mêmes étapes que la [commande d'un nouveau nom de domaine](/pages/web/domains/api_domain_order).
 
-    - Seule l'[offre](../api-order/#fetch-available-offers) diffère, étant donné que l'action disponible sera `transfer` (au lieu de `create`) et le pricing-mode sera `transfer-default`.
+    - Seule l'[offre](/pages/web/domains/api_domain_order#fetch-available-offers) diffère, étant donné que l'action disponible sera `transfer` (au lieu de `create`) et le pricing-mode sera `transfer-default`.
 
-    - Pensez à ajouter le code d'autorisation à la commande, en tant que valeur associée à la [configuration](../api-order/#add-configuration) `AUTH_INFO`.
+    - Pensez à ajouter le code d'autorisation à la commande, en tant que valeur associée à la [configuration](/pages/web/domains/api_domain_order#add-configuration) `AUTH_INFO`.
 
     Quand la commande est terminée, une nouvelle tâche `DomainIncomingTransfer` va être générée.
 
-3. **Surveiller** l'avancement de la tâche `DomainIncomingTransfer` à l'aide de l'[API de gestion des tâches](../api-tasks/#view-pending-tasks).
+3. **Surveiller** l'avancement de la tâche `DomainIncomingTransfer` à l'aide de l'[API de gestion des tâches](/pages/web/domains/api_domain_tasks#view-pending-tasks).
 
 4. Si le code d'autorisation n'a pas été ajouté à la commande, ou s'il est invalide, la tâche `DomainIncomingTransfer` va produire une erreur.
 
-    Dans ce cas, utilisez l'[API de gestion des tâches](../api-tasks/#fix-and-relaunch-a-task-in-error) pour envoyer le bon code avec la clé `authInfo`, puis relancez la tâche.
+    Dans ce cas, utilisez l'[API de gestion des tâches](/pages/web/domains/api_domain_tasks#fix-and-relaunch-a-task-in-error) pour envoyer le bon code avec la clé `authInfo`, puis relancez la tâche.
 
 Le transfert sera normalement validé par le registre au bout de quelques jours.
 
@@ -131,7 +128,7 @@ Votre nouveau registrar procédera alors au transfert.
 
 > [!primary]
 >
-> Pour l'extension .uk, se référer à la [documentation dédiée](https://docs.ovh.com/fr/domains/transferer-domaine-couk/).
+> Pour l'extension .uk, se référer à la [documentation dédiée](/pages/web/domains/transfer_incoming_couk).
 
 > [!warning]
 >

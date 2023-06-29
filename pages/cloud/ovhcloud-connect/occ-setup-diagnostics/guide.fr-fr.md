@@ -1,9 +1,6 @@
 ---
 title: "Résoudre les erreurs fréquentes lors de la mise en service de OVHcloud Connect"
-slug: occ-diagnostics
 excerpt: "Découvrez comment résoudre les erreurs les plus fréquentes liées à la mise en service de OVHcloud Connect"
-section: Premiers pas
-order: 4
 updated: 2021-09-02
 ---
 

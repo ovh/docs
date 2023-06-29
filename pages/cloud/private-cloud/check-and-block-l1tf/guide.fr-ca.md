@@ -1,8 +1,6 @@
 ---
 title: 'Vérifier et bloquer la faille L1TF'
-slug: verifier-bloquer-faille-l1tf
 excerpt: 'Découvrez comment bloquer la vulnérabilité L1TF'
-section: Sécurité
 updated: 2019-02-26
 ---
 
@@ -58,7 +56,7 @@ Cette procédure se divise en 3 phases distinctes.
 
 ### Étape 1: Phase de mise à jour
 
-La mise à jour du vCenter est réalisée par OVHcloud, cependant, le patch des hôtes ESXi est à effectuer par vos soins et est disponible dans [l'update manager](https://docs.ovh.com/ca/fr/private-cloud/vmware-update-manager/){.external-link}.
+La mise à jour du vCenter est réalisée par OVHcloud, cependant, le patch des hôtes ESXi est à effectuer par vos soins et est disponible dans [l'update manager](/pages/cloud/private-cloud/vmware_update_manager){.external-link}.
 
 Vous retrouverez la liste des patchs pour les hôtes ESXi dans [ce document](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
 

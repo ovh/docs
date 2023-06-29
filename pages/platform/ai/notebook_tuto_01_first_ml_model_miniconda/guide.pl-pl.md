@@ -1,11 +1,8 @@
 ---
 title: AI Notebooks - Tutorial - Create your first Machine Learning model
-slug: notebooks/tuto-first-ml-model-miniconda
 excerpt: How to build your first Machine Learning model thanks to Miniconda
-section: AI Notebooks - Tutorials
-order: 01
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-first-ml-model-miniconda/'
+    canonical: '/pages/platform/ai/notebook_tuto_01_first_ml_model_miniconda'
 updated: 2022-09-01
 ---
 
@@ -30,7 +27,7 @@ At the end of this tutorial, you will have learned to master **OVHcloud AI Noteb
 
 ## Instructions
 
-You can launch your notebook from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) or via the ovhai [CLI](https://docs.ovh.com/pl/publiccloud/ai/cli/getting-started-cli/).
+You can launch your notebook from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) or via the ovhai [CLI](/pages/platform/ai/cli_11_howto_run_notebook_cli).
 
 ### Launching a Jupyter notebook with "Miniconda" via UI
 
@@ -99,8 +96,8 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 
 ## Go further
 
-- If you want to learn more about the field of **Computer vision** and **Image Classification**, check out this [notebook](https://docs.ovh.com/pl/publiccloud/ai/notebooks/tuto-transfer-learning-resnet/).
-- If you are interested in **NLP** (Natural Language Processing), familiarise yourself with speech to text by following this [tutorial](https://docs.ovh.com/pl/publiccloud/ai/notebooks/tuto-speech-to-text-recognition/).
+- If you want to learn more about the field of **Computer vision** and **Image Classification**, check out this [notebook](/pages/platform/ai/notebook_tuto_07_transfer_learning_resnet50_image_classification).
+- If you are interested in **NLP** (Natural Language Processing), familiarise yourself with speech to text by following this [tutorial](/pages/platform/ai/notebook_tuto_08_speech_to_text).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

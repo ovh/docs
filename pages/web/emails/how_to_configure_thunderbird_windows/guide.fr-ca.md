@@ -1,10 +1,7 @@
 ---
 title: 'Configurer son adresse e-mail sur Thunderbird pour Windows'
-slug: configuration-email-configuration-pour-thunderbird
 legacy_guide_number: 1297
 excerpt: 'Retrouvez ici les informations pour configurer votre adresse e-mail sur Thunderbird.'
-section: 'Configuration sur ordinateur'
-order: 04
 updated: 2021-08-26
 ---
 
@@ -56,11 +53,11 @@ Dans le cadre d'une configuration en **POP**, les valeurs sont les suivantes:
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse <https://www.ovh.com/ca/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, aidez-vous de notre guide [Consulter son compte Exchange depuis l’interface OWA](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/) ou [Utiliser son adresse e-mail depuis le webmail RoundCube](https://docs.ovh.com/ca/fr/emails/utilisation-roundcube/#ou-et-comment-se-connecter-au-webmail-roundcube).
+OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse <https://www.ovh.com/ca/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, aidez-vous de notre guide [Consulter son compte Exchange depuis l’interface OWA](/pages/web/emails/email_owa) ou [Utiliser son adresse e-mail depuis le webmail RoundCube](/pages/web/emails/email_roundcube).
 
 ### Récupérer une sauvegarde de votre adresse e-mail
 
-Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consultez le paragraphe « **Exporter** » dans la partie « **Thunderbird** » de notre guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/ca/fr/emails/migrer-ses-adresses-email-manuellement/#exporter).
+Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consultez le paragraphe « **Exporter** » dans la partie « **Thunderbird** » de notre guide [Migrer manuellement votre adresse e-mail](/pages/web/emails/manual_email_migration#exporter).
 
 ### Modifier les paramètres existants
 

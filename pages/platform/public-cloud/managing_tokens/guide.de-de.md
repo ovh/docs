@@ -1,8 +1,6 @@
 ---
 title: Token-Verwaltung
 excerpt: 'Erfahren Sie hier, wie Sie Token über die Keystone API verwenden'
-slug: token-verwaltung
-section: 'OpenStack'
 updated: 2023-06-15
 ---
 

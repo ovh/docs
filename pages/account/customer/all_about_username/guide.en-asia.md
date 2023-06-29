@@ -1,9 +1,6 @@
 ---
 title: 'Securing my OVHcloud account and managing my personal information'
-slug: all-about-your-username
 excerpt: 'Find out how to optimise your OVHcloud account security, manage your personal information, and delegate access to your account'
-section: 'Getting started'
-order: 3
 updated: 2021-07-01
 ---
 
@@ -20,11 +17,11 @@ You can also use the OVHcloud Control Panel to manage your personal data, and de
 
 ## Requirements
 
-- an [OVHcloud account](https://docs.ovh.com/asia/en/customer/create-ovhcloud-account/)
+- an [OVHcloud account](/pages/account/customer/ovhcloud-account-creation)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 > [!primary]
-> If you experience any difficulties logging in to your account, please read the “[What do I do if I can't log in?](https://docs.ovh.com/asia/en/customer/log-in-to-ovhcloud-control-panel#login-failure)” section of our guide on [Logging in to the OVHcloud Control Panel](https://docs.ovh.com/asia/en/customer/log-in-to-ovhcloud-control-panel).
+> If you experience any difficulties logging in to your account, please read the “[What do I do if I can't log in?](/pages/account/customer/ovhcloud-account-login#login-failure)” section of our guide on [Logging in to the OVHcloud Control Panel](/pages/account/customer/ovhcloud-account-login).
 >
 
 ## Instructions
@@ -43,11 +40,11 @@ The best practices listed below should be applied as soon as you create your OVH
 
 The security of your services and data depends on the efficiency of your password. It must be **complex, unique and regularly renewed**.
 
-You can find all of our password recommendations in our guide on [Setting and managing an account password](https://docs.ovh.com/asia/en/customer/manage-password/).
+You can find all of our password recommendations in our guide on [Setting and managing an account password](/pages/account/customer/manage-ovh-password).
 
 #### Saving your password
 
-If you have not already done so, save your password in a [password manager](https://docs.ovh.com/asia/en/customer/manage-password/#use-a-password-manager) .
+If you have not already done so, save your password in a [password manager](/pages/account/customer/manage-ovh-password#use-a-password-manager) .
 
 > [!primary]
 > The **KeePass** and **Bitwarden** software are free and open-source password managers.
@@ -74,7 +71,7 @@ Then, in the `My profile` box, click the `...`{.action} button, then `Edit my pr
 
 Two-factor authentication increases security for your OVHcloud account.
 
-You can find all the details to enable it in our guide on [Securing your OVHcloud account with two-factor authentication](https://docs.ovh.com/asia/en/customer/secure-account-with-2FA/).
+You can find all the details to enable it in our guide on [Securing your OVHcloud account with two-factor authentication](/pages/account/customer/secure-ovhcloud-account-with-2fa).
 
 > [!primary]
 > Enabling two-factor authentication on your OVHcloud account is a mandatory requirement for compliance with the [HDS certification](https://www.ovhcloud.com/asia/enterprise/certification-conformity/hds/).
@@ -143,22 +140,22 @@ In this scenario, OVHcloud enables you to grant access to your account while pro
 
 #### Creating users
 
-A user can have read or write access to your account, or all of your services. You can create, manage and delete these users via the OVHcloud Control Panel. To find out more, please refer to our [guide on user management](https://docs.ovh.com/asia/en/customer/managing-users/).
+A user can have read or write access to your account, or all of your services. You can create, manage and delete these users via the OVHcloud Control Panel. To find out more, please refer to our [guide on user management](/pages/account/customer/ovhcloud-users-management).
 
 ## What to do in the event of identity theft
 
-If you receive an email notifying you of an unknown connection to your OVHcloud account, we advise [changing your account password immediately](https://docs.ovh.com/asia/en/customer/manage-password/#change-your-password) and [securing it with two-factor authentication](https://docs.ovh.com/asia/en/customer/secure-account-with-2FA/).
+If you receive an email notifying you of an unknown connection to your OVHcloud account, we advise [changing your account password immediately](/pages/account/customer/manage-ovh-password#change-your-password) and [securing it with two-factor authentication](/pages/account/customer/secure-ovhcloud-account-with-2fa).
 
 If you observe any suspicious activity on your account, please inform our support team by creating a support request in your [OVHcloud Control Panel](https://ca.ovh.com/manager/#/dedicated/support/tickets/new).
 
 ## Go further
 
-[Setting and managing an account password](https://docs.ovh.com/asia/en/customer/manage-password/)
+[Setting and managing an account password](/pages/account/customer/manage-ovh-password)
 
-[Securing your OVHcloud account with two-factor authentication](https://docs.ovh.com/asia/en/customer/secure-account-with-2FA/)
+[Securing your OVHcloud account with two-factor authentication](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
-[Logging in to the OVHcloud Control Panel](https://docs.ovh.com/asia/en/customer/log-in-to-ovhcloud-control-panel)
+[Logging in to the OVHcloud Control Panel](/pages/account/customer/ovhcloud-account-login)
 
-[What do I do if I can't log in?](https://docs.ovh.com/asia/en/customer/log-in-to-ovhcloud-control-panel/#login-failure)
+[What do I do if I can't log in?](/pages/account/customer/ovhcloud-account-login#login-failure)
 
 Join our community of users on <https://community.ovh.com/en/>.

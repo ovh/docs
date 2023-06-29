@@ -1,7 +1,5 @@
 ---
 title: Source Integrations
-slug: integrations-source
-section: Integrations
 updated: 2021-05-11
 ---
 

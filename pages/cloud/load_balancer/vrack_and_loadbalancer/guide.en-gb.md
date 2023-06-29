@@ -1,8 +1,6 @@
 ---
 title: Configuring the vRack on the load balancer
-slug: configre-vrack-load-balancer
 excerpt: How to configure vRack on a Load Balancer
-section: Configuration
 updated: 2022-04-04
 ---
 

@@ -1,11 +1,8 @@
 ---
 title: Managing nodes and node pools with OVHcloud API
-slug: managing-nodes-with-api
 excerpt: 'Find out how to manage OVHcloud Managed Kubernetes node and node pools with OVHcloud API'
-section: User guides
 routes:
-    canonical: https://docs.ovh.com/gb/en/kubernetes/managing-nodes-with-api/
-order: 1
+    canonical: /pages/platform/kubernetes-k8s/managing-nodes-with-API
 updated: 2023-06-06
 ---
 
@@ -15,7 +12,7 @@ updated: 2023-06-06
 
 OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. This guide will cover one of the first steps after ordering a cluster: managing nodes and node pools, using the OVHcloud API.
 
-In this guide, we are assuming you're using the [OVHcloud API](https://api.ovh.com/) to manage your Kubernetes cluster. If you are using a different method, like the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb), please refer to the relevant documentation: [Managing nodes and node pools](../managing-nodes/) guide.
+In this guide, we are assuming you're using the [OVHcloud API](https://api.ovh.com/) to manage your Kubernetes cluster. If you are using a different method, like the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb), please refer to the relevant documentation: [Managing nodes and node pools](/pages/platform/kubernetes-k8s/managing-nodes) guide.
 
 ## Requirements
 
@@ -29,7 +26,7 @@ In the cluster creation call, you can specify the specs of a first node pool tha
 
 Upon creation, a node pool is defined by its name (`name`), the type of instance within our available catalog (`flavorName`), the number of identical nodes that you want in that node pool (`desiredNodes`), and potentially self-defined boundaries to limit the value of desired nodes (`minNodes` and `maxNodes`).
 
-You can also enable the `autoscale` feature, and the `desiredNodes` will be automatically updated at runtime within the `minNodes` and `maxNodes` boundaries, depending on the resource reservations of your workload (see [Using the cluster autoscaler](../using-cluster-autoscaler/)).
+You can also enable the `autoscale` feature, and the `desiredNodes` will be automatically updated at runtime within the `minNodes` and `maxNodes` boundaries, depending on the resource reservations of your workload (see [Using the cluster autoscaler](/pages/platform/kubernetes-k8s/using-cluster-autoscaler)).
 
 Setting the `antiAffinity` boolean ensures that nodes in that node pool will be created on different hypervisors (baremetal machines) and therefore ensure the best availability for your workload. The maximum number of nodes is set to 5 if this feature is activated on a nodepool (you can of course create multiple node pools with each 5 anti-affinity nodes max).
 
@@ -391,7 +388,7 @@ To delete a node pool, use the `DELETE /cloud/project/{serviceName}/kube/{kubeId
 
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/de/public-cloud/kubernetes/).
 
-Otherwise to skip it and push to deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring-kubectl/) and [deploying an application](../deploying-an-application/).
+Otherwise to skip it and push to deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](/pages/platform/kubernetes-k8s/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster) and [deploying an application](/pages/platform/kubernetes-k8s/deploying-an-application).
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

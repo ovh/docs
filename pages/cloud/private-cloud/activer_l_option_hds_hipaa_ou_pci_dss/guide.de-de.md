@@ -1,8 +1,6 @@
 ---
 title: 'PCI-DSS-Zertifizierung für Ihre Private Cloud aktivieren'
-slug: pci-dss-option-aktivieren
 excerpt: 'Erfahren Sie hier, wie Sie Finanz- und Patientendaten auf Ihrer Hosted Private Cloud Infrastruktur hosten'
-section: OVHcloud Dienste und Optionen
 updated: 2020-05-27
 ---
 
@@ -33,13 +31,13 @@ Wenn die gewünschte Sicherheitsoption nicht aktiviert ist, klicken Sie auf den 
 
 - **Die Optionen [NSX](https://www.ovh.de/private-cloud/optionen/nsx.xml) und [vROps](https://www.ovh.de/private-cloud/optionen/vrops.xml) müssen installiert sein**: Sie können den Aktivierungsstatus der Option im Tab `Allgemeine Informationen`{.action} im Bereich „Private Cloud Optionen“ einsehen. Sind sie nicht aktiviert, klicken Sie auf den Button `...`{.action} und dann auf `Aktivieren`{.action}.
 
-- **Die Zugangseinstellungen für vCenter müssen eingeschränkt sein**: Sie können den Status der Zugangseinstellungen im „Tab“ Sicherheit überprüfen. Sind diese nicht eingeschränkt, klicken Sie auf den Button `Regeln für den Zugang zum vCenter`{.action} und befolgen Sie die angezeigten Schritte. Wenn Sie hierbei Hilfe benötigen, lesen Sie die Anleitung [Introduction to the OVH Private Cloud Control Panel](https://docs.ovh.com/gb/en/private-cloud/control-panel-ovh-private-cloud/#security) (Englisch).
+- **Die Zugangseinstellungen für vCenter müssen eingeschränkt sein**: Sie können den Status der Zugangseinstellungen im „Tab“ Sicherheit überprüfen. Sind diese nicht eingeschränkt, klicken Sie auf den Button `Regeln für den Zugang zum vCenter`{.action} und befolgen Sie die angezeigten Schritte. Wenn Sie hierbei Hilfe benötigen, lesen Sie die Anleitung [Introduction to the OVH Private Cloud Control Panel](/pages/cloud/private-cloud/manager_ovh_private_cloud#security) (Englisch).
 
-- **Sie benötigen mindestens eine IP-Adresse mit der Berechtigung, sich mit vCenter zu verbinden**: Überprüfen Sie im Tab „Sicherheit“, dass Sie über mindestens eine autorisierte IP-Adresse verfügen. Falls nötig, verwenden Sie den Button `IP-Adressen hinzufügen`{.action}. Wenn Sie hierbei Hilfe benötigen, lesen Sie die Anleitung [Introduction to the OVH Private Cloud Control Panel](https://docs.ovh.com/gb/en/private-cloud/control-panel-ovh-private-cloud/#security) (Englisch).
+- **Sie benötigen mindestens eine IP-Adresse mit der Berechtigung, sich mit vCenter zu verbinden**: Überprüfen Sie im Tab „Sicherheit“, dass Sie über mindestens eine autorisierte IP-Adresse verfügen. Falls nötig, verwenden Sie den Button `IP-Adressen hinzufügen`{.action}. Wenn Sie hierbei Hilfe benötigen, lesen Sie die Anleitung [Introduction to the OVH Private Cloud Control Panel](/pages/cloud/private-cloud/manager_ovh_private_cloud#security) (Englisch).
 
 Um sicherzustellen, dass Sie sich immer einloggen können, empfehlen wir, mindestens zwei autorisierte IP-Adressen einzurichten. Diese sollten natürlich fix und nicht dynamisch sein, um die Verfügbarkeit zu gewährleisten.
 
-- **Die Informationen des Admin-Benutzers müssen vollständig sein und er verfügt über die erforderliche Berechtigung**: Überprüfen Sie im Tab „Benutzer“, dass Telefonnummer und E-Mail-Adresse des Admin-Benutzers gespeichert sind und dass dieser die „**token validator**“-Berechtigung hat. Falls nötig können Sie Änderungen vornehmen, indem Sie auf den Button `...`{.action} klicken und dann auf `Bearbeiten`{.action}. Wenn Sie hierbei Hilfe benötigen, lesen Sie die Anleitung [Introduction to the OVH Private Cloud Control Panel](https://docs.ovh.com/gb/en/private-cloud/control-panel-ovh-private-cloud/#users) (Englisch).
+- **Die Informationen des Admin-Benutzers müssen vollständig sein und er verfügt über die erforderliche Berechtigung**: Überprüfen Sie im Tab „Benutzer“, dass Telefonnummer und E-Mail-Adresse des Admin-Benutzers gespeichert sind und dass dieser die „**token validator**“-Berechtigung hat. Falls nötig können Sie Änderungen vornehmen, indem Sie auf den Button `...`{.action} klicken und dann auf `Bearbeiten`{.action}. Wenn Sie hierbei Hilfe benötigen, lesen Sie die Anleitung [Introduction to the OVH Private Cloud Control Panel](/pages/cloud/private-cloud/manager_ovh_private_cloud#users) (Englisch).
 
 Um sicherzustellen, dass Sie sich im vCenter einloggen können, empfehlen wir Ihnen, mindestens zwei Benutzer mit den notwendigen Informationen und Berechtigungen (mit verschiedenen E-Mail-Adressen und Telefonnummern).
 
@@ -67,16 +65,14 @@ Aus Sicherheitsgründen gilt Folgendes nach der Aktivierung der Sicherheitsoptio
 
 Zur Erinnerung: Es ist nicht möglich auf das sichere Interface zuzugreifen, bevor die Aktivierung der Sicherheitsoption abgeschlossen ist.
 
-Nach fertiger Aktivierung können Sie sich über den Link, den Sie per E-Mail erhalten haben, auf dem sicheren Interface einloggen. Dieser Link entspricht in etwa der Form „https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/password-lost“. Sobald Sie eingeloggt sind, können Sie das Passwort des Admin-Benutzers und anschließend die Passwörter der anderen Benutzer ändern. Weitere Informationen hierzu finden Sie in unserer Anleitung [Das sichere Interface verwenden](https://docs.ovh.com/de/private-cloud/sicheres-interface/).
+Nach fertiger Aktivierung können Sie sich über den Link, den Sie per E-Mail erhalten haben, auf dem sicheren Interface einloggen. Dieser Link entspricht in etwa der Form „https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/password-lost“. Sobald Sie eingeloggt sind, können Sie das Passwort des Admin-Benutzers und anschließend die Passwörter der anderen Benutzer ändern. Weitere Informationen hierzu finden Sie in unserer Anleitung [Das sichere Interface verwenden](/pages/cloud/private-cloud/interface-secure).
 
 
 ## Weiterführende Informationen
 
-[Stündliche Ressourcen hinzufügen](https://docs.ovh.com/de/private-cloud/stuendliche-ressourcen-hinzufuegen/)
+[vSphere Web Client sichern](/pages/cloud/private-cloud/vsphere_access_security_advices)
 
-[vSphere Web Client sichern](https://docs.ovh.com/de/private-cloud/vsphere-web-zugang-sichern/)
-
-[VMware Tools installieren](https://docs.ovh.com/de/private-cloud/wie_installiere_ich_die_vmware_tools/)
+[VMware Tools installieren](/pages/cloud/private-cloud/vmware_tools_install)
 
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

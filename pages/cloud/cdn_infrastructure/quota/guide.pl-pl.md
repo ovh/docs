@@ -1,9 +1,6 @@
 ---
 title: 'Zarządzanie limitem transferu w usłudze CDN'
-slug: limit-transferu-cdn
 excerpt: 'Dowiedz się, jak zarządzać limitem transferu w usłudze CDN'
-section: 'Pierwsze kroki'
-order: 3
 updated: 2018-02-22
 ---
 

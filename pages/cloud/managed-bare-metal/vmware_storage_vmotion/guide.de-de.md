@@ -1,11 +1,8 @@
 ---
 title: VMware Storage vMotion
-slug: vmware-storage-vmotion-neu
 routes:
-    canonical: 'https://docs.ovh.com/de/private-cloud/vmware-storage-vmotion-neu/'
+    canonical: '/pages/cloud/private-cloud/vmware_storage_vmotion'
 excerpt: Verlagern Sie Ihre virtuelle Maschine bei laufendem Betrieb auf einen anderen Host (Hot-Swap)
-section: VMware vSphere Funktionen
-order: 05
 updated: 2020-11-18
 ---
 
@@ -31,7 +28,7 @@ Das Menu bietet mehrere Optionen für  **vMotion**. In unserem Beispiel möchten
 
 Mit der Option “Change compute resource only” wird die virtuelle Maschine auf einen anderen Host verlagert.  
 
-Diese Aktion wird **vMotion** genannt und in [dieser Anleitung beschrieben](../vmware-vmotion-neu/).
+Diese Aktion wird **vMotion** genannt und in [dieser Anleitung beschrieben](/pages/cloud/managed-bare-metal/vmware_vmotion_new).
 
 ![Auswahl bei vMotion](images/VmotionStorage2.png){.thumbnail}
 
@@ -41,7 +38,7 @@ Wählen Sie aus, auf welchen Datenspeicher Sie die Daten verschieben möchten.
 
 Bei dieser Aktion können Sie auch die Art der Speicherung verändern.
 
-Sie können die bereits definierten Richtlinien zur Speicherung anwenden, wenn Sie die Option [VMencryption](../vm-encrypt/) nutzen.
+Sie können die bereits definierten Richtlinien zur Speicherung anwenden, wenn Sie die Option [VMencryption](/pages/cloud/managed-bare-metal/vm_encrypt) nutzen.
 
 ![Wahl des Datastores](images/VmotionStorage3.png){.thumbnail}
 

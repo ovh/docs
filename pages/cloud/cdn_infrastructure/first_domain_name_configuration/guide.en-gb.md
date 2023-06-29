@@ -1,9 +1,6 @@
 ---
 title: 'Configuring a domain name for the first time'
-slug: first-domain-configuration-on-cdn
 excerpt: 'Find out how to properly configure a domain on the OVH CDN'
-section: 'Getting started'
-order: 2
 updated: 2018-02-21
 ---
 

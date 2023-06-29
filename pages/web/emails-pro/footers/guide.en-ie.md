@@ -1,8 +1,5 @@
 ---
 title: 'Creating automatic signatures'
-slug: email-automatic-signature-disclaimer
-section: 'Getting started'
-order: 3
 updated: 2020-03-26
 ---
 
@@ -23,4 +20,4 @@ In the OVHcloud Control Panel, you can create universal signatures (footers) for
 
 ## Instructions
 
-Follow our guide [What do I do if my account is blocked for spam?](https://docs.ovh.com/en-ie/microsoft-collaborative-solutions/blocked-for-spam/){.external} in the “Microsoft collaborative solutions” section.
+Follow our guide [What do I do if my account is blocked for spam?](/pages/web/emails/locked_for_spam){.external} in the “Microsoft collaborative solutions” section.

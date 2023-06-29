@@ -1,9 +1,6 @@
 ---
 title: Crea e utilizza un account condiviso
-slug: exchange-utilizzo-account-condivisi
 excerpt: Aggiungi e utilizza un account condiviso sulla tua soluzione Exchange
-section: Funzionalità degli account Exchange
-order: 06
 updated: 2021-06-15
 ---
 
@@ -102,12 +99,12 @@ Dal tuo software Outlook, troverai il tuo account condiviso nella colonna di sin
 
 ## Per saperne di più
 
-[Consulta il tuo account Exchange dall'interfaccia OWA](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_guida_allutilizzo_di_outlook_web_app/)
+[Consulta il tuo account Exchange dall'interfaccia OWA](/pages/web/emails/email_owa)
 
-[Delegare permessi su un account Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2013_assegna_i_diritti_full_access_a_un_account/)
+[Delegare permessi su un account Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Condividi un calendario con la Webmail OWA](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_condividi_un_calendario_con_la_webmail_owa/)
+[Condividi un calendario con la Webmail OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Aggiungi un piede di pagina ai tuoi account Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2013_firma_automatica_-_disclaimer/)
+[Aggiungi un piede di pagina ai tuoi account Exchange](/pages/web/microsoft-collaborative-solutions/feature_footers)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

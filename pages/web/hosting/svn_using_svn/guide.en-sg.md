@@ -1,9 +1,6 @@
 ---
 title: Using SVN
-slug: use-svn
 excerpt: Find out how to use SVN via SSH on your Web Hosting plan
-section: FTP and SSH
-order: 09
 updated: 2021-01-06
 ---
 
@@ -24,13 +21,13 @@ SVN, which stands for "subversion," is a version management system.
 ## Requirements
 
 - a [Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/) that allows an SSH connection (**from the Professional plan onwards**)
-- access to your Web Hosting plan via SSH (see our guide on [accessing a Web Hosting plan via SSH](../web_hosting_ssh_on_web_hosting_packages/))
+- access to your Web Hosting plan via SSH (see our guide on [accessing a Web Hosting plan via SSH](/pages/web/hosting/ssh_on_webhosting))
 
 ## Instructions
 
 ### Creating the repository
 
-Once you have logged in via [SSH on your hosting](../web_hosting_ssh_on_web_hosting_packages/), first create the root directory of your SVN repositories, then the repository.
+Once you have logged in via [SSH on your hosting](/pages/web/hosting/ssh_on_webhosting), first create the root directory of your SVN repositories, then the repository.
 
 To do this, simply type these commands:
 
@@ -56,7 +53,7 @@ You should see the directories as shown in the following image:
 
 Before you continue, it is necessary to create a pair of SSH keys from the desktop you will use to connect to the SVN repository.
 
-In order to create a key pair, please follow our guide on [Creating SSH keys](../../public-cloud/create-ssh-keys/). You can ignore the step regarding the import of your SSH key to the OVHcloud Control Panel.
+In order to create a key pair, please follow our guide on [Creating SSH keys](/pages/platform/public-cloud/public-cloud-first-steps#step-1-creating-ssh-keys/). You can ignore the step regarding the import of your SSH key to the OVHcloud Control Panel.
 
 ### Adding the public key to the Web Hosting plan
 
@@ -79,7 +76,7 @@ command="/usr/bin/svnserve --root=/homez.XXX/loginFTP/svn --tunnel --tunnel-user
 > Replace "/home.XXX/loginFTP" and "john" with your SSH credentials.
 > To find out the correct numbers to use inside "/home.XXX/loginFTP", type the command "pwd" at the command line.
 >
-> You can also find this information in our guide on [Accessing a Web Hosting plan via SSH](../web_hosting_ssh_on_web_hosting_packages/}.
+> You can also find this information in our guide on [Accessing a Web Hosting plan via SSH](/pages/web/hosting/ssh_on_webhosting).
 > 
 
 ![hosting](images/3080.png){.thumbnail}
@@ -140,6 +137,6 @@ svn+ssh://login@ftp.name-of-site.tld/home.XXX/login/svn/depot_test
 
 ## Go further
 
-[Accessing a Web Hosting plan via SSH](../web_hosting_ssh_on_web_hosting_packages/){.external}
+[Accessing a Web Hosting plan via SSH](/pages/web/hosting/ssh_on_webhosting){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

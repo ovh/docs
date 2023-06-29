@@ -1,9 +1,7 @@
 ---
 title: 'Redirection de port'
 keywords: 'redirection, port, forward, nat'
-slug: redirection-de-port
 excerpt: "Sur l'OverTheBox, il est possible de configurer une redirection de port afin de vous permettre d'accéder à une machine de votre réseau local depuis un réseau extérieur."
-section: "Configurations de l'OverTheBox"
 updated: 2021-05-10
 ---
 
@@ -16,7 +14,7 @@ Afin que la redirection de port fonctionne correctement. Il est impératif que l
 > [!success]
 >
 > C'est normalement déjà le cas si cette machine est configurée en récupération d'IP automatique et si le DHCP est géré par OverTheBox,
-> voir la procédure d'installation : [Installation OverTheBox Plus ou IT v2](../plus-itv2-installation/).
+> voir la procédure d'installation : [Installation OverTheBox Plus ou IT v2](/pages/telecom/overthebox/plus_itv2_installation).
 >
 
 ## Redirection de port

@@ -1,9 +1,6 @@
 ---
 title: Przywracanie i importowanie bazy danych na serwer baz danych
-slug: przywracanie-importowanie-bazy-danych
 excerpt: 'Dowiedz się, jak przywrócić i importować bazę danych'
-section: 'Konfiguracja'
-order: 05
 updated: 2023-02-15
 ---
 
@@ -92,7 +89,7 @@ W niektórych przypadkach pamięć RAM dostępna na serwerze baz danych nie pozw
 
 #### Import bazy MySQL lub MariaDB z poziomu phpMyAdmin
 
-Aby zaimportować bazę danych bezpośrednio z phpMyAdmin, należy najpierw się do niej zalogować. Aby to zrobić, możesz zapoznać się z tym [przewodnikiem](https://docs.ovh.com/pl/clouddb/polaczenie-bazy-danych-serwer-bdd/#logowanie-do-bazy-danych-mysql-lub-mariadb).
+Aby zaimportować bazę danych bezpośrednio z phpMyAdmin, należy najpierw się do niej zalogować. Aby to zrobić, możesz zapoznać się z tym [przewodnikiem](/pages/web/clouddb/connecting-to-database-on-database-server#logowanie-do-bazy-danych-mysql-lub-mariadb).
 
 Po zalogowaniu się do phpMyAdmin wybierz bazę danych klikając na jej nazwę.
 
@@ -112,7 +109,7 @@ Pozostaw domyślne opcje i kliknij `Uruchom`{.action} import.
 
 #### Importuj bazę MySQL lub MariaDB za pomocą wiersza poleceń
 
-Operacja ta jest możliwa tylko przez [SSH](https://docs.ovh.com/pl/hosting/hosting_www_ssh_na_hostingu/) z poziomu hostingu OVHcloud.
+Operacja ta jest możliwa tylko przez [SSH](/pages/web/hosting/ssh_on_webhosting) z poziomu hostingu OVHcloud.
 
 ```bash
 cat nazwa_bazy.sql | mysql —host=serwer —user=uzytkownik —port=port —password=password nazwa_bazy
@@ -129,7 +126,7 @@ cat nazwa_bazy.sql | mysql —host=serwer —user=uzytkownik —port=port —pas
 
 > [!warning]
 >
-> - Aby uniknąć sytuacji, w której ktoś miałby dostęp do tego pliku zawierającego wrażliwe dane, zapoznaj się z przewodnikiem dotyczącym bezpieczeństwa dostępu do tego pliku: ["Używanie .htaccess do ochrony hasła katalogu w serwisie WWW"](https://docs.ovh.com/pl/hosting/hosting-htaccess-w-jaki-sposob-zabezpieczyc-dostep-dostepu-do-katalogu/)
+> - Aby uniknąć sytuacji, w której ktoś miałby dostęp do tego pliku zawierającego wrażliwe dane, zapoznaj się z przewodnikiem dotyczącym bezpieczeństwa dostępu do tego pliku: ["Używanie .htaccess do ochrony hasła katalogu w serwisie WWW"](/pages/web/hosting/htaccess_protect_directory_by_password)
 > - Operacja ta jest możliwa tylko z poziomu hostingu OVHcloud.
 >
 
@@ -139,7 +136,7 @@ W niektórych przypadkach RAM dostępny na serwerze baz danych nie pozwala na zr
 
 #### Importuj bazę PostgreSQL za pomocą wiersza poleceń
 
-Operacja ta jest możliwa wyłącznie przez [SSH](https://docs.ovh.com/pl/hosting/hosting_www_ssh_na_hostingu/) z poziomu hostingu OVHcloud w wersji stabilnej lub wyższej.
+Operacja ta jest możliwa wyłącznie przez [SSH](/pages/web/hosting/ssh_on_webhosting) z poziomu hostingu OVHcloud w wersji stabilnej lub wyższej.
 
 ```bash
 psql —host=serwer —port=port —user=uzytkownik —password=password nazwa_bazy < nazwa_bazy_bazy.sql
@@ -157,7 +154,7 @@ psql —host=serwer —port=port —user=uzytkownik —password=password nazwa_b
 
 > [!warning]
 >
-> - Aby uniknąć sytuacji, w której ktoś miałby dostęp do tego pliku zawierającego wrażliwe dane, sprawdź, czy zabezpieczysz dostęp do tego pliku za pomocą przewodnika ["Używanie .htaccess do ochrony hasła katalogu w serwisie WWW"](https://docs.ovh.com/pl/hosting/hosting-htaccess-w-jaki-sposob-zabezpieczyc-dostep-dostepu-do-katalogu/)
+> - Aby uniknąć sytuacji, w której ktoś miałby dostęp do tego pliku zawierającego wrażliwe dane, sprawdź, czy zabezpieczysz dostęp do tego pliku za pomocą przewodnika ["Używanie .htaccess do ochrony hasła katalogu w serwisie WWW"](/pages/web/hosting/htaccess_protect_directory_by_password)
 > - Operacja ta jest możliwa tylko z poziomu hostingu OVHcloud.
 >
 

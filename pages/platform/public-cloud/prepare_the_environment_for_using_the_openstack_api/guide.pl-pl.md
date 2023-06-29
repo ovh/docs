@@ -1,8 +1,6 @@
 ---
 title: 'Przygotowanie środowiska do korzystania z API OpenStack'
 excerpt: 'Zainstaluj środowisko OpenStack, aby monitorować Twoje instancje za pośrednictwem API'
-slug: prepare_the_environment_for_using_the_openstack_api
-section: Zarządzanie w OpenStack CLI
 updated: 2022-03-30
 ---
 
@@ -177,7 +175,7 @@ nova help
 
 ## Sprawdź również
 
-[Zmienne środowiskowe OpenStack](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/).
+[Zmienne środowiskowe OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
 

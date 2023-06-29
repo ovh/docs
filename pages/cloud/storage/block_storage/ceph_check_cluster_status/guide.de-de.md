@@ -1,10 +1,8 @@
 ---
 title: Clusterstatus (EN)
-slug: ceph/check-cluster-status
 excerpt: This guide shows you how to check your Ceph cluster status and health.
-section: Cloud Disk Array
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/block-storage/ceph/check-cluster-status/'
+    canonical: '/pages/cloud/storage/block_storage/ceph_check_cluster_status'
 updated: 2020-12-22
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Ajouter un champ MX à la configuration de son nom de domaine
-slug: mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh
 excerpt: Apprenez à ajouter un champ MX à votre nom de domaine chez OVHcloud
-section: DNS et zone DNS
-order: 04
 updated: 2018-05-30
 ---
 
@@ -79,9 +76,9 @@ Une fois les informations complétées, finalisez les étapes, puis cliquez sur 
 
 ## Aller plus loin
 
-[Généralités sur les serveurs DNS](../generalites-serveurs-dns/){.external}
+[Généralités sur les serveurs DNS](/pages/web/domains/dns_server_general_information){.external}
 
-[Éditer une zone DNS OVHcloud](../editer-ma-zone-dns/){.external}
+[Éditer une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external}
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 

@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Primeros pasos en WordPress"
-slug: wordpress-first-steps
 excerpt: "Descubra cómo crear un sitio web con el CMS WordPress"
-section: Tutoriales
-order: 020
 updated: 2023-02-17
 ---
 
@@ -30,12 +27,12 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 - Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) que contenga al menos una base de datos.
 - Disponer de un [dominio](https://www.ovhcloud.com/es/domains/)
-- Haber [instalado WordPress](https://docs.ovh.com/us/es/hosting/modulos-en-un-clic/) en su alojamiento web
+- Haber [instalado WordPress](/pages/web/hosting/cms_install_1_click_modules) en su alojamiento web
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
 
 ## Procedimiento
 
-Si todavía no lo ha hecho, [añada un certificado SSL](https://docs.ovh.com/us/es/hosting/activar-https-en-un-sitio-web-con-ssl/#1-activar-el-certificado-ssl-en-el-alojamiento-web) al nombre de dominio asociado a su sitio web.
+Si todavía no lo ha hecho, [añada un certificado SSL](/pages/web/hosting/ssl-activate-https-website#1-activar-el-certificado-ssl-en-el-alojamiento-web) al nombre de dominio asociado a su sitio web.
 
 Al instalar el CMS en 1-clic, le enviamos por correo electrónico los elementos necesarios para continuar con este tutorial:
 

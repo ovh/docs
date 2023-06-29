@@ -1,9 +1,6 @@
 ---
 title: 'Technische Eigenschaften von Webhostings'
-slug: technische-eigenschaften-web-hosting
 excerpt: 'Erfahren Sie hier mehr zum technischen Leistungsvermögen Ihrer Hosting-Lösung'
-section: 'Webhosting-Konfiguration'
-order: 05
 updated: 2022-11-18
 ---
 
@@ -32,7 +29,7 @@ updated: 2022-11-18
 
 ### FTP
 
-- Verbindungsfehler („Fehler 530: Login-Authentifizierung fehlgeschlagen“): Stellen Sie sicher, dass die Zugangsdaten für Ihren FTP-Bereich korrekt sind. Gehen Sie hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und überprüfen Sie die Daten im Tab `FTP-SSH`. Die Passwörter werden nie angezeigt, können jedoch geändert werden. Weitere Informationen finden Sie in unseren [FTP-Anleitungen](../verbindung-ftp-speicher-webhosting/).
+- Verbindungsfehler („Fehler 530: Login-Authentifizierung fehlgeschlagen“): Stellen Sie sicher, dass die Zugangsdaten für Ihren FTP-Bereich korrekt sind. Gehen Sie hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und überprüfen Sie die Daten im Tab `FTP-SSH`. Die Passwörter werden nie angezeigt, können jedoch geändert werden. Weitere Informationen finden Sie in unseren [FTP-Anleitungen](/pages/web/hosting/ftp_connection).
 
 - FTP-Verbindungen müssen den **passiven Modus** verwenden. Stellen Sie sicher, dass Ihre Skripte bzw. Ihr FTP-Client entsprechend angepasst sind.
 
@@ -47,7 +44,7 @@ Innerhalb eines gleitenden Zeitraums von 3600 Sekunden (also 1 Stunde) können S
 |Maximale Anzahl an E-Mails pro Stunde und Dienstleistung|10|100|200|2000|
 
 - Ihre E-Mails werden möglicherweise zeitverzögert gesendet, ausgenommen Spam- oder Phishing-verdächtige E-Mails. Ihre E-Mails werden dazu in einer Warteschlange gespeichert, bis die Anzahl der in der letzten Stunde gesendeten E-Mails unter der Quota liegt.
-- Im Missbrauchsfall oder bei erwiesenem Risiko wird Ihr Dienst gesperrt und Sie werden darüber per E-Mail informiert. Um zu erfahren, wie Sie vorgehen können, wenn ein Account aufgrund von Spam-Verdacht blockiert wurde, konsultieren Sie [unsere Anleitung](https://docs.ovh.com/de/microsoft-collaborative-solutions/blocked-wegen-spam/).
+- Im Missbrauchsfall oder bei erwiesenem Risiko wird Ihr Dienst gesperrt und Sie werden darüber per E-Mail informiert. Um zu erfahren, wie Sie vorgehen können, wenn ein Account aufgrund von Spam-Verdacht blockiert wurde, konsultieren Sie [unsere Anleitung](/pages/web/emails/locked_for_spam).
 
 ### Datenbank / SQL
 
@@ -61,7 +58,7 @@ Innerhalb eines gleitenden Zeitraums von 3600 Sekunden (also 1 Stunde) können S
 
     - *max_user_connections*: standardmäßig 50, bis zu 200 möglich
 
-Weitere Informationen hierzu finden Sie auf der [Webhosting Produktseite](https://www.ovhcloud.com/de/web-hosting/) und in unserer [Anleitung](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/).
+Weitere Informationen hierzu finden Sie auf der [Webhosting Produktseite](https://www.ovhcloud.com/de/web-hosting/) und in unserer [Anleitung](/pages/web/clouddb/starting_with_clouddb).
 
 #### Verbindungen über einen externen Server
 
@@ -78,7 +75,7 @@ Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to conn
 
 - Die MySQL Version kann für Webhosting Datenbanken nicht geändert werden.
 
-Weitere Informationen zur Verwaltung von Datenbanken finden Sie in der Anleitung „[Eine Datenbank auf Ihrem Webhosting erstellen](../datenbank-erstellen/)“.
+Weitere Informationen zur Verwaltung von Datenbanken finden Sie in der Anleitung „[Eine Datenbank auf Ihrem Webhosting erstellen](/pages/web/hosting/sql_create_database)“.
 
 ### PHP
 
@@ -93,8 +90,8 @@ Weitere Informationen zur Verwaltung von Datenbanken finden Sie in der Anleitung
 
 - Sie können die PHP Versions Ihres Webhostings ändern, entweder über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) („**Konfiguration**“) oder indem Sie die Datei .ovhconfig entsprechend bearbeiten. Es sind auch gemischte Konfigurationen möglich. Ausführliche Instruktionen finden Sie in folgenden Anleitungen:
 
-[.ovhconfig-Datei Ihres Webhostings konfigurieren](../ovhconfig-datei-konfigurieren/)  
-[Konfiguration Ihres Webhostings bearbeiten](../die_laufzeitumgebung_meines_webhostings_andern/)
+[.ovhconfig-Datei Ihres Webhostings konfigurieren](/pages/web/hosting/ovhconfig_configuration)  
+[Konfiguration Ihres Webhostings bearbeiten](/pages/web/hosting/ovhconfig_modify_system_runtime)
 
 
 > [!primary]
@@ -117,7 +114,7 @@ PHP-FPM ist auf der Webhosting Infrastruktur standardmäßig aktiviert, um PHP-A
 
 #### PHP-Skripte
 
-Wenn Sie mit Ihrem Webhosting via SSH verbunden sind, wird der ausgehende Traffic aus Sicherheitsgründen blockiert. Wir empfehlen Ihnen deshalb, PHP-Skripte zu verwenden. Mehr Informationen hierzu finden Sie in unserer [Anleitung zu SSH](../webhosting_ssh_auf_ihren_webhostings/). Im offiziellen [PHP-Handbuch](https://www.php.net/manual/de/function.system.php) ist nachzulesen, wie Befehle und Funktionen via Skript ausgeführt werden können.
+Wenn Sie mit Ihrem Webhosting via SSH verbunden sind, wird der ausgehende Traffic aus Sicherheitsgründen blockiert. Wir empfehlen Ihnen deshalb, PHP-Skripte zu verwenden. Mehr Informationen hierzu finden Sie in unserer [Anleitung zu SSH](/pages/web/hosting/ssh_on_webhosting). Im offiziellen [PHP-Handbuch](https://www.php.net/manual/de/function.system.php) ist nachzulesen, wie Befehle und Funktionen via Skript ausgeführt werden können.
 
 Sie können zum Beispiel die Funktion *gethostbyaddr()* verwenden, um den Hostnamen abzurufen:
 
@@ -157,13 +154,13 @@ Alle unsere Webhosting-Angebote
 
 - in Beauharnois (BHS), Kanada verfügen über automatische Backups für D-1 / D-2 / D-3 / D-7 / D-14. Diese Backups werden im Rechenzentrum Beauharnois (BHS) in Kanada gespeichert.
 
-In unseren Dokumentationen erfahren Sie, wie Sie sich [in den Speicherplatz einloggen](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) oder den [Speicherplatz Ihres Webhostings wiederherstellen](https://docs.ovh.com/de/hosting/webhosting-speicherplatz-wiederherstellen/).
+In unseren Dokumentationen erfahren Sie, wie Sie sich [in den Speicherplatz einloggen](/pages/web/hosting/ftp_connection) oder den [Speicherplatz Ihres Webhostings wiederherstellen](/pages/web/hosting/ftp_save_and_backup).
 
 #### Datenbank / SQL
 
 Für geteilte Datenbanken ("Shared", inklusive in Ihrem Webhosting Angebot) oder Datenbank-Server (Web Cloud Databases), lokalisiert in Gravelines (GRA), Frankreich und Beauharnois (BHS), Kanada, erfolgt eine tägliche Sicherung der Datenbanken. Diese Backups sind verfügbar (über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} oder über die [OVHcloud API](https://api.ovh.com/)). Die Backups werden auch auf einer anderen Infrastruktur gespeichert. Diese Daten werden an 3 verschiedenen Standorten in Frankreich repliziert: Roubaix (RBX), Straßburg (SBG) und Gravelines (GRA). Die Aufbewahrungsdauer für die Backups beträgt 30 Tage.
 
-In unserer Anleitung erfahren Sie, wie [Backups der Datenbank eines Webhostings abrufen](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/).
+In unserer Anleitung erfahren Sie, wie [Backups der Datenbank eines Webhostings abrufen](/pages/web/hosting/sql_database_export).
 
 #### E-Mail
 
@@ -193,10 +190,10 @@ Um im Rahmen von OVHcloud Web Statistics verwendet zu werden, werden die zuvor g
 
 ## Weiterführende Informationen
 
-[Mit dem Speicherplatz eines Webhostings verbinden](../verbindung-ftp-speicher-webhosting/)
+[Mit dem Speicherplatz eines Webhostings verbinden](/pages/web/hosting/ftp_connection)
 
-[Website mit SSL-Zertifikat auf HTTPS umstellen](../website-umstellen-https-ssl/)
+[Website mit SSL-Zertifikat auf HTTPS umstellen](/pages/web/hosting/ssl-activate-https-website)
 
-[Optimierung der Performance Ihrer Webseite](../webhosting_optimierung_der_performance_ihrer_webseite/)
+[Optimierung der Performance Ihrer Webseite](/pages/web/hosting/optimise_your_website_performance)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

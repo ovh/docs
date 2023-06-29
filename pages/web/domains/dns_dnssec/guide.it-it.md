@@ -1,9 +1,6 @@
 ---
 title: 'Rendere sicuro un dominio con DNSSEC'
-slug: proteggi_il_tuo_dominio_con_dnssec
 excerpt: 'Come proteggere un dominio dal Cache Poisoning attivando DNSSEC'
-section: 'Protezione e sicurezza'
-order: 1
 legacy_guide_number: g609
 updated: 2023-04-26
 ---

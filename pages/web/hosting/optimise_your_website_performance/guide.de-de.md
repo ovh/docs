@@ -1,9 +1,6 @@
 ---
 title: 'Optimierung der Performance Ihrer Webseite'
 excerpt: 'Erfahren Sie hier, wie Sie Latenzen auf Webseiten analysieren und verbessern können'
-slug: webhosting_optimierung_der_performance_ihrer_webseite
-section: 'Webseitenoptimierung'
-order: 06
 updated: 2022-02-03
 ---
 
@@ -68,9 +65,9 @@ Einige Servervariablen werden über die Verwendung von PHP-FPM geändert:
 |max_input_vars|2000|16000|
 |memory_limit|128 M|512 M|
 
-Informationen zum Aktualisieren von PHP finden Sie in [dieser Anleitung](https://docs.ovh.com/de/hosting/konfiguration_von_php_fur_ein_ovh_webhosting_2014/){.external}.
+Informationen zum Aktualisieren von PHP finden Sie in [dieser Anleitung](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014){.external}.
 
-Informationen zur Verwendung von PHP-FPM in der _stabilen_ Version oder Details zu erweiterten Optionen Ihres Webhostings finden Sie in [dieser Anleitung](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/){.external}.
+Informationen zur Verwendung von PHP-FPM in der _stabilen_ Version oder Details zu erweiterten Optionen Ihres Webhostings finden Sie in [dieser Anleitung](/pages/web/hosting/ovhconfig_modify_system_runtime){.external}.
 
 Die Datei _.ovhconfig_ befindet sich im Stammverzeichnis des Hosting-Pakets oder in einem Unterverzeichnis der Ebene 1 (z.B.: _/www/_), jedoch nicht in Verzeichnissen der Ebene 2 oder darunter (z.B.: _/www/test/_ , _/www/test/test2/_)
 
@@ -224,10 +221,10 @@ Wenn die Datenbank trotz aller Änderungen und Optimierungen, die Sie vorgenomme
 
 ## Weiterführende Informationen
 
-[Konfiguration Ihres Webhostings bearbeiten](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/){.external}
+[Konfiguration Ihres Webhostings bearbeiten](/pages/web/hosting/ovhconfig_modify_system_runtime){.external}
 
-[Verwaltung einer Datenbank in Ihrem Webhosting](https://docs.ovh.com/de/hosting/verwaltung-einer-datenbank-in-ihrem-webhosting/){.external}
+[Verwaltung einer Datenbank in Ihrem Webhosting](/pages/web/hosting/sql_create_database){.external}
 
-[Erste Schritte mit Web Cloud Databases](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/){.external}
+[Erste Schritte mit Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb){.external}
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

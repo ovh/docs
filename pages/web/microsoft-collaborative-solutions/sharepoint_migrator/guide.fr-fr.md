@@ -1,9 +1,6 @@
 ---
 title: Migrer votre Sharepoint via OVH Sharepoint Migrator
-slug: sharepoint-migration-ovh-sharepoint-migrator
 excerpt: Retrouvez ici la procedure d’utilisation de l’interface OVH Sharepoint Migrator.
-section: SharePoint
-order: 02
 updated: 2018-03-26
 ---
 

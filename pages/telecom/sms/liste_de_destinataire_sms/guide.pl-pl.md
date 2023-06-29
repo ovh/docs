@@ -1,8 +1,6 @@
 ---
 title: 'Lista odbiorców wiadomości SMS'
-slug: lista-odbiorcow-sms
 excerpt: 'Dowiedz się, jak utworzyć listę odbiorców wiadomości SMS i importować ją do Panelu klienta OVHcloud'
-section: 'Zarządzanie ofertą'
 updated: 2022-08-05
 ---
 
@@ -88,12 +86,12 @@ Nazwij plik z listą odbiorców i zaimportuj plik lokalny do Panelu klienta.
 
 ### Etap 3: wysyłka wiadomości SMS do listy odbiorców
 
-Po zaimportowaniu Twojej listy możesz postępować zgodnie z instrukcjami zawartymi w przewodniku [Wysyłanie wiadomości SMS z Panelu klienta](https://docs.ovh.com/pl/sms/wysylanie-wiadomosci-sms-z-panelu-klienta/), aby wysłać wiadomość SMS do odbiorców tej listy.
+Po zaimportowaniu Twojej listy możesz postępować zgodnie z instrukcjami zawartymi w przewodniku [Wysyłanie wiadomości SMS z Panelu klienta](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client), aby wysłać wiadomość SMS do odbiorców tej listy.
 
 ## Sprawdź również
 
-[Wysyłanie wiadomości SMS z Panelu klienta](https://docs.ovh.com/pl/sms/wysylanie-wiadomosci-sms-z-panelu-klienta/)
+[Wysyłanie wiadomości SMS z Panelu klienta](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client)
 
-[Zarządzanie książkami adresowymi SMS](https://docs.ovh.com/pl/sms/zarzadzanie-ksiazkami-adresowymi-sms/)
+[Zarządzanie książkami adresowymi SMS](/pages/telecom/sms/gerer_mes_carnets_dadresses_sms)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>

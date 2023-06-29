@@ -1,9 +1,6 @@
 ---
 title: Configurer son adresse e-mail sur Outlook pour Windows
-slug: configuration-outlook-2016
 excerpt: Découvrez comment configurer votre adresse e-mail MX Plan sur Outlook pour Windows
-section: Configuration sur ordinateur
-order: 01
 updated: 2021-06-05
 ---
 
@@ -30,7 +27,7 @@ Les comptes MX Plan  peuvent être configurés sur différents logiciels de mess
  
 > [!primary]
 >
-> Vous utilisez Outlook 2016 pour Mac ? Consultez notre documentation : [Configurer son adresse e-mail sur Outlook 2016 pour Mac](https://docs.ovh.com/ca/fr/emails/configuration-outlook-2016-mac/){.external}.
+> Vous utilisez Outlook 2016 pour Mac ? Consultez notre documentation : [Configurer son adresse e-mail sur Outlook 2016 pour Mac](/pages/web/emails/how_to_configure_outlook_2016_mac){.external}.
 >
 
 ## En pratique
@@ -64,11 +61,11 @@ Dans le cadre d'une configuration en **POP**, les valeurs sont les suivantes:
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse <https://www.ovh.com/ca/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, n'hésitez pas à consulter notre guide [Consulter son compte Exchange depuis l’interface OWA](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/).
+OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse <https://www.ovh.com/ca/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, n'hésitez pas à consulter notre guide [Consulter son compte Exchange depuis l’interface OWA](/pages/web/emails/email_owa).
 
 ### Récupérer une sauvegarde de votre adresse e-mail
 
-Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consulter le paragraphe « **Exporter depuis Windows** » sur notre guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/ca/fr/emails/migrer-ses-adresses-email-manuellement/#exporter-depuis-windows).
+Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consulter le paragraphe « **Exporter depuis Windows** » sur notre guide [Migrer manuellement votre adresse e-mail](/pages/web/emails/manual_email_migration#exporter-depuis-windows).
 
 
 ### Modifier les paramètres existants
@@ -87,6 +84,6 @@ La fenêtre est divisée en deux parties, **Courrier entrant** et **Courrier sor
 
 ## Aller plus loin
 
-[Configurer son compte Exchange sur Outlook pour Windows](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-configuration-outlook-2016-windows/){.external}
+[Configurer son compte Exchange sur Outlook pour Windows](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

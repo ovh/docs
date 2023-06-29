@@ -1,9 +1,6 @@
 ---
 title: CLI - Use your data in a notebook
-slug: cli/access-object-storage-data
 excerpt: Learn how to access data from your Object Storage in your Notebook
-section: Command Line Interface
-order: 207
 updated: 2023-05-11
 ---
 
@@ -11,11 +8,11 @@ updated: 2023-05-11
 
 ## Objective
 
-This guide shows how to access Object Storage data from your [**notebooks**](https://docs.ovh.com/asia/en/publiccloud/ai/notebooks/definition/).
+This guide shows how to access Object Storage data from your [**notebooks**](/pages/platform/ai/notebook_guide_introduction_definition).
 
 ## Requirements
 
-- a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/asia/en/publiccloud/ai/cli/install-client/))
+- a working `ovhai` CLI ([how to install ovhai CLI](/pages/platform/ai/cli_10_howto_install_cli))
 
 ## Upload data to your Object Storage
 
@@ -42,7 +39,7 @@ This command can be read as "Load the container `my-dataset` from the GRA region
 with `ro` (read-only) permissions".
 
 Wait a few seconds for the notebook to start, then you should see its URL in the output that you can access from your browser.
-You can read the [Getting started](https://docs.ovh.com/asia/en/publiccloud/ai/cli/getting-started-cli/) page to know how to find this URL.
+You can read the [Getting started](/pages/platform/ai/cli_11_howto_run_notebook_cli) page to know how to find this URL.
 
 You should get a page like this, showing your dataset in the file explorer:
 
@@ -66,7 +63,6 @@ Once you have some data that you want to save (a trained neural network in this 
 to the `/workspace/neural-networks` folder.
 
 This folder will be uploaded to your Object Storage when you stop your notebook.
-
 As long as your notebook is in the `STOPPING` state, this means that the upload is still in progress. Once the state
 changes to `STOPPED`, it means all the data were uploaded to your Object Storage.
 
@@ -133,6 +129,7 @@ $ ovhai notebook patch <notebook ID> -v my-dataset@GRA:/workspace/datasets:rw
 > [!primary]
 > 
 > This is the same option as the `run` command above. You can choose to mount the volume in read-only or read & write mode and mount multiple volumes.
+>
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
@@ -140,4 +137,4 @@ If you need training or technical assistance to implement our solutions, contact
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 

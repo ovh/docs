@@ -1,9 +1,6 @@
 ---
 title: 'Uruchomienie strony WWW na hostingu'
-slug: hosting_www_umieszczenie_strony_w_internecie
 description: 'Dowiedz się, jak uruchomić stronę WWW na Twoim hostingu OVHcloud'
-section: 'Pierwsze kroki'
-order: 06
 updated: 2022-07-21
 ---
 
@@ -27,7 +24,7 @@ Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prez
 - Otrzymanie wiadomości e-mail z potwierdzeniem, że Twój hosting został zainstalowany
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/){.external}, pod którą będzie Twoja strona WWW
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
-- Aktualizacja w [płatności](https://docs.ovh.com/pl/billing/zarzadzanie-fakturami-ovhcloud/#pay-bills) i [odnowienie](https://docs.ovh.com/pl/billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/#renewal-management) powiązanych usług (domena i hosting).
+- Aktualizacja w [płatności](/pages/account/billing/invoice_management#pay-bills) i [odnowienie](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) powiązanych usług (domena i hosting).
 
 ## W praktyce
 
@@ -35,18 +32,18 @@ Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prez
 
 Jasno określony cel jest kluczowy dla realizacji Twojego projektu. Do czego zamierzasz wykorzystać Twoją stronę WWW? Jak ją uruchomić online? Hosting OVHcloud daje Ci kilka możliwości.
 
-- **Użycie gotowego modułu OVHcloud**: w tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.). Firma OVHcloud proponuje cztery moduły CMS kompatybilne z jej infrastrukturą, o których możesz dowiedzieć się więcej na stronie [Twoja strona WWW dzięki modułom CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/).
+- **Użycie gotowego modułu OVHcloud**: w tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.). Firma OVHcloud proponuje cztery moduły CMS kompatybilne z jej infrastrukturą, o których możesz dowiedzieć się więcej na stronie [Twoja strona WWW dzięki modułom CMS](/pages/web/hosting/cms_install_1_click_modules).
 
 - **Ręczna instalacja gotowego systemu CMS**: w tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.) i samodzielnie instalujesz na Twoim hostingu OVHcloud.
 
 - **Samodzielna budowa strony WWW**: ta opcja wymaga kompetencji w zakresie programowania, ale daje możliwość stworzenia projektu na miarę.
 
-- **Przeniesienie istniejącej strony WWW do OVHcloud**: operacja ta może mieć krytyczne znaczenie, jeśli niewskazana jest przerwa w dostępie do strony WWW.  W przypadku wyboru tej opcji zachęcamy do zapoznania się z przewodnikiem: [Przeniesienie strony WWW i kont e-mail do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}
+- **Przeniesienie istniejącej strony WWW do OVHcloud**: operacja ta może mieć krytyczne znaczenie, jeśli niewskazana jest przerwa w dostępie do strony WWW.  W przypadku wyboru tej opcji zachęcamy do zapoznania się z przewodnikiem: [Przeniesienie strony WWW i kont e-mail do OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
 
 Po przeanalizowaniu powyższych opcji, masz dwie możliwości:
 
-- **chcesz użyć gotowego modułu OVHcloud**: zapoznaj się z instrukcjami w przewodniku [Automatyczna instalacja strony WWW za pomocą modułu CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/){.external};
+- **chcesz użyć gotowego modułu OVHcloud**: zapoznaj się z instrukcjami w przewodniku [Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web/hosting/cms_install_1_click_modules){.external};
 
 - **nie chcesz użyć gotowego modułu OVHcloud**: przeprowadź ręczną instalację Twojej strony WWW na hostingu OVHcloud. Informacje zawarte w przewodniku pomogą Ci w przeprowadzeniu operacji, nie zastąpią jednak wsparcia wyspecjalizowanego webmastera.
  
@@ -81,7 +78,7 @@ Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu. Je
 
 ![instalacja strony www](images/get-website-online-step1.png){.thumbnail}
 
-Wyświetlą się wówczas dane dotyczące Twojej przestrzeni dyskowej. Dzięki nim będziesz mógł odnaleźć dane potrzebne do zalogowania się do przestrzeni dyskowej. Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem: [Logowanie do przestrzeni dyskowej hostingu](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/){.external}. Jeśli nie posiadasz hasła, zapoznaj się z instrukcjami zawartymi w przewodniku [Zmiana hasła do konta FTP](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/){.external}.
+Wyświetlą się wówczas dane dotyczące Twojej przestrzeni dyskowej. Dzięki nim będziesz mógł odnaleźć dane potrzebne do zalogowania się do przestrzeni dyskowej. Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem: [Logowanie do przestrzeni dyskowej hostingu](/pages/web/hosting/ftp_connection){.external}. Jeśli nie posiadasz hasła, zapoznaj się z instrukcjami zawartymi w przewodniku [Zmiana hasła do konta FTP](/pages/web/hosting/ftp_change_password){.external}.
 
 Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz uzyskać dostęp do przestrzeni dyskowej trzema różnymi metodami:
 
@@ -160,12 +157,12 @@ Przypominamy, że w przypadku trudności podczas uruchamiania Twojej strony na h
 
 ## Sprawdź również
 
-[Przeniesienie strony WWW i kont e-mail do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}
+[Przeniesienie strony WWW i kont e-mail do OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-[Automatyczna instalacja strony WWW za pomocą modułu CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/){.external}
+[Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Logowanie do przestrzeni dyskowej hostingu](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/){.external}
+[Logowanie do przestrzeni dyskowej hostingu](/pages/web/hosting/ftp_connection){.external}
 
-[Zmiana hasła do konta FTP](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/){.external}
+[Zmiana hasła do konta FTP](/pages/web/hosting/ftp_change_password){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

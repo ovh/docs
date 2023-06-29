@@ -1,10 +1,7 @@
 ---
 title: Adding an IP block
-slug: add-ip-block
 excerpt: Find out how to order an IP block on your Private Cloud
 legacy_guide_number: '7766457'
-section: OVHcloud Features
-order: 01
 updated: 2022-04-06
 ---
 
@@ -44,7 +41,7 @@ Several fields will be required to create your IP block:
 
 > [!primary]
 >
-> Please consult our guide ["Using the OVHcloud Network plugin"](../plugin-ovh-network/) to find out which IP addresses are reserved in a block as well as their use.
+> Please consult our guide ["Using the OVHcloud Network plugin"](/pages/cloud/private-cloud/plugin_ovh_network) to find out which IP addresses are reserved in a block as well as their use.
 >
 
 

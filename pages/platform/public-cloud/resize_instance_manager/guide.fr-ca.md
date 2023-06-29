@@ -1,9 +1,6 @@
 ---
 title: Redimensionner une instance
-slug: resize-an-instance-manager
 excerpt: "Découvrez comment redimensionner une instance depuis l'espace client OVHcloud"
-section: "Gestion depuis l'espace client"
-order: 02
 updated: 2022-08-24
 ---
 
@@ -53,7 +50,7 @@ Dans le nouvel onglet, faites défiler la page jusqu'à la section **Modèle** p
 Si votre disque est égal ou inférieur à 50 Go, vous pouvez passer à une `Instance flexible`{.action} si vous le souhaitez.
 
 > [!warning]
-> Attention, dans le cas où vous éditez une instance de type *flex*, il n'est pas possible de basculer vers une instance classique via l'espace client. Pour plus d'informations, veuillez consultez notre guide sur [Basculer d’une instance flex à une instance classique](https://docs.ovh.com/ca/fr/public-cloud/modifier-une-instance-flex/).
+> Attention, dans le cas où vous éditez une instance de type *flex*, il n'est pas possible de basculer vers une instance classique via l'espace client. Pour plus d'informations, veuillez consultez notre guide sur [Basculer d’une instance flex à une instance classique](/pages/platform/public-cloud/revert_a_flex_instance).
 >
 
 Une fois la sélection effectuée, cliquez sur `Modifier le modèle`{.action} pour confirmer votre choix.

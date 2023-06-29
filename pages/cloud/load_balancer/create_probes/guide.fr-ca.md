@@ -1,8 +1,6 @@
 ---
 title: Travailler avec les sondes
-slug: probes
 excerpt: Découvrez les principes généraux et des cas d'usage pour les sondes
-section: Configuration
 updated: 2019-02-12
 ---
 
@@ -14,7 +12,7 @@ L'OVH Load Balancer permet de répartir le trafic entrant sur un front-end vers 
 
 Il peut arriver que l'un des serveurs de votre ferme ne soit plus disponible pour différentes raisons, comme une surcharge, un incident ou une maintenance planifiée. Lorsqu'il rencontre une erreur de connexion, votre OVH Load Balancer va tenter de basculer le trafic sur un autre serveur. La connexion sera ralentie, mais continuera de fonctionner.
 
-Cependant, les causes de certaines indisponibilités sont plus subtiles. Par exemple, si une nouvelle version du code est en cours de déploiement, l'application peut se trouver momentanément dans un état transitoire et retourner des erreurs 500. Dans ce cas précis, une solution serait de marquer les serveurs concernés comme indisponibles dans l'API avant le début de la maintenance, appliquer la configuration et la mise à jour, puis marquer à nouveau le serveur comme disponible. Cette méthode n'est pas idéale mais fonctionne. Pour plus de détail sur le déploiement d'une architecture Blue-Green avec votre OVH Load Balancer, référez-vous à la documentation suivante : <https://docs.ovh.com/ca/fr/load-balancer/blue-green/>.
+Cependant, les causes de certaines indisponibilités sont plus subtiles. Par exemple, si une nouvelle version du code est en cours de déploiement, l'application peut se trouver momentanément dans un état transitoire et retourner des erreurs 500. Dans ce cas précis, une solution serait de marquer les serveurs concernés comme indisponibles dans l'API avant le début de la maintenance, appliquer la configuration et la mise à jour, puis marquer à nouveau le serveur comme disponible. Cette méthode n'est pas idéale mais fonctionne. Pour plus de détail sur le déploiement d'une architecture Blue-Green avec votre OVH Load Balancer, référez-vous à la documentation suivante : </pages/cloud/load_balancer/case_blue_green>.
 
 Les sondes (probes en anglais) sont des tests de santé. Elles interrogent périodiquement chacun de vos serveurs pour s'assurer qu'ils sont opérationnels. Si une erreur est détectée, le serveur est automatiquement désactivé jusqu'à ce que la situation soit rétablie.
 

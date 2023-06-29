@@ -1,10 +1,8 @@
 ---
 title: Managed Bare Metal in einem vRack verwenden
 routes:
-    canonical: 'https://docs.ovh.com/de/private-cloud/hinzufugen_der_dedicated_cloud_zum_vrack_15_und_konfiguration_einer_vm/'
+    canonical: '/pages/cloud/private-cloud/using_private_cloud_in_vrack'
 excerpt: Hier erfahren Sie, wie Sie das vRack mit Ihrem Managed Bare Metal Angebot verwenden
-slug: vrack-essentials
-section: OVHcloud Funktionen
 updated: 2020-11-23
 ---
 
@@ -41,7 +39,7 @@ Im vSphere Client finden Sie die vRack-kompatiblen VLANs im Bereich `Networks`, 
 
 ![VLAN](images/vRackVsphere.png){.thumbnail}
 
-Sie können deren Einstellungen ändern oder sie neu einrichten; verwenden Sie dazu [diese Anleitung](../vlan-erstellung/).
+Sie können deren Einstellungen ändern oder sie neu einrichten; verwenden Sie dazu [diese Anleitung](/pages/cloud/managed-bare-metal/vlan-creation).
 
 Anschließend können Sie die *Distributed Port Groups* den Netzwerkinterfaces Ihrer virtuellen Maschinen zuweisen.
 

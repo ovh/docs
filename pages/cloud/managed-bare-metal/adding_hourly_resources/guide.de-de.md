@@ -1,10 +1,6 @@
 ---
 title: 'Stündliche Ressourcen hinzufügen'
-slug: stuendliche-ressourcen-hinzufuegen
-routes:
-    canonical: 'https://docs.ovh.com/de/private-cloud/stuendliche-ressourcen-hinzufuegen/'
 excerpt: 'Erfahren Sie hier, wie Sie stündlich abgerechnete Ressourcen hinzufügen'
-section: OVHcloud Funktionen
 updated: 2020-12-15
 ---
 
@@ -19,7 +15,7 @@ Bei einer Hosted Managed Bare Metal-Lösung können Sie stündlich abgerechnete 
 ## Voraussetzungen
 
 - Sie verfügen über eine [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/) Infrastruktur.
-- [Dem Benutzer die Berechtigung "Hinzufügen von Ressourcen"](../die-rechte-eines-nutzers-aendern/) für das betreffende Rechenzentrum über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} erteilen.
+- [Dem Benutzer die Berechtigung "Hinzufügen von Ressourcen"](/pages/cloud/managed-bare-metal/change-user-rights) für das betreffende Rechenzentrum über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} erteilen.
 - Sie haben Zugriff zum vSphere-Client.
 
 

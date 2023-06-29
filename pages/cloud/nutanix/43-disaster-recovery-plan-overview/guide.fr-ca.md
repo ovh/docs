@@ -1,9 +1,6 @@
 ---
 title: "Plan de Reprise d'Activité sous Nutanix"
-slug: disaster-recovery-plan-overview
 excerpt: "Aperçu des diverses solutions de Plan de Reprise d'Activité sous Nutanix"
-section: "Plan de Reprise d'Activité"
-order: 01
 updated: 2022-06-29
 ---
 
@@ -45,7 +42,7 @@ Pour cela, vous pouvez utiliser des technologies diverses telles que :
 
 ![Interconnection with IPsec diagram](images/ipsecinterconnection.png){.thumbnail}
 
-Un exemple d'interconnexion IPsec est disponible à cette adresse : [Interconnexion IPsec entre deux sites](https://docs.ovh.com/ca/fr/nutanix/ipsec-interconnection/)
+Un exemple d'interconnexion IPsec est disponible à cette adresse : [Interconnexion IPsec entre deux sites](/pages/cloud/nutanix/44-ipsec-interconnection)
 
 ### Solutions Nutanix pour la mise en place d'un plan de reprise d'activité
 
@@ -54,7 +51,7 @@ Certaines solutions sont disponibles avec **Prism Element** :
 - **Async DR** : la réplication entre deux **storage containers** distants ne se fait qu'une fois par heure. Si un problème survient, il est possible de perdre une heure de données (RPO 1 heure) mais le redémarrage peut se faire manuellement dans la minute.
 - **NearSync DR** : la réplication se fait plusieurs fois par heure. Il est possible d'avoir une synchronisation entre 1 minute et 15 minutes, en fonction de la licence que vous possédez (RPO entre 1 minute et 15 minutes).
 
-Retrouvez le détail de ces solutions dans notre documentation sur la [réplication asynchrone ou *NearSync* au travers de Prism Element](https://docs.ovh.com/ca/fr/nutanix/prism-element-nutanix-replication/)
+Retrouvez le détail de ces solutions dans notre documentation sur la [réplication asynchrone ou *NearSync* au travers de Prism Element](/pages/cloud/nutanix/46-prism-element-replication)
 
 Il est possible d'améliorer la gestion des plans de reprise d'activité via des outils tiers ou via une solution Nutanix nommé **Leap** au travers de **Prism Central**.
 
@@ -63,9 +60,9 @@ Il est possible d'améliorer la gestion des plans de reprise d'activité via des
 
 ## Aller plus loin
 
-[Interconnexion IPsec entre deux sites](https://docs.ovh.com/ca/fr/nutanix/ipsec-interconnection/)
+[Interconnexion IPsec entre deux sites](/pages/cloud/nutanix/44-ipsec-interconnection)
 
-[Réplication asynchrone ou *NearSync* au travers de Prism Element](https://docs.ovh.com/ca/fr/nutanix/prism-element-nutanix-replication/)
+[Réplication asynchrone ou *NearSync* au travers de Prism Element](/pages/cloud/nutanix/46-prism-element-replication)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

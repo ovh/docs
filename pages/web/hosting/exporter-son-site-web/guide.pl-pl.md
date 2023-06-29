@@ -1,9 +1,6 @@
 ---
 title: 'Eksportowanie witryny internetowej'
-slug: eksportowanie-witryna-internetowa
 excerpt: 'Dowiedz się, jak wyeksportować swoją witrynę internetową OVHcloud'
-section: 'Pierwsze kroki'
-order: 04
 updated: 2022-02-03
 ---
 
@@ -37,13 +34,13 @@ Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu. Je
 
 ![export-website](images/export-website-step1-1.png){.thumbnail}
 
-Wyświetlą się wówczas dane dotyczące Twojej przestrzeni dyskowej. Dzięki nim będziesz mógł odnaleźć dane potrzebne do zalogowania się do przestrzeni dyskowej. Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem: [„Logowanie do przestrzeni dyskowej hostingu WWW”](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/){.external}. W razie utraty hasła zapoznaj się z instrukcjami zawartymi w przewodniku[„Zmiana hasła do konta FTP”](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/){.external}.
+Wyświetlą się wówczas dane dotyczące Twojej przestrzeni dyskowej. Dzięki nim będziesz mógł odnaleźć dane potrzebne do zalogowania się do przestrzeni dyskowej. Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem: [„Logowanie do przestrzeni dyskowej hostingu WWW”](/pages/web/hosting/ftp_connection){.external}. W razie utraty hasła zapoznaj się z instrukcjami zawartymi w przewodniku[„Zmiana hasła do konta FTP”](/pages/web/hosting/ftp_change_password){.external}.
 
 Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz pobrać pliki z przestrzeni dyskowej na dwa sposoby:
 
-- **program kompatybilny z protokołem FTP lub SFTP**: zainstaluj na Twoim komputerze odpowiedni program, np. [ FileZilla](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/). Jeśli chcesz uzyskać pomoc w zakresie korzystania z tego programu, skontaktuj się z jego producentem.
+- **program kompatybilny z protokołem FTP lub SFTP**: zainstaluj na Twoim komputerze odpowiedni program, np. [ FileZilla](/pages/web/hosting/ftp_filezilla_user_guide). Jeśli chcesz uzyskać pomoc w zakresie korzystania z tego programu, skontaktuj się z jego producentem.
 
-- **dostęp przez SSH**: wpisz odpowiednie komendy w terminalu, aby połączyć się z przestrzenią dyskową. Do tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz [posiadanie hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}. Aby uzyskać więcej informacji, zapoznaj się z naszą instrukcją [„Korzystanie z dostępu SSH do hostingu WWW”](https://docs.ovh.com/pl/hosting/hosting_www_ssh_na_hostingu/){.external}. 
+- **dostęp przez SSH**: wpisz odpowiednie komendy w terminalu, aby połączyć się z przestrzenią dyskową. Do tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz [posiadanie hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}. Aby uzyskać więcej informacji, zapoznaj się z naszą instrukcją [„Korzystanie z dostępu SSH do hostingu WWW”](/pages/web/hosting/ssh_on_webhosting){.external}. 
 
 #### 1.2 Pobranie plików z przestrzeni dyskowej.
 
@@ -61,10 +58,10 @@ Aby sprawdzić, w którym katalogu powinna zostać opublikowana strona WWW, prze
 >
 
 Z naszego przewodnika dowiesz się, jak utworzyć i pobrać kopię zapasową bazy danych:
-[„Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW”](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/){.external}.
+[„Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW”](/pages/web/hosting/sql_database_export){.external}.
 
 Jeśli korzystasz z **serwera Web Cloud Databases** w Twojej witrynie, zapoznaj się z sekcją poświęconą kopii zapasowej w naszym przewodniku:
-[Tworzenie i eksportowanie bazy danych na serwerze baz danych](https://docs.ovh.com/pl/hosting/kopia-zapasowa-eksportowa-bazy-danych/){.external}.
+[Tworzenie i eksportowanie bazy danych na serwerze baz danych](/pages/web/clouddb/save-export-on-database-server){.external}.
 
 ### Etap 3: pobranie logów z hostingu OVHcloud
 
@@ -94,16 +91,16 @@ Po wybraniu logów danego typu i z konkretnego miesiąca, są one prezentowane d
 
 ## Sprawdź również
 
-[Logowanie do przestrzeni dyskowej hostingu](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/){.external}.
+[Logowanie do przestrzeni dyskowej hostingu](/pages/web/hosting/ftp_connection){.external}.
 
-[Zmiana hasła do konta FTP](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/){.external}.
+[Zmiana hasła do konta FTP](/pages/web/hosting/ftp_change_password){.external}.
 
-[Korzystanie z programu FileZilla na Twoim hostingu](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/){.external}.
+[Korzystanie z programu FileZilla na Twoim hostingu](/pages/web/hosting/ftp_filezilla_user_guide){.external}.
 
-[Korzystanie z dostępu przez SSH do hostingu WWW](https://docs.ovh.com/pl/hosting/hosting_www_ssh_na_hostingu/){.external}. 
+[Korzystanie z dostępu przez SSH do hostingu WWW](/pages/web/hosting/ssh_on_webhosting){.external}. 
 
-[Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/){.external}.
+[Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](/pages/web/hosting/sql_database_export){.external}.
 
-[Pierwsze kroki z usługą Cloud Databases](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/){.external}.
+[Pierwsze kroki z usługą Cloud Databases](/pages/web/clouddb/starting_with_clouddb){.external}.
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

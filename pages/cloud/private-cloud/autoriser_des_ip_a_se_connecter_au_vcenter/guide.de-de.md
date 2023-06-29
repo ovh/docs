@@ -1,8 +1,6 @@
 ---
 title: IP-Autorisierung für vCenter
-slug: verbindung-von-ip-zum-vcenter-erlauben
 excerpt: Erfahren Sie hier, wie Sie den Zugang zu vCenter über die Freigabe von IP-Adressen verwalten
-section: OVHcloud Funktionen
 updated: 2023-01-25
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: "Partager un calendrier depuis l'interface OWA"
-slug: exchange-2016-partager-un-calendrier-via-le-webmail-owa
 excerpt: 'Retrouvez ici la procédure de partage d’un calendrier via Exchange'
-section: "Utilisation d'Outlook Web Application (OWA)"
-order: 03
 updated: 2020-02-19
 ---
 
@@ -89,7 +86,7 @@ Cliquer sur un calendrier de la liste a pour effet de l’ajouter ou de le retir
 
 [Partager un dossier depuis l’interface OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
-[Créer un groupe de contacts](../exchange-utilisation-des-groupes-mailing-list/)
+[Créer un groupe de contacts](/pages/web/microsoft-collaborative-solutions/feature_groups)
 
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.

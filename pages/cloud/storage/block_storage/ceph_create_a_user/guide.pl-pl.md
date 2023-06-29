@@ -1,10 +1,8 @@
 ---
 title: Tworzenie użytkownika (EN)
-slug: ceph/create-a-user
 excerpt: This guide shows you how to create a new user
-section: Cloud Disk Array
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/block-storage/ceph/create-a-user/'
+    canonical: '/pages/cloud/storage/block_storage/ceph_create_a_user'
 updated: 2018-03-26
 ---
 

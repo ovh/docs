@@ -1,11 +1,8 @@
 ---
 title: Migrer une infrastructure vers un nouveau vDC
 routes:
-    canonical: 'https://docs.ovh.com/fr/private-cloud/sddc-migration/'
+    canonical: '/pages/cloud/private-cloud/service-migration'
 excerpt: Découvrez comment déplacer vos VMs d'un vDC existant vers un nouveau vDC dans la même infrastructure VMware
-slug: vdc-migration
-section: Premiers pas
-order: 6
 hidden: true
 updated: 2023-05-04
 ---
@@ -34,7 +31,7 @@ Ce processus comporte deux aspects :
 ## Prérequis
 
 - Une infrastructure PCC (SDDC ou DC)
-- Un [nouveau vRack ou un vRack vide](https://docs.ovh.com/fr/private-cloud/utiliser-le-private-cloud-au-sein-d-un-vrack/) ajouté sur votre infrastructure PCC (SDDC ou DC)
+- Un [nouveau vRack ou un vRack vide](/pages/cloud/private-cloud/using_private_cloud_in_vrack) ajouté sur votre infrastructure PCC (SDDC ou DC)
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Hosted Private Cloud`{.action}.
 - Être connecté à votre interface d'administration vSphere
 
@@ -224,7 +221,7 @@ Cet appel API génère un bon de commande qui doit être validé. Si vous n'avez
 <a name="addhostandds"></a>
 #### Etape 2.2 Ajouter des nouveaux hosts et datastores
 
-Au sein de l'espace client OVHcloud, vous devriez voir votre nouveau vDC dans votre infrastructure. vous pouvez procéder à la commande des nouvelles ressources (sélectionnées à l'étape 1) dans le nouveau vDC de destination en suivant ce [guide d'informations sur la facturation Private Cloud](https://docs.ovh.com/fr/private-cloud/facturation-private-cloud/#ressources-mensuelles).
+Au sein de l'espace client OVHcloud, vous devriez voir votre nouveau vDC dans votre infrastructure. vous pouvez procéder à la commande des nouvelles ressources (sélectionnées à l'étape 1) dans le nouveau vDC de destination en suivant ce [guide d'informations sur la facturation Private Cloud](/pages/cloud/private-cloud/facturation_private_cloud#ressources-mensuelles).
 
 <a name="converttoglobal"></a>
 #### Etape 2.3 Convertir une datastore comme global
@@ -261,7 +258,7 @@ Si les machines virtuelles sont protégées par le chiffrement, elles restent pr
 <a name="access"></a>
 ##### Etape 3.1.3 Restrictions d'accès
 
-Pour vous connecter à votre infrastructure VMware, vous pouvez choisir de bloquer l'accès au vSphere par défaut. Pour cela, consultez notre guide sur la [politique d'accès au vCenter](../changer-la-politique-d-acces-au-vcenter/).
+Pour vous connecter à votre infrastructure VMware, vous pouvez choisir de bloquer l'accès au vSphere par défaut. Pour cela, consultez notre guide sur la [politique d'accès au vCenter](/fr/private-cloud/changer-la-politique-d-acces-au-vcenter/).
 
 Suite au changement de politique d'accès, si celle-ci est passée en « restreinte », le nouveau vDC héritera de la politique d'accès utilisée par le vDC d'origine.
 
@@ -270,7 +267,7 @@ Suite au changement de politique d'accès, si celle-ci est passée en « restrei
 
 Dans le cycle de vie du vDC d'origine, une liste d'utilisateurs peut avoir été créée pour des besoins métiers, ou des besoins organisationnels. Ces utilisateurs seront également présents sur le nouveau vDC mais n'auront aucun droit sur ce nouveau vDC. Vous devrez donc attribuer les droits appropriés aux utilisateurs, en fonction de la configuration du vDC de destination.
 
-Consultez à cet effet nos guides pour [changer les droits d'un utilisateur](../changer-les-droits-d-un-utilisateur/), [modifier le mot de passe d'un utilisateur](../changement-du-mot-de-passe-utilisateur/) et [associer un e-mail à un utilisateur](../associer-email-a-un-utilisateur/).
+Consultez à cet effet nos guides pour [changer les droits d'un utilisateur](/pages/cloud/private-cloud/change_users_rights), [modifier le mot de passe d'un utilisateur](/pages/cloud/private-cloud/changement_du_mot_de_passe_utilisateur) et [associer un e-mail à un utilisateur](/pages/cloud/private-cloud/vsphere_edit_user).
 
 <a name="activateveeamzerto"></a>
 #### Etape 3.3 Activer les options Veeam Managed Backup & Zerto Disaster Recovery
@@ -289,7 +286,7 @@ Vous devez activer la/les option(s) concernée(s) sur le nouveau vDC.
 > Des VMnetworks situés dans la même région ne pourront pas être inter-connectés dans un vRack.
 >
 
-Par défaut, dans le cadre d'une migration, le nouveau vDC sera lié au même vRack que le vDC d'origine. Consultez notre guide sur [l'utilisation de Hosted Private Cloud au sein d'un vRack](../utiliser-le-private-cloud-au-sein-d-un-vrack/).
+Par défaut, dans le cadre d'une migration, le nouveau vDC sera lié au même vRack que le vDC d'origine. Consultez notre guide sur [l'utilisation de Hosted Private Cloud au sein d'un vRack](/pages/cloud/private-cloud/using_private_cloud_in_vrack).
 
 <a name="publicnetwork"></a>
 ##### Etape 3.4.2 Réseau publique
@@ -302,7 +299,7 @@ Les adresses IP publiques attachées au vDC d'origine seront automatiquement dis
 <a name="ha"></a>
 #### Etape 4.1 Reconfigurer VMware High Availability (HA)
 
-L'installation d'un nouveau vDC de destination implique de refaire la configuration du VMware High Availability (HA), notamment l'ordre et la priorité de boot. Consultez [notre guide sur sa configuration](../vmware-ha-high-availability/).
+L'installation d'un nouveau vDC de destination implique de refaire la configuration du VMware High Availability (HA), notamment l'ordre et la priorité de boot. Consultez [notre guide sur sa configuration](/pages/cloud/private-cloud/vmware_ha_high_availability).
 
 Voici une liste d'éléments à prendre en compte :
 
@@ -317,7 +314,7 @@ Voici une liste d'éléments à prendre en compte :
 <a name="drs"></a>
 #### Etape 4.2 Reconfigurer VMware Distributed Resource Scheduler (DRS)
 
-L'installation d'un nouveau vDC de destination implique la reconfiguration de la fonction VMware DRS (Distributed Resource Scheduler), en particulier des règles d'affinité ou d'anti-affinité pour les groupes d'hôtes et de VMs. Consultez notre guide sur la [configuration de VMware DRS](../vmware-drs-distributed-ressource-scheduler-new/).
+L'installation d'un nouveau vDC de destination implique la reconfiguration de la fonction VMware DRS (Distributed Resource Scheduler), en particulier des règles d'affinité ou d'anti-affinité pour les groupes d'hôtes et de VMs. Consultez notre guide sur la [configuration de VMware DRS](/pages/cloud/private-cloud/vmware_drs_distributed_ressource_scheduler_new).
 
 Voici une liste des éléments à prendre en compte :
 
@@ -358,11 +355,11 @@ Voici une liste des éléments à prendre en compte:
 <a name="vsan"></a>
 #### Etape 4.5 Activer vSAN (si pertinent)
 
-Si vSAN était activé sur votre vDC d'origine, il sera nécessaire de l'activer à nouveau sur le vDC de destination. Consultez notre guide pour [mettre en œuvre l'hyperconvergence VMware avec vSAN](../vmware-vsan/).
+Si vSAN était activé sur votre vDC d'origine, il sera nécessaire de l'activer à nouveau sur le vDC de destination. Consultez notre guide pour [mettre en œuvre l'hyperconvergence VMware avec vSAN](/pages/cloud/private-cloud/vmware_vsan).
 <a name="vspherenetwork"></a>
 #### Etape 4.6 Recréer votre configuration réseau vSphere
 
-L'installation d'un nouveau vDC de destination implique la recréation des groupes de ports virtuels de vRack sur le vDC de destination pour garantir la cohérence du réseau de VMs. Si des VLAN vRack sont en cours d'utilisation sur le vRack du vDC d'origine, ils peuvent être utilisés pour étendre le domaine L2 au vDC de destination afin de permettre un plan de migration plus échelonné. Pour plus d'informations, consultez notre guide sur l'[Utilisation du cloud privé dans un vRack](../utiliser-le-private-cloud-au-sein-d-un-vrack/).
+L'installation d'un nouveau vDC de destination implique la recréation des groupes de ports virtuels de vRack sur le vDC de destination pour garantir la cohérence du réseau de VMs. Si des VLAN vRack sont en cours d'utilisation sur le vRack du vDC d'origine, ils peuvent être utilisés pour étendre le domaine L2 au vDC de destination afin de permettre un plan de migration plus échelonné. Pour plus d'informations, consultez notre guide sur l'[Utilisation du cloud privé dans un vRack](/pages/cloud/private-cloud/using_private_cloud_in_vrack).
 
 Voici une liste des éléments à prendre en compte:
 
@@ -371,7 +368,7 @@ Voici une liste des éléments à prendre en compte:
 - Paramètres de Teaming et de Failover
 - Allocation des ressources réseau du client
 
-Pour plus d'informations, consultez le guide OVHcloud sur [comment créer un V(x)LAN dans un vRack](../creation-vlan-vxlan/#vlan-vrack) et la documentation de VMware sur [comment modifier les paramètres des groupes de ports distribués](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html){.external}.
+Pour plus d'informations, consultez le guide OVHcloud sur [comment créer un V(x)LAN dans un vRack](/pages/cloud/private-cloud/creation_vlan#vlan-vrack) et la documentation de VMware sur [comment modifier les paramètres des groupes de ports distribués](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html){.external}.
 
 **Conseils d'automatisation :** L'applet de commande Powercli « Export-VDPortGroup » peut récupérer des informations de Portgroups virtuels distribués qui peuvent ensuite être importées dans le Distributed Switch de destination à l'aide de l'applet de commande « New-VDPortgroup -BackupPath ».
 
@@ -566,7 +563,7 @@ Ensuite, Zerto Replication fonctionnera sur les deux datacentres :
 - l'ancien est toujours en cours d'exécution et protège votre charge de travail
 - le nouveau est prêt à accueillir votre charge de travail
 
-L'étape suivante dépend de la configuration actuelle par [groupe de protection virtuelle](../zerto-virtual-replication-vmware-vsphere-drp/) :
+L'étape suivante dépend de la configuration actuelle par [groupe de protection virtuelle](/pages/cloud/private-cloud/zerto_virtual_replication_as_a_service) :
 
 - source de la réplication
 - destination de la réplication

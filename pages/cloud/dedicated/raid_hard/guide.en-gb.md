@@ -1,8 +1,6 @@
 ---
 title: 'Managing Hardware RAID'
-slug: raid-hard
 excerpt: 'This guide will show you how to verify the state of your RAID and the health of your hard drives'
-section: 'RAID and disks'
 updated: 2019-05-10
 ---
 

@@ -1,11 +1,8 @@
 ---
 title: Modifying virtual machine resources
-slug: modify_the_hardware_configuration_of_your_virtual_machine
 routes:
-    canonical: 'https://docs.ovh.com/asia/en/private-cloud/modify_the_hardware_configuration_of_your_virtual_machine/'
+    canonical: '/pages/cloud/private-cloud/modify_hardware_configuration_of_vm'
 excerpt: Find out how to scale your virtual machine
-section: Virtual machine management
-order: 3
 updated: 2020-11-18
 ---
 

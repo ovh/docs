@@ -1,9 +1,6 @@
 ---
 title: 'Configurar uma conta E-mail Pro num iPhone ou num iPad'
-slug: configuracao-iphone
 excerpt: "Aprenda a configurar uma conta E-mail Pro num iPhone ou num iPad através da aplicação Mail"
-section: 'Configuração do software cliente de e-mail'
-order: 1
 updated: 2021-05-21
 ---
 
@@ -76,15 +73,15 @@ A OVHcloud também disponibiliza uma aplicação web com [funcionalidades de col
 
 > [!primary]
 >
-> Em caso de dificuldade de receção ou de envio de e-mails, consulte a nossa [FAQ sobre os serviços de e-mail da OVHcloud](https://docs.ovh.com/pt/emails/faq-emails/).
+> Em caso de dificuldade de receção ou de envio de e-mails, consulte a nossa [FAQ sobre os serviços de e-mail da OVHcloud](/pages/web/emails/faq-emails).
 >
 
 ## Quer saber mais?
 
-[Configurar o seu endereço de e-mail no serviço MX Plan ou num serviço de hosting web num iPhone ou num iPad](https://docs.ovh.com/pt/emails/mail_partilhado_guia_configuracao_iphone_ios_91/){.external}.
+[Configurar o seu endereço de e-mail no serviço MX Plan ou num serviço de hosting web num iPhone ou num iPad](/pages/web/emails/how_to_configure_ios){.external}.
 
-[Configurar uma conta Exchange num iPhone ou num iPad](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_20132016_configuracao_automatica_em_ios_iphone_-_ipad/){.external}.
+[Configurar uma conta Exchange num iPhone ou num iPad](/pages/web/microsoft-collaborative-solutions/how_to_configure_ios){.external}.
 
-[FAQ: e-mails](https://docs.ovh.com/pt/emails/faq-emails/)
+[FAQ: e-mails](/pages/web/emails/faq-emails)
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

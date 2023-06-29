@@ -1,11 +1,8 @@
 ---
 title: Object Storage - Kompatybilność S3 (EN)
-slug: s3/s3-compliancy
 excerpt: Discover the compliancy of OVHcloud S3 API versus the global AWS S3 API
-section: General information
-order: 010
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/s3/s3-compliancy/'
+    canonical: '/pages/cloud/storage/object_storage/s3_s3_compliancy'
 updated: 2021-12-08
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Configurer le firewall distribué NSX-v
-slug: configurer-le-firewall-distribue-nsx
 legacy_guide_number: '7766505'
-section: NSX-v
-order: 08
 updated: 2021-12-01
 ---
 
@@ -11,7 +8,7 @@ updated: 2021-12-01
 
 ## Objectif
 
-Comme le [pare-feu NSX Edge](https://docs.ovh.com/fr/private-cloud/configurer-le-nsx-edge-firewall/), le pare-feu distribué  accepte ou refuse le trafic réseau en fonction de règles appliquées à des objets ou groupes d’objets.
+Comme le [pare-feu NSX Edge](/pages/cloud/private-cloud/nsx_configurer_le_edge_firewall), le pare-feu distribué  accepte ou refuse le trafic réseau en fonction de règles appliquées à des objets ou groupes d’objets.
 Le pare-feu distribué optimise le trafic et la consommation de bande passante en appliquant des règles aux paquets avant qu'ils ne soient envoyés au pare-feu Edge.
 
 **Ce guide explique comment créer des règles.**

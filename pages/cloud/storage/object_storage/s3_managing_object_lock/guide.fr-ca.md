@@ -1,9 +1,6 @@
 ---
 title: "Object Storage - Gestion de l'immuabilité des objets avec Object Lock (WORM)"
-slug: s3/managing-object-lock
 excerpt:
-section: Tutoriels
-order: 110
 updated: 2022-06-02
 ---
 

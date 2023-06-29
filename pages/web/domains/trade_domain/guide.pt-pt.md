@@ -1,8 +1,6 @@
 ---
 title: 'Alterar o titular de um nome de domínio'
-slug: alteracao-titular-dominio
 excerpt: 'Neste guia, encontrará várias informações sobre a alteração de titular de um nome de domínio.'
-section: 'Alteração de titular'
 updated: 2023-06-19
 ---
 
@@ -91,7 +89,7 @@ Se o endereço de e-mail não for alterado devido à mudança de proprietário, 
 
 > [!warning]
 >
-> Se o proprietário do nome de domínio tiver sido modificado, o nome de domínio não poderá ser [transferido para outro agente de registo](../transferencia_de_saida_de_um_nome_de_dominio_generico_ou_geografico/) durante um período de 60 dias.
+> Se o proprietário do nome de domínio tiver sido modificado, o nome de domínio não poderá ser [transferido para outro agente de registo](/pages/web/domains/transfer_outgoing_domain) durante um período de 60 dias.
 
 ### Atualização das informações do proprietário <a name="updateownerinformation"></a>
 

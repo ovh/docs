@@ -1,7 +1,5 @@
 ---
 title: Debugging
-slug: debug
-section: Nodejs
 updated: 2022-06-02
 ---
 
@@ -36,7 +34,7 @@ webpaas branch debug-branch
 >> ``` false     
 >> 
 >> 
->> Access your app container via [SSH](../../development-ssh/):
+>> Access your app container via [SSH](/pages/web/web-paas/development-ssh):
 >> 
 >> ```bash
 >> webpaas ssh

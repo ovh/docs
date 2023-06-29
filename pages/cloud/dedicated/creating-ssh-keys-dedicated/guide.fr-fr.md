@@ -1,9 +1,6 @@
 ---
 title: 'Créer une clé SSH'
-slug: creer-cle-ssh-serveur-dediees
 excerpt: 'Découvrez comment créer une clé SSH pour une connexion sécurisée à votre serveur dédié'
-section: 'Premiers pas'
-order: 3
 updated: 2022-03-31
 ---
 
@@ -171,7 +168,7 @@ Si vous avez copié l'intégralité de la chaine, l'identifiant qui suit la clé
 
 > [!primary]
 >
-> Toute clé enregistrée dans la section « Dédié » sera également utilisable pour vos services VPS. En ce qui concerne les clés SSH pour les services Public Cloud, veuillez vous référer à [ce guide](../../public-cloud/premiers-pas-instance-public-cloud).
+> Toute clé enregistrée dans la section « Dédié » sera également utilisable pour vos services VPS. En ce qui concerne les clés SSH pour les services Public Cloud, veuillez vous référer à [ce guide](/pages/platform/public-cloud/public-cloud-first-steps).
 >
 
 ### Définir une clé SSH par défaut (uniquement pour la section « Dédiés ») <a name="cpsshkey"></a>

@@ -1,10 +1,7 @@
 ---
 title: 'Transferir la gestión de sus cuentas de correo a otra persona'
 legacy_guide_number: 1933
-slug: delegar-gestion-correo
 excerpt: 'Cómo delegar la gestión de las cuentas de correo de su solución MX Plan'
-section: 'Gestión de la cuenta de correo'
-order: 05
 updated: 2021-10-08
 ---
 
@@ -37,7 +34,7 @@ La delegación ofrece al usuario de una cuenta de correo la posibilidad de gesti
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
 |![Correo electrónico](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> El nombre del producto aparece en el recuadro «Suscripción», en el epígrafe «Producto».|![Correo electrónico](images/mxplan-starter-new-step1.png){.thumbnail}<br>El nombre del producto aparece en el recuadro Resumen, en el epígrafe Referencia del servidor.|
-|Continúe leyendo esta guía en el apartado "[Procedimiento](#oldmxplan)".|Consulte nuestra guía "[Consultar su cuenta Exchange desde la interfaz OWA](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2016_guia_de_uso_de_outlook_web_app/#cambiar-la-contrasena)"|
+|Continúe leyendo esta guía en el apartado "[Procedimiento](#oldmxplan)".|Consulte nuestra guía "[Consultar su cuenta Exchange desde la interfaz OWA](/pages/web/emails/email_owa#cambiar-la-contrasena)"|
 
 ## Procedimiento <a name="oldmxplan"></a>
 
@@ -84,6 +81,6 @@ Es posible añadir varias claves de OVHcloud para gestionar cada dirección de c
 
 ## Más información
 
-[Primeros pasos con la solución MX Plan](https://docs.ovh.com/es/emails/primeros-pasos-correo-compartido/)
+[Primeros pasos con la solución MX Plan](/pages/web/emails/email_generalities)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

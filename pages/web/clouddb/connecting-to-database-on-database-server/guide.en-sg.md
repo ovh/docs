@@ -1,9 +1,6 @@
 ---
 title: 'Connecting to a database on your database server'
-slug: connecting-to-database-on-database-server
 excerpt: 'Find out how to log in to your database'
-section: Configuration
-order: 03
 updated: 2023-06-22
 ---
 
@@ -67,7 +64,7 @@ If the connection succeeds, the next page of phpMyAdmin will appear.
 
 > [!warning]
 >
-> If you use a `Web Cloud Databases` or `Private SQL` service, do not forget to authorise your IP address using the guide on [Configuring your database server](https://docs.ovh.com/sg/en/clouddb/configure-optimise-database-server/).
+> If you use a `Web Cloud Databases` or `Private SQL` service, do not forget to authorise your IP address using the guide on [Configuring your database server](/pages/web/clouddb/configure-database-server).
 >
 
 To connect to your database, please ensure that you have the following information:

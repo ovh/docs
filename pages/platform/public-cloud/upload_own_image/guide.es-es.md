@@ -1,9 +1,6 @@
 ---
 title: Importe su propia imagen
-slug: importar-su-propia-imagen
 excerpt: Cómo importar su propia imagen en Public Cloud
-section: OpenStack
-order: 10
 updated: 2020-10-27
 ---
 
@@ -21,16 +18,16 @@ OVHcloud ofrece a los clientes de Public Cloud imágenes listas para usar, pero 
 
 ## Requisitos
 
-- una [instancia de Public Cloud](../crear_una_instancia_desde_el_area_de_cliente_de_ovh/) desde el área de cliente de OVHcloud
+- una [instancia de Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#3-crear-una-instancia/) desde el área de cliente de OVHcloud
 - su propia imagen RAW/QCOW2 (formatos recomendados) 
-- un usuario de [OpenStack](../crear-y-eliminar-un-usuario-de-openstack/) 
-- un entorno [OpenStack CLI ready](../prepare_the_environment_for_using_the_openstack_api/) (si utiliza CLI)
+- un usuario de [OpenStack](/pages/platform/public-cloud/create_and_delete_a_user) 
+- un entorno [OpenStack CLI ready](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) (si utiliza CLI)
 
 ## Procedimiento
 
 ### Antes de empezar
 
-Es recomendable utilizar imágenes cloud compatibles proporcionadas por el distribuidor o crear su propia imagen utilizando soluciones como [Packer OpenStack builder](https://docs.ovh.com/gb/en/public-cloud/packer-openstack-builder/).
+Es recomendable utilizar imágenes cloud compatibles proporcionadas por el distribuidor o crear su propia imagen utilizando soluciones como [Packer OpenStack builder](/pages/platform/public-cloud/create_image_from_existing_image_with_packer).
 
 Las imágenes cloud compatibles están disponibles aquí:
 

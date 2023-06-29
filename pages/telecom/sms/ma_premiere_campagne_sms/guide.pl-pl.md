@@ -1,8 +1,6 @@
 ---
 title: 'Moja pierwsza kampania SMS'
 excerpt: 'Dowiedz się, jak przeprowadzić pierwszą kampanię wysyłki wiadomości SMS'
-slug: moja-pierwsza-kampania-sms
-section: Pierwsze kroki
 updated: 2022-08-05
 ---
 
@@ -41,7 +39,7 @@ Aby dodać listę kontaktów, kliknij zakładkę `Kontakty`{.action}, a następn
 
 ![firstsms](images/firstsms03.png){.thumbnail}
 
-Z następującego przewodnika dowiesz się, [jak utworzyć listę odbiorców wiadomości SMS](../lista-odbiorcow-sms/).
+Z następującego przewodnika dowiesz się, [jak utworzyć listę odbiorców wiadomości SMS](/pages/telecom/sms/liste_de_destinataire_sms).
 
 #### Dodanie książki adresowej
 
@@ -51,7 +49,7 @@ Aby dodać książkę adresową, kliknij zakładkę `Kontakty`{.action}, a nast�
 
 ![firstsms](images/firstsms04.png){.thumbnail}
 
-Zapoznaj się z przewodnikiem [Zarządzanie książkami adresowymi SMS](../zarzadzanie-ksiazkami-adresowymi-sms/), aby dowiedzieć się więcej.
+Zapoznaj się z przewodnikiem [Zarządzanie książkami adresowymi SMS](/pages/telecom/sms/gerer_mes_carnets_dadresses_sms), aby dowiedzieć się więcej.
 
 ### Etap 2: utworzyć nadawcę
 
@@ -59,7 +57,7 @@ Domyślnie wysyłka wiadomości SMS z konta OVHcloud we Francji odbywa się ze s
 
 ![firstsms](images/firstsms05.png){.thumbnail}
 
-W tym celu zapoznaj się z sekcją poświęconą wyborowi nadawcy wiadomości SMS w przewodniku [„Wysyłanie wiadomości SMS z Panelu klienta”](../wysylanie-wiadomosci-sms-z-panelu-klienta/#etap-3-wybor-nadawcy-wiadomosci-sms).
+W tym celu zapoznaj się z sekcją poświęconą wyborowi nadawcy wiadomości SMS w przewodniku [„Wysyłanie wiadomości SMS z Panelu klienta”](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#etap-3-wybor-nadawcy-wiadomosci-sms).
 
 ### Etap 3: wysłanie kampanii SMS
 
@@ -67,7 +65,7 @@ Zakładka `Wiadomość i kampania`{.action} umożliwia dostęp do opcji wysyłki
 
 ![firstsms](images/firstsms02.png){.thumbnail}
 
-Aby wysłać pojedynczą wiadomość SMS z Panelu klienta, zapoznaj się [z przewodnikiem dotyczącym tej metody](../wysylanie-wiadomosci-sms-z-panelu-klienta/).
+Aby wysłać pojedynczą wiadomość SMS z Panelu klienta, zapoznaj się [z przewodnikiem dotyczącym tej metody](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client).
 
 Aby wysłać kampanię SMS, kliknij `Zarządzanie kampaniami`{.action}, a następnie `Tworzenie kampanii`{.action}.
 
@@ -87,7 +85,7 @@ Teraz kliknij przycisk `Wyślij`{.action}, aby Twoja kampania została wysłana 
 
 ## Sprawdź również
 
-Zapoznaj się z [naszym przewodnikiem dotyczącym zarządzania historią wiadomości SMS](../zarzadzanie-historia-wiadomosci-sms/).
+Zapoznaj się z [naszym przewodnikiem dotyczącym zarządzania historią wiadomości SMS](/pages/telecom/sms/gerer_l_historique_des_sms).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
 

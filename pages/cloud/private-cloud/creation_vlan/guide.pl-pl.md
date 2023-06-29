@@ -1,11 +1,8 @@
 ---
 title: Tworzenie sieci VLAN (EN)
-slug: creation-vlan
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/creation-vlan/'
+    canonical: '/pages/cloud/private-cloud/creation_vlan'
 excerpt: Find out how to create VLANs in your vRack
-section: Funkcjonalności OVHcloud
-order: 02
 updated: 2022-02-07
 ---
 

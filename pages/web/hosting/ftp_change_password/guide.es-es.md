@@ -1,9 +1,6 @@
 ---
 title: "Cambiar la contraseña de un usuario FTP"
-slug: cambiar-contrasena-usuario-ftp
 excerpt: "Descubra cómo cambiar la contraseña de un usuario FTP en un alojamiento de OVHcloud"
-section: FTP y SSH
-order: 03
 updated: 2023-05-29
 ---
 

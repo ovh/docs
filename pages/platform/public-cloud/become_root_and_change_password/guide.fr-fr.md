@@ -1,9 +1,6 @@
 ---
 title: 'Passer root et définir un mot de passe'
-slug: passer-root-et-definir-un-mot-de-passe
 excerpt: "Apprenez à vous servir de l'utilisateur root et à créer un mot de passe pour celui-ci"
-section: 'Premiers pas'
-order: 08
 updated: 2022-03-24
 ---
 
@@ -17,14 +14,14 @@ Pour exécuter certaines fonctions administratives sur votre serveur (l’instal
 
 ## Prérequis
 
-* [Avoir créé une instance Public Cloud dans votre compte](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-3-creer-une-instance)
+* [Avoir créé une instance Public Cloud dans votre compte](/pages/platform/public-cloud/public-cloud-first-steps#etape-3-creer-une-instance)
 * Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
 
 ## En pratique
 
 ### Définir le mot de passe root <a name="settingtherootpassword"></a>
 
-Pour commencer, établissez une [connexion SSH](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-4-connexion-a-votre-instance) à votre serveur avec votre utilisateur par défaut.
+Pour commencer, établissez une [connexion SSH](/pages/platform/public-cloud/public-cloud-first-steps#etape-4-connexion-a-votre-instance) à votre serveur avec votre utilisateur par défaut.
 
 Utilisez la commande ci-dessous pour définir un mot de passe pour l’utilisateur root (pour des raisons de sécurité, celui-ci ne sera pas affiché lors de la saisie) :
 

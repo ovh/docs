@@ -1,9 +1,6 @@
 ---
 title: 'Configuring your Email Pro solution'
-slug: first-configuration-email-pro
 excerpt: 'Find out how to configure your Email Pro solution'
-section: 'Getting started'
-order: 1
 updated: 2020-04-09
 ---
 
@@ -86,7 +83,7 @@ You can use the `Diagnosis`{.action} column to modify the domain name’s DNS co
 
 - **Automatic configuration, when adding an OVHcloud domain name:** it may take a few hours after the modification before it is correctly displayed in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
-- **Manual configuration, when adding a non-OVHcloud domain name:** click on the red box to verify the changes you need to make. <br>_For a CNAME record_, please refer to our guide on [Creating a CNAME record to add an associated domain](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_20132016_how_to_add_a_cname_record/). <br>_For an MX record_, please refer to our guide [Add an MX record to your domain name’s configuration](https://docs.ovh.com/ie/en/domains/web_hosting_configuring_mx_with_the_ovh_dns_zone/). <br>_For an SRV record_, you can edit your DNS zone using the information provided when you click on the red "SRV" box. We recommend to consult [our guide](https://docs.ovh.com/ie/en/domains/web_hosting_how_to_edit_my_dns_zone) regarding these modifications. If you have just made the changes, they may take a few hours to be correctly displayed in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+- **Manual configuration, when adding a non-OVHcloud domain name:** click on the red box to verify the changes you need to make. <br>_For a CNAME record_, please refer to our guide on [Creating a CNAME record to add an associated domain](/pages/web/microsoft-collaborative-solutions/exchange_dns_cname). <br>_For an MX record_, please refer to our guide [Add an MX record to your domain name’s configuration](/pages/web/domains/dns_zone_mx). <br>_For an SRV record_, you can edit your DNS zone using the information provided when you click on the red "SRV" box. We recommend to consult [our guide](/pages/web/domains/dns_zone_edit) regarding these modifications. If you have just made the changes, they may take a few hours to be correctly displayed in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
 ![emailpro](images/first_config_email_pro_configure_domain_update.png){.thumbnail}
 
@@ -121,7 +118,7 @@ Once the information is complete, click on the `Next`{.action} button, check the
 
 Once you have configured your accounts, you can start using them straight away. To do this, OVHcloud offers an online application (a *web app*), available [here](https://www.ovh.ie/mail/), and you will need to enter your email credentials.
 
-If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), you can refer to our [configuration guides](https://docs.ovh.com/ie/en/emails-pro/). If you simply need the information required to configure your Email Pro account, the settings to use are listed below:
+If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), you can refer to our [configuration guides](/products/web-cloud-email-collaborative-solutions-email-pro). If you simply need the information required to configure your Email Pro account, the settings to use are listed below:
 
 |Server type|Server name|Security type|Port|
 |---|---|---|---|
@@ -137,16 +134,16 @@ If you would like to configure your email address on an email client or device (
 
 ## Go further
 
-[Using the Outlook Web App with an Exchange account](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/)
+[Using the Outlook Web App with an Exchange account](/pages/web/emails/email_owa)
 
-[Creating inbox rules in OWA](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/creating-inbox-rules-in-owa/)
+[Creating inbox rules in OWA]( /pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
 
-[Adding an alias to your email account](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/email-alias/)
+[Adding an alias to your email account](/pages/web/emails/feature_redirections)
 
-[Creating automatic replies in OWA](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa/)
+[Creating automatic replies in OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies)
 
-[Managing the billing for your Email Pro accounts](https://docs.ovh.com/ie/en/emails-pro/emailpro-billing/)
+[Managing the billing for your Email Pro accounts](/pages/web/emails-pro/manage_billing_emailpro)
 
-[Managing the security policy of an email service](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/manage-security-policy-password/)
+[Managing the security policy of an email service](/pages/web/emails/security-policy)
 
 Join our community of users on <https://community.ovh.com/en/>.

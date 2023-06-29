@@ -1,10 +1,7 @@
 ---
 title: 'Transfer instance backup from one datacentre to another'
 excerpt: 'This guide will show you how to transfer an instance backup from one datacentre to another while preserving the configuration and state of the instance'
-slug: transfer_instance_backup_from_one_datacentre_to_another
 legacy_guide_number: g1853
-section: OpenStack
-order: 7
 updated: 2019-03-29
 ---
 
@@ -20,7 +17,7 @@ A situation may arise where you need to move your [Public Cloud Instance](https:
 
 Before following these steps, it's recommended that you first complete this guide:
 
-* [Prepare the environment to use the OpenStack API](https://docs.ovh.com/ie/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/){.external}
+* [Prepare the environment to use the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api){.external}
 
 You will also need the following:
 

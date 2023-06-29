@@ -1,9 +1,6 @@
 ---
 title: Pierwsze kroki z hostingiem Cloud Web
-slug: pierwsze-kroki-z-cloud-web
 excerpt: Dowiedz się, jak rozpocząć korzystanie z hostingu Cloud Web
-section: Pierwsze kroki
-order: 01
 updated: 2022-05-04
 ---
 
@@ -112,7 +109,7 @@ Zalecamy szczególną ostrożność podczas wypełniania następujących danych:
 > Jeśli dodałeś domenę uznawaną jako zewnętrzną, podczas konfiguracji DNS skonfiguruj również pole TXT o nazwie **ovhcontrol**. Dzięki temu OVHcloud ma pewność, że dodanie domeny nastąpiło zgodnie z Twoją wolą. Czynność ta jest zatem niezbędna i jeśli nie zostanie przeprowadzona, dodanie domeny zostanie anulowane. 
 >
 
-Powtórz tę operację, jeśli chcesz dodać kilka domen do Twojego hostingu Cloud Web. Aby uzyskać więcej informacji o dodawaniu domeny w opcji MultiSite, zapoznaj się z naszą dokumentacją: [Instalacja kilku stron WWW na jednym hostingu](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/){.external}.
+Powtórz tę operację, jeśli chcesz dodać kilka domen do Twojego hostingu Cloud Web. Aby uzyskać więcej informacji o dodawaniu domeny w opcji MultiSite, zapoznaj się z naszą dokumentacją: [Instalacja kilku stron WWW na jednym hostingu](/pages/web/hosting/multisites_configure_multisite){.external}.
 
 ![cloud web hosting ssd](images/cloud-web-first-steps-step3.png){.thumbnail}
 
@@ -126,7 +123,7 @@ W tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personaliz
 
 Jeśli decydujesz się na skorzystanie z modułów CMS OVHcloud, kliknij zakładkę `Moduły CMS`{.action}, a następnie `Dodaj moduł`{.action}.  Będziesz mógł wówczas rozpocząć instalację w trybie „podstawowym” (bez personalizacji) lub „zaawansowanym” (z możliwością personalizacji niektórych elementów).
 
-Jeśli chcesz uzyskać więcej informacji o modułach CMS OVHcloud, zapoznaj się z dokumentacją:  [Automatyczna instalacja strony WWW za pomocą modułu CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/){.external}.
+Jeśli chcesz uzyskać więcej informacji o modułach CMS OVHcloud, zapoznaj się z dokumentacją:  [Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web/hosting/cms_install_1_click_modules){.external}.
 
 > [!primary]
 >
@@ -141,13 +138,13 @@ W przypadku nowej strony WWW lub migracji strony istniejącej, ręczna instalacj
 
 Jeśli decydujesz się na ręczną instalację, powinieneś posiadać wszystkie pliki strony WWW lub aplikacji, które zamierzasz zainstalować, jak również (o ile jest to niezbędne dla jej poprawnego funkcjonowania), dane dostępowe bazy danych utworzonej uprzednio na hostingu Cloud Web. W przypadku migracji strony WWW zadbaj o wykonanie jej pełnej kopii.
 
-Ponieważ projekty różnią się od siebie, nie istnieje jeden uniwersalny sposób postępowania. Podczas wykonywania operacji przydatne mogą być przewodniki [Umieszczenie strony WWW w Internecie](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/){.external} i [Przeniesienie strony WWW do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}.
+Ponieważ projekty różnią się od siebie, nie istnieje jeden uniwersalny sposób postępowania. Podczas wykonywania operacji przydatne mogą być przewodniki [Umieszczenie strony WWW w Internecie](/pages/web/hosting/hosting_how_to_get_my_website_online){.external} i [Przeniesienie strony WWW do OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}.
 
 ### Etap 6: zmiana konfiguracji Twojej domeny
 
 Na tym etapie Twój projekt powinien być zainstalowany na hostingu Cloud Web, a Twoje konta e-mail utworzone. Jeśli konta jeszcze nie działają, być może konfiguracja Twojej domeny nie jest prawidłowa. W takim przypadku, lub jeśli nie masz co do tego pewności, zalecamy kontynuowanie bieżącego etapu.
 
-Pamiętaj, że jeśli przenosisz usługi do OVHcloud, operacje związane z DNS mogą spowodować niedostępność usług, jeśli operacje przeprowadzane są w nieodpowiednim momencie. Zgodnie z poszczególnymi etapami opisanymi w dokumentacji [Przeniesienie strony WWW do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}, na zakończenie procesu zmodyfikuj serwery DNS Twojej domeny.
+Pamiętaj, że jeśli przenosisz usługi do OVHcloud, operacje związane z DNS mogą spowodować niedostępność usług, jeśli operacje przeprowadzane są w nieodpowiednim momencie. Zgodnie z poszczególnymi etapami opisanymi w dokumentacji [Przeniesienie strony WWW do OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}, na zakończenie procesu zmodyfikuj serwery DNS Twojej domeny.
 
 #### 1. Poznaj rodzaje rekordów DNS OVHcloud 
 
@@ -173,7 +170,7 @@ Zapoznaj się z poniższymi wskazówkami, aby dowiedzieć się, gdzie przeprowad
 
 |Używana konfiguracja DNS|Gdzie przeprowadzić operacje?|
 |---|---|
-|OVHcloud|W [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w sekcji `Domeny`{.action} zaznacz odpowiednią domenę. W zakładce `Strefa DNS`{.action} sprawdź i zmodyfikuj niezbędne informacje. W razie potrzeby skorzystaj z naszej dokumentacji [Modyfikacja strefy DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}.|
+|OVHcloud|W [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w sekcji `Domeny`{.action} zaznacz odpowiednią domenę. W zakładce `Strefa DNS`{.action} sprawdź i zmodyfikuj niezbędne informacje. W razie potrzeby skorzystaj z naszej dokumentacji [Modyfikacja strefy DNS](/pages/web/domains/dns_zone_edit){.external}.|
 |Inne|W interfejsie dostawcy zarządzającego konfiguracją DNS Twojej domeny. W przypadku trudności w przeprowadzeniu tych operacji zachęcamy do kontaktu z dostawcą zarządzającym konfiguracją DNS Twojej domeny.|
 
 Czas propagacji wprowadzonych w strefie DNS zmian wynosi maksymalnie 24 godziny. Jeśli dodałeś kilka domen do Twojego hostingu Cloud Web w opcji MultiSite, przeprowadź obydwie operacje dla każdej z domen. 
@@ -188,17 +185,17 @@ Jeśli chcesz uzyskać wsparcie dotyczące funkcjonalności Twojej strony WWW, z
 
 Zacznij używać Twoich kont e-mail. W tym celu możesz użyć udostępnionej przez OVHcloud aplikacji online - Webmail: RoundCube. Aplikacja dostępna jest pod adresem <https://www.ovh.pl/mail/>. Zaloguj się, wprowadzając dane identyfikacyjne przypisane do Twojego konta e-mail utworzonego w OVHcloud.
 
-Jeśli chcesz uzyskać więcej informacji dotyczących korzystania z RoundCube, zapoznaj się z przewodnikiem: [Korzystanie z RoundCube](https://docs.ovh.com/pl/emails/webmail_przewodnik_dotyczacy_interfejsu_roundcube/){.external}. Jeśli chcesz skonfigurować Twoje konto e-mail w programie pocztowym lub urządzeniu typu smartfon lub tablet, skorzystaj z naszej dokumentacji dostępnej tutaj: <https://docs.ovh.com/pl/emails/>.
+Jeśli chcesz uzyskać więcej informacji dotyczących korzystania z RoundCube, zapoznaj się z przewodnikiem: [Korzystanie z RoundCube](/pages/web/emails/email_roundcube){.external}. Jeśli chcesz skonfigurować Twoje konto e-mail w programie pocztowym lub urządzeniu typu smartfon lub tablet, skorzystaj z naszej dokumentacji dostępnej tutaj: </products/web-cloud-email-collaborative-solutions-mx-plan>.
 
 ## Sprawdź również
 
-[Przeniesienie strony WWW do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}
+[Przeniesienie strony WWW do OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-[Umieszczenie strony w Internecie](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/){.external}
+[Umieszczenie strony w Internecie](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
-[Automatyczna instalacja strony WWW za pomocą modułu CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/){.external}
+[Automatyczna instalacja strony WWW za pomocą modułu CMS](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Instalacja kilku stron WWW na jednym hostingu](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/){.external}
+[Instalacja kilku stron WWW na jednym hostingu](/pages/web/hosting/multisites_configure_multisite){.external}
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
 

@@ -1,8 +1,6 @@
 ---
 title: 'Mettre à jour son OverTheBox'
-slug: config-upgrade
 excerpt: 'Découvrez comment mettre à jour votre équipement OverTheBox'
-section: "Configurations de l'OverTheBox"
 updated: 2022-11-08
 ---
 
@@ -100,7 +98,7 @@ otb-action-sysupgrade
 > Cette méthode n'est pas recommandée et n'est utile uniquement que pour certains usages avancés.
 >
 
-Vous pouvez suivre le guide « [Installer l’image OverTheBox sur votre matériel](../installer-limage-overthebox-sur-votre-materiel/) » pour installer manuellement la dernière image du système OverTheBox.
+Vous pouvez suivre le guide « [Installer l’image OverTheBox sur votre matériel](/pages/telecom/overthebox/advanced_installer_limage_overthebox_sur_votre_materiel) » pour installer manuellement la dernière image du système OverTheBox.
 
 
 ### Voir les différences entre versions

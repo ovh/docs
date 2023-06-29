@@ -1,8 +1,6 @@
 ---
 title: 'Hardware diagnostics'
-slug: hardware-diagnostics
 excerpt: 'Find out how to use diagnostic tools to identify hardware failures on your server'
-section: 'Diagnostics and rescue mode'
 updated: 2022-12-15
 ---
 
@@ -17,7 +15,7 @@ At some point during the life of your server, you may encounter a fault due to a
 ## Requirements
 
 - A [dedicated server](https://www.ovhcloud.com/asia/bare-metal/)
-- [Rescue mode activated](https://docs.ovh.com/asia/en/dedicated/ovh-rescue/)
+- [Rescue mode activated](/pages/cloud/dedicated/rescue_mode)
 
 ## Instructions
 

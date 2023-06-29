@@ -1,8 +1,5 @@
 ---
 title: "Fehler bei Domain-Operationen beheben"
-slug: domain-errors
-section: Allgemeine Verwendung
-order: 02
 updated: 2022-09-01
 ---
 
@@ -22,7 +19,7 @@ Bei der Erstellung eines Domainnamens, dem Transfer oder dem Inhaberwechsel hand
 
 - Sie verfügen über eine oder mehrere Domains.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben keine ausstehenden [Zahlungen](https://docs.ovh.com/de/billing/ovh-rechnungen-verwalten/#pay-bills) und [Verlängerungen](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
+- Sie haben keine ausstehenden [Zahlungen](/pages/account/billing/invoice_management#pay-bills) und [Verlängerungen](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
 
 ## In der praktischen Anwendung
 
@@ -51,7 +48,7 @@ Diese Anleitung ist fokussiert auf **fehlerhafte** Operationen anhand von Beispi
 >
 > Die nachstehende Beispielliste ist nicht erschöpfend. Falls Sie einen Fehler feststellen, der in dieser Anleitung nicht im Einzelnen aufgeführt ist, führen Sie folgende Überprüfungen durch:
 >
-> - Stellen Sie sicher, dass für Domains keine [Zahlungen](https://docs.ovh.com/de/billing/ovh-rechnungen-verwalten/#pay-bills) und [Verlängerungen](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#renewal-management) ausstehen.
+> - Stellen Sie sicher, dass für Domains keine [Zahlungen](/pages/account/billing/invoice_management#pay-bills) und [Verlängerungen](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) ausstehen.
 > - Überprüfen Sie, ob Sie das Problem beheben können, indem Sie auf `...`{.action} rechts neben der betreffenden Operation klicken.
 > - Lesen Sie die beschreibende Nachricht und überprüfen Sie, ob aufgrund dieser Information der Fehler korrigiert werden kann.
 >
@@ -98,7 +95,7 @@ Im folgenden Beispiel antwortet die IP-Adresse des DNS-Servers nicht.
 
 ![domain](images/domain-error07.png){.thumbnail}
 
-Wählen Sie im Bereich `Domainnamen`{.action} die betreffende Domain aus und klicken Sie dann auf den Tab `DNS Server`{.action}. Bearbeiten Sie in diesem Tab [Ihre DNS Server](https://docs.ovh.com/de/domains/webhosting_allgemeine_informationen_zu_den_dns_servern/). 
+Wählen Sie im Bereich `Domainnamen`{.action} die betreffende Domain aus und klicken Sie dann auf den Tab `DNS Server`{.action}. Bearbeiten Sie in diesem Tab [Ihre DNS Server](/pages/web/domains/dns_server_general_information). 
 
 #### Fehler bei einer Domain mit der Endung **.ie**, **.de** oder **.it** ** nach einem DNS-Update
 
@@ -138,10 +135,10 @@ Wenn Sie eine Anomalie feststellen, die nicht mit der Konfiguration der DNS-Serv
 
 ## Weiterführende Informationen
 
-[Ihre Domain zu OVHcloud transferieren](https://docs.ovh.com/de/domains/transfer-einer-generischen-domain/)
+[Ihre Domain zu OVHcloud transferieren](/pages/web/domains/transfer_incoming_generic_domain)
 
-[Eine Domain zu einem anderen Registrar transferieren](https://docs.ovh.com/de/domains/ausgehender-transfer-einer-generischen-oder-geografischen-domain/)
+[Eine Domain zu einem anderen Registrar transferieren](/pages/web/domains/transfer_outgoing_domain)
 
-[DNS-Server einer OVHcloud Domain ändern](https://docs.ovh.com/de/domains/webhosting_allgemeine_informationen_zu_den_dns_servern/)
+[DNS-Server einer OVHcloud Domain ändern](/pages/web/domains/dns_server_general_information)
  
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

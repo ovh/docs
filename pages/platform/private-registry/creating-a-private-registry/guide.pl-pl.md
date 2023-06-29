@@ -1,11 +1,8 @@
 ---
 title: 'Creating a private registry'
 excerpt: ''
-slug: creating-a-private-registry
-section: 'Getting started'
-order: 01
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-registry/creating-a-private-registry/'
+    canonical: '/pages/platform/private-registry/creating-a-private-registry'
 updated: 2022-04-14
 ---
 
@@ -89,4 +86,4 @@ Congratulations, you have now a working OVHcloud Managed Private Registry.
 
 ## Go further
 
-To go further you can look at our guide on [connecting to the UI](../connecting-to-the-ui/).
+To go further you can look at our guide on [connecting to the UI](/pages/platform/private-registry/connecting-to-the-ui).

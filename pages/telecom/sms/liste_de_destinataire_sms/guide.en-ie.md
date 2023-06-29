@@ -1,9 +1,7 @@
 ---
 title: 'How to create an SMS recipient list'
-slug: list_of_sms_recipients
 excerpt: 'Find out how to create a list of SMS recipients and import it into your OVHcloud Control Panel.'
 legacy_guide_number: g2402
-section: 'Managing your solution'
 updated: 2022-08-05
 ---
 
@@ -87,12 +85,12 @@ Name your recipient list, and import your local file on to the OVHcloud Control 
 
 ### Step 3: Sending an SMS to your recipient list
 
-Now that your list has been imported, you can follow the instructions in our guide on [Sending SMS messages via the OVHcloud Control Panel](https://docs.ovh.com/ie/en/sms/send_sms_messages_via_control_panel/) in order to send an SMS to the recipients of this list.
+Now that your list has been imported, you can follow the instructions in our guide on [Sending SMS messages via the OVHcloud Control Panel](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client) in order to send an SMS to the recipients of this list.
 
 ## Go further
 
-[Sending SMS messages via the OVHcloud Control Panel](https://docs.ovh.com/ie/en/sms/send_sms_messages_via_control_panel/)
+[Sending SMS messages via the OVHcloud Control Panel](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client)
 
-[Managing SMS address books](https://docs.ovh.com/ie/en/sms/manage-sms-address-books/)
+[Managing SMS address books](/pages/telecom/sms/gerer_mes_carnets_dadresses_sms)
 
 Join our community of users on <https://community.ovh.com/en/>.

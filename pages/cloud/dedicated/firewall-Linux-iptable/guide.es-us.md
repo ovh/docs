@@ -1,9 +1,6 @@
 ---
 title: Configurar el firewall de Linux con iptables
 excerpt: Cómo proteger un servidor con iptables
-slug: firewall-iptables
-section: Seguridad
-order: 01
 updated: 2022-10-18
 ---
 
@@ -46,7 +43,7 @@ Los cortafuegos funcionan estableciendo reglas que regulan el tráfico autorizad
 
 Los desarrolladores de distribuciones y sistemas operativos ofrecen actualizaciones frecuentes de los paquetes, en muchas ocasiones por motivos de seguridad. **La actualización de la distribución o sistema operativo es, por lo tanto, un aspecto fundamental a la hora de proteger su servidor dedicado.**
 
-Para más información, consulte nuestra guía sobre la [seguridad de un servidor dedicado](https://docs.ovh.com/us/es/dedicated/seguridad-de-un-servidor-dedicado/).
+Para más información, consulte nuestra guía sobre la [seguridad de un servidor dedicado](/pages/cloud/dedicated/securing-a-dedicated-server).
 
 ### 2. Instalar el firewall iptables en Ubuntu
 
@@ -140,7 +137,7 @@ Las opciones funcionan de la siguiente forma:
 > [!warning]
 > En caso de perder el acceso a su servidor, puede seguir utilizando la herramienta KVM/IPMI para acceder a él de nuevo y modificar su configuración o eliminar las reglas.
 >
-> Para más información sobre el acceso a esta herramienta, consulte [esta guía](https://docs.ovh.com/us/es/dedicated/utilizar-ipmi-servidor-dedicado/).
+> Para más información sobre el acceso a esta herramienta, consulte [esta guía](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers).
 > 
 
 ### 6. Controlar el tráfico por dirección IP

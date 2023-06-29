@@ -1,9 +1,6 @@
 ---
 title: 'Mettre en place un répondeur automatique depuis l’interface OWA'
 excerpt: Découvrez comment mettre en place une réponse automatique sous OWA
-slug: exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa
-section: "Fonctionnalités des adresses e-mail"
-order: 07
 updated: 2020-07-20
 ---
 
@@ -66,7 +63,7 @@ Un message alternatif pour les expéditeurs externes peut être saisi dans la de
 
 [ Consulter son compte Exchange depuis l’interface OWA](/pages/web/emails/email_owa)
 
-[Déléguer des droits sur un compte Exchange](../exchange-donner-les-droits-full-access-sur-un-compte/)
+[Déléguer des droits sur un compte Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
 [Partager des calendriers via l’interface OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 

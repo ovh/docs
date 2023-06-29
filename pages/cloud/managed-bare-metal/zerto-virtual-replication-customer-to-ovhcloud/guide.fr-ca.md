@@ -1,10 +1,8 @@
 ---
 title: 'Mise en œuvre d''un VPN pour votre PRA Zerto OVHcloud'
-slug: zerto-virtual-replication-customer-to-ovhcloud
 routes:
-    canonical: 'https://docs.ovh.com/ca/fr/private-cloud/zerto-virtual-replication-customer-to-ovhcloud/'
+    canonical: '/pages/cloud/private-cloud/zerto-virtual-replication-customer-to-ovhcloud'
 excerpt: 'Découvrez comment paramétrer un tunnel VPN pour connecter votre plateforme Zerto locale à votre Managed Bare Metal OVHcloud.'
-section: 'Services et options OVHcloud'
 updated: 2020-11-18
 ---
 

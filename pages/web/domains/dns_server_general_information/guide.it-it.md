@@ -1,10 +1,7 @@
 ---
 title: 'Modificare i server DNS di un dominio OVHcloud'
-slug: web_hosting_gestisci_il_tuo_server_dns
 excerpt: 'Come modificare i server DNS di un dominio OVHcloud'
 legacy_guide_number: g2015
-section: 'DNS e zona DNS'
-order: 01
 updated: 2021-02-18
 ---
 
@@ -20,7 +17,7 @@ updated: 2021-02-18
 
 La sigla DNS, che indica **D**omain **N**ame **S**ystem, è un insieme di elementi che permettono di far corrispondere un dominio con un indirizzo IP.
 
-Per maggiori informazioni, consulta la guida Modificare una [zona DNS di OVHcloud](../web_hosting_modifica_la_tua_zona_dns/#understanddns).
+Per maggiori informazioni, consulta la guida Modificare una [zona DNS di OVHcloud](/pages/web/domains/dns_zone_edit#understanddns).
 
 ### Server DNS 
 
@@ -37,7 +34,7 @@ I server DNS sono generalmente utilizzati per gruppi di due (primario e secondar
 ## Prerequisiti
 
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/) registrato in OVHcloud
-- Disporre delle autorizzazioni [per gestire](../../customer/gestisci_i_tuoi_contatti/){.external} il dominio dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Disporre delle autorizzazioni [per gestire](/pages/account/customer/managing_contacts){.external} il dominio dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 > [!primary]
@@ -58,7 +55,7 @@ Attenzione:
 
 - Durante la modifica del server DNS (e.g. DNS esterno da DNS OVHcloud), il contenuto della configurazione DNS precedente non viene replicato automaticamente nella nuova. Assicurati che la tua nuova zona DNS includa tutti i record DNS richiesti per il corretto funzionamento dei servizi associati al tuo dominio (ad esempio, il tuo sito Web e i tuoi indirizzi email).
 
-- Per modificare un solo elemento della configurazione DNS corrente (ad esempio un record DNS), ti consigliamo di seguire la nostra guida per modificare la zona DNS: Modificare [una zona DNS OVHcloud](../web_hosting_modifica_la_tua_zona_dns/){.external}.
+- Per modificare un solo elemento della configurazione DNS corrente (ad esempio un record DNS), ti consigliamo di seguire la nostra guida per modificare la zona DNS: Modificare [una zona DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external}.
 
 - Alcune organizzazioni, i Registry, che gestiscono le estensioni dei domini, hanno esigenze particolari relative ai server DNS (quantità di server nomi, valore delle registrazioni...). In caso di dubbi, contatta il Registro responsabile del dominio.
 
@@ -107,6 +104,6 @@ Una volta completata l’operazione attendi il tempo necessario alla sua elabora
 
 ## Per saperne di più
 
-[ Modifica di una zona](../web_hosting_modifica_la_tua_zona_dns/){.external} DNS OVHcloud.
+[ Modifica di una zona](/pages/web/domains/dns_zone_edit){.external} DNS OVHcloud.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -57,7 +57,7 @@ If you run the `ls -a` command in your notebook's `/workspace` directory, you wi
 
 ### Workspace billing
 
-The first 10GB of the `/workspace` directory are free during 30 consecutive days. After this period, the [price of OVHcloud Object Storage](https://www.ovhcloud.com/en/public-cloud/prices/#439) is applied for each GB. To learn how we bill AI Notebooks, refer to the [Billing and lifecycle documentation](/pages/platform/ai/notebook_guide_billing_concept).
+The first 10GB of the `/workspace` directory are free during 30 consecutive days. After this period, the [price of OVHcloud Object Storage](https://www.ovhcloud.com/en-gb/public-cloud/prices/#439) is applied for each GB. To learn how we bill AI Notebooks, refer to the [Billing and lifecycle documentation](/pages/platform/ai/notebook_guide_billing_concept).
 
 ## Feedback
 

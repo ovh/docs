@@ -1,7 +1,5 @@
 ---
 title: Subdomains across different projects
-slug: subdomains
-section: Steps
 updated: 2021-05-11
 ---
 

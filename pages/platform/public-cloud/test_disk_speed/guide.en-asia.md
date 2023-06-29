@@ -1,8 +1,6 @@
 ---
 title: 'Test disk speed'
-slug: test_disk_speed
 excerpt: 'This guide will show you how to test the number of input/output operations per second (IOPS) that your disks are able to achieve, whether for instances or additional disks.'
-section: Storage
 updated: 2022-01-04
 ---
 
@@ -114,8 +112,8 @@ We can see that disk performance is approximately 891 IOPS.
 
 ## Go further
 
-[Create and configure an additional disk on an Instance](../create_and_configure_an_additional_disk_on_an_instance/){.external}
+[Create and configure an additional disk on an Instance](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance){.external}
 
-[Add storage space](../add_storage_space/){.external}
+[Add storage space](/asia/en/public-cloud/add_storage_space/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

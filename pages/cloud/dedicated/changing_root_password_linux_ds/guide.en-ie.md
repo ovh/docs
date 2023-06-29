@@ -1,9 +1,6 @@
 ---
 title: Changing the root password on a dedicated server
-slug: root-password
 excerpt: Find out how to change the root or admin password of a dedicated server
-section: Server Management
-order: 1
 updated: 2021-02-16
 ---
 
@@ -62,7 +59,7 @@ passwd: password updated successfully
 
 #### Step 1: Identify the system partition
 
-After restarting your server into [rescue mode](../rescue_mode/), you will need to identify the system partition. You can do this with the following command:
+After restarting your server into [rescue mode](/pages/cloud/dedicated/rescue_mode), you will need to identify the system partition. You can do this with the following command:
 
 ```bash
 fdisk -l
@@ -126,6 +123,6 @@ When this is done, change the boot mode of your server back to `Boot from the ha
 
 ## Go further
 
-[Securing a dedicated server](../securing-a-dedicated-server/)
+[Securing a dedicated server](/pages/cloud/dedicated/securing-a-dedicated-server)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: 'Configurar el servicio OVHcloud Link Aggregation desde el área de cliente de OVHcloud'
-slug: ola-manager
 excerpt: 'Activar el servicio OVHcloud Link Aggregation en el área de cliente'
-section: 'Uso avanzado'
-order: 1
 updated: 2022-05-18
 ---
 
@@ -49,11 +46,11 @@ Compruebe que las dos interfaces, o grupos de interfaces, estén bien selecciona
 
 La operación puede tardar unos minutos. Cuando haya terminado, el paso siguiente será configurar las interfaces de su sistema operativo con un vínculo NIC o un equipo NIC. Para saber cómo proceder, puede consultar las siguientes guías diseñadas para los sistemas operativos más populares:
 
-[Configurar un NIC para el servicio OVHcloud Link Aggregation en Debian 9](../ola-debian9/).
+[Configurar un NIC para el servicio OVHcloud Link Aggregation en Debian 9](/pages/cloud/dedicated/ola-enable-debian9).
 
-[Configurar un NIC para el servicio OVHcloud Link Aggregation en CentOS 7](../ola-centos7/).
+[Configurar un NIC para el servicio OVHcloud Link Aggregation en CentOS 7](/pages/cloud/dedicated/ola-enable-centos7).
 
-[Configurar un NIC para el servicio OVHcloud Link Aggregation en Windows Server 2019](../ola-w2k19/).
+[Configurar un NIC para el servicio OVHcloud Link Aggregation en Windows Server 2019](/pages/cloud/dedicated/ola-enable-w2k19).
 
 ### Restaurar OLA a los valores predeterminados
 
@@ -65,10 +62,10 @@ La operación puede tardar unos minutos.
 
 ## Más información
 
-[Configurar un NIC para el servicio OVHcloud Link Aggregation en Debian 9](../ola-debian9/).
+[Configurar un NIC para el servicio OVHcloud Link Aggregation en Debian 9](/pages/cloud/dedicated/ola-enable-debian9).
 
-[Configurar un NIC para el servicio OVHcloud Link Aggregation en CentOS 7](../ola-centos7/).
+[Configurar un NIC para el servicio OVHcloud Link Aggregation en CentOS 7](/pages/cloud/dedicated/ola-enable-centos7).
 
-[Configurar un NIC para el servicio OVHcloud Link Aggregation en Windows Server 2019](../ola-w2k19/).
+[Configurar un NIC para el servicio OVHcloud Link Aggregation en Windows Server 2019](/pages/cloud/dedicated/ola-enable-w2k19).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

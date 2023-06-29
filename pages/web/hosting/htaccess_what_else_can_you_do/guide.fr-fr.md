@@ -1,9 +1,6 @@
 ---
 title: "Tutoriel - Opérations réalisables avec un fichier « .htaccess »"
-slug: mutualise-htaccess-les-autres-operations-realisables-avec-des-fichiers-htaccess
 excerpt: "Découvrez quelques exemples d'opérations réalisables avec un fichier « .htaccess »"
-section: Réécriture et authentification
-order: 04
 updated: 2023-05-23
 ---
 

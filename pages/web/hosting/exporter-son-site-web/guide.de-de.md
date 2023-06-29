@@ -1,9 +1,6 @@
 ---
 title: 'Ihre Webseite exportieren'
-slug: website-exportieren
 excerpt: 'Eine OVHcloud Webseite exportieren'
-section: 'Erste Schritte'
-order: 04
 updated: 2022-02-03
 ---
 
@@ -37,13 +34,13 @@ Diese Informationen wurden Ihnen per E-Mail bei der Installation Ihres Webhostin
 
 ![export-website](images/export-website-step1-1.png){.thumbnail}
 
-Es werden nun die Informationen Ihres Speicherplatzes angezeigt. Sie sollten hier alle Elemente finden, die Sie für das Einloggen in Ihren FTP-Speicherplatz brauchen. Falls nötig, konsultieren Sie unsere Anleitung: [Mit dem Speicherplatz eines Webhostings verbinden](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting). Wenn Sie das Passwort nicht kennen, lesen Sie bitte die Anleitung [Passwort eines FTP-Benutzers ändern](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern).
+Es werden nun die Informationen Ihres Speicherplatzes angezeigt. Sie sollten hier alle Elemente finden, die Sie für das Einloggen in Ihren FTP-Speicherplatz brauchen. Falls nötig, konsultieren Sie unsere Anleitung: [Mit dem Speicherplatz eines Webhostings verbinden](/pages/web/hosting/ftp_connection). Wenn Sie das Passwort nicht kennen, lesen Sie bitte die Anleitung [Passwort eines FTP-Benutzers ändern](/pages/web/hosting/ftp_change_password).
 
 Wenn Sie alle nötigen Informationen bereit haben, können Sie Ihre Dateien auf dem Speicherplatz abrufen. Hierfür haben Sie zwei Möglichkeiten:
 
-- **FTP- oder SFTP-kompatibles Programm verwenden**: Installieren Sie einen FTP-Client auf Ihrem Computer, wie [FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla). Kontaktieren Sie den Herausgeber der eingesetzten Anwendung, falls Sie für deren Verwendung Hilfe brauchen, da OVHcloud keine Unterstützung zu externer Software anbieten kann.
+- **FTP- oder SFTP-kompatibles Programm verwenden**: Installieren Sie einen FTP-Client auf Ihrem Computer, wie [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide). Kontaktieren Sie den Herausgeber der eingesetzten Anwendung, falls Sie für deren Verwendung Hilfe brauchen, da OVHcloud keine Unterstützung zu externer Software anbieten kann.
 
-- **SSH-Zugang verwenden**: Um auf Ihren Speicherplatz zuzugreifen, müssen die entsprechenden Befehle in einem Terminal ausgeführt werden. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein kompatibles [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) erforderlich. Weitere Informationen hierzu finden Sie in unserer [Anleitung](https://docs.ovh.com/de/hosting/webhosting_ssh_auf_ihren_webhostings). 
+- **SSH-Zugang verwenden**: Um auf Ihren Speicherplatz zuzugreifen, müssen die entsprechenden Befehle in einem Terminal ausgeführt werden. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein kompatibles [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) erforderlich. Weitere Informationen hierzu finden Sie in unserer [Anleitung](/pages/web/hosting/ssh_on_webhosting). 
 
 #### 1.2 Dateien von Ihrem Speicherplatz herunterladen
 
@@ -61,10 +58,10 @@ Gehen Sie in Ihrem OVHcloud-Kundencenter auf den Tab `Multisite`{.action}, um he
 >
 
 Informationen zum Abrufen eines Backups Ihrer Datenbank finden Sie in unserer Anleitung:
-[Backup einer Webhosting-Datenbank exportieren](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken).
+[Backup einer Webhosting-Datenbank exportieren](/pages/web/hosting/sql_database_export).
 
 Wenn Sie eine Datenbank **Web Cloud Databases** für Ihre Website verwenden, lesen Sie den Abschnitt "Backup" in unserer Anleitung:
-[Eine Datenbank Ihres Datenbankservers sichern und exportieren](https://docs.ovh.com/de/hosting/backup-eine-datenbank-exportieren/){.external}.
+[Eine Datenbank Ihres Datenbankservers sichern und exportieren](/pages/web/clouddb/save-export-on-database-server){.external}.
 
 ### Schritt 3: Logs Ihres OVHcloud Webhostings abrufen
 
@@ -94,14 +91,14 @@ Nachdem Sie den Logtyp und Monat ausgewählt haben, sind die Logs nach Tag archi
 
 ## Weiterführende Informationen
 
-[Mit dem Speicherplatz eines Webhostings verbinden](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting)
+[Mit dem Speicherplatz eines Webhostings verbinden](/pages/web/hosting/ftp_connection)
 
-[Passwort eines FTP-Benutzers ändern](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern)
+[Passwort eines FTP-Benutzers ändern](/pages/web/hosting/ftp_change_password)
 
-[Verwendung von FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla)
+[Verwendung von FileZilla](/pages/web/hosting/ftp_filezilla_user_guide)
 
-[SSH auf Ihren Webhostings verwenden](https://docs.ovh.com/de/hosting/webhosting_ssh_auf_ihren_webhostings)
+[SSH auf Ihren Webhostings verwenden](/pages/web/hosting/ssh_on_webhosting)
 
-[Backup einer Webhosting-Datenbank exportieren](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken)
+[Backup einer Webhosting-Datenbank exportieren](/pages/web/hosting/sql_database_export)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

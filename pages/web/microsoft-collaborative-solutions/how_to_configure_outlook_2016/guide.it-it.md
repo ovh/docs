@@ -1,9 +1,6 @@
 ---
 title: 'Configurare un account Exchange su Outlook per Windows'
-slug: configurazione-exchange-outlook-2016-windows
 excerpt: 'Scopri come configurare un account Exchange su Outlook per Windows'
-section: 'Configurazione al computer'
-order: 01
 updated: 2021-07-05
 ---
  
@@ -31,11 +28,11 @@ Gli account Exchange possono essere configurati su client di posta compatibili, 
 - Disporre di una soluzione [Exchange](https://www.ovhcloud.com/it/emails/){.external}
 - Aver installato il software Microsoft Outlook 2016 o successivo, sul tuo computer
 - Disporre delle credenziali associate all’indirizzo email da configurare
-- Il record SRV di OVHcloud deve essere configurato correttamente nella zona DNS del nome di dominio, consulta la nostra guida [Aggiungere un dominio sul servizio Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/aggiungere-dominio-su-exchange/).
+- Il record SRV di OVHcloud deve essere configurato correttamente nella zona DNS del nome di dominio, consulta la nostra guida [Aggiungere un dominio sul servizio Exchange](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain).
 
 > [!primary]
 >
-> Utilizzi Outlook 2016 e poi per Mac? Consulta la nostra documentazione: [Configurare un account Exchange su Outlook 2016 per Mac](https://docs.ovh.com/it/microsoft-collaborative-solutions/configurazione-exchange-outlook-2016-mac/).
+> Utilizzi Outlook 2016 e poi per Mac? Consulta la nostra documentazione: [Configurare un account Exchange su Outlook 2016 per Mac](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016_mac).
 >
 
 ## Procedura
@@ -75,17 +72,17 @@ Gli account Exchange possono essere configurati su client di posta compatibili, 
 
 Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! A partire da questo momento puoi inviare e ricevere messaggi.
 
-Il tuo indirizzo email Exchange e tutte le sue funzioni collaborative sono disponibili anche tramite l'interfaccia [OWA](https://www.ovh.it/mail/). Per maggiori informazioni sul suo utilizzo, consulta la guida [Consultare il suo account Exchange dall'interfaccia OWA](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_guida_allutilizzo_di_outlook_web_app/).
+Il tuo indirizzo email Exchange e tutte le sue funzioni collaborative sono disponibili anche tramite l'interfaccia [OWA](https://www.ovh.it/mail/). Per maggiori informazioni sul suo utilizzo, consulta la guida [Consultare il suo account Exchange dall'interfaccia OWA](/pages/web/emails/email_owa).
 
 ### Recuperare un backup del tuo indirizzo email
 
-Se è necessario effettuare un'operazione che potrebbe comportare la perdita dei dati del tuo account email, ti consigliamo di effettuare un backup preliminare dell'account email in questione. Per effettuare questa operazione, consulta il paragrafo "**Esporta da Windows**" nella nostra guida [Migrare manualmente il tuo indirizzo email](https://docs.ovh.com/it/emails/migrare-i-indirizzi-email-manualmente/#esporta-da-windows).
+Se è necessario effettuare un'operazione che potrebbe comportare la perdita dei dati del tuo account email, ti consigliamo di effettuare un backup preliminare dell'account email in questione. Per effettuare questa operazione, consulta il paragrafo "**Esporta da Windows**" nella nostra guida [Migrare manualmente il tuo indirizzo email](/pages/web/emails/manual_email_migration#esporta-da-windows).
 
 
 ## Per saperne di più
 
-[Configurare un account email su Outlook 2016 per Windows](https://docs.ovh.com/it/emails/configurazione-outlook-2016/)
+[Configurare un account email su Outlook 2016 per Windows](/pages/web/emails/how_to_configure_outlook_2016)
 
-[Configurare un account Email Pro su Outlook 2016 per Windows](https://docs.ovh.com/it/emails-pro/configurazione-outlook-2016/)
+[Configurare un account Email Pro su Outlook 2016 per Windows](/pages/web/emails-pro/how_to_configure_outlook_2016)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: 'Creating automatic replies in OWA'
 excerpt: 'Find out how to set up automatic replies in OWA'
-slug: exchange_2016_how_to_set_up_automatic_replies_in_owa
-section: 'Email address features'
-order: 07
 updated: 2020-07-20
 ---
 

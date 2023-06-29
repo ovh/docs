@@ -1,9 +1,6 @@
 ---
 title: OVHcloud AntiSpam - Boas práticas e desbloqueio de um endereço IP
-slug: antispam-best-practices
 excerpt: Descubra as nossas boas práticas antisspam e como desbloquear um endereço IP bloqueado para SPAM
-section: Diagnóstico e Modo Rescue
-order: 04
 updated: 2022-10-17
 ---
 
@@ -58,7 +55,7 @@ O procedimento consiste em identificar o problema, resolvê-lo e desbloquear o s
 - Elimine o envio de e-mail (por exemplo: parar todos os softwares de e-mail como o qmail, Postfix, Sendmail, etc.).
 - Verifique a fila de espera dos e-mails (por exemplo qmHandle para qmail, postfila -p para Postfix) e esvazie-a.
 - Analise os logs graças à **Message-ID** presente no alerta de bloqueio.
-- Se enviar SPAM ou e-mails ilegítimos, recomendamos vivamente que resolva o problema **antes** de desbloquear o endereço IP. Consulte este guia para [melhores práticas (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#bestpractices) no matéria de envio de e-mails. 
+- Se enviar SPAM ou e-mails ilegítimos, recomendamos vivamente que resolva o problema **antes** de desbloquear o endereço IP. Consulte este guia para [melhores práticas (EN)](/pages/cloud/dedicated/antispam_best_practices#bestpractices) no matéria de envio de e-mails. 
 
 Uma vez o problema resolvido, pode desbloquear o seu endereço IP efetuando os passos seguintes.
 
@@ -93,7 +90,7 @@ Após o tratamento, o IP será desbloqueado.
 
 #### Desbloquear o endereço IP a partir da API OVHcloud
 
-Ligue-se à interface [API da OVHcloud](https://eu.api.ovh.com/) e siga os passos abaixo. Para mais informações sobre a utilização das API OVHcloud, consulte o nosso guia "[Primeiros passos com as API OVHcloud](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/)".
+Ligue-se à interface [API da OVHcloud](https://eu.api.ovh.com/) e siga os passos abaixo. Para mais informações sobre a utilização das API OVHcloud, consulte o nosso guia "[Primeiros passos com as API OVHcloud](/pages/account/api/first-steps)".
 
 Em primeiro lugar, obtenha a lista dos endereços IP de cada serviço OVHcloud (Hosted Private Cloud / VPS / Public Cloud / Servidor Dedicado):
 
@@ -218,7 +215,7 @@ O endereço IP está a ser desbloqueado e a operação pode levar alguns minutos
 
 ### Em caso de falsos positivos
 
-Em alguns casos, o alerta de spam pode ser um falso positivo. Se tiver verificado e descoberto que o **ID da mensagem*** está associado a um e-mail legítimo, deve assegurar-se que os seus e-mails estão em conformidade com [RFC (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#rfc) e [boas práticas (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#bestpractices).
+Em alguns casos, o alerta de spam pode ser um falso positivo. Se tiver verificado e descoberto que o **ID da mensagem*** está associado a um e-mail legítimo, deve assegurar-se que os seus e-mails estão em conformidade com [RFC (EN)](/pages/cloud/dedicated/antispam_best_practices#rfc) e [boas práticas (EN)](/pages/cloud/dedicated/antispam_best_practices#bestpractices).
 
 
 ## Quer saber mais?

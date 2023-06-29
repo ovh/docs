@@ -1,9 +1,6 @@
 ---
 title: 'Activer les adresses e-mails incluses dans votre hébergement web'
-slug: activer-email-hebergement-web
 excerpt: "Découvrez comment activer les adresses e-mails incluses avec votre offre d'hébergement web"
-section: 'Premiers pas'
-order: 07
 updated: 2023-03-02
 ---
 
@@ -14,6 +11,8 @@ updated: 2023-03-02
 Si vous avez commandé un hébergement web sans l'attacher directement à un nom de domaine, l'offre e-mail incluse avec votre hébergement devra être activée manuellement. Vous pourrez associer celle-ci au nom de domaine de votre choix.
 
 **Découvrez comment activer les adresses e-mails incluses avec votre offre d'hébergement web.**
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7D0ODJ2Vwcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Prérequis
 

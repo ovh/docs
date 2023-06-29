@@ -1,9 +1,6 @@
 ---
 title: 'Primeiros passos com a solução E-mail Pro'
-slug: configuracao-inicial
 excerpt: 'Saiba como configurar o serviço E-mail Pro.'
-section: Introdução
-order: 1
 updated: 2020-04-09
 ---
 
@@ -86,9 +83,9 @@ A coluna `Diagnóstico`{.action} permite-lhe controlar a configuração DNS do d
 
 - **Configuração manual para um domínio não gerido pela OVHcloud**: clique na etiqueta vermelha para ver as alterações a realizar.
 
- *Para um registo CNAME*, recorra ao guia [«Criar um registo CNAME para associar um domínio»](../../microsoft-collaborative-solutions/exchange_20132016_adicionar_um_campo_do_tipo_cname/). 
-<br> *Para um registo MX*, recorra ao guia [«Adicionar um campo MX à configuração do domínio»](../../domains/e-mail-partilhado-manual-de-configuracao-mx-com-zona-dns-ovh/). 
-<br> *Para um registo SRV*, informe qual é a sua zona DNS recorrendo às informações apresentadas quando clica na etiqueta vermelha. Para adicionar este registo, recorra ao guia [« Editar uma zona DNS da OVHcloud »](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).
+ *Para um registo CNAME*, recorra ao guia [«Criar um registo CNAME para associar um domínio»](/pages/web/microsoft-collaborative-solutions/exchange_dns_cname). 
+<br> *Para um registo MX*, recorra ao guia [«Adicionar um campo MX à configuração do domínio»](/pages/web/domains/dns_zone_mx). 
+<br> *Para um registo SRV*, informe qual é a sua zona DNS recorrendo às informações apresentadas quando clica na etiqueta vermelha. Para adicionar este registo, recorra ao guia [« Editar uma zona DNS da OVHcloud »](/pages/web/domains/dns_zone_edit).
 
 ![emailpro](images/first_config_email_pro_configure_domain_update.png){.thumbnail}
 
@@ -123,7 +120,7 @@ Depois, clique em `Seguinte`{.action}. Verifique as informações apresentadas e
 
 As contas foram configuradas e estão prontas a usar. Para isso, a OVHcloud disponibiliza uma aplicação online (uma *webapp*). Esta última encontra-se no endereço [https://www.ovh.pt/mail](https://www.ovh.pt/mail/){.external}, onde deve introduzir os dados de acesso à sua conta.
 
-Se desejar associar o seu endereço de e-mail a um software de correio eletrónico ou a um dispositivo, como um smartphone ou tablet, [consulte os nossos manuais de configuração](../). Se pretender obter mais informações sobre os elementos necessários para configurar a sua conta E-mail Pro, consulte as configurações que deverá utilizar:
+Se desejar associar o seu endereço de e-mail a um software de correio eletrónico ou a um dispositivo, como um smartphone ou tablet, [consulte os nossos manuais de configuração](/products/web-cloud-email-collaborative-solutions-email-pro). Se pretender obter mais informações sobre os elementos necessários para configurar a sua conta E-mail Pro, consulte as configurações que deverá utilizar:
 
 |Tipo de servidor|Nome do servidor|Tipo de segurança|Porta|
 |---|---|---|---|
@@ -139,16 +136,16 @@ Se desejar associar o seu endereço de e-mail a um software de correio eletróni
 
 ## Quer saber mais?
 
-[Utilizar o Outlook Web App com uma conta de e-mail](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2016_guia_de_utilizacao_do_outlook_web_app/)
+[Utilizar o Outlook Web App com uma conta de e-mail](/pages/web/emails/email_owa)
 
-[Criar regras inbox no OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/criar-regras-inbox-no-owa/)
+[Criar regras inbox no OWA]( /pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
 
-[Adicionar um alias à sua conta de e-mail](https://docs.ovh.com/pt/microsoft-collaborative-solutions/email-alias/)
+[Adicionar um alias à sua conta de e-mail](/pages/web/emails/feature_redirections)
 
-[Criar assinaturas automáticas](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_20132016_assinatura_automatica_-_disclaimer/)
+[Criar assinaturas automáticas](/pages/web/microsoft-collaborative-solutions/feature_footers)
 
-[Gerir a faturação das contas E-mail Pro](https://docs.ovh.com/pt/emails-pro/gestao-faturacao-emailpro/)
+[Gerir a faturação das contas E-mail Pro](/pages/web/emails-pro/manage_billing_emailpro)
 
-[Gerir a política de segurança de um serviço de e-mail](https://docs.ovh.com/pt/microsoft-collaborative-solutions/gerir-politica-de-seguranca-palavra-passe/)
+[Gerir a política de segurança de um serviço de e-mail](/pages/web/emails/security-policy)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

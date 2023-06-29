@@ -1,11 +1,8 @@
 ---
 title: CLI - Lancer et partager un AI Notebook avec un token (EN)
-slug: cli/sharing-notebooks
 excerpt: Découvrez comment partager un AI Notebooks avec un token
-section: Command Line Interface
-order: 204
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/sharing-notebooks/'
+    canonical: '/pages/platform/ai/cli_14_howto_cli_sharing'
 updated: 2021-05-27
 ---
 
@@ -13,11 +10,11 @@ updated: 2021-05-27
 
 ## Objective
 
-This guide shows how to share [**notebooks**](https://docs.ovh.com/fr/publiccloud/ai/notebooks/definition/) with other people through the **ovhai** CLI.
+This guide shows how to share [**notebooks**](/pages/platform/ai/notebook_guide_introduction_definition) with other people through the **ovhai** CLI.
 
 ## Requirements
 
--   a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/fr/publiccloud/ai/cli/install-client/))
+-   a working `ovhai` CLI ([how to install ovhai CLI](/pages/platform/ai/cli_10_howto_install_cli))
 
 ## Share a notebook with people in your Public Cloud project
 

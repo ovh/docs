@@ -1,8 +1,5 @@
 ---
 title: Structure
-slug: overview-structure
-section: Overview
-order: 2
 updated: 2022-07-06
 ---
 

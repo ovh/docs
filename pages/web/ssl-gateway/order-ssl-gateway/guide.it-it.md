@@ -1,10 +1,8 @@
 ---
 title: Attiva un SSL Gateway
-slug: attiva-un-ssl-gateway
 links: 
    - docs/web/ssl-gateway/use_ssl_gateway/
 excerpt: Come rendere sicure le connessioni al tuo sito Web
-order: 01
 updated: 2022-12-01
 ---
 

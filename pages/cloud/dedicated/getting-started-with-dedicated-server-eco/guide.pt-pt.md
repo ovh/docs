@@ -1,9 +1,6 @@
 ---
 title: 'Primeiros passos com um servidor dedicado Kimsufi, So You Start ou Rise'
-slug: getting-started-dedicated-server-eco
 excerpt: 'Saiba como utilizar o seu novo servidor dedicado Kimsufi, So You Start ou Rise'
-section: Introdução
-order: 2
 updated: 2023-02-28
 ---
 
@@ -39,7 +36,7 @@ Na nova janela, selecione uma das opções de instalação:
 
 - `Instalar a partir de um template OVHcloud`{.action}: pode selecionar o sistema operativo e personalizar a configuração do seu servidor.
 - `Instalar um dos seus templates`{.action}: para poder aplicar um template personalizado, deve ter previamente registado, pelo menos, uma configuração de servidor. Para isso, é necessário selecionar a opção "Registar esta instalação" na etapa 4 do processo de instalação.
-- `Instalar a partir de uma imagem personalizada`{.action}: esta opção permite-lhe instalar uma imagem externa no servidor. Para mais informações, consulte o [guia sobre a funcionalidade Bring Your Own Image](../bringyourownimage/).
+- `Instalar a partir de uma imagem personalizada`{.action}: esta opção permite-lhe instalar uma imagem externa no servidor. Para mais informações, consulte o [guia sobre a funcionalidade Bring Your Own Image](/pages/cloud/dedicated/bring-your-own-image).
 
 > [!primary]
 >
@@ -84,7 +81,7 @@ Na nova janela, introduza um ID (nome da sua escolha) e a própria chave (do tip
 
 ![Personalizar a configuração da partição](images/SSH_12.png){.thumbnail}
 
-Para obter uma explicação detalhada sobre a geração de chaves SSH, consulte o nosso [guia](../criar-chaves-ssh-dedicadas/).
+Para obter uma explicação detalhada sobre a geração de chaves SSH, consulte o nosso [guia](/pages/cloud/dedicated/creating-ssh-keys-dedicated).
 
 > [!warning]
 >A OVHcloud fornece-lhe serviços pelos quais é responsável em termos de configuração e gestão. Assim, é responsável pelo seu bom funcionamento.
@@ -112,13 +109,13 @@ ssh root@IPv4_do_servidor
 ssh root@nome_de_referência_do_servidor
 ```
 
-Para saber mais sobre SSH, consulte o nosso guia [Introdução ao SSH](../ssh-introducao/).
+Para saber mais sobre SSH, consulte o nosso guia [Introdução ao SSH](/pages/cloud/dedicated/ssh_introduction).
 
 #### Windows
 
 Uma vez terminada a instalação, receberá um e-mail com a sua palavra-passe de acesso administrador (root). Deve utilizar estas informações de identificação para se ligar ao servidor através de RDP (**R**emote **D**esktop **P**rotocol). Uma vez ligado, o Windows irá guiá-lo durante a instalação inicial.
 
-Consulte também o nosso guia [Configurar uma nova instalação do Windows Server](https://docs.ovh.com/pt/dedicated/windows-first-config/).
+Consulte também o nosso guia [Configurar uma nova instalação do Windows Server](/pages/cloud/dedicated/windows_first_config).
 
 ### Reinicialização do seu servidor dedicado <a name="reboot"></a>
 
@@ -134,9 +131,9 @@ No entanto, pode efetuar um "hard reboot" a qualquer momento na sua [Área de Cl
 
 ### Segurança do seu servidor dedicado
 
-Como explicado acima, o cliente é o administrador do seu servidor dedicado. Enquanto tal, é responsável pelos seus dados e pela sua segurança. Para saber mais sobre a segurança do seu servidor, consulte o nosso guia [Proteger um servidor dedicado](../proteger-um-servidor-dedicado/).
+Como explicado acima, o cliente é o administrador do seu servidor dedicado. Enquanto tal, é responsável pelos seus dados e pela sua segurança. Para saber mais sobre a segurança do seu servidor, consulte o nosso guia [Proteger um servidor dedicado](/pages/cloud/dedicated/securing-a-dedicated-server).
 
-Se utilizar um servidor Windows, consulte [este guia](https://docs.ovh.com/pt/dedicated/firewall-windows/).
+Se utilizar um servidor Windows, consulte [este guia](/pages/cloud/dedicated/activate-port-firewall-soft-win).
 
 ### Monitorização OVHcloud
 
@@ -154,7 +151,7 @@ Clique no botão `Configurar`{.action}. Na janela que aparece, tem três opçõe
 
 Clique em `Confirmar`{.action} para atualizar a sua configuração de vigilância.
 
-Para mais informações sobre o sistema de monitorização, consulte [este manual](https://docs.ovh.com/pt/dedicated/monitoring-ip-ovh/).
+Para mais informações sobre o sistema de monitorização, consulte [este manual](/pages/cloud/dedicated/network_ip_monitoring).
 
 ### Configuração de rede
 
@@ -169,13 +166,13 @@ O modo bridge é a ação empreendida pelo equipamento de rede para criar uma re
 
 Trata-se de uma configuração frequentemente utilizada no contexto da virtualização, para permitir que cada máquina virtual tenha o seu próprio endereço IP público.
 
-Para mais informações sobre o modo bridge, consulte o nosso manual: [Modo bridge IP](../network-bridging/).
+Para mais informações sobre o modo bridge, consulte o nosso manual: [Modo bridge IP](/pages/cloud/dedicated/network_bridging).
 
 #### Alias IP
 
 O modo alias IP associa dois endereços IP ou mais a uma interface de rede. Isto permite que o seu servidor estabeleça várias ligações a uma rede, cada uma delas com um objetivo diferente.
 
-Para obter instruções detalhadas sobre a configuração do alias IP, consulte o manual [Configurar o endereço IP em alias](../network-ipaliasing).
+Para obter instruções detalhadas sobre a configuração do alias IP, consulte o manual [Configurar o endereço IP em alias](/pages/cloud/dedicated/network_ipaliasing).
 
 #### Configuração IPv6
 
@@ -184,13 +181,13 @@ Para obter instruções detalhadas sobre a configuração do alias IP, consulte 
 > Os servidores da gama **Kimsufi** só dispõem de um endereço IPv4 e de um endereço IPv6. Os endereços serão configurados automaticamente aquando da instalação do sistema operativo.
 >
 
-Todos os servidores dedicados OVHcloud são entregues com um bloco /64 IPv6. Para utilizar os endereços deste bloco, deve introduzir modificações na configuração da rede. Consulte o nosso guia [Configuração IPv6](../rede-ipv6/).
+Todos os servidores dedicados OVHcloud são entregues com um bloco /64 IPv6. Para utilizar os endereços deste bloco, deve introduzir modificações na configuração da rede. Consulte o nosso guia [Configuração IPv6](/pages/cloud/dedicated/network_ipv6).
 
 ### Modo rescue
 
 Para todo o tipo de problema, a primeira etapa de reparação consiste em reiniciar o seu servidor em modo de rescue a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). É importante identificar os problemas do servidor neste modo, de forma a excluir os problemas relacionados com os softwares antes de contactar as nossas equipas de suporte.
 
-Consulte o manual "[Ativar e utilizar o modo rescue](../rescue_mode/)".
+Consulte o manual "[Ativar e utilizar o modo rescue](/pages/cloud/dedicated/rescue_mode)".
 
 ### Acesso à ajuda do IPMI
 
@@ -201,7 +198,7 @@ Consulte o manual "[Ativar e utilizar o modo rescue](../rescue_mode/)".
 
 A OVHcloud implementa todos os servidores dedicados com uma consola IPMI (Intelligent Platform Management Interface) que é executada no seu browser ou a partir de uma applet Java, e permite-lhe aceder diretamente ao seu servidor, mesmo que não tenha uma ligação de rede. Isto faz dele uma ferramenta útil para resolver problemas que possam ter colocado o seu servidor fora da linha.
 
-Para mais informações, consulte o nosso manual "[Utilização do IPMI com servidores dedicados](../usar-ipmi-servidores-dedicados/)".
+Para mais informações, consulte o nosso manual "[Utilização do IPMI com servidores dedicados](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers)".
 
 ### Backup Storage
 
@@ -212,7 +209,7 @@ Para mais informações, consulte o nosso manual "[Utilização do IPMI com serv
 
 Os servidores dedicados da OVHcloud incluem um espaço de armazenamento com controlo de acesso e fornecido como opção gratuita. É preferível utilizá-la como opção de backup complementar se o próprio servidor sofrer uma perda de dados.
 
-Para ativar e utilizar a opção Backup Storage, consulte [este guia](../servicos-backup-storage/).
+Para ativar e utilizar a opção Backup Storage, consulte [este guia](/pages/cloud/dedicated/services_backup_storage).
 
 ## Quer saber mais?
 

@@ -1,8 +1,6 @@
 ---
 title: 'Passwort eines OpenStack-Benutzers in Horizon ändern'
 excerpt: 'Hier erfahren Sie, wie Sie ein Benutzerpasswort im Horizon-Interface ändern.'
-slug: openstack-benutzerpasswort-aendern
-section: 'Horizon'
 updated: 2018-03-07
 ---
 
@@ -11,7 +9,7 @@ updated: 2018-03-07
 
 ## Einleitung
 
-In der Anleitung "[Auf das Horizon-Interface zugreifen](https://docs.ovh.com/de/public-cloud/horizon/)" konnten Sie nachlesen, wie Sie einen OpenStack-Benutzer und ein Zugangspasswort erstellen und löschen.
+In der Anleitung "[Auf das Horizon-Interface zugreifen](/pages/platform/public-cloud/introducing_horizon)" konnten Sie nachlesen, wie Sie einen OpenStack-Benutzer und ein Zugangspasswort erstellen und löschen.
 
 Mithilfe des Horizon-Panels kann jedem Benutzer ein Passwort zugewiesen werden. Bitte beachten Sie, dass beim Ändern eines Benutzerkonto-Passworts die bisherigen Login-Daten sofort gelöscht werden.
 

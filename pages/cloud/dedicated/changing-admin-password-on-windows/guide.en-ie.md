@@ -1,9 +1,6 @@
 ---
 title: 'Changing the admin password on a Windows dedicated server'
-slug: windows-admin-password-change
 excerpt: 'Find out how to change the admin password on a Windows dedicated server'
-section: 'Server Management'
-order: 2
 updated: 2021-01-12
 ---
 
@@ -11,7 +8,7 @@ updated: 2021-01-12
 
 ## Objectivev
 
-When you install or reinstall a Windows operating system, you are provided with a password for administrative access. We strongly recommend that you change this initial password, as detailed in our guide about [securing a dedicated server](../securing-a-dedicated-server/). In case you have lost your admin password, it needs to be reset using rescue mode.
+When you install or reinstall a Windows operating system, you are provided with a password for administrative access. We strongly recommend that you change this initial password, as detailed in our guide about [securing a dedicated server](/pages/cloud/dedicated/securing-a-dedicated-server). In case you have lost your admin password, it needs to be reset using rescue mode.
 
 **This guide will take you through the process of changing your server's admin password via the available rescue mode configurations for a Windows OS.**
 
@@ -39,11 +36,11 @@ Once the change is completed, click on `...`{.action} next to "Status" in the bo
 
 ![rescuereboot](images/adminpw_win_02.png){.thumbnail}
 
-For more information about rescue mode, please refer to [this guide](../rescue_mode/).
+For more information about rescue mode, please refer to [this guide](/pages/cloud/dedicated/rescue_mode).
 
 ### Step 2: Mounting the system partition
 
-Connect to your server via SSH. (Consult the [SSH introduction guide](../ssh-introduction/) if necessary.) Since it is a Windows server, you will see partitions labelled "Microsoft LDM data".
+Connect to your server via SSH. (Consult the [SSH introduction guide](/pages/cloud/dedicated/ssh_introduction) if necessary.) Since it is a Windows server, you will see partitions labelled "Microsoft LDM data".
 
 ```
 # fdisk -l
@@ -286,7 +283,7 @@ Once the change is completed, click on `...`{.action} next to "Status" in the bo
 
 ![rescuereboot](images/adminpw_win_02.png){.thumbnail}
 
-For more information about rescue mode, please refer to [this guide](../rescue_mode/).
+For more information about rescue mode, please refer to [this guide](/pages/cloud/dedicated/rescue_mode).
 
 #### Step 2: Clearing the current password
 
@@ -319,8 +316,8 @@ Continue with [Step 5: Setting a new password (IPMI)](./#step-5-setting-a-new-pa
 
 ## Go further
 
-[Activating and using rescue mode](../rescue_mode/)
+[Activating and using rescue mode](/pages/cloud/dedicated/rescue_mode)
 
-[Using the IPMI with dedicated servers](../use-ipmi-dedicated-servers/)
+[Using the IPMI with dedicated servers](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers)
 
 Join our community of users on <https://community.ovh.com/en/>.

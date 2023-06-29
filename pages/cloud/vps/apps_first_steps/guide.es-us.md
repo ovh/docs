@@ -1,9 +1,6 @@
 ---
 title: 'Primeros pasos con las aplicaciones preinstaladas'
-slug: aplicaciones-preinstalables
 excerpt: Cómo desplegar aplicaciones preinstaladas en un VPS
-section: 'Primeros pasos'
-order: 7
 updated: 2022-08-25
 ---
 
@@ -27,7 +24,7 @@ OVHcloud ofrece a los clientes VPS imágenes de aplicaciones preinstaladas para 
 
 ### Instalar la aplicación preinstalada que desee
 
-Instale la aplicación que desee desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) o las API de OVHcloud. También puede consultar nuestra guía [Primeros pasos con un VPS](../primeros-pasos-con-vps/).
+Instale la aplicación que desee desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) o las API de OVHcloud. También puede consultar nuestra guía [Primeros pasos con un VPS](/pages/cloud/vps/starting_with_a_vps).
 
 #### cPanel
 
@@ -54,7 +51,7 @@ No es necesario realizar ningún otro paso para finalizar la primera configuraci
 > [!faq]
 >
 > ¿Puedo utilizar mis propios servidores DNS?
->> Sí, puede. Asegúrese de crear los registros Glue con su agente registrador de dominios. Por ejemplo, si quiere "ns1.mydomain.com" y "ns2.mydomain.com", debe configurar los registros Glue para que ambos apunten a la dirección IP de su servidor. Si tiene su dominio registrado con OVHcloud, puede seguir [esta guía](../../domains/glue_record/#1-anadir-los-registros-glue) La creación puede tardar 24 horas.
+>> Sí, puede. Asegúrese de crear los registros Glue con su agente registrador de dominios. Por ejemplo, si quiere "ns1.mydomain.com" y "ns2.mydomain.com", debe configurar los registros Glue para que ambos apunten a la dirección IP de su servidor. Si tiene su dominio registrado con OVHcloud, puede seguir [esta guía](/pages/web/domains/glue_registry#1-anadir-los-registros-glue) La creación puede tardar 24 horas.
 > ¿Por qué establecer la contraseña root?
 >> WHM utiliza por defecto el usuario root para la autenticación. La URL de un solo uso permite acceder a la primera configuración y cambiar la contraseña root. La próxima vez que se conecte a WHM, deberá utilizar el usuario root y la contraseña que haya establecido.
 > ¿Dónde está mi licencia para cPanel?
@@ -98,7 +95,7 @@ Esta sección solo se aplica a las instalaciones de WordPress, Drupal, Joomla! y
      personaldomain.ovh <br>
      www.personaldomain.ovh <br>  
 
-Si su dominio está registrado en OVHcloud, puede seguir [esta guía.](../../domains/web_hosting_como_editar_mi_zona_dns/)
+Si su dominio está registrado en OVHcloud, puede seguir [esta guía.](/pages/web/domains/dns_zone_edit)
 <br>Si su dominio está registrado con otra empresa, deberá contactar con ella para solicitar ayuda sobre la configuración de sus registros `A`.
 
 <ol start="2">

@@ -1,9 +1,6 @@
 ---
 title: "Configure um endereço IPv6 para o seu website"
-slug: configurar-ipv6-para-o-site
 excerpt: "Descubra como tornar o seu website compatível com um endereço IPv6"
-section: Configuração do alojamento
-order: 06
 updated: 2023-02-10
 ---
 
@@ -42,7 +39,7 @@ Os nossos alojamentos web são compatíveis com IPv6 desde 2011. Mas a ativaçã
 > Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste tutorial.
 > 
 
-Se o seu site não estiver configurado para funcionar com um endereço IPv6, pode adicionar [o endereço IPv6 do seu alojamento partilhado OVHcloud](https://docs.ovh.com/pt/hosting/lista-dos-enderecos-ip-dos-clusters-e-alojamentos-web/) na zona DNS ativa do seu nome de domínio. O objetivo é permitir aos browsers encontrar um endereço IPv6 associado ao seu website através do seu domínio.
+Se o seu site não estiver configurado para funcionar com um endereço IPv6, pode adicionar [o endereço IPv6 do seu alojamento partilhado OVHcloud](/pages/web/hosting/clusters_and_shared_hosting_IP) na zona DNS ativa do seu nome de domínio. O objetivo é permitir aos browsers encontrar um endereço IPv6 associado ao seu website através do seu domínio.
 
 ### Verificar a compatibilidade IPv6 do seu website
 
@@ -65,7 +62,7 @@ No quadro **IPv6**, copie a entrada e passe ao passo seguinte.
 > Além disso, a adição, modificação ou supressão de uma entrada DNS na zona DNS ativa de um nome de domínio leva a um atraso de propagação de **4 à 24 horas** para ser plenamente efetivo.
 >
 
-Para que o seu browser encontre o endereço IPv6 com o seu nome de domínio, modifique a zona DNS ativa do seu domínio. Utilize o nosso guia "[Editar uma zona DNS da OVHcloud](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#editar-a-zona-dns-da-ovhcloud-do-seu-dominio)" para criar uma entrada DNS do tipo **AAAA**.
+Para que o seu browser encontre o endereço IPv6 com o seu nome de domínio, modifique a zona DNS ativa do seu domínio. Utilize o nosso guia "[Editar uma zona DNS da OVHcloud](/pages/web/domains/dns_zone_edit#editar-a-zona-dns-da-ovhcloud-do-seu-dominio)" para criar uma entrada DNS do tipo **AAAA**.
 
 Na parte `Web Cloud`{.action}, clique nos `Nomes de domínio`{.action}. Escolha o seu nome de domínio e aceda ao separador `Zona DNS`{.action}. Clique no botão `Para Adicionar uma entrada`{.action} à direita da tabela. 
 
@@ -75,7 +72,7 @@ Introduza o endereço IPv6 previamente copiado utilizando o tipo de registo **AA
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Editar uma zona DNS da OVHcloud](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#editar-a-zona-dns-da-ovhcloud-do-seu-dominio)
+[Editar uma zona DNS da OVHcloud](/pages/web/domains/dns_zone_edit#editar-a-zona-dns-da-ovhcloud-do-seu-dominio)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 

@@ -1,9 +1,6 @@
 ---
 title: "Manage your server reboot with the OVHcloud Link Aggregation feature (EN)"
-slug: netboot-ola
 excerpt: "Find out how to reboot your OVHcloud servers, working through your active private aggregation"
-section: 'Advanced usage'
-order: 05
 updated: 2022-12-14
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-dedicated-servers-ola-netboot?id=kb_article_view&sysparm_article=KB0057725'

@@ -1,9 +1,6 @@
 ---
 title: HA-NAS - Managing snapshots via API
-slug: nas/snapshots-api
 excerpt: Find out how to manage HA-NAS snapshots using the OVHcloud API
-section: HA-NAS
-order: 09
 updated: 2022-07-20
 ---
 
@@ -18,12 +15,12 @@ OVHcloud HA-NAS allows you to create and manage file volumes that can be accesse
 ## Requirements
 
 - An OVHcloud [HA-NAS service](https://www.ovh.co.uk/nas/)
-- Consulting the [OVHcloud API first steps guide](https://docs.ovh.com/au/en/api/first-steps-with-ovh-api/) to familiarise yourself with the OVHcloud APIv6
+- Consulting the [OVHcloud API first steps guide](/pages/account/api/first-steps) to familiarise yourself with the OVHcloud APIv6
 
 ## Instructions
 
 > [!primary]
-> Please visit the [HA-NAS FAQ page](https://docs.ovh.com/au/en/storage/file-storage/nas/faq/) for detailed information on the snapshot function.
+> Please visit the [HA-NAS FAQ page](/pages/cloud/storage/file_storage/nas_faq) for detailed information on the snapshot function.
 >
 
 All API routes in this guide are available in the section */dedicated/nasha*: <https://api.ovh.com/console/#/dedicated/nasha>.
@@ -294,9 +291,9 @@ You can find more information in the [Go further](#gofurther) section of this gu
 
 ## Go further
 
-[Mount your NAS via NFS share](https://docs.ovh.com/au/en/storage/file-storage/nas/nfs/)
+[Mount your NAS via NFS share](/pages/cloud/storage/file_storage/nas_nfs)
 
-[Mount your NAS on Windows Server via CIFS](https://docs.ovh.com/au/en/storage/file-storage/nas/cifs/)
+[Mount your NAS on Windows Server via CIFS](/pages/cloud/storage/file_storage/nas_cifs)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

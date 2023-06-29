@@ -1,9 +1,6 @@
 ---
 title: Configurer le pare-feu sous Windows
 excerpt: Découvrez comment configurer votre pare-feu sous Windows
-slug: firewall-windows
-section: Sécurité
-order: 02
 updated: 2022-01-31
 ---
 

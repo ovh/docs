@@ -1,8 +1,6 @@
 ---
 title: "Rétablir la synchronisation d'une connexion suite à une coupure"
-slug: retablir-synchronisation-suite-coupure
 excerpt: 'Découvrez comment rétablir la synchronisation de votre ligne xDSL OVH suite à une coupure'
-section: 'Diagnostic et dépannage'
 updated: 2018-09-18
 ---
 
@@ -30,7 +28,7 @@ Une coupure de synchronisation est généralement occasionnée par un élément 
 
 Avant de débuter, assurez-vous que la panne que vous rencontrez actuellement est bien liée à une coupure de synchronisation. Aidez-vous des voyants de votre modem pour le vérifier. 
 
-Si cela est nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Rétablir son service suite à une coupure complète ou partielle](https://docs.ovh.com/fr/xdsl/interruption-de-service/){.external} » afin de vous en assurer. Dès lors, si la panne rencontrée est bien liée à une coupure de synchronisation, poursuivez la lecture de cette documentation afin de réaliser quelques vérifications préalables. 
+Si cela est nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Rétablir son service suite à une coupure complète ou partielle](/pages/telecom/xdsl/interruption_de_service){.external} » afin de vous en assurer. Dès lors, si la panne rencontrée est bien liée à une coupure de synchronisation, poursuivez la lecture de cette documentation afin de réaliser quelques vérifications préalables. 
 
 ### Étape 2 : réaliser des vérifications préalables
 
@@ -75,7 +73,7 @@ Les tests listés ci-dessous doivent être réalisés dans l'ordre, jusqu'à la 
 
 Débranchez d'abord tous les équipements connectés sur les prises téléphoniques de votre domicile, sauf votre modem. 
 
-Une fois cette action effectuée, redémarrez votre modem. Si besoin, reportez-vous aux instructions décrites dans notre documentation « [Redémarrer ou réinitialiser un modem ADSL OVH](https://docs.ovh.com/fr/xdsl/redemarrer-reinitialiser-modem-adsl-ovh/){.external} ».
+Une fois cette action effectuée, redémarrez votre modem. Si besoin, reportez-vous aux instructions décrites dans notre documentation « [Redémarrer ou réinitialiser un modem ADSL OVH](/pages/telecom/xdsl/restart_reboot_modem){.external} ».
 
 #### 2. Vérifier l'environnement électromagnétique
 
@@ -131,7 +129,7 @@ Deux tests croisés sont possibles :
 
 #### 8. Réinitialiser le modem
 
-Le dernier test possible consiste à réinitialiser votre modem. Si besoin, reportez-vous aux instructions décrites dans notre documentation « [Redémarrer ou réinitialiser un modem ADSL OVH](https://docs.ovh.com/fr/xdsl/redemarrer-reinitialiser-modem-adsl-ovh/){.external} ».
+Le dernier test possible consiste à réinitialiser votre modem. Si besoin, reportez-vous aux instructions décrites dans notre documentation « [Redémarrer ou réinitialiser un modem ADSL OVH](/pages/telecom/xdsl/restart_reboot_modem){.external} ».
 
 ## Aller plus loin
 

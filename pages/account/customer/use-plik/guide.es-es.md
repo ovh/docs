@@ -1,8 +1,6 @@
 ---
 title: 'Compartir archivos con la herramienta Plik'
 excerpt: "Descubra cómo usar la herramienta Plik para enviar archivos a otras personas"
-slug: plik
-section: Herramientas
 updated: 2022-02-14
 ---
 
@@ -20,7 +18,7 @@ La herramienta online [Plik](https://plik.ovhcloud.com) permite compartir archiv
 
 ## Requisitos
 
-- Disponer de una [cuenta de OVHcloud](https://docs.ovh.com/es/customer/crear-cuenta-ovhcloud/).
+- Disponer de una [cuenta de OVHcloud](/pages/account/customer/ovhcloud-account-creation).
 
 ## Procedimiento
 
@@ -39,7 +37,7 @@ Introduzca sus claves de acceso y haga clic en el botón `Log in`{.action} para 
 
 > [!primary]
 >
-> Si ha activado la [doble autenticación](https://docs.ovh.com/es/customer/proteger-su-cuenta-con-una-2FA/) en su cuenta, deberá introducir el código proporcionado por el método de autenticación que haya establecido en su cuenta. 
+> Si ha activado la [doble autenticación](/pages/account/customer/secure-ovhcloud-account-with-2fa) en su cuenta, deberá introducir el código proporcionado por el método de autenticación que haya establecido en su cuenta. 
 
 ### Descargar archivos
 

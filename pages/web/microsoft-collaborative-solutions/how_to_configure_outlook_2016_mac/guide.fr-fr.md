@@ -1,9 +1,6 @@
 ---
 title: Configurer son compte Exchange sur Outlook 2016 pour Mac
-slug: configuration-outlook-2016-mac
 excerpt: Apprenez à configurer un compte Exchange sur Outlook 2016 pour Mac
-section: Configuration sur ordinateur
-order: 02
 updated: 2018-06-01
 ---
 
@@ -31,9 +28,9 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 
 > [!primary]
 >
-> Vous utilisez une version antérieure d'Outlook pour Mac ? Consultez notre documentation : [Configurer son compte Exchange sur Outlook 2011 pour Mac](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-microsoft-outlook-2011-mac/){.external}.
+> Vous utilisez une version antérieure d'Outlook pour Mac ? Consultez notre documentation : [Configurer son compte Exchange sur Outlook 2011 pour Mac](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016_mac){.external}.
 >
-> Vous utilisez Outlook 2016 pour Windows ? Consultez notre documentation : [Configurer son compte Exchange sur Outlook 2016 pour Windows](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-outlook-2016/){.external}.
+> Vous utilisez Outlook 2016 pour Windows ? Consultez notre documentation : [Configurer son compte Exchange sur Outlook 2016 pour Windows](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016){.external}.
 >
 
 ## En pratique
@@ -72,8 +69,8 @@ OVHcloud propose une application web disposant de [fonctions collaboratives](htt
 
 ## Aller plus loin
 
-[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur Outlook 2016 pour Mac](https://docs.ovh.com/fr/emails/configuration-outlook-2016-mac/){.external}
+[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur Outlook 2016 pour Mac](/pages/web/emails/how_to_configure_outlook_2016_mac){.external}
 
-[Configurer son compte E-mail Pro sur Outlook 2016 pour Mac](https://docs.ovh.com/fr/emails-pro/configuration-outlook-2016-mac/){.external}
+[Configurer son compte E-mail Pro sur Outlook 2016 pour Mac](/pages/web/emails-pro/how_to_configure_outlook_2016_mac){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

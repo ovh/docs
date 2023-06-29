@@ -1,10 +1,7 @@
 ---
 title: Unable to send or receive emails
-slug: email-advanced-usage
 legacy_guide_number: 2117
 excerpt: Find out what to do if your emails are not sent or received correctly by OVHcloud
-section: Troubleshooting
-order: 02
 updated: 2023-06-15
 ---
 
@@ -16,7 +13,7 @@ Is your email account unable to send or receive emails when using webmail or you
 
 > [!primary]
 >
-> If you have any other questions that are not covered by this guide, please refer to our [Email FAQ](../emails-faq/).
+> If you have any other questions that are not covered by this guide, please refer to our [Email FAQ](/pages/web/emails/faq-emails).
 
 ## Requirements
 
@@ -29,7 +26,7 @@ Is your email account unable to send or receive emails when using webmail or you
 
 For your emails to work, you need to have an active email service. If your email solution is linked to a Web Hosting plan, check that it has not expired. You can verify this directly in the OVHcloud Control Panel. The corresponding domain name must also be active.
 
-Start by checking that you are up to date with your [payments](https://docs.ovh.com/ca/en/billing/manage-ovh-bills/#pay-bills) and service [renewals](https://docs.ovh.com/ca/en/billing/how-to-use-automatic-renewal-at-ovh/#renewal-management).
+Start by checking that you are up to date with your [payments](/pages/account/billing/invoice_management#pay-bills) and service [renewals](/pages/account/billing/how_to_use_automatic_renewal#renewal-management).
 
 Follow these steps to ensure that your relevant services are up and running:
 
@@ -42,9 +39,9 @@ Follow these steps to ensure that your relevant services are up and running:
 
 If you use an email client on your computer (Outlook, Mac Mail, Thunderbird, etc.) or smartphone (iOS, Android, etc.), and you experience a sending or receiving technical issue, check the configuration settings according to your email solution and the email client or application you are using.
 
-- For an **MXplan** solution, go to the [Hosted email](https://docs.ovh.com/ca/en/emails/) section in our **Web Cloud** guides, and check the configuration of your email software in the `Configure on computer` section, or in the `Configure on smartphone` section for your smartphone.
+- For an **MXplan** solution, go to the [Hosted email](/products/web-cloud-email-collaborative-solutions-mx-plan) section in our **Web Cloud** guides, and check the configuration of your email software in the `Configure on computer` section, or in the `Configure on smartphone` section for your smartphone.
 
-- For an **Exchange** offer, in the [Microsoft Collaborative Solutions ](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/) section in our **Web Cloud** guides, check the configuration of your email software in the section `Email clients` or your smartphone in `Exchange-compatible smartphone and tablet configuration`.
+- For an **Exchange** offer, in the [Microsoft Collaborative Solutions ](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) section in our **Web Cloud** guides, check the configuration of your email software in the section `Email clients` or your smartphone in `Exchange-compatible smartphone and tablet configuration`.
 
 ### Are emails functional from webmail?
 
@@ -60,7 +57,7 @@ Make sure you have the right password. If necessary, you can modify it. Also che
 
 Here is how to change the password for an email address:
 
-- For an **MX Plan** solution, please refer to our guide on [Changing a password for an MX Plan email address](../changing-email-address-password/)
+- For an **MX Plan** solution, please refer to our guide on [Changing a password for an MX Plan email address](/pages/web/emails/email_change_password)
 
 - For an **Exchange** solution, go to the `Web Cloud`{.action} section, click `Microsoft`{.action}, then click `Exchange`{.action} and select your platform. In the `Email`{.action} accounts tab, click the `...`{.action} button, then click `Modify`{.action} to change the password.
 
@@ -73,7 +70,7 @@ You can check the various tasks that are currently in progress on <https://web-c
 
 ### Is the domain name pointing correctly to my email service?
 
-Check that your domain name points correctly to the OVHcloud email servers. To do this, you will need to configure MX records in your DNS zone. <br>Please refer to our guide on [Adding an MX record to your domain name’s configuration](../../domains/web_hosting_configuring_mx_with_the_ovh_dns_zone/).
+Check that your domain name points correctly to the OVHcloud email servers. To do this, you will need to configure MX records in your DNS zone. <br>Please refer to our guide on [Adding an MX record to your domain name’s configuration](/pages/web/domains/dns_zone_mx).
 
 ![DNSzone](images/DNS-CA.png){.thumbnail}
 
@@ -112,7 +109,7 @@ The majority of SMTP negative response codes used by servers are listed below:
 |502|Command not implemented|The settings or options used when sending the email with your SMTP server are recognised but disabled in its configuration. Please contact your service provider.|
 |503|Server encountered bad sequence of commands|This is usually due to an authentication problem, make sure you are authenticated on the SMTP server in terms of your email software configuration.|
 |504|Command parameter not implemented|The settings or options used when sending the email with your SMTP server are recognised but disabled in its configuration. Please contact your service provider.|
-|535|Authentication failed|User information/password is incorrect or sending is potentially blocked on your email address. Check the status of your email address in your OVHcloud Control Panel. A password change can unblock the sending if the account has been blocked for spam, see our guide [What to do if your account is blocked for spam](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/blocked-for-spam/) for more information.|
+|535|Authentication failed|User information/password is incorrect or sending is potentially blocked on your email address. Check the status of your email address in your OVHcloud Control Panel. A password change can unblock the sending if the account has been blocked for spam, see our guide [What to do if your account is blocked for spam](/pages/web/emails/locked_for_spam) for more information.|
 |550|Requested action not performed: mailbox unavailable|The destination mail server could not verify the email address used. This is most often caused by an invalid destination email address, but can also mean that the destination email server has firewall or connectivity issues. Check the recipient's email address, and/or try again.|
 |550 5.7.26|This message does not have authentication information or fails to pass authentication checks| The email was rejected because the sender's email service does not have SPF or DKIM configured on their domain name.<br><br>It is advisable to set up a priority SPF record, which is compatible with all email offers. Use our guide “[Configure an SPF record on your domain name](/pages/web/domains/dns_zone_spf)”.<br><br>If your email offer has the DKIM option, you can put it in place using our guide “[Set up a DKIM record](/pages/web/domains/dns_zone_dkim)”.|
 |551|User not local or invalid address – Relay denied|This is typically used as a spam prevention strategy. It says that the mail relay is not authorised for any reason to relay your message to another server than yours. Please contact your service provider.|
@@ -123,6 +120,6 @@ The majority of SMTP negative response codes used by servers are listed below:
 
 ## Go further
 
-[Email FAQ](../emails-faq/)
+[Email FAQ](/pages/web/emails/faq-emails)
 
 Join our community of users on <https://community.ovh.com/en/>.

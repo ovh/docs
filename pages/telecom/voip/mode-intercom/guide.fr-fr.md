@@ -1,8 +1,6 @@
 ---
 title: 'Gérer le mode intercom de votre ligne'
-slug: mode-intercom
 excerpt: 'Apprenez à gérer le mode intercom de votre ligne OVHcloud'
-section: 'Lignes téléphoniques'
 updated: 2021-06-22
 ---
 

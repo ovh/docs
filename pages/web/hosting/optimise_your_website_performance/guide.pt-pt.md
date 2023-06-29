@@ -1,9 +1,6 @@
 ---
 title: 'Otimizar o desempenho do seu website'
 excerpt: 'Saiba como analisar a latência do seu website e como a melhorar'
-slug: partilhado_guia_de_otimizacao_das_performances_do_seu_site
-section: Otimizar o seu site
-order: 06
 updated: 2022-02-03
 ---
 
@@ -66,9 +63,9 @@ Algumas variáveis do servidor são alteradas através da utilização do PHP-FP
 |max_input_vars|2000|16000|
 |memory_limit|128M|512M|
 
-Pode obter informações sobre como atualizar o PHP [neste guia](../configurar_o_php_num_alojamento_web_alojamentos_2014_ovh/){.external}.
+Pode obter informações sobre como atualizar o PHP [neste guia](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014){.external}.
 
-Para mudar para a utilização do PHP-FPM na versão _estável_ ou para obter detalhes sobre opções mais avançadas do seu alojamento web, consulte [este guia](../modificar_o_ambiente_de_execucao_do_meu_alojamento_web/){.external}.
+Para mudar para a utilização do PHP-FPM na versão _estável_ ou para obter detalhes sobre opções mais avançadas do seu alojamento web, consulte [este guia](/pages/web/hosting/ovhconfig_modify_system_runtime){.external}.
 
 O ficheiro _.ovhconfig_ funciona na raiz do pacote de alojamento ou num subdiretório de nível 1 (por ex.: _/www/_), mas não em diretórios de nível 2 ou superiores (por ex.: _/www/test/_ , _/www/test/test2/_)
 
@@ -222,10 +219,10 @@ Se, apesar de todas as alterações e otimizações realizadas, a base de dados 
 
 ## Vá mais longe
 
-[Alterar a configuração de um plano de alojamento web](../modificar_o_ambiente_de_execucao_do_meu_alojamento_web/){.external}
+[Alterar a configuração de um plano de alojamento web](/pages/web/hosting/ovhconfig_modify_system_runtime){.external}
 
-[Gestão de uma base de dados num pacote de alojamento web](../gestao-de-uma-base-de-dados-a-partir-de-um-alojamento-partilhado-ovh/){.external}
+[Gestão de uma base de dados num pacote de alojamento web](/pages/web/hosting/sql_create_database){.external}
 
-[Web Cloud Databases - primeira utilização](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/){.external}
+[Web Cloud Databases - primeira utilização](/pages/web/clouddb/starting_with_clouddb){.external}
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

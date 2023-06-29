@@ -1,9 +1,6 @@
 ---
 title: Managing Web PaaS from the OVHcloud Control Panel
 excerpt: Find out how to manage your Web PaaS solution in the OVHcloud Control Panel
-slug: web-paas-managing-service
-section: Getting started
-order: 2
 updated: 2021-05-28
 ---
 
@@ -17,7 +14,7 @@ The subscription details and attributes of your Web PaaS projects can be managed
 
 ## Requirements
 
-- A [Web PaaS solution](https://www.ovhcloud.com/en-gb/web-paas/) in your OVHcloud account (find the details in [this guide](../web-paas-manager-setup/))
+- A [Web PaaS solution](https://www.ovhcloud.com/en-gb/web-paas/) in your OVHcloud account (find the details in [this guide](/pages/web/web-paas/control-panel-creating-the-service))
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
@@ -32,7 +29,7 @@ On the Web PaaS home page, a table will list your projects and their attributes.
 
 ![All projects](images/configure_manager01.png){.thumbnail}
 
-Each project equals a service subscription. The button `New project`{.action} starts the process of ordering a [new project](../web-paas-manager-setup/).
+Each project equals a service subscription. The button `New project`{.action} starts the process of ordering a [new project](/pages/web/web-paas/control-panel-creating-the-service).
 
 You can carry out some actions by clicking on the `...`{.action} button in each row:
 
@@ -52,7 +49,7 @@ You can open the Management Console of your project by clicking on the link `Acc
 
 #### **Switching to a different plan** <a name="changeplan"></a>
 
-Click on `Change solution`{.action} in order to choose a [different subscription](../web-paas-manager-setup/). The only limitation is that you cannot downgrade to the `Start` plan.
+Click on `Change solution`{.action} in order to choose a [different subscription](/pages/web/web-paas/control-panel-creating-the-service). The only limitation is that you cannot downgrade to the `Start` plan.
 
 ![Change plan](images/configure_manager03.png){.thumbnail}
 

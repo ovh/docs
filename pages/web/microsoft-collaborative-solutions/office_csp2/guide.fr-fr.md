@@ -1,9 +1,6 @@
 ---
 title: Gérer un groupe de licences Office 365 Revendeurs (CSP2) OVHcloud
-slug: commander-et-gerer-un-groupe-de-licences-office-365-revendeur-csp2-ovh
 excerpt: Découvrez comment  souscrire et administrer un service Office 365 Revendeurs (CSP2) chez OVHcloud
-section: Office
-order: 03
 updated: 2023-01-17
 ---
 

@@ -1,15 +1,12 @@
 ---
 title: Object Storage Swift - Einem Object Storage Container eine spezifische Domain zuweisen
 excerpt: Einem Object Storage Container eine spezifische Domain zuweisen
-section: OpenStack Swift Storage Class Specifics
-slug: pcs/link-domain
 legacy_guide_number: g2006
-order: 120
 updated: 2021-10-27
 ---
 
+## Ziel
 
-## 
 Wenn Sie einen Public Container erstellen, kann jedermann auf Ihre Daten zugreifen. Das ist eine sinnvolle Lösung, wenn Sie Ihre Dateien per Internet teilen möchten.
 Um allerdings Ihre Dateien beispielsweise mit Freunden zu teilen, müssen Sie ihnen für gewöhnlich eine lange und komplizierte URL mitteilen.
 Oder aber Sie möchten diese Objekte auf Ihrer Webseite benutzen, aber nicht in Verbindung mit einer anderen Domain.
@@ -20,11 +17,8 @@ In dieser Online-Hilfe erfahren Sie, wie Sie Ihrem Container einen Domainnamen z
 
 ## Voraussetzungen
 
-- [Hinzufügen von Storage-Bereichen](https://docs.ovh.com/de/public-cloud/hinzufugen_von_storage-bereichen/)
+- [Hinzufügen von Storage-Bereichen](/pages/cloud/storage/object_storage/pcs_create_container/)
 - Ein Domainname
-
-
-
 
 ## In der Theorie
 Wenn eine HTTP-Anfrage auf einem OpenStack Object Storage eingeht, erfolgt eine Überprüfung des Headers  "host" [/ b]. Wenn dieser sich vom tatsächlichen Hostnamen unterscheidet, erfasst das System dies als abgebildeten Eintrag und macht eine DNS-Abfrage, um den vollständigen DNS-Eintrag des Hosts zu erhalten.
@@ -45,7 +39,6 @@ Sie müssen sich für eine der folgenden Möglichkeiten entscheiden:
 - CNAME: Ein CNAME-Eintrage ist der normale Eintrag und die richtige Wahl, wenn Sie Ihre DNS Zone selbst verwalten können. Er verweist auch bei einem Wechsel der IP-Adresse automatisch auf das richtige Ziel.
 
 - TXT: Verwenden Sie diese Möglichkeit nur dann, wenn Sie Ihren Domainnamen über ein anderes Medium konfigurieren müssen, etwa ein CDN. Hier müssen Sie beachten, ob die IP-Adresse Ihres Ziel sich ändert. Sie können auch die Funktion "virtual CNAME" verwenden, sofern Ihr CDN-Anbieter dies anbietet.
-
 
 
 

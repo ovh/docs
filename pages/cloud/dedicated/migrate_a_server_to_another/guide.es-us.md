@@ -1,9 +1,6 @@
 ---
 title: Migración de los datos de un servidor a otro
-slug: migrar-datos-de-un-servidor-a-otro
 excerpt: Cómo migrar los datos de un servidor a otro
-section: Primeros pasos
-order: 4
 updated: 2021-09-16
 ---
 
@@ -50,8 +47,8 @@ Si es necesario cambiar la versión del sistema operativo o del programa, asegú
 
 La migración de los datos suele implicar copiar archivos de un servidor a otro. Existen diversas soluciones para ello:
 
-- La forma más sencilla es utilizar un programa adecuado como [SFTP](https://docs.ovh.com/us/es/dedicated/subir-y-descargar-datos-por-sftp/).
-- La otra opción es [sincronizar los dos servidores entre sí](https://docs.ovh.com/us/es/dedicated/copiar-datos-servidor-rsync/).
+- La forma más sencilla es utilizar un programa adecuado como [SFTP](/pages/cloud/dedicated/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp).
+- La otra opción es [sincronizar los dos servidores entre sí](/pages/cloud/dedicated/how-to-copy-data-from-one-dedicated-server-to-another-using-rsync).
 
 ### Uso del Backup Storage (disponible únicamente en OVHcloud y So you Start)
 
@@ -66,7 +63,7 @@ Con la opción [Backup Storage](https://www.ovhcloud.com/es/bare-metal/backup-st
 
 Puedes autorizar el acceso al Backup Storage desde tu nuevo servidor. De este modo, dispondrá de una pasarela para transferir sus datos.
 
-Para más información, consulte nuestra guía sobre [utilizar Backup Storage en un servidor dedicado](https://docs.ovh.com/us/es/dedicated/servicio-backup-storage/).
+Para más información, consulte nuestra guía sobre [utilizar Backup Storage en un servidor dedicado](/pages/cloud/dedicated/services_backup_storage).
 
 ### Migración de una dirección Additional IP (disponible únicamente en OVHcloud y So you Start)
 
@@ -82,7 +79,7 @@ Para más información, consulte nuestra guía sobre [utilizar Backup Storage en
 Si la reputación de sus direcciones IP es importante, le recomendamos encarecidamente que utilice las direcciones [Additional IP](https://www.ovhcloud.com/es/bare-metal/ip/), ya que pueden conservarse si se migra.
 
 Una vez que disponga de estas direcciones Additional IP, solo tiene que moverlas al nuevo servidor.
-Para ello, consulte nuestra guía: [Mover una Additional IP](https://docs.ovh.com/us/es/dedicated/ip-fo-move/).
+Para ello, consulte nuestra guía: [Mover una Additional IP](/pages/cloud/dedicated/move-failover-ip).
 
 > [!alert]
 >
@@ -93,7 +90,7 @@ Para ello, consulte nuestra guía: [Mover una Additional IP](https://docs.ovh.co
 
 Una vez que los datos estén disponibles en el nuevo servidor, es posible que deba modificar su configuración DNS, por ejemplo, si ha utilizado la dirección IP principal.
 
-Para más información, consulte nuestra documentación sobre los [dominios y DNS](https://docs.ovh.com/us/es/domains/).
+Para más información, consulte nuestra documentación sobre los [dominios y DNS](/products/web-cloud-domains-domain-names).
 
 ## Más información
 

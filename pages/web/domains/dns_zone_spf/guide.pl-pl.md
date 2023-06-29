@@ -1,14 +1,8 @@
 ---
 title: Konfiguracja rekordu SPF w strefie DNS nazwy domeny
-slug: uslugi_www_pole_spf
 excerpt: Zobacz, jak dodać rekord SPF w strefie DNS nazwy domeny na serwerze OVHcloud
-section: Konfiguracja zaawansowana
 updated: 2022-09-12
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
-> 
 
 **Ostatnia aktualizacja z dnia 12-09-2022**
 
@@ -220,8 +214,8 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.com ~all"
 
 ## Sprawdź również
 
-[Modyfikacja strefy DNS](../hosting_www_jak_edytowac_strefe_dns/){.external}.
+[Modyfikacja strefy DNS](/pages/web/domains/dns_zone_edit){.external}.
 
-[Zmiana serwerów DNS domeny OVHcloud](../hosting_www_informacje_na_temat_serwerow_dns/){.external}.
+[Zmiana serwerów DNS domeny OVHcloud](/pages/web/domains/dns_server_general_information){.external}.
 
 Przyłącz się do społeczności naszych użytkowników na stronie [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}

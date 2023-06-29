@@ -1,9 +1,6 @@
 ---
 title: "Lo esencial para empezar con Public Cloud"
 excerpt: "Descubra las nociones básicas útiles para empezar en el entorno Public Cloud"
-slug: public-cloud-essential-information
-section: Primeros pasos
-order: 01
 updated: 2022-02-07
 ---
 
@@ -25,11 +22,11 @@ Esta guía explica los aspectos esenciales para una buena explotación de los pr
 
 Si ya está familiarizado con estos conceptos, puede seguir descubriendo el Public Cloud de OVHcloud en las siguientes guías:
 
-- [Abrir una cuenta de OVHcloud](https://docs.ovh.com/us/es/customer/crear-cuenta-ovhcloud/)
-- [Cree su primer proyecto de Public Cloud](https://docs.ovh.com/us/es/public-cloud/crear_su_primer_proyecto_de_public_cloud/)
-- [Conocer la interfaz de Public Cloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-interface/)
-- [Crear la primera instancia](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/)
-- [Gestionar los límites](https://docs.ovh.com/us/es/public-cloud/increase-public-cloud-quota/)
+- [Abrir una cuenta de OVHcloud](/pages/account/customer/ovhcloud-account-creation)
+- [Cree su primer proyecto de Public Cloud](/pages/platform/public-cloud/create_a_public_cloud_project)
+- [Conocer la interfaz de Public Cloud](/pages/platform/public-cloud/03-public-cloud-interface-walk-me)
+- [Crear la primera instancia](/pages/platform/public-cloud/public-cloud-first-steps)
+- [Gestionar los límites](/pages/platform/public-cloud/increasing_public_cloud_quota)
 
 ## Enfoque global <a name="global-approach"></a>
 
@@ -87,9 +84,9 @@ Existen diversas formas de gestionar los recursos de Public Cloud. Tanto si desc
 
 #### El proyecto
 
-Para empezar, necesitará una [cuenta de cliente de OVHcloud](https://docs.ovh.com/us/es/customer/crear-cuenta-ovhcloud/).
+Para empezar, necesitará una [cuenta de cliente de OVHcloud](/pages/account/customer/ovhcloud-account-creation).
 
-A continuación, deberá [crear un proyecto de Public Cloud](https://docs.ovh.com/us/es/public-cloud/crear_su_primer_proyecto_de_public_cloud/). Un proyecto es un entorno que va a dedicar a un contexto.
+A continuación, deberá [crear un proyecto de Public Cloud](/pages/platform/public-cloud/create_a_public_cloud_project). Un proyecto es un entorno que va a dedicar a un contexto.
 
 Por ejemplo, puede separar los entornos de prueba y producción de dos proyectos.
 <br>O puede utilizar diferentes proyectos para sus distintas aplicaciones (sitio web público, tienda online, aplicación empresarial, gestión de documentos, etc.).
@@ -98,7 +95,7 @@ Para iniciar un proyecto, deberá registrar una forma de pago al crear el proyec
 
 #### La facturación
 
-Al haber registrado su forma de pago, esta se utilizará para cargar el importe calculado para su [facturación a fin de mes](https://docs.ovh.com/us/es/public-cloud/informacion-sobre-el-tipo-de-facturacion-cloud/). Este cálculo se realiza en función del tiempo de uso de cada recurso, en función del precio de los recursos.
+Al haber registrado su forma de pago, esta se utilizará para cargar el importe calculado para su [facturación a fin de mes](/pages/platform/public-cloud/analyze_billing). Este cálculo se realiza en función del tiempo de uso de cada recurso, en función del precio de los recursos.
 
 Por ejemplo: En el mes, ha utilizado 1 instancia d2-8 durante todo el mes y 3 instancias b2-60 que contabilizan conjuntamente 32 horas.
 <br>Su factura será de 720 (número de horas en el mes) x 0,0325 € + IVA (precio de la hora de una d2-8) + 32 x 0,4589 € + IVA (precio de la hora de una b2-60). Es decir, 38,08 € + IVA.
@@ -107,7 +104,7 @@ Por ejemplo: En el mes, ha utilizado 1 instancia d2-8 durante todo el mes y 3 in
 
 Es posible que tenga que ocuparse de los límites.
 <br>La cuota de Public Cloud establece el máximo de recursos que puede empezar. Depende de ciertos parámetros (antigüedad de la cuenta, facturas anteriores..).
-<br>Estas cuotas se asignan por localización (región en el sentido de OpenStack). Así pues, puede que consiga el máximo de recursos posible en su proyecto y que sea necesario [aumentar los límites](https://docs.ovh.com/us/es/public-cloud/increase-public-cloud-quota/).
+<br>Estas cuotas se asignan por localización (región en el sentido de OpenStack). Así pues, puede que consiga el máximo de recursos posible en su proyecto y que sea necesario [aumentar los límites](/pages/platform/public-cloud/increasing_public_cloud_quota).
 
 ![Public Cloud quota](images/quota.png){.thumbnail}
 
@@ -116,8 +113,8 @@ Es posible que tenga que ocuparse de los límites.
 Es posible que necesite gestionar varios usuarios que intervengan en su proyecto.
 <br>Podrá elegir entre dos opciones:
 
-- Si quiere utilizar las API de OpenStack o S3, o la interfaz Horizon, deberá [crear usuarios](https://docs.ovh.com/us/es/public-cloud/crear-y-eliminar-un-usuario-de-openstack/) para ello. Los usuarios pueden tener derechos limitados para proteger los perímetros de acción.
-- Si no necesita acceder a las API o a Horizon, puede [asociar otra cuenta de cliente de OVHcloud](https://docs.ovh.com/us/es/public-cloud/delegar_proyectos/) a su proyecto.
+- Si quiere utilizar las API de OpenStack o S3, o la interfaz Horizon, deberá [crear usuarios](/pages/platform/public-cloud/create_and_delete_a_user) para ello. Los usuarios pueden tener derechos limitados para proteger los perímetros de acción.
+- Si no necesita acceder a las API o a Horizon, puede [asociar otra cuenta de cliente de OVHcloud](/pages/platform/public-cloud/delegate_projects) a su proyecto.
 
 ## Más información <a name="gofurther"></a>
 
@@ -125,23 +122,23 @@ Estos son algunos recursos generales que le ayudarán a empezar en Public Cloud:
 
 |Documentación|Detalles|
 |---|---|
-|[FAQ](https://docs.ovh.com/us/es/public-cloud/public-cloud-faq/)|Preguntas más frecuentes sobre Public Cloud.|
-|[Valor](https://docs.ovh.com/gb/en/public-cloud/introduction-to-instances-and-other-cloud-based-terms/)|Conceptos y definiciones que necesitará para avanzar.|
+|[FAQ](/pages/platform/public-cloud/faq_pci)|Preguntas más frecuentes sobre Public Cloud.|
+|[Valor](/pages/platform/public-cloud/introduction_about_instances)|Conceptos y definiciones que necesitará para avanzar.|
 |[Disponibilidad de los servicios por localización](https://www.ovhcloud.com/fr/public-cloud/regions-availability/)|Las tablas de disponibilidad de los servicios a través de las diferentes localizaciones.|
-|[Changelog des images](https://docs.ovh.com/us/es/public-cloud/changelog-images/)|Los cambios en las imágenes de sistema disponibles públicamente.|
+|[Changelog des images](/pages/platform/public-cloud/image_changelog)|Los cambios en las imágenes de sistema disponibles públicamente.|
 
 En la práctica, a continuación le ofrecemos algunas guías que le ayudarán en el inicio:
 
 |Documentación|Detalles|
 |---|---|
-|[Crear la primera instancia](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/)|Esta es la primera guía práctica para iniciar un servidor cloud desde el área de cliente de OVHcloud.|
-|[Uso de una llave SSH](https://docs.ovh.com/us/es/public-cloud/usar-una-clave-ssh-en-la-interfaz-de-public-cloud/)| Para conectarse a una instancia Linux, necesitará utilizar una conexión SSH en esta guía.|
-|[Configuración de la red privada](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/)|En OVHcloud, la tecnología vRack utiliza las redes privadas. Esta guía le ayudará a realizar esta operación.|
-|[Asociar un disco adicional a una instancia](https://docs.ovh.com/us/es/public-cloud/crear_y_configurar_un_disco_adicional_en_una_instancia/)|Esta guía explica cómo añadir almacenamiento adicional a la primera instancia de OVH.|
-|[Conectarse a Horizon](https://docs.ovh.com/us/es/public-cloud/horizon/)|La interfaz Horizon de OpenStack permite realizar determinadas acciones avanzadas. Así es como conectarse a ella.|
-|[Crear un cluster Kubernetes](https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/) (EN)|Esta guía le ayudará paso a paso a la creación de su primer cluster Kubernetes.|
-|[Configurar una Additional IP](https://docs.ovh.com/us/es/public-cloud/configurer-une-ip-failover/)|Las Additional IP permiten cambiar el tráfico de una instancia a otra. Esta guía explica cómo configurar esta opción.|
-|[Instalación de la CLI OpenStack](https://docs.ovh.com/us/es/public-cloud/prepare_the_environment_for_using_the_openstack_api/)|OpenStack también puede utilizarse en línea de comandos. Así es como instalar las herramientas.|
+|[Crear la primera instancia](/pages/platform/public-cloud/public-cloud-first-steps)|Esta es la primera guía práctica para iniciar un servidor cloud desde el área de cliente de OVHcloud.|
+|[Uso de una llave SSH](/pages/platform/public-cloud/introducing_horizon)| Para conectarse a una instancia Linux, necesitará utilizar una conexión SSH en esta guía.|
+|[Configuración de la red privada](/pages/platform/network-services/getting-started-07-creating-vrack)|En OVHcloud, la tecnología vRack utiliza las redes privadas. Esta guía le ayudará a realizar esta operación.|
+|[Asociar un disco adicional a una instancia](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)|Esta guía explica cómo añadir almacenamiento adicional a la primera instancia de OVH.|
+|[Conectarse a Horizon](/pages/platform/public-cloud/introducing_horizon)|La interfaz Horizon de OpenStack permite realizar determinadas acciones avanzadas. Así es como conectarse a ella.|
+|[Crear un cluster Kubernetes](/pages/platform/kubernetes-k8s/creating-a-cluster) (EN)|Esta guía le ayudará paso a paso a la creación de su primer cluster Kubernetes.|
+|[Configurar una Additional IP](/pages/platform/network-services/getting-started-04-configure-additional-ip-to-instance)|Las Additional IP permiten cambiar el tráfico de una instancia a otra. Esta guía explica cómo configurar esta opción.|
+|[Instalación de la CLI OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)|OpenStack también puede utilizarse en línea de comandos. Así es como instalar las herramientas.|
 
 Una de las grandes ventajas de utilizar tecnologías estándares y abiertas, como OpenStack o Kubernetes, es disfrutar de toda la documentación ya disponible.
 

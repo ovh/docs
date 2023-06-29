@@ -1,8 +1,6 @@
 ---
 title: Manage your SMS history
-slug: manage-sms-history
 excerpt: Find out how to view your sent messages log from your OVHcloud account
-section: 'Managing your solution'
 updated: 2022-08-05
 ---
 
@@ -77,7 +75,7 @@ Here is a breakdown of the information included in the log:
 |  tag |  the tag attributed either manually via the APIs (to one or more SMS messages) or automatically by our servers to each sent SMS (or each SMS campaign) |
 |  message |  the content of the SMS |
 
-Further information about the ptt codes and various DLR IDs can be found in the final section of the guide [Everything you need to know about SMS users](../everything_you_need_to_know_about_sms_users/#step-5-specify-a-callback-url).
+Further information about the ptt codes and various DLR IDs can be found in the final section of the guide [Everything you need to know about SMS users](/pages/telecom/sms/tout_savoir_sur_les_utilisateurs_sms#step-5-specify-a-callback-url).
  
 ## Go further
 

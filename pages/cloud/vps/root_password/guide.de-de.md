@@ -1,8 +1,6 @@
 ---
 title: Root-Passwort auf einem VPS ändern
-slug: root-password
 excerpt: Erfahren Sie hier, wie Sie das Passwort des administrativen Zugangs zu Ihrem VPS ändern
-section: Diagnose & Rescue Modus
 updated: 2023-06-26
 ---
 
@@ -37,7 +35,7 @@ Es kann sein, dass Sie das Root-Passwort Ihres Linux-Betriebssystems ändern mü
 
 > [!primary]
 >
-> Weitere Informationen zur Verbindung mit Ihrem VPS finden Sie in unserer Anleitung [Erste Schritte mit einem VPS](../erste-schritte-mit-einem-vps/).
+> Weitere Informationen zur Verbindung mit Ihrem VPS finden Sie in unserer Anleitung [Erste Schritte mit einem VPS](/pages/cloud/vps/starting_with_a_vps).
 >
 
 Verbinden Sie sich via SSH mit Ihrem VPS. Wenn nötig, wechseln Sie zum Root-Account:
@@ -70,7 +68,7 @@ Wenn Sie den Login als Root-Benutzer erlauben möchten, folgen Sie den Schritten
 
 #### Schritt 1: Starten Sie den VPS im Rescue-Modus neu
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und starten Sie den VPS im Rescue-Modus neu. Wenn Sie weitere Anweisungen zur Verwendung des Rescue-Modus mit einem VPS benötigen, lesen Sie die Anleitung zum [Rescue-Modus](../rescue/).
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und starten Sie den VPS im Rescue-Modus neu. Wenn Sie weitere Anweisungen zur Verwendung des Rescue-Modus mit einem VPS benötigen, lesen Sie die Anleitung zum [Rescue-Modus](/pages/cloud/vps/rescue).
 
 #### Schritt 2: Mountpoint identifizieren
 
@@ -169,7 +167,7 @@ Wenn Ihr VPS aus der neueren Generation ist (Namensschema: *vps-xxxxx.vps.ovh.ne
 >
 > Die Aktivierung des Root-Logins wird in der Regel als Sicherheitslücke betrachtet und wird daher nicht empfohlen.
 >
-> Wir empfehlen Ihnen, zuerst Maßnahmen zur Sicherung Ihres VPS zu ergreifen. Weitere Informationen finden Sie in unserer [Anleitung zur Absicherung eines VPS](../vps-sicherheit/).
+> Wir empfehlen Ihnen, zuerst Maßnahmen zur Sicherung Ihres VPS zu ergreifen. Weitere Informationen finden Sie in unserer [Anleitung zur Absicherung eines VPS](/pages/cloud/vps/secure_your_vps).
 >
 
 #### Schritt 1: Die sshd_config-Datei bearbeiten
@@ -212,13 +210,13 @@ Dies sollte ausreichen, um die Änderungen anzuwenden. Sie können alternativ de
 
 Falls Sie nach der Änderung Ihres Passworts und dem Neustart auf Probleme beim Booten stoßen:
 
-- Verwenden Sie KVM, um herauszufinden, warum der VPS nicht starten kann. Ziehen Sie die [KVM-Anleitung](../verwendung_von_kvm_fur_vps) heran, um Hilfe bei der Verwendung dieser Funktion im OVHcloud Kundencenter zu erhalten.
-- Wenn KVM den VPS im Bootvorgang anzeigt oder das Laufwerk nicht gefunden werden kann, überprüfen Sie, ob [Bootlogs aktiviert](../bootlog-in-kvm/) sind. Übermitteln Sie unseren Support-Teams die relevanten Logs, indem Sie eine Support-Anfrage in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erstellen, um die Ursache des Problems ermitteln zu können.
+- Verwenden Sie KVM, um herauszufinden, warum der VPS nicht starten kann. Ziehen Sie die [KVM-Anleitung](/pages/cloud/vps/using_kvm_for_vps) heran, um Hilfe bei der Verwendung dieser Funktion im OVHcloud Kundencenter zu erhalten.
+- Wenn KVM den VPS im Bootvorgang anzeigt oder das Laufwerk nicht gefunden werden kann, überprüfen Sie, ob [Bootlogs aktiviert](/pages/cloud/vps/bootlog_display_kvm) sind. Übermitteln Sie unseren Support-Teams die relevanten Logs, indem Sie eine Support-Anfrage in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erstellen, um die Ursache des Problems ermitteln zu können.
 
 ## Weiterführende Informationen
 
-[SSH Einführung](../../dedicated/ssh-einfuehrung/)
+[SSH Einführung](/pages/cloud/dedicated/ssh_introduction)
 
-[VPS Sicherheit](../vps-sicherheit/)
+[VPS Sicherheit](/pages/cloud/vps/secure_your_vps)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

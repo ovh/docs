@@ -1,9 +1,6 @@
 ---
 title: Object Storage Swift - Using Object Storage with Rclone
-slug: pcs/sync-rclone-object-storage
 excerpt: This guide explains how to sync object storage via your OVH Control Panel
-section: OpenStack Swift Storage Class Specifics
-order: 140
 updated: 2021-10-27
 ---
 
@@ -20,7 +17,7 @@ Rclone is an external synchronisation program - you can find further details for
 
 ## Requirements
 
-- You need to have created an *Object Storage* container (you can create one from the [Control Panel])(https://docs.ovh.com/ca/en/storage/create_an_object_container/){.external})
+- You need to have created an *Object Storage* container (you can create one from the [Control Panel](/pages/cloud/storage/object_storage/pcs_create_container){.external})
 - You need to have created an OpenStack user account
 
 

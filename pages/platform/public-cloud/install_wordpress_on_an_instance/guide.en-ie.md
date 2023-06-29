@@ -1,8 +1,6 @@
 ---
 title: Installing WordPress on an instance
 excerpt: Find out how to use a Public Cloud instance to host WordPress websites
-slug: install_wordpress_on_an_instance
-section: Tutorials
 updated: 2023-05-17
 ---
 
@@ -25,7 +23,7 @@ This tutorial provides the basic steps for a manual installation of WordPress on
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
-- A [Public Cloud instance](../public-cloud-first-steps/) with Debian or Ubuntu installed
+- A [Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps) with Debian or Ubuntu installed
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - Administrative access (root) to your instance via SSH
 
@@ -38,7 +36,7 @@ This tutorial provides the basic steps for a manual installation of WordPress on
 
 In order to access your installation via a domain name, you need to attach it to your instance. This is done by editing the DNS zone which you can do in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), provided OVHcloud is your domain registrar **and** the domain name uses OVHcloud DNS servers.
 
-Please refer to our guide on [Editing your DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/) for further instructions. If the domain name is currently in use, only configure DNS after the new WordPress is installed and your website is ready.
+Please refer to our guide on [Editing your DNS zone](/pages/web/domains/dns_zone_edit) for further instructions. If the domain name is currently in use, only configure DNS after the new WordPress is installed and your website is ready.
 
 ### Step 1: Installing the web server (LAMP)
 
@@ -219,7 +217,7 @@ The web server is now ready for the initial WordPress configuration.
 
 ### Step 5: Configuring WordPress
 
-Open a web browser and log in to your WordPress website by entering your instance's IP address (or the domain name if you have [attached one to the instance yet](../../domains/web_hosting_how_to_edit_my_dns_zone/)). Choose a language on the first page.
+Open a web browser and log in to your WordPress website by entering your instance's IP address (or the domain name if you have [attached one to the instance yet](/pages/web/domains/dns_zone_edit)). Choose a language on the first page.
 
 Use the WordPress configuration assistant to enable access to your database. Enter the details you have [configured previously](#sqlconf).
 

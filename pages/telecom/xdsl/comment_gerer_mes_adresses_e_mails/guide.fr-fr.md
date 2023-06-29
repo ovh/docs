@@ -1,8 +1,6 @@
 ---
 title: 'Activer les adresses e-mail incluses dans votre offre FTTH/xDSL'
-slug: comment-gerer-mes-adresses-e-mails
 excerpt: 'Découvrez comment activer les adresses e-mail incluses dans votre offre FTTH/xDSL et comment y accéder'
-section: 'Gestion de mes options'
 updated: 2022-10-10
 ---
 
@@ -56,7 +54,7 @@ Cliquez sur `Valider`{.action} pour lancer la création de l'adresse e-mail. Ré
 
 Il ne reste plus qu'à utiliser votre adresse e-mail. Pour cela, OVHcloud met à disposition un applicatif en ligne (webmail). Ce dernier est accessible à l'adresse <https://www.ovh.com/fr/mail/> ; vous devrez y renseigner les identifiants relatifs à votre adresse e-mail nouvellement créée.
 
-Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil (comme un smartphone ou une tablette), consultez nos tutoriels dédiés sur <https://docs.ovh.com/fr/emails-pro/>.
+Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil (comme un smartphone ou une tablette), consultez nos tutoriels dédiés sur </products/web-cloud-email-collaborative-solutions-email-pro>.
 
 Si vous éprouvez des difficultés lors de la configuration de votre adresse, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l’éditeur du client de messagerie utilisé. Les paramètres mentionnés dans le tableau ci-dessus peuvent vous être demandés.
 

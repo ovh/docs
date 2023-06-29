@@ -1,9 +1,6 @@
 ---
 title: 'Installer Camaleon CMS sur son hébergement Cloud Web'
-slug: installer-camaleon-cloud-web
 excerpt: 'Découvrez comment installer un Camaleon CMS sur Cloud Web'
-section: Tutoriels
-order: 03
 updated: 2022-05-04
 ---
 
@@ -51,7 +48,7 @@ Dans la fenêtre qui s’affiche, complétez les informations demandées avec le
 |  Script de lancement de l'application        |    config.ru                  |
 
 
-Une fois les informations complétées, cliquez sur `Valider`{.action}. Si vous souhaitez obtenir plus d’informations sur la gestion des moteurs d’exécution, reportez-vous à notre guide *[Gérer les moteurs d’exécution de Cloud Web](../gerer-moteurs-execution-runtime-cloud-web/)*. 
+Une fois les informations complétées, cliquez sur `Valider`{.action}. Si vous souhaitez obtenir plus d’informations sur la gestion des moteurs d’exécution, reportez-vous à notre guide *[Gérer les moteurs d’exécution de Cloud Web](/pages/web/cloud-web/manage-runtime)*. 
 
 ![Ajouter le moteur d'exécution Ruby](images/installer-camaleon-cloud-web-002.png){.thumbnail} 
 
@@ -83,7 +80,7 @@ Dans la fenêtre qui s’affiche, complétez les informations demandées selon v
 | Dossier racine             |  `camaleon`                                            |
 | Moteur d'exécution         |  Ruby 2.6                                              |
 
-En ce qui concerne les options supplémentaires, choisissez celles que vous souhaitez activer. Une fois les informations complétées, cliquez sur `Suivant`{.action}, puis finalisez la manipulation. Cet ajout peut prendre jusqu’à une heure. Cependant, la modification de la configuration DNS peut prendre jusqu’à 24 heures avant d’être pleinement effective. Si vous souhaitez obtenir plus d’informations sur la gestion des multisites, reportez-vous à notre guide « [Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) ». 
+En ce qui concerne les options supplémentaires, choisissez celles que vous souhaitez activer. Une fois les informations complétées, cliquez sur `Suivant`{.action}, puis finalisez la manipulation. Cet ajout peut prendre jusqu’à une heure. Cependant, la modification de la configuration DNS peut prendre jusqu’à 24 heures avant d’être pleinement effective. Si vous souhaitez obtenir plus d’informations sur la gestion des multisites, reportez-vous à notre guide « [Partager son hébergement entre plusieurs sites](/pages/web/hosting/multisites_configure_multisite) ». 
 
 ![Partager son hébergement entre plusieurs sites](images/installer-camaleon-cloud-web-004.png){.thumbnail} 
 
@@ -265,13 +262,13 @@ Nous avons vu comment installer une application Ruby sur un hébergement Cloud W
 
 ## Aller plus loin
 
-[Migrer mon site chez OVHcloud](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}
+[Migrer mon site chez OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-[Mettre mon site en ligne](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/){.external}
+[Mettre mon site en ligne](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
-[Installer son site avec les modules en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/){.external}
+[Installer son site avec les modules en 1 clic](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
+[Partager son hébergement entre plusieurs sites](/pages/web/hosting/multisites_configure_multisite){.external}
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 

@@ -1,9 +1,6 @@
 ---
 title: Object Storage Swift - Utilizar el Object Storage con Rclone
-slug: pcs/sync-rclone-object-storage
 excerpt: Cómo sincronizar el Object Storage de OVH con Rclone
-section: OpenStack Swift Storage Class Specifics
-order: 140
 updated: 2021-10-27
 ---
 
@@ -19,8 +16,8 @@ Tenga en cuenta que Rclone es un software de sincronización externo. Para más 
 
 ## Requisitos
 
-- Haber creado un contenedor de Object Storage desde el área de cliente o desde [Horizon](https://docs.ovh.com/es/storage/horizon_crear_un_contenedor_de_objetos/){.external}.
-- Haber creado un [usuario de OpenStack](https://docs.ovh.com/es/public-cloud/crear_un_acceso_a_horizon/){.external}.
+- Haber creado un contenedor de Object Storage desde el área de cliente o desde [Horizon](/pages/cloud/storage/object_storage/pcs_create_container){.external}.
+- Haber creado un [usuario de OpenStack](/pages/platform/public-cloud/introducing_horizon){.external}.
 
 ## Procedimiento
 
@@ -28,7 +25,7 @@ Una vez que haya creado el contenedor y el usuario de OpenStack, deberá realiza
 
 ### 1. Descargar el archivo de configuración de Rclone
 
-Una vez creado el [usuario de OpenStack](https://docs.ovh.com/es/public-cloud/crear_un_acceso_a_horizon/){.external}, podrá descargar el archivo de configuración de Rclone desde el área de cliente.
+Una vez creado el [usuario de OpenStack](/pages/platform/public-cloud/introducing_horizon){.external}, podrá descargar el archivo de configuración de Rclone desde el área de cliente.
 
 Para ello, en la columna izquierda, haga clic en `Servidores`{.action}, seleccione el proyecto cloud y haga clic en `OpenStack`{.action}. Se mostrará la lista de usuarios creados en el proyecto.
 

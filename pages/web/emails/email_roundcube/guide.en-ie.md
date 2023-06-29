@@ -1,8 +1,5 @@
 ---
 title: Using your email account via the RoundCube webmail interface
-slug: roundcube-userguide
-section: 'Getting started'
-order: 05
 updated: 2022-05-31
 ---
 
@@ -17,7 +14,7 @@ With the OVHcloud MX Plan, you can send and receive emails from third-party soft
 ## Requirements
 
 - An OVHcloud **MX Plan** email solution, included in our [web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/), included in a free [Start10M](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/) hosting plan, or ordered separately as a standalone solution.
-- Access to the MX Plan email account you would like to use; for more information, please refer to our guide [Getting started with an MX Plan](https://docs.ovh.com/ie/en/emails/web_hosting_an_overview_of_ovh_email/).
+- Access to the MX Plan email account you would like to use; for more information, please refer to our guide [Getting started with an MX Plan](/pages/web/emails/email_generalities).
 
 ## Instructions
 
@@ -33,9 +30,9 @@ You will then be redirected to the RoundCube interface.
 
 > [!warning]
 > 
-> If you are redirected to an **O**utlook **W**eb **A**ccess (OWA) interface, this means that you are on the latest version of the MX Plan solution. To find out more about your MX Plan solution, go to our guide [Getting started with an MX Plan solution](https://docs.ovh.com/ie/en/emails/web_hosting_an_overview_of_ovh_email/).
+> If you are redirected to an **O**utlook **W**eb **A**ccess (OWA) interface, this means that you are on the latest version of the MX Plan solution. To find out more about your MX Plan solution, go to our guide [Getting started with an MX Plan solution](/pages/web/emails/email_generalities).
 >
-> To familiarise yourself with the **OWA** interface, please refer to our guide on [Using an email account in the OWA interface](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/).
+> To familiarise yourself with the **OWA** interface, please refer to our guide on [Using an email account in the OWA interface](/pages/web/emails/email_owa).
 
 ### RoundCube webmail main page <a name="general-interface"></a>
 
@@ -333,12 +330,12 @@ In the top bar, the following actions are available:
 
 ## Go further
 
-[Getting started with the MX Plan solution](https://docs.ovh.com/ie/en/emails/web_hosting_an_overview_of_ovh_email/)
+[Getting started with the MX Plan solution](/pages/web/emails/email_generalities)
 
-[Changing your password for an MX Plan email address](https://docs.ovh.com/ie/en/emails/changing-email-address-password/)
+[Changing your password for an MX Plan email address](/pages/web/emails/email_change_password)
 
-[Creating filters for your email addresses](https://docs.ovh.com/ie/en/emails/email-hosting-configuring-filters/)
+[Creating filters for your email addresses](/pages/web/emails/feature_filters)
 
-[Using email redirections](https://docs.ovh.com/ie/en/emails/email-redirection-guide/)
+[Using email redirections](/pages/web/emails/feature_redirections)
 
 Join our community of users on <https://community.ovh.com/en/>.

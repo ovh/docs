@@ -1,11 +1,8 @@
 ---
 title: Object Storage - Utilizar S3 Object Storage con Rclone (EN)
-slug: s3/rclone
 excerpt: Learn how to set up Rclone to synchronize your files to and from S3 Object Storage.
-section: Configure Object Storage with your solutions
-order: 005
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/s3/rclone/'
+    canonical: '/pages/cloud/storage/object_storage/s3_rclone'
 updated: 2022-01-03
 ---
 
@@ -30,7 +27,7 @@ Rclone is a backup tool that can sync to and from various storage backends, and 
 - A user and defined the required access rights on the bucket
 - Your S3 credentials (access_key and secret_access_key)
 
-See our [Getting started with S3 Object Storage](https://docs.ovh.com/us/es/storage/object-storage/s3/getting-started-with-object-storage/) guide.
+See our [Getting started with S3 Object Storage](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) guide.
 
 ## Instructions
 

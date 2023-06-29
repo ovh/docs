@@ -1,8 +1,6 @@
 ---
 title: 'Healthcare (HDS) or payment services (PCI DSS) compliance activation'
-slug: activate-pci-dss-option
 excerpt: 'Find out how to host healthcare or payment card data on your Hosted Private Cloud'
-section: 'OVHcloud services and options'
 updated: 2020-05-27
 ---
 
@@ -38,13 +36,13 @@ If the desired security option is not enabled, activate it by clicking on the `.
 
 - **[NSX](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/){.external} and [vROps](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/vrops/){.external} options must be installed**: from the `General information`{.action} tab in the "Options and compliance" section, you can check the activation status of these options. If they are not enabled, activate them by clicking on the `...`{.action} button and then on `Activate`{.action}.
 
-- **The vCenter access policy must be restricted**: from the `Security`{.action} tab, you can check the status of the access policy. If it is not restricted, make the change by clicking on the `Modify vCenter Access Policy`{.action} button, then following the steps. Our documentation “[Introduction to the OVHcloud Private Cloud Control Panel](../control-panel-ovh-private-cloud/)” can assist you in this process.
+- **The vCenter access policy must be restricted**: from the `Security`{.action} tab, you can check the status of the access policy. If it is not restricted, make the change by clicking on the `Modify vCenter Access Policy`{.action} button, then following the steps. Our documentation “[Introduction to the OVHcloud Private Cloud Control Panel](/pages/cloud/private-cloud/manager_ovh_private_cloud)” can assist you in this process.
 
-- **You must have at least one IP address authorised to log in to vCenter**: from the `Security`{.action} tab, make sure you have at least one authorised IP address. If necessary, use the `Add a new IP address range`{.action} button. Our documentation “[Introduction to the OVHcloud Private Cloud Control Panel](../control-panel-ovh-private-cloud/)” can assist you in this process.
+- **You must have at least one IP address authorised to log in to vCenter**: from the `Security`{.action} tab, make sure you have at least one authorised IP address. If necessary, use the `Add a new IP address range`{.action} button. Our documentation “[Introduction to the OVHcloud Private Cloud Control Panel](/pages/cloud/private-cloud/manager_ovh_private_cloud)” can assist you in this process.
 
 To make sure you can always log in, we recommend that you have at least two authorised IP addresses. For reasons of accessibility, the latter must be fixed and not dynamic.
 
-- **The "admin" user information is complete and they have the necessary permission**: from the `Users`{.action} tab, make sure for the "admin" user that the telephone number and email address are correctly filled in and that they have the “**token validator**” permission. If necessary, to change the user, click on the `...`{.action} button, then `Edit`{.action}. Our documentation “[Introduction to the OVHcloud Private Cloud Control Panel](../control-panel-ovh-private-cloud/)” can assist you in this process.
+- **The "admin" user information is complete and they have the necessary permission**: from the `Users`{.action} tab, make sure for the "admin" user that the telephone number and email address are correctly filled in and that they have the “**token validator**” permission. If necessary, to change the user, click on the `...`{.action} button, then `Edit`{.action}. Our documentation “[Introduction to the OVHcloud Private Cloud Control Panel](/pages/cloud/private-cloud/manager_ovh_private_cloud)” can assist you in this process.
 
 To make sure you can always log in to vCenter, we recommend that you have at least two users with the necessary information and permissions (with different email addresses and telephone number).
 
@@ -84,11 +82,11 @@ As a reminder, access to the interface will only be possible once the security o
 
 Then log in to the secure interface via the link provided in the email you received. This should look like `https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/password-lost`. Once logged in, you will be able to change the password of the “admin” user and then the password of additional users.
 
-For further details, please refer to our guide on [Using the secure interface](../secure-interface/).
+For further details, please refer to our guide on [Using the secure interface](/pages/cloud/private-cloud/interface-secure).
 
 
 ## Go further
 
-[Introduction to the OVHcloud Private Cloud Control Panel](../control-panel-ovh-private-cloud/)
+[Introduction to the OVHcloud Private Cloud Control Panel](/pages/cloud/private-cloud/manager_ovh_private_cloud)
 
 Join our community of users on <https://community.ovh.com/en/>.

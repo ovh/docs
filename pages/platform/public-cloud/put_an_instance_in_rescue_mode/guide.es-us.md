@@ -1,10 +1,7 @@
 ---
 title: 'Poner una instancia en modo de rescate'
 excerpt: 'Poner una instancia en modo de rescate'
-slug: poner_una_instancia_en_modo_de_rescate
 legacy_guide_number: g2029
-section: 'Gestión de las instancias desde el área de cliente'
-order: 03
 updated: 2023-01-04
 ---
 
@@ -32,7 +29,7 @@ En esos casos, puede utilizar el modo de rescate para reconfigurar su instancia 
 
 > [!alert]
 >
-> Hasta la fecha, el modo de rescate para las instancias Metal no está accesible desde el área de cliente de OVHcloud. Para más información, consulte nuestra guía sobre el [modo de rescate para las instancias Metal](https://docs.ovh.com/us/es/public-cloud/metal-instance-rescue-mode/).
+> Hasta la fecha, el modo de rescate para las instancias Metal no está accesible desde el área de cliente de OVHcloud. Para más información, consulte nuestra guía sobre el [modo de rescate para las instancias Metal](/pages/platform/public-cloud/rescue_mode_metal_instance).
 
 
 ### Activar el modo de rescate

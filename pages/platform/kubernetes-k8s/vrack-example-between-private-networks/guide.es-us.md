@@ -1,10 +1,7 @@
 ---
 title: Working with vRack example - Communicating between different private networks
-slug: vrack-example-between-private-networks
-section: Network
-order: 03
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/vrack-example-between-private-networks/'
+    canonical: '/pages/platform/kubernetes-k8s/vrack-example-between-private-networks'
 updated: 2021-07-31
 ---
 
@@ -23,8 +20,7 @@ updated: 2021-07-31
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -37,7 +33,7 @@ updated: 2021-07-31
 
 OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private networking solution that enables our customers to route traffic between most OVHcloud services (dedicated servers, Public Cloud instances...). You can for example add Public Cloud instances, a baremetal servers and Managed Kubernetes clusters to your private network to create an private infrastructure of physical, virtual and containerized workloads.
 
-Connecting a Managed Kubernetes cluster to another service in the same private network in the vRack is an easier process, as no network configuration is needed. Please have a look at our [Working with vRack example - Managed Kubernetes and Public Cloud instances](../vrack-example-k8s-and-pci/) tutorial to see an example in action.  
+Connecting a Managed Kubernetes cluster to another service in the same private network in the vRack is an easier process, as no network configuration is needed. Please have a look at our [Working with vRack example - Managed Kubernetes and Public Cloud instances](/pages/platform/kubernetes-k8s/vrack-example-k8s-and-pci) tutorial to see an example in action.  
 
 In this tutorial, we are going to activate the vRack on a Public Cloud project. Then we will create a Managed Kubernetes cluster and a Public Cloud instance (PCI). Eventually, both of them will be added inside the vRack but in **different private networks**. 
 
@@ -50,25 +46,25 @@ In this tutorial, we are going to activate the vRack on a Public Cloud project. 
 
 ## Requirements
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/platform/kubernetes-k8s/deploying-hello-world).
 
-You also need to have [Helm](https://docs.helm.sh/) installed on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/) installed on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/platform/kubernetes-k8s/installing-helm) tutorial.
 
-It also supposes that you already have followed the [Using vRack](../using_vrack/) guide to activate the vRack on your Public Cloud project and put your OVHcloud Managed Kubernetes cluster inside the vRack.  It will also be useful to have followed our [Working with vRack example - Managed Kubernetes and Public Cloud instances](../vrack-example-k8s-and-pci/) tutorial to understand the easier use case when both services are in the same private network.
+It also supposes that you already have followed the [Using vRack](/pages/platform/kubernetes-k8s/using-vrack) guide to activate the vRack on your Public Cloud project and put your OVHcloud Managed Kubernetes cluster inside the vRack.  It will also be useful to have followed our [Working with vRack example - Managed Kubernetes and Public Cloud instances](/pages/platform/kubernetes-k8s/vrack-example-k8s-and-pci) tutorial to understand the easier use case when both services are in the same private network.
 
-And to understand why this configuration is needed, please have a look at the [Using vRack - Communicating between different private networks](../using-vrack-between-private-networks/) technical document.
+And to understand why this configuration is needed, please have a look at the [Using vRack - Communicating between different private networks](/pages/platform/kubernetes-k8s/using-vrack-between-private-networks) technical document.
 
 > [!warning]
-> This guide assumes you are familiar with the [OVHcloud API](https://api.ovh.com/). If you have never used it, you can find the basics here: [First steps with the OVHcloud API](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/).
+> This guide assumes you are familiar with the [OVHcloud API](https://api.ovh.com/). If you have never used it, you can find the basics here: [First steps with the OVHcloud API](/pages/account/api/first-steps).
 >
 
 ## Instructions
 
 ### Setting-up the vRack
 
-First of all, we will need to set up vRack Private Network for our Public Cloud. To do it, we follow the [Configuring vRack for Public Cloud](../../public-cloud/public-cloud-vrack/) guide. 
+First of all, we will need to set up vRack Private Network for our Public Cloud. To do it, we follow the [Configuring vRack for Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack) guide. 
 
-As explained in the [known limits](../known-limits/) guide, the default subnet ranges for our private networks won't work with OVHcloud Managed Kubernetes, as the ranges `10.2.0.0/16` and `10.3.0.0/16` are reserved to internal Managed Kubernetes use.
+As explained in the [known limits](/pages/platform/kubernetes-k8s/known-limits) guide, the default subnet ranges for our private networks won't work with OVHcloud Managed Kubernetes, as the ranges `10.2.0.0/16` and `10.3.0.0/16` are reserved to internal Managed Kubernetes use.
 
 Once we have created a vRack, we need to create two different Private Networks enabled at least on the region of our cluster (GRA5 in our example). The private networks created via the OVHcloud Manager have by-default ranges, that can't be easily modified. We are thus creating the private networks using the [OVHcloud API](https://api.ovh.com/). 
 
@@ -86,7 +82,7 @@ And then we assign them the subnets using the `POST /cloud/project/{serviceName}
 
 ### Retrieving the Openstack configuration file
 
-Now we need to download the `openrc.sh` configuration file, as explained in the [Setting OpenStack environment variables](../../public-cloud/set-openstack-environment-variables/) guide. 
+Now we need to download the `openrc.sh` configuration file, as explained in the [Setting OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables) guide. 
 
 ![Retrieving the Openstack configuration file](images/vrack-example-06.png){.thumbnail}
 
@@ -94,7 +90,7 @@ We will be working on GRA5 region, so we download the *Gravelines (GRA5)* file.
 
 ![Retrieving the Openstack configuration file](images/vrack-example-07.png){.thumbnail}
 
-Following the steps on the [Setting OpenStack environment variables](../../public-cloud/set-openstack-environment-variables/) guide to be sure that the Openstack CLI is working on our workstation.
+Following the steps on the [Setting OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables) guide to be sure that the Openstack CLI is working on our workstation.
 
 
 <pre class="console"><code>~$ source openrc.sh
@@ -336,7 +332,7 @@ No user sessions are running outdated binaries.
 
 ### Setting up the Managed Kubernetes attached to `priv_net_01`
 
-Then we create a Kubernetes cluster in GRA5 region, attached to`priv_net_01`, as explained in the [Create a cluster](../creating-a-cluster/) guide. 
+Then we create a Kubernetes cluster in GRA5 region, attached to`priv_net_01`, as explained in the [Create a cluster](/pages/platform/kubernetes-k8s/creating-a-cluster) guide. 
 
 
 ![Choose a private network for this cluster](images/vrack-example-10.png){.thumbnail}
@@ -351,12 +347,12 @@ In the Managed Kubernetes Service Dashboard, we can see the cluster, with the ch
 
 ![Private network information in Attached network column](images/vrack-example-12.png){.thumbnail}
 
-Don't forget to grab your `kubeconfig` and configure `kubectl` to use it, as explained in the [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](../configuring-kubectl/) guide.
+Don't forget to grab your `kubeconfig` and configure `kubectl` to use it, as explained in the [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](/pages/platform/kubernetes-k8s/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster) guide.
 
 
 ### Setting up a PCI attached to `priv_net_02`
 
-Now we can create a new Public Cloud instance, also in GRA5 region, and attach it to `priv_net_02` by following the [Integrating an instance into vRack](../../public-cloud/public-cloud-vrack/#step-3-integrating-an-instance-into-vrack) guide.
+Now we can create a new Public Cloud instance, also in GRA5 region, and attach it to `priv_net_02` by following the [Integrating an instance into vRack](/pages/platform/network-services/getting-started-07-creating-vrack#step-3-integrating-an-instance-into-vrack) guide.
 
 We are going to create an Ubuntu instance:
 

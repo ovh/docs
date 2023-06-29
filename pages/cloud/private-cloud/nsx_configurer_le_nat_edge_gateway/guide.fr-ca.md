@@ -1,10 +1,7 @@
 ---
 title: Configurer le NAT NSX-v Edge
-slug: configurer-le-nat-nsx-edge
 excerpt: Redirigez votre trafic à l'aide des règles NAT
 legacy_guide_number: '7766371'
-section: NSX-v
-order: 06
 updated: 2021-11-26
 ---
 
@@ -23,7 +20,7 @@ NAT signigie « traduction d'addresses réseau »(*Network Address Translation*)
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/) afin de recevoir des identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
-- Avoir déployé une [NSX Edge Services Gateway](https://docs.ovh.com/ca/fr/private-cloud/comment-deployer-une-nsx-edge-gateway/)
+- Avoir déployé une [NSX Edge Services Gateway](/pages/cloud/private-cloud/nsx_deploying_edge_gateway)
 
 ## En pratique
 

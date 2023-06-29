@@ -1,14 +1,11 @@
 ---
 title: VPN-SPN - Présentation du concept
-slug: secnumcloud-connectivity-vpn-spn-concept
 excerpt: 'Présentation du concept de VPN-SPN au sein de la solution SecNumCloud Connectivity'
-section: SecNumCloud Connectivity
-order: 04
 updated: 2021-11-18
 ---
 
 > [!primary]
-> Une version en langue anglaise de cette page est disponible [ici](https://docs.ovh.com/gb/en/network-ip/secnumcloud-connectivity-vpn-spn-concept/).
+> Une version en langue anglaise de cette page est disponible [ici](/pages/cloud/network-ip/snc-connectivity-concepts-vpn-spn).
 >
 
 **Dernière mise à jour le 18/11/2021**

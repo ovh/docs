@@ -1,9 +1,6 @@
 ---
 title: Data Processing Overview
-slug: overview
 excerpt: Introduction to OVHcloud Data Processing Platform
-section: Concepts
-order: 0
 updated: 2020-03-06
 ---
 

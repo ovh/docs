@@ -1,9 +1,6 @@
 ---
 title: 'Cambiar la contraseña de administrador en un servidor dedicado Windows'
-slug: "cambiar-contrasena-administrador-en-servidor-windows"
 excerpt: 'Cómo cambiar la contraseña de administrador en un servidor dedicado Windows'
-section: Diagnóstico y modo de rescate
-order: 2
 updated: 2021-01-12
 ---
 
@@ -15,7 +12,7 @@ updated: 2021-01-12
 
 ## Objetivo
 
-Al instalar o reinstalar un sistema operativo Windows, recibirá una contraseña para acceder como administrador. Le recomendamos encarecidamente que cambie esta contraseña, tal y como se explica en la guía [Proteger un servidor dedicado](../seguridad-de-un-servidor-dedicado/). Si ha perdido la contraseña de administrador, deberá restaurarla en modo de rescate.
+Al instalar o reinstalar un sistema operativo Windows, recibirá una contraseña para acceder como administrador. Le recomendamos encarecidamente que cambie esta contraseña, tal y como se explica en la guía [Proteger un servidor dedicado](/pages/cloud/dedicated/securing-a-dedicated-server). Si ha perdido la contraseña de administrador, deberá restaurarla en modo de rescate.
 
 **Esta guía le ayudará a cambiar la contraseña de su servidor a través de las configuraciones de modo de rescate disponibles para el sistema operativo Windows.**
 
@@ -45,11 +42,11 @@ Una vez que haya realizado los cambios, haga clic en `...`{.action} a la derecha
 
 ![rescuereboot](images/adminpw_win_02.png){.thumbnail}
 
-Para más información sobre el modo de rescate, consulte [esta guía](../modo_de_rescate/).
+Para más información sobre el modo de rescate, consulte [esta guía](/pages/cloud/dedicated/rescue_mode).
 
 ### 2. montar la partición del sistema
 
-Conéctese al servidor por SSH. Si fuera necesario, consulte la guía [Introducción al SSH](../introduccion-ssh/).
+Conéctese al servidor por SSH. Si fuera necesario, consulte la guía [Introducción al SSH](/pages/cloud/dedicated/ssh_introduction).
 
 Dado que se trata de un servidor Windows, las particiones se titularán "Microsoft LDM data".
 
@@ -305,7 +302,7 @@ Una vez que haya realizado los cambios, haga clic en `...`{.action} a la derecha
 
 ![rescuereboot](images/adminpw_win_02.png){.thumbnail}
 
-Para más información sobre el modo de rescate, consulte [esta guía](../modo_de_rescate/).
+Para más información sobre el modo de rescate, consulte [esta guía](/pages/cloud/dedicated/rescue_mode).
 
 #### 2. eliminar la contraseña actual
 
@@ -340,8 +337,8 @@ Continúe leyendo esta guía en el [apartado 5. establecer una nueva contraseña
 
 ## Más información
 
-[Activar y utilizar el modo de rescate](../modo_de_rescate/)
+[Activar y utilizar el modo de rescate](/pages/cloud/dedicated/rescue_mode)
 
-[Utilizar IPMI en un servidor dedicado](../utilizar-ipmi-servidor-dedicado/)
+[Utilizar IPMI en un servidor dedicado](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

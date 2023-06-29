@@ -1,9 +1,6 @@
 ---
 title: Object Storage Swift - Configure a domain name on your Object Storage container
 excerpt: Configure a domain name on your Object Storage container
-slug: pcs/link-domain
-section: OpenStack Swift Storage Class Specifics
-order: 120
 updated: 2021-10-27
 ---
 
@@ -17,7 +14,7 @@ This guide shows you how to configure a domain on your container.
 
 ## Prerequisites
 
-- [Add storage space](https://docs.ovh.com/ie/en/storage/object-storage/pcs/create-container/)
+- [Add storage space](/pages/cloud/storage/object_storage/pcs_create_container)
 - A domain name
 
 ## How does it work?

@@ -1,8 +1,6 @@
 ---
 title: Sécuriser un serveur avec service Memcached
-slug: securiser-serveur-avec-service-memcache
 excerpt: Découvrez comment sécuriser votre service Memcached
-section: Utilisation avancée
 updated: 2018-03-02
 ---
 

@@ -1,9 +1,7 @@
 ---
 title: 'Envío de SMS a Estados Unidos'
-slug: envio_de_sms_a_estados_unidos
 excerpt: 'Cómo enviar SMS a Estados Unidos'
 legacy_guide_number: g1754
-section: 'Enviar SMS'
 updated: 2022-08-05
 ---
 
@@ -69,7 +67,7 @@ Rellene los campos en la ventaja emergente que aparece.
 #### 2.2. A través de la API
 
 > [!success]
-> Si no está familiarizado con el uso de la API de OVHcloud, consulte nuestra guía [Primeros pasos con las API de OVHcloud](https://docs.ovh.com/es/api/first-steps-with-ovh-api/).
+> Si no está familiarizado con el uso de la API de OVHcloud, consulte nuestra guía [Primeros pasos con las API de OVHcloud](/pages/account/api/first-steps).
 
 Conéctese a [api.ovh.com](https://api.ovh.com/) y realice la siguiente llamada:
 
@@ -105,7 +103,7 @@ Una vez que haya creado y validado su plantilla, OVHcloud realiza una comprobaci
 
 Si envía un SMS a Estados Unidos sin haber creado y validado previamente una plantilla, el SMS será rechazado y recibirá un Premium Tracking Transaction Code (PTT code) 1999. Este código corresponde al mensaje de error «No templates available».
 
-Puede consultar el resto de códigos PTT en la siguiente [guía](../usuarios-de-sms/).
+Puede consultar el resto de códigos PTT en la siguiente [guía](/pages/telecom/sms/tout_savoir_sur_les_utilisateurs_sms).
 
 ## Más información
 

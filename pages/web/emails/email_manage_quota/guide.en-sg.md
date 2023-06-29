@@ -1,9 +1,6 @@
 ---
 title: "Managing the storage space for an email account"
-slug: manage-email-quota
 excerpt: "Find out how to manage and optimise an email address storage space"
-section: 'Troubleshooting'
-order: 02
 updated: 2022-11-17
 ---
 
@@ -96,15 +93,15 @@ Below is a non-exhaustive list of configuration guides for email clients on comp
 
 Configuring an MXplan account on **Windows**:
 
-- [Mail on Windows 10](https://docs.ovh.com/sg/en/emails/mail-configuration-windows-10/) (included with Windows)
-- [Outlook for Mxplan](https://docs.ovh.com/sg/en/emails/configuration-outlook-2016/)
-- [Thunderbird](https://docs.ovh.com/sg/en/emails/configure-email-for-thunderbird-windows/) (free)
+- [Mail on Windows 10](/pages/web/emails/how_to_configure_windows_10) (included with Windows)
+- [Outlook for Mxplan](/pages/web/emails/how_to_configure_outlook_2016)
+- [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_windows) (free)
 
 Configuring an MXplan account on **macOS**:
 
-- [Mail](https://docs.ovh.com/sg/en/emails/guide-configuring-mail-on-macos/) (included with macOS)
-- [Outlook](https://docs.ovh.com/sg/en/emails/configuration-outlook-2016-mac/)
-- [Thunderbird](https://docs.ovh.com/sg/en/emails/configure-email-for-thunderbird-mac/) (free)
+- [Mail](/pages/web/emails/how_to_configure_mail_macos) (included with macOS)
+- [Outlook](/pages/web/emails/how_to_configure_outlook_2016_mac)
+- [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_mac) (free)
 
 Once you have installed your email software, follow the instructions below to prepare the archive folder on your email software.
 
@@ -128,7 +125,7 @@ Once you have installed your email software, follow the instructions below to pr
 
 ## Go further
 
-[Manually migrate your email address](https://docs.ovh.com/sg/en/emails/migrate-email-addresses-manually/)
+[Manually migrate your email address](/pages/web/emails/manual_email_migration)
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
 

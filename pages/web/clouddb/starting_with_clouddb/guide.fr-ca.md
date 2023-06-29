@@ -1,9 +1,6 @@
 ---
 title: 'Premiers pas avec le service Web Cloud Databases'
-slug: debuter-avec-clouddb
 excerpt: 'Découvrez comment bien débuter avec la solution Web Cloud Databases'
-section: 'Premiers pas'
-order: 01
 updated: 2023-05-31
 ---
 
@@ -217,15 +214,15 @@ Le fichier de logs, nommé `stdout.log`, se trouve à la racine.
 
 ## Aller plus loin
 
-[Créer vos bases de données et vos utilisateurs sur votre serveur de bases de données](https://docs.ovh.com/ca/fr/creer-bases-de-donnees-et-utilisateurs/){.external}
+[Créer vos bases de données et vos utilisateurs sur votre serveur de bases de données](/pages/web/clouddb/create-db-and-user-on-db-server){.external}
 
-[Se connecter à la base de données de votre serveur de bases de données](https://docs.ovh.com/ca/fr/connexion-base-de-donnees-serveur-bdd/){.external}
+[Se connecter à la base de données de votre serveur de bases de données](/pages/web/clouddb/connecting-to-database-on-database-server){.external}
 
-[Sauvegarder et exporter une base de données sur votre serveur de bases de données](https://docs.ovh.com/ca/fr/sauvegarder-exporter-une-base-de-donnees/){.external}
+[Sauvegarder et exporter une base de données sur votre serveur de bases de données](/pages/web/clouddb/save-export-on-database-server){.external}
 
-[Restaurer et importer une base de données sur votre serveur de bases de données](https://docs.ovh.com/ca/fr/restaurer-importer-base-de-donnees/){.external}
+[Restaurer et importer une base de données sur votre serveur de bases de données](/pages/web/clouddb/restore-import-on-database-server){.external}
 
-[Configurer votre serveur de bases de données](https://docs.ovh.com/ca/fr/configurer-optimiser-son-serveur-de-base-de-donnees/){.external}
+[Configurer votre serveur de bases de données](/pages/web/clouddb/configure-database-server){.external}
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 

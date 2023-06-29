@@ -1,8 +1,5 @@
 ---
 title: 'Delegar permissões numa conta de e-mail'
-slug: emailpro-delegation
-section: Introdução
-order: 5
 updated: 2020-10-24
 ---
 
@@ -23,4 +20,4 @@ Os serviços Exchange e Email Pro permitem beneficiar de endereços de e-mail pr
 
 ## Instruções
 
-Siga aqui o nosso guia [Delegar permissões numa conta de e-mail](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_3013_atribuir_permissoes_full_access_a_uma_conta/) na rubrica "Microsoft collaborative solutions".
+Siga aqui o nosso guia [Delegar permissões numa conta de e-mail](/pages/web/microsoft-collaborative-solutions/feature_delegation) na rubrica "Microsoft collaborative solutions".

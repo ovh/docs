@@ -1,14 +1,8 @@
 ---
 title: Como configurar o registo SPF de um domínio
 excerpt: Saiba como adicionar um registo SPF à zona DNS do seu domínio
-slug: partilhado_o_campo_spf
-section: DNS e zona DNS
-order: 05
 updated: 2022-09-12
 ---
-
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 
 **Última atualização: 12-09-2022**
 
@@ -214,8 +208,8 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.com ~all"
 
 ## Saiba mais
 
-[Editar uma zona DNS da OVHcloud](../alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}.
+[Editar uma zona DNS da OVHcloud](/pages/web/domains/dns_zone_edit){.external}.
 
-[Alterar os servidores DNS de um domínio OVHcloud](../partilhado_generalidades_sobre_os_servidores_dns/){.external}.
+[Alterar os servidores DNS de um domínio OVHcloud](/pages/web/domains/dns_server_general_information){.external}.
 
 Fale com a nossa comunidade de utilizadores: [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

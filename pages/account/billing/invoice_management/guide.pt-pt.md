@@ -1,8 +1,6 @@
 ---
 title: Gerir as minhas faturas OVHcloud
-slug: gerir-faturas-ovhcloud
 excerpt: Saiba como gerir as suas faturas e pagamentos na OVHcloud
-section: Faturação
 updated: 2022-05-12
 ---
 
@@ -27,7 +25,7 @@ A OVHcloud disponibiliza-lhe um espaço que lhe permite consultar, gerir e pagar
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) enquanto [contacto de faturação](https://docs.ovh.com/pt/customer/gestao_dos_contactos/) do serviço.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) enquanto [contacto de faturação](/pages/account/customer/managing_contacts) do serviço.
 
 ## Instruções
 
@@ -122,16 +120,16 @@ Para efetuar o pagamento das suas faturas com pagamento pendente, clique no menu
 
 ![Pagamento da dívida](images/pay_debt.png){.thumbnail}
 
-Será criada uma [nota de encomenda de regularização](https://docs.ovh.com/pt/billing/gerir-as-encomendas-ovh/#a-nota-de-encomenda). Uma vez realizado o pagamento, a situação ficará regularizada.
+Será criada uma [nota de encomenda de regularização](/pages/account/billing/managing_ovh_orders#a-nota-de-encomenda). Uma vez realizado o pagamento, a situação ficará regularizada.
 
 #### Pedir a anulação de uma fatura
 
 > [!primary]
 >
-> Para solicitar a rescisão do serviço na data de expiração, siga as instruções deste [guia](https://docs.ovh.com/pt/billing/how-to-cancel-your-services/).
+> Para solicitar a rescisão do serviço na data de expiração, siga as instruções deste [guia](/pages/account/billing/how_to_cancel_services).
 >
 
-Se recebeu uma fatura que não considera legítima e deseja pedir o seu reembolso, ou fazer valer o seu [direito de retratação](https://docs.ovh.com/pt/billing/gerir-as-encomendas-ovh/#direito-de-retratacao), pode efetuar uma reclamação através do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), sob reserva da aplicação das nossas [Condições Gerais de Serviço](https://www.ovh.pt/suporte/documentos_legais/OVH_COND_GERAIS.pdf).
+Se recebeu uma fatura que não considera legítima e deseja pedir o seu reembolso, ou fazer valer o seu [direito de retratação](/pages/account/billing/managing_ovh_orders#direito-de-retratacao), pode efetuar uma reclamação através do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), sob reserva da aplicação das nossas [Condições Gerais de Serviço](https://www.ovh.pt/suporte/documentos_legais/OVH_COND_GERAIS.pdf).
 <br>Clique no canto superior direito do seu ecrã no seu nome e depois em `Criar um ticket`{.action}.
 
 ### Seguir os seus pagamentos
@@ -149,8 +147,8 @@ A partir deste espaço, pode também exportar os seus comprovativos de pagamento
 
 ## Saiba mais
 
-[Gerir a renovação dos serviços](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/)
+[Gerir a renovação dos serviços](/pages/account/billing/how_to_use_automatic_renewal)
 
-[Gerir os meus métodos de pagamento](https://docs.ovh.com/pt/billing/gerir-metodos-de-pagamento/)
+[Gerir os meus métodos de pagamento](/pages/account/billing/manage-payment-methods)
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

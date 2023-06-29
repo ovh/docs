@@ -1,9 +1,6 @@
 ---
 title: PostgreSQL - Create and use connection pools
 excerpt: Create and use connection pools in your Public Cloud Databases for PostgreSQL
-slug: postgresql/pools
-section: PostgreSQL - Guides
-order: 090
 updated: 2022-04-08
 ---
 
@@ -19,8 +16,8 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 - A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account.
-- A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/ie/en/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your PostgreSQL instance](https://docs.ovh.com/ie/en/publiccloud/databases/postgresql/configure-postgresql-instance/) to accept incoming connections
+- A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your PostgreSQL instance](/pages/platform/databases/postgresql_07_prepare_for_incoming_connections) to accept incoming connections
 
 ## Concept
 

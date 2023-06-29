@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Installation und Konfiguration von Cecil, einem Static Site Generator (SSG) in PHP"
-slug: install-configure-cecil
 excerpt: "Erfahren Sie hier, wie Sie mit Cecil Ihre statische Website mithilfe einer modernen Template-Engine erstellen (Jamstack)"
-section: 'Tutorials'
-order: 030
 updated: 2023-01-17
 ---
 
@@ -31,15 +28,15 @@ Eine im Wesentlichen aus statischen Seiten bestehende Website garantiert Ihren B
 
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit SSH-Zugang. Über diesen Zugriff können Sie eine oder mehrere Alternativlösungen online installieren, ergänzend zu den Webhosting-Standarddiensten.
 - Sie sind mit der Befehlszeileneingabe vertraut.
-- Sie können Ihre Dateien per FTP mit einem Client wie [FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/) übertragen.
-- Sie haben Ihre DNS-Zone konfiguriert, um Ihren Domainnamen (oder eine Subdomain) auf Ihr Webhosting zu verweisen. Dies ist besonders relevant, wenn Sie auf Ihrem Hosting mehrere Websites als [Multisites](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/) hosten möchten.
+- Sie können Ihre Dateien per FTP mit einem Client wie [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide) übertragen.
+- Sie haben Ihre DNS-Zone konfiguriert, um Ihren Domainnamen (oder eine Subdomain) auf Ihr Webhosting zu verweisen. Dies ist besonders relevant, wenn Sie auf Ihrem Hosting mehrere Websites als [Multisites](/pages/web/hosting/multisites_configure_multisite) hosten möchten.
 - Sie haben [Composer](https://getcomposer.org/){.external} installiert, mit der Datei `composer.phar` im Wurzelverzeichnis Ihres Webhostings oder im Zielordner Ihres Domainnamens.
 
 ## In der praktischen Anwendung
 
 Mit [Webhostings](https://www.ovhcloud.com/de/web-hosting/) können Sie Domainnamen oder Subdomains für mehrere Websites deklarieren. Sie benötigen einen Domainnamen oder eine Subdomain, um Ihre mit **Cecil** erstellte Seite zu veröffentlichen.
 
-Um Ihnen dabei zu helfen, einen Domainnamen oder eine Subdomain zu deklarieren, verwenden Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/)".
+Um Ihnen dabei zu helfen, einen Domainnamen oder eine Subdomain zu deklarieren, verwenden Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web/hosting/multisites_configure_multisite)".
 
 ### Erstellen Sie das Verzeichnis für Ihre Dateien
 
@@ -102,7 +99,7 @@ Sie können nun das Ergebnis sehen, indem Sie Ihren Domainnamen aufufen:
 
 Um die Ergebnisse in Ihrem Browser anzuzeigen, muss Ihr Domainname auf das Verzeichnis `_site` verweisen, das Sie bei der Installation von **Cecil** erstellt haben.
 
-Wenn Ihr Domainname bei OVHcloud gehostet wird, können Sie unsere Anleitungen zur [DNS-Konfiguration](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/) und Einrichtung von [Multisites auf Ihrem Webhosting](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/) zu Hilfe nehmen.
+Wenn Ihr Domainname bei OVHcloud gehostet wird, können Sie unsere Anleitungen zur [DNS-Konfiguration](/pages/web/domains/dns_zone_edit) und Einrichtung von [Multisites auf Ihrem Webhosting](/pages/web/hosting/multisites_configure_multisite) zu Hilfe nehmen.
 
 ### Ihre Webseite konfigurieren
 
@@ -227,6 +224,6 @@ Die Verwendung einer Template Engine, die in der Web-Entwickler-Community weit v
 
 [Hilfe zum Markdown-Format](https://www.markdownguide.org/){.external}
 
-[Verwendung von FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/)
+[Verwendung von FileZilla](/pages/web/hosting/ftp_filezilla_user_guide)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

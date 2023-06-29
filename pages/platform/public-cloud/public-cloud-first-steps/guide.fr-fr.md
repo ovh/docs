@@ -1,9 +1,6 @@
 ---
 title: "Créer une première instance Public Cloud et s'y connecter"
 excerpt: 'Découvrez les bonnes pratiques pour bien débuter avec votre première instance Public Cloud'
-slug: premiers-pas-instance-public-cloud
-section: 'Premiers pas'
-order: 04
 updated: 2023-01-26
 ---
 
@@ -143,7 +140,7 @@ Quelle que soit la méthode utilisée pour créer les clés SSH, vous disposez m
 
 > [!primary]
 >
-Les clés SSH stockées sont utiles pour accélérer la création de vos instances. Pour modifier les paires de clés et ajouter des utilisateurs ultérieurement, reportez-vous au guide [Configurer des clés SSH supplémentaires](../configurer-des-cles-ssh-supplementaires/).
+Les clés SSH stockées sont utiles pour accélérer la création de vos instances. Pour modifier les paires de clés et ajouter des utilisateurs ultérieurement, reportez-vous au guide [Configurer des clés SSH supplémentaires](/pages/platform/public-cloud/configuring_additional_ssh_keys).
 >
 
 Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Cliquez ensuite sur `SSH Keys`{.action} dans la barre de navigation de gauche sous `Project Management`.
@@ -215,7 +212,7 @@ En fonction de l'utilisation envisagée de vos instances, vous pouvez sélection
 
 Le mode Public est le modèle de réseau classique, il permet à vos instances d'avoir un port réseau public rattaché. Associée au vrack, chaque instance possède une IP publique et une IP privée.
 
-Le mode Privé vous offre la possibilité d'affecter vos instances uniquement à un réseau privé. Les instances de ce mode ne peuvent être exposées au réseau public qu'à l'aide d'un service Gateway ou Load Balancer avec des Floating IPs. Pour plus d'informations, consultez notre documentation sur les [solutions réseau pour le Public Cloud OVHcloud](https://docs.ovh.com/fr/publiccloud/network-services/).
+Le mode Privé vous offre la possibilité d'affecter vos instances uniquement à un réseau privé. Les instances de ce mode ne peuvent être exposées au réseau public qu'à l'aide d'un service Gateway ou Load Balancer avec des Floating IPs. Pour plus d'informations, consultez notre documentation sur les [solutions réseau pour le Public Cloud OVHcloud](/products/public-cloud-network).
 
 Une fois votre mode choisi, sélectionnez un réseau privé auquel attacher votre instance ou cliquez sur `Créer un nouveau réseau privé`{.action} pour en créer un nouveau.
 
@@ -242,12 +239,12 @@ Un utilisateur disposant d'autorisations élevées est automatiquement créé su
 
 > [!primary]
 >
-Si vous rencontrez des problèmes avec votre connexion, c'est-à-dire des erreurs concernant vos clés SSH, consultez le guide [Changer sa clé SSH en cas de perte](../changer-sa-cle-ssh-en-cas-de-perte/).
+Si vous rencontrez des problèmes avec votre connexion, c'est-à-dire des erreurs concernant vos clés SSH, consultez le guide [Changer sa clé SSH en cas de perte](/pages/platform/public-cloud/replacing_lost_ssh_key).
 >
 
 > [!primary]
 >
-Si vous avez créé une instance sans clé SSH, via l’API OVHcloud ou l’interface Openstack Horizon, vous ne pourrez ajouter une clé SSH à votre instance qu'à travers le [mode rescue](https://docs.ovh.com/fr/public-cloud/passer-une-instance-en-mode-rescue/), en suivant les instructions décrites dans [cette section du guide approprié](../changer-sa-cle-ssh-en-cas-de-perte/#en-pratique).
+Si vous avez créé une instance sans clé SSH, via l’API OVHcloud ou l’interface Openstack Horizon, vous ne pourrez ajouter une clé SSH à votre instance qu'à travers le [mode rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode), en suivant les instructions décrites dans [cette section du guide approprié](/pages/platform/public-cloud/replacing_lost_ssh_key#en-pratique).
 >
 
 #### Connexion à une instance Linux à partir de Linux / Mac
@@ -356,12 +353,12 @@ Si un message de certificat apparaît, cliquez sur `Oui`{.action}. Entrez ensuit
 
 ## Allez plus loin
 
-[Sauvegarder une instance](../sauvegarder-une-instance/)
+[Sauvegarder une instance](/pages/platform/public-cloud/save_an_instance)
 
-[Augmenter le quota Public Cloud](../increase-public-cloud-quota/)
+[Augmenter le quota Public Cloud](/pages/platform/public-cloud/increasing_public_cloud_quota)
 
-[Passer d’une facturation à l’heure à mensuelle](../changer-type-facturation-public-cloud/)
+[Passer d’une facturation à l’heure à mensuelle](/pages/platform/public-cloud/changing_hourly_monthly_billing)
 
-[Configurer des clés SSH supplémentaires](../configurer-des-cles-ssh-supplementaires/)
+[Configurer des clés SSH supplémentaires](/pages/platform/public-cloud/configuring_additional_ssh_keys)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

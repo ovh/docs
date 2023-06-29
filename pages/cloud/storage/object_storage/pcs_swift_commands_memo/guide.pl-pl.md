@@ -1,11 +1,8 @@
 ---
 title: Object Storage Swift - Swift commands Memo (EN)
-slug: pcs/swift-commands-memo
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/pcs/swift-commands-memo/'
+    canonical: '/pages/cloud/storage/object_storage/pcs_swift_commands_memo'
 excerpt: Find here the main swift commands to manage your object containers
-section: OpenStack Swift Storage Class Specifics
-order: 100
 updated: 2022-11-16
 ---
 
@@ -21,8 +18,8 @@ The OpenStack swiftclient allows you to interact with and manage your containers
 
 ## Requirements
 
-- [Prepare the environment to use the OpenStack API](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/) by installing python-swiftclient.
-- [Load the OpenStack environment variables](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/).
+- [Prepare the environment to use the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) by installing python-swiftclient.
+- [Load the OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 ## Instructions
 
@@ -195,7 +192,7 @@ swift copy -d /<destination_container> <container> <object>
 > [!primary]
 >
 > In this example, the LargeObject was uploaded in SLO mode.
-> See the [Curl command memo](https://docs.ovh.com/gb/en/storage/pcs/curl-commands-memo/) documentation for the manifest upload.
+> See the [Curl command memo](/pages/cloud/storage/object_storage/pcs_curl_commands_memo) documentation for the manifest upload.
 >
 
 On a LargeObject, the `swift copy` command returns a 413 **error**:
@@ -307,7 +304,7 @@ sys	0m0,091s
 > [!primary]
 >
 > In this example, the LargeObject was uploaded in SLO mode.
-> Please refer to the [Curl Command Memo](https://docs.ovh.com/gb/en/storage/pcs/curl-commands-memo/) documentation for the manifest upload.
+> Please refer to the [Curl Command Memo](/pages/cloud/storage/object_storage/pcs_curl_commands_memo) documentation for the manifest upload.
 >
 
 ```bash

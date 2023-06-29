@@ -1,9 +1,6 @@
 ---
 title: Enabling Active Directory Federation Services (AD FS) SSO connections with your OVHcloud account
-slug: connect-saml-sso-adfs
 excerpt: "Find out how to link your Active Directory Federation Services (AD FS) to your OVHcloud account using SAML 2.0"
-section: 'Advanced use'
-order: 02
 updated: 2022-10-13
 ---
 
@@ -18,7 +15,7 @@ You can use **Single Sign-On** (SSO) to connect to your OVHcloud account. To ena
 ## Requirements
 
 - Active Directory Federation Services (AD FS) running on your server
-- An [OVHcloud account](https://docs.ovh.com/ie/en/customer/create-ovhcloud-account/)
+- An [OVHcloud account](/pages/account/customer/ovhcloud-account-creation)
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
@@ -210,7 +207,7 @@ You can then disconnect from your account and log in again with your AD FS as id
 
 ### Connect via SSO
 
-On the [OVHcloud login page](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), enter your [NIC handle](https://docs.ovh.com/ie/en/customer/create-ovhcloud-account/#what-is-my-nic-handle) followed by **/idp** without entering a password, and click the `Login`{.action} button.
+On the [OVHcloud login page](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), enter your [NIC handle](/pages/account/customer/ovhcloud-account-creation#what-is-my-nic-handle) followed by **/idp** without entering a password, and click the `Login`{.action} button.
 
 ![OVHcloud federation login](images/ovhcloud_federation_login_1.png){.thumbnail}
 
@@ -224,12 +221,12 @@ You are now logged in with the same NIC handle, but via your Active Directory us
 
 ## Go further
 
-[Creating an OVHcloud account](https://docs.ovh.com/ie/en/customer/create-ovhcloud-account/)
+[Creating an OVHcloud account](/pages/account/customer/ovhcloud-account-creation)
 
-[Securing my OVHcloud account and manage my personal information](https://docs.ovh.com/ie/en/customer/all-about-your-username/)
+[Securing my OVHcloud account and manage my personal information](/pages/account/customer/all_about_username)
 
-[Setting and managing an account password](https://docs.ovh.com/ie/en/customer/manage-password/)
+[Setting and managing an account password](/pages/account/customer/manage-ovh-password)
 
-[Securing your OVHcloud account with two-factor authentication](https://docs.ovh.com/ie/en/customer/secure-account-with-2FA/)
+[Securing your OVHcloud account with two-factor authentication](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
 Join our community of users on <https://community.ovh.com/en/>.

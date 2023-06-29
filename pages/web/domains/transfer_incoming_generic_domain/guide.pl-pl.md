@@ -1,23 +1,20 @@
 ---
 title: 'Transfer domeny do OVHcloud'
-slug: przeniesienie-domeny-globalnej
 excerpt: "Dowiedz się, jak wykonać transfer domeny do OVHcloud"
-section: Transfer
-order: 01
-updated: 2023-06-08
+updated: 2023-06-22
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 08-06-2023**
+**Ostatnia aktualizacja z dnia 22-06-2023**
 
 ## Wprowadzenie
 
-Twoja domena jest aktualnie zarejestrowana u innego operatora. Chcesz ją przenieść do OVHcloud? Jest to możliwe dzięki zastosowaniu procedury transferu.
+Twoja domena jest aktualnie zarejestrowana w systemie **rejestrator** i chcesz ją przenieść do OVHcloud? Jest to możliwe dzięki zastosowaniu procedury transferu.
 
-Transfer domeny umożliwia jej przeniesienie do innego operatora.  Możesz przenieść domenę do OVHcloud, składając zamówienie. Zajmie to od jednego do dziesięciu dni.
+Transfer domeny może spowodować zmianę z **rejestrator** dla domeny. Możesz przenieść domenę do OVHcloud, składając zamówienie. Proces ten trwa zazwyczaj od jednego do dziesięciu dni.
 
 **Dowiedz się, jak przenieść domenę globalną do OVHcloud.**
 
@@ -62,7 +59,7 @@ Procedura transferu składa się z kilku etapów, w które włączone są różn
 
 > [!warning]
 >
-> Dokładna procedura transferu domeny może się różnić, w szczególności w przypadku niektórych TLD kodu kraju (ccTLD, takich jak .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, itp.) oraz niektórych specjalnych TLD (.am, .fm, itp.). W zależności od rozszerzenia Twojej domeny, mogą być konieczne dodatkowe wymagania. Zalecamy sprawdzenie w pierwszej kolejności informacji wyświetlanych dla danego rozszerzenia na naszej stronie internetowej: <https://www.ovhcloud.com/pl/domains/tld/>.
+> Dokładna procedura transferu domeny może się różnić, w szczególności w przypadku niektórych **TLD** kodu kraju (**ccTLD**, takich jak .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, itp.) oraz niektórych specjalnych **TLD** (.am, .fm, itp.). W zależności od rozszerzenia Twojej domeny, mogą być konieczne dodatkowe wymagania. Zalecamy sprawdzenie w pierwszej kolejności informacji wyświetlanych dla danego rozszerzenia na naszej stronie internetowej: <https://www.ovhcloud.com/pl/domains/tld/>.
 >
 
 ### Etap 1: weryfikacja informacji związanych z domeną
@@ -157,6 +154,19 @@ Proces transferu może zostać ponownie uruchomiony w [Panelu klienta OVHcloud](
 ### Etap 5: zarządzaj domeną za pomocą OVHcloud
 
 Po zakończeniu operacji transferu możesz zarządzać domeną w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W tym celu wybierz `Web Cloud`{.action}, kliknij `Domeny`{.action}, po czym kliknij wybraną nazwę domeny.
+
+> [!warning]
+>
+> W przypadku domen z rozszerzeniem * o charakterze ogólnym* (**gTLD**, takich jak *.com*, *.net*, *.info*, *.org*, itp.) należy zachować datę wygaśnięcia domeny. OVHcloud oprócz zrealizowanego transferu za darmo zwiększa dodatkowy rok subskrypcji.
+> Na przykład, jesteśmy 04/06/2023 i Twoja domena z rozszerzeniem * ogólny* wygasa 29/09/2023 **przed** transferu. Po przeniesieniu domeny do OVHcloud, domena wygaśnie 29/09/2024.
+>
+> Dla domen z rozszerzeniem *lokalnym* lub *regionalnym* (z **ccTLD**, takich jak *.fr*, *.be*, *.de*, *.es*, itp.) zależy to od rozszerzeń i reguł wdrożonych przez **registry** danego rozszerzenia.
+> Po zakończeniu transferu sprawdź w Panelu klienta datę wygaśnięcia Twojej domeny.
+>
+> W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), następnie przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Domeny`{.action} i wybierz odpowiednią domenę. Na stronie, która się wyświetla i tuż poniżej nazwy domeny w górnej części strony znajdziesz planowaną datę odnowienia wraz z **m** i **rok** jako termin wygaśnięcia.
+>
+> W zależności od sytuacji oraz od daty wygaśnięcia domeny, może zaistnieć konieczność odnowienia domeny zaraz po jej zakończeniu.
+>
 
 ## Sprawdź również
 

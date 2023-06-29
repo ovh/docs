@@ -1,8 +1,5 @@
 ---
 title: 'Webmail: Guía de uso de Roundcube'
-slug: webmail_guia_de_uso_de_roundcube
-section: Primeros pasos
-order: 05
 updated: 2022-05-31
 ---
 
@@ -21,7 +18,7 @@ Con el MX Plan de OVHcloud, puede enviar y recibir mensajes de correo desde un p
 ## Requisitos
 
 - Disponer de una solución de correo **MX Plan** de OVHcloud, [incluida](https://www.ovhcloud.com/es-es/web-hosting/) con un [alojamiento Start10M gratuito](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o contratada por separado como solución autónoma.
-- Disponer de los datos de conexión a la dirección de correo electrónico MX Plan que quiera consultar. Para más información, consulte nuestra guía Primeros [pasos con la solución MX Plan](https://docs.ovh.com/es/emails/primeros-pasos-correo-compartido/).
+- Disponer de los datos de conexión a la dirección de correo electrónico MX Plan que quiera consultar. Para más información, consulte nuestra guía Primeros [pasos con la solución MX Plan](/pages/web/emails/email_generalities).
 
 ## Procedimiento
 
@@ -37,9 +34,9 @@ El sistema le redirigirá a la interfaz Roundcube.
 
 > [!warning]
 > 
-> Si es redirigido a una interfaz **O**utlook **W**eb **A**ccess (OWA), significa que está en la última versión de la solución MX Plan. Para más información sobre la solución MX Plan, consulte nuestra página [Primeros pasos con la solución MX Plan](https://docs.ovh.com/es/emails/primeros-pasos-correo-compartido/).
+> Si es redirigido a una interfaz **O**utlook **W**eb **A**ccess (OWA), significa que está en la última versión de la solución MX Plan. Para más información sobre la solución MX Plan, consulte nuestra página [Primeros pasos con la solución MX Plan](/pages/web/emails/email_generalities).
 >
-> Para familiarizarse con la interfaz **OWA**, consulte nuestra guía [Consultar su cuenta de correo desde la interfaz OWA](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2016_guia_de_uso_de_outlook_web_app/).
+> Para familiarizarse con la interfaz **OWA**, consulte nuestra guía [Consultar su cuenta de correo desde la interfaz OWA](/pages/web/emails/email_owa).
 
 ### Interfaz general del webmail Roundcube <a name="general-interface"></a>
 
@@ -337,12 +334,12 @@ En la barra superior, puede elegir entre las siguientes acciones:
 
 ## Más información
 
-[Primeros pasos con la solución MX Plan](https://docs.ovh.com/es/emails/primeros-pasos-correo-compartido/)
+[Primeros pasos con la solución MX Plan](/pages/web/emails/email_generalities)
 
-[Cambiar la contraseña de una dirección de correo MX Plan](https://docs.ovh.com/es/emails/cambiar-contrasena-direccion-correo/)
+[Cambiar la contraseña de una dirección de correo MX Plan](/pages/web/emails/email_change_password)
 
-[Crear filtros para sus direcciones de correo](https://docs.ovh.com/es/emails/correo_configuracion_de_los_filtros_de_correo_desde_el_area_de_cliente/)
+[Crear filtros para sus direcciones de correo](/pages/web/emails/feature_filters)
 
-[Utilizar las redirecciones de correo](https://docs.ovh.com/es/emails/correo_redirecciones_de_correo/)
+[Utilizar las redirecciones de correo](/pages/web/emails/feature_redirections)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com>.

@@ -1,9 +1,6 @@
 ---
 title: 'Using resource accounts'
 excerpt: 'Find out how to create and manage resource accounts'
-slug: exchange_20132016_how_to_use_resource_accounts
-section: 'Exchange account features'
-order: 05
 updated: 2020-06-05
 ---
 

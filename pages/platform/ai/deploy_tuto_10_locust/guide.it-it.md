@@ -1,11 +1,8 @@
 ---
 title: AI Deploy - Tutorial - How to load test your application with Locust
-slug: deploy/load-test-app
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/load-test-app/'
+    canonical: '/pages/platform/ai/deploy_tuto_10_locust'
 excerpt: Understand how you can easily benchmark your APIs and find their limits
-section: AI Deploy - Tutorials
-order: 10
 updated: 2023-04-04
 ---
 
@@ -48,10 +45,10 @@ Selecting the right tool for the right test is mandatory. For the next parts, **
 
 Feel free to deploy any app and API that you would like to load test, as long as you can query it via REST queries.
 
-For this tutorial, we will load test a spam classifier API from the [AI Deploy app portfolio](https://docs.ovh.com/it/publiccloud/ai/deploy/apps-portfolio/).
+For this tutorial, we will load test a spam classifier API from the [AI Deploy app portfolio](/pages/platform/ai/deploy_guide_05_app_portfolio).
 This API takes sentences (emails) as input text, and outputs a spam probability score. 
 
-You can deploy this API easily from the [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) or [OVHcloud CLI](https://docs.ovh.com/it/publiccloud/ai/cli/install-client/). A good strategy is to deploy with autoscaling, with minimum and maximum replicas. This way we will monitor the growth of used replicas.
+You can deploy this API easily from the [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) or [OVHcloud CLI](/pages/platform/ai/cli_10_howto_install_cli). A good strategy is to deploy with autoscaling, with minimum and maximum replicas. This way we will monitor the growth of used replicas.
 
 Here is the CLI command used to deploy it, with autoscaling going from 1 to 5 replicas and a CPU threshold of 75%:
 
@@ -67,7 +64,7 @@ priv-registry.gra.ai.cloud.ovh.net/ai-deploy-portfolio/fastapi-spam-classificati
 ### Verify that your API is up and running with cURL
 
 > [!primary]
-> To be able to connect to your AI Deploy app, you have to [create a token](https://docs.ovh.com/it/publiccloud/ai/cli/app-token-cli/) bearer for your OVHcloud AI user.
+> To be able to connect to your AI Deploy app, you have to [create a token](/pages/platform/ai/cli_13_howto_app_token_cli) bearer for your OVHcloud AI user.
 >
 
 Once deployed, let's test first our API with a simple cURL command. Here is the command to try in a terminal:
@@ -93,7 +90,7 @@ A few explanations on the lines above:
 
 - In the first line, we specify that we will use a POST method.
 - We specify the url where the POST request will be executed. The `api_url` is the url of your API. It should be similar to: `https://baac2c13-2e69-4d0f-ae6b-dg9eff9be513.app.gra.ai.cloud.ovh.net/`. 
-- We put the token to access our API, generated via the OVHcloud Control Panel or `ovhai` CLI. We specify it in the header of the request. If you want to know more about generation and use of tokens, you can follow [this tutorial](https://docs.ovh.com/it/publiccloud/ai/deploy/tokens/).
+- We put the token to access our API, generated via the OVHcloud Control Panel or `ovhai` CLI. We specify it in the header of the request. If you want to know more about generation and use of tokens, you can follow [this tutorial](/pages/platform/ai/deploy_guide_03_tokens).
 - We specify that our body is in a JSON format.
 - We put in our body the message we want to send to the spam classifier. In your case, the body could be different because it depends of the API. Our objective is that the spam classifier will send us the probability of each response. The last `| jq` instruction allows us to have a good display of the result in the terminal. 
 

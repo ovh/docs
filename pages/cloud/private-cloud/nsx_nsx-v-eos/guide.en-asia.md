@@ -1,7 +1,7 @@
 ---
 title: VMware NSX-v - End of Support
 excerpt: Analyse your use of the NSX-v features and choose between the different evolution scenarios, from disabling the NSX-v component to the migration to NSX
-updated: 2023-06-13
+updated: 2023-06-26
 ---
 
 ## Objective
@@ -54,7 +54,7 @@ Alternatively, you can decide to deploy alternatives components (Load-balancer, 
 
 ### Migrating to NSX <a name="migration"></a>
 
-The NSX software is enabled at the Virtual Datacenter (vDC) level. In order to migrate from NSX-v to NSX, you can order a new vDC for your existing Hosted Private Cloud service (feature available starting July 5, 2023), add new Hosts and then migrate from your current vDC to the new vDC using VMware vMotion.
+The NSX software is enabled at the Virtual Datacenter (vDC) level. In order to migrate from NSX-v to NSX, you can order a new vDC for your existing Hosted Private Cloud service (feature available starting July 18, 2023), add new Hosts and then migrate from your current vDC to the new vDC using VMware vMotion.
 
 The documentation to migrate to NSX is not yet available. 
 

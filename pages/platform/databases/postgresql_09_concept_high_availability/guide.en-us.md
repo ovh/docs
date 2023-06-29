@@ -1,9 +1,6 @@
 ---
 title: PostgreSQL - Concepts - High availability and failure scenarios
-slug: postgresql/concept-high-availability
 excerpt: Learn the concepts of high-availability for PostgreSQL offers
-section: PostgreSQL - Guides
-order: 800
 updated: 2023-03-21
 ---
 

@@ -1,10 +1,7 @@
 ---
 title: Ridimensiona un’istanza
 excerpt: Ridimensiona un'istanza con Horizon
-slug: ridimensiona_unistanza
 legacy_guide_number: g1778
-section: Gestione da Horizon
-order: 08
 updated: 2023-05-24
 ---
 
@@ -38,8 +35,8 @@ In seguito allo sviluppo della tua attività o semplicemente all’evoluzione de
 
 ## Prerequisiti
 
-- [Aver creato un'istanza Public Cloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/#step-3-crea-unistanza) nel tuo account OVHcloud
-- [Accedere all’interfaccia Horizon](../horizon/)
+- [Aver creato un'istanza Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#step-3-crea-unistanza) nel tuo account OVHcloud
+- [Accedere all’interfaccia Horizon](/pages/platform/public-cloud/introducing_horizon)
 
 ## Procedura
 

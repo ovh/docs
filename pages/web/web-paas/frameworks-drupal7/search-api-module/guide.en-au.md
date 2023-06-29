@@ -1,7 +1,5 @@
 ---
 title: Using Solr with the module Search API on Drupal 7.x
-slug: search-api-module
-section: Drupal7
 updated: 2021-05-11
 ---
 
@@ -11,7 +9,7 @@ updated: 2021-05-11
 
 ## Objective  
 
-This page is about configuring Solr with the module [Search API](https://www.drupal.org/project/search_api). If your project uses [Apache Solr Search](https://www.drupal.org/project/apachesolr) then you should follow the instructions [Apache Solr Search](../apachesolr-module).
+This page is about configuring Solr with the module [Search API](https://www.drupal.org/project/search_api). If your project uses [Apache Solr Search](https://www.drupal.org/project/apachesolr) then you should follow the instructions [Apache Solr Search](/pages/web/web-paas/frameworks-drupal7/apachesolr-module).
 
 ## Requirements
 You will need to add the [Search API](https://www.drupal.org/project/search_api) and [Search API
@@ -29,7 +27,7 @@ projects[search_api_override][version] = 1.0-rc1
 
 ## Configuration
 
-The Search API module includes recommended configuration files to use with Drupal.  See the [Solr](../../configuration-services/solr) configuration page for details of how to configure your Solr server to use the Drupal configuration files.  Note that the Drupal 7 version of Search API Solr does not include configuration files for Solr 6.  The Drupal 8 version of the module does, however, and should work acceptably.  It can also be customized as desired.
+The Search API module includes recommended configuration files to use with Drupal.  See the [Solr](/pages/web/web-paas/configuration-services/solr) configuration page for details of how to configure your Solr server to use the Drupal configuration files.  Note that the Drupal 7 version of Search API Solr does not include configuration files for Solr 6.  The Drupal 8 version of the module does, however, and should work acceptably.  It can also be customized as desired.
 
 The Search API Override module (listed above) allows Search API configuration to be overridden from `settings.php`.  Once it has been enabled, add the following to your `settings.platformsh.php` file:
 

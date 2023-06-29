@@ -1,9 +1,6 @@
 ---
 title: Resize your cluster storage
-slug: resize-cluster-storage
 excerpt:
-section: General guides
-order: 110
 updated: 2023-02-15
 ---
 

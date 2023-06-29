@@ -1,8 +1,6 @@
 ---
 title: Cambiar la contraseña «root» de un VPS
-slug: root-password
 excerpt: Cómo cambiar la contraseña «root» de un VPS
-section: Diagnóstico y modo de rescate
 updated: 2023-06-26
 ---
 
@@ -36,7 +34,7 @@ Si necesita cambiar la contraseña root en su sistema operativo Linux, Existen d
 
 > [!primary]
 >
-> Para más información sobre la conexión a su VPS, consulte nuestra guía [Primeros pasos con un VPS](../primeros-pasos-con-vps/).
+> Para más información sobre la conexión a su VPS, consulte nuestra guía [Primeros pasos con un VPS](/pages/cloud/vps/starting_with_a_vps).
 >
 
 Conéctese a su VPS por SSH. Cambie al usuario root si fuera necesario:
@@ -69,7 +67,7 @@ Si desea autorizar la conexión como usuario root, siga los pasos de [esta secci
 
 #### Etapa 1: Reinicie el VPS en modo de rescate.
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y reinicie el VPS en modo de rescate. Si necesita instrucciones adicionales sobre el uso del modo de rescate con un VPS, consulte la [guía del modo de rescate](../rescue/).
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y reinicie el VPS en modo de rescate. Si necesita instrucciones adicionales sobre el uso del modo de rescate con un VPS, consulte la [guía del modo de rescate](/pages/cloud/vps/rescue).
 
 #### Etapa 2: Identificar el punto de montaje
 
@@ -168,7 +166,7 @@ Si su VPS es de última generación (su nombre es: *vps-XXXXXXX.vps.ovh.net*), h
 >
 > La activación de la contraseña root se considera generalmente una vulnerabilidad a la seguridad, por lo que no se recomienda.
 >
-> Le recomendamos que primero tome medidas para proteger su VPS. Para más información, consulte nuestra guía sobre la [seguridad de un VPS](../consejos-proteccion-vps/).
+> Le recomendamos que primero tome medidas para proteger su VPS. Para más información, consulte nuestra guía sobre la [seguridad de un VPS](/pages/cloud/vps/secure_your_vps).
 >
 
 #### Etapa 1: Editar el archivo sshd_config
@@ -211,13 +209,13 @@ Esto debería ser suficiente para aplicar los cambios. También puede reiniciar 
 
 Si tiene problemas de inicio después de cambiar la contraseña e iniciar el reinicio:
 
-- Consulte el KVM para saber por qué el VPS no puede empezar. Para más información sobre el uso de esta funcionalidad, consulte la [guía KVM](../utilizar_el_kvm_para_los_vps/) del área de cliente de OVHcloud.
-- Si el KVM muestra el inicio del VPS o no consigue encontrar el disco, asegúrese de que el [bootlog esté activado](../boot-log/). Transmita los logs pertinentes a nuestro equipo de soporte creando una solicitud de soporte en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) para más información.
+- Consulte el KVM para saber por qué el VPS no puede empezar. Para más información sobre el uso de esta funcionalidad, consulte la [guía KVM](/pages/cloud/vps/using_kvm_for_vps) del área de cliente de OVHcloud.
+- Si el KVM muestra el inicio del VPS o no consigue encontrar el disco, asegúrese de que el [bootlog esté activado](/pages/cloud/vps/bootlog_display_kvm). Transmita los logs pertinentes a nuestro equipo de soporte creando una solicitud de soporte en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) para más información.
 
 ## Más información
 
-[Introducción al SSH](../../dedicated/introduccion-ssh/)
+[Introducción al SSH](/pages/cloud/dedicated/ssh_introduction)
 
-[Proteger un VPS](../consejos-proteccion-vps/)
+[Proteger un VPS](/pages/cloud/vps/secure_your_vps)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

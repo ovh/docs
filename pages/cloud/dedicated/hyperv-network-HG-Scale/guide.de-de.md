@@ -1,9 +1,6 @@
 ---
 title: 'Netzwerk auf Windows Server mit Hyper-V für die High Grade & SCALE Reihen konfigurieren'
-slug: hyperv-network-hg-scale
 excerpt: 'Erfahren Sie, wie Sie das Netzwerk auf Windows Server mit Hyper-V für die High Grade & SCALE Reihen konfigurieren'
-section: 'Fortgeschrittene Nutzung'
-order: 5
 updated: 2023-06-20
 ---
 
@@ -180,7 +177,7 @@ Wenn Sie alle Adressen angegeben haben, klicken Sie auf `OK`{.action}, um das Ei
 
 > [!warning]
 >
-> Dieser Schritt kann zu einem Verbindungsabbruch führen. Sollte dies der Fall sein, loggen Sie sich via [IPMI](https://docs.ovh.com/de/dedicated/verwendung-ipmi-dedicated-server/) ein und ändern Sie die Konfiguration erneut. Sie werden feststellen, dass der Eintrag zum Standardgateway fehlt. Fügen Sie das Gateway 100.64.0.1 wieder hinzu.
+> Dieser Schritt kann zu einem Verbindungsabbruch führen. Sollte dies der Fall sein, loggen Sie sich via [IPMI](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers) ein und ändern Sie die Konfiguration erneut. Sie werden feststellen, dass der Eintrag zum Standardgateway fehlt. Fügen Sie das Gateway 100.64.0.1 wieder hinzu.
 >
 
 #### Statische Route hinzufügen

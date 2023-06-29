@@ -1,8 +1,6 @@
 ---
 title: "Utilisation d'Active Directory comme source d'authentification (Federation)"
-slug: federation
 excerpt: "Découvrez comment utiliser votre serveur Active Directory comme source d'authentification pour vos utilisateurs vSphere"
-section: Fonctionnalités VMware vSphere
 updated: 2022-12-05
 ---
 

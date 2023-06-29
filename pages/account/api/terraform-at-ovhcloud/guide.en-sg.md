@@ -1,9 +1,6 @@
 ---
 title: Using Terraform with OVHcloud
 excerpt: Find out about useful resources in order to use Terraform with OVHcloud
-slug: terraform-at-ovhcloud
-section: Terraform
-order: 01
 updated: 2023-02-28
 ---
 
@@ -21,7 +18,7 @@ At the heart of the Terraform product is the concept of [provider](https://devel
 
 Based on your automation needs at OVHcloud, you have to pick one or more of the following Terraform providers:
 
-- [OVH provider](https://registry.terraform.io/providers/ovh/ovh/latest) that interacts with [OVHcloud API portal](https://api.ovh.com/). You can refer to [this guide](https://docs.ovh.com/sg/en/api/first-steps-with-ovh-api/) to learn more on how to use the API portal. Furthermore, the OVH provider evolves as fast as the OVHcloud offering, be sure to follow the [releases](https://github.com/ovh/terraform-provider-ovh/releases).
+- [OVH provider](https://registry.terraform.io/providers/ovh/ovh/latest) that interacts with [OVHcloud API portal](https://api.ovh.com/). You can refer to [this guide](/pages/account/api/first-steps) to learn more on how to use the API portal. Furthermore, the OVH provider evolves as fast as the OVHcloud offering, be sure to follow the [releases](https://github.com/ovh/terraform-provider-ovh/releases).
 - [OpenStack provider](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/lastest) : the open standard cloud computing platform that OVHcloud is using to power its Public Cloud service. For more information, check [this page](https://www.ovhcloud.com/en-sg/public-cloud/openstack/).
 - [Hashicorp AWS provider](https://registry.terraform.io/providers/hashicorp/aws/latest/) to automate the operations of the S3 Object Storage.
 - [Hashicorp Kubernetes provider](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) : once you have provisionned a Kubernetes cluster with OVH provider, you can manage your Kubernetes configuration with this provider.
@@ -94,7 +91,7 @@ OVHcloud console GUI (also called "Control Panel" or "Manager") hides some backg
 | --- | --- | --- |
 |Managed Kubernetes Service - Cluster operations|ovh|[ovh_cloud_project_kube](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube)
 |Managed Kubernetes Service - Application deployment operations|Hashicorp Kubernetes|[kubernetes_namespace](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/namespace) [kubernetes_deployment](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/deployment)|
-|Kubernetes Load Balancer|Hashicorp kubernetes|[kubernetes_service](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/service) as described in this [tutorial](https://docs.ovh.com/sg/en/kubernetes/using-lb/)|
+|Kubernetes Load Balancer|Hashicorp kubernetes|[kubernetes_service](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/service) as described in this [tutorial](/pages/platform/kubernetes-k8s/using-lb)|
 |Managed Private Registry|ovh|[ovh_cloud_project_containerregistry](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_containerregistry)<br/>[ovh_cloud_project_containerregistry_user](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_containerregistry_user)|
 |Workflow Management|ovh|not available (see this [feature request](https://github.com/ovh/terraform-provider-ovh/issues/330) on ovh provider project)|
 
@@ -102,9 +99,9 @@ OVHcloud console GUI (also called "Control Panel" or "Manager") hides some backg
 
 | Control Panel concept | Terraform provider(s) | Resource or Data Source  |
 | --- | --- | --- |
-| AI Notebooks | not available but [ovhai CLI](https://docs.ovh.com/sg/en/publiccloud/ai/cli/overview-cli/) can help for automation||
-| AI Training | not available but [ovhai CLI](https://docs.ovh.com/sg/en/publiccloud/ai/cli/overview-cli/) can help for automation||
-| AI Deploy | not available but [ovhai CLI](https://docs.ovh.com/sg/en/publiccloud/ai/cli/overview-cli/) can help for automation||
+| AI Notebooks | not available but [ovhai CLI](/pages/platform/ai/cli_15_commands_reference) can help for automation||
+| AI Training | not available but [ovhai CLI](/pages/platform/ai/cli_15_commands_reference) can help for automation||
+| AI Deploy | not available but [ovhai CLI](/pages/platform/ai/cli_15_commands_reference) can help for automation||
 
 #### Data & Analytics
 
@@ -164,9 +161,9 @@ This universe is currently not supported by Terraform providers
 ### Terraform with OVHcloud examples
 
 - [Public Cloud examples repository on GitHub](https://github.com/ovh/public-cloud-examples)
-- [Creating a kubernetes cluster on Terraform](https://docs.ovh.com/sg/en/kubernetes/creating-a-cluster-through-terraform/)
-- [Creating a private registry (Harbor) through Terraform](https://docs.ovh.com/sg/en/private-registry/creating-a-private-registry-through-terraform/)
-- [Using OVHcloud High Performance (S3) Object Storage as Terraform Backend to store your Terraform state](https://docs.ovh.com/sg/en/public-cloud/use_high_perf_object_storage_terraform_backend_state/)
+- [Creating a kubernetes cluster on Terraform](/pages/platform/kubernetes-k8s/creating-a-cluster-through-terraform)
+- [Creating a private registry (Harbor) through Terraform](/pages/platform/private-registry/creating-a-private-registry-through-terraform)
+- [Using OVHcloud High Performance (S3) Object Storage as Terraform Backend to store your Terraform state](/pages/platform/public-cloud/use_high_perf_object_storage_terraform_backend_state)
 
 ### OVH Provider
 

@@ -1,10 +1,7 @@
 ---
 title: Filter für Ihre E-Mail-Adressen erstellen
-slug: email-hosting-filter
 legacy_guide_number: 1973
 excerpt: Erfahren Sie hier, wie Sie Filterregeln für Ihre E-Mail-Adresse erstellen und konfigurieren
-section: E-Mail Account Funktionen
-order: 04
 updated: 2021-09-27
 ---
 

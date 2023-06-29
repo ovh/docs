@@ -1,11 +1,8 @@
 ---
 title: AI Notebooks - Tutoriel - Utiliser Tensorboard dans un notebook (EN)
-slug: notebooks/tuto-tensorboard-embedded
 excerpt: Comment utiliser Tensorboard dans un AI Notebooks
-section: AI Notebooks - Tutoriels
-order: 02
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-tensorboard-embedded/'
+    canonical: '/pages/platform/ai/notebook_tuto_02_tensorboard'
 updated: 2022-09-01
 ---
 
@@ -35,7 +32,7 @@ The tutorial presents a simple example of launching **TensorBoard** in a noteboo
 
 If you want to launch it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), just create a new notebook and select **TensorFlow** docker image.
 
-If you want to launch it with the [CLI](https://docs.ovh.com/fr/publiccloud/ai/cli/getting-started-cli/), just choose the name of your notebook (`<notebook-name>`) and the number of GPUs (`<nb-gpus>`) your want and use the following command:
+If you want to launch it with the [CLI](/pages/platform/ai/cli_11_howto_run_notebook_cli), just choose the name of your notebook (`<notebook-name>`) and the number of GPUs (`<nb-gpus>`) your want and use the following command:
 
 ``` {.bash}
 ovhai notebook run tensorflow jupyterlab \
@@ -63,8 +60,8 @@ A preview of this notebook can be found on [GitHub](https://github.com/ovh/ai-tr
 
 ## Go further
 
-- Another way to track your training with an AI notebook is to use **Weights & Biases**. Follow this [tutorial](https://docs.ovh.com/fr/publiccloud/ai/notebooks/tuto-weights-and-biases/).
-- If you want to launch **TensorBoard** in a job, please refer to this [documentation](https://docs.ovh.com/fr/publiccloud/ai/training/tuto-tensorboard-inside-job).
+- Another way to track your training with an AI notebook is to use **Weights & Biases**. Follow this [tutorial](/pages/platform/ai/notebook_tuto_03_weight_biases).
+- If you want to launch **TensorBoard** in a job, please refer to this [documentation](/pages/platform/ai/training_tuto_05_tensorboard).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

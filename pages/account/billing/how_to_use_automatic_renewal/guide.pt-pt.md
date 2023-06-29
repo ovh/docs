@@ -1,10 +1,7 @@
 ---
 title: Gerir a renovação dos serviços
-slug: guia_de_utilizacao_da_renovacao_automatica_da_ovh
 excerpt: Saiba como gerir a renovação dos seus serviços OVHcloud na sua Área de Cliente
-section: Introdução
 legacy_guide_number: g1271
-order: 01
 updated: 2022-04-07
 ---
 
@@ -31,7 +28,7 @@ Tem a possibilidade de administrar a renovação e a rescisão dos seus serviço
 
 - Ter acesso à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt);
 - Dispor de serviços ativos da OVHcloud;
-- Ter [contacto de faturação](https://docs.ovh.com/pt/customer/gestao_dos_contactos/#definicao) dos seus serviços OVHcloud.
+- Ter [contacto de faturação](/pages/account/customer/managing_contacts#definicao) dos seus serviços OVHcloud.
 
 ## Instruções
 
@@ -41,11 +38,11 @@ Mas também é possível configurar certos produtos (Domínios, Alojamentos, VPS
 
 Recomendamos que consulte os seguintes guias e se concentre nas operações que deseja efetuar:
 
-- [Apresentar os estados de renovação dos seus serviços](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/#visualizar-o-estado-da-renovacao-dos-servicos): este guia ajuda a verificar se os seus serviços são renovados automaticamente. Permite-lhe igualmente obter a sua data de renovação ou de expiração;
+- [Apresentar os estados de renovação dos seus serviços](/pages/account/billing/how_to_use_automatic_renewal#visualizar-o-estado-da-renovacao-dos-servicos): este guia ajuda a verificar se os seus serviços são renovados automaticamente. Permite-lhe igualmente obter a sua data de renovação ou de expiração;
 
-- [Gerir a renovação dos seus serviços](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/#a-renovacao-na-ovhcloud): este guia ajuda a ativar ou desativar a renovação automática, a modificar a frequência de pagamento de um serviço, assim como a pagar as renovações antes do seu vencimento;
+- [Gerir a renovação dos seus serviços](/pages/account/billing/how_to_use_automatic_renewal#a-renovacao-na-ovhcloud): este guia ajuda a ativar ou desativar a renovação automática, a modificar a frequência de pagamento de um serviço, assim como a pagar as renovações antes do seu vencimento;
 
-- [Gerir os métodos de pagamento.](https://docs.ovh.com/pt/billing/gerir-metodos-de-pagamento/): este guia permite-lhe verificar se dispõe de um método de pagamento registado para as futuras renovações. Pode também adicionar e eliminar métodos de pagamento, se necessário.
+- [Gerir os métodos de pagamento.](/pages/account/billing/manage-payment-methods): este guia permite-lhe verificar se dispõe de um método de pagamento registado para as futuras renovações. Pode também adicionar e eliminar métodos de pagamento, se necessário.
 
 ### Aceder à parametrização dos seus serviços
 
@@ -71,11 +68,11 @@ Os seus critérios de filtragem serão apresentados por cima da tabela. Eis um e
 
 Por defeito, no momento da subscrição, os seus serviços estão parametrizados em **renovação automática**. Este modo permite-lhe garantir que os seus serviços são sistematicamente reconduzidos no fim do prazo. Além disso, se tiver guardado um método de pagamento na sua conta de cliente, as suas faturas serão automaticamente debitadas dessa conta.
 
-Se não registou nenhum [método de pagamento](https://docs.ovh.com/pt/billing/gerir-metodos-de-pagamento/), receberá uma fatura por e-mail. Bastará, então, pagá-la online.
+Se não registou nenhum [método de pagamento](/pages/account/billing/manage-payment-methods), receberá uma fatura por e-mail. Bastará, então, pagá-la online.
 
 Para os serviços com uma frequência de renovação automática superior a 1 mês (3 meses, 6 meses, 12 meses), um lembrete ser-lhe-á também enviado por e-mail no mês anterior, com um resumo dos serviços prestes a ser renovados.
 
-Se não pretender prolongar um destes serviços, basta [rescindir o serviço na Área de Cliente](https://docs.ovh.com/pt/billing/how-to-cancel-your-services/).
+Se não pretender prolongar um destes serviços, basta [rescindir o serviço na Área de Cliente](/pages/account/billing/how_to_cancel_services).
 
 ### A renovação manual
 
@@ -125,7 +122,7 @@ Esta ação está disponível para os serviços parametrizados para renovação 
 
 > [!warning]
 >
-> Para mais informações sobre a rescisão dos serviços OVHcloud, siga as [instruções deste manual](https://docs.ovh.com/pt/billing/how-to-cancel-your-services/).
+> Para mais informações sobre a rescisão dos serviços OVHcloud, siga as [instruções deste manual](/pages/account/billing/how_to_cancel_services).
 >
 
 #### Pagar a minha fatura
@@ -150,8 +147,8 @@ O seguinte quadro especifica as ações agrupadas possíveis.
 
 ## Quer saber mais?
 
-[Informações sobre o método de faturação cloud](https://docs.ovh.com/pt/public-cloud/informacoes-sobre-o-metodo-de-faturacao-cloud/)
+[Informações sobre o método de faturação cloud](/pages/platform/public-cloud/analyze_billing)
 
-[Gerir a faturação das contas Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/gestao-faturacao-exchange/)
+[Gerir a faturação das contas Exchange](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

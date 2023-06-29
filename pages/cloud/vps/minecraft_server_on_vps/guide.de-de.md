@@ -1,8 +1,6 @@
 ---
 title: 'Tutorial - Einen Minecraft-Server auf einem VPS oder Dedicated Server einrichten'
-slug: minecraft-server-auf-vps
 excerpt: 'Erfahren Sie hier, wie Sie Ihren eigenen Minecraft-Server installieren'
-section: Tutorial
 updated: 2021-06-29
 ---
 
@@ -42,9 +40,9 @@ Sie können einen vorkonfigurierten Minecraft-Server mieten oder einen solchen s
 ### Schritt 1: Server vorbereiten
 
 Konfigurieren Sie zunächst Ihren VPS für eine Minecraft-Installation.
-<br>Es wird empfohlen, einen neuen VPS zu bestellen oder einen bestehenden Server über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu [re-installieren](../erste-schritte-mit-einem-vps/#reinstallvps) und dabei die neueste verfügbare Version von Ubuntu oder Debian zu verwenden.
+<br>Es wird empfohlen, einen neuen VPS zu bestellen oder einen bestehenden Server über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu [re-installieren](/pages/cloud/vps/starting_with_a_vps#reinstallvps) und dabei die neueste verfügbare Version von Ubuntu oder Debian zu verwenden.
 
-Wenn das Betriebssystem installiert ist, verbinden Sie sich mit Ihrem VPS per SSH, wie in der Anleitung "[Erste Schritte mit einem VPS](../erste-schritte-mit-einem-vps/)" erklärt.
+Wenn das Betriebssystem installiert ist, verbinden Sie sich mit Ihrem VPS per SSH, wie in der Anleitung "[Erste Schritte mit einem VPS](/pages/cloud/vps/starting_with_a_vps)" erklärt.
 
 Aktualisieren Sie zunächst die Pakete auf die neuesten Versionen:
 

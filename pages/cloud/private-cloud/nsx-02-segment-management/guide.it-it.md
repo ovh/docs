@@ -1,12 +1,9 @@
 ---
 title: Gestione dei segmenti in NSX (EN)
-slug: nsx-segment-management
 excerpt: How to create and use segments
-section: NSX
-order: 02
 updated: 2023-02-27
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/nsx-segment-management/'
+    canonical: '/pages/cloud/private-cloud/nsx-02-segment-management'
 ---
 
 **Last updated 27th February 2023**
@@ -206,7 +203,7 @@ Go back to the NSX interface, go to the `Networking`{.action} tab and click on `
 
 ## Go further <a name="gofurther"></a>
 
-[Getting started with NSX](https://docs.ovh.com/it/private-cloud/nsx-first-steps/)
+[Getting started with NSX](/pages/cloud/private-cloud/nsx-01-first-steps)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/it/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

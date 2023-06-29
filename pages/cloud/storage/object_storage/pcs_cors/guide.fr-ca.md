@@ -1,9 +1,6 @@
 ---
 title: Object Storage Swift - Mettre en place CORS sur Object Storage
-slug: pcs/cors
 excerpt: Retrouvez ici les concepts permettant de mettre en oeuvre CORS.
-section: Spécificités de la classe de stockage OpenStack Swift
-order: 050
 updated: 2022-01-03
 ---
 
@@ -21,8 +18,8 @@ Les métadonnées CORS ne sont présentes que dans le conteneur. Les valeurs ind
 
 ## Prérequis
 
-- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/ca/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/) en installant python-swiftclient.
-- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/ca/fr/public-cloud/set-openstack-environment-variables/).
+- [Préparer l’environnement pour utiliser l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) en installant python-swiftclient.
+- [Charger les variables d’environnement OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 ## En pratique
 

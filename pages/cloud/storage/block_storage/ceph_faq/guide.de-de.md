@@ -1,10 +1,8 @@
 ---
 title: FAQ (EN)
-slug: ceph/faq
 excerpt: 'Frequently asked questions'
-section: Cloud Disk Array
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/block-storage/ceph/faq/'
+    canonical: '/pages/cloud/storage/block_storage/ceph_faq'
 updated: 2020-11-05
 ---
 

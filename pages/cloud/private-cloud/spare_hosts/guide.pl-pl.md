@@ -1,10 +1,7 @@
 ---
 title: 'Host zapasowy'
 excerpt: 'Mechanizm wymiany hosta'
-slug: hosty_zapasowe
-section: 'Funkcjonalności OVHcloud'
 legacy_guide_number: g860
-order: 4
 updated: 2020-06-29
 ---
 
@@ -26,7 +23,7 @@ W przypadku awarii jednego z hostów automatycznie dostarczamy bezpłatny host z
 
 Gdy tylko host zostanie dostarczony, otrzymasz wiadomość e-mail ze wszystkimi potrzebnymi informacjami oraz adresem IP hosta, dzięki czemu łatwo go znajdziesz w interfejsie vSphere.
 
-Usługa VMware [High Availability](../vmware-ha-high-availability)(HA) jest domyślnie aktywowana w klastrze. Jeśli pozostawisz ją włączoną, Twoje wirtualne maszyny zostaną automatycznie zrestartowane. Jeśli usługa Distributed Resources Scheduler (DRS) jest włączona i skonfigurowana w trybie "Pełna automatyzacja", równoważenie obciążeń na hostach w klastrze będzie również wykonywane automatycznie.
+Usługa VMware [High Availability](/pages/cloud/private-cloud/vmware_ha_high_availability)(HA) jest domyślnie aktywowana w klastrze. Jeśli pozostawisz ją włączoną, Twoje wirtualne maszyny zostaną automatycznie zrestartowane. Jeśli usługa Distributed Resources Scheduler (DRS) jest włączona i skonfigurowana w trybie "Pełna automatyzacja", równoważenie obciążeń na hostach w klastrze będzie również wykonywane automatycznie.
 
 > [!warning]
 > 
@@ -37,7 +34,7 @@ Usługa VMware [High Availability](../vmware-ha-high-availability)(HA) jest domy
 
 Po przywróceniu działania oryginalnego hosta możesz nam zwrócić jeden z hostów (host zapasowy lub oryginalny).
 
-Rekomendujemy zwrócenie oryginalnego hosta, abyśmy mogli przeprowadzić testy diagnozujące przyczynę incydentu w celu uniknięcia potencjalnych awarii w przyszłości. W tym przypadku zachowasz host zapasowy. Zapoznaj się z przewodnikiem [Usunięcie hosta](../usuwanie-serwera-hosta/)
+Rekomendujemy zwrócenie oryginalnego hosta, abyśmy mogli przeprowadzić testy diagnozujące przyczynę incydentu w celu uniknięcia potencjalnych awarii w przyszłości. W tym przypadku zachowasz host zapasowy. Zapoznaj się z przewodnikiem [Usunięcie hosta](/pages/cloud/private-cloud/delete_host)
 
 OVHcloud automatycznie odzyska oryginalny host, gdy tylko zostanie on usunięty.
 

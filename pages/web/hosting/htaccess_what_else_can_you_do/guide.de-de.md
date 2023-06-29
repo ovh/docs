@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Operationen mit .htaccess Dateien"
 excerpt: "Erfahren Sie hier einige Möglichkeiten zur Nutzung der .htaccess Datei"
-slug: webhosting_welche_anderen_operationen_sind_mit_htaccess-dateien_moglich
-section: 'Weiterleitung und Authentifizierung'
-order: 04
 updated: 2023-05-23
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Proteger un directorio o el panel de administración de su sitio web con los archivos .htaccess y .htpasswd"
-slug: compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion
 excerpt: "Descubra cómo proteger un repertorio o el acceso a la administración de su sitio web mediante autenticación con los archivos .htaccess y .htpasswd"
-section: Reescritura y autenticación
-order: 02
 updated: 2023-06-01
 ---
 

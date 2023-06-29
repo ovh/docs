@@ -1,8 +1,6 @@
 ---
 title: Wysyłanie SMS-ów do Stanów Zjednoczonych
-slug: wysylanie_sms-ow_do_stanow_zjednoczonych
 excerpt: Odkryj w jaki sposób wysyłać wiadomości SMS do Stanów Zjednoczonych
-section: 'Wysyłanie wiadomości SMS'
 updated: 2022-08-05
 ---
 
@@ -68,7 +66,7 @@ Pojawi się okienko pop-up zawierające pola do wypełnienia.
 #### 2.2 Za pośrednictwem API
 
 > [!success]
-> Jeśli nie wiesz, jak korzystać z API OVHcloud, zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/)".
+> Jeśli nie wiesz, jak korzystać z API OVHcloud, zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z API OVHcloud](/pages/account/api/first-steps)".
 
 Zaloguj się na [api.ovh.com/](https://api.ovh.com/) i użyj następującego interfejsu API:
 
@@ -103,7 +101,7 @@ Po utworzeniu i zatwierdzeniu Twojego modelu wiadomości, operacja wysyłania SM
 
 Jeżeli wysyłasz wiadomość SMS do Stanów Zjednoczonych bez uprzedniego stworzenia i zatwierdzenia modelu, SMS zostanie odrzucony, a Ty otrzymasz Premium Tracking Transaction Code (PTT code) 1999. Kod ten odpowiada komunikatowi błędu „No templates available” (brak utworzonego modelu wiadomości).
 
-Pozostałe możliwe kody rezultatów możesz znaleźć w [tym przewodniku](../informacje-o-uzytkownikach-sms/).
+Pozostałe możliwe kody rezultatów możesz znaleźć w [tym przewodniku](/pages/telecom/sms/tout_savoir_sur_les_utilisateurs_sms).
 
 ## Sprawdź również
 

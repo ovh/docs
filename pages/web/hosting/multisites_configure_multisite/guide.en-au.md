@@ -1,9 +1,6 @@
 ---
 title: 'Hosting multiple websites on your Web Hosting plan'
-slug: multisites-configuring-multiple-websites
 excerpt: 'Find out how to host several websites on your Web Hosting plan'
-section: Getting started
-order: 02
 updated: 2022-11-04
 ---
 
@@ -19,7 +16,7 @@ You can host multiple websites on a single Web Hosting plan, even if the domain 
 
 - a compatible [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/){.external}
 - one or more [domain names](https://www.ovhcloud.com/en-au/domains/){.external}
-- the right to modify your domain name's configuration (the [DNS Zone](../../domains/web_hosting_how_to_edit_my_dns_zone/))
+- the right to modify your domain name's configuration (the [DNS Zone](/pages/web/domains/dns_zone_edit))
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
 
 ## Instructions
@@ -87,7 +84,7 @@ Once you have entered this information, click `Next`{.action}. Then check the su
 Once you have selected an OVHcloud-registered domain, you can automatically or manually modify its DNS configuration.
 
 - **For automatic DNS configuration**: tick the `Automatic configuration (recommended)`{.action} box.
-- **For manual DNS configuration**: untick the `Automatic configuration (recommended)`{.action} box, then note down the information that appears. If you would like to configure your DNS zone manually, you can use our guide on [Editing an OVHcloud DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
+- **For manual DNS configuration**: untick the `Automatic configuration (recommended)`{.action} box, then note down the information that appears. If you would like to configure your DNS zone manually, you can use our guide on [Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit){.external}.
 
 Click `Confirm`{.action} to start adding the domain. This may take up to an hour. Changes made to a domain name's configuration can take between 1 and a maximum of 24 hours to propagate fully.
 
@@ -101,13 +98,13 @@ Now that you have added your domain, go to [Step 3: Put your website online](#si
 
  > Before you proceed, it is best to modify the DNS zone of the external domain name before adding the multisite record.
  >
- > The external domain name’s configuration (its DNS zone) must be modified using the interface of the service provider managing it. If you are using OVHcloud, please follow our guide on [Editing an OVHcloud DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/){.external}. Once you have configured your domain, you will need to allow between 1 and 24 hours for the changes to propagate fully.
+ > The external domain name’s configuration (its DNS zone) must be modified using the interface of the service provider managing it. If you are using OVHcloud, please follow our guide on [Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit){.external}. Once you have configured your domain, you will need to allow between 1 and 24 hours for the changes to propagate fully.
 >
 > Below are the 2 elements you need to modify in your external domain name's DNS configuration:
 >
 > |Field|Where to find this information|Action to take|
 > |---|---|---|
-> |TXT|On the `Multisite`{.action} tab, click `Configuration of ovhcontrol token`{.action}|Allows OVHcloud to ensure that each external domain name is added legitimately. Ensure that you create the TXT record with the subdomain ovhcontrol (e.g. ovhcontrol.mydomain.ovh) in the DNS zone authoritative for the domain name to be added.<br></br> It is important to note that if you want to add `blog.mydomain.ovh` you have to create the record for the subdomain `ovhcontrol.mydomain.ovh` and not `ovhcontrol.blog.mydomain.ovh` <br></br>(../../domains/web_hosting_general_information_about_dns_servers/#understanding-dns) your domain is linked to. You will need to validate only the primary domain, not all subdomains.|
+> |TXT|On the `Multisite`{.action} tab, click `Configuration of ovhcontrol token`{.action}|Allows OVHcloud to ensure that each external domain name is added legitimately. Ensure that you create the TXT record with the subdomain ovhcontrol (e.g. ovhcontrol.mydomain.ovh) in the DNS zone authoritative for the domain name to be added.<br></br> It is important to note that if you want to add `blog.mydomain.ovh` you have to create the record for the subdomain `ovhcontrol.mydomain.ovh` and not `ovhcontrol.blog.mydomain.ovh` <br></br>(/pages/web/domains/dns_server_general_information#understanding-dns) your domain is linked to. You will need to validate only the primary domain, not all subdomains.|
 >
 > ![multisite](images/add-multisite-external-step3.png){.thumbnail}
 >
@@ -145,9 +142,9 @@ Check the information displayed, then click `Confirm`{.action}. Once you have do
 
 Once you have added your domain name, you just need to put your website online. As a reminder, you will need to make this change in the root folder, which you defined in the previous step.
 
-To help you with this, you can use OVHcloud 1-click modules, which provide you with a ready-to-use website structure. The website will then be set up automatically in the root directory you configured earlier. You can find out more about this option by referring to our guide on [Setting up your website with 1-click modules](../web_hosting_web_hosting_modules/){.external}. 
+To help you with this, you can use OVHcloud 1-click modules, which provide you with a ready-to-use website structure. The website will then be set up automatically in the root directory you configured earlier. You can find out more about this option by referring to our guide on [Setting up your website with 1-click modules](/pages/web/hosting/cms_install_1_click_modules){.external}. 
 
-However, if you would like to set up your website manually, you can put it online by moving all of your website files into the correct root directory on your storage space. You can find out more about this option by referring to our guide on [Publishing a website on your Web Hosting plan](../web_hosting_how_to_get_my_website_online/){.external}.
+However, if you would like to set up your website manually, you can put it online by moving all of your website files into the correct root directory on your storage space. You can find out more about this option by referring to our guide on [Publishing a website on your Web Hosting plan](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}.
 
 > [!primary]
 >
@@ -158,11 +155,11 @@ However, if you would like to set up your website manually, you can put it onlin
 
 ## Go further
 
-[Setting up your website with 1-click modules](../web_hosting_web_hosting_modules/){.external}
+[Setting up your website with 1-click modules](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Editing an OVHcloud DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/){.external}
+[Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit){.external}
 
-[Publishing a website on your Web Hosting plan](../web_hosting_how_to_get_my_website_online/){.external}
+[Publishing a website on your Web Hosting plan](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
 

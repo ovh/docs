@@ -1,11 +1,8 @@
 ---
 title: MongoDB - Connect with CLI
 excerpt: Connect to your Public Cloud Databases for MongoDB using the Command Line Interface (CLI)
-slug: mongodb/connect-cli
-section: MongoDB - Guides
-order: 030
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/connect-cli/'
+    canonical: '/pages/platform/databases/mongodb_03_connect_cli'
 updated: 2022-07-27
 ---
 
@@ -21,8 +18,8 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 - A [Public Cloud project](https://www.ovhcloud.com/es-es/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
-- A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/es/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your MongoDB instance](https://docs.ovh.com/es/publiccloud/databases/mongodb/managing-service/) to accept incoming connections
+- A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your MongoDB instance](/pages/platform/databases/mongodb_02_manage_control_panel) to accept incoming connections
 
 ## Concept
 
@@ -115,9 +112,9 @@ replicaset [direct: primary]>
 
 ## Go further
 
-[MongoDB capabilities](https://docs.ovh.com/es/publiccloud/databases/mongodb/capabilities/)
+[MongoDB capabilities](/pages/platform/databases/mongodb_01_concept_capabilities)
 
-[Configuring vRack for Public Cloud](https://docs.ovh.com/es/public-cloud/public-cloud-vrack/)
+[Configuring vRack for Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack)
 
 Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mongodb) to find how to connect to your database with several languages.
 

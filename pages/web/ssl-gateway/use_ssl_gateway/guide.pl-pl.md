@@ -1,6 +1,5 @@
 ---
 title: Korzystanie z usługi SSL Gateway
-slug: korzystanie-ssl-gateway
 legacy_guide_number: 2370
 excerpt: Zabezpiecz połączenie z Twoja stroną internetową
 updated: 2022-12-01
@@ -15,7 +14,7 @@ updated: 2022-12-01
 
 > [!primary]
 >
-> - Zamówienie usługi [SSL Gateway](../order-ssl-gateway/guide.pl-pl.md).
+> - Zamówienie usługi [SSL Gateway](/pl/ssl-gateway/order-ssl-gateway/guide.pl-pl.md).
 > - Dostęp do Panelu klienta Sunrise.
 >
 

@@ -1,11 +1,8 @@
 ---
 title: Deploy an OVF Linux, Windows Server and Windows SQL Server template
-slug: applying-ovhcloud-template
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/applying-ovh-template/'
+    canonical: '/pages/cloud/private-cloud/ovf_template'
 excerpt: Find out how to deploy a Linux, Windows Server or Windows SQL Server template
-section: Virtual machine management
-order: 02
 updated: 2020-11-18
 ---
 
@@ -27,7 +24,7 @@ Windows VMs deployed from a template automatically use the SPLA licences provide
 ## Requirements
 
 - Web client access (HTML5)
-- [active Windows licences](../control-panel-ovhcloud/#windows-licence-tab) (activate via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, in the `Windows licence`{.action} tab for the datacentre)
+- [active Windows licences](/pages/cloud/managed-bare-metal/manager-ovhcloud#windows-licence-tab) (activate via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, in the `Windows licence`{.action} tab for the datacentre)
 
 ## Instructions
 

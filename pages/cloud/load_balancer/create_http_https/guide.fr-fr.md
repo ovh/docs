@@ -1,8 +1,6 @@
 ---
 title: "Configuration d'un service OVHcloud Load Balancer avec HTTP/HTTPS"
-slug: configure-iplb
 excerpt: Configuration d’un service Load Balancer
-section: Configuration
 updated: 2022-04-04
 ---
 
@@ -36,7 +34,7 @@ Pour rappel, le service OVHcloud Load Balancer est composé de 4 parties éléme
 > Nous allons vous guider au travers des différentes étapes. Selon vos choix d'architecture, certaines configurations peuvent différer.
 > 
 
-Avant de vous lancer, si vous ne l'avez pas encore lue, nous vous conseillons de consulter la présentation générale du service OVHcloud Load Balancer: [Présentation de l'OVHcloud Load Balancer](../iplb-presentation/).
+Avant de vous lancer, si vous ne l'avez pas encore lue, nous vous conseillons de consulter la présentation générale du service OVHcloud Load Balancer: [Présentation de l'OVHcloud Load Balancer](/pages/cloud/load_balancer/use_presentation).
 
 > [!warning]
 >
@@ -47,7 +45,7 @@ Dans l'espace client OVHcloud, nous allons retrouver les fonctionnalités détai
 
 ![Service OVHcloud Load Balancer](images/iplb_service.png){.thumbnail}
 
-Pour plus d'informations sur les fonctionnalités de l'espace client OVHcloud, consultez la page « [Gestion du service Load Balancer via l’espace client](../utilisation-iplb/) ».
+Pour plus d'informations sur les fonctionnalités de l'espace client OVHcloud, consultez la page « [Gestion du service Load Balancer via l’espace client](/pages/cloud/load_balancer/use-lb) ».
 
 Via l'API OVHcloud, utilisez l'appel suivant :
 
@@ -56,7 +54,7 @@ Via l'API OVHcloud, utilisez l'appel suivant :
 > @api {GET} /ipLoadbalancing
 > 
 
-Pour plus d'informations sur les fonctionnalités de l'API, consultez la page [Détails des fonctions API](../api-details/){.ref}
+Pour plus d'informations sur les fonctionnalités de l'API, consultez la page [Détails des fonctions API](/pages/cloud/load_balancer/use_api_details){.ref}
 
 
 ### Ajouter une ferme de serveurs

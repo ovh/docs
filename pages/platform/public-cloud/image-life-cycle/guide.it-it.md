@@ -1,9 +1,6 @@
 ---
 title: 'Public Cloud & VPS - Ciclo di vita delle immagini'
-slug: public-cloud-vps-image-life-cycle
 excerpt: Scopri il ciclo di vita delle immagini fornite per Public Cloud & VPS
-section: 'Per iniziare'
-order: 8
 updated: 2023-06-19
 ---
 

@@ -1,8 +1,5 @@
 ---
 title: FAQ VPS OVHcloud
-slug: vps-faq
-section: Primeiros passos
-order: 2
 updated: 2022-05-05
 ---
 
@@ -65,7 +62,7 @@ Se deseja usufruir de recursos garantidos sem conhecimentos em administração d
 A ligação ao VPS deverá ser feita em SSH graças ao endereço IP, ao nome de utilizador e à palavra-passe fornecidos por e-mail aquando da receção do comando.
 A partir de um computador com Windows, será aconselhado que se ligue graças ao software Putty. A ligação poderá ser feita diretamente no terminal a partir de um computador Linux.
 
-Para mais informações, consulte o manual ["VPS - primeira utilização"](../instalar-gerir-vps/).
+Para mais informações, consulte o manual ["VPS - primeira utilização"](/pages/cloud/vps/starting_with_a_vps).
 
 ### É possível alojar vários websites num VPS?
 
@@ -79,7 +76,7 @@ Para isso, pode utilizar as seguintes opções: o backup manual (Snapshot) ou o 
 ### Como proteger o meu VPS?
 
 Por predefinição, o VPS é fornecido "nu", não existindo nenhuma configuração de segurança neste último. Portanto, esta é a primeira coisa que têm de fazer quando recebem
-Para isso, não hesite em consultar o guia ["Proteger um VPS"](../como-proteger-vps/).
+Para isso, não hesite em consultar o guia ["Proteger um VPS"](/pages/cloud/vps/secure_your_vps).
 
 ### Qual é a largura de banda atribuída ao meu VPS? Ela está garantida?
 

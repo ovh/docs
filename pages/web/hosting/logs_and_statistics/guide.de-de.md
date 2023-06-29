@@ -1,9 +1,6 @@
 ---
 title: Statistiken und Logs eines Webhostings einsehen
 excerpt: Erfahren Sie hier, wie Sie die Statistiken und Logs Ihrer Webseiten abrufen
-slug: webhosting_die_statistiken_und_logs_meiner_website_einsehen
-section: 'Webseitenoptimierung'
-order: 04
 updated: 2021-01-05
 ---
 
@@ -46,7 +43,7 @@ Klicken Sie im Bereich `Verwaltung der Nutzer` auf den Button `Einen neuen Nutze
 
 > [!warning] 
 >
-> Wenn Sie die separaten Logs bei einem [Multisite-Eintrag](../multisites-mehrere-websites-konfigurieren/#schritt-2-eine-domain-oder-subdomain-hinzufugen) aktiviert haben, können die hier erstellten Benutzer nicht auf die Statistiken dieses Multisite-Eintrags zugreifen.
+> Wenn Sie die separaten Logs bei einem [Multisite-Eintrag](/pages/web/hosting/multisites_configure_multisite#schritt-2-eine-domain-oder-subdomain-hinzufugen) aktiviert haben, können die hier erstellten Benutzer nicht auf die Statistiken dieses Multisite-Eintrags zugreifen.
 >
 
 ### Besucherstatistiken
@@ -81,7 +78,7 @@ Es stehen Ihnen verschiedene Log-Typen zur Verfügung:
 - **cgi**: Diese Logs sammeln die verschiedenen Aufrufe zu *cgi.bin* Skripten.
 - **out**: Dies sind die externen Aufrufe Ihres Hostings.
 - **ssh**: In diesen Logs sind die verschiedenen Verbindungen über SSH aufgeführt.
-- **cron**: Die Ergebnisse der Ausführung Ihrer [geplanten Tasks](../webhosting_automatisierte_aufgaben_cron/) werden hier geloggt.
+- **cron**: Die Ergebnisse der Ausführung Ihrer [geplanten Tasks](/pages/web/hosting/cron_tasks) werden hier geloggt.
 
 ### Aktivität des Webhostings
 

@@ -1,7 +1,5 @@
 ---
 title: Cron jobs
-slug: cron
-section: App
 updated: 2021-03-26
 ---
 
@@ -28,10 +26,10 @@ Cron runs are executed using the dash shell, not the bash shell used by normal S
 
 If an application defines both a `web` instance and a `worker` instance, cron tasks will be run only on the `web` instance.
 
-If running the cron task in a specific timezone that is different than UTC is required, you will need to [configure that timezone](../timezone) explicitly.
+If running the cron task in a specific timezone that is different than UTC is required, you will need to [configure that timezone](/pages/web/web-paas/configuration-app/timezone) explicitly.
 
 > [!primary]  
-> Cron log output is captured in the at `/var/log/cron.log`.  See the [Log page](../../development-logs) for more information on logging.
+> Cron log output is captured in the at `/var/log/cron.log`.  See the [Log page](/pages/web/web-paas/development-logs) for more information on logging.
 > 
 
 ## How do I setup Cron for a typical Drupal site?

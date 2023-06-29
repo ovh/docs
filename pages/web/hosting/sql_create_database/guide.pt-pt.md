@@ -1,9 +1,6 @@
 ---
 title: 'Criar e gerir uma base de dados a partir de um alojamento web'
-slug: criar-base-de-dados
 excerpt: 'Saiba como usar as bases de dados incluídas num plano de alojamento web OVHcloud'
-section: Bases de dados
-order: 01
 updated: 2022-02-03
 ---
 
@@ -101,7 +98,7 @@ As informações de conexão estarão pré-preenchidas na nova janela; só preci
 
 Para cada base de dados de alojamento web, todos os dias serão criados snapshots de forma automática (até 32 entidades). Isso significa que pode simplesmente restaurar uma versão anterior de uma base de dados a partir da Área de Cliente OVHcloud. 
 
-Para verificar os snapshots disponíveis e a sua data/hora de criação, clique no símbolo junto ao círculo verde na tabela das suas bases de dados. A partir daqui também pode fazer download de cada backup das bases de dados. Para mais informações, consulte o guia [Recuperar a cópia de segurança da base de dados de um alojamento web](../partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/).
+Para verificar os snapshots disponíveis e a sua data/hora de criação, clique no símbolo junto ao círculo verde na tabela das suas bases de dados. A partir daqui também pode fazer download de cada backup das bases de dados. Para mais informações, consulte o guia [Recuperar a cópia de segurança da base de dados de um alojamento web](/pages/web/hosting/sql_database_export).
 
 #### Problemas frequentes
 
@@ -117,17 +114,17 @@ Deve sempre usar o nome da base de dados nos scripts e ficheiros de configuraç�
 
 Se a base de dados de um alojamento web exceder o espaço de armazenamento recomendado, passará automaticamente para o modo «read only»/«select only». O administrador receberá uma notificação por e-mail.
 
-Depois de a base de dados ser otimizada (limpa), pode recalcular a sua dimensão na Área de Cliente OVHcloud para a desbloquear. O melhor a fazer é descarregar a base de dados, gerir a revisão localmente e voltar a carregá-la por importação. Para mais informações, consulte [este guia](../partilhado_guia_de_otimizacao_das_performances_do_seu_site/#passo-7-otimizar-a-sua-base-de-dados).
+Depois de a base de dados ser otimizada (limpa), pode recalcular a sua dimensão na Área de Cliente OVHcloud para a desbloquear. O melhor a fazer é descarregar a base de dados, gerir a revisão localmente e voltar a carregá-la por importação. Para mais informações, consulte [este guia](/pages/web/hosting/optimise_your_website_performance#passo-7-otimizar-a-sua-base-de-dados).
 
 
 ## Saiba mais
 
-[Alterar a palavra-passe da base de dados de um alojamento web](../alterar-palavra-passe-base-de-dados/)
+[Alterar a palavra-passe da base de dados de um alojamento web](/pages/web/hosting/sql_change_password)
 
-[Recuperar a cópia de segurança da base de dados de um alojamento web](../partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/)
+[Recuperar a cópia de segurança da base de dados de um alojamento web](/pages/web/hosting/sql_database_export)
 
-[Importar um backup para a base de dados de um alojamento web](../partilhado_guia_de_importacao_de_uma_base_de_dados_mysql/)
+[Importar um backup para a base de dados de um alojamento web](/pages/web/hosting/sql_importing_mysql_database)
 
-[Otimizar o desempenho do seu website](../partilhado_guia_de_otimizacao_das_performances_do_seu_site/)
+[Otimizar o desempenho do seu website](/pages/web/hosting/optimise_your_website_performance)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

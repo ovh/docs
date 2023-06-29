@@ -1,9 +1,6 @@
 ---
 title: Comment sécuriser votre site Web ?
 excerpt: Apprenez à renforcer la sécurité de votre site Web
-slug: secure-website
-section: Optimiser son site
-order: 01
 updated: 2021-12-10
 ---
 
@@ -28,7 +25,7 @@ Toutefois, si vous rencontrez des difficultés à réaliser certaines d'entre el
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/) OVHcloud.
-- Disposer des identifiants de connexion à [l'interface administrateur de votre site](https://codex.wordpress.org/fr:Premiers_pas_avec_WordPress){.external}, ainsi qu'à [l'espace de stockage de votre hébergement](../connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter).
+- Disposer des identifiants de connexion à [l'interface administrateur de votre site](https://codex.wordpress.org/fr:Premiers_pas_avec_WordPress){.external}, ainsi qu'à [l'espace de stockage de votre hébergement](/pages/web/hosting/ftp_connection#etape-1-recuperer-les-informations-necessaires-pour-se-connecter).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
@@ -43,13 +40,13 @@ Vérifiez donc tout d'abord la sécurité de votre poste Windows, Mac ou Linux :
 
 - vérifiez les mises à jour de votre machine;
 - lancez un scan complet de votre poste, après avoir mis à jour votre logiciel antivirus / anti-malware;
-- changez régulièrement le mot de passe administrateur de votre poste (pour plus d'informations sur le choix des mots de passe, suivez les instructions de ce [guide](../../customer/tout-savoir-sur-identifiant-client/#creer-un-mot-de-passe-solide-et-unique)).
+- changez régulièrement le mot de passe administrateur de votre poste (pour plus d'informations sur le choix des mots de passe, suivez les instructions de ce [guide](/pages/account/customer/all_about_username#creer-un-mot-de-passe-solide-et-unique)).
 
 ### Étape 2. Sécurisez votre espace client OVHcloud
 
-Pour sécuriser votre compte client, [activez la double authentification](../../customer/securiser-son-compte-avec-une-2FA/) et suivez les instructions de ce [guide](../../customer/tout-savoir-sur-identifiant-client/).
+Pour sécuriser votre compte client, [activez la double authentification](/pages/account/customer/secure-ovhcloud-account-with-2fa) et suivez les instructions de ce [guide](/pages/account/customer/all_about_username).
 
-Pensez notamment à mettre à jour les [informations de votre compte client](../../customer/tout-savoir-sur-identifiant-client/#modifier-mes-informations-personnelles) et à y ajouter un **e-mail de secours**.<br>
+Pensez notamment à mettre à jour les [informations de votre compte client](/pages/account/customer/all_about_username#modifier-mes-informations-personnelles) et à y ajouter un **e-mail de secours**.<br>
 En cas de perte de vos identifiants et/ou d'indisponibilité de l'adresse e-mail principale de votre compte client OVHcloud, un e-mail de secours ou des informations personnelles à jour nous seront indispensables pour vous aider à retrouver l'accès à vos solutions.
 
 ### Étape 3. Effectuez régulièrement des sauvegardes de votre site <a name="backup"></a>
@@ -61,32 +58,32 @@ En cas de perte de vos identifiants et/ou d'indisponibilité de l'adresse e-mail
 > OVHcloud effectue régulièrement des sauvegardes de vos données sur son infrastructure. Pour autant, une erreur de manipulation comme une opération de suppression lancée manuellement sur une base de données en production, ou un non renouvellement de vos services, entraîneront la perte définitive de vos données, ainsi que toutes leurs sauvegardes.
 >
 
-Commencez par sauvegarder les données qui composent votre site (fichiers FTP **ET** base de données) en suivant les instructions de ce [guide](../exporter-son-site-web/). Importez-les sur votre poste ou sur un support externe, de type serveur NAS ou clé USB.
+Commencez par sauvegarder les données qui composent votre site (fichiers FTP **ET** base de données) en suivant les instructions de ce [guide](/pages/web/hosting/exporter-son-site-web). Importez-les sur votre poste ou sur un support externe, de type serveur NAS ou clé USB.
 
 Les logiciels de gestion de site Web (CMS) offrent aussi la possibilité d'installer des plugins de sauvegarde automatique.<br>
 Consultez les forums officiels de votre CMS préféré ou contactez la [communauté OVHcloud](https://community.ovh.com/) à ce sujet.
 
 ### Étape 4. Apprenez à reconnaître les e-mails frauduleux
 
-Les e-mails de phishing constituent également une menace à la sécurité de votre site, car ils peuvent contenir ou amener à l'installation de logiciels malveillants. Pour apprendre à les reconnaître et à vous en prémunir, consultez ce [guide](../../customer/arnaques-fraude-phishing/).
+Les e-mails de phishing constituent également une menace à la sécurité de votre site, car ils peuvent contenir ou amener à l'installation de logiciels malveillants. Pour apprendre à les reconnaître et à vous en prémunir, consultez ce [guide](/pages/account/customer/phishing_care).
 
 ### Étape 5. Mettre en place le renouvellement automatique
 
 En cas de non-renouvellement de vos services, OVHcloud a l'obligation légale, à l'échéance de votre abonnement, de supprimer intégralement les données liées à votre offre d'hébergement, ainsi que la totalité de leurs sauvegardes. Nous envoyons des messages de rappels à nos clients afin de leur rappeler leurs échéances de renouvellement.<br>
 Pour autant, ces e-mails de relance peuvent arriver dans vos spams, ou l'adresse e-mail associée à votre compte OVHcloud peut être erronée ou ne plus être disponible.
 
-Si votre site a une place prépondérante dans votre activité professionnelle, [activez le renouvellement automatique](../../billing/renouvellement-automatique-ovh/#acceder-au-parametrage-de-vos-services) sur l'ensemble de vos services OVHcloud.<br>
+Si votre site a une place prépondérante dans votre activité professionnelle, [activez le renouvellement automatique](/pages/account/billing/how_to_use_automatic_renewal#acceder-au-parametrage-de-vos-services) sur l'ensemble de vos services OVHcloud.<br>
 Nous vous recommandons aussi de vérifier régulièrement la **validité des moyens de paiement** que vous avez enregistrés.
 
 ### Étape 6. Vérifiez que votre site est à jour
 
-Vérifiez régulièrement les mises à jour de votre site en suivant les instructions de ce [guide](../site-ferme-pour-hack/#22-mettre-a-jour-votre-site-internet).
+Vérifiez régulièrement les mises à jour de votre site en suivant les instructions de ce [guide](/pages/web/hosting/diagnostic_403_forbidden#22-mettre-a-jour-votre-site-internet).
 
-Pensez également à utiliser une version récente du [langage informatique PHP](../configurer-le-php-sur-son-hebergement-web-mutu-2014/) sur votre hébergement.
+Pensez également à utiliser une version récente du [langage informatique PHP](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014) sur votre hébergement.
 
 ### Étape 7. Activez le https
 
-Mettez en place la connexion cryptée à votre site via le protocole **HTTPS** en suivant ce [guide](../passer-site-internet-https-ssl/). L'activation de ce protocole va permettre de chiffrer l'ensemble des informations qui transitent par votre site web (notamment les saisies effectuées par vos utilisateurs sur ses formulaires).
+Mettez en place la connexion cryptée à votre site via le protocole **HTTPS** en suivant ce [guide](/pages/web/hosting/ssl-activate-https-website). L'activation de ce protocole va permettre de chiffrer l'ensemble des informations qui transitent par votre site web (notamment les saisies effectuées par vos utilisateurs sur ses formulaires).
 
 ### Étape 8. Protégez vos formulaires
 
@@ -103,9 +100,9 @@ Ajoutez à votre site un plugin de sécurité recommandé par l'éditeur du CMS 
 
 ### Étape 10. Vérifiez que votre hébergement ne contient pas de fichiers malveillants
 
-Cette étape nécessite de vous connecter à votre [espace FTP](../connexion-espace-stockage-ftp-hebergement-web/). Elle implique des compétences techniques pour reconnaître d'éventuels fichiers malveillants sur votre hébergement. Si vous rencontrez des difficultés à effectuer cette vérification, n'hésitez pas à contacter nos [partenaires](https://partner.ovhcloud.com/fr/directory/).
+Cette étape nécessite de vous connecter à votre [espace FTP](/pages/web/hosting/ftp_connection). Elle implique des compétences techniques pour reconnaître d'éventuels fichiers malveillants sur votre hébergement. Si vous rencontrez des difficultés à effectuer cette vérification, n'hésitez pas à contacter nos [partenaires](https://partner.ovhcloud.com/fr/directory/).
 
-En cas de doutes sur ce sujet, pensez également à effectuer les vérifications décrites à [l'étape 1 de ce guide](#local) et à [changer le mot de passe](../modifier-mot-de-passe-utilisateur-ftp/) de votre espace FTP.
+En cas de doutes sur ce sujet, pensez également à effectuer les vérifications décrites à [l'étape 1 de ce guide](#local) et à [changer le mot de passe](/pages/web/hosting/ftp_change_password) de votre espace FTP.
 
 ### Étape 11. Testez les sauvegardes de votre site
 
@@ -119,9 +116,9 @@ Vous pouvez également créer une **version de test** de votre site (ex : test.m
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
-[Conseils suite au piratage de votre site WordPress](../piratage-de-votre-site-wordpress-conseils-et-cas-dusages/)
+[Conseils suite au piratage de votre site WordPress](/pages/web/hosting/cms_what_to_do_if_your_site_is_hacked)
 
-[Réagir en cas de désactivation pour sécurité d’un hébergement](../site-ferme-pour-hack/)
+[Réagir en cas de désactivation pour sécurité d’un hébergement](/pages/web/hosting/diagnostic_403_forbidden)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 

@@ -1,9 +1,6 @@
 ---
 title: Modifying virtual machine resources
-slug: modify_the_hardware_configuration_of_your_virtual_machine
 excerpt: Find out how to scale your virtual machine
-section: Virtual machine management
-order: 3
 updated: 2020-06-25
 ---
 

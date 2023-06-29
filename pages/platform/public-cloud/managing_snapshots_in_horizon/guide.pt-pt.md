@@ -1,9 +1,7 @@
 ---
 title: Gestão de snapshots de uma instância na interface Horizon
 excerpt: Como gerir as snapshots de uma instância na interface Horizon
-slug: gestao_de_snapshots_de_uma_instancia_na_interface_horizon
 legacy_guide_number: g1770
-section: Gestão a partir do Horizon
 updated: 2022-01-31
 ---
 
@@ -22,8 +20,8 @@ Para tal, é possível que crie snapshots das suas instâncias, podendo utilizar
 
 ## Requisitos
 
-- Ter [criado uma instância Public Cloud](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#3o-passo-criacao-de-uma-instancia) na sua conta OVHcloud
-- [Ter acesso à interface Horizon](../horizon/)
+- Ter [criado uma instância Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia) na sua conta OVHcloud
+- [Ter acesso à interface Horizon](/pages/platform/public-cloud/introducing_horizon)
 
 ## Instruções
 

@@ -1,11 +1,8 @@
 ---
 title: AI Notebooks - Tutorial - Sentiment analysis on Tweets using Hugging Face
-slug: notebooks/tuto-hugging-face-sentiment-analysis
 excerpt: How to use Hugging Face models to analyse Twitter sentiments
-section: AI Notebooks - Tutorials
-order: 05
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-hugging-face-sentiment-analysis/'
+    canonical: '/pages/platform/ai/notebook_tuto_05_hugging_face_sentiment_analysis'
 updated: 2023-05-11
 ---
 
@@ -68,7 +65,7 @@ If you want to upload it from the [OVHcloud Control Panel](https://www.ovh.com/a
 
 ![image](images/new-object-container.png){.thumbnail}
 
-If you want to run it with the CLI, just follow [this guide](https://docs.ovh.com/de/publiccloud/ai/cli/access-object-storage-data/). You have to choose the region, the name of your container and the path where your data is located and use the following command:
+If you want to run it with the CLI, just follow [this guide](/pages/platform/ai/cli_17_how_to_cli_data_notebooks). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
 ```bash
 ovhai bucket object upload <container>@<region> <paths>
@@ -166,8 +163,8 @@ A preview of the three notebooks can be found on GitHub [here](https://github.co
 
 ## Go further
 
-- You can also deploy a **Flask** app to classify text sentiments with **Hugging Face** models. Check this [documentation](https://docs.ovh.com/de/publiccloud/ai/deploy/tuto-flask-hugging-face-sentiment-analysis/).
-- If you are interested in **NLP** (Natural Language Processing), familiarise yourself with speech to text by following this [tutorial](https://docs.ovh.com/de/publiccloud/ai/notebooks/tuto-speech-to-text-recognition/).
+- You can also deploy a **Flask** app to classify text sentiments with **Hugging Face** models. Check this [documentation](/pages/platform/ai/deploy_tuto_06_flask_hugging_face).
+- If you are interested in **NLP** (Natural Language Processing), familiarise yourself with speech to text by following this [tutorial](/pages/platform/ai/notebook_tuto_08_speech_to_text).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

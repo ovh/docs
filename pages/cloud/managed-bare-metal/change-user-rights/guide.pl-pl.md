@@ -1,9 +1,7 @@
 ---
 title: Zmiana uprawnień użytkownika
-slug: zmiana-uprawnien-uzytkownika
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/zmiana-uprawnien-uzytkownika/'
-section: Funkcjonalności OVHcloud
+    canonical: '/pages/cloud/private-cloud/change_users_rights'
 updated: 2020-11-18
 ---
 

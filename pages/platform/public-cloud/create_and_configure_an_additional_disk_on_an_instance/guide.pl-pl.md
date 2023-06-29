@@ -1,9 +1,6 @@
 ---
 title: 'Zarządzanie wolumenem instancji Public Cloud'
-slug: utworzenie_i_konfiguracja_dodatkowego_dysku_dla_instancji
 excerpt: 'Dowiedz się, jak przypisać nowy wolumen do instancji Public Cloud'
-section: 'Zarządzanie w Panelu klienta OVH'
-order: 1
 updated: 2023-03-03
 ---
 
@@ -72,7 +69,7 @@ Poniższe przykłady zakładają, że jesteś zalogowany jako użytkownik z odpo
 
 #### Linux
 
-Otwórz [połączenie SSH z Twoją instancją](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/#connect-to-instance), następnie użyj poniższej komendy, aby wyświetlić powiązane dyski.
+Otwórz [połączenie SSH z Twoją instancją](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance), następnie użyj poniższej komendy, aby wyświetlić powiązane dyski.
 
 ```bash
 ~$ admin@server-1:~$ lsblk
@@ -323,7 +320,7 @@ Jeśli chcesz odłączyć wolumen od instancji, najlepszym rozwiązaniem jest od
 
 #### Linux
 
-Otwórz [połączenie SSH z Twoją instancją](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/#krok-3-tworzenie-instancji), a następnie wpisz poniższe polecenie, aby wyświetlić powiązane dyski.
+Otwórz [połączenie SSH z Twoją instancją](/pages/platform/public-cloud/public-cloud-first-steps#krok-3-tworzenie-instancji), a następnie wpisz poniższe polecenie, aby wyświetlić powiązane dyski.
 
 ```bash
 ~$ admin@server-1:~$ lsblk

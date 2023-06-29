@@ -1,9 +1,6 @@
 ---
 title: Configuration de OVHcloud Connect depuis les APIv6 OVHcloud
-slug: api
 excerpt: Découvrez comment déployer OVHcloud Connect via les API OVHcloud
-section: Configuration
-order: 2
 updated: 2020-09-14
 ---
 

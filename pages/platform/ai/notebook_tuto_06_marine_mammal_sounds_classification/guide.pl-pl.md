@@ -1,11 +1,8 @@
 ---
 title: AI Notebooks - Tutorial - Audio analysis and classification with AI
-slug: notebooks/tuto-marine-mammal-sounds-classification
 excerpt: How to classify sounds with AI
-section: AI Notebooks - Tutorials
-order: 06
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-marine-mammal-sounds-classification/'
+    canonical: '/pages/platform/ai/notebook_tuto_06_marine_mammal_sounds_classification'
 updated: 2023-05-11
 ---
 
@@ -22,14 +19,14 @@ The purpose of this tutorial is to show how it is possible to train a model in o
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/pl/public-cloud/) in your OVHcloud account
 - A user for AI Notebooks
-- Two [Object Storage containers](https://docs.ovh.com/pl/storage/object-storage/pcs/create-container/) to store the data and the model
+- Two [Object Storage containers](/pages/cloud/storage/object_storage/pcs_create_container) to store the data and the model
 - Your own dataset
 
 ## Instructions
 
 ### Uploading your dataset on Public Cloud Storage
 
-If you want to upload it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), go to the Object Storage section and [create a new object container](https://docs.ovh.com/pl/storage/object-storage/pcs/create-container/) by clicking `Object Storage`{.action} > `Create an object container`{.action}.
+If you want to upload it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), go to the Object Storage section and [create a new object container](/pages/cloud/storage/object_storage/pcs_create_container) by clicking `Object Storage`{.action} > `Create an object container`{.action}.
 
 ![image](images/new-object-container.png){.thumbnail}
 
@@ -39,7 +36,7 @@ If you want to upload it from the [OVHcloud Control Panel](https://www.ovh.com/a
 > You can also use the OVHcloud AI CLI to upload files and folders (and be more stable than through your browser).
 >
 
-If you want to run it with the CLI, just follow this [this guide](https://docs.ovh.com/pl/publiccloud/ai/cli/access-object-storage-data/). You have to choose the region, the name of your container and the path where your data is located and use the following command:
+If you want to run it with the CLI, just follow this [this guide](/pages/platform/ai/cli_17_how_to_cli_data_notebooks). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
 ```bash
 ovhai bucket object upload <container>@<region> <paths>
@@ -57,7 +54,7 @@ ovhai bucket object upload <container>@<region> <paths>
 > Although this tutorial is based on the use of the **TensorFlow** image, we advise you to use this image: **One image to rule them all**. This will help you avoid errors when installing libraries such as Librosa or SoundFile, Python audio libraries.
 >
 
-You need to attach a volume if your data is in your OVHcloud Object Storage and you want to use it during your experiment. For more information on data, volumes and permissions, see [our guide on data](https://docs.ovh.com/pl/publiccloud/ai/cli/access-object-storage-data/).
+You need to attach a volume if your data is in your OVHcloud Object Storage and you want to use it during your experiment. For more information on data, volumes and permissions, see [our guide on data](/pages/platform/ai/cli_17_how_to_cli_data_notebooks).
 
 To be able to use the source code below in this article you have to create 2 Object Storage containers and a git repository mounted as follows:
 
@@ -67,7 +64,7 @@ To be able to use the source code below in this article you have to create 2 Obj
 
 `Choose the same region as your object container` > `"One image to rule them all" framework` > `Attach Object Storage containers (the one that contains your dataset)`
 
-If you want to launch it with the CLI, choose the [volume](https://docs.ovh.com/pl/publiccloud/ai/cli/access-object-storage-data/) you want to attach and the number of GPUs (`<nb-gpus>`) to use on your notebook and use the following command:
+If you want to launch it with the CLI, choose the [volume](/pages/platform/ai/cli_17_how_to_cli_data_notebooks) you want to attach and the number of GPUs (`<nb-gpus>`) to use on your notebook and use the following command:
 
 ```bash
 ovhai notebook run one-for-all jupyterlab \
@@ -98,8 +95,8 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 
 ## Go further
 
-- If you want to deploy a **Streamlit** app in order to classify marine mammal sounds using your model, please check out this [notebook](https://docs.ovh.com/pl/publiccloud/ai/deploy/tuto-streamlit-sounds-classification/).
-- You can also compare two methods for audio classification task by following this [tutorial](https://docs.ovh.com/pl/publiccloud/ai/training/tuto-models-comparaison-weights-and-biases/).
+- If you want to deploy a **Streamlit** app in order to classify marine mammal sounds using your model, please check out this [notebook](/pages/platform/ai/deploy_tuto_03_streamlit_sounds_classification).
+- You can also compare two methods for audio classification task by following this [tutorial](/pages/platform/ai/training_tuto_06_models_comparaison_weights_and_biases).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pl/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

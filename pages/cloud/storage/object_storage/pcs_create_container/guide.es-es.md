@@ -1,9 +1,6 @@
 ---
 title: Object Storage Swift - Creación del contenedor Object Storage
-slug: pcs/create-container
 excerpt: Cómo crear los contenedores Object Storage desde el área de cliente de OVHcloud
-section: OpenStack Swift Storage Class Specifics
-order: 110
 updated: 2021-10-27
 ---
 
@@ -32,7 +29,7 @@ El primer paso es crear un contenedor que agrupe sus archivos.
 
 Si utiliza Horizon:
 
-- Haber creado un [usuario de OpenStack](https://docs.ovh.com/es/public-cloud/crear-y-eliminar-un-usuario-de-openstack/).
+- Haber creado un [usuario de OpenStack](/pages/platform/public-cloud/create_and_delete_a_user).
 
 ## Procedimiento
 
@@ -72,7 +69,7 @@ Asigne un nombre al contenedor y haga clic en `Añadir el contenedor`{.action}.
 > - [ _ ]  
 > - Y no debes usar mayúsculas.  
 >
-> Para más información, consulte nuestra guía "[Asociar un contenedor a un dominio](https://docs.ovh.com/es/storage/colocar_un_contenedor_de_object_storage_detras_de_un_nombre_de_dominio/)".
+> Para más información, consulte nuestra guía "[Asociar un contenedor a un dominio](/pages/cloud/storage/object_storage/pcs_link_domain)".
 >
 
 ![container name](images/create-container-20211005111805966.png)
@@ -106,7 +103,7 @@ Asigne un nombre al contenedor.
 > - [ _ ]  
 > - Y no debes usar mayúsculas.  
 >
-> Para más información, consulte nuestra guía "[Asociar un contenedor a un dominio](https://docs.ovh.com/es/storage/colocar_un_contenedor_de_object_storage_detras_de_un_nombre_de_dominio/)".
+> Para más información, consulte nuestra guía "[Asociar un contenedor a un dominio](/pages/cloud/storage/object_storage/pcs_link_domain)".
 >
 
 Seleccione la política de acceso de su contenedor y haga clic en `Next`{.action}

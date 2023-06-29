@@ -1,9 +1,6 @@
 ---
 title: 'Activation de la mise en conformité Healthcare (HDS)'
-slug: activer-hds
 excerpt: "Découvrez comment activer l'option pour l’hébergement des données de santé sur votre projet Public Cloud"
-section: 'Gestion de projets'
-order: 9
 updated: 2022-12-01
 ---
 
@@ -53,6 +50,6 @@ Prenez connaissance de ces dernières et cochez la case d'acceptation des contra
 
 ## Aller plus loin
 
-[Documentation Public Cloud](../)
+[Documentation Public Cloud](/products/public-cloud-compute)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -1,8 +1,5 @@
 ---
 title: Pushing logs with a SDK - Python 3.x - logging-ldp
-slug: logs-data-platform-logging-ldp
-order: 20
-section: Logging libraries
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-logs-data-platform-logging-ldp?id=kb_article_view&sysparm_article=KB0037676'
 updated: 2023-01-16
@@ -209,6 +206,6 @@ As we can see:
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/getting_started_quick_start)
-- Documentation: [Guides](https://docs.ovh.com/fr/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

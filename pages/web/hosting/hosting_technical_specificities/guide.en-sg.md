@@ -1,9 +1,6 @@
 ---
 title: 'Technical specifications of Web Hostings'
-slug: technical-specifications-web-hosting
 excerpt: 'Find out more about the technical capabilities of your Web Hosting plan '
-section: 'Web Hosting configuration'
-order: 05
 updated: 2022-11-18
 ---
 
@@ -29,7 +26,7 @@ updated: 2022-11-18
 
 ### FTP
 
-- Access error ("530 Login authentication failed"): You can make sure the access credentials to your hosting space are correct by checking via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) ("FTP - SSH"). Passwords are never displayed but they can be changed. Please refer to our [FTP guides](../).
+- Access error ("530 Login authentication failed"): You can make sure the access credentials to your hosting space are correct by checking via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) ("FTP - SSH"). Passwords are never displayed but they can be changed. Please refer to our [FTP guides](/products/web-cloud-hosting).
 
 - FTP connections have to use **passive mode**. Please make sure your script or FTP client is adjusted accordingly.
 
@@ -44,7 +41,7 @@ For a rolling period of 3600 seconds (1 hour), your hosting plan will allow you 
 |Maximum number of emails sent per hour per service|100|200|2000|
 
 - Apart from suspected spamming or phishing, the sending of your emails may be delayed. Your emails will be kept in a queue until the number of emails sent in the last hour is less than the quota.
-- In the event of abuse or proven risk, your service will be suspended and you will be notified by email of its suspension. What to do if your account is blocked for spam? Read [our guide](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/blocked-for-spam/).
+- In the event of abuse or proven risk, your service will be suspended and you will be notified by email of its suspension. What to do if your account is blocked for spam? Read [our guide](/pages/web/emails/locked_for_spam).
 
 ### Databases / SQL
 
@@ -67,7 +64,7 @@ Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to conn
 
 - The MySQL version cannot be changed for Web Hosting databases.
 
-Please refer to [this guide](../creating-database/) for more information about managing databases.
+Please refer to [this guide](/pages/web/hosting/sql_create_database) for more information about managing databases.
 
 ### PHP
 
@@ -82,8 +79,8 @@ Please refer to [this guide](../creating-database/) for more information about m
 
 - You will be able to change the PHP version for your Web Hosting, either in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) ("**Configuration**") or by editing the .ovhconfig file. Mixed configurations are also possible with the latter. Detailed instructions are available in our guides:
 
-[Configuring the .ovhconfig file of your Web Hosting plan](../configuring-file-ovhconfig/)  
-[Modifying the configuration of a Web Hosting plan](../modify_your_web_hosting_systems_runtime_environment/)
+[Configuring the .ovhconfig file of your Web Hosting plan](/pages/web/hosting/ovhconfig_configuration)  
+[Modifying the configuration of a Web Hosting plan](/pages/web/hosting/ovhconfig_modify_system_runtime)
 
 
 > [!primary]
@@ -108,7 +105,7 @@ PHP-FPM is enabled by default on the Web Hosting infrastructure in order to spee
 
 #### PHP scripts
 
-Once you are connected to your hosting server via SSH, outgoing traffic will be blocked for security reasons. We therefore recommend to use PHP scripts. Please refer to our [SSH guide](../web_hosting_ssh_on_web_hosting_packages/) for more information. You can consult the official [PHP manual](https://www.php.net/manual/en/function.system.php) on how to execute commands and perform other tasks.
+Once you are connected to your hosting server via SSH, outgoing traffic will be blocked for security reasons. We therefore recommend to use PHP scripts. Please refer to our [SSH guide](/pages/web/hosting/ssh_on_webhosting) for more information. You can consult the official [PHP manual](https://www.php.net/manual/en/function.system.php) on how to execute commands and perform other tasks.
 
 As an example, you can use the function *gethostbyaddr()* to retrieve the hostname:
 
@@ -159,11 +156,11 @@ In order to be used as part of OVHcloud Web Statistics Statistics, the aforement
 
 ## Go further
 
-[Logging in to your Web Hosting plan’s storage space](../log-in-to-storage-ftp-web-hosting)
+[Logging in to your Web Hosting plan’s storage space](/pages/web/hosting/ftp_connection)
 
-[Activating HTTPS on your website with an SSL certificate](../activate-https-website-ssl)
+[Activating HTTPS on your website with an SSL certificate](/pages/web/hosting/ssl-activate-https-website)
 
-[Optimise your website’s performance](../web_hosting_optimise_your_website_performance)
+[Optimise your website’s performance](/pages/web/hosting/optimise_your_website_performance)
 
 Join our community of users on <https://community.ovh.com/en/>.
 

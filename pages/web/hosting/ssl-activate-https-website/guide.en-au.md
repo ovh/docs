@@ -1,9 +1,6 @@
 ---
 title: 'Activating HTTPS on your website with an SSL certificate'
-slug: activate-https-website-ssl
 excerpt: 'Find out how to activate HTTPS on your website with an SSL certificate'
-section: SSL
-order: 02
 updated: 2022-10-04
 ---
 
@@ -49,7 +46,7 @@ You can activate the SSL certificate on your Web Hosting plan via the  [OVHcloud
 |Activate an SSL certificate on the Web Hosting plan.|Allows OVHcloud to set up an SSL certificate on your Web Hosting plan. You can choose between two certificate types. Please ensure you select the certificate that best suits your needs.|
 |Activate SSL on the multi-site concerned.|The website you would like to use HTTPS for must be configured as a multi-site on your Web Hosting plan. Please ensure that SSL is active for your Web Hosting plan.|
 
-You can read a detailed version of the changes you need to make in our guide to [Managing an SSL certificate on a Web Hosting plan](../ssl-certificates-on-web-hosting-plans). If you have just ordered an OVHcloud Web Hosting plan, you may find that a free SSL certificate has already been set up on it, and that the multisite already has an active SSL connection.
+You can read a detailed version of the changes you need to make in our guide to [Managing an SSL certificate on a Web Hosting plan](/pages/web/hosting/ssl_on_webhosting). If you have just ordered an OVHcloud Web Hosting plan, you may find that a free SSL certificate has already been set up on it, and that the multisite already has an active SSL connection.
 
 To check this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}. Click `Web hosting`{.action}, then choose the Web Hosting plan concerned. Click on the `General information`{.action} tab. Beneath ‘SSL certificate’, the word ‘Yes’ should be visible, showing that an SSL certificate is set up on your Web Hosting plan. 
 
@@ -59,7 +56,7 @@ Go to the `Multisite`{.action} tab. The table displayed will contain all of the 
 
 ![httpswebsite](images/activate-https-website-ssl-step3.png){.thumbnail}
 
-If, from these verifications, it seems that an SSL certificate may not be set up properly on your Web Hosting plan and/or is not active on the multisite concerned, please read our guide to [Managing an SSL certificate on a Web Hosting plan](../ssl-certificates-on-web-hosting-plans/).
+If, from these verifications, it seems that an SSL certificate may not be set up properly on your Web Hosting plan and/or is not active on the multisite concerned, please read our guide to [Managing an SSL certificate on a Web Hosting plan](/pages/web/hosting/ssl_on_webhosting).
 
 ### Step 2: Check the technical environment.
 

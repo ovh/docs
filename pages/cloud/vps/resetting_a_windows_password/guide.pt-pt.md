@@ -1,8 +1,6 @@
 ---
 title: 'Reinicializar uma palavra-passe Windows'
-slug: reinicializar-uma-palavra-passe-windows
 excerpt: "Guia de reinicialização de uma palavra-passe em Windows"
-section: Diagnóstico e Modo Rescue
 updated: 2020-11-25
 ---
 
@@ -18,7 +16,7 @@ updated: 2020-11-25
 
 ## Requisitos
 
-- O VPS deve estar em modo rescue (para mais informações consulte [Ativar o modo rescue num VPS](../rescue)).
+- O VPS deve estar em modo rescue (para mais informações consulte [Ativar o modo rescue num VPS](/pages/cloud/vps/rescue)).
 
 ## Instruções
 
@@ -46,7 +44,7 @@ chntpw -u Administrator SAM
 
 Carregue em `1`{.action} e `Enter`{.action} para apagar a palavra-passe. Carregue em `q`{.action} para sair da linha de comandos de alteração da palavra-passe. De seguida, carregue `y`{.action} para escrever as alterações.
 
-Agora pode tirar o VPS do modo rescue. (para mais informações, consulte o guia [Ativar o modo rescue num VPS](../rescue)).
+Agora pode tirar o VPS do modo rescue. (para mais informações, consulte o guia [Ativar o modo rescue num VPS](/pages/cloud/vps/rescue)).
 
 Na sua próxima ligação, não será obrigado a introduzir uma palavra-passe para a sessão cuja palavra-passe alterou.
 

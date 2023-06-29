@@ -1,8 +1,5 @@
 ---
 title: Managing snapshots of an instance in Horizon
-slug: manage-snapshots-of-instances-in-horizon
-section: Horizon
-order: 05
 updated: 2022-01-31
 ---
 
@@ -16,8 +13,8 @@ During your activity, you will probably need to back up your data, configuration
 
 ## Requirements
 
-- An [OVHcloud Public Cloud instance](https://docs.ovh.com/au/en/public-cloud/public-cloud-first-steps/#create-instance) 
-- [Access to the Horizon interface](../horizon/)
+- An [OVHcloud Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps#create-instance) 
+- [Access to the Horizon interface](/pages/platform/public-cloud/introducing_horizon)
 
 ## Instructions
 

@@ -1,7 +1,5 @@
 ---
 title: Network Storage
-slug: network-storage
-section: Services
 updated: 2021-06-03
 ---
 
@@ -96,7 +94,7 @@ In this example, `app1` will have access to the entire `uploads` directory by wr
 
 ## Worker instances
 
-When defining a [Worker](../../configuration-app/workers) instance it is important to keep in mind what mount behavior is desired.  Unless the `mounts` block is defined within the `web` and `workers` sections separately, a top level `mounts` block will apply to both instances.  However, `local` mounts will be a separate storage area for each instance while `service` mounts will refer to the same file system.  For example:
+When defining a [Worker](/pages/web/web-paas/configuration-app/workers) instance it is important to keep in mind what mount behavior is desired.  Unless the `mounts` block is defined within the `web` and `workers` sections separately, a top level `mounts` block will apply to both instances.  However, `local` mounts will be a separate storage area for each instance while `service` mounts will refer to the same file system.  For example:
 
 ```yaml
 name: app

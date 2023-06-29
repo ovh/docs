@@ -1,9 +1,6 @@
 ---
 title: "Configurer votre serveur de bases de données"
-slug: configurer-optimiser-son-serveur-de-base-de-donnees
 excerpt: "Découvrez comment configurer et optimiser votre serveur de base de données"
-section: 'Configuration'
-order: 06
 updated: 2023-04-20
 ---
 
@@ -233,7 +230,7 @@ Dans l'onglet `informations générales`, vous trouverez la section **« SFTP »
 
 ![Web Cloud Databases](images/web-cloud-databases-SFTP01.png){.thumbnail}
 
-Pour vous y connecter en **SFTP**, vous pouvez le faire via le logiciel Filezilla en vous aidant du guide: [« Utilisation du logiciel FileZilla avec votre hébergement »](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/).
+Pour vous y connecter en **SFTP**, vous pouvez le faire via le logiciel Filezilla en vous aidant du guide: [« Utilisation du logiciel FileZilla avec votre hébergement »](/pages/web/hosting/ftp_filezilla_user_guide).
 
 Si ce fichier est vide, c'est que vous n'avez aucune requête lente.
 
@@ -311,7 +308,7 @@ Exemple :
 
 ## Aller plus loin
 
-[Liste des adresses IP des clusters et hebergements web](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/)
+[Liste des adresses IP des clusters et hebergements web](/pages/web/hosting/clusters_and_shared_hosting_IP)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 
