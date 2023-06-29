@@ -97,7 +97,7 @@ username@IPv4_des_VPS -p PortNummer
 
 Es wird dringend empfohlen, das Passwort des Root-Benutzers abzuändern, damit es auf einem neuen System nicht im Defaultzustand verbleibt. Weitere Informationen finden Sie in [dieser Anleitung](/pages/cloud/vps/root_password).
 
-### Anlegen eines Benutzers mit eingeschränkten Rechten
+### Anlegen eines Benutzers mit eingeschränkten Rechten <a name="createuser"></a>
 
 Im Allgemeinen sollten Aufgaben, die keine Root-Rechte erfordern, über einen Standardbenutzer ausgeführt werden. Sie können einen Benutzer mit folgendem Befehl erstellen:
 

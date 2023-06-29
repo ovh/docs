@@ -80,7 +80,7 @@ passwd: password updated successfully
 
 #### Aktivierung von Root-Logins
 
-Aus Sicherheitsgründen ist das Verbinden mit dem Root-Benutzer standardmäßig deaktiviert. Wenn Sie diese Verbindungen erlauben möchten, folgen Sie den Instruktionen in [dieser Anleitung](/pages/cloud/vps/root_password#rooterlauben).
+Aus Sicherheitsgründen ist das Verbinden mit dem Root-Benutzer standardmäßig deaktiviert. Wenn Sie diese Verbindungen erlauben möchten, folgen Sie den Instruktionen in [dieser Anleitung](https://docs.ovh.com/de/vps/root-password/#enableroot).
 
 #### Neustart Ihres VPS (aktuelle Reihe) <a name="reboot-current-range"></a>
 

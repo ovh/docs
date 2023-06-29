@@ -1,10 +1,8 @@
 ---
 title: Como alterar a palavra-passe root de um VPS (Linux)
 excerpt: Aprenda a alterar a palavra-passe root do seu VPS
-updated: 2021-04-20
+updated: 2023-06-26
 ---
-
-**Última atualização: 27/04/2021**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -77,8 +75,11 @@ Nas antigas gamas de VPS, as suas partições serão automaticamente montadas em
 
 ##### **df -h**
 
-```sh
-~$ df -h
+```bash
+df -h
+```
+
+```console
 Filesystem      Size  Used Avail Use% Mounted on
 udev            5.8G     0  5.8G   0% /dev
 tmpfs           1.2G   17M  1.2G   2% /run
@@ -92,8 +93,11 @@ tmpfs           5.8G     0  5.8G   0% /sys/fs/cgroup
 
 ##### **lsblk**
 
-```sh
-~$ lsblk
+```bash
+lsblk
+```
+
+```console
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda       8:0    0  2.5G  0 disk
 └─sda1    8:1    0  2.5G  0 part /
@@ -107,23 +111,23 @@ O exemplo acima mostra que a partição do sistema está montada em **/mnt/sdb1*
 
 Se o seu VPS for recente, a coluna `MOUNTPOINT` deve estar vazia. Neste caso, primeiro suba a partição:
 
-```sh
-~$ mkdir -p /mnt/sdb1
-~$ mount /dev/sdb1 /mnt/sdb1
+```bash
+mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/sdb1
 ```
 
 #### Etapa 3: autorizações CHROOT
 
 Agora tem de alterar a pasta raiz para aplicar as alterações ao sistema. Para isso, utilize o comando `chroot`:
 
-```sh
-~$ chroot /mnt/sdb1/
+```bash
+chroot /mnt/sdb1/
 ```
 
 Pode efetuar uma verificação introduzindo o comando `ls -l`, que regista o conteúdo armazenado no diretório corrente do seu sistema:
 
-```sh
-~$ ls -l
+```bash
+ls -l
 ```
 
 #### Etapa4: Alterar a palavra-passe (root)
@@ -143,7 +147,7 @@ Se o VPS for de última geração (o seu nome é: *vps-XXXXXXX.vps.ovh.net*), re
 É necessário introduzir o nome de utilizador que utiliza para se ligar após a `passwd`:
 
 ```bash
-~# passwd username
+passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -154,7 +158,7 @@ Assim, poderá voltar a ligar-se com este nome de utilizador após o reboot, cas
 Por fim, reinicie o seu VPS no seu disco a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 
-### Ativar a password root
+### Ativar a password root <a name="enableroot"></a>
 
 Se o VPS for de última geração (o seu nome é: *vps-XXXXXXX.vps.ovh.net*), recebeu dados de acesso para um utilizador com direitos importantes, em vez da conta "root" predefinida. Além disso, o serviço SSH não aceita os pedidos de ligação como root.
 
@@ -169,19 +173,19 @@ Se o VPS for de última geração (o seu nome é: *vps-XXXXXXX.vps.ovh.net*), re
 
 Utilize um editor de texto tal que vim ou nano para alterar este ficheiro de configuração:
 
-```sh
-~$ nano /etc/ssh/sshd_config
+```bash
+sudo nano /etc/ssh/sshd_config
 ```
 
 Adicione a seguinte linha.
 
-```sh
+```text
 PermitRootLogin yes
 ```
 
 Procure esta linha e certifique-se de que ela é comentada:
 
-```sh
+```text
 #PermitRootLogin prohibit-password
 ```
 
@@ -189,8 +193,14 @@ Registe o ficheiro e saia do editor.
 
 #### Etapa 2: Reiniciar o serviço SSH
 
-```sh
-~$ systemctl restart sshd
+Reinicie o serviço SSH com um dos seguintes comandos:
+
+```bash
+sudo systemctl restart ssh
+```
+
+```bash
+sudo systemctl restart sshd
 ```
 
 Tal deverá ser suficiente para aplicar as alterações. Também pode reiniciar o VPS (`~$ sudo reboot`).
@@ -202,10 +212,10 @@ Se tiver problemas de arranque depois de alterar a sua palavra-passe e iniciar a
 - Consulte o KVM para saber por que o VPS não pode iniciar. Consulte o [guia KVM](/pages/cloud/vps/using_kvm_for_vps) para obter ajuda na utilização desta funcionalidade na Área de Cliente OVHcloud.
 - Se o KVM mostrar o arranque do VPS ou se este não conseguir encontrar o disco, certifique-se de que o [bootlog está ativado](/pages/cloud/vps/bootlog_display_kvm). Transmita os logs pertinentes às nossas equipas de suporte criando um pedido de suporte na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) para mais informações.
 
-## Vá mais longe
+## Quer saber mais?
 
-[Consulte o manual Introdução ao SSH.](/pages/cloud/dedicated/ssh_introduction)
+[Consulte o manual Introdução ao SSH](/pages/cloud/dedicated/ssh_introduction)
 
-[Como proteger um VPS.](/pages/cloud/vps/secure_your_vps)
+[Como proteger um VPS](/pages/cloud/vps/secure_your_vps)
 
-Junte-se à nossa comunidade de utilizadores <https://community.ovh.com/en/>.
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

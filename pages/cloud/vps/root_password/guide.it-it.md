@@ -1,10 +1,8 @@
 ---
 title: Modificare la password di root su un VPS
 excerpt: Come modificare la password dell’utente root sui VPS
-updated: 2021-04-20
+updated: 2023-06-26
 ---
-
-**Ultimo aggiornamento: 27/04/2021**
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
@@ -77,8 +75,11 @@ Sulle gamme precedenti di VPS, le tue partizioni saranno automaticamente install
 
 ##### **df -h**
 
-```sh
-~$ df -h
+```bash
+df -h
+```
+
+```console
 Filesystem      Size  Used Avail Use% Mounted on
 udev            5.8G     0  5.8G   0% /dev
 tmpfs           1.2G   17M  1.2G   2% /run
@@ -92,8 +93,11 @@ tmpfs           5.8G     0  5.8G   0% /sys/fs/cgroup
 
 ##### **lsblk**
 
-```sh
-~$ lsblk
+```bash
+lsblk
+```
+
+```console
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda       8:0    0  2.5G  0 disk
 └─sda1    8:1    0  2.5G  0 part /
@@ -107,23 +111,23 @@ L'esempio che hai mostrato qui sopra mostra che la partizione di sistema è mont
 
 Se il tuo VPS è recente, la colonna `MOUNTPOINT` dovrebbe essere vuota. In questo caso, esegui il mount della partizione:
 
-```sh
-~$ mkdir -p /mnt/sdb1
-~$ mount /dev/sdb1 /mnt/sdb1
+```bash
+mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/sdb1
 ```
 
 #### Step 3: autorizzazioni CHROOT
 
 È necessario modificare la directory di root per applicare le modifiche al tuo sistema. Per farlo, utilizza il comando `chroot`:
 
-```sh
-~$ chroot /mnt/sdb1/
+```bash
+chroot /mnt/sdb1/
 ```
 
 È possibile effettuare una verifica digitando il comando `ls -l`, che registra il contenuto archiviato nella directory corrente del tuo sistema:
 
-```sh
-~$ ls -l
+```bash
+ls -l
 ```
 
 #### Step 4: Modifica la password (root)
@@ -143,7 +147,7 @@ Se il tuo VPS è di ultima generazione: *vps-XXXXX.vps.ovh.net*), hai inizialmen
 Inserisci il nome utente che utilizzi per accedere al tuo `passwd`:
 
 ```bash
-~# passwd username
+passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -154,7 +158,7 @@ In questo modo, in caso di disattivazione della connessione root, potrai riconne
 Riavvia il tuo VPS sul disco dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 
-### Attiva la password di root
+### Attiva la password di root <a name="enableroot"></a>
 
 Se il tuo VPS è di ultima generazione: *vps-XXXXX.vps.ovh.net*), hai ricevuto le credenziali di accesso per un utente con diritti importanti, invece dell'account "root" predefinito. Il servizio SSH non accetta richieste di connessione come root.
 
@@ -169,19 +173,19 @@ Se il tuo VPS è di ultima generazione: *vps-XXXXX.vps.ovh.net*), hai ricevuto l
 
 Utilizza un editor di testo come vim o nano per modificare questo file di configurazione:
 
-```sh
-~$ nano /etc/ssh/sshd_config
+```bash
+sudo nano /etc/ssh/sshd_config
 ```
 
 Aggiungi questa riga.
 
-```sh
+```text
 PermitRootLogin yes
 ```
 
 Cerca questa linea e assicurati che sia commentata:
 
-```sh
+```text
 #PermitRootLogin prohibit-password
 ```
 
@@ -189,8 +193,14 @@ Salva il file e lascia l'editor.
 
 #### Step 2: Riavvia il servizio SSH
 
-```sh
-~$ systemctl restart sshd
+Riavviare il servizio SSH con uno dei seguenti comandi:
+
+```bash
+sudo systemctl restart ssh
+```
+
+```bash
+sudo systemctl restart sshd
 ```
 
 Ciò dovrebbe bastare per applicare le modifiche. È possibile riavviare il VPS (`~$ sudo reboot`).

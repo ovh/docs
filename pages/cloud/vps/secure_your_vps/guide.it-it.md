@@ -99,7 +99,7 @@ ssh username@IPv4_of_your_VPS -p NewPortNumber
 
 Ti consigliamo vivamente di modificare la password dell'utente root per non lasciarla al valore predefinito su un nuovo sistema. Per maggiori informazioni, consulta [questa guida](/pages/cloud/vps/root_password).
 
-### Crea un account con diritti utente limitati
+### Crea un account con diritti utente limitati <a name="createuser"></a>
 
 In genere, i compiti che non richiedono privilegi root devono essere eseguiti tramite un utente standard. Per creare un nuovo utente, utilizza questo comando:
 
