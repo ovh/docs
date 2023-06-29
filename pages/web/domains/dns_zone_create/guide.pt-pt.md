@@ -4,8 +4,6 @@ excerpt: 'Saiba como criar uma zona DNS na OVHcloud para o seu domínio através
 updated: 2018-08-06
 ---
 
-**Última atualização: 05/06/2018**
-
 ## Objetivo
 
 A zona Domain Name System (DNS) de um domínio constitui o ficheiro de configuração deste último. É composta por informações técnicas, conhecidas como registos. Numa utilização clássica, estes registos permitem fazer a ligação entre o seu nome de domínio e os servidores que alojam o seu website e os seus endereços de e-mail.
@@ -22,9 +20,9 @@ Por várias razões, poderá ter de criar uma zona DNS para o seu domínio na OV
 
 ## Instruções
 
-### 1 - criar a zona DNS através da Área de Cliente
+### Etapa 1 - criar a zona DNS através da Área de Cliente
 
-Para iniciar esta operação, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Encomendar`{.action} na barra à esquerda e, a seguir, em `Zona DNS`{.action}.
+Para iniciar esta operação, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Web Cloud`{.action}, depois em `Encomendar`{.action} na barra à esquerda e, a seguir, em `Zona DNS`{.action}.
 
 Na nova página, indique o domínio para o qual pretende criar uma zona DNS da OVHcloud. Aguarde alguns instantes até que a ferramenta efetue as verificações relativas ao nome de domínio.
 
