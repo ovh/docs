@@ -1,6 +1,6 @@
 ---
-title: How to log to the manager using IAM
-excerpt: "List the minimum rights required to log to the manager"
+title: How to log to the OVHcloud Control Panel using IAM
+excerpt: "List the minimum rights required to log to the OVHcloud Control Panel"
 updated: 2023-06-28
 ---
 
@@ -11,7 +11,7 @@ updated: 2023-06-28
 
 ## Objective
 
-This guide will explain how to provide minimum rights to a user to allow him to log to the manager
+This guide will explain how to provide minimum rights to a user to allow him to log to the OVHcloud Control Panel
 
 
 ## Requirements
@@ -24,13 +24,13 @@ To follow this guide, you will require:
 
 ## Instructions
 
-To be able to log on the manager, a user should have at least this minimum set of rights on the account resource :
+To be able to log on the OVHcloud Control Panel, a user should have at least this minimum set of rights on the account resource :
 - account:apiovh:me/get
 - account:apiovh:me/supportLevel/get
 - account:apiovh:me/certificates/get
 - account:apiovh:me/tag/get
 
-With these rights, a user will be able to log on the manager, but will not be able to perform any actions inside it if you not give him other rights through the IAM
+With these rights, a user will be able to log on the OVHcloud Control Panel, but will not be able to perform any actions inside it if you not give him other rights through the IAM
 
 ### Using UI
 
@@ -39,7 +39,7 @@ Using the UI, you can set-up a policy with the following configuration :
 - Add your account as a resource
 - Add the 4 rights listed above as an action
 
-You can now link your users to this policy to give them the right to log on the manager
+You can now link your users to this policy to give them the right to log on the OVHcloud Control Panel
 
 
 ### Using API

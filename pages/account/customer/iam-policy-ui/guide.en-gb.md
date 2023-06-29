@@ -1,5 +1,5 @@
 ---
-title: How to use IAM policies using the OVHcloud Manager
+title: How to use IAM policies using the OVHcloud OVHcloud Control Panel
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
 updated: 2023-06-28
 ---
@@ -44,15 +44,15 @@ To set up a policy, you will require:
 
 Access to your account management but clicking on your name on the upper-right corner, then on your name on the panel :
 
-![Access to the IAM menu](images\access_to_the_IAM_menu_01){.thumbnail}
+![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
 You can access to the IAM menu through the entry on your account management :
 
-![Access to the IAM menu](images\access_to_the_IAM_menu_02){.thumbnail}
+![Access to the IAM menu](images/access_to_the_IAM_menu_02.png){.thumbnail}
 
 The menu will give you the list of all the current policies created on your account
 
-![Access to the IAM menu](images\access_to_the_IAM_menu_03){.thumbnail}
+![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
 Each policy are identified by their name, the number of identities linked to it, and the number of actions it contains.
 
@@ -66,7 +66,7 @@ To create a policy, use the button "Create a policy".
 
 This will bring you to the following form :
 
-![Create a policy](images\create_a_policy_01.png){.thumbnail}
+![Create a policy](images/create_a_policy_01.png){.thumbnail}
 
 - **Name of the policy** (mandatory): This is the name that will appear on the interfaces.
 
@@ -82,7 +82,7 @@ There is 3 differents ways to add actions :
 
     - Enable "all the actions"
 
-![Create a policy](images\create_a_policy_02.png){.thumbnail}
+![Create a policy](images/create_a_policy_02.png){.thumbnail}
 
 By activating this option, you will allow all actions related to the selected products. It includes all existing actions, but will include also actions that will be add in the future for this products categories.
 
@@ -90,7 +90,7 @@ By activating this option, you will allow all actions related to the selected pr
 
 If you know the actions name the can add it manually
 
-![Create a policy](images\create_a_policy_03.png){.thumbnail}
+![Create a policy](images/create_a_policy_03.png){.thumbnail}
 
 You can use a wildcard at the beginning or at the end of the actions name with "*"
 
@@ -104,7 +104,7 @@ For instance, adding "vps:apiovh:ips/*" will grant the following rights :
 
 Finally, you can select actions from the list.
 
-![Create a policy](images\create_a_policy_04.png){.thumbnail}
+![Create a policy](images/create_a_policy_04.png){.thumbnail}
 
 Actions are categorized by resource type and in 5 categories :
 
@@ -120,7 +120,7 @@ A search field is available to help to identify a specific action among the list
 
 To edit a existing policy you can use the button at the end of the row and chose "modify the policy"
 
-![Edit a policy](images\editing_a_policy.png){.thumbnail}
+![Edit a policy](images/editing_a_policy.png){.thumbnail}
 
 This will bring you to the same form than for the creation where you can change the scope of the policy
 
@@ -134,11 +134,11 @@ A pop-up will ask you to confirm the suppression before effectively deleting it.
 
 To link an identity to a policy, you can use the button at the end of the row and chose "Manage the identities"
 
-![Edit a policy](images\editing_a_policy.png){.thumbnail}
+![Edit a policy](images/editing_a_policy.png){.thumbnail}
 
 This will allow you to add and delete the users or the groups to who the policy should apply
 
-![Link an identity](images\link_identity_to_policy.png){.thumbnail}
+![Link an identity](images/link_identity_to_policy.png){.thumbnail}
 
 ### Managing identities
 
@@ -156,12 +156,12 @@ Policies can target resource groups instead of resources. These resource groups 
 
 To create a resource group, access to the dedicated tab on the IAM menu
 
-![Resource Group](images\resource_groups.png){.thumbnail}
+![Resource Group](images/resource_groups.png){.thumbnail}
 
 And click on "Create a resource group"
 This will bring you to the following form
 
-![Resource Group](images\resource_groups_form.png){.thumbnail}
+![Resource Group](images/resource_groups_form.png){.thumbnail}
 
 - **Name of the resource group**: This is the name that will appear on the interfaces.
 
