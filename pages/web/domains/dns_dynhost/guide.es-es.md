@@ -112,7 +112,7 @@ Según el cliente utilizado, además de los elementos del usuario DynHost y del 
 |Valor|Sustituir por...|
 |---|---|
 |$HOSTNAME|El subdominio afectado por la actualización.|
-|$IP|La nueva dirección IP de destino.|
+|$IP|La nueva dirección IPv4 de destino.|
 
 Puede comprobar si la dirección IP de destino se ha actualizado correctamente. Para ello, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y acceda al apartado `Web cloud`{.action}. En la columna izquierda, abra la pestaña `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `DynHost`{.action}. Compruebe la dirección IP que aparece en la columna `Destino`{.action}.
 

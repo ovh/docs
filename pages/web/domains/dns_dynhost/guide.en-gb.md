@@ -106,7 +106,7 @@ Depending on the client you are using, an update URL may be required, in additio
 |Information|Replace with|
 |---|---|
 |$HOSTNAME|The subdomain you are modifying the DNS configuration for.|
-|$IP|The new target IP address.|
+|$IP|The new target IPv4 address.|
 
 You can check if the destination IP address has been updated. To do this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} then go to the `Web cloud`{.action} section. In the left-hand column, click on the `Domain names`{.action} tab, then select the domain name concerned. On the page that appears, click on the `DynHost`{.action} tab. Check the IP address that appears in the `Target`{.action} column.
 

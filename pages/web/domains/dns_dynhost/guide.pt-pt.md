@@ -50,7 +50,7 @@ Por exemplo, o **DynHost** pode ser utilizado se *autoidentificar* (nas instala�
 
 ### Etapa 1 - Criar um utilizador DynHost <a name="step1"></a>
 
-O primeiro passo consiste em criar um utilizador DynHost. que lhe permitirá realizar a atualização do registo DNS dinâmico que pretende criar. Para iniciar a operação, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Nomes de domínio`{.action} na barra à esquerda e escolha o domínio em causa. Por fim, clique no separador `DynHost`{.action}.
+Para criar um utilizador DynHost, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Web cloud`{.action}. Na coluna da esquerda, clique no separador `Nomes de domínio`{.action} e selecione o domínio em causa. Na página que aparece, clique no separador `DynHost`{.action}.
 
 ![dynhost](images/use-dynhost-step1.png){.thumbnail}
 
@@ -59,14 +59,14 @@ A seguir, clique no botão `Gerir os acessos`{.action} e, a seguir, em `Criar um
 |Informações|Descrição|
 |---|---|
 |Sufixo do identificador|Defina um sufixo ao identificador DynHost que está a criar.|
-|Subdomínio|Especifique o subdomínio afetado pela criação do registo DNS dinâmico.|
+|Subdomínio|Especifique o subdomínio afetado pela criação do registo DNS dinâmico. Se pretender gerir o conjunto dos subdomínios com um único identificador, indique apenas `*` no formulário de introdução de dados.|
 |Palavra-passe|Defina uma palavra-passe para o identificador DynHost e confirme-a.|
 
 Depois de preencher os campos, clique no botão `Validar`{.action}. O identificador aparece no quadro presente na página atual. Repita este passo sempre que necessário se precisar de dados DynHost adicionais.
 
 ![dynhost](images/use-dynhost-step2.png){.thumbnail}
 
-### Etapa 2: criar o registo DNS dinâmico (DynHost)
+### Etapa 2: criar o registo DNS dinâmico (DynHost) <a name="step2"></a>
 
 A segunda etapa consiste em criar o registo DNS que deverá ser atualizado de forma dinâmica. Relembramos que este não deve já existir na zona DNS da OVHcloud do seu nome de domínio enquanto registo "A". Para o verificar e, se necessário, eliminá-lo, consulte o nosso manual "[Editar uma zona DNS da OVHcloud](/pages/web/domains/dns_zone_edit){.external}".
 
@@ -75,7 +75,12 @@ Quando estiver pronto para criar o registo DynHost, clique no separador `DynHost
 |Informações|Descrição|
 |---|---|
 |Subdomínio|Indique o subdomínio cujo registo DNS deverá ser atualizado de forma dinâmica. Este subdomínio deve corresponder ao domínio indicado durante a criação do utilizador DynHost.|
-|IP de destino|Indique o endereço IP que deve ser atualmente utilizado pelo registo DNS. De acordo com o princípio do DynHost, esta será atualizada posteriormente.|
+|IP de destino|Introduza o endereço IP (apenas IPv4) que deve ser atualmente utilizado pelo registo DNS. Trata-se geralmente do endereço IP público do seu *box* Internet ou do seu servidor alojado automaticamente. De acordo com o princípio do DynHost, esta será atualizada automaticamente.|
+
+> [!primary]
+>
+> Apenas uma **IPv4** pode ser utilizada para a implementação de um DynHost. Os **IPv6* estão indisponíveis.
+>
 
 Depois de preencher os campos, clique no botão `Validar`{.action}. O registo DynHost aparece no quadro presente na página atual. Repita este passo sempre que necessário se precisar de mais registos DynHost.
 
@@ -83,28 +88,43 @@ Depois de preencher os campos, clique no botão `Validar`{.action}. O registo Dy
 
 ### Etapa 3: automatizar a alteração do DynHost
 
-Agora que o utilizador e o registo DynHost foram criados, a última etapa consiste em automatizar a atualização do registo DNS de forma a que seja realizada de forma dinâmica. Para isso, é necessário utilizar um cliente que se encarregará de verificar regularmente se o endereço IP de destino mudou para o atualizar.
+Depois de criar o[utilizador](#step1) e o[registo DynHost](#step2), é necessário automatizar a atualização do registo DNS de forma a que o registo seja realizado de forma dinâmica. Para isso, deverá utilizar um software/cliente que se encarregará de verificar regularmente se o endereço IP de destino mudou de forma a que o atualize automaticamente.
 
 > [!warning]
 >
-> A instalação e a configuração do cliente devem ser realizadas de acordo com os seus conhecimentos. Apresentamos a seguir algumas informações sobre como a realizar. Contudo, se precisar de ajuda, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. 
+> A instalação e a configuração do software/cliente devem ser realizadas de acordo com os seus conhecimentos. Apresentamos a seguir algumas informações sobre como proceder. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. 
+> Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
 >
 
-Uma vez que existem grandes possibilidades, saiba que este cliente pode ser instalado no seu servidor ou no seu computador, ou pode já estar disponível na interface do seu router se este for compatível. Depois de escolher e instalar o cliente, deverá configurá-lo através das informações do utilizador DynHost criado anteriormente.
+Existem várias possibilidades relativamente ao software/cliente: 
 
-Dependendo do cliente utilizado, é possível que seja também necessário um endereço URL de atualização para além dos elementos do utilizador DynHost e do subdomínio em questão. Se for este o caso, utilize o seguinte endereço URL para substituir as informações genéricas:
+- pode ser instalado no seu servidor ou no seu computador;
+- já pode estar disponível na interface do seu routeur/*box* Internet, se este for compatível. Se tiver dificuldades em realizar esta configuração, contacte o suporte da sua solução **ISP** para efetuar a configuração.
 
-> https://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**
+Depois de escolher e instalar o cliente, deverá configurá-lo através das informações do utilizador DynHost criado anteriormente na Área de Cliente OVHcloud.
+
+Consoante o cliente utilizado, pode ser necessário um endereço URL de atualização para além dos elementos do utilizador DynHost e do subdomínio em causa. Se for este o caso, utilize o seguinte endereço URL para substituir as informações genéricas:
+
+`https://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**`
 
 |Informações|Substituir por|
 |---|---|
 |$HOSTNAME|O subdomínio abrangido pela alteração.|
-|$IP|O novo endereço IP de destino.|
+|$IP|O novo endereço IPv4 de destino.|
 
-Pode verificar se o endereço IP de destino foi atualizado na sua Área de Cliente a partir do separador `DynHost`{.action}. Verifique o endereço IP que aparece na coluna `Alvo`{.action}.
+Pode verificar se o endereço IP de destino foi atualizado. Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Web cloud`{.action}. Na coluna da esquerda, clique no separador `Nomes de domínio`{.action} e selecione o domínio em causa. Na página que aparece, clique no separador `DynHost`{.action}. Verifique o endereço de IP que aparece na coluna `Alvo`{.action}.
+
+> [!warning]
+>
+> Qualquer alteração na zona DNS ativa de um nome de domínio pode causar um atraso de 4 a 24 horas na propagação da atualização.
+>
 
 ![dynhost](images/use-dynhost-step4.png){.thumbnail}
 
-## Quer saber mais?
+## Quer saber mais? <a name="go-further"></a>
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

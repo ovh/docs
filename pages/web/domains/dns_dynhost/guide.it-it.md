@@ -50,19 +50,23 @@ Ad esempio, il **DynHost** può essere utilizzato se *auto-hosting* (nei locali 
 
 ### Step 1: crea un utente DynHost <a name="step1"></a>
 
-Il primo step consiste nel creare un utente Dynhost: questa operazione permetterà infatti di effettuare l’aggiornamento del record DNS dinamico. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Domini`{.action}. e clicca sulla scheda `DynHost`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona la sezione `Web cloud`{.action}. Nella colonna di sinistra, clicca sulla scheda `Domini`{.action} e seleziona il dominio interessato. Nella nuova pagina clicca sulla scheda `DynHost`{.action}.
+
+![dynhost](images/use-dynhost-step1.png){.thumbnail}
 
 Clicca sul pulsante `Gestisci gli accessi`{.action} e poi su `Crea un identificativo`{.action}. Nella nuova finestra, inserisci le informazioni richieste:
 
 |Campo|Descrizione|
 |---|---|
 |Suffisso dell’identificativo|Inserisci un suffisso all’identificativo DynHost che stai creando.|
-|Sottodominio|Specifica il sottodominio per il quale si vuole creare il record DNS dinamico.|
+|Sottodominio|Specifica il sottodominio per cui vuoi creare il record DNS dinamico. Per gestire tutti i sottodomini con un solo identificativo, indica just `*` nel modulo di registrazione|
 |Password|Associa una password all’identificativo DynHost e confermala.|
 
 Dopo aver completato tutti i campi, clicca su `Conferma`{.action}. L’identificativo compare nella tabella della pagina corrente. Ripeti questa operazione per ogni identificativo DynHost da aggiungere.
 
-### Step 2: crea il record DNS dinamico (DynHost)
+![dynhost](images/use-dynhost-step2.png){.thumbnail}
+
+### Step 2: crea il record DNS dinamico (DynHost) <a name="step2"></a>
 
 A questo punto è necessario creare il record DNS che dovrà essere aggiornato dinamicamente. Ti ricordiamo che per eseguire questa operazione il record non deve essere già presente nella zona DNS OVHcloud del dominio come record A. Per verificarlo ed eventualmente rimuoverlo, consulta la guida [Modificare una zona DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external}.
 
@@ -71,33 +75,54 @@ Una volta che tutto è pronto per creare il record, torna alla pagina principale
 |Campo|Descrizione|
 |---|---|
 |Sottodominio|Inserisci il nome del sottodominio a cui è associato il record DNS da aggiornare dinamicamente. Questo sottodominio deve coincidere con quello inserito durante la creazione dell’utente DynHost.|
-|IP di destinazione|Inserisci l’indirizzo IP che deve essere utilizzato dal record DNS. Secondo il funzionamento del DynHost, l’IP verrà aggiornato in un secondo momento.|
+|IP di destinazione|Inserisci l'indirizzo IP (solo IPv4) che deve essere utilizzato dal record DNS. È generalmente l'indirizzo IP pubblico del tuo *box* Internet o del tuo server auto-ospitato. In base al principio del DynHost, verrà aggiornato automaticamente in seguito.|
+
+> [!primary]
+>
+> Per l'installazione di un DynHost è possibile utilizzare solo una **IPv4**. I **IPv6** non sono disponibili
+>
+
+![dynhost](images/use-dynhost-step3.png){.thumbnail}
 
 Dopo aver completato tutti i campi, clicca su `Conferma`{.action}. Il record DynHost dovrebbe comparire nella tabella della pagina corrente.  Ripeti questa operazione per ogni record DynHost che da aggiungere.
 
 ### Step 3: automatizza la modifica del DynHost
 
-A questo punto non resta che rendere automatico l’aggiornamento del record DNS, in modo che possa essere eseguito dinamicamente. Per effettuare questa operazione è necessario utilizzare un client che verificherà regolarmente se l’indirizzo IP di destinazione è cambiato e ne eseguirà l’aggiornamento.
+Una volta creato l'[utente](#step1) e l'[record DynHost](#step2), è necessario automatizzare l'aggiornamento del record DNS affinché sia realizzato in modo dinamico. Per effettuare questa operazione è necessario utilizzare un client/software che verificherà regolarmente se l'indirizzo IP di destinazione è cambiato per poterlo aggiornare automaticamente.
 
 > [!warning]
 >
-> OVHcloud non si occupa dell’installazione e configurazione del client, che quindi di responsabilità dell’utente. In questa guida puoi trovare informazioni utili per effettuare l’operazione ma, in caso di necessità, ti consigliamo di rivolgerti a uno specialista del settore. OVHcloud non potrà fornirti alcuna assistenza. 
+> L'installazione e la configurazione del software/client devono essere realizzati con le proprie conoscenze. Di seguito ti forniamo alcune informazioni su come procedere. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/directory/). OVH non sarà infatti in grado di fornirti assistenza. 
+> Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questa guida.
 >
 
-La scelta dei tool disponibili è molto ampia: il client può infatti essere installato sul proprio server o computer oppure essere già disponibile nell’interfaccia del proprio router, se compatibile. Una volta scelto e installato lo strumento da utilizzare, configuralo utilizzando le informazioni dell’utente DynHost creato precedentemente.
+Il software/cliente può essere utilizzato in diversi modi: 
 
-In base al client utilizzato è possibile che, oltre ai dati relativi all’utente DynHost e al sottodominio in questione, venga richiesto un URL di aggiornamento. In questo caso utilizza l’indirizzo fornito qui sotto sostituendo le informazioni generiche:
+- può essere installato sul tuo server o sul tuo computer
+- potrebbe essere già disponibile nell'interfaccia del tuo router/*box* Internet, se compatibile. In caso di difficoltà o dubbi, contatta il supporto del tuo **FAI** per effettuare la configurazione.
 
-> https://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**
+Una volta scelto e installato il client, è necessario configurarlo utilizzando le informazioni dell'utente DynHost creato precedentemente nello Spazio Cliente OVHcloud.
+
+In base al client utilizzato, oltre agli elementi dell'utente DynHost e del sottodominio in questione può essere necessario un URL di aggiornamento. In questo caso, utilizza l'indirizzo URL qui sotto sostituendo le informazioni generiche:
+
+`https://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**`
 
 |Campo|Sostituire con...|
 |---|---|
 |$HOSTNAME|Il sottodominio interessato dalla modifica|
-|$IP|Il nuovo indirizzo IP di destinazione|
+|$IP|Il nuovo indirizzo IPv4 di destinazione|
 
-Per assicurarti che l’indirizzo IP di destinazione sia stato aggiornato correttamente, accedi allo Spazio Cliente OVHcloud: l’informazione è disponibile nella scheda `DynHost`{.action}, nella colonna `Destinazione`{.action}.
+Verifica che l'indirizzo IP di destinazione sia stato aggiornato correttamente. accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e cliccando sulla sezione `Web cloud`{.action}. Nella colonna di sinistra, clicca sulla scheda `Domini`{.action} e seleziona il dominio interessato. Nella nuova pagina clicca sulla scheda `DynHost`{.action}. Nella colonna `Destinazione`{.action}, verifica l'indirizzo IP indicato.
 
+> [!warning]
+>
+> Qualsiasi modifica della zona DNS attiva di un dominio può comportare un ritardo nella propagazione dell'aggiornamento di 4-24 ore.
+>
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
