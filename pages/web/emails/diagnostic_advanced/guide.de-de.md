@@ -4,10 +4,6 @@ excerpt: 'Erfahren Sie hier die Vorgehensweise, wenn Sende- oder Empfangsproblem
 updated: 2023-06-15
 ---
 
-> [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
->
-
 ## Ziel
 
 Sie können Ihre E-Mails nicht über Ihr E-Mail-Programm oder über das Webmail-Interface empfangen oder versenden?
