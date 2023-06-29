@@ -5,10 +5,6 @@ excerpt: "Saiba como reagir em caso de problemas de envio ou receção de e-mail
 updated: 2023-06-15
 ---
 
-> [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
->
-
 ## Objetivo
 
 Não é possível receber ou enviar e-mails a partir do seu software de correio eletrónico ou a partir do webmail?
