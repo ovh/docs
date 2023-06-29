@@ -10,7 +10,7 @@ updated: 2023-06-26
 
 ## Ziel
 
-Es kann sein, dass Sie das Root-Passwort Ihres Linux-Betriebssystems ändern müssen. Es gibt dabei zwei mögliche Szenarien:
+Es kann vorkommen, dass Sie das Root-Passwort Ihres Linux-Betriebssystems ändern müssen. Es gibt dabei zwei mögliche Szenarien:
 
 - Sie können sich noch via SSH verbinden.
 - Sie können sich nicht via SSH verbinden, da Sie Ihr Passwort verloren haben.
