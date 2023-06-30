@@ -38,7 +38,7 @@ Si está utilizando una plantilla de OVHcloud para instalar el servidor en un si
 
 Por ejemplo, si hemos asignado al servidor el rango IPv6: `2607:5300:xxxx:xxxx:/64` puede utilizar la IPv6 principal de su servidor como IPv6: `2607:5300:xxxx:xxxx::1/64`.
 
-Si desea configurar varias direcciones IPv6 en su servidor (o si quiere utilizarlo en una MV), debe disponer de una Additional IP configurada con una vMAC. Si no, nuestros routers/switchs no podrán enrutar la IPv6. Tenga en cuenta que esta restricción no se aplica a los servidores de alto grado y escala. Para las máquinas virtuales creadas en estos servidores, las direcciones IPv6 se pueden usar sin necesidad de usar vMAC.
+Si desea configurar varias direcciones IPv6 en su servidor (o si quiere utilizarlo en una MV), debe disponer de una Additional IP configurada con una vMAC. Si no, nuestros routers/switchs no podrán enrutar la IPv6. Tenga en cuenta que esta restricción no se aplica a los servidores High Grade y Scale. Para las máquinas virtuales creadas en estos servidores, las direcciones IPv6 se pueden usar sin necesidad de usar vMAC.
 
 ### Puerta de enlace predeterminada (excepto servidores High Grade y Scale)
 
