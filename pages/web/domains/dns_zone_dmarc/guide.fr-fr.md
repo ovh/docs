@@ -36,7 +36,7 @@ L'enregistrement DMARC (**D**omain-based **M**essage **A**uthentication, **R**ep
 
 - Disposer d'un accès à la gestion du nom de domaine attaché au service e-mail depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Disposer d'un service e-mail compatible avec le DMARC.
-- Les mécanismes d'authentification [SPF](/pages/web/domains/dns_zone_spf) et/ou [DKIM](/pages/web/domains/dns_zone_dkim)
+- Un des mécanismes d'authentification [SPF](/pages/web/domains/dns_zone_spf) et/ou [DKIM](/pages/web/domains/dns_zone_dkim) doit être configuré dans la zone DNS du nom de domaine de l'offre e-mail.
 
 ## En pratique
 
