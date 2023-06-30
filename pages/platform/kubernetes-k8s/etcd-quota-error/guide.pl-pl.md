@@ -3,10 +3,10 @@ title: ETCD Quotas, usage, troubleshooting and error
 excerpt: 'Find out how to view ETCD quotas, usage and fix errors'
 routes:
     canonical: '/pages/platform/kubernetes-k8s/etcd-quota-error'
-updated: 2023-04-06
+updated: 2023-06-28
 ---
 
-**Last updated 06th April 2023**
+**Last updated 28th June 2023**
 
 ## Objective
 
@@ -153,6 +153,28 @@ kubectl get reportchangerequest.kyverno.io -A | wc -l
 
 If that still does not cover your case, you can use a tool like [ketall](https://github.com/corneliusweig/ketall) to easily list and count resources in your cluster.  
 Then you should delete the resources in excess and fix the process responsible for their creation.
+
+## Counting all resources
+
+If you still need to check all resources as you do not know what consumes etcd quotas, you can run this snippet. You will need the `count` plugin for `kubectl`. See [installation](https://github.com/chenjiandongx/kubectl-count#-installation) instructions.
+```bash
+kubectl count -A $(kubectl api-resources --verbs=list -o name | paste -s -d,)
++-----------+--------------------------------------+--------------------------------+-------+
+| Namespace |             GroupVersion             |              Kind              | Count |
++-----------+--------------------------------------+--------------------------------+-------+
+|           | v1                                   | ComponentStatus                |     3 |
++-----------+                                      +--------------------------------+-------+
+|           |                                      | ConfigMap                      |   130 |
++-----------+                                      +--------------------------------+-------+
+|           |                                      | Endpoints                      |   143 |
++-----------+                                      +                                +       +
+|           |                                      |                                |       |
++-----------+                                      +--------------------------------+-------+
+|           |                                      | Event                          |  1090 |
++-----------+--------------------------------------+                                +       +
+|           | events.k8s.io/v1                     |                                |       |
++-----------+--------------------------------------+--------------------------------+-------+
+```
 
 ## Go further
 
