@@ -1,7 +1,7 @@
 ---
 title: Configuring multi-attach persistent volumes with OVHcloud NAS-HA
 excerpt: 'Find out how to configure a multi-attach persistent volume using OVHcloud NAS-HA'
-updated: 2021-07-20
+updated: 2023-06-30
 ---
 
 <style>
@@ -196,7 +196,7 @@ And apply this to create the Nginx pods:
 kubectl apply -f nfs-nginx-pods.yaml
 ```
 
-Let’s enter inside the first Nginx container to create a file on the NFS presistent volume:
+Let’s enter inside the first Nginx container to create a file on the NFS persistent volume:
 
 ```bash
 kubectl exec -it nfs-nginx-1 -n default -- bash
