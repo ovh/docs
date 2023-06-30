@@ -1,7 +1,7 @@
 ---
 title: Getting started with Kubernetes database operator
 excerpt: Find out how to install and use the Kubernetes database operator
-updated: 2023-06-15
+updated: 2023-06-29
 ---
 
 ## Objective
@@ -17,12 +17,14 @@ The kubernetes database operator allows you to automaticaly authorize your Kuber
 
 ### Getting your OVHcloud API tokens information
 
-The Kubernetes operator needs to be configured with a set of credentials. Go to <https://api.ovh.com/createToken/> to generate the following credentials:
+In order to generate your OVHcloud API, please follow our [First steps with the OVHcloud APIs](/pages/account/api/first-steps) tutorial.
 
-- An `application_key`
-- An `application_secret`
-- A `consumer_key`
+Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://api.ovh.com/createToken?GET=/cloud/project/*/database/*&POST=/cloud/project/*/database/*&PUT=/cloud/project/*/database/*&DELETE=/cloud/project/*/database/*) with the following rights:
 
+- GET /cloud/project/*/database/*
+- POST /cloud/project/*/database/*
+- PUT /cloud/project/*/database/*
+- DELETE /cloud/project/*/database/*
 ## Instructions
 
 The Kubernetes database operator is stored as an Helm chart in [Docker Hub](https://hub.docker.com/r/ovhcom/public-cloud-databases-operator/tags), an OCI registry.
@@ -40,9 +42,9 @@ ovhCredentials:
   applicationKey: XXXX
   applicationSecret: XXXX
   consumerKey: XXXX
-  region: XXXX # ovh-eu, ovh-ca or ovh-us
+  region: ovh-eu # ovh-eu, ovh-ca or ovh-us
 
-namespace: XXXX # Your Kubernetes namespace
+namespace: ovhcloud # Your Kubernetes namespace
 ```
 
 ### Installation
@@ -50,47 +52,58 @@ namespace: XXXX # Your Kubernetes namespace
 Use the kubernetes package manager [helm](https://helm.sh) and the values file you created to install the operator.
 
 ```bash
-helm install -f values.yaml public-cloud-databases-operator oci://registry-1.docker.io/ovhcom/public-cloud-databases-operator --version 1.0.0
+helm install -f values.yaml public-cloud-databases-operator oci://registry-1.docker.io/ovhcom/public-cloud-databases-operator --version 0.1.1
 ```
 
 This command will create the operator, CRDs and secrets objects.
 
+You can find the latest version of the helm chart on [DockerHub](https://hub.docker.com/r/ovhcom/public-cloud-databases-operator/tags).
+
 You can verify the operator is correctly installed by checking the Pods in the new Kubernetes namespace:
 
 ```bash
-kubectl get deploy -n databases-operator
-NAME                                       READY   UP-TO-DATE   AVAILABLE   AGE
-operator-public-cloud-databases-operator   0/1     1            0           11h
-
-kubectl get crd services.clouddatabases.ovhcloud.net
-NAME                                   CREATED AT
-services.clouddatabases.ovhcloud.net   2023-03-07T19:32:37Z
-
-kubectl get secret ovh-credentials -n databases-operator
-NAME              TYPE                      DATA   AGE
-ovh-credentials   kubernetes.io/storageos   4      9h
+kubectl get deploy -n ovhcloud
+NAME                              READY   UP-TO-DATE   AVAILABLE   AGE
+public-cloud-databases-operator   1/1     1            1           60m
 ```
 
-### Creatin custom resources
+And that the secret with you OVHcloud credentials is properly created:
+
+```bash
+kubectl get secret ovh-credentials -n ovhcloud
+NAME              TYPE     DATA   AGE
+ovh-credentials   Opaque   4      60m
+```
+
+### Creating custom resources
 
 Create a custom resource object:
 
 ```yaml
- {
-        "apiVersion": "clouddatabases.ovhcloud.net/v1alpha1",
-        "kind": "services",
-        "metadata": {
-          "name": "XXXX",
-          "namespace": "XXXX"
-        },
-        "spec": {
-          "projectId": "XXXX",
-          "serviceId": "XXXX",
-          "labelSelector": # No label selector means apply on all nodes
-            "matchLabels":
-              "LABELNAME": "LABELVALUE"
-        },
-      }
+apiVersion: cloud.ovh.net/v1alpha1
+kind: Database
+metadata:
+  name: mydatabase
+  namespace: ovhcloud
+spec:
+  projectId: XXXX
+  serviceId: XXX
+```
+
+Or with a label selector to cherry pick you nodes based on label:
+
+```yaml
+apiVersion: cloud.ovh.net/v1alpha1
+kind: Database
+metadata:
+  name: mydatabase
+  namespace: ovhcloud
+spec:
+  projectId: XXXX
+  serviceId: XXX
+  labelSelector:
+    matchLabels:
+      LABELNAME: LABELVALUE
 ```
 
 The `serviceId` field is optional. If not set, the operator will be run against all the services of your project.
@@ -100,6 +113,13 @@ Apply it to the cluster:
 
 ```bash
 kubectl apply -f cr.yaml
+```
+
+You can check it has been properly created using this command:
+```bash
+kubectl kubectl -n ovhcloud get database
+NAME                              AGE
+public-cloud-databases-operator   59m
 ```
 
 ### Nodes Labels
