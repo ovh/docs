@@ -75,7 +75,7 @@ Também é possível selecionar o modo do disco:
 
 - `Dependent`: inclui o disco durante a snapshot;
 
-- `Independent - presistent`: permite a conservação dos dados aquando do reboot de uma máquina, mas não é considerado numa snapshot;
+- `Independent - persistent`: permite a conservação dos dados aquando do reboot de uma máquina, mas não é considerado numa snapshot;
 
 - `Independent - non-persistent`: tem a particularidade de não conservar os dados. Se efetuar um reboot da máquina, todos os dados serão suprimidos.
 

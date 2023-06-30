@@ -3,7 +3,7 @@ title: Formating NVMe disks on IOPS nodes
 excerpt: 'Find out how to partition and format NVMe disks on OVHcloud Managed Kubernetes IOPS nodes'
 routes:
     canonical: '/pages/platform/kubernetes-k8s/formating-nvme-disks-on-iops-nodes'
-updated: 2020-05-04
+updated: 2023-06-30
 ---
 
 <style>
@@ -295,7 +295,7 @@ And deploy the Nginx pod:
 kubectl apply -f local-nvme-nginx-pod.yaml
 ```
 
-Let's enter inside the Nginx container to create a file on the NVMe presistent volume:
+Let's enter inside the Nginx container to create a file on the NVMe persistent volume:
 
 ```bash
 kubectl exec -it local-nvme-nginx -- bash
