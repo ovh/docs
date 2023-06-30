@@ -1,14 +1,14 @@
 ---
 title: Configurer IPv6 sur un serveur dédié
 excerpt: Decouvrez comment configurer des adresses IPv6 sur notre infrastructure.
-updated: 2022-08-26
+updated: 2023-06-21
 ---
 
-**Dernière mise à jour le 26/08/2022**
+**Dernière mise à jour le 21/06/2023**
 
 ## Objectif
 
-Internet Protocol version 6 (IPv6) est le successeur d'Internet Protocol version 4 (IPv4). Mis en place pour résoudre l’épuisement des adresses IPv4, IPv6 utilise des adresses de 128 bits au lieu d’adresses de 32 bits. Tous les serveurs dédiés d’OVHCloud comprennent un bloc /64 IPv6. Ceci représente plus de 18 quintillions d’adresses IP dont vous pouvez disposer à votre guise.
+Internet Protocol version 6 (IPv6) est le successeur d'Internet Protocol version 4 (IPv4). Mis en place pour résoudre l’épuisement des adresses IPv4, IPv6 utilise des adresses de 128 bits au lieu d’adresses de 32 bits. La plupart des serveurs dédiés OVHcloud sont livrés avec un bloc /64 IPv6, à l'exception des serveurs High Grade et Scale qui sont livrés avec un bloc /56 IPv6. Ceci représente plus de 18 quintillions d’adresses IP dont vous pouvez disposer à votre guise.
 
 **Ce guide vous explique comment configurer des adresses IPv6 sur votre serveur.**
 
@@ -34,19 +34,20 @@ En installant votre serveur à l’aide d’un modèle de système d’exploitat
 
 Par exemple, si nous avons attribué à votre serveur la plage IPv6 : `2607:5300:xxxx:xxxx::/64` vous pouvez utiliser comme IPv6 principale de votre serveur l'IPv6 : `2607:5300:xxxx:xxxx::1/64`.
 
-Si vous souhaitez configurer plusieurs adresses IPv6 sur votre serveur (ou si vous souhaitez l’utiliser sur une VM) vous devez disposer d’une Additional IP configurée avec une vMAC. Dans le cas contraire, l'IPv6 ne pourra pas être routée par nos routeurs/switchs.
+Si vous souhaitez configurer plusieurs adresses IPv6 sur votre serveur (ou si vous souhaitez l’utiliser sur une VM) vous devez disposer d’une Additional IP configurée avec une vMAC. Dans le cas contraire, l'IPv6 ne pourra pas être routée par nos routeurs/switchs. Veuillez noter que cette restriction ne s'applique pas aux serveurs High Grade et Scale. Pour les machines virtuelles créées sur ces serveurs, les adresses IPv6 peuvent être utilisées sans qu'il soit nécessaire d'utiliser des vMAC.
 
-> [!primary]
->
-> La passerelle par défaut de votre bloc IPv6 (IPv6_GATEWAY) demeure xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Veuillez noter que les "0" de tête peuvent être supprimés dans une IPv6 afin d'éviter des erreurs lors de la determination de la passerelle. 
->
-> Par exemple :
-> 
-> - La plage IPv6 du serveur est `2607:5300:60:62ac::/64` ou `2607:5300:60:62ac:0000:0000:0000:0000/64`. L’IPv6_GATEWAY sera alors `2607:5300:60:62FF:FF:FF:FF:FF`.
-> - La plage IPv6 du serveur est `2001:41D0:1:46e::/64` ou `2001:41D0:0001:046e:0000:0000:0000:0000/64`. L’IPv6_GATEWAY sera alors `2001:41D0:1:4FF:FF:FF:FF:FF`.
->
-> Le moyen le plus sûr de récupérer les informations réseau de votre serveur est d'[utiliser l'API OVHcloud](/pages/account/api/first-steps). Exécutez l'appel API suivant, en indiquant le nom interne du serveur (exemple : `ns3956771.ip-169-254-10.eu`) :
->
+### Passerelle par défaut (à l'exception des serveurs High Grade et Scale)
+
+La passerelle par défaut de votre bloc IPv6 (IPv6_GATEWAY) demeure xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Veuillez noter que les "0" de tête peuvent être supprimés dans une IPv6 afin d'éviter des erreurs lors de la determination de la passerelle.
+
+Par exemple :
+
+- La plage IPv6 du serveur est `2607:5300:60:62ac::/64` ou `2607:5300:60:62ac:0000:0000:0000:0000/64`. L’IPv6_GATEWAY sera alors `2607:5300:60:62FF:FF:FF:FF:FF`.
+- La plage IPv6 du serveur est `2001:41D0:1:46e::/64` ou `2001:41D0:0001:046e:0000:0000:0000:0000/64`. L’IPv6_GATEWAY sera alors `2001:41D0:1:4FF:FF:FF:FF:FF`.
+
+Le moyen le plus sûr de récupérer les informations réseau de votre serveur est d'[utiliser l'API OVHcloud](/pages/account/api/first-steps).
+
+Exécutez l'appel API suivant, en indiquant le nom interne du serveur (exemple : `ns3956771.ip-169-254-10.eu`) :
 
 
 > [!api]
@@ -58,6 +59,12 @@ Si vous souhaitez configurer plusieurs adresses IPv6 sur votre serveur (ou si vo
 > 
 > Avant de modifier un fichier de configuration, créez toujours une sauvegarde de l’original, pour pouvoir y revenir en cas de problème. 
 > 
+
+### Passerelle par défaut pour les serveurs High Grade et Scale
+
+La passerelle par défaut de votre bloc IPv6 (IPv6_GATEWAY) demeure `fe80:0000:0000:0000:0000:0000:0000:0001`. Veuillez noter que les "0" de tête peuvent être supprimés dans une IPv6 afin d'éviter des erreurs.
+
+Dans ce cas, la passerelle IPv6 par défaut peut être écrite ainsi : `fe80::1`.
 
 ### Debian et systèmes d’exploitation basés sur Debian
 

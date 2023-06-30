@@ -1,14 +1,14 @@
 ---
 title: 'Configuring IPv6 on dedicated servers'
 excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
-updated: 2022-08-26
+updated: 2023-06-21
 ---
 
-**Last updated 26th August 2022**
+**Last updated 21st June 2023**
 
 ## Objective
 
-Internet Protocol version 6 (IPv6) is the latest version of the Internet Protocol (IP). It is designed to address the long-anticipated address exhaustion of its predecessor, IPv4, by using 128-bit addresses instead of 32-bit addresses. Every OVHcloud dedicated server comes with a /64 IPv6 block. This represents over 18 quintillion IP addresses that you can use at your convenience.
+Internet Protocol version 6 (IPv6) is the latest version of the Internet Protocol (IP). It is designed to address the long-anticipated address exhaustion of its predecessor, IPv4, by using 128-bit addresses instead of 32-bit addresses. Most OVHcloud dedicated servers are delivered with a /64 IPv6 block, with the exception of High Grade and Scale servers, which are delivered with a /56 IPv6 block. This represents over 18 quintillion IP addresses that you can use at your convenience.
 
 **This guide explains how to configure IPv6 addresses on your server using various examples.**
 
@@ -34,19 +34,18 @@ If you are using an OVHcloud-provided Linux OS template to install your server, 
 
 For example, if we have assigned to your server the IPv6 range: `2607:5300:xxxx:xxxx::/64` you may use as main IPv6 of your server the IPv6: `2607:5300:xxxx:xxxx::1/64`.
 
-If you want to have more than one IPv6 configured on your server (or want to use it on a VM) you will need to have an Additional IP configured with a vMAC. Otherwise, the IPv6 cannot be routed by our routers/switches.
+If you want to have more than one IPv6 configured on your server (or want to use it on a VM) you will need to have an Additional IP configured with a vMAC. Otherwise, the IPv6 cannot be routed by our routers/switches. Please note that this restriction does not apply to High Grade and Scale servers. For virtual machines created on hypervisors running on these servers, IPv6 addresses can be used without the need for vMACs.
 
-> [!primary]
->
-> The default gateway for your IPv6 block (IPv6_GATEWAY) is usually xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Please note that the leading "0's" can be removed in an IPv6 to avoid errors when determining the gateway.  
->
-> For example:
-> 
-> - The IPv6 range of the server is `2607:5300:60:62ac::/64` or `2607:5300:60:62ac:0000:0000:0000:0000/64`. The IPv6_GATEWAY will therefore be `2607:5300:60:62FF:FF:FF:FF:FF`.
-> - The IPv6 range of the server is `2001:41D0:1:46e::/64` or `2001:41D0:0001:046e:0000:0000:0000:0000/64`. The IPv6_GATEWAY will therefore be `2001:41D0:1:4FF:FF:FF:FF:FF`.
->
-> The safe way to retrieve the networking information for your server is to [use the OVHcloud API](/pages/account/api/first-steps). Execute the following API call, indicating the internal server name (example: `ns3956771.ip-169-254-10.eu`):
->
+### Default Gateway (excluding High Grade and Scale Servers)
+
+The default gateway for your IPv6 block (IPv6_GATEWAY) is usually xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Please note that the leading "0's" can be removed in an IPv6 to avoid errors when determining the gateway.                                     
+For example:
+
+- The IPv6 range of the server is `2607:5300:60:62ac::/64` or `2607:5300:60:62ac:0000:0000:0000:0000/64`. The IPv6_GATEWAY will therefore be `2607:5300:60:62FF:FF:FF:FF:FF`.
+- The IPv6 range of the server is `2001:41D0:1:46e::/64` or `2001:41D0:0001:046e:0000:0000:0000:0000/64`. The IPv6_GATEWAY will therefore be `2001:41D0:1:4FF:FF:FF:FF:FF`.                                 
+The safe way to retrieve the networking information for your server is to [use the OVHcloud API](/pages/account/api/first-steps).
+
+Execute the following API call, indicating the internal server name (example: `ns3956771.ip-169-254-10.eu`):           
 
 
 > [!api]
@@ -58,6 +57,14 @@ If you want to have more than one IPv6 configured on your server (or want to use
 >
 > Before modifying a configuration file, always create a backup of the original.
 >
+
+
+### Default Gateway (for High Grade and Scale Servers)
+
+For these ranges, the default gateway for your IPv6 block (IPv6_GATEWAY) is `fe80:0000:0000:0000:0000:0000:0000:0001`. Please note that the leading "0's" can be removed in an IPv6 to avoid errors.
+
+In this case, the default IPv6 gateway can be written as: `fe80::1`.
+
 
 ### Debian and Debian-based operating systems
 

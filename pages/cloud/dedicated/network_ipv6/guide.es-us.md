@@ -1,14 +1,14 @@
 ---
 title: 'Configurar la IPv6 en servidores dedicados'
 excerpt: 'Aprenda a configurar direcciones IPv6 en nuestra infraestructura'
-updated: 2022-08-26
+updated: 2023-06-21
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 29/08/2022**
+**Última actualización: 21/06/2023**
 
 ## Objetivo
 
@@ -38,19 +38,20 @@ Si está utilizando una plantilla de OVHcloud para instalar el servidor en un si
 
 Por ejemplo, si hemos asignado al servidor el rango IPv6: `2607:5300:xxxx:xxxx:/64` puede utilizar la IPv6 principal de su servidor como IPv6: `2607:5300:xxxx:xxxx::1/64`.
 
-Si desea configurar varias direcciones IPv6 en su servidor (o si quiere utilizarlo en una MV), debe disponer de una Additional IP configurada con una vMAC. Si no, nuestros routers/switchs no podrán enrutar la IPv6.
+Si desea configurar varias direcciones IPv6 en su servidor (o si quiere utilizarlo en una MV), debe disponer de una Additional IP configurada con una vMAC. Si no, nuestros routers/switchs no podrán enrutar la IPv6. Tenga en cuenta que esta restricción no se aplica a los servidores High Grade y Scale. Para las máquinas virtuales creadas en estos servidores, las direcciones IPv6 se pueden usar sin necesidad de usar vMAC.
 
-> [!primary]
->
-> La puerta de enlace por defecto de su bloque IPv6 (IPv6_GATEWAY) seguirá siempre la nomenclatura xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Tenga en cuenta que los "0" de cabeza pueden eliminarse en una IPv6 para evitar errores al determinar la pasarela.
->
-> Por ejemplo,
-> 
-> - El rango IPv6 del servidor es `2607:5300:60:62ac::/64`  o `2607:5300:60:62ac:0000:0000:0000:0000/64`. Por lo tanto, la IPv6_GATEWAY será `2607:5300:60:62FF:FF:FF:FF:FF`.
-> - El rango IPv6 del servidor es `2001:41D0:1:46e::/64` o `2001:41D0:0001:046e:0000:0000:0000:0000/64`. Por lo tanto, la IPv6_GATEWAY será `2001:41D0:1:4FF:FF:FF:FF:FF`.
->
-> La forma más segura de obtener la información de red del servidor es [mediante la API de OVHcloud](/pages/account/api/first-steps). Ejecute la siguiente llamada a la API, indicando el nombre interno del servidor (por ejemplo: `ns3956771.ip-169-254-10.eu`):
->
+### Puerta de enlace predeterminada (excepto servidores High Grade y Scale)
+
+La puerta de enlace por defecto de su bloque IPv6 (IPv6_GATEWAY) seguirá siempre la nomenclatura xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Tenga en cuenta que los "0" de cabeza pueden eliminarse en una IPv6 para evitar errores al determinar la pasarela.
+
+Por ejemplo,
+
+- El rango IPv6 del servidor es `2607:5300:60:62ac::/64` o `2607:5300:60:62ac:0000:0000:0000:0000/64`. Por lo tanto, la IPv6_GATEWAY será `2607:5300:60:62FF:FF:FF:FF:FF`.
+- El rango IPv6 del servidor es `2001:41D0:1:46e::/64` o `2001:41D0:0001:046e:0000:0000:0000:0000/64`. Por lo tanto, la IPv6_GATEWAY será `2001:41D0:1:4FF:FF:FF:FF:FF`.
+
+La forma más segura de obtener la información de red del servidor es [mediante la API de OVHcloud](/pages/account/api/first-steps). 
+
+Ejecute la siguiente llamada a la API, indicando el nombre interno del servidor (por ejemplo: `ns3956771.ip-169-254-10.eu`):
 
 
 > [!api]
@@ -61,6 +62,12 @@ Si desea configurar varias direcciones IPv6 en su servidor (o si quiere utilizar
 > 
 > Antes de editar un archivo de configuración, cree siempre una copia de seguridad del original para poder volver si surge algún problema. 
 > 
+
+### Puerta de enlace predeterminada para servidores High Scale y Scale
+
+La puerta de enlace predeterminada de su bloque IPv6 (IPv6_GATEWAY) permanece `fe80:0000:0000:0000:0000:0000:0000:0001`. Tenga en cuenta que los "0" de cabeza se pueden eliminar en una IPv6 para evitar errores.
+
+En este caso, la puerta de enlace IPv6 predeterminada se puede escribir de la siguiente manera: `fe80::1`.
 
 ### Sistemas operativos Debian y basados en Debian
 
