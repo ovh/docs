@@ -1,5 +1,5 @@
 ---
-title: How to use IAM policies using the OVHcloud OVHcloud Control Panel
+title: How to use IAM policies using the OVHcloud Control Panel
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
 updated: 2023-06-28
 ---

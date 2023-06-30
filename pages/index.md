@@ -12,6 +12,8 @@
         + [Users creation and management](account-and-service-management-account-information-users)
             + [Managing users](account/customer/ovhcloud-users-management)
             + [How to use IAM policies using the OVHcloud API](account/customer/iam-policies-api)
+            + [How to use IAM policies using the OVHcloud Control Panel](account/customer/iam-policies-ui)
+            + [How to log to the OVHcloud Control Panel using IAM](account/customer/iam-control-panel-access)
             + [Enabling Active Directory Federation Services (AD FS) SSO connections with your OVHcloud account](account/customer/ovhcloud-account-connect-saml-adfs)
             + [Enabling Google Workspace SSO connections with your OVHcloud account](account/customer/ovhcloud-account-connect-saml-google-workspace)
             + [Enabling Azure AD SSO connections with your OVHcloud account](account/customer/ovhcloud-account-connect-saml-azure-ad)
