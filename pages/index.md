@@ -1014,7 +1014,6 @@
             + [Troubleshooting common database errors](web/hosting/diagnosis_database_errors)
             + [Resolving a “Site not installed” error](web/hosting/multisites_website_not_installed)
             + [Fixing the 500 Internal Server Error](web/hosting/diagnostic_fix_500_internal_server_error)
-            + [Fixing the 500 Internal Server Error](web/hosting/diagnostic_fix_500_internal_server_error)
             + [Troubleshooting an "Index of" page](web/hosting/diagnostic-index-of)
             + [What do I do if I have a 403 forbidden page?](web/hosting/diagnostic_403_forbidden)
             + [Monitoring and managing automated emails in your Web Hosting plan](web/hosting/mail_function_script_records)
