@@ -1,5 +1,5 @@
 ---
-Titre : 'Transférer une image d'un projet Public Cloud à un autre'
+title : 'Transférer une image d'un projet Public Cloud à un autre'
 excerpt: 'Apprenez à déplacer une image d'un projet Public Cloud à un autre'
 updated : 2023-06-28
 ---
