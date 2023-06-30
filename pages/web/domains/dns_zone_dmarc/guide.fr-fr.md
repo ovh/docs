@@ -44,11 +44,13 @@ L' enregistrement DMARC contient des informations sur la politique à appliquer 
 
 ### Comment le DMARC fonctionne-t-il ? <a name="how-dmarc-work"></a>
 
-Pour bien comprendre comment fonctionne le DMARC, nous allons le voir par un exemple.
+Pour bien comprendre comment fonctionne le DMARC, voici un exemple.
 
 Lorsque l'adresse **contact@mydomain.ovh** envoie un e-mail vers l'adresse de destination **recipient@otherdomain.ovh**, le serveur de réception du nom de domaine destinataire **« otherdomain.ovh »** va intérroger la zone DNS du nom de domaine émetteur **mydomain.ovh** pour lire les instructions de l'enregistrement DMARC.
 
-L'enregistrement DMARC communique la politique à adopter en fonction du résultat des tests SPF et DKIM. il peut également renseigner une ou des adresses e-mail servant à recevoir les rapports d'échecs d'e-mails envoyer depuis le nom de domaine **mydomain.ovh**, représenté par l'adresse **report@mydomain.ovh** dans notre exemple..
+L'enregistrement DMARC communique la politique à adopter en fonction du résultat des tests SPF et DKIM. il peut également renseigner une ou des adresses e-mail servant à recevoir les rapports d'échecs d'e-mails envoyer depuis le nom de domaine **mydomain.ovh**, représenté par l'adresse **report@mydomain.ovh** dans notre exemple.
+
+Après lecture des instructions de l'enregistrement DMARC du nom de domaine **mydomain.ovh** par le serveur de réception de **« otherdomain.ovh »**, les e-mails seront délivrés vers l'adresse **recipient@otherdomain.ovh**, marqués comme « SPAM » ou rejetés.
 
 ![dmarc](images/dns-dmarc-diagram.png){.thumbnail}
 
@@ -62,7 +64,7 @@ Il existe 2 façons de configurer le DMARC dans votre zone DNS OVHcloud :
 
 - Par un [enregistrement DMARC](#dmarc-record) : Cet enregistrement permet une configuration simplifiée du DMARC, vous n'aurez qu'à compléter les champs avec les paramètres DMARC nécessaires à votre configuration. Cet enregistrement est lu comme un enregistrement TXT par les serveurs DNS.
 
-- Par un [enregistrement TXT](#txt-record) : Cet enregistrement standard est utilisé dans le cadre de la configuration du DMARC depuis l'espace client OVHcloud, il vous permettra d'intégrer l'ensemble des balises de paramétrage DMARC y compris celles absentes via l'enregistrement DMARC. Il nécessite toutefois de bien respecter la syntaxe DMARC.
+- Par un [enregistrement TXT](#txt-record) : Cet enregistrement standard peut être utilisé dans le cadre de la configuration du DMARC depuis l'espace client OVHcloud, il vous permettra d'intégrer l'ensemble des balises de paramétrage DMARC y compris celles absentes via l'enregistrement DMARC OVHcloud. Il nécessite toutefois de bien respecter les règles de syntaxe du protocole DMARC.
 
 #### Enregistrement DMARC <a name="dmarc-record"></a>
 
