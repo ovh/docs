@@ -1,10 +1,8 @@
 ---
 title: 'Mettre à jour son OverTheBox'
 excerpt: 'Découvrez comment mettre à jour votre équipement OverTheBox'
-updated: 2022-11-08
+updated: 2023-06-30
 ---
-
-**Dernière mise à jour le 08/11/2022**
 
 ## Objectif
 
@@ -45,7 +43,7 @@ Attendez quelques minutes afin que l'**OverTheBox** soit de nouveau opérationne
 
 Vous pouvez mettre à jour votre équipement OverTheBox depuis l'interface web locale.
 
-- Téléchargez la dernière image sur votre ordinateur : [http://downloads.overthebox.ovh/stable/targets/x86/64/latest.img.gz](http://downloads.overthebox.ovh/stable/targets/x86/64/latest.img.gz){.external}.
+- Téléchargez la dernière image sur votre ordinateur : [http://downloads.overthebox.net/stable/v3.11.0/targets/x86/64/latest.img.gz](http://downloads.overthebox.net/stable/v3.11.0/targets/x86/64/latest.img.gz){.external}.
 - Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}.
 - Cliquez sur `System`{.action}.
 - Cliquez sur `Backup/Flash Firmware`{.action}.
@@ -113,16 +111,26 @@ Sur l'espace client OVHcloud, deux informations de versions vous sont présenté
 
 ![overthebox](images/upgrade-more1-2022.png){.thumbnail}
 
-### Passer sur une version Beta ou une version Raspberry Pi 3
+### Passer sur une version alpha ou beta
 
 > [!warning]
 >
 > Il n'est pas recommandé de modifier la version de votre image si vous n'êtes pas un utilisateur expert.
 >
 
-Sur l'espace client OVHcloud, vous pouvez modifier le canal de votre version. Cela peut vous permettre d'utiliser des versions en cours de développement ou dans un status bêta, ainsi que la version dédiée au Raspberry Pi si vous souhaitez utiliser ce type d'équipement.
+Sur l'espace client OVHcloud, vous pouvez modifier le canal de votre version. Cela vous permet d'utiliser des versions plus récentes en status alpha ou beta. Ce sont des versions fonctionnelles, qui seront à terme, déployé sur le canal stable.
 
 ![overthebox](images/upgrade-more2-2022.png){.thumbnail}
+
+### Installer la version Raspberry Pi
+
+> [!warning]
+>
+> Seul les équipements Raspberry Pi 3 sont actuellement supportés
+>
+
+Dans un premier temps il vous faut installer manuellement [la dernière image disponible](http://downloads.overthebox.net/stable/v3.11.0/targets/brcm2708/bcm2710/latest.img.gz){.external}.
+Une fois l'image installée et votre service OverTheBox configuré, votre Raspberry Pi se comportera comme une OverTheBox standard. Il vous sera également possible de modifier le canal de version si vous souhaitez utiliser les canaux alpha et beta.
 
 ## Aller plus loin
 
