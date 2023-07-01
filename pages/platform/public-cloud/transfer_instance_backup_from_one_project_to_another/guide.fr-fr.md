@@ -1,7 +1,7 @@
 ---
 title : 'Transférer une image d'un projet Public Cloud à un autre'
 excerpt: 'Apprenez à déplacer une image d'un projet Public Cloud à un autre'
-updated : 2023-06-28
+updated: 2023-06-28
 ---
 
 ## Objectif
@@ -37,7 +37,7 @@ Vous aurez également besoin :
 
 > [!primary]
 >
-Les commandes de ce guide sont basées sur les API `OPENSTACK` et `GLANCE`.
+> Les commandes de ce guide sont basées sur les API `OPENSTACK` et `GLANCE`.
 >
 
 ## Instructions

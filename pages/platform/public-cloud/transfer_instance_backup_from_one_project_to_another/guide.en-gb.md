@@ -28,16 +28,16 @@ For more information, please consult the [Official Openstack documention](https:
 
 Before following these steps, it is recommended that you first complete this guide:
 
-* [Prepare the environment to use the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/){.external}
+* [Prepare the environment to use the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/)
 
 You will also need the following:
 
-* a [Public Cloud Instance](https://www.ovhcloud.com/asia/public-cloud/){.external} in your OVHcloud account
+* a [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/){.external} in your OVHcloud account
 * administrative (root) access to your instance/operating system via SSH
 
 > [!primary]
 >
-The commands in this guide are based on `OPENSTACK` and `GLANCE` APIs.
+> The commands in this guide are based on `OPENSTACK` and `GLANCE` APIs.
 >
 
 ## Instructions
@@ -50,6 +50,7 @@ First, establish an SSH connection to your instance/OS and then run the followin
 
 ```bash
 $ glance image-list
+
 | 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba | pfsense |
 ```
 
@@ -263,6 +264,6 @@ $ openstack image remove project <image> <UUID_Project_To_Delete>
 
 ## Go further
 
-[Transfer an instance backup from one datacentre to another](/pages/platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another){.external}
+[Transfer an instance backup from one datacentre to another](/pages/platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another).
 
 Join our community of users on <https://community.ovh.com/en/>.
