@@ -79,7 +79,7 @@ Una volta che tutto è pronto per creare il record, torna alla pagina principale
 
 > [!primary]
 >
-> Per l'installazione di un DynHost è possibile utilizzare solo una **IPv4**. I **IPv6** non sono disponibili
+> Per l'installazione di un DynHost è possibile utilizzare solo una **IPv4**. I **IPv6** non sono disponibili.
 >
 
 ![dynhost](images/use-dynhost-step3.png){.thumbnail}
