@@ -1,10 +1,8 @@
 ---
 title: "Installer l'image OverTheBox sur votre matériel"
 excerpt: "Découvrez comment installer une image OverTheBox manuellement sur votre matériel"
-updated: 2022-11-08
+updated: 2023-06-30
 ---
-
-**Dernière mise à jour le 08/11/2022**
 
 ## Objectif
 
@@ -24,7 +22,7 @@ Vous pouvez créer une clé USB bootable contenant l'image OverTheBox afin d'ins
 
 #### Création d'une clé USB bootable sous windows
 
-- Téléchargez la dernière image **OverTheBox** sur votre ordinateur : [http://downloads.overthebox.ovh/stable/targets/x86/64/latest.img.gz](http://downloads.overthebox.ovh/stable/targets/x86/64/latest.img.gz){.external}.
+- Téléchargez la dernière image **OverTheBox** sur votre ordinateur : [http://downloads.overthebox.net/stable/v3.11.0/targets/x86/64/latest.img.gz](http://downloads.overthebox.net/stable/v3.11.0/targets/x86/64/latest.img.gz){.external}.
 - Décompressez l'image grâce à un logiciel tel que [WinRAR](https://www.rarlab.com/download.htm){.external} afin d'obtenir le fichier **.img**.
 - Branchez la clé USB sur l'ordinateur.
 - Téléchargez le logiciel [Win32 Disk Imager](https://win32diskimager.org/#download){.external} et ouvrez le.
@@ -47,7 +45,7 @@ Toute l'opération se fera en ligne de commande, veuillez donc ouvrir le **Termi
 - Téléchargez la dernière image **OverTheBox** sur votre ordinateur, grâce à la commande suivante :
 
 ```bash
-curl -C - -O http://downloads.overthebox.ovh/stable/targets/x86/64/latest.img.gz
+curl -C - -O http://downloads.overthebox.net/stable/v3.11.0/targets/x86/64/latest.img.gz
 ```
 
 Il est ensuite impératif de connaître le dossier désignant les partitions de votre clé USB.
@@ -86,7 +84,7 @@ Toute l'opération se fera en ligne de commande, veuillez donc ouvrir le **Termi
 - Téléchargez la dernière image **OverTheBox** sur votre ordinateur, grâce à la commande suivante :
 
 ```bash
-wget http://downloads.overthebox.ovh/stable/targets/x86/64/latest.img.gz
+wget http://downloads.overthebox.net/stable/v3.11.0/targets/x86/64/latest.img.gz
 ```
 
 Il est ensuite impératif de connaitre le dossier désignant les partitions de votre clé USB.
@@ -181,10 +179,10 @@ Dans cet exemple, on identifie que la destination d'installation sera **mmcblk0*
 
 #### Téléchargez l'image OverTheBox
 
-La page suivante liste les images d'**OverTheBox** compilées : [http://downloads.overthebox.ovh/stable/targets/x86/64/](http://downloads.overthebox.ovh/stable/targets/x86/64/){.external}
+La page suivante liste les images d'**OverTheBox** compilées : [http://downloads.overthebox.net/stable/](http://downloads.overthebox.ovh/stable/){.external}
 
 ```bash
-wget http://downloads.overthebox.ovh/stable/targets/x86/64/latest.img.gz
+wget http://downloads.overthebox.net/stable/v3.11.0/targets/x86/64/latest.img.gz
 ```
 
 #### Installation
@@ -209,5 +207,5 @@ Retirez maintenant votre « live usb » et redémarrez votre matériel.
 >
 
 ## Aller plus loin
- 
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
