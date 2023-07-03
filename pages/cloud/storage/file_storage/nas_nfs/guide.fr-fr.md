@@ -45,6 +45,8 @@ Les notations suivantes sont utilisées comme arguments dans les sections de lig
 >
 > L'utilisateur NFS est `root`, les modifications de droits avec cet utilisateur peuvent générer des conflits avec des droits CIFS/SMB existants.
 >
+> 
+
 
 ### Distributions basées sur Debian
 
@@ -181,6 +183,54 @@ Une fois fait, cliquez sur `Next`{.action}. Cliquez sur `Finish`{.action} à la 
 Votre partition NAS-HA est maintenant montée en datastore.
 
 ![ESXI](images/esxi4.png){.thumbnail}
+
+### NFS3/NFS4
+
+L'offre NAS-HA supporte les protocoles NFS3 et NFS4.
+Nous allons détailler leur utilisation.
+
+Que se passe-t'il si on ne précise pas la version lors de la commande NFS ?
+> 
+Dans ce cas, votre client NFS va essayer de se connecter directement sur la plus haute version supportée par celui-ci.
+Mais vous pouvez également décider de choisir si vous préférez d'utilisez NFS3 ou NFS4:
+
+Forcer l'utilisation de NFS3 :
+
+Vous devez utiliser la commande suivante : 
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+**Par exemple :**
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Forcer l'utilisation de NFS4 :
+
+Vous devez utiliser la commande suivante : 
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+**Par exemple :**
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+Vous pouvez également utiliser la commande suivante pour déterminer quel est la version utilisée par le montage actuel: 
+
+**Par exemple :**
+
+```bash
+ubuntu@server:~$ nfsstat -m
+```
+Dans le retour, le paramètre vers=3 ou vers=4 vous indique quel est le protocol utilisé.
+
+Pour centos et Fedora, l'utilisation des commandes sera la même.
 
 ## Aller plus loin
 
