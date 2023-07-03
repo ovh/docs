@@ -18,7 +18,7 @@ The access management of OVHcloud is based on a "policy" management system. It i
 In details, a policy contains:
 
 - One or more **identities** targeted by this policy. 
-    - It can be account IDs, users or user groups (like the ones used in [Federation](/pages/account/customer/ovhcloud-account-connect-saml-adfs)). 
+    - It can be account IDs, users or user groups (like the ones used in [Federation](/pages/account/customer/ovhcloud-account-connect-saml-adfs) - others guides are available). 
 - One or more **resources** impacted by this policy. 
     - A resource is an OVHcloud product that will be impacted by this policy (a domain name, a Nutanix server, a Load Balancer, etc.).
 - One or more **actions** allowed or excepted by this policy. 
