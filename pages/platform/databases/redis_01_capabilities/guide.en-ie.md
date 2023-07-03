@@ -66,7 +66,7 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 
 Redis Community software is under the 3-Clause-BSD license, a liberal open-source license.
 
-Redis Stack and all Redis modules created by Redis Ltd. (e.g., RediSearch, RedisJSON, RedisGraph, RedisTimeSeries, and RedisBloom) are dual-licensed under the Redis Source Available License v2 (RSALv2) and SSPL. The RSALv2 license model forbid OVHcloud, and any other service provider, offering these modules to third parties as a service. So **these modules are not available**.
+Redis Stack and all Redis modules created by Redis Ltd. (e.g., RediSearch, RedisJSON, RedisGraph, RedisTimeSeries, and RedisBloom) are dual-licensed under the Redis Source Available License v2 (RSALv2) and SSPL. The RSALv2 license model prohibits OVHcloud, and any other service provider, from offering these modules to third parties as a service. So **these modules are not available**.
 
 More information on <https://redis.com/legal/licenses/>.
 
