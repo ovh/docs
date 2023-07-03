@@ -118,7 +118,7 @@ Sur l'espace client OVHcloud, deux informations de versions vous sont présenté
 > Il n'est pas recommandé de modifier la version de votre image si vous n'êtes pas un utilisateur expert.
 >
 
-Sur l'espace client OVHcloud, vous pouvez modifier le canal de votre version. Cela vous permet d'utiliser des versions plus récentes en status alpha ou beta. Ce sont des versions fonctionnelles, qui seront à terme, déployé sur le canal stable.
+Vous pouvez modifier le canal de votre version via l'espace client OVHcloud, ce qui vous permet d'utiliser des versions plus récentes en status alpha ou beta. Ce sont des versions fonctionnelles qui seront, à terme, déployées sur le canal stable.
 
 ![overthebox](images/upgrade-more2-2022.png){.thumbnail}
 
@@ -126,10 +126,10 @@ Sur l'espace client OVHcloud, vous pouvez modifier le canal de votre version. Ce
 
 > [!warning]
 >
-> Seul les équipements Raspberry Pi 3 sont actuellement supportés
+> Seul les équipements Raspberry Pi 3 sont actuellement supportés.
 >
 
-Dans un premier temps il vous faut installer manuellement [la dernière image disponible](http://downloads.overthebox.net/stable/v3.11.0/targets/brcm2708/bcm2710/latest.img.gz){.external}.
+Dans un premier temps, il vous faut installer manuellement [la dernière image disponible](http://downloads.overthebox.net/stable/v3.11.0/targets/brcm2708/bcm2710/latest.img.gz){.external}.
 Une fois l'image installée et votre service OverTheBox configuré, votre Raspberry Pi se comportera comme une OverTheBox standard. Il vous sera également possible de modifier le canal de version si vous souhaitez utiliser les canaux alpha et beta.
 
 ## Aller plus loin
