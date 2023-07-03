@@ -34,7 +34,7 @@ Por ejemplo, el **DynHost** se puede utilizar si *se aloja* (en los locales de s
 
 > [!warning]
 >
-> - Si el dominio no utiliza los servidores DNS de OVHcloud, contacte con el proveedor o proveedor que gestione su configuración DNS para conocer el procedimiento a seguir.
+> - Si el dominio no utiliza los servidores DNS de OVHcloud, contacte con el proveedor que gestione su configuración DNS para conocer el procedimiento a seguir.
 > 
 > - Si el dominio está registrado en OVHcloud, compruebe que utiliza nuestra configuración. Para ello, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y acceda al apartado `Web cloud`{.action}. En la columna izquierda, abra la pestaña `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Servidores DNS`{.action} para ver los servidores DNS utilizados por su dominio. 
 >
