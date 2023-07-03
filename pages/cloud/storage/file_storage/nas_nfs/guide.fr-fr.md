@@ -4,8 +4,6 @@ excerpt: Découvrez comment vous connecter à votre NAS-HA en utilisant un parta
 updated: 2023-07-03
 ---
 
-**Dernière mise à jour le 03/07/2023**
-
 ## Objectif
 
 Le service NAS-HA OVHcloud vous permet de gérer un stockage de fichiers accessible depuis un réseau.
@@ -186,51 +184,46 @@ Votre partition NAS-HA est maintenant montée en datastore.
 
 ### NFS3/NFS4
 
-L'offre NAS-HA supporte les protocoles NFS3 et NFS4.
-Nous allons détailler leur utilisation.
+L'offre NAS-HA supporte les protocoles NFS3 et NFS4. Nous allons détailler leur utilisation.
 
-Que se passe-t'il si on ne précise pas la version lors de la commande NFS ?
-> 
+**Que se passe-t'il si on ne précise pas la version lors de la commande NFS ?**
+
 Dans ce cas, votre client NFS va essayer de se connecter directement sur la plus haute version supportée par celui-ci.
-Mais vous pouvez également décider de choisir si vous préférez d'utilisez NFS3 ou NFS4:
+Mais vous pouvez également choisir si vous préférez utiliser NFS3 ou NFS4:
 
-Forcer l'utilisation de NFS3 :
-
-Vous devez utiliser la commande suivante : 
+Pour forcer l'utilisation de NFS3, vous devez utiliser la commande suivante :
 
 ```bash
 ubuntu@server:~$ sudo mount -t nfs -o vers=3 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
-**Par exemple :**
+- Exemple :
 
 ```bash
 ubuntu@server:~$ sudo mount -t nfs -o vers=3 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
-Forcer l'utilisation de NFS4 :
-
-Vous devez utiliser la commande suivante : 
+Pour forcer l'utilisation de NFS4, vous devez utiliser la commande suivante :
 
 ```bash
 ubuntu@server:~$ sudo mount -t nfs -o vers=4 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
-**Par exemple :**
+- Exemple :
 
 ```bash
 ubuntu@server:~$ sudo mount -t nfs -o vers=4 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
-Vous pouvez également utiliser la commande suivante pour déterminer quel est la version utilisée par le montage actuel: 
 
-**Par exemple :**
+Vous pouvez également utiliser la commande suivante pour déterminer quelle est la version utilisée par le montage actuel :
 
 ```bash
 ubuntu@server:~$ nfsstat -m
 ```
-Dans le retour, le paramètre vers=3 ou vers=4 vous indique quel est le protocol utilisé.
 
-Pour centos et Fedora, l'utilisation des commandes sera la même.
+Dans le retour, le paramètre `vers=3` ou `vers=4` vous indique quel est le protocole utilisé.
+
+L'utilisation des commandes sera semblable pour CentOS et Fedora.
 
 ## Aller plus loin
 
