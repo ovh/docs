@@ -93,6 +93,16 @@ Vous trouverez ci-dessous le descriptif exhaustif des balises utilisées pour **
     - `r`(relaxed) pour le mode souple : les e-mails échouant à l'authentification SPF sont marqués comme « indésirables » par le serveur destinataire.
     - `s`(strict) pour le mode strict : les e-mails échouant à l'authentification SPF sont rejetés par le serveur destinataire.
 
+> [!primary]
+>
+> Dans le cadre des mécanismes d'authentification SPF et DKIM, l'**alignement** fait référence à la correspondance entre le nom de domaine (et/ou la signature du domaine) utilisé lors de l'envoi, avec le nom de domaine inscrit dans ces mécanismes.
+>
+> **exemple** 
+>
+> - **Aligné**: lorsque l'adresse *john.smith@mydomain.ovh* transmet un message depuis le service e-mail attaché au nom de domaine *mydomain.ovh* et que les mécanismes d'authentification SPF et DKIM ont été configurés, nous obtiendrons un résultat aligné.
+> - **Partiellement aligné**: lorsque l'adresse *john.smith@subdomain.mydomain.ovh* transmet un message depuis le service e-mail attaché au nom de domaine *mydomain.ovh*, mais que les mécanismes d'authentification SPF et DKIM ont été configurés uniquement sur le domaine principal, à savoir *mydomain.ovh*, nous obitiendrons un résultat partiellement aligné.
+> - **Echec des mécanismes d'authentification**: l'expéditeur tente d'envoyer un e-mail en tant que *john.smith@mydomain.ovh* en passant par une autre adresse, tel que *robert@example.com* ou encore en utilisant un service d'envoie d'e-mail qui n'est pas listé dans le SPF. Alors les mécanismes d'authentification SPF et DKIM renveront un échec comme résultat.
+
 ![dmarc](images/dns-dmarc-01.png){.thumbnail}
 
 #### Enregistrement TXT <a name="txt-record"></a>
