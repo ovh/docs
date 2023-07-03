@@ -45,12 +45,12 @@ Pour choisir un VPS adapté à vos besoins, nous vous invitons à vérifier les 
 Cela vous permettra de faire le bon choix parmi nos solutions VPS :
 
 - **VPS Starter** : machine d'entrée de gamme pour tester notre offre (avec une distribution Linux uniquement, pas de panneau de gestion web) ;
-- **VPS Value, Essential et Comfort** : idéals pour l’hébergement de sites web, de services e-commerce ou de systèmes de monitoring ;
+- **VPS Value, Essential et Comfort** : idéal pour l’hébergement de sites web, de services e-commerce ou de systèmes de monitoring ;
 - **VPS Elite** : adapté aux sites e-commerce et applications plus exigeants en ressources CPU et mémoire ;
-- **VPS Limited Edition** (Quantités limitées) :  ces VPS offrent des performances accrues, un atout majeur pour l’hébergement de sites complexes, d’applications gourmandes en ressources ou même de serveurs de jeu. Leur quantité est limitée jusqu’à épuisement des stocks.
+- **VPS Limited Edition** (Quantités limitées) : ces VPS offrent des performances accrues, un atout majeur pour l’hébergement de sites complexes, d’applications gourmandes en ressources ou même de serveurs de jeu. Cette offre est valide jusqu’à épuisement des stocks.
 
 > [!primary]
-> Pour des raisons techniques, il est impossible de faire évoluer un modèle de VPS vers un autre modèle.
+> Vous pouvez faire évoluer un VPS Limited Edition vers un autre VPS de cette même gamme mais, pour des raisons techniques, il est impossible de faire évoluer un VPS Limited Edition vers un VPS d'une autre gamme (Starter, Value, Essential ou Comfort).
 
 ### Qui peut se servir d'un VPS ?
 

@@ -1,9 +1,7 @@
 ---
 title: FAQ VPS OVHcloud
-updated: 2022-05-05
+updated: 2023-07-06
 ---
-
-**Dernière mise à jour le 05/05/2022**
 
 ## FAQ VPS
 
@@ -47,15 +45,18 @@ Pour choisir un VPS adapté à vos besoins, nous vous invitons à vérifier les 
 Cela vous permettra de faire le bon choix parmi nos solutions VPS :
 
 - **VPS Starter** : machine d'entrée de gamme pour tester notre offre (avec une distribution Linux uniquement, pas de panneau de gestion web) ;
-- **VPS Value, Essential et Comfort** : idéals pour l’hébergement de sites web, de services e-commerce ou de systèmes de monitoring ;
-- **VPS Elite** : adapté aux sites e-commerce et applications plus exigeants en ressources CPU et mémoire.
+- **VPS Value, Essential et Comfort** : idéal pour l’hébergement de sites web, de services e-commerce ou de systèmes de monitoring ;
+- **VPS Elite** : adapté aux sites e-commerce et applications plus exigeants en ressources CPU et mémoire ;
+- **VPS Limited Edition** (Quantités limitées) : ces VPS offrent des performances accrues, un atout majeur pour l’hébergement de sites complexes, d’applications gourmandes en ressources ou même de serveurs de jeu. Cette offre est valide jusqu’à épuisement des stocks.
 
+> [!primary]
+> Vous pouvez faire évoluer un VPS Limited Edition vers un autre VPS de cette même gamme mais, pour des raisons techniques, il est impossible de faire évoluer un VPS Limited Edition vers un VPS d'une autre gamme (Starter, Value, Essential ou Comfort).
 
 ### Qui peut se servir d'un VPS ?
 
-Gérer un VPS nécessite des connaissances de base en administration de serveurs. Ces notions sont essentielles pour gérer le système d’exploitation (Linux ou Windows) installé sur la machine et paramétrer les applications. Vous pensez avoir besoin d’un VPS, mais estimez ne pas posséder les compétences requises ? Nous vous invitons à vous rapprocher de l’un de nos partenaires. 
+Gérer un VPS nécessite des connaissances de base en administration de serveurs. Ces notions sont essentielles pour gérer le système d’exploitation (Linux ou Windows) installé sur la machine et paramétrer les applications. Vous pensez avoir besoin d’un VPS, mais estimez ne pas posséder les compétences requises ? Nous vous invitons à vous rapprocher de l’un de nos [partenaires](https://marketplace.ovhcloud.com/). 
 
-Si vous souhaitez bénéficier de ressources garanties sans connaissances en administration de serveurs, nous vous conseillons nos [hébergements web Performance](https://www.ovh.com/ca/fr/hebergement-web).
+Si vous souhaitez bénéficier de ressources garanties sans connaissances en administration de serveurs, nous vous conseillons nos [hébergements web Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml).
 
 ### Comment me connecter à mon VPS ?
 

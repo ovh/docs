@@ -1,13 +1,11 @@
 ---
 title: FAQ VPS OVHcloud
-updated: 2022-05-05
+updated: 2023-07-06
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
-
-**Última actualización: 05/05/2022**
 
 ## FAQ VPS
 
@@ -50,10 +48,13 @@ el sistema operativo (Linux o Windows),
 
 Esto le permitirá elegir entre nuestras soluciones de VPS:
 
-- **VPS Starter**: Máquina de entrada para probar nuestra solución (solo con una distribución Linux, sin panel de control web).
+- **VPS Starter**: máquina de entrada para probar nuestra solución (solo con una distribución Linux, sin panel de control web).
 - **VPS Value, Essential y Comfort**: ideales para el alojamiento de sitios web, servicios de e-commerce o sistemas de monitorización;
 - **VPS Elite**: adecuado para portales de e-commerce y aplicaciones que requieren más recursos de CPU y memoria.
+- **VPS Limited Edition** (cantidad limitada): estos VPS ofrecen un rendimiento mejorado, una gran ventaja para alojar sitios web complejos, aplicaciones que consumen muchos recursos o incluso servidores de juego. Esta oferta es válida hasta agotar stock.
 
+> [!primary]
+> Es posible pasar de un VPS Limited Edition a otro VPS de la misma gama, pero, por motivos técnicos, no es posible pasar de un VPS Limited Edition a un VPS de otra gama (Starter, Value, Essential o Comfort).
 
 ### ¿Quién puede utilizar un VPS?
 
