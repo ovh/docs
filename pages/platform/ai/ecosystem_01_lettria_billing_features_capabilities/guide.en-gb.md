@@ -4,10 +4,10 @@ slug: ecosystem/lettria-billing-features
 excerpt: Learn how Lettria models and billing work
 section: AI Partners Ecosystem
 order: 01
-updated: 2023-05-22
+updated: 2023-07-10
 ---
 
-**Last updated 22th May, 2023.**
+**Last updated 10th July, 2023.**
 
 ## Objective
 
@@ -46,6 +46,8 @@ Output example:
 {"type":"positive","score":0.893}
 ```
 
+![LettriaSentimentExample](images/lettria-sentiments-example.png){.thumbnail}
+
 > [!primary]
 >
 > To learn more about **Lettria's sentiment analysis model**, please refer to this [documentation](https://doc.lettria.com/api-reference/comprehension/2.0/schemas/sentence/ml-sentiment).
@@ -68,6 +70,8 @@ Output example:
 {"type":"joy","confidence":0.585}
 ```
 
+![LettriaEmotionExample](images/lettria-emotions-example.png){.thumbnail}
+
 > [!primary]
 >
 > To learn more about **Lettria's emotion extraction model**, please refer to this [documentation](https://doc.lettria.com/api-reference/comprehension/2.0/schemas/sentence/ml-emotion).
@@ -88,9 +92,17 @@ To launch an AI Deploy app, there are several possibilities. You can do it from 
 To launch your Lettria app from the UI, you have to fill in some information:
 
 - **Location**
-- **Application to deploy** - *in this example, we choose the "emotions" image*
+- **Application to deploy** - *in this example, we choose the "emotions" image with gpu compliance*
 
-![lettria](images/lettria-emotions-image.png){.thumbnail}
+![LettriaDeployment](images/lettria-emotions-image.png){.thumbnail}
+
+> [!warning]
+>
+> Please, be careful when choosing the image depending on the resource required.
+>
+> For a `GPU` app, choose the Lettria image containing `gpu` in its tag, then choose one or more GPUs as resources.
+> Same principle of operation for CPU apps.
+>
 
 - **Resources** - *we advise you to use 1 GPU*
 - **Configure your app** - *add a label if you have chosen a restricted access*
@@ -107,10 +119,9 @@ You can also start this app with the `ovhai` [CLI](/pages/platform/ai/cli_10_how
 ```console
 ovhai app run \
     --gpu 1 \
-    --default-http-port 8080 \
     --label <name=value> \
-    --partner lettria
-    emotions:v1.0.0
+    --partner lettria \
+	  emotion-analysis:v0.1.0-gpu
 ```
 
 > [!primary]
@@ -120,9 +131,9 @@ ovhai app run \
 
 #### Access to your Lettria apps
 
-Once the app is launched and in `RUNNING` status, you can copy the URL and access your app. Then, you will be redirected and you can interact in the following way with Lettria API.
+Once the app is launched and in `RUNNING` status, you can copy the URL and access your app. Then, you will be redirected and you can interact with Lettria API.
 
-![video](videos/lettria-api.mp4){.thumbnail}
+![LettriaApi](images/lettria-api-doc.png){.thumbnail}
 
 ### Ask Lettria models
 
@@ -131,7 +142,7 @@ Now, you can question the **Lettria models** about your text sentiments or emoti
 > [!primary]
 >
 > In the following example, we will focus on the model that extracts text **emotions**.
-> For more detailed information on Lettria models, please refer to this [documentation](PATH_TO_OVH_LETTRIA_DOC).
+> For more detailed information on Lettria models, please refer to this [documentation](/pages/platform/ai/ecosystem_02_lettria_models).
 >
 
 #### Generate a cURL query
@@ -238,12 +249,12 @@ To obtain the total cost of a Lettria app started with AI Deploy, add the two am
 Total price = Resources price + Lettria model licencing price
 ```
 
-![billing](images/lettria-ai-deploy-billing.png){.thumbnail}
+![LettriaBilling](images/lettria-ai-deploy-billing.png){.thumbnail}
 
 > [!primary]
 >
 > To learn more about the basic cost (resource price) of an app launched with AI Deploy, please refer to this [documentation](/pages/platform/ai/deploy_guide_06_billing_concept).
-> 
+>
 > Please refer to the [OVHcloud Public Cloud website](https://www.ovhcloud.com/en-gb/public-cloud/prices/) for all information about resources and partners models prices.
 >
 
