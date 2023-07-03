@@ -1,6 +1,6 @@
 ---
-title: How to log to the OVHcloud Control Panel using IAM
-excerpt: "List the minimum rights required to log to the OVHcloud Control Panel"
+title: How to log in to the OVHcloud Control Panel using IAM
+excerpt: "Find out how to grant the minimum rights required to log to the OVHcloud Control Panel"
 updated: 2023-07-03
 ---
 
@@ -11,38 +11,38 @@ updated: 2023-07-03
 
 ## Objective
 
-This guide will explain how to provide a user with the minimum rights to allow her/him to log in to the OVHcloud Control Panel.
+This guide explains how to provide a user with the minimum rights to allow her/him to log in to the OVHcloud Control Panel.
 
 ## Requirements
 
-- An [OVHcloud account](/pages/account/customer/ovhcloud-account-creation).
-- Knowing [how to manage account users](/pages/account/customer/ovhcloud-users-management).
-- Knowing [how to set-up policies for IAM](/pages/account/iam-policies-ui)
+- An [OVHcloud account](/pages/account/customer/ovhcloud-account-creation)
+- Knowing [how to manage account users](/pages/account/customer/ovhcloud-users-management)
+- Knowing [how to set up policies for IAM](/pages/account/iam-policies-ui)
 
 ## Instructions
 
-To be able to log in to the OVHcloud Control Panel, a user should have at least this minimum set of rights on the account resource :
+To be able to log in to the OVHcloud Control Panel, a user should have at least this minimum set of rights on the account resource:
 
 - account:apiovh:me/get
 - account:apiovh:me/supportLevel/get
 - account:apiovh:me/certificates/get
 - account:apiovh:me/tag/get
 
-With these rights, a user will be able to log in to the OVHcloud Control Panel. Though this user will not be able to perform any actions inside the Control Panel if you don't grant her/him other rights through IAM.
+With these rights, a user will be able to log in to the OVHcloud Control Panel. To be able to perform any actions inside the Control Panel however, additional rights have to be assigned through IAM.
 
 ### Using UI
 
-Using the UI, you can set-up a policy with the following configuration :
+Using the UI, you can set up a policy with the following configuration:
 
-- Add a resourceType "My account"
-- Add your account as a resource
-- Add the 4 rights listed above as an action
+- Add a `resourceType` "My account".
+- Add your account as a resource.
+- Add the 4 rights listed above as an action.
 
 You can now link your users to this policy to give them the right to log in to the OVHcloud Control Panel.
 
 ### Using API
 
-Using the API, you can set-up a following policy exemple :
+Using the API, you can set up a policy according to the following example:
 
 ```json
 {
