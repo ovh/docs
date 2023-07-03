@@ -10,7 +10,7 @@ A **domain transfer** refers to the process of moving a domain name from one reg
 
 In order to prevent unauthorised domain transfers, domain names are usually locked, indicated by the status *clientTransferProhibited*. This protection must be lifted in the OVHcloud Control Panel before starting a transfer.
 
-**This guide explains hot to prepare your domain name for an outgoing transfer.**
+**This guide explains how to prepare your domain name for an outgoing transfer.**
 
 > [!warning]
 >
