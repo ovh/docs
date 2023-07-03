@@ -65,12 +65,12 @@ Si un message apparaît et vous indique que la zone DNS ne peut pas être créé
 
 Dès que la vérification aboutit, choisissez d'activer ou non les entrées minimales pour la zone DNS que vous allez créer. Ce choix n'est pas définitif puisque vous pourrez toujours [éditer les enregistrements de la zone DNS](/pages/web/domains/dns_zone_edit) par la suite.
 
+![dnszonecreate](images/dns-zone-create-step2.png){.thumbnail}
+
 |Activer les entrées minimales ?|Détails|
 |---|---|
-|Oui|Sélectionnez ce choix si vous souhaitez personnaliser vous-même la zone DNS par la suite.|
-|Non|Sélectionnez ce choix si vous prévoyez d'utiliser des services OVHcloud comme un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}, la zone étant préconfigurée à cet effet.|
-
-![dnszonecreate](images/dns-zone-create-step2.png){.thumbnail}
+|Oui|Sélectionnez ce choix si vous souhaitez personnaliser vous-même la zone DNS par la suite.</br>![minimal-dns-entries](images/minimal.png){.thumbnail}|
+|Non|Sélectionnez ce choix si vous prévoyez d'utiliser des services OVHcloud comme un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}, la zone étant préconfigurée à cet effet.</br>![no-minimal-dns-entries](images/no_minimal.png){.thumbnail}|
 
 Une fois votre choix effectué, poursuivez les étapes jusqu'à la création de la zone DNS.
 
