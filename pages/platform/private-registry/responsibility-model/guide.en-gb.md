@@ -52,7 +52,7 @@ For your information, a **Service** is considered as a Public Cloud Databases se
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Deploy workloads using his images| RA |  |
-| Modify templates, helm charts, docketfile, urls for images' names, image dockers, etc . | RA |  |
+| Modify templates, helm charts, dockerfile, urls for images' names, image dockers, etc . | RA |  |
 
 ### 3. Service usage
 
