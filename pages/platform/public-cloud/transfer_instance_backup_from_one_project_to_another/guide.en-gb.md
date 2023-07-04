@@ -32,7 +32,7 @@ Before following these steps, it is recommended that you first complete this gui
 
 You will also need the following:
 
-* a [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/){.external} in your OVHcloud account
+* a [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
 * administrative (root) access to your instance/operating system via SSH
 
 > [!primary]
