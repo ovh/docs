@@ -235,7 +235,7 @@ To learn more about the basic cost of an app launched with AI Deploy, please ref
 
 #### Lettria model licenses price
 
-The second step consists in calculating the cost of one of the Lettria partner service according to the chosen resource.
+The second step consists in calculating the cost of one of the Lettria partners services according to the chosen resource.
 
 ```console
 Lettria model licensing price = (nb app) x (nb resources) x (nb replicas) x [ (Lettria model licensing unit price per hour for specified resource type) x (nb hour) ]
