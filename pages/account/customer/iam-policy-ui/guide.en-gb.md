@@ -13,42 +13,42 @@ updated: 2023-07-03
 
 This guide will explain how to provide specific access rights to users of an OVHcloud account.
 
-The access management of OVHcloud is based on a "policy" management system. It is possible to write different "policies" that give users access to specific features on the products linked to an OVHcloud account.
+The access management of OVHcloud is based on a policy management system. It is possible to write different policies that give users access to specific features on the products linked to an OVHcloud account.
 
-In details, a policy contains:
+In detail, a policy contains:
 
 - One or more **identities** targeted by this policy. 
-    - It can be account IDs, users or user groups (like the ones used in [Federation](/pages/account/customer/ovhcloud-account-connect-saml-adfs) - others guides are available). 
+    - It can be account IDs, users or user groups (like the ones used in [Federation](/pages/account/customer/ovhcloud-account-connect-saml-adfs) - other SSO guides are available). 
 - One or more **resources** impacted by this policy. 
     - A resource is an OVHcloud product that will be impacted by this policy (a domain name, a Nutanix server, a Load Balancer, etc.).
-- One or more **actions** allowed or excepted by this policy. 
-    - Actions are the specific rights affected by this policy (reboot the server, create an email account, terminate a product, etc.)
+- One or more **actions** allowed or excepted by this policy.
+    - Actions are the specific rights affected by this policy (reboot a server, create an email account, cancel a subscription, etc.)
+ 
+For example, we can create a policy to give to a user called John, for a VPS, access to the action "reboot".
 
-For instance, we can create a policy to give to a user called John, for a VPS, access to the action "reboot".
-
-**This guide explains in details how these policies can be declared using the OVHcloud API, and how to list the identities, resources and actions available for them.**
+**This guide explains in detail how these policies can be declared using the OVHcloud API, and how to list the identities, resources and actions available for them.**
 
 ![IAM Policies](images/iam_policies.png){.thumbnail}
 
 ## Requirements
 
-- An [OVHcloud account](/pages/account/customer/ovhcloud-account-creation).
-- Knowing [how to manage account users](/pages/account/customer/ovhcloud-users-management).
-- One or more OVHcloud products linked to this OVHcloud account (Load Balancer, domain name, VPS, etc.).
+- An [OVHcloud account](/pages/account/customer/ovhcloud-account-creation)
+- Knowing [how to manage account users](/pages/account/customer/ovhcloud-users-management)
+- One or more OVHcloud products linked to this OVHcloud account (Load Balancer, domain name, VPS, etc.)
 
 ## Instructions
 
 ### Accessing the IAM menu
 
-Click your name in the top-right corner, then on your name again on the panel.
+Click your account name in the top-right corner, then on your name again in the sidebar.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_01.png){.thumbnail}
 
-You can access to the IAM menu via the dedicated entry on your account management.
+You can access the IAM menu via the dedicated entry in your customer account management.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_02.png){.thumbnail}
 
-The menu will give you the list of all the current policies created on your account
+The menu will give you the list of all the current policies created on your account.
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
@@ -62,36 +62,36 @@ Each policy is identified by its name, the number of identities linked to it, an
 
 ### Managing policies
 
-#### Create a policy
+#### Creating a policy
 
 Click the `Create a policy`{.action} button.
 
-The following form will be displayed :
+The following form will be displayed:
 
 ![Create a policy](images/create_a_policy_01.png){.thumbnail}
 
-- **Name of the policy** (mandatory): This is the name that will appear on the interfaces. The name should be unique and cannot contain any space.
-- **Product type**: Select the types of product you want to scope the policy to. One or more product types can be selected on the same policy
-- **Resources**: Select the list of resources or of resources groups scoped by the policy. The resources available are filtered by the product type selected beforehand.
+- **Name of the policy** (mandatory): This is the name that will appear in the interfaces. The name should be unique and must not contain any spaces.
+- **Product type**: Select the types of product to define the scope of the policy. One or more product types can be included in the same policy.
+- **Resources**: Add resources or resource groups to be covered by the policy. The resources available are filtered by the product type selected beforehand.
 - **Actions**.
 
-There are 3 differents ways to add actions :
+There are 3 different ways to add actions:
 
-- Activating the `Enable all the actions`{.action} option.
+- Activating the `Enable all the actions`{.action} option
 
 ![Create a policy](images/create_a_policy_02.png){.thumbnail}
 
-When activating this option, you allow all actions related to the selected products. This includes all existing actions, but will include also actions that will be added in the future for these products categories.
+When activating this option, you allow all actions related to the selected products. This includes all existing actions as well as actions added in the future for these products categories.
 
 - Adding actions manually
 
-If you know the action name, you can add it manually
+If you know the action name, you can add it manually.
 
 ![Create a policy](images/create_a_policy_03.png){.thumbnail}
 
 You can use a wildcard at the beginning or at the end of the action name with `*`.
 
-For example, adding `vps:apiovh:ips/*` will grant the following rights :
+For example, adding `vps:apiovh:ips/*` will grant the following rights:
 
 vps:apiovh:ips/edit
 vps:apiovh:ips/delete
@@ -103,31 +103,31 @@ Finally, you can select actions from the list.
 
 ![Create a policy](images/create_a_policy_04.png){.thumbnail}
 
-Actions are categorized by resource type and in 5 categories :
+The available actions depend on the resource type and belong to one of five categories:
 
-- **Read**: list and show existing information of a product
-- **Create**: action that allows to create anything on a product
-- **Delete**: action that allows to delete existing thing on a product
-- **Edit**: action to change something already existing on a product
-- **Operate**: apply changes over the infrastructure related to the product
+- **Read**: List products and show information about a product.
+- **Create**: Action that allows to create something on a product.
+- **Delete**: Action that allows to delete something on a product.
+- **Edit**: Action to change something existing on a product.
+- **Operate**: Apply changes over the infrastructure related to the product.
 
-A search field is available to help identifying a specific action within the list.
+A search field is available to help identify a specific action on the list.
 
-#### Edit a policy
+#### Editing a policy
 
 To edit an existing policy, click the `...`{.action} button to the right of the policy and click `Edit the policy`{.action}.
 
 ![Edit a policy](images/editing_a_policy.png){.thumbnail}
 
-Then you ca change the scope of the policy.
+Then you can change the scope of the policy.
 
-#### Delete a policy
+#### Deleting a policy
 
 To delete an existing policy, click the `...`{.action} button to the right of the policy and click `Delete the policy`{.action}.
 
-A pop-up window will ask you for confirmation of deletion.
+A popup window will ask you to confirm the deletion.
 
-### Link a identity to a policy
+### Linking an identity to a policy
 
 To link an identity to a policy, click the `...`{.action} button to the right of the policy and click `Manage the identities`{.action}.
 
@@ -141,37 +141,37 @@ This will allow you to add and delete the users or the groups to whom the policy
 
 The identities available for policies are managed via the `User management`{.action} tab, in the `My account`{.action} menu.
 
-The identity tab on the IAM menu will redirect you to the this menu.
+The `Identities`{.action} tab on the IAM menu will redirect you the this menu.
 
 Details about user management are available in the [dedicated documentation](/pages/account/customer/ovhcloud-users-management).
 
-### Managing Resource groups
+### Managing resource groups
 
-Policies can target resource groups instead of resources. These resource groups can regroup resources from different products, e.g. for testing environment purposes.
+Policies can target resource groups instead of resources. These resource groups can assemble resources from different products, for example to set up a test environment.
 
-#### Create a resource group
+#### Creating a resource group
 
-To create a resource group, access the dedicated tab on the IAM menu:
+To create a resource group, access the dedicated tab of the IAM menu:
 
 ![Resource Group](images/resource_groups.png){.thumbnail}
 
-Click `Create a resource group`{.action}.
+Click on `Create a resource group`{.action}.
 
 ![Resource Group](images/resource_groups_form.png){.thumbnail}
 
-- **Name of the resource group**: This is the name that will appear on the interfaces. The name should be unique and cannot contain any space.
+- **Name of the resource group**: This is the name that will appear in the interfaces. The name should be unique and must not contain any spaces.
 - **Product type**: The list of product types concerned by this resource group.
 - **Resources**: The list of resources the group will contain.
 
-#### Edit a resource group
+#### Editing a resource group
 
-To edit a resource group, click its name from the list.
+To edit a resource group, click on its name in the list.
 
-#### Delete a resource group
+#### Deleting a resource group
 
 To delete an existing resource group, click the `...`{.action} button to the right of the group and click `Delete the resource group`{.action}.
 
-A pop-up window will ask you for confirmation of deletion.
+A popup window will ask you to confirm the deletion.
 
 ## Go further
 
