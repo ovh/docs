@@ -144,7 +144,7 @@ For your information, a **Service** is considered as a Public Cloud Databases se
 | --- | --- | --- |
 | Schedule reversibility operations | RA | I |
 | Choose fallback infrastructures | RA |  |
-| Use Docker to transfer image by image or replicate images by using Harbor registry | RA |  |
+| Use Docker to transfer image by image or to replicate images by using Harbor registry | RA |  |
 
 #### 4.2. Data recovery
 
