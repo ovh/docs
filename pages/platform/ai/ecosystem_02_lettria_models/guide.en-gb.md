@@ -35,7 +35,7 @@ The Sentiment Analysis API facilitates sentiment assessment in diverse content, 
 
 By attributing a numerical value to the sentiment of text, it provides an understanding of the overall positivity or negativity of the content.
 
-The API enables objective measurement of sentiment in large data sets, aiding informed decision-making and timely actions. It caters to needs such as brand reputation monitoring, market research and customer experience optimization, empowering you with actionable insights.
+The API enables objective measurement of sentiment in large data sets, helping informed decision-making and timely actions. It caters to needs such as brand reputation monitoring, market research and customer experience optimization, empowering you with actionable insights.
 
 Our API delivers sentiment values from -1 (signifying strong negative sentiment) to 1 (indicating strong positive sentiment), facilitating comprehensive understanding of sentiment intensity. This allows you to identify sentiment polarity and measure its degree in the text.
 
