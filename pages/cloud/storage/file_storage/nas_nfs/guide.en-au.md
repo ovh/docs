@@ -1,10 +1,8 @@
 ---
 title: Mounting HA-NAS via NFS share
 excerpt: Find out how to connect to your HA-NAS using an NFS share
-updated: 2022-12-06
+updated: 2022-07-04
 ---
-
-**Last updated 6th December 2022**
 
 ## Objective
 
@@ -59,13 +57,13 @@ ubuntu@server:~$ sudo apt install nfs-common
 Then use the following mount command:
 
 ```bash
-ubuntu@server:~$ sudo mount -t nfs IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
+ubuntu@server:~$ sudo mount -t nfs IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 **Example:**
 
 ```bash
-ubuntu@server:~$ sudo mount -t nfs 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
+ubuntu@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
 You can now access your mounted partition at the specified folder.
@@ -98,13 +96,13 @@ centos@server:~$ sudo systemctl restart rpcbind
 To mount your partition, use the following command:
 
 ```bash
-centos@server:~$ sudo mount -t nfs IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
+centos@server:~$ sudo mount -t nfs IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 **Example:**
 
 ```bash
-centos@server:~$ sudo mount -t nfs 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
+centos@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
 You can now access your mounted partition at the specified folder.
@@ -113,7 +111,7 @@ You can now access your mounted partition at the specified folder.
 >
 > In order to automate the mounting process for each time the server boots, add the following line to the file `/etc/fstab`:
 >
-> `IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
+> `IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
 >
 
 ### Fedora
@@ -127,13 +125,13 @@ fedora@server:~$ sudo dnf -y install nfs-utils
 Then use the following mount command:
 
 ```bash
-fedora@server:~$ sudo mount -t nfs IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER
+fedora@server:~$ sudo mount -t nfs IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 **Example:**
 
 ```bash
-fedora@server:~$ sudo mount -t nfs 10.1.1.1:zpool-123456/partition01 /mount/ha_nas
+fedora@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
 You can now access your mounted partition at the specified folder.
@@ -187,6 +185,49 @@ Once done, click on `Next`{.action}. Click on `Finish`{.action} in the last step
 Your HA-NAS partition is now mounted as a datastore.
 
 ![ESXI](images/esxi4.png){.thumbnail}
+
+### NFS3/NFS4
+
+The HA-NAS solution supports NFS3 and NFS4 protocols. We will explain how they are used.
+
+**What happens if the version is not specified during the NFS command?**
+
+In this case, your NFS client will try to connect directly to the latest version supported by it.<br>
+But you can also choose whether you prefer to use NFS3 or NFS4:
+
+To force the use of NFS3, you must use the following command:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o to=3 HA-NAS_IP:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Example:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o to=3 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+To force the use of NFS4, you must use the following command:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o to=4 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Example:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o to=4 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+You can also use the following command to determine which version is used by the current mount:
+
+```bash
+ubuntu@server:~$ nfsstat -m
+```
+
+In the return, the parameter `to=3` or `to=4` tells you which protocol is used.
+
+Command usage will be similar for CentOS and Fedora.
 
 ## Go further
 

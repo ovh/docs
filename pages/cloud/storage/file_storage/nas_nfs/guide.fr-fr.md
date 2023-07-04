@@ -1,7 +1,7 @@
 ---
 title: Montage d'un NAS-HA via partage NFS
 excerpt: Découvrez comment vous connecter à votre NAS-HA en utilisant un partage NFS
-updated: 2023-07-03
+updated: 2023-07-04
 ---
 
 ## Objectif
