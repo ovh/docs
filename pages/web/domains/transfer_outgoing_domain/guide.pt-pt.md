@@ -1,28 +1,26 @@
 ---
-title: Transferir um domínio para outro agente de registo
-excerpt: Saiba como transferir um domínio da OVHcloud para o agente de registo da sua escolha
-updated: 2023-03-10
+title: "Transferir um domínio para outro agente de registo"
+excerpt: "Saiba como transferir um domínio da OVHcloud para o agente de registo da sua escolha"
+updated: 2023-06-28
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 10/03/2023**
-
 ## Objetivo
 
-**Transferência de domínio** refere-se à transferência de um domínio de um agente de registo para outro. Por exemplo, se encomendou um domínio para o nosso website, a OVHcloud é o seu agente de registo atual. O novo agente registador deve iniciar uma transferência de domínio para fora.
+Um **Transferência de domínio** refere-se à transferência de um domínio de um agente de registo para outro. Por exemplo, se encomendou um domínio para o nosso website, a OVHcloud é o seu agente de registo atual. O novo agente registador deve iniciar uma transferência de domínio para fora.
 
-De modo a impedir as transferências de domínio não autorizadas, os nomes de domínio são geralmente bloqueados por um estatuto de *clientTransferProhibited*. Esta proteção deve ser levantada na Área de Cliente OVHcloud antes de começar qualquer transferência.
+De modo a impedir as transferências de domínio não autorizadas, os nomes de domínio são geralmente bloqueados por um estado *clientTransferProhibited*. Esta proteção deve ser levantada na Área de Cliente OVHcloud antes de começar qualquer transferência.
 
-**Este manual explica-lhe como preparar o seu domínio para uma transferência de saída.**
+**Descubra como preparar o seu nome de domínio para uma transferência de saída.**
 
 > [!warning]
 >
 > Se o domínio em questão deve permanecer registado na OVHcloud mas alterado nas suas modalidades de gestão ou de propriedade, uma transferência de domínio não é o procedimento adequado.
 >
-> Para transferir a gestão do seu domínio para outra conta de cliente OVHcloud, o método adequado é uma alteração de contactos. O procedimento está descrito no [presente guia](/pages/account/customer/managing_contacts).
+> Para transferir a gestão do seu domínio para outra conta de cliente OVHcloud, o método adequado é uma **alteração de contactos**. O procedimento está descrito no [presente guia](/pages/account/customer/managing_contacts).
 >
 > Se também tem de mudar o **proprietário** do nome de domínio, deve fazê-lo **antes** de alterar os contactos do nome de domínio. Para isso, siga as instruções descritas na nossa documentação sobre a [alteração de proprietário dos nomes de domínio](/pages/web/domains/trade_domain).
 >
@@ -32,7 +30,7 @@ De modo a impedir as transferências de domínio não autorizadas, os nomes de d
 - Ter um [domínio](https://www.ovhcloud.com/pt/domains/) registado na OVHcloud
 - Ter o direito de solicitar a transferência do nome de domínio: o proprietário e/ou os administradores devem ser informados do pedido de transferência.
 - Ter acesso à secção de gestão do domínio na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
-- O registo do nome de domínio em questão data de há pelo menos 60 dias e não foi transferido ou trocado (ou seja, a mudança de proprietário) durante os últimos 60 dias
+- O registo do nome de domínio em questão data de há pelo menos 60 dias **e** não foi transferido ou trocado (ou seja, a mudança de proprietário) durante os últimos 60 dias
 
 > [!primary]
 >
@@ -65,6 +63,17 @@ No separador `Informações gerais`{.action}, encontrará o cursor `Proteção c
 
 Clique no cursor e confirme, na nova janela, que pretende eliminar esta proteção. Aguarde alguns minutos para que o estado passe para `Desativado`{.action}.
 
+> [!primary]
+>
+> Se encontra a mensagem "**Ocorreu um erro aquando do pedido de desativação da proteção do domínio (User not granted for this request)**", isto significa que não tem os direitos suficientes para desbloquear o domínio. 
+>
+> Além disso, se encontrar a mensagem: "**AUTH/INFO code : Authcode is not managed by OVHcloud, contact the registry to claim it**" significa que o código de transferência do seu nome de domínio não pode ser recuperado através do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).  
+> 
+> Em ambos os casos, verifique se é o contacto **administrador** do domínio através do nosso guia sobre a [gestão dos contactos](/pages/account/customer/managing_contacts) e verifique se a extensão do seu domínio permite um desbloqueio a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+> 
+> De facto, alguns *códigos de transferência* são geridos diretamente pelo *registry* da extensão do seu nome de domínio. Um *registry* é uma organização que gere o conjunto dos domínios para uma determinada extensão. Por exemplo, a **AFNIC** gere o conjunto dos nomes de domínio com a extensão "*.fr*". Se for este o caso, deverá contactar diretamente o *registry* que gere a extensão do seu nome de domínio a fim de recuperar o *código de transferência*.
+>
+
 ![desativação proteção](images/outgoing-transfer-step2.png){.thumbnail}
 
 > [!primary]
@@ -79,7 +88,7 @@ Clique no cursor e confirme, na nova janela, que pretende eliminar esta proteç�
 > Observe que sempre é possível desbloquear e recuperar o código de transferência do seu nome de domínio após a expiração. De acordo com as regras de registro, um domínio em [redemptionPeriod](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) pode precisar ser restaurado para ser transferido. Entre em contato com seu novo registrador para obter os detalhes da transferência.
 >
 
-Uma vez levantada a proteção contra a transferência, pode recuperar o código de transferência do seu nome de domínio. Para isso, ainda no separador `Informações gerais`{.action}, clique em `AUTH/INFO`{.action} situado ao lado de `Proteção contra a transferência`. Não hesite em atualizar a página caso seja necessário.
+Uma vez levantada a proteção contra a transferência, pode recuperar o código de transferência do seu nome de domínio. Para isso, ainda no separador `Informações gerais`{.action}, clique em `AUTH/INFO`{.action} situado ao lado de `Proteção contra a transferência`{.action}. Não hesite em atualizar a página caso seja necessário.
 
 Aparecerá uma janela com o seu código AUTH/INFO (também conhecido como código de transferência, palavra-passe de domínio, AUTH-CODE ou EPP-Code).
 
