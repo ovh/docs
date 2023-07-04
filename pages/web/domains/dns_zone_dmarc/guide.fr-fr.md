@@ -4,31 +4,9 @@ excerpt: Découvrez comment fonctionne DMARC et comment le mettre en place pour 
 updated: 2023-06-30
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #fff; 
-   color: #000;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.90em;
-   color: #000;
- }
- .small {
-     font-size: 0.90em;
- }
-</style>
-
 ## Objectif
 
-L'enregistrement DMARC (**D**omain-based **M**essage **A**uthentication, **R**eporting, and **C**onformance) est un mécanisme de sécurité e-mail. Il s'appuie sur le résultat des vérifications [SPF](/pages/web/domains/dns_zone_spf) et [DKIM](/pages/web/domains/dns_zone_dkim).
+L'enregistrement **D**omain-based **M**essage **A**uthentication, **R**eporting, and **C**onformance (DMARC) est un mécanisme de sécurité e-mail. Il s'appuie sur le résultat des vérifications [SPF](/pages/web/domains/dns_zone_spf) et [DKIM](/pages/web/domains/dns_zone_dkim).
 
 **Découvrez comment fonctionne DMARC et comment le mettre en place pour votre service e-mail.**
 
@@ -60,7 +38,7 @@ Après lecture des instructions de l'enregistrement DMARC du nom de domaine **my
 
 Vous devez d'abord activer le DMARC sur le service e-mail associé à votre nom de domaine.
 
-Pour configurer la zone DNS du nom de domaine de votre service e-mail, rendez-vous dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, dans la section `Noms de domaine`{.action} à gauche.
+Pour configurer la zone DNS du nom de domaine de votre service e-mail, rendez-vous dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans la section `Noms de domaine`{.action} à gauche.
 
 Il y a deux façons de configurer le DMARC dans votre zone DNS OVHcloud :
 
@@ -70,7 +48,7 @@ Il y a deux façons de configurer le DMARC dans votre zone DNS OVHcloud :
 
 #### Enregistrement DMARC <a name="dmarc-record"></a>
 
-Vous pouvez ajouter l'enregistrement DMARC à votre zone DNS depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
+Vous pouvez ajouter l'enregistrement DMARC à votre zone DNS depuis l'espace client OVHcloud. Pour cela, , connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, sélectionnez, dans la section `Noms de domaine`{.action}, le nom de domaine concerné puis cliquez sur l'onglet `Zone DNS`{.action} pour accéder à votre zone DNS.
 
 Une fois votre zone DNS affichée, cliquez sur le bouton `Ajouter une entrée`{.action} puis sur « Champs mails » `DMARC`{.action}.
 
@@ -97,7 +75,7 @@ Vous trouverez ci-dessous le descriptif exhaustif des balises utilisées pour **
 >
 > Dans le cadre des mécanismes d'authentification SPF et DKIM, l'**alignement** fait référence à la correspondance entre le nom de domaine (et/ou la signature du domaine) utilisé lors de l'envoi, avec le nom de domaine inscrit dans ces mécanismes.
 >
-> **exemple** 
+> **Exemples** 
 >
 > - **Aligné**: lorsque l'adresse *john.smith@mydomain.ovh* transmet un message depuis le service e-mail attaché au nom de domaine *mydomain.ovh* et que les mécanismes d'authentification SPF et DKIM ont été configurés, nous obtiendrons un résultat aligné.
 > - **Partiellement aligné**: lorsque l'adresse *john.smith@subdomain.mydomain.ovh* transmet un message depuis le service e-mail attaché au nom de domaine *mydomain.ovh*, mais que les mécanismes d'authentification SPF et DKIM ont été configurés uniquement sur le domaine principal, à savoir *mydomain.ovh*, nous obitiendrons un résultat partiellement aligné.
@@ -107,7 +85,7 @@ Vous trouverez ci-dessous le descriptif exhaustif des balises utilisées pour **
 
 #### Enregistrement TXT <a name="txt-record"></a>
 
-Vous pouvez ajouter l'enregistrement TXT à votre zone DNS depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
+Vous pouvez ajouter l'enregistrement TXT à votre zone DNS depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
 
 Une fois votre zone DNS affichée, cliquez sur le bouton `Ajouter une entrée`{.action} puis sur « Champs étendus » `TXT`{.action}.
 
@@ -131,7 +109,7 @@ Vous trouverez ci-dessous la liste des balises utilisées pour créer un **enreg
 
 ![dmarc](images/dns-dmarc-02.png){.thumbnail}
 
-#### Exemples d'enregistrement TXT<a name="txt-record"></a>
+#### Exemples d'enregistrement <a name="record-example"></a>
 
 ##### Premier exemple
 
@@ -177,4 +155,8 @@ Vous obtiendrez le résultat suivant :
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
