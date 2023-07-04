@@ -67,77 +67,67 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Gérer l'accès réseau au vCenter | RA | I |
-| Gérer les accès selon les besoins à l'infrastructure de service managée | I | RA |
-| Exploiter l’ensemble des instances virtuelles déployées dans le service | RA | I |
-| Décider d’ajouter / supprimer des ressources au datacentre virtuel | RA | I |
-| Réaliser l’ajout / suppression des ressources au datacentre virtuel | I | RA |
-| Ajouter / supprimer des ressources aux VMs | RA |  |
-| Gérer l'accessibilité et le bon fonctionnement du service VMware Tanzu installé | RA |  |
-| Gérer l'accessibilité et le bon fonctionnement du SI installé sur les VMs | RA |  |
-| Gérer les risques liés au SI installé | RA |  |
-| Déployer une politique de backups sur le SI installé | RA | I |
+| Gérer l’accessibilité et le bon fonctionnement du service Kubernetes Managé |  | RA |
+| Gérer l’accessibilité et le bon fonctionnement du SI installé | RA |  |
+| Déployer une politique de backups sur les données traitées par le SI installé | RA |   |
 
 ##### **3.1.2. Gestion des accès**
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Gérer des accès à l'espace client OVHcloud (Control Plane) | RA | I |
-| Gérer les accès physiques et logiques des équipes OVHcloud aux infrastructures (vCenter) | I | RA |
-| Gérer les accès à l’interface de gestion de la virtualisation | RA | I |
-| Gérer les accès et la politique de sécurité des utilisateurs du SI | RA |  |
+| Gérer les accès physiques et logiques des équipes OVHcloud aux infrastructures |  | RA |
+| Gérer l’accès aux ressources gérées par le service Kubernetes Managé | RA |  |
+
 
 ##### **3.1.3. Monitoring**
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Surveiller le bon fonctionnement des dispositifs physiques (utilités) en support de l'infrastructure as a service | I | RA |
-| Suivre les performances des ressources physiques | RA | R |
-| Suivre les performances des VMs et du service TKG | RA | I |
-| Traiter et acquitter les alarmes provenant des dispositifs managés de l’Infrastructure as a Service (vCenter) | I | RA |
-| Conserver les logs générés par l’Infrastructure as a Service (vCenter) | RA | RA |
-| Conserver les logs générés par l'offre VMware Tanzu choisie | RA |  |
-| Conserver les logs du système d’information hébergé sur l’Infrastructure as a Service | RA |  |
+| Suivre les performances du service Kubernetes Managé | I | RA |
+| Adapter les ressources allouées au control plane kubenetes en fonction de l’infrastructure managée par kubernetes |  | RA |
+| Ajuster l’infrastructure managée par kubernetes en fonction des besoins en ressources des logiciels installés | RA | I |
+| Surveiller le système d’information déployé via le service Kubernetes Managé | RA |  |
+| Conserver les logs du SI déployé | RA |  |
+| Vérifier la bonne application des politiques de backup | RA |  |
 
 ##### **3.1.4. Stockage**
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Créer, modifier, contrôler, restaurer, supprimer les jobs de backups via la solution choisie par le client | RA |  |
-| Chiffrer les sauvegardes de données suite à la souscription à l’option Veeam Managed Backup | AI | RI |
-| Chiffrer les VMs en fonction des besoins via la solution vNKP | RA |  |
-| Gérer le contenu hébergé sur les infrastructures | RA |  |
-| Gérer la continuité et la durabilité des données | RA |  |
-| Réaliser la maintenance des dispositifs de stockage et de sauvegarde fournis par OVHcloud | C | RA |
+| Chiffrer les données sensibles du SI dans le cluster kubernetes| RA |  |
+
 
 ##### **3.1.5. Connectivité**
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Gérer le fonctionnement des systèmes automatiques de gestion du réseau (architecture, mise en œuvre, maintenance logicielle et matérielle pour les réseaux publics et privés déployés sur NSX Controller et NSX Edges) | I | RA |
-| Mettre en place une architecture réseau adaptée aux besoins | RA | I |
-| Gérer le plan d’adressage IP | RA | I |
+| Filtrer les accès administrateur et utilisateur au service Managed Kubernetes | RA | I |
+| Router les paquets à l’intérieur du projet géré par Managed Kubernetes | RA |  |
+| Appliquer les mesures de sécurité adaptées aux flux internes et externes du SI géré | RA |  |
+| Appliquer les mesures de sécurité adaptées aux flux à destination du control plane du service Managed Kubernetes (routage FQDN, certificats TLS) |  | RA |
 
 ##### **3.1.6. Gestion**
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Tenir un inventaire des dispositifs fournis par OVHcloud | I | RA |
-| Tenir un inventaire complet de l’ensemble des dispositifs | RA |  |
-| Gérer la sécurité des infrastructures de gestion (API, Control Plane) |  | RA |
-| Gérer la sécurité des VMs | RA | I |
-| Gérer la sécurité des Softwares et Middlewares installés sur les VMs | RA | I |
-| Gérer la sécurité des données déposées par le Client sur l’IaaS | RA | I |
-| Gérer la sécurité physique des équipements et infrastructures hébergés chez OVHcloud | I | RA |
-| Gérer la maintenance de la solution VMware managée et ses extensions | I | RA |
-| Gérer la maintenance de la version TKG | RA |   |
+| Fournir l’inventaire des infrastructures et services mis en œuvre dans le projet Managed Kubernetes | I | RA |
+| Gérer les risques relatifs à l’infrastructure mise à disposition dans le cadre de Managed Kubernetes |  | RA |
+| Gérer les risques relatifs au SI hébergé géré par le service Managed Kubernetes | RA |  |
+| Forcer les mises à niveau des versions du service kubernetes qui ne sont plus maintenues par OVHcloud | I | RA |
+| Mise à disposition des patchs et montées de version du service managée kubernetes pour installation | I | RA |
+| Appliquer les mises à jour nécessaires en fonction de la politique de mise à jour définie | RA |  |
+| Maintenir en conditions opérationnelles et de sécurité le SI géré | RA |  |
+
 
 ##### **3.1.7. Continuité d'activité**
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Gérer les systèmes de gestion automatiques de l’infrastructure mise à disposition | I | RA |
-| Maintenir un plan de continuité d’activité et de reprise d’activité pour le SI hébergé | RA | CI |
+| Déployer la politique de continuité d’activité sur le service kubernetes managé |  | RA |
+| Réaliser des tests périodiques de restauration du service Managed Kubernetes |  | RA |
+| Mettre en place le plan de continuité d'activité du SI installé | RA |  |
+| Réaliser des tests périodiques de restauration du SI géré | RA |  |
 
 #### 3.2. Gestion des évènements
 
