@@ -1,9 +1,6 @@
 ---
 title: AI Partners Ecosystem - Lettria - Models features, capabilities and billing
-slug: ecosystem/lettria-billing-features
 excerpt: Learn how Lettria models and billing work
-section: AI Partners Ecosystem
-order: 01
 updated: 2023-07-10
 ---
 
