@@ -120,7 +120,7 @@ Nachdem Sie die Informationen erhalten haben **Ändern Sie die DNS-Server Ihrer 
 > Zur Erinnerung: Überprüfen Sie, bevor Sie die bei Ihrer Domain angegebenen **DNS Server** ändern, ob die Konfiguration der neuen DNS Zone Ihren Erwartungen entspricht.
 >
 
-## Weiterführende Informationen <a name="go-further"></a>
+## Weiterführende Informationen
 
 [OVHcloud DNS-Zone bearbeiten](/pages/web/domains/dns_zone_edit)
 
