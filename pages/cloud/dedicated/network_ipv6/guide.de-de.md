@@ -38,7 +38,7 @@ Wenn Sie Ihren Server mithilfe eines von OVHcloud bereitgestellten Linux-Betrieb
 
 Wenn wir beispielsweise Ihrem Server den IPv6-Bereich `2607:5300:xxxx:xxxx::/64` zugewiesen haben, können Sie folgende Adresse als primäre IPv6 Ihres Servers verwenden: `2607:5300:xxxx:xxxx::1/64`.
 
-Wenn Sie mehrere IPv6-Adressen auf Ihrem Server konfigurieren möchten (oder wenn Sie diese auf einer VM verwenden möchten), müssen Sie jeweils eine Additional IP mit vMAC einrichten. Andernfalls kann IPv6 nicht von unseren Routern / Switches geroutet werden. Beachten Sie, dass diese Einschränkung nicht für Server der Reihen High Grade und Scale gilt. Für die auf diesen Servern erstellten virtuellen Maschinen können IPv6-Adressen konfiguriert werden, ohne dass vMAC-Adressen verwendet werden müssen.
+Wenn Sie mehrere IPv6-Adressen auf einer VM verwenden möchten, müssen Sie jeweils eine Additional IP mit vMAC einrichten. Andernfalls kann IPv6 nicht von unseren Routern / Switches geroutet werden. Beachten Sie, dass diese Einschränkung nicht für Server der Reihen High Grade und Scale gilt. Für die auf diesen Servern erstellten virtuellen Maschinen können IPv6-Adressen konfiguriert werden, ohne dass vMAC-Adressen verwendet werden müssen.
 
 ### Standardgateway (mit Ausnahme von High Grade und Scale Servern)
 

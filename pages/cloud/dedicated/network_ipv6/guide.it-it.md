@@ -38,7 +38,7 @@ Se per installare il tuo server utilizzi un template per il sistema operativo Li
 
 Ad esempio, se abbiamo assegnato al tuo server l'intervallo IPv6: `2607:5300:xxxx:xxxx::/64` è possibile utilizzare come IPv6 principale del tuo server l'IPv6: `2607:5300:xxxx:xxx::1/64`.
 
-Per configurare più indirizzi IPv6 sul tuo server (o per utilizzarlo su una VM), è necessario disporre di un Additional IP configurato con una vMAC. In caso contrario, l'IPv6 non potrà essere utilizzato dai nostri router/switch. Ti ricordiamo che questa restrizione non si applica ai server High Grade e Scale. Per le macchine virtuali create su questi server, gli indirizzi IPv6 possono essere utilizzati senza l'utilizzo di vMAC.
+Se si desidera configurare indirizzi IPv6 su una macchina virtuale, è necessario disporre di un Additional IP configurato con una vMAC. In caso contrario, l'IPv6 non potrà essere utilizzato dai nostri router/switch. Ti ricordiamo che questa restrizione non si applica ai server High Grade e Scale. Per le macchine virtuali create su questi server, gli indirizzi IPv6 possono essere utilizzati senza l'utilizzo di vMAC.
 
 ### Gateway predefinito (esclusi i server High Grade e Scale)
 
