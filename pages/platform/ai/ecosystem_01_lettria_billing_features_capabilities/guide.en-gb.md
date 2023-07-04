@@ -4,21 +4,20 @@ excerpt: Learn how Lettria models and billing work
 updated: 2023-07-10
 ---
 
-**Last updated 10th July, 2023.**
-
 ## Objective
 
-OVHcloud offers different Artificial Intelligence services through its AI Partners Ecosystem. You will benefit from a catalogue of **ready-to-use applications** provided by our partners which you will easily be able to deploy according to your needs through **AI Deploy**.
+OVHcloud offers different Artificial Intelligence services through its AI Partners Ecosystem. You will benefit from a catalogue of **ready-to-use applications** provided by our partners which you will be able to easily deploy according to your needs through **AI Deploy**.
 
-**Lettria is an OVHcloud partner that offers AI services dedicated to text. This guide will introduce Lettria models features, as well as cover how it works and associated billing.**
+**Lettria is an OVHcloud partner that offers AI services dedicated to text. This guide will introduce Lettria models features, as well as covering how it works and associated billing.**
 
 ## Introduction
 
-**Lettria** is a start-up specialized in **NLP** (Natural Language Processing). The platform enables all organizations, from start-ups to large corporations, to perform textual analysis on their data to make the best strategic decisions.
+**Lettria** is a start-up specialized in **NLP** (Natural Language Processing). The platform enables all organizations, from start-ups to large corporations, to perform textual analysis on their data to take the best strategic decisions.
 
 Lettria provides text understanding models that allow users to easily identify and extract key information from their text. This method relies on artificial intelligence and NLP techniques to understand the sentiment or emotions of a text.
 
 The uses are many:
+
 - Customer service automation
 - Social media monitoring
 - Content moderation
@@ -33,6 +32,7 @@ The Lettria models available at OVHcloud cover two NLP tasks: **sentiment analys
 Lettria gives you the possibility to analyze the sentiments of a text. The principle is to automatically classify textual data as **positive**, **negative** or **neutral** based on the underlying sentiment expressed in the text.
 
 Input example:
+
 ```console
 I love Lettria and OVHcloud!
 ```
@@ -55,6 +55,7 @@ Output example:
 Lettria allows you to extract emotion from text data. The goal is to automatically classify text data according to the emotions it conveys: **happiness**, **sadness**, **anger**, **fear**, ...
 
 Input example:
+
 ```console
 I love Lettria and OVHcloud!
 ```
@@ -95,10 +96,10 @@ To launch your Lettria app from the UI, you have to fill in some information:
 
 > [!warning]
 >
-> Please, be careful when choosing the image depending on the resource required.
+> Please be careful when choosing the image, depending on the required resources.
 >
 > For a `GPU` app, choose the Lettria image containing `gpu` in its tag, then choose one or more GPUs as resources.
-> Same principle of operation for CPU apps.
+> The same principle of operation also applies for CPU apps.
 >
 
 - **Resources** - *we advise you to use 1 GPU*
@@ -128,13 +129,13 @@ ovhai app run \
 
 #### Access to your Lettria apps
 
-Once the app is launched and in `RUNNING` status, you can copy the URL and access your app. Then, you will be redirected and you can interact with Lettria API.
+Once the app is launched and in `RUNNING` status, you can copy the URL and access your app. You will then be redirected and you can interact with the Lettria API.
 
 ![LettriaApi](images/lettria-api-doc.png){.thumbnail}
 
 ### Ask Lettria models
 
-Now, you can question the **Lettria models** about your text sentiments or emotions.
+You can now question the **Lettria models** about your text sentiments or emotions.
 
 > [!primary]
 >
@@ -147,8 +148,9 @@ Now, you can question the **Lettria models** about your text sentiments or emoti
 Now that your Lettria app is running with AI Deploy, you are ready for questioning the AI models.
 
 You can use the following example with the following parameters:
-- url of the app - *replace `<app_url>` by yours*
-- access token (since we are on restricted access) - *replace `<your_token_bearer>` by yours*
+
+- url of the app - *replace `<app_url>` with yours*
+- access token (since we are on restricted access) - *replace `<your_token_bearer>` with yours*
 - data format
 - data to process (text)
 
@@ -160,7 +162,7 @@ curl --request POST \
     --data '["Congratulations! You have successfully launched your Lettria app."]'
 ```
 
-Giving us:
+Result:
 
 ```console
 [{"type":"gratitude","confidence":0.936,"detail":{"gratitude":0.936,"admiration":0.921,"pride":0.861,"joy":0.701,"excitement":0.689,"amusement":0.306,"caring":0.244,"approval":0.239,"optimism":0.207,"relief":0.168,"neutral":0.154,"surprise":0.148,"realization":0.081,"curiosity":0.07,"love":0.06,"desire":0.04,"anger":0.04,"annoyance":0.035,"fear":0.019,"embarrassment":0.017,"disappointment":0.017,"disapproval":0.014,"confusion":0.014,"grief":0.013,"sadness":0.012,"disgust":0.011,"nervousness":0.005,"remorse":0.004}}]
@@ -209,13 +211,14 @@ The pricing of Lettria differs slightly from the classic AI Deploy offer. In ord
 
 **How to calculate the total cost of a Lettria app?**
 
-Total price is composed by two different parts:
-* `Resources price`
-* `Lettria model licencing price`
+The total price is composed of two different parts:
+
+- `Resources price`
+- `Lettria model licencing price`
 
 #### Resources price
 
-The first step consists in calculating the price of an AI Deploy app according to the computing resources chosen.
+The first step consists in calculating the price of an AI Deploy app according to the chosen computing resources.
 
 *Please keep in mind we bill per second although pricing is displayed per hour HT for a more user-friendly experience.*
 
@@ -240,7 +243,7 @@ Lettria model licensing price = (nb app) x (nb resources) x (nb replicas) x [ (L
 
 #### Total price
 
-To obtain the total cost of a Lettria app started with AI Deploy, add the two amounts from the previous calculations.
+To obtain the total cost of a Lettria app started with AI Deploy, add the two amounts from the previous calculations:
 
 ```console
 Total price = Resources price + Lettria model licencing price
@@ -259,7 +262,7 @@ Total price = Resources price + Lettria model licencing price
 
 #### Example 1: 1 GPU app with for 10 hours then deleted
 
-Deploy one Lettria app with AI Deploy, with 1 GPU and we keep it running for 10 hours then we **delete it**.
+We deploy one Lettria app with AI Deploy, with 1 GPU and we keep it running for 10 hours then we **delete it**.
 
 *You receive thousands of calls: it's included (no pay per call provided, you pay running compute).*
 
@@ -285,9 +288,10 @@ Deploy one Lettria app with 1 CPU, choose autoscaling configuration with 1 repli
 - scaling : auto-scaling, from 1 to 3 replicas
 - amount of calls : unlimited
 - duration: 5 hours with 1 replica running, then a peak with 1 hour at 3 replicas, then stopped and deleted.
-- lettria service: 2 x Lettria service for CPU usage (1,50€ /hour /cpu)
+- lettria service: 2 x Lettria services for CPU usage (1,50€ /hour /cpu)
 
 Price calculation for **compute** (it will vary over time due to auto-scaling):
+
 0,03€ (price /hour /cpu) x 2 (cpus) x 1 (replica) x 5 (hours) = `0,30€`
 +
 0,03€ (price /hour /cpu) x 2 (cpus) x 3 (replicas) x 1 (hour) = `0,18€`
@@ -295,6 +299,7 @@ Price calculation for **compute** (it will vary over time due to auto-scaling):
 Total for **compute** is `0,48€`.
 
 Price calculation for **Lettria service** (it will vary over time due to auto-scaling):
+
 1,50€ (lettria price /hour /cpu) x 2 (cpus) x 1 (replica) x 5 (hours) = `15,00€`
 +
 1,50€ (lettria price /hour /cpu) x 2 (cpus) x 3 (replicas) x 1 (hour) = `9,00€`

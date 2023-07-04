@@ -19,7 +19,7 @@ OVHcloud offers different Artificial Intelligence services through its AI Partne
 
 ## Introduction
 
-**Lettria** is a start-up specialized in **NLP** (Natural Language Processing). The platform enables all organizations, from start-ups to large corporations, to perform textual analysis on their data to make the best strategic decisions.
+**Lettria** is a start-up specialized in **NLP** (Natural Language Processing). The platform enables all organizations, from start-ups to large corporations, to perform textual analysis on their data to take the best strategic decisions.
 
 Lettria provides text understanding models that allow users to easily identify and extract key information from their text. This method relies on artificial intelligence and NLP techniques to understand the sentiment or emotions of a text.
 
@@ -35,17 +35,17 @@ The Sentiment Analysis API facilitates sentiment assessment in diverse content, 
 
 By attributing a numerical value to the sentiment of text, it provides an understanding of the overall positivity or negativity of the content.
 
-The API enables objective measurement of sentiment in large data sets, aiding informed decision-making and timely actions. It caters to needs such as brand reputation monitoring, market research, and customer experience optimization, empowering you with actionable insights.
+The API enables objective measurement of sentiment in large data sets, aiding informed decision-making and timely actions. It caters to needs such as brand reputation monitoring, market research and customer experience optimization, empowering you with actionable insights.
 
 Our API delivers sentiment values from -1 (signifying strong negative sentiment) to 1 (indicating strong positive sentiment), facilitating comprehensive understanding of sentiment intensity. This allows you to identify sentiment polarity and measure its degree in the text.
 
-The API's user-friendly design allows effortless integration into your applications, unlocking the capabilities of sentiment analysis. Enhance customer satisfaction, make data-driven decisions, and optimize business strategies with sentiment analysis. Discover and understand the true sentiment behind text, revolutionizing your audience engagement.
+The API's user-friendly design allows effortless integration into your applications, unlocking the capabilities of sentiment analysis. Enhance customer satisfaction, take data-driven decisions and optimize business strategies with sentiment analysis. Discover and understand the true sentiment behind text, revolutionizing your audience engagement.
 
 ### How sentiment analysis works?
 
-**Note**
-
-By reaching the root endpoint `/` of your API, you can access the full documentation.
+> [!primary]
+>
+> By reaching the root endpoint `/` of your API, you can access the full documentation.
 
 #### Sentiment
 
@@ -59,11 +59,11 @@ A value between -0.33 and 0.33 can be understood as neutral.
 
 This predicts sentiment in a list of documents. It takes a string as input and gives a JSON as output.
 
-**URL** : `/api/predict/`
+- **URL**: `/api/predict/`
 
-**Method** : `POST`
+- **Method**: `POST`
 
-**Payload**
+- **Payload**:
 
 ```json
 [
@@ -71,7 +71,7 @@ This predicts sentiment in a list of documents. It takes a string as input and g
 ]
 ```
 
-**Payload example**
+- **Payload example**:
 
 ```json
 [
@@ -87,9 +87,9 @@ This predicts sentiment in a list of documents. It takes a string as input and g
 
 #### Success Response
 
-**Code** : `200 OK`
+- **Code**: `200 OK`
 
-**Response content**
+- **Response content**:
 
 ```json
 [
@@ -100,7 +100,7 @@ This predicts sentiment in a list of documents. It takes a string as input and g
 ]
 ```
 
-**Example response**
+- **Example response**:
 
 For the input `The headphones broke after two weeks, not worth their price.`
 
@@ -121,7 +121,7 @@ A Gradio is available on `/demo` or `/gradio`.
 
 ### Calling the API in Python
 
-**Requirement**
+- **Requirement**:
 
 Install the requests package :
 
@@ -129,7 +129,7 @@ Install the requests package :
 pip install requests
 ```
 
-**Code**
+- **Code**:
 
 ```python
 import requests
@@ -150,6 +150,7 @@ payload = json.dumps([
 response = requests.post(url, json=payload, headers=headers)
 print(response.body())
 ```
+
 ## Lettria’s Emotion Analysis API
 
 Lettria's Emotion Analysis API enables efficient emotion detection from a variety of text types, including:
@@ -163,9 +164,9 @@ Utilizing Deep Learning technology, the API precisely identifies and categorizes
 
 The API uses algorithms to interpret human emotions from text, enabling the extraction of valuable insights to enrich your applications. It supports sentiment analysis behind customer reviews and social media content, brand reputation monitoring, market research sentiment analysis, and chatbot interaction optimization.
 
-The API's user-friendly design simplifies its integration into your applications, making it compatible with existing software, CRM systems, and various platforms. This allows for the extraction of real-time emotional insights for data-driven decision making.
+The API's user-friendly design simplifies its integration into your applications, making it compatible with existing softwares, CRM systems and various platforms. This allows for the extraction of real-time emotional insights for data-driven decision making.
 
-The Emotion Analysis API is an effective solution for businesses looking to enhance customer satisfaction, social media managers seeking public sentiment understanding, or developers aiming to improve user experiences.
+The Emotion Analysis API is an effective solution for businesses looking to enhance customer satisfaction, for social media managers seeking public sentiment understanding, or for developers aiming to improve user experiences.
 
 ### How emotion analysis works?
 
@@ -215,11 +216,11 @@ By reaching the root endpoint `/` of your API, you can access the full API docum
 
 This function predicts emotions in a list of documents. It takes a string as input and gives a JSON as output.
 
-**URL** : `/api/predict/`
+- **URL**: `/api/predict/`
 
-**Method** : `POST`
+- **Method**: `POST`
 
-**Payload**
+- **Payload**:
 
 ```json
 [
@@ -227,7 +228,7 @@ This function predicts emotions in a list of documents. It takes a string as inp
 ]
 ```
 
-**Payload example**
+- **Payload example**:
 
 ```json
 [
@@ -243,9 +244,9 @@ This function predicts emotions in a list of documents. It takes a string as inp
 
 #### Success Response
 
-**Code** : `200 OK`
+- **Code**: `200 OK`
 
-**Response content**
+- **Response content**:
 
 ```json
 [
@@ -257,7 +258,7 @@ This function predicts emotions in a list of documents. It takes a string as inp
 ]
 ```
 
-**Example response**
+- **Example response**:
 
 For the input `I love pizzas and I hate apples.`
 
@@ -306,18 +307,17 @@ A Gradio is available on `/demo` or `/gradio`.
 
 ![EmotionGradioDemo](images/lettria_emotion_demo.png){.thumbnail}
 
-
 ### Calling the API in Python
 
-**Requirement**
+- **Requirement**:
 
-Install the requests package :
+Install the requests package:
 
 ```console
 pip install requests
 ```
 
-**Code**
+- **Code**:
 
 ```python
 import requests
