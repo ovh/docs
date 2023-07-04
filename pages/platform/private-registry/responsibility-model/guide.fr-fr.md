@@ -1,5 +1,5 @@
 ---
-title: Managed Private Registry - Responsibility model
+title: Managed Private Registry - Responsibility model (EN)
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
 updated: 2023-07-04
 ---
