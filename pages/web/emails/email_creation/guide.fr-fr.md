@@ -14,14 +14,14 @@ Vous venez d'acquérir une solution e-mail MX Plan. Celle-ci vous permet de bén
 
 ## Prérequis
 
-- Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}, l'[hébergement gratuit Start 10M](https://www.ovhcloud.com/fr/domains/free-web-hosting/){.external} compris avec un nom de domaine (activé au préalable) ou l'offre MX Plan commandée séparément.
+- Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}, l'[hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/){.external} compris avec un nom de domaine (activé au préalable) ou l'offre MX Plan commandée séparément.
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.
 
 > [!primary]
 >
 > **Cas particuliers**
 >
-> - Concernant l’hébergement gratuit Start 10M : il est impératif de l’activer au préalable afin de pouvoir créer une adresse e-mail. Vous pouvez effectuer cette opération depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, en vous positionnant sur le nom de domaine concerné.
+> - Concernant l’hébergement gratuit 100M : il est impératif de l’activer au préalable afin de pouvoir créer une adresse e-mail. Vous pouvez effectuer cette opération depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, en vous positionnant sur le nom de domaine concerné.
 > - Dans le cadre d'un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}, il est nécessaire d'activer votre offre MX Plan incluse avant de poursuivre la lecture de cette documentation. Pour cela, consultez notre guide « [Activer les adresses e-mail incluses dans votre hébergement web](/pages/web/hosting/activate-email-hosting) ».
 
 ## En pratique <a name="instructions"></a>

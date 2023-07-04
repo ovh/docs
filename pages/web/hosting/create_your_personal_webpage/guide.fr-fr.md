@@ -1,6 +1,6 @@
 ---
 title: 'Tutoriel - Créer sa page web personnelle chez OVHcloud'
-excerpt: 'Apprenez à créer votre première page web sur un hébergement gratuit Start 10M'
+excerpt: 'Apprenez à créer votre première page web sur un hébergement gratuit 100M'
 updated: 2023-02-17
 ---
 
@@ -8,7 +8,7 @@ updated: 2023-02-17
 
 ## Objectif
 
-Découvre comment créer la première page d'un site web sur un hébergement Start 10M proposé gratuitement pour tout achat d'un nom de domaine chez OVHcloud.
+Découvre comment créer la première page d'un site web sur un hébergement gratuit 100M proposé gratuitement pour tout achat d'un nom de domaine chez OVHcloud.
 
 > [!warning]
 >
@@ -20,7 +20,7 @@ Découvre comment créer la première page d'un site web sur un hébergement Sta
 ## Prérequis
 
 - Posséder un [nom de domaine](https://www.ovhcloud.com/fr/domains/)
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/) ou d'un [hébergement gratuit Start 10M](https://www.ovhcloud.com/fr/domains/free-web-hosting/)
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/) ou d'un [hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/)
 - Avoir un éditeur de texte (bloc-notes, TextEdit, Notepad++, etc.)
 - Avoir installé un client FTP (tel que [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) pour téléverser (déposer sur l'hébergement) ses fichiers sur son espace dédié.
 
@@ -145,7 +145,7 @@ Cette balise est utilisée pour mettre du texte (« p » pour paragraphe). Il es
 <body>
     <h1>Bienvenue sur ma page personnelle</h1>
     <h2>Créez rapidement et facilement votre site web</h2>
-    <p>OVHcloud vous propose, sur son offre Start 10M, gratuitement, un hébergement pour tout achat d'un nom de domaine.</p>
+    <p>OVHcloud vous propose, sur son offre d'hébergement gratuit 100M, un hébergement pour tout achat d'un nom de domaine.</p>
 </body>
 ```
 
@@ -160,7 +160,7 @@ Vous pouvez, en HTML, utiliser des listes. Nous prendrons l'exemple de listes si
     <p>
         <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
-    <p>OVHcloud vous propose, sur son offre Start 10M, gratuitement, un hébergement pour tout achat d'un nom de domaine.</p>
+    <p>OVHcloud vous propose, sur son offre d'hébergement gratuit 100M, un hébergement pour tout achat d'un nom de domaine.</p>
     <p>L'offre "Nom de domaine" comprend :</p>
     <ul>
         <li>Hébergement Web 10 Mo offert</li>
@@ -175,7 +175,7 @@ Vous pouvez voir le résultat dans votre navigateur : par défaut, les élément
 
 #### Ajouter des images pour rendre votre page plus attrayante
 
-Le web est un média avant tout visuel. Nous allons voir dans cette partie comment insérer des images dans votre contenu. L'offre Start 10M vous propose un espace de stockage de 10 Mo. C'est suffisant pour vos pages HTML et CSS, mais cela peut être limité si vous souhaitez mettre beaucoup d'images sur votre site. Nous vous suggérons, dans ce cas de figure, de souscrire à une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) permettant de bénéficier d'un stockage plus conséquent.
+Le web est un média avant tout visuel. Nous allons voir dans cette partie comment insérer des images dans votre contenu. L'offre d'hébergement gratuit 100M vous propose un espace de stockage de 100 Mo. C'est suffisant pour vos pages HTML et CSS, mais cela peut être limité si vous souhaitez mettre beaucoup d'images sur votre site. Nous vous suggérons, dans ce cas de figure, de souscrire à une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) permettant de bénéficier d'un stockage plus conséquent.
 
 La balise HTML utilisée pour afficher une image est la balise `<img>`. Contrairement aux balises que nous avons vues précédemment, il n'y a pas d'ouverture et de fermeture de cet élément. On parlera de balise autofermante. Ce sont les attributs de cette balise qui permettront de donner le lien de l'emplacement du fichier et le texte descriptif de l'image.
 
@@ -184,7 +184,7 @@ La balise HTML utilisée pour afficher une image est la balise `<img>`. Contrair
 Une image de grande taille, c'est une image qui mettra du temps à être chargée par votre navigateur, particulièrement si vos visiteurs utilisent un smartphone ou une tablette connecté(e) au réseau 4 ou 5G.
 En règle générale, vous devez optimiser vos images et en limiter le poids. Ce poids est exprimé en octets. Les unités généralement utilisées sont les kilo-octets (1 ko = 1.000 octets) ou le méga-octet (1 Mo = 1.000.000 octets). Une image suppérieure à quelques dizaines de ko est considérée comme lourde et mérite d'être optimisée. 
 
-**Exemple** : si vos images pèsent chacune 1 Mo, vous serez limité à moins de 10 images sur votre hébergement Start10M. Si vous parvenez à réduire leur taille entre 50 ko et 200 ko, vous pourriez en présenter jusqu'à une centaine sur votre page web.
+**Exemple** : si vos images pèsent chacune 1 Mo, vous serez limité à moins de 100 images sur votre hébergement gratuit 100M. Si vous parvenez à réduire leur taille entre 50 ko et 200 ko, vous pourriez en présenter jusqu'à plusieurs milliers sur votre page web.
 
 Quelques conseils pour que vos fichiers soient les plus légers possibles :
 
@@ -214,10 +214,10 @@ Nous allons maintenant créer un nouveau paragraphe dans lequel nous placerons l
     <p>
         <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
-    <p>OVHcloud vous propose, sur son offre Start 10M, gratuitement, un hébergement pour tout achat d'un nom de domaine.</p>
+    <p>OVHcloud vous propose, sur son offre d'hébergement gratuit 100M, un hébergement pour tout achat d'un nom de domaine.</p>
     <p>L'offre "Nom de domaine" comprend :</p>
     <ul>
-        <li>Hébergement Web 10 Mo offert</li>
+        <li>Hébergement Web 100 Mo offert</li>
         <li>Compte E-mail 5 Go offert</li>
         <li>DNSSEC : protection contre l’empoisonnement du cache (cache poisoning)</li>
         <li>Easy Redirect : accès aux réseaux sociaux depuis votre nom de domaine</li>
@@ -336,10 +336,10 @@ Votre code HTML se présentera selon la structure suivante :
         <main>
             <h1>Bienvenue sur ma page personnelle</h1>
             <h2>Créez rapidement et facilement votre site web</h2>
-            <p>OVHcloud vous propose, sur son offre Start 10M, gratuitement, un hébergement pour tout achat d'un nom de domaine.</p>
+            <p>OVHcloud vous propose, sur son offre d'hébergement gratuit 100M, gratuitement, un hébergement pour tout achat d'un nom de domaine.</p>
             <p>L'offre "Nom de domaine" comprend :</p>
             <ul>
-                <li>Hébergement Web 10 Mo offert</li>
+                <li>Hébergement Web 100 Mo offert</li>
                 <li>Compte E-mail 5 Go offert</li>
                 <li>DNSSEC : protection contre l’empoisonnement du cache (cache poisoning)</li>
                 <li>Easy Redirect : accès aux réseaux sociaux depuis votre nom de domaine</li>

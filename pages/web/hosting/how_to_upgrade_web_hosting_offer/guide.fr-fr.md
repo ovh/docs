@@ -23,7 +23,7 @@ Votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 >
 > **Avant** tout changement sur votre abonnement actuel, vérifiez si vous êtes concerné par l'une de ces questions :
 >
-> - [Comment faire évoluer mon offre gratuite Start 10M vers une offre d'hébergement web ?](#start10m)
+> - [Comment faire évoluer mon hébergement gratuit 100M vers une offre d'hébergement web ?](#start10m)
 > - [Comment bénéficier d'un gain de performance temporaire sur mon offre d'hébergement performance ?](#boost)
 > - [Vais-je perdre le temps restant sur mon offre d'hébergement actuelle lors de mon changement d'offre ?](#billing)
 > - [Est-il possible de changer mon offre actuelle vers une offre inférieure ?](#checks)
@@ -119,7 +119,7 @@ Une fois ces 7 éléments vérifiés, vous pouvez réaliser votre [changement d'
 
 ### Cas particuliers
 
-#### Vous possédez une offre Start 10M <a name="start10m"></a>
+#### Vous possédez une offre d'hébergement gratuit 100M <a name="start10m"></a>
 
 Dans le cadre d'un changement de l'offre [Start10M](/pages/web/hosting/activate_start10m), seule [l'offre Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) vous sera proposée. Néanmoins, après un changement vers l'offre Perso, il vous sera possible de faire évoluer cette dernière vers l'ensemble de nos [offres d'hébergement Web](https://www.ovhcloud.com/fr/web-hosting/).
 
