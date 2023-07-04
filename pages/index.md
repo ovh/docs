@@ -743,6 +743,7 @@
                 + [Managing users and projects](platform/private-registry/managing-users-and-projects)
                 + [FAQ](platform/private-registry/managed-private-registry-faq)
                 + [End Of Life (EOL) Harbor 1.x - How to replicate and migrate your data to Harbor 2.x](platform/private-registry/eol-harbor-1.x)
+                + [Managed Private Registry - Responsibility model](platform/private-registry/responsibility-model)
             + [Tutorials](public-cloud-containers-orchestration-managed-private-registry-tutorials)
                 + [Creating and using a Docker image stored in an OVHcloud Managed Private Registry](platform/private-registry/creating-and-using-a-private-image)
                 + [Using Private Registry with OVHcloud Managed Kubernetes](platform/private-registry/using-private-registry-with-kubernetes)
