@@ -72,6 +72,7 @@
         + [Public Cloud Databases - Shared Responsibility](platform/databases/information_03_shared_responsibility)
         + [Public Cloud Block Storage - Shared Responsibility](platform/public-cloud/responsibility-model-block-storage)
         + [Public Cloud Object Storage - Shared Responsibility](cloud/storage/object_storage/s3_object_storage_responsibility_model)
+        + [Managed Private Registry - Responsibility model](platform/private-registry/responsibility-model)
         + [Hosted Exchange - Shared Responsibility](web/microsoft-collaborative-solutions/responsibility-model)
         + [Email Pro - Shared Responsibility](web/emails-pro/responsibility_model)
 + Bare Metal Cloud
@@ -764,6 +765,7 @@
                 + [Managing users and projects](platform/private-registry/managing-users-and-projects)
                 + [FAQ](platform/private-registry/managed-private-registry-faq)
                 + [End Of Life (EOL) Harbor 1.x - How to replicate and migrate your data to Harbor 2.x](platform/private-registry/eol-harbor-1.x)
+                + [Managed Private Registry - Responsibility model](platform/private-registry/responsibility-model)
             + [Tutorials](public-cloud-containers-orchestration-managed-private-registry-tutorials)
                 + [Creating and using a Docker image stored in an OVHcloud Managed Private Registry](platform/private-registry/creating-and-using-a-private-image)
                 + [Using Private Registry with OVHcloud Managed Kubernetes](platform/private-registry/using-private-registry-with-kubernetes)
