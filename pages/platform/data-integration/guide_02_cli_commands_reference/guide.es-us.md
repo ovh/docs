@@ -36,7 +36,7 @@ You should see a list of source connectors with their `name`, `identifier` and `
 Let's create a PostgreSQL source targetting a managed database hosted in OVHcloud Public Cloud.
 
 > [!primary]
-> Before creating this source, make sure the `188.165.35.170` IP address is whitelisted on the PostgreSQL service.
+> Before creating this source, make sure the Data Integration platform IP address `188.165.35.170` is whitelisted on the managed database service.
 
 We can either provide all the required parameters on the command line or just the name of the source. If one or multiple parameters are missing,the CLI will help us fill them in interactively:
 
