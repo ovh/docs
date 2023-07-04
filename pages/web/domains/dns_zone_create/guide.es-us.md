@@ -67,7 +67,7 @@ Si aparece un mensaje indicándole que no es posible crear la zona DNS, comprueb
 
 ![dnszonecreate](images/dns-zone-create-step1.png){.thumbnail}
 
-Una vez realizada la comprobación, seleccione si quiere activar los registros mínimos para la zona DNS que va a crear. Esta elección no es definitiva, ya que siempre podrá [editar los registros de la zona DNS](/páginas/web/domains/dns_zone_edit) después.
+Una vez realizada la comprobación, seleccione si quiere activar los registros mínimos para la zona DNS que va a crear. Esta elección no es definitiva, ya que siempre podrá [editar los registros de la zona DNS](/pages/web/domains/dns_zone_edit) después.
 
 ![dnszonecreate](images/dns-zone-create-step2.png){.thumbnail}
 
