@@ -71,7 +71,7 @@ Haga clic en el cursor y confirme en la nueva ventana que desea eliminar la prot
 >
 > Además, si encuentra el mensaje: "**AUTH/INFO code : Authcode is not managed by OVHcloud, contact the registry to claim it**", que significa que el código de transferencia de su dominio no es recuperable a través de su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).  
 > 
-> En ambos casos, compruebe que es el contacto **administrador** del dominio con ayuda de nuestra guía sobre la [gestión de contactos](/pages/account/customer/managing_contacts) y compruebe que la extensión de su dominio permite un desbloqueo desde el[área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+> En ambos casos, compruebe que es el contacto **administrador** del dominio con ayuda de nuestra guía sobre la [gestión de contactos](/pages/account/customer/managing_contacts) y compruebe que la extensión de su dominio permite un desbloqueo desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 > 
 > En efecto, algunos *códigos de transferencia* son gestionados directamente por el *registro* de la extensión del dominio. Un *registro* es una organización que gestiona el conjunto de dominios para una extensión determinada. Por ejemplo, el **AFNIC** gestiona el conjunto de dominios con la extensión "*.fr*". En ese caso, deberá contactar directamente con el *registro*, que gestiona la extensión del dominio, para obtener el *código de transferencia*.
 >
