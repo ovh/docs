@@ -28,8 +28,8 @@ For your information, a **Service** is considered as a Public Cloud Databases se
 | --- | --- | --- |
 | Learn about the capabilities and limitations of the Services detailed in the OVHcloud documentation | RA | CI |
 | Use a container or orchestrator tool | RA | I |
-| Create a  Public Cloud projet | RA | I |
-| Choose service location | RA | I |
+| Create a  Public Cloud project | RA | I |
+| Choose the service location | RA | I |
 | Choose the range plan following business needs (Model : S , M or L) | RA | I |
 
 ### 2. Service availability
@@ -39,7 +39,7 @@ For your information, a **Service** is considered as a Public Cloud Databases se
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Produce, route, deliver and maintain underlying software, physical machines, hosting buildings |  | RA |
-| Buy and hold licences and usage rights for software provided by OVHcloud (Harbor, Trivy, etc.) |  | RA |
+| Buy and hold licences and usage rights for softwares provided by OVHcloud (Harbor, Trivy, etc.) |  | RA |
 
 #### 2.2. Reversibility model
 
@@ -62,7 +62,7 @@ For your information, a **Service** is considered as a Public Cloud Databases se
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Leverage adequate compute and storage to deliver service withing the plan limits|  | RA |
+| Leverage adequate compute and storage to deliver the service withing the plan limits|  | RA |
 | Decide to upgrade plan of the existing service following business needs | RA | I |
 | Define and implement an image policy (use of official and trusted public images Registry, updates, vulnerability scoring, etc.) | RA | I |
 | Implement a backup policy for Registry images | RA | I |
