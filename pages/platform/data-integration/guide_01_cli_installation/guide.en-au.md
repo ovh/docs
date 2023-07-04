@@ -4,6 +4,9 @@ excerpt: Learn how to install the Data Integration CLI
 updated: 2023-06-27
 ---
 
+> [!primary]
+> The Data Integration product is in `beta`. During the beta-testing phase, the infrastructure’s availability and performances are not guaranteed. Please do not use this service for applications that are in production, while this phase is not complete.
+
 ## Objective
 
 This guide covers the installation of the **ovhdata-cli** command line interface (CLI). The CLI is the recommended means of interaction with the **Data Integration** service.
