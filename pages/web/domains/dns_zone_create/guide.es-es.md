@@ -72,7 +72,7 @@ Una vez realizada la comprobación, seleccione si quiere activar los registros m
 ![dnszonecreate](images/dns-zone-create-step2.png){.thumbnail}
 
 |Activar los registros mínimos ?|Detalles|
-|—|—||
+|---|---|
 |Sí|Seleccione esta opción si desea personalizar usted mismo la zona DNS más adelante.</br>![mínimo-dns-entries](images/minimal.png){.thumbnail}|
 |No|Seleccione esta opción si tiene previsto utilizar servicios de OVHcloud como un [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/){.external}, ya que la zona está preconfigurada a tal efecto.</br>![no-mínimo-dns-entries](images/no_minimal.png)|{.thumbnail}
 

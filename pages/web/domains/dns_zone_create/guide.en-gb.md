@@ -68,7 +68,7 @@ Once the verification is complete, choose whether to enable the minimum records 
 ![dnszonecreate](images/dns-zone-create-step2.png){.thumbnail}
 
 |Enable minimal entries?|Details|
-|------|------|
+|---|---|
 |Yes|Select this option if you would like to customise the DNS zone yourself at a later stage.</br>![minimal-dns-entries](images/minimal.png){.thumbnail}|
 |No|Select this option if you plan to use OVHcloud services as a [web hosting](https://www.ovhcloud.com/en-gb/web-hosting/){.external}, with the zone pre-configured for this purpose.</br>![no-minimum-dns-entries](images/no_minimal.png){.thumbnail}|
 
