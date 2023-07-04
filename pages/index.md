@@ -840,7 +840,7 @@
                 + [AI Deploy - Tutorial - Create a web service to recognize sign language with YOLOv7](platform/ai/deploy_tuto_13_streamlit_yolov7)
                 + [AI Deploy - Tutorial - Deploy a brain tumor segmentation app using Streamlit](platform/ai/deploy_tuto_14_img_segmentation_app)
         + [AI Partners Ecosystem](public-cloud-ai-and-machine-learning-ai-ecosystem)
-            + [Guides](public-cloud-ai-and-machine-learning-ai-ecosystem-guides)
+            + [AI Partners - Guides](public-cloud-ai-and-machine-learning-ai-ecosystem-guides)
                 + [AI Partners Ecosystem - Lettria - Models features, capabilities and billing](platform/ai/ecosystem_01_lettria_billing_features_capabilities)
                 + [AI Partners Ecosystem - Lettria - Models concept](platform/ai/ecosystem_02_lettria_models)
     + [Data Analytics](public-cloud-data-analytics)
