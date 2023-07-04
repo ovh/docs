@@ -70,7 +70,7 @@ Po zakończeniu weryfikacji, wybierz opcję aktywacji lub nie dodawania wpisów 
 |Włącz minimalne wpisy?|Szczegóły|
 |---|---|
 |Tak|Wybierz ten wybór, jeśli chcesz samodzielnie spersonalizować strefę DNS.</br>![minimum-dns-entries](images/minimal.png){.thumbnail}|
-|Nie|Wybierz ten wybór, jeśli planujesz korzystać z usług OVHcloud takich jak [hosting WWW](https://www.ovhcloud.com/fr/web-hosting/){.external}, strefa jest wstępnie skonfigurowana do tego celu.</br>![no-minimum-dns-entries](images/no_minimal.png){.thumbnail}|
+|Nie|Wybierz ten wybór, jeśli planujesz korzystać z usług OVHcloud takich jak [hosting WWW](https://www.ovhcloud.com/pl/web-hosting/){.external}, strefa jest wstępnie skonfigurowana do tego celu.</br>![no-minimum-dns-entries](images/no_minimal.png){.thumbnail}|
 
 Po dokonaniu wyboru wykonaj kolejne kroki, aż do utworzenia strefy DNS.
 
