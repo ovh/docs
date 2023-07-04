@@ -8,6 +8,8 @@ updated: 2022-07-07
 
 ## Objective
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Understanding DNS <a name="understanddns"></a>
 
 DNS stands for **D**omain **N**ame **S**ystem and is a set of data used to map a domain name to an IP address.
@@ -31,8 +33,6 @@ The DNS zone for a domain name is a configuration file made up of **records**. Y
 ![DNS](images/dnszone.png){.thumbnail}
 
 **This guide explains how to edit your OVHcloud DNS zone via the OVHcloud Control Panel.**
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requirements
 

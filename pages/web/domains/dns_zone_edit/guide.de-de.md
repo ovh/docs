@@ -13,6 +13,8 @@ updated: 2022-07-07
 
 ## Ziel
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### DNS Konzept verstehen <a name="understanddns"></a>
 
 **D**omain **N**ame **S**ystem steht für Datensätze, die Domains mit IP-Adressen verbinden.
@@ -36,8 +38,6 @@ Die DNS-Zone einer Domain ist eine Konfigurationsdatei bestehend aus **Datensät
 ![DNS](images/dnszone.png){.thumbnail}
 
 **Diese Anleitung erklärt, wie Sie Ihre OVHcloud DNS-Zone über Ihr Kundencenter bearbeiten.**
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Voraussetzungen
 

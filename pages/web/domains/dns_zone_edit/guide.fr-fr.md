@@ -8,6 +8,8 @@ updated: 2022-07-07
 
 ## Objectif
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Comprendre la notion de DNS <a name="understanddns"></a>
 
 Le sigle DNS, signifiant **D**omain **N**ame **S**ystem, est un ensemble d'éléments permettant de faire correspondre un nom de domaine avec une adresse IP.
@@ -31,8 +33,6 @@ La zone DNS d'un nom de domaine est un fichier de configuration composé d'**enr
 ![DNS](images/dnszone.png){.thumbnail}
 
 **Découvrez comment éditer votre zone DNS OVHcloud via votre espace client.**
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 
