@@ -1,10 +1,8 @@
 ---
 title: Montage d'un NAS-HA via partage NFS
 excerpt: Découvrez comment vous connecter à votre NAS-HA en utilisant un partage NFS
-updated: 2022-12-06
+updated: 2023-07-03
 ---
-
-**Dernière mise à jour le 06/12/2022**
 
 ## Objectif
 
@@ -45,6 +43,8 @@ Les notations suivantes sont utilisées comme arguments dans les sections de lig
 >
 > L'utilisateur NFS est `root`, les modifications de droits avec cet utilisateur peuvent générer des conflits avec des droits CIFS/SMB existants.
 >
+> 
+
 
 ### Distributions basées sur Debian
 
@@ -60,7 +60,7 @@ Utilisez ensuite la commande de montage suivante :
 ubuntu@server:~$ sudo mount -t nfs IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
-**Par exemple :**
+**Par exemple :**
 
 ```bash
 ubuntu@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
@@ -95,7 +95,7 @@ Pour monter votre partition, utilisez la commande suivante :
 centos@server:~$ sudo mount -t nfs IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
-**Par exemple :**
+**Par exemple :**
 
 ```bash
 centos@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
@@ -124,7 +124,7 @@ Utilisez ensuite la commande de montage suivante :
 fedora@server:~$ sudo mount -t nfs IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
-**Par exemple :**
+**Par exemple :**
 
 ```bash
 fedora@server:~$ sudo mount -t nfs 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
@@ -181,6 +181,49 @@ Une fois fait, cliquez sur `Next`{.action}. Cliquez sur `Finish`{.action} à la 
 Votre partition NAS-HA est maintenant montée en datastore.
 
 ![ESXI](images/esxi4.png){.thumbnail}
+
+### NFS3/NFS4
+
+L'offre NAS-HA supporte les protocoles NFS3 et NFS4. Nous allons détailler leur utilisation.
+
+**Que se passe-t'il si on ne précise pas la version lors de la commande NFS ?**
+
+Dans ce cas, votre client NFS va essayer de se connecter directement sur la plus haute version supportée par celui-ci.
+Mais vous pouvez également choisir si vous préférez utiliser NFS3 ou NFS4:
+
+Pour forcer l'utilisation de NFS3, vous devez utiliser la commande suivante :
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Exemple :
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Pour forcer l'utilisation de NFS4, vous devez utiliser la commande suivante :
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Exemple :
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Vous pouvez également utiliser la commande suivante pour déterminer quelle est la version utilisée par le montage actuel :
+
+```bash
+ubuntu@server:~$ nfsstat -m
+```
+
+Dans le retour, le paramètre `vers=3` ou `vers=4` vous indique quel est le protocole utilisé.
+
+L'utilisation des commandes sera semblable pour CentOS et Fedora.
 
 ## Aller plus loin
 
