@@ -52,11 +52,11 @@ The menu will give you the list of all the current policies created on your acco
 
 ![Access to the IAM menu](images/access_to_the_IAM_menu_03.png){.thumbnail}
 
-Each policy is identified by its name, the number of identities linked to it, and the number of actions it contains.
+Each policy is displayed with its name, the number of identities linked to it, and the number of actions it contains.
 
 > [!primary]
 >
-> The "Advanced mode" button displays the list of all the OVHcloud Managed policies. These policies are automatically created by OVHcloud to convert the preexisting NIC Tech and NIC Admin delegation on the new IAM feature. 
+> Clicking the "Advanced mode" button shows the list of all the OVHcloud Managed policies. These policies are automatically created by OVHcloud to convert the preexisting `NIC Tech` and `NIC Admin` delegation on the new IAM feature. 
 >
 > Customers are not allowed to edit or delete these policies.
 
@@ -93,9 +93,9 @@ You can use a wildcard at the beginning or at the end of the action name with `*
 
 For example, adding `vps:apiovh:ips/*` will grant the following rights:
 
-vps:apiovh:ips/edit
-vps:apiovh:ips/delete
-vps:apiovh:ips/get 
+vps:apiovh:ips/edit <br>
+vps:apiovh:ips/delete <br>
+vps:apiovh:ips/get <br>
 
 - Selecting actions from the list
 
@@ -109,7 +109,7 @@ The available actions depend on the resource type and belong to one of five cate
 - **Create**: Action that allows to create something on a product.
 - **Delete**: Action that allows to delete something on a product.
 - **Edit**: Action to change something existing on a product.
-- **Operate**: Apply changes over the infrastructure related to the product.
+- **Operate**: Apply changes to the infrastructure related to the product.
 
 A search field is available to help identify a specific action on the list.
 
