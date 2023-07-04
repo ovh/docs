@@ -260,7 +260,7 @@ Total price = Resources price + Lettria model licencing price
 
 ### Examples
 
-#### Example 1: 1 GPU app with for 10 hours then deleted
+#### Example 1: 1 GPU app for 10 hours then deleted
 
 We deploy one Lettria app with AI Deploy, with 1 GPU and we keep it running for 10 hours then we **delete it**.
 
