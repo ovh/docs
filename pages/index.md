@@ -71,6 +71,7 @@
         + [Public Cloud Databases - Shared Responsibility](platform/databases/information_03_shared_responsibility)
         + [Public Cloud Block Storage - Shared Responsibility](platform/public-cloud/responsibility-model-block-storage)
         + [Public Cloud Object Storage - Shared Responsibility](cloud/storage/object_storage/s3_object_storage_responsibility_model)
+        + [Managed Private Registry - Responsibility model](platform/private-registry/responsibility-model)
         + [Hosted Exchange - Shared Responsibility](web/microsoft-collaborative-solutions/responsibility-model)
         + [Email Pro - Shared Responsibility](web/emails-pro/responsibility_model)
 + Bare Metal Cloud
