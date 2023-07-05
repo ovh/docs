@@ -75,7 +75,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Gérer des accès à l'espace client OVHcloud (Control Plane) | RA | I |
+| Gérer des accès à l'espace client OVHcloud (Control Plane) à travers un projet Public Cloud | RA | I |
 | Gérer les accès physiques et logiques des équipes OVHcloud aux infrastructures |  | RA |
 | Gérer l’accès aux ressources gérées par le service Kubernetes Managé | RA |  |
 
