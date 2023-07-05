@@ -1,7 +1,7 @@
 ---
 title: Transfer an instance backup from one Public cloud project to another
 excerpt: Find out how to transfer an instance backup from one Public cloud project to another
-updated: 2023-06-28
+updated: 2023-07-05
 ---
 
 ## Objective
