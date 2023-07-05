@@ -450,7 +450,7 @@ To recreate your Load Balancers, follow the instructions in our guide on [config
 <a name="fwgw"></a>
 ##### Step 4.8.3.6 T0 T1 Gateway Firewall
 
-To recreate the firewall rules associated with your previous edges,  please refer to our guide on [Gateway Firewall Management in NSX](/pages/cloud/private-cloud/nsx-06-manage-gateway-firewall).
+To recreate the firewall rules associated with your previous edges, please refer to our guide on [Gateway Firewall Management in NSX](/pages/cloud/private-cloud/nsx-06-manage-gateway-firewall).
 
 <a name="vpn"></a>
 ##### Step 4.8.3.7 VPN 
@@ -458,9 +458,7 @@ To recreate the firewall rules associated with your previous edges,  please refe
 <a name="ipsec"></a>
 ##### Step 4.8.3.7.1 IPSec 
 
-To recreate your IPSec sessions, refer to the documentation:
-
-LINK TO NEW IPSEC DOC
+To recreate your IPSec sessions, please refer to our guide on [setting up an IPsec Tunnel with NSX](/pages/cloud/private-cloud/nsx-12-configure-ipsec).
 
 <a name="sslvpn"></a>
 ##### Step 4.8.3.7.2 SSL VPN

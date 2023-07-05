@@ -485,9 +485,7 @@ Pour recréer les règles de pare-feu associées à vos anciennes edges, consult
 
 ##### Etape 4.8.3.7.1 IPSec 
 
-Pour recréer vos session IPsec voici la documentation :
-
-LIENDUTUNNELIPSECDACOTE
+Pour recréer vos sessions IPsec, consultez notre guide sur la [mise en place d'un tunnel IPsec avec NSX](/pages/cloud/private-cloud/nsx-12-configure-ipsec).
 
 <a name="sslvpn"></a>
 
