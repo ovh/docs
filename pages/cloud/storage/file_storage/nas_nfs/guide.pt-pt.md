@@ -74,7 +74,7 @@ Já pode aceder à sua partição montada na pasta especificada.
 >
 > A fim de automatizar o processo de montagem em cada arranque do servidor, adicione a seguinte linha ao ficheiro `/etc/fstab`:
 >
-> `IP_HA-NAS:/NFS_PATH/MOUNTING_FOLDER nfs rw 0`
+> `IIP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
 >
 
 ### CentOS 7 / AlmaLinux / Rocky Linux
@@ -109,7 +109,7 @@ Já pode aceder à sua partição montada na pasta especificada.
 >
 > A fim de automatizar o processo de montagem em cada arranque do servidor, adicione a seguinte linha ao ficheiro `/etc/fstab`:
 >
-> `IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0`
+> `IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
 >
 
 ### Fedora
@@ -184,6 +184,48 @@ A sua partição NAS-HA foi montada num datastore.
 
 ![ESXI](images/esxi4.png){.thumbnail}
 
+### NFS3/NFS4
+
+A oferta NAS-HA suporta os protocolos NFS3 e NFS4. Vamos detalhar a sua utilização.
+
+**O que acontece se não especificarmos a versão durante o comando NFS?**
+
+Neste caso, o seu cliente NFS vai tentar ligar-se diretamente à versão mais alta suportada por este último.
+Mas também pode escolher se prefere utilizar NFS3 ou NFS4:
+
+Para forçar a utilização de NFS3, deve utilizar o seguinte comando:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Exemplo:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Para forçar a utilização de NFS4, deve utilizar o seguinte comando:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Exemplo:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Também pode utilizar o seguinte comando para determinar a versão utilizada pela montagem atual:
+
+```bash
+ubuntu@server:~$ nfsstat -m
+```
+
+No retorno, o parâmetro `vers=3` ou `vers=4` indica-lhe o protocolo utilizado.
+
+A utilização dos comandos será semelhante para CentOS e Fedora.
 
 ## Quer saber mais?
 
