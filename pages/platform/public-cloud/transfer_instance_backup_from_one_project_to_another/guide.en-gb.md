@@ -6,7 +6,7 @@ updated: 2023-06-28
 
 ## Objective
 
-A situation may arise where you need to move an [Instance backup](pages/platform/public-cloud/save_an_instance) or a [Volume backup](/pages/platform/public-cloud/volume-backup) from one Public cloud project to another, because you would prefer to move to a newly available project.
+A situation may arise where you need to move an [Instance backup](/pages/platform/public-cloud/save_an_instance) or a [Volume backup](/pages/platform/public-cloud/volume-backup) from one Public cloud project to another, because you would prefer to move to a newly available project.
 
 **This guide will show you how to transfer an Instance backup from one Public cloud project to another while preserving the configuration and state of the Instance.**
 

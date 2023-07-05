@@ -6,7 +6,7 @@ updated: 2023-06-28
 
 ## Objectif
 
-Il peut arriver que vous deviez déplacer une image come celle d'une [Instance backup](/pages/platform/public-cloud/save_an_instance) ou d'un [Volume backup](pages/platform/public-cloud/volume-backup) vers un autre projet Public Cloud dans le but d'optimiser votre travail.
+Il peut arriver que vous deviez déplacer une image come celle d'une [Instance backup](/pages/platform/public-cloud/save_an_instance) ou d'un [Volume backup](/pages/platform/public-cloud/volume-backup) vers un autre projet Public Cloud dans le but d'optimiser votre travail.
 
 Avec Openstack (et surtout avec Glance), il est possible de partager une image entre plusieurs projets, même s'ils n'appartiennent pas au même compte.
 
@@ -28,7 +28,7 @@ Pour plus d'informations, veuillez consulter la documentation [officielle Openst
 
 Avant de suivre ces étapes, il est recommandé de compléter d'abord ce guide :
 
-* [Préparer l’environnement à l’utilisation de l’API OpenStack ](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+* [Préparer l’environnement à l’utilisation de l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
 
 Vous aurez également besoin :
 
