@@ -11,8 +11,11 @@ updated: 2023-07-04
 ## Usecase
 
 You want to link 2 VMs from 2 PCCs.
+
 PCC in DE : pcc-145-239-250-146.ovh.de
+
 PCC in UK : https://pcc-145-239-249-80.ovh.uk
+
 You will use a vlan in vRack for the BGP peer connectivity. Vlan 12
   
 ## Instructions
