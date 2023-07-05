@@ -4,13 +4,12 @@ routes:
     canonical: '/pages/cloud/private-cloud/service-migration'
 excerpt: Découvrez comment déplacer vos VMs d'un vDC existant vers un nouveau vDC dans la même infrastructure VMware
 hidden: true
-updated: 2023-05-04
+updated: 2023-07-05
 ---
 <style>
 .ovh-api-main { background:#fff;}
 </style> 
 
-**Dernière mise à jour le 04/05/2023**
 
 **Ce guide explique comment déplacer des machines virtuelles (VM) d'un virtual DataCenter (vDC) d'origine (DC ou SDDC) vers un nouveau vDC de destination (Essentials ou Premier).**
 
@@ -397,22 +396,21 @@ Pour des raisons organisationelles, les VMs, les hosts ou les datastores peuvent
 Si cette organisation est toujours nécessaire, il vous faudra la créer à nouveau dans le vDC de destination.
 
 <a name="nsx"></a>
-#### Etape 4.8 Migrer NSX V vers NSX (si pertinent)
+#### Etape 4.8 Migrer NSX-V vers NSX (si pertinent)
 
-Dans le cadre d'une migration NSX V vers NSX T, plusieurs services de NSX V nécessitent d'être migrés vers NSX T. Si vous utilisez un des services si dessous, voici point par point comment migrer tout cela. 
+Dans le cadre d'une migration NSX-V vers NSX, si vous utilisez un des services ci-dessous, voici comment effectuer cette migration en détails. 
 
-Si besoin les Services Professionels peuvent vous accompagner dans cette démarche de reconstruire votre architecture réseau au travers de prestations.
+> [!primary]
+> Si vous avez besoin d'une assistance technique, notre équipe [Professional Services](https://www.ovhcloud.com/fr/professional-services/) peut vous accompagner dans votre démarche de reconstrusction de votre architecture réseau, au travers de prestations personnalisées.
 
-Voici aussi une documentation globale sur les premiers pas à NSX : 
-https://help.ovhcloud.com/csm/fr-vmware-nsx-first-steps?id=kb_article_view&sysparm_article=KB0056837
-
+Dans un premier temps, nous vous invitions à consulter notre documentation sur [les premiers pas avec NSX](/pages/cloud/private-cloud/nsx-01-first-steps).
 
 <a name="dfw"></a>
 ##### Etape 4.8.1 NSX Distributed Firewall
 
-Le pare-feu distribué NSX protège automatiquement l'intégralité du vDC. L'outil Migration Coordinator permet de le faire, cependant il faut faire un ticket afin qu'un intervenant puisse le déclencher. Il est aussi possible de faire appel aux Professionels Services pour déclencher la procédure.
+Le pare-feu distribué NSX protège automatiquement l'intégralité du vDC. L'outil Migration Coordinator permet de le faire, cependant un ticket doit être créé afin qu'un intervenant puisse le déclencher. Vous pouvez également faire appel à notre équipe [Professional Services](https://www.ovhcloud.com/fr/professional-services/) pour déclencher la procédure.
 
-Cependant, il est extrêmement important de comprendre que les objets placés dans le pare-feu distribué correspondront à l'ID d'objet significatif en local. Par exemple, si un groupe de ports VLAN vRack est utilisé dans une règle dans le pare-feu distribué, il référencera le groupe de ports à partir du vDC d'origine uniquement et non à partir d'un groupe de ports vRack recréé dans le vDC de destination.
+Il est extrêmement important de comprendre que les objets placés dans le pare-feu distribué correspondront à l'ID d'objet significatif en local. Par exemple, si un groupe de ports VLAN vRack est utilisé dans une règle dans le pare-feu distribué, il référencera le groupe de ports à partir du vDC d'origine uniquement et non à partir d'un groupe de ports vRack recréé dans le vDC de destination.
 
 Il sera nécessaire de vérifier si le pare-feu distribué contient des objets significatifs en local et de modifier le pare-feu distribué afin qu'il puisse également voir les objets dans le nouveau vDC. Par exemple, une règle qui utilise un groupe de ports VLAN vRack à partir du vDC d'origine peut être modifiée pour utiliser à la fois le groupe de ports VLAN vRack d'origine et le nouveau groupe de ports VLAN vRack dans le vDC de destination.
 
@@ -425,69 +423,59 @@ Les objets devant être considérés :
 - Resource Pool
 - vApp
 
-Pour aller plus loin sur le parefeu distribué voici une documentation : https://help.ovhcloud.com/csm/fr-vmware-nsx-manage-distributed-firewall?id=kb_article_view&sysparm_article=KB0056900
-
+Pour plus d'informations, consultez notre documentation sur la [gestion du pare-feu distribué dans NSX](/pages/cloud/private-cloud/nsx-05-manage-distributed-firewall).
 
 <a name="dlr"></a>
-Etape 4.8.2 NSX Distributed Logical Router
-##### 
+##### Etape 4.8.2 NSX Distributed Logical Router
 
-L'objet Distributed Logical Router de NSX V n'a pas d'équivalent dans NSX à proprement parlé. Pour migrer les Distributed Logical Router, il faut directement faire le routage dans les Gateways T1 directement.
+L'objet Distributed Logical Router de NSX V n'a pas de réel équivalent dans NSX. Pour migrer les Distributed Logical Routers, il faut directement faire le routage dans les Gateways T1 directement.
 
 <a name="edge"></a>
 ##### Etape 4.8.3 NSX Edges
 
-De manière générale, en fonction du nombre de edge déployées via NSX V dans le vDC source, il conviendra de créer des T1 gateway dans NSX du vDC de destination. Cependant il peut être aussi intéressant de prendre du recul afin de revoir l'architecture réseau mise en place afin de faire correspondre au mieux les besoins dans le nouveau produit NSX. 
+De manière générale, en fonction du nombre de *Edges* déployées via NSX-V dans le vDC source, il conviendra de créer des T1 gateway dans NSX sur le vDC de destination. Cependant, il peut être aussi intéressant de prendre du recul afin de revoir l'architecture réseau mise en place pour faire correspondre au mieux les besoins dans le nouveau produit NSX. 
 
-De plus si votre production nécessite de n'avoir aucune interruption de service, des solutions peuvent être mise en place pour éviter ces coupures.
+De plus, si votre production nécessite de n'avoir aucune interruption de service, des solutions peuvent être mises en place pour éviter ces coupures.
 
-Dans ces deux cas et comme dit plus haut, les Services Professionels peuvent vous accompagner dans cette démarche. 
-
-Les Services Professionnels peuvent aussi utiliser le Migration Coordinator Tool pour permettre une génération d'un squelette réseau NSX basé sur votre ancienne architecture NSX V afin d'accélérer / simplifier la procédure de migration.
+Dans ces deux cas et comme indiqué plus haut, notre équipe [Professional Services](https://www.ovhcloud.com/fr/professional-services/) peut vous accompagner dans cette démarche. Nos experts de cette équipe peuvent aussi utiliser le Migration Coordinator Tool pour générer un squelette réseau NSX basé sur votre ancienne architecture NSX-V afin d'accélérer / simplifier la procédure de migration.
 
 <a name="t1seg"></a>
 ##### Etape 4.8.3.1 Créer les T1 et les segments
 
-Pour créer les T1 voici la documentation à suivre. Cette documentation aiguille aussi sur la façon de créer les segments. Avant de créer les segments il est nécessaire de faire l'inventaire des vxlans utilisés dans le vDC source et de créer un segment pour chaque vxlan utilisé sur votre infrastructure.
+Pour créer les T1, suivez [cette documentation](/pages/cloud/private-cloud/nsx-10-add-new-tier1-gateway). Ce guide vous aiguillera aussi sur la façon de créer les segments. Avant de créer les segments, il est nécessaire de faire l'inventaire des VXLANs utilisés dans le vDC source et de créer un segment pour chaque VXLAN utilisé sur votre infrastructure.
 
-https://help.ovhcloud.com/csm/fr-vmware-nsx-add-new-tier1-gateway?id=kb_article_view&sysparm_article=KB0056957
+Il suffit ensuite de les relier à la T0 fournie dans NSX.
 
-Il suffit ensuite de les relier à la T0 fournie dans NSX
+Pour plus d'informations, consultez notre documentation sur la [gestion des segments dans NSX](/pages/cloud/private-cloud/nsx-02-segment-management).
 
-Pour aller plus loin avec les segments, cette documentation peut vous être utile.
+Il est aussi possible de créer des segments de type VLAN et les relier au vRack via la Transport Zone `ovh-tz-vrack`.
 
-https://help.ovhcloud.com/csm/fr-vmware-nsx-segment-management?id=kb_article_view&sysparm_article=KB0056848
-
-Il est aussi possible de créer des segments de type VLAN et les relier au vRack via la Transport Zone ovh-tz-vrack.
-Ensuite il faut positionner soit au niveau des T1, soit au niveau des T0 avec des interfaces de type Service, les segments VLAN pour pouvoir contacter le vRack via NSX.
+Par la suite, pour pouvoir contacter le vRack via NSX, il faut positionner les segments VLAN soit au niveau des T1, soit au niveau des T0 avec des interfaces de type Service.
 
 <a name="dhcp"></a>
 ##### Etape 4.8.3.2 DHCP
 
-Pour recréer les DHCP et les associer à vos segments puis à vos T1 voici la documentation : https://help.ovhcloud.com/csm/fr-vmware-nsx-dhcp-configuration?id=kb_article_view&sysparm_article=KB0056866
+Pour recréer les DHCP et les associer à vos segments puis à vos T1, consultez notre guide sur la [configuration du DHCP dans NSX](/pages/cloud/private-cloud/nsx-03-configure-dhcp-onsegment).
 
 <a name="dns"></a>
 ##### Etape 4.8.3.3 DNS
 
-Pour recréer les DNS et les associer à vos T1 voici la documentation : 
-https://help.ovhcloud.com/csm/fr-vmware-nsx-configure-dns-forwarder?id=kb_article_view&sysparm_article=KB0056880
+Pour recréer les DNS et les associer à vos T1, consultez notre guide sur la [configuration du redirecteur DNS dans NSX](/pages/cloud/private-cloud/nsx-04-configure-dns-forwarder/).
 
 <a name="nat"></a>
 ##### Etape 4.8.3.4 Règles NAT
 
-Pour recréer vos règles NAT et les associer aux T1 voici la documentation :
-https://help.ovhcloud.com/csm/fr-vmware-nsx-configure-nat-redirection?id=kb_article_view&sysparm_article=KB0056927
+Pour recréer vos règles NAT et les associer aux T1, consultez notre guide sur la [mise en place du NAT pour des redirections de ports avec NSX](/pages/cloud/private-cloud/nsx-07-configure-nat-redirection).
 
 <a name="lb"></a>
 ##### Etape 4.8.3.5 Load Balancing NSX
 
-Pour recréer vos Load Balancer voici la démarche à suivre :
-https://help.ovhcloud.com/csm/fr-vmware-nsx-configure-loadbalancing?id=kb_article_view&sysparm_article=KB0056943
+Pour recréer vos Load Balancer, suivez les indications de notre guide sur la [configuration du Load Balancing dans NSX](/pages/cloud/private-cloud/nsx-09-configure-loadbalancing).
 
 <a name="fwgw"></a>
 ##### Etape 4.8.3.6 Pare-feu des passerelles T0 T1
-Pour recréer les règles de pare-feu associées à vos anciennes edges voici la documentation : 
-https://help.ovhcloud.com/csm/fr-vmware-nsx-manage-gateway-firewall?id=kb_article_view&sysparm_article=KB0056908
+
+Pour recréer les règles de pare-feu associées à vos anciennes edges, consultez notre guide sur la [gestion du pare-feu des passerelles dans NSX](/pages/cloud/private-cloud/nsx-06-manage-gateway-firewall).
 
 <a name="vpn"></a>
 
@@ -501,31 +489,31 @@ Pour recréer vos session IPsec voici la documentation :
 
 LIENDUTUNNELIPSECDACOTE
 
-
 <a name="sslvpn"></a>
 
 ##### Etape 4.8.3.7.2 SSL VPN
 
-Si vous utilisez la fonctionnalité SSL VPN, malheureusement cette fonctionnalité n'existe plus sur NSX. Il y a néanmoins des alternatives opensources disponibles tel que OpenVPN, OpenConnect VPN, WireGuard etc.
-Ces appliances réseau sont à monter sur des VMs dédiées hébergées sur votre HPC. Chaque client est ensuite à installer sur les postes des collaborateurs afin qu'ils puissent de nouveau accéder à leur VPN.
+Si vous utilisez la fonctionnalité SSL VPN, cette fonctionnalité n'existe malheureusement plus sur NSX. Des alternatives opensource sont néanmoins disponibles, telles que OpenVPN, OpenConnect VPN, WireGuard, etc.
+
+Ces applications réseau sont à monter sur des VMs dédiées hébergées sur votre Hosted Private Cloud. Chaque client est ensuite à installer sur les postes des collaborateurs afin qu'ils puissent de nouveau accéder à leur VPN.
 
 <a name="moveip"></a>
 
 ##### Etape 4.8.3.8 Reconfiguration du bloc IP initial
 
 > [!warning]
-> Cette étape entraine une interruption de service car tout le traffic sera redirigé vers la VIP de la T0.
-> A vous de décider si vous voulez faire pointer le bloc IP primaire de NSX V vers la T0 de NSX avant ou après avoir migré vos VMs (Etape 5.2)
+> Cette étape entraine une interruption de service car tout le trafic sera redirigé vers la VIP de la T0.
+> Vous devez décider si vous voulez faire pointer le bloc IP primaire de NSX-V vers la T0 de NSX avant ou après avoir migré vos VMs (cf [Etape 5.2](#vmotion))
 >
 
-Pour cette étape vous aurez besoin de deux éléments : 
-- le bloc IP initialement associé au vDC NSX V.
-- l'IP publique de la VIP associée à la T0 de NSX. (visible dans Networking => Tier-0 Gateways => ovh-T0-XXXX => dépliez => HA VIP Configuration => cliquez sur 1 => section IP Address / Mask)
+Pour cette étape vous aurez besoin de deux éléments :
 
-Ensuite dans le manager OVHcloud procédez comme sur ce tuto ( https://help.ovhcloud.com/csm/fr-dedicated-servers-ip-fo-move?id=kb_article_view&sysparm_article=KB0043717 ) pour déplacer le bloc initial NSX V sur le service PCC que vous migrez, mais en précisant comme next hop l'ip de la VIP de la T0 récupérée précédemment comme sur l'exemple ci-dessous :
+- le bloc IP initialement associé au vDC NSX-V.
+- l'IP publique de la VIP associée à la T0 de NSX (visible dans `Networking`{.action} > `Tier-0 Gateways`{.action} > `ovh-T0-XXXX`{.action} > dépliez > `HA VIP Configuration`{.action} > cliquez sur `1`{.action} > section `IP Address / Mask`{.action})
+
+Par la suite, depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), suivez les indications de notre guide « [Déplacer une Additional IP](/pages/cloud/dedicated/move-failover-ip) »  pour déplacer le bloc initial NSX-V sur le service PCC que vous migrez, tout en précisant comme *next hop* l'IP de la VIP de la T0 récupérée précédemment, comme sur l'exemple ci-dessous :
 
 ![Migration NSX IP](images/MoveIPNextHop.png){.thumbnail}
-
 
 <a name="zerto"></a>
 #### Etape 4.9 Etendre la protection Zerto Disaster Recovery Protection (si pertinent)
