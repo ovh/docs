@@ -1,34 +1,35 @@
 ---
-title: 'Transfer an instance backup from one Public cloud project to another'
-excerpt: 'Find out how to transfer an instance backup from one Public cloud project to another'
+title: Transfer an instance backup from one Public cloud project to another
+excerpt: Find out how to transfer an instance backup from one Public cloud project to another
 updated: 2023-06-28
 ---
 
 ## Objective
 
-A situation may arise where you need to move an [Instance backup](pages/platform/public-cloud/save_an_instance) or a [Volume backup](pages/platform/public-cloud/volume-backup) from one Public cloud project to another, because you would prefer to move to a newly available project.
+A situation may arise where you need to move an [Instance backup](pages/platform/public-cloud/save_an_instance) or a [Volume backup](/pages/platform/public-cloud/volume-backup) from one Public cloud project to another, because you would prefer to move to a newly available project.
+
+**This guide will show you how to transfer an Instance backup from one Public cloud project to another while preserving the configuration and state of the Instance.**
 
 With Openstack (and especially with glance), it is possible to share an image between projects, even if they don't belong to the same account.
 
-This feature offers many possibilities, but it also has its risks. It is therefore important to understand what it is all about.
+This feature offers many possibilities, but it also has its risks. It is therefore important to understand how it works.
 
 For example, if we want to move an image from Project A to Project B (in the same or different account), the following rules apply:
 
-- The image remains physically attached to Project A. Project B has only "access authorization" to this image.
+- The image remains physically attached to Project A. Project B only has "access authorization" to this image.
 
-- If Project A removes access to the image (removes acl, image deletion, project is deleted for unpaid invoices etc...), the instances running from this image on Project B may not work anymore due to migration or rebuild issues. Etc.
+- If Project A removes access to the image (like acl, image deletion or if the project is deleted for unpaid invoices etc...), the instances running from this image on Project B may not work anymore due to migration or rebuild issues.
 
 It is therefore important to keep this in mind before engaging in this setup.
 
-For more information, please consult the [Official Openstack documention](https://docs.openstack.org/image-guide/share-images.html){.external}.
+For more information, please consult the [Official Openstack documentation](https://docs.openstack.org/image-guide/share-images.html){.external}.
 
-**This guide will show you how to transfer an Instance backup from one Public cloud project to another while preserving the configuration and state of the Instance.**
 
 ## Requirements
 
 Before following these steps, it is recommended that you first complete this guide:
 
-* [Prepare the environment to use the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/)
+* [Prepare the environment to use the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
 
 You will also need the following:
 
@@ -56,7 +57,7 @@ $ glance image-list
 
 > [!warning]
 > 
-> In order to be shared, an image must first be set to "shared" visibility.
+> In order to be shared, an image must first be set to "shared visibility".
 >
 
 ```bash
@@ -67,7 +68,7 @@ Once done, the image can now be shared between two projects.
 
 ### Add a project to an Image
 
-The next step is to add the UUID of a different project as a member of the image. In our example below, we add the UUID of "Project B".
+The next step is to add the UUID of a different project as a member of the image. In our example below, we add the UUID of "Project B" to the image.
 
 
 ```bash
@@ -144,7 +145,7 @@ $ glance member-list --image-id <image>
 +--------------------------------------+--------------------------------------+----------+
 ```
 
-#### Delete a member of an Image/unshare an Image
+#### Delete a member of an Image or unshare an Image
 
 ```bash
 $ glance member-delete <image> <UUID_Project_To_Delete>
@@ -173,7 +174,7 @@ $ openstack image set --shared <Image_UUID>
 
 ### Add a project to an Image
 
-The next step is to add the UUID of a different project as a member of the image. In our example below, we add the UUID of "Project B".
+The next step is to add the UUID of a different project as a member of the image. In our example below, we add the UUID of "Project B" to the image.
 
 ```bash
 $ openstack image add project 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba <UUID_Project_B>
@@ -256,7 +257,7 @@ $ openstack image member list 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
 +--------------------------------------+----------------------------------+----------+
 ```
 
-#### Delete a member of an Image/unshare an Image
+#### Delete a member of an Image or unshare an Image
 
 ```bash
 $ openstack image remove project <image> <UUID_Project_To_Delete>
