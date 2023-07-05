@@ -4,7 +4,7 @@ excerpt: Find out how to connect to your HA-NAS using an NFS share
 updated: 2023-07-05
 ---
 
-## Objective
+## Objective 
 
 The OVHcloud HA-NAS service allows you to manage file storage that can be accessed over a network.
 

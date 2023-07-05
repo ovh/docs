@@ -8,7 +8,7 @@ updated: 2023-07-05
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-## Objetivo
+## Objetivo 
 
 O serviço NAS-HA da OVHcloud permite-lhe gerir um armazenamento de ficheiros acessível a partir de uma rede.
 
@@ -74,7 +74,7 @@ Já pode aceder à sua partição montada na pasta especificada.
 >
 > A fim de automatizar o processo de montagem em cada arranque do servidor, adicione a seguinte linha ao ficheiro `/etc/fstab`:
 >
-> `IIP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
+> `IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
 >
 
 ### CentOS 7 / AlmaLinux / Rocky Linux

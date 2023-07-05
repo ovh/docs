@@ -8,7 +8,7 @@ updated: 2023-07-05
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-## Objetivo
+## Objetivo 
 
 El servicio NAS-HA de OVHcloud le permite gestionar un almacenamiento de archivos al que podrá acceder desde una red.
 
@@ -109,7 +109,7 @@ Ahora puede acceder a la partición montada en la carpeta especificada.
 >
 > Para automatizar el proceso de montaje cada vez que inicie el servidor, añada la siguiente línea al archivo `/etc/fstab`:
 >
-> `IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
+> `IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
 >
 
 ### Fedora

@@ -4,7 +4,7 @@ excerpt: Découvrez comment vous connecter à votre NAS-HA en utilisant un parta
 updated: 2023-07-04
 ---
 
-## Objectif
+## Objectif 
 
 Le service NAS-HA OVHcloud vous permet de gérer un stockage de fichiers accessible depuis un réseau.
 
