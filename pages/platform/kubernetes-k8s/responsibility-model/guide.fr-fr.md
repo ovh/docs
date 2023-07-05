@@ -135,25 +135,21 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Remplacer les éléments défectueux sur les dispositifs physiques supportant l’Infrastructure as a Service | I | RA |
-| Qualifier, Intervenir sur les éléments managés de l’Infrastructure as a Service (vCenter) | C | RA |
-| Traiter les incidents (tickets et contacts téléphoniques) | AI | RA |
-| Intervenir sur un incident affectant le SI hébergé et services non managés | RA |  |
+| Notifier un incident sur le service Managed Kubernetes en passant par le service de support (ticket, tel …) | RA | I |
+| Gérer et notifier les incidents détectés sur les infrastructures managées du service Managed Kubernetes en cas d’impact avéré pour le client | I | RA |
+| Intervenir sur un incident affectant le service Managed Kubernetes |  | RA |
+| Intervenir sur les incidents causés par une mauvaise configuration du service (mauvaise configuration réseau, mauvaise répartition des workloads, sursollicitassions du control plane kubernetes, …) | RA | CI |
+| Intervenir sur un incident affectant le SI géré | RA |  |
 
 #### **3.2.2. Changements**
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Déployer les correctifs, mettre à jour et configurer les softwares, middlewares et systèmes d’information hébergés sur l’Infrastructure as a Service | RA |  |
-| Optimiser les VMs | RA | I |
-| Valider la demande d’un changement de matériel d’infrastructure soumise par OVHcloud | A | R |
-| Planifier les changements demandés par le client | RA | RI |
-| Prononcer la recette | RA | C |
-| Déployer les correctifs, mettre à jour et configurer l’ensemble des éléments constitutifs de l’Infrastructure as a Service managée | RI | RA |
-| Réaliser les interventions préventives sur les éléments managés de l’Infrastructure as a Service | A | R |
-| Mettre à jour l’hyperviseur  | I | RA |
-| Permettre à OVHcloud de mettre un host en maintenance à n'importe quel moment pour donner lieu à la mise à jour (sous réserve de provisionnement de ressources par le client)  | RA | I |
-| Mettre à jour les VMs | RA |  |
+| Déployer les mises à jour et maintenances nécessaires sur le service kubernetes managées (API, infrastructures, besoins en stockages…) | I | RA |
+| Déployer les mises à jour nécessaires sur les containers managés | RA |  |
+| Demander la modification des ressources allouées au service Kubernetes Managé | RA | I |
+| Réaliser les modifications de ressources allouées demandé par le client | I | RA |
+
 
 ### 4. Réversibilité
 
@@ -161,14 +157,14 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Planifier les opérations de réversibilité | RA | I |
-| Choisir les infrastructures de repli | RA |  |
+| Utiliser les API kubenetes native pour importer/exporter (création, suppression) les données sur le cluster : fichiers au format YAML ou JSON | RA |  |
+| Créer et déployer le plan de réversibilité du SI géré | RA |  |
 
 #### 4.2. Récupération des données
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Gérer les opérations de réversibilité : extraction manuelle, API, OVFTOOL ou logiciels tiers compatibles avec l'offre VMware | RA | I |
+| Gérer les opérations de réversibilité | RA | I |
 | Migrer / transférer les données | RA |  |
 
 ### 5. Fin de service
@@ -177,12 +173,13 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Décommissionner les configurations du Cloud Privé et options associées au client suite à la rupture du contrat | I | RA |
+| Supprimer le cluster kubernetes dans le projet public cloud | RA | I |
+| Détruire les configurations du kubernetes managé propre au client suite à la résiliation du service |  | RA |
 
 #### 5.2. Destruction des données
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Opérer la destruction sécurisée des données sur les supports de stockage |  | RA |
-| Détruire les supports de stockage arrivés en fin de vie ou sur lesquels les processus de destruction sécurisée génèrent des erreurs |  | RA |
-| Fournir une attestation de destruction (sur demande) | I | RA |
+| Détruire les données métier du client en fin de service |  | RA |
+| Détruire les données externes au cluster en fin de service (ex : volume persistant ) | RA |  |
+| Détruire les données relatives à la configuration du kubernetes managé |   | RA |
