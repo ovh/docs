@@ -146,7 +146,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Déployer les mises à jour et maintenances nécessaires sur le service kubernetes managées (API, infrastructures, besoins en stockages…) | I | RA |
-| Déployer les mises à jour nécessaires sur les containers managés | RA |  |
+| Déployer les mises à jour nécessaires sur les conteneurs managés | RA |  |
 | Demander la modification des ressources allouées au service Kubernetes Managé | RA | I |
 | Réaliser les modifications de ressources allouées demandé par le client | I | RA |
 
