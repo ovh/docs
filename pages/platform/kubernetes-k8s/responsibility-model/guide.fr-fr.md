@@ -55,7 +55,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Créer le fichier YAML de configuration d’un conteneur   | RA |   |
 | Démarrer les logiciels conteneurisés | RA |   |
-| Fournir les données aux containers | RA |   |
+| Fournir les données aux conteneurs | RA |   |
 | Modifier la configuration par défaut du réseau de manière à sécuriser les connexions internes et externes au cluster Kubernetes | RA |   |
 
 
