@@ -1,18 +1,27 @@
 ---
-title: "Personnaliser les serveurs DNS d'un nom de domaine"
-excerpt: 'Apprenez à personnaliser les serveurs DNS de votre nom de domaine OVHcloud'
-updated: 2018-10-26
+title: "Personnaliser les serveurs DNS d'un nom de domaine (Glue Registry)"
+excerpt: 'Découvrez comment personnaliser les serveurs DNS de votre nom de domaine OVHcloud'
+updated: 2023-07-05
 ---
-
-**Dernière mise à jour le 27/09/2018**
 
 ## Objectif
 
-Les serveurs DNS hébergent les configurations DNS des noms de domaine. Ces dernières, que l’on peut appeler des zones DNS, se composent d’informations techniques : des enregistrements. Dans une utilisation classique, ceux-ci permettent de faire le lien entre votre nom de domaine et le ou les serveurs qui hébergent votre site internet et vos adresses e-mail.
 
-Selon vos besoins, vous pouvez vouloir personnaliser le nom des serveurs DNS de votre nom de domaine OVHcloud.
+Les **serveurs DNS** hébergent les configurations DNS des noms de domaine : les *zones DNS*. 
 
-**Apprenez à personnaliser les serveurs DNS de votre nom de domaine OVHcloud.**
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Ces *zones DNS* se composent d’informations techniques : des *enregistrements DNS*. Dans une utilisation classique, les *enregistrements DNS* permettent de :
+
+- afficher votre site web avec votre nom de domaine à l'aide de l'adresse IP de votre serveur d'hébergement (enregistrements DNS de type *A* et *AAAA*).
+- rediriger les e-mails reçus sur votre (vos) adresse(s) e-mail(s) personnalisée(s) avec votre nom de domaine (enregistrements DNS de type *MX*).
+- configurer des informations liées à la sécurité / l'authentification de vos services (hébergement web, serveur web, serveur e-mail, etc.)  associés à votre nom de domaine (enregistrements DNS de type *SPF*, *DKIM*, *DMARC*, etc.).
+
+Pour plus d'informations, consultez notre documentation sur les [serveurs DNS OVHcloud](/pages/web/domains/dns_server_general_information).
+
+Selon vos besoins, il est possible personnaliser le nom des serveurs DNS de votre nom de domaine OVHcloud à l'aide du ***Glue Registry***. Par exemple, pour masquer les serveurs DNS de votre fournisseur DNS.
+
+**Découvrez comment personnaliser les serveurs DNS de votre nom de domaine OVHcloud.**
 
 ## Prérequis
 
@@ -21,7 +30,11 @@ Selon vos besoins, vous pouvez vouloir personnaliser le nom des serveurs DNS de 
 
 ## En pratique
 
-**Personnaliser les serveurs DNS d'un nom de domaine est une manipulation sensible** : effectuer un changement inopportun pourrait rendre l'accès à votre site internet et la réception de nouveaux messages sur vos adresses e-mail impossibles. Nous vous invitons à suivre précisément les étapes décrites ci-dessous ou de vous faire assister si vous n'êtes pas sûr de la manipulation que vous allez réaliser.
+> [!primary]
+>
+> **Personnaliser les serveurs DNS d'un nom de domaine est une manipulation sensible** : effectuer un changement inopportun peut rendre l'accès à votre site web et la réception de nouveaux messages sur vos adresses e-mail indisponibles. 
+> Nous vous invitons à suivre précisément les étapes décrites ci-dessous ou de vous faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) en cas de doute.
+>
 
 ### Étape 1 : ajouter les enregistrements GLUE
 
