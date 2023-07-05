@@ -24,7 +24,7 @@ En 2020, OVHcloud a lancé 2 nouvelles gammes, Essentials et Premier. Vous pouve
 
 Ce processus comporte deux aspects :
 
-- L'infrastructure OVHcloud elle-même, qui inclut la côté client de l'administration d'une infrastructure.
+- L'infrastructure OVHcloud elle-même qui inclut le côté client de l'administration d'une infrastructure.
 - L'infrastructure VMware, qui inclut l'ensemble de l'écosystème VMware.
 
 ## Prérequis
