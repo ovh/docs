@@ -28,7 +28,7 @@ This shared model can help relieve the customer’s operational burden.
 | Choose the private or public network where the Kubernetes cluster will be executed | A | I |
 | Choose the service location | RA | I |
 | Decide which Kubenetes version to use | A | IR |
-| Design applications running on the Kubernetes cluster to not store important peristant data locally (nodes are managed as cattle), exemple : use persitant volume CINDER   | A | I |
+| Design applications running on the Kubernetes cluster to not store important peristant data locally (nodes are managed as cattle), example : use persitant volume CINDER   | A | I |
 
 ### 2. Service availability
 
