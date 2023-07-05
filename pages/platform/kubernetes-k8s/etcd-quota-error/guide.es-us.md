@@ -1,12 +1,12 @@
 ---
 title: ETCD Quotas, usage, troubleshooting and error
 excerpt: 'Find out how to view ETCD quotas, usage and fix errors'
-routes:
-    canonical: '/pages/platform/kubernetes-k8s/etcd-quota-error'
-updated: 2023-06-28
+updated: 2023-07-05
 ---
+routes:
+    canonical: /pages/platform/kubernetes-k8s/etcd-quota-error
 
-**Last updated 28th June 2023**
+**Last updated 05th July 2023**
 
 ## Objective
 
@@ -156,25 +156,30 @@ Then you should delete the resources in excess and fix the process responsible f
 
 ## Counting all resources
 
-If you still need to check all resources as you do not know what consumes etcd quotas, you can run this snippet. You will need the `count` plugin for `kubectl`. See [installation](https://github.com/chenjiandongx/kubectl-count#-installation) instructions.
+If you still need to check all resources as you do not know what consumes etcd quotas, you can run this snippet.
+You will need the `count` plugin for `kubectl`. See [installation](https://github.com/chenjiandongx/kubectl-count#-installation) instructions.
+
 ```bash
-kubectl count -A $(kubectl api-resources --verbs=list -o name | paste -s -d,)
-+-----------+--------------------------------------+--------------------------------+-------+
-| Namespace |             GroupVersion             |              Kind              | Count |
-+-----------+--------------------------------------+--------------------------------+-------+
-|           | v1                                   | ComponentStatus                |     3 |
-+-----------+                                      +--------------------------------+-------+
-|           |                                      | ConfigMap                      |   130 |
-+-----------+                                      +--------------------------------+-------+
-|           |                                      | Endpoints                      |   143 |
-+-----------+                                      +                                +       +
-|           |                                      |                                |       |
-+-----------+                                      +--------------------------------+-------+
-|           |                                      | Event                          |  1090 |
-+-----------+--------------------------------------+                                +       +
-|           | events.k8s.io/v1                     |                                |       |
-+-----------+--------------------------------------+--------------------------------+-------+
+kubectl count -A $(kubectl api-resources --verbs=list -o name | tr '\n' ',')
++-----------+---------------------------------------+--------------------------------+-------+
+| Namespace |             GroupVersion              |              Kind              | Count |
++-----------+---------------------------------------+--------------------------------+-------+
+|           | v1                                    | ComponentStatus                |     3 |
++-----------+                                       +--------------------------------+-------+
+|           |                                       | ConfigMap                      |    78 |
++-----------+                                       +--------------------------------+-------+
+|           |                                       | Endpoints                      |    44 |
++-----------+                                       +                                +       +
+|           |                                       |                                |       |
++-----------+                                       +--------------------------------+-------+
+|           |                                       | Event                          |    40 |
++-----------+---------------------------------------+                                +       +
+|           | events.k8s.io/v1                      |                                |       |
++-----------+---------------------------------------+--------------------------------+-------+
+...
 ```
+
+Running the command may take several seconds, depending on your Kubernetes cluster usage.
 
 ## Go further
 
