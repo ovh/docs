@@ -1,12 +1,12 @@
 ---
 title: "Partage de responsabilité sur le service OVHcloud managed Kubernetes"
-slug: vmware-raci
+slug: Kubernetes-raci
 section: Premiers pas
-excerpt: "Partage de responsabilité entre OVHcloud et le client pour l'utilisation du produit VMware on OVHcloud"
-updated: 2023-03-07
+excerpt: "Partage de responsabilité entre OVHcloud et le client pour l'utilisation du service Kubernetes Managé"
+updated: 2023-07-05
 ---
 
-**Dernière mise à jour le 04/07/2023**
+**Dernière mise à jour le 05/07/2023**
 
 ## Objectif
 
