@@ -184,6 +184,49 @@ Partycja NAS-HA jest teraz zamontowana w datastore.
 
 ![ESXI](images/esxi4.png){.thumbnail}
 
+### NFS3/NFS4
+
+Oferta NAS-HA obsługuje protokoły NFS3 i NFS4. Szczegóły ich wykorzystania.
+
+**Co się stanie, jeśli nie podasz wersji podczas składania zamówienia NFS?**
+
+W takim przypadku klient NFS spróbuje połączyć się bezpośrednio z najwyższą wspieraną przez niego wersją.
+Możesz również wybrać, czy chcesz korzystać z NFS3 lub NFS4:
+
+Aby wymusić korzystanie z NFS3, wpisz następujące polecenie:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Przykład:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Aby wymusić korzystanie z NFS4, wpisz następujące polecenie:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Przykład:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Możesz również użyć następującego polecenia, aby określić wersję użytą przez aktualny montaż:
+
+```bash
+ubuntu@server:~$ nfsstat -m
+```
+
+W powrocie parametr `vers=3` lub `vers=4` wskazuje, który protokół jest używany.
+
+Korzystanie z poleceń będzie podobne dla CentOS i Fedora.
+
 ## Sprawdź również
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
