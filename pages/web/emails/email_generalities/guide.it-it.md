@@ -19,7 +19,7 @@ La soluzione MX Plan di OVHcloud con cui potrai inviare e ricevere messaggi dal 
 
 ## Prerequisiti
 
-- Disporre di una soluzione MX Plan Puoi effettuare questa operazione tramite: un'offerta di [hosting Web](https://www.ovhcloud.com/it/web-hosting/), l'[hosting gratuito Start 10M](https://www.ovhcloud.com/it/domains/free-web-hosting/) o la soluzione MX Plan da sola.
+- Disporre di una soluzione MX Plan Puoi effettuare questa operazione tramite: un'offerta di [hosting Web](https://www.ovhcloud.com/it/web-hosting/), l'[Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) o la soluzione MX Plan da sola.
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}.
 
 ## Procedura <a name="instructions"></a>

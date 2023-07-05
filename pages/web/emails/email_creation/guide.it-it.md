@@ -19,14 +19,14 @@ Una soluzione email MX Plan è stata appena creata per usufruire di indirizzi em
 
 ## Prerequisiti
 
-- Disporre di una soluzione MX Plan (il servizio è disponibile con un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}, un [hosting gratuito Start 10M](https://www.ovhcloud.com/it/domains/free-web-hosting/){.external} o una soluzione MX Plan ordinata separatamente)
+- Disporre di una soluzione MX Plan (il servizio è disponibile con un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}, un [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/){.external} o una soluzione MX Plan ordinata separatamente)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}.
 
 > [!primary]
 >
 > **Casi particolari**
 >
-> - Se disponi di un hosting Start 10M, prima di creare un indirizzo email è necessario attivarlo. Questa operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, selezionando il dominio interessato.
+> - Se disponi di un Hosting gratuito 100M, prima di creare un indirizzo email è necessario attivarlo. Questa operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, selezionando il dominio interessato.
 > - Prima di continuare la lettura di questa guida, è necessario attivare il servizio di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external}. Per farlo, consulta la guida [Attiva gli indirizzi email inclusi nel tuo hosting Web](/pages/web/hosting/activate-email-hosting).
 
 ## Procedura <a name="instructions"></a>

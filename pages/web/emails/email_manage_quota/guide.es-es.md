@@ -18,7 +18,7 @@ Cada cuenta de correo de OVHcloud dispone de un espacio de almacenamiento dedica
 
 ## Requisitos
 
-- Disponer de una solución de correo electrónico de OVHcloud previamente configurada (**MX Plan**, incluida en nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/), incluida en un [alojamiento Start10M gratuito](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o contratada por separado como solución autónoma, como [**Hosted Exchange**](https://www.ovhcloud.com/es-es/emails/hosted-exchange/)).
+- Disponer de una solución de correo electrónico de OVHcloud previamente configurada (**MX Plan**, incluida en nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/), incluida en un [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o contratada por separado como solución autónoma, como [**Hosted Exchange**](https://www.ovhcloud.com/es-es/emails/hosted-exchange/)).
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la sección `Web Cloud`{.action}.
 - Disponer de la información de conexión a las direcciones de correo electrónico correspondientes.
 
@@ -26,7 +26,7 @@ Cada cuenta de correo de OVHcloud dispone de un espacio de almacenamiento dedica
 >
 > **Casos particulares**
 >
-> - En el caso del hosting gratuito Start 10M, es necesario activar previamente el alojamiento para poder crear una dirección de correo. Puede realizar esta operación desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), accediendo al dominio correspondiente.
+> - En el caso del alojamiento gratuito 100M, es necesario activar previamente el alojamiento para poder crear una dirección de correo. Puede realizar esta operación desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), accediendo al dominio correspondiente.
 > - Si tiene un [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/), deberá activar su solución MX Plan incluida antes de continuar la lectura de esta guía. Para ello, consulte nuestra guía [Activar las direcciones de correo incluidas en su alojamiento web](/pages/web/hosting/activate-email-hosting).
 
 ## Procedimiento  <a name="instructions"></a>

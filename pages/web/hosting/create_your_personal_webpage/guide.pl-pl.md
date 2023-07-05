@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial - Tworzenie strony WWW w OVHcloud'
-excerpt: 'Dowiedz się, jak utworzyć pierwszą stronę internetową na darmowym hostingu Start 10M'
+excerpt: 'Dowiedz się, jak utworzyć pierwszą stronę internetową na Darmowy hosting 100M'
 updated: 2023-02-17
 ---
 
@@ -12,7 +12,7 @@ updated: 2023-02-17
 
 ## Wprowadzenie
 
-Dowiedz się, jak utworzyć pierwszą stronę internetową na hostingu Start 10M oferowanym bezpłatnie w przypadku zakupu domeny od OVHcloud.
+Dowiedz się, jak utworzyć pierwszą stronę internetową na darmowy hosting 100M oferowanym bezpłatnie w przypadku zakupu domeny od OVHcloud.
 
 > [!warning]
 >
@@ -24,7 +24,7 @@ Dowiedz się, jak utworzyć pierwszą stronę internetową na hostingu Start 10M
 ## Wymagania początkowe
 
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) lub bezpłatnego [hostingu Start 10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/)
+- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) lub bezpłatnego [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/)
 - Posiadanie edytora tekstu (notebooka, TextEdit, Notepad++, itp.)
 - Instalacja klienta FTP (takiego jak [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) do pobrania (umieszczenie na hostingu) plików z serwera dedykowanego.
 
@@ -149,7 +149,7 @@ Znacznik ten jest używany do zapisywania tekstu ("p" do akapitu). Istnieje kilk
 <body>
     <h1>Witamy na mojej stronie osobistej</h1>
     <h2>Szybkie i proste tworzenie strony WWW</h2>
-    <p>OVHcloud oferuje hosting Start 10M dla każdej zarejestrowanej domeny.</p>
+    <p>OVHcloud oferuje darmowy hosting 100M dla każdej zarejestrowanej domeny.</p>
 </body>
 ```
 
@@ -164,10 +164,10 @@ W HTML możesz używać list. Weźmiemy przykład prostych list, tzw. nieuporzą
     <p>
         <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
-    <p>OVHcloud oferuje hosting Start 10M dla każdej zarejestrowanej domeny.</p>
+    <p>OVHcloud oferuje darmowy hosting 100M dla każdej zarejestrowanej domeny.</p>
     <p>Oferta "Domena" zawiera:</p>
     <ul>
-        <li>Hosting WWW 10 MB gratis</li>
+        <li>Hosting WWW 100 MB gratis</li>
         <li>Konto E-mail 5 GB za darmo</li>
         <li>DNSSEC: ochrona przed zatruciem cache (cache poisoning)</li>
         <li>Easy Redirect: dostęp do sieci społecznościowych z domeny</li>
@@ -179,7 +179,7 @@ Możesz zobaczyć wynik w przeglądarce: domyślnie elementy list są wyświetla
 
 #### Dodaj obrazy, aby Twoja strona była bardziej atrakcyjna
 
-Internet to przede wszystkim medium wizualne. W tej części zobaczymy, jak wstawić obrazy do treści. Oferta Start 10M oferuje przestrzeń dyskową 10 MB. To wystarczy dla Twoich stron HTML i CSS, ale może być to ograniczone, jeśli chcesz umieścić dużo obrazów na swojej stronie. W tym przypadku zalecamy wybranie [oferty hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) umożliwiającej szybsze przechowywanie danych.
+Internet to przede wszystkim medium wizualne. W tej części zobaczymy, jak wstawić obrazy do treści. Oferta Darmowy hosting 100M oferuje przestrzeń dyskową 100 MB. To wystarczy dla Twoich stron HTML i CSS, ale może być to ograniczone, jeśli chcesz umieścić dużo obrazów na swojej stronie. W tym przypadku zalecamy wybranie [oferty hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) umożliwiającej szybsze przechowywanie danych.
 
 Znacznik HTML używany do wyświetlania obrazu jest znacznikiem `<img>`. W przeciwieństwie do tych, które widzieliśmy wcześniej, nie ma otwartości i zamknięcia tego elementu. Porozmawiamy o autofermantycznym tagu. Są to atrybuty tego znacznika, które umożliwiają powiązanie lokalizacji pliku z opisowym tekstem obrazu.
 
@@ -188,7 +188,7 @@ Znacznik HTML używany do wyświetlania obrazu jest znacznikiem `<img>`. W przec
 Duży obraz to obraz, który zajmie dużo czasu, zwłaszcza jeśli internauci używają smartfona lub tabletu podłączonego do sieci 4G lub 5G.
 Ogólnie rzecz biorąc, musisz zoptymalizować obrazy i ograniczyć ich wagę. Waga jest wyrażona w bajtach. Zazwyczaj używane jednostki to kilobajty (1 kb = 1,000 bajtu) lub megabajt (1 MB = 1,000,000 bajtów). Obraz powyżej kilkudziesięciu KB jest uważany za ciężki i zasługuje na optymalizację. 
 
-**Przykład**: jeśli Twoje obrazy ważą każde 1 MB, to będziesz mógł umieścić poniżej 10 obrazów na Twoim hostingu Start10M. Jeśli uda Ci się zmniejszyć rozmiar między 50 KB a 200 KB, może pojawić się nawet 100 na Twojej stronie WWW.
+**Przykład**: jeśli masz obrazy, które trwają 1 miesiąc, powinieneś bezpłatnie ograniczyć liczbę 100 obrazów do 100 mln. Jeśli chcesz zmniejszyć swój ogon między 50 ko a 200 ko, powinieneś wlać go do prezentera dokładnie tyle, ile chcesz milirów na swojej stronie internetowej.
 
 Zalecenia dotyczące najlżejszych plików:
 
@@ -218,10 +218,10 @@ Teraz utworzymy nowy punkt, w którym umieścimy obraz (w tym przykładzie nie o
     <p>
         <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
-    <p>OVHcloud oferuje hosting Start 10M dla każdej zarejestrowanej domeny.</p>
+    <p>OVHcloud oferuje darmowy hosting 100M dla każdej zarejestrowanej domeny.</p>
     <p>Oferta "Domena" zawiera:</p>
     <ul>
-        <li>Hosting WWW 10 MB gratis</li>
+        <li>Hosting WWW 100 MB gratis</li>
         <li>Konto E-mail 5 GB za darmo</li>
         <li>DNSSEC: ochrona przed zatruciem cache (cache poisoning)</li>
         <li>Easy Redirect: dostęp do sieci społecznościowych z domeny</li>
@@ -340,10 +340,10 @@ Kod HTML pojawi się w następującej strukturze:
         <main>
             <h1>Witamy na mojej stronie osobistej</h1>
             <h2>Szybkie i proste tworzenie strony WWW</h2>
-            <p>OVHcloud oferuje hosting Start 10M dla każdej zarejestrowanej domeny.</p>
+            <p>OVHcloud oferuje Darmowy hosting 100M dla każdej zarejestrowanej domeny.</p>
             <p>Oferta "Domena" zawiera:</p>
             <ul>
-                <li>Hosting WWW 10 MB gratis</li>
+                <li>Hosting WWW 100 MB gratis</li>
                 <li>Konto E-mail 5 GB za darmo</li>
                 <li>DNSSEC: ochrona przed zatruciem cache (cache poisoning)</li>
                 <li>Easy Redirect: dostęp do sieci społecznościowych z domeny</li>

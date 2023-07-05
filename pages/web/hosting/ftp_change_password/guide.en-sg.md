@@ -54,7 +54,7 @@ Your new password must respect the following **password policy**:
 
 Depending on which OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/) you have, there are two different paths for changing your FTP user password user via the `FTP-SSH`{.action} tab:
 
-- **For Web Hosting plans that do not allow you to create a second FTP user** (*Start 10M* (only available in Europe) and *Personal hosting*): Click on the *pencil icon* in the `Password`{.action} column of the table that appears, enter the new password **in accordance with the password policy**, then confirm the change by clicking on the *green* validation button.
+- **For Web Hosting plans that do not allow you to create a second FTP user** (*Personal hosting*): Click on the *pencil icon* in the `Password`{.action} column of the table that appears, enter the new password **in accordance with the password policy**, then confirm the change by clicking on the *green* validation button.
 
 ![change-ftp-password-step1-perso](images/change-ftp-password-step1-perso.png){.thumbnail}
 

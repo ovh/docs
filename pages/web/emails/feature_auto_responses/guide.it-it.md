@@ -19,7 +19,7 @@ In caso di assenza al tuo ufficio, puoi installare una segreteria email che lasc
 
 ## Prerequisiti
 
-- Disporre di una soluzione MX Plan Puoi effettuare questa operazione tramite: un'offerta di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external}, l'[hosting gratuito Start 10M](https://www.ovhcloud.com/it/domains/free-web-hosting/){.external} incluso con un dominio (attivato in precedenza) o la soluzione MX Plan ordinata separatamente.
+- Disporre di una soluzione MX Plan Puoi effettuare questa operazione tramite: un'offerta di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external}, l'[Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/){.external} incluso con un dominio (attivato in precedenza) o la soluzione MX Plan ordinata separatamente.
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura

@@ -121,7 +121,7 @@ Une fois ces 7 éléments vérifiés, vous pouvez réaliser votre [changement d'
 
 #### Vous possédez une offre d'hébergement gratuit 100M <a name="start10m"></a>
 
-Dans le cadre d'un changement de l'offre [Start10M](/pages/web/hosting/activate_start10m), seule [l'offre Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) vous sera proposée. Néanmoins, après un changement vers l'offre Perso, il vous sera possible de faire évoluer cette dernière vers l'ensemble de nos [offres d'hébergement Web](https://www.ovhcloud.com/fr/web-hosting/).
+Dans le cadre d'un changement de l'offre d'[hébergement gratuit 100M](/pages/web/hosting/activate_start10m), seule [l'offre Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) vous sera proposée. Néanmoins, après un changement vers l'offre Perso, il vous sera possible de faire évoluer cette dernière vers l'ensemble de nos [offres d'hébergement Web](https://www.ovhcloud.com/fr/web-hosting/).
 
 Suivez [ces instructions](#modify) pour réaliser votre changement d'offre.
 

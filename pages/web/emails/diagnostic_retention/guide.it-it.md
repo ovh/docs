@@ -19,7 +19,7 @@ Hai eliminato per errore uno o più elementi (email, contatti, appuntamento con 
 ## Prerequisiti
  
 - Disporre di una soluzione email OVHcloud
-    - **MX Plan** ([solo nuova versione](/pages/web/emails/email_generalities)) proposto tra le nostre [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/), incluso in un [hosting Start10M gratuito](https://www.ovhcloud.com/it/domains/free-web-hosting/)
+    - **MX Plan** ([solo nuova versione](/pages/web/emails/email_generalities)) proposto tra le nostre [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/), incluso in un [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/)
     - o [**Hosted Exchange**](https://www.ovhcloud.com/it/emails/hosted-exchange/)
     - o [**Email Pro**](https://www.ovhcloud.com/it/emails/email-pro/)
 - Conoscere le credenziali di accesso dell'indirizzo email

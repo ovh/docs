@@ -23,7 +23,7 @@ A delegação dá ao utilizador de uma conta de e-mail a possibilidade de gerir 
 
 ## Requisitos
 
-- Dispor de uma oferta MX Plan Está disponível através de: uma [oferta de alojamento Web Cloud](https://www.ovhcloud.com/pt/web-hosting/), um [alojamento gratuito Start 10M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou uma oferta MX Plan encomendada separadamente.
+- Dispor de uma oferta MX Plan Está disponível através de: uma [oferta de alojamento Web Cloud](https://www.ovhcloud.com/pt/web-hosting/), um [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou uma oferta MX Plan encomendada separadamente.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud`{.action}.
 
 > [!warning]

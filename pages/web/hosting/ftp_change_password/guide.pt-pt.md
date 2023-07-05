@@ -58,7 +58,7 @@ A sua nova password deverá respeitar a **política das palavras-passe** seguint
 
 Dependendo do seu plano de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/), a alteração da palavra-passe do utilizador FTP através do separador `FTP-SSH`{.action} poderá ser efetuada de duas formas:
 
-- **para as ofertas que não permitem criar um segundo utilizador FTP** (ofertas *Start 10M* e *Perso*): clique no *pictograma em forma de lápis* na coluna `Palavra-passe`{.action} do quadro que aparece, introduza a nova palavra-passe **seguindo a política das palavras-passe** e confirme a alteração clicando no *botão verde* de validação.
+- **para as ofertas que não permitem criar um segundo utilizador FTP** (ofertas *Alojamento gratuito 100M* e *Perso*): clique no *pictograma em forma de lápis* na coluna `Palavra-passe`{.action} do quadro que aparece, introduza a nova palavra-passe **seguindo a política das palavras-passe** e confirme a alteração clicando no *botão verde* de validação.
 
 ![change-ftp-password-step1-perso](images/change-ftp-password-step1-perso.png){.thumbnail}
 

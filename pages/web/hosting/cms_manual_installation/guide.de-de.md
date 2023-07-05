@@ -130,7 +130,7 @@ Wenn Sie noch keinen FTP-Client verwenden, können Sie FileZilla installieren. D
 
 ### 1.4 Eine Datenbank erstellen <a name="step1-4"></a> 
 
-CMS benötigen eine Datenbank, um zu funktionieren. Mit unseren [Webhostings](https://www.ovhcloud.com/de/web-hosting/) erhalten Sie Inklusiv-Datenbanken, mit Ausnahme des [Start 10M Gratis-Hostings](https://www.ovhcloud.com/de/domains/free-web-hosting/).
+CMS benötigen eine Datenbank, um zu funktionieren. Mit unseren [Webhostings](https://www.ovhcloud.com/de/web-hosting/) erhalten Sie Inklusiv-Datenbanken, mit Ausnahme des [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/).
 
 Verwenden Sie unsere Anleitung zur [Erstellung einer Datenbank über Ihr Webhosting](/pages/web/hosting/sql_create_database).
 

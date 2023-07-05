@@ -13,7 +13,7 @@ With the OVHcloud MX Plan, you can send and receive emails from third-party soft
 
 ## Requirements
 
-- An OVHcloud **MX Plan** email solution, included in our [web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/), included in a free [Start10M](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/) hosting plan, or ordered separately as a standalone solution.
+- An OVHcloud **MX Plan** email solution, included in our [web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/), included in a [100M free hosting](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/) hosting plan, or ordered separately as a standalone solution.
 - Access to the MX Plan email account you would like to use; for more information, please refer to our guide [Getting started with an MX Plan](/pages/web/emails/email_generalities).
 
 ## Instructions

@@ -27,7 +27,7 @@ W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=ht
 >
 > **Przed** wprowadzeniem jakichkolwiek zmian w dotychczasowym abonamencie sprawdź, czy masz do czynienia z którymkolwiek z poniższych pytań:
 >
-> - [Jak zmienić ofertę bezpłatnego Start 10M na ofertę hostingu?](#start10m)
+> - [Jak zmienić ofertę bezpłatnego Darmowy hosting 100M na ofertę hostingu?](#start10m)
 > - [Jak mogę skorzystać z tymczasowej wydajności w mojej ofercie hostingu Performance?](#boost)
 > - [Czy będę tracił czas pozostały na aktualnej usłudze hostingu podczas zmiany oferty?](#billing)
 > - [Czy mogę zmienić moją obecną ofertę na niższą?](#checks)
@@ -140,9 +140,9 @@ Po sprawdzeniu 7 elementów możesz wykonać [zmianę oferty](#modify).
 
 ### Szczególne przypadki
 
-#### Posiadasz ofertę Start 10M <a name="start10m"></a>
+#### Posiadasz ofertę Darmowy hosting 100M <a name="start10m"></a>
 
-W związku ze zmianą oferty [Start10M](/pages/web/hosting/activate_start10m) zaproponowana zostanie tylko [oferta Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/). Niemniej jednak, po zmianie oferty Perso, będziesz mógł ją zmienić na wszystkie nasze [pakiety hostingowe](https://www.ovhcloud.com/fr/web-hosting/).
+W związku ze zmianą oferty [Darmowy hosting 100M](/pages/web/hosting/activate_start10m) zaproponowana zostanie tylko [oferta Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/). Niemniej jednak, po zmianie oferty Perso, będziesz mógł ją zmienić na wszystkie nasze [pakiety hostingowe](https://www.ovhcloud.com/fr/web-hosting/).
 
 Postępuj zgodnie [z instrukcjami](#modify), aby zmienić ofertę.
 

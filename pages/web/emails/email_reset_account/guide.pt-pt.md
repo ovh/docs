@@ -22,7 +22,7 @@ Deseja:
 
 ## Requisitos
 
-- Dispor de uma solução de e-mail OVHcloud previamente configurada (**MX Plan**, proposta entre as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/), incluída num [alojamento Start10M gratuito](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou encomendada separadamente como solução autónoma, como o [**Hosted Exchange**](https://www.ovhcloud.com/pt/emails/hosted-exchange/) ou o [**Email Pro**](https://www.ovhcloud.com/pt/emails/email-pro/)).
+- Dispor de uma solução de e-mail OVHcloud previamente configurada (**MX Plan**, proposta entre as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/), incluída num [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou encomendada separadamente como solução autónoma, como o [**Hosted Exchange**](https://www.ovhcloud.com/pt/emails/hosted-exchange/) ou o [**Email Pro**](https://www.ovhcloud.com/pt/emails/email-pro/)).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
 - Ter acesso aos endereços de e-mail pertinentes.
 

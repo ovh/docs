@@ -17,7 +17,7 @@ Con la soluzione MX Plan OVHcloud, potete inviare e ricevere email da un softwar
 
 ## Prerequisiti
 
-- Disporre di una soluzione email OVHcloud **MX Plan**, inclusa nelle nostre [soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusa in un [hosting Start10M gratuito](https://www.ovhcloud.com/it/domains/free-web-hosting/) o ordinata separatamente come soluzione autonoma
+- Disporre di una soluzione email OVHcloud **MX Plan**, inclusa nelle nostre [soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusa in un [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) o ordinata separatamente come soluzione autonoma
 - Disporre delle informazioni di connessione all'indirizzo email MX Plan che vuoi consultare Per maggiori informazioni, consulta la nostra guida Iniziare a [utilizzare la soluzione MX Plan](/pages/web/emails/email_generalities).
 
 ## Procedura

@@ -12,7 +12,7 @@ updated: 2023-02-17
 
 ## Objetivo
 
-Esta guía explica cómo crear la primera página de un sitio web en un alojamiento web Start 10M gratuito para la adquisición de un dominio en OVHcloud.
+Esta guía explica cómo crear la primera página de un sitio web en un Alojamiento gratuito 100M para la adquisición de un dominio en OVHcloud.
 
 > [!warning]
 >
@@ -24,7 +24,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 ## Requisitos
 
 - Tener un [dominio](https://www.ovhcloud.com/es-es/domains/)
-- Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/) o un [alojamiento gratuito Start 10M.](https://www.ovhcloud.com/es-es/domains/free-web-hosting/)
+- Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/) o un [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/)
 - Tener un editor de texto (bloc de notas, TextEdit, Notepad++, etc.).
 - Haber instalado un cliente FTP (como [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) para descargar (subir al alojamiento) los archivos en su espacio dedicado.
 
@@ -149,7 +149,7 @@ Esta etiqueta se utiliza para poner texto ("p" para párrafo). Es posible config
 <body>
     <h1>Bienvenido a mi página personal</h1>
     <h2>Cree rápida y fácilmente su sitio web</h2>
-    <p>OVHcloud le propone, en su producto Start 10M, gratuitamente un alojamiento para toda compra de un nombre de dominio.</p>
+    <p>OVHcloud le propone, en su producto Alojamiento gratuito 100M, gratuitamente un alojamiento para toda compra de un nombre de dominio.</p>
 </body>
 ```
 
@@ -164,10 +164,10 @@ En HTML puede utilizar listas. Tomaremos el ejemplo de listas simples, llamadas 
     <p>
         <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
-    <p>OVHcloud le propone, en su producto Start 10M, gratuitamente un alojamiento para toda compra de un nombre de dominio.</p>
+    <p>OVHcloud le propone, en su producto Alojamiento gratuito 100M, gratuitamente un alojamiento para toda compra de un nombre de dominio.</p>
     <p>La oferta "Dominio" incluye:</p>
     <ul>
-        <li>Web hosting 10 MB incluido</li>
+        <li>Web hosting 100 MB incluido</li>
         <li>Cuenta Email 5 GB incluido</li>
         <li>DNSSEC: protección contra el envenenamiento de la caché (cache poisoning)</li>
         <li>Easy Redirect: acceso a las redes sociales desde su dominio</li>
@@ -179,7 +179,7 @@ Puede ver el resultado en su navegador: de forma predeterminada, los elementos d
 
 #### Añadir imágenes para hacer su página más atractiva
 
-La web es un medio sobre todo visual. Veremos en esta sección cómo insertar imágenes en su contenido. El producto Start 10M le ofrece un espacio de almacenamiento de 10 MB. Esto es suficiente para las páginas HTML y CSS, pero puede ser limitado si desea poner muchas imágenes en su sitio web. En ese caso, le recomendamos que contrate un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/) que le permita disfrutar de un mayor almacenamiento.
+La web es un medio sobre todo visual. Veremos en esta sección cómo insertar imágenes en su contenido. El producto Alojamiento gratuito 100M le ofrece un espacio de almacenamiento de 100 MB. Esto es suficiente para las páginas HTML y CSS, pero puede ser limitado si desea poner muchas imágenes en su sitio web. En ese caso, le recomendamos que contrate un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/) que le permita disfrutar de un mayor almacenamiento.
 
 La etiqueta HTML usada para mostrar una imagen es la etiqueta `<img>`. A diferencia de las etiquetas que hemos visto antes, no hay apertura ni cierre de este elemento. Hablaremos de una etiqueta de autocierre. Los atributos de esta etiqueta son los que le permitirán vincular la ubicación del archivo con el texto descriptivo de la imagen.
 
@@ -188,7 +188,7 @@ La etiqueta HTML usada para mostrar una imagen es la etiqueta `<img>`. A diferen
 Una imagen de gran tamaño es una imagen que tardará en ser cargada por su navegador, especialmente si sus visitantes utilizan un smartphone o tablet conectada a la red 4G o 5G.
 Por regla general, debe optimizar sus imágenes y limitar su peso. Este peso se expresa en bytes. Las unidades que se utilizan generalmente son los kilobytes (1 KB = 1.000 bytes) o el megabyte (1 MB = 1.000.000 bytes). Una imagen superior a unas cuantas decenas de KB se considera pesada y merece ser optimizada. 
 
-**Ejemplo**: si sus imágenes pesan 1 MB cada una, estará limitado a menos de 10 imágenes en su alojamiento Start10M. Si logras reducir su tamaño entre 50 KB y 200 KB, podrías tener hasta cien en tu página web.
+**Ejemplo**: si tiene imágenes que duran 1 mes, debe limitar su número de 100 imágenes a 100M sin cargo. Si desea reducir su cola entre 50 ko y 200 ko, debe verterla en el presentador tanto como desee en su página web.
 
 Algunos consejos para que sus archivos sean lo más ligeros posible:
 
@@ -221,7 +221,7 @@ Ahora vamos a crear un nuevo párrafo en el que colocar la imagen (en este ejemp
     <p>OVHcloud le propone, en su producto Start 10M, gratuitamente un alojamiento para toda compra de un nombre de dominio.</p>
     <p>La oferta "Dominio" incluye:</p>
     <ul>
-        <li>Web hosting 10 MB incluido</li>
+        <li>Web hosting 100 MB incluido</li>
         <li>Cuenta Email 5 GB incluido</li>
         <li>DNSSEC: protección contra el envenenamiento de la caché (cache poisoning)</li>
         <li>Easy Redirect: acceso a las redes sociales desde su dominio</li>
@@ -340,10 +340,10 @@ El código HTML se mostrará del siguiente modo:
         <main>
             <h1>Bienvenido a mi página personal</h1>
             <h2>Cree rápida y fácilmente su sitio web</h2>
-            <p>OVHcloud le propone, en su producto Start 10M, gratuitamente un alojamiento para toda compra de un nombre de dominio.</p>
+            <p>OVHcloud le propone, en su producto alojamiento gratuito 100M, gratuitamente un alojamiento para toda compra de un nombre de dominio.</p>
             <p>La oferta "Dominio" incluye:</p>
             <ul>
-                <li>Web hosting 10 MB incluido</li>
+                <li>Web hosting 100 MB incluido</li>
                 <li>Cuenta Email 5 GB incluido</li>
                 <li>DNSSEC: protección contra el envenenamiento de la caché (cache poisoning)</li>
                 <li>Easy Redirect: acceso a las redes sociales desde su dominio</li>

@@ -17,7 +17,7 @@ Gli account email del servizio OVHcloud sono accessibili tramite la password ass
 
 ## Prerequisiti
 
-- Disporre di una soluzione email OVHcloud configurata precedentemente (**MX Plan**, inclusa nelle nostre [soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusa in un [hosting Start10M gratuito](https://www.ovhcloud.com/it/domains/free-web-hosting/) o ordinata separatamente come soluzione autonoma, come [**Hosted Exchange**](https://www.ovhcloud.com/it/emails/hosted-exchange/) o [**Email Pro**](https://www.ovhcloud.com/it/emails/email-pro/))
+- Disporre di una soluzione email OVHcloud configurata precedentemente (**MX Plan**, inclusa nelle nostre [soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusa in un [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) o ordinata separatamente come soluzione autonoma, come [**Hosted Exchange**](https://www.ovhcloud.com/it/emails/hosted-exchange/) o [**Email Pro**](https://www.ovhcloud.com/it/emails/email-pro/))
 - In base al metodo utilizzato: essere connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) nella sezione `Web Cloud`{.action} o essere connesso all'indirizzo email dalla [Webmail](https://www.ovhcloud.com/it/mail/).
 
 > [!primary]

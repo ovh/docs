@@ -58,7 +58,7 @@ La nueva contraseña debe respetar la **política de las siguientes contraseñas
 
 Según el plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/), la modificación de la contraseña del usuario FTP a través de la pestaña `FTP-SSH`{.action} se realizará por dos caminos diferentes:
 
-- **productos que no permiten crear un segundo usuario FTP** (productos *Start 10M* (disponible solo en Europa) y *Personal*): haga clic en el *pictograma con forma de lápiz* en la columna `Contraseña`{.action} de la tabla que aparece, introduzca la nueva contraseña **respetando la política de contraseñas** y luego confirme el cambio haciendo clic en *botón verde* de validación.
+- **productos que no permiten crear un segundo usuario FTP** (*Personal*): haga clic en el *pictograma con forma de lápiz* en la columna `Contraseña`{.action} de la tabla que aparece, introduzca la nueva contraseña **respetando la política de contraseñas** y luego confirme el cambio haciendo clic en *botón verde* de validación.
 
 ![change-ftp-password-step1-perso](images/change-ftp-password-step1-perso.png){.thumbnail}
 

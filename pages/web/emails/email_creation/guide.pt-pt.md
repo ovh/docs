@@ -19,14 +19,14 @@ Adquiriu um serviço de e-mail MX Plan. que lhe permite beneficiar de endereços
 
 ## Requisitos
 
-- Ter uma oferta MX Plan (incluída num plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, num [alojamento gratuito Start 10M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.external} ou disponível em separado).
+- Ter uma oferta MX Plan (incluída num plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, num [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.external} ou disponível em separado).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
 
 > [!primary]
 >
 > **Casos especiais**
 >
-> - Relativamente ao alojamento gratuito Start 10M: é obrigatório ativá-lo antes para poder criar um endereço de e-mail. Pode efetuar esta operação a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, posicionando-se no domínio em questão.
+> - Relativamente ao alojamento gratuito 100M: é obrigatório ativá-lo antes para poder criar um endereço de e-mail. Pode efetuar esta operação a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, posicionando-se no domínio em questão.
 > - No âmbito de um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, é necessário ativar a oferta MX Plan incluída antes de continuar a ler este manual. Para isso, consulte o nosso manual "[Ativar os endereços de e-mail incluídos no seu alojamento web](/pages/web/hosting/activate-email-hosting)".
 
 ## Instruções <a name="instructions"></a>

@@ -19,7 +19,7 @@ Przy użyciu opcji „Reguły skrzynki odbiorczej” można utworzyć złożone 
 
 ## Wymagania początkowe
 
-- skonfigurowane rozwiązanie poczty elektronicznej OVHcloud (**usługa MX Plan** dostępna w ramach [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/), zawarta w [bezpłatnym hostingu Start10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub zamówiona oddzielnie jako rozwiązanie autonomiczne; [**Hosted Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [**E-mail Pro**](https://www.ovhcloud.com/pl/emails/email-pro/))
+- skonfigurowane rozwiązanie poczty elektronicznej OVHcloud (**usługa MX Plan** dostępna w ramach [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/), zawarta w [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub zamówiona oddzielnie jako rozwiązanie autonomiczne; [**Hosted Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [**E-mail Pro**](https://www.ovhcloud.com/pl/emails/email-pro/))
 - dane do logowania dla adresu e-mail, który chcesz skonfigurować
 
 

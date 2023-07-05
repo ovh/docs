@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial - Creating your personal webpage at OVHcloud'
-excerpt: 'Find out how to create your first webpage with a free Start 10M hosting plan'
+excerpt: 'Find out how to create your first webpage with a 100M free hosting plan'
 updated: 2023-02-17
 ---
 
@@ -8,7 +8,7 @@ updated: 2023-02-17
 
 ## Objective
 
-Find out how to create the first page of a website on a Start 10M hosting plan, available for free with every domain name purchase from OVHcloud.
+Find out how to create the first page of a website on a 100M free hosting plan, available for free with every domain name purchase from OVHcloud.
 
 
 > [!warning]
@@ -20,7 +20,7 @@ Find out how to create the first page of a website on a Start 10M hosting plan, 
 ## Requirements
 
 - A [domain name](https://www.ovhcloud.com/en-gb/domains/)
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) or a [Start 10M hosting plan](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/)
+- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) or a [100M free hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/)
 - A text editor (Notepad, TextEdit, Notepad++, etc.)
 - An FTP client (such as [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) installed to transfer files to your hosting storage space
 
@@ -145,7 +145,7 @@ This tag is used to put text (`p` for paragraph). You can position several of th
 <body>
     <h1>Welcome to my personal page</h1>
     <h2>Create your website quickly and easily</h2>
-    <p>OVHcloud offers Start 10M hosting for every domain name purchase for free.</p>
+    <p>OVHcloud offers 100M free hosting for every domain name purchase for free.</p>
 </body>
 ```
 
@@ -160,10 +160,10 @@ You can use lists in HTML. We will take the example of simple lists, called unor
     <p>
         <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
-    <p>OVHcloud offers Start 10M hosting for every domain name purchase for free.</p>
+    <p>OVHcloud offers 100M free hosting for every domain name purchase for free.</p>
     <p>The domain name offer includes:</p>
     <ul>
-        <li>Free 10 MB web hosting</li>
+        <li>Free 100 MB web hosting</li>
         <li>Free 5 GB email account</li>
         <li>DNSSEC: cache poisoning protection</li>
         <li>Easy Redirect: accessing social networks from your domain name</li>
@@ -175,7 +175,7 @@ You can see the result in your browser: by default, list items are displayed wit
 
 #### Add pictures to make your page more attractive
 
-The web is primarily a visual medium. In this section, we will look at how to insert images into your content. Start 10M comes with 10 MB of storage. This is enough for your HTML and CSS pages, but it can be limited if you want to put a lot of images on your site. If this is the case, we recommend opting for an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), as this would give you more storage.
+The web is primarily a visual medium. In this section, we will look at how to insert images into your content. 100M free hosting comes with 100 MB of storage. This is enough for your HTML and CSS pages, but it can be limited if you want to put a lot of images on your site. If this is the case, we recommend opting for an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), as this would give you more storage.
 
 The HTML tag used to display an image is the `<img>` tag. Unlike the tags we saw earlier, there is no opening and closing of this item. We'll call it a self-closing tag. The attributes of this tag will provide the link to the file location and the descriptive text of the image.
 
@@ -184,7 +184,7 @@ The HTML tag used to display an image is the `<img>` tag. Unlike the tags we saw
 A large image will take time to load in a browser, especially if your visitors use a smartphone or tablet connected to the 4G or 5G network.
 In general, you should optimise your images and limit their size. Their "weight" is expressed in bytes. Typical units are kilobytes (1 KB = 1,000 bytes) or megabytes (1 MB = 1,000,000 bytes). An image larger than a few dozen KB is considered "heavy" and deserves to be optimised. 
 
-**Example**: If your images each weigh 1 MB, you will be limited to less than 10 images on your Start10M hosting. If you manage to reduce their size from 50kb to 200kb, you could present up to a hundred on your web page.
+**Example** : if you have images that last 1 month, you should limit your number of 100 images to 100M free of charge. If you want to reduce your tail between 50 ko and 200 ko, you should pour it in the presenter just as much as you want milliers on your web page.
 
 Some tips to make your files as light as possible:
 
@@ -214,10 +214,10 @@ We will now create a new paragraph in which we will place the image (in this exa
     <p>
         <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
-    <p>OVHcloud offers Start 10M hosting for every domain name purchase for free.</p>
+    <p>OVHcloud offers 100M free hosting for every domain name purchase for free.</p>
     <p>The domain name offer includes:</p>
     <ul>
-        <li>Free 10 MB web hosting</li>
+        <li>Free 100 MB web hosting</li>
         <li>Free 5 GB email account</li>
         <li>DNSSEC: cache poisoning protection</li>
         <li>Easy Redirect: accessing social networks from your domain name</li>
@@ -339,7 +339,7 @@ Your HTML code will look like this:
             <p>OVHcloud offers Start 10M hosting for every domain name purchase for free.</p>
             <p>The domain name offer includes:</p>
             <ul>
-                <li>Free 10 MB web hosting</li>
+                <li>Free 100 MB web hosting</li>
                 <li>Free 5 GB email account</li>
                 <li>DNSSEC: cache poisoning protection</li>
                 <li>Easy Redirect: accessing social networks from your domain name</li>

@@ -40,7 +40,7 @@ Per garantire una buona qualità di servizio per tutti e semplificare l'invio de
 
 Per un periodo di 3600 secondi (1 ora), la tua offerta di hosting ti permetterà di inviare queste email:
 
-|Offerte|Start 10M|Perso|Pro|Performance|
+|Offerte|Hosting gratuito 100M|Perso|Pro|Performance|
 |---|---|---|---|---|
 |Quantità massima di invio di email per ora e per servizio|10|100|200|2000|
 

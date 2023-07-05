@@ -57,7 +57,7 @@ Ihr neues Passwort muss folgenden **Richtlinien** entsprechen:
 
 Je nach Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) erfolgt die Änderung des Passworts Ihres FTP-Benutzers im Tab `FTP-SSH`{.action} über zwei verschiedene Wege:
 
-- **Für Hosting-Pakete, die keinen zweiten FTP-Benutzer erstellen können** (*Start 10M* und *Basic Hosting*):
+- **Für Hosting-Pakete, die keinen zweiten FTP-Benutzer erstellen können** (*Kostenloses Hosting 100M* und *Basic Hosting*):
 
 Klicken Sie in der Spalte `Passwort`{.action} der angezeigten Tabelle auf das *Stift-Symbol*, geben Sie das neue Passwort **unter Beachtung der Passwortrichtlinie** ein und bestätigen Sie die Änderung, indem Sie auf den *grünen Button* klicken.
 

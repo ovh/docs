@@ -27,7 +27,7 @@ A sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&f
 >
 > **Antes** de alterar a sua subscrição atual, verifique se tem alguma destas questões:
 >
-> - [Como fazer evoluir a minha oferta gratuita Start 10M para uma oferta de alojamento web?](#start10m)
+> - [Como fazer evoluir a minha oferta alojamento gratuito 100M para uma oferta de alojamento web?](#start10m)
 > - [Como beneficiar de um ganho de desempenho temporário na minha oferta de alojamento Performance?](#boost)
 > - [Vou perder o tempo que resta na minha oferta de alojamento atual quando mudar de oferta?](#billing)
 > - [É possível mudar a minha oferta atual para uma oferta inferior?](#checks)
@@ -122,9 +122,9 @@ Depois de verificar estes 7 elementos, pode realizar a sua [alteração da ofert
 
 ### Casos especiais
 
-#### Possui uma oferta Start 10M <a name="start10m"></a>
+#### Possui uma oferta alojamento gratuito 100M <a name="start10m"></a>
 
-No âmbito de uma alteração da oferta [Start10M](/pages/web/hosting/activate_start10m), apenas [a oferta Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) ser-lhe-á proposta. No entanto, após uma mudança para a oferta Perso, poderá fazer evoluir esta última para o conjunto das nossas [ofertas de alojamento Web](https://www.ovhcloud.com/pt/web-hosting/).
+No âmbito de uma alteração da oferta [Alojamento gratuito 100M](/pages/web/hosting/activate_start10m), apenas [a oferta Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) ser-lhe-á proposta. No entanto, após uma mudança para a oferta Perso, poderá fazer evoluir esta última para o conjunto das nossas [ofertas de alojamento Web](https://www.ovhcloud.com/pt/web-hosting/).
 
 Siga [estas instruções](#modify) para realizar a alteração da oferta.
 

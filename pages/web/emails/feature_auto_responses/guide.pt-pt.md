@@ -19,7 +19,7 @@ Em caso de ausência no seu escritório, pode configurar um respondedor de e-mai
 
 ## Requisitos
 
-- Dispor do serviço MX Plan Está disponível através de: um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, o [alojamento gratuito Start 10M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.external} incluído com um domínio (previamente ativado) ou a oferta MX Plan encomendada separadamente.
+- Dispor do serviço MX Plan Está disponível através de: um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, o [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.external} incluído com um domínio (previamente ativado) ou a oferta MX Plan encomendada separadamente.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções

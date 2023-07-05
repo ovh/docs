@@ -27,7 +27,7 @@ Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=ht
 >
 > **Bevor** Sie Ihr aktuelles Abonnement ändern, überprüfen Sie die folgenden Fragen:
 >
-> - [Wie kann ich mein kostenloses Start 10M Angebot auf ein Webhosting Angebot umstellen?](#start10m)
+> - [Wie kann ich mein kostenloses Hosting 100M Angebot auf ein Webhosting Angebot umstellen?](#start10m)
 > - [Wie kann ich eine temporäre Verbesserung der Performance bei meinem Performance-Hosting nutzen?](#boost)
 > - [Werde ich beim Wechsel des Angebots die verbleibende Zeit auf meinem aktuellen Webhosting-Angebot verlieren?](#billing)
 > - [Kann ich mein derzeitiges Angebot auf ein kleineres Angebot umstellen?](#checks)
@@ -124,9 +124,9 @@ Wenn Sie alle Punkte überprüft haben, können Sie [Ihr Angebot wechseln](#modi
 
 ### Sonderfälle
 
-#### Sie besitzen ein Start 10M Angebot <a name="start10m"></a>
+#### Sie besitzen ein Kostenloses Hosting 100M Angebot <a name="start10m"></a>
 
-Sie können das [Start 10M](/pages/web/hosting/activate_start10m) Angebot nur auf ein [Basic Webhosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) umstellen. Nach der Umstellung auf das Basic Angebot können Sie es jedoch auf alle unsere [Webhosting Angebote hochstufen](https://www.ovhcloud.com/de/web-hosting/).
+Sie können das [Kostenloses Hosting 100M](/pages/web/hosting/activate_start10m) Angebot nur auf ein [Basic Webhosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) umstellen. Nach der Umstellung auf das Basic Angebot können Sie es jedoch auf alle unsere [Webhosting Angebote hochstufen](https://www.ovhcloud.com/de/web-hosting/).
 
 Folgen [Sie diesen Anweisungen](#modify), um Ihr Angebot zu wechseln.
 

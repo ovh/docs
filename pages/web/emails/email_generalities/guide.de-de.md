@@ -18,7 +18,7 @@ Mit der MX Plan Lösung verfügen Sie über E-Mail-Adressen, mit denen Sie Nachr
 
 ## Voraussetzungen
 
-- Sie verfügen über ein MX Plan Angebot, entweder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten, separat bestellt, oder als Teil eines kostenlosen [Start 10M Hostings](https://www.ovhcloud.com/de/domains/free-web-hosting/).
+- Sie verfügen über ein MX Plan Angebot, entweder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten, separat bestellt, oder als Teil eines [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung <a name="instructions"></a>

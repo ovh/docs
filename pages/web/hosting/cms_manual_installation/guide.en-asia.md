@@ -127,7 +127,7 @@ If you are not already using an FTP client, you can use Filezilla. You can find 
 
 #### 1.4 Prepare a database <a name="step1-4"></a>
 
-CMSs need a database to work. Our [Web Hosting](https://www.ovhcloud.com/asia/web-hosting/) solutions  include these, with the exception of [the free Start 10M hosting plan](https://www.ovhcloud.com/asia/domains/free-web-hosting/).
+CMSs need a database to work. Our [Web Hosting](https://www.ovhcloud.com/asia/web-hosting/) solutions include these.
 
 Use our documentation to [create a database from your web hosting plan](/pages/web/hosting/sql_create_database).
 

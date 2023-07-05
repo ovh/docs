@@ -18,7 +18,7 @@ Każde konto e-mail OVHcloud dysponuje dedykowaną przestrzenią dyskową. Zarz�
 
 ## Wymagania początkowe
 
-- Posiadanie wcześniej skonfigurowanego rozwiązania poczty elektronicznej OVHcloud (**MX Plan**, zaproponowanego w naszej [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/), zawartego w [hostingu Start10M bezpłatnie](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub zamówionym oddzielnie jako rozwiązanie autonomiczne, takie jak [**Hosted Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [**Email Pro**](https://www.ovhcloud.com/pl/emails/email-pro/)).
+- Posiadanie wcześniej skonfigurowanego rozwiązania poczty elektronicznej OVHcloud (**MX Plan**, zaproponowanego w naszej [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/), zawartego w [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub zamówionym oddzielnie jako rozwiązanie autonomiczne, takie jak [**Hosted Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [**Email Pro**](https://www.ovhcloud.com/pl/emails/email-pro/)).
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), sekcja `Web Cloud`{.action}.
 - Dostęp do danych adresów e-mail.
 
@@ -26,7 +26,7 @@ Każde konto e-mail OVHcloud dysponuje dedykowaną przestrzenią dyskową. Zarz�
 >
 > **Szczególne przypadki**
 >
-> - Jeśli chodzi o bezpłatny hosting Start 10M, konieczne jest wcześniejsze aktywowanie go przed utworzeniem konta e-mail. Operację tę możesz przeprowadzić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przechodząc do odpowiedniej domeny.
+> - Jeśli chodzi o bezpłatny Darmowy hosting 100M, konieczne jest wcześniejsze aktywowanie go przed utworzeniem konta e-mail. Operację tę możesz przeprowadzić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przechodząc do odpowiedniej domeny.
 > - Zanim przejdziesz do niniejszego przewodnika, należy aktywować Twój pakiet MX Plan zawarty w [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/). W tym celu zapoznaj się z naszym przewodnikiem "[Aktywuj konta e-mail zawarte w Twoim hostingu](/pages/web/hosting/activate-email-hosting)".
 
 ## W praktyce <a name="instructions"></a>

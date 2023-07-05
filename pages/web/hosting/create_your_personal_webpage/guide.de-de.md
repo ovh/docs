@@ -1,6 +1,6 @@
 ---
 title: 'Tutorial - Eigene Webseite bei OVHcloud erstellen'
-excerpt: 'Erfahren Sie hier, wie Sie Ihre erste Webseite auf einem kostenlosen Start 10M Webhosting erstellen'
+excerpt: 'Erfahren Sie hier, wie Sie Ihre erste Webseite auf einem Kostenloses Hosting 100M Webhosting erstellen'
 updated: 2023-02-17
 ---
 
@@ -12,7 +12,7 @@ updated: 2023-02-17
 
 ## Ziel
 
-Hier erfahren Sie, wie Sie die Homepage einer Website auf einem Start 10M Hosting erstellen, das Sie kostenlos zu einem Domainnamen bei OVHcloud erhalten.
+Hier erfahren Sie, wie Sie die Homepage einer Website auf einem Kostenloses Hosting 100M erstellen, das Sie kostenlos zu einem Domainnamen bei OVHcloud erhalten.
 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
@@ -23,7 +23,7 @@ Hier erfahren Sie, wie Sie die Homepage einer Website auf einem Start 10M Hostin
 ## Voraussetzungen
 
 - Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
-- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) oder ein kostenloses [Start 10M Hosting](https://www.ovhcloud.com/de/domains/free-web-hosting/).
+- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) oder ein [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/).
 - Sie haben einen Texteditor (Notepad, TextEdit, Notepad++, etc.).
 - Sie haben einen FTP-Client ([Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php) etc.) installiert, um Dateien auf Ihren Hosting-Speicherplatz zu übertragen.
 
@@ -146,7 +146,7 @@ Mit diesem Tag wird Text als Abschnitt eingefügt:
 <body>
     <h1>Willkommen auf meiner persönlichen Seite</h1>
     <h2>Erstellen Sie schnell und einfach Ihre Website</h2>
-    <p>OVHcloud bietet Ihnen das Start 10M Hosting kostenlos beim Kauf einer Domain an.</p>
+    <p>OVHcloud bietet Ihnen das Kostenloses Hosting 100M beim Kauf einer Domain an.</p>
 </body>
 ```
 
@@ -161,10 +161,10 @@ Sie können im HTML-Format Listen verwenden. Wir nehmen dabei ein Beispiel für 
     <p>
         <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
-    <p>OVHcloud bietet Ihnen das Start 10M Hosting kostenlos beim Kauf einer Domain an.</p>
+    <p>OVHcloud bietet Ihnen das Kostenloses Hosting 100M beim Kauf einer Domain an.</p>
     <p>Das Angebot "Domainname" umfasst:</p>
     <ul>
-        <li>Webhosting 10 MB gratis</li>
+        <li>Webhosting 100 MB gratis</li>
         <li>5 GB gratis E-Mail Account</li>
         <li>DNSSEC: Schutz gegen Cache Poisoning</li>
         <li>Easy Redirect: Zugang zu sozialen Netzwerken über Ihre Domain</li>
@@ -176,7 +176,7 @@ Sie können das Ergebnis in Ihrem Browser sehen: Listenelemente werden in der Re
 
 #### Bilder hinzufügen, um Ihre Seite attraktiver zu machen
 
-Das Web ist vor allem ein visuelles Medium. Wir werden in diesem Bereich erklären, wie Sie Bilder in Ihre Seiten einfügen. Das Start 10M Angebot bietet Ihnen einen Speicherplatz von 10 MB. Dies genügt für Ihre HTML und CSS Seiten, kann aber zu gering ausfallen, wenn Sie viele Bilder auf Ihrer Seite platzieren möchten. In diesem Fall empfehlen wir Ihnen, ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) zu bestellen, um mehr Speicherplatz zu erhalten.
+Das Web ist vor allem ein visuelles Medium. Wir werden in diesem Bereich erklären, wie Sie Bilder in Ihre Seiten einfügen. Das Kostenloses Hosting 100M bietet Ihnen einen Speicherplatz von 100 MB. Dies genügt für Ihre HTML und CSS Seiten, kann aber zu gering ausfallen, wenn Sie viele Bilder auf Ihrer Seite platzieren möchten. In diesem Fall empfehlen wir Ihnen, ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) zu bestellen, um mehr Speicherplatz zu erhalten.
 
 Der zur Anzeige eines Bildes verwendete Tag ist `<img>`. Im Gegensatz zu den Tags, die wir zuvor gesehen haben, gibt es kein Öffnen und Schließen dieses Elements (*self-closing* Tag). Die Attribute dieses Tags ermöglichen das Hinzufügen des Bilddatei-Pfads sowie einen beschreibenden Text.
 
@@ -186,7 +186,7 @@ Ein großes Bild ist ein Bilddatei, die Zeit benötigt, um von Ihrem Browser gel
 
 In der Regel sollten Sie Ihre Bilder optimieren und deren "Gewicht" reduzieren. Dieses Gewicht wird in Bytes angegeben. Üblicherweise werden Kilobyte (1 kB = 1.000 Bytes) oder Megabyte (1 kB = 1.000.000 Bytes) verwendet. Ein Image von mehr als einigen Dutzend KB wird als "schwer" eingestuft und benötigt Optimierung. 
 
-**Beispiel**: Wenn Ihre Bilder je 1 MB "wiegen", sind Sie auf Ihrem Start10M Hosting auf weniger als 10 Bilder beschränkt. Wenn Sie deren Größe auf 50 KB bis 200 KB reduzieren, können Sie aber bis zu 100 Bilder auf Ihrer Webseite anzeigen.
+**Beispiel**: Wenn Ihre Bilder 1 Monat lang verfügbar sind, sind Sie auf maximal 100 Bilder auf Ihrem kostenlosen 100-Millionen-Höhepunkt begrenzt. Wenn Sie zwischen 50.000 und 200.000 Euro sparen möchten, müssen Sie nur noch ein paar Millisekunden auf Ihrer Website präsentieren.
 
 Einige Tipps, um Webseiten-Dateien so einfach wie möglich zu gestalten:
 
@@ -216,10 +216,10 @@ Wir werden nun einen neuen Absatz erstellen, in den wir ein Bild hinzufügen (in
     <p>
         <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
-    <p>OVHcloud bietet Ihnen das Start 10M Hosting kostenlos beim Kauf einer Domain an.</p>
+    <p>OVHcloud bietet Ihnen das Kostenloses Hosting 100M beim Kauf einer Domain an.</p>
     <p>Das Angebot "Domainname" umfasst:</p>
     <ul>
-        <li>Webhosting 10 MB gratis</li>
+        <li>Webhosting 100 MB gratis</li>
         <li>5 GB gratis E-Mail Account</li>
         <li>DNSSEC: Schutz gegen Cache Poisoning</li>
         <li>Easy Redirect: Zugang zu sozialen Netzwerken über Ihre Domain</li>
@@ -339,10 +339,10 @@ Ihr HTML-Code wird wie folgt strukturiert:
         <main>
             <h1>Willkommen auf meiner persönlichen Seite</h1>
             <h2>Erstellen Sie schnell und einfach Ihre Website</h2>
-            <p>OVHcloud bietet Ihnen das Start 10M Hosting kostenlos beim Kauf einer Domain an.</p>
+            <p>OVHcloud bietet Ihnen das Kostenloses Hosting 100M beim Kauf einer Domain an.</p>
             <p>Das Angebot "Domainname" umfasst:</p>
             <ul>
-                <li>Webhosting 10 MB gratis</li>
+                <li>Webhosting 100 MB gratis</li>
                 <li>5 GB gratis E-Mail Account</li>
                 <li>DNSSEC: Schutz gegen Cache Poisoning</li>
                 <li>Easy Redirect: Zugang zu sozialen Netzwerken über Ihre Domain</li>

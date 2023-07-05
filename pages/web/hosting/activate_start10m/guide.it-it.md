@@ -1,6 +1,6 @@
 ---
-title: "Attivare l'hosting gratuito Start 10M"
-excerpt: 'Come attivare il piano di hosting Start 10M'
+title: "Attivare l'hosting gratuito 100M"
+excerpt: 'Come attivare il piano di Hosting gratuito 100M'
 updated: 2022-09-15
 ---
 
@@ -12,16 +12,16 @@ updated: 2022-09-15
 
 ## Obiettivo
 
-Con [Start10M](https://www.ovhcloud.com/it/domains/free-web-hosting/){.external}, OVHcloud ti offre un hosting Web da 10 MB e un account email con 5 GB di storage. Questa guida ti mostra come attivare l’hosting Start 10M sul tuo [dominio](https://www.ovhcloud.com/it/domains/){.external}.
+Con [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/){.external}, OVHcloud ti offre un hosting Web da 100 MB e un account email con 5 GB di storage. Questa guida ti mostra come attivare l’hosting gratuito 100M sul tuo [dominio](https://www.ovhcloud.com/it/domains/){.external}.
 
 > [!warning]
 >
-> Questo hosting gratuito da 10 MB è ideale per una semplice pagina Web di presentazione, **non include database**.
+> Questo hosting gratuito da 100 MB è ideale per una semplice pagina Web di presentazione, **non include database**.
 > È necessario anche se non sono necessari più indirizzi email come "MX Plan". 
 > Per creare un sito Web composto da più pagine e che necessita di database, come un CMS (WordPress, Joomla!, PrestaShop, Drupal, ecc...), ti consigliamo di ordinare direttamente uno [dei nostri hosting Web](https://www.ovhcloud.com/it/web-hosting/) dal nostro sito o dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 >
 
-**Come attivare il tuo hosting gratuito Start 10M**
+**Come attivare il tuo hosting gratuito 100M**
 
 ## Prerequisiti
 
@@ -34,11 +34,11 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Nel riquadro **Informazioni generali** visualizzi la voce *Hosting Web e email gratis*. Clicca sui tre puntini `...`{.action} a destra e poi su `Attiva`{.action}.
 
-![start10m](images/start10m-step1-01.png){.thumbnail}
+![free100m](images/start10m-step1-01.png){.thumbnail}
 
 Si apre la pagina di attivazione. **Lo step 1** mostra i dettagli del piano e la relativa tariffa. Quindi clicca su `Continua`{.action}. Allo **step 2**, seleziona le modifiche da apportare alla tua zona DNS.
 
-![start10m](images/start10m-step1-02.png){.thumbnail}
+![free100m](images/start10m-step1-02.png){.thumbnail}
 
 > [!warning]
 >
@@ -51,14 +51,14 @@ Si apre la pagina di attivazione. **Lo step 1** mostra i dettagli del piano e la
 
 | Opzione                                       	| Descrizione                                                                                                               								|
 |--------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Record DNS A                         	| Il dominio sarà associato all’indirizzo IP dell’hosting Start 10M.                                               								|
+| Record DNS A                         	| Il dominio sarà associato all’indirizzo IP dell’hosting Hosting gratuito 100M.                                               								|
 | Record DNS MX 	| I server di posta (`mx1.mail.ovh.net`, `mx2.mail.ovh.net`, `mx3.mail.ovh.net`, ecc.) di OVHcloud saranno applicati al dominio. 	|
 
 > [!primary]
 >
-> Se il tuo progetto è destinato ad evolversi rapidamente verso un hosting che dispone di un database, di uno spazio di archiviazione più ampio o di più indirizzi email, potrai passare direttamente da Start 10M a un'offerta di hosting **Personale** dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
+> Se il tuo progetto è destinato ad evolversi rapidamente verso un hosting che dispone di un database, di uno spazio di archiviazione più ampio o di più indirizzi email, potrai passare direttamente da Hosting gratuito 100M a un'offerta di hosting **Personale** dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 >
-> Un cambio verso l'offerta **Pro** o **Performance** richiede il passaggio preliminare dall'offerta Start 10M all'offerta **Personale**.
+> Un cambio verso l'offerta **Pro** o **Performance** richiede il passaggio preliminare dall'offerta Hosting gratuito 100M all'offerta **Personale**.
 >
 > Puoi anche scegliere di eliminare l'offerta gratuita prendendo cura di recuperare preventivamente i tuoi dati di hosting e il contenuto del tuo indirizzo email.
 >
@@ -69,9 +69,9 @@ Si apre la pagina di attivazione. **Lo step 1** mostra i dettagli del piano e la
 
 Durante **lo step 4**, è necessario prendere visione dei contratti e confermare il tuo ordine.
 
-Una volta confermato l'ordine, riceverai un'email con le informazioni di [connessione FTP](/pages/web/hosting/ftp_connection){.external} al tuo hosting Start 10M.
+Una volta confermato l'ordine, riceverai un'email con le informazioni di [connessione FTP](/pages/web/hosting/ftp_connection){.external} al tuo hosting gratuito 100M.
 
-Consulta la guida di [creazione di un account MX Plan](/pages/web/emails/email_creation){.external} per usufruire dell'indirizzo email incluso con il tuo hosting Start 10M.
+Consulta la guida di [creazione di un account MX Plan](/pages/web/emails/email_creation){.external} per usufruire dell'indirizzo email incluso con il tuo hosting gratuito 100M.
 
 ## Per saperne di più
 

@@ -24,7 +24,7 @@ Por exemplo: deseja que todo o e-mail que contenha "\[SPAM]" no assumpto seja el
 
 ## Requisitos
 
-- Ter um serviço de e-mail MX Plan (disponível através de: um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, o [alojamento gratuito Start 10M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.external} incluído com um domínio ou a oferta MX Plan (encomendada separadamente).
+- Ter um serviço de e-mail MX Plan (disponível através de: um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, o [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.external} incluído com um domínio ou a oferta MX Plan (encomendada separadamente).
 - Ter acesso à sua [Área de Cliente OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 > [!warning]

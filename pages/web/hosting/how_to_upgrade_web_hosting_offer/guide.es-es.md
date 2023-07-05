@@ -27,7 +27,7 @@ Su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&f
 >
 > **Antes** de realizar cualquier cambio en la suscripción actual, compruebe si tiene alguna de las siguientes preguntas:
 >
-> - [¿Cómo cambiar mi plan Start 10M gratuito a un plan de hosting?](#start10m)
+> - [¿Cómo cambiar mi plan alojamiento gratuito 100M a un plan de hosting?](#start10m)
 > - [¿Cómo disfrutar de un aumento temporal del rendimiento de mi plan de hosting Performance?](#boost)
 > - [¿Voy a perder el tiempo restante de mi actual plan de hosting al cambiar de plan?](#billing)
 > - [¿Es posible cambiar mi solución actual a una inferior?](#checks)
@@ -124,9 +124,9 @@ Una vez que haya comprobado estos 7 elementos, puede realizar el [cambio de prod
 
 ### Casos particulares
 
-#### Tiene un plan Start 10M <a name="start10m"></a>
+#### Tiene un plan Alojamiento gratuito 100M <a name="start10m"></a>
 
-Si cambia de plan [Start10M](/pages/web/hosting/activate_start10m), solo podrá contratar [el plan Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/). Sin embargo, una vez haya cambiado el plan Personal, podrá migrarlo a todos nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
+Si cambia de plan [Alojamiento gratuito 100M](/pages/web/hosting/activate_start10m), solo podrá contratar [el plan Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/). Sin embargo, una vez haya cambiado el plan Personal, podrá migrarlo a todos nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
 
 Siga [estas instrucciones](#modify) para cambiar de producto.
 

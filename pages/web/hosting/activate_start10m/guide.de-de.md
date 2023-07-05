@@ -1,6 +1,6 @@
 ---
-title: 'Das kostenlose Start 10M Hosting aktivieren'
-excerpt: 'Erfahren Sie hier, wie Sie Ihr Start 10M Hosting aktivieren'
+title: 'Das kostenloses Hosting 100M aktivieren'
+excerpt: 'Erfahren Sie hier, wie Sie Ihr kostenloses Hosting 100M aktivieren'
 updated: 2022-09-15
 ---
 
@@ -12,18 +12,18 @@ updated: 2022-09-15
 
 ## Ziel 
 
-Mit dem [Start 10M](https://www.ovhcloud.com/de/domains/free-web-hosting/){.external} bietet Ihnen OVHcloud ein Webhosting mit 10 MB und einen E-Mail-Account mit 5 GB Speicherplatz.
+Mit dem [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/){.external} bietet Ihnen OVHcloud ein Webhosting mit 100 MB und einen E-Mail-Account mit 5 GB Speicherplatz.
 
 In dieser Anleitung erfahren Sie, wie Sie dieses Angebot für Ihren [Domainnamen](https://www.ovhcloud.com/de/domains/){.external} aktivieren.
 
 > [!warning]
 >
-> Dieses kostenlose Hosting mit 10 MB ist für eine einfache Präsentationsseite geeignet; es enthält **keine Datenbank**.
+> Dieses kostenlose Hosting mit 100 MB ist für eine einfache Präsentationsseite geeignet; es enthält **keine Datenbank**.
 > Es ist auch angezeigt, wenn Sie nicht mehr als eine "MX Plan" E-Mail-Adresse benötigen.
 > Wenn Sie eine Website mit mehreren Seiten einrichten möchten, die eine Datenbank wie WordPress, Joomla!, PrestaShop, Drupal usw. benötigt, bestellen Sie direkt über unsere Website oder Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eines unserer [Webhosting-Angebote](https://www.ovhcloud.com/de/web-hosting/){.external}.
 >
 
-**Diese Anleitung erklärt, wie Sie Ihr kostenloses "Start 10M" Hosting aktivieren.**
+**Diese Anleitung erklärt, wie Sie Ihr "kostenloses Hosting 100M aktivieren.**
 
 ## Voraussetzungen
 
@@ -36,11 +36,11 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 Im Bereich **Allgemeine Informationen** finden Sie den Abschnitt *Gratis Webhosting und E-Mail*. Klicken Sie rechts auf den Button `...`{.action} und anschließend auf `Aktivieren`{.action}.
 
-![Start 10M](images/start10m-step1-01.png){.thumbnail}
+![free100M](images/start10m-step1-01.png){.thumbnail}
 
 Daraufhin öffnet sich das Aktivierungsfenster. **Schritt 1** zeigt Ihnen Angebotsinformationen an. Klicken Sie auf `Weiter`{.action} und wählen Sie in **Schritt 2** die Änderungen aus, die Sie in Ihrer DNS-Zone vornehmen möchten.
 
-![Start 10M](images/start10m-step1-02.png){.thumbnail}
+![free100100M](images/start10m-step1-02.png){.thumbnail}
 
 > [!warning]
 >
@@ -53,14 +53,14 @@ Daraufhin öffnet sich das Aktivierungsfenster. **Schritt 1** zeigt Ihnen Angebo
 
 | Option                                       	| Beschreibung                                                                                                               								|
 |--------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DNS A Eintrag                         	| Die Domain wird auf die IP-Adresse des Start 10M Hostings verweisen.                                               								|
+| DNS A Eintrag                         	| Die Domain wird auf die IP-Adresse des Kostenloses Hosting 100M verweisen.                                               								|
 | DNS MX Eintrag 	| Die E-Mail-Server ( `mx1.mail.ovh.net`, `mx2.mail.ovh.net`, `mx3.mail.ovh.net`, etc.) von OVHcloud werden auf den Domainnamen angewandt. 	|
 
 > [!primary]
 >
-> Wenn Ihr Projekt künftig auf ein Hosting mit einer Datenbank, einem größeren Speicherplatz oder mehr E-Mail-Accounts erweitert werden muss, können Sie von Start 10M ausschließlich auf ein Webhosting-Angebot **Basic** in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} wechseln.
+> Wenn Ihr Projekt künftig auf ein Hosting mit einer Datenbank, einem größeren Speicherplatz oder mehr E-Mail-Accounts erweitert werden muss, können Sie von kostenloses Hosting 100M ausschließlich auf ein Webhosting-Angebot **Basic** in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} wechseln.
 >
-> Ein Wechsel zum Angebot **Pro** oder **Performance** erfordert einen vorherigen Wechsel vom Start 10M Angebot zum Angebot **Basic**.
+> Ein Wechsel zum Angebot **Pro** oder **Performance** erfordert einen vorherigen Wechsel vom Kostenloses Hosting 100M zum Angebot **Basic**.
 >
 > Sie können auch das kostenlose Angebot löschen, nachdem Sie Ihre Hosting-Daten und den Inhalt Ihres E-Mail-Accounts gesichert haben.
 >
@@ -71,9 +71,9 @@ Daraufhin öffnet sich das Aktivierungsfenster. **Schritt 1** zeigt Ihnen Angebo
 
 In **Schritt 4** können Sie die Verträge einsehen und Ihre Bestellung bestätigen.
 
-Sobald Ihre Bestellung bestätigt wurde, erhalten Sie eine E-Mail mit den Informationen zur [FTP-Verbindung](/pages/web/hosting/ftp_connection){.external} für Ihr Start 10M Hosting.
+Sobald Ihre Bestellung bestätigt wurde, erhalten Sie eine E-Mail mit den Informationen zur [FTP-Verbindung](/pages/web/hosting/ftp_connection){.external} für Ihr Kostenloses Hosting 100M.
 
-Ziehen Sie die Anleitung zur [Erstellung eines MX Plan E-Mail-Accounts](/pages/web/emails/email_creation){.external} zu Rate, um den Account zu nutzen, der bei Ihrem Start 10M Hosting inklusive ist.
+Ziehen Sie die Anleitung zur [Erstellung eines MX Plan E-Mail-Accounts](/pages/web/emails/email_creation){.external} zu Rate, um den Account zu nutzen, der bei Ihrem Kostenloses Hosting 100M inklusive ist.
 
 ## Weiterführende Informationen
 

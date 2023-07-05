@@ -18,7 +18,7 @@ You want to:
 
 ## Requirements
 
-- A preconfigured OVHcloud email solution, such as [**Hosted Exchange**](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/en-ie/emails/email-pro/)) or **MX Plan** (available with a [web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/), a [free Start 10M hosting plan](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/), or ordered separately)
+- A preconfigured OVHcloud email solution, such as [**Hosted Exchange**](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/en-ie/emails/email-pro/)) or **MX Plan** (available with a [web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/), a [100M free hosting](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/), or ordered separately)
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) as the Admin contact of the email service concerned (section `Web Cloud`{.action})
 
 ## Instructions <a name="instructions"></a>

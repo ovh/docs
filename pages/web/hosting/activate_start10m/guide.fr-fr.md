@@ -31,11 +31,11 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 Dans le cadre **Informations générales** vous trouverez la mention *Hébergement Web et e-mail gratuit*. Cliquez sur le bouton `...`{.action} à droite puis sur `Activer`{.action}.
 
-![start10m](images/start10m-step1-01.png){.thumbnail}
+![free100m](images/start10m-step1-01.png){.thumbnail}
 
 La fenêtre d'activation s'affiche. **L'étape 1** vous rappelle l'offre et son tarif, cliquez sur `Suivant`{.action}. Pour **l'étape 2**, choisissez les modifications à apporter sur votre zone DNS :
 
-![start10m](images/start10m-step1-02.png){.thumbnail}
+![free100m](images/start10m-step1-02.png){.thumbnail}
 
 > [!warning]
 >

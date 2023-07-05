@@ -15,7 +15,7 @@ With the "Inbox rules" option, you can create an elaborate set of rules to handl
 
 ## Requirements
 
-- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/), included in a [free Start10M hosting](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/) or ordered separately as a standalone solution; [**Hosted Exchange**](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/) or [**Email Pro**](https://www.ovhcloud.com/en-ie/emails/email-pro/))
+- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/), included in a [100M free hosting](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/) or ordered separately as a standalone solution; [**Hosted Exchange**](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/) or [**Email Pro**](https://www.ovhcloud.com/en-ie/emails/email-pro/))
 - login credentials for the email address you want to configure
 
 

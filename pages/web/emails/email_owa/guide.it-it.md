@@ -14,7 +14,7 @@ Con le soluzioni email OVHcloud puoi inviare e ricevere le tue email utilizzando
 
 ## Prerequisiti
 
-- Disporre di una soluzione di posta elettronica OVHcloud attiva (**MX Plan**, disponibile come parte dei nostri piani di [hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusi in un [hosting gratuito Start10M](https://www.ovhcloud.com/it/domains/free-web-hosting/) oppure ordinato separatamente con una soluzione indipendente; [**Hosted Exchange**](https://www.ovhcloud.com/it/emails/hosted-exchange/) o ancora [**Email Pro**](https://www.ovhcloud.com/it/emails/email-pro/))
+- Disporre di una soluzione di posta elettronica OVHcloud attiva (**MX Plan**, disponibile come parte dei nostri piani di [hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusi in un [hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) oppure ordinato separatamente con una soluzione indipendente; [**Hosted Exchange**](https://www.ovhcloud.com/it/emails/hosted-exchange/) o ancora [**Email Pro**](https://www.ovhcloud.com/it/emails/email-pro/))
 - Credenziali di accesso all’account di posta elettronica da configurare
 
 ## Procedura

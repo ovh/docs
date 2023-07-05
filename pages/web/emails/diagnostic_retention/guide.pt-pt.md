@@ -19,7 +19,7 @@ Eliminou por erro um ou vários elementos (e-mail, contacto, calendário) e esva
 ## Requisitos
  
 - Ter uma solução de e-mail OVHcloud:
-    - **MX Plan** ([nova versão apenas](/pages/web/emails/email_generalities)) proposto entre as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/), incluído num [alojamento Start10M gratuito](https://www.ovhcloud.com/pt/domains/free-web-hosting/) 
+    - **MX Plan** ([nova versão apenas](/pages/web/emails/email_generalities)) proposto entre as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/), incluído num [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) 
     - ou [**Hosted Exchange**](https://www.ovhcloud.com/pt/emails/hosted-exchange/)
     - ou [**Email Pro**](https://www.ovhcloud.com/pt/emails/email-pro/)
 - Conhecer os dados de acesso do endereço de e-mail em questão

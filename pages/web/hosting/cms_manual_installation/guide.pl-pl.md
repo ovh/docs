@@ -131,7 +131,7 @@ Jeśli nie korzystasz już z klienta FTP, możesz użyć programu Filezilla. W d
 
 #### 1.4 - Przygotowanie bazy danych <a name="step1-4"></a>
 
-CMS potrzebują bazy danych do działania. Nasza oferta[hosting](https://www.ovhcloud.com/pl/web-hosting/) zawiera listę usług, z wyjątkiem [darmowego hostingu Start 10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/).
+CMS potrzebują bazy danych do działania. Nasza oferta[hosting](https://www.ovhcloud.com/pl/web-hosting/) zawiera listę usług, z wyjątkiem [darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/).
 
 Skorzystaj z naszej dokumentacji, aby [utworzyć bazę danych w ramach Twojego hostingu](/pages/web/hosting/sql_create_database).
 

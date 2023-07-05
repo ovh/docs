@@ -24,7 +24,7 @@ Ad esempio: vuoi che tutte le email contenenti "[SPAM]" nell'oggetto siano elimi
 
 ## Prerequisiti
 
-- Disporre di una soluzione email MX Plan (disponibile tramite: un'offerta di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external}, l'[hosting gratuito Start 10M](https://www.ovhcloud.com/it/domains/free-web-hosting/){.external} incluso con un dominio o l'offerta MX Plan ordinata separatamente).
+- Disporre di una soluzione email MX Plan (disponibile tramite: un'offerta di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external}, l'[Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/){.external} incluso con un dominio o l'offerta MX Plan ordinata separatamente).
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 > [!warning]

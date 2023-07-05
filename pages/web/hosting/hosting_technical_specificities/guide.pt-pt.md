@@ -40,7 +40,7 @@ Para garantir uma boa qualidade de serviço para todos e simplificar o envio dos
 
 Durante um período de 3600 segundos (ou seja, 1 hora), a sua oferta de alojamento permitir-lhe-á enviar as seguintes quotas de e-mail:
 
-|Offres|Start 10M|Perso|Pro|Performance|
+|Offres|Alojamento gratuito 100M|Perso|Pro|Performance|
 |---|---|---|---|---|
 |Quantidade máxima de envio de e-mails por hora e por serviço|10|100|200|2000|
 

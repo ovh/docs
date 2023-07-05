@@ -163,7 +163,7 @@ Vous pouvez, en HTML, utiliser des listes. Nous prendrons l'exemple de listes si
     <p>OVHcloud vous propose, sur son offre d'hébergement gratuit 100M, un hébergement pour tout achat d'un nom de domaine.</p>
     <p>L'offre "Nom de domaine" comprend :</p>
     <ul>
-        <li>Hébergement Web 10 Mo offert</li>
+        <li>Hébergement Web 100 Mo offert</li>
         <li>Compte E-mail 5 Go offert</li>
         <li>DNSSEC : protection contre l’empoisonnement du cache (cache poisoning)</li>
         <li>Easy Redirect : accès aux réseaux sociaux depuis votre nom de domaine</li>

@@ -18,14 +18,14 @@ Sie haben gerade eine MX Plan E-Mail-Lösung erworben. Diese bietet Ihnen E-Mail
 
 ## Voraussetzungen
 
-- Sie verfügen über ein MX Plan Angebot, entweder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten, separat bestellt, oder als Teil eines kostenlosen [Start 10M Hostings](https://www.ovhcloud.com/de/domains/free-web-hosting/){.external}.
+- Sie verfügen über ein MX Plan Angebot, entweder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten, separat bestellt, oder als Teil eines kostenlosen [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/){.external}.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), Bereich `Web Cloud`{.action}.
 
 > [!primary]
 >
 > **Sonderfälle**
 >
-> - Hinweis zum Start 10M Hosting: Es muss zuerst [aktiviert werden](/pages/web/hosting/activate_start10m), um einen E-Mail-Account zu erstellen. Sie können diese Operation über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} durchführen, indem Sie die betreffende Domain auswählen.
+> - Hinweis zum Kostenloses Hosting 100M: Es muss zuerst [aktiviert werden](/pages/web/hosting/activate_start10m), um einen E-Mail-Account zu erstellen. Sie können diese Operation über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} durchführen, indem Sie die betreffende Domain auswählen.
 > - Bei einem Webhosting muss der [inkludierte MX Plan aktiviert werden](https://www.ovhcloud.com/de/web-hosting/){.external}, bevor Sie die übrigen Schritte dieser Anleitung durchführen. Lesen Sie hierzu unsere Anleitung zur [Aktivierung der im Webhosting enthaltenen E-Mail-Accounts](/pages/web/hosting/activate-email-hosting).
 
 ## ## In der praktischen Anwendung <a name="instructions"></a>
