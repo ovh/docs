@@ -1,14 +1,12 @@
 ---
 title: "Montaje de un NAS-HA mediante NFS compartido"
 excerpt: "Cómo conectarse a un NAS-HA utilizando un recurso compartido por NFS"
-updated: 2022-12-06
+updated: 2023-07-05
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
-
-**Última actualización: 06/12/2022**
 
 ## Objetivo
 

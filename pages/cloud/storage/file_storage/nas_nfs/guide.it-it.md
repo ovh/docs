@@ -1,14 +1,12 @@
 ---
 title: "Installazione di un NAS-HA tramite condivisione NFS"
 excerpt: "Come connettersi al tuo NAS-HA utilizzando una condivisione NFS"
-updated: 2022-12-06
+updated: 2023-07-05
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
-
-**Ultimo aggiornamento: 06/12/2022**
 
 ## Obiettivo
 

@@ -1,14 +1,12 @@
 ---
 title: HA-NAS über NFS mounten
 excerpt: "Erfahren Sie hier, wie sich mit Ihrem HA-NAS unter Verwendung einer NFS-Freigabe verbinden"
-updated: 2022-12-06
+updated: 2023-07-05
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
-
-**Letzte Aktualisierung am 06.12.2022**
 
 ## Ziel
 
@@ -186,6 +184,49 @@ Wenn Sie fertig sind, klicken Sie auf `Next`{.action}. Klicken Sie im letzten Sc
 Ihre HA-NAS Partition wurde nun als Datastore hinzugefügt.
 
 ![ESXI](images/esxi4.png){.thumbnail}
+
+### NFS3/NFS4
+
+Das HA-NAS Angebot unterstützt die Protokolle NFS3 und NFS4. Wir werden deren Verwendung detailliert beschreiben.
+
+**Was passiert, wenn die Version beim NFS Befehl nicht angegeben wird?**
+
+In diesem Fall wird Ihr NFS-Client versuchen, sich direkt mit der höchsten von diesem unterstützten Version zu verbinden.
+Sie können aber auch auswählen, ob Sie NFS3 oder NFS4 verwenden möchten:
+
+Um die Verwendung von NFS3 zu erzwingen, verwenden Sie folgenden Befehl:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Beispiel:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Um die Verwendung von NFS4 zu erzwingen, verwenden Sie folgenden Befehl:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Beispiel:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Sie können den folgenden Befehl auch verwenden, um die beim aktuellen Mounten verwendete Version zu bestimmen:
+
+```bash
+ubuntu@server:~$ nfsstat -m
+```
+
+Im Rückblick zeigt Ihnen der Parameter `vers=3` oder `vers=4` das verwendete Protokoll an.
+
+Die Verwendung der Bestellungen entspricht CentOS und Fedora.
 
 ## Weiterführende Informationen
 
