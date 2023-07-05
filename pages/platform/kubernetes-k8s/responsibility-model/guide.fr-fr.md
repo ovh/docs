@@ -103,7 +103,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Filtrer les accès administrateur et utilisateur au service Managed Kubernetes | RA | I |
-| Router les paquets à l’intérieur du projet géré par Managed Kubernetes | RA |  |
+| Router les paquets à l’intérieur du projet géré par le service Managed Kubernetes | RA |  |
 | Appliquer les mesures de sécurité adaptées aux flux internes et externes du SI géré | RA |  |
 | Appliquer les mesures de sécurité adaptées aux flux à destination du control plane du service Managed Kubernetes (routage FQDN, certificats TLS) |  | RA |
 
