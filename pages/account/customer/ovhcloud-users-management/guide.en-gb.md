@@ -96,6 +96,11 @@ When you edit a group you can update its description and role.
 
 ![users-management](images/usersmanagement10.png){.thumbnail}
 
+### Right management
+
+On top of the role associate to users groups, you can fine tune access privileges using OVHcloud IAM.
+OVHcloud IAM policies management is cover on the [dedicated guide](pages\account\customer\iam-policies-ui)
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
