@@ -191,7 +191,7 @@ L'offerta NAS-HA supporta i protocolli NFS3 e NFS4. Ne spieghiamo l'utilizzo.
 **Cosa succede se la versione non viene precisata durante l'ordine NFS?**
 
 In questo caso, il tuo client NFS cercherà di connettersi direttamente alla versione più alta supportata da quest'ultimo.
-ma puoi anche scegliere se utilizzare NFS3 o NFS4:
+Ma puoi anche scegliere se utilizzare NFS3 o NFS4:
 
 Per forzare l'utilizzo di NFS3, utilizza questo comando:
 
