@@ -53,7 +53,7 @@ En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Los planes [Hosting Profesional](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) y [Hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) permiten crear hasta tres módulos en 1 clic adicional. Los planes **Hosting Performance** también le permitirán activar gratis un [servidor Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/).
+Los planes [Hosting Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) y [Hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) permiten crear hasta tres módulos en 1 clic adicional. Los planes **Hosting Performance** también le permitirán activar gratis un [servidor Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/).
 
 #### Solución n°2: eliminar una base de datos no utilizada <a name="delete-the-database"></a>
 

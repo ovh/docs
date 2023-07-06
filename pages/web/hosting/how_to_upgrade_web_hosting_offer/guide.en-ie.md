@@ -8,7 +8,7 @@ updated: 2023-04-19
 
 ## Objective
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), you can increase the capacity of your [web hosting offers](https://www.ovhcloud.com/en-ie/web-hosting/) to have more compute resources, storage space, databases or email accounts. Additional features such as [mailing lists](/pages/web/emails/feature_mailing_list) (from the [Professional plan](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/)) or [Private SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/private-sql/) (included with the offers of the [Performance range](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/)) will also become available with a subscription upgrade.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), you can increase the capacity of your [web hosting offers](https://www.ovhcloud.com/en-ie/web-hosting/) to have more compute resources, storage space, databases or email accounts. Additional features such as [mailing lists](/pages/web/emails/feature_mailing_list) (from the [Pro plan](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/)) or [Private SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/private-sql/) (included with the offers of the [Performance range](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/)) will also become available with a subscription upgrade.
 
 **Find out how to scale your OVHcloud hosting plan without any service interruptions.**
 
@@ -44,8 +44,8 @@ Then select your new subscription and its duration. Confirm the corresponding co
 > [!warning]
 >
 > You can only change your subscription to a lower range plan if it is the **immediate lower range** plan.
-> For example, you cannot switch from *Performance 2* to *Professional* in a single operation.
-> You will **first** need to downgrade your web hosting plan from the *Performance 2* plan to the *Performance 1* plan, **and then** to the *Professional* plan.
+> For example, you cannot switch from *Performance 2* to *Pro* in a single operation.
+> You will **first** need to downgrade your web hosting plan from the *Performance 2* plan to the *Performance 1* plan, **and then** to the *Pro* plan.
 
 Before you make your switch to a lower range, check the following 7 items:
 
@@ -67,14 +67,14 @@ If you have deleted data from your databases, you can recalculate the quota from
 
 #### 3 - Web Cloud Databases
 
-If you are using the [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#clouddb-server-activation-included-with-your-web-hosting-plan) solution included with your [Performance](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/) hosting plan, and you wish to switch your hosting plan to a [Professional](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/) solution, go to the `Hosting plans`{.action} section in your Control Panel.<br>
+If you are using the [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#clouddb-server-activation-included-with-your-web-hosting-plan) solution included with your [Performance](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/) hosting plan, and you wish to switch your hosting plan to a [Pro](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/) solution, go to the `Hosting plans`{.action} section in your Control Panel.<br>
 Click the `... `{.action} button in the `Private database`{.action} section, then `Detach`{.action}.
 
 ![Web Cloud Databases](images/clouddb.png){.thumbnail}
 
 With this action, you can order a Web Cloud Databases solution independent of your *Performance* subscription. Your server data will be stored.
 
-If you do not want to keep this data, you can also delete your Private SQL before going to the *Professional* offer: 
+If you do not want to keep this data, you can also delete your Private SQL before going to the *Pro* offer: 
 
 1. Back up your data by following the instructions in this [guide](/pages/web/clouddb/save-export-on-database-server).<br>
 2. Delete your Web Cloud Databases server via your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). To do this, click on your name in the top right-hand corner, then `Service management`{.action}. Then click on the `...`{.action} button to the right of the row concerned, then `Delete my Private SQL hosting service`{.action}.
@@ -156,10 +156,10 @@ This calculation corresponds to the price difference between your initial soluti
 >
 > You subscribed to a [Personal Hosting](https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/) subscription on January 1, 2022.
 >
-> On October 31, 2022, you upgrade from this **Personal** plan to a [Professional plan](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/).<br>
+> On October 31, 2022, you upgrade from this **Personal** plan to a [Pro plan](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/).<br>
 >
-> Therefore, the amount corresponding to the remaining duration on the **Personal** subscription (2 months, from November 1, 2022 to January 1, 2023) is automatically deducted from the cost of the new **Professional** subscription, until January 1, 2023. You will only pay the difference.
-> From 1st January 2023, you will then be billed for your Professional subscription at its current price.
+> Therefore, the amount corresponding to the remaining duration on the **Personal** subscription (2 months, from November 1, 2022 to January 1, 2023) is automatically deducted from the cost of the new **Pro** subscription, until January 1, 2023. You will only pay the difference.
+> From 1st January 2023, you will then be billed for your Pro subscription at its current price.
 
 Please follow [these instructions](#modify) to change your plan.
 

@@ -12,7 +12,7 @@ updated: 2023-04-19
 
 ## Objetivo
 
-Su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) le permite aumentar la capacidad de sus [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/) para disponer de un alojamiento más potente, más espacio de almacenamiento, bases de datos, direcciones de correo o funcionalidades adicionales como los [listas de correo](/pages/web/emails/feature_mailing_list) (a partir del [plan Profesional](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/)) o el [servicio SQL privado](https://www.ovhcloud.com/es-es/web-hosting/options/private-sql/) (incluidos los productos de la [gama Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/)).
+Su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) le permite aumentar la capacidad de sus [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/) para disponer de un alojamiento más potente, más espacio de almacenamiento, bases de datos, direcciones de correo o funcionalidades adicionales como los [listas de correo](/pages/web/emails/feature_mailing_list) (a partir del [plan Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/)) o el [servicio SQL privado](https://www.ovhcloud.com/es-es/web-hosting/options/private-sql/) (incluidos los productos de la [gama Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/)).
 
 **Descubra cómo cambiar sin interrupción el plan de hosting de OVHcloud.**
 
@@ -48,8 +48,8 @@ A continuación, seleccione la nueva suscripción y la duración de la misma. Ac
 > [!warning]
 >
 > Solo es posible modificar la suscripción para un producto que ofrezca menos recursos si se trata del producto **inmediatamente inferior**. 
-> Por ejemplo, no podrá pasar de una fórmula *Performance 2* a una fórmula *Profesional* en una sola operación.
-> **En primer lugar**, deberá migrar su alojamiento desde la fórmula *Performance 2* al plan *Performance 1* y **después** al plan *Profesional*.
+> Por ejemplo, no podrá pasar de una fórmula *Performance 2* a una fórmula *Pro* en una sola operación.
+> **En primer lugar**, deberá migrar su alojamiento desde la fórmula *Performance 2* al plan *Performance 1* y **después** al plan *Pro*.
 >
 
 Antes de realizar el cambio a una gama inferior, compruebe los siguientes 7 elementos:
@@ -72,14 +72,14 @@ Una vez que haya eliminado los datos de sus bases de datos, vuelva a calcular el
 
 #### 3 - Web Cloud Databases
 
-Si utiliza el producto [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#activacion-de-su-servidor-clouddb-incluido-con-su-plan-de-hosting) incluido con su alojamiento [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) y desea cambiar su alojamiento a un plan [Profesional](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/), acceda al apartado `Alojamientos`{.action} del área de cliente.<br>
+Si utiliza el producto [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#activacion-de-su-servidor-clouddb-incluido-con-su-plan-de-hosting) incluido con su alojamiento [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) y desea cambiar su alojamiento a un plan [Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/), acceda al apartado `Alojamientos`{.action} del área de cliente.<br>
 Haga clic en el botón `...`{.action} en la sección `Bases de datos privadas`{.action} y, seguidamente, en `Desvincular`{.action}.
 
 ![Web Cloud Databases](images/clouddb.png){.thumbnail}
 
 Esta acción le permitirá contratar una solución Cloud Databases independiente de la suscripción *Performance*. Los datos del servidor se conservarán.
 
-Si no desea conservar estos datos, puede también eliminar su SQL privado antes de pasar a la oferta *Profesional* : 
+Si no desea conservar estos datos, puede también eliminar su SQL privado antes de pasar a la oferta *Pro* : 
 
 1. Guarde sus datos siguiendo las instrucciones de este [guía](/pages/web/clouddb/save-export-on-database-server).<br>
 2. Elimine su servidor Cloud Databases a través de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Para ello, haga clic en su nombre en la esquina superior derecha y seleccione `Gestión de servicios`{.action}. Haga clic en el botón `...`{.action} a la derecha de la línea correspondiente y luego en `Eliminar mi alojamiento SQL privado`{.action}.
@@ -161,10 +161,10 @@ Este cálculo corresponde a la diferencia de precio entre su producto inicial y 
 >
 > Ha contratado una suscripción [Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/) el 1 de enero de 2022.
 >
-> El 31 de octubre de 2022, pasará de esta oferta **Personal** a una suscripción a la oferta [Profesional](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/).<br>
+> El 31 de octubre de 2022, pasará de esta oferta **Personal** a una suscripción a la oferta [Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/).<br>
 >
-> Por consiguiente, el importe correspondiente a la duración restante de la suscripción **Personal** (2 meses, del 1 de noviembre de 2022 al 1 de enero de 2023) se sustrae automáticamente del coste de la nueva suscripción **Profesional**, hasta el 1 de enero de 2023. Sólo pagarán la diferencia.
-> A partir del 1 de enero de 2023, la suscripción Profesional se factura a su precio en vigor.
+> Por consiguiente, el importe correspondiente a la duración restante de la suscripción **Personal** (2 meses, del 1 de noviembre de 2022 al 1 de enero de 2023) se sustrae automáticamente del coste de la nueva suscripción **Pro**, hasta el 1 de enero de 2023. Sólo pagarán la diferencia.
+> A partir del 1 de enero de 2023, la suscripción Pro se factura a su precio en vigor.
 
 Siga [estas instrucciones](#modify) para cambiar de producto.
 

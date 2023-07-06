@@ -54,7 +54,7 @@ The activation window will appear. **Step 1** will detail the plan and its price
 >
 > If your project will quickly evolve to a hosting plan with a database, larger storage space or more email accounts, you can switch directly and only from 100M free hosting to a **Personal** hosting plan from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 >
-> To switch to the **Professional** or **Performance** plan, you will need to switch from the 100M free hosting plan to the **Personal** plan beforehand.
+> To switch to the **Pro** or **Performance** plan, you will need to switch from the 100M free hosting plan to the **Personal** plan beforehand.
 >
 > You can also choose to delete the free offer after backing up your hosting data and the contents of your email account.
 >

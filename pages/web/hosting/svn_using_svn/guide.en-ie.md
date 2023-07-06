@@ -20,7 +20,7 @@ SVN, which stands for "subversion," is a version management system.
 
 ## Requirements
 
-- a [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) that allows an SSH connection (**from the Professional plan onwards**)
+- a [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) that allows an SSH connection (**from the Pro plan onwards**)
 - access to your Web Hosting plan via SSH (see our guide on [accessing a Web Hosting plan via SSH](/pages/web/hosting/ssh_on_webhosting))
 
 ## Instructions

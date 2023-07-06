@@ -12,7 +12,7 @@ updated: 2023-04-19
 
 ## Objetivo
 
-Su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) le permite aumentar la capacidad de sus [planes de hosting](https://www.ovhcloud.com/es/web-hosting/) para disponer de un alojamiento más potente, más espacio de almacenamiento, bases de datos, direcciones de correo o funcionalidades adicionales como los [listas de correo](/pages/web/emails/feature_mailing_list) (a partir del [plan Profesional](https://www.ovhcloud.com/es/web-hosting/professional-offer/)) o el [servicio SQL privado](https://www.ovhcloud.com/es/web-hosting/options/private-sql/) (incluidos los productos de la [gama Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer/)).
+Su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) le permite aumentar la capacidad de sus [planes de hosting](https://www.ovhcloud.com/es/web-hosting/) para disponer de un alojamiento más potente, más espacio de almacenamiento, bases de datos, direcciones de correo o funcionalidades adicionales como los [listas de correo](/pages/web/emails/feature_mailing_list) (a partir del [plan Pro](https://www.ovhcloud.com/es/web-hosting/professional-offer/)) o el [servicio SQL privado](https://www.ovhcloud.com/es/web-hosting/options/private-sql/) (incluidos los productos de la [gama Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer/)).
 
 **Descubra cómo cambiar sin interrupción el plan de hosting de OVHcloud.**
 
@@ -80,10 +80,10 @@ Este cálculo corresponde a la diferencia de precio entre su producto inicial y 
 >
 > Ha contratado una suscripción [Personal](https://www.ovhcloud.com/es/web-hosting/personal-offer/) el 1 de enero de 2022.
 >
-> El 31 de octubre de 2022, pasará de esta oferta **Personal** a una suscripción a la oferta [Profesional](https://www.ovhcloud.com/es/web-hosting/professional-offer/).<br>
+> El 31 de octubre de 2022, pasará de esta oferta **Personal** a una suscripción a la oferta [Pro](https://www.ovhcloud.com/es/web-hosting/professional-offer/).<br>
 >
-> Por consiguiente, el importe correspondiente a la duración restante de la suscripción **Personal** (2 meses, del 1 de noviembre de 2022 al 1 de enero de 2023) se sustrae automáticamente del coste de la nueva suscripción **Profesional**, hasta el 1 de enero de 2023. Sólo pagarán la diferencia.
-> A partir del 1 de enero de 2023, la suscripción Profesional se factura a su precio en vigor.
+> Por consiguiente, el importe correspondiente a la duración restante de la suscripción **Personal** (2 meses, del 1 de noviembre de 2022 al 1 de enero de 2023) se sustrae automáticamente del coste de la nueva suscripción **Pro**, hasta el 1 de enero de 2023. Sólo pagarán la diferencia.
+> A partir del 1 de enero de 2023, la suscripción Pro se factura a su precio en vigor.
 
 Siga [estas instrucciones](#modify) para cambiar de producto.
 
