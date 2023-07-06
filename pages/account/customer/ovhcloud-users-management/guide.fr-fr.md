@@ -1,7 +1,7 @@
 ---
 title: 'Créer et gérer des utilisateurs sur un compte OVHcloud'
 excerpt: 'Découvrez comment ajouter des utilisateurs depuis votre compte OVHcloud'
-updated: 2020-05-20
+updated: 2023-07-19
 ---
 
 **Dernière mise à jour le 16/04/2020**
@@ -12,9 +12,9 @@ OVHcloud vous donne la possibilité de créer des utilisateurs, qui peuvent agir
 
 > [!primary]
 >
-> La gestion des utilisateurs est différente de la gestion des contacts. Un utilisateur aura a minima accès en lecture à toutes les rubriques de votre espace client.
+> La gestion des utilisateurs est différente de la gestion des contacts. Un utilisateur aura accès à toutes les sections de l'espace client en fonction du niveau de droits qui lui sont accordés.
 >
-> La gestion de contacts vise quant à elle à déléguer l'administration complète des aspects administratifs, techniques ou de facturation d'un ou plusieurs services sur votre compte OVHcloud. Pour plus de détails sur la gestion des contacts, consultez [ce guide](/pages/account/customer/managing_contacts).
+> La gestion de contacts vise quant à elle à déléguer l'administration complète des aspects administratifs, techniques ou de facturation d'un ou plusieurs services sur votre compte OVHcloud. Pour plus de détails sur la gestion des contacts, consultez [ce guide](/pages/account/customer/managing_contact).
 >
 
 **Ce guide détaille les différents privilèges qu'un utilisateur peut détenir ainsi que la méthode pour ajouter et gérer vos utilisateurs.**
@@ -26,28 +26,9 @@ OVHcloud vous donne la possibilité de créer des utilisateurs, qui peuvent agir
 
 ## En pratique
 
-### Étape 1 : connaître les différents privilèges des utilisateurs
+### gestion des utilisateurs
 
-Vous pouvez choisir entre trois niveaux de privilèges pour chacun de vos utilisateurs.
-
-| Privilèges | Détails |
-|----------------|----------------------------------------------------------------------------------------------------------------------|
-| Aucun | Donne un accès en lecture sur l'espace client et toutes ses rubriques. |
-| Utilisateur | Donne un accès en écriture sur l'espace client et toutes ses rubriques, **à l'exception de** la gestion des utilisateurs. |
-| Administrateur | Donne un accès en écriture sur l'espace client et toutes ses rubriques, **y compris** la gestion des utilisateurs. |
-
-#### Exemple de gestion des utilisateurs
-
-Le propriétaire du compte xx11111-ovh crée deux utilisateurs :
-
-- l'utilisatrice Jane qui a le privilège **Utilisateur** et donc des droits en écriture sur toutes les rubriques du compte à l'exception de la gestion des utilisateurs ;
-- l'utilisateur Martin qui a le privilège **Aucun** et donc uniquement des droits en lecture sur toutes les rubriques du compte.
-
-Le propriétaire du compte xx11111-ovh a obligatoirement le privilège **administrateur** et garde donc les droits en écriture sur l'ensemble de son espace client. Il peut aussi ajouter des utilisateurs et/ou supprimer les utilisateurs existants.
-
-![users-management](images/umv4.png){.thumbnail}
-
-### Étape 2 : ajouter un utilisateur
+#### Ajouter un utilisateur
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez en haut à droite sur`votre nom`{.action} (1), puis sur vos initiales (2). 
 Cliquez alors sur l'onglet `Gestion des utilisateurs`{.action} (3) puis sur `Ajouter un utilisateur`{.action} (4).
@@ -63,7 +44,7 @@ Une fenêtre apparaît et vous devez y compléter les champs requis. Cliquez sur
 | Identifiant | Renseignez, par exemple, le nom de l'utilisateur ou sa fonction. |
 | E-mail | Renseignez l'adresse e-mail de l'utilisateur. |
 | Mot de passe | Définissez le mot de passe de l'utilisateur. Il pourra modifier ce mot de passe lorsque son accès aura été créé. <br>Nous vous conseillons également de consulter [le guide sur la gestion du mot de passe](/pages/account/customer/manage-ovh-password){.external} pour définir ce mot de passe. |
-| Privilège | Choisissez entre Aucun/Utilisateur/Administrateur. |
+| Groupe | Choisir un groupe parmi ceux disponibles |
 | Description | Vous pouvez ajouter une description de l'utilisateur. Exemple : son rôle dans votre entreprise. |
 
 L'utilisateur obtiendra alors son propre identifiant composé de l'identifiant numérique de votre compte (qui vous est rappelé dans le menu « Gestion des utilisateurs ») et de son nom d'utilisateur, les deux valeurs étant séparées par un « / ».
@@ -76,7 +57,7 @@ L'utilisateur créé pourra dès lors se connecter à [l'espace client OVHcloud]
 
 Il pourra également modifier son mot de passe et sécuriser son propre accès à votre compte en activant une mesure de double authentification (celle-ci concernera uniquement son accès en tant qu'utilisateur). Vous pouvez consulter à cet effet [le guide sur la mise en place de la double authentification](/pages/account/customer/secure-ovhcloud-account-with-2fa){.external}.
 
-### Étape 3 : gérer les utilisateurs
+### Gérer les utilisateurs
 
 Vous pouvez modifier, désactiver/activer ou supprimer un utilisateur en cliquant sur les `…`{.action} à droite de celui-ci.
 
@@ -85,6 +66,42 @@ Vous pouvez modifier, désactiver/activer ou supprimer un utilisateur en cliquan
 La modification de l'utilisateur vous permettra de mettre à jour son adresse e-mail, ses privilèges ainsi que sa description.
 
 ![users-management](images/usersmanagement6.png){.thumbnail}
+
+### Gestion des groupes
+
+#### Ajouter un groupe
+
+Dans l'onglet `Gestion des utilisateurs`{.action}, cliquez sur `Déclarer un groupe`{.action}.
+
+![users-management](images/usersmanagement7.png){.thumbnail}
+
+Une fenêtre s'affiche et vous devez compléter les champs requis. Cliquez sur `Valider`{.action} pour créer l'utilisateur.
+
+![users-management](images/usersmanagement8.png){.thumbnail}
+
+Les groupes attribuent un niveau de privilège par défaut aux utilisateurs qu'ils contiennent, en fonction du rôle que vous choisissez :
+
+| Rôle | Détails |
+|------------------|----------------------------------------------------------------------------------------------------------------------|
+| Aucun | Ne donne aucun accès à l'espace client OVHcloud si aucune politique IAM n'est mise en place. |
+| Lecture Seule | Donne un accès en lecture à l'espace client OVHcloud et à toutes ses sections. |
+| Administration restreinte | Donne un accès en écriture à l'espace client OVHcloud et à toutes ses sections, à l'**exception de la gestion des** utilisateurs. |
+| Administrateur | Donne un accès en écriture à l'espace client OVHcloud et à toutes ses sections, y **compris** la gestion des utilisateurs. |
+
+#### Gérer les groupes
+
+Vous pouvez mettre à jour ou supprimer un groupe en cliquant sur le bouton `...`{.action} à droite du nom de groupe.
+
+![users-management](images/usersmanagement9.png){.thumbnail}
+
+Lorsque vous modifiez un groupe, vous pouvez modifier sa description et son rôle.
+
+![users-management](images/usersmanagement10.png){.thumbnail}
+
+### Gestion des droits
+
+En plus du rôle associé aux groupes d'utilisateurs, vous pouvez affiner les privilèges d'accès à l'aide de l'IAM OVHcloud.
+La gestion des politiques IAM d'OVHcloud est couverte sur le [guide dédié](pages\account\customer\iam-policies-ui)
 
 ## Aller plus loin
 
