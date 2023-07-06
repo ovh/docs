@@ -19,7 +19,7 @@ Ces *zones DNS* se composent d’informations techniques : des *enregistrements 
 
 Pour plus d'informations, consultez notre documentation sur les [serveurs DNS OVHcloud](/pages/web/domains/dns_server_general_information).
 
-Selon vos besoins, il est possible personnaliser le nom des serveurs DNS de votre nom de domaine OVHcloud à l'aide du ***Glue Registry***. Par exemple, pour masquer les serveurs DNS de votre fournisseur DNS.
+Selon vos besoins, il est possible personnaliser le nom des serveurs DNS de votre nom de domaine OVHcloud à l'aide du « ***Glue Registry*** ».
 
 **Découvrez comment personnaliser les serveurs DNS de votre nom de domaine OVHcloud.**
 
@@ -36,24 +36,26 @@ Selon vos besoins, il est possible personnaliser le nom des serveurs DNS de votr
 > Nous vous invitons à suivre précisément les étapes décrites ci-dessous ou de vous faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) en cas de doute.
 >
 
-### Étape 1 : ajouter les enregistrements GLUE
+### Étape 1 : ajouter les enregistrements « GLUE »
 
-Pour démarrer, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} partie `Web Cloud`, cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine pour lequel vous souhaitez personnaliser les serveurs DNS. Positionnez-vous enfin sur l'onglet `GLUE`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie partie `Web Cloud`. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine pour lequel vous souhaitez personnaliser les serveurs DNS. Sur la page qui s'affiche, cliquez l'onglet `GLUE`{.action}.
 
-Sur la page qui apparaît, un tableau affiche les enregistrements GLUE actuellement configurés chez OVHcloud pour votre nom de domaine. Afin d'ajouter un nouvel enregistrement GLUE, cliquez sur le bouton `Ajouter`{.action}.
+Sur la page qui apparaît, un tableau affiche les enregistrements « GLUE » actuellement configurés chez OVHcloud pour votre nom de domaine. Afin d'ajouter un nouvel enregistrement « GLUE », cliquez sur le bouton `Ajouter`{.action}.
 
 ![glueregistry](images/customize-dns-servers-step1.png){.thumbnail}
 
-Dans la fenêtre qui apparaît, complétez les informations demandées :
+Dans la fenêtre qui s'ouvre sur votre écran, complétez les informations demandées :
 
 |Informations|Détail|  
 |---|---|
 |Nom du hôte|Personnalisez le nom d'hôte que vous souhaitez utiliser en tant que serveur DNS personnalisé.|
-|IP(s) de destination|Indiquez la ou les adresses IP auxquelles le nom d'hôte doit être relié. Il s'agit en définitive de l'adresse IP du serveur DNS actuellement utilisé par votre nom de domaine. Si celui-ci utilise les serveurs DNS d'OVHcloud et que vous n'en connaissez pas l'adresse IP correspondante, utilisez notre outil « [Dig](https://www.ovh.com/fr/support/outils/dig_domain.pl){.external} » afin de la récupérer. Elle apparaîtra dans la partie `ANSWER SECTION` à côté du « A ».|
-
-Une fois les informations complétées, cliquez sur le bouton `Ajouter`{.action}, prenez connaissance des informations affichées, puis cliquez sur `Valider`{.action}. Répétez cette manipulation autant de fois que nécessaire, selon le nombre de serveurs DNS utilisés par votre nom de domaine.
+|IP(s) de destination|Indiquez la ou les adresses IP auxquelles le nom d'hôte doit être relié. Il s'agit de l'adresse IP du serveur DNS actuellement utilisé par votre nom de domaine. Si celui-ci utilise les serveurs DNS d'OVHcloud et que vous n'en connaissez pas l'adresse IP correspondante, utilisez notre outil « [Dig](https://www.ovh.com/fr/support/outils/dig_domain.pl){.external} » afin de la récupérer. Elle apparaîtra dans la partie `ANSWER SECTION` à côté du « A ».|
 
 ![glueregistry](images/customize-dns-servers-step2.png){.thumbnail}
+
+Dans l'image ci-dessus, le « GLUE » que l'on souhaite ajouter en exemple à partir du domaine *mydomain.ovh* est **testglue.mydomain.ovh** ayant pour IP de *serveur DNS cible* **0.0.0.0**.
+
+Une fois les informations complétées, cliquez sur le bouton `Ajouter`{.action}, prenez connaissance des informations affichées, puis cliquez sur `Valider`{.action}. Répétez cette manipulation autant de fois que nécessaire, selon le nombre de serveurs DNS utilisés par votre nom de domaine.
 
 ### Étape 2 : créer les enregistrements A DNS correspondants
 
