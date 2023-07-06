@@ -1,7 +1,7 @@
 ---
 title: How to use IAM policies using the OVHcloud Control Panel
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-updated: 2023-07-03
+updated: 2023-07-06
 ---
 
 > [!warning]
@@ -105,11 +105,11 @@ Finally, you can select actions from the list.
 
 The available actions depend on the resource type and belong to one of five categories:
 
-- **Read**: List products and show information about a product. (*ex. list a VPS IP*)
-- **Create**: Action that allows to create something on a product. (*ex. Create a support ticket*)
-- **Delete**: Action that allows to delete something on a product. (*ex. Delete a Public Cloud instance*)
-- **Edit**: Action to change something existing on a product. (*ex. edit TCP route of a Loadbalancer*)
-- **Operate**: Apply changes to the infrastructure related to the product. (*ex. Reboot a dedicated server*)
+- **Read**: List products and show information about a product. (*ex.: list a VPS IP*)
+- **Create**: Action that allows to create something on a product. (*ex.: Create a support ticket*)
+- **Delete**: Action that allows to delete something on a product. (*ex.: Delete a Public Cloud instance*)
+- **Edit**: Action to change something existing on a product. (*ex.: edit TCP route of a Load Balancer*)
+- **Operate**: Apply changes to the infrastructure related to the product. (*ex.: Reboot a dedicated server*)
 
 A search field is available to help identify a specific action on the list.
 
