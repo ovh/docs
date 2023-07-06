@@ -1,12 +1,10 @@
 ---
 title: ETCD Quotas, usage, troubleshooting and error
 excerpt: 'Find out how to view ETCD quotas, usage and fix errors'
+routes:
+    canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-kubernetes-etcd-quota-error?id=kb_article_view&sysparm_article=KB0049739'
 updated: 2023-07-05
 ---
-routes:
-    canonical: /pages/platform/kubernetes-k8s/etcd-quota-error
-
-**Last updated 05th July 2023**
 
 ## Objective
 
