@@ -68,15 +68,9 @@ Następnie wybierz Twój nowy abonament oraz czas jego trwania. Zatwierdź odpow
 > Należy **najpierw** zmienić ofertę hostingu z poziomu oferty *Performance 2* na ofertę *Performance 1* **następnie** na ofertę *Pro*.
 >
 
-Przed przejściem na niższą ofertę, sprawdź 7 poniższe elementy:
+Przed przejściem na niższą ofertę, sprawdź 6 poniższe elementy:
 
-#### 1 - Liczba stron
-
-Oferta [Kimsufi Web](https://www.ovhcloud.com/pl/web-hosting/old-web-hosting-offers/) nie pozwala na posiadanie więcej niż jednej domeny na [MultiSite](/pages/web/hosting/multisites_configure_multisite) na Twoim hostingu.
-
-Przed przejściem z oferty [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/) na ofertę [Kimsufi Web](https://www.ovhcloud.com/pl/web-hosting/old-web-hosting-offers/) sprawdź, czy hosting zawiera tylko jedną stronę.
-
-#### 2 - Bazy danych Start SQL
+#### 1 - Bazy danych Start SQL
 
 Przed przejściem na niższą ofertę upewnij się, że nowa oferta zawiera wystarczającą ilość [baz danych](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/). Sprawdź również, czy są wystarczająco duże.
 
@@ -86,7 +80,7 @@ Po usunięciu danych z baz danych pamiętaj o przeliczeniu rozmiaru używanego w
 
 ![quota](images/quota.png){.thumbnail}
 
-#### 3 - Web Cloud Databases
+#### 2 - Web Cloud Databases
 
 Jeśli korzystasz z oferty [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#wlaczenie-prywatnego-clouddb-zawartego-w-ofercie-hostingu) zawartej w ofercie hostingu [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) i chcesz przejść na ofertę hostingu [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/), przejdź do części 'Hosting{.action} w Twoim panelu klienta.<br>
 Kliknij przycisk `...`{.action} w części `Prywatna baza danych`{.action} a następnie na `Odłącz`{.action}.
@@ -100,7 +94,7 @@ Jeśli nie chcesz przechowywać tych danych, możesz również usunąć prywatny
 1. Przechowuj swoje dane zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/clouddb/save-export-on-database-server).<br>
 2. Usuń serwer Web Cloud Databases z [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W tym celu w prawym górnym rogu kliknij Twoją nazwę, a następnie `Zarządzanie usługami`{.action}. Następnie kliknij przycisk `...`{.action} po prawej stronie odpowiedniej linii, po czym kliknij `Usuń serwer Private SQL`{.action}.
 
-#### 4 - Przestrzeni FTP
+#### 3 - Przestrzeni FTP
 
 Przed przejściem na niższą ofertę upewnij się, że nowa oferta jest wystarczająco dużo [przestrzeni dyskowej FTP](/pages/web/hosting/ftp_connection), aby import plików z obecnego hostingu był możliwy.
 
@@ -108,7 +102,7 @@ Limit używany na Twoim hostingu FTP jest widoczny w części `Hosting`{.action}
 
 ![ftp](images/ftp.png){.thumbnail}
 
-#### 5 - Adresy e-mail
+#### 4 - Adresy e-mail
 
 Sprawdź również, czy nowa oferta zawiera wystarczającą liczbę dostępnych adresów e-mail. W przeciwnym razie usuń zbędne adresy po ich wykonaniu [kopia zapasowa](/pages/web/emails/manual_email_migration).
 
@@ -116,15 +110,15 @@ Jeśli chcesz zachować tę samą liczbę kont e-mail, zanim przejdziesz na niż
 
 ![mxplan](images/mxplan.png){.thumbnail}
 
-#### 6 - Listów mailingowych
+#### 5 - Listów mailingowych
 
-Funkcja [Listy mailingowe](/pages/web/emails/feature_mailing_list) jest opcjonalna dla hostingu [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/) i [Kimsufi Web](https://www.ovhcloud.com/pl/web-hosting/old-web-hosting-offers/).
+Funkcja [Listy mailingowe](/pages/web/emails/feature_mailing_list) jest opcjonalna dla hostingu [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/).
 
 Aby zmienić dotychczasowy hosting na ofertę [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/), należy najpierw usunąć listy mailingowe lub zamówić ofertę pocztową zawierającą tę funkcję (**MX Plan 100** lub **MX Plan Full**) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 W części `E-maile`{.action} w Panelu klienta wybierz odpowiednią ofertę, a następnie kliknij `...`{.action} po prawej stronie `Usługa`{.action}. Na koniec kliknij polecenie `Zmień ofertę`{.action}.
 
-#### 7 - Użytkownicy FTP
+#### 6 - Użytkownicy FTP
 
 Przed przełączeniem hostingu na niższą ofertę, upewnij się, że nowa oferta zawiera wystarczającą liczbę użytkowników FTP.
 

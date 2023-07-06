@@ -52,15 +52,9 @@ Seleziona il tuo nuovo abbonamento e la sua durata. Conferma i contratti e clicc
 > Dovrai **prima** far evolvere il tuo hosting dalla formula *Performance 2* verso l'offerta *Performance 1* **poi** verso l'offerta *Pro*.
 >
 
-Prima di effettuare la modifica verso una gamma inferiore, verifica i 7 elementi seguenti:
+Prima di effettuare la modifica verso una gamma inferiore, verifica i 6 elementi seguenti:
 
-#### 1 - Numero di siti
-
-L'offerta [Kimsufi Web](https://www.ovhcloud.com/it/web-hosting/old-web-hosting-offers/) non permette di avere più di un dominio sul [multisito](/pages/web/hosting/multisites_configure_multisite) del tuo hosting.
-
-Prima di passare dall'offerta [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/) all'offerta [Kimsufi Web](https://www.ovhcloud.com/it/web-hosting/old-web-hosting-offers/), verifica che il tuo hosting comporti un solo sito.
-
-#### 2 - Database Start SQL
+#### 1 - Database Start SQL
 
 Prima di passare a un'offerta inferiore, assicurati che la nuova offerta contenga sufficienti [database](https://www.ovhcloud.com/it/web-hosting/options/start-sql/). Verifica anche che siano di dimensioni sufficienti.
 
@@ -70,7 +64,7 @@ Una volta eliminati i dati sui tuoi database, utilizza la scheda `Database`{.act
 
 ![quota](images/quota.png){.thumbnail}
 
-#### 3 - Web Cloud Databases
+#### 2 - Web Cloud Databases
 
 Se utilizzi l'offerta [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#attiva-il-tuo-server-clouddb-incluso-con-la-tua-offerta-di-hosting-web) inclusa con il tuo hosting [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) e vuoi passare al tuo hosting su un'offerta [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/), accedi alla sezione `Hosting`{.action} del tuo Spazio Cliente OVHcloud.<br>
 Clicca sul pulsante `...`{.action} nella sezione `Database privato`{.action} > `Scollega`{.action}.
@@ -84,7 +78,7 @@ Se non vuoi conservare questi dati, è possibile eliminare il tuo SQL privato pr
 1. Salva i tuoi dati seguendo le istruzioni di questa [guida](/pages/web/clouddb/save-export-on-database-server).<br>
 2. Elimina il tuo server Web Cloud Databases dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sul tuo nome in alto a destra e seleziona `Gestione dei servizi`{.action}. Clicca sul pulsante `...`{.action} a destra della linea corrispondente e su `Elimina l'hosting SQL Privato`{.action}.
 
-#### 4 - spazio FTP
+#### 3 - spazio FTP
 
 Prima di passare a un'offerta inferiore, assicurati che la nuova offerta offra [spazio di storage FTP](/pages/web/hosting/ftp_connection) in modo che l'importazione dei file del tuo hosting attuale sia possibile.
 
@@ -92,7 +86,7 @@ La quota utilizzata sull'hosting FTP è visibile nella sezione `Hosting`{.action
 
 ![ftp](images/ftp.png){.thumbnail}
 
-#### 5 - Indirizzi email
+#### 4 - Indirizzi email
 
 Verifica che la tua nuova offerta offra un numero sufficiente di indirizzi email disponibili. In caso contrario, rimuovi gli indirizzi superflui dopo averli [salvati](/pages/web/emails/manual_email_migration) se necessario.
 
@@ -100,15 +94,15 @@ Per mantenere lo stesso numero di caselle di posta elettronica prima di passare 
 
 ![mxplan](images/mxplan.png){.thumbnail}
 
-#### 6 - Mailing list
+#### 5 - Mailing list
 
-La funzionalità [Mailing list](/pages/web/emails/feature_mailing_list) è disponibile in opzione sugli hosting [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/) e [Kimsufi Web](https://www.ovhcloud.com/it/web-hosting/old-web-hosting-offers/).
+La funzionalità [Mailing list](/pages/web/emails/feature_mailing_list) è disponibile in opzione sugli hosting [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/).
 
 Per attivare un servizio di hosting su un'offerta [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/), è necessario eliminare le mailing list o ordinare un servizio di posta che includa questa funzionalità (**MX Plan 100** o **MX Plan Full**) dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 Nella sezione `Email`{.action} del tuo Spazio Cliente, seleziona l'offerta e clicca su `...`{.action} a destra di `Servizio`{.action} Infine clicca su `Modifica offerta`{.action}.
 
-#### 7 - Utenti FTP
+#### 6 - Utenti FTP
 
 Prima di passare a un'offerta inferiore, assicurati che la nuova offerta offra sufficienti utenti FTP.
 

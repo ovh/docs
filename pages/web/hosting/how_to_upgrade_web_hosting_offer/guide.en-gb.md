@@ -48,15 +48,9 @@ Then select your new subscription and its duration. Confirm the corresponding co
 > For example, you cannot switch from *Performance 2* to *Pro* in a single operation.
 > You will **first** need to downgrade your web hosting plan from the *Performance 2* plan to the *Performance 1* plan, **and then** to the *Pro* plan.
 
-Before you make your switch to a lower range, check the following 7 items:
+Before you make your switch to a lower range, check the following 6 items:
 
-#### 1 - Number of sites
-
-With the [Kimsufi Web](https://www.ovhcloud.com/en-gb/web-hosting/old-web-hosting-offers/) solution, you cannot have more than one domain name on your hosting plan’s [multisite](/pages/web/hosting/multisites_configure_multisite).
-
-Before you switch from the [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) solution to the [Kimsufi Web](https://www.ovhcloud.com/en-gb/web-hosting/old-web-hosting-offers/) solution, please check that your web hosting plan only has one website.
-
-#### 2 - Start SQL databases
+#### 1 - Start SQL databases
 
 Before moving your hosting to a lower plan, please ensure that the new plan has enough [databases](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/). Also make sure they are of sufficient size.
 
@@ -66,7 +60,7 @@ If you have deleted data from your databases, you can recalculate the quota from
 
 ![quota](images/quota.png){.thumbnail}
 
-#### 3 - Web Cloud Databases
+#### 2 - Web Cloud Databases
 
 If you are using the [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#clouddb-server-activation-included-with-your-web-hosting-plan) solution included with your [Performance](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/) hosting plan, and you wish to switch your hosting plan to a [Pro](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/) solution, go to the `Hosting plans`{.action} section in your Control Panel.<br>
 Click the `... `{.action} button in the `Private database`{.action} section, then `Detach`{.action}.
@@ -80,7 +74,7 @@ If you do not want to keep this data, you can also delete your Private SQL befor
 1. Back up your data by following the instructions in this [guide](/pages/web/clouddb/save-export-on-database-server).<br>
 2. Delete your Web Cloud Databases server via your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). To do this, click on your name in the top right-hand corner, then `Service management`{.action}. Then click on the `...`{.action} button to the right of the row concerned, then `Delete my Private SQL hosting service`{.action}.
 
-#### 4 - FTP space
+#### 3 - FTP space
 
 Before switching your hosting plan to a lower plan, please ensure that the new plan includes enough [FTP storage space](/pages/web/hosting/ftp_connection) so that you can import files from your current hosting plan.
 
@@ -88,7 +82,7 @@ The quota used on your FTP hosting plan is visible in the `Hosting plans`{.actio
 
 ![ftp](images/ftp.png){.thumbnail}
 
-#### 5 - Email accounts
+#### 4 - Email accounts
 
 Please also check that your new solution has a sufficient number of available email accounts. Otherwise, delete the extra accounts, after you have [backed up](/pages/web/emails/manual_email_migration) the contents if necessary.
 
@@ -96,15 +90,15 @@ If you would like to keep the same number of email accounts, before moving your 
 
 ![mxplan](images/mxplan.png){.thumbnail}
 
-#### 6 - Mailing lists
+#### 5 - Mailing lists
 
-The [Mailing lists](/pages/web/emails/feature_mailing_list) feature is optional on [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) and [Kimsufi Web](https://www.ovhcloud.com/en-gb/web-hosting/old-web-hosting-offers/) hosting plans.
+The [Mailing lists](/pages/web/emails/feature_mailing_list) feature is optional on [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) hosting plans.
 
 To set up your hosting plan on a [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) solution, you will need to delete the mailing lists first, or order an email solution with this feature (**MX Plan 100** or **MX Plan Full**) from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
 In the `Emails`{.action} section of your Control Panel, select the solution concerned, then click on `...`{.action} to the right of `Solution`{.action}. Next, click `Change solution`{.action}.
 
-#### 7 - FTP users
+#### 6 - FTP users
 
 Before switching your hosting plan to a lower plan, ensure that the new plan has enough FTP users.
 

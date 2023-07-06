@@ -56,9 +56,9 @@ Bevor Sie Ihre Umstellung auf eine niedrigere Reihe vornehmen, überprüfen Sie 
 
 #### 1 - Anzahl der Websites
 
-Mit dem Angebot [Kimsufi Web](https://www.ovhcloud.com/de/web-hosting/old-web-hosting-offers/) können Sie auf Ihrem Hosting nur einen Domainnamen mit [Multisite](/pages/web/hosting/multisites_configure_multisite) verwenden.
+Mit dem Angebot **Starter** können Sie auf Ihrem Hosting nur einen Domainnamen mit [Multisite](/pages/web/hosting/multisites_configure_multisite) verwenden.
 
-Bevor Sie vom [Basic Webhosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) zu [Kimsufi Web](https://www.ovhcloud.com/de/web-hosting/old-web-hosting-offers/) wechseln, überprüfen Sie, dass Ihr Hosting nur eine einzige Website enthält.
+Bevor Sie vom [Basic Webhosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) zu **Starter** wechseln, überprüfen Sie, dass Ihr Hosting nur eine einzige Website enthält.
 
 #### 2 - Start SQL Datenbanken
 
@@ -102,7 +102,7 @@ Wenn Sie die gleiche Anzahl an E-Mail-Accounts behalten möchten, können Sie vo
 
 #### 6 - Mailinglisten
 
-Die [Mailinglisten-Funktion](/pages/web/emails/feature_mailing_list) ist optional bei den [Basic Hostings](https://www.ovhcloud.com/de/web-hosting/personal-offer/) und [Kimsufi Web](https://www.ovhcloud.com/de/web-hosting/old-web-hosting-offers/).
+Die [Mailinglisten-Funktion](/pages/web/emails/feature_mailing_list) ist optional bei den [Basic Hostings](https://www.ovhcloud.com/de/web-hosting/personal-offer/) und **Starter**.
 
 Um Ihr Hosting auf ein [Basic Hosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) umzustellen, müssen Sie zunächst Mailinglisten entfernen oder ein E-Mail-Angebot mit dieser Funktion (**MX Plan 100** oder **MX Plan Full**) über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) bestellen.
 

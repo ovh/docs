@@ -52,15 +52,9 @@ A continuación, seleccione la nueva suscripción y la duración de la misma. Ac
 > **En primer lugar**, deberá migrar su alojamiento desde la fórmula *Performance 2* al plan *Performance 1* y **después** al plan *Pro*.
 >
 
-Antes de realizar el cambio a una gama inferior, compruebe los siguientes 7 elementos:
+Antes de realizar el cambio a una gama inferior, compruebe los siguientes 6 elementos:
 
-#### 1 - Número de sitios
-
-El producto [Kimsufi Web](https://www.ovhcloud.com/es-es/web-hosting/old-web-hosting-offers/) no permite tener más de un dominio en el [multisitio](/pages/web/hosting/multisites_configure_multisite) de su alojamiento.
-
-Antes de cambiar del plan [Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/) al plan [Kimsufi Web](https://www.ovhcloud.com/es-es/web-hosting/old-web-hosting-offers/), compruebe que el alojamiento solo tenga un sitio web.
-
-#### 2 - Bases de datos Start SQL
+#### 1 - Bases de datos Start SQL
 
 Antes de cambiar al plan de hosting inferior, asegúrese de que el nuevo plan incluya suficientes [bases de datos](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/). Compruebe también que sean de tamaño suficiente.
 
@@ -70,7 +64,7 @@ Una vez que haya eliminado los datos de sus bases de datos, vuelva a calcular el
 
 ![cuota](images/quota.png){.thumbnail}
 
-#### 3 - Web Cloud Databases
+#### 2 - Web Cloud Databases
 
 Si utiliza el producto [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#activacion-de-su-servidor-clouddb-incluido-con-su-plan-de-hosting) incluido con su alojamiento [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) y desea cambiar su alojamiento a un plan [Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/), acceda al apartado `Alojamientos`{.action} del área de cliente.<br>
 Haga clic en el botón `...`{.action} en la sección `Bases de datos privadas`{.action} y, seguidamente, en `Desvincular`{.action}.
@@ -84,7 +78,7 @@ Si no desea conservar estos datos, puede también eliminar su SQL privado antes 
 1. Guarde sus datos siguiendo las instrucciones de este [guía](/pages/web/clouddb/save-export-on-database-server).<br>
 2. Elimine su servidor Cloud Databases a través de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Para ello, haga clic en su nombre en la esquina superior derecha y seleccione `Gestión de servicios`{.action}. Haga clic en el botón `...`{.action} a la derecha de la línea correspondiente y luego en `Eliminar mi alojamiento SQL privado`{.action}.
 
-#### 4 - Espacio FTP
+#### 3 - Espacio FTP
 
 Antes de cambiar al plan de hosting inferior, asegúrese de que el nuevo plan incluye suficiente [espacio de almacenamiento FTP](/pages/web/hosting/ftp_connection) para poder importar los archivos de su alojamiento actual.
 
@@ -92,7 +86,7 @@ La cuota utilizada en su alojamiento FTP puede verse en la sección `Alojamiento
 
 ![ftp](images/ftp.png){.thumbnail}
 
-#### 5 - Direcciones de correo
+#### 4 - Direcciones de correo
 
 Compruebe también que la nueva solución ofrezca un número suficiente de direcciones de correo electrónico disponibles. En caso contrario, elimine las direcciones superfluas después de haberlas [guardado](/pages/web/emails/manual_email_migration) si es necesario.
 
@@ -100,15 +94,15 @@ Si quiere conservar el mismo número de cuentas de correo antes de pasar el aloj
 
 ![mxplan](images/mxplan.png){.thumbnail}
 
-#### 6 - Mailing lists
+#### 5 - Mailing lists
 
-La funcionalidad [Mailing lists](/pages/web/emails/feature_mailing_list) está opcional en los alojamientos [Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/) y [Kimsufi Web](https://www.ovhcloud.com/es-es/web-hosting/old-web-hosting-offers/).
+La funcionalidad [Mailing lists](/pages/web/emails/feature_mailing_list) está opcional en los alojamientos [Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/).
 
 Para migrar a un plan de hosting [Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/), primero deberá eliminar las listas de correo o contratar un servicio de correo que incluya esta funcionalidad (**MX Plan 100** o **MX Plan Full**) desde su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 En la sección `Correo electrónico`{.action} del área de cliente, seleccione el servicio correspondiente y haga clic en `...`{.action} a la derecha del `Producto`{.action}. Haga clic en `Cambiar de plan`{.action}.
 
-#### 7 - Usuarios FTP
+#### 6 - Usuarios FTP
 
 Antes de cambiar el alojamiento a un plan inferior, asegúrese de que el nuevo plan incluye suficientes usuarios FTP.
 

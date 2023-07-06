@@ -155,7 +155,7 @@ php crypt.php
 
 > [!warning]
 >
-> Ze względów bezpieczeństwa zaleca się korzystanie z SSH. Jeśli jednak dysponujesz usługą [Kimsufi Web](https://www.kimsufi.com/pl/hosting.xml) lub [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/), dla której SSH jest niedostępny, możesz również uruchomić plik "crypt.php" za pomocą przeglądarki internetowej.
+> Ze względów bezpieczeństwa zaleca się korzystanie z SSH. Jeśli jednak dysponujesz usługą **Starter** lub [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/), dla której SSH jest niedostępny, możesz również uruchomić plik "crypt.php" za pomocą przeglądarki internetowej.
 >
 > W tym celu wprowadź następujący adres URL: `https://domain.tld/crypt.php` poprzez modyfikację `domain.tld` przez Twoją własną domenę. Znajduje się to bezpośrednio na pasku adresowym przeglądarki internetowej.
 >
