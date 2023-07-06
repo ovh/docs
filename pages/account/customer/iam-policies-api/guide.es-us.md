@@ -8,7 +8,7 @@ routes:
 
 > [!warning]
 >
-> This feature is currently in beta. To join the beta, subscribe here: <https://labs.ovhcloud.com/en/>
+> This feature is currently in beta. Find more information about it on <https://labs.ovhcloud.com/en/>
 >  
 
 ## Objective

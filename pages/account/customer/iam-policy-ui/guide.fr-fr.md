@@ -6,7 +6,7 @@ updated: 2023-07-06
 
 > [!warning]
 >
-> Cette fonctionnalité est actuellement en version bêta. Vous trouverez plus d'information à cet endroit : <https://labs.ovhcloud.com/en/>
+> Cette fonctionnalité est actuellement en version bêta. Retrouvez plus d'informations sur <https://labs.ovhcloud.com/en/>.
 >
 
 ## Objectif
@@ -56,7 +56,7 @@ Chaque politique est affichée avec son nom, le nombre d'identités qui lui sont
 
 > [!primary]
 >
-> Cliquer sur le bouton « Mode avancé » affiche la liste de toutes les politiques OVHcloud. Ces politiques sont automatiquement créées par OVHcloud pour convertir la délégation préexistante des `NIC Tech` (contact technique) et `NIC Admin` (contact administrateur) sur la nouvelle fonctionnalité IAM. 
+> Cliquer sur le bouton « Mode avancé » permet d'afficher la liste de toutes les politiques OVHcloud. Ces politiques sont automatiquement créées par OVHcloud pour convertir la délégation préexistante des `NIC Tech` (contact technique) et `NIC Admin` (contact administrateur) sur la nouvelle fonctionnalité IAM. 
 >
 > Les clients ne sont pas autorisés à modifier ou supprimer ces politiques.
 
